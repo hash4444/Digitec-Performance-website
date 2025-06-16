@@ -9,6 +9,7 @@ import { Reviews } from '@/components/Reviews';
 import { PerformanceResults } from '@/components/PerformanceResults';
 import { FinalCTA } from '@/components/FinalCTA';
 import { Footer } from '@/components/Footer';
+import { ChatBot } from '@/components/ChatBot/ChatBot';
 
 const Index = () => {
   return (
@@ -22,6 +23,7 @@ const Index = () => {
       <PerformanceResults />
       <FinalCTA />
       <Footer />
+      <ChatBot />
     </div>
   );
 };
