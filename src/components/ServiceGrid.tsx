@@ -68,6 +68,12 @@ export const ServiceGrid = () => {
           description: 'Fast, reliable battery replacements with top-tier brands.',
           icon: <Battery className="w-4 h-4 sm:w-5 sm:h-5" />,
           image: '/lovable-uploads/c1c2c5d8-fd7e-4d38-945c-e52315b4229e.png'
+        },
+        {
+          title: 'Exhaust Repair',
+          description: 'Smooth airflow, roaring tone, and emissions compliance.',
+          icon: <Settings className="w-4 h-4 sm:w-5 sm:h-5" />,
+          image: '/lovable-uploads/b400327f-926f-4da6-97f8-cff91a39e3ec.png'
         }
       ]
     },
@@ -76,28 +82,22 @@ export const ServiceGrid = () => {
       icon: <Bolt className="w-5 h-5 sm:w-6 sm:h-6" />,
       services: [
         {
-          title: 'Engine Diagnostics',
-          description: 'Advanced scans to detect and prevent high-cost failures.',
-          icon: <Gauge className="w-4 h-4 sm:w-5 sm:h-5" />,
-          image: 'https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=400&h=300&fit=crop'
-        },
-        {
           title: 'Car Programming & Diagnostic',
           description: 'ECU coding, resets, and full digital system inspection.',
           icon: <Settings className="w-4 h-4 sm:w-5 sm:h-5" />,
-          image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=400&h=300&fit=crop'
+          image: '/lovable-uploads/150c684d-11eb-476b-b768-afe7cad297cc.png'
         },
         {
           title: 'Electrical System Repairs',
           description: 'Power delivery and sensor calibration to factory spec.',
           icon: <Bolt className="w-4 h-4 sm:w-5 sm:h-5" />,
-          image: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=400&h=300&fit=crop'
+          image: '/lovable-uploads/9f435c28-2f08-437b-99ad-2252d8ea2071.png'
         },
         {
           title: 'Fuel System Repair',
           description: 'Optimal fuel delivery, flow, and combustion efficiency.',
           icon: <Settings className="w-4 h-4 sm:w-5 sm:h-5" />,
-          image: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=400&h=300&fit=crop'
+          image: '/lovable-uploads/678fdd1f-2841-4606-8533-51f82257a4a0.png'
         }
       ]
     },
@@ -109,37 +109,7 @@ export const ServiceGrid = () => {
           title: 'AC Repair & Maintenance',
           description: 'Climate control diagnostics, refrigerant refills, and compressor tuning.',
           icon: <Settings className="w-4 h-4 sm:w-5 sm:h-5" />,
-          image: 'https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=400&h=300&fit=crop'
-        }
-      ]
-    },
-    {
-      title: "Performance & Customization",
-      icon: <Gauge className="w-5 h-5 sm:w-6 sm:h-6" />,
-      services: [
-        {
-          title: 'Performance Tuning',
-          description: 'Horsepower unleashed. Dyno-tested and torque optimized.',
-          icon: <Gauge className="w-4 h-4 sm:w-5 sm:h-5" />,
-          image: 'https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=400&h=300&fit=crop'
-        },
-        {
-          title: 'ECU Remapping',
-          description: 'Custom maps tailored for responsiveness, economy, or raw speed.',
-          icon: <Settings className="w-4 h-4 sm:w-5 sm:h-5" />,
-          image: 'https://images.unsplash.com/photo-1605810230434-7631ac76ec81?w=400&h=300&fit=crop'
-        },
-        {
-          title: 'Exhaust Repair',
-          description: 'Smooth airflow, roaring tone, and emissions compliance.',
-          icon: <Settings className="w-4 h-4 sm:w-5 sm:h-5" />,
-          image: 'https://images.unsplash.com/photo-1580273916550-e323be2ae537?w=400&h=300&fit=crop'
-        },
-        {
-          title: 'Car Paint & Protection',
-          description: 'Flawless finish. Ceramic coat. Paint protection films available.',
-          icon: <PaintRoller className="w-4 h-4 sm:w-5 sm:h-5" />,
-          image: 'https://images.unsplash.com/photo-1520340356849-428e5eae4042?w=400&h=300&fit=crop'
+          image: '/lovable-uploads/9db7fc3e-a988-4b9d-a7ab-a6494b58561e.png'
         }
       ]
     },
@@ -151,13 +121,13 @@ export const ServiceGrid = () => {
           title: 'Car Body Repair',
           description: 'Precision repair for dents, cracks, scrapes, and frame issues.',
           icon: <Wrench className="w-4 h-4 sm:w-5 sm:h-5" />,
-          image: 'https://images.unsplash.com/photo-1520340356849-428e5eae4042?w=400&h=300&fit=crop'
+          image: '/lovable-uploads/87b8aae3-aba3-4dff-b0e1-dcc04f54440d.png'
         },
         {
-          title: 'Paint Restoration & PPF',
-          description: 'Restore your shine and protect it for years with clear film technology.',
+          title: 'Car Paint & Protection',
+          description: 'Flawless finish. Ceramic coat. Paint protection films available.',
           icon: <PaintRoller className="w-4 h-4 sm:w-5 sm:h-5" />,
-          image: 'https://images.unsplash.com/photo-1562141961-d80ca95c3bce?w=400&h=300&fit=crop'
+          image: '/lovable-uploads/f1cfe23e-d23b-4717-9f75-a07199716d98.png'
         }
       ]
     }
@@ -190,7 +160,7 @@ export const ServiceGrid = () => {
                 </h3>
               </div>
               
-              {/* Premium Horizontal Scroll Layout */}
+              {/* Horizontal Scroll Carousel */}
               <div className="relative">
                 <Carousel 
                   className="w-full"
@@ -198,20 +168,21 @@ export const ServiceGrid = () => {
                     align: "start",
                     loop: false,
                     dragFree: true,
+                    containScroll: "trimSnaps",
                   }}
                 >
                   <CarouselContent className="-ml-2 md:-ml-4">
                     {category.services.map((service, index) => (
-                      <CarouselItem key={service.title} className="pl-2 md:pl-4 basis-4/5 sm:basis-3/5 md:basis-2/5 lg:basis-1/3 xl:basis-1/4">
+                      <CarouselItem key={service.title} className="pl-2 md:pl-4 basis-[85%] xs:basis-4/5 sm:basis-3/5 md:basis-2/5 lg:basis-1/3 xl:basis-1/4">
                         <div className="group cursor-pointer h-full">
-                          <div className="bg-gradient-to-br from-charcoal/90 to-charcoal/60 backdrop-blur-sm border border-gray-800/50 rounded-3xl p-6 lg:p-8 shadow-2xl transition-all duration-500 hover:shadow-burnt-orange/20 hover:border-burnt-orange/50 hover:scale-105 hover:-translate-y-2 h-full flex flex-col">
+                          <div className="bg-gradient-to-br from-charcoal/90 to-charcoal/60 backdrop-blur-sm border border-gray-800/50 rounded-3xl p-6 lg:p-8 shadow-2xl transition-all duration-500 hover:shadow-burnt-orange/20 hover:border-burnt-orange/50 hover:scale-[1.02] hover:-translate-y-1 h-full flex flex-col min-h-[400px]">
                             
                             {/* Service Image */}
-                            <div className="mb-6 overflow-hidden rounded-2xl bg-gradient-to-br from-gray-900 to-gray-800">
+                            <div className="mb-6 overflow-hidden rounded-2xl bg-gradient-to-br from-gray-900 to-gray-800 aspect-[4/3]">
                               <img 
                                 src={service.image} 
                                 alt={service.title}
-                                className="w-full h-48 lg:h-56 object-cover group-hover:scale-110 group-hover:brightness-110 transition-all duration-500"
+                                className="w-full h-full object-cover group-hover:scale-110 group-hover:brightness-110 transition-all duration-500"
                                 onError={(e) => {
                                   e.currentTarget.src = 'https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=400&h=300&fit=crop';
                                 }}
