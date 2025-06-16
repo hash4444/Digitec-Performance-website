@@ -87,25 +87,25 @@ export const BrandsWeServe = () => {
         </svg>
       ),
       'Porsche': (
-        <svg viewBox="0 0 100 100" className="w-full h-full">
-          <rect x="25" y="25" width="50" height="50" fill="none" stroke="currentColor" strokeWidth="2"/>
-          <text x="50" y="55" textAnchor="middle" fontSize="16" fill="currentColor" fontWeight="bold">P</text>
-        </svg>
+        <img 
+          src="/lovable-uploads/b632a8da-5197-45f3-96f1-94cd0e9942e3.png" 
+          alt="Porsche Logo"
+          className="w-full h-full object-contain"
+        />
       ),
       'Audi': (
-        <svg viewBox="0 0 100 100" className="w-full h-full">
-          <circle cx="25" cy="50" r="15" fill="none" stroke="currentColor" strokeWidth="2"/>
-          <circle cx="40" cy="50" r="15" fill="none" stroke="currentColor" strokeWidth="2"/>
-          <circle cx="60" cy="50" r="15" fill="none" stroke="currentColor" strokeWidth="2"/>
-          <circle cx="75" cy="50" r="15" fill="none" stroke="currentColor" strokeWidth="2"/>
-        </svg>
+        <img 
+          src="/lovable-uploads/8e59fadf-f1e4-4860-ac92-81509a23ec94.png" 
+          alt="Audi Logo"
+          className="w-full h-full object-contain"
+        />
       ),
       'BMW': (
-        <svg viewBox="0 0 100 100" className="w-full h-full">
-          <circle cx="50" cy="50" r="40" fill="none" stroke="currentColor" strokeWidth="2"/>
-          <path d="M50 10 L50 90 M10 50 L90 50" stroke="currentColor" strokeWidth="1"/>
-          <path d="M20 20 L50 50 L80 20 M20 80 L50 50 L80 80" stroke="currentColor" strokeWidth="1"/>
-        </svg>
+        <img 
+          src="/lovable-uploads/f13e5867-fa2e-4bac-8132-8c6ee447feab.png" 
+          alt="BMW Logo"
+          className="w-full h-full object-contain"
+        />
       ),
       'Lamborghini': (
         <img 
@@ -115,34 +115,39 @@ export const BrandsWeServe = () => {
         />
       ),
       'Bentley': (
-        <svg viewBox="0 0 100 100" className="w-full h-full">
-          <path d="M30 30 Q50 10 70 30 Q70 50 50 50 Q30 50 30 30" fill="none" stroke="currentColor" strokeWidth="2"/>
-          <text x="50" y="75" textAnchor="middle" fontSize="20" fill="currentColor" fontWeight="bold">B</text>
-        </svg>
+        <img 
+          src="/lovable-uploads/7a227eaa-c434-4d89-8827-fb1c5d640bc3.png" 
+          alt="Bentley Logo"
+          className="w-full h-full object-contain"
+        />
       ),
       'McLaren': (
-        <svg viewBox="0 0 100 100" className="w-full h-full">
-          <path d="M20 60 Q50 20 80 60 L70 70 Q50 40 30 70 Z" fill="none" stroke="currentColor" strokeWidth="2"/>
-          <text x="50" y="85" textAnchor="middle" fontSize="14" fill="currentColor">McLaren</text>
-        </svg>
+        <img 
+          src="/lovable-uploads/70a5e539-8ab8-44b9-85a1-4ecac36681c2.png" 
+          alt="McLaren Logo"
+          className="w-full h-full object-contain"
+        />
       ),
       'Ferrari': (
-        <svg viewBox="0 0 100 100" className="w-full h-full">
-          <path d="M30 70 L30 30 Q50 10 70 30 L70 70 Q50 80 30 70" fill="none" stroke="currentColor" strokeWidth="2"/>
-          <path d="M35 40 L65 40 M40 50 L60 50" stroke="currentColor" strokeWidth="1"/>
-        </svg>
+        <img 
+          src="/lovable-uploads/54bab4d8-e8ac-469c-8b33-0116edc6c3b0.png" 
+          alt="Ferrari Logo"
+          className="w-full h-full object-contain"
+        />
       ),
       'Bugatti': (
-        <svg viewBox="0 0 100 100" className="w-full h-full">
-          <ellipse cx="50" cy="50" rx="35" ry="25" fill="none" stroke="currentColor" strokeWidth="2"/>
-          <text x="50" y="55" textAnchor="middle" fontSize="18" fill="currentColor" fontWeight="bold">B</text>
-        </svg>
+        <img 
+          src="/lovable-uploads/0d7ae3eb-4e88-4a9b-ba5a-f7f1d25b74ec.png" 
+          alt="Bugatti Logo"
+          className="w-full h-full object-contain"
+        />
       ),
       'Range Rover': (
-        <svg viewBox="0 0 100 100" className="w-full h-full">
-          <rect x="20" y="35" width="60" height="30" fill="none" stroke="currentColor" strokeWidth="2"/>
-          <text x="50" y="55" textAnchor="middle" fontSize="14" fill="currentColor">RR</text>
-        </svg>
+        <img 
+          src="/lovable-uploads/bf4fc6ba-f08f-4fa6-a7c6-0e1a65b780b3.png" 
+          alt="Range Rover Logo"
+          className="w-full h-full object-contain"
+        />
       ),
       'Rolls Royce': (
         <svg viewBox="0 0 100 100" className="w-full h-full">
@@ -151,11 +156,11 @@ export const BrandsWeServe = () => {
         </svg>
       ),
       'Aston Martin': (
-        <svg viewBox="0 0 100 100" className="w-full h-full">
-          <path d="M25 70 Q50 30 75 70" fill="none" stroke="currentColor" strokeWidth="2"/>
-          <path d="M35 60 L65 60" stroke="currentColor" strokeWidth="2"/>
-          <text x="50" y="85" textAnchor="middle" fontSize="12" fill="currentColor">AM</text>
-        </svg>
+        <img 
+          src="/lovable-uploads/a864ba86-0cc4-45a7-83e5-f3e39a34e6e5.png" 
+          alt="Aston Martin Logo"
+          className="w-full h-full object-contain"
+        />
       )
     };
 
