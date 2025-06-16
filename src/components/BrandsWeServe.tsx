@@ -1,3 +1,4 @@
+
 import React, { useEffect, useRef, useState } from 'react';
 
 export const BrandsWeServe = () => {
@@ -69,104 +70,104 @@ export const BrandsWeServe = () => {
     };
   };
 
-  // Brand logo SVGs (simplified representations)
+  // Brand logo components with uniform sizing
   const getBrandLogo = (brandName: string) => {
     const logoMap: { [key: string]: JSX.Element } = {
       'Mercedes-Benz': (
         <img 
           src="/lovable-uploads/a6f453f2-f2c5-4140-8f2a-bfa3401611d7.png" 
           alt="Mercedes-Benz Logo"
-          className="w-full h-full object-contain"
+          className="logo-image"
         />
       ),
       'Maybach': (
         <img 
           src="/lovable-uploads/5cc5b8af-7dd9-46a9-9ee2-3e5b14fda559.png" 
           alt="Maybach Logo"
-          className="w-full h-full object-contain"
+          className="logo-image"
         />
       ),
       'Porsche': (
         <img 
           src="/lovable-uploads/8e7e2545-680e-42ac-bd97-ba1f9c063649.png" 
           alt="Porsche Logo"
-          className="w-full h-full object-contain"
+          className="logo-image"
         />
       ),
       'Audi': (
         <img 
           src="/lovable-uploads/a3e92dde-70a9-499b-a7b0-ae0df117baf9.png" 
           alt="Audi Logo"
-          className="w-full h-full object-contain"
+          className="logo-image"
         />
       ),
       'BMW': (
         <img 
           src="/lovable-uploads/d66ea83e-7d6a-4c19-bf30-f27eca93ac8e.png" 
           alt="BMW Logo"
-          className="w-full h-full object-contain"
+          className="logo-image"
         />
       ),
       'Lamborghini': (
         <img 
           src="/lovable-uploads/8c4046ee-9977-417a-90a9-820452146832.png" 
           alt="Lamborghini Logo"
-          className="w-full h-full object-contain"
+          className="logo-image"
         />
       ),
       'Bentley': (
         <img 
           src="/lovable-uploads/b2cd5f78-8a43-4a9b-8a0a-19124642ca5a.png" 
           alt="Bentley Logo"
-          className="w-full h-full object-contain"
+          className="logo-image"
         />
       ),
       'McLaren': (
         <img 
           src="/lovable-uploads/7f8d98f4-3581-451c-bfaf-262eb67cf14b.png" 
           alt="McLaren Logo"
-          className="w-full h-full object-contain"
+          className="logo-image"
         />
       ),
       'Ferrari': (
         <img 
           src="/lovable-uploads/11f29482-f2d3-4278-ae2a-397044a1ff95.png" 
           alt="Ferrari Logo"
-          className="w-full h-full object-contain"
+          className="logo-image"
         />
       ),
       'Bugatti': (
         <img 
           src="/lovable-uploads/69bd2660-e800-47b4-bc4d-de6e6b65b984.png" 
           alt="Bugatti Logo"
-          className="w-full h-full object-contain"
+          className="logo-image"
         />
       ),
       'Range Rover': (
         <img 
           src="/lovable-uploads/4bb58917-704a-4c5d-84b6-dc428a00c004.png" 
           alt="Range Rover Logo"
-          className="w-full h-full object-contain"
+          className="logo-image"
         />
       ),
       'Rolls Royce': (
         <img 
           src="/lovable-uploads/a4c040e8-740a-4fcb-b837-b86e15c25306.png" 
           alt="Rolls Royce Logo"
-          className="w-full h-full object-contain"
+          className="logo-image"
         />
       ),
       'Aston Martin': (
         <img 
           src="/lovable-uploads/8d3bad14-09df-4ef1-86c6-13cfcba7042b.png" 
           alt="Aston Martin Logo"
-          className="w-full h-full object-contain"
+          className="logo-image"
         />
       )
     };
 
     return logoMap[brandName] || (
-      <div className="w-full h-full rounded-2xl bg-gradient-to-br from-burnt-orange/20 to-chocolate/20 flex items-center justify-center">
+      <div className="w-full h-full rounded-3xl bg-gradient-to-br from-burnt-orange/20 to-chocolate/20 flex items-center justify-center">
         <span className="text-2xl font-black text-burnt-orange">
           {brandName.charAt(0)}
         </span>
@@ -193,14 +194,33 @@ export const BrandsWeServe = () => {
         
         .brand-logo {
           transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
-          border-radius: 20px;
-          box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+          border-radius: 24px;
+          box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          aspect-ratio: 1;
+          padding: 12px;
+          background: rgba(255, 255, 255, 0.95);
+          backdrop-filter: blur(10px);
+          border: 2px solid rgba(255, 107, 53, 0.1);
         }
         
         .brand-logo:hover {
           transform: scale(1.15);
-          box-shadow: 0 16px 48px rgba(255, 107, 53, 0.25);
-          border-radius: 24px;
+          box-shadow: 0 16px 48px rgba(255, 107, 53, 0.3);
+          border-color: rgba(255, 107, 53, 0.4);
+          background: rgba(255, 255, 255, 1);
+        }
+        
+        .logo-image {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+          object-position: center;
+          max-width: 100%;
+          max-height: 100%;
+          display: block;
         }
         
         .central-d {
@@ -213,11 +233,25 @@ export const BrandsWeServe = () => {
           animation: particles 8s ease-in-out infinite;
           border-radius: 50%;
         }
+        
+        @media (max-width: 768px) {
+          .brand-logo {
+            padding: 8px;
+            border-radius: 20px;
+          }
+        }
+        
+        @media (max-width: 480px) {
+          .brand-logo {
+            padding: 6px;
+            border-radius: 16px;
+          }
+        }
       `}</style>
       
       <section 
         ref={sectionRef}
-        className="relative py-32 bg-white overflow-hidden min-h-screen flex items-center justify-center"
+        className="relative py-32 bg-gradient-to-br from-charcoal via-black to-charcoal overflow-hidden min-h-screen flex items-center justify-center"
       >
         {/* Ambient particles */}
         <div className="absolute inset-0 pointer-events-none">
@@ -241,19 +275,19 @@ export const BrandsWeServe = () => {
         <div className="max-w-6xl mx-auto px-6 relative z-10">
           {/* Section title */}
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-6xl font-black mb-6 text-black tracking-tight">
+            <h2 className="text-4xl md:text-6xl font-black mb-6 text-off-white tracking-tight">
               Brands We Serve
             </h2>
-            <p className="text-xl text-gray-700 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
               Precision performance for the world's most prestigious automotive brands
             </p>
           </div>
           
           {/* Orbital system */}
-          <div className="relative w-full h-[600px] flex items-center justify-center">
+          <div className="relative w-full h-[600px] md:h-[700px] lg:h-[800px] flex items-center justify-center">
             {/* Central D */}
-            <div className="absolute z-20 w-28 h-28 flex items-center justify-center rounded-3xl bg-gradient-to-br from-burnt-orange/10 to-transparent shadow-2xl">
-              <div className="central-d text-7xl font-black text-burnt-orange">
+            <div className="absolute z-20 w-24 h-24 md:w-28 md:h-28 lg:w-32 lg:h-32 flex items-center justify-center rounded-3xl bg-gradient-to-br from-burnt-orange/20 to-transparent shadow-2xl backdrop-blur-sm border border-burnt-orange/30">
+              <div className="central-d text-5xl md:text-6xl lg:text-7xl font-black text-burnt-orange">
                 D
               </div>
             </div>
@@ -271,7 +305,7 @@ export const BrandsWeServe = () => {
                 return (
                   <div
                     key={brand.name}
-                    className="absolute w-20 h-20 flex items-center justify-center group cursor-pointer"
+                    className="absolute w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 flex items-center justify-center group cursor-pointer"
                     style={{
                       left: '50%',
                       top: '50%',
@@ -279,15 +313,15 @@ export const BrandsWeServe = () => {
                     }}
                   >
                     {/* Brand logo */}
-                    <div className="brand-logo w-full h-full text-gray-600 group-hover:text-burnt-orange bg-white/80 backdrop-blur-sm p-3 rounded-2xl shadow-lg">
+                    <div className="brand-logo w-full h-full">
                       {getBrandLogo(brand.name)}
                     </div>
                     
                     {/* Hover tooltip */}
-                    <div className="absolute top-full mt-6 left-1/2 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-all duration-300 pointer-events-none">
-                      <div className="bg-white/95 backdrop-blur-md border border-burnt-orange/20 rounded-2xl px-6 py-4 text-center whitespace-nowrap shadow-2xl">
+                    <div className="absolute top-full mt-6 left-1/2 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-all duration-300 pointer-events-none z-30">
+                      <div className="bg-white/95 backdrop-blur-md border border-burnt-orange/20 rounded-3xl px-6 py-4 text-center whitespace-nowrap shadow-2xl">
                         <div className="text-burnt-orange font-bold text-sm">{brand.name}</div>
-                        <div className="text-gray-700 text-xs mt-1">{brand.specialization}</div>
+                        <div className="text-gray-700 text-xs mt-1 max-w-48">{brand.specialization}</div>
                       </div>
                     </div>
                   </div>
@@ -298,10 +332,10 @@ export const BrandsWeServe = () => {
           
           {/* Bottom CTA */}
           <div className="text-center mt-16">
-            <p className="text-gray-600 mb-8 text-lg">
+            <p className="text-gray-300 mb-8 text-lg">
               Experience precision service for your luxury vehicle
             </p>
-            <button className="bg-burnt-orange hover:bg-burnt-orange/90 text-white font-bold text-lg px-12 py-4 rounded-2xl transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl hover:shadow-burnt-orange/25">
+            <button className="bg-burnt-orange hover:bg-burnt-orange/90 text-black font-bold text-lg px-12 py-4 rounded-3xl transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl hover:shadow-burnt-orange/25">
               Schedule Service
             </button>
           </div>
