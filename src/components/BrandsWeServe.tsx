@@ -5,51 +5,63 @@ export const BrandsWeServe = () => {
   const brands = [
     {
       name: 'Mercedes-Benz',
-      specialization: 'AMG Performance & Star Diagnostics'
+      specialization: 'AMG Performance & Star Diagnostics',
+      logo: 'https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?w=100&h=100&fit=crop&crop=center'
     },
     {
       name: 'Maybach',
-      specialization: 'Ultra-Luxury Comfort & Precision Service'
+      specialization: 'Ultra-Luxury Comfort & Precision Service',
+      logo: 'https://images.unsplash.com/photo-1563720223185-11003d516935?w=100&h=100&fit=crop&crop=center'
     },
     {
       name: 'Porsche',
-      specialization: 'GT3 & Turbo Powertrain Tuning'
+      specialization: 'GT3 & Turbo Powertrain Tuning',
+      logo: 'https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=100&h=100&fit=crop&crop=center'
     },
     {
       name: 'Audi',
-      specialization: 'Quattro Systems & RS Performance'
+      specialization: 'Quattro Systems & RS Performance',
+      logo: 'https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?w=100&h=100&fit=crop&crop=center'
     },
     {
       name: 'BMW',
-      specialization: 'M Series Optimization & iDrive Coding'
+      specialization: 'M Series Optimization & iDrive Coding',
+      logo: 'https://images.unsplash.com/photo-1555215695-3004980ad54e?w=100&h=100&fit=crop&crop=center'
     },
     {
       name: 'Lamborghini',
-      specialization: 'V10 & V12 Specialists'
+      specialization: 'V10 & V12 Specialists',
+      logo: 'https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=100&h=100&fit=crop&crop=center'
     },
     {
       name: 'Bentley',
-      specialization: 'Continental & Flying Spur Excellence'
+      specialization: 'Continental & Flying Spur Excellence',
+      logo: 'https://images.unsplash.com/photo-1563720223185-11003d516935?w=100&h=100&fit=crop&crop=center'
     },
     {
       name: 'McLaren',
-      specialization: 'Carbon Fiber & Turbo V8 Mastery'
+      specialization: 'Carbon Fiber & Turbo V8 Mastery',
+      logo: 'https://images.unsplash.com/photo-1555215695-3004980ad54e?w=100&h=100&fit=crop&crop=center'
     },
     {
       name: 'Ferrari',
-      specialization: 'ECU & Powertrain Calibration'
+      specialization: 'ECU & Powertrain Calibration',
+      logo: 'https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=100&h=100&fit=crop&crop=center'
     },
     {
       name: 'Bugatti',
-      specialization: 'Quad Turbo Optimization & Luxury Diagnostics'
+      specialization: 'Quad Turbo Optimization & Luxury Diagnostics',
+      logo: 'https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?w=100&h=100&fit=crop&crop=center'
     },
     {
       name: 'Range Rover',
-      specialization: 'Terrain Response & Luxury SUV Systems'
+      specialization: 'Terrain Response & Luxury SUV Systems',
+      logo: 'https://images.unsplash.com/photo-1563720223185-11003d516935?w=100&h=100&fit=crop&crop=center'
     },
     {
       name: 'Rolls Royce',
-      specialization: 'Quiet, Precise, Luxurious – Inside and Out'
+      specialization: 'Quiet, Precise, Luxurious – Inside and Out',
+      logo: 'https://images.unsplash.com/photo-1555215695-3004980ad54e?w=100&h=100&fit=crop&crop=center'
     }
   ];
 
@@ -78,10 +90,15 @@ export const BrandsWeServe = () => {
               {/* Glow effect on hover */}
               <div className="absolute inset-0 bg-gradient-to-r from-burnt-orange/0 via-burnt-orange/10 to-burnt-orange/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               
-              {/* Logo placeholder with metallic effect */}
+              {/* Actual brand logo */}
               <div className="relative mb-6">
                 <div className="h-16 flex items-center justify-center mb-4">
-                  <div className="w-full h-12 bg-gradient-to-r from-gray-500 via-gray-300 to-gray-500 rounded opacity-60 group-hover:opacity-90 transition-all duration-500 group-hover:shadow-lg group-hover:shadow-burnt-orange/30 relative overflow-hidden">
+                  <div className="relative w-16 h-16 rounded-full overflow-hidden bg-gradient-to-r from-gray-500 via-gray-300 to-gray-500 group-hover:shadow-lg group-hover:shadow-burnt-orange/30 transition-all duration-500">
+                    <img 
+                      src={brand.logo} 
+                      alt={`${brand.name} logo`}
+                      className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+                    />
                     {/* Shimmer effect */}
                     <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent transform -skew-x-12 translate-x-[-100%] group-hover:translate-x-[200%] transition-transform duration-1000"></div>
                   </div>
