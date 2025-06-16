@@ -8,6 +8,7 @@ import { AppFeatures } from '@/components/AppFeatures';
 import { WhyChooseUs } from '@/components/WhyChooseUs';
 import { Reviews } from '@/components/Reviews';
 import { PerformanceResults } from '@/components/PerformanceResults';
+import { FAQ } from '@/components/FAQ';
 import { FinalCTA } from '@/components/FinalCTA';
 import { Footer } from '@/components/Footer';
 import { ChatBot } from '@/components/ChatBot/ChatBot';
@@ -23,6 +24,7 @@ const Index = () => {
       <WhyChooseUs />
       <Reviews />
       <PerformanceResults />
+      <FAQ />
       <FinalCTA />
       <Footer />
       <ChatBot />
