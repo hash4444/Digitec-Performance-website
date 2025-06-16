@@ -1,4 +1,3 @@
-
 import React, { useEffect, useRef, useState } from 'react';
 
 export const BrandsWeServe = () => {
@@ -74,10 +73,11 @@ export const BrandsWeServe = () => {
   const getBrandLogo = (brandName: string) => {
     const logoMap: { [key: string]: JSX.Element } = {
       'Mercedes-Benz': (
-        <svg viewBox="0 0 100 100" className="w-full h-full">
-          <circle cx="50" cy="50" r="45" fill="none" stroke="currentColor" strokeWidth="2"/>
-          <path d="M50 15 L50 50 L25 75 M50 50 L75 75" stroke="currentColor" strokeWidth="2" fill="none"/>
-        </svg>
+        <img 
+          src="/lovable-uploads/a6f453f2-f2c5-4140-8f2a-bfa3401611d7.png" 
+          alt="Mercedes-Benz Logo"
+          className="w-full h-full object-contain"
+        />
       ),
       'Maybach': (
         <svg viewBox="0 0 100 100" className="w-full h-full">
