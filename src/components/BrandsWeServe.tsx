@@ -183,8 +183,8 @@ export const BrandsWeServe = () => {
         }
         
         @keyframes particles {
-          0%, 100% { transform: translate(0, 0) scale(1); opacity: 0.3; }
-          50% { transform: translate(20px, -20px) scale(1.2); opacity: 0.7; }
+          0%, 100% { transform: translate(0, 0) scale(1); opacity: 0.1; }
+          50% { transform: translate(20px, -20px) scale(1.2); opacity: 0.3; }
         }
         
         .orbital-container {
@@ -194,37 +194,41 @@ export const BrandsWeServe = () => {
         .brand-logo {
           transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
           border-radius: 24px;
-          box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+          border: 1px solid rgba(0, 0, 0, 0.05);
         }
         
         .brand-logo:hover {
           transform: scale(1.15);
-          box-shadow: 0 16px 48px rgba(255, 107, 53, 0.25);
+          box-shadow: 0 8px 32px rgba(255, 107, 53, 0.15);
           border-radius: 28px;
+          border: 1px solid rgba(255, 107, 53, 0.2);
         }
         
         .central-d {
-          text-shadow: 0 0 30px rgba(255, 107, 53, 0.8),
-                       0 0 60px rgba(255, 107, 53, 0.6),
-                       0 0 90px rgba(255, 107, 53, 0.4);
+          text-shadow: 0 0 40px rgba(255, 107, 53, 0.9),
+                       0 0 80px rgba(255, 107, 53, 0.7),
+                       0 0 120px rgba(255, 107, 53, 0.5);
+          filter: drop-shadow(0 0 20px rgba(255, 107, 53, 0.8));
         }
         
         .particle {
           animation: particles 8s ease-in-out infinite;
           border-radius: 50%;
+          background: rgba(255, 107, 53, 0.1);
         }
       `}</style>
       
       <section 
         ref={sectionRef}
-        className="relative py-32 bg-charcoal overflow-hidden min-h-screen flex items-center justify-center"
+        className="relative py-32 bg-white overflow-hidden min-h-screen flex items-center justify-center"
       >
         {/* Ambient particles */}
         <div className="absolute inset-0 pointer-events-none">
           {[...Array(40)].map((_, i) => (
             <div
               key={i}
-              className="particle absolute w-2 h-2 bg-burnt-orange/20 rounded-full shadow-lg"
+              className="particle absolute w-2 h-2 rounded-full shadow-lg"
               style={{
                 left: `${Math.random() * 100}%`,
                 top: `${Math.random() * 100}%`,
@@ -236,24 +240,24 @@ export const BrandsWeServe = () => {
         </div>
 
         {/* Background gradient */}
-        <div className="absolute inset-0 bg-gradient-radial from-burnt-orange/5 via-transparent to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-radial from-burnt-orange/3 via-transparent to-transparent"></div>
         
         <div className="max-w-6xl mx-auto px-6 relative z-10">
           {/* Section title */}
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-6xl font-black mb-6 text-off-white tracking-tight">
+            <h2 className="text-4xl md:text-6xl font-black mb-6 text-black tracking-tight">
               Brands We Serve
             </h2>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-700 max-w-3xl mx-auto">
               Precision performance for the world's most prestigious automotive brands
             </p>
           </div>
           
           {/* Orbital system */}
           <div className="relative w-full h-[600px] flex items-center justify-center">
-            {/* Central D */}
-            <div className="absolute z-20 w-28 h-28 flex items-center justify-center rounded-3xl bg-gradient-to-br from-burnt-orange/10 to-transparent shadow-2xl">
-              <div className="central-d text-7xl font-black text-burnt-orange">
+            {/* Central D - Standalone with glow */}
+            <div className="absolute z-20 flex items-center justify-center">
+              <div className="central-d text-8xl font-black text-burnt-orange">
                 D
               </div>
             </div>
@@ -279,12 +283,12 @@ export const BrandsWeServe = () => {
                     }}
                   >
                     {/* Brand logo */}
-                    <div className="brand-logo w-full h-full text-gray-600 group-hover:text-burnt-orange bg-white/80 backdrop-blur-sm p-3 rounded-3xl shadow-lg">
+                    <div className="brand-logo w-full h-full bg-white/90 backdrop-blur-sm p-3 shadow-lg">
                       {getBrandLogo(brand.name)}
                     </div>
                     
                     {/* Hover tooltip */}
-                    <div className="absolute top-full mt-6 left-1/2 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-all duration-300 pointer-events-none">
+                    <div className="absolute top-full mt-6 left-1/2 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-all duration-300 pointer-events-none z-30">
                       <div className="bg-white/95 backdrop-blur-md border border-burnt-orange/20 rounded-3xl px-6 py-4 text-center whitespace-nowrap shadow-2xl">
                         <div className="text-burnt-orange font-bold text-sm">{brand.name}</div>
                         <div className="text-gray-700 text-xs mt-1">{brand.specialization}</div>
@@ -298,10 +302,10 @@ export const BrandsWeServe = () => {
           
           {/* Bottom CTA */}
           <div className="text-center mt-16">
-            <p className="text-gray-300 mb-8 text-lg">
+            <p className="text-gray-700 mb-8 text-lg">
               Experience precision service for your luxury vehicle
             </p>
-            <button className="bg-burnt-orange hover:bg-burnt-orange/90 text-black font-bold text-lg px-12 py-4 rounded-3xl transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl hover:shadow-burnt-orange/25">
+            <button className="bg-burnt-orange hover:bg-burnt-orange/90 text-white font-bold text-lg px-12 py-4 rounded-3xl transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl hover:shadow-burnt-orange/25">
               Schedule Service
             </button>
           </div>
