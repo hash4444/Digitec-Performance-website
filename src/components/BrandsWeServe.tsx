@@ -150,10 +150,11 @@ export const BrandsWeServe = () => {
         />
       ),
       'Rolls Royce': (
-        <svg viewBox="0 0 100 100" className="w-full h-full">
-          <rect x="25" y="25" width="50" height="50" fill="none" stroke="currentColor" strokeWidth="2"/>
-          <path d="M35 35 L65 35 M35 45 L55 45 M35 55 L65 55 M35 65 L55 65" stroke="currentColor" strokeWidth="1"/>
-        </svg>
+        <img 
+          src="/lovable-uploads/c509aefa-0c5f-4a03-8de8-0d508fcd68cc.png" 
+          alt="Rolls Royce Logo"
+          className="w-full h-full object-contain"
+        />
       ),
       'Aston Martin': (
         <img 
