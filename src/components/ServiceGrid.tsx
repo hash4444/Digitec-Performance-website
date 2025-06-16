@@ -168,7 +168,7 @@ export const ServiceGrid = () => {
                 </h3>
               </div>
               
-              <div className="overflow-x-auto pb-4">
+              <div className="overflow-x-auto pb-4 scrollbar-thin scrollbar-track-charcoal scrollbar-thumb-burnt-orange hover:scrollbar-thumb-burnt-orange/80">
                 <div className="flex gap-6 w-max">
                   {category.services.map((service, index) => (
                     <div 
@@ -215,23 +215,6 @@ export const ServiceGrid = () => {
           </button>
         </div>
       </div>
-      
-      <style jsx>{`
-        .overflow-x-auto::-webkit-scrollbar {
-          height: 8px;
-        }
-        .overflow-x-auto::-webkit-scrollbar-track {
-          background: #36454f;
-          border-radius: 4px;
-        }
-        .overflow-x-auto::-webkit-scrollbar-thumb {
-          background: #ff6b35;
-          border-radius: 4px;
-        }
-        .overflow-x-auto::-webkit-scrollbar-thumb:hover {
-          background: #e55a2b;
-        }
-      `}</style>
     </section>
   );
 };
