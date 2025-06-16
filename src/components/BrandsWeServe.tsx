@@ -1,4 +1,5 @@
 
+
 import React, { useEffect, useRef, useState } from 'react';
 
 export const BrandsWeServe = () => {
@@ -81,10 +82,11 @@ export const BrandsWeServe = () => {
         />
       ),
       'Maybach': (
-        <svg viewBox="0 0 100 100" className="w-full h-full">
-          <path d="M20 30 L50 15 L80 30 L80 70 L50 85 L20 70 Z" fill="none" stroke="currentColor" strokeWidth="2"/>
-          <text x="50" y="55" textAnchor="middle" fontSize="24" fill="currentColor" fontWeight="bold">M</text>
-        </svg>
+        <img 
+          src="/lovable-uploads/5cc5b8af-7dd9-46a9-9ee2-3e5b14fda559.png" 
+          alt="Maybach Logo"
+          className="w-full h-full object-contain"
+        />
       ),
       'Porsche': (
         <img 
@@ -307,3 +309,4 @@ export const BrandsWeServe = () => {
     </>
   );
 };
+
