@@ -78,6 +78,7 @@ export const BrandsWeServe = () => {
           src="/lovable-uploads/a6f453f2-f2c5-4140-8f2a-bfa3401611d7.png" 
           alt="Mercedes-Benz Logo"
           className="w-full h-full object-contain"
+          style={{ filter: 'brightness(0) invert(1)' }}
         />
       ),
       'Maybach': (
@@ -91,6 +92,7 @@ export const BrandsWeServe = () => {
           src="/lovable-uploads/b632a8da-5197-45f3-96f1-94cd0e9942e3.png" 
           alt="Porsche Logo"
           className="w-full h-full object-contain"
+          style={{ filter: 'brightness(0) invert(1)' }}
         />
       ),
       'Audi': (
@@ -98,6 +100,7 @@ export const BrandsWeServe = () => {
           src="/lovable-uploads/8e59fadf-f1e4-4860-ac92-81509a23ec94.png" 
           alt="Audi Logo"
           className="w-full h-full object-contain"
+          style={{ filter: 'brightness(0) invert(1)' }}
         />
       ),
       'BMW': (
@@ -105,6 +108,7 @@ export const BrandsWeServe = () => {
           src="/lovable-uploads/f13e5867-fa2e-4bac-8132-8c6ee447feab.png" 
           alt="BMW Logo"
           className="w-full h-full object-contain"
+          style={{ filter: 'brightness(0) invert(1)' }}
         />
       ),
       'Lamborghini': (
@@ -112,6 +116,7 @@ export const BrandsWeServe = () => {
           src="/lovable-uploads/8c4046ee-9977-417a-90a9-820452146832.png" 
           alt="Lamborghini Logo"
           className="w-full h-full object-contain"
+          style={{ filter: 'brightness(0) invert(1)' }}
         />
       ),
       'Bentley': (
@@ -119,6 +124,7 @@ export const BrandsWeServe = () => {
           src="/lovable-uploads/7a227eaa-c434-4d89-8827-fb1c5d640bc3.png" 
           alt="Bentley Logo"
           className="w-full h-full object-contain"
+          style={{ filter: 'brightness(0) invert(1)' }}
         />
       ),
       'McLaren': (
@@ -126,6 +132,7 @@ export const BrandsWeServe = () => {
           src="/lovable-uploads/70a5e539-8ab8-44b9-85a1-4ecac36681c2.png" 
           alt="McLaren Logo"
           className="w-full h-full object-contain"
+          style={{ filter: 'brightness(0) invert(1)' }}
         />
       ),
       'Ferrari': (
@@ -133,6 +140,7 @@ export const BrandsWeServe = () => {
           src="/lovable-uploads/54bab4d8-e8ac-469c-8b33-0116edc6c3b0.png" 
           alt="Ferrari Logo"
           className="w-full h-full object-contain"
+          style={{ filter: 'brightness(0) invert(1)' }}
         />
       ),
       'Bugatti': (
@@ -140,6 +148,7 @@ export const BrandsWeServe = () => {
           src="/lovable-uploads/0d7ae3eb-4e88-4a9b-ba5a-f7f1d25b74ec.png" 
           alt="Bugatti Logo"
           className="w-full h-full object-contain"
+          style={{ filter: 'brightness(0) invert(1)' }}
         />
       ),
       'Range Rover': (
@@ -147,6 +156,7 @@ export const BrandsWeServe = () => {
           src="/lovable-uploads/bf4fc6ba-f08f-4fa6-a7c6-0e1a65b780b3.png" 
           alt="Range Rover Logo"
           className="w-full h-full object-contain"
+          style={{ filter: 'brightness(0) invert(1)' }}
         />
       ),
       'Rolls Royce': (
@@ -154,6 +164,7 @@ export const BrandsWeServe = () => {
           src="/lovable-uploads/c509aefa-0c5f-4a03-8de8-0d508fcd68cc.png" 
           alt="Rolls Royce Logo"
           className="w-full h-full object-contain"
+          style={{ filter: 'brightness(0) invert(1)' }}
         />
       ),
       'Aston Martin': (
@@ -161,6 +172,7 @@ export const BrandsWeServe = () => {
           src="/lovable-uploads/a864ba86-0cc4-45a7-83e5-f3e39a34e6e5.png" 
           alt="Aston Martin Logo"
           className="w-full h-full object-contain"
+          style={{ filter: 'brightness(0) invert(1)' }}
         />
       )
     };
