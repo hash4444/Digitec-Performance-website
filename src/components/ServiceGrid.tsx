@@ -25,25 +25,25 @@ export const ServiceGrid = () => {
           title: 'Transmission Services',
           description: 'Full diagnostics, clutch replacement, and gear optimization.',
           icon: <Gauge className="w-4 h-4 sm:w-5 sm:h-5" />,
-          image: 'https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=400&h=300&fit=crop'
+          image: '/lovable-uploads/b56133bf-55e4-4bc9-884f-15f732132259.png'
         },
         {
           title: 'Suspension Repair',
           description: 'Smooth, responsive ride quality — tuned for control and comfort.',
           icon: <Settings className="w-4 h-4 sm:w-5 sm:h-5" />,
-          image: 'https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?w=400&h=300&fit=crop'
+          image: '/lovable-uploads/0f7fde8d-a57b-45bc-bb10-c80f98525682.png'
         },
         {
           title: 'Steering Repair',
           description: 'Refined alignment and steering system recalibration.',
           icon: <Settings className="w-4 h-4 sm:w-5 sm:h-5" />,
-          image: 'https://images.unsplash.com/photo-1525609004556-c46c7d6cf023?w=400&h=300&fit=crop'
+          image: '/lovable-uploads/b8278b01-7cf1-43fb-ae22-3f731c36cec5.png'
         },
         {
           title: 'Brake System Repairs',
           description: 'Peak stopping power with OEM or performance-grade parts.',
           icon: <Settings className="w-4 h-4 sm:w-5 sm:h-5" />,
-          image: 'https://images.unsplash.com/photo-1580273916550-e323be2ae537?w=400&h=300&fit=crop'
+          image: '/lovable-uploads/99d04ebd-5104-40f5-961d-f26cff7f2030.png'
         },
         {
           title: 'Routine Maintenance',
@@ -55,19 +55,19 @@ export const ServiceGrid = () => {
           title: 'Oil Change Service',
           description: 'Premium oils, maximum efficiency, extended engine life.',
           icon: <Settings className="w-4 h-4 sm:w-5 sm:h-5" />,
-          image: 'https://images.unsplash.com/photo-1606016159991-5de2506ea2be?w=400&h=300&fit=crop'
+          image: '/lovable-uploads/b25532a7-eae9-45ae-b8bf-425984dbfa6d.png'
         },
         {
           title: 'Tire Repair',
           description: 'Balance, alignment, and performance-grade tire fitting.',
           icon: <Settings className="w-4 h-4 sm:w-5 sm:h-5" />,
-          image: 'https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=400&h=300&fit=crop'
+          image: '/lovable-uploads/00377e13-62b4-4290-8054-c0aad75b9c00.png'
         },
         {
           title: 'Battery Changes',
           description: 'Fast, reliable battery replacements with top-tier brands.',
           icon: <Battery className="w-4 h-4 sm:w-5 sm:h-5" />,
-          image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=300&fit=crop'
+          image: '/lovable-uploads/c1c2c5d8-fd7e-4d38-945c-e52315b4229e.png'
         }
       ]
     },
@@ -190,97 +190,68 @@ export const ServiceGrid = () => {
                 </h3>
               </div>
               
-              {/* Mobile: Vertical stack, Desktop: Horizontal carousel */}
-              <div className="block sm:hidden space-y-4">
-                {category.services.map((service, index) => (
-                  <div 
-                    key={service.title}
-                    className="p-6 rounded-2xl transition-all duration-300 group cursor-pointer shadow-xl backdrop-blur-sm bg-gradient-to-br from-charcoal/80 to-charcoal/40 border border-gray-800/50 hover:border-burnt-orange/50 hover:shadow-2xl hover:shadow-burnt-orange/20 active:scale-95"
-                  >
-                    {/* Service Image */}
-                    <div className="mb-4 overflow-hidden rounded-xl group-hover:scale-105 transition-transform duration-300">
-                      <img 
-                        src={service.image} 
-                        alt={service.title}
-                        className="w-full h-32 object-cover group-hover:brightness-110 transition-all duration-300"
-                      />
-                    </div>
-                    
-                    <div className="flex items-start gap-3 mb-4">
-                      <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-burnt-orange/20 to-burnt-orange/5 flex items-center justify-center text-burnt-orange group-hover:text-burnt-orange/80 transition-colors duration-300 shadow-md">
-                        {service.icon}
-                      </div>
-                      <div className="flex-1">
-                        <h4 className="text-lg font-bold mb-2 group-hover:text-burnt-orange transition-colors duration-300">
-                          {service.title}
-                        </h4>
-                        <p className="text-gray-300 leading-relaxed text-sm">
-                          {service.description}
-                        </p>
-                      </div>
-                    </div>
-                    
-                    <div className="pt-3 border-t border-gray-700/50">
-                      <button className="text-burnt-orange font-semibold text-sm hover:underline transition-all duration-300 flex items-center gap-2">
-                        Learn More
-                        <span className="transform group-hover:translate-x-1 transition-transform duration-300">→</span>
-                      </button>
-                    </div>
-                  </div>
-                ))}
-              </div>
-
-              {/* Desktop: Horizontal carousel */}
-              <div className="hidden sm:block">
-                <Carousel className="w-full">
+              {/* Premium Horizontal Scroll Layout */}
+              <div className="relative">
+                <Carousel 
+                  className="w-full"
+                  opts={{
+                    align: "start",
+                    loop: false,
+                    dragFree: true,
+                  }}
+                >
                   <CarouselContent className="-ml-2 md:-ml-4">
                     {category.services.map((service, index) => (
-                      <CarouselItem key={service.title} className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/3">
-                        <div 
-                          className={`
-                            p-6 lg:p-8 rounded-2xl lg:rounded-3xl transition-all duration-300 group cursor-pointer shadow-xl backdrop-blur-sm h-full
-                            ${index % 2 === 0 
-                              ? 'bg-gradient-to-br from-charcoal/80 to-charcoal/40 border border-gray-800/50 hover:border-burnt-orange/50' 
-                              : 'bg-gradient-to-br from-chocolate/30 to-chocolate/10 border border-chocolate/30 hover:border-burnt-orange/50'
-                            }
-                            hover:shadow-2xl hover:shadow-burnt-orange/20 hover:scale-105 hover:-translate-y-2
-                          `}
-                        >
-                          {/* Service Image */}
-                          <div className="mb-6 overflow-hidden rounded-xl group-hover:scale-105 transition-transform duration-300">
-                            <img 
-                              src={service.image} 
-                              alt={service.title}
-                              className="w-full h-40 object-cover group-hover:brightness-110 group-hover:shadow-lg group-hover:shadow-burnt-orange/30 transition-all duration-300"
-                            />
-                          </div>
-                          
-                          <div className="flex items-start gap-4 mb-6">
-                            <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-burnt-orange/20 to-burnt-orange/5 flex items-center justify-center text-burnt-orange group-hover:text-burnt-orange/80 transition-colors duration-300 shadow-md">
-                              {service.icon}
+                      <CarouselItem key={service.title} className="pl-2 md:pl-4 basis-4/5 sm:basis-3/5 md:basis-2/5 lg:basis-1/3 xl:basis-1/4">
+                        <div className="group cursor-pointer h-full">
+                          <div className="bg-gradient-to-br from-charcoal/90 to-charcoal/60 backdrop-blur-sm border border-gray-800/50 rounded-3xl p-6 lg:p-8 shadow-2xl transition-all duration-500 hover:shadow-burnt-orange/20 hover:border-burnt-orange/50 hover:scale-105 hover:-translate-y-2 h-full flex flex-col">
+                            
+                            {/* Service Image */}
+                            <div className="mb-6 overflow-hidden rounded-2xl bg-gradient-to-br from-gray-900 to-gray-800">
+                              <img 
+                                src={service.image} 
+                                alt={service.title}
+                                className="w-full h-48 lg:h-56 object-cover group-hover:scale-110 group-hover:brightness-110 transition-all duration-500"
+                                onError={(e) => {
+                                  e.currentTarget.src = 'https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=400&h=300&fit=crop';
+                                }}
+                              />
+                              <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl"></div>
                             </div>
-                            <div className="flex-1">
-                              <h4 className="text-xl font-bold mb-3 group-hover:text-burnt-orange transition-colors duration-300">
-                                {service.title}
-                              </h4>
-                              <p className="text-gray-300 leading-relaxed text-sm">
+                            
+                            {/* Service Content */}
+                            <div className="flex-1 flex flex-col">
+                              <div className="flex items-start gap-4 mb-4">
+                                <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-burnt-orange/20 to-burnt-orange/5 flex items-center justify-center text-burnt-orange group-hover:text-burnt-orange group-hover:shadow-lg group-hover:shadow-burnt-orange/30 transition-all duration-300">
+                                  {service.icon}
+                                </div>
+                                <div className="flex-1">
+                                  <h4 className="text-xl lg:text-2xl font-bold mb-3 group-hover:text-burnt-orange transition-colors duration-300 leading-tight">
+                                    {service.title}
+                                  </h4>
+                                </div>
+                              </div>
+                              
+                              <p className="text-gray-300 leading-relaxed text-sm lg:text-base mb-6 flex-1">
                                 {service.description}
                               </p>
+                              
+                              {/* CTA Button */}
+                              <div className="pt-4 border-t border-gray-700/50 mt-auto">
+                                <button className="w-full bg-gradient-to-r from-burnt-orange to-burnt-orange/80 hover:from-burnt-orange/90 hover:to-burnt-orange text-black font-bold text-sm lg:text-base px-6 py-3 rounded-2xl transition-all duration-300 transform group-hover:scale-105 group-hover:shadow-lg group-hover:shadow-burnt-orange/30">
+                                  Learn More
+                                </button>
+                              </div>
                             </div>
-                          </div>
-                          
-                          <div className="pt-4 border-t border-gray-700/50">
-                            <button className="text-burnt-orange font-semibold text-sm hover:underline transition-all duration-300 flex items-center gap-2">
-                              Learn More
-                              <span className="transform group-hover:translate-x-1 transition-transform duration-300">→</span>
-                            </button>
                           </div>
                         </div>
                       </CarouselItem>
                     ))}
                   </CarouselContent>
-                  <CarouselPrevious className="hidden lg:flex" />
-                  <CarouselNext className="hidden lg:flex" />
+                  
+                  {/* Navigation Arrows - Hidden on Mobile */}
+                  <CarouselPrevious className="hidden lg:flex -left-6 bg-charcoal/80 border-gray-700 hover:bg-burnt-orange hover:border-burnt-orange text-white hover:text-black transition-all duration-300" />
+                  <CarouselNext className="hidden lg:flex -right-6 bg-charcoal/80 border-gray-700 hover:bg-burnt-orange hover:border-burnt-orange text-white hover:text-black transition-all duration-300" />
                 </Carousel>
               </div>
             </div>
