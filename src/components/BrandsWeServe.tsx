@@ -3,42 +3,125 @@ import React from 'react';
 
 export const BrandsWeServe = () => {
   const brands = [
-    'Mercedes-Benz', 'Ferrari', 'Porsche', 'Audi', 'Rolls Royce', 
-    'BMW', 'Lamborghini', 'Bentley', 'McLaren', 'Maserati'
+    {
+      name: 'Mercedes-Benz',
+      specialization: 'AMG Performance & Star Diagnostics'
+    },
+    {
+      name: 'Maybach',
+      specialization: 'Ultra-Luxury Comfort & Precision Service'
+    },
+    {
+      name: 'Porsche',
+      specialization: 'GT3 & Turbo Powertrain Tuning'
+    },
+    {
+      name: 'Audi',
+      specialization: 'Quattro Systems & RS Performance'
+    },
+    {
+      name: 'BMW',
+      specialization: 'M Series Optimization & iDrive Coding'
+    },
+    {
+      name: 'Lamborghini',
+      specialization: 'V10 & V12 Specialists'
+    },
+    {
+      name: 'Bentley',
+      specialization: 'Continental & Flying Spur Excellence'
+    },
+    {
+      name: 'McLaren',
+      specialization: 'Carbon Fiber & Turbo V8 Mastery'
+    },
+    {
+      name: 'Ferrari',
+      specialization: 'ECU & Powertrain Calibration'
+    },
+    {
+      name: 'Bugatti',
+      specialization: 'Quad Turbo Optimization & Luxury Diagnostics'
+    },
+    {
+      name: 'Range Rover',
+      specialization: 'Terrain Response & Luxury SUV Systems'
+    },
+    {
+      name: 'Rolls Royce',
+      specialization: 'Quiet, Precise, Luxurious – Inside and Out'
+    }
   ];
 
   return (
-    <section className="py-32 bg-black">
-      <div className="max-w-7xl mx-auto px-6">
+    <section className="py-32 bg-black relative overflow-hidden">
+      {/* Ambient background effects */}
+      <div className="absolute inset-0 bg-gradient-to-r from-burnt-orange/5 via-transparent to-burnt-orange/5"></div>
+      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-burnt-orange/10 rounded-full blur-3xl opacity-30"></div>
+      
+      <div className="max-w-7xl mx-auto px-6 relative z-10">
         <div className="text-center mb-20">
-          <h2 className="text-4xl md:text-6xl font-black mb-8">
-            Brands We Serve
+          <h2 className="text-4xl md:text-6xl font-black mb-8 text-off-white">
+            Only the Icons. Only the Elite.
           </h2>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Specialized expertise across the world's most prestigious automotive manufacturers
+          <p className="text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
+            We specialize in diagnostics, performance, and precision service for the world's most iconic automotive brands.
           </p>
         </div>
         
-        <div className="grid grid-cols-2 md:grid-cols-5 gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mb-16">
           {brands.map((brand, index) => (
             <div 
-              key={brand}
-              className="bg-charcoal/50 border border-gray-800 p-8 text-center hover:border-burnt-orange/50 transition-all duration-300 group"
+              key={brand.name}
+              className="group relative bg-charcoal/30 border border-gray-800/50 p-8 text-center transition-all duration-500 hover:border-burnt-orange/50 hover:bg-charcoal/50 hover:scale-105 hover:shadow-2xl hover:shadow-burnt-orange/20 cursor-pointer"
             >
-              <div className="h-16 flex items-center justify-center mb-4">
-                <div className="w-full h-8 bg-gradient-to-r from-gray-600 to-gray-400 rounded opacity-50 group-hover:opacity-70 transition-opacity duration-300"></div>
+              {/* Glow effect on hover */}
+              <div className="absolute inset-0 bg-gradient-to-r from-burnt-orange/0 via-burnt-orange/10 to-burnt-orange/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              
+              {/* Logo placeholder with metallic effect */}
+              <div className="relative mb-6">
+                <div className="h-16 flex items-center justify-center mb-4">
+                  <div className="w-full h-12 bg-gradient-to-r from-gray-500 via-gray-300 to-gray-500 rounded opacity-60 group-hover:opacity-90 transition-all duration-500 group-hover:shadow-lg group-hover:shadow-burnt-orange/30 relative overflow-hidden">
+                    {/* Shimmer effect */}
+                    <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent transform -skew-x-12 translate-x-[-100%] group-hover:translate-x-[200%] transition-transform duration-1000"></div>
+                  </div>
+                </div>
+                
+                {/* DIGI-TEC "D" overlay */}
+                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-burnt-orange font-black text-2xl opacity-0 group-hover:opacity-100 transition-all duration-300 group-hover:animate-pulse">
+                  D
+                </div>
               </div>
-              <h3 className="font-bold text-sm text-gray-300 group-hover:text-off-white transition-colors duration-300">
-                {brand}
+              
+              {/* Brand name */}
+              <h3 className="font-bold text-lg text-gray-300 group-hover:text-off-white transition-colors duration-300 mb-4">
+                {brand.name}
               </h3>
+              
+              {/* Specialization - appears on hover */}
+              <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/90 to-transparent p-4 transform translate-y-full group-hover:translate-y-0 transition-transform duration-500 opacity-0 group-hover:opacity-100">
+                <p className="text-burnt-orange font-semibold text-sm leading-tight">
+                  {brand.specialization}
+                </p>
+              </div>
             </div>
           ))}
         </div>
         
-        <div className="text-center mt-16">
-          <p className="text-lg text-gray-400">
-            Don't see your luxury brand? <span className="text-burnt-orange font-semibold cursor-pointer hover:underline">Contact us</span> for specialized services.
-          </p>
+        {/* Final CTA */}
+        <div className="text-center">
+          <div className="mb-6">
+            <p className="text-lg text-gray-400 mb-2">
+              Don't see your brand?
+            </p>
+            <p className="text-gray-300">
+              We service all European and ultra-luxury vehicles. Just ask.
+            </p>
+          </div>
+          
+          <button className="bg-burnt-orange hover:bg-burnt-orange/90 text-black font-bold text-lg px-12 py-4 transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-burnt-orange/30">
+            Talk to a Specialist
+          </button>
         </div>
       </div>
     </section>
