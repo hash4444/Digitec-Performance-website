@@ -1,3 +1,4 @@
+
 import React, { useEffect, useRef, useState } from 'react';
 
 export const BrandsWeServe = () => {
@@ -107,10 +108,11 @@ export const BrandsWeServe = () => {
         </svg>
       ),
       'Lamborghini': (
-        <svg viewBox="0 0 100 100" className="w-full h-full">
-          <path d="M20 80 L50 20 L80 80 L70 80 L50 40 L30 80 Z" fill="none" stroke="currentColor" strokeWidth="2"/>
-          <text x="50" y="90" textAnchor="middle" fontSize="12" fill="currentColor">λ</text>
-        </svg>
+        <img 
+          src="/lovable-uploads/8c4046ee-9977-417a-90a9-820452146832.png" 
+          alt="Lamborghini Logo"
+          className="w-full h-full object-contain"
+        />
       ),
       'Bentley': (
         <svg viewBox="0 0 100 100" className="w-full h-full">
