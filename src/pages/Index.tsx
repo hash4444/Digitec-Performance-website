@@ -1,5 +1,6 @@
 
 import React from 'react';
+import Header from '@/components/Header';
 import { Hero } from '@/components/Hero';
 import { WhatWeDo } from '@/components/WhatWeDo';
 import { BrandsWeServe } from '@/components/BrandsWeServe';
@@ -16,15 +17,24 @@ import { ChatBot } from '@/components/ChatBot/ChatBot';
 const Index = () => {
   return (
     <div className="min-h-screen bg-black text-off-white">
-      <Hero />
+      <Header />
+      <div id="home">
+        <Hero />
+      </div>
       <WhatWeDo />
       <BrandsWeServe />
-      <ServiceGrid />
+      <div id="services">
+        <ServiceGrid />
+      </div>
       <AppFeatures />
-      <WhyChooseUs />
+      <div id="about">
+        <WhyChooseUs />
+      </div>
       <Reviews />
       <PerformanceResults />
-      <FAQ />
+      <div id="faq">
+        <FAQ />
+      </div>
       <FinalCTA />
       <Footer />
       <ChatBot />
