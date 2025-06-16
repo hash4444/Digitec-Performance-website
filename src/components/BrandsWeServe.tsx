@@ -21,20 +21,25 @@ export const BrandsWeServe = () => {
     { name: 'Aston Martin', specialization: 'British Elegance & V12 Precision' }
   ];
 
-  // Track mouse position for parallax effect
+  // Track mouse position for parallax effect (disabled on mobile)
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
-      if (sectionRef.current) {
+      if (window.innerWidth >= 768 && sectionRef.current) {
         const rect = sectionRef.current.getBoundingClientRect();
         const centerX = rect.width / 2;
         const centerY = rect.height / 2;
         const x = (e.clientX - rect.left - centerX) / centerX;
         const y = (e.clientY - rect.top - centerY) / centerY;
-        setMousePos({ x: x * 20, y: y * 20 }); // Amplify movement
+        setMousePos({ x: x * 20, y: y * 20 });
       }
     };
 
-    const handleMouseEnter = () => setIsMouseInSection(true);
+    const handleMouseEnter = () => {
+      if (window.innerWidth >= 768) {
+        setIsMouseInSection(true);
+      }
+    };
+    
     const handleMouseLeave = () => {
       setIsMouseInSection(false);
       setMousePos({ x: 0, y: 0 });
@@ -56,11 +61,12 @@ export const BrandsWeServe = () => {
     };
   }, []);
 
-  // Calculate orbital positions for each logo
+  // Calculate orbital positions for each logo (responsive)
   const getOrbitalPosition = (index: number, total: number) => {
     const angle = (index / total) * 2 * Math.PI;
-    const radiusX = 280; // Elliptical orbit
-    const radiusY = 200;
+    const isMobile = window.innerWidth < 768;
+    const radiusX = isMobile ? 120 : 280; // Smaller orbit on mobile
+    const radiusY = isMobile ? 80 : 200;
     
     return {
       x: Math.cos(angle) * radiusX,
@@ -69,7 +75,7 @@ export const BrandsWeServe = () => {
     };
   };
 
-  // Brand logo SVGs (simplified representations)
+  // Brand logo SVGs
   const getBrandLogo = (brandName: string) => {
     const logoMap: { [key: string]: JSX.Element } = {
       'Mercedes-Benz': (
@@ -191,9 +197,15 @@ export const BrandsWeServe = () => {
           animation: orbit 120s linear infinite;
         }
         
+        @media (max-width: 768px) {
+          .orbital-container {
+            animation: orbit 180s linear infinite;
+          }
+        }
+        
         .brand-logo {
           transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
-          border-radius: 24px;
+          border-radius: 16px;
           box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
           border: 1px solid rgba(0, 0, 0, 0.05);
         }
@@ -201,8 +213,15 @@ export const BrandsWeServe = () => {
         .brand-logo:hover {
           transform: scale(1.15);
           box-shadow: 0 8px 32px rgba(255, 107, 53, 0.15);
-          border-radius: 28px;
+          border-radius: 20px;
           border: 1px solid rgba(255, 107, 53, 0.2);
+        }
+        
+        @media (max-width: 768px) {
+          .brand-logo:active {
+            transform: scale(1.1);
+            box-shadow: 0 6px 24px rgba(255, 107, 53, 0.2);
+          }
         }
         
         .central-d {
@@ -221,14 +240,14 @@ export const BrandsWeServe = () => {
       
       <section 
         ref={sectionRef}
-        className="relative py-32 bg-white overflow-hidden min-h-screen flex items-center justify-center"
+        className="relative py-16 sm:py-24 lg:py-32 bg-white overflow-hidden min-h-screen flex items-center justify-center px-4 sm:px-6"
       >
         {/* Ambient particles */}
         <div className="absolute inset-0 pointer-events-none">
-          {[...Array(40)].map((_, i) => (
+          {[...Array(window.innerWidth < 768 ? 20 : 40)].map((_, i) => (
             <div
               key={i}
-              className="particle absolute w-2 h-2 rounded-full shadow-lg"
+              className="particle absolute w-1 h-1 sm:w-2 sm:h-2 rounded-full shadow-lg"
               style={{
                 left: `${Math.random() * 100}%`,
                 top: `${Math.random() * 100}%`,
@@ -242,22 +261,22 @@ export const BrandsWeServe = () => {
         {/* Background gradient */}
         <div className="absolute inset-0 bg-gradient-radial from-burnt-orange/3 via-transparent to-transparent"></div>
         
-        <div className="max-w-6xl mx-auto px-6 relative z-10">
+        <div className="max-w-6xl mx-auto relative z-10">
           {/* Section title */}
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-6xl font-black mb-6 text-black tracking-tight">
+          <div className="text-center mb-12 sm:mb-16">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black mb-4 sm:mb-6 text-black tracking-tight">
               Brands We Serve
             </h2>
-            <p className="text-xl text-gray-700 max-w-3xl mx-auto">
+            <p className="text-lg sm:text-xl text-gray-700 max-w-3xl mx-auto px-4">
               Precision performance for the world's most prestigious automotive brands
             </p>
           </div>
           
           {/* Orbital system */}
-          <div className="relative w-full h-[600px] flex items-center justify-center">
+          <div className="relative w-full h-[400px] sm:h-[500px] lg:h-[600px] flex items-center justify-center">
             {/* Central D - Standalone with glow */}
             <div className="absolute z-20 flex items-center justify-center">
-              <div className="central-d text-8xl font-black text-burnt-orange">
+              <div className="central-d text-4xl sm:text-6xl lg:text-8xl font-black text-burnt-orange">
                 D
               </div>
             </div>
@@ -275,7 +294,7 @@ export const BrandsWeServe = () => {
                 return (
                   <div
                     key={brand.name}
-                    className="absolute w-20 h-20 flex items-center justify-center group cursor-pointer"
+                    className="absolute w-12 h-12 sm:w-16 sm:h-16 lg:w-20 lg:h-20 flex items-center justify-center group cursor-pointer"
                     style={{
                       left: '50%',
                       top: '50%',
@@ -283,15 +302,15 @@ export const BrandsWeServe = () => {
                     }}
                   >
                     {/* Brand logo */}
-                    <div className="brand-logo w-full h-full bg-white/90 backdrop-blur-sm p-3 shadow-lg">
+                    <div className="brand-logo w-full h-full bg-white/90 backdrop-blur-sm p-2 sm:p-3 shadow-lg">
                       {getBrandLogo(brand.name)}
                     </div>
                     
-                    {/* Hover tooltip */}
-                    <div className="absolute top-full mt-6 left-1/2 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-all duration-300 pointer-events-none z-30">
-                      <div className="bg-white/95 backdrop-blur-md border border-burnt-orange/20 rounded-3xl px-6 py-4 text-center whitespace-nowrap shadow-2xl">
-                        <div className="text-burnt-orange font-bold text-sm">{brand.name}</div>
-                        <div className="text-gray-700 text-xs mt-1">{brand.specialization}</div>
+                    {/* Hover/Touch tooltip */}
+                    <div className="absolute top-full mt-4 sm:mt-6 left-1/2 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 group-active:opacity-100 transition-all duration-300 pointer-events-none z-30">
+                      <div className="bg-white/95 backdrop-blur-md border border-burnt-orange/20 rounded-2xl sm:rounded-3xl px-3 sm:px-6 py-2 sm:py-4 text-center whitespace-nowrap shadow-2xl">
+                        <div className="text-burnt-orange font-bold text-xs sm:text-sm">{brand.name}</div>
+                        <div className="text-gray-700 text-xs mt-1 hidden sm:block">{brand.specialization}</div>
                       </div>
                     </div>
                   </div>
@@ -301,11 +320,11 @@ export const BrandsWeServe = () => {
           </div>
           
           {/* Bottom CTA */}
-          <div className="text-center mt-16">
-            <p className="text-gray-700 mb-8 text-lg">
+          <div className="text-center mt-12 sm:mt-16">
+            <p className="text-gray-700 mb-6 sm:mb-8 text-base sm:text-lg px-4">
               Experience precision service for your luxury vehicle
             </p>
-            <button className="bg-burnt-orange hover:bg-burnt-orange/90 text-white font-bold text-lg px-12 py-4 rounded-3xl transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl hover:shadow-burnt-orange/25">
+            <button className="w-full sm:w-auto bg-burnt-orange hover:bg-burnt-orange/90 text-white font-bold text-base sm:text-lg px-8 sm:px-12 py-4 rounded-2xl sm:rounded-3xl transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl hover:shadow-burnt-orange/25">
               Schedule Service
             </button>
           </div>
