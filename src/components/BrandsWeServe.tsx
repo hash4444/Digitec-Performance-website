@@ -1,3 +1,4 @@
+
 import React, { useEffect, useRef, useState } from 'react';
 
 export const BrandsWeServe = () => {
@@ -6,86 +7,39 @@ export const BrandsWeServe = () => {
   const [isMouseInSection, setIsMouseInSection] = useState(false);
 
   const brands = [
-    {
-      name: 'Mercedes-Benz',
-      specialization: 'AMG Performance & Star Diagnostics',
-      logo: 'https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?w=120&h=120&fit=crop&crop=center'
-    },
-    {
-      name: 'Maybach',
-      specialization: 'Ultra-Luxury Comfort & Precision Service',
-      logo: 'https://images.unsplash.com/photo-1563720223185-11003d516935?w=120&h=120&fit=crop&crop=center'
-    },
-    {
-      name: 'Porsche',
-      specialization: 'GT3 & Turbo Powertrain Tuning',
-      logo: 'https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=120&h=120&fit=crop&crop=center'
-    },
-    {
-      name: 'Audi',
-      specialization: 'Quattro Systems & RS Performance',
-      logo: 'https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?w=120&h=120&fit=crop&crop=center'
-    },
-    {
-      name: 'BMW',
-      specialization: 'M Series Optimization & iDrive Coding',
-      logo: 'https://images.unsplash.com/photo-1555215695-3004980ad54e?w=120&h=120&fit=crop&crop=center'
-    },
-    {
-      name: 'Lamborghini',
-      specialization: 'V10 & V12 Specialists',
-      logo: 'https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=120&h=120&fit=crop&crop=center'
-    },
-    {
-      name: 'Bentley',
-      specialization: 'Continental & Flying Spur Excellence',
-      logo: 'https://images.unsplash.com/photo-1563720223185-11003d516935?w=120&h=120&fit=crop&crop=center'
-    },
-    {
-      name: 'McLaren',
-      specialization: 'Carbon Fiber & Turbo V8 Mastery',
-      logo: 'https://images.unsplash.com/photo-1555215695-3004980ad54e?w=120&h=120&fit=crop&crop=center'
-    },
-    {
-      name: 'Ferrari',
-      specialization: 'ECU & Powertrain Calibration',
-      logo: 'https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=120&h=120&fit=crop&crop=center'
-    },
-    {
-      name: 'Bugatti',
-      specialization: 'Quad Turbo Optimization & Luxury Diagnostics',
-      logo: 'https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?w=120&h=120&fit=crop&crop=center'
-    },
-    {
-      name: 'Range Rover',
-      specialization: 'Terrain Response & Luxury SUV Systems',
-      logo: 'https://images.unsplash.com/photo-1563720223185-11003d516935?w=120&h=120&fit=crop&crop=center'
-    },
-    {
-      name: 'Rolls Royce',
-      specialization: 'Quiet, Precise, Luxurious – Inside and Out',
-      logo: 'https://images.unsplash.com/photo-1555215695-3004980ad54e?w=120&h=120&fit=crop&crop=center'
-    },
-    {
-      name: 'Aston Martin',
-      specialization: 'British Elegance & V12 Precision',
-      logo: 'https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=120&h=120&fit=crop&crop=center'
-    }
+    { name: 'Mercedes-Benz', specialization: 'AMG Performance & Star Diagnostics' },
+    { name: 'Maybach', specialization: 'Ultra-Luxury Comfort & Precision Service' },
+    { name: 'Porsche', specialization: 'GT3 & Turbo Powertrain Tuning' },
+    { name: 'Audi', specialization: 'Quattro Systems & RS Performance' },
+    { name: 'BMW', specialization: 'M Series Optimization & iDrive Coding' },
+    { name: 'Lamborghini', specialization: 'V10 & V12 Specialists' },
+    { name: 'Bentley', specialization: 'Continental & Flying Spur Excellence' },
+    { name: 'McLaren', specialization: 'Carbon Fiber & Turbo V8 Mastery' },
+    { name: 'Ferrari', specialization: 'ECU & Powertrain Calibration' },
+    { name: 'Bugatti', specialization: 'Quad Turbo Optimization & Luxury Diagnostics' },
+    { name: 'Range Rover', specialization: 'Terrain Response & Luxury SUV Systems' },
+    { name: 'Rolls Royce', specialization: 'Quiet, Precise, Luxurious – Inside and Out' },
+    { name: 'Aston Martin', specialization: 'British Elegance & V12 Precision' }
   ];
 
-  // Track mouse position for magnetic effect
+  // Track mouse position for parallax effect
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
       if (sectionRef.current) {
         const rect = sectionRef.current.getBoundingClientRect();
-        const x = e.clientX - rect.left;
-        const y = e.clientY - rect.top;
-        setMousePos({ x, y });
+        const centerX = rect.width / 2;
+        const centerY = rect.height / 2;
+        const x = (e.clientX - rect.left - centerX) / centerX;
+        const y = (e.clientY - rect.top - centerY) / centerY;
+        setMousePos({ x: x * 20, y: y * 20 }); // Amplify movement
       }
     };
 
     const handleMouseEnter = () => setIsMouseInSection(true);
-    const handleMouseLeave = () => setIsMouseInSection(false);
+    const handleMouseLeave = () => {
+      setIsMouseInSection(false);
+      setMousePos({ x: 0, y: 0 });
+    };
 
     const section = sectionRef.current;
     if (section) {
@@ -103,161 +57,241 @@ export const BrandsWeServe = () => {
     };
   }, []);
 
-  // Calculate magnetic effect for each logo
-  const getMagneticTransform = (index: number, element: HTMLElement | null) => {
-    if (!isMouseInSection || !element) return 'translate3d(0, 0, 0)';
+  // Calculate orbital positions for each logo
+  const getOrbitalPosition = (index: number, total: number) => {
+    const angle = (index / total) * 2 * Math.PI;
+    const radiusX = 280; // Elliptical orbit
+    const radiusY = 200;
     
-    const rect = element.getBoundingClientRect();
-    const sectionRect = sectionRef.current?.getBoundingClientRect();
-    if (!sectionRect) return 'translate3d(0, 0, 0)';
-    
-    const centerX = rect.left + rect.width / 2 - sectionRect.left;
-    const centerY = rect.top + rect.height / 2 - sectionRect.top;
-    
-    const deltaX = mousePos.x - centerX;
-    const deltaY = mousePos.y - centerY;
-    const distance = Math.sqrt(deltaX * deltaX + deltaY * deltaY);
-    
-    const maxDistance = 150;
-    const strength = Math.max(0, 1 - distance / maxDistance);
-    
-    const moveX = deltaX * strength * 0.15;
-    const moveY = deltaY * strength * 0.15;
-    
-    return `translate3d(${moveX}px, ${moveY}px, 0)`;
+    return {
+      x: Math.cos(angle) * radiusX,
+      y: Math.sin(angle) * radiusY,
+      angle: angle
+    };
+  };
+
+  // Brand logo SVGs (simplified representations)
+  const getBrandLogo = (brandName: string) => {
+    const logoMap: { [key: string]: JSX.Element } = {
+      'Mercedes-Benz': (
+        <svg viewBox="0 0 100 100" className="w-full h-full">
+          <circle cx="50" cy="50" r="45" fill="none" stroke="currentColor" strokeWidth="2"/>
+          <path d="M50 15 L50 50 L25 75 M50 50 L75 75" stroke="currentColor" strokeWidth="2" fill="none"/>
+        </svg>
+      ),
+      'Maybach': (
+        <svg viewBox="0 0 100 100" className="w-full h-full">
+          <path d="M20 30 L50 15 L80 30 L80 70 L50 85 L20 70 Z" fill="none" stroke="currentColor" strokeWidth="2"/>
+          <text x="50" y="55" textAnchor="middle" fontSize="24" fill="currentColor" fontWeight="bold">M</text>
+        </svg>
+      ),
+      'Porsche': (
+        <svg viewBox="0 0 100 100" className="w-full h-full">
+          <rect x="25" y="25" width="50" height="50" fill="none" stroke="currentColor" strokeWidth="2"/>
+          <text x="50" y="55" textAnchor="middle" fontSize="16" fill="currentColor" fontWeight="bold">P</text>
+        </svg>
+      ),
+      'Audi': (
+        <svg viewBox="0 0 100 100" className="w-full h-full">
+          <circle cx="25" cy="50" r="15" fill="none" stroke="currentColor" strokeWidth="2"/>
+          <circle cx="40" cy="50" r="15" fill="none" stroke="currentColor" strokeWidth="2"/>
+          <circle cx="60" cy="50" r="15" fill="none" stroke="currentColor" strokeWidth="2"/>
+          <circle cx="75" cy="50" r="15" fill="none" stroke="currentColor" strokeWidth="2"/>
+        </svg>
+      ),
+      'BMW': (
+        <svg viewBox="0 0 100 100" className="w-full h-full">
+          <circle cx="50" cy="50" r="40" fill="none" stroke="currentColor" strokeWidth="2"/>
+          <path d="M50 10 L50 90 M10 50 L90 50" stroke="currentColor" strokeWidth="1"/>
+          <path d="M20 20 L50 50 L80 20 M20 80 L50 50 L80 80" stroke="currentColor" strokeWidth="1"/>
+        </svg>
+      ),
+      'Lamborghini': (
+        <svg viewBox="0 0 100 100" className="w-full h-full">
+          <path d="M20 80 L50 20 L80 80 L70 80 L50 40 L30 80 Z" fill="none" stroke="currentColor" strokeWidth="2"/>
+          <text x="50" y="90" textAnchor="middle" fontSize="12" fill="currentColor">λ</text>
+        </svg>
+      ),
+      'Bentley': (
+        <svg viewBox="0 0 100 100" className="w-full h-full">
+          <path d="M30 30 Q50 10 70 30 Q70 50 50 50 Q30 50 30 30" fill="none" stroke="currentColor" strokeWidth="2"/>
+          <text x="50" y="75" textAnchor="middle" fontSize="20" fill="currentColor" fontWeight="bold">B</text>
+        </svg>
+      ),
+      'McLaren': (
+        <svg viewBox="0 0 100 100" className="w-full h-full">
+          <path d="M20 60 Q50 20 80 60 L70 70 Q50 40 30 70 Z" fill="none" stroke="currentColor" strokeWidth="2"/>
+          <text x="50" y="85" textAnchor="middle" fontSize="14" fill="currentColor">McLaren</text>
+        </svg>
+      ),
+      'Ferrari': (
+        <svg viewBox="0 0 100 100" className="w-full h-full">
+          <path d="M30 70 L30 30 Q50 10 70 30 L70 70 Q50 80 30 70" fill="none" stroke="currentColor" strokeWidth="2"/>
+          <path d="M35 40 L65 40 M40 50 L60 50" stroke="currentColor" strokeWidth="1"/>
+        </svg>
+      ),
+      'Bugatti': (
+        <svg viewBox="0 0 100 100" className="w-full h-full">
+          <ellipse cx="50" cy="50" rx="35" ry="25" fill="none" stroke="currentColor" strokeWidth="2"/>
+          <text x="50" y="55" textAnchor="middle" fontSize="18" fill="currentColor" fontWeight="bold">B</text>
+        </svg>
+      ),
+      'Range Rover': (
+        <svg viewBox="0 0 100 100" className="w-full h-full">
+          <rect x="20" y="35" width="60" height="30" fill="none" stroke="currentColor" strokeWidth="2"/>
+          <text x="50" y="55" textAnchor="middle" fontSize="14" fill="currentColor">RR</text>
+        </svg>
+      ),
+      'Rolls Royce': (
+        <svg viewBox="0 0 100 100" className="w-full h-full">
+          <rect x="25" y="25" width="50" height="50" fill="none" stroke="currentColor" strokeWidth="2"/>
+          <path d="M35 35 L65 35 M35 45 L55 45 M35 55 L65 55 M35 65 L55 65" stroke="currentColor" strokeWidth="1"/>
+        </svg>
+      ),
+      'Aston Martin': (
+        <svg viewBox="0 0 100 100" className="w-full h-full">
+          <path d="M25 70 Q50 30 75 70" fill="none" stroke="currentColor" strokeWidth="2"/>
+          <path d="M35 60 L65 60" stroke="currentColor" strokeWidth="2"/>
+          <text x="50" y="85" textAnchor="middle" fontSize="12" fill="currentColor">AM</text>
+        </svg>
+      )
+    };
+
+    return logoMap[brandName] || (
+      <svg viewBox="0 0 100 100" className="w-full h-full">
+        <circle cx="50" cy="50" r="40" fill="none" stroke="currentColor" strokeWidth="2"/>
+        <text x="50" y="55" textAnchor="middle" fontSize="14" fill="currentColor">
+          {brandName.charAt(0)}
+        </text>
+      </svg>
+    );
   };
 
   return (
     <>
       <style>{`
-        @keyframes float {
-          0%, 100% { transform: translateY(0px) rotate(0deg); }
-          33% { transform: translateY(-8px) rotate(1deg); }
-          66% { transform: translateY(-4px) rotate(-1deg); }
+        @keyframes orbit {
+          0% { transform: rotate(0deg); }
+          100% { transform: rotate(360deg); }
         }
         
-        .bg-gradient-radial {
-          background: radial-gradient(circle, var(--tw-gradient-stops));
+        @keyframes particles {
+          0%, 100% { transform: translate(0, 0) scale(1); opacity: 0.3; }
+          50% { transform: translate(20px, -20px) scale(1.2); opacity: 0.7; }
+        }
+        
+        .orbital-container {
+          animation: orbit 120s linear infinite;
+        }
+        
+        .brand-logo {
+          transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+        
+        .brand-logo:hover {
+          transform: scale(1.1);
+          filter: drop-shadow(0 0 20px rgba(255, 107, 53, 0.6));
+        }
+        
+        .central-d {
+          text-shadow: 0 0 30px rgba(255, 107, 53, 0.8),
+                       0 0 60px rgba(255, 107, 53, 0.6),
+                       0 0 90px rgba(255, 107, 53, 0.4);
+        }
+        
+        .particle {
+          animation: particles 8s ease-in-out infinite;
         }
       `}</style>
       
       <section 
         ref={sectionRef}
-        className="py-32 bg-black relative overflow-hidden min-h-screen"
+        className="relative py-32 bg-black overflow-hidden min-h-screen flex items-center justify-center"
       >
-        {/* Animated particle background */}
-        <div className="absolute inset-0">
-          {[...Array(30)].map((_, i) => (
+        {/* Ambient particles */}
+        <div className="absolute inset-0 pointer-events-none">
+          {[...Array(40)].map((_, i) => (
             <div
               key={i}
-              className="absolute w-1 h-1 bg-burnt-orange/20 rounded-full animate-pulse"
+              className="particle absolute w-1 h-1 bg-burnt-orange/20 rounded-full"
               style={{
                 left: `${Math.random() * 100}%`,
                 top: `${Math.random() * 100}%`,
-                animationDelay: `${Math.random() * 4}s`,
-                animationDuration: `${3 + Math.random() * 2}s`
+                animationDelay: `${Math.random() * 8}s`,
+                animationDuration: `${6 + Math.random() * 4}s`
               }}
             />
           ))}
         </div>
 
-        {/* Ambient background effects */}
-        <div className="absolute inset-0 bg-gradient-to-r from-burnt-orange/3 via-transparent to-burnt-orange/3"></div>
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-burnt-orange/8 rounded-full blur-3xl opacity-40"></div>
-        <div className="absolute top-1/4 right-1/4 w-64 h-64 bg-burnt-orange/5 rounded-full blur-2xl opacity-30"></div>
+        {/* Background gradient */}
+        <div className="absolute inset-0 bg-gradient-radial from-burnt-orange/5 via-transparent to-transparent"></div>
         
-        <div className="max-w-7xl mx-auto px-6 relative z-10">
-          <div className="text-center mb-24">
-            <h2 className="text-5xl md:text-7xl font-black mb-8 text-off-white tracking-tight">
-              Only the Icons. Only the Elite.
+        <div className="max-w-6xl mx-auto px-6 relative z-10">
+          {/* Section title */}
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-6xl font-black mb-6 text-off-white tracking-tight">
+              Brands We Serve
             </h2>
-            <p className="text-xl md:text-2xl text-gray-300 max-w-4xl mx-auto leading-relaxed font-light">
-              We specialize in diagnostics, performance, and precision service for the world's most iconic automotive brands.
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+              Precision performance for the world's most prestigious automotive brands
             </p>
           </div>
           
-          {/* Floating Brand Grid */}
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-12 mb-20">
-            {brands.map((brand, index) => (
-              <div 
-                key={brand.name}
-                className="group relative cursor-pointer"
-                style={{
-                  transform: getMagneticTransform(index, document.getElementById(`brand-${index}`)),
-                  transition: 'transform 0.3s cubic-bezier(0.23, 1, 0.32, 1)'
-                }}
-                id={`brand-${index}`}
-              >
-                {/* Floating animation */}
-                <div 
-                  className="relative"
-                  style={{
-                    animation: `float 6s ease-in-out infinite`,
-                    animationDelay: `${index * 0.3}s`
-                  }}
-                >
-                  {/* Glow ring on hover */}
-                  <div className="absolute -inset-4 bg-gradient-radial from-burnt-orange/0 via-burnt-orange/20 to-burnt-orange/0 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-700 blur-md"></div>
-                  
-                  {/* Logo container */}
-                  <div className="relative bg-charcoal/20 border border-gray-800/30 p-8 rounded-2xl backdrop-blur-sm transition-all duration-500 group-hover:border-burnt-orange/50 group-hover:bg-charcoal/40 group-hover:scale-110 group-hover:shadow-2xl group-hover:shadow-burnt-orange/20">
-                    
+          {/* Orbital system */}
+          <div className="relative w-full h-[600px] flex items-center justify-center">
+            {/* Central D */}
+            <div className="absolute z-20 w-24 h-24 flex items-center justify-center">
+              <div className="central-d text-7xl font-black text-burnt-orange">
+                D
+              </div>
+            </div>
+            
+            {/* Orbiting brands container */}
+            <div 
+              className="orbital-container absolute inset-0"
+              style={{
+                transform: `translate(${mousePos.x}px, ${mousePos.y}px)`,
+                transition: isMouseInSection ? 'none' : 'transform 0.8s ease-out'
+              }}
+            >
+              {brands.map((brand, index) => {
+                const position = getOrbitalPosition(index, brands.length);
+                return (
+                  <div
+                    key={brand.name}
+                    className="absolute w-16 h-16 flex items-center justify-center group cursor-pointer"
+                    style={{
+                      left: '50%',
+                      top: '50%',
+                      transform: `translate(calc(-50% + ${position.x}px), calc(-50% + ${position.y}px))`
+                    }}
+                  >
                     {/* Brand logo */}
-                    <div className="relative mb-6">
-                      <div className="h-20 flex items-center justify-center">
-                        <div className="relative w-20 h-20 rounded-xl overflow-hidden bg-gradient-to-br from-gray-600 via-gray-400 to-gray-600 group-hover:shadow-xl group-hover:shadow-burnt-orange/40 transition-all duration-500">
-                          <img 
-                            src={brand.logo} 
-                            alt={`${brand.name} logo`}
-                            className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
-                          />
-                          
-                          {/* Metallic shimmer effect */}
-                          <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent transform -skew-x-12 translate-x-[-200%] group-hover:translate-x-[200%] transition-transform duration-1500"></div>
-                          
-                          {/* DIGI-TEC "D" overlay */}
-                          <div className="absolute inset-0 flex items-center justify-center">
-                            <div className="text-burnt-orange font-black text-3xl opacity-0 group-hover:opacity-100 transition-all duration-500 group-hover:animate-pulse">
-                              D
-                            </div>
-                          </div>
-                        </div>
-                      </div>
+                    <div className="brand-logo w-full h-full text-gray-400 group-hover:text-burnt-orange">
+                      {getBrandLogo(brand.name)}
                     </div>
                     
-                    {/* Brand name */}
-                    <h3 className="font-bold text-lg text-gray-300 group-hover:text-off-white transition-colors duration-500 mb-2 text-center tracking-wide">
-                      {brand.name}
-                    </h3>
-                    
-                    {/* Specialization - slides up on hover */}
-                    <div className="overflow-hidden">
-                      <div className="transform translate-y-full group-hover:translate-y-0 transition-transform duration-500 opacity-0 group-hover:opacity-100">
-                        <p className="text-burnt-orange font-semibold text-sm leading-tight text-center">
-                          {brand.specialization}
-                        </p>
+                    {/* Hover tooltip */}
+                    <div className="absolute top-full mt-4 left-1/2 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-all duration-300 pointer-events-none">
+                      <div className="bg-charcoal/90 backdrop-blur-sm border border-burnt-orange/30 rounded-lg px-4 py-2 text-center whitespace-nowrap">
+                        <div className="text-burnt-orange font-bold text-sm">{brand.name}</div>
+                        <div className="text-gray-300 text-xs mt-1">{brand.specialization}</div>
                       </div>
                     </div>
                   </div>
-                </div>
-              </div>
-            ))}
+                );
+              })}
+            </div>
           </div>
           
-          {/* Final CTA */}
-          <div className="text-center">
-            <div className="mb-8">
-              <p className="text-xl text-gray-400 mb-3">
-                Don't see your brand?
-              </p>
-              <p className="text-lg text-gray-300">
-                We service all European and ultra-luxury vehicles. Just ask.
-              </p>
-            </div>
-            
-            <button className="relative bg-burnt-orange hover:bg-burnt-orange/90 text-black font-bold text-xl px-16 py-5 transition-all duration-300 transform hover:scale-105 hover:shadow-xl hover:shadow-burnt-orange/40 overflow-hidden group">
-              <span className="relative z-10">Talk to a Specialist</span>
-              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent transform -skew-x-12 translate-x-[-200%] group-hover:translate-x-[200%] transition-transform duration-1000"></div>
+          {/* Bottom CTA */}
+          <div className="text-center mt-16">
+            <p className="text-gray-400 mb-6">
+              Experience precision service for your luxury vehicle
+            </p>
+            <button className="bg-burnt-orange hover:bg-burnt-orange/90 text-black font-bold text-lg px-12 py-4 transition-all duration-300 transform hover:scale-105 hover:shadow-xl hover:shadow-burnt-orange/40">
+              Schedule Service
             </button>
           </div>
         </div>
