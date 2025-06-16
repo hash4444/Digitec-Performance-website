@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,7 +62,13 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				// Custom automotive theme colors
+				'burnt-orange': '#ff6b35',
+				'chocolate': '#8b4513',
+				'charcoal': '#36454f',
+				'off-white': '#fafafa',
+				'black': '#0a0a0a'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
