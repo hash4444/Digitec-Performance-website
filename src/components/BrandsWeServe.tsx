@@ -166,7 +166,7 @@ export const BrandsWeServe = () => {
     };
 
     return logoMap[brandName] || (
-      <div className="w-full h-full rounded-2xl bg-gradient-to-br from-burnt-orange/20 to-chocolate/20 flex items-center justify-center">
+      <div className="w-full h-full rounded-3xl bg-gradient-to-br from-burnt-orange/20 to-chocolate/20 flex items-center justify-center">
         <span className="text-2xl font-black text-burnt-orange">
           {brandName.charAt(0)}
         </span>
@@ -193,14 +193,14 @@ export const BrandsWeServe = () => {
         
         .brand-logo {
           transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
-          border-radius: 20px;
+          border-radius: 24px;
           box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
         }
         
         .brand-logo:hover {
           transform: scale(1.15);
           box-shadow: 0 16px 48px rgba(255, 107, 53, 0.25);
-          border-radius: 24px;
+          border-radius: 28px;
         }
         
         .central-d {
@@ -217,7 +217,7 @@ export const BrandsWeServe = () => {
       
       <section 
         ref={sectionRef}
-        className="relative py-32 bg-white overflow-hidden min-h-screen flex items-center justify-center"
+        className="relative py-32 bg-charcoal overflow-hidden min-h-screen flex items-center justify-center"
       >
         {/* Ambient particles */}
         <div className="absolute inset-0 pointer-events-none">
@@ -241,10 +241,10 @@ export const BrandsWeServe = () => {
         <div className="max-w-6xl mx-auto px-6 relative z-10">
           {/* Section title */}
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-6xl font-black mb-6 text-black tracking-tight">
+            <h2 className="text-4xl md:text-6xl font-black mb-6 text-off-white tracking-tight">
               Brands We Serve
             </h2>
-            <p className="text-xl text-gray-700 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
               Precision performance for the world's most prestigious automotive brands
             </p>
           </div>
@@ -279,13 +279,13 @@ export const BrandsWeServe = () => {
                     }}
                   >
                     {/* Brand logo */}
-                    <div className="brand-logo w-full h-full text-gray-600 group-hover:text-burnt-orange bg-white/80 backdrop-blur-sm p-3 rounded-2xl shadow-lg">
+                    <div className="brand-logo w-full h-full text-gray-600 group-hover:text-burnt-orange bg-white/80 backdrop-blur-sm p-3 rounded-3xl shadow-lg">
                       {getBrandLogo(brand.name)}
                     </div>
                     
                     {/* Hover tooltip */}
                     <div className="absolute top-full mt-6 left-1/2 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-all duration-300 pointer-events-none">
-                      <div className="bg-white/95 backdrop-blur-md border border-burnt-orange/20 rounded-2xl px-6 py-4 text-center whitespace-nowrap shadow-2xl">
+                      <div className="bg-white/95 backdrop-blur-md border border-burnt-orange/20 rounded-3xl px-6 py-4 text-center whitespace-nowrap shadow-2xl">
                         <div className="text-burnt-orange font-bold text-sm">{brand.name}</div>
                         <div className="text-gray-700 text-xs mt-1">{brand.specialization}</div>
                       </div>
@@ -298,10 +298,10 @@ export const BrandsWeServe = () => {
           
           {/* Bottom CTA */}
           <div className="text-center mt-16">
-            <p className="text-gray-600 mb-8 text-lg">
+            <p className="text-gray-300 mb-8 text-lg">
               Experience precision service for your luxury vehicle
             </p>
-            <button className="bg-burnt-orange hover:bg-burnt-orange/90 text-white font-bold text-lg px-12 py-4 rounded-2xl transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl hover:shadow-burnt-orange/25">
+            <button className="bg-burnt-orange hover:bg-burnt-orange/90 text-black font-bold text-lg px-12 py-4 rounded-3xl transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl hover:shadow-burnt-orange/25">
               Schedule Service
             </button>
           </div>

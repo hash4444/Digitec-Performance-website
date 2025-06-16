@@ -142,7 +142,7 @@ export const ServiceGrid = () => {
   ];
 
   return (
-    <section className="py-32 bg-charcoal">
+    <section className="py-32 bg-black">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-20">
           <h2 className="text-4xl md:text-6xl font-black mb-8">
@@ -160,7 +160,7 @@ export const ServiceGrid = () => {
           {serviceCategories.map((category, categoryIndex) => (
             <div key={category.title} className="space-y-8">
               <div className="flex items-center gap-4 mb-8">
-                <div className="text-burnt-orange">
+                <div className="w-16 h-16 rounded-3xl bg-gradient-to-br from-burnt-orange/20 to-burnt-orange/5 flex items-center justify-center text-burnt-orange shadow-lg backdrop-blur-sm">
                   {category.icon}
                 </div>
                 <h3 className="text-2xl md:text-3xl font-bold text-off-white">
@@ -168,22 +168,22 @@ export const ServiceGrid = () => {
                 </h3>
               </div>
               
-              <div className="overflow-x-auto pb-4 scrollbar-thin scrollbar-track-charcoal scrollbar-thumb-burnt-orange hover:scrollbar-thumb-burnt-orange/80">
+              <div className="overflow-x-auto pb-4 scrollbar-thin scrollbar-track-black scrollbar-thumb-burnt-orange hover:scrollbar-thumb-burnt-orange/80">
                 <div className="flex gap-6 w-max">
                   {category.services.map((service, index) => (
                     <div 
                       key={service.title}
                       className={`
-                        w-80 flex-shrink-0 p-8 border transition-all duration-300 group cursor-pointer
+                        w-80 flex-shrink-0 p-8 rounded-3xl transition-all duration-300 group cursor-pointer shadow-xl backdrop-blur-sm
                         ${index % 2 === 0 
-                          ? 'bg-black/50 border-gray-800 hover:border-burnt-orange/50' 
-                          : 'bg-chocolate/20 border-chocolate/30 hover:border-burnt-orange/50'
+                          ? 'bg-gradient-to-br from-charcoal/80 to-charcoal/40 border border-gray-800/50 hover:border-burnt-orange/50' 
+                          : 'bg-gradient-to-br from-chocolate/30 to-chocolate/10 border border-chocolate/30 hover:border-burnt-orange/50'
                         }
-                        hover:shadow-2xl hover:shadow-burnt-orange/10 hover:scale-105
+                        hover:shadow-2xl hover:shadow-burnt-orange/20 hover:scale-105 hover:-translate-y-2
                       `}
                     >
                       <div className="flex items-start gap-4 mb-6">
-                        <div className="text-burnt-orange group-hover:text-burnt-orange/80 transition-colors duration-300">
+                        <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-burnt-orange/20 to-burnt-orange/5 flex items-center justify-center text-burnt-orange group-hover:text-burnt-orange/80 transition-colors duration-300 shadow-md">
                           {service.icon}
                         </div>
                         <div className="flex-1">
@@ -196,9 +196,10 @@ export const ServiceGrid = () => {
                         </div>
                       </div>
                       
-                      <div className="pt-4 border-t border-gray-700">
-                        <button className="text-burnt-orange font-semibold text-sm hover:underline transition-all duration-300">
-                          Learn More →
+                      <div className="pt-4 border-t border-gray-700/50">
+                        <button className="text-burnt-orange font-semibold text-sm hover:underline transition-all duration-300 flex items-center gap-2">
+                          Learn More
+                          <span className="transform group-hover:translate-x-1 transition-transform duration-300">→</span>
                         </button>
                       </div>
                     </div>
@@ -210,7 +211,7 @@ export const ServiceGrid = () => {
         </div>
         
         <div className="text-center mt-20">
-          <button className="bg-burnt-orange hover:bg-burnt-orange/90 text-black font-bold text-lg px-12 py-4 transition-all duration-300 transform hover:scale-105">
+          <button className="bg-burnt-orange hover:bg-burnt-orange/90 text-black font-bold text-lg px-12 py-4 rounded-3xl transition-all duration-300 transform hover:scale-105 shadow-2xl hover:shadow-burnt-orange/30">
             View All Services & Pricing
           </button>
         </div>
