@@ -1,3 +1,4 @@
+
 import React, { useEffect, useRef, useState } from 'react';
 
 export const BrandsWeServe = () => {
@@ -87,21 +88,21 @@ export const BrandsWeServe = () => {
       ),
       'Porsche': (
         <img 
-          src="/lovable-uploads/b632a8da-5197-45f3-96f1-94cd0e9942e3.png" 
+          src="/lovable-uploads/8e7e2545-680e-42ac-bd97-ba1f9c063649.png" 
           alt="Porsche Logo"
           className="w-full h-full object-contain"
         />
       ),
       'Audi': (
         <img 
-          src="/lovable-uploads/8e59fadf-f1e4-4860-ac92-81509a23ec94.png" 
+          src="/lovable-uploads/a3e92dde-70a9-499b-a7b0-ae0df117baf9.png" 
           alt="Audi Logo"
           className="w-full h-full object-contain"
         />
       ),
       'BMW': (
         <img 
-          src="/lovable-uploads/f13e5867-fa2e-4bac-8132-8c6ee447feab.png" 
+          src="/lovable-uploads/d66ea83e-7d6a-4c19-bf30-f27eca93ac8e.png" 
           alt="BMW Logo"
           className="w-full h-full object-contain"
         />
@@ -115,49 +116,49 @@ export const BrandsWeServe = () => {
       ),
       'Bentley': (
         <img 
-          src="/lovable-uploads/7a227eaa-c434-4d89-8827-fb1c5d640bc3.png" 
+          src="/lovable-uploads/b2cd5f78-8a43-4a9b-8a0a-19124642ca5a.png" 
           alt="Bentley Logo"
           className="w-full h-full object-contain"
         />
       ),
       'McLaren': (
         <img 
-          src="/lovable-uploads/70a5e539-8ab8-44b9-85a1-4ecac36681c2.png" 
+          src="/lovable-uploads/7f8d98f4-3581-451c-bfaf-262eb67cf14b.png" 
           alt="McLaren Logo"
           className="w-full h-full object-contain"
         />
       ),
       'Ferrari': (
         <img 
-          src="/lovable-uploads/54bab4d8-e8ac-469c-8b33-0116edc6c3b0.png" 
+          src="/lovable-uploads/11f29482-f2d3-4278-ae2a-397044a1ff95.png" 
           alt="Ferrari Logo"
           className="w-full h-full object-contain"
         />
       ),
       'Bugatti': (
         <img 
-          src="/lovable-uploads/0d7ae3eb-4e88-4a9b-ba5a-f7f1d25b74ec.png" 
+          src="/lovable-uploads/69bd2660-e800-47b4-bc4d-de6e6b65b984.png" 
           alt="Bugatti Logo"
           className="w-full h-full object-contain"
         />
       ),
       'Range Rover': (
         <img 
-          src="/lovable-uploads/bf4fc6ba-f08f-4fa6-a7c6-0e1a65b780b3.png" 
+          src="/lovable-uploads/4bb58917-704a-4c5d-84b6-dc428a00c004.png" 
           alt="Range Rover Logo"
           className="w-full h-full object-contain"
         />
       ),
       'Rolls Royce': (
         <img 
-          src="/lovable-uploads/c509aefa-0c5f-4a03-8de8-0d508fcd68cc.png" 
+          src="/lovable-uploads/a4c040e8-740a-4fcb-b837-b86e15c25306.png" 
           alt="Rolls Royce Logo"
           className="w-full h-full object-contain"
         />
       ),
       'Aston Martin': (
         <img 
-          src="/lovable-uploads/a864ba86-0cc4-45a7-83e5-f3e39a34e6e5.png" 
+          src="/lovable-uploads/8d3bad14-09df-4ef1-86c6-13cfcba7042b.png" 
           alt="Aston Martin Logo"
           className="w-full h-full object-contain"
         />
