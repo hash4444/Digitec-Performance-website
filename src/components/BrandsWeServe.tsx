@@ -1,5 +1,3 @@
-
-
 import React, { useEffect, useRef, useState } from 'react';
 
 export const BrandsWeServe = () => {
@@ -168,12 +166,11 @@ export const BrandsWeServe = () => {
     };
 
     return logoMap[brandName] || (
-      <svg viewBox="0 0 100 100" className="w-full h-full">
-        <circle cx="50" cy="50" r="40" fill="none" stroke="currentColor" strokeWidth="2"/>
-        <text x="50" y="55" textAnchor="middle" fontSize="14" fill="currentColor">
+      <div className="w-full h-full rounded-2xl bg-gradient-to-br from-burnt-orange/20 to-chocolate/20 flex items-center justify-center">
+        <span className="text-2xl font-black text-burnt-orange">
           {brandName.charAt(0)}
-        </text>
-      </svg>
+        </span>
+      </div>
     );
   };
 
@@ -196,11 +193,14 @@ export const BrandsWeServe = () => {
         
         .brand-logo {
           transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+          border-radius: 20px;
+          box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
         }
         
         .brand-logo:hover {
-          transform: scale(1.1);
-          filter: drop-shadow(0 0 20px rgba(255, 107, 53, 0.6));
+          transform: scale(1.15);
+          box-shadow: 0 16px 48px rgba(255, 107, 53, 0.25);
+          border-radius: 24px;
         }
         
         .central-d {
@@ -211,6 +211,7 @@ export const BrandsWeServe = () => {
         
         .particle {
           animation: particles 8s ease-in-out infinite;
+          border-radius: 50%;
         }
       `}</style>
       
@@ -223,7 +224,7 @@ export const BrandsWeServe = () => {
           {[...Array(40)].map((_, i) => (
             <div
               key={i}
-              className="particle absolute w-1 h-1 bg-burnt-orange/20 rounded-full"
+              className="particle absolute w-2 h-2 bg-burnt-orange/20 rounded-full shadow-lg"
               style={{
                 left: `${Math.random() * 100}%`,
                 top: `${Math.random() * 100}%`,
@@ -251,7 +252,7 @@ export const BrandsWeServe = () => {
           {/* Orbital system */}
           <div className="relative w-full h-[600px] flex items-center justify-center">
             {/* Central D */}
-            <div className="absolute z-20 w-24 h-24 flex items-center justify-center">
+            <div className="absolute z-20 w-28 h-28 flex items-center justify-center rounded-3xl bg-gradient-to-br from-burnt-orange/10 to-transparent shadow-2xl">
               <div className="central-d text-7xl font-black text-burnt-orange">
                 D
               </div>
@@ -270,7 +271,7 @@ export const BrandsWeServe = () => {
                 return (
                   <div
                     key={brand.name}
-                    className="absolute w-16 h-16 flex items-center justify-center group cursor-pointer"
+                    className="absolute w-20 h-20 flex items-center justify-center group cursor-pointer"
                     style={{
                       left: '50%',
                       top: '50%',
@@ -278,13 +279,13 @@ export const BrandsWeServe = () => {
                     }}
                   >
                     {/* Brand logo */}
-                    <div className="brand-logo w-full h-full text-gray-600 group-hover:text-burnt-orange">
+                    <div className="brand-logo w-full h-full text-gray-600 group-hover:text-burnt-orange bg-white/80 backdrop-blur-sm p-3 rounded-2xl shadow-lg">
                       {getBrandLogo(brand.name)}
                     </div>
                     
                     {/* Hover tooltip */}
-                    <div className="absolute top-full mt-4 left-1/2 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-all duration-300 pointer-events-none">
-                      <div className="bg-white/90 backdrop-blur-sm border border-burnt-orange/30 rounded-lg px-4 py-2 text-center whitespace-nowrap shadow-lg">
+                    <div className="absolute top-full mt-6 left-1/2 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-all duration-300 pointer-events-none">
+                      <div className="bg-white/95 backdrop-blur-md border border-burnt-orange/20 rounded-2xl px-6 py-4 text-center whitespace-nowrap shadow-2xl">
                         <div className="text-burnt-orange font-bold text-sm">{brand.name}</div>
                         <div className="text-gray-700 text-xs mt-1">{brand.specialization}</div>
                       </div>
@@ -297,10 +298,10 @@ export const BrandsWeServe = () => {
           
           {/* Bottom CTA */}
           <div className="text-center mt-16">
-            <p className="text-gray-600 mb-6">
+            <p className="text-gray-600 mb-8 text-lg">
               Experience precision service for your luxury vehicle
             </p>
-            <button className="bg-burnt-orange hover:bg-burnt-orange/90 text-white font-bold text-lg px-12 py-4 transition-all duration-300 transform hover:scale-105 hover:shadow-xl hover:shadow-burnt-orange/40">
+            <button className="bg-burnt-orange hover:bg-burnt-orange/90 text-white font-bold text-lg px-12 py-4 rounded-2xl transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl hover:shadow-burnt-orange/25">
               Schedule Service
             </button>
           </div>
@@ -309,4 +310,3 @@ export const BrandsWeServe = () => {
     </>
   );
 };
-

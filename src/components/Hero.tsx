@@ -28,27 +28,29 @@ export const Hero = () => {
         
         <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
           <Button 
-            className="bg-burnt-orange hover:bg-burnt-orange/90 text-black font-bold text-lg px-12 py-4 rounded-none transition-all duration-300 transform hover:scale-105"
+            className="bg-burnt-orange hover:bg-burnt-orange/90 text-black font-bold text-lg px-12 py-6 rounded-2xl transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl"
           >
             Book Appointment
           </Button>
           
           <Button 
             variant="outline" 
-            className="border-2 border-off-white text-off-white hover:bg-off-white hover:text-black font-bold text-lg px-12 py-4 rounded-none transition-all duration-300"
+            className="border-2 border-off-white text-off-white hover:bg-off-white hover:text-black font-bold text-lg px-12 py-6 rounded-2xl transition-all duration-300 shadow-lg hover:shadow-xl"
           >
             Get a Free Diagnosis
           </Button>
         </div>
         
         <div className="mt-16 animate-bounce">
-          <ArrowDown className="mx-auto text-burnt-orange" size={32} />
+          <div className="w-12 h-12 bg-burnt-orange/20 rounded-2xl flex items-center justify-center mx-auto backdrop-blur-sm">
+            <ArrowDown className="text-burnt-orange" size={24} />
+          </div>
         </div>
       </div>
       
       {/* Geometric accents */}
-      <div className="absolute top-20 right-20 w-2 h-32 bg-burnt-orange/30 rotate-45 hidden lg:block"></div>
-      <div className="absolute bottom-20 left-20 w-2 h-32 bg-chocolate/30 -rotate-45 hidden lg:block"></div>
+      <div className="absolute top-20 right-20 w-4 h-32 bg-burnt-orange/30 rounded-full rotate-45 hidden lg:block"></div>
+      <div className="absolute bottom-20 left-20 w-4 h-32 bg-chocolate/30 rounded-full -rotate-45 hidden lg:block"></div>
     </section>
   );
 };

@@ -18,33 +18,33 @@ export const WhatWeDo = () => {
         
         <div className="grid md:grid-cols-3 gap-12">
           <div className="text-center group">
-            <div className="w-24 h-24 bg-burnt-orange/10 rounded-full flex items-center justify-center mx-auto mb-8 group-hover:bg-burnt-orange/20 transition-all duration-300">
-              <div className="w-12 h-12 border-2 border-burnt-orange rounded-full"></div>
+            <div className="w-28 h-28 bg-gradient-to-br from-burnt-orange/20 to-burnt-orange/5 rounded-3xl flex items-center justify-center mx-auto mb-8 group-hover:from-burnt-orange/30 group-hover:to-burnt-orange/10 transition-all duration-500 shadow-xl backdrop-blur-sm">
+              <div className="w-16 h-16 border-2 border-burnt-orange rounded-2xl group-hover:scale-110 transition-transform duration-300"></div>
             </div>
-            <h3 className="text-2xl font-bold mb-4">Performance Tuning</h3>
-            <p className="text-gray-300 leading-relaxed">
+            <h3 className="text-2xl font-bold mb-6 text-white">Performance Tuning</h3>
+            <p className="text-gray-300 leading-relaxed text-lg">
               ECU remapping, turbo upgrades, and exhaust system optimization 
               to unlock your vehicle's true potential.
             </p>
           </div>
           
           <div className="text-center group">
-            <div className="w-24 h-24 bg-burnt-orange/10 rounded-full flex items-center justify-center mx-auto mb-8 group-hover:bg-burnt-orange/20 transition-all duration-300">
-              <div className="w-12 h-12 border-2 border-burnt-orange rounded-full"></div>
+            <div className="w-28 h-28 bg-gradient-to-br from-burnt-orange/20 to-burnt-orange/5 rounded-3xl flex items-center justify-center mx-auto mb-8 group-hover:from-burnt-orange/30 group-hover:to-burnt-orange/10 transition-all duration-500 shadow-xl backdrop-blur-sm">
+              <div className="w-16 h-16 border-2 border-burnt-orange rounded-2xl group-hover:scale-110 transition-transform duration-300"></div>
             </div>
-            <h3 className="text-2xl font-bold mb-4">Aesthetic Enhancement</h3>
-            <p className="text-gray-300 leading-relaxed">
+            <h3 className="text-2xl font-bold mb-6 text-white">Aesthetic Enhancement</h3>
+            <p className="text-gray-300 leading-relaxed text-lg">
               Custom body kits, carbon fiber components, and premium wheel 
               upgrades for the ultimate visual impact.
             </p>
           </div>
           
           <div className="text-center group">
-            <div className="w-24 h-24 bg-burnt-orange/10 rounded-full flex items-center justify-center mx-auto mb-8 group-hover:bg-burnt-orange/20 transition-all duration-300">
-              <div className="w-12 h-12 border-2 border-burnt-orange rounded-full"></div>
+            <div className="w-28 h-28 bg-gradient-to-br from-burnt-orange/20 to-burnt-orange/5 rounded-3xl flex items-center justify-center mx-auto mb-8 group-hover:from-burnt-orange/30 group-hover:to-burnt-orange/10 transition-all duration-500 shadow-xl backdrop-blur-sm">
+              <div className="w-16 h-16 border-2 border-burnt-orange rounded-2xl group-hover:scale-110 transition-transform duration-300"></div>
             </div>
-            <h3 className="text-2xl font-bold mb-4">Precision Maintenance</h3>
-            <p className="text-gray-300 leading-relaxed">
+            <h3 className="text-2xl font-bold mb-6 text-white">Precision Maintenance</h3>
+            <p className="text-gray-300 leading-relaxed text-lg">
               Comprehensive diagnostic services and preventive maintenance 
               to keep your luxury vehicle in pristine condition.
             </p>

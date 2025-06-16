@@ -40,20 +40,20 @@ export const Reviews = () => {
         
         <div className="grid md:grid-cols-3 gap-8">
           {reviews.map((review, index) => (
-            <div key={review.name} className="bg-black/50 border border-gray-800 p-8">
+            <div key={review.name} className="bg-gradient-to-br from-black/60 to-charcoal/40 backdrop-blur-sm border border-gray-800/50 rounded-3xl p-8 shadow-2xl hover:shadow-burnt-orange/10 transition-all duration-500 hover:scale-105">
               <div className="flex mb-6">
                 {[...Array(review.rating)].map((_, i) => (
-                  <div key={i} className="w-5 h-5 bg-burnt-orange mr-1"></div>
+                  <div key={i} className="w-6 h-6 bg-burnt-orange rounded-lg mr-2 shadow-sm"></div>
                 ))}
               </div>
               
-              <p className="text-gray-300 leading-relaxed mb-8 italic">
+              <p className="text-gray-300 leading-relaxed mb-8 italic text-lg">
                 "{review.text}"
               </p>
               
-              <div className="border-t border-gray-700 pt-6">
-                <div className="font-bold text-off-white mb-1">{review.name}</div>
-                <div className="text-burnt-orange text-sm font-semibold mb-1">{review.vehicle}</div>
+              <div className="border-t border-gray-700/50 pt-6">
+                <div className="font-bold text-off-white mb-2 text-lg">{review.name}</div>
+                <div className="text-burnt-orange text-sm font-semibold mb-2">{review.vehicle}</div>
                 <div className="text-gray-400 text-sm">{review.location}</div>
               </div>
             </div>
@@ -61,14 +61,16 @@ export const Reviews = () => {
         </div>
         
         <div className="text-center mt-16">
-          <div className="text-sm text-gray-400 mb-4">Verified Reviews from Real Clients</div>
-          <div className="flex justify-center items-center space-x-4">
-            <div className="flex">
-              {[...Array(5)].map((_, i) => (
-                <div key={i} className="w-4 h-4 bg-burnt-orange mr-1"></div>
-              ))}
+          <div className="bg-gradient-to-r from-black/40 to-charcoal/40 backdrop-blur-sm rounded-2xl p-8 inline-block shadow-xl">
+            <div className="text-sm text-gray-400 mb-4">Verified Reviews from Real Clients</div>
+            <div className="flex justify-center items-center space-x-4">
+              <div className="flex">
+                {[...Array(5)].map((_, i) => (
+                  <div key={i} className="w-5 h-5 bg-burnt-orange rounded-lg mr-2 shadow-sm"></div>
+                ))}
+              </div>
+              <span className="text-off-white font-semibold text-lg">4.9/5 Average Rating</span>
             </div>
-            <span className="text-off-white font-semibold">4.9/5 Average Rating</span>
           </div>
         </div>
       </div>

@@ -23,31 +23,31 @@ export const FinalCTA = () => {
         
         <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16">
           <Button 
-            className="bg-burnt-orange hover:bg-burnt-orange/90 text-black font-bold text-xl px-16 py-6 rounded-none transition-all duration-300 transform hover:scale-105"
+            className="bg-burnt-orange hover:bg-burnt-orange/90 text-black font-bold text-xl px-16 py-6 rounded-2xl transition-all duration-300 transform hover:scale-105 shadow-2xl hover:shadow-burnt-orange/25"
           >
             Schedule Your Consultation
           </Button>
           
           <Button 
             variant="outline" 
-            className="border-2 border-off-white text-off-white hover:bg-off-white hover:text-black font-bold text-xl px-16 py-6 rounded-none transition-all duration-300"
+            className="border-2 border-off-white text-off-white hover:bg-off-white hover:text-black font-bold text-xl px-16 py-6 rounded-2xl transition-all duration-300 shadow-xl hover:shadow-2xl"
           >
             Call +971 4 XXX XXXX
           </Button>
         </div>
         
         <div className="grid md:grid-cols-3 gap-8 text-center">
-          <div>
-            <div className="text-2xl font-bold text-burnt-orange mb-2">Free Consultation</div>
-            <div className="text-gray-300">Complimentary performance assessment</div>
+          <div className="bg-gradient-to-br from-black/40 to-charcoal/20 backdrop-blur-sm rounded-3xl p-8 shadow-xl">
+            <div className="text-2xl font-bold text-burnt-orange mb-4">Free Consultation</div>
+            <div className="text-gray-300 text-lg">Complimentary performance assessment</div>
           </div>
-          <div>
-            <div className="text-2xl font-bold text-burnt-orange mb-2">Expert Advice</div>
-            <div className="text-gray-300">Personalized tuning recommendations</div>
+          <div className="bg-gradient-to-br from-black/40 to-charcoal/20 backdrop-blur-sm rounded-3xl p-8 shadow-xl">
+            <div className="text-2xl font-bold text-burnt-orange mb-4">Expert Advice</div>
+            <div className="text-gray-300 text-lg">Personalized tuning recommendations</div>
           </div>
-          <div>
-            <div className="text-2xl font-bold text-burnt-orange mb-2">Premium Service</div>
-            <div className="text-gray-300">White-glove treatment guaranteed</div>
+          <div className="bg-gradient-to-br from-black/40 to-charcoal/20 backdrop-blur-sm rounded-3xl p-8 shadow-xl">
+            <div className="text-2xl font-bold text-burnt-orange mb-4">Premium Service</div>
+            <div className="text-gray-300 text-lg">White-glove treatment guaranteed</div>
           </div>
         </div>
       </div>

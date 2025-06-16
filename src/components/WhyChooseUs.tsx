@@ -43,17 +43,19 @@ export const WhyChooseUs = () => {
         
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-20">
           {reasons.map((reason, index) => (
-            <div key={reason.title} className="text-center">
-              <div className="text-5xl md:text-6xl font-black text-burnt-orange mb-4">
-                {reason.number}
+            <div key={reason.title} className="text-center group">
+              <div className="bg-gradient-to-br from-charcoal/60 to-black/40 backdrop-blur-sm rounded-3xl p-8 mb-6 shadow-2xl group-hover:shadow-burnt-orange/20 transition-all duration-500 group-hover:scale-105">
+                <div className="text-5xl md:text-6xl font-black text-burnt-orange mb-4">
+                  {reason.number}
+                </div>
+                <h3 className="text-xl font-bold mb-4 text-white">{reason.title}</h3>
+                <p className="text-gray-300 leading-relaxed">{reason.description}</p>
               </div>
-              <h3 className="text-xl font-bold mb-4">{reason.title}</h3>
-              <p className="text-gray-300 leading-relaxed">{reason.description}</p>
             </div>
           ))}
         </div>
         
-        <div className="bg-charcoal/30 border border-gray-800 p-12 text-center">
+        <div className="bg-gradient-to-br from-charcoal/40 to-black/20 backdrop-blur-sm border border-gray-800/50 rounded-3xl p-12 text-center shadow-2xl">
           <h3 className="text-3xl font-bold mb-6">
             State-of-the-Art Facility in the Heart of <span className="text-burnt-orange">D</span>ubai
           </h3>
@@ -62,16 +64,16 @@ export const WhyChooseUs = () => {
             and climate-controlled environments to ensure your luxury vehicle receives the care it deserves.
           </p>
           <div className="grid md:grid-cols-3 gap-8 text-sm">
-            <div>
-              <div className="font-semibold text-burnt-orange mb-2">Advanced Diagnostics</div>
+            <div className="bg-black/30 rounded-2xl p-6 backdrop-blur-sm">
+              <div className="font-semibold text-burnt-orange mb-2 text-lg">Advanced Diagnostics</div>
               <div className="text-gray-400">Latest OEM diagnostic equipment</div>
             </div>
-            <div>
-              <div className="font-semibold text-burnt-orange mb-2">Climate Controlled</div>
+            <div className="bg-black/30 rounded-2xl p-6 backdrop-blur-sm">
+              <div className="font-semibold text-burnt-orange mb-2 text-lg">Climate Controlled</div>
               <div className="text-gray-400">Optimal working conditions</div>
             </div>
-            <div>
-              <div className="font-semibold text-burnt-orange mb-2">Secure Storage</div>
+            <div className="bg-black/30 rounded-2xl p-6 backdrop-blur-sm">
+              <div className="font-semibold text-burnt-orange mb-2 text-lg">Secure Storage</div>
               <div className="text-gray-400">24/7 monitored facility</div>
             </div>
           </div>

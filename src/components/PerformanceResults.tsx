@@ -27,12 +27,12 @@ export const PerformanceResults = () => {
         
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-20">
           {results.map((result, index) => (
-            <div key={result.metric} className="text-center">
-              <div className="bg-charcoal/50 border border-gray-800 p-8 mb-4 hover:border-burnt-orange/50 transition-all duration-300">
-                <div className="text-4xl md:text-5xl font-black text-burnt-orange mb-2">
+            <div key={result.metric} className="text-center group">
+              <div className="bg-gradient-to-br from-charcoal/60 to-black/40 backdrop-blur-sm border border-gray-800/50 rounded-3xl p-8 mb-6 hover:border-burnt-orange/30 transition-all duration-500 shadow-2xl group-hover:shadow-burnt-orange/20 group-hover:scale-105">
+                <div className="text-4xl md:text-5xl font-black text-burnt-orange mb-4">
                   {result.value}
                 </div>
-                <div className="text-lg font-semibold text-gray-300">
+                <div className="text-lg font-semibold text-gray-300 mb-2">
                   {result.unit}
                 </div>
               </div>
@@ -41,7 +41,7 @@ export const PerformanceResults = () => {
           ))}
         </div>
         
-        <div className="bg-gradient-to-r from-charcoal/50 to-black/50 border border-gray-800 p-12 text-center">
+        <div className="bg-gradient-to-br from-charcoal/50 to-black/30 backdrop-blur-sm border border-gray-800/50 rounded-3xl p-12 text-center shadow-2xl">
           <h3 className="text-3xl font-bold mb-6">
             Before & After Performance Analysis
           </h3>
@@ -51,25 +51,25 @@ export const PerformanceResults = () => {
           </p>
           
           <div className="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
-            <div className="text-left">
-              <h4 className="text-xl font-semibold text-burnt-orange mb-4">What We Measure:</h4>
-              <ul className="space-y-2 text-gray-300">
-                <li>• Peak Horsepower & Torque</li>
-                <li>• Power Curve Analysis</li>
-                <li>• Acceleration Times</li>
-                <li>• Fuel Consumption</li>
-                <li>• Emission Levels</li>
+            <div className="text-left bg-black/30 rounded-2xl p-8 backdrop-blur-sm">
+              <h4 className="text-xl font-semibold text-burnt-orange mb-6">What We Measure:</h4>
+              <ul className="space-y-3 text-gray-300">
+                <li className="flex items-center"><span className="w-2 h-2 bg-burnt-orange rounded-full mr-3"></span>Peak Horsepower & Torque</li>
+                <li className="flex items-center"><span className="w-2 h-2 bg-burnt-orange rounded-full mr-3"></span>Power Curve Analysis</li>
+                <li className="flex items-center"><span className="w-2 h-2 bg-burnt-orange rounded-full mr-3"></span>Acceleration Times</li>
+                <li className="flex items-center"><span className="w-2 h-2 bg-burnt-orange rounded-full mr-3"></span>Fuel Consumption</li>
+                <li className="flex items-center"><span className="w-2 h-2 bg-burnt-orange rounded-full mr-3"></span>Emission Levels</li>
               </ul>
             </div>
             
-            <div className="text-left">
-              <h4 className="text-xl font-semibold text-burnt-orange mb-4">Documentation Provided:</h4>
-              <ul className="space-y-2 text-gray-300">
-                <li>• Detailed Dyno Reports</li>
-                <li>• Performance Certificates</li>
-                <li>• Modification Documentation</li>
-                <li>• Warranty Information</li>
-                <li>• Maintenance Guidelines</li>
+            <div className="text-left bg-black/30 rounded-2xl p-8 backdrop-blur-sm">
+              <h4 className="text-xl font-semibold text-burnt-orange mb-6">Documentation Provided:</h4>
+              <ul className="space-y-3 text-gray-300">
+                <li className="flex items-center"><span className="w-2 h-2 bg-burnt-orange rounded-full mr-3"></span>Detailed Dyno Reports</li>
+                <li className="flex items-center"><span className="w-2 h-2 bg-burnt-orange rounded-full mr-3"></span>Performance Certificates</li>
+                <li className="flex items-center"><span className="w-2 h-2 bg-burnt-orange rounded-full mr-3"></span>Modification Documentation</li>
+                <li className="flex items-center"><span className="w-2 h-2 bg-burnt-orange rounded-full mr-3"></span>Warranty Information</li>
+                <li className="flex items-center"><span className="w-2 h-2 bg-burnt-orange rounded-full mr-3"></span>Maintenance Guidelines</li>
               </ul>
             </div>
           </div>
