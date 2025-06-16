@@ -1,10 +1,14 @@
 
 import React, { useEffect, useRef, useState } from 'react';
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
 
 export const BrandsWeServe = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
   const [isMouseInSection, setIsMouseInSection] = useState(false);
+  const [isDragging, setIsDragging] = useState(false);
+  const [orbitRotation, setOrbitRotation] = useState(0);
+  const dragStartRef = useRef({ x: 0, y: 0, rotation: 0 });
 
   const brands = [
     { name: 'Mercedes-Benz', specialization: 'AMG Performance & Star Diagnostics' },
@@ -15,23 +19,23 @@ export const BrandsWeServe = () => {
     { name: 'Lamborghini', specialization: 'V10 & V12 Specialists' },
     { name: 'Bentley', specialization: 'Continental & Flying Spur Excellence' },
     { name: 'McLaren', specialization: 'Carbon Fiber & Turbo V8 Mastery' },
-    { name: 'Ferrari', specialization: 'ECU & Powertrain Calibration' },
+    { name: 'Ferrari', specialization: 'F1 ECU Tuning & Performance Calibration' },
     { name: 'Bugatti', specialization: 'Quad Turbo Optimization & Luxury Diagnostics' },
     { name: 'Range Rover', specialization: 'Terrain Response & Luxury SUV Systems' },
     { name: 'Rolls Royce', specialization: 'Quiet, Precise, Luxurious – Inside and Out' },
     { name: 'Aston Martin', specialization: 'British Elegance & V12 Precision' }
   ];
 
-  // Track mouse position for parallax effect (disabled on mobile)
+  // Track mouse position for parallax effect
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
-      if (window.innerWidth >= 768 && sectionRef.current) {
+      if (window.innerWidth >= 768 && sectionRef.current && !isDragging) {
         const rect = sectionRef.current.getBoundingClientRect();
         const centerX = rect.width / 2;
         const centerY = rect.height / 2;
         const x = (e.clientX - rect.left - centerX) / centerX;
         const y = (e.clientY - rect.top - centerY) / centerY;
-        setMousePos({ x: x * 15, y: y * 15 });
+        setMousePos({ x: x * 20, y: y * 20 });
       }
     };
 
@@ -46,28 +50,78 @@ export const BrandsWeServe = () => {
       setMousePos({ x: 0, y: 0 });
     };
 
+    // Drag functionality
+    const handleMouseDown = (e: MouseEvent) => {
+      if (sectionRef.current) {
+        const rect = sectionRef.current.getBoundingClientRect();
+        const centerX = rect.left + rect.width / 2;
+        const centerY = rect.top + rect.height / 2;
+        const angle = Math.atan2(e.clientY - centerY, e.clientX - centerX);
+        
+        setIsDragging(true);
+        dragStartRef.current = { 
+          x: e.clientX, 
+          y: e.clientY, 
+          rotation: orbitRotation - angle 
+        };
+      }
+    };
+
+    const handleMouseMoveGlobal = (e: MouseEvent) => {
+      if (isDragging && sectionRef.current) {
+        const rect = sectionRef.current.getBoundingClientRect();
+        const centerX = rect.left + rect.width / 2;
+        const centerY = rect.top + rect.height / 2;
+        const angle = Math.atan2(e.clientY - centerY, e.clientX - centerX);
+        
+        setOrbitRotation(dragStartRef.current.rotation + angle);
+      }
+    };
+
+    const handleMouseUp = () => {
+      setIsDragging(false);
+    };
+
     const section = sectionRef.current;
     if (section) {
       section.addEventListener('mousemove', handleMouseMove);
       section.addEventListener('mouseenter', handleMouseEnter);
       section.addEventListener('mouseleave', handleMouseLeave);
+      section.addEventListener('mousedown', handleMouseDown);
     }
+
+    document.addEventListener('mousemove', handleMouseMoveGlobal);
+    document.addEventListener('mouseup', handleMouseUp);
 
     return () => {
       if (section) {
         section.removeEventListener('mousemove', handleMouseMove);
         section.removeEventListener('mouseenter', handleMouseEnter);
         section.removeEventListener('mouseleave', handleMouseLeave);
+        section.removeEventListener('mousedown', handleMouseDown);
       }
+      document.removeEventListener('mousemove', handleMouseMoveGlobal);
+      document.removeEventListener('mouseup', handleMouseUp);
     };
-  }, []);
+  }, [isDragging, orbitRotation]);
 
-  // Calculate orbital positions for each logo (responsive)
+  // Auto rotation when not dragging
+  useEffect(() => {
+    if (!isDragging) {
+      const interval = setInterval(() => {
+        setOrbitRotation(prev => prev + 0.002);
+      }, 16);
+      return () => clearInterval(interval);
+    }
+  }, [isDragging]);
+
+  // Calculate orbital positions
   const getOrbitalPosition = (index: number, total: number) => {
-    const angle = (index / total) * 2 * Math.PI;
+    const baseAngle = (index / total) * 2 * Math.PI;
+    const angle = baseAngle + orbitRotation;
     const isMobile = window.innerWidth < 768;
-    const radiusX = isMobile ? 130 : 300; 
-    const radiusY = isMobile ? 90 : 220;
+    const radiusX = isMobile ? 140 : 320; 
+    const radiusY = isMobile ? 100 : 240;
     
     return {
       x: Math.cos(angle) * radiusX,
@@ -76,7 +130,7 @@ export const BrandsWeServe = () => {
     };
   };
 
-  // Brand logo SVGs
+  // Brand logo components
   const getBrandLogo = (brandName: string) => {
     const logoMap: { [key: string]: JSX.Element } = {
       'Mercedes-Benz': (
@@ -182,81 +236,69 @@ export const BrandsWeServe = () => {
   };
 
   return (
-    <>
+    <TooltipProvider>
       <style>{`
-        @keyframes orbit {
-          0% { transform: rotate(0deg); }
-          100% { transform: rotate(360deg); }
+        @keyframes pulseRing {
+          0% { transform: scale(1); opacity: 0.8; }
+          50% { transform: scale(1.1); opacity: 0.4; }
+          100% { transform: scale(1.2); opacity: 0; }
         }
         
-        @keyframes particles {
-          0%, 100% { transform: translate(0, 0) scale(1); opacity: 0.1; }
-          50% { transform: translate(20px, -20px) scale(1.2); opacity: 0.3; }
+        @keyframes glowPulse {
+          0%, 100% { filter: drop-shadow(0 0 20px rgba(255, 107, 53, 0.6)); }
+          50% { filter: drop-shadow(0 0 40px rgba(255, 107, 53, 0.9)); }
         }
         
         .orbital-container {
-          animation: orbit 120s linear infinite;
-        }
-        
-        @media (max-width: 768px) {
-          .orbital-container {
-            animation: orbit 180s linear infinite;
-          }
+          cursor: ${isDragging ? 'grabbing' : 'grab'};
         }
         
         .brand-logo {
-          transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+          transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+          filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.1));
         }
         
         .brand-logo:hover {
-          transform: scale(1.2);
-          filter: drop-shadow(0 8px 24px rgba(255, 107, 53, 0.3));
-        }
-        
-        @media (max-width: 768px) {
-          .brand-logo:active {
-            transform: scale(1.15);
-            filter: drop-shadow(0 6px 20px rgba(255, 107, 53, 0.4));
-          }
+          transform: scale(1.25);
+          filter: drop-shadow(0 8px 24px rgba(255, 107, 53, 0.4));
+          z-index: 10;
         }
         
         .central-d {
-          text-shadow: 0 0 40px rgba(255, 107, 53, 0.9),
-                       0 0 80px rgba(255, 107, 53, 0.7),
-                       0 0 120px rgba(255, 107, 53, 0.5);
-          filter: drop-shadow(0 0 20px rgba(255, 107, 53, 0.8));
+          animation: glowPulse 3s ease-in-out infinite;
+          text-shadow: 0 0 30px rgba(255, 107, 53, 0.8),
+                       0 0 60px rgba(255, 107, 53, 0.6),
+                       0 0 90px rgba(255, 107, 53, 0.4);
         }
         
-        .particle {
-          animation: particles 8s ease-in-out infinite;
+        .pulse-ring {
+          animation: pulseRing 2s ease-out infinite;
+          border: 2px solid rgba(255, 107, 53, 0.3);
           border-radius: 50%;
-          background: rgba(255, 107, 53, 0.1);
+          position: absolute;
+        }
+        
+        .motion-trail {
+          position: absolute;
+          width: 4px;
+          height: 4px;
+          background: rgba(255, 107, 53, 0.3);
+          border-radius: 50%;
+          pointer-events: none;
         }
       `}</style>
       
       <section 
         ref={sectionRef}
-        className="relative py-16 sm:py-24 lg:py-32 bg-white overflow-hidden min-h-screen flex items-center justify-center px-4 sm:px-6"
+        className="relative py-16 sm:py-24 lg:py-32 bg-white overflow-hidden min-h-screen flex items-center justify-center px-4 sm:px-6 select-none"
       >
-        {/* Ambient particles */}
-        <div className="absolute inset-0 pointer-events-none">
-          {[...Array(window.innerWidth < 768 ? 20 : 40)].map((_, i) => (
-            <div
-              key={i}
-              className="particle absolute w-1 h-1 sm:w-2 sm:h-2 rounded-full shadow-lg"
-              style={{
-                left: `${Math.random() * 100}%`,
-                top: `${Math.random() * 100}%`,
-                animationDelay: `${Math.random() * 8}s`,
-                animationDuration: `${6 + Math.random() * 4}s`
-              }}
-            />
-          ))}
+        {/* Pulse rings around center */}
+        <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+          <div className="pulse-ring w-32 h-32 sm:w-48 sm:h-48" style={{ animationDelay: '0s' }} />
+          <div className="pulse-ring w-40 h-40 sm:w-60 sm:h-60" style={{ animationDelay: '0.5s' }} />
+          <div className="pulse-ring w-48 h-48 sm:w-72 sm:h-72" style={{ animationDelay: '1s' }} />
         </div>
 
-        {/* Background gradient */}
-        <div className="absolute inset-0 bg-gradient-radial from-burnt-orange/3 via-transparent to-transparent"></div>
-        
         <div className="max-w-6xl mx-auto relative z-10">
           {/* Section title */}
           <div className="text-center mb-12 sm:mb-16">
@@ -268,57 +310,60 @@ export const BrandsWeServe = () => {
             </p>
           </div>
           
-          {/* Orbital system */}
-          <div className="relative w-full h-[400px] sm:h-[500px] lg:h-[600px] flex items-center justify-center">
-            {/* Central D - Standalone with glow */}
+          {/* Interactive orbital system */}
+          <div className="relative w-full h-[500px] sm:h-[600px] lg:h-[700px] flex items-center justify-center">
+            {/* Central D with enhanced glow */}
             <div className="absolute z-20 flex items-center justify-center">
-              <div className="central-d text-4xl sm:text-6xl lg:text-8xl font-black text-burnt-orange">
+              <div className="central-d text-5xl sm:text-7xl lg:text-9xl font-black text-burnt-orange">
                 D
               </div>
             </div>
             
-            {/* Orbiting brands container */}
+            {/* Orbiting brands container with parallax */}
             <div 
               className="orbital-container absolute inset-0"
               style={{
                 transform: `translate(${mousePos.x}px, ${mousePos.y}px)`,
-                transition: isMouseInSection ? 'none' : 'transform 0.8s ease-out'
+                transition: isMouseInSection && !isDragging ? 'none' : 'transform 0.8s ease-out'
               }}
             >
               {brands.map((brand, index) => {
                 const position = getOrbitalPosition(index, brands.length);
                 return (
-                  <div
-                    key={brand.name}
-                    className="absolute w-12 h-12 sm:w-16 sm:h-16 lg:w-20 lg:h-20 flex items-center justify-center group cursor-pointer"
-                    style={{
-                      left: '50%',
-                      top: '50%',
-                      transform: `translate(calc(-50% + ${position.x}px), calc(-50% + ${position.y}px))`
-                    }}
-                  >
-                    {/* Brand logo - no background container */}
-                    <div className="brand-logo w-full h-full p-1 sm:p-2">
-                      {getBrandLogo(brand.name)}
-                    </div>
-                    
-                    {/* Hover/Touch tooltip */}
-                    <div className="absolute top-full mt-4 sm:mt-6 left-1/2 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 group-active:opacity-100 transition-all duration-300 pointer-events-none z-30">
-                      <div className="bg-white/95 backdrop-blur-md border border-burnt-orange/20 rounded-2xl sm:rounded-3xl px-3 sm:px-6 py-2 sm:py-4 text-center whitespace-nowrap shadow-2xl">
-                        <div className="text-burnt-orange font-bold text-xs sm:text-sm">{brand.name}</div>
-                        <div className="text-gray-700 text-xs mt-1 hidden sm:block">{brand.specialization}</div>
+                  <Tooltip key={brand.name}>
+                    <TooltipTrigger asChild>
+                      <div
+                        className="absolute w-14 h-14 sm:w-18 sm:h-18 lg:w-22 lg:h-22 flex items-center justify-center group cursor-pointer"
+                        style={{
+                          left: '50%',
+                          top: '50%',
+                          transform: `translate(calc(-50% + ${position.x}px), calc(-50% + ${position.y}px))`
+                        }}
+                      >
+                        <div className="brand-logo w-full h-full p-1 sm:p-2 bg-white/80 backdrop-blur-sm rounded-full shadow-lg border border-gray-100">
+                          {getBrandLogo(brand.name)}
+                        </div>
                       </div>
-                    </div>
-                  </div>
+                    </TooltipTrigger>
+                    <TooltipContent 
+                      side="top" 
+                      className="bg-black/90 text-white border-burnt-orange/30 max-w-xs"
+                    >
+                      <div className="text-center p-2">
+                        <div className="text-burnt-orange font-bold text-sm mb-1">{brand.name}</div>
+                        <div className="text-gray-300 text-xs">{brand.specialization}</div>
+                      </div>
+                    </TooltipContent>
+                  </Tooltip>
                 );
               })}
             </div>
           </div>
           
-          {/* Bottom CTA */}
+          {/* Enhanced CTA */}
           <div className="text-center mt-12 sm:mt-16">
             <p className="text-gray-700 mb-6 sm:mb-8 text-base sm:text-lg px-4">
-              Experience precision service for your luxury vehicle
+              {isDragging ? 'Drag to explore our expertise' : 'Experience precision service for your luxury vehicle'}
             </p>
             <button className="w-full sm:w-auto bg-burnt-orange hover:bg-burnt-orange/90 text-white font-bold text-base sm:text-lg px-8 sm:px-12 py-4 rounded-2xl sm:rounded-3xl transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl hover:shadow-burnt-orange/25">
               Schedule Service
@@ -326,6 +371,6 @@ export const BrandsWeServe = () => {
           </div>
         </div>
       </section>
-    </>
+    </TooltipProvider>
   );
 };
