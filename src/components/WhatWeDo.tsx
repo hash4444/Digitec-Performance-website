@@ -3,10 +3,10 @@ import React from 'react';
 
 export const WhatWeDo = () => {
   return (
-    <section className="py-32 bg-charcoal">
+    <section className="py-32 bg-black">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-20">
-          <h2 className="text-4xl md:text-6xl font-black mb-8">
+          <h2 className="text-4xl md:text-6xl font-black mb-8 text-white">
             What We <span className="text-burnt-orange">D</span>o
           </h2>
           <p className="text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
@@ -18,8 +18,12 @@ export const WhatWeDo = () => {
         
         <div className="grid md:grid-cols-3 gap-12">
           <div className="text-center group">
-            <div className="w-28 h-28 bg-gradient-to-br from-burnt-orange/20 to-burnt-orange/5 rounded-3xl flex items-center justify-center mx-auto mb-8 group-hover:from-burnt-orange/30 group-hover:to-burnt-orange/10 transition-all duration-500 shadow-xl backdrop-blur-sm">
-              <div className="w-16 h-16 border-2 border-burnt-orange rounded-2xl group-hover:scale-110 transition-transform duration-300"></div>
+            <div className="mb-8 overflow-hidden rounded-3xl shadow-2xl group-hover:shadow-burnt-orange/20 transition-all duration-500">
+              <img 
+                src="/lovable-uploads/aeca6cb5-7000-451e-aaf7-d5171200659f.png" 
+                alt="Performance Tuning - Mercedes-AMG Engine"
+                className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500"
+              />
             </div>
             <h3 className="text-2xl font-bold mb-6 text-white">Performance Tuning</h3>
             <p className="text-gray-300 leading-relaxed text-lg">
@@ -29,8 +33,12 @@ export const WhatWeDo = () => {
           </div>
           
           <div className="text-center group">
-            <div className="w-28 h-28 bg-gradient-to-br from-burnt-orange/20 to-burnt-orange/5 rounded-3xl flex items-center justify-center mx-auto mb-8 group-hover:from-burnt-orange/30 group-hover:to-burnt-orange/10 transition-all duration-500 shadow-xl backdrop-blur-sm">
-              <div className="w-16 h-16 border-2 border-burnt-orange rounded-2xl group-hover:scale-110 transition-transform duration-300"></div>
+            <div className="mb-8 overflow-hidden rounded-3xl shadow-2xl group-hover:shadow-burnt-orange/20 transition-all duration-500">
+              <img 
+                src="/lovable-uploads/23c141a0-8b10-4263-a16b-a1c71773f3e5.png" 
+                alt="Aesthetic Enhancement - Professional Car Detailing"
+                className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500"
+              />
             </div>
             <h3 className="text-2xl font-bold mb-6 text-white">Aesthetic Enhancement</h3>
             <p className="text-gray-300 leading-relaxed text-lg">
@@ -40,8 +48,12 @@ export const WhatWeDo = () => {
           </div>
           
           <div className="text-center group">
-            <div className="w-28 h-28 bg-gradient-to-br from-burnt-orange/20 to-burnt-orange/5 rounded-3xl flex items-center justify-center mx-auto mb-8 group-hover:from-burnt-orange/30 group-hover:to-burnt-orange/10 transition-all duration-500 shadow-xl backdrop-blur-sm">
-              <div className="w-16 h-16 border-2 border-burnt-orange rounded-2xl group-hover:scale-110 transition-transform duration-300"></div>
+            <div className="mb-8 overflow-hidden rounded-3xl shadow-2xl group-hover:shadow-burnt-orange/20 transition-all duration-500">
+              <img 
+                src="/lovable-uploads/02e53b99-9978-4722-8945-bab63d4a4973.png" 
+                alt="Precision Maintenance - Engine Oil Service"
+                className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500"
+              />
             </div>
             <h3 className="text-2xl font-bold mb-6 text-white">Precision Maintenance</h3>
             <p className="text-gray-300 leading-relaxed text-lg">
