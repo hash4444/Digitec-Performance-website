@@ -1,4 +1,3 @@
-
 import React, { useEffect, useRef, useState } from 'react';
 
 export const BrandsWeServe = () => {
@@ -78,7 +77,6 @@ export const BrandsWeServe = () => {
           src="/lovable-uploads/a6f453f2-f2c5-4140-8f2a-bfa3401611d7.png" 
           alt="Mercedes-Benz Logo"
           className="w-full h-full object-contain"
-          style={{ filter: 'brightness(0) invert(1)' }}
         />
       ),
       'Maybach': (
@@ -92,7 +90,6 @@ export const BrandsWeServe = () => {
           src="/lovable-uploads/b632a8da-5197-45f3-96f1-94cd0e9942e3.png" 
           alt="Porsche Logo"
           className="w-full h-full object-contain"
-          style={{ filter: 'brightness(0) invert(1)' }}
         />
       ),
       'Audi': (
@@ -100,7 +97,6 @@ export const BrandsWeServe = () => {
           src="/lovable-uploads/8e59fadf-f1e4-4860-ac92-81509a23ec94.png" 
           alt="Audi Logo"
           className="w-full h-full object-contain"
-          style={{ filter: 'brightness(0) invert(1)' }}
         />
       ),
       'BMW': (
@@ -108,7 +104,6 @@ export const BrandsWeServe = () => {
           src="/lovable-uploads/f13e5867-fa2e-4bac-8132-8c6ee447feab.png" 
           alt="BMW Logo"
           className="w-full h-full object-contain"
-          style={{ filter: 'brightness(0) invert(1)' }}
         />
       ),
       'Lamborghini': (
@@ -116,7 +111,6 @@ export const BrandsWeServe = () => {
           src="/lovable-uploads/8c4046ee-9977-417a-90a9-820452146832.png" 
           alt="Lamborghini Logo"
           className="w-full h-full object-contain"
-          style={{ filter: 'brightness(0) invert(1)' }}
         />
       ),
       'Bentley': (
@@ -124,7 +118,6 @@ export const BrandsWeServe = () => {
           src="/lovable-uploads/7a227eaa-c434-4d89-8827-fb1c5d640bc3.png" 
           alt="Bentley Logo"
           className="w-full h-full object-contain"
-          style={{ filter: 'brightness(0) invert(1)' }}
         />
       ),
       'McLaren': (
@@ -132,7 +125,6 @@ export const BrandsWeServe = () => {
           src="/lovable-uploads/70a5e539-8ab8-44b9-85a1-4ecac36681c2.png" 
           alt="McLaren Logo"
           className="w-full h-full object-contain"
-          style={{ filter: 'brightness(0) invert(1)' }}
         />
       ),
       'Ferrari': (
@@ -140,7 +132,6 @@ export const BrandsWeServe = () => {
           src="/lovable-uploads/54bab4d8-e8ac-469c-8b33-0116edc6c3b0.png" 
           alt="Ferrari Logo"
           className="w-full h-full object-contain"
-          style={{ filter: 'brightness(0) invert(1)' }}
         />
       ),
       'Bugatti': (
@@ -148,7 +139,6 @@ export const BrandsWeServe = () => {
           src="/lovable-uploads/0d7ae3eb-4e88-4a9b-ba5a-f7f1d25b74ec.png" 
           alt="Bugatti Logo"
           className="w-full h-full object-contain"
-          style={{ filter: 'brightness(0) invert(1)' }}
         />
       ),
       'Range Rover': (
@@ -156,7 +146,6 @@ export const BrandsWeServe = () => {
           src="/lovable-uploads/bf4fc6ba-f08f-4fa6-a7c6-0e1a65b780b3.png" 
           alt="Range Rover Logo"
           className="w-full h-full object-contain"
-          style={{ filter: 'brightness(0) invert(1)' }}
         />
       ),
       'Rolls Royce': (
@@ -164,7 +153,6 @@ export const BrandsWeServe = () => {
           src="/lovable-uploads/c509aefa-0c5f-4a03-8de8-0d508fcd68cc.png" 
           alt="Rolls Royce Logo"
           className="w-full h-full object-contain"
-          style={{ filter: 'brightness(0) invert(1)' }}
         />
       ),
       'Aston Martin': (
@@ -172,7 +160,6 @@ export const BrandsWeServe = () => {
           src="/lovable-uploads/a864ba86-0cc4-45a7-83e5-f3e39a34e6e5.png" 
           alt="Aston Martin Logo"
           className="w-full h-full object-contain"
-          style={{ filter: 'brightness(0) invert(1)' }}
         />
       )
     };
@@ -226,7 +213,7 @@ export const BrandsWeServe = () => {
       
       <section 
         ref={sectionRef}
-        className="relative py-32 bg-black overflow-hidden min-h-screen flex items-center justify-center"
+        className="relative py-32 bg-white overflow-hidden min-h-screen flex items-center justify-center"
       >
         {/* Ambient particles */}
         <div className="absolute inset-0 pointer-events-none">
@@ -250,10 +237,10 @@ export const BrandsWeServe = () => {
         <div className="max-w-6xl mx-auto px-6 relative z-10">
           {/* Section title */}
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-6xl font-black mb-6 text-off-white tracking-tight">
+            <h2 className="text-4xl md:text-6xl font-black mb-6 text-black tracking-tight">
               Brands We Serve
             </h2>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-700 max-w-3xl mx-auto">
               Precision performance for the world's most prestigious automotive brands
             </p>
           </div>
@@ -288,15 +275,15 @@ export const BrandsWeServe = () => {
                     }}
                   >
                     {/* Brand logo */}
-                    <div className="brand-logo w-full h-full text-gray-400 group-hover:text-burnt-orange">
+                    <div className="brand-logo w-full h-full text-gray-600 group-hover:text-burnt-orange">
                       {getBrandLogo(brand.name)}
                     </div>
                     
                     {/* Hover tooltip */}
                     <div className="absolute top-full mt-4 left-1/2 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-all duration-300 pointer-events-none">
-                      <div className="bg-charcoal/90 backdrop-blur-sm border border-burnt-orange/30 rounded-lg px-4 py-2 text-center whitespace-nowrap">
+                      <div className="bg-white/90 backdrop-blur-sm border border-burnt-orange/30 rounded-lg px-4 py-2 text-center whitespace-nowrap shadow-lg">
                         <div className="text-burnt-orange font-bold text-sm">{brand.name}</div>
-                        <div className="text-gray-300 text-xs mt-1">{brand.specialization}</div>
+                        <div className="text-gray-700 text-xs mt-1">{brand.specialization}</div>
                       </div>
                     </div>
                   </div>
@@ -307,10 +294,10 @@ export const BrandsWeServe = () => {
           
           {/* Bottom CTA */}
           <div className="text-center mt-16">
-            <p className="text-gray-400 mb-6">
+            <p className="text-gray-600 mb-6">
               Experience precision service for your luxury vehicle
             </p>
-            <button className="bg-burnt-orange hover:bg-burnt-orange/90 text-black font-bold text-lg px-12 py-4 transition-all duration-300 transform hover:scale-105 hover:shadow-xl hover:shadow-burnt-orange/40">
+            <button className="bg-burnt-orange hover:bg-burnt-orange/90 text-white font-bold text-lg px-12 py-4 transition-all duration-300 transform hover:scale-105 hover:shadow-xl hover:shadow-burnt-orange/40">
               Schedule Service
             </button>
           </div>
