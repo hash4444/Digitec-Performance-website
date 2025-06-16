@@ -1,21 +1,20 @@
-
 import React from 'react';
 
 export const WhyChooseUs = () => {
   const reasons = [
     {
-      number: '15+',
+      number: '40+',
       title: 'Years of Excellence',
       description: 'Proven track record in luxury automotive performance'
     },
     {
-      number: '500+',
-      title: 'Elite Vehicles Transformed',
+      number: '22,000+',
+      title: 'Cars Served',
       description: 'Successfully enhanced performance for discerning clients'
     },
     {
-      number: '100%',
-      title: 'Client Satisfaction',
+      number: '3,000+',
+      title: 'Satisfied Clients',
       description: 'Unwavering commitment to exceeding expectations'
     },
     {

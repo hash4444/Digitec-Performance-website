@@ -1,3 +1,4 @@
+
 import React, { useEffect, useRef, useState } from 'react';
 
 export const BrandsWeServe = () => {
@@ -30,7 +31,7 @@ export const BrandsWeServe = () => {
         const centerY = rect.height / 2;
         const x = (e.clientX - rect.left - centerX) / centerX;
         const y = (e.clientY - rect.top - centerY) / centerY;
-        setMousePos({ x: x * 20, y: y * 20 });
+        setMousePos({ x: x * 15, y: y * 15 });
       }
     };
 
@@ -65,8 +66,8 @@ export const BrandsWeServe = () => {
   const getOrbitalPosition = (index: number, total: number) => {
     const angle = (index / total) * 2 * Math.PI;
     const isMobile = window.innerWidth < 768;
-    const radiusX = isMobile ? 120 : 280; // Smaller orbit on mobile
-    const radiusY = isMobile ? 80 : 200;
+    const radiusX = isMobile ? 130 : 300; 
+    const radiusY = isMobile ? 90 : 220;
     
     return {
       x: Math.cos(angle) * radiusX,
@@ -172,7 +173,7 @@ export const BrandsWeServe = () => {
     };
 
     return logoMap[brandName] || (
-      <div className="w-full h-full rounded-3xl bg-gradient-to-br from-burnt-orange/20 to-chocolate/20 flex items-center justify-center">
+      <div className="w-full h-full flex items-center justify-center">
         <span className="text-2xl font-black text-burnt-orange">
           {brandName.charAt(0)}
         </span>
@@ -205,22 +206,17 @@ export const BrandsWeServe = () => {
         
         .brand-logo {
           transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
-          border-radius: 16px;
-          box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-          border: 1px solid rgba(0, 0, 0, 0.05);
         }
         
         .brand-logo:hover {
-          transform: scale(1.15);
-          box-shadow: 0 8px 32px rgba(255, 107, 53, 0.15);
-          border-radius: 20px;
-          border: 1px solid rgba(255, 107, 53, 0.2);
+          transform: scale(1.2);
+          filter: drop-shadow(0 8px 24px rgba(255, 107, 53, 0.3));
         }
         
         @media (max-width: 768px) {
           .brand-logo:active {
-            transform: scale(1.1);
-            box-shadow: 0 6px 24px rgba(255, 107, 53, 0.2);
+            transform: scale(1.15);
+            filter: drop-shadow(0 6px 20px rgba(255, 107, 53, 0.4));
           }
         }
         
@@ -301,8 +297,8 @@ export const BrandsWeServe = () => {
                       transform: `translate(calc(-50% + ${position.x}px), calc(-50% + ${position.y}px))`
                     }}
                   >
-                    {/* Brand logo */}
-                    <div className="brand-logo w-full h-full bg-white/90 backdrop-blur-sm p-2 sm:p-3 shadow-lg">
+                    {/* Brand logo - no background container */}
+                    <div className="brand-logo w-full h-full p-1 sm:p-2">
                       {getBrandLogo(brand.name)}
                     </div>
                     
