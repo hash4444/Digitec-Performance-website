@@ -1,7 +1,6 @@
 
 import React from 'react';
 import { Wrench, Settings, Battery, Car, Gauge, Bolt, PaintRoller, Shield } from 'lucide-react';
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
 
 export const ServiceGrid = () => {
   const serviceCategories = [
@@ -144,7 +143,7 @@ export const ServiceGrid = () => {
             Premium care for every system, every detail, every ride.
           </p>
           <p className="text-burnt-orange font-semibold text-base sm:text-lg">
-            ← Swipe to Explore All Services →
+            ← Scroll to Explore All Services →
           </p>
         </div>
         
@@ -160,70 +159,65 @@ export const ServiceGrid = () => {
                 </h3>
               </div>
               
-              {/* Horizontal Scroll Carousel */}
-              <div className="relative">
-                <Carousel 
-                  className="w-full"
-                  opts={{
-                    align: "start",
-                    loop: false,
-                    dragFree: true,
-                    containScroll: "trimSnaps",
-                  }}
-                >
-                  <CarouselContent className="-ml-2 md:-ml-4">
-                    {category.services.map((service, index) => (
-                      <CarouselItem key={service.title} className="pl-2 md:pl-4 basis-[85%] xs:basis-4/5 sm:basis-3/5 md:basis-2/5 lg:basis-1/3 xl:basis-1/4">
-                        <div className="group cursor-pointer h-full">
-                          <div className="bg-gradient-to-br from-charcoal/90 to-charcoal/60 backdrop-blur-sm border border-gray-800/50 rounded-3xl p-6 lg:p-8 shadow-2xl transition-all duration-500 hover:shadow-burnt-orange/20 hover:border-burnt-orange/50 hover:scale-[1.02] hover:-translate-y-1 h-full flex flex-col min-h-[400px]">
-                            
-                            {/* Service Image */}
-                            <div className="mb-6 overflow-hidden rounded-2xl bg-gradient-to-br from-gray-900 to-gray-800 aspect-[4/3]">
-                              <img 
-                                src={service.image} 
-                                alt={service.title}
-                                className="w-full h-full object-cover group-hover:scale-110 group-hover:brightness-110 transition-all duration-500"
-                                onError={(e) => {
-                                  e.currentTarget.src = 'https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=400&h=300&fit=crop';
-                                }}
-                              />
-                              <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl"></div>
+              {/* Native Horizontal Scroll Container */}
+              <div 
+                className="overflow-x-auto pb-4 scrollbar-hide"
+                style={{
+                  WebkitOverflowScrolling: 'touch',
+                  scrollSnapType: 'x proximity',
+                  touchAction: 'pan-x',
+                }}
+              >
+                <div className="flex gap-4 md:gap-6 pl-4 pr-4 min-w-max">
+                  {category.services.map((service, index) => (
+                    <div 
+                      key={service.title} 
+                      className="group cursor-pointer flex-none w-80 sm:w-96"
+                      style={{ scrollSnapAlign: 'start' }}
+                    >
+                      <div className="bg-gradient-to-br from-charcoal/90 to-charcoal/60 backdrop-blur-sm border border-gray-800/50 rounded-3xl p-6 lg:p-8 shadow-2xl transition-all duration-500 hover:shadow-burnt-orange/20 hover:border-burnt-orange/50 hover:scale-[1.02] hover:-translate-y-1 h-full flex flex-col min-h-[400px]">
+                        
+                        {/* Service Image */}
+                        <div className="mb-6 overflow-hidden rounded-2xl bg-gradient-to-br from-gray-900 to-gray-800 aspect-[4/3]">
+                          <img 
+                            src={service.image} 
+                            alt={service.title}
+                            className="w-full h-full object-cover group-hover:scale-110 group-hover:brightness-110 transition-all duration-500"
+                            onError={(e) => {
+                              e.currentTarget.src = 'https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=400&h=300&fit=crop';
+                            }}
+                          />
+                          <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl"></div>
+                        </div>
+                        
+                        {/* Service Content */}
+                        <div className="flex-1 flex flex-col">
+                          <div className="flex items-start gap-4 mb-4">
+                            <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-burnt-orange/20 to-burnt-orange/5 flex items-center justify-center text-burnt-orange group-hover:text-burnt-orange group-hover:shadow-lg group-hover:shadow-burnt-orange/30 transition-all duration-300">
+                              {service.icon}
                             </div>
-                            
-                            {/* Service Content */}
-                            <div className="flex-1 flex flex-col">
-                              <div className="flex items-start gap-4 mb-4">
-                                <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-burnt-orange/20 to-burnt-orange/5 flex items-center justify-center text-burnt-orange group-hover:text-burnt-orange group-hover:shadow-lg group-hover:shadow-burnt-orange/30 transition-all duration-300">
-                                  {service.icon}
-                                </div>
-                                <div className="flex-1">
-                                  <h4 className="text-xl lg:text-2xl font-bold mb-3 group-hover:text-burnt-orange transition-colors duration-300 leading-tight">
-                                    {service.title}
-                                  </h4>
-                                </div>
-                              </div>
-                              
-                              <p className="text-gray-300 leading-relaxed text-sm lg:text-base mb-6 flex-1">
-                                {service.description}
-                              </p>
-                              
-                              {/* CTA Button */}
-                              <div className="pt-4 border-t border-gray-700/50 mt-auto">
-                                <button className="w-full bg-gradient-to-r from-burnt-orange to-burnt-orange/80 hover:from-burnt-orange/90 hover:to-burnt-orange text-black font-bold text-sm lg:text-base px-6 py-3 rounded-2xl transition-all duration-300 transform group-hover:scale-105 group-hover:shadow-lg group-hover:shadow-burnt-orange/30">
-                                  Learn More
-                                </button>
-                              </div>
+                            <div className="flex-1">
+                              <h4 className="text-xl lg:text-2xl font-bold mb-3 group-hover:text-burnt-orange transition-colors duration-300 leading-tight">
+                                {service.title}
+                              </h4>
                             </div>
                           </div>
+                          
+                          <p className="text-gray-300 leading-relaxed text-sm lg:text-base mb-6 flex-1">
+                            {service.description}
+                          </p>
+                          
+                          {/* CTA Button */}
+                          <div className="pt-4 border-t border-gray-700/50 mt-auto">
+                            <button className="w-full bg-gradient-to-r from-burnt-orange to-burnt-orange/80 hover:from-burnt-orange/90 hover:to-burnt-orange text-black font-bold text-sm lg:text-base px-6 py-3 rounded-2xl transition-all duration-300 transform group-hover:scale-105 group-hover:shadow-lg group-hover:shadow-burnt-orange/30">
+                              Learn More
+                            </button>
+                          </div>
                         </div>
-                      </CarouselItem>
-                    ))}
-                  </CarouselContent>
-                  
-                  {/* Navigation Arrows - Hidden on Mobile */}
-                  <CarouselPrevious className="hidden lg:flex -left-6 bg-charcoal/80 border-gray-700 hover:bg-burnt-orange hover:border-burnt-orange text-white hover:text-black transition-all duration-300" />
-                  <CarouselNext className="hidden lg:flex -right-6 bg-charcoal/80 border-gray-700 hover:bg-burnt-orange hover:border-burnt-orange text-white hover:text-black transition-all duration-300" />
-                </Carousel>
+                      </div>
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
           ))}
@@ -235,6 +229,17 @@ export const ServiceGrid = () => {
           </button>
         </div>
       </div>
+      
+      {/* Custom scrollbar styles */}
+      <style jsx>{`
+        .scrollbar-hide {
+          -ms-overflow-style: none;
+          scrollbar-width: none;
+        }
+        .scrollbar-hide::-webkit-scrollbar {
+          display: none;
+        }
+      `}</style>
     </section>
   );
 };
