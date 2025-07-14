@@ -130,7 +130,7 @@ const Header = () => {
       {/* Spacer to prevent content from hiding behind fixed header */}
       <div className="h-16 md:h-20" />
 
-      <style jsx>{`
+      <style>{`
         @keyframes slideInFromRight {
           from {
             opacity: 0;

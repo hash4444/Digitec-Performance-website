@@ -8,7 +8,7 @@ import { ServiceGrid } from '@/components/ServiceGrid';
 import { AppFeatures } from '@/components/AppFeatures';
 import { WhyChooseUs } from '@/components/WhyChooseUs';
 import { Reviews } from '@/components/Reviews';
-import { PerformanceResults } from '@/components/PerformanceResults';
+
 import { FAQ } from '@/components/FAQ';
 import { FinalCTA } from '@/components/FinalCTA';
 import { Footer } from '@/components/Footer';
@@ -31,7 +31,6 @@ const Index = () => {
         <WhyChooseUs />
       </div>
       <Reviews />
-      <PerformanceResults />
       <div id="faq">
         <FAQ />
       </div>
