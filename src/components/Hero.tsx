@@ -35,7 +35,7 @@ export const Hero = () => {
           
           <Button 
             variant="outline" 
-            className="w-full sm:w-auto border-2 border-off-white text-off-white hover:bg-off-white hover:text-black font-bold text-base sm:text-lg px-8 sm:px-12 py-4 sm:py-6 rounded-2xl transition-all duration-300 shadow-lg hover:shadow-xl"
+            className="w-full sm:w-auto border-2 border-off-white bg-off-white text-black hover:bg-white font-bold text-base sm:text-lg px-8 sm:px-12 py-4 sm:py-6 rounded-2xl transition-all duration-300 shadow-lg hover:shadow-xl"
           >
             Get a Free Diagnosis
           </Button>
