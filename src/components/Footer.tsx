@@ -45,7 +45,7 @@ export const Footer = () => {
               </div>
               <div>
                 <div className="font-semibold text-off-white text-sm sm:text-base">Address</div>
-                <div className="text-sm sm:text-base">Al Quoz Industrial Area<br />Dubai, UAE</div>
+                <div className="text-sm sm:text-base">Al Quoz Industrial Area 3<br />Warehouse No.11-15</div>
               </div>
             </div>
           </div>
