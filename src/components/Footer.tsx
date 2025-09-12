@@ -37,7 +37,7 @@ export const Footer = () => {
             <div className="space-y-3 sm:space-y-4 text-gray-300">
               <div>
                 <div className="font-semibold text-off-white text-sm sm:text-base">Phone</div>
-                <div className="text-sm sm:text-base">+971 4 XXX XXXX</div>
+                <div className="text-sm sm:text-base">+971 4 340 2223</div>
               </div>
               <div>
                 <div className="font-semibold text-off-white text-sm sm:text-base">Email</div>
