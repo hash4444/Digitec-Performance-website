@@ -5,7 +5,7 @@ import { Hero } from '@/components/Hero';
 import { WhatWeDo } from '@/components/WhatWeDo';
 import { BrandsWeServe } from '@/components/BrandsWeServe';
 import { ServiceGrid } from '@/components/ServiceGrid';
-import { AppFeatures } from '@/components/AppFeatures';
+
 import { WhyChooseUs } from '@/components/WhyChooseUs';
 import { Reviews } from '@/components/Reviews';
 
