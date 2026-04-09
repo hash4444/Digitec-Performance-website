@@ -26,7 +26,7 @@ const Index = () => {
       <div id="services">
         <ServiceGrid />
       </div>
-      <AppFeatures />
+      
       <div id="about">
         <WhyChooseUs />
       </div>
