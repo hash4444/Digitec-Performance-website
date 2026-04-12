@@ -18,9 +18,7 @@ const services = [
       'Custom precision-cut for every panel',
     ],
     packages: [
-      { name: 'Front Shield', coverage: 'Hood, fenders, bumper, mirrors', popular: false },
-      { name: 'Track Pack', coverage: 'Full front + rocker panels, A-pillars', popular: true },
-      { name: 'Full Body', coverage: 'Complete vehicle wrap — total protection', popular: false },
+      { name: 'Full Body', coverage: 'Complete vehicle wrap — total protection', popular: true },
     ],
   },
   {
