@@ -26,6 +26,7 @@ const Index = () => {
       <div id="services">
         <ServiceGrid />
       </div>
+      <PPFCeramicSection />
       
       <div id="about">
         <WhyChooseUs />
