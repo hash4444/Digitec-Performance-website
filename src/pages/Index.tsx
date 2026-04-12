@@ -5,7 +5,7 @@ import { Hero } from '@/components/Hero';
 import { WhatWeDo } from '@/components/WhatWeDo';
 import { BrandsWeServe } from '@/components/BrandsWeServe';
 import { ServiceGrid } from '@/components/ServiceGrid';
-
+import { PPFCeramicSection } from '@/components/PPFCeramicSection';
 import { WhyChooseUs } from '@/components/WhyChooseUs';
 import { Reviews } from '@/components/Reviews';
 
@@ -26,6 +26,7 @@ const Index = () => {
       <div id="services">
         <ServiceGrid />
       </div>
+      <PPFCeramicSection />
       
       <div id="about">
         <WhyChooseUs />
