@@ -8,7 +8,7 @@ export const WhyChooseUs = () => {
       description: 'Proven track record in luxury automotive performance'
     },
     {
-      number: '22,000+',
+      number: '30,000+',
       title: 'Cars Served',
       description: 'Successfully enhanced performance for discerning clients'
     },
