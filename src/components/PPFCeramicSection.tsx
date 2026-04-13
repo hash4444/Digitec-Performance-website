@@ -9,8 +9,8 @@ const services = [
     id: 'ppf',
     label: 'Paint Protection Film',
     icon: <Shield className="w-6 h-6" />,
-    headline: 'Invisible Armor for Your Investment',
-    description: 'Military-grade thermoplastic urethane film that shields your paint from rock chips, scratches, and UV damage — while maintaining a flawless factory finish.',
+    headline: 'The Last Layer Your Paint Will Ever Need.',
+    description: 'Ultra-premium protection film, invisibly applied. Rock chips, road debris, UV damage — absorbed silently, leaving your finish exactly as it left the factory.',
     image: ppfImage,
     features: [
       'Self-healing technology — minor scratches vanish with heat',
