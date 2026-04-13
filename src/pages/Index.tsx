@@ -12,7 +12,7 @@ import { Reviews } from '@/components/Reviews';
 import { FAQ } from '@/components/FAQ';
 import { FinalCTA } from '@/components/FinalCTA';
 import { Footer } from '@/components/Footer';
-import { ChatBot } from '@/components/ChatBot/ChatBot';
+
 
 const Index = () => {
   return (
