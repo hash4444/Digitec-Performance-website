@@ -4,6 +4,8 @@ import { Wrench, Settings, Battery, Car, Gauge, Bolt, PaintRoller, Shield } from
 import { ServiceDetailDialog } from './ServiceDetailDialog';
 
 export const ServiceGrid = () => {
+  const [selectedService, setSelectedService] = useState<{title: string; description: string; image: string} | null>(null);
+
   const serviceCategories = [
     {
       title: "Core Mechanical Services",
