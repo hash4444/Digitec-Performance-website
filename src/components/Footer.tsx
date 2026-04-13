@@ -5,9 +5,9 @@ export const Footer = () => {
   return (
     <footer className="bg-black border-t border-gray-800/50 py-12 sm:py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-12 mb-8 sm:mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-12 mb-8 sm:mb-12">
           {/* Brand */}
-          <div className="lg:col-span-2">
+          <div>
             <h3 className="text-2xl sm:text-3xl font-black mb-4 sm:mb-6">
               <span className="text-burnt-orange">D</span>IGI-TEC Performance Center
             </h3>
@@ -49,25 +49,12 @@ export const Footer = () => {
               </div>
             </div>
           </div>
-          
-          {/* Quick Links */}
-          <div className="bg-gradient-to-br from-charcoal/30 to-black/20 backdrop-blur-sm rounded-2xl sm:rounded-3xl p-6 sm:p-8 shadow-xl">
-            <h4 className="text-lg sm:text-xl font-bold mb-4 sm:mb-6 text-burnt-orange">Quick Links</h4>
-            <div className="space-y-2 sm:space-y-3">
-              <div><a href="#" className="text-gray-300 hover:text-burnt-orange transition-colors duration-300 block py-1 px-2 sm:px-3 rounded-xl hover:bg-burnt-orange/10 text-sm sm:text-base">Services</a></div>
-              <div><a href="#" className="text-gray-300 hover:text-burnt-orange transition-colors duration-300 block py-1 px-2 sm:px-3 rounded-xl hover:bg-burnt-orange/10 text-sm sm:text-base">Brands</a></div>
-              <div><a href="#" className="text-gray-300 hover:text-burnt-orange transition-colors duration-300 block py-1 px-2 sm:px-3 rounded-xl hover:bg-burnt-orange/10 text-sm sm:text-base">Gallery</a></div>
-              <div><a href="#" className="text-gray-300 hover:text-burnt-orange transition-colors duration-300 block py-1 px-2 sm:px-3 rounded-xl hover:bg-burnt-orange/10 text-sm sm:text-base">Reviews</a></div>
-              <div><a href="#" className="text-gray-300 hover:text-burnt-orange transition-colors duration-300 block py-1 px-2 sm:px-3 rounded-xl hover:bg-burnt-orange/10 text-sm sm:text-base">Contact</a></div>
-              <div><a href={`https://wa.me/97143402223?text=${encodeURIComponent("Hi, I'd like to book an appointment.")}`} target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-burnt-orange transition-colors duration-300 block py-1 px-2 sm:px-3 rounded-xl hover:bg-burnt-orange/10 text-sm sm:text-base">Book Appointment</a></div>
-            </div>
-          </div>
         </div>
         
         {/* Bottom Bar */}
         <div className="border-t border-gray-800/50 pt-6 sm:pt-8 flex flex-col md:flex-row justify-between items-center">
           <div className="text-gray-400 text-sm mb-4 md:mb-0 text-center md:text-left">
-            © 2024 <span className="text-burnt-orange">D</span>IGI-TEC Performance Center. All rights reserved.
+            © 2026 <span className="text-burnt-orange">D</span>IGI-TEC Performance Center. All rights reserved.
           </div>
           <div className="flex flex-wrap justify-center md:justify-end space-x-4 sm:space-x-6 text-sm">
             <a href="#" className="text-gray-400 hover:text-burnt-orange transition-colors duration-300 py-2 px-2 sm:px-4 rounded-xl hover:bg-burnt-orange/10">Privacy Policy</a>
