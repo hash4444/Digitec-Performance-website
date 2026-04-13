@@ -1,6 +1,7 @@
 
 import React, { useState } from 'react';
 import { Shield, Droplets, Check, ArrowRight, Sparkles } from 'lucide-react';
+import ppfImage from '@/assets/ppf-application.png';
 
 const services = [
   {
