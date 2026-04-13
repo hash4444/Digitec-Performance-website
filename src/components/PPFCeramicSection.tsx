@@ -10,7 +10,7 @@ const services = [
     icon: <Shield className="w-6 h-6" />,
     headline: 'Invisible Armor for Your Investment',
     description: 'Military-grade thermoplastic urethane film that shields your paint from rock chips, scratches, and UV damage — while maintaining a flawless factory finish.',
-    image: 'https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?w=800&h=600&fit=crop',
+    image: ppfImage,
     features: [
       'Self-healing technology — minor scratches vanish with heat',
       '10-year manufacturer warranty',
