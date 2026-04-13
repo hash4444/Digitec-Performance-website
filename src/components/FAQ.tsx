@@ -88,13 +88,19 @@ export const FAQ = () => {
             Still have questions?
           </h3>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button 
-              size="lg" 
-              className="bg-burnt-orange hover:bg-burnt-orange/90 text-white px-8 py-3 rounded-xl font-semibold text-lg transition-all duration-300 hover:transform hover:scale-105 shadow-lg"
+            <a 
+              href="https://wa.me/97143402223?text=Hi%2C%20I%20have%20a%20question%20about%20your%20services."
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              <MessageCircle className="w-5 h-5 mr-2" />
-              Chat with us now
-            </Button>
+              <Button 
+                size="lg" 
+                className="bg-burnt-orange hover:bg-burnt-orange/90 text-white px-8 py-3 rounded-xl font-semibold text-lg transition-all duration-300 hover:transform hover:scale-105 shadow-lg"
+              >
+                <MessageCircle className="w-5 h-5 mr-2" />
+                Chat with us now
+              </Button>
+            </a>
           </div>
         </div>
       </div>
