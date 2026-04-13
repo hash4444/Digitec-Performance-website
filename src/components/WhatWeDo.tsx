@@ -35,8 +35,8 @@ export const WhatWeDo = () => {
           <div className="text-center group">
             <div className="mb-6 sm:mb-8 overflow-hidden rounded-2xl sm:rounded-3xl shadow-2xl group-hover:shadow-burnt-orange/20 transition-all duration-500">
               <img 
-                src="/lovable-uploads/23c141a0-8b10-4263-a16b-a1c71773f3e5.png" 
-                alt="Aesthetic Enhancement - Professional Car Detailing"
+                src="/lovable-uploads/brabus-g-class.png" 
+                alt="Aesthetic Enhancement - Brabus G-Class"
                 className="w-full h-48 sm:h-56 lg:h-64 object-cover group-hover:scale-105 transition-transform duration-500"
               />
             </div>
