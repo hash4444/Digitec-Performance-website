@@ -240,7 +240,9 @@ export const ServiceGrid = () => {
                             
                             {/* CTA Button */}
                             <div className="pt-4 border-t border-gray-700/50 mt-auto">
-                              <button className="w-full bg-gradient-to-r from-burnt-orange to-burnt-orange/80 hover:from-burnt-orange/90 hover:to-burnt-orange text-black font-bold text-sm lg:text-base px-6 py-3 rounded-2xl transition-all duration-300 transform group-hover:scale-105 group-hover:shadow-lg group-hover:shadow-burnt-orange/30">
+                              <button 
+                                onClick={() => setSelectedService(service)}
+                                className="w-full bg-gradient-to-r from-burnt-orange to-burnt-orange/80 hover:from-burnt-orange/90 hover:to-burnt-orange text-black font-bold text-sm lg:text-base px-6 py-3 rounded-2xl transition-all duration-300 transform group-hover:scale-105 group-hover:shadow-lg group-hover:shadow-burnt-orange/30">
                                 Learn More
                               </button>
                             </div>
