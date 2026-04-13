@@ -131,7 +131,9 @@ export const PPFCeramicSection = () => {
             </ul>
 
             <a
-              href="#contact"
+              href={`https://wa.me/97143402223?text=${encodeURIComponent(`Hi, I'm interested in your ${active.label} service. Can I get a free quote?`)}`}
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-burnt-orange hover:bg-burnt-orange/90 text-black font-bold text-sm sm:text-base px-8 py-4 rounded-2xl transition-all duration-300 hover:scale-105 shadow-xl shadow-burnt-orange/20 hover:shadow-burnt-orange/40"
             >
               Get a Free Quote
@@ -140,39 +142,6 @@ export const PPFCeramicSection = () => {
           </div>
         </div>
 
-        {/* Packages */}
-        <div>
-          <h4 className="text-center text-xl sm:text-2xl font-bold text-off-white mb-8 sm:mb-10">
-            Choose Your Level of Protection
-          </h4>
-          <div className="grid sm:grid-cols-3 gap-5 sm:gap-6 max-w-4xl mx-auto">
-            {active.packages.map((pkg) => (
-              <div
-                key={pkg.name}
-                className={`relative group rounded-[1.5rem] p-6 sm:p-8 transition-all duration-300 hover:-translate-y-1 ${
-                  pkg.popular
-                    ? 'bg-gradient-to-b from-burnt-orange/15 to-charcoal/60 border-2 border-burnt-orange/50 shadow-xl shadow-burnt-orange/10'
-                    : 'bg-charcoal/40 border border-gray-800/50 hover:border-gray-700'
-                }`}
-              >
-                {pkg.popular && (
-                  <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-burnt-orange text-black text-xs font-bold px-4 py-1 rounded-full tracking-wide uppercase">
-                    Most Popular
-                  </span>
-                )}
-                <h5 className="text-lg sm:text-xl font-bold text-off-white mb-2">{pkg.name}</h5>
-                <p className="text-gray-400 text-sm leading-relaxed mb-6">{pkg.coverage}</p>
-                <button className={`w-full py-3 rounded-xl font-semibold text-sm transition-all duration-300 ${
-                  pkg.popular
-                    ? 'bg-burnt-orange text-black hover:bg-burnt-orange/90'
-                    : 'bg-gray-800 text-off-white hover:bg-gray-700'
-                }`}>
-                  Request Pricing
-                </button>
-              </div>
-            ))}
-          </div>
-        </div>
       </div>
     </section>
   );
