@@ -76,16 +76,6 @@ export const ServiceDetailDialog: React.FC<ServiceDetailDialogProps> = ({
             <p className="text-gray-300 leading-relaxed">{details}</p>
           </div>
 
-          <div className="pt-4 border-t border-gray-700/50">
-            <a
-              href="https://wa.me/971581206882"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-full inline-flex items-center justify-center bg-gradient-to-r from-burnt-orange to-burnt-orange/80 hover:from-burnt-orange/90 hover:to-burnt-orange text-black font-bold text-base px-6 py-3 rounded-2xl transition-all duration-300 transform hover:scale-105"
-            >
-              Book This Service
-            </a>
-          </div>
         </div>
       </DialogContent>
     </Dialog>
