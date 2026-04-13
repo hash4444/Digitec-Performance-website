@@ -59,7 +59,7 @@ export const Footer = () => {
               <div><a href="#" className="text-gray-300 hover:text-burnt-orange transition-colors duration-300 block py-1 px-2 sm:px-3 rounded-xl hover:bg-burnt-orange/10 text-sm sm:text-base">Gallery</a></div>
               <div><a href="#" className="text-gray-300 hover:text-burnt-orange transition-colors duration-300 block py-1 px-2 sm:px-3 rounded-xl hover:bg-burnt-orange/10 text-sm sm:text-base">Reviews</a></div>
               <div><a href="#" className="text-gray-300 hover:text-burnt-orange transition-colors duration-300 block py-1 px-2 sm:px-3 rounded-xl hover:bg-burnt-orange/10 text-sm sm:text-base">Contact</a></div>
-              <div><a href="#" className="text-gray-300 hover:text-burnt-orange transition-colors duration-300 block py-1 px-2 sm:px-3 rounded-xl hover:bg-burnt-orange/10 text-sm sm:text-base">Book Appointment</a></div>
+              <div><a href={`https://wa.me/97143402223?text=${encodeURIComponent("Hi, I'd like to book an appointment.")}`} target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-burnt-orange transition-colors duration-300 block py-1 px-2 sm:px-3 rounded-xl hover:bg-burnt-orange/10 text-sm sm:text-base">Book Appointment</a></div>
             </div>
           </div>
         </div>
