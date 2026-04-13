@@ -32,19 +32,15 @@ export const FAQ = () => {
     },
     {
       question: "What makes DIGI-TEC different from regular garages?",
-      answer: "We don't just fix; we engineer. With 40+ years of expertise, a luxury vehicle focus, and our DIGI-TEC App, we provide unmatched transparency, real-time updates, and performance-tuned service."
+      answer: "We don't just fix; we engineer. With 40+ years of expertise and a luxury vehicle focus, we provide unmatched transparency, real-time updates, and performance-tuned service."
     },
     {
       question: "Do you serve clients outside of Dubai?",
       answer: "Yes. Many of our clients come from Sharjah, Abu Dhabi, and even Al Ain. If you drive something special, it's worth the trip, and we'll make it worth your time."
     },
     {
-      question: "What can I do with the DIGI-TEC App?",
-      answer: "Book services, track real-time vehicle status, view service history, and earn loyalty points, all from your phone. The app is your digital dashboard for luxury service."
-    },
-    {
       question: "How does your loyalty program work?",
-      answer: "Every service you book through our app earns loyalty points, which you can redeem for discounts, performance upgrades, or exclusive offers. Think of it as miles, for your car."
+      answer: "Every service you book earns loyalty points, which you can redeem for discounts, performance upgrades, or exclusive offers. Think of it as miles, for your car."
     }
   ];
 
