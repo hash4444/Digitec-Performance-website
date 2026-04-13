@@ -37,7 +37,7 @@ const Index = () => {
       </div>
       <FinalCTA />
       <Footer />
-      <ChatBot />
+      
     </div>
   );
 };
