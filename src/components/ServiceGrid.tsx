@@ -120,7 +120,7 @@ export const ServiceGrid = () => {
           title: 'Car Body Repair',
           description: 'Precision repair for dents, cracks, scrapes, and frame issues.',
           icon: <Wrench className="w-4 h-4 sm:w-5 sm:h-5" />,
-          image: '/lovable-uploads/car-body-repair-new.png'
+          image: '/lovable-uploads/car-body-repair-v2.png'
         },
         {
           title: 'Car Paint & Protection',
