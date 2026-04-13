@@ -1,6 +1,7 @@
 
-import React from 'react';
+import React, { useState } from 'react';
 import { Wrench, Settings, Battery, Car, Gauge, Bolt, PaintRoller, Shield } from 'lucide-react';
+import { ServiceDetailDialog } from './ServiceDetailDialog';
 
 export const ServiceGrid = () => {
   const serviceCategories = [
