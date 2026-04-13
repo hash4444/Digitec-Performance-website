@@ -16,7 +16,7 @@ export const ServiceGrid = () => {
         },
         {
           title: 'Mechanical Repair',
-          description: 'Precision work on all internal systems — from belts to blocks.',
+          description: 'Precision work on all internal systems, from belts to blocks.',
           icon: <Settings className="w-4 h-4 sm:w-5 sm:h-5" />,
           image: 'https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=400&h=300&fit=crop'
         },
@@ -28,7 +28,7 @@ export const ServiceGrid = () => {
         },
         {
           title: 'Suspension Repair',
-          description: 'Smooth, responsive ride quality — tuned for control and comfort.',
+          description: 'Smooth, responsive ride quality, tuned for control and comfort.',
           icon: <Settings className="w-4 h-4 sm:w-5 sm:h-5" />,
           image: '/lovable-uploads/0f7fde8d-a57b-45bc-bb10-c80f98525682.png'
         },
