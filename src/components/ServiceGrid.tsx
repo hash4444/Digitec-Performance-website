@@ -141,7 +141,7 @@ export const ServiceGrid = () => {
         .horizontal-scroll-container {
           -webkit-overflow-scrolling: touch;
           scroll-behavior: smooth;
-          touch-action: pan-x;
+          touch-action: pan-x pan-y;
           scroll-snap-type: x proximity;
           scrollbar-width: thin;
           scrollbar-color: #ff6b35 #0a0a0a;
