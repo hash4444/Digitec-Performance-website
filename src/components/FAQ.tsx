@@ -8,15 +8,15 @@ export const FAQ = () => {
   const faqs = [
     {
       question: "How often should I service my luxury vehicle in Dubai?",
-      answer: "In Dubai's extreme climate, we recommend servicing your Mercedes or performance vehicle every 10,000–12,000 km or 6–9 months, depending on usage. High-performance cars demand proactive care to retain efficiency, safety, and value."
+      answer: "In Dubai's extreme climate, we recommend servicing your Mercedes or performance vehicle every 10,000 to 12,000 km or 6 to 9 months, depending on usage. High-performance cars demand proactive care to retain efficiency, safety, and value."
     },
     {
       question: "What are signs my vehicle needs immediate attention?",
-      answer: "Warning lights, rough idling, overheating, shifting delays, or reduced fuel efficiency are all red flags. At DIGI-TEC, we use advanced diagnostics to pinpoint issues early — before they become costly."
+      answer: "Warning lights, rough idling, overheating, shifting delays, or reduced fuel efficiency are all red flags. At DIGI-TEC, we use advanced diagnostics to pinpoint issues early, before they become costly."
     },
     {
       question: "Do you offer ECU tuning and power upgrades?",
-      answer: "Yes. We specialize in ECU remapping, turbo tuning, and exhaust upgrades to unlock your vehicle's hidden performance. Whether it's more torque or refined throttle response — we tune it like a precision machine."
+      answer: "Yes. We specialize in ECU remapping, turbo tuning, and exhaust upgrades to unlock your vehicle's hidden performance. Whether it's more torque or refined throttle response, we tune it like a precision machine."
     },
     {
       question: "Can you repair hybrid and electric luxury cars?",
@@ -24,7 +24,7 @@ export const FAQ = () => {
     },
     {
       question: "Where are you located in Dubai?",
-      answer: "We're based in Al Quoz Industrial Area 3 — a central hub that's easily accessible from Downtown, Business Bay, Dubai Hills, and Marina. Just 10 minutes from Sheikh Zayed Road."
+      answer: "We're based in Al Quoz Industrial Area 3, a central hub that's easily accessible from Downtown, Business Bay, Dubai Hills, and Marina. Just 10 minutes from Sheikh Zayed Road."
     },
     {
       question: "Do you offer pickup and drop-off for services?",
@@ -32,19 +32,19 @@ export const FAQ = () => {
     },
     {
       question: "What makes DIGI-TEC different from regular garages?",
-      answer: "We don't just fix — we engineer. With 40+ years of expertise, a luxury vehicle focus, and our DIGI-TEC App, we provide unmatched transparency, real-time updates, and performance-tuned service."
+      answer: "We don't just fix; we engineer. With 40+ years of expertise, a luxury vehicle focus, and our DIGI-TEC App, we provide unmatched transparency, real-time updates, and performance-tuned service."
     },
     {
       question: "Do you serve clients outside of Dubai?",
-      answer: "Yes. Many of our clients come from Sharjah, Abu Dhabi, and even Al Ain. If you drive something special, it's worth the trip — and we'll make it worth your time."
+      answer: "Yes. Many of our clients come from Sharjah, Abu Dhabi, and even Al Ain. If you drive something special, it's worth the trip, and we'll make it worth your time."
     },
     {
       question: "What can I do with the DIGI-TEC App?",
-      answer: "Book services, track real-time vehicle status, view service history, and earn loyalty points — all from your phone. The app is your digital dashboard for luxury service."
+      answer: "Book services, track real-time vehicle status, view service history, and earn loyalty points, all from your phone. The app is your digital dashboard for luxury service."
     },
     {
       question: "How does your loyalty program work?",
-      answer: "Every service you book through our app earns loyalty points, which you can redeem for discounts, performance upgrades, or exclusive offers. Think of it as miles — for your car."
+      answer: "Every service you book through our app earns loyalty points, which you can redeem for discounts, performance upgrades, or exclusive offers. Think of it as miles, for your car."
     }
   ];
 

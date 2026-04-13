@@ -23,7 +23,7 @@ export const Hero = () => {
         </h2>
         
         <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-300 mb-8 sm:mb-12 max-w-4xl mx-auto leading-relaxed px-4">
-          Digitec Performance Center is Dubai's elite automotive workshop — built for drivers who demand more. From diagnostics to full custom tuning, we bring cutting-edge service to the world's most powerful machines.
+          Digitec Performance Center is Dubai's elite automotive workshop, built for drivers who demand more. From diagnostics to full custom tuning, we bring cutting-edge service to the world's most powerful machines.
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center px-4">

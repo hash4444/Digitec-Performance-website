@@ -10,17 +10,17 @@ const services = [
     label: 'Paint Protection Film',
     icon: <Shield className="w-6 h-6" />,
     headline: 'The Last Layer Your Paint Will Ever Need.',
-    description: 'Ultra-premium protection film, invisibly applied. Rock chips, road debris, UV damage — absorbed silently, leaving your finish exactly as it left the factory.',
+    description: 'Ultra-premium protection film, invisibly applied. Rock chips, road debris, UV damage: absorbed silently, leaving your finish exactly as it left the factory.',
     image: ppfImage,
     features: [
-      'Self-healing technology — minor scratches vanish with heat',
+      'Self-healing technology: minor scratches vanish with heat',
       '10-year manufacturer warranty',
       'Hydrophobic top coat for effortless cleaning',
-      'Optically clear — zero visual distortion',
+      'Optically clear, zero visual distortion',
       'Custom precision-cut for every panel',
     ],
     packages: [
-      { name: 'Full Body', coverage: 'Complete vehicle wrap — total protection', popular: true },
+      { name: 'Full Body', coverage: 'Complete vehicle wrap. Total protection.', popular: true },
     ],
   },
   {
@@ -28,10 +28,10 @@ const services = [
     label: 'Ceramic Coating',
     icon: <Droplets className="w-6 h-6" />,
     headline: 'Permanent Gloss. Effortless Maintenance.',
-    description: 'Nano-ceramic molecular bond that fuses with your clear coat — delivering showroom depth, extreme hydrophobicity, and years of UV resistance in a single application.',
+    description: 'Nano-ceramic molecular bond that fuses with your clear coat, delivering showroom depth, extreme hydrophobicity, and years of UV resistance in a single application.',
     image: ceramicImage,
     features: [
-      '9H hardness rating — industry maximum',
+      '9H hardness rating: industry maximum',
       'Extreme water beading & self-cleaning effect',
       'UV and chemical resistance',
       'Enhanced gloss depth up to 30%',
@@ -40,7 +40,7 @@ const services = [
     packages: [
       { name: 'Essential', coverage: 'Single-layer ceramic coat + paint decon', popular: false },
       { name: 'Elite', coverage: 'Two-layer coat + wheels + trim + glass', popular: true },
-      { name: 'Ultimate', coverage: 'PPF + ceramic combo — the definitive shield', popular: false },
+      { name: 'Ultimate', coverage: 'PPF + ceramic combo: the definitive shield', popular: false },
     ],
   },
 ];
@@ -65,7 +65,7 @@ export const PPFCeramicSection = () => {
             Shield Your Vehicle.<br className="hidden sm:block" /> Elevate Its Presence.
           </h2>
           <p className="text-gray-400 text-base sm:text-lg max-w-2xl mx-auto">
-            Trusted by Dubai's most discerning car owners — from AMG to M-Power, RS to Turbo S.
+            Trusted by Dubai's most discerning car owners, from AMG to M-Power, RS to Turbo S.
           </p>
         </div>
 
