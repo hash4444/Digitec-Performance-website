@@ -45,13 +45,17 @@ const Header = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16 md:h-20">
             {/* Logo */}
-            <div className="flex-shrink-0 z-10">
+            <button
+              className="flex-shrink-0 z-10 cursor-pointer"
+              onClick={() => handleLinkClick('#home')}
+              aria-label="Go to top"
+            >
               <img 
                 src="/lovable-uploads/916789e0-b6fb-43d4-9d52-79899ce5a1c2.png" 
                 alt="DIGI-TEC Performance Center" 
                 className="h-8 md:h-12 w-auto filter brightness-110"
               />
-            </div>
+            </button>
 
             {/* Desktop Navigation */}
             <nav className="hidden md:flex items-center space-x-8">
