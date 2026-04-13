@@ -50,7 +50,6 @@ export const Footer = () => {
             </div>
           </div>
         </div>
-        </div>
         
         {/* Bottom Bar */}
         <div className="border-t border-gray-800/50 pt-6 sm:pt-8 flex flex-col md:flex-row justify-between items-center">
