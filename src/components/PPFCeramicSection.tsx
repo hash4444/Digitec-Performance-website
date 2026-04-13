@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import { Shield, Droplets, Check, ArrowRight, Sparkles } from 'lucide-react';
 import ppfImage from '@/assets/ppf-application.png';
+import ceramicImage from '@/assets/ceramic-coating.png';
 
 const services = [
   {
@@ -28,7 +29,7 @@ const services = [
     icon: <Droplets className="w-6 h-6" />,
     headline: 'Permanent Gloss. Effortless Maintenance.',
     description: 'Nano-ceramic molecular bond that fuses with your clear coat — delivering showroom depth, extreme hydrophobicity, and years of UV resistance in a single application.',
-    image: 'https://images.unsplash.com/photo-1507136566006-cfc505b114fc?w=800&h=600&fit=crop',
+    image: ceramicImage,
     features: [
       '9H hardness rating — industry maximum',
       'Extreme water beading & self-cleaning effect',
