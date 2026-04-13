@@ -263,6 +263,12 @@ export const ServiceGrid = () => {
           </div>
         </div>
       </section>
+
+      <ServiceDetailDialog
+        open={!!selectedService}
+        onOpenChange={(open) => !open && setSelectedService(null)}
+        service={selectedService}
+      />
     </>
   );
 };
