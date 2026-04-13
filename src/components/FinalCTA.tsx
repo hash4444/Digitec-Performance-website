@@ -22,18 +22,21 @@ export const FinalCTA = () => {
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center mb-12 sm:mb-16">
-          <Button 
-            className="w-full sm:w-auto bg-burnt-orange hover:bg-burnt-orange/90 text-black font-bold text-lg sm:text-xl px-12 sm:px-16 py-4 sm:py-6 rounded-2xl transition-all duration-300 transform hover:scale-105 shadow-2xl hover:shadow-burnt-orange/25"
+          <a
+            href={`https://wa.me/97143402223?text=${encodeURIComponent("Hi, I'd like to schedule a consultation at Digi-Tec Performance Center.")}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-full sm:w-auto inline-flex items-center justify-center bg-burnt-orange hover:bg-burnt-orange/90 text-black font-bold text-lg sm:text-xl px-12 sm:px-16 py-4 sm:py-6 rounded-2xl transition-all duration-300 transform hover:scale-105 shadow-2xl hover:shadow-burnt-orange/25"
           >
             Schedule Your Consultation
-          </Button>
+          </a>
           
-          <Button 
-            variant="outline" 
-            className="w-full sm:w-auto border-2 border-off-white bg-off-white text-black hover:bg-white font-bold text-lg sm:text-xl px-12 sm:px-16 py-4 sm:py-6 rounded-2xl transition-all duration-300 shadow-xl hover:shadow-2xl"
+          <a
+            href="tel:+97143402223"
+            className="w-full sm:w-auto inline-flex items-center justify-center border-2 border-off-white bg-off-white text-black hover:bg-white hover:text-black font-bold text-lg sm:text-xl px-12 sm:px-16 py-4 sm:py-6 rounded-2xl transition-all duration-300 shadow-xl hover:shadow-2xl"
           >
             Call +971 4 340 2223
-          </Button>
+          </a>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 text-center">
