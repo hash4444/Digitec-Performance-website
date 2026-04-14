@@ -11,6 +11,12 @@ const ServicePage = () => {
   const { slug } = useParams<{ slug: string }>();
   const service = slug ? getServiceBySlug(slug) : undefined;
 
+  useSeo({
+    title: service ? `${service.title} Dubai | DIGI-TEC Performance Center` : 'Service Not Found | DIGI-TEC',
+    description: service ? `${service.description} Professional ${service.title.toLowerCase()} services in Dubai. OEM parts, expert technicians at DIGI-TEC Performance Center.` : '',
+    canonical: service ? `https://digitec-performance.ae/services/${service.slug}` : undefined,
+  });
+
   if (!service) {
     return (
       <div className="min-h-screen bg-black text-off-white">
@@ -35,11 +41,6 @@ const ServicePage = () => {
 
   return (
     <div className="min-h-screen bg-black text-off-white">
-      <Helmet>
-        <title>{service.title} Dubai | DIGI-TEC Performance Center</title>
-        <meta name="description" content={`${service.description} Professional ${service.title.toLowerCase()} services in Dubai. OEM parts, expert technicians at DIGI-TEC Performance Center.`} />
-        <link rel="canonical" href={`https://digitec-performance.ae/services/${service.slug}`} />
-      </Helmet>
       <Header />
 
       {/* Hero */}
