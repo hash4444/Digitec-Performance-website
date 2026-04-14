@@ -278,12 +278,12 @@ export const tuningCars: TuningCar[] = [
     },
   },
 
-  // ── W222 S63 M177 ──
+  // ── W223 S63 AMG E Performance ──
   {
     id: 's63',
-    name: 'S63 AMG',
+    name: 'S63 AMG E Performance',
     brand: 'Mercedes',
-    engine: 'M177',
+    engine: 'M177 + Electric',
     image: s63Image,
     availableStages: ['stock', 'stage1', 'stage2', 'stage3', 'stage4', 'vip'],
     stages: {
