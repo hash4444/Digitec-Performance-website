@@ -9,6 +9,13 @@ import { ChevronRight, Check, MessageCircle, Phone } from 'lucide-react';
 
 const ServicePage = () => {
   const { slug } = useParams<{ slug: string }>();
+
+  // Redirect URLs ending in "-dubai" to the correct slug
+  if (slug && slug.endsWith('-dubai')) {
+    const correctSlug = slug.replace(/-dubai$/, '');
+    return <Navigate to={`/services/${correctSlug}`} replace />;
+  }
+
   const service = slug ? getServiceBySlug(slug) : undefined;
 
   useSeo({
