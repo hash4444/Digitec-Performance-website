@@ -1,5 +1,5 @@
 import React from 'react';
-import { useParams, Link } from 'react-router-dom';
+import { useParams, Link, Navigate } from 'react-router-dom';
 import { useSeo } from '@/hooks/use-seo';
 import Header from '@/components/Header';
 import { Footer } from '@/components/Footer';
