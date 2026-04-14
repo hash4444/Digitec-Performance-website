@@ -1,4 +1,5 @@
 import routineMaintenanceImg from '@/assets/routine-maintenance.png';
+import tireRepairImg from '@/assets/tire-repair.png';
 
 export interface ServiceData {
   slug: string;
@@ -196,7 +197,7 @@ export const services: ServiceData[] = [
     slug: 'tire-repair',
     title: 'Tire Repair',
     description: 'Balance, alignment, and performance-grade tire fitting.',
-    image: '/lovable-uploads/00377e13-62b4-4290-8054-c0aad75b9c00.png',
+    image: tireRepairImg,
     category: 'Core Mechanical Services',
     seoKeyword: 'Tire Repair Dubai',
     intro: 'Your tires are the only point of contact between your vehicle and the road. Digi-Tec Performance Center offers professional tire repair and fitting services in Dubai, ensuring optimal grip, safety, and performance. We work with premium tire brands and use precision balancing and alignment equipment for a perfect fit.',
