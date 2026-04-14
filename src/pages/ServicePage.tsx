@@ -14,7 +14,7 @@ const ServicePage = () => {
   useSeo({
     title: service ? `${service.title} Dubai | DIGI-TEC Performance Center` : 'Service Not Found | DIGI-TEC',
     description: service ? `${service.description} Professional ${service.title.toLowerCase()} services in Dubai. OEM parts, expert technicians at DIGI-TEC Performance Center.` : '',
-    canonical: service ? `https://digitec-performance.ae/services/${service.slug}` : undefined,
+    canonical: service ? `https://digitecme.com/services/${service.slug}` : undefined,
   });
 
   if (!service) {

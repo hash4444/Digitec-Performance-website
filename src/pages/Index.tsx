@@ -19,7 +19,7 @@ const Index = () => {
   useSeo({
     title: 'DIGI-TEC Performance Center – Luxury Car Repair & Tuning Dubai',
     description: "Dubai's premier luxury automotive repair and performance tuning center. Expert servicing for Mercedes, Ferrari, Porsche, Audi, Rolls Royce. OEM parts, factory-trained technicians.",
-    canonical: 'https://digitec-performance.ae/',
+    canonical: 'https://digitecme.com/',
   });
 
   return (
