@@ -1,5 +1,5 @@
 import React from 'react';
-import { useParams, Link } from 'react-router-dom';
+import { useParams, Link, Navigate } from 'react-router-dom';
 import { useSeo } from '@/hooks/use-seo';
 import Header from '@/components/Header';
 import { Footer } from '@/components/Footer';
@@ -9,13 +9,21 @@ import { ChevronRight, Check, MessageCircle, Phone } from 'lucide-react';
 
 const ServicePage = () => {
   const { slug } = useParams<{ slug: string }>();
-  const service = slug ? getServiceBySlug(slug) : undefined;
+
+  // Redirect URLs ending in "-dubai" to the correct slug
+  const isDubaiSuffix = slug?.endsWith('-dubai');
+  const effectiveSlug = isDubaiSuffix ? slug.replace(/-dubai$/, '') : slug;
+  const service = effectiveSlug ? getServiceBySlug(effectiveSlug) : undefined;
 
   useSeo({
     title: service ? `${service.seoKeyword} | DIGI-TEC Performance Center` : 'Service Not Found | DIGI-TEC',
     description: service ? `${service.intro.slice(0, 155)}…` : '',
     canonical: service ? `https://digitecme.com/services/${service.slug}` : undefined,
   });
+
+  if (isDubaiSuffix && service) {
+    return <Navigate to={`/services/${effectiveSlug}`} replace />;
+  }
 
   if (!service) {
     return (
