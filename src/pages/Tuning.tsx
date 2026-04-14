@@ -22,7 +22,7 @@ const Tuning = () => {
         <div className="absolute inset-0 bg-black/60" />
         <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-6xl font-bold mb-6 tracking-tight">
-            Mercedes <span className="text-burnt-orange">Performance Tuning</span>
+            <span className="text-red-600">GAD Motors</span> Performance Tuning
           </h1>
           <p className="text-lg md:text-xl text-off-white/80 max-w-2xl mx-auto">
             At Digi-Tec, we work in partnership with GAD Motors to provide high-performance ECU tuning solutions engineered to the highest standards. GAD Motors is known for its precision tuning and extensive testing, allowing us to offer optimized power gains, improved torque, and enhanced driving dynamics while maintaining engine reliability and safety.
