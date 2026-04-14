@@ -15,6 +15,7 @@ const SLUG_REDIRECTS: Record<string, string> = {
   'mercedes-suspension-repair-dubai': '/services/suspension-repair',
   'performance-tuning-dubai': '/tuning',
   'engine-diagnostics-dubai': '/services/car-programming-diagnostic',
+  'mercedes-oil-change-dubai': '/services/oil-change-service',
 };
 
 const ServicePage = () => {
