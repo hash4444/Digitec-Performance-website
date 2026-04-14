@@ -1,15 +1,19 @@
 
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
+import { useNavigate, useLocation } from 'react-router-dom';
 import { cn } from '@/lib/utils';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
 
-  const navigationLinks = [
+  const navigationLinks: { name: string; href: string; isPage?: boolean }[] = [
     { name: 'Home', href: '#home' },
     { name: 'Services', href: '#services' },
+    { name: 'Tuning', href: '/tuning', isPage: true },
     { name: 'About Us', href: '#about' },
     { name: 'FAQ', href: '#faq' },
   ];
@@ -27,8 +31,20 @@ const Header = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  const handleLinkClick = (href: string) => {
+  const handleLinkClick = (href: string, isPage?: boolean) => {
     setIsMenuOpen(false);
+    if (isPage) {
+      navigate(href);
+      return;
+    }
+    if (location.pathname !== '/') {
+      navigate('/');
+      setTimeout(() => {
+        const element = document.querySelector(href);
+        if (element) element.scrollIntoView({ behavior: 'smooth' });
+      }, 100);
+      return;
+    }
     const element = document.querySelector(href);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
@@ -62,7 +78,7 @@ const Header = () => {
               {navigationLinks.map((link) => (
                 <button
                   key={link.name}
-                  onClick={() => handleLinkClick(link.href)}
+                  onClick={() => handleLinkClick(link.href, link.isPage)}
                   className="relative text-off-white font-semibold text-sm lg:text-base tracking-wide 
                            hover:text-burnt-orange transition-all duration-300 group cursor-pointer
                            py-2 px-1"
@@ -113,7 +129,7 @@ const Header = () => {
               {navigationLinks.map((link, index) => (
                 <button
                   key={link.name}
-                  onClick={() => handleLinkClick(link.href)}
+                  onClick={() => handleLinkClick(link.href, link.isPage)}
                   className="block w-full text-left px-4 py-4 text-off-white font-semibold 
                            text-lg tracking-wide hover:text-burnt-orange hover:bg-white/5
                            transition-all duration-300 rounded-lg border border-transparent
