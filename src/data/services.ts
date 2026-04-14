@@ -1,4 +1,4 @@
-import routineMaintenanceImg from '@/assets/routine-maintenance.jpg';
+import routineMaintenanceImg from '@/assets/routine-maintenance.png';
 
 export interface ServiceData {
   slug: string;
