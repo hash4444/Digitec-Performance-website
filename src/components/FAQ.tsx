@@ -38,10 +38,6 @@ export const FAQ = () => {
       question: "Do you serve clients outside of Dubai?",
       answer: "Yes. Many of our clients come from Sharjah, Abu Dhabi, and even Al Ain. If you drive something special, it's worth the trip, and we'll make it worth your time."
     },
-    {
-      question: "How does your loyalty program work?",
-      answer: "Every service you book earns loyalty points, which you can redeem for discounts, performance upgrades, or exclusive offers. Think of it as miles, for your car."
-    }
   ];
 
   return (
