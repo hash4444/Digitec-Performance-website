@@ -21,9 +21,9 @@ export const services: ServiceData[] = [
     image: 'https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?w=800&h=600&fit=crop',
     category: 'Core Mechanical Services',
     seoKeyword: 'Mercedes Repair Dubai',
-    intro: 'When it comes to Mercedes repair in Dubai, Digi-Tec Performance Center is the name trusted by owners who refuse to compromise. As a German car specialist workshop, we understand the engineering philosophy behind every Mercedes-Benz — from the precision of the AMG line to the refined comfort of the S-Class. Our technicians are factory-trained and equipped with dealer-level diagnostics to deliver repairs that meet or exceed manufacturer standards.',
+    intro: 'When it comes to Mercedes repair in Dubai, Digi-Tec Performance Center is the name trusted by owners who refuse to compromise. As a German car specialist workshop, we understand the engineering philosophy behind every Mercedes-Benz, from the precision of the AMG line to the refined comfort of the S-Class. Our technicians are factory-trained and equipped with dealer-level diagnostics to deliver repairs that meet or exceed manufacturer standards.',
     whyImportant: 'Mercedes-Benz vehicles are engineered to exacting tolerances. Generic workshops often lack the specialist knowledge and tooling required, leading to misdiagnoses, aftermarket shortcuts, and warranty risks. A dedicated Mercedes specialist ensures that every repair preserves the performance, safety, and resale value your vehicle deserves.',
-    whyChoose: 'Digi-Tec is staffed by technicians with deep experience across the full Mercedes-Benz range — C-Class, E-Class, S-Class, GLE, GLC, AMG, and Maybach. We use genuine OEM parts, Mercedes-approved fluids, and the latest Star Diagnostic equipment. Every job follows factory workshop protocols, and we provide transparent pricing with no hidden fees. Fast turnaround and a warranty on all work performed come standard.',
+    whyChoose: 'Digi-Tec is staffed by technicians with deep experience across the full Mercedes-Benz range: C-Class, E-Class, S-Class, GLE, GLC, AMG, and Maybach. We use genuine OEM parts, Mercedes-approved fluids, and the latest Star Diagnostic equipment. Every job follows factory workshop protocols, and we provide transparent pricing with no hidden fees. Fast turnaround and a warranty on all work performed come standard.',
     includes: [
       'Full Mercedes-Benz diagnostic scan (Star Diagnostic)',
       'Engine, transmission, and drivetrain repair',
@@ -43,8 +43,8 @@ export const services: ServiceData[] = [
     image: 'https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=800&h=600&fit=crop',
     category: 'Core Mechanical Services',
     seoKeyword: 'Mechanical Repair Dubai',
-    intro: 'Digi-Tec Performance Center delivers expert mechanical repair in Dubai for high-performance and luxury vehicles. Whether it\'s an engine rebuild, timing chain replacement, or a complex drivetrain issue, our workshop is equipped with the precision tooling and diagnostic technology to handle it — properly, the first time.',
-    whyImportant: 'Mechanical issues rarely improve on their own. A worn timing belt, a failing water pump, or a slow coolant leak can escalate into catastrophic engine damage if left unchecked. Professional mechanical repair addresses the root cause — not just the symptom — protecting both your safety and your investment.',
+    intro: 'Digi-Tec Performance Center delivers expert mechanical repair in Dubai for high-performance and luxury vehicles. Whether it\'s an engine rebuild, timing chain replacement, or a complex drivetrain issue, our workshop is equipped with the precision tooling and diagnostic technology to handle it, properly, the first time.',
+    whyImportant: 'Mechanical issues rarely improve on their own. A worn timing belt, a failing water pump, or a slow coolant leak can escalate into catastrophic engine damage if left unchecked. Professional mechanical repair addresses the root cause, not just the symptom, protecting both your safety and your investment.',
     whyChoose: 'As a German car specialist in Dubai, Digi-Tec brings factory-level expertise to every mechanical repair. Our technicians work across Mercedes, BMW, Audi, and Porsche with equal confidence. We use advanced diagnostics to pinpoint faults accurately, source OEM and performance-grade parts, and deliver fast turnaround without cutting corners.',
     includes: [
       'Engine rebuilds and top-end overhauls',
@@ -56,7 +56,7 @@ export const services: ServiceData[] = [
       'Oil leak diagnosis and repair',
     ],
     localIntent: 'Looking for reliable mechanical repair in Dubai or a German car mechanic near me? Digi-Tec Performance Center combines specialist knowledge with state-of-the-art equipment to keep your vehicle running at peak performance.',
-    details: 'Comprehensive mechanical repair covering engine rebuilds, timing belt/chain replacement, gasket repairs, coolant system overhauls, and drivetrain servicing. Our technicians use precision tooling and diagnostic equipment to identify and resolve issues at the root cause — not just the symptoms.',
+    details: 'Comprehensive mechanical repair covering engine rebuilds, timing belt/chain replacement, gasket repairs, coolant system overhauls, and drivetrain servicing. Our technicians use precision tooling and diagnostic equipment to identify and resolve issues at the root cause, not just the symptoms.',
   },
   {
     slug: 'transmission-services',
@@ -65,8 +65,8 @@ export const services: ServiceData[] = [
     image: '/lovable-uploads/b56133bf-55e4-4bc9-884f-15f732132259.png',
     category: 'Core Mechanical Services',
     seoKeyword: 'Transmission Repair Dubai',
-    intro: 'Your transmission is one of the most complex and critical components in your vehicle. At Digi-Tec Performance Center, we offer comprehensive transmission services in Dubai — from fluid flushes and clutch replacements to full gearbox rebuilds. Our technicians specialize in the advanced automatic, dual-clutch, and CVT systems found in German performance cars.',
-    whyImportant: 'Transmission problems don\'t just affect your driving comfort — they compromise safety and can lead to complete drivetrain failure. Delayed shifts, slipping gears, unusual noises, or warning lights all signal issues that require specialist attention. Early intervention saves thousands in repair costs.',
+    intro: 'Your transmission is one of the most complex and critical components in your vehicle. At Digi-Tec Performance Center, we offer comprehensive transmission services in Dubai, from fluid flushes and clutch replacements to full gearbox rebuilds. Our technicians specialize in the advanced automatic, dual-clutch, and CVT systems found in German performance cars.',
+    whyImportant: 'Transmission problems don\'t just affect your driving comfort; they compromise safety and can lead to complete drivetrain failure. Delayed shifts, slipping gears, unusual noises, or warning lights all signal issues that require specialist attention. Early intervention saves thousands in repair costs.',
     whyChoose: 'Digi-Tec\'s transmission specialists have extensive experience with Mercedes 9G-Tronic, BMW ZF 8-speed, Audi S-Tronic, and Porsche PDK systems. We perform thorough diagnostics before recommending any work, ensuring accurate, cost-effective repairs. Every job uses manufacturer-specified fluids and OEM-grade parts.',
     includes: [
       'Automatic and manual gearbox repair',
@@ -88,8 +88,8 @@ export const services: ServiceData[] = [
     category: 'Core Mechanical Services',
     seoKeyword: 'Suspension Repair Dubai',
     intro: 'Dubai\'s roads demand a suspension system in peak condition. At Digi-Tec Performance Center, we provide specialist suspension repair in Dubai for luxury and performance vehicles. From air suspension faults to worn dampers and alignment issues, we restore the ride quality your car was engineered to deliver.',
-    whyImportant: 'A compromised suspension affects handling, braking distances, and tire wear. On high-speed roads and in Dubai\'s demanding driving conditions, a properly tuned suspension isn\'t a luxury — it\'s a safety requirement. Neglecting suspension wear leads to uneven tire degradation, poor cornering stability, and increased stopping distances.',
-    whyChoose: 'Digi-Tec specializes in the advanced suspension systems used by Mercedes, BMW, Audi, and Porsche — including AIRMATIC, adaptive damping, and active roll stabilization. Our technicians use precision alignment equipment and OEM components to restore factory ride quality. We diagnose before we replace, saving you unnecessary costs.',
+    whyImportant: 'A compromised suspension affects handling, braking distances, and tire wear. On high-speed roads and in Dubai\'s demanding driving conditions, a properly tuned suspension isn\'t a luxury, it\'s a safety requirement. Neglecting suspension wear leads to uneven tire degradation, poor cornering stability, and increased stopping distances.',
+    whyChoose: 'Digi-Tec specializes in the advanced suspension systems used by Mercedes, BMW, Audi, and Porsche, including AIRMATIC, adaptive damping, and active roll stabilization. Our technicians use precision alignment equipment and OEM components to restore factory ride quality. We diagnose before we replace, saving you unnecessary costs.',
     includes: [
       'Shock absorber and strut replacement',
       'Air suspension repair and compressor service',
@@ -110,7 +110,7 @@ export const services: ServiceData[] = [
     category: 'Core Mechanical Services',
     seoKeyword: 'Steering Repair Dubai',
     intro: 'Precise steering is fundamental to safe, confident driving. Digi-Tec Performance Center offers professional steering repair in Dubai, covering everything from power steering pump failures to electronic steering rack diagnostics. We work on all German marques to restore the responsive, connected steering feel your vehicle was designed to provide.',
-    whyImportant: 'Steering issues — from heavy or loose feel to vibrations and wandering — are not just annoying; they\'re dangerous. A failing steering component can lead to loss of vehicle control. Whether it\'s a hydraulic leak, worn tie rods, or an EPS module fault, steering problems require immediate specialist attention.',
+    whyImportant: 'Steering issues, from heavy or loose feel to vibrations and wandering, are not just annoying; they\'re dangerous. A failing steering component can lead to loss of vehicle control. Whether it\'s a hydraulic leak, worn tie rods, or an EPS module fault, steering problems require immediate specialist attention.',
     whyChoose: 'Our technicians are experienced with the hydraulic, electro-hydraulic, and fully electric steering systems used across Mercedes, BMW, Audi, and Porsche. We use dealer-level diagnostic tools to accurately identify faults, and we source OEM replacement parts to ensure lasting repairs and correct steering geometry.',
     includes: [
       'Power steering pump replacement',
@@ -133,7 +133,7 @@ export const services: ServiceData[] = [
     seoKeyword: 'Brake Repair Dubai',
     intro: 'Your brakes are your vehicle\'s most critical safety system. At Digi-Tec Performance Center, we deliver specialist brake system repair in Dubai using OEM and performance-grade components. From routine pad and rotor changes to ABS diagnostics and caliper rebuilds, we ensure your stopping power meets the highest standard.',
     whyImportant: 'Worn brake pads, warped rotors, or a failing ABS module directly compromise your ability to stop safely. In Dubai\'s high-speed driving environment, maximum braking performance isn\'t optional. Regular brake inspections and timely component replacement protect you, your passengers, and your vehicle.',
-    whyChoose: 'Digi-Tec\'s brake specialists work with the advanced braking systems found in Mercedes, BMW, Audi, and Porsche — including carbon-ceramic setups and performance compound pads. We use precision torque specifications, manufacturer-grade brake fluid, and OEM rotors to deliver factory-level stopping performance every time.',
+    whyChoose: 'Digi-Tec\'s brake specialists work with the advanced braking systems found in Mercedes, BMW, Audi, and Porsche, including carbon-ceramic setups and performance compound pads. We use precision torque specifications, manufacturer-grade brake fluid, and OEM rotors to deliver factory-level stopping performance every time.',
     includes: [
       'Brake pad and rotor replacement',
       'Brake caliper rebuild and replacement',
@@ -153,7 +153,7 @@ export const services: ServiceData[] = [
     image: 'https://images.unsplash.com/photo-1487754180451-c456f719a1fc?w=800&h=600&fit=crop',
     category: 'Core Mechanical Services',
     seoKeyword: 'Car Service Dubai',
-    intro: 'Consistent, scheduled maintenance is the single best way to protect your vehicle\'s performance and value. Digi-Tec Performance Center offers tailored routine maintenance in Dubai for German luxury and performance vehicles. Every service follows manufacturer-specified intervals and checklists — no shortcuts, no skipped items.',
+    intro: 'Consistent, scheduled maintenance is the single best way to protect your vehicle\'s performance and value. Digi-Tec Performance Center offers tailored routine maintenance in Dubai for German luxury and performance vehicles. Every service follows manufacturer-specified intervals and checklists, no shortcuts, no skipped items.',
     whyImportant: 'Skipping routine maintenance accelerates component wear, voids manufacturer warranties, and reduces resale value. Fluids degrade, filters clog, belts stretch, and small issues become expensive repairs. A structured maintenance schedule keeps your vehicle reliable, efficient, and safe year-round.',
     whyChoose: 'As a German car specialist in Dubai, Digi-Tec provides manufacturer-equivalent servicing for Mercedes, BMW, Audi, and Porsche at competitive workshop rates. We use genuine fluids and OEM filters, record every service digitally, and provide transparent pricing before any work begins.',
     includes: [
@@ -165,7 +165,7 @@ export const services: ServiceData[] = [
       'Belt and hose inspection',
       'Digital service record update',
     ],
-    localIntent: 'If you\'re looking for a car service in Dubai or routine maintenance near me, Digi-Tec Performance Center offers dealer-quality servicing at workshop prices — right here in Dubai.',
+    localIntent: 'If you\'re looking for a car service in Dubai or routine maintenance near me, Digi-Tec Performance Center offers dealer-quality servicing at workshop prices, right here in Dubai.',
     details: "Scheduled maintenance packages tailored to your vehicle's manufacturer recommendations. Includes multi-point inspections, fluid top-ups, filter replacements, belt checks, and digital service records to keep your car running at peak performance.",
   },
   {
@@ -177,7 +177,7 @@ export const services: ServiceData[] = [
     seoKeyword: 'Oil Change Dubai',
     intro: 'A quality oil change is the foundation of engine longevity. At Digi-Tec Performance Center, we provide premium oil change services in Dubai using fully synthetic, manufacturer-approved lubricants. Whether you drive a turbocharged AMG or a naturally aspirated Porsche flat-six, we use the exact specification your engine demands.',
     whyImportant: 'Engine oil breaks down over time and under heat, losing its ability to lubricate, cool, and protect critical internal components. Running degraded oil leads to increased friction, accelerated wear, sludge buildup, and ultimately, costly engine damage. Timely oil changes are the most cost-effective form of engine protection.',
-    whyChoose: 'Digi-Tec stocks premium oils from Mobil 1, Castrol, and Liqui Moly in the exact viscosity grades specified by Mercedes, BMW, Audi, and Porsche. We include a genuine oil filter with every change, perform a complimentary under-hood inspection, and reset your service indicator — all in under an hour.',
+    whyChoose: 'Digi-Tec stocks premium oils from Mobil 1, Castrol, and Liqui Moly in the exact viscosity grades specified by Mercedes, BMW, Audi, and Porsche. We include a genuine oil filter with every change, perform a complimentary under-hood inspection, and reset your service indicator, all in under an hour.',
     includes: [
       'Fully synthetic oil (manufacturer specification)',
       'Genuine OEM oil filter replacement',
@@ -198,7 +198,7 @@ export const services: ServiceData[] = [
     category: 'Core Mechanical Services',
     seoKeyword: 'Tire Repair Dubai',
     intro: 'Your tires are the only point of contact between your vehicle and the road. Digi-Tec Performance Center offers professional tire repair and fitting services in Dubai, ensuring optimal grip, safety, and performance. We work with premium tire brands and use precision balancing and alignment equipment for a perfect fit.',
-    whyImportant: 'Worn, damaged, or improperly balanced tires compromise handling, increase braking distances, and raise the risk of blowouts — especially in Dubai\'s high-temperature conditions. Regular tire inspections, rotations, and timely replacements are essential for safe driving and even tire wear.',
+    whyImportant: 'Worn, damaged, or improperly balanced tires compromise handling, increase braking distances, and raise the risk of blowouts, especially in Dubai\'s high-temperature conditions. Regular tire inspections, rotations, and timely replacements are essential for safe driving and even tire wear.',
     whyChoose: 'Digi-Tec stocks and fits performance and luxury tires from brands like Michelin, Continental, Pirelli, and Bridgestone. Our four-wheel alignment equipment is calibrated for German vehicles, ensuring precise geometry that protects your tires and enhances driving dynamics.',
     includes: [
       'Puncture repair and patching',
@@ -220,7 +220,7 @@ export const services: ServiceData[] = [
     category: 'Core Mechanical Services',
     seoKeyword: 'Car Battery Replacement Dubai',
     intro: 'A failing battery can leave you stranded without warning. Digi-Tec Performance Center offers fast, professional car battery replacement in Dubai with top-tier brands that meet OEM specifications. We handle standard, AGM, and start-stop batteries for all German luxury vehicles.',
-    whyImportant: 'Modern German cars place heavy electrical demands on their batteries — from start-stop systems and adaptive headlights to infotainment and driver-assist modules. A weak or degraded battery causes slow starts, electronic glitches, and can even trigger false fault codes across multiple systems.',
+    whyImportant: 'Modern German cars place heavy electrical demands on their batteries, from start-stop systems and adaptive headlights to infotainment and driver-assist modules. A weak or degraded battery causes slow starts, electronic glitches, and can even trigger false fault codes across multiple systems.',
     whyChoose: 'Digi-Tec stocks premium batteries from Varta, Bosch, and Banner in the exact specifications required by Mercedes, BMW, Audi, and Porsche. Every replacement includes electrical system testing, alternator output verification, and battery management system registration where required.',
     includes: [
       'Battery testing and health report',
@@ -241,7 +241,7 @@ export const services: ServiceData[] = [
     image: '/lovable-uploads/b400327f-926f-4da6-97f8-cff91a39e3ec.png',
     category: 'Core Mechanical Services',
     seoKeyword: 'Exhaust Repair Dubai',
-    intro: 'A well-functioning exhaust system is essential for engine performance, fuel efficiency, and that signature engine note. Digi-Tec Performance Center provides expert exhaust repair in Dubai — from catalytic converter service to performance exhaust upgrades. We keep your vehicle running clean, quiet (or loud, if that\'s your preference), and compliant.',
+    intro: 'A well-functioning exhaust system is essential for engine performance, fuel efficiency, and that signature engine note. Digi-Tec Performance Center provides expert exhaust repair in Dubai, from catalytic converter service to performance exhaust upgrades. We keep your vehicle running clean, quiet (or loud, if that\'s your preference), and compliant.',
     whyImportant: 'Exhaust leaks reduce engine efficiency, increase emissions, and can allow harmful gases into the cabin. A failing catalytic converter or blocked DPF triggers warning lights and can cause significant power loss. Timely exhaust repair protects both your engine and the environment.',
     whyChoose: 'Digi-Tec works with OEM and performance exhaust components for Mercedes, BMW, Audi, and Porsche. Whether you need a factory replacement or a performance downpipe upgrade, our technicians deliver precise fitment, leak-free joints, and proper hanger alignment for a rattle-free result.',
     includes: [
@@ -264,8 +264,8 @@ export const services: ServiceData[] = [
     category: 'Diagnostics & Electrical',
     seoKeyword: 'Car Diagnostic Dubai',
     intro: 'Modern German vehicles are controlled by dozens of interconnected electronic modules. Digi-Tec Performance Center offers advanced car programming and diagnostic services in Dubai using dealer-level scan tools. From ECU coding and key programming to fault code analysis, we speak your car\'s digital language fluently.',
-    whyImportant: 'Electronic faults can manifest as seemingly unrelated symptoms — a transmission issue caused by a sensor fault, or a starting problem triggered by a software glitch. Without proper diagnostic equipment and expertise, workshops waste time and your money chasing the wrong component. Accurate diagnostics are the foundation of every efficient repair.',
-    whyChoose: 'Digi-Tec uses manufacturer-grade diagnostic platforms including Mercedes Star Diagnostic, BMW ISTA, Audi ODIS, and Porsche PIWIS. Our technicians can read and clear fault codes, perform live data analysis, code new modules, program replacement keys, and update software — capabilities typically reserved for authorized dealers.',
+    whyImportant: 'Electronic faults can manifest as seemingly unrelated symptoms: a transmission issue caused by a sensor fault, or a starting problem triggered by a software glitch. Without proper diagnostic equipment and expertise, workshops waste time and your money chasing the wrong component. Accurate diagnostics are the foundation of every efficient repair.',
+    whyChoose: 'Digi-Tec uses manufacturer-grade diagnostic platforms including Mercedes Star Diagnostic, BMW ISTA, Audi ODIS, and Porsche PIWIS. Our technicians can read and clear fault codes, perform live data analysis, code new modules, program replacement keys, and update software, capabilities typically reserved for authorized dealers.',
     includes: [
       'Full OBD-II and manufacturer-specific diagnostic scan',
       'Fault code reading, analysis, and clearing',
@@ -285,8 +285,8 @@ export const services: ServiceData[] = [
     image: '/lovable-uploads/9f435c28-2f08-437b-99ad-2252d8ea2071.png',
     category: 'Diagnostics & Electrical',
     seoKeyword: 'Auto Electrical Repair Dubai',
-    intro: 'Electrical faults are among the most complex issues in modern vehicles. At Digi-Tec Performance Center, we specialize in auto electrical repair in Dubai — tracing and resolving wiring faults, sensor failures, lighting issues, and module communication errors across all German luxury marques.',
-    whyImportant: 'A single electrical fault can cascade through multiple systems, triggering warning lights, disabling features, and creating intermittent problems that are difficult to reproduce. Professional electrical diagnosis requires specialized equipment and deep knowledge of vehicle architecture — it\'s not a job for generalists.',
+    intro: 'Electrical faults are among the most complex issues in modern vehicles. At Digi-Tec Performance Center, we specialize in auto electrical repair in Dubai, tracing and resolving wiring faults, sensor failures, lighting issues, and module communication errors across all German luxury marques.',
+    whyImportant: 'A single electrical fault can cascade through multiple systems, triggering warning lights, disabling features, and creating intermittent problems that are difficult to reproduce. Professional electrical diagnosis requires specialized equipment and deep knowledge of vehicle architecture. It\'s not a job for generalists.',
     whyChoose: 'Digi-Tec\'s electrical specialists use wiring diagrams, oscilloscopes, and manufacturer diagnostic platforms to trace faults to their exact origin. We repair rather than replace where possible, saving you money without compromising reliability. Our experience spans Mercedes, BMW, Audi, and Porsche electrical architectures.',
     includes: [
       'Alternator and starter motor repair/replacement',
@@ -307,7 +307,7 @@ export const services: ServiceData[] = [
     image: '/lovable-uploads/678fdd1f-2841-4606-8533-51f82257a4a0.png',
     category: 'Diagnostics & Electrical',
     seoKeyword: 'Fuel System Repair Dubai',
-    intro: 'Efficient fuel delivery is critical to engine performance, economy, and emissions. Digi-Tec Performance Center provides expert fuel system repair in Dubai — from clogged injectors and failing fuel pumps to throttle body cleaning and fuel pressure regulation. We restore your engine\'s combustion efficiency to factory specification.',
+    intro: 'Efficient fuel delivery is critical to engine performance, economy, and emissions. Digi-Tec Performance Center provides expert fuel system repair in Dubai, from clogged injectors and failing fuel pumps to throttle body cleaning and fuel pressure regulation. We restore your engine\'s combustion efficiency to factory specification.',
     whyImportant: 'A compromised fuel system leads to poor acceleration, rough idling, increased fuel consumption, and elevated emissions. Dirty injectors create uneven fuel spray patterns, while a weak fuel pump can\'t maintain pressure under load. These issues worsen over time and can damage catalytic converters and oxygen sensors.',
     whyChoose: 'Digi-Tec uses ultrasonic injector cleaning, precision fuel pressure testing, and OEM replacement components to restore fuel system performance. Our technicians understand the direct injection, port injection, and dual-injection systems used across Mercedes, BMW, Audi, and Porsche platforms.',
     includes: [
@@ -329,7 +329,7 @@ export const services: ServiceData[] = [
     image: '/lovable-uploads/9db7fc3e-a988-4b9d-a7ab-a6494b58561e.png',
     category: 'Comfort Systems',
     seoKeyword: 'Car AC Repair Dubai',
-    intro: 'In Dubai\'s extreme heat, a fully functioning air conditioning system isn\'t a luxury — it\'s a necessity. Digi-Tec Performance Center offers professional car AC repair in Dubai, covering everything from refrigerant recharges to compressor replacements and full climate control diagnostics for German luxury vehicles.',
+    intro: 'In Dubai\'s extreme heat, a fully functioning air conditioning system isn\'t a luxury, it\'s a necessity. Digi-Tec Performance Center offers professional car AC repair in Dubai, covering everything from refrigerant recharges to compressor replacements and full climate control diagnostics for German luxury vehicles.',
     whyImportant: 'AC systems lose efficiency gradually, so you may not notice the decline until summer peaks. Low refrigerant, a failing compressor, or a clogged cabin filter forces the system to work harder, increasing fuel consumption and wear on components. In Dubai\'s climate, a properly maintained AC system is essential for comfort and health.',
     whyChoose: 'Digi-Tec uses professional AC recovery and recharge stations calibrated for the R134a and R1234yf refrigerants used in modern German cars. We perform UV dye leak detection, compressor clutch testing, and evaporator inspection to diagnose issues accurately before recommending repairs.',
     includes: [
@@ -341,7 +341,7 @@ export const services: ServiceData[] = [
       'Expansion valve and receiver dryer service',
       'Climate control module diagnostics',
     ],
-    localIntent: 'If you\'re looking for car AC repair in Dubai or AC recharge near me, Digi-Tec Performance Center will have your climate control blowing ice-cold — fast.',
+    localIntent: 'If you\'re looking for car AC repair in Dubai or AC recharge near me, Digi-Tec Performance Center will have your climate control blowing ice-cold, fast.',
     details: 'Complete climate control services including refrigerant recharge, compressor replacement, condenser and evaporator repair, cabin filter replacement, and full system leak detection. Stay comfortable in any weather.',
   },
   {
@@ -352,7 +352,7 @@ export const services: ServiceData[] = [
     category: 'Body & Visual Work',
     seoKeyword: 'Car Body Repair Dubai',
     intro: 'From parking lot scrapes to minor collision damage, Digi-Tec Performance Center provides precision car body repair in Dubai that restores your vehicle to factory condition. Our body shop combines traditional craftsmanship with modern repair techniques to deliver invisible, lasting results on German luxury vehicles.',
-    whyImportant: 'Body damage isn\'t just cosmetic — exposed metal corrodes, cracked bumpers compromise crash protection, and poor-quality repairs reduce resale value. Professional body repair preserves structural integrity, protects against rust, and maintains the visual standard your vehicle deserves.',
+    whyImportant: 'Body damage isn\'t just cosmetic. Exposed metal corrodes, cracked bumpers compromise crash protection, and poor-quality repairs reduce resale value. Professional body repair preserves structural integrity, protects against rust, and maintains the visual standard your vehicle deserves.',
     whyChoose: 'Digi-Tec\'s body repair specialists work with the aluminum, high-strength steel, and composite panels used across Mercedes, BMW, Audi, and Porsche. We use paintless dent removal where possible, precision color-matching technology, and factory-specification fillers and primers for a seamless finish.',
     includes: [
       'Paintless dent removal (PDR)',
@@ -363,7 +363,7 @@ export const services: ServiceData[] = [
       'Primer and paint preparation',
       'Minor collision damage repair',
     ],
-    localIntent: 'Looking for car body repair in Dubai or dent removal near me? Digi-Tec Performance Center restores your vehicle\'s appearance to showroom condition — right here in Dubai.',
+    localIntent: 'Looking for car body repair in Dubai or dent removal near me? Digi-Tec Performance Center restores your vehicle\'s appearance to showroom condition, right here in Dubai.',
     details: "Precision body repair for dents, scratches, scrapes, cracked bumpers, and minor collision damage. We use paintless dent removal, panel beating, and filler techniques to restore your vehicle's appearance to factory condition.",
   },
   {
@@ -373,8 +373,8 @@ export const services: ServiceData[] = [
     image: '/lovable-uploads/f1cfe23e-d23b-4717-9f75-a07199716d98.png',
     category: 'Body & Visual Work',
     seoKeyword: 'Paint Protection Film Dubai',
-    intro: 'Protect your investment and keep your vehicle looking flawless. Digi-Tec Performance Center offers professional car paint protection in Dubai — including ceramic coatings, paint protection film (PPF), and expert paint correction. We help luxury and performance car owners in Dubai preserve their vehicle\'s finish against the harsh desert environment.',
-    whyImportant: 'Dubai\'s sun, sand, and road debris are relentless on automotive paint. UV exposure fades color, sand particles create micro-scratches, and stone chips expose bare metal to corrosion. Paint protection isn\'t vanity — it\'s preservation of your vehicle\'s value and appearance.',
+    intro: 'Protect your investment and keep your vehicle looking flawless. Digi-Tec Performance Center offers professional car paint protection in Dubai, including ceramic coatings, paint protection film (PPF), and expert paint correction. We help luxury and performance car owners in Dubai preserve their vehicle\'s finish against the harsh desert environment.',
+    whyImportant: 'Dubai\'s sun, sand, and road debris are relentless on automotive paint. UV exposure fades color, sand particles create micro-scratches, and stone chips expose bare metal to corrosion. Paint protection isn\'t vanity, it\'s preservation of your vehicle\'s value and appearance.',
     whyChoose: 'Digi-Tec applies industry-leading ceramic coatings and self-healing PPF from trusted brands. Our paint correction process removes swirl marks and oxidation before protection is applied, ensuring a perfect base. We offer full-body and partial coverage options tailored to your budget and priorities.',
     includes: [
       'Paint correction (single-stage and multi-stage)',
