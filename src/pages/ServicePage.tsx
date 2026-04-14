@@ -11,18 +11,19 @@ const ServicePage = () => {
   const { slug } = useParams<{ slug: string }>();
 
   // Redirect URLs ending in "-dubai" to the correct slug
-  if (slug && slug.endsWith('-dubai')) {
-    const correctSlug = slug.replace(/-dubai$/, '');
-    return <Navigate to={`/services/${correctSlug}`} replace />;
-  }
-
-  const service = slug ? getServiceBySlug(slug) : undefined;
+  const isDubaiSuffix = slug?.endsWith('-dubai');
+  const effectiveSlug = isDubaiSuffix ? slug.replace(/-dubai$/, '') : slug;
+  const service = effectiveSlug ? getServiceBySlug(effectiveSlug) : undefined;
 
   useSeo({
     title: service ? `${service.seoKeyword} | DIGI-TEC Performance Center` : 'Service Not Found | DIGI-TEC',
     description: service ? `${service.intro.slice(0, 155)}…` : '',
     canonical: service ? `https://digitecme.com/services/${service.slug}` : undefined,
   });
+
+  if (isDubaiSuffix && service) {
+    return <Navigate to={`/services/${effectiveSlug}`} replace />;
+  }
 
   if (!service) {
     return (
