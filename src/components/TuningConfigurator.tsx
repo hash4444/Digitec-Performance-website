@@ -1,6 +1,6 @@
 import React, { useState, useRef, useCallback, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { tuningCars, stageOrder, stageLabels, type Stage, type TuningCar } from '@/data/tuningCars';
+import { tuningCars, stageLabels, type Stage, type TuningCar } from '@/data/tuningCars';
 import { useAnimatedCounter } from '@/hooks/useAnimatedCounter';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend } from 'recharts';
 import { Zap, Gauge, Timer, Wrench, Clock, DollarSign, Crown, ChevronLeft, ChevronRight } from 'lucide-react';
@@ -65,7 +65,6 @@ function CarSelector({ cars, selectedIndex, onSelect }: {
 
   return (
     <div className="relative">
-      {/* Navigation arrows */}
       <button onClick={prev} className="absolute left-2 md:left-4 top-1/2 -translate-y-1/2 z-20 w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white/60 hover:text-burnt-orange hover:border-burnt-orange/40 transition-all">
         <ChevronLeft className="w-5 h-5" />
       </button>
@@ -73,7 +72,6 @@ function CarSelector({ cars, selectedIndex, onSelect }: {
         <ChevronRight className="w-5 h-5" />
       </button>
 
-      {/* Gradient overlays */}
       <div className="absolute left-0 top-0 bottom-0 w-24 md:w-40 bg-gradient-to-r from-black to-transparent z-10 pointer-events-none" />
       <div className="absolute right-0 top-0 bottom-0 w-24 md:w-40 bg-gradient-to-l from-black to-transparent z-10 pointer-events-none" />
 
@@ -117,6 +115,7 @@ function CarSelector({ cars, selectedIndex, onSelect }: {
                   >
                     <p className="text-xs uppercase tracking-[0.2em] text-burnt-orange font-medium">{car.brand}</p>
                     <h3 className="text-xl md:text-2xl font-bold text-off-white mt-1">{car.name}</h3>
+                    <p className="text-xs text-white/30 mt-0.5">{car.engine}</p>
                   </motion.div>
                 )}
               </AnimatePresence>
@@ -125,7 +124,6 @@ function CarSelector({ cars, selectedIndex, onSelect }: {
         })}
       </div>
 
-      {/* Dot indicators */}
       <div className="flex justify-center gap-1.5 mt-2">
         {cars.map((_, i) => (
           <button
@@ -142,10 +140,10 @@ function CarSelector({ cars, selectedIndex, onSelect }: {
 }
 
 // ─── Stage Selector ───
-function StageSelector({ active, onChange }: { active: Stage; onChange: (s: Stage) => void }) {
+function StageSelector({ stages, active, onChange }: { stages: Stage[]; active: Stage; onChange: (s: Stage) => void }) {
   return (
-    <div className="flex items-center justify-center gap-1 md:gap-2 p-1.5 bg-white/[0.03] rounded-2xl border border-white/[0.06] backdrop-blur-sm mx-auto w-fit">
-      {stageOrder.map((stage) => {
+    <div className="flex items-center justify-center gap-1 md:gap-2 p-1.5 bg-white/[0.03] rounded-2xl border border-white/[0.06] backdrop-blur-sm mx-auto w-fit flex-wrap">
+      {stages.map((stage) => {
         const isActive = stage === active;
         const isVip = stage === 'vip';
         return (
@@ -171,15 +169,15 @@ function StageSelector({ active, onChange }: { active: Stage; onChange: (s: Stag
 
 // ─── Performance Graph ───
 function PerformanceGraph({ car, stage }: { car: TuningCar; stage: Stage }) {
-  const stockData = car.stages.stock.powerCurve;
-  const tunedData = car.stages[stage].powerCurve;
+  const stockData = car.stages.stock?.powerCurve || [];
+  const tunedData = car.stages[stage]?.powerCurve || [];
   const isStock = stage === 'stock';
 
   const combined = stockData.map((point, i) => ({
     rpm: point.rpm,
     stockPower: point.power,
     stockTorque: point.torque,
-    ...(isStock ? {} : { tunedPower: tunedData[i].power, tunedTorque: tunedData[i].torque }),
+    ...(isStock ? {} : { tunedPower: tunedData[i]?.power, tunedTorque: tunedData[i]?.torque }),
   }));
 
   return (
@@ -187,7 +185,7 @@ function PerformanceGraph({ car, stage }: { car: TuningCar; stage: Stage }) {
       <ResponsiveContainer width="100%" height="100%">
         <LineChart data={combined} margin={{ top: 10, right: 10, left: -10, bottom: 0 }}>
           <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.06)" />
-          <XAxis dataKey="rpm" stroke="rgba(255,255,255,0.3)" tick={{ fill: 'rgba(255,255,255,0.4)', fontSize: 11 }} tickFormatter={(v) => `${v}`} />
+          <XAxis dataKey="rpm" stroke="rgba(255,255,255,0.3)" tick={{ fill: 'rgba(255,255,255,0.4)', fontSize: 11 }} />
           <YAxis stroke="rgba(255,255,255,0.3)" tick={{ fill: 'rgba(255,255,255,0.4)', fontSize: 11 }} />
           <Tooltip
             contentStyle={{ backgroundColor: '#1a1a1a', border: '1px solid rgba(255,255,255,0.1)', borderRadius: 12, color: '#fff', fontSize: 12 }}
@@ -214,21 +212,29 @@ export default function TuningConfigurator() {
   const [stage, setStage] = useState<Stage>('stage1');
 
   const car = tuningCars[carIndex];
-  const stageInfo = car.stages[stage];
-  const stockSpec = car.stages.stock.spec;
-  const isVip = stage === 'vip';
+  const availableStages = car.availableStages;
 
+  // Reset stage when car changes if current stage isn't available
+  useEffect(() => {
+    if (!availableStages.includes(stage)) {
+      setStage(availableStages[1] || availableStages[0]);
+    }
+  }, [carIndex, availableStages, stage]);
+
+  const stageInfo = car.stages[stage];
+  const stockSpec = car.stages.stock?.spec;
+  if (!stageInfo || !stockSpec) return null;
+
+  const isVip = stage === 'vip';
   const hpGain = stageInfo.spec.hp - stockSpec.hp;
   const torqueGain = stageInfo.spec.torque - stockSpec.torque;
   const timeGain = +(stageInfo.spec.zeroToHundred - stockSpec.zeroToHundred).toFixed(1);
 
-  // Visual transformation: darken + contrast based on stage
-  const stageIntensity: Record<Stage, number> = { stock: 0, stage1: 0.05, stage2: 0.1, stage3: 0.15, stage4: 0.2, vip: 0.25 };
-  const intensity = stageIntensity[stage];
+  const stageIdx = availableStages.indexOf(stage);
+  const intensity = stageIdx / (availableStages.length - 1) * 0.25;
 
   return (
     <section className={`relative py-16 md:py-24 transition-colors duration-700 ${isVip ? 'bg-gradient-to-b from-black via-[#0a0500] to-black' : 'bg-black'}`}>
-      {/* VIP ambient glow */}
       {isVip && (
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-burnt-orange/[0.06] rounded-full blur-[120px]" />
@@ -236,7 +242,6 @@ export default function TuningConfigurator() {
       )}
 
       <div className="relative z-10 max-w-7xl mx-auto px-4">
-        {/* Section header */}
         <div className="text-center mb-12">
           <p className="text-burnt-orange text-xs uppercase tracking-[0.3em] font-semibold mb-3">Performance Configurator</p>
           <h2 className="text-3xl md:text-5xl font-black text-off-white">
@@ -247,15 +252,12 @@ export default function TuningConfigurator() {
           </p>
         </div>
 
-        {/* Car Selector */}
         <CarSelector cars={tuningCars} selectedIndex={carIndex} onSelect={setCarIndex} />
 
-        {/* Stage Selector */}
         <div className="mt-10 mb-10">
-          <StageSelector active={stage} onChange={setStage} />
+          <StageSelector stages={availableStages} active={stage} onChange={setStage} />
         </div>
 
-        {/* Performance Stats */}
         <motion.div
           key={`${car.id}-${stage}`}
           initial={{ opacity: 0, y: 20 }}
@@ -268,9 +270,8 @@ export default function TuningConfigurator() {
           <AnimatedStat label="0–100 km/h" value={stageInfo.spec.zeroToHundred} unit="s" icon={Timer} gain={timeGain} />
         </motion.div>
 
-        {/* Car visual with stage transformation */}
         <div className="relative flex justify-center items-center mb-12">
-          <div className={`absolute inset-0 flex justify-center items-center pointer-events-none ${isVip ? '' : ''}`}>
+          <div className="absolute inset-0 flex justify-center items-center pointer-events-none">
             <div
               className="w-[500px] h-[300px] rounded-full blur-[80px] transition-all duration-700"
               style={{
@@ -294,9 +295,7 @@ export default function TuningConfigurator() {
           />
         </div>
 
-        {/* Modifications & Details + Graph side by side */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 max-w-5xl mx-auto mb-12">
-          {/* Modifications */}
           <motion.div
             key={`mods-${car.id}-${stage}`}
             initial={{ opacity: 0, x: -20 }}
@@ -314,10 +313,10 @@ export default function TuningConfigurator() {
                   key={mod}
                   initial={{ opacity: 0, x: -10 }}
                   animate={{ opacity: 1, x: 0 }}
-                  transition={{ delay: i * 0.08 }}
-                  className="flex items-center gap-3 text-sm text-white/70"
+                  transition={{ delay: i * 0.05 }}
+                  className="flex items-start gap-3 text-sm text-white/70"
                 >
-                  <div className="w-1.5 h-1.5 rounded-full bg-burnt-orange flex-shrink-0" />
+                  <div className="w-1.5 h-1.5 rounded-full bg-burnt-orange flex-shrink-0 mt-1.5" />
                   {mod}
                 </motion.li>
               ))}
@@ -336,7 +335,6 @@ export default function TuningConfigurator() {
             )}
           </motion.div>
 
-          {/* Performance Graph */}
           <motion.div
             key={`graph-${car.id}-${stage}`}
             initial={{ opacity: 0, x: 20 }}
@@ -351,7 +349,6 @@ export default function TuningConfigurator() {
           </motion.div>
         </div>
 
-        {/* VIP Section */}
         <AnimatePresence>
           {isVip && (
             <motion.div
