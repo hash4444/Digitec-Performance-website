@@ -1,36 +1,70 @@
 
 
-## Plan: SEO Improvements for Google Search Console Indexing
+# Premium SEO Copywriting for All Service Pages
 
-### Problem
-Google Search Console can't discover your 17 individual service pages because there's no sitemap telling it they exist, and all pages share the same generic title/description from `index.html`.
+## Overview
+Rewrite all 17 service pages with premium SEO copy and restructure the `ServicePage` component to render rich, sectioned content instead of a single paragraph.
 
-### What We'll Do
+## Data Model Change
+Expand the `ServiceData` interface to support structured content:
 
-**1. Generate a `public/sitemap.xml`**
-- List all pages: `/`, `/tuning`, and all 17 `/services/{slug}` URLs
-- Use your domain `https://digitec-performance.ae` as the base URL
-- This file is what you submit to Google Search Console
+```typescript
+export interface ServiceData {
+  slug: string;
+  title: string;
+  description: string;
+  image: string;
+  category: string;
+  seoKeyword: string;           // e.g. "Mercedes Repair Dubai"
+  intro: string;                // SEO intro paragraph
+  whyImportant: string;         // Why this service matters
+  whyChoose: string;            // Why Digi-Tec specifically
+  includes: string[];           // Bullet points of what's included
+  localIntent: string;          // "If you're searching for..." paragraph
+  details: string;              // Keep for backward compat / fallback
+}
+```
 
-**2. Add dynamic `<title>` and `<meta description>` per service page**
-- Install `react-helmet-async` to set page-specific meta tags from React components
-- Each service page will get a unique title like *"Mercedes Repair | DIGI-TEC Performance Center Dubai"* and a unique description pulled from the service data
-- Also add dynamic meta tags to the Tuning page and homepage
+## ServicePage Component Update
+Replace the single `<p>{service.details}</p>` with structured sections:
 
-**3. Update `robots.txt` to include the sitemap reference**
-- Add `Sitemap: https://digitec-performance.ae/sitemap.xml` to `robots.txt`
+1. **Intro** — H2 + paragraph (naturally includes "[Service] Dubai")
+2. **Why It Matters** — H2 + paragraph (performance/safety/longevity angle)
+3. **Why Choose Digi-Tec** — H2 + paragraph (German expertise, diagnostics, parts, turnaround)
+4. **What's Included** — H2 + styled bullet list
+5. **Local Search Intent** — Paragraph with natural "near me" / location copy
+6. **CTA block** — WhatsApp booking + visit prompt (fix the broken WhatsApp link to `97143402223`)
 
-### Technical Details
+## SEO Copy for All 17 Services
+Each service gets 300-600 words of premium, human-sounding copy. Tone: trustworthy, high-end, performance-focused. Key rules:
+- Natural keyword inclusion ("[Service] Dubai", "near me", "German car specialist Dubai")
+- No keyword stuffing
+- Mentions Mercedes, BMW, Audi, Porsche where relevant
+- Clean, confident, no fluff
 
-| File | Change |
-|------|--------|
-| `public/sitemap.xml` | New — all URLs with lastmod dates |
-| `public/robots.txt` | Add sitemap directive |
-| `src/main.tsx` | Wrap app with `HelmetProvider` |
-| `src/pages/ServicePage.tsx` | Add `<Helmet>` with dynamic title + description |
-| `src/pages/Tuning.tsx` | Add `<Helmet>` with tuning-specific meta |
-| `src/pages/Index.tsx` | Add `<Helmet>` with homepage meta |
+### Services to rewrite:
+1. Mercedes Repair
+2. Mechanical Repair
+3. Transmission Services
+4. Suspension Repair
+5. Steering Repair
+6. Brake System Repairs
+7. Routine Maintenance
+8. Oil Change Service
+9. Tire Repair
+10. Battery Changes
+11. Exhaust Repair
+12. Car Programming & Diagnostic
+13. Electrical System Repairs
+14. Fuel System Repair
+15. AC Repair & Maintenance
+16. Car Body Repair
+17. Car Paint & Protection
 
-### After Implementation
-You'll submit `https://digitec-performance.ae/sitemap.xml` in Google Search Console under **Sitemaps** → **Add a new sitemap**. Google will then crawl and index all 17 service pages individually.
+## SEO Hook Update
+Update `useSeo` in the ServicePage to use the new `seoKeyword` field for better title/description generation.
+
+## Files Changed
+- `src/data/services.ts` — Expanded interface + all 17 services rewritten
+- `src/pages/ServicePage.tsx` — Structured content sections, fixed WhatsApp link
 
