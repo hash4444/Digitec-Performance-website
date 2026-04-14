@@ -263,11 +263,9 @@ export default function TuningConfigurator() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.4 }}
-          className="grid grid-cols-3 gap-3 md:gap-6 max-w-2xl mx-auto mb-12"
+          className="flex justify-center mb-12"
         >
           <AnimatedStat label="Horsepower" value={stageInfo.spec.hp} unit="HP" icon={Zap} gain={hpGain} />
-          <AnimatedStat label="Torque" value={stageInfo.spec.torque} unit="Nm" icon={Gauge} gain={torqueGain} />
-          <AnimatedStat label="0–100 km/h" value={stageInfo.spec.zeroToHundred} unit="s" icon={Timer} gain={timeGain} />
         </motion.div>
 
         <div className="relative flex justify-center items-center mb-12">
@@ -295,11 +293,11 @@ export default function TuningConfigurator() {
           />
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 max-w-5xl mx-auto mb-12">
+        <div className="max-w-2xl mx-auto mb-12">
           <motion.div
             key={`mods-${car.id}-${stage}`}
-            initial={{ opacity: 0, x: -20 }}
-            animate={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4 }}
             className="rounded-2xl bg-white/[0.03] border border-white/[0.06] p-6 md:p-8"
           >
@@ -333,19 +331,6 @@ export default function TuningConfigurator() {
                 </div>
               </div>
             )}
-          </motion.div>
-
-          <motion.div
-            key={`graph-${car.id}-${stage}`}
-            initial={{ opacity: 0, x: 20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.4 }}
-            className="rounded-2xl bg-white/[0.03] border border-white/[0.06] p-6 md:p-8"
-          >
-            <h3 className="text-lg font-bold text-off-white mb-4">
-              Power & Torque Curves
-            </h3>
-            <PerformanceGraph car={car} stage={stage} />
           </motion.div>
         </div>
 
