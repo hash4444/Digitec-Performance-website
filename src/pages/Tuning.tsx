@@ -25,7 +25,7 @@ const Tuning = () => {
             Mercedes <span className="text-burnt-orange">Performance Tuning</span>
           </h1>
           <p className="text-lg md:text-xl text-off-white/80 max-w-2xl mx-auto">
-            Unleash the full potential of your Mercedes-Benz with our expert performance tuning solutions.
+            At Digi-Tec, we work in partnership with GAD Motors to provide high-performance ECU tuning solutions engineered to the highest standards. GAD Motors is known for its precision tuning and extensive testing, allowing us to offer optimized power gains, improved torque, and enhanced driving dynamics while maintaining engine reliability and safety.
           </p>
         </div>
       </section>
