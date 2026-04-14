@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Helmet } from 'react-helmet-async';
+import { useSeo } from '@/hooks/use-seo';
 import Header from '@/components/Header';
 import { Hero } from '@/components/Hero';
 import { WhatWeDo } from '@/components/WhatWeDo';
@@ -16,13 +16,14 @@ import { Footer } from '@/components/Footer';
 
 
 const Index = () => {
+  useSeo({
+    title: 'DIGI-TEC Performance Center – Luxury Car Repair & Tuning Dubai',
+    description: "Dubai's premier luxury automotive repair and performance tuning center. Expert servicing for Mercedes, Ferrari, Porsche, Audi, Rolls Royce. OEM parts, factory-trained technicians.",
+    canonical: 'https://digitec-performance.ae/',
+  });
+
   return (
     <div className="min-h-screen bg-black text-off-white">
-      <Helmet>
-        <title>DIGI-TEC Performance Center – Luxury Car Repair & Tuning Dubai</title>
-        <meta name="description" content="Dubai's premier luxury automotive repair and performance tuning center. Expert servicing for Mercedes, Ferrari, Porsche, Audi, Rolls Royce. OEM parts, factory-trained technicians." />
-        <link rel="canonical" href="https://digitec-performance.ae/" />
-      </Helmet>
       <Header />
       <div id="home">
         <Hero />
