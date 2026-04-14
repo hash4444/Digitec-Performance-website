@@ -3,6 +3,7 @@ import React from 'react';
 import { useSeo } from '@/hooks/use-seo';
 import Header from '@/components/Header';
 import { Footer } from '@/components/Footer';
+import TuningConfigurator from '@/components/TuningConfigurator';
 
 const Tuning = () => {
   useSeo({
@@ -28,6 +29,7 @@ const Tuning = () => {
           </p>
         </div>
       </section>
+      <TuningConfigurator />
       <Footer />
     </div>
   );
