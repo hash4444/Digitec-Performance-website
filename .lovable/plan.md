@@ -1,28 +1,36 @@
 
 
-## Plan: Connect All CTA Buttons to WhatsApp
+## Plan: SEO Improvements for Google Search Console Indexing
 
-Currently, only the PPF/Ceramic section's "Get a Free Quote" button links to WhatsApp. Several other buttons across the site are not connected. Here's what will be updated:
+### Problem
+Google Search Console can't discover your 17 individual service pages because there's no sitemap telling it they exist, and all pages share the same generic title/description from `index.html`.
 
-### Buttons to connect
+### What We'll Do
 
-| Component | Button | WhatsApp Message |
-|-----------|--------|-----------------|
-| **Hero** | "Book Appointment" | "Hi, I'd like to book an appointment at Digi-Tec Performance Center." |
-| **Hero** | "Get a Free Diagnosis" | "Hi, I'm interested in getting a free diagnosis for my vehicle." |
-| **FinalCTA** | "Schedule Your Consultation" | "Hi, I'd like to schedule a consultation at Digi-Tec Performance Center." |
-| **FinalCTA** | "Call +971 4 340 2223" | Direct phone link (`tel:+97143402223`) — not WhatsApp |
-| **Footer** | "Book Appointment" link | "Hi, I'd like to book an appointment." |
-| **PPFCeramicSection** | Already connected | No change needed |
+**1. Generate a `public/sitemap.xml`**
+- List all pages: `/`, `/tuning`, and all 17 `/services/{slug}` URLs
+- Use your domain `https://digitec-performance.ae` as the base URL
+- This file is what you submit to Google Search Console
 
-### Technical approach
+**2. Add dynamic `<title>` and `<meta description>` per service page**
+- Install `react-helmet-async` to set page-specific meta tags from React components
+- Each service page will get a unique title like *"Mercedes Repair | DIGI-TEC Performance Center Dubai"* and a unique description pulled from the service data
+- Also add dynamic meta tags to the Tuning page and homepage
 
-- Convert each `<Button>` to an `<a>` tag (or wrap it) linking to `https://wa.me/97143402223?text=...` with `target="_blank"` and `rel="noopener noreferrer"`
-- The "Call" button will use `tel:+97143402223` instead of WhatsApp
-- All WhatsApp messages will be URL-encoded
+**3. Update `robots.txt` to include the sitemap reference**
+- Add `Sitemap: https://digitec-performance.ae/sitemap.xml` to `robots.txt`
 
-### Files to edit
-1. `src/components/Hero.tsx` — both buttons
-2. `src/components/FinalCTA.tsx` — both buttons
-3. `src/components/Footer.tsx` — "Book Appointment" link
+### Technical Details
+
+| File | Change |
+|------|--------|
+| `public/sitemap.xml` | New — all URLs with lastmod dates |
+| `public/robots.txt` | Add sitemap directive |
+| `src/main.tsx` | Wrap app with `HelmetProvider` |
+| `src/pages/ServicePage.tsx` | Add `<Helmet>` with dynamic title + description |
+| `src/pages/Tuning.tsx` | Add `<Helmet>` with tuning-specific meta |
+| `src/pages/Index.tsx` | Add `<Helmet>` with homepage meta |
+
+### After Implementation
+You'll submit `https://digitec-performance.ae/sitemap.xml` in Google Search Console under **Sitemaps** → **Add a new sitemap**. Google will then crawl and index all 17 service pages individually.
 
