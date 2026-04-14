@@ -7,19 +7,36 @@ import { FinalCTA } from '@/components/FinalCTA';
 import { getServiceBySlug, services } from '@/data/services';
 import { ChevronRight, Check, MessageCircle, Phone } from 'lucide-react';
 
+// Map old Google-indexed slugs to correct destinations
+const SLUG_REDIRECTS: Record<string, string> = {
+  'mercedes-brake-repair-dubai': '/services/brake-system-repairs',
+  'mercedes-transmission-repair-dubai': '/services/transmission-services',
+  'mercedes-ac-repair-dubai': '/services/ac-repair-maintenance',
+  'mercedes-suspension-repair-dubai': '/services/suspension-repair',
+  'performance-tuning-dubai': '/tuning',
+  'engine-diagnostics-dubai': '/services/car-programming-diagnostic',
+};
+
 const ServicePage = () => {
   const { slug } = useParams<{ slug: string }>();
 
-  // Redirect URLs ending in "-dubai" to the correct slug
-  const isDubaiSuffix = slug?.endsWith('-dubai');
+  // Check custom redirect map first
+  const customRedirect = slug ? SLUG_REDIRECTS[slug] : undefined;
+
+  // Then check generic -dubai suffix
+  const isDubaiSuffix = !customRedirect && slug?.endsWith('-dubai');
   const effectiveSlug = isDubaiSuffix ? slug.replace(/-dubai$/, '') : slug;
-  const service = effectiveSlug ? getServiceBySlug(effectiveSlug) : undefined;
+  const service = !customRedirect && effectiveSlug ? getServiceBySlug(effectiveSlug) : undefined;
 
   useSeo({
     title: service ? `${service.seoKeyword} | DIGI-TEC Performance Center` : 'Service Not Found | DIGI-TEC',
     description: service ? `${service.intro.slice(0, 155)}…` : '',
     canonical: service ? `https://digitecme.com/services/${service.slug}` : undefined,
   });
+
+  if (customRedirect) {
+    return <Navigate to={customRedirect} replace />;
+  }
 
   if (isDubaiSuffix && service) {
     return <Navigate to={`/services/${effectiveSlug}`} replace />;
