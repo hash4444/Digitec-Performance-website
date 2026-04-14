@@ -1,11 +1,14 @@
 
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
+import { useNavigate, useLocation } from 'react-router-dom';
 import { cn } from '@/lib/utils';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
 
   const navigationLinks = [
     { name: 'Home', href: '#home' },
@@ -28,8 +31,20 @@ const Header = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  const handleLinkClick = (href: string) => {
+  const handleLinkClick = (href: string, isPage?: boolean) => {
     setIsMenuOpen(false);
+    if (isPage) {
+      navigate(href);
+      return;
+    }
+    if (location.pathname !== '/') {
+      navigate('/');
+      setTimeout(() => {
+        const element = document.querySelector(href);
+        if (element) element.scrollIntoView({ behavior: 'smooth' });
+      }, 100);
+      return;
+    }
     const element = document.querySelector(href);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
