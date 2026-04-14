@@ -150,7 +150,7 @@ export const services: ServiceData[] = [
     slug: 'routine-maintenance',
     title: 'Routine Maintenance',
     description: 'Scheduled servicing to preserve engine health and performance.',
-    image: 'https://images.unsplash.com/photo-1487754180451-c456f719a1fc?w=800&h=600&fit=crop',
+    image: new URL('@/assets/routine-maintenance.jpg', import.meta.url).href,
     category: 'Core Mechanical Services',
     seoKeyword: 'Car Service Dubai',
     intro: 'Consistent, scheduled maintenance is the single best way to protect your vehicle\'s performance and value. Digi-Tec Performance Center offers tailored routine maintenance in Dubai for German luxury and performance vehicles. Every service follows manufacturer-specified intervals and checklists, no shortcuts, no skipped items.',
