@@ -8,7 +8,7 @@ const Tuning = () => {
   useSeo({
     title: 'Mercedes Performance Tuning Dubai | DIGI-TEC Performance Center',
     description: 'Unleash the full potential of your Mercedes-Benz with expert performance tuning in Dubai. ECU remapping, power upgrades, and precision calibration at DIGI-TEC.',
-    canonical: 'https://digitec-performance.ae/tuning',
+    canonical: 'https://digitecme.com/tuning',
   });
 
   return (
