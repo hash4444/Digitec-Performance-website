@@ -12,7 +12,7 @@ const Header = () => {
 
   const navigationLinks: { name: string; href: string; isPage?: boolean }[] = [
     { name: 'Home', href: '#home' },
-    { name: 'Services', href: '#services' },
+    { name: 'Services', href: '/services', isPage: true },
     { name: 'Tuning', href: '/tuning', isPage: true },
     { name: 'About Us', href: '#about' },
     { name: 'FAQ', href: '#faq' },
