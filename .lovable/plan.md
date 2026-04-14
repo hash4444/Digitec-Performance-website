@@ -1,70 +1,25 @@
 
 
-# Premium SEO Copywriting for All Service Pages
+# Fix 404s for Google-Indexed URLs with "-dubai" Suffix
 
-## Overview
-Rewrite all 17 service pages with premium SEO copy and restructure the `ServicePage` component to render rich, sectioned content instead of a single paragraph.
+## Problem
+Google has indexed URLs like `/services/mercedes-repair-dubai/` but your actual routes use `/services/mercedes-repair`. Visitors clicking those Google results get a 404.
 
-## Data Model Change
-Expand the `ServiceData` interface to support structured content:
+## Solution
+Add a redirect component that catches any `/services/:slug` where the slug ends in `-dubai` and redirects to the correct page without `-dubai`. This is cleaner than duplicating pages and avoids SEO duplicate content penalties.
 
-```typescript
-export interface ServiceData {
-  slug: string;
-  title: string;
-  description: string;
-  image: string;
-  category: string;
-  seoKeyword: string;           // e.g. "Mercedes Repair Dubai"
-  intro: string;                // SEO intro paragraph
-  whyImportant: string;         // Why this service matters
-  whyChoose: string;            // Why Digi-Tec specifically
-  includes: string[];           // Bullet points of what's included
-  localIntent: string;          // "If you're searching for..." paragraph
-  details: string;              // Keep for backward compat / fallback
-}
-```
+## Technical Details
 
-## ServicePage Component Update
-Replace the single `<p>{service.details}</p>` with structured sections:
+### 1. Create a redirect wrapper in `src/pages/ServicePage.tsx`
+Before rendering the service page, check if the slug ends with `-dubai`. If it does, strip `-dubai` and redirect using `<Navigate to={...} replace />`. This sends a client-side redirect to the correct URL.
 
-1. **Intro** — H2 + paragraph (naturally includes "[Service] Dubai")
-2. **Why It Matters** — H2 + paragraph (performance/safety/longevity angle)
-3. **Why Choose Digi-Tec** — H2 + paragraph (German expertise, diagnostics, parts, turnaround)
-4. **What's Included** — H2 + styled bullet list
-5. **Local Search Intent** — Paragraph with natural "near me" / location copy
-6. **CTA block** — WhatsApp booking + visit prompt (fix the broken WhatsApp link to `97143402223`)
+### 2. Update the sitemap (`public/sitemap.xml`)
+Change all URLs to match the actual routes (without `-dubai` suffix) so Google re-indexes the correct URLs going forward.
 
-## SEO Copy for All 17 Services
-Each service gets 300-600 words of premium, human-sounding copy. Tone: trustworthy, high-end, performance-focused. Key rules:
-- Natural keyword inclusion ("[Service] Dubai", "near me", "German car specialist Dubai")
-- No keyword stuffing
-- Mentions Mercedes, BMW, Audi, Porsche where relevant
-- Clean, confident, no fluff
-
-### Services to rewrite:
-1. Mercedes Repair
-2. Mechanical Repair
-3. Transmission Services
-4. Suspension Repair
-5. Steering Repair
-6. Brake System Repairs
-7. Routine Maintenance
-8. Oil Change Service
-9. Tire Repair
-10. Battery Changes
-11. Exhaust Repair
-12. Car Programming & Diagnostic
-13. Electrical System Repairs
-14. Fuel System Repair
-15. AC Repair & Maintenance
-16. Car Body Repair
-17. Car Paint & Protection
-
-## SEO Hook Update
-Update `useSeo` in the ServicePage to use the new `seoKeyword` field for better title/description generation.
+### 3. No new routes needed
+The existing `/services/:slug` route already captures these URLs. We just add logic inside `ServicePage` to handle the redirect.
 
 ## Files Changed
-- `src/data/services.ts` — Expanded interface + all 17 services rewritten
-- `src/pages/ServicePage.tsx` — Structured content sections, fixed WhatsApp link
+- `src/pages/ServicePage.tsx` — Add redirect logic for slugs ending in `-dubai`
+- `public/sitemap.xml` — Ensure URLs match actual routes (already correct, will verify)
 
