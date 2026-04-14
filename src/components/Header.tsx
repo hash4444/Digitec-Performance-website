@@ -10,6 +10,7 @@ const Header = () => {
   const navigationLinks = [
     { name: 'Home', href: '#home' },
     { name: 'Services', href: '#services' },
+    { name: 'Tuning', href: '/tuning', isPage: true },
     { name: 'About Us', href: '#about' },
     { name: 'FAQ', href: '#faq' },
   ];
