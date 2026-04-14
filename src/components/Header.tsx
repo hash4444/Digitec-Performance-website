@@ -78,7 +78,7 @@ const Header = () => {
               {navigationLinks.map((link) => (
                 <button
                   key={link.name}
-                  onClick={() => handleLinkClick(link.href)}
+                  onClick={() => handleLinkClick(link.href, (link as any).isPage)}
                   className="relative text-off-white font-semibold text-sm lg:text-base tracking-wide 
                            hover:text-burnt-orange transition-all duration-300 group cursor-pointer
                            py-2 px-1"
@@ -129,7 +129,7 @@ const Header = () => {
               {navigationLinks.map((link, index) => (
                 <button
                   key={link.name}
-                  onClick={() => handleLinkClick(link.href)}
+                  onClick={() => handleLinkClick(link.href, (link as any).isPage)}
                   className="block w-full text-left px-4 py-4 text-off-white font-semibold 
                            text-lg tracking-wide hover:text-burnt-orange hover:bg-white/5
                            transition-all duration-300 rounded-lg border border-transparent
