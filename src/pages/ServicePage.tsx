@@ -1,6 +1,6 @@
 import React from 'react';
-import { Helmet } from 'react-helmet-async';
 import { useParams, Link } from 'react-router-dom';
+import { useSeo } from '@/hooks/use-seo';
 import Header from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { FinalCTA } from '@/components/FinalCTA';
@@ -10,6 +10,12 @@ import { ArrowLeft, ChevronRight } from 'lucide-react';
 const ServicePage = () => {
   const { slug } = useParams<{ slug: string }>();
   const service = slug ? getServiceBySlug(slug) : undefined;
+
+  useSeo({
+    title: service ? `${service.title} Dubai | DIGI-TEC Performance Center` : 'Service Not Found | DIGI-TEC',
+    description: service ? `${service.description} Professional ${service.title.toLowerCase()} services in Dubai. OEM parts, expert technicians at DIGI-TEC Performance Center.` : '',
+    canonical: service ? `https://digitec-performance.ae/services/${service.slug}` : undefined,
+  });
 
   if (!service) {
     return (
@@ -35,11 +41,6 @@ const ServicePage = () => {
 
   return (
     <div className="min-h-screen bg-black text-off-white">
-      <Helmet>
-        <title>{service.title} Dubai | DIGI-TEC Performance Center</title>
-        <meta name="description" content={`${service.description} Professional ${service.title.toLowerCase()} services in Dubai. OEM parts, expert technicians at DIGI-TEC Performance Center.`} />
-        <link rel="canonical" href={`https://digitec-performance.ae/services/${service.slug}`} />
-      </Helmet>
       <Header />
 
       {/* Hero */}
