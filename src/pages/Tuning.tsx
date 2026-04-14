@@ -1,11 +1,17 @@
 
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 import Header from '@/components/Header';
 import { Footer } from '@/components/Footer';
 
 const Tuning = () => {
   return (
     <div className="min-h-screen bg-black text-off-white">
+      <Helmet>
+        <title>Mercedes Performance Tuning Dubai | DIGI-TEC Performance Center</title>
+        <meta name="description" content="Unleash the full potential of your Mercedes-Benz with expert performance tuning in Dubai. ECU remapping, power upgrades, and precision calibration at DIGI-TEC." />
+        <link rel="canonical" href="https://digitec-performance.ae/tuning" />
+      </Helmet>
       <Header />
       <section
         className="relative min-h-[80vh] flex items-center justify-center bg-cover bg-center bg-no-repeat"
