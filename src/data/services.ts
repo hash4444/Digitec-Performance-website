@@ -1,3 +1,5 @@
+import routineMaintenanceImg from '@/assets/routine-maintenance.jpg';
+
 export interface ServiceData {
   slug: string;
   title: string;
