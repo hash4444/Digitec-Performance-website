@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 import { useParams, Link } from 'react-router-dom';
 import Header from '@/components/Header';
 import { Footer } from '@/components/Footer';
@@ -34,6 +35,11 @@ const ServicePage = () => {
 
   return (
     <div className="min-h-screen bg-black text-off-white">
+      <Helmet>
+        <title>{service.title} Dubai | DIGI-TEC Performance Center</title>
+        <meta name="description" content={`${service.description} Professional ${service.title.toLowerCase()} services in Dubai. OEM parts, expert technicians at DIGI-TEC Performance Center.`} />
+        <link rel="canonical" href={`https://digitec-performance.ae/services/${service.slug}`} />
+      </Helmet>
       <Header />
 
       {/* Hero */}
