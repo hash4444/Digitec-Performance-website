@@ -69,7 +69,7 @@ const Header = () => {
               <img 
                 src="/lovable-uploads/916789e0-b6fb-43d4-9d52-79899ce5a1c2.png" 
                 alt="DIGI-TEC Performance Center" 
-                className="h-8 md:h-12 w-auto filter brightness-110 font-sans text-lg"
+                className="h-10 md:h-14 w-auto filter brightness-110 font-sans text-lg"
               />
             </button>
 
