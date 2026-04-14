@@ -27,6 +27,12 @@ const Tuning = () => {
           <p className="text-lg md:text-xl text-off-white/80 max-w-2xl mx-auto">
             At Digi-Tec, we work in partnership with GAD Motors to provide high-performance ECU tuning solutions engineered to the highest standards. GAD Motors is known for its precision tuning and extensive testing, allowing us to offer optimized power gains, improved torque, and enhanced driving dynamics while maintaining engine reliability and safety.
           </p>
+          <p className="text-base md:text-lg text-off-white/60 mt-4">
+            For more info visit{' '}
+            <a href="https://www.gad-motors.de/" target="_blank" rel="noopener noreferrer" className="text-burnt-orange hover:underline">
+              www.gad-motors.de
+            </a>
+          </p>
         </div>
       </section>
       <TuningConfigurator />
