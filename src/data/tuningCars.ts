@@ -67,7 +67,7 @@ export const tuningCars: TuningCar[] = [
     name: 'AMG GT / GTS',
     brand: 'Mercedes',
     engine: 'M178',
-    image: mercedesImage,
+    image: amgGtImage,
     availableStages: ['stock', 'stage1', 'stage2', 'stage3', 'stage4', 'stage5', 'vip'],
     stages: {
       stock: mkStage(522, 670, 3.7, ['Factory Specifications'], '—', '—'),
@@ -115,7 +115,7 @@ export const tuningCars: TuningCar[] = [
     name: 'AMG GTC / GTR',
     brand: 'Mercedes',
     engine: 'M178',
-    image: mercedesImage,
+    image: amgGtrImage,
     availableStages: ['stock', 'stage1', 'stage2', 'stage3', 'stage4', 'stage5', 'vip'],
     stages: {
       stock: mkStage(557, 700, 3.6, ['Factory Specifications'], '—', '—'),
@@ -163,7 +163,7 @@ export const tuningCars: TuningCar[] = [
     name: 'E63 AMG',
     brand: 'Mercedes',
     engine: 'M177',
-    image: mercedesImage,
+    image: e63Image,
     availableStages: ['stock', 'stage1', 'stage2', 'stage3', 'stage4', 'vip'],
     stages: {
       stock: mkStage(612, 850, 3.4, ['Factory Specifications'], '—', '—'),
@@ -202,7 +202,7 @@ export const tuningCars: TuningCar[] = [
     name: 'G63 AMG',
     brand: 'Mercedes',
     engine: 'M177',
-    image: mercedesImage,
+    image: g63Image,
     availableStages: ['stock', 'stage1', 'stage2', 'stage3', 'stage4', 'vip'],
     stages: {
       stock: mkStage(585, 850, 4.5, ['Factory Specifications'], '—', '—'),
@@ -243,7 +243,7 @@ export const tuningCars: TuningCar[] = [
     name: 'AMG GT63 4-Door',
     brand: 'Mercedes',
     engine: 'M177',
-    image: mercedesImage,
+    image: gt63Image,
     availableStages: ['stock', 'stage1', 'stage2', 'stage3', 'stage4', 'vip'],
     stages: {
       stock: mkStage(630, 900, 3.2, ['Factory Specifications'], '—', '—'),
@@ -282,7 +282,7 @@ export const tuningCars: TuningCar[] = [
     name: 'S63 AMG',
     brand: 'Mercedes',
     engine: 'M177',
-    image: mercedesImage,
+    image: s63Image,
     availableStages: ['stock', 'stage1', 'stage2', 'stage3', 'stage4', 'vip'],
     stages: {
       stock: mkStage(612, 900, 3.5, ['Factory Specifications'], '—', '—'),
@@ -321,7 +321,7 @@ export const tuningCars: TuningCar[] = [
     name: 'S65 AMG',
     brand: 'Mercedes',
     engine: 'M279',
-    image: mercedesImage,
+    image: s63Image,
     availableStages: ['stock', 'stage1', 'stage2', 'stage3', 'stage4', 'stage5'],
     stages: {
       stock: mkStage(630, 1000, 4.1, ['Factory Specifications'], '—', '—'),
@@ -363,7 +363,7 @@ export const tuningCars: TuningCar[] = [
     name: 'C63 AMG (W205)',
     brand: 'Mercedes',
     engine: 'M177',
-    image: mercedesImage,
+    image: c63Image,
     availableStages: ['stock', 'stage1', 'stage2', 'stage3', 'stage4', 'stage5', 'vip'],
     stages: {
       stock: mkStage(476, 650, 4.0, ['Factory Specifications'], '—', '—'),
@@ -409,7 +409,7 @@ export const tuningCars: TuningCar[] = [
     name: 'GLC63 AMG',
     brand: 'Mercedes',
     engine: 'M177',
-    image: mercedesImage,
+    image: glc63Image,
     availableStages: ['stock', 'stage1', 'stage2', 'stage3', 'stage4', 'stage5'],
     stages: {
       stock: mkStage(476, 650, 3.8, ['Factory Specifications'], '—', '—'),
@@ -451,7 +451,7 @@ export const tuningCars: TuningCar[] = [
     name: 'C43 AMG (W205)',
     brand: 'Mercedes',
     engine: 'M276',
-    image: mercedesImage,
+    image: c43Image,
     availableStages: ['stock', 'stage1', 'stage2'],
     stages: {
       stock: mkStage(390, 520, 4.7, ['Factory Specifications'], '—', '—'),
@@ -471,7 +471,7 @@ export const tuningCars: TuningCar[] = [
     name: 'C450 AMG (W205)',
     brand: 'Mercedes',
     engine: 'M276',
-    image: mercedesImage,
+    image: c43Image,
     availableStages: ['stock', 'stage1', 'stage2'],
     stages: {
       stock: mkStage(367, 520, 4.9, ['Factory Specifications'], '—', '—'),
@@ -491,7 +491,7 @@ export const tuningCars: TuningCar[] = [
     name: 'C400 (W205)',
     brand: 'Mercedes',
     engine: 'M276',
-    image: mercedesImage,
+    image: c43Image,
     availableStages: ['stock', 'stage1', 'stage2'],
     stages: {
       stock: mkStage(333, 480, 5.2, ['Factory Specifications'], '—', '—'),
@@ -511,7 +511,7 @@ export const tuningCars: TuningCar[] = [
     name: 'CLA45 AMG',
     brand: 'Mercedes',
     engine: 'M133',
-    image: mercedesImage,
+    image: cla45Image,
     availableStages: ['stock', 'stage1', 'stage2'],
     stages: {
       stock: mkStage(381, 475, 4.2, ['Factory Specifications'], '—', '—'),
@@ -531,7 +531,7 @@ export const tuningCars: TuningCar[] = [
     name: 'A45 AMG',
     brand: 'Mercedes',
     engine: 'M133',
-    image: mercedesImage,
+    image: a45Image,
     availableStages: ['stock', 'stage1', 'stage2'],
     stages: {
       stock: mkStage(381, 475, 4.2, ['Factory Specifications'], '—', '—'),
@@ -551,7 +551,7 @@ export const tuningCars: TuningCar[] = [
     name: 'Aston Martin DB11',
     brand: 'Aston Martin',
     engine: 'M177',
-    image: mercedesImage,
+    image: db11Image,
     availableStages: ['stock', 'stage1', 'stage2', 'stage3', 'stage4', 'stage5'],
     stages: {
       stock: mkStage(503, 675, 3.9, ['Factory Specifications'], '—', '—'),
@@ -594,7 +594,7 @@ export const tuningCars: TuningCar[] = [
     name: 'Lamborghini Urus',
     brand: 'Lamborghini',
     engine: 'V8 Twin-Turbo',
-    image: porscheImage,
+    image: urusImage,
     availableStages: ['stock', 'stage1', 'stage2', 'stage3', 'stage4'],
     stages: {
       stock: mkStage(650, 850, 3.6, ['Factory Specifications'], '—', '—'),
