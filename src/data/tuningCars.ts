@@ -24,10 +24,19 @@ export interface TuningCar {
   availableStages: Stage[];
 }
 
-const mercedesImage = '/images/cars/mercedes-c63.png';
-const bmwImage = '/images/cars/bmw-m3.png';
-const audiImage = '/images/cars/audi-rs6.png';
-const porscheImage = '/images/cars/porsche-911.png';
+const amgGtImage = '/images/cars/amg-gt.png';
+const amgGtrImage = '/images/cars/amg-gtr.png';
+const e63Image = '/images/cars/e63.png';
+const g63Image = '/images/cars/g63.png';
+const gt63Image = '/images/cars/gt63.png';
+const s63Image = '/images/cars/s63.png';
+const c63Image = '/images/cars/c63.png';
+const glc63Image = '/images/cars/glc63.png';
+const c43Image = '/images/cars/c43.png';
+const cla45Image = '/images/cars/cla45.png';
+const a45Image = '/images/cars/a45.png';
+const db11Image = '/images/cars/db11.png';
+const urusImage = '/images/cars/urus.png';
 
 function generatePowerCurve(basePower: number, baseTorque: number): { rpm: number; power: number; torque: number }[] {
   return [
