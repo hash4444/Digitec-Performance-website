@@ -38,9 +38,10 @@ function CarSelector({ cars, selectedIndex, onSelect }: {
   const scrollToIndex = useCallback((index: number) => {
     const el = scrollRef.current;
     if (!el) return;
-    const itemWidth = 280;
-    const center = el.clientWidth / 2 - itemWidth / 2;
-    el.scrollTo({ left: index * itemWidth - center + 140, behavior: 'smooth' });
+    const child = el.children[index] as HTMLElement | undefined;
+    if (!child) return;
+    const childCenter = child.offsetLeft + child.offsetWidth / 2;
+    el.scrollTo({ left: childCenter - el.clientWidth / 2, behavior: 'smooth' });
   }, []);
 
   useEffect(() => {
