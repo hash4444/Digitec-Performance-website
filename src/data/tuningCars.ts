@@ -1,4 +1,6 @@
+// Tuning cars data
 export type Stage = 'stock' | 'stage1' | 'stage2' | 'stage3' | 'stage4' | 'stage5' | 'vip';
+
 
 export interface PerformanceSpec {
   hp: number;
