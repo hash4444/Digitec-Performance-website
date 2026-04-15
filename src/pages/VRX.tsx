@@ -4,7 +4,7 @@ import { useSeo } from '@/hooks/use-seo';
 import Header from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { motion } from 'framer-motion';
-import { Zap, Gauge, Shield, Settings, Crown, ChevronDown, Sparkles, Car } from 'lucide-react';
+import { Zap, Gauge, Shield, Settings, Crown, ChevronDown } from 'lucide-react';
 
 const specs = [
   { label: 'Engine', value: 'V6 Biturbo', icon: Settings },
