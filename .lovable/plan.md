@@ -1,25 +1,29 @@
 
 
-# Fix 404s for Google-Indexed URLs with "-dubai" Suffix
+## Add Founder's Message Section to VRX Page
 
-## Problem
-Google has indexed URLs like `/services/mercedes-repair-dubai/` but your actual routes use `/services/mercedes-repair`. Visitors clicking those Google results get a 404.
+### Placement
+Between the "Series vs GAD VRX" comparison table and the final CTA section.
 
-## Solution
-Add a redirect component that catches any `/services/:slug` where the slug ends in `-dubai` and redirects to the correct page without `-dubai`. This is cleaner than duplicating pages and avoids SEO duplicate content penalties.
+### Layout (matching the screenshot reference)
+A light/off-white background section with a 3-column layout:
 
-## Technical Details
+1. **Left column**: Two VRX car images stacked vertically with "V-CLASS VRX" label and a "Watch video" link
+2. **Center column**: Large photo of Sebastian Daminger (founder)
+3. **Right column**: Headline, two paragraphs of copy, a red italic quote, signature image, and name/title
 
-### 1. Create a redirect wrapper in `src/pages/ServicePage.tsx`
-Before rendering the service page, check if the slug ends with `-dubai`. If it does, strip `-dubai` and redirect using `<Navigate to={...} replace />`. This sends a client-side redirect to the correct URL.
+On mobile: stack vertically (images → founder photo → text).
 
-### 2. Update the sitemap (`public/sitemap.xml`)
-Change all URLs to match the actual routes (without `-dubai` suffix) so Google re-indexes the correct URLs going forward.
+### Assets needed
+- Copy the uploaded screenshot as reference only (not embedded)
+- Will need the founder's photo, car thumbnails, and signature as separate images. Since we only have the screenshot, we'll use placeholder structure and the screenshot crops or placeholder paths (`/images/vrx-founder.jpg`, `/images/vrx-signature.png`, etc.) that can be replaced later with real assets.
 
-### 3. No new routes needed
-The existing `/services/:slug` route already captures these URLs. We just add logic inside `ServicePage` to handle the redirect.
+### Content (from screenshot, removing dashes per memory rules)
+- Headline: "WE WERE READY TO TAKE THE LEAD IN DEVELOPING A PREMIUM VAN OURSELVES."
+- Body paragraphs about the VRX vision
+- Red quote: *"We don't sell cars. At GAD, we build them for those who never ask 'Why?' because they know there is no other level for them."*
+- Signed by: Sebastian Daminger, GAD-MOTORS
 
-## Files Changed
-- `src/pages/ServicePage.tsx` — Add redirect logic for slugs ending in `-dubai`
-- `public/sitemap.xml` — Ensure URLs match actual routes (already correct, will verify)
+### Technical Changes
+- **`src/pages/VRX.tsx`**: Add a new section between the comparison table and CTA section with the 3-column responsive grid layout, using a light background (`bg-[#f0eeee]` or similar) to match the screenshot's off-white tone.
 
