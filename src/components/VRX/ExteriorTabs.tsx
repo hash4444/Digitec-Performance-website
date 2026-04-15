@@ -19,17 +19,20 @@ const motorSubTabs = [
     id: 'engine-parts',
     label: 'Engine Parts',
     content: (
-      <div className="space-y-4 text-sm text-white/70">
-        <p className="font-semibold text-off-white">Engine Parts</p>
-        <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-2.5">
-          {['Sump', 'Engine mounts', 'Oil pump suction pipe', 'Engine gasket set', 'Lambda sensors', 'Various accessories', 'Generator', 'Starter', 'Oil cooler', 'Compressor intercooler LS2', 'Low temperature cooler'].map((item) => (
-            <li key={item} className="flex items-start gap-2.5">
-              <span className="mt-1.5 w-2 h-2 rounded-full bg-burnt-orange shrink-0" />
-              <span>{item}</span>
-            </li>
-          ))}
-        </ul>
-        <p className="text-white/50">LS2 compressor intercooler, low temperature cooler</p>
+      <div className="flex flex-col md:flex-row gap-6 text-sm text-white/70">
+        <div className="flex-1 space-y-4">
+          <p className="font-semibold text-off-white">Engine Parts</p>
+          <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-2.5">
+            {['Sump', 'Engine mounts', 'Oil pump suction pipe', 'Engine gasket set', 'Lambda sensors', 'Various accessories', 'Generator', 'Starter', 'Oil cooler', 'Compressor intercooler LS2', 'Low temperature cooler'].map((item) => (
+              <li key={item} className="flex items-start gap-2.5">
+                <span className="mt-1.5 w-2 h-2 rounded-full bg-burnt-orange shrink-0" />
+                <span>{item}</span>
+              </li>
+            ))}
+          </ul>
+          <p className="text-white/50">LS2 compressor intercooler, low temperature cooler</p>
+        </div>
+        <img src="/images/vrx-engine-bay.png" alt="VRX Engine Bay" className="w-full md:w-64 lg:w-72 h-auto rounded-2xl object-cover shrink-0" />
       </div>
     ),
   },
@@ -37,16 +40,19 @@ const motorSubTabs = [
     id: 'electronics',
     label: 'Electronics',
     content: (
-      <div className="space-y-4 text-sm text-white/70">
-        <p className="font-semibold text-off-white">Engine Control Unit</p>
-        <ul className="space-y-2.5">
-          {['New control unit', 'Software for CPC control unit + software for the transmission'].map((item) => (
-            <li key={item} className="flex items-start gap-2.5">
-              <span className="mt-1.5 w-2 h-2 rounded-full bg-burnt-orange shrink-0" />
-              <span>{item}</span>
-            </li>
-          ))}
-        </ul>
+      <div className="flex flex-col md:flex-row gap-6 text-sm text-white/70">
+        <div className="flex-1 space-y-4">
+          <p className="font-semibold text-off-white">Engine Control Unit</p>
+          <ul className="space-y-2.5">
+            {['New control unit', 'Software for CPC control unit + software for the transmission'].map((item) => (
+              <li key={item} className="flex items-start gap-2.5">
+                <span className="mt-1.5 w-2 h-2 rounded-full bg-burnt-orange shrink-0" />
+                <span>{item}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+        <img src="/images/vrx-engine-bay.png" alt="VRX Engine Bay" className="w-full md:w-64 lg:w-72 h-auto rounded-2xl object-cover shrink-0" />
       </div>
     ),
   },
