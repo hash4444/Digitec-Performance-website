@@ -32,16 +32,12 @@ const FounderMessage = () => {
                 </div>
               </div>
             </a>
-            <div className="mt-2">
-              <p className="text-xs uppercase tracking-[0.2em] font-bold text-white/70 mb-1">V-CLASS VRX</p>
-              <a
-                href="https://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-xs text-red-600 font-semibold hover:underline inline-flex items-center gap-1"
-              >
-                ▶ Watch video
-              </a>
+            <div className="relative rounded-2xl overflow-hidden mt-4">
+              <img
+                src="/images/vrx-founder-car2.jpg"
+                alt="VRX V-Class"
+                className="w-full h-auto object-cover rounded-2xl"
+              />
             </div>
           </motion.div>
 
