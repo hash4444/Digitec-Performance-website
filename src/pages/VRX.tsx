@@ -62,11 +62,6 @@ const exteriorFeatures = [
   },
 ];
 
-const interiorImages = [
-  { src: '/placeholder.svg', alt: 'VRX Interior Overview' },
-  { src: '/placeholder.svg', alt: 'VRX Seating' },
-  { src: '/placeholder.svg', alt: 'VRX Dashboard' },
-];
 
 const exteriorImage = { src: '/images/vrx-exterior.jpg', alt: 'VRX Exterior by GAD Motors' };
 
