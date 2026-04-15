@@ -1,0 +1,241 @@
+
+import React from 'react';
+import { useSeo } from '@/hooks/use-seo';
+import Header from '@/components/Header';
+import { Footer } from '@/components/Footer';
+import { motion } from 'framer-motion';
+import { Zap, Gauge, Shield, Settings, Crown, ChevronDown } from 'lucide-react';
+
+const specs = [
+  { label: 'Engine', value: 'V6 Biturbo', icon: Settings },
+  { label: 'Power', value: '300+ HP', icon: Zap },
+  { label: 'Torque', value: '500+ Nm', icon: Gauge },
+  { label: 'Drive', value: 'AWD', icon: Shield },
+];
+
+const features = [
+  {
+    title: 'Performance ECU Tuning',
+    description: 'Custom GAD Motors ECU calibration for maximum power delivery and throttle response.',
+  },
+  {
+    title: 'Bespoke Interior',
+    description: 'Handcrafted luxury interior with premium materials, custom seating, and ambient lighting.',
+  },
+  {
+    title: 'Aerodynamic Body Kit',
+    description: 'Custom designed exterior enhancements for improved aerodynamics and a commanding presence.',
+  },
+  {
+    title: 'Sport Suspension',
+    description: 'Tuned suspension system for the perfect balance of comfort and dynamic handling.',
+  },
+  {
+    title: 'Premium Sound System',
+    description: 'High-fidelity audio system engineered for an immersive listening experience.',
+  },
+  {
+    title: 'Exclusive Wheels',
+    description: 'Forged alloy wheels designed exclusively for the VRX, combining style and performance.',
+  },
+];
+
+const galleryImages = [
+  { src: '/placeholder.svg', alt: 'VRX Front View' },
+  { src: '/placeholder.svg', alt: 'VRX Interior' },
+  { src: '/placeholder.svg', alt: 'VRX Rear View' },
+  { src: '/placeholder.svg', alt: 'VRX Detail' },
+  { src: '/placeholder.svg', alt: 'VRX Engine Bay' },
+  { src: '/placeholder.svg', alt: 'VRX Side Profile' },
+];
+
+const VRX = () => {
+  useSeo({
+    title: 'VRX Mercedes V-Class by GAD Motors | DIGI-TEC Performance Center Dubai',
+    description: 'Discover the VRX, a modified Mercedes V-Class by GAD Motors. Performance tuning, luxury interior, and bespoke design. Available exclusively at DIGI-TEC Dubai.',
+    canonical: 'https://digitecme.com/vrx',
+  });
+
+  return (
+    <div className="min-h-screen bg-black text-off-white">
+      <Header />
+
+      {/* Hero Section */}
+      <section className="relative min-h-[80vh] md:min-h-screen flex items-center justify-center overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-b from-black via-charcoal/50 to-black" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_rgba(255,107,53,0.08)_0%,_transparent_70%)]" />
+
+        <div className="relative z-10 text-center px-5 sm:px-6 max-w-5xl mx-auto py-20 md:py-0">
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.2 }}
+            className="text-burnt-orange text-xs sm:text-sm uppercase tracking-[0.3em] font-semibold mb-4"
+          >
+            By GAD Motors × Digi-Tec
+          </motion.p>
+
+          <motion.h1
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.4 }}
+            className="text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-black mb-4 md:mb-6 tracking-tighter"
+          >
+            <span className="text-burnt-orange">VRX</span>
+          </motion.h1>
+
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.6 }}
+            className="text-lg sm:text-xl md:text-2xl text-white/60 mb-3"
+          >
+            Mercedes V-Class, Redefined.
+          </motion.p>
+
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.8 }}
+            className="text-sm sm:text-base md:text-lg text-white/40 max-w-2xl mx-auto leading-relaxed mb-10"
+          >
+            A bespoke modified Mercedes V-Class engineered by GAD Motors, combining performance, luxury, and exclusivity into one extraordinary machine.
+          </motion.p>
+
+          {/* Hero Image Placeholder */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.95 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ delay: 1, duration: 0.6 }}
+            className="relative max-w-3xl mx-auto mb-10"
+          >
+            <div className="aspect-[16/9] rounded-3xl bg-white/[0.03] border border-white/[0.06] flex items-center justify-center overflow-hidden">
+              <img
+                src="/placeholder.svg"
+                alt="VRX Mercedes V-Class"
+                className="w-full h-full object-cover opacity-30"
+              />
+              <span className="absolute text-white/20 text-sm">Hero image placeholder</span>
+            </div>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 1.4 }}
+            className="animate-bounce"
+          >
+            <ChevronDown className="w-6 h-6 text-burnt-orange mx-auto" />
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Specs Bar */}
+      <section className="py-12 md:py-16 border-y border-white/[0.06]">
+        <div className="max-w-5xl mx-auto px-5 sm:px-6">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
+            {specs.map((spec, i) => (
+              <motion.div
+                key={spec.label}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.1 }}
+                className="text-center p-4 md:p-6 rounded-2xl bg-white/[0.02] border border-white/[0.04]"
+              >
+                <spec.icon className="w-5 h-5 text-burnt-orange mx-auto mb-2" />
+                <p className="text-xs uppercase tracking-widest text-white/40 mb-1">{spec.label}</p>
+                <p className="text-xl md:text-2xl font-bold text-off-white">{spec.value}</p>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Features Section */}
+      <section className="py-16 md:py-24">
+        <div className="max-w-6xl mx-auto px-5 sm:px-6">
+          <div className="text-center mb-12 md:mb-16">
+            <p className="text-burnt-orange text-xs uppercase tracking-[0.3em] font-semibold mb-3">What Makes It Special</p>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-black">
+              Engineered for <span className="text-burnt-orange">Excellence</span>
+            </h2>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6">
+            {features.map((feature, i) => (
+              <motion.div
+                key={feature.title}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.08 }}
+                className="p-6 md:p-8 rounded-2xl bg-white/[0.02] border border-white/[0.06] hover:border-burnt-orange/20 transition-all duration-300 group"
+              >
+                <Crown className="w-5 h-5 text-burnt-orange mb-3 group-hover:scale-110 transition-transform" />
+                <h3 className="text-lg font-bold mb-2 text-off-white">{feature.title}</h3>
+                <p className="text-sm text-white/50 leading-relaxed">{feature.description}</p>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Gallery Section */}
+      <section className="py-16 md:py-24 bg-white/[0.01]">
+        <div className="max-w-6xl mx-auto px-5 sm:px-6">
+          <div className="text-center mb-12 md:mb-16">
+            <p className="text-burnt-orange text-xs uppercase tracking-[0.3em] font-semibold mb-3">Gallery</p>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-black">
+              Every Angle, <span className="text-burnt-orange">Perfected</span>
+            </h2>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-5">
+            {galleryImages.map((img, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, scale: 0.95 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.08 }}
+                className="aspect-[4/3] rounded-2xl overflow-hidden bg-white/[0.03] border border-white/[0.06] group cursor-pointer"
+              >
+                <img
+                  src={img.src}
+                  alt={img.alt}
+                  className="w-full h-full object-cover opacity-30 group-hover:opacity-50 group-hover:scale-105 transition-all duration-500"
+                />
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-16 md:py-24">
+        <div className="max-w-3xl mx-auto px-5 sm:px-6 text-center">
+          <Crown className="w-10 h-10 text-burnt-orange mx-auto mb-4" />
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-black mb-4">
+            Interested in the <span className="text-burnt-orange">VRX</span>?
+          </h2>
+          <p className="text-white/50 mb-8 max-w-lg mx-auto text-sm md:text-base">
+            Contact our team to learn more about the VRX Mercedes V-Class and schedule an exclusive viewing at Digi-Tec Performance Center.
+          </p>
+          <a
+            href={`https://wa.me/97143402223?text=${encodeURIComponent("Hi, I'm interested in learning more about the VRX Mercedes V-Class.")}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center bg-burnt-orange hover:bg-burnt-orange/90 text-black font-bold text-sm sm:text-base px-8 sm:px-10 py-3.5 sm:py-4 rounded-2xl transition-all duration-300 hover:scale-105 shadow-xl hover:shadow-burnt-orange/30"
+          >
+            Enquire Now
+          </a>
+        </div>
+      </section>
+
+      <Footer />
+    </div>
+  );
+};
+
+export default VRX;
