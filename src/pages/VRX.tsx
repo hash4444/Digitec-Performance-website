@@ -70,9 +70,9 @@ const VRX = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
-            className="text-burnt-orange text-xs sm:text-sm uppercase tracking-[0.3em] font-semibold mb-4"
+            className="text-burnt-orange text-xs sm:text-sm uppercase tracking-[0.3em] font-semibold mb-4 text-primary-foreground"
           >
-            By GAD Motors × Digi-Tec
+            By GAD Motors
           </motion.p>
 
           <motion.h1
@@ -81,7 +81,7 @@ const VRX = () => {
             transition={{ delay: 0.4 }}
             className="text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-black mb-4 md:mb-6 tracking-tighter"
           >
-            <span className="text-burnt-orange">VRX</span>
+            <span className="text-burnt-orange text-red-600">VRX</span>
           </motion.h1>
 
           <motion.p
