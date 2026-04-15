@@ -173,6 +173,7 @@ const SubTabButton = ({ active, label, onClick }: { active: boolean; label: stri
 const ExteriorTabs = ({ activeTab, setActiveTab }: Props) => {
   const [carbonSub, setCarbonSub] = useState<'pkg1' | 'pkg2'>('pkg1');
   const [wheelsSub, setWheelsSub] = useState<'classic' | 'ceramic'>('classic');
+  const [motorSub, setMotorSub] = useState('motor');
 
   return (
     <>
@@ -203,8 +204,31 @@ const ExteriorTabs = ({ activeTab, setActiveTab }: Props) => {
             transition={{ duration: 0.2 }}
             className="p-6 md:p-8 rounded-2xl bg-white/[0.02] border border-white/[0.06]"
           >
-            <h3 className="text-lg font-bold mb-2 text-off-white">Motor</h3>
-            <p className="text-sm text-white/50 leading-relaxed">Content coming soon.</p>
+            <div className="flex flex-wrap gap-x-5 gap-y-2 mb-6">
+              {motorSubTabs.map((sub) => (
+                <SubTabButton
+                  key={sub.id}
+                  active={motorSub === sub.id}
+                  label={sub.label}
+                  onClick={() => setMotorSub(sub.id)}
+                />
+              ))}
+            </div>
+            <AnimatePresence mode="wait">
+              {motorSubTabs.map((sub) =>
+                motorSub === sub.id ? (
+                  <motion.div
+                    key={sub.id}
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                    transition={{ duration: 0.15 }}
+                  >
+                    {sub.content}
+                  </motion.div>
+                ) : null
+              )}
+            </AnimatePresence>
           </motion.div>
         )}
 
