@@ -204,6 +204,11 @@ const ExteriorTabs = ({ activeTab, setActiveTab }: Props) => {
             transition={{ duration: 0.2 }}
             className="p-6 md:p-8 rounded-2xl bg-white/[0.02] border border-white/[0.06]"
           >
+            <img
+              src="/images/vrx-motor.png"
+              alt="GAD Motors VRX Engine"
+              className="w-full h-auto rounded-2xl mb-6"
+            />
             <div className="flex flex-wrap gap-x-5 gap-y-2 mb-6">
               {motorSubTabs.map((sub) => (
                 <SubTabButton
