@@ -33,20 +33,6 @@ const features = [
   },
 ];
 
-const exteriorFeatures = [
-  {
-    title: 'Aerodynamic Body Kit',
-    description: 'Custom designed exterior enhancements for improved aerodynamics and a commanding presence.',
-  },
-  {
-    title: 'Exclusive Wheels',
-    description: 'Forged alloy wheels designed exclusively for the VRX, combining style and performance.',
-  },
-  {
-    title: 'Custom Paint Finish',
-    description: 'Bespoke paint options with multi-layer finishes for a truly unique appearance.',
-  },
-];
 
 const exteriorImage = { src: '/images/vrx-exterior.jpg', alt: 'VRX Exterior by GAD Motors' };
 
