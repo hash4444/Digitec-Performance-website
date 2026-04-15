@@ -7,11 +7,14 @@ const motorSubTabs = [
     id: 'motor',
     label: 'Motor',
     content: (
-      <div className="space-y-2 text-sm text-white/70">
-        <p className="font-semibold text-off-white">GAD M177 447</p>
-        <p>Gasoline V8 BiTurbo Displacement 3998 cc</p>
-        <p>Power 585–920 hp</p>
-        <p>Torque 900–1150 Nm</p>
+      <div className="flex flex-col md:flex-row gap-6 text-sm text-white/70">
+        <div className="flex-1 space-y-2">
+          <p className="font-semibold text-off-white">GAD M177 447</p>
+          <p>Gasoline V8 BiTurbo Displacement 3998 cc</p>
+          <p>Power 585–920 hp</p>
+          <p>Torque 900–1150 Nm</p>
+        </div>
+        <img src="/images/vrx-motor.png" alt="GAD Motors VRX Engine" className="w-full md:w-64 lg:w-72 h-auto rounded-2xl object-cover shrink-0" />
       </div>
     ),
   },
@@ -219,11 +222,6 @@ const ExteriorTabs = ({ activeTab, setActiveTab }: Props) => {
             transition={{ duration: 0.2 }}
             className="p-6 md:p-8 rounded-2xl bg-white/[0.02] border border-white/[0.06]"
           >
-            <img
-              src="/images/vrx-motor.png"
-              alt="GAD Motors VRX Engine"
-              className="w-full h-auto rounded-2xl mb-6"
-            />
             <div className="flex flex-wrap gap-x-5 gap-y-2 mb-6">
               {motorSubTabs.map((sub) => (
                 <SubTabButton
