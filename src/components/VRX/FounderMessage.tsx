@@ -34,7 +34,7 @@ const FounderMessage = () => {
             </a>
             <div className="relative rounded-2xl overflow-hidden mt-4">
               <img
-                src="/images/vrx-founder-car2.jpg"
+                src="https://vrx.gadcloud.de/wp-content/themes/blankslate/img/owner2.png?_v=1759610925260"
                 alt="VRX V-Class"
                 className="w-full h-auto object-cover rounded-2xl"
               />
