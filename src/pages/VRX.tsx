@@ -32,21 +32,6 @@ const features = [
   },
 ];
 
-const interiorFeatures = [
-  {
-    title: 'Bespoke Interior',
-    description: 'Handcrafted luxury interior with premium materials, custom seating, and ambient lighting.',
-  },
-  {
-    title: 'Premium Sound System',
-    description: 'High-fidelity audio system engineered for an immersive listening experience.',
-  },
-  {
-    title: 'Ambient Lighting',
-    description: 'Custom LED ambient lighting throughout the cabin for a refined atmosphere.',
-  },
-];
-
 const exteriorFeatures = [
   {
     title: 'Aerodynamic Body Kit',
