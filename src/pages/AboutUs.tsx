@@ -128,7 +128,7 @@ const AboutUs = () => {
         </div>
       </section>
 
-      <FinalCTA />
+      
       <Footer />
     </div>
   );
