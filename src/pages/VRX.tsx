@@ -221,7 +221,7 @@ const VRX = () => {
                     <button
                       key={tab.id}
                       onClick={() => setActiveExteriorTab(tab.id)}
-                      className={`px-5 py-2.5 rounded-2xl text-sm font-semibold transition-all duration-300 ${
+                      className={`rounded-2xl text-sm font-semibold transition-all duration-300 px-[30px] mx-0 py-[10px] text-center ${
                         activeExteriorTab === tab.id
                           ? 'bg-burnt-orange text-black'
                           : 'bg-white/[0.04] text-white/50 border border-white/[0.06] hover:border-white/10 hover:text-white/70'
