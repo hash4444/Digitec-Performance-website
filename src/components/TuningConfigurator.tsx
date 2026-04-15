@@ -33,7 +33,14 @@ function CarSelector({ cars, selectedIndex, onSelect }: {
 }) {
   const scrollRef = useRef<HTMLDivElement>(null);
   const [isDragging, setIsDragging] = useState(false);
+  const [isMobile, setIsMobile] = useState(typeof window !== 'undefined' && window.innerWidth < 640);
   const dragStart = useRef({ x: 0, scrollLeft: 0 });
+
+  useEffect(() => {
+    const handler = () => setIsMobile(window.innerWidth < 640);
+    window.addEventListener('resize', handler);
+    return () => window.removeEventListener('resize', handler);
+  }, []);
 
   const scrollToIndex = useCallback((index: number) => {
     const el = scrollRef.current;
@@ -66,19 +73,19 @@ function CarSelector({ cars, selectedIndex, onSelect }: {
 
   return (
     <div className="relative">
-      <button onClick={prev} className="absolute left-2 md:left-4 top-1/2 -translate-y-1/2 z-20 w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white/60 hover:text-burnt-orange hover:border-burnt-orange/40 transition-all">
-        <ChevronLeft className="w-5 h-5" />
+      <button onClick={prev} className="absolute left-1 md:left-4 top-1/2 -translate-y-1/2 z-20 w-8 h-8 md:w-10 md:h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white/60 hover:text-burnt-orange hover:border-burnt-orange/40 transition-all">
+        <ChevronLeft className="w-4 h-4 md:w-5 md:h-5" />
       </button>
-      <button onClick={next} className="absolute right-2 md:right-4 top-1/2 -translate-y-1/2 z-20 w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white/60 hover:text-burnt-orange hover:border-burnt-orange/40 transition-all">
-        <ChevronRight className="w-5 h-5" />
+      <button onClick={next} className="absolute right-1 md:right-4 top-1/2 -translate-y-1/2 z-20 w-8 h-8 md:w-10 md:h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white/60 hover:text-burnt-orange hover:border-burnt-orange/40 transition-all">
+        <ChevronRight className="w-4 h-4 md:w-5 md:h-5" />
       </button>
 
-      <div className="absolute left-0 top-0 bottom-0 w-24 md:w-40 bg-gradient-to-r from-black to-transparent z-10 pointer-events-none" />
-      <div className="absolute right-0 top-0 bottom-0 w-24 md:w-40 bg-gradient-to-l from-black to-transparent z-10 pointer-events-none" />
+      <div className="absolute left-0 top-0 bottom-0 w-16 md:w-40 bg-gradient-to-r from-black to-transparent z-10 pointer-events-none" />
+      <div className="absolute right-0 top-0 bottom-0 w-16 md:w-40 bg-gradient-to-l from-black to-transparent z-10 pointer-events-none" />
 
       <div
         ref={scrollRef}
-        className="flex overflow-x-auto scrollbar-hide gap-2 py-8 px-[40%] cursor-grab active:cursor-grabbing"
+        className="flex overflow-x-auto scrollbar-hide gap-2 py-6 md:py-8 px-[35%] md:px-[40%] cursor-grab active:cursor-grabbing"
         style={{ scrollbarWidth: 'none', msOverflowStyle: 'none', WebkitOverflowScrolling: 'touch' }}
         onMouseDown={handleMouseDown}
         onMouseMove={handleMouseMove}
@@ -92,7 +99,7 @@ function CarSelector({ cars, selectedIndex, onSelect }: {
               key={car.id}
               onClick={() => onSelect(i)}
               className="flex-shrink-0 flex flex-col items-center cursor-pointer transition-all duration-500"
-              style={{ width: 280 }}
+              style={{ width: isMobile ? 220 : 280 }}
             >
               <div className={`relative transition-all duration-500 ${isSelected ? 'scale-110' : 'scale-75 opacity-40 blur-[1px]'}`}>
                 {isSelected && (
@@ -101,7 +108,7 @@ function CarSelector({ cars, selectedIndex, onSelect }: {
                 <img
                   src={car.image}
                   alt={car.name}
-                  className="w-64 h-40 object-contain drop-shadow-2xl"
+                  className="w-48 h-28 md:w-64 md:h-40 object-contain drop-shadow-2xl"
                   loading="lazy"
                   draggable={false}
                 />
@@ -125,13 +132,13 @@ function CarSelector({ cars, selectedIndex, onSelect }: {
         })}
       </div>
 
-      <div className="flex justify-center gap-1.5 mt-2">
+      <div className="flex justify-center gap-1 md:gap-1.5 mt-2 flex-wrap px-4">
         {cars.map((_, i) => (
           <button
             key={i}
             onClick={() => onSelect(i)}
-            className={`w-2 h-2 rounded-full transition-all duration-300 ${
-              i === selectedIndex ? 'bg-burnt-orange w-6' : 'bg-white/20 hover:bg-white/40'
+            className={`w-1.5 h-1.5 md:w-2 md:h-2 rounded-full transition-all duration-300 ${
+              i === selectedIndex ? 'bg-burnt-orange w-4 md:w-6' : 'bg-white/20 hover:bg-white/40'
             }`}
           />
         ))}
@@ -143,7 +150,7 @@ function CarSelector({ cars, selectedIndex, onSelect }: {
 // ─── Stage Selector ───
 function StageSelector({ stages, active, onChange }: { stages: Stage[]; active: Stage; onChange: (s: Stage) => void }) {
   return (
-    <div className="flex items-center justify-center gap-1 md:gap-2 p-1.5 bg-white/[0.03] rounded-2xl border border-white/[0.06] backdrop-blur-sm mx-auto w-fit flex-wrap">
+    <div className="flex items-center justify-center gap-1 md:gap-2 p-1.5 bg-white/[0.03] rounded-2xl border border-white/[0.06] backdrop-blur-sm mx-4 md:mx-auto md:w-fit flex-wrap">
       {stages.map((stage) => {
         const isActive = stage === active;
         const isVip = stage === 'vip';
@@ -151,7 +158,7 @@ function StageSelector({ stages, active, onChange }: { stages: Stage[]; active: 
           <button
             key={stage}
             onClick={() => onChange(stage)}
-            className={`relative px-3 md:px-5 py-2.5 rounded-xl text-xs md:text-sm font-semibold uppercase tracking-wider transition-all duration-300 ${
+            className={`relative px-2.5 sm:px-3 md:px-5 py-2 sm:py-2.5 rounded-xl text-[10px] sm:text-xs md:text-sm font-semibold uppercase tracking-wider transition-all duration-300 ${
               isActive
                 ? isVip
                   ? 'bg-gradient-to-r from-burnt-orange to-yellow-500 text-black shadow-lg shadow-burnt-orange/30'
@@ -235,7 +242,7 @@ export default function TuningConfigurator() {
   const intensity = stageIdx / (availableStages.length - 1) * 0.25;
 
   return (
-    <section className={`relative py-16 md:py-24 transition-colors duration-700 ${isVip ? 'bg-gradient-to-b from-black via-[#0a0500] to-black' : 'bg-black'}`}>
+    <section className={`relative py-10 md:py-24 transition-colors duration-700 overflow-hidden ${isVip ? 'bg-gradient-to-b from-black via-[#0a0500] to-black' : 'bg-black'}`}>
       {isVip && (
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-burnt-orange/[0.06] rounded-full blur-[120px]" />
@@ -244,11 +251,11 @@ export default function TuningConfigurator() {
 
       <div className="relative z-10 max-w-7xl mx-auto px-4">
         <div className="text-center mb-12">
-          <p className="text-burnt-orange text-xs uppercase tracking-[0.3em] font-semibold mb-3">Performance Configurator</p>
-          <h2 className="text-3xl md:text-5xl font-black text-off-white">
+          <p className="text-burnt-orange text-xs uppercase tracking-[0.3em] font-semibold mb-2 md:mb-3">Performance Configurator</p>
+          <h2 className="text-2xl sm:text-3xl md:text-5xl font-black text-off-white">
             Build Your <span className="text-burnt-orange">Power</span>
           </h2>
-          <p className="text-white/40 mt-3 max-w-lg mx-auto text-sm md:text-base">
+          <p className="text-white/40 mt-2 md:mt-3 max-w-lg mx-auto text-xs sm:text-sm md:text-base px-4">
             Select your vehicle and configure your performance stage
           </p>
         </div>
@@ -284,7 +291,7 @@ export default function TuningConfigurator() {
             key={`${car.id}-img`}
             src={car.image}
             alt={car.name}
-            className="relative z-10 w-[340px] md:w-[500px] h-auto object-contain drop-shadow-2xl"
+            className="relative z-10 w-[260px] sm:w-[340px] md:w-[500px] h-auto object-contain drop-shadow-2xl"
             style={{
               filter: `brightness(${1 - intensity * 0.4}) contrast(${1 + intensity * 0.3}) saturate(${1 + intensity * 0.2})`,
             }}
