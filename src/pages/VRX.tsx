@@ -216,7 +216,7 @@ const VRX = () => {
             ];
             return (
               <>
-                <div className="flex gap-3 mb-6">
+                <div className="flex justify-center gap-3 mb-6">
                   {tabs.map((tab) => (
                     <button
                       key={tab.id}
