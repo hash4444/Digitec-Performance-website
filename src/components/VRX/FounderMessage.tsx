@@ -14,7 +14,7 @@ const FounderMessage = () => {
             className="flex flex-col gap-4"
           >
             <a
-              href="https://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID"
+              href="https://www.youtube.com/watch?v=dqZZtKhT6_k"
               target="_blank"
               rel="noopener noreferrer"
               className="relative rounded-2xl overflow-hidden group block"
