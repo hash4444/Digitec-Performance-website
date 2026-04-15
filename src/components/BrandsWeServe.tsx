@@ -198,7 +198,7 @@ export const BrandsWeServe = () => {
                     <Tooltip key={brand.name}>
                       <TooltipTrigger asChild>
                         <div
-                          className="absolute w-18 lg:w-22 h-18 lg:h-22 flex items-center justify-center group cursor-pointer"
+                          className="absolute w-16 lg:w-20 h-16 lg:h-20 flex items-center justify-center group cursor-pointer"
                           style={{
                             left: '50%',
                             top: '50%',
