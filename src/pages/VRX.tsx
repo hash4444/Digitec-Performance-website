@@ -4,7 +4,7 @@ import { useSeo } from '@/hooks/use-seo';
 import Header from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { motion } from 'framer-motion';
-import { Zap, Gauge, Shield, Settings, Crown, ChevronDown, Sparkles, Car } from 'lucide-react';
+import { Zap, Gauge, Shield, Settings, Crown, ChevronDown } from 'lucide-react';
 
 const specs = [
   { label: 'Engine', value: 'V6 Biturbo', icon: Settings },
@@ -62,11 +62,6 @@ const exteriorFeatures = [
   },
 ];
 
-const interiorImages = [
-  { src: '/placeholder.svg', alt: 'VRX Interior Overview' },
-  { src: '/placeholder.svg', alt: 'VRX Seating' },
-  { src: '/placeholder.svg', alt: 'VRX Dashboard' },
-];
 
 const exteriorImage = { src: '/images/vrx-exterior.jpg', alt: 'VRX Exterior by GAD Motors' };
 
@@ -157,29 +152,23 @@ const VRX = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
             >
-              <Sparkles className="w-6 h-6 text-burnt-orange mx-auto mb-3" />
               <p className="text-burnt-orange text-xs uppercase tracking-[0.3em] font-semibold mb-3">Interior</p>
-              <h2 className="text-3xl sm:text-4xl md:text-5xl font-black">
-                Luxury <span className="text-burnt-orange">Reimagined</span>
-              </h2>
             </motion.div>
           </div>
 
-          {/* Interior Gallery */}
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 md:gap-5 mb-10 md:mb-14">
-            {interiorImages.map((img, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, scale: 0.95 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.1 }}
-                className="aspect-[4/3] rounded-2xl overflow-hidden bg-white/[0.03] border border-white/[0.06]"
-              >
-                <img src={img.src} alt={img.alt} className="w-full h-full object-cover opacity-30" />
-              </motion.div>
-            ))}
-          </div>
+          {/* Interior Image */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            className="rounded-2xl overflow-hidden mb-10 md:mb-14"
+          >
+            <img
+              src="/images/vrx-interior.jpg"
+              alt="VRX Interior by GAD Motors"
+              className="w-full h-auto rounded-2xl"
+            />
+          </motion.div>
 
           {/* Interior Features */}
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 md:gap-6">
@@ -209,11 +198,7 @@ const VRX = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
             >
-              <Car className="w-6 h-6 text-burnt-orange mx-auto mb-3" />
               <p className="text-burnt-orange text-xs uppercase tracking-[0.3em] font-semibold mb-3">Exterior</p>
-              <h2 className="text-3xl sm:text-4xl md:text-5xl font-black">
-                Presence That <span className="text-burnt-orange">Commands</span>
-              </h2>
             </motion.div>
           </div>
 
