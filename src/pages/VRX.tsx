@@ -5,6 +5,7 @@ import Header from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Zap, Gauge, Shield, Settings, Crown, ChevronDown } from 'lucide-react';
+import ExteriorTabs from '@/components/VRX/ExteriorTabs';
 
 
 const specs = [
