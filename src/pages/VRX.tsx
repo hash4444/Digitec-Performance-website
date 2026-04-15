@@ -1,10 +1,11 @@
-
 import React, { useState } from 'react';
+
 import { useSeo } from '@/hooks/use-seo';
 import Header from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Zap, Gauge, Shield, Settings, Crown, ChevronDown } from 'lucide-react';
+import ExteriorTabs from '@/components/VRX/ExteriorTabs';
 
 
 const specs = [
@@ -208,49 +209,7 @@ const VRX = () => {
           </motion.div>
 
           {/* Exterior Tabs */}
-          {(() => {
-            const tabs = [
-              { id: 'motor', label: 'Motor', content: 'Content coming soon.' },
-              { id: 'carbon', label: 'Carbon Package', content: 'Content coming soon.' },
-              { id: 'wheels', label: 'Wheels', content: 'Content coming soon.' },
-            ];
-            return (
-              <>
-                <div className="flex justify-center gap-3 mb-6">
-                  {tabs.map((tab) => (
-                    <button
-                      key={tab.id}
-                      onClick={() => setActiveExteriorTab(tab.id)}
-                      className={`rounded-2xl text-sm font-semibold transition-all duration-300 px-[30px] mx-0 py-[10px] text-center ${
-                        activeExteriorTab === tab.id
-                          ? 'bg-burnt-orange text-black'
-                          : 'bg-white/[0.04] text-white/50 border border-white/[0.06] hover:border-white/10 hover:text-white/70'
-                      }`}
-                    >
-                      {tab.label}
-                    </button>
-                  ))}
-                </div>
-                <AnimatePresence mode="wait">
-                  {tabs.map((tab) =>
-                    activeExteriorTab === tab.id ? (
-                      <motion.div
-                        key={tab.id}
-                        initial={{ opacity: 0, y: 10 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        exit={{ opacity: 0, y: -10 }}
-                        transition={{ duration: 0.2 }}
-                        className="p-6 md:p-8 rounded-2xl bg-white/[0.02] border border-white/[0.06]"
-                      >
-                        <h3 className="text-lg font-bold mb-2 text-off-white">{tab.label}</h3>
-                        <p className="text-sm text-white/50 leading-relaxed">{tab.content}</p>
-                      </motion.div>
-                    ) : null
-                  )}
-                </AnimatePresence>
-              </>
-            );
-          })()}
+          <ExteriorTabs activeTab={activeExteriorTab} setActiveTab={setActiveExteriorTab} />
         </div>
       </section>
 
