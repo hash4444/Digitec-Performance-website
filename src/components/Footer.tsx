@@ -34,7 +34,7 @@ export const Footer = () => {
             <div className="space-y-3 sm:space-y-4 text-gray-300">
               <div>
                 <div className="font-semibold text-off-white text-sm sm:text-base">Phone</div>
-                <div className="text-sm sm:text-base">+971 4 340 2223</div>
+                <a href="tel:+97143402223" className="text-sm sm:text-base hover:text-burnt-orange transition-colors">+971 4 340 2223</a>
               </div>
               <div>
                 <div className="font-semibold text-off-white text-sm sm:text-base">Email</div>
