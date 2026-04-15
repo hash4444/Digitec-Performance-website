@@ -4,7 +4,7 @@ import { useSeo } from '@/hooks/use-seo';
 import Header from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { motion } from 'framer-motion';
-import { Zap, Gauge, Shield, Settings, Crown, ChevronDown } from 'lucide-react';
+import { Zap, Gauge, Shield, Settings, Crown, ChevronDown, Sparkles, Car } from 'lucide-react';
 
 const specs = [
   { label: 'Engine', value: 'V6 Biturbo', icon: Settings },
@@ -17,14 +17,6 @@ const features = [
   {
     title: 'Performance ECU Tuning',
     description: 'Custom GAD Motors ECU calibration for maximum power delivery and throttle response.',
-  },
-  {
-    title: 'Bespoke Interior',
-    description: 'Handcrafted luxury interior with premium materials, custom seating, and ambient lighting.',
-  },
-  {
-    title: 'Aerodynamic Body Kit',
-    description: 'Custom designed exterior enhancements for improved aerodynamics and a commanding presence.',
   },
   {
     title: 'Sport Suspension',
@@ -40,13 +32,46 @@ const features = [
   },
 ];
 
-const galleryImages = [
+const interiorFeatures = [
+  {
+    title: 'Bespoke Interior',
+    description: 'Handcrafted luxury interior with premium materials, custom seating, and ambient lighting.',
+  },
+  {
+    title: 'Premium Sound System',
+    description: 'High-fidelity audio system engineered for an immersive listening experience.',
+  },
+  {
+    title: 'Ambient Lighting',
+    description: 'Custom LED ambient lighting throughout the cabin for a refined atmosphere.',
+  },
+];
+
+const exteriorFeatures = [
+  {
+    title: 'Aerodynamic Body Kit',
+    description: 'Custom designed exterior enhancements for improved aerodynamics and a commanding presence.',
+  },
+  {
+    title: 'Exclusive Wheels',
+    description: 'Forged alloy wheels designed exclusively for the VRX, combining style and performance.',
+  },
+  {
+    title: 'Custom Paint Finish',
+    description: 'Bespoke paint options with multi-layer finishes for a truly unique appearance.',
+  },
+];
+
+const interiorImages = [
+  { src: '/placeholder.svg', alt: 'VRX Interior Overview' },
+  { src: '/placeholder.svg', alt: 'VRX Seating' },
+  { src: '/placeholder.svg', alt: 'VRX Dashboard' },
+];
+
+const exteriorImages = [
   { src: '/placeholder.svg', alt: 'VRX Front View' },
-  { src: '/placeholder.svg', alt: 'VRX Interior' },
-  { src: '/placeholder.svg', alt: 'VRX Rear View' },
-  { src: '/placeholder.svg', alt: 'VRX Detail' },
-  { src: '/placeholder.svg', alt: 'VRX Engine Bay' },
   { src: '/placeholder.svg', alt: 'VRX Side Profile' },
+  { src: '/placeholder.svg', alt: 'VRX Rear View' },
 ];
 
 const VRX = () => {
@@ -127,10 +152,129 @@ const VRX = () => {
         </div>
       </section>
 
-      {/* Specs Bar */}
-      <section className="py-12 md:py-16 border-y border-white/[0.06]">
-        <div className="max-w-5xl mx-auto px-5 sm:px-6">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
+      {/* Interior Section */}
+      <section className="py-16 md:py-24">
+        <div className="max-w-6xl mx-auto px-5 sm:px-6">
+          <div className="text-center mb-12 md:mb-16">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+            >
+              <Sparkles className="w-6 h-6 text-burnt-orange mx-auto mb-3" />
+              <p className="text-burnt-orange text-xs uppercase tracking-[0.3em] font-semibold mb-3">Interior</p>
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-black">
+                Luxury <span className="text-burnt-orange">Reimagined</span>
+              </h2>
+            </motion.div>
+          </div>
+
+          {/* Interior Gallery */}
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 md:gap-5 mb-10 md:mb-14">
+            {interiorImages.map((img, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, scale: 0.95 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.1 }}
+                className="aspect-[4/3] rounded-2xl overflow-hidden bg-white/[0.03] border border-white/[0.06]"
+              >
+                <img src={img.src} alt={img.alt} className="w-full h-full object-cover opacity-30" />
+              </motion.div>
+            ))}
+          </div>
+
+          {/* Interior Features */}
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 md:gap-6">
+            {interiorFeatures.map((feature, i) => (
+              <motion.div
+                key={feature.title}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.08 }}
+                className="p-6 md:p-8 rounded-2xl bg-white/[0.02] border border-white/[0.06] hover:border-burnt-orange/20 transition-all duration-300"
+              >
+                <h3 className="text-lg font-bold mb-2 text-off-white">{feature.title}</h3>
+                <p className="text-sm text-white/50 leading-relaxed">{feature.description}</p>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Exterior Section */}
+      <section className="py-16 md:py-24 bg-white/[0.01]">
+        <div className="max-w-6xl mx-auto px-5 sm:px-6">
+          <div className="text-center mb-12 md:mb-16">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+            >
+              <Car className="w-6 h-6 text-burnt-orange mx-auto mb-3" />
+              <p className="text-burnt-orange text-xs uppercase tracking-[0.3em] font-semibold mb-3">Exterior</p>
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-black">
+                Presence That <span className="text-burnt-orange">Commands</span>
+              </h2>
+            </motion.div>
+          </div>
+
+          {/* Exterior Gallery */}
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 md:gap-5 mb-10 md:mb-14">
+            {exteriorImages.map((img, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, scale: 0.95 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.1 }}
+                className="aspect-[4/3] rounded-2xl overflow-hidden bg-white/[0.03] border border-white/[0.06]"
+              >
+                <img src={img.src} alt={img.alt} className="w-full h-full object-cover opacity-30" />
+              </motion.div>
+            ))}
+          </div>
+
+          {/* Exterior Features */}
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 md:gap-6">
+            {exteriorFeatures.map((feature, i) => (
+              <motion.div
+                key={feature.title}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.08 }}
+                className="p-6 md:p-8 rounded-2xl bg-white/[0.02] border border-white/[0.06] hover:border-burnt-orange/20 transition-all duration-300"
+              >
+                <h3 className="text-lg font-bold mb-2 text-off-white">{feature.title}</h3>
+                <p className="text-sm text-white/50 leading-relaxed">{feature.description}</p>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Performance Section */}
+      <section className="py-16 md:py-24">
+        <div className="max-w-6xl mx-auto px-5 sm:px-6">
+          <div className="text-center mb-12 md:mb-16">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+            >
+              <Zap className="w-6 h-6 text-burnt-orange mx-auto mb-3" />
+              <p className="text-burnt-orange text-xs uppercase tracking-[0.3em] font-semibold mb-3">Performance</p>
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-black">
+                Engineered for <span className="text-burnt-orange">Excellence</span>
+              </h2>
+            </motion.div>
+          </div>
+
+          {/* Specs Bar */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 mb-10 md:mb-14">
             {specs.map((spec, i) => (
               <motion.div
                 key={spec.label}
@@ -146,20 +290,9 @@ const VRX = () => {
               </motion.div>
             ))}
           </div>
-        </div>
-      </section>
 
-      {/* Features Section */}
-      <section className="py-16 md:py-24">
-        <div className="max-w-6xl mx-auto px-5 sm:px-6">
-          <div className="text-center mb-12 md:mb-16">
-            <p className="text-burnt-orange text-xs uppercase tracking-[0.3em] font-semibold mb-3">What Makes It Special</p>
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-black">
-              Engineered for <span className="text-burnt-orange">Excellence</span>
-            </h2>
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6">
+          {/* Performance Features */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 md:gap-6">
             {features.map((feature, i) => (
               <motion.div
                 key={feature.title}
@@ -178,39 +311,8 @@ const VRX = () => {
         </div>
       </section>
 
-      {/* Gallery Section */}
-      <section className="py-16 md:py-24 bg-white/[0.01]">
-        <div className="max-w-6xl mx-auto px-5 sm:px-6">
-          <div className="text-center mb-12 md:mb-16">
-            <p className="text-burnt-orange text-xs uppercase tracking-[0.3em] font-semibold mb-3">Gallery</p>
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-black">
-              Every Angle, <span className="text-burnt-orange">Perfected</span>
-            </h2>
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-5">
-            {galleryImages.map((img, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, scale: 0.95 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.08 }}
-                className="aspect-[4/3] rounded-2xl overflow-hidden bg-white/[0.03] border border-white/[0.06] group cursor-pointer"
-              >
-                <img
-                  src={img.src}
-                  alt={img.alt}
-                  className="w-full h-full object-cover opacity-30 group-hover:opacity-50 group-hover:scale-105 transition-all duration-500"
-                />
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* CTA Section */}
-      <section className="py-16 md:py-24">
+      <section className="py-16 md:py-24 border-t border-white/[0.06]">
         <div className="max-w-3xl mx-auto px-5 sm:px-6 text-center">
           <Crown className="w-10 h-10 text-burnt-orange mx-auto mb-4" />
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-black mb-4">
