@@ -17,7 +17,7 @@ const Tuning = () => {
       <Header />
       <section
         className="relative min-h-[60vh] md:min-h-[80vh] flex items-center justify-center bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: "url('/images/tuning-bg.png')" }}
+        style={{ backgroundImage: "url('/images/tuning-hero-bg.jpg')" }}
       >
         <div className="absolute inset-0 bg-black/60" />
         <div className="relative z-10 text-center px-5 sm:px-6 max-w-4xl mx-auto py-12 md:py-0">
