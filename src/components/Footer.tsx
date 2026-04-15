@@ -16,9 +16,9 @@ export const Footer = () => {
               high-performance vehicles into bespoke masterpieces since 2008.
             </p>
             <div className="flex space-x-3 sm:space-x-4">
-              <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-charcoal to-black border border-gray-700/50 rounded-xl sm:rounded-2xl flex items-center justify-center hover:border-burnt-orange/50 transition-all duration-300 cursor-pointer shadow-lg hover:shadow-xl">
+              <a href="https://www.instagram.com/digi_tec/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-charcoal to-black border border-gray-700/50 rounded-xl sm:rounded-2xl flex items-center justify-center hover:border-burnt-orange/50 transition-all duration-300 cursor-pointer shadow-lg hover:shadow-xl">
                 <span className="text-xs sm:text-sm font-bold text-burnt-orange">IG</span>
-              </div>
+              </a>
               <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-charcoal to-black border border-gray-700/50 rounded-xl sm:rounded-2xl flex items-center justify-center hover:border-burnt-orange/50 transition-all duration-300 cursor-pointer shadow-lg hover:shadow-xl">
                 <span className="text-xs sm:text-sm font-bold text-burnt-orange">FB</span>
               </div>
