@@ -9,6 +9,8 @@ import Tuning from "./pages/Tuning";
 import VRX from "./pages/VRX";
 import Services from "./pages/Services";
 import ServicePage from "./pages/ServicePage";
+import AboutUs from "./pages/AboutUs";
+import FAQPage from "./pages/FAQPage";
 import NotFound from "./pages/NotFound";
 
 const ScrollToTop = () => {
@@ -37,6 +39,8 @@ const App = () => (
           <Route path="/vrx" element={<VRX />} />
           <Route path="/services" element={<Services />} />
           <Route path="/services/:slug" element={<ServicePage />} />
+          <Route path="/about" element={<AboutUs />} />
+          <Route path="/faq" element={<FAQPage />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
