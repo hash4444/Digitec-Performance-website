@@ -170,6 +170,33 @@ const VRX = () => {
             />
           </motion.div>
 
+          {/* Interior Sub Images */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 md:gap-6 mb-10 md:mb-14">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+            >
+              <img
+                src="/images/vrx-seats.png"
+                alt="VRX Custom Seats by GAD Motors"
+                className="w-full h-auto rounded-3xl shadow-2xl"
+              />
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.1 }}
+            >
+              <img
+                src="/images/vrx-ambient.png"
+                alt="VRX Ambient Lighting by GAD Motors"
+                className="w-full h-auto rounded-3xl shadow-2xl"
+              />
+            </motion.div>
+          </div>
+
           {/* Interior Features */}
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 md:gap-6">
             {interiorFeatures.map((feature, i) => (
