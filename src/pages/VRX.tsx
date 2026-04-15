@@ -68,11 +68,7 @@ const interiorImages = [
   { src: '/placeholder.svg', alt: 'VRX Dashboard' },
 ];
 
-const exteriorImages = [
-  { src: '/placeholder.svg', alt: 'VRX Front View' },
-  { src: '/placeholder.svg', alt: 'VRX Side Profile' },
-  { src: '/placeholder.svg', alt: 'VRX Rear View' },
-];
+const exteriorImage = { src: '/images/vrx-exterior.jpg', alt: 'VRX Exterior by GAD Motors' };
 
 const VRX = () => {
   useSeo({
