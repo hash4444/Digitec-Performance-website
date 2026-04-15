@@ -100,15 +100,18 @@ const motorSubTabs = [
     id: 'fuel',
     label: 'Fuel System',
     content: (
-      <div className="text-sm text-white/70">
-        <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-2.5">
-          {['Gas tank', 'Gasoline pump', 'Gasoline pump'].map((item, i) => (
-            <li key={`${item}-${i}`} className="flex items-start gap-2.5">
-              <span className="mt-1.5 w-2 h-2 rounded-full bg-burnt-orange shrink-0" />
-              <span>{item}</span>
-            </li>
-          ))}
-        </ul>
+      <div className="flex flex-col md:flex-row gap-6 text-sm text-white/70">
+        <div className="flex-1">
+          <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-2.5">
+            {['Gas tank', 'Gasoline pump', 'Gasoline pump'].map((item, i) => (
+              <li key={`${item}-${i}`} className="flex items-start gap-2.5">
+                <span className="mt-1.5 w-2 h-2 rounded-full bg-burnt-orange shrink-0" />
+                <span>{item}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+        <img src="/images/vrx-fuel.png" alt="VRX Fuel System" className="w-full md:w-64 lg:w-72 h-auto rounded-2xl object-cover shrink-0" />
       </div>
     ),
   },
