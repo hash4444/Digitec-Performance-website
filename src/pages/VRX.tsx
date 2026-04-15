@@ -271,24 +271,41 @@ const VRX = () => {
       {/* Founder's Message */}
       <FounderMessage />
 
-      {/* CTA Section */}
+      {/* Pricing & CTA Section */}
       <section className="py-16 md:py-24 border-t border-white/[0.06]">
-        <div className="max-w-3xl mx-auto px-5 sm:px-6 text-center">
-          <Crown className="w-10 h-10 text-burnt-orange mx-auto mb-4" />
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-black mb-4">
-            Interested in the <span className="text-burnt-orange">VRX</span>?
-          </h2>
-          <p className="text-white/50 mb-8 max-w-lg mx-auto text-sm md:text-base">
-            Contact our team to learn more about the VRX Mercedes V-Class and schedule an exclusive viewing at Digi-Tec Performance Center.
-          </p>
-          <a
-            href={`https://wa.me/97143402223?text=${encodeURIComponent("Hi, I'm interested in learning more about the VRX Mercedes V-Class.")}`}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center justify-center bg-burnt-orange hover:bg-burnt-orange/90 text-black font-bold text-sm sm:text-base px-8 sm:px-10 py-3.5 sm:py-4 rounded-2xl transition-all duration-300 hover:scale-105 shadow-xl hover:shadow-burnt-orange/30"
+        <div className="max-w-4xl mx-auto px-5 sm:px-6">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="rounded-3xl border border-white/[0.08] bg-white/[0.03] p-6 sm:p-8 md:p-10 flex flex-col md:flex-row items-center gap-6 md:gap-10"
           >
-            Enquire Now
-          </a>
+            {/* Left: Pricing Info */}
+            <div className="flex-1">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-black uppercase tracking-tight mb-2">
+                Entry-Level Model <span className="text-red-600">VRX</span>
+              </h2>
+              <p className="text-xl sm:text-2xl font-bold text-off-white mb-4">
+                FROM €146,500
+              </p>
+              <p className="text-xs sm:text-sm text-white/40 leading-relaxed">
+                *The price includes only the assembly of the VRX with 585 hp (without TÜV approval). Additional options and custom solutions will be charged separately.
+              </p>
+            </div>
+
+            {/* Right: Recall CTA */}
+            <a
+              href={`https://wa.me/97143402223?text=${encodeURIComponent("Hi, I'm interested in the VRX Mercedes V-Class. Could you please get in touch with me?")}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex-shrink-0 w-full md:w-auto inline-flex items-center justify-center gap-3 bg-red-700 hover:bg-red-600 text-white font-bold text-base sm:text-lg px-10 sm:px-14 py-5 sm:py-6 rounded-2xl transition-all duration-300 hover:scale-105 shadow-xl"
+            >
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+              </svg>
+              RECALL
+            </a>
+          </motion.div>
         </div>
       </section>
 
