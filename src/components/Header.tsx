@@ -15,8 +15,8 @@ const Header = () => {
     { name: 'Services', href: '/services', isPage: true },
     { name: 'Tuning', href: '/tuning', isPage: true },
     { name: 'VRX', href: '/vrx', isPage: true },
-    { name: 'About Us', href: '#about' },
-    { name: 'FAQ', href: '#faq' },
+    { name: 'About Us', href: '/about', isPage: true },
+    { name: 'FAQ', href: '/faq', isPage: true },
   ];
 
   useEffect(() => {
