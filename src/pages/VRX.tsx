@@ -268,6 +268,9 @@ const VRX = () => {
         </div>
       </section>
 
+      {/* Founder's Message */}
+      <FounderMessage />
+
       {/* CTA Section */}
       <section className="py-16 md:py-24 border-t border-white/[0.06]">
         <div className="max-w-3xl mx-auto px-5 sm:px-6 text-center">
