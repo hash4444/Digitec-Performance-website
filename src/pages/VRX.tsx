@@ -52,6 +52,8 @@ const exteriorImage = { src: '/images/vrx-exterior.jpg', alt: 'VRX Exterior by G
 
 
 const VRX = () => {
+  const [activeExteriorTab, setActiveExteriorTab] = useState('motor');
+
   useSeo({
     title: 'VRX Mercedes V-Class by GAD Motors | DIGI-TEC Performance Center Dubai',
     description: 'Discover the VRX, a modified Mercedes V-Class by GAD Motors. Performance tuning, luxury interior, and bespoke design. Available exclusively at DIGI-TEC Dubai.',
