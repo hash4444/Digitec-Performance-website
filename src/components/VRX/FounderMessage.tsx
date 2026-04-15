@@ -20,13 +20,6 @@ const FounderMessage = () => {
                 className="w-full h-auto object-cover rounded-2xl"
               />
             </div>
-            <div className="relative rounded-2xl overflow-hidden">
-              <img
-                src="/images/vrx-trophy.jpg"
-                alt="VRX SCC Trophy"
-                className="w-full h-auto object-cover rounded-2xl"
-              />
-            </div>
             <div className="mt-2">
               <p className="text-xs uppercase tracking-[0.2em] font-bold text-white/70 mb-1">V-CLASS VRX</p>
               <a
