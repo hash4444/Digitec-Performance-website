@@ -213,58 +213,57 @@ const VRX = () => {
         </div>
       </section>
 
-      {/* Performance Section */}
+      {/* Series vs GAD VRX Comparison */}
       <section className="py-16 md:py-24">
-        <div className="max-w-6xl mx-auto px-5 sm:px-6">
-          <div className="text-center mb-12 md:mb-16">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-            >
-              <Zap className="w-6 h-6 text-burnt-orange mx-auto mb-3" />
-              <p className="text-burnt-orange text-xs uppercase tracking-[0.3em] font-semibold mb-3">Performance</p>
-              <h2 className="text-3xl sm:text-4xl md:text-5xl font-black">
-                Engineered for <span className="text-burnt-orange">Excellence</span>
-              </h2>
-            </motion.div>
-          </div>
+        <div className="max-w-5xl mx-auto px-5 sm:px-6">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center mb-10 md:mb-14"
+          >
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-black">
+              SERIES <span className="font-normal italic text-white/50">vs</span> <span className="text-red-600">GAD VRX</span>
+            </h2>
+          </motion.div>
 
-          {/* Specs Bar */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 mb-10 md:mb-14">
-            {specs.map((spec, i) => (
-              <motion.div
-                key={spec.label}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.1 }}
-                className="text-center p-4 md:p-6 rounded-2xl bg-white/[0.02] border border-white/[0.04]"
-              >
-                <spec.icon className="w-5 h-5 text-burnt-orange mx-auto mb-2" />
-                <p className="text-xs uppercase tracking-widest text-white/40 mb-1">{spec.label}</p>
-                <p className="text-xl md:text-2xl font-bold text-off-white">{spec.value}</p>
-              </motion.div>
-            ))}
-          </div>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="rounded-2xl overflow-hidden bg-white/[0.04] border border-white/[0.06]"
+          >
+            {/* Headers */}
+            <div className="grid grid-cols-2">
+              <div className="bg-white/[0.06] px-6 py-4">
+                <h3 className="text-sm sm:text-base md:text-lg font-bold uppercase tracking-wider text-white/70">Mercedes V-Class</h3>
+              </div>
+              <div className="bg-red-800 px-6 py-4">
+                <h3 className="text-sm sm:text-base md:text-lg font-bold uppercase tracking-wider text-white">GADVIP VRX</h3>
+              </div>
+            </div>
 
-          {/* Performance Features */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 md:gap-6">
-            {features.map((feature, i) => (
-              <motion.div
-                key={feature.title}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.08 }}
-                className="p-6 md:p-8 rounded-2xl bg-white/[0.02] border border-white/[0.06] hover:border-burnt-orange/20 transition-all duration-300 group"
-              >
-                <Crown className="w-5 h-5 text-burnt-orange mb-3 group-hover:scale-110 transition-transform" />
-                <h3 className="text-lg font-bold mb-2 text-off-white">{feature.title}</h3>
-                <p className="text-sm text-white/50 leading-relaxed">{feature.description}</p>
-              </motion.div>
+            {/* Comparison Rows */}
+            {[
+              { icon: '⚙️', standard: '239 hp', vrx: '920 hp' },
+              { icon: '⏱️', standard: '9.5 SEK', vrx: '3.8 SEK' },
+              { icon: '◎', standard: '500 Nm', vrx: '1100 Nm' },
+              { icon: '🔊', standard: 'Standard sound insulation', vrx: 'Sporty exhaust sound' },
+              { icon: '🛡️', standard: 'Standard Mercedes body package', vrx: 'Carbon GAD Carbon Body kit by GAD' },
+              { icon: '💺', standard: 'Comfort seats', vrx: 'VIP Executive Suite Seats' },
+            ].map((row, i) => (
+              <div key={i} className="grid grid-cols-2 border-t border-white/[0.06]">
+                <div className="px-6 py-4 flex items-center gap-3">
+                  <span className="text-base">{row.icon}</span>
+                  <span className="text-sm sm:text-base text-white/60">{row.standard}</span>
+                </div>
+                <div className="px-6 py-4 flex items-center gap-3 bg-red-800/20">
+                  <span className="text-base">{row.icon}</span>
+                  <span className="text-sm sm:text-base text-red-400 font-semibold">{row.vrx}</span>
+                </div>
+              </div>
             ))}
-          </div>
+          </motion.div>
         </div>
       </section>
 
