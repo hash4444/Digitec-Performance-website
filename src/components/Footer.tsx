@@ -13,7 +13,7 @@ export const Footer = () => {
             </h3>
             <p className="text-gray-300 leading-relaxed mb-4 sm:mb-6 max-w-md text-base sm:text-lg">
               Dubai's premier luxury automotive tuning specialists, transforming 
-              high-performance vehicles into bespoke masterpieces since 2008.
+              high-performance vehicles into bespoke masterpieces high-performance vehicles into bespoke masterpieces since 2002.
             </p>
             <div className="flex space-x-3 sm:space-x-4">
               <a href="https://www.instagram.com/digi_tec/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-charcoal to-black border border-gray-700/50 rounded-xl sm:rounded-2xl flex items-center justify-center hover:border-burnt-orange/50 transition-all duration-300 cursor-pointer shadow-lg hover:shadow-xl">
