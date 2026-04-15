@@ -267,32 +267,38 @@ const ExteriorTabs = ({ activeTab, setActiveTab }: Props) => {
 
             <AnimatePresence mode="wait">
               {carbonSub === 'pkg1' && (
-                <motion.ul
+                <motion.div
                   key="pkg1"
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   exit={{ opacity: 0 }}
                   transition={{ duration: 0.15 }}
-                  className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-2.5 text-sm text-white/70"
+                  className="flex flex-col md:flex-row gap-6 text-sm text-white/70"
                 >
-                  {carbonPackage1.map((item) => (
-                    <Bullet key={item}>{item}</Bullet>
-                  ))}
-                </motion.ul>
+                  <ul className="flex-1 grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-2.5">
+                    {carbonPackage1.map((item) => (
+                      <Bullet key={item}>{item}</Bullet>
+                    ))}
+                  </ul>
+                  <img src="/images/vrx-carbon-parts.png" alt="VRX Carbon Package" className="w-full md:w-64 lg:w-72 h-auto rounded-2xl object-cover shrink-0" />
+                </motion.div>
               )}
               {carbonSub === 'pkg2' && (
-                <motion.ul
+                <motion.div
                   key="pkg2"
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   exit={{ opacity: 0 }}
                   transition={{ duration: 0.15 }}
-                  className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-2.5 text-sm text-white/70"
+                  className="flex flex-col md:flex-row gap-6 text-sm text-white/70"
                 >
-                  {carbonPackage2.map((item) => (
-                    <Bullet key={item}>{item}</Bullet>
-                  ))}
-                </motion.ul>
+                  <ul className="flex-1 grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-2.5">
+                    {carbonPackage2.map((item) => (
+                      <Bullet key={item}>{item}</Bullet>
+                    ))}
+                  </ul>
+                  <img src="/images/vrx-carbon-parts.png" alt="VRX Carbon Package" className="w-full md:w-64 lg:w-72 h-auto rounded-2xl object-cover shrink-0" />
+                </motion.div>
               )}
             </AnimatePresence>
           </motion.div>
