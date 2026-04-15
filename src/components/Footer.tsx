@@ -42,7 +42,7 @@ export const Footer = () => {
               </div>
               <div>
                 <div className="font-semibold text-off-white text-sm sm:text-base">Address</div>
-                <div className="text-sm sm:text-base">Al Quoz Industrial Area 3<br />Warehouse No.11-15</div>
+                <a href="https://maps.google.com/?q=Al+Quoz+Industrial+Area+3+Warehouse+No.11-15+Dubai" target="_blank" rel="noopener noreferrer" className="text-sm sm:text-base hover:text-burnt-orange transition-colors">Al Quoz Industrial Area 3<br />Warehouse No.11-15</a>
               </div>
             </div>
           </div>
