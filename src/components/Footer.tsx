@@ -38,7 +38,7 @@ export const Footer = () => {
               </div>
               <div>
                 <div className="font-semibold text-off-white text-sm sm:text-base">Email</div>
-                <div className="text-sm sm:text-base">info@digitecme.com</div>
+                <a href="mailto:info@digitecme.com" className="text-sm sm:text-base hover:text-burnt-orange transition-colors">info@digitecme.com</a>
               </div>
               <div>
                 <div className="font-semibold text-off-white text-sm sm:text-base">Address</div>
