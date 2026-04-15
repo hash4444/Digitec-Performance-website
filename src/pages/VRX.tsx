@@ -161,12 +161,12 @@ const VRX = () => {
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
-            className="rounded-2xl overflow-hidden mb-10 md:mb-14"
+            className="relative max-w-4xl mx-auto mb-10 md:mb-14"
           >
             <img
               src="/images/vrx-interior.jpg"
               alt="VRX Interior by GAD Motors"
-              className="w-full h-auto rounded-2xl"
+              className="w-full h-auto rounded-3xl shadow-2xl"
             />
           </motion.div>
 
@@ -207,12 +207,12 @@ const VRX = () => {
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
-            className="rounded-2xl overflow-hidden mb-10 md:mb-14"
+            className="relative max-w-4xl mx-auto mb-10 md:mb-14"
           >
             <img
               src={exteriorImage.src}
               alt={exteriorImage.alt}
-              className="w-full h-auto rounded-2xl"
+              className="w-full h-auto rounded-3xl shadow-2xl"
             />
           </motion.div>
 
