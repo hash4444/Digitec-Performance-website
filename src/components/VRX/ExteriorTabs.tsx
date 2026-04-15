@@ -1,6 +1,107 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
+// Motor sub-tab data
+const motorSubTabs = [
+  {
+    id: 'motor',
+    label: 'Motor',
+    content: (
+      <div className="space-y-2 text-sm text-white/70">
+        <p className="font-semibold text-off-white">GAD M177 447</p>
+        <p>Gasoline V8 BiTurbo Displacement 3998 cc</p>
+        <p>Power 585–920 hp</p>
+        <p>Torque 900–1150 Nm</p>
+      </div>
+    ),
+  },
+  {
+    id: 'engine-parts',
+    label: 'Engine Parts',
+    content: (
+      <div className="space-y-4 text-sm text-white/70">
+        <p className="font-semibold text-off-white">Engine Parts</p>
+        <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-2.5">
+          {['Sump', 'Engine mounts', 'Oil pump suction pipe', 'Engine gasket set', 'Lambda sensors', 'Various accessories', 'Generator', 'Starter', 'Oil cooler', 'Compressor intercooler LS2', 'Low temperature cooler'].map((item) => (
+            <li key={item} className="flex items-start gap-2.5">
+              <span className="mt-1.5 w-2 h-2 rounded-full bg-burnt-orange shrink-0" />
+              <span>{item}</span>
+            </li>
+          ))}
+        </ul>
+        <p className="text-white/50">LS2 compressor intercooler, low temperature cooler</p>
+      </div>
+    ),
+  },
+  {
+    id: 'electronics',
+    label: 'Electronics',
+    content: (
+      <div className="space-y-4 text-sm text-white/70">
+        <p className="font-semibold text-off-white">Engine Control Unit</p>
+        <ul className="space-y-2.5">
+          {['New control unit', 'Software for CPC control unit + software for the transmission'].map((item) => (
+            <li key={item} className="flex items-start gap-2.5">
+              <span className="mt-1.5 w-2 h-2 rounded-full bg-burnt-orange shrink-0" />
+              <span>{item}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+    ),
+  },
+  {
+    id: 'transmission',
+    label: 'Transmission',
+    content: (
+      <div className="space-y-4 text-sm text-white/70">
+        <p className="font-semibold text-off-white">Transmission</p>
+        <p>9 speed TCT Tronic<br />transmission booster NAG 3</p>
+        <ul className="space-y-2.5">
+          {['Manual transmission booster', 'Gearbox amplification up to approx. 1100 Nm'].map((item) => (
+            <li key={item} className="flex items-start gap-2.5">
+              <span className="mt-1.5 w-2 h-2 rounded-full bg-burnt-orange shrink-0" />
+              <span>{item}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+    ),
+  },
+  {
+    id: 'exhaust',
+    label: 'Exhaust System',
+    content: (
+      <div className="text-sm text-white/70">
+        <ul className="space-y-2.5">
+          {['Exhaust pipes with catalytic converter and particulate filter for gasoline engines', 'Dual 70mm stainless steel exhaust system with cross flow silencer'].map((item) => (
+            <li key={item} className="flex items-start gap-2.5">
+              <span className="mt-1.5 w-2 h-2 rounded-full bg-burnt-orange shrink-0" />
+              <span>{item}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+    ),
+  },
+  {
+    id: 'fuel',
+    label: 'Fuel System',
+    content: (
+      <div className="text-sm text-white/70">
+        <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-2.5">
+          {['Gas tank', 'Gasoline pump', 'Gasoline pump'].map((item, i) => (
+            <li key={`${item}-${i}`} className="flex items-start gap-2.5">
+              <span className="mt-1.5 w-2 h-2 rounded-full bg-burnt-orange shrink-0" />
+              <span>{item}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+    ),
+  },
+];
+
 const carbonPackage1 = [
   'Left front side spoiler',
   'Right front side spoiler',
@@ -72,6 +173,7 @@ const SubTabButton = ({ active, label, onClick }: { active: boolean; label: stri
 const ExteriorTabs = ({ activeTab, setActiveTab }: Props) => {
   const [carbonSub, setCarbonSub] = useState<'pkg1' | 'pkg2'>('pkg1');
   const [wheelsSub, setWheelsSub] = useState<'classic' | 'ceramic'>('classic');
+  const [motorSub, setMotorSub] = useState('motor');
 
   return (
     <>
@@ -102,8 +204,31 @@ const ExteriorTabs = ({ activeTab, setActiveTab }: Props) => {
             transition={{ duration: 0.2 }}
             className="p-6 md:p-8 rounded-2xl bg-white/[0.02] border border-white/[0.06]"
           >
-            <h3 className="text-lg font-bold mb-2 text-off-white">Motor</h3>
-            <p className="text-sm text-white/50 leading-relaxed">Content coming soon.</p>
+            <div className="flex flex-wrap gap-x-5 gap-y-2 mb-6">
+              {motorSubTabs.map((sub) => (
+                <SubTabButton
+                  key={sub.id}
+                  active={motorSub === sub.id}
+                  label={sub.label}
+                  onClick={() => setMotorSub(sub.id)}
+                />
+              ))}
+            </div>
+            <AnimatePresence mode="wait">
+              {motorSubTabs.map((sub) =>
+                motorSub === sub.id ? (
+                  <motion.div
+                    key={sub.id}
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                    transition={{ duration: 0.15 }}
+                  >
+                    {sub.content}
+                  </motion.div>
+                ) : null
+              )}
+            </AnimatePresence>
           </motion.div>
         )}
 
