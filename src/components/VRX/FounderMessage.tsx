@@ -82,10 +82,8 @@ const FounderMessage = () => {
               <img
                 src="/images/vrx-signature.png"
                 alt="Sebastian Daminger signature"
-                className="h-10 mb-2 invert opacity-80"
+                className="h-16 invert opacity-80"
               />
-              <p className="text-xs font-bold text-white uppercase tracking-wider">Sebastian Daminger</p>
-              <p className="text-xs text-white/50 uppercase tracking-wider">GAD-MOTORS</p>
             </div>
           </motion.div>
         </div>
