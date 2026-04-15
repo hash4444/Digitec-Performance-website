@@ -60,17 +60,20 @@ const motorSubTabs = [
     id: 'transmission',
     label: 'Transmission',
     content: (
-      <div className="space-y-4 text-sm text-white/70">
-        <p className="font-semibold text-off-white">Transmission</p>
-        <p>9 speed TCT Tronic<br />transmission booster NAG 3</p>
-        <ul className="space-y-2.5">
-          {['Manual transmission booster', 'Gearbox amplification up to approx. 1100 Nm'].map((item) => (
-            <li key={item} className="flex items-start gap-2.5">
-              <span className="mt-1.5 w-2 h-2 rounded-full bg-burnt-orange shrink-0" />
-              <span>{item}</span>
-            </li>
-          ))}
-        </ul>
+      <div className="flex flex-col md:flex-row gap-6 text-sm text-white/70">
+        <div className="flex-1 space-y-4">
+          <p className="font-semibold text-off-white">Transmission</p>
+          <p>9 speed TCT Tronic<br />transmission booster NAG 3</p>
+          <ul className="space-y-2.5">
+            {['Manual transmission booster', 'Gearbox amplification up to approx. 1100 Nm'].map((item) => (
+              <li key={item} className="flex items-start gap-2.5">
+                <span className="mt-1.5 w-2 h-2 rounded-full bg-burnt-orange shrink-0" />
+                <span>{item}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+        <img src="/images/vrx-transmission.png" alt="VRX Transmission" className="w-full md:w-64 lg:w-72 h-auto rounded-2xl object-cover shrink-0" />
       </div>
     ),
   },
@@ -78,15 +81,18 @@ const motorSubTabs = [
     id: 'exhaust',
     label: 'Exhaust System',
     content: (
-      <div className="text-sm text-white/70">
-        <ul className="space-y-2.5">
-          {['Exhaust pipes with catalytic converter and particulate filter for gasoline engines', 'Dual 70mm stainless steel exhaust system with cross flow silencer'].map((item) => (
-            <li key={item} className="flex items-start gap-2.5">
-              <span className="mt-1.5 w-2 h-2 rounded-full bg-burnt-orange shrink-0" />
-              <span>{item}</span>
-            </li>
-          ))}
-        </ul>
+      <div className="flex flex-col md:flex-row gap-6 text-sm text-white/70">
+        <div className="flex-1">
+          <ul className="space-y-2.5">
+            {['Exhaust pipes with catalytic converter and particulate filter for gasoline engines', 'Dual 70mm stainless steel exhaust system with cross flow silencer'].map((item) => (
+              <li key={item} className="flex items-start gap-2.5">
+                <span className="mt-1.5 w-2 h-2 rounded-full bg-burnt-orange shrink-0" />
+                <span>{item}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+        <img src="/images/vrx-exhaust.png" alt="VRX Exhaust System" className="w-full md:w-64 lg:w-72 h-auto rounded-2xl object-cover shrink-0" />
       </div>
     ),
   },
