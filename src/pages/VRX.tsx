@@ -6,6 +6,7 @@ import { Footer } from '@/components/Footer';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Zap, Gauge, Shield, Settings, Crown, ChevronDown } from 'lucide-react';
 import ExteriorTabs from '@/components/VRX/ExteriorTabs';
+import FounderMessage from '@/components/VRX/FounderMessage';
 
 
 const specs = [
