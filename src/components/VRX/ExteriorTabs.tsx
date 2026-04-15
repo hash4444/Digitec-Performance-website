@@ -321,18 +321,21 @@ const ExteriorTabs = ({ activeTab, setActiveTab }: Props) => {
 
             <AnimatePresence mode="wait">
               {wheelsSub === 'classic' && (
-                <motion.ul
+                <motion.div
                   key="classic"
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   exit={{ opacity: 0 }}
                   transition={{ duration: 0.15 }}
-                  className="space-y-2.5 text-sm text-white/70"
+                  className="flex flex-col md:flex-row gap-6 text-sm text-white/70"
                 >
-                  {brakesClassic.map((item) => (
-                    <Bullet key={item}>{item}</Bullet>
-                  ))}
-                </motion.ul>
+                  <ul className="flex-1 space-y-2.5">
+                    {brakesClassic.map((item) => (
+                      <Bullet key={item}>{item}</Bullet>
+                    ))}
+                  </ul>
+                  <img src="/images/vrx-wheels-classic.png" alt="VRX Classic Brakes" className="w-full md:w-64 lg:w-72 h-auto rounded-2xl object-cover shrink-0" />
+                </motion.div>
               )}
               {wheelsSub === 'ceramic' && (
                 <motion.div
@@ -341,19 +344,22 @@ const ExteriorTabs = ({ activeTab, setActiveTab }: Props) => {
                   animate={{ opacity: 1 }}
                   exit={{ opacity: 0 }}
                   transition={{ duration: 0.15 }}
-                  className="text-sm text-white/70 space-y-4"
+                  className="flex flex-col md:flex-row gap-6 text-sm text-white/70"
                 >
-                  <p className="font-semibold text-off-white">{brakesCarbonCeramic.intro}</p>
-                  <ul className="grid grid-cols-2 gap-x-8 gap-y-2.5">
-                    {brakesCarbonCeramic.parts.map((item) => (
-                      <Bullet key={item}>{item}</Bullet>
-                    ))}
-                  </ul>
-                  <ul className="space-y-2.5">
-                    {brakesCarbonCeramic.specs.map((item) => (
-                      <Bullet key={item}>{item}</Bullet>
-                    ))}
-                  </ul>
+                  <div className="flex-1 space-y-4">
+                    <p className="font-semibold text-off-white">{brakesCarbonCeramic.intro}</p>
+                    <ul className="grid grid-cols-2 gap-x-8 gap-y-2.5">
+                      {brakesCarbonCeramic.parts.map((item) => (
+                        <Bullet key={item}>{item}</Bullet>
+                      ))}
+                    </ul>
+                    <ul className="space-y-2.5">
+                      {brakesCarbonCeramic.specs.map((item) => (
+                        <Bullet key={item}>{item}</Bullet>
+                      ))}
+                    </ul>
+                  </div>
+                  <img src="/images/vrx-wheels-ceramic.png" alt="VRX Carbon Ceramic Brakes" className="w-full md:w-64 lg:w-72 h-auto rounded-2xl object-cover shrink-0" />
                 </motion.div>
               )}
             </AnimatePresence>
