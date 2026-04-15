@@ -48,8 +48,31 @@ const exteriorFeatures = [
   },
 ];
 
-
 const exteriorImage = { src: '/images/vrx-exterior.jpg', alt: 'VRX Exterior by GAD Motors' };
+
+const exteriorHotspots: Hotspot[] = [
+  {
+    id: 'hood',
+    x: 35,
+    y: 35,
+    title: 'Hood Detail',
+    description: 'Content coming soon.',
+  },
+  {
+    id: 'bumper',
+    x: 42,
+    y: 65,
+    title: 'Front Bumper',
+    description: 'Content coming soon.',
+  },
+  {
+    id: 'wheel',
+    x: 82,
+    y: 82,
+    title: 'Exclusive Wheels',
+    description: 'Content coming soon.',
+  },
+];
 
 const VRX = () => {
   useSeo({
