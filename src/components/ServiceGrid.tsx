@@ -76,8 +76,8 @@ export const ServiceGrid = () => {
                 <div className="horizontal-scroll-container overflow-x-auto overflow-y-hidden pb-4">
                   <div className="flex gap-4 md:gap-6 pl-4 pr-4" style={{ width: 'max-content' }}>
                     {category.services.map((service) => (
-                      <div key={service.slug} className="service-card group w-80 sm:w-96">
-                        <div className="bg-gradient-to-br from-charcoal/90 to-charcoal/60 backdrop-blur-sm border border-gray-800/50 rounded-3xl p-6 lg:p-8 shadow-2xl transition-all duration-500 hover:shadow-burnt-orange/20 hover:border-burnt-orange/50 hover:scale-[1.02] hover:-translate-y-1 h-full flex flex-col min-h-[400px]">
+                      <div key={service.slug} className="service-card group w-[72vw] sm:w-80 md:w-96">
+                        <div className="bg-gradient-to-br from-charcoal/90 to-charcoal/60 backdrop-blur-sm border border-gray-800/50 rounded-3xl p-5 sm:p-6 lg:p-8 shadow-2xl transition-all duration-500 hover:shadow-burnt-orange/20 hover:border-burnt-orange/50 hover:scale-[1.02] hover:-translate-y-1 h-full flex flex-col min-h-[380px] sm:min-h-[400px]">
                           <div className="mb-6 overflow-hidden rounded-2xl bg-gradient-to-br from-gray-900 to-gray-800 aspect-[4/3]">
                             <img
                               src={service.image}
