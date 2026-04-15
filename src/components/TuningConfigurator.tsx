@@ -99,7 +99,7 @@ function CarSelector({ cars, selectedIndex, onSelect }: {
               key={car.id}
               onClick={() => onSelect(i)}
               className="flex-shrink-0 flex flex-col items-center cursor-pointer transition-all duration-500"
-              style={{ width: window.innerWidth < 640 ? 220 : 280 }}
+              style={{ width: isMobile ? 220 : 280 }}
             >
               <div className={`relative transition-all duration-500 ${isSelected ? 'scale-110' : 'scale-75 opacity-40 blur-[1px]'}`}>
                 {isSelected && (
