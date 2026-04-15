@@ -13,17 +13,31 @@ const FounderMessage = () => {
             viewport={{ once: true }}
             className="flex flex-col gap-4"
           >
-            <div className="relative rounded-2xl overflow-hidden">
+            <a
+              href="https://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="relative rounded-2xl overflow-hidden group block"
+            >
               <img
-                src="/images/vrx-founder-car1.jpg"
-                alt="VRX V-Class front view"
-                className="w-full h-auto object-cover rounded-2xl"
+                src="/images/vrx-video-thumb.png"
+                alt="VRX V-Class video"
+                className="w-full h-auto object-cover rounded-2xl transition-transform duration-300 group-hover:scale-105"
               />
-            </div>
+              <div className="absolute inset-0 flex items-center justify-center bg-black/30 group-hover:bg-black/40 transition-colors">
+                <div className="w-14 h-14 rounded-full bg-red-600 flex items-center justify-center shadow-lg">
+                  <svg className="w-6 h-6 text-white ml-1" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M8 5v14l11-7z" />
+                  </svg>
+                </div>
+              </div>
+            </a>
             <div className="mt-2">
               <p className="text-xs uppercase tracking-[0.2em] font-bold text-white/70 mb-1">V-CLASS VRX</p>
               <a
-                href="#"
+                href="https://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-xs text-red-600 font-semibold hover:underline inline-flex items-center gap-1"
               >
                 ▶ Watch video
