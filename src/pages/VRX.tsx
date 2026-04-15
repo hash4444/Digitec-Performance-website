@@ -1,9 +1,9 @@
 
-import React from 'react';
+import React, { useState } from 'react';
 import { useSeo } from '@/hooks/use-seo';
 import Header from '@/components/Header';
 import { Footer } from '@/components/Footer';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import { Zap, Gauge, Shield, Settings, Crown, ChevronDown } from 'lucide-react';
 
 
@@ -33,25 +33,13 @@ const features = [
   },
 ];
 
-const exteriorFeatures = [
-  {
-    title: 'Aerodynamic Body Kit',
-    description: 'Custom designed exterior enhancements for improved aerodynamics and a commanding presence.',
-  },
-  {
-    title: 'Exclusive Wheels',
-    description: 'Forged alloy wheels designed exclusively for the VRX, combining style and performance.',
-  },
-  {
-    title: 'Custom Paint Finish',
-    description: 'Bespoke paint options with multi-layer finishes for a truly unique appearance.',
-  },
-];
 
 const exteriorImage = { src: '/images/vrx-exterior.jpg', alt: 'VRX Exterior by GAD Motors' };
 
 
 const VRX = () => {
+  const [activeExteriorTab, setActiveExteriorTab] = useState('motor');
+
   useSeo({
     title: 'VRX Mercedes V-Class by GAD Motors | DIGI-TEC Performance Center Dubai',
     description: 'Discover the VRX, a modified Mercedes V-Class by GAD Motors. Performance tuning, luxury interior, and bespoke design. Available exclusively at DIGI-TEC Dubai.',
@@ -219,22 +207,50 @@ const VRX = () => {
             />
           </motion.div>
 
-          {/* Exterior Features */}
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 md:gap-6">
-            {exteriorFeatures.map((feature, i) => (
-              <motion.div
-                key={feature.title}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.08 }}
-                className="p-6 md:p-8 rounded-2xl bg-white/[0.02] border border-white/[0.06] hover:border-burnt-orange/20 transition-all duration-300"
-              >
-                <h3 className="text-lg font-bold mb-2 text-off-white">{feature.title}</h3>
-                <p className="text-sm text-white/50 leading-relaxed">{feature.description}</p>
-              </motion.div>
-            ))}
-          </div>
+          {/* Exterior Tabs */}
+          {(() => {
+            const tabs = [
+              { id: 'motor', label: 'Motor', content: 'Content coming soon.' },
+              { id: 'carbon', label: 'Carbon Package', content: 'Content coming soon.' },
+              { id: 'wheels', label: 'Wheels', content: 'Content coming soon.' },
+            ];
+            return (
+              <>
+                <div className="flex gap-3 mb-6">
+                  {tabs.map((tab) => (
+                    <button
+                      key={tab.id}
+                      onClick={() => setActiveExteriorTab(tab.id)}
+                      className={`px-5 py-2.5 rounded-2xl text-sm font-semibold transition-all duration-300 ${
+                        activeExteriorTab === tab.id
+                          ? 'bg-burnt-orange text-black'
+                          : 'bg-white/[0.04] text-white/50 border border-white/[0.06] hover:border-white/10 hover:text-white/70'
+                      }`}
+                    >
+                      {tab.label}
+                    </button>
+                  ))}
+                </div>
+                <AnimatePresence mode="wait">
+                  {tabs.map((tab) =>
+                    activeExteriorTab === tab.id ? (
+                      <motion.div
+                        key={tab.id}
+                        initial={{ opacity: 0, y: 10 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: -10 }}
+                        transition={{ duration: 0.2 }}
+                        className="p-6 md:p-8 rounded-2xl bg-white/[0.02] border border-white/[0.06]"
+                      >
+                        <h3 className="text-lg font-bold mb-2 text-off-white">{tab.label}</h3>
+                        <p className="text-sm text-white/50 leading-relaxed">{tab.content}</p>
+                      </motion.div>
+                    ) : null
+                  )}
+                </AnimatePresence>
+              </>
+            );
+          })()}
         </div>
       </section>
 
