@@ -34,15 +34,15 @@ export const Footer = () => {
             <div className="space-y-3 sm:space-y-4 text-gray-300">
               <div>
                 <div className="font-semibold text-off-white text-sm sm:text-base">Phone</div>
-                <div className="text-sm sm:text-base">+971 4 340 2223</div>
+                <a href="tel:+97143402223" className="text-sm sm:text-base hover:text-burnt-orange transition-colors">+971 4 340 2223</a>
               </div>
               <div>
                 <div className="font-semibold text-off-white text-sm sm:text-base">Email</div>
-                <div className="text-sm sm:text-base">info@digitecme.com</div>
+                <a href="mailto:info@digitecme.com" className="text-sm sm:text-base hover:text-burnt-orange transition-colors">info@digitecme.com</a>
               </div>
               <div>
                 <div className="font-semibold text-off-white text-sm sm:text-base">Address</div>
-                <div className="text-sm sm:text-base">Al Quoz Industrial Area 3<br />Warehouse No.11-15</div>
+                <a href="https://maps.google.com/?q=Al+Quoz+Industrial+Area+3+Warehouse+No.11-15+Dubai" target="_blank" rel="noopener noreferrer" className="text-sm sm:text-base hover:text-burnt-orange transition-colors">Al Quoz Industrial Area 3<br />Warehouse No.11-15</a>
               </div>
             </div>
           </div>
