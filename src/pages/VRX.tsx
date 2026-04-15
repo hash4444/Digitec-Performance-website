@@ -5,6 +5,7 @@ import Header from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { motion } from 'framer-motion';
 import { Zap, Gauge, Shield, Settings, Crown, ChevronDown } from 'lucide-react';
+import ExteriorHotspotImage, { Hotspot } from '@/components/VRX/ExteriorHotspotImage';
 
 const specs = [
   { label: 'Engine', value: 'V6 Biturbo', icon: Settings },
@@ -47,8 +48,31 @@ const exteriorFeatures = [
   },
 ];
 
-
 const exteriorImage = { src: '/images/vrx-exterior.jpg', alt: 'VRX Exterior by GAD Motors' };
+
+const exteriorHotspots: Hotspot[] = [
+  {
+    id: 'hood',
+    x: 35,
+    y: 35,
+    title: 'Hood Detail',
+    description: 'Content coming soon.',
+  },
+  {
+    id: 'bumper',
+    x: 42,
+    y: 65,
+    title: 'Front Bumper',
+    description: 'Content coming soon.',
+  },
+  {
+    id: 'wheel',
+    x: 82,
+    y: 82,
+    title: 'Exclusive Wheels',
+    description: 'Content coming soon.',
+  },
+];
 
 const VRX = () => {
   useSeo({
@@ -205,17 +229,16 @@ const VRX = () => {
             </motion.div>
           </div>
 
-          {/* Exterior Image */}
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
-            className="relative max-w-4xl mx-auto mb-10 md:mb-14"
+            className="mb-10 md:mb-14"
           >
-            <img
+            <ExteriorHotspotImage
               src={exteriorImage.src}
               alt={exteriorImage.alt}
-              className="w-full h-auto rounded-3xl shadow-2xl"
+              hotspots={exteriorHotspots}
             />
           </motion.div>
 
