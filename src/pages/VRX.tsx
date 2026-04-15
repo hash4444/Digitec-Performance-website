@@ -102,21 +102,18 @@ const VRX = () => {
             A bespoke modified Mercedes V-Class engineered by GAD Motors, combining performance, luxury, and exclusivity into one extraordinary machine.
           </motion.p>
 
-          {/* Hero Image Placeholder */}
+          {/* Hero Image */}
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 1, duration: 0.6 }}
-            className="relative max-w-3xl mx-auto mb-10"
+            className="relative max-w-4xl mx-auto mb-10"
           >
-            <div className="aspect-[16/9] rounded-3xl bg-white/[0.03] border border-white/[0.06] flex items-center justify-center overflow-hidden">
-              <img
-                src="/placeholder.svg"
-                alt="VRX Mercedes V-Class"
-                className="w-full h-full object-cover opacity-30"
-              />
-              <span className="absolute text-white/20 text-sm">Hero image placeholder</span>
-            </div>
+            <img
+              src="/images/vrx-hero.jpg"
+              alt="VRX Mercedes V-Class by GAD Motors"
+              className="w-full h-auto rounded-3xl shadow-2xl"
+            />
           </motion.div>
 
           <motion.div
