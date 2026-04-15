@@ -1,29 +1,23 @@
 
 
-## Add Founder's Message Section to VRX Page
+## Fix Brands We Serve Mobile Layout
 
-### Placement
-Between the "Series vs GAD VRX" comparison table and the final CTA section.
+### Problem
+On mobile (390px wide), 13 brand logos are orbiting in a tiny ellipse (140x100px radius), causing them to overlap and clamp together. The orbital approach doesn't work well on small screens with this many brands.
 
-### Layout (matching the screenshot reference)
-A light/off-white background section with a 3-column layout:
+### Solution: Switch to a scrollable grid on mobile, keep orbit on desktop
 
-1. **Left column**: Two VRX car images stacked vertically with "V-CLASS VRX" label and a "Watch video" link
-2. **Center column**: Large photo of Sebastian Daminger (founder)
-3. **Right column**: Headline, two paragraphs of copy, a red italic quote, signature image, and name/title
+**File: `src/components/BrandsWeServe.tsx`**
 
-On mobile: stack vertically (images → founder photo → text).
+- **Mobile (< 768px)**: Replace the orbital layout with a clean grid of brand logos (3 columns, evenly spaced). No orbit animation on mobile — just a static, tappable grid with hover/tap effects. Each logo gets proper spacing and size (w-20 h-20).
+- **Desktop (>= 768px)**: Keep the existing orbital system unchanged.
+- Reduce the section height on mobile from `min-h-screen` to auto-height.
+- Remove the drag/parallax logic from mobile since it doesn't apply to the grid.
+- Keep tooltips on desktop; on mobile, show brand name below each logo instead.
 
-### Assets needed
-- Copy the uploaded screenshot as reference only (not embedded)
-- Will need the founder's photo, car thumbnails, and signature as separate images. Since we only have the screenshot, we'll use placeholder structure and the screenshot crops or placeholder paths (`/images/vrx-founder.jpg`, `/images/vrx-signature.png`, etc.) that can be replaced later with real assets.
-
-### Content (from screenshot, removing dashes per memory rules)
-- Headline: "WE WERE READY TO TAKE THE LEAD IN DEVELOPING A PREMIUM VAN OURSELVES."
-- Body paragraphs about the VRX vision
-- Red quote: *"We don't sell cars. At GAD, we build them for those who never ask 'Why?' because they know there is no other level for them."*
-- Signed by: Sebastian Daminger, GAD-MOTORS
-
-### Technical Changes
-- **`src/pages/VRX.tsx`**: Add a new section between the comparison table and CTA section with the 3-column responsive grid layout, using a light background (`bg-[#f0eeee]` or similar) to match the screenshot's off-white tone.
+### Changes
+1. Use the `useIsMobile` hook to detect screen size
+2. Conditionally render grid layout (mobile) vs orbital layout (desktop)
+3. Mobile grid: 3-column grid with `gap-6`, each logo in a rounded container with the brand name underneath in small text
+4. Remove `min-h-screen` on mobile, use appropriate padding instead
 
