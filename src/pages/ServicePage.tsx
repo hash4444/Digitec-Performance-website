@@ -143,6 +143,14 @@ const ServicePage = () => {
                 <p className="text-gray-300 leading-relaxed text-lg">{service.whyChoose}</p>
               </div>
 
+              {/* Services Intro (optional) */}
+              {service.servicesIntro && (
+                <div>
+                  <h2 className="text-2xl sm:text-3xl font-bold mb-5">{service.servicesIntro.heading}</h2>
+                  <p className="text-gray-300 leading-relaxed text-lg">{service.servicesIntro.text}</p>
+                </div>
+              )}
+
               {/* What's Included */}
               <div>
                 <h2 className="text-2xl sm:text-3xl font-bold mb-5">What's Included</h2>
