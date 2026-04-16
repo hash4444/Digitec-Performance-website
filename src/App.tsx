@@ -11,6 +11,8 @@ import Services from "./pages/Services";
 import ServicePage from "./pages/ServicePage";
 import AboutUs from "./pages/AboutUs";
 import FAQPage from "./pages/FAQPage";
+import Blog from "./pages/Blog";
+import BlogPost from "./pages/BlogPost";
 import NotFound from "./pages/NotFound";
 
 const ScrollToTop = () => {
@@ -41,6 +43,8 @@ const App = () => (
           <Route path="/services/:slug" element={<ServicePage />} />
           <Route path="/about" element={<AboutUs />} />
           <Route path="/faq" element={<FAQPage />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/:slug" element={<BlogPost />} />
           <Route path="/about-us" element={<Navigate to="/about" replace />} />
           <Route path="/who-we-are" element={<Navigate to="/about" replace />} />
           <Route path="/who-we-are" element={<Navigate to="/about" replace />} />
