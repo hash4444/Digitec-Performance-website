@@ -7,7 +7,7 @@ import TuningConfigurator from '@/components/TuningConfigurator';
 
 const Tuning = () => {
   useSeo({
-    title: 'GAD Tuning Dubai | GAD Motors Performance Parts & ECU Tuning, Digitec',
+    title: 'GAD Tuning Dubai | Digitec Performance Center',
     description: 'GAD tuning in Dubai at Digitec Performance Center. Official GAD Motors partner offering ECU tuning, performance parts, turbo kits, and AMG upgrades across the UAE.',
     canonical: 'https://digitecme.com/tuning',
     keywords: 'GAD tuning Dubai, GAD Motors Dubai, GAD partner UAE, ECU tuning Dubai, Mercedes AMG tuning, performance tuning Dubai, GAD parts Dubai, turbo upgrade Dubai',

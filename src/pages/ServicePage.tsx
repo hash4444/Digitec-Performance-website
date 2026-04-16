@@ -30,9 +30,32 @@ const ServicePage = () => {
   const service = !customRedirect && effectiveSlug ? getServiceBySlug(effectiveSlug) : undefined;
 
   useSeo({
-    title: service ? `${service.seoKeyword} | DIGI-TEC Performance Center` : 'Service Not Found | DIGI-TEC',
-    description: service ? `${service.intro.slice(0, 155)}…` : '',
+    title: service?.metaTitle || (service ? `${service.seoKeyword} | DIGI-TEC Performance Center` : 'Service Not Found | DIGI-TEC'),
+    description: service?.metaDescription || (service ? `${service.intro.slice(0, 155)}…` : ''),
     canonical: service ? `https://digitecme.com/services/${service.slug}` : undefined,
+    jsonLd: service ? {
+      '@context': 'https://schema.org',
+      '@type': 'Service',
+      name: service.title,
+      serviceType: service.seoKeyword,
+      description: service.metaDescription || service.description,
+      url: `https://digitecme.com/services/${service.slug}`,
+      areaServed: [
+        { '@type': 'City', name: 'Dubai' },
+        { '@type': 'Country', name: 'United Arab Emirates' },
+      ],
+      provider: {
+        '@type': 'AutomotiveBusiness',
+        name: 'Digitec Performance Center',
+        url: 'https://digitecme.com',
+        telephone: '+971 4 340 2223',
+        address: {
+          '@type': 'PostalAddress',
+          addressLocality: 'Dubai',
+          addressCountry: 'AE',
+        },
+      },
+    } : undefined,
   });
 
   if (customRedirect) {
