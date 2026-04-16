@@ -1,51 +1,60 @@
 
-The user wants the Tuning page to rank on Google for searches like "GAD tuning Dubai". This is an SEO task — the page already has good content and basic SEO via `useSeo`, but we can strengthen it.
+## Goal
+Add unique SEO metadata (title, description, JSON-LD where helpful) to every service page and the Tuning page. Confirm H1 includes "Dubai".
 
-Current state:
-- `useSeo` sets title, description, canonical, OG tags
-- Page is in `public/sitemap.xml` at `/tuning`
-- `robots.txt` allows all crawlers
-- Title: "Mercedes Performance Tuning Dubai | DIGI-TEC Performance Center"
-- Description does not mention GAD
+## Scope: 18 pages
+All 17 services in `src/data/services.ts` (rendered by `src/pages/ServicePage.tsx`) + `src/pages/Tuning.tsx` (already done last turn, will verify).
 
-Gaps:
-1. Title/description don't target "GAD tuning" keywords
-2. No JSON-LD structured data on the Tuning page (Service schema would help)
-3. Sitemap entry could have a `<lastmod>` to encourage recrawl
-4. No keywords meta or Open Graph image specific to tuning
+Service slugs covered:
+mercedes-repair, mechanical-repair, transmission-services, suspension-repair, steering-repair, brake-system-repairs, routine-maintenance, oil-change-service, tire-repair, battery-changes, exhaust-repair, car-programming-diagnostic, electrical-system-repairs, fuel-system-repair, ac-repair-maintenance, car-body-repair, car-paint-protection.
 
-## Plan
+## Approach
 
-**1. Update SEO metadata in `src/pages/Tuning.tsx`**
-- Title: "GAD Tuning Dubai | GAD Motors Performance Parts & ECU Tuning, Digitec"
-- Description: keyword-rich, includes "GAD tuning Dubai", "GAD Motors parts", "ECU tuning Mercedes AMG", "GAD partner UAE"
-- Canonical: keep `https://digitecme.com/tuning`
+**1. Extend `ServiceData` interface in `src/data/services.ts`**
+Add two optional fields:
+- `metaTitle?: string` (≤60 chars)
+- `metaDescription?: string` (≤155 chars)
 
-**2. Extend `useSeo` hook (`src/hooks/use-seo.ts`)**
-Add optional support for:
-- `keywords` meta tag
-- `ogImage` (so Tuning gets a relevant share image, not the homepage one)
-- `jsonLd` injection (Service / AutomotiveBusiness schema) that mounts on the page and cleans up on unmount
+Populate both for ALL 17 services with unique, keyword-rich values following the format:
+`[Service Name] Dubai | Digitec Performance Center`
 
-**3. Add JSON-LD structured data to the Tuning page**
-A `Service` schema marking Digitec as the provider, GAD Motors as the brand, area served Dubai/UAE, service type "ECU Tuning & Performance Parts". This helps Google understand the page intent for GAD-related queries.
+**2. Update `src/pages/ServicePage.tsx`**
+Replace the current `useSeo` call to use `service.metaTitle` and `service.metaDescription` when present (fallback to current logic). Also pass a `Service` JSON-LD schema (provider = Digitec, areaServed Dubai/UAE) so each service page gets structured data — this significantly helps Google rank these pages for "[service] Dubai" queries.
 
-**4. Update `public/sitemap.xml`**
-- Add `<lastmod>2026-04-16</lastmod>` to the `/tuning` entry
-- Bump priority to 0.9
+**3. Verify H1 includes "Dubai"**
+Every `title` field in services already ends with "in Dubai" (verified mercedes-repair, mechanical-repair). I'll audit all 17 during implementation and append "in Dubai" to any that lack it.
 
-**5. Add semantic HTML cues to existing Tuning content**
-- Ensure the H1 in the GAD section uses keyword-rich text (already good)
-- Add `id="gad-tuning-dubai"` and `id="gad-parts-dubai"` anchors so Google can deep-link sitelinks
+**4. Tuning page**
+Already updated last turn with keyword-rich metadata + JSON-LD. Will verify title is ≤60 chars and trim if needed (current title is 71 chars — needs shortening to: `GAD Tuning Dubai | Digitec Performance Center` = 46 chars).
 
-**6. Tell user about post-deploy steps (chat note, not code)**
-- After publishing, submit the URL to Google Search Console for indexing
-- Verify the domain in GSC and submit the updated sitemap
-- Backlinks from gad-motors.de partner page would significantly boost ranking
+## Sample Meta Titles & Descriptions (all unique)
+
+| Slug | Meta Title | Meta Description |
+|---|---|---|
+| mercedes-repair | Mercedes Repair Dubai \| Digitec Performance Center | Expert Mercedes-Benz repair in Dubai by Digitec. Star Diagnostic, OEM parts, AMG specialists. Dealer quality, faster turnaround. |
+| mechanical-repair | Mechanical Repair Dubai \| Digitec Performance Center | Professional mechanical repair in Dubai by Digitec. Engine, drivetrain, and complex fault diagnostics for luxury and German cars. |
+| transmission-services | Transmission Repair Dubai \| Digitec Performance Center | Expert transmission service and repair in Dubai by Digitec. Gearbox rebuilds, fluid flush, and DCT specialists for German cars. |
+| suspension-repair | Suspension Repair Dubai \| Digitec Performance Center | Precision suspension repair in Dubai by Digitec. Air suspension, shocks, and ride height fixes for luxury and performance cars. |
+| steering-repair | Steering Repair Dubai \| Digitec Performance Center | Professional steering repair in Dubai by Digitec. Power steering, rack, and alignment specialists for German and luxury vehicles. |
+| brake-system-repairs | Brake Repair Dubai \| Digitec Performance Center | Expert brake repair in Dubai by Digitec. Pads, rotors, calipers, and performance brake upgrades for luxury and German cars. |
+| routine-maintenance | Car Service Dubai \| Digitec Performance Center | Routine car maintenance in Dubai by Digitec. Scheduled servicing, fluids, and inspections for luxury and German vehicles. |
+| oil-change-service | Oil Change Dubai \| Digitec Performance Center | Professional oil change in Dubai by Digitec. Fast service using premium OEM-approved oils for maximum engine performance. |
+| tire-repair | Tire Repair Dubai \| Digitec Performance Center | Fast tire repair in Dubai by Digitec. Puncture repair, tire replacement, and wheel alignment with premium brands. |
+| battery-changes | Car Battery Replacement Dubai \| Digitec Performance | Fast car battery replacement in Dubai by Digitec. Same-day service with premium OEM-approved batteries for all makes. |
+| exhaust-repair | Exhaust Repair Dubai \| Digitec Performance Center | Expert exhaust repair in Dubai by Digitec. Catalytic converters, mufflers, and performance exhaust for luxury cars. |
+| car-programming-diagnostic | Car Diagnostics Dubai \| Digitec Performance Center | Advanced car diagnostics and ECU programming in Dubai by Digitec. Star Diagnostic, fault scanning, and coding specialists. |
+| electrical-system-repairs | Auto Electrical Repair Dubai \| Digitec Performance | Expert auto electrical repair in Dubai by Digitec. Wiring, sensors, and ECU fault tracing for luxury and German cars. |
+| fuel-system-repair | Fuel System Repair Dubai \| Digitec Performance Center | Professional fuel system repair in Dubai by Digitec. Injectors, pumps, and fuel rail service for performance vehicles. |
+| ac-repair-maintenance | Car AC Repair Dubai \| Digitec Performance Center | Expert car AC repair in Dubai by Digitec. Gas refill, compressor, and cooling system service for luxury vehicles. |
+| car-body-repair | Car Body Repair Dubai \| Digitec Performance Center | Professional car body repair in Dubai by Digitec. Dent repair, panel work, and accident damage for luxury and German cars. |
+| car-paint-protection | Paint Protection Dubai \| Digitec Performance Center | Premium paint protection film (PPF) and ceramic coating in Dubai by Digitec. Long-lasting shine and protection. |
+| /tuning (Tuning.tsx) | GAD Tuning Dubai \| Digitec Performance Center | GAD Motors tuning in Dubai by Digitec. Official GAD partner offering ECU tuning, turbo kits, and AMG performance upgrades. |
+
+All titles ≤60 chars, all descriptions ≤155 chars, all unique, all include "Dubai" + brand.
 
 ## Files to change
-- `src/hooks/use-seo.ts` — add `keywords`, `ogImage`, `jsonLd` support
-- `src/pages/Tuning.tsx` — update SEO call, add JSON-LD, add section anchor IDs
-- `public/sitemap.xml` — add lastmod, bump priority
+- `src/data/services.ts` — add `metaTitle` + `metaDescription` to each of 17 entries; add interface fields
+- `src/pages/ServicePage.tsx` — use new fields in `useSeo`, inject Service JSON-LD
+- `src/pages/Tuning.tsx` — shorten meta title to ≤60 chars
 
-No new dependencies. No backend changes.
+No layout, design, or existing copy changes.
