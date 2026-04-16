@@ -16,6 +16,7 @@ const Header = () => {
     { name: 'Tuning', href: '/tuning', isPage: true },
     { name: 'VRX', href: '/vrx', isPage: true },
     { name: 'About Us', href: '/about', isPage: true },
+    { name: 'Blog', href: '/blog', isPage: true },
     { name: 'FAQ', href: '/faq', isPage: true },
   ];
 
