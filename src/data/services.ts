@@ -13,6 +13,7 @@ export interface ServiceData {
   whyChoose: string;
   includes: string[];
   modelsSection?: { heading: string; intro: string; models: string[]; outro: string };
+  servicesIntro?: { heading: string; text: string };
   localIntent: string;
   details: string;
 }
@@ -71,6 +72,10 @@ export const services: ServiceData[] = [
       outro: 'Our technicians are experienced in handling both German vehicles and international brands, making us a versatile and reliable workshop for all your mechanical repair needs.',
     },
     whyChoose: 'As a leading car workshop in Dubai, Digitec Performance Center stands out for its expertise, transparency, and efficiency: experienced technicians specialized in German and luxury vehicles, advanced diagnostic tools for accurate fault detection, OEM and high-performance parts used in all repairs, transparent pricing with no hidden costs, and faster turnaround compared to dealerships. We deliver dealer-level quality mechanical repair in Dubai without the long waiting times and high costs.',
+    servicesIntro: {
+      heading: 'Complete Mechanical Repair Services in Dubai',
+      text: 'Our workshop offers a full spectrum of car mechanical repair services in Dubai, covering all major vehicle systems. We are equipped to handle everything from minor repairs to full engine rebuilds, ensuring your car receives the highest level of care.',
+    },
     includes: [
       'Engine diagnostics and full engine rebuilds',
       'Timing belt and timing chain replacement',
