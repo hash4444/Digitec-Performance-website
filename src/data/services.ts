@@ -14,6 +14,7 @@ export interface ServiceData {
   includes: string[];
   modelsSection?: { heading: string; intro: string; models: string[]; outro: string };
   servicesIntro?: { heading: string; text: string };
+  extraSections?: { heading: string; text?: string; items?: string[] }[];
   localIntent: string;
   details: string;
 }
@@ -314,25 +315,56 @@ export const services: ServiceData[] = [
   },
   {
     slug: 'tire-repair',
-    title: 'Tire Repair',
-    description: 'Balance, alignment, and performance-grade tire fitting.',
+    title: 'Tire Repair Dubai',
+    description: 'Fast puncture repair, tire replacement and wheel alignment in Dubai.',
     image: tireRepairImg,
     category: 'Core Mechanical Services',
     seoKeyword: 'Tire Repair Dubai',
-    intro: 'Your tires are the only point of contact between your vehicle and the road. Digi-Tec Performance Center offers professional tire repair and fitting services in Dubai, ensuring optimal grip, safety, and performance. We work with premium tire brands and use precision balancing and alignment equipment for a perfect fit.',
-    whyImportant: 'Worn, damaged, or improperly balanced tires compromise handling, increase braking distances, and raise the risk of blowouts, especially in Dubai\'s high-temperature conditions. Regular tire inspections, rotations, and timely replacements are essential for safe driving and even tire wear.',
-    whyChoose: 'Digi-Tec stocks and fits performance and luxury tires from brands like Michelin, Continental, Pirelli, and Bridgestone. Our four-wheel alignment equipment is calibrated for German vehicles, ensuring precise geometry that protects your tires and enhances driving dynamics.',
+    intro: 'Looking for tire repair in Dubai or a puncture repair near you? At Digitec Performance Center, we provide fast, reliable, and professional tire repair and tire services in Dubai, helping you get back on the road safely and quickly. From emergency puncture repairs to full tire replacement and wheel alignment, our expert technicians deliver precision service using advanced equipment and premium tire brands.',
+    whyImportant: 'Dubai\'s high temperatures and road conditions can accelerate tire wear and increase the risk of blowouts. Driving on damaged or worn tires can lead to reduced grip and traction, longer braking distances, poor handling and instability, and increased risk of accidents. Regular tire inspections and timely repairs are essential to keep your vehicle safe and performing at its best.',
+    modelsSection: {
+      heading: 'Tire Repair for All Car Brands',
+      intro: 'We provide tire repair in Dubai for all vehicles, including:',
+      models: [
+        'Mercedes-Benz, Maybach, Audi, BMW, Porsche',
+        'Lamborghini, Aston Martin, Bugatti, Ferrari, McLaren',
+        'Bentley, Rolls-Royce, Range Rover, Land Rover',
+        'Nissan, Toyota, Rox, Jetour, Zeekr, BYD, Hongqi',
+      ],
+      outro: 'We understand the specific tire and alignment requirements for luxury and performance cars, ensuring precision fitment and optimal performance.',
+    },
+    whyChoose: 'We\'re not just another tire shop, we\'re a performance-focused workshop: fast same-day tire repair service, advanced balancing and alignment equipment, premium tire brands and performance options, specialists in luxury and German vehicles, transparent pricing with no hidden fees, convenient location in Dubai, and WhatsApp booking for quick response. We combine speed + quality + expertise, which most competitors lack.',
+    servicesIntro: {
+      heading: '24/7 Fast Tire Repair & Puncture Services in Dubai',
+      text: 'Flat tire? Low pressure warning? Vibration while driving? We offer quick and efficient puncture repair in Dubai, ensuring minimal downtime and maximum safety. Our team handles all types of tire damage with proper repair methods, not temporary fixes. We focus on fast turnaround so you\'re not stuck waiting.',
+    },
     includes: [
-      'Puncture repair and patching',
-      'Tire rotation and cross-pattern balancing',
-      'Four-wheel laser alignment',
-      'New tire fitting and disposal',
-      'Tire pressure monitoring system (TPMS) service',
-      'Run-flat tire replacement',
-      'Seasonal tire consultation',
+      'Emergency puncture repair and patching',
+      'Tire leak detection and repair',
+      'Run-flat tire inspection and replacement',
+      'Tire sidewall and tread assessment',
+      'Quick same-day tire repair service',
     ],
-    localIntent: 'Looking for tire repair in Dubai or tire fitting near me? Digi-Tec Performance Center provides expert tire services for all luxury and performance vehicles across Dubai.',
-    details: 'Complete tire services including puncture repair, tire rotation, wheel balancing, four-wheel alignment, and new tire fitting from leading brands. We help you choose the right tires for your driving style and conditions.',
+    extraSections: [
+      {
+        heading: 'Complete Tire Services in Dubai',
+        text: 'In addition to repair, we provide full tire service solutions in Dubai to improve performance, safety, and tire lifespan. Using advanced alignment systems, we ensure your vehicle maintains perfect road contact and handling stability.',
+        items: [
+          'New tire supply and installation',
+          'Wheel balancing for smooth driving',
+          'Four-wheel laser alignment',
+          'Tire rotation for even wear',
+          'TPMS (tire pressure monitoring system) diagnostics',
+          'Tire replacement and disposal',
+        ],
+      },
+      {
+        heading: 'Premium Tire Brands Available',
+        text: 'We supply and install top global tire brands, including: Michelin, Continental, Pirelli, Bridgestone, and other high-performance options. Our team helps you choose the best tire based on driving style, vehicle type, and Dubai road conditions.',
+      },
+    ],
+    localIntent: 'Searching for tire repair Dubai near me, puncture repair Dubai, or tire shop Dubai? Digitec Performance Center is your trusted destination. Located in Dubai, we serve customers across the UAE with fast, professional tire services.',
+    details: 'Complete tire services including puncture repair, tire replacement, wheel balancing, four-wheel alignment, and new tire fitting from leading brands.',
   },
   {
     slug: 'battery-changes',

@@ -164,6 +164,24 @@ const ServicePage = () => {
                 </ul>
               </div>
 
+              {/* Extra Sections (optional) */}
+              {service.extraSections?.map((section, i) => (
+                <div key={i}>
+                  <h2 className="text-2xl sm:text-3xl font-bold mb-5">{section.heading}</h2>
+                  {section.text && <p className="text-gray-300 leading-relaxed text-lg mb-4">{section.text}</p>}
+                  {section.items && (
+                    <ul className="space-y-3">
+                      {section.items.map((item, j) => (
+                        <li key={j} className="flex items-start gap-3 text-gray-300 text-lg">
+                          <Check className="w-5 h-5 text-burnt-orange mt-1 shrink-0" />
+                          {item}
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+                </div>
+              ))}
+
               {/* Local Intent */}
               <div className="bg-charcoal/40 border border-gray-800/50 rounded-2xl p-6 sm:p-8">
                 <p className="text-gray-300 leading-relaxed text-lg italic">{service.localIntent}</p>
