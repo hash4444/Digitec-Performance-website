@@ -13,6 +13,7 @@ export interface ServiceData {
   whyChoose: string;
   includes: string[];
   modelsSection?: { heading: string; intro: string; models: string[]; outro: string };
+  servicesIntro?: { heading: string; text: string };
   localIntent: string;
   details: string;
 }
