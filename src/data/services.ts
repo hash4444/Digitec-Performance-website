@@ -3,6 +3,8 @@ import tireRepairImg from '@/assets/tire-repair.png';
 
 export interface ServiceData {
   slug: string;
+  metaTitle?: string;
+  metaDescription?: string;
   title: string;
   description: string;
   image: string;
