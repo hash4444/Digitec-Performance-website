@@ -41,6 +41,25 @@ const Services = () => {
         </div>
       </section>
 
+      {/* Intro Content */}
+      <section className="py-12 sm:py-16 bg-black border-b border-gray-800/50">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
+          <p className="text-gray-300 text-base sm:text-lg leading-relaxed">
+            At Digitec Performance Center, we offer a comprehensive range of automotive services tailored to meet the needs of most vehicle brands, combining dealership level expertise with faster turnaround times and competitive pricing. Our workshop specializes in servicing, diagnostics, mechanical repairs, performance upgrades, and maintenance for premium and everyday vehicles.
+          </p>
+          <div className="mt-8 flex flex-wrap justify-center gap-2 sm:gap-3">
+            {['Mercedes Benz', 'Maybach', 'Audi', 'BMW', 'Porsche', 'Lamborghini', 'Aston Martin', 'Bugatti', 'Nissan', 'Ferrari', 'McLaren', 'Bentley', 'Range Rover', 'Land Rover', 'Rolls Royce', 'Toyota', 'Rox', 'Jetour', 'Zeekr', 'BYD', 'Hongqi'].map((brand) => (
+              <span key={brand} className="px-3 py-1.5 bg-charcoal/60 border border-gray-700/50 rounded-full text-xs sm:text-sm text-gray-400 hover:text-burnt-orange hover:border-burnt-orange/50 transition-colors">
+                {brand}
+              </span>
+            ))}
+          </div>
+          <p className="mt-8 text-gray-400 text-sm sm:text-base">
+            Whether you own a luxury supercar, a high performance vehicle, or a daily driver, Digitec delivers reliable, high quality automotive solutions designed to keep your car performing at its best.
+          </p>
+        </div>
+      </section>
+
       {/* Services by Category */}
       <section className="pb-20 sm:pb-28">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 space-y-16">
