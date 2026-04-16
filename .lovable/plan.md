@@ -1,23 +1,51 @@
 
+The user wants the Tuning page to rank on Google for searches like "GAD tuning Dubai". This is an SEO task — the page already has good content and basic SEO via `useSeo`, but we can strengthen it.
 
-## Fix Brands We Serve Mobile Layout
+Current state:
+- `useSeo` sets title, description, canonical, OG tags
+- Page is in `public/sitemap.xml` at `/tuning`
+- `robots.txt` allows all crawlers
+- Title: "Mercedes Performance Tuning Dubai | DIGI-TEC Performance Center"
+- Description does not mention GAD
 
-### Problem
-On mobile (390px wide), 13 brand logos are orbiting in a tiny ellipse (140x100px radius), causing them to overlap and clamp together. The orbital approach doesn't work well on small screens with this many brands.
+Gaps:
+1. Title/description don't target "GAD tuning" keywords
+2. No JSON-LD structured data on the Tuning page (Service schema would help)
+3. Sitemap entry could have a `<lastmod>` to encourage recrawl
+4. No keywords meta or Open Graph image specific to tuning
 
-### Solution: Switch to a scrollable grid on mobile, keep orbit on desktop
+## Plan
 
-**File: `src/components/BrandsWeServe.tsx`**
+**1. Update SEO metadata in `src/pages/Tuning.tsx`**
+- Title: "GAD Tuning Dubai | GAD Motors Performance Parts & ECU Tuning, Digitec"
+- Description: keyword-rich, includes "GAD tuning Dubai", "GAD Motors parts", "ECU tuning Mercedes AMG", "GAD partner UAE"
+- Canonical: keep `https://digitecme.com/tuning`
 
-- **Mobile (< 768px)**: Replace the orbital layout with a clean grid of brand logos (3 columns, evenly spaced). No orbit animation on mobile — just a static, tappable grid with hover/tap effects. Each logo gets proper spacing and size (w-20 h-20).
-- **Desktop (>= 768px)**: Keep the existing orbital system unchanged.
-- Reduce the section height on mobile from `min-h-screen` to auto-height.
-- Remove the drag/parallax logic from mobile since it doesn't apply to the grid.
-- Keep tooltips on desktop; on mobile, show brand name below each logo instead.
+**2. Extend `useSeo` hook (`src/hooks/use-seo.ts`)**
+Add optional support for:
+- `keywords` meta tag
+- `ogImage` (so Tuning gets a relevant share image, not the homepage one)
+- `jsonLd` injection (Service / AutomotiveBusiness schema) that mounts on the page and cleans up on unmount
 
-### Changes
-1. Use the `useIsMobile` hook to detect screen size
-2. Conditionally render grid layout (mobile) vs orbital layout (desktop)
-3. Mobile grid: 3-column grid with `gap-6`, each logo in a rounded container with the brand name underneath in small text
-4. Remove `min-h-screen` on mobile, use appropriate padding instead
+**3. Add JSON-LD structured data to the Tuning page**
+A `Service` schema marking Digitec as the provider, GAD Motors as the brand, area served Dubai/UAE, service type "ECU Tuning & Performance Parts". This helps Google understand the page intent for GAD-related queries.
 
+**4. Update `public/sitemap.xml`**
+- Add `<lastmod>2026-04-16</lastmod>` to the `/tuning` entry
+- Bump priority to 0.9
+
+**5. Add semantic HTML cues to existing Tuning content**
+- Ensure the H1 in the GAD section uses keyword-rich text (already good)
+- Add `id="gad-tuning-dubai"` and `id="gad-parts-dubai"` anchors so Google can deep-link sitelinks
+
+**6. Tell user about post-deploy steps (chat note, not code)**
+- After publishing, submit the URL to Google Search Console for indexing
+- Verify the domain in GSC and submit the updated sitemap
+- Backlinks from gad-motors.de partner page would significantly boost ranking
+
+## Files to change
+- `src/hooks/use-seo.ts` — add `keywords`, `ogImage`, `jsonLd` support
+- `src/pages/Tuning.tsx` — update SEO call, add JSON-LD, add section anchor IDs
+- `public/sitemap.xml` — add lastmod, bump priority
+
+No new dependencies. No backend changes.
