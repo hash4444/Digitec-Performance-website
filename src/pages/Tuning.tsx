@@ -7,9 +7,35 @@ import TuningConfigurator from '@/components/TuningConfigurator';
 
 const Tuning = () => {
   useSeo({
-    title: 'Mercedes Performance Tuning Dubai | DIGI-TEC Performance Center',
-    description: 'Unleash the full potential of your Mercedes-Benz with expert performance tuning in Dubai. ECU remapping, power upgrades, and precision calibration at DIGI-TEC.',
+    title: 'GAD Tuning Dubai | GAD Motors Performance Parts & ECU Tuning, Digitec',
+    description: 'GAD tuning in Dubai at Digitec Performance Center. Official GAD Motors partner offering ECU tuning, performance parts, turbo kits, and AMG upgrades across the UAE.',
     canonical: 'https://digitecme.com/tuning',
+    keywords: 'GAD tuning Dubai, GAD Motors Dubai, GAD partner UAE, ECU tuning Dubai, Mercedes AMG tuning, performance tuning Dubai, GAD parts Dubai, turbo upgrade Dubai',
+    ogImage: 'https://digitecme.com/images/tuning-hero-bg.jpg',
+    jsonLd: {
+      '@context': 'https://schema.org',
+      '@type': 'Service',
+      serviceType: 'GAD Tuning & ECU Performance Upgrades',
+      name: 'GAD Tuning Dubai',
+      description: 'Official GAD Motors partner in Dubai. ECU tuning, performance parts, turbo kits, intake manifolds, and AMG upgrades for German vehicles.',
+      url: 'https://digitecme.com/tuning',
+      brand: { '@type': 'Brand', name: 'GAD Motors' },
+      areaServed: [
+        { '@type': 'City', name: 'Dubai' },
+        { '@type': 'Country', name: 'United Arab Emirates' },
+      ],
+      provider: {
+        '@type': 'AutomotiveBusiness',
+        name: 'Digitec Performance Center',
+        url: 'https://digitecme.com',
+        telephone: '+971 4 340 2223',
+        address: {
+          '@type': 'PostalAddress',
+          addressLocality: 'Dubai',
+          addressCountry: 'AE',
+        },
+      },
+    },
   });
 
   return (
@@ -43,7 +69,7 @@ const Tuning = () => {
       </section>
 
       {/* GAD Tuning Dubai Section */}
-      <section className="relative py-16 md:py-24 bg-black overflow-hidden">
+      <section id="gad-tuning-dubai" className="relative py-16 md:py-24 bg-black overflow-hidden">
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto">
             <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-off-white mb-6 leading-tight">
@@ -52,7 +78,7 @@ const Tuning = () => {
             <p className="text-base md:text-lg text-white/70 leading-relaxed mb-8">
               At Digitec Performance Center, we offer a wide range of GAD Motors performance parts in Dubai, engineered for maximum power, reliability, and precision. Our selection includes high-performance low-pressure fuel systems, intake manifolds, turbochargers, intercooler kits, piston sets, connecting rods, gearbox upgrades, and complete turbo kits designed specifically for Mercedes-Benz AMG and other high-performance platforms. Whether you're upgrading airflow, increasing boost, or building a fully tuned engine, all GAD parts we supply are developed and tested to deliver exceptional performance under demanding conditions. As a trusted provider of GAD parts in Dubai, we ensure every component meets the highest standards of engineering and performance tuning.
             </p>
-            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-off-white mb-4">
+            <h2 id="gad-parts-dubai" className="text-xl sm:text-2xl md:text-3xl font-bold text-off-white mb-4">
               GAD Motors Performance Parts in Dubai
             </h2>
             <p className="text-base md:text-lg text-white/70 leading-relaxed">
@@ -65,7 +91,7 @@ const Tuning = () => {
       <TuningConfigurator />
 
       {/* GAD Tuning Near Me Section */}
-      <section className="relative py-16 md:py-24 bg-black overflow-hidden">
+      <section id="gad-tuning-near-me" className="relative py-16 md:py-24 bg-black overflow-hidden">
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-off-white mb-4">
