@@ -55,9 +55,19 @@ const Tuning = () => {
             <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-off-white mb-4">
               GAD Motors Performance Parts in Dubai
             </h2>
-            <p className="text-base md:text-lg text-white/70 leading-relaxed mb-8">
+            <p className="text-base md:text-lg text-white/70 leading-relaxed">
               Digitec Performance Center is a trusted destination for GAD tuning in Dubai, offering expert installation, calibration, and performance optimization backed by our partnership with GAD Motors. Our technicians specialize in high-performance and German vehicles, using GAD-certified software, precision diagnostics, and advanced tuning techniques to unlock your vehicle's full potential safely and efficiently. We provide tailored tuning solutions, fast turnaround times, and complete transparency, ensuring every upgrade is performed to the highest standard. If you're searching for GAD tuning Dubai or a reliable GAD partner, Digitec delivers the expertise, technology, and results that set us apart in the performance automotive market.
             </p>
+          </div>
+        </div>
+      </section>
+
+      <TuningConfigurator />
+
+      {/* GAD Tuning Near Me Section */}
+      <section className="relative py-16 md:py-24 bg-black overflow-hidden">
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-4xl mx-auto">
             <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-off-white mb-4">
               GAD Tuning Near Me in Dubai
             </h2>
@@ -68,7 +78,6 @@ const Tuning = () => {
         </div>
       </section>
 
-      <TuningConfigurator />
       <Footer />
     </div>
   );
