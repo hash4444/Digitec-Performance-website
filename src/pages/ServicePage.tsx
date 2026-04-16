@@ -179,10 +179,6 @@ const ServicePage = () => {
                     <span className="text-burnt-orange mt-1">✓</span>
                     Transparent pricing, no hidden fees
                   </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-burnt-orange mt-1">✓</span>
-                    Warranty on all work performed
-                  </li>
                 </ul>
 
                 <div className="space-y-3">
