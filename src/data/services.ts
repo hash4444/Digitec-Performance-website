@@ -36,6 +36,17 @@ export const services: ServiceData[] = [
       'Electrical diagnostics and ECU-related issues',
       'Preventative maintenance and scheduled servicing',
     ],
+    modelsSection: {
+      heading: 'Mercedes Models We Service',
+      intro: 'We work on all Mercedes-Benz models, including:',
+      models: [
+        'Mercedes C-Class, E-Class, and S-Class',
+        'Mercedes GLE, GLC, and GLS SUVs',
+        'AMG performance models',
+        'Mercedes Maybach luxury vehicles',
+      ],
+      outro: 'Whether your vehicle requires a simple service or a complete mechanical overhaul, our workshop is fully equipped to deliver dealership-level results at more competitive pricing.',
+    },
     localIntent: 'If you are searching for Mercedes repair Dubai, Mercedes specialist near me, or a reliable German car workshop in Dubai, Digitec Performance Center is your go-to destination. Conveniently located in Dubai, we serve customers across the UAE who expect high-quality workmanship and expert care for their vehicles. Book your Mercedes service today and experience dealership-level quality without the dealership delays.',
     details: 'We work on all Mercedes-Benz models, including Mercedes C-Class, E-Class, and S-Class, Mercedes GLE, GLC, and GLS SUVs, AMG performance models, and Mercedes Maybach luxury vehicles. Whether your vehicle requires a simple service or a complete mechanical overhaul, our workshop is fully equipped to deliver dealership-level results at more competitive pricing.',
   },
