@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { useSeo } from '@/hooks/use-seo';
 import Header from '@/components/Header';
 import { Footer } from '@/components/Footer';
-import { FinalCTA } from '@/components/FinalCTA';
+
 import { services } from '@/data/services';
 
 const categories = [
@@ -88,7 +88,7 @@ const Services = () => {
         </div>
       </section>
 
-      <FinalCTA />
+      
       <Footer />
     </div>
   );
