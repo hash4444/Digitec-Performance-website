@@ -120,6 +120,23 @@ const ServicePage = () => {
                 <p className="text-gray-300 leading-relaxed text-lg">{service.whyImportant}</p>
               </div>
 
+              {/* Models We Service (optional) */}
+              {service.modelsSection && (
+                <div>
+                  <h2 className="text-2xl sm:text-3xl font-bold mb-5">{service.modelsSection.heading}</h2>
+                  <p className="text-gray-300 leading-relaxed text-lg mb-4">{service.modelsSection.intro}</p>
+                  <ul className="space-y-3 mb-4">
+                    {service.modelsSection.models.map((model, i) => (
+                      <li key={i} className="flex items-start gap-3 text-gray-300 text-lg">
+                        <Check className="w-5 h-5 text-burnt-orange mt-1 shrink-0" />
+                        {model}
+                      </li>
+                    ))}
+                  </ul>
+                  <p className="text-gray-300 leading-relaxed text-lg">{service.modelsSection.outro}</p>
+                </div>
+              )}
+
               {/* Why Choose Digi-Tec */}
               <div>
                 <h2 className="text-2xl sm:text-3xl font-bold mb-5">Why Choose Digi-Tec</h2>

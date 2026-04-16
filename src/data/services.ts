@@ -12,6 +12,7 @@ export interface ServiceData {
   whyImportant: string;
   whyChoose: string;
   includes: string[];
+  modelsSection?: { heading: string; intro: string; models: string[]; outro: string };
   localIntent: string;
   details: string;
 }
