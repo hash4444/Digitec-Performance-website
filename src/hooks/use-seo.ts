@@ -6,10 +6,31 @@ interface SeoProps {
   canonical?: string;
   keywords?: string;
   ogImage?: string;
+  ogTitle?: string;
+  ogDescription?: string;
+  ogType?: string;
+  twitterCard?: string;
+  twitterTitle?: string;
+  twitterDescription?: string;
+  noindex?: boolean;
   jsonLd?: Record<string, any> | Record<string, any>[];
 }
 
-export function useSeo({ title, description, canonical, keywords, ogImage, jsonLd }: SeoProps) {
+export function useSeo({
+  title,
+  description,
+  canonical,
+  keywords,
+  ogImage,
+  ogTitle,
+  ogDescription,
+  ogType,
+  twitterCard,
+  twitterTitle,
+  twitterDescription,
+  noindex,
+  jsonLd,
+}: SeoProps) {
   useEffect(() => {
     document.title = title;
 
@@ -29,6 +50,13 @@ export function useSeo({ title, description, canonical, keywords, ogImage, jsonL
       upsertMeta('meta[name="keywords"]', 'name', 'keywords', keywords);
     }
 
+    upsertMeta(
+      'meta[name="robots"]',
+      'name',
+      'robots',
+      noindex ? 'noindex, nofollow' : 'index, follow',
+    );
+
     // OG / Twitter tags
     const setMeta = (property: string, content: string) => {
       let el = document.querySelector(`meta[property="${property}"]`) ||
@@ -42,10 +70,12 @@ export function useSeo({ title, description, canonical, keywords, ogImage, jsonL
         document.head.appendChild(el);
       }
     };
-    setMeta('og:title', title);
-    setMeta('og:description', description);
-    setMeta('twitter:title', title);
-    setMeta('twitter:description', description);
+    setMeta('og:title', ogTitle || title);
+    setMeta('og:description', ogDescription || description);
+    setMeta('og:type', ogType || 'website');
+    setMeta('twitter:card', twitterCard || 'summary_large_image');
+    setMeta('twitter:title', twitterTitle || ogTitle || title);
+    setMeta('twitter:description', twitterDescription || ogDescription || description);
     if (ogImage) {
       setMeta('og:image', ogImage);
       setMeta('twitter:image', ogImage);
@@ -76,5 +106,20 @@ export function useSeo({ title, description, canonical, keywords, ogImage, jsonL
         jsonLdScript.parentNode.removeChild(jsonLdScript);
       }
     };
-  }, [title, description, canonical, keywords, ogImage, JSON.stringify(jsonLd)]);
+  }, [
+    title,
+    description,
+    canonical,
+    keywords,
+    ogImage,
+    ogTitle,
+    ogDescription,
+    ogType,
+    twitterCard,
+    twitterTitle,
+    twitterDescription,
+    noindex,
+    JSON.stringify(jsonLd),
+  ]);
 }
+
