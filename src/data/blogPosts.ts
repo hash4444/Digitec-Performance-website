@@ -17,8 +17,8 @@ export const blogCategories = ['All', 'Maintenance', 'Tuning', 'Mercedes', 'Deta
 
 export const blogPosts: BlogPost[] = [
   {
-    slug: 'digitec-performance-center-dubai-premier-automotive-authority',
-    title: "Dubai's Premier Automotive Authority: Why Every Discerning Driver in the UAE Chooses Digitec",
+    slug: 'best-car-workshop-dubai',
+    title: 'Best Car Workshop in Dubai (2026 Guide)',
     excerpt:
       "In a city driven by ambition and home to extraordinary automobiles, Digitec Performance Center in Al Quoz has earned the trust of the UAE's most discerning drivers.",
     category: 'Mercedes',
@@ -26,9 +26,11 @@ export const blogPosts: BlogPost[] = [
     date: '2026-04-17',
     readTime: '9 min read',
     coverGradient: 'from-burnt-orange/50 via-charcoal to-black',
-    metaTitle: "Best Car Workshop Dubai | Digitec Performance Center Al Quoz",
+    metaTitle: 'Best Car Workshop in Dubai (2026) | Digitec Performance Center',
     metaDescription:
-      'Digitec Performance Center, Dubai\'s premier German car specialist in Al Quoz. Mercedes service, ECU tuning, GAD Motors upgrades, and full luxury car care.',
+      'Looking for the best car workshop in Dubai? Digitec Performance Center offers expert repair, Mercedes service, ECU tuning, and GAD performance upgrades. Book today.',
+    keywords:
+      'best car workshop Dubai, car repair Dubai, German car specialist Dubai, Mercedes service Dubai, ECU tuning Dubai',
     content: [
       {
         type: 'p',
