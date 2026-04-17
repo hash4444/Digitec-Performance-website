@@ -9,6 +9,7 @@ export interface BlogPost {
   coverGradient: string; // tailwind gradient classes
   metaTitle: string;
   metaDescription: string;
+  keywords?: string;
   content: { type: 'h2' | 'h3' | 'p' | 'ul'; text?: string; items?: string[] }[];
 }
 
