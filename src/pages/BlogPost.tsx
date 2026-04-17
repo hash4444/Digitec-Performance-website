@@ -16,7 +16,15 @@ const BlogPost = () => {
     title: post?.metaTitle || 'Blog | Digitec Performance Center',
     description: post?.metaDescription || 'Digitec Performance Center blog.',
     keywords: post?.keywords,
-    canonical: post ? `https://digitecme.com/blog/${post.slug}` : 'https://digitecme.com/blog',
+    ogTitle: post?.ogTitle,
+    ogDescription: post?.ogDescription,
+    ogType: post?.ogType,
+    twitterCard: post?.twitterCard,
+    twitterTitle: post?.twitterTitle,
+    twitterDescription: post?.twitterDescription,
+    canonical:
+      post?.canonicalOverride ||
+      (post ? `https://digitecme.com/blog/${post.slug}` : 'https://digitecme.com/blog'),
     jsonLd: post
       ? {
           '@context': 'https://schema.org',
@@ -30,7 +38,7 @@ const BlogPost = () => {
             name: 'Digitec Performance Center',
             url: 'https://digitecme.com',
           },
-          mainEntityOfPage: `https://digitecme.com/blog/${post.slug}`,
+          mainEntityOfPage: post.canonicalOverride || `https://digitecme.com/blog/${post.slug}`,
         }
       : undefined,
   });
