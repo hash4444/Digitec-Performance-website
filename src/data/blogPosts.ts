@@ -10,6 +10,13 @@ export interface BlogPost {
   metaTitle: string;
   metaDescription: string;
   keywords?: string;
+  ogTitle?: string;
+  ogDescription?: string;
+  ogType?: string;
+  twitterCard?: string;
+  twitterTitle?: string;
+  twitterDescription?: string;
+  canonicalOverride?: string;
   content: { type: 'h2' | 'h3' | 'p' | 'ul'; text?: string; items?: string[] }[];
 }
 
