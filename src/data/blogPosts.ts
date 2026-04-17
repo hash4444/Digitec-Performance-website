@@ -33,11 +33,20 @@ export const blogPosts: BlogPost[] = [
     date: '2026-04-17',
     readTime: '9 min read',
     coverGradient: 'from-burnt-orange/50 via-charcoal to-black',
-    metaTitle: 'Best Car Workshop in Dubai (2026) | Digitec Performance Center',
+    metaTitle: 'Best Car Workshop in Dubai (2026 Guide) | Digitec Performance Center',
     metaDescription:
-      'Looking for the best car workshop in Dubai? Digitec Performance Center offers expert repair, Mercedes service, ECU tuning, and GAD performance upgrades. Book today.',
+      'Looking for the best car workshop in Dubai? Digitec Performance Center offers expert Mercedes, BMW & Audi repair, ECU tuning, and GAD upgrades. Book today.',
     keywords:
       'best car workshop Dubai, car repair Dubai, German car specialist Dubai, Mercedes service Dubai, ECU tuning Dubai',
+    ogTitle: 'Best Car Workshop in Dubai (2026 Guide) | Digitec',
+    ogDescription:
+      'Expert car repair, Mercedes service, ECU tuning & GAD upgrades in Dubai. Trusted by luxury car owners. Visit Digitec Performance Center.',
+    ogType: 'website',
+    twitterCard: 'summary_large_image',
+    twitterTitle: 'Best Car Workshop in Dubai (2026 Guide) | Digitec',
+    twitterDescription:
+      'Expert car repair, Mercedes service, ECU tuning & GAD upgrades in Dubai. Trusted by luxury car owners.',
+    canonicalOverride: 'https://digitecme.com/best-car-workshop-dubai',
     content: [
       {
         type: 'p',
