@@ -16,6 +16,75 @@ export const blogCategories = ['All', 'Maintenance', 'Tuning', 'Mercedes', 'Deta
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: 'digitec-performance-center-dubai-premier-automotive-authority',
+    title: "Dubai's Premier Automotive Authority: Why Every Discerning Driver in the UAE Chooses Digitec",
+    excerpt:
+      "In a city driven by ambition and home to extraordinary automobiles, Digitec Performance Center in Al Quoz has earned the trust of the UAE's most discerning drivers.",
+    category: 'Mercedes',
+    author: 'DIGI-TEC Performance',
+    date: '2026-04-17',
+    readTime: '9 min read',
+    coverGradient: 'from-burnt-orange/50 via-charcoal to-black',
+    metaTitle: "Best Car Workshop Dubai | Digitec Performance Center Al Quoz",
+    metaDescription:
+      'Digitec Performance Center, Dubai\'s premier German car specialist in Al Quoz. Mercedes service, ECU tuning, GAD Motors upgrades, and full luxury car care.',
+    content: [
+      {
+        type: 'p',
+        text: "In a city driven by ambition and home to some of the world's most extraordinary automobiles, finding a workshop that truly understands your vehicle is essential. Digitec Performance Center, located in the heart of Al Quoz, Dubai, has spent decades earning the trust of the UAE's most discerning drivers, including owners of Mercedes-Benz, Porsche, Audi, BMW, Ferrari, and more. This is not just a car workshop. It is a performance institution.",
+      },
+      {
+        type: 'p',
+        text: 'Whether you are searching for the best car workshop in Dubai, require expert Mercedes car service, need a certified German car specialist in Dubai, or are looking for precision ECU tuning and GAD Motors performance upgrades, Digitec Performance Center is the answer.',
+      },
+      {
+        type: 'p',
+        text: 'This article explores five key pillars that define Digitec\u2019s position in the automotive industry: excellence, proven results, trust, reputation, and leadership.',
+      },
+      { type: 'h2', text: 'Why Digitec Performance Center Is Great' },
+      { type: 'h3', text: 'A Complete Automotive Universe Under One Roof' },
+      {
+        type: 'p',
+        text: 'What separates a great workshop from a good one is breadth without compromise. Digitec Performance Center offers an exceptional range of services covering mechanical, electrical, and performance disciplines required by luxury and high-performance vehicles. From routine oil changes to full AMG and GAD tuning projects, every service is delivered with dealer-level precision.',
+      },
+      { type: 'h3', text: 'Comprehensive Service Offering' },
+      {
+        type: 'p',
+        text: 'Clients visiting for car repair in Dubai can access a full suite of specialist services, including:',
+      },
+      {
+        type: 'ul',
+        items: [
+          'Engine diagnostics, repair, and rebuild',
+          'Transmission repair in Dubai, including automatic, manual, and dual-clutch systems',
+          'Gearbox repair and full gearbox servicing, including fluid overhauls and rebuilds',
+          'Suspension repair, including geometry correction and full suspension overhauls',
+          'Brake repair services, including pad replacement, rotor resurfacing, and complete brake servicing',
+          'Battery replacement and car battery change for all luxury vehicles, including Mercedes models',
+          'Tire repair, tire replacement, and precision wheel alignment',
+          'Car AC repair and full air conditioning servicing',
+          'ECU tuning and performance optimization',
+          'Car tuning using GAD Motors systems and AMG performance upgrades',
+          'Premium oil services using manufacturer-approved lubricants',
+          'Bodywork, paint correction, and custom modifications',
+        ],
+      },
+      {
+        type: 'p',
+        text: 'This integrated approach ensures that clients do not need to visit multiple workshops. Every service is delivered with continuity, precision, and accountability.',
+      },
+      { type: 'h3', text: 'German Engineered Expertise for German Vehicles' },
+      {
+        type: 'p',
+        text: "At the core of Digitec's identity is deep expertise in German automotive engineering. As a recognized German car specialist in Dubai, the workshop's technicians are trained to meet the exact standards required by Mercedes-Benz, Porsche, Audi, and BMW.",
+      },
+      {
+        type: 'p',
+        text: 'For Mercedes car service, Digitec is widely regarded as a leading independent alternative to official dealerships in the UAE. Every model, from the C-Class to AMG and Maybach, is serviced using manufacturer approved diagnostic tools, OEM parts, and advanced calibration systems.',
+      },
+    ],
+  },
+  {
     slug: 'mercedes-service-intervals-dubai-heat',
     title: 'Mercedes Service Intervals in Dubai Heat: What You Need to Know',
     excerpt:
