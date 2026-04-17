@@ -15,6 +15,7 @@ const BlogPost = () => {
   useSeo({
     title: post?.metaTitle || 'Blog | Digitec Performance Center',
     description: post?.metaDescription || 'Digitec Performance Center blog.',
+    keywords: post?.keywords,
     canonical: post ? `https://digitecme.com/blog/${post.slug}` : 'https://digitecme.com/blog',
     jsonLd: post
       ? {
