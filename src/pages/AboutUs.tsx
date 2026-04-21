@@ -60,13 +60,13 @@ const AboutUs = () => {
               viewport={{ once: true }}
             >
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-black mb-6">
-                Our <span className="text-burnt-orange">Story</span>
+                About <span className="text-burnt-orange">D</span>igitec Performance Center
               </h2>
-              <p className="text-white/50 text-sm sm:text-base leading-relaxed mb-4">
-                Founded with a singular vision: to provide the UAE's most discerning drivers with a service center that matches the caliber of their vehicles. DIGI-TEC Performance Center was built from the ground up by automotive enthusiasts who understand that luxury cars demand luxury care.
+              <p className="text-white/60 text-sm sm:text-base leading-relaxed mb-4">
+                Digitec Performance Center is a leading car workshop in Dubai, specialising in German, luxury, performance, and advanced electric vehicles. Based in the heart of Dubai, we provide expert diagnostics, repair, maintenance, and performance upgrades using dealer-level technology and OEM-grade parts.
               </p>
-              <p className="text-white/50 text-sm sm:text-base leading-relaxed">
-                With over 40 years of combined expertise spanning German engineering, performance tuning, and bespoke modifications, our team delivers results that exceed factory standards. Every vehicle that enters our facility leaves performing at its absolute peak.
+              <p className="text-white/60 text-sm sm:text-base leading-relaxed">
+                Our workshop is trusted by owners of Mercedes-Benz, BMW, Audi, Porsche, Lamborghini, Ferrari, McLaren, Bentley, Rolls-Royce, Range Rover, and Land Rover, delivering precision service that meets and exceeds manufacturer standards.
               </p>
             </motion.div>
             <motion.div
@@ -87,6 +87,92 @@ const AboutUs = () => {
                 </div>
               ))}
             </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* Specialisations */}
+      <section className="py-16 md:py-24 bg-charcoal/20">
+        <div className="max-w-6xl mx-auto px-5 sm:px-6">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center mb-12"
+          >
+            <p className="text-burnt-orange text-xs uppercase tracking-[0.3em] font-semibold mb-3">What We Specialise In</p>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-black">
+              Precision Across Every <span className="text-burnt-orange">Platform</span>
+            </h2>
+          </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+            {[
+              {
+                icon: Wrench,
+                title: 'German & Performance Vehicles',
+                text: 'Known for our expertise in German car repair in Dubai, particularly Mercedes-Benz and AMG models. Our technicians use Star Diagnostic systems and advanced tools to accurately diagnose complex mechanical, electrical, and performance issues.',
+              },
+              {
+                icon: Zap,
+                title: 'Luxury Chinese & Electric Vehicles',
+                text: 'One of the few workshops in Dubai specialising in luxury Chinese and electric vehicles including Zeekr, BYD, Hongqi, Jetour, and Rox. Equipped to handle modern EV battery systems, electric drivetrains, and smart technology platforms.',
+              },
+              {
+                icon: Gauge,
+                title: 'GAD Motors Tuning Partner',
+                text: 'Official partnership with GAD Motors delivering high-performance tuning solutions. From ECU remapping to full performance upgrades, we increase power and driving dynamics while maintaining reliability and safety.',
+              },
+            ].map((item) => (
+              <motion.div
+                key={item.title}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                className="bg-white/[0.03] border border-white/[0.06] rounded-2xl p-6"
+              >
+                <item.icon className="w-7 h-7 text-burnt-orange mb-4" />
+                <h3 className="font-bold text-base sm:text-lg mb-3">{item.title}</h3>
+                <p className="text-white/55 text-sm leading-relaxed">{item.text}</p>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Mission */}
+      <section className="py-16 md:py-24">
+        <div className="max-w-3xl mx-auto px-5 sm:px-6 text-center">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+          >
+            <p className="text-burnt-orange text-xs uppercase tracking-[0.3em] font-semibold mb-3">Our Mission</p>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-black mb-6">
+              Engineering Excellence, Every <span className="text-burnt-orange">Drive</span>
+            </h2>
+            <p className="text-white/60 text-base sm:text-lg leading-relaxed">
+              To deliver high-quality automotive repair and performance services in Dubai, combining precision engineering, advanced diagnostics, and customer-focused service to keep every vehicle performing at its best.
+            </p>
+          </motion.div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-12 text-left">
+            {[
+              'German car specialists in Dubai',
+              'Expertise in luxury, performance, and EVs',
+              'GAD Motors performance tuning partner',
+              'Dealer-level diagnostics and equipment',
+              'OEM and performance-grade parts',
+              'Transparent pricing, no hidden costs',
+              'Fast turnaround and trusted service',
+              'Servicing all major luxury marques',
+            ].map((point) => (
+              <div key={point} className="flex items-start gap-3 bg-white/[0.03] border border-white/[0.06] rounded-xl p-4">
+                <CheckCircle2 className="w-5 h-5 text-burnt-orange shrink-0 mt-0.5" />
+                <span className="text-white/70 text-sm">{point}</span>
+              </div>
+            ))}
           </div>
         </div>
       </section>
