@@ -260,7 +260,7 @@ export const services: ServiceData[] = [
     slug: 'routine-maintenance',
     metaTitle: 'Car Service Dubai | Digitec Performance Center',
     metaDescription: "Routine car maintenance in Dubai by Digitec. Scheduled servicing, fluids, and inspections for luxury and German vehicles.",
-    title: 'Car Service in Dubai',
+    title: 'Car Service in Dubai for Mercedes, BMW, Audi & Porsche',
     description: 'Routine maintenance and scheduled servicing specialists in Dubai.',
     image: routineMaintenanceImg,
     category: 'Core Mechanical Services',
