@@ -73,15 +73,16 @@ export const ServiceGrid = () => {
                 </div>
 
                 {/* Horizontal scroll on all screens */}
-                <div className="horizontal-scroll-container overflow-x-auto overflow-y-hidden pb-4">
+                <div className="horizontal-scroll-container overflow-x-auto overflow-y-hidden pb-3 sm:pb-4">
                   <div className="flex gap-3 sm:gap-4 md:gap-6 pl-2 pr-2 sm:pl-4 sm:pr-4" style={{ width: 'max-content' }}>
                     {category.services.map((service) => (
-                      <div key={service.slug} className="service-card group w-64 sm:w-80 md:w-96">
-                        <div className="bg-gradient-to-br from-charcoal/90 to-charcoal/60 backdrop-blur-sm border border-gray-800/50 rounded-3xl p-5 sm:p-6 lg:p-8 shadow-2xl transition-all duration-500 hover:shadow-burnt-orange/20 hover:border-burnt-orange/50 hover:scale-[1.02] hover:-translate-y-1 h-full flex flex-col min-h-[400px]">
-                          <div className="mb-6 overflow-hidden rounded-2xl bg-gradient-to-br from-gray-900 to-gray-800 aspect-[4/3]">
+                      <div key={service.slug} className="service-card group w-56 sm:w-80 md:w-96">
+                        <div className="bg-gradient-to-br from-charcoal/90 to-charcoal/60 backdrop-blur-sm border border-gray-800/50 rounded-2xl sm:rounded-3xl p-3 sm:p-6 lg:p-8 shadow-2xl transition-all duration-500 hover:shadow-burnt-orange/20 hover:border-burnt-orange/50 sm:hover:scale-[1.02] sm:hover:-translate-y-1 h-full flex flex-col min-h-0 sm:min-h-[400px]">
+                          <div className="mb-3 sm:mb-6 overflow-hidden rounded-xl sm:rounded-2xl bg-gradient-to-br from-gray-900 to-gray-800 aspect-[4/3]">
                             <img
                               src={service.image}
                               alt={service.title}
+                              loading="lazy"
                               className="w-full h-full object-cover group-hover:scale-110 group-hover:brightness-110 transition-all duration-500"
                               onError={(e) => {
                                 e.currentTarget.src = 'https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=400&h=300&fit=crop';
@@ -90,25 +91,31 @@ export const ServiceGrid = () => {
                           </div>
 
                           <div className="flex-1 flex flex-col">
-                            <div className="flex items-start gap-4 mb-4">
-                              <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-burnt-orange/20 to-burnt-orange/5 flex items-center justify-center text-burnt-orange group-hover:shadow-lg group-hover:shadow-burnt-orange/30 transition-all duration-300">
+                            <div className="flex items-start gap-2 sm:gap-4 mb-2 sm:mb-4">
+                              <div className="hidden sm:flex w-12 h-12 rounded-2xl bg-gradient-to-br from-burnt-orange/20 to-burnt-orange/5 items-center justify-center text-burnt-orange group-hover:shadow-lg group-hover:shadow-burnt-orange/30 transition-all duration-300">
                                 {serviceIcons[service.title] || defaultIcon}
                               </div>
                               <div className="flex-1">
-                                <h4 className="text-xl lg:text-2xl font-bold mb-3 group-hover:text-burnt-orange transition-colors duration-300 leading-tight">
+                                <h4 className="text-sm sm:text-xl lg:text-2xl font-bold mb-0 sm:mb-3 group-hover:text-burnt-orange transition-colors duration-300 leading-tight line-clamp-2">
                                   {service.title}
                                 </h4>
                               </div>
                             </div>
 
-                            <p className="text-gray-300 leading-relaxed text-sm lg:text-base mb-6 flex-1">
+                            <p className="text-gray-400 sm:text-gray-300 leading-snug sm:leading-relaxed text-xs sm:text-sm lg:text-base mb-3 sm:mb-6 flex-1 line-clamp-2 sm:line-clamp-none">
                               {service.description}
                             </p>
 
-                            <div className="pt-4 border-t border-gray-700/50 mt-auto">
+                            <div className="pt-2 sm:pt-4 sm:border-t sm:border-gray-700/50 mt-auto">
                               <Link
                                 to={`/services/${service.slug}`}
-                                className="block w-full bg-gradient-to-r from-burnt-orange to-burnt-orange/80 hover:from-burnt-orange/90 hover:to-burnt-orange text-black font-bold text-sm lg:text-base px-6 py-3 rounded-2xl transition-all duration-300 transform group-hover:scale-105 group-hover:shadow-lg group-hover:shadow-burnt-orange/30 text-center"
+                                className="inline-flex sm:hidden items-center gap-1 text-burnt-orange font-semibold text-xs"
+                              >
+                                Learn More <ChevronRight className="w-3 h-3" />
+                              </Link>
+                              <Link
+                                to={`/services/${service.slug}`}
+                                className="hidden sm:block w-full bg-gradient-to-r from-burnt-orange to-burnt-orange/80 hover:from-burnt-orange/90 hover:to-burnt-orange text-black font-bold text-sm lg:text-base px-6 py-3 rounded-2xl transition-all duration-300 transform group-hover:scale-105 group-hover:shadow-lg group-hover:shadow-burnt-orange/30 text-center"
                               >
                                 Learn More
                               </Link>
