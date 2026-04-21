@@ -1,65 +1,146 @@
-
-import React from 'react';
+import React, { useState } from 'react';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import { Button } from '@/components/ui/button';
-import { MessageCircle, Smartphone } from 'lucide-react';
+import { MessageCircle } from 'lucide-react';
+
+type FAQItem = { question: string; answer: string };
+type FAQCategory = { id: string; label: string; faqs: FAQItem[] };
+
+const categories: FAQCategory[] = [
+  {
+    id: 'general',
+    label: 'General',
+    faqs: [
+      {
+        question: "How often should I service my luxury vehicle in Dubai?",
+        answer: "In Dubai's extreme climate, we recommend servicing your Mercedes or performance vehicle every 10,000 to 12,000 km or 6 to 9 months, depending on usage. High-performance cars demand proactive care to retain efficiency, safety, and value."
+      },
+      {
+        question: "What are signs my vehicle needs immediate attention?",
+        answer: "Warning lights, rough idling, overheating, shifting delays, or reduced fuel efficiency are all red flags. At DIGI-TEC, we use advanced diagnostics to pinpoint issues early, before they become costly."
+      },
+      {
+        question: "What makes DIGI-TEC different from regular garages?",
+        answer: "We don't just fix; we engineer. With 40+ years of expertise and a luxury vehicle focus, we provide unmatched transparency, real-time updates, and performance-tuned service."
+      },
+      {
+        question: "Can you repair hybrid and electric luxury cars?",
+        answer: "Absolutely. DIGI-TEC technicians are certified in high-voltage system diagnostics and are fully equipped to repair Mercedes-Benz EVs, hybrids, and other high-tech platforms."
+      },
+    ],
+  },
+  {
+    id: 'performance',
+    label: 'Performance & Tuning',
+    faqs: [
+      {
+        question: "Do you offer ECU tuning and power upgrades?",
+        answer: "Yes. We specialize in ECU remapping, turbo tuning, and exhaust upgrades to unlock your vehicle's hidden performance. Whether it's more torque or refined throttle response, we tune it like a precision machine."
+      },
+      {
+        question: "Can you repair AMG models?",
+        answer: "Yes. We specialise in AMG performance vehicles and tuning, with technicians trained on the precision required for high-output Mercedes-Benz platforms."
+      },
+    ],
+  },
+  {
+    id: 'ac-repair',
+    label: 'Car AC Repair',
+    faqs: [
+      {
+        question: "Why is my car AC not cooling in Dubai?",
+        answer: "The most common reasons are low refrigerant, leaks, or a failing compressor. In Dubai's heat, even a small issue can significantly reduce cooling performance."
+      },
+      {
+        question: "Can I just refill AC gas and fix the problem?",
+        answer: "Not always. If the refrigerant is low due to a leak, simply refilling it will only fix the issue temporarily. The leak must be identified and repaired for a permanent solution."
+      },
+      {
+        question: "How do I know if my AC compressor is failing?",
+        answer: "Signs include weak cooling, unusual noises when the AC is on, or the AC stopping completely. In some cases, the compressor may still run but not efficiently."
+      },
+      {
+        question: "How often should I service my car AC in Dubai?",
+        answer: "At least once a year. Regular checks help maintain cooling efficiency and prevent costly repairs caused by undetected leaks or component wear."
+      },
+      {
+        question: "Do luxury cars require special AC repair?",
+        answer: "Yes. Vehicles like Mercedes, BMW, Audi, and Porsche use advanced AC systems with electronic compressors and multi-zone climate control that require specialised diagnostics and expertise."
+      },
+      {
+        question: "How long does AC repair take?",
+        answer: "Simple services like gas refill can be done quickly, while more complex repairs such as compressor replacement may take longer depending on the issue."
+      },
+      {
+        question: "Does my car AC get damaged if I drive with the windows down in hot weather?",
+        answer: "Driving with the windows down while the AC is running will not directly damage your air conditioning system, but it does force it to work much harder. In Dubai's extreme heat, hot air continuously enters the cabin, meaning the AC has to run at maximum capacity for longer periods. Over time, this added strain can accelerate wear on the compressor and reduce overall efficiency. Occasional use is fine, but keeping windows closed maintains optimal performance and reduces unnecessary load on the system."
+      },
+    ],
+  },
+  {
+    id: 'location',
+    label: 'Location & Service',
+    faqs: [
+      {
+        question: "Where are you located in Dubai?",
+        answer: "We're based in Al Quoz Industrial Area 3, a central hub that's easily accessible from Downtown, Business Bay, Dubai Hills, and Marina. Just 10 minutes from Sheikh Zayed Road."
+      },
+      {
+        question: "Do you offer pickup and drop-off for services?",
+        answer: "Yes. We provide concierge-style pickup and drop-off, so you don't need to leave your home or office. Premium service begins before your keys even arrive."
+      },
+      {
+        question: "Do you serve clients outside of Dubai?",
+        answer: "Yes. Many of our clients come from Sharjah, Abu Dhabi, and even Al Ain. If you drive something special, it's worth the trip, and we'll make it worth your time."
+      },
+    ],
+  },
+];
 
 export const FAQ = () => {
-  const faqs = [
-    {
-      question: "How often should I service my luxury vehicle in Dubai?",
-      answer: "In Dubai's extreme climate, we recommend servicing your Mercedes or performance vehicle every 10,000 to 12,000 km or 6 to 9 months, depending on usage. High-performance cars demand proactive care to retain efficiency, safety, and value."
-    },
-    {
-      question: "What are signs my vehicle needs immediate attention?",
-      answer: "Warning lights, rough idling, overheating, shifting delays, or reduced fuel efficiency are all red flags. At DIGI-TEC, we use advanced diagnostics to pinpoint issues early, before they become costly."
-    },
-    {
-      question: "Do you offer ECU tuning and power upgrades?",
-      answer: "Yes. We specialize in ECU remapping, turbo tuning, and exhaust upgrades to unlock your vehicle's hidden performance. Whether it's more torque or refined throttle response, we tune it like a precision machine."
-    },
-    {
-      question: "Can you repair hybrid and electric luxury cars?",
-      answer: "Absolutely. DIGI-TEC technicians are certified in high-voltage system diagnostics and are fully equipped to repair Mercedes-Benz EVs, hybrids, and other high-tech platforms."
-    },
-    {
-      question: "Where are you located in Dubai?",
-      answer: "We're based in Al Quoz Industrial Area 3, a central hub that's easily accessible from Downtown, Business Bay, Dubai Hills, and Marina. Just 10 minutes from Sheikh Zayed Road."
-    },
-    {
-      question: "Do you offer pickup and drop-off for services?",
-      answer: "Yes. We provide concierge-style pickup and drop-off, so you don't need to leave your home or office. Premium service begins before your keys even arrive."
-    },
-    {
-      question: "What makes DIGI-TEC different from regular garages?",
-      answer: "We don't just fix; we engineer. With 40+ years of expertise and a luxury vehicle focus, we provide unmatched transparency, real-time updates, and performance-tuned service."
-    },
-    {
-      question: "Do you serve clients outside of Dubai?",
-      answer: "Yes. Many of our clients come from Sharjah, Abu Dhabi, and even Al Ain. If you drive something special, it's worth the trip, and we'll make it worth your time."
-    },
-  ];
+  const [activeCategory, setActiveCategory] = useState<string>(categories[0].id);
+  const current = categories.find((c) => c.id === activeCategory) ?? categories[0];
 
   return (
     <section className="py-20 bg-black text-white relative overflow-hidden">
-      {/* Background gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-black via-charcoal/20 to-black"></div>
-      
+
       <div className="container mx-auto px-6 relative z-10">
         {/* Section Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 text-white">
             Frequently Asked Questions
           </h2>
           <div className="w-24 h-1 bg-burnt-orange mx-auto rounded-full"></div>
+          <p className="text-off-white/60 mt-6 max-w-2xl mx-auto">
+            Browse by topic to find answers about our services, expertise, and process.
+          </p>
+        </div>
+
+        {/* Category Tabs */}
+        <div className="max-w-4xl mx-auto mb-10 flex flex-wrap justify-center gap-3">
+          {categories.map((cat) => (
+            <button
+              key={cat.id}
+              onClick={() => setActiveCategory(cat.id)}
+              className={`px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-300 border ${
+                activeCategory === cat.id
+                  ? 'bg-burnt-orange text-white border-burnt-orange shadow-lg'
+                  : 'bg-charcoal/30 text-off-white/70 border-off-white/10 hover:border-burnt-orange/50 hover:text-white'
+              }`}
+            >
+              {cat.label}
+              <span className="ml-2 text-xs opacity-70">({cat.faqs.length})</span>
+            </button>
+          ))}
         </div>
 
         {/* FAQ Accordion */}
         <div className="max-w-4xl mx-auto mb-16">
-          <Accordion type="single" collapsible className="space-y-4">
-            {faqs.map((faq, index) => (
-              <AccordionItem 
-                key={index} 
+          <Accordion type="single" collapsible className="space-y-4" key={current.id}>
+            {current.faqs.map((faq, index) => (
+              <AccordionItem
+                key={`${current.id}-${index}`}
                 value={`item-${index}`}
                 className="bg-charcoal/30 backdrop-blur-sm rounded-xl border border-off-white/10 overflow-hidden hover:border-burnt-orange/50 transition-all duration-300"
               >
@@ -80,13 +161,13 @@ export const FAQ = () => {
             Still have questions?
           </h3>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <a 
+            <a
               href="https://wa.me/97143402223?text=Hi%2C%20I%20have%20a%20question%20about%20your%20services."
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Button 
-                size="lg" 
+              <Button
+                size="lg"
                 className="bg-burnt-orange hover:bg-burnt-orange/90 text-white px-8 py-3 rounded-xl font-semibold text-lg transition-all duration-300 hover:transform hover:scale-105 shadow-lg"
               >
                 <MessageCircle className="w-5 h-5 mr-2" />
