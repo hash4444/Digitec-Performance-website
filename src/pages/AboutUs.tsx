@@ -45,7 +45,7 @@ const AboutUs = () => {
             transition={{ delay: 0.4 }}
             className="text-white/50 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed"
           >
-            Dubai's most trusted name in luxury automotive performance, repair, and transformation. We don't just fix cars, we engineer excellence.
+            A leading car workshop in Dubai, specialising in German, luxury, performance, and advanced electric vehicles. Expert diagnostics, OEM parts, and dealer-level technology.
           </motion.p>
         </div>
       </section>
