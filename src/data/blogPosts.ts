@@ -24,6 +24,132 @@ export const blogCategories = ['All', 'Maintenance', 'Tuning', 'Mercedes', 'Deta
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: 'car-ac-repair-dubai',
+    title: 'Car AC Repair in Dubai: Why Your AC Stops Cooling and What Actually Fixes It',
+    excerpt:
+      "When your car AC stops cooling in Dubai's heat, it is rarely just one issue. Here is why AC systems fail, the most common problems we see, and what truly fixes them.",
+    category: 'Maintenance',
+    author: 'DIGI-TEC Workshop',
+    date: '2026-04-21',
+    readTime: '8 min read',
+    coverGradient: 'from-burnt-orange/40 via-charcoal to-black',
+    metaTitle: 'Car AC Repair Dubai | Why Your AC Stops Cooling | Digitec',
+    metaDescription:
+      'Car AC not cooling in Dubai? Learn why AC systems fail, common problems, compressor and refrigerant issues, and how Digitec fixes them properly.',
+    keywords:
+      'car AC repair Dubai, AC not cooling, AC compressor repair Dubai, car AC gas refill Dubai, auto air conditioning Dubai, Mercedes AC repair Dubai, BMW AC repair Dubai',
+    ogTitle: 'Car AC Repair in Dubai: Why Your AC Stops Cooling',
+    ogDescription:
+      'Expert insight into car AC failures in Dubai. Compressor wear, refrigerant leaks, and proper diagnostics from Digitec Performance Center.',
+    ogType: 'article',
+    twitterCard: 'summary_large_image',
+    twitterTitle: 'Car AC Repair in Dubai | Digitec Performance Center',
+    twitterDescription:
+      'Why car AC systems fail in Dubai and what actually fixes them. A specialist guide from Digitec Performance Center.',
+    canonicalOverride: 'https://digitecme.com/blog/car-ac-repair-dubai',
+    content: [
+      { type: 'h2', text: 'Introduction' },
+      {
+        type: 'p',
+        text: "If you drive in Dubai, you already know your car's air conditioning isn't just a comfort feature, it's essential. When your AC stops cooling properly, even short drives become uncomfortable. What most drivers don't realize is that AC problems rarely come from just one simple issue. In our experience at Digitec Performance Center, what starts as weak cooling is often a sign of deeper problems within the system that need proper diagnosis, not just a quick fix.",
+      },
+      { type: 'h2', text: 'Why Car AC Systems Fail in Dubai' },
+      {
+        type: 'p',
+        text: "Dubai's climate is one of the toughest environments for any car AC system. Constant high temperatures force the system to work at maximum capacity almost all the time. Over time, this leads to wear in key components like the compressor, reduced efficiency in the condenser, and gradual loss of refrigerant through small leaks.",
+      },
+      {
+        type: 'p',
+        text: 'We often see cars come in where the AC works, but not the way it should. The air is slightly cool, but not strong enough to handle the heat outside. In most cases, this is the early stage of failure, and if it is ignored, it eventually leads to complete loss of cooling.',
+      },
+      { type: 'h2', text: 'The Most Common AC Problems We See' },
+      {
+        type: 'p',
+        text: "One of the most frequent issues is low refrigerant, often caused by leaks that go unnoticed. Simply refilling the gas might temporarily restore cooling, but if the leak isn't fixed, the problem comes back within weeks.",
+      },
+      {
+        type: 'p',
+        text: 'Another common issue is compressor wear. The compressor is responsible for circulating refrigerant, and when it begins to fail, cooling becomes inconsistent or stops completely. In modern vehicles, especially German cars, compressors are electronically controlled, which means faults can also come from sensors or control modules, not just mechanical failure.',
+      },
+      {
+        type: 'p',
+        text: 'We also see airflow problems caused by clogged cabin filters or weak blower motors, and in some cases, electrical faults that prevent the AC system from operating efficiently.',
+      },
+      { type: 'h2', text: 'Why Proper Diagnosis Matters' },
+      {
+        type: 'p',
+        text: "A lot of workshops focus on quick solutions like gas refills because they are fast and easy. The problem is, this doesn't address the root cause. At Digitec, we take a different approach. Every AC issue is treated as a system problem, not just a single fault.",
+      },
+      {
+        type: 'p',
+        text: 'We check pressure levels, inspect for leaks, test the compressor, and evaluate the entire system before recommending any repair. This ensures that when we fix the issue, it stays fixed. It also saves customers from spending money multiple times on the same recurring problem.',
+      },
+      { type: 'h2', text: 'Working on Luxury and Performance Vehicles' },
+      {
+        type: 'p',
+        text: 'AC systems in luxury cars such as Mercedes-Benz, BMW, Audi, and Porsche are far more advanced than standard systems. They often include dual zone or multi zone climate control, electronic compressors, and integrated sensors that adjust cooling dynamically.',
+      },
+      {
+        type: 'p',
+        text: "These systems require a deeper level of understanding and the right diagnostic tools. Without that, it's easy to misdiagnose the issue or replace parts unnecessarily. This is why choosing a specialist workshop makes a difference, especially when dealing with high performance vehicles.",
+      },
+      { type: 'h2', text: 'Preventing AC Problems Before They Start' },
+      {
+        type: 'p',
+        text: 'One of the simplest ways to avoid major AC repairs is regular servicing. Even if your system seems to be working fine, refrigerant levels can drop slowly over time, and small leaks can develop without obvious symptoms.',
+      },
+      {
+        type: 'p',
+        text: 'A yearly AC check can identify these issues early, maintain strong cooling performance, and prevent more expensive repairs later. In a place like Dubai, preventative maintenance is not optional, it is part of keeping your car reliable.',
+      },
+      { type: 'h2', text: 'Final Thoughts' },
+      {
+        type: 'p',
+        text: 'Car AC problems are often more complex than they appear. What feels like a simple cooling issue can be linked to pressure imbalances, compressor wear, or hidden leaks. The key is not just fixing the symptom, but understanding the system as a whole.',
+      },
+      {
+        type: 'p',
+        text: "If your car AC is not cooling properly or you have noticed a drop in performance, getting it checked early can save both time and cost. At Digitec Performance Center, we focus on accurate diagnosis and long term solutions, ensuring your AC system performs the way it was designed to, even in Dubai's toughest conditions.",
+      },
+      { type: 'h2', text: 'FAQs' },
+      { type: 'h3', text: 'Why is my car AC not cooling in Dubai?' },
+      {
+        type: 'p',
+        text: "The most common reasons are low refrigerant, leaks, or a failing compressor. In Dubai's heat, even a small issue can significantly reduce cooling performance.",
+      },
+      { type: 'h3', text: 'Can I just refill AC gas and fix the problem?' },
+      {
+        type: 'p',
+        text: 'Not always. If the refrigerant is low due to a leak, simply refilling it will only fix the issue temporarily. The leak must be identified and repaired for a permanent solution.',
+      },
+      { type: 'h3', text: 'How do I know if my AC compressor is failing?' },
+      {
+        type: 'p',
+        text: 'Signs include weak cooling, unusual noises when the AC is on, or the AC stopping completely. In some cases, the compressor may still run but not efficiently.',
+      },
+      { type: 'h3', text: 'How often should I service my car AC in Dubai?' },
+      {
+        type: 'p',
+        text: 'At least once a year. Regular checks help maintain cooling efficiency and prevent costly repairs.',
+      },
+      { type: 'h3', text: 'Do luxury cars require special AC repair?' },
+      {
+        type: 'p',
+        text: 'Yes. Vehicles like Mercedes, BMW, Audi, and Porsche use advanced AC systems that require specialized diagnostics and expertise.',
+      },
+      { type: 'h3', text: 'How long does AC repair take?' },
+      {
+        type: 'p',
+        text: 'Simple services like gas refill can be done quickly, while more complex repairs such as compressor replacement may take longer depending on the issue.',
+      },
+      { type: 'h3', text: 'Does my car AC get damaged if I drive with the windows down in hot weather?' },
+      {
+        type: 'p',
+        text: "Driving with the windows down while the AC is running will not directly damage your air conditioning system, but it does force it to work much harder than normal. In Dubai's extreme heat, hot air continuously enters the cabin, which means the AC system has to run at maximum capacity for longer periods to maintain cooling. Over time, this added strain can accelerate wear on key components such as the compressor and reduce overall efficiency. While occasional use is not a problem, it is recommended to keep windows closed when using the AC to maintain optimal performance and reduce unnecessary load on the system.",
+      },
+    ],
+  },
+  {
     slug: 'brake-repair-dubai',
     title: 'Brake Repair in Dubai: Why Brakes Wear Faster in UAE Heat',
     excerpt:
