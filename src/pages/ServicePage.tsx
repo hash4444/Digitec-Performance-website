@@ -206,6 +206,31 @@ const ServicePage = () => {
                 </div>
               ))}
 
+              {/* FAQs (optional) */}
+              {service.faqs && service.faqs.length > 0 && (
+                <div>
+                  <h2 className="text-2xl sm:text-3xl font-bold mb-5">
+                    {service.slug === 'oil-change-service' ? 'Oil Change FAQs' : 'Frequently Asked Questions'}
+                  </h2>
+                  <Accordion type="single" collapsible className="space-y-3">
+                    {service.faqs.map((faq, i) => (
+                      <AccordionItem
+                        key={i}
+                        value={`faq-${i}`}
+                        className="bg-charcoal/40 border border-gray-800/50 rounded-2xl px-5 sm:px-6 data-[state=open]:border-burnt-orange/40"
+                      >
+                        <AccordionTrigger className="text-left text-base sm:text-lg font-semibold hover:no-underline py-4">
+                          {faq.question}
+                        </AccordionTrigger>
+                        <AccordionContent className="text-gray-300 text-base leading-relaxed pb-5">
+                          {faq.answer}
+                        </AccordionContent>
+                      </AccordionItem>
+                    ))}
+                  </Accordion>
+                </div>
+              )}
+
               {/* Local Intent */}
               <div className="bg-charcoal/40 border border-gray-800/50 rounded-2xl p-6 sm:p-8">
                 <p className="text-gray-300 leading-relaxed text-lg italic">{service.localIntent}</p>
