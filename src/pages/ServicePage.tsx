@@ -209,6 +209,28 @@ const ServicePage = () => {
               <div className="bg-charcoal/40 border border-gray-800/50 rounded-2xl p-6 sm:p-8">
                 <p className="text-gray-300 leading-relaxed text-lg italic">{service.localIntent}</p>
               </div>
+
+              {/* Related Blog: Battery */}
+              {service.slug === 'battery-changes' && (
+                <div className="bg-gradient-to-br from-burnt-orange/10 to-charcoal/40 border border-burnt-orange/30 rounded-2xl p-6 sm:p-8">
+                  <span className="text-burnt-orange text-xs font-bold uppercase tracking-widest mb-3 block">
+                    Learn More
+                  </span>
+                  <h3 className="text-2xl sm:text-3xl font-bold mb-3">
+                    Want to understand more about your car battery?
+                  </h3>
+                  <p className="text-gray-300 leading-relaxed text-lg mb-5">
+                    Check out our in-depth guide on why batteries fail in Dubai's heat, warning signs to watch for, and answers to the most common replacement questions.
+                  </p>
+                  <Link
+                    to="/blog/car-battery-replacement-dubai"
+                    className="inline-flex items-center gap-2 bg-burnt-orange hover:bg-burnt-orange/90 text-black font-bold py-3 px-6 rounded-xl transition-all duration-300"
+                  >
+                    Read the Battery Guide
+                    <ChevronRight className="w-5 h-5" />
+                  </Link>
+                </div>
+              )}
             </div>
 
             {/* Sidebar */}
