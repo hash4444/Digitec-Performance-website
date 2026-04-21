@@ -26,33 +26,33 @@ const Services = () => {
       <Header />
 
       {/* Hero */}
-      <section className="relative py-20 sm:py-28">
+      <section className="relative py-12 sm:py-24">
         <div className="absolute inset-0 bg-gradient-to-b from-burnt-orange/10 via-transparent to-transparent" />
         <div className="relative max-w-6xl mx-auto px-4 sm:px-6 text-center">
-          <span className="text-burnt-orange font-semibold text-sm uppercase tracking-widest mb-3 block">
+          <span className="text-burnt-orange font-semibold text-xs sm:text-sm uppercase tracking-widest mb-2 sm:mb-3 block">
             What We Offer
           </span>
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-black mb-4">
+          <h1 className="text-2xl sm:text-5xl md:text-6xl font-black mb-2 sm:mb-4">
             Our Services
           </h1>
-          <p className="text-gray-400 text-lg max-w-4xl mx-auto leading-relaxed">
+          <p className="text-gray-400 text-xs sm:text-lg max-w-4xl mx-auto leading-snug sm:leading-relaxed">
             At Digitec Performance Center, we offer a comprehensive range of automotive services tailored to meet the needs of most vehicle brands, combining dealership-level expertise with faster turnaround times and competitive pricing. Our workshop specializes in servicing, diagnostics, mechanical repairs, performance upgrades, and maintenance for premium and everyday vehicles, including Mercedes-Benz and Maybach, Audi, BMW, Porsche, Lamborghini, Aston Martin, Bugatti, Nissan, Ferrari, McLaren, Bentley, Range Rover and Land Rover, Rolls-Royce, Toyota, Rox, Jetour, Zeekr, BYD, and Hongqi. Whether you own a luxury supercar, a high-performance vehicle, or a daily driver, Digitec delivers reliable, high-quality automotive solutions designed to keep your car performing at its best.
           </p>
         </div>
       </section>
 
       {/* Services by Category */}
-      <section className="pb-20 sm:pb-28">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 space-y-16">
+      <section className="pb-12 sm:pb-24">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 space-y-8 sm:space-y-16">
           {categories.map((cat) => {
             const items = services.filter((s) => s.category === cat);
             if (items.length === 0) return null;
             return (
               <div key={cat}>
-                <h2 className="text-2xl sm:text-3xl font-bold mb-8 border-l-4 border-burnt-orange pl-4">
+                <h2 className="text-lg sm:text-3xl font-bold mb-4 sm:mb-8 border-l-4 border-burnt-orange pl-3 sm:pl-4">
                   {cat}
                 </h2>
-                <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-3 gap-3 sm:gap-5 lg:gap-6">
+                <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-3 gap-2.5 sm:gap-5 lg:gap-6">
                   {items.map((s) => (
                     <Link
                       key={s.slug}
@@ -71,11 +71,11 @@ const Services = () => {
                           }}
                         />
                       </div>
-                      <div className="p-3 sm:p-4 lg:p-5">
-                        <h3 className="font-bold text-sm sm:text-base lg:text-lg leading-tight group-hover:text-burnt-orange transition-colors line-clamp-2">
+                      <div className="p-2.5 sm:p-4 lg:p-5">
+                        <h3 className="font-bold text-[13px] sm:text-base lg:text-lg leading-tight group-hover:text-burnt-orange transition-colors line-clamp-2">
                           {s.title}
                         </h3>
-                        <p className="text-gray-400 text-xs sm:text-sm mt-1.5 sm:mt-2 line-clamp-2">
+                        <p className="text-gray-400 text-xs sm:text-sm mt-1 sm:mt-2 line-clamp-2">
                           {s.description}
                         </p>
                       </div>

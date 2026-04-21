@@ -42,13 +42,13 @@ const BrandLogo = ({ name }: { name: string }) => {
 };
 
 const MobileGrid = () => (
-  <div className="grid grid-cols-3 gap-6 px-2">
+  <div className="grid grid-cols-4 gap-3 px-2">
     {brands.map((brand) => (
-      <div key={brand.name} className="flex flex-col items-center gap-2">
-        <div className="w-20 h-20 p-2 bg-white/80 backdrop-blur-sm rounded-full shadow-lg border border-gray-100 flex items-center justify-center">
+      <div key={brand.name} className="flex flex-col items-center gap-1.5">
+        <div className="w-16 h-16 p-1.5 bg-white/80 backdrop-blur-sm rounded-full shadow-lg border border-gray-100 flex items-center justify-center">
           <BrandLogo name={brand.name} />
         </div>
-        <span className="text-xs text-gray-600 text-center leading-tight font-medium">{brand.name}</span>
+        <span className="text-[11px] text-gray-600 text-center leading-tight font-medium">{brand.name}</span>
       </div>
     ))}
   </div>
@@ -157,7 +157,7 @@ export const BrandsWeServe = () => {
 
       <section
         ref={sectionRef}
-        className={`relative bg-white overflow-hidden flex items-center justify-center px-4 sm:px-6 select-none ${isMobile ? 'py-16' : 'py-16 sm:py-24 lg:py-32 min-h-screen'}`}
+        className={`relative bg-white overflow-hidden flex items-center justify-center px-4 sm:px-6 select-none ${isMobile ? 'py-10' : 'py-16 sm:py-24 lg:py-32 min-h-screen'}`}
       >
         {/* Pulse rings - desktop only */}
         {!isMobile && (
@@ -169,11 +169,11 @@ export const BrandsWeServe = () => {
         )}
 
         <div className="max-w-6xl mx-auto relative z-10">
-          <div className="text-center mb-10 sm:mb-16">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black mb-4 sm:mb-6 text-black tracking-tight">
+          <div className="text-center mb-6 sm:mb-16">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-black mb-3 sm:mb-6 text-black tracking-tight">
               Brands We Serve
             </h2>
-            <p className="text-lg sm:text-xl text-gray-700 max-w-3xl mx-auto px-4">
+            <p className="text-sm sm:text-base lg:text-xl text-gray-700 max-w-3xl mx-auto px-4 leading-snug sm:leading-relaxed">
               Precision performance for the world's most prestigious automotive brands
             </p>
           </div>
@@ -223,11 +223,11 @@ export const BrandsWeServe = () => {
             </div>
           )}
 
-          <div className="text-center mt-10 sm:mt-16">
-            <p className="text-gray-700 mb-6 sm:mb-8 text-base sm:text-lg px-4">
+          <div className="text-center mt-6 sm:mt-16">
+            <p className="text-gray-700 mb-4 sm:mb-8 text-sm sm:text-lg px-4">
               Experience precision service for your luxury vehicle
             </p>
-            <button className="w-full sm:w-auto bg-burnt-orange hover:bg-burnt-orange/90 text-white font-bold text-base sm:text-lg px-8 sm:px-12 py-4 rounded-2xl sm:rounded-3xl transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl hover:shadow-burnt-orange/25">
+            <button className="w-full sm:w-auto bg-burnt-orange hover:bg-burnt-orange/90 text-white font-bold text-sm sm:text-lg px-6 sm:px-12 py-3 sm:py-4 rounded-2xl sm:rounded-3xl transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl hover:shadow-burnt-orange/25">
               Schedule Service
             </button>
           </div>
