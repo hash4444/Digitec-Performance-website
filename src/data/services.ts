@@ -20,6 +20,7 @@ export interface ServiceData {
   modelsSection?: { heading: string; intro: string; models: string[]; outro: string };
   servicesIntro?: { heading: string; text: string };
   extraSections?: { heading: string; text?: string; items?: string[] }[];
+  faqs?: { question: string; answer: string }[];
   localIntent: string;
   details: string;
 }
@@ -328,6 +329,24 @@ export const services: ServiceData[] = [
     ],
     localIntent: 'If you are searching for oil change Dubai, car oil change near me, or a reliable car workshop in Dubai, Digitec Performance Center is your trusted destination. Conveniently located in Dubai, we serve customers across the UAE who demand fast, professional, and high-quality oil change services.',
     details: 'We offer a complete car oil change service in Dubai, designed to maintain engine health and prevent long-term damage. Our process is fast, precise, and aligned with manufacturer standards.',
+    faqs: [
+      {
+        question: 'How much does an oil change cost in Dubai?',
+        answer: 'Oil change costs in Dubai vary depending on the vehicle and oil type, but at Digitec Performance Center we offer competitive pricing with premium oils and professional service.',
+      },
+      {
+        question: 'How often should I change my oil in Dubai?',
+        answer: 'Due to Dubai\'s heat and driving conditions, it is recommended to change your oil every 5,000 to 10,000 km depending on your vehicle.',
+      },
+      {
+        question: 'Do German cars need special oil?',
+        answer: 'Yes, Mercedes, BMW, Audi, and Porsche require manufacturer-approved oils with specific viscosity grades to maintain performance and engine health.',
+      },
+      {
+        question: 'How long does an oil change take?',
+        answer: 'Most oil changes at Digitec Performance Center are completed within 30 to 60 minutes.',
+      },
+    ],
   },
   {
     slug: 'tire-repair',
