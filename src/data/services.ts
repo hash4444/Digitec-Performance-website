@@ -27,7 +27,7 @@ export interface ServiceData {
 
 export const services: ServiceData[] = [
   {
-    slug: 'mercedes-repair',
+    slug: 'mercedes-repair-dubai',
     metaTitle: 'Mercedes Repair Dubai | Digitec Performance Center',
     metaDescription: 'Expert Mercedes-Benz repair in Dubai by Digitec. Star Diagnostic, OEM parts, AMG specialists. Dealer quality, faster turnaround.',
     title: 'Mercedes Repair in Dubai',
@@ -61,7 +61,7 @@ export const services: ServiceData[] = [
     details: 'We work on all Mercedes-Benz models, including Mercedes C-Class, E-Class, and S-Class, Mercedes GLE, GLC, and GLS SUVs, AMG performance models, and Mercedes Maybach luxury vehicles. Whether your vehicle requires a simple service or a complete mechanical overhaul, our workshop is fully equipped to deliver dealership-level results at more competitive pricing.',
   },
   {
-    slug: 'mechanical-repair',
+    slug: 'mechanical-repair-dubai',
     metaTitle: 'Mechanical Repair Dubai | Digitec Performance Center',
     metaDescription: "Professional mechanical repair in Dubai by Digitec. Engine, drivetrain, and complex fault diagnostics for luxury and German cars.",
     title: 'Mechanical Repair in Dubai',
@@ -101,7 +101,7 @@ export const services: ServiceData[] = [
     details: 'Our workshop offers a full spectrum of car mechanical repair services in Dubai, covering all major vehicle systems. We are equipped to handle everything from minor repairs to full engine rebuilds, ensuring your car receives the highest level of care. Every repair is carried out using OEM or performance-grade parts, ensuring durability and long-term reliability.',
   },
   {
-    slug: 'transmission-services',
+    slug: 'transmission-repair-dubai',
     metaTitle: 'Transmission Repair Dubai | Digitec Performance Center',
     metaDescription: "Expert transmission service and repair in Dubai by Digitec. Gearbox rebuilds, fluid flush, and DCT specialists for German cars.",
     title: 'Transmission Repair in Dubai',
@@ -140,7 +140,7 @@ export const services: ServiceData[] = [
     details: 'We offer a full range of transmission services in Dubai, covering automatic, manual, dual-clutch, and CVT systems. Our workshop is equipped to handle everything from minor servicing to complete gearbox rebuilds. All repairs are performed using OEM or performance-grade parts to ensure durability and long-term reliability.',
   },
   {
-    slug: 'suspension-repair',
+    slug: 'suspension-repair-dubai',
     metaTitle: 'Suspension Repair Dubai | Digitec Performance Center',
     metaDescription: "Precision suspension repair in Dubai by Digitec. Air suspension, shocks, and ride height fixes for luxury and performance cars.",
     title: 'Suspension Repair in Dubai',
@@ -179,7 +179,7 @@ export const services: ServiceData[] = [
     details: 'We offer a full range of suspension services in Dubai, covering both traditional and advanced suspension systems. All repairs are carried out using OEM or performance-grade parts to ensure durability, safety, and optimal performance.',
   },
   {
-    slug: 'steering-repair',
+    slug: 'steering-repair-dubai',
     metaTitle: 'Steering Repair Dubai | Digitec Performance Center',
     metaDescription: "Professional steering repair in Dubai by Digitec. Power steering, rack, and alignment for German and luxury vehicles.",
     title: 'Steering Repair in Dubai',
@@ -218,7 +218,7 @@ export const services: ServiceData[] = [
     details: 'We offer a full range of steering services in Dubai, covering hydraulic, electric, and electro-hydraulic steering systems. All repairs are carried out using OEM or performance-grade parts to ensure long-term reliability and safety.',
   },
   {
-    slug: 'brake-system-repairs',
+    slug: 'brake-repair-dubai',
     metaTitle: 'Brake Repair Dubai | Digitec Performance Center',
     metaDescription: "Expert brake repair in Dubai by Digitec. Pads, rotors, calipers, and performance brake upgrades for luxury and German cars.",
     title: 'Brake Repair in Dubai',
@@ -257,7 +257,7 @@ export const services: ServiceData[] = [
     details: 'We offer a full range of brake repair services in Dubai, covering all braking system components for both standard and high-performance vehicles. All work is carried out using OEM or performance-grade components to ensure durability, safety, and optimal braking performance.',
   },
   {
-    slug: 'routine-maintenance',
+    slug: 'car-service-dubai',
     metaTitle: 'Car Service Dubai | Digitec Performance Center',
     metaDescription: "Routine car maintenance in Dubai by Digitec. Scheduled servicing, fluids, and inspections for luxury and German vehicles.",
     title: 'Car Service in Dubai for Mercedes, BMW, Audi & Porsche',
@@ -331,7 +331,7 @@ export const services: ServiceData[] = [
     ],
   },
   {
-    slug: 'oil-change-service',
+    slug: 'oil-change-dubai',
     metaTitle: 'Oil Change Dubai | Digitec Performance Center',
     metaDescription: "Professional oil change in Dubai by Digitec. Fast service using premium OEM-approved oils for maximum engine performance.",
     title: 'Oil Change in Dubai',
@@ -383,7 +383,7 @@ export const services: ServiceData[] = [
     ],
   },
   {
-    slug: 'tire-repair',
+    slug: 'tire-repair-dubai',
     metaTitle: 'Tire Repair Dubai | Digitec Performance Center',
     metaDescription: "Fast tire repair in Dubai by Digitec. Puncture repair, tire replacement, and wheel alignment with premium brands.",
     title: 'Tire Repair Dubai',
@@ -438,7 +438,7 @@ export const services: ServiceData[] = [
     details: 'Complete tire services including puncture repair, tire replacement, wheel balancing, four-wheel alignment, and new tire fitting from leading brands.',
   },
   {
-    slug: 'battery-changes',
+    slug: 'battery-replacement-dubai',
     metaTitle: 'Car Battery Replacement Dubai | Digitec Performance',
     metaDescription: "Fast car battery replacement in Dubai by Digitec. Same-day service with premium OEM-approved batteries for all makes.",
     title: 'Car Battery Replacement in Dubai',
@@ -483,7 +483,7 @@ export const services: ServiceData[] = [
     details: 'Fast, professional battery replacement with top-tier brands. Includes electrical system testing, alternator output check, and terminal cleaning. We stock batteries for all vehicle types and can handle start-stop system batteries.',
   },
   {
-    slug: 'exhaust-repair',
+    slug: 'exhaust-repair-dubai',
     metaTitle: 'Exhaust Repair Dubai | Digitec Performance Center',
     metaDescription: "Expert exhaust repair in Dubai by Digitec. Catalytic converters, mufflers, and performance exhaust for luxury cars.",
     title: 'Exhaust Repair in Dubai',
@@ -522,7 +522,7 @@ export const services: ServiceData[] = [
     details: 'We offer a full range of exhaust repair services in Dubai, covering all parts of the exhaust system. All work is carried out using OEM or performance-grade exhaust components, ensuring durability, efficiency, and optimal airflow.',
   },
   {
-    slug: 'car-programming-diagnostic',
+    slug: 'car-diagnostics-dubai',
     metaTitle: 'Car Diagnostics Dubai | Digitec Performance Center',
     metaDescription: "Advanced car diagnostics and ECU programming in Dubai by Digitec. Star Diagnostic, fault scanning, and coding specialists.",
     title: 'Car Programming & Diagnostic',
@@ -546,7 +546,7 @@ export const services: ServiceData[] = [
     details: 'Advanced ECU coding, key programming, module initialization, and full OBD-II diagnostics. We use dealer-level scan tools to read fault codes, perform live data analysis, and reset service indicators across all makes and models.',
   },
   {
-    slug: 'electrical-system-repairs',
+    slug: 'auto-electrical-repair-dubai',
     metaTitle: 'Auto Electrical Repair Dubai | Digitec Performance',
     metaDescription: "Expert auto electrical repair in Dubai by Digitec. Wiring, sensors, and ECU fault tracing for luxury and German cars.",
     title: 'Electrical System Repairs',
@@ -570,7 +570,7 @@ export const services: ServiceData[] = [
     details: 'Comprehensive electrical diagnostics and repair covering alternators, starters, wiring harnesses, fuse boxes, lighting systems, window regulators, and sensor calibration. We trace and resolve even the most complex electrical faults.',
   },
   {
-    slug: 'fuel-system-repair',
+    slug: 'fuel-system-repair-dubai',
     metaTitle: 'Fuel System Repair Dubai | Digitec Performance Center',
     metaDescription: "Professional fuel system repair in Dubai by Digitec. Injectors, pumps, and fuel rail service for performance vehicles.",
     title: 'Fuel System Repair',
@@ -594,7 +594,7 @@ export const services: ServiceData[] = [
     details: 'Fuel system diagnostics and repair including injector cleaning/replacement, fuel pump service, fuel filter replacement, fuel rail pressure testing, and throttle body cleaning for optimal combustion efficiency and fuel economy.',
   },
   {
-    slug: 'ac-repair-maintenance',
+    slug: 'car-ac-repair-dubai',
     metaTitle: 'Car AC Repair Dubai | Auto AC Service for Mercedes BMW Audi Porsche',
     metaDescription: 'Car AC not cooling? Get expert car AC repair in Dubai. Diagnostics, gas refill, compressor repair for Mercedes, BMW, Audi, Porsche.',
     title: 'Car AC Repair in Dubai: Auto Air Conditioning Service',
@@ -640,7 +640,7 @@ export const services: ServiceData[] = [
     details: 'Complete climate control services including refrigerant recharge, compressor replacement, condenser and evaporator repair, cabin filter replacement, and full system leak detection. Stay comfortable in any weather.',
   },
   {
-    slug: 'car-body-repair',
+    slug: 'car-body-repair-dubai',
     metaTitle: 'Car Body Repair Dubai | Digitec Performance Center',
     metaDescription: "Professional car body repair in Dubai by Digitec. Dent repair, panel work, and accident damage for luxury and German cars.",
     title: 'Car Body Repair',
@@ -664,7 +664,7 @@ export const services: ServiceData[] = [
     details: "Precision body repair for dents, scratches, scrapes, cracked bumpers, and minor collision damage. We use paintless dent removal, panel beating, and filler techniques to restore your vehicle's appearance to factory condition.",
   },
   {
-    slug: 'car-paint-protection',
+    slug: 'paint-protection-dubai',
     metaTitle: 'Paint Protection Dubai | Digitec Performance Center',
     metaDescription: "Premium paint protection film (PPF) and ceramic coating in Dubai by Digitec. Long-lasting shine and protection.",
     title: 'Car Paint & Protection',
