@@ -210,7 +210,11 @@ const ServicePage = () => {
               {service.faqs && service.faqs.length > 0 && (
                 <div>
                   <h2 className="text-2xl sm:text-3xl font-bold mb-5">
-                    {service.slug === 'oil-change-service' ? 'Oil Change FAQs' : 'Frequently Asked Questions'}
+                    {service.slug === 'oil-change-service'
+                      ? 'Oil Change FAQs'
+                      : service.slug === 'routine-maintenance'
+                      ? 'Car Service FAQs'
+                      : 'Frequently Asked Questions'}
                   </h2>
                   <Accordion type="single" collapsible className="space-y-3">
                     {service.faqs.map((faq, i) => (

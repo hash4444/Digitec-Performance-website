@@ -30,6 +30,44 @@ const categories: FAQCategory[] = [
     ],
   },
   {
+    id: 'car-service',
+    label: 'Car Service',
+    faqs: [
+      {
+        question: 'What is included in a car service in Dubai?',
+        answer: 'A professional car service in Dubai typically includes engine oil and filter replacement, fluid checks, brake inspection, battery testing, and a full vehicle inspection. At Digitec Performance Center, we follow manufacturer-recommended service schedules to ensure your vehicle remains reliable, safe, and performing at its best.',
+      },
+      {
+        question: 'How often should I service my car in Dubai?',
+        answer: "Due to Dubai's extreme heat and driving conditions, it is recommended to service your car every 5,000 to 10,000 km depending on your vehicle type. Regular servicing helps prevent engine wear, overheating, and costly repairs.",
+      },
+      {
+        question: 'Do luxury cars like Mercedes, BMW, and Audi need special servicing?',
+        answer: 'Yes, luxury vehicles such as Mercedes, BMW, Audi, and Porsche require specialized servicing using manufacturer-approved parts, oils, and diagnostic tools. At Digitec, we specialize in German and high-performance vehicles, ensuring your car receives the correct care it needs.',
+      },
+      {
+        question: 'How much does car service cost in Dubai?',
+        answer: 'Car service costs in Dubai vary depending on the vehicle type and service required. Basic servicing is more affordable, while major services for luxury or performance vehicles may cost more. At Digitec Performance Center, we offer transparent pricing with no hidden costs.',
+      },
+      {
+        question: 'How long does a car service take?',
+        answer: 'A standard car service usually takes between 1 to 3 hours, depending on the vehicle and the type of service. More complex services or repairs may take longer.',
+      },
+      {
+        question: 'Where can I find a reliable car service near me in Dubai?',
+        answer: 'If you are searching for a reliable car service near you in Dubai, Digitec Performance Center offers professional servicing for luxury and performance vehicles, with fast turnaround times and expert technicians.',
+      },
+      {
+        question: 'What happens if I skip car servicing?',
+        answer: 'Skipping regular car servicing can lead to engine damage, reduced fuel efficiency, brake wear, and costly repairs over time. Regular maintenance ensures your vehicle remains safe, efficient, and reliable.',
+      },
+      {
+        question: 'Do you service Ferrari and other performance cars?',
+        answer: 'Yes, at Digitec Performance Center, we service high-performance vehicles including Ferrari, Lamborghini, Porsche, and other luxury brands, using specialized tools and expert technicians.',
+      },
+    ],
+  },
+  {
     id: 'performance',
     label: 'Performance & Tuning',
     faqs: [
