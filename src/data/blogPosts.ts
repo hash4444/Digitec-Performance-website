@@ -24,6 +24,120 @@ export const blogCategories = ['All', 'Maintenance', 'Tuning', 'Mercedes', 'Deta
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: 'brake-repair-dubai',
+    title: 'Brake Repair in Dubai: Why Brakes Wear Faster in UAE Heat',
+    excerpt:
+      "Heat, traffic, and fine sand make Dubai one of the toughest environments for braking systems. Here is why your brakes wear faster, the warning signs to watch for, and answers to the most common brake repair questions.",
+    category: 'Maintenance',
+    author: 'DIGI-TEC Workshop',
+    date: '2026-04-20',
+    readTime: '7 min read',
+    coverGradient: 'from-burnt-orange/40 via-charcoal to-black',
+    metaTitle: 'Brake Repair Dubai | Digitec Performance Center',
+    metaDescription:
+      'Brake repair in Dubai for Mercedes, BMW, Audi, and Porsche. Learn why brakes wear faster in UAE heat, warning signs, and OEM brake service from Digitec.',
+    keywords:
+      'brake repair Dubai, brake pad replacement Dubai, brake service Dubai, Mercedes brake repair Dubai, BMW brake repair Dubai, ABS repair Dubai, brake disc replacement UAE',
+    ogTitle: 'Brake Repair in Dubai | Digitec Performance Center',
+    ogDescription:
+      'Expert brake repair, pad replacement, and ABS diagnostics in Dubai for luxury and German cars. Trusted by Mercedes, BMW, Audi, and Porsche owners.',
+    ogType: 'article',
+    twitterCard: 'summary_large_image',
+    twitterTitle: 'Brake Repair in Dubai | Digitec Performance Center',
+    twitterDescription:
+      'Why brakes wear faster in Dubai, warning signs, and expert brake repair for luxury vehicles at Digitec Performance Center.',
+    canonicalOverride: 'https://digitecme.com/blog/brake-repair-dubai',
+    content: [
+      { type: 'h2', text: 'Why Brake Systems Wear Faster in Dubai' },
+      {
+        type: 'p',
+        text: "Driving conditions in Dubai put significant stress on your vehicle's braking system. High temperatures, heavy traffic, and frequent stop and go driving accelerate brake wear, especially in performance and luxury vehicles like Mercedes-Benz, BMW, Audi, and Porsche.",
+      },
+      {
+        type: 'p',
+        text: 'Heat buildup can cause brake pads to wear faster and rotors to warp over time, reducing braking efficiency. In addition, fine sand and dust common in UAE environments can accumulate within braking components, leading to premature wear and reduced performance. At Digitec Performance Center, we provide brake system inspections and repairs tailored to Dubai conditions, ensuring consistent stopping power and long term safety.',
+      },
+      { type: 'h2', text: 'Signs Your Brakes Need Repair or Replacement' },
+      {
+        type: 'p',
+        text: 'Brake issues should never be ignored. Early detection can prevent costly damage and ensure your safety on the road.',
+      },
+      { type: 'p', text: 'Common warning signs include:' },
+      {
+        type: 'ul',
+        items: [
+          'Squeaking, squealing, or grinding noises when braking',
+          'Vibrations or pulsation when pressing the brake pedal',
+          'Reduced braking response or longer stopping distance',
+          'Brake warning light appearing on the dashboard',
+          'Car pulling to one side when braking',
+          'Soft or spongy brake pedal feel',
+        ],
+      },
+      {
+        type: 'p',
+        text: 'If you experience any of these symptoms, it is important to get your brakes inspected immediately. At Digitec, we perform full brake diagnostics, including pads, rotors, calipers, and ABS systems, to identify and fix issues accurately.',
+      },
+      { type: 'h2', text: 'Our Complete Brake Service in Dubai' },
+      {
+        type: 'p',
+        text: 'A modern braking system involves far more than pads and discs. Our brake service covers every component that influences how your car stops, ensuring nothing is overlooked during inspection or repair.',
+      },
+      {
+        type: 'ul',
+        items: [
+          'Brake pad inspection and replacement using OEM or performance-grade compounds',
+          'Brake disc and rotor resurfacing or replacement',
+          'Caliper service, including seal replacement, piston freeing, and rebuilds',
+          'Brake fluid flush and bleeding to remove moisture and restore pedal feel',
+          'ABS system diagnostics, sensor replacement, and module coding',
+          'Performance and carbon ceramic brake servicing for AMG, M, RS, and GT models',
+        ],
+      },
+      { type: 'h2', text: 'Brake Repair FAQs' },
+      { type: 'h3', text: 'How often should I replace brake pads in Dubai?' },
+      {
+        type: 'p',
+        text: "Brake pads typically last between 20,000 to 40,000 km, but in Dubai's driving conditions they may wear out faster due to heat and traffic.",
+      },
+      { type: 'h3', text: 'How much does brake repair cost in Dubai?' },
+      {
+        type: 'p',
+        text: 'The cost depends on your vehicle and the parts required. Luxury vehicles like Mercedes, BMW, and Audi may require high performance or OEM components, but Digitec offers transparent pricing with no hidden fees.',
+      },
+      { type: 'h3', text: 'Is it safe to drive with worn brake pads?' },
+      {
+        type: 'p',
+        text: 'No. Driving with worn brake pads reduces stopping power and can damage rotors, leading to more expensive repairs and serious safety risks.',
+      },
+      { type: 'h3', text: 'Do you use OEM brake parts?' },
+      {
+        type: 'p',
+        text: 'Yes. We use OEM and performance-grade brake components to ensure maximum safety, durability, and braking efficiency.',
+      },
+      { type: 'h3', text: 'How long does a brake service take?' },
+      {
+        type: 'p',
+        text: 'Most brake services can be completed within 1 to 2 hours, depending on the work required.',
+      },
+      { type: 'h3', text: 'Do you repair ABS systems and brake sensors?' },
+      {
+        type: 'p',
+        text: 'Yes. We provide full diagnostics and repair for ABS systems, brake sensors, and electronic braking components.',
+      },
+      { type: 'h3', text: 'Why do my brakes make noise?' },
+      {
+        type: 'p',
+        text: 'Brake noise is often caused by worn pads, dust buildup, or warped rotors. A proper inspection is needed to identify the exact cause.',
+      },
+      { type: 'h3', text: 'Do you service Mercedes, BMW, Audi, and Porsche brakes?' },
+      {
+        type: 'p',
+        text: 'Yes. We specialize in German and luxury vehicles and service standard, performance, and carbon ceramic braking systems to manufacturer specifications.',
+      },
+    ],
+  },
+  {
     slug: 'car-battery-replacement-dubai',
     title: 'Car Battery Replacement in Dubai: Why Heat Kills Batteries Faster',
     excerpt:
