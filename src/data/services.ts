@@ -1,5 +1,7 @@
 import routineMaintenanceImg from '@/assets/routine-maintenance.png';
 import tireRepairImg from '@/assets/tire-repair.png';
+import ppfImage from '@/assets/ppf-application.png';
+import ceramicImage from '@/assets/ceramic-coating.png';
 
 export interface ServiceData {
   slug: string;
@@ -613,6 +615,64 @@ export const services: ServiceData[] = [
     ],
     localIntent: 'Searching for paint protection film in Dubai or ceramic coating near me? Digi-Tec Performance Center delivers showroom-quality paint protection that lasts for years.',
     details: 'Professional paint correction, ceramic coating application, and paint protection film (PPF) installation. We offer full-body or partial wraps, color-matched touch-ups, and multi-layer ceramic coatings for lasting shine and protection.',
+  },
+  {
+    slug: 'paint-protection-film',
+    metaTitle: 'Paint Protection Film (PPF) Dubai | Digitec Performance Center',
+    metaDescription: 'Premium Paint Protection Film (PPF) in Dubai by Digitec. Self-healing, ultra-clear film with a 10-year warranty for luxury and performance cars.',
+    title: 'Paint Protection Film (PPF)',
+    description: 'The last layer your paint will ever need. Invisible, self-healing, ultra-premium protection.',
+    image: ppfImage,
+    category: 'Body & Visual Work',
+    seoKeyword: 'Paint Protection Film Dubai',
+    intro: 'Digitec Performance Center offers ultra-premium Paint Protection Film (PPF) in Dubai, the most advanced way to shield your vehicle from rock chips, road debris, UV damage, and minor abrasions. Our PPF is invisibly applied, optically clear, and engineered to keep your paint in factory condition for years.',
+    whyImportant: 'Dubai roads expose your paint to sand abrasion, gravel impacts, intense UV, and contaminants that quickly degrade unprotected finishes. PPF acts as a sacrificial layer, absorbing damage silently while preserving resale value and the showroom finish of luxury and performance vehicles.',
+    whyChoose: 'We use industry-leading PPF brands, custom precision-cut for every panel of your vehicle. Our certified installers ensure flawless edge work, no lifting, and no visible seams. Every installation is backed by a 10-year manufacturer warranty.',
+    includes: [
+      'Self-healing technology: minor scratches vanish with heat',
+      '10-year manufacturer warranty',
+      'Hydrophobic top coat for effortless cleaning',
+      'Optically clear with zero visual distortion',
+      'Custom precision-cut for every panel',
+      'Full body, partial front, or track package options',
+      'Compatible with ceramic coating overlay',
+    ],
+    localIntent: 'Searching for paint protection film Dubai, PPF near me, or PPF installer for Mercedes, BMW, Audi, or Porsche? Digitec Performance Center delivers showroom-quality PPF installations across the UAE.',
+    details: 'Premium Paint Protection Film installation by certified technicians, with custom precision cuts, self-healing topcoat, and a 10-year warranty. Available as full body, partial front, or track package coverage.',
+  },
+  {
+    slug: 'ceramic-coating',
+    metaTitle: 'Ceramic Coating Dubai | Digitec Performance Center',
+    metaDescription: 'Professional 9H ceramic coating in Dubai by Digitec. Permanent gloss, hydrophobic protection, and UV resistance for luxury vehicles.',
+    title: 'Ceramic Coating',
+    description: 'Permanent gloss. Effortless maintenance. Nano-ceramic protection that fuses with your clear coat.',
+    image: ceramicImage,
+    category: 'Body & Visual Work',
+    seoKeyword: 'Ceramic Coating Dubai',
+    intro: 'Digitec Performance Center applies professional-grade nano-ceramic coatings in Dubai that bond molecularly with your clear coat. The result: showroom depth, extreme hydrophobicity, and years of UV and chemical resistance from a single application.',
+    whyImportant: 'Without ceramic protection, your paint is exposed to UV fade, water spots, bird droppings, industrial fallout, and contaminant etching, all accelerated by Dubai\'s climate. A ceramic coating creates a hard, glass-like barrier that protects the paint and dramatically reduces wash time.',
+    whyChoose: 'We offer multi-tier ceramic packages with 9H industry-maximum hardness, applied in a controlled environment by trained detailers. Every package starts with full paint decontamination and correction to ensure a perfect base before coating.',
+    includes: [
+      '9H hardness rating: industry maximum',
+      'Extreme water beading and self-cleaning effect',
+      'UV and chemical resistance',
+      'Enhanced gloss depth up to 30%',
+      'Up to 5-year certified protection',
+      'Wheel, trim, and glass coating options',
+      'Full paint decontamination and correction included',
+    ],
+    extraSections: [
+      {
+        heading: 'Coating Packages',
+        items: [
+          'Essential: Single-layer ceramic coat with paint decontamination',
+          'Elite: Two-layer coat including wheels, trim, and glass',
+          'Ultimate: PPF and ceramic combo for the definitive shield',
+        ],
+      },
+    ],
+    localIntent: 'Looking for ceramic coating Dubai, nano coating near me, or 9H ceramic protection for your AMG, M-Power, RS, or Turbo S? Digitec Performance Center is trusted by Dubai\'s most discerning car owners.',
+    details: 'Multi-layer 9H nano-ceramic coating application with full paint decontamination and correction. Available in Essential, Elite, and Ultimate packages, with optional wheel, trim, and glass coverage.',
   },
 ];
 
