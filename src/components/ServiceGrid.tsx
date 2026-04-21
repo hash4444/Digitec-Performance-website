@@ -124,9 +124,12 @@ export const ServiceGrid = () => {
           </div>
 
           <div className="text-center mt-12 sm:mt-16 lg:mt-20">
-            <button className="w-full sm:w-auto bg-burnt-orange hover:bg-burnt-orange/90 text-black font-bold text-base sm:text-lg px-8 sm:px-12 py-4 rounded-2xl sm:rounded-3xl transition-all duration-300 transform hover:scale-105 shadow-2xl hover:shadow-burnt-orange/30">
-              View All Services & Pricing
-            </button>
+            <Link
+              to="/services"
+              className="inline-block w-full sm:w-auto bg-burnt-orange hover:bg-burnt-orange/90 text-black font-bold text-base sm:text-lg px-8 sm:px-12 py-4 rounded-2xl sm:rounded-3xl transition-all duration-300 transform hover:scale-105 shadow-2xl hover:shadow-burnt-orange/30"
+            >
+              View All Services
+            </Link>
           </div>
         </div>
       </section>
