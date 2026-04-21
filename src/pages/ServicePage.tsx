@@ -253,6 +253,28 @@ const ServicePage = () => {
                   </Link>
                 </div>
               )}
+
+              {/* Related Blog: Mercedes */}
+              {service.slug === 'mercedes-repair' && (
+                <div className="bg-gradient-to-br from-burnt-orange/10 to-charcoal/40 border border-burnt-orange/30 rounded-2xl p-6 sm:p-8">
+                  <span className="text-burnt-orange text-xs font-bold uppercase tracking-widest mb-3 block">
+                    Learn More
+                  </span>
+                  <h3 className="text-2xl sm:text-3xl font-bold mb-3">
+                    Want the complete Mercedes owner guide for Dubai?
+                  </h3>
+                  <p className="text-gray-300 leading-relaxed text-lg mb-5">
+                    Read our 2026 Mercedes repair guide covering common UAE issues, AIRMATIC and AMG specifics, warning signs, and how to choose the right specialist workshop.
+                  </p>
+                  <Link
+                    to="/blog/mercedes-repair-dubai-complete-guide"
+                    className="inline-flex items-center gap-2 bg-burnt-orange hover:bg-burnt-orange/90 text-black font-bold py-3 px-6 rounded-xl transition-all duration-300"
+                  >
+                    Read the Mercedes Guide
+                    <ChevronRight className="w-5 h-5" />
+                  </Link>
+                </div>
+              )}
             </div>
 
             {/* Sidebar */}
