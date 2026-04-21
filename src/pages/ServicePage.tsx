@@ -275,6 +275,28 @@ const ServicePage = () => {
                   </Link>
                 </div>
               )}
+
+              {/* Related Blog: Car AC */}
+              {service.slug === 'ac-repair-maintenance' && (
+                <div className="bg-gradient-to-br from-burnt-orange/10 to-charcoal/40 border border-burnt-orange/30 rounded-2xl p-6 sm:p-8">
+                  <span className="text-burnt-orange text-xs font-bold uppercase tracking-widest mb-3 block">
+                    Learn More
+                  </span>
+                  <h3 className="text-2xl sm:text-3xl font-bold mb-3">
+                    Why does your car AC stop cooling in Dubai?
+                  </h3>
+                  <p className="text-gray-300 leading-relaxed text-lg mb-5">
+                    Read our specialist guide on why AC systems fail in Dubai's heat, the most common compressor and refrigerant issues, and what actually fixes them long term.
+                  </p>
+                  <Link
+                    to="/blog/car-ac-repair-dubai"
+                    className="inline-flex items-center gap-2 bg-burnt-orange hover:bg-burnt-orange/90 text-black font-bold py-3 px-6 rounded-xl transition-all duration-300"
+                  >
+                    Read the AC Repair Guide
+                    <ChevronRight className="w-5 h-5" />
+                  </Link>
+                </div>
+              )}
             </div>
 
             {/* Sidebar */}
