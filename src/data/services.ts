@@ -2,6 +2,7 @@ import routineMaintenanceImg from '@/assets/routine-maintenance.png';
 import tireRepairImg from '@/assets/tire-repair.png';
 import ppfImage from '@/assets/ppf-application.png';
 import ceramicImage from '@/assets/ceramic-coating.png';
+import mercedesRepairImg from '@/assets/mercedes-repair.png';
 
 export interface ServiceData {
   slug: string;
@@ -30,7 +31,7 @@ export const services: ServiceData[] = [
     metaDescription: 'Expert Mercedes-Benz repair in Dubai by Digitec. Star Diagnostic, OEM parts, AMG specialists. Dealer quality, faster turnaround.',
     title: 'Mercedes Repair in Dubai',
     description: 'Specialist Mercedes-Benz service, diagnostics, and repair in Dubai.',
-    image: 'https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?w=800&h=600&fit=crop',
+    image: mercedesRepairImg,
     category: 'Core Mechanical Services',
     seoKeyword: 'Mercedes Repair Dubai',
     intro: 'When it comes to Mercedes repair in Dubai, Digitec Performance Center is a trusted destination for owners who demand precision, performance, and reliability. As a dedicated Mercedes-Benz specialist workshop in Dubai, we provide advanced diagnostics, mechanical repairs, and performance servicing tailored to the engineering standards of German vehicles. From daily driven C-Class models to high performance AMG vehicles and luxury Maybachs, our team ensures every vehicle is maintained to the highest level.',
