@@ -5,13 +5,14 @@ import { WhyChooseUs } from '@/components/WhyChooseUs';
 import { FinalCTA } from '@/components/FinalCTA';
 import { Footer } from '@/components/Footer';
 import { motion } from 'framer-motion';
-import { MapPin, Phone, Mail } from 'lucide-react';
+import { MapPin, Phone, Mail, CheckCircle2, Zap, Wrench, Gauge } from 'lucide-react';
 
 const AboutUs = () => {
   useSeo({
-    title: 'About DIGI-TEC Performance Center | Luxury Car Experts Dubai',
-    description: "Learn about DIGI-TEC Performance Center, Dubai's premier luxury automotive repair and tuning facility. 40+ years of expertise, 30,000+ cars served.",
+    title: 'About Digitec Performance Center | Car Workshop in Dubai',
+    description: 'Digitec Performance Center is a trusted car workshop in Dubai specialising in Mercedes, BMW, Audi, luxury vehicles, Chinese EVs, and GAD Motors performance tuning.',
     canonical: 'https://digitecme.com/about',
+    keywords: 'car workshop Dubai, Mercedes repair Dubai, German car specialist, GAD Motors tuning, EV repair Dubai, luxury car service',
   });
 
   return (
