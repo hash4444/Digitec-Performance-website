@@ -52,12 +52,12 @@ const Services = () => {
                 <h2 className="text-2xl sm:text-3xl font-bold mb-8 border-l-4 border-burnt-orange pl-4">
                   {cat}
                 </h2>
-                <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-3 gap-3 sm:gap-5 lg:gap-6">
                   {items.map((s) => (
                     <Link
                       key={s.slug}
                       to={`/services/${s.slug}`}
-                      className="group bg-charcoal/60 border border-gray-800/50 rounded-2xl overflow-hidden hover:border-burnt-orange/50 transition-all duration-300"
+                      className="group bg-charcoal/60 border border-gray-800/50 rounded-xl sm:rounded-2xl overflow-hidden hover:border-burnt-orange/50 transition-all duration-300"
                     >
                       <div className="aspect-[4/3] overflow-hidden">
                         <img
@@ -71,11 +71,11 @@ const Services = () => {
                           }}
                         />
                       </div>
-                      <div className="p-5">
-                        <h3 className="font-bold text-lg group-hover:text-burnt-orange transition-colors">
+                      <div className="p-3 sm:p-4 lg:p-5">
+                        <h3 className="font-bold text-sm sm:text-base lg:text-lg leading-tight group-hover:text-burnt-orange transition-colors line-clamp-2">
                           {s.title}
                         </h3>
-                        <p className="text-gray-400 text-sm mt-2 line-clamp-2">
+                        <p className="text-gray-400 text-xs sm:text-sm mt-1.5 sm:mt-2 line-clamp-2">
                           {s.description}
                         </p>
                       </div>
