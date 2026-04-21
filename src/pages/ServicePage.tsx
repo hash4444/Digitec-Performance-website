@@ -6,6 +6,7 @@ import { Footer } from '@/components/Footer';
 import { FinalCTA } from '@/components/FinalCTA';
 import { getServiceBySlug, services } from '@/data/services';
 import { ChevronRight, Check, MessageCircle, Phone } from 'lucide-react';
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 
 // Map old Google-indexed slugs to correct destinations
 const SLUG_REDIRECTS: Record<string, string> = {
