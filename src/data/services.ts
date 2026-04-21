@@ -20,6 +20,7 @@ export interface ServiceData {
   modelsSection?: { heading: string; intro: string; models: string[]; outro: string };
   servicesIntro?: { heading: string; text: string };
   extraSections?: { heading: string; text?: string; items?: string[] }[];
+  faqs?: { question: string; answer: string }[];
   localIntent: string;
   details: string;
 }
