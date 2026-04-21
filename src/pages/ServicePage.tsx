@@ -8,27 +8,47 @@ import { getServiceBySlug, services } from '@/data/services';
 import { ChevronRight, Check, MessageCircle, Phone } from 'lucide-react';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 
-// Map old Google-indexed slugs to correct destinations
-const SLUG_REDIRECTS: Record<string, string> = {
-  'mercedes-brake-repair-dubai': '/services/brake-system-repairs',
-  'mercedes-transmission-repair-dubai': '/services/transmission-services',
-  'mercedes-ac-repair-dubai': '/services/ac-repair-maintenance',
-  'mercedes-suspension-repair-dubai': '/services/suspension-repair',
+// Map every legacy slug directly to its new slug (single-hop redirects, no chains).
+// Also handles previously-indexed Google URLs.
+const OLD_TO_NEW_SLUG: Record<string, string> = {
+  // Original slugs → new H1-derived slugs
+  'mercedes-repair': 'mercedes-repair-dubai',
+  'mechanical-repair': 'mechanical-repair-dubai',
+  'transmission-services': 'transmission-repair-dubai',
+  'suspension-repair': 'suspension-repair-dubai',
+  'steering-repair': 'steering-repair-dubai',
+  'brake-system-repairs': 'brake-repair-dubai',
+  'routine-maintenance': 'car-service-dubai',
+  'oil-change-service': 'oil-change-dubai',
+  'tire-repair': 'tire-repair-dubai',
+  'battery-changes': 'battery-replacement-dubai',
+  'exhaust-repair': 'exhaust-repair-dubai',
+  'car-programming-diagnostic': 'car-diagnostics-dubai',
+  'electrical-system-repairs': 'auto-electrical-repair-dubai',
+  'fuel-system-repair': 'fuel-system-repair-dubai',
+  'ac-repair-maintenance': 'car-ac-repair-dubai',
+  'car-body-repair': 'car-body-repair-dubai',
+  'car-paint-protection': 'paint-protection-dubai',
+  // Legacy Google-indexed slugs → new slugs (flattened to one hop)
+  'mercedes-brake-repair-dubai': 'brake-repair-dubai',
+  'mercedes-transmission-repair-dubai': 'transmission-repair-dubai',
+  'mercedes-ac-repair-dubai': 'car-ac-repair-dubai',
+  'mercedes-suspension-repair-dubai': 'suspension-repair-dubai',
+  'engine-diagnostics-dubai': 'car-diagnostics-dubai',
+  'mercedes-oil-change-dubai': 'oil-change-dubai',
+};
+
+// External redirects (off /services/*)
+const EXTERNAL_REDIRECTS: Record<string, string> = {
   'performance-tuning-dubai': '/tuning',
-  'engine-diagnostics-dubai': '/services/car-programming-diagnostic',
-  'mercedes-oil-change-dubai': '/services/oil-change-service',
 };
 
 const ServicePage = () => {
   const { slug } = useParams<{ slug: string }>();
 
-  // Check custom redirect map first
-  const customRedirect = slug ? SLUG_REDIRECTS[slug] : undefined;
-
-  // Then check generic -dubai suffix
-  const isDubaiSuffix = !customRedirect && slug?.endsWith('-dubai');
-  const effectiveSlug = isDubaiSuffix ? slug.replace(/-dubai$/, '') : slug;
-  const service = !customRedirect && effectiveSlug ? getServiceBySlug(effectiveSlug) : undefined;
+  const externalRedirect = slug ? EXTERNAL_REDIRECTS[slug] : undefined;
+  const newSlug = slug ? OLD_TO_NEW_SLUG[slug] : undefined;
+  const service = slug && !newSlug && !externalRedirect ? getServiceBySlug(slug) : undefined;
 
   useSeo({
     title: service?.metaTitle || (service ? `${service.seoKeyword} | DIGI-TEC Performance Center` : 'Service Not Found | DIGI-TEC'),
@@ -59,12 +79,12 @@ const ServicePage = () => {
     } : undefined,
   });
 
-  if (customRedirect) {
-    return <Navigate to={customRedirect} replace />;
+  if (externalRedirect) {
+    return <Navigate to={externalRedirect} replace />;
   }
 
-  if (isDubaiSuffix && service) {
-    return <Navigate to={`/services/${effectiveSlug}`} replace />;
+  if (newSlug) {
+    return <Navigate to={`/services/${newSlug}`} replace />;
   }
 
   if (!service) {
@@ -210,9 +230,9 @@ const ServicePage = () => {
               {service.faqs && service.faqs.length > 0 && (
                 <div>
                   <h2 className="text-2xl sm:text-3xl font-bold mb-5">
-                    {service.slug === 'oil-change-service'
+                    {service.slug === 'oil-change-dubai'
                       ? 'Oil Change FAQs'
-                      : service.slug === 'routine-maintenance'
+                      : service.slug === 'car-service-dubai'
                       ? 'Car Service FAQs'
                       : 'Frequently Asked Questions'}
                   </h2>
@@ -241,7 +261,7 @@ const ServicePage = () => {
               </div>
 
               {/* Related Blog: Battery */}
-              {service.slug === 'battery-changes' && (
+              {service.slug === 'battery-replacement-dubai' && (
                 <div className="bg-gradient-to-br from-burnt-orange/10 to-charcoal/40 border border-burnt-orange/30 rounded-2xl p-6 sm:p-8">
                   <span className="text-burnt-orange text-xs font-bold uppercase tracking-widest mb-3 block">
                     Learn More
@@ -263,7 +283,7 @@ const ServicePage = () => {
               )}
 
               {/* Related Blog: Brakes */}
-              {service.slug === 'brake-system-repairs' && (
+              {service.slug === 'brake-repair-dubai' && (
                 <div className="bg-gradient-to-br from-burnt-orange/10 to-charcoal/40 border border-burnt-orange/30 rounded-2xl p-6 sm:p-8">
                   <span className="text-burnt-orange text-xs font-bold uppercase tracking-widest mb-3 block">
                     Learn More
@@ -285,7 +305,7 @@ const ServicePage = () => {
               )}
 
               {/* Related Blog: Mercedes */}
-              {service.slug === 'mercedes-repair' && (
+              {service.slug === 'mercedes-repair-dubai' && (
                 <div className="bg-gradient-to-br from-burnt-orange/10 to-charcoal/40 border border-burnt-orange/30 rounded-2xl p-6 sm:p-8">
                   <span className="text-burnt-orange text-xs font-bold uppercase tracking-widest mb-3 block">
                     Learn More
@@ -307,7 +327,7 @@ const ServicePage = () => {
               )}
 
               {/* Related Blog: Car AC */}
-              {service.slug === 'ac-repair-maintenance' && (
+              {service.slug === 'car-ac-repair-dubai' && (
                 <div className="bg-gradient-to-br from-burnt-orange/10 to-charcoal/40 border border-burnt-orange/30 rounded-2xl p-6 sm:p-8">
                   <span className="text-burnt-orange text-xs font-bold uppercase tracking-widest mb-3 block">
                     Learn More
