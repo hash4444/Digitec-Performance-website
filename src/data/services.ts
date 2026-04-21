@@ -307,15 +307,10 @@ export const services: ServiceData[] = [
     intro: 'At Digitec Performance Center, we provide professional oil change in Dubai, delivering fast, reliable, and high-quality engine oil services for luxury, performance, and everyday vehicles. As a trusted car oil change service in Dubai, we use premium, manufacturer-approved oils to ensure maximum engine protection, efficiency, and longevity. Whether you need a quick oil change or a full service check, our technicians ensure your vehicle receives the exact oil specification required for optimal performance.',
     whyImportant: 'Engine oil plays a critical role in lubricating, cooling, and protecting your engine. Over time, oil degrades due to heat and contamination, reducing its effectiveness and increasing engine wear. Skipping oil changes can lead to reduced engine performance, increased fuel consumption, sludge buildup and internal damage, and expensive engine repairs. At Digitec, we ensure your engine stays protected with timely and precise oil changes, helping extend its lifespan and maintain peak performance.',
     modelsSection: {
-      heading: 'Car Brands We Service',
-      intro: 'At Digitec, we provide oil change services in Dubai for most vehicle brands, including:',
-      models: [
-        'Mercedes-Benz, Maybach, Audi, BMW, Porsche',
-        'Lamborghini, Aston Martin, Bugatti, Ferrari, McLaren',
-        'Bentley, Rolls-Royce, Range Rover, Land Rover',
-        'Nissan, Toyota, Rox, Jetour, Zeekr, BYD, Hongqi',
-      ],
-      outro: 'We specialize in German cars and high-performance vehicles, using the exact oil grades and specifications required by each manufacturer.',
+      heading: 'BMW, Audi, and Porsche Oil Change Services',
+      intro: 'We provide expert oil change services in Dubai for BMW, Audi, and Porsche vehicles. These performance cars require high-quality synthetic oils and exact viscosity grades to maintain engine efficiency and reliability.',
+      models: [],
+      outro: 'Our team ensures every oil change meets manufacturer standards, helping your engine perform at its best in Dubai\'s demanding driving conditions.',
     },
     whyChoose: 'As a leading car service center in Dubai, Digitec Performance Center offers: fast oil change service (same-day turnaround), premium oils and OEM filters, experienced technicians for luxury and performance cars, transparent pricing with no hidden costs, no long waiting times like dealerships. We provide high-quality oil change services in Dubai with the speed and reliability you need.',
     servicesIntro: {
