@@ -72,44 +72,11 @@ export const ServiceGrid = () => {
                   </h3>
                 </div>
 
-                {/* Mobile: 2-column grid */}
-                <div className="grid grid-cols-2 gap-3 px-1 sm:hidden">
-                  {category.services.map((service) => (
-                    <div key={service.slug} className="group">
-                      <div className="bg-gradient-to-br from-charcoal/90 to-charcoal/60 backdrop-blur-sm border border-gray-800/50 rounded-3xl p-3 shadow-2xl transition-all duration-500 hover:border-burnt-orange/50 h-full flex flex-col">
-                        <div className="mb-3 overflow-hidden rounded-2xl bg-gradient-to-br from-gray-900 to-gray-800 aspect-[4/3]">
-                          <img
-                            src={service.image}
-                            alt={service.title}
-                            className="w-full h-full object-cover group-hover:scale-110 transition-all duration-500"
-                            loading="lazy"
-                            onError={(e) => {
-                              e.currentTarget.src = 'https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=400&h=300&fit=crop';
-                            }}
-                          />
-                        </div>
-                        <h4 className="text-sm font-bold mb-1 leading-tight group-hover:text-burnt-orange transition-colors line-clamp-2">
-                          {service.title}
-                        </h4>
-                        <p className="text-gray-400 text-xs leading-snug mb-3 line-clamp-2 flex-1">
-                          {service.description}
-                        </p>
-                        <Link
-                          to={`/services/${service.slug}`}
-                          className="inline-flex items-center gap-1 text-burnt-orange font-semibold text-xs mt-auto"
-                        >
-                          Learn More <ChevronRight className="w-3 h-3" />
-                        </Link>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-
-                {/* Tablet/Desktop: horizontal scroll */}
-                <div className="hidden sm:block horizontal-scroll-container overflow-x-auto overflow-y-hidden pb-4">
-                  <div className="flex gap-4 md:gap-6 pl-4 pr-4" style={{ width: 'max-content' }}>
+                {/* Horizontal scroll on all screens */}
+                <div className="horizontal-scroll-container overflow-x-auto overflow-y-hidden pb-4">
+                  <div className="flex gap-3 sm:gap-4 md:gap-6 pl-2 pr-2 sm:pl-4 sm:pr-4" style={{ width: 'max-content' }}>
                     {category.services.map((service) => (
-                      <div key={service.slug} className="service-card group w-80 md:w-96">
+                      <div key={service.slug} className="service-card group w-64 sm:w-80 md:w-96">
                         <div className="bg-gradient-to-br from-charcoal/90 to-charcoal/60 backdrop-blur-sm border border-gray-800/50 rounded-3xl p-5 sm:p-6 lg:p-8 shadow-2xl transition-all duration-500 hover:shadow-burnt-orange/20 hover:border-burnt-orange/50 hover:scale-[1.02] hover:-translate-y-1 h-full flex flex-col min-h-[400px]">
                           <div className="mb-6 overflow-hidden rounded-2xl bg-gradient-to-br from-gray-900 to-gray-800 aspect-[4/3]">
                             <img
