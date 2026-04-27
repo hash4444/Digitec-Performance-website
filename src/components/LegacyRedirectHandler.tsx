@@ -18,6 +18,19 @@ export const LegacyRedirectHandler = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
+    // 0. Force canonical host: apex domain + HTTPS.
+    //    Redirect www.digitecme.com → digitecme.com and http:// → https:// in a single hop.
+    if (typeof window !== 'undefined') {
+      const { hostname, protocol, host } = window.location;
+      const isProdHost = hostname === 'digitecme.com' || hostname === 'www.digitecme.com';
+      const needsHostFix = isProdHost && (hostname.startsWith('www.') || protocol !== 'https:');
+      if (needsHostFix) {
+        const target = `https://digitecme.com${pathname}${search}${hash}`;
+        window.location.replace(target);
+        return;
+      }
+    }
+
     let nextPath = pathname;
     let changed = false;
 
