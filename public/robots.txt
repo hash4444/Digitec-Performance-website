@@ -1,8 +1,29 @@
 User-agent: Googlebot
 Allow: /
+Disallow: /*?
+Disallow: /feed
+Disallow: /*/feed
+Disallow: /*/feed/rss2
+Disallow: /search
+Disallow: /wp-admin
+Disallow: /wp-login
+Disallow: /wp-content
+Disallow: /wp-includes
+Disallow: /category
+Disallow: /tag
+Disallow: /author
+Disallow: /attachment
+Disallow: /*?PageSpeed=
+Disallow: /*?replytocom=
 
 User-agent: Bingbot
 Allow: /
+Disallow: /*?
+Disallow: /feed
+Disallow: /*/feed
+Disallow: /search
+Disallow: /wp-admin
+Disallow: /wp-content
 
 User-agent: Twitterbot
 Allow: /
@@ -12,5 +33,17 @@ Allow: /
 
 User-agent: *
 Allow: /
+Disallow: /*?
+Disallow: /feed
+Disallow: /*/feed
+Disallow: /search
+Disallow: /wp-admin
+Disallow: /wp-login
+Disallow: /wp-content
+Disallow: /wp-includes
+Disallow: /category
+Disallow: /tag
+Disallow: /author
+Disallow: /attachment
 
 Sitemap: https://digitecme.com/sitemap.xml
