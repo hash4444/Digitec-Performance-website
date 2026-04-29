@@ -28,7 +28,7 @@ export interface ServiceData {
 export const services: ServiceData[] = [
   {
     slug: 'mercedes-repair-dubai',
-    metaTitle: 'Mercedes Repair Dubai | AMG & Star Diagnostic Experts | Digitec',
+    metaTitle: 'Mercedes Repair Dubai | AMG & Star Diagnostic | Digitec',
     metaDescription: 'Need Mercedes repair in Dubai? Trusted AMG and Star Diagnostic specialists using OEM parts. Faster than the dealer. Book your service with Digitec today.',
     title: 'Mercedes Repair in Dubai',
     description: 'Specialist Mercedes-Benz service, diagnostics, and repair in Dubai.',
@@ -62,7 +62,7 @@ export const services: ServiceData[] = [
   },
   {
     slug: 'mechanical-repair-dubai',
-    metaTitle: 'Mechanical Repair Dubai | Engine & Drivetrain Experts | Digitec',
+    metaTitle: 'Mechanical Repair Dubai | Engine & Drivetrain | Digitec',
     metaDescription: 'Looking for mechanical repair in Dubai? Specialist engine, gearbox and drivetrain fixes for German and luxury cars. Fast turnaround at Digitec. Call today.',
     title: 'Mechanical Repair in Dubai',
     description: 'Expert car engine and drivetrain specialists in Dubai.',
@@ -102,7 +102,7 @@ export const services: ServiceData[] = [
   },
   {
     slug: 'transmission-repair-dubai',
-    metaTitle: 'Transmission Repair Dubai | DCT & Gearbox Specialists | Digitec',
+    metaTitle: 'Transmission Repair Dubai | DCT & Gearbox Experts | Digitec',
     metaDescription: 'Gearbox slipping or jerking? Expert transmission repair in Dubai for DCT, automatic and manual systems. Trusted German car specialists. Book at Digitec now.',
     title: 'Transmission Repair in Dubai',
     description: 'Gearbox and automatic transmission specialists in Dubai.',
@@ -141,7 +141,7 @@ export const services: ServiceData[] = [
   },
   {
     slug: 'suspension-repair-dubai',
-    metaTitle: 'Suspension Repair Dubai | AIRMATIC & Air Spring Experts | Digitec',
+    metaTitle: 'Suspension Repair Dubai | AIRMATIC Specialists | Digitec',
     metaDescription: 'Air suspension sagging? Specialist suspension repair in Dubai for AIRMATIC, shocks and ride height. Premium OEM parts at Digitec. Book your fix today.',
     title: 'Suspension Repair in Dubai',
     description: 'Car suspension and air suspension specialists in Dubai.',
@@ -180,7 +180,7 @@ export const services: ServiceData[] = [
   },
   {
     slug: 'steering-repair-dubai',
-    metaTitle: 'Steering Repair Dubai | Power Steering & Rack Experts | Digitec',
+    metaTitle: 'Steering Repair Dubai | Power Steering Experts | Digitec',
     metaDescription: 'Heavy or noisy steering? Expert steering repair in Dubai for racks, pumps and alignment on German and luxury cars. Trusted at Digitec. Book a check today.',
     title: 'Steering Repair in Dubai',
     description: 'Power steering and steering rack specialists in Dubai.',
@@ -523,7 +523,7 @@ export const services: ServiceData[] = [
   },
   {
     slug: 'car-diagnostics-dubai',
-    metaTitle: 'Car Diagnostics Dubai | ECU Coding & Star Diagnostic | Digitec',
+    metaTitle: 'Car Diagnostics Dubai | ECU Coding & Star Scan | Digitec',
     metaDescription: 'Warning light on? Advanced car diagnostics in Dubai with Star Diagnostic, ECU coding and fault scanning for luxury cars. Trusted at Digitec. Book today.',
     title: 'Car Programming & Diagnostic',
     description: 'ECU coding, resets, and full digital system inspection.',
@@ -547,7 +547,7 @@ export const services: ServiceData[] = [
   },
   {
     slug: 'auto-electrical-repair-dubai',
-    metaTitle: 'Auto Electrical Repair Dubai | Wiring & ECU Experts | Digitec',
+    metaTitle: 'Auto Electrical Repair Dubai | Wiring & ECU | Digitec',
     metaDescription: 'Electrical fault? Expert auto electrical repair in Dubai for wiring, sensors and ECU issues on Mercedes, BMW and Audi. Trusted at Digitec. Book a check now.',
     title: 'Electrical System Repairs',
     description: 'Power delivery and sensor calibration to factory spec.',
@@ -571,7 +571,7 @@ export const services: ServiceData[] = [
   },
   {
     slug: 'fuel-system-repair-dubai',
-    metaTitle: 'Fuel System Repair Dubai | Injector & Pump Specialists | Digitec',
+    metaTitle: 'Fuel System Repair Dubai | Injector & Pump | Digitec',
     metaDescription: 'Rough running or stalling? Expert fuel system repair in Dubai for injectors, pumps and fuel rails on performance cars. Trusted at Digitec. Book today.',
     title: 'Fuel System Repair',
     description: 'Optimal fuel delivery, flow, and combustion efficiency.',
@@ -641,7 +641,7 @@ export const services: ServiceData[] = [
   },
   {
     slug: 'car-body-repair-dubai',
-    metaTitle: 'Car Body Repair Dubai | Dent, Panel & Accident Repair | Digitec',
+    metaTitle: 'Car Body Repair Dubai | Dent & Accident Repair | Digitec',
     metaDescription: 'Need car body repair in Dubai? Expert dent removal, panel work and accident repair for luxury and German cars. Premium finish at Digitec. Book today.',
     title: 'Car Body Repair',
     description: 'Precision repair for dents, cracks, scrapes, and frame issues.',
