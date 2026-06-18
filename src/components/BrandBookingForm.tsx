@@ -1,0 +1,116 @@
+import React, { useState } from 'react';
+import { z } from 'zod';
+import { MessageCircle } from 'lucide-react';
+
+const schema = z.object({
+  name: z.string().trim().min(2, 'Please enter your name').max(80),
+  phone: z
+    .string()
+    .trim()
+    .min(7, 'Please enter a valid phone number')
+    .max(20)
+    .regex(/^[+0-9\s()-]+$/, 'Phone can only contain digits and + ( ) -'),
+  issue: z.string().trim().min(5, 'Please describe the issue briefly').max(600),
+});
+
+interface Props {
+  brandName: string;
+}
+
+const BrandBookingForm: React.FC<Props> = ({ brandName }) => {
+  const [values, setValues] = useState({ name: '', phone: '', issue: '' });
+  const [errors, setErrors] = useState<Record<string, string>>({});
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    const result = schema.safeParse(values);
+    if (!result.success) {
+      const fieldErrors: Record<string, string> = {};
+      result.error.issues.forEach((i) => {
+        fieldErrors[i.path[0] as string] = i.message;
+      });
+      setErrors(fieldErrors);
+      return;
+    }
+    setErrors({});
+    const message =
+      `Booking request from digitecme.com\n` +
+      `Name: ${result.data.name}\n` +
+      `Phone: ${result.data.phone}\n` +
+      `Brand: ${brandName}\n` +
+      `Issue: ${result.data.issue}`;
+    const url = `https://wa.me/97143402223?text=${encodeURIComponent(message)}`;
+    window.open(url, '_blank', 'noopener,noreferrer');
+  };
+
+  const input =
+    'w-full bg-black/60 border border-white/10 focus:border-burnt-orange/60 rounded-2xl px-4 py-3 text-off-white placeholder-gray-500 outline-none transition-colors';
+
+  return (
+    <form onSubmit={handleSubmit} className="space-y-4" noValidate>
+      <div className="grid sm:grid-cols-2 gap-4">
+        <div>
+          <label htmlFor="bf-name" className="block text-sm text-gray-300 mb-2">Full name</label>
+          <input
+            id="bf-name"
+            type="text"
+            value={values.name}
+            onChange={(e) => setValues((v) => ({ ...v, name: e.target.value }))}
+            className={input}
+            placeholder="e.g. Ahmed Al Mansouri"
+            maxLength={80}
+          />
+          {errors.name && <p className="text-burnt-orange text-xs mt-1">{errors.name}</p>}
+        </div>
+        <div>
+          <label htmlFor="bf-phone" className="block text-sm text-gray-300 mb-2">Phone</label>
+          <input
+            id="bf-phone"
+            type="tel"
+            value={values.phone}
+            onChange={(e) => setValues((v) => ({ ...v, phone: e.target.value }))}
+            className={input}
+            placeholder="+971 50 000 0000"
+            maxLength={20}
+          />
+          {errors.phone && <p className="text-burnt-orange text-xs mt-1">{errors.phone}</p>}
+        </div>
+      </div>
+      <div>
+        <label htmlFor="bf-brand" className="block text-sm text-gray-300 mb-2">Brand</label>
+        <input
+          id="bf-brand"
+          type="text"
+          value={brandName}
+          readOnly
+          className={`${input} opacity-80 cursor-not-allowed`}
+        />
+      </div>
+      <div>
+        <label htmlFor="bf-issue" className="block text-sm text-gray-300 mb-2">How can we help?</label>
+        <textarea
+          id="bf-issue"
+          rows={4}
+          value={values.issue}
+          onChange={(e) => setValues((v) => ({ ...v, issue: e.target.value }))}
+          className={`${input} resize-none`}
+          placeholder="Tell us about your car and what you need (service, repair, diagnostics, tuning, etc.)"
+          maxLength={600}
+        />
+        {errors.issue && <p className="text-burnt-orange text-xs mt-1">{errors.issue}</p>}
+      </div>
+      <button
+        type="submit"
+        className="inline-flex items-center justify-center gap-2 w-full sm:w-auto bg-burnt-orange hover:bg-burnt-orange/90 text-black font-bold px-8 py-4 rounded-2xl transition-all duration-300 hover:scale-[1.02] shadow-xl"
+      >
+        <MessageCircle className="w-5 h-5" />
+        Send via WhatsApp
+      </button>
+      <p className="text-xs text-gray-500">
+        Your details open a pre-filled WhatsApp chat with our service team. We respond within working hours, 8am to 6pm Sat to Thu.
+      </p>
+    </form>
+  );
+};
+
+export default BrandBookingForm;
