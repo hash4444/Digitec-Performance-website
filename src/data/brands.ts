@@ -201,7 +201,7 @@ export const brands: Brand[] = [
       { q: 'Can you measure F1 clutch wear?', a: 'Yes. We measure F1 clutch position via SD3 diagnostics and provide a clear remaining-life report on every visit.' },
     ],
     relatedServices: ['mechanical-repair-dubai', 'brake-repair-dubai', 'transmission-repair-dubai', 'paint-protection-dubai'],
-    testimonial: { name: 'Mohammed bin Rashid', vehicle: 'Ferrari 488 GTB', quote: 'Outstanding craftsmanship and attention to detail. The performance gains are incredible and the service is truly world-class. Highly recommended.' },
+    testimonial: { name: 'Mohammed Ottabi', vehicle: 'Ferrari 488 GTB', quote: 'Outstanding craftsmanship and attention to detail. The performance gains are incredible and the service is truly world-class. Highly recommended.' },
   },
   {
     name: 'Bugatti',

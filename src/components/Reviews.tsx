@@ -18,7 +18,7 @@ export const Reviews = () => {
       location: 'Downtown Dubai'
     },
     {
-      name: 'Mohammed bin Rashid',
+      name: 'Mohammed Ottabi',
       vehicle: 'Ferrari 488 GTB',
       rating: 5,
       text: 'Outstanding craftsmanship and attention to detail. The performance gains are incredible and the service is truly world-class. Highly recommended.',
