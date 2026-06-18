@@ -204,7 +204,9 @@ export const BrandsWeServe = () => {
                   return (
                     <Tooltip key={brand.name}>
                       <TooltipTrigger asChild>
-                        <div
+                        <Link
+                          to={`/brands/${getSlugForOrbitName(brand.name) ?? ''}`}
+                          aria-label={`${brand.name} service in Dubai`}
                           className="absolute w-16 lg:w-20 h-16 lg:h-20 flex items-center justify-center group cursor-pointer"
                           style={{
                             left: '50%',
@@ -215,7 +217,7 @@ export const BrandsWeServe = () => {
                           <div className="brand-logo w-full h-full p-2 bg-white/80 backdrop-blur-sm rounded-full shadow-lg border border-gray-100">
                             <BrandLogo name={brand.name} />
                           </div>
-                        </div>
+                        </Link>
                       </TooltipTrigger>
                       <TooltipContent side="top" className="bg-black/90 text-white border-burnt-orange/30 max-w-xs">
                         <div className="text-center p-2">
