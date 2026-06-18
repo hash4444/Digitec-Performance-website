@@ -4,6 +4,10 @@ export interface Brand {
   logo: string;
   intro: string;
   specialization: string;
+  whyChoose: { title: string; description: string }[];
+  faqs: { q: string; a: string }[];
+  relatedServices: string[];
+  testimonial?: { name: string; vehicle: string; quote: string };
 }
 
 export const brands: Brand[] = [
