@@ -89,9 +89,6 @@ export const ServiceGrid = () => {
 
                           <div className="flex-1 flex flex-col">
                             <div className="flex items-start gap-2 sm:gap-4 mb-2 sm:mb-4">
-                              <div className="hidden sm:flex w-12 h-12 rounded-2xl bg-gradient-to-br from-burnt-orange/20 to-burnt-orange/5 items-center justify-center text-burnt-orange group-hover:shadow-lg group-hover:shadow-burnt-orange/30 transition-all duration-300">
-                                {serviceIcons[service.title] || defaultIcon}
-                              </div>
                               <div className="flex-1">
                                 <h4 className="text-sm sm:text-xl lg:text-2xl font-bold mb-0 sm:mb-3 group-hover:text-burnt-orange transition-colors duration-300 leading-tight line-clamp-2">
                                   {service.title}
