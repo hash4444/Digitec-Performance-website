@@ -18,6 +18,20 @@ export const brands: Brand[] = [
     specialization: 'AMG Performance & Star Diagnostics',
     intro:
       "Digi-Tec Performance Centre has been the trusted choice for Mercedes-Benz owners across Dubai for over two decades. Our certified technicians use genuine parts and Star Diagnostics to keep every model, from C-Class to AMG GT, performing at factory standards and beyond.",
+    whyChoose: [
+      { title: 'Mercedes Star Diagnostics (XENTRY)', description: 'Dealer-level XENTRY and DAS diagnostics for accurate fault tracing across every Mercedes ECU, gateway, and control module.' },
+      { title: 'AIRMATIC & ABC Suspension Specialists', description: 'Full air strut, valve block, and compressor service for S-Class, GLE, and AMG models, including ride-height calibration.' },
+      { title: '9G-Tronic & MCT Transmission Service', description: 'Conductor plate replacement, ATF flushing, and adaptation reset for 7G, 9G-Tronic, and AMG SpeedShift MCT gearboxes.' },
+      { title: 'AMG 4MATIC+ & M177/M178 Tuning', description: 'Stage tuning, downpipes, intercoolers, and ECU calibration for biturbo V8 AMG GT, E63, G63, and C63 platforms.' },
+    ],
+    faqs: [
+      { q: 'How often should a Mercedes-Benz be serviced in Dubai?', a: 'Dubai heat shortens service intervals. We recommend a Service A every 10,000 km or 6 months, and a Service B every 20,000 km or 12 months, whichever comes first.' },
+      { q: 'Do you use genuine Mercedes-Benz parts?', a: 'Yes. We stock genuine MB and AMG OEM parts and approved fluids (MB 229.5, 236.15, etc.). Performance customers can choose approved equivalents on request.' },
+      { q: 'How long does a typical Mercedes service take?', a: 'A standard Service A is completed same day. Service B with brakes and full diagnostics is typically 1, 2 working days. Major AMG work is quoted individually.' },
+      { q: 'Do you handle AIRMATIC suspension faults?', a: 'Yes. AIRMATIC and ABC repair is one of our core specialisations, including struts, compressors, valve blocks, and ride-height sensor calibration.' },
+    ],
+    relatedServices: ['mercedes-repair-dubai', 'transmission-repair-dubai', 'suspension-repair-dubai', 'car-diagnostics-dubai'],
+    testimonial: { name: 'Ahmed Al-Mansouri', vehicle: 'Mercedes-AMG GT 63 S', quote: 'Exceptional service and incredible results. My AMG now produces 750hp and the transformation is remarkable. The team at Digi-Tec truly understands luxury performance.' },
   },
   {
     name: 'Maybach',
@@ -26,6 +40,19 @@ export const brands: Brand[] = [
     specialization: 'Ultra-Luxury Comfort & Precision Service',
     intro:
       "Maybach demands the highest standard of care, and Digi-Tec delivers exactly that. From chauffeur-driven sedans to private ownership, we provide white-glove maintenance, advanced diagnostics, and bespoke detailing tailored to the marque's ultra-luxury heritage.",
+    whyChoose: [
+      { title: 'E-ACTIVE Body Control Service', description: 'Specialist work on Maybach S-Class active suspension, including curve tilting calibration and road-scanning camera alignment.' },
+      { title: 'Rear-Cabin Electronics & MBUX', description: 'Full diagnostics for reclining executive seats, rear infotainment, fragrance system, and ambient lighting modules.' },
+      { title: 'V12 M279 Powertrain Specialists', description: 'Service expertise on the twin-turbo M279 V12 in Maybach S600 and S680, including ignition coil packs, plenum, and turbo work.' },
+      { title: 'Concierge Collection & Delivery', description: 'Discreet collection and return across Dubai with covered transport and detailed handover reporting for every visit.' },
+    ],
+    faqs: [
+      { q: 'How often should a Maybach be serviced in Dubai?', a: 'Every 10,000 km or 6 months for Service A. Chauffeur-driven cars covering high mileage benefit from quarterly inspections of brakes, fluids, and suspension.' },
+      { q: 'Do you use genuine Maybach parts?', a: 'Yes. All filters, fluids, brakes, and electronic modules are genuine Mercedes-Maybach OEM, sourced through approved channels.' },
+      { q: 'How long does a typical Maybach service take?', a: 'Standard service is completed within one working day. Complex V12 or E-ACTIVE work is quoted with a clear timeline before any work begins.' },
+      { q: 'Can you service the rear executive cabin and fragrance system?', a: 'Yes. We diagnose and repair the full rear-cabin suite including reclining seats, hot-stone massage, fragrance atomiser, and rear MBUX.' },
+    ],
+    relatedServices: ['mercedes-repair-dubai', 'suspension-repair-dubai', 'car-ac-repair-dubai', 'paint-protection-dubai'],
   },
   {
     name: 'Porsche',
@@ -34,6 +61,20 @@ export const brands: Brand[] = [
     specialization: 'GT3 & Turbo Powertrain Tuning',
     intro:
       "From 911 GT3 track cars to Cayenne daily drivers, Digi-Tec is Dubai's destination for Porsche service. Our specialists handle PDK transmissions, turbocharger systems, and chassis alignment with the precision Stuttgart engineering deserves.",
+    whyChoose: [
+      { title: 'PIWIS 3 Factory Diagnostics', description: 'Full PIWIS Tester 3 access for coding, software updates, and adaptation across every modern Porsche platform.' },
+      { title: 'PDK & Tiptronic Transmission Service', description: 'Mechatronic unit service, fluid flushing, and clutch-pack inspection for 7-speed PDK and 8-speed Tiptronic gearboxes.' },
+      { title: 'PCCB Carbon Ceramic Brake Specialists', description: 'Inspection, refurbishment, and replacement of Porsche Ceramic Composite Brakes on 911 Turbo S, GT3, and Cayenne Turbo GT.' },
+      { title: 'VTG Turbo & IPD Plenum Upgrades', description: 'Performance work on 991/992 Turbo S VTG turbochargers, IPD plenums, exhausts, and Stage tuning for measurable gains.' },
+    ],
+    faqs: [
+      { q: 'How often should a Porsche be serviced in Dubai?', a: 'Minor service every 15,000 km or 12 months and major service every 30,000 km. GT cars and track-driven 911s benefit from more frequent fluid changes.' },
+      { q: 'Do you use genuine Porsche parts?', a: 'Yes. Genuine Porsche Classic and Porsche Tequipment parts, plus approved aftermarket performance components when the customer requests them.' },
+      { q: 'How long does a typical Porsche service take?', a: 'Minor service is same day. Major service with brake fluid, spark plugs, and full diagnostics is 1, 2 working days.' },
+      { q: 'Can you service PDK transmissions?', a: 'Yes. PDK fluid and filter service, mechatronic diagnostics, and clutch-pack inspection are all done in-house with PIWIS.' },
+    ],
+    relatedServices: ['mechanical-repair-dubai', 'transmission-repair-dubai', 'brake-repair-dubai', 'car-diagnostics-dubai'],
+    testimonial: { name: 'Sarah Johnson', vehicle: 'Porsche 911 Turbo S', quote: 'Professional, knowledgeable, and delivered beyond expectations. The custom exhaust system sounds absolutely phenomenal. Worth every dirham.' },
   },
   {
     name: 'Audi',
@@ -42,6 +83,19 @@ export const brands: Brand[] = [
     specialization: 'Quattro Systems & RS Performance',
     intro:
       "Digi-Tec services the full Audi range, from A4 sedans to RS6 Avants and R8 supercars. Our team is equipped for Quattro drivetrain work, S Tronic gearbox service, and RS-grade performance upgrades using genuine VAG components.",
+    whyChoose: [
+      { title: 'ODIS Factory Coding & VCDS', description: 'Full ODIS and VCDS coverage for ECU updates, retrofits, and adaptation across every Audi platform from A1 to R8.' },
+      { title: 'Quattro & Sport Differential Service', description: 'Haldex pack service, centre diff work, and rear sport differential calibration for S, RS, and R8 models.' },
+      { title: 'S Tronic DCT Gearbox Specialists', description: 'DL501 / DQ500 mechatronic and clutch-pack service with correct G055529 fluid and basic settings reset.' },
+      { title: 'EA888 & 4.0 TFSI V8 Tuning', description: 'Stage 1 to Stage 3 tuning on RS3, RS4, RS6, and RS7 platforms including turbo, intake, and downpipe upgrades.' },
+    ],
+    faqs: [
+      { q: 'How often should an Audi be serviced in Dubai?', a: 'Audi recommends every 15,000 km or 12 months. RS models and tuned cars benefit from more frequent oil and DSG fluid changes due to Dubai temperatures.' },
+      { q: 'Do you use genuine Audi parts?', a: 'Yes. Genuine Audi OEM and VAG-approved parts for every service, with performance equivalents available on customer request.' },
+      { q: 'How long does a typical Audi service take?', a: 'Standard service is same day. Major service with DSG fluid and brakes is typically 1, 2 working days.' },
+      { q: 'Can you tune an RS3, RS6, or RS7?', a: 'Yes. We offer Stage 1, 2, and 3 tuning packages with full data logging, supported by hardware upgrades when the platform demands it.' },
+    ],
+    relatedServices: ['mechanical-repair-dubai', 'transmission-repair-dubai', 'car-diagnostics-dubai', 'brake-repair-dubai'],
   },
   {
     name: 'BMW',
@@ -50,6 +104,19 @@ export const brands: Brand[] = [
     specialization: 'M Series Optimization & iDrive Coding',
     intro:
       "BMW owners in Dubai trust Digi-Tec for everything from routine 5 Series maintenance to full M Series performance builds. Our workshop is equipped with the latest ISTA diagnostic tools, iDrive coding capability, and genuine BMW parts inventory.",
+    whyChoose: [
+      { title: 'ISTA+ & E-Sys Coding', description: 'Full ISTA+ diagnostics and E-Sys coding for retrofits, FA edits, and feature unlocks on F, G, and i-Series BMWs.' },
+      { title: 'S55, S58 & S63 Engine Specialists', description: 'Charge pipe upgrades, oil cooler service, VANOS solenoids, and full builds for M3, M4, M5, and X5M/X6M platforms.' },
+      { title: 'ZF 8HP Transmission Service', description: 'ZF 8HP fluid and filter service with correct Lifeguard 8, plus TCU tuning for crisper shifts and higher torque capacity.' },
+      { title: 'iDrive 7 / 8 Retrofits & CarPlay', description: 'Apple CarPlay full-screen unlock, BMW Live Cockpit retrofits, and DAB+ coding handled in-house.' },
+    ],
+    faqs: [
+      { q: 'How often should a BMW be serviced in Dubai?', a: 'Condition-Based Service typically calls for an oil service every 12,000, 15,000 km. We recommend halving that interval for M cars driven hard in summer.' },
+      { q: 'Do you use genuine BMW parts?', a: 'Yes. Genuine BMW and BMW M Performance parts, plus approved fluids (LL-04, LL-01 FE) and OE-supplier equivalents on request.' },
+      { q: 'How long does a typical BMW service take?', a: 'Oil service is same day. Full inspection with brake fluid and microfilters is 1 working day. M Series performance work is quoted individually.' },
+      { q: 'Can you code iDrive features and retrofits?', a: 'Yes. We code CarPlay full-screen, video-in-motion, sport displays, and most factory retrofits using E-Sys with valid FA backup.' },
+    ],
+    relatedServices: ['mechanical-repair-dubai', 'car-diagnostics-dubai', 'transmission-repair-dubai', 'brake-repair-dubai'],
   },
   {
     name: 'Lamborghini',
@@ -58,6 +125,19 @@ export const brands: Brand[] = [
     specialization: 'V10 & V12 Specialists',
     intro:
       "Whether it's a Huracán, Urus, or Aventador, Digi-Tec has the specialists, the lift capacity, and the patience to service Lamborghini's V10 and V12 platforms. We handle major services, carbon-ceramic brake work, and bespoke aesthetic enhancements.",
+    whyChoose: [
+      { title: 'Lamborghini LDAS Factory Diagnostics', description: 'Authorised-level diagnostics for Huracán, Urus, and Aventador with full ECU coverage and software update capability.' },
+      { title: 'CCB Carbon Ceramic Brake Service', description: 'Inspection, refurbishment, and replacement of Lamborghini CCB rotors and pads, with proper bedding-in protocol.' },
+      { title: 'LDF / ISR Gearbox Specialists', description: 'Lamborghini Doppia Frizione DCT service on Huracán and Urus, and Independent Shifting Rod (ISR) work on Aventador.' },
+      { title: 'ANIMA Drive Mode & Magneto-Rheological Dampers', description: 'Adaptive damper diagnostics and ANIMA selector calibration to keep Strada, Sport, and Corsa modes responding correctly.' },
+    ],
+    faqs: [
+      { q: 'How often should a Lamborghini be serviced in Dubai?', a: 'Annual service or every 10,000 km, whichever comes first. Track-driven cars benefit from more frequent brake fluid and gearbox oil changes.' },
+      { q: 'Do you use genuine Lamborghini parts?', a: 'Yes. Genuine Lamborghini OEM parts, filters, and fluids, sourced through approved supply chains.' },
+      { q: 'How long does a typical Lamborghini service take?', a: 'Annual service is typically 1, 2 working days. CCB brake or gearbox work is quoted individually with a clear timeline.' },
+      { q: 'Can you service carbon ceramic brakes?', a: 'Yes. CCB inspection, rotor measurement, pad replacement, and full system refurbishment are routine for our Lamborghini specialists.' },
+    ],
+    relatedServices: ['mechanical-repair-dubai', 'brake-repair-dubai', 'suspension-repair-dubai', 'paint-protection-dubai'],
   },
   {
     name: 'Bentley',
@@ -66,6 +146,19 @@ export const brands: Brand[] = [
     specialization: 'Continental & Flying Spur Excellence',
     intro:
       "Bentley craftsmanship deserves equally meticulous service. Digi-Tec supports the entire Bentley range, including Continental GT, Flying Spur, and Bentayga, with W12 powertrain expertise, air suspension service, and interior preservation work.",
+    whyChoose: [
+      { title: 'W12 TSI Twin-Turbo Specialists', description: 'Coil pack, coolant transfer pipe, and timing chain service on the 6.0 W12 fitted to Continental, Flying Spur, and Bentayga.' },
+      { title: 'Continuous Damping Control & Air Suspension', description: 'Full 48V active anti-roll and air strut service with correct ride-height calibration via ODIS.' },
+      { title: 'ZF 8HP Gearbox Service', description: 'Bentley-spec ZF 8HP fluid and filter service with proper temperature-based fill procedure and adaptation reset.' },
+      { title: 'Hand-Stitched Interior Preservation', description: 'Specialist leather, veneer, and headlining care to protect the interior craftsmanship that defines every Bentley.' },
+    ],
+    faqs: [
+      { q: 'How often should a Bentley be serviced in Dubai?', a: 'Bentley recommends annual service or every 16,000 km. Continental GT and Bentayga driven daily benefit from interim oil checks every 6 months.' },
+      { q: 'Do you use genuine Bentley parts?', a: 'Yes. Genuine Bentley OEM parts and approved fluids for every service, with documentation for full service history.' },
+      { q: 'How long does a typical Bentley service take?', a: 'Standard annual service is 1 working day. W12 timing or air suspension work is quoted with a clear timeline.' },
+      { q: 'Do you service the W12 coolant transfer pipe?', a: 'Yes. This is a known W12 wear item and we replace it with the updated genuine Bentley part, including full coolant system flush.' },
+    ],
+    relatedServices: ['mechanical-repair-dubai', 'suspension-repair-dubai', 'transmission-repair-dubai', 'paint-protection-dubai'],
   },
   {
     name: 'McLaren',
@@ -74,6 +167,19 @@ export const brands: Brand[] = [
     specialization: 'Carbon Fiber & Turbo V8 Mastery',
     intro:
       "Digi-Tec is one of the few Dubai workshops equipped to service McLaren's MonoCell carbon chassis and twin-turbo V8 platform. From 570S to 720S to Artura, we handle scheduled service, fluid changes, and performance recalibration in a controlled environment.",
+    whyChoose: [
+      { title: 'MonoCell II / II-T Carbon Tub Handling', description: 'Trained handling of the McLaren carbon monocoque with appropriate lift points and torque procedures on every visit.' },
+      { title: 'M838T & M840T Twin-Turbo V8 Service', description: 'Specialist work on 3.8 and 4.0 twin-turbo V8s, including coil packs, dry-sump oil service, and turbo inspection.' },
+      { title: 'Proactive Chassis Control & Active Aero', description: 'Hydraulic suspension service, accumulator replacement, and active rear wing calibration on Super Series and Ultimate cars.' },
+      { title: 'SSG 7-Speed DCT Gearbox', description: 'Graziano SSG seamless shift gearbox fluid service and clutch-pack inspection with McLaren factory tooling.' },
+    ],
+    faqs: [
+      { q: 'How often should a McLaren be serviced in Dubai?', a: 'Annual service or every 10,000 km. Cars used on track benefit from more frequent oil, brake fluid, and accumulator inspection.' },
+      { q: 'Do you use genuine McLaren parts?', a: 'Yes. Genuine McLaren OEM parts and approved fluids, with full documentation for service history continuity.' },
+      { q: 'How long does a typical McLaren service take?', a: 'Annual service is typically 1, 2 working days. Active hydraulic suspension or gearbox work is quoted individually.' },
+      { q: 'Can you service the hydraulic suspension accumulators?', a: 'Yes. Accumulator replacement on 12C, 650S, 720S, and 765LT is part of our routine McLaren service offering.' },
+    ],
+    relatedServices: ['mechanical-repair-dubai', 'brake-repair-dubai', 'suspension-repair-dubai', 'paint-protection-dubai'],
   },
   {
     name: 'Ferrari',
@@ -82,6 +188,20 @@ export const brands: Brand[] = [
     specialization: 'F1 ECU Tuning & Performance Calibration',
     intro:
       "Ferrari ownership is a relationship, and Digi-Tec treats every Prancing Horse with the reverence it deserves. We service the full range, including 488, F8, SF90, and Roma, with factory-grade diagnostics, F1 transmission expertise, and genuine OEM parts.",
+    whyChoose: [
+      { title: 'Ferrari SD3 / DEIS Diagnostics', description: 'Factory-level diagnostics for every modern Ferrari including 488, F8, SF90, Roma, and 812 platforms.' },
+      { title: 'F1 DCT 7-Speed Gearbox Service', description: 'Getrag F1 DCT clutch wear measurement, fluid service, and adaptation, plus full TCU programming.' },
+      { title: 'CCM Carbon Ceramic Brake Specialists', description: 'CCM3 and CCM-R rotor inspection, pad replacement, and bedding-in to keep stopping performance at factory spec.' },
+      { title: 'Magnetorheological SCM Damper Service', description: 'Diagnosis and replacement of Ferrari SCM dampers with proper calibration through SD3.' },
+    ],
+    faqs: [
+      { q: 'How often should a Ferrari be serviced in Dubai?', a: 'Annual service or every 12,500 km. Cars used hard or on track benefit from more frequent oil and brake fluid changes.' },
+      { q: 'Do you use genuine Ferrari parts?', a: 'Yes. Genuine Ferrari OEM parts and approved fluids, fully documented to protect service history and resale value.' },
+      { q: 'How long does a typical Ferrari service take?', a: 'Annual service is typically 1, 2 working days. F1 clutch replacement or CCM brake work is quoted individually.' },
+      { q: 'Can you measure F1 clutch wear?', a: 'Yes. We measure F1 clutch position via SD3 diagnostics and provide a clear remaining-life report on every visit.' },
+    ],
+    relatedServices: ['mechanical-repair-dubai', 'brake-repair-dubai', 'transmission-repair-dubai', 'paint-protection-dubai'],
+    testimonial: { name: 'Mohammed bin Rashid', vehicle: 'Ferrari 488 GTB', quote: 'Outstanding craftsmanship and attention to detail. The performance gains are incredible and the service is truly world-class. Highly recommended.' },
   },
   {
     name: 'Bugatti',
@@ -90,6 +210,19 @@ export const brands: Brand[] = [
     specialization: 'Quad Turbo Optimization & Luxury Diagnostics',
     intro:
       "Servicing a Bugatti requires a level of precision few workshops can match. Digi-Tec works on Veyron and Chiron platforms with appropriate tooling, climate-controlled bays, and complete confidentiality for every owner.",
+    whyChoose: [
+      { title: 'W16 Quad-Turbo Powertrain Handling', description: 'Carefully procedural service of the 8.0 W16 in Veyron and Chiron, including coolant, oil, and ignition system work.' },
+      { title: 'DSG 7-Speed DCT Gearbox', description: 'Ricardo-built DCT fluid and clutch-pack inspection with factory-recommended fluid only.' },
+      { title: 'Carbon Ceramic Brake System', description: 'Eight-piston front, six-piston rear CCB inspection, rotor measurement, and pad replacement to Bugatti spec.' },
+      { title: 'Confidential Climate-Controlled Bay', description: 'Dedicated, screened bay with NDA-backed handling and discreet collection and delivery across the UAE.' },
+    ],
+    faqs: [
+      { q: 'How often should a Bugatti be serviced in Dubai?', a: 'Annual service is standard. Mileage-based intervals are agreed individually with the owner based on use pattern.' },
+      { q: 'Do you use genuine Bugatti parts?', a: 'Yes. Only genuine Bugatti OEM parts and approved fluids, sourced through authorised supply.' },
+      { q: 'How long does a typical Bugatti service take?', a: 'A full annual service is typically 2, 4 working days depending on scope, documented end to end.' },
+      { q: 'Is handling confidential?', a: 'Yes. Bugatti owners receive a dedicated screened bay, NDA-backed handling, and discreet collection and return.' },
+    ],
+    relatedServices: ['mechanical-repair-dubai', 'brake-repair-dubai', 'paint-protection-dubai', 'car-diagnostics-dubai'],
   },
   {
     name: 'Land Rover',
@@ -98,6 +231,19 @@ export const brands: Brand[] = [
     specialization: 'Terrain Response & Luxury SUV Systems',
     intro:
       "From Range Rover Autobiography to Defender and Discovery, Digi-Tec services the full Land Rover lineup. Our specialists handle air suspension, Terrain Response systems, and the supercharged V8 powertrains that define the marque.",
+    whyChoose: [
+      { title: 'EAS Air Suspension Specialists', description: 'Air strut, compressor, valve block, and ride-height sensor service for Range Rover, Sport, and Discovery platforms.' },
+      { title: 'Terrain Response 2 Calibration', description: 'Diagnostics and recalibration of TR2 modes, active locking diff, and Wade Sensing via SDD / Pathfinder.' },
+      { title: 'Supercharged 5.0 V8 & Ingenium Service', description: 'Supercharger snout service, intercooler work, and full Ingenium I4/I6 timing chain and oil service.' },
+      { title: 'ZF 8HP & Active Driveline Service', description: 'ZF 8HP fluid service plus active rear locking differential fluid and PTU oil replacement on Sport and SVR models.' },
+    ],
+    faqs: [
+      { q: 'How often should a Range Rover be serviced in Dubai?', a: 'Every 16,000 km or 12 months. Air suspension compressors and supercharger fluid benefit from inspection at 50,000 km.' },
+      { q: 'Do you use genuine Land Rover parts?', a: 'Yes. Genuine Land Rover and Range Rover OEM parts, plus approved fluids for every service.' },
+      { q: 'How long does a typical Range Rover service take?', a: 'Standard service is same day. Air suspension repair is typically 1 working day.' },
+      { q: 'Can you repair Range Rover air suspension?', a: 'Yes. Air strut replacement, compressor service, and valve block work are routine, with ride-height calibration on completion.' },
+    ],
+    relatedServices: ['suspension-repair-dubai', 'mechanical-repair-dubai', 'car-diagnostics-dubai', 'transmission-repair-dubai'],
   },
   {
     name: 'Rolls-Royce',
@@ -106,6 +252,19 @@ export const brands: Brand[] = [
     specialization: 'Quiet, Precise, Luxurious: Inside and Out',
     intro:
       "Rolls-Royce service at Digi-Tec is delivered with the discretion and precision the marque demands. We support Phantom, Ghost, Wraith, and Cullinan with V12 expertise, air suspension service, and meticulous interior preservation.",
+    whyChoose: [
+      { title: 'N74 V12 Twin-Turbo Specialists', description: 'Service for the 6.6 and 6.75 N74 V12, including coil packs, VVT, and turbo inspection across Ghost, Wraith, and Cullinan.' },
+      { title: 'Self-Levelling Air Suspension', description: 'Air strut, compressor, and Magic Carpet Ride camera calibration to keep the ride signature exactly as Goodwood intended.' },
+      { title: 'Planar Suspension & Flagbearer Camera', description: 'Calibration of the road-scanning camera and Planar suspension system used on current Ghost and Spectre.' },
+      { title: 'Bespoke Interior Preservation', description: 'Specialist care for hand-stitched leather, Canadel veneer, and starlight headliners, with NDA-backed handling.' },
+    ],
+    faqs: [
+      { q: 'How often should a Rolls-Royce be serviced in Dubai?', a: 'Annual service or every 16,000 km. Cars stored or used seasonally benefit from a preservation check every 6 months.' },
+      { q: 'Do you use genuine Rolls-Royce parts?', a: 'Yes. Only genuine Rolls-Royce OEM parts and approved fluids, sourced through authorised supply.' },
+      { q: 'How long does a typical Rolls-Royce service take?', a: 'Standard annual service is 1, 2 working days. Air suspension or V12 work is quoted with a clear timeline.' },
+      { q: 'Is the visit discreet?', a: 'Yes. Owners receive a dedicated bay, NDA-backed handling, and concierge collection and delivery across the UAE.' },
+    ],
+    relatedServices: ['mechanical-repair-dubai', 'suspension-repair-dubai', 'paint-protection-dubai', 'car-ac-repair-dubai'],
   },
   {
     name: 'Aston Martin',
@@ -114,6 +273,19 @@ export const brands: Brand[] = [
     specialization: 'British Elegance & V12 Precision',
     intro:
       "Digi-Tec services the full Aston Martin range, from DB11 grand tourers to Vantage performance cars and DBX SUVs. Our workshop is equipped for V8 and V12 powertrain work, ZF transmission service, and genuine parts replacement.",
+    whyChoose: [
+      { title: 'AMG M177 V8 & AM V12 Specialists', description: 'Service for the AMG-sourced 4.0 V8 in Vantage, DB11, and DBX, and the 5.2 twin-turbo V12 in DB11 AMR and DBS.' },
+      { title: 'ZF 8HP Transaxle Service', description: 'Transaxle gearbox fluid and filter service, plus mounting and torque-tube inspection on DB11, Vantage, and DBS.' },
+      { title: 'Adaptive Damping & Carbon Ceramic Brakes', description: 'Adaptive damper diagnostics and CCM brake inspection / replacement on DBS and Vantage F1 Edition.' },
+      { title: 'Hand-Crafted Interior Preservation', description: 'Specialist care for Bridge of Weir leather and hand-stitched trim to protect the Aston Martin interior signature.' },
+    ],
+    faqs: [
+      { q: 'How often should an Aston Martin be serviced in Dubai?', a: 'Annual service or every 16,000 km. Track-driven Vantages benefit from more frequent oil, brake fluid, and gearbox fluid changes.' },
+      { q: 'Do you use genuine Aston Martin parts?', a: 'Yes. Genuine Aston Martin OEM parts and approved fluids for every service, fully documented.' },
+      { q: 'How long does a typical Aston Martin service take?', a: 'Standard service is 1 working day. V12 timing or transaxle work is quoted with a clear timeline.' },
+      { q: 'Can you service the V12 in DB11 AMR and DBS?', a: 'Yes. Full coil-on-plug, plug, and coolant service for the 5.2 twin-turbo V12, plus turbo and timing inspection as required.' },
+    ],
+    relatedServices: ['mechanical-repair-dubai', 'transmission-repair-dubai', 'brake-repair-dubai', 'paint-protection-dubai'],
   },
 ];
 
