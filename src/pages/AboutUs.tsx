@@ -63,10 +63,13 @@ const AboutUs = () => {
                 About <span className="text-burnt-orange">D</span>igitec Performance Center
               </h2>
               <p className="text-white/60 text-sm sm:text-base leading-relaxed mb-4">
-                Digitec Performance Center is a leading car workshop in Dubai, specialising in German, luxury, performance, and advanced electric vehicles. Based in the heart of Dubai, we provide expert diagnostics, repair, maintenance, and performance upgrades using dealer-level technology and OEM-grade parts.
+                Digi-Tec Performance Centre is a premier automotive service and maintenance company based in Dubai, dedicated to comprehensive vehicle care. We specialise in vehicle diagnostics, mechanical repairs, preventive maintenance, auto body repair and painting, detailing, and performance enhancement.
+              </p>
+              <p className="text-white/60 text-sm sm:text-base leading-relaxed mb-4">
+                Backed by a team of highly qualified technicians and state-of-the-art equipment, we deliver reliable, efficient, and cost-effective automotive solutions built to the highest industry standards. Our commitment to quality workmanship, innovation, safety, and customer satisfaction has made us a trusted name in the UAE automotive sector.
               </p>
               <p className="text-white/60 text-sm sm:text-base leading-relaxed">
-                Our workshop is trusted by owners of Mercedes-Benz, BMW, Audi, Porsche, Lamborghini, Ferrari, McLaren, Bentley, Rolls-Royce, Range Rover, and Land Rover, delivering precision service that meets and exceeds manufacturer standards.
+                Whether you're an individual vehicle owner or managing a corporate fleet, our focus is the same: exceptional service and long-term value, ensuring every vehicle that leaves our workshop operates safely, efficiently, and at peak performance.
               </p>
             </motion.div>
             <motion.div
