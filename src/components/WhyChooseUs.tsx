@@ -8,12 +8,12 @@ export const WhyChooseUs = () => {
       description: 'Proven track record in luxury automotive performance'
     },
     {
-      number: '30,000+',
+      number: '50,000+',
       title: 'Cars Served',
       description: 'Successfully enhanced performance for discerning clients'
     },
     {
-      number: '3,000+',
+      number: '8,000+',
       title: 'Satisfied Clients',
       description: 'Unwavering commitment to exceeding expectations'
     },
@@ -59,7 +59,7 @@ export const WhyChooseUs = () => {
             State-of-the-Art Facility in the Heart of <span className="text-burnt-orange">D</span>ubai
           </h3>
           <p className="text-sm sm:text-xl text-gray-300 mb-4 sm:mb-8 max-w-4xl mx-auto px-2 sm:px-4 leading-snug sm:leading-relaxed">
-            Our 10,000 sq ft facility features the latest diagnostic equipment, precision tools, 
+            Our 40,000 sq ft facility features the latest diagnostic equipment, precision tools, 
             and climate-controlled environments to ensure your luxury vehicle receives the care it deserves.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-2.5 sm:gap-6 lg:gap-8 text-sm">

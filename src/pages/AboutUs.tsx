@@ -77,9 +77,9 @@ const AboutUs = () => {
             >
               {[
                 { value: '40+', label: 'Years of Expertise' },
-                { value: '30,000+', label: 'Cars Served' },
-                { value: '3,000+', label: 'Happy Clients' },
-                { value: '10,000', label: 'Sq Ft Facility' },
+                { value: '50,000+', label: 'Cars Served' },
+                { value: '8,000+', label: 'Happy Clients' },
+                { value: '40,000', label: 'Sq Ft Facility' },
               ].map((stat) => (
                 <div key={stat.label} className="bg-white/[0.03] border border-white/[0.06] rounded-2xl p-5 text-center">
                   <div className="text-2xl sm:text-3xl font-black text-burnt-orange mb-1">{stat.value}</div>
