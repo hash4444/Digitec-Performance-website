@@ -13,6 +13,7 @@ import AboutUs from "./pages/AboutUs";
 import FAQPage from "./pages/FAQPage";
 import Blog from "./pages/Blog";
 import BlogPost from "./pages/BlogPost";
+import BrandPage from "./pages/BrandPage";
 import NotFound from "./pages/NotFound";
 import LegacyRedirectHandler from "./components/LegacyRedirectHandler";
 
@@ -47,6 +48,7 @@ const App = () => (
           <Route path="/faq" element={<FAQPage />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:slug" element={<BlogPost />} />
+          <Route path="/brands/:slug" element={<BrandPage />} />
           <Route path="/about-us" element={<Navigate to="/about" replace />} />
           <Route path="/about-us-demo" element={<Navigate to="/about" replace />} />
           <Route path="/who-we-are" element={<Navigate to="/about" replace />} />
