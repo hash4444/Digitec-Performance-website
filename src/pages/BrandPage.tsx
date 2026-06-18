@@ -47,15 +47,19 @@ const BrandPage = () => {
   const { slug } = useParams<{ slug: string }>();
   const brand = slug ? getBrandBySlug(slug) : undefined;
 
+  useSeo({
+    title: brand
+      ? `${brand.name} Service & Repair in Dubai | Digi-Tec Performance Centre`
+      : 'Brand Service in Dubai | Digi-Tec Performance Centre',
+    description: brand
+      ? `Expert ${brand.name} maintenance, diagnostics, and performance tuning in Dubai. Certified technicians, genuine parts, and state-of-the-art equipment at Digi-Tec Performance Centre.`
+      : 'Expert luxury car maintenance, diagnostics, and performance tuning in Dubai at Digi-Tec Performance Centre.',
+    canonical: brand ? `https://digitecme.com/brands/${brand.slug}` : 'https://digitecme.com/',
+  });
+
   if (!brand) {
     return <Navigate to="/" replace />;
   }
-
-  useSeo({
-    title: `${brand.name} Service & Repair in Dubai | Digi-Tec Performance Centre`,
-    description: `Expert ${brand.name} maintenance, diagnostics, and performance tuning in Dubai. Certified technicians, genuine parts, and state-of-the-art equipment at Digi-Tec Performance Centre.`,
-    canonical: `https://digitecme.com/brands/${brand.slug}`,
-  });
 
   const whatsappHref = `https://wa.me/97143402223?text=${encodeURIComponent(
     `Hi, I'd like to enquire about ${brand.name} service at Digi-Tec Performance Centre.`,
