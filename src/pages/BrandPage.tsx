@@ -104,7 +104,7 @@ const BrandPage = () => {
       <section className="relative bg-black overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-burnt-orange/10 via-transparent to-transparent" />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 py-10 sm:py-20 lg:py-24 relative z-10">
-          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+          <div className="max-w-4xl mx-auto">
             <div>
               <div className="flex items-center gap-4 mb-5 sm:mb-6">
                 <div className="w-16 h-16 sm:w-20 sm:h-20 p-2 bg-white/90 rounded-full shadow-xl flex items-center justify-center">
@@ -137,16 +137,6 @@ const BrandPage = () => {
                   <Phone className="w-5 h-5" />
                   Call +971 4 340 2223
                 </a>
-              </div>
-            </div>
-            <div className="relative">
-              <div className="overflow-hidden rounded-3xl shadow-2xl border border-white/10">
-                <img
-                  src="/lovable-uploads/aeca6cb5-7000-451e-aaf7-d5171200659f.png"
-                  alt={`${brand.name} workshop at Digi-Tec Performance Centre Dubai`}
-                  className="w-full h-64 sm:h-80 lg:h-[28rem] object-cover"
-                  loading="lazy"
-                />
               </div>
             </div>
           </div>
