@@ -1,7 +1,9 @@
 
 import React, { useEffect, useRef, useState } from 'react';
+import { Link } from 'react-router-dom';
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
 import { useIsMobile } from '@/hooks/use-mobile';
+import { getSlugForOrbitName } from '@/data/brands';
 
 const brands = [
   { name: 'Mercedes-Benz', specialization: 'AMG Performance & Star Diagnostics' },
@@ -44,12 +46,17 @@ const BrandLogo = ({ name }: { name: string }) => {
 const MobileGrid = () => (
   <div className="grid grid-cols-4 gap-3 px-2">
     {brands.map((brand) => (
-      <div key={brand.name} className="flex flex-col items-center gap-1.5">
-        <div className="w-16 h-16 p-1.5 bg-white/80 backdrop-blur-sm rounded-full shadow-lg border border-gray-100 flex items-center justify-center">
+      <Link
+        key={brand.name}
+        to={`/brands/${getSlugForOrbitName(brand.name) ?? ''}`}
+        className="flex flex-col items-center gap-1.5 group"
+        aria-label={`${brand.name} service in Dubai`}
+      >
+        <div className="w-16 h-16 p-1.5 bg-white/80 backdrop-blur-sm rounded-full shadow-lg border border-gray-100 flex items-center justify-center group-hover:scale-110 transition-transform">
           <BrandLogo name={brand.name} />
         </div>
-        <span className="text-[11px] text-gray-600 text-center leading-tight font-medium">{brand.name}</span>
-      </div>
+        <span className="text-[11px] text-gray-600 group-hover:text-burnt-orange text-center leading-tight font-medium">{brand.name}</span>
+      </Link>
     ))}
   </div>
 );
