@@ -1,59 +1,42 @@
+## Audit Findings (Quick)
 
+- **Per-route titles/meta**: ✅ Every route already sets unique title + description via `useSeo` hook (client-side mutation of `document.head`). Includes Index, Services, ServicePage, BrandPage, AboutUs, FAQ, Blog, BlogPost, Tuning, VRX, NotFound.
+- **Sitemap**: ✅ Exists at `public/sitemap.xml` but is a static, hand-edited file and **missing all 13 `/brands/*` URLs**.
+- **⚠️ Pre-rendered content / SSR**: This is a pure client-side React SPA (Vite + BrowserRouter). The static `index.html` shipped to every URL contains only the homepage's `<title>` and `<meta description>` — `useSeo` rewrites them after JS hydrates. Googlebot executes JS and will see the per-route tags, but non-JS social/preview crawlers (LinkedIn, Slack, Facebook, X, WhatsApp link previews) only see the static head. **No SSR / prerender is in place**. Adding true SSR or build-time prerendering would require either migrating to Next.js / a vite-prerender plugin / Cloudflare Worker prerender — out of scope for one feature request. **Flagging this explicitly per your ask.**
 
-## SEO-Friendly Service URL Migration
+## Plan
 
-Rename every service URL to a slug derived from its H1 (lowercase, hyphenated, stop words removed, primary keyword + `dubai`). All current URLs keep working via single-step permanent redirects, so existing Google rankings, backlinks, and the redirects you already added are preserved.
+### 1. SEO infrastructure
+- Add **all 13 brand URLs** (`/brands/[brand]-service-dubai`) to `public/sitemap.xml` with `lastmod=2026-06-18`, weekly changefreq, priority 0.8.
+- Leave existing per-route `useSeo` system as-is (it already covers titles + descriptions + canonicals per page). Tighten the BrandPage SEO to also emit a `LocalBusiness` + `FAQPage` JSON-LD per brand (uses the new FAQ content from §3 below).
+- Do **not** introduce `react-helmet-async` — the existing `useSeo` hook does the same job and avoids a redundant rewrite.
 
-### New slug map (old → new)
+### 2. Brand data: extend `src/data/brands.ts`
+Add new optional fields per brand so the BrandPage is data-driven (no per-brand JSX):
+- `whyChoose: { title: string; description: string }[]` — 4 brand-specific technical bullets naming real systems/components (e.g. Mercedes → AIRMATIC, 9G-Tronic, Star Diagnostics, AMG 4MATIC+; Ferrari → F1-DCT, carbon-ceramic CCM brakes, magnetorheological dampers; McLaren → MonoCell II carbon tub, Proactive Chassis Control, active aero; Range Rover → air suspension, Terrain Response 2; Lamborghini → CCB brakes, LDF gearbox, ANIMA modes; etc.).
+- `faqs: { q: string; a: string }[]` — 4 brand-specific Q&As ("How often should a [Brand] be serviced in Dubai?", "Do you use genuine [Brand] parts?", "How long does a typical [Brand] service take?", "Do you handle [brand-specific system, e.g. AIRMATIC / CCM brakes / iDrive coding]?").
+- `relatedServices: string[]` — array of existing service slugs from `src/data/services.ts` relevant to that brand (e.g. Mercedes → `mercedes-repair-dubai`, `transmission-repair-dubai`, `car-diagnostics-dubai`, `car-ac-repair-dubai`; Ferrari → `mechanical-repair-dubai`, `brake-repair-dubai`, `suspension-repair-dubai`, `paint-protection-dubai`; etc.). All slugs validated against existing `services` array.
+- `testimonial?: { name: string; vehicle: string; quote: string }` — optional brand-specific review. Where we don't have one, the page falls back to a generic trust block (ratings + stats: 50,000+ cars served, 8,000+ satisfied customers, 40,000 sq ft facility) — consistent with site stats.
 
-| Old slug | New slug (H1-derived) |
-|---|---|
-| `mercedes-repair` | `mercedes-repair-dubai` |
-| `mechanical-repair` | `mechanical-repair-dubai` |
-| `transmission-services` | `transmission-repair-dubai` |
-| `suspension-repair` | `suspension-repair-dubai` |
-| `steering-repair` | `steering-repair-dubai` |
-| `brake-system-repairs` | `brake-repair-dubai` |
-| `routine-maintenance` | `car-service-dubai` |
-| `oil-change-service` | `oil-change-dubai` |
-| `tire-repair` | `tire-repair-dubai` |
-| `battery-changes` | `battery-replacement-dubai` |
-| `exhaust-repair` | `exhaust-repair-dubai` |
-| `car-programming-diagnostic` | `car-diagnostics-dubai` |
-| `electrical-system-repairs` | `auto-electrical-repair-dubai` |
-| `fuel-system-repair` | `fuel-system-repair-dubai` |
-| `ac-repair-maintenance` | `car-ac-repair-dubai` |
-| `car-body-repair` | `car-body-repair-dubai` |
-| `car-paint-protection` | `paint-protection-dubai` |
+### 3. BrandPage new sections (in this order, between existing "Why Choose" and "Other Brands")
+1. **Why [Brand] Owners Choose Digi-Tec** — replaces the current generic `WHY_CHOOSE` array. Renders `brand.whyChoose` as a 2-col grid of cards with `CheckCircle2` icons and brand-specific technical copy.
+2. **Brand-relevant testimonial / trust block** — if `brand.testimonial` exists, single quote card with name + vehicle. Otherwise a trust strip with stars, "4.9/5", and the three stats.
+3. **FAQ** — Radix `Accordion` (already in project at `src/components/ui/accordion.tsx`) rendering `brand.faqs`. Also emitted as `FAQPage` JSON-LD via `useSeo`.
+4. **Booking form CTA** — new section with a simple form: Name, Phone, Brand (pre-filled + locked to `brand.name`), Issue (textarea). Validated client-side with **zod** (already in deps via shadcn `form`). On submit, opens WhatsApp with a pre-filled message containing the form data (`https://wa.me/97143402223?text=...`) — no backend write needed, consistent with the site's existing WhatsApp-CTA pattern. Existing Call / WhatsApp buttons stay above the form.
+5. **Related Services** — horizontal row of 3-4 cards linking to `/services/[slug]` for each slug in `brand.relatedServices`. Each card pulls `title` + `description` + `image` from `services.ts` so copy stays in one place.
 
-### How SEO is preserved (the important part)
+### 4. Design consistency
+- All new sections use the existing tokens: `bg-black`, `bg-charcoal`, `text-burnt-orange` (#F04E14), `rounded-2xl` / `rounded-3xl`, `font-black` headings, white-bg CTAs keep black text. No new colors, no new fonts.
+- No hyphens/em-dashes in copy (commas/colons per project rule).
+- Mobile-first; existing sticky mobile WhatsApp/Call buttons preserved.
 
-Lovable hosts an SPA, so true server-side `301` headers aren't issued — but Google treats consistent client-side `Navigate replace` redirects + a single canonical as equivalent for ranking transfer, which is exactly what your site already does for `mercedes-body-repair-dubai`, `mercedes-brake-repair-dubai`, etc. We extend that same pattern:
+### Files touched
+```text
+public/sitemap.xml                  (add 13 brand URLs)
+src/data/brands.ts                  (add whyChoose, faqs, relatedServices, testimonial per brand)
+src/pages/BrandPage.tsx             (new FAQ, why-brand, testimonial, booking form, related services sections + FAQ JSON-LD)
+src/components/BrandBookingForm.tsx (new — zod-validated form, posts to WhatsApp)
+```
 
-1. **Change `slug` in `src/data/services.ts`** to the new value for each service. The page becomes the new URL and is the only canonical.
-2. **Build a single `OLD_TO_NEW_SLUG` map in `src/pages/ServicePage.tsx`** containing every previous slug pointing directly to its new slug. The existing `SLUG_REDIRECTS` and `-dubai` suffix logic merge into this one map so there are zero redirect chains (old → new in one hop, never old → intermediate → new).
-3. **Canonical + JSON-LD `url`** automatically use the new slug (already derived from `service.slug`). Meta title, description, schema, and content stay untouched.
-4. **Internal links** in `Services.tsx`, `ServicePage.tsx` (related services), `ServiceGrid.tsx`, and any other reference are already generated from `service.slug`, so they update automatically.
-5. **`public/sitemap.xml`** rewritten to list only the 17 new URLs with today's `lastmod`. Old URLs removed so Google stops indexing them and follows the redirect to the new ones.
-6. **No `noindex` added.** All new pages stay fully indexable. Old slugs render the redirect immediately (no flash of content), so Google sees a clean redirect signal.
-7. **`App.tsx` redirect** for `mercedes-body-repair-dubai` updated to point straight to `/services/car-body-repair-dubai` (one hop, not two).
-
-### Files changed
-
-- `src/data/services.ts` — update 17 `slug` values only.
-- `src/pages/ServicePage.tsx` — replace the redirect logic with one consolidated `OLD_TO_NEW_SLUG` map covering all 17 previous slugs plus the existing legacy entries (`mercedes-brake-repair-dubai`, `mercedes-transmission-repair-dubai`, `mercedes-ac-repair-dubai`, `mercedes-suspension-repair-dubai`, `engine-diagnostics-dubai`, `mercedes-oil-change-dubai`, `performance-tuning-dubai`). Drop the generic `-dubai` strip since new slugs themselves end in `-dubai`.
-- `src/App.tsx` — update the `mercedes-body-repair-dubai` Navigate target to the new slug.
-- `public/sitemap.xml` — replace the 17 service URLs with the new ones, refresh `lastmod` to 2026-04-21.
-
-### Validation after implementation
-
-- Visit each old URL (e.g. `/services/oil-change-service`) → should land on `/services/oil-change-dubai` with the correct page rendered.
-- Visit each new URL directly → renders, canonical points to itself, no console errors, no 404.
-- Confirm `/services` index, homepage `ServiceGrid`, and related-services links on `ServicePage` all use the new slugs.
-- Confirm sitemap.xml contains only new slugs.
-- No redirect chains: old slug → new slug in exactly one `Navigate replace`.
-
-### Note on your concern about existing old URLs already redirecting
-
-Your current `SLUG_REDIRECTS` (e.g. `mercedes-brake-repair-dubai → /services/brake-system-repairs`) would become a **chain** if we just renamed slugs (old Google URL → old slug → new slug = two hops, bad for SEO). The plan avoids this by **rewriting every entry in that map to point directly at the new slug**, so every legacy URL — whether from Google's index, backlinks, or your prior redirect map — resolves in a single hop to the final new URL. Ranking signals consolidate cleanly on the new canonical.
-
+### Out of scope (flagged above)
+- True SSR / build-time prerendering for non-JS social crawlers — needs a separate decision (migrate to Next.js, add `vite-plugin-prerender`, or a Cloudflare Worker). Happy to do this next if you want — recommend the `vite-plugin-prerender` route since it keeps the current stack.
