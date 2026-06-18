@@ -365,9 +365,6 @@ const BrandPage = () => {
           </div>
         </section>
       )}
-          </div>
-        </div>
-      </section>
 
       {/* Other Brands */}
       <section className="py-12 sm:py-20 bg-black border-t border-white/5">
