@@ -64,9 +64,6 @@ export const ServiceGrid = () => {
             {grouped.map((category) => (
               <div key={category.title} className="space-y-4 sm:space-y-8">
                 <div className="flex items-center gap-2 sm:gap-4 mb-4 sm:mb-8 px-2">
-                  <div className="w-9 h-9 sm:w-16 sm:h-16 rounded-2xl sm:rounded-3xl bg-gradient-to-br from-burnt-orange/20 to-burnt-orange/5 flex items-center justify-center text-burnt-orange shadow-lg backdrop-blur-sm">
-                    {category.icon}
-                  </div>
                   <h3 className="text-base sm:text-2xl md:text-3xl font-bold text-off-white">
                     {category.title}
                   </h3>
