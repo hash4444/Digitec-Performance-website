@@ -59,6 +59,13 @@ export const services: ServiceData[] = [
     },
     localIntent: 'If you are searching for Mercedes repair Dubai, Mercedes specialist near me, or a reliable German car workshop in Dubai, Digitec Performance Center is your go-to destination. Conveniently located in Dubai, we serve customers across the UAE who expect high-quality workmanship and expert care for their vehicles. Book your Mercedes service today and experience dealership-level quality without the dealership delays.',
     details: 'We work on all Mercedes-Benz models, including Mercedes C-Class, E-Class, and S-Class, Mercedes GLE, GLC, and GLS SUVs, AMG performance models, and Mercedes Maybach luxury vehicles. Whether your vehicle requires a simple service or a complete mechanical overhaul, our workshop is fully equipped to deliver dealership-level results at more competitive pricing.',
+    faqs: [
+      { question: 'How much does Mercedes repair cost in Dubai?', answer: 'Mercedes repair pricing in Dubai depends on the model and the fault. At Digitec we provide a free diagnostic quote with Star Diagnostic before any work begins, typically 30 to 50 percent below dealership pricing for equivalent OEM repairs.' },
+        { question: 'Is Digitec a Mercedes specialist or a general workshop?', answer: 'Digitec is a dedicated Mercedes and German car specialist. Our technicians are factory trained and we use Mercedes Star Diagnostic equipment, the same system used at official dealerships.' },
+        { question: 'Do you service AMG and Maybach models?', answer: 'Yes. We service the full Mercedes lineup including C, E, S, GLE, GLC, GLS, the AMG performance range and Maybach luxury models. Our team is experienced with AMG V8 biturbo engines and AIRMATIC suspension.' },
+        { question: 'Will servicing at Digitec affect my Mercedes warranty?', answer: 'No. Under UAE consumer law, servicing at a qualified independent specialist using OEM parts does not void your manufacturer warranty. We provide full service records.' },
+        { question: 'How long does a Mercedes repair take?', answer: 'Most common repairs such as brakes, suspension and oil services are completed the same day. Complex engine, transmission or AIRMATIC work typically takes 2 to 5 working days.' },
+    ],
   },
   {
     slug: 'mechanical-repair-dubai',
