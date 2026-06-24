@@ -100,6 +100,53 @@ const App = () => (
           <Route path="/services/mercedes-body-repair-dubai" element={<Navigate to="/services/car-body-repair-dubai" replace />} />
           <Route path="/services/engine-diagnostics" element={<Navigate to="/services/car-diagnostics-dubai" replace />} />
           <Route path="/services/engine-diagnostics-dubai" element={<Navigate to="/services/car-diagnostics-dubai" replace />} />
+          {/* Old WordPress /services/* slugs still in Google's index → canonical new slugs */}
+          <Route path="/services/performance-tuning-dubai" element={<Navigate to="/tuning" replace />} />
+          <Route path="/services/performance-tuning" element={<Navigate to="/tuning" replace />} />
+          <Route path="/services/mercedes-oil-change-dubai" element={<Navigate to="/services/oil-change-dubai" replace />} />
+          <Route path="/services/mercedes-oil-change" element={<Navigate to="/services/oil-change-dubai" replace />} />
+          <Route path="/services/mercedes-ac-repair-dubai" element={<Navigate to="/services/car-ac-repair-dubai" replace />} />
+          <Route path="/services/mercedes-ac-repair" element={<Navigate to="/services/car-ac-repair-dubai" replace />} />
+          <Route path="/services/mercedes-suspension-repair-dubai" element={<Navigate to="/services/suspension-repair-dubai" replace />} />
+          <Route path="/services/mercedes-suspension-repair" element={<Navigate to="/services/suspension-repair-dubai" replace />} />
+          <Route path="/services/mercedes-brake-repair-dubai" element={<Navigate to="/services/brake-repair-dubai" replace />} />
+          <Route path="/services/mercedes-brake-repair" element={<Navigate to="/services/brake-repair-dubai" replace />} />
+          <Route path="/services/mercedes-transmission-repair-dubai" element={<Navigate to="/services/transmission-repair-dubai" replace />} />
+          <Route path="/services/mercedes-transmission-repair" element={<Navigate to="/services/transmission-repair-dubai" replace />} />
+          <Route path="/services/mercedes-body-repair" element={<Navigate to="/services/car-body-repair-dubai" replace />} />
+          <Route path="/services/steering-repair" element={<Navigate to="/services/steering-repair-dubai" replace />} />
+          <Route path="/services/suspension-repair" element={<Navigate to="/services/suspension-repair-dubai" replace />} />
+          <Route path="/services/brake-repair" element={<Navigate to="/services/brake-repair-dubai" replace />} />
+          <Route path="/services/brake-system-repairs" element={<Navigate to="/services/brake-repair-dubai" replace />} />
+          <Route path="/services/transmission-repair" element={<Navigate to="/services/transmission-repair-dubai" replace />} />
+          <Route path="/services/transmission-services" element={<Navigate to="/services/transmission-repair-dubai" replace />} />
+          <Route path="/services/routine-maintenance" element={<Navigate to="/services/car-service-dubai" replace />} />
+          <Route path="/services/car-programming-diagnostic" element={<Navigate to="/services/car-diagnostics-dubai" replace />} />
+          <Route path="/services/battery-changes" element={<Navigate to="/services/battery-replacement-dubai" replace />} />
+          <Route path="/services/battery-replacement" element={<Navigate to="/services/battery-replacement-dubai" replace />} />
+          <Route path="/services/oil-change-service" element={<Navigate to="/services/oil-change-dubai" replace />} />
+          <Route path="/services/oil-change" element={<Navigate to="/services/oil-change-dubai" replace />} />
+          <Route path="/services/mechanical-repair" element={<Navigate to="/services/mechanical-repair-dubai" replace />} />
+          <Route path="/services/tire-repair" element={<Navigate to="/services/tire-repair-dubai" replace />} />
+          <Route path="/services/exhaust-repair" element={<Navigate to="/services/exhaust-repair-dubai" replace />} />
+          <Route path="/services/auto-electrical-repair" element={<Navigate to="/services/auto-electrical-repair-dubai" replace />} />
+          <Route path="/services/electrical-system-repairs" element={<Navigate to="/services/auto-electrical-repair-dubai" replace />} />
+          <Route path="/services/fuel-system-repair" element={<Navigate to="/services/fuel-system-repair-dubai" replace />} />
+          <Route path="/services/car-ac-repair" element={<Navigate to="/services/car-ac-repair-dubai" replace />} />
+          <Route path="/services/ac-repair-maintenance" element={<Navigate to="/services/car-ac-repair-dubai" replace />} />
+          <Route path="/services/car-body-repair" element={<Navigate to="/services/car-body-repair-dubai" replace />} />
+          <Route path="/services/body-repair" element={<Navigate to="/services/car-body-repair-dubai" replace />} />
+          <Route path="/services/paint-protection" element={<Navigate to="/services/paint-protection-dubai" replace />} />
+          <Route path="/services/car-paint-protection" element={<Navigate to="/services/paint-protection-dubai" replace />} />
+          <Route path="/services/ppf" element={<Navigate to="/services/paint-protection-dubai" replace />} />
+          <Route path="/services/ceramic-coating" element={<Navigate to="/services/paint-protection-dubai" replace />} />
+          <Route path="/services/car-service" element={<Navigate to="/services/car-service-dubai" replace />} />
+          <Route path="/services/car-diagnostics" element={<Navigate to="/services/car-diagnostics-dubai" replace />} />
+          {/* Old WP top-level pages still in index */}
+          <Route path="/sitemap" element={<Navigate to="/" replace />} />
+          <Route path="/some-of-our-work" element={<Navigate to="/vrx" replace />} />
+          <Route path="/privacy-policy" element={<Navigate to="/" replace />} />
+          <Route path="/terms-of-service" element={<Navigate to="/" replace />} />
 
           {/* Legacy WordPress top-level URLs → new /services/* slugs (single hop, preserves SEO) */}
           <Route path="/mercedes" element={<Navigate to="/services/mercedes-repair-dubai" replace />} />
