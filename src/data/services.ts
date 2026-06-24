@@ -141,8 +141,8 @@ export const services: ServiceData[] = [
   },
   {
     slug: 'suspension-repair-dubai',
-    metaTitle: 'Suspension Repair Dubai | AIRMATIC Specialists | Digitec',
-    metaDescription: 'Air suspension sagging? Specialist suspension repair in Dubai for AIRMATIC, shocks and ride height. Premium OEM parts at Digitec. Book your fix today.',
+    metaTitle: 'Suspension Repair Dubai | AIRMATIC, Shocks, Air Struts',
+    metaDescription: 'Air suspension sagging or harsh ride? AIRMATIC, shock and air strut repair in Dubai with OEM parts and same week turnaround. Book at Digitec today.',
     title: 'Suspension Repair in Dubai',
     description: 'Car suspension and air suspension specialists in Dubai.',
     image: '/lovable-uploads/0f7fde8d-a57b-45bc-bb10-c80f98525682.png',
