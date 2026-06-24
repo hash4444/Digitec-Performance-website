@@ -180,8 +180,8 @@ export const services: ServiceData[] = [
   },
   {
     slug: 'steering-repair-dubai',
-    metaTitle: 'Steering Repair Dubai | Power Steering Experts | Digitec',
-    metaDescription: 'Heavy or noisy steering? Expert steering repair in Dubai for racks, pumps and alignment on German and luxury cars. Trusted at Digitec. Book a check today.',
+    metaTitle: 'Steering Repair Dubai | Power Steering, Rack & EPS Experts',
+    metaDescription: 'Heavy, noisy or leaking steering? Specialist rack, pump and EPS repair in Dubai for German and luxury cars, with free check. Book at Digitec today.',
     title: 'Steering Repair in Dubai',
     description: 'Power steering and steering rack specialists in Dubai.',
     image: '/lovable-uploads/b8278b01-7cf1-43fb-ae22-3f731c36cec5.png',
