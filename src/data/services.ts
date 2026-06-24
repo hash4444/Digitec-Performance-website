@@ -484,8 +484,8 @@ export const services: ServiceData[] = [
   },
   {
     slug: 'exhaust-repair-dubai',
-    metaTitle: 'Exhaust Repair Dubai | Cat, Muffler & Performance | Digitec',
-    metaDescription: 'Exhaust loud or leaking? Expert exhaust repair in Dubai for catalytic converters, mufflers and performance systems. Trusted specialists at Digitec. Book now.',
+    metaTitle: 'Exhaust Repair Dubai | Cat, Muffler, DPF & Performance',
+    metaDescription: 'Loud, leaking or failed exhaust? Specialist catalytic converter, muffler and DPF repair in Dubai, with performance upgrades. Book at Digitec today.',
     title: 'Exhaust Repair in Dubai',
     description: 'Exhaust system, muffler and catalytic converter specialists in Dubai.',
     image: '/lovable-uploads/b400327f-926f-4da6-97f8-cff91a39e3ec.png',
