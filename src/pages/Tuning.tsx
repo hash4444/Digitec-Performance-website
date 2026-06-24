@@ -7,12 +7,12 @@ import TuningConfigurator from '@/components/TuningConfigurator';
 
 const Tuning = () => {
   useSeo({
-    title: 'GAD Tuning Dubai | Digitec Performance Center',
-    description: 'GAD tuning in Dubai at Digitec Performance Center. Official GAD Motors partner offering ECU tuning, performance parts, turbo kits, and AMG upgrades across the UAE.',
+    title: 'GAD Tuning Dubai | Official GAD Motors Partner | Digitec',
+    description: 'Official GAD Motors partner in Dubai. ECU tuning, turbo kits and AMG upgrades with proven power gains and reliability. Book your tuning session today.',
     canonical: 'https://digitecme.com/tuning',
     keywords: 'GAD tuning Dubai, GAD Motors Dubai, GAD partner UAE, ECU tuning Dubai, Mercedes AMG tuning, performance tuning Dubai, GAD parts Dubai, turbo upgrade Dubai',
     ogImage: 'https://digitecme.com/images/tuning-hero-bg.jpg',
-    jsonLd: {
+    jsonLd: [{
       '@context': 'https://schema.org',
       '@type': 'Service',
       serviceType: 'GAD Tuning & ECU Performance Upgrades',
@@ -36,6 +36,16 @@ const Tuning = () => {
         },
       },
     },
+    {
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: [
+        { '@type': 'Question', name: 'Is Digitec an official GAD Motors partner in Dubai?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. Digitec Performance Center is the official GAD Motors partner in the UAE, providing genuine GAD ECU files, parts and turbo kits with full factory support.' } },
+        { '@type': 'Question', name: 'How much power can I gain from GAD tuning?', acceptedAnswer: { '@type': 'Answer', text: 'Power gains depend on the platform and the chosen GAD stage. Mercedes AMG models typically gain meaningful horsepower and torque per stage, with hardware upgrades unlocking further gains.' } },
+        { '@type': 'Question', name: 'Does ECU tuning affect reliability or warranty?', acceptedAnswer: { '@type': 'Answer', text: 'GAD files are extensively tested for reliability and safety. Tuning may affect the manufacturer warranty on tuned components, so we discuss the implications with every client before any work is carried out.' } },
+        { '@type': 'Question', name: 'Which cars do you tune?', acceptedAnswer: { '@type': 'Answer', text: 'We tune Mercedes-Benz and AMG, Porsche, Audi, BMW and other German performance cars, including hardware projects with turbos, intercoolers and intake manifolds.' } },
+      ],
+    }],
   });
 
   return (

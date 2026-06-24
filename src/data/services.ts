@@ -28,8 +28,8 @@ export interface ServiceData {
 export const services: ServiceData[] = [
   {
     slug: 'mercedes-repair-dubai',
-    metaTitle: 'Mercedes Repair Dubai | AMG & Star Diagnostic | Digitec',
-    metaDescription: 'Need Mercedes repair in Dubai? Trusted AMG and Star Diagnostic specialists using OEM parts. Faster than the dealer. Book your service with Digitec today.',
+    metaTitle: 'Mercedes Repair Dubai | AMG, Star Diagnostic, OEM Parts',
+    metaDescription: 'Mercedes specialist in Dubai. AMG, Star Diagnostic and OEM parts, faster than the dealer with transparent pricing and a 12 month warranty. Book today.',
     title: 'Mercedes Repair in Dubai',
     description: 'Specialist Mercedes-Benz service, diagnostics, and repair in Dubai.',
     image: mercedesRepairImg,
@@ -59,6 +59,13 @@ export const services: ServiceData[] = [
     },
     localIntent: 'If you are searching for Mercedes repair Dubai, Mercedes specialist near me, or a reliable German car workshop in Dubai, Digitec Performance Center is your go-to destination. Conveniently located in Dubai, we serve customers across the UAE who expect high-quality workmanship and expert care for their vehicles. Book your Mercedes service today and experience dealership-level quality without the dealership delays.',
     details: 'We work on all Mercedes-Benz models, including Mercedes C-Class, E-Class, and S-Class, Mercedes GLE, GLC, and GLS SUVs, AMG performance models, and Mercedes Maybach luxury vehicles. Whether your vehicle requires a simple service or a complete mechanical overhaul, our workshop is fully equipped to deliver dealership-level results at more competitive pricing.',
+    faqs: [
+      { question: 'How much does Mercedes repair cost in Dubai?', answer: 'Mercedes repair pricing in Dubai depends on the model and the fault. At Digitec we provide a free diagnostic quote with Star Diagnostic before any work begins, typically 30 to 50 percent below dealership pricing for equivalent OEM repairs.' },
+        { question: 'Is Digitec a Mercedes specialist or a general workshop?', answer: 'Digitec is a dedicated Mercedes and German car specialist. Our technicians are factory trained and we use Mercedes Star Diagnostic equipment, the same system used at official dealerships.' },
+        { question: 'Do you service AMG and Maybach models?', answer: 'Yes. We service the full Mercedes lineup including C, E, S, GLE, GLC, GLS, the AMG performance range and Maybach luxury models. Our team is experienced with AMG V8 biturbo engines and AIRMATIC suspension.' },
+        { question: 'Will servicing at Digitec affect my Mercedes warranty?', answer: 'No. Under UAE consumer law, servicing at a qualified independent specialist using OEM parts does not void your manufacturer warranty. We provide full service records.' },
+        { question: 'How long does a Mercedes repair take?', answer: 'Most common repairs such as brakes, suspension and oil services are completed the same day. Complex engine, transmission or AIRMATIC work typically takes 2 to 5 working days.' },
+    ],
   },
   {
     slug: 'mechanical-repair-dubai',
@@ -141,8 +148,8 @@ export const services: ServiceData[] = [
   },
   {
     slug: 'suspension-repair-dubai',
-    metaTitle: 'Suspension Repair Dubai | AIRMATIC Specialists | Digitec',
-    metaDescription: 'Air suspension sagging? Specialist suspension repair in Dubai for AIRMATIC, shocks and ride height. Premium OEM parts at Digitec. Book your fix today.',
+    metaTitle: 'Suspension Repair Dubai | AIRMATIC, Shocks, Air Struts',
+    metaDescription: 'Air suspension sagging or harsh ride? AIRMATIC, shock and air strut repair in Dubai with OEM parts and same week turnaround. Book at Digitec today.',
     title: 'Suspension Repair in Dubai',
     description: 'Car suspension and air suspension specialists in Dubai.',
     image: '/lovable-uploads/0f7fde8d-a57b-45bc-bb10-c80f98525682.png',
@@ -177,11 +184,17 @@ export const services: ServiceData[] = [
     ],
     localIntent: 'If you are searching for suspension repair Dubai, car suspension repair near me, or a reliable German car specialist in Dubai, Digitec Performance Center is your trusted destination. Located in Dubai, we serve customers across the UAE who demand expert suspension repair and high-quality automotive care.',
     details: 'We offer a full range of suspension services in Dubai, covering both traditional and advanced suspension systems. All repairs are carried out using OEM or performance-grade parts to ensure durability, safety, and optimal performance.',
+    faqs: [
+      { question: 'How much does suspension repair cost in Dubai?', answer: 'Suspension repair pricing in Dubai depends on the component and the vehicle. Shock absorber replacement typically starts from AED 1,200 per pair, while AIRMATIC strut replacement varies by model. We always provide a free quote before starting work.' },
+      { question: 'How do I know my air suspension needs repair?', answer: 'Common signs include the car sitting low overnight, an uneven ride height, harsh bouncing, a noisy compressor or a suspension warning light. Any of these symptoms should be inspected promptly to avoid damaging the compressor.' },
+      { question: 'Do you repair Mercedes AIRMATIC and ABC suspension?', answer: 'Yes. AIRMATIC and Active Body Control are core specialties at Digitec. We diagnose and repair air struts, valve blocks, compressors, ride height sensors and ABC pumps using OEM Mercedes parts.' },
+      { question: 'How long does a suspension repair take?', answer: 'Shock or strut replacement is usually completed the same day. AIRMATIC compressor or strut work typically takes 1 to 2 working days depending on parts availability.' },
+    ],
   },
   {
     slug: 'steering-repair-dubai',
-    metaTitle: 'Steering Repair Dubai | Power Steering Experts | Digitec',
-    metaDescription: 'Heavy or noisy steering? Expert steering repair in Dubai for racks, pumps and alignment on German and luxury cars. Trusted at Digitec. Book a check today.',
+    metaTitle: 'Steering Repair Dubai | Power Steering, Rack & EPS Experts',
+    metaDescription: 'Heavy, noisy or leaking steering? Specialist rack, pump and EPS repair in Dubai for German and luxury cars, with free check. Book at Digitec today.',
     title: 'Steering Repair in Dubai',
     description: 'Power steering and steering rack specialists in Dubai.',
     image: '/lovable-uploads/b8278b01-7cf1-43fb-ae22-3f731c36cec5.png',
@@ -216,6 +229,12 @@ export const services: ServiceData[] = [
     ],
     localIntent: 'If you are searching for steering repair Dubai, power steering repair near me, or a reliable car workshop in Dubai, Digitec Performance Center is your trusted destination. Conveniently located in Dubai, we serve customers across the UAE who expect expert steering repair and dependable automotive care.',
     details: 'We offer a full range of steering services in Dubai, covering hydraulic, electric, and electro-hydraulic steering systems. All repairs are carried out using OEM or performance-grade parts to ensure long-term reliability and safety.',
+    faqs: [
+      { question: 'What are the signs of a failing power steering system?', answer: 'Heavy or stiff steering, whining noises when turning, a vibrating steering wheel, fluid leaks under the car or a steering warning light all indicate a fault that should be inspected immediately for safety.' },
+      { question: 'How much does steering rack replacement cost in Dubai?', answer: 'Steering rack replacement pricing depends on the vehicle and whether the rack is hydraulic or electric. We provide a transparent quote after a free diagnostic check, typically well below dealership pricing.' },
+      { question: 'Can you repair Electronic Power Steering (EPS) faults?', answer: 'Yes. We use advanced diagnostic tools to identify EPS faults, including motor failure, torque sensor errors and control module issues, and repair or replace components as needed.' },
+      { question: 'Do I need wheel alignment after steering repair?', answer: 'Yes. Any steering rack, tie rod or suspension work changes the geometry of the wheels. We include a four wheel alignment after every major steering repair to ensure safe handling and even tire wear.' },
+    ],
   },
   {
     slug: 'brake-repair-dubai',
@@ -332,8 +351,8 @@ export const services: ServiceData[] = [
   },
   {
     slug: 'oil-change-dubai',
-    metaTitle: 'Oil Change Dubai | Same Day Service with OEM Oils | Digitec',
-    metaDescription: 'Need an oil change in Dubai? Same day service using premium OEM-approved oils for Mercedes, BMW, Audi and Porsche. Trusted at Digitec. Book yours today.',
+    metaTitle: 'Oil Change Dubai | Same Day, OEM Oils, Free Car Wash',
+    metaDescription: 'Same day car oil change in Dubai using OEM approved synthetic oils for Mercedes, BMW, Audi and Porsche. Free wash included. Book at Digitec today.',
     title: 'Oil Change in Dubai',
     description: 'Fast, premium car oil change service in Dubai.',
     image: '/lovable-uploads/b25532a7-eae9-45ae-b8bf-425984dbfa6d.png',
@@ -484,8 +503,8 @@ export const services: ServiceData[] = [
   },
   {
     slug: 'exhaust-repair-dubai',
-    metaTitle: 'Exhaust Repair Dubai | Cat, Muffler & Performance | Digitec',
-    metaDescription: 'Exhaust loud or leaking? Expert exhaust repair in Dubai for catalytic converters, mufflers and performance systems. Trusted specialists at Digitec. Book now.',
+    metaTitle: 'Exhaust Repair Dubai | Cat, Muffler, DPF & Performance',
+    metaDescription: 'Loud, leaking or failed exhaust? Specialist catalytic converter, muffler and DPF repair in Dubai, with performance upgrades. Book at Digitec today.',
     title: 'Exhaust Repair in Dubai',
     description: 'Exhaust system, muffler and catalytic converter specialists in Dubai.',
     image: '/lovable-uploads/b400327f-926f-4da6-97f8-cff91a39e3ec.png',
@@ -520,6 +539,12 @@ export const services: ServiceData[] = [
     ],
     localIntent: 'If you are searching for exhaust repair Dubai, muffler repair near me, or a reliable exhaust workshop in Dubai, Digitec Performance Center is your trusted destination. Conveniently located in Dubai, we serve customers across the UAE who demand expert exhaust repair and performance upgrades.',
     details: 'We offer a full range of exhaust repair services in Dubai, covering all parts of the exhaust system. All work is carried out using OEM or performance-grade exhaust components, ensuring durability, efficiency, and optimal airflow.',
+    faqs: [
+      { question: 'How much does exhaust repair cost in Dubai?', answer: 'Exhaust repair pricing depends on the component, from welding a small leak to full catalytic converter or DPF replacement. We provide a free inspection and transparent quote before any work begins.' },
+      { question: 'Can you replace a catalytic converter or DPF?', answer: 'Yes. We replace catalytic converters and clean or replace Diesel Particulate Filters using OEM grade parts, and we reset all related fault codes so your check engine light stays off.' },
+      { question: 'Do you fit aftermarket performance exhausts?', answer: 'Yes. We install performance exhaust systems from leading brands for Mercedes AMG, BMW M, Porsche and other German performance cars, with precise welding and leak free installation.' },
+      { question: 'How long does exhaust repair take?', answer: 'Most exhaust repairs such as leak welding, muffler swaps or sensor replacement are completed the same day. Full system or catalytic converter replacements typically take 1 to 2 working days.' },
+    ],
   },
   {
     slug: 'car-diagnostics-dubai',
