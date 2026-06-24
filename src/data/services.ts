@@ -229,6 +229,12 @@ export const services: ServiceData[] = [
     ],
     localIntent: 'If you are searching for steering repair Dubai, power steering repair near me, or a reliable car workshop in Dubai, Digitec Performance Center is your trusted destination. Conveniently located in Dubai, we serve customers across the UAE who expect expert steering repair and dependable automotive care.',
     details: 'We offer a full range of steering services in Dubai, covering hydraulic, electric, and electro-hydraulic steering systems. All repairs are carried out using OEM or performance-grade parts to ensure long-term reliability and safety.',
+    faqs: [
+      { question: 'What are the signs of a failing power steering system?', answer: 'Heavy or stiff steering, whining noises when turning, a vibrating steering wheel, fluid leaks under the car or a steering warning light all indicate a fault that should be inspected immediately for safety.' },
+      { question: 'How much does steering rack replacement cost in Dubai?', answer: 'Steering rack replacement pricing depends on the vehicle and whether the rack is hydraulic or electric. We provide a transparent quote after a free diagnostic check, typically well below dealership pricing.' },
+      { question: 'Can you repair Electronic Power Steering (EPS) faults?', answer: 'Yes. We use advanced diagnostic tools to identify EPS faults, including motor failure, torque sensor errors and control module issues, and repair or replace components as needed.' },
+      { question: 'Do I need wheel alignment after steering repair?', answer: 'Yes. Any steering rack, tie rod or suspension work changes the geometry of the wheels. We include a four wheel alignment after every major steering repair to ensure safe handling and even tire wear.' },
+    ],
   },
   {
     slug: 'brake-repair-dubai',
