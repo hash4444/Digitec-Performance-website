@@ -539,6 +539,12 @@ export const services: ServiceData[] = [
     ],
     localIntent: 'If you are searching for exhaust repair Dubai, muffler repair near me, or a reliable exhaust workshop in Dubai, Digitec Performance Center is your trusted destination. Conveniently located in Dubai, we serve customers across the UAE who demand expert exhaust repair and performance upgrades.',
     details: 'We offer a full range of exhaust repair services in Dubai, covering all parts of the exhaust system. All work is carried out using OEM or performance-grade exhaust components, ensuring durability, efficiency, and optimal airflow.',
+    faqs: [
+      { question: 'How much does exhaust repair cost in Dubai?', answer: 'Exhaust repair pricing depends on the component, from welding a small leak to full catalytic converter or DPF replacement. We provide a free inspection and transparent quote before any work begins.' },
+      { question: 'Can you replace a catalytic converter or DPF?', answer: 'Yes. We replace catalytic converters and clean or replace Diesel Particulate Filters using OEM grade parts, and we reset all related fault codes so your check engine light stays off.' },
+      { question: 'Do you fit aftermarket performance exhausts?', answer: 'Yes. We install performance exhaust systems from leading brands for Mercedes AMG, BMW M, Porsche and other German performance cars, with precise welding and leak free installation.' },
+      { question: 'How long does exhaust repair take?', answer: 'Most exhaust repairs such as leak welding, muffler swaps or sensor replacement are completed the same day. Full system or catalytic converter replacements typically take 1 to 2 working days.' },
+    ],
   },
   {
     slug: 'car-diagnostics-dubai',
