@@ -14,6 +14,17 @@ import {
 } from '@/components/ui/accordion';
 import BrandBookingForm from '@/components/BrandBookingForm';
 
+const getBrandSeoCopy = (brand: { name: string; specialization: string; whyChoose: { title: string }[] }) => {
+  const focusAreas = brand.whyChoose.map((w) => w.title).slice(0, 4);
+  return {
+    intro: `Digi-Tec Performance Centre is one of Dubai's most established independent specialists for ${brand.name}. From routine servicing to advanced performance work, our workshop in Al Quoz combines factory-grade diagnostics, genuine parts, and technicians who have spent their entire careers inside the ${brand.name} platform. Owners across Dubai, Abu Dhabi, and Sharjah trust us because we deliver dealer-level work without dealer-level downtime or cost.`,
+    dubai: `The UAE climate is unforgiving on luxury vehicles. Ambient temperatures above 45°C accelerate oil degradation, stress cooling systems, and shorten the life of rubber bushings, AC components, and battery cells. Every ${brand.name} we service at Digi-Tec is inspected with Dubai conditions in mind. We use heat-rated fluids, recommend shorter service intervals where appropriate, and pay particular attention to cooling, suspension, and air-conditioning systems that bear the brunt of summer driving.`,
+    expertise: `Our ${brand.name} specialisation covers ${focusAreas.join(', ')}, and the wider mechanical, electrical, and bodywork disciplines that a modern ${brand.name} demands. We invest in the same factory diagnostic platforms used by the official dealer network, which means accurate fault tracing, correct adaptation resets, and software updates that protect your warranty and resale value.`,
+    parts: `Every ${brand.name} service at Digi-Tec uses genuine OEM parts and manufacturer-approved fluids by default. Where customers prefer high-quality OE-supplier or performance equivalents, we document the choice clearly and only fit components that match or exceed factory specification. Nothing leaves our workshop without a full inspection report and a transparent breakdown of work completed.`,
+    cta: `If you are searching for ${brand.specialization.toLowerCase()} or a trusted ${brand.name} service centre in Dubai, Digi-Tec is ready to help. Call +971 4 340 2223, send a WhatsApp enquiry, or use the booking form on this page to receive a same-day quote and the earliest available workshop slot.`,
+  };
+};
+
 const SERVICES = [
   {
     title: 'Vehicle Maintenance',
@@ -95,6 +106,7 @@ const BrandPage = () => {
   const relatedServices = brand.relatedServices
     .map((s) => getServiceBySlug(s))
     .filter((s): s is NonNullable<ReturnType<typeof getServiceBySlug>> => Boolean(s));
+  const seoCopy = getBrandSeoCopy(brand);
 
   return (
     <div className="min-h-screen bg-black text-off-white">
@@ -240,6 +252,42 @@ const BrandPage = () => {
               </div>
             </div>
           )}
+        </div>
+      </section>
+
+      {/* FAQ */}
+      {/* SEO Content */}
+      <section className="py-12 sm:py-20 bg-black border-t border-white/5">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6">
+          <article className="space-y-8 sm:space-y-10">
+            <header>
+              <h2 className="text-2xl sm:text-4xl lg:text-5xl font-black mb-4 sm:mb-6 leading-tight">
+                Specialist <span className="text-burnt-orange">{brand.name}</span> Service in Dubai
+              </h2>
+              <p className="text-gray-300 text-base sm:text-lg leading-relaxed">{seoCopy.intro}</p>
+            </header>
+            <div>
+              <h3 className="text-xl sm:text-2xl font-bold text-off-white mb-3">
+                Built for Dubai Driving Conditions
+              </h3>
+              <p className="text-gray-300 text-sm sm:text-base leading-relaxed">{seoCopy.dubai}</p>
+            </div>
+            <div>
+              <h3 className="text-xl sm:text-2xl font-bold text-off-white mb-3">
+                {brand.name} Expertise You Can Verify
+              </h3>
+              <p className="text-gray-300 text-sm sm:text-base leading-relaxed">{seoCopy.expertise}</p>
+            </div>
+            <div>
+              <h3 className="text-xl sm:text-2xl font-bold text-off-white mb-3">
+                Genuine Parts and Transparent Reporting
+              </h3>
+              <p className="text-gray-300 text-sm sm:text-base leading-relaxed">{seoCopy.parts}</p>
+            </div>
+            <div className="border-l-2 border-burnt-orange pl-5 sm:pl-6">
+              <p className="text-gray-200 text-sm sm:text-base leading-relaxed">{seoCopy.cta}</p>
+            </div>
+          </article>
         </div>
       </section>
 
