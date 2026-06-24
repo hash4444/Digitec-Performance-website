@@ -256,6 +256,42 @@ const BrandPage = () => {
       </section>
 
       {/* FAQ */}
+      {/* SEO Content */}
+      <section className="py-12 sm:py-20 bg-black border-t border-white/5">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6">
+          <article className="space-y-8 sm:space-y-10">
+            <header>
+              <h2 className="text-2xl sm:text-4xl lg:text-5xl font-black mb-4 sm:mb-6 leading-tight">
+                Specialist <span className="text-burnt-orange">{brand.name}</span> Service in Dubai
+              </h2>
+              <p className="text-gray-300 text-base sm:text-lg leading-relaxed">{seoCopy.intro}</p>
+            </header>
+            <div>
+              <h3 className="text-xl sm:text-2xl font-bold text-off-white mb-3">
+                Built for Dubai Driving Conditions
+              </h3>
+              <p className="text-gray-300 text-sm sm:text-base leading-relaxed">{seoCopy.dubai}</p>
+            </div>
+            <div>
+              <h3 className="text-xl sm:text-2xl font-bold text-off-white mb-3">
+                {brand.name} Expertise You Can Verify
+              </h3>
+              <p className="text-gray-300 text-sm sm:text-base leading-relaxed">{seoCopy.expertise}</p>
+            </div>
+            <div>
+              <h3 className="text-xl sm:text-2xl font-bold text-off-white mb-3">
+                Genuine Parts and Transparent Reporting
+              </h3>
+              <p className="text-gray-300 text-sm sm:text-base leading-relaxed">{seoCopy.parts}</p>
+            </div>
+            <div className="border-l-2 border-burnt-orange pl-5 sm:pl-6">
+              <p className="text-gray-200 text-sm sm:text-base leading-relaxed">{seoCopy.cta}</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      {/* FAQ */}
       <section className="py-12 sm:py-20 bg-gradient-to-br from-charcoal/40 to-black border-t border-white/5">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-8 sm:mb-12">
