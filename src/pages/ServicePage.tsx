@@ -54,29 +54,49 @@ const ServicePage = () => {
     title: service?.metaTitle || (service ? `${service.seoKeyword} | DIGI-TEC Performance Center` : 'Service Not Found | DIGI-TEC'),
     description: service?.metaDescription || (service ? `${service.intro.slice(0, 155)}…` : ''),
     canonical: service ? `https://digitecme.com/services/${service.slug}` : undefined,
-    jsonLd: service ? {
-      '@context': 'https://schema.org',
-      '@type': 'Service',
-      name: service.title,
-      serviceType: service.seoKeyword,
-      description: service.metaDescription || service.description,
-      url: `https://digitecme.com/services/${service.slug}`,
-      areaServed: [
-        { '@type': 'City', name: 'Dubai' },
-        { '@type': 'Country', name: 'United Arab Emirates' },
-      ],
-      provider: {
-        '@type': 'AutomotiveBusiness',
-        name: 'Digitec Performance Center',
-        url: 'https://digitecme.com',
-        telephone: '+971 4 340 2223',
-        address: {
-          '@type': 'PostalAddress',
-          addressLocality: 'Dubai',
-          addressCountry: 'AE',
+    jsonLd: service ? [
+      {
+        '@context': 'https://schema.org',
+        '@type': 'Service',
+        name: service.title,
+        serviceType: service.seoKeyword,
+        description: service.metaDescription || service.description,
+        url: `https://digitecme.com/services/${service.slug}`,
+        areaServed: [
+          { '@type': 'City', name: 'Dubai' },
+          { '@type': 'Country', name: 'United Arab Emirates' },
+        ],
+        provider: {
+          '@type': 'AutomotiveBusiness',
+          name: 'Digitec Performance Center',
+          url: 'https://digitecme.com',
+          telephone: '+971 4 340 2223',
+          address: {
+            '@type': 'PostalAddress',
+            addressLocality: 'Dubai',
+            addressCountry: 'AE',
+          },
         },
       },
-    } : undefined,
+      {
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://digitecme.com/' },
+          { '@type': 'ListItem', position: 2, name: 'Services', item: 'https://digitecme.com/services' },
+          { '@type': 'ListItem', position: 3, name: service.title, item: `https://digitecme.com/services/${service.slug}` },
+        ],
+      },
+      ...(service.faqs && service.faqs.length > 0 ? [{
+        '@context': 'https://schema.org',
+        '@type': 'FAQPage',
+        mainEntity: service.faqs.map((f) => ({
+          '@type': 'Question',
+          name: f.question,
+          acceptedAnswer: { '@type': 'Answer', text: f.answer },
+        })),
+      }] : []),
+    ] : undefined,
   });
 
   if (externalRedirect) {
