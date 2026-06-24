@@ -28,8 +28,8 @@ export interface ServiceData {
 export const services: ServiceData[] = [
   {
     slug: 'mercedes-repair-dubai',
-    metaTitle: 'Mercedes Repair Dubai | AMG & Star Diagnostic | Digitec',
-    metaDescription: 'Need Mercedes repair in Dubai? Trusted AMG and Star Diagnostic specialists using OEM parts. Faster than the dealer. Book your service with Digitec today.',
+    metaTitle: 'Mercedes Repair Dubai | AMG, Star Diagnostic, OEM Parts',
+    metaDescription: 'Mercedes specialist in Dubai. AMG, Star Diagnostic and OEM parts, faster than the dealer with transparent pricing and a 12 month warranty. Book today.',
     title: 'Mercedes Repair in Dubai',
     description: 'Specialist Mercedes-Benz service, diagnostics, and repair in Dubai.',
     image: mercedesRepairImg,
