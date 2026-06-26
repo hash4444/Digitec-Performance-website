@@ -4,7 +4,7 @@ import { useSeo } from '@/hooks/use-seo';
 import Header from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { FinalCTA } from '@/components/FinalCTA';
-import { getServiceBySlug, services } from '@/data/services';
+import { getServiceBySlug, allServices } from '@/data/services';
 import { ChevronRight, Check, MessageCircle, Phone } from 'lucide-react';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 
@@ -30,10 +30,6 @@ const OLD_TO_NEW_SLUG: Record<string, string> = {
   'car-body-repair': 'car-body-repair-dubai',
   'car-paint-protection': 'paint-protection-dubai',
   // Legacy Google-indexed slugs → new slugs (flattened to one hop)
-  'mercedes-brake-repair-dubai': 'brake-repair-dubai',
-  'mercedes-transmission-repair-dubai': 'transmission-repair-dubai',
-  'mercedes-ac-repair-dubai': 'car-ac-repair-dubai',
-  'mercedes-suspension-repair-dubai': 'suspension-repair-dubai',
   'engine-diagnostics-dubai': 'car-diagnostics-dubai',
 };
 
@@ -128,8 +124,10 @@ const ServicePage = () => {
     );
   }
 
-  const related = services
+  const isMercedes = service.slug.startsWith('mercedes-');
+  const related = allServices
     .filter((s) => s.category === service.category && s.slug !== service.slug)
+    .filter((s) => (isMercedes ? s.slug.startsWith('mercedes-') : !s.slug.startsWith('mercedes-')))
     .slice(0, 3);
 
   return (
