@@ -351,8 +351,8 @@ export const services: ServiceData[] = [
   },
   {
     slug: 'oil-change-dubai',
-    metaTitle: 'Oil Change Dubai | Same Day, OEM Oils, Free Car Wash',
-    metaDescription: 'Same day car oil change in Dubai using OEM approved synthetic oils for Mercedes, BMW, Audi and Porsche. Free wash included. Book at Digitec today.',
+    metaTitle: 'Car Oil Change Dubai ★ Same-Day OEM Service + Free Car Wash | Digi-Tec',
+    metaDescription: 'Premium car oil change in Dubai from AED 299. OEM-approved synthetic oils for Mercedes, BMW, Audi & Porsche. Free car wash & 21-point check. Book Digi-Tec.',
     title: 'Oil Change in Dubai',
     description: 'Fast, premium car oil change service in Dubai.',
     image: '/lovable-uploads/b25532a7-eae9-45ae-b8bf-425984dbfa6d.png',
