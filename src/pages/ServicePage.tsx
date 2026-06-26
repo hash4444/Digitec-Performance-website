@@ -35,7 +35,6 @@ const OLD_TO_NEW_SLUG: Record<string, string> = {
   'mercedes-ac-repair-dubai': 'car-ac-repair-dubai',
   'mercedes-suspension-repair-dubai': 'suspension-repair-dubai',
   'engine-diagnostics-dubai': 'car-diagnostics-dubai',
-  'mercedes-oil-change-dubai': 'oil-change-dubai',
 };
 
 // External redirects (off /services/*)
