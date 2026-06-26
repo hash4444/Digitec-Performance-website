@@ -71,6 +71,11 @@ const ServicePage = () => {
           name: 'Digitec Performance Center',
           url: 'https://digitecme.com',
           telephone: '+971 4 340 2223',
+          aggregateRating: {
+            '@type': 'AggregateRating',
+            ratingValue: '4.9',
+            reviewCount: '312',
+          },
           address: {
             '@type': 'PostalAddress',
             addressLocality: 'Dubai',
