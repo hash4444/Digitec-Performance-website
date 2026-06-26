@@ -4,7 +4,7 @@ import { useSeo } from '@/hooks/use-seo';
 import Header from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { FinalCTA } from '@/components/FinalCTA';
-import { getServiceBySlug, services } from '@/data/services';
+import { getServiceBySlug, allServices } from '@/data/services';
 import { ChevronRight, Check, MessageCircle, Phone } from 'lucide-react';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 
@@ -124,8 +124,9 @@ const ServicePage = () => {
     );
   }
 
-  const related = services
+  const related = allServices
     .filter((s) => s.category === service.category && s.slug !== service.slug)
+    .filter((s) => !(service.slug.startsWith('mercedes-') ? false : s.slug.startsWith('mercedes-')))
     .slice(0, 3);
 
   return (
