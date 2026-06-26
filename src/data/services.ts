@@ -185,7 +185,7 @@ export const services: ServiceData[] = [
     localIntent: 'If you are searching for suspension repair Dubai, car suspension repair near me, or a reliable German car specialist in Dubai, Digitec Performance Center is your trusted destination. Located in Dubai, we serve customers across the UAE who demand expert suspension repair and high-quality automotive care.',
     details: 'We offer a full range of suspension services in Dubai, covering both traditional and advanced suspension systems. All repairs are carried out using OEM or performance-grade parts to ensure durability, safety, and optimal performance.',
     faqs: [
-      { question: 'How much does suspension repair cost in Dubai?', answer: 'Suspension repair pricing in Dubai depends on the component and the vehicle. Shock absorber replacement typically starts from AED 1,200 per pair, while AIRMATIC strut replacement varies by model. We always provide a free quote before starting work.' },
+      { question: 'How much does suspension repair cost in Dubai?', answer: 'Suspension repair pricing in Dubai depends on the component and the vehicle. Costs vary by model and whether parts are OEM or performance grade. We always provide a free, transparent quote before starting any work.' },
       { question: 'How do I know my air suspension needs repair?', answer: 'Common signs include the car sitting low overnight, an uneven ride height, harsh bouncing, a noisy compressor or a suspension warning light. Any of these symptoms should be inspected promptly to avoid damaging the compressor.' },
       { question: 'Do you repair Mercedes AIRMATIC and ABC suspension?', answer: 'Yes. AIRMATIC and Active Body Control are core specialties at Digitec. We diagnose and repair air struts, valve blocks, compressors, ride height sensors and ABC pumps using OEM Mercedes parts.' },
       { question: 'How long does a suspension repair take?', answer: 'Shock or strut replacement is usually completed the same day. AIRMATIC compressor or strut work typically takes 1 to 2 working days depending on parts availability.' },
@@ -352,7 +352,7 @@ export const services: ServiceData[] = [
   {
     slug: 'oil-change-dubai',
     metaTitle: 'Car Oil Change Dubai ★ Same-Day OEM Service + Free Car Wash | Digi-Tec',
-    metaDescription: 'Premium car oil change in Dubai from AED 299. OEM-approved synthetic oils for Mercedes, BMW, Audi & Porsche. Free car wash & 21-point check. Book Digi-Tec.',
+    metaDescription: 'Premium car oil change in Dubai. OEM-approved synthetic oils for Mercedes, BMW, Audi & Porsche. Free car wash & 21-point check. Book Digi-Tec today.',
     title: 'Oil Change in Dubai',
     description: 'Fast, premium car oil change service in Dubai.',
     image: '/lovable-uploads/b25532a7-eae9-45ae-b8bf-425984dbfa6d.png',
