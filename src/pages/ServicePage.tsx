@@ -124,9 +124,10 @@ const ServicePage = () => {
     );
   }
 
+  const isMercedes = service.slug.startsWith('mercedes-');
   const related = allServices
     .filter((s) => s.category === service.category && s.slug !== service.slug)
-    .filter((s) => !(service.slug.startsWith('mercedes-') ? false : s.slug.startsWith('mercedes-')))
+    .filter((s) => (isMercedes ? s.slug.startsWith('mercedes-') : !s.slug.startsWith('mercedes-')))
     .slice(0, 3);
 
   return (
