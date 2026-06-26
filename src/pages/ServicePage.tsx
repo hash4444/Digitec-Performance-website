@@ -30,10 +30,6 @@ const OLD_TO_NEW_SLUG: Record<string, string> = {
   'car-body-repair': 'car-body-repair-dubai',
   'car-paint-protection': 'paint-protection-dubai',
   // Legacy Google-indexed slugs → new slugs (flattened to one hop)
-  'mercedes-brake-repair-dubai': 'brake-repair-dubai',
-  'mercedes-transmission-repair-dubai': 'transmission-repair-dubai',
-  'mercedes-ac-repair-dubai': 'car-ac-repair-dubai',
-  'mercedes-suspension-repair-dubai': 'suspension-repair-dubai',
   'engine-diagnostics-dubai': 'car-diagnostics-dubai',
 };
 
