@@ -6,6 +6,23 @@ import { Footer } from '@/components/Footer';
 
 import { services } from '@/data/services';
 import { buildBreadcrumb, buildWebPage, pageGraph } from '@/lib/schema';
+import { brands } from '@/data/brands';
+
+const brandLogoMap: Record<string, string> = {
+  'Mercedes-Benz': '/lovable-uploads/a6f453f2-f2c5-4140-8f2a-bfa3401611d7.png',
+  'Maybach': '/lovable-uploads/5cc5b8af-7dd9-46a9-9ee2-3e5b14fda559.png',
+  'Porsche': '/lovable-uploads/8e7e2545-680e-42ac-bd97-ba1f9c063649.png',
+  'Audi': '/lovable-uploads/a3e92dde-70a9-499b-a7b0-ae0df117baf9.png',
+  'BMW': '/lovable-uploads/d66ea83e-7d6a-4c19-bf30-f27eca93ac8e.png',
+  'Lamborghini': '/lovable-uploads/8c4046ee-9977-417a-90a9-820452146832.png',
+  'Bentley': '/lovable-uploads/b2cd5f78-8a43-4a9b-8a0a-19124642ca5a.png',
+  'McLaren': '/lovable-uploads/7f8d98f4-3581-451c-bfaf-262eb67cf14b.png',
+  'Ferrari': '/lovable-uploads/11f29482-f2d3-4278-ae2a-397044a1ff95.png',
+  'Bugatti': '/lovable-uploads/69bd2660-e800-47b4-bc4d-de6e6b65b984.png',
+  'Range Rover': '/lovable-uploads/4bb58917-704a-4c5d-84b6-dc428a00c004.png',
+  'Rolls-Royce': '/lovable-uploads/a4c040e8-740a-4fcb-b837-b86e15c25306.png',
+  'Aston Martin': '/lovable-uploads/8d3bad14-09df-4ef1-86c6-13cfcba7042b.png',
+};
 
 const categories = [
   'Core Mechanical Services',
@@ -43,6 +60,18 @@ const Services = () => {
             name: s.title,
           })),
         },
+        {
+          '@type': 'ItemList',
+          '@id': `${url}#brandlist`,
+          name: 'Car brands serviced by Digitec Performance Center',
+          numberOfItems: brands.length,
+          itemListElement: brands.map((b, i) => ({
+            '@type': 'ListItem',
+            position: i + 1,
+            url: `https://digitecme.com/brands/${b.slug}`,
+            name: `${b.name} Service Dubai`,
+          })),
+        },
       ]),
     [],
   );
@@ -72,6 +101,54 @@ const Services = () => {
           <p className="text-gray-400 text-xs sm:text-lg max-w-4xl mx-auto leading-snug sm:leading-relaxed">
             At Digitec Performance Center, we offer a comprehensive range of automotive services tailored to meet the needs of most vehicle brands, combining dealership-level expertise with faster turnaround times and competitive pricing. Our workshop specializes in servicing, diagnostics, mechanical repairs, performance upgrades, and maintenance for premium and everyday vehicles, including Mercedes-Benz and Maybach, Audi, BMW, Porsche, Lamborghini, Aston Martin, Bugatti, Nissan, Ferrari, McLaren, Bentley, Range Rover and Land Rover, Rolls-Royce, Toyota, Rox, Jetour, Zeekr, BYD, and Hongqi. Whether you own a luxury supercar, a high-performance vehicle, or a daily driver, Digitec delivers reliable, high-quality automotive solutions designed to keep your car performing at its best.
           </p>
+        </div>
+      </section>
+
+      {/* Brands We Service */}
+      <section className="pb-8 sm:pb-16">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6">
+          <div className="mb-6 sm:mb-10">
+            <span className="text-burnt-orange font-semibold text-xs sm:text-sm uppercase tracking-widest mb-2 block">
+              Brands We Service
+            </span>
+            <h2 className="text-xl sm:text-3xl md:text-4xl font-black mb-2 sm:mb-3">
+              Dedicated Service for Every Luxury Brand
+            </h2>
+            <p className="text-gray-400 text-sm sm:text-base max-w-3xl leading-relaxed">
+              Tap any brand below for a dedicated service page covering diagnostics, mechanical repair, transmission, suspension, brakes, and performance work tuned to that marque.
+            </p>
+          </div>
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4">
+            {brands.map((b) => (
+              <Link
+                key={b.slug}
+                to={`/brands/${b.slug}`}
+                className="group flex items-center gap-3 sm:gap-4 bg-charcoal/60 border border-gray-800/50 rounded-2xl p-3 sm:p-4 hover:border-burnt-orange/50 hover:bg-charcoal/80 transition-all duration-300"
+                aria-label={`${b.name} service and repair in Dubai`}
+              >
+                <div className="w-12 h-12 sm:w-14 sm:h-14 shrink-0 p-1.5 bg-white/90 rounded-full flex items-center justify-center">
+                  {brandLogoMap[b.name] ? (
+                    <img
+                      src={brandLogoMap[b.name]}
+                      alt={`${b.name} logo`}
+                      className="w-full h-full object-contain"
+                      loading="lazy"
+                    />
+                  ) : (
+                    <span className="text-lg font-black text-burnt-orange">{b.name.charAt(0)}</span>
+                  )}
+                </div>
+                <div className="min-w-0">
+                  <h3 className="font-bold text-sm sm:text-base leading-tight group-hover:text-burnt-orange transition-colors truncate">
+                    {b.name}
+                  </h3>
+                  <p className="text-gray-400 text-[11px] sm:text-xs mt-0.5 line-clamp-2 leading-snug">
+                    {b.specialization}
+                  </p>
+                </div>
+              </Link>
+            ))}
+          </div>
         </div>
       </section>
 
