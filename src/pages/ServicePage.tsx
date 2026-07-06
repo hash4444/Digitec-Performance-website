@@ -7,6 +7,14 @@ import { FinalCTA } from '@/components/FinalCTA';
 import { getServiceBySlug, allServices } from '@/data/services';
 import { ChevronRight, Check, MessageCircle, Phone } from 'lucide-react';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
+import {
+  buildBreadcrumb,
+  buildFAQ,
+  buildService,
+  buildWebPage,
+  detectBrand,
+  pageGraph,
+} from '@/lib/schema';
 
 // Map every legacy slug directly to its new slug (single-hop redirects, no chains).
 // Also handles previously-indexed Google URLs.
@@ -45,94 +53,71 @@ const ServicePage = () => {
   const newSlug = slug ? OLD_TO_NEW_SLUG[slug] : undefined;
   const service = slug && !newSlug && !externalRedirect ? getServiceBySlug(slug) : undefined;
 
+  // Build the per-page JSON-LD @graph. Sitewide Organization / Business / WebSite
+  // are declared in index.html; here we only add page-scoped entities and reference
+  // the sitewide ones by @id.
+  const serviceJsonLd = React.useMemo(() => {
+    if (!service) return undefined;
+    const url = `https://digitecme.com/services/${service.slug}`;
+    const breadcrumb = buildBreadcrumb(url, [
+      { name: 'Home', url: 'https://digitecme.com/' },
+      { name: 'Services', url: 'https://digitecme.com/services' },
+      { name: service.title, url },
+    ]);
+    const webPage = buildWebPage({
+      url,
+      name: service.metaTitle || `${service.title} | DIGI-TEC`,
+      description: service.metaDescription || service.description,
+      breadcrumbId: `${url}#breadcrumb`,
+      primaryImage: typeof service.image === 'string' ? service.image : undefined,
+    });
+    const brand = detectBrand(service.slug, service.seoKeyword);
+    // For the flagship Mercedes Repair page, expose the full offer catalog Google
+    // uses to render service sub-links; other pages get a lean Service entity.
+    const isMercedesRepair = service.slug === 'mercedes-repair-dubai';
+    const svc = buildService({
+      url,
+      name: service.title,
+      serviceType: service.seoKeyword,
+      description: service.metaDescription || service.description,
+      image: typeof service.image === 'string' ? service.image : undefined,
+      brand,
+      ...(isMercedesRepair
+        ? {
+            offers: [
+              'Mercedes Engine Repair',
+              'Mercedes Transmission Repair',
+              'Mercedes ECU Programming',
+              'Mercedes ECU Remapping',
+              'Mercedes Suspension Repair',
+              'Mercedes Brake Repair',
+              'Mercedes Air Conditioning Repair',
+              'Mercedes Oil Service',
+            ],
+            keywords: [
+              'Mercedes Repair Dubai',
+              'Mercedes Service Dubai',
+              'Mercedes Specialist Dubai',
+              'Mercedes Garage Dubai',
+              'Mercedes Workshop Dubai',
+              'Mercedes Diagnostics Dubai',
+              'Mercedes ECU Programming Dubai',
+              'Mercedes ECU Remapping Dubai',
+              'Mercedes Maintenance Dubai',
+              'Mercedes-Benz Repair UAE',
+            ],
+          }
+        : {}),
+    });
+    const faq = service.faqs && service.faqs.length > 0 ? buildFAQ(url, service.faqs) : null;
+    return pageGraph([webPage, breadcrumb, svc, ...(faq ? [faq] : [])]);
+  }, [service]);
+
   useSeo({
     title: service?.metaTitle || (service ? `${service.seoKeyword} | DIGI-TEC Performance Center` : 'Service Not Found | DIGI-TEC'),
     description: service?.metaDescription || (service ? `${service.intro.slice(0, 155)}…` : ''),
     canonical: service ? `https://digitecme.com/services/${service.slug}` : undefined,
-    jsonLd: service ? [
-      {
-        '@context': 'https://schema.org',
-        '@type': 'Service',
-        name: service.title,
-        serviceType: service.seoKeyword,
-        description: service.metaDescription || service.description,
-        url: `https://digitecme.com/services/${service.slug}`,
-        ...(typeof service.image === 'string' && service.image.startsWith('http')
-          ? { image: service.image }
-          : {}),
-        areaServed: [
-          { '@type': 'City', name: 'Dubai' },
-          { '@type': 'Country', name: 'United Arab Emirates' },
-        ],
-        ...(service.slug === 'mercedes-repair-dubai'
-          ? {
-              '@id': 'https://digitecme.com/services/mercedes-repair-dubai#service',
-              brand: { '@type': 'Brand', name: 'Mercedes-Benz' },
-              keywords: [
-                'Mercedes Repair Dubai',
-                'Mercedes Service Dubai',
-                'Mercedes Specialist Dubai',
-                'Mercedes Garage Dubai',
-                'Mercedes Workshop Dubai',
-                'Mercedes Diagnostics Dubai',
-                'Mercedes ECU Programming Dubai',
-                'Mercedes ECU Remapping Dubai',
-                'Mercedes Maintenance Dubai',
-                'Mercedes-Benz Repair UAE',
-              ],
-              hasOfferCatalog: {
-                '@type': 'OfferCatalog',
-                name: 'Mercedes Repair Services',
-                itemListElement: [
-                  'Mercedes Engine Repair',
-                  'Mercedes Transmission Repair',
-                  'Mercedes ECU Programming',
-                  'Mercedes ECU Remapping',
-                  'Mercedes Suspension Repair',
-                  'Mercedes Brake Repair',
-                  'Mercedes Air Conditioning Repair',
-                  'Mercedes Oil Service',
-                ].map((n) => ({ '@type': 'Offer', itemOffered: { '@type': 'Service', name: n } })),
-              },
-            }
-          : {}),
-        provider: {
-          '@type': 'AutomotiveBusiness',
-          '@id': 'https://digitecme.com/#business',
-          name: 'Digitec Performance Center',
-          url: 'https://digitecme.com',
-          telephone: '+971 4 340 2223',
-          aggregateRating: {
-            '@type': 'AggregateRating',
-            ratingValue: '4.9',
-            reviewCount: '312',
-          },
-          address: {
-            '@type': 'PostalAddress',
-            addressLocality: 'Dubai',
-            addressCountry: 'AE',
-          },
-        },
-      },
-      {
-        '@context': 'https://schema.org',
-        '@type': 'BreadcrumbList',
-        itemListElement: [
-          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://digitecme.com/' },
-          { '@type': 'ListItem', position: 2, name: 'Services', item: 'https://digitecme.com/services' },
-          { '@type': 'ListItem', position: 3, name: service.title, item: `https://digitecme.com/services/${service.slug}` },
-        ],
-      },
-      ...(service.faqs && service.faqs.length > 0 ? [{
-        '@context': 'https://schema.org',
-        '@type': 'FAQPage',
-        mainEntity: service.faqs.map((f) => ({
-          '@type': 'Question',
-          name: f.question,
-          acceptedAnswer: { '@type': 'Answer', text: f.answer },
-        })),
-      }] : []),
-    ] : undefined,
+    jsonLd: serviceJsonLd,
   });
 
   if (externalRedirect) {
