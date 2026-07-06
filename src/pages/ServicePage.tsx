@@ -57,12 +57,48 @@ const ServicePage = () => {
         serviceType: service.seoKeyword,
         description: service.metaDescription || service.description,
         url: `https://digitecme.com/services/${service.slug}`,
+        ...(typeof service.image === 'string' && service.image.startsWith('http')
+          ? { image: service.image }
+          : {}),
         areaServed: [
           { '@type': 'City', name: 'Dubai' },
           { '@type': 'Country', name: 'United Arab Emirates' },
         ],
+        ...(service.slug === 'mercedes-repair-dubai'
+          ? {
+              '@id': 'https://digitecme.com/services/mercedes-repair-dubai#service',
+              brand: { '@type': 'Brand', name: 'Mercedes-Benz' },
+              keywords: [
+                'Mercedes Repair Dubai',
+                'Mercedes Service Dubai',
+                'Mercedes Specialist Dubai',
+                'Mercedes Garage Dubai',
+                'Mercedes Workshop Dubai',
+                'Mercedes Diagnostics Dubai',
+                'Mercedes ECU Programming Dubai',
+                'Mercedes ECU Remapping Dubai',
+                'Mercedes Maintenance Dubai',
+                'Mercedes-Benz Repair UAE',
+              ],
+              hasOfferCatalog: {
+                '@type': 'OfferCatalog',
+                name: 'Mercedes Repair Services',
+                itemListElement: [
+                  'Mercedes Engine Repair',
+                  'Mercedes Transmission Repair',
+                  'Mercedes ECU Programming',
+                  'Mercedes ECU Remapping',
+                  'Mercedes Suspension Repair',
+                  'Mercedes Brake Repair',
+                  'Mercedes Air Conditioning Repair',
+                  'Mercedes Oil Service',
+                ].map((n) => ({ '@type': 'Offer', itemOffered: { '@type': 'Service', name: n } })),
+              },
+            }
+          : {}),
         provider: {
           '@type': 'AutomotiveBusiness',
+          '@id': 'https://digitecme.com/#business',
           name: 'Digitec Performance Center',
           url: 'https://digitecme.com',
           telephone: '+971 4 340 2223',
