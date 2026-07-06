@@ -1,5 +1,6 @@
 import React from 'react';
 import { useSeo } from '@/hooks/use-seo';
+import { buildBreadcrumb, buildWebPage, businessRef, pageGraph } from '@/lib/schema';
 import Header from '@/components/Header';
 import { WhyChooseUs } from '@/components/WhyChooseUs';
 import { FinalCTA } from '@/components/FinalCTA';
@@ -8,11 +9,34 @@ import { motion } from 'framer-motion';
 import { MapPin, Phone, Mail, CheckCircle2, Zap, Wrench, Gauge } from 'lucide-react';
 
 const AboutUs = () => {
+  const url = 'https://digitecme.com/about';
+  const aboutGraph = React.useMemo(
+    () =>
+      pageGraph([
+        buildWebPage({
+          url,
+          name: 'About Digitec Performance Center | Car Workshop in Dubai',
+          description:
+            'Digitec Performance Center is a trusted Dubai workshop specialising in Mercedes, BMW, Audi, luxury vehicles, Chinese EVs and GAD Motors performance tuning.',
+          type: 'AboutPage',
+          breadcrumbId: `${url}#breadcrumb`,
+        }),
+        buildBreadcrumb(url, [
+          { name: 'Home', url: 'https://digitecme.com/' },
+          { name: 'About', url },
+        ]),
+        // AboutPage explicitly declares its subject as the Business.
+        { '@type': 'Thing', '@id': `${url}#about`, mainEntity: businessRef },
+      ]),
+    [],
+  );
+
   useSeo({
     title: 'About Digitec Performance Center | Car Workshop in Dubai',
     description: 'Digitec Performance Center is a trusted car workshop in Dubai specialising in Mercedes, BMW, Audi, luxury vehicles, Chinese EVs, and GAD Motors performance tuning.',
     canonical: 'https://digitecme.com/about',
     keywords: 'car workshop Dubai, Mercedes repair Dubai, German car specialist, GAD Motors tuning, EV repair Dubai, luxury car service',
+    jsonLd: aboutGraph,
   });
 
   return (
