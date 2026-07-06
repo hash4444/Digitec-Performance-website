@@ -1,16 +1,39 @@
 import React from 'react';
 import { useSeo } from '@/hooks/use-seo';
 import Header from '@/components/Header';
-import { FAQ } from '@/components/FAQ';
+import { FAQ, allFaqs } from '@/components/FAQ';
+import { buildBreadcrumb, buildFAQ, buildWebPage, pageGraph } from '@/lib/schema';
 import { FinalCTA } from '@/components/FinalCTA';
 import { Footer } from '@/components/Footer';
 import { motion } from 'framer-motion';
 
 const FAQPage = () => {
+  const url = 'https://digitecme.com/faq';
+  const faqGraph = React.useMemo(
+    () =>
+      pageGraph([
+        buildWebPage({
+          url,
+          name: 'FAQ | DIGI-TEC Performance Center Dubai',
+          description:
+            'Answers about luxury car servicing, ECU tuning, and performance upgrades at DIGI-TEC Performance Center Dubai.',
+          type: 'FAQPage',
+          breadcrumbId: `${url}#breadcrumb`,
+        }),
+        buildBreadcrumb(url, [
+          { name: 'Home', url: 'https://digitecme.com/' },
+          { name: 'FAQ', url },
+        ]),
+        ...(allFaqs.length > 0 ? [buildFAQ(url, allFaqs)!] : []),
+      ]),
+    [],
+  );
+
   useSeo({
     title: 'FAQ | DIGI-TEC Performance Center Dubai',
     description: 'Find answers to common questions about luxury car servicing, ECU tuning, and performance upgrades at DIGI-TEC Performance Center Dubai.',
     canonical: 'https://digitecme.com/faq',
+    jsonLd: faqGraph,
   });
 
   return (
