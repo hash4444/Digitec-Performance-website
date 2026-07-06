@@ -6,19 +6,19 @@ import { useIsMobile } from '@/hooks/use-mobile';
 import { getSlugForOrbitName } from '@/data/brands';
 
 const brands = [
-  { name: 'Mercedes-Benz', specialization: 'AMG Performance & Star Diagnostics' },
-  { name: 'Maybach', specialization: 'Ultra-Luxury Comfort & Precision Service' },
-  { name: 'Porsche', specialization: 'GT3 & Turbo Powertrain Tuning' },
-  { name: 'Audi', specialization: 'Quattro Systems & RS Performance' },
-  { name: 'BMW', specialization: 'M Series Optimization & iDrive Coding' },
-  { name: 'Lamborghini', specialization: 'V10 & V12 Specialists' },
-  { name: 'Bentley', specialization: 'Continental & Flying Spur Excellence' },
-  { name: 'McLaren', specialization: 'Carbon Fiber & Turbo V8 Mastery' },
-  { name: 'Ferrari', specialization: 'F1 ECU Tuning & Performance Calibration' },
-  { name: 'Bugatti', specialization: 'Quad Turbo Optimization & Luxury Diagnostics' },
-  { name: 'Range Rover', specialization: 'Terrain Response & Luxury SUV Systems' },
-  { name: 'Rolls Royce', specialization: 'Quiet, Precise, Luxurious: Inside and Out' },
-  { name: 'Aston Martin', specialization: 'British Elegance & V12 Precision' }
+  { name: 'Mercedes-Benz', specialization: 'Repair • Maintenance • Diagnostics • Performance' },
+  { name: 'Maybach', specialization: 'Repair • Maintenance • Diagnostics • Performance' },
+  { name: 'Porsche', specialization: 'Repair • Maintenance • Diagnostics • Performance' },
+  { name: 'Audi', specialization: 'Repair • Maintenance • Diagnostics • Performance' },
+  { name: 'BMW', specialization: 'Repair • Maintenance • Diagnostics • Performance' },
+  { name: 'Lamborghini', specialization: 'Repair • Maintenance • Diagnostics • Performance' },
+  { name: 'Bentley', specialization: 'Repair • Maintenance • Diagnostics • Performance' },
+  { name: 'McLaren', specialization: 'Repair • Maintenance • Diagnostics • Performance' },
+  { name: 'Ferrari', specialization: 'Repair • Maintenance • Diagnostics • Performance' },
+  { name: 'Bugatti', specialization: 'Repair • Maintenance • Diagnostics • Performance' },
+  { name: 'Range Rover', specialization: 'Repair • Maintenance • Diagnostics • Performance' },
+  { name: 'Rolls Royce', specialization: 'Repair • Maintenance • Diagnostics • Performance' },
+  { name: 'Aston Martin', specialization: 'Repair • Maintenance • Diagnostics • Performance' }
 ];
 
 const logoMap: Record<string, string> = {
