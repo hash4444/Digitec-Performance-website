@@ -21,6 +21,7 @@ import {
   AccordionTrigger,
 } from '@/components/ui/accordion';
 import BrandBookingForm from '@/components/BrandBookingForm';
+import { getServicesForBrand } from '@/data/brandServices';
 
 const getBrandSeoCopy = (brand: { name: string; specialization: string; whyChoose: { title: string }[] }) => {
   const focusAreas = brand.whyChoose.map((w) => w.title).slice(0, 4);
@@ -175,6 +176,7 @@ const BrandPage = () => {
     .map((s) => getServiceBySlug(s))
     .filter((s): s is NonNullable<ReturnType<typeof getServiceBySlug>> => Boolean(s));
   const seoCopy = getBrandSeoCopy(brand);
+  const brandServices = getServicesForBrand(brand.slug);
 
   return (
     <div className="min-h-screen bg-black text-off-white">
@@ -275,6 +277,38 @@ const BrandPage = () => {
           </div>
         </div>
       </section>
+
+      {/* Dedicated brand-service SEO pages */}
+      {brandServices.length > 0 && (
+        <section className="py-12 sm:py-20 bg-black border-t border-white/5">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6">
+            <div className="text-center mb-8 sm:mb-12">
+              <h2 className="text-2xl sm:text-4xl lg:text-5xl font-black mb-3">
+                Dedicated <span className="text-burnt-orange">{brand.name}</span> Service Pages
+              </h2>
+              <p className="text-gray-400 max-w-2xl mx-auto text-sm sm:text-base">
+                Specialist landing pages for the {brand.name} work we do most often, each with brand-specific parts, tools, and technical detail.
+              </p>
+            </div>
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 sm:gap-4">
+              {brandServices.map((s) => (
+                <Link
+                  key={s.serviceSlug}
+                  to={`/brands/${brand.slug}/${s.serviceSlug}`}
+                  className="group flex flex-col justify-between bg-gradient-to-br from-charcoal/60 to-black/40 border border-white/5 hover:border-burnt-orange/40 rounded-2xl p-4 sm:p-5 transition-all duration-300 min-h-[110px]"
+                >
+                  <span className="text-off-white font-bold text-sm sm:text-base leading-tight group-hover:text-burnt-orange">
+                    {brand.name} {s.label}
+                  </span>
+                  <span className="inline-flex items-center gap-1 text-burnt-orange text-xs font-semibold mt-3">
+                    Learn more <ArrowRight className="w-3.5 h-3.5" />
+                  </span>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* Testimonial / Trust */}
       <section className="py-12 sm:py-20 bg-black border-t border-white/5">
