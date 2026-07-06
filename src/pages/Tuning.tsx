@@ -4,48 +4,71 @@ import { useSeo } from '@/hooks/use-seo';
 import Header from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import TuningConfigurator from '@/components/TuningConfigurator';
+import {
+  buildBreadcrumb,
+  buildFAQ,
+  buildService,
+  buildWebPage,
+  pageGraph,
+} from '@/lib/schema';
 
 const Tuning = () => {
+  const url = 'https://digitecme.com/tuning';
+  const tuningFaqs = [
+    { question: 'Is Digitec an official GAD Motors partner in Dubai?', answer: 'Yes. Digitec Performance Center is the official GAD Motors partner in the UAE, providing genuine GAD ECU files, parts and turbo kits with full factory support.' },
+    { question: 'How much power can I gain from GAD tuning?', answer: 'Power gains depend on the platform and the chosen GAD stage. Mercedes AMG models typically gain meaningful horsepower and torque per stage, with hardware upgrades unlocking further gains.' },
+    { question: 'Does ECU tuning affect reliability or warranty?', answer: 'GAD files are extensively tested for reliability and safety. Tuning may affect the manufacturer warranty on tuned components, so we discuss the implications with every client before any work is carried out.' },
+    { question: 'Which cars do you tune?', answer: 'We tune Mercedes-Benz and AMG, Porsche, Audi, BMW and other German performance cars, including hardware projects with turbos, intercoolers and intake manifolds.' },
+  ];
+  const tuningGraph = pageGraph([
+    buildWebPage({
+      url,
+      name: 'GAD Tuning Dubai | Official GAD Motors Partner | Digitec',
+      description:
+        'Official GAD Motors partner in Dubai. ECU tuning, turbo kits and AMG upgrades with proven power gains and reliability.',
+      breadcrumbId: `${url}#breadcrumb`,
+      primaryImage: 'https://digitecme.com/images/tuning-hero-bg.jpg',
+    }),
+    buildBreadcrumb(url, [
+      { name: 'Home', url: 'https://digitecme.com/' },
+      { name: 'Tuning', url },
+    ]),
+    buildService({
+      url,
+      name: 'GAD Tuning Dubai',
+      serviceType: 'GAD Tuning & ECU Performance Upgrades',
+      description:
+        'Official GAD Motors partner in Dubai. ECU tuning, performance parts, turbo kits, intake manifolds and AMG upgrades for German vehicles.',
+      image: 'https://digitecme.com/images/tuning-hero-bg.jpg',
+      brand: 'GAD Motors',
+      offers: [
+        'ECU Remapping',
+        'Stage 1 Tuning',
+        'Stage 2 Tuning',
+        'Turbo Kits',
+        'Intake Manifold Upgrades',
+        'Downpipes & Exhaust Systems',
+        'AMG Performance Upgrades',
+      ],
+      keywords: [
+        'GAD Tuning Dubai',
+        'GAD Motors Dubai',
+        'ECU Tuning Dubai',
+        'ECU Remapping Dubai',
+        'AMG Tuning Dubai',
+        'Performance Tuning Dubai',
+      ],
+    }),
+    ...(tuningFaqs.length > 0 ? [buildFAQ(url, tuningFaqs)!] : []),
+  ]);
+
   useSeo({
     title: 'GAD Tuning Dubai | Official GAD Motors Partner | Digitec',
     description: 'Official GAD Motors partner in Dubai. ECU tuning, turbo kits and AMG upgrades with proven power gains and reliability. Book your tuning session today.',
     canonical: 'https://digitecme.com/tuning',
     keywords: 'GAD tuning Dubai, GAD Motors Dubai, GAD partner UAE, ECU tuning Dubai, Mercedes AMG tuning, performance tuning Dubai, GAD parts Dubai, turbo upgrade Dubai',
     ogImage: 'https://digitecme.com/images/tuning-hero-bg.jpg',
-    jsonLd: [{
-      '@context': 'https://schema.org',
-      '@type': 'Service',
-      serviceType: 'GAD Tuning & ECU Performance Upgrades',
-      name: 'GAD Tuning Dubai',
-      description: 'Official GAD Motors partner in Dubai. ECU tuning, performance parts, turbo kits, intake manifolds, and AMG upgrades for German vehicles.',
-      url: 'https://digitecme.com/tuning',
-      brand: { '@type': 'Brand', name: 'GAD Motors' },
-      areaServed: [
-        { '@type': 'City', name: 'Dubai' },
-        { '@type': 'Country', name: 'United Arab Emirates' },
-      ],
-      provider: {
-        '@type': 'AutomotiveBusiness',
-        name: 'Digitec Performance Center',
-        url: 'https://digitecme.com',
-        telephone: '+971 4 340 2223',
-        address: {
-          '@type': 'PostalAddress',
-          addressLocality: 'Dubai',
-          addressCountry: 'AE',
-        },
-      },
-    },
-    {
-      '@context': 'https://schema.org',
-      '@type': 'FAQPage',
-      mainEntity: [
-        { '@type': 'Question', name: 'Is Digitec an official GAD Motors partner in Dubai?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. Digitec Performance Center is the official GAD Motors partner in the UAE, providing genuine GAD ECU files, parts and turbo kits with full factory support.' } },
-        { '@type': 'Question', name: 'How much power can I gain from GAD tuning?', acceptedAnswer: { '@type': 'Answer', text: 'Power gains depend on the platform and the chosen GAD stage. Mercedes AMG models typically gain meaningful horsepower and torque per stage, with hardware upgrades unlocking further gains.' } },
-        { '@type': 'Question', name: 'Does ECU tuning affect reliability or warranty?', acceptedAnswer: { '@type': 'Answer', text: 'GAD files are extensively tested for reliability and safety. Tuning may affect the manufacturer warranty on tuned components, so we discuss the implications with every client before any work is carried out.' } },
-        { '@type': 'Question', name: 'Which cars do you tune?', acceptedAnswer: { '@type': 'Answer', text: 'We tune Mercedes-Benz and AMG, Porsche, Audi, BMW and other German performance cars, including hardware projects with turbos, intercoolers and intake manifolds.' } },
-      ],
-    }],
+    jsonLd: tuningGraph,
   });
 
   return (
