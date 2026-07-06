@@ -3,10 +3,10 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/
 import { Button } from '@/components/ui/button';
 import { MessageCircle } from 'lucide-react';
 
-type FAQItem = { question: string; answer: string };
-type FAQCategory = { id: string; label: string; faqs: FAQItem[] };
+export type FAQItem = { question: string; answer: string };
+export type FAQCategory = { id: string; label: string; faqs: FAQItem[] };
 
-const categories: FAQCategory[] = [
+export const faqCategories: FAQCategory[] = [
   {
     id: 'general',
     label: 'General',
@@ -134,6 +134,12 @@ const categories: FAQCategory[] = [
     ],
   },
 ];
+
+// Backwards-compatible local alias used below.
+const categories = faqCategories;
+
+/** Flat list of every FAQ across all tabs — used by page JSON-LD. */
+export const allFaqs: FAQItem[] = faqCategories.flatMap((c) => c.faqs);
 
 export const FAQ = () => {
   const [activeCategory, setActiveCategory] = useState<string>(categories[0].id);

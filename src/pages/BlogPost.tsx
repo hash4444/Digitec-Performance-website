@@ -7,10 +7,41 @@ import Header from '@/components/Header';
 import { FinalCTA } from '@/components/FinalCTA';
 import { Footer } from '@/components/Footer';
 import { getBlogPostBySlug, blogPosts } from '@/data/blogPosts';
+import { buildArticle, buildBreadcrumb, buildWebPage, pageGraph } from '@/lib/schema';
 
 const BlogPost = () => {
   const { slug } = useParams<{ slug: string }>();
   const post = slug ? getBlogPostBySlug(slug) : undefined;
+
+  const articleJsonLd = React.useMemo(() => {
+    if (!post) return undefined;
+    const url = post.canonicalOverride || `https://digitecme.com/blog/${post.slug}`;
+    const breadcrumb = buildBreadcrumb(url, [
+      { name: 'Home', url: 'https://digitecme.com/' },
+      { name: 'Blog', url: 'https://digitecme.com/blog' },
+      { name: post.title, url },
+    ]);
+    const webPage = buildWebPage({
+      url,
+      name: post.metaTitle,
+      description: post.metaDescription,
+      breadcrumbId: `${url}#breadcrumb`,
+      datePublished: post.date,
+      dateModified: post.date,
+    });
+    const article = buildArticle({
+      url,
+      headline: post.title,
+      description: post.excerpt,
+      datePublished: post.date,
+      dateModified: post.date,
+      author: post.author,
+      authorType: 'Organization',
+      section: post.category,
+      keywords: post.keywords,
+    });
+    return pageGraph([webPage, breadcrumb, article]);
+  }, [post]);
 
   useSeo({
     title: post?.metaTitle || 'Blog | Digitec Performance Center',
@@ -25,22 +56,7 @@ const BlogPost = () => {
     canonical:
       post?.canonicalOverride ||
       (post ? `https://digitecme.com/blog/${post.slug}` : 'https://digitecme.com/blog'),
-    jsonLd: post
-      ? {
-          '@context': 'https://schema.org',
-          '@type': 'BlogPosting',
-          headline: post.title,
-          description: post.excerpt,
-          datePublished: post.date,
-          author: { '@type': 'Organization', name: post.author },
-          publisher: {
-            '@type': 'Organization',
-            name: 'Digitec Performance Center',
-            url: 'https://digitecme.com',
-          },
-          mainEntityOfPage: post.canonicalOverride || `https://digitecme.com/blog/${post.slug}`,
-        }
-      : undefined,
+    jsonLd: articleJsonLd,
   });
 
   if (!post) return <Navigate to="/blog" replace />;

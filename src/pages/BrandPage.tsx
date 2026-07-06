@@ -7,6 +7,14 @@ import { useSeo } from '@/hooks/use-seo';
 import { brands, getBrandBySlug } from '@/data/brands';
 import { getServiceBySlug } from '@/data/services';
 import {
+  BRAND_OFFER_CATALOG,
+  buildBreadcrumb,
+  buildFAQ,
+  buildWebPage,
+  businessRef,
+  pageGraph,
+} from '@/lib/schema';
+import {
   Accordion,
   AccordionContent,
   AccordionItem,
@@ -57,6 +65,92 @@ const BrandPage = () => {
   const { slug } = useParams<{ slug: string }>();
   const brand = slug ? getBrandBySlug(slug) : undefined;
 
+  // Model lists per brand — surfaces which vehicles the brand page covers
+  // to search engines and AI systems. Editable list, not exhaustive.
+  const BRAND_MODELS: Record<string, string[]> = {
+    'mercedes-benz-service-dubai': ['A-Class','C-Class','E-Class','CLA','CLS','GLA','GLC','GLE','GLS','S-Class','G-Class','AMG GT','SL','Maybach','EQ Series'],
+    'maybach-service-dubai': ['Maybach S-Class','Maybach GLS','Maybach S680','Maybach S580'],
+    'porsche-service-dubai': ['911','718 Cayman','718 Boxster','Panamera','Macan','Cayenne','Taycan'],
+    'audi-service-dubai': ['A3','A4','A5','A6','A7','A8','Q3','Q5','Q7','Q8','RS Range','R8','e-tron'],
+    'bmw-service-dubai': ['1 Series','3 Series','4 Series','5 Series','7 Series','8 Series','X1','X3','X5','X6','X7','M Range','i Range'],
+    'lamborghini-service-dubai': ['Huracán','Urus','Revuelto','Aventador'],
+    'bentley-service-dubai': ['Continental GT','Flying Spur','Bentayga'],
+    'mclaren-service-dubai': ['720S','765LT','Artura','GT','750S'],
+    'ferrari-service-dubai': ['Roma','Portofino','296','SF90','812','Purosangue'],
+    'bugatti-service-dubai': ['Chiron','Divo','Mistral'],
+    'land-rover-service-dubai': ['Range Rover','Range Rover Sport','Range Rover Velar','Range Rover Evoque','Defender','Discovery'],
+    'rolls-royce-service-dubai': ['Phantom','Ghost','Cullinan','Spectre','Wraith','Dawn'],
+    'aston-martin-service-dubai': ['DB12','Vantage','DBX','DBS'],
+  };
+
+  const brandJsonLd = React.useMemo(() => {
+    if (!brand) return undefined;
+    const url = `https://digitecme.com/brands/${brand.slug}`;
+    const breadcrumb = buildBreadcrumb(url, [
+      { name: 'Home', url: 'https://digitecme.com/' },
+      { name: 'Brands', url: 'https://digitecme.com/services' },
+      { name: brand.name, url },
+    ]);
+    const webPage = buildWebPage({
+      url,
+      name: `${brand.name} Service & Repair in Dubai`,
+      description: brand.intro,
+      breadcrumbId: `${url}#breadcrumb`,
+      primaryImage: brand.logo,
+    });
+    const models = BRAND_MODELS[brand.slug] ?? [];
+    const brandEntity = {
+      '@type': 'Brand',
+      '@id': `${url}#brand`,
+      name: brand.name,
+      logo: brand.logo.startsWith('http') ? brand.logo : `https://digitecme.com${brand.logo}`,
+    };
+    const svc = {
+      '@type': 'Service',
+      '@id': `${url}#service`,
+      name: `${brand.name} Service & Repair in Dubai`,
+      serviceType: `${brand.name} Repair`,
+      description: brand.intro,
+      url,
+      provider: businessRef,
+      brand: { '@id': `${url}#brand` },
+      areaServed: [
+        { '@type': 'City', name: 'Dubai' },
+        { '@type': 'City', name: 'Abu Dhabi' },
+        { '@type': 'City', name: 'Sharjah' },
+        { '@type': 'Country', name: 'United Arab Emirates' },
+      ],
+      hasOfferCatalog: {
+        '@type': 'OfferCatalog',
+        name: `${brand.name} Service Catalog`,
+        itemListElement: BRAND_OFFER_CATALOG.map((n) => ({
+          '@type': 'Offer',
+          itemOffered: { '@type': 'Service', name: `${brand.name} ${n}` },
+        })),
+      },
+      ...(models.length > 0
+        ? {
+            audience: {
+              '@type': 'Audience',
+              name: `${brand.name} owners`,
+            },
+            isRelatedTo: models.map((m) => ({
+              '@type': 'Vehicle',
+              vehicleModelDate: undefined,
+              manufacturer: { '@id': `${url}#brand` },
+              model: m,
+              name: `${brand.name} ${m}`,
+            })),
+          }
+        : {}),
+    };
+    const faq = buildFAQ(
+      url,
+      brand.faqs.map((f) => ({ question: f.q, answer: f.a })),
+    );
+    return pageGraph([webPage, breadcrumb, brandEntity, svc, ...(faq ? [faq] : [])]);
+  }, [brand]);
+
   useSeo({
     title: brand
       ? `${brand.name} Service & Repair in Dubai | Digi-Tec Performance Centre`
@@ -65,33 +159,7 @@ const BrandPage = () => {
       ? `Expert ${brand.name} maintenance, diagnostics, and performance tuning in Dubai. Certified technicians, genuine parts, and state-of-the-art equipment at Digi-Tec Performance Centre.`
       : 'Expert luxury car maintenance, diagnostics, and performance tuning in Dubai at Digi-Tec Performance Centre.',
     canonical: brand ? `https://digitecme.com/brands/${brand.slug}` : 'https://digitecme.com/',
-    jsonLd: brand
-      ? [
-          {
-            '@context': 'https://schema.org',
-            '@type': 'FAQPage',
-            mainEntity: brand.faqs.map((f) => ({
-              '@type': 'Question',
-              name: f.q,
-              acceptedAnswer: { '@type': 'Answer', text: f.a },
-            })),
-          },
-          {
-            '@context': 'https://schema.org',
-            '@type': 'AutomotiveBusiness',
-            name: `Digi-Tec Performance Centre — ${brand.name} Service Dubai`,
-            url: `https://digitecme.com/brands/${brand.slug}`,
-            telephone: '+97143402223',
-            address: {
-              '@type': 'PostalAddress',
-              addressLocality: 'Dubai',
-              addressCountry: 'AE',
-            },
-            areaServed: 'Dubai, UAE',
-            makesOffer: `${brand.name} service, maintenance, diagnostics, and performance tuning`,
-          },
-        ]
-      : undefined,
+    jsonLd: brandJsonLd,
   });
 
   if (!brand) {

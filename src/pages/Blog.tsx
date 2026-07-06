@@ -7,28 +7,53 @@ import Header from '@/components/Header';
 import { FinalCTA } from '@/components/FinalCTA';
 import { Footer } from '@/components/Footer';
 import { blogPosts, blogCategories } from '@/data/blogPosts';
+import { buildBreadcrumb, buildWebPage, organizationRef, pageGraph } from '@/lib/schema';
 
 const Blog = () => {
   const [activeCategory, setActiveCategory] = useState<string>('All');
+
+  const url = 'https://digitecme.com/blog';
+  const blogGraph = React.useMemo(
+    () =>
+      pageGraph([
+        buildWebPage({
+          url,
+          name: 'Automotive Blog Dubai | Digitec Performance Center',
+          description:
+            'Expert insights on Mercedes service, GAD tuning, ceramic coating and luxury car care in Dubai.',
+          type: 'CollectionPage',
+          breadcrumbId: `${url}#breadcrumb`,
+        }),
+        buildBreadcrumb(url, [
+          { name: 'Home', url: 'https://digitecme.com/' },
+          { name: 'Blog', url },
+        ]),
+        {
+          '@type': 'Blog',
+          '@id': `${url}#blog`,
+          name: 'Digitec Performance Center Blog',
+          url,
+          publisher: organizationRef,
+          blogPost: blogPosts.map((p) => ({
+            '@type': 'BlogPosting',
+            '@id': `https://digitecme.com/blog/${p.slug}#article`,
+            headline: p.title,
+            url: `https://digitecme.com/blog/${p.slug}`,
+            datePublished: p.date,
+            author: { '@type': 'Organization', name: p.author },
+            publisher: organizationRef,
+          })),
+        },
+      ]),
+    [],
+  );
 
   useSeo({
     title: 'Automotive Blog Dubai | Digitec Performance Center',
     description:
       'Expert insights on Mercedes service, GAD tuning, ceramic coating, and luxury car care in Dubai from Digitec Performance Center.',
     canonical: 'https://digitecme.com/blog',
-    jsonLd: {
-      '@context': 'https://schema.org',
-      '@type': 'Blog',
-      name: 'Digitec Performance Center Blog',
-      url: 'https://digitecme.com/blog',
-      blogPost: blogPosts.map((p) => ({
-        '@type': 'BlogPosting',
-        headline: p.title,
-        url: `https://digitecme.com/blog/${p.slug}`,
-        datePublished: p.date,
-        author: { '@type': 'Organization', name: p.author },
-      })),
-    },
+    jsonLd: blogGraph,
   });
 
   const filtered = useMemo(

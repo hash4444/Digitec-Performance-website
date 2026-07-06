@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 
 import { useSeo } from '@/hooks/use-seo';
+import { buildBreadcrumb, buildWebPage, pageGraph, businessRef } from '@/lib/schema';
 import Header from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -46,6 +47,40 @@ const VRX = () => {
     title: 'VRX Mercedes V-Class by GAD Motors | DIGI-TEC Performance Center Dubai',
     description: 'Discover the VRX, a modified Mercedes V-Class by GAD Motors. Performance tuning, luxury interior, and bespoke design. Available exclusively at DIGI-TEC Dubai.',
     canonical: 'https://digitecme.com/vrx',
+    jsonLd: (() => {
+      const url = 'https://digitecme.com/vrx';
+      return pageGraph([
+        buildWebPage({
+          url,
+          name: 'VRX Mercedes V-Class by GAD Motors | DIGI-TEC Dubai',
+          description:
+            'The VRX, a modified Mercedes V-Class by GAD Motors: performance tuning, luxury interior and bespoke design, available exclusively at DIGI-TEC Dubai.',
+          type: 'ItemPage',
+          breadcrumbId: `${url}#breadcrumb`,
+        }),
+        buildBreadcrumb(url, [
+          { name: 'Home', url: 'https://digitecme.com/' },
+          { name: 'VRX', url },
+        ]),
+        {
+          '@type': 'Product',
+          '@id': `${url}#product`,
+          name: 'VRX Mercedes V-Class',
+          brand: { '@type': 'Brand', name: 'GAD Motors' },
+          manufacturer: { '@type': 'Organization', name: 'GAD Motors', url: 'https://www.gad-motors.de/' },
+          category: 'Modified Mercedes V-Class',
+          description:
+            'Bespoke modified Mercedes V-Class conversion by GAD Motors, offered exclusively at DIGI-TEC Performance Center Dubai.',
+          url,
+          offers: {
+            '@type': 'Offer',
+            availability: 'https://schema.org/InStock',
+            priceCurrency: 'AED',
+            seller: businessRef,
+          },
+        },
+      ]);
+    })(),
   });
 
   return (
