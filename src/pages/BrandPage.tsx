@@ -21,6 +21,7 @@ import {
   AccordionTrigger,
 } from '@/components/ui/accordion';
 import BrandBookingForm from '@/components/BrandBookingForm';
+import { getServicesForBrand } from '@/data/brandServices';
 
 const getBrandSeoCopy = (brand: { name: string; specialization: string; whyChoose: { title: string }[] }) => {
   const focusAreas = brand.whyChoose.map((w) => w.title).slice(0, 4);
@@ -175,6 +176,7 @@ const BrandPage = () => {
     .map((s) => getServiceBySlug(s))
     .filter((s): s is NonNullable<ReturnType<typeof getServiceBySlug>> => Boolean(s));
   const seoCopy = getBrandSeoCopy(brand);
+  const brandServices = getServicesForBrand(brand.slug);
 
   return (
     <div className="min-h-screen bg-black text-off-white">
