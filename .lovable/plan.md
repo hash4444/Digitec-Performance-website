@@ -1,48 +1,93 @@
 ## Goal
-Restructure `/services` to boost SEO by surfacing brands-we-serve and giving each luxury brand its own dedicated service landing page (e.g. "BMW Repair Dubai", "Porsche Service Dubai"). This creates targeted long-tail keyword pages instead of one generic services list.
+Ship 78 dedicated SEO landing pages, one for every combination of 13 luxury brands × 6 core services, at `/brands/{brand}/{service}`. Each page targets a specific long-tail query like "BMW oil change Dubai" or "Porsche brake repair Dubai" with fully custom copy, FAQs, and Schema.org markup.
 
-## Why this helps SEO
-- Ranks for high-intent queries like "BMW repair Dubai", "Porsche service Dubai", "Lamborghini mechanic Dubai".
-- Each brand page becomes a semantic hub linking to relevant services + models.
-- Currently only Mercedes has a dedicated flagship page (`mercedes-repair-dubai`). The other 12 brands have thin `/brands/{slug}` pages without a services-per-brand structure.
+## Brands and services covered
 
-## Plan
+**13 brands:** Mercedes, BMW, Porsche, Audi, Lamborghini, Bugatti, Ferrari, McLaren, Bentley, Rolls-Royce, Aston Martin, Range Rover, Maybach
 
-### 1. Update `/services` page (`src/pages/Services.tsx`)
-Add a new **"Brands We Service"** section at the top (below hero, above categories):
-- Grid of 13 brand logos/cards (Mercedes, BMW, Porsche, Audi, Lamborghini, Bugatti, Ferrari, McLaren, Bentley, Rolls-Royce, Aston Martin, Range Rover, Maybach).
-- Each card links to a new brand-specific service page: `/services/{brand}-repair-dubai`.
-- Keep existing category sections below.
+**6 services per brand:**
+1. Oil change
+2. Brake repair
+3. Transmission repair
+4. AC repair
+5. Suspension repair
+6. Engine diagnostics
 
-### 2. Create brand-service page template
-Reuse the existing dynamic `ServicePage.tsx` pattern. Add 12 new entries to `src/data/services.ts` (one per non-Mercedes brand) with:
-- Slug: `bmw-repair-dubai`, `porsche-service-dubai`, `lamborghini-repair-dubai`, etc.
-- Brand-specific title, description, hero copy.
-- 6-8 sub-services listed (Engine, Transmission, ECU, Suspension, Brakes, AC, Oil Service, Diagnostics).
-- Brand-specific FAQs (5-7 per brand): "Which {Brand} models do you service?", "Do you use genuine parts?", "Common {Brand} issues in Dubai?", etc.
-- Common models list (e.g. BMW: M3, M5, X5, X7, 7-Series, i8).
+## URL structure
+```
+/brands/bmw-service-dubai/oil-change
+/brands/porsche-service-dubai/brake-repair
+/brands/lamborghini-service-dubai/transmission-repair
+...
+```
 
-### 3. Schema.org (JSON-LD)
-Leverage existing `src/lib/schema.ts` `detectBrand` helper + `buildService` with `hasOfferCatalog`. Each brand page automatically gets:
-- `Service` schema with `brand: { "@type": "Brand", name: "BMW" }`
-- `hasOfferCatalog` listing the sub-services
-- `FAQPage` schema from the FAQ items
-- `BreadcrumbList`: Home > Services > {Brand} Repair Dubai
+The brand slug reuses the existing `/brands/:slug` slugs (already SEO-optimized). The service slug is short and clean.
 
-### 4. Internal linking
-- Homepage brands section already links to `/brands/{slug}` — add secondary link "View {Brand} services" pointing to `/services/{brand}-repair-dubai`.
-- On each new brand-service page, cross-link to the general service pages (oil change, brake repair, etc.) and to `/brands/{slug}` (model showcase).
+## What each page contains
 
-### 5. Sitemap
-Add all 12 new URLs to `public/sitemap.xml`.
+Each of the 78 pages gets genuinely unique content, not templated boilerplate:
 
-## Scope decisions to confirm
-1. **Which brands get dedicated service pages?** All 13, or start with top 5 (Mercedes done + BMW, Porsche, Audi, Lamborghini, Range Rover)?
-2. **Brand section style on `/services`**: logo grid (compact, visual) or card grid with short description (more content = better SEO)?
-3. **Keep `/brands/{slug}` pages** as model-focused pages, and make `/services/{brand}-repair-dubai` the SEO/repair-focused pages? (Recommended, avoids duplication.)
+- **H1**: "{Brand} {Service} Dubai" (e.g. "BMW Oil Change Dubai")
+- **Meta title + description**: unique, keyword-targeted, under limits
+- **Hero paragraph** (150 to 250 words): brand-specific + service-specific reasons, real Dubai context (heat, fuel quality, traffic wear patterns)
+- **Common symptoms / when to book** (4 to 6 bullets specific to that brand+service combo)
+- **What we service section**: 4 to 6 relevant models for that brand (e.g. BMW: M3, M5, X5, X7, 7-Series, i8)
+- **Our process** (3 to 5 steps, brand-specific tools mentioned where relevant: ISTA for BMW, XENTRY for Mercedes, PIWIS for Porsche, ODIS for Audi, etc.)
+- **Parts & fluids policy** (1 short paragraph on genuine/OEM parts for that brand)
+- **FAQs** (5 to 7 questions unique to the brand+service combination)
+- **Cross-links**: back to the parent brand hub `/brands/{brand}` and sideways to the other 5 services for the same brand
+- **WhatsApp CTA** with a dynamic prefilled message referencing the specific brand and service
 
-## Files to change
-- `src/pages/Services.tsx` — add brands section
-- `src/data/services.ts` — add 12 brand-service entries with FAQs
-- `src/components/Header.tsx` or homepage brand section — add service links (optional)
-- `public/sitemap.xml` — add new URLs
+## Files to create
+
+1. **`src/data/brandServices.ts`** (new, large — approx. 78 entries)
+   - Exports `brandServiceCombos: BrandServiceCombo[]`
+   - Each entry: `{ brandSlug, serviceSlug, brandName, serviceName, title, description, heroCopy, symptoms[], models[], processSteps[], partsCopy, faqs[] }`
+   - Content is hand-authored per combo, drawing on brand-specific quirks (e.g. Lamborghini carbon-ceramic brakes, Range Rover air suspension, Porsche PDK transmission)
+
+2. **`src/pages/BrandServicePage.tsx`** (new)
+   - Reads `useParams<{ brandSlug, serviceSlug }>()`
+   - Looks up the combo; 404 if not found
+   - Renders hero, symptoms, models, process, parts, FAQs, cross-links, CTA
+   - Injects JSON-LD: `Service` (with `brand: { @type: Brand, name }`, `provider: {@id: business}`, `areaServed: Dubai`, `hasOfferCatalog` listing the sub-steps), `FAQPage`, `BreadcrumbList` (Home > Brands > {Brand} > {Service})
+
+## Files to edit
+
+3. **`src/App.tsx`** — add `<Route path="/brands/:brandSlug/:serviceSlug" element={<BrandServicePage />} />` above the catch-all
+4. **`src/pages/BrandPage.tsx`** — add a "Services for {Brand}" grid of 6 cards linking to the new pages
+5. **`src/pages/Services.tsx`** — under each brand card, show a subtle count "6 services available"
+6. **`public/sitemap.xml`** — append all 78 URLs
+
+## Schema.org (auto per page)
+
+```json
+{
+  "@type": "Service",
+  "@id": "https://digitecme.com/brands/bmw-service-dubai/oil-change#service",
+  "name": "BMW Oil Change Dubai",
+  "serviceType": "BMW Oil Change",
+  "brand": { "@type": "Brand", "name": "BMW" },
+  "provider": { "@id": "https://digitecme.com/#business" },
+  "areaServed": [{"@type":"City","name":"Dubai"}, ...],
+  "hasOfferCatalog": { "@type":"OfferCatalog", "itemListElement":[...processSteps] }
+}
+```
+Plus `FAQPage` and `BreadcrumbList` (Home > Brands > {Brand} > {Service}).
+
+## Scope realism
+
+78 fully custom pages is a large volume of hand-written copy. To keep quality high I'll:
+- Write real brand+service-specific paragraphs (no "Lorem ipsum", no interchangeable filler)
+- Use brand-specific technical vocabulary (ISTA, XENTRY, PIWIS, ODIS, PDK, xDrive, quattro, 4MATIC, air suspension, carbon-ceramic, etc.)
+- Vary FAQs so no two pages share the same questions verbatim
+- Ship all 78 in one pass; the codebase will grow by ~one large data file (~2500 to 3500 lines), which is expected for this SEO strategy
+
+## Technical details
+
+- Route file: `src/pages/BrandServicePage.tsx`
+- Data: single TS file (not JSON) so we get typing + can reuse `detectBrand` helper from `src/lib/schema.ts`
+- Existing helpers reused: `useSeo`, `buildService`, `buildFAQ`, `buildBreadcrumb`, WhatsApp CTA component pattern
+- No new dependencies
+- Scroll-to-top already handled globally in `App.tsx`
+- Sitemap: currently a static file, so I'll append the 78 entries directly (matches existing convention). No generator script migration.
+- No changes to backend, brand data, or existing `/services/*` pages
