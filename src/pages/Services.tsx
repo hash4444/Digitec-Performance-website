@@ -6,6 +6,23 @@ import { Footer } from '@/components/Footer';
 
 import { services } from '@/data/services';
 import { buildBreadcrumb, buildWebPage, pageGraph } from '@/lib/schema';
+import { brands } from '@/data/brands';
+
+const brandLogoMap: Record<string, string> = {
+  'Mercedes-Benz': '/lovable-uploads/a6f453f2-f2c5-4140-8f2a-bfa3401611d7.png',
+  'Maybach': '/lovable-uploads/5cc5b8af-7dd9-46a9-9ee2-3e5b14fda559.png',
+  'Porsche': '/lovable-uploads/8e7e2545-680e-42ac-bd97-ba1f9c063649.png',
+  'Audi': '/lovable-uploads/a3e92dde-70a9-499b-a7b0-ae0df117baf9.png',
+  'BMW': '/lovable-uploads/d66ea83e-7d6a-4c19-bf30-f27eca93ac8e.png',
+  'Lamborghini': '/lovable-uploads/8c4046ee-9977-417a-90a9-820452146832.png',
+  'Bentley': '/lovable-uploads/b2cd5f78-8a43-4a9b-8a0a-19124642ca5a.png',
+  'McLaren': '/lovable-uploads/7f8d98f4-3581-451c-bfaf-262eb67cf14b.png',
+  'Ferrari': '/lovable-uploads/11f29482-f2d3-4278-ae2a-397044a1ff95.png',
+  'Bugatti': '/lovable-uploads/69bd2660-e800-47b4-bc4d-de6e6b65b984.png',
+  'Range Rover': '/lovable-uploads/4bb58917-704a-4c5d-84b6-dc428a00c004.png',
+  'Rolls-Royce': '/lovable-uploads/a4c040e8-740a-4fcb-b837-b86e15c25306.png',
+  'Aston Martin': '/lovable-uploads/8d3bad14-09df-4ef1-86c6-13cfcba7042b.png',
+};
 
 const categories = [
   'Core Mechanical Services',
@@ -41,6 +58,18 @@ const Services = () => {
             position: i + 1,
             url: `https://digitecme.com/services/${s.slug}`,
             name: s.title,
+          })),
+        },
+        {
+          '@type': 'ItemList',
+          '@id': `${url}#brandlist`,
+          name: 'Car brands serviced by Digitec Performance Center',
+          numberOfItems: brands.length,
+          itemListElement: brands.map((b, i) => ({
+            '@type': 'ListItem',
+            position: i + 1,
+            url: `https://digitecme.com/brands/${b.slug}`,
+            name: `${b.name} Service Dubai`,
           })),
         },
       ]),
