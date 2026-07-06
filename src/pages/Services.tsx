@@ -5,6 +5,7 @@ import Header from '@/components/Header';
 import { Footer } from '@/components/Footer';
 
 import { services } from '@/data/services';
+import { buildBreadcrumb, buildWebPage, pageGraph } from '@/lib/schema';
 
 const categories = [
   'Core Mechanical Services',
@@ -14,11 +15,44 @@ const categories = [
 ];
 
 const Services = () => {
+  const url = 'https://digitecme.com/services';
+  const servicesGraph = React.useMemo(
+    () =>
+      pageGraph([
+        buildWebPage({
+          url,
+          name: 'All Services | DIGI-TEC Performance Center Dubai',
+          description:
+            'Full catalog of automotive services in Dubai — mechanical repair, diagnostics, body work, and paint protection at DIGI-TEC Performance Center.',
+          type: 'CollectionPage',
+          breadcrumbId: `${url}#breadcrumb`,
+        }),
+        buildBreadcrumb(url, [
+          { name: 'Home', url: 'https://digitecme.com/' },
+          { name: 'Services', url },
+        ]),
+        {
+          '@type': 'ItemList',
+          '@id': `${url}#servicelist`,
+          name: 'Services offered by Digitec Performance Center',
+          numberOfItems: services.length,
+          itemListElement: services.map((s, i) => ({
+            '@type': 'ListItem',
+            position: i + 1,
+            url: `https://digitecme.com/services/${s.slug}`,
+            name: s.title,
+          })),
+        },
+      ]),
+    [],
+  );
+
   useSeo({
     title: 'All Services | DIGI-TEC Performance Center Dubai',
     description:
       'Explore our full range of automotive services in Dubai — from mechanical repair and diagnostics to body work and paint protection. DIGI-TEC Performance Center.',
     canonical: 'https://digitecme.com/services',
+    jsonLd: servicesGraph,
   });
 
   return (
