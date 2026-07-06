@@ -104,6 +104,54 @@ const Services = () => {
         </div>
       </section>
 
+      {/* Brands We Service */}
+      <section className="pb-8 sm:pb-16">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6">
+          <div className="mb-6 sm:mb-10">
+            <span className="text-burnt-orange font-semibold text-xs sm:text-sm uppercase tracking-widest mb-2 block">
+              Brands We Service
+            </span>
+            <h2 className="text-xl sm:text-3xl md:text-4xl font-black mb-2 sm:mb-3">
+              Dedicated Service for Every Luxury Brand
+            </h2>
+            <p className="text-gray-400 text-sm sm:text-base max-w-3xl leading-relaxed">
+              Tap any brand below for a dedicated service page covering diagnostics, mechanical repair, transmission, suspension, brakes, and performance work tuned to that marque.
+            </p>
+          </div>
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4">
+            {brands.map((b) => (
+              <Link
+                key={b.slug}
+                to={`/brands/${b.slug}`}
+                className="group flex items-center gap-3 sm:gap-4 bg-charcoal/60 border border-gray-800/50 rounded-2xl p-3 sm:p-4 hover:border-burnt-orange/50 hover:bg-charcoal/80 transition-all duration-300"
+                aria-label={`${b.name} service and repair in Dubai`}
+              >
+                <div className="w-12 h-12 sm:w-14 sm:h-14 shrink-0 p-1.5 bg-white/90 rounded-full flex items-center justify-center">
+                  {brandLogoMap[b.name] ? (
+                    <img
+                      src={brandLogoMap[b.name]}
+                      alt={`${b.name} logo`}
+                      className="w-full h-full object-contain"
+                      loading="lazy"
+                    />
+                  ) : (
+                    <span className="text-lg font-black text-burnt-orange">{b.name.charAt(0)}</span>
+                  )}
+                </div>
+                <div className="min-w-0">
+                  <h3 className="font-bold text-sm sm:text-base leading-tight group-hover:text-burnt-orange transition-colors truncate">
+                    {b.name}
+                  </h3>
+                  <p className="text-gray-400 text-[11px] sm:text-xs mt-0.5 line-clamp-2 leading-snug">
+                    {b.specialization}
+                  </p>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Services by Category */}
       <section className="pb-12 sm:pb-24">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 space-y-8 sm:space-y-16">
