@@ -1,0 +1,114 @@
+{
+  "version": 1,
+  "sdk_version": "0.20.0",
+  "path": "/mcp",
+  "auth": {
+    "type": "none"
+  },
+  "mcp": {
+    "server": {
+      "name": "digitec-mcp",
+      "version": "0.1.0",
+      "title": "Digitec Performance Center"
+    },
+    "tools": [
+      {
+        "name": "get_contact_info",
+        "title": "Get contact info",
+        "description": "Return Digitec Performance Center contact details: phone, WhatsApp, email, address, and website.",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {}
+        },
+        "outputSchema": null
+      },
+      {
+        "name": "list_services",
+        "title": "List services",
+        "description": "List Digitec Performance Center services in Dubai. Optionally filter by category (general or mercedes) or a case-insensitive search string on the title.",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {
+            "category": {
+              "description": "Filter by service category. Defaults to all.",
+              "type": "string",
+              "enum": [
+                "general",
+                "mercedes",
+                "all"
+              ]
+            },
+            "search": {
+              "description": "Case-insensitive substring to match against the service title.",
+              "type": "string"
+            }
+          }
+        },
+        "outputSchema": null
+      },
+      {
+        "name": "list_brands",
+        "title": "List brands serviced",
+        "description": "List luxury and performance car brands serviced by Digitec Performance Center in Dubai.",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {}
+        },
+        "outputSchema": null
+      },
+      {
+        "name": "build_booking_link",
+        "title": "Build WhatsApp booking link",
+        "description": "Build a WhatsApp deep link to Digitec Performance Center with a prefilled booking message that includes the car and service context.",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": false,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {
+            "vehicle": {
+              "type": "string",
+              "minLength": 1,
+              "description": "Vehicle make and model, e.g. 'Mercedes C63 AMG 2020'."
+            },
+            "service": {
+              "type": "string",
+              "minLength": 1,
+              "description": "Service the customer wants, e.g. 'Oil change' or 'AIRMATIC suspension fault'."
+            },
+            "notes": {
+              "description": "Optional extra context like symptoms, mileage, or preferred date.",
+              "type": "string"
+            }
+          },
+          "required": [
+            "vehicle",
+            "service"
+          ]
+        },
+        "outputSchema": null
+      }
+    ]
+  }
+}
