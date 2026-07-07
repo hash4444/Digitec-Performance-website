@@ -15,6 +15,7 @@ import Blog from "./pages/Blog";
 import BlogPost from "./pages/BlogPost";
 import BrandPage from "./pages/BrandPage";
 import BrandServicePage from "./pages/BrandServicePage";
+import BestWorkshopPage from "./pages/BestWorkshopPage";
 import NotFound from "./pages/NotFound";
 import LegacyRedirectHandler from "./components/LegacyRedirectHandler";
 
@@ -51,6 +52,15 @@ const App = () => (
           <Route path="/blog/:slug" element={<BlogPost />} />
           <Route path="/brands/:slug" element={<BrandPage />} />
           <Route path="/brands/:brandSlug/:serviceSlug" element={<BrandServicePage />} />
+          {/* AEO landing pages — targeted at AI assistants ("best ... in Dubai") */}
+          <Route path="/best-car-workshop-dubai" element={<BestWorkshopPage />} />
+          <Route path="/best-mercedes-workshop-dubai" element={<BestWorkshopPage />} />
+          <Route path="/best-bmw-workshop-dubai" element={<BestWorkshopPage />} />
+          <Route path="/best-porsche-workshop-dubai" element={<BestWorkshopPage />} />
+          <Route path="/best-audi-workshop-dubai" element={<BestWorkshopPage />} />
+          <Route path="/best-range-rover-workshop-dubai" element={<BestWorkshopPage />} />
+          <Route path="/best-ferrari-workshop-dubai" element={<BestWorkshopPage />} />
+          <Route path="/best-lamborghini-workshop-dubai" element={<BestWorkshopPage />} />
           <Route path="/about-us" element={<Navigate to="/about" replace />} />
           <Route path="/about-us-demo" element={<Navigate to="/about" replace />} />
           <Route path="/who-we-are" element={<Navigate to="/about" replace />} />
