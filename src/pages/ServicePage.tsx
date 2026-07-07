@@ -5,6 +5,7 @@ import Header from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { FinalCTA } from '@/components/FinalCTA';
 import { getServiceBySlug, allServices } from '@/data/services';
+import { brands } from '@/data/brands';
 import { ChevronRight, Check, MessageCircle, Phone } from 'lucide-react';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import {
@@ -470,6 +471,37 @@ const ServicePage = () => {
           </div>
         </section>
       )}
+
+      {/* Brand pages — internal linking to boost brand hub authority for "{brand} service dubai" queries */}
+      <section className="py-14 border-t border-gray-800/50 bg-gradient-to-br from-charcoal/30 to-black">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6">
+          <div className="text-center mb-8">
+            <h2 className="text-2xl sm:text-3xl font-bold mb-2">
+              Brand Specialists in <span className="text-burnt-orange">Dubai</span>
+            </h2>
+            <p className="text-gray-400 text-sm sm:text-base">
+              Every {service?.title.toLowerCase() ?? 'service'} we perform is available for the marques below.
+            </p>
+          </div>
+          <div className="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-7 gap-3">
+            {brands.map((b) => (
+              <Link
+                key={b.slug}
+                to={`/brands/${b.slug}`}
+                aria-label={`${b.name} service Dubai`}
+                className="group flex flex-col items-center gap-2 p-3 bg-white/5 hover:bg-white/10 border border-white/5 hover:border-burnt-orange/40 rounded-2xl transition-all duration-300"
+              >
+                <div className="w-12 h-12 sm:w-14 sm:h-14 p-1.5 bg-white/90 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                  <img src={b.logo} alt={`${b.name} service Dubai`} className="w-full h-full object-contain" />
+                </div>
+                <span className="text-[11px] sm:text-xs text-gray-300 group-hover:text-burnt-orange text-center font-medium leading-tight">
+                  {b.name} Service
+                </span>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
 
       <FinalCTA />
       <Footer />
