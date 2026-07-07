@@ -154,10 +154,10 @@ const BrandPage = () => {
 
   useSeo({
     title: brand
-      ? `${brand.name} Service & Repair in Dubai | Digi-Tec Performance Centre`
+      ? `${brand.name} Service Dubai — Repair, Oil Change & Diagnostics | Digi-Tec`
       : 'Brand Service in Dubai | Digi-Tec Performance Centre',
     description: brand
-      ? `Expert ${brand.name} maintenance, diagnostics, and performance tuning in Dubai. Certified technicians, genuine parts, and state-of-the-art equipment at Digi-Tec Performance Centre.`
+      ? `${brand.name} service Dubai: repair, oil change, brake, transmission, suspension, AC and diagnostics. Genuine parts, dealer-level tools, certified technicians. Call +971 4 340 2223.`
       : 'Expert luxury car maintenance, diagnostics, and performance tuning in Dubai at Digi-Tec Performance Centre.',
     canonical: brand ? `https://digitecme.com/brands/${brand.slug}` : 'https://digitecme.com/',
     jsonLd: brandJsonLd,
@@ -197,7 +197,7 @@ const BrandPage = () => {
                 </span>
               </div>
               <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black mb-4 sm:mb-6 leading-tight">
-                {brand.name} <span className="text-burnt-orange">Service Centre</span> in Dubai
+                {brand.name} <span className="text-burnt-orange">Service Dubai</span>
               </h1>
               <p className="text-gray-300 text-base sm:text-lg leading-relaxed mb-6 sm:mb-8 max-w-2xl">
                 {brand.intro}
@@ -284,10 +284,10 @@ const BrandPage = () => {
           <div className="max-w-7xl mx-auto px-4 sm:px-6">
             <div className="text-center mb-8 sm:mb-12">
               <h2 className="text-2xl sm:text-4xl lg:text-5xl font-black mb-3">
-                Dedicated <span className="text-burnt-orange">{brand.name}</span> Service Pages
+                {brand.name} <span className="text-burnt-orange">Repair Dubai</span> — Every Service
               </h2>
               <p className="text-gray-400 max-w-2xl mx-auto text-sm sm:text-base">
-                Specialist landing pages for the {brand.name} work we do most often, each with brand-specific parts, tools, and technical detail.
+                Whether you searched for {brand.name} repair Dubai, {brand.name} oil change Dubai, or {brand.name} brake repair Dubai, every specialist service has its own dedicated page with brand-specific parts, tools, and technical detail.
               </p>
             </div>
             <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 sm:gap-4">
@@ -305,6 +305,33 @@ const BrandPage = () => {
                   </span>
                 </Link>
               ))}
+            </div>
+            {/* Secondary-intent keyword copy — targets "{brand} repair dubai", "{brand} oil change dubai", "{brand} brake repair dubai" */}
+            <div className="max-w-4xl mx-auto mt-10 sm:mt-14 space-y-6 sm:space-y-8">
+              <div>
+                <h3 className="text-xl sm:text-2xl font-bold text-off-white mb-2">
+                  {brand.name} Repair Dubai
+                </h3>
+                <p className="text-gray-400 text-sm sm:text-base leading-relaxed">
+                  Full mechanical and electrical repair for every {brand.name} platform, from engine and transmission overhauls to suspension, brakes, and cooling system work. Our workshop in Al Quoz handles warranty-safe {brand.name} repair in Dubai with genuine OEM parts and factory diagnostic tools.
+                </p>
+              </div>
+              <div>
+                <h3 className="text-xl sm:text-2xl font-bold text-off-white mb-2">
+                  {brand.name} Oil Change Dubai
+                </h3>
+                <p className="text-gray-400 text-sm sm:text-base leading-relaxed">
+                  Manufacturer-approved oil and filter service using the correct {brand.name} specification fluid for Dubai's climate. Every {brand.name} oil change in Dubai includes a full multi-point inspection, service reset, and digital service record.
+                </p>
+              </div>
+              <div>
+                <h3 className="text-xl sm:text-2xl font-bold text-off-white mb-2">
+                  {brand.name} Brake Repair Dubai
+                </h3>
+                <p className="text-gray-400 text-sm sm:text-base leading-relaxed">
+                  Pads, discs, sensors, calipers, and full hydraulic system work using genuine {brand.name} components. Our {brand.name} brake repair service in Dubai covers ceramic, carbon-ceramic, and standard iron setups with proper bedding-in and system bleeding.
+                </p>
+              </div>
             </div>
           </div>
         </section>
