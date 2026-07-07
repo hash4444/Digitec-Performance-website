@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, useParams, Navigate } from 'react-router-dom';
+import { Link, useLocation, Navigate } from 'react-router-dom';
 import { Phone, MessageCircle, CheckCircle2, Star, MapPin, ArrowRight } from 'lucide-react';
 import Header from '@/components/Header';
 import { Footer } from '@/components/Footer';
@@ -21,9 +21,10 @@ import {
 } from '@/lib/schema';
 
 const BestWorkshopPage: React.FC = () => {
-  const { slug } = useParams<{ slug: string }>();
+  const { pathname } = useLocation();
+  const slug = pathname.replace(/^\/+/, '').split('/')[0];
   const page = slug ? getBestWorkshopPage(slug) : undefined;
-  const url = `${SITE_URL}/${slug ?? ''}`;
+  const url = `${SITE_URL}/${slug}`;
 
   const jsonLd = React.useMemo(() => {
     if (!page) return undefined;
