@@ -1,24 +1,21 @@
-
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useMemo, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
 import { useIsMobile } from '@/hooks/use-mobile';
 import { getSlugForOrbitName } from '@/data/brands';
 
-const brands = [
-  { name: 'Mercedes-Benz', specialization: 'Repair • Maintenance • Diagnostics • Performance' },
-  { name: 'Maybach', specialization: 'Repair • Maintenance • Diagnostics • Performance' },
-  { name: 'Porsche', specialization: 'Repair • Maintenance • Diagnostics • Performance' },
-  { name: 'Audi', specialization: 'Repair • Maintenance • Diagnostics • Performance' },
-  { name: 'BMW', specialization: 'Repair • Maintenance • Diagnostics • Performance' },
-  { name: 'Lamborghini', specialization: 'Repair • Maintenance • Diagnostics • Performance' },
-  { name: 'Bentley', specialization: 'Repair • Maintenance • Diagnostics • Performance' },
-  { name: 'McLaren', specialization: 'Repair • Maintenance • Diagnostics • Performance' },
-  { name: 'Ferrari', specialization: 'Repair • Maintenance • Diagnostics • Performance' },
-  { name: 'Bugatti', specialization: 'Repair • Maintenance • Diagnostics • Performance' },
-  { name: 'Range Rover', specialization: 'Repair • Maintenance • Diagnostics • Performance' },
-  { name: 'Rolls Royce', specialization: 'Repair • Maintenance • Diagnostics • Performance' },
-  { name: 'Aston Martin', specialization: 'Repair • Maintenance • Diagnostics • Performance' }
+const SPEC = 'Repair • Maintenance • Diagnostics • Performance';
+
+// Inner ring (5) + outer ring (8) = 13 marques.
+const INNER = ['Mercedes-Benz', 'Porsche', 'BMW', 'Audi', 'Ferrari'];
+const OUTER = [
+  'Lamborghini',
+  'Bentley',
+  'McLaren',
+  'Maybach',
+  'Range Rover',
+  'Aston Martin',
+  'Rolls Royce',
+  'Bugatti',
 ];
 
 const logoMap: Record<string, string> = {
@@ -40,209 +37,398 @@ const logoMap: Record<string, string> = {
 const BrandLogo = ({ name }: { name: string }) => {
   const src = logoMap[name];
   if (!src) return <span className="text-2xl font-black text-burnt-orange">{name.charAt(0)}</span>;
-  return <img src={src} alt={`${name} Logo`} className="w-full h-full object-contain" />;
+  return <img src={src} alt={`${name} Logo`} draggable={false} className="w-full h-full object-contain" />;
 };
 
 const MobileGrid = () => (
   <div className="grid grid-cols-4 gap-3 px-2">
-    {brands.map((brand) => (
+    {[...INNER, ...OUTER].map((name) => (
       <Link
-        key={brand.name}
-        to={`/brands/${getSlugForOrbitName(brand.name) ?? ''}`}
+        key={name}
+        to={`/brands/${getSlugForOrbitName(name) ?? ''}`}
         className="flex flex-col items-center gap-1.5 group"
-        aria-label={`${brand.name} service in Dubai`}
+        aria-label={`${name} service in Dubai`}
       >
-        <div className="w-16 h-16 p-1.5 bg-white/80 backdrop-blur-sm rounded-full shadow-lg border border-gray-100 flex items-center justify-center group-hover:scale-110 transition-transform">
-          <BrandLogo name={brand.name} />
+        <div className="w-16 h-16 p-1.5 bg-white/90 rounded-full shadow-lg border border-white/10 flex items-center justify-center group-hover:scale-110 transition-transform">
+          <BrandLogo name={name} />
         </div>
-        <span className="text-[11px] text-gray-600 group-hover:text-burnt-orange text-center leading-tight font-medium">{brand.name}</span>
+        <span className="text-[11px] text-gray-400 group-hover:text-burnt-orange text-center leading-tight font-medium">
+          {name}
+        </span>
       </Link>
     ))}
   </div>
 );
 
-export const BrandsWeServe = () => {
-  const isMobile = useIsMobile();
-  const sectionRef = useRef<HTMLDivElement>(null);
-  const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
-  const [isMouseInSection, setIsMouseInSection] = useState(false);
-  const [isDragging, setIsDragging] = useState(false);
-  const [orbitRotation, setOrbitRotation] = useState(0);
-  const dragStartRef = useRef({ x: 0, y: 0, rotation: 0 });
+// Geometry (design units — stage is 700×700, scaled responsively).
+const R_INNER = 168;
+const R_OUTER = 290;
+
+// Static tachometer tick ring around the core.
+const TICKS = Array.from({ length: 72 }, (_, i) => {
+  const major = i % 6 === 0;
+  const a = (i / 72) * Math.PI * 2;
+  const cx = 105;
+  const cy = 105;
+  const rOut = 104;
+  const rIn = rOut - (major ? 10 : 5);
+  return {
+    x1: cx + rOut * Math.cos(a),
+    y1: cy + rOut * Math.sin(a),
+    x2: cx + rIn * Math.cos(a),
+    y2: cy + rIn * Math.sin(a),
+    major,
+  };
+});
+
+const Orbit = () => {
+  const stageRef = useRef<HTMLDivElement>(null);
+  const parallaxRef = useRef<HTMLDivElement>(null);
+  const cometRef = useRef<HTMLDivElement>(null);
+  const innerRefs = useRef<(HTMLAnchorElement | null)[]>([]);
+  const outerRefs = useRef<(HTMLAnchorElement | null)[]>([]);
+
+  // Cross-boundary flags shared between React handlers and the RAF loop.
+  const hoveredRef = useRef(false);
+  const movedRef = useRef(false);
+
+  const [active, setActive] = useState<string | null>(null);
 
   useEffect(() => {
-    if (isMobile) return;
+    let angleIn = -90;
+    let angleOut = 14;
+    let cometA = 40;
+    let speedMul = 1;
+    let dragVel = 0;
+    let dragging = false;
+    let lastT = performance.now();
+    let lastPA = 0;
+    let lastPT = 0;
+    let moveAcc = 0;
+    // Cursor parallax (planets drift toward the pointer).
+    let mx = 0;
+    let my = 0;
+    let px = 0;
+    let py = 0;
 
-    const handleMouseMove = (e: MouseEvent) => {
-      if (sectionRef.current && !isDragging) {
-        const rect = sectionRef.current.getBoundingClientRect();
-        const centerX = rect.width / 2;
-        const centerY = rect.height / 2;
-        const x = (e.clientX - rect.left - centerX) / centerX;
-        const y = (e.clientY - rect.top - centerY) / centerY;
-        setMousePos({ x: x * 20, y: y * 20 });
-      }
+    const BASE_IN = 8; // deg / second
+    const BASE_OUT = -5;
+    const COMET = 24;
+    let rafId = 0;
+
+    const stage = stageRef.current;
+    if (!stage) return;
+
+    const centerOf = () => {
+      const r = stage.getBoundingClientRect();
+      return { x: r.left + r.width / 2, y: r.top + r.height / 2 };
+    };
+    const pointerAngle = (e: PointerEvent) => {
+      const c = centerOf();
+      return (Math.atan2(e.clientY - c.y, e.clientX - c.x) * 180) / Math.PI;
     };
 
-    const handleMouseEnter = () => setIsMouseInSection(true);
-    const handleMouseLeave = () => { setIsMouseInSection(false); setMousePos({ x: 0, y: 0 }); };
-
-    const handleMouseDown = (e: MouseEvent) => {
-      if (sectionRef.current) {
-        const rect = sectionRef.current.getBoundingClientRect();
-        const centerX = rect.left + rect.width / 2;
-        const centerY = rect.top + rect.height / 2;
-        const angle = Math.atan2(e.clientY - centerY, e.clientX - centerX);
-        setIsDragging(true);
-        dragStartRef.current = { x: e.clientX, y: e.clientY, rotation: orbitRotation - angle };
-      }
+    const onMove = (e: PointerEvent) => {
+      const a = pointerAngle(e);
+      let d = a - lastPA;
+      if (d > 180) d -= 360;
+      if (d < -180) d += 360;
+      angleIn += d;
+      angleOut += d * 0.72;
+      moveAcc += Math.abs(d);
+      if (moveAcc > 4) movedRef.current = true;
+      const now = performance.now();
+      const dt = Math.max(now - lastPT, 1) / 1000;
+      dragVel = Math.max(-720, Math.min(720, d / dt));
+      lastPA = a;
+      lastPT = now;
+    };
+    const onUp = () => {
+      dragging = false;
+      stage.classList.remove('is-dragging');
+      window.removeEventListener('pointermove', onMove);
+      window.removeEventListener('pointerup', onUp);
+    };
+    const onDown = (e: PointerEvent) => {
+      dragging = true;
+      moveAcc = 0;
+      movedRef.current = false;
+      stage.classList.add('is-dragging');
+      lastPA = pointerAngle(e);
+      lastPT = performance.now();
+      dragVel = 0;
+      window.addEventListener('pointermove', onMove);
+      window.addEventListener('pointerup', onUp);
+    };
+    const onHover = (e: PointerEvent) => {
+      const c = centerOf();
+      const r = stage.getBoundingClientRect();
+      mx = ((e.clientX - c.x) / (r.width / 2)) * 12;
+      my = ((e.clientY - c.y) / (r.height / 2)) * 12;
+    };
+    const onLeave = () => {
+      mx = 0;
+      my = 0;
     };
 
-    const handleMouseMoveGlobal = (e: MouseEvent) => {
-      if (isDragging && sectionRef.current) {
-        const rect = sectionRef.current.getBoundingClientRect();
-        const centerX = rect.left + rect.width / 2;
-        const centerY = rect.top + rect.height / 2;
-        const angle = Math.atan2(e.clientY - centerY, e.clientX - centerX);
-        setOrbitRotation(dragStartRef.current.rotation + angle);
-      }
+    stage.addEventListener('pointerdown', onDown);
+    stage.addEventListener('pointermove', onHover);
+    stage.addEventListener('pointerleave', onLeave);
+
+    const place = (el: HTMLElement | null, deg: number, r: number) => {
+      if (!el) return;
+      const rad = (deg * Math.PI) / 180;
+      el.style.transform = `translate(-50%, -50%) translate(${Math.cos(rad) * r}px, ${Math.sin(rad) * r}px)`;
     };
 
-    const handleMouseUp = () => setIsDragging(false);
+    const frame = (t: number) => {
+      const dt = Math.min((t - lastT) / 1000, 0.05);
+      lastT = t;
 
-    const section = sectionRef.current;
-    if (section) {
-      section.addEventListener('mousemove', handleMouseMove);
-      section.addEventListener('mouseenter', handleMouseEnter);
-      section.addEventListener('mouseleave', handleMouseLeave);
-      section.addEventListener('mousedown', handleMouseDown);
-    }
-    document.addEventListener('mousemove', handleMouseMoveGlobal);
-    document.addEventListener('mouseup', handleMouseUp);
+      const targetMul = dragging ? 0 : hoveredRef.current ? 0.1 : 1;
+      speedMul += (targetMul - speedMul) * Math.min(dt * 6, 1);
+
+      if (!dragging) {
+        angleIn += (BASE_IN * speedMul + dragVel) * dt;
+        angleOut += (BASE_OUT * speedMul + dragVel * 0.72) * dt;
+        dragVel *= Math.pow(0.06, dt);
+        if (Math.abs(dragVel) < 2) dragVel = 0;
+      }
+      cometA += COMET * (0.35 + 0.65 * speedMul) * dt;
+
+      px += (mx - px) * Math.min(dt * 4, 1);
+      py += (my - py) * Math.min(dt * 4, 1);
+      if (parallaxRef.current) parallaxRef.current.style.transform = `translate(${px}px, ${py}px)`;
+
+      const stepIn = 360 / INNER.length;
+      for (let i = 0; i < INNER.length; i++) place(innerRefs.current[i], angleIn + stepIn * i, R_INNER);
+      const stepOut = 360 / OUTER.length;
+      for (let i = 0; i < OUTER.length; i++) place(outerRefs.current[i], angleOut + stepOut * i, R_OUTER);
+
+      if (cometRef.current) {
+        const rad = (cometA * Math.PI) / 180;
+        cometRef.current.style.transform = `translate(-50%, -50%) translate(${Math.cos(rad) * R_OUTER}px, ${Math.sin(rad) * R_OUTER}px) rotate(${cometA + 90}deg)`;
+      }
+
+      rafId = requestAnimationFrame(frame);
+    };
+    rafId = requestAnimationFrame(frame);
 
     return () => {
-      if (section) {
-        section.removeEventListener('mousemove', handleMouseMove);
-        section.removeEventListener('mouseenter', handleMouseEnter);
-        section.removeEventListener('mouseleave', handleMouseLeave);
-        section.removeEventListener('mousedown', handleMouseDown);
-      }
-      document.removeEventListener('mousemove', handleMouseMoveGlobal);
-      document.removeEventListener('mouseup', handleMouseUp);
+      cancelAnimationFrame(rafId);
+      stage.removeEventListener('pointerdown', onDown);
+      stage.removeEventListener('pointermove', onHover);
+      stage.removeEventListener('pointerleave', onLeave);
+      window.removeEventListener('pointermove', onMove);
+      window.removeEventListener('pointerup', onUp);
     };
-  }, [isDragging, orbitRotation, isMobile]);
+  }, []);
 
-  useEffect(() => {
-    if (isMobile || isDragging) return;
-    const interval = setInterval(() => setOrbitRotation(prev => prev + 0.002), 16);
-    return () => clearInterval(interval);
-  }, [isDragging, isMobile]);
-
-  const getOrbitalPosition = (index: number, total: number) => {
-    const angle = (index / total) * 2 * Math.PI + orbitRotation;
-    return { x: Math.cos(angle) * 320, y: Math.sin(angle) * 240, angle };
+  const guardClick = (e: React.MouseEvent) => {
+    if (movedRef.current) {
+      e.preventDefault();
+      e.stopPropagation();
+    }
   };
 
+  const renderChip = (
+    name: string,
+    i: number,
+    refs: React.MutableRefObject<(HTMLAnchorElement | null)[]>,
+    size: string,
+  ) => (
+    <Link
+      key={name}
+      ref={(el) => (refs.current[i] = el)}
+      to={`/brands/${getSlugForOrbitName(name) ?? ''}`}
+      aria-label={`${name} service in Dubai`}
+      draggable={false}
+      onDragStart={(e) => e.preventDefault()}
+      onClick={guardClick}
+      onMouseEnter={() => {
+        hoveredRef.current = true;
+        setActive(name);
+      }}
+      onMouseLeave={() => {
+        hoveredRef.current = false;
+        setActive(null);
+      }}
+      className={`chip-slot absolute left-1/2 top-1/2 flex items-center justify-center ${size}`}
+    >
+      <span className={`chip-visual ${active === name ? 'is-active' : ''}`}>
+        <BrandLogo name={name} />
+      </span>
+    </Link>
+  );
+
   return (
-    <TooltipProvider>
+    <>
       <style>{`
-        @keyframes pulseRing {
-          0% { transform: scale(1); opacity: 0.8; }
-          50% { transform: scale(1.1); opacity: 0.4; }
-          100% { transform: scale(1.2); opacity: 0; }
+        @keyframes dt-sweep { to { transform: translate(-50%, -50%) rotate(360deg); } }
+        @keyframes dt-pulse {
+          0%   { transform: translate(-50%, -50%) scale(0.92); opacity: 0.65; }
+          70%  { transform: translate(-50%, -50%) scale(1.24); opacity: 0; }
+          100% { transform: translate(-50%, -50%) scale(1.24); opacity: 0; }
         }
-        @keyframes glowPulse {
-          0%, 100% { filter: drop-shadow(0 0 20px rgba(255, 107, 53, 0.6)); }
-          50% { filter: drop-shadow(0 0 40px rgba(255, 107, 53, 0.9)); }
+        @keyframes dt-glow {
+          0%, 100% { text-shadow: 0 0 22px rgba(255,107,53,0.55), 0 0 50px rgba(255,107,53,0.3); }
+          50%      { text-shadow: 0 0 34px rgba(255,107,53,0.8), 0 0 70px rgba(255,107,53,0.45); }
         }
-        .orbital-container { cursor: ${isDragging ? 'grabbing' : 'grab'}; }
-        .brand-logo { transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1); filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.1)); }
-        .brand-logo:hover { transform: scale(1.25); filter: drop-shadow(0 8px 24px rgba(255, 107, 53, 0.4)); z-index: 10; }
-        .central-d { animation: glowPulse 3s ease-in-out infinite; text-shadow: 0 0 30px rgba(255, 107, 53, 0.8), 0 0 60px rgba(255, 107, 53, 0.6), 0 0 90px rgba(255, 107, 53, 0.4); }
-        .pulse-ring { animation: pulseRing 2s ease-out infinite; border: 2px solid rgba(255, 107, 53, 0.3); border-radius: 50%; position: absolute; }
+        .dt-stage { cursor: grab; touch-action: none; }
+        .dt-stage.is-dragging { cursor: grabbing; }
+        .dt-center { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); }
+        .chip-slot { will-change: transform; }
+        .chip-visual {
+          display: flex; align-items: center; justify-content: center;
+          width: 100%; height: 100%; padding: 18%;
+          border-radius: 9999px;
+          background:
+            radial-gradient(circle at 32% 26%, rgba(255,255,255,0.95), rgba(255,255,255,0.82) 60%);
+          border: 1px solid rgba(255,255,255,0.14);
+          box-shadow: 0 18px 34px -18px rgba(0,0,0,0.85);
+          transition: transform .3s cubic-bezier(0.23,1,0.32,1), box-shadow .3s ease, border-color .3s ease;
+        }
+        .chip-slot:hover .chip-visual, .chip-visual.is-active {
+          transform: scale(1.16);
+          border-color: rgba(255,107,53,0.85);
+          box-shadow: 0 0 0 5px rgba(255,107,53,0.14), 0 0 44px -6px rgba(255,107,53,0.6), 0 18px 34px -18px rgba(0,0,0,0.85);
+        }
+        @media (prefers-reduced-motion: reduce) {
+          .dt-sweep, .dt-pulse { animation: none !important; }
+          .dt-core-d { animation: none !important; }
+        }
       `}</style>
 
-      <section
-        ref={sectionRef}
-        className={`relative bg-white overflow-hidden flex items-center justify-center px-4 sm:px-6 select-none ${isMobile ? 'py-10' : 'py-16 sm:py-24 lg:py-32 min-h-screen'}`}
-      >
-        {/* Pulse rings - desktop only */}
-        {!isMobile && (
-          <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-            <div className="pulse-ring w-48 h-48" style={{ animationDelay: '0s' }} />
-            <div className="pulse-ring w-60 h-60" style={{ animationDelay: '0.5s' }} />
-            <div className="pulse-ring w-72 h-72" style={{ animationDelay: '1s' }} />
-          </div>
-        )}
+      <div className="relative flex items-center justify-center h-[560px] md:h-[640px] lg:h-[720px]">
+        <div
+          ref={stageRef}
+          className="dt-stage relative select-none scale-[0.72] md:scale-[0.82] lg:scale-100 origin-center"
+          style={{ width: 700, height: 700 }}
+        >
+          {/* guide rings */}
+          <div className="dt-center rounded-full border border-dashed border-white/[0.07]" style={{ width: 344, height: 344 }} />
+          <div className="dt-center rounded-full border border-dashed border-white/[0.07]" style={{ width: 592, height: 592 }} />
 
-        <div className="max-w-6xl mx-auto relative z-10">
-          <div className="text-center mb-6 sm:mb-16">
-            <span className="eyebrow mb-3 sm:mb-5">Marque Specialists</span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-black mb-3 sm:mb-6 text-black tracking-tight">
-              Brands We Serve
-            </h2>
-            <p className="text-sm sm:text-base lg:text-xl text-gray-700 max-w-3xl mx-auto px-4 leading-snug sm:leading-relaxed">
-              Precision performance for the world's most prestigious automotive brands
-            </p>
+          {/* radar sweep */}
+          <div
+            className="dt-center dt-sweep pointer-events-none"
+            style={{
+              width: 592,
+              height: 592,
+              borderRadius: '9999px',
+              background:
+                'conic-gradient(from 0deg, rgba(255,107,53,0.10) 0deg, rgba(255,107,53,0.03) 42deg, transparent 80deg, transparent 360deg)',
+              WebkitMaskImage:
+                'radial-gradient(circle, transparent 106px, black 108px, black 294px, transparent 296px)',
+              maskImage:
+                'radial-gradient(circle, transparent 106px, black 108px, black 294px, transparent 296px)',
+              animation: 'dt-sweep 14s linear infinite',
+            }}
+          />
+
+          {/* tachometer tick ring */}
+          <svg className="dt-center pointer-events-none" width={210} height={210} viewBox="0 0 210 210" style={{ overflow: 'visible' }}>
+            {TICKS.map((tk, i) => (
+              <line
+                key={i}
+                x1={tk.x1}
+                y1={tk.y1}
+                x2={tk.x2}
+                y2={tk.y2}
+                stroke={tk.major ? 'rgba(255,107,53,0.7)' : 'rgba(255,255,255,0.16)'}
+                strokeWidth={tk.major ? 2 : 1}
+              />
+            ))}
+          </svg>
+
+          {/* pulse + core */}
+          <div
+            className="dt-center dt-pulse pointer-events-none"
+            style={{ width: 176, height: 176, borderRadius: '9999px', border: '1px solid rgba(255,107,53,0.35)', animation: 'dt-pulse 3.2s ease-out infinite' }}
+          />
+          <div
+            className="dt-center pointer-events-none flex items-center justify-center"
+            style={{
+              width: 150,
+              height: 150,
+              borderRadius: '9999px',
+              background:
+                'radial-gradient(circle at 34% 28%, rgba(255,255,255,0.07), transparent 58%), linear-gradient(160deg, #191919, #0c0c0c)',
+              border: '1px solid rgba(255,255,255,0.09)',
+              boxShadow:
+                'inset 0 1px 0 rgba(255,255,255,0.08), 0 0 60px -12px rgba(255,107,53,0.35), 0 30px 60px -30px rgba(0,0,0,0.9)',
+            }}
+          >
+            <span className="dt-core-d font-black italic text-burnt-orange" style={{ fontSize: 76, lineHeight: 1, transform: 'translateX(-3px)', animation: 'dt-glow 3s ease-in-out infinite' }}>
+              D
+            </span>
           </div>
 
-          {isMobile ? (
-            <MobileGrid />
-          ) : (
-            <div className="relative w-full h-[600px] lg:h-[700px] flex items-center justify-center">
-              <div className="absolute z-20 flex items-center justify-center">
-                <div className="central-d text-7xl lg:text-9xl font-black text-burnt-orange">D</div>
-              </div>
-              <div
-                className="orbital-container absolute inset-0"
-                style={{
-                  transform: `translate(${mousePos.x}px, ${mousePos.y}px)`,
-                  transition: isMouseInSection && !isDragging ? 'none' : 'transform 0.8s ease-out'
-                }}
-              >
-                {brands.map((brand, index) => {
-                  const position = getOrbitalPosition(index, brands.length);
-                  return (
-                    <Tooltip key={brand.name}>
-                      <TooltipTrigger asChild>
-                        <Link
-                          to={`/brands/${getSlugForOrbitName(brand.name) ?? ''}`}
-                          aria-label={`${brand.name} service in Dubai`}
-                          className="absolute w-16 lg:w-20 h-16 lg:h-20 flex items-center justify-center group cursor-pointer"
-                          style={{
-                            left: '50%',
-                            top: '50%',
-                            transform: `translate(calc(-50% + ${position.x}px), calc(-50% + ${position.y}px))`
-                          }}
-                        >
-                          <div className="brand-logo w-full h-full p-2 bg-white/80 backdrop-blur-sm rounded-full shadow-lg border border-gray-100">
-                            <BrandLogo name={brand.name} />
-                          </div>
-                        </Link>
-                      </TooltipTrigger>
-                      <TooltipContent side="top" className="bg-black/90 text-white border-burnt-orange/30 max-w-xs">
-                        <div className="text-center p-2">
-                          <div className="text-burnt-orange font-bold text-sm mb-1">{brand.name}</div>
-                          <div className="text-gray-300 text-xs">{brand.specialization}</div>
-                        </div>
-                      </TooltipContent>
-                    </Tooltip>
-                  );
-                })}
-              </div>
+          {/* planets + comet (parallax layer) */}
+          <div ref={parallaxRef} className="absolute inset-0">
+            {OUTER.map((name, i) => renderChip(name, i, outerRefs, 'w-[86px] h-[86px]'))}
+            {INNER.map((name, i) => renderChip(name, i, innerRefs, 'w-[74px] h-[74px]'))}
+            <div
+              ref={cometRef}
+              className="absolute left-1/2 top-1/2 pointer-events-none"
+              style={{ width: 7, height: 7, borderRadius: '9999px', background: '#ff6b35', boxShadow: '0 0 12px 3px rgba(255,107,53,0.75)' }}
+            >
+              <span
+                className="absolute"
+                style={{ right: 4, top: '50%', width: 56, height: 1.5, transform: 'translateY(-50%)', background: 'linear-gradient(90deg, transparent, rgba(255,107,53,0.7))', borderRadius: 2 }}
+              />
             </div>
-          )}
-
-          <div className="text-center mt-6 sm:mt-16">
-            <p className="text-gray-700 mb-4 sm:mb-8 text-sm sm:text-lg px-4">
-              Experience precision service for your luxury vehicle
-            </p>
-            <button className="btn-primary w-full sm:w-auto">
-              Schedule Service
-            </button>
           </div>
         </div>
-      </section>
-    </TooltipProvider>
+
+        {/* hover info card */}
+        <div
+          className={`absolute bottom-2 left-1/2 -translate-x-1/2 flex items-center gap-3 px-5 py-3 rounded-full bg-black/85 border border-white/10 backdrop-blur-sm whitespace-nowrap transition-all duration-300 ${
+            active ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-2 pointer-events-none'
+          }`}
+        >
+          <span className="w-1.5 h-1.5 rounded-full bg-burnt-orange" />
+          <span className="font-bold text-sm text-off-white">{active ?? ''}</span>
+          <span className="text-gray-400 text-xs tracking-wide">{SPEC}</span>
+        </div>
+      </div>
+    </>
+  );
+};
+
+export const BrandsWeServe = () => {
+  const isMobile = useIsMobile();
+
+  return (
+    <section className="relative overflow-hidden bg-[#0a0a0a] px-4 sm:px-6 py-14 sm:py-20 lg:py-28">
+      {/* ambient glow */}
+      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(1100px_700px_at_50%_42%,rgba(255,107,53,0.06),transparent_62%)]" />
+
+      <div className="relative z-10 max-w-6xl mx-auto">
+        <div className="text-center mb-6 sm:mb-10">
+          <span className="eyebrow mb-3 sm:mb-5">Marque Specialists</span>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-black mb-3 sm:mb-6 text-white tracking-tight">
+            Brands We Serve
+          </h2>
+          <p className="text-sm sm:text-base lg:text-xl text-gray-400 max-w-3xl mx-auto px-4 leading-snug sm:leading-relaxed">
+            Precision performance for the world's most prestigious automotive marques.
+          </p>
+        </div>
+
+        {isMobile ? <MobileGrid /> : <Orbit />}
+
+        <div className="text-center mt-8 sm:mt-12">
+          {!isMobile && (
+            <p className="hidden md:flex items-center justify-center gap-2 text-[11px] font-semibold uppercase tracking-[0.24em] text-gray-500 mb-6">
+              Drag to spin · <span className="text-burnt-orange">Hover a marque</span>
+            </p>
+          )}
+          <p className="text-gray-400 mb-4 sm:mb-6 text-sm sm:text-lg px-4">
+            Experience precision service for your luxury vehicle
+          </p>
+          <button className="btn-primary w-full sm:w-auto">Schedule Service</button>
+        </div>
+      </div>
+    </section>
   );
 };
