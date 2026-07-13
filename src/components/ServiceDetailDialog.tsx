@@ -19,7 +19,7 @@ interface ServiceDetailDialogProps {
 }
 
 const serviceDetails: Record<string, string> = {
-  'Mercedes Repair': 'Our Mercedes-Benz specialists deliver factory-standard diagnostics and repair using genuine OEM parts. From AMG performance tuning to routine servicing, we handle all models including C-Class, E-Class, S-Class, GLE, and GLC. Every repair follows Mercedes-Benz workshop protocols to maintain your warranty and vehicle integrity.',
+  'Mercedes Repair': 'Our Mercedes-Benz specialists deliver factory-standard diagnostics and repair using genuine OEM parts. From AMG performance tuning to routine servicing, we handle all models including C-Class, E-Class, S-Class, GLE, and GLC. Every repair follows Mercedes-Benz workshop protocols to maintain vehicle integrity.',
   'Mechanical Repair': 'Comprehensive mechanical repair covering engine rebuilds, timing belt/chain replacement, gasket repairs, coolant system overhauls, and drivetrain servicing. Our technicians use precision tooling and diagnostic equipment to identify and resolve issues at the root cause — not just the symptoms.',
   'Transmission Services': 'Full-spectrum transmission care including automatic and manual gearbox repair, CVT servicing, clutch replacement, torque converter rebuilds, and transmission fluid flushes. We perform complete diagnostics before any work to ensure accurate, cost-effective repairs.',
   'Suspension Repair': 'Restore ride comfort and handling precision with our suspension services. We cover shock absorber and strut replacement, spring repairs, control arm bushings, sway bar links, and full suspension geometry alignment for all vehicle types.',

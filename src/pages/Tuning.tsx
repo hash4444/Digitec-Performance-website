@@ -19,7 +19,6 @@ const Tuning = () => {
   const tuningFaqs = [
     { question: 'Is Digitec an official GAD Motors partner in Dubai?', answer: 'Yes. Digitec Performance Center is the official GAD Motors partner in the UAE, providing genuine GAD ECU files, parts and turbo kits with full factory support.' },
     { question: 'How much power can I gain from GAD tuning?', answer: 'Power gains depend on the platform and the chosen GAD stage. Mercedes AMG models typically gain meaningful horsepower and torque per stage, with hardware upgrades unlocking further gains.' },
-    { question: 'Does ECU tuning affect reliability or warranty?', answer: 'GAD files are extensively tested for reliability and safety. Tuning may affect the manufacturer warranty on tuned components, so we discuss the implications with every client before any work is carried out.' },
     { question: 'Which cars do you tune?', answer: 'We tune Mercedes-Benz and AMG, Porsche, Audi, BMW and other German performance cars, including hardware projects with turbos, intercoolers and intake manifolds.' },
   ];
   const tuningGraph = pageGraph([

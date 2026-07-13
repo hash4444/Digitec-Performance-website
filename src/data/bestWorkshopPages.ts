@@ -22,7 +22,6 @@ const commonCriteria = (brand: string, tools: string) => [
   { criterion: 'Genuine OEM parts with documentation', digitec: 'Yes, with invoice traceability' },
   { criterion: `${brand}-trained technicians`, digitec: `${YEARS} of ${brand} specialisation` },
   { criterion: 'Transparent pricing before work begins', digitec: 'Fixed written quote every time' },
-  { criterion: 'Warranty on parts and labour', digitec: '12-month workshop warranty' },
   { criterion: 'Dubai-specific heat & dust preparation', digitec: 'Standard on every service' },
 ];
 
@@ -46,7 +45,6 @@ export const bestWorkshopPages: BestWorkshopPage[] = [
       `${RATING}`,
       'Free collection and delivery across Dubai',
       'Transparent written quotes before any work begins',
-      '12-month warranty on parts and labour',
     ],
     criteria: commonCriteria('multi-brand', 'XENTRY, ISTA+, PIWIS 3, ODIS'),
     faqs: [

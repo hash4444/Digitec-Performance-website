@@ -14,7 +14,6 @@ const services = [
     image: ppfImage,
     features: [
       'Self-healing technology: minor scratches vanish with heat',
-      '10-year manufacturer warranty',
       'Hydrophobic top coat for effortless cleaning',
       'Optically clear, zero visual distortion',
       'Custom precision-cut for every panel',

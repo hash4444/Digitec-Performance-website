@@ -15,8 +15,8 @@ export const mercedesServices: ServiceData[] = [
     category: 'Core Mechanical Services',
     seoKeyword: 'Mercedes Mechanical Repair in Dubai',
     intro: 'Digi-Tec Performance Center is Dubai\'s dedicated Mercedes-Benz mechanical specialist. From the M139 in the A 45 S to the M177 4.0L biturbo V8 in the AMG GT, C 63 and G 63, the M256 inline-six with EQ Boost in the S-Class, and the OM654/OM656 diesels in GLE and GLS, we diagnose and repair every Mercedes drivetrain using Star Diagnostic XENTRY and genuine MB parts.',
-    whyImportant: 'Mercedes engines and 9G-TRONIC gearboxes run very tight tolerances, high oil temperatures and complex electronic control. A misdiagnosed timing chain stretch on M271/M272, a delayed valve cover gasket replacement on M276, or worn 9G-TRONIC valve body solenoids quickly turn into five-figure rebuilds. Correct early diagnosis with the right tooling protects the engine, the warranty and the resale value.',
-    whyChoose: 'AMG-trained Mercedes technicians, Star Diagnostic XENTRY/DAS for live engine and transmission data, genuine MB / Mahle / Bosch parts, transparent fixed-price quotes, and a 12-month workmanship warranty. Most mechanical repairs finish in 1 to 3 working days versus a full week at the main dealer.',
+    whyImportant: 'Mercedes engines and 9G-TRONIC gearboxes run very tight tolerances, high oil temperatures and complex electronic control. A misdiagnosed timing chain stretch on M271/M272, a delayed valve cover gasket replacement on M276, or worn 9G-TRONIC valve body solenoids quickly turn into five-figure rebuilds. Correct early diagnosis with the right tooling protects the engine and the resale value.',
+    whyChoose: 'AMG-trained Mercedes technicians, Star Diagnostic XENTRY/DAS for live engine and transmission data, genuine MB / Mahle / Bosch parts, transparent fixed-price quotes. Most mechanical repairs finish in 1 to 3 working days versus a full week at the main dealer.',
     includes: [
       'Full XENTRY engine, transmission and EQ system scan',
       'Timing chain, tensioner and balance shaft repair (M271, M272, M276)',
@@ -31,7 +31,6 @@ export const mercedesServices: ServiceData[] = [
     faqs: [
       { question: 'Do you work on AMG engines like M177 and M139?', answer: 'Yes. Our AMG-trained team services and repairs M177 4.0L biturbo V8 (C 63, E 63, G 63, GT), M178 (AMG GT), M139 (A 45 S, CLA 45 S) and older M156/M157 engines, including turbo, oil cooler and head work.' },
       { question: 'Can you repair a 9G-TRONIC gearbox without replacing it?', answer: 'In most cases yes. Common 9G-TRONIC faults (harsh shifts, slipping, limp mode) come from the mechatronic valve body or solenoids. We perform internal repair and oil/filter service with the correct MB 236.15 fluid, avoiding a full gearbox swap.' },
-      { question: 'Will independent mechanical repair void my Mercedes warranty?', answer: 'No. Under UAE consumer law, qualified independent repair using OEM parts does not void your factory warranty, as long as the work is documented. We provide a full Digi-Tec service record.' },
     ],
   },
   {
@@ -45,7 +44,7 @@ export const mercedesServices: ServiceData[] = [
     seoKeyword: 'Mercedes Transmission Repair in Dubai',
     intro: 'Mercedes 9G-TRONIC (725.0), 7G-TRONIC PLUS (722.9) and AMG SPEEDSHIFT MCT/DCT gearboxes are some of the most advanced automatic transmissions on the road. Digi-Tec specialises in diagnosing harsh shifts, slipping, limp mode and mechatronic faults using Star Diagnostic XENTRY, with internal valve body repair rather than full replacement wherever possible.',
     whyImportant: 'Dubai stop-start traffic, heat and aggressive launches age gearbox fluid quickly. Once the friction modifier in MB 236.14 / 236.15 ATF breaks down, clutch packs glaze and the valve body solenoids stick, producing the classic 9G-TRONIC shudder and Service P2767/P2700 codes. Catching it early at fluid-and-filter stage saves a full mechatronic rebuild.',
-    whyChoose: 'XENTRY live transmission adaptation data, internal valve body and mechatronic repair, genuine MB 236.14 / 236.15 ATF and OEM filter pans, AMG MCT and DCT experience, transparent diagnostic and 12-month workmanship warranty.',
+    whyChoose: 'XENTRY live transmission adaptation data, internal valve body and mechatronic repair, genuine MB 236.14 / 236.15 ATF and OEM filter pans, AMG MCT and DCT experience, and transparent diagnostics.',
     includes: [
       'XENTRY transmission scan and live clutch slip / temperature read',
       '9G-TRONIC (725.0) and 7G-TRONIC (722.9) fluid and filter service',
@@ -72,7 +71,7 @@ export const mercedesServices: ServiceData[] = [
     seoKeyword: 'Mercedes Suspension Repair in Dubai',
     intro: 'Mercedes AIRMATIC, Active Body Control (ABC) and Magic Body Control are some of the most sophisticated air-suspension systems in production. Digi-Tec specialises in diagnosing sagging corners, "Vehicle Too Low" warnings, noisy compressors and slow-rising rear ends using Star Diagnostic XENTRY and genuine MB air struts.',
     whyImportant: 'Dubai\'s heat, dust and road expansion joints punish AIRMATIC air struts and the W164/W221 compressor in particular. A single leaking strut overworks the compressor, burns out the relay and eventually destroys the valve block, turning a one-corner fix into a four-corner repair. Early diagnosis prevents that cascade.',
-    whyChoose: 'XENTRY live ride-height and pressure data, genuine MB and Arnott air struts, OEM AIRMATIC compressors (WABCO/AMK) and valve blocks, ABC hydraulic accumulator and pulsation damper replacement, transparent quotes and 12-month workmanship warranty.',
+    whyChoose: 'XENTRY live ride-height and pressure data, genuine MB and Arnott air struts, OEM AIRMATIC compressors (WABCO/AMK) and valve blocks, ABC hydraulic accumulator and pulsation damper replacement, and transparent quotes.',
     includes: [
       'AIRMATIC front and rear air strut replacement',
       'AIRMATIC compressor, relay and air dryer service',
@@ -150,9 +149,9 @@ export const mercedesServices: ServiceData[] = [
     image: mercedesRepairImg,
     category: 'Core Mechanical Services',
     seoKeyword: 'Mercedes Service in Dubai',
-    intro: 'Digi-Tec performs full Mercedes Service A and Service B in Dubai, following the official Mercedes Workshop Information System (WIS) procedure. Every service uses MB-approved fluids, genuine OEM filters and a XENTRY ASSYST PLUS reset, so your digital service record stays clean for warranty and resale.',
+    intro: 'Digi-Tec performs full Mercedes Service A and Service B in Dubai, following the official Mercedes Workshop Information System (WIS) procedure. Every service uses MB-approved fluids, genuine OEM filters and a XENTRY ASSYST PLUS reset, so your digital service record stays clean for resale.',
     whyImportant: 'Mercedes ASSYST PLUS calculates service intervals based on driving style, fuel quality, ambient temperature and oil condition. Skipping a Service B or substituting non-MB-approved fluids causes timing chain wear on M271/M272, DPF clogging on diesel models and premature 9G-TRONIC valve body wear.',
-    whyChoose: 'XENTRY ASSYST PLUS reset, MB-approved oils (229.5, 229.51, 229.52, 229.71), genuine OEM filters, AMG-trained technicians, 45-90 minute Service A, same-day Service B, and 12-month workmanship warranty.',
+    whyChoose: 'XENTRY ASSYST PLUS reset, MB-approved oils (229.5, 229.51, 229.52, 229.71), genuine OEM filters, AMG-trained technicians, 45-90 minute Service A, and same-day Service B.',
     includes: [
       'Service A: MB-approved oil and OEM oil filter, fluid top-ups, brake inspection, ASSYST reset',
       'Service B: Service A plus cabin filter, brake fluid (MB 331.0) and additional inspections',
@@ -165,7 +164,6 @@ export const mercedesServices: ServiceData[] = [
     details: 'Genuine Mercedes Service A and Service B with XENTRY ASSYST PLUS reset.',
     faqs: [
       { question: 'What is the difference between Mercedes Service A and Service B?', answer: 'Service A is a minor service: oil, oil filter, fluid top-ups and ASSYST reset, usually at 16,000 km or 12 months. Service B is a major service that adds cabin filter, brake fluid replacement and a deeper inspection, typically at 32,000 km or 24 months.' },
-      { question: 'Will independent Mercedes service void my warranty?', answer: 'No. As long as the service uses MB-approved fluids, OEM filters and is documented correctly, UAE consumer law and Mercedes guidelines allow independent service without voiding the factory warranty.' },
     ],
   },
   {
@@ -206,7 +204,7 @@ export const mercedesServices: ServiceData[] = [
     seoKeyword: 'Mercedes Battery Replacement in Dubai',
     intro: 'Modern Mercedes-Benz models use AGM or EFB main batteries plus a separate auxiliary battery and (on EQ Boost models) a 48V system. Each battery must be registered with XENTRY after replacement, otherwise charging strategy, stop-start and ECO functions stop working. Digi-Tec supplies and codes genuine Mercedes AGM batteries (Varta, Moll) the right way.',
     whyImportant: 'Dubai\'s heat halves typical battery life from 5 years to roughly 2.5 to 3. An ageing AGM that isn\'t replaced and coded triggers cascading errors: AIRMATIC fault, ESP fault, transmission limp mode, steering inoperative and the dreaded "Stop, vehicle will not restart" message.',
-    whyChoose: 'Genuine Mercedes AGM main and auxiliary batteries, XENTRY battery registration and SBC coding, EQ Boost 48V battery service, same-day mobile fitting available, and a 24-month battery warranty.',
+    whyChoose: 'Genuine Mercedes AGM main and auxiliary batteries, XENTRY battery registration and SBC coding, EQ Boost 48V battery service, and same-day mobile fitting available.',
     includes: [
       'Genuine Mercedes AGM / EFB main battery supply and fit',
       'Auxiliary battery (boot or footwell) replacement',
@@ -233,7 +231,7 @@ export const mercedesServices: ServiceData[] = [
     seoKeyword: 'Mercedes Exhaust Repair in Dubai',
     intro: 'From the AMG variable-flap performance exhaust on the C 63, GT and G 63, to the DPF/OPF on European-spec diesel and petrol Mercedes, exhaust work on a Mercedes-Benz is a specialist job. Digi-Tec repairs cracked manifolds, leaking gaskets, stuck flap valves, blocked DPFs and replaces complete AMG exhaust systems with OEM or quality aftermarket components.',
     whyImportant: 'A leaking exhaust manifold on M276 / M278 V6 or V8 engines triggers misfire codes, damages catalytic converters and trips Check Engine. AMG flap-valve actuators that seize make the car run quietly when it shouldn\'t, or excessively loud at start-up. DPF blockages on diesel GLE / GLS cause limp mode and serious turbo strain.',
-    whyChoose: 'AMG-trained exhaust specialists, genuine MB OEM manifolds, catalysts and DPFs, professional DPF cleaning rather than blanket replacement, XENTRY flap valve and oxygen sensor diagnostics, and 12-month workmanship warranty.',
+    whyChoose: 'AMG-trained exhaust specialists, genuine MB OEM manifolds, catalysts and DPFs, professional DPF cleaning rather than blanket replacement, and XENTRY flap valve and oxygen sensor diagnostics.',
     includes: [
       'Exhaust manifold and gasket replacement',
       'AMG performance exhaust flap valve and actuator repair',
@@ -286,7 +284,7 @@ export const mercedesServices: ServiceData[] = [
     seoKeyword: 'Mercedes Electrical Repair in Dubai',
     intro: 'Modern Mercedes-Benz cars rely on a network of Signal Acquisition Modules (SAM), CAN, LIN and FlexRay buses controlling everything from a window switch to AIRMATIC. Digi-Tec specialises in repairing the wiring, modules and connectors that fail in Dubai\'s heat, with XENTRY coding to bring replacement modules online correctly.',
     whyImportant: 'A single bad SAM module or a corroded ground point can produce a cascade of unrelated warnings: AIRMATIC fault, ESP, ABS, blind-spot, automatic gearbox and even "Engine Start Inhibited". Without XENTRY and CAN-bus diagnostics, these are nearly impossible to trace.',
-    whyChoose: 'XENTRY CAN-bus analysis, SAM front and rear module repair and coding, harness repair to MB factory spec, soldered repairs (not crimp), and 12-month workmanship warranty.',
+    whyChoose: 'XENTRY CAN-bus analysis, SAM front and rear module repair and coding, harness repair to MB factory spec, and soldered repairs (not crimp).',
     includes: [
       'Front and rear SAM module repair, replacement and coding',
       'CAN, LIN and FlexRay bus diagnosis',
@@ -338,7 +336,7 @@ export const mercedesServices: ServiceData[] = [
     seoKeyword: 'Mercedes AC Repair in Dubai',
     intro: 'Mercedes climate control on the W213, W222, W167 and AMG models uses the newer R-1234yf refrigerant and a variable-displacement compressor that demands specific Mercedes service tools and oils. Digi-Tec is fully equipped for R-1234yf, with XENTRY climate-control diagnostics, OEM compressors, evaporators and THERMOTRONIC repair.',
     whyImportant: 'In Dubai a Mercedes AC system runs at peak load 9+ months a year. The first symptom of failure is usually the compressor clutch or magnetic-coupling, followed by evaporator leaks and expansion-valve blockage. Topping up with the wrong refrigerant or oil destroys the compressor within weeks.',
-    whyChoose: 'R-1234yf and R-134a recovery and regas equipment, OEM Denso / Behr Mercedes compressors, XENTRY THERMOTRONIC and climate control coding, electronic UV leak detection, 12-month AC workmanship warranty.',
+    whyChoose: 'R-1234yf and R-134a recovery and regas equipment, OEM Denso / Behr Mercedes compressors, XENTRY THERMOTRONIC and climate control coding, and electronic UV leak detection.',
     includes: [
       'AC compressor and magnetic clutch replacement',
       'Evaporator and expansion valve replacement',
@@ -365,7 +363,7 @@ export const mercedesServices: ServiceData[] = [
     seoKeyword: 'Mercedes Body Repair in Dubai',
     intro: 'Mercedes-Benz bodies combine aluminium, high-strength steel and (on AMG and EQ) composite panels, all engineered to deform in very specific ways. Digi-Tec uses Mercedes-approved body repair techniques, jig alignment and factory-match paint codes to restore your car the way Mercedes designed it, not just to "look right" from the outside.',
     whyImportant: 'Cheap body repair on a Mercedes ruins crash structure, ADAS sensor calibration (radar, camera, blind-spot) and resale value. A poorly aligned bumper hides bent crash bars and crumple zones that won\'t protect you next time.',
-    whyChoose: 'Mercedes-approved repair procedures, computerised chassis jig alignment, factory-match paint colour mixing, XENTRY radar and camera calibration after repair, insurance-approved estimating, and full bodywork warranty.',
+    whyChoose: 'Mercedes-approved repair procedures, computerised chassis jig alignment, factory-match paint colour mixing, XENTRY radar and camera calibration after repair, and insurance-approved estimating.',
     includes: [
       'Accident and collision repair to MB factory spec',
       'Aluminium and steel panel work',

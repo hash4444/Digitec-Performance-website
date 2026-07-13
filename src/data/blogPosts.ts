@@ -495,7 +495,6 @@ export const blogPosts: BlogPost[] = [
         items: [
           'Custom ECU files developed on dyno, not downloaded',
           'Hardware kits matched to UAE fuel quality',
-          'Full warranty package backed by GAD Germany',
           'Reversibility: factory file always preserved',
         ],
       },
@@ -692,7 +691,7 @@ export const blogPosts: BlogPost[] = [
       { type: 'h3', text: 'Do you use OEM Mercedes parts?' },
       {
         type: 'p',
-        text: 'Yes. We use OEM and performance grade parts to maintain manufacturer standards, warranty integrity, and long term reliability.',
+        text: 'Yes. We use OEM and performance grade parts to maintain manufacturer standards and long term reliability.',
       },
       { type: 'h2', text: 'Conclusion' },
       {

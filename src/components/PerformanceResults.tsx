@@ -68,7 +68,6 @@ export const PerformanceResults = () => {
                 <li className="flex items-center text-sm sm:text-base"><span className="w-2 h-2 bg-burnt-orange rounded-full mr-3 flex-shrink-0"></span>Detailed Dyno Reports</li>
                 <li className="flex items-center text-sm sm:text-base"><span className="w-2 h-2 bg-burnt-orange rounded-full mr-3 flex-shrink-0"></span>Performance Certificates</li>
                 <li className="flex items-center text-sm sm:text-base"><span className="w-2 h-2 bg-burnt-orange rounded-full mr-3 flex-shrink-0"></span>Modification Documentation</li>
-                <li className="flex items-center text-sm sm:text-base"><span className="w-2 h-2 bg-burnt-orange rounded-full mr-3 flex-shrink-0"></span>Warranty Information</li>
                 <li className="flex items-center text-sm sm:text-base"><span className="w-2 h-2 bg-burnt-orange rounded-full mr-3 flex-shrink-0"></span>Maintenance Guidelines</li>
               </ul>
             </div>

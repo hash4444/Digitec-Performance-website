@@ -1,5 +1,5 @@
 import React from 'react';
-import { ShieldCheck, Clock, Car, Wrench } from 'lucide-react';
+import { ShieldCheck, Clock, Car, Truck } from 'lucide-react';
 
 /**
  * Slim authority strip — social proof + credibility signals.
@@ -8,9 +8,9 @@ import { ShieldCheck, Clock, Car, Wrench } from 'lucide-react';
 export const TrustBar = ({ className = '' }: { className?: string }) => {
   const items = [
     {
-      icon: <Wrench className="w-4 h-4 text-burnt-orange" />,
-      value: '12-month',
-      label: 'parts & labour warranty',
+      icon: <Truck className="w-4 h-4 text-burnt-orange" />,
+      value: 'Free',
+      label: 'collection & delivery, Dubai',
     },
     {
       icon: <Clock className="w-4 h-4 text-burnt-orange" />,

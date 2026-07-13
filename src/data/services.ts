@@ -30,7 +30,7 @@ export const services: ServiceData[] = [
   {
     slug: 'mercedes-repair-dubai',
     metaTitle: 'Mercedes Repair Dubai | AMG, Star Diagnostic, OEM Parts',
-    metaDescription: 'Mercedes specialist in Dubai. AMG, Star Diagnostic and OEM parts, faster than the dealer with transparent pricing and a 12 month warranty. Book today.',
+    metaDescription: 'Mercedes specialist in Dubai. AMG, Star Diagnostic and OEM parts, faster than the dealer with transparent pricing. Book today.',
     title: 'Mercedes Repair in Dubai',
     description: 'Specialist Mercedes-Benz service, diagnostics, and repair in Dubai.',
     image: mercedesRepairImg,
@@ -64,16 +64,15 @@ export const services: ServiceData[] = [
       { question: 'How much does Mercedes repair cost in Dubai?', answer: 'Mercedes repair pricing in Dubai depends on the model and the fault. At Digitec we provide a free diagnostic quote with Star Diagnostic before any work begins, typically 30 to 50 percent below dealership pricing for equivalent OEM repairs.' },
         { question: 'Is Digitec a Mercedes specialist or a general workshop?', answer: 'Digitec is a dedicated Mercedes and German car specialist. Our technicians are factory trained and we use Mercedes Star Diagnostic equipment, the same system used at official dealerships.' },
         { question: 'Do you service AMG and Maybach models?', answer: 'Yes. We service the full Mercedes lineup including C, E, S, GLE, GLC, GLS, the AMG performance range and Maybach luxury models. Our team is experienced with AMG V8 biturbo engines and AIRMATIC suspension.' },
-        { question: 'Will servicing at Digitec affect my Mercedes warranty?', answer: 'No. Under UAE consumer law, servicing at a qualified independent specialist using OEM parts does not void your manufacturer warranty. We provide full service records.' },
         { question: 'How long does a Mercedes repair take?', answer: 'Most common repairs such as brakes, suspension and oil services are completed the same day. Complex engine, transmission or AIRMATIC work typically takes 2 to 5 working days.' },
-        { question: 'Why choose Digitec for Mercedes repair?', answer: 'Digitec combines factory-trained Mercedes technicians, Star Diagnostic (XENTRY and DAS) equipment, genuine OEM parts and Mercedes-approved fluids, transparent pricing and faster turnaround than the dealership, backed by a 12 month workmanship warranty.' },
+        { question: 'Why choose Digitec for Mercedes repair?', answer: 'Digitec combines factory-trained Mercedes technicians, Star Diagnostic (XENTRY and DAS) equipment, genuine OEM parts and Mercedes-approved fluids, transparent pricing and faster turnaround than the dealership.' },
         { question: 'Which Mercedes models do you repair?', answer: 'We repair the full Mercedes-Benz lineup: A-Class, C-Class, E-Class, S-Class, CLA, CLS, G-Class, GLA, GLC, GLE, GLS, the full AMG performance range (C63, E63, G63, GT, SL), Maybach luxury models and Mercedes EQ electric vehicles including EQS and EQE.' },
         { question: 'What Mercedes services do you offer?', answer: 'Full mechanical repair, Service A and Service B, engine and transmission repair, AIRMATIC and ABC suspension, brake overhauls, AC and cooling, ECU programming and remapping, XENTRY diagnostics, electrical fault tracing, oil services, and AMG performance tuning.' },
         { question: 'Do you use genuine or OEM parts?', answer: 'Yes. We fit genuine Mercedes-Benz OEM parts and Mercedes-approved fluids (MB 229.5, 236.15 and equivalents) by default. Customers who want performance upgrades can choose approved equivalents on request.' },
         { question: 'Do you provide Mercedes diagnostics?', answer: 'Yes. We run full Mercedes Star Diagnostic scans using XENTRY and DAS, the same platform used at official Mercedes dealerships, covering every ECU, gateway and control module across the vehicle.' },
         { question: 'Do you repair AMG models?', answer: 'Yes. AMG is a core specialisation. We service and tune M156, M157, M177 and M178 biturbo V8s, AMG SpeedShift MCT and 9G-Tronic transmissions, AMG carbon-ceramic brakes and AIRMATIC / ABC suspension across C63, E63, G63, GT, SL and the full AMG range.' },
         { question: 'What are the most common Mercedes problems in Dubai?', answer: 'Dubai heat accelerates specific failures: AC compressor and evaporator issues, AIRMATIC suspension leaks, 7G/9G-Tronic conductor plate faults, battery drain from heat cycling, oil and coolant leaks from hardened gaskets, and brake wear from stop-and-go traffic. We diagnose and repair all of these routinely.' },
-        { question: 'Why do Mercedes owners in Dubai choose Digitec?', answer: 'Owners choose Digitec for dealership-level Mercedes expertise at 30 to 50 percent lower cost, honest diagnostics with Star / XENTRY, genuine OEM parts, faster turnaround and a 12 month warranty on every repair, backed by 20+ years serving Mercedes owners in Dubai.' },
+        { question: 'Why do Mercedes owners in Dubai choose Digitec?', answer: 'Owners choose Digitec for dealership-level Mercedes expertise at 30 to 50 percent lower cost, honest diagnostics with Star / XENTRY, genuine OEM parts, faster turnaround, backed by 20+ years serving Mercedes owners in Dubai.' },
     ],
   },
   {
@@ -304,7 +303,7 @@ export const services: ServiceData[] = [
         'Bentley, Rolls-Royce, Range Rover, Land Rover',
         'Nissan, Toyota, Rox, Jetour, Zeekr, BYD, Hongqi',
       ],
-      outro: 'We specialize in German vehicles and luxury cars, following manufacturer service schedules to maintain performance, warranty compliance, and resale value.',
+      outro: 'We specialize in German vehicles and luxury cars, following manufacturer service schedules to maintain performance and resale value.',
     },
     whyChoose: 'As a leading car service center in Dubai, Digitec Performance Center offers: experienced technicians specializing in German and luxury vehicles, manufacturer-level servicing at competitive workshop prices, OEM parts and high-quality fluids used in every service, transparent pricing with no hidden costs, fast turnaround and efficient service process. We provide dealer-level car service in Dubai with better value and convenience.',
     servicesIntro: {
@@ -420,7 +419,7 @@ export const services: ServiceData[] = [
     category: 'Core Mechanical Services',
     seoKeyword: 'Mercedes Oil Change in Dubai',
     intro: 'Digi-Tec Performance Center is Dubai\'s trusted Mercedes-Benz oil change specialist. Every Mercedes engine, from the M139 in AMG A 45 S to the M177 V8 biturbo and the OM656 inline-six diesel, demands a specific MB-approved oil specification. We use only genuine Mercedes-approved synthetics (MB 229.5, 229.51, 229.52, 229.71) and OEM filters, matched exactly to your model and engine code, so your service interval, FAP regeneration and ASSYST PLUS counter reset are handled the right way the first time.',
-    whyImportant: 'Mercedes engines run tight tolerances, high oil temperatures and long service intervals. Using the wrong specification, or a cheaper "universal 5W-30", causes timing chain stretch on M271/M272 engines, balance shaft wear, premature turbo failure on AMG models and DPF clogging on diesel S, E and GLE. A correct Mercedes oil change protects warranty, fuel economy and resale value, and avoids four-figure repairs later.',
+    whyImportant: 'Mercedes engines run tight tolerances, high oil temperatures and long service intervals. Using the wrong specification, or a cheaper "universal 5W-30", causes timing chain stretch on M271/M272 engines, balance shaft wear, premature turbo failure on AMG models and DPF clogging on diesel S, E and GLE. A correct Mercedes oil change protects fuel economy and resale value, and avoids four-figure repairs later.',
     modelsSection: {
       heading: 'Mercedes Models We Service',
       intro: 'We service every Mercedes-Benz sold in the UAE, including:',
@@ -434,7 +433,7 @@ export const services: ServiceData[] = [
       ],
       outro: 'Each service is matched to your exact engine code, year and MB workshop-information-system specification, not a one-size-fits-all menu.',
     },
-    whyChoose: 'Why Mercedes owners across Dubai choose Digi-Tec: Star Diagnostic XENTRY to reset ASSYST PLUS service counters correctly, only genuine MB-approved oils (Mobil 1 ESP, Castrol Edge Professional, Liqui Moly MB), OEM Mahle / Mann / Hengst oil filters, AMG-trained technicians for M177, M178 and M139 engines, transparent pricing and a 12-month workmanship warranty, completed in 45 to 90 minutes versus a half-day at the dealer.',
+    whyChoose: 'Why Mercedes owners across Dubai choose Digi-Tec: Star Diagnostic XENTRY to reset ASSYST PLUS service counters correctly, only genuine MB-approved oils (Mobil 1 ESP, Castrol Edge Professional, Liqui Moly MB), OEM Mahle / Mann / Hengst oil filters, AMG-trained technicians for M177, M178 and M139 engines, transparent pricing, completed in 45 to 90 minutes versus a half-day at the dealer.',
     includes: [
       'MB-approved fully synthetic engine oil (229.5, 229.51, 229.52, 229.71 or AMG 229.5)',
       'Genuine Mercedes OEM oil filter',
@@ -450,8 +449,7 @@ export const services: ServiceData[] = [
     faqs: [
       { question: 'Which oil does my Mercedes need?', answer: 'It depends on your engine. Most modern Mercedes petrol engines require MB 229.5 or 229.51 (low-SAPS) 5W-30 or 5W-40. AMG M177, M178 and M139 engines require MB-Approval 229.5 0W-40 or 5W-40. Modern diesels (OM654, OM656) use MB 229.52 / 229.71 5W-30. We confirm the exact spec from your VIN before service.' },
       { question: 'How often should I change Mercedes oil in Dubai?', answer: 'Mercedes recommends every 10,000 km or 12 months for most models, but Dubai\'s heat, short trips and stop-start traffic shorten oil life. For AMG and turbocharged models we recommend every 7,500 km, and every 5,000 km for cars driven hard or used for track days.' },
-      { question: 'Can you reset the ASSYST PLUS service counter?', answer: 'Yes. We use Mercedes XENTRY / Star Diagnostic to correctly reset Service A or Service B and update the digital service record, so your maintenance history stays clean for warranty and resale.' },
-      { question: 'Will using Digi-Tec void my Mercedes warranty?', answer: 'No. UAE consumer law and Mercedes guidelines allow servicing at a qualified independent workshop using approved oils and OEM filters without voiding your factory warranty, as long as the service is documented correctly. We provide a full digital service record.' },
+      { question: 'Can you reset the ASSYST PLUS service counter?', answer: 'Yes. We use Mercedes XENTRY / Star Diagnostic to correctly reset Service A or Service B and update the digital service record, so your maintenance history stays clean for resale.' },
       { question: 'How much does a Mercedes oil change cost in Dubai?', answer: 'Pricing depends on engine size and oil specification. AMG models with larger oil capacity cost more than a standard C-Class. We always provide a transparent quote, typically 40 to 60 percent less than the main dealer, before any work begins.' },
       { question: 'Do you service AMG models?', answer: 'Yes. AMG M177 4.0L V8 biturbo, M178 (AMG GT), M139 (A 45 S, CLA 45 S) and the older M156 / M157 engines are all handled by our AMG-trained team using MB-Approval 229.5 oils and genuine AMG filters.' },
     ],
@@ -746,7 +744,7 @@ export const services: ServiceData[] = [
   {
     slug: 'paint-protection-dubai',
     metaTitle: 'Paint Protection Dubai | Premium PPF & Ceramic | Digitec',
-    metaDescription: 'Want lasting paint protection in Dubai? Premium PPF film and 9H ceramic coating for luxury cars. Long warranty and showroom shine. Book Digitec today.',
+    metaDescription: 'Want lasting paint protection in Dubai? Premium PPF film and 9H ceramic coating for luxury cars. Showroom shine that lasts. Book Digitec today.',
     title: 'Car Paint & Protection',
     description: 'Flawless finish. Ceramic coat. Paint protection films available.',
     image: '/lovable-uploads/f1cfe23e-d23b-4717-9f75-a07199716d98.png',
@@ -770,7 +768,7 @@ export const services: ServiceData[] = [
   {
     slug: 'paint-protection-film',
     metaTitle: 'Paint Protection Film Dubai | Self Healing PPF | Digitec',
-    metaDescription: 'Premium paint protection film (PPF) in Dubai. Self-healing, ultra-clear protection with 10-year warranty for luxury and performance cars. Book Digitec now.',
+    metaDescription: 'Premium paint protection film (PPF) in Dubai. Self-healing, ultra-clear protection for luxury and performance cars. Book Digitec now.',
     title: 'Paint Protection Film (PPF)',
     description: 'The last layer your paint will ever need. Invisible, self-healing, ultra-premium protection.',
     image: ppfImage,
@@ -778,10 +776,9 @@ export const services: ServiceData[] = [
     seoKeyword: 'Paint Protection Film Dubai',
     intro: 'Digitec Performance Center offers ultra-premium Paint Protection Film (PPF) in Dubai, the most advanced way to shield your vehicle from rock chips, road debris, UV damage, and minor abrasions. Our PPF is invisibly applied, optically clear, and engineered to keep your paint in factory condition for years.',
     whyImportant: 'Dubai roads expose your paint to sand abrasion, gravel impacts, intense UV, and contaminants that quickly degrade unprotected finishes. PPF acts as a sacrificial layer, absorbing damage silently while preserving resale value and the showroom finish of luxury and performance vehicles.',
-    whyChoose: 'We use industry-leading PPF brands, custom precision-cut for every panel of your vehicle. Our certified installers ensure flawless edge work, no lifting, and no visible seams. Every installation is backed by a 10-year manufacturer warranty.',
+    whyChoose: 'We use industry-leading PPF brands, custom precision-cut for every panel of your vehicle. Our certified installers ensure flawless edge work, no lifting, and no visible seams.',
     includes: [
       'Self-healing technology: minor scratches vanish with heat',
-      '10-year manufacturer warranty',
       'Hydrophobic top coat for effortless cleaning',
       'Optically clear with zero visual distortion',
       'Custom precision-cut for every panel',
@@ -789,7 +786,7 @@ export const services: ServiceData[] = [
       'Compatible with ceramic coating overlay',
     ],
     localIntent: 'Searching for paint protection film Dubai, PPF near me, or PPF installer for Mercedes, BMW, Audi, or Porsche? Digitec Performance Center delivers showroom-quality PPF installations across the UAE.',
-    details: 'Premium Paint Protection Film installation by certified technicians, with custom precision cuts, self-healing topcoat, and a 10-year warranty. Available as full body, partial front, or track package coverage.',
+    details: 'Premium Paint Protection Film installation by certified technicians, with custom precision cuts and self-healing topcoat. Available as full body, partial front, or track package coverage.',
   },
   {
     slug: 'ceramic-coating',

@@ -362,7 +362,7 @@ export default function TuningConfigurator() {
                 performance engineer assigned to your build.
               </p>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-lg mx-auto">
-                {['Custom Dyno Tuning', 'Premium Components', '1-Year Warranty'].map((item) => (
+                {['Custom Dyno Tuning', 'Premium Components'].map((item) => (
                   <div key={item} className="flex items-center justify-center gap-2 text-sm text-burnt-orange font-medium">
                     <div className="w-1 h-1 rounded-full bg-burnt-orange" />
                     {item}
