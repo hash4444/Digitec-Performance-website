@@ -31,6 +31,7 @@ export const WhyChooseUs = () => {
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
         <div className="text-center mb-8 sm:mb-14 lg:mb-20">
+          <span className="eyebrow mb-3 sm:mb-5">The DIGI-TEC Standard</span>
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-black mb-3 sm:mb-5">
             Why Choose <span className="text-burnt-orange">D</span>IGI-TEC
           </h2>
@@ -43,8 +44,8 @@ export const WhyChooseUs = () => {
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-8 lg:gap-12 mb-8 sm:mb-14 lg:mb-20">
           {reasons.map((reason, index) => (
             <div key={reason.title} className="text-center group">
-              <div className="bg-gradient-to-br from-charcoal/60 to-black/40 backdrop-blur-sm rounded-2xl sm:rounded-3xl p-3 sm:p-6 lg:p-8 mb-3 sm:mb-6 shadow-2xl group-hover:shadow-burnt-orange/20 transition-all duration-500 group-hover:scale-105">
-                <div className="text-xl sm:text-4xl lg:text-5xl xl:text-6xl font-black text-burnt-orange mb-1.5 sm:mb-4">
+              <div className="card-premium rounded-2xl p-3 sm:p-6 lg:p-8 mb-3 sm:mb-6 h-full">
+                <div className="text-xl sm:text-4xl lg:text-5xl xl:text-6xl font-black text-burnt-orange mb-1.5 sm:mb-4 tracking-tight tabular-nums">
                   {reason.number}
                 </div>
                 <h3 className="text-xs sm:text-lg lg:text-xl font-bold mb-1.5 sm:mb-4 text-white">{reason.title}</h3>
@@ -54,7 +55,7 @@ export const WhyChooseUs = () => {
           ))}
         </div>
         
-        <div className="bg-gradient-to-br from-charcoal/40 to-black/20 backdrop-blur-sm border border-gray-800/50 rounded-2xl sm:rounded-3xl p-4 sm:p-8 lg:p-12 text-center shadow-2xl">
+        <div className="card-premium rounded-2xl p-4 sm:p-8 lg:p-12 text-center">
           <h3 className="text-lg sm:text-3xl font-bold mb-3 sm:mb-6">
             State-of-the-Art Facility in the Heart of <span className="text-burnt-orange">D</span>ubai
           </h3>
@@ -63,15 +64,15 @@ export const WhyChooseUs = () => {
             and climate-controlled environments to ensure your luxury vehicle receives the care it deserves.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-2.5 sm:gap-6 lg:gap-8 text-sm">
-            <div className="bg-black/30 rounded-xl sm:rounded-2xl p-3 sm:p-6 backdrop-blur-sm">
+            <div className="bg-white/[0.03] border border-white/[0.06] rounded-xl p-3 sm:p-6">
               <div className="font-semibold text-burnt-orange mb-1 sm:mb-2 text-sm sm:text-lg">Advanced Diagnostics</div>
               <div className="text-gray-400 text-xs sm:text-sm">Latest OEM diagnostic equipment</div>
             </div>
-            <div className="bg-black/30 rounded-xl sm:rounded-2xl p-3 sm:p-6 backdrop-blur-sm">
+            <div className="bg-white/[0.03] border border-white/[0.06] rounded-xl p-3 sm:p-6">
               <div className="font-semibold text-burnt-orange mb-1 sm:mb-2 text-sm sm:text-lg">Climate Controlled</div>
               <div className="text-gray-400 text-xs sm:text-sm">Optimal working conditions</div>
             </div>
-            <div className="bg-black/30 rounded-xl sm:rounded-2xl p-3 sm:p-6 backdrop-blur-sm">
+            <div className="bg-white/[0.03] border border-white/[0.06] rounded-xl p-3 sm:p-6">
               <div className="font-semibold text-burnt-orange mb-1 sm:mb-2 text-sm sm:text-lg">Secure Storage</div>
               <div className="text-gray-400 text-xs sm:text-sm">24/7 monitored facility</div>
             </div>

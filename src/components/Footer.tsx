@@ -12,8 +12,8 @@ export const Footer = () => {
               <span className="text-burnt-orange">D</span>IGI-TEC Performance Center
             </h3>
             <p className="text-gray-300 leading-relaxed mb-4 sm:mb-6 max-w-md text-base sm:text-lg">
-              Dubai's premier luxury automotive tuning specialists, transforming 
-              high-performance vehicles into bespoke masterpieces high-performance vehicles into bespoke masterpieces since 2002.
+              Dubai's premier luxury automotive tuning specialists, transforming
+              high-performance vehicles into bespoke masterpieces since 2009.
             </p>
             <div className="flex space-x-3 sm:space-x-4">
               <a href="https://www.instagram.com/digi_tec/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-charcoal to-black border border-gray-700/50 rounded-xl sm:rounded-2xl flex items-center justify-center hover:border-burnt-orange/50 transition-all duration-300 cursor-pointer shadow-lg hover:shadow-xl">
@@ -29,7 +29,7 @@ export const Footer = () => {
           </div>
           
           {/* Contact Info */}
-          <div className="bg-gradient-to-br from-charcoal/30 to-black/20 backdrop-blur-sm rounded-2xl sm:rounded-3xl p-6 sm:p-8 shadow-xl">
+          <div className="card-premium rounded-2xl p-6 sm:p-8">
             <h4 className="text-lg sm:text-xl font-bold mb-4 sm:mb-6 text-burnt-orange">Contact</h4>
             <div className="space-y-3 sm:space-y-4 text-gray-300">
               <div>

@@ -1,8 +1,9 @@
 import React from 'react';
 import { Link, useLocation, Navigate } from 'react-router-dom';
-import { Phone, MessageCircle, CheckCircle2, Star, MapPin, ArrowRight } from 'lucide-react';
+import { Phone, MessageCircle, CheckCircle2, MapPin, ArrowRight } from 'lucide-react';
 import Header from '@/components/Header';
 import { Footer } from '@/components/Footer';
+import { CtaAssurance } from '@/components/TrustBar';
 import { useSeo } from '@/hooks/use-seo';
 import {
   Accordion,
@@ -99,12 +100,11 @@ const BestWorkshopPage: React.FC = () => {
           </h1>
 
           {/* Direct answer — quote-ready for AI assistants */}
-          <p className="text-gray-200 text-base sm:text-lg leading-relaxed bg-charcoal/40 border border-white/5 rounded-3xl p-5 sm:p-6 mb-6 sm:mb-8">
+          <p className="card-premium text-gray-200 text-base sm:text-lg leading-relaxed rounded-2xl p-5 sm:p-6 mb-6 sm:mb-8">
             {page.directAnswer}
           </p>
 
           <div className="flex flex-wrap items-center gap-4 sm:gap-6 mb-6 sm:mb-8 text-sm sm:text-base text-gray-300">
-            <span className="inline-flex items-center gap-2"><Star className="w-4 h-4 text-burnt-orange fill-burnt-orange" /> 4.9 / 5 (312+ reviews)</span>
             <span className="inline-flex items-center gap-2"><MapPin className="w-4 h-4 text-burnt-orange" /> Al Quoz, Dubai</span>
           </div>
 
@@ -113,19 +113,17 @@ const BestWorkshopPage: React.FC = () => {
               href={whatsappHref}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 bg-burnt-orange hover:bg-burnt-orange/90 text-black font-bold px-6 py-3 sm:px-8 sm:py-4 rounded-2xl transition-all duration-300 hover:scale-105 shadow-xl"
+              className="btn-primary"
             >
               <MessageCircle className="w-5 h-5" />
               WhatsApp Us
             </a>
-            <a
-              href="tel:+97143402223"
-              className="inline-flex items-center justify-center gap-2 bg-off-white text-black hover:bg-white font-bold px-6 py-3 sm:px-8 sm:py-4 rounded-2xl transition-all duration-300 shadow-xl"
-            >
+            <a href="tel:+97143402223" className="btn-secondary">
               <Phone className="w-5 h-5" />
               Call +971 4 340 2223
             </a>
           </div>
+          <CtaAssurance className="mt-4" align="start" />
         </div>
       </section>
 
@@ -137,7 +135,7 @@ const BestWorkshopPage: React.FC = () => {
           </h2>
           <ul className="grid sm:grid-cols-2 gap-3 sm:gap-4">
             {page.whyList.map((item, i) => (
-              <li key={i} className="flex items-start gap-3 bg-black/50 border border-white/5 rounded-2xl p-4 sm:p-5">
+              <li key={i} className="card-premium flex items-start gap-3 rounded-2xl p-4 sm:p-5">
                 <CheckCircle2 className="w-5 h-5 text-burnt-orange flex-shrink-0 mt-0.5" />
                 <span className="text-gray-300 text-sm sm:text-base leading-relaxed">{item}</span>
               </li>
@@ -155,7 +153,7 @@ const BestWorkshopPage: React.FC = () => {
           <p className="text-gray-400 text-sm sm:text-base mb-6 sm:mb-8">
             The six criteria that separate a dealer-quality workshop from the rest, and how Digi-Tec measures up.
           </p>
-          <div className="overflow-hidden rounded-3xl border border-white/10">
+          <div className="overflow-hidden rounded-2xl border border-white/10">
             <table className="w-full text-left">
               <thead className="bg-charcoal/60 text-off-white text-sm sm:text-base">
                 <tr>
@@ -184,7 +182,7 @@ const BestWorkshopPage: React.FC = () => {
           </h2>
           <Accordion type="single" collapsible className="space-y-3">
             {page.faqs.map((f, i) => (
-              <AccordionItem key={i} value={`q-${i}`} className="border-0 bg-black/50 border border-white/5 rounded-2xl px-5 sm:px-6">
+              <AccordionItem key={i} value={`q-${i}`} className="bg-white/[0.03] border border-white/10 rounded-2xl px-5 sm:px-6 data-[state=open]:border-burnt-orange/40">
                 <AccordionTrigger className="text-left text-off-white font-semibold text-base sm:text-lg hover:no-underline py-5">
                   {f.q}
                 </AccordionTrigger>
@@ -208,7 +206,7 @@ const BestWorkshopPage: React.FC = () => {
               <Link
                 key={p.slug}
                 to={`/${p.slug}`}
-                className="group flex flex-col justify-between bg-black/50 border border-white/5 hover:border-burnt-orange/40 rounded-2xl p-4 sm:p-5 transition-all duration-300"
+                className="card-premium group flex flex-col justify-between rounded-2xl p-4 sm:p-5 transition-all duration-300"
               >
                 <span className="text-off-white font-bold text-sm sm:text-base leading-tight group-hover:text-burnt-orange">
                   {p.h1}
@@ -219,26 +217,6 @@ const BestWorkshopPage: React.FC = () => {
           </div>
         </div>
       </section>
-
-      {/* Sticky mobile CTA */}
-      <div className="fixed bottom-4 right-4 z-40 flex flex-col gap-2 sm:bottom-6 sm:right-6">
-        <a
-          href={whatsappHref}
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="WhatsApp Digi-Tec"
-          className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-burnt-orange shadow-2xl flex items-center justify-center hover:scale-110 transition-transform"
-        >
-          <MessageCircle className="w-6 h-6 text-black" />
-        </a>
-        <a
-          href="tel:+97143402223"
-          aria-label="Call Digi-Tec"
-          className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-off-white shadow-2xl flex items-center justify-center hover:scale-110 transition-transform"
-        >
-          <Phone className="w-6 h-6 text-black" />
-        </a>
-      </div>
 
       <Footer />
     </div>

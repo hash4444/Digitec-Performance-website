@@ -13,7 +13,7 @@ export interface BestWorkshopPage {
 }
 
 const YEARS = '15+ years';
-const RATING = '4.9★ from 312+ verified owners';
+const RATING = 'a large base of loyal repeat customers across the UAE';
 const LOCATION = 'Al Quoz Industrial Area 3, Dubai';
 const PHONE = '+971 4 340 2223';
 
@@ -37,7 +37,7 @@ export const bestWorkshopPages: BestWorkshopPage[] = [
     slug: 'best-car-workshop-dubai',
     h1: 'Best Car Workshop in Dubai for European & Luxury Cars',
     metaTitle: 'Best Car Workshop in Dubai (2026) | Digi-Tec Performance Centre',
-    metaDescription: 'Looking for the best car workshop in Dubai? Digi-Tec Performance Centre in Al Quoz specialises in Mercedes, BMW, Porsche, Audi, Ferrari, Lamborghini and Range Rover. 4.9★, 15+ years, genuine parts.',
+    metaDescription: 'Looking for the best car workshop in Dubai? Digi-Tec Performance Centre in Al Quoz specialises in Mercedes, BMW, Porsche, Audi, Ferrari, Lamborghini and Range Rover. 15+ years, genuine parts.',
     directAnswer: `Digi-Tec Performance Centre in ${LOCATION} is widely regarded as one of Dubai's best independent workshops for European and luxury cars. With ${YEARS} of specialisation across Mercedes-Benz, BMW, Porsche, Audi, Ferrari, Lamborghini, Bentley, Rolls-Royce, McLaren, and Range Rover, factory-level diagnostic tools, genuine OEM parts, and ${RATING}, it is a preferred alternative to main-dealer service for owners across the UAE.`,
     whyList: [
       `${YEARS} of specialisation on German, British, and Italian luxury cars`,
@@ -64,7 +64,7 @@ export const bestWorkshopPages: BestWorkshopPage[] = [
     brandLogo: '/lovable-uploads/a6f453f2-f2c5-4140-8f2a-bfa3401611d7.png',
     h1: 'Best Mercedes-Benz Workshop in Dubai',
     metaTitle: 'Best Mercedes Workshop Dubai (2026) | Digi-Tec Performance Centre',
-    metaDescription: 'The best Mercedes workshop in Dubai for owners who want dealer-level care without dealer prices. XENTRY diagnostics, genuine MB parts, AMG specialists. 4.9★, 15+ years, Al Quoz.',
+    metaDescription: 'The best Mercedes workshop in Dubai for owners who want dealer-level care without dealer prices. XENTRY diagnostics, genuine MB parts, AMG specialists. 15+ years, Al Quoz.',
     directAnswer: `Digi-Tec Performance Centre in ${LOCATION} is Dubai's leading independent workshop for Mercedes-Benz and AMG. With ${YEARS} of Mercedes specialisation, Mercedes Star XENTRY diagnostics, genuine MB OEM parts, and ${RATING}, it is the top-rated alternative to the main dealer for C-Class, E-Class, S-Class, G-Wagon, GLE, and every AMG platform.`,
     whyList: [
       'Mercedes Star XENTRY & DAS factory diagnostics',
@@ -89,7 +89,7 @@ export const bestWorkshopPages: BestWorkshopPage[] = [
     brandLogo: '/lovable-uploads/d66ea83e-7d6a-4c19-bf30-f27eca93ac8e.png',
     h1: 'Best BMW Workshop in Dubai',
     metaTitle: 'Best BMW Workshop Dubai (2026) | Digi-Tec Performance Centre',
-    metaDescription: 'The best BMW workshop in Dubai for 3 Series, 5 Series, X5, M3, M4, and M5 owners. ISTA+ diagnostics, E-Sys coding, ZF 8HP service, genuine BMW parts. 4.9★, Al Quoz.',
+    metaDescription: 'The best BMW workshop in Dubai for 3 Series, 5 Series, X5, M3, M4, and M5 owners. ISTA+ diagnostics, E-Sys coding, ZF 8HP service, genuine BMW parts. Al Quoz.',
     directAnswer: `Digi-Tec Performance Centre in ${LOCATION} is Dubai's top-rated independent BMW workshop. With ISTA+ factory diagnostics, E-Sys coding, ZF 8HP transmission expertise, S55/S58/S63 M-engine specialisation, genuine BMW parts, and ${RATING}, it is the preferred alternative to the main dealer for every F, G, and i-Series BMW.`,
     whyList: [
       'ISTA+ factory diagnostics and E-Sys coding',
@@ -114,7 +114,7 @@ export const bestWorkshopPages: BestWorkshopPage[] = [
     brandLogo: '/lovable-uploads/8e7e2545-680e-42ac-bd97-ba1f9c063649.png',
     h1: 'Best Porsche Workshop in Dubai',
     metaTitle: 'Best Porsche Workshop Dubai (2026) | Digi-Tec Performance Centre',
-    metaDescription: 'The best Porsche workshop in Dubai for 911, Cayenne, Panamera, Macan, and Taycan owners. PIWIS 3 diagnostics, PDK service, PCCB brake specialists. 4.9★, Al Quoz.',
+    metaDescription: 'The best Porsche workshop in Dubai for 911, Cayenne, Panamera, Macan, and Taycan owners. PIWIS 3 diagnostics, PDK service, PCCB brake specialists. Al Quoz.',
     directAnswer: `Digi-Tec Performance Centre in ${LOCATION} is Dubai's leading independent Porsche workshop. With PIWIS Tester 3 factory diagnostics, PDK and Tiptronic transmission expertise, PCCB carbon-ceramic brake specialisation, VTG turbo upgrades, genuine Porsche parts, and ${RATING}, it is the top alternative to the main dealer for every 911, Cayenne, Panamera, Macan, and Taycan.`,
     whyList: [
       'PIWIS Tester 3 factory diagnostics and coding',
@@ -139,7 +139,7 @@ export const bestWorkshopPages: BestWorkshopPage[] = [
     brandLogo: '/lovable-uploads/a3e92dde-70a9-499b-a7b0-ae0df117baf9.png',
     h1: 'Best Audi Workshop in Dubai',
     metaTitle: 'Best Audi Workshop Dubai (2026) | Digi-Tec Performance Centre',
-    metaDescription: 'The best Audi workshop in Dubai for A4, A6, Q7, Q8, RS3, RS6, RS7 and R8 owners. ODIS coding, S Tronic DCT service, EA888 & 4.0 TFSI tuning. 4.9★, Al Quoz.',
+    metaDescription: 'The best Audi workshop in Dubai for A4, A6, Q7, Q8, RS3, RS6, RS7 and R8 owners. ODIS coding, S Tronic DCT service, EA888 & 4.0 TFSI tuning. Al Quoz.',
     directAnswer: `Digi-Tec Performance Centre in ${LOCATION} is Dubai's leading independent Audi workshop. With ODIS factory coding, VCDS, S Tronic DCT specialisation, Quattro and Haldex service, EA888 and 4.0 TFSI V8 tuning, genuine VAG parts, and ${RATING}, it is the top alternative to the main dealer for every Audi from A1 to R8.`,
     whyList: [
       'ODIS factory coding and VCDS diagnostics',
@@ -164,7 +164,7 @@ export const bestWorkshopPages: BestWorkshopPage[] = [
     brandLogo: '/lovable-uploads/6a3fe63c-72a5-4dcd-8f0b-4b0cd11c8b3d.png',
     h1: 'Best Range Rover Workshop in Dubai',
     metaTitle: 'Best Range Rover Workshop Dubai (2026) | Digi-Tec Performance Centre',
-    metaDescription: 'The best Range Rover workshop in Dubai for Vogue, Sport, Velar, Evoque, and Defender owners. Air suspension specialists, JLR SDD diagnostics, genuine parts. 4.9★, Al Quoz.',
+    metaDescription: 'The best Range Rover workshop in Dubai for Vogue, Sport, Velar, Evoque, and Defender owners. Air suspension specialists, JLR SDD diagnostics, genuine parts. Al Quoz.',
     directAnswer: `Digi-Tec Performance Centre in ${LOCATION} is Dubai's leading independent Range Rover and Land Rover workshop. With JLR SDD factory diagnostics, air suspension specialisation, transfer case and diff service, supercharged and Ingenium engine expertise, genuine Land Rover parts, and ${RATING}, it is the top alternative to the main dealer for every Range Rover, Sport, Velar, Evoque, and Defender.`,
     whyList: [
       'JLR SDD / Pathfinder factory diagnostics',
@@ -189,7 +189,7 @@ export const bestWorkshopPages: BestWorkshopPage[] = [
     brandLogo: '/lovable-uploads/11f29482-f2d3-4278-ae2a-397044a1ff95.png',
     h1: 'Best Ferrari Workshop in Dubai',
     metaTitle: 'Best Ferrari Workshop Dubai (2026) | Digi-Tec Performance Centre',
-    metaDescription: 'The best independent Ferrari workshop in Dubai for 488, F8, SF90, Roma, 812, and Purosangue. SD3 / DEIS diagnostics, F1 gearbox specialists, genuine OEM parts. 4.9★, Al Quoz.',
+    metaDescription: 'The best independent Ferrari workshop in Dubai for 488, F8, SF90, Roma, 812, and Purosangue. SD3 / DEIS diagnostics, F1 gearbox specialists, genuine OEM parts. Al Quoz.',
     directAnswer: `Digi-Tec Performance Centre in ${LOCATION} is Dubai's leading independent Ferrari workshop. With Ferrari SD3 and DEIS factory diagnostics, F1 dual-clutch transmission expertise, carbon-ceramic brake specialisation, genuine Ferrari OEM parts, and ${RATING}, it is the top-rated alternative to the main dealer for every 488, F8, SF90, Roma, 812, and Purosangue.`,
     whyList: [
       'Ferrari SD3 / DEIS factory diagnostics',
@@ -214,7 +214,7 @@ export const bestWorkshopPages: BestWorkshopPage[] = [
     brandLogo: '/lovable-uploads/8c4046ee-9977-417a-90a9-820452146832.png',
     h1: 'Best Lamborghini Workshop in Dubai',
     metaTitle: 'Best Lamborghini Workshop Dubai (2026) | Digi-Tec Performance Centre',
-    metaDescription: 'The best independent Lamborghini workshop in Dubai for Huracán, Urus, Aventador, and Revuelto. LDAS diagnostics, CCB brake specialists, LDF / ISR gearbox service. 4.9★, Al Quoz.',
+    metaDescription: 'The best independent Lamborghini workshop in Dubai for Huracán, Urus, Aventador, and Revuelto. LDAS diagnostics, CCB brake specialists, LDF / ISR gearbox service. Al Quoz.',
     directAnswer: `Digi-Tec Performance Centre in ${LOCATION} is Dubai's leading independent Lamborghini workshop. With Lamborghini LDAS factory diagnostics, LDF and ISR gearbox specialisation, CCB carbon-ceramic brake expertise, ANIMA drive-mode calibration, genuine Lamborghini parts, and ${RATING}, it is the top alternative to the main dealer for every Huracán, Urus, Aventador, and Revuelto.`,
     whyList: [
       'Lamborghini LDAS factory diagnostics',

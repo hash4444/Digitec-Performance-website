@@ -18,6 +18,7 @@ import BrandServicePage from "./pages/BrandServicePage";
 import BestWorkshopPage from "./pages/BestWorkshopPage";
 import NotFound from "./pages/NotFound";
 import LegacyRedirectHandler from "./components/LegacyRedirectHandler";
+import MascotWidget from "./components/MascotWidget";
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -181,6 +182,7 @@ const App = () => (
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
+        <MascotWidget />
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>

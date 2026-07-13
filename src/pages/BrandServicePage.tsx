@@ -16,6 +16,7 @@ import {
   getServicesForBrand,
 } from '@/data/brandServices';
 import { getBrandBySlug } from '@/data/brands';
+import { CtaAssurance } from '@/components/TrustBar';
 import {
   buildBreadcrumb,
   buildFAQ,
@@ -122,19 +123,17 @@ const BrandServicePage: React.FC = () => {
                 href={whatsappHref}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 bg-burnt-orange hover:bg-burnt-orange/90 text-black font-bold px-6 py-3 sm:px-8 sm:py-4 rounded-2xl transition-all duration-300 hover:scale-105 shadow-xl"
+                className="btn-primary"
               >
                 <MessageCircle className="w-5 h-5" />
                 WhatsApp Us
               </a>
-              <a
-                href="tel:+97143402223"
-                className="inline-flex items-center justify-center gap-2 bg-off-white text-black hover:bg-white font-bold px-6 py-3 sm:px-8 sm:py-4 rounded-2xl transition-all duration-300 shadow-xl"
-              >
+              <a href="tel:+97143402223" className="btn-secondary">
                 <Phone className="w-5 h-5" />
                 Call +971 4 340 2223
               </a>
             </div>
+            <CtaAssurance className="mt-4" align="start" />
           </div>
         </div>
       </section>
@@ -147,7 +146,7 @@ const BrandServicePage: React.FC = () => {
           </h2>
           <div className="grid sm:grid-cols-2 gap-3 sm:gap-4">
             {combo.symptoms.map((s, i) => (
-              <div key={i} className="flex items-start gap-3 bg-black/50 border border-white/5 rounded-2xl p-4 sm:p-5">
+              <div key={i} className="card-premium flex items-start gap-3 rounded-2xl p-4 sm:p-5">
                 <CheckCircle2 className="w-5 h-5 text-burnt-orange flex-shrink-0 mt-0.5" />
                 <span className="text-gray-300 text-sm sm:text-base leading-relaxed">{s}</span>
               </div>
@@ -167,7 +166,7 @@ const BrandServicePage: React.FC = () => {
           </p>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
             {combo.models.map((m) => (
-              <div key={m} className="bg-black/50 border border-white/5 rounded-2xl p-3 sm:p-4 text-center">
+              <div key={m} className="card-premium rounded-2xl p-3 sm:p-4 text-center">
                 <span className="text-off-white text-xs sm:text-sm font-semibold">{m}</span>
               </div>
             ))}
@@ -183,7 +182,7 @@ const BrandServicePage: React.FC = () => {
           </h2>
           <div className="grid sm:grid-cols-2 gap-4 sm:gap-6">
             {combo.processSteps.map((step, i) => (
-              <div key={i} className="bg-gradient-to-br from-charcoal/60 to-black/40 border border-white/5 rounded-3xl p-5 sm:p-6">
+              <div key={i} className="card-premium rounded-2xl p-5 sm:p-6">
                 <div className="flex items-center gap-3 mb-3">
                   <span className="w-8 h-8 rounded-full bg-burnt-orange text-black font-black flex items-center justify-center text-sm">{i + 1}</span>
                   <h3 className="text-base sm:text-lg font-bold text-off-white">{step.title}</h3>
@@ -218,7 +217,7 @@ const BrandServicePage: React.FC = () => {
           </h2>
           <Accordion type="single" collapsible className="space-y-3">
             {combo.faqs.map((f, i) => (
-              <AccordionItem key={i} value={`q-${i}`} className="border-0 bg-black/50 border border-white/5 rounded-2xl px-5 sm:px-6">
+              <AccordionItem key={i} value={`q-${i}`} className="bg-white/[0.03] border border-white/10 rounded-2xl px-5 sm:px-6 data-[state=open]:border-burnt-orange/40">
                 <AccordionTrigger className="text-left text-off-white font-semibold text-base sm:text-lg hover:no-underline py-5">
                   {f.question}
                 </AccordionTrigger>
@@ -245,7 +244,7 @@ const BrandServicePage: React.FC = () => {
               <Link
                 key={s.serviceSlug}
                 to={`/brands/${combo.brandSlug}/${s.serviceSlug}`}
-                className="group flex flex-col justify-between bg-black/50 border border-white/5 hover:border-burnt-orange/40 rounded-2xl p-4 sm:p-5 transition-all duration-300"
+                className="card-premium group flex flex-col justify-between rounded-2xl p-4 sm:p-5 transition-all duration-300"
               >
                 <span className="text-off-white font-bold text-sm sm:text-base leading-tight group-hover:text-burnt-orange">
                   {combo.brandName} {s.label}
@@ -265,26 +264,6 @@ const BrandServicePage: React.FC = () => {
           </div>
         </div>
       </section>
-
-      {/* Sticky mobile CTA */}
-      <div className="fixed bottom-4 right-4 z-40 flex flex-col gap-2 sm:bottom-6 sm:right-6">
-        <a
-          href={whatsappHref}
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label={`WhatsApp Digi-Tec about ${combo.brandName} ${combo.serviceName}`}
-          className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-burnt-orange shadow-2xl flex items-center justify-center hover:scale-110 transition-transform"
-        >
-          <MessageCircle className="w-6 h-6 text-black" />
-        </a>
-        <a
-          href="tel:+97143402223"
-          aria-label="Call Digi-Tec"
-          className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-off-white shadow-2xl flex items-center justify-center hover:scale-110 transition-transform"
-        >
-          <Phone className="w-6 h-6 text-black" />
-        </a>
-      </div>
 
       <Footer />
     </div>

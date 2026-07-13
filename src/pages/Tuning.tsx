@@ -4,6 +4,8 @@ import { useSeo } from '@/hooks/use-seo';
 import Header from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import TuningConfigurator from '@/components/TuningConfigurator';
+import { TrustBar, CtaAssurance } from '@/components/TrustBar';
+import { FinalCTA } from '@/components/FinalCTA';
 import {
   buildBreadcrumb,
   buildFAQ,
@@ -79,7 +81,9 @@ const Tuning = () => {
         style={{ backgroundImage: "url('/images/tuning-hero-bg.jpg')" }}
       >
         <div className="absolute inset-0 bg-black/60" />
+        <div className="absolute bottom-0 inset-x-0 h-24 sm:h-32 bg-gradient-to-b from-transparent to-black" />
         <div className="relative z-10 text-center px-5 sm:px-6 max-w-4xl mx-auto py-12 md:py-0">
+          <span className="eyebrow mb-4 sm:mb-6">Official GAD Motors Partner · UAE</span>
           <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold mb-4 md:mb-6 tracking-tight">
             <span className="text-red-600">GAD Motors</span> Performance Tuning
           </h1>
@@ -92,28 +96,38 @@ const Tuning = () => {
               www.gad-motors.de
             </a>
           </p>
-          <p className="text-xs sm:text-sm md:text-base text-off-white/50 mt-5 max-w-3xl mx-auto leading-relaxed">
-            If you're looking for professional ECU tuning in Dubai, Digi-Tec Performance Center offers advanced performance upgrades for Mercedes, Porsche, Lamborghini, Aston Martin, and the VRX Mercedes. Our tuning solutions are developed in partnership with GAD Motors, ensuring maximum power gains, reliability, and precision engineering tailored to your car.
-          </p>
-          <p className="text-xs sm:text-sm md:text-base text-off-white/50 mt-3 max-w-3xl mx-auto leading-relaxed">
-            Digi-Tec Performance Center is a trusted name for ECU tuning in Dubai, specializing in German vehicles. Whether you're searching for performance tuning near you or looking to increase horsepower and torque, our expert team delivers tailored solutions designed to enhance your driving experience while maintaining reliability and safety.
-          </p>
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-5 justify-center items-center mt-7 sm:mt-9">
+            <a
+              href={`https://wa.me/97143402223?text=${encodeURIComponent("Hi, I'm interested in GAD performance tuning for my car.")}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-primary w-full sm:w-auto"
+            >
+              Book a Tuning Consultation
+            </a>
+          </div>
+          <CtaAssurance className="mt-4" />
         </div>
       </section>
+
+      <TrustBar />
 
       {/* GAD Tuning Dubai Section */}
       <section id="gad-tuning-dubai" className="relative py-16 md:py-24 bg-black overflow-hidden">
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto">
-            <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-off-white mb-6 leading-tight">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-off-white mb-6 leading-tight">
               GAD Tuning Dubai | GAD Motors Parts & Performance Upgrades – Digitec
-            </h1>
+            </h2>
+            <p className="text-base md:text-lg text-white/70 leading-relaxed mb-8">
+              If you're looking for professional ECU tuning in Dubai, Digi-Tec Performance Center offers advanced performance upgrades for Mercedes, Porsche, Lamborghini, Aston Martin, and the VRX Mercedes. Our tuning solutions are developed in partnership with GAD Motors, ensuring maximum power gains, reliability, and precision engineering tailored to your car.
+            </p>
             <p className="text-base md:text-lg text-white/70 leading-relaxed mb-8">
               At Digitec Performance Center, we offer a wide range of GAD Motors performance parts in Dubai, engineered for maximum power, reliability, and precision. Our selection includes high-performance low-pressure fuel systems, intake manifolds, turbochargers, intercooler kits, piston sets, connecting rods, gearbox upgrades, and complete turbo kits designed specifically for Mercedes-Benz AMG and other high-performance platforms. Whether you're upgrading airflow, increasing boost, or building a fully tuned engine, all GAD parts we supply are developed and tested to deliver exceptional performance under demanding conditions. As a trusted provider of GAD parts in Dubai, we ensure every component meets the highest standards of engineering and performance tuning.
             </p>
-            <h2 id="gad-parts-dubai" className="text-xl sm:text-2xl md:text-3xl font-bold text-off-white mb-4">
+            <h3 id="gad-parts-dubai" className="text-xl sm:text-2xl md:text-3xl font-bold text-off-white mb-4">
               GAD Motors Performance Parts in Dubai
-            </h2>
+            </h3>
             <p className="text-base md:text-lg text-white/70 leading-relaxed">
               Digitec Performance Center is a trusted destination for GAD tuning in Dubai, offering expert installation, calibration, and performance optimization backed by our partnership with GAD Motors. Our technicians specialize in high-performance and German vehicles, using GAD-certified software, precision diagnostics, and advanced tuning techniques to unlock your vehicle's full potential safely and efficiently. We provide tailored tuning solutions, fast turnaround times, and complete transparency, ensuring every upgrade is performed to the highest standard. If you're searching for GAD tuning Dubai or a reliable GAD partner, Digitec delivers the expertise, technology, and results that set us apart in the performance automotive market.
             </p>
@@ -130,13 +144,17 @@ const Tuning = () => {
             <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-off-white mb-4">
               GAD Tuning Near Me in Dubai
             </h2>
-            <p className="text-base md:text-lg text-white/70 leading-relaxed">
+            <p className="text-base md:text-lg text-white/70 leading-relaxed mb-6">
               If you are searching for GAD tuning Dubai, GAD Motors Dubai, or GAD partner UAE, Digitec Performance Center is your trusted destination for professional performance upgrades.
+            </p>
+            <p className="text-base md:text-lg text-white/70 leading-relaxed">
+              Digi-Tec Performance Center is a trusted name for ECU tuning in Dubai, specializing in German vehicles. Whether you're searching for performance tuning near you or looking to increase horsepower and torque, our expert team delivers tailored solutions designed to enhance your driving experience while maintaining reliability and safety.
             </p>
           </div>
         </div>
       </section>
 
+      <FinalCTA />
       <Footer />
     </div>
   );

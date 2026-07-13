@@ -7,7 +7,6 @@ export interface Brand {
   whyChoose: { title: string; description: string }[];
   faqs: { q: string; a: string }[];
   relatedServices: string[];
-  testimonial?: { name: string; vehicle: string; quote: string };
 }
 
 export const brands: Brand[] = [
@@ -31,7 +30,6 @@ export const brands: Brand[] = [
       { q: 'Do you handle AIRMATIC suspension faults?', a: 'Yes. AIRMATIC and ABC repair is one of our core specialisations, including struts, compressors, valve blocks, and ride-height sensor calibration.' },
     ],
     relatedServices: ['mercedes-repair-dubai', 'transmission-repair-dubai', 'suspension-repair-dubai', 'car-diagnostics-dubai'],
-    testimonial: { name: 'Ahmed Al-Mansouri', vehicle: 'Mercedes-AMG GT 63 S', quote: 'Exceptional service and incredible results. My AMG now produces 750hp and the transformation is remarkable. The team at Digi-Tec truly understands luxury performance.' },
   },
   {
     name: 'Maybach',
@@ -74,7 +72,6 @@ export const brands: Brand[] = [
       { q: 'Can you service PDK transmissions?', a: 'Yes. PDK fluid and filter service, mechatronic diagnostics, and clutch-pack inspection are all done in-house with PIWIS.' },
     ],
     relatedServices: ['mechanical-repair-dubai', 'transmission-repair-dubai', 'brake-repair-dubai', 'car-diagnostics-dubai'],
-    testimonial: { name: 'Sarah Johnson', vehicle: 'Porsche 911 Turbo S', quote: 'Professional, knowledgeable, and delivered beyond expectations. The custom exhaust system sounds absolutely phenomenal. Worth every dirham.' },
   },
   {
     name: 'Audi',
@@ -201,7 +198,6 @@ export const brands: Brand[] = [
       { q: 'Can you measure F1 clutch wear?', a: 'Yes. We measure F1 clutch position via SD3 diagnostics and provide a clear remaining-life report on every visit.' },
     ],
     relatedServices: ['mechanical-repair-dubai', 'brake-repair-dubai', 'transmission-repair-dubai', 'paint-protection-dubai'],
-    testimonial: { name: 'Mohammed Ottabi', vehicle: 'Ferrari 488 GTB', quote: 'Outstanding craftsmanship and attention to detail. The performance gains are incredible and the service is truly world-class. Highly recommended.' },
   },
   {
     name: 'Bugatti',

@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Button } from '@/components/ui/button';
+import { CtaAssurance } from '@/components/TrustBar';
 
 export const FinalCTA = () => {
   return (
@@ -10,6 +10,7 @@ export const FinalCTA = () => {
       <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-48 h-48 sm:w-96 sm:h-96 bg-burnt-orange/10 rounded-full blur-3xl"></div>
       
       <div className="max-w-6xl mx-auto px-4 sm:px-6 text-center relative z-10">
+        <span className="eyebrow mb-3 sm:mb-6">Get Started</span>
         <h2 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black mb-3 sm:mb-6 leading-tight">
           Ready to Transform Your 
           <br />
@@ -21,34 +22,33 @@ export const FinalCTA = () => {
           Experience the pinnacle of luxury performance tuning at <span className="text-burnt-orange">D</span>IGI-TEC Performance Center.
         </p>
         
-        <div className="flex flex-col sm:flex-row gap-3 sm:gap-6 justify-center items-center mb-8 sm:mb-16">
+        <div className="flex flex-col sm:flex-row gap-3 sm:gap-5 justify-center items-center mb-4 sm:mb-5">
           <a
             href={`https://wa.me/97143402223?text=${encodeURIComponent("Hi, I'd like to schedule a consultation at Digi-Tec Performance Center.")}`}
             target="_blank"
             rel="noopener noreferrer"
-            className="w-full sm:w-auto inline-flex items-center justify-center bg-burnt-orange hover:bg-burnt-orange/90 text-black font-bold text-sm sm:text-xl px-6 sm:px-16 py-3 sm:py-6 rounded-2xl transition-all duration-300 transform hover:scale-105 shadow-2xl hover:shadow-burnt-orange/25"
+            className="btn-primary w-full sm:w-auto"
           >
             Schedule Your Consultation
           </a>
-          
-          <a
-            href="tel:+97143402223"
-            className="w-full sm:w-auto inline-flex items-center justify-center border-2 border-off-white bg-off-white text-black hover:bg-white hover:text-black font-bold text-sm sm:text-xl px-6 sm:px-16 py-3 sm:py-6 rounded-2xl transition-all duration-300 shadow-xl hover:shadow-2xl"
-          >
+
+          <a href="tel:+97143402223" className="btn-secondary w-full sm:w-auto">
             Call +971 4 340 2223
           </a>
         </div>
+
+        <CtaAssurance className="mb-8 sm:mb-14" />
         
         <div className="grid grid-cols-3 gap-2 sm:gap-8 text-center">
-          <div className="bg-gradient-to-br from-black/40 to-charcoal/20 backdrop-blur-sm rounded-2xl sm:rounded-3xl p-3 sm:p-8 shadow-xl">
+          <div className="card-premium rounded-2xl p-3 sm:p-8">
             <div className="text-xs sm:text-2xl font-bold text-burnt-orange mb-1 sm:mb-4 leading-tight">Free Consultation</div>
             <div className="text-gray-300 text-[11px] sm:text-lg leading-snug">Complimentary performance assessment</div>
           </div>
-          <div className="bg-gradient-to-br from-black/40 to-charcoal/20 backdrop-blur-sm rounded-2xl sm:rounded-3xl p-3 sm:p-8 shadow-xl">
+          <div className="card-premium rounded-2xl p-3 sm:p-8">
             <div className="text-xs sm:text-2xl font-bold text-burnt-orange mb-1 sm:mb-4 leading-tight">Expert Advice</div>
             <div className="text-gray-300 text-[11px] sm:text-lg leading-snug">Personalized tuning recommendations</div>
           </div>
-          <div className="bg-gradient-to-br from-black/40 to-charcoal/20 backdrop-blur-sm rounded-2xl sm:rounded-3xl p-3 sm:p-8 shadow-xl">
+          <div className="card-premium rounded-2xl p-3 sm:p-8">
             <div className="text-xs sm:text-2xl font-bold text-burnt-orange mb-1 sm:mb-4 leading-tight">Premium Service</div>
             <div className="text-gray-300 text-[11px] sm:text-lg leading-snug">White-glove treatment guaranteed</div>
           </div>

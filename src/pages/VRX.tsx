@@ -97,9 +97,9 @@ const VRX = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
-            className="text-burnt-orange text-xs sm:text-sm uppercase tracking-[0.3em] font-semibold mb-4 text-primary-foreground"
+            className="eyebrow mb-4"
           >
-            By GAD Motors
+            By GAD Motors · Exclusively at DIGI-TEC
           </motion.p>
 
           <motion.h1
@@ -108,7 +108,7 @@ const VRX = () => {
             transition={{ delay: 0.4 }}
             className="text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-black mb-4 md:mb-6 tracking-tighter"
           >
-            <span className="text-burnt-orange text-red-600">VRX</span>
+            <span className="text-red-600">VRX</span>
           </motion.h1>
 
           <motion.p
@@ -139,7 +139,7 @@ const VRX = () => {
             <img
               src="/images/vrx-hero.jpg"
               alt="VRX Mercedes V-Class by GAD Motors"
-              className="w-full h-auto rounded-3xl shadow-2xl"
+              className="w-full h-auto rounded-2xl ring-1 ring-white/10 shadow-[0_24px_48px_-28px_rgba(0,0,0,0.8)]"
             />
           </motion.div>
 
@@ -163,7 +163,7 @@ const VRX = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
             >
-              <p className="text-burnt-orange text-xs uppercase tracking-[0.3em] font-semibold mb-3">Interior</p>
+              <p className="eyebrow mb-3">Interior</p>
             </motion.div>
           </div>
 
@@ -177,7 +177,7 @@ const VRX = () => {
             <img
               src="/images/vrx-interior.jpg"
               alt="VRX Interior by GAD Motors"
-              className="w-full h-auto rounded-3xl shadow-2xl"
+              className="w-full h-auto rounded-2xl ring-1 ring-white/10 shadow-[0_24px_48px_-28px_rgba(0,0,0,0.8)]"
             />
           </motion.div>
 
@@ -191,11 +191,11 @@ const VRX = () => {
               <img
                 src="/images/vrx-seats.png"
                 alt="VRX Custom Seats by GAD Motors"
-                className="w-full h-auto rounded-3xl shadow-2xl mb-4"
+                className="w-full h-auto rounded-2xl ring-1 ring-white/10 shadow-[0_24px_48px_-28px_rgba(0,0,0,0.8)] mb-4"
               />
               <h3 className="text-lg font-bold text-off-white mb-2">Custom VRX sports seats from GAD Motors</h3>
               <p className="text-sm text-white/50 leading-relaxed">
-                GAD Motors' VRX seats combine comfort, support, and outstanding design, perfectly tailored to the character of your vehicle. Leather version: from [price] per set.
+                GAD Motors' VRX seats combine comfort, support, and outstanding design, perfectly tailored to the character of your vehicle.
               </p>
             </motion.div>
             <motion.div
@@ -207,7 +207,7 @@ const VRX = () => {
               <img
                 src="/images/vrx-ambient.png"
                 alt="VRX Ambient Lighting by GAD Motors"
-                className="w-full h-auto rounded-3xl shadow-2xl mb-4"
+                className="w-full h-auto rounded-2xl ring-1 ring-white/10 shadow-[0_24px_48px_-28px_rgba(0,0,0,0.8)] mb-4"
               />
               <h3 className="text-lg font-bold text-off-white mb-2">Backlighting technology (Ambilight)</h3>
               <p className="text-sm text-white/50 leading-relaxed">
@@ -227,7 +227,7 @@ const VRX = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
             >
-              <p className="text-burnt-orange text-xs uppercase tracking-[0.3em] font-semibold mb-3">Exterior</p>
+              <p className="eyebrow mb-3">Exterior</p>
             </motion.div>
           </div>
 
@@ -240,7 +240,7 @@ const VRX = () => {
             <img
               src={exteriorImage.src}
               alt={exteriorImage.alt}
-              className="w-full h-auto rounded-3xl shadow-2xl"
+              className="w-full h-auto rounded-2xl ring-1 ring-white/10 shadow-[0_24px_48px_-28px_rgba(0,0,0,0.8)]"
             />
           </motion.div>
 
@@ -333,12 +333,12 @@ const VRX = () => {
               href={`https://wa.me/97143402223?text=${encodeURIComponent("Hi, I'm interested in the VRX Mercedes V-Class. Could you please get in touch with me?")}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex-shrink-0 w-full md:w-auto inline-flex items-center justify-center gap-3 bg-red-700 hover:bg-red-600 text-white font-bold text-base sm:text-lg px-10 sm:px-14 py-5 sm:py-6 rounded-2xl transition-all duration-300 hover:scale-105 shadow-xl"
+              className="flex-shrink-0 w-full md:w-auto inline-flex items-center justify-center gap-3 bg-red-700 hover:bg-red-600 text-white font-bold text-xs sm:text-sm uppercase tracking-[0.14em] px-10 sm:px-12 py-4 sm:py-5 rounded-lg transition-all duration-300 hover:-translate-y-0.5 shadow-[0_10px_28px_-10px_rgba(185,28,28,0.6)]"
             >
               <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
               </svg>
-              RECALL
+              Request a Callback
             </a>
           </motion.div>
         </div>

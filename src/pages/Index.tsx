@@ -9,7 +9,7 @@ import { WhatWeDo } from '@/components/WhatWeDo';
 import { BrandsWeServe } from '@/components/BrandsWeServe';
 import { ServiceGrid } from '@/components/ServiceGrid';
 import { WhyChooseUs } from '@/components/WhyChooseUs';
-import { Reviews } from '@/components/Reviews';
+import { TrustBar } from '@/components/TrustBar';
 
 import { FAQ } from '@/components/FAQ';
 import { FinalCTA } from '@/components/FinalCTA';
@@ -76,16 +76,17 @@ const Index = () => {
       <div id="home">
         <Hero />
       </div>
+      <TrustBar />
       <WhatWeDo />
       <BrandsWeServe />
       <div id="services">
         <ServiceGrid />
       </div>
-      
+
       <div id="about">
         <WhyChooseUs />
       </div>
-      
+
       <div id="faq">
         <FAQ />
       </div>

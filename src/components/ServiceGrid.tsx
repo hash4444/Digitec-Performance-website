@@ -49,21 +49,23 @@ export const ServiceGrid = () => {
       <section className="py-10 sm:py-20 lg:py-32 bg-black">
         <div className="max-w-full mx-auto px-4 sm:px-6">
           <div className="text-center mb-8 sm:mb-14 lg:mb-20">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-black mb-3 sm:mb-5">
+            <span className="eyebrow mb-3 sm:mb-5">Complete Care</span>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black mb-3 sm:mb-5">
               Explore Our Full Range of Services
             </h2>
             <p className="text-sm sm:text-base lg:text-lg text-gray-300 max-w-3xl mx-auto mb-2 sm:mb-4 px-4 leading-snug sm:leading-relaxed">
               Premium care for every system, every detail, every ride.
             </p>
-            <p className="hidden sm:block text-burnt-orange font-semibold text-base sm:text-lg">
-              ← Scroll to Explore All Services →
+            <p className="hidden sm:inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.25em] text-gray-500">
+              Scroll to explore <span className="text-burnt-orange">→</span>
             </p>
           </div>
 
           <div className="space-y-8 sm:space-y-16">
             {grouped.map((category) => (
               <div key={category.title} className="space-y-4 sm:space-y-8">
-                <div className="flex items-center gap-2 sm:gap-4 mb-4 sm:mb-8 px-2">
+                <div className="flex items-center gap-3 sm:gap-4 mb-4 sm:mb-8 px-2">
+                  <span className="block w-1 h-5 sm:h-7 rounded-full bg-burnt-orange" aria-hidden="true" />
                   <h3 className="text-base sm:text-2xl md:text-3xl font-bold text-off-white">
                     {category.title}
                   </h3>
@@ -74,7 +76,7 @@ export const ServiceGrid = () => {
                   <div className="flex gap-3 sm:gap-4 md:gap-6 pl-2 pr-2 sm:pl-4 sm:pr-4" style={{ width: 'max-content' }}>
                     {category.services.map((service) => (
                       <div key={service.slug} className="service-card group w-56 sm:w-80 md:w-96">
-                        <div className="bg-gradient-to-br from-charcoal/90 to-charcoal/60 backdrop-blur-sm border border-gray-800/50 rounded-2xl sm:rounded-3xl p-3 sm:p-6 lg:p-8 shadow-2xl transition-all duration-500 hover:shadow-burnt-orange/20 hover:border-burnt-orange/50 sm:hover:scale-[1.02] sm:hover:-translate-y-1 h-full flex flex-col min-h-0 sm:min-h-[400px]">
+                        <div className="card-premium rounded-2xl p-3 sm:p-6 lg:p-8 transition-all duration-500 sm:hover:-translate-y-1 h-full flex flex-col min-h-0 sm:min-h-[400px]">
                           <div className="mb-3 sm:mb-6 overflow-hidden rounded-xl sm:rounded-2xl bg-gradient-to-br from-gray-900 to-gray-800 aspect-[4/3]">
                             <img
                               src={service.image}
@@ -100,7 +102,7 @@ export const ServiceGrid = () => {
                               {service.description}
                             </p>
 
-                            <div className="pt-2 sm:pt-4 sm:border-t sm:border-gray-700/50 mt-auto">
+                            <div className="pt-2 sm:pt-4 sm:border-t sm:border-white/10 mt-auto">
                               <Link
                                 to={`/services/${service.slug}`}
                                 className="inline-flex sm:hidden items-center gap-1 text-burnt-orange font-semibold text-xs"
@@ -109,7 +111,7 @@ export const ServiceGrid = () => {
                               </Link>
                               <Link
                                 to={`/services/${service.slug}`}
-                                className="hidden sm:block w-full bg-gradient-to-r from-burnt-orange to-burnt-orange/80 hover:from-burnt-orange/90 hover:to-burnt-orange text-black font-bold text-sm lg:text-base px-6 py-3 rounded-2xl transition-all duration-300 transform group-hover:scale-105 group-hover:shadow-lg group-hover:shadow-burnt-orange/30 text-center"
+                                className="hidden sm:block w-full bg-burnt-orange hover:bg-[#ff7d4d] text-black font-bold text-xs lg:text-sm uppercase tracking-[0.14em] px-6 py-3.5 rounded-lg transition-colors duration-300 text-center"
                               >
                                 Learn More
                               </Link>
@@ -125,10 +127,7 @@ export const ServiceGrid = () => {
           </div>
 
           <div className="text-center mt-8 sm:mt-16 lg:mt-20">
-            <Link
-              to="/services"
-              className="inline-block w-full sm:w-auto bg-burnt-orange hover:bg-burnt-orange/90 text-black font-bold text-sm sm:text-lg px-6 sm:px-12 py-3 sm:py-4 rounded-2xl sm:rounded-3xl transition-all duration-300 transform hover:scale-105 shadow-2xl hover:shadow-burnt-orange/30"
-            >
+            <Link to="/services" className="btn-primary w-full sm:w-auto">
               View All Services
             </Link>
           </div>

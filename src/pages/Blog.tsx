@@ -76,7 +76,7 @@ const Blog = () => {
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="text-burnt-orange text-xs uppercase tracking-[0.3em] font-semibold mb-4"
+            className="eyebrow mb-4"
           >
             Insights & Expertise
           </motion.p>
@@ -135,7 +135,7 @@ const Blog = () => {
               >
                 <Link
                   to={`/blog/${post.slug}`}
-                  className="block bg-white/[0.03] border border-white/[0.06] rounded-3xl overflow-hidden hover:border-burnt-orange/40 transition-all duration-500 h-full"
+                  className="card-premium block rounded-2xl overflow-hidden transition-all duration-500 h-full"
                 >
                   <div
                     className={`aspect-[16/10] bg-gradient-to-br ${post.coverGradient} relative overflow-hidden`}

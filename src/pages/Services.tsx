@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import { useSeo } from '@/hooks/use-seo';
 import Header from '@/components/Header';
 import { Footer } from '@/components/Footer';
+import { TrustBar } from '@/components/TrustBar';
+import { FinalCTA } from '@/components/FinalCTA';
 
 import { services } from '@/data/services';
 import { buildBreadcrumb, buildWebPage, pageGraph } from '@/lib/schema';
@@ -92,9 +94,7 @@ const Services = () => {
       <section className="relative py-12 sm:py-24">
         <div className="absolute inset-0 bg-gradient-to-b from-burnt-orange/10 via-transparent to-transparent" />
         <div className="relative max-w-6xl mx-auto px-4 sm:px-6 text-center">
-          <span className="text-burnt-orange font-semibold text-xs sm:text-sm uppercase tracking-widest mb-2 sm:mb-3 block">
-            What We Offer
-          </span>
+          <span className="eyebrow mb-2 sm:mb-4">What We Offer</span>
           <h1 className="text-2xl sm:text-5xl md:text-6xl font-black mb-2 sm:mb-4">
             Our Services
           </h1>
@@ -104,11 +104,13 @@ const Services = () => {
         </div>
       </section>
 
+      <TrustBar className="mb-8 sm:mb-16" />
+
       {/* Brands We Service */}
       <section className="pb-8 sm:pb-16">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <div className="mb-6 sm:mb-10">
-            <span className="text-burnt-orange font-semibold text-xs sm:text-sm uppercase tracking-widest mb-2 block">
+            <span className="text-burnt-orange font-semibold text-[11px] uppercase tracking-[0.3em] mb-2 block">
               Brands We Service
             </span>
             <h2 className="text-xl sm:text-3xl md:text-4xl font-black mb-2 sm:mb-3">
@@ -123,7 +125,7 @@ const Services = () => {
               <Link
                 key={b.slug}
                 to={`/brands/${b.slug}`}
-                className="group flex items-center gap-3 sm:gap-4 bg-charcoal/60 border border-gray-800/50 rounded-2xl p-3 sm:p-4 hover:border-burnt-orange/50 hover:bg-charcoal/80 transition-all duration-300"
+                className="card-premium group flex items-center gap-3 sm:gap-4 rounded-2xl p-3 sm:p-4 transition-all duration-300"
                 aria-label={`${b.name} service and repair in Dubai`}
               >
                 <div className="w-12 h-12 sm:w-14 sm:h-14 shrink-0 p-1.5 bg-white/90 rounded-full flex items-center justify-center">
@@ -168,7 +170,7 @@ const Services = () => {
                     <Link
                       key={s.slug}
                       to={`/services/${s.slug}`}
-                      className="group bg-charcoal/60 border border-gray-800/50 rounded-xl sm:rounded-2xl overflow-hidden hover:border-burnt-orange/50 transition-all duration-300"
+                      className="card-premium group rounded-xl sm:rounded-2xl overflow-hidden transition-all duration-300"
                     >
                       <div className="aspect-[4/3] overflow-hidden">
                         <img
@@ -199,7 +201,7 @@ const Services = () => {
         </div>
       </section>
 
-      
+      <FinalCTA />
       <Footer />
     </div>
   );

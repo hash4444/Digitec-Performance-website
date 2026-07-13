@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, useParams, Navigate } from 'react-router-dom';
-import { Phone, MessageCircle, CheckCircle2, Star, Quote, ArrowRight } from 'lucide-react';
+import { Phone, MessageCircle, CheckCircle2, ArrowRight } from 'lucide-react';
 import Header from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { useSeo } from '@/hooks/use-seo';
@@ -22,6 +22,7 @@ import {
 } from '@/components/ui/accordion';
 import BrandBookingForm from '@/components/BrandBookingForm';
 import { getServicesForBrand } from '@/data/brandServices';
+import { CtaAssurance } from '@/components/TrustBar';
 
 const getBrandSeoCopy = (brand: { name: string; specialization: string; whyChoose: { title: string }[] }) => {
   const focusAreas = brand.whyChoose.map((w) => w.title).slice(0, 4);
@@ -207,19 +208,17 @@ const BrandPage = () => {
                   href={whatsappHref}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center gap-2 bg-burnt-orange hover:bg-burnt-orange/90 text-black font-bold px-6 py-3 sm:px-8 sm:py-4 rounded-2xl transition-all duration-300 hover:scale-105 shadow-xl"
+                  className="btn-primary"
                 >
                   <MessageCircle className="w-5 h-5" />
                   WhatsApp Us
                 </a>
-                <a
-                  href="tel:+97143402223"
-                  className="inline-flex items-center justify-center gap-2 bg-off-white text-black hover:bg-white font-bold px-6 py-3 sm:px-8 sm:py-4 rounded-2xl transition-all duration-300 shadow-xl"
-                >
+                <a href="tel:+97143402223" className="btn-secondary">
                   <Phone className="w-5 h-5" />
                   Call +971 4 340 2223
                 </a>
               </div>
+              <CtaAssurance className="mt-4" align="start" />
             </div>
           </div>
         </div>
@@ -240,7 +239,7 @@ const BrandPage = () => {
             {SERVICES.map((s) => (
               <div
                 key={s.title}
-                className="bg-gradient-to-br from-charcoal/60 to-black/40 border border-white/5 rounded-3xl p-6 sm:p-7 hover:border-burnt-orange/40 transition-all duration-300"
+                className="card-premium rounded-2xl p-6 sm:p-7 transition-all duration-300"
               >
                 <h3 className="text-lg sm:text-xl font-bold text-white mb-2">{s.title}</h3>
                 <p className="text-gray-400 text-sm sm:text-base leading-relaxed">{s.description}</p>
@@ -265,7 +264,7 @@ const BrandPage = () => {
             {brand.whyChoose.map((item) => (
               <div
                 key={item.title}
-                className="bg-black/50 border border-white/5 hover:border-burnt-orange/40 rounded-2xl p-5 sm:p-6 transition-colors"
+                className="card-premium rounded-2xl p-5 sm:p-6 transition-colors"
               >
                 <div className="flex items-start gap-3 mb-2">
                   <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-burnt-orange flex-shrink-0 mt-1" />
@@ -295,7 +294,7 @@ const BrandPage = () => {
                 <Link
                   key={s.serviceSlug}
                   to={`/brands/${brand.slug}/${s.serviceSlug}`}
-                  className="group flex flex-col justify-between bg-gradient-to-br from-charcoal/60 to-black/40 border border-white/5 hover:border-burnt-orange/40 rounded-2xl p-4 sm:p-5 transition-all duration-300 min-h-[110px]"
+                  className="card-premium group flex flex-col justify-between rounded-2xl p-4 sm:p-5 transition-all duration-300 min-h-[110px]"
                 >
                   <span className="text-off-white font-bold text-sm sm:text-base leading-tight group-hover:text-burnt-orange">
                     {brand.name} {s.label}
@@ -337,50 +336,31 @@ const BrandPage = () => {
         </section>
       )}
 
-      {/* Testimonial / Trust */}
+      {/* Trust */}
       <section className="py-12 sm:py-20 bg-black border-t border-white/5">
         <div className="max-w-5xl mx-auto px-4 sm:px-6">
-          {brand.testimonial ? (
-            <div className="bg-gradient-to-br from-charcoal/60 to-black/40 border border-white/5 rounded-3xl p-6 sm:p-10 shadow-2xl">
-              <Quote className="w-8 h-8 sm:w-10 sm:h-10 text-burnt-orange mb-4" />
-              <p className="text-lg sm:text-2xl text-off-white leading-relaxed italic mb-6">
-                "{brand.testimonial.quote}"
-              </p>
-              <div className="flex items-center gap-1 mb-3">
-                {Array.from({ length: 5 }).map((_, i) => (
-                  <Star key={i} className="w-4 h-4 sm:w-5 sm:h-5 fill-burnt-orange text-burnt-orange" />
-                ))}
+          <div className="card-premium text-center rounded-2xl p-6 sm:p-10">
+            <p className="text-off-white font-bold text-xl sm:text-2xl mb-2">
+              Trusted by {brand.name} owners across the UAE
+            </p>
+            <p className="text-gray-400 text-sm sm:text-base mb-8">
+              Genuine OEM parts, factory-grade diagnostics, and transparent pricing since 2009.
+            </p>
+            <div className="grid grid-cols-3 gap-4 sm:gap-8 max-w-2xl mx-auto">
+              <div>
+                <div className="text-2xl sm:text-4xl font-black text-burnt-orange">50,000+</div>
+                <div className="text-xs sm:text-sm text-gray-400 mt-1">Cars Served</div>
               </div>
-              <div className="font-bold text-off-white">{brand.testimonial.name}</div>
-              <div className="text-burnt-orange text-sm font-semibold">{brand.testimonial.vehicle}</div>
-            </div>
-          ) : (
-            <div className="text-center bg-gradient-to-br from-charcoal/60 to-black/40 border border-white/5 rounded-3xl p-6 sm:p-10">
-              <div className="flex justify-center items-center gap-1 mb-4">
-                {Array.from({ length: 5 }).map((_, i) => (
-                  <Star key={i} className="w-5 h-5 sm:w-6 sm:h-6 fill-burnt-orange text-burnt-orange" />
-                ))}
+              <div>
+                <div className="text-2xl sm:text-4xl font-black text-burnt-orange">8,000+</div>
+                <div className="text-xs sm:text-sm text-gray-400 mt-1">Satisfied Customers</div>
               </div>
-              <p className="text-off-white font-bold text-xl sm:text-2xl mb-2">4.9 / 5 Average Rating</p>
-              <p className="text-gray-400 text-sm sm:text-base mb-8">
-                Trusted by {brand.name} owners across the UAE.
-              </p>
-              <div className="grid grid-cols-3 gap-4 sm:gap-8 max-w-2xl mx-auto">
-                <div>
-                  <div className="text-2xl sm:text-4xl font-black text-burnt-orange">50,000+</div>
-                  <div className="text-xs sm:text-sm text-gray-400 mt-1">Cars Served</div>
-                </div>
-                <div>
-                  <div className="text-2xl sm:text-4xl font-black text-burnt-orange">8,000+</div>
-                  <div className="text-xs sm:text-sm text-gray-400 mt-1">Satisfied Customers</div>
-                </div>
-                <div>
-                  <div className="text-2xl sm:text-4xl font-black text-burnt-orange">40,000</div>
-                  <div className="text-xs sm:text-sm text-gray-400 mt-1">Sq Ft Facility</div>
-                </div>
+              <div>
+                <div className="text-2xl sm:text-4xl font-black text-burnt-orange">40,000</div>
+                <div className="text-xs sm:text-sm text-gray-400 mt-1">Sq Ft Facility</div>
               </div>
             </div>
-          )}
+          </div>
         </div>
       </section>
 
@@ -436,7 +416,7 @@ const BrandPage = () => {
               <AccordionItem
                 key={i}
                 value={`q-${i}`}
-                className="border-0 bg-black/50 border border-white/5 rounded-2xl px-5 sm:px-6"
+                className="bg-white/[0.03] border border-white/10 rounded-2xl px-5 sm:px-6 data-[state=open]:border-burnt-orange/40"
               >
                 <AccordionTrigger className="text-left text-off-white font-semibold text-base sm:text-lg hover:no-underline py-5">
                   {f.q}
@@ -483,7 +463,7 @@ const BrandPage = () => {
                 Or use the form to send your details directly.
               </p>
             </div>
-            <div className="bg-gradient-to-br from-charcoal/60 to-black/40 border border-white/5 rounded-3xl p-5 sm:p-8 shadow-2xl">
+            <div className="card-premium rounded-2xl p-5 sm:p-8">
               <BrandBookingForm brandName={brand.name} />
             </div>
           </div>
@@ -507,7 +487,7 @@ const BrandPage = () => {
                 <Link
                   key={s.slug}
                   to={`/services/${s.slug}`}
-                  className="group flex flex-col bg-black/50 border border-white/5 hover:border-burnt-orange/40 rounded-3xl overflow-hidden transition-all duration-300"
+                  className="card-premium group flex flex-col rounded-2xl overflow-hidden transition-all duration-300"
                 >
                   <div className="aspect-[16/10] overflow-hidden bg-black">
                     <img
@@ -563,26 +543,6 @@ const BrandPage = () => {
           </div>
         </div>
       </section>
-
-      {/* Sticky mobile CTA */}
-      <div className="fixed bottom-4 right-4 z-40 flex flex-col gap-2 sm:bottom-6 sm:right-6">
-        <a
-          href={whatsappHref}
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="WhatsApp Digi-Tec"
-          className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-burnt-orange shadow-2xl flex items-center justify-center hover:scale-110 transition-transform"
-        >
-          <MessageCircle className="w-6 h-6 text-black" />
-        </a>
-        <a
-          href="tel:+97143402223"
-          aria-label="Call Digi-Tec"
-          className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-off-white shadow-2xl flex items-center justify-center hover:scale-110 transition-transform"
-        >
-          <Phone className="w-6 h-6 text-black" />
-        </a>
-      </div>
 
       <Footer />
     </div>

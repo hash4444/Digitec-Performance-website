@@ -44,6 +44,13 @@ const FAQPage = () => {
       <section className="relative py-24 md:py-32 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-black via-charcoal/30 to-black" />
         <div className="relative z-10 max-w-4xl mx-auto px-5 sm:px-6 text-center">
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="eyebrow mb-4"
+          >
+            We're Here to Help
+          </motion.p>
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}

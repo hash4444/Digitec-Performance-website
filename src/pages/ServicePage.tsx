@@ -178,7 +178,7 @@ const ServicePage = () => {
             <ChevronRight className="w-4 h-4" />
             <span className="text-burnt-orange">{service.title}</span>
           </nav>
-          <span className="text-burnt-orange font-semibold text-sm uppercase tracking-widest mb-3 block">
+          <span className="text-burnt-orange font-semibold text-[11px] sm:text-xs uppercase tracking-[0.3em] mb-3 block">
             {service.category}
           </span>
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-black mb-4 leading-tight">
@@ -285,7 +285,7 @@ const ServicePage = () => {
                       <AccordionItem
                         key={i}
                         value={`faq-${i}`}
-                        className="bg-charcoal/40 border border-gray-800/50 rounded-2xl px-5 sm:px-6 data-[state=open]:border-burnt-orange/40"
+                        className="bg-white/[0.03] border border-white/10 rounded-2xl px-5 sm:px-6 data-[state=open]:border-burnt-orange/40"
                       >
                         <AccordionTrigger className="text-left text-base sm:text-lg font-semibold hover:no-underline py-4">
                           {faq.question}
@@ -300,7 +300,7 @@ const ServicePage = () => {
               )}
 
               {/* Local Intent */}
-              <div className="bg-charcoal/40 border border-gray-800/50 rounded-2xl p-6 sm:p-8">
+              <div className="card-premium rounded-2xl p-6 sm:p-8">
                 <p className="text-gray-300 leading-relaxed text-lg italic">{service.localIntent}</p>
               </div>
 
@@ -395,7 +395,7 @@ const ServicePage = () => {
 
             {/* Sidebar */}
             <div className="space-y-6">
-              <div className="bg-charcoal/60 border border-gray-800/50 rounded-2xl p-6 sticky top-24">
+              <div className="card-premium rounded-2xl p-6 sticky top-24">
                 <h3 className="text-lg font-bold mb-4 text-burnt-orange">Why Choose Us</h3>
                 <ul className="space-y-3 text-gray-300 text-sm mb-6">
                   <li className="flex items-start gap-2">
@@ -410,6 +410,10 @@ const ServicePage = () => {
                     <span className="text-burnt-orange mt-1">✓</span>
                     Transparent pricing, no hidden fees
                   </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-burnt-orange mt-1">✓</span>
+                    40+ years, 50,000+ vehicles serviced
+                  </li>
                 </ul>
 
                 <div className="space-y-3">
@@ -417,18 +421,21 @@ const ServicePage = () => {
                     href="https://wa.me/97143402223"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center justify-center gap-2 w-full bg-burnt-orange hover:bg-burnt-orange/90 text-black font-bold py-3 rounded-xl transition-all duration-300"
+                    className="flex items-center justify-center gap-2 w-full bg-burnt-orange hover:bg-[#ff7d4d] text-black font-bold text-sm uppercase tracking-[0.12em] py-3.5 rounded-lg transition-colors duration-300"
                   >
                     <MessageCircle className="w-5 h-5" />
                     WhatsApp Us
                   </a>
                   <a
                     href="tel:+97143402223"
-                    className="flex items-center justify-center gap-2 w-full border border-burnt-orange/50 text-burnt-orange hover:bg-burnt-orange/10 font-bold py-3 rounded-xl transition-all duration-300"
+                    className="flex items-center justify-center gap-2 w-full border border-white/20 text-off-white hover:border-burnt-orange/70 hover:text-burnt-orange font-bold text-sm uppercase tracking-[0.12em] py-3.5 rounded-lg transition-all duration-300"
                   >
                     <Phone className="w-5 h-5" />
                     Call Now
                   </a>
+                  <p className="text-[11px] text-gray-500 text-center leading-snug pt-1">
+                    Free assessment · No obligation · Reply within minutes
+                  </p>
                 </div>
               </div>
             </div>
@@ -446,7 +453,7 @@ const ServicePage = () => {
                 <Link
                   key={s.slug}
                   to={`/services/${s.slug}`}
-                  className="group bg-charcoal/60 border border-gray-800/50 rounded-2xl overflow-hidden hover:border-burnt-orange/50 transition-all duration-300"
+                  className="card-premium group rounded-2xl overflow-hidden transition-all duration-300"
                 >
                   <div className="aspect-[4/3] overflow-hidden">
                     <img

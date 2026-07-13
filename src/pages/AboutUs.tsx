@@ -6,6 +6,7 @@ import { WhyChooseUs } from '@/components/WhyChooseUs';
 import { FinalCTA } from '@/components/FinalCTA';
 import { Footer } from '@/components/Footer';
 import { motion } from 'framer-motion';
+import { TrustBar } from '@/components/TrustBar';
 import { MapPin, Phone, Mail, CheckCircle2, Zap, Wrench, Gauge } from 'lucide-react';
 
 const AboutUs = () => {
@@ -51,7 +52,7 @@ const AboutUs = () => {
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="text-burnt-orange text-xs uppercase tracking-[0.3em] font-semibold mb-4"
+            className="eyebrow mb-4"
           >
             Who We Are
           </motion.p>
@@ -73,6 +74,8 @@ const AboutUs = () => {
           </motion.p>
         </div>
       </section>
+
+      <TrustBar />
 
       {/* Our Story */}
       <section className="py-16 md:py-24">
@@ -242,7 +245,7 @@ const AboutUs = () => {
         </div>
       </section>
 
-      
+      <FinalCTA />
       <Footer />
     </div>
   );

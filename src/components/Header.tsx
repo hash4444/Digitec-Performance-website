@@ -76,17 +76,17 @@ const Header = () => {
             </button>
 
             {/* Desktop Navigation */}
-            <nav className="hidden md:flex items-center space-x-8">
+            <nav className="hidden lg:flex items-center space-x-6 xl:space-x-8">
               {navigationLinks.map((link) => (
                 <button
                   key={link.name}
                   onClick={() => handleLinkClick(link.href, link.isPage)}
-                  className="relative text-off-white font-semibold text-sm lg:text-base tracking-wide 
+                  className="relative text-off-white font-semibold text-sm lg:text-base tracking-wide
                            hover:text-burnt-orange transition-all duration-300 group cursor-pointer
-                           py-2 px-1"
+                           py-2 px-1 whitespace-nowrap"
                 >
                   {link.name}
-                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-burnt-orange 
+                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-burnt-orange
                                  transition-all duration-300 group-hover:w-full rounded-full
                                  shadow-lg shadow-burnt-orange/50"></span>
                 </button>
@@ -96,7 +96,7 @@ const Header = () => {
             {/* Mobile Menu Button */}
             <button
               onClick={toggleMenu}
-              className="md:hidden relative z-10 w-10 h-10 rounded-lg bg-charcoal/80 
+              className="lg:hidden relative z-10 w-10 h-10 rounded-lg bg-charcoal/80
                        flex items-center justify-center border border-white/20
                        hover:bg-burnt-orange/20 transition-all duration-300"
               aria-label="Toggle menu"
@@ -109,45 +109,47 @@ const Header = () => {
             </button>
           </div>
         </div>
-
-        {/* Mobile Navigation Drawer */}
-        <div className={cn(
-          "md:hidden fixed inset-0 top-16 transition-all duration-300 ease-in-out",
-          isMenuOpen ? "opacity-100 visible" : "opacity-0 invisible"
-        )}>
-          {/* Backdrop */}
-          <div 
-            className="absolute inset-0 bg-black/80 backdrop-blur-sm"
-            onClick={() => setIsMenuOpen(false)}
-          />
-          
-          {/* Drawer */}
-          <div className={cn(
-            "relative bg-black/95 border-t border-white/10 shadow-2xl",
-            "transform transition-transform duration-300 ease-in-out",
-            isMenuOpen ? "translate-y-0" : "-translate-y-full"
-          )}>
-            <nav className="px-4 py-6 space-y-1">
-              {navigationLinks.map((link, index) => (
-                <button
-                  key={link.name}
-                  onClick={() => handleLinkClick(link.href, link.isPage)}
-                  className="block w-full text-left px-4 py-4 text-off-white font-semibold 
-                           text-lg tracking-wide hover:text-burnt-orange hover:bg-white/5
-                           transition-all duration-300 rounded-lg border border-transparent
-                           hover:border-burnt-orange/30 hover:shadow-lg hover:shadow-burnt-orange/10"
-                  style={{ 
-                    animationDelay: `${index * 50}ms`,
-                    animation: isMenuOpen ? 'slideInFromRight 0.3s ease-out forwards' : 'none'
-                  }}
-                >
-                  {link.name}
-                </button>
-              ))}
-            </nav>
-          </div>
-        </div>
       </header>
+
+      {/* Mobile Navigation Drawer — rendered outside <header> because a `fixed`
+          descendant of a `fixed` ancestor is contained by that ancestor's box,
+          not the viewport, which collapsed this overlay to zero height. */}
+      <div className={cn(
+        "lg:hidden fixed inset-0 top-16 z-50 transition-all duration-300 ease-in-out",
+        isMenuOpen ? "opacity-100 visible" : "opacity-0 invisible"
+      )}>
+        {/* Backdrop */}
+        <div
+          className="absolute inset-0 bg-black/80 backdrop-blur-sm"
+          onClick={() => setIsMenuOpen(false)}
+        />
+
+        {/* Drawer */}
+        <div className={cn(
+          "relative bg-black/95 border-t border-white/10 shadow-2xl",
+          "transform transition-transform duration-300 ease-in-out",
+          isMenuOpen ? "translate-y-0" : "-translate-y-full"
+        )}>
+          <nav className="px-4 py-6 space-y-1">
+            {navigationLinks.map((link, index) => (
+              <button
+                key={link.name}
+                onClick={() => handleLinkClick(link.href, link.isPage)}
+                className="block w-full text-left px-4 py-4 text-off-white font-semibold
+                         text-lg tracking-wide hover:text-burnt-orange hover:bg-white/5
+                         transition-all duration-300 rounded-lg border border-transparent
+                         hover:border-burnt-orange/30 hover:shadow-lg hover:shadow-burnt-orange/10"
+                style={{
+                  animationDelay: `${index * 50}ms`,
+                  animation: isMenuOpen ? 'slideInFromRight 0.3s ease-out forwards' : 'none'
+                }}
+              >
+                {link.name}
+              </button>
+            ))}
+          </nav>
+        </div>
+      </div>
 
       {/* Spacer to prevent content from hiding behind fixed header */}
       <div className="h-16 md:h-20" />

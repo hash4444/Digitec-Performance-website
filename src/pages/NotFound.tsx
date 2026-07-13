@@ -23,7 +23,7 @@ const NotFound = () => {
   const smartTarget = useMemo(() => {
     const path = location.pathname.toLowerCase().replace(/^\/+|\/+$/g, "");
     if (!path) return null;
-    const tokens = path.split(/[\/\-_]+/).filter(Boolean);
+    const tokens = path.split(/[/\-_]+/).filter(Boolean);
     if (tokens.length === 0) return null;
 
     let best: { slug: string; score: number } | null = null;
@@ -65,10 +65,10 @@ const NotFound = () => {
           The page you requested does not exist. Try our services or head back home.
         </p>
         <div className="flex gap-3 justify-center">
-          <Link to="/" className="px-6 py-3 rounded-full bg-white text-black font-semibold hover:bg-white/90 transition">
+          <Link to="/" className="btn-primary">
             Home
           </Link>
-          <Link to="/services" className="px-6 py-3 rounded-full border border-white/30 hover:border-burnt-orange transition">
+          <Link to="/services" className="btn-secondary">
             Services
           </Link>
         </div>

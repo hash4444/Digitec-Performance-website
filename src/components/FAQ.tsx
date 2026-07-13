@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
-import { Button } from '@/components/ui/button';
 import { MessageCircle } from 'lucide-react';
 
 export type FAQItem = { question: string; answer: string };
@@ -152,10 +151,10 @@ export const FAQ = () => {
       <div className="container mx-auto px-4 sm:px-6 relative z-10">
         {/* Section Header */}
         <div className="text-center mb-6 sm:mb-12">
+          <span className="eyebrow mb-3 sm:mb-5">Answers</span>
           <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold mb-3 sm:mb-4 text-white">
             Frequently Asked Questions
           </h2>
-          <div className="w-16 sm:w-24 h-1 bg-burnt-orange mx-auto rounded-full"></div>
           <p className="text-off-white/60 mt-3 sm:mt-6 max-w-2xl mx-auto text-sm sm:text-base leading-snug sm:leading-relaxed px-2">
             Browse by topic to find answers about our services, expertise, and process.
           </p>
@@ -209,14 +208,10 @@ export const FAQ = () => {
               href="https://wa.me/97143402223?text=Hi%2C%20I%20have%20a%20question%20about%20your%20services."
               target="_blank"
               rel="noopener noreferrer"
+              className="btn-primary"
             >
-              <Button
-                size="lg"
-                className="bg-burnt-orange hover:bg-burnt-orange/90 text-white px-6 sm:px-8 py-2.5 sm:py-3 rounded-xl font-semibold text-sm sm:text-lg transition-all duration-300 hover:transform hover:scale-105 shadow-lg"
-              >
-                <MessageCircle className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
-                Chat with us now
-              </Button>
+              <MessageCircle className="w-4 h-4 sm:w-5 sm:h-5" />
+              Chat with us now
             </a>
           </div>
         </div>

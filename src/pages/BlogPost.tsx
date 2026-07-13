@@ -169,7 +169,7 @@ const BlogPost = () => {
                 <Link
                   key={p.slug}
                   to={`/blog/${p.slug}`}
-                  className="group bg-white/[0.03] border border-white/[0.06] rounded-2xl p-6 hover:border-burnt-orange/40 transition-all"
+                  className="card-premium group rounded-2xl p-6 transition-all"
                 >
                   <span className="text-burnt-orange text-xs font-bold uppercase tracking-wider">
                     {p.category}

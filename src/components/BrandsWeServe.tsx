@@ -177,6 +177,7 @@ export const BrandsWeServe = () => {
 
         <div className="max-w-6xl mx-auto relative z-10">
           <div className="text-center mb-6 sm:mb-16">
+            <span className="eyebrow mb-3 sm:mb-5">Marque Specialists</span>
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-black mb-3 sm:mb-6 text-black tracking-tight">
               Brands We Serve
             </h2>
@@ -236,7 +237,7 @@ export const BrandsWeServe = () => {
             <p className="text-gray-700 mb-4 sm:mb-8 text-sm sm:text-lg px-4">
               Experience precision service for your luxury vehicle
             </p>
-            <button className="w-full sm:w-auto bg-burnt-orange hover:bg-burnt-orange/90 text-white font-bold text-sm sm:text-lg px-6 sm:px-12 py-3 sm:py-4 rounded-2xl sm:rounded-3xl transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl hover:shadow-burnt-orange/25">
+            <button className="btn-primary w-full sm:w-auto">
               Schedule Service
             </button>
           </div>
