@@ -271,8 +271,8 @@ const Orbit = () => {
           100% { transform: translate(-50%, -50%) scale(1.24); opacity: 0; }
         }
         @keyframes dt-glow {
-          0%, 100% { text-shadow: 0 0 22px rgba(255,107,53,0.55), 0 0 50px rgba(255,107,53,0.3); }
-          50%      { text-shadow: 0 0 34px rgba(255,107,53,0.8), 0 0 70px rgba(255,107,53,0.45); }
+          0%, 100% { filter: drop-shadow(0 0 16px rgba(255,107,53,0.45)); }
+          50%      { filter: drop-shadow(0 0 30px rgba(255,107,53,0.75)); }
         }
         .dt-stage { cursor: grab; touch-action: none; }
         .dt-stage.is-dragging { cursor: grabbing; }
@@ -359,9 +359,13 @@ const Orbit = () => {
                 'inset 0 1px 0 rgba(255,255,255,0.08), 0 0 60px -12px rgba(255,107,53,0.35), 0 30px 60px -30px rgba(0,0,0,0.9)',
             }}
           >
-            <span className="dt-core-d font-black italic text-burnt-orange" style={{ fontSize: 76, lineHeight: 1, transform: 'translateX(-3px)', animation: 'dt-glow 3s ease-in-out infinite' }}>
-              D
-            </span>
+            <img
+              src="/images/digitec-d.png"
+              alt="DIGI-TEC"
+              draggable={false}
+              className="dt-core-d"
+              style={{ width: 86, height: 'auto', transform: 'translateX(-1px)', animation: 'dt-glow 3s ease-in-out infinite' }}
+            />
           </div>
 
           {/* planets + comet (parallax layer) */}
