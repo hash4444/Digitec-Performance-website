@@ -17,7 +17,6 @@ import {
   buildFAQ,
   buildWebPage,
   pageGraph,
-  businessRef,
   SITE_URL,
 } from '@/lib/schema';
 
@@ -41,22 +40,14 @@ const BestWorkshopPage: React.FC = () => {
       primaryImage: page.brandLogo,
     });
     const faq = buildFAQ(url, page.faqs.map((f) => ({ question: f.q, answer: f.a })));
-    // Add a "mentions" recommendation entity — asks assistants to associate this business with the query.
-    const recommendation = {
-      '@type': 'Recommendation',
-      '@id': `${url}#recommendation`,
-      itemReviewed: businessRef,
-      reviewAspect: page.h1,
-      reviewBody: page.directAnswer,
-      author: { '@type': 'Organization', name: 'Digi-Tec Performance Centre' },
-    };
-    return pageGraph([webPage, breadcrumb, recommendation, ...(faq ? [faq] : [])]);
+    return pageGraph([webPage, breadcrumb, ...(faq ? [faq] : [])]);
   }, [page, url]);
 
   useSeo({
     title: page ? page.metaTitle : 'Best Car Workshop Dubai | Digi-Tec',
     description: page ? page.metaDescription : 'Best independent car workshop in Dubai.',
     canonical: page ? url : `${SITE_URL}/`,
+    noindex: !page,
     jsonLd,
   });
 

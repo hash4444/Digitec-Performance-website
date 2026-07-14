@@ -80,6 +80,7 @@ export function buildWebPage(opts: {
     name,
     ...(description ? { description } : {}),
     isPartOf: websiteRef,
+    publisher: organizationRef,
     about: businessRef,
     ...(breadcrumbId ? { breadcrumb: { '@id': breadcrumbId } } : {}),
     ...(primaryImage
@@ -118,7 +119,7 @@ export function buildService(opts: {
     serviceType,
     description,
     url,
-    ...(image && typeof image === 'string' && image.startsWith('http') ? { image } : {}),
+    ...(image ? { image: abs(image) } : {}),
     provider: businessRef,
     areaServed: (areaServed && areaServed.length > 0
       ? areaServed
@@ -187,7 +188,7 @@ export function buildArticle(opts: {
     description,
     datePublished,
     dateModified: dateModified || datePublished,
-    author: { '@type': authorType, name: author },
+    author: authorType === 'Organization' ? organizationRef : { '@type': authorType, name: author },
     publisher: organizationRef,
     mainEntityOfPage: { '@id': `${url}#webpage` },
     ...(image

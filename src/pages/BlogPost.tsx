@@ -7,7 +7,58 @@ import Header from '@/components/Header';
 import { FinalCTA } from '@/components/FinalCTA';
 import { Footer } from '@/components/Footer';
 import { getBlogPostBySlug, blogPosts } from '@/data/blogPosts';
-import { buildArticle, buildBreadcrumb, buildWebPage, pageGraph } from '@/lib/schema';
+import { buildArticle, buildBreadcrumb, buildFAQ, buildWebPage, pageGraph } from '@/lib/schema';
+
+type ContentBlock = { type: 'h2' | 'h3' | 'p' | 'ul'; text?: string; items?: string[] };
+
+/** Extract only the visible question-and-answer pairs beneath an article FAQ heading. */
+const getArticleFaqs = (content: ContentBlock[]) => {
+  const faqs: { question: string; answer: string }[] = [];
+  let inFaqSection = false;
+
+  content.forEach((block, index) => {
+    if (block.type === 'h2') {
+      inFaqSection = /\bfaqs?\b/i.test(block.text ?? '');
+      return;
+    }
+    if (!inFaqSection || block.type !== 'h3' || !block.text) return;
+
+    const answer = content[index + 1];
+    if (answer?.type === 'p' && answer.text) {
+      faqs.push({ question: block.text, answer: answer.text });
+    }
+  });
+
+  return faqs;
+};
+
+const relatedServiceByPost: Record<string, { href: string; label: string; description: string }> = {
+  'car-ac-repair-dubai': {
+    href: '/services/car-ac-repair-dubai',
+    label: 'Car AC repair in Dubai',
+    description: 'Book a diagnostic for weak cooling, leaks, compressor concerns, or inconsistent cabin temperature.',
+  },
+  'brake-repair-dubai': {
+    href: '/services/brake-repair-dubai',
+    label: 'Brake repair in Dubai',
+    description: 'Arrange a brake inspection for noise, vibration, warning lights, or reduced stopping confidence.',
+  },
+  'car-battery-replacement-dubai': {
+    href: '/services/battery-replacement-dubai',
+    label: 'Car battery testing and replacement',
+    description: 'Get a professional battery health check before replacing a weak or unreliable battery.',
+  },
+  'best-car-workshop-dubai': {
+    href: '/best-car-workshop-dubai',
+    label: 'car workshop services in Dubai',
+    description: 'See the workshop overview, service scope, and direct ways to contact Digi-Tec in Al Quoz.',
+  },
+  'mercedes-repair-dubai-complete-guide': {
+    href: '/services/mercedes-repair-dubai',
+    label: 'Mercedes repair in Dubai',
+    description: 'Explore our Mercedes service and repair capability for diagnostics, maintenance, and specialist workshop support.',
+  },
+};
 
 const BlogPost = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -40,7 +91,8 @@ const BlogPost = () => {
       section: post.category,
       keywords: post.keywords,
     });
-    return pageGraph([webPage, breadcrumb, article]);
+    const faq = buildFAQ(url, getArticleFaqs(post.content));
+    return pageGraph([webPage, breadcrumb, article, ...(faq ? [faq] : [])]);
   }, [post]);
 
   useSeo({
@@ -62,6 +114,7 @@ const BlogPost = () => {
   if (!post) return <Navigate to="/blog" replace />;
 
   const related = blogPosts.filter((p) => p.slug !== post.slug).slice(0, 2);
+  const relatedService = relatedServiceByPost[post.slug];
 
   return (
     <div className="min-h-screen bg-black text-off-white">
@@ -156,6 +209,21 @@ const BlogPost = () => {
           </article>
         </div>
       </section>
+
+      {relatedService && (
+        <section className="pb-12 md:pb-16">
+          <div className="max-w-3xl mx-auto px-5 sm:px-6">
+            <aside className="border border-burnt-orange/30 bg-burnt-orange/10 p-5 sm:p-6" aria-label="Related service">
+              <p className="text-burnt-orange text-xs font-bold uppercase tracking-wider mb-2">Related service</p>
+              <h2 className="text-xl sm:text-2xl font-black mb-2">Need {relatedService.label}?</h2>
+              <p className="text-white/70 leading-relaxed mb-4">{relatedService.description}</p>
+              <Link to={relatedService.href} className="btn-primary inline-flex">
+                Explore {relatedService.label}
+              </Link>
+            </aside>
+          </div>
+        </section>
+      )}
 
       {/* Related */}
       {related.length > 0 && (

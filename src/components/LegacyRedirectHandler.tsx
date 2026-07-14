@@ -85,38 +85,6 @@ export const LegacyRedirectHandler = () => {
       }
     }
 
-    // 6. Consolidate duplicate brand-service URLs onto the canonical /brands/{brand}/{service} pattern.
-    //    The old /services/{brand}-{intent}-dubai pages competed with the newer /brands/* hubs and split
-    //    link equity for phrases like "mercedes service dubai" (which was ranking pos 6 on the old URL).
-    //    Every redirect is single-hop; rankings transfer through the 301 within Google's next few crawls.
-    const brandServiceRedirects: Array<[RegExp, string]> = [
-      // Mercedes-Benz — consolidate to the /brands/mercedes-benz-service-dubai hub and its sub-pages
-      [/^\/services\/mercedes-repair-dubai$/, '/brands/mercedes-benz-service-dubai'],
-      [/^\/services\/mercedes-service-dubai$/, '/brands/mercedes-benz-service-dubai'],
-      [/^\/services\/mercedes-mechanical-repair-dubai$/, '/brands/mercedes-benz-service-dubai'],
-      [/^\/services\/mercedes-electrical-repair-dubai$/, '/brands/mercedes-benz-service-dubai'],
-      [/^\/services\/mercedes-fuel-system-repair-dubai$/, '/brands/mercedes-benz-service-dubai'],
-      [/^\/services\/mercedes-exhaust-repair-dubai$/, '/brands/mercedes-benz-service-dubai'],
-      [/^\/services\/mercedes-body-repair-dubai$/, '/brands/mercedes-benz-service-dubai'],
-      [/^\/services\/mercedes-tire-repair-dubai$/, '/brands/mercedes-benz-service-dubai'],
-      [/^\/services\/mercedes-battery-replacement-dubai$/, '/brands/mercedes-benz-service-dubai'],
-      [/^\/services\/mercedes-steering-repair-dubai$/, '/brands/mercedes-benz-service-dubai/suspension-repair'],
-      [/^\/services\/mercedes-oil-change-dubai$/, '/brands/mercedes-benz-service-dubai/oil-change'],
-      [/^\/services\/mercedes-transmission-repair-dubai$/, '/brands/mercedes-benz-service-dubai/transmission-repair'],
-      [/^\/services\/mercedes-suspension-repair-dubai$/, '/brands/mercedes-benz-service-dubai/suspension-repair'],
-      [/^\/services\/mercedes-brake-repair-dubai$/, '/brands/mercedes-benz-service-dubai/brake-repair'],
-      [/^\/services\/mercedes-ac-repair-dubai$/, '/brands/mercedes-benz-service-dubai/ac-repair'],
-      [/^\/services\/mercedes-diagnostics-dubai$/, '/brands/mercedes-benz-service-dubai/engine-diagnostics'],
-    ];
-    for (const [pattern, target] of brandServiceRedirects) {
-      if (pattern.test(nextPath)) {
-        nextPath = target;
-        nextSearch = '';
-        changed = true;
-        break;
-      }
-    }
-
     if (changed) {
       navigate(`${nextPath}${nextSearch}${hash}`, { replace: true });
     }
