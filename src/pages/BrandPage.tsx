@@ -161,6 +161,7 @@ const BrandPage = () => {
       ? `${brand.name} service Dubai: repair, oil change, brake, transmission, suspension, AC and diagnostics. Genuine parts, dealer-level tools, certified technicians. Call +971 4 340 2223.`
       : 'Expert luxury car maintenance, diagnostics, and performance tuning in Dubai at Digi-Tec Performance Centre.',
     canonical: brand ? `https://digitecme.com/brands/${brand.slug}` : 'https://digitecme.com/',
+    noindex: !brand,
     jsonLd: brandJsonLd,
   });
 

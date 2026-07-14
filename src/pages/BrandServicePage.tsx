@@ -72,6 +72,7 @@ const BrandServicePage: React.FC = () => {
     title: combo ? combo.metaTitle : 'Brand Service | Digi-Tec Performance Centre',
     description: combo ? combo.metaDescription : 'Specialist brand service in Dubai at Digi-Tec Performance Centre.',
     canonical: combo ? url : `${SITE_URL}/services`,
+    noindex: !combo || !brand || !profile,
     jsonLd,
   });
 

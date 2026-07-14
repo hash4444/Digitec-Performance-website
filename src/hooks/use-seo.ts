@@ -13,7 +13,7 @@ interface SeoProps {
   twitterTitle?: string;
   twitterDescription?: string;
   noindex?: boolean;
-  jsonLd?: Record<string, any> | Record<string, any>[];
+  jsonLd?: Record<string, unknown> | Record<string, unknown>[];
 }
 
 export function useSeo({
@@ -31,6 +31,8 @@ export function useSeo({
   noindex,
   jsonLd,
 }: SeoProps) {
+  const jsonLdString = jsonLd ? JSON.stringify(jsonLd) : undefined;
+
   useEffect(() => {
     document.title = title;
 
@@ -54,7 +56,7 @@ export function useSeo({
       'meta[name="robots"]',
       'name',
       'robots',
-      noindex ? 'noindex, nofollow' : 'index, follow',
+      noindex ? 'noindex, follow' : 'index, follow, max-image-preview:large',
     );
 
     // OG / Twitter tags
@@ -93,11 +95,11 @@ export function useSeo({
     }
 
     let jsonLdScript: HTMLScriptElement | null = null;
-    if (jsonLd) {
+    if (jsonLdString) {
       jsonLdScript = document.createElement('script');
       jsonLdScript.type = 'application/ld+json';
       jsonLdScript.setAttribute('data-seo-jsonld', 'true');
-      jsonLdScript.text = JSON.stringify(jsonLd);
+      jsonLdScript.text = jsonLdString;
       document.head.appendChild(jsonLdScript);
     }
 
@@ -119,7 +121,6 @@ export function useSeo({
     twitterTitle,
     twitterDescription,
     noindex,
-    JSON.stringify(jsonLd),
+    jsonLdString,
   ]);
 }
-

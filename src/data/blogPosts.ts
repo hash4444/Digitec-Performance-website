@@ -33,9 +33,9 @@ export const blogPosts: BlogPost[] = [
     date: '2026-04-21',
     readTime: '8 min read',
     coverGradient: 'from-burnt-orange/40 via-charcoal to-black',
-    metaTitle: 'Car AC Repair Dubai | Why Your AC Stops Cooling | Digitec',
+    metaTitle: 'Why Your Car AC Stops Cooling in Dubai | Workshop Diagnosis Guide',
     metaDescription:
-      'Car AC not cooling in Dubai? Learn why AC systems fail, common problems, compressor and refrigerant issues, and how Digitec fixes them properly.',
+      'Why does a car AC stop cooling in Dubai? Learn the common causes, warning signs, and what a proper workshop diagnosis should include.',
     keywords:
       'car AC repair Dubai, AC not cooling, AC compressor repair Dubai, car AC gas refill Dubai, auto air conditioning Dubai, Mercedes AC repair Dubai, BMW AC repair Dubai',
     ogTitle: 'Car AC Repair in Dubai: Why Your AC Stops Cooling',
@@ -159,9 +159,9 @@ export const blogPosts: BlogPost[] = [
     date: '2026-04-20',
     readTime: '7 min read',
     coverGradient: 'from-burnt-orange/40 via-charcoal to-black',
-    metaTitle: 'Brake Repair Dubai | Digitec Performance Center',
+    metaTitle: 'Why Brakes Wear Faster in Dubai | Warning Signs & Workshop Guide',
     metaDescription:
-      'Brake repair in Dubai for Mercedes, BMW, Audi, and Porsche. Learn why brakes wear faster in UAE heat, warning signs, and OEM brake service from Digitec.',
+      'Learn why brakes wear faster in Dubai, the warning signs to act on, and what a thorough brake inspection should cover.',
     keywords:
       'brake repair Dubai, brake pad replacement Dubai, brake service Dubai, Mercedes brake repair Dubai, BMW brake repair Dubai, ABS repair Dubai, brake disc replacement UAE',
     ogTitle: 'Brake Repair in Dubai | Digitec Performance Center',
@@ -273,9 +273,9 @@ export const blogPosts: BlogPost[] = [
     date: '2026-04-18',
     readTime: '6 min read',
     coverGradient: 'from-burnt-orange/40 via-charcoal to-black',
-    metaTitle: 'Car Battery Replacement Dubai | Digitec Performance Center',
+    metaTitle: 'Why Car Batteries Fail Faster in Dubai Heat | Owner Guide',
     metaDescription:
-      'Car batteries in Dubai last 12 to 18 months due to heat. Digitec Performance Center offers OEM battery replacement for Mercedes, BMW, Audi, and Porsche.',
+      'Learn why Dubai heat shortens car battery life, the warning signs of failure, and when to arrange a professional battery test.',
     keywords:
       'car battery replacement Dubai, car battery change Dubai, Mercedes battery Dubai, BMW battery Dubai, luxury car battery UAE',
     content: [
@@ -355,9 +355,9 @@ export const blogPosts: BlogPost[] = [
     date: '2026-04-17',
     readTime: '9 min read',
     coverGradient: 'from-burnt-orange/50 via-charcoal to-black',
-    metaTitle: 'Best Car Workshop in Dubai (2026 Guide) | Digitec Performance Center',
+    metaTitle: 'How to Choose a Car Workshop in Dubai | 2026 Owner Guide',
     metaDescription:
-      'Looking for the best car workshop in Dubai? Digitec Performance Center offers expert Mercedes, BMW & Audi repair, ECU tuning, and GAD upgrades. Book today.',
+      'A practical 2026 guide to choosing a car workshop in Dubai, including the questions to ask about diagnostics, parts, estimates, and aftercare.',
     keywords:
       'best car workshop Dubai, car repair Dubai, German car specialist Dubai, Mercedes service Dubai, ECU tuning Dubai',
     ogTitle: 'Best Car Workshop in Dubai (2026 Guide) | Digitec',
@@ -368,7 +368,6 @@ export const blogPosts: BlogPost[] = [
     twitterTitle: 'Best Car Workshop in Dubai (2026 Guide) | Digitec',
     twitterDescription:
       'Expert car repair, Mercedes service, ECU tuning & GAD upgrades in Dubai. Trusted by luxury car owners.',
-    canonicalOverride: 'https://digitecme.com/best-car-workshop-dubai',
     content: [
       {
         type: 'p',

@@ -118,6 +118,7 @@ const ServicePage = () => {
     title: service?.metaTitle || (service ? `${service.seoKeyword} | DIGI-TEC Performance Center` : 'Service Not Found | DIGI-TEC'),
     description: service?.metaDescription || (service ? `${service.intro.slice(0, 155)}…` : ''),
     canonical: service ? `https://digitecme.com/services/${service.slug}` : undefined,
+    noindex: !service && !newSlug && !externalRedirect,
     jsonLd: serviceJsonLd,
   });
 
