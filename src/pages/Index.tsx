@@ -14,6 +14,7 @@ import { TrustBar } from '@/components/TrustBar';
 import { FAQ } from '@/components/FAQ';
 import { FinalCTA } from '@/components/FinalCTA';
 import { Footer } from '@/components/Footer';
+import MascotWidget from '@/components/MascotWidget';
 
 
 const Index = () => {
@@ -92,7 +93,7 @@ const Index = () => {
       </div>
       <FinalCTA />
       <Footer />
-      
+      <MascotWidget />
     </div>
   );
 };
