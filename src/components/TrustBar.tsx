@@ -1,5 +1,5 @@
 import React from 'react';
-import { ShieldCheck, Clock, Car, Truck } from 'lucide-react';
+import { ShieldCheck, Clock, Car, MapPin } from 'lucide-react';
 
 /**
  * Slim authority strip — social proof + credibility signals.
@@ -7,11 +7,6 @@ import { ShieldCheck, Clock, Car, Truck } from 'lucide-react';
  */
 export const TrustBar = ({ className = '' }: { className?: string }) => {
   const items = [
-    {
-      icon: <Truck className="w-4 h-4 text-burnt-orange" />,
-      value: 'Free',
-      label: 'collection & delivery, Dubai',
-    },
     {
       icon: <Clock className="w-4 h-4 text-burnt-orange" />,
       value: '40+ years',
@@ -26,6 +21,11 @@ export const TrustBar = ({ className = '' }: { className?: string }) => {
       icon: <ShieldCheck className="w-4 h-4 text-burnt-orange" />,
       value: 'OEM-grade',
       label: 'diagnostics & parts',
+    },
+    {
+      icon: <MapPin className="w-4 h-4 text-burnt-orange" />,
+      value: 'Al Quoz',
+      label: 'Dubai workshop',
     },
   ];
 
