@@ -8,6 +8,9 @@ import { Footer } from '@/components/Footer';
 import { motion } from 'framer-motion';
 import { TrustBar } from '@/components/TrustBar';
 import { MapPin, Phone, Mail, CheckCircle2, Zap, Wrench, Gauge } from 'lucide-react';
+import workshopLuxuryBays from '@/assets/digitec-workshop-luxury-bays.png';
+import workshopServiceFloor from '@/assets/digitec-workshop-service-floor.jpg';
+import workshopLifts from '@/assets/digitec-workshop-lifts.jpg';
 
 const AboutUs = () => {
   const url = 'https://digitecme.com/about';
@@ -117,6 +120,65 @@ const AboutUs = () => {
                 </div>
               ))}
             </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* Workshop gallery */}
+      <section className="py-16 md:py-24 bg-charcoal/20">
+        <div className="max-w-6xl mx-auto px-5 sm:px-6">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="max-w-3xl mb-10 md:mb-12"
+          >
+            <p className="text-burnt-orange text-xs uppercase tracking-[0.3em] font-semibold mb-3">Inside Digi-Tec</p>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-black mb-4">
+              Our Dubai <span className="text-burnt-orange">Workshop</span>
+            </h2>
+            <p className="text-white/60 text-sm sm:text-base leading-relaxed">
+              From specialist diagnostic work to mechanical repairs and performance builds, every vehicle is handled in our purpose-built Al Quoz facility.
+            </p>
+          </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-5">
+            {[
+              {
+                image: workshopLuxuryBays,
+                alt: 'Luxury performance cars inside the Digi-Tec workshop in Dubai',
+                label: 'Luxury & Performance Bays',
+              },
+              {
+                image: workshopServiceFloor,
+                alt: 'Digi-Tec service floor with luxury vehicles in Al Quoz, Dubai',
+                label: 'Purpose-Built Service Floor',
+              },
+              {
+                image: workshopLifts,
+                alt: 'Vehicle lifts and specialist repair bays at Digi-Tec Dubai',
+                label: 'Specialist Repair Bays',
+              },
+            ].map((photo, index) => (
+              <motion.figure
+                key={photo.label}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ delay: index * 0.1 }}
+                viewport={{ once: true }}
+                className="group relative overflow-hidden rounded-2xl border border-white/[0.08] bg-black aspect-[4/3]"
+              >
+                <img
+                  src={photo.image}
+                  alt={photo.alt}
+                  loading="lazy"
+                  className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+                <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/90 via-black/45 to-transparent px-5 pt-14 pb-5 text-sm font-bold text-white">
+                  {photo.label}
+                </figcaption>
+              </motion.figure>
+            ))}
           </div>
         </div>
       </section>
