@@ -33,33 +33,39 @@ const ScrollToTop = () => {
 
 const queryClient = new QueryClient();
 
-const MERCEDES_BRAND_PATH = '/brands/mercedes-benz-service-dubai';
+// Mercedes service URLs have long-standing search history. Keep those pages as
+// the single indexable destination and send newer duplicate brand sub-pages to them.
+const mercedesBrandServiceRedirects: Array<[string, string]> = [
+  ["oil-change", "/services/mercedes-oil-change-dubai"],
+  ["brake-repair", "/services/mercedes-brake-repair-dubai"],
+  ["transmission-repair", "/services/mercedes-transmission-repair-dubai"],
+  ["ac-repair", "/services/mercedes-ac-repair-dubai"],
+  ["suspension-repair", "/services/mercedes-suspension-repair-dubai"],
+  ["engine-diagnostics", "/services/mercedes-diagnostics-dubai"],
+  ["mechanical-repair", "/services/mercedes-mechanical-repair-dubai"],
+  ["steering-repair", "/services/mercedes-steering-repair-dubai"],
+  ["battery-replacement", "/services/mercedes-battery-replacement-dubai"],
+  ["electrical-repair", "/services/mercedes-electrical-repair-dubai"],
+  ["exhaust-repair", "/services/mercedes-exhaust-repair-dubai"],
+  ["fuel-system-repair", "/services/mercedes-fuel-system-repair-dubai"],
+  ["body-repair", "/services/mercedes-body-repair-dubai"],
+  ["tire-repair", "/services/mercedes-tire-repair-dubai"],
+];
 
-const MercedesBrandSpecialPage = ({ serviceSlug, path }: { serviceSlug: string; path: string }) => (
-  <ServicePage
-    slugOverride={serviceSlug}
-    canonicalPath={`${MERCEDES_BRAND_PATH}/${path}`}
-    brandPath={MERCEDES_BRAND_PATH}
-  />
-);
-
-const mercedesServiceRedirects: Array<[string, string]> = [
-  ['/services/mercedes-repair-dubai', MERCEDES_BRAND_PATH],
-  ['/services/mercedes-service-dubai', MERCEDES_BRAND_PATH],
-  ['/services/mercedes-oil-change-dubai', `${MERCEDES_BRAND_PATH}/oil-change`],
-  ['/services/mercedes-brake-repair-dubai', `${MERCEDES_BRAND_PATH}/brake-repair`],
-  ['/services/mercedes-transmission-repair-dubai', `${MERCEDES_BRAND_PATH}/transmission-repair`],
-  ['/services/mercedes-ac-repair-dubai', `${MERCEDES_BRAND_PATH}/ac-repair`],
-  ['/services/mercedes-suspension-repair-dubai', `${MERCEDES_BRAND_PATH}/suspension-repair`],
-  ['/services/mercedes-diagnostics-dubai', `${MERCEDES_BRAND_PATH}/engine-diagnostics`],
-  ['/services/mercedes-mechanical-repair-dubai', `${MERCEDES_BRAND_PATH}/mechanical-repair`],
-  ['/services/mercedes-steering-repair-dubai', `${MERCEDES_BRAND_PATH}/steering-repair`],
-  ['/services/mercedes-battery-replacement-dubai', `${MERCEDES_BRAND_PATH}/battery-replacement`],
-  ['/services/mercedes-exhaust-repair-dubai', `${MERCEDES_BRAND_PATH}/exhaust-repair`],
-  ['/services/mercedes-electrical-repair-dubai', `${MERCEDES_BRAND_PATH}/electrical-repair`],
-  ['/services/mercedes-fuel-system-repair-dubai', `${MERCEDES_BRAND_PATH}/fuel-system-repair`],
-  ['/services/mercedes-body-repair-dubai', `${MERCEDES_BRAND_PATH}/body-repair`],
-  ['/services/mercedes-tire-repair-dubai', `${MERCEDES_BRAND_PATH}/tire-repair`],
+const mercedesLegacyServicePages: Array<[string, string]> = [
+  ["mercedes-mechanical-repair-dubai", "mechanical-repair"],
+  ["mercedes-transmission-repair-dubai", "transmission-repair"],
+  ["mercedes-suspension-repair-dubai", "suspension-repair"],
+  ["mercedes-steering-repair-dubai", "steering-repair"],
+  ["mercedes-brake-repair-dubai", "brake-repair"],
+  ["mercedes-tire-repair-dubai", "tire-repair"],
+  ["mercedes-battery-replacement-dubai", "battery-replacement"],
+  ["mercedes-exhaust-repair-dubai", "exhaust-repair"],
+  ["mercedes-diagnostics-dubai", "engine-diagnostics"],
+  ["mercedes-electrical-repair-dubai", "electrical-repair"],
+  ["mercedes-fuel-system-repair-dubai", "fuel-system-repair"],
+  ["mercedes-ac-repair-dubai", "ac-repair"],
+  ["mercedes-body-repair-dubai", "body-repair"],
 ];
 
 const App = () => (
@@ -75,24 +81,34 @@ const App = () => (
           <Route path="/tuning" element={<Tuning />} />
           <Route path="/vrx" element={<VRX />} />
           <Route path="/services" element={<Services />} />
+          <Route path="/services/mercedes-service-dubai" element={<Navigate to="/services/mercedes-repair-dubai" replace />} />
+          {mercedesLegacyServicePages.map(([legacySlug, serviceSlug]) => (
+            <Route
+              key={legacySlug}
+              path={`/services/${legacySlug}`}
+              element={
+                <BrandServicePage
+                  brandSlugOverride="mercedes-benz-service-dubai"
+                  serviceSlugOverride={serviceSlug}
+                  canonicalPath={`/services/${legacySlug}`}
+                />
+              }
+            />
+          ))}
           <Route path="/services/:slug" element={<ServicePage />} />
           <Route path="/about" element={<AboutUs />} />
           <Route path="/faq" element={<FAQPage />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:slug" element={<BlogPost />} />
-          <Route path="/brands/mercedes-benz-service-dubai/mechanical-repair" element={<MercedesBrandSpecialPage serviceSlug="mercedes-mechanical-repair-dubai" path="mechanical-repair" />} />
-          <Route path="/brands/mercedes-benz-service-dubai/steering-repair" element={<MercedesBrandSpecialPage serviceSlug="mercedes-steering-repair-dubai" path="steering-repair" />} />
-          <Route path="/brands/mercedes-benz-service-dubai/battery-replacement" element={<MercedesBrandSpecialPage serviceSlug="mercedes-battery-replacement-dubai" path="battery-replacement" />} />
-          <Route path="/brands/mercedes-benz-service-dubai/exhaust-repair" element={<MercedesBrandSpecialPage serviceSlug="mercedes-exhaust-repair-dubai" path="exhaust-repair" />} />
-          <Route path="/brands/mercedes-benz-service-dubai/electrical-repair" element={<MercedesBrandSpecialPage serviceSlug="mercedes-electrical-repair-dubai" path="electrical-repair" />} />
-          <Route path="/brands/mercedes-benz-service-dubai/fuel-system-repair" element={<MercedesBrandSpecialPage serviceSlug="mercedes-fuel-system-repair-dubai" path="fuel-system-repair" />} />
-          <Route path="/brands/mercedes-benz-service-dubai/body-repair" element={<MercedesBrandSpecialPage serviceSlug="mercedes-body-repair-dubai" path="body-repair" />} />
-          <Route path="/brands/mercedes-benz-service-dubai/tire-repair" element={<MercedesBrandSpecialPage serviceSlug="mercedes-tire-repair-dubai" path="tire-repair" />} />
           <Route path="/brands/:slug" element={<BrandPage />} />
-          <Route path="/brands/:brandSlug/:serviceSlug" element={<BrandServicePage />} />
-          {mercedesServiceRedirects.map(([from, to]) => (
-            <Route key={from} path={from} element={<Navigate to={to} replace />} />
+          {mercedesBrandServiceRedirects.map(([serviceSlug, destination]) => (
+            <Route
+              key={serviceSlug}
+              path={`/brands/mercedes-benz-service-dubai/${serviceSlug}`}
+              element={<Navigate to={destination} replace />}
+            />
           ))}
+          <Route path="/brands/:brandSlug/:serviceSlug" element={<BrandServicePage />} />
           {/* AEO landing pages — targeted at AI assistants ("best ... in Dubai") */}
           <Route path="/best-car-workshop-dubai" element={<BestWorkshopPage />} />
           <Route path="/best-mercedes-workshop-dubai" element={<BestWorkshopPage />} />

@@ -26,13 +26,27 @@ import {
   SITE_URL,
 } from '@/lib/schema';
 
-const BrandServicePage: React.FC = () => {
-  const { brandSlug, serviceSlug } = useParams<{ brandSlug: string; serviceSlug: string }>();
+interface BrandServicePageProps {
+  brandSlugOverride?: string;
+  serviceSlugOverride?: string;
+  canonicalPath?: string;
+}
+
+const BrandServicePage: React.FC<BrandServicePageProps> = ({
+  brandSlugOverride,
+  serviceSlugOverride,
+  canonicalPath,
+}) => {
+  const { brandSlug: routeBrandSlug, serviceSlug: routeServiceSlug } = useParams<{ brandSlug: string; serviceSlug: string }>();
+  const brandSlug = brandSlugOverride ?? routeBrandSlug;
+  const serviceSlug = serviceSlugOverride ?? routeServiceSlug;
   const combo = brandSlug && serviceSlug ? getBrandServiceCombo(brandSlug, serviceSlug) : undefined;
   const brand = brandSlug ? getBrandBySlug(brandSlug) : undefined;
   const profile = brandSlug ? BRAND_PROFILES[brandSlug] : undefined;
 
-  const url = combo ? `${SITE_URL}/brands/${combo.brandSlug}/${combo.serviceSlug}` : SITE_URL;
+  const url = combo
+    ? canonicalPath ? `${SITE_URL}${canonicalPath}` : `${SITE_URL}/brands/${combo.brandSlug}/${combo.serviceSlug}`
+    : SITE_URL;
 
   const jsonLd = React.useMemo(() => {
     if (!combo || !brand || !profile) return undefined;

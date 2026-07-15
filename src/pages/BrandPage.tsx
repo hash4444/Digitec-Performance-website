@@ -63,6 +63,23 @@ const SERVICES = [
   },
 ];
 
+const MERCEDES_SERVICE_PATHS: Record<string, string> = {
+  'oil-change': '/services/mercedes-oil-change-dubai',
+  'brake-repair': '/services/mercedes-brake-repair-dubai',
+  'transmission-repair': '/services/mercedes-transmission-repair-dubai',
+  'ac-repair': '/services/mercedes-ac-repair-dubai',
+  'suspension-repair': '/services/mercedes-suspension-repair-dubai',
+  'engine-diagnostics': '/services/mercedes-diagnostics-dubai',
+  'mechanical-repair': '/services/mercedes-mechanical-repair-dubai',
+  'steering-repair': '/services/mercedes-steering-repair-dubai',
+  'battery-replacement': '/services/mercedes-battery-replacement-dubai',
+  'electrical-repair': '/services/mercedes-electrical-repair-dubai',
+  'exhaust-repair': '/services/mercedes-exhaust-repair-dubai',
+  'fuel-system-repair': '/services/mercedes-fuel-system-repair-dubai',
+  'body-repair': '/services/mercedes-body-repair-dubai',
+  'tire-repair': '/services/mercedes-tire-repair-dubai',
+};
+
 const BrandPage = () => {
   const { slug } = useParams<{ slug: string }>();
   const brand = slug ? getBrandBySlug(slug) : undefined;
@@ -181,6 +198,10 @@ const BrandPage = () => {
   const brandServices = getServicesForBrand(brand.slug);
   const profile = BRAND_PROFILES[brand.slug];
   const models = BRAND_MODELS[brand.slug] ?? [];
+  const getServicePath = (serviceSlug: string) =>
+    brand.slug === 'mercedes-benz-service-dubai'
+      ? MERCEDES_SERVICE_PATHS[serviceSlug] ?? `/brands/${brand.slug}/${serviceSlug}`
+      : `/brands/${brand.slug}/${serviceSlug}`;
 
   return (
     <div className="min-h-screen bg-black text-off-white">
@@ -332,7 +353,7 @@ const BrandPage = () => {
               {brandServices.map((s) => (
                 <Link
                   key={s.serviceSlug}
-                  to={`/brands/${brand.slug}/${s.serviceSlug}`}
+                  to={getServicePath(s.serviceSlug)}
                   className="card-premium group flex flex-col justify-between rounded-2xl p-4 sm:p-5 transition-all duration-300 min-h-[110px]"
                 >
                   <span className="text-off-white font-bold text-sm sm:text-base leading-tight group-hover:text-burnt-orange">
