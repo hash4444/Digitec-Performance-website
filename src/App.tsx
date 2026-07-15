@@ -19,7 +19,6 @@ const BestWorkshopPage = lazy(() => import("./pages/BestWorkshopPage"));
 const SitemapPage = lazy(() => import("./pages/SitemapPage"));
 const NotFound = lazy(() => import("./pages/NotFound"));
 import LegacyRedirectHandler from "./components/LegacyRedirectHandler";
-import MascotWidget from "./components/MascotWidget";
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -241,7 +240,6 @@ const App = () => (
           <Route path="*" element={<NotFound />} />
         </Routes>
         </Suspense>
-        <MascotWidget />
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>

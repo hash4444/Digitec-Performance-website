@@ -3,10 +3,10 @@
 // supabase function: mcp
 // Bundled from src/lib/mcp/index.ts by @lovable.dev/mcp-js.
 // src/lib/mcp/index.ts
-import { defineMcp } from "npm:@lovable.dev/mcp-js@0.20.0";
+import { defineMcp } from "npm:@lovable.dev/mcp-js@0.20.1";
 
 // src/lib/mcp/tools/get-contact-info.ts
-import { defineTool } from "npm:@lovable.dev/mcp-js@0.20.0";
+import { defineTool } from "npm:@lovable.dev/mcp-js@0.20.1";
 var get_contact_info_default = defineTool({
   name: "get_contact_info",
   title: "Get contact info",
@@ -31,7 +31,7 @@ var get_contact_info_default = defineTool({
 });
 
 // src/lib/mcp/tools/list-services.ts
-import { defineTool as defineTool2 } from "npm:@lovable.dev/mcp-js@0.20.0";
+import { defineTool as defineTool2 } from "npm:@lovable.dev/mcp-js@0.20.1";
 import { z } from "npm:zod@^4.4.3";
 var SITE = "https://digitecme.com";
 var services = [
@@ -89,7 +89,7 @@ var list_services_default = defineTool2({
 });
 
 // src/lib/mcp/tools/list-brands.ts
-import { defineTool as defineTool3 } from "npm:@lovable.dev/mcp-js@0.20.0";
+import { defineTool as defineTool3 } from "npm:@lovable.dev/mcp-js@0.20.1";
 var SITE2 = "https://digitecme.com";
 var brands = [
   { name: "Mercedes-Benz", slug: "mercedes-benz-service-dubai" },
@@ -122,7 +122,7 @@ var list_brands_default = defineTool3({
 });
 
 // src/lib/mcp/tools/build-booking-link.ts
-import { defineTool as defineTool4 } from "npm:@lovable.dev/mcp-js@0.20.0";
+import { defineTool as defineTool4 } from "npm:@lovable.dev/mcp-js@0.20.1";
 import { z as z2 } from "npm:zod@^4.4.3";
 var build_booking_link_default = defineTool4({
   name: "build_booking_link",
@@ -160,5 +160,5 @@ var mcp_default = defineMcp({
 });
 
 // lovable-mcp-supabase-entry.ts
-import { createSupabaseHandler } from "npm:@lovable.dev/mcp-js@0.20.0/stacks/supabase";
+import { createSupabaseHandler } from "npm:@lovable.dev/mcp-js@0.20.1/stacks/supabase";
 Deno.serve(createSupabaseHandler(mcp_default, { functionName: "mcp" }));

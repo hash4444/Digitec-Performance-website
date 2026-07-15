@@ -9,6 +9,7 @@ import { FinalCTA } from '@/components/FinalCTA';
 import { services } from '@/data/services';
 import { buildBreadcrumb, buildWebPage, pageGraph } from '@/lib/schema';
 import { brands } from '@/data/brands';
+import landRoverLogo from '@/assets/land-rover-logo.png.asset.json';
 
 const brandLogoMap: Record<string, string> = {
   'Mercedes-Benz': '/lovable-uploads/a6f453f2-f2c5-4140-8f2a-bfa3401611d7.png',
@@ -22,6 +23,7 @@ const brandLogoMap: Record<string, string> = {
   'Ferrari': '/lovable-uploads/11f29482-f2d3-4278-ae2a-397044a1ff95.png',
   'Bugatti': '/lovable-uploads/69bd2660-e800-47b4-bc4d-de6e6b65b984.png',
   'Range Rover': '/lovable-uploads/4bb58917-704a-4c5d-84b6-dc428a00c004.png',
+  'Land Rover': landRoverLogo.url,
   'Rolls-Royce': '/lovable-uploads/a4c040e8-740a-4fcb-b837-b86e15c25306.png',
   'Aston Martin': '/lovable-uploads/8d3bad14-09df-4ef1-86c6-13cfcba7042b.png',
 };

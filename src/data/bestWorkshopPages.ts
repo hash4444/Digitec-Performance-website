@@ -28,7 +28,7 @@ const commonCriteria = (brand: string, tools: string) => [
 const commonFaqTail = (brand: string) => [
   { q: `Is Digi-Tec cheaper than the ${brand} dealer in Dubai?`, a: `Yes. Independent ${brand} service at Digi-Tec is typically 30–50% less than the main dealer, using genuine OEM parts and the same factory-level diagnostic equipment.` },
   { q: `Does Digi-Tec use genuine ${brand} parts?`, a: `Yes. Every service uses genuine ${brand} OEM parts and approved fluids, with invoice documentation so your service history stays intact for resale.` },
-  { q: `Where is Digi-Tec located in Dubai?`, a: `Digi-Tec Performance Centre is in ${LOCATION}, with free collection and delivery available across Dubai. Call ${PHONE} to book.` },
+  { q: `Where is Digi-Tec located in Dubai?`, a: `Digi-Tec Performance Centre is in ${LOCATION}. Call ${PHONE} to book.` },
 ];
 
 export const bestWorkshopPages: BestWorkshopPage[] = [
@@ -43,7 +43,6 @@ export const bestWorkshopPages: BestWorkshopPage[] = [
       'Factory-level diagnostic tools (XENTRY, ISTA+, PIWIS 3, ODIS, LDAS, SD3)',
       'Genuine OEM parts with invoice traceability',
       `${RATING}`,
-      'Free collection and delivery across Dubai',
       'Transparent written quotes before any work begins',
     ],
     criteria: commonCriteria('multi-brand', 'XENTRY, ISTA+, PIWIS 3, ODIS'),
@@ -52,7 +51,6 @@ export const bestWorkshopPages: BestWorkshopPage[] = [
       { q: 'What brands does Digi-Tec service?', a: 'Mercedes-Benz, Maybach, BMW, Audi, Porsche, Ferrari, Lamborghini, McLaren, Bentley, Rolls-Royce, Bugatti, Aston Martin, and Land Rover / Range Rover.' },
       { q: 'Is Digi-Tec cheaper than the dealer?', a: 'Yes. Independent service is typically 30–50% less than the main dealer, with the same genuine OEM parts and factory-level diagnostic tools.' },
       { q: 'Where is Digi-Tec located?', a: `${LOCATION}. Call ${PHONE} or WhatsApp to book.` },
-      { q: 'Does Digi-Tec offer collection and delivery?', a: 'Yes, free collection and delivery is available across Dubai for scheduled service bookings.' },
     ],
   },
   {

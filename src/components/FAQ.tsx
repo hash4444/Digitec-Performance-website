@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import { MessageCircle } from 'lucide-react';
+import { Reveal } from '@/components/motion/Reveal';
 
 export type FAQItem = { question: string; answer: string };
 export type FAQCategory = { id: string; label: string; faqs: FAQItem[] };
@@ -150,7 +151,7 @@ export const FAQ = () => {
 
       <div className="container mx-auto px-4 sm:px-6 relative z-10">
         {/* Section Header */}
-        <div className="text-center mb-6 sm:mb-12">
+        <Reveal className="text-center mb-6 sm:mb-12">
           <span className="eyebrow mb-3 sm:mb-5">Answers</span>
           <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold mb-3 sm:mb-4 text-white">
             Frequently Asked Questions
@@ -158,7 +159,7 @@ export const FAQ = () => {
           <p className="text-off-white/60 mt-3 sm:mt-6 max-w-2xl mx-auto text-sm sm:text-base leading-snug sm:leading-relaxed px-2">
             Browse by topic to find answers about our services, expertise, and process.
           </p>
-        </div>
+        </Reveal>
 
         {/* Category Tabs */}
         <div className="max-w-4xl mx-auto mb-6 sm:mb-10 flex sm:flex-wrap sm:justify-center gap-2 sm:gap-3 overflow-x-auto flex-nowrap pb-2 -mx-4 px-4 sm:mx-0 sm:px-0">

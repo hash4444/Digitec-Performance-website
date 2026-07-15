@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Wrench, Settings, Battery, Car, Gauge, Bolt, PaintRoller, Shield, ChevronRight } from 'lucide-react';
 import { services } from '@/data/services';
+import { Reveal } from '@/components/motion/Reveal';
 
 const categoryIcons: Record<string, React.ReactNode> = {
   'Core Mechanical Services': <Wrench className="w-4 h-4 sm:w-6 sm:h-6" />,
@@ -48,7 +49,7 @@ export const ServiceGrid = () => {
 
       <section className="py-10 sm:py-20 lg:py-32 bg-black">
         <div className="max-w-full mx-auto px-4 sm:px-6">
-          <div className="text-center mb-8 sm:mb-14 lg:mb-20">
+          <Reveal className="text-center mb-8 sm:mb-14 lg:mb-20">
             <span className="eyebrow mb-3 sm:mb-5">Complete Care</span>
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black mb-3 sm:mb-5">
               Explore Our Full Range of Services
@@ -59,7 +60,7 @@ export const ServiceGrid = () => {
             <p className="hidden sm:inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.25em] text-gray-500">
               Scroll to explore <span className="text-burnt-orange">→</span>
             </p>
-          </div>
+          </Reveal>
 
           <div className="space-y-8 sm:space-y-16">
             {grouped.map((category) => (

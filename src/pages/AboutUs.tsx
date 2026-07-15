@@ -160,7 +160,7 @@ const AboutUs = () => {
                 label: 'Specialist Repair Bays',
               },
             ].map((photo, index) => (
-              <motion.figure
+              <motion.div
                 key={photo.label}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -174,10 +174,7 @@ const AboutUs = () => {
                   loading="lazy"
                   className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
-                <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/90 via-black/45 to-transparent px-5 pt-14 pb-5 text-sm font-bold text-white">
-                  {photo.label}
-                </figcaption>
-              </motion.figure>
+              </motion.div>
             ))}
           </div>
         </div>
