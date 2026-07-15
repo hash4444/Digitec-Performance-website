@@ -59,6 +59,12 @@ const EXTENDED_SERVICE_KEYS: ExtendedServiceKey[] = [
 
 const EXTENDED_SERVICE_BRANDS = new Set([
   'mercedes-benz-service-dubai',
+  'maybach-service-dubai',
+  'porsche-service-dubai',
+  'bmw-service-dubai',
+  'lamborghini-service-dubai',
+  'mclaren-service-dubai',
+  'aston-martin-service-dubai',
   'ferrari-service-dubai',
   'land-rover-service-dubai',
   'audi-service-dubai',
