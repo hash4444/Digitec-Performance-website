@@ -1,8 +1,8 @@
 
 import React, { useState } from 'react';
 import { Shield, Droplets, Check, ArrowRight, Sparkles } from 'lucide-react';
-import ppfImage from '@/assets/ppf-application.png';
-import ceramicImage from '@/assets/ceramic-coating.png';
+import ppfImage from '@/assets/ppf-application.jpg';
+import ceramicImage from '@/assets/ceramic-coating.jpg';
 
 const services = [
   {
@@ -98,6 +98,7 @@ export const PPFCeramicSection = () => {
               <img
                 src={active.image}
                 alt={active.label}
+                loading="lazy"
                 className="w-full aspect-[4/3] object-cover transition-transform duration-700 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />

@@ -55,6 +55,7 @@ export const Footer = () => {
           </div>
           <div className="flex flex-wrap justify-center md:justify-end space-x-4 sm:space-x-6 text-sm">
             <a href="/blog" className="text-gray-400 hover:text-burnt-orange transition-colors duration-300 py-2 px-2 sm:px-4 rounded-xl hover:bg-burnt-orange/10">Blog</a>
+            <a href="/sitemap" className="text-gray-400 hover:text-burnt-orange transition-colors duration-300 py-2 px-2 sm:px-4 rounded-xl hover:bg-burnt-orange/10">Sitemap</a>
             <a href="/privacy-policy.pdf" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-burnt-orange transition-colors duration-300 py-2 px-2 sm:px-4 rounded-xl hover:bg-burnt-orange/10">Privacy Policy</a>
           </div>
         </div>

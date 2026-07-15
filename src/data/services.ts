@@ -1,8 +1,8 @@
-import routineMaintenanceImg from '@/assets/routine-maintenance.png';
-import tireRepairImg from '@/assets/tire-repair.png';
-import ppfImage from '@/assets/ppf-application.png';
-import ceramicImage from '@/assets/ceramic-coating.png';
-import mercedesRepairImg from '@/assets/mercedes-repair.png';
+import routineMaintenanceImg from '@/assets/routine-maintenance-optimized.jpg';
+import tireRepairImg from '@/assets/tire-repair.jpg';
+import ppfImage from '@/assets/ppf-application.jpg';
+import ceramicImage from '@/assets/ceramic-coating.jpg';
+import mercedesRepairImg from '@/assets/mercedes-repair.jpg';
 import { mercedesServices } from './mercedesServices';
 
 export interface ServiceData {
@@ -832,4 +832,3 @@ export const getServiceBySlug = (slug: string): ServiceData | undefined => {
 // and sitemap generation; the base `services` array stays the canonical
 // "all services" list shown on the /services index.
 export const allServices: ServiceData[] = [...services, ...mercedesServices];
-
