@@ -179,6 +179,21 @@ const BrandPage = () => {
     .filter((s): s is NonNullable<ReturnType<typeof getServiceBySlug>> => Boolean(s));
   const seoCopy = getBrandSeoCopy(brand);
   const brandServices = getServicesForBrand(brand.slug);
+  const brandServiceCards = [
+    ...brandServices,
+    ...(brand.slug === 'mercedes-benz-service-dubai'
+      ? [
+          { serviceSlug: 'mechanical-repair', label: 'Mechanical Repair' },
+          { serviceSlug: 'steering-repair', label: 'Steering Repair' },
+          { serviceSlug: 'battery-replacement', label: 'Battery Replacement' },
+          { serviceSlug: 'electrical-repair', label: 'Electrical Repair' },
+          { serviceSlug: 'exhaust-repair', label: 'Exhaust Repair' },
+          { serviceSlug: 'fuel-system-repair', label: 'Fuel System Repair' },
+          { serviceSlug: 'body-repair', label: 'Body Repair' },
+          { serviceSlug: 'tire-repair', label: 'Tyre Repair' },
+        ]
+      : []),
+  ];
 
   return (
     <div className="min-h-screen bg-black text-off-white">
@@ -279,7 +294,7 @@ const BrandPage = () => {
       </section>
 
       {/* Dedicated brand-service SEO pages */}
-      {brandServices.length > 0 && (
+      {brandServiceCards.length > 0 && (
         <section className="py-12 sm:py-20 bg-black border-t border-white/5">
           <div className="max-w-7xl mx-auto px-4 sm:px-6">
             <div className="text-center mb-8 sm:mb-12">
@@ -291,7 +306,7 @@ const BrandPage = () => {
               </p>
             </div>
             <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 sm:gap-4">
-              {brandServices.map((s) => (
+              {brandServiceCards.map((s) => (
                 <Link
                   key={s.serviceSlug}
                   to={`/brands/${brand.slug}/${s.serviceSlug}`}

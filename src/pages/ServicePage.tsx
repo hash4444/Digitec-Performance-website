@@ -47,8 +47,15 @@ const EXTERNAL_REDIRECTS: Record<string, string> = {
   'performance-tuning-dubai': '/tuning',
 };
 
-const ServicePage = () => {
-  const { slug } = useParams<{ slug: string }>();
+interface ServicePageProps {
+  slugOverride?: string;
+  canonicalPath?: string;
+  brandPath?: string;
+}
+
+const ServicePage: React.FC<ServicePageProps> = ({ slugOverride, canonicalPath, brandPath }) => {
+  const { slug: routeSlug } = useParams<{ slug: string }>();
+  const slug = slugOverride ?? routeSlug;
 
   const externalRedirect = slug ? EXTERNAL_REDIRECTS[slug] : undefined;
   const newSlug = slug ? OLD_TO_NEW_SLUG[slug] : undefined;
@@ -59,10 +66,10 @@ const ServicePage = () => {
   // the sitewide ones by @id.
   const serviceJsonLd = React.useMemo(() => {
     if (!service) return undefined;
-    const url = `https://digitecme.com/services/${service.slug}`;
+    const url = `https://digitecme.com${canonicalPath ?? `/services/${service.slug}`}`;
     const breadcrumb = buildBreadcrumb(url, [
       { name: 'Home', url: 'https://digitecme.com/' },
-      { name: 'Services', url: 'https://digitecme.com/services' },
+      { name: brandPath ? 'Mercedes-Benz' : 'Services', url: `https://digitecme.com${brandPath ?? '/services'}` },
       { name: service.title, url },
     ]);
     const webPage = buildWebPage({
@@ -112,12 +119,12 @@ const ServicePage = () => {
     });
     const faq = service.faqs && service.faqs.length > 0 ? buildFAQ(url, service.faqs) : null;
     return pageGraph([webPage, breadcrumb, svc, ...(faq ? [faq] : [])]);
-  }, [service]);
+  }, [service, canonicalPath, brandPath]);
 
   useSeo({
     title: service?.metaTitle || (service ? `${service.seoKeyword} | DIGI-TEC Performance Center` : 'Service Not Found | DIGI-TEC'),
     description: service?.metaDescription || (service ? `${service.intro.slice(0, 155)}…` : ''),
-    canonical: service ? `https://digitecme.com/services/${service.slug}` : undefined,
+    canonical: service ? `https://digitecme.com${canonicalPath ?? `/services/${service.slug}`}` : undefined,
     noindex: !service && !newSlug && !externalRedirect,
     jsonLd: serviceJsonLd,
   });
@@ -175,7 +182,7 @@ const ServicePage = () => {
           <nav className="flex items-center gap-2 text-sm text-gray-400 mb-6">
             <Link to="/" className="hover:text-burnt-orange transition-colors">Home</Link>
             <ChevronRight className="w-4 h-4" />
-            <Link to="/services" className="hover:text-burnt-orange transition-colors">Services</Link>
+            <Link to={brandPath ?? '/services'} className="hover:text-burnt-orange transition-colors">{brandPath ? 'Mercedes-Benz' : 'Services'}</Link>
             <ChevronRight className="w-4 h-4" />
             <span className="text-burnt-orange">{service.title}</span>
           </nav>
