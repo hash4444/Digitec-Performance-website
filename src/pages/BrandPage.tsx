@@ -21,7 +21,7 @@ import {
   AccordionTrigger,
 } from '@/components/ui/accordion';
 import BrandBookingForm from '@/components/BrandBookingForm';
-import { getServicesForBrand } from '@/data/brandServices';
+import { BRAND_PROFILES, getServicesForBrand } from '@/data/brandServices';
 import { CtaAssurance } from '@/components/TrustBar';
 
 const getBrandSeoCopy = (brand: { name: string; specialization: string; whyChoose: { title: string }[] }) => {
@@ -155,10 +155,10 @@ const BrandPage = () => {
 
   useSeo({
     title: brand
-      ? `${brand.name} Service Dubai — Repair, Oil Change & Diagnostics | Digi-Tec`
+      ? `${brand.name} Repair & Service Dubai | Specialist Workshop | Digi-Tec`
       : 'Brand Service in Dubai | Digi-Tec Performance Centre',
     description: brand
-      ? `${brand.name} service Dubai: repair, oil change, brake, transmission, suspension, AC and diagnostics. Genuine parts, dealer-level tools, certified technicians. Call +971 4 340 2223.`
+      ? `Independent ${brand.name} repair and service in Dubai: diagnostics, maintenance, brakes, transmission, suspension and AC. Genuine parts and specialist workshop care at Digi-Tec.`
       : 'Expert luxury car maintenance, diagnostics, and performance tuning in Dubai at Digi-Tec Performance Centre.',
     canonical: brand ? `https://digitecme.com/brands/${brand.slug}` : 'https://digitecme.com/',
     noindex: !brand,
@@ -179,6 +179,8 @@ const BrandPage = () => {
     .filter((s): s is NonNullable<ReturnType<typeof getServiceBySlug>> => Boolean(s));
   const seoCopy = getBrandSeoCopy(brand);
   const brandServices = getServicesForBrand(brand.slug);
+  const profile = BRAND_PROFILES[brand.slug];
+  const models = BRAND_MODELS[brand.slug] ?? [];
 
   return (
     <div className="min-h-screen bg-black text-off-white">
@@ -199,7 +201,7 @@ const BrandPage = () => {
                 </span>
               </div>
               <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black mb-4 sm:mb-6 leading-tight">
-                {brand.name} <span className="text-burnt-orange">Service Dubai</span>
+                {brand.name} <span className="text-burnt-orange">Repair & Service Dubai</span>
               </h1>
               <p className="text-gray-300 text-base sm:text-lg leading-relaxed mb-6 sm:mb-8 max-w-2xl">
                 {brand.intro}
@@ -249,6 +251,42 @@ const BrandPage = () => {
           </div>
         </div>
       </section>
+
+      {/* Brand-specific workshop capability */}
+      {profile && (
+        <section className="py-12 sm:py-20 bg-gradient-to-br from-charcoal/40 to-black border-t border-white/5">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6">
+            <div className="text-center mb-8 sm:mb-12">
+              <h2 className="text-2xl sm:text-4xl lg:text-5xl font-black mb-3">
+                How We Service <span className="text-burnt-orange">{brand.name}</span> in Dubai
+              </h2>
+              <p className="text-gray-400 max-w-3xl mx-auto text-sm sm:text-base">
+                The workshop process is tailored to the diagnostic systems, drivetrain, and climate-related wear points of your {brand.name}.
+              </p>
+            </div>
+            <div className="grid sm:grid-cols-3 gap-4 sm:gap-6">
+              <div className="card-premium rounded-2xl p-5 sm:p-6">
+                <h3 className="text-lg font-bold text-off-white mb-3">Diagnostic platform</h3>
+                <p className="text-gray-400 text-sm leading-relaxed">{profile.diagnosticTool} for fault tracing, live data, coding, and service resets.</p>
+              </div>
+              <div className="card-premium rounded-2xl p-5 sm:p-6">
+                <h3 className="text-lg font-bold text-off-white mb-3">Core systems</h3>
+                <p className="text-gray-400 text-sm leading-relaxed">{profile.transmissionName}, {profile.suspensionType}, and the wider {profile.engineFamily} range.</p>
+              </div>
+              <div className="card-premium rounded-2xl p-5 sm:p-6">
+                <h3 className="text-lg font-bold text-off-white mb-3">Dubai-focused care</h3>
+                <p className="text-gray-400 text-sm leading-relaxed">{profile.climateNote}</p>
+              </div>
+            </div>
+            {models.length > 0 && (
+              <div className="mt-6 sm:mt-8 card-premium rounded-2xl p-5 sm:p-6">
+                <h3 className="text-lg font-bold text-off-white mb-3">{brand.name} models we work with</h3>
+                <p className="text-gray-400 text-sm leading-relaxed">{models.join(' • ')}</p>
+              </div>
+            )}
+          </div>
+        </section>
+      )}
 
       {/* Why Choose */}
       <section className="py-12 sm:py-20 bg-gradient-to-br from-charcoal/40 to-black">
