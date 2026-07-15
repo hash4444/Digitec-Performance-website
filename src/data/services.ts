@@ -720,17 +720,18 @@ export const services: ServiceData[] = [
   },
   {
     slug: 'soft-close-door-repair-dubai',
-    metaTitle: 'Soft Close Door Repair Dubai | Luxury Car Door Service | Digi-Tec',
-    metaDescription: 'Soft close door not working? Digi-Tec repairs luxury car soft close door latches, motors, sensors and wiring in Dubai. Book a diagnostic inspection.',
-    title: 'Soft Close Door Repair in Dubai',
-    description: 'Specialist repair for soft close door latches, motors, sensors, and wiring on luxury vehicles.',
+    metaTitle: 'Soft Close Door Installation & Repair Dubai | Digi-Tec',
+    metaDescription: 'Add or repair soft close doors in Dubai. Digi-Tec installs and repairs latches, motors, sensors and wiring on all cars, including ROX vehicles.',
+    title: 'Soft Close Door Installation & Repair in Dubai',
+    description: 'Soft close door retrofit, installation, and repair for all car makes, including ROX vehicles.',
     image: softCloseDoorImg,
     category: 'Comfort Systems',
-    seoKeyword: 'Soft Close Door Repair Dubai',
-    intro: 'Digi-Tec provides soft close door repair in Dubai for luxury and premium vehicles. If your door no longer pulls itself shut, makes a clicking sound, stops partway, or shows a door warning, our technicians diagnose the latch mechanism, electric motor, sensors, wiring, and control modules before recommending the right repair.',
-    whyImportant: 'Soft close doors combine mechanical latches with electric actuators and safety sensors. Continuing to force a faulty door can damage the latch, trim, or wiring further, and may leave the vehicle unable to lock correctly. A proper diagnosis identifies whether the fault is in the soft close motor, latch assembly, wiring, door alignment, or electronic control system.',
-    whyChoose: 'Our workshop is experienced with the electrical and comfort systems used in Mercedes-Benz, BMW, Rolls-Royce, Bentley, Range Rover, Porsche, and other luxury vehicles. We inspect the complete door operation, explain the fault clearly, and use suitable OEM-quality components so the door closes smoothly and safely again.',
+    seoKeyword: 'Soft Close Door Installation Dubai',
+    intro: 'Digi-Tec provides soft close door installation and repair in Dubai for all car makes, with specialist support for ROX vehicles. Whether you want to retrofit soft close doors to your vehicle or your existing door no longer pulls itself shut, makes a clicking sound, stops partway, or shows a door warning, our technicians assess the latch mechanism, electric motor, sensors, wiring, and control modules before recommending the right solution.',
+    whyImportant: 'Soft close doors combine mechanical latches with electric actuators and safety sensors. A correctly installed system adds everyday comfort and a premium feel; a faulty system may damage the latch, trim, or wiring further and can leave the vehicle unable to lock correctly. A proper diagnosis identifies whether the fault is in the soft close motor, latch assembly, wiring, door alignment, or electronic control system.',
+    whyChoose: 'We install and repair soft close door systems across all vehicle makes, including ROX, Mercedes-Benz, BMW, Rolls-Royce, Bentley, Range Rover, Porsche, and other luxury vehicles. We inspect the complete door operation, explain the options clearly, and use suitable components so the door closes smoothly and safely.',
     includes: [
+      'Soft close door retrofit and installation',
       'Soft close latch and actuator diagnosis',
       'Door motor, cable, and gear inspection',
       'Wiring, connector, and control-module fault tracing',
@@ -739,8 +740,8 @@ export const services: ServiceData[] = [
       'Final safety and locking-function test',
     ],
     servicesIntro: {
-      heading: 'Soft Close Door Diagnostics and Repair',
-      text: 'We begin with a complete functional test, followed by electronic fault scanning and a close inspection of the latch and door alignment. This avoids replacing parts unnecessarily and restores reliable operation.',
+      heading: 'Soft Close Door Installation, Diagnostics, and Repair',
+      text: 'For retrofits, we assess the vehicle and specify a suitable soft close system before fitting and testing it. For faults, we begin with a complete functional test, followed by electronic fault scanning and a close inspection of the latch and door alignment. This avoids replacing parts unnecessarily and restores reliable operation.',
     },
     extraSections: [
       {
@@ -757,10 +758,11 @@ export const services: ServiceData[] = [
     faqs: [
       { question: 'What causes a soft close door to stop working?', answer: 'Common causes include a worn latch actuator, failed soft close motor, damaged cable or gear, wiring fault, water ingress, misaligned door striker, or a control-module issue.' },
       { question: 'Can you repair a soft close door without replacing the whole door?', answer: 'Yes. In many cases the fault is limited to the latch, actuator, wiring, or alignment. We diagnose the component first and replace only what is required.' },
-      { question: 'Which cars do you repair soft close doors on?', answer: 'We repair comfort door systems on Mercedes-Benz, BMW, Rolls-Royce, Bentley, Range Rover, Porsche, and many other luxury vehicles in Dubai.' },
+      { question: 'Can you add soft close doors to my car?', answer: 'Yes. We assess the vehicle first, then install a suitable soft close door retrofit where compatible. We can advise on the best option before any work begins.' },
+      { question: 'Which cars do you install and repair soft close doors on?', answer: 'We work on all car makes, including ROX vehicles, Mercedes-Benz, BMW, Rolls-Royce, Bentley, Range Rover, Porsche, and many other luxury vehicles in Dubai.' },
     ],
-    localIntent: 'For soft close door repair in Dubai, visit Digi-Tec Performance Centre in Al Quoz for specialist inspection and repair of luxury vehicle comfort systems.',
-    details: 'Soft close door repair for luxury vehicles, including latch actuators, electric motors, sensors, wiring, alignment, replacement, and system testing.',
+    localIntent: 'For soft close door installation or repair in Dubai, visit Digi-Tec Performance Centre in Al Quoz. We retrofit, diagnose, and repair comfort door systems on all makes, including ROX vehicles.',
+    details: 'Soft close door retrofit, installation, and repair for all car makes, including ROX vehicles. Services include latch actuators, electric motors, sensors, wiring, alignment, replacement, and system testing.',
   },
   {
     slug: 'car-body-repair-dubai',
