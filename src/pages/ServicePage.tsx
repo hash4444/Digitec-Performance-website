@@ -467,6 +467,7 @@ const ServicePage: React.FC<ServicePageProps> = ({ slugOverride, canonicalPath, 
                     <img
                       src={s.image}
                       alt={s.title}
+                      loading="lazy"
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                       onError={(e) => {
                         e.currentTarget.src =
@@ -507,7 +508,7 @@ const ServicePage: React.FC<ServicePageProps> = ({ slugOverride, canonicalPath, 
                 className="group flex flex-col items-center gap-2 p-3 bg-white/5 hover:bg-white/10 border border-white/5 hover:border-burnt-orange/40 rounded-2xl transition-all duration-300"
               >
                 <div className="w-12 h-12 sm:w-14 sm:h-14 p-1.5 bg-white/90 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                  <img src={b.logo} alt={`${b.name} service Dubai`} className="w-full h-full object-contain" />
+                  <img src={b.logo} alt={`${b.name} service Dubai`} loading="lazy" className="w-full h-full object-contain" />
                 </div>
                 <span className="text-[11px] sm:text-xs text-gray-300 group-hover:text-burnt-orange text-center font-medium leading-tight">
                   {b.name} Service

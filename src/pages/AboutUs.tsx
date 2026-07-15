@@ -8,7 +8,7 @@ import { Footer } from '@/components/Footer';
 import { motion } from 'framer-motion';
 import { TrustBar } from '@/components/TrustBar';
 import { MapPin, Phone, Mail, CheckCircle2, Zap, Wrench, Gauge } from 'lucide-react';
-import workshopLuxuryBays from '@/assets/digitec-workshop-luxury-bays.png';
+import workshopLuxuryBays from '@/assets/digitec-workshop-luxury-bays.jpg';
 import workshopServiceFloor from '@/assets/digitec-workshop-service-floor.jpg';
 import workshopLifts from '@/assets/digitec-workshop-lifts.jpg';
 

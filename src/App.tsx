@@ -3,20 +3,21 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route, useLocation, Navigate } from "react-router-dom";
-import { useEffect } from "react";
+import { lazy, Suspense, useEffect } from "react";
 import Index from "./pages/Index";
-import Tuning from "./pages/Tuning";
-import VRX from "./pages/VRX";
-import Services from "./pages/Services";
-import ServicePage from "./pages/ServicePage";
-import AboutUs from "./pages/AboutUs";
-import FAQPage from "./pages/FAQPage";
-import Blog from "./pages/Blog";
-import BlogPost from "./pages/BlogPost";
-import BrandPage from "./pages/BrandPage";
-import BrandServicePage from "./pages/BrandServicePage";
-import BestWorkshopPage from "./pages/BestWorkshopPage";
-import NotFound from "./pages/NotFound";
+const Tuning = lazy(() => import("./pages/Tuning"));
+const VRX = lazy(() => import("./pages/VRX"));
+const Services = lazy(() => import("./pages/Services"));
+const ServicePage = lazy(() => import("./pages/ServicePage"));
+const AboutUs = lazy(() => import("./pages/AboutUs"));
+const FAQPage = lazy(() => import("./pages/FAQPage"));
+const Blog = lazy(() => import("./pages/Blog"));
+const BlogPost = lazy(() => import("./pages/BlogPost"));
+const BrandPage = lazy(() => import("./pages/BrandPage"));
+const BrandServicePage = lazy(() => import("./pages/BrandServicePage"));
+const BestWorkshopPage = lazy(() => import("./pages/BestWorkshopPage"));
+const SitemapPage = lazy(() => import("./pages/SitemapPage"));
+const NotFound = lazy(() => import("./pages/NotFound"));
 import LegacyRedirectHandler from "./components/LegacyRedirectHandler";
 
 const ScrollToTop = () => {
@@ -75,6 +76,7 @@ const App = () => (
       <BrowserRouter>
         <ScrollToTop />
         <LegacyRedirectHandler />
+        <Suspense fallback={<main className="min-h-screen bg-black" aria-label="Loading page" />}>
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/tuning" element={<Tuning />} />
@@ -97,6 +99,7 @@ const App = () => (
           <Route path="/services/:slug" element={<ServicePage />} />
           <Route path="/about" element={<AboutUs />} />
           <Route path="/faq" element={<FAQPage />} />
+          <Route path="/sitemap" element={<SitemapPage />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:slug" element={<BlogPost />} />
           <Route path="/brands/:slug" element={<BrandPage />} />
@@ -205,7 +208,6 @@ const App = () => (
           <Route path="/services/car-service" element={<Navigate to="/services/car-service-dubai" replace />} />
           <Route path="/services/car-diagnostics" element={<Navigate to="/services/car-diagnostics-dubai" replace />} />
           {/* Old WP top-level pages still in index */}
-          <Route path="/sitemap" element={<Navigate to="/" replace />} />
           <Route path="/some-of-our-work" element={<Navigate to="/vrx" replace />} />
           <Route path="/privacy-policy" element={<Navigate to="/" replace />} />
           <Route path="/terms-of-service" element={<Navigate to="/" replace />} />
@@ -237,6 +239,7 @@ const App = () => (
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
+        </Suspense>
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>
