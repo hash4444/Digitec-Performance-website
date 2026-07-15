@@ -3,6 +3,7 @@ import tireRepairImg from '@/assets/tire-repair.jpg';
 import ppfImage from '@/assets/ppf-application.jpg';
 import ceramicImage from '@/assets/ceramic-coating.jpg';
 import mercedesRepairImg from '@/assets/mercedes-repair.jpg';
+import softCloseDoorImg from '@/assets/soft-close-door-repair.jpg';
 import { mercedesServices } from './mercedesServices';
 
 export interface ServiceData {
@@ -716,6 +717,50 @@ export const services: ServiceData[] = [
     ],
     localIntent: 'If you are searching for car AC repair in Dubai, auto AC service near you, or a solution for an AC system that is not cooling properly, Digitec Performance Center offers a reliable and professional solution. Our goal is to ensure that your vehicle remains comfortable, efficient, and performing at its best, no matter how demanding the conditions.',
     details: 'Complete climate control services including refrigerant recharge, compressor replacement, condenser and evaporator repair, cabin filter replacement, and full system leak detection. Stay comfortable in any weather.',
+  },
+  {
+    slug: 'soft-close-door-repair-dubai',
+    metaTitle: 'Soft Close Door Repair Dubai | Luxury Car Door Service | Digi-Tec',
+    metaDescription: 'Soft close door not working? Digi-Tec repairs luxury car soft close door latches, motors, sensors and wiring in Dubai. Book a diagnostic inspection.',
+    title: 'Soft Close Door Repair in Dubai',
+    description: 'Specialist repair for soft close door latches, motors, sensors, and wiring on luxury vehicles.',
+    image: softCloseDoorImg,
+    category: 'Comfort Systems',
+    seoKeyword: 'Soft Close Door Repair Dubai',
+    intro: 'Digi-Tec provides soft close door repair in Dubai for luxury and premium vehicles. If your door no longer pulls itself shut, makes a clicking sound, stops partway, or shows a door warning, our technicians diagnose the latch mechanism, electric motor, sensors, wiring, and control modules before recommending the right repair.',
+    whyImportant: 'Soft close doors combine mechanical latches with electric actuators and safety sensors. Continuing to force a faulty door can damage the latch, trim, or wiring further, and may leave the vehicle unable to lock correctly. A proper diagnosis identifies whether the fault is in the soft close motor, latch assembly, wiring, door alignment, or electronic control system.',
+    whyChoose: 'Our workshop is experienced with the electrical and comfort systems used in Mercedes-Benz, BMW, Rolls-Royce, Bentley, Range Rover, Porsche, and other luxury vehicles. We inspect the complete door operation, explain the fault clearly, and use suitable OEM-quality components so the door closes smoothly and safely again.',
+    includes: [
+      'Soft close latch and actuator diagnosis',
+      'Door motor, cable, and gear inspection',
+      'Wiring, connector, and control-module fault tracing',
+      'Door alignment and striker adjustment',
+      'Replacement and calibration of faulty components',
+      'Final safety and locking-function test',
+    ],
+    servicesIntro: {
+      heading: 'Soft Close Door Diagnostics and Repair',
+      text: 'We begin with a complete functional test, followed by electronic fault scanning and a close inspection of the latch and door alignment. This avoids replacing parts unnecessarily and restores reliable operation.',
+    },
+    extraSections: [
+      {
+        heading: 'Signs Your Soft Close Door Needs Repair',
+        items: [
+          'The door does not pull itself closed',
+          'Clicking, grinding, or repeated motor noise from the door',
+          'The door closes but does not lock properly',
+          'An intermittent door-open warning appears',
+          'The soft close function works on some doors but not others',
+        ],
+      },
+    ],
+    faqs: [
+      { question: 'What causes a soft close door to stop working?', answer: 'Common causes include a worn latch actuator, failed soft close motor, damaged cable or gear, wiring fault, water ingress, misaligned door striker, or a control-module issue.' },
+      { question: 'Can you repair a soft close door without replacing the whole door?', answer: 'Yes. In many cases the fault is limited to the latch, actuator, wiring, or alignment. We diagnose the component first and replace only what is required.' },
+      { question: 'Which cars do you repair soft close doors on?', answer: 'We repair comfort door systems on Mercedes-Benz, BMW, Rolls-Royce, Bentley, Range Rover, Porsche, and many other luxury vehicles in Dubai.' },
+    ],
+    localIntent: 'For soft close door repair in Dubai, visit Digi-Tec Performance Centre in Al Quoz for specialist inspection and repair of luxury vehicle comfort systems.',
+    details: 'Soft close door repair for luxury vehicles, including latch actuators, electric motors, sensors, wiring, alignment, replacement, and system testing.',
   },
   {
     slug: 'car-body-repair-dubai',
