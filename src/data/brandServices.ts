@@ -1,7 +1,8 @@
 /**
  * Brand × Service SEO landing pages.
  *
- * 13 brands × 6 services = 78 dedicated pages at
+ * Every brand has six core service pages; selected brands with confirmed workshop
+ * coverage also expose extended repair pages at
  *   /brands/{brandSlug}/{serviceSlug}
  *
  * Each page composes from BRAND_PROFILES (brand-specific tech vocabulary) +
@@ -16,7 +17,25 @@ export type ServiceKey =
   | 'transmission-repair'
   | 'ac-repair'
   | 'suspension-repair'
-  | 'engine-diagnostics';
+  | 'engine-diagnostics'
+  | 'mechanical-repair'
+  | 'steering-repair'
+  | 'battery-replacement'
+  | 'electrical-repair'
+  | 'exhaust-repair'
+  | 'fuel-system-repair'
+  | 'body-repair'
+  | 'tire-repair';
+
+type ExtendedServiceKey =
+  | 'mechanical-repair'
+  | 'steering-repair'
+  | 'battery-replacement'
+  | 'electrical-repair'
+  | 'exhaust-repair'
+  | 'fuel-system-repair'
+  | 'body-repair'
+  | 'tire-repair';
 
 export const SERVICE_KEYS: ServiceKey[] = [
   'oil-change',
@@ -26,6 +45,27 @@ export const SERVICE_KEYS: ServiceKey[] = [
   'suspension-repair',
   'engine-diagnostics',
 ];
+
+const EXTENDED_SERVICE_KEYS: ExtendedServiceKey[] = [
+  'mechanical-repair',
+  'steering-repair',
+  'battery-replacement',
+  'electrical-repair',
+  'exhaust-repair',
+  'fuel-system-repair',
+  'body-repair',
+  'tire-repair',
+];
+
+const EXTENDED_SERVICE_BRANDS = new Set([
+  'mercedes-benz-service-dubai',
+  'ferrari-service-dubai',
+  'land-rover-service-dubai',
+  'audi-service-dubai',
+  'bentley-service-dubai',
+  'rolls-royce-service-dubai',
+  'bugatti-service-dubai',
+]);
 
 export interface BrandProfile {
   brandSlug: string;
@@ -315,6 +355,14 @@ const SERVICE_META: Record<ServiceKey, { name: string; serviceType: string; labe
   'ac-repair': { name: 'AC Repair', serviceType: 'Air Conditioning Repair', label: 'AC Repair' },
   'suspension-repair': { name: 'Suspension Repair', serviceType: 'Suspension & Air Ride Repair', label: 'Suspension Repair' },
   'engine-diagnostics': { name: 'Engine Diagnostics', serviceType: 'Engine & ECU Diagnostics', label: 'Engine Diagnostics' },
+  'mechanical-repair': { name: 'Mechanical Repair', serviceType: 'Mechanical & Drivetrain Repair', label: 'Mechanical Repair' },
+  'steering-repair': { name: 'Steering Repair', serviceType: 'Steering & Alignment Repair', label: 'Steering Repair' },
+  'battery-replacement': { name: 'Battery Replacement', serviceType: 'Battery Testing & Replacement', label: 'Battery Replacement' },
+  'electrical-repair': { name: 'Electrical Repair', serviceType: 'Vehicle Electrical System Repair', label: 'Electrical Repair' },
+  'exhaust-repair': { name: 'Exhaust Repair', serviceType: 'Exhaust System Repair', label: 'Exhaust Repair' },
+  'fuel-system-repair': { name: 'Fuel System Repair', serviceType: 'Fuel Injection & Delivery Repair', label: 'Fuel System Repair' },
+  'body-repair': { name: 'Body Repair', serviceType: 'Bodywork & Paint Repair', label: 'Body Repair' },
+  'tire-repair': { name: 'Tyre Repair', serviceType: 'Tyre Repair & Replacement', label: 'Tyre Repair' },
 };
 
 type Composed = Omit<BrandServiceCombo, 'brandSlug' | 'serviceSlug' | 'brandName' | 'serviceName' | 'serviceType' | 'whatsAppMessage'>;
@@ -517,6 +565,73 @@ function composeDiagnostics(p: BrandProfile): Composed {
   };
 }
 
+const EXTENDED_SERVICE_COPY: Record<ExtendedServiceKey, {
+  symptoms: string[];
+  process: string[];
+  parts: string;
+}> = {
+  'mechanical-repair': {
+    symptoms: ['Unusual engine noise, vibration, oil leak, or loss of power', 'Warning light, overheating, or rough running under load', 'Drivetrain clunk, hesitation, or vibration during acceleration'],
+    process: ['Full vehicle inspection and diagnostic scan', 'Component-level testing and a clear repair plan', 'Genuine or OE-quality parts fitting, calibration, and road test'],
+    parts: 'engine, cooling, drivetrain, and mounting components',
+  },
+  'steering-repair': {
+    symptoms: ['Heavy, vague, or noisy steering', 'Steering warning on the dashboard', 'Pulling, vibration, or uneven tyre wear'],
+    process: ['Steering, suspension, and alignment inspection', 'Diagnostic scan and component-level fault tracing', 'Repair, calibration, alignment, and road test'],
+    parts: 'steering racks, pumps, sensors, tie rods, and related suspension components',
+  },
+  'battery-replacement': {
+    symptoms: ['Slow crank, no-start condition, or battery warning', 'Electrical faults after the car has been parked', 'Start-stop system unavailable or repeated low-voltage messages'],
+    process: ['Battery and charging-system load test', 'Correct specification battery selection and safe replacement', 'Battery registration, coding where required, and final charging check'],
+    parts: 'correct-specification AGM, EFB, or conventional batteries and battery-management components',
+  },
+  'electrical-repair': {
+    symptoms: ['Intermittent warning lights or electrical functions failing', 'Battery drain, blown fuses, or module communication faults', 'Lighting, comfort-system, sensor, or charging-system issues'],
+    process: ['Full module scan and wiring inspection', 'Live-data testing to identify the failed circuit or component', 'Repair, coding, and confirmation road test'],
+    parts: 'genuine sensors, modules, wiring repairs, relays, and charging-system components',
+  },
+  'exhaust-repair': {
+    symptoms: ['Exhaust warning light, unusual noise, or rattling', 'Loss of power, fuel economy, or emissions-test failure', 'Exhaust smell, vibration, or visible leak'],
+    process: ['Visual inspection, diagnostic scan, and leak test', 'Measure catalyst, sensor, and back-pressure performance', 'Repair or replace the affected component and verify emissions readiness'],
+    parts: 'exhaust sensors, gaskets, catalytic components, silencers, and OE-quality pipework',
+  },
+  'fuel-system-repair': {
+    symptoms: ['Hard starting, hesitation, misfire, or reduced power', 'Fuel smell, poor consumption, or engine warning light', 'Fuel-pressure or injector-related fault codes'],
+    process: ['Fuel-pressure, injector, and live-data assessment', 'Targeted component testing before replacement', 'Repair, adaptation reset, and road-test confirmation'],
+    parts: 'injectors, pumps, filters, fuel lines, seals, and pressure-control components',
+  },
+  'body-repair': {
+    symptoms: ['Scratches, dents, collision damage, or paint damage', 'Misaligned panel, bumper, or trim', 'Visible corrosion or damage affecting resale value'],
+    process: ['Damage assessment and repair plan', 'Precision panel, paint, and trim repair', 'Colour-match quality check and final handover inspection'],
+    parts: 'genuine panels, trim, paint materials, and repair consumables',
+  },
+  'tire-repair': {
+    symptoms: ['Puncture, pressure loss, vibration, or uneven wear', 'Tyre-pressure warning or sidewall damage', 'Poor handling, pulling, or noise at speed'],
+    process: ['Tyre, wheel, and pressure-system inspection', 'Safe repair or correct tyre replacement recommendation', 'Balance, pressure reset, and road-test check'],
+    parts: 'manufacturer-approved tyres, repair materials, valves, and wheel-balance weights',
+  },
+};
+
+function composeExtendedService(p: BrandProfile, key: ExtendedServiceKey): Composed {
+  const meta = SERVICE_META[key];
+  const copy = EXTENDED_SERVICE_COPY[key];
+  return {
+    h1: `${p.brandName} ${meta.name} Dubai`,
+    metaTitle: `${p.brandName} ${meta.name} Dubai | Digi-Tec`,
+    metaDescription: `${p.brandName} ${meta.name.toLowerCase()} in Dubai using ${p.diagnosticTool}. Genuine parts, transparent diagnostics, and specialist repair at Digi-Tec.`,
+    heroCopy: `Digi-Tec provides specialist ${p.brandName} ${meta.name.toLowerCase()} in Dubai with the right diagnostic access, workshop process, and parts standards for your vehicle. Modern ${p.brandName} platforms depend on integrated mechanical and electronic systems, so we diagnose the root cause before quoting repairs. ${p.climateNote} ${p.heritageLine}`,
+    symptoms: copy.symptoms,
+    models: p.models.slice(0, 6),
+    processSteps: copy.process.map((title) => ({ title, description: `${title} for your ${p.brandName}, using ${p.diagnosticTool} and documented workshop procedures.` })),
+    partsCopy: `We use genuine ${p.brandName} parts or approved OE-supplier alternatives for ${copy.parts}. Every recommendation is documented before work begins.`,
+    faqs: [
+      { question: `Do you handle ${p.brandName} ${meta.name.toLowerCase()} in Dubai?`, answer: `Yes. Our workshop diagnoses and repairs ${p.brandName} ${meta.name.toLowerCase()} using ${p.diagnosticTool}, the correct parts, and a documented repair process.` },
+      { question: `How long does ${p.brandName} ${meta.name.toLowerCase()} take?`, answer: 'Simple inspections and minor repairs can often be completed the same day. Complex faults or parts-dependent work are quoted with a clear timeline after diagnosis.' },
+      { question: `Do you use genuine ${p.brandName} parts?`, answer: `Genuine ${p.brandName} parts are our default. Approved OE-supplier alternatives are available when appropriate and are always clearly documented.` },
+    ],
+  };
+}
+
 const COMPOSERS: Record<ServiceKey, (p: BrandProfile) => Composed> = {
   'oil-change': composeOilChange,
   'brake-repair': composeBrakeRepair,
@@ -524,12 +639,23 @@ const COMPOSERS: Record<ServiceKey, (p: BrandProfile) => Composed> = {
   'ac-repair': composeAcRepair,
   'suspension-repair': composeSuspension,
   'engine-diagnostics': composeDiagnostics,
+  'mechanical-repair': (p) => composeExtendedService(p, 'mechanical-repair'),
+  'steering-repair': (p) => composeExtendedService(p, 'steering-repair'),
+  'battery-replacement': (p) => composeExtendedService(p, 'battery-replacement'),
+  'electrical-repair': (p) => composeExtendedService(p, 'electrical-repair'),
+  'exhaust-repair': (p) => composeExtendedService(p, 'exhaust-repair'),
+  'fuel-system-repair': (p) => composeExtendedService(p, 'fuel-system-repair'),
+  'body-repair': (p) => composeExtendedService(p, 'body-repair'),
+  'tire-repair': (p) => composeExtendedService(p, 'tire-repair'),
 };
 
 export function getBrandServiceCombo(brandSlug: string, serviceSlug: string): BrandServiceCombo | undefined {
   const profile = BRAND_PROFILES[brandSlug];
   if (!profile) return undefined;
-  if (!(SERVICE_KEYS as string[]).includes(serviceSlug)) return undefined;
+  const availableServices = EXTENDED_SERVICE_BRANDS.has(brandSlug)
+    ? [...SERVICE_KEYS, ...EXTENDED_SERVICE_KEYS]
+    : SERVICE_KEYS;
+  if (!(availableServices as string[]).includes(serviceSlug)) return undefined;
   const key = serviceSlug as ServiceKey;
   const meta = SERVICE_META[key];
   const composed = COMPOSERS[key](profile);
@@ -548,7 +674,10 @@ export function getBrandServiceCombo(brandSlug: string, serviceSlug: string): Br
 export function getAllBrandServiceCombos(): { brandSlug: string; serviceSlug: ServiceKey }[] {
   const combos: { brandSlug: string; serviceSlug: ServiceKey }[] = [];
   for (const brandSlug of BRAND_SLUGS) {
-    for (const serviceSlug of SERVICE_KEYS) {
+    const services = EXTENDED_SERVICE_BRANDS.has(brandSlug)
+      ? [...SERVICE_KEYS, ...EXTENDED_SERVICE_KEYS]
+      : SERVICE_KEYS;
+    for (const serviceSlug of services) {
       combos.push({ brandSlug, serviceSlug });
     }
   }
@@ -557,7 +686,10 @@ export function getAllBrandServiceCombos(): { brandSlug: string; serviceSlug: Se
 
 export function getServicesForBrand(brandSlug: string): { serviceSlug: ServiceKey; label: string }[] {
   if (!BRAND_PROFILES[brandSlug]) return [];
-  return SERVICE_KEYS.map((s) => ({ serviceSlug: s, label: SERVICE_META[s].label }));
+  const services = EXTENDED_SERVICE_BRANDS.has(brandSlug)
+    ? [...SERVICE_KEYS, ...EXTENDED_SERVICE_KEYS]
+    : SERVICE_KEYS;
+  return services.map((s) => ({ serviceSlug: s, label: SERVICE_META[s].label }));
 }
 
 export function getServiceLabel(serviceSlug: ServiceKey): string {
