@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { useSeo } from '@/hooks/use-seo';
 import Header from '@/components/Header';
 import { Footer } from '@/components/Footer';
@@ -120,6 +121,9 @@ const Tuning = () => {
             </h2>
             <p className="text-base md:text-lg text-white/70 leading-relaxed mb-8">
               If you're looking for professional ECU tuning in Dubai, Digi-Tec Performance Center offers advanced performance upgrades for Mercedes, Porsche, Lamborghini, Aston Martin, and the VRX Mercedes. Our tuning solutions are developed in partnership with GAD Motors, ensuring maximum power gains, reliability, and precision engineering tailored to your car.
+            </p>
+            <p className="text-base md:text-lg text-white/70 leading-relaxed mb-8">
+              Explore the <Link to="/vrx" className="text-burnt-orange hover:underline font-semibold">GAD Motors V-Class VRX at our Dubai workshop</Link> — a bespoke Mercedes V-Class project combining GAD performance engineering with a luxury conversion.
             </p>
             <p className="text-base md:text-lg text-white/70 leading-relaxed mb-8">
               At Digitec Performance Center, we offer a wide range of GAD Motors performance parts in Dubai, engineered for maximum power, reliability, and precision. Our selection includes high-performance low-pressure fuel systems, intake manifolds, turbochargers, intercooler kits, piston sets, connecting rods, gearbox upgrades, and complete turbo kits designed specifically for Mercedes-Benz AMG and other high-performance platforms. Whether you're upgrading airflow, increasing boost, or building a fully tuned engine, all GAD parts we supply are developed and tested to deliver exceptional performance under demanding conditions. As a trusted provider of GAD parts in Dubai, we ensure every component meets the highest standards of engineering and performance tuning.

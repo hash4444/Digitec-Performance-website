@@ -44,17 +44,17 @@ const VRX = () => {
   const [activeExteriorTab, setActiveExteriorTab] = useState('motor');
 
   useSeo({
-    title: 'VRX Mercedes V-Class by GAD Motors | DIGI-TEC Performance Center Dubai',
-    description: 'Discover the VRX, a modified Mercedes V-Class by GAD Motors. Performance tuning, luxury interior, and bespoke design. Available exclusively at DIGI-TEC Dubai.',
+    title: 'GAD Motors V-Class VRX Dubai | Official Workshop | DIGI-TEC',
+    description: 'Explore the GAD Motors V-Class VRX at DIGI-TEC Dubai, the official GAD Motors workshop partner for bespoke Mercedes V-Class performance, luxury, and conversion work.',
     canonical: 'https://digitecme.com/vrx',
     jsonLd: (() => {
       const url = 'https://digitecme.com/vrx';
       return pageGraph([
         buildWebPage({
           url,
-          name: 'VRX Mercedes V-Class by GAD Motors | DIGI-TEC Dubai',
+          name: 'GAD Motors V-Class VRX | DIGI-TEC Dubai Workshop',
           description:
-            'The VRX, a modified Mercedes V-Class by GAD Motors: performance tuning, luxury interior and bespoke design, available exclusively at DIGI-TEC Dubai.',
+            'The GAD Motors V-Class VRX: bespoke Mercedes V-Class performance, luxury interior and design, available at the official GAD Motors workshop partner, DIGI-TEC Dubai.',
           type: 'ItemPage',
           breadcrumbId: `${url}#breadcrumb`,
         }),
@@ -65,12 +65,12 @@ const VRX = () => {
         {
           '@type': 'Product',
           '@id': `${url}#product`,
-          name: 'VRX Mercedes V-Class',
+          name: 'GAD Motors V-Class VRX',
           brand: { '@type': 'Brand', name: 'GAD Motors' },
           manufacturer: { '@type': 'Organization', name: 'GAD Motors', url: 'https://www.gad-motors.de/' },
           category: 'Modified Mercedes V-Class',
           description:
-            'Bespoke modified Mercedes V-Class conversion by GAD Motors, offered exclusively at DIGI-TEC Performance Center Dubai.',
+            'Bespoke GAD Motors V-Class VRX conversion, offered at DIGI-TEC Performance Center, the official GAD Motors workshop partner in Dubai.',
           url,
           offers: {
             '@type': 'Offer',
@@ -108,7 +108,7 @@ const VRX = () => {
             transition={{ delay: 0.4 }}
             className="text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-black mb-4 md:mb-6 tracking-tighter"
           >
-            <span className="text-red-600">VRX</span>
+            <span className="text-red-600">GAD Motors V-Class VRX</span>
           </motion.h1>
 
           <motion.p
@@ -117,7 +117,7 @@ const VRX = () => {
             transition={{ delay: 0.6 }}
             className="text-lg sm:text-xl md:text-2xl text-white/60 mb-3"
           >
-            Mercedes V-Class, Redefined.
+            Dubai Workshop for the GAD Motors V-Class.
           </motion.p>
 
           <motion.p
@@ -126,7 +126,7 @@ const VRX = () => {
             transition={{ delay: 0.8 }}
             className="text-sm sm:text-base md:text-lg text-white/40 max-w-2xl mx-auto leading-relaxed mb-10"
           >
-            A bespoke modified Mercedes V-Class engineered by GAD Motors, combining performance, luxury, and exclusivity into one extraordinary machine.
+            DIGI-TEC is Dubai's official GAD Motors workshop partner for the bespoke V-Class VRX: a Mercedes V-Class engineered for extreme performance, luxury, and exclusivity.
           </motion.p>
 
           {/* Hero Image */}
