@@ -166,7 +166,7 @@ const AboutUs = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.1 }}
                 viewport={{ once: true }}
-                className="group relative overflow-hidden rounded-2xl border border-white/[0.08] bg-black aspect-[3/4]"
+                className="group relative overflow-hidden rounded-2xl border border-white/[0.08] bg-black aspect-[4/3]"
               >
                 <img
                   src={photo.image}
