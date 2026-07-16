@@ -21,7 +21,8 @@ const LocalGaragePage = () => {
   const { isArabic, localizedPath } = useLocale();
   const { pathname } = useLocation();
   const { slug: routeSlug } = useParams<{ slug: string }>();
-  const slug = routeSlug ?? pathname.split('/').filter(Boolean).at(-1);
+  const parts = pathname.split('/').filter(Boolean);
+  const slug = routeSlug ?? parts[parts.length - 1];
   const sourcePage = slug ? getLocalGaragePage(slug) : undefined;
   const page = sourcePage && isArabic ? (() => {
     const copy = localArabicCopy[sourcePage.slug];
