@@ -22,7 +22,7 @@ const OUTER = [
 
 const logoMap: Record<string, string> = {
   'Mercedes-Benz': '/lovable-uploads/a6f453f2-f2c5-4140-8f2a-bfa3401611d7.png',
-  'Maybach': '/lovable-uploads/5cc5b8af-7dd9-46a9-9ee2-3e5b14fda559.png',
+  'Maybach': 'https://www.carlogos.org/car-logos/maybach-logo.png',
   'Porsche': '/lovable-uploads/8e7e2545-680e-42ac-bd97-ba1f9c063649.png',
   'Audi': '/lovable-uploads/a3e92dde-70a9-499b-a7b0-ae0df117baf9.png',
   'BMW': '/lovable-uploads/d66ea83e-7d6a-4c19-bf30-f27eca93ac8e.png',

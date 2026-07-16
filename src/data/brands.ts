@@ -34,7 +34,7 @@ export const brands: Brand[] = [
   {
     name: 'Maybach',
     slug: 'maybach-service-dubai',
-    logo: '/lovable-uploads/5cc5b8af-7dd9-46a9-9ee2-3e5b14fda559.png',
+    logo: 'https://www.carlogos.org/car-logos/maybach-logo.png',
     specialization: 'Repair • Maintenance • Diagnostics • Performance',
     intro:
       "Maybach demands the highest standard of care, and Digi-Tec delivers exactly that. From chauffeur-driven sedans to private ownership, we provide white-glove maintenance, advanced diagnostics, and bespoke detailing tailored to the marque's ultra-luxury heritage.",
