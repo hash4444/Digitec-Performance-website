@@ -1,7 +1,9 @@
 import React, { useEffect, useMemo, useRef, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { LocalizedLink as Link } from '@/components/LocalizedLink';
 import { useIsMobile } from '@/hooks/use-mobile';
 import { getSlugForOrbitName } from '@/data/brands';
+import { useLocale } from '@/i18n/use-locale';
+import { arHome } from '@/i18n/ar-home';
 
 const SPEC = 'Repair • Maintenance • Diagnostics • Performance';
 
@@ -81,7 +83,7 @@ const TICKS = Array.from({ length: 72 }, (_, i) => {
   };
 });
 
-const Orbit = () => {
+const Orbit = ({ spec = SPEC }: { spec?: string }) => {
   const stageRef = useRef<HTMLDivElement>(null);
   const parallaxRef = useRef<HTMLDivElement>(null);
   const cometRef = useRef<HTMLDivElement>(null);
@@ -393,7 +395,7 @@ const Orbit = () => {
         >
           <span className="w-1.5 h-1.5 rounded-full bg-burnt-orange" />
           <span className="font-bold text-sm text-off-white">{active ?? ''}</span>
-          <span className="text-gray-400 text-xs tracking-wide">{SPEC}</span>
+          <span className="text-gray-400 text-xs tracking-wide">{spec}</span>
         </div>
       </div>
     </>
@@ -402,6 +404,8 @@ const Orbit = () => {
 
 export const BrandsWeServe = () => {
   const isMobile = useIsMobile();
+  const { isArabic } = useLocale();
+  const copy = isArabic ? arHome.brands : null;
 
   return (
     <section className="relative overflow-hidden bg-[#0a0a0a] px-4 sm:px-6 py-14 sm:py-20 lg:py-28">
@@ -410,27 +414,27 @@ export const BrandsWeServe = () => {
 
       <div className="relative z-10 max-w-6xl mx-auto">
         <div className="text-center mb-6 sm:mb-10">
-          <span className="eyebrow mb-3 sm:mb-5">Marque Specialists</span>
+          <span className="eyebrow mb-3 sm:mb-5">{copy?.eyebrow ?? 'Marque Specialists'}</span>
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-black mb-3 sm:mb-6 text-white tracking-tight">
-            Brands We Serve
+            {copy?.title ?? 'Brands We Serve'}
           </h2>
           <p className="text-sm sm:text-base lg:text-xl text-gray-400 max-w-3xl mx-auto px-4 leading-snug sm:leading-relaxed">
-            Precision performance for the world's most prestigious automotive marques.
+            {copy?.description ?? "Precision performance for the world's most prestigious automotive marques."}
           </p>
         </div>
 
-        {isMobile ? <MobileGrid /> : <Orbit />}
+        {isMobile ? <MobileGrid /> : <Orbit spec={copy?.spec} />}
 
         <div className="text-center mt-8 sm:mt-12">
           {!isMobile && (
             <p className="hidden md:flex items-center justify-center gap-2 text-[11px] font-semibold uppercase tracking-[0.24em] text-gray-500 mb-6">
-              Drag to spin · <span className="text-burnt-orange">Hover a marque</span>
+              {copy ? copy.drag : <>Drag to spin · <span className="text-burnt-orange">Hover a marque</span></>}
             </p>
           )}
           <p className="text-gray-400 mb-4 sm:mb-6 text-sm sm:text-lg px-4">
-            Experience precision service for your luxury vehicle
+            {copy?.note ?? 'Experience precision service for your luxury vehicle'}
           </p>
-          <button className="btn-primary w-full sm:w-auto">Schedule Service</button>
+          <Link to="/brands" className="btn-primary w-full sm:w-auto">{copy?.view ?? 'View More'}</Link>
         </div>
       </div>
     </section>

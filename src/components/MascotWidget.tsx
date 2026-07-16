@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { MessageCircle, Phone } from 'lucide-react';
+import { useLocale } from '@/i18n/use-locale';
 
 const WHATSAPP_HREF = `https://wa.me/97143402223?text=${encodeURIComponent(
   "Hi, I'd like to get in touch with Digi-Tec Performance Center.",
@@ -19,6 +20,7 @@ const TEL_HREF = 'tel:+97143402223';
  * (greeting pose). Until they exist, a brand "D" avatar renders instead.
  */
 export const MascotWidget = () => {
+  const { isArabic } = useLocale();
   const [open, setOpen] = useState(false);
   const [hovered, setHovered] = useState(false);
   const [imgOk, setImgOk] = useState(true);
@@ -76,10 +78,10 @@ export const MascotWidget = () => {
         }
       `}</style>
 
-      <div ref={rootRef} className="fixed bottom-8 sm:bottom-12 right-0 z-50 flex flex-col items-end select-none">
+      <div ref={rootRef} className={`fixed bottom-8 sm:bottom-12 ${isArabic ? 'left-0 items-start' : 'right-0 items-end'} z-50 flex flex-col select-none`}>
         {/* Contact options */}
         <div
-          className={`flex flex-col items-end gap-2.5 mb-2 mr-1 transition-all duration-200 ${
+          className={`flex flex-col ${isArabic ? 'items-start ml-1' : 'items-end mr-1'} gap-2.5 mb-2 transition-all duration-200 ${
             active ? 'pointer-events-auto' : 'pointer-events-none opacity-0'
           }`}
           aria-hidden={!active}
@@ -87,7 +89,7 @@ export const MascotWidget = () => {
           {active && (
             <>
               <a
-                href={WHATSAPP_HREF}
+                href={isArabic ? `https://wa.me/97143402223?text=${encodeURIComponent('مرحباً، أود التواصل مع مركز ديجي-تك بيرفورمانس.')}` : WHATSAPP_HREF}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mascot-option inline-flex items-center gap-2.5 bg-burnt-orange hover:bg-[#ff7d4d] text-black font-bold text-xs uppercase tracking-[0.12em] pl-4 pr-5 py-3 rounded-full shadow-[0_10px_28px_-10px_rgba(255,107,53,0.6)] transition-colors"
@@ -95,7 +97,7 @@ export const MascotWidget = () => {
                 onClick={() => setOpen(false)}
               >
                 <MessageCircle className="w-4 h-4" />
-                Message Us
+                {isArabic ? 'راسلنا' : 'Message Us'}
               </a>
               <a
                 href={TEL_HREF}
@@ -104,7 +106,7 @@ export const MascotWidget = () => {
                 onClick={() => setOpen(false)}
               >
                 <Phone className="w-4 h-4" />
-                Call Us
+                {isArabic ? 'اتصل بنا' : 'Call Us'}
               </a>
             </>
           )}
@@ -113,7 +115,7 @@ export const MascotWidget = () => {
         {/* Mascot */}
         <button
           type="button"
-          aria-label={open ? 'Close contact options' : 'Contact Digi-Tec — call or message us'}
+          aria-label={open ? (isArabic ? 'إغلاق خيارات التواصل' : 'Close contact options') : (isArabic ? 'تواصل مع ديجي-تك بالاتصال أو الرسائل' : 'Contact Digi-Tec — call or message us')}
           aria-expanded={active}
           onClick={() => setOpen((v) => !v)}
           onMouseEnter={() => setHovered(true)}
@@ -122,12 +124,12 @@ export const MascotWidget = () => {
             setTilt({ x: 0, y: 0 });
           }}
           onMouseMove={handleMove}
-          className="relative block outline-none focus-visible:ring-2 focus-visible:ring-burnt-orange rounded-l-3xl cursor-pointer"
+          className={`relative block outline-none focus-visible:ring-2 focus-visible:ring-burnt-orange ${isArabic ? 'rounded-r-3xl' : 'rounded-l-3xl'} cursor-pointer`}
           style={{ perspective: '600px' }}
         >
           {/* Online pulse dot */}
           <span
-            className={`absolute top-8 right-16 sm:right-20 z-10 flex h-3.5 w-3.5 transition-opacity duration-300 ${
+            className={`absolute top-8 ${isArabic ? 'left-16 sm:left-20' : 'right-16 sm:right-20'} z-10 flex h-3.5 w-3.5 transition-opacity duration-300 ${
               active ? 'opacity-0' : 'opacity-100'
             }`}
             aria-hidden="true"
@@ -141,8 +143,8 @@ export const MascotWidget = () => {
             style={{
               animation: active ? 'none' : 'mascot-bob 3.2s ease-in-out infinite',
               transform: active
-                ? `translateX(16%) rotateX(${tilt.x}deg) rotateY(${tilt.y}deg)`
-                : 'translateX(42%)',
+                ? `${isArabic ? 'translateX(-16%)' : 'translateX(16%)'} rotateX(${tilt.x}deg) rotateY(${tilt.y}deg)`
+                : isArabic ? 'translateX(-42%)' : 'translateX(42%)',
               transformStyle: 'preserve-3d',
             }}
           >

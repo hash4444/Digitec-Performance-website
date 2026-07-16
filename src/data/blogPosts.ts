@@ -20,7 +20,7 @@ export interface BlogPost {
   content: { type: 'h2' | 'h3' | 'p' | 'ul'; text?: string; items?: string[] }[];
 }
 
-export const blogCategories = ['All', 'Maintenance', 'Tuning', 'Mercedes', 'Detailing'] as const;
+export const blogCategories = ['All', 'Maintenance', 'Tuning', 'Mercedes', 'Detailing', 'Workshop Guides'] as const;
 
 export const blogPosts: BlogPost[] = [
   {

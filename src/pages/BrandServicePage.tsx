@@ -1,5 +1,6 @@
 import React from 'react';
-import { Link, useParams, Navigate } from 'react-router-dom';
+import { useParams, Navigate } from 'react-router-dom';
+import { LocalizedLink as Link } from '@/components/LocalizedLink';
 import { Phone, MessageCircle, CheckCircle2, ArrowRight, Wrench, ShieldCheck } from 'lucide-react';
 import Header from '@/components/Header';
 import { Footer } from '@/components/Footer';
@@ -25,6 +26,11 @@ import {
   pageGraph,
   SITE_URL,
 } from '@/lib/schema';
+import { useLocale } from '@/i18n/use-locale';
+
+const serviceNamesArabic: Record<string, string> = {
+  'oil-change': 'تغيير الزيت', 'brake-repair': 'إصلاح الفرامل', 'transmission-repair': 'إصلاح ناقل الحركة', 'ac-repair': 'إصلاح التكييف', 'suspension-repair': 'إصلاح التعليق', 'engine-diagnostics': 'تشخيص المحرك', 'mechanical-repair': 'الإصلاح الميكانيكي', 'steering-repair': 'إصلاح نظام التوجيه', 'battery-replacement': 'تبديل البطارية', 'electrical-repair': 'إصلاح الكهرباء', 'exhaust-repair': 'إصلاح العادم', 'fuel-system-repair': 'إصلاح نظام الوقود', 'body-repair': 'إصلاح الهيكل', 'tire-repair': 'إصلاح الإطارات',
+};
 
 interface BrandServicePageProps {
   brandSlugOverride?: string;
@@ -37,23 +43,54 @@ const BrandServicePage: React.FC<BrandServicePageProps> = ({
   serviceSlugOverride,
   canonicalPath,
 }) => {
+  const { isArabic, localizedPath } = useLocale();
   const { brandSlug: routeBrandSlug, serviceSlug: routeServiceSlug } = useParams<{ brandSlug: string; serviceSlug: string }>();
   const brandSlug = brandSlugOverride ?? routeBrandSlug;
   const serviceSlug = serviceSlugOverride ?? routeServiceSlug;
-  const combo = brandSlug && serviceSlug ? getBrandServiceCombo(brandSlug, serviceSlug) : undefined;
+  const sourceCombo = brandSlug && serviceSlug ? getBrandServiceCombo(brandSlug, serviceSlug) : undefined;
+  const combo = sourceCombo && isArabic ? (() => {
+    const serviceName = serviceNamesArabic[sourceCombo.serviceSlug] ?? 'خدمة السيارات';
+    const standardFaqs = [
+      { question: `متى تحتاج سيارة ${sourceCombo.brandName} إلى ${serviceName}؟`, answer: 'عند ظهور تحذير أو صوت أو تغير في الأداء، أو وفق موعد الصيانة الموصى به للطراز والاستخدام.' },
+      { question: 'هل يتم الفحص قبل الإصلاح؟', answer: 'نعم. نبدأ بالتشخيص ثم نوضح النتيجة وخيارات الإصلاح والتكلفة قبل بدء العمل.' },
+      { question: 'هل تستخدمون قطعاً أصلية؟', answer: 'نوفر قطع OEM أصلية أو بدائل موثوقة مطابقة للمواصفات، ونوضح الخيارات قبل التركيب.' },
+      { question: 'كيف أحجز موعداً؟', answer: 'اتصل بنا أو أرسل رسالة واتساب مع تفاصيل السيارة والخدمة المطلوبة.' },
+    ];
+    const steps = [
+      { title: 'الفحص الأولي', description: 'مراجعة الأعراض وسجل السيارة وإجراء فحص بصري ومنظم.' },
+      { title: 'التشخيص المتقدم', description: 'قراءة الأعطال والبيانات الحية واختبار المكونات المرتبطة.' },
+      { title: 'الإصلاح والمعايرة', description: 'تنفيذ العمل المتفق عليه باستخدام قطع وإجراءات مناسبة للسيارة.' },
+      { title: 'الفحص النهائي', description: 'اختبار النظام والسيارة وتوثيق النتيجة والتوصيات.' },
+    ];
+    const symptoms = ['ظهور رسالة أو ضوء تحذير', 'تغير ملحوظ في أداء السيارة', 'صوت أو اهتزاز غير معتاد', 'تأخر موعد الصيانة أو تكرار المشكلة'];
+    return {
+      ...sourceCombo,
+      serviceName,
+      serviceType: serviceName,
+      h1: `${serviceName} ${sourceCombo.brandName} في دبي`,
+      metaTitle: `${serviceName} ${sourceCombo.brandName} في دبي | ديجي-تك`,
+      metaDescription: `${serviceName} متخصص لسيارات ${sourceCombo.brandName} في دبي مع تشخيص متقدم وقطع مناسبة وتسعير واضح لدى مركز ديجي-تك.`,
+      heroCopy: `يقدم مركز ديجي-تك خدمة ${serviceName} المتخصصة لسيارات ${sourceCombo.brandName} في دبي، بدءاً من التشخيص الدقيق وحتى الإصلاح والمعايرة والاختبار النهائي.`,
+      symptoms: sourceCombo.symptoms.map((_, index) => symptoms[index % symptoms.length]),
+      processSteps: sourceCombo.processSteps.map((_, index) => steps[index % steps.length]),
+      partsCopy: `نستخدم قطع OEM أصلية أو بدائل موثوقة مطابقة لمواصفات ${sourceCombo.brandName}، مع توثيق القطع والأعمال بوضوح.`,
+      faqs: sourceCombo.faqs.map((_, index) => standardFaqs[index % standardFaqs.length]),
+      whatsAppMessage: `مرحباً ديجي-تك، أريد حجز ${serviceName} لسيارة ${sourceCombo.brandName}.`,
+    };
+  })() : sourceCombo;
   const brand = brandSlug ? getBrandBySlug(brandSlug) : undefined;
   const profile = brandSlug ? BRAND_PROFILES[brandSlug] : undefined;
 
   const url = combo
-    ? canonicalPath ? `${SITE_URL}${canonicalPath}` : `${SITE_URL}/brands/${combo.brandSlug}/${combo.serviceSlug}`
+    ? canonicalPath ? `${SITE_URL}${canonicalPath}` : `${SITE_URL}${isArabic ? '/ar' : ''}/brands/${combo.brandSlug}/${combo.serviceSlug}`
     : SITE_URL;
 
   const jsonLd = React.useMemo(() => {
     if (!combo || !brand || !profile) return undefined;
     const breadcrumb = buildBreadcrumb(url, [
-      { name: 'Home', url: `${SITE_URL}/` },
-      { name: 'Brands', url: `${SITE_URL}/services` },
-      { name: combo.brandName, url: `${SITE_URL}/brands/${combo.brandSlug}` },
+      { name: isArabic ? 'الرئيسية' : 'Home', url: `${SITE_URL}${isArabic ? '/ar' : '/'}` },
+      { name: isArabic ? 'العلامات' : 'Brands', url: `${SITE_URL}${isArabic ? '/ar' : ''}/brands` },
+      { name: combo.brandName, url: `${SITE_URL}${isArabic ? '/ar' : ''}/brands/${combo.brandSlug}` },
       { name: combo.serviceName, url },
     ]);
     const webPage = buildWebPage({
@@ -61,7 +98,7 @@ const BrandServicePage: React.FC<BrandServicePageProps> = ({
       name: combo.h1,
       description: combo.metaDescription,
       breadcrumbId: `${url}#breadcrumb`,
-      primaryImage: brand.logo,
+      primaryImage: brand.logo || undefined,
     });
     const service = buildService({
       url,
@@ -70,7 +107,7 @@ const BrandServicePage: React.FC<BrandServicePageProps> = ({
       description: combo.heroCopy,
       brand: combo.brandName,
       offers: combo.processSteps.map((s) => `${combo.brandName} ${s.title}`),
-      areaServed: ['Dubai', 'Abu Dhabi', 'Sharjah', 'United Arab Emirates'],
+      areaServed: isArabic ? ['دبي', 'أبوظبي', 'الشارقة', 'الإمارات العربية المتحدة'] : ['Dubai', 'Abu Dhabi', 'Sharjah', 'United Arab Emirates'],
       keywords: [
         `${combo.brandName} ${combo.serviceName} Dubai`,
         `${combo.brandName} service Dubai`,
@@ -80,18 +117,18 @@ const BrandServicePage: React.FC<BrandServicePageProps> = ({
     });
     const faq = buildFAQ(url, combo.faqs);
     return pageGraph([webPage, breadcrumb, service, ...(faq ? [faq] : [])]);
-  }, [combo, brand, profile, url]);
+  }, [combo, brand, isArabic, profile, url]);
 
   useSeo({
-    title: combo ? combo.metaTitle : 'Brand Service | Digi-Tec Performance Centre',
-    description: combo ? combo.metaDescription : 'Specialist brand service in Dubai at Digi-Tec Performance Centre.',
+    title: combo ? combo.metaTitle : isArabic ? 'خدمة السيارات | مركز ديجي-تك' : 'Brand Service | Digi-Tec Performance Centre',
+    description: combo ? combo.metaDescription : isArabic ? 'خدمة متخصصة للسيارات في دبي لدى مركز ديجي-تك.' : 'Specialist brand service in Dubai at Digi-Tec Performance Centre.',
     canonical: combo ? url : `${SITE_URL}/services`,
     noindex: !combo || !brand || !profile,
     jsonLd,
   });
 
   if (!combo || !brand) {
-    return <Navigate to="/services" replace />;
+    return <Navigate to={localizedPath('/services')} replace />;
   }
 
   const whatsappHref = `https://wa.me/97143402223?text=${encodeURIComponent(combo.whatsAppMessage)}`;
@@ -104,9 +141,9 @@ const BrandServicePage: React.FC<BrandServicePageProps> = ({
       {/* Breadcrumbs */}
       <nav aria-label="Breadcrumb" className="max-w-7xl mx-auto px-4 sm:px-6 pt-6 text-xs sm:text-sm text-gray-400">
         <ol className="flex flex-wrap items-center gap-2">
-          <li><Link to="/" className="hover:text-burnt-orange">Home</Link></li>
+          <li><Link to="/" className="hover:text-burnt-orange">{isArabic ? 'الرئيسية' : 'Home'}</Link></li>
           <li aria-hidden="true">/</li>
-          <li><Link to="/services" className="hover:text-burnt-orange">Brands</Link></li>
+          <li><Link to="/brands" className="hover:text-burnt-orange">{isArabic ? 'العلامات' : 'Brands'}</Link></li>
           <li aria-hidden="true">/</li>
           <li><Link to={`/brands/${combo.brandSlug}`} className="hover:text-burnt-orange">{combo.brandName}</Link></li>
           <li aria-hidden="true">/</li>
@@ -120,15 +157,19 @@ const BrandServicePage: React.FC<BrandServicePageProps> = ({
         <div className="max-w-7xl mx-auto px-4 sm:px-6 py-10 sm:py-16 lg:py-20 relative z-10">
           <div className="max-w-4xl mx-auto">
             <div className="flex items-center gap-4 mb-5 sm:mb-6">
-              <div className="w-14 h-14 sm:w-20 sm:h-20 p-2 bg-white/90 rounded-full shadow-xl flex items-center justify-center">
-                <img src={brand.logo} alt={`${combo.brandName} logo`} className="w-full h-full object-contain" />
+              <div className="w-14 h-14 sm:w-20 sm:h-20 p-2 bg-white/90 rounded-full shadow-xl flex items-center justify-center overflow-hidden">
+                {brand.logo ? (
+                  <img src={brand.logo} alt={`${combo.brandName} logo`} className="w-full h-full object-contain" />
+                ) : (
+                  <span className="text-2xl font-black text-burnt-orange">{combo.brandName.charAt(0)}</span>
+                )}
               </div>
               <span className="text-burnt-orange font-bold uppercase tracking-widest text-[11px] sm:text-sm">
-                {combo.brandName} Specialists
+                {isArabic ? `متخصصون في ${combo.brandName}` : `${combo.brandName} Specialists`}
               </span>
             </div>
             <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black mb-4 sm:mb-6 leading-tight">
-              {combo.brandName} <span className="text-burnt-orange">{combo.serviceName}</span> Dubai
+              {isArabic ? <><span className="text-burnt-orange">{combo.serviceName}</span> {combo.brandName} في دبي</> : <>{combo.brandName} <span className="text-burnt-orange">{combo.serviceName}</span> Dubai</>}
             </h1>
             <p className="text-gray-300 text-base sm:text-lg leading-relaxed mb-6 sm:mb-8">
               {combo.heroCopy}
@@ -141,14 +182,14 @@ const BrandServicePage: React.FC<BrandServicePageProps> = ({
                 className="btn-primary"
               >
                 <MessageCircle className="w-5 h-5" />
-                WhatsApp Us
+                {isArabic ? 'راسلنا عبر واتساب' : 'WhatsApp Us'}
               </a>
               <a href="tel:+97143402223" className="btn-secondary">
                 <Phone className="w-5 h-5" />
-                Call +971 4 340 2223
+                {isArabic ? 'اتصل على +971 4 340 2223' : 'Call +971 4 340 2223'}
               </a>
             </div>
-            <CtaAssurance className="mt-4" align="start" />
+            <CtaAssurance className="mt-4" align="start" text={isArabic ? 'تقييم مجاني · بلا التزام · رد خلال دقائق' : undefined} />
           </div>
         </div>
       </section>
@@ -157,7 +198,7 @@ const BrandServicePage: React.FC<BrandServicePageProps> = ({
       <section className="py-12 sm:py-16 bg-black border-t border-white/5">
         <div className="max-w-5xl mx-auto px-4 sm:px-6">
           <h2 className="text-2xl sm:text-4xl font-black mb-6 sm:mb-8">
-            When to Book <span className="text-burnt-orange">{combo.brandName} {combo.serviceName}</span>
+            {isArabic ? <>متى تحجز <span className="text-burnt-orange">{combo.serviceName} {combo.brandName}</span>؟</> : <>When to Book <span className="text-burnt-orange">{combo.brandName} {combo.serviceName}</span></>}
           </h2>
           <div className="grid sm:grid-cols-2 gap-3 sm:gap-4">
             {combo.symptoms.map((s, i) => (
@@ -174,10 +215,10 @@ const BrandServicePage: React.FC<BrandServicePageProps> = ({
       <section className="py-12 sm:py-16 bg-gradient-to-br from-charcoal/40 to-black">
         <div className="max-w-5xl mx-auto px-4 sm:px-6">
           <h2 className="text-2xl sm:text-4xl font-black mb-3">
-            {combo.brandName} Models We <span className="text-burnt-orange">{combo.serviceName}</span>
+            {isArabic ? <>طرازات {combo.brandName} التي نوفر لها <span className="text-burnt-orange">{combo.serviceName}</span></> : <>{combo.brandName} Models We <span className="text-burnt-orange">{combo.serviceName}</span></>}
           </h2>
           <p className="text-gray-400 text-sm sm:text-base mb-6 sm:mb-8">
-            Every current and recent {combo.brandName} platform is supported in our Al Quoz workshop.
+            {isArabic ? `ندعم طرازات ${combo.brandName} الحديثة والمتداولة في ورشتنا بالقوز.` : `Every current and recent ${combo.brandName} platform is supported in our Al Quoz workshop.`}
           </p>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
             {combo.models.map((m) => (
@@ -193,7 +234,7 @@ const BrandServicePage: React.FC<BrandServicePageProps> = ({
       <section className="py-12 sm:py-16 bg-black border-t border-white/5">
         <div className="max-w-5xl mx-auto px-4 sm:px-6">
           <h2 className="text-2xl sm:text-4xl font-black mb-6 sm:mb-10">
-            Our <span className="text-burnt-orange">{combo.serviceName}</span> Process
+            {isArabic ? <>خطوات <span className="text-burnt-orange">{combo.serviceName}</span></> : <>Our <span className="text-burnt-orange">{combo.serviceName}</span> Process</>}
           </h2>
           <div className="grid sm:grid-cols-2 gap-4 sm:gap-6">
             {combo.processSteps.map((step, i) => (
@@ -216,7 +257,7 @@ const BrandServicePage: React.FC<BrandServicePageProps> = ({
             <ShieldCheck className="w-8 h-8 sm:w-10 sm:h-10 text-burnt-orange flex-shrink-0" />
             <div>
               <h2 className="text-xl sm:text-3xl font-black mb-3">
-                Genuine <span className="text-burnt-orange">{combo.brandName}</span> Parts, Documented
+                {isArabic ? <>قطع <span className="text-burnt-orange">{combo.brandName}</span> موثقة وبالمواصفات المناسبة</> : <>Genuine <span className="text-burnt-orange">{combo.brandName}</span> Parts, Documented</>}
               </h2>
               <p className="text-gray-300 text-sm sm:text-base leading-relaxed">{combo.partsCopy}</p>
             </div>
@@ -228,7 +269,7 @@ const BrandServicePage: React.FC<BrandServicePageProps> = ({
       <section className="py-12 sm:py-16 bg-black border-t border-white/5">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <h2 className="text-2xl sm:text-4xl font-black text-center mb-8 sm:mb-10">
-            {combo.brandName} {combo.serviceName} <span className="text-burnt-orange">FAQs</span>
+            {combo.brandName} {combo.serviceName} <span className="text-burnt-orange">{isArabic ? 'الأسئلة الشائعة' : 'FAQs'}</span>
           </h2>
           <Accordion type="single" collapsible className="space-y-3">
             {combo.faqs.map((f, i) => (
@@ -251,7 +292,7 @@ const BrandServicePage: React.FC<BrandServicePageProps> = ({
           <div className="flex items-center gap-3 mb-6 sm:mb-8">
             <Wrench className="w-6 h-6 sm:w-8 sm:h-8 text-burnt-orange" />
             <h2 className="text-2xl sm:text-4xl font-black">
-              More <span className="text-burnt-orange">{combo.brandName}</span> Services
+              {isArabic ? <>المزيد من خدمات <span className="text-burnt-orange">{combo.brandName}</span></> : <>More <span className="text-burnt-orange">{combo.brandName}</span> Services</>}
             </h2>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 sm:gap-4">
@@ -262,9 +303,9 @@ const BrandServicePage: React.FC<BrandServicePageProps> = ({
                 className="card-premium group flex flex-col justify-between rounded-2xl p-4 sm:p-5 transition-all duration-300"
               >
                 <span className="text-off-white font-bold text-sm sm:text-base leading-tight group-hover:text-burnt-orange">
-                  {combo.brandName} {s.label}
+                  {combo.brandName} {isArabic ? serviceNamesArabic[s.serviceSlug] ?? s.label : s.label}
                 </span>
-                <ArrowRight className="w-4 h-4 text-burnt-orange mt-3" />
+                <ArrowRight className={`w-4 h-4 text-burnt-orange mt-3 ${isArabic ? 'rotate-180' : ''}`} />
               </Link>
             ))}
             <Link
@@ -272,9 +313,9 @@ const BrandServicePage: React.FC<BrandServicePageProps> = ({
               className="group flex flex-col justify-between bg-burnt-orange/10 border border-burnt-orange/30 hover:bg-burnt-orange/20 rounded-2xl p-4 sm:p-5 transition-all duration-300"
             >
               <span className="text-off-white font-bold text-sm sm:text-base leading-tight">
-                All {combo.brandName} Services
+                {isArabic ? `جميع خدمات ${combo.brandName}` : `All ${combo.brandName} Services`}
               </span>
-              <ArrowRight className="w-4 h-4 text-burnt-orange mt-3" />
+              <ArrowRight className={`w-4 h-4 text-burnt-orange mt-3 ${isArabic ? 'rotate-180' : ''}`} />
             </Link>
           </div>
         </div>

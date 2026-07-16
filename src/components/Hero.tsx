@@ -2,8 +2,12 @@
 import React from 'react';
 import { ArrowDown } from 'lucide-react';
 import { CtaAssurance } from '@/components/TrustBar';
+import { useLocale } from '@/i18n/use-locale';
+import { arHome } from '@/i18n/ar-home';
 
 export const Hero = () => {
+  const { isArabic } = useLocale();
+  const copy = isArabic ? arHome.hero : null;
   return (
     <section className="relative min-h-[88vh] sm:min-h-screen flex items-center justify-center overflow-hidden px-4 sm:px-6">
       {/* Background image */}
@@ -21,20 +25,20 @@ export const Hero = () => {
       <div className="absolute bottom-0 inset-x-0 h-24 sm:h-40 bg-gradient-to-b from-transparent to-black"></div>
 
       <div className="relative z-10 text-center max-w-6xl mx-auto">
-        <span className="eyebrow mb-4 sm:mb-8">Dubai's Elite Performance Workshop</span>
+        <span className="eyebrow mb-4 sm:mb-8">{copy?.eyebrow ?? "Dubai's Elite Performance Workshop"}</span>
 
         <h1 className="text-[2rem] sm:text-5xl md:text-6xl lg:text-8xl font-black mb-3 sm:mb-8 leading-tight">
           <span className="text-burnt-orange">D</span>IGI-TEC
           <br />
-          Performance Center
+          {copy?.titleLine ?? 'Performance Center'}
         </h1>
 
         <h2 className="text-base sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-3 sm:mb-6 text-burnt-orange tracking-tight">
-          Where Performance Meets Precision.
+          {copy?.subtitle ?? 'Where Performance Meets Precision.'}
         </h2>
 
         <p className="text-sm sm:text-lg md:text-xl text-gray-300 mb-6 sm:mb-12 max-w-3xl mx-auto leading-snug sm:leading-relaxed px-4">
-          Digitec Performance Center is Dubai's elite automotive workshop, built for drivers who demand more. From diagnostics to full custom tuning, we bring cutting-edge service to the world's most powerful machines.
+          {copy?.description ?? "Digitec Performance Center is Dubai's elite automotive workshop, built for drivers who demand more. From diagnostics to full custom tuning, we bring cutting-edge service to the world's most powerful machines."}
         </p>
 
         <div className="flex flex-col sm:flex-row gap-3 sm:gap-5 justify-center items-center px-4">
@@ -44,7 +48,7 @@ export const Hero = () => {
             rel="noopener noreferrer"
             className="btn-primary w-full sm:w-auto"
           >
-            Book Appointment
+            {copy?.book ?? 'Book Appointment'}
           </a>
 
           <a
@@ -53,11 +57,11 @@ export const Hero = () => {
             rel="noopener noreferrer"
             className="btn-secondary w-full sm:w-auto"
           >
-            Get a Free Diagnosis
+            {copy?.diagnosis ?? 'Get a Free Diagnosis'}
           </a>
         </div>
 
-        <CtaAssurance className="mt-4 sm:mt-5" />
+        <CtaAssurance className="mt-4 sm:mt-5" text={copy?.assurance} />
 
         <div className="mt-8 sm:mt-16 animate-bounce">
           <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-full border border-white/15 bg-white/5 backdrop-blur-sm flex items-center justify-center mx-auto">

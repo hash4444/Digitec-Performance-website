@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import { MessageCircle } from 'lucide-react';
 import { Reveal } from '@/components/motion/Reveal';
+import { useLocale } from '@/i18n/use-locale';
+import { arFaqCategories, arHome } from '@/i18n/ar-home';
 
 export type FAQItem = { question: string; answer: string };
 export type FAQCategory = { id: string; label: string; faqs: FAQItem[] };
@@ -136,14 +138,15 @@ export const faqCategories: FAQCategory[] = [
 ];
 
 // Backwards-compatible local alias used below.
-const categories = faqCategories;
-
 /** Flat list of every FAQ across all tabs — used by page JSON-LD. */
 export const allFaqs: FAQItem[] = faqCategories.flatMap((c) => c.faqs);
 
 export const FAQ = () => {
+  const { isArabic } = useLocale();
+  const categories: readonly FAQCategory[] = isArabic ? arFaqCategories : faqCategories;
   const [activeCategory, setActiveCategory] = useState<string>(categories[0].id);
   const current = categories.find((c) => c.id === activeCategory) ?? categories[0];
+  const copy = isArabic ? arHome.faq : null;
 
   return (
     <section className="py-10 sm:py-20 bg-black text-white relative overflow-hidden">
@@ -152,12 +155,12 @@ export const FAQ = () => {
       <div className="container mx-auto px-4 sm:px-6 relative z-10">
         {/* Section Header */}
         <Reveal className="text-center mb-6 sm:mb-12">
-          <span className="eyebrow mb-3 sm:mb-5">Answers</span>
+          <span className="eyebrow mb-3 sm:mb-5">{copy?.eyebrow ?? 'Answers'}</span>
           <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold mb-3 sm:mb-4 text-white">
-            Frequently Asked Questions
+            {copy?.title ?? 'Frequently Asked Questions'}
           </h2>
           <p className="text-off-white/60 mt-3 sm:mt-6 max-w-2xl mx-auto text-sm sm:text-base leading-snug sm:leading-relaxed px-2">
-            Browse by topic to find answers about our services, expertise, and process.
+            {copy?.description ?? 'Browse by topic to find answers about our services, expertise, and process.'}
           </p>
         </Reveal>
 
@@ -202,7 +205,7 @@ export const FAQ = () => {
         {/* CTA Section */}
         <div className="text-center space-y-4 sm:space-y-6">
           <h3 className="text-lg sm:text-2xl font-bold text-white mb-3 sm:mb-6">
-            Still have questions?
+            {copy?.still ?? 'Still have questions?'}
           </h3>
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center">
             <a
@@ -212,7 +215,7 @@ export const FAQ = () => {
               className="btn-primary"
             >
               <MessageCircle className="w-4 h-4 sm:w-5 sm:h-5" />
-              Chat with us now
+              {copy?.chat ?? 'Chat with us now'}
             </a>
           </div>
         </div>

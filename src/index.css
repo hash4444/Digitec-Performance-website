@@ -1,5 +1,5 @@
 /* Import Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Tajawal:wght@400;500;700;800;900&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -99,6 +99,33 @@
     font-feature-settings: 'cv11', 'ss01';
     font-variation-settings: 'opsz' 32;
     scroll-behavior: smooth;
+  }
+
+  html[lang='ar'] body {
+    font-family: 'Tajawal', 'Segoe UI', Tahoma, sans-serif;
+    font-feature-settings: normal;
+  }
+
+  html[lang='ar'] h1,
+  html[lang='ar'] h2,
+  html[lang='ar'] h3,
+  html[lang='ar'] h4,
+  html[lang='ar'] h5,
+  html[lang='ar'] h6 {
+    letter-spacing: 0;
+  }
+
+  html[dir='rtl'] .text-left {
+    text-align: right;
+  }
+
+  html[dir='rtl'] .eyebrow {
+    letter-spacing: 0.08em;
+  }
+
+  html[dir='rtl'] .btn-primary,
+  html[dir='rtl'] .btn-secondary {
+    letter-spacing: 0.04em;
   }
 
   /* Premium typography */

@@ -4,6 +4,8 @@ import { tuningCars, stageLabels, type Stage, type TuningCar } from '@/data/tuni
 import { useAnimatedCounter } from '@/hooks/useAnimatedCounter';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend } from 'recharts';
 import { Zap, Gauge, Timer, Wrench, Clock, DollarSign, Crown, ChevronLeft, ChevronRight } from 'lucide-react';
+import { useLocale } from '@/i18n/use-locale';
+import { arTuning, arabicStageLabels, localizeDuration, localizeTuningMod } from '@/i18n/ar-tuning';
 
 // ─── Animated Stat ───
 function AnimatedStat({ label, value, unit, icon: Icon, gain }: {
@@ -28,8 +30,8 @@ function AnimatedStat({ label, value, unit, icon: Icon, gain }: {
 }
 
 // ─── Car Selector ───
-function CarSelector({ cars, selectedIndex, onSelect }: {
-  cars: TuningCar[]; selectedIndex: number; onSelect: (i: number) => void;
+function CarSelector({ cars, selectedIndex, onSelect, isArabic }: {
+  cars: TuningCar[]; selectedIndex: number; onSelect: (i: number) => void; isArabic: boolean;
 }) {
   const scrollRef = useRef<HTMLDivElement>(null);
   const [isDragging, setIsDragging] = useState(false);
@@ -73,10 +75,10 @@ function CarSelector({ cars, selectedIndex, onSelect }: {
 
   return (
     <div className="relative">
-      <button onClick={prev} className="absolute left-1 md:left-4 top-1/2 -translate-y-1/2 z-20 w-8 h-8 md:w-10 md:h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white/60 hover:text-burnt-orange hover:border-burnt-orange/40 transition-all">
+      <button aria-label={isArabic ? arTuning.configurator.previous : 'Previous car'} onClick={prev} className="absolute left-1 md:left-4 top-1/2 -translate-y-1/2 z-20 w-8 h-8 md:w-10 md:h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white/60 hover:text-burnt-orange hover:border-burnt-orange/40 transition-all">
         <ChevronLeft className="w-4 h-4 md:w-5 md:h-5" />
       </button>
-      <button onClick={next} className="absolute right-1 md:right-4 top-1/2 -translate-y-1/2 z-20 w-8 h-8 md:w-10 md:h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white/60 hover:text-burnt-orange hover:border-burnt-orange/40 transition-all">
+      <button aria-label={isArabic ? arTuning.configurator.next : 'Next car'} onClick={next} className="absolute right-1 md:right-4 top-1/2 -translate-y-1/2 z-20 w-8 h-8 md:w-10 md:h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white/60 hover:text-burnt-orange hover:border-burnt-orange/40 transition-all">
         <ChevronRight className="w-4 h-4 md:w-5 md:h-5" />
       </button>
 
@@ -136,6 +138,7 @@ function CarSelector({ cars, selectedIndex, onSelect }: {
         {cars.map((_, i) => (
           <button
             key={i}
+            aria-label={isArabic ? `اختر السيارة رقم ${i + 1}` : `Select car ${i + 1}`}
             onClick={() => onSelect(i)}
             className={`w-1.5 h-1.5 md:w-2 md:h-2 rounded-full transition-all duration-300 ${
               i === selectedIndex ? 'bg-burnt-orange w-4 md:w-6' : 'bg-white/20 hover:bg-white/40'
@@ -148,7 +151,7 @@ function CarSelector({ cars, selectedIndex, onSelect }: {
 }
 
 // ─── Stage Selector ───
-function StageSelector({ stages, active, onChange }: { stages: Stage[]; active: Stage; onChange: (s: Stage) => void }) {
+function StageSelector({ stages, active, onChange, isArabic }: { stages: Stage[]; active: Stage; onChange: (s: Stage) => void; isArabic: boolean }) {
   return (
     <div className="flex items-center justify-center gap-1 md:gap-2 p-1.5 bg-white/[0.03] rounded-2xl border border-white/[0.06] backdrop-blur-sm mx-4 md:mx-auto md:w-fit flex-wrap">
       {stages.map((stage) => {
@@ -167,7 +170,7 @@ function StageSelector({ stages, active, onChange }: { stages: Stage[]; active: 
             }`}
           >
             {isVip && <Crown className="w-3 h-3 inline-block mr-1 -mt-0.5" />}
-            {stageLabels[stage]}
+            {isArabic ? arabicStageLabels[stage] : stageLabels[stage]}
           </button>
         );
       })}
@@ -216,6 +219,7 @@ function PerformanceGraph({ car, stage }: { car: TuningCar; stage: Stage }) {
 
 // ─── Main Configurator ───
 export default function TuningConfigurator() {
+  const { isArabic } = useLocale();
   const [carIndex, setCarIndex] = useState(0);
   const [stage, setStage] = useState<Stage>('stage1');
 
@@ -251,19 +255,19 @@ export default function TuningConfigurator() {
 
       <div className="relative z-10 max-w-7xl mx-auto px-4">
         <div className="text-center mb-12">
-          <p className="text-burnt-orange text-xs uppercase tracking-[0.3em] font-semibold mb-2 md:mb-3">Performance Configurator</p>
+          <p className="text-burnt-orange text-xs uppercase tracking-[0.3em] font-semibold mb-2 md:mb-3">{isArabic ? arTuning.configurator.eyebrow : 'Performance Configurator'}</p>
           <h2 className="text-2xl sm:text-3xl md:text-5xl font-black text-off-white">
-            Build Your <span className="text-burnt-orange">Power</span>
+            {isArabic ? arTuning.configurator.headingPrefix : 'Build Your'} <span className="text-burnt-orange">{isArabic ? arTuning.configurator.headingAccent : 'Power'}</span>
           </h2>
           <p className="text-white/40 mt-2 md:mt-3 max-w-lg mx-auto text-xs sm:text-sm md:text-base px-4">
-            Select your vehicle and configure your performance stage
+            {isArabic ? arTuning.configurator.description : 'Select your vehicle and configure your performance stage'}
           </p>
         </div>
 
-        <CarSelector cars={tuningCars} selectedIndex={carIndex} onSelect={setCarIndex} />
+        <CarSelector cars={tuningCars} selectedIndex={carIndex} onSelect={setCarIndex} isArabic={isArabic} />
 
         <div className="mt-10 mb-10">
-          <StageSelector stages={availableStages} active={stage} onChange={setStage} />
+          <StageSelector stages={availableStages} active={stage} onChange={setStage} isArabic={isArabic} />
         </div>
 
         <motion.div
@@ -273,7 +277,7 @@ export default function TuningConfigurator() {
           transition={{ duration: 0.4 }}
           className="flex justify-center mb-12"
         >
-          <AnimatedStat label="Horsepower" value={stageInfo.spec.hp} unit="HP" icon={Zap} gain={hpGain} />
+          <AnimatedStat label={isArabic ? arTuning.configurator.horsepower : 'Horsepower'} value={stageInfo.spec.hp} unit="HP" icon={Zap} gain={hpGain} />
         </motion.div>
 
         <div className="relative flex justify-center items-center mb-12">
@@ -311,7 +315,9 @@ export default function TuningConfigurator() {
           >
             <h3 className="text-lg font-bold text-off-white mb-4 flex items-center gap-2">
               <Wrench className="w-4 h-4 text-burnt-orange" />
-              {stage === 'stock' ? 'Factory Specifications' : `${stageLabels[stage]} Package`}
+              {stage === 'stock'
+                ? isArabic ? arTuning.configurator.factory : 'Factory Specifications'
+                : isArabic ? `${arTuning.configurator.package} ${arabicStageLabels[stage]}` : `${stageLabels[stage]} Package`}
             </h3>
             <ul className="space-y-3 mb-6">
               {stageInfo.mods.map((mod, i) => (
@@ -323,7 +329,7 @@ export default function TuningConfigurator() {
                   className="flex items-start gap-3 text-sm text-white/70"
                 >
                   <div className="w-1.5 h-1.5 rounded-full bg-burnt-orange flex-shrink-0 mt-1.5" />
-                  {mod}
+                  {isArabic ? localizeTuningMod(mod, i) : mod}
                 </motion.li>
               ))}
             </ul>
@@ -335,7 +341,7 @@ export default function TuningConfigurator() {
                 </div>
                 <div className="flex items-center gap-2 text-sm text-white/50">
                   <Clock className="w-4 h-4 text-burnt-orange" />
-                  <span className="text-off-white font-semibold">{stageInfo.time}</span>
+                  <span className="text-off-white font-semibold">{isArabic ? localizeDuration(stageInfo.time) : stageInfo.time}</span>
                 </div>
               </div>
             )}
@@ -354,15 +360,13 @@ export default function TuningConfigurator() {
               <div className="absolute top-0 right-0 w-64 h-64 bg-burnt-orange/[0.06] rounded-full blur-[80px] -translate-y-1/2 translate-x-1/2" />
               <Crown className="w-10 h-10 text-burnt-orange mx-auto mb-4" />
               <h3 className="text-2xl md:text-3xl font-black text-off-white mb-3">
-                VIP Performance Package
+                {isArabic ? arTuning.configurator.vipTitle : 'VIP Performance Package'}
               </h3>
               <p className="text-white/50 max-w-xl mx-auto mb-6 text-sm md:text-base">
-                Custom-built for maximum performance. Includes bespoke ECU calibration, 
-                professional dyno testing, advanced hardware upgrades, and a dedicated 
-                performance engineer assigned to your build.
+                {isArabic ? arTuning.configurator.vipDescription : 'Custom-built for maximum performance. Includes bespoke ECU calibration, professional dyno testing, advanced hardware upgrades, and a dedicated performance engineer assigned to your build.'}
               </p>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-lg mx-auto">
-                {['Custom Dyno Tuning', 'Premium Components'].map((item) => (
+                {(isArabic ? arTuning.configurator.vipItems : ['Custom Dyno Tuning', 'Premium Components']).map((item) => (
                   <div key={item} className="flex items-center justify-center gap-2 text-sm text-burnt-orange font-medium">
                     <div className="w-1 h-1 rounded-full bg-burnt-orange" />
                     {item}
@@ -370,7 +374,7 @@ export default function TuningConfigurator() {
                 ))}
               </div>
               <button className="mt-8 px-8 py-3 bg-gradient-to-r from-burnt-orange to-yellow-500 text-black font-bold rounded-xl hover:shadow-lg hover:shadow-burnt-orange/30 transition-all duration-300 hover:scale-105">
-                Request VIP Consultation
+                {isArabic ? arTuning.configurator.vipCta : 'Request VIP Consultation'}
               </button>
             </motion.div>
           )}

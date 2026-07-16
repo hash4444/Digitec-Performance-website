@@ -1,5 +1,6 @@
 import React from 'react';
-import { Link, useLocation, Navigate } from 'react-router-dom';
+import { useLocation, Navigate } from 'react-router-dom';
+import { LocalizedLink as Link } from '@/components/LocalizedLink';
 import { Phone, MessageCircle, CheckCircle2, MapPin, ArrowRight } from 'lucide-react';
 import Header from '@/components/Header';
 import { Footer } from '@/components/Footer';
@@ -19,17 +20,21 @@ import {
   pageGraph,
   SITE_URL,
 } from '@/lib/schema';
+import { useLocale } from '@/i18n/use-locale';
+import { localizeBestWorkshopPageToArabic } from '@/i18n/ar-best-workshop';
 
 const BestWorkshopPage: React.FC = () => {
+  const { isArabic, localizedPath } = useLocale();
   const { pathname } = useLocation();
-  const slug = pathname.replace(/^\/+/, '').split('/')[0];
-  const page = slug ? getBestWorkshopPage(slug) : undefined;
-  const url = `${SITE_URL}/${slug}`;
+  const slug = pathname.replace(/^\/ar(?=\/|$)/, '').replace(/^\/+/, '').split('/')[0];
+  const sourcePage = slug ? getBestWorkshopPage(slug) : undefined;
+  const page = sourcePage && isArabic ? localizeBestWorkshopPageToArabic(sourcePage) : sourcePage;
+  const url = `${SITE_URL}${isArabic ? '/ar' : ''}/${slug}`;
 
   const jsonLd = React.useMemo(() => {
     if (!page) return undefined;
     const breadcrumb = buildBreadcrumb(url, [
-      { name: 'Home', url: `${SITE_URL}/` },
+      { name: isArabic ? 'الرئيسية' : 'Home', url: `${SITE_URL}${isArabic ? '/ar' : '/'}` },
       { name: page.h1, url },
     ]);
     const webPage = buildWebPage({
@@ -41,32 +46,34 @@ const BestWorkshopPage: React.FC = () => {
     });
     const faq = buildFAQ(url, page.faqs.map((f) => ({ question: f.q, answer: f.a })));
     return pageGraph([webPage, breadcrumb, ...(faq ? [faq] : [])]);
-  }, [page, url]);
+  }, [isArabic, page, url]);
 
   useSeo({
-    title: page ? page.metaTitle : 'Best Car Workshop Dubai | Digi-Tec',
-    description: page ? page.metaDescription : 'Best independent car workshop in Dubai.',
+    title: page ? page.metaTitle : isArabic ? 'أفضل ورشة سيارات في دبي | ديجي-تك' : 'Best Car Workshop Dubai | Digi-Tec',
+    description: page ? page.metaDescription : isArabic ? 'ورشة سيارات مستقلة ومتخصصة في دبي.' : 'Best independent car workshop in Dubai.',
     canonical: page ? url : `${SITE_URL}/`,
     noindex: !page,
     jsonLd,
   });
 
-  if (!page) return <Navigate to="/" replace />;
+  if (!page) return <Navigate to={localizedPath('/')} replace />;
 
   const whatsappHref = `https://wa.me/97143402223?text=${encodeURIComponent(
-    `Hi Digi-Tec, I'm looking for the best ${page.brand ?? 'car'} workshop in Dubai. Can you help?`,
+    isArabic ? `مرحباً ديجي-تك، أبحث عن ورشة متخصصة في ${page.brand ?? 'السيارات'} بدبي. هل يمكنكم مساعدتي؟` : `Hi Digi-Tec, I'm looking for the best ${page.brand ?? 'car'} workshop in Dubai. Can you help?`,
   )}`;
 
-  const otherPages = bestWorkshopPages.filter((p) => p.slug !== page.slug);
+  const otherPages = bestWorkshopPages
+    .filter((p) => p.slug !== page.slug)
+    .map((item) => (isArabic ? localizeBestWorkshopPageToArabic(item) : item));
 
   return (
     <div className="min-h-screen bg-black text-off-white">
       <Header />
 
       {/* Breadcrumbs */}
-      <nav aria-label="Breadcrumb" className="max-w-7xl mx-auto px-4 sm:px-6 pt-6 text-xs sm:text-sm text-gray-400">
+      <nav aria-label={isArabic ? 'مسار التنقل' : 'Breadcrumb'} className="max-w-7xl mx-auto px-4 sm:px-6 pt-6 text-xs sm:text-sm text-gray-400">
         <ol className="flex flex-wrap items-center gap-2">
-          <li><Link to="/" className="hover:text-burnt-orange">Home</Link></li>
+          <li><Link to="/" className="hover:text-burnt-orange">{isArabic ? 'الرئيسية' : 'Home'}</Link></li>
           <li aria-hidden="true">/</li>
           <li className="text-off-white font-semibold">{page.h1}</li>
         </ol>
@@ -79,10 +86,10 @@ const BestWorkshopPage: React.FC = () => {
           {page.brandLogo && (
             <div className="flex items-center gap-4 mb-6">
               <div className="w-14 h-14 sm:w-20 sm:h-20 p-2 bg-white/90 rounded-full shadow-xl flex items-center justify-center">
-                <img src={page.brandLogo} alt={`${page.brand} logo`} className="w-full h-full object-contain" />
+                <img src={page.brandLogo} alt={isArabic ? `شعار ${page.brand}` : `${page.brand} logo`} className="w-full h-full object-contain" />
               </div>
               <span className="text-burnt-orange font-bold uppercase tracking-widest text-[11px] sm:text-sm">
-                {page.brand} Specialists
+                {isArabic ? `متخصصون في ${page.brand}` : `${page.brand} Specialists`}
               </span>
             </div>
           )}
@@ -96,7 +103,7 @@ const BestWorkshopPage: React.FC = () => {
           </p>
 
           <div className="flex flex-wrap items-center gap-4 sm:gap-6 mb-6 sm:mb-8 text-sm sm:text-base text-gray-300">
-            <span className="inline-flex items-center gap-2"><MapPin className="w-4 h-4 text-burnt-orange" /> Al Quoz, Dubai</span>
+            <span className="inline-flex items-center gap-2"><MapPin className="w-4 h-4 text-burnt-orange" /> {isArabic ? 'القوز، دبي' : 'Al Quoz, Dubai'}</span>
           </div>
 
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
@@ -107,11 +114,11 @@ const BestWorkshopPage: React.FC = () => {
               className="btn-primary"
             >
               <MessageCircle className="w-5 h-5" />
-              WhatsApp Us
+              {isArabic ? 'تواصل معنا عبر واتساب' : 'WhatsApp Us'}
             </a>
             <a href="tel:+97143402223" className="btn-secondary">
               <Phone className="w-5 h-5" />
-              Call +971 4 340 2223
+              {isArabic ? 'اتصل على ‎+971 4 340 2223' : 'Call +971 4 340 2223'}
             </a>
           </div>
           <CtaAssurance className="mt-4" align="start" />
@@ -122,7 +129,7 @@ const BestWorkshopPage: React.FC = () => {
       <section className="py-12 sm:py-16 bg-black border-t border-white/5">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <h2 className="text-2xl sm:text-4xl font-black mb-6 sm:mb-8">
-            Why Digi-Tec Is <span className="text-burnt-orange">Recommended</span>
+            {isArabic ? <>لماذا يوصى بـ <span className="text-burnt-orange">ديجي-تك؟</span></> : <>Why Digi-Tec Is <span className="text-burnt-orange">Recommended</span></>}
           </h2>
           <ul className="grid sm:grid-cols-2 gap-3 sm:gap-4">
             {page.whyList.map((item, i) => (
@@ -139,16 +146,16 @@ const BestWorkshopPage: React.FC = () => {
       <section className="py-12 sm:py-16 bg-gradient-to-br from-charcoal/40 to-black border-t border-white/5">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <h2 className="text-2xl sm:text-4xl font-black mb-3">
-            What to Look for in the <span className="text-burnt-orange">Best {page.brandKeyword ?? 'Car'} Workshop</span>
+            {isArabic ? <>ما الذي تبحث عنه في <span className="text-burnt-orange">أفضل ورشة {page.brandKeyword ?? 'سيارات'}</span></> : <>What to Look for in the <span className="text-burnt-orange">Best {page.brandKeyword ?? 'Car'} Workshop</span></>}
           </h2>
           <p className="text-gray-400 text-sm sm:text-base mb-6 sm:mb-8">
-            The six criteria that separate a dealer-quality workshop from the rest, and how Digi-Tec measures up.
+            {isArabic ? 'معايير تميز الورشة الاحترافية ذات الجودة العالية، وكيف تطبقها ديجي-تك.' : 'The six criteria that separate a dealer-quality workshop from the rest, and how Digi-Tec measures up.'}
           </p>
           <div className="overflow-hidden rounded-2xl border border-white/10">
-            <table className="w-full text-left">
+            <table className={`w-full ${isArabic ? 'text-right' : 'text-left'}`}>
               <thead className="bg-charcoal/60 text-off-white text-sm sm:text-base">
                 <tr>
-                  <th className="px-4 sm:px-6 py-3 sm:py-4 font-bold">Criterion</th>
+                  <th className="px-4 sm:px-6 py-3 sm:py-4 font-bold">{isArabic ? 'المعيار' : 'Criterion'}</th>
                   <th className="px-4 sm:px-6 py-3 sm:py-4 font-bold">Digi-Tec</th>
                 </tr>
               </thead>
@@ -169,12 +176,12 @@ const BestWorkshopPage: React.FC = () => {
       <section className="py-12 sm:py-16 bg-black border-t border-white/5">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <h2 className="text-2xl sm:text-4xl font-black text-center mb-8 sm:mb-10">
-            {page.brandKeyword ?? 'Workshop'} in Dubai <span className="text-burnt-orange">FAQs</span>
+            {isArabic ? <>الأسئلة الشائعة عن ورشة <span className="text-burnt-orange">{page.brandKeyword ?? 'السيارات'} في دبي</span></> : <>{page.brandKeyword ?? 'Workshop'} in Dubai <span className="text-burnt-orange">FAQs</span></>}
           </h2>
           <Accordion type="single" collapsible className="space-y-3">
             {page.faqs.map((f, i) => (
               <AccordionItem key={i} value={`q-${i}`} className="bg-white/[0.03] border border-white/10 rounded-2xl px-5 sm:px-6 data-[state=open]:border-burnt-orange/40">
-                <AccordionTrigger className="text-left text-off-white font-semibold text-base sm:text-lg hover:no-underline py-5">
+                <AccordionTrigger className={`${isArabic ? 'text-right' : 'text-left'} text-off-white font-semibold text-base sm:text-lg hover:no-underline py-5`}>
                   {f.q}
                 </AccordionTrigger>
                 <AccordionContent className="text-gray-300 text-sm sm:text-base leading-relaxed pb-5">
@@ -190,7 +197,7 @@ const BestWorkshopPage: React.FC = () => {
       <section className="py-12 sm:py-16 bg-gradient-to-br from-charcoal/40 to-black border-t border-white/5">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <h2 className="text-2xl sm:text-4xl font-black mb-6 sm:mb-8">
-            Best Workshops by <span className="text-burnt-orange">Brand</span>
+            {isArabic ? <>أفضل الورش حسب <span className="text-burnt-orange">العلامة</span></> : <>Best Workshops by <span className="text-burnt-orange">Brand</span></>}
           </h2>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4">
             {otherPages.map((p) => (
@@ -202,7 +209,7 @@ const BestWorkshopPage: React.FC = () => {
                 <span className="text-off-white font-bold text-sm sm:text-base leading-tight group-hover:text-burnt-orange">
                   {p.h1}
                 </span>
-                <ArrowRight className="w-4 h-4 text-burnt-orange mt-3" />
+                <ArrowRight className={`w-4 h-4 text-burnt-orange mt-3 ${isArabic ? 'rotate-180' : ''}`} />
               </Link>
             ))}
           </div>

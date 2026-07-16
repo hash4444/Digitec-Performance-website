@@ -1,7 +1,9 @@
-import { useLocation, Link, Navigate } from "react-router-dom";
+import { useLocation, Navigate } from "react-router-dom";
+import { LocalizedLink as Link } from '@/components/LocalizedLink';
 import { useEffect, useMemo } from "react";
 import { useSeo } from "@/hooks/use-seo";
 import { services } from "@/data/services";
+import { useLocale } from "@/i18n/use-locale";
 
 /**
  * Smart 404: before showing a not-found UI, try to resolve the requested path
@@ -10,12 +12,13 @@ import { services } from "@/data/services";
  * soft-404s and preserving link equity by redirecting to the closest live page.
  */
 const NotFound = () => {
+  const { isArabic, localizedPath } = useLocale();
   const location = useLocation();
 
   // Mark 404s as noindex so search engines don't index them.
   useSeo({
-    title: "Page Not Found | DIGI-TEC Performance Center",
-    description: "The page you are looking for does not exist. Browse our services or contact Digitec Performance Center in Dubai.",
+    title: isArabic ? "الصفحة غير موجودة | مركز ديجي-تك بيرفورمانس" : "Page Not Found | DIGI-TEC Performance Center",
+    description: isArabic ? "الصفحة التي تبحث عنها غير موجودة. تصفح خدماتنا أو تواصل مع مركز ديجي-تك بيرفورمانس في دبي." : "The page you are looking for does not exist. Browse our services or contact Digitec Performance Center in Dubai.",
     noindex: true,
   });
 
@@ -53,23 +56,23 @@ const NotFound = () => {
   }, [location.pathname]);
 
   if (smartTarget) {
-    return <Navigate to={smartTarget} replace />;
+    return <Navigate to={localizedPath(smartTarget)} replace />;
   }
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-black text-off-white px-6">
       <div className="text-center max-w-md">
         <h1 className="text-6xl font-black mb-4 text-burnt-orange">404</h1>
-        <p className="text-xl mb-6">Page not found.</p>
+        <p className="text-xl mb-6">{isArabic ? 'الصفحة غير موجودة.' : 'Page not found.'}</p>
         <p className="text-white/60 mb-8 text-sm">
-          The page you requested does not exist. Try our services or head back home.
+          {isArabic ? 'الصفحة التي طلبتها غير موجودة. يمكنك تصفح خدماتنا أو العودة إلى الصفحة الرئيسية.' : 'The page you requested does not exist. Try our services or head back home.'}
         </p>
         <div className="flex gap-3 justify-center">
           <Link to="/" className="btn-primary">
-            Home
+            {isArabic ? 'الرئيسية' : 'Home'}
           </Link>
           <Link to="/services" className="btn-secondary">
-            Services
+            {isArabic ? 'الخدمات' : 'Services'}
           </Link>
         </div>
       </div>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { useParams, Link, Navigate } from 'react-router-dom';
+import { useParams, Navigate } from 'react-router-dom';
 import { useSeo } from '@/hooks/use-seo';
 import Header from '@/components/Header';
 import { Footer } from '@/components/Footer';
@@ -16,6 +16,9 @@ import {
   detectBrand,
   pageGraph,
 } from '@/lib/schema';
+import { LocalizedLink as Link } from '@/components/LocalizedLink';
+import { useLocale } from '@/i18n/use-locale';
+import { localizeServiceToArabic } from '@/i18n/ar-services';
 
 // Map every legacy slug directly to its new slug (single-hop redirects, no chains).
 // Also handles previously-indexed Google URLs.
@@ -54,22 +57,25 @@ interface ServicePageProps {
 }
 
 const ServicePage: React.FC<ServicePageProps> = ({ slugOverride, canonicalPath, brandPath }) => {
+  const { isArabic, localizedPath } = useLocale();
   const { slug: routeSlug } = useParams<{ slug: string }>();
   const slug = slugOverride ?? routeSlug;
 
   const externalRedirect = slug ? EXTERNAL_REDIRECTS[slug] : undefined;
   const newSlug = slug ? OLD_TO_NEW_SLUG[slug] : undefined;
-  const service = slug && !newSlug && !externalRedirect ? getServiceBySlug(slug) : undefined;
+  const sourceService = slug && !newSlug && !externalRedirect ? getServiceBySlug(slug) : undefined;
+  const service = sourceService && isArabic ? localizeServiceToArabic(sourceService) : sourceService;
 
   // Build the per-page JSON-LD @graph. Sitewide Organization / Business / WebSite
   // are declared in index.html; here we only add page-scoped entities and reference
   // the sitewide ones by @id.
   const serviceJsonLd = React.useMemo(() => {
     if (!service) return undefined;
-    const url = `https://digitecme.com${canonicalPath ?? `/services/${service.slug}`}`;
+    const path = canonicalPath ?? `/services/${service.slug}`;
+    const url = `https://digitecme.com${isArabic ? `/ar${path}` : path}`;
     const breadcrumb = buildBreadcrumb(url, [
-      { name: 'Home', url: 'https://digitecme.com/' },
-      { name: brandPath ? 'Mercedes-Benz' : 'Services', url: `https://digitecme.com${brandPath ?? '/services'}` },
+      { name: isArabic ? 'الرئيسية' : 'Home', url: isArabic ? 'https://digitecme.com/ar' : 'https://digitecme.com/' },
+      { name: brandPath ? 'Mercedes-Benz' : isArabic ? 'الخدمات' : 'Services', url: `https://digitecme.com${isArabic ? '/ar' : ''}${brandPath ?? '/services'}` },
       { name: service.title, url },
     ]);
     const webPage = buildWebPage({
@@ -92,7 +98,9 @@ const ServicePage: React.FC<ServicePageProps> = ({ slugOverride, canonicalPath, 
       brand,
       ...(isMercedesRepair
         ? {
-            offers: [
+            offers: isArabic ? [
+              'إصلاح محرك مرسيدس', 'إصلاح ناقل حركة مرسيدس', 'برمجة مرسيدس', 'إصلاح تعليق مرسيدس', 'إصلاح فرامل مرسيدس', 'إصلاح تكييف مرسيدس', 'تغيير زيت مرسيدس',
+            ] : [
               'Mercedes Engine Repair',
               'Mercedes Transmission Repair',
               'Mercedes ECU Programming',
@@ -119,7 +127,7 @@ const ServicePage: React.FC<ServicePageProps> = ({ slugOverride, canonicalPath, 
     });
     const faq = service.faqs && service.faqs.length > 0 ? buildFAQ(url, service.faqs) : null;
     return pageGraph([webPage, breadcrumb, svc, ...(faq ? [faq] : [])]);
-  }, [service, canonicalPath, brandPath]);
+  }, [service, canonicalPath, brandPath, isArabic]);
 
   useSeo({
     title: service?.metaTitle || (service ? `${service.seoKeyword} | DIGI-TEC Performance Center` : 'Service Not Found | DIGI-TEC'),
@@ -130,11 +138,11 @@ const ServicePage: React.FC<ServicePageProps> = ({ slugOverride, canonicalPath, 
   });
 
   if (externalRedirect) {
-    return <Navigate to={externalRedirect} replace />;
+    return <Navigate to={localizedPath(externalRedirect)} replace />;
   }
 
   if (newSlug) {
-    return <Navigate to={`/services/${newSlug}`} replace />;
+    return <Navigate to={localizedPath(`/services/${newSlug}`)} replace />;
   }
 
   if (!service) {
@@ -143,9 +151,9 @@ const ServicePage: React.FC<ServicePageProps> = ({ slugOverride, canonicalPath, 
         <Header />
         <div className="flex items-center justify-center min-h-[60vh]">
           <div className="text-center">
-            <h1 className="text-4xl font-bold mb-4">Service Not Found</h1>
+            <h1 className="text-4xl font-bold mb-4">{isArabic ? 'الخدمة غير موجودة' : 'Service Not Found'}</h1>
             <Link to="/services" className="text-burnt-orange hover:underline">
-              ← Back to Services
+              {isArabic ? 'العودة إلى الخدمات ←' : '← Back to Services'}
             </Link>
           </div>
         </div>
@@ -156,7 +164,7 @@ const ServicePage: React.FC<ServicePageProps> = ({ slugOverride, canonicalPath, 
 
   const isMercedes = service.slug.startsWith('mercedes-');
   const related = allServices
-    .filter((s) => s.category === service.category && s.slug !== service.slug)
+    .filter((s) => s.category === sourceService?.category && s.slug !== service.slug)
     .filter((s) => (isMercedes ? s.slug.startsWith('mercedes-') : !s.slug.startsWith('mercedes-')))
     .slice(0, 3);
 
@@ -180,10 +188,10 @@ const ServicePage: React.FC<ServicePageProps> = ({ slugOverride, canonicalPath, 
         </div>
         <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 w-full">
           <nav className="flex items-center gap-2 text-sm text-gray-400 mb-6">
-            <Link to="/" className="hover:text-burnt-orange transition-colors">Home</Link>
-            <ChevronRight className="w-4 h-4" />
-            <Link to={brandPath ?? '/services'} className="hover:text-burnt-orange transition-colors">{brandPath ? 'Mercedes-Benz' : 'Services'}</Link>
-            <ChevronRight className="w-4 h-4" />
+            <Link to="/" className="hover:text-burnt-orange transition-colors">{isArabic ? 'الرئيسية' : 'Home'}</Link>
+            <ChevronRight className={`w-4 h-4 ${isArabic ? 'rotate-180' : ''}`} />
+            <Link to={brandPath ?? '/services'} className="hover:text-burnt-orange transition-colors">{brandPath ? 'Mercedes-Benz' : isArabic ? 'الخدمات' : 'Services'}</Link>
+            <ChevronRight className={`w-4 h-4 ${isArabic ? 'rotate-180' : ''}`} />
             <span className="text-burnt-orange">{service.title}</span>
           </nav>
           <span className="text-burnt-orange font-semibold text-[11px] sm:text-xs uppercase tracking-[0.3em] mb-3 block">
@@ -206,13 +214,13 @@ const ServicePage: React.FC<ServicePageProps> = ({ slugOverride, canonicalPath, 
             <div className="md:col-span-2 space-y-12">
               {/* Intro */}
               <div>
-                <h2 className="text-2xl sm:text-3xl font-bold mb-5">Overview</h2>
+                <h2 className="text-2xl sm:text-3xl font-bold mb-5">{isArabic ? 'نظرة عامة' : 'Overview'}</h2>
                 <p className="text-gray-300 leading-relaxed text-lg">{service.intro}</p>
               </div>
 
               {/* Why It Matters */}
               <div>
-                <h2 className="text-2xl sm:text-3xl font-bold mb-5">Why It Matters</h2>
+                <h2 className="text-2xl sm:text-3xl font-bold mb-5">{isArabic ? 'لماذا هذه الخدمة مهمة؟' : 'Why It Matters'}</h2>
                 <p className="text-gray-300 leading-relaxed text-lg">{service.whyImportant}</p>
               </div>
 
@@ -235,7 +243,7 @@ const ServicePage: React.FC<ServicePageProps> = ({ slugOverride, canonicalPath, 
 
               {/* Why Choose Digi-Tec */}
               <div>
-                <h2 className="text-2xl sm:text-3xl font-bold mb-5">Why Choose Digi-Tec</h2>
+                <h2 className="text-2xl sm:text-3xl font-bold mb-5">{isArabic ? 'لماذا تختار ديجي-تك؟' : 'Why Choose Digi-Tec'}</h2>
                 <p className="text-gray-300 leading-relaxed text-lg">{service.whyChoose}</p>
               </div>
 
@@ -249,7 +257,7 @@ const ServicePage: React.FC<ServicePageProps> = ({ slugOverride, canonicalPath, 
 
               {/* What's Included */}
               <div>
-                <h2 className="text-2xl sm:text-3xl font-bold mb-5">What's Included</h2>
+                <h2 className="text-2xl sm:text-3xl font-bold mb-5">{isArabic ? 'ماذا تشمل الخدمة؟' : "What's Included"}</h2>
                 <ul className="space-y-3">
                   {service.includes.map((item, i) => (
                     <li key={i} className="flex items-start gap-3 text-gray-300 text-lg">
@@ -282,7 +290,7 @@ const ServicePage: React.FC<ServicePageProps> = ({ slugOverride, canonicalPath, 
               {service.faqs && service.faqs.length > 0 && (
                 <div>
                   <h2 className="text-2xl sm:text-3xl font-bold mb-5">
-                    {service.slug === 'oil-change-dubai'
+                    {isArabic ? 'الأسئلة الشائعة' : service.slug === 'oil-change-dubai'
                       ? 'Oil Change FAQs'
                       : service.slug === 'car-service-dubai'
                       ? 'Car Service FAQs'
@@ -316,19 +324,19 @@ const ServicePage: React.FC<ServicePageProps> = ({ slugOverride, canonicalPath, 
               {service.slug === 'battery-replacement-dubai' && (
                 <div className="bg-gradient-to-br from-burnt-orange/10 to-charcoal/40 border border-burnt-orange/30 rounded-2xl p-6 sm:p-8">
                   <span className="text-burnt-orange text-xs font-bold uppercase tracking-widest mb-3 block">
-                    Learn More
+                    {isArabic ? 'اعرف المزيد' : 'Learn More'}
                   </span>
                   <h3 className="text-2xl sm:text-3xl font-bold mb-3">
-                    Want to understand more about your car battery?
+                    {isArabic ? 'هل تريد معرفة المزيد عن بطارية سيارتك؟' : 'Want to understand more about your car battery?'}
                   </h3>
                   <p className="text-gray-300 leading-relaxed text-lg mb-5">
-                    Check out our in-depth guide on why batteries fail in Dubai's heat, warning signs to watch for, and answers to the most common replacement questions.
+                    {isArabic ? 'اطّلع على دليلنا حول تأثير حرارة دبي في البطارية وعلامات الضعف والأسئلة الشائعة عن الاستبدال.' : "Check out our in-depth guide on why batteries fail in Dubai's heat, warning signs to watch for, and answers to the most common replacement questions."}
                   </p>
                   <Link
                     to="/blog/car-battery-replacement-dubai"
                     className="inline-flex items-center gap-2 bg-burnt-orange hover:bg-burnt-orange/90 text-black font-bold py-3 px-6 rounded-xl transition-all duration-300"
                   >
-                    Read the Battery Guide
+                    {isArabic ? 'اقرأ دليل البطارية' : 'Read the Battery Guide'}
                     <ChevronRight className="w-5 h-5" />
                   </Link>
                 </div>
@@ -338,19 +346,19 @@ const ServicePage: React.FC<ServicePageProps> = ({ slugOverride, canonicalPath, 
               {service.slug === 'brake-repair-dubai' && (
                 <div className="bg-gradient-to-br from-burnt-orange/10 to-charcoal/40 border border-burnt-orange/30 rounded-2xl p-6 sm:p-8">
                   <span className="text-burnt-orange text-xs font-bold uppercase tracking-widest mb-3 block">
-                    Learn More
+                    {isArabic ? 'اعرف المزيد' : 'Learn More'}
                   </span>
                   <h3 className="text-2xl sm:text-3xl font-bold mb-3">
-                    Want to understand more about your brakes?
+                    {isArabic ? 'هل تريد معرفة المزيد عن فرامل سيارتك؟' : 'Want to understand more about your brakes?'}
                   </h3>
                   <p className="text-gray-300 leading-relaxed text-lg mb-5">
-                    Check out our in-depth guide on why brakes wear faster in Dubai, the warning signs to watch for, and answers to the most common brake repair questions.
+                    {isArabic ? 'اقرأ دليلنا عن أسباب تآكل الفرامل في دبي وعلامات التحذير وأهم أسئلة الإصلاح.' : 'Check out our in-depth guide on why brakes wear faster in Dubai, the warning signs to watch for, and answers to the most common brake repair questions.'}
                   </p>
                   <Link
                     to="/blog/brake-repair-dubai"
                     className="inline-flex items-center gap-2 bg-burnt-orange hover:bg-burnt-orange/90 text-black font-bold py-3 px-6 rounded-xl transition-all duration-300"
                   >
-                    Read the Brake Guide
+                    {isArabic ? 'اقرأ دليل الفرامل' : 'Read the Brake Guide'}
                     <ChevronRight className="w-5 h-5" />
                   </Link>
                 </div>
@@ -360,19 +368,19 @@ const ServicePage: React.FC<ServicePageProps> = ({ slugOverride, canonicalPath, 
               {service.slug === 'mercedes-repair-dubai' && (
                 <div className="bg-gradient-to-br from-burnt-orange/10 to-charcoal/40 border border-burnt-orange/30 rounded-2xl p-6 sm:p-8">
                   <span className="text-burnt-orange text-xs font-bold uppercase tracking-widest mb-3 block">
-                    Learn More
+                    {isArabic ? 'اعرف المزيد' : 'Learn More'}
                   </span>
                   <h3 className="text-2xl sm:text-3xl font-bold mb-3">
-                    Want the complete Mercedes owner guide for Dubai?
+                    {isArabic ? 'هل تريد دليل مالك مرسيدس في دبي؟' : 'Want the complete Mercedes owner guide for Dubai?'}
                   </h3>
                   <p className="text-gray-300 leading-relaxed text-lg mb-5">
-                    Read our 2026 Mercedes repair guide covering common UAE issues, AIRMATIC and AMG specifics, warning signs, and how to choose the right specialist workshop.
+                    {isArabic ? 'اقرأ دليل مرسيدس الذي يغطي الأعطال الشائعة وأنظمة AIRMATIC وAMG وعلامات التحذير واختيار الورشة المتخصصة.' : 'Read our 2026 Mercedes repair guide covering common UAE issues, AIRMATIC and AMG specifics, warning signs, and how to choose the right specialist workshop.'}
                   </p>
                   <Link
                     to="/blog/mercedes-repair-dubai-complete-guide"
                     className="inline-flex items-center gap-2 bg-burnt-orange hover:bg-burnt-orange/90 text-black font-bold py-3 px-6 rounded-xl transition-all duration-300"
                   >
-                    Read the Mercedes Guide
+                    {isArabic ? 'اقرأ دليل مرسيدس' : 'Read the Mercedes Guide'}
                     <ChevronRight className="w-5 h-5" />
                   </Link>
                 </div>
@@ -382,19 +390,19 @@ const ServicePage: React.FC<ServicePageProps> = ({ slugOverride, canonicalPath, 
               {service.slug === 'car-ac-repair-dubai' && (
                 <div className="bg-gradient-to-br from-burnt-orange/10 to-charcoal/40 border border-burnt-orange/30 rounded-2xl p-6 sm:p-8">
                   <span className="text-burnt-orange text-xs font-bold uppercase tracking-widest mb-3 block">
-                    Learn More
+                    {isArabic ? 'اعرف المزيد' : 'Learn More'}
                   </span>
                   <h3 className="text-2xl sm:text-3xl font-bold mb-3">
-                    Why does your car AC stop cooling in Dubai?
+                    {isArabic ? 'لماذا يتوقف تكييف السيارة عن التبريد في دبي؟' : 'Why does your car AC stop cooling in Dubai?'}
                   </h3>
                   <p className="text-gray-300 leading-relaxed text-lg mb-5">
-                    Read our specialist guide on why AC systems fail in Dubai's heat, the most common compressor and refrigerant issues, and what actually fixes them long term.
+                    {isArabic ? 'اقرأ دليلنا عن تأثير حرارة دبي في التكييف وأعطال الضاغط وغاز التبريد والحلول طويلة المدى.' : "Read our specialist guide on why AC systems fail in Dubai's heat, the most common compressor and refrigerant issues, and what actually fixes them long term."}
                   </p>
                   <Link
                     to="/blog/car-ac-repair-dubai"
                     className="inline-flex items-center gap-2 bg-burnt-orange hover:bg-burnt-orange/90 text-black font-bold py-3 px-6 rounded-xl transition-all duration-300"
                   >
-                    Read the AC Repair Guide
+                    {isArabic ? 'اقرأ دليل إصلاح التكييف' : 'Read the AC Repair Guide'}
                     <ChevronRight className="w-5 h-5" />
                   </Link>
                 </div>
@@ -404,23 +412,23 @@ const ServicePage: React.FC<ServicePageProps> = ({ slugOverride, canonicalPath, 
             {/* Sidebar */}
             <div className="space-y-6">
               <div className="card-premium rounded-2xl p-6 sticky top-24">
-                <h3 className="text-lg font-bold mb-4 text-burnt-orange">Why Choose Us</h3>
+                <h3 className="text-lg font-bold mb-4 text-burnt-orange">{isArabic ? 'لماذا تختارنا؟' : 'Why Choose Us'}</h3>
                 <ul className="space-y-3 text-gray-300 text-sm mb-6">
                   <li className="flex items-start gap-2">
                     <span className="text-burnt-orange mt-1">✓</span>
-                    OEM & performance-grade parts
+                    {isArabic ? 'قطع OEM وقطع أداء عالية الجودة' : 'OEM & performance-grade parts'}
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-burnt-orange mt-1">✓</span>
-                    Factory-trained technicians
+                    {isArabic ? 'فنيون مدربون ومتخصصون' : 'Factory-trained technicians'}
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-burnt-orange mt-1">✓</span>
-                    Transparent pricing, no hidden fees
+                    {isArabic ? 'أسعار واضحة بلا رسوم مخفية' : 'Transparent pricing, no hidden fees'}
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-burnt-orange mt-1">✓</span>
-                    40+ years, 50,000+ vehicles serviced
+                    {isArabic ? '+40 عاماً من الخبرة و+50,000 سيارة' : '40+ years, 50,000+ vehicles serviced'}
                   </li>
                 </ul>
 
@@ -432,17 +440,17 @@ const ServicePage: React.FC<ServicePageProps> = ({ slugOverride, canonicalPath, 
                     className="flex items-center justify-center gap-2 w-full bg-burnt-orange hover:bg-[#ff7d4d] text-black font-bold text-sm uppercase tracking-[0.12em] py-3.5 rounded-lg transition-colors duration-300"
                   >
                     <MessageCircle className="w-5 h-5" />
-                    WhatsApp Us
+                    {isArabic ? 'راسلنا عبر واتساب' : 'WhatsApp Us'}
                   </a>
                   <a
                     href="tel:+97143402223"
                     className="flex items-center justify-center gap-2 w-full border border-white/20 text-off-white hover:border-burnt-orange/70 hover:text-burnt-orange font-bold text-sm uppercase tracking-[0.12em] py-3.5 rounded-lg transition-all duration-300"
                   >
                     <Phone className="w-5 h-5" />
-                    Call Now
+                    {isArabic ? 'اتصل الآن' : 'Call Now'}
                   </a>
                   <p className="text-[11px] text-gray-500 text-center leading-snug pt-1">
-                    Free assessment · No obligation · Reply within minutes
+                    {isArabic ? 'تقييم مجاني · بلا التزام · رد خلال دقائق' : 'Free assessment · No obligation · Reply within minutes'}
                   </p>
                 </div>
               </div>
@@ -455,9 +463,11 @@ const ServicePage: React.FC<ServicePageProps> = ({ slugOverride, canonicalPath, 
       {related.length > 0 && (
         <section className="py-16 border-t border-gray-800/50">
           <div className="max-w-5xl mx-auto px-4 sm:px-6">
-            <h2 className="text-2xl sm:text-3xl font-bold mb-8">Related Services</h2>
+            <h2 className="text-2xl sm:text-3xl font-bold mb-8">{isArabic ? 'خدمات ذات صلة' : 'Related Services'}</h2>
             <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
-              {related.map((s) => (
+              {related.map((sourceRelated) => {
+                const s = isArabic ? localizeServiceToArabic(sourceRelated) : sourceRelated;
+                return (
                 <Link
                   key={s.slug}
                   to={`/services/${s.slug}`}
@@ -482,7 +492,8 @@ const ServicePage: React.FC<ServicePageProps> = ({ slugOverride, canonicalPath, 
                     <p className="text-gray-400 text-sm mt-2">{s.description}</p>
                   </div>
                 </Link>
-              ))}
+                );
+              })}
             </div>
           </div>
         </section>
@@ -493,10 +504,10 @@ const ServicePage: React.FC<ServicePageProps> = ({ slugOverride, canonicalPath, 
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-8">
             <h2 className="text-2xl sm:text-3xl font-bold mb-2">
-              Brand Specialists in <span className="text-burnt-orange">Dubai</span>
+              {isArabic ? <>متخصصون في العلامات بمدينة <span className="text-burnt-orange">دبي</span></> : <>Brand Specialists in <span className="text-burnt-orange">Dubai</span></>}
             </h2>
             <p className="text-gray-400 text-sm sm:text-base">
-              Every {service?.title.toLowerCase() ?? 'service'} we perform is available for the marques below.
+              {isArabic ? `نقدم ${service?.title ?? 'هذه الخدمة'} للعلامات التالية.` : `Every ${service?.title.toLowerCase() ?? 'service'} we perform is available for the marques below.`}
             </p>
           </div>
           <div className="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-7 gap-3">
@@ -511,7 +522,7 @@ const ServicePage: React.FC<ServicePageProps> = ({ slugOverride, canonicalPath, 
                   <img src={b.logo} alt={`${b.name} service Dubai`} loading="lazy" className="w-full h-full object-contain" />
                 </div>
                 <span className="text-[11px] sm:text-xs text-gray-300 group-hover:text-burnt-orange text-center font-medium leading-tight">
-                  {b.name} Service
+                  {isArabic ? `خدمة ${b.name}` : `${b.name} Service`}
                 </span>
               </Link>
             ))}
