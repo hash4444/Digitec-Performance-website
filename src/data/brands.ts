@@ -332,6 +332,7 @@ const additionalBrandLogos: Record<string, string> = {
   Mitsubishi: 'https://www.carlogos.org/car-logos/mitsubishi-logo.png',
   Nissan: 'https://www.carlogos.org/car-logos/nissan-logo.png',
   Pagani: 'https://www.carlogos.org/car-logos/pagani-logo.png',
+  'Range Rover': '/lovable-uploads/4bb58917-704a-4c5d-84b6-dc428a00c004.png',
   Renault: 'https://www.carlogos.org/car-logos/renault-logo.png',
   Subaru: 'https://www.carlogos.org/car-logos/subaru-logo.png',
   Tesla: 'https://www.carlogos.org/car-logos/tesla-logo.png',
