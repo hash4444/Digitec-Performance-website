@@ -321,7 +321,7 @@ const additionalBrandLogos: Record<string, string> = {
   Infiniti: 'https://www.carlogos.org/car-logos/infiniti-logo.png',
   Jaguar: 'https://www.carlogos.org/car-logos/jaguar-logo.png',
   Jeep: 'https://www.carlogos.org/car-logos/jeep-logo.png',
-  Jetour: '/brand-logos/jetour.png',
+  Jetour: '/brand-logos/jetour-color.png',
   Koenigsegg: 'https://www.carlogos.org/car-logos/koenigsegg-logo.png',
   Lexus: 'https://www.carlogos.org/car-logos/lexus-logo.png',
   Lincoln: 'https://www.carlogos.org/car-logos/lincoln-logo.png',
