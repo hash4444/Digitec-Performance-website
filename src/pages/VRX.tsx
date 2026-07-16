@@ -8,6 +8,8 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Zap, Gauge, Shield, Settings, Crown, ChevronDown } from 'lucide-react';
 import ExteriorTabs from '@/components/VRX/ExteriorTabs';
 import FounderMessage from '@/components/VRX/FounderMessage';
+import { useLocale } from '@/i18n/use-locale';
+import { arVrx } from '@/i18n/ar-vrx';
 
 
 const specs = [
@@ -41,25 +43,25 @@ const exteriorImage = { src: '/images/vrx-exterior.jpg', alt: 'VRX Exterior by G
 
 
 const VRX = () => {
+  const { isArabic } = useLocale();
   const [activeExteriorTab, setActiveExteriorTab] = useState('motor');
 
   useSeo({
-    title: 'GAD Motors V-Class VRX Dubai | Official Workshop | DIGI-TEC',
-    description: 'Explore the GAD Motors V-Class VRX at DIGI-TEC Dubai, the official GAD Motors workshop partner for bespoke Mercedes V-Class performance, luxury, and conversion work.',
-    canonical: 'https://digitecme.com/vrx',
+    title: isArabic ? arVrx.seo.title : 'GAD Motors V-Class VRX Dubai | Official Workshop | DIGI-TEC',
+    description: isArabic ? arVrx.seo.description : 'Explore the GAD Motors V-Class VRX at DIGI-TEC Dubai, the official GAD Motors workshop partner for bespoke Mercedes V-Class performance, luxury, and conversion work.',
+    canonical: `https://digitecme.com${isArabic ? '/ar' : ''}/vrx`,
     jsonLd: (() => {
-      const url = 'https://digitecme.com/vrx';
+      const url = `https://digitecme.com${isArabic ? '/ar' : ''}/vrx`;
       return pageGraph([
         buildWebPage({
           url,
-          name: 'GAD Motors V-Class VRX | DIGI-TEC Dubai Workshop',
-          description:
-            'The GAD Motors V-Class VRX: bespoke Mercedes V-Class performance, luxury interior and design, available at the official GAD Motors workshop partner, DIGI-TEC Dubai.',
+          name: isArabic ? arVrx.seo.title : 'GAD Motors V-Class VRX | DIGI-TEC Dubai Workshop',
+          description: isArabic ? arVrx.seo.description : 'The GAD Motors V-Class VRX: bespoke Mercedes V-Class performance, luxury interior and design, available at the official GAD Motors workshop partner, DIGI-TEC Dubai.',
           type: 'ItemPage',
           breadcrumbId: `${url}#breadcrumb`,
         }),
         buildBreadcrumb(url, [
-          { name: 'Home', url: 'https://digitecme.com/' },
+          { name: isArabic ? 'الرئيسية' : 'Home', url: `https://digitecme.com${isArabic ? '/ar' : '/'}` },
           { name: 'VRX', url },
         ]),
         {
@@ -68,9 +70,8 @@ const VRX = () => {
           name: 'GAD Motors V-Class VRX',
           brand: { '@type': 'Brand', name: 'GAD Motors' },
           manufacturer: { '@type': 'Organization', name: 'GAD Motors', url: 'https://www.gad-motors.de/' },
-          category: 'Modified Mercedes V-Class',
-          description:
-            'Bespoke GAD Motors V-Class VRX conversion, offered at DIGI-TEC Performance Center, the official GAD Motors workshop partner in Dubai.',
+          category: isArabic ? 'مرسيدس V-Class معدلة' : 'Modified Mercedes V-Class',
+          description: isArabic ? arVrx.seo.description : 'Bespoke GAD Motors V-Class VRX conversion, offered at DIGI-TEC Performance Center, the official GAD Motors workshop partner in Dubai.',
           url,
           offers: {
             '@type': 'Offer',
@@ -99,7 +100,7 @@ const VRX = () => {
             transition={{ delay: 0.2 }}
             className="eyebrow mb-4"
           >
-            By GAD Motors · Exclusively at DIGI-TEC
+            {isArabic ? arVrx.hero.eyebrow : 'By GAD Motors · Exclusively at DIGI-TEC'}
           </motion.p>
 
           <motion.h1
@@ -117,7 +118,7 @@ const VRX = () => {
             transition={{ delay: 0.6 }}
             className="text-lg sm:text-xl md:text-2xl text-white/60 mb-3"
           >
-            Dubai Workshop for the GAD Motors V-Class.
+            {isArabic ? arVrx.hero.subtitle : 'Dubai Workshop for the GAD Motors V-Class.'}
           </motion.p>
 
           <motion.p
@@ -126,7 +127,7 @@ const VRX = () => {
             transition={{ delay: 0.8 }}
             className="text-sm sm:text-base md:text-lg text-white/40 max-w-2xl mx-auto leading-relaxed mb-10"
           >
-            DIGI-TEC is Dubai's official GAD Motors workshop partner for the bespoke V-Class VRX: a Mercedes V-Class engineered for extreme performance, luxury, and exclusivity.
+            {isArabic ? arVrx.hero.description : "DIGI-TEC is Dubai's official GAD Motors workshop partner for the bespoke V-Class VRX: a Mercedes V-Class engineered for extreme performance, luxury, and exclusivity."}
           </motion.p>
 
           {/* Hero Image */}
@@ -138,7 +139,7 @@ const VRX = () => {
           >
             <img
               src="/images/vrx-hero.jpg"
-              alt="VRX Mercedes V-Class by GAD Motors"
+              alt={isArabic ? 'مرسيدس V-Class VRX من GAD Motors في دبي' : 'VRX Mercedes V-Class by GAD Motors'}
               className="w-full h-auto rounded-2xl ring-1 ring-white/10 shadow-[0_24px_48px_-28px_rgba(0,0,0,0.8)]"
             />
           </motion.div>
@@ -163,7 +164,7 @@ const VRX = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
             >
-              <p className="eyebrow mb-3">Interior</p>
+              <p className="eyebrow mb-3">{isArabic ? arVrx.interior : 'Interior'}</p>
             </motion.div>
           </div>
 
@@ -176,7 +177,7 @@ const VRX = () => {
           >
             <img
               src="/images/vrx-interior.jpg"
-              alt="VRX Interior by GAD Motors"
+              alt={isArabic ? 'المقصورة الداخلية لسيارة VRX من GAD Motors' : 'VRX Interior by GAD Motors'}
               className="w-full h-auto rounded-2xl ring-1 ring-white/10 shadow-[0_24px_48px_-28px_rgba(0,0,0,0.8)]"
             />
           </motion.div>
@@ -190,12 +191,12 @@ const VRX = () => {
             >
               <img
                 src="/images/vrx-seats.png"
-                alt="VRX Custom Seats by GAD Motors"
+                alt={isArabic ? 'مقاعد VRX المخصصة من GAD Motors' : 'VRX Custom Seats by GAD Motors'}
                 className="w-full h-auto rounded-2xl ring-1 ring-white/10 shadow-[0_24px_48px_-28px_rgba(0,0,0,0.8)] mb-4"
               />
-              <h3 className="text-lg font-bold text-off-white mb-2">Custom VRX sports seats from GAD Motors</h3>
+              <h3 className="text-lg font-bold text-off-white mb-2">{isArabic ? arVrx.seatsTitle : 'Custom VRX sports seats from GAD Motors'}</h3>
               <p className="text-sm text-white/50 leading-relaxed">
-                GAD Motors' VRX seats combine comfort, support, and outstanding design, perfectly tailored to the character of your vehicle.
+                {isArabic ? arVrx.seatsDescription : "GAD Motors' VRX seats combine comfort, support, and outstanding design, perfectly tailored to the character of your vehicle."}
               </p>
             </motion.div>
             <motion.div
@@ -206,12 +207,12 @@ const VRX = () => {
             >
               <img
                 src="/images/vrx-ambient.png"
-                alt="VRX Ambient Lighting by GAD Motors"
+                alt={isArabic ? 'الإضاءة المحيطية في VRX من GAD Motors' : 'VRX Ambient Lighting by GAD Motors'}
                 className="w-full h-auto rounded-2xl ring-1 ring-white/10 shadow-[0_24px_48px_-28px_rgba(0,0,0,0.8)] mb-4"
               />
-              <h3 className="text-lg font-bold text-off-white mb-2">Backlighting technology (Ambilight)</h3>
+              <h3 className="text-lg font-bold text-off-white mb-2">{isArabic ? arVrx.ambientTitle : 'Backlighting technology (Ambilight)'}</h3>
               <p className="text-sm text-white/50 leading-relaxed">
-                LED lighting for the air vents, extensive color palette
+                {isArabic ? arVrx.ambientDescription : 'LED lighting for the air vents, extensive color palette'}
               </p>
             </motion.div>
           </div>
@@ -227,7 +228,7 @@ const VRX = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
             >
-              <p className="eyebrow mb-3">Exterior</p>
+              <p className="eyebrow mb-3">{isArabic ? arVrx.exterior : 'Exterior'}</p>
             </motion.div>
           </div>
 
@@ -239,7 +240,7 @@ const VRX = () => {
           >
             <img
               src={exteriorImage.src}
-              alt={exteriorImage.alt}
+              alt={isArabic ? 'التصميم الخارجي لسيارة VRX من GAD Motors' : exteriorImage.alt}
               className="w-full h-auto rounded-2xl ring-1 ring-white/10 shadow-[0_24px_48px_-28px_rgba(0,0,0,0.8)]"
             />
           </motion.div>
@@ -259,7 +260,7 @@ const VRX = () => {
             className="text-center mb-10 md:mb-14"
           >
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-black">
-              SERIES <span className="font-normal italic text-white/50">vs</span> <span className="text-red-600">GAD VRX</span>
+              {isArabic ? 'الطراز القياسي' : 'SERIES'} <span className="font-normal italic text-white/50">{isArabic ? 'مقابل' : 'vs'}</span> <span className="text-red-600">GAD VRX</span>
             </h2>
           </motion.div>
 
@@ -272,7 +273,7 @@ const VRX = () => {
             {/* Headers */}
             <div className="grid grid-cols-2">
               <div className="bg-white/[0.06] px-6 py-4">
-                <h3 className="text-sm sm:text-base md:text-lg font-bold uppercase tracking-wider text-white/70">Mercedes V-Class</h3>
+                <h3 className="text-sm sm:text-base md:text-lg font-bold uppercase tracking-wider text-white/70">{isArabic ? arVrx.comparison.standard : 'Mercedes V-Class'}</h3>
               </div>
               <div className="bg-red-800 px-6 py-4">
                 <h3 className="text-sm sm:text-base md:text-lg font-bold uppercase tracking-wider text-white">GADVIP VRX</h3>
@@ -280,14 +281,14 @@ const VRX = () => {
             </div>
 
             {/* Comparison Rows */}
-            {[
+            {(isArabic ? arVrx.comparison.rows.map((row, index) => ({ icon: ['⚙️', '⏱️', '◎', '🔊', '🛡️', '💺'][index], ...row })) : [
               { icon: '⚙️', standard: '239 hp', vrx: '920 hp' },
               { icon: '⏱️', standard: '9.5 SEK', vrx: '3.8 SEK' },
               { icon: '◎', standard: '500 Nm', vrx: '1100 Nm' },
               { icon: '🔊', standard: 'Standard sound insulation', vrx: 'Sporty exhaust sound' },
               { icon: '🛡️', standard: 'Standard Mercedes body package', vrx: 'Carbon GAD Carbon Body kit by GAD' },
               { icon: '💺', standard: 'Comfort seats', vrx: 'VIP Executive Suite Seats' },
-            ].map((row, i) => (
+            ]).map((row, i) => (
               <div key={i} className="grid grid-cols-2 border-t border-white/[0.06]">
                 <div className="px-6 py-4 flex items-center gap-3">
                   <span className="text-base">{row.icon}</span>
@@ -318,19 +319,19 @@ const VRX = () => {
             {/* Left: Pricing Info */}
             <div className="flex-1">
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-black uppercase tracking-tight mb-2">
-                Entry-Level Model <span className="text-red-600">VRX</span>
+                {isArabic ? arVrx.pricing.title : 'Entry-Level Model'} <span className="text-red-600">VRX</span>
               </h2>
               <p className="text-xl sm:text-2xl font-bold text-off-white mb-4">
-                FROM €146,500
+                {isArabic ? arVrx.pricing.from : 'FROM €146,500'}
               </p>
               <p className="text-xs sm:text-sm text-white/40 leading-relaxed">
-                *The price includes only the assembly of the VRX with 585 hp (without TÜV approval). Additional options and custom solutions will be charged separately.
+                {isArabic ? arVrx.pricing.note : '*The price includes only the assembly of the VRX with 585 hp (without TÜV approval). Additional options and custom solutions will be charged separately.'}
               </p>
             </div>
 
             {/* Right: Recall CTA */}
             <a
-              href={`https://wa.me/97143402223?text=${encodeURIComponent("Hi, I'm interested in the VRX Mercedes V-Class. Could you please get in touch with me?")}`}
+              href={`https://wa.me/97143402223?text=${encodeURIComponent(isArabic ? arVrx.pricing.whatsapp : "Hi, I'm interested in the VRX Mercedes V-Class. Could you please get in touch with me?")}`}
               target="_blank"
               rel="noopener noreferrer"
               className="flex-shrink-0 w-full md:w-auto inline-flex items-center justify-center gap-3 bg-red-700 hover:bg-red-600 text-white font-bold text-xs sm:text-sm uppercase tracking-[0.14em] px-10 sm:px-12 py-4 sm:py-5 rounded-lg transition-all duration-300 hover:-translate-y-0.5 shadow-[0_10px_28px_-10px_rgba(185,28,28,0.6)]"
@@ -338,7 +339,7 @@ const VRX = () => {
               <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
               </svg>
-              Request a Callback
+              {isArabic ? arVrx.pricing.cta : 'Request a Callback'}
             </a>
           </motion.div>
         </div>

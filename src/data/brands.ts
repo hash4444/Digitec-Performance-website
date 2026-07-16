@@ -285,6 +285,82 @@ export const brands: Brand[] = [
   },
 ];
 
+const additionalBrandEntries: Array<[string, string]> = [
+  ['Abarth', 'abarth-service-dubai'], ['Alfa Romeo', 'alfa-romeo-service-dubai'],
+  ['Cadillac', 'cadillac-service-dubai'],
+  ['Chevrolet', 'chevrolet-service-dubai'], ['Chrysler', 'chrysler-service-dubai'],
+  ['Corvette', 'corvette-service-dubai'],
+  ['Dodge', 'dodge-service-dubai'], ['FIAT', 'fiat-service-dubai'], ['Ford', 'ford-service-dubai'],
+  ['Genesis', 'genesis-service-dubai'], ['GMC', 'gmc-service-dubai'],
+  ['Hummer', 'hummer-service-dubai'], ['Infiniti', 'infiniti-service-dubai'],
+  ['Jaguar', 'jaguar-service-dubai'], ['Jeep', 'jeep-service-dubai'], ['Jetour', 'jetour-service-dubai'],
+  ['Koenigsegg', 'koenigsegg-service-dubai'], ['Lexus', 'lexus-service-dubai'], ['Lincoln', 'lincoln-service-dubai'],
+  ['Lotus', 'lotus-service-dubai'], ['Maserati', 'maserati-service-dubai'], ['Mazda', 'mazda-service-dubai'],
+  ['MINI', 'mini-service-dubai'], ['Mitsubishi', 'mitsubishi-service-dubai'],
+  ['Nissan', 'nissan-service-dubai'], ['Pagani', 'pagani-service-dubai'],
+  ['Range Rover', 'range-rover-service-dubai'], ['Renault', 'renault-service-dubai'],
+  ['Subaru', 'subaru-service-dubai'], ['Tesla', 'tesla-service-dubai'],
+  ['Toyota', 'toyota-service-dubai'], ['Volkswagen', 'volkswagen-service-dubai'], ['Volvo', 'volvo-service-dubai'],
+];
+
+const additionalBrandLogos: Record<string, string> = {
+  Abarth: '/brand-logos/abarth.png',
+  'Alfa Romeo': '/brand-logos/alfa-romeo.png',
+  Cadillac: '/brand-logos/vector/cadillac.svg',
+  Chevrolet: '/brand-logos/vector/chevrolet.svg',
+  Chrysler: '/brand-logos/vector/chrysler.svg',
+  Corvette: '/brand-logos/corvette.png',
+  Dodge: '/brand-logos/dodge.png',
+  FIAT: '/brand-logos/vector/fiat.svg',
+  Ford: '/brand-logos/vector/ford.svg',
+  Genesis: '/brand-logos/genesis.png',
+  GMC: '/brand-logos/gmc.png',
+  Hummer: '/brand-logos/hummer.png',
+  Infiniti: '/brand-logos/vector/infiniti.svg',
+  Jaguar: '/brand-logos/jaguar.png',
+  Jeep: '/brand-logos/vector/jeep.svg',
+  Jetour: '/brand-logos/jetour.png',
+  Koenigsegg: '/brand-logos/vector/koenigsegg.svg',
+  Lexus: '/brand-logos/lexus.png',
+  Lincoln: '/brand-logos/lincoln.png',
+  Lotus: '/brand-logos/lotus.png',
+  Maserati: '/brand-logos/vector/maserati.svg',
+  Mazda: '/brand-logos/vector/mazda.svg',
+  MINI: '/brand-logos/vector/mini.svg',
+  Mitsubishi: '/brand-logos/vector/mitsubishi.svg',
+  Nissan: '/brand-logos/vector/nissan.svg',
+  Pagani: '/brand-logos/pagani.png',
+  Renault: '/brand-logos/vector/renault.svg',
+  Subaru: '/brand-logos/vector/subaru.svg',
+  Tesla: '/brand-logos/vector/tesla.svg',
+  Toyota: '/brand-logos/vector/toyota.svg',
+  Volkswagen: '/brand-logos/vector/volkswagen.svg',
+  Volvo: '/brand-logos/vector/volvo.svg',
+};
+
+const createAdditionalBrand = ([name, slug]: [string, string]): Brand => ({
+  name,
+  slug,
+  logo: additionalBrandLogos[name] ?? '',
+  specialization: 'Repair • Maintenance • Diagnostics',
+  intro: `Digi-Tec Performance Centre provides professional ${name} repair, maintenance, diagnostics, and electrical support in Dubai. Our Al Quoz workshop follows a diagnostic-first process, uses quality parts and approved fluids, and gives every owner a clear written explanation of the recommended work before it begins.`,
+  whyChoose: [
+    { title: 'Diagnostic-First Inspection', description: `We inspect ${name} fault codes, live data, and the affected system before recommending a repair.` },
+    { title: 'Maintenance & Mechanical Repair', description: `From routine servicing and fluid changes to brakes, suspension, cooling, and mechanical repairs, each ${name} is handled with a documented workshop process.` },
+    { title: 'Electrical & Comfort Systems', description: `We diagnose batteries, charging systems, sensors, control modules, air conditioning, and everyday electrical concerns.` },
+    { title: 'Clear Quotes and Customer Care', description: 'You receive a transparent estimate, practical repair options, and a clear handover once the work is complete.' },
+  ],
+  faqs: [
+    { q: `Do you service ${name} vehicles in Dubai?`, a: `Yes. Digi-Tec provides scheduled maintenance, diagnostics, mechanical repair, brake, suspension, air-conditioning, and electrical support for ${name} owners in Dubai.` },
+    { q: `Can you diagnose a warning light on my ${name}?`, a: `Yes. We begin with a diagnostic scan and live-data checks, then explain the fault and the recommended next step before work starts.` },
+    { q: `Do you use quality parts for ${name} repairs?`, a: 'We use genuine OEM, OE-supplier, or quality approved parts according to the repair requirement and your agreed quotation.' },
+    { q: `Where is Digi-Tec located?`, a: 'Digi-Tec Performance Centre is located in Al Quoz Industrial Area 3, Dubai. Call or WhatsApp us to arrange an inspection.' },
+  ],
+  relatedServices: ['mechanical-repair-dubai', 'car-diagnostics-dubai', 'brake-repair-dubai', 'car-ac-repair-dubai'],
+});
+
+brands.push(...additionalBrandEntries.map(createAdditionalBrand));
+
 export const getBrandBySlug = (slug: string) => brands.find((b) => b.slug === slug);
 
 export const getSlugForOrbitName = (orbitName: string): string | undefined => {

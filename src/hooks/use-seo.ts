@@ -1,4 +1,7 @@
 import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
+import { SITE_URL } from '@/lib/schema';
+import { isArabicPath, stripLocalePrefix } from '@/i18n/use-locale';
 
 interface SeoProps {
   title: string;
@@ -31,6 +34,12 @@ export function useSeo({
   noindex,
   jsonLd,
 }: SeoProps) {
+  const { pathname } = useLocation();
+  const isArabic = isArabicPath(pathname);
+  const englishPath = stripLocalePrefix(pathname);
+  const englishUrl = `${SITE_URL}${englishPath === '/' ? '/' : englishPath}`;
+  const arabicUrl = `${SITE_URL}/ar${englishPath === '/' ? '' : englishPath}`;
+  const effectiveCanonical = isArabic ? arabicUrl : canonical;
   const jsonLdString = jsonLd ? JSON.stringify(jsonLd) : undefined;
 
   useEffect(() => {
@@ -83,16 +92,35 @@ export function useSeo({
       setMeta('twitter:image', ogImage);
     }
 
-    if (canonical) {
+    if (effectiveCanonical) {
       let link = document.querySelector('link[rel="canonical"]') as HTMLLinkElement;
       if (!link) {
         link = document.createElement('link');
         link.setAttribute('rel', 'canonical');
         document.head.appendChild(link);
       }
-      link.setAttribute('href', canonical);
-      if (canonical) setMeta('og:url', canonical);
+      link.setAttribute('href', effectiveCanonical);
+      setMeta('og:url', effectiveCanonical);
     }
+
+    setMeta('og:locale', isArabic ? 'ar_AE' : 'en_AE');
+
+    const alternateLinks = [
+      { hreflang: 'en-AE', href: englishUrl },
+      { hreflang: 'ar-AE', href: arabicUrl },
+      { hreflang: 'x-default', href: englishUrl },
+    ].map(({ hreflang, href }) => {
+      let link = document.querySelector(`link[rel="alternate"][hreflang="${hreflang}"]`) as HTMLLinkElement | null;
+      if (!link) {
+        link = document.createElement('link');
+        link.rel = 'alternate';
+        link.hreflang = hreflang;
+        link.setAttribute('data-route-hreflang', 'true');
+        document.head.appendChild(link);
+      }
+      link.href = href;
+      return link;
+    });
 
     let jsonLdScript: HTMLScriptElement | null = null;
     if (jsonLdString) {
@@ -107,11 +135,17 @@ export function useSeo({
       if (jsonLdScript && jsonLdScript.parentNode) {
         jsonLdScript.parentNode.removeChild(jsonLdScript);
       }
+      alternateLinks.forEach((link) => {
+        if (link.dataset.routeHreflang === 'true') link.remove();
+      });
     };
   }, [
     title,
     description,
-    canonical,
+    effectiveCanonical,
+    isArabic,
+    englishUrl,
+    arabicUrl,
     keywords,
     ogImage,
     ogTitle,

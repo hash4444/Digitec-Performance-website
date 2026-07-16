@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { useLocale } from '@/i18n/use-locale';
 
 // Motor sub-tab data
 const motorSubTabs = [
@@ -165,6 +166,44 @@ const mainTabs = [
   { id: 'wheels', label: 'Wheels' },
 ];
 
+const arMainTabLabels: Record<string, string> = { motor: 'المحرك', carbon: 'حزمة الكربون', wheels: 'العجلات والفرامل' };
+const arMotorTabLabels: Record<string, string> = { motor: 'المحرك', 'engine-parts': 'قطع المحرك', electronics: 'الإلكترونيات', transmission: 'ناقل الحركة', exhaust: 'نظام العادم', fuel: 'نظام الوقود' };
+const arCarbonPackage1 = ['جناح جانبي أمامي أيسر', 'جناح جانبي أمامي أيمن', 'غطاء الجناح الأمامي الأيمن', 'غطاء لوحة الأرقام الأمامية', 'الشفة الأمامية الوسطى', 'الشفة الأمامية اليسرى', 'الشفة الأمامية اليمنى', 'مشتت الهواء الخلفي'];
+const arCarbonPackage2 = ['رفرف خلفي أيسر', 'رفرف خلفي أيمن', 'الجزء السفلي من الرفرف الأمامي الأيسر', 'تزيين باب الصندوق', 'غطاء المحرك', 'الجزء السفلي من غطاء المحرك', 'امتداد الصدام الأمامي الأيمن', 'امتداد الصدام الأمامي', 'الرفرف الأمامي الأيمن', 'امتداد الصدام الأمامي الأيسر', 'التركيب والطلاء'];
+const arBrakesClassic = ['كليبر ثابت بست مكابس للمحور الأمامي مع أقراص فرامل فولاذية بقطر 390 مم.', 'كليبر ثابت بأربع مكابس للمحور الخلفي مع أقراص فرامل فولاذية بقطر 360 مم.'];
+const arBrakesCarbonCeramic = {
+  intro: 'نظام فرامل كربون سيراميك',
+  parts: ['أقراص الفرامل', 'فحمات الفرامل', 'كليبر الفرامل', 'حامل كليبر الفرامل'],
+  specs: ['كليبر ثابت بست مكابس للمحور الأمامي مع أقراص كربون سيراميك بقطر 402 مم.', 'كليبر ثابت بأربع مكابس للمحور الخلفي مع أقراص كربون سيراميك بقطر 360 مم.'],
+};
+
+const ArabicMotorContent = ({ id }: { id: string }) => {
+  if (id === 'motor') return (
+    <div className="flex flex-col md:flex-row gap-6 text-sm text-white/70">
+      <div className="flex-1 space-y-2"><p className="font-semibold text-off-white">GAD M177 447</p><p>محرك بنزين V8 ثنائي التيربو بسعة 3998 سم³</p><p>القوة 585–920 حصاناً</p><p>العزم 900–1150 نيوتن متر</p></div>
+      <img src="/images/vrx-motor.png" alt="محرك GAD Motors VRX" className="w-full md:w-64 lg:w-72 h-auto rounded-2xl object-cover shrink-0" />
+    </div>
+  );
+  if (id === 'engine-parts') return (
+    <div className="flex flex-col md:flex-row gap-6 text-sm text-white/70">
+      <div className="flex-1 space-y-4"><p className="font-semibold text-off-white">قطع المحرك</p><ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-2.5">{['حوض الزيت', 'قواعد المحرك', 'أنبوب سحب مضخة الزيت', 'طقم جوانات المحرك', 'حساسات الأكسجين', 'ملحقات متنوعة', 'الدينمو', 'بادئ التشغيل', 'مبرد الزيت', 'إنتركولر ضاغط LS2', 'مبرد منخفض الحرارة'].map((item) => <li key={item} className="flex items-start gap-2.5"><span className="mt-1.5 w-2 h-2 rounded-full bg-burnt-orange shrink-0" /><span>{item}</span></li>)}</ul><p className="text-white/50">إنتركولر ضاغط LS2 ومبرد منخفض الحرارة</p></div>
+      <img src="/images/vrx-engine-bay.png" alt="حجرة محرك VRX" className="w-full md:w-64 lg:w-72 h-auto rounded-2xl object-cover shrink-0" />
+    </div>
+  );
+  if (id === 'electronics') return (
+    <div className="flex flex-col md:flex-row gap-6 text-sm text-white/70"><div className="flex-1 space-y-4"><p className="font-semibold text-off-white">وحدة التحكم بالمحرك</p><ul className="space-y-2.5">{['وحدة تحكم جديدة', 'برمجيات وحدة CPC وبرمجيات ناقل الحركة'].map((item) => <li key={item} className="flex items-start gap-2.5"><span className="mt-1.5 w-2 h-2 rounded-full bg-burnt-orange shrink-0" /><span>{item}</span></li>)}</ul></div><img src="/images/vrx-engine-bay.png" alt="إلكترونيات محرك VRX" className="w-full md:w-64 lg:w-72 h-auto rounded-2xl object-cover shrink-0" /></div>
+  );
+  if (id === 'transmission') return (
+    <div className="flex flex-col md:flex-row gap-6 text-sm text-white/70"><div className="flex-1 space-y-4"><p className="font-semibold text-off-white">ناقل الحركة</p><p>ناقل TCT Tronic بتسع سرعات<br />معزز ناقل الحركة NAG 3</p><ul className="space-y-2.5">{['تعزيز يدوي لناقل الحركة', 'تعزيز ناقل الحركة حتى نحو 1100 نيوتن متر'].map((item) => <li key={item} className="flex items-start gap-2.5"><span className="mt-1.5 w-2 h-2 rounded-full bg-burnt-orange shrink-0" /><span>{item}</span></li>)}</ul></div><img src="/images/vrx-transmission.png" alt="ناقل حركة VRX" className="w-full md:w-64 lg:w-72 h-auto rounded-2xl object-cover shrink-0" /></div>
+  );
+  if (id === 'exhaust') return (
+    <div className="flex flex-col md:flex-row gap-6 text-sm text-white/70"><div className="flex-1"><ul className="space-y-2.5">{['أنابيب عادم مع محول حفاز وفلتر جسيمات لمحركات البنزين', 'نظام عادم مزدوج من الفولاذ المقاوم للصدأ بقطر 70 مم وكاتم بتدفق متقاطع'].map((item) => <li key={item} className="flex items-start gap-2.5"><span className="mt-1.5 w-2 h-2 rounded-full bg-burnt-orange shrink-0" /><span>{item}</span></li>)}</ul></div><img src="/images/vrx-exhaust.png" alt="نظام عادم VRX" className="w-full md:w-64 lg:w-72 h-auto rounded-2xl object-cover shrink-0" /></div>
+  );
+  return (
+    <div className="flex flex-col md:flex-row gap-6 text-sm text-white/70"><div className="flex-1"><ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-2.5">{['خزان الوقود', 'مضخة الوقود', 'مضخة وقود إضافية'].map((item) => <li key={item} className="flex items-start gap-2.5"><span className="mt-1.5 w-2 h-2 rounded-full bg-burnt-orange shrink-0" /><span>{item}</span></li>)}</ul></div><img src="/images/vrx-fuel.png" alt="نظام وقود VRX" className="w-full md:w-64 lg:w-72 h-auto rounded-2xl object-cover shrink-0" /></div>
+  );
+};
+
 interface Props {
   activeTab: string;
   setActiveTab: (id: string) => void;
@@ -189,6 +228,7 @@ const SubTabButton = ({ active, label, onClick }: { active: boolean; label: stri
 );
 
 const ExteriorTabs = ({ activeTab, setActiveTab }: Props) => {
+  const { isArabic } = useLocale();
   const [carbonSub, setCarbonSub] = useState<'pkg1' | 'pkg2'>('pkg1');
   const [wheelsSub, setWheelsSub] = useState<'classic' | 'ceramic'>('classic');
   const [motorSub, setMotorSub] = useState('motor');
@@ -206,7 +246,7 @@ const ExteriorTabs = ({ activeTab, setActiveTab }: Props) => {
                 : 'bg-white/[0.04] text-white/50 border border-white/[0.06] hover:border-white/10 hover:text-white/70'
             }`}
           >
-            {tab.label}
+            {isArabic ? arMainTabLabels[tab.id] : tab.label}
           </button>
         ))}
       </div>
@@ -227,7 +267,7 @@ const ExteriorTabs = ({ activeTab, setActiveTab }: Props) => {
                 <SubTabButton
                   key={sub.id}
                   active={motorSub === sub.id}
-                  label={sub.label}
+                  label={isArabic ? arMotorTabLabels[sub.id] : sub.label}
                   onClick={() => setMotorSub(sub.id)}
                 />
               ))}
@@ -242,7 +282,7 @@ const ExteriorTabs = ({ activeTab, setActiveTab }: Props) => {
                     exit={{ opacity: 0 }}
                     transition={{ duration: 0.15 }}
                   >
-                    {sub.content}
+                    {isArabic ? <ArabicMotorContent id={sub.id} /> : sub.content}
                   </motion.div>
                 ) : null
               )}
@@ -261,8 +301,8 @@ const ExteriorTabs = ({ activeTab, setActiveTab }: Props) => {
             className="p-6 md:p-8 rounded-2xl bg-white/[0.02] border border-white/[0.06]"
           >
             <div className="flex gap-6 mb-6">
-              <SubTabButton active={carbonSub === 'pkg1'} label="Carbon Package 1" onClick={() => setCarbonSub('pkg1')} />
-              <SubTabButton active={carbonSub === 'pkg2'} label="Carbon Package 2" onClick={() => setCarbonSub('pkg2')} />
+              <SubTabButton active={carbonSub === 'pkg1'} label={isArabic ? 'حزمة الكربون 1' : 'Carbon Package 1'} onClick={() => setCarbonSub('pkg1')} />
+              <SubTabButton active={carbonSub === 'pkg2'} label={isArabic ? 'حزمة الكربون 2' : 'Carbon Package 2'} onClick={() => setCarbonSub('pkg2')} />
             </div>
 
             <AnimatePresence mode="wait">
@@ -276,11 +316,11 @@ const ExteriorTabs = ({ activeTab, setActiveTab }: Props) => {
                   className="flex flex-col md:flex-row gap-6 text-sm text-white/70"
                 >
                   <ul className="flex-1 grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-2.5">
-                    {carbonPackage1.map((item) => (
+                    {(isArabic ? arCarbonPackage1 : carbonPackage1).map((item) => (
                       <Bullet key={item}>{item}</Bullet>
                     ))}
                   </ul>
-                  <img src="/images/vrx-carbon-parts.png" alt="VRX Carbon Package" className="w-full md:w-64 lg:w-72 h-auto rounded-2xl object-cover shrink-0" />
+                  <img src="/images/vrx-carbon-parts.png" alt={isArabic ? 'حزمة كربون VRX' : 'VRX Carbon Package'} className="w-full md:w-64 lg:w-72 h-auto rounded-2xl object-cover shrink-0" />
                 </motion.div>
               )}
               {carbonSub === 'pkg2' && (
@@ -293,11 +333,11 @@ const ExteriorTabs = ({ activeTab, setActiveTab }: Props) => {
                   className="flex flex-col md:flex-row gap-6 text-sm text-white/70"
                 >
                   <ul className="flex-1 grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-2.5">
-                    {carbonPackage2.map((item) => (
+                    {(isArabic ? arCarbonPackage2 : carbonPackage2).map((item) => (
                       <Bullet key={item}>{item}</Bullet>
                     ))}
                   </ul>
-                  <img src="/images/vrx-carbon-parts.png" alt="VRX Carbon Package" className="w-full md:w-64 lg:w-72 h-auto rounded-2xl object-cover shrink-0" />
+                  <img src="/images/vrx-carbon-parts.png" alt={isArabic ? 'حزمة كربون VRX' : 'VRX Carbon Package'} className="w-full md:w-64 lg:w-72 h-auto rounded-2xl object-cover shrink-0" />
                 </motion.div>
               )}
             </AnimatePresence>
@@ -315,8 +355,8 @@ const ExteriorTabs = ({ activeTab, setActiveTab }: Props) => {
             className="p-6 md:p-8 rounded-2xl bg-white/[0.02] border border-white/[0.06]"
           >
             <div className="flex gap-6 mb-6">
-              <SubTabButton active={wheelsSub === 'classic'} label="Classic" onClick={() => setWheelsSub('classic')} />
-              <SubTabButton active={wheelsSub === 'ceramic'} label="Carbon Ceramic" onClick={() => setWheelsSub('ceramic')} />
+              <SubTabButton active={wheelsSub === 'classic'} label={isArabic ? 'قياسية' : 'Classic'} onClick={() => setWheelsSub('classic')} />
+              <SubTabButton active={wheelsSub === 'ceramic'} label={isArabic ? 'كربون سيراميك' : 'Carbon Ceramic'} onClick={() => setWheelsSub('ceramic')} />
             </div>
 
             <AnimatePresence mode="wait">
@@ -330,11 +370,11 @@ const ExteriorTabs = ({ activeTab, setActiveTab }: Props) => {
                   className="flex flex-col md:flex-row gap-6 text-sm text-white/70"
                 >
                   <ul className="flex-1 space-y-2.5">
-                    {brakesClassic.map((item) => (
+                    {(isArabic ? arBrakesClassic : brakesClassic).map((item) => (
                       <Bullet key={item}>{item}</Bullet>
                     ))}
                   </ul>
-                  <img src="/images/vrx-wheels-classic.png" alt="VRX Classic Brakes" className="w-full md:w-64 lg:w-72 h-auto rounded-2xl object-cover shrink-0" />
+                  <img src="/images/vrx-wheels-classic.png" alt={isArabic ? 'فرامل VRX القياسية' : 'VRX Classic Brakes'} className="w-full md:w-64 lg:w-72 h-auto rounded-2xl object-cover shrink-0" />
                 </motion.div>
               )}
               {wheelsSub === 'ceramic' && (
@@ -347,19 +387,19 @@ const ExteriorTabs = ({ activeTab, setActiveTab }: Props) => {
                   className="flex flex-col md:flex-row gap-6 text-sm text-white/70"
                 >
                   <div className="flex-1 space-y-4">
-                    <p className="font-semibold text-off-white">{brakesCarbonCeramic.intro}</p>
+                    <p className="font-semibold text-off-white">{isArabic ? arBrakesCarbonCeramic.intro : brakesCarbonCeramic.intro}</p>
                     <ul className="grid grid-cols-2 gap-x-8 gap-y-2.5">
-                      {brakesCarbonCeramic.parts.map((item) => (
+                      {(isArabic ? arBrakesCarbonCeramic.parts : brakesCarbonCeramic.parts).map((item) => (
                         <Bullet key={item}>{item}</Bullet>
                       ))}
                     </ul>
                     <ul className="space-y-2.5">
-                      {brakesCarbonCeramic.specs.map((item) => (
+                      {(isArabic ? arBrakesCarbonCeramic.specs : brakesCarbonCeramic.specs).map((item) => (
                         <Bullet key={item}>{item}</Bullet>
                       ))}
                     </ul>
                   </div>
-                  <img src="/images/vrx-wheels-ceramic.png" alt="VRX Carbon Ceramic Brakes" className="w-full md:w-64 lg:w-72 h-auto rounded-2xl object-cover shrink-0" />
+                  <img src="/images/vrx-wheels-ceramic.png" alt={isArabic ? 'فرامل VRX الكربون سيراميك' : 'VRX Carbon Ceramic Brakes'} className="w-full md:w-64 lg:w-72 h-auto rounded-2xl object-cover shrink-0" />
                 </motion.div>
               )}
             </AnimatePresence>

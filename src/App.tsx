@@ -9,16 +9,19 @@ const Tuning = lazy(() => import("./pages/Tuning"));
 const VRX = lazy(() => import("./pages/VRX"));
 const Services = lazy(() => import("./pages/Services"));
 const ServicePage = lazy(() => import("./pages/ServicePage"));
+const LocalGaragePage = lazy(() => import("./pages/LocalGaragePage"));
 const AboutUs = lazy(() => import("./pages/AboutUs"));
 const FAQPage = lazy(() => import("./pages/FAQPage"));
 const Blog = lazy(() => import("./pages/Blog"));
-const BlogPost = lazy(() => import("./pages/BlogPost"));
+const BlogArticleRouter = lazy(() => import("./pages/BlogArticleRouter"));
+const Brands = lazy(() => import("./pages/Brands"));
 const BrandPage = lazy(() => import("./pages/BrandPage"));
 const BrandServicePage = lazy(() => import("./pages/BrandServicePage"));
 const BestWorkshopPage = lazy(() => import("./pages/BestWorkshopPage"));
 const SitemapPage = lazy(() => import("./pages/SitemapPage"));
 const NotFound = lazy(() => import("./pages/NotFound"));
 import LegacyRedirectHandler from "./components/LegacyRedirectHandler";
+import LocaleRedirect from "./components/LocaleRedirect";
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -75,13 +78,63 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         <ScrollToTop />
+        <LocaleRedirect />
         <LegacyRedirectHandler />
         <Suspense fallback={<main className="min-h-screen bg-black" aria-label="Loading page" />}>
         <Routes>
           <Route path="/" element={<Index />} />
+          {/* Arabic uses the exact same page components and layouts as English. */}
+          <Route path="/ar" element={<Index />} />
+          <Route path="/ar/tuning" element={<Tuning />} />
+          <Route path="/ar/vrx" element={<VRX />} />
+          <Route path="/ar/services" element={<Services />} />
+          <Route path="/ar/services/garage-near-me-dubai" element={<LocalGaragePage />} />
+          <Route path="/ar/services/roadside-assistance-dubai" element={<LocalGaragePage />} />
+          <Route path="/ar/services/car-garage-dubai" element={<LocalGaragePage />} />
+          <Route path="/ar/services/mercedes-service-dubai" element={<Navigate to="/ar/services/mercedes-repair-dubai" replace />} />
+          {mercedesLegacyServicePages.map(([legacySlug, serviceSlug]) => (
+            <Route
+              key={`ar-${legacySlug}`}
+              path={`/ar/services/${legacySlug}`}
+              element={
+                <BrandServicePage
+                  brandSlugOverride="mercedes-benz-service-dubai"
+                  serviceSlugOverride={serviceSlug}
+                  canonicalPath={`/ar/services/${legacySlug}`}
+                />
+              }
+            />
+          ))}
+          <Route path="/ar/services/:slug" element={<ServicePage />} />
+          <Route path="/ar/about" element={<AboutUs />} />
+          <Route path="/ar/faq" element={<FAQPage />} />
+          <Route path="/ar/sitemap" element={<SitemapPage />} />
+          <Route path="/ar/blog" element={<Blog />} />
+          <Route path="/ar/blog/:slug" element={<BlogArticleRouter />} />
+          <Route path="/ar/brands" element={<Brands />} />
+          <Route path="/ar/brands/:slug" element={<BrandPage />} />
+          {mercedesBrandServiceRedirects.map(([serviceSlug, destination]) => (
+            <Route
+              key={`ar-${serviceSlug}`}
+              path={`/ar/brands/mercedes-benz-service-dubai/${serviceSlug}`}
+              element={<Navigate to={`/ar${destination}`} replace />}
+            />
+          ))}
+          <Route path="/ar/brands/:brandSlug/:serviceSlug" element={<BrandServicePage />} />
+          <Route path="/ar/best-car-workshop-dubai" element={<BestWorkshopPage />} />
+          <Route path="/ar/best-mercedes-workshop-dubai" element={<BestWorkshopPage />} />
+          <Route path="/ar/best-bmw-workshop-dubai" element={<BestWorkshopPage />} />
+          <Route path="/ar/best-porsche-workshop-dubai" element={<BestWorkshopPage />} />
+          <Route path="/ar/best-audi-workshop-dubai" element={<BestWorkshopPage />} />
+          <Route path="/ar/best-range-rover-workshop-dubai" element={<BestWorkshopPage />} />
+          <Route path="/ar/best-ferrari-workshop-dubai" element={<BestWorkshopPage />} />
+          <Route path="/ar/best-lamborghini-workshop-dubai" element={<BestWorkshopPage />} />
           <Route path="/tuning" element={<Tuning />} />
           <Route path="/vrx" element={<VRX />} />
           <Route path="/services" element={<Services />} />
+          <Route path="/services/garage-near-me-dubai" element={<LocalGaragePage />} />
+          <Route path="/services/roadside-assistance-dubai" element={<LocalGaragePage />} />
+          <Route path="/services/car-garage-dubai" element={<LocalGaragePage />} />
           <Route path="/services/mercedes-service-dubai" element={<Navigate to="/services/mercedes-repair-dubai" replace />} />
           {mercedesLegacyServicePages.map(([legacySlug, serviceSlug]) => (
             <Route
@@ -101,7 +154,8 @@ const App = () => (
           <Route path="/faq" element={<FAQPage />} />
           <Route path="/sitemap" element={<SitemapPage />} />
           <Route path="/blog" element={<Blog />} />
-          <Route path="/blog/:slug" element={<BlogPost />} />
+          <Route path="/blog/:slug" element={<BlogArticleRouter />} />
+          <Route path="/brands" element={<Brands />} />
           <Route path="/brands/:slug" element={<BrandPage />} />
           {mercedesBrandServiceRedirects.map(([serviceSlug, destination]) => (
             <Route

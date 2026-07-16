@@ -1,12 +1,16 @@
 import React from 'react';
 import { Reveal } from '@/components/motion/Reveal';
 import { CountUp } from '@/components/motion/CountUp';
+import { useLocale } from '@/i18n/use-locale';
+import { arHome } from '@/i18n/ar-home';
 
 type Stat =
   | { value: number; suffix?: string; raw?: undefined; title: string; description: string }
   | { raw: string; value?: undefined; suffix?: undefined; title: string; description: string };
 
 export const WhyChooseUs = () => {
+  const { isArabic } = useLocale();
+  const copy = isArabic ? arHome.why : null;
   const reasons: Stat[] = [
     {
       value: 40,
@@ -32,6 +36,7 @@ export const WhyChooseUs = () => {
       description: 'Round-the-clock assistance for our valued clients',
     },
   ];
+  const displayedReasons = reasons.map((reason, index) => copy ? { ...reason, ...copy.reasons[index] } : reason);
 
   return (
     <section className="py-10 sm:py-20 lg:py-32 bg-black relative overflow-hidden">
@@ -40,18 +45,18 @@ export const WhyChooseUs = () => {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
         <Reveal className="text-center mb-8 sm:mb-14 lg:mb-20">
-          <span className="eyebrow mb-3 sm:mb-5">The DIGI-TEC Standard</span>
+          <span className="eyebrow mb-3 sm:mb-5">{copy?.eyebrow ?? 'The DIGI-TEC Standard'}</span>
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-black mb-3 sm:mb-5">
-            Why Choose <span className="text-burnt-orange">D</span>IGI-TEC
+            {copy ? copy.title : <>Why Choose <span className="text-burnt-orange">D</span>IGI-TEC</>}
           </h2>
           <p className="text-sm sm:text-base lg:text-lg text-gray-300 max-w-4xl mx-auto leading-snug sm:leading-relaxed px-4">
-            Dubai's most trusted name in luxury automotive performance. Our commitment to excellence,
-            cutting-edge technology, and personalized service sets us apart in the region.
+            {copy?.description ?? <>Dubai's most trusted name in luxury automotive performance. Our commitment to excellence,
+            cutting-edge technology, and personalized service sets us apart in the region.</>}
           </p>
         </Reveal>
 
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-8 lg:gap-12 mb-8 sm:mb-14 lg:mb-20">
-          {reasons.map((reason, index) => (
+          {displayedReasons.map((reason, index) => (
             <Reveal key={reason.title} className="text-center group" delay={index * 0.1}>
               <div className="card-premium rounded-2xl p-3 sm:p-6 lg:p-8 mb-3 sm:mb-6 h-full">
                 <div className="text-xl sm:text-4xl lg:text-5xl xl:text-6xl font-black text-burnt-orange mb-1.5 sm:mb-4 tracking-tight tabular-nums">
@@ -70,24 +75,24 @@ export const WhyChooseUs = () => {
 
         <Reveal className="card-premium rounded-2xl p-4 sm:p-8 lg:p-12 text-center">
           <h3 className="text-lg sm:text-3xl font-bold mb-3 sm:mb-6">
-            State-of-the-Art Facility in the Heart of <span className="text-burnt-orange">D</span>ubai
+            {copy ? copy.facilityTitle : <>State-of-the-Art Facility in the Heart of <span className="text-burnt-orange">D</span>ubai</>}
           </h3>
           <p className="text-sm sm:text-xl text-gray-300 mb-4 sm:mb-8 max-w-4xl mx-auto px-2 sm:px-4 leading-snug sm:leading-relaxed">
-            Our 40,000 sq ft facility features the latest diagnostic equipment, precision tools,
-            and climate-controlled environments to ensure your luxury vehicle receives the care it deserves.
+            {copy?.facilityText ?? <>Our 40,000 sq ft facility features the latest diagnostic equipment, precision tools,
+            and climate-controlled environments to ensure your luxury vehicle receives the care it deserves.</>}
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-2.5 sm:gap-6 lg:gap-8 text-sm">
             <div className="bg-white/[0.03] border border-white/[0.06] rounded-xl p-3 sm:p-6">
-              <div className="font-semibold text-burnt-orange mb-1 sm:mb-2 text-sm sm:text-lg">Advanced Diagnostics</div>
-              <div className="text-gray-400 text-xs sm:text-sm">Latest OEM diagnostic equipment</div>
+              <div className="font-semibold text-burnt-orange mb-1 sm:mb-2 text-sm sm:text-lg">{copy?.facilities[0].title ?? 'Advanced Diagnostics'}</div>
+              <div className="text-gray-400 text-xs sm:text-sm">{copy?.facilities[0].text ?? 'Latest OEM diagnostic equipment'}</div>
             </div>
             <div className="bg-white/[0.03] border border-white/[0.06] rounded-xl p-3 sm:p-6">
-              <div className="font-semibold text-burnt-orange mb-1 sm:mb-2 text-sm sm:text-lg">Climate Controlled</div>
-              <div className="text-gray-400 text-xs sm:text-sm">Optimal working conditions</div>
+              <div className="font-semibold text-burnt-orange mb-1 sm:mb-2 text-sm sm:text-lg">{copy?.facilities[1].title ?? 'Climate Controlled'}</div>
+              <div className="text-gray-400 text-xs sm:text-sm">{copy?.facilities[1].text ?? 'Optimal working conditions'}</div>
             </div>
             <div className="bg-white/[0.03] border border-white/[0.06] rounded-xl p-3 sm:p-6">
-              <div className="font-semibold text-burnt-orange mb-1 sm:mb-2 text-sm sm:text-lg">Secure Storage</div>
-              <div className="text-gray-400 text-xs sm:text-sm">24/7 monitored facility</div>
+              <div className="font-semibold text-burnt-orange mb-1 sm:mb-2 text-sm sm:text-lg">{copy?.facilities[2].title ?? 'Secure Storage'}</div>
+              <div className="text-gray-400 text-xs sm:text-sm">{copy?.facilities[2].text ?? '24/7 monitored facility'}</div>
             </div>
           </div>
         </Reveal>

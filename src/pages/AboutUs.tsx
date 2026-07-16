@@ -11,35 +11,36 @@ import { MapPin, Phone, Mail, CheckCircle2, Zap, Wrench, Gauge } from 'lucide-re
 import workshopLuxuryBays from '@/assets/digitec-workshop-luxury-bays.jpg';
 import workshopServiceFloor from '@/assets/digitec-workshop-service-floor.jpg';
 import workshopLifts from '@/assets/digitec-workshop-lifts.jpg';
+import { useLocale } from '@/i18n/use-locale';
 
 const AboutUs = () => {
-  const url = 'https://digitecme.com/about';
+  const { isArabic } = useLocale();
+  const url = `https://digitecme.com${isArabic ? '/ar' : ''}/about`;
   const aboutGraph = React.useMemo(
     () =>
       pageGraph([
         buildWebPage({
           url,
-          name: 'About Digitec Performance Center | Car Workshop in Dubai',
-          description:
-            'Digitec Performance Center is a trusted Dubai workshop specialising in Mercedes, BMW, Audi, luxury vehicles, Chinese EVs and GAD Motors performance tuning.',
+          name: isArabic ? 'عن مركز ديجي-تك | ورشة سيارات في دبي' : 'About Digitec Performance Center | Car Workshop in Dubai',
+          description: isArabic ? 'تعرف على مركز ديجي-تك في القوز، دبي والمتخصص في صيانة وتشخيص وإصلاح السيارات الفاخرة والألمانية والكهربائية وتطوير الأداء.' : 'Digitec Performance Center is a trusted Dubai workshop specialising in Mercedes, BMW, Audi, luxury vehicles, Chinese EVs and GAD Motors performance tuning.',
           type: 'AboutPage',
           breadcrumbId: `${url}#breadcrumb`,
         }),
         buildBreadcrumb(url, [
-          { name: 'Home', url: 'https://digitecme.com/' },
-          { name: 'About', url },
+          { name: isArabic ? 'الرئيسية' : 'Home', url: `https://digitecme.com${isArabic ? '/ar' : '/'}` },
+          { name: isArabic ? 'من نحن' : 'About', url },
         ]),
         // AboutPage explicitly declares its subject as the Business.
         { '@type': 'Thing', '@id': `${url}#about`, mainEntity: businessRef },
       ]),
-    [],
+    [isArabic, url],
   );
 
   useSeo({
-    title: 'About Digitec Performance Center | Car Workshop in Dubai',
-    description: 'Digitec Performance Center is a trusted car workshop in Dubai specialising in Mercedes, BMW, Audi, luxury vehicles, Chinese EVs, and GAD Motors performance tuning.',
-    canonical: 'https://digitecme.com/about',
-    keywords: 'car workshop Dubai, Mercedes repair Dubai, German car specialist, GAD Motors tuning, EV repair Dubai, luxury car service',
+    title: isArabic ? 'عن مركز ديجي-تك | ورشة سيارات في دبي' : 'About Digitec Performance Center | Car Workshop in Dubai',
+    description: isArabic ? 'تعرف على مركز ديجي-تك في القوز، دبي: متخصصون في صيانة وتشخيص وإصلاح السيارات الفاخرة والألمانية والكهربائية وتطوير الأداء.' : 'Digitec Performance Center is a trusted car workshop in Dubai specialising in Mercedes, BMW, Audi, luxury vehicles, Chinese EVs, and GAD Motors performance tuning.',
+    canonical: url,
+    keywords: isArabic ? 'ورشة سيارات دبي، إصلاح مرسيدس دبي، متخصص سيارات ألمانية، GAD Motors، إصلاح سيارات كهربائية دبي، صيانة سيارات فاخرة' : 'car workshop Dubai, Mercedes repair Dubai, German car specialist, GAD Motors tuning, EV repair Dubai, luxury car service',
     jsonLd: aboutGraph,
   });
 
@@ -57,7 +58,7 @@ const AboutUs = () => {
             animate={{ opacity: 1, y: 0 }}
             className="eyebrow mb-4"
           >
-            Who We Are
+            {isArabic ? 'من نحن' : 'Who We Are'}
           </motion.p>
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
@@ -65,7 +66,7 @@ const AboutUs = () => {
             transition={{ delay: 0.2 }}
             className="text-4xl sm:text-5xl md:text-6xl font-black mb-6"
           >
-            About <span className="text-burnt-orange">D</span>IGI-TEC
+            {isArabic ? <>عن <span className="text-burnt-orange">D</span>IGI-TEC</> : <>About <span className="text-burnt-orange">D</span>IGI-TEC</>}
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -73,7 +74,7 @@ const AboutUs = () => {
             transition={{ delay: 0.4 }}
             className="text-white/50 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed"
           >
-            A leading car workshop in Dubai, specialising in German, luxury, performance, and advanced electric vehicles. Expert diagnostics, OEM parts, and dealer-level technology.
+            {isArabic ? 'ورشة سيارات رائدة في دبي، متخصصة بالسيارات الألمانية والفاخرة وعالية الأداء والكهربائية الحديثة، مع تشخيص متقدم وقطع OEM وتقنيات بمستوى الوكالة.' : 'A leading car workshop in Dubai, specialising in German, luxury, performance, and advanced electric vehicles. Expert diagnostics, OEM parts, and dealer-level technology.'}
           </motion.p>
         </div>
       </section>
@@ -81,25 +82,25 @@ const AboutUs = () => {
       <TrustBar />
 
       {/* Our Story */}
-      <section className="py-16 md:py-24">
+      <section id="contact" className="py-16 md:py-24">
         <div className="max-w-5xl mx-auto px-5 sm:px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center">
             <motion.div
-              initial={{ opacity: 0, x: -20 }}
+              initial={{ opacity: 0, x: isArabic ? 20 : -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
             >
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-black mb-6">
-                About <span className="text-burnt-orange">D</span>igitec Performance Center
+                {isArabic ? <>عن مركز <span className="text-burnt-orange">D</span>IGI-TEC للأداء</> : <>About <span className="text-burnt-orange">D</span>igitec Performance Center</>}
               </h2>
               <p className="text-white/60 text-sm sm:text-base leading-relaxed mb-4">
-                Digi-Tec Performance Centre is a premier automotive service and maintenance company based in Dubai, dedicated to comprehensive vehicle care. We specialise in vehicle diagnostics, mechanical repairs, preventive maintenance, auto body repair and painting, detailing, and performance enhancement.
+                {isArabic ? 'ديجي-تك مركز رائد لخدمة وصيانة السيارات في دبي، يقدم عناية شاملة تشمل التشخيص والإصلاحات الميكانيكية والصيانة الوقائية وإصلاح الهيكل والطلاء والعناية الخارجية وتطوير الأداء.' : 'Digi-Tec Performance Centre is a premier automotive service and maintenance company based in Dubai, dedicated to comprehensive vehicle care. We specialise in vehicle diagnostics, mechanical repairs, preventive maintenance, auto body repair and painting, detailing, and performance enhancement.'}
               </p>
               <p className="text-white/60 text-sm sm:text-base leading-relaxed mb-4">
-                Backed by a team of highly qualified technicians and state-of-the-art equipment, we deliver reliable, efficient, and cost-effective automotive solutions built to the highest industry standards. Our commitment to quality workmanship, innovation, safety, and customer satisfaction has made us a trusted name in the UAE automotive sector.
+                {isArabic ? 'يدعمنا فريق من الفنيين المؤهلين وأجهزة حديثة لتقديم حلول موثوقة وفعالة وفق معايير عالية. وقد جعلنا التزامنا بجودة العمل والابتكار والسلامة ورضا العملاء اسماً موثوقاً في قطاع السيارات بالإمارات.' : 'Backed by a team of highly qualified technicians and state-of-the-art equipment, we deliver reliable, efficient, and cost-effective automotive solutions built to the highest industry standards. Our commitment to quality workmanship, innovation, safety, and customer satisfaction has made us a trusted name in the UAE automotive sector.'}
               </p>
               <p className="text-white/60 text-sm sm:text-base leading-relaxed">
-                Whether you're an individual vehicle owner or managing a corporate fleet, our focus is the same: exceptional service and long-term value, ensuring every vehicle that leaves our workshop operates safely, efficiently, and at peak performance.
+                {isArabic ? 'سواء كنت مالك سيارة أو تدير أسطولاً، يبقى هدفنا واحداً: خدمة استثنائية وقيمة طويلة المدى، مع التأكد من أن كل سيارة تغادر الورشة تعمل بأمان وكفاءة وفي أفضل أداء.' : "Whether you're an individual vehicle owner or managing a corporate fleet, our focus is the same: exceptional service and long-term value, ensuring every vehicle that leaves our workshop operates safely, efficiently, and at peak performance."}
               </p>
             </motion.div>
             <motion.div
@@ -109,10 +110,10 @@ const AboutUs = () => {
               className="grid grid-cols-2 gap-4"
             >
               {[
-                { value: '40+', label: 'Years of Expertise' },
-                { value: '50,000+', label: 'Cars Served' },
-                { value: '8,000+', label: 'Happy Clients' },
-                { value: '40,000', label: 'Sq Ft Facility' },
+                { value: '40+', label: isArabic ? 'عاماً من الخبرة' : 'Years of Expertise' },
+                { value: '50,000+', label: isArabic ? 'سيارة تمت خدمتها' : 'Cars Served' },
+                { value: '8,000+', label: isArabic ? 'عميل راضٍ' : 'Happy Clients' },
+                { value: '40,000', label: isArabic ? 'قدم مربعة' : 'Sq Ft Facility' },
               ].map((stat) => (
                 <div key={stat.label} className="bg-white/[0.03] border border-white/[0.06] rounded-2xl p-5 text-center">
                   <div className="text-2xl sm:text-3xl font-black text-burnt-orange mb-1">{stat.value}</div>
@@ -133,12 +134,12 @@ const AboutUs = () => {
             viewport={{ once: true }}
             className="max-w-3xl mb-10 md:mb-12"
           >
-            <p className="text-burnt-orange text-xs uppercase tracking-[0.3em] font-semibold mb-3">Inside Digi-Tec</p>
+            <p className="text-burnt-orange text-xs uppercase tracking-[0.3em] font-semibold mb-3">{isArabic ? 'داخل ديجي-تك' : 'Inside Digi-Tec'}</p>
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-black mb-4">
-              Our Dubai <span className="text-burnt-orange">Workshop</span>
+              {isArabic ? <>ورشتنا في <span className="text-burnt-orange">دبي</span></> : <>Our Dubai <span className="text-burnt-orange">Workshop</span></>}
             </h2>
             <p className="text-white/60 text-sm sm:text-base leading-relaxed">
-              From specialist diagnostic work to mechanical repairs and performance builds, every vehicle is handled in our purpose-built Al Quoz facility.
+              {isArabic ? 'من التشخيص المتخصص إلى الإصلاحات الميكانيكية ومشاريع الأداء، نتعامل مع كل سيارة داخل منشأتنا المجهزة في القوز.' : 'From specialist diagnostic work to mechanical repairs and performance builds, every vehicle is handled in our purpose-built Al Quoz facility.'}
             </p>
           </motion.div>
 
@@ -146,18 +147,18 @@ const AboutUs = () => {
             {[
               {
                 image: workshopLuxuryBays,
-                alt: 'Luxury performance cars inside the Digi-Tec workshop in Dubai',
-                label: 'Luxury & Performance Bays',
+                alt: isArabic ? 'سيارات فاخرة وعالية الأداء داخل ورشة ديجي-تك في دبي' : 'Luxury performance cars inside the Digi-Tec workshop in Dubai',
+                label: isArabic ? 'مساحات السيارات الفاخرة والأداء' : 'Luxury & Performance Bays',
               },
               {
                 image: workshopServiceFloor,
-                alt: 'Digi-Tec service floor with luxury vehicles in Al Quoz, Dubai',
-                label: 'Purpose-Built Service Floor',
+                alt: isArabic ? 'ساحة خدمة ديجي-تك للسيارات الفاخرة في القوز دبي' : 'Digi-Tec service floor with luxury vehicles in Al Quoz, Dubai',
+                label: isArabic ? 'ساحة خدمة مجهزة' : 'Purpose-Built Service Floor',
               },
               {
                 image: workshopLifts,
-                alt: 'Vehicle lifts and specialist repair bays at Digi-Tec Dubai',
-                label: 'Specialist Repair Bays',
+                alt: isArabic ? 'رافعات ومساحات إصلاح متخصصة لدى ديجي-تك دبي' : 'Vehicle lifts and specialist repair bays at Digi-Tec Dubai',
+                label: isArabic ? 'مساحات إصلاح متخصصة' : 'Specialist Repair Bays',
               },
             ].map((photo, index) => (
               <motion.div
@@ -189,9 +190,9 @@ const AboutUs = () => {
             viewport={{ once: true }}
             className="text-center mb-12"
           >
-            <p className="text-burnt-orange text-xs uppercase tracking-[0.3em] font-semibold mb-3">What We Specialise In</p>
+            <p className="text-burnt-orange text-xs uppercase tracking-[0.3em] font-semibold mb-3">{isArabic ? 'مجالات تخصصنا' : 'What We Specialise In'}</p>
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-black">
-              Precision Across Every <span className="text-burnt-orange">Platform</span>
+              {isArabic ? <>دقة في كل <span className="text-burnt-orange">منصة</span></> : <>Precision Across Every <span className="text-burnt-orange">Platform</span></>}
             </h2>
           </motion.div>
 
@@ -199,18 +200,18 @@ const AboutUs = () => {
             {[
               {
                 icon: Wrench,
-                title: 'German & Performance Vehicles',
-                text: 'Known for our expertise in German car repair in Dubai, particularly Mercedes-Benz and AMG models. Our technicians use Star Diagnostic systems and advanced tools to accurately diagnose complex mechanical, electrical, and performance issues.',
+                title: isArabic ? 'السيارات الألمانية وعالية الأداء' : 'German & Performance Vehicles',
+                text: isArabic ? 'نمتلك خبرة في إصلاح السيارات الألمانية في دبي، خصوصاً مرسيدس-بنز وAMG، باستخدام أجهزة Star Diagnostic وأدوات متقدمة لتشخيص الأعطال الميكانيكية والكهربائية وأعطال الأداء.' : 'Known for our expertise in German car repair in Dubai, particularly Mercedes-Benz and AMG models. Our technicians use Star Diagnostic systems and advanced tools to accurately diagnose complex mechanical, electrical, and performance issues.',
               },
               {
                 icon: Zap,
-                title: 'Luxury Chinese & Electric Vehicles',
-                text: 'One of the few workshops in Dubai specialising in luxury Chinese and electric vehicles including Zeekr, BYD, Hongqi, Jetour, and Rox. Equipped to handle modern EV battery systems, electric drivetrains, and smart technology platforms.',
+                title: isArabic ? 'السيارات الصينية الفاخرة والكهربائية' : 'Luxury Chinese & Electric Vehicles',
+                text: isArabic ? 'من الورش المتخصصة في دبي بالسيارات الصينية الفاخرة والكهربائية مثل Zeekr وBYD وHongqi وJetour وROX، مع تجهيزات للتعامل مع البطاريات وأنظمة الدفع والمنصات الذكية.' : 'One of the few workshops in Dubai specialising in luxury Chinese and electric vehicles including Zeekr, BYD, Hongqi, Jetour, and Rox. Equipped to handle modern EV battery systems, electric drivetrains, and smart technology platforms.',
               },
               {
                 icon: Gauge,
-                title: 'GAD Motors Tuning Partner',
-                text: 'Official partnership with GAD Motors delivering high-performance tuning solutions. From ECU remapping to full performance upgrades, we increase power and driving dynamics while maintaining reliability and safety.',
+                title: isArabic ? 'شريك GAD Motors لتطوير الأداء' : 'GAD Motors Tuning Partner',
+                text: isArabic ? 'شراكة رسمية مع GAD Motors لتقديم حلول تطوير أداء متقدمة، من برمجة ECU إلى الترقيات الكاملة مع الحفاظ على الاعتمادية والسلامة.' : 'Official partnership with GAD Motors delivering high-performance tuning solutions. From ECU remapping to full performance upgrades, we increase power and driving dynamics while maintaining reliability and safety.',
               },
             ].map((item) => (
               <motion.div
@@ -237,25 +238,22 @@ const AboutUs = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            <p className="text-burnt-orange text-xs uppercase tracking-[0.3em] font-semibold mb-3">Our Mission</p>
+            <p className="text-burnt-orange text-xs uppercase tracking-[0.3em] font-semibold mb-3">{isArabic ? 'رسالتنا' : 'Our Mission'}</p>
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-black mb-6">
-              Engineering Excellence, Every <span className="text-burnt-orange">Drive</span>
+              {isArabic ? <>تميز هندسي في كل <span className="text-burnt-orange">رحلة</span></> : <>Engineering Excellence, Every <span className="text-burnt-orange">Drive</span></>}
             </h2>
             <p className="text-white/60 text-base sm:text-lg leading-relaxed">
-              To deliver high-quality automotive repair and performance services in Dubai, combining precision engineering, advanced diagnostics, and customer-focused service to keep every vehicle performing at its best.
+              {isArabic ? 'تقديم خدمات إصلاح وتطوير أداء عالية الجودة في دبي، تجمع بين الهندسة الدقيقة والتشخيص المتقدم وخدمة تركز على العميل للحفاظ على أفضل أداء لكل سيارة.' : 'To deliver high-quality automotive repair and performance services in Dubai, combining precision engineering, advanced diagnostics, and customer-focused service to keep every vehicle performing at its best.'}
             </p>
           </motion.div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-12 text-left">
             {[
-              'German car specialists in Dubai',
-              'Expertise in luxury, performance, and EVs',
-              'GAD Motors performance tuning partner',
-              'Dealer-level diagnostics and equipment',
-              'OEM and performance-grade parts',
-              'Transparent pricing, no hidden costs',
-              'Fast turnaround and trusted service',
-              'Servicing all major luxury marques',
+              ...(isArabic ? [
+                'متخصصون في السيارات الألمانية في دبي', 'خبرة بالسيارات الفاخرة وعالية الأداء والكهربائية', 'شريك GAD Motors لتطوير الأداء', 'تشخيص وأجهزة بمستوى الوكالة', 'قطع OEM وقطع أداء عالية الجودة', 'أسعار واضحة بلا تكاليف مخفية', 'إنجاز سريع وخدمة موثوقة', 'خدمة أهم العلامات الفاخرة',
+              ] : [
+                'German car specialists in Dubai', 'Expertise in luxury, performance, and EVs', 'GAD Motors performance tuning partner', 'Dealer-level diagnostics and equipment', 'OEM and performance-grade parts', 'Transparent pricing, no hidden costs', 'Fast turnaround and trusted service', 'Servicing all major luxury marques',
+              ]),
             ].map((point) => (
               <div key={point} className="flex items-start gap-3 bg-white/[0.03] border border-white/[0.06] rounded-xl p-4">
                 <CheckCircle2 className="w-5 h-5 text-burnt-orange shrink-0 mt-0.5" />
@@ -279,14 +277,14 @@ const AboutUs = () => {
             className="text-center mb-12"
           >
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-black mb-4">
-              Visit <span className="text-burnt-orange">Us</span>
+              {isArabic ? <>زوروا <span className="text-burnt-orange">ديجي-تك</span></> : <>Visit <span className="text-burnt-orange">Us</span></>}
             </h2>
           </motion.div>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
             {[
-              { icon: MapPin, title: 'Location', text: 'Al Quoz Industrial Area 3, Warehouse No.11-15, Dubai' },
-              { icon: Phone, title: 'Phone', text: '+971 4 340 2223' },
-              { icon: Mail, title: 'Email', text: 'info@digitecme.com' },
+              { icon: MapPin, title: isArabic ? 'الموقع' : 'Location', text: isArabic ? 'القوز الصناعية 3، مستودع 11-15، دبي' : 'Al Quoz Industrial Area 3, Warehouse No.11-15, Dubai' },
+              { icon: Phone, title: isArabic ? 'الهاتف' : 'Phone', text: '+971 4 340 2223' },
+              { icon: Mail, title: isArabic ? 'البريد الإلكتروني' : 'Email', text: 'info@digitecme.com' },
             ].map((item) => (
               <motion.div
                 key={item.title}

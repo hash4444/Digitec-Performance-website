@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, useParams, Navigate } from 'react-router-dom';
+import { useParams, Navigate } from 'react-router-dom';
 import { Phone, MessageCircle, CheckCircle2, ArrowRight } from 'lucide-react';
 import Header from '@/components/Header';
 import { Footer } from '@/components/Footer';
@@ -23,6 +23,11 @@ import {
 import BrandBookingForm from '@/components/BrandBookingForm';
 import { BRAND_PROFILES, getServicesForBrand } from '@/data/brandServices';
 import { CtaAssurance } from '@/components/TrustBar';
+import { LocalizedLink as Link } from '@/components/LocalizedLink';
+import { useLocale } from '@/i18n/use-locale';
+import { arBrandServices, arBrandServiceNames, localizeBrandToArabic } from '@/i18n/ar-brands';
+import { localizeServiceToArabic } from '@/i18n/ar-services';
+import ferrariEngineWorkshop from '@/assets/ferrari-engine-workshop-dubai.jpg';
 
 const getBrandSeoCopy = (brand: { name: string; specialization: string; whyChoose: { title: string }[] }) => {
   const focusAreas = brand.whyChoose.map((w) => w.title).slice(0, 4);
@@ -81,8 +86,10 @@ const MERCEDES_SERVICE_PATHS: Record<string, string> = {
 };
 
 const BrandPage = () => {
+  const { isArabic, localizedPath } = useLocale();
   const { slug } = useParams<{ slug: string }>();
-  const brand = slug ? getBrandBySlug(slug) : undefined;
+  const sourceBrand = slug ? getBrandBySlug(slug) : undefined;
+  const brand = sourceBrand && isArabic ? localizeBrandToArabic(sourceBrand) : sourceBrand;
 
   // Model lists per brand — surfaces which vehicles the brand page covers
   // to search engines and AI systems. Editable list, not exhaustive.
@@ -104,45 +111,45 @@ const BrandPage = () => {
 
   const brandJsonLd = React.useMemo(() => {
     if (!brand) return undefined;
-    const url = `https://digitecme.com/brands/${brand.slug}`;
+    const url = `https://digitecme.com${isArabic ? '/ar' : ''}/brands/${brand.slug}`;
     const breadcrumb = buildBreadcrumb(url, [
-      { name: 'Home', url: 'https://digitecme.com/' },
-      { name: 'Brands', url: 'https://digitecme.com/services' },
+      { name: isArabic ? 'الرئيسية' : 'Home', url: `https://digitecme.com${isArabic ? '/ar' : '/'}` },
+      { name: isArabic ? 'العلامات' : 'Brands', url: `https://digitecme.com${isArabic ? '/ar' : ''}/brands` },
       { name: brand.name, url },
     ]);
     const webPage = buildWebPage({
       url,
-      name: `${brand.name} Service & Repair in Dubai`,
+      name: isArabic ? `صيانة وإصلاح ${brand.name} في دبي` : `${brand.name} Service & Repair in Dubai`,
       description: brand.intro,
       breadcrumbId: `${url}#breadcrumb`,
-      primaryImage: brand.logo,
+      primaryImage: brand.logo || undefined,
     });
     const models = BRAND_MODELS[brand.slug] ?? [];
     const brandEntity = {
       '@type': 'Brand',
       '@id': `${url}#brand`,
       name: brand.name,
-      logo: brand.logo.startsWith('http') ? brand.logo : `https://digitecme.com${brand.logo}`,
+      ...(brand.logo ? { logo: brand.logo.startsWith('http') ? brand.logo : `https://digitecme.com${brand.logo}` } : {}),
     };
     const svc = {
       '@type': 'Service',
       '@id': `${url}#service`,
-      name: `${brand.name} Service & Repair in Dubai`,
-      serviceType: `${brand.name} Repair`,
+      name: isArabic ? `صيانة وإصلاح ${brand.name} في دبي` : `${brand.name} Service & Repair in Dubai`,
+      serviceType: isArabic ? `إصلاح ${brand.name}` : `${brand.name} Repair`,
       description: brand.intro,
       url,
       provider: businessRef,
       brand: { '@id': `${url}#brand` },
       areaServed: [
-        { '@type': 'City', name: 'Dubai' },
-        { '@type': 'City', name: 'Abu Dhabi' },
-        { '@type': 'City', name: 'Sharjah' },
-        { '@type': 'Country', name: 'United Arab Emirates' },
+        { '@type': 'City', name: isArabic ? 'دبي' : 'Dubai' },
+        { '@type': 'City', name: isArabic ? 'أبوظبي' : 'Abu Dhabi' },
+        { '@type': 'City', name: isArabic ? 'الشارقة' : 'Sharjah' },
+        { '@type': 'Country', name: isArabic ? 'الإمارات العربية المتحدة' : 'United Arab Emirates' },
       ],
       hasOfferCatalog: {
         '@type': 'OfferCatalog',
-        name: `${brand.name} Service Catalog`,
-        itemListElement: BRAND_OFFER_CATALOG.map((n) => ({
+        name: isArabic ? `دليل خدمات ${brand.name}` : `${brand.name} Service Catalog`,
+        itemListElement: (isArabic ? arBrandServices.map((service) => service.title) : BRAND_OFFER_CATALOG).map((n) => ({
           '@type': 'Offer',
           itemOffered: { '@type': 'Service', name: `${brand.name} ${n}` },
         })),
@@ -151,7 +158,7 @@ const BrandPage = () => {
         ? {
             audience: {
               '@type': 'Audience',
-              name: `${brand.name} owners`,
+              name: isArabic ? `مالكو ${brand.name}` : `${brand.name} owners`,
             },
             isRelatedTo: models.map((m) => ({
               '@type': 'Vehicle',
@@ -168,33 +175,40 @@ const BrandPage = () => {
       brand.faqs.map((f) => ({ question: f.q, answer: f.a })),
     );
     return pageGraph([webPage, breadcrumb, brandEntity, svc, ...(faq ? [faq] : [])]);
-  }, [brand]);
+  }, [brand, isArabic]);
 
   useSeo({
     title: brand
-      ? `${brand.name} Repair & Service Dubai | Specialist Workshop | Digi-Tec`
+      ? isArabic ? `إصلاح وصيانة ${brand.name} في دبي | مركز ديجي-تك` : `${brand.name} Repair & Service Dubai | Specialist Workshop | Digi-Tec`
       : 'Brand Service in Dubai | Digi-Tec Performance Centre',
     description: brand
-      ? `Independent ${brand.name} repair and service in Dubai: diagnostics, maintenance, brakes, transmission, suspension and AC. Genuine parts and specialist workshop care at Digi-Tec.`
+      ? isArabic ? `إصلاح وصيانة ${brand.name} في دبي: تشخيص وصيانة وفرامل وناقل حركة وتعليق وتكييف مع قطع بالمواصفات المناسبة لدى مركز ديجي-تك.` : `Independent ${brand.name} repair and service in Dubai: diagnostics, maintenance, brakes, transmission, suspension and AC. Genuine parts and specialist workshop care at Digi-Tec.`
       : 'Expert luxury car maintenance, diagnostics, and performance tuning in Dubai at Digi-Tec Performance Centre.',
-    canonical: brand ? `https://digitecme.com/brands/${brand.slug}` : 'https://digitecme.com/',
+    canonical: brand ? `https://digitecme.com${isArabic ? '/ar' : ''}/brands/${brand.slug}` : `https://digitecme.com${isArabic ? '/ar' : '/'}`,
     noindex: !brand,
     jsonLd: brandJsonLd,
   });
 
   if (!brand) {
-    return <Navigate to="/" replace />;
+    return <Navigate to={localizedPath('/')} replace />;
   }
 
   const whatsappHref = `https://wa.me/97143402223?text=${encodeURIComponent(
-    `Hi, I'd like to enquire about ${brand.name} service at Digi-Tec Performance Centre.`,
+    isArabic ? `مرحباً، أود الاستفسار عن خدمة ${brand.name} لدى مركز ديجي-تك بيرفورمانس.` : `Hi, I'd like to enquire about ${brand.name} service at Digi-Tec Performance Centre.`,
   )}`;
 
-  const otherBrands = brands.filter((b) => b.slug !== brand.slug);
+  const otherBrands = brands.filter((b) => b.slug !== brand.slug).slice(0, 12);
   const relatedServices = brand.relatedServices
     .map((s) => getServiceBySlug(s))
     .filter((s): s is NonNullable<ReturnType<typeof getServiceBySlug>> => Boolean(s));
-  const seoCopy = getBrandSeoCopy(brand);
+  const seoCopy = isArabic ? {
+    intro: `ديجي-تك مركز مستقل ومتخصص في خدمة ${brand.name} في دبي. نجمع بين التشخيص المتقدم والقطع المناسبة والفنيين ذوي الخبرة لتقديم صيانة وإصلاح واضحين من ورشتنا في القوز.`,
+    dubai: `تضع حرارة الإمارات ضغطاً إضافياً على التبريد والزيوت والبطارية والمطاط والتكييف. لذلك نفحص سيارات ${brand.name} مع مراعاة ظروف دبي وطريقة الاستخدام الفعلية.`,
+    expertise: `تشمل خبرتنا بسيارات ${brand.name} الصيانة والتشخيص والمحرك وناقل الحركة والتعليق والفرامل والكهرباء والتكييف، مع المعايرة والاختبار بعد الإصلاح.`,
+    parts: `نستخدم قطع OEM أصلية أو بدائل موثوقة مطابقة للمواصفات، ونوثق الاختيار والأعمال والتوصيات بوضوح قبل تسليم السيارة.`,
+    cta: `لحجز خدمة ${brand.name} في دبي، اتصل على +971 4 340 2223 أو أرسل رسالة واتساب أو استخدم نموذج الحجز في هذه الصفحة.`,
+  } : getBrandSeoCopy(brand);
+  const displayedServices = isArabic ? arBrandServices : SERVICES;
   const brandServices = getServicesForBrand(brand.slug);
   const profile = BRAND_PROFILES[brand.slug];
   const models = BRAND_MODELS[brand.slug] ?? [];
@@ -202,6 +216,7 @@ const BrandPage = () => {
     brand.slug === 'mercedes-benz-service-dubai'
       ? MERCEDES_SERVICE_PATHS[serviceSlug] ?? `/brands/${brand.slug}/${serviceSlug}`
       : `/brands/${brand.slug}/${serviceSlug}`;
+  const isFerrari = brand.slug === 'ferrari-service-dubai';
 
   return (
     <div className="min-h-screen bg-black text-off-white">
@@ -209,20 +224,36 @@ const BrandPage = () => {
 
       {/* Hero */}
       <section className="relative bg-black overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-burnt-orange/10 via-transparent to-transparent" />
+        {isFerrari ? (
+          <>
+            <img
+              src={ferrariEngineWorkshop}
+              alt=""
+              aria-hidden="true"
+              className="absolute inset-0 h-full w-full object-cover object-center opacity-60"
+            />
+            <div className="absolute inset-0 bg-black/80" />
+          </>
+        ) : (
+          <div className="absolute inset-0 bg-gradient-to-b from-burnt-orange/10 via-transparent to-transparent" />
+        )}
         <div className="max-w-7xl mx-auto px-4 sm:px-6 py-10 sm:py-20 lg:py-24 relative z-10">
           <div className="max-w-4xl mx-auto">
             <div>
               <div className="flex items-center gap-4 mb-5 sm:mb-6">
-                <div className="w-16 h-16 sm:w-20 sm:h-20 p-2 bg-white/90 rounded-full shadow-xl flex items-center justify-center">
-                  <img src={brand.logo} alt={`${brand.name} logo`} className="w-full h-full object-contain" />
+                <div className="w-16 h-16 sm:w-20 sm:h-20 p-2 bg-white/90 rounded-full shadow-xl flex items-center justify-center overflow-hidden">
+                  {brand.logo ? (
+                    <img src={brand.logo} alt={`${brand.name} logo`} className="w-full h-full object-contain" />
+                  ) : (
+                    <span className="text-2xl font-black text-burnt-orange">{brand.name.charAt(0)}</span>
+                  )}
                 </div>
                 <span className="text-burnt-orange font-bold uppercase tracking-widest text-xs sm:text-sm">
                   {brand.specialization}
                 </span>
               </div>
               <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black mb-4 sm:mb-6 leading-tight">
-                {brand.name} <span className="text-burnt-orange">Repair & Service Dubai</span>
+                {brand.name} <span className="text-burnt-orange">{isArabic ? 'للإصلاح والصيانة في دبي' : 'Repair & Service Dubai'}</span>
               </h1>
               <p className="text-gray-300 text-base sm:text-lg leading-relaxed mb-6 sm:mb-8 max-w-2xl">
                 {brand.intro}
@@ -235,14 +266,14 @@ const BrandPage = () => {
                   className="btn-primary"
                 >
                   <MessageCircle className="w-5 h-5" />
-                  WhatsApp Us
+                  {isArabic ? 'راسلنا عبر واتساب' : 'WhatsApp Us'}
                 </a>
                 <a href="tel:+97143402223" className="btn-secondary">
                   <Phone className="w-5 h-5" />
-                  Call +971 4 340 2223
+                  {isArabic ? 'اتصل على +971 4 340 2223' : 'Call +971 4 340 2223'}
                 </a>
               </div>
-              <CtaAssurance className="mt-4" align="start" />
+              <CtaAssurance className="mt-4" align="start" text={isArabic ? 'تقييم مجاني · بلا التزام · رد خلال دقائق' : undefined} />
             </div>
           </div>
         </div>
@@ -253,14 +284,14 @@ const BrandPage = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-10 sm:mb-14">
             <h2 className="text-2xl sm:text-4xl lg:text-5xl font-black mb-3 sm:mb-4">
-              Our <span className="text-burnt-orange">{brand.name}</span> Services
+              {isArabic ? <>خدمات <span className="text-burnt-orange">{brand.name}</span></> : <>Our <span className="text-burnt-orange">{brand.name}</span> Services</>}
             </h2>
             <p className="text-gray-300 max-w-3xl mx-auto text-sm sm:text-lg">
-              Comprehensive care for every {brand.name}, from routine maintenance to advanced performance work.
+              {isArabic ? `عناية متكاملة بسيارات ${brand.name}، من الصيانة الدورية إلى الإصلاحات المتقدمة.` : `Comprehensive care for every ${brand.name}, from routine maintenance to advanced performance work.`}
             </p>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
-            {SERVICES.map((s) => (
+            {displayedServices.map((s) => (
               <div
                 key={s.title}
                 className="card-premium rounded-2xl p-6 sm:p-7 transition-all duration-300"
@@ -279,29 +310,29 @@ const BrandPage = () => {
           <div className="max-w-7xl mx-auto px-4 sm:px-6">
             <div className="text-center mb-8 sm:mb-12">
               <h2 className="text-2xl sm:text-4xl lg:text-5xl font-black mb-3">
-                How We Service <span className="text-burnt-orange">{brand.name}</span> in Dubai
+                {isArabic ? <>كيف نخدم <span className="text-burnt-orange">{brand.name}</span> في دبي</> : <>How We Service <span className="text-burnt-orange">{brand.name}</span> in Dubai</>}
               </h2>
               <p className="text-gray-400 max-w-3xl mx-auto text-sm sm:text-base">
-                The workshop process is tailored to the diagnostic systems, drivetrain, and climate-related wear points of your {brand.name}.
+                {isArabic ? `نخصص خطوات الورشة لأنظمة التشخيص ومجموعة الحركة ونقاط التآكل المرتبطة بالمناخ في سيارة ${brand.name}.` : `The workshop process is tailored to the diagnostic systems, drivetrain, and climate-related wear points of your ${brand.name}.`}
               </p>
             </div>
             <div className="grid sm:grid-cols-3 gap-4 sm:gap-6">
               <div className="card-premium rounded-2xl p-5 sm:p-6">
-                <h3 className="text-lg font-bold text-off-white mb-3">Diagnostic platform</h3>
-                <p className="text-gray-400 text-sm leading-relaxed">{profile.diagnosticTool} for fault tracing, live data, coding, and service resets.</p>
+                <h3 className="text-lg font-bold text-off-white mb-3">{isArabic ? 'منصة التشخيص' : 'Diagnostic platform'}</h3>
+                <p className="text-gray-400 text-sm leading-relaxed">{isArabic ? `أجهزة تشخيص متخصصة لسيارات ${brand.name} لتتبع الأعطال وقراءة البيانات الحية والبرمجة وإعادة ضبط الصيانة.` : `${profile.diagnosticTool} for fault tracing, live data, coding, and service resets.`}</p>
               </div>
               <div className="card-premium rounded-2xl p-5 sm:p-6">
-                <h3 className="text-lg font-bold text-off-white mb-3">Core systems</h3>
-                <p className="text-gray-400 text-sm leading-relaxed">{profile.transmissionName}, {profile.suspensionType}, and the wider {profile.engineFamily} range.</p>
+                <h3 className="text-lg font-bold text-off-white mb-3">{isArabic ? 'الأنظمة الأساسية' : 'Core systems'}</h3>
+                <p className="text-gray-400 text-sm leading-relaxed">{isArabic ? `المحرك وناقل الحركة ونظام التعليق والأنظمة الإلكترونية الخاصة بطرازات ${brand.name}.` : <>{profile.transmissionName} • {profile.suspensionType} • {profile.engineFamily}</>}</p>
               </div>
               <div className="card-premium rounded-2xl p-5 sm:p-6">
-                <h3 className="text-lg font-bold text-off-white mb-3">Dubai-focused care</h3>
-                <p className="text-gray-400 text-sm leading-relaxed">{profile.climateNote}</p>
+                <h3 className="text-lg font-bold text-off-white mb-3">{isArabic ? 'عناية تناسب دبي' : 'Dubai-focused care'}</h3>
+                <p className="text-gray-400 text-sm leading-relaxed">{isArabic ? 'نفحص التبريد والبطارية والزيوت والإطارات والفرامل مع مراعاة حرارة دبي والازدحام وطريقة الاستخدام.' : profile.climateNote}</p>
               </div>
             </div>
             {models.length > 0 && (
               <div className="mt-6 sm:mt-8 card-premium rounded-2xl p-5 sm:p-6">
-                <h3 className="text-lg font-bold text-off-white mb-3">{brand.name} models we work with</h3>
+                <h3 className="text-lg font-bold text-off-white mb-3">{isArabic ? `طرازات ${brand.name} التي نخدمها` : `${brand.name} models we work with`}</h3>
                 <p className="text-gray-400 text-sm leading-relaxed">{models.join(' • ')}</p>
               </div>
             )}
@@ -314,10 +345,10 @@ const BrandPage = () => {
         <div className="max-w-5xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-8 sm:mb-12">
             <h2 className="text-2xl sm:text-4xl lg:text-5xl font-black mb-3 sm:mb-4">
-              Why {brand.name} Owners Choose <span className="text-burnt-orange">D</span>igi-Tec
+              {isArabic ? <>لماذا يختار ملاك {brand.name} <span className="text-burnt-orange">D</span>IGI-TEC؟</> : <>Why {brand.name} Owners Choose <span className="text-burnt-orange">D</span>igi-Tec</>}
             </h2>
             <p className="text-gray-400 max-w-2xl mx-auto text-sm sm:text-base">
-              Real technical depth on the systems that define your {brand.name}, not generic service copy.
+              {isArabic ? `خبرة فنية فعلية بأنظمة ${brand.name} وخدمة مصممة للسيارة، لا حلول عامة.` : `Real technical depth on the systems that define your ${brand.name}, not generic service copy.`}
             </p>
           </div>
           <div className="grid sm:grid-cols-2 gap-4 sm:gap-5">
@@ -343,10 +374,10 @@ const BrandPage = () => {
           <div className="max-w-7xl mx-auto px-4 sm:px-6">
             <div className="text-center mb-8 sm:mb-12">
               <h2 className="text-2xl sm:text-4xl lg:text-5xl font-black mb-3">
-                {brand.name} <span className="text-burnt-orange">Repair Dubai</span> — Every Service
+                {brand.name} <span className="text-burnt-orange">{isArabic ? 'للإصلاح في دبي' : 'Repair Dubai'}</span> — {isArabic ? 'جميع الخدمات' : 'Every Service'}
               </h2>
               <p className="text-gray-400 max-w-2xl mx-auto text-sm sm:text-base">
-                Whether you searched for {brand.name} repair Dubai, {brand.name} oil change Dubai, or {brand.name} brake repair Dubai, every specialist service has its own dedicated page with brand-specific parts, tools, and technical detail.
+                {isArabic ? `سواء كنت تبحث عن إصلاح ${brand.name} أو تغيير الزيت أو إصلاح الفرامل في دبي، ستجد صفحة مخصصة لكل خدمة.` : `Whether you searched for ${brand.name} repair Dubai, ${brand.name} oil change Dubai, or ${brand.name} brake repair Dubai, every specialist service has its own dedicated page with brand-specific parts, tools, and technical detail.`}
               </p>
             </div>
             <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 sm:gap-4">
@@ -357,10 +388,10 @@ const BrandPage = () => {
                   className="card-premium group flex flex-col justify-between rounded-2xl p-4 sm:p-5 transition-all duration-300 min-h-[110px]"
                 >
                   <span className="text-off-white font-bold text-sm sm:text-base leading-tight group-hover:text-burnt-orange">
-                    {brand.name} {s.label}
+                    {brand.name} {isArabic ? arBrandServiceNames[s.serviceSlug] ?? s.label : s.label}
                   </span>
                   <span className="inline-flex items-center gap-1 text-burnt-orange text-xs font-semibold mt-3">
-                    Learn more <ArrowRight className="w-3.5 h-3.5" />
+                    {isArabic ? 'اعرف المزيد' : 'Learn more'} <ArrowRight className={`w-3.5 h-3.5 ${isArabic ? 'rotate-180' : ''}`} />
                   </span>
                 </Link>
               ))}
@@ -369,26 +400,26 @@ const BrandPage = () => {
             <div className="max-w-4xl mx-auto mt-10 sm:mt-14 space-y-6 sm:space-y-8">
               <div>
                 <h3 className="text-xl sm:text-2xl font-bold text-off-white mb-2">
-                  {brand.name} Repair Dubai
+                  {isArabic ? `إصلاح ${brand.name} في دبي` : `${brand.name} Repair Dubai`}
                 </h3>
                 <p className="text-gray-400 text-sm sm:text-base leading-relaxed">
-                  Full mechanical and electrical repair for every {brand.name} platform, from engine and transmission overhauls to suspension, brakes, and cooling system work. Our workshop in Al Quoz handles {brand.name} repair in Dubai with genuine OEM parts and factory diagnostic tools.
+                  {isArabic ? `إصلاح ميكانيكي وكهربائي متكامل لسيارات ${brand.name}، من المحرك وناقل الحركة إلى التعليق والفرامل والتبريد باستخدام تشخيص متقدم وقطع مناسبة.` : `Full mechanical and electrical repair for every ${brand.name} platform, from engine and transmission overhauls to suspension, brakes, and cooling system work. Our workshop in Al Quoz handles ${brand.name} repair in Dubai with genuine OEM parts and factory diagnostic tools.`}
                 </p>
               </div>
               <div>
                 <h3 className="text-xl sm:text-2xl font-bold text-off-white mb-2">
-                  {brand.name} Oil Change Dubai
+                  {isArabic ? `تغيير زيت ${brand.name} في دبي` : `${brand.name} Oil Change Dubai`}
                 </h3>
                 <p className="text-gray-400 text-sm sm:text-base leading-relaxed">
-                  Manufacturer-approved oil and filter service using the correct {brand.name} specification fluid for Dubai's climate. Every {brand.name} oil change in Dubai includes a full multi-point inspection, service reset, and digital service record.
+                  {isArabic ? `زيت وفلتر بالمواصفة المناسبة لسيارات ${brand.name} مع فحص متعدد النقاط وإعادة ضبط مؤشر الصيانة.` : `Manufacturer-approved oil and filter service using the correct ${brand.name} specification fluid for Dubai's climate. Every ${brand.name} oil change in Dubai includes a full multi-point inspection, service reset, and digital service record.`}
                 </p>
               </div>
               <div>
                 <h3 className="text-xl sm:text-2xl font-bold text-off-white mb-2">
-                  {brand.name} Brake Repair Dubai
+                  {isArabic ? `إصلاح فرامل ${brand.name} في دبي` : `${brand.name} Brake Repair Dubai`}
                 </h3>
                 <p className="text-gray-400 text-sm sm:text-base leading-relaxed">
-                  Pads, discs, sensors, calipers, and full hydraulic system work using genuine {brand.name} components. Our {brand.name} brake repair service in Dubai covers ceramic, carbon-ceramic, and standard iron setups with proper bedding-in and system bleeding.
+                  {isArabic ? `فحمات وأقراص وحساسات وكليبرات وخدمة للنظام الهيدروليكي باستخدام قطع مناسبة لسيارات ${brand.name}.` : `Pads, discs, sensors, calipers, and full hydraulic system work using genuine ${brand.name} components. Our ${brand.name} brake repair service in Dubai covers ceramic, carbon-ceramic, and standard iron setups with proper bedding-in and system bleeding.`}
                 </p>
               </div>
             </div>
@@ -401,23 +432,23 @@ const BrandPage = () => {
         <div className="max-w-5xl mx-auto px-4 sm:px-6">
           <div className="card-premium text-center rounded-2xl p-6 sm:p-10">
             <p className="text-off-white font-bold text-xl sm:text-2xl mb-2">
-              Trusted by {brand.name} owners across the UAE
+              {isArabic ? `موثوق لدى ملاك ${brand.name} في الإمارات` : `Trusted by ${brand.name} owners across the UAE`}
             </p>
             <p className="text-gray-400 text-sm sm:text-base mb-8">
-              Genuine OEM parts, factory-grade diagnostics, and transparent pricing since 2009.
+              {isArabic ? 'قطع OEM وتشخيص متقدم وأسعار واضحة.' : 'Genuine OEM parts, factory-grade diagnostics, and transparent pricing since 2009.'}
             </p>
             <div className="grid grid-cols-3 gap-4 sm:gap-8 max-w-2xl mx-auto">
               <div>
                 <div className="text-2xl sm:text-4xl font-black text-burnt-orange">50,000+</div>
-                <div className="text-xs sm:text-sm text-gray-400 mt-1">Cars Served</div>
+                <div className="text-xs sm:text-sm text-gray-400 mt-1">{isArabic ? 'سيارة تمت خدمتها' : 'Cars Served'}</div>
               </div>
               <div>
                 <div className="text-2xl sm:text-4xl font-black text-burnt-orange">8,000+</div>
-                <div className="text-xs sm:text-sm text-gray-400 mt-1">Satisfied Customers</div>
+                <div className="text-xs sm:text-sm text-gray-400 mt-1">{isArabic ? 'عميل راضٍ' : 'Satisfied Customers'}</div>
               </div>
               <div>
                 <div className="text-2xl sm:text-4xl font-black text-burnt-orange">40,000</div>
-                <div className="text-xs sm:text-sm text-gray-400 mt-1">Sq Ft Facility</div>
+                <div className="text-xs sm:text-sm text-gray-400 mt-1">{isArabic ? 'قدم مربعة' : 'Sq Ft Facility'}</div>
               </div>
             </div>
           </div>
@@ -431,29 +462,29 @@ const BrandPage = () => {
           <article className="space-y-8 sm:space-y-10">
             <header>
               <h2 className="text-2xl sm:text-4xl lg:text-5xl font-black mb-4 sm:mb-6 leading-tight">
-                Specialist <span className="text-burnt-orange">{brand.name}</span> Service in Dubai
+                {isArabic ? <>خدمة <span className="text-burnt-orange">{brand.name}</span> المتخصصة في دبي</> : <>Specialist <span className="text-burnt-orange">{brand.name}</span> Service in Dubai</>}
               </h2>
               <p className="text-gray-300 text-base sm:text-lg leading-relaxed">{seoCopy.intro}</p>
             </header>
             <div>
               <h3 className="text-xl sm:text-2xl font-bold text-off-white mb-3">
-                Built for Dubai Driving Conditions
+                {isArabic ? 'خدمة تناسب ظروف القيادة في دبي' : 'Built for Dubai Driving Conditions'}
               </h3>
               <p className="text-gray-300 text-sm sm:text-base leading-relaxed">{seoCopy.dubai}</p>
             </div>
             <div>
               <h3 className="text-xl sm:text-2xl font-bold text-off-white mb-3">
-                {brand.name} Expertise You Can Verify
+                {isArabic ? `خبرة موثوقة بسيارات ${brand.name}` : `${brand.name} Expertise You Can Verify`}
               </h3>
               <p className="text-gray-300 text-sm sm:text-base leading-relaxed">{seoCopy.expertise}</p>
             </div>
             <div>
               <h3 className="text-xl sm:text-2xl font-bold text-off-white mb-3">
-                Genuine Parts and Transparent Reporting
+                {isArabic ? 'قطع أصلية وتقارير واضحة' : 'Genuine Parts and Transparent Reporting'}
               </h3>
               <p className="text-gray-300 text-sm sm:text-base leading-relaxed">{seoCopy.parts}</p>
             </div>
-            <div className="border-l-2 border-burnt-orange pl-5 sm:pl-6">
+            <div className={`${isArabic ? 'border-r-2 pr-5 sm:pr-6' : 'border-l-2 pl-5 sm:pl-6'} border-burnt-orange`}>
               <p className="text-gray-200 text-sm sm:text-base leading-relaxed">{seoCopy.cta}</p>
             </div>
           </article>
@@ -465,10 +496,10 @@ const BrandPage = () => {
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-8 sm:mb-12">
             <h2 className="text-2xl sm:text-4xl lg:text-5xl font-black mb-3 sm:mb-4">
-              {brand.name} <span className="text-burnt-orange">FAQs</span>
+              {brand.name} <span className="text-burnt-orange">{isArabic ? 'الأسئلة الشائعة' : 'FAQs'}</span>
             </h2>
             <p className="text-gray-400 text-sm sm:text-base">
-              The questions {brand.name} owners ask us most.
+              {isArabic ? `أكثر الأسئلة التي يطرحها ملاك ${brand.name}.` : `The questions ${brand.name} owners ask us most.`}
             </p>
           </div>
           <Accordion type="single" collapsible className="space-y-3">
@@ -478,7 +509,7 @@ const BrandPage = () => {
                 value={`q-${i}`}
                 className="bg-white/[0.03] border border-white/10 rounded-2xl px-5 sm:px-6 data-[state=open]:border-burnt-orange/40"
               >
-                <AccordionTrigger className="text-left text-off-white font-semibold text-base sm:text-lg hover:no-underline py-5">
+                <AccordionTrigger className={`${isArabic ? 'text-right' : 'text-left'} text-off-white font-semibold text-base sm:text-lg hover:no-underline py-5`}>
                   {f.q}
                 </AccordionTrigger>
                 <AccordionContent className="text-gray-300 text-sm sm:text-base leading-relaxed pb-5">
@@ -496,10 +527,10 @@ const BrandPage = () => {
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-start">
             <div>
               <h2 className="text-2xl sm:text-4xl lg:text-5xl font-black mb-4 sm:mb-6 leading-tight">
-                Book Your <span className="text-burnt-orange">{brand.name}</span> Service
+                {isArabic ? <>احجز خدمة <span className="text-burnt-orange">{brand.name}</span></> : <>Book Your <span className="text-burnt-orange">{brand.name}</span> Service</>}
               </h2>
               <p className="text-gray-300 text-base sm:text-lg leading-relaxed mb-6">
-                Tell us about your car and the work you need. We will get back to you on WhatsApp with a quote and the earliest available slot.
+                {isArabic ? 'أخبرنا عن سيارتك والخدمة المطلوبة، وسنتواصل معك عبر واتساب بعرض السعر وأقرب موعد متاح.' : 'Tell us about your car and the work you need. We will get back to you on WhatsApp with a quote and the earliest available slot.'}
               </p>
               <div className="flex flex-col sm:flex-row gap-3 mb-6">
                 <a
@@ -509,7 +540,7 @@ const BrandPage = () => {
                   className="inline-flex items-center justify-center gap-2 bg-burnt-orange hover:bg-burnt-orange/90 text-black font-bold px-6 py-3 rounded-2xl transition-all duration-300 hover:scale-105 shadow-xl"
                 >
                   <MessageCircle className="w-5 h-5" />
-                  WhatsApp Now
+                  {isArabic ? 'واتساب الآن' : 'WhatsApp Now'}
                 </a>
                 <a
                   href="tel:+97143402223"
@@ -520,7 +551,7 @@ const BrandPage = () => {
                 </a>
               </div>
               <p className="text-gray-500 text-sm">
-                Or use the form to send your details directly.
+                {isArabic ? 'أو استخدم النموذج لإرسال تفاصيلك مباشرة.' : 'Or use the form to send your details directly.'}
               </p>
             </div>
             <div className="card-premium rounded-2xl p-5 sm:p-8">
@@ -536,14 +567,16 @@ const BrandPage = () => {
           <div className="max-w-7xl mx-auto px-4 sm:px-6">
             <div className="text-center mb-8 sm:mb-12">
               <h2 className="text-2xl sm:text-4xl font-black mb-3">
-                Related <span className="text-burnt-orange">Services</span> for {brand.name}
+                {isArabic ? <>خدمات <span className="text-burnt-orange">ذات صلة</span> بـ {brand.name}</> : <>Related <span className="text-burnt-orange">Services</span> for {brand.name}</>}
               </h2>
               <p className="text-gray-400 text-sm sm:text-base">
-                The specialist work we do most often for {brand.name} owners.
+                {isArabic ? `أكثر الخدمات التي نقدمها لملاك ${brand.name}.` : `The specialist work we do most often for ${brand.name} owners.`}
               </p>
             </div>
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
-              {relatedServices.map((s) => (
+              {relatedServices.map((sourceService) => {
+                const s = isArabic ? localizeServiceToArabic(sourceService) : sourceService;
+                return (
                 <Link
                   key={s.slug}
                   to={`/services/${s.slug}`}
@@ -563,11 +596,12 @@ const BrandPage = () => {
                     </h3>
                     <p className="text-gray-400 text-sm leading-relaxed mb-4 flex-1">{s.description}</p>
                     <span className="inline-flex items-center gap-1 text-burnt-orange text-sm font-semibold">
-                      Learn more <ArrowRight className="w-4 h-4" />
+                      {isArabic ? 'اعرف المزيد' : 'Learn more'} <ArrowRight className={`w-4 h-4 ${isArabic ? 'rotate-180' : ''}`} />
                     </span>
                   </div>
                 </Link>
-              ))}
+                );
+              })}
             </div>
           </div>
         </section>
@@ -578,10 +612,10 @@ const BrandPage = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-8 sm:mb-12">
             <h2 className="text-2xl sm:text-4xl font-black mb-3">
-              Other <span className="text-burnt-orange">Brands</span> We Service
+              {isArabic ? <>علامات <span className="text-burnt-orange">أخرى</span> نخدمها</> : <>Other <span className="text-burnt-orange">Brands</span> We Service</>}
             </h2>
             <p className="text-gray-400 text-sm sm:text-base">
-              Specialist care for every prestige marque in our workshop.
+              {isArabic ? 'عناية متخصصة بمختلف علامات السيارات الفاخرة في ورشتنا.' : 'Specialist care for every prestige marque in our workshop.'}
             </p>
           </div>
           <div className="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-6 gap-3 sm:gap-5">
@@ -590,10 +624,14 @@ const BrandPage = () => {
                 key={b.slug}
                 to={`/brands/${b.slug}`}
                 className="group flex flex-col items-center gap-2 p-3 sm:p-4 bg-white/5 hover:bg-white/10 border border-white/5 hover:border-burnt-orange/40 rounded-2xl transition-all duration-300"
-                aria-label={`${b.name} service in Dubai`}
+                aria-label={isArabic ? `خدمة ${b.name} في دبي` : `${b.name} service in Dubai`}
               >
-                <div className="w-14 h-14 sm:w-16 sm:h-16 p-2 bg-white/90 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                  <img src={b.logo} alt={`${b.name} logo`} className="w-full h-full object-contain" />
+                <div className="w-14 h-14 sm:w-16 sm:h-16 p-2 bg-white/90 rounded-full flex items-center justify-center overflow-hidden group-hover:scale-110 transition-transform duration-300">
+                  {b.logo ? (
+                    <img src={b.logo} alt={isArabic ? `شعار ${b.name}` : `${b.name} logo`} className="w-full h-full object-contain" />
+                  ) : (
+                    <span className="text-xl font-black text-burnt-orange">{b.name.charAt(0)}</span>
+                  )}
                 </div>
                 <span className="text-[11px] sm:text-xs text-gray-300 group-hover:text-burnt-orange text-center font-medium leading-tight">
                   {b.name}

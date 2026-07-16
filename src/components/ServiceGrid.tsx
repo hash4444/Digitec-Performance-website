@@ -1,8 +1,10 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { LocalizedLink as Link } from '@/components/LocalizedLink';
 import { Wrench, Settings, Battery, Car, Gauge, Bolt, PaintRoller, Shield, ChevronRight } from 'lucide-react';
 import { services } from '@/data/services';
 import { Reveal } from '@/components/motion/Reveal';
+import { useLocale } from '@/i18n/use-locale';
+import { arHome, arServiceCards } from '@/i18n/ar-home';
 
 const categoryIcons: Record<string, React.ReactNode> = {
   'Core Mechanical Services': <Wrench className="w-4 h-4 sm:w-6 sm:h-6" />,
@@ -30,6 +32,8 @@ const grouped = categoryOrder.map((cat) => ({
 }));
 
 export const ServiceGrid = () => {
+  const { isArabic } = useLocale();
+  const copy = isArabic ? arHome.services : null;
   return (
     <>
       <style>{`
@@ -50,15 +54,15 @@ export const ServiceGrid = () => {
       <section className="py-10 sm:py-20 lg:py-32 bg-black">
         <div className="max-w-full mx-auto px-4 sm:px-6">
           <Reveal className="text-center mb-8 sm:mb-14 lg:mb-20">
-            <span className="eyebrow mb-3 sm:mb-5">Complete Care</span>
+            <span className="eyebrow mb-3 sm:mb-5">{copy?.eyebrow ?? 'Complete Care'}</span>
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black mb-3 sm:mb-5">
-              Explore Our Full Range of Services
+              {copy?.title ?? 'Explore Our Full Range of Services'}
             </h2>
             <p className="text-sm sm:text-base lg:text-lg text-gray-300 max-w-3xl mx-auto mb-2 sm:mb-4 px-4 leading-snug sm:leading-relaxed">
-              Premium care for every system, every detail, every ride.
+              {copy?.description ?? 'Premium care for every system, every detail, every ride.'}
             </p>
             <p className="hidden sm:inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.25em] text-gray-500">
-              Scroll to explore <span className="text-burnt-orange">→</span>
+              {copy?.scroll ?? 'Scroll to explore'} <span className="text-burnt-orange">{isArabic ? '←' : '→'}</span>
             </p>
           </Reveal>
 
@@ -68,7 +72,7 @@ export const ServiceGrid = () => {
                 <div className="flex items-center gap-3 sm:gap-4 mb-4 sm:mb-8 px-2">
                   <span className="block w-1 h-5 sm:h-7 rounded-full bg-burnt-orange" aria-hidden="true" />
                   <h3 className="text-base sm:text-2xl md:text-3xl font-bold text-off-white">
-                    {category.title}
+                    {copy?.categories[category.title] ?? category.title}
                   </h3>
                 </div>
 
@@ -94,13 +98,13 @@ export const ServiceGrid = () => {
                             <div className="flex items-start gap-2 sm:gap-4 mb-2 sm:mb-4">
                               <div className="flex-1">
                                 <h4 className="text-sm sm:text-xl lg:text-2xl font-bold mb-0 sm:mb-3 group-hover:text-burnt-orange transition-colors duration-300 leading-tight line-clamp-2">
-                                  {service.title}
+                                  {isArabic ? arServiceCards[service.slug]?.title ?? service.title : service.title}
                                 </h4>
                               </div>
                             </div>
 
                             <p className="text-gray-400 sm:text-gray-300 leading-snug sm:leading-relaxed text-xs sm:text-sm lg:text-base mb-3 sm:mb-6 flex-1 line-clamp-2 sm:line-clamp-none">
-                              {service.description}
+                              {isArabic ? arServiceCards[service.slug]?.description ?? service.description : service.description}
                             </p>
 
                             <div className="pt-2 sm:pt-4 sm:border-t sm:border-white/10 mt-auto">
@@ -108,13 +112,13 @@ export const ServiceGrid = () => {
                                 to={`/services/${service.slug}`}
                                 className="inline-flex sm:hidden items-center gap-1 text-burnt-orange font-semibold text-xs"
                               >
-                                Learn More <ChevronRight className="w-3 h-3" />
+                                {copy?.learn ?? 'Learn More'} <ChevronRight className={`w-3 h-3 ${isArabic ? 'rotate-180' : ''}`} />
                               </Link>
                               <Link
                                 to={`/services/${service.slug}`}
                                 className="hidden sm:block w-full bg-burnt-orange hover:bg-[#ff7d4d] text-black font-bold text-xs lg:text-sm uppercase tracking-[0.14em] px-6 py-3.5 rounded-lg transition-colors duration-300 text-center"
                               >
-                                Learn More
+                                {copy?.learn ?? 'Learn More'}
                               </Link>
                             </div>
                           </div>
@@ -129,7 +133,7 @@ export const ServiceGrid = () => {
 
           <div className="text-center mt-8 sm:mt-16 lg:mt-20">
             <Link to="/services" className="btn-primary w-full sm:w-auto">
-              View All Services
+              {copy?.viewAll ?? 'View All Services'}
             </Link>
           </div>
         </div>

@@ -1,12 +1,15 @@
 import React from 'react';
 import { ShieldCheck, Clock, Car, MapPin } from 'lucide-react';
+import { useLocale } from '@/i18n/use-locale';
+import { arHome } from '@/i18n/ar-home';
 
 /**
  * Slim authority strip — social proof + credibility signals.
  * Designed to sit directly under a hero or above a CTA on dark sections.
  */
 export const TrustBar = ({ className = '' }: { className?: string }) => {
-  const items = [
+  const { isArabic } = useLocale();
+  const englishItems = [
     {
       icon: <Clock className="w-4 h-4 text-burnt-orange" />,
       value: '40+ years',
@@ -28,6 +31,13 @@ export const TrustBar = ({ className = '' }: { className?: string }) => {
       label: 'Dubai workshop',
     },
   ];
+  const icons = [Clock, Car, ShieldCheck, MapPin];
+  const items = isArabic
+    ? arHome.trust.map((item, index) => {
+        const Icon = icons[index];
+        return { ...item, icon: <Icon className="w-4 h-4 text-burnt-orange" /> };
+      })
+    : englishItems;
 
   return (
     <div className={`border-y border-white/[0.07] bg-white/[0.02] ${className}`}>
@@ -53,14 +63,19 @@ export const TrustBar = ({ className = '' }: { className?: string }) => {
 export const CtaAssurance = ({
   className = '',
   align = 'center',
+  text,
 }: {
   className?: string;
   align?: 'center' | 'start';
-}) => (
-  <p
-    className={`flex items-center ${align === 'center' ? 'justify-center' : 'justify-start'} gap-2 text-[11px] sm:text-xs text-gray-400 tracking-wide ${className}`}
-  >
-    <ShieldCheck className="w-3.5 h-3.5 text-burnt-orange shrink-0" />
-    Free assessment · No obligation · WhatsApp reply within minutes
-  </p>
-);
+  text?: string;
+}) => {
+  const { isArabic } = useLocale();
+  return (
+    <p
+      className={`flex items-center ${align === 'center' ? 'justify-center' : 'justify-start'} gap-2 text-[11px] sm:text-xs text-gray-400 tracking-wide ${className}`}
+    >
+      <ShieldCheck className="w-3.5 h-3.5 text-burnt-orange shrink-0" />
+      {text ?? (isArabic ? 'تقييم مجاني · بلا التزام · رد عبر واتساب خلال دقائق' : 'Free assessment · No obligation · WhatsApp reply within minutes')}
+    </p>
+  );
+};

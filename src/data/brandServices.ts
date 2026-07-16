@@ -71,6 +71,15 @@ const EXTENDED_SERVICE_BRANDS = new Set([
   'bentley-service-dubai',
   'rolls-royce-service-dubai',
   'bugatti-service-dubai',
+  'jeep-service-dubai',
+  'nissan-service-dubai',
+  'maserati-service-dubai',
+  'toyota-service-dubai',
+  'pagani-service-dubai',
+  'volkswagen-service-dubai',
+  'volvo-service-dubai',
+  'jetour-service-dubai',
+  'cadillac-service-dubai',
 ]);
 
 export interface BrandProfile {
@@ -328,6 +337,44 @@ export const BRAND_PROFILES: Record<string, BrandProfile> = {
     heritageLine: 'Gaydon-grade care, quietly, on your schedule.',
   },
 };
+
+const createAdditionalServiceProfile = (
+  brandSlug: string,
+  brandName: string,
+  models: string[],
+  diagnosticTool: string,
+  engineFamily: string,
+  transmissionName: string,
+): BrandProfile => ({
+  brandSlug,
+  brandName,
+  shortName: brandName,
+  models,
+  diagnosticTool,
+  engineFamily,
+  engineCodes: [],
+  oilSpec: 'manufacturer-approved engine oil matched to the vehicle specification',
+  oilIntervalKm: 10000,
+  transmissionName,
+  transmissionFluid: 'manufacturer-approved transmission fluid matched to the vehicle specification',
+  brakeSystem: 'factory braking system with electronic brake control and ABS/ESC diagnostics',
+  suspensionType: 'factory suspension system with steering-angle and ride-height checks where fitted',
+  acRefrigerant: 'R-134a or R-1234yf, confirmed by vehicle specification',
+  climateNote: `${brandName} cooling, air-conditioning, battery, brake, and suspension systems are inspected with Dubai heat, stop-start traffic, and dust exposure in mind.`,
+  heritageLine: `Digi-Tec applies a documented, diagnostic-first process to every ${brandName} service in Dubai.`,
+});
+
+Object.assign(BRAND_PROFILES, {
+  'jeep-service-dubai': createAdditionalServiceProfile('jeep-service-dubai', 'Jeep', ['Wrangler', 'Grand Cherokee', 'Gladiator', 'Compass', 'Cherokee'], 'WiTECH-compatible diagnostic access and advanced live-data testing', 'Pentastar V6, Hurricane turbo, and plug-in hybrid platforms', '8-speed automatic and four-wheel-drive drivetrain systems'),
+  'nissan-service-dubai': createAdditionalServiceProfile('nissan-service-dubai', 'Nissan', ['Patrol', 'Pathfinder', 'X-Trail', 'Altima', 'Maxima', 'Z', 'GT-R'], 'CONSULT-III-compatible diagnostic access and advanced live-data testing', 'VQ V6, VK56 V8, VR38DETT, and e-POWER platforms', 'automatic, CVT, dual-clutch, and four-wheel-drive drivetrain systems'),
+  'maserati-service-dubai': createAdditionalServiceProfile('maserati-service-dubai', 'Maserati', ['Ghibli', 'Quattroporte', 'Levante', 'Grecale', 'GranTurismo', 'MC20'], 'Maserati-compatible diagnostic access and advanced live-data testing', 'V6 twin-turbo, V8, and Nettuno V6 platforms', 'ZF 8-speed automatic and dual-clutch transmission systems'),
+  'toyota-service-dubai': createAdditionalServiceProfile('toyota-service-dubai', 'Toyota', ['Land Cruiser', 'Land Cruiser Prado', 'Camry', 'Hilux', 'Fortuner', 'Corolla', 'GR Supra'], 'Toyota Techstream-compatible diagnostic access and advanced live-data testing', 'petrol, diesel, hybrid, and GR performance platforms', 'automatic, manual, hybrid, and four-wheel-drive drivetrain systems'),
+  'pagani-service-dubai': createAdditionalServiceProfile('pagani-service-dubai', 'Pagani', ['Huayra', 'Zonda', 'Utopia'], 'advanced multi-brand diagnostics with specialist fault tracing and workshop procedures', 'Mercedes-AMG V12 twin-turbo platforms', 'automated manual and bespoke drivetrain systems'),
+  'volkswagen-service-dubai': createAdditionalServiceProfile('volkswagen-service-dubai', 'Volkswagen', ['Golf', 'Golf GTI', 'Golf R', 'Tiguan', 'Touareg', 'Passat', 'T-Roc'], 'ODIS-compatible diagnostic access and advanced live-data testing', 'TSI petrol, TDI diesel, GTI, R, and plug-in hybrid platforms', 'DSG dual-clutch, automatic, and 4MOTION drivetrain systems'),
+  'volvo-service-dubai': createAdditionalServiceProfile('volvo-service-dubai', 'Volvo', ['XC40', 'XC60', 'XC90', 'S60', 'S90', 'V60', 'EX30'], 'VIDA-compatible diagnostic access and advanced live-data testing', 'turbocharged petrol, mild-hybrid, plug-in hybrid, and electric platforms', 'automatic, hybrid, and all-wheel-drive drivetrain systems'),
+  'jetour-service-dubai': createAdditionalServiceProfile('jetour-service-dubai', 'Jetour', ['T2', 'X70', 'X90 Plus', 'Dashing', 'X50'], 'factory-compatible diagnostic access and advanced live-data testing', 'turbocharged petrol and hybrid platforms', 'dual-clutch, automatic, and all-wheel-drive drivetrain systems'),
+  'cadillac-service-dubai': createAdditionalServiceProfile('cadillac-service-dubai', 'Cadillac', ['Escalade', 'CT4', 'CT5', 'XT4', 'XT5', 'XT6', 'Lyriq'], 'GM GDS2-compatible diagnostic access and advanced live-data testing', 'turbocharged petrol, V8, Super Cruise, and electric platforms', 'automatic, all-wheel-drive, and performance drivetrain systems'),
+});
 
 export const BRAND_SLUGS = Object.keys(BRAND_PROFILES);
 
