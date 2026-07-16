@@ -6,6 +6,7 @@ export type BrandWorkshopArticle = {
   existingBestPage?: string;
   brandHub?: string;
   models: string;
+  excerpt?: string;
   diagnosticFocus: string;
   commonProblems: string[];
   repairFocus: string[];
