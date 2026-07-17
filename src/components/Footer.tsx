@@ -39,7 +39,7 @@ export const Footer = () => {
               />
             </LocalizedLink>
             <p className="mt-5 max-w-sm text-sm leading-7 text-gray-300">
-              {copy?.description ?? 'Independent luxury and performance car workshop in Al Quoz, Dubai. Specialist diagnostics, repair, maintenance and performance upgrades since 2009.'}
+              {copy?.description ?? 'Independent luxury and performance car workshop in Al Quoz, Dubai. Specialist diagnostics, repair, maintenance and performance upgrades since 2002.'}
             </p>
             <a
               href="https://maps.google.com/?q=Al+Quoz+Industrial+Area+3+Warehouse+No.11-15+Dubai"

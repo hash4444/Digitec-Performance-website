@@ -439,7 +439,7 @@ const BrandPage = () => {
               {isArabic ? `موثوق لدى ملاك ${brand.name} في الإمارات` : `Trusted by ${brand.name} owners across the UAE`}
             </p>
             <p className="text-gray-400 text-sm sm:text-base mb-8">
-              {isArabic ? 'قطع OEM وتشخيص متقدم وأسعار واضحة.' : 'Genuine OEM parts, factory-grade diagnostics, and transparent pricing since 2009.'}
+              {isArabic ? 'قطع OEM وتشخيص متقدم وأسعار واضحة.' : 'Genuine OEM parts, factory-grade diagnostics, and transparent pricing since 2002.'}
             </p>
             <div className="grid grid-cols-3 gap-4 sm:gap-8 max-w-2xl mx-auto">
               <div>
