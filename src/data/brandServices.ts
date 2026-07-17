@@ -57,6 +57,8 @@ const EXTENDED_SERVICE_KEYS: ExtendedServiceKey[] = [
   'tire-repair',
 ];
 
+const ALL_SERVICE_KEYS: ServiceKey[] = [...SERVICE_KEYS, ...EXTENDED_SERVICE_KEYS];
+
 const EXTENDED_SERVICE_BRANDS = new Set([
   'mercedes-benz-service-dubai',
   'maybach-service-dubai',
@@ -81,6 +83,25 @@ const EXTENDED_SERVICE_BRANDS = new Set([
   'jetour-service-dubai',
   'cadillac-service-dubai',
 ]);
+
+// Electric-only platforms should not expose combustion-engine service URLs.
+const BRAND_SERVICE_OVERRIDES: Partial<Record<string, ServiceKey[]>> = {
+  'tesla-service-dubai': [
+    'brake-repair',
+    'ac-repair',
+    'suspension-repair',
+    'mechanical-repair',
+    'steering-repair',
+    'battery-replacement',
+    'electrical-repair',
+    'body-repair',
+    'tire-repair',
+  ],
+};
+
+const getAvailableServiceKeys = (brandSlug: string): ServiceKey[] =>
+  BRAND_SERVICE_OVERRIDES[brandSlug]
+  ?? (EXTENDED_SERVICE_BRANDS.has(brandSlug) ? ALL_SERVICE_KEYS : SERVICE_KEYS);
 
 export interface BrandProfile {
   brandSlug: string;
@@ -345,6 +366,7 @@ const createAdditionalServiceProfile = (
   diagnosticTool: string,
   engineFamily: string,
   transmissionName: string,
+  details: Partial<BrandProfile> = {},
 ): BrandProfile => ({
   brandSlug,
   brandName,
@@ -352,7 +374,7 @@ const createAdditionalServiceProfile = (
   models,
   diagnosticTool,
   engineFamily,
-  engineCodes: [],
+  engineCodes: [engineFamily.split(/,| and /)[0]],
   oilSpec: 'manufacturer-approved engine oil matched to the vehicle specification',
   oilIntervalKm: 10000,
   transmissionName,
@@ -362,6 +384,7 @@ const createAdditionalServiceProfile = (
   acRefrigerant: 'R-134a or R-1234yf, confirmed by vehicle specification',
   climateNote: `${brandName} cooling, air-conditioning, battery, brake, and suspension systems are inspected with Dubai heat, stop-start traffic, and dust exposure in mind.`,
   heritageLine: `Digi-Tec applies a documented, diagnostic-first process to every ${brandName} service in Dubai.`,
+  ...details,
 });
 
 Object.assign(BRAND_PROFILES, {
@@ -374,6 +397,116 @@ Object.assign(BRAND_PROFILES, {
   'volvo-service-dubai': createAdditionalServiceProfile('volvo-service-dubai', 'Volvo', ['XC40', 'XC60', 'XC90', 'S60', 'S90', 'V60', 'EX30'], 'VIDA-compatible diagnostic access and advanced live-data testing', 'turbocharged petrol, mild-hybrid, plug-in hybrid, and electric platforms', 'automatic, hybrid, and all-wheel-drive drivetrain systems'),
   'jetour-service-dubai': createAdditionalServiceProfile('jetour-service-dubai', 'Jetour', ['T2', 'X70', 'X90 Plus', 'Dashing', 'X50'], 'factory-compatible diagnostic access and advanced live-data testing', 'turbocharged petrol and hybrid platforms', 'dual-clutch, automatic, and all-wheel-drive drivetrain systems'),
   'cadillac-service-dubai': createAdditionalServiceProfile('cadillac-service-dubai', 'Cadillac', ['Escalade', 'CT4', 'CT5', 'XT4', 'XT5', 'XT6', 'Lyriq'], 'GM GDS2-compatible diagnostic access and advanced live-data testing', 'turbocharged petrol, V8, Super Cruise, and electric platforms', 'automatic, all-wheel-drive, and performance drivetrain systems'),
+  'abarth-service-dubai': createAdditionalServiceProfile('abarth-service-dubai', 'Abarth', ['595', '695', '124 Spider', '500e'], 'Fiat and Abarth-compatible diagnostics with live-data and actuator testing', 'T-Jet, MultiAir, and electric performance platforms', 'C510 manual, MTA automated manual, and electric drive systems', {
+    engineCodes: ['1.4 T-Jet', 'MultiAir', 'electric drive'],
+    brakeSystem: 'performance brake packages including Brembo-equipped 595 and 695 variants',
+    suspensionType: 'Koni FSD and performance damper systems used across 595, 695, and 124 Spider models',
+  }),
+  'alfa-romeo-service-dubai': createAdditionalServiceProfile('alfa-romeo-service-dubai', 'Alfa Romeo', ['Giulia', 'Stelvio', 'Tonale', 'Giulietta', '4C'], 'Alfa Romeo-compatible diagnostics with module coding and live-data testing', 'GME turbo-four, 2.9 V6 biturbo, MultiAir, and hybrid platforms', 'ZF 8-speed automatic, TCT dual-clutch, and manual transmissions', {
+    engineCodes: ['GME 2.0T', '690T 2.9 V6', 'MultiAir'],
+    brakeSystem: 'electro-hydraulic and Brembo performance braking systems, including Quadrifoglio applications',
+    suspensionType: 'Alfa Active Suspension and double-wishbone front suspension systems',
+  }),
+  'chevrolet-service-dubai': createAdditionalServiceProfile('chevrolet-service-dubai', 'Chevrolet', ['Tahoe', 'Suburban', 'Silverado', 'Camaro', 'Traverse', 'Captiva'], 'GM GDS2-compatible diagnostics with module programming and live-data testing', 'EcoTec petrol, small-block V8, turbocharged, and Duramax diesel platforms', 'GM 6-speed, 8-speed, and 10-speed automatic transmissions', {
+    engineCodes: ['EcoTec', 'LT V8', 'Duramax'],
+    brakeSystem: 'GM ABS and electronic brake-control systems with performance Brembo packages where fitted',
+    suspensionType: 'conventional, Magnetic Ride Control, and air ride systems depending on model',
+  }),
+  'chrysler-service-dubai': createAdditionalServiceProfile('chrysler-service-dubai', 'Chrysler', ['300', 'Pacifica', 'Voyager', '200'], 'WiTECH-compatible diagnostics with module configuration and live-data testing', 'Pentastar V6, HEMI V8, and plug-in hybrid platforms', 'ZF 8-speed and 9-speed automatic transmissions', {
+    engineCodes: ['Pentastar V6', 'HEMI V8', 'PHEV'],
+    suspensionType: 'touring suspension with adaptive damping on selected 300 variants',
+  }),
+  'corvette-service-dubai': createAdditionalServiceProfile('corvette-service-dubai', 'Corvette', ['C6', 'C7 Stingray', 'C7 Z06', 'C8 Stingray', 'C8 Z06', 'E-Ray'], 'GM GDS2-compatible diagnostics with performance data and module testing', 'LS and LT V8 platforms, including supercharged and hybrid applications', 'Tremec manual, 8-speed automatic, and C8 dual-clutch transmissions', {
+    engineCodes: ['LS3', 'LT1', 'LT4', 'LT6'],
+    brakeSystem: 'Brembo performance brakes with steel or carbon-ceramic rotors depending on specification',
+    suspensionType: 'Magnetic Ride Control and performance damper systems',
+  }),
+  'dodge-service-dubai': createAdditionalServiceProfile('dodge-service-dubai', 'Dodge', ['Charger', 'Challenger', 'Durango', 'Hornet', 'Viper'], 'WiTECH-compatible diagnostics with module configuration and performance data logging', 'Pentastar V6, HEMI V8, supercharged Hellcat, and Hurricane platforms', 'ZF 8-speed automatic, Tremec manual, and all-wheel-drive systems', {
+    engineCodes: ['Pentastar V6', 'HEMI V8', 'Hellcat 6.2'],
+    brakeSystem: 'standard and Brembo high-performance braking systems used on SRT and Hellcat models',
+    suspensionType: 'adaptive damping and performance suspension systems on SRT applications',
+  }),
+  'fiat-service-dubai': createAdditionalServiceProfile('fiat-service-dubai', 'FIAT', ['500', '500X', '500e', 'Tipo', 'Panda', 'Doblo'], 'Fiat-compatible diagnostics with live-data, module, and service-function access', 'FIRE, MultiAir, turbo-petrol, diesel, and electric platforms', 'manual, dual-clutch, automatic, and electric drive systems', {
+    engineCodes: ['FIRE', 'MultiAir', 'electric drive'],
+    suspensionType: 'compact-car strut and torsion-beam systems with electronic steering integration',
+  }),
+  'ford-service-dubai': createAdditionalServiceProfile('ford-service-dubai', 'Ford', ['Mustang', 'F-150', 'Explorer', 'Expedition', 'Bronco', 'Ranger'], 'Ford FDRS and IDS-compatible diagnostics with module programming and live-data testing', 'EcoBoost, Coyote V8, Power Stroke diesel, hybrid, and electric platforms', '10R80 automatic, SelectShift, manual, and four-wheel-drive systems', {
+    engineCodes: ['EcoBoost', 'Coyote V8', 'Power Stroke'],
+    brakeSystem: 'Ford ABS and electronic brake-control systems with Brembo performance packages where fitted',
+    suspensionType: 'independent, live-axle, adaptive, and off-road suspension systems across the Ford range',
+  }),
+  'genesis-service-dubai': createAdditionalServiceProfile('genesis-service-dubai', 'Genesis', ['G70', 'G80', 'G90', 'GV60', 'GV70', 'GV80'], 'Genesis GDS-compatible diagnostics with calibration and live-data testing', 'Smartstream turbo-four, twin-turbo V6, V8, hybrid, and electric platforms', '8-speed automatic, all-wheel-drive, and electric drive systems', {
+    engineCodes: ['Smartstream 2.5T', 'Lambda 3.5T', 'electric drive'],
+    brakeSystem: 'electronic brake-control systems with performance Brembo packages on selected models',
+    suspensionType: 'electronically controlled suspension with road-preview functions where fitted',
+  }),
+  'gmc-service-dubai': createAdditionalServiceProfile('gmc-service-dubai', 'GMC', ['Yukon', 'Yukon Denali', 'Sierra', 'Terrain', 'Acadia', 'Hummer EV'], 'GM GDS2-compatible diagnostics with module programming and drivetrain testing', 'EcoTec V8, turbocharged petrol, Duramax diesel, and Ultium electric platforms', 'GM 8-speed, 10-speed, four-wheel-drive, and electric drive systems', {
+    engineCodes: ['EcoTec V8', 'Duramax', 'Ultium electric'],
+    suspensionType: 'Magnetic Ride Control, Adaptive Air Ride, and heavy-duty truck suspension systems',
+  }),
+  'hummer-service-dubai': createAdditionalServiceProfile('hummer-service-dubai', 'Hummer', ['H1', 'H2', 'H3', 'Hummer EV Pickup', 'Hummer EV SUV'], 'GM-compatible diagnostics for legacy Hummer and current Hummer EV systems', 'V8 petrol, diesel, and Ultium electric platforms', 'heavy-duty automatic, four-wheel-drive, and electric drive systems', {
+    engineCodes: ['Vortec V8', 'Duramax', 'Ultium electric'],
+    suspensionType: 'heavy-duty independent suspension and Adaptive Air Ride on Hummer EV',
+  }),
+  'infiniti-service-dubai': createAdditionalServiceProfile('infiniti-service-dubai', 'Infiniti', ['Q50', 'Q60', 'QX50', 'QX60', 'QX80', 'Q70'], 'Nissan CONSULT-compatible diagnostics with module coding and live-data testing', 'VQ V6, VR30 twin-turbo V6, VK V8, and variable-compression turbo platforms', '7-speed, 9-speed, CVT, and all-wheel-drive systems', {
+    engineCodes: ['VQ V6', 'VR30DDTT', 'VK56 V8'],
+    suspensionType: 'conventional, adaptive, and Hydraulic Body Motion Control systems depending on model',
+  }),
+  'jaguar-service-dubai': createAdditionalServiceProfile('jaguar-service-dubai', 'Jaguar', ['F-PACE', 'F-TYPE', 'XE', 'XF', 'XJ', 'I-PACE'], 'JLR SDD and Pathfinder-compatible diagnostics with coding and live-data testing', 'Ingenium four- and six-cylinder, AJ-V8, and electric platforms', 'ZF 8-speed automatic, all-wheel-drive, and electric drive systems', {
+    engineCodes: ['Ingenium', 'AJ133 V8', 'electric drive'],
+    brakeSystem: 'Jaguar electronic brake-control systems with performance packages on R and SVR models',
+    suspensionType: 'Adaptive Dynamics, air suspension, and performance damper systems depending on model',
+  }),
+  'koenigsegg-service-dubai': createAdditionalServiceProfile('koenigsegg-service-dubai', 'Koenigsegg', ['Agera', 'Regera', 'Jesko', 'Gemera', 'CCX'], 'specialist diagnostic access supported by model-specific workshop procedures', 'twin-turbo V8 and high-voltage hybrid hypercar platforms', 'multi-clutch Light Speed Transmission, Direct Drive, and automated manual systems', {
+    engineCodes: ['Koenigsegg twin-turbo V8', 'hybrid drive'],
+    brakeSystem: 'carbon-ceramic performance braking systems with model-specific service procedures',
+    suspensionType: 'Triplex and electronically adjustable performance suspension systems',
+  }),
+  'lexus-service-dubai': createAdditionalServiceProfile('lexus-service-dubai', 'Lexus', ['LX', 'GX', 'RX', 'LS', 'ES', 'LC', 'IS'], 'Toyota Techstream-compatible diagnostics with hybrid, module, and live-data testing', 'V6, V8, turbocharged, naturally aspirated, and hybrid platforms', '8-speed, 10-speed, eCVT, and four-wheel-drive systems', {
+    engineCodes: ['2GR V6', '1UR V8', 'V35A-FTS'],
+    brakeSystem: 'Lexus electronic brake-control and regenerative braking systems where fitted',
+    suspensionType: 'Adaptive Variable Suspension and air suspension on selected luxury models',
+  }),
+  'lincoln-service-dubai': createAdditionalServiceProfile('lincoln-service-dubai', 'Lincoln', ['Navigator', 'Aviator', 'Nautilus', 'Corsair', 'Continental', 'MKZ'], 'Ford FDRS and IDS-compatible diagnostics with module programming and live-data testing', 'EcoBoost V6, turbo-four, V8, and plug-in hybrid platforms', '10-speed, 8-speed, all-wheel-drive, and hybrid systems', {
+    engineCodes: ['EcoBoost V6', 'turbo-four', 'PHEV'],
+    suspensionType: 'Air Glide and adaptive suspension systems on Navigator and selected Lincoln models',
+  }),
+  'lotus-service-dubai': createAdditionalServiceProfile('lotus-service-dubai', 'Lotus', ['Emira', 'Eletre', 'Emeya', 'Evora', 'Exige', 'Elise'], 'Lotus-compatible diagnostics with powertrain, chassis, and module testing', 'supercharged V6, turbo-four, and high-voltage electric platforms', 'manual, dual-clutch, automatic, and electric drive systems', {
+    engineCodes: ['2GR-FE V6', 'M139 turbo-four', 'electric drive'],
+    brakeSystem: 'AP Racing and performance braking systems with model-specific pad and rotor specifications',
+    suspensionType: 'lightweight performance suspension and semi-active damping on current platforms',
+  }),
+  'mazda-service-dubai': createAdditionalServiceProfile('mazda-service-dubai', 'Mazda', ['CX-5', 'CX-9', 'CX-60', 'Mazda3', 'Mazda6', 'MX-5'], 'Mazda IDS-compatible diagnostics with module, live-data, and service-function access', 'Skyactiv-G petrol, Skyactiv-D diesel, turbocharged, and mild-hybrid platforms', 'Skyactiv-Drive 6-speed, 8-speed automatic, and manual transmissions', {
+    engineCodes: ['Skyactiv-G', 'Skyactiv-D', 'e-Skyactiv'],
+    suspensionType: 'Skyactiv chassis systems with electronic steering and driver-assistance calibration',
+  }),
+  'mini-service-dubai': createAdditionalServiceProfile('mini-service-dubai', 'MINI', ['Cooper', 'Cooper S', 'John Cooper Works', 'Countryman', 'Clubman', 'Aceman'], 'BMW ISTA-compatible diagnostics with coding, service functions, and live-data testing', 'B38 three-cylinder, B48 four-cylinder, and electric platforms', 'Getrag dual-clutch, Aisin automatic, manual, and electric drive systems', {
+    engineCodes: ['B38', 'B48', 'electric drive'],
+    brakeSystem: 'standard and John Cooper Works performance braking systems',
+    suspensionType: 'sport, adaptive, and electronically controlled damper systems depending on model',
+  }),
+  'mitsubishi-service-dubai': createAdditionalServiceProfile('mitsubishi-service-dubai', 'Mitsubishi', ['Pajero', 'Outlander', 'L200', 'ASX', 'Eclipse Cross', 'Montero Sport'], 'MUT-III-compatible diagnostics with drivetrain, hybrid, and live-data testing', 'MIVEC petrol, turbo-diesel, and plug-in hybrid platforms', 'CVT, automatic, manual, Super Select 4WD, and hybrid drive systems', {
+    engineCodes: ['MIVEC', '4N15 diesel', 'PHEV'],
+    suspensionType: 'SUV, pickup, and road-car suspension systems with four-wheel-drive integration',
+  }),
+  'renault-service-dubai': createAdditionalServiceProfile('renault-service-dubai', 'Renault', ['Duster', 'Koleos', 'Megane', 'Arkana', 'Captur', 'Symbol'], 'Renault CLIP-compatible diagnostics with module configuration and live-data testing', 'TCe petrol, dCi diesel, naturally aspirated, and E-Tech hybrid platforms', 'EDC dual-clutch, CVT, automatic, manual, and hybrid systems', {
+    engineCodes: ['TCe', 'dCi', 'E-Tech hybrid'],
+    suspensionType: 'passenger-car and SUV suspension systems with electronic steering integration',
+  }),
+  'subaru-service-dubai': createAdditionalServiceProfile('subaru-service-dubai', 'Subaru', ['WRX', 'BRZ', 'Forester', 'Outback', 'Crosstrek', 'Ascent'], 'Subaru Select Monitor-compatible diagnostics with AWD and live-data testing', 'FA and FB boxer-four, EJ turbo, and hybrid platforms', 'Lineartronic CVT, manual, automatic, and Symmetrical AWD systems', {
+    engineCodes: ['FA24', 'FB25', 'EJ25'],
+    brakeSystem: 'Subaru ABS and Vehicle Dynamics Control systems with Brembo packages on performance models',
+    suspensionType: 'Symmetrical AWD chassis systems with sport suspension on WRX and BRZ models',
+  }),
+  'tesla-service-dubai': createAdditionalServiceProfile('tesla-service-dubai', 'Tesla', ['Model S', 'Model 3', 'Model X', 'Model Y', 'Cybertruck'], 'Tesla-compatible service diagnostics with high-voltage safety procedures and live-data testing', 'high-voltage battery, inverter, and electric motor platforms', 'single-speed reduction gear and dual-motor all-wheel-drive systems', {
+    engineCodes: ['electric drive unit', 'high-voltage battery'],
+    oilSpec: 'model-specific electric drive-unit fluid where scheduled',
+    transmissionFluid: 'Tesla-specified drive-unit fluid',
+    brakeSystem: 'regenerative braking integrated with hydraulic Brembo or Tesla braking hardware',
+    suspensionType: 'coil-spring or adaptive air suspension depending on model',
+    acRefrigerant: 'model-specific refrigerant confirmed from the vehicle label before service',
+    climateNote: 'Tesla battery cooling, air conditioning, suspension, tyres, brakes, and low-voltage systems are checked for Dubai heat and high cabin-cooling demand.',
+  }),
 });
 
 export const BRAND_SLUGS = Object.keys(BRAND_PROFILES);
@@ -705,9 +838,7 @@ const COMPOSERS: Record<ServiceKey, (p: BrandProfile) => Composed> = {
 export function getBrandServiceCombo(brandSlug: string, serviceSlug: string): BrandServiceCombo | undefined {
   const profile = BRAND_PROFILES[brandSlug];
   if (!profile) return undefined;
-  const availableServices = EXTENDED_SERVICE_BRANDS.has(brandSlug)
-    ? [...SERVICE_KEYS, ...EXTENDED_SERVICE_KEYS]
-    : SERVICE_KEYS;
+  const availableServices = getAvailableServiceKeys(brandSlug);
   if (!(availableServices as string[]).includes(serviceSlug)) return undefined;
   const key = serviceSlug as ServiceKey;
   const meta = SERVICE_META[key];
@@ -721,15 +852,15 @@ export function getBrandServiceCombo(brandSlug: string, serviceSlug: string): Br
     serviceType: meta.serviceType,
     whatsAppMessage,
     ...composed,
+    metaTitle: `${profile.brandName} ${meta.name} Dubai | Digi-Tec`,
+    metaDescription: `Specialist ${profile.brandName} ${meta.name.toLowerCase()} in Dubai with model-specific diagnostics, approved parts, clear quotes, and workshop care at Digi-Tec, Al Quoz.`,
   };
 }
 
 export function getAllBrandServiceCombos(): { brandSlug: string; serviceSlug: ServiceKey }[] {
   const combos: { brandSlug: string; serviceSlug: ServiceKey }[] = [];
   for (const brandSlug of BRAND_SLUGS) {
-    const services = EXTENDED_SERVICE_BRANDS.has(brandSlug)
-      ? [...SERVICE_KEYS, ...EXTENDED_SERVICE_KEYS]
-      : SERVICE_KEYS;
+    const services = getAvailableServiceKeys(brandSlug);
     for (const serviceSlug of services) {
       combos.push({ brandSlug, serviceSlug });
     }
@@ -739,9 +870,7 @@ export function getAllBrandServiceCombos(): { brandSlug: string; serviceSlug: Se
 
 export function getServicesForBrand(brandSlug: string): { serviceSlug: ServiceKey; label: string }[] {
   if (!BRAND_PROFILES[brandSlug]) return [];
-  const services = EXTENDED_SERVICE_BRANDS.has(brandSlug)
-    ? [...SERVICE_KEYS, ...EXTENDED_SERVICE_KEYS]
-    : SERVICE_KEYS;
+  const services = getAvailableServiceKeys(brandSlug);
   return services.map((s) => ({ serviceSlug: s, label: SERVICE_META[s].label }));
 }
 
