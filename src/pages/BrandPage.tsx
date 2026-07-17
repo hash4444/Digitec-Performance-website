@@ -85,29 +85,33 @@ const MERCEDES_SERVICE_PATHS: Record<string, string> = {
   'tire-repair': '/services/mercedes-tire-repair-dubai',
 };
 
+// Models help search engines and AI systems understand the vehicles covered by
+// each brand hub. Detailed profiles provide the fallback for newer brands.
+const BRAND_MODELS: Record<string, string[]> = {
+  'mercedes-benz-service-dubai': ['A-Class','C-Class','E-Class','CLA','CLS','GLA','GLC','GLE','GLS','S-Class','G-Class','AMG GT','SL','Maybach','EQ Series'],
+  'maybach-service-dubai': ['Maybach S-Class','Maybach GLS','Maybach S680','Maybach S580'],
+  'porsche-service-dubai': ['911','718 Cayman','718 Boxster','Panamera','Macan','Cayenne','Taycan'],
+  'audi-service-dubai': ['A3','A4','A5','A6','A7','A8','Q3','Q5','Q7','Q8','RS Range','R8','e-tron'],
+  'bmw-service-dubai': ['1 Series','3 Series','4 Series','5 Series','7 Series','8 Series','X1','X3','X5','X6','X7','M Range','i Range'],
+  'lamborghini-service-dubai': ['Huracán','Urus','Revuelto','Aventador'],
+  'bentley-service-dubai': ['Continental GT','Flying Spur','Bentayga'],
+  'mclaren-service-dubai': ['720S','765LT','Artura','GT','750S'],
+  'ferrari-service-dubai': ['Roma','Portofino','296','SF90','812','Purosangue'],
+  'bugatti-service-dubai': ['Chiron','Divo','Mistral'],
+  'land-rover-service-dubai': ['Range Rover','Range Rover Sport','Range Rover Velar','Range Rover Evoque','Defender','Discovery'],
+  'rolls-royce-service-dubai': ['Phantom','Ghost','Cullinan','Spectre','Wraith','Dawn'],
+  'aston-martin-service-dubai': ['DB12','Vantage','DBX','DBS'],
+};
+
+const getServiceProfileSlug = (brandSlug: string) =>
+  brandSlug === 'range-rover-service-dubai' ? 'land-rover-service-dubai' : brandSlug;
+
 const BrandPage = () => {
   const { isArabic, localizedPath } = useLocale();
   const { slug } = useParams<{ slug: string }>();
   const sourceBrand = slug ? getBrandBySlug(slug) : undefined;
   const brand = sourceBrand && isArabic ? localizeBrandToArabic(sourceBrand) : sourceBrand;
-
-  // Model lists per brand — surfaces which vehicles the brand page covers
-  // to search engines and AI systems. Editable list, not exhaustive.
-  const BRAND_MODELS: Record<string, string[]> = {
-    'mercedes-benz-service-dubai': ['A-Class','C-Class','E-Class','CLA','CLS','GLA','GLC','GLE','GLS','S-Class','G-Class','AMG GT','SL','Maybach','EQ Series'],
-    'maybach-service-dubai': ['Maybach S-Class','Maybach GLS','Maybach S680','Maybach S580'],
-    'porsche-service-dubai': ['911','718 Cayman','718 Boxster','Panamera','Macan','Cayenne','Taycan'],
-    'audi-service-dubai': ['A3','A4','A5','A6','A7','A8','Q3','Q5','Q7','Q8','RS Range','R8','e-tron'],
-    'bmw-service-dubai': ['1 Series','3 Series','4 Series','5 Series','7 Series','8 Series','X1','X3','X5','X6','X7','M Range','i Range'],
-    'lamborghini-service-dubai': ['Huracán','Urus','Revuelto','Aventador'],
-    'bentley-service-dubai': ['Continental GT','Flying Spur','Bentayga'],
-    'mclaren-service-dubai': ['720S','765LT','Artura','GT','750S'],
-    'ferrari-service-dubai': ['Roma','Portofino','296','SF90','812','Purosangue'],
-    'bugatti-service-dubai': ['Chiron','Divo','Mistral'],
-    'land-rover-service-dubai': ['Range Rover','Range Rover Sport','Range Rover Velar','Range Rover Evoque','Defender','Discovery'],
-    'rolls-royce-service-dubai': ['Phantom','Ghost','Cullinan','Spectre','Wraith','Dawn'],
-    'aston-martin-service-dubai': ['DB12','Vantage','DBX','DBS'],
-  };
+  const serviceProfileSlug = brand ? getServiceProfileSlug(brand.slug) : '';
 
   const brandJsonLd = React.useMemo(() => {
     if (!brand) return undefined;
@@ -124,7 +128,7 @@ const BrandPage = () => {
       breadcrumbId: `${url}#breadcrumb`,
       primaryImage: brand.logo || undefined,
     });
-    const models = BRAND_MODELS[brand.slug] ?? [];
+    const models = BRAND_MODELS[brand.slug] ?? BRAND_PROFILES[serviceProfileSlug]?.models ?? [];
     const brandEntity = {
       '@type': 'Brand',
       '@id': `${url}#brand`,
@@ -175,14 +179,14 @@ const BrandPage = () => {
       brand.faqs.map((f) => ({ question: f.q, answer: f.a })),
     );
     return pageGraph([webPage, breadcrumb, brandEntity, svc, ...(faq ? [faq] : [])]);
-  }, [brand, isArabic]);
+  }, [brand, isArabic, serviceProfileSlug]);
 
   useSeo({
     title: brand
-      ? isArabic ? `إصلاح وصيانة ${brand.name} في دبي | مركز ديجي-تك` : `${brand.name} Repair & Service Dubai | Specialist Workshop | Digi-Tec`
+      ? isArabic ? `إصلاح وصيانة ${brand.name} في دبي | مركز ديجي-تك` : `${brand.name} Repair Dubai | Digi-Tec`
       : 'Brand Service in Dubai | Digi-Tec Performance Centre',
     description: brand
-      ? isArabic ? `إصلاح وصيانة ${brand.name} في دبي: تشخيص وصيانة وفرامل وناقل حركة وتعليق وتكييف مع قطع بالمواصفات المناسبة لدى مركز ديجي-تك.` : `Independent ${brand.name} repair and service in Dubai: diagnostics, maintenance, brakes, transmission, suspension and AC. Genuine parts and specialist workshop care at Digi-Tec.`
+      ? isArabic ? `إصلاح وصيانة ${brand.name} في دبي: تشخيص وصيانة وفرامل وناقل حركة وتعليق وتكييف مع قطع بالمواصفات المناسبة لدى مركز ديجي-تك.` : `Specialist ${brand.name} repair and service in Dubai: diagnostics, maintenance, brakes, transmission, suspension and AC at Digi-Tec, Al Quoz.`
       : 'Expert luxury car maintenance, diagnostics, and performance tuning in Dubai at Digi-Tec Performance Centre.',
     canonical: brand ? `https://digitecme.com${isArabic ? '/ar' : ''}/brands/${brand.slug}` : `https://digitecme.com${isArabic ? '/ar' : '/'}`,
     noindex: !brand,
@@ -209,13 +213,13 @@ const BrandPage = () => {
     cta: `لحجز خدمة ${brand.name} في دبي، اتصل على +971 4 340 2223 أو أرسل رسالة واتساب أو استخدم نموذج الحجز في هذه الصفحة.`,
   } : getBrandSeoCopy(brand);
   const displayedServices = isArabic ? arBrandServices : SERVICES;
-  const brandServices = getServicesForBrand(brand.slug);
-  const profile = BRAND_PROFILES[brand.slug];
-  const models = BRAND_MODELS[brand.slug] ?? [];
+  const brandServices = getServicesForBrand(serviceProfileSlug);
+  const profile = BRAND_PROFILES[serviceProfileSlug];
+  const models = BRAND_MODELS[brand.slug] ?? profile?.models ?? [];
   const getServicePath = (serviceSlug: string) =>
     brand.slug === 'mercedes-benz-service-dubai'
-      ? MERCEDES_SERVICE_PATHS[serviceSlug] ?? `/brands/${brand.slug}/${serviceSlug}`
-      : `/brands/${brand.slug}/${serviceSlug}`;
+      ? MERCEDES_SERVICE_PATHS[serviceSlug] ?? `/brands/${serviceProfileSlug}/${serviceSlug}`
+      : `/brands/${serviceProfileSlug}/${serviceSlug}`;
   const isFerrari = brand.slug === 'ferrari-service-dubai';
 
   return (
