@@ -10,7 +10,7 @@ const primaryLinks: MenuItem[] = [
   { name: 'About Us', href: '/about' },
   { name: 'Services', href: '/services' },
   { name: 'Brands', href: '/brands' },
-  { name: 'GAD Performance', href: '/tuning' },
+  { name: 'GAD', href: '/tuning' },
   { name: 'VRX', href: '/vrx' },
   { name: 'Blog', href: '/blog' },
   { name: 'FAQ', href: '/faq' },
