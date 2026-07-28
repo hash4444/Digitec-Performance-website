@@ -86,6 +86,8 @@ const EXTENDED_SERVICE_BRANDS = new Set([
   'cadillac-service-dubai',
   'byd-service-dubai',
   'rox-service-dubai',
+  'range-rover-service-dubai',
+  'defender-service-dubai',
 ]);
 
 // Electric-only platforms should not expose combustion-engine service URLs.
@@ -362,6 +364,24 @@ export const BRAND_PROFILES: Record<string, BrandProfile> = {
     climateNote: 'The transaxle mounting and torque-tube on DB11 and DBS are heat-cycled wear points we inspect on every Dubai service.',
     heritageLine: 'Gaydon-grade care, quietly, on your schedule.',
   },
+};
+
+BRAND_PROFILES['range-rover-service-dubai'] = {
+  ...BRAND_PROFILES['land-rover-service-dubai'],
+  brandSlug: 'range-rover-service-dubai',
+  brandName: 'Range Rover',
+  shortName: 'Range Rover',
+  models: ['Range Rover', 'Range Rover Sport', 'Range Rover Velar', 'Range Rover Evoque'],
+  heritageLine: 'Range Rover expertise, transparent reporting, and Dubai-ready workshop care.',
+};
+
+BRAND_PROFILES['defender-service-dubai'] = {
+  ...BRAND_PROFILES['land-rover-service-dubai'],
+  brandSlug: 'defender-service-dubai',
+  brandName: 'Defender',
+  shortName: 'Defender',
+  models: ['Defender 90', 'Defender 110', 'Defender 130', 'Defender V8', 'Defender OCTA'],
+  heritageLine: 'Defender diagnostics, driveline care, and Dubai-ready workshop support.',
 };
 
 const createAdditionalServiceProfile = (

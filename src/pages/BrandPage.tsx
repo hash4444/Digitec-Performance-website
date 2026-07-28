@@ -99,12 +99,13 @@ const BRAND_MODELS: Record<string, string[]> = {
   'ferrari-service-dubai': ['Roma','Portofino','296','SF90','812','Purosangue'],
   'bugatti-service-dubai': ['Chiron','Divo','Mistral'],
   'land-rover-service-dubai': ['Range Rover','Range Rover Sport','Range Rover Velar','Range Rover Evoque','Defender','Discovery'],
+  'range-rover-service-dubai': ['Range Rover','Range Rover Sport','Range Rover Velar','Range Rover Evoque'],
+  'defender-service-dubai': ['Defender 90','Defender 110','Defender 130','Defender V8','Defender OCTA'],
   'rolls-royce-service-dubai': ['Phantom','Ghost','Cullinan','Spectre','Wraith','Dawn'],
   'aston-martin-service-dubai': ['DB12','Vantage','DBX','DBS'],
 };
 
-const getServiceProfileSlug = (brandSlug: string) =>
-  brandSlug === 'range-rover-service-dubai' ? 'land-rover-service-dubai' : brandSlug;
+const getServiceProfileSlug = (brandSlug: string) => brandSlug;
 
 const BrandPage = () => {
   const { isArabic, localizedPath } = useLocale();
@@ -181,12 +182,14 @@ const BrandPage = () => {
     return pageGraph([webPage, breadcrumb, brandEntity, svc, ...(faq ? [faq] : [])]);
   }, [brand, isArabic, serviceProfileSlug]);
 
+  const isMercedesServiceHub = brand?.slug === 'mercedes-benz-service-dubai';
+
   useSeo({
     title: brand
-      ? isArabic ? `إصلاح وصيانة ${brand.name} في دبي | مركز ديجي-تك` : `${brand.name} Repair Dubai | Digi-Tec`
+      ? isArabic ? `إصلاح وصيانة ${brand.name} في دبي | مركز ديجي-تك` : isMercedesServiceHub ? 'Mercedes Service Dubai | Service A, B & XENTRY | Digi-Tec' : `${brand.name} Repair Dubai | Digi-Tec`
       : 'Brand Service in Dubai | Digi-Tec Performance Centre',
     description: brand
-      ? isArabic ? `إصلاح وصيانة ${brand.name} في دبي: تشخيص وصيانة وفرامل وناقل حركة وتعليق وتكييف مع قطع بالمواصفات المناسبة لدى مركز ديجي-تك.` : `Specialist ${brand.name} repair and service in Dubai: diagnostics, maintenance, brakes, transmission, suspension and AC at Digi-Tec, Al Quoz.`
+      ? isArabic ? `إصلاح وصيانة ${brand.name} في دبي: تشخيص وصيانة وفرامل وناقل حركة وتعليق وتكييف مع قطع بالمواصفات المناسبة لدى مركز ديجي-تك.` : isMercedesServiceHub ? 'Mercedes Service A and Service B in Dubai with XENTRY diagnostics, approved fluids and OEM parts. Book Digi-Tec in Al Quoz.' : `Specialist ${brand.name} repair and service in Dubai: diagnostics, maintenance, brakes, transmission, suspension and AC at Digi-Tec, Al Quoz.`
       : 'Expert luxury car maintenance, diagnostics, and performance tuning in Dubai at Digi-Tec Performance Centre.',
     canonical: brand ? `https://digitecme.com${isArabic ? '/ar' : ''}/brands/${brand.slug}` : `https://digitecme.com${isArabic ? '/ar' : '/'}`,
     noindex: !brand,
@@ -257,7 +260,7 @@ const BrandPage = () => {
                 </span>
               </div>
               <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black mb-4 sm:mb-6 leading-tight">
-                {brand.name} <span className="text-burnt-orange">{isArabic ? 'للإصلاح والصيانة في دبي' : 'Repair & Service Dubai'}</span>
+                {brand.name} <span className="text-burnt-orange">{isArabic ? 'للإصلاح والصيانة في دبي' : isMercedesServiceHub ? 'Service Dubai' : 'Repair & Service Dubai'}</span>
               </h1>
               <p className="text-gray-300 text-base sm:text-lg leading-relaxed mb-6 sm:mb-8 max-w-2xl">
                 {brand.intro}

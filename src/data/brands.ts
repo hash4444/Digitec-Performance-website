@@ -298,8 +298,8 @@ const additionalBrandEntries: Array<[string, string]> = [
   ['Koenigsegg', 'koenigsegg-service-dubai'], ['Lexus', 'lexus-service-dubai'], ['Lincoln', 'lincoln-service-dubai'],
   ['Lotus', 'lotus-service-dubai'], ['Maserati', 'maserati-service-dubai'], ['Mazda', 'mazda-service-dubai'],
   ['MINI', 'mini-service-dubai'], ['Mitsubishi', 'mitsubishi-service-dubai'],
-  ['Nissan', 'nissan-service-dubai'], ['Pagani', 'pagani-service-dubai'],
-  ['Range Rover', 'range-rover-service-dubai'], ['Renault', 'renault-service-dubai'],
+  ['Defender', 'defender-service-dubai'], ['Nissan', 'nissan-service-dubai'], ['Pagani', 'pagani-service-dubai'],
+  ['Renault', 'renault-service-dubai'],
   ['ROX', 'rox-service-dubai'],
   ['Subaru', 'subaru-service-dubai'], ['Tesla', 'tesla-service-dubai'],
   ['Toyota', 'toyota-service-dubai'], ['Volkswagen', 'volkswagen-service-dubai'], ['Volvo', 'volvo-service-dubai'],
@@ -365,6 +365,49 @@ const createAdditionalBrand = ([name, slug]: [string, string]): Brand => ({
 });
 
 brands.push(...additionalBrandEntries.map(createAdditionalBrand));
+
+brands.push(
+  {
+    name: 'Range Rover',
+    slug: 'range-rover-service-dubai',
+    logo: '/lovable-uploads/4bb58917-704a-4c5d-84b6-dc428a00c004.png',
+    specialization: 'Service • Repair • Diagnostics • Air Suspension',
+    intro: 'Digi-Tec is a specialist Range Rover workshop in Al Quoz, Dubai. We service and repair Range Rover, Range Rover Sport, Velar and Evoque models with JLR diagnostics, approved parts, air-suspension expertise and clear quotes before work begins.',
+    whyChoose: [
+      { title: 'JLR Diagnostics & Coding', description: 'SDD and Pathfinder diagnostics for fault tracing, service resets, module programming and calibration.' },
+      { title: 'Air Suspension Specialists', description: 'Range Rover air struts, compressors, valve blocks, ride-height sensors and calibration are diagnosed and repaired in-house.' },
+      { title: 'Ingenium, V8 & ZF 8HP Care', description: 'Routine service and mechanical repairs for Ingenium engines, supercharged and twin-turbo V8s, and ZF automatic transmissions.' },
+      { title: 'Dubai-Focused Maintenance', description: 'Cooling, AC, suspension and battery checks tailored to Dubai heat, dust and daily driving conditions.' },
+    ],
+    faqs: [
+      { q: 'Do you service Range Rover vehicles in Dubai?', a: 'Yes. We service and repair Range Rover, Range Rover Sport, Velar and Evoque models from our Al Quoz workshop.' },
+      { q: 'Can you repair Range Rover air suspension?', a: 'Yes. We diagnose air struts, compressors, valve blocks and height sensors, then calibrate the system after repair.' },
+      { q: 'Do you use JLR diagnostics?', a: 'Yes. We use JLR-compatible SDD and Pathfinder diagnostic tooling to read faults, inspect live data and complete required calibrations.' },
+      { q: 'How often should a Range Rover be serviced in Dubai?', a: 'Most Range Rover models should be inspected at least every 10,000 to 16,000 km or annually. Dubai heat can make interim checks worthwhile.' },
+    ],
+    relatedServices: ['suspension-repair-dubai', 'mechanical-repair-dubai', 'car-diagnostics-dubai', 'transmission-repair-dubai'],
+  },
+  {
+    name: 'Defender',
+    slug: 'defender-service-dubai',
+    logo: '/lovable-uploads/4bb58917-704a-4c5d-84b6-dc428a00c004.png',
+    specialization: 'Service • Repair • Diagnostics • Off-Road Systems',
+    intro: 'Digi-Tec provides specialist Land Rover Defender service and repair in Dubai for Defender 90 and Defender 110 models. Our Al Quoz workshop handles JLR diagnostics, scheduled maintenance, air suspension, cooling, brakes, driveline and electrical repairs.',
+    whyChoose: [
+      { title: 'Defender 90 & 110 Diagnostics', description: 'JLR SDD and Pathfinder diagnostics for modern Defender systems, warnings, coding and calibration.' },
+      { title: 'Terrain Response & Driveline Care', description: 'Service and diagnosis for four-wheel-drive, Terrain Response, transfer-case, differential and off-road systems.' },
+      { title: 'Air Suspension & Cooling Repair', description: 'Accurate repair of air-suspension and cooling faults that are common in demanding Dubai conditions.' },
+      { title: 'Clear Workshop Reporting', description: 'We explain the fault, the practical options and the parts required before work starts.' },
+    ],
+    faqs: [
+      { q: 'Do you service the new Land Rover Defender in Dubai?', a: 'Yes. We service and repair modern Defender 90 and Defender 110 models, including diagnostics, maintenance, brakes, suspension and electrical work.' },
+      { q: 'Can you diagnose Defender warning lights?', a: 'Yes. We use JLR-compatible diagnostic tooling and live data to identify the affected system before recommending repairs.' },
+      { q: 'Do you repair Defender air suspension?', a: 'Yes. We inspect and repair air-suspension components, then complete the required height calibration and road test.' },
+      { q: 'Where is your Defender workshop?', a: 'Digi-Tec Performance Centre is in Al Quoz Industrial Area 3, Dubai. Contact us to book an inspection.' },
+    ],
+    relatedServices: ['suspension-repair-dubai', 'mechanical-repair-dubai', 'car-diagnostics-dubai', 'brake-repair-dubai'],
+  },
+);
 
 export const getBrandBySlug = (slug: string) => brands.find((b) => b.slug === slug);
 
