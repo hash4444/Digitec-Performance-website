@@ -287,6 +287,7 @@ export const brands: Brand[] = [
 
 const additionalBrandEntries: Array<[string, string]> = [
   ['Abarth', 'abarth-service-dubai'], ['Alfa Romeo', 'alfa-romeo-service-dubai'],
+  ['BYD', 'byd-service-dubai'],
   ['Cadillac', 'cadillac-service-dubai'],
   ['Chevrolet', 'chevrolet-service-dubai'], ['Chrysler', 'chrysler-service-dubai'],
   ['Corvette', 'corvette-service-dubai'],
@@ -299,6 +300,7 @@ const additionalBrandEntries: Array<[string, string]> = [
   ['MINI', 'mini-service-dubai'], ['Mitsubishi', 'mitsubishi-service-dubai'],
   ['Nissan', 'nissan-service-dubai'], ['Pagani', 'pagani-service-dubai'],
   ['Range Rover', 'range-rover-service-dubai'], ['Renault', 'renault-service-dubai'],
+  ['ROX', 'rox-service-dubai'],
   ['Subaru', 'subaru-service-dubai'], ['Tesla', 'tesla-service-dubai'],
   ['Toyota', 'toyota-service-dubai'], ['Volkswagen', 'volkswagen-service-dubai'], ['Volvo', 'volvo-service-dubai'],
 ];

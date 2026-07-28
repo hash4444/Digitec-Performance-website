@@ -30,6 +30,7 @@ import { useLocale } from '@/i18n/use-locale';
 
 const serviceNamesArabic: Record<string, string> = {
   'oil-change': 'تغيير الزيت', 'brake-repair': 'إصلاح الفرامل', 'transmission-repair': 'إصلاح ناقل الحركة', 'ac-repair': 'إصلاح التكييف', 'suspension-repair': 'إصلاح التعليق', 'engine-diagnostics': 'تشخيص المحرك', 'mechanical-repair': 'الإصلاح الميكانيكي', 'steering-repair': 'إصلاح نظام التوجيه', 'battery-replacement': 'تبديل البطارية', 'electrical-repair': 'إصلاح الكهرباء', 'exhaust-repair': 'إصلاح العادم', 'fuel-system-repair': 'إصلاح نظام الوقود', 'body-repair': 'إصلاح الهيكل', 'tire-repair': 'إصلاح الإطارات',
+  'soft-close-door-installation': 'تركيب وإصلاح الإغلاق الناعم للأبواب',
 };
 
 interface BrandServicePageProps {

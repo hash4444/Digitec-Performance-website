@@ -41,4 +41,5 @@ export const arBrandServiceNames: Record<string, string> = {
   'fuel-system-repair': 'إصلاح نظام الوقود',
   'body-repair': 'إصلاح الهيكل',
   'tire-repair': 'إصلاح الإطارات',
+  'soft-close-door-installation': 'تركيب وإصلاح الإغلاق الناعم للأبواب',
 };

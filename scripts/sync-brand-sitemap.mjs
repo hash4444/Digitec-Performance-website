@@ -28,6 +28,7 @@ const teslaServices = [
   'brake-repair', 'ac-repair', 'suspension-repair', 'mechanical-repair', 'steering-repair',
   'battery-replacement', 'electrical-repair', 'body-repair', 'tire-repair',
 ];
+const roxServices = [...allServices, 'soft-close-door-installation'];
 const mercedesServicePaths = {
   'oil-change': 'mercedes-oil-change-dubai', 'brake-repair': 'mercedes-brake-repair-dubai',
   'transmission-repair': 'mercedes-transmission-repair-dubai', 'ac-repair': 'mercedes-ac-repair-dubai',
@@ -45,7 +46,7 @@ const extendedServiceBrands = new Set([
   'bugatti-service-dubai', 'jeep-service-dubai', 'nissan-service-dubai',
   'maserati-service-dubai', 'toyota-service-dubai', 'pagani-service-dubai',
   'volkswagen-service-dubai', 'volvo-service-dubai', 'jetour-service-dubai',
-  'cadillac-service-dubai',
+  'cadillac-service-dubai', 'byd-service-dubai', 'rox-service-dubai',
 ]);
 
 const canonicalPaths = new Set();
@@ -53,6 +54,8 @@ for (const brandSlug of brandSlugs) canonicalPaths.add(`/brands/${brandSlug}`);
 for (const brandSlug of profileSlugs) {
   const services = brandSlug === 'tesla-service-dubai'
     ? teslaServices
+    : brandSlug === 'rox-service-dubai'
+      ? roxServices
     : extendedServiceBrands.has(brandSlug) ? allServices : allServices.slice(0, 6);
   for (const serviceSlug of services) {
     canonicalPaths.add(brandSlug === 'mercedes-benz-service-dubai'
