@@ -8,6 +8,8 @@ export interface Brand {
   faqs: { q: string; a: string }[];
   relatedServices: string[];
 }
+import bydLogo from '@/assets/byd-logo.png.asset.json';
+import roxLogo from '@/assets/rox-logo.png.asset.json';
 
 export const brands: Brand[] = [
   {
