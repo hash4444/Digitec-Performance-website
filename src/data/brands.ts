@@ -8,6 +8,8 @@ export interface Brand {
   faqs: { q: string; a: string }[];
   relatedServices: string[];
 }
+import bydLogo from '@/assets/byd-logo.png.asset.json';
+import roxLogo from '@/assets/rox-logo.png.asset.json';
 
 export const brands: Brand[] = [
   {
@@ -310,6 +312,7 @@ const additionalBrandLogos: Record<string, string> = {
   // clean centred look of the primary brands' /lovable-uploads/*.png badges.
   Abarth: 'https://www.carlogos.org/car-logos/abarth-logo.png',
   'Alfa Romeo': 'https://www.carlogos.org/car-logos/alfa-romeo-logo.png',
+  BYD: bydLogo.url,
   Cadillac: 'https://www.carlogos.org/car-logos/cadillac-logo.png',
   Chevrolet: 'https://www.carlogos.org/car-logos/chevrolet-logo.png',
   Chrysler: 'https://www.carlogos.org/car-logos/chrysler-logo.png',
@@ -336,6 +339,7 @@ const additionalBrandLogos: Record<string, string> = {
   Pagani: 'https://www.carlogos.org/car-logos/pagani-logo.png',
   'Range Rover': '/lovable-uploads/4bb58917-704a-4c5d-84b6-dc428a00c004.png',
   Renault: 'https://www.carlogos.org/car-logos/renault-logo.png',
+  ROX: roxLogo.url,
   Subaru: 'https://www.carlogos.org/car-logos/subaru-logo.png',
   Tesla: 'https://www.carlogos.org/car-logos/tesla-logo.png',
   Toyota: 'https://www.carlogos.org/car-logos/toyota-logo.png',
