@@ -18,6 +18,13 @@ const categories = [
   'Body & Visual Work',
 ];
 
+const categoryHeadings: Record<string, string> = {
+  'Core Mechanical Services': 'Core Mechanical Services in Dubai',
+  'Diagnostics & Electrical': 'Diagnostics & Electrical Services in Dubai',
+  'Comfort Systems': 'Car Comfort Systems in Dubai',
+  'Body & Visual Work': 'Car Body, Paint & Visual Services in Dubai',
+};
+
 const Services = () => {
   const { isArabic } = useLocale();
   const url = `https://digitecme.com${isArabic ? '/ar' : ''}/services`;
@@ -89,7 +96,7 @@ const Services = () => {
             return (
               <div key={cat}>
                 <h2 className={`text-lg sm:text-3xl font-bold mb-4 sm:mb-8 ${isArabic ? 'border-r-4 pr-3 sm:pr-4' : 'border-l-4 pl-3 sm:pl-4'} border-burnt-orange`}>
-                  {isArabic ? arHome.services.categories[cat] : cat}
+                  {isArabic ? arHome.services.categories[cat] : categoryHeadings[cat]}
                 </h2>
                 <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-3 gap-2.5 sm:gap-5 lg:gap-6">
                   {items.map((s) => (
