@@ -25,7 +25,8 @@ export type ServiceKey =
   | 'exhaust-repair'
   | 'fuel-system-repair'
   | 'body-repair'
-  | 'tire-repair';
+  | 'tire-repair'
+  | 'soft-close-door-installation';
 
 type ExtendedServiceKey =
   | 'mechanical-repair'
@@ -35,7 +36,8 @@ type ExtendedServiceKey =
   | 'exhaust-repair'
   | 'fuel-system-repair'
   | 'body-repair'
-  | 'tire-repair';
+  | 'tire-repair'
+  | 'soft-close-door-installation';
 
 export const SERVICE_KEYS: ServiceKey[] = [
   'oil-change',
@@ -82,6 +84,8 @@ const EXTENDED_SERVICE_BRANDS = new Set([
   'volvo-service-dubai',
   'jetour-service-dubai',
   'cadillac-service-dubai',
+  'byd-service-dubai',
+  'rox-service-dubai',
 ]);
 
 // Electric-only platforms should not expose combustion-engine service URLs.
@@ -97,6 +101,7 @@ const BRAND_SERVICE_OVERRIDES: Partial<Record<string, ServiceKey[]>> = {
     'body-repair',
     'tire-repair',
   ],
+  'rox-service-dubai': [...ALL_SERVICE_KEYS, 'soft-close-door-installation'],
 };
 
 const getAvailableServiceKeys = (brandSlug: string): ServiceKey[] =>
@@ -507,6 +512,24 @@ Object.assign(BRAND_PROFILES, {
     acRefrigerant: 'model-specific refrigerant confirmed from the vehicle label before service',
     climateNote: 'Tesla battery cooling, air conditioning, suspension, tyres, brakes, and low-voltage systems are checked for Dubai heat and high cabin-cooling demand.',
   }),
+  'byd-service-dubai': createAdditionalServiceProfile('byd-service-dubai', 'BYD', ['ATTO 3', 'Dolphin', 'Seal', 'Sealion 7', 'Song Plus', 'Tang'], 'BYD-compatible diagnostics with high-voltage safety procedures, live-data testing, and module checks', 'high-voltage electric, plug-in hybrid, and DM-i powertrain platforms', 'single-speed electric drive units and hybrid transaxle systems', {
+    engineCodes: ['e-Platform electric drive', 'DM-i hybrid system'],
+    oilSpec: 'manufacturer-approved engine oil matched to the vehicle specification on hybrid models',
+    transmissionFluid: 'manufacturer-approved electric drive-unit or hybrid transaxle fluid matched to the vehicle specification',
+    brakeSystem: 'regenerative braking integrated with hydraulic ABS and electronic brake-control systems',
+    suspensionType: 'independent or multi-link suspension with electronic steering and ride-height checks where fitted',
+    acRefrigerant: 'vehicle-specified refrigerant confirmed from the under-bonnet label before service',
+    climateNote: 'BYD battery cooling, cabin air conditioning, low-voltage systems, tyres, brakes, and suspension are inspected with Dubai heat and high cabin-cooling demand in mind.',
+  }),
+  'rox-service-dubai': createAdditionalServiceProfile('rox-service-dubai', 'ROX', ['ROX 01'], 'ROX-compatible diagnostics with high-voltage safety procedures, live-data testing, and module checks', 'range-extender electric, high-voltage battery, and generator-engine platforms', 'electric drive units, range-extender generator systems, and all-wheel-drive drivetrain systems', {
+    engineCodes: ['range-extender electric drive', 'generator engine', 'high-voltage battery system'],
+    oilSpec: 'manufacturer-approved engine oil matched to the range-extender generator specification',
+    transmissionFluid: 'manufacturer-approved electric drive-unit fluid matched to the vehicle specification',
+    brakeSystem: 'regenerative braking integrated with hydraulic ABS and electronic brake-control systems',
+    suspensionType: 'SUV suspension with electronic steering, ride-height checks, and comfort-system inspection',
+    acRefrigerant: 'vehicle-specified refrigerant confirmed from the under-bonnet label before service',
+    climateNote: 'ROX high-voltage systems, generator cooling, air conditioning, soft-close comfort features, brakes, tyres, and suspension are inspected for Dubai heat and daily SUV use.',
+  }),
 });
 
 export const BRAND_SLUGS = Object.keys(BRAND_PROFILES);
@@ -549,6 +572,7 @@ const SERVICE_META: Record<ServiceKey, { name: string; serviceType: string; labe
   'fuel-system-repair': { name: 'Fuel System Repair', serviceType: 'Fuel Injection & Delivery Repair', label: 'Fuel System Repair' },
   'body-repair': { name: 'Body Repair', serviceType: 'Bodywork & Paint Repair', label: 'Body Repair' },
   'tire-repair': { name: 'Tyre Repair', serviceType: 'Tyre Repair & Replacement', label: 'Tyre Repair' },
+  'soft-close-door-installation': { name: 'Soft Close Door Installation', serviceType: 'Soft Close Door Installation & Repair', label: 'Soft Close Installation' },
 };
 
 type Composed = Omit<BrandServiceCombo, 'brandSlug' | 'serviceSlug' | 'brandName' | 'serviceName' | 'serviceType' | 'whatsAppMessage'>;
@@ -796,6 +820,11 @@ const EXTENDED_SERVICE_COPY: Record<ExtendedServiceKey, {
     process: ['Tyre, wheel, and pressure-system inspection', 'Safe repair or correct tyre replacement recommendation', 'Balance, pressure reset, and road-test check'],
     parts: 'manufacturer-approved tyres, repair materials, valves, and wheel-balance weights',
   },
+  'soft-close-door-installation': {
+    symptoms: ['Door needs to be slammed to latch fully', 'Soft-close function stops partway, clicks, or does not pull the door in', 'Door warning remains on after closing', 'You would like soft-close door functionality added to your ROX 01'],
+    process: ['Inspect the door latch, alignment, wiring, and comfort-system operation', 'Confirm suitable soft-close components and provide a clear installation or repair plan', 'Install or repair components, test every door, and complete final safety checks'],
+    parts: 'soft-close latches, motors, sensors, wiring, door-striker components, and suitable comfort-system parts',
+  },
 };
 
 function composeExtendedService(p: BrandProfile, key: ExtendedServiceKey): Composed {
@@ -833,6 +862,7 @@ const COMPOSERS: Record<ServiceKey, (p: BrandProfile) => Composed> = {
   'fuel-system-repair': (p) => composeExtendedService(p, 'fuel-system-repair'),
   'body-repair': (p) => composeExtendedService(p, 'body-repair'),
   'tire-repair': (p) => composeExtendedService(p, 'tire-repair'),
+  'soft-close-door-installation': (p) => composeExtendedService(p, 'soft-close-door-installation'),
 };
 
 export function getBrandServiceCombo(brandSlug: string, serviceSlug: string): BrandServiceCombo | undefined {
