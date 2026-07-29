@@ -28,6 +28,7 @@ import { useLocale } from '@/i18n/use-locale';
 import { arBrandServices, arBrandServiceNames, localizeBrandToArabic } from '@/i18n/ar-brands';
 import { localizeServiceToArabic } from '@/i18n/ar-services';
 import ferrariEngineWorkshop from '@/assets/ferrari-engine-workshop-dubai.jpg';
+import rangeRoverWorkshop from '@/assets/range-rover-workshop-dubai.png';
 
 const getBrandSeoCopy = (brand: { name: string; specialization: string; whyChoose: { title: string }[] }) => {
   const focusAreas = brand.whyChoose.map((w) => w.title).slice(0, 4);
@@ -221,6 +222,7 @@ const BrandPage = () => {
       ? MERCEDES_SERVICE_PATHS[serviceSlug] ?? `/brands/${serviceProfileSlug}/${serviceSlug}`
       : `/brands/${serviceProfileSlug}/${serviceSlug}`;
   const isFerrari = brand.slug === 'ferrari-service-dubai';
+  const isRangeRover = brand.slug === 'range-rover-service-dubai';
 
   return (
     <div className="min-h-screen bg-black text-off-white">
@@ -228,10 +230,10 @@ const BrandPage = () => {
 
       {/* Hero */}
       <section className="relative bg-black overflow-hidden">
-        {isFerrari ? (
+        {isFerrari || isRangeRover ? (
           <>
             <img
-              src={ferrariEngineWorkshop}
+              src={isRangeRover ? rangeRoverWorkshop : ferrariEngineWorkshop}
               alt=""
               aria-hidden="true"
               className="absolute inset-0 h-full w-full object-cover object-center opacity-60"

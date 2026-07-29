@@ -17,9 +17,9 @@ const Blog = () => {
   const [activeCategory, setActiveCategory] = useState<string>('All');
 
   const url = `https://digitecme.com${isArabic ? '/ar' : ''}/blog`;
-  const allPosts = [...brandWorkshopArticleSummaries, ...blogPosts].map((post) =>
-    isArabic ? localizePostSummaryToArabic(post) : post,
-  );
+  const allPosts = [...brandWorkshopArticleSummaries, ...blogPosts]
+    .map((post) => (isArabic ? localizePostSummaryToArabic(post) : post))
+    .sort((first, second) => new Date(second.date).getTime() - new Date(first.date).getTime());
   const blogGraph = React.useMemo(
     () =>
       pageGraph([
@@ -147,6 +147,14 @@ const Blog = () => {
                   <div
                     className={`aspect-[16/10] bg-gradient-to-br ${post.coverGradient} relative overflow-hidden`}
                   >
+                    {post.coverImage && (
+                      <img
+                        src={post.coverImage}
+                        alt={`Digi-Tec workshop illustration for ${post.title}`}
+                        className="absolute inset-0 h-full w-full object-cover object-center"
+                        loading={idx < 3 ? 'eager' : 'lazy'}
+                      />
+                    )}
                     <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_rgba(255,107,53,0.3),_transparent_60%)]" />
                     <div className="absolute bottom-4 left-4">
                       <span className="px-3 py-1 rounded-full bg-black/60 backdrop-blur-sm text-burnt-orange text-xs font-bold uppercase tracking-wider border border-burnt-orange/30">

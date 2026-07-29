@@ -1,3 +1,5 @@
+import rangeRoverWorkshop from '@/assets/range-rover-workshop-dubai.png';
+
 export interface BlogPost {
   slug: string;
   title: string;
@@ -7,6 +9,7 @@ export interface BlogPost {
   date: string; // ISO
   readTime: string;
   coverGradient: string; // tailwind gradient classes
+  coverImage?: string;
   metaTitle: string;
   metaDescription: string;
   keywords?: string;
@@ -696,6 +699,136 @@ export const blogPosts: BlogPost[] = [
       {
         type: 'p',
         text: 'If you are searching for Mercedes repair in Dubai, choosing the right workshop is critical. With advanced diagnostics, expert technicians, and a focus on performance, Digitec Performance Center delivers reliable, high quality Mercedes servicing tailored to UAE conditions.',
+      },
+    ],
+  },
+  {
+    slug: 'range-rover-land-rover-air-suspension-problems-dubai',
+    title: 'Range Rover & Land Rover Air Suspension Problems in Dubai',
+    excerpt:
+      'Vehicle leaning to one side or showing a “Suspension Fault” warning? Learn why air springs, compressors and airlines fail—and what proper diagnosis involves.',
+    category: 'Maintenance',
+    author: 'DIGI-TEC Workshop',
+    date: '2026-07-29',
+    readTime: '7 min read',
+    coverGradient: 'from-burnt-orange/40 via-charcoal to-black',
+    coverImage: rangeRoverWorkshop,
+    metaTitle: 'Range Rover Air Suspension Problems Dubai | Digi-Tec',
+    metaDescription:
+      'Range Rover leaning to one side or showing Suspension Fault? Learn common air suspension faults, warning signs and repair steps in Dubai.',
+    keywords:
+      'Range Rover air suspension repair Dubai, Land Rover suspension fault, Range Rover leaning to one side, air suspension compressor Dubai, Defender air suspension repair',
+    ogTitle: 'Range Rover Air Suspension Problems in Dubai',
+    ogDescription:
+      'A practical guide to air springs, compressors, airlines, warning messages and correct diagnosis for Range Rover and Land Rover owners.',
+    ogType: 'article',
+    twitterCard: 'summary_large_image',
+    twitterTitle: 'Range Rover Air Suspension Problems Dubai',
+    twitterDescription:
+      'Why Range Rover and Land Rover air suspension fails in Dubai—and when to book a proper inspection.',
+    canonicalOverride: 'https://digitecme.com/blog/range-rover-land-rover-air-suspension-problems-dubai',
+    content: [
+      { type: 'h2', text: 'Vehicle Leaning to One Side or Showing “Suspension Fault”?' },
+      {
+        type: 'p',
+        text: 'Air suspension gives Range Rover and Land Rover vehicles the comfortable, controlled ride owners expect. When it develops a fault, however, the symptoms are usually obvious: the vehicle may drop on one corner overnight, sit lower at the rear, take a long time to rise, or display a “Suspension Fault” or ride-height warning on the dashboard. These are not warnings to ignore, especially if the vehicle is visibly low on one side.',
+      },
+      {
+        type: 'p',
+        text: 'At Digi-Tec, we see these issues on Range Rover, Range Rover Sport, Velar, Evoque, Discovery and Defender models equipped with air suspension. The correct repair starts by identifying the actual source of the pressure loss or control fault—not by replacing parts based on the warning message alone.',
+      },
+      { type: 'h2', text: 'How Land Rover Air Suspension Works' },
+      {
+        type: 'p',
+        text: 'An electronic air suspension system uses air springs or air struts at the wheels, a compressor to build pressure, airlines to carry that pressure, a valve block to distribute it, and ride-height sensors to tell the control module where the vehicle is sitting. The system constantly makes small adjustments to keep the vehicle level and to support functions such as access height, off-road height and load levelling.',
+      },
+      {
+        type: 'p',
+        text: 'Because the suspension combines rubber components, pressurised air, electronics and moving mechanical parts, one fault can create another. A small leak may force the compressor to run longer; an overworked compressor can then overheat or wear out; a weak compressor may leave the vehicle unable to raise itself even when the original leak is minor.',
+      },
+      { type: 'h2', text: 'Common Air Suspension Problems We See' },
+      { type: 'h3', text: 'Air springs or air struts leaking' },
+      {
+        type: 'p',
+        text: 'Air springs, compressors and airlines wear out or crack over time, causing the vehicle to drop to one side or display a “Suspension Fault” warning. The rubber bellows in an air spring repeatedly flex as the vehicle is driven, and age, heat and contamination can eventually create a leak. A corner that drops overnight is one of the clearest signs that the air spring, fitting or connected airline needs inspection.',
+      },
+      { type: 'h3', text: 'Compressor running too often or failing to raise the vehicle' },
+      {
+        type: 'p',
+        text: 'The compressor works harder whenever there is a leak or the system cannot hold pressure. You may hear it running for an unusually long time after starting the vehicle, or notice that the suspension rises slowly. If it is repeatedly forced to compensate for a leak, the compressor and dryer can wear prematurely. Replacing only the compressor without finding the pressure loss can lead to the same problem returning.',
+      },
+      { type: 'h3', text: 'Damaged airline, valve block or fitting' },
+      {
+        type: 'p',
+        text: 'An airline can become damaged, a connector can leak, or an internal valve in the valve block can fail to hold pressure. These faults can mimic a bad air strut. A pressure test and targeted inspection are more reliable than guessing from the vehicle height alone.',
+      },
+      { type: 'h3', text: 'Ride-height sensor or electrical fault' },
+      {
+        type: 'p',
+        text: 'A suspension warning is not always caused by an air leak. A damaged ride-height sensor, wiring issue, calibration problem or control-module fault can send incorrect information to the system. This is why a diagnostic scan and live-data check should be part of the inspection before parts are ordered.',
+      },
+      { type: 'h2', text: 'Why Dubai Conditions Matter' },
+      {
+        type: 'p',
+        text: 'Dubai heat puts additional stress on rubber, seals, electrical connections and the compressor duty cycle. Dust and road debris can also affect connectors and moving components. The result is not that every air suspension system will fail, but that early symptoms deserve attention before a small leak turns into a compressor, valve-block and calibration repair.',
+      },
+      { type: 'h2', text: 'What a Proper Air Suspension Diagnosis Includes' },
+      {
+        type: 'ul',
+        items: [
+          'Read suspension fault codes and inspect live ride-height data with JLR-compatible diagnostics',
+          'Measure the vehicle height at all four corners and compare the system response',
+          'Inspect air springs, struts, airlines, fittings and the valve block for pressure loss',
+          'Check compressor performance, dryer condition and relay operation',
+          'Confirm ride-height sensor readings and carry out calibration only when the system is mechanically sound',
+          'Road test the vehicle through its available height modes after repair',
+        ],
+      },
+      { type: 'h2', text: 'Can You Drive with a Suspension Fault?' },
+      {
+        type: 'p',
+        text: 'If the vehicle is sitting noticeably low, leaning heavily, or unable to maintain normal ride height, it is better not to continue driving it. A low corner can affect handling, tyre clearance and other suspension components. Continuing to use the vehicle can also overwork the compressor. Arrange an inspection or recovery rather than repeatedly trying to raise the suspension from the dashboard controls.',
+      },
+      { type: 'h2', text: 'Repairing the Cause, Not Just Clearing the Warning' },
+      {
+        type: 'p',
+        text: 'A workshop can clear a warning code, but that does not repair a leak, weak compressor or sensor fault. The right repair may be an air spring, compressor, airline fitting, valve block, sensor or a combination of components. Once the failed part is corrected, the system should be pressure-checked, calibrated where required and road-tested so that it returns to normal operation safely.',
+      },
+      { type: 'h2', text: 'How to Reduce Future Air Suspension Problems' },
+      {
+        type: 'ul',
+        items: [
+          'Book an inspection when you first notice uneven height, slow lifting or unusual compressor noise',
+          'Do not leave a vehicle with a known leak for weeks—the compressor has to work harder every time it self-levels',
+          'Include suspension, battery and charging checks in routine maintenance, as low voltage can create electronic faults',
+          'Use suitable genuine or OE-quality parts and complete the required ride-height calibration after repair',
+        ],
+      },
+      { type: 'h2', text: 'Book a Range Rover or Land Rover Suspension Inspection in Dubai' },
+      {
+        type: 'p',
+        text: 'If your Range Rover, Land Rover or Defender is leaning to one side, rising slowly or displaying a suspension warning, Digi-Tec can inspect the system at our Al Quoz workshop. We diagnose the air springs, compressor, airlines, valve block, sensors and calibration data before explaining the recommended repair and next steps.',
+      },
+      { type: 'h2', text: 'FAQs' },
+      { type: 'h3', text: 'Why is my Range Rover leaning to one side?' },
+      {
+        type: 'p',
+        text: 'A leaning vehicle is often caused by a leaking air spring, damaged airline, fitting or valve-block fault on that corner. A professional inspection is needed to confirm where pressure is being lost.',
+      },
+      { type: 'h3', text: 'What does “Suspension Fault” mean on a Land Rover?' },
+      {
+        type: 'p',
+        text: 'It means the air-suspension control system has detected a problem. The cause can be pressure loss, a weak compressor, a sensor or wiring fault, or a calibration issue, so the code should be diagnosed rather than simply cleared.',
+      },
+      { type: 'h3', text: 'Can a bad air spring damage the compressor?' },
+      {
+        type: 'p',
+        text: 'Yes. A leak can make the compressor run longer and more often to maintain ride height. Repairing a leak early can help prevent additional compressor wear.',
+      },
+      { type: 'h3', text: 'Do all Defender models have air suspension?' },
+      {
+        type: 'p',
+        text: 'Not every Defender configuration has the same suspension equipment. The workshop should confirm the exact model and system fitted before diagnosis or parts selection.',
       },
     ],
   },
