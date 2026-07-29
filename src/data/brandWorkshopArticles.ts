@@ -164,6 +164,7 @@ export const brandWorkshopArticleSummaries = brandWorkshopArticles.map((article)
   date: '2026-07-16',
   readTime: '12 min read',
   coverGradient: article.coverGradient,
+  coverImage: undefined as string | undefined,
   metaTitle: article.existingBestPage
     ? `${article.brand} Maintenance Dubai | DIGI-TEC`
     : `Best ${article.brand} Workshop Dubai | DIGI-TEC`,
