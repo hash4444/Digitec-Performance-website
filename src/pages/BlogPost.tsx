@@ -11,6 +11,7 @@ import { getBlogPostBySlug, blogPosts } from '@/data/blogPosts';
 import { buildArticle, buildBreadcrumb, buildFAQ, buildWebPage, pageGraph } from '@/lib/schema';
 import { useLocale } from '@/i18n/use-locale';
 import { categoryArabic, localizeBlogPostToArabic, localizePostSummaryToArabic } from '@/i18n/ar-blog';
+import rangeRoverWorkshop from '@/assets/range-rover-workshop-dubai.png';
 
 type ContentBlock = { type: 'h2' | 'h3' | 'p' | 'ul'; text?: string; items?: string[] };
 
@@ -60,6 +61,11 @@ const relatedServiceByPost: Record<string, { href: string; label: string; descri
     href: '/services/mercedes-repair-dubai',
     label: 'Mercedes repair in Dubai',
     description: 'Explore our Mercedes service and repair capability for diagnostics, maintenance, and specialist workshop support.',
+  },
+  'range-rover-land-rover-air-suspension-problems-dubai': {
+    href: '/services/suspension-repair-dubai',
+    label: 'Range Rover and Land Rover suspension repair in Dubai',
+    description: 'Book a suspension inspection for a leaning vehicle, Suspension Fault warning, slow lifting or compressor concerns.',
   },
 };
 
@@ -189,6 +195,19 @@ const BlogPost = () => {
           <p className="text-lg text-white/70 leading-relaxed mb-10 font-light italic border-l-2 border-burnt-orange pl-5">
             {post.excerpt}
           </p>
+          {post.slug === 'range-rover-land-rover-air-suspension-problems-dubai' && (
+            <figure className="mb-10 overflow-hidden rounded-2xl border border-white/10 bg-charcoal">
+              <img
+                src={rangeRoverWorkshop}
+                alt="Range Rover at Digi-Tec Performance Centre workshop in Dubai"
+                className="h-[28rem] w-full object-cover object-center sm:h-[34rem]"
+                loading="eager"
+              />
+              <figcaption className="px-4 py-3 text-sm text-white/55">
+                Range Rover inspection at Digi-Tec Performance Centre in Al Quoz, Dubai.
+              </figcaption>
+            </figure>
+          )}
           <article className="space-y-6">
             {post.content.map((block, i) => {
               if (block.type === 'h2')
