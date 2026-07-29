@@ -47,6 +47,7 @@ const extendedServiceBrands = new Set([
   'maserati-service-dubai', 'toyota-service-dubai', 'pagani-service-dubai',
   'volkswagen-service-dubai', 'volvo-service-dubai', 'jetour-service-dubai',
   'cadillac-service-dubai', 'byd-service-dubai', 'rox-service-dubai',
+  'range-rover-service-dubai', 'defender-service-dubai',
 ]);
 
 const canonicalPaths = new Set();
