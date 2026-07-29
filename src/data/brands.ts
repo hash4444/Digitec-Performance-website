@@ -300,7 +300,7 @@ const additionalBrandEntries: Array<[string, string]> = [
   ['Koenigsegg', 'koenigsegg-service-dubai'], ['Lexus', 'lexus-service-dubai'], ['Lincoln', 'lincoln-service-dubai'],
   ['Lotus', 'lotus-service-dubai'], ['Maserati', 'maserati-service-dubai'], ['Mazda', 'mazda-service-dubai'],
   ['MINI', 'mini-service-dubai'], ['Mitsubishi', 'mitsubishi-service-dubai'],
-  ['Defender', 'defender-service-dubai'], ['Nissan', 'nissan-service-dubai'], ['Pagani', 'pagani-service-dubai'],
+  ['Nissan', 'nissan-service-dubai'], ['Pagani', 'pagani-service-dubai'],
   ['Renault', 'renault-service-dubai'],
   ['ROX', 'rox-service-dubai'],
   ['Subaru', 'subaru-service-dubai'], ['Tesla', 'tesla-service-dubai'],
