@@ -1,3 +1,5 @@
+import lamborghiniUrusWorkshop from '@/assets/lamborghini-urus-workshop-dubai.jpg';
+
 export type BrandWorkshopArticle = {
   brand: string;
   slug: string;
@@ -14,6 +16,7 @@ export type BrandWorkshopArticle = {
   performanceNote: string;
   imageAlt: string;
   coverGradient: string;
+  coverImage?: string;
 };
 
 const profiles: Omit<BrandWorkshopArticle, 'slug' | 'title' | 'primaryKeyword' | 'existingBestPage' | 'brandHub'>[] = [
@@ -52,7 +55,7 @@ const profiles: Omit<BrandWorkshopArticle, 'slug' | 'title' | 'primaryKeyword' |
   },
   {
     brand: 'Lamborghini', models: 'Huracán, Urus, Revuelto, Aventador and Gallardo', diagnosticFocus: 'supercar-specific inspection of drivetrain, cooling, brakes, suspension and electronic systems',
-    commonProblems: ['clutch, gearbox or driveline behaviour that needs measured diagnosis', 'brake, tyre and suspension wear on performance-focused vehicles', 'cooling, battery and sensor faults after heat, storage or hard use'], repairFocus: ['maintenance and pre-drive inspections', 'brake, suspension, cooling and drivetrain work', 'Urus and supercar health checks before modification'], maintenanceNote: 'A Lamborghini can cover few kilometres yet still need consistent battery, tyre, fluid and cooling checks in the UAE climate.', performanceNote: 'Performance work should be planned only after the engine, drivetrain, brakes and cooling system have a documented healthy baseline.', imageAlt: 'Lamborghini undergoing inspection at DIGI-TEC Dubai', coverGradient: 'from-orange-950 via-charcoal to-black',
+    commonProblems: ['clutch, gearbox or driveline behaviour that needs measured diagnosis', 'brake, tyre and suspension wear on performance-focused vehicles', 'cooling, battery and sensor faults after heat, storage or hard use'], repairFocus: ['maintenance and pre-drive inspections', 'brake, suspension, cooling and drivetrain work', 'Urus and supercar health checks before modification'], maintenanceNote: 'A Lamborghini can cover few kilometres yet still need consistent battery, tyre, fluid and cooling checks in the UAE climate.', performanceNote: 'Performance work should be planned only after the engine, drivetrain, brakes and cooling system have a documented healthy baseline.', imageAlt: 'Lamborghini Urus receiving specialist service at DIGI-TEC Dubai', coverGradient: 'from-orange-950 via-charcoal to-black', coverImage: lamborghiniUrusWorkshop,
   },
   {
     brand: 'McLaren', models: '570S, 600LT, 720S, Artura, GT and 750S', diagnosticFocus: 'a supercar-focused diagnostic process covering heat management, electronics, braking, suspension and drivability',
@@ -164,7 +167,7 @@ export const brandWorkshopArticleSummaries = brandWorkshopArticles.map((article)
   date: '2026-07-16',
   readTime: '12 min read',
   coverGradient: article.coverGradient,
-  coverImage: undefined as string | undefined,
+  coverImage: article.coverImage,
   metaTitle: article.existingBestPage
     ? `${article.brand} Maintenance Dubai | DIGI-TEC`
     : `Best ${article.brand} Workshop Dubai | DIGI-TEC`,

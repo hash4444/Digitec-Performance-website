@@ -142,6 +142,7 @@ const BrandWorkshopArticlePage = () => {
         </nav>
 
         <section className={`relative mt-5 overflow-hidden bg-gradient-to-br ${article.coverGradient}`}>
+          {article.coverImage && <img src={article.coverImage} alt={article.imageAlt} className="absolute inset-0 h-full w-full object-cover" />}
           <div className="absolute inset-0 bg-black/55" />
           <div className="relative mx-auto max-w-4xl px-5 py-16 sm:px-6 sm:py-24">
             <p className="mb-4 text-xs font-bold uppercase tracking-[0.24em] text-burnt-orange">{t('Dubai Workshop Guide', 'دليل ورش السيارات في دبي')}</p>

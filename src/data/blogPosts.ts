@@ -5,6 +5,7 @@ import defenderAccidentDisassembly from '@/assets/defender-accident-repair-disas
 import defenderAccidentReassembly from '@/assets/defender-accident-repair-reassembly.jpg';
 import defenderAccidentFinished from '@/assets/defender-accident-repair-finished.jpg';
 import defenderWorkshop from '@/assets/defender-workshop-dubai.jpg';
+import mercedesRepairGuideWorkshop from '@/assets/mercedes-repair-guide-workshop.jpg';
 
 export interface BlogPost {
   slug: string;
@@ -564,6 +565,7 @@ export const blogPosts: BlogPost[] = [
     date: '2026-04-21',
     readTime: '9 min read',
     coverGradient: 'from-burnt-orange/40 via-charcoal to-black',
+    coverImage: mercedesRepairGuideWorkshop,
     metaTitle: 'Mercedes Repair Dubai: Complete Owner Guide 2026 | Digitec',
     metaDescription:
       'Complete 2026 guide to Mercedes repair in Dubai. Star Diagnostic, AMG specialists, OEM parts, common UAE issues, and how to choose the right Mercedes workshop.',

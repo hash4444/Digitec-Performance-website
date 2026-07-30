@@ -11,6 +11,13 @@ import { MapPin, Phone, Mail, CheckCircle2, Zap, Wrench, Gauge } from 'lucide-re
 import workshopLuxuryBays from '@/assets/digitec-workshop-luxury-bays.jpg';
 import workshopServiceFloor from '@/assets/digitec-workshop-service-floor.jpg';
 import workshopLifts from '@/assets/digitec-workshop-lifts.jpg';
+import porscheGt3rsWorkshop from '@/assets/porsche-gt3rs-workshop-dubai.jpg';
+import ferrariEngineWorkshop from '@/assets/ferrari-engine-workshop-dubai.jpg';
+import defenderWorkshop from '@/assets/defender-workshop-dubai.jpg';
+import maybachWorkshop from '@/assets/maybach-workshop-dubai.jpg';
+import lamborghiniWorkshop from '@/assets/lamborghini-workshop-dubai.jpg';
+import porscheWorkshop from '@/assets/porsche-workshop-dubai.jpg';
+import lamborghiniUrusWorkshop from '@/assets/lamborghini-urus-workshop-dubai.jpg';
 import { useLocale } from '@/i18n/use-locale';
 
 const AboutUs = () => {
@@ -168,6 +175,55 @@ const AboutUs = () => {
                 transition={{ delay: index * 0.1 }}
                 viewport={{ once: true }}
                 className="group relative overflow-hidden rounded-2xl border border-white/[0.08] bg-black aspect-[4/3]"
+              >
+                <img
+                  src={photo.image}
+                  alt={photo.alt}
+                  loading="lazy"
+                  className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+              </motion.div>
+            ))}
+          </div>
+
+          <div className="mt-4 md:mt-5 grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-5">
+            {[
+              {
+                image: porscheGt3rsWorkshop,
+                alt: isArabic ? 'بورشه GT3 RS داخل ورشة ديجي-تك في دبي' : 'Porsche GT3 RS inside the Digi-Tec workshop in Dubai',
+              },
+              {
+                image: ferrariEngineWorkshop,
+                alt: isArabic ? 'محرك فيراري داخل ورشة ديجي-تك في دبي' : 'Ferrari engine work inside the Digi-Tec workshop in Dubai',
+              },
+              {
+                image: defenderWorkshop,
+                alt: isArabic ? 'لاند روفر ديفندر داخل ورشة ديجي-تك في دبي' : 'Land Rover Defender inside the Digi-Tec workshop in Dubai',
+              },
+              {
+                image: maybachWorkshop,
+                alt: isArabic ? 'مايباخ تخضع للفحص في ورشة ديجي-تك بدبي' : 'Maybach receiving an inspection at the Digi-Tec workshop in Dubai',
+              },
+              {
+                image: lamborghiniWorkshop,
+                alt: isArabic ? 'لامبورغيني أوروس داخل ورشة ديجي-تك في دبي' : 'Lamborghini Urus inside the Digi-Tec workshop in Dubai',
+              },
+              {
+                image: porscheWorkshop,
+                alt: isArabic ? 'سيارات بورشه داخل ورشة ديجي-تك في دبي' : 'Porsche cars inside the Digi-Tec workshop in Dubai',
+              },
+              {
+                image: lamborghiniUrusWorkshop,
+                alt: isArabic ? 'لامبورغيني أوروس على الرافعة في ورشة ديجي-تك بدبي' : 'Lamborghini Urus on a lift at the Digi-Tec workshop in Dubai',
+              },
+            ].map((photo, index) => (
+              <motion.div
+                key={photo.alt}
+                initial={{ opacity: 0, y: 16 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ delay: index * 0.06 }}
+                viewport={{ once: true }}
+                className="group relative overflow-hidden rounded-2xl border border-white/[0.08] bg-black aspect-[3/4]"
               >
                 <img
                   src={photo.image}
