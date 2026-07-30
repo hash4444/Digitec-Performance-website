@@ -150,7 +150,7 @@ const Blog = () => {
                     {post.coverImage && (
                       <img
                         src={post.coverImage}
-                        alt={`Digi-Tec workshop illustration for ${post.title}`}
+                        alt={isArabic ? `صورة من ورشة ديجي-تك لمقال ${post.title}` : `Digi-Tec workshop illustration for ${post.title}`}
                         className="absolute inset-0 h-full w-full object-cover object-center"
                         loading={idx < 3 ? 'eager' : 'lazy'}
                       />

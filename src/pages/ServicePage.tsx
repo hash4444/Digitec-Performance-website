@@ -407,6 +407,28 @@ const ServicePage: React.FC<ServicePageProps> = ({ slugOverride, canonicalPath, 
                   </Link>
                 </div>
               )}
+
+              {/* ROX 01 soft-close page — a focused internal path for ROX owners */}
+              {service.slug === 'soft-close-door-repair-dubai' && (
+                <div className="bg-gradient-to-br from-burnt-orange/10 to-charcoal/40 border border-burnt-orange/30 rounded-2xl p-6 sm:p-8">
+                  <span className="text-burnt-orange text-xs font-bold uppercase tracking-widest mb-3 block">
+                    {isArabic ? 'خدمة ROX 01 المتخصصة' : 'ROX 01 Specialist Service'}
+                  </span>
+                  <h3 className="text-2xl sm:text-3xl font-bold mb-3">
+                    {isArabic ? 'هل تحتاج إلى تركيب الإغلاق الناعم لسيارة ROX 01؟' : 'Need ROX 01 soft close installation in Dubai?'}
+                  </h3>
+                  <p className="text-gray-300 leading-relaxed text-lg mb-5">
+                    {isArabic ? 'تعرّف على خدمة ROX 01 المخصصة لتركيب الإغلاق الناعم وفحص التوافق وإصلاح الأقفال والأسلاك في ورشتنا بالقوز.' : 'Explore our dedicated ROX 01 page for soft close installation, compatibility checks, latch diagnosis and comfort-system repair at our Al Quoz workshop.'}
+                  </p>
+                  <Link
+                    to="/brands/rox-service-dubai/soft-close-door-installation"
+                    className="inline-flex items-center gap-2 bg-burnt-orange hover:bg-burnt-orange/90 text-black font-bold py-3 px-6 rounded-xl transition-all duration-300"
+                  >
+                    {isArabic ? 'استكشف خدمة ROX 01' : 'Explore ROX 01 Soft Close Service'}
+                    <ChevronRight className="w-5 h-5" />
+                  </Link>
+                </div>
+              )}
             </div>
 
             {/* Sidebar */}

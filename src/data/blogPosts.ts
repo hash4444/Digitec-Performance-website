@@ -1,15 +1,22 @@
 import rangeRoverWorkshop from '@/assets/range-rover-workshop-dubai.png';
+import defenderAccidentFront from '@/assets/defender-accident-repair-front.jpg';
+import defenderAccidentCorner from '@/assets/defender-accident-repair-corner.jpg';
+import defenderAccidentDisassembly from '@/assets/defender-accident-repair-disassembly.jpg';
+import defenderAccidentReassembly from '@/assets/defender-accident-repair-reassembly.jpg';
+import defenderAccidentFinished from '@/assets/defender-accident-repair-finished.jpg';
+import defenderWorkshop from '@/assets/defender-workshop-dubai.jpg';
 
 export interface BlogPost {
   slug: string;
   title: string;
   excerpt: string;
-  category: 'Maintenance' | 'Tuning' | 'Mercedes' | 'Detailing';
+  category: 'Maintenance' | 'Tuning' | 'Mercedes' | 'Detailing' | 'Workshop Guides';
   author: string;
   date: string; // ISO
   readTime: string;
   coverGradient: string; // tailwind gradient classes
   coverImage?: string;
+  gallery?: { src: string; alt: string; caption: string }[];
   metaTitle: string;
   metaDescription: string;
   keywords?: string;
@@ -829,6 +836,155 @@ export const blogPosts: BlogPost[] = [
       {
         type: 'p',
         text: 'Not every Defender configuration has the same suspension equipment. The workshop should confirm the exact model and system fitted before diagnosis or parts selection.',
+      },
+    ],
+  },
+  {
+    slug: 'best-defender-workshop-dubai',
+    title: 'Best Defender Workshop in Dubai: A Real Accident Repair Case Study',
+    excerpt:
+      'What should you expect from a Defender repair workshop after an accident? Follow a real front-end repair case, from strip-down and inspection to final checks.',
+    category: 'Workshop Guides',
+    author: 'DIGI-TEC Workshop',
+    date: '2026-07-30',
+    readTime: '9 min read',
+    coverGradient: 'from-slate-700 via-charcoal to-black',
+    coverImage: defenderWorkshop,
+    gallery: [
+      {
+        src: defenderAccidentFront,
+        alt: 'Land Rover Defender front end removed for accident repair inspection at Digi-Tec Dubai',
+        caption: 'Initial strip-down: access to the front structure, cooling pack and wiring lets the repair start with facts rather than assumptions.',
+      },
+      {
+        src: defenderAccidentCorner,
+        alt: 'Land Rover Defender front corner disassembled during accident repair in Dubai',
+        caption: 'Corner inspection: the panel, lighting area, mounting points and mechanical components are checked before reassembly.',
+      },
+      {
+        src: defenderAccidentDisassembly,
+        alt: 'Land Rover Defender front cooling system and body parts removed after accident damage',
+        caption: 'Front-end disassembly exposes components that are hidden behind the bumper, grille and lamps.',
+      },
+      {
+        src: defenderAccidentReassembly,
+        alt: 'Land Rover Defender being reassembled after front accident repair at Digi-Tec workshop',
+        caption: 'Controlled reassembly follows inspection and approved repair work, with systems checked before handover.',
+      },
+      {
+        src: defenderAccidentFinished,
+        alt: 'Finished Land Rover Defender after accident repair at Digi-Tec Performance Centre Dubai',
+        caption: 'Completed Defender following the repair process and final workshop checks.',
+      },
+    ],
+    metaTitle: 'Best Defender Workshop Dubai | Digi-Tec',
+    metaDescription:
+      'Looking for a Defender workshop in Dubai? See how Digi-Tec approaches accident repair, diagnostics, bodywork and final checks for Land Rover Defender owners.',
+    keywords:
+      'best Defender workshop Dubai, Defender repair Dubai, Land Rover Defender accident repair Dubai, Defender body repair Dubai, Defender diagnostics Dubai, Defender specialist Al Quoz',
+    ogTitle: 'Best Defender Workshop in Dubai: Real Repair Case Study',
+    ogDescription:
+      'A real Land Rover Defender accident-repair case, showing why proper strip-down, diagnosis and final system checks matter.',
+    ogType: 'article',
+    twitterCard: 'summary_large_image',
+    twitterTitle: 'Best Defender Workshop Dubai | Digi-Tec',
+    twitterDescription:
+      'See a real Defender accident-repair case at Digi-Tec Performance Centre in Al Quoz, Dubai.',
+    canonicalOverride: 'https://digitecme.com/blog/best-defender-workshop-dubai',
+    content: [
+      { type: 'h2', text: 'What Makes a Good Defender Workshop in Dubai?' },
+      {
+        type: 'p',
+        text: 'Finding the best Defender workshop in Dubai is not about choosing the quickest quote or replacing visible panels alone. A modern Land Rover Defender is a complex vehicle: behind the bumper and lights sit cooling components, wiring looms, sensors, mounting points and driver-assistance equipment. After an accident, the right workshop must inspect what cannot be seen before committing to a repair plan.',
+      },
+      {
+        type: 'p',
+        text: 'This case study follows a Defender that arrived at Digi-Tec Performance Centre after front-end accident damage. The photographs show the actual workshop process: careful removal of the affected front components, inspection of the structure and systems behind them, controlled reassembly and the final finished vehicle. It is a good example of what Defender owners should expect from a specialist repair partner in Dubai.',
+      },
+      { type: 'h2', text: 'Why an Accident Repair Needs More Than Cosmetic Work' },
+      {
+        type: 'p',
+        text: 'A bumper, grille or headlamp can make accident damage look straightforward. On a Defender, however, the visible damage may hide issues with brackets, the radiator and condenser area, active shutter systems, wiring, parking sensors, camera equipment or wheel-arch components. Repairing only the outer appearance can leave a warning light, poor panel alignment, cooling issue or sensor fault to appear later.',
+      },
+      {
+        type: 'ul',
+        items: [
+          'Remove damaged outer components carefully so hidden areas can be inspected',
+          'Check the front carrier, mounting points, cooling pack and air guides',
+          'Inspect wiring, connectors, lamps, parking sensors and cameras before reassembly',
+          'Assess wheel-arch, suspension and steering components if the impact reached a corner',
+          'Confirm diagnostic faults and calibrations required after repair',
+        ],
+      },
+      { type: 'h2', text: 'The Real Defender Repair Case: Strip-Down First' },
+      {
+        type: 'p',
+        text: 'For this Defender, the workshop team did not guess at the full scope from the exterior. The front-end components were stripped down so the cooling system, brackets, loom routing and structural mounting points could be inspected directly. The photos from this stage show why this step matters: much of the repair-critical area sits behind the outer panels.',
+      },
+      {
+        type: 'p',
+        text: 'A documented strip-down gives the owner a more accurate repair path. It allows the workshop to separate parts that can be retained from those that need replacement, identify supporting work such as wiring repairs or alignment, and explain the scope before the vehicle moves to reassembly.',
+      },
+      { type: 'h2', text: 'Diagnostics, Safety Systems and Calibration' },
+      {
+        type: 'p',
+        text: 'Modern Defender repair is not complete when the panels fit. After any relevant front-end repair, the vehicle needs a diagnostic scan and a check for warning messages, sensor communication and system readiness. Depending on the exact specification and repair scope, this can include parking sensors, cameras, lighting functions, air-conditioning operation, active safety equipment and calibration procedures.',
+      },
+      {
+        type: 'p',
+        text: 'The correct requirements depend on the individual vehicle and the components affected. A responsible workshop should explain what is being tested, what needs calibration and why. That is much stronger than simply clearing stored fault codes after the bumper is refitted.',
+      },
+      { type: 'h2', text: 'Defender Body Repair, Mechanical Repair and Paintwork Must Work Together' },
+      {
+        type: 'p',
+        text: 'Quality accident repair involves more than one discipline. Body fit and finish, cooling-system condition, electrical work, mechanical checks and diagnostic confirmation must all align. The aim is not only a Defender that looks right in the workshop; it is a vehicle with correct fitment, normal operation and a clear repair record for the owner.',
+      },
+      {
+        type: 'p',
+        text: 'At Digi-Tec in Al Quoz, we combine mechanical diagnostics, electrical inspection, body repair and vehicle handover checks in one workshop process. Before work begins, the owner receives a clear explanation of the findings and the recommended repair route. When a part choice is needed, we discuss genuine OEM, OE-supplier and suitable approved options according to the repair requirement.',
+      },
+      { type: 'h2', text: 'How to Choose the Best Defender Workshop in Dubai' },
+      {
+        type: 'ul',
+        items: [
+          'Choose a workshop that carries out a full inspection before promising a final repair scope',
+          'Ask how the workshop checks cooling, wiring, sensors and hidden mounting points after an impact',
+          'Confirm that diagnostics and required calibrations are included in the repair plan',
+          'Request a clear written estimate showing parts, labour and the work being approved',
+          'Ask what testing and quality checks happen before vehicle collection',
+          'Use a workshop that can support future Defender maintenance, suspension, electrical and diagnostic needs',
+        ],
+      },
+      { type: 'h2', text: 'Why Defender Owners Choose Digi-Tec' },
+      {
+        type: 'p',
+        text: 'Digi-Tec Performance Centre is an independent workshop in Al Quoz, Dubai, supporting Defender, Range Rover, Land Rover and other luxury vehicles. Our work is diagnostic-first: we inspect the affected system, explain the findings clearly and use the appropriate repair process rather than relying on a cosmetic shortcut. Whether your Defender needs accident repair, diagnostics, routine service, suspension work, air-conditioning repair or electrical support, our team can arrange an inspection and give you a practical next step.',
+      },
+      { type: 'h2', text: 'Book a Defender Inspection in Dubai' },
+      {
+        type: 'p',
+        text: 'If your Defender has been in an accident, has visible front-end damage, a warning light or a concern after a repair elsewhere, book an inspection at Digi-Tec Performance Centre. Bring the vehicle to our Al Quoz workshop or contact us by phone or WhatsApp to discuss the damage and arrange the earliest suitable appointment.',
+      },
+      { type: 'h2', text: 'FAQs' },
+      { type: 'h3', text: 'Can you repair a Land Rover Defender after an accident in Dubai?' },
+      {
+        type: 'p',
+        text: 'Yes. Digi-Tec can inspect accident-related Defender damage and coordinate body, mechanical, cooling, electrical and diagnostic work according to the repair scope.',
+      },
+      { type: 'h3', text: 'Why must a Defender be scanned after front-end repair?' },
+      {
+        type: 'p',
+        text: 'A diagnostic scan helps identify stored faults and confirms communication with the vehicle systems affected by the repair. Required calibration depends on the model specification and the components repaired or replaced.',
+      },
+      { type: 'h3', text: 'Can hidden damage exist after a minor-looking Defender accident?' },
+      {
+        type: 'p',
+        text: 'Yes. Components behind the bumper can include brackets, cooling parts, wiring, sensors and mounts. A strip-down inspection is the reliable way to establish the real repair scope.',
+      },
+      { type: 'h3', text: 'Do you work on Defender maintenance as well as accident repair?' },
+      {
+        type: 'p',
+        text: 'Yes. We provide Defender maintenance, diagnostics, suspension, brake, electrical, air-conditioning and mechanical repair support in Dubai.',
       },
     ],
   },

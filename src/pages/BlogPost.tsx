@@ -67,6 +67,11 @@ const relatedServiceByPost: Record<string, { href: string; label: string; descri
     label: 'Range Rover and Land Rover suspension repair in Dubai',
     description: 'Book a suspension inspection for a leaning vehicle, Suspension Fault warning, slow lifting or compressor concerns.',
   },
+  'best-defender-workshop-dubai': {
+    href: '/brands/defender-service-dubai',
+    label: 'Defender service in Dubai',
+    description: 'Arrange a Defender inspection for accident damage, warning lights, diagnostics, bodywork or ongoing maintenance.',
+  },
 };
 
 const BlogPost = () => {
@@ -199,14 +204,32 @@ const BlogPost = () => {
             <figure className="mb-10 overflow-hidden rounded-2xl border border-white/10 bg-charcoal">
               <img
                 src={rangeRoverWorkshop}
-                alt="Range Rover at Digi-Tec Performance Centre workshop in Dubai"
+                alt={isArabic ? 'رينج روفر داخل ورشة ديجي-تك بيرفورمانس في دبي' : 'Range Rover at Digi-Tec Performance Centre workshop in Dubai'}
                 className="h-[28rem] w-full object-cover object-center sm:h-[34rem]"
                 loading="eager"
               />
               <figcaption className="px-4 py-3 text-sm text-white/55">
-                Range Rover inspection at Digi-Tec Performance Centre in Al Quoz, Dubai.
+                {isArabic ? 'فحص رينج روفر في مركز ديجي-تك بيرفورمانس بالقوز، دبي.' : 'Range Rover inspection at Digi-Tec Performance Centre in Al Quoz, Dubai.'}
               </figcaption>
             </figure>
+          )}
+          {post.gallery && post.gallery.length > 0 && (
+            <section className="mb-10" aria-label={isArabic ? 'صور دراسة حالة إصلاح ديفندر' : 'Defender repair case study gallery'}>
+              <p className="mb-4 text-burnt-orange text-xs font-bold uppercase tracking-wider">{isArabic ? 'حالة إصلاح ديفندر حقيقية' : 'Real Defender repair case'}</p>
+              <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
+                {post.gallery.map((image) => (
+                  <figure key={image.src} className="overflow-hidden rounded-2xl border border-white/10 bg-charcoal">
+                    <img
+                      src={image.src}
+                      alt={image.alt}
+                      className="aspect-[4/5] w-full object-cover object-center"
+                      loading="lazy"
+                    />
+                    <figcaption className="px-4 py-3 text-sm leading-relaxed text-white/55">{image.caption}</figcaption>
+                  </figure>
+                ))}
+              </div>
+            </section>
           )}
           <article className="space-y-6">
             {post.content.map((block, i) => {

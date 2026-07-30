@@ -5,6 +5,8 @@ import ceramicImage from '@/assets/ceramic-coating.jpg';
 import mercedesRepairImg from '@/assets/mercedes-repair.jpg';
 import mercedesAmgEngineImg from '@/assets/mercedes-amg-engine-repair-dubai.jpg';
 import softCloseDoorImg from '@/assets/soft-close-door-repair.jpg';
+import suspensionRepairImg from '@/assets/suspension-repair-dubai.jpg';
+import exhaustRepairImg from '@/assets/exhaust-repair-dubai.jpg';
 import { mercedesServices } from './mercedesServices';
 
 export interface ServiceData {
@@ -162,7 +164,7 @@ export const services: ServiceData[] = [
     metaDescription: 'Air suspension sagging or harsh ride? AIRMATIC, shock and air strut repair in Dubai with OEM parts and same week turnaround. Book at Digitec today.',
     title: 'Suspension Repair in Dubai',
     description: 'Car suspension and air suspension specialists in Dubai.',
-    image: '/lovable-uploads/0f7fde8d-a57b-45bc-bb10-c80f98525682.png',
+    image: suspensionRepairImg,
     category: 'Core Mechanical Services',
     seoKeyword: 'Suspension Repair in Dubai',
     intro: 'At Digitec Performance Center, we provide expert suspension repair in Dubai for luxury, performance, and everyday vehicles. As a trusted car suspension specialist in Dubai, we restore ride comfort, handling precision, and overall driving stability using advanced diagnostics and high-quality components. From worn shock absorbers to complex air suspension faults, our technicians ensure your vehicle delivers the smooth, controlled ride it was engineered for.',
@@ -562,7 +564,7 @@ export const services: ServiceData[] = [
     metaDescription: 'Loud, leaking or failed exhaust? Specialist catalytic converter, muffler and DPF repair in Dubai, with performance upgrades. Book at Digitec today.',
     title: 'Exhaust Repair in Dubai',
     description: 'Exhaust system, muffler and catalytic converter specialists in Dubai.',
-    image: '/lovable-uploads/b400327f-926f-4da6-97f8-cff91a39e3ec.png',
+    image: exhaustRepairImg,
     category: 'Core Mechanical Services',
     seoKeyword: 'Exhaust Repair in Dubai',
     intro: 'At Digitec Performance Center, we provide expert exhaust repair in Dubai, delivering high-quality solutions for performance, efficiency, and emissions compliance. As a trusted exhaust specialist in Dubai, we diagnose and repair all exhaust system components, from minor leaks to full exhaust system replacements and performance upgrades. Whether your vehicle has excessive noise, reduced power, or warning lights, our technicians ensure precise repairs using advanced tools and premium components.',

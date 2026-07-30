@@ -29,6 +29,11 @@ import { arBrandServices, arBrandServiceNames, localizeBrandToArabic } from '@/i
 import { localizeServiceToArabic } from '@/i18n/ar-services';
 import ferrariEngineWorkshop from '@/assets/ferrari-engine-workshop-dubai.jpg';
 import rangeRoverWorkshop from '@/assets/range-rover-workshop-dubai.png';
+import defenderWorkshop from '@/assets/defender-workshop-dubai.jpg';
+import nissanWorkshop from '@/assets/nissan-workshop-dubai.jpg';
+import lamborghiniWorkshop from '@/assets/lamborghini-workshop-dubai.jpg';
+import porscheWorkshop from '@/assets/porsche-workshop-dubai.jpg';
+import porscheGt3rsWorkshop from '@/assets/porsche-gt3rs-workshop-dubai.jpg';
 
 const getBrandSeoCopy = (brand: { name: string; specialization: string; whyChoose: { title: string }[] }) => {
   const focusAreas = brand.whyChoose.map((w) => w.title).slice(0, 4);
@@ -226,6 +231,10 @@ const BrandPage = () => {
       : `/brands/${serviceProfileSlug}/${serviceSlug}`;
   const isFerrari = brand.slug === 'ferrari-service-dubai';
   const isRangeRover = brand.slug === 'range-rover-service-dubai';
+  const isDefender = brand.slug === 'defender-service-dubai' || brand.name === 'Defender';
+  const isNissan = brand.slug === 'nissan-service-dubai';
+  const isLamborghini = brand.slug === 'lamborghini-service-dubai';
+  const isPorsche = brand.slug === 'porsche-service-dubai';
 
   return (
     <div className="min-h-screen bg-black text-off-white">
@@ -233,10 +242,10 @@ const BrandPage = () => {
 
       {/* Hero */}
       <section className="relative bg-black overflow-hidden">
-        {isFerrari || isRangeRover ? (
+        {isFerrari || isRangeRover || isDefender || isNissan || isLamborghini || isPorsche ? (
           <>
             <img
-              src={isRangeRover ? rangeRoverWorkshop : ferrariEngineWorkshop}
+              src={isPorsche ? porscheGt3rsWorkshop : isLamborghini ? lamborghiniWorkshop : isNissan ? nissanWorkshop : isDefender ? defenderWorkshop : isRangeRover ? rangeRoverWorkshop : ferrariEngineWorkshop}
               alt=""
               aria-hidden="true"
               className="absolute inset-0 h-full w-full object-cover object-center opacity-60"
@@ -339,6 +348,20 @@ const BrandPage = () => {
                 <p className="text-gray-400 text-sm leading-relaxed">{isArabic ? 'نفحص التبريد والبطارية والزيوت والإطارات والفرامل مع مراعاة حرارة دبي والازدحام وطريقة الاستخدام.' : profile.climateNote}</p>
               </div>
             </div>
+            {isPorsche && (
+              <figure className="max-w-xl mx-auto mt-6 sm:mt-8 rounded-2xl overflow-hidden border border-white/10 bg-black/40 flex">
+                <img
+                  src={porscheWorkshop}
+                  alt="Porsche receiving specialist service at Digi-Tec Performance Centre in Dubai"
+                  className="w-28 sm:w-36 h-36 sm:h-40 object-cover"
+                  loading="lazy"
+                />
+                <figcaption className="p-4 sm:p-5 flex flex-col justify-center">
+                  <span className="text-burnt-orange text-xs font-bold uppercase tracking-widest mb-1">Porsche workshop</span>
+                  <p className="text-gray-300 text-sm leading-relaxed">Specialist care for Porsche performance, maintenance and repair in our Al Quoz workshop.</p>
+                </figcaption>
+              </figure>
+            )}
             {models.length > 0 && (
               <div className="mt-6 sm:mt-8 card-premium rounded-2xl p-5 sm:p-6">
                 <h3 className="text-lg font-bold text-off-white mb-3">{isArabic ? `طرازات ${brand.name} التي نخدمها` : `${brand.name} models we work with`}</h3>

@@ -24,6 +24,10 @@ export const businessRef = { '@id': IDS.business };
 export const websiteRef = { '@id': IDS.website };
 
 const abs = (url: string) => (url.startsWith('http') ? url : `${SITE_URL}${url.startsWith('/') ? '' : '/'}${url}`);
+const languageForUrl = (url: string) => {
+  const pathname = new URL(abs(url)).pathname;
+  return pathname === '/ar' || pathname.startsWith('/ar/') ? 'ar-AE' : 'en-AE';
+};
 
 type Entity = Record<string, unknown>;
 
@@ -95,7 +99,7 @@ export function buildWebPage(opts: {
       : {}),
     ...(datePublished ? { datePublished } : {}),
     ...(dateModified ? { dateModified } : {}),
-    inLanguage: 'en',
+    inLanguage: languageForUrl(url),
   };
 }
 
@@ -119,6 +123,7 @@ export function buildService(opts: {
     serviceType,
     description,
     url,
+    inLanguage: languageForUrl(url),
     ...(image ? { image: abs(image) } : {}),
     provider: businessRef,
     areaServed: (areaServed && areaServed.length > 0
@@ -148,6 +153,7 @@ export function buildFAQ(pageUrl: string, faqs: { question: string; answer: stri
   return {
     '@type': 'FAQPage',
     '@id': `${pageUrl}#faq`,
+    inLanguage: languageForUrl(pageUrl),
     mainEntity: faqs.map((f) => ({
       '@type': 'Question',
       name: f.question,
@@ -202,7 +208,7 @@ export function buildArticle(opts: {
       : {}),
     ...(section ? { articleSection: section } : {}),
     ...(keywords ? { keywords } : {}),
-    inLanguage: 'en',
+    inLanguage: languageForUrl(url),
   };
 }
 
