@@ -113,6 +113,9 @@ const BrandServicePage: React.FC<BrandServicePageProps> = ({
         `${combo.brandName} ${combo.serviceName} Dubai`,
         `${combo.brandName} service Dubai`,
         `${combo.brandName} workshop Dubai`,
+        ...(combo.brandSlug === 'rox-service-dubai' && combo.serviceSlug === 'soft-close-door-installation'
+          ? ['ROX 01 soft close', 'ROX soft close installation', 'ROX soft close Dubai', 'ROX soft close near me']
+          : []),
         ...combo.models.slice(0, 3).map((m) => `${combo.brandName} ${m} ${combo.serviceName}`),
       ],
     });
@@ -170,7 +173,7 @@ const BrandServicePage: React.FC<BrandServicePageProps> = ({
               </span>
             </div>
             <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black mb-4 sm:mb-6 leading-tight">
-              {isArabic ? <><span className="text-burnt-orange">{combo.serviceName}</span> {combo.brandName} في دبي</> : <>{combo.brandName} <span className="text-burnt-orange">{combo.serviceName}</span> Dubai</>}
+              {isArabic ? <><span className="text-burnt-orange">{combo.serviceName}</span> {combo.brandName} في دبي</> : combo.brandSlug === 'rox-service-dubai' && combo.serviceSlug === 'soft-close-door-installation' ? <>ROX 01 <span className="text-burnt-orange">Soft Close Installation Dubai</span></> : <>{combo.brandName} <span className="text-burnt-orange">{combo.serviceName}</span> Dubai</>}
             </h1>
             <p className="text-gray-300 text-base sm:text-lg leading-relaxed mb-6 sm:mb-8">
               {combo.heroCopy}

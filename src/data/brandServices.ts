@@ -893,6 +893,7 @@ export function getBrandServiceCombo(brandSlug: string, serviceSlug: string): Br
   const key = serviceSlug as ServiceKey;
   const meta = SERVICE_META[key];
   const composed = COMPOSERS[key](profile);
+  const isRoxSoftClose = brandSlug === 'rox-service-dubai' && key === 'soft-close-door-installation';
   const whatsAppMessage = `Hi, I would like to enquire about ${profile.brandName} ${meta.label} at Digi-Tec Performance Centre.`;
   return {
     brandSlug,
@@ -902,8 +903,35 @@ export function getBrandServiceCombo(brandSlug: string, serviceSlug: string): Br
     serviceType: meta.serviceType,
     whatsAppMessage,
     ...composed,
-    metaTitle: `${profile.brandName} ${meta.name} Dubai | Digi-Tec`,
-    metaDescription: `Specialist ${profile.brandName} ${meta.name.toLowerCase()} in Dubai with model-specific diagnostics, approved parts, clear quotes, and workshop care at Digi-Tec, Al Quoz.`,
+    ...(isRoxSoftClose ? {
+      h1: 'ROX 01 Soft Close Installation Dubai',
+      metaTitle: 'ROX 01 Soft Close Installation Dubai | Digi-Tec',
+      metaDescription: 'ROX 01 soft close installation in Dubai. Digi-Tec fits, diagnoses and repairs soft close door systems with compatibility checks in Al Quoz.',
+      heroCopy: 'Digi-Tec provides dedicated ROX 01 soft close installation in Dubai for owners who want the premium pull-close function added to their SUV. Our Al Quoz workshop checks door compatibility, latch fitment, wiring routes, door alignment and safety operation before installation. We also diagnose and repair ROX soft close systems that click, stop halfway, fail to pull the door shut or leave a door-open warning on the display.',
+      symptoms: [
+        'You want soft close functionality installed on your ROX 01',
+        'The door needs to be slammed before it latches correctly',
+        'The soft close motor clicks, grinds, stops halfway or does not pull the door in',
+        'A door-open warning remains after the door is closed',
+      ],
+      processSteps: [
+        { title: 'ROX 01 compatibility inspection', description: 'We inspect the doors, latch area, trim, wiring routes and vehicle configuration before recommending the correct ROX soft close installation.' },
+        { title: 'Installation plan and clear quote', description: 'You receive a clear scope covering components, fitting, calibration and the expected workshop time before work starts.' },
+        { title: 'Professional fitment and adjustment', description: 'Our technicians install or repair the required latches, actuators, wiring and door-striker components, then set the alignment correctly.' },
+        { title: 'Safety and locking verification', description: 'Every fitted door is tested for pull-close operation, locking, anti-pinch safety and warning-light behaviour before handover.' },
+      ],
+      partsCopy: 'For ROX 01 soft close installation and repair, we use suitable latches, actuators, motors, sensors, wiring and door-striker components selected after the compatibility inspection. We document the recommended solution and verify the locking and safety functions after fitting.',
+      faqs: [
+        { question: 'Can you install soft close doors on a ROX 01 in Dubai?', answer: 'Yes. Digi-Tec provides ROX 01 soft close installation in Dubai. We inspect compatibility, door fitment and wiring first, then install and test the system in our Al Quoz workshop.' },
+        { question: 'Can you repair a ROX soft close door that is not working?', answer: 'Yes. We diagnose ROX soft close faults such as clicking, incomplete pull-close action, latch issues, wiring faults, door alignment problems and warning messages before replacing any parts.' },
+        { question: 'How long does ROX 01 soft close installation take?', answer: 'Timing depends on the number of doors, the selected components and the vehicle inspection. We confirm the installation plan and timeline after checking your ROX 01.' },
+        { question: 'Where can I find ROX soft close installation near me in Dubai?', answer: 'Digi-Tec Performance Centre is in Al Quoz Industrial Area 3, Dubai. Contact us by WhatsApp or phone to arrange a ROX 01 soft close compatibility inspection.' },
+        { question: 'Do you work on ROX 01 door latches and comfort-system wiring?', answer: 'Yes. Our service includes inspection of the latch, actuator, wiring, sensors, door alignment and related comfort-system operation.' },
+      ],
+    } : {
+      metaTitle: `${profile.brandName} ${meta.name} Dubai | Digi-Tec`,
+      metaDescription: `Specialist ${profile.brandName} ${meta.name.toLowerCase()} in Dubai with model-specific diagnostics, approved parts, clear quotes, and workshop care at Digi-Tec, Al Quoz.`,
+    }),
   };
 }
 
