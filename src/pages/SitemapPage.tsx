@@ -20,7 +20,9 @@ const SitemapPage = () => {
     canonical: `https://digitecme.com${isArabic ? '/ar' : ''}/sitemap`,
   });
 
-  const displayedServices = services.map((service) => (isArabic ? localizeServiceToArabic(service) : service));
+  const displayedServices = services
+    .filter((service) => service.slug !== 'mercedes-repair-dubai')
+    .map((service) => (isArabic ? localizeServiceToArabic(service) : service));
   const displayedBrands = brands.map((brand) => (isArabic ? localizeBrandToArabic(brand) : brand));
   const displayedPosts = blogPosts.map((post) => (isArabic ? localizePostSummaryToArabic(post) : post));
   const displayedWorkshopPages = bestWorkshopPages.map((page) => (isArabic ? localizeBestWorkshopPageToArabic(page) : page));

@@ -120,7 +120,7 @@ const profiles: Omit<BrandWorkshopArticle, 'slug' | 'title' | 'primaryKeyword' |
 ];
 
 const existingBestPages: Record<string, string> = {
-  'Mercedes-Benz': '/best-mercedes-workshop-dubai',
+  'Mercedes-Benz': '/brands/mercedes-benz-service-dubai',
   BMW: '/best-bmw-workshop-dubai',
   Porsche: '/best-porsche-workshop-dubai',
   Audi: '/best-audi-workshop-dubai',

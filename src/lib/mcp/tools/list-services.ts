@@ -3,14 +3,13 @@ import { z } from "zod";
 
 const SITE = "https://digitecme.com";
 
-const services: { slug: string; title: string; category: "general" | "mercedes" }[] = [
-  { slug: "mercedes-repair-dubai", title: "Mercedes Repair in Dubai", category: "mercedes" },
+const services: { slug: string; title: string; category: "general" | "mercedes"; path?: string }[] = [
+  { slug: "mercedes-benz-service-dubai", title: "Mercedes-Benz Repair & Service in Dubai", category: "mercedes", path: "/brands/mercedes-benz-service-dubai" },
   { slug: "mercedes-mechanical-repair-dubai", title: "Mercedes Mechanical Repair in Dubai", category: "mercedes" },
   { slug: "mercedes-transmission-repair-dubai", title: "Mercedes Transmission Repair in Dubai", category: "mercedes" },
   { slug: "mercedes-suspension-repair-dubai", title: "Mercedes Suspension Repair in Dubai", category: "mercedes" },
   { slug: "mercedes-steering-repair-dubai", title: "Mercedes Steering Repair in Dubai", category: "mercedes" },
   { slug: "mercedes-brake-repair-dubai", title: "Mercedes Brake Repair in Dubai", category: "mercedes" },
-  { slug: "mercedes-service-dubai", title: "Mercedes Service in Dubai", category: "mercedes" },
   { slug: "mercedes-oil-change-dubai", title: "Mercedes Oil Change in Dubai", category: "mercedes" },
   { slug: "mercedes-tire-repair-dubai", title: "Mercedes Tire Repair in Dubai", category: "mercedes" },
   { slug: "mercedes-battery-replacement-dubai", title: "Mercedes Battery Replacement in Dubai", category: "mercedes" },
@@ -60,7 +59,7 @@ export default defineTool({
     const filtered = services
       .filter((s) => cat === "all" || s.category === cat)
       .filter((s) => !q || s.title.toLowerCase().includes(q))
-      .map((s) => ({ ...s, url: `${SITE}/services/${s.slug}` }));
+      .map(({ path, ...service }) => ({ ...service, url: `${SITE}${path ?? `/services/${service.slug}`}` }));
     return {
       content: [{ type: "text", text: JSON.stringify(filtered, null, 2) }],
       structuredContent: { count: filtered.length, services: filtered },

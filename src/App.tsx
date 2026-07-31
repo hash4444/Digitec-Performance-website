@@ -36,8 +36,8 @@ const ScrollToTop = () => {
 
 const queryClient = new QueryClient();
 
-// Mercedes service URLs have long-standing search history. Keep those pages as
-// the single indexable destination and send newer duplicate brand sub-pages to them.
+// Mercedes service URLs have long-standing search history. The Mercedes brand hub
+// is now the single primary destination for broad Mercedes repair/service intent.
 const mercedesBrandServiceRedirects: Array<[string, string]> = [
   ["oil-change", "/services/mercedes-oil-change-dubai"],
   ["brake-repair", "/services/mercedes-brake-repair-dubai"],
@@ -91,7 +91,8 @@ const App = () => (
           <Route path="/ar/services/garage-near-me-dubai" element={<LocalGaragePage />} />
           <Route path="/ar/services/roadside-assistance-dubai" element={<LocalGaragePage />} />
           <Route path="/ar/services/car-garage-dubai" element={<LocalGaragePage />} />
-          <Route path="/ar/services/mercedes-service-dubai" element={<Navigate to="/ar/services/mercedes-repair-dubai" replace />} />
+          <Route path="/ar/services/mercedes-repair-dubai" element={<Navigate to="/ar/brands/mercedes-benz-service-dubai" replace />} />
+          <Route path="/ar/services/mercedes-service-dubai" element={<Navigate to="/ar/brands/mercedes-benz-service-dubai" replace />} />
           {mercedesLegacyServicePages.map(([legacySlug, serviceSlug]) => (
             <Route
               key={`ar-${legacySlug}`}
@@ -122,7 +123,7 @@ const App = () => (
           ))}
           <Route path="/ar/brands/:brandSlug/:serviceSlug" element={<BrandServicePage />} />
           <Route path="/ar/best-car-workshop-dubai" element={<BestWorkshopPage />} />
-          <Route path="/ar/best-mercedes-workshop-dubai" element={<BestWorkshopPage />} />
+          <Route path="/ar/best-mercedes-workshop-dubai" element={<Navigate to="/ar/brands/mercedes-benz-service-dubai" replace />} />
           <Route path="/ar/best-bmw-workshop-dubai" element={<BestWorkshopPage />} />
           <Route path="/ar/best-porsche-workshop-dubai" element={<BestWorkshopPage />} />
           <Route path="/ar/best-audi-workshop-dubai" element={<BestWorkshopPage />} />
@@ -135,7 +136,8 @@ const App = () => (
           <Route path="/services/garage-near-me-dubai" element={<LocalGaragePage />} />
           <Route path="/services/roadside-assistance-dubai" element={<LocalGaragePage />} />
           <Route path="/services/car-garage-dubai" element={<LocalGaragePage />} />
-          <Route path="/services/mercedes-service-dubai" element={<Navigate to="/services/mercedes-repair-dubai" replace />} />
+          <Route path="/services/mercedes-repair-dubai" element={<Navigate to="/brands/mercedes-benz-service-dubai" replace />} />
+          <Route path="/services/mercedes-service-dubai" element={<Navigate to="/brands/mercedes-benz-service-dubai" replace />} />
           {mercedesLegacyServicePages.map(([legacySlug, serviceSlug]) => (
             <Route
               key={legacySlug}
@@ -167,7 +169,7 @@ const App = () => (
           <Route path="/brands/:brandSlug/:serviceSlug" element={<BrandServicePage />} />
           {/* AEO landing pages — targeted at AI assistants ("best ... in Dubai") */}
           <Route path="/best-car-workshop-dubai" element={<BestWorkshopPage />} />
-          <Route path="/best-mercedes-workshop-dubai" element={<BestWorkshopPage />} />
+          <Route path="/best-mercedes-workshop-dubai" element={<Navigate to="/brands/mercedes-benz-service-dubai" replace />} />
           <Route path="/best-bmw-workshop-dubai" element={<BestWorkshopPage />} />
           <Route path="/best-porsche-workshop-dubai" element={<BestWorkshopPage />} />
           <Route path="/best-audi-workshop-dubai" element={<BestWorkshopPage />} />
@@ -267,11 +269,11 @@ const App = () => (
           <Route path="/terms-of-service" element={<Navigate to="/" replace />} />
 
           {/* Legacy WordPress top-level URLs → new /services/* slugs (single hop, preserves SEO) */}
-          <Route path="/mercedes" element={<Navigate to="/services/mercedes-repair-dubai" replace />} />
-          <Route path="/mercedes-service" element={<Navigate to="/services/mercedes-repair-dubai" replace />} />
-          <Route path="/mercedes-repair" element={<Navigate to="/services/mercedes-repair-dubai" replace />} />
-          <Route path="/mercedes-repair-dubai" element={<Navigate to="/services/mercedes-repair-dubai" replace />} />
-          <Route path="/mercedes-workshop" element={<Navigate to="/services/mercedes-repair-dubai" replace />} />
+          <Route path="/mercedes" element={<Navigate to="/brands/mercedes-benz-service-dubai" replace />} />
+          <Route path="/mercedes-service" element={<Navigate to="/brands/mercedes-benz-service-dubai" replace />} />
+          <Route path="/mercedes-repair" element={<Navigate to="/brands/mercedes-benz-service-dubai" replace />} />
+          <Route path="/mercedes-repair-dubai" element={<Navigate to="/brands/mercedes-benz-service-dubai" replace />} />
+          <Route path="/mercedes-workshop" element={<Navigate to="/brands/mercedes-benz-service-dubai" replace />} />
           <Route path="/mercedes-brake-repair" element={<Navigate to="/services/mercedes-brake-repair-dubai" replace />} />
           <Route path="/mercedes-brake-repair-dubai" element={<Navigate to="/services/mercedes-brake-repair-dubai" replace />} />
           <Route path="/mercedes-transmission-repair" element={<Navigate to="/services/mercedes-transmission-repair-dubai" replace />} />

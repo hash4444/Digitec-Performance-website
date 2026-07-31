@@ -33,6 +33,23 @@ const serviceNamesArabic: Record<string, string> = {
   'soft-close-door-installation': 'تركيب وإصلاح الإغلاق الناعم للأبواب',
 };
 
+const MERCEDES_SERVICE_PATHS: Record<string, string> = {
+  'oil-change': '/services/mercedes-oil-change-dubai',
+  'brake-repair': '/services/mercedes-brake-repair-dubai',
+  'transmission-repair': '/services/mercedes-transmission-repair-dubai',
+  'ac-repair': '/services/mercedes-ac-repair-dubai',
+  'suspension-repair': '/services/mercedes-suspension-repair-dubai',
+  'engine-diagnostics': '/services/mercedes-diagnostics-dubai',
+  'mechanical-repair': '/services/mercedes-mechanical-repair-dubai',
+  'steering-repair': '/services/mercedes-steering-repair-dubai',
+  'battery-replacement': '/services/mercedes-battery-replacement-dubai',
+  'electrical-repair': '/services/mercedes-electrical-repair-dubai',
+  'exhaust-repair': '/services/mercedes-exhaust-repair-dubai',
+  'fuel-system-repair': '/services/mercedes-fuel-system-repair-dubai',
+  'body-repair': '/services/mercedes-body-repair-dubai',
+  'tire-repair': '/services/mercedes-tire-repair-dubai',
+};
+
 interface BrandServicePageProps {
   brandSlugOverride?: string;
   serviceSlugOverride?: string;
@@ -111,8 +128,9 @@ const BrandServicePage: React.FC<BrandServicePageProps> = ({
       areaServed: isArabic ? ['دبي', 'أبوظبي', 'الشارقة', 'الإمارات العربية المتحدة'] : ['Dubai', 'Abu Dhabi', 'Sharjah', 'United Arab Emirates'],
       keywords: [
         `${combo.brandName} ${combo.serviceName} Dubai`,
-        `${combo.brandName} service Dubai`,
-        `${combo.brandName} workshop Dubai`,
+        ...(combo.brandSlug === 'mercedes-benz-service-dubai'
+          ? []
+          : [`${combo.brandName} service Dubai`, `${combo.brandName} workshop Dubai`]),
         ...(combo.brandSlug === 'rox-service-dubai' && combo.serviceSlug === 'soft-close-door-installation'
           ? ['ROX 01 soft close', 'ROX soft close installation', 'ROX soft close Dubai', 'ROX soft close near me']
           : []),
@@ -303,7 +321,9 @@ const BrandServicePage: React.FC<BrandServicePageProps> = ({
             {otherServices.map((s) => (
               <Link
                 key={s.serviceSlug}
-                to={`/brands/${combo.brandSlug}/${s.serviceSlug}`}
+                to={combo.brandSlug === 'mercedes-benz-service-dubai'
+                  ? MERCEDES_SERVICE_PATHS[s.serviceSlug] ?? `/brands/${combo.brandSlug}/${s.serviceSlug}`
+                  : `/brands/${combo.brandSlug}/${s.serviceSlug}`}
                 className="card-premium group flex flex-col justify-between rounded-2xl p-4 sm:p-5 transition-all duration-300"
               >
                 <span className="text-off-white font-bold text-sm sm:text-base leading-tight group-hover:text-burnt-orange">
