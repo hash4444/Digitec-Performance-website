@@ -24,6 +24,17 @@ const generalServiceLinks = [
   { label: 'Performance Tuning', arLabel: 'تطوير الأداء', href: '/tuning' },
 ];
 
+const mercedesServiceLinks = [
+  { label: 'Mercedes Hub', arLabel: 'مركز خدمات مرسيدس', href: '/brands/mercedes-benz-service-dubai' },
+  { label: 'Mercedes Diagnostics', arLabel: 'فحص وتشخيص مرسيدس', href: '/services/mercedes-diagnostics-dubai' },
+  { label: 'Mercedes Oil Change', arLabel: 'تغيير زيت مرسيدس', href: '/services/mercedes-oil-change-dubai' },
+  { label: 'Mercedes Mechanical Repair', arLabel: 'إصلاح مرسيدس الميكانيكي', href: '/services/mercedes-mechanical-repair-dubai' },
+  { label: 'Mercedes Transmission Repair', arLabel: 'إصلاح ناقل حركة مرسيدس', href: '/services/mercedes-transmission-repair-dubai' },
+  { label: 'Mercedes Suspension Repair', arLabel: 'إصلاح تعليق مرسيدس', href: '/services/mercedes-suspension-repair-dubai' },
+  { label: 'Mercedes Brake Repair', arLabel: 'إصلاح فرامل مرسيدس', href: '/services/mercedes-brake-repair-dubai' },
+  { label: 'Mercedes Electrical Repair', arLabel: 'إصلاح كهرباء مرسيدس', href: '/services/mercedes-electrical-repair-dubai' },
+];
+
 const BrandWorkshopArticlePage = () => {
   const { isArabic, localizedPath } = useLocale();
   const { slug } = useParams<{ slug: string }>();
@@ -66,6 +77,7 @@ const BrandWorkshopArticlePage = () => {
     { question: `ماذا أحضر إلى موعد ${article.brand}؟`, answer: 'أحضر المفتاح وسجل الصيانة إن توفر وتفاصيل الأعمال الأخيرة وأي صور أو فيديو للأعراض المتقطعة والظروف التي تظهر فيها المشكلة.' },
   ];
   const faqs = isArabic ? arabicFaqs : englishFaqs;
+  const relatedServiceLinks = article.brand === 'Mercedes-Benz' ? mercedesServiceLinks : generalServiceLinks;
 
   const jsonLd = React.useMemo(() => {
     const breadcrumb = buildBreadcrumb(url, [
@@ -165,7 +177,7 @@ const BrandWorkshopArticlePage = () => {
           <section className={`${isArabic ? 'border-r-2 pr-5' : 'border-l-2 pl-5'} border-burnt-orange`}>
             <h2 className="text-2xl font-black sm:text-3xl">{t(`A practical answer for ${article.brand} owners`, `إجابة عملية لمالكي ${article.brand}`)}</h2>
             <p className="mt-4 text-lg leading-relaxed text-gray-300">{t(`The best workshop decision is rarely about a slogan. It is about whether the team can understand the car, define the concern accurately, show you a sensible repair path and keep you informed before costs grow. At DIGI-TEC in Al Quoz, a ${article.brand} appointment starts with the vehicle’s history, symptoms and current condition—not an assumption.`, `اختيار الورشة المناسبة لا يعتمد على شعار، بل على قدرة الفريق على فهم السيارة وتحديد المشكلة بدقة وشرح مسار إصلاح منطقي قبل ارتفاع التكلفة. في ديجي-تك بالقوز، يبدأ موعد ${article.brand} بمراجعة تاريخ السيارة وأعراضها وحالتها الحالية، لا بالافتراضات.`)}</p>
-            {article.existingBestPage && <p className="mt-4 leading-relaxed text-gray-400">{t('For a direct comparison of what to look for in a workshop, see our ', 'للمقارنة المباشرة بين معايير اختيار الورشة، راجع صفحة ')}<Link to={article.existingBestPage} className="font-semibold text-burnt-orange hover:underline">{t(`Best ${article.brand} Workshop Dubai page`, `أفضل ورشة ${article.brand} في دبي`)}</Link>{t('. This article is intentionally focused on ownership, maintenance and repair preparation so it does not duplicate that landing page.', '؛ فهذا المقال يركز على الملكية والصيانة والاستعداد للإصلاح من دون تكرار محتوى صفحة الخدمة.')}</p>}
+            {article.existingBestPage && <p className="mt-4 leading-relaxed text-gray-400">{t('For a direct comparison of what to look for in a workshop, see our ', 'للمقارنة المباشرة بين معايير اختيار الورشة، راجع صفحة ')}<Link to={article.existingBestPage} className="font-semibold text-burnt-orange hover:underline">{article.brand === 'Mercedes-Benz' ? t('Mercedes-Benz repair and service hub', 'مركز إصلاح وصيانة مرسيدس-بنز') : t(`Best ${article.brand} Workshop Dubai page`, `أفضل ورشة ${article.brand} في دبي`)}</Link>{t('. This article is intentionally focused on ownership, maintenance and repair preparation so it does not duplicate that landing page.', '؛ فهذا المقال يركز على الملكية والصيانة والاستعداد للإصلاح من دون تكرار محتوى صفحة الخدمة.')}</p>}
           </section>
 
           <section className="mt-14">
@@ -246,7 +258,7 @@ const BrandWorkshopArticlePage = () => {
           <section className="mt-14">
             <h2 className="text-2xl font-black sm:text-3xl">{t('Related services and useful next steps', 'خدمات مرتبطة وخطوات تالية مفيدة')}</h2>
             <div className="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-4">
-              {generalServiceLinks.map((service) => <Link key={service.href} to={service.href} className="card-premium rounded-xl p-4 text-sm font-bold transition-colors hover:text-burnt-orange">{isArabic ? service.arLabel : service.label}<ArrowRight className={`mt-2 h-4 w-4 text-burnt-orange ${isArabic ? 'rotate-180' : ''}`} /></Link>)}
+              {relatedServiceLinks.map((service) => <Link key={service.href} to={service.href} className="card-premium rounded-xl p-4 text-sm font-bold transition-colors hover:text-burnt-orange">{isArabic ? service.arLabel : service.label}<ArrowRight className={`mt-2 h-4 w-4 text-burnt-orange ${isArabic ? 'rotate-180' : ''}`} /></Link>)}
             </div>
             <p className="mt-6 text-sm leading-relaxed text-gray-400">{t(`Useful image plan for this article: a ${article.brand} arriving at the workshop, a technician using diagnostic equipment, a close-up of the relevant repair area, and a wide shot of the workshop. Suggested hero alt text: “${article.imageAlt}”.`, `خطة الصور المقترحة للمقال: سيارة ${article.brand} عند وصولها إلى الورشة، وفني يستخدم جهاز التشخيص، وصورة قريبة لمنطقة الإصلاح، وصورة واسعة للورشة. النص البديل المقترح للصورة الرئيسية: «${article.imageAlt}».`)}</p>
           </section>

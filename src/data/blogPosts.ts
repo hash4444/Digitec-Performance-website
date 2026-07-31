@@ -6,6 +6,13 @@ import defenderAccidentReassembly from '@/assets/defender-accident-repair-reasse
 import defenderAccidentFinished from '@/assets/defender-accident-repair-finished.jpg';
 import defenderWorkshop from '@/assets/defender-workshop-dubai.jpg';
 import mercedesRepairGuideWorkshop from '@/assets/mercedes-repair-guide-workshop.jpg';
+import g63BrabusFinishedFront from '@/assets/g63-brabus-g800-finished-front.jpg';
+import g63BrabusRearInterior from '@/assets/g63-brabus-g800-rear-interior-strip-down.jpg';
+import g63BrabusFrontInterior from '@/assets/g63-brabus-g800-front-interior-strip-down.jpg';
+import g63BrabusRearPreparation from '@/assets/g63-brabus-g800-rear-body-preparation.jpg';
+import g63BrabusFrontPreparation from '@/assets/g63-brabus-g800-front-body-preparation.jpg';
+import g63BrabusSidePreparation from '@/assets/g63-brabus-g800-side-preparation.jpg';
+import g63BrabusFinishedRear from '@/assets/g63-brabus-g800-finished-rear.jpg';
 
 export interface BlogPost {
   slug: string;
@@ -557,38 +564,38 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: 'mercedes-repair-dubai-complete-guide',
-    title: 'Mercedes Repair in Dubai: Complete Guide for Owners (2026)',
+    title: 'Common Mercedes Problems in Dubai: 2026 Owner Guide',
     excerpt:
-      'Owning a Mercedes-Benz in Dubai demands specialist care. From AMG engines to AIRMATIC suspension, here is the complete 2026 owner guide to Mercedes repair, common UAE issues, and how to choose the right specialist workshop.',
+      'A practical guide to Mercedes warning signs in Dubai, including AIRMATIC faults, cooling, AC, batteries and the checks that should happen before repair.',
     category: 'Mercedes',
     author: 'DIGI-TEC Workshop',
     date: '2026-04-21',
     readTime: '9 min read',
     coverGradient: 'from-burnt-orange/40 via-charcoal to-black',
     coverImage: mercedesRepairGuideWorkshop,
-    metaTitle: 'Mercedes Repair Dubai: Complete Owner Guide 2026 | Digitec',
+    metaTitle: 'Common Mercedes Problems Dubai | 2026 Owner Guide',
     metaDescription:
-      'Complete 2026 guide to Mercedes repair in Dubai. Star Diagnostic, AMG specialists, OEM parts, common UAE issues, and how to choose the right Mercedes workshop.',
+      'Common Mercedes problems in Dubai: AIRMATIC faults, cooling, AC, batteries and warning signs. Learn what to check and when diagnostics are needed in Dubai.',
     keywords:
-      'Mercedes repair Dubai, Mercedes specialist Dubai, AMG repair Dubai, Mercedes Star Diagnostic Dubai, Mercedes service Dubai, AIRMATIC repair Dubai, Mercedes workshop Dubai',
-    ogTitle: 'Mercedes Repair in Dubai: Complete Guide for Owners (2026)',
+      'common Mercedes problems Dubai, Mercedes warning lights, AIRMATIC fault, Mercedes overheating Dubai, Mercedes AC problems, Mercedes battery warning, Mercedes owner guide UAE',
+    ogTitle: 'Common Mercedes Problems in Dubai: 2026 Owner Guide',
     ogDescription:
-      'Specialist Mercedes repair in Dubai. Dealer-level diagnostics, AMG expertise, OEM parts, and a 2026 guide to maintaining your Mercedes in UAE conditions.',
+      'A practical owner guide to AIRMATIC faults, cooling, AC, electrical warnings and diagnostic decisions in Dubai conditions.',
     ogType: 'article',
     twitterCard: 'summary_large_image',
-    twitterTitle: 'Mercedes Repair in Dubai: Complete Guide (2026)',
+    twitterTitle: 'Common Mercedes Problems in Dubai (2026)',
     twitterDescription:
       'The 2026 Mercedes owner guide for Dubai: common issues, warning signs, and why specialist repair matters.',
     canonicalOverride: 'https://digitecme.com/blog/mercedes-repair-dubai-complete-guide',
     content: [
-      { type: 'h2', text: 'Introduction' },
+      { type: 'h2', text: 'Mercedes Ownership in Dubai: What to Watch' },
       {
         type: 'p',
-        text: 'Owning a Mercedes-Benz in Dubai is a statement of performance, luxury, and engineering excellence. However, maintaining that level of performance requires specialist care. Unlike standard vehicles, Mercedes models rely on advanced electronics, precision engineering, and manufacturer specific systems that require expert diagnostics and servicing.',
+        text: 'Mercedes vehicles combine multiple electronic, mechanical and comfort systems, so one warning message can have several possible causes. Dubai heat, traffic and fine dust also increase the importance of cooling, air-conditioning, battery and fluid-condition checks.',
       },
       {
         type: 'p',
-        text: 'At Digitec Performance Center, we specialise in Mercedes repair in Dubai, offering dealer level diagnostics, OEM parts, and performance focused servicing tailored to UAE driving conditions.',
+        text: 'This guide explains common symptoms and the evidence a workshop should collect before recommending parts. It is not a substitute for inspecting the exact model, year, mileage, service history and stored diagnostic data.',
       },
       { type: 'h2', text: 'Why Mercedes Repair Requires a Specialist' },
       {
@@ -615,7 +622,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'p',
-        text: 'Choosing a Mercedes specialist ensures your vehicle is repaired correctly the first time, protecting both performance and resale value.',
+        text: 'A Mercedes-focused diagnostic process reduces guesswork by combining brand-specific scan data with physical testing and the repair procedures required by the fitted system.',
       },
       { type: 'h2', text: 'Common Mercedes Problems in Dubai' },
       {
@@ -658,25 +665,24 @@ export const blogPosts: BlogPost[] = [
         type: 'p',
         text: 'Early diagnosis prevents major repairs and saves costs. A simple Star Diagnostic scan can reveal issues long before they become serious mechanical failures.',
       },
-      { type: 'h2', text: 'Why Choose Digitec for Mercedes Repair in Dubai' },
+      { type: 'h2', text: 'What to Check Before Approving a Mercedes Repair' },
       {
         type: 'p',
-        text: 'At Digitec Performance Center, we provide specialist Mercedes repair backed by experience, technology, and performance expertise.',
+        text: 'Before approving a repair, ask what was tested, what evidence supports the diagnosis, which parts and fluid specifications are proposed, and what checks will be completed after the work.',
       },
       {
         type: 'ul',
         items: [
-          'Mercedes-Benz trained technicians',
-          'Star Diagnostic system (dealer level)',
-          'OEM and performance grade parts',
-          'Expertise in AMG and high performance models',
-          'Transparent pricing with no hidden costs',
-          'Fast turnaround times',
+          'The reported symptom and warning message are recorded accurately',
+          'XENTRY or Star scan results are verified with physical tests',
+          'The estimate identifies parts and fluid specifications',
+          'The repair scope and expected timing are explained before approval',
+          'Post-repair resets, adaptations and road testing are completed when applicable',
         ],
       },
       {
         type: 'p',
-        text: 'We do not just repair vehicles, we maintain and enhance performance for the long term.',
+        text: 'At Digi-Tec, the Mercedes process follows those steps so the owner can understand why work is recommended rather than relying on a fault-code label alone.',
       },
       { type: 'h2', text: 'FAQs' },
       { type: 'h3', text: 'How much does Mercedes repair cost in Dubai?' },
@@ -692,7 +698,7 @@ export const blogPosts: BlogPost[] = [
       { type: 'h3', text: 'How often should I service my Mercedes in Dubai?' },
       {
         type: 'p',
-        text: 'Every 8,000 to 10,000 km due to harsh climate conditions, rather than the longer intervals recommended in cooler regions.',
+        text: 'Follow the ASSYST reminder and the interval specified for the exact model and year. Mileage, operating conditions and service history can justify additional inspections, so confirm the scope from the vehicle rather than using one interval for every Mercedes.',
       },
       { type: 'h3', text: 'Can you repair AMG models?' },
       {
@@ -702,12 +708,12 @@ export const blogPosts: BlogPost[] = [
       { type: 'h3', text: 'Do you use OEM Mercedes parts?' },
       {
         type: 'p',
-        text: 'Yes. We use OEM and performance grade parts to maintain manufacturer standards and long term reliability.',
+        text: 'The estimate can specify genuine Mercedes-Benz parts, OE-supplier components or a suitable customer-approved alternative, depending on the repair and owner preference.',
       },
       { type: 'h2', text: 'Conclusion' },
       {
         type: 'p',
-        text: 'If you are searching for Mercedes repair in Dubai, choosing the right workshop is critical. With advanced diagnostics, expert technicians, and a focus on performance, Digitec Performance Center delivers reliable, high quality Mercedes servicing tailored to UAE conditions.',
+        text: 'Mercedes warning lights and driveability symptoms should be diagnosed from evidence, not from the name of a stored code. Recording the symptom early and arranging a model-aware inspection can help prevent a smaller concern from becoming a more complicated repair.',
       },
     ],
   },
@@ -987,6 +993,150 @@ export const blogPosts: BlogPost[] = [
       {
         type: 'p',
         text: 'Yes. We provide Defender maintenance, diagnostics, suspension, brake, electrical, air-conditioning and mechanical repair support in Dubai.',
+      },
+    ],
+  },
+  {
+    slug: 'g63-to-brabus-g800-conversion-dubai',
+    title: 'G63 to BRABUS G 800-Style Conversion in Dubai: Before & After',
+    excerpt:
+      'A real G63 transformation at Digi-Tec: from careful interior and body strip-down to a completed BRABUS G 800-style exterior conversion, with fitment and system checks throughout.',
+    category: 'Tuning',
+    author: 'DIGI-TEC Performance',
+    date: '2026-07-31',
+    readTime: '10 min read',
+    coverGradient: 'from-blue-950 via-charcoal to-black',
+    coverImage: g63BrabusFinishedFront,
+    gallery: [
+      {
+        src: g63BrabusRearInterior,
+        alt: 'Mercedes-AMG G63 rear interior stripped down during BRABUS G 800-style conversion in Dubai',
+        caption: 'Rear interior strip-down: access is created carefully so trim, wiring and components can be refitted correctly after the conversion work.',
+      },
+      {
+        src: g63BrabusFrontInterior,
+        alt: 'Mercedes-AMG G63 dashboard and cabin stripped down for a G 800-style conversion at Digi-Tec Dubai',
+        caption: 'Front cabin preparation: complex G-Class electronics and trim need methodical handling, not shortcut installation.',
+      },
+      {
+        src: g63BrabusSidePreparation,
+        alt: 'Blue Mercedes-AMG G63 during side body preparation for BRABUS G 800-style conversion in Dubai',
+        caption: 'Body preparation stage: the project is checked for alignment and mounting before final exterior components are fitted.',
+      },
+      {
+        src: g63BrabusRearPreparation,
+        alt: 'Mercedes-AMG G63 rear bodywork prepared for BRABUS G 800-style conversion at Digi-Tec',
+        caption: 'Rear conversion work in progress, before the completed BRABUS-style exterior treatment is installed.',
+      },
+      {
+        src: g63BrabusFrontPreparation,
+        alt: 'Mercedes-AMG G63 front corner prepared for BRABUS G 800-style body conversion in Dubai',
+        caption: 'Front-end preparation: mounts, lighting areas and exterior fitment are assessed before final assembly.',
+      },
+      {
+        src: g63BrabusFinishedRear,
+        alt: 'Finished blue Mercedes-AMG G63 with BRABUS G 800-style rear conversion at Digi-Tec Dubai',
+        caption: 'Completed rear view of the G63 transformation, including the BRABUS-style exterior components and wheel package.',
+      },
+    ],
+    metaTitle: 'G63 to BRABUS G 800 Conversion Dubai | Before & After',
+    metaDescription:
+      'See a real Mercedes-AMG G63 to BRABUS G 800-style conversion in Dubai. Before-and-after photos, bodywork, fitment, wiring and final quality checks at Digi-Tec.',
+    keywords:
+      'G63 Brabus G 800 conversion Dubai, G63 Brabus conversion Dubai, Brabus G800 Dubai, G Wagon conversion Dubai, G63 body kit Dubai, AMG G63 tuning Dubai, G63 modification Dubai, Brabus style G63 Dubai',
+    ogTitle: 'G63 to BRABUS G 800-Style Conversion: Before & After',
+    ogDescription:
+      'Follow a real Mercedes-AMG G63 conversion at Digi-Tec Dubai, from strip-down and fitment to the completed BRABUS G 800-style result.',
+    ogType: 'article',
+    twitterCard: 'summary_large_image',
+    twitterTitle: 'G63 BRABUS G 800-Style Conversion in Dubai',
+    twitterDescription:
+      'Real before-and-after G63 conversion photos from Digi-Tec Performance Centre in Al Quoz, Dubai.',
+    canonicalOverride: 'https://digitecme.com/blog/g63-to-brabus-g800-conversion-dubai',
+    content: [
+      { type: 'h2', text: 'A Real G63 Transformation in Dubai' },
+      {
+        type: 'p',
+        text: 'This Mercedes-AMG G63 arrived at Digi-Tec Performance Centre for a full BRABUS G 800-style transformation. The project was not treated as a quick body-kit installation. A modern G-Class combines complex body panels, lighting, wiring, trim, cameras, sensors and electronic systems; changing its exterior and interior presentation properly requires planned strip-down, careful fitment and system checks before handover.',
+      },
+      {
+        type: 'p',
+        text: 'The photographs on this page show the actual project at different stages: cabin and rear-area strip-down, body preparation, component fitment and the completed vehicle. They are included so G63 owners can see the difference between a cosmetic shortcut and a structured conversion process.',
+      },
+      { type: 'h2', text: 'What Does a G63 to BRABUS G 800-Style Conversion Involve?' },
+      {
+        type: 'p',
+        text: 'Every G63 conversion is specified around the owner’s chosen parts and finish. A BRABUS G 800-style exterior transformation can involve revised front and rear styling, wheel-arch components, exterior trim, wheel and tyre fitment, a rear spoiler, spare-wheel cover and selected interior work. The exact scope should always be confirmed in writing before ordering parts or beginning disassembly.',
+      },
+      {
+        type: 'ul',
+        items: [
+          'Initial inspection, specification review and parts-fitment plan',
+          'Controlled removal of affected trim, body components and interior sections',
+          'Assessment of mounts, panel alignment, wiring paths and sensor areas',
+          'Installation and alignment of the agreed exterior components',
+          'Careful reassembly of trim, connectors and weather seals',
+          'Final diagnostic scan, lighting, camera, parking-sensor and road-readiness checks as applicable',
+        ],
+      },
+      { type: 'h2', text: 'Why Proper Strip-Down Matters on a Mercedes-AMG G63' },
+      {
+        type: 'p',
+        text: 'The G-Class may look rugged, but a current G63 is highly integrated. Behind the panels and interior trim are modules, wiring harnesses, airbags, cameras, parking sensors, speaker systems and weather seals. Forcing parts into place, cutting corners around wiring or skipping panel alignment can create rattles, warning messages, water leaks or poor fit and finish later.',
+      },
+      {
+        type: 'p',
+        text: 'Our process begins by creating safe access to the relevant areas. Parts are removed in sequence, connectors and fixings are handled carefully, and the original configuration is reviewed before reassembly. This keeps the project focused on a durable result—not just how the vehicle looks in a photo on collection day.',
+      },
+      { type: 'h2', text: 'Body Fitment, Wheels and Final Exterior Finish' },
+      {
+        type: 'p',
+        text: 'A successful G63 body conversion relies on proportion and alignment. Panels, wheel-arch pieces, bumpers, spoilers and exterior trim should sit evenly against the original bodywork, with sensible clearances around doors, tailgate, lamps and wheels. Wheel and tyre specification also needs to suit the final arch profile and intended use of the vehicle in Dubai.',
+      },
+      {
+        type: 'p',
+        text: 'For this project, the completed blue G63 received the agreed BRABUS G 800-style exterior treatment and wheel package. Before handover, the visible finish, panel fit, exterior functions and relevant vehicle systems were checked. The customer receives a clear overview of the scope completed and the next steps for care and maintenance.',
+      },
+      { type: 'h2', text: 'Important Note on BRABUS Parts and Performance' },
+      {
+        type: 'p',
+        text: 'BRABUS is a registered trademark of BRABUS GmbH. This case study describes a G 800-style conversion based on the project specification and appearance shown in the photographs. Exterior styling alone does not make a vehicle a BRABUS G 800 or confirm a particular power output. Any engine calibration, exhaust, suspension or performance hardware must be specified, fitted and documented separately for the individual vehicle.',
+      },
+      { type: 'h2', text: 'Why Choose Digi-Tec for a G63 Conversion in Dubai?' },
+      {
+        type: 'p',
+        text: 'Digi-Tec Performance Centre in Al Quoz brings bodywork, diagnostics, mechanical support and performance-project experience into one Dubai workshop. For G63 owners, that means a conversion can be planned around the vehicle rather than handed between disconnected suppliers. We discuss the desired finish, assess the starting condition, explain the installation scope and give clear guidance before work begins.',
+      },
+      { type: 'h2', text: 'Book a Mercedes-AMG G63 Conversion Consultation' },
+      {
+        type: 'p',
+        text: 'If you are considering a G63 BRABUS-style conversion, G-Wagon body kit, wheel upgrade, interior refresh or performance project in Dubai, book a consultation with Digi-Tec. Bring your vehicle, your preferred specification and any reference images so the team can assess fitment, discuss the parts route and provide a clear plan for the project.',
+      },
+      { type: 'h2', text: 'FAQs' },
+      { type: 'h3', text: 'Can you convert a Mercedes-AMG G63 to a BRABUS G 800 in Dubai?' },
+      {
+        type: 'p',
+        text: 'Digi-Tec can plan and carry out G63 exterior, wheel, interior and performance projects according to the agreed specification. The exact parts, branding, performance hardware and approvals must be confirmed for each vehicle before work begins.',
+      },
+      { type: 'h3', text: 'Does a BRABUS-style body conversion include engine tuning?' },
+      {
+        type: 'p',
+        text: 'Not automatically. Exterior conversion, wheel fitment and interior work are separate from engine calibration and performance hardware. Any performance upgrade should be discussed after a diagnostic health check and confirmed as part of the written project scope.',
+      },
+      { type: 'h3', text: 'How long does a G63 conversion take in Dubai?' },
+      {
+        type: 'p',
+        text: 'Timing depends on the chosen parts, paint or finish requirements, the condition of the vehicle and whether additional mechanical or performance work is required. Following inspection, Digi-Tec can provide a realistic project timeline before work starts.',
+      },
+      { type: 'h3', text: 'Will a G63 conversion affect cameras, sensors or warning lights?' },
+      {
+        type: 'p',
+        text: 'It can if components are fitted without proper planning. That is why a conversion should include careful handling of wiring and sensor areas, followed by checks of relevant lights, cameras, parking sensors and diagnostic systems before handover.',
+      },
+      { type: 'h3', text: 'Do you work on G63 maintenance after the conversion?' },
+      {
+        type: 'p',
+        text: 'Yes. Digi-Tec supports Mercedes-AMG G63 diagnostics, maintenance, brakes, suspension, electrical work and performance-project planning from its Al Quoz workshop in Dubai.',
       },
     ],
   },

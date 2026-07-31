@@ -46,8 +46,8 @@ const Services = () => {
           '@type': 'ItemList',
           '@id': `${url}#servicelist`,
           name: isArabic ? 'الخدمات التي يقدمها مركز ديجي-تك' : 'Services offered by Digitec Performance Center',
-          numberOfItems: services.length,
-          itemListElement: services.map((s, i) => ({
+          numberOfItems: services.filter((s) => s.slug !== 'mercedes-repair-dubai').length,
+          itemListElement: services.filter((s) => s.slug !== 'mercedes-repair-dubai').map((s, i) => ({
             '@type': 'ListItem',
             position: i + 1,
             url: `https://digitecme.com${isArabic ? '/ar' : ''}/services/${s.slug}`,
@@ -91,7 +91,7 @@ const Services = () => {
       <section className="pb-12 sm:pb-24">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 space-y-8 sm:space-y-16">
           {categories.map((cat) => {
-            const items = services.filter((s) => s.category === cat);
+            const items = services.filter((s) => s.category === cat && s.slug !== 'mercedes-repair-dubai');
             if (items.length === 0) return null;
             return (
               <div key={cat}>

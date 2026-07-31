@@ -1,6 +1,6 @@
 import React from 'react';
 import { useParams, Navigate } from 'react-router-dom';
-import { Phone, MessageCircle, CheckCircle2, ArrowRight } from 'lucide-react';
+import { Phone, MessageCircle, CheckCircle2, ArrowRight, MapPin } from 'lucide-react';
 import Header from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { useSeo } from '@/hooks/use-seo';
@@ -36,6 +36,20 @@ import lamborghiniUrusWorkshop from '@/assets/lamborghini-urus-workshop-dubai.jp
 import porscheWorkshop from '@/assets/porsche-workshop-dubai.jpg';
 import porscheGt3rsWorkshop from '@/assets/porsche-gt3rs-workshop-dubai.jpg';
 import maybachWorkshop from '@/assets/maybach-workshop-dubai.jpg';
+import mercedesWorkshop from '@/assets/mercedes-repair-guide-workshop.jpg';
+import mercedesAmgEngine from '@/assets/mercedes-amg-engine-repair-dubai.jpg';
+import g63BrabusFinishedFront from '@/assets/g63-brabus-g800-finished-front.jpg';
+
+const MERCEDES_META_TITLE = 'Mercedes Repair & Service Dubai | Digi-Tec Specialists';
+const MERCEDES_META_DESCRIPTION = 'Specialist Mercedes repair and service in Dubai for C-Class, E-Class, S-Class, G-Class, GLE, GLS and AMG. XENTRY diagnostics at our Al Quoz workshop in Dubai.';
+
+const MERCEDES_SEO_COPY = {
+  intro: 'Digi-Tec Performance Centre in Al Quoz provides Mercedes-Benz repair, scheduled maintenance and diagnostics for daily drivers, luxury models, G-Class and AMG vehicles. We begin with the reported symptom, scan data and a physical inspection, then explain the recommended scope before repair work starts.',
+  dubai: 'Dubai heat, traffic and fine dust place extra load on Mercedes cooling systems, engine oil, batteries, rubber components and air conditioning. Our inspections account for the vehicle model, mileage and actual use rather than applying one generic schedule. Cooling performance, fluid condition, battery health, suspension wear and AC output receive particular attention.',
+  expertise: 'Mercedes work is supported by XENTRY and DAS with Star Diagnostics for fault tracing, live data, service resets and adaptations where applicable. Our technical coverage includes M254 and M256 engines, M177 and M178 AMG V8 platforms, OM656 diesels, 7G-Tronic and 9G-Tronic transmissions, and AIRMATIC, ABC and E-ACTIVE suspension systems.',
+  parts: 'Each estimate identifies the proposed parts and fluids before approval. Depending on the repair and owner preference, this can include genuine Mercedes-Benz parts, established OE-supplier components or a suitable customer-approved alternative. The correct Mercedes fluid specification, fitting procedure and post-repair checks matter more than a one-size-fits-all parts claim.',
+  cta: 'For Mercedes repair, maintenance or a second-opinion inspection in Dubai, call +971 4 340 2223, message Digi-Tec on WhatsApp or use the booking form below. Include the model, year, mileage, warning message and symptoms so the workshop can prepare for the right first inspection.',
+};
 
 const getBrandSeoCopy = (brand: { name: string; specialization: string; whyChoose: { title: string }[] }) => {
   const focusAreas = brand.whyChoose.map((w) => w.title).slice(0, 4);
@@ -93,10 +107,167 @@ const MERCEDES_SERVICE_PATHS: Record<string, string> = {
   'tire-repair': '/services/mercedes-tire-repair-dubai',
 };
 
+const MERCEDES_SERVICE_LABELS: Record<string, string> = {
+  'oil-change': 'Mercedes-Benz Oil Change and Scheduled Maintenance in Dubai',
+  'brake-repair': 'Mercedes-Benz Brake Repair in Dubai',
+  'transmission-repair': 'Mercedes-Benz Transmission Repair in Dubai',
+  'ac-repair': 'Mercedes-Benz AC Repair in Dubai',
+  'suspension-repair': 'Mercedes-Benz Suspension Repair in Dubai',
+  'engine-diagnostics': 'Mercedes-Benz XENTRY Diagnostics in Dubai',
+  'mechanical-repair': 'Mercedes-Benz Mechanical Repair in Dubai',
+  'steering-repair': 'Mercedes-Benz Steering Repair in Dubai',
+  'battery-replacement': 'Mercedes-Benz Battery Replacement in Dubai',
+  'electrical-repair': 'Mercedes-Benz Electrical Repair in Dubai',
+  'exhaust-repair': 'Mercedes-Benz Exhaust Repair in Dubai',
+  'fuel-system-repair': 'Mercedes-Benz Fuel System Repair in Dubai',
+  'body-repair': 'Mercedes-Benz Body Repair in Dubai',
+  'tire-repair': 'Mercedes-Benz Tyre Repair in Dubai',
+};
+
+const MERCEDES_CORE_SERVICES = [
+  {
+    title: 'Mercedes Maintenance & Oil Service',
+    description: 'Service A, Service B, oil and filter changes, fluid checks and maintenance resets using the specification required by the vehicle.',
+    path: MERCEDES_SERVICE_PATHS['oil-change'],
+  },
+  {
+    title: 'XENTRY Diagnostics & Warning Lights',
+    description: 'Fault-code analysis, live data and guided testing for engine, transmission, suspension, safety, comfort and electrical systems.',
+    path: MERCEDES_SERVICE_PATHS['engine-diagnostics'],
+  },
+  {
+    title: '7G-Tronic & 9G-Tronic Transmission Repair',
+    description: 'Diagnosis for delayed engagement, rough shifting, slipping, leaks and transmission warnings before parts are recommended.',
+    path: MERCEDES_SERVICE_PATHS['transmission-repair'],
+  },
+  {
+    title: 'AIRMATIC, ABC & Suspension Repair',
+    description: 'Testing for a low corner, slow lifting, compressor noise, harsh ride or a Mercedes suspension warning message.',
+    path: MERCEDES_SERVICE_PATHS['suspension-repair'],
+  },
+  {
+    title: 'Mercedes AC, Cooling & Mechanical Repair',
+    description: 'Inspection of weak AC, overheating, coolant loss, oil leaks, unusual engine noise and reduced performance in Dubai conditions.',
+    path: MERCEDES_SERVICE_PATHS['mechanical-repair'],
+  },
+  {
+    title: 'AMG & G-Class Specialist Support',
+    description: 'Model-aware diagnostics, brakes, driveline, suspension and engine health checks for C63, E63, G63, S63, AMG GT and other AMG models.',
+    path: MERCEDES_SERVICE_PATHS['mechanical-repair'],
+  },
+];
+
+const MERCEDES_COMMON_ISSUES = [
+  {
+    title: 'Suspension Fault or one side sitting low',
+    description: 'AIRMATIC, ABC and E-ACTIVE systems can involve an air spring, compressor, valve block, pressure leak, sensor or electrical fault. S-Class, GLE and GLS vehicles need system testing before a component is replaced.',
+    path: MERCEDES_SERVICE_PATHS['suspension-repair'],
+    label: 'Mercedes suspension diagnostics',
+  },
+  {
+    title: 'Jerking, slipping or delayed gear engagement',
+    description: '7G-Tronic, 9G-Tronic and AMG SpeedShift symptoms may relate to fluid condition, adaptations, sensors, a conductor plate, mechatronics or internal wear. A scan and road test help define the repair scope.',
+    path: MERCEDES_SERVICE_PATHS['transmission-repair'],
+    label: 'Mercedes transmission repair',
+  },
+  {
+    title: 'Engine light, rough idle or loss of power',
+    description: 'The cause can sit in ignition, air metering, boost, fuel delivery, emissions or cooling—not just the component named by a stored code. XENTRY data and physical testing are used together.',
+    path: MERCEDES_SERVICE_PATHS['engine-diagnostics'],
+    label: 'Mercedes XENTRY diagnostics',
+  },
+  {
+    title: 'Weak AC or rising coolant temperature',
+    description: 'High ambient temperatures expose weak compressors, refrigerant leaks, restricted condensers, cooling fans, thermostats and coolant leaks. Early diagnosis matters before Dubai summer load increases.',
+    path: MERCEDES_SERVICE_PATHS['ac-repair'],
+    label: 'Mercedes AC repair',
+  },
+  {
+    title: 'Battery warning or intermittent electrical faults',
+    description: 'A weak main or auxiliary battery, charging fault, voltage drop, wiring concern or control-module communication issue can create several warning messages at once. Battery registration or coding is completed where required.',
+    path: MERCEDES_SERVICE_PATHS['electrical-repair'],
+    label: 'Mercedes electrical repair',
+  },
+  {
+    title: 'Brake warning, vibration or reduced confidence',
+    description: 'Mercedes and AMG brake checks cover pad and disc condition, sensors, calipers, fluid, hydraulic operation and the cause of vibration. The correct parts route depends on the fitted brake package.',
+    path: MERCEDES_SERVICE_PATHS['brake-repair'],
+    label: 'Mercedes brake repair',
+  },
+];
+
+const MERCEDES_MODEL_GROUPS = [
+  {
+    title: 'C-Class, CLA & compact models',
+    models: 'A-Class, B-Class, CLA, C-Class and CLE',
+    description: 'Scheduled service, warning-light diagnosis, brakes, AC, cooling, steering and suspension support for compact Mercedes saloons, hatchbacks, estates and coupes.',
+    links: [
+      { label: 'Oil service', path: MERCEDES_SERVICE_PATHS['oil-change'] },
+      { label: 'Diagnostics', path: MERCEDES_SERVICE_PATHS['engine-diagnostics'] },
+      { label: 'Brake repair', path: MERCEDES_SERVICE_PATHS['brake-repair'] },
+    ],
+  },
+  {
+    title: 'E-Class, CLS & executive models',
+    models: 'E-Class, CLS and earlier CLK platforms',
+    description: 'Diagnosis and repair for 7G-Tronic and 9G-Tronic behaviour, electrical warnings, selected AIRMATIC systems, cooling, oil leaks, brakes and climate-control concerns.',
+    links: [
+      { label: 'Transmission repair', path: MERCEDES_SERVICE_PATHS['transmission-repair'] },
+      { label: 'Electrical repair', path: MERCEDES_SERVICE_PATHS['electrical-repair'] },
+      { label: 'AC repair', path: MERCEDES_SERVICE_PATHS['ac-repair'] },
+    ],
+  },
+  {
+    title: 'S-Class & flagship Mercedes',
+    models: 'S-Class W221, W222 and W223, plus earlier flagship platforms',
+    description: 'Specialist attention to AIRMATIC, ABC and E-ACTIVE ride systems, comfort electronics, V8 and V12 mechanical systems, cooling and advanced module diagnostics.',
+    links: [
+      { label: 'Suspension repair', path: MERCEDES_SERVICE_PATHS['suspension-repair'] },
+      { label: 'Mechanical repair', path: MERCEDES_SERVICE_PATHS['mechanical-repair'] },
+      { label: 'Electrical repair', path: MERCEDES_SERVICE_PATHS['electrical-repair'] },
+    ],
+  },
+  {
+    title: 'GLC, GLE, GLS & Mercedes SUVs',
+    models: 'GLA, GLB, GLC, GLE, GLS, ML, GL and GLK',
+    description: 'Dubai-focused maintenance and repair for SUV cooling, AC, 4MATIC driveline, transmission, brakes and air suspension, with model-specific inspection before quoting.',
+    links: [
+      { label: 'Suspension repair', path: MERCEDES_SERVICE_PATHS['suspension-repair'] },
+      { label: 'Transmission repair', path: MERCEDES_SERVICE_PATHS['transmission-repair'] },
+      { label: 'Mechanical repair', path: MERCEDES_SERVICE_PATHS['mechanical-repair'] },
+    ],
+  },
+  {
+    title: 'G-Class, G-Wagon & Mercedes-AMG',
+    models: 'G500, G550, G63, C43, C63, E53, E63, S63, SL and AMG GT',
+    description: 'AMG-aware engine, transmission, brake, suspension and diagnostic work for high-output Mercedes platforms, plus planned support for G-Class body and performance projects.',
+    links: [
+      { label: 'AMG mechanical repair', path: MERCEDES_SERVICE_PATHS['mechanical-repair'] },
+      { label: 'AMG diagnostics', path: MERCEDES_SERVICE_PATHS['engine-diagnostics'] },
+      { label: 'G63 case study', path: '/blog/g63-to-brabus-g800-conversion-dubai' },
+    ],
+  },
+  {
+    title: 'EQ, V-Class & specialist Mercedes platforms',
+    models: 'EQB, EQE, EQS, EQE SUV, EQS SUV, V-Class and Vito',
+    description: 'Diagnostic inspection, low-voltage electrical support, brakes, tyres, suspension and climate-system checks, with high-voltage work confirmed against the exact model and requested scope before booking.',
+    links: [
+      { label: 'Electrical repair', path: MERCEDES_SERVICE_PATHS['electrical-repair'] },
+      { label: 'Diagnostics', path: MERCEDES_SERVICE_PATHS['engine-diagnostics'] },
+      { label: 'Tyre service', path: MERCEDES_SERVICE_PATHS['tire-repair'] },
+    ],
+  },
+];
+
+const MERCEDES_SCHEMA_OFFERS = Object.entries(MERCEDES_SERVICE_PATHS).map(([serviceSlug, path]) => ({
+  name: MERCEDES_SERVICE_LABELS[serviceSlug],
+  path,
+}));
+
 // Models help search engines and AI systems understand the vehicles covered by
 // each brand hub. Detailed profiles provide the fallback for newer brands.
 const BRAND_MODELS: Record<string, string[]> = {
-  'mercedes-benz-service-dubai': ['A-Class','C-Class','E-Class','CLA','CLS','GLA','GLC','GLE','GLS','S-Class','G-Class','AMG GT','SL','Maybach','EQ Series'],
+  'mercedes-benz-service-dubai': ['A-Class','B-Class','CLA','C-Class','CLE','E-Class','CLS','S-Class','GLA','GLB','GLC','GLE','GLS','G-Class','G63','AMG GT','SL','EQB','EQE','EQS','V-Class'],
   'maybach-service-dubai': ['Maybach S-Class','Maybach GLS','Maybach S680','Maybach S580'],
   'porsche-service-dubai': ['911','718 Cayman','718 Boxster','Panamera','Macan','Cayenne','Taycan'],
   'audi-service-dubai': ['A3','A4','A5','A6','A7','A8','Q3','Q5','Q7','Q8','RS Range','R8','e-tron'],
@@ -125,6 +296,8 @@ const BrandPage = () => {
   const brandJsonLd = React.useMemo(() => {
     if (!brand) return undefined;
     const url = `https://digitecme.com${isArabic ? '/ar' : ''}/brands/${brand.slug}`;
+    const isMercedes = brand.slug === 'mercedes-benz-service-dubai';
+    const pageDescription = isMercedes && !isArabic ? MERCEDES_META_DESCRIPTION : brand.intro;
     const breadcrumb = buildBreadcrumb(url, [
       { name: isArabic ? 'الرئيسية' : 'Home', url: `https://digitecme.com${isArabic ? '/ar' : '/'}` },
       { name: isArabic ? 'العلامات' : 'Brands', url: `https://digitecme.com${isArabic ? '/ar' : ''}/brands` },
@@ -132,10 +305,11 @@ const BrandPage = () => {
     ]);
     const webPage = buildWebPage({
       url,
-      name: isArabic ? `صيانة وإصلاح ${brand.name} في دبي` : `${brand.name} Service & Repair in Dubai`,
-      description: brand.intro,
+      name: isArabic ? `صيانة وإصلاح ${brand.name} في دبي` : isMercedes ? 'Mercedes-Benz Repair & Service in Dubai' : `${brand.name} Service & Repair in Dubai`,
+      description: pageDescription,
       breadcrumbId: `${url}#breadcrumb`,
-      primaryImage: brand.logo || undefined,
+      primaryImage: isMercedes ? mercedesWorkshop : brand.logo || undefined,
+      ...(isMercedes ? { dateModified: '2026-07-31' } : {}),
     });
     const models = BRAND_MODELS[brand.slug] ?? BRAND_PROFILES[serviceProfileSlug]?.models ?? [];
     const brandEntity = {
@@ -147,9 +321,9 @@ const BrandPage = () => {
     const svc = {
       '@type': 'Service',
       '@id': `${url}#service`,
-      name: isArabic ? `صيانة وإصلاح ${brand.name} في دبي` : `${brand.name} Service & Repair in Dubai`,
+      name: isArabic ? `صيانة وإصلاح ${brand.name} في دبي` : isMercedes ? 'Mercedes-Benz Repair & Service in Dubai' : `${brand.name} Service & Repair in Dubai`,
       serviceType: isArabic ? `إصلاح ${brand.name}` : `${brand.name} Repair`,
-      description: brand.intro,
+      description: pageDescription,
       url,
       provider: businessRef,
       brand: { '@id': `${url}#brand` },
@@ -162,10 +336,19 @@ const BrandPage = () => {
       hasOfferCatalog: {
         '@type': 'OfferCatalog',
         name: isArabic ? `دليل خدمات ${brand.name}` : `${brand.name} Service Catalog`,
-        itemListElement: (isArabic ? arBrandServices.map((service) => service.title) : BRAND_OFFER_CATALOG).map((n) => ({
-          '@type': 'Offer',
-          itemOffered: { '@type': 'Service', name: `${brand.name} ${n}` },
-        })),
+        itemListElement: isMercedes && !isArabic
+          ? MERCEDES_SCHEMA_OFFERS.map((offer) => ({
+              '@type': 'Offer',
+              itemOffered: {
+                '@type': 'Service',
+                name: offer.name,
+                url: `https://digitecme.com${offer.path}`,
+              },
+            }))
+          : (isArabic ? arBrandServices.map((service) => service.title) : BRAND_OFFER_CATALOG).map((n) => ({
+              '@type': 'Offer',
+              itemOffered: { '@type': 'Service', name: `${brand.name} ${n}` },
+            })),
       },
       ...(models.length > 0
         ? {
@@ -194,12 +377,15 @@ const BrandPage = () => {
 
   useSeo({
     title: brand
-      ? isArabic ? `إصلاح وصيانة ${brand.name} في دبي | مركز ديجي-تك` : isMercedesServiceHub ? 'Mercedes Service Dubai | Service A, B & XENTRY | Digi-Tec' : `${brand.name} Repair Dubai | Digi-Tec`
+      ? isArabic ? `إصلاح وصيانة ${brand.name} في دبي | مركز ديجي-تك` : isMercedesServiceHub ? MERCEDES_META_TITLE : `${brand.name} Repair Dubai | Digi-Tec`
       : 'Brand Service in Dubai | Digi-Tec Performance Centre',
     description: brand
-      ? isArabic ? `إصلاح وصيانة ${brand.name} في دبي: تشخيص وصيانة وفرامل وناقل حركة وتعليق وتكييف مع قطع بالمواصفات المناسبة لدى مركز ديجي-تك.` : isMercedesServiceHub ? 'Mercedes Service A and Service B in Dubai with XENTRY diagnostics, approved fluids and OEM parts. Book Digi-Tec in Al Quoz.' : `Specialist ${brand.name} repair and service in Dubai: diagnostics, maintenance, brakes, transmission, suspension and AC at Digi-Tec, Al Quoz.`
+      ? isArabic ? `إصلاح وصيانة ${brand.name} في دبي: تشخيص وصيانة وفرامل وناقل حركة وتعليق وتكييف مع قطع بالمواصفات المناسبة لدى مركز ديجي-تك.` : isMercedesServiceHub ? MERCEDES_META_DESCRIPTION : `Specialist ${brand.name} repair and service in Dubai: diagnostics, maintenance, brakes, transmission, suspension and AC at Digi-Tec, Al Quoz.`
       : 'Expert luxury car maintenance, diagnostics, and performance tuning in Dubai at Digi-Tec Performance Centre.',
     canonical: brand ? `https://digitecme.com${isArabic ? '/ar' : ''}/brands/${brand.slug}` : `https://digitecme.com${isArabic ? '/ar' : '/'}`,
+    ogImage: isMercedesServiceHub ? `https://digitecme.com${mercedesWorkshop}` : undefined,
+    ogTitle: isMercedesServiceHub ? MERCEDES_META_TITLE : undefined,
+    ogDescription: isMercedesServiceHub ? MERCEDES_META_DESCRIPTION : undefined,
     noindex: !brand,
     jsonLd: brandJsonLd,
   });
@@ -222,7 +408,7 @@ const BrandPage = () => {
     expertise: `تشمل خبرتنا بسيارات ${brand.name} الصيانة والتشخيص والمحرك وناقل الحركة والتعليق والفرامل والكهرباء والتكييف، مع المعايرة والاختبار بعد الإصلاح.`,
     parts: `نستخدم قطع OEM أصلية أو بدائل موثوقة مطابقة للمواصفات، ونوثق الاختيار والأعمال والتوصيات بوضوح قبل تسليم السيارة.`,
     cta: `لحجز خدمة ${brand.name} في دبي، اتصل على +971 4 340 2223 أو أرسل رسالة واتساب أو استخدم نموذج الحجز في هذه الصفحة.`,
-  } : getBrandSeoCopy(brand);
+  } : isMercedesServiceHub ? MERCEDES_SEO_COPY : getBrandSeoCopy(brand);
   const displayedServices = isArabic ? arBrandServices : SERVICES;
   const brandServices = getServicesForBrand(serviceProfileSlug);
   const profile = BRAND_PROFILES[serviceProfileSlug];
@@ -238,22 +424,51 @@ const BrandPage = () => {
   const isLamborghini = brand.slug === 'lamborghini-service-dubai';
   const isPorsche = brand.slug === 'porsche-service-dubai';
   const isMaybach = brand.slug === 'maybach-service-dubai';
+  const heroImage = isMercedesServiceHub
+    ? mercedesWorkshop
+    : isMaybach
+      ? maybachWorkshop
+      : isPorsche
+        ? porscheGt3rsWorkshop
+        : isLamborghini
+          ? lamborghiniWorkshop
+          : isNissan
+            ? nissanWorkshop
+            : isDefender
+              ? defenderWorkshop
+              : isRangeRover
+                ? rangeRoverWorkshop
+                : isFerrari
+                  ? ferrariEngineWorkshop
+                  : undefined;
 
   return (
     <div className="min-h-screen bg-black text-off-white">
       <Header />
 
+      {isMercedesServiceHub && (
+        <nav aria-label={isArabic ? 'مسار التنقل' : 'Breadcrumb'} className="max-w-7xl mx-auto px-4 sm:px-6 pt-6 text-xs sm:text-sm text-gray-400">
+          <ol className="flex flex-wrap items-center gap-2">
+            <li><Link to="/" className="hover:text-burnt-orange">{isArabic ? 'الرئيسية' : 'Home'}</Link></li>
+            <li aria-hidden="true">/</li>
+            <li><Link to="/brands" className="hover:text-burnt-orange">{isArabic ? 'العلامات' : 'Brands'}</Link></li>
+            <li aria-hidden="true">/</li>
+            <li className="text-off-white font-semibold">{isArabic ? 'إصلاح وصيانة مرسيدس-بنز في دبي' : 'Mercedes-Benz Repair & Service Dubai'}</li>
+          </ol>
+        </nav>
+      )}
+
       {/* Hero */}
       <section className="relative bg-black overflow-hidden">
-        {isFerrari || isRangeRover || isDefender || isNissan || isLamborghini || isPorsche || isMaybach ? (
+        {heroImage ? (
           <>
             <img
-              src={isMaybach ? maybachWorkshop : isPorsche ? porscheGt3rsWorkshop : isLamborghini ? lamborghiniWorkshop : isNissan ? nissanWorkshop : isDefender ? defenderWorkshop : isRangeRover ? rangeRoverWorkshop : ferrariEngineWorkshop}
+              src={heroImage}
               alt=""
               aria-hidden="true"
-              className="absolute inset-0 h-full w-full object-cover object-center opacity-60"
+              className={`absolute inset-0 h-full w-full object-cover opacity-60 ${isMercedesServiceHub ? 'object-[center_52%]' : 'object-center'}`}
             />
-            <div className="absolute inset-0 bg-black/80" />
+            <div className={`absolute inset-0 ${isMercedesServiceHub ? 'bg-black/75' : 'bg-black/80'}`} />
           </>
         ) : (
           <div className="absolute inset-0 bg-gradient-to-b from-burnt-orange/10 via-transparent to-transparent" />
@@ -274,7 +489,7 @@ const BrandPage = () => {
                 </span>
               </div>
               <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black mb-4 sm:mb-6 leading-tight">
-                {brand.name} <span className="text-burnt-orange">{isArabic ? 'للإصلاح والصيانة في دبي' : isMercedesServiceHub ? 'Service Dubai' : 'Repair & Service Dubai'}</span>
+                {brand.name} <span className="text-burnt-orange">{isArabic ? 'للإصلاح والصيانة في دبي' : isMercedesServiceHub ? 'Repair & Service Dubai' : 'Repair & Service Dubai'}</span>
               </h1>
               <p className="text-gray-300 text-base sm:text-lg leading-relaxed mb-6 sm:mb-8 max-w-2xl">
                 {brand.intro}
@@ -293,6 +508,17 @@ const BrandPage = () => {
                   <Phone className="w-5 h-5" />
                   {isArabic ? 'اتصل على +971 4 340 2223' : 'Call +971 4 340 2223'}
                 </a>
+                {isMercedesServiceHub && (
+                  <a
+                    href="https://maps.google.com/?q=Al+Quoz+Industrial+Area+3+Warehouse+No.11-15+Dubai"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn-secondary"
+                  >
+                    <MapPin className="w-5 h-5" />
+                    {isArabic ? 'الاتجاهات إلى القوز' : 'Directions to Al Quoz'}
+                  </a>
+                )}
               </div>
               <CtaAssurance className="mt-4" align="start" text={isArabic ? 'تقييم مجاني · بلا التزام · رد خلال دقائق' : undefined} />
             </div>
@@ -305,22 +531,36 @@ const BrandPage = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-10 sm:mb-14">
             <h2 className="text-2xl sm:text-4xl lg:text-5xl font-black mb-3 sm:mb-4">
-              {isArabic ? <>خدمات <span className="text-burnt-orange">{brand.name}</span></> : <>Our <span className="text-burnt-orange">{brand.name}</span> Services</>}
+              {isArabic ? <>خدمات <span className="text-burnt-orange">{brand.name}</span></> : isMercedesServiceHub ? <>Mercedes <span className="text-burnt-orange">Repair & Maintenance</span> in Dubai</> : <>Our <span className="text-burnt-orange">{brand.name}</span> Services</>}
             </h2>
             <p className="text-gray-300 max-w-3xl mx-auto text-sm sm:text-lg">
-              {isArabic ? `عناية متكاملة بسيارات ${brand.name}، من الصيانة الدورية إلى الإصلاحات المتقدمة.` : `Comprehensive care for every ${brand.name}, from routine maintenance to advanced performance work.`}
+              {isArabic ? `عناية متكاملة بسيارات ${brand.name}، من الصيانة الدورية إلى الإصلاحات المتقدمة.` : isMercedesServiceHub ? 'Start with the symptom or service your Mercedes needs. Each area below links to a focused page with the relevant warning signs, inspection process and model-specific technical detail.' : `Comprehensive care for every ${brand.name}, from routine maintenance to advanced performance work.`}
             </p>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
-            {displayedServices.map((s) => (
-              <div
-                key={s.title}
-                className="card-premium rounded-2xl p-6 sm:p-7 transition-all duration-300"
-              >
-                <h3 className="text-lg sm:text-xl font-bold text-white mb-2">{s.title}</h3>
-                <p className="text-gray-400 text-sm sm:text-base leading-relaxed">{s.description}</p>
-              </div>
-            ))}
+            {isMercedesServiceHub && !isArabic
+              ? MERCEDES_CORE_SERVICES.map((s) => (
+                  <Link
+                    key={s.title}
+                    to={s.path}
+                    className="card-premium group rounded-2xl p-6 sm:p-7 transition-all duration-300"
+                  >
+                    <h3 className="text-lg sm:text-xl font-bold text-white mb-2 group-hover:text-burnt-orange transition-colors">{s.title}</h3>
+                    <p className="text-gray-400 text-sm sm:text-base leading-relaxed">{s.description}</p>
+                    <span className="inline-flex items-center gap-1 text-burnt-orange text-sm font-semibold mt-4">
+                      Explore service <ArrowRight className="w-4 h-4" />
+                    </span>
+                  </Link>
+                ))
+              : displayedServices.map((s) => (
+                  <div
+                    key={s.title}
+                    className="card-premium rounded-2xl p-6 sm:p-7 transition-all duration-300"
+                  >
+                    <h3 className="text-lg sm:text-xl font-bold text-white mb-2">{s.title}</h3>
+                    <p className="text-gray-400 text-sm sm:text-base leading-relaxed">{s.description}</p>
+                  </div>
+                ))}
           </div>
         </div>
       </section>
@@ -379,7 +619,42 @@ const BrandPage = () => {
                 </figcaption>
               </figure>
             )}
-            {models.length > 0 && (
+            {isMercedesServiceHub && !isArabic && (
+              <div className="grid md:grid-cols-2 gap-4 sm:gap-6 mt-6 sm:mt-8">
+                <figure className="card-premium rounded-2xl overflow-hidden">
+                  <img
+                    src={mercedesAmgEngine}
+                    alt="Mercedes-AMG engine inspected at Digi-Tec Performance Centre in Al Quoz, Dubai"
+                    className="w-full aspect-[16/9] object-cover"
+                    loading="lazy"
+                    width="1086"
+                    height="1448"
+                  />
+                  <figcaption className="p-5">
+                    <span className="text-burnt-orange text-xs font-bold uppercase tracking-widest">Inside our Mercedes workshop</span>
+                    <h3 className="text-lg font-bold text-off-white mt-2">Model-aware mechanical inspection</h3>
+                    <p className="text-gray-400 text-sm leading-relaxed mt-2">A real Mercedes-AMG engine in the Digi-Tec workshop. Diagnostics, fluid specifications and repair planning are matched to the fitted powertrain—not just the badge.</p>
+                  </figcaption>
+                </figure>
+                <Link to="/blog/g63-to-brabus-g800-conversion-dubai" className="card-premium group rounded-2xl overflow-hidden">
+                  <img
+                    src={g63BrabusFinishedFront}
+                    alt="Finished Mercedes-AMG G63 G 800-style conversion at Digi-Tec Dubai"
+                    className="w-full aspect-[16/9] object-cover object-center group-hover:scale-105 transition-transform duration-500"
+                    loading="lazy"
+                    width="1344"
+                    height="1792"
+                  />
+                  <div className="p-5">
+                    <span className="text-burnt-orange text-xs font-bold uppercase tracking-widest">Recent Mercedes case study</span>
+                    <h3 className="text-lg font-bold text-off-white mt-2 group-hover:text-burnt-orange transition-colors">Mercedes-AMG G63 to G 800-style conversion</h3>
+                    <p className="text-gray-400 text-sm leading-relaxed mt-2">See the actual strip-down, body preparation, fitment and completed G-Class project from the Digi-Tec workshop.</p>
+                    <span className="inline-flex items-center gap-1 text-burnt-orange text-sm font-semibold mt-4">View the G63 project <ArrowRight className="w-4 h-4" /></span>
+                  </div>
+                </Link>
+              </div>
+            )}
+            {models.length > 0 && (!isMercedesServiceHub || isArabic) && (
               <div className="mt-6 sm:mt-8 card-premium rounded-2xl p-5 sm:p-6">
                 <h3 className="text-lg font-bold text-off-white mb-3">{isArabic ? `طرازات ${brand.name} التي نخدمها` : `${brand.name} models we work with`}</h3>
                 <p className="text-gray-400 text-sm leading-relaxed">{models.join(' • ')}</p>
@@ -389,15 +664,77 @@ const BrandPage = () => {
         </section>
       )}
 
+      {isMercedesServiceHub && !isArabic && (
+        <section className="py-12 sm:py-20 bg-black border-t border-white/5">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6">
+            <div className="text-center mb-8 sm:mb-12">
+              <h2 className="text-2xl sm:text-4xl lg:text-5xl font-black mb-3">
+                Common <span className="text-burnt-orange">Mercedes Problems</span> We Diagnose in Dubai
+              </h2>
+              <p className="text-gray-400 max-w-3xl mx-auto text-sm sm:text-base">
+                A warning message or symptom is a starting point, not a final diagnosis. These are common reasons Mercedes owners contact our Al Quoz workshop and the focused service page for each concern.
+              </p>
+            </div>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+              {MERCEDES_COMMON_ISSUES.map((issue) => (
+                <Link key={issue.title} to={issue.path} className="card-premium group rounded-2xl p-5 sm:p-6">
+                  <h3 className="text-lg font-bold text-off-white group-hover:text-burnt-orange transition-colors">{issue.title}</h3>
+                  <p className="text-gray-400 text-sm leading-relaxed mt-3">{issue.description}</p>
+                  <span className="inline-flex items-center gap-1 text-burnt-orange text-sm font-semibold mt-4">
+                    {issue.label} <ArrowRight className="w-4 h-4" />
+                  </span>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {isMercedesServiceHub && !isArabic && (
+        <section className="py-12 sm:py-20 bg-gradient-to-br from-charcoal/40 to-black border-t border-white/5">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6">
+            <div className="text-center mb-8 sm:mb-12">
+              <h2 className="text-2xl sm:text-4xl lg:text-5xl font-black mb-3">
+                Mercedes Models We <span className="text-burnt-orange">Repair & Service</span> in Dubai
+              </h2>
+              <p className="text-gray-400 max-w-3xl mx-auto text-sm sm:text-base">
+                Digi-Tec supports current and earlier Mercedes-Benz platforms. The exact diagnostic procedure, parts specification and workshop scope are confirmed from the model, year, VIN and fitted systems.
+              </p>
+            </div>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+              {MERCEDES_MODEL_GROUPS.map((group) => (
+                <article key={group.title} className="card-premium rounded-2xl p-5 sm:p-6">
+                  <h3 className="text-lg sm:text-xl font-bold text-off-white">{group.title}</h3>
+                  <p className="text-burnt-orange text-sm font-semibold mt-2">{group.models}</p>
+                  <p className="text-gray-400 text-sm leading-relaxed mt-3">{group.description}</p>
+                  <ul className="flex flex-wrap gap-x-4 gap-y-2 mt-4" aria-label={`${group.title} related services`}>
+                    {group.links.map((link) => (
+                      <li key={link.label}>
+                        <Link to={link.path} className="inline-flex items-center gap-1 text-burnt-orange text-sm font-semibold hover:text-off-white transition-colors">
+                          {link.label} <ArrowRight className="w-3.5 h-3.5" />
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </article>
+              ))}
+            </div>
+            <p className="text-gray-400 text-sm leading-relaxed max-w-4xl mx-auto mt-8 text-center">
+              Mercedes-Maybach owners can view our dedicated <Link to="/brands/maybach-service-dubai" className="text-burnt-orange font-semibold hover:text-off-white">Maybach repair and service page</Link>. For an unlisted Mercedes model or earlier chassis, send the VIN and concern by WhatsApp so coverage can be confirmed before the visit.
+            </p>
+          </div>
+        </section>
+      )}
+
       {/* Why Choose */}
       <section className="py-12 sm:py-20 bg-gradient-to-br from-charcoal/40 to-black">
         <div className="max-w-5xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-8 sm:mb-12">
             <h2 className="text-2xl sm:text-4xl lg:text-5xl font-black mb-3 sm:mb-4">
-              {isArabic ? <>لماذا يختار ملاك {brand.name} <span className="text-burnt-orange">D</span>IGI-TEC؟</> : <>Why {brand.name} Owners Choose <span className="text-burnt-orange">D</span>igi-Tec</>}
+              {isArabic ? <>لماذا يختار ملاك {brand.name} <span className="text-burnt-orange">D</span>IGI-TEC؟</> : isMercedesServiceHub ? <>Why Choose Digi-Tec as Your <span className="text-burnt-orange">Mercedes Workshop</span> in Dubai?</> : <>Why {brand.name} Owners Choose <span className="text-burnt-orange">D</span>igi-Tec</>}
             </h2>
             <p className="text-gray-400 max-w-2xl mx-auto text-sm sm:text-base">
-              {isArabic ? `خبرة فنية فعلية بأنظمة ${brand.name} وخدمة مصممة للسيارة، لا حلول عامة.` : `Real technical depth on the systems that define your ${brand.name}, not generic service copy.`}
+              {isArabic ? `خبرة فنية فعلية بأنظمة ${brand.name} وخدمة مصممة للسيارة، لا حلول عامة.` : isMercedesServiceHub ? 'The right Mercedes specialist should be able to explain the diagnostic evidence, fitted systems, parts options and repair plan before asking you to approve the work.' : `Real technical depth on the systems that define your ${brand.name}, not generic service copy.`}
             </p>
           </div>
           <div className="grid sm:grid-cols-2 gap-4 sm:gap-5">
@@ -423,10 +760,10 @@ const BrandPage = () => {
           <div className="max-w-7xl mx-auto px-4 sm:px-6">
             <div className="text-center mb-8 sm:mb-12">
               <h2 className="text-2xl sm:text-4xl lg:text-5xl font-black mb-3">
-                {brand.name} <span className="text-burnt-orange">{isArabic ? 'للإصلاح في دبي' : 'Repair Dubai'}</span> — {isArabic ? 'جميع الخدمات' : 'Every Service'}
+                {isArabic ? <>{brand.name} <span className="text-burnt-orange">للإصلاح في دبي</span> — جميع الخدمات</> : isMercedesServiceHub ? <>Mercedes <span className="text-burnt-orange">Repair Services</span> in Dubai</> : <>{brand.name} <span className="text-burnt-orange">Repair Dubai</span> — Every Service</>}
               </h2>
               <p className="text-gray-400 max-w-2xl mx-auto text-sm sm:text-base">
-                {isArabic ? `سواء كنت تبحث عن إصلاح ${brand.name} أو تغيير الزيت أو إصلاح الفرامل في دبي، ستجد صفحة مخصصة لكل خدمة.` : `Whether you searched for ${brand.name} repair Dubai, ${brand.name} oil change Dubai, or ${brand.name} brake repair Dubai, every specialist service has its own dedicated page with brand-specific parts, tools, and technical detail.`}
+                {isArabic ? `سواء كنت تبحث عن إصلاح ${brand.name} أو تغيير الزيت أو إصلاح الفرامل في دبي، ستجد صفحة مخصصة لكل خدمة.` : isMercedesServiceHub ? 'Choose the exact service to see its warning signs, diagnostic process, relevant Mercedes systems and booking options. Broad Mercedes repair questions stay on this hub; detailed service questions live on the pages below.' : `Whether you searched for ${brand.name} repair Dubai, ${brand.name} oil change Dubai, or ${brand.name} brake repair Dubai, every specialist service has its own dedicated page with brand-specific parts, tools, and technical detail.`}
               </p>
             </div>
             <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 sm:gap-4">
@@ -445,8 +782,30 @@ const BrandPage = () => {
                 </Link>
               ))}
             </div>
-            {/* Secondary-intent keyword copy — targets "{brand} repair dubai", "{brand} oil change dubai", "{brand} brake repair dubai" */}
             <div className="max-w-4xl mx-auto mt-10 sm:mt-14 space-y-6 sm:space-y-8">
+              {isMercedesServiceHub && !isArabic ? (
+                <>
+                  <div>
+                    <h3 className="text-xl sm:text-2xl font-bold text-off-white mb-2">Mercedes Service A vs Service B</h3>
+                    <p className="text-gray-400 text-sm sm:text-base leading-relaxed">
+                      Mercedes Service A is generally the smaller scheduled visit, while Service B adds a wider set of inspections and maintenance items. The correct scope depends on the model, model year, mileage, ASSYST display and available service history. We confirm those details before quoting instead of applying the same checklist to every Mercedes.
+                    </p>
+                  </div>
+                  <div>
+                    <h3 className="text-xl sm:text-2xl font-bold text-off-white mb-2">How a Mercedes Repair Is Diagnosed</h3>
+                    <p className="text-gray-400 text-sm sm:text-base leading-relaxed">
+                      The process starts with the symptom and warning message, followed by XENTRY scan data, a physical inspection and a road test when appropriate. We then explain the likely cause, further tests if needed, parts options and estimated scope. A stored fault code is evidence, but it is not treated as proof that the named component must be replaced.
+                    </p>
+                  </div>
+                  <div>
+                    <h3 className="text-xl sm:text-2xl font-bold text-off-white mb-2">Mercedes Parts and Fluid Specifications</h3>
+                    <p className="text-gray-400 text-sm sm:text-base leading-relaxed">
+                      The estimate identifies the proposed genuine Mercedes-Benz, OE-supplier or customer-approved alternative parts and the fluid specification required by the vehicle. Approval comes before fitting, and post-repair checks are matched to the system repaired.
+                    </p>
+                  </div>
+                </>
+              ) : (
+                <>
               <div>
                 <h3 className="text-xl sm:text-2xl font-bold text-off-white mb-2">
                   {isArabic ? `إصلاح ${brand.name} في دبي` : `${brand.name} Repair Dubai`}
@@ -471,6 +830,8 @@ const BrandPage = () => {
                   {isArabic ? `فحمات وأقراص وحساسات وكليبرات وخدمة للنظام الهيدروليكي باستخدام قطع مناسبة لسيارات ${brand.name}.` : `Pads, discs, sensors, calipers, and full hydraulic system work using genuine ${brand.name} components. Our ${brand.name} brake repair service in Dubai covers ceramic, carbon-ceramic, and standard iron setups with proper bedding-in and system bleeding.`}
                 </p>
               </div>
+                </>
+              )}
             </div>
           </div>
         </section>
@@ -480,6 +841,30 @@ const BrandPage = () => {
       <section className="py-12 sm:py-20 bg-black border-t border-white/5">
         <div className="max-w-5xl mx-auto px-4 sm:px-6">
           <div className="card-premium text-center rounded-2xl p-6 sm:p-10">
+            {isMercedesServiceHub && !isArabic ? (
+              <>
+                <p className="text-off-white font-bold text-xl sm:text-2xl mb-2">A Mercedes Workshop Process You Can Check</p>
+                <p className="text-gray-400 text-sm sm:text-base mb-8">Specific tools, a documented location and approval before repair are stronger trust signals than unsupported superlatives.</p>
+                <div className="grid sm:grid-cols-3 gap-4 sm:gap-6 text-left">
+                  <div className="bg-black/30 border border-white/10 rounded-xl p-4">
+                    <MapPin className="w-5 h-5 text-burnt-orange mb-3" />
+                    <h3 className="text-off-white font-bold">Al Quoz Industrial Area 3</h3>
+                    <p className="text-gray-400 text-sm mt-2">Warehouse 11–15, Dubai, with a direct Google Maps route from this page.</p>
+                  </div>
+                  <div className="bg-black/30 border border-white/10 rounded-xl p-4">
+                    <CheckCircle2 className="w-5 h-5 text-burnt-orange mb-3" />
+                    <h3 className="text-off-white font-bold">XENTRY, DAS & Star</h3>
+                    <p className="text-gray-400 text-sm mt-2">Mercedes diagnostic data is combined with physical checks and model-specific testing.</p>
+                  </div>
+                  <div className="bg-black/30 border border-white/10 rounded-xl p-4">
+                    <CheckCircle2 className="w-5 h-5 text-burnt-orange mb-3" />
+                    <h3 className="text-off-white font-bold">Inspect, explain, approve</h3>
+                    <p className="text-gray-400 text-sm mt-2">The recommended repair, parts route and expected timing are explained before approved work starts.</p>
+                  </div>
+                </div>
+              </>
+            ) : (
+              <>
             <p className="text-off-white font-bold text-xl sm:text-2xl mb-2">
               {isArabic ? `موثوق لدى ملاك ${brand.name} في الإمارات` : `Trusted by ${brand.name} owners across the UAE`}
             </p>
@@ -500,6 +885,8 @@ const BrandPage = () => {
                 <div className="text-xs sm:text-sm text-gray-400 mt-1">{isArabic ? 'قدم مربعة' : 'Sq Ft Facility'}</div>
               </div>
             </div>
+              </>
+            )}
           </div>
         </div>
       </section>
@@ -511,7 +898,7 @@ const BrandPage = () => {
           <article className="space-y-8 sm:space-y-10">
             <header>
               <h2 className="text-2xl sm:text-4xl lg:text-5xl font-black mb-4 sm:mb-6 leading-tight">
-                {isArabic ? <>خدمة <span className="text-burnt-orange">{brand.name}</span> المتخصصة في دبي</> : <>Specialist <span className="text-burnt-orange">{brand.name}</span> Service in Dubai</>}
+                {isArabic ? <>خدمة <span className="text-burnt-orange">{brand.name}</span> المتخصصة في دبي</> : isMercedesServiceHub ? <>Independent <span className="text-burnt-orange">Mercedes-Benz Specialist</span> in Dubai</> : <>Specialist <span className="text-burnt-orange">{brand.name}</span> Service in Dubai</>}
               </h2>
               <p className="text-gray-300 text-base sm:text-lg leading-relaxed">{seoCopy.intro}</p>
             </header>
@@ -529,7 +916,7 @@ const BrandPage = () => {
             </div>
             <div>
               <h3 className="text-xl sm:text-2xl font-bold text-off-white mb-3">
-                {isArabic ? 'قطع أصلية وتقارير واضحة' : 'Genuine Parts and Transparent Reporting'}
+                {isArabic ? 'قطع أصلية وتقارير واضحة' : isMercedesServiceHub ? 'Clear Parts and Fluid Options' : 'Genuine Parts and Transparent Reporting'}
               </h3>
               <p className="text-gray-300 text-sm sm:text-base leading-relaxed">{seoCopy.parts}</p>
             </div>
@@ -579,7 +966,7 @@ const BrandPage = () => {
                 {isArabic ? <>احجز خدمة <span className="text-burnt-orange">{brand.name}</span></> : <>Book Your <span className="text-burnt-orange">{brand.name}</span> Service</>}
               </h2>
               <p className="text-gray-300 text-base sm:text-lg leading-relaxed mb-6">
-                {isArabic ? 'أخبرنا عن سيارتك والخدمة المطلوبة، وسنتواصل معك عبر واتساب بعرض السعر وأقرب موعد متاح.' : 'Tell us about your car and the work you need. We will get back to you on WhatsApp with a quote and the earliest available slot.'}
+                {isArabic ? 'أخبرنا عن سيارتك والخدمة المطلوبة، وسنتواصل معك عبر واتساب بعرض السعر وأقرب موعد متاح.' : isMercedesServiceHub ? 'Tell us the Mercedes model, year, mileage, warning message and symptoms. We will reply on WhatsApp to confirm the appropriate first inspection and available booking options.' : 'Tell us about your car and the work you need. We will get back to you on WhatsApp with a quote and the earliest available slot.'}
               </p>
               <div className="flex flex-col sm:flex-row gap-3 mb-6">
                 <a

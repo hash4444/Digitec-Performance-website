@@ -109,13 +109,17 @@ export const ServiceGrid = () => {
 
                             <div className="pt-2 sm:pt-4 sm:border-t sm:border-white/10 mt-auto">
                               <Link
-                                to={`/services/${service.slug}`}
+                                to={service.slug === 'mercedes-repair-dubai'
+                                  ? '/brands/mercedes-benz-service-dubai'
+                                  : `/services/${service.slug}`}
                                 className="inline-flex sm:hidden items-center gap-1 text-burnt-orange font-semibold text-xs"
                               >
                                 {copy?.learn ?? 'Learn More'} <ChevronRight className={`w-3 h-3 ${isArabic ? 'rotate-180' : ''}`} />
                               </Link>
                               <Link
-                                to={`/services/${service.slug}`}
+                                to={service.slug === 'mercedes-repair-dubai'
+                                  ? '/brands/mercedes-benz-service-dubai'
+                                  : `/services/${service.slug}`}
                                 className="hidden sm:block w-full bg-burnt-orange hover:bg-[#ff7d4d] text-black font-bold text-xs lg:text-sm uppercase tracking-[0.14em] px-6 py-3.5 rounded-lg transition-colors duration-300 text-center"
                               >
                                 {copy?.learn ?? 'Learn More'}

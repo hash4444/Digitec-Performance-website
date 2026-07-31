@@ -13,7 +13,7 @@ const quickLinks = [
 ];
 
 const serviceLinks = [
-  { label: 'Mercedes Repair', arabicLabel: 'إصلاح مرسيدس', to: '/services/mercedes-repair-dubai' },
+  { label: 'Mercedes Repair', arabicLabel: 'إصلاح مرسيدس', to: '/brands/mercedes-benz-service-dubai' },
   { label: 'Diagnostics & Programming', arabicLabel: 'التشخيص والبرمجة', to: '/services/car-diagnostics-dubai' },
   { label: 'Oil Change Service', arabicLabel: 'تغيير الزيت', to: '/services/oil-change-dubai' },
   { label: 'Transmission Repair', arabicLabel: 'إصلاح ناقل الحركة', to: '/services/transmission-repair-dubai' },

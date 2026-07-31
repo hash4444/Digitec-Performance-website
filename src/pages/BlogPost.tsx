@@ -11,7 +11,6 @@ import { getBlogPostBySlug, blogPosts } from '@/data/blogPosts';
 import { buildArticle, buildBreadcrumb, buildFAQ, buildWebPage, pageGraph } from '@/lib/schema';
 import { useLocale } from '@/i18n/use-locale';
 import { categoryArabic, localizeBlogPostToArabic, localizePostSummaryToArabic } from '@/i18n/ar-blog';
-import rangeRoverWorkshop from '@/assets/range-rover-workshop-dubai.png';
 
 type ContentBlock = { type: 'h2' | 'h3' | 'p' | 'ul'; text?: string; items?: string[] };
 
@@ -58,7 +57,7 @@ const relatedServiceByPost: Record<string, { href: string; label: string; descri
     description: 'See the workshop overview, service scope, and direct ways to contact Digi-Tec in Al Quoz.',
   },
   'mercedes-repair-dubai-complete-guide': {
-    href: '/services/mercedes-repair-dubai',
+    href: '/brands/mercedes-benz-service-dubai',
     label: 'Mercedes repair in Dubai',
     description: 'Explore our Mercedes service and repair capability for diagnostics, maintenance, and specialist workshop support.',
   },
@@ -71,6 +70,11 @@ const relatedServiceByPost: Record<string, { href: string; label: string; descri
     href: '/brands/defender-service-dubai',
     label: 'Defender service in Dubai',
     description: 'Arrange a Defender inspection for accident damage, warning lights, diagnostics, bodywork or ongoing maintenance.',
+  },
+  'g63-to-brabus-g800-conversion-dubai': {
+    href: '/brands/mercedes-benz-service-dubai',
+    label: 'Mercedes-AMG G63 service in Dubai',
+    description: 'Arrange a G63 inspection or conversion consultation with our Mercedes specialists in Al Quoz.',
   },
 };
 
@@ -200,22 +204,22 @@ const BlogPost = () => {
           <p className="text-lg text-white/70 leading-relaxed mb-10 font-light italic border-l-2 border-burnt-orange pl-5">
             {post.excerpt}
           </p>
-          {post.slug === 'range-rover-land-rover-air-suspension-problems-dubai' && (
+          {post.coverImage && (
             <figure className="mb-10 overflow-hidden rounded-2xl border border-white/10 bg-charcoal">
               <img
-                src={rangeRoverWorkshop}
-                alt={isArabic ? 'رينج روفر داخل ورشة ديجي-تك بيرفورمانس في دبي' : 'Range Rover at Digi-Tec Performance Centre workshop in Dubai'}
+                src={post.coverImage}
+                alt={post.title}
                 className="h-[28rem] w-full object-cover object-center sm:h-[34rem]"
                 loading="eager"
               />
               <figcaption className="px-4 py-3 text-sm text-white/55">
-                {isArabic ? 'فحص رينج روفر في مركز ديجي-تك بيرفورمانس بالقوز، دبي.' : 'Range Rover inspection at Digi-Tec Performance Centre in Al Quoz, Dubai.'}
+                {post.title}
               </figcaption>
             </figure>
           )}
           {post.gallery && post.gallery.length > 0 && (
-            <section className="mb-10" aria-label={isArabic ? 'صور دراسة حالة إصلاح ديفندر' : 'Defender repair case study gallery'}>
-              <p className="mb-4 text-burnt-orange text-xs font-bold uppercase tracking-wider">{isArabic ? 'حالة إصلاح ديفندر حقيقية' : 'Real Defender repair case'}</p>
+            <section className="mb-10" aria-label={isArabic ? 'صور دراسة حالة من الورشة' : 'Workshop case study gallery'}>
+              <p className="mb-4 text-burnt-orange text-xs font-bold uppercase tracking-wider">{isArabic ? 'حالة عمل حقيقية من الورشة' : 'Real workshop case study'}</p>
               <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
                 {post.gallery.map((image) => (
                   <figure key={image.src} className="overflow-hidden rounded-2xl border border-white/10 bg-charcoal">

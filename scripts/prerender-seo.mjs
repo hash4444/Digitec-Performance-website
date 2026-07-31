@@ -19,22 +19,13 @@ const priorityRoutes = [
     services: ['صيانة دورية للسيارات', 'تشخيص إلكتروني دقيق', 'إصلاحات ميكانيكية وكهربائية', 'خدمات مرسيدس والسيارات الفاخرة'],
   },
   {
-    path: '/services/mercedes-repair-dubai',
-    title: 'Mercedes Repair Dubai | AMG, Star Diagnostic, OEM Parts',
-    description: 'Mercedes specialist in Dubai. AMG, Star Diagnostic and OEM parts, faster than the dealer with transparent pricing. Book today.',
-    heading: 'Mercedes Repair in Dubai',
-    sectionHeading: 'Mercedes specialist services in Dubai',
-    summary: 'Digi-Tec Performance Centre is an independent Mercedes-Benz and AMG specialist in Al Quoz, Dubai. We provide dealer-level diagnostics, scheduled maintenance, mechanical repair, transmission work, AIRMATIC suspension repair, brakes, AC and electrical fault finding.',
-    services: ['Mercedes diagnostics with XENTRY', 'AMG engine and mechanical repair', '9G-TRONIC and 7G-TRONIC transmission service', 'AIRMATIC and suspension repair', 'Mercedes Service A and Service B'],
-  },
-  {
     path: '/brands/mercedes-benz-service-dubai',
-    title: 'Mercedes-Benz Service & Repair Dubai | DIGI-TEC',
-    description: 'Mercedes-Benz service and repair in Dubai for C-Class, E-Class, S-Class, G-Class and AMG models. XENTRY diagnostics, OEM parts and clear quotes.',
-    heading: 'Mercedes-Benz Service & Repair in Dubai',
-    sectionHeading: 'Mercedes specialist services in Dubai',
-    summary: 'Digi-Tec Performance Centre provides specialist Mercedes-Benz service and repair from its Al Quoz workshop in Dubai. Our technicians support daily Mercedes models, luxury S-Class and Maybach vehicles, and high-performance AMG platforms with diagnostic-first repairs and transparent advice.',
-    services: ['Routine Mercedes maintenance', 'XENTRY diagnostics and coding', 'AMG performance and mechanical work', 'Brake, AC and electrical repair', 'Suspension and transmission service'],
+    title: 'Mercedes Repair & Service Dubai | Digi-Tec Specialists',
+    description: 'Specialist Mercedes repair and service in Dubai for C-Class, E-Class, S-Class, G-Class, GLE, GLS and AMG. XENTRY diagnostics at our Al Quoz workshop in Dubai.',
+    heading: 'Mercedes-Benz Repair & Service Dubai',
+    sectionHeading: 'Independent Mercedes specialist workshop in Dubai',
+    summary: 'Digi-Tec Performance Centre is an independent Mercedes-Benz specialist workshop in Al Quoz, Dubai. We diagnose, maintain and repair C-Class, E-Class, S-Class, G-Class, GLE, GLS, AMG and other Mercedes models using XENTRY and Star Diagnostics, with a clear inspection and estimate before approved work begins.',
+    services: ['Mercedes Service A and Service B', 'XENTRY, DAS and Star Diagnostics', '7G-Tronic and 9G-Tronic transmission repair', 'AIRMATIC, ABC and E-ACTIVE suspension repair', 'AMG and G-Class mechanical support', 'AC, cooling, brakes and electrical repair'],
   },
 ];
 
@@ -195,16 +186,30 @@ const blogPostMetadata = {
   },
   'mercedes-repair-dubai-complete-guide': {
     en: {
-      title: 'Mercedes Repair Dubai: Complete Owner Guide 2026 | Digitec',
-      heading: 'Mercedes Repair in Dubai: Complete Guide for Owners (2026)',
-      description: 'Complete 2026 guide to Mercedes repair in Dubai. Star Diagnostic, AMG specialists, OEM parts, common UAE issues, and how to choose the right Mercedes workshop.',
-      summary: 'A complete guide to common Mercedes concerns in the UAE, specialist diagnosis, maintenance and choosing the right repair workshop.',
+      title: 'Common Mercedes Problems Dubai | 2026 Owner Guide',
+      heading: 'Common Mercedes Problems in Dubai: 2026 Owner Guide',
+      description: 'Common Mercedes problems in Dubai: AIRMATIC faults, cooling, AC, batteries and warning signs. Learn what to check and when diagnostics are needed in Dubai.',
+      summary: 'A practical guide to Mercedes warning signs in Dubai, including AIRMATIC faults, cooling, AC, batteries and the checks that should happen before repair.',
     },
     ar: {
-      title: 'إصلاح مرسيدس في دبي | الدليل الكامل للمالكين',
-      heading: 'إصلاح مرسيدس في دبي: الدليل الكامل للمالكين',
-      description: 'دليل متكامل لإصلاح مرسيدس في دبي، يشمل الأعطال الشائعة والتشخيص المتخصص والصيانة والقطع واختيار ورشة مرسيدس موثوقة.',
-      summary: 'دليل لأكثر أعطال مرسيدس شيوعاً في الإمارات، والصيانة والتشخيص واختيار الورشة المتخصصة.',
+      title: 'أعطال مرسيدس الشائعة في دبي | دليل المالك 2026',
+      heading: 'أعطال مرسيدس الشائعة في دبي: دليل المالك 2026',
+      description: 'تعرّف إلى أعطال مرسيدس الشائعة في دبي: تعليق AIRMATIC والتبريد والتكييف والبطارية وإشارات التحذير، وما يجب فحصه قبل اعتماد الإصلاح.',
+      summary: 'دليل عملي لتحذيرات مرسيدس الشائعة في دبي وخطوات التشخيص المناسبة قبل اعتماد الإصلاح.',
+    },
+  },
+  'g63-to-brabus-g800-conversion-dubai': {
+    en: {
+      title: 'G63 to BRABUS G 800 Conversion Dubai | Before & After',
+      heading: 'G63 to BRABUS G 800-Style Conversion in Dubai: Before & After',
+      description: 'See a real Mercedes-AMG G63 to BRABUS G 800-style conversion in Dubai, from strip-down and fitment to final inspection at Digi-Tec.',
+      summary: 'Follow a real Mercedes-AMG G63 conversion at our Al Quoz workshop, from careful interior and body strip-down to final exterior fitment and quality checks.',
+    },
+    ar: {
+      title: 'تحويل G63 إلى طراز BRABUS G 800 في دبي | قبل وبعد',
+      heading: 'تحويل G63 إلى طراز BRABUS G 800 في دبي: قبل وبعد',
+      description: 'شاهد مشروع تحويل حقيقي لمرسيدس AMG G63 إلى طراز BRABUS G 800 في دبي، من التفكيك والتركيب إلى الفحص النهائي في ديجي-تك.',
+      summary: 'تابع مشروع تحويل حقيقي لمرسيدس AMG G63 في ورشتنا بالقوز، من التفكيك الدقيق إلى تركيب القطع الخارجية والفحوصات النهائية.',
     },
   },
   'range-rover-land-rover-air-suspension-problems-dubai': {
