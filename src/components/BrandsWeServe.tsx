@@ -80,6 +80,8 @@ export const BrandsWeServe = () => {
           flex: none;
           place-items: center;
           padding: clamp(0.75rem, 1.4vw, 1.15rem);
+          box-sizing: border-box;
+          overflow: hidden;
           border-radius: 24px;
           background: #ffffff;
           border: 1px solid rgba(0,0,0,0.06);
