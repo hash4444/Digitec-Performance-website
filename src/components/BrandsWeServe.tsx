@@ -8,7 +8,7 @@ const BrandLogo = ({ name, logo }: { name: string; logo: string }) => (
   <img
     src={logo}
     alt={`${name} logo`}
-    className="max-h-full max-w-full object-contain"
+    className={`max-h-full max-w-full object-contain ${name === 'ROX' ? 'brightness-0' : ''}`}
     loading="lazy"
     draggable={false}
   />
@@ -75,15 +75,22 @@ export const BrandsWeServe = () => {
         .brand-marquee:focus-within .brand-marquee-track { animation-play-state: paused; }
         .brand-marquee-item {
           display: grid;
-          width: clamp(4rem, 7vw, 5.5rem);
-          height: clamp(2.5rem, 4vw, 3.25rem);
+          width: clamp(6rem, 10vw, 8.5rem);
+          height: clamp(4.25rem, 7vw, 5.75rem);
           flex: none;
           place-items: center;
-          transition: opacity 220ms ease, transform 220ms ease;
+          padding: clamp(0.75rem, 1.4vw, 1.15rem);
+          box-sizing: border-box;
+          overflow: hidden;
+          border-radius: 24px;
+          background: #ffffff;
+          border: 1px solid rgba(0,0,0,0.06);
+          transition: transform 220ms ease, border-color 220ms ease;
         }
         .brand-marquee-item:hover,
         .brand-marquee-item:focus-visible {
           transform: translateY(-2px);
+          border-color: rgba(255,107,53,0.55);
         }
         .brand-marquee-item:focus-visible { outline: 1px solid rgba(255,255,255,0.35); outline-offset: 6px; }
         .brand-marquee-logo {
@@ -93,12 +100,7 @@ export const BrandsWeServe = () => {
           height: 100%;
           align-items: center;
           justify-content: center;
-          filter: grayscale(1) brightness(0) invert(1);
-          opacity: 0.62;
-          transition: opacity 220ms ease;
         }
-        .brand-marquee-item:hover .brand-marquee-logo,
-        .brand-marquee-item:focus-visible .brand-marquee-logo { opacity: 1; }
         @media (max-width: 640px) {
           .brand-marquee::before,
           .brand-marquee::after { width: 2rem; }
