@@ -75,22 +75,20 @@ export const BrandsWeServe = () => {
         .brand-marquee:focus-within .brand-marquee-track { animation-play-state: paused; }
         .brand-marquee-item {
           display: grid;
-          width: clamp(6rem, 10vw, 8.5rem);
-          height: clamp(4.25rem, 7vw, 5.75rem);
+          width: clamp(5.5rem, 9vw, 7.5rem);
+          height: clamp(3rem, 4.5vw, 3.75rem);
           flex: none;
           place-items: center;
-          padding: clamp(0.75rem, 1.4vw, 1.15rem);
+          padding: 0;
           box-sizing: border-box;
           overflow: hidden;
-          border-radius: 24px;
-          background: #ffffff;
-          border: 1px solid rgba(0,0,0,0.06);
-          transition: transform 220ms ease, border-color 220ms ease;
+          transition: transform 220ms ease, opacity 220ms ease;
+          opacity: 0.92;
         }
         .brand-marquee-item:hover,
         .brand-marquee-item:focus-visible {
           transform: translateY(-2px);
-          border-color: rgba(255,107,53,0.55);
+          opacity: 1;
         }
         .brand-marquee-item:focus-visible { outline: 1px solid rgba(255,255,255,0.35); outline-offset: 6px; }
         .brand-marquee-logo {
