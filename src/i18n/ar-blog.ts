@@ -85,6 +85,13 @@ const arabicPostMeta: Record<string, ArabicPostMeta> = {
     metaDescription: 'شاهد مراحل إصلاح لاند روفر ديفندر بعد حادث في دبي: الفحص، التفكيك، إصلاح الهيكل والدهان وإعادة التجميع داخل ورشة ديجي-تك.',
     topic: 'إصلاح وصيانة لاند روفر ديفندر',
   },
+  'mercedes-amg-gt-black-series-1300hp-build-dubai': {
+    title: 'مرسيدس AMG GT Black Series: مشروع مخصص من 730 إلى 1300 حصان',
+    excerpt: 'مشروع تطوير مخصص لمرسيدس AMG GT Black Series لدى ديجي-تك في دبي، من قوة المصنع 730 حصان إلى مواصفات مشروع 1300 حصان مع برمجة ECU مخصصة.',
+    metaTitle: 'مشروع GT Black Series بقوة 1300 حصان في دبي | ديجي-تك',
+    metaDescription: 'شاهد مشروع مرسيدس AMG GT Black Series المخصص في دبي لدى ديجي-تك، من قوة المصنع 730 حصان إلى مواصفات مشروع 1300 حصان مع برمجة ECU مخصصة.',
+    topic: 'تطوير أداء مرسيدس AMG',
+  },
 };
 
 const headingTemplates = (topic: string) => [

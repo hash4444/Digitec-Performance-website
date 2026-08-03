@@ -27,6 +27,24 @@ const priorityRoutes = [
     summary: 'Digi-Tec Performance Centre is an independent Mercedes-Benz specialist workshop in Al Quoz, Dubai. We diagnose, maintain and repair C-Class, E-Class, S-Class, G-Class, GLE, GLS, AMG and other Mercedes models using XENTRY and Star Diagnostics, with a clear inspection and estimate before approved work begins.',
     services: ['Mercedes Service A and Service B', 'XENTRY, DAS and Star Diagnostics', '7G-Tronic and 9G-Tronic transmission repair', 'AIRMATIC, ABC and E-ACTIVE suspension repair', 'AMG and G-Class mechanical support', 'AC, cooling, brakes and electrical repair'],
   },
+  {
+    path: '/brands/range-rover-service-dubai',
+    title: 'Range Rover Repair Dubai | JLR Specialists | Digi-Tec',
+    description: 'Range Rover repair and service in Dubai for Range Rover, Sport, Velar and Evoque. JLR diagnostics, air suspension, cooling and ZF repair in Al Quoz.',
+    heading: 'Range Rover Repair & Service Dubai',
+    sectionHeading: 'Independent Range Rover specialist workshop in Dubai',
+    summary: 'Digi-Tec Performance Centre is an independent Range Rover specialist workshop in Al Quoz, Dubai. We diagnose, maintain and repair Range Rover, Range Rover Sport, Velar and Evoque models with JLR-compatible diagnostics, a clear inspection and estimate before approved work begins.',
+    services: ['JLR diagnostics and calibration', 'Range Rover air suspension repair', 'ZF 8HP transmission diagnosis and repair', 'Ingenium and V8 maintenance', 'AC, cooling, brakes and electrical repair', 'Range Rover Sport, Velar and Evoque service'],
+  },
+  {
+    path: '/brands/defender-service-dubai',
+    title: 'Defender Repair Dubai | Land Rover Specialists | Digi-Tec',
+    description: 'Land Rover Defender repair and service in Dubai for Defender 90, 110, 130, V8 and OCTA. JLR diagnostics, air suspension and 4x4 care in Al Quoz.',
+    heading: 'Defender Repair & Service Dubai',
+    sectionHeading: 'Independent Land Rover Defender specialist workshop in Dubai',
+    summary: 'Digi-Tec Performance Centre is an independent Defender specialist workshop in Al Quoz, Dubai. We diagnose, maintain and repair Defender 90, 110, 130, V8 and OCTA models with JLR-compatible diagnostics, a clear inspection and estimate before approved work begins.',
+    services: ['JLR diagnostics and calibration', 'Defender air suspension repair', '4x4, Terrain Response and driveline diagnosis', 'Defender 90, 110 and 130 maintenance', 'Cooling, AC, brakes and electrical repair', 'Defender V8 and OCTA specialist support'],
+  },
 ];
 
 const titleCase = (value) => value
@@ -210,6 +228,20 @@ const blogPostMetadata = {
       heading: 'تحويل G63 إلى طراز BRABUS G 800 في دبي: قبل وبعد',
       description: 'شاهد مشروع تحويل حقيقي لمرسيدس AMG G63 إلى طراز BRABUS G 800 في دبي، من التفكيك والتركيب إلى الفحص النهائي في ديجي-تك.',
       summary: 'تابع مشروع تحويل حقيقي لمرسيدس AMG G63 في ورشتنا بالقوز، من التفكيك الدقيق إلى تركيب القطع الخارجية والفحوصات النهائية.',
+    },
+  },
+  'mercedes-amg-gt-black-series-1300hp-build-dubai': {
+    en: {
+      title: 'GT Black Series 1300 HP Build Dubai | Digi-Tec',
+      heading: 'Mercedes-AMG GT Black Series: 730 HP to 1,300 HP Custom Build',
+      description: 'See Digi-Tec’s Mercedes-AMG GT Black Series transformation in Dubai: a full custom build developed from 730 hp to a 1,300 hp project specification with ECU calibration.',
+      summary: 'A full custom Mercedes-AMG GT Black Series transformation at Digi-Tec in Dubai, developed from its factory 730 hp rating to a 1,300 hp project specification with bespoke ECU calibration.',
+    },
+    ar: {
+      title: 'مشروع GT Black Series بقوة 1300 حصان في دبي | ديجي-تك',
+      heading: 'مرسيدس AMG GT Black Series: مشروع مخصص من 730 إلى 1300 حصان',
+      description: 'شاهد مشروع مرسيدس AMG GT Black Series المخصص في دبي لدى ديجي-تك، من قوة المصنع 730 حصان إلى مواصفات مشروع 1300 حصان مع برمجة ECU مخصصة.',
+      summary: 'مشروع تطوير مخصص لمرسيدس AMG GT Black Series في دبي، مبني حول مواصفات 1300 حصان مع برمجة ECU مخصصة.',
     },
   },
   'range-rover-land-rover-air-suspension-problems-dubai': {
