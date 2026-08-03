@@ -95,10 +95,19 @@
 
   body {
     @apply bg-background text-foreground;
+    background-color: #101113;
+    color: #f8f8f8;
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     font-feature-settings: 'cv11', 'ss01';
     font-variation-settings: 'opsz' 32;
     scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+
+  html,
+  #root {
+    min-height: 100%;
+    background-color: #101113;
   }
 
   html[lang='ar'] body {
@@ -146,7 +155,7 @@
   }
 
   ::-webkit-scrollbar-track {
-    background: #0a0a0a;
+    background: #101113;
   }
 
   ::-webkit-scrollbar-thumb {
@@ -227,6 +236,11 @@
 
 /* Custom animations and effects */
 @layer utilities {
+  /* A softer, premium charcoal for all full-black page surfaces. Opacity-based black overlays stay unchanged. */
+  .bg-black {
+    background-color: #101113;
+  }
+
   .animate-fade-in {
     animation: fadeIn 0.6s ease-out forwards;
   }
@@ -240,6 +254,22 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+  }
+}
+
+@media (max-width: 640px) {
+  .btn-primary,
+  .btn-secondary {
+    min-height: 3rem;
+  }
+
+  h1,
+  h2,
+  h3,
+  p,
+  a,
+  button {
+    overflow-wrap: anywhere;
   }
 }
 

@@ -78,7 +78,7 @@ export const MascotWidget = () => {
         }
       `}</style>
 
-      <div ref={rootRef} className={`fixed bottom-8 sm:bottom-12 ${isArabic ? 'left-0 items-start' : 'right-0 items-end'} z-50 flex flex-col select-none`}>
+      <div ref={rootRef} className={`fixed bottom-4 sm:bottom-12 ${isArabic ? 'left-0 items-start' : 'right-0 items-end'} z-50 flex flex-col select-none`}>
         {/* Contact options */}
         <div
           className={`flex flex-col ${isArabic ? 'items-start ml-1' : 'items-end mr-1'} gap-2.5 mb-2 transition-all duration-200 ${
@@ -129,7 +129,7 @@ export const MascotWidget = () => {
         >
           {/* Online pulse dot */}
           <span
-            className={`absolute top-8 ${isArabic ? 'left-16 sm:left-20' : 'right-16 sm:right-20'} z-10 flex h-3.5 w-3.5 transition-opacity duration-300 ${
+            className={`absolute top-5 sm:top-8 ${isArabic ? 'left-10 sm:left-20' : 'right-10 sm:right-20'} z-10 flex h-3.5 w-3.5 transition-opacity duration-300 ${
               active ? 'opacity-0' : 'opacity-100'
             }`}
             aria-hidden="true"
@@ -139,7 +139,7 @@ export const MascotWidget = () => {
           </span>
 
           <span
-            className="mascot-bob-anim relative block w-44 h-32 sm:w-56 sm:h-40 overflow-hidden transition-transform duration-500 ease-out"
+            className="mascot-bob-anim relative block h-24 w-32 overflow-hidden transition-transform duration-500 ease-out sm:h-40 sm:w-56"
             style={{
               animation: active ? 'none' : 'mascot-bob 3.2s ease-in-out infinite',
               transform: active
