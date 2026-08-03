@@ -4,11 +4,15 @@ import { brands } from '@/data/brands';
 import { useLocale } from '@/i18n/use-locale';
 import { arHome } from '@/i18n/ar-home';
 
+// Flat single-colour marks that ship as dark artwork: render them as clean white
+// silhouettes so they read on the dark canvas at the same weight as the rest.
+const DARK_MARKS = new Set(['Bentley', 'McLaren', 'Aston Martin', 'Rolls-Royce', 'Defender']);
+
 const BrandLogo = ({ name, logo }: { name: string; logo: string }) => (
   <img
     src={logo}
     alt={`${name} logo`}
-    className={`max-h-full max-w-full object-contain ${name === 'ROX' ? 'brightness-0' : ''}`}
+    className={`max-h-full max-w-full object-contain ${DARK_MARKS.has(name) ? 'brightness-0 invert' : ''}`}
     loading="lazy"
     draggable={false}
   />
