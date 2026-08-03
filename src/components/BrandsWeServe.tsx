@@ -8,7 +8,7 @@ const BrandLogo = ({ name, logo }: { name: string; logo: string }) => (
   <img
     src={logo}
     alt={`${name} logo`}
-    className={`h-full w-full object-contain drop-shadow-[0_8px_18px_rgba(0,0,0,0.45)] ${name === 'ROX' ? 'brightness-0 invert' : ''}`}
+    className="max-h-full max-w-full object-contain"
     loading="lazy"
     draggable={false}
   />
@@ -75,20 +75,17 @@ export const BrandsWeServe = () => {
         .brand-marquee:focus-within .brand-marquee-track { animation-play-state: paused; }
         .brand-marquee-item {
           display: grid;
-          width: clamp(3.6rem, 6.5vw, 5.25rem);
-          height: clamp(3.6rem, 6.5vw, 5.25rem);
+          width: clamp(4rem, 7vw, 5.5rem);
+          height: clamp(2.5rem, 4vw, 3.25rem);
           flex: none;
           place-items: center;
-          border-radius: 9999px;
-          transition: filter 220ms ease, transform 220ms ease;
+          transition: opacity 220ms ease, transform 220ms ease;
         }
         .brand-marquee-item:hover,
         .brand-marquee-item:focus-visible {
-          filter: drop-shadow(0 0 14px rgba(255,107,53,0.38));
-          transform: translateY(-4px) scale(1.08);
-          outline: 2px solid rgba(255,107,53,0.8);
-          outline-offset: 5px;
+          transform: translateY(-2px);
         }
+        .brand-marquee-item:focus-visible { outline: 1px solid rgba(255,255,255,0.35); outline-offset: 6px; }
         .brand-marquee-logo {
           position: relative;
           display: flex;
@@ -96,19 +93,12 @@ export const BrandsWeServe = () => {
           height: 100%;
           align-items: center;
           justify-content: center;
+          filter: grayscale(1) brightness(0) invert(1);
+          opacity: 0.62;
+          transition: opacity 220ms ease;
         }
-        .brand-marquee-logo::before {
-          content: '';
-          position: absolute;
-          inset: -10%;
-          border-radius: 9999px;
-          background: radial-gradient(circle, rgba(255,255,255,0.18) 0%, rgba(255,255,255,0.055) 48%, transparent 72%);
-          filter: blur(3px);
-        }
-        .brand-marquee-logo > img {
-          position: relative;
-          z-index: 1;
-        }
+        .brand-marquee-item:hover .brand-marquee-logo,
+        .brand-marquee-item:focus-visible .brand-marquee-logo { opacity: 1; }
         @media (max-width: 640px) {
           .brand-marquee::before,
           .brand-marquee::after { width: 2rem; }
