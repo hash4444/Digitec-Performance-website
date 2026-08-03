@@ -8,7 +8,7 @@ const BrandLogo = ({ name, logo }: { name: string; logo: string }) => (
   <img
     src={logo}
     alt={`${name} logo`}
-    className="h-full w-full object-contain"
+    className={`h-full w-full object-contain drop-shadow-[0_8px_18px_rgba(0,0,0,0.45)] ${name === 'ROX' ? 'brightness-0 invert' : ''}`}
     loading="lazy"
     draggable={false}
   />
@@ -19,7 +19,7 @@ const BrandTrack = ({ direction = 'left' }: { direction?: 'left' | 'right' }) =>
   const loopedBrands = [...brands, ...brands];
 
   return (
-    <div className="brand-marquee overflow-hidden py-3" aria-label="Car brands serviced by Digi-Tec">
+    <div className="brand-marquee overflow-hidden py-1.5 sm:py-2" aria-label="Car brands serviced by Digi-Tec">
       <div className={`brand-marquee-track ${direction === 'right' ? 'brand-marquee-right' : ''}`}>
         {loopedBrands.map((brand, index) => (
           <Link
@@ -28,10 +28,10 @@ const BrandTrack = ({ direction = 'left' }: { direction?: 'left' | 'right' }) =>
             className="brand-marquee-item group"
             aria-label={`${brand.name} service and repair in Dubai`}
           >
-            <span className="brand-marquee-logo">
+            <span className="brand-marquee-logo" aria-hidden="true">
               <BrandLogo name={brand.name} logo={brand.logo} />
             </span>
-            <span className="brand-marquee-name">{brand.name}</span>
+            <span className="sr-only">{brand.name} service and repair in Dubai</span>
           </Link>
         ))}
       </div>
@@ -44,7 +44,7 @@ export const BrandsWeServe = () => {
   const copy = isArabic ? arHome.brands : null;
 
   return (
-    <section className="relative overflow-hidden bg-[#0a0a0a] py-14 sm:py-20 lg:py-24">
+    <section id="brands" className="relative overflow-hidden bg-[#101113] py-12 sm:py-16 lg:py-20">
       <style>{`
         @keyframes brand-marquee-scroll {
           from { transform: translateX(0); }
@@ -60,57 +60,60 @@ export const BrandsWeServe = () => {
           width: clamp(2rem, 8vw, 9rem);
           pointer-events: none;
         }
-        .brand-marquee::before { left: 0; background: linear-gradient(90deg, #0a0a0a, transparent); }
-        .brand-marquee::after { right: 0; background: linear-gradient(270deg, #0a0a0a, transparent); }
+        .brand-marquee::before { left: 0; background: linear-gradient(90deg, #101113 12%, transparent); }
+        .brand-marquee::after { right: 0; background: linear-gradient(270deg, #101113 12%, transparent); }
         .brand-marquee-track {
           display: flex;
           width: max-content;
           align-items: center;
-          gap: 1rem;
-          animation: brand-marquee-scroll 96s linear infinite;
+          gap: clamp(1.75rem, 4vw, 4.5rem);
+          animation: brand-marquee-scroll 88s linear infinite;
           will-change: transform;
         }
-        .brand-marquee-right { animation-direction: reverse; animation-duration: 104s; }
+        .brand-marquee-right { animation-direction: reverse; animation-duration: 96s; }
         .brand-marquee:hover .brand-marquee-track,
         .brand-marquee:focus-within .brand-marquee-track { animation-play-state: paused; }
         .brand-marquee-item {
-          display: flex;
-          min-width: 8.75rem;
-          align-items: center;
-          gap: 0.7rem;
-          padding: 0.7rem 0.85rem;
-          border: 1px solid rgba(255,255,255,0.1);
+          display: grid;
+          width: clamp(3.6rem, 6.5vw, 5.25rem);
+          height: clamp(3.6rem, 6.5vw, 5.25rem);
+          flex: none;
+          place-items: center;
           border-radius: 9999px;
-          background: linear-gradient(135deg, rgba(255,255,255,0.07), rgba(255,255,255,0.025));
-          transition: border-color 180ms ease, background 180ms ease, transform 180ms ease;
+          transition: filter 220ms ease, transform 220ms ease;
         }
         .brand-marquee-item:hover,
         .brand-marquee-item:focus-visible {
-          transform: translateY(-2px);
-          border-color: rgba(255,107,53,0.75);
-          background: rgba(255,107,53,0.1);
-          outline: none;
+          filter: drop-shadow(0 0 14px rgba(255,107,53,0.38));
+          transform: translateY(-4px) scale(1.08);
+          outline: 2px solid rgba(255,107,53,0.8);
+          outline-offset: 5px;
         }
         .brand-marquee-logo {
+          position: relative;
           display: flex;
-          width: 2.75rem;
-          height: 2.75rem;
-          flex: none;
+          width: 100%;
+          height: 100%;
           align-items: center;
           justify-content: center;
-          padding: 0.3rem;
-          border-radius: 9999px;
-          background: rgba(255,255,255,0.94);
         }
-        .brand-marquee-name {
-          max-width: 8rem;
-          overflow: hidden;
-          color: #f8f8f8;
-          font-size: 0.78rem;
-          font-weight: 700;
-          line-height: 1.1;
-          text-overflow: ellipsis;
-          white-space: nowrap;
+        .brand-marquee-logo::before {
+          content: '';
+          position: absolute;
+          inset: -10%;
+          border-radius: 9999px;
+          background: radial-gradient(circle, rgba(255,255,255,0.18) 0%, rgba(255,255,255,0.055) 48%, transparent 72%);
+          filter: blur(3px);
+        }
+        .brand-marquee-logo > img {
+          position: relative;
+          z-index: 1;
+        }
+        @media (max-width: 640px) {
+          .brand-marquee::before,
+          .brand-marquee::after { width: 2rem; }
+          .brand-marquee-track { gap: 1.65rem; animation-duration: 72s; }
+          .brand-marquee-right { animation-duration: 80s; }
         }
         @media (prefers-reduced-motion: reduce) {
           .brand-marquee { overflow-x: auto; }
@@ -120,9 +123,9 @@ export const BrandsWeServe = () => {
 
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(950px_360px_at_50%_45%,rgba(255,107,53,0.08),transparent_65%)]" />
 
-      <div className="relative z-10 mx-auto mb-6 max-w-6xl px-4 text-center sm:mb-9 sm:px-6">
+      <div className="relative z-10 mx-auto mb-7 max-w-6xl px-4 text-center sm:mb-10 sm:px-6">
         <span className="eyebrow mb-3 sm:mb-5">{copy?.eyebrow ?? 'Marque Specialists'}</span>
-        <h2 className="mb-3 text-3xl font-black tracking-tight text-white sm:mb-5 sm:text-4xl lg:text-6xl">
+        <h2 className="mb-3 text-[2rem] font-black tracking-tight text-white sm:mb-5 sm:text-4xl lg:text-6xl">
           {copy?.title ?? 'Brands We Serve'}
         </h2>
         <p className="mx-auto max-w-3xl text-sm leading-relaxed text-gray-400 sm:text-base lg:text-xl">
@@ -130,7 +133,7 @@ export const BrandsWeServe = () => {
         </p>
       </div>
 
-      <div className="relative z-10 space-y-2" dir={isArabic ? 'rtl' : 'ltr'}>
+      <div className="relative z-10 space-y-3 sm:space-y-5" dir={isArabic ? 'rtl' : 'ltr'}>
         <BrandTrack />
         <BrandTrack direction="right" />
       </div>

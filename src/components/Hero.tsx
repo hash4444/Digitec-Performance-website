@@ -22,7 +22,7 @@ export const Hero = () => {
       <div className="absolute top-1/4 left-1/4 w-48 h-48 sm:w-96 sm:h-96 bg-burnt-orange/10 rounded-full blur-3xl"></div>
       <div className="absolute bottom-1/4 right-1/4 w-40 h-40 sm:w-80 sm:h-80 bg-chocolate/10 rounded-full blur-3xl"></div>
       {/* Seamless fade into the next section */}
-      <div className="absolute bottom-0 inset-x-0 h-24 sm:h-40 bg-gradient-to-b from-transparent to-black"></div>
+      <div className="absolute bottom-0 inset-x-0 h-24 sm:h-40 bg-gradient-to-b from-transparent to-[#101113]"></div>
 
       <div className="relative z-10 text-center max-w-6xl mx-auto">
         <span className="eyebrow mb-4 sm:mb-8">{copy?.eyebrow ?? "Dubai's Elite Performance Workshop"}</span>
