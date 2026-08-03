@@ -4,11 +4,15 @@ import { brands } from '@/data/brands';
 import { useLocale } from '@/i18n/use-locale';
 import { arHome } from '@/i18n/ar-home';
 
+// Flat single-colour marks that ship as dark artwork: render them as clean white
+// silhouettes so they read on the dark canvas at the same weight as the rest.
+const DARK_MARKS = new Set(['Bentley', 'McLaren', 'Aston Martin', 'Rolls-Royce', 'Defender']);
+
 const BrandLogo = ({ name, logo }: { name: string; logo: string }) => (
   <img
     src={logo}
     alt={`${name} logo`}
-    className={`max-h-full max-w-full object-contain ${name === 'ROX' ? 'brightness-0' : ''}`}
+    className={`max-h-full max-w-full object-contain ${DARK_MARKS.has(name) ? 'brightness-0 invert' : ''}`}
     loading="lazy"
     draggable={false}
   />
@@ -74,23 +78,21 @@ export const BrandsWeServe = () => {
         .brand-marquee:hover .brand-marquee-track,
         .brand-marquee:focus-within .brand-marquee-track { animation-play-state: paused; }
         .brand-marquee-item {
-          display: grid;
-          width: clamp(6rem, 10vw, 8.5rem);
-          height: clamp(4.25rem, 7vw, 5.75rem);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: clamp(5.5rem, 9vw, 7.5rem);
+          height: clamp(3rem, 4.5vw, 3.75rem);
           flex: none;
-          place-items: center;
-          padding: clamp(0.75rem, 1.4vw, 1.15rem);
+          padding: 0;
           box-sizing: border-box;
-          overflow: hidden;
-          border-radius: 24px;
-          background: #ffffff;
-          border: 1px solid rgba(0,0,0,0.06);
-          transition: transform 220ms ease, border-color 220ms ease;
+          transition: transform 220ms ease, opacity 220ms ease;
+          opacity: 0.92;
         }
         .brand-marquee-item:hover,
         .brand-marquee-item:focus-visible {
           transform: translateY(-2px);
-          border-color: rgba(255,107,53,0.55);
+          opacity: 1;
         }
         .brand-marquee-item:focus-visible { outline: 1px solid rgba(255,255,255,0.35); outline-offset: 6px; }
         .brand-marquee-logo {
@@ -100,6 +102,11 @@ export const BrandsWeServe = () => {
           height: 100%;
           align-items: center;
           justify-content: center;
+        }
+        .brand-marquee-logo > img {
+          max-height: 100%;
+          max-width: 100%;
+          object-fit: contain;
         }
         @media (max-width: 640px) {
           .brand-marquee::before,
