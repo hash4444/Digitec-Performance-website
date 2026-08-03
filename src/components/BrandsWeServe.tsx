@@ -74,14 +74,14 @@ export const BrandsWeServe = () => {
         .brand-marquee:hover .brand-marquee-track,
         .brand-marquee:focus-within .brand-marquee-track { animation-play-state: paused; }
         .brand-marquee-item {
-          display: grid;
+          display: flex;
+          align-items: center;
+          justify-content: center;
           width: clamp(5.5rem, 9vw, 7.5rem);
           height: clamp(3rem, 4.5vw, 3.75rem);
           flex: none;
-          place-items: center;
           padding: 0;
           box-sizing: border-box;
-          overflow: hidden;
           transition: transform 220ms ease, opacity 220ms ease;
           opacity: 0.92;
         }
@@ -98,6 +98,11 @@ export const BrandsWeServe = () => {
           height: 100%;
           align-items: center;
           justify-content: center;
+        }
+        .brand-marquee-logo > img {
+          max-height: 100%;
+          max-width: 100%;
+          object-fit: contain;
         }
         @media (max-width: 640px) {
           .brand-marquee::before,
