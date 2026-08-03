@@ -8,7 +8,7 @@ const BrandLogo = ({ name, logo }: { name: string; logo: string }) => (
   <img
     src={logo}
     alt={`${name} logo`}
-    className="max-h-full max-w-full object-contain"
+    className={`max-h-full max-w-full object-contain ${name === 'ROX' ? 'brightness-0' : ''}`}
     loading="lazy"
     draggable={false}
   />
