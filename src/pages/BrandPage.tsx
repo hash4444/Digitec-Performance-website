@@ -43,6 +43,11 @@ import g63BrabusFinishedFront from '@/assets/g63-brabus-g800-finished-front.jpg'
 const MERCEDES_META_TITLE = 'Mercedes Repair & Service Dubai | Digi-Tec Specialists';
 const MERCEDES_META_DESCRIPTION = 'Specialist Mercedes repair and service in Dubai for C-Class, E-Class, S-Class, G-Class, GLE, GLS and AMG. XENTRY diagnostics at our Al Quoz workshop in Dubai.';
 
+const RANGE_ROVER_META_TITLE = 'Range Rover Repair Dubai | JLR Specialists | Digi-Tec';
+const RANGE_ROVER_META_DESCRIPTION = 'Range Rover repair and service in Dubai for Range Rover, Sport, Velar and Evoque. JLR diagnostics, air suspension, cooling and ZF repair in Al Quoz.';
+const DEFENDER_META_TITLE = 'Defender Repair Dubai | Land Rover Specialists | Digi-Tec';
+const DEFENDER_META_DESCRIPTION = 'Land Rover Defender repair and service in Dubai for Defender 90, 110, 130, V8 and OCTA. JLR diagnostics, air suspension and 4x4 care in Al Quoz.';
+
 const MERCEDES_SEO_COPY = {
   intro: 'Digi-Tec Performance Centre in Al Quoz provides Mercedes-Benz repair, scheduled maintenance and diagnostics for daily drivers, luxury models, G-Class and AMG vehicles. We begin with the reported symptom, scan data and a physical inspection, then explain the recommended scope before repair work starts.',
   dubai: 'Dubai heat, traffic and fine dust place extra load on Mercedes cooling systems, engine oil, batteries, rubber components and air conditioning. Our inspections account for the vehicle model, mileage and actual use rather than applying one generic schedule. Cooling performance, fluid condition, battery health, suspension wear and AC output receive particular attention.',
@@ -50,6 +55,54 @@ const MERCEDES_SEO_COPY = {
   parts: 'Each estimate identifies the proposed parts and fluids before approval. Depending on the repair and owner preference, this can include genuine Mercedes-Benz parts, established OE-supplier components or a suitable customer-approved alternative. The correct Mercedes fluid specification, fitting procedure and post-repair checks matter more than a one-size-fits-all parts claim.',
   cta: 'For Mercedes repair, maintenance or a second-opinion inspection in Dubai, call +971 4 340 2223, message Digi-Tec on WhatsApp or use the booking form below. Include the model, year, mileage, warning message and symptoms so the workshop can prepare for the right first inspection.',
 };
+
+const RANGE_ROVER_SEO_COPY = {
+  intro: 'Digi-Tec Performance Centre in Al Quoz provides specialist Range Rover repair, scheduled maintenance and diagnostics for Range Rover, Range Rover Sport, Velar and Evoque models. We start with the reported symptom, diagnostic data and a physical inspection, then explain the recommended work and parts options before any repair begins.',
+  dubai: 'Dubai heat, traffic and dust put extra demand on Range Rover cooling systems, air conditioning, batteries, air suspension and rubber components. Our inspection considers the exact model, mileage, service history and how the vehicle is used, with close attention to cooling performance, air-system leaks, brake wear and battery health.',
+  expertise: 'Range Rover work is supported by JLR-compatible SDD and Pathfinder diagnostic access for fault tracing, live data, service functions and calibrations where applicable. Our workshop coverage includes Ingenium petrol and diesel engines, supercharged and twin-turbo V8 platforms, ZF 8HP transmissions, Terrain Response systems and electronic air suspension.',
+  parts: 'Every estimate identifies the proposed genuine JLR parts, OE-supplier components or customer-approved alternatives before approval. Correct fluid specifications, diagnostic calibration and post-repair testing are matched to the exact Range Rover system—not a generic SUV checklist.',
+  cta: 'For Range Rover repair, service or an air-suspension inspection in Dubai, call +971 4 340 2223, send Digi-Tec a WhatsApp message or use the booking form below. Include your model, year, mileage, warning message and symptoms so we can prepare for the right first inspection.',
+};
+
+const DEFENDER_SEO_COPY = {
+  intro: 'Digi-Tec Performance Centre in Al Quoz provides specialist Land Rover Defender repair, scheduled maintenance and diagnostics for Defender 90, Defender 110, Defender 130, Defender V8 and Defender OCTA models. We combine the reported symptom with JLR diagnostic data, a physical inspection and a road test where appropriate before recommending repairs.',
+  dubai: 'Defenders in Dubai deal with heat, stop-start traffic, sand and off-road use. We pay particular attention to cooling, air conditioning, battery condition, brakes, wheel and tyre condition, suspension, underbody and driveline systems—then tailor the work to the vehicle’s actual use rather than applying a generic schedule.',
+  expertise: 'Defender diagnosis is supported by JLR-compatible SDD and Pathfinder diagnostic access for fault tracing, live data, service functions and calibration where applicable. Our workshop scope includes Ingenium engines, P400 and V8 platforms, eight-speed transmissions, Terrain Response, four-wheel-drive, air suspension and modern electrical systems.',
+  parts: 'Before work starts, the estimate identifies the proposed genuine JLR parts, OE-supplier components or customer-approved alternatives and the required fluids. The final checks include the relevant calibration, system test and road test where the repair requires it.',
+  cta: 'For Defender repair, service, diagnostics or a pre-trip inspection in Dubai, call +971 4 340 2223, message Digi-Tec on WhatsApp or use the booking form below. Send the Defender model, year, mileage, warning message and symptoms for the most useful first inspection.',
+};
+
+const RANGE_ROVER_COMMON_ISSUES = [
+  { title: 'Suspension Fault, low corner or slow lifting', description: 'Electronic air suspension symptoms can come from an air strut, compressor, valve block, air leak, height sensor or electrical fault. We test the system before recommending parts.', path: 'suspension-repair', label: 'Range Rover air suspension repair' },
+  { title: 'Cooling warning, coolant loss or overheating', description: 'Cooling-system concerns can involve a leak, thermostat, water pump, radiator, fan or another engine-management issue. We identify the cause before replacing components.', path: 'mechanical-repair', label: 'Range Rover mechanical repair' },
+  { title: 'Transmission warning, harsh shift or driveline noise', description: 'ZF 8HP and four-wheel-drive symptoms require scan data, fluid and leak checks, a physical inspection and a road test where appropriate before repair scope is defined.', path: 'transmission-repair', label: 'Range Rover transmission repair' },
+  { title: 'Weak AC or poor cabin cooling', description: 'Dubai temperatures expose weak compressors, leaks, condensers, cooling fans and climate-control issues. A proper diagnosis checks performance before refrigerant or parts are added.', path: 'ac-repair', label: 'Range Rover AC repair' },
+  { title: 'Warning lights or electrical concerns', description: 'Battery voltage, charging faults, wiring, sensors and module communication can create several warning messages. We use diagnostic data together with electrical tests.', path: 'electrical-repair', label: 'Range Rover electrical diagnostics' },
+  { title: 'Brake vibration, warning or reduced confidence', description: 'Brake checks cover pads, discs, sensors, calipers, fluid, hydraulic operation and the source of vibration before the parts route is agreed.', path: 'brake-repair', label: 'Range Rover brake repair' },
+];
+
+const DEFENDER_COMMON_ISSUES = [
+  { title: 'Suspension Fault or vehicle sitting unevenly', description: 'Defender air-suspension symptoms can involve an air spring, compressor, valve block, air leak, height sensor or electrical issue. Diagnosis comes before parts replacement.', path: 'suspension-repair', label: 'Defender suspension repair' },
+  { title: '4x4, Terrain Response or driveline warning', description: 'A four-wheel-drive warning needs diagnostic data, transfer-case and differential checks, wheel-speed information and a physical inspection before a repair plan is made.', path: 'mechanical-repair', label: 'Defender 4x4 diagnostics' },
+  { title: 'Cooling, AC or engine warning', description: 'Heat places high demand on cooling and climate systems. We inspect the reported warning or symptom, data and the physical system instead of treating the code alone as the cause.', path: 'engine-diagnostics', label: 'Defender diagnostics' },
+  { title: 'Battery, camera, sensor or electrical fault', description: 'Modern Defender systems rely on stable voltage, communication networks and correctly calibrated cameras and sensors. Testing establishes the affected system before repair.', path: 'electrical-repair', label: 'Defender electrical repair' },
+  { title: 'Brake wear, vibration or warning light', description: 'Inspection covers pads, discs, sensors, calipers, brake fluid and the cause of vibration, including the demands of towing, off-road driving and Dubai traffic.', path: 'brake-repair', label: 'Defender brake repair' },
+  { title: 'Steering, tyre or underbody concern', description: 'After kerb impacts or off-road use, steering, tyre condition, wheel alignment and underbody components deserve a documented inspection before further work is planned.', path: 'steering-repair', label: 'Defender steering repair' },
+];
+
+const RANGE_ROVER_MODEL_GROUPS = [
+  { title: 'Range Rover', models: 'Range Rover, Autobiography and SV', description: 'Flagship Range Rover service, diagnostics, air suspension, cooling, brakes, electrical systems and powertrain work, confirmed against the vehicle’s exact specification.' },
+  { title: 'Range Rover Sport', models: 'Range Rover Sport, SV and SVR', description: 'Maintenance and diagnosis for performance-oriented SUV systems, including brakes, cooling, driveline, ZF transmission and electronic air suspension.' },
+  { title: 'Range Rover Velar', models: 'Velar petrol, diesel and PHEV variants', description: 'Model-aware servicing for engine, electrical, climate, steering, suspension and warning-light concerns, with the correct diagnostic functions used where applicable.' },
+  { title: 'Range Rover Evoque', models: 'Evoque petrol, diesel and PHEV variants', description: 'Routine service, cooling, brakes, AC, electrical and drivetrain diagnosis for urban and UAE-driven Evoque models.' },
+];
+
+const DEFENDER_MODEL_GROUPS = [
+  { title: 'Defender 90', models: 'Three-door Defender 90', description: 'Service, diagnostics, brakes, suspension, steering and four-wheel-drive checks tailored to the compact Defender platform.' },
+  { title: 'Defender 110', models: 'Five-door Defender 110', description: 'Maintenance and repair for daily-driven, family and expedition Defender 110 vehicles, including cooling, driveline and electrical systems.' },
+  { title: 'Defender 130', models: 'Extended Defender 130', description: 'Inspection and maintenance for the longer Defender platform, including braking, suspension, cooling and load-related drivetrain requirements.' },
+  { title: 'Defender V8 & OCTA', models: 'Defender V8 and Defender OCTA', description: 'Model-aware diagnostic, mechanical, brake, suspension and cooling support for high-output Defender platforms.' },
+];
 
 const getBrandSeoCopy = (brand: { name: string; specialization: string; whyChoose: { title: string }[] }) => {
   const focusAreas = brand.whyChoose.map((w) => w.title).slice(0, 4);
@@ -297,7 +350,12 @@ const BrandPage = () => {
     if (!brand) return undefined;
     const url = `https://digitecme.com${isArabic ? '/ar' : ''}/brands/${brand.slug}`;
     const isMercedes = brand.slug === 'mercedes-benz-service-dubai';
-    const pageDescription = isMercedes && !isArabic ? MERCEDES_META_DESCRIPTION : brand.intro;
+    const isRangeRoverHub = brand.slug === 'range-rover-service-dubai';
+    const isDefenderHub = brand.slug === 'defender-service-dubai';
+    const pageDescription = !isArabic && isMercedes ? MERCEDES_META_DESCRIPTION
+      : !isArabic && isRangeRoverHub ? RANGE_ROVER_META_DESCRIPTION
+        : !isArabic && isDefenderHub ? DEFENDER_META_DESCRIPTION
+          : brand.intro;
     const breadcrumb = buildBreadcrumb(url, [
       { name: isArabic ? 'الرئيسية' : 'Home', url: `https://digitecme.com${isArabic ? '/ar' : '/'}` },
       { name: isArabic ? 'العلامات' : 'Brands', url: `https://digitecme.com${isArabic ? '/ar' : ''}/brands` },
@@ -305,11 +363,11 @@ const BrandPage = () => {
     ]);
     const webPage = buildWebPage({
       url,
-      name: isArabic ? `صيانة وإصلاح ${brand.name} في دبي` : isMercedes ? 'Mercedes-Benz Repair & Service in Dubai' : `${brand.name} Service & Repair in Dubai`,
+      name: isArabic ? `صيانة وإصلاح ${brand.name} في دبي` : isMercedes ? 'Mercedes-Benz Repair & Service in Dubai' : isRangeRoverHub ? 'Range Rover Repair & Service in Dubai' : isDefenderHub ? 'Defender Repair & Service in Dubai' : `${brand.name} Service & Repair in Dubai`,
       description: pageDescription,
       breadcrumbId: `${url}#breadcrumb`,
-      primaryImage: isMercedes ? mercedesWorkshop : brand.logo || undefined,
-      ...(isMercedes ? { dateModified: '2026-07-31' } : {}),
+      primaryImage: isMercedes ? mercedesWorkshop : isRangeRoverHub ? rangeRoverWorkshop : isDefenderHub ? defenderWorkshop : brand.logo || undefined,
+      ...((isMercedes || isRangeRoverHub || isDefenderHub) ? { dateModified: '2026-08-03' } : {}),
     });
     const models = BRAND_MODELS[brand.slug] ?? BRAND_PROFILES[serviceProfileSlug]?.models ?? [];
     const brandEntity = {
@@ -321,7 +379,7 @@ const BrandPage = () => {
     const svc = {
       '@type': 'Service',
       '@id': `${url}#service`,
-      name: isArabic ? `صيانة وإصلاح ${brand.name} في دبي` : isMercedes ? 'Mercedes-Benz Repair & Service in Dubai' : `${brand.name} Service & Repair in Dubai`,
+      name: isArabic ? `صيانة وإصلاح ${brand.name} في دبي` : isMercedes ? 'Mercedes-Benz Repair & Service in Dubai' : isRangeRoverHub ? 'Range Rover Repair & Service in Dubai' : isDefenderHub ? 'Defender Repair & Service in Dubai' : `${brand.name} Service & Repair in Dubai`,
       serviceType: isArabic ? `إصلاح ${brand.name}` : `${brand.name} Repair`,
       description: pageDescription,
       url,
@@ -374,18 +432,22 @@ const BrandPage = () => {
   }, [brand, isArabic, serviceProfileSlug]);
 
   const isMercedesServiceHub = brand?.slug === 'mercedes-benz-service-dubai';
+  const isRangeRoverServiceHub = brand?.slug === 'range-rover-service-dubai';
+  const isDefenderServiceHub = brand?.slug === 'defender-service-dubai';
+  const specialistHubTitle = isMercedesServiceHub ? MERCEDES_META_TITLE : isRangeRoverServiceHub ? RANGE_ROVER_META_TITLE : isDefenderServiceHub ? DEFENDER_META_TITLE : undefined;
+  const specialistHubDescription = isMercedesServiceHub ? MERCEDES_META_DESCRIPTION : isRangeRoverServiceHub ? RANGE_ROVER_META_DESCRIPTION : isDefenderServiceHub ? DEFENDER_META_DESCRIPTION : undefined;
 
   useSeo({
     title: brand
-      ? isArabic ? `إصلاح وصيانة ${brand.name} في دبي | مركز ديجي-تك` : isMercedesServiceHub ? MERCEDES_META_TITLE : `${brand.name} Repair Dubai | Digi-Tec`
+      ? isArabic ? `إصلاح وصيانة ${brand.name} في دبي | مركز ديجي-تك` : specialistHubTitle ?? `${brand.name} Repair Dubai | Digi-Tec`
       : 'Brand Service in Dubai | Digi-Tec Performance Centre',
     description: brand
-      ? isArabic ? `إصلاح وصيانة ${brand.name} في دبي: تشخيص وصيانة وفرامل وناقل حركة وتعليق وتكييف مع قطع بالمواصفات المناسبة لدى مركز ديجي-تك.` : isMercedesServiceHub ? MERCEDES_META_DESCRIPTION : `Specialist ${brand.name} repair and service in Dubai: diagnostics, maintenance, brakes, transmission, suspension and AC at Digi-Tec, Al Quoz.`
+      ? isArabic ? `إصلاح وصيانة ${brand.name} في دبي: تشخيص وصيانة وفرامل وناقل حركة وتعليق وتكييف مع قطع بالمواصفات المناسبة لدى مركز ديجي-تك.` : specialistHubDescription ?? `Specialist ${brand.name} repair and service in Dubai: diagnostics, maintenance, brakes, transmission, suspension and AC at Digi-Tec, Al Quoz.`
       : 'Expert luxury car maintenance, diagnostics, and performance tuning in Dubai at Digi-Tec Performance Centre.',
     canonical: brand ? `https://digitecme.com${isArabic ? '/ar' : ''}/brands/${brand.slug}` : `https://digitecme.com${isArabic ? '/ar' : '/'}`,
-    ogImage: isMercedesServiceHub ? `https://digitecme.com${mercedesWorkshop}` : undefined,
-    ogTitle: isMercedesServiceHub ? MERCEDES_META_TITLE : undefined,
-    ogDescription: isMercedesServiceHub ? MERCEDES_META_DESCRIPTION : undefined,
+    ogImage: isMercedesServiceHub ? `https://digitecme.com${mercedesWorkshop}` : isRangeRoverServiceHub ? `https://digitecme.com${rangeRoverWorkshop}` : isDefenderServiceHub ? `https://digitecme.com${defenderWorkshop}` : undefined,
+    ogTitle: specialistHubTitle,
+    ogDescription: specialistHubDescription,
     noindex: !brand,
     jsonLd: brandJsonLd,
   });
@@ -408,7 +470,7 @@ const BrandPage = () => {
     expertise: `تشمل خبرتنا بسيارات ${brand.name} الصيانة والتشخيص والمحرك وناقل الحركة والتعليق والفرامل والكهرباء والتكييف، مع المعايرة والاختبار بعد الإصلاح.`,
     parts: `نستخدم قطع OEM أصلية أو بدائل موثوقة مطابقة للمواصفات، ونوثق الاختيار والأعمال والتوصيات بوضوح قبل تسليم السيارة.`,
     cta: `لحجز خدمة ${brand.name} في دبي، اتصل على +971 4 340 2223 أو أرسل رسالة واتساب أو استخدم نموذج الحجز في هذه الصفحة.`,
-  } : isMercedesServiceHub ? MERCEDES_SEO_COPY : getBrandSeoCopy(brand);
+  } : isMercedesServiceHub ? MERCEDES_SEO_COPY : isRangeRoverServiceHub ? RANGE_ROVER_SEO_COPY : isDefenderServiceHub ? DEFENDER_SEO_COPY : getBrandSeoCopy(brand);
   const displayedServices = isArabic ? arBrandServices : SERVICES;
   const brandServices = getServicesForBrand(serviceProfileSlug);
   const profile = BRAND_PROFILES[serviceProfileSlug];
@@ -508,7 +570,7 @@ const BrandPage = () => {
                   <Phone className="w-5 h-5" />
                   {isArabic ? 'اتصل على +971 4 340 2223' : 'Call +971 4 340 2223'}
                 </a>
-                {isMercedesServiceHub && (
+                {(isMercedesServiceHub || isRangeRoverServiceHub || isDefenderServiceHub) && (
                   <a
                     href="https://maps.google.com/?q=Al+Quoz+Industrial+Area+3+Warehouse+No.11-15+Dubai"
                     target="_blank"
@@ -686,6 +748,64 @@ const BrandPage = () => {
                 </Link>
               ))}
             </div>
+          </div>
+        </section>
+      )}
+
+      {(isRangeRoverServiceHub || isDefenderServiceHub) && !isArabic && (
+        <section className="py-12 sm:py-20 bg-black border-t border-white/5">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6">
+            <div className="text-center mb-8 sm:mb-12">
+              <h2 className="text-2xl sm:text-4xl lg:text-5xl font-black mb-3">
+                Common <span className="text-burnt-orange">{isRangeRoverServiceHub ? 'Range Rover' : 'Defender'} Problems</span> We Diagnose in Dubai
+              </h2>
+              <p className="text-gray-400 max-w-3xl mx-auto text-sm sm:text-base">
+                The warning message or symptom is a starting point, not a diagnosis. These are the concerns owners commonly bring to our Al Quoz workshop and the specialist service area for each one.
+              </p>
+            </div>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+              {(isRangeRoverServiceHub ? RANGE_ROVER_COMMON_ISSUES : DEFENDER_COMMON_ISSUES).map((issue) => (
+                <Link key={issue.title} to={getServicePath(issue.path)} className="card-premium group rounded-2xl p-5 sm:p-6">
+                  <h3 className="text-lg font-bold text-off-white group-hover:text-burnt-orange transition-colors">{issue.title}</h3>
+                  <p className="text-gray-400 text-sm leading-relaxed mt-3">{issue.description}</p>
+                  <span className="inline-flex items-center gap-1 text-burnt-orange text-sm font-semibold mt-4">
+                    {issue.label} <ArrowRight className="w-4 h-4" />
+                  </span>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {(isRangeRoverServiceHub || isDefenderServiceHub) && !isArabic && (
+        <section className="py-12 sm:py-20 bg-gradient-to-br from-charcoal/40 to-black border-t border-white/5">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6">
+            <div className="text-center mb-8 sm:mb-12">
+              <h2 className="text-2xl sm:text-4xl lg:text-5xl font-black mb-3">
+                {isRangeRoverServiceHub ? 'Range Rover' : 'Defender'} Models We <span className="text-burnt-orange">Repair & Service</span> in Dubai
+              </h2>
+              <p className="text-gray-400 max-w-3xl mx-auto text-sm sm:text-base">
+                The exact procedure, fluid specification, diagnostic function and repair scope are confirmed from the model, year, VIN, fitted systems and reported concern.
+              </p>
+            </div>
+            <div className="grid md:grid-cols-2 gap-4 sm:gap-6">
+              {(isRangeRoverServiceHub ? RANGE_ROVER_MODEL_GROUPS : DEFENDER_MODEL_GROUPS).map((group) => (
+                <article key={group.title} className="card-premium rounded-2xl p-5 sm:p-6">
+                  <h3 className="text-lg sm:text-xl font-bold text-off-white">{group.title}</h3>
+                  <p className="text-burnt-orange text-sm font-semibold mt-2">{group.models}</p>
+                  <p className="text-gray-400 text-sm leading-relaxed mt-3">{group.description}</p>
+                  <div className="flex flex-wrap gap-x-4 gap-y-2 mt-4">
+                    <Link to={getServicePath('engine-diagnostics')} className="inline-flex items-center gap-1 text-burnt-orange text-sm font-semibold hover:text-off-white transition-colors">Diagnostics <ArrowRight className="w-3.5 h-3.5" /></Link>
+                    <Link to={getServicePath('suspension-repair')} className="inline-flex items-center gap-1 text-burnt-orange text-sm font-semibold hover:text-off-white transition-colors">Suspension repair <ArrowRight className="w-3.5 h-3.5" /></Link>
+                    <Link to={getServicePath('mechanical-repair')} className="inline-flex items-center gap-1 text-burnt-orange text-sm font-semibold hover:text-off-white transition-colors">Mechanical repair <ArrowRight className="w-3.5 h-3.5" /></Link>
+                  </div>
+                </article>
+              ))}
+            </div>
+            <p className="text-gray-400 text-sm leading-relaxed max-w-4xl mx-auto mt-8 text-center">
+              {isRangeRoverServiceHub ? <>For Defender-specific repair and off-road systems, see our dedicated <Link to="/brands/defender-service-dubai" className="text-burnt-orange font-semibold hover:text-off-white">Defender service and repair page</Link>.</> : <>For Range Rover, Range Rover Sport, Velar and Evoque service, see our dedicated <Link to="/brands/range-rover-service-dubai" className="text-burnt-orange font-semibold hover:text-off-white">Range Rover service and repair page</Link>.</>}
+            </p>
           </div>
         </section>
       )}

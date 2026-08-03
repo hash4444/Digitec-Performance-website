@@ -13,6 +13,8 @@ import g63BrabusRearPreparation from '@/assets/g63-brabus-g800-rear-body-prepara
 import g63BrabusFrontPreparation from '@/assets/g63-brabus-g800-front-body-preparation.jpg';
 import g63BrabusSidePreparation from '@/assets/g63-brabus-g800-side-preparation.jpg';
 import g63BrabusFinishedRear from '@/assets/g63-brabus-g800-finished-rear.jpg';
+import gtBlackSeriesBuild from '@/assets/mercedes-amg-gt-black-series-1300hp-build.jpg';
+import gtBlackSeriesBuildVideo from '@/assets/mercedes-amg-gt-black-series-1300hp-build.mov';
 
 export interface BlogPost {
   slug: string;
@@ -24,6 +26,7 @@ export interface BlogPost {
   readTime: string;
   coverGradient: string; // tailwind gradient classes
   coverImage?: string;
+  video?: { src: string; poster?: string; caption: string };
   gallery?: { src: string; alt: string; caption: string }[];
   metaTitle: string;
   metaDescription: string;
@@ -993,6 +996,122 @@ export const blogPosts: BlogPost[] = [
       {
         type: 'p',
         text: 'Yes. We provide Defender maintenance, diagnostics, suspension, brake, electrical, air-conditioning and mechanical repair support in Dubai.',
+      },
+    ],
+  },
+  {
+    slug: 'mercedes-amg-gt-black-series-1300hp-build-dubai',
+    title: 'Mercedes-AMG GT Black Series: 730 HP to 1,300 HP Custom Build',
+    excerpt:
+      'A full custom Mercedes-AMG GT Black Series transformation at Digi-Tec in Dubai, developed from its factory 730 hp rating to a 1,300 hp project specification with bespoke ECU calibration.',
+    category: 'Tuning',
+    author: 'DIGI-TEC Performance',
+    date: '2026-08-03',
+    readTime: '6 min read',
+    coverGradient: 'from-zinc-800 via-charcoal to-black',
+    coverImage: gtBlackSeriesBuild,
+    video: {
+      src: gtBlackSeriesBuildVideo,
+      poster: gtBlackSeriesBuild,
+      caption: 'Mercedes-AMG GT Black Series during its custom performance build at Digi-Tec Performance Centre in Al Quoz, Dubai.',
+    },
+    metaTitle: 'GT Black Series 1300 HP Build Dubai | Digi-Tec',
+    metaDescription:
+      'See Digi-Tec’s Mercedes-AMG GT Black Series transformation in Dubai: a full custom build developed from 730 hp to a 1,300 hp project specification with ECU calibration.',
+    keywords:
+      'GT Black Series tuning Dubai, GT Black Series 1300 hp, Mercedes AMG GT Black Series custom build Dubai, AMG GT Black Series ECU calibration, Mercedes performance tuning Al Quoz',
+    ogTitle: 'GT Black Series: 730 HP to 1,300 HP Custom Build',
+    ogDescription:
+      'Inside a full custom Mercedes-AMG GT Black Series performance build at Digi-Tec Performance Centre in Dubai.',
+    ogType: 'article',
+    twitterCard: 'summary_large_image',
+    twitterTitle: 'GT Black Series 1300 HP Custom Build | Digi-Tec Dubai',
+    twitterDescription:
+      'A full custom Mercedes-AMG GT Black Series build, developed from 730 hp to a 1,300 hp project specification in Dubai.',
+    canonicalOverride: 'https://digitecme.com/blog/mercedes-amg-gt-black-series-1300hp-build-dubai',
+    content: [
+      { type: 'h2', text: 'A Full Custom Mercedes-AMG GT Black Series Transformation' },
+      {
+        type: 'p',
+        text: 'The Mercedes-AMG GT Black Series is already one of the most focused road-going AMG platforms ever built. This project came to Digi-Tec Performance Centre in Al Quoz for something far more involved than a standard software upgrade: a full custom performance build, developed from the factory 730 hp rating to a 1,300 hp project specification.',
+      },
+      {
+        type: 'p',
+        text: 'The photograph and video show the car during the build process, with the powertrain removed to give the team the access required for a properly planned transformation. We are keeping the exact component specification private for this customer project, but the important part is the approach: every major performance project needs to be engineered around the complete vehicle, not treated as a single ECU-file change.',
+      },
+      { type: 'h2', text: 'From 730 HP to a 1,300 HP Project Specification' },
+      {
+        type: 'p',
+        text: 'A move from the GT Black Series’ factory output to this level of performance changes the conversation completely. Power is only one part of the result. The project has to consider how the engine, transmission, cooling, fuel delivery, exhaust, electronics and calibration work together under load. The final output can vary with fuel, ambient conditions, measurement method and the exact final specification, so any quoted figure should be understood as part of the agreed build target rather than a universal promise.',
+      },
+      {
+        type: 'p',
+        text: 'For this GT Black Series, the goal was a bespoke build with ECU calibration developed around the completed setup. That means the calibration is part of the project—not an afterthought added once mechanical work is finished.',
+      },
+      { type: 'h2', text: 'Why the Powertrain Was Removed' },
+      {
+        type: 'p',
+        text: 'On a project of this scale, access and workmanship matter. Removing the relevant powertrain assembly allows the team to inspect, prepare and integrate the build in a controlled way rather than trying to force complex work through limited space in the engine bay. It also creates the opportunity to review surrounding systems, routing, connections and installation quality before reassembly.',
+      },
+      {
+        type: 'ul',
+        items: [
+          'Project planning around the intended power level and vehicle use',
+          'Controlled powertrain access for the custom-build work',
+          'Integration checks across the supporting mechanical and electronic systems',
+          'Bespoke ECU calibration matched to the finished configuration',
+          'Post-build checks and a clear handover plan for the owner',
+        ],
+      },
+      { type: 'h2', text: 'Custom ECU Calibration Is Part of the Build' },
+      {
+        type: 'p',
+        text: 'ECU calibration on a high-output AMG must reflect the actual hardware and operating conditions of that exact vehicle. A generic file cannot account for every build decision, fuel choice, heat cycle or supporting system. The calibration phase is where the completed mechanical package is brought together with the vehicle’s control strategies and where the project is refined for the agreed target.',
+      },
+      {
+        type: 'p',
+        text: 'That is why Digi-Tec approaches serious performance work as a complete package. Before a customer commits to a build, we discuss the starting condition of the vehicle, the intended result, the realistic supporting work and the testing required before handover.',
+      },
+      { type: 'h2', text: 'Built in Dubai, Planned Around the Owner' },
+      {
+        type: 'p',
+        text: 'Every bespoke performance project is different. Some owners want a focused road car, others want a track-oriented specification, and some require a complete visual, mechanical and calibration transformation. This GT Black Series was built around its own agreed brief. For privacy and project reasons, we are not publishing a component-by-component list, but the build demonstrates the level of custom AMG work Digi-Tec can plan and execute from its Dubai workshop.',
+      },
+      { type: 'h2', text: 'Important Performance and Road-Use Note' },
+      {
+        type: 'p',
+        text: 'High-performance modifications can affect warranty, insurance, emissions compliance, vehicle registration and road legality. Requirements vary by vehicle and intended use. Before beginning a major build, owners should confirm the applicable UAE requirements and discuss their intended road or track use with the workshop. The correct specification is always one that is appropriate for the individual vehicle and owner.',
+      },
+      { type: 'h2', text: 'Talk to Digi-Tec About Your AMG Performance Project' },
+      {
+        type: 'p',
+        text: 'If you own a Mercedes-AMG GT, GT Black Series, C63, E63, G63 or another performance Mercedes and are considering a custom build or ECU calibration in Dubai, speak with Digi-Tec Performance Centre. We can inspect the vehicle, discuss the desired result and give you a clear project path before any work begins.',
+      },
+      { type: 'h2', text: 'FAQs' },
+      { type: 'h3', text: 'Can you tune a Mercedes-AMG GT Black Series in Dubai?' },
+      {
+        type: 'p',
+        text: 'Yes. Digi-Tec can assess Mercedes-AMG GT Black Series vehicles for performance projects, ECU calibration and supporting work. The suitable route depends on the vehicle condition, the owner’s goals and the intended use.',
+      },
+      { type: 'h3', text: 'Is a 1,300 hp GT Black Series build just an ECU tune?' },
+      {
+        type: 'p',
+        text: 'No. A project at this level is a full custom build. ECU calibration is essential, but it must be developed around the complete finished vehicle and its supporting systems.',
+      },
+      { type: 'h3', text: 'Why do you not publish every part used in this build?' },
+      {
+        type: 'p',
+        text: 'This is a bespoke customer project. We are sharing the transformation and the build approach while keeping the detailed specification private.',
+      },
+      { type: 'h3', text: 'Will a performance build affect my AMG warranty or insurance?' },
+      {
+        type: 'p',
+        text: 'It can. Owners should check warranty, insurance, registration and compliance implications before approving performance modifications.',
+      },
+      { type: 'h3', text: 'Can Digi-Tec work on AMG models other than the GT Black Series?' },
+      {
+        type: 'p',
+        text: 'Yes. Digi-Tec supports Mercedes-AMG diagnostics, maintenance, repair, ECU calibration and custom performance projects for a range of AMG models in Dubai.',
       },
     ],
   },

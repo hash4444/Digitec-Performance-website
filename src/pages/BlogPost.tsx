@@ -76,6 +76,11 @@ const relatedServiceByPost: Record<string, { href: string; label: string; descri
     label: 'Mercedes-AMG G63 service in Dubai',
     description: 'Arrange a G63 inspection or conversion consultation with our Mercedes specialists in Al Quoz.',
   },
+  'mercedes-amg-gt-black-series-1300hp-build-dubai': {
+    href: '/tuning',
+    label: 'Mercedes-AMG performance tuning in Dubai',
+    description: 'Discuss a custom AMG build, ECU calibration or performance-project inspection with Digi-Tec in Al Quoz.',
+  },
 };
 
 const BlogPost = () => {
@@ -215,6 +220,20 @@ const BlogPost = () => {
               <figcaption className="px-4 py-3 text-sm text-white/55">
                 {post.title}
               </figcaption>
+            </figure>
+          )}
+          {post.video && (
+            <figure className="mb-10 overflow-hidden rounded-2xl border border-white/10 bg-charcoal">
+              <video
+                className="max-h-[38rem] w-full bg-black object-contain"
+                controls
+                preload="metadata"
+                poster={post.video.poster}
+              >
+                <source src={post.video.src} type="video/quicktime" />
+                {isArabic ? 'المتصفح لا يدعم تشغيل هذا الفيديو.' : 'Your browser does not support this video.'}
+              </video>
+              <figcaption className="px-4 py-3 text-sm text-white/55">{post.video.caption}</figcaption>
             </figure>
           )}
           {post.gallery && post.gallery.length > 0 && (
