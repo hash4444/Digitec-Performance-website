@@ -1,19 +1,19 @@
-import React from 'react';
 import { LocalizedLink as Link } from '@/components/LocalizedLink';
 import { brands } from '@/data/brands';
 import { useLocale } from '@/i18n/use-locale';
 import { arHome } from '@/i18n/ar-home';
 
-// Flat single-colour marks that ship as dark artwork: render them as clean white
-// silhouettes so they read on the dark canvas at the same weight as the rest.
-const DARK_MARKS = new Set(['Bentley', 'McLaren', 'Aston Martin', 'Rolls-Royce', 'Defender']);
+// These legacy marks are supplied as dark monochrome artwork. The normalized
+// colour logos stay untouched; only these otherwise-invisible marks are lifted.
+const LIGHTEN_ON_DARK = new Set(['Hummer', 'Lincoln', 'Maserati', 'Nissan']);
 
 const BrandLogo = ({ name, logo }: { name: string; logo: string }) => (
   <img
     src={logo}
     alt={`${name} logo`}
-    className={`max-h-full max-w-full object-contain ${DARK_MARKS.has(name) ? 'brightness-0 invert' : ''}`}
+    className={`brand-logo-image ${LIGHTEN_ON_DARK.has(name) ? 'brand-logo-monochrome' : ''}`}
     loading="lazy"
+    decoding="async"
     draggable={false}
   />
 );
@@ -23,7 +23,7 @@ const BrandTrack = ({ direction = 'left' }: { direction?: 'left' | 'right' }) =>
   const loopedBrands = [...brands, ...brands];
 
   return (
-    <div className="brand-marquee overflow-hidden py-1.5 sm:py-2" aria-label="Car brands serviced by Digi-Tec">
+    <div className="brand-marquee overflow-hidden py-2 sm:py-3" aria-label="Car brands serviced by Digi-Tec">
       <div className={`brand-marquee-track ${direction === 'right' ? 'brand-marquee-right' : ''}`}>
         {loopedBrands.map((brand, index) => (
           <Link
@@ -70,7 +70,7 @@ export const BrandsWeServe = () => {
           display: flex;
           width: max-content;
           align-items: center;
-          gap: clamp(1.75rem, 4vw, 4.5rem);
+          gap: clamp(1.1rem, 2.4vw, 2.25rem);
           animation: brand-marquee-scroll 88s linear infinite;
           will-change: transform;
         }
@@ -81,38 +81,47 @@ export const BrandsWeServe = () => {
           display: flex;
           align-items: center;
           justify-content: center;
-          width: clamp(5.5rem, 9vw, 7.5rem);
-          height: clamp(3rem, 4.5vw, 3.75rem);
+          width: 9.5rem;
+          height: 4.5rem;
           flex: none;
           padding: 0;
           box-sizing: border-box;
+          opacity: 0.9;
           transition: transform 220ms ease, opacity 220ms ease;
-          opacity: 0.92;
         }
         .brand-marquee-item:hover,
         .brand-marquee-item:focus-visible {
-          transform: translateY(-2px);
+          transform: scale(1.05);
           opacity: 1;
         }
         .brand-marquee-item:focus-visible { outline: 1px solid rgba(255,255,255,0.35); outline-offset: 6px; }
         .brand-marquee-logo {
-          position: relative;
           display: flex;
-          width: 100%;
-          height: 100%;
+          width: 9.5rem;
+          height: 4.5rem;
           align-items: center;
           justify-content: center;
         }
-        .brand-marquee-logo > img {
-          max-height: 100%;
-          max-width: 100%;
+        .brand-logo-image {
+          display: block;
+          width: auto;
+          height: auto;
+          max-width: 8.5rem;
+          max-height: 2.5rem;
           object-fit: contain;
+          filter: drop-shadow(0 5px 10px rgba(0,0,0,0.22));
+        }
+        .brand-logo-image.brand-logo-monochrome {
+          filter: brightness(0) invert(1) drop-shadow(0 5px 10px rgba(0,0,0,0.22));
         }
         @media (max-width: 640px) {
           .brand-marquee::before,
           .brand-marquee::after { width: 2rem; }
-          .brand-marquee-track { gap: 1.65rem; animation-duration: 72s; }
+          .brand-marquee-track { gap: 0.9rem; animation-duration: 72s; }
           .brand-marquee-right { animation-duration: 80s; }
+          .brand-marquee-item { width: 7.5rem; height: 3.65rem; }
+          .brand-marquee-logo { width: 7.5rem; height: 3.65rem; }
+          .brand-logo-image { max-width: 6.75rem; max-height: 2.125rem; }
         }
         @media (prefers-reduced-motion: reduce) {
           .brand-marquee { overflow-x: auto; }

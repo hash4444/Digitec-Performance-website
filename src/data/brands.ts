@@ -8,14 +8,11 @@ export interface Brand {
   faqs: { q: string; a: string }[];
   relatedServices: string[];
 }
-import bydLogo from '@/assets/byd-logo.png.asset.json';
-import roxLogo from '@/assets/rox-logo.png.asset.json';
-
 export const brands: Brand[] = [
   {
     name: 'Mercedes-Benz',
     slug: 'mercedes-benz-service-dubai',
-    logo: '/lovable-uploads/a6f453f2-f2c5-4140-8f2a-bfa3401611d7.png',
+    logo: '/brand-logos/showcase/mercedes-benz.png',
     specialization: 'Repair • Maintenance • Diagnostics • Performance',
     intro:
       'Digi-Tec Performance Centre is an independent Mercedes-Benz specialist workshop in Al Quoz, Dubai. We diagnose, maintain and repair C-Class, E-Class, S-Class, G-Class, GLE, GLS, AMG and other Mercedes models using XENTRY and Star Diagnostics, with a clear inspection and estimate before approved work begins.',
@@ -43,7 +40,7 @@ export const brands: Brand[] = [
   {
     name: 'Maybach',
     slug: 'maybach-service-dubai',
-    logo: 'https://www.carlogos.org/car-logos/maybach-logo.png',
+    logo: '/brand-logos/showcase/maybach.png',
     specialization: 'Repair • Maintenance • Diagnostics • Performance',
     intro:
       "Maybach demands the highest standard of care, and Digi-Tec delivers exactly that. From chauffeur-driven sedans to private ownership, we provide white-glove maintenance, advanced diagnostics, and bespoke detailing tailored to the marque's ultra-luxury heritage.",
@@ -64,7 +61,7 @@ export const brands: Brand[] = [
   {
     name: 'Porsche',
     slug: 'porsche-service-dubai',
-    logo: '/lovable-uploads/8e7e2545-680e-42ac-bd97-ba1f9c063649.png',
+    logo: '/brand-logos/showcase/porsche.png',
     specialization: 'Repair • Maintenance • Diagnostics • Performance',
     intro:
       "From 911 GT3 track cars to Cayenne daily drivers, Digi-Tec is Dubai's destination for Porsche service. Our specialists handle PDK transmissions, turbocharger systems, and chassis alignment with the precision Stuttgart engineering deserves.",
@@ -85,7 +82,7 @@ export const brands: Brand[] = [
   {
     name: 'Audi',
     slug: 'audi-service-dubai',
-    logo: '/lovable-uploads/a3e92dde-70a9-499b-a7b0-ae0df117baf9.png',
+    logo: '/brand-logos/showcase/audi.png',
     specialization: 'Repair • Maintenance • Diagnostics • Performance',
     intro:
       "Digi-Tec services the full Audi range, from A4 sedans to RS6 Avants and R8 supercars. Our team is equipped for Quattro drivetrain work, S Tronic gearbox service, and RS-grade performance upgrades using genuine VAG components.",
@@ -106,7 +103,7 @@ export const brands: Brand[] = [
   {
     name: 'BMW',
     slug: 'bmw-service-dubai',
-    logo: '/lovable-uploads/d66ea83e-7d6a-4c19-bf30-f27eca93ac8e.png',
+    logo: '/brand-logos/showcase/bmw.png',
     specialization: 'Repair • Maintenance • Diagnostics • Performance',
     intro:
       "BMW owners in Dubai trust Digi-Tec for everything from routine 5 Series maintenance to full M Series performance builds. Our workshop is equipped with the latest ISTA diagnostic tools, iDrive coding capability, and genuine BMW parts inventory.",
@@ -127,7 +124,7 @@ export const brands: Brand[] = [
   {
     name: 'Lamborghini',
     slug: 'lamborghini-service-dubai',
-    logo: '/lovable-uploads/8c4046ee-9977-417a-90a9-820452146832.png',
+    logo: '/brand-logos/showcase/lamborghini.png',
     specialization: 'Repair • Maintenance • Diagnostics • Performance',
     intro:
       "Whether it's a Huracán, Urus, or Aventador, Digi-Tec has the specialists, the lift capacity, and the patience to service Lamborghini's V10 and V12 platforms. We handle major services, carbon-ceramic brake work, and bespoke aesthetic enhancements.",
@@ -148,7 +145,7 @@ export const brands: Brand[] = [
   {
     name: 'Bentley',
     slug: 'bentley-service-dubai',
-    logo: '/lovable-uploads/b2cd5f78-8a43-4a9b-8a0a-19124642ca5a.png',
+    logo: '/brand-logos/showcase/bentley.png',
     specialization: 'Repair • Maintenance • Diagnostics • Performance',
     intro:
       "Bentley craftsmanship deserves equally meticulous service. Digi-Tec supports the entire Bentley range, including Continental GT, Flying Spur, and Bentayga, with W12 powertrain expertise, air suspension service, and interior preservation work.",
@@ -169,7 +166,7 @@ export const brands: Brand[] = [
   {
     name: 'McLaren',
     slug: 'mclaren-service-dubai',
-    logo: '/lovable-uploads/7f8d98f4-3581-451c-bfaf-262eb67cf14b.png',
+    logo: '/brand-logos/showcase/mclaren.png',
     specialization: 'Repair • Maintenance • Diagnostics • Performance',
     intro:
       "Digi-Tec is one of the few Dubai workshops equipped to service McLaren's MonoCell carbon chassis and twin-turbo V8 platform. From 570S to 720S to Artura, we handle scheduled service, fluid changes, and performance recalibration in a controlled environment.",
@@ -190,7 +187,7 @@ export const brands: Brand[] = [
   {
     name: 'Ferrari',
     slug: 'ferrari-service-dubai',
-    logo: '/lovable-uploads/11f29482-f2d3-4278-ae2a-397044a1ff95.png',
+    logo: '/brand-logos/showcase/ferrari.png',
     specialization: 'Repair • Maintenance • Diagnostics • Performance',
     intro:
       "Ferrari ownership is a relationship, and Digi-Tec treats every Prancing Horse with the reverence it deserves. We service the full range, including 488, F8, SF90, and Roma, with factory-grade diagnostics, F1 transmission expertise, and genuine OEM parts.",
@@ -211,7 +208,7 @@ export const brands: Brand[] = [
   {
     name: 'Bugatti',
     slug: 'bugatti-service-dubai',
-    logo: '/lovable-uploads/69bd2660-e800-47b4-bc4d-de6e6b65b984.png',
+    logo: '/brand-logos/showcase/bugatti.png',
     specialization: 'Repair • Maintenance • Diagnostics • Performance',
     intro:
       "Servicing a Bugatti requires a level of precision few workshops can match. Digi-Tec works on Veyron and Chiron platforms with appropriate tooling, climate-controlled bays, and complete confidentiality for every owner.",
@@ -232,7 +229,7 @@ export const brands: Brand[] = [
   {
     name: 'Land Rover',
     slug: 'land-rover-service-dubai',
-    logo: '/lovable-uploads/4bb58917-704a-4c5d-84b6-dc428a00c004.png',
+    logo: '/brand-logos/showcase/land-rover.png',
     specialization: 'Repair • Maintenance • Diagnostics • Performance',
     intro:
       "From Range Rover Autobiography to Defender and Discovery, Digi-Tec services the full Land Rover lineup. Our specialists handle air suspension, Terrain Response systems, and the supercharged V8 powertrains that define the marque.",
@@ -253,7 +250,7 @@ export const brands: Brand[] = [
   {
     name: 'Rolls-Royce',
     slug: 'rolls-royce-service-dubai',
-    logo: '/lovable-uploads/a4c040e8-740a-4fcb-b837-b86e15c25306.png',
+    logo: '/brand-logos/showcase/rolls-royce.png',
     specialization: 'Repair • Maintenance • Diagnostics • Performance',
     intro:
       "Rolls-Royce service at Digi-Tec is delivered with the discretion and precision the marque demands. We support Phantom, Ghost, Wraith, and Cullinan with V12 expertise, air suspension service, and meticulous interior preservation.",
@@ -274,7 +271,7 @@ export const brands: Brand[] = [
   {
     name: 'Aston Martin',
     slug: 'aston-martin-service-dubai',
-    logo: '/lovable-uploads/8d3bad14-09df-4ef1-86c6-13cfcba7042b.png',
+    logo: '/brand-logos/showcase/aston-martin.png',
     specialization: 'Repair • Maintenance • Diagnostics • Performance',
     intro:
       "Digi-Tec services the full Aston Martin range, from DB11 grand tourers to Vantage performance cars and DBX SUVs. Our workshop is equipped for V8 and V12 powertrain work, ZF transmission service, and genuine parts replacement.",
@@ -315,43 +312,43 @@ const additionalBrandEntries: Array<[string, string]> = [
 ];
 
 const additionalBrandLogos: Record<string, string> = {
-  // Colored transparent-PNG marque logos from carlogos.org, matching the
-  // clean centred look of the primary brands' /lovable-uploads/*.png badges.
-  Abarth: 'https://www.carlogos.org/car-logos/abarth-logo.png',
-  'Alfa Romeo': 'https://www.carlogos.org/car-logos/alfa-romeo-logo.png',
-  BYD: `https://digitecme.com${bydLogo.url}`,
-  Cadillac: 'https://www.carlogos.org/car-logos/cadillac-logo.png',
-  Chevrolet: 'https://www.carlogos.org/car-logos/chevrolet-logo.png',
-  Chrysler: 'https://www.carlogos.org/car-logos/chrysler-logo.png',
-  Corvette: 'https://www.carlogos.org/car-logos/corvette-logo.png',
-  Dodge: 'https://www.carlogos.org/car-logos/dodge-logo.png',
-  FIAT: 'https://www.carlogos.org/car-logos/fiat-logo.png',
-  Ford: 'https://www.carlogos.org/car-logos/ford-logo.png',
-  Genesis: 'https://www.carlogos.org/car-logos/genesis-logo.png',
-  GMC: 'https://www.carlogos.org/car-logos/gmc-logo.png',
-  Hummer: 'https://www.carlogos.org/car-logos/hummer-logo.png',
-  Infiniti: 'https://www.carlogos.org/car-logos/infiniti-logo.png',
-  Jaguar: 'https://www.carlogos.org/car-logos/jaguar-logo.png',
-  Jeep: 'https://www.carlogos.org/car-logos/jeep-logo.png',
-  Jetour: '/brand-logos/jetour-color.png',
-  Koenigsegg: 'https://www.carlogos.org/car-logos/koenigsegg-logo.png',
-  Lexus: 'https://www.carlogos.org/car-logos/lexus-logo.png',
-  Lincoln: 'https://www.carlogos.org/car-logos/lincoln-logo.png',
-  Lotus: 'https://www.carlogos.org/car-logos/lotus-logo.png',
-  Maserati: 'https://www.carlogos.org/car-logos/maserati-logo.png',
-  Mazda: 'https://www.carlogos.org/car-logos/mazda-logo.png',
-  MINI: 'https://www.carlogos.org/car-logos/mini-logo.png',
-  Mitsubishi: 'https://www.carlogos.org/car-logos/mitsubishi-logo.png',
-  Nissan: 'https://www.carlogos.org/car-logos/nissan-logo.png',
-  Pagani: 'https://www.carlogos.org/car-logos/pagani-logo.png',
-  'Range Rover': '/lovable-uploads/4bb58917-704a-4c5d-84b6-dc428a00c004.png',
-  Renault: 'https://www.carlogos.org/car-logos/renault-logo.png',
-  ROX: `https://digitecme.com${roxLogo.url}`,
-  Subaru: 'https://www.carlogos.org/car-logos/subaru-logo.png',
-  Tesla: 'https://www.carlogos.org/car-logos/tesla-logo.png',
-  Toyota: 'https://www.carlogos.org/car-logos/toyota-logo.png',
-  Volkswagen: 'https://www.carlogos.org/car-logos/volkswagen-logo.png',
-  Volvo: 'https://www.carlogos.org/car-logos/volvo-logo.png',
+  // Locally hosted, transparent-margin-normalized artwork. Every image uses
+  // the same canvas and a measured optical area for consistent presentation.
+  Abarth: '/brand-logos/showcase/abarth.png',
+  'Alfa Romeo': '/brand-logos/showcase/alfa-romeo.png',
+  BYD: '/brand-logos/showcase/byd.png',
+  Cadillac: '/brand-logos/showcase/cadillac.png',
+  Chevrolet: '/brand-logos/showcase/chevrolet.png',
+  Chrysler: '/brand-logos/showcase/chrysler.png',
+  Corvette: '/brand-logos/showcase/corvette.png',
+  Dodge: '/brand-logos/showcase/dodge.png',
+  FIAT: '/brand-logos/showcase/fiat.png',
+  Ford: '/brand-logos/showcase/ford.png',
+  Genesis: '/brand-logos/showcase/genesis.png',
+  GMC: '/brand-logos/showcase/gmc.png',
+  Hummer: '/brand-logos/showcase/hummer.png',
+  Infiniti: '/brand-logos/showcase/infiniti.png',
+  Jaguar: '/brand-logos/showcase/jaguar.png',
+  Jeep: '/brand-logos/showcase/jeep.png',
+  Jetour: '/brand-logos/showcase/jetour.png',
+  Koenigsegg: '/brand-logos/showcase/koenigsegg.png',
+  Lexus: '/brand-logos/showcase/lexus.png',
+  Lincoln: '/brand-logos/showcase/lincoln.png',
+  Lotus: '/brand-logos/showcase/lotus.png',
+  Maserati: '/brand-logos/showcase/maserati.png',
+  Mazda: '/brand-logos/showcase/mazda.png',
+  MINI: '/brand-logos/showcase/mini.png',
+  Mitsubishi: '/brand-logos/showcase/mitsubishi.png',
+  Nissan: '/brand-logos/showcase/nissan.png',
+  Pagani: '/brand-logos/showcase/pagani.png',
+  'Range Rover': '/brand-logos/showcase/land-rover.png',
+  Renault: '/brand-logos/showcase/renault.png',
+  ROX: '/brand-logos/showcase/rox.png',
+  Subaru: '/brand-logos/showcase/subaru.png',
+  Tesla: '/brand-logos/showcase/tesla.png',
+  Toyota: '/brand-logos/showcase/toyota.png',
+  Volkswagen: '/brand-logos/showcase/volkswagen.png',
+  Volvo: '/brand-logos/showcase/volvo.png',
 };
 
 const createAdditionalBrand = ([name, slug]: [string, string]): Brand => ({
@@ -381,7 +378,7 @@ brands.push(
   {
     name: 'Range Rover',
     slug: 'range-rover-service-dubai',
-    logo: '/lovable-uploads/4bb58917-704a-4c5d-84b6-dc428a00c004.png',
+    logo: '/brand-logos/showcase/land-rover.png',
     specialization: 'Service • Repair • Diagnostics • Air Suspension',
     intro: 'Digi-Tec is a specialist Range Rover workshop in Al Quoz, Dubai. We service and repair Range Rover, Range Rover Sport, Velar and Evoque models with JLR diagnostics, approved parts, air-suspension expertise and clear quotes before work begins.',
     whyChoose: [
@@ -401,7 +398,7 @@ brands.push(
   {
     name: 'Defender',
     slug: 'defender-service-dubai',
-    logo: '/lovable-uploads/4bb58917-704a-4c5d-84b6-dc428a00c004.png',
+    logo: '/brand-logos/showcase/land-rover.png',
     specialization: 'Service • Repair • Diagnostics • Off-Road Systems',
     intro: 'Digi-Tec provides specialist Land Rover Defender service and repair in Dubai for Defender 90 and Defender 110 models. Our Al Quoz workshop handles JLR diagnostics, scheduled maintenance, air suspension, cooling, brakes, driveline and electrical repairs.',
     whyChoose: [
