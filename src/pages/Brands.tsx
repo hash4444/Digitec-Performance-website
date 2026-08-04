@@ -72,7 +72,12 @@ const Brands = () => {
               >
                 <div className="flex h-12 w-12 shrink-0 items-center justify-center overflow-hidden rounded-full bg-white/90 p-1.5 sm:h-14 sm:w-14">
                   {brand.logo ? (
-                    <img src={brand.logo} alt={isArabic ? `شعار ${brand.name}` : `${brand.name} logo`} className="h-full w-full object-contain" loading="lazy" />
+                    <img
+                      src={brand.name === 'ROX' ? '/brand-logos/rox-card.png' : brand.logo}
+                      alt={isArabic ? `شعار ${brand.name}` : `${brand.name} logo`}
+                      className="h-full w-full object-contain"
+                      loading="lazy"
+                    />
                   ) : (
                     <span className="text-lg font-black text-burnt-orange">{brand.name.charAt(0)}</span>
                   )}
