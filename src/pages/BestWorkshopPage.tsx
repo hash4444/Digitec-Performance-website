@@ -16,6 +16,7 @@ import { getBestWorkshopPage, bestWorkshopPages } from '@/data/bestWorkshopPages
 import {
   buildBreadcrumb,
   buildFAQ,
+  buildService,
   buildWebPage,
   pageGraph,
   SITE_URL,
@@ -45,7 +46,22 @@ const BestWorkshopPage: React.FC = () => {
       primaryImage: page.brandLogo,
     });
     const faq = buildFAQ(url, page.faqs.map((f) => ({ question: f.q, answer: f.a })));
-    return pageGraph([webPage, breadcrumb, ...(faq ? [faq] : [])]);
+    const service = buildService({
+      url,
+      name: page.h1,
+      serviceType: `${page.brandKeyword ?? page.brand ?? 'Luxury Car'} Workshop`,
+      description: page.metaDescription,
+      image: page.brandLogo,
+      brand: page.brandKeyword ?? page.brand,
+      keywords: page.brandKeyword === 'Range Rover'
+        ? ['best Range Rover workshop Dubai', 'Range Rover specialist Dubai', 'Range Rover garage Al Quoz']
+        : undefined,
+      offers: page.brandKeyword === 'Range Rover'
+        ? ['Range Rover diagnostics', 'Range Rover air suspension repair', 'Range Rover service', 'Range Rover transmission repair']
+        : undefined,
+      areaServed: ['Dubai', 'Abu Dhabi', 'Sharjah', 'United Arab Emirates'],
+    });
+    return pageGraph([webPage, breadcrumb, service, ...(faq ? [faq] : [])]);
   }, [isArabic, page, url]);
 
   useSeo({
@@ -124,6 +140,23 @@ const BestWorkshopPage: React.FC = () => {
           <CtaAssurance className="mt-4" align="start" />
         </div>
       </section>
+
+      {page.brandKeyword === 'Range Rover' && (
+        <section className="py-12 sm:py-16 bg-gradient-to-br from-charcoal/40 to-black border-t border-white/5">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6">
+            <div className="card-premium rounded-2xl p-6 sm:p-8">
+              <span className="text-burnt-orange text-xs font-bold uppercase tracking-widest">Range Rover specialist hub</span>
+              <h2 className="text-2xl sm:text-4xl font-black mt-3">Need Range Rover Repair or Service in Dubai?</h2>
+              <p className="text-gray-300 text-sm sm:text-base leading-relaxed mt-4">
+                Explore Digi-Tec's main Range Rover workshop page for model coverage, common faults, JLR diagnostics and dedicated service pages for air suspension, transmission, AC, brakes, electrical systems and scheduled maintenance.
+              </p>
+              <Link to="/brands/range-rover-service-dubai" className="btn-primary mt-6">
+                Visit Our Range Rover Workshop Page <ArrowRight className="w-5 h-5" />
+              </Link>
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* Why Digi-Tec */}
       <section className="py-12 sm:py-16 bg-black border-t border-white/5">
