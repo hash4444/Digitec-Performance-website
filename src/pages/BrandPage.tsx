@@ -43,8 +43,8 @@ import g63BrabusFinishedFront from '@/assets/g63-brabus-g800-finished-front.jpg'
 const MERCEDES_META_TITLE = 'Mercedes Repair & Service Dubai | Digi-Tec Specialists';
 const MERCEDES_META_DESCRIPTION = 'Specialist Mercedes repair and service in Dubai for C-Class, E-Class, S-Class, G-Class, GLE, GLS and AMG. XENTRY diagnostics at our Al Quoz workshop in Dubai.';
 
-const RANGE_ROVER_META_TITLE = 'Range Rover Repair Dubai | JLR Specialists | Digi-Tec';
-const RANGE_ROVER_META_DESCRIPTION = 'Range Rover repair and service in Dubai for Range Rover, Sport, Velar and Evoque. JLR diagnostics, air suspension, cooling and ZF repair in Al Quoz.';
+const RANGE_ROVER_META_TITLE = 'Range Rover Workshop Dubai | Repair & Service';
+const RANGE_ROVER_META_DESCRIPTION = 'Range Rover workshop in Al Quoz, Dubai for Vogue, Sport, Velar and Evoque repair and service. JLR diagnostics, air suspension, cooling and ZF expertise.';
 const DEFENDER_META_TITLE = 'Defender Repair Dubai | Land Rover Specialists | Digi-Tec';
 const DEFENDER_META_DESCRIPTION = 'Land Rover Defender repair and service in Dubai for Defender 90, 110, 130, V8 and OCTA. JLR diagnostics, air suspension and 4x4 care in Al Quoz.';
 
@@ -587,6 +587,43 @@ const BrandPage = () => {
           </div>
         </div>
       </section>
+
+      {isRangeRoverServiceHub && !isArabic && (
+        <section className="py-12 sm:py-16 bg-gradient-to-br from-charcoal/40 to-black border-t border-white/5">
+          <div className="max-w-5xl mx-auto px-4 sm:px-6">
+            <div className="grid lg:grid-cols-[1.3fr_0.7fr] gap-6 items-stretch">
+              <div className="card-premium rounded-2xl p-6 sm:p-8">
+                <span className="inline-flex items-center gap-2 text-burnt-orange text-xs font-bold uppercase tracking-widest">
+                  <MapPin className="w-4 h-4" /> Al Quoz Industrial Area 3
+                </span>
+                <h2 className="text-2xl sm:text-4xl font-black mt-3">Range Rover Workshop Near You in Dubai</h2>
+                <p className="text-gray-300 text-sm sm:text-base leading-relaxed mt-4">
+                  Searching for a Range Rover workshop near you? Digi-Tec is located in Al Quoz Industrial Area 3, close to Sheikh Zayed Road. Our workshop serves Range Rover owners from Al Quoz, Downtown Dubai, Business Bay, Dubai Hills, Jumeirah, Umm Suqeim, Palm Jumeirah, Dubai Marina, Arabian Ranches and surrounding communities.
+                </p>
+                <p className="text-gray-400 text-sm leading-relaxed mt-4">
+                  Call before travelling so we can confirm the right inspection slot for your Range Rover, Sport, Velar or Evoque and prepare the appropriate JLR diagnostic equipment.
+                </p>
+                <div className="flex flex-col sm:flex-row gap-3 mt-6">
+                  <a href="https://maps.google.com/?q=Al+Quoz+Industrial+Area+3+Warehouse+No.11-15+Dubai" target="_blank" rel="noopener noreferrer" className="btn-primary">
+                    <MapPin className="w-5 h-5" /> Get Directions
+                  </a>
+                  <a href="tel:+97143402223" className="btn-secondary"><Phone className="w-5 h-5" /> Call the Workshop</a>
+                </div>
+              </div>
+              <div className="card-premium rounded-2xl p-6 sm:p-8 flex flex-col justify-center">
+                <span className="text-burnt-orange text-xs font-bold uppercase tracking-widest">Workshop selection guide</span>
+                <h2 className="text-xl sm:text-2xl font-black mt-3">Why Choose a Range Rover Specialist?</h2>
+                <p className="text-gray-400 text-sm leading-relaxed mt-3">
+                  See the diagnostic tools, technical capabilities and workshop criteria owners should compare before booking an independent Range Rover specialist in Dubai.
+                </p>
+                <Link to="/best-range-rover-workshop-dubai" className="inline-flex items-center gap-2 text-burnt-orange font-semibold mt-5 hover:text-off-white transition-colors">
+                  Read the best workshop guide <ArrowRight className="w-4 h-4" />
+                </Link>
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* Services */}
       <section className="py-12 sm:py-20 bg-black border-t border-white/5">

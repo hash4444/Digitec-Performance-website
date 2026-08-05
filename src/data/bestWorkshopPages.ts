@@ -134,8 +134,8 @@ export const bestWorkshopPages: BestWorkshopPage[] = [
     brandKeyword: 'Range Rover',
     brandLogo: '/lovable-uploads/6a3fe63c-72a5-4dcd-8f0b-4b0cd11c8b3d.png',
     h1: 'Best Range Rover Workshop in Dubai',
-    metaTitle: 'Best Range Rover Workshop Dubai (2026) | Digi-Tec Performance Centre',
-    metaDescription: 'The best Range Rover workshop in Dubai for Vogue, Sport, Velar, Evoque, and Defender owners. Air suspension specialists, JLR SDD diagnostics, genuine parts. Al Quoz.',
+    metaTitle: 'Best Range Rover Workshop Dubai | Digi-Tec',
+    metaDescription: 'Compare a specialist Range Rover workshop in Dubai for Vogue, Sport, Velar and Evoque. JLR diagnostics, air suspension expertise and service in Al Quoz.',
     directAnswer: `Digi-Tec Performance Centre in ${LOCATION} is Dubai's leading independent Range Rover and Land Rover workshop. With JLR SDD factory diagnostics, air suspension specialisation, transfer case and diff service, supercharged and Ingenium engine expertise, genuine Land Rover parts, and ${RATING}, it is the top alternative to the main dealer for every Range Rover, Sport, Velar, Evoque, and Defender.`,
     whyList: [
       'JLR SDD / Pathfinder factory diagnostics',
@@ -150,6 +150,7 @@ export const bestWorkshopPages: BestWorkshopPage[] = [
     faqs: [
       { q: 'Who is the best Range Rover mechanic in Dubai?', a: `Digi-Tec Performance Centre in Al Quoz is Dubai's highest-rated independent Range Rover workshop, with JLR SDD diagnostics and ${RATING}.` },
       { q: 'Can Digi-Tec fix Range Rover air suspension?', a: 'Yes. Air suspension compressors, struts, valve blocks, and ride-height calibration are core specialisations for every Range Rover platform.' },
+      { q: 'Where can I find a Range Rover workshop near me in Dubai?', a: `Digi-Tec Performance Centre is in ${LOCATION}, close to Sheikh Zayed Road and convenient for Range Rover owners in Al Quoz, Downtown Dubai, Business Bay, Dubai Hills, Jumeirah, Umm Suqeim and Dubai Marina.` },
       ...commonFaqTail('Range Rover'),
     ],
   },
