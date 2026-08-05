@@ -7,7 +7,7 @@ import { Footer } from '@/components/Footer';
 import { FinalCTA } from '@/components/FinalCTA';
 import { CtaAssurance } from '@/components/TrustBar';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
-import { getBrandWorkshopArticle, brandWorkshopArticles } from '@/data/brandWorkshopArticles';
+import { getBrandWorkshopArticle, brandWorkshopArticles, type BrandWorkshopArticle } from '@/data/brandWorkshopArticles';
 import { useSeo } from '@/hooks/use-seo';
 import { buildArticle, buildBreadcrumb, buildFAQ, buildService, buildWebPage, pageGraph, SITE_URL } from '@/lib/schema';
 import { useLocale } from '@/i18n/use-locale';
@@ -35,24 +35,33 @@ const mercedesServiceLinks = [
   { label: 'Mercedes Electrical Repair', arLabel: 'إصلاح كهرباء مرسيدس', href: '/services/mercedes-electrical-repair-dubai' },
 ];
 
-const BrandWorkshopArticlePage = () => {
-  const { isArabic, localizedPath } = useLocale();
-  const { slug } = useParams<{ slug: string }>();
-  const sourceArticle = slug ? getBrandWorkshopArticle(slug) : undefined;
-  const article = sourceArticle && isArabic ? localizeBrandWorkshopArticleToArabic(sourceArticle) : sourceArticle;
-
-  if (!article) return <Navigate to={localizedPath('/blog')} replace />;
-
+const BrandWorkshopArticleContent = ({ article, isArabic }: { article: BrandWorkshopArticle; isArabic: boolean }) => {
   const url = `${SITE_URL}${isArabic ? '/ar' : ''}/blog/${article.slug}`;
   const metaTitle = isArabic
-    ? `ورشة ${article.brand} في دبي | ديجي-تك`
-    : article.existingBestPage
+    ? article.brand === 'Ferrari'
+      ? 'صيانة فيراري في دبي | جدول الخدمة والتكلفة'
+      : `ورشة ${article.brand} في دبي | ديجي-تك`
+    : article.metaTitle ?? (article.existingBestPage
       ? `${article.brand} Maintenance Dubai | DIGI-TEC`
-      : `Best ${article.brand} Workshop Dubai | DIGI-TEC`;
+      : `Best ${article.brand} Workshop Dubai | DIGI-TEC`);
   const metaDescription = isArabic
-    ? `ورشة متخصصة في ${article.brand} بدبي للفحص والصيانة والإصلاح. احجز لدى ديجي-تك في القوز للحصول على تشخيص واضح وخدمة احترافية.`
-    : `${article.brand} workshop in Dubai for diagnostics, maintenance and repair. Visit DIGI-TEC in Al Quoz for clear inspections, practical guidance and booking support.`;
+    ? article.brand === 'Ferrari'
+      ? 'دليل صيانة فيراري في دبي: مواعيد الخدمة وعوامل التكلفة وعلامات التحذير والفحوص المهمة في حرارة الإمارات وفترات التخزين.'
+      : `ورشة متخصصة في ${article.brand} بدبي للفحص والصيانة والإصلاح. احجز لدى ديجي-تك في القوز للحصول على تشخيص واضح وخدمة احترافية.`
+    : article.metaDescription ?? `${article.brand} workshop in Dubai for diagnostics, maintenance and repair. Visit DIGI-TEC in Al Quoz for clear inspections, practical guidance and booking support.`;
+  const datePublished = article.datePublished ?? '2026-07-16';
+  const dateModified = article.dateModified ?? datePublished;
+  const ogImage = article.coverImage ? `${SITE_URL}${article.coverImage}` : undefined;
+  const keywords = isArabic
+    ? `ورشة ${article.brand} دبي، تصليح ${article.brand} دبي، صيانة ${article.brand} دبي، متخصص ${article.brand} دبي`
+    : article.brand === 'Ferrari'
+      ? 'Ferrari maintenance Dubai, Ferrari service Dubai, Ferrari repair Dubai, Ferrari servicing, Ferrari service center Dubai, Ferrari specialist Dubai, Ferrari engine repair Dubai, Ferrari brake repair Dubai'
+      : `${article.primaryKeyword}, ${article.brand} repair Dubai, ${article.brand} garage Dubai, ${article.brand} specialist Dubai, ${article.brand} maintenance Dubai`;
   const englishFaqs = [
+    ...(article.brand === 'Ferrari' ? [
+      { question: 'How often should a Ferrari be serviced in Dubai?', answer: 'Ferrari\'s official 7-Year Genuine Maintenance programme describes service options of every 20,000 km or once a year. Your model handbook, age, service history, storage pattern and driving conditions should still guide the final maintenance plan.' },
+      { question: 'How much does Ferrari maintenance cost in Dubai?', answer: 'There is no reliable single price for every Ferrari. Cost depends on the model and generation, scheduled service scope, diagnostic time, fluids, parts, tyre and brake condition, previous maintenance and whether storage or heat has caused additional work. Ask for an itemised inspection and estimate before approving repairs.' },
+    ] : []),
     { question: `How do I choose a ${article.brand} workshop in Dubai?`, answer: `Choose a workshop that starts with a documented inspection, explains the fault in plain language, gives a written estimate before work, and can show how the proposed repair relates to your ${article.brand}'s service history and current condition.` },
     { question: `Does Dubai heat change ${article.brand} maintenance?`, answer: `It can. High ambient temperature, stop-start traffic, dust and heavy air-conditioning demand can increase the importance of cooling, tyres, brakes, batteries and fluid-condition checks. The right interval depends on the model and how it is used.` },
     { question: `What should a ${article.brand} diagnostic include?`, answer: `A useful diagnostic is more than reading a code. It should combine a scan, live data where relevant, visual checks, a road test when appropriate, and a clear explanation of confirmed faults versus items that need monitoring.` },
@@ -65,6 +74,10 @@ const BrandWorkshopArticlePage = () => {
     { question: `What should I bring to my ${article.brand} appointment?`, answer: `Bring the key, service history if available, details of recent work, photos or videos of intermittent concerns, and the circumstances in which the issue occurs. This helps the inspection begin with useful context.` },
   ];
   const arabicFaqs = [
+    ...(article.brand === 'Ferrari' ? [
+      { question: 'كم مرة يجب صيانة فيراري في دبي؟', answer: 'يعتمد برنامج الصيانة الأصلية من فيراري على الصيانة كل 20,000 كيلومتر أو مرة سنوياً. ويبقى دليل الطراز وعمر السيارة وسجلها وطريقة تخزينها واستخدامها عوامل أساسية لتحديد الخطة المناسبة.' },
+      { question: 'كم تبلغ تكلفة صيانة فيراري في دبي؟', answer: 'لا يوجد سعر واحد يناسب جميع سيارات فيراري. تعتمد التكلفة على الطراز والجيل ونطاق الصيانة ووقت التشخيص والسوائل والقطع وحالة الإطارات والفرامل وسجل الأعمال السابقة. اطلب فحصاً وعرض سعر مفصلاً قبل اعتماد الإصلاح.' },
+    ] : []),
     { question: `كيف أختار ورشة ${article.brand} متخصصة في دبي؟`, answer: `اختر ورشة تبدأ بفحص موثق، وتشرح سبب العطل بوضوح، وتقدم عرضاً مكتوباً قبل العمل، وتربط التوصية بسجل صيانة ${article.brand} وحالتها الحالية.` },
     { question: `هل تؤثر حرارة دبي في صيانة ${article.brand}؟`, answer: 'نعم. الحرارة والازدحام والغبار والاستخدام المتواصل للمكيف تزيد أهمية فحص التبريد والإطارات والفرامل والبطارية والسوائل وفق حالة السيارة وطريقة استخدامها.' },
     { question: `ماذا يجب أن يشمل فحص ${article.brand}؟`, answer: 'يشمل الفحص المفيد قراءة الأنظمة الإلكترونية والبيانات الحية عند الحاجة، والفحص البصري، وتجربة الطريق عندما تكون آمنة، مع توضيح الأعطال المؤكدة وما يحتاج إلى متابعة.' },
@@ -91,23 +104,27 @@ const BrandWorkshopArticlePage = () => {
       description: metaDescription,
       type: 'ItemPage',
       breadcrumbId: `${url}#breadcrumb`,
-      datePublished: '2026-07-16',
-      dateModified: '2026-07-16',
+      primaryImage: article.coverImage,
+      datePublished,
+      dateModified,
     });
     const blogArticle = buildArticle({
       url,
       headline: article.title,
       description: metaDescription,
-      datePublished: '2026-07-16',
+      datePublished,
+      dateModified,
       author: isArabic ? 'فريق ورشة ديجي-تك' : 'DIGI-TEC Workshop',
+      image: article.coverImage,
       section: isArabic ? 'أدلة الورشة' : 'Workshop Guides',
-      keywords: `${article.primaryKeyword}, ${article.brand} repair Dubai, ${article.brand} service Dubai, ${article.brand} specialist Dubai`,
+      keywords,
     });
     const service = buildService({
       url,
       name: isArabic ? `خدمات ورشة ${article.brand} في دبي` : `${article.brand} workshop support in Dubai`,
       serviceType: isArabic ? `فحص وصيانة وإصلاح ${article.brand}` : `${article.brand} diagnostics, maintenance and repair`,
       description: metaDescription,
+      image: article.coverImage,
       brand: article.brand,
       offers: isArabic
         ? ['الصيانة الدورية', 'فحص وتشخيص السيارة', 'الإصلاح الميكانيكي', 'إصلاح الفرامل', 'إصلاح التعليق', 'إصلاح الكهرباء']
@@ -116,17 +133,16 @@ const BrandWorkshopArticlePage = () => {
     });
     const faq = buildFAQ(url, faqs);
     return pageGraph([webPage, breadcrumb, blogArticle, service, ...(faq ? [faq] : [])]);
-  }, [article, faqs, isArabic, metaDescription, url]);
+  }, [article, dateModified, datePublished, faqs, isArabic, keywords, metaDescription, url]);
 
   useSeo({
     title: metaTitle,
     description: metaDescription,
-    keywords: isArabic
-      ? `ورشة ${article.brand} دبي، تصليح ${article.brand} دبي، صيانة ${article.brand} دبي، متخصص ${article.brand} دبي`
-      : `${article.primaryKeyword}, ${article.brand} repair Dubai, ${article.brand} garage Dubai, ${article.brand} specialist Dubai, ${article.brand} maintenance Dubai`,
+    keywords,
     canonical: url,
     ogTitle: metaTitle,
     ogDescription: metaDescription,
+    ogImage,
     ogType: 'article',
     twitterCard: 'summary_large_image',
     twitterTitle: metaTitle,
@@ -159,8 +175,14 @@ const BrandWorkshopArticlePage = () => {
           <div className="relative mx-auto max-w-4xl px-5 py-16 sm:px-6 sm:py-24">
             <p className="mb-4 text-xs font-bold uppercase tracking-[0.24em] text-burnt-orange">{t('Dubai Workshop Guide', 'دليل ورش السيارات في دبي')}</p>
             <h1 className="max-w-3xl text-4xl font-black leading-tight sm:text-5xl lg:text-6xl">{article.title}</h1>
+            <p className="mt-4 flex items-center gap-2 text-sm text-gray-300">
+              <Calendar className="h-4 w-4 text-burnt-orange" />
+              {t('Updated', 'آخر تحديث')} {new Date(dateModified).toLocaleDateString(isArabic ? 'ar-AE' : 'en-GB', { day: 'numeric', month: 'long', year: 'numeric' })}
+              <span aria-hidden="true">·</span>
+              {t('12 min read', '12 دقيقة قراءة')}
+            </p>
             <p className="mt-6 max-w-3xl text-lg leading-relaxed text-gray-200">
-              {t(
+              {article.excerpt ?? t(
                 `Looking for a ${article.brand} workshop in Dubai? This owner guide explains what a proper inspection should cover, the common concerns worth discussing, and how to plan maintenance around UAE driving conditions.`,
                 `هل تبحث عن ورشة ${article.brand} في دبي؟ يوضح هذا الدليل ما يجب أن يشمله الفحص الصحيح، والأعطال التي تستحق المناقشة، وكيفية تخطيط الصيانة بما يناسب ظروف القيادة في الإمارات.`,
               )}
@@ -209,6 +231,34 @@ const BrandWorkshopArticlePage = () => {
             <p className="mt-4 leading-relaxed text-gray-300">{article.maintenanceNote}</p>
             <p className="mt-4 leading-relaxed text-gray-300">{t('A practical maintenance conversation covers engine oil and filters, brake condition, tyres, battery health, cooling performance, air-conditioning, fluids, leaks, service records and any stored warning codes. For performance, luxury and older vehicles, it also helps to discuss storage, battery conditioning and how often the car is driven. This gives the workshop a fuller picture than a mileage number on its own.', 'تشمل مناقشة الصيانة العملية زيت المحرك والفلاتر والفرامل والإطارات والبطارية والتبريد والمكيف والسوائل والتسريبات وسجل الصيانة ورموز الأعطال المخزنة. وفي السيارات الفاخرة أو عالية الأداء أو الأقدم، تفيد معرفة مدة التخزين وطريقة شحن البطارية وعدد مرات الاستخدام، لأن هذه الصورة أدق من رقم المسافة وحده.')}</p>
           </section>
+
+          {article.brand === 'Ferrari' && (
+            <>
+              <section className="mt-14">
+                <h2 className="text-2xl font-black sm:text-3xl">{t('Ferrari service schedule in Dubai: time matters as much as mileage', 'جدول صيانة فيراري في دبي: الوقت مهم بقدر المسافة')}</h2>
+                <p className="mt-4 leading-relaxed text-gray-300">
+                  {t('Ferrari states that its 7-Year Genuine Maintenance programme provides scheduled maintenance every 20,000 km or once a year, without a mileage restriction on the annual option. Treat that as a useful reference point, then check the handbook and service history for your exact model because limited editions, classic cars and vehicles outside the programme may have different requirements.', 'توضح فيراري أن برنامج الصيانة الأصلية لمدة سبع سنوات يعتمد الصيانة كل 20,000 كيلومتر أو مرة سنوياً. استخدم ذلك كمرجع أولي، ثم راجع دليل الطراز وسجل الصيانة لأن السيارات الكلاسيكية والإصدارات المحدودة والسيارات خارج البرنامج قد تختلف متطلباتها.')}{' '}
+                  <a href="https://www.ferrari.com/en-EN/auto/car-part-services-warranty-maintenance" target="_blank" rel="noopener noreferrer" className="font-semibold text-burnt-orange hover:underline">{t('Ferrari maintenance programme details', 'تفاصيل برنامج صيانة فيراري')}</a>.
+                </p>
+                <p className="mt-4 leading-relaxed text-gray-300">{t('Low mileage does not remove the need for annual attention. Heat cycles, long storage, battery condition, tyre age, fluid ageing and seals can all matter before the odometer reaches the next distance-based interval. Cars used on track or driven hard should be assessed around that use rather than relying on the calendar alone.', 'قلة المسافة لا تلغي الحاجة إلى المتابعة السنوية. تؤثر الحرارة والتخزين الطويل وحالة البطارية وعمر الإطارات وتقادم السوائل والأختام حتى قبل بلوغ موعد المسافة التالي. أما سيارات الحلبة أو الاستخدام القوي فتحتاج إلى فحص يناسب طريقة استخدامها.')}</p>
+              </section>
+
+              <section className="mt-14">
+                <h2 className="text-2xl font-black sm:text-3xl">{t('What affects Ferrari maintenance cost in Dubai?', 'ما العوامل التي تحدد تكلفة صيانة فيراري في دبي؟')}</h2>
+                <p className="mt-4 leading-relaxed text-gray-300">{t('A responsible workshop cannot quote one Ferrari maintenance price without knowing the car. The cost changes with the model, generation, mileage, service history, scheduled scope and the evidence found during inspection. A routine annual visit is different from resolving an F1 gearbox concern, a cooling fault or deferred maintenance on a stored car.', 'لا يمكن تقديم سعر واحد مسؤول لصيانة جميع سيارات فيراري من دون معرفة السيارة. تتغير التكلفة حسب الطراز والجيل والمسافة والسجل ونطاق الصيانة ونتيجة الفحص. تختلف الزيارة السنوية المعتادة تماماً عن إصلاح ناقل حركة F1 أو عطل تبريد أو صيانة مؤجلة لسيارة مخزنة.')}</p>
+                <ul className="mt-5 space-y-3 text-gray-300">
+                  {[
+                    t('The exact model, engine, transmission and model year', 'الطراز والمحرك وناقل الحركة وسنة الصنع'),
+                    t('Scheduled fluids, filters, plugs and other required consumables', 'السوائل والفلاتر وشمعات الاحتراق والمواد المطلوبة'),
+                    t('Diagnostic time for warning lights, drivability or electronic faults', 'وقت التشخيص لرسائل التحذير أو مشكلات القيادة والإلكترونيات'),
+                    t('Tyre age, brake condition, suspension wear and battery health', 'عمر الإطارات وحالة الفرامل والتعليق والبطارية'),
+                    t('OEM parts availability and any work discovered after inspection', 'توفر القطع الأصلية وأي أعمال تظهر بعد الفحص'),
+                  ].map((factor) => <li key={factor} className="flex gap-3"><CheckCircle2 className="mt-1 h-4 w-4 shrink-0 text-burnt-orange" /><span>{factor}</span></li>)}
+                </ul>
+                <p className="mt-5 leading-relaxed text-gray-300">{t('Ask for an itemised estimate that separates diagnostics, labour, parts and optional preventive work. For a direct service overview or to arrange an inspection, visit our ', 'اطلب عرضاً مفصلاً يفصل التشخيص والعمالة والقطع والأعمال الوقائية الاختيارية. للاطلاع على الخدمات أو حجز فحص، زر صفحة ')}<Link to="/brands/ferrari-service-dubai" className="font-semibold text-burnt-orange hover:underline">{t('Ferrari service Dubai page', 'خدمة فيراري في دبي')}</Link>.</p>
+              </section>
+            </>
+          )}
 
           <section className="mt-14">
             <h2 className="text-2xl font-black sm:text-3xl">{t('OEM parts, alternatives and performance work', 'القطع الأصلية والبدائل وتطوير الأداء')}</h2>
@@ -260,7 +310,7 @@ const BrandWorkshopArticlePage = () => {
             <div className="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-4">
               {relatedServiceLinks.map((service) => <Link key={service.href} to={service.href} className="card-premium rounded-xl p-4 text-sm font-bold transition-colors hover:text-burnt-orange">{isArabic ? service.arLabel : service.label}<ArrowRight className={`mt-2 h-4 w-4 text-burnt-orange ${isArabic ? 'rotate-180' : ''}`} /></Link>)}
             </div>
-            <p className="mt-6 text-sm leading-relaxed text-gray-400">{t(`Useful image plan for this article: a ${article.brand} arriving at the workshop, a technician using diagnostic equipment, a close-up of the relevant repair area, and a wide shot of the workshop. Suggested hero alt text: “${article.imageAlt}”.`, `خطة الصور المقترحة للمقال: سيارة ${article.brand} عند وصولها إلى الورشة، وفني يستخدم جهاز التشخيص، وصورة قريبة لمنطقة الإصلاح، وصورة واسعة للورشة. النص البديل المقترح للصورة الرئيسية: «${article.imageAlt}».`)}</p>
+            {!article.coverImage && <p className="mt-6 text-sm leading-relaxed text-gray-400">{t(`Useful image plan for this article: a ${article.brand} arriving at the workshop, a technician using diagnostic equipment, a close-up of the relevant repair area, and a wide shot of the workshop. Suggested hero alt text: “${article.imageAlt}”.`, `خطة الصور المقترحة للمقال: سيارة ${article.brand} عند وصولها إلى الورشة، وفني يستخدم جهاز التشخيص، وصورة قريبة لمنطقة الإصلاح، وصورة واسعة للورشة. النص البديل المقترح للصورة الرئيسية: «${article.imageAlt}».`)}</p>}
           </section>
 
           <section className="mt-14">
@@ -281,6 +331,17 @@ const BrandWorkshopArticlePage = () => {
       <Footer />
     </div>
   );
+};
+
+const BrandWorkshopArticlePage = () => {
+  const { isArabic, localizedPath } = useLocale();
+  const { slug } = useParams<{ slug: string }>();
+  const sourceArticle = slug ? getBrandWorkshopArticle(slug) : undefined;
+
+  if (!sourceArticle) return <Navigate to={localizedPath('/blog')} replace />;
+
+  const article = isArabic ? localizeBrandWorkshopArticleToArabic(sourceArticle) : sourceArticle;
+  return <BrandWorkshopArticleContent article={article} isArabic={isArabic} />;
 };
 
 export default BrandWorkshopArticlePage;

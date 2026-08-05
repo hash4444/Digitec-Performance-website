@@ -5,6 +5,10 @@ export type BrandWorkshopArticle = {
   slug: string;
   title: string;
   primaryKeyword: string;
+  metaTitle?: string;
+  metaDescription?: string;
+  datePublished?: string;
+  dateModified?: string;
   existingBestPage?: string;
   brandHub?: string;
   models: string;
@@ -51,7 +55,7 @@ const profiles: Omit<BrandWorkshopArticle, 'slug' | 'title' | 'primaryKeyword' |
   },
   {
     brand: 'Ferrari', models: 'California, Portofino, Roma, 488, F8, SF90, Purosangue and classic models', diagnosticFocus: 'a careful pre-work scan, fluid and temperature review, and road-test-led assessment for performance systems',
-    commonProblems: ['F1 or dual-clutch transmission service and calibration needs', 'brake, tyre and suspension wear that affect confidence', 'cooling, battery and electronic-system faults after heat or storage'], repairFocus: ['routine service and multi-point inspection', 'brake, suspension, cooling and transmission-related repairs', 'pre-purchase, pre-trip and post-storage checks'], maintenanceNote: 'Ferrari maintenance is as much about usage and storage as mileage: battery support, tyre age, fluid condition and heat management deserve planned attention.', performanceNote: 'Track or performance preparation should begin with safety, braking, cooling, tyre and drivetrain condition—not a power upgrade alone.', imageAlt: 'Ferrari receiving a specialist inspection in Dubai', coverGradient: 'from-red-900 via-charcoal to-black',
+    commonProblems: ['F1 or dual-clutch transmission service and calibration needs', 'brake, tyre and suspension wear that affect confidence', 'cooling, battery and electronic-system faults after heat or storage'], repairFocus: ['routine service and multi-point inspection', 'brake, suspension, cooling and transmission-related repairs', 'pre-purchase, pre-trip and post-storage checks'], maintenanceNote: 'Ferrari maintenance is as much about usage and storage as mileage: battery support, tyre age, fluid condition and heat management deserve planned attention.', performanceNote: 'Track or performance preparation should begin with safety, braking, cooling, tyre and drivetrain condition—not a power upgrade alone.', excerpt: 'A practical Ferrari maintenance guide for Dubai owners, covering service timing, cost factors, warning signs and the checks that matter in UAE conditions.', metaTitle: 'Ferrari Maintenance Dubai | Service Schedule & Costs', metaDescription: 'Plan Ferrari maintenance in Dubai: service intervals, cost factors, warning signs and essential checks for UAE heat, storage and performance driving.', datePublished: '2026-07-16', dateModified: '2026-08-05', imageAlt: 'Two red Ferrari 348 sports cars inside a specialist workshop', coverGradient: 'from-red-900 via-charcoal to-black', coverImage: '/images/ferrari-maintenance-dubai.jpg',
   },
   {
     brand: 'Lamborghini', models: 'Huracán, Urus, Revuelto, Aventador and Gallardo', diagnosticFocus: 'supercar-specific inspection of drivetrain, cooling, brakes, suspension and electronic systems',
@@ -142,9 +146,11 @@ export const brandWorkshopArticles: BrandWorkshopArticle[] = profiles.map((profi
   return {
     ...profile,
     slug: `${brandSlug}-${suffix}`,
-    title: existingBestPage
-      ? `${profile.brand} Maintenance Guide for Dubai Owners`
-      : `Best ${profile.brand} Workshop in Dubai: Owner Guide`,
+    title: profile.brand === 'Ferrari'
+      ? 'Ferrari Maintenance in Dubai: Service Schedule, Costs & What to Expect'
+      : existingBestPage
+        ? `${profile.brand} Maintenance Guide for Dubai Owners`
+        : `Best ${profile.brand} Workshop in Dubai: Owner Guide`,
     primaryKeyword: existingBestPage
       ? `${profile.brand} maintenance Dubai`
       : `Best ${profile.brand} Workshop Dubai`,
@@ -158,18 +164,17 @@ export const getBrandWorkshopArticle = (slug: string) => brandWorkshopArticles.f
 export const brandWorkshopArticleSummaries = brandWorkshopArticles.map((article) => ({
   slug: article.slug,
   title: article.title,
-  excerpt: article.existingBestPage
+  excerpt: article.excerpt ?? (article.existingBestPage
     ? `A practical ${article.brand} maintenance and repair guide for Dubai owners, covering common concerns, diagnostic steps and workshop preparation.`
-    : `How to choose a ${article.brand} workshop in Dubai, what to ask, common issues to discuss, and how to book a clear inspection plan.`
-  ,
+    : `How to choose a ${article.brand} workshop in Dubai, what to ask, common issues to discuss, and how to book a clear inspection plan.`),
   category: 'Workshop Guides',
   author: 'DIGI-TEC Workshop',
-  date: '2026-07-16',
+  date: article.dateModified ?? article.datePublished ?? '2026-07-16',
   readTime: '12 min read',
   coverGradient: article.coverGradient,
   coverImage: article.coverImage,
-  metaTitle: article.existingBestPage
+  metaTitle: article.metaTitle ?? (article.existingBestPage
     ? `${article.brand} Maintenance Dubai | DIGI-TEC`
-    : `Best ${article.brand} Workshop Dubai | DIGI-TEC`,
-  metaDescription: `${article.brand} workshop in Dubai for diagnostics, maintenance and repair. Visit DIGI-TEC in Al Quoz for clear inspections, practical guidance and booking support.`,
+    : `Best ${article.brand} Workshop Dubai | DIGI-TEC`),
+  metaDescription: article.metaDescription ?? `${article.brand} workshop in Dubai for diagnostics, maintenance and repair. Visit DIGI-TEC in Al Quoz for clear inspections, practical guidance and booking support.`,
 }));

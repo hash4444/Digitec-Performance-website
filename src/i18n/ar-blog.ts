@@ -15,6 +15,13 @@ type ArabicPostMeta = Pick<BlogPost, 'title' | 'excerpt' | 'metaTitle' | 'metaDe
 };
 
 const arabicPostMeta: Record<string, ArabicPostMeta> = {
+  'ferrari-maintenance-guide-dubai': {
+    title: 'صيانة فيراري في دبي: جدول الخدمة والتكلفة وما يجب توقعه',
+    excerpt: 'دليل عملي لمالكي فيراري في دبي عن مواعيد الصيانة وعوامل التكلفة والفحوص المهمة في ظروف الإمارات.',
+    metaTitle: 'صيانة فيراري في دبي | جدول الخدمة والتكلفة',
+    metaDescription: 'دليل صيانة فيراري في دبي: مواعيد الخدمة وعوامل التكلفة وعلامات التحذير والفحوص المهمة في حرارة الإمارات وفترات التخزين.',
+    topic: 'صيانة فيراري في دبي',
+  },
   'car-ac-repair-dubai': {
     title: 'إصلاح تكييف السيارة في دبي: أسباب ضعف التبريد والحل الصحيح',
     excerpt: 'دليل عملي لأسباب ضعف تكييف السيارة في حرارة دبي، وأكثر الأعطال شيوعاً، وما الذي يجب أن يتضمنه التشخيص الصحيح.',
@@ -245,8 +252,12 @@ export const localizePostSummaryToArabic = <T extends { slug: string; title: str
 
 export const localizeBrandWorkshopArticleToArabic = (article: BrandWorkshopArticle): BrandWorkshopArticle => ({
   ...article,
-  title: `دليل ورشة ${article.brand} المتخصصة في دبي`,
-  excerpt: `دليل عملي لمالكي ${article.brand} في دبي عن الصيانة والتشخيص والإصلاح واختيار الورشة المناسبة.`,
+  title: article.brand === 'Ferrari'
+    ? 'صيانة فيراري في دبي: جدول الخدمة والتكلفة وما يجب توقعه'
+    : `دليل ورشة ${article.brand} المتخصصة في دبي`,
+  excerpt: article.brand === 'Ferrari'
+    ? 'دليل عملي لمالكي فيراري في دبي عن مواعيد الصيانة وعوامل التكلفة والفحوص المهمة في ظروف الإمارات.'
+    : `دليل عملي لمالكي ${article.brand} في دبي عن الصيانة والتشخيص والإصلاح واختيار الورشة المناسبة.`,
   commonProblems: article.commonProblems.map((_, index) => [
     'أنظمة التبريد والتكييف تحت درجات الحرارة المرتفعة',
     'البطارية والإلكترونيات ورسائل التحذير',
@@ -261,5 +272,7 @@ export const localizeBrandWorkshopArticleToArabic = (article: BrandWorkshopArtic
   diagnosticFocus: `قراءة الأنظمة الإلكترونية الخاصة بـ${article.brand} مع فحص البيانات الحية والدوائر والمكونات الميكانيكية المرتبطة بالعَرَض`,
   maintenanceNote: `يعتمد جدول صيانة ${article.brand} في دبي على الطراز والعمر والمسافة وطريقة الاستخدام. نراجع الزيت والفلاتر والتبريد والفرامل والإطارات والبطارية والمكيف وسجل الأعطال لبناء خطة مناسبة للحالة الفعلية.`,
   performanceNote: `إذا كان تطوير أداء ${article.brand} مناسباً، يبدأ العمل بفحص أساسي للمحرك والتبريد والفرامل والإطارات وناقل الحركة، ثم تُقترح ترقية متوازنة تحافظ على الاعتمادية والاستخدام المطلوب.`,
-  imageAlt: `سيارة ${article.brand} داخل ورشة ديجي-تك المتخصصة في القوز دبي`,
+  imageAlt: article.brand === 'Ferrari'
+    ? 'سيارتا فيراري 348 حمراوان داخل ورشة سيارات متخصصة'
+    : `سيارة ${article.brand} داخل ورشة ديجي-تك المتخصصة في القوز دبي`,
 });
