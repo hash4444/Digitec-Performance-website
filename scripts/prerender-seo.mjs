@@ -104,6 +104,26 @@ const arabicServiceNameFromSlug = (slug) => {
 };
 
 const blogPostMetadata = {
+  'ferrari-maintenance-guide-dubai': {
+    en: {
+      title: 'Ferrari Maintenance Dubai | Service Schedule & Costs',
+      heading: 'Ferrari Maintenance in Dubai: Service Schedule, Costs & What to Expect',
+      description: 'Plan Ferrari maintenance in Dubai: service intervals, cost factors, warning signs and essential checks for UAE heat, storage and performance driving.',
+      summary: 'A practical Ferrari maintenance guide for Dubai owners, covering service timing, cost factors, warning signs and the checks that matter in UAE conditions.',
+      image: '/images/ferrari-maintenance-dubai.jpg',
+      datePublished: '2026-07-16',
+      dateModified: '2026-08-05',
+    },
+    ar: {
+      title: 'صيانة فيراري في دبي | جدول الخدمة والتكلفة',
+      heading: 'صيانة فيراري في دبي: جدول الخدمة والتكلفة وما يجب توقعه',
+      description: 'دليل صيانة فيراري في دبي: مواعيد الخدمة وعوامل التكلفة وعلامات التحذير والفحوص المهمة في حرارة الإمارات وفترات التخزين.',
+      summary: 'دليل عملي لمالكي فيراري في دبي عن مواعيد الصيانة وعوامل التكلفة والفحوص المهمة في ظروف الإمارات.',
+      image: '/images/ferrari-maintenance-dubai.jpg',
+      datePublished: '2026-07-16',
+      dateModified: '2026-08-05',
+    },
+  },
   'car-ac-repair-dubai': {
     en: {
       title: 'Why Your Car AC Stops Cooling in Dubai | Workshop Diagnosis Guide',
@@ -420,6 +440,7 @@ const replaceTag = (html, pattern, replacement) => html.replace(pattern, replace
 
 const createRouteHtml = (template, route) => {
   const url = `${siteUrl}${route.path}`;
+  const routeImage = route.image ? `${siteUrl}${route.image}` : null;
   const isArabic = route.path === '/ar' || route.path.startsWith('/ar/');
   const englishPath = isArabic ? (route.path.replace(/^\/ar(?=\/|$)/, '') || '/') : route.path;
   const englishUrl = `${siteUrl}${englishPath}`;
@@ -452,6 +473,9 @@ const createRouteHtml = (template, route) => {
     description: route.description,
     inLanguage: isArabic ? 'ar-AE' : 'en-AE',
     isPartOf: { '@id': `${siteUrl}/#website` },
+    ...(routeImage ? { primaryImageOfPage: { '@type': 'ImageObject', url: routeImage, contentUrl: routeImage } } : {}),
+    ...(route.datePublished ? { datePublished: route.datePublished } : {}),
+    ...(route.dateModified ? { dateModified: route.dateModified } : {}),
   };
   const subjectEntity = isArticle
     ? {
@@ -465,6 +489,9 @@ const createRouteHtml = (template, route) => {
         author: { '@type': 'Organization', name: isArabic ? 'فريق ورشة ديجي-تك' : 'DIGI-TEC Workshop', url: siteUrl },
         publisher: { '@type': 'Organization', name: 'Digi-Tec Performance Center', url: siteUrl },
         isAccessibleForFree: true,
+        ...(routeImage ? { image: { '@type': 'ImageObject', url: routeImage, contentUrl: routeImage } } : {}),
+        ...(route.datePublished ? { datePublished: route.datePublished } : {}),
+        ...(route.dateModified ? { dateModified: route.dateModified } : {}),
       }
     : isBlogCollection
       ? {
@@ -511,6 +538,10 @@ const createRouteHtml = (template, route) => {
   html = replaceTag(html, /<meta name="twitter:title"[^>]*>/i, `<meta name="twitter:title" content="${escapeHtml(route.title)}">`);
   html = replaceTag(html, /<meta property="og:description"[^>]*>/i, `<meta property="og:description" content="${escapeHtml(route.description)}">`);
   html = replaceTag(html, /<meta name="twitter:description"[^>]*>/i, `<meta name="twitter:description" content="${escapeHtml(route.description)}">`);
+  if (routeImage) {
+    html = replaceTag(html, /<meta property="og:image"[^>]*>/i, `<meta property="og:image" content="${routeImage}">`);
+    html = replaceTag(html, /<meta name="twitter:image"[^>]*>/i, `<meta name="twitter:image" content="${routeImage}">`);
+  }
   html = html.replace('</head>', `${alternateLinks}\n<script type="application/ld+json" data-prerendered-seo="true">${schema}</script>\n</head>`);
   html = html.replace(
     '<div id="root"></div>',
