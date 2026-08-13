@@ -2,6 +2,7 @@ import React from 'react';
 import { LocalizedLink as Link } from '@/components/LocalizedLink';
 import { useSeo } from '@/hooks/use-seo';
 import Header from '@/components/Header';
+import { AnswerBlock } from '@/components/AnswerBlock';
 import { Footer } from '@/components/Footer';
 import { TrustBar } from '@/components/TrustBar';
 import { FinalCTA } from '@/components/FinalCTA';
@@ -84,6 +85,21 @@ const Services = () => {
           </p>
         </div>
       </section>
+      <AnswerBlock
+        question={isArabic ? 'ما الخدمات التي يقدمها ديجي-تك في دبي؟' : 'What car services does Digi-Tec offer in Dubai?'}
+        answer={isArabic
+          ? 'يقدم ديجي-تك في القوز، دبي الصيانة الدورية وتغيير الزيت، والتشخيص الإلكتروني، وإصلاح المحرك وناقل الحركة، والفرامل والتعليق والتوجيه، وإصلاح التكييف والكهرباء، والبرمجة والتكويد، وأعمال الهيكل والطلاء، وحماية الطلاء والسيراميك، وتطوير الأداء. يشمل ذلك مرسيدس وبي إم دبليو وأودي وبورشه والسيارات الفاخرة والكهربائية.'
+          : 'Digi-Tec in Al Quoz, Dubai covers scheduled servicing and oil changes, electronic diagnostics, engine and transmission repair, brakes, suspension and steering, air conditioning and electrical repair, module coding and programming, body and paint work, paint protection film and ceramic coating, and performance tuning. Brands include Mercedes-Benz, BMW, Audi, Porsche, Ferrari, Lamborghini, Range Rover and luxury electric vehicles.'}
+        facts={isArabic ? [
+          'صفحات خدمة مخصصة لكل علامة وكل نوع إصلاح',
+          'قطع أصلية أو من مورد المصنع أو بديل مناسب باعتماد المالك',
+          'فحص أولاً ثم عرض سعر مكتوب قبل الموافقة',
+        ] : [
+          'Dedicated service pages for each brand and each repair type',
+          'Genuine, OE supplier or a suitable customer approved alternative parts',
+          'Inspection first, then a written scope before you approve the work',
+        ]}
+      />
 
       <TrustBar className="mb-8 sm:mb-16" />
 

@@ -16,6 +16,8 @@ import g63BrabusFinishedRear from '@/assets/g63-brabus-g800-finished-rear.jpg';
 import gtBlackSeriesBuild from '@/assets/mercedes-amg-gt-black-series-1300hp-build.jpg';
 import gtBlackSeriesBuildVideo from '@/assets/mercedes-amg-gt-black-series-1300hp-build.mov';
 
+import { aiGuidePosts } from './aiGuidePosts';
+
 export interface BlogPost {
   slug: string;
   title: string;
@@ -1365,6 +1367,7 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  ...aiGuidePosts,
 ];
 
 export const getBlogPostBySlug = (slug: string) =>

@@ -1,6 +1,7 @@
 import React from 'react';
 import { useSeo } from '@/hooks/use-seo';
 import Header from '@/components/Header';
+import { AnswerBlock } from '@/components/AnswerBlock';
 import { FAQ, allFaqs } from '@/components/FAQ';
 import { buildBreadcrumb, buildFAQ, buildWebPage, pageGraph } from '@/lib/schema';
 import { FinalCTA } from '@/components/FinalCTA';
@@ -71,6 +72,21 @@ const FAQPage = () => {
           </motion.p>
         </div>
       </section>
+      <AnswerBlock
+        question={isArabic ? 'كيف أحجز موعداً في ديجي-تك؟' : 'How do I book a service at Digi-Tec?'}
+        answer={isArabic
+          ? 'للحجز، اتصل أو أرسل رسالة واتساب إلى 971443402223+ مع ذكر طراز السيارة وسنة الصنع والأعراض التي تلاحظها، أو زر الورشة في القوز الصناعية 3، مستودع 11-15، دبي. يبدأ العمل بالفحص، ثم يُشرح النطاق وعرض السعر قبل الموافقة على الإصلاح.'
+          : 'To book, call or WhatsApp +971 4 340 2223 with your model, year and the symptoms you have noticed, or visit the workshop at Al Quoz Industrial Area 3, Warehouse No. 11-15, Dubai. Work starts with inspection, then the scope and estimate are explained before you approve any repair.'}
+        facts={isArabic ? [
+          'الهاتف والواتساب: 971443402223+',
+          'العنوان: القوز الصناعية 3، مستودع 11-15، دبي',
+          'البريد الإلكتروني: info@digitecme.com',
+        ] : [
+          'Phone and WhatsApp: +971 4 340 2223',
+          'Address: Al Quoz Industrial Area 3, Warehouse No. 11-15, Dubai',
+          'Email: info@digitecme.com',
+        ]}
+      />
 
       {/* Reused FAQ component */}
       <FAQ />
