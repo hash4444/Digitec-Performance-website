@@ -74,8 +74,8 @@ const Index = () => {
   );
 
   useSeo({
-    title: isArabic ? 'ديجي-تك دبي | مركز صيانة وأداء السيارات الفاخرة' : 'Digi-Tec Performance Center Dubai | Mercedes, Ferrari & Porsche Specialists',
-    description: isArabic ? 'ديجي-تك مركز متخصص في صيانة وإصلاح وبرمجة السيارات الفاخرة في دبي. خبرة في مرسيدس وبي إم دبليو وأودي وفيراري وبورشه من ورشتنا في القوز.' : "Digi-Tec Performance Center, Dubai's trusted luxury and German car workshop. Mercedes, BMW, Audi, Ferrari, Porsche repair, service & tuning. 50,000+ cars served. Call +971 4 340 2223.",
+    title: isArabic ? 'ديجي-تك دبي | مركز صيانة وأداء السيارات الفاخرة' : 'Digi-Tec Performance Center | Car Workshop Dubai',
+    description: isArabic ? 'ديجي-تك مركز متخصص في صيانة وإصلاح وبرمجة السيارات الفاخرة في دبي. خبرة في مرسيدس وبي إم دبليو وأودي وفيراري وبورشه من ورشتنا في القوز.' : "Dubai's trusted luxury and German car workshop. Mercedes, BMW, Audi, Ferrari and Porsche repair, service and tuning. Call +971 4 340 2223.",
     canonical: url,
     jsonLd: homeGraph,
   });
