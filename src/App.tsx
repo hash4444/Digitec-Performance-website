@@ -56,6 +56,7 @@ const mercedesBrandServiceRedirects: Array<[string, string]> = [
 ];
 
 const mercedesLegacyServicePages: Array<[string, string]> = [
+  ["mercedes-oil-change-dubai", "oil-change"],
   ["mercedes-mechanical-repair-dubai", "mechanical-repair"],
   ["mercedes-transmission-repair-dubai", "transmission-repair"],
   ["mercedes-suspension-repair-dubai", "suspension-repair"],
