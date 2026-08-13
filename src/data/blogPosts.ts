@@ -1369,6 +1369,7 @@ export const blogPosts: BlogPost[] = [
     ],
   },
   ...aiGuidePosts,
+  ...aiGuidePostsExtra,
 ];
 
 export const getBlogPostBySlug = (slug: string) =>
