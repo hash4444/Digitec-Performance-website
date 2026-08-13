@@ -45,7 +45,7 @@ const AboutUs = () => {
 
   useSeo({
     title: isArabic ? 'عن مركز ديجي-تك | ورشة سيارات في دبي' : 'About Digitec Performance Center | Car Workshop in Dubai',
-    description: isArabic ? 'تعرف على مركز ديجي-تك في القوز، دبي: متخصصون في صيانة وتشخيص وإصلاح السيارات الفاخرة والألمانية والكهربائية وتطوير الأداء.' : 'Digitec Performance Center is a trusted car workshop in Dubai specialising in Mercedes, BMW, Audi, luxury vehicles, Chinese EVs, and GAD Motors performance tuning.',
+    description: isArabic ? 'تعرف على مركز ديجي-تك في القوز، دبي: متخصصون في صيانة وتشخيص وإصلاح السيارات الفاخرة والألمانية والكهربائية وتطوير الأداء.' : 'Digitec Performance Center is a trusted Dubai workshop for Mercedes, BMW, Audi, luxury cars, Chinese EVs and GAD Motors tuning.',
     canonical: url,
     keywords: isArabic ? 'ورشة سيارات دبي، إصلاح مرسيدس دبي، متخصص سيارات ألمانية، GAD Motors، إصلاح سيارات كهربائية دبي، صيانة سيارات فاخرة' : 'car workshop Dubai, Mercedes repair Dubai, German car specialist, GAD Motors tuning, EV repair Dubai, luxury car service',
     jsonLd: aboutGraph,
