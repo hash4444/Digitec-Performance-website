@@ -2,6 +2,7 @@ import React from 'react';
 import { useSeo } from '@/hooks/use-seo';
 import { buildBreadcrumb, buildWebPage, businessRef, pageGraph } from '@/lib/schema';
 import Header from '@/components/Header';
+import { AnswerBlock } from '@/components/AnswerBlock';
 import { WhyChooseUs } from '@/components/WhyChooseUs';
 import { FinalCTA } from '@/components/FinalCTA';
 import { Footer } from '@/components/Footer';
@@ -85,6 +86,21 @@ const AboutUs = () => {
           </motion.p>
         </div>
       </section>
+      <AnswerBlock
+        question={isArabic ? 'لماذا يختار الملاك ديجي-تك في دبي؟' : 'Why do owners choose Digi-Tec in Dubai?'}
+        answer={isArabic
+          ? 'يختار الملاك ديجي-تك لأن الورشة مستقلة ومتخصصة في السيارات الأوروبية والفاخرة منذ 2002، وتستخدم أنظمة تشخيص الوكالة، وتوضح نتائج الفحص ونطاق العمل قبل بدء الإصلاح، وتوثق القطع والسوائل في الفاتورة للحفاظ على سجل الصيانة. الموقع: القوز الصناعية 3، مستودع 11-15، دبي.'
+          : 'Owners choose Digi-Tec because it has specialised in European and luxury cars as an independent workshop since 2002, uses manufacturer diagnostic platforms, explains inspection findings and the proposed scope before repair work begins, and documents parts and fluids on the invoice so the service history stays intact. The workshop is in Al Quoz Industrial Area 3, Warehouse No. 11-15, Dubai.'}
+        facts={isArabic ? [
+          'خبرة متخصصة منذ عام 2002 في دبي',
+          'فنيون متخصصون لكل علامة وأنظمة تشخيص أصلية',
+          'فواتير تفصيلية تحفظ سجل الصيانة لإعادة البيع',
+        ] : [
+          'Specialist experience in Dubai since 2002',
+          'Brand focused technicians and manufacturer diagnostic systems',
+          'Detailed invoices that preserve service history for resale',
+        ]}
+      />
 
       <TrustBar />
 

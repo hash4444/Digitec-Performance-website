@@ -1,6 +1,7 @@
 import React from 'react';
 import { LocalizedLink as Link } from '@/components/LocalizedLink';
 import Header from '@/components/Header';
+import { AnswerBlock } from '@/components/AnswerBlock';
 import { Footer } from '@/components/Footer';
 import { useSeo } from '@/hooks/use-seo';
 import { brands } from '@/data/brands';
@@ -59,6 +60,21 @@ const Brands = () => {
           </p>
         </div>
       </section>
+      <AnswerBlock
+        question={isArabic ? 'ما العلامات التي يخدمها ديجي-تك في دبي؟' : 'Which car brands does Digi-Tec service in Dubai?'}
+        answer={isArabic
+          ? 'يخدم ديجي-تك في القوز، دبي سيارات مرسيدس-بنز ومايباخ وAMG، وبي إم دبليو، وأودي، وبورشه، وفيراري، ولامبورغيني، وماكلارين، وبنتلي، ورولز-رويس، وبوغاتي، وأستون مارتن، ورينج روفر ولاند روفر وديفندر، إضافة إلى سيارات فاخرة وكهربائية أخرى. لكل علامة صفحات خدمة مخصصة مع أنظمة التشخيص المناسبة لها.'
+          : 'Digi-Tec in Al Quoz, Dubai services Mercedes-Benz, Maybach and AMG, BMW, Audi, Porsche, Ferrari, Lamborghini, McLaren, Bentley, Rolls-Royce, Bugatti, Aston Martin, Range Rover, Land Rover and Defender, alongside other luxury and electric vehicles. Each brand has dedicated service pages and the matching manufacturer diagnostic platform.'}
+        facts={isArabic ? [
+          'صفحة مخصصة لكل علامة مع نطاق الخدمة وطريقة الحجز',
+          'أنظمة تشخيص خاصة بكل علامة بدل أدوات عامة',
+          'دبي، أبوظبي والشارقة ضمن نطاق الخدمة',
+        ] : [
+          'A dedicated page per brand covering service scope and how to book',
+          'Brand specific diagnostic platforms rather than generic scan tools',
+          'Owners served across Dubai, Abu Dhabi and Sharjah',
+        ]}
+      />
 
       <section className="pb-16 sm:pb-24">
         <div className="mx-auto max-w-6xl px-4 sm:px-6">

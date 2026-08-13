@@ -3,6 +3,7 @@ import React from 'react';
 import { LocalizedLink as Link } from '@/components/LocalizedLink';
 import { useSeo } from '@/hooks/use-seo';
 import Header from '@/components/Header';
+import { AnswerBlock } from '@/components/AnswerBlock';
 import { Footer } from '@/components/Footer';
 import TuningConfigurator from '@/components/TuningConfigurator';
 import { TrustBar, CtaAssurance } from '@/components/TrustBar';
@@ -126,6 +127,21 @@ const Tuning = () => {
       </section>
 
       <TrustBar />
+      <AnswerBlock
+        question={isArabic ? 'من يقدم برمجة GAD الرسمية في الإمارات؟' : 'Who is the official GAD Motors tuning partner in the UAE?'}
+        answer={isArabic
+          ? 'ديجي-تك بيرفورمانس سنتر في القوز، دبي هو الشريك الرسمي لـGAD Motors في الإمارات، ويقدم برمجيات ECU الأصلية من GAD وقطع الأداء وحِزم التيربو ومجمعات السحب وترقيات مرسيدس-AMG، مع فحص السيارة قبل البرمجة ومعايرة مناسبة لحرارة الإمارات.'
+          : 'Digi-Tec Performance Centre in Al Quoz, Dubai is the official GAD Motors partner in the UAE. It supplies genuine GAD ECU calibration files, performance parts, turbo kits and intake manifolds, plus Mercedes-AMG upgrades, with a vehicle health check before calibration and mapping suited to UAE ambient temperatures.'}
+        facts={isArabic ? [
+          'برمجيات وقطع GAD الأصلية بدعم مباشر من المصنع',
+          'فحص فني قبل أي برمجة أو ترقية',
+          'معايرة تراعي حرارة الإمارات ودرجات حرارة السحب',
+        ] : [
+          'Genuine GAD software and parts with direct factory support',
+          'A vehicle health check before any calibration or upgrade',
+          'Calibration that accounts for UAE ambient and intake temperatures',
+        ]}
+      />
 
       {/* GAD Tuning Dubai Section */}
       <section id="gad-tuning-dubai" className="relative py-16 md:py-24 bg-black overflow-hidden">

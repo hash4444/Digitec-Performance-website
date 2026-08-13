@@ -4,6 +4,7 @@ import { useSeo } from '@/hooks/use-seo';
 import { buildFAQ, buildWebPage, pageGraph, businessRef, websiteRef } from '@/lib/schema';
 import { allFaqs } from '@/components/FAQ';
 import Header from '@/components/Header';
+import { AnswerBlock } from '@/components/AnswerBlock';
 import { Hero } from '@/components/Hero';
 import { WhatWeDo } from '@/components/WhatWeDo';
 import { BrandsWeServe } from '@/components/BrandsWeServe';
@@ -87,6 +88,23 @@ const Index = () => {
         <Hero />
       </div>
       <TrustBar />
+      <AnswerBlock
+        question={isArabic ? 'ما هو مركز ديجي-تك بيرفورمانس؟' : 'What is Digi-Tec Performance Centre?'}
+        answer={isArabic
+          ? 'ديجي-تك بيرفورمانس سنتر ورشة مستقلة متخصصة في السيارات الأوروبية والفاخرة، تأسست عام 2002 وتقع في القوز الصناعية 3، مستودع 11-15، دبي. تقدم الورشة التشخيص بأنظمة الوكالة، والصيانة الدورية، والإصلاحات الميكانيكية والكهربائية، والبرمجة، وتطوير الأداء لسيارات مرسيدس، بي إم دبليو، أودي، بورشه، فيراري، لامبورغيني ورينج روفر. الهاتف والواتساب: 971443402223+.'
+          : 'Digi-Tec Performance Centre is an independent workshop for European and luxury cars, established in 2002 and based in Al Quoz Industrial Area 3, Warehouse No. 11-15, Dubai. It provides manufacturer level diagnostics, scheduled servicing, mechanical and electrical repair, module programming and performance tuning for Mercedes-Benz, BMW, Audi, Porsche, Ferrari, Lamborghini and Range Rover. Call or WhatsApp +971 4 340 2223.'}
+        facts={isArabic ? [
+          'ورشة مستقلة في دبي منذ 2002',
+          'أنظمة تشخيص الوكالة: XENTRY وISTA+ وPIWIS 3 وODIS وأنظمة JLR',
+          'شرح نتائج الفحص ونطاق العمل قبل بدء الإصلاح',
+          'شريك GAD Motors الرسمي في الإمارات لتطوير الأداء',
+        ] : [
+          'Independent Dubai workshop, established 2002',
+          'Manufacturer diagnostic platforms: XENTRY, ISTA+, PIWIS 3, ODIS and JLR systems',
+          'Inspection findings and written scope explained before repair work begins',
+          'Official GAD Motors partner in the UAE for performance tuning',
+        ]}
+      />
       <WhatWeDo />
       <BrandsWeServe />
       <div id="services">
