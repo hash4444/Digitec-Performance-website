@@ -194,7 +194,7 @@ const VRX = () => {
                 alt={isArabic ? 'مقاعد VRX المخصصة من GAD Motors' : 'VRX Custom Seats by GAD Motors'}
                 className="w-full h-auto rounded-2xl ring-1 ring-white/10 shadow-[0_24px_48px_-28px_rgba(0,0,0,0.8)] mb-4"
               />
-              <h3 className="text-lg font-bold text-off-white mb-2">{isArabic ? arVrx.seatsTitle : 'Custom VRX sports seats from GAD Motors'}</h3>
+              <h2 className="text-lg font-bold text-off-white mb-2">{isArabic ? arVrx.seatsTitle : 'Custom VRX sports seats from GAD Motors'}</h2>
               <p className="text-sm text-white/50 leading-relaxed">
                 {isArabic ? arVrx.seatsDescription : "GAD Motors' VRX seats combine comfort, support, and outstanding design, perfectly tailored to the character of your vehicle."}
               </p>
@@ -210,7 +210,7 @@ const VRX = () => {
                 alt={isArabic ? 'الإضاءة المحيطية في VRX من GAD Motors' : 'VRX Ambient Lighting by GAD Motors'}
                 className="w-full h-auto rounded-2xl ring-1 ring-white/10 shadow-[0_24px_48px_-28px_rgba(0,0,0,0.8)] mb-4"
               />
-              <h3 className="text-lg font-bold text-off-white mb-2">{isArabic ? arVrx.ambientTitle : 'Backlighting technology (Ambilight)'}</h3>
+              <h2 className="text-lg font-bold text-off-white mb-2">{isArabic ? arVrx.ambientTitle : 'Backlighting technology (Ambilight)'}</h2>
               <p className="text-sm text-white/50 leading-relaxed">
                 {isArabic ? arVrx.ambientDescription : 'LED lighting for the air vents, extensive color palette'}
               </p>
