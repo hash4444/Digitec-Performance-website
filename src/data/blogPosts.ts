@@ -17,6 +17,7 @@ import gtBlackSeriesBuild from '@/assets/mercedes-amg-gt-black-series-1300hp-bui
 import gtBlackSeriesBuildVideo from '@/assets/mercedes-amg-gt-black-series-1300hp-build.mov';
 
 import { aiGuidePosts } from './aiGuidePosts';
+import { aiGuidePostsExtra } from './aiGuidePostsExtra';
 
 export interface BlogPost {
   slug: string;
@@ -1368,6 +1369,7 @@ export const blogPosts: BlogPost[] = [
     ],
   },
   ...aiGuidePosts,
+  ...aiGuidePostsExtra,
 ];
 
 export const getBlogPostBySlug = (slug: string) =>
