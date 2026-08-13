@@ -36,6 +36,11 @@ const getArticleFaqs = (content: ContentBlock[]) => {
 };
 
 const relatedServiceByPost: Record<string, { href: string; label: string; description: string }> = {
+  'best-oil-change-dubai-mercedes': {
+    href: '/brands/mercedes-benz-service-dubai',
+    label: 'Mercedes service in Dubai',
+    description: 'Arrange a Mercedes oil service and vehicle health check with our specialists in Al Quoz.',
+  },
   'car-ac-repair-dubai': {
     href: '/services/car-ac-repair-dubai',
     label: 'Car AC repair in Dubai',
