@@ -378,6 +378,7 @@ const createGeneratedRoute = (pathname) => {
   }
 
   if (section === 'brands') {
+    if (!brandSlug) return null;
     const brand = brandNameFromSlug(brandSlug);
     const service = serviceSlug ? serviceNameFromSlug(serviceSlug) : null;
     const arabicService = serviceSlug ? arabicServiceNameFromSlug(serviceSlug) : null;
@@ -408,6 +409,7 @@ const createGeneratedRoute = (pathname) => {
   }
 
   if (section === 'services') {
+    if (!brandSlug) return null;
     const service = serviceNameFromSlug(brandSlug.replace(/-dubai$/, ''));
     const arabicService = arabicServiceNameFromSlug(brandSlug);
     const EnglishHeading = `${service} in Dubai`;
