@@ -56,7 +56,12 @@ const titleCase = (value) => value
 const brandNameFromSlug = (slug) => titleCase(slug.replace(/-service-dubai$/, ''))
   .replace('Mercedes Benz', 'Mercedes-Benz')
   .replace('Rolls Royce', 'Rolls-Royce')
-  .replace('Land Rover', 'Land Rover');
+  .replace('Land Rover', 'Land Rover')
+  .replace(/^Bmw$/, 'BMW')
+  .replace(/^Mclaren$/, 'McLaren')
+  .replace(/^Mini$/, 'MINI')
+  .replace(/^Gmc$/, 'GMC')
+  .replace(/^Byd$/, 'BYD');
 
 const serviceNameFromSlug = (slug) => titleCase(slug)
   .replace('Ac ', 'AC ')
