@@ -1084,9 +1084,17 @@ const createRouteHtml = (template, route) => {
     html = replaceTag(html, /<meta name="twitter:image"[^>]*>/i, `<meta name="twitter:image" content="${routeImage}">`);
   }
   html = html.replace('</head>', `${alternateLinks}\n<script type="application/ld+json" data-prerendered-seo="true">${schema}</script>\n</head>`);
+  if (isLowValuePath(route.path)) {
+    html = html.replace('</head>', '<meta name="robots" content="noindex,follow">\n</head>');
+  }
+  const breadcrumbNav = `<nav aria-label="${isArabic ? 'مسار التنقل' : 'Breadcrumb'}"><ul><li>${anchor(isArabic ? '/ar' : '/', isArabic ? 'الرئيسية' : 'Home')}</li>${isArticle ? `<li>${anchor(isArabic ? '/ar/blog' : '/blog', isArabic ? 'المقالات' : 'Owner guides')}</li>` : ''}<li>${escapeHtml(route.heading)}</li></ul></nav>`;
+  const topicSections = buildTopicSections(route);
+  const navBlock = linkList(isArabic ? 'أقسام الموقع' : 'Site sections', siteNavLinks(isArabic));
+  const relatedBlock = linkList(isArabic ? 'صفحات ذات صلة' : 'Related pages', relatedLinksFor(route));
+  const brandBlock = linkList(isArabic ? 'العلامات التي نخدمها' : 'Brands we service', brandHubLinks(isArabic));
   html = html.replace(
     '<div id="root"></div>',
-    `<div id="root"><main data-prerendered-seo="true"><h1>${escapeHtml(route.heading)}</h1><p>${escapeHtml(route.summary)}</p><h2>${escapeHtml(route.sectionHeading)}</h2><ul>${serviceList}</ul><p>${isArabic ? 'احجز فحصاً لدى مركز ديجي-تك في القوز، دبي. اتصل على +971 4 340 2223 أو تواصل معنا عبر واتساب.' : 'Book an inspection with Digi-Tec Performance Centre in Al Quoz, Dubai. Call +971 4 340 2223 or contact us on WhatsApp.'}</p></main></div>`,
+    `<div id="root">${breadcrumbNav}<main data-prerendered-seo="true"><h1>${escapeHtml(route.heading)}</h1><p>${escapeHtml(route.summary)}</p><h2>${escapeHtml(route.sectionHeading)}</h2><ul>${serviceList}</ul>${topicSections}<p>${isArabic ? 'احجز فحصاً لدى مركز ديجي-تك في القوز، دبي. اتصل على +971 4 340 2223 أو تواصل معنا عبر واتساب.' : 'Book an inspection with Digi-Tec Performance Centre in Al Quoz, Dubai. Call +971 4 340 2223 or contact us on WhatsApp.'}</p></main>${relatedBlock}${brandBlock}${navBlock}</div>`,
   );
   return html;
 };
@@ -1096,12 +1104,20 @@ const template = await readFile(path.join(distDirectory, 'index.html'), 'utf8');
 const sitemap = await readFile(path.resolve('public/sitemap.xml'), 'utf8');
 const sitemapPaths = [...sitemap.matchAll(/<loc>(https:\/\/digitecme\.com[^<]+)<\/loc>/g)]
   .map(([, url]) => new URL(url).pathname)
-  .filter((pathname) =>
-    /^(?:\/ar)?\/(?:brands|services)\//.test(pathname)
-    || /^(?:\/ar)?\/blog(?:\/|$)/.test(pathname));
+  .filter((pathname) => pathname !== '/');
 const routeByPath = new Map(priorityRoutes.map((route) => [route.path, route]));
 
 for (const pathname of sitemapPaths) {
+  if (!routeByPath.has(pathname)) {
+    const route = createGeneratedRoute(pathname) ?? createStaticRoute(pathname);
+    if (route) routeByPath.set(pathname, route);
+  }
+}
+
+// Pruned brand x service combinations are no longer in the sitemap, but they
+// still need crawlable HTML with their own title, description and canonical.
+const prunedPaths = [...sitemap.matchAll(/<!-- pruned: ([^ ]+) -->/g)].map(([, path]) => path);
+for (const pathname of prunedPaths) {
   if (!routeByPath.has(pathname)) {
     const route = createGeneratedRoute(pathname);
     if (route) routeByPath.set(pathname, route);
