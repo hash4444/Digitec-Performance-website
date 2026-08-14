@@ -1092,7 +1092,7 @@ const createRouteHtml = (template, route) => {
   }
   html = html.replace('</head>', `${alternateLinks}\n<script type="application/ld+json" data-prerendered-seo="true">${schema}</script>\n</head>`);
   if (isLowValuePath(route.path)) {
-    html = html.replace('</head>', '<meta name="robots" content="noindex,follow">\n</head>');
+    html = replaceTag(html, /<meta name="robots"[^>]*>/i, '<meta name="robots" content="noindex, follow">');
   }
   const breadcrumbNav = `<nav aria-label="${isArabic ? 'مسار التنقل' : 'Breadcrumb'}"><ul><li>${anchor(isArabic ? '/ar' : '/', isArabic ? 'الرئيسية' : 'Home')}</li>${isArticle ? `<li>${anchor(isArabic ? '/ar/blog' : '/blog', isArabic ? 'المقالات' : 'Owner guides')}</li>` : ''}<li>${escapeHtml(route.heading)}</li></ul></nav>`;
   const topicSections = buildTopicSections(route);
