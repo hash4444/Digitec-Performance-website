@@ -88,23 +88,6 @@ const Index = () => {
         <Hero />
       </div>
       <TrustBar />
-      <AnswerBlock
-        question={isArabic ? 'ما هو مركز ديجي-تك بيرفورمانس؟' : 'What is Digi-Tec Performance Centre?'}
-        answer={isArabic
-          ? 'ديجي-تك بيرفورمانس سنتر ورشة مستقلة متخصصة في السيارات الأوروبية والفاخرة، تأسست عام 2002 وتقع في القوز الصناعية 3، مستودع 11-15، دبي. تقدم الورشة التشخيص بأنظمة الوكالة، والصيانة الدورية، والإصلاحات الميكانيكية والكهربائية، والبرمجة، وتطوير الأداء لسيارات مرسيدس، بي إم دبليو، أودي، بورشه، فيراري، لامبورغيني ورينج روفر. الهاتف والواتساب: 971443402223+.'
-          : 'Digi-Tec Performance Centre is an independent workshop for European and luxury cars, established in 2002 and based in Al Quoz Industrial Area 3, Warehouse No. 11-15, Dubai. It provides manufacturer level diagnostics, scheduled servicing, mechanical and electrical repair, module programming and performance tuning for Mercedes-Benz, BMW, Audi, Porsche, Ferrari, Lamborghini and Range Rover. Call or WhatsApp +971 4 340 2223.'}
-        facts={isArabic ? [
-          'ورشة مستقلة في دبي منذ 2002',
-          'أنظمة تشخيص الوكالة: XENTRY وISTA+ وPIWIS 3 وODIS وأنظمة JLR',
-          'شرح نتائج الفحص ونطاق العمل قبل بدء الإصلاح',
-          'شريك GAD Motors الرسمي في الإمارات لتطوير الأداء',
-        ] : [
-          'Independent Dubai workshop, established 2002',
-          'Manufacturer diagnostic platforms: XENTRY, ISTA+, PIWIS 3, ODIS and JLR systems',
-          'Inspection findings and written scope explained before repair work begins',
-          'Official GAD Motors partner in the UAE for performance tuning',
-        ]}
-      />
       <WhatWeDo />
       <BrandsWeServe />
       <div id="services">
@@ -114,6 +97,40 @@ const Index = () => {
       <div id="about">
         <WhyChooseUs />
       </div>
+
+      <AnswerBlock
+        question={isArabic ? 'ما هو مركز ديجي-تك بيرفورمانس؟' : 'What is Digi-Tec Performance Centre?'}
+        answer={isArabic
+          ? 'مركز ديجي-تك بيرفورمانس ورشة مستقلة متخصصة في سيارات مرسيدس-بنز والسيارات الأوروبية الفاخرة في دبي، تأسست عام 2002 وتقع في القوز الصناعية 3. مع أكثر من عقدين من الخبرة، يقدم ديجي-تك خدمات سيارات شاملة مع تخصص قوي في سيارات مرسيدس-بنز، يغطي كل شيء من الصيانة الدورية والتشخيص بمستوى الوكالة إلى الإصلاحات الميكانيكية والكهربائية المعقدة، برمجة الوحدات، أعمال الهيكل، ترقيات السيارة وحلول الأداء. ورشتنا مجهزة بأنظمة تشخيص احترافية من الشركة المصنعة، بما في ذلك XENTRY لمرسيدس-بنز وISTA+ لبي إم دبليو وPIWIS 3 لبورشه وODIS لمجموعة VAG وأنظمة JLR، مما يتيح لفنيينا تشخيص وإصلاح السيارات الفاخرة الحديثة بدقة. وعلى الرغم من أن مرسيدس-بنز هي جوهر خبرتنا، تخدم ديجي-تك وتصلح أيضاً مجموعة واسعة من السيارات الأوروبية والفاخرة، بما فيها بي إم دبليو وأودي وبورشه ورينج روفر ولامبورغيني وفيراري ورولز-رويس وبنتلي ومازيراتي. كشريك رسمي لـ GAD Motors في الإمارات، توفر ديجي-تك أيضاً ضبط الأداء الاحترافي وتحسين السيارات للطرازات المدعومة. مركز ديجي-تك بيرفورمانس، القوز الصناعية 3، مستودعات 11 إلى 15، دبي، الإمارات. الاتصال أو واتساب: +971 4 340 2223.'
+          : 'Digi-Tec Performance Centre is an independent Mercedes-Benz and European luxury car specialist in Dubai, established in 2002 and located in Al Quoz Industrial Area 3. With over two decades of experience, Digi-Tec provides comprehensive automotive services with a strong specialization in Mercedes-Benz vehicles, covering everything from routine maintenance and manufacturer-level diagnostics to complex mechanical and electrical repairs, module programming, bodywork, vehicle upgrades and performance solutions. Our workshop is equipped with professional manufacturer diagnostic systems, including Mercedes-Benz XENTRY, BMW ISTA+, Porsche PIWIS 3, VAG ODIS and JLR diagnostic platforms, allowing our technicians to accurately diagnose and repair modern luxury vehicles. While Mercedes-Benz is at the heart of our expertise, Digi-Tec also services and repairs a wide range of European and luxury vehicles, including BMW, Audi, Porsche, Range Rover, Lamborghini, Ferrari, Rolls-Royce, Bentley and Maserati. As the official GAD Motors partner in the UAE, Digi-Tec also provides professional performance tuning and vehicle optimization for supported models. Digi-Tec Performance Centre, Al Quoz Industrial Area 3, Warehouses 11 to 15, Dubai, UAE. Call or WhatsApp: +971 4 340 2223.'}
+        facts={isArabic ? [
+          'متخصصو مرسيدس-بنز في دبي بخبرة تشمل طرازات AMG ومايباخ ومرسيدس-بنز القياسية',
+          'تأسست في دبي منذ عام 2002',
+          'صيانة وخدمات وتشخيص وإصلاح كامل تحت سقف واحد',
+          'تشخيص وإصلاح الأعطال الميكانيكية والكهربائية',
+          'خدمات المحرك وناقل الحركة والتعليق والتبريد والفرامل',
+          'تشخيص وبرمجة وترميز وحدة التحكم الإلكترونية والوحدات الإلكترية',
+          'إصلاح الهيكل ودهان السيارة وترميم السيارات',
+          'ترقيات الأداء والضبط للسيارات المدعومة',
+          'معدات تشخيص بمستوى الوكالة تشمل XENTRY وISTA+ وPIWIS 3 وODIS وأنظمة JLR',
+          'شرح نتائج الفحص والعمل المقترح قبل بدء الإصلاح',
+          'شريك أداء GAD Motors الرسمي في الإمارات',
+          'خبرة مع السيارات الأوروبية والفاخرة والرياضية وعالية الأداء',
+        ] : [
+          'Mercedes-Benz specialists in Dubai with experience across AMG, Maybach and standard Mercedes-Benz models',
+          'Established in Dubai since 2002',
+          'Complete servicing, maintenance, diagnostics and repair under one roof',
+          'Mechanical and electrical fault diagnosis and repair',
+          'Engine, transmission, suspension, cooling and braking system services',
+          'ECU and electronic module diagnostics, coding and programming',
+          'Body repair, paintwork and vehicle restoration',
+          'Performance upgrades and tuning for supported vehicles',
+          'Manufacturer-level diagnostic equipment including XENTRY, ISTA+, PIWIS 3, ODIS and JLR systems',
+          'Inspection findings and recommended work explained before repairs begin',
+          'Official GAD Motors UAE performance partner',
+          'Experience with European, luxury, exotic and high-performance vehicles',
+        ]}
+      />
 
       <div id="faq">
         <FAQ />
