@@ -4,7 +4,7 @@ import { useLocale } from '@/i18n/use-locale';
 import { arHome } from '@/i18n/ar-home';
 
 /**
- * Slim authority strip — social proof + credibility signals.
+ * Slim workshop-facts strip.
  * Designed to sit directly under a hero or above a CTA on dark sections.
  */
 export const TrustBar = ({ className = '' }: { className?: string }) => {
@@ -12,18 +12,18 @@ export const TrustBar = ({ className = '' }: { className?: string }) => {
   const englishItems = [
     {
       icon: <Clock className="w-4 h-4 text-burnt-orange" />,
-      value: '40+ years',
-      label: 'specialist experience',
+      value: 'Since 2002',
+      label: 'independent workshop',
     },
     {
       icon: <Car className="w-4 h-4 text-burnt-orange" />,
-      value: '50,000+',
-      label: 'vehicles serviced',
+      value: 'European & luxury',
+      label: 'service and repair',
     },
     {
       icon: <ShieldCheck className="w-4 h-4 text-burnt-orange" />,
-      value: 'OEM-grade',
-      label: 'diagnostics & parts',
+      value: 'Inspection-led',
+      label: 'recommendations',
     },
     {
       icon: <MapPin className="w-4 h-4 text-burnt-orange" />,
@@ -57,8 +57,7 @@ export const TrustBar = ({ className = '' }: { className?: string }) => {
 };
 
 /**
- * Risk-reversal microcopy for directly beneath a primary CTA.
- * Lowers the perceived cost of acting (free, no commitment, fast reply).
+ * Factual microcopy for directly beneath a primary CTA.
  */
 export const CtaAssurance = ({
   className = '',
@@ -75,7 +74,7 @@ export const CtaAssurance = ({
       className={`flex items-center ${align === 'center' ? 'justify-center' : 'justify-start'} gap-2 text-[11px] sm:text-xs text-gray-400 tracking-wide ${className}`}
     >
       <ShieldCheck className="w-3.5 h-3.5 text-burnt-orange shrink-0" />
-      {text ?? (isArabic ? 'تقييم مجاني · بلا التزام · رد عبر واتساب خلال دقائق' : 'Free assessment · No obligation · WhatsApp reply within minutes')}
+      {text ?? (isArabic ? 'تواصل معنا لمناقشة سيارتك وطلب موعد' : 'Contact us to discuss your vehicle and request an appointment')}
     </p>
   );
 };

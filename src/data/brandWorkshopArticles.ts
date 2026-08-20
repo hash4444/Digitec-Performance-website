@@ -150,10 +150,10 @@ export const brandWorkshopArticles: BrandWorkshopArticle[] = profiles.map((profi
       ? 'Ferrari Maintenance in Dubai: Service Schedule, Costs & What to Expect'
       : existingBestPage
         ? `${profile.brand} Maintenance Guide for Dubai Owners`
-        : `Best ${profile.brand} Workshop in Dubai: Owner Guide`,
+        : `Choosing a ${profile.brand} Workshop in Dubai: Owner Guide`,
     primaryKeyword: existingBestPage
       ? `${profile.brand} maintenance Dubai`
-      : `Best ${profile.brand} Workshop Dubai`,
+      : `${profile.brand} Workshop Dubai`,
     existingBestPage,
     brandHub: existingBrandHubs[profile.brand],
   };
@@ -175,6 +175,6 @@ export const brandWorkshopArticleSummaries = brandWorkshopArticles.map((article)
   coverImage: article.coverImage,
   metaTitle: article.metaTitle ?? (article.existingBestPage
     ? `${article.brand} Maintenance Dubai | DIGI-TEC`
-    : `Best ${article.brand} Workshop Dubai | DIGI-TEC`),
+    : `${article.brand} Workshop Dubai | Owner Guide`),
   metaDescription: article.metaDescription ?? `${article.brand} workshop in Dubai for diagnostics, maintenance and repair. Visit DIGI-TEC in Al Quoz for clear inspections, practical guidance and booking support.`,
 }));

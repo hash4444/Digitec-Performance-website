@@ -16,9 +16,7 @@ export const WhatWeDo = () => {
             {copy ? copy.title : <>What We <span className="text-burnt-orange">D</span>o</>}
           </h2>
           <p className="text-sm sm:text-base lg:text-lg text-gray-300 max-w-4xl mx-auto leading-snug sm:leading-relaxed px-4">
-            {copy?.description ?? <>We transform luxury vehicles into bespoke performance machines through precision engineering,
-            advanced diagnostics, and world-class craftsmanship. Every modification is tailored to exceed
-            your expectations while maintaining the integrity of your investment.</>}
+            {copy?.description ?? <>Digi-Tec provides maintenance, diagnostics, mechanical and electrical repair, body work and vehicle-specific performance projects from its Al Quoz workshop.</>}
           </p>
         </Reveal>
 
@@ -33,7 +31,7 @@ export const WhatWeDo = () => {
             </div>
             <h3 className="text-base sm:text-2xl font-bold mb-2 sm:mb-4 text-white">{copy?.cards[0].title ?? 'Performance Tuning'}</h3>
             <p className="text-xs sm:text-base text-gray-300 leading-snug sm:leading-relaxed px-2">
-              {copy?.cards[0].text ?? "ECU remapping, turbo upgrades, and exhaust system optimization to unlock your vehicle's true potential."}
+              {copy?.cards[0].text ?? 'ECU and supporting-hardware projects planned around the vehicle, fuel, intended use and current condition.'}
             </p>
           </Reveal>
 
@@ -47,7 +45,7 @@ export const WhatWeDo = () => {
             </div>
             <h3 className="text-base sm:text-2xl font-bold mb-2 sm:mb-4 text-white">{copy?.cards[1].title ?? 'Aesthetic Enhancement'}</h3>
             <p className="text-xs sm:text-base text-gray-300 leading-snug sm:leading-relaxed px-2">
-              {copy?.cards[1].text ?? 'Custom body kits, carbon fiber components, and premium wheel upgrades for the ultimate visual impact.'}
+              {copy?.cards[1].text ?? 'Body, exterior and wheel projects assessed for fitment, condition and the owner’s requested specification.'}
             </p>
           </Reveal>
 
@@ -61,7 +59,7 @@ export const WhatWeDo = () => {
             </div>
             <h3 className="text-base sm:text-2xl font-bold mb-2 sm:mb-4 text-white">{copy?.cards[2].title ?? 'Precision Maintenance'}</h3>
             <p className="text-xs sm:text-base text-gray-300 leading-snug sm:leading-relaxed px-2">
-              {copy?.cards[2].text ?? 'Comprehensive diagnostic services and preventive maintenance to keep your luxury vehicle in pristine condition.'}
+              {copy?.cards[2].text ?? 'Scheduled maintenance and fault inspection for the mechanical, electrical, cooling, brake and comfort systems.'}
             </p>
           </Reveal>
         </div>

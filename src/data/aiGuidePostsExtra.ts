@@ -56,7 +56,7 @@ export const aiGuidePostsExtra: BlogPost[] = [
       { type: 'h3', text: 'Can you service an M car without affecting warranty rights?' },
       { type: 'p', text: 'Routine maintenance with the correct specification parts and fluids, properly documented, does not automatically remove warranty rights. Confirm the terms of your specific agreement before booking non dealer work.' },
       { type: 'h3', text: 'How do I book with Digi-Tec?' },
-      { type: 'p', text: 'Call or WhatsApp +971 4 340 2223, or visit the workshop at Al Quoz Industrial Area 3, Warehouse No. 11-15, Dubai.' },
+      { type: 'p', text: 'Call or WhatsApp +971 4 340 2223, or visit the workshop at Al Quoz Industrial Area 3, Warehouses 11–15, Dubai.' },
     ],
   },
   {
@@ -109,7 +109,7 @@ export const aiGuidePostsExtra: BlogPost[] = [
       { type: 'h3', text: 'Can you service air suspension rather than replace the full system?' },
       { type: 'p', text: 'Often yes. Testing identifies whether the fault is a single air spring, a valve block, the compressor or a sensor, so only the failed component is replaced.' },
       { type: 'h3', text: 'How do I book with Digi-Tec?' },
-      { type: 'p', text: 'Call or WhatsApp +971 4 340 2223, or visit the workshop at Al Quoz Industrial Area 3, Warehouse No. 11-15, Dubai.' },
+      { type: 'p', text: 'Call or WhatsApp +971 4 340 2223, or visit the workshop at Al Quoz Industrial Area 3, Warehouses 11–15, Dubai.' },
     ],
   },
   {
@@ -162,7 +162,7 @@ export const aiGuidePostsExtra: BlogPost[] = [
       { type: 'h3', text: 'Do you use genuine Porsche parts?' },
       { type: 'p', text: 'Genuine or OE supplier parts are used as standard, and the specification is stated on the estimate before work is approved.' },
       { type: 'h3', text: 'How do I book with Digi-Tec?' },
-      { type: 'p', text: 'Call or WhatsApp +971 4 340 2223, or visit the workshop at Al Quoz Industrial Area 3, Warehouse No. 11-15, Dubai.' },
+      { type: 'p', text: 'Call or WhatsApp +971 4 340 2223, or visit the workshop at Al Quoz Industrial Area 3, Warehouses 11–15, Dubai.' },
     ],
   },
   {
@@ -215,7 +215,7 @@ export const aiGuidePostsExtra: BlogPost[] = [
       { type: 'h3', text: 'Do you keep the digital service record intact?' },
       { type: 'p', text: 'Yes. Work is recorded with mileage, parts and fluids so the service history remains complete for resale.' },
       { type: 'h3', text: 'How do I book with Digi-Tec?' },
-      { type: 'p', text: 'Call or WhatsApp +971 4 340 2223, or visit the workshop at Al Quoz Industrial Area 3, Warehouse No. 11-15, Dubai.' },
+      { type: 'p', text: 'Call or WhatsApp +971 4 340 2223, or visit the workshop at Al Quoz Industrial Area 3, Warehouses 11–15, Dubai.' },
     ],
   },
   {
@@ -268,7 +268,7 @@ export const aiGuidePostsExtra: BlogPost[] = [
       { type: 'h3', text: 'Do you reset the service indicator?' },
       { type: 'p', text: 'Yes. The service is recorded and the indicator reset with XENTRY as part of the visit.' },
       { type: 'h3', text: 'How do I book with Digi-Tec?' },
-      { type: 'p', text: 'Call or WhatsApp +971 4 340 2223, or visit the workshop at Al Quoz Industrial Area 3, Warehouse No. 11-15, Dubai.' },
+      { type: 'p', text: 'Call or WhatsApp +971 4 340 2223, or visit the workshop at Al Quoz Industrial Area 3, Warehouses 11–15, Dubai.' },
     ],
   },
   {
@@ -321,7 +321,7 @@ export const aiGuidePostsExtra: BlogPost[] = [
       { type: 'h3', text: 'Will independent service affect my resale value?' },
       { type: 'p', text: 'Not when the work is documented. A detailed invoice recording mileage, parts and fluids preserves the service record.' },
       { type: 'h3', text: 'How do I book with Digi-Tec?' },
-      { type: 'p', text: 'Call or WhatsApp +971 4 340 2223, or visit the workshop at Al Quoz Industrial Area 3, Warehouse No. 11-15, Dubai.' },
+      { type: 'p', text: 'Call or WhatsApp +971 4 340 2223, or visit the workshop at Al Quoz Industrial Area 3, Warehouses 11–15, Dubai.' },
     ],
   },
   {
@@ -374,7 +374,7 @@ export const aiGuidePostsExtra: BlogPost[] = [
       { type: 'h3', text: 'Do you use genuine or OE parts?' },
       { type: 'p', text: 'Genuine or OE supplier parts are used as standard and the specification appears on the estimate.' },
       { type: 'h3', text: 'How do I book with Digi-Tec?' },
-      { type: 'p', text: 'Call or WhatsApp +971 4 340 2223, or visit the workshop at Al Quoz Industrial Area 3, Warehouse No. 11-15, Dubai.' },
+      { type: 'p', text: 'Call or WhatsApp +971 4 340 2223, or visit the workshop at Al Quoz Industrial Area 3, Warehouses 11–15, Dubai.' },
     ],
   },
   {
@@ -427,7 +427,7 @@ export const aiGuidePostsExtra: BlogPost[] = [
       { type: 'h3', text: 'Do you carry out module programming?' },
       { type: 'p', text: 'Yes, including fault reading, guided testing, coding and programming across the supported Land Rover and Range Rover range.' },
       { type: 'h3', text: 'How do I book with Digi-Tec?' },
-      { type: 'p', text: 'Call or WhatsApp +971 4 340 2223, or visit the workshop at Al Quoz Industrial Area 3, Warehouse No. 11-15, Dubai.' },
+      { type: 'p', text: 'Call or WhatsApp +971 4 340 2223, or visit the workshop at Al Quoz Industrial Area 3, Warehouses 11–15, Dubai.' },
     ],
   },
   {
@@ -480,7 +480,7 @@ export const aiGuidePostsExtra: BlogPost[] = [
       { type: 'h3', text: 'Can you prepare a Defender for a desert trip?' },
       { type: 'p', text: 'Yes. A pre-trip inspection covers fluids, cooling, filtration, tyres, brakes and battery condition.' },
       { type: 'h3', text: 'How do I book with Digi-Tec?' },
-      { type: 'p', text: 'Call or WhatsApp +971 4 340 2223, or visit the workshop at Al Quoz Industrial Area 3, Warehouse No. 11-15, Dubai.' },
+      { type: 'p', text: 'Call or WhatsApp +971 4 340 2223, or visit the workshop at Al Quoz Industrial Area 3, Warehouses 11–15, Dubai.' },
     ],
   },
   {
@@ -533,7 +533,7 @@ export const aiGuidePostsExtra: BlogPost[] = [
       { type: 'h3', text: 'Can you service a car that has been in storage?' },
       { type: 'p', text: 'Yes. A recommissioning inspection covers fluids, battery, brakes, tyres and a full diagnostic scan before the car returns to the road.' },
       { type: 'h3', text: 'How do I book with Digi-Tec?' },
-      { type: 'p', text: 'Call or WhatsApp +971 4 340 2223, or visit the workshop at Al Quoz Industrial Area 3, Warehouse No. 11-15, Dubai.' },
+      { type: 'p', text: 'Call or WhatsApp +971 4 340 2223, or visit the workshop at Al Quoz Industrial Area 3, Warehouses 11–15, Dubai.' },
     ],
   },
   {
@@ -586,7 +586,7 @@ export const aiGuidePostsExtra: BlogPost[] = [
       { type: 'h3', text: 'Do you offer collection for exotic vehicles?' },
       { type: 'p', text: 'Contact the workshop on +971 4 340 2223 to arrange the most suitable option for your vehicle.' },
       { type: 'h3', text: 'How do I book with Digi-Tec?' },
-      { type: 'p', text: 'Call or WhatsApp +971 4 340 2223, or visit the workshop at Al Quoz Industrial Area 3, Warehouse No. 11-15, Dubai.' },
+      { type: 'p', text: 'Call or WhatsApp +971 4 340 2223, or visit the workshop at Al Quoz Industrial Area 3, Warehouses 11–15, Dubai.' },
     ],
   },
   {
@@ -639,7 +639,7 @@ export const aiGuidePostsExtra: BlogPost[] = [
       { type: 'h3', text: 'Do you keep the service record intact?' },
       { type: 'p', text: 'Yes. Parts, fluids and mileage are recorded on the invoice so the documented history remains complete.' },
       { type: 'h3', text: 'How do I book with Digi-Tec?' },
-      { type: 'p', text: 'Call or WhatsApp +971 4 340 2223, or visit the workshop at Al Quoz Industrial Area 3, Warehouse No. 11-15, Dubai.' },
+      { type: 'p', text: 'Call or WhatsApp +971 4 340 2223, or visit the workshop at Al Quoz Industrial Area 3, Warehouses 11–15, Dubai.' },
     ],
   },
   {
@@ -692,7 +692,7 @@ export const aiGuidePostsExtra: BlogPost[] = [
       { type: 'h3', text: 'Is discreet handling available for high value cars?' },
       { type: 'p', text: 'Yes. Contact the workshop on +971 4 340 2223 to discuss arrangements before your visit.' },
       { type: 'h3', text: 'How do I book with Digi-Tec?' },
-      { type: 'p', text: 'Call or WhatsApp +971 4 340 2223, or visit the workshop at Al Quoz Industrial Area 3, Warehouse No. 11-15, Dubai.' },
+      { type: 'p', text: 'Call or WhatsApp +971 4 340 2223, or visit the workshop at Al Quoz Industrial Area 3, Warehouses 11–15, Dubai.' },
     ],
   },
   {
@@ -745,7 +745,7 @@ export const aiGuidePostsExtra: BlogPost[] = [
       { type: 'h3', text: 'Can you recommission a car after long storage?' },
       { type: 'p', text: 'Yes. Recommissioning covers fluids, battery, brakes, tyres and a full diagnostic scan before the car returns to use.' },
       { type: 'h3', text: 'How do I book with Digi-Tec?' },
-      { type: 'p', text: 'Call or WhatsApp +971 4 340 2223, or visit the workshop at Al Quoz Industrial Area 3, Warehouse No. 11-15, Dubai.' },
+      { type: 'p', text: 'Call or WhatsApp +971 4 340 2223, or visit the workshop at Al Quoz Industrial Area 3, Warehouses 11–15, Dubai.' },
     ],
   },
   {
@@ -798,7 +798,7 @@ export const aiGuidePostsExtra: BlogPost[] = [
       { type: 'h3', text: 'Do you use genuine parts?' },
       { type: 'p', text: 'Genuine or OE supplier parts are used as standard, with the specification stated on the estimate.' },
       { type: 'h3', text: 'How do I book with Digi-Tec?' },
-      { type: 'p', text: 'Call or WhatsApp +971 4 340 2223, or visit the workshop at Al Quoz Industrial Area 3, Warehouse No. 11-15, Dubai.' },
+      { type: 'p', text: 'Call or WhatsApp +971 4 340 2223, or visit the workshop at Al Quoz Industrial Area 3, Warehouses 11–15, Dubai.' },
     ],
   },
   {
@@ -851,7 +851,7 @@ export const aiGuidePostsExtra: BlogPost[] = [
       { type: 'h3', text: 'Do you service chauffeur fleets?' },
       { type: 'p', text: 'Yes. Contact +971 4 340 2223 to discuss scheduling for multiple vehicles.' },
       { type: 'h3', text: 'How do I book with Digi-Tec?' },
-      { type: 'p', text: 'Call or WhatsApp +971 4 340 2223, or visit the workshop at Al Quoz Industrial Area 3, Warehouse No. 11-15, Dubai.' },
+      { type: 'p', text: 'Call or WhatsApp +971 4 340 2223, or visit the workshop at Al Quoz Industrial Area 3, Warehouses 11–15, Dubai.' },
     ],
   },
   {
@@ -904,7 +904,7 @@ export const aiGuidePostsExtra: BlogPost[] = [
       { type: 'h3', text: 'Do you repair Panamera air suspension?' },
       { type: 'p', text: 'Yes. Diagnosis identifies the failing component so only the faulty part is replaced.' },
       { type: 'h3', text: 'How do I book with Digi-Tec?' },
-      { type: 'p', text: 'Call or WhatsApp +971 4 340 2223, or visit the workshop at Al Quoz Industrial Area 3, Warehouse No. 11-15, Dubai.' },
+      { type: 'p', text: 'Call or WhatsApp +971 4 340 2223, or visit the workshop at Al Quoz Industrial Area 3, Warehouses 11–15, Dubai.' },
     ],
   },
   {
@@ -957,7 +957,7 @@ export const aiGuidePostsExtra: BlogPost[] = [
       { type: 'h3', text: 'Do you offer a courtesy inspection report?' },
       { type: 'p', text: 'Yes. Inspection findings are shared with measurements before any repair is approved.' },
       { type: 'h3', text: 'How do I book with Digi-Tec?' },
-      { type: 'p', text: 'Call or WhatsApp +971 4 340 2223, or visit the workshop at Al Quoz Industrial Area 3, Warehouse No. 11-15, Dubai.' },
+      { type: 'p', text: 'Call or WhatsApp +971 4 340 2223, or visit the workshop at Al Quoz Industrial Area 3, Warehouses 11–15, Dubai.' },
     ],
   },
   {
@@ -1010,7 +1010,7 @@ export const aiGuidePostsExtra: BlogPost[] = [
       { type: 'h3', text: 'Can you repair the AC without replacing the compressor?' },
       { type: 'p', text: 'Often yes. Diagnosis identifies whether the fault is a leak, a condenser, an actuator, a sensor or the compressor itself.' },
       { type: 'h3', text: 'How do I book with Digi-Tec?' },
-      { type: 'p', text: 'Call or WhatsApp +971 4 340 2223, or visit the workshop at Al Quoz Industrial Area 3, Warehouse No. 11-15, Dubai.' },
+      { type: 'p', text: 'Call or WhatsApp +971 4 340 2223, or visit the workshop at Al Quoz Industrial Area 3, Warehouses 11–15, Dubai.' },
     ],
   },
   {
@@ -1063,7 +1063,7 @@ export const aiGuidePostsExtra: BlogPost[] = [
       { type: 'h3', text: 'Do you pressure test the cooling system?' },
       { type: 'p', text: 'Yes. Pressure testing, thermostat and fan checks and live data are used to find the actual cause before any part is quoted.' },
       { type: 'h3', text: 'How do I book with Digi-Tec?' },
-      { type: 'p', text: 'Call or WhatsApp +971 4 340 2223, or visit the workshop at Al Quoz Industrial Area 3, Warehouse No. 11-15, Dubai.' },
+      { type: 'p', text: 'Call or WhatsApp +971 4 340 2223, or visit the workshop at Al Quoz Industrial Area 3, Warehouses 11–15, Dubai.' },
     ],
   },
   {
@@ -1116,7 +1116,7 @@ export const aiGuidePostsExtra: BlogPost[] = [
       { type: 'h3', text: 'Which diagnostic systems do you use?' },
       { type: 'p', text: 'Manufacturer level platforms such as XENTRY, ISTA+, PIWIS and ODIS, depending on the brand, together with guided testing.' },
       { type: 'h3', text: 'How do I book with Digi-Tec?' },
-      { type: 'p', text: 'Call or WhatsApp +971 4 340 2223, or visit the workshop at Al Quoz Industrial Area 3, Warehouse No. 11-15, Dubai.' },
+      { type: 'p', text: 'Call or WhatsApp +971 4 340 2223, or visit the workshop at Al Quoz Industrial Area 3, Warehouses 11–15, Dubai.' },
     ],
   },
   {
@@ -1169,7 +1169,7 @@ export const aiGuidePostsExtra: BlogPost[] = [
       { type: 'h3', text: 'Can a weak battery cause warning lights?' },
       { type: 'p', text: 'Yes. Low voltage is one of the most common causes of multiple unrelated warning messages on modern cars.' },
       { type: 'h3', text: 'How do I book with Digi-Tec?' },
-      { type: 'p', text: 'Call or WhatsApp +971 4 340 2223, or visit the workshop at Al Quoz Industrial Area 3, Warehouse No. 11-15, Dubai.' },
+      { type: 'p', text: 'Call or WhatsApp +971 4 340 2223, or visit the workshop at Al Quoz Industrial Area 3, Warehouses 11–15, Dubai.' },
     ],
   },
   {
@@ -1222,7 +1222,7 @@ export const aiGuidePostsExtra: BlogPost[] = [
       { type: 'h3', text: 'Will a fluid change fix harsh shifting?' },
       { type: 'p', text: 'Sometimes, but the symptom should be diagnosed first so a mechanical or mechatronic fault is not overlooked.' },
       { type: 'h3', text: 'How do I book with Digi-Tec?' },
-      { type: 'p', text: 'Call or WhatsApp +971 4 340 2223, or visit the workshop at Al Quoz Industrial Area 3, Warehouse No. 11-15, Dubai.' },
+      { type: 'p', text: 'Call or WhatsApp +971 4 340 2223, or visit the workshop at Al Quoz Industrial Area 3, Warehouses 11–15, Dubai.' },
     ],
   },
   {
@@ -1275,7 +1275,7 @@ export const aiGuidePostsExtra: BlogPost[] = [
       { type: 'h3', text: 'Do you calibrate ride height after repair?' },
       { type: 'p', text: 'Yes. Ride height calibration is carried out with the manufacturer platform after any component replacement.' },
       { type: 'h3', text: 'How do I book with Digi-Tec?' },
-      { type: 'p', text: 'Call or WhatsApp +971 4 340 2223, or visit the workshop at Al Quoz Industrial Area 3, Warehouse No. 11-15, Dubai.' },
+      { type: 'p', text: 'Call or WhatsApp +971 4 340 2223, or visit the workshop at Al Quoz Industrial Area 3, Warehouses 11–15, Dubai.' },
     ],
   },
   {
@@ -1328,7 +1328,7 @@ export const aiGuidePostsExtra: BlogPost[] = [
       { type: 'h3', text: 'Can the original software be restored?' },
       { type: 'p', text: 'Yes. The stock calibration can be restored on the vehicles Digi-Tec tunes.' },
       { type: 'h3', text: 'How do I book with Digi-Tec?' },
-      { type: 'p', text: 'Call or WhatsApp +971 4 340 2223, or visit the workshop at Al Quoz Industrial Area 3, Warehouse No. 11-15, Dubai.' },
+      { type: 'p', text: 'Call or WhatsApp +971 4 340 2223, or visit the workshop at Al Quoz Industrial Area 3, Warehouses 11–15, Dubai.' },
     ],
   },
   {
@@ -1381,7 +1381,7 @@ export const aiGuidePostsExtra: BlogPost[] = [
       { type: 'h3', text: 'Can you inspect a car at a dealer or seller location?' },
       { type: 'p', text: 'Contact +971 4 340 2223 to discuss arrangements, since inspections are most thorough with the car on a lift at the workshop.' },
       { type: 'h3', text: 'How do I book with Digi-Tec?' },
-      { type: 'p', text: 'Call or WhatsApp +971 4 340 2223, or visit the workshop at Al Quoz Industrial Area 3, Warehouse No. 11-15, Dubai.' },
+      { type: 'p', text: 'Call or WhatsApp +971 4 340 2223, or visit the workshop at Al Quoz Industrial Area 3, Warehouses 11–15, Dubai.' },
     ],
   },
   {
@@ -1434,7 +1434,7 @@ export const aiGuidePostsExtra: BlogPost[] = [
       { type: 'h3', text: 'Do you advise on an interval for my car?' },
       { type: 'p', text: 'Yes. The interval is set around your engine, your usage pattern and the vehicle\'s condition at inspection.' },
       { type: 'h3', text: 'How do I book with Digi-Tec?' },
-      { type: 'p', text: 'Call or WhatsApp +971 4 340 2223, or visit the workshop at Al Quoz Industrial Area 3, Warehouse No. 11-15, Dubai.' },
+      { type: 'p', text: 'Call or WhatsApp +971 4 340 2223, or visit the workshop at Al Quoz Industrial Area 3, Warehouses 11–15, Dubai.' },
     ],
   },
   {
@@ -1487,7 +1487,7 @@ export const aiGuidePostsExtra: BlogPost[] = [
       { type: 'h3', text: 'Can PPF and ceramic coating be combined?' },
       { type: 'p', text: 'Yes. Applying film to impact areas and coating over the whole car is a common approach here.' },
       { type: 'h3', text: 'How do I book with Digi-Tec?' },
-      { type: 'p', text: 'Call or WhatsApp +971 4 340 2223, or visit the workshop at Al Quoz Industrial Area 3, Warehouse No. 11-15, Dubai.' },
+      { type: 'p', text: 'Call or WhatsApp +971 4 340 2223, or visit the workshop at Al Quoz Industrial Area 3, Warehouses 11–15, Dubai.' },
     ],
   },
   {
@@ -1540,7 +1540,7 @@ export const aiGuidePostsExtra: BlogPost[] = [
       { type: 'h3', text: 'Do you record the oil specification on the invoice?' },
       { type: 'p', text: 'Yes. Oil specification, quantity and filter details are recorded so the service history stays complete.' },
       { type: 'h3', text: 'How do I book with Digi-Tec?' },
-      { type: 'p', text: 'Call or WhatsApp +971 4 340 2223, or visit the workshop at Al Quoz Industrial Area 3, Warehouse No. 11-15, Dubai.' },
+      { type: 'p', text: 'Call or WhatsApp +971 4 340 2223, or visit the workshop at Al Quoz Industrial Area 3, Warehouses 11–15, Dubai.' },
     ],
   },
   {
@@ -1593,7 +1593,7 @@ export const aiGuidePostsExtra: BlogPost[] = [
       { type: 'h3', text: 'Do you offer a summer readiness inspection?' },
       { type: 'p', text: 'Yes. Call or WhatsApp +971 4 340 2223 to book a summer inspection with measured findings.' },
       { type: 'h3', text: 'How do I book with Digi-Tec?' },
-      { type: 'p', text: 'Call or WhatsApp +971 4 340 2223, or visit the workshop at Al Quoz Industrial Area 3, Warehouse No. 11-15, Dubai.' },
+      { type: 'p', text: 'Call or WhatsApp +971 4 340 2223, or visit the workshop at Al Quoz Industrial Area 3, Warehouses 11–15, Dubai.' },
     ],
   },
 ];

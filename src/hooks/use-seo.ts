@@ -1,9 +1,10 @@
-import { useEffect } from 'react';
+import React, { useContext, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
-import { SITE_URL } from '@/lib/schema';
+import { DEFAULT_OG_IMAGE, SITE_URL } from '@/lib/schema';
 import { isArabicPath, stripLocalePrefix } from '@/i18n/use-locale';
+import { isLowValueBrandServicePath } from '@/lib/route-policy';
 
-interface SeoProps {
+export interface SeoProps {
   title: string;
   description: string;
   canonical?: string;
@@ -19,133 +20,27 @@ interface SeoProps {
   jsonLd?: Record<string, unknown> | Record<string, unknown>[];
 }
 
-export function useSeo({
-  title,
-  description,
-  canonical,
-  keywords,
-  ogImage,
-  ogTitle,
-  ogDescription,
-  ogType,
-  twitterCard,
-  twitterTitle,
-  twitterDescription,
-  noindex,
-  jsonLd,
-}: SeoProps) {
-  const { pathname } = useLocation();
-  const isArabic = isArabicPath(pathname);
-  const englishPath = stripLocalePrefix(pathname);
-  const englishUrl = `${SITE_URL}${englishPath === '/' ? '/' : englishPath}`;
-  const arabicUrl = `${SITE_URL}/ar${englishPath === '/' ? '' : englishPath}`;
-  const effectiveCanonical = isArabic ? arabicUrl : canonical;
-  const jsonLdString = jsonLd ? JSON.stringify(jsonLd) : undefined;
+export interface ResolvedSeoProps extends SeoProps {
+  canonical?: string;
+  noindex: boolean;
+  language: 'en' | 'ar';
+}
 
-  useEffect(() => {
-    document.title = title;
+type SeoCollector = (seo: ResolvedSeoProps) => void;
+const SeoCollectorContext = React.createContext<SeoCollector | null>(null);
 
-    const upsertMeta = (selector: string, attr: 'name' | 'property', key: string, content: string) => {
-      let el = document.querySelector(selector) as HTMLMetaElement | null;
-      if (!el) {
-        el = document.createElement('meta');
-        el.setAttribute(attr, key);
-        document.head.appendChild(el);
-      }
-      el.setAttribute('content', content);
-    };
+export const SeoCollectorProvider = ({
+  collect,
+  children,
+}: {
+  collect: SeoCollector;
+  children: React.ReactNode;
+}) => React.createElement(SeoCollectorContext.Provider, { value: collect }, children);
 
-    upsertMeta('meta[name="description"]', 'name', 'description', description);
-
-    if (keywords) {
-      upsertMeta('meta[name="keywords"]', 'name', 'keywords', keywords);
-    }
-
-    upsertMeta(
-      'meta[name="robots"]',
-      'name',
-      'robots',
-      noindex ? 'noindex, follow' : 'index, follow, max-image-preview:large',
-    );
-
-    // OG / Twitter tags
-    const setMeta = (property: string, content: string) => {
-      let el = document.querySelector(`meta[property="${property}"]`) ||
-               document.querySelector(`meta[name="${property}"]`);
-      if (el) {
-        el.setAttribute('content', content);
-      } else {
-        el = document.createElement('meta');
-        el.setAttribute(property.startsWith('og:') ? 'property' : 'name', property);
-        el.setAttribute('content', content);
-        document.head.appendChild(el);
-      }
-    };
-    setMeta('og:title', ogTitle || title);
-    setMeta('og:description', ogDescription || description);
-    setMeta('og:type', ogType || 'website');
-    setMeta('twitter:card', twitterCard || 'summary_large_image');
-    setMeta('twitter:title', twitterTitle || ogTitle || title);
-    setMeta('twitter:description', twitterDescription || ogDescription || description);
-    if (ogImage) {
-      setMeta('og:image', ogImage);
-      setMeta('twitter:image', ogImage);
-    }
-
-    if (effectiveCanonical) {
-      let link = document.querySelector('link[rel="canonical"]') as HTMLLinkElement;
-      if (!link) {
-        link = document.createElement('link');
-        link.setAttribute('rel', 'canonical');
-        document.head.appendChild(link);
-      }
-      link.setAttribute('href', effectiveCanonical);
-      setMeta('og:url', effectiveCanonical);
-    }
-
-    setMeta('og:locale', isArabic ? 'ar_AE' : 'en_AE');
-
-    const alternateLinks = [
-      { hreflang: 'en-AE', href: englishUrl },
-      { hreflang: 'ar-AE', href: arabicUrl },
-      { hreflang: 'x-default', href: englishUrl },
-    ].map(({ hreflang, href }) => {
-      let link = document.querySelector(`link[rel="alternate"][hreflang="${hreflang}"]`) as HTMLLinkElement | null;
-      if (!link) {
-        link = document.createElement('link');
-        link.rel = 'alternate';
-        link.hreflang = hreflang;
-        link.setAttribute('data-route-hreflang', 'true');
-        document.head.appendChild(link);
-      }
-      link.href = href;
-      return link;
-    });
-
-    let jsonLdScript: HTMLScriptElement | null = null;
-    if (jsonLdString) {
-      jsonLdScript = document.createElement('script');
-      jsonLdScript.type = 'application/ld+json';
-      jsonLdScript.setAttribute('data-seo-jsonld', 'true');
-      jsonLdScript.text = jsonLdString;
-      document.head.appendChild(jsonLdScript);
-    }
-
-    return () => {
-      if (jsonLdScript && jsonLdScript.parentNode) {
-        jsonLdScript.parentNode.removeChild(jsonLdScript);
-      }
-      alternateLinks.forEach((link) => {
-        if (link.dataset.routeHreflang === 'true') link.remove();
-      });
-    };
-  }, [
+export function useSeo(props: SeoProps) {
+  const {
     title,
     description,
-    effectiveCanonical,
-    isArabic,
-    englishUrl,
-    arabicUrl,
     keywords,
     ogImage,
     ogTitle,
@@ -154,7 +49,128 @@ export function useSeo({
     twitterCard,
     twitterTitle,
     twitterDescription,
-    noindex,
+    jsonLd,
+  } = props;
+  const { pathname } = useLocation();
+  const collector = useContext(SeoCollectorContext);
+  const isArabic = isArabicPath(pathname);
+  const englishPath = stripLocalePrefix(pathname);
+  const englishUrl = `${SITE_URL}${englishPath === '/' ? '/' : englishPath}`;
+  const arabicUrl = `${SITE_URL}/ar${englishPath === '/' ? '' : englishPath}`;
+  const effectiveNoindex = Boolean(props.noindex || isLowValueBrandServicePath(pathname));
+  const effectiveCanonical = effectiveNoindex
+    ? props.canonical
+    : (isArabic ? arabicUrl : (props.canonical ?? englishUrl));
+  const effectiveOgImage = ogImage || DEFAULT_OG_IMAGE;
+  const jsonLdString = jsonLd ? JSON.stringify(jsonLd) : undefined;
+
+  collector?.({
+    ...props,
+    canonical: effectiveCanonical,
+    noindex: effectiveNoindex,
+    language: isArabic ? 'ar' : 'en',
+    ogImage: effectiveOgImage,
+  });
+
+  useEffect(() => {
+    document.title = title;
+
+    const upsertMeta = (
+      selector: string,
+      attribute: 'name' | 'property',
+      key: string,
+      content?: string,
+    ) => {
+      let element = document.querySelector(selector) as HTMLMetaElement | null;
+      if (!content) {
+        element?.remove();
+        return;
+      }
+      if (!element) {
+        element = document.createElement('meta');
+        element.setAttribute(attribute, key);
+        document.head.appendChild(element);
+      }
+      element.setAttribute('content', content);
+    };
+
+    upsertMeta('meta[name="description"]', 'name', 'description', description);
+    // Meta keywords do not affect modern ranking and easily become stale.
+    document.querySelector('meta[name="keywords"]')?.remove();
+    upsertMeta(
+      'meta[name="robots"]',
+      'name',
+      'robots',
+      effectiveNoindex ? 'noindex, follow' : 'index, follow, max-image-preview:large',
+    );
+
+    upsertMeta('meta[property="og:title"]', 'property', 'og:title', ogTitle || title);
+    upsertMeta('meta[property="og:description"]', 'property', 'og:description', ogDescription || description);
+    upsertMeta('meta[property="og:type"]', 'property', 'og:type', ogType || 'website');
+    upsertMeta('meta[property="og:image"]', 'property', 'og:image', effectiveOgImage);
+    upsertMeta('meta[property="og:locale"]', 'property', 'og:locale', isArabic ? 'ar_AE' : 'en_AE');
+    upsertMeta('meta[name="twitter:card"]', 'name', 'twitter:card', twitterCard || 'summary_large_image');
+    upsertMeta('meta[name="twitter:title"]', 'name', 'twitter:title', twitterTitle || ogTitle || title);
+    upsertMeta('meta[name="twitter:description"]', 'name', 'twitter:description', twitterDescription || ogDescription || description);
+    upsertMeta('meta[name="twitter:image"]', 'name', 'twitter:image', effectiveOgImage);
+
+    let canonicalLink = document.querySelector('link[rel="canonical"]') as HTMLLinkElement | null;
+    if (effectiveCanonical) {
+      if (!canonicalLink) {
+        canonicalLink = document.createElement('link');
+        canonicalLink.rel = 'canonical';
+        document.head.appendChild(canonicalLink);
+      }
+      canonicalLink.href = effectiveCanonical;
+      upsertMeta('meta[property="og:url"]', 'property', 'og:url', effectiveCanonical);
+    } else {
+      canonicalLink?.remove();
+      upsertMeta('meta[property="og:url"]', 'property', 'og:url');
+    }
+
+    document.querySelectorAll('link[rel="alternate"][hreflang]').forEach((link) => link.remove());
+    if (!effectiveNoindex && effectiveCanonical) {
+      [
+        { hreflang: 'en-AE', href: englishUrl },
+        { hreflang: 'ar-AE', href: arabicUrl },
+        { hreflang: 'x-default', href: englishUrl },
+      ].forEach(({ hreflang, href }) => {
+        const link = document.createElement('link');
+        link.rel = 'alternate';
+        link.hreflang = hreflang;
+        link.href = href;
+        document.head.appendChild(link);
+      });
+    }
+
+    const existingSchema = document.querySelector('script[data-route-jsonld="true"]');
+    if (jsonLdString) {
+      const script = existingSchema instanceof HTMLScriptElement
+        ? existingSchema
+        : document.createElement('script');
+      script.type = 'application/ld+json';
+      script.dataset.routeJsonld = 'true';
+      script.text = jsonLdString;
+      if (!script.parentNode) document.head.appendChild(script);
+    } else {
+      existingSchema?.remove();
+    }
+  }, [
+    title,
+    description,
+    effectiveCanonical,
+    effectiveNoindex,
+    effectiveOgImage,
+    isArabic,
+    englishUrl,
+    arabicUrl,
+    keywords,
+    ogTitle,
+    ogDescription,
+    ogType,
+    twitterCard,
+    twitterTitle,
+    twitterDescription,
     jsonLdString,
   ]);
 }

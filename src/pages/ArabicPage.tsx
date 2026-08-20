@@ -109,11 +109,7 @@ const pages: Record<string, PageCopy> = {
   },
 };
 
-const ArabicPage = () => {
-  const { pathname } = useLocation();
-  const page = pages[pathname];
-  if (!page) return <Navigate to="/ar" replace />;
-
+const ArabicPageContent = ({ page }: { page: PageCopy }) => {
   const arabicUrl = `${SITE_URL}${page.path}`;
   const englishUrl = `${SITE_URL}${page.englishPath}`;
   useArabicLocale(arabicUrl, englishUrl);
@@ -153,20 +149,20 @@ const ArabicPage = () => {
                 <p className="mx-auto mb-6 max-w-3xl px-4 text-sm leading-snug text-gray-300 sm:mb-12 sm:text-lg sm:leading-relaxed md:text-xl">ديجي-تك مركز متخصص للسيارات الفاخرة وسيارات الأداء في دبي. من التشخيص الدقيق إلى الصيانة والإصلاحات والترقيات، نقدم خدمة مدروسة لسيارتك في القوز.</p>
                 <div className="flex flex-col items-center justify-center gap-3 px-4 sm:flex-row sm:gap-5">
                   <a href={whatsapp} target="_blank" rel="noopener noreferrer" className="btn-primary w-full sm:w-auto">احجز موعداً</a>
-                  <a href="tel:+97143402223" className="btn-secondary w-full sm:w-auto">احصل على فحص أولي</a>
+                  <a href="tel:+97143402223" className="btn-secondary w-full sm:w-auto">ناقش فحص سيارتك</a>
                 </div>
-                <p className="mt-4 flex items-center justify-center gap-2 text-[11px] tracking-wide text-gray-400 sm:mt-5 sm:text-xs"><ShieldCheck className="h-3.5 w-3.5 shrink-0 text-burnt-orange" />فحص أولي بلا التزام · رد عبر واتساب خلال دقائق</p>
+                <p className="mt-4 flex items-center justify-center gap-2 text-[11px] tracking-wide text-gray-400 sm:mt-5 sm:text-xs"><ShieldCheck className="h-3.5 w-3.5 shrink-0 text-burnt-orange" />شارك بيانات السيارة والمشكلة المطلوبة لترتيب الزيارة المناسبة</p>
                 <div className="mt-8 animate-bounce sm:mt-16"><div className="mx-auto flex h-10 w-10 items-center justify-center rounded-full border border-white/15 bg-white/5 backdrop-blur-sm sm:h-11 sm:w-11"><ArrowDown className="text-burnt-orange" size={18} /></div></div>
               </div>
             </section>
-            <section className="border-y border-white/[0.07] bg-white/[0.02]"><div className="mx-auto grid max-w-6xl grid-cols-2 gap-x-4 gap-y-3 px-4 py-4 sm:px-6 sm:py-5 lg:grid-cols-4"><TrustItem value="+40 عاماً" label="خبرة متخصصة" /><TrustItem value="+50,000" label="سيارة تم خدمتها" /><TrustItem value="بمعيار OEM" label="تشخيص وقطع" /><TrustItem value="القوز" label="ورشة دبي" /></div></section>
+            <section className="border-y border-white/[0.07] bg-white/[0.02]"><div className="mx-auto grid max-w-6xl grid-cols-2 gap-x-4 gap-y-3 px-4 py-4 sm:px-6 sm:py-5 lg:grid-cols-4"><TrustItem value="2002" label="تأسست في دبي" /><TrustItem value="القوز" label="ورشة دبي" /><TrustItem value="فحص" label="حسب حالة السيارة" /><TrustItem value="نطاق واضح" label="قبل الموافقة" /></div></section>
           </>
         ) : (
           <section className="relative overflow-hidden border-b border-white/10 bg-gradient-to-b from-burnt-orange/15 via-black to-black"><div className="mx-auto max-w-5xl px-5 py-16 sm:px-6 sm:py-24"><p className="text-xs font-bold tracking-[0.2em] text-burnt-orange">{page.eyebrow}</p><h1 className="mt-4 max-w-4xl text-4xl font-black leading-tight sm:text-6xl">{page.h1}</h1><p className="mt-6 max-w-3xl text-lg leading-loose text-gray-300">{page.lead}</p><div className="mt-8 flex flex-col gap-3 sm:flex-row"><a href={whatsapp} target="_blank" rel="noopener noreferrer" className="btn-primary"><MessageCircle className="h-5 w-5" />احجز عبر واتساب</a><a href="tel:+97143402223" className="btn-secondary"><Phone className="h-5 w-5" />اتصل بنا</a></div></div></section>
         )}
         <section className="mx-auto max-w-4xl px-5 py-16 sm:px-6 sm:py-20">
           {page.sections.map((section) => <section key={section.heading} className="mt-12 first:mt-0"><h2 className="text-2xl font-black sm:text-3xl">{section.heading}</h2><p className="mt-4 leading-loose text-gray-300">{section.text}</p></section>)}
-          <section id="contact" className="mt-14 rounded-3xl border border-burnt-orange/30 bg-burnt-orange/5 p-6 sm:p-8"><h2 className="text-2xl font-black">زوروا ديجي-تك في القوز</h2><p className="mt-4 leading-loose text-gray-300">القوز الصناعية 3، مستودع رقم 11-15، دبي. شارك معنا تفاصيل سيارتك لنساعدك في ترتيب الخدمة أو الفحص المناسب.</p><div className="mt-6 grid gap-3 sm:grid-cols-3"><a href={whatsapp} target="_blank" rel="noopener noreferrer" className="btn-primary"><MessageCircle className="h-5 w-5" />واتساب</a><a href="tel:+97143402223" className="btn-secondary"><Phone className="h-5 w-5" />+971 4 340 2223</a><a href="https://maps.google.com/?q=Al+Quoz+Industrial+Area+3+Warehouse+No.11-15+Dubai" target="_blank" rel="noopener noreferrer" className="btn-secondary"><MapPin className="h-5 w-5" />الاتجاهات</a></div></section>
+          <section id="contact" className="mt-14 rounded-3xl border border-burnt-orange/30 bg-burnt-orange/5 p-6 sm:p-8"><h2 className="text-2xl font-black">زوروا ديجي-تك في القوز</h2><p className="mt-4 leading-loose text-gray-300">القوز الصناعية 3، المستودعات 11–15، دبي. شارك معنا تفاصيل سيارتك لنساعدك في ترتيب الخدمة أو الفحص المناسب.</p><div className="mt-6 grid gap-3 sm:grid-cols-3"><a href={whatsapp} target="_blank" rel="noopener noreferrer" className="btn-primary"><MessageCircle className="h-5 w-5" />واتساب</a><a href="tel:+97143402223" className="btn-secondary"><Phone className="h-5 w-5" />+971 4 340 2223</a><a href="https://maps.google.com/?q=Al+Quoz+Industrial+Area+3+Warehouse+No.11-15+Dubai" target="_blank" rel="noopener noreferrer" className="btn-secondary"><MapPin className="h-5 w-5" />الاتجاهات</a></div></section>
           <section className="mt-14"><h2 className="text-2xl font-black">الأسئلة الشائعة</h2><div className="mt-6 space-y-4">{page.faqs.map((faq) => <div key={faq.question} className="card-premium rounded-2xl p-5"><h3 className="font-bold">{faq.question}</h3><p className="mt-3 leading-loose text-gray-300">{faq.answer}</p></div>)}</div></section>
           <section className="mt-14 grid gap-3 sm:grid-cols-3"><Link to="/ar" className="card-premium rounded-2xl p-5"><CheckCircle2 className="mb-3 h-5 w-5 text-burnt-orange" />الرئيسية</Link><Link to="/ar/services" className="card-premium rounded-2xl p-5"><Wrench className="mb-3 h-5 w-5 text-burnt-orange" />خدماتنا</Link><Link to="/ar/about" className="card-premium rounded-2xl p-5"><MapPin className="mb-3 h-5 w-5 text-burnt-orange" />موقعنا وتواصل معنا</Link></section>
         </section>
@@ -174,6 +170,13 @@ const ArabicPage = () => {
       <footer className="border-t border-white/10 bg-charcoal/30 px-5 py-10 text-center text-sm text-gray-400"><p className="font-bold text-off-white">مركز ديجي-تك للأداء</p><p className="mt-2">القوز، دبي، الإمارات العربية المتحدة</p><Link to={page.englishPath} className="mt-4 inline-block text-burnt-orange hover:underline">English</Link></footer>
     </div>
   );
+};
+
+const ArabicPage = () => {
+  const { pathname } = useLocation();
+  const page = pages[pathname];
+
+  return page ? <ArabicPageContent page={page} /> : <Navigate to="/ar" replace />;
 };
 
 export default ArabicPage;

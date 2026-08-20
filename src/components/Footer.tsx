@@ -7,7 +7,7 @@ const quickLinks = [
   { label: 'About Us', arabicLabel: 'من نحن', to: '/about' },
   { label: 'All Services', arabicLabel: 'جميع الخدمات', to: '/services' },
   { label: 'Brands We Service', arabicLabel: 'العلامات التي نخدمها', to: '/brands' },
-  { label: 'GAD Performance', arabicLabel: 'أداء GAD', to: '/tuning' },
+  { label: 'Performance Tuning', arabicLabel: 'تطوير الأداء', to: '/tuning' },
   { label: 'VRX', arabicLabel: 'VRX', to: '/vrx' },
   { label: 'Workshop Guides', arabicLabel: 'دليل الورشة', to: '/blog' },
 ];
@@ -76,14 +76,12 @@ export const Footer = () => {
           <section aria-label={copy?.contact ?? 'Contact'}>
             <h2 className="text-base font-black uppercase tracking-wide text-off-white">{copy?.contact ?? 'Contact'}</h2>
             <div className="mt-4 space-y-4 text-sm leading-6 text-gray-300">
-              <p><span className="block font-semibold text-off-white">{isArabic ? 'ورشة دبي' : 'Dubai Workshop'}</span>{isArabic ? <>منطقة القوز الصناعية 3<br />مستودع رقم 11–15، دبي، الإمارات</> : <>Al Quoz Industrial Area 3<br />Warehouse No. 11–15, Dubai, UAE</>}</p>
-              <p><span className="block font-semibold text-off-white">{isArabic ? 'ساعات العمل' : 'Working Hours'}</span>{isArabic ? <>الاثنين–الجمعة: 8 صباحاً–6:30 مساءً<br />السبت: 8 صباحاً–2 مساءً</> : <>Monday–Friday: 8:00 AM–6:30 PM<br />Saturday: 8:00 AM–2:00 PM</>}</p>
+              <p><span className="block font-semibold text-off-white">{isArabic ? 'ورشة دبي' : 'Dubai Workshop'}</span>{isArabic ? <>منطقة القوز الصناعية 3<br />المستودعات 11–15، دبي، الإمارات</> : <>Al Quoz Industrial Area 3<br />Warehouses 11–15, Dubai, UAE</>}</p>
               <p><a href="tel:+97143402223" className="font-semibold text-off-white transition-colors hover:text-burnt-orange">+971 4 340 2223</a><br /><a href="mailto:info@digitecme.com" className="transition-colors hover:text-burnt-orange">info@digitecme.com</a></p>
             </div>
             <div className="mt-5 flex gap-3" aria-label={isArabic ? 'حسابات التواصل الاجتماعي' : 'Social media'}>
               <a href="https://www.instagram.com/digi_tec/" target="_blank" rel="noopener noreferrer" className="rounded-lg border border-gray-700 px-3 py-2 text-xs font-bold text-gray-300 transition-colors hover:border-burnt-orange hover:text-burnt-orange" aria-label={isArabic ? 'ديجي-تك على إنستغرام' : 'DIGI-TEC on Instagram'}>IG</a>
               <a href="https://www.facebook.com/Digitecme/" target="_blank" rel="noopener noreferrer" className="rounded-lg border border-gray-700 px-3 py-2 text-xs font-bold text-gray-300 transition-colors hover:border-burnt-orange hover:text-burnt-orange" aria-label={isArabic ? 'ديجي-تك على فيسبوك' : 'DIGI-TEC on Facebook'}>FB</a>
-              <a href="https://www.youtube.com/@gad-motors-officialchannel8804" target="_blank" rel="noopener noreferrer" className="rounded-lg border border-gray-700 px-3 py-2 text-xs font-bold text-gray-300 transition-colors hover:border-burnt-orange hover:text-burnt-orange" aria-label={isArabic ? 'ديجي-تك على يوتيوب' : 'DIGI-TEC on YouTube'}>YT</a>
             </div>
           </section>
         </div>

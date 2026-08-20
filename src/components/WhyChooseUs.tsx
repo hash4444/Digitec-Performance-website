@@ -13,27 +13,24 @@ export const WhyChooseUs = () => {
   const copy = isArabic ? arHome.why : null;
   const reasons: Stat[] = [
     {
-      value: 40,
-      suffix: '+',
-      title: 'Years of Excellence',
-      description: 'Proven track record in luxury automotive performance',
+      raw: '2002',
+      title: 'Established in Dubai',
+      description: 'Serving vehicle owners from our Al Quoz workshop since 2002',
     },
     {
-      value: 50000,
-      suffix: '+',
-      title: 'Cars Served',
-      description: 'Successfully enhanced performance for discerning clients',
+      raw: 'Al Quoz',
+      title: 'Dubai Workshop',
+      description: 'Located in Al Quoz Industrial Area 3, Warehouses 11–15',
     },
     {
-      value: 8000,
-      suffix: '+',
-      title: 'Satisfied Clients',
-      description: 'Unwavering commitment to exceeding expectations',
+      raw: 'Inspect',
+      title: 'Start With the Vehicle',
+      description: 'The reported concern and current condition guide the next step',
     },
     {
-      raw: '24/7',
-      title: 'Premium Support',
-      description: 'Round-the-clock assistance for our valued clients',
+      raw: 'Explain',
+      title: 'Clear Repair Scope',
+      description: 'Findings and proposed work are discussed before approval',
     },
   ];
   const displayedReasons = reasons.map((reason, index) => copy ? { ...reason, ...copy.reasons[index] } : reason);
@@ -50,8 +47,7 @@ export const WhyChooseUs = () => {
             {copy ? copy.title : <>Why Choose <span className="text-burnt-orange">D</span>IGI-TEC</>}
           </h2>
           <p className="text-sm sm:text-base lg:text-lg text-gray-300 max-w-4xl mx-auto leading-snug sm:leading-relaxed px-4">
-            {copy?.description ?? <>Dubai's most trusted name in luxury automotive performance. Our commitment to excellence,
-            cutting-edge technology, and personalized service sets us apart in the region.</>}
+            {copy?.description ?? <>An independent Dubai workshop for maintenance, diagnostics, repair, body work and vehicle-specific performance projects, established in 2002.</>}
           </p>
         </Reveal>
 
@@ -75,24 +71,23 @@ export const WhyChooseUs = () => {
 
         <Reveal className="card-premium rounded-2xl p-4 sm:p-8 lg:p-12 text-center">
           <h3 className="text-lg sm:text-3xl font-bold mb-3 sm:mb-6">
-            {copy ? copy.facilityTitle : <>State-of-the-Art Facility in the Heart of <span className="text-burnt-orange">D</span>ubai</>}
+            {copy ? copy.facilityTitle : <>Our Workshop in <span className="text-burnt-orange">A</span>l Quoz, Dubai</>}
           </h3>
           <p className="text-sm sm:text-xl text-gray-300 mb-4 sm:mb-8 max-w-4xl mx-auto px-2 sm:px-4 leading-snug sm:leading-relaxed">
-            {copy?.facilityText ?? <>Our 40,000 sq ft facility features the latest diagnostic equipment, precision tools,
-            and climate-controlled environments to ensure your luxury vehicle receives the care it deserves.</>}
+            {copy?.facilityText ?? <>Visit Digi-Tec Performance Center at Al Quoz Industrial Area 3, Warehouses 11–15. Contact the team with your vehicle details so the appropriate inspection or service can be arranged.</>}
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-2.5 sm:gap-6 lg:gap-8 text-sm">
             <div className="bg-white/[0.03] border border-white/[0.06] rounded-xl p-3 sm:p-6">
               <div className="font-semibold text-burnt-orange mb-1 sm:mb-2 text-sm sm:text-lg">{copy?.facilities[0].title ?? 'Advanced Diagnostics'}</div>
-              <div className="text-gray-400 text-xs sm:text-sm">{copy?.facilities[0].text ?? 'Latest OEM diagnostic equipment'}</div>
+              <div className="text-gray-400 text-xs sm:text-sm">{copy?.facilities[0].text ?? 'Fault finding based on the reported concern and vehicle condition'}</div>
             </div>
             <div className="bg-white/[0.03] border border-white/[0.06] rounded-xl p-3 sm:p-6">
-              <div className="font-semibold text-burnt-orange mb-1 sm:mb-2 text-sm sm:text-lg">{copy?.facilities[1].title ?? 'Climate Controlled'}</div>
-              <div className="text-gray-400 text-xs sm:text-sm">{copy?.facilities[1].text ?? 'Optimal working conditions'}</div>
+              <div className="font-semibold text-burnt-orange mb-1 sm:mb-2 text-sm sm:text-lg">{copy?.facilities[1].title ?? 'Workshop Services'}</div>
+              <div className="text-gray-400 text-xs sm:text-sm">{copy?.facilities[1].text ?? 'Maintenance plus mechanical, electrical and body repair'}</div>
             </div>
             <div className="bg-white/[0.03] border border-white/[0.06] rounded-xl p-3 sm:p-6">
-              <div className="font-semibold text-burnt-orange mb-1 sm:mb-2 text-sm sm:text-lg">{copy?.facilities[2].title ?? 'Secure Storage'}</div>
-              <div className="text-gray-400 text-xs sm:text-sm">{copy?.facilities[2].text ?? '24/7 monitored facility'}</div>
+              <div className="font-semibold text-burnt-orange mb-1 sm:mb-2 text-sm sm:text-lg">{copy?.facilities[2].title ?? 'Project Planning'}</div>
+              <div className="text-gray-400 text-xs sm:text-sm">{copy?.facilities[2].text ?? 'Vehicle-specific discussion before performance or conversion work'}</div>
             </div>
           </div>
         </Reveal>

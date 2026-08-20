@@ -9,14 +9,17 @@ export default defineTool({
   annotations: { readOnlyHint: true, idempotentHint: true, openWorldHint: false },
   handler: () => {
     const info = {
-      business: "Digitec Performance Center",
+      business: "Digi-Tec Performance Center",
+      established: 2002,
       phone: "+971 4 340 2223",
       whatsapp: "+971 4 340 2223",
       whatsapp_link: "https://wa.me/97143402223",
       website: "https://digitecme.com",
-      area: "Al Quoz Industrial Area, Dubai, UAE",
+      email: "info@digitecme.com",
+      address: "Al Quoz Industrial Area 3, Warehouses 11–15, Dubai, UAE",
+      service_area: "Dubai",
       specialization:
-        "Independent workshop for German and luxury cars: Mercedes-Benz, BMW, Audi, Porsche, Bentley, Ferrari, Lamborghini, McLaren, Rolls-Royce, Aston Martin, Land Rover, Maybach, Bugatti.",
+        "Independent workshop for vehicle inspection, maintenance, mechanical and electrical repair, body work, and vehicle-specific performance-project consultation. Confirm coverage for the exact vehicle and requested work.",
     };
     return {
       content: [{ type: "text", text: JSON.stringify(info, null, 2) }],

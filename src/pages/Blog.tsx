@@ -31,10 +31,11 @@ const Blog = () => {
             : 'Expert insights on Mercedes service, GAD tuning, ceramic coating and luxury car care in Dubai.',
           type: 'CollectionPage',
           breadcrumbId: `${url}#breadcrumb`,
+          mainEntityId: `${url}#blog`,
         }),
         buildBreadcrumb(url, [
-          { name: 'Home', url: 'https://digitecme.com/' },
-          { name: 'Blog', url },
+          { name: isArabic ? 'الرئيسية' : 'Home', url: `https://digitecme.com${isArabic ? '/ar' : '/'}` },
+          { name: isArabic ? 'المقالات' : 'Blog', url },
         ]),
         {
           '@type': 'Blog',
@@ -48,12 +49,12 @@ const Blog = () => {
             headline: p.title,
             url: `https://digitecme.com${isArabic ? '/ar' : ''}/blog/${p.slug}`,
             datePublished: p.date,
-            author: { '@type': 'Organization', name: p.author },
+            author: organizationRef,
             publisher: organizationRef,
           })),
         },
       ]),
-    [allPosts],
+    [allPosts, isArabic, url],
   );
 
   useSeo({
@@ -170,6 +171,7 @@ const Blog = () => {
                           day: 'numeric',
                           month: 'short',
                           year: 'numeric',
+                          timeZone: 'UTC',
                         })}
                       </span>
                       <span className="flex items-center gap-1.5">

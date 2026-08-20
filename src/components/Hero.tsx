@@ -25,7 +25,7 @@ export const Hero = () => {
       <div className="absolute bottom-0 inset-x-0 h-24 sm:h-40 bg-gradient-to-b from-transparent to-[#101113]"></div>
 
       <div className="relative z-10 text-center max-w-6xl mx-auto">
-        <span className="eyebrow mb-4 sm:mb-8">{copy?.eyebrow ?? "Dubai's Elite Performance Workshop"}</span>
+        <span className="eyebrow mb-4 sm:mb-8">{copy?.eyebrow ?? 'Established in 2002 · Al Quoz, Dubai'}</span>
 
         <h1 className="text-[2rem] sm:text-5xl md:text-6xl lg:text-8xl font-black mb-3 sm:mb-8 leading-tight">
           <span className="text-burnt-orange">D</span>IGI-TEC
@@ -38,7 +38,7 @@ export const Hero = () => {
         </h2>
 
         <p className="text-sm sm:text-lg md:text-xl text-gray-300 mb-6 sm:mb-12 max-w-3xl mx-auto leading-snug sm:leading-relaxed px-4">
-          {copy?.description ?? "Digitec Performance Center is Dubai's elite automotive workshop, built for drivers who demand more. From diagnostics to full custom tuning, we bring cutting-edge service to the world's most powerful machines."}
+          {copy?.description ?? 'Independent vehicle maintenance, diagnostics, repair, body work and performance-project support from Digi-Tec Performance Center in Al Quoz Industrial Area 3.'}
         </p>
 
         <div className="flex flex-col sm:flex-row gap-3 sm:gap-5 justify-center items-center px-4">
@@ -52,12 +52,12 @@ export const Hero = () => {
           </a>
 
           <a
-            href={`https://wa.me/97143402223?text=${encodeURIComponent("Hi, I'm interested in getting a free diagnosis for my vehicle.")}`}
+            href={`https://wa.me/97143402223?text=${encodeURIComponent("Hi, I'd like to discuss an inspection for my vehicle.")}`}
             target="_blank"
             rel="noopener noreferrer"
             className="btn-secondary w-full sm:w-auto"
           >
-            {copy?.diagnosis ?? 'Get a Free Diagnosis'}
+            {copy?.diagnosis ?? 'Discuss an Inspection'}
           </a>
         </div>
 

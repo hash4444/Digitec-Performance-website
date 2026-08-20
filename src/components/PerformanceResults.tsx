@@ -3,10 +3,10 @@ import React from 'react';
 
 export const PerformanceResults = () => {
   const results = [
-    { metric: 'Average HP Gain', value: '+185', unit: 'HP' },
-    { metric: 'Torque Increase', value: '+220', unit: 'NM' },
-    { metric: '0-100 Improvement', value: '-0.8', unit: 'SEC' },
-    { metric: 'Fuel Efficiency', value: '+12', unit: '%' }
+    { metric: 'Vehicle condition', value: '01', unit: 'INSPECT' },
+    { metric: 'Project goals', value: '02', unit: 'DEFINE' },
+    { metric: 'Parts and software', value: '03', unit: 'CONFIRM' },
+    { metric: 'Results', value: '04', unit: 'VERIFY' }
   ];
 
   return (
@@ -20,8 +20,7 @@ export const PerformanceResults = () => {
             Performance <span className="text-burnt-orange">D</span>ata
           </h2>
           <p className="text-lg sm:text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed px-4">
-            Real performance gains from our precision tuning. These numbers represent average improvements 
-            across our client portfolio, demonstrating our commitment to measurable results.
+            Each performance project begins with the exact vehicle, its current condition and the owner's intended use. Any measurable target must be agreed for that individual project.
           </p>
         </div>
         
@@ -46,8 +45,7 @@ export const PerformanceResults = () => {
             Before & After Performance Analysis
           </h3>
           <p className="text-base sm:text-lg lg:text-xl text-gray-300 mb-6 sm:mb-8 max-w-4xl mx-auto px-4">
-            Every vehicle undergoes comprehensive dyno testing before and after modifications. 
-            We provide detailed performance reports showing exactly what improvements have been achieved.
+            Available baseline and post-project checks depend on the vehicle, modification scope and agreed test method. Results are recorded when measurement is included in the approved project.
           </p>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 lg:gap-12 max-w-4xl mx-auto">
@@ -56,19 +54,19 @@ export const PerformanceResults = () => {
               <ul className="space-y-2 sm:space-y-3 text-gray-300">
                 <li className="flex items-center text-sm sm:text-base"><span className="w-2 h-2 bg-burnt-orange rounded-full mr-3 flex-shrink-0"></span>Peak Horsepower & Torque</li>
                 <li className="flex items-center text-sm sm:text-base"><span className="w-2 h-2 bg-burnt-orange rounded-full mr-3 flex-shrink-0"></span>Power Curve Analysis</li>
-                <li className="flex items-center text-sm sm:text-base"><span className="w-2 h-2 bg-burnt-orange rounded-full mr-3 flex-shrink-0"></span>Acceleration Times</li>
-                <li className="flex items-center text-sm sm:text-base"><span className="w-2 h-2 bg-burnt-orange rounded-full mr-3 flex-shrink-0"></span>Fuel Consumption</li>
-                <li className="flex items-center text-sm sm:text-base"><span className="w-2 h-2 bg-burnt-orange rounded-full mr-3 flex-shrink-0"></span>Emission Levels</li>
+                <li className="flex items-center text-sm sm:text-base"><span className="w-2 h-2 bg-burnt-orange rounded-full mr-3 flex-shrink-0"></span>Relevant diagnostic data</li>
+                <li className="flex items-center text-sm sm:text-base"><span className="w-2 h-2 bg-burnt-orange rounded-full mr-3 flex-shrink-0"></span>Temperatures and system behavior</li>
+                <li className="flex items-center text-sm sm:text-base"><span className="w-2 h-2 bg-burnt-orange rounded-full mr-3 flex-shrink-0"></span>Agreed before-and-after checks</li>
               </ul>
             </div>
             
             <div className="text-left bg-black/30 rounded-xl sm:rounded-2xl p-4 sm:p-6 lg:p-8 backdrop-blur-sm">
               <h4 className="text-lg sm:text-xl font-semibold text-burnt-orange mb-4 sm:mb-6">Documentation Provided:</h4>
               <ul className="space-y-2 sm:space-y-3 text-gray-300">
-                <li className="flex items-center text-sm sm:text-base"><span className="w-2 h-2 bg-burnt-orange rounded-full mr-3 flex-shrink-0"></span>Detailed Dyno Reports</li>
-                <li className="flex items-center text-sm sm:text-base"><span className="w-2 h-2 bg-burnt-orange rounded-full mr-3 flex-shrink-0"></span>Performance Certificates</li>
-                <li className="flex items-center text-sm sm:text-base"><span className="w-2 h-2 bg-burnt-orange rounded-full mr-3 flex-shrink-0"></span>Modification Documentation</li>
-                <li className="flex items-center text-sm sm:text-base"><span className="w-2 h-2 bg-burnt-orange rounded-full mr-3 flex-shrink-0"></span>Maintenance Guidelines</li>
+                <li className="flex items-center text-sm sm:text-base"><span className="w-2 h-2 bg-burnt-orange rounded-full mr-3 flex-shrink-0"></span>Approved project scope</li>
+                <li className="flex items-center text-sm sm:text-base"><span className="w-2 h-2 bg-burnt-orange rounded-full mr-3 flex-shrink-0"></span>Installed parts and software notes</li>
+                <li className="flex items-center text-sm sm:text-base"><span className="w-2 h-2 bg-burnt-orange rounded-full mr-3 flex-shrink-0"></span>Available measurement records</li>
+                <li className="flex items-center text-sm sm:text-base"><span className="w-2 h-2 bg-burnt-orange rounded-full mr-3 flex-shrink-0"></span>Relevant maintenance guidance</li>
               </ul>
             </div>
           </div>

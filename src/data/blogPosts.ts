@@ -359,7 +359,7 @@ export const blogPosts: BlogPost[] = [
       { type: 'h3', text: 'How much does brake repair cost in Dubai?' },
       {
         type: 'p',
-        text: 'The cost depends on your vehicle and the parts required. Luxury vehicles like Mercedes, BMW, and Audi may require high performance or OEM components, but Digitec offers transparent pricing with no hidden fees.',
+        text: 'The cost depends on the vehicle, inspection findings, parts specification and labour scope. Ask for an estimate that identifies the proposed components and work before approving the repair.',
       },
       { type: 'h3', text: 'Is it safe to drive with worn brake pads?' },
       {
@@ -451,7 +451,7 @@ export const blogPosts: BlogPost[] = [
       { type: 'h3', text: 'How much does a car battery replacement cost in Dubai?' },
       {
         type: 'p',
-        text: 'The cost depends on your vehicle and battery type. Premium European cars like Mercedes, BMW, and Audi typically require higher-spec batteries, but at Digitec Performance Center, we offer competitive pricing with OEM-quality batteries and no hidden costs.',
+        text: 'The cost depends on the vehicle, battery specification, access, registration or coding requirements and post-installation checks. Confirm the proposed battery and labour scope for the exact vehicle before approval.',
       },
       { type: 'h3', text: 'Can I drive with a weak car battery?' },
       {
@@ -466,7 +466,7 @@ export const blogPosts: BlogPost[] = [
       { type: 'h3', text: 'How long does a battery replacement take?' },
       {
         type: 'p',
-        text: 'Most battery replacements are completed in under 30 to 60 minutes, including testing and system checks.',
+        text: 'Timing depends on battery access, the vehicle’s electrical system, coding or registration requirements, and the checks needed after installation. Confirm the expected timing for the exact vehicle before booking.',
       },
       { type: 'h3', text: 'Do you install batteries for Mercedes, BMW, Audi, and other luxury cars?' },
       {
@@ -477,9 +477,9 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: 'best-car-workshop-dubai',
-    title: 'Best Car Workshop in Dubai (2026 Guide)',
+    title: 'How to Choose a Car Workshop in Dubai (2026 Guide)',
     excerpt:
-      "In a city driven by ambition and home to extraordinary automobiles, Digitec Performance Center in Al Quoz has earned the trust of the UAE's most discerning drivers.",
+      'A practical guide to comparing workshop diagnostics, service scope, parts options, estimates and communication before approving work.',
     category: 'Mercedes',
     author: 'DIGI-TEC Performance',
     date: '2026-04-17',
@@ -489,33 +489,33 @@ export const blogPosts: BlogPost[] = [
     metaDescription:
       'A practical 2026 guide to choosing a car workshop in Dubai, including the questions to ask about diagnostics, parts, estimates, and aftercare.',
     keywords:
-      'best car workshop Dubai, car repair Dubai, German car specialist Dubai, Mercedes service Dubai, ECU tuning Dubai',
-    ogTitle: 'Best Car Workshop in Dubai (2026 Guide) | Digitec',
+      'car workshop Dubai, car repair Dubai, German car service Dubai, Mercedes service Dubai, ECU tuning Dubai',
+    ogTitle: 'How to Choose a Car Workshop in Dubai | 2026 Guide',
     ogDescription:
-      'Expert car repair, Mercedes service, ECU tuning & GAD upgrades in Dubai. Trusted by luxury car owners. Visit Digitec Performance Center.',
+      'Compare diagnostics, service scope, parts options, estimates and communication before choosing a Dubai car workshop.',
     ogType: 'website',
     twitterCard: 'summary_large_image',
-    twitterTitle: 'Best Car Workshop in Dubai (2026 Guide) | Digitec',
+    twitterTitle: 'How to Choose a Car Workshop in Dubai | 2026 Guide',
     twitterDescription:
-      'Expert car repair, Mercedes service, ECU tuning & GAD upgrades in Dubai. Trusted by luxury car owners.',
+      'Practical questions to ask about diagnostics, parts, estimates and approval before booking workshop work.',
     content: [
       {
         type: 'p',
-        text: "In a city driven by ambition and home to some of the world's most extraordinary automobiles, finding a workshop that truly understands your vehicle is essential. Digitec Performance Center, located in the heart of Al Quoz, Dubai, has spent decades earning the trust of the UAE's most discerning drivers, including owners of Mercedes-Benz, Porsche, Audi, BMW, Ferrari, and more. This is not just a car workshop. It is a performance institution.",
+        text: 'Choosing a workshop for a European, luxury or performance vehicle requires more than comparing a headline price. Owners should understand how the vehicle will be inspected, which work is being proposed, what parts and fluids are specified, and what checks follow the repair. Digi-Tec Performance Center is an independent workshop in Al Quoz, Dubai, established in 2002.',
       },
       {
         type: 'p',
-        text: 'Whether you are searching for the best car workshop in Dubai, require expert Mercedes car service, need a certified German car specialist in Dubai, or are looking for precision ECU tuning and GAD Motors performance upgrades, Digitec Performance Center is the answer.',
+        text: 'This guide explains practical questions to ask when comparing car repair, Mercedes service, diagnostics or performance-related work in Dubai. The exact workshop scope should always be confirmed for the vehicle, model year and requested job before booking.',
       },
       {
         type: 'p',
-        text: 'This article explores five key pillars that define Digitec\u2019s position in the automotive industry: excellence, proven results, trust, reputation, and leadership.',
+        text: 'The five useful comparison areas are the diagnostic process, available service scope, parts choices, estimate and approval process, and communication before and after the work.',
       },
-      { type: 'h2', text: 'Why Digitec Performance Center Is Great' },
-      { type: 'h3', text: 'A Complete Automotive Universe Under One Roof' },
+      { type: 'h2', text: 'How to Evaluate a Car Workshop in Dubai' },
+      { type: 'h3', text: 'Confirm the Available Service Scope' },
       {
         type: 'p',
-        text: 'What separates a great workshop from a good one is breadth without compromise. Digitec Performance Center offers an exceptional range of services covering mechanical, electrical, and performance disciplines required by luxury and high-performance vehicles. From routine oil changes to full AMG and GAD tuning projects, every service is delivered with dealer-level precision.',
+        text: 'A workshop should confirm that it can inspect the exact vehicle and requested system before accepting the job. Ask whether mechanical, electrical, body or performance-related work will be completed in-house, coordinated with another provider or excluded from the estimate.',
       },
       { type: 'h3', text: 'Comprehensive Service Offering' },
       {
@@ -530,27 +530,27 @@ export const blogPosts: BlogPost[] = [
           'Gearbox repair and full gearbox servicing, including fluid overhauls and rebuilds',
           'Suspension repair, including geometry correction and full suspension overhauls',
           'Brake repair services, including pad replacement, rotor resurfacing, and complete brake servicing',
-          'Battery replacement and car battery change for all luxury vehicles, including Mercedes models',
+          'Battery testing and replacement where supported for the exact vehicle',
           'Tire repair, tire replacement, and precision wheel alignment',
           'Car AC repair and full air conditioning servicing',
           'ECU tuning and performance optimization',
-          'Car tuning using GAD Motors systems and AMG performance upgrades',
-          'Premium oil services using manufacturer-approved lubricants',
+          'Performance consultation and tuning work subject to vehicle inspection and confirmed availability',
+          'Oil services using the specification agreed for the exact vehicle',
           'Bodywork, paint correction, and custom modifications',
         ],
       },
       {
         type: 'p',
-        text: 'This integrated approach ensures that clients do not need to visit multiple workshops. Every service is delivered with continuity, precision, and accountability.',
+        text: 'This list is a comparison checklist, not a promise that every job is available for every vehicle. Confirm the exact service, equipment, parts route and expected timing with the workshop before booking.',
       },
-      { type: 'h3', text: 'German Engineered Expertise for German Vehicles' },
+      { type: 'h3', text: 'Ask About Relevant Vehicle Experience' },
       {
         type: 'p',
-        text: "At the core of Digitec's identity is deep expertise in German automotive engineering. As a recognized German car specialist in Dubai, the workshop's technicians are trained to meet the exact standards required by Mercedes-Benz, Porsche, Audi, and BMW.",
+        text: 'For a German or European vehicle, ask how the workshop identifies the exact platform, reviews fault data and service history, and confirms the procedure for the requested work. Relevant experience should be demonstrated through a clear diagnostic and approval process rather than an unsupported ranking claim.',
       },
       {
         type: 'p',
-        text: 'For Mercedes car service, Digitec is widely regarded as a leading independent alternative to official dealerships in the UAE. Every model, from the C-Class to AMG and Maybach, is serviced using manufacturer approved diagnostic tools, OEM parts, and advanced calibration systems.',
+        text: 'Digi-Tec provides independent Mercedes and European-car service from its Al Quoz workshop. Owners should send the model, year, mileage and concern so the team can confirm the available inspection, proposed parts options and scope before work begins.',
       },
     ],
   },
@@ -597,9 +597,9 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: 'gad-tuning-explained',
-    title: 'GAD Tuning Explained: What Makes It Different',
+    title: 'GAD Tuning: Questions to Ask Before an ECU Project',
     excerpt:
-      'GAD Motors is one of Germany’s most respected Mercedes tuning houses. Here is what their philosophy means for your car.',
+      'A practical checklist for evaluating software, supporting hardware, cooling, fuel, testing and reversibility before a GAD-branded tuning project.',
     category: 'Tuning',
     author: 'DIGI-TEC Performance',
     date: '2026-04-08',
@@ -607,30 +607,32 @@ export const blogPosts: BlogPost[] = [
     coverGradient: 'from-burnt-orange/50 via-black to-burnt-orange/20',
     metaTitle: 'GAD Tuning Explained | Digitec Performance Center Dubai',
     metaDescription:
-      'Discover what makes GAD Motors tuning different. Official GAD partner in Dubai explains the engineering behind every stage.',
+      'Questions to ask before a GAD tuning project in Dubai, including vehicle health, calibration scope, supporting hardware, fuel, cooling and post-installation checks.',
     content: [
       {
         type: 'p',
-        text: 'GAD Motors built its reputation on one principle: factory reliability with significantly more performance. Their tuning is engineered, not improvised.',
+        text: 'A GAD-branded software or hardware project should be assessed against the exact vehicle, its condition, current modifications, fuel and intended use. A brand name or stage label does not replace a vehicle-specific inspection and written project scope.',
       },
-      { type: 'h2', text: 'The GAD Philosophy' },
+      { type: 'h2', text: 'Confirm the Calibration Scope' },
       {
         type: 'p',
-        text: 'Every GAD remap starts from the original Mercedes calibration. Engineers map fuel, ignition, boost, and torque limiters individually for each engine variant. Nothing is generic.',
+        text: 'Ask who supplies the calibration, which engine and transmission software versions it supports, what is changed, what fuel it requires, and how the original file is handled. The answers should be specific to the vehicle rather than a generic stage description.',
       },
-      { type: 'h2', text: 'What You Actually Get' },
+      { type: 'h2', text: 'What to Confirm Before Work' },
       {
         type: 'ul',
         items: [
-          'Custom ECU files developed on dyno, not downloaded',
-          'Hardware kits matched to UAE fuel quality',
-          'Reversibility: factory file always preserved',
+          'Vehicle-health checks and any faults that must be resolved first',
+          'The exact software, hardware and fuel required by the proposed target',
+          'Cooling, fuelling and transmission capacity at the intended output',
+          'The validation method, expected result and limitations',
+          'Reversibility, warranty implications and the records supplied after work',
         ],
       },
       { type: 'h2', text: 'Why It Matters in Dubai' },
       {
         type: 'p',
-        text: 'Heat reduces air density, which kills turbo efficiency. GAD calibrations account for this with corrected boost curves and adjusted enrichment, so you get the promised performance even in August.',
+        text: 'High ambient and intake temperatures can reduce repeatable output and increase cooling demand. The project plan should account for local fuel, cooling condition and the way the car will be used, without treating a headline power figure as a universal promise.',
       },
     ],
   },
@@ -961,7 +963,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: 'best-defender-workshop-dubai',
-    title: 'Best Defender Workshop in Dubai: A Real Accident Repair Case Study',
+    title: 'Defender Accident Repair in Dubai: A Real Workshop Case Study',
     excerpt:
       'What should you expect from a Defender repair workshop after an accident? Follow a real front-end repair case, from strip-down and inspection to final checks.',
     category: 'Workshop Guides',
@@ -997,17 +999,17 @@ export const blogPosts: BlogPost[] = [
         caption: 'Completed Defender following the repair process and final workshop checks.',
       },
     ],
-    metaTitle: 'Best Defender Workshop Dubai | Digi-Tec',
+    metaTitle: 'Defender Accident Repair Dubai | Real Workshop Case',
     metaDescription:
       'Looking for a Defender workshop in Dubai? See how Digi-Tec approaches accident repair, diagnostics, bodywork and final checks for Land Rover Defender owners.',
     keywords:
-      'best Defender workshop Dubai, Defender repair Dubai, Land Rover Defender accident repair Dubai, Defender body repair Dubai, Defender diagnostics Dubai, Defender specialist Al Quoz',
-    ogTitle: 'Best Defender Workshop in Dubai: Real Repair Case Study',
+      'Defender workshop Dubai, Defender repair Dubai, Land Rover Defender accident repair Dubai, Defender body repair Dubai, Defender diagnostics Dubai, Defender service Al Quoz',
+    ogTitle: 'Defender Accident Repair in Dubai: Real Workshop Case',
     ogDescription:
       'A real Land Rover Defender accident-repair case, showing why proper strip-down, diagnosis and final system checks matter.',
     ogType: 'article',
     twitterCard: 'summary_large_image',
-    twitterTitle: 'Best Defender Workshop Dubai | Digi-Tec',
+    twitterTitle: 'Defender Accident Repair Dubai | Digi-Tec',
     twitterDescription:
       'See a real Defender accident-repair case at Digi-Tec Performance Centre in Al Quoz, Dubai.',
     canonicalOverride: 'https://digitecme.com/blog/best-defender-workshop-dubai',
@@ -1015,7 +1017,7 @@ export const blogPosts: BlogPost[] = [
       { type: 'h2', text: 'What Makes a Good Defender Workshop in Dubai?' },
       {
         type: 'p',
-        text: 'Finding the best Defender workshop in Dubai is not about choosing the quickest quote or replacing visible panels alone. A modern Land Rover Defender is a complex vehicle: behind the bumper and lights sit cooling components, wiring looms, sensors, mounting points and driver-assistance equipment. After an accident, the right workshop must inspect what cannot be seen before committing to a repair plan.',
+        text: 'Choosing a Defender workshop in Dubai is not about selecting the quickest quote or replacing visible panels alone. A modern Land Rover Defender is a complex vehicle: behind the bumper and lights sit cooling components, wiring looms, sensors, mounting points and driver-assistance equipment. After an accident, the workshop should inspect what cannot be seen before committing to a repair plan.',
       },
       {
         type: 'p',
@@ -1063,7 +1065,7 @@ export const blogPosts: BlogPost[] = [
         type: 'p',
         text: 'At Digi-Tec in Al Quoz, we combine mechanical diagnostics, electrical inspection, body repair and vehicle handover checks in one workshop process. Before work begins, the owner receives a clear explanation of the findings and the recommended repair route. When a part choice is needed, we discuss genuine OEM, OE-supplier and suitable approved options according to the repair requirement.',
       },
-      { type: 'h2', text: 'How to Choose the Best Defender Workshop in Dubai' },
+      { type: 'h2', text: 'How to Choose a Defender Workshop in Dubai' },
       {
         type: 'ul',
         items: [
@@ -1075,7 +1077,7 @@ export const blogPosts: BlogPost[] = [
           'Use a workshop that can support future Defender maintenance, suspension, electrical and diagnostic needs',
         ],
       },
-      { type: 'h2', text: 'Why Defender Owners Choose Digi-Tec' },
+      { type: 'h2', text: 'What This Defender Case Demonstrates' },
       {
         type: 'p',
         text: 'Digi-Tec Performance Centre is an independent workshop in Al Quoz, Dubai, supporting Defender, Range Rover, Land Rover and other luxury vehicles. Our work is diagnostic-first: we inspect the affected system, explain the findings clearly and use the appropriate repair process rather than relying on a cosmetic shortcut. Whether your Defender needs accident repair, diagnostics, routine service, suspension work, air-conditioning repair or electrical support, our team can arrange an inspection and give you a practical next step.',

@@ -106,18 +106,20 @@ const BlogPost = () => {
       url,
       name: post.metaTitle,
       description: post.metaDescription,
+      type: 'ItemPage',
       breadcrumbId: `${url}#breadcrumb`,
+      primaryImage: post.coverImage,
       datePublished: post.date,
-      dateModified: post.date,
+      mainEntityId: `${url}#article`,
     });
     const article = buildArticle({
       url,
       headline: post.title,
       description: post.excerpt,
       datePublished: post.date,
-      dateModified: post.date,
       author: post.author,
       authorType: 'Organization',
+      image: post.coverImage,
       section: post.category,
       keywords: post.keywords,
     });
@@ -198,6 +200,7 @@ const BlogPost = () => {
                 day: 'numeric',
                 month: 'long',
                 year: 'numeric',
+                timeZone: 'UTC',
               })}
             </span>
             <span className="flex items-center gap-1.5">

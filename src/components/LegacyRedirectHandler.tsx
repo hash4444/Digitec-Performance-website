@@ -1,40 +1,34 @@
-import { useEffect } from 'react';
+import { startTransition, useEffect } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 
+const normalizeAttributionSearch = (search: string) => {
+  const retained = new URLSearchParams();
+
+  new URLSearchParams(search).forEach((value, key) => {
+    const normalizedKey = key.toLowerCase();
+    if (normalizedKey === 'gclid' || /^utm_[a-z0-9_]+$/.test(normalizedKey)) {
+      retained.append(normalizedKey, value);
+    }
+  });
+
+  const normalized = retained.toString();
+  return normalized ? `?${normalized}` : '';
+};
+
 /**
- * Global legacy URL normalizer.
- * Runs on every route change BEFORE <Routes> matches, so we can:
- *  - Strip WordPress-style trailing slashes (/about/ -> /about)
- *  - Strip query strings used by old PageSpeed / WP plugins (?PageSpeed=noscript, ?replytocom, ?feed, etc.)
- *  - Hard-redirect old WP feed / search / attachment URLs to the closest live page (single hop, 301-equivalent via replace)
- *  - Lowercase paths (Google sometimes indexes mixed-case)
- *
- * All redirects use navigate(..., { replace: true }) so they do not create history entries
- * and behave like a permanent redirect for the user. Combined with the per-route <Navigate replace />
- * rules in App.tsx, every legacy URL resolves in a single hop to the final canonical URL.
+ * Client-side cleanup for legacy and marketing URLs. HTTP redirects remain the
+ * responsibility of the hosting layer; this keeps browser navigation clean when
+ * a legacy URL reaches the React application.
  */
 export const LegacyRedirectHandler = () => {
   const { pathname, search, hash } = useLocation();
   const navigate = useNavigate();
 
   useEffect(() => {
-    // 0. Force canonical host: apex domain + HTTPS.
-    //    Redirect www.digitecme.com → digitecme.com and http:// → https:// in a single hop.
-    if (typeof window !== 'undefined') {
-      const { hostname, protocol, host } = window.location;
-      const isProdHost = hostname === 'digitecme.com' || hostname === 'www.digitecme.com';
-      const needsHostFix = isProdHost && (hostname.startsWith('www.') || protocol !== 'https:');
-      if (needsHostFix) {
-        const target = `https://digitecme.com${pathname}${search}${hash}`;
-        window.location.replace(target);
-        return;
-      }
-    }
-
     let nextPath = pathname;
     let changed = false;
 
-    // 1. Lowercase the path (preserve case in query/hash)
+    // 1. Lowercase the path.
     if (nextPath !== nextPath.toLowerCase()) {
       nextPath = nextPath.toLowerCase();
       changed = true;
@@ -52,16 +46,14 @@ export const LegacyRedirectHandler = () => {
       changed = true;
     }
 
-    // 4. Drop ALL query parameters — site has no legitimate query-driven pages.
-    //    This nukes ?PageSpeed=noscript, ?replytocom=, ?p=, ?feed=, UTM-like junk we don't want indexed, etc.
-    //    (We keep UTM links working visually because GA reads them before this runs — but we strip from URL after.)
-    let nextSearch = search;
-    if (nextSearch && nextSearch.length > 0) {
-      nextSearch = '';
+    // 4. Retain attribution parameters and remove legacy or unrelated query junk.
+    //    Canonical URL generation is handled independently by the SEO layer.
+    const nextSearch = normalizeAttributionSearch(search);
+    if (nextSearch !== search) {
       changed = true;
     }
 
-    // 5. Feed / WordPress-only paths → home or closest section (single hop)
+    // 5. Send feed and WordPress-only paths to the closest live section.
     const feedRedirects: Array<[RegExp, string]> = [
       [/^\/feed$/, '/blog'],
       [/^\/comments\/feed$/, '/blog'],
@@ -74,19 +66,33 @@ export const LegacyRedirectHandler = () => {
       [/^\/tag(\/.*)?$/, '/blog'],
       [/^\/author(\/.*)?$/, '/about'],
       [/^\/attachment(\/.*)?$/, '/'],
-      [/^\/\?.*$/, '/'],
     ];
     for (const [pattern, target] of feedRedirects) {
       if (pattern.test(nextPath)) {
         nextPath = target;
-        nextSearch = '';
         changed = true;
         break;
       }
     }
 
+    // 6. Force the production origin while preserving allowed attribution data.
+    if (typeof window !== 'undefined') {
+      const { hostname, protocol } = window.location;
+      const isProdHost = hostname === 'digitecme.com' || hostname === 'www.digitecme.com';
+      const needsOriginFix = isProdHost && (hostname === 'www.digitecme.com' || protocol !== 'https:');
+      if (needsOriginFix) {
+        window.location.replace(`https://digitecme.com${nextPath}${nextSearch}${hash}`);
+        return;
+      }
+    }
+
     if (changed) {
-      navigate(`${nextPath}${nextSearch}${hash}`, { replace: true });
+      // A normalized URL can arrive while a lazy route is still hydrating.
+      // Mark the location update as non-urgent so React can finish reusing the
+      // prerendered Suspense boundary instead of switching it to client render.
+      startTransition(() => {
+        navigate(`${nextPath}${nextSearch}${hash}`, { replace: true });
+      });
     }
   }, [pathname, search, hash, navigate]);
 

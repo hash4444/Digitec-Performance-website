@@ -9,37 +9,37 @@ const services = [
     id: 'ppf',
     label: 'Paint Protection Film',
     icon: <Shield className="w-6 h-6" />,
-    headline: 'The Last Layer Your Paint Will Ever Need.',
-    description: 'Ultra-premium protection film, invisibly applied. Rock chips, road debris, UV damage: absorbed silently, leaving your finish exactly as it left the factory.',
+    headline: 'Paint Protection Film Options.',
+    description: 'Film coverage, edge treatment, preparation and finish are selected for the vehicle and confirmed in the quotation. Product properties depend on the chosen film.',
     image: ppfImage,
     features: [
-      'Self-healing technology: minor scratches vanish with heat',
-      'Hydrophobic top coat for effortless cleaning',
-      'Optically clear, zero visual distortion',
-      'Custom precision-cut for every panel',
+      'Product-rated self-healing properties where specified',
+      'Hydrophobic top-coat options',
+      'Optical finish assessed for the selected film',
+      'Panel coverage and cut plan agreed before installation',
     ],
     packages: [
-      { name: 'Full Body', coverage: 'Complete vehicle wrap. Total protection.', popular: true },
+      { name: 'Full Body', coverage: 'Quoted panel coverage for the complete exterior.', popular: true },
     ],
   },
   {
     id: 'ceramic',
     label: 'Ceramic Coating',
     icon: <Droplets className="w-6 h-6" />,
-    headline: 'Permanent Gloss. Effortless Maintenance.',
-    description: 'Nano-ceramic molecular bond that fuses with your clear coat, delivering showroom depth, extreme hydrophobicity, and years of UV resistance in a single application.',
+    headline: 'Ceramic Coating Options.',
+    description: 'Coating selection and preparation depend on the paint condition and requested finish. Hydrophobic, gloss and warranty properties vary by product and maintenance.',
     image: ceramicImage,
     features: [
-      '9H hardness rating: industry maximum',
-      'Extreme water beading & self-cleaning effect',
-      'UV and chemical resistance',
-      'Enhanced gloss depth up to 30%',
-      '5-year certified protection',
+      'Manufacturer-rated hardness where specified',
+      'Product-specific water-beading properties',
+      'Product-specific UV and chemical resistance',
+      'Paint preparation matched to current condition',
+      'Warranty terms confirmed for the selected product',
     ],
     packages: [
-      { name: 'Essential', coverage: 'Single-layer ceramic coat + paint decon', popular: false },
-      { name: 'Elite', coverage: 'Two-layer coat + wheels + trim + glass', popular: true },
-      { name: 'Ultimate', coverage: 'PPF + ceramic combo: the definitive shield', popular: false },
+      { name: 'Essential', coverage: 'Quoted coating and preparation scope', popular: false },
+      { name: 'Extended', coverage: 'Optional wheels, trim or glass coverage', popular: true },
+      { name: 'Combined', coverage: 'PPF and coating options assessed together', popular: false },
     ],
   },
 ];
@@ -64,7 +64,7 @@ export const PPFCeramicSection = () => {
             Shield Your Vehicle.<br className="hidden sm:block" /> Elevate Its Presence.
           </h2>
           <p className="text-gray-400 text-base sm:text-lg max-w-2xl mx-auto">
-            Trusted by Dubai's most discerning car owners, from AMG to M-Power, RS to Turbo S.
+            Discuss film or coating options for your vehicle at Digi-Tec's Al Quoz, Dubai workshop.
           </p>
         </div>
 
@@ -133,12 +133,12 @@ export const PPFCeramicSection = () => {
             </ul>
 
             <a
-              href={`https://wa.me/97143402223?text=${encodeURIComponent(`Hi, I'm interested in your ${active.label} service. Can I get a free quote?`)}`}
+              href={`https://wa.me/97143402223?text=${encodeURIComponent(`Hi, I'm interested in your ${active.label} service. Can I request an inspection and estimate?`)}`}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-burnt-orange hover:bg-burnt-orange/90 text-black font-bold text-sm sm:text-base px-8 py-4 rounded-2xl transition-all duration-300 hover:scale-105 shadow-xl shadow-burnt-orange/20 hover:shadow-burnt-orange/40"
             >
-              Get a Free Quote
+              Request an Estimate
               <ArrowRight className="w-4 h-4" />
             </a>
           </div>

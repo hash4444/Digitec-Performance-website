@@ -1,6 +1,4 @@
 /* Import Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Tajawal:wght@400;500;700;800;900&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -299,4 +297,227 @@
 .gpu-accelerated {
   transform: translateZ(0);
   will-change: transform;
+}
+
+/* Shared navigation styles live in the external stylesheet so SSR and hydration
+   receive identical markup. */
+.nav-link {
+  color: rgb(245 245 245);
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.025em;
+  padding: 0.5rem 0;
+  transition: color 150ms ease;
+  white-space: nowrap;
+}
+
+.nav-link:hover {
+  color: #ff6b35;
+}
+
+.mobile-link {
+  display: flex;
+  min-height: 3rem;
+  align-items: center;
+  border-radius: 0.625rem;
+  padding: 0.75rem 0.875rem;
+  color: rgb(229 231 235);
+  font-size: 1.05rem;
+  font-weight: 650;
+  transition: all 150ms ease;
+}
+
+.mobile-link:hover {
+  background: rgba(255, 255, 255, 0.05);
+  color: #ff6b35;
+}
+
+@keyframes brand-marquee-scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+.brand-marquee::before,
+.brand-marquee::after {
+  content: '';
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  bottom: 0;
+  width: clamp(2rem, 8vw, 9rem);
+  pointer-events: none;
+}
+
+.brand-marquee::before {
+  left: 0;
+  background: linear-gradient(90deg, #101113 12%, transparent);
+}
+
+.brand-marquee::after {
+  right: 0;
+  background: linear-gradient(270deg, #101113 12%, transparent);
+}
+
+.brand-marquee-track {
+  display: flex;
+  width: max-content;
+  align-items: center;
+  gap: clamp(1.1rem, 2.4vw, 2.25rem);
+  animation: brand-marquee-scroll 88s linear infinite;
+  will-change: transform;
+}
+
+.brand-marquee-right {
+  animation-direction: reverse;
+  animation-duration: 96s;
+}
+
+.brand-marquee:hover .brand-marquee-track,
+.brand-marquee:focus-within .brand-marquee-track {
+  animation-play-state: paused;
+}
+
+.brand-marquee-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 9.5rem;
+  height: 4.5rem;
+  flex: none;
+  padding: 0;
+  box-sizing: border-box;
+  opacity: 0.9;
+  transition: transform 220ms ease, opacity 220ms ease;
+}
+
+.brand-marquee-item:hover,
+.brand-marquee-item:focus-visible {
+  transform: scale(1.05);
+  opacity: 1;
+}
+
+.brand-marquee-item:focus-visible {
+  outline: 1px solid rgba(255, 255, 255, 0.35);
+  outline-offset: 6px;
+}
+
+.brand-marquee-logo {
+  display: flex;
+  width: 9.5rem;
+  height: 4.5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.brand-logo-image {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 8.5rem;
+  max-height: 2.5rem;
+  object-fit: contain;
+  filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.22));
+}
+
+.brand-logo-image.brand-logo-monochrome {
+  filter: brightness(0) invert(1) drop-shadow(0 5px 10px rgba(0, 0, 0, 0.22));
+}
+
+.horizontal-scroll-container {
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+  touch-action: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #ff6b35 #0a0a0a;
+}
+
+.horizontal-scroll-container::-webkit-scrollbar {
+  height: 8px;
+}
+
+.horizontal-scroll-container::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+
+.horizontal-scroll-container::-webkit-scrollbar-thumb {
+  background: #ff6b35;
+  border-radius: 4px;
+}
+
+.horizontal-scroll-container::-webkit-scrollbar-thumb:hover {
+  background: #e55a2b;
+}
+
+.service-card {
+  scroll-snap-align: start;
+  flex: 0 0 auto;
+}
+
+@keyframes mascot-bob {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+
+@keyframes mascot-greet {
+  0%, 100% { transform: translateY(0) rotate(-1.5deg); }
+  25% { transform: translateY(-4px) rotate(2deg); }
+  50% { transform: translateY(-1px) rotate(-1deg); }
+  75% { transform: translateY(-4px) rotate(2.5deg); }
+}
+
+@keyframes mascot-pop {
+  from { opacity: 0; transform: translateY(14px) scale(0.9); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+.mascot-option {
+  animation: mascot-pop 0.28s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+}
+
+.mascot-greet-anim {
+  transform-origin: 46% 52%;
+  animation: mascot-greet 1.15s ease-in-out infinite;
+}
+
+@media (max-width: 640px) {
+  .brand-marquee::before,
+  .brand-marquee::after {
+    width: 2rem;
+  }
+
+  .brand-marquee-track {
+    gap: 0.9rem;
+    animation-duration: 72s;
+  }
+
+  .brand-marquee-right {
+    animation-duration: 80s;
+  }
+
+  .brand-marquee-item,
+  .brand-marquee-logo {
+    width: 7.5rem;
+    height: 3.65rem;
+  }
+
+  .brand-logo-image {
+    max-width: 6.75rem;
+    max-height: 2.125rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .brand-marquee {
+    overflow-x: auto;
+  }
+
+  .brand-marquee-track {
+    animation: none;
+  }
+
+  .mascot-bob-anim,
+  .mascot-greet-anim,
+  .mascot-option {
+    animation: none !important;
+  }
 }

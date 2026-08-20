@@ -20,15 +20,19 @@ const brands = [
 
 export default defineTool({
   name: "list_brands",
-  title: "List brands serviced",
-  description: "List luxury and performance car brands serviced by Digitec Performance Center in Dubai.",
+  title: "List published brand pages",
+  description: "List Digi-Tec Performance Center brand pages for Dubai. A listed page does not guarantee coverage for every model or function.",
   inputSchema: {},
   annotations: { readOnlyHint: true, idempotentHint: true, openWorldHint: false },
   handler: () => {
     const items = brands.map((b) => ({ ...b, url: `${SITE}/brands/${b.slug}` }));
     return {
       content: [{ type: "text", text: JSON.stringify(items, null, 2) }],
-      structuredContent: { count: items.length, brands: items },
+      structuredContent: {
+        count: items.length,
+        note: "Confirm coverage for the exact VIN, model, year and requested work before booking.",
+        brands: items,
+      },
     };
   },
 });

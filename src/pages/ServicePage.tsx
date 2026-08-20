@@ -65,14 +65,19 @@ const ServicePage: React.FC<ServicePageProps> = ({ slugOverride, canonicalPath, 
   const newSlug = slug ? OLD_TO_NEW_SLUG[slug] : undefined;
   const sourceService = slug && !newSlug && !externalRedirect ? getServiceBySlug(slug) : undefined;
   const service = sourceService && isArabic ? localizeServiceToArabic(sourceService) : sourceService;
+  const servicePath = service ? canonicalPath ?? `/services/${service.slug}` : undefined;
+  const url = servicePath
+    ? `https://digitecme.com${isArabic ? '/ar' : ''}${servicePath}`
+    : undefined;
 
   // Build the per-page JSON-LD @graph. Sitewide Organization / Business / WebSite
   // are declared in index.html; here we only add page-scoped entities and reference
   // the sitewide ones by @id.
   const serviceJsonLd = React.useMemo(() => {
-    if (!service) return undefined;
-    const path = canonicalPath ?? `/services/${service.slug}`;
-    const url = `https://digitecme.com${isArabic ? `/ar${path}` : path}`;
+    if (!service || !url) return undefined;
+    const schemaDescription = isArabic
+      ? `${service.title} لدى مركز ديجي-تك بيرفورمانس في القوز، دبي. تواصل مع الورشة لترتيب الفحص أو الخدمة المناسبة.`
+      : `${service.title} at Digi-Tec Performance Center in Al Quoz, Dubai. Contact the workshop to arrange the appropriate inspection or service.`;
     const breadcrumb = buildBreadcrumb(url, [
       { name: isArabic ? 'الرئيسية' : 'Home', url: isArabic ? 'https://digitecme.com/ar' : 'https://digitecme.com/' },
       { name: brandPath ? 'Mercedes-Benz' : isArabic ? 'الخدمات' : 'Services', url: `https://digitecme.com${isArabic ? '/ar' : ''}${brandPath ?? '/services'}` },
@@ -81,9 +86,10 @@ const ServicePage: React.FC<ServicePageProps> = ({ slugOverride, canonicalPath, 
     const webPage = buildWebPage({
       url,
       name: service.metaTitle || `${service.title} | DIGI-TEC`,
-      description: service.metaDescription || service.description,
+      description: schemaDescription,
       breadcrumbId: `${url}#breadcrumb`,
       primaryImage: typeof service.image === 'string' ? service.image : undefined,
+      mainEntityId: `${url}#service`,
     });
     const brand = detectBrand(service.slug, service.seoKeyword);
     // For the flagship Mercedes Repair page, expose the full offer catalog Google
@@ -93,7 +99,7 @@ const ServicePage: React.FC<ServicePageProps> = ({ slugOverride, canonicalPath, 
       url,
       name: service.title,
       serviceType: service.seoKeyword,
-      description: service.metaDescription || service.description,
+      description: schemaDescription,
       image: typeof service.image === 'string' ? service.image : undefined,
       brand,
       ...(isMercedesRepair
@@ -110,29 +116,17 @@ const ServicePage: React.FC<ServicePageProps> = ({ slugOverride, canonicalPath, 
               'Mercedes Air Conditioning Repair',
               'Mercedes Oil Service',
             ],
-            keywords: [
-              'Mercedes Repair Dubai',
-              'Mercedes Service Dubai',
-              'Mercedes Specialist Dubai',
-              'Mercedes Garage Dubai',
-              'Mercedes Workshop Dubai',
-              'Mercedes Diagnostics Dubai',
-              'Mercedes ECU Programming Dubai',
-              'Mercedes ECU Remapping Dubai',
-              'Mercedes Maintenance Dubai',
-              'Mercedes-Benz Repair UAE',
-            ],
           }
         : {}),
     });
     const faq = service.faqs && service.faqs.length > 0 ? buildFAQ(url, service.faqs) : null;
     return pageGraph([webPage, breadcrumb, svc, ...(faq ? [faq] : [])]);
-  }, [service, canonicalPath, brandPath, isArabic]);
+  }, [service, brandPath, isArabic, url]);
 
   useSeo({
     title: service?.metaTitle || (service ? `${service.seoKeyword} | DIGI-TEC Performance Center` : 'Service Not Found | DIGI-TEC'),
     description: service?.metaDescription || (service ? `${service.intro.slice(0, 155)}…` : ''),
-    canonical: service ? `https://digitecme.com${canonicalPath ?? `/services/${service.slug}`}` : undefined,
+    canonical: url,
     noindex: !service && !newSlug && !externalRedirect,
     jsonLd: serviceJsonLd,
   });
@@ -438,19 +432,19 @@ const ServicePage: React.FC<ServicePageProps> = ({ slugOverride, canonicalPath, 
                 <ul className="space-y-3 text-gray-300 text-sm mb-6">
                   <li className="flex items-start gap-2">
                     <span className="text-burnt-orange mt-1">✓</span>
-                    {isArabic ? 'قطع OEM وقطع أداء عالية الجودة' : 'OEM & performance-grade parts'}
+                    {isArabic ? 'توضيح القطع والسوائل المقترحة قبل الموافقة' : 'Proposed parts and fluids explained before approval'}
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-burnt-orange mt-1">✓</span>
-                    {isArabic ? 'فنيون مدربون ومتخصصون' : 'Factory-trained technicians'}
+                    {isArabic ? 'فحص وتشخيص يناسب السيارة' : 'Vehicle-specific inspection and diagnostics'}
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-burnt-orange mt-1">✓</span>
-                    {isArabic ? 'أسعار واضحة بلا رسوم مخفية' : 'Transparent pricing, no hidden fees'}
+                    {isArabic ? 'شرح نطاق العمل والتكلفة قبل البدء' : 'Scope and pricing explained before work begins'}
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-burnt-orange mt-1">✓</span>
-                    {isArabic ? '+40 عاماً من الخبرة و+50,000 سيارة' : '40+ years, 50,000+ vehicles serviced'}
+                    {isArabic ? 'نخدم دبي منذ عام 2002' : 'Serving Dubai since 2002'}
                   </li>
                 </ul>
 
@@ -472,7 +466,7 @@ const ServicePage: React.FC<ServicePageProps> = ({ slugOverride, canonicalPath, 
                     {isArabic ? 'اتصل الآن' : 'Call Now'}
                   </a>
                   <p className="text-[11px] text-gray-500 text-center leading-snug pt-1">
-                    {isArabic ? 'تقييم مجاني · بلا التزام · رد خلال دقائق' : 'Free assessment · No obligation · Reply within minutes'}
+                    {isArabic ? 'تواصل معنا لمناقشة سيارتك وطلب موعد' : 'Contact us to discuss your vehicle and request an appointment'}
                   </p>
                 </div>
               </div>

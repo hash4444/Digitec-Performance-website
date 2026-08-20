@@ -2,29 +2,29 @@ import { LocalizedLink as Link } from '@/components/LocalizedLink';
 import Header from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { useSeo } from '@/hooks/use-seo';
-import { services } from '@/data/services';
+import { allServices } from '@/data/services';
 import { brands } from '@/data/brands';
 import { blogPosts } from '@/data/blogPosts';
+import { brandWorkshopArticleSummaries } from '@/data/brandWorkshopArticles';
+import { localGaragePages } from '@/data/localGaragePages';
 import { bestWorkshopPages } from '@/data/bestWorkshopPages';
 import { useLocale } from '@/i18n/use-locale';
 import { localizeServiceToArabic } from '@/i18n/ar-services';
 import { localizeBrandToArabic } from '@/i18n/ar-brands';
 import { localizePostSummaryToArabic } from '@/i18n/ar-blog';
 import { localizeBestWorkshopPageToArabic } from '@/i18n/ar-best-workshop';
+import { buildBreadcrumb, buildWebPage, pageGraph, SITE_URL } from '@/lib/schema';
 
 const SitemapPage = () => {
   const { isArabic } = useLocale();
-  useSeo({
-    title: isArabic ? 'خريطة الموقع | ديجي-تك بيرفورمانس دبي' : 'HTML Sitemap | Digi-Tec Performance Centre Dubai',
-    description: isArabic ? 'تصفح خدمات ديجي-تك وصفحات العلامات المتخصصة وأدلة الورشة ومعلومات موقعنا في دبي.' : 'Browse Digi-Tec Performance Centre services, specialist car brands, workshop guides, and Dubai location information.',
-    canonical: `https://digitecme.com${isArabic ? '/ar' : ''}/sitemap`,
-  });
+  const url = `${SITE_URL}${isArabic ? '/ar' : ''}/sitemap`;
 
-  const displayedServices = services
-    .filter((service) => service.slug !== 'mercedes-repair-dubai')
+  const displayedServices = allServices
+    .filter((service) => !['mercedes-repair-dubai', 'mercedes-service-dubai'].includes(service.slug))
     .map((service) => (isArabic ? localizeServiceToArabic(service) : service));
   const displayedBrands = brands.map((brand) => (isArabic ? localizeBrandToArabic(brand) : brand));
-  const displayedPosts = blogPosts.map((post) => (isArabic ? localizePostSummaryToArabic(post) : post));
+  const displayedPosts = [...brandWorkshopArticleSummaries, ...blogPosts]
+    .map((post) => (isArabic ? localizePostSummaryToArabic(post) : post));
   const displayedWorkshopPages = bestWorkshopPages.map((page) => (isArabic ? localizeBestWorkshopPageToArabic(page) : page));
 
   const groups = [
@@ -33,6 +33,7 @@ const SitemapPage = () => {
       links: [
         { label: isArabic ? 'الرئيسية' : 'Home', to: '/' },
         { label: isArabic ? 'خدمات السيارات' : 'Car services', to: '/services' },
+        { label: isArabic ? 'علامات السيارات' : 'Car brands', to: '/brands' },
         { label: isArabic ? 'تطوير الأداء' : 'Performance tuning', to: '/tuning' },
         { label: isArabic ? 'عن ديجي-تك' : 'About Digi-Tec', to: '/about' },
         { label: isArabic ? 'الأسئلة الشائعة' : 'Frequently asked questions', to: '/faq' },
@@ -41,7 +42,19 @@ const SitemapPage = () => {
     },
     {
       title: isArabic ? 'الخدمات الأساسية' : 'Core services',
-      links: displayedServices.map((service) => ({ label: service.title, to: `/services/${service.slug}` })),
+      links: [
+        ...displayedServices.map((service) => ({ label: service.title, to: `/services/${service.slug}` })),
+        ...localGaragePages.map((page) => ({
+          label: isArabic
+            ? ({
+                'garage-near-me-dubai': 'ورشة سيارات قريبة في دبي',
+                'roadside-assistance-dubai': 'المساعدة على الطريق في دبي',
+                'car-garage-dubai': 'كراج سيارات في دبي',
+              }[page.slug] ?? page.title)
+            : page.title,
+          to: `/services/${page.slug}`,
+        })),
+      ],
     },
     {
       title: isArabic ? 'العلامات التي نخدمها' : 'Brands we service',
@@ -56,6 +69,46 @@ const SitemapPage = () => {
       links: displayedWorkshopPages.map((page) => ({ label: page.h1, to: `/${page.slug}` })),
     },
   ];
+
+  const sitemapItems = groups.flatMap((group) => group.links);
+  const localizedUrl = (path: string) =>
+    `${SITE_URL}${isArabic ? '/ar' : ''}${path === '/' ? (isArabic ? '' : '/') : path}`;
+  const sitemapListId = `${url}#sitemap-list`;
+  const sitemapGraph = pageGraph([
+    buildWebPage({
+      url,
+      name: isArabic ? 'خريطة موقع ديجي-تك بيرفورمانس' : 'Digi-Tec Performance Centre HTML Sitemap',
+      description: isArabic
+        ? 'دليل منظم للصفحات الرئيسية والخدمات والعلامات وأدلة الورشة على موقع ديجي-تك.'
+        : 'An organized directory of Digi-Tec main pages, services, vehicle brands and workshop guides.',
+      type: 'CollectionPage',
+      breadcrumbId: `${url}#breadcrumb`,
+      mainEntityId: sitemapListId,
+    }),
+    buildBreadcrumb(url, [
+      { name: isArabic ? 'الرئيسية' : 'Home', url: localizedUrl('/') },
+      { name: isArabic ? 'خريطة الموقع' : 'Sitemap', url },
+    ]),
+    {
+      '@type': 'ItemList',
+      '@id': sitemapListId,
+      name: isArabic ? 'صفحات موقع ديجي-تك' : 'Digi-Tec website pages',
+      numberOfItems: sitemapItems.length,
+      itemListElement: sitemapItems.map((item, index) => ({
+        '@type': 'ListItem',
+        position: index + 1,
+        name: item.label,
+        item: localizedUrl(item.to),
+      })),
+    },
+  ]);
+
+  useSeo({
+    title: isArabic ? 'خريطة الموقع | ديجي-تك بيرفورمانس دبي' : 'HTML Sitemap | Digi-Tec Performance Centre Dubai',
+    description: isArabic ? 'تصفح خدمات ديجي-تك وصفحات العلامات المتخصصة وأدلة الورشة ومعلومات موقعنا في دبي.' : 'Browse Digi-Tec Performance Centre services, specialist car brands, workshop guides, and Dubai location information.',
+    canonical: url,
+    jsonLd: sitemapGraph,
+  });
 
   return (
     <div className="min-h-screen bg-black text-off-white">
