@@ -53,31 +53,6 @@ export const MascotWidget = () => {
 
   return (
     <>
-      <style>{`
-        @keyframes mascot-bob {
-          0%, 100% { transform: translateY(0); }
-          50% { transform: translateY(-5px); }
-        }
-        @keyframes mascot-greet {
-          0%, 100% { transform: translateY(0) rotate(-1.5deg); }
-          25% { transform: translateY(-4px) rotate(2deg); }
-          50% { transform: translateY(-1px) rotate(-1deg); }
-          75% { transform: translateY(-4px) rotate(2.5deg); }
-        }
-        @keyframes mascot-pop {
-          from { opacity: 0; transform: translateY(14px) scale(0.9); }
-          to { opacity: 1; transform: translateY(0) scale(1); }
-        }
-        .mascot-option { animation: mascot-pop 0.28s cubic-bezier(0.34, 1.56, 0.64, 1) both; }
-        .mascot-greet-anim {
-          transform-origin: 46% 52%;
-          animation: mascot-greet 1.15s ease-in-out infinite;
-        }
-        @media (prefers-reduced-motion: reduce) {
-          .mascot-bob-anim, .mascot-greet-anim, .mascot-option { animation: none !important; }
-        }
-      `}</style>
-
       <div ref={rootRef} className={`fixed bottom-4 sm:bottom-12 ${isArabic ? 'left-0 items-start' : 'right-0 items-end'} z-50 flex flex-col select-none`}>
         {/* Contact options */}
         <div

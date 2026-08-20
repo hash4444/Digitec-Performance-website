@@ -47,16 +47,16 @@ export const ChatWindow: React.FC<ChatWindowProps> = ({ isOpen, onClose }) => {
       let response = '';
       switch (action) {
         case 'book':
-          response = 'I\'d be happy to help you book a service. Please call us at +971-4-XXX-XXXX or visit our location in Al Quoz Industrial Area, Dubai.';
+          response = 'To discuss a workshop appointment, call or WhatsApp +971 4 340 2223 and share the model, year and requested work. Digi-Tec is in Al Quoz Industrial Area 3, Warehouses 11–15, Dubai.';
           break;
         case 'question':
-          response = 'What would you like to know about our premium automotive services? We specialize in luxury vehicles including Mercedes, Ferrari, Porsche, and more.';
+          response = 'What would you like to know about the listed maintenance, inspection, repair or performance-project services? Coverage is confirmed for the exact vehicle before booking.';
           break;
         case 'quote':
-          response = 'For a personalized quote, please contact our team at +971-4-XXX-XXXX or visit us. We\'ll assess your vehicle and provide a detailed estimate.';
+          response = 'For an estimate, call or WhatsApp +971 4 340 2223. Pricing depends on the exact vehicle, inspection findings, parts and approved scope.';
           break;
         case 'track':
-          response = 'To track your vehicle\'s service progress, please provide your service reference number and we\'ll give you an update.';
+          response = 'For an update on a vehicle already at the workshop, call or WhatsApp +971 4 340 2223 with your name and vehicle details.';
           break;
         default:
           response = 'How can I help you today?';
@@ -90,7 +90,7 @@ export const ChatWindow: React.FC<ChatWindowProps> = ({ isOpen, onClose }) => {
     setTimeout(() => {
       const botMessage: Message = {
         id: (Date.now() + 1).toString(),
-        text: 'Thank you for your message. Our team will get back to you shortly. For immediate assistance, please call +971-4-XXX-XXXX.',
+        text: 'This on-page assistant does not send messages to the workshop. Please call or WhatsApp +971 4 340 2223 to contact the Digi-Tec team.',
         isUser: false,
         timestamp: new Date()
       };

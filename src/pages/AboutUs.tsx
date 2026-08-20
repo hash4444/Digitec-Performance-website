@@ -30,25 +30,24 @@ const AboutUs = () => {
         buildWebPage({
           url,
           name: isArabic ? 'عن مركز ديجي-تك | ورشة سيارات في دبي' : 'About Digitec Performance Center | Car Workshop in Dubai',
-          description: isArabic ? 'تعرف على مركز ديجي-تك في القوز، دبي والمتخصص في صيانة وتشخيص وإصلاح السيارات الفاخرة والألمانية والكهربائية وتطوير الأداء.' : 'Digitec Performance Center is a trusted Dubai workshop specialising in Mercedes, BMW, Audi, luxury vehicles, Chinese EVs and GAD Motors performance tuning.',
+          description: isArabic ? 'ديجي-تك ورشة سيارات مستقلة في القوز بدبي، تأسست عام 2002 وتعرض خدمات الفحص والصيانة والإصلاح وأعمال الهيكل واستشارات مشاريع الأداء.' : 'Digi-Tec Performance Center is an independent workshop in Al Quoz, Dubai, established in 2002, with inspection, maintenance, repair, bodywork and performance-project consultation services.',
           type: 'AboutPage',
           breadcrumbId: `${url}#breadcrumb`,
+          mainEntityId: businessRef['@id'],
         }),
         buildBreadcrumb(url, [
           { name: isArabic ? 'الرئيسية' : 'Home', url: `https://digitecme.com${isArabic ? '/ar' : '/'}` },
           { name: isArabic ? 'من نحن' : 'About', url },
         ]),
-        // AboutPage explicitly declares its subject as the Business.
-        { '@type': 'Thing', '@id': `${url}#about`, mainEntity: businessRef },
       ]),
     [isArabic, url],
   );
 
   useSeo({
     title: isArabic ? 'عن مركز ديجي-تك | ورشة سيارات في دبي' : 'About Digitec Performance Center | Car Workshop in Dubai',
-    description: isArabic ? 'تعرف على مركز ديجي-تك في القوز، دبي: متخصصون في صيانة وتشخيص وإصلاح السيارات الفاخرة والألمانية والكهربائية وتطوير الأداء.' : 'Digitec Performance Center is a trusted Dubai workshop for Mercedes, BMW, Audi, luxury cars, Chinese EVs and GAD Motors tuning.',
+    description: isArabic ? 'تعرف على ديجي-تك، ورشة سيارات مستقلة في القوز بدبي منذ 2002 لخدمات الفحص والصيانة والإصلاح وأعمال الهيكل واستشارات مشاريع الأداء.' : 'Learn about Digi-Tec, an independent car workshop in Al Quoz, Dubai since 2002 for inspection, maintenance, repair, bodywork and performance-project consultation.',
     canonical: url,
-    keywords: isArabic ? 'ورشة سيارات دبي، إصلاح مرسيدس دبي، متخصص سيارات ألمانية، GAD Motors، إصلاح سيارات كهربائية دبي، صيانة سيارات فاخرة' : 'car workshop Dubai, Mercedes repair Dubai, German car specialist, GAD Motors tuning, EV repair Dubai, luxury car service',
+    keywords: isArabic ? 'ورشة سيارات دبي، صيانة سيارات دبي، إصلاح سيارات دبي، فحص سيارات القوز، صيانة سيارات فاخرة' : 'car workshop Dubai, car maintenance Dubai, car repair Dubai, vehicle inspection Al Quoz, luxury car service',
     jsonLd: aboutGraph,
   });
 
@@ -82,23 +81,23 @@ const AboutUs = () => {
             transition={{ delay: 0.4 }}
             className="text-white/50 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed"
           >
-            {isArabic ? 'ورشة سيارات رائدة في دبي، متخصصة بالسيارات الألمانية والفاخرة وعالية الأداء والكهربائية الحديثة، مع تشخيص متقدم وقطع OEM وتقنيات بمستوى الوكالة.' : 'A leading car workshop in Dubai, specialising in German, luxury, performance, and advanced electric vehicles. Expert diagnostics, OEM parts, and dealer-level technology.'}
+            {isArabic ? 'ورشة سيارات مستقلة في دبي منذ عام 2002، لخدمات الفحص والصيانة والإصلاح للسيارات الألمانية والفاخرة وعالية الأداء والكهربائية.' : 'An independent Dubai car workshop established in 2002, offering inspection, maintenance and repair services for German, luxury, performance and electric vehicles.'}
           </motion.p>
         </div>
       </section>
       <AnswerBlock
         question={isArabic ? 'لماذا يختار الملاك ديجي-تك في دبي؟' : 'Why do owners choose Digi-Tec in Dubai?'}
         answer={isArabic
-          ? 'يختار الملاك ديجي-تك لأن الورشة مستقلة ومتخصصة في السيارات الأوروبية والفاخرة منذ 2002، وتستخدم أنظمة تشخيص الوكالة، وتوضح نتائج الفحص ونطاق العمل قبل بدء الإصلاح، وتوثق القطع والسوائل في الفاتورة للحفاظ على سجل الصيانة. الموقع: القوز الصناعية 3، مستودع 11-15، دبي.'
-          : 'Owners choose Digi-Tec because it has specialised in European and luxury cars as an independent workshop since 2002, uses manufacturer diagnostic platforms, explains inspection findings and the proposed scope before repair work begins, and documents parts and fluids on the invoice so the service history stays intact. The workshop is in Al Quoz Industrial Area 3, Warehouse No. 11-15, Dubai.'}
+          ? 'ديجي-تك ورشة مستقلة في دبي منذ 2002. يمكن للملاك حجز فحص خاص بالسيارة ومناقشة الصيانة والإصلاح الميكانيكي أو الكهربائي وأعمال الهيكل والعناية بالسيارة أو مشروع الأداء قبل تحديد نطاق العمل. الموقع: القوز الصناعية 3، المستودعات 11-15، دبي.'
+          : 'Digi-Tec is an independent Dubai workshop established in 2002. Owners can book a vehicle-specific inspection and discuss maintenance, mechanical or electrical repair, bodywork, detailing or a performance project before the work scope is confirmed. The workshop is in Al Quoz Industrial Area 3, Warehouses 11-15, Dubai.'}
         facts={isArabic ? [
-          'خبرة متخصصة منذ عام 2002 في دبي',
-          'فنيون متخصصون لكل علامة وأنظمة تشخيص أصلية',
-          'فواتير تفصيلية تحفظ سجل الصيانة لإعادة البيع',
+          'تأسست في دبي عام 2002',
+          'فحص خاص بالسيارة قبل تحديد نطاق الإصلاح',
+          'الهاتف والواتساب: +971 4 340 2223',
         ] : [
-          'Specialist experience in Dubai since 2002',
-          'Brand focused technicians and manufacturer diagnostic systems',
-          'Detailed invoices that preserve service history for resale',
+          'Established in Dubai in 2002',
+          'Vehicle-specific inspection before repair scope is confirmed',
+          'Call or WhatsApp +971 4 340 2223',
         ]}
       />
 
@@ -117,13 +116,13 @@ const AboutUs = () => {
                 {isArabic ? <>عن مركز <span className="text-burnt-orange">D</span>IGI-TEC للأداء</> : <>About <span className="text-burnt-orange">D</span>igitec Performance Center</>}
               </h2>
               <p className="text-white/60 text-sm sm:text-base leading-relaxed mb-4">
-                {isArabic ? 'ديجي-تك مركز رائد لخدمة وصيانة السيارات في دبي، يقدم عناية شاملة تشمل التشخيص والإصلاحات الميكانيكية والصيانة الوقائية وإصلاح الهيكل والطلاء والعناية الخارجية وتطوير الأداء.' : 'Digi-Tec Performance Centre is a premier automotive service and maintenance company based in Dubai, dedicated to comprehensive vehicle care. We specialise in vehicle diagnostics, mechanical repairs, preventive maintenance, auto body repair and painting, detailing, and performance enhancement.'}
+                {isArabic ? 'ديجي-تك ورشة سيارات مستقلة في دبي تأسست عام 2002. تشمل فئات الخدمة المعروضة فحص السيارة والصيانة والإصلاحات الميكانيكية والكهربائية وإصلاح الهيكل والطلاء والعناية بالسيارة واستشارات مشاريع الأداء.' : 'Digi-Tec Performance Centre is an independent Dubai car workshop established in 2002. Listed service categories include vehicle inspection, maintenance, mechanical and electrical repair, body repair, paintwork, detailing and performance-project consultation.'}
               </p>
               <p className="text-white/60 text-sm sm:text-base leading-relaxed mb-4">
-                {isArabic ? 'يدعمنا فريق من الفنيين المؤهلين وأجهزة حديثة لتقديم حلول موثوقة وفعالة وفق معايير عالية. وقد جعلنا التزامنا بجودة العمل والابتكار والسلامة ورضا العملاء اسماً موثوقاً في قطاع السيارات بالإمارات.' : 'Backed by a team of highly qualified technicians and state-of-the-art equipment, we deliver reliable, efficient, and cost-effective automotive solutions built to the highest industry standards. Our commitment to quality workmanship, innovation, safety, and customer satisfaction has made us a trusted name in the UAE automotive sector.'}
+                {isArabic ? 'يبدأ الموعد بتحديد السيارة والمشكلة أو الخدمة المطلوبة. بعد الفحص يمكن مناقشة النتائج والعمل المقترح قبل الاتفاق على نطاق الإصلاح.' : 'An appointment starts by identifying the vehicle and the concern or requested service. After inspection, the findings and proposed work can be discussed before the repair scope is agreed.'}
               </p>
               <p className="text-white/60 text-sm sm:text-base leading-relaxed">
-                {isArabic ? 'سواء كنت مالك سيارة أو تدير أسطولاً، يبقى هدفنا واحداً: خدمة استثنائية وقيمة طويلة المدى، مع التأكد من أن كل سيارة تغادر الورشة تعمل بأمان وكفاءة وفي أفضل أداء.' : "Whether you're an individual vehicle owner or managing a corporate fleet, our focus is the same: exceptional service and long-term value, ensuring every vehicle that leaves our workshop operates safely, efficiently, and at peak performance."}
+                {isArabic ? 'تقع الورشة في القوز الصناعية 3، المستودعات 11–15، دبي. للحجز أو الاستفسار اتصل أو أرسل رسالة واتساب إلى +971 4 340 2223.' : 'The workshop is at Al Quoz Industrial Area 3, Warehouses 11–15, Dubai. To book or ask about a service, call or WhatsApp +971 4 340 2223.'}
               </p>
             </motion.div>
             <motion.div
@@ -133,10 +132,10 @@ const AboutUs = () => {
               className="grid grid-cols-2 gap-4"
             >
               {[
-                { value: '40+', label: isArabic ? 'عاماً من الخبرة' : 'Years of Expertise' },
-                { value: '50,000+', label: isArabic ? 'سيارة تمت خدمتها' : 'Cars Served' },
-                { value: '8,000+', label: isArabic ? 'عميل راضٍ' : 'Happy Clients' },
-                { value: '40,000', label: isArabic ? 'قدم مربعة' : 'Sq Ft Facility' },
+                { value: '2002', label: isArabic ? 'تأسست في دبي' : 'Established in Dubai' },
+                { value: isArabic ? 'القوز 3' : 'Al Quoz 3', label: isArabic ? 'موقع الورشة' : 'Workshop location' },
+                { value: '11–15', label: isArabic ? 'أرقام المستودعات' : 'Warehouse numbers' },
+                { value: isArabic ? 'دبي' : 'Dubai', label: isArabic ? 'الإمارات العربية المتحدة' : 'United Arab Emirates' },
               ].map((stat) => (
                 <div key={stat.label} className="bg-white/[0.03] border border-white/[0.06] rounded-2xl p-5 text-center">
                   <div className="text-2xl sm:text-3xl font-black text-burnt-orange mb-1">{stat.value}</div>
@@ -162,7 +161,7 @@ const AboutUs = () => {
               {isArabic ? <>ورشتنا في <span className="text-burnt-orange">دبي</span></> : <>Our Dubai <span className="text-burnt-orange">Workshop</span></>}
             </h2>
             <p className="text-white/60 text-sm sm:text-base leading-relaxed">
-              {isArabic ? 'من التشخيص المتخصص إلى الإصلاحات الميكانيكية ومشاريع الأداء، نتعامل مع كل سيارة داخل منشأتنا المجهزة في القوز.' : 'From specialist diagnostic work to mechanical repairs and performance builds, every vehicle is handled in our purpose-built Al Quoz facility.'}
+              {isArabic ? 'توضح الصور مساحات الورشة في القوز حيث تُجرى فحوص السيارات وأعمال الصيانة والإصلاح.' : 'These images show the Al Quoz workshop areas used for vehicle inspection, maintenance and repair work.'}
             </p>
           </motion.div>
 
@@ -176,12 +175,12 @@ const AboutUs = () => {
               {
                 image: workshopServiceFloor,
                 alt: isArabic ? 'ساحة خدمة ديجي-تك للسيارات الفاخرة في القوز دبي' : 'Digi-Tec service floor with luxury vehicles in Al Quoz, Dubai',
-                label: isArabic ? 'ساحة خدمة مجهزة' : 'Purpose-Built Service Floor',
+                label: isArabic ? 'ساحة الخدمة' : 'Service Floor',
               },
               {
                 image: workshopLifts,
-                alt: isArabic ? 'رافعات ومساحات إصلاح متخصصة لدى ديجي-تك دبي' : 'Vehicle lifts and specialist repair bays at Digi-Tec Dubai',
-                label: isArabic ? 'مساحات إصلاح متخصصة' : 'Specialist Repair Bays',
+                alt: isArabic ? 'رافعات ومساحات إصلاح لدى ديجي-تك دبي' : 'Vehicle lifts and repair bays at Digi-Tec Dubai',
+                label: isArabic ? 'مساحات الإصلاح' : 'Repair Bays',
               },
             ].map((photo, index) => (
               <motion.div
@@ -262,9 +261,9 @@ const AboutUs = () => {
             viewport={{ once: true }}
             className="text-center mb-12"
           >
-            <p className="text-burnt-orange text-xs uppercase tracking-[0.3em] font-semibold mb-3">{isArabic ? 'مجالات تخصصنا' : 'What We Specialise In'}</p>
+            <p className="text-burnt-orange text-xs uppercase tracking-[0.3em] font-semibold mb-3">{isArabic ? 'فئات الخدمة' : 'Service Categories'}</p>
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-black">
-              {isArabic ? <>دقة في كل <span className="text-burnt-orange">منصة</span></> : <>Precision Across Every <span className="text-burnt-orange">Platform</span></>}
+              {isArabic ? <>طلبات خدمة حسب <span className="text-burnt-orange">السيارة</span></> : <>Vehicle-Specific <span className="text-burnt-orange">Service Enquiries</span></>}
             </h2>
           </motion.div>
 
@@ -272,18 +271,18 @@ const AboutUs = () => {
             {[
               {
                 icon: Wrench,
-                title: isArabic ? 'السيارات الألمانية وعالية الأداء' : 'German & Performance Vehicles',
-                text: isArabic ? 'نمتلك خبرة في إصلاح السيارات الألمانية في دبي، خصوصاً مرسيدس-بنز وAMG، باستخدام أجهزة Star Diagnostic وأدوات متقدمة لتشخيص الأعطال الميكانيكية والكهربائية وأعطال الأداء.' : 'Known for our expertise in German car repair in Dubai, particularly Mercedes-Benz and AMG models. Our technicians use Star Diagnostic systems and advanced tools to accurately diagnose complex mechanical, electrical, and performance issues.',
+                title: isArabic ? 'خدمة السيارات الألمانية والفاخرة' : 'German & Luxury Vehicle Service',
+                text: isArabic ? 'يمكن حجز فحص وصيانة وإصلاح لسيارات مرسيدس-بنز وBMW وأودي وبورشه وغيرها من السيارات الأوروبية والفاخرة، مع تحديد النطاق بحسب السيارة والمشكلة.' : 'Inspection, maintenance and repair can be requested for Mercedes-Benz, BMW, Audi, Porsche and other European or luxury vehicles, with the scope confirmed for the specific vehicle and concern.',
               },
               {
                 icon: Zap,
-                title: isArabic ? 'السيارات الصينية الفاخرة والكهربائية' : 'Luxury Chinese & Electric Vehicles',
-                text: isArabic ? 'من الورش المتخصصة في دبي بالسيارات الصينية الفاخرة والكهربائية مثل Zeekr وBYD وHongqi وJetour وROX، مع تجهيزات للتعامل مع البطاريات وأنظمة الدفع والمنصات الذكية.' : 'One of the few workshops in Dubai specialising in luxury Chinese and electric vehicles including Zeekr, BYD, Hongqi, Jetour, and Rox. Equipped to handle modern EV battery systems, electric drivetrains, and smart technology platforms.',
+                title: isArabic ? 'طلبات خدمة السيارات الصينية والكهربائية' : 'Chinese & Electric Vehicle Enquiries',
+                text: isArabic ? 'يمكن الاستفسار عن فحص وخدمة سيارات مثل Zeekr وBYD وHongqi وJetour وROX. يؤكد الفريق نطاق العمل بعد معرفة الطراز والمشكلة المطلوبة.' : 'Owners of vehicles such as Zeekr, BYD, Hongqi, Jetour and ROX can request an inspection or service enquiry. The available scope is confirmed after the model and concern are reviewed.',
               },
               {
                 icon: Gauge,
-                title: isArabic ? 'شريك GAD Motors لتطوير الأداء' : 'GAD Motors Tuning Partner',
-                text: isArabic ? 'شراكة رسمية مع GAD Motors لتقديم حلول تطوير أداء متقدمة، من برمجة ECU إلى الترقيات الكاملة مع الحفاظ على الاعتمادية والسلامة.' : 'Official partnership with GAD Motors delivering high-performance tuning solutions. From ECU remapping to full performance upgrades, we increase power and driving dynamics while maintaining reliability and safety.',
+                title: isArabic ? 'استشارات مشاريع الأداء' : 'Performance Project Consultation',
+                text: isArabic ? 'يمكن مناقشة هدف المشروع والاستخدام المطلوب وحالة السيارة قبل اقتراح أي برمجة أو تعديل. يعتمد النطاق النهائي على فحص السيارة.' : 'Performance enquiries begin with the project goal, intended use and vehicle condition. Any proposed programming or modification scope depends on a vehicle inspection.',
               },
             ].map((item) => (
               <motion.div
@@ -312,19 +311,19 @@ const AboutUs = () => {
           >
             <p className="text-burnt-orange text-xs uppercase tracking-[0.3em] font-semibold mb-3">{isArabic ? 'رسالتنا' : 'Our Mission'}</p>
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-black mb-6">
-              {isArabic ? <>تميز هندسي في كل <span className="text-burnt-orange">رحلة</span></> : <>Engineering Excellence, Every <span className="text-burnt-orange">Drive</span></>}
+              {isArabic ? <>خطوات واضحة في كل <span className="text-burnt-orange">زيارة</span></> : <>A Clear Process, Every <span className="text-burnt-orange">Visit</span></>}
             </h2>
             <p className="text-white/60 text-base sm:text-lg leading-relaxed">
-              {isArabic ? 'تقديم خدمات إصلاح وتطوير أداء عالية الجودة في دبي، تجمع بين الهندسة الدقيقة والتشخيص المتقدم وخدمة تركز على العميل للحفاظ على أفضل أداء لكل سيارة.' : 'To deliver high-quality automotive repair and performance services in Dubai, combining precision engineering, advanced diagnostics, and customer-focused service to keep every vehicle performing at its best.'}
+              {isArabic ? 'تقديم فحص وصيانة وإصلاح واستشارات لمشاريع السيارات في دبي، مع تحديد السيارة والمشكلة وشرح نطاق العمل المقترح قبل بدء الإصلاح.' : 'To provide vehicle inspection, maintenance, repair and project consultation in Dubai, identifying the vehicle and concern and explaining the proposed work scope before repair begins.'}
             </p>
           </motion.div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-12 text-left">
             {[
               ...(isArabic ? [
-                'متخصصون في السيارات الألمانية في دبي', 'خبرة بالسيارات الفاخرة وعالية الأداء والكهربائية', 'شريك GAD Motors لتطوير الأداء', 'تشخيص وأجهزة بمستوى الوكالة', 'قطع OEM وقطع أداء عالية الجودة', 'أسعار واضحة بلا تكاليف مخفية', 'إنجاز سريع وخدمة موثوقة', 'خدمة أهم العلامات الفاخرة',
+                'ورشة مستقلة في دبي منذ 2002', 'فحص خاص بالسيارة قبل تحديد نطاق العمل', 'صيانة وإصلاح ميكانيكي وكهربائي', 'خدمات المحرك وناقل الحركة والتعليق والفرامل', 'إصلاح الهيكل والطلاء والعناية بالسيارة', 'استشارات مشاريع الأداء بحسب السيارة', 'شرح العمل المقترح قبل بدء الإصلاح', 'الموقع في القوز الصناعية 3',
               ] : [
-                'German car specialists in Dubai', 'Expertise in luxury, performance, and EVs', 'GAD Motors performance tuning partner', 'Dealer-level diagnostics and equipment', 'OEM and performance-grade parts', 'Transparent pricing, no hidden costs', 'Fast turnaround and trusted service', 'Servicing all major luxury marques',
+                'Independent Dubai workshop since 2002', 'Vehicle-specific inspection before scope is confirmed', 'Mechanical and electrical maintenance and repair', 'Engine, transmission, suspension and brake services', 'Body repair, paintwork and detailing', 'Vehicle-specific performance-project consultation', 'Proposed work explained before repair begins', 'Located in Al Quoz Industrial Area 3',
               ]),
             ].map((point) => (
               <div key={point} className="flex items-start gap-3 bg-white/[0.03] border border-white/[0.06] rounded-xl p-4">
@@ -354,7 +353,7 @@ const AboutUs = () => {
           </motion.div>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
             {[
-              { icon: MapPin, title: isArabic ? 'الموقع' : 'Location', text: isArabic ? 'القوز الصناعية 3، مستودع 11-15، دبي' : 'Al Quoz Industrial Area 3, Warehouse No.11-15, Dubai' },
+              { icon: MapPin, title: isArabic ? 'الموقع' : 'Location', text: isArabic ? 'القوز الصناعية 3، المستودعات 11–15، دبي' : 'Al Quoz Industrial Area 3, Warehouses 11–15, Dubai' },
               { icon: Phone, title: isArabic ? 'الهاتف' : 'Phone', text: '+971 4 340 2223' },
               { icon: Mail, title: isArabic ? 'البريد الإلكتروني' : 'Email', text: 'info@digitecme.com' },
             ].map((item) => (

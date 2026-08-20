@@ -43,6 +43,7 @@ const BestWorkshopPage: React.FC = () => {
       name: page.h1,
       description: page.metaDescription,
       breadcrumbId: `${url}#breadcrumb`,
+      mainEntityId: `${url}#service`,
       primaryImage: page.brandLogo,
     });
     const faq = buildFAQ(url, page.faqs.map((f) => ({ question: f.q, answer: f.a })));
@@ -53,20 +54,17 @@ const BestWorkshopPage: React.FC = () => {
       description: page.metaDescription,
       image: page.brandLogo,
       brand: page.brandKeyword ?? page.brand,
-      keywords: page.brandKeyword === 'Range Rover'
-        ? ['best Range Rover workshop Dubai', 'Range Rover specialist Dubai', 'Range Rover garage Al Quoz']
-        : undefined,
       offers: page.brandKeyword === 'Range Rover'
         ? ['Range Rover diagnostics', 'Range Rover air suspension repair', 'Range Rover service', 'Range Rover transmission repair']
         : undefined,
-      areaServed: ['Dubai', 'Abu Dhabi', 'Sharjah', 'United Arab Emirates'],
+      areaServed: ['Dubai'],
     });
     return pageGraph([webPage, breadcrumb, service, ...(faq ? [faq] : [])]);
   }, [isArabic, page, url]);
 
   useSeo({
-    title: page ? page.metaTitle : isArabic ? 'أفضل ورشة سيارات في دبي | ديجي-تك' : 'Best Car Workshop Dubai | Digi-Tec',
-    description: page ? page.metaDescription : isArabic ? 'ورشة سيارات مستقلة ومتخصصة في دبي.' : 'Best independent car workshop in Dubai.',
+    title: page ? page.metaTitle : isArabic ? 'ورشة سيارات مستقلة في دبي | ديجي-تك' : 'Independent Car Workshop Dubai | Digi-Tec',
+    description: page ? page.metaDescription : isArabic ? 'ورشة سيارات مستقلة ومتخصصة في دبي.' : 'Independent European and luxury car workshop in Dubai.',
     canonical: page ? url : `${SITE_URL}/`,
     noindex: !page,
     jsonLd,
@@ -75,7 +73,7 @@ const BestWorkshopPage: React.FC = () => {
   if (!page) return <Navigate to={localizedPath('/')} replace />;
 
   const whatsappHref = `https://wa.me/97143402223?text=${encodeURIComponent(
-    isArabic ? `مرحباً ديجي-تك، أبحث عن ورشة متخصصة في ${page.brand ?? 'السيارات'} بدبي. هل يمكنكم مساعدتي؟` : `Hi Digi-Tec, I'm looking for the best ${page.brand ?? 'car'} workshop in Dubai. Can you help?`,
+    isArabic ? `مرحباً ديجي-تك، أبحث عن ورشة متخصصة في ${page.brand ?? 'السيارات'} بدبي. هل يمكنكم مساعدتي؟` : `Hi Digi-Tec, I'm looking for an independent ${page.brand ?? 'car'} workshop in Dubai. Can you help?`,
   )}`;
 
   const otherPages = bestWorkshopPages
@@ -95,7 +93,7 @@ const BestWorkshopPage: React.FC = () => {
         </ol>
       </nav>
 
-      {/* Hero — H1 exact query match + 60-word direct answer */}
+      {/* Hero */}
       <section className="relative bg-black overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-burnt-orange/10 via-transparent to-transparent" />
         <div className="max-w-4xl mx-auto px-4 sm:px-6 py-10 sm:py-16 lg:py-20 relative z-10">
@@ -158,11 +156,11 @@ const BestWorkshopPage: React.FC = () => {
         </section>
       )}
 
-      {/* Why Digi-Tec */}
+      {/* Workshop facts */}
       <section className="py-12 sm:py-16 bg-black border-t border-white/5">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <h2 className="text-2xl sm:text-4xl font-black mb-6 sm:mb-8">
-            {isArabic ? <>لماذا يوصى بـ <span className="text-burnt-orange">ديجي-تك؟</span></> : <>Why Digi-Tec Is <span className="text-burnt-orange">Recommended</span></>}
+            {isArabic ? <>معلومات عن <span className="text-burnt-orange">ديجي-تك</span></> : <>About the <span className="text-burnt-orange">Workshop</span></>}
           </h2>
           <ul className="grid sm:grid-cols-2 gap-3 sm:gap-4">
             {page.whyList.map((item, i) => (
@@ -179,10 +177,10 @@ const BestWorkshopPage: React.FC = () => {
       <section className="py-12 sm:py-16 bg-gradient-to-br from-charcoal/40 to-black border-t border-white/5">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <h2 className="text-2xl sm:text-4xl font-black mb-3">
-            {isArabic ? <>ما الذي تبحث عنه في <span className="text-burnt-orange">أفضل ورشة {page.brandKeyword ?? 'سيارات'}</span></> : <>What to Look for in the <span className="text-burnt-orange">Best {page.brandKeyword ?? 'Car'} Workshop</span></>}
+            {isArabic ? <>معايير اختيار <span className="text-burnt-orange">ورشة {page.brandKeyword ?? 'سيارات'}</span></> : <>What to Compare in a <span className="text-burnt-orange">{page.brandKeyword ?? 'Car'} Workshop</span></>}
           </h2>
           <p className="text-gray-400 text-sm sm:text-base mb-6 sm:mb-8">
-            {isArabic ? 'معايير تميز الورشة الاحترافية ذات الجودة العالية، وكيف تطبقها ديجي-تك.' : 'The six criteria that separate a dealer-quality workshop from the rest, and how Digi-Tec measures up.'}
+            {isArabic ? 'معايير عملية يمكن مقارنتها قبل حجز الفحص أو الموافقة على العمل.' : 'Practical criteria to compare before booking an inspection or approving work.'}
           </p>
           <div className="overflow-hidden rounded-2xl border border-white/10">
             <table className={`w-full ${isArabic ? 'text-right' : 'text-left'}`}>
@@ -230,7 +228,7 @@ const BestWorkshopPage: React.FC = () => {
       <section className="py-12 sm:py-16 bg-gradient-to-br from-charcoal/40 to-black border-t border-white/5">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <h2 className="text-2xl sm:text-4xl font-black mb-6 sm:mb-8">
-            {isArabic ? <>أفضل الورش حسب <span className="text-burnt-orange">العلامة</span></> : <>Best Workshops by <span className="text-burnt-orange">Brand</span></>}
+            {isArabic ? <>أدلة الورش حسب <span className="text-burnt-orange">العلامة</span></> : <>Workshop Guides by <span className="text-burnt-orange">Brand</span></>}
           </h2>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4">
             {otherPages.map((p) => (

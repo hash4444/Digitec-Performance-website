@@ -8,10 +8,11 @@ import { brands, getBrandBySlug } from '@/data/brands';
 import { getServiceBySlug } from '@/data/services';
 import {
   BRAND_OFFER_CATALOG,
+  buildBrand,
   buildBreadcrumb,
   buildFAQ,
+  buildService,
   buildWebPage,
-  businessRef,
   pageGraph,
 } from '@/lib/schema';
 import {
@@ -59,16 +60,16 @@ const MERCEDES_SEO_COPY = {
 const RANGE_ROVER_SEO_COPY = {
   intro: 'Digi-Tec Performance Centre in Al Quoz provides specialist Range Rover repair, scheduled maintenance and diagnostics for Range Rover, Range Rover Sport, Velar and Evoque models. We start with the reported symptom, diagnostic data and a physical inspection, then explain the recommended work and parts options before any repair begins.',
   dubai: 'Dubai heat, traffic and dust put extra demand on Range Rover cooling systems, air conditioning, batteries, air suspension and rubber components. Our inspection considers the exact model, mileage, service history and how the vehicle is used, with close attention to cooling performance, air-system leaks, brake wear and battery health.',
-  expertise: 'Range Rover work is supported by JLR-compatible SDD and Pathfinder diagnostic access for fault tracing, live data, service functions and calibrations where applicable. Our workshop coverage includes Ingenium petrol and diesel engines, supercharged and twin-turbo V8 platforms, ZF 8HP transmissions, Terrain Response systems and electronic air suspension.',
-  parts: 'Every estimate identifies the proposed genuine JLR parts, OE-supplier components or customer-approved alternatives before approval. Correct fluid specifications, diagnostic calibration and post-repair testing are matched to the exact Range Rover system—not a generic SUV checklist.',
+  expertise: 'Range Rover work starts with the VIN, reported concern and vehicle condition. Compatible diagnostic access, live data, service functions and any calibration are confirmed for the exact model, module and required scope before they are quoted. Relevant systems may include Ingenium engines, V8 platforms, ZF transmissions, Terrain Response and electronic air suspension.',
+  parts: 'The estimate identifies proposed parts, fluids and any supported calibration before approval. Genuine JLR, established OE-supplier or suitable customer-approved alternatives may be quoted depending on the repair, availability and owner preference.',
   cta: 'For Range Rover repair, service or an air-suspension inspection in Dubai, call +971 4 340 2223, send Digi-Tec a WhatsApp message or use the booking form below. Include your model, year, mileage, warning message and symptoms so we can prepare for the right first inspection.',
 };
 
 const DEFENDER_SEO_COPY = {
   intro: 'Digi-Tec Performance Centre in Al Quoz provides specialist Land Rover Defender repair, scheduled maintenance and diagnostics for Defender 90, Defender 110, Defender 130, Defender V8 and Defender OCTA models. We combine the reported symptom with JLR diagnostic data, a physical inspection and a road test where appropriate before recommending repairs.',
   dubai: 'Defenders in Dubai deal with heat, stop-start traffic, sand and off-road use. We pay particular attention to cooling, air conditioning, battery condition, brakes, wheel and tyre condition, suspension, underbody and driveline systems—then tailor the work to the vehicle’s actual use rather than applying a generic schedule.',
-  expertise: 'Defender diagnosis is supported by JLR-compatible SDD and Pathfinder diagnostic access for fault tracing, live data, service functions and calibration where applicable. Our workshop scope includes Ingenium engines, P400 and V8 platforms, eight-speed transmissions, Terrain Response, four-wheel-drive, air suspension and modern electrical systems.',
-  parts: 'Before work starts, the estimate identifies the proposed genuine JLR parts, OE-supplier components or customer-approved alternatives and the required fluids. The final checks include the relevant calibration, system test and road test where the repair requires it.',
+  expertise: 'Defender diagnosis starts with the VIN, reported concern and vehicle condition. Compatible diagnostic access, live data, service functions and any calibration are confirmed for the exact model, module and required scope before they are quoted. Relevant systems may include Ingenium, P400 or V8 powertrains, eight-speed transmissions, Terrain Response, four-wheel drive, air suspension and electrical systems.',
+  parts: 'Before approved work starts, the estimate identifies proposed parts and fluids. Genuine JLR, established OE-supplier or suitable customer-approved alternatives may be quoted depending on the repair, availability and owner preference; relevant post-repair checks depend on the system repaired.',
   cta: 'For Defender repair, service, diagnostics or a pre-trip inspection in Dubai, call +971 4 340 2223, message Digi-Tec on WhatsApp or use the booking form below. Send the Defender model, year, mileage, warning message and symptoms for the most useful first inspection.',
 };
 
@@ -107,11 +108,11 @@ const DEFENDER_MODEL_GROUPS = [
 const getBrandSeoCopy = (brand: { name: string; specialization: string; whyChoose: { title: string }[] }) => {
   const focusAreas = brand.whyChoose.map((w) => w.title).slice(0, 4);
   return {
-    intro: `Digi-Tec Performance Centre is one of Dubai's most established independent specialists for ${brand.name}. From routine servicing to advanced performance work, our workshop in Al Quoz combines factory-grade diagnostics, genuine parts, and technicians who have spent their entire careers inside the ${brand.name} platform. Owners across Dubai, Abu Dhabi, and Sharjah trust us because we deliver dealer-level work without dealer-level downtime or cost.`,
-    dubai: `The UAE climate is unforgiving on luxury vehicles. Ambient temperatures above 45°C accelerate oil degradation, stress cooling systems, and shorten the life of rubber bushings, AC components, and battery cells. Every ${brand.name} we service at Digi-Tec is inspected with Dubai conditions in mind. We use heat-rated fluids, recommend shorter service intervals where appropriate, and pay particular attention to cooling, suspension, and air-conditioning systems that bear the brunt of summer driving.`,
-    expertise: `Our ${brand.name} specialisation covers ${focusAreas.join(', ')}, and the wider mechanical, electrical, and bodywork disciplines that a modern ${brand.name} demands. We invest in the same factory diagnostic platforms used by the official dealer network, which means accurate fault tracing, correct adaptation resets, and software updates that protect your resale value.`,
-    parts: `Every ${brand.name} service at Digi-Tec uses genuine OEM parts and manufacturer-approved fluids by default. Where customers prefer high-quality OE-supplier or performance equivalents, we document the choice clearly and only fit components that match or exceed factory specification. Nothing leaves our workshop without a full inspection report and a transparent breakdown of work completed.`,
-    cta: `If you are searching for ${brand.specialization.toLowerCase()} or a trusted ${brand.name} service centre in Dubai, Digi-Tec is ready to help. Call +971 4 340 2223, send a WhatsApp enquiry, or use the booking form on this page to receive a same-day quote and the earliest available workshop slot.`,
+    intro: `Digi-Tec Performance Center is an independent European and luxury car workshop in Al Quoz, Dubai, established in 2002. This page explains the inspection, maintenance and repair topics owners can discuss for a ${brand.name}; the team confirms the exact model and requested work before booking.`,
+    dubai: `Dubai heat, traffic and dust can add load to cooling, battery, brake, tyre and air-conditioning systems. A ${brand.name} inspection can account for those conditions, while the correct maintenance plan still depends on the exact model, recorded history, mileage and how the vehicle is used.`,
+    expertise: `Common ${brand.name} enquiries include ${focusAreas.join(', ')}. The available inspection and repair scope depends on the vehicle and concern, so diagnostic findings are reviewed before parts or additional work are recommended.`,
+    parts: `Each estimate should identify the proposed parts and fluids before approval. Depending on the repair, availability and owner preference, this may include genuine ${brand.name} parts, established OE-supplier components or another suitable customer-approved option.`,
+    cta: `To discuss ${brand.specialization.toLowerCase()} or another ${brand.name} request, call +971 4 340 2223, send a WhatsApp enquiry or use the booking form. Include the model, year, mileage and concern so the team can confirm the appropriate next step and appointment availability.`,
   };
 };
 
@@ -119,17 +120,17 @@ const SERVICES = [
   {
     title: 'Vehicle Maintenance',
     description:
-      'Scheduled servicing, fluid changes, brake work, and preventive maintenance to keep your vehicle at factory standards.',
+      'Scheduled servicing, fluid changes, brake work and preventive inspections based on the vehicle and approved scope.',
   },
   {
     title: 'Mechanical Repairs',
     description:
-      'Engine, transmission, suspension, and drivetrain repair by certified technicians using genuine parts.',
+      'Inspection and repair planning for engine, transmission, suspension and drivetrain concerns.',
   },
   {
     title: 'Auto Body & Painting',
     description:
-      'Collision repair, panel work, and colour-matched refinishing in a controlled spray-booth environment.',
+      'Collision assessment, panel work and refinishing options based on the vehicle inspection.',
   },
   {
     title: 'Detailing',
@@ -139,7 +140,7 @@ const SERVICES = [
   {
     title: 'Electrical & Diagnostics',
     description:
-      'Advanced OEM-grade diagnostics, ECU coding, and electrical system repair for modern luxury platforms.',
+      'Fault-code review, physical testing and electrical repair planning for modern vehicle systems.',
   },
 ];
 
@@ -237,7 +238,7 @@ const MERCEDES_COMMON_ISSUES = [
   },
   {
     title: 'Battery warning or intermittent electrical faults',
-    description: 'A weak main or auxiliary battery, charging fault, voltage drop, wiring concern or control-module communication issue can create several warning messages at once. Battery registration or coding is completed where required.',
+    description: 'A weak main or auxiliary battery, charging fault, voltage drop, wiring concern or control-module communication issue can create several warning messages at once. Any required battery registration or coding is confirmed for compatibility and quoted where supported.',
     path: MERCEDES_SERVICE_PATHS['electrical-repair'],
     label: 'Mercedes electrical repair',
   },
@@ -352,10 +353,12 @@ const BrandPage = () => {
     const isMercedes = brand.slug === 'mercedes-benz-service-dubai';
     const isRangeRoverHub = brand.slug === 'range-rover-service-dubai';
     const isDefenderHub = brand.slug === 'defender-service-dubai';
-    const pageDescription = !isArabic && isMercedes ? MERCEDES_META_DESCRIPTION
-      : !isArabic && isRangeRoverHub ? RANGE_ROVER_META_DESCRIPTION
-        : !isArabic && isDefenderHub ? DEFENDER_META_DESCRIPTION
-          : brand.intro;
+    const entityName = isArabic
+      ? `صيانة وإصلاح ${brand.name} في دبي`
+      : `${brand.name} Service & Repair in Dubai`;
+    const schemaDescription = isArabic
+      ? `خدمة وفحص سيارات ${brand.name} لدى ورشة ديجي-تك في القوز، دبي. تواصل مع الفريق لتأكيد نطاق الخدمة المناسب لطراز سيارتك.`
+      : `${brand.name} vehicle inspection, maintenance and repair at Digi-Tec Performance Center in Al Quoz, Dubai. Contact the team to confirm the appropriate service scope for your model.`;
     const breadcrumb = buildBreadcrumb(url, [
       { name: isArabic ? 'الرئيسية' : 'Home', url: `https://digitecme.com${isArabic ? '/ar' : '/'}` },
       { name: isArabic ? 'العلامات' : 'Brands', url: `https://digitecme.com${isArabic ? '/ar' : ''}/brands` },
@@ -363,73 +366,36 @@ const BrandPage = () => {
     ]);
     const webPage = buildWebPage({
       url,
-      name: isArabic ? `صيانة وإصلاح ${brand.name} في دبي` : isMercedes ? 'Mercedes-Benz Repair & Service in Dubai' : isRangeRoverHub ? 'Range Rover Repair & Service in Dubai' : isDefenderHub ? 'Defender Repair & Service in Dubai' : `${brand.name} Service & Repair in Dubai`,
-      description: pageDescription,
+      name: entityName,
+      description: schemaDescription,
       breadcrumbId: `${url}#breadcrumb`,
       primaryImage: isMercedes ? mercedesWorkshop : isRangeRoverHub ? rangeRoverWorkshop : isDefenderHub ? defenderWorkshop : brand.logo || undefined,
-      ...((isMercedes || isRangeRoverHub || isDefenderHub) ? { dateModified: '2026-08-03' } : {}),
+      mainEntityId: `${url}#service`,
     });
-    const models = BRAND_MODELS[brand.slug] ?? BRAND_PROFILES[serviceProfileSlug]?.models ?? [];
-    const brandEntity = {
-      '@type': 'Brand',
-      '@id': `${url}#brand`,
+    const brandEntity = buildBrand({
       name: brand.name,
-      ...(brand.logo ? { logo: brand.logo.startsWith('http') ? brand.logo : `https://digitecme.com${brand.logo}` } : {}),
-    };
-    const svc = {
-      '@type': 'Service',
-      '@id': `${url}#service`,
-      name: isArabic ? `صيانة وإصلاح ${brand.name} في دبي` : isMercedes ? 'Mercedes-Benz Repair & Service in Dubai' : isRangeRoverHub ? 'Range Rover Repair & Service in Dubai' : isDefenderHub ? 'Defender Repair & Service in Dubai' : `${brand.name} Service & Repair in Dubai`,
-      serviceType: isArabic ? `إصلاح ${brand.name}` : `${brand.name} Repair`,
-      description: pageDescription,
+      logo: brand.logo || undefined,
+    });
+    const schemaOffers = isMercedes && !isArabic
+      ? MERCEDES_SCHEMA_OFFERS.map((offer) => offer.name)
+      : (isArabic ? arBrandServices.map((service) => service.title) : BRAND_OFFER_CATALOG)
+        .map((offer) => `${brand.name} ${offer}`);
+    const svc = buildService({
       url,
-      provider: businessRef,
-      brand: { '@id': `${url}#brand` },
-      areaServed: [
-        { '@type': 'City', name: isArabic ? 'دبي' : 'Dubai' },
-        { '@type': 'City', name: isArabic ? 'أبوظبي' : 'Abu Dhabi' },
-        { '@type': 'City', name: isArabic ? 'الشارقة' : 'Sharjah' },
-        { '@type': 'Country', name: isArabic ? 'الإمارات العربية المتحدة' : 'United Arab Emirates' },
-      ],
-      hasOfferCatalog: {
-        '@type': 'OfferCatalog',
-        name: isArabic ? `دليل خدمات ${brand.name}` : `${brand.name} Service Catalog`,
-        itemListElement: isMercedes && !isArabic
-          ? MERCEDES_SCHEMA_OFFERS.map((offer) => ({
-              '@type': 'Offer',
-              itemOffered: {
-                '@type': 'Service',
-                name: offer.name,
-                url: `https://digitecme.com${offer.path}`,
-              },
-            }))
-          : (isArabic ? arBrandServices.map((service) => service.title) : BRAND_OFFER_CATALOG).map((n) => ({
-              '@type': 'Offer',
-              itemOffered: { '@type': 'Service', name: `${brand.name} ${n}` },
-            })),
-      },
-      ...(models.length > 0
-        ? {
-            audience: {
-              '@type': 'Audience',
-              name: isArabic ? `مالكو ${brand.name}` : `${brand.name} owners`,
-            },
-            isRelatedTo: models.map((m) => ({
-              '@type': 'Vehicle',
-              vehicleModelDate: undefined,
-              manufacturer: { '@id': `${url}#brand` },
-              model: m,
-              name: `${brand.name} ${m}`,
-            })),
-          }
-        : {}),
-    };
+      name: entityName,
+      serviceType: isArabic ? `خدمة سيارات ${brand.name}` : `${brand.name} vehicle service`,
+      description: schemaDescription,
+      image: isMercedes ? mercedesWorkshop : isRangeRoverHub ? rangeRoverWorkshop : isDefenderHub ? defenderWorkshop : brand.logo || undefined,
+      brand: brand.name,
+      offers: schemaOffers,
+      areaServed: [isArabic ? 'دبي' : 'Dubai'],
+    });
     const faq = buildFAQ(
       url,
       brand.faqs.map((f) => ({ question: f.q, answer: f.a })),
     );
     return pageGraph([webPage, breadcrumb, brandEntity, svc, ...(faq ? [faq] : [])]);
-  }, [brand, isArabic, serviceProfileSlug]);
+  }, [brand, isArabic]);
 
   const isMercedesServiceHub = brand?.slug === 'mercedes-benz-service-dubai';
   const isRangeRoverServiceHub = brand?.slug === 'range-rover-service-dubai';
@@ -468,7 +434,7 @@ const BrandPage = () => {
     intro: `ديجي-تك مركز مستقل ومتخصص في خدمة ${brand.name} في دبي. نجمع بين التشخيص المتقدم والقطع المناسبة والفنيين ذوي الخبرة لتقديم صيانة وإصلاح واضحين من ورشتنا في القوز.`,
     dubai: `تضع حرارة الإمارات ضغطاً إضافياً على التبريد والزيوت والبطارية والمطاط والتكييف. لذلك نفحص سيارات ${brand.name} مع مراعاة ظروف دبي وطريقة الاستخدام الفعلية.`,
     expertise: `تشمل خبرتنا بسيارات ${brand.name} الصيانة والتشخيص والمحرك وناقل الحركة والتعليق والفرامل والكهرباء والتكييف، مع المعايرة والاختبار بعد الإصلاح.`,
-    parts: `نستخدم قطع OEM أصلية أو بدائل موثوقة مطابقة للمواصفات، ونوثق الاختيار والأعمال والتوصيات بوضوح قبل تسليم السيارة.`,
+    parts: `يحدد عرض السعر القطع والسوائل المقترحة قبل الموافقة. قد تشمل الخيارات قطعاً أصلية أو من مورّد مطابق أو بديلاً مناسباً يوافق عليه المالك بحسب الإصلاح والتوفر.`,
     cta: `لحجز خدمة ${brand.name} في دبي، اتصل على +971 4 340 2223 أو أرسل رسالة واتساب أو استخدم نموذج الحجز في هذه الصفحة.`,
   } : isMercedesServiceHub ? MERCEDES_SEO_COPY : isRangeRoverServiceHub ? RANGE_ROVER_SEO_COPY : isDefenderServiceHub ? DEFENDER_SEO_COPY : getBrandSeoCopy(brand);
   const displayedServices = isArabic ? arBrandServices : SERVICES;
@@ -582,7 +548,7 @@ const BrandPage = () => {
                   </a>
                 )}
               </div>
-              <CtaAssurance className="mt-4" align="start" text={isArabic ? 'تقييم مجاني · بلا التزام · رد خلال دقائق' : undefined} />
+              <CtaAssurance className="mt-4" align="start" text={isArabic ? 'تواصل معنا لمناقشة السيارة وطلب موعد' : undefined} />
             </div>
           </div>
         </div>
@@ -617,7 +583,7 @@ const BrandPage = () => {
                   See the diagnostic tools, technical capabilities and workshop criteria owners should compare before booking an independent Range Rover specialist in Dubai.
                 </p>
                 <Link to="/best-range-rover-workshop-dubai" className="inline-flex items-center gap-2 text-burnt-orange font-semibold mt-5 hover:text-off-white transition-colors">
-                  Read the best workshop guide <ArrowRight className="w-4 h-4" />
+                  Read the workshop selection guide <ArrowRight className="w-4 h-4" />
                 </Link>
               </div>
             </div>
@@ -679,7 +645,7 @@ const BrandPage = () => {
             <div className="grid sm:grid-cols-3 gap-4 sm:gap-6">
               <div className="card-premium rounded-2xl p-5 sm:p-6">
                 <h3 className="text-lg font-bold text-off-white mb-3">{isArabic ? 'منصة التشخيص' : 'Diagnostic platform'}</h3>
-                <p className="text-gray-400 text-sm leading-relaxed">{isArabic ? `أجهزة تشخيص متخصصة لسيارات ${brand.name} لتتبع الأعطال وقراءة البيانات الحية والبرمجة وإعادة ضبط الصيانة.` : `${profile.diagnosticTool} for fault tracing, live data, coding, and service resets.`}</p>
+                <p className="text-gray-400 text-sm leading-relaxed">{isArabic ? `يتم تأكيد توافق الفحص وقراءة البيانات وأي برمجة أو إعادة ضبط مطلوبة لسيارة ${brand.name} المحددة قبل إدراجها في عرض السعر.` : `${profile.diagnosticTool}. Compatible fault tracing, live data, coding, programming and service-reset functions are confirmed for the exact vehicle and required module before quotation.`}</p>
               </div>
               <div className="card-premium rounded-2xl p-5 sm:p-6">
                 <h3 className="text-lg font-bold text-off-white mb-3">{isArabic ? 'الأنظمة الأساسية' : 'Core systems'}</h3>
@@ -920,7 +886,7 @@ const BrandPage = () => {
                 {isArabic ? <>{brand.name} <span className="text-burnt-orange">للإصلاح في دبي</span> — جميع الخدمات</> : isMercedesServiceHub ? <>Mercedes <span className="text-burnt-orange">Repair Services</span> in Dubai</> : <>{brand.name} <span className="text-burnt-orange">Repair Dubai</span> — Every Service</>}
               </h2>
               <p className="text-gray-400 max-w-2xl mx-auto text-sm sm:text-base">
-                {isArabic ? `سواء كنت تبحث عن إصلاح ${brand.name} أو تغيير الزيت أو إصلاح الفرامل في دبي، ستجد صفحة مخصصة لكل خدمة.` : isMercedesServiceHub ? 'Choose the exact service to see its warning signs, diagnostic process, relevant Mercedes systems and booking options. Broad Mercedes repair questions stay on this hub; detailed service questions live on the pages below.' : `Whether you searched for ${brand.name} repair Dubai, ${brand.name} oil change Dubai, or ${brand.name} brake repair Dubai, every specialist service has its own dedicated page with brand-specific parts, tools, and technical detail.`}
+                {isArabic ? `اختر صفحة إصلاح ${brand.name} أو تغيير الزيت أو إصلاح الفرامل لمراجعة المعلومات العامة، ثم تواصل معنا لتأكيد نطاق الخدمة المتاح لسيارتك.` : isMercedesServiceHub ? 'Choose the exact service to see its warning signs, diagnostic process, relevant Mercedes systems and booking options. Broad Mercedes repair questions stay on this hub; detailed service questions live on the pages below.' : `Choose a ${brand.name} repair, oil-change or brake page for general guidance, then contact the workshop to confirm the available scope for your exact vehicle.`}
               </p>
             </div>
             <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 sm:gap-4">
@@ -968,7 +934,7 @@ const BrandPage = () => {
                   {isArabic ? `إصلاح ${brand.name} في دبي` : `${brand.name} Repair Dubai`}
                 </h3>
                 <p className="text-gray-400 text-sm sm:text-base leading-relaxed">
-                  {isArabic ? `إصلاح ميكانيكي وكهربائي متكامل لسيارات ${brand.name}، من المحرك وناقل الحركة إلى التعليق والفرامل والتبريد باستخدام تشخيص متقدم وقطع مناسبة.` : `Full mechanical and electrical repair for every ${brand.name} platform, from engine and transmission overhauls to suspension, brakes, and cooling system work. Our workshop in Al Quoz handles ${brand.name} repair in Dubai with genuine OEM parts and factory diagnostic tools.`}
+                  {isArabic ? `يمكن أن يشمل الفحص مشكلات المحرك وناقل الحركة والتعليق والفرامل والتبريد والأنظمة الكهربائية. يُؤكد نطاق الإصلاح المتاح بعد مراجعة السيارة والمشكلة.` : `Inspection and repair planning can cover engine, transmission, suspension, brake, cooling and electrical concerns. The available repair scope is confirmed after the vehicle and concern are reviewed.`}
                 </p>
               </div>
               <div>
@@ -976,7 +942,7 @@ const BrandPage = () => {
                   {isArabic ? `تغيير زيت ${brand.name} في دبي` : `${brand.name} Oil Change Dubai`}
                 </h3>
                 <p className="text-gray-400 text-sm sm:text-base leading-relaxed">
-                  {isArabic ? `زيت وفلتر بالمواصفة المناسبة لسيارات ${brand.name} مع فحص متعدد النقاط وإعادة ضبط مؤشر الصيانة.` : `Manufacturer-approved oil and filter service using the correct ${brand.name} specification fluid for Dubai's climate. Every ${brand.name} oil change in Dubai includes a full multi-point inspection, service reset, and digital service record.`}
+                  {isArabic ? `يتم تأكيد مواصفة الزيت والفلتر حسب طراز ${brand.name} والمحرك. وقد يشمل نطاق الخدمة المتفق عليه فحوصاً إضافية وإعادة ضبط المؤشر عند الحاجة.` : `The oil and filter specification is confirmed for the exact ${brand.name} model and engine. The agreed service scope may include additional checks and a service-indicator reset where applicable.`}
                 </p>
               </div>
               <div>
@@ -984,7 +950,7 @@ const BrandPage = () => {
                   {isArabic ? `إصلاح فرامل ${brand.name} في دبي` : `${brand.name} Brake Repair Dubai`}
                 </h3>
                 <p className="text-gray-400 text-sm sm:text-base leading-relaxed">
-                  {isArabic ? `فحمات وأقراص وحساسات وكليبرات وخدمة للنظام الهيدروليكي باستخدام قطع مناسبة لسيارات ${brand.name}.` : `Pads, discs, sensors, calipers, and full hydraulic system work using genuine ${brand.name} components. Our ${brand.name} brake repair service in Dubai covers ceramic, carbon-ceramic, and standard iron setups with proper bedding-in and system bleeding.`}
+                  {isArabic ? `يمكن أن يشمل الفحص الفحمات والأقراص والحساسات والكليبرات والنظام الهيدروليكي. تعتمد القطع والإجراءات المقترحة على نظام الفرامل المركب في السيارة.` : `Inspection can cover pads, discs, sensors, calipers and the hydraulic system. Proposed parts and procedures depend on the brake system fitted to the exact vehicle.`}
                 </p>
               </div>
                 </>
@@ -1006,7 +972,7 @@ const BrandPage = () => {
                   <div className="bg-black/30 border border-white/10 rounded-xl p-4">
                     <MapPin className="w-5 h-5 text-burnt-orange mb-3" />
                     <h3 className="text-off-white font-bold">Al Quoz Industrial Area 3</h3>
-                    <p className="text-gray-400 text-sm mt-2">Warehouse 11–15, Dubai, with a direct Google Maps route from this page.</p>
+                    <p className="text-gray-400 text-sm mt-2">Warehouses 11–15, Dubai, with a direct Google Maps route from this page.</p>
                   </div>
                   <div className="bg-black/30 border border-white/10 rounded-xl p-4">
                     <CheckCircle2 className="w-5 h-5 text-burnt-orange mb-3" />
@@ -1023,23 +989,23 @@ const BrandPage = () => {
             ) : (
               <>
             <p className="text-off-white font-bold text-xl sm:text-2xl mb-2">
-              {isArabic ? `موثوق لدى ملاك ${brand.name} في الإمارات` : `Trusted by ${brand.name} owners across the UAE`}
+              {isArabic ? `خدمة مستقلة لسيارات ${brand.name} في دبي` : `Independent ${brand.name} service in Dubai`}
             </p>
             <p className="text-gray-400 text-sm sm:text-base mb-8">
-              {isArabic ? 'قطع OEM وتشخيص متقدم وأسعار واضحة.' : 'Genuine OEM parts, factory-grade diagnostics, and transparent pricing since 2002.'}
+              {isArabic ? 'نخدم دبي منذ عام 2002 مع شرح الفحص والعمل المقترح قبل الموافقة.' : 'Serving Dubai since 2002 with inspection findings and proposed work explained before approval.'}
             </p>
             <div className="grid grid-cols-3 gap-4 sm:gap-8 max-w-2xl mx-auto">
               <div>
-                <div className="text-2xl sm:text-4xl font-black text-burnt-orange">50,000+</div>
-                <div className="text-xs sm:text-sm text-gray-400 mt-1">{isArabic ? 'سيارة تمت خدمتها' : 'Cars Served'}</div>
+                <div className="text-2xl sm:text-4xl font-black text-burnt-orange">2002</div>
+                <div className="text-xs sm:text-sm text-gray-400 mt-1">{isArabic ? 'سنة التأسيس' : 'Established'}</div>
               </div>
               <div>
-                <div className="text-2xl sm:text-4xl font-black text-burnt-orange">8,000+</div>
-                <div className="text-xs sm:text-sm text-gray-400 mt-1">{isArabic ? 'عميل راضٍ' : 'Satisfied Customers'}</div>
+                <div className="text-2xl sm:text-4xl font-black text-burnt-orange">Al Quoz</div>
+                <div className="text-xs sm:text-sm text-gray-400 mt-1">{isArabic ? 'ورشة دبي' : 'Dubai Workshop'}</div>
               </div>
               <div>
-                <div className="text-2xl sm:text-4xl font-black text-burnt-orange">40,000</div>
-                <div className="text-xs sm:text-sm text-gray-400 mt-1">{isArabic ? 'قدم مربعة' : 'Sq Ft Facility'}</div>
+                <div className="text-2xl sm:text-4xl font-black text-burnt-orange">11–15</div>
+                <div className="text-xs sm:text-sm text-gray-400 mt-1">{isArabic ? 'المستودعات' : 'Warehouses'}</div>
               </div>
             </div>
               </>
@@ -1055,7 +1021,7 @@ const BrandPage = () => {
           <article className="space-y-8 sm:space-y-10">
             <header>
               <h2 className="text-2xl sm:text-4xl lg:text-5xl font-black mb-4 sm:mb-6 leading-tight">
-                {isArabic ? <>خدمة <span className="text-burnt-orange">{brand.name}</span> المتخصصة في دبي</> : isMercedesServiceHub ? <>Independent <span className="text-burnt-orange">Mercedes-Benz Specialist</span> in Dubai</> : <>Specialist <span className="text-burnt-orange">{brand.name}</span> Service in Dubai</>}
+                {isArabic ? <>خدمة مستقلة لسيارات <span className="text-burnt-orange">{brand.name}</span> في دبي</> : isMercedesServiceHub ? <>Independent <span className="text-burnt-orange">Mercedes-Benz Workshop</span> in Dubai</> : <>Independent <span className="text-burnt-orange">{brand.name}</span> Service in Dubai</>}
               </h2>
               <p className="text-gray-300 text-base sm:text-lg leading-relaxed">{seoCopy.intro}</p>
             </header>
@@ -1067,13 +1033,13 @@ const BrandPage = () => {
             </div>
             <div>
               <h3 className="text-xl sm:text-2xl font-bold text-off-white mb-3">
-                {isArabic ? `خبرة موثوقة بسيارات ${brand.name}` : `${brand.name} Expertise You Can Verify`}
+                {isArabic ? `نطاق فحص وخدمة سيارات ${brand.name}` : `${brand.name} Inspection and Service Scope`}
               </h3>
               <p className="text-gray-300 text-sm sm:text-base leading-relaxed">{seoCopy.expertise}</p>
             </div>
             <div>
               <h3 className="text-xl sm:text-2xl font-bold text-off-white mb-3">
-                {isArabic ? 'قطع أصلية وتقارير واضحة' : isMercedesServiceHub ? 'Clear Parts and Fluid Options' : 'Genuine Parts and Transparent Reporting'}
+                {isArabic ? 'خيارات واضحة للقطع والسوائل' : 'Clear Parts and Fluid Options'}
               </h3>
               <p className="text-gray-300 text-sm sm:text-base leading-relaxed">{seoCopy.parts}</p>
             </div>

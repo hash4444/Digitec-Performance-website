@@ -17,12 +17,11 @@ export const FinalCTA = () => {
         <Reveal>
           <span className="eyebrow mb-3 sm:mb-6">{copy?.eyebrow ?? 'Get Started'}</span>
           <h2 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black mb-3 sm:mb-6 leading-tight">
-            {copy ? copy.title : <>Ready to Transform Your<br /><span className="text-burnt-orange">D</span>ream Machine?</>}
+            {copy ? copy.title : <>Tell Us About Your<br /><span className="text-burnt-orange">V</span>ehicle</>}
           </h2>
 
           <p className="text-sm sm:text-xl lg:text-2xl text-gray-300 mb-5 sm:mb-10 max-w-4xl mx-auto leading-snug sm:leading-relaxed px-4">
-            {copy?.description ?? <>Join the elite circle of Dubai's most discerning automotive enthusiasts.
-            Experience the pinnacle of luxury performance tuning at <span className="text-burnt-orange">D</span>IGI-TEC Performance Center.</>}
+            {copy?.description ?? <>Share the make, model, year and the service or symptoms you want checked. The Digi-Tec team can help arrange the appropriate workshop visit.</>}
           </p>
         </Reveal>
 
@@ -33,7 +32,7 @@ export const FinalCTA = () => {
             rel="noopener noreferrer"
             className="btn-primary w-full sm:w-auto"
           >
-            {copy?.schedule ?? 'Schedule Your Consultation'}
+            {copy?.schedule ?? 'Request an Appointment'}
           </a>
 
           <a href="tel:+97143402223" className="btn-secondary w-full sm:w-auto">
@@ -45,16 +44,16 @@ export const FinalCTA = () => {
         
         <div className="grid grid-cols-3 gap-2 sm:gap-8 text-center">
           <Reveal className="card-premium rounded-2xl p-3 sm:p-8" delay={0}>
-            <div className="text-xs sm:text-2xl font-bold text-burnt-orange mb-1 sm:mb-4 leading-tight">{copy?.cards[0].title ?? 'Free Consultation'}</div>
-            <div className="text-gray-300 text-[11px] sm:text-lg leading-snug">{copy?.cards[0].text ?? 'Complimentary performance assessment'}</div>
+            <div className="text-xs sm:text-2xl font-bold text-burnt-orange mb-1 sm:mb-4 leading-tight">{copy?.cards[0].title ?? 'Share the Details'}</div>
+            <div className="text-gray-300 text-[11px] sm:text-lg leading-snug">{copy?.cards[0].text ?? 'Make, model, year and current concern'}</div>
           </Reveal>
           <Reveal className="card-premium rounded-2xl p-3 sm:p-8" delay={0.1}>
-            <div className="text-xs sm:text-2xl font-bold text-burnt-orange mb-1 sm:mb-4 leading-tight">{copy?.cards[1].title ?? 'Expert Advice'}</div>
-            <div className="text-gray-300 text-[11px] sm:text-lg leading-snug">{copy?.cards[1].text ?? 'Personalized tuning recommendations'}</div>
+            <div className="text-xs sm:text-2xl font-bold text-burnt-orange mb-1 sm:mb-4 leading-tight">{copy?.cards[1].title ?? 'Arrange the Visit'}</div>
+            <div className="text-gray-300 text-[11px] sm:text-lg leading-snug">{copy?.cards[1].text ?? 'Choose the appropriate workshop inspection or service'}</div>
           </Reveal>
           <Reveal className="card-premium rounded-2xl p-3 sm:p-8" delay={0.2}>
-            <div className="text-xs sm:text-2xl font-bold text-burnt-orange mb-1 sm:mb-4 leading-tight">{copy?.cards[2].title ?? 'Premium Service'}</div>
-            <div className="text-gray-300 text-[11px] sm:text-lg leading-snug">{copy?.cards[2].text ?? 'White-glove treatment guaranteed'}</div>
+            <div className="text-xs sm:text-2xl font-bold text-burnt-orange mb-1 sm:mb-4 leading-tight">{copy?.cards[2].title ?? 'Review the Scope'}</div>
+            <div className="text-gray-300 text-[11px] sm:text-lg leading-snug">{copy?.cards[2].text ?? 'Discuss findings and proposed work before approval'}</div>
           </Reveal>
         </div>
       </div>

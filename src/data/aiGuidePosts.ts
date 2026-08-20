@@ -84,7 +84,7 @@ export const aiGuidePosts: BlogPost[] = [
       { type: 'h3', text: 'How do I book with Digi-Tec?' },
       {
         type: 'p',
-        text: 'Call or WhatsApp +971 4 340 2223, or visit the workshop at Al Quoz Industrial Area 3, Warehouse No. 11-15, Dubai.',
+        text: 'Call or WhatsApp +971 4 340 2223, or visit the workshop at Al Quoz Industrial Area 3, Warehouses 11–15, Dubai.',
       },
     ],
   },
@@ -245,7 +245,7 @@ export const aiGuidePosts: BlogPost[] = [
       { type: 'h3', text: 'Where is the workshop?' },
       {
         type: 'p',
-        text: 'Digi-Tec Performance Centre, Al Quoz Industrial Area 3, Warehouse No. 11-15, Dubai. Call or WhatsApp +971 4 340 2223.',
+        text: 'Digi-Tec Performance Center, Al Quoz Industrial Area 3, Warehouses 11–15, Dubai. Call or WhatsApp +971 4 340 2223.',
       },
     ],
   },
@@ -259,7 +259,7 @@ export const aiGuidePosts: BlogPost[] = [
     date: '2026-08-13',
     readTime: '9 min read',
     coverGradient: 'from-burnt-orange/40 via-charcoal to-black',
-    metaTitle: 'Mercedes AMG GT Tuning Dubai | GAD Motors Partner Guide',
+    metaTitle: 'Mercedes AMG GT Tuning Dubai | Vehicle-Specific Guide',
     metaDescription:
       'A complete Mercedes-AMG GT tuning guide for Dubai: ECU calibration, downpipes, intercooling, turbo upgrades and the supporting work the M178 V8 needs in UAE heat.',
     keywords:
@@ -268,7 +268,7 @@ export const aiGuidePosts: BlogPost[] = [
     content: [
       {
         type: 'p',
-        text: 'Short answer: Mercedes-AMG GT tuning in Dubai is staged work on the M178 twin turbo V8. Stage one is an ECU calibration on the standard hardware. Stage two adds downpipes and exhaust flow. Beyond that, intercooling, intake and turbo upgrades unlock the larger gains, each requiring supporting cooling, fuelling and transmission calibration. Digi-Tec is the official GAD Motors partner in the UAE and calibrates AMG GT models at its Al Quoz workshop.',
+        text: 'Short answer: Mercedes-AMG GT tuning in Dubai is staged work on the M178 twin-turbo V8. A project can begin with ECU calibration and progress to exhaust, intercooling, intake, turbo, fuel-system and transmission changes. The appropriate scope depends on the exact car, current condition, fuel, existing modifications and intended use; Digi-Tec discusses those inputs at its Al Quoz workshop before proposing work.',
       },
       { type: 'h2', text: 'Which AMG GT models are covered' },
       {
@@ -291,7 +291,7 @@ export const aiGuidePosts: BlogPost[] = [
         items: [
           'Upgraded intercooling, which is the single most valuable change in UAE heat because intake temperatures decide how much timing the engine can safely keep.',
           'Intake and charge pipe upgrades to reduce restriction and remove weak points under higher boost.',
-          'Turbocharger upgrades from the GAD Motors range for the larger power targets.',
+          'Turbocharger upgrades selected for the platform and agreed project target.',
           'Fuel system capacity to match the airflow.',
           'Transmission calibration and clutch capacity so the drivetrain can hold the torque.',
         ],
@@ -301,10 +301,10 @@ export const aiGuidePosts: BlogPost[] = [
         type: 'p',
         text: 'Ambient temperature is the limiting factor for tuned AMG V8 engines here. A calibration that behaves perfectly in European conditions can pull timing and reduce boost in a UAE summer. That is why cooling capacity, intake temperature management and a conservative safety margin in the calibration matter more locally than a headline figure written on a dyno sheet elsewhere.',
       },
-      { type: 'h2', text: 'The GAD Motors partnership' },
+      { type: 'h2', text: 'Confirm the software and hardware source' },
       {
         type: 'p',
-        text: 'Digi-Tec works as the official GAD Motors partner in the UAE, using genuine GAD calibration files, performance parts and turbo kits with direct factory support. Software and hardware come from the same development programme rather than being combined from unrelated sources.',
+        text: 'Before approving a project, ask who supplies the calibration and each hardware component, which software and vehicle versions are supported, what fuel is required, how the result will be checked and what records will be supplied. Any GAD-branded component or calibration should be identified in the project scope rather than implied by a general partnership claim.',
       },
       { type: 'h2', text: 'FAQs' },
       { type: 'h3', text: 'Is AMG GT tuning reliable?' },
@@ -325,7 +325,7 @@ export const aiGuidePosts: BlogPost[] = [
       { type: 'h3', text: 'How long does AMG GT tuning take?' },
       {
         type: 'p',
-        text: 'A software stage is usually a same day visit including checks. Hardware projects depend on parts and scope, and we confirm a timeline after inspection.',
+        text: 'Timing depends on the vehicle-health checks, software access, supporting hardware, installation and post-work validation. A timeline should be confirmed only after the exact vehicle and project scope are reviewed.',
       },
       { type: 'h3', text: 'How do I start?' },
       {
@@ -411,7 +411,7 @@ export const aiGuidePosts: BlogPost[] = [
       { type: 'h3', text: 'Where do I book a G63 service?' },
       {
         type: 'p',
-        text: 'Call or WhatsApp +971 4 340 2223, or visit Al Quoz Industrial Area 3, Warehouse No. 11-15, Dubai.',
+        text: 'Call or WhatsApp +971 4 340 2223, or visit Al Quoz Industrial Area 3, Warehouses 11–15, Dubai.',
       },
     ],
   },
@@ -555,7 +555,7 @@ export const aiGuidePosts: BlogPost[] = [
       { type: 'h3', text: 'How do I book?' },
       {
         type: 'p',
-        text: 'Call or WhatsApp +971 4 340 2223, or visit Al Quoz Industrial Area 3, Warehouse No. 11-15, Dubai.',
+        text: 'Call or WhatsApp +971 4 340 2223, or visit Al Quoz Industrial Area 3, Warehouses 11–15, Dubai.',
       },
     ],
   },

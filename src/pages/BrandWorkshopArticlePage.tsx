@@ -43,14 +43,15 @@ const BrandWorkshopArticleContent = ({ article, isArabic }: { article: BrandWork
       : `ورشة ${article.brand} في دبي | ديجي-تك`
     : article.metaTitle ?? (article.existingBestPage
       ? `${article.brand} Maintenance Dubai | DIGI-TEC`
-      : `Best ${article.brand} Workshop Dubai | DIGI-TEC`);
+      : `${article.brand} Workshop Selection Guide Dubai | DIGI-TEC`);
   const metaDescription = isArabic
     ? article.brand === 'Ferrari'
       ? 'دليل صيانة فيراري في دبي: مواعيد الخدمة وعوامل التكلفة وعلامات التحذير والفحوص المهمة في حرارة الإمارات وفترات التخزين.'
       : `ورشة متخصصة في ${article.brand} بدبي للفحص والصيانة والإصلاح. احجز لدى ديجي-تك في القوز للحصول على تشخيص واضح وخدمة احترافية.`
     : article.metaDescription ?? `${article.brand} workshop in Dubai for diagnostics, maintenance and repair. Visit DIGI-TEC in Al Quoz for clear inspections, practical guidance and booking support.`;
   const datePublished = article.datePublished ?? '2026-07-16';
-  const dateModified = article.dateModified ?? datePublished;
+  const dateModified = article.dateModified;
+  const displayDate = dateModified ?? datePublished;
   const ogImage = article.coverImage ? `${SITE_URL}${article.coverImage}` : undefined;
   const keywords = isArabic
     ? `ورشة ${article.brand} دبي، تصليح ${article.brand} دبي، صيانة ${article.brand} دبي، متخصص ${article.brand} دبي`
@@ -67,10 +68,10 @@ const BrandWorkshopArticleContent = ({ article, isArabic }: { article: BrandWork
     { question: `What should a ${article.brand} diagnostic include?`, answer: `A useful diagnostic is more than reading a code. It should combine a scan, live data where relevant, visual checks, a road test when appropriate, and a clear explanation of confirmed faults versus items that need monitoring.` },
     { question: `Should I use OEM or aftermarket ${article.brand} parts?`, answer: `The right choice depends on the component, vehicle age, budget and intended use. Safety-critical, electronic and complex driveline parts often need careful sourcing. Ask for the part brand, specification and applicable warranty terms in writing.` },
     { question: `Can DIGI-TEC inspect a ${article.brand} before I buy it?`, answer: `Yes. A pre-purchase inspection can review visible condition, fault memory, service evidence, tyres, brakes, suspension, cooling and drivability so you can make a better-informed decision before committing.` },
-    { question: `How long does a ${article.brand} service take?`, answer: `Routine work may be completed the same day when parts and workshop time are available. Diagnostics, major repairs and jobs requiring specialist parts should be quoted with a realistic inspection and completion timeline first.` },
+    { question: `How long does a ${article.brand} service take?`, answer: `Timing depends on the exact service, inspection findings, parts availability and workshop schedule. Ask for an estimated completion time after the vehicle and requested work have been reviewed.` },
     { question: `Can I book a ${article.brand} inspection by WhatsApp?`, answer: `Yes. Send the model, year, mileage, concern and any warning-light information to DIGI-TEC on WhatsApp. The team can advise the best next step and arrange an inspection in Al Quoz.` },
     { question: `Is performance tuning suitable for every ${article.brand}?`, answer: `No. A performance plan should be based on mechanical health, service history, cooling, brakes, tyres, driveline capacity and intended use. A diagnostic baseline comes before any upgrade recommendation.` },
-    { question: `Where is the ${article.brand} workshop located?`, answer: 'DIGI-TEC Performance Center is in Al Quoz Industrial Area 3, Dubai. The workshop serves owners across Dubai and the wider UAE by appointment.' },
+    { question: `Where is the ${article.brand} workshop located?`, answer: 'DIGI-TEC Performance Center is in Al Quoz Industrial Area 3, Warehouses 11–15, Dubai.' },
     { question: `What should I bring to my ${article.brand} appointment?`, answer: `Bring the key, service history if available, details of recent work, photos or videos of intermittent concerns, and the circumstances in which the issue occurs. This helps the inspection begin with useful context.` },
   ];
   const arabicFaqs = [
@@ -107,6 +108,7 @@ const BrandWorkshopArticleContent = ({ article, isArabic }: { article: BrandWork
       primaryImage: article.coverImage,
       datePublished,
       dateModified,
+      mainEntityId: `${url}#article`,
     });
     const blogArticle = buildArticle({
       url,
@@ -129,7 +131,7 @@ const BrandWorkshopArticleContent = ({ article, isArabic }: { article: BrandWork
       offers: isArabic
         ? ['الصيانة الدورية', 'فحص وتشخيص السيارة', 'الإصلاح الميكانيكي', 'إصلاح الفرامل', 'إصلاح التعليق', 'إصلاح الكهرباء']
         : ['Scheduled servicing', 'Diagnostics', 'Mechanical repair', 'Brake repair', 'Suspension repair', 'Electrical repair'],
-      areaServed: isArabic ? ['دبي', 'الشارقة', 'الإمارات العربية المتحدة'] : ['Dubai', 'Sharjah', 'United Arab Emirates'],
+      areaServed: isArabic ? ['دبي'] : ['Dubai'],
     });
     const faq = buildFAQ(url, faqs);
     return pageGraph([webPage, breadcrumb, blogArticle, service, ...(faq ? [faq] : [])]);
@@ -177,7 +179,7 @@ const BrandWorkshopArticleContent = ({ article, isArabic }: { article: BrandWork
             <h1 className="max-w-3xl text-4xl font-black leading-tight sm:text-5xl lg:text-6xl">{article.title}</h1>
             <p className="mt-4 flex items-center gap-2 text-sm text-gray-300">
               <Calendar className="h-4 w-4 text-burnt-orange" />
-              {t('Updated', 'آخر تحديث')} {new Date(dateModified).toLocaleDateString(isArabic ? 'ar-AE' : 'en-GB', { day: 'numeric', month: 'long', year: 'numeric' })}
+              {t(dateModified ? 'Updated' : 'Published', dateModified ? 'آخر تحديث' : 'تاريخ النشر')} {new Date(displayDate).toLocaleDateString(isArabic ? 'ar-AE' : 'en-GB', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' })}
               <span aria-hidden="true">·</span>
               {t('12 min read', '12 دقيقة قراءة')}
             </p>
@@ -199,7 +201,7 @@ const BrandWorkshopArticleContent = ({ article, isArabic }: { article: BrandWork
           <section className={`${isArabic ? 'border-r-2 pr-5' : 'border-l-2 pl-5'} border-burnt-orange`}>
             <h2 className="text-2xl font-black sm:text-3xl">{t(`A practical answer for ${article.brand} owners`, `إجابة عملية لمالكي ${article.brand}`)}</h2>
             <p className="mt-4 text-lg leading-relaxed text-gray-300">{t(`The best workshop decision is rarely about a slogan. It is about whether the team can understand the car, define the concern accurately, show you a sensible repair path and keep you informed before costs grow. At DIGI-TEC in Al Quoz, a ${article.brand} appointment starts with the vehicle’s history, symptoms and current condition—not an assumption.`, `اختيار الورشة المناسبة لا يعتمد على شعار، بل على قدرة الفريق على فهم السيارة وتحديد المشكلة بدقة وشرح مسار إصلاح منطقي قبل ارتفاع التكلفة. في ديجي-تك بالقوز، يبدأ موعد ${article.brand} بمراجعة تاريخ السيارة وأعراضها وحالتها الحالية، لا بالافتراضات.`)}</p>
-            {article.existingBestPage && <p className="mt-4 leading-relaxed text-gray-400">{t('For a direct comparison of what to look for in a workshop, see our ', 'للمقارنة المباشرة بين معايير اختيار الورشة، راجع صفحة ')}<Link to={article.existingBestPage} className="font-semibold text-burnt-orange hover:underline">{article.brand === 'Mercedes-Benz' ? t('Mercedes-Benz repair and service hub', 'مركز إصلاح وصيانة مرسيدس-بنز') : t(`Best ${article.brand} Workshop Dubai page`, `أفضل ورشة ${article.brand} في دبي`)}</Link>{t('. This article is intentionally focused on ownership, maintenance and repair preparation so it does not duplicate that landing page.', '؛ فهذا المقال يركز على الملكية والصيانة والاستعداد للإصلاح من دون تكرار محتوى صفحة الخدمة.')}</p>}
+            {article.existingBestPage && <p className="mt-4 leading-relaxed text-gray-400">{t('For a direct comparison of what to look for in a workshop, see our ', 'للمقارنة المباشرة بين معايير اختيار الورشة، راجع صفحة ')}<Link to={article.existingBestPage} className="font-semibold text-burnt-orange hover:underline">{article.brand === 'Mercedes-Benz' ? t('Mercedes-Benz repair and service hub', 'مركز إصلاح وصيانة مرسيدس-بنز') : t(`${article.brand} workshop selection page`, `دليل اختيار ورشة ${article.brand}`)}</Link>{t('. This article is intentionally focused on ownership, maintenance and repair preparation so it does not duplicate that landing page.', '؛ فهذا المقال يركز على الملكية والصيانة والاستعداد للإصلاح من دون تكرار محتوى صفحة الخدمة.')}</p>}
           </section>
 
           <section className="mt-14">

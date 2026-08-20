@@ -1,62 +1,106 @@
 /**
- * Centralised Schema.org / JSON-LD helpers for digitecme.com.
+ * Schema.org helpers for the connected entity graph on digitecme.com.
  *
- * Every entity uses a stable `@id`. Per-page graphs reference sitewide
- * entities (Organization, AutoRepair business, WebSite) by @id instead of
- * duplicating them, so the site's structured data is fully interconnected
- * and Google's validator does not flag duplicates.
- *
- * Sitewide entities live in `index.html` (visible to non-JS crawlers).
- * Per-route entities are injected by `useSeo({ jsonLd })`.
+ * Shared entities use one permanent @id. Route entities use their canonical
+ * URL plus a stable fragment, so English and Arabic pages can reference the
+ * same business and vehicle-brand nodes without publishing duplicate claims.
  */
 
 export const SITE_URL = 'https://digitecme.com';
+export const DEFAULT_OG_IMAGE = `${SITE_URL}/images/hero-bg.png`;
 
 export const IDS = {
   organization: `${SITE_URL}/#organization`,
   business: `${SITE_URL}/#business`,
   website: `${SITE_URL}/#website`,
   logo: `${SITE_URL}/#logo`,
+  serviceCatalog: `${SITE_URL}/#service-catalog`,
 } as const;
 
 export const organizationRef = { '@id': IDS.organization };
 export const businessRef = { '@id': IDS.business };
 export const websiteRef = { '@id': IDS.website };
 
-const abs = (url: string) => (url.startsWith('http') ? url : `${SITE_URL}${url.startsWith('/') ? '' : '/'}${url}`);
+type Entity = Record<string, unknown>;
+
+export const absoluteUrl = (url: string) =>
+  url.startsWith('http') ? url : `${SITE_URL}${url.startsWith('/') ? '' : '/'}${url}`;
+
 const languageForUrl = (url: string) => {
-  const pathname = new URL(abs(url)).pathname;
+  const pathname = new URL(absoluteUrl(url)).pathname;
   return pathname === '/ar' || pathname.startsWith('/ar/') ? 'ar-AE' : 'en-AE';
 };
 
-type Entity = Record<string, unknown>;
+const slugify = (value: string) =>
+  value
+    .toLowerCase()
+    .replace(/&/g, ' and ')
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-|-$/g, '');
 
-/** Wrap a list of entities in a single JSON-LD graph document. */
-export function pageGraph(entities: Entity[]): Entity {
+/** Wrap route entities in one JSON-LD graph document. */
+export function pageGraph(entities: Array<Entity | null | undefined>): Entity {
   return {
     '@context': 'https://schema.org',
     '@graph': entities.filter(Boolean),
   };
 }
 
-/** BreadcrumbList entity with a stable @id derived from the page URL. */
+/** A vehicle brand has one language-independent identity across the site. */
+export function brandId(nameOrSlug: string): string {
+  const clean = nameOrSlug.replace(/-service-dubai$/i, '');
+  return `${SITE_URL}/#brand-${slugify(clean)}`;
+}
+
+export function brandRef(nameOrSlug: string): Entity {
+  return { '@id': brandId(nameOrSlug) };
+}
+
+export function buildBrand(opts: {
+  name: string;
+  pageUrl?: string;
+  logo?: string;
+  description?: string;
+}): Entity {
+  const { name, pageUrl, logo, description } = opts;
+  return {
+    '@type': 'Brand',
+    '@id': brandId(name),
+    name,
+    ...(description ? { description } : {}),
+    ...(pageUrl ? { url: absoluteUrl(pageUrl), mainEntityOfPage: { '@id': `${absoluteUrl(pageUrl)}#webpage` } } : {}),
+    ...(logo
+      ? {
+          logo: {
+            '@type': 'ImageObject',
+            '@id': `${brandId(name)}-logo`,
+            url: absoluteUrl(logo),
+            contentUrl: absoluteUrl(logo),
+          },
+        }
+      : {}),
+  };
+}
+
+/** BreadcrumbList with a URL-derived stable identity. */
 export function buildBreadcrumb(
   pageUrl: string,
   items: { name: string; url: string }[],
 ): Entity {
+  const url = absoluteUrl(pageUrl);
   return {
     '@type': 'BreadcrumbList',
-    '@id': `${pageUrl}#breadcrumb`,
-    itemListElement: items.map((it, i) => ({
+    '@id': `${url}#breadcrumb`,
+    itemListElement: items.map((item, index) => ({
       '@type': 'ListItem',
-      position: i + 1,
-      name: it.name,
-      item: abs(it.url),
+      position: index + 1,
+      name: item.name,
+      item: absoluteUrl(item.url),
     })),
   };
 }
 
-/** WebPage entity referencing the sitewide WebSite/Business. */
+/** WebPage node referencing the shared WebSite, organization and business. */
 export function buildWebPage(opts: {
   url: string;
   name: string;
@@ -66,9 +110,9 @@ export function buildWebPage(opts: {
   primaryImage?: string;
   datePublished?: string;
   dateModified?: string;
+  mainEntityId?: string;
 }): Entity {
   const {
-    url,
     name,
     description,
     type = 'WebPage',
@@ -76,7 +120,9 @@ export function buildWebPage(opts: {
     primaryImage,
     datePublished,
     dateModified,
+    mainEntityId,
   } = opts;
+  const url = absoluteUrl(opts.url);
   return {
     '@type': type,
     '@id': `${url}#webpage`,
@@ -86,13 +132,15 @@ export function buildWebPage(opts: {
     isPartOf: websiteRef,
     publisher: organizationRef,
     about: businessRef,
+    ...(mainEntityId ? { mainEntity: { '@id': mainEntityId } } : {}),
     ...(breadcrumbId ? { breadcrumb: { '@id': breadcrumbId } } : {}),
     ...(primaryImage
       ? {
           primaryImageOfPage: {
             '@type': 'ImageObject',
-            url: abs(primaryImage),
-            contentUrl: abs(primaryImage),
+            '@id': `${url}#primaryimage`,
+            url: absoluteUrl(primaryImage),
+            contentUrl: absoluteUrl(primaryImage),
             representativeOfPage: true,
           },
         }
@@ -103,7 +151,33 @@ export function buildWebPage(opts: {
   };
 }
 
-/** Service entity — provider references sitewide Business. */
+export function buildOfferCatalog(pageUrl: string, name: string, offers: string[]): Entity {
+  const url = absoluteUrl(pageUrl);
+  return {
+    '@type': 'OfferCatalog',
+    '@id': `${url}#offer-catalog`,
+    name,
+    itemListElement: offers.map((offerName, index) => {
+      // Arabic and other non-Latin labels can normalize to an empty ASCII
+      // slug. Prefixing the position also keeps repeated labels unique while
+      // preserving deterministic IDs for a stable offer order.
+      const normalizedName = slugify(offerName) || 'item';
+      const key = `${index + 1}-${normalizedName}`;
+      return {
+        '@type': 'Offer',
+        '@id': `${url}#offer-${key}`,
+        itemOffered: {
+          '@type': 'Service',
+          '@id': `${url}#catalog-service-${key}`,
+          name: offerName,
+          provider: businessRef,
+        },
+      };
+    }),
+  };
+}
+
+/** Service node. The default service area is the confirmed Dubai location. */
 export function buildService(opts: {
   url: string;
   name: string;
@@ -115,7 +189,9 @@ export function buildService(opts: {
   offers?: string[];
   areaServed?: string[];
 }): Entity {
-  const { url, name, serviceType, description, image, keywords, brand, offers, areaServed } = opts;
+  const { name, serviceType, description, image, brand, offers } = opts;
+  const url = absoluteUrl(opts.url);
+  const areas = opts.areaServed?.length ? opts.areaServed : ['Dubai'];
   return {
     '@type': 'Service',
     '@id': `${url}#service`,
@@ -124,45 +200,56 @@ export function buildService(opts: {
     description,
     url,
     inLanguage: languageForUrl(url),
-    ...(image ? { image: abs(image) } : {}),
-    provider: businessRef,
-    areaServed: (areaServed && areaServed.length > 0
-      ? areaServed
-      : ['Dubai', 'Abu Dhabi', 'Sharjah', 'United Arab Emirates']
-    ).map((a) => ({ '@type': a === 'United Arab Emirates' ? 'Country' : 'City', name: a })),
-    ...(brand ? { brand: { '@type': 'Brand', name: brand } } : {}),
-    ...(keywords && keywords.length > 0 ? { keywords } : {}),
-    ...(offers && offers.length > 0
+    ...(image
       ? {
-          hasOfferCatalog: {
-            '@type': 'OfferCatalog',
-            name: `${name} — Services`,
-            itemListElement: offers.map((n) => ({
-              '@type': 'Offer',
-              itemOffered: { '@type': 'Service', name: n },
-            })),
+          image: {
+            '@type': 'ImageObject',
+            '@id': `${url}#service-image`,
+            url: absoluteUrl(image),
+            contentUrl: absoluteUrl(image),
+            representativeOfPage: true,
           },
         }
+      : {}),
+    provider: businessRef,
+    areaServed: areas.map((area) => ({
+      '@type': /united arab emirates|الإمارات العربية المتحدة/i.test(area) ? 'Country' : 'City',
+      name: area,
+    })),
+    ...(brand ? { brand: brandRef(brand) } : {}),
+    ...(offers?.length
+      ? { hasOfferCatalog: buildOfferCatalog(url, `${name} services`, offers) }
       : {}),
   };
 }
 
-/** FAQPage entity built from a list of Q&A pairs. */
+/** FAQ markup is emitted only from Q&A pairs rendered on the same route. */
 export function buildFAQ(pageUrl: string, faqs: { question: string; answer: string }[]): Entity | null {
-  if (!faqs || faqs.length === 0) return null;
+  const unsupportedClaim = /(?:highest[- ]rated|top[- ]rated|\bbest\b|\bleading\b|most trusted|official (?:gad|partner)|gad motors partner|factory support|dealer-level|manufacturer[- ]approved|\b(?:authori[sz]ed|certified)\b|coding rights|approved supply|\bguarantee(?:d)?\b|same[- ]day|free (?:diagnos|assess|consult)|30\s*[–-]\s*50\s*%|\b40\+|50,?000\+|8,?000\+|\b15\+\s*years|(?:genuine|original)\s+(?:oem\s+)?parts?\s+(?:are|is|for every|by default)|\b(?:xentry|ista\+?|piwis|odis|pathfinder|ldas|deis)\b|أعلى\s*تقييم|الأفضل|أفضل\s+ورشة|شريك\s+رسمي|الشريك\s+الرسمي|معتمد|قطع\s+أصلية|مجاني|في\s+نفس\s+اليوم|ضمان|٤٠\+|٥٠[،,]?٠٠٠\+)/i;
+  const safeFaqs = (faqs ?? []).filter(
+    (faq) => !unsupportedClaim.test(`${faq.question} ${faq.answer}`),
+  );
+  if (!safeFaqs.length) return null;
+  const url = absoluteUrl(pageUrl);
   return {
     '@type': 'FAQPage',
-    '@id': `${pageUrl}#faq`,
-    inLanguage: languageForUrl(pageUrl),
-    mainEntity: faqs.map((f) => ({
+    '@id': `${url}#faq`,
+    url,
+    isPartOf: websiteRef,
+    inLanguage: languageForUrl(url),
+    mainEntity: safeFaqs.map((faq, index) => ({
       '@type': 'Question',
-      name: f.question,
-      acceptedAnswer: { '@type': 'Answer', text: f.answer },
+      '@id': `${url}#question-${index + 1}`,
+      name: faq.question,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: faq.answer,
+      },
     })),
   };
 }
 
-/** BlogPosting / Article entity — publisher references the sitewide Organization. */
+/** BlogPosting node. dateModified is omitted unless a real update date exists. */
 export function buildArticle(opts: {
   url: string;
   headline: string;
@@ -176,7 +263,6 @@ export function buildArticle(opts: {
   keywords?: string;
 }): Entity {
   const {
-    url,
     headline,
     description,
     datePublished,
@@ -187,36 +273,38 @@ export function buildArticle(opts: {
     section,
     keywords,
   } = opts;
+  const url = absoluteUrl(opts.url);
   return {
     '@type': 'BlogPosting',
     '@id': `${url}#article`,
+    url,
     headline,
     description,
     datePublished,
-    dateModified: dateModified || datePublished,
-    author: authorType === 'Organization' ? organizationRef : { '@type': authorType, name: author },
+    ...(dateModified ? { dateModified } : {}),
+    author: authorType === 'Organization'
+      ? organizationRef
+      : { '@type': 'Person', name: author },
     publisher: organizationRef,
     mainEntityOfPage: { '@id': `${url}#webpage` },
     ...(image
       ? {
           image: {
             '@type': 'ImageObject',
-            url: abs(image),
-            contentUrl: abs(image),
+            '@id': `${url}#primaryimage`,
+            url: absoluteUrl(image),
+            contentUrl: absoluteUrl(image),
+            representativeOfPage: true,
           },
         }
       : {}),
     ...(section ? { articleSection: section } : {}),
     ...(keywords ? { keywords } : {}),
     inLanguage: languageForUrl(url),
+    isAccessibleForFree: true,
   };
 }
 
-/**
- * Detect the "brand" a service page targets from its slug or seoKeyword,
- * so brand-specific service pages (e.g. mercedes-brake-repair-dubai)
- * emit `brand: Mercedes-Benz` automatically.
- */
 const BRAND_KEYWORDS: { match: RegExp; brand: string }[] = [
   { match: /mercedes|amg|maybach/i, brand: 'Mercedes-Benz' },
   { match: /\bbmw\b|\bm-?power\b/i, brand: 'BMW' },
@@ -229,15 +317,14 @@ const BRAND_KEYWORDS: { match: RegExp; brand: string }[] = [
   { match: /bentley/i, brand: 'Bentley' },
   { match: /bugatti/i, brand: 'Bugatti' },
   { match: /aston\W?martin/i, brand: 'Aston Martin' },
-  { match: /range\W?rover|land\W?rover/i, brand: 'Land Rover' },
+  { match: /range\W?rover|land\W?rover|defender/i, brand: 'Land Rover' },
 ];
 
 export function detectBrand(slug: string, seoKeyword?: string): string | undefined {
-  const hay = `${slug} ${seoKeyword ?? ''}`;
-  return BRAND_KEYWORDS.find((b) => b.match.test(hay))?.brand;
+  const haystack = `${slug} ${seoKeyword ?? ''}`;
+  return BRAND_KEYWORDS.find((candidate) => candidate.match.test(haystack))?.brand;
 }
 
-/** Common service catalog entries used to enrich brand pages. */
 export const BRAND_OFFER_CATALOG = [
   'Scheduled Servicing',
   'Engine Repair',
@@ -246,8 +333,7 @@ export const BRAND_OFFER_CATALOG = [
   'Brake Repair',
   'Air Conditioning Repair',
   'ECU Programming',
-  'ECU Remapping',
   'Diagnostics',
   'Body Repair',
-  'Paint Protection & Ceramic Coating',
+  'Paint Protection Film and Ceramic Coating',
 ];

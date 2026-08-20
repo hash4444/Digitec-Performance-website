@@ -22,15 +22,17 @@ const SitemapPage = lazy(() => import("./pages/SitemapPage"));
 const NotFound = lazy(() => import("./pages/NotFound"));
 import LegacyRedirectHandler from "./components/LegacyRedirectHandler";
 import LocaleRedirect from "./components/LocaleRedirect";
+import Analytics from "./components/Analytics";
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
   useEffect(() => {
+    if (typeof window === 'undefined') return;
     window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+    if ('scrollRestoration' in window.history) {
+      window.history.scrollRestoration = 'manual';
+    }
   }, [pathname]);
-  if ('scrollRestoration' in window.history) {
-    window.history.scrollRestoration = 'manual';
-  }
   return null;
 };
 
@@ -72,13 +74,13 @@ const mercedesLegacyServicePages: Array<[string, string]> = [
   ["mercedes-body-repair-dubai", "body-repair"],
 ];
 
-const App = () => (
+export const AppContent = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter>
         <ScrollToTop />
+        <Analytics />
         <LocaleRedirect />
         <LegacyRedirectHandler />
         <Suspense fallback={<main className="min-h-screen bg-black" aria-label="Loading page" />}>
@@ -261,7 +263,6 @@ const App = () => (
           <Route path="/services/paint-protection" element={<Navigate to="/services/paint-protection-dubai" replace />} />
           <Route path="/services/car-paint-protection" element={<Navigate to="/services/paint-protection-dubai" replace />} />
           <Route path="/services/ppf" element={<Navigate to="/services/paint-protection-dubai" replace />} />
-          <Route path="/services/ceramic-coating" element={<Navigate to="/services/paint-protection-dubai" replace />} />
           <Route path="/services/car-service" element={<Navigate to="/services/car-service-dubai" replace />} />
           <Route path="/services/car-diagnostics" element={<Navigate to="/services/car-diagnostics-dubai" replace />} />
           {/* Old WP top-level pages still in index */}
@@ -297,9 +298,14 @@ const App = () => (
           <Route path="*" element={<NotFound />} />
         </Routes>
         </Suspense>
-      </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>
+);
+
+const App = () => (
+  <BrowserRouter>
+    <AppContent />
+  </BrowserRouter>
 );
 
 export default App;

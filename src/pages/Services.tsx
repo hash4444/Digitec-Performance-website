@@ -38,6 +38,7 @@ const Services = () => {
           description: isArabic ? 'دليل خدمات السيارات في دبي من الإصلاح الميكانيكي والتشخيص إلى الهيكل وحماية الطلاء لدى مركز ديجي-تك.' : 'Full catalog of automotive services in Dubai — mechanical repair, diagnostics, body work, and paint protection at DIGI-TEC Performance Center.',
           type: 'CollectionPage',
           breadcrumbId: `${url}#breadcrumb`,
+          mainEntityId: `${url}#servicelist`,
         }),
         buildBreadcrumb(url, [
           { name: isArabic ? 'الرئيسية' : 'Home', url: `https://digitecme.com${isArabic ? '/ar' : '/'}` },
@@ -81,7 +82,7 @@ const Services = () => {
             {isArabic ? 'خدماتنا' : 'Our Services'}
           </h1>
           <p className="text-gray-400 text-xs sm:text-lg max-w-4xl mx-auto leading-snug sm:leading-relaxed">
-            {isArabic ? 'يقدم مركز ديجي-تك مجموعة متكاملة من خدمات السيارات لمختلف العلامات، تجمع بين خبرة بمستوى الوكالة وسرعة أكبر وتسعير واضح. تشمل خدماتنا الصيانة والتشخيص والإصلاحات الميكانيكية وتطوير الأداء والعناية بالسيارات الفاخرة واليومية، ومنها مرسيدس-بنز ومايباخ وأودي وبي إم دبليو وبورشه وفيراري ولامبورغيني وماكلارين وبنتلي ورنج روفر ورولز رويس، إضافة إلى علامات أخرى عديدة.' : 'At Digitec Performance Center, we offer a comprehensive range of automotive services tailored to meet the needs of most vehicle brands, combining dealership-level expertise with faster turnaround times and competitive pricing. Our workshop specializes in servicing, diagnostics, mechanical repairs, performance upgrades, and maintenance for premium and everyday vehicles, including Mercedes-Benz and Maybach, Audi, BMW, Porsche, Lamborghini, Aston Martin, Bugatti, Nissan, Ferrari, McLaren, Bentley, Range Rover and Land Rover, Rolls-Royce, Toyota, Rox, Jetour, Zeekr, BYD, and Hongqi. Whether you own a luxury supercar, a high-performance vehicle, or a daily driver, Digitec delivers reliable, high-quality automotive solutions designed to keep your car performing at its best.'}
+            {isArabic ? 'يعرض مركز ديجي-تك خدمات صيانة وفحص وإصلاح وبرمجة وأعمال هيكل وعناية بالسيارات من ورشته المستقلة في القوز، دبي. يمكن لمالكي السيارات الأوروبية والفاخرة وبعض السيارات الكهربائية واليومية إرسال رقم الهيكل وتفاصيل العطل أو الخدمة المطلوبة للتأكد من التغطية وتحديد نطاق الفحص المناسب قبل الموعد.' : 'Digi-Tec lists vehicle maintenance, inspection, repair, programming, bodywork and car-care services from its independent workshop in Al Quoz, Dubai. Owners of European, luxury, selected electric and everyday vehicles can share the VIN and requested service or symptoms so coverage and the appropriate inspection scope can be confirmed before an appointment.'}
           </p>
         </div>
       </section>
@@ -91,13 +92,13 @@ const Services = () => {
           ? 'يقدم ديجي-تك في القوز، دبي الصيانة الدورية وتغيير الزيت، والتشخيص الإلكتروني، وإصلاح المحرك وناقل الحركة، والفرامل والتعليق والتوجيه، وإصلاح التكييف والكهرباء، والبرمجة والتكويد، وأعمال الهيكل والطلاء، وحماية الطلاء والسيراميك، وتطوير الأداء. يشمل ذلك مرسيدس وبي إم دبليو وأودي وبورشه والسيارات الفاخرة والكهربائية.'
           : 'Digi-Tec in Al Quoz, Dubai covers scheduled servicing and oil changes, electronic diagnostics, engine and transmission repair, brakes, suspension and steering, air conditioning and electrical repair, module coding and programming, body and paint work, paint protection film and ceramic coating, and performance tuning. Brands include Mercedes-Benz, BMW, Audi, Porsche, Ferrari, Lamborghini, Range Rover and luxury electric vehicles.'}
         facts={isArabic ? [
-          'صفحات خدمة مخصصة لكل علامة وكل نوع إصلاح',
-          'قطع أصلية أو من مورد المصنع أو بديل مناسب باعتماد المالك',
-          'فحص أولاً ثم عرض سعر مكتوب قبل الموافقة',
+          'صفحات منفصلة للعلامات وفئات الإصلاح المعروضة',
+          'تُحدد خيارات القطع حسب رقم الهيكل والإصلاح وعرض السعر المتفق عليه',
+          'تُناقش نتائج الفحص ونطاق العمل المقترح قبل الموافقة',
         ] : [
-          'Dedicated service pages for each brand and each repair type',
-          'Genuine, OE supplier or a suitable customer approved alternative parts',
-          'Inspection first, then a written scope before you approve the work',
+          'Separate pages for the listed brands and repair categories',
+          'Parts options are specified for the VIN, repair and agreed quotation',
+          'Inspection findings and the proposed work scope are discussed before approval',
         ]}
       />
 

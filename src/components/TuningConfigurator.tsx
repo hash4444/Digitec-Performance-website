@@ -35,14 +35,7 @@ function CarSelector({ cars, selectedIndex, onSelect, isArabic }: {
 }) {
   const scrollRef = useRef<HTMLDivElement>(null);
   const [isDragging, setIsDragging] = useState(false);
-  const [isMobile, setIsMobile] = useState(typeof window !== 'undefined' && window.innerWidth < 640);
   const dragStart = useRef({ x: 0, scrollLeft: 0 });
-
-  useEffect(() => {
-    const handler = () => setIsMobile(window.innerWidth < 640);
-    window.addEventListener('resize', handler);
-    return () => window.removeEventListener('resize', handler);
-  }, []);
 
   const scrollToIndex = useCallback((index: number) => {
     const el = scrollRef.current;
@@ -100,8 +93,7 @@ function CarSelector({ cars, selectedIndex, onSelect, isArabic }: {
             <div
               key={car.id}
               onClick={() => onSelect(i)}
-              className="flex-shrink-0 flex flex-col items-center cursor-pointer transition-all duration-500"
-              style={{ width: isMobile ? 220 : 280 }}
+              className="flex w-[220px] flex-shrink-0 cursor-pointer flex-col items-center transition-all duration-500 sm:w-[280px]"
             >
               <div className={`relative transition-all duration-500 ${isSelected ? 'scale-110' : 'scale-75 opacity-40 blur-[1px]'}`}>
                 {isSelected && (

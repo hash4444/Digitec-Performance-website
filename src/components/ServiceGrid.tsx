@@ -36,21 +36,6 @@ export const ServiceGrid = () => {
   const copy = isArabic ? arHome.services : null;
   return (
     <>
-      <style>{`
-        .horizontal-scroll-container {
-          -webkit-overflow-scrolling: touch;
-          scroll-behavior: smooth;
-          touch-action: auto;
-          scrollbar-width: thin;
-          scrollbar-color: #ff6b35 #0a0a0a;
-        }
-        .horizontal-scroll-container::-webkit-scrollbar { height: 8px; }
-        .horizontal-scroll-container::-webkit-scrollbar-track { background: #0a0a0a; }
-        .horizontal-scroll-container::-webkit-scrollbar-thumb { background: #ff6b35; border-radius: 4px; }
-        .horizontal-scroll-container::-webkit-scrollbar-thumb:hover { background: #e55a2b; }
-        .service-card { scroll-snap-align: start; flex: 0 0 auto; }
-      `}</style>
-
       <section className="py-10 sm:py-20 lg:py-32 bg-black">
         <div className="max-w-full mx-auto px-4 sm:px-6">
           <Reveal className="text-center mb-8 sm:mb-14 lg:mb-20">

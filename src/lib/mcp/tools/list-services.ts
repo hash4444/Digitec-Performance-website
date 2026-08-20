@@ -41,7 +41,7 @@ export default defineTool({
   name: "list_services",
   title: "List services",
   description:
-    "List Digitec Performance Center services in Dubai. Optionally filter by category (general or mercedes) or a case-insensitive search string on the title.",
+    "List Digi-Tec Performance Center service pages for Dubai. Optionally filter by category or title. Availability depends on the exact vehicle and requested work.",
   inputSchema: {
     category: z
       .enum(["general", "mercedes", "all"])
@@ -62,7 +62,11 @@ export default defineTool({
       .map(({ path, ...service }) => ({ ...service, url: `${SITE}${path ?? `/services/${service.slug}`}` }));
     return {
       content: [{ type: "text", text: JSON.stringify(filtered, null, 2) }],
-      structuredContent: { count: filtered.length, services: filtered },
+      structuredContent: {
+        count: filtered.length,
+        note: "Confirm compatibility, scope and appointment availability for the exact vehicle before booking.",
+        services: filtered,
+      },
     };
   },
 });

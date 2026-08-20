@@ -145,12 +145,6 @@ const Header = () => {
 
       <div className="h-16 md:h-20" />
 
-      <style>{`
-        .nav-link { color: rgb(245 245 245); font-size: 0.875rem; font-weight: 600; letter-spacing: 0.025em; padding: 0.5rem 0; transition: color 150ms ease; white-space: nowrap; }
-        .nav-link:hover { color: #ff6b35; }
-        .mobile-link { display: flex; min-height: 3rem; align-items: center; border-radius: 0.625rem; padding: 0.75rem 0.875rem; color: rgb(229 231 235); font-size: 1.05rem; font-weight: 650; transition: all 150ms ease; }
-        .mobile-link:hover { background: rgba(255,255,255,.05); color: #ff6b35; }
-      `}</style>
     </>
   );
 };

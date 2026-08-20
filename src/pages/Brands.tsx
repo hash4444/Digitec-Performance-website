@@ -19,6 +19,7 @@ const Brands = () => {
         description: isArabic ? 'استكشف علامات السيارات الفاخرة وعالية الأداء التي نخدمها لدى مركز ديجي-تك في القوز، دبي.' : 'Explore the luxury and performance car brands serviced at DIGI-TEC Performance Center in Al Quoz, Dubai.',
         type: 'CollectionPage',
         breadcrumbId: `${url}#breadcrumb`,
+        mainEntityId: `${url}#brandlist`,
       }),
       buildBreadcrumb(url, [
         { name: isArabic ? 'الرئيسية' : 'Home', url: `https://digitecme.com${isArabic ? '/ar' : '/'}` },
@@ -63,16 +64,16 @@ const Brands = () => {
       <AnswerBlock
         question={isArabic ? 'ما العلامات التي يخدمها ديجي-تك في دبي؟' : 'Which car brands does Digi-Tec service in Dubai?'}
         answer={isArabic
-          ? 'يخدم ديجي-تك في القوز، دبي سيارات مرسيدس-بنز ومايباخ وAMG، وبي إم دبليو، وأودي، وبورشه، وفيراري، ولامبورغيني، وماكلارين، وبنتلي، ورولز-رويس، وبوغاتي، وأستون مارتن، ورينج روفر ولاند روفر وديفندر، إضافة إلى سيارات فاخرة وكهربائية أخرى. لكل علامة صفحات خدمة مخصصة مع أنظمة التشخيص المناسبة لها.'
-          : 'Digi-Tec in Al Quoz, Dubai services Mercedes-Benz, Maybach and AMG, BMW, Audi, Porsche, Ferrari, Lamborghini, McLaren, Bentley, Rolls-Royce, Bugatti, Aston Martin, Range Rover, Land Rover and Defender, alongside other luxury and electric vehicles. Each brand has dedicated service pages and the matching manufacturer diagnostic platform.'}
+          ? 'تسرد صفحات العلامات في ديجي-تك فئات السيارات التي يمكن مناقشة صيانتها أو فحصها أو إصلاحها في ورشة القوز، دبي. يتم تأكيد التغطية والأداة المناسبة والوظائف المتاحة من رقم الهيكل والموديل والسنة ونطاق العمل قبل الحجز.'
+          : 'Digi-Tec’s brand pages list vehicle categories that owners can discuss for maintenance, inspection or repair at the Al Quoz, Dubai workshop. Coverage, suitable tooling and available functions are confirmed from the VIN, model, year and required work before booking.'}
         facts={isArabic ? [
           'صفحة مخصصة لكل علامة مع نطاق الخدمة وطريقة الحجز',
-          'أنظمة تشخيص خاصة بكل علامة بدل أدوات عامة',
-          'دبي، أبوظبي والشارقة ضمن نطاق الخدمة',
+          'تأكيد توافق الفحص والأدوات من السيارة المطلوبة',
+          'ورشة ديجي-تك في القوز، دبي',
         ] : [
           'A dedicated page per brand covering service scope and how to book',
-          'Brand specific diagnostic platforms rather than generic scan tools',
-          'Owners served across Dubai, Abu Dhabi and Sharjah',
+          'Vehicle-specific confirmation of diagnostic and tooling coverage',
+          'Digi-Tec workshop in Al Quoz, Dubai',
         ]}
       />
 

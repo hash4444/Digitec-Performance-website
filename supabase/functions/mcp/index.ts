@@ -3,10 +3,10 @@
 // supabase function: mcp
 // Bundled from src/lib/mcp/index.ts by @lovable.dev/mcp-js.
 // src/lib/mcp/index.ts
-import { defineMcp } from "npm:@lovable.dev/mcp-js@0.20.0";
+import { defineMcp } from "npm:@lovable.dev/mcp-js@0.20.1";
 
 // src/lib/mcp/tools/get-contact-info.ts
-import { defineTool } from "npm:@lovable.dev/mcp-js@0.20.0";
+import { defineTool } from "npm:@lovable.dev/mcp-js@0.20.1";
 var get_contact_info_default = defineTool({
   name: "get_contact_info",
   title: "Get contact info",
@@ -15,13 +15,16 @@ var get_contact_info_default = defineTool({
   annotations: { readOnlyHint: true, idempotentHint: true, openWorldHint: false },
   handler: () => {
     const info = {
-      business: "Digitec Performance Center",
+      business: "Digi-Tec Performance Center",
+      established: 2002,
       phone: "+971 4 340 2223",
       whatsapp: "+971 4 340 2223",
       whatsapp_link: "https://wa.me/97143402223",
       website: "https://digitecme.com",
-      area: "Al Quoz Industrial Area, Dubai, UAE",
-      specialization: "Independent workshop for German and luxury cars: Mercedes-Benz, BMW, Audi, Porsche, Bentley, Ferrari, Lamborghini, McLaren, Rolls-Royce, Aston Martin, Land Rover, Maybach, Bugatti."
+      email: "info@digitecme.com",
+      address: "Al Quoz Industrial Area 3, Warehouses 11\u201315, Dubai, UAE",
+      service_area: "Dubai",
+      specialization: "Independent workshop for vehicle inspection, maintenance, mechanical and electrical repair, body work, and vehicle-specific performance-project consultation. Confirm coverage for the exact vehicle and requested work."
     };
     return {
       content: [{ type: "text", text: JSON.stringify(info, null, 2) }],
@@ -31,7 +34,7 @@ var get_contact_info_default = defineTool({
 });
 
 // src/lib/mcp/tools/list-services.ts
-import { defineTool as defineTool2 } from "npm:@lovable.dev/mcp-js@0.20.0";
+import { defineTool as defineTool2 } from "npm:@lovable.dev/mcp-js@0.20.1";
 import { z } from "npm:zod@^4.4.3";
 var SITE = "https://digitecme.com";
 var services = [
@@ -70,7 +73,7 @@ var services = [
 var list_services_default = defineTool2({
   name: "list_services",
   title: "List services",
-  description: "List Digitec Performance Center services in Dubai. Optionally filter by category (general or mercedes) or a case-insensitive search string on the title.",
+  description: "List Digi-Tec Performance Center service pages for Dubai. Optionally filter by category or title. Availability depends on the exact vehicle and requested work.",
   inputSchema: {
     category: z.enum(["general", "mercedes", "all"]).optional().describe("Filter by service category. Defaults to all."),
     search: z.string().optional().describe("Case-insensitive substring to match against the service title.")
@@ -82,13 +85,17 @@ var list_services_default = defineTool2({
     const filtered = services.filter((s) => cat === "all" || s.category === cat).filter((s) => !q || s.title.toLowerCase().includes(q)).map(({ path, ...service }) => ({ ...service, url: `${SITE}${path ?? `/services/${service.slug}`}` }));
     return {
       content: [{ type: "text", text: JSON.stringify(filtered, null, 2) }],
-      structuredContent: { count: filtered.length, services: filtered }
+      structuredContent: {
+        count: filtered.length,
+        note: "Confirm compatibility, scope and appointment availability for the exact vehicle before booking.",
+        services: filtered
+      }
     };
   }
 });
 
 // src/lib/mcp/tools/list-brands.ts
-import { defineTool as defineTool3 } from "npm:@lovable.dev/mcp-js@0.20.0";
+import { defineTool as defineTool3 } from "npm:@lovable.dev/mcp-js@0.20.1";
 var SITE2 = "https://digitecme.com";
 var brands = [
   { name: "Mercedes-Benz", slug: "mercedes-benz-service-dubai" },
@@ -107,21 +114,25 @@ var brands = [
 ];
 var list_brands_default = defineTool3({
   name: "list_brands",
-  title: "List brands serviced",
-  description: "List luxury and performance car brands serviced by Digitec Performance Center in Dubai.",
+  title: "List published brand pages",
+  description: "List Digi-Tec Performance Center brand pages for Dubai. A listed page does not guarantee coverage for every model or function.",
   inputSchema: {},
   annotations: { readOnlyHint: true, idempotentHint: true, openWorldHint: false },
   handler: () => {
     const items = brands.map((b) => ({ ...b, url: `${SITE2}/brands/${b.slug}` }));
     return {
       content: [{ type: "text", text: JSON.stringify(items, null, 2) }],
-      structuredContent: { count: items.length, brands: items }
+      structuredContent: {
+        count: items.length,
+        note: "Confirm coverage for the exact VIN, model, year and requested work before booking.",
+        brands: items
+      }
     };
   }
 });
 
 // src/lib/mcp/tools/build-booking-link.ts
-import { defineTool as defineTool4 } from "npm:@lovable.dev/mcp-js@0.20.0";
+import { defineTool as defineTool4 } from "npm:@lovable.dev/mcp-js@0.20.1";
 import { z as z2 } from "npm:zod@^4.4.3";
 var build_booking_link_default = defineTool4({
   name: "build_booking_link",
@@ -154,10 +165,10 @@ var mcp_default = defineMcp({
   name: "digitec-mcp",
   title: "Digitec Performance Center",
   version: "0.1.0",
-  instructions: "Tools for Digitec Performance Center, an independent Dubai workshop for German and luxury cars. Use `list_services` to discover service pages, `list_brands` for supported brands, `get_contact_info` for phone/WhatsApp/location, and `build_booking_link` to generate a prefilled WhatsApp booking URL.",
+  instructions: "Tools for Digi-Tec Performance Center, an independent vehicle workshop established in Dubai in 2002 and located at Al Quoz Industrial Area 3, Warehouses 11\u201315. Use `list_services` to discover published service pages, `list_brands` to discover published brand pages, `get_contact_info` for verified contact/location details, and `build_booking_link` to create a WhatsApp enquiry URL. A listed page is not a blanket capability promise; confirm coverage for the exact VIN, model, year and requested work before booking.",
   tools: [get_contact_info_default, list_services_default, list_brands_default, build_booking_link_default]
 });
 
 // lovable-mcp-supabase-entry.ts
-import { createSupabaseHandler } from "npm:@lovable.dev/mcp-js@0.20.0/stacks/supabase";
+import { createSupabaseHandler } from "npm:@lovable.dev/mcp-js@0.20.1/stacks/supabase";
 Deno.serve(createSupabaseHandler(mcp_default, { functionName: "mcp" }));

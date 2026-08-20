@@ -19,6 +19,7 @@ import {
 import { getBrandBySlug } from '@/data/brands';
 import { CtaAssurance } from '@/components/TrustBar';
 import {
+  buildBrand,
   buildBreadcrumb,
   buildFAQ,
   buildService,
@@ -105,6 +106,9 @@ const BrandServicePage: React.FC<BrandServicePageProps> = ({
 
   const jsonLd = React.useMemo(() => {
     if (!combo || !brand || !profile) return undefined;
+    const schemaDescription = isArabic
+      ? `${combo.serviceName} لسيارات ${combo.brandName} لدى ورشة ديجي-تك في القوز، دبي. تواصل لترتيب الفحص أو الخدمة المناسبة.`
+      : `${combo.serviceName} for ${combo.brandName} vehicles at Digi-Tec Performance Center in Al Quoz, Dubai. Contact the workshop to arrange the appropriate inspection or service.`;
     const breadcrumb = buildBreadcrumb(url, [
       { name: isArabic ? 'الرئيسية' : 'Home', url: `${SITE_URL}${isArabic ? '/ar' : '/'}` },
       { name: isArabic ? 'العلامات' : 'Brands', url: `${SITE_URL}${isArabic ? '/ar' : ''}/brands` },
@@ -114,31 +118,25 @@ const BrandServicePage: React.FC<BrandServicePageProps> = ({
     const webPage = buildWebPage({
       url,
       name: combo.h1,
-      description: combo.metaDescription,
+      description: schemaDescription,
       breadcrumbId: `${url}#breadcrumb`,
       primaryImage: brand.logo || undefined,
+      mainEntityId: `${url}#service`,
+    });
+    const brandEntity = buildBrand({
+      name: combo.brandName,
+      logo: brand.logo || undefined,
     });
     const service = buildService({
       url,
       name: combo.h1,
       serviceType: `${combo.brandName} ${combo.serviceType}`,
-      description: combo.heroCopy,
+      description: schemaDescription,
       brand: combo.brandName,
-      offers: combo.processSteps.map((s) => `${combo.brandName} ${s.title}`),
-      areaServed: isArabic ? ['دبي', 'أبوظبي', 'الشارقة', 'الإمارات العربية المتحدة'] : ['Dubai', 'Abu Dhabi', 'Sharjah', 'United Arab Emirates'],
-      keywords: [
-        `${combo.brandName} ${combo.serviceName} Dubai`,
-        ...(combo.brandSlug === 'mercedes-benz-service-dubai'
-          ? []
-          : [`${combo.brandName} service Dubai`, `${combo.brandName} workshop Dubai`]),
-        ...(combo.brandSlug === 'rox-service-dubai' && combo.serviceSlug === 'soft-close-door-installation'
-          ? ['ROX 01 soft close', 'ROX soft close installation', 'ROX soft close Dubai', 'ROX soft close near me']
-          : []),
-        ...combo.models.slice(0, 3).map((m) => `${combo.brandName} ${m} ${combo.serviceName}`),
-      ],
+      areaServed: [isArabic ? 'دبي' : 'Dubai'],
     });
     const faq = buildFAQ(url, combo.faqs);
-    return pageGraph([webPage, breadcrumb, service, ...(faq ? [faq] : [])]);
+    return pageGraph([webPage, breadcrumb, brandEntity, service, ...(faq ? [faq] : [])]);
   }, [combo, brand, isArabic, profile, url]);
 
   useSeo({
@@ -211,7 +209,7 @@ const BrandServicePage: React.FC<BrandServicePageProps> = ({
                 {isArabic ? 'اتصل على +971 4 340 2223' : 'Call +971 4 340 2223'}
               </a>
             </div>
-            <CtaAssurance className="mt-4" align="start" text={isArabic ? 'تقييم مجاني · بلا التزام · رد خلال دقائق' : undefined} />
+            <CtaAssurance className="mt-4" align="start" text={isArabic ? 'تواصل معنا لمناقشة السيارة وطلب موعد' : undefined} />
           </div>
         </div>
       </section>
