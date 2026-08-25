@@ -224,7 +224,7 @@ export default {
     if (ROUTES.has(clean)) return env.ASSETS.fetch(request);
 
     // 1. Everything else: genuine 404 with the branded body.
-    const body = await env.ASSETS.fetch(new URL('/404.html', url.origin));
+    const body = await env.ASSETS.fetch(new Request(new URL('/404.html', url.origin).toString()));
     return new Response(body.body, {
       status: 404,
       headers: {

@@ -18,7 +18,7 @@ const worker = (await import(`file://${workerPath}?t=${Date.now()}`)).default;
 const env = {
   ASSETS: {
     async fetch(input) {
-      const url = new URL(typeof input === 'string' ? input : input.url);
+      const url = new URL(typeof input === 'string' ? input : input instanceof URL ? input.toString() : input.url);
       const p = url.pathname;
       const candidates = [
         path.join(distDir, p),
