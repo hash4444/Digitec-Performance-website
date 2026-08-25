@@ -31,7 +31,7 @@
       {
         "name": "list_services",
         "title": "List services",
-        "description": "List Digitec Performance Center services in Dubai. Optionally filter by category (general or mercedes) or a case-insensitive search string on the title.",
+        "description": "List Digi-Tec Performance Center service pages for Dubai. Optionally filter by category or title. Availability depends on the exact vehicle and requested work.",
         "annotations": {
           "readOnlyHint": true,
           "idempotentHint": true,
@@ -60,8 +60,8 @@
       },
       {
         "name": "list_brands",
-        "title": "List brands serviced",
-        "description": "List luxury and performance car brands serviced by Digitec Performance Center in Dubai.",
+        "title": "List published brand pages",
+        "description": "List Digi-Tec Performance Center brand pages for Dubai. A listed page does not guarantee coverage for every model or function.",
         "annotations": {
           "readOnlyHint": true,
           "idempotentHint": true,
