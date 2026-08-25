@@ -5,12 +5,14 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build && vite build --ssr src/entry-server.tsx --outDir dist-server && node scripts/prerender.mjs && node scripts/validate-seo.mjs",
+    "build": "vite build && vite build --ssr src/entry-server.tsx --outDir dist-server && node scripts/prerender.mjs && node scripts/validate-seo.mjs && node scripts/generate-hosting-rules.mjs && node scripts/test-hosting-rules.mjs",
     "build:dev": "vite build --mode development",
     "lint": "eslint .",
     "preview": "vite preview",
     "sitemap:brands": "node scripts/sync-brand-sitemap.mjs",
-    "validate:seo": "node scripts/validate-seo.mjs"
+    "validate:seo": "node scripts/validate-seo.mjs",
+    "hosting:rules": "node scripts/generate-hosting-rules.mjs",
+    "test:routing": "node scripts/test-hosting-rules.mjs"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.0",
