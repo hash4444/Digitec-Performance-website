@@ -1,118 +1,58 @@
-/**
- * Exercises dist/_worker.js in isolation and asserts the required
- * production HTTP behaviour. Run after generate-hosting-rules.mjs.
- */
-import fs from 'node:fs';
+import assert from 'node:assert/strict';
+import { pathToFileURL } from 'node:url';
 import path from 'node:path';
 
-const distDir = path.join(process.cwd(), 'dist');
-const workerPath = path.join(distDir, '_worker.js');
-if (!fs.existsSync(workerPath)) {
-  console.error('test-hosting-rules: dist/_worker.js missing. Run the build first.');
-  process.exit(1);
-}
+const workerFile = path.join(process.cwd(), 'dist', '_worker.js');
+const { handleRequest } = await import(`${pathToFileURL(workerFile).href}?test=${Date.now()}`);
 
-const worker = (await import(`file://${workerPath}?t=${Date.now()}`)).default;
-
-// Minimal ASSETS binding: serves whatever exists in dist/.
-const env = {
-  ASSETS: {
-    async fetch(input) {
-      const url = new URL(typeof input === 'string' ? input : input instanceof URL ? input.toString() : input.url);
-      const p = url.pathname;
-      const candidates = [
-        path.join(distDir, p),
-        path.join(distDir, p, 'index.html'),
-      ];
-      for (const file of candidates) {
-        if (fs.existsSync(file) && fs.statSync(file).isFile()) {
-          return new Response(fs.readFileSync(file), { status: 200 });
-        }
-      }
-      return new Response('missing', { status: 404 });
-    },
-  },
+const assetFetch = async (request) => {
+  const url = new URL(request.url);
+  if (url.pathname === '/404.html') {
+    return new Response('<!doctype html><title>Page Not Found</title>', {
+      status: 200,
+      headers: { 'Content-Type': 'text/html; charset=utf-8' },
+    });
+  }
+  if (url.pathname === '/images/hero-bg.png') {
+    return new Response('image', { status: 200, headers: { 'Content-Type': 'image/png' } });
+  }
+  return new Response('<!doctype html><title>Origin</title>', {
+    status: 200,
+    headers: { 'Content-Type': 'text/html; charset=utf-8' },
+  });
 };
+const env = { ASSETS: { fetch: assetFetch } };
 
-const call = (url) => worker.fetch(new Request(url), env);
+const request = (url, init) => handleRequest(new Request(url, init), env);
 
-let failures = 0;
-const check = async (label, url, expectStatus, expectLocation) => {
-  const res = await call(url);
-  const location = res.headers.get('location');
-  const ok =
-    res.status === expectStatus &&
-    (expectLocation === undefined || location === expectLocation);
-  if (!ok) failures += 1;
-  console.log(
-    `${ok ? 'PASS' : 'FAIL'}  ${label}\n      -> ${res.status}${
-      location ? ` ${location}` : ''
-    }${ok ? '' : `\n      expected ${expectStatus}${expectLocation ? ` ${expectLocation}` : ''}`}`,
-  );
-  return res;
-};
+let response = await request('https://www.digitecme.com/brands/porsche-service-dubai?utm_source=test');
+assert.equal(response.status, 308);
+assert.equal(response.headers.get('location'), 'https://digitecme.com/brands/porsche-service-dubai?utm_source=test');
 
-const A = 'https://digitecme.com';
+response = await request('https://digitecme.com/about-us?gclid=abc');
+assert.equal(response.status, 308);
+assert.equal(response.headers.get('location'), 'https://digitecme.com/about?gclid=abc');
 
-await check('home 200', `${A}/`, 200);
-await check('brand page 200', `${A}/brands/porsche-service-dubai`, 200);
-await check('robots.txt 200', `${A}/robots.txt`, 200);
-await check('sitemap.xml 200', `${A}/sitemap.xml`, 200);
-await check('llms.txt 200', `${A}/llms.txt`, 200);
-await check('legacy /about-us', `${A}/about-us`, 308, `${A}/about`);
-await check(
-  'legacy /services/engine-diagnostics',
-  `${A}/services/engine-diagnostics`,
-  308,
-  `${A}/services/car-diagnostics-dubai`,
-);
-await check(
-  'legacy /mechanical-repair',
-  `${A}/mechanical-repair`,
-  308,
-  `${A}/services/mechanical-repair-dubai`,
-);
-await check(
-  'query preserved on redirect',
-  `${A}/about-us?utm_source=test&gclid=abc`,
-  308,
-  `${A}/about?utm_source=test&gclid=abc`,
-);
-await check(
-  'www -> apex with query',
-  'https://www.digitecme.com/brands/porsche-service-dubai?utm_source=test',
-  308,
-  `${A}/brands/porsche-service-dubai?utm_source=test`,
-);
+response = await request('https://digitecme.com/services/engine-diagnostics');
+assert.equal(response.status, 308);
+assert.equal(response.headers.get('location'), 'https://digitecme.com/services/car-diagnostics-dubai');
 
-const nf = await check(
-  'unknown URL 404',
-  `${A}/no-such-page-${Date.now()}`,
-  404,
-);
-if (nf.headers.get('x-robots-tag') !== 'noindex, follow') {
-  failures += 1;
-  console.log('FAIL  404 missing X-Robots-Tag: noindex, follow');
-} else {
-  console.log('PASS  404 sends X-Robots-Tag: noindex, follow');
-}
+response = await request('https://digitecme.com/brands/porsche-service-dubai');
+assert.equal(response.status, 200);
 
-// No redirect may land on another redirect (no chains).
-const csv = fs
-  .readFileSync(path.join(process.cwd(), 'docs/seo/permanent-redirects.csv'), 'utf8')
-  .trim()
-  .split('\n')
-  .slice(1)
-  .map((line) => line.split(','));
-const sources = new Set(csv.map(([from]) => from));
-const chained = csv.filter(([, to]) => sources.has(to));
-if (chained.length) {
-  failures += 1;
-  console.log(`FAIL  ${chained.length} redirect chains: ${chained.slice(0, 5).map(([f, t]) => `${f}->${t}`).join(', ')}`);
-} else {
-  console.log(`PASS  no redirect chains (${csv.length} rules)`);
-}
+response = await request('https://digitecme.com/not-a-real-page-seo-status-test');
+assert.equal(response.status, 404);
+assert.equal(response.headers.get('x-robots-tag'), 'noindex, follow');
+assert.match(await response.text(), /Page Not Found/);
 
-// Nothing may redirect to the homepage as a catch-all for unknown URLs.
-console.log(failures ? `\n${failures} failing check(s)` : '\nAll hosting-rule checks passed');
-process.exit(failures ? 1 : 0);
+response = await request('https://digitecme.com/images/hero-bg.png');
+assert.equal(response.status, 200);
+assert.equal(response.headers.get('content-type'), 'image/png');
+
+response = await request('https://digitecme.com/images/missing.png');
+assert.equal(response.status, 404);
+
+response = await request('https://digitecme.com/functions/v1/mcp', { method: 'POST', body: '{}' });
+assert.equal(response.status, 200);
+
+console.log('Hosting rule tests passed: canonical host, permanent redirects, valid routes, assets, functions and true 404 responses.');

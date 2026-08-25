@@ -55,6 +55,16 @@ const routeHtml = (template, route, rendered) => {
   if (ogImage) {
     html = replaceOrInsertHeadTag(html, /<meta\s+property="og:image"[^>]*>/i, `<meta property="og:image" content="${escapeHtml(ogImage)}">`);
     html = replaceOrInsertHeadTag(html, /<meta\s+name="twitter:image"[^>]*>/i, `<meta name="twitter:image" content="${escapeHtml(ogImage)}">`);
+    if (seo.ogImageAlt) {
+      html = replaceOrInsertHeadTag(html, /<meta\s+property="og:image:alt"[^>]*>/i, `<meta property="og:image:alt" content="${escapeHtml(seo.ogImageAlt)}">`);
+      html = replaceOrInsertHeadTag(html, /<meta\s+name="twitter:image:alt"[^>]*>/i, `<meta name="twitter:image:alt" content="${escapeHtml(seo.ogImageAlt)}">`);
+    }
+    if (seo.ogImageWidth) {
+      html = replaceOrInsertHeadTag(html, /<meta\s+property="og:image:width"[^>]*>/i, `<meta property="og:image:width" content="${escapeHtml(seo.ogImageWidth)}">`);
+    }
+    if (seo.ogImageHeight) {
+      html = replaceOrInsertHeadTag(html, /<meta\s+property="og:image:height"[^>]*>/i, `<meta property="og:image:height" content="${escapeHtml(seo.ogImageHeight)}">`);
+    }
   }
 
   html = html.replace(/\s*<link\s+rel="canonical"[^>]*>\s*/gi, '\n');

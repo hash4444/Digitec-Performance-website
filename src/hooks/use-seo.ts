@@ -10,6 +10,9 @@ export interface SeoProps {
   canonical?: string;
   keywords?: string;
   ogImage?: string;
+  ogImageAlt?: string;
+  ogImageWidth?: number;
+  ogImageHeight?: number;
   ogTitle?: string;
   ogDescription?: string;
   ogType?: string;
@@ -43,6 +46,9 @@ export function useSeo(props: SeoProps) {
     description,
     keywords,
     ogImage,
+    ogImageAlt,
+    ogImageWidth,
+    ogImageHeight,
     ogTitle,
     ogDescription,
     ogType,
@@ -108,11 +114,15 @@ export function useSeo(props: SeoProps) {
     upsertMeta('meta[property="og:description"]', 'property', 'og:description', ogDescription || description);
     upsertMeta('meta[property="og:type"]', 'property', 'og:type', ogType || 'website');
     upsertMeta('meta[property="og:image"]', 'property', 'og:image', effectiveOgImage);
+    upsertMeta('meta[property="og:image:alt"]', 'property', 'og:image:alt', ogImageAlt);
+    upsertMeta('meta[property="og:image:width"]', 'property', 'og:image:width', ogImageWidth ? String(ogImageWidth) : undefined);
+    upsertMeta('meta[property="og:image:height"]', 'property', 'og:image:height', ogImageHeight ? String(ogImageHeight) : undefined);
     upsertMeta('meta[property="og:locale"]', 'property', 'og:locale', isArabic ? 'ar_AE' : 'en_AE');
     upsertMeta('meta[name="twitter:card"]', 'name', 'twitter:card', twitterCard || 'summary_large_image');
     upsertMeta('meta[name="twitter:title"]', 'name', 'twitter:title', twitterTitle || ogTitle || title);
     upsertMeta('meta[name="twitter:description"]', 'name', 'twitter:description', twitterDescription || ogDescription || description);
     upsertMeta('meta[name="twitter:image"]', 'name', 'twitter:image', effectiveOgImage);
+    upsertMeta('meta[name="twitter:image:alt"]', 'name', 'twitter:image:alt', ogImageAlt);
 
     let canonicalLink = document.querySelector('link[rel="canonical"]') as HTMLLinkElement | null;
     if (effectiveCanonical) {
@@ -161,6 +171,9 @@ export function useSeo(props: SeoProps) {
     effectiveCanonical,
     effectiveNoindex,
     effectiveOgImage,
+    ogImageAlt,
+    ogImageWidth,
+    ogImageHeight,
     isArabic,
     englishUrl,
     arabicUrl,

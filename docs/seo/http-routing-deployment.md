@@ -1,93 +1,51 @@
-# Production HTTP routing for digitecme.com
+# SEO-safe HTTP routing deployment
 
-## Current live behaviour (measured, apex on Cloudflare + Lovable hosting)
+The production build now creates two edge-routing artifacts in `dist/`:
 
-| Request | Live now | Required |
-| --- | --- | --- |
-| `/` | 200 | 200 |
-| `/brands/porsche-service-dubai` | 200 | 200 |
-| `/about-us` | **200** (SPA fallback) | 301/308 -> `/about` |
-| `/services/engine-diagnostics` | **200** (SPA fallback) | 301/308 -> `/services/car-diagnostics-dubai` |
-| `www.digitecme.com/...` | **302** | 301/308 to apex |
-| nonexistent URL | **200** (SPA fallback) | 404 + `X-Robots-Tag: noindex, follow` |
-| `/robots.txt`, `/sitemap.xml` | 200 | 200 |
+- `_redirects`: one-hop permanent redirects generated from the React redirect routes.
+- `_worker.js`: an edge guard generated from the same public route manifest used by prerendering and the sitemap.
 
-Lovable hosting serves `index.html` with status `200` for any unmatched navigation and
-does **not** execute `_redirects`, `_worker.js`, `_headers`, `netlify.toml` or `vercel.json`.
-So the repository build cannot, on its own, produce the statuses above. The generated
-artefacts are correct and tested, but they need an edge that runs them.
+The same Worker source is saved at `cloudflare/digitec-seo-router.js` so it can be copied directly from the repository into a Cloudflare Worker.
 
-## What the repository now produces
+It also creates `docs/seo/permanent-redirects.csv` in Cloudflare's Bulk Redirect CSV format. The file contains full source and destination URLs, no header row, status `301`, query preservation enabled, and exact-path matching.
 
-`npm run build` runs `scripts/generate-hosting-rules.mjs` then `scripts/test-hosting-rules.mjs`
-and emits:
+The worker provides these behaviors without changing page content or canonical URLs:
 
-- `dist/_redirects` — 141 permanent (308) legacy rules plus the `www` -> apex rule.
-- `dist/_worker.js` — a Cloudflare Pages advanced-mode worker implementing all four
-  behaviours (apex canonicalisation, one-hop 308 redirects with query preservation,
-  200 for the 1,334 prerendered routes, real 404 with `X-Robots-Tag: noindex, follow`).
-- `dist/404.html` — branded 404 body matching the React `NotFound` page.
-- `docs/seo/permanent-redirects.csv` — audit trail; the test asserts no rule points at
-  another rule, so every hop is final.
+1. `http` and `www` requests permanently redirect to `https://digitecme.com` with status `308`.
+2. Historical URLs permanently redirect to their final canonical destination in one hop.
+3. Every route in the generated public route manifest passes through unchanged.
+4. Existing static assets and `/functions/*` requests pass through unchanged.
+5. Unknown page paths return the branded `404.html` with status `404` and `X-Robots-Tag: noindex, follow`.
 
-Nothing in page content, canonical tags, hreflang, structured data or sitemap URLs is
-modified by this step. `/functions/*`, `/assets/*`, `/lovable-uploads/*` and any path with a
-file extension bypass the worker logic entirely, so MCP and Supabase calls are untouched.
+## Deployment requirement
 
-## Option A (no migration): Cloudflare rules on the existing zone
+Lovable Cloud currently supplies the SPA fallback that returns `200` for unknown paths. Repository changes alone cannot change an HTTP response after Lovable has sent it. The generated worker therefore needs to run at Cloudflare before the Lovable origin.
 
-These run in front of Lovable hosting and need no DNS or hosting change.
+The domain already uses Cloudflare nameservers. A Worker route requires an orange-clouded/proxied DNS record. Configure the Lovable domain as using Cloudflare/a similar proxy, follow the CNAME shown by Lovable, and confirm both production hostnames are proxied before deploying `dist/_worker.js` as a Cloudflare zone Worker on:
 
-### A1. Canonical host — Bulk/Single Redirect Rule
+- `digitecme.com/*`
+- `www.digitecme.com/*`
 
-Rules -> Redirects -> Create rule:
+Keep the React redirects in place as a browser fallback. Do not add a blanket redirect from unknown paths to the homepage.
 
-- Name: `www to apex`
-- If: `Hostname equals www.digitecme.com`
-- Then: Dynamic redirect, expression
-  `concat("https://digitecme.com", http.request.uri.path, if(len(http.request.uri.query) > 0, concat("?", http.request.uri.query), ""))`
-- Status: **301** (or 308)
-- Preserve query string: on
+Import `docs/seo/permanent-redirects.csv` into a Cloudflare Bulk Redirect List and enable that list with a Bulk Redirect Rule. Create a separate Single Redirect for `www.digitecme.com` to the apex hostname, with path and query string preservation.
 
-This replaces the current 302.
+## Release verification
 
-### A2. Legacy redirects — Bulk Redirects list
+Verify every release before requesting reindexing:
 
-1. Account Home -> Bulk Redirects -> Create list, name `digitec-legacy`.
-2. Upload `docs/seo/permanent-redirects.csv` (columns map to source/target; set status 301,
-   Preserve query string **on**, Subpath matching **off**, Preserve path suffix **off**).
-   Source URLs must be entered as `digitecme.com/about-us` form.
-3. Create a Bulk Redirect Rule that applies the list to all incoming requests.
+| Request | Expected response |
+| --- | --- |
+| `https://digitecme.com/brands/porsche-service-dubai` | `200` |
+| `https://digitecme.com/about-us` | `308` to `/about` |
+| `https://digitecme.com/services/engine-diagnostics` | `308` to `/services/car-diagnostics-dubai` |
+| `https://www.digitecme.com/brands/porsche-service-dubai` | `308` to the apex URL |
+| A unique nonexistent path | `404` with the branded page |
+| `https://digitecme.com/robots.txt` | `200` |
+| `https://digitecme.com/sitemap.xml` | `200` |
 
-Because the CSV is chain-free, every legacy URL resolves in a single hop.
+Run `npm run build` before deployment. The build fails if a redirect loops, chains, conflicts, or targets a route that is not in the public route manifest.
 
-### A3. Genuine 404s — Cloudflare Worker route
+## Rollback
 
-A Redirect Rule cannot emit a 404 body, so this part needs a Worker. Create a Worker
-with the contents of `dist/_worker.js`, replacing the `env.ASSETS.fetch(request)`
-calls with `fetch(request)` (pass-through to Lovable origin), and bind it to the route
-`digitecme.com/*`. Keep `ROUTES` in sync by redeploying the Worker after each site
-build that adds or removes routes (the generated file is regenerated every build).
-
-Without A3, unknown URLs keep returning 200 and Google keeps treating them as soft 404s.
-
-## Option B (needs explicit approval): host `dist` on Cloudflare Pages
-
-Deploy the built `dist` directory to Cloudflare Pages with the apex custom domain.
-Pages executes `_worker.js` and `_redirects` natively, so all six requirements are met
-by the build with zero extra configuration, and `ROUTES` is always current. This is a
-hosting migration and a DNS change, so it must not be done without approval.
-
-## Verification after any of the above
-
-```bash
-for u in / /brands/porsche-service-dubai /about-us /services/engine-diagnostics \
-         /robots.txt /sitemap.xml /definitely-not-a-page-$RANDOM; do
-  curl -s -o /dev/null -w "%{http_code} %{redirect_url}  $u\n" "https://digitecme.com$u"
-done
-curl -s -o /dev/null -w "%{http_code} %{redirect_url}\n" \
-  "https://www.digitecme.com/brands/porsche-service-dubai?utm_source=test"
-curl -sI https://digitecme.com/definitely-not-a-page | grep -i x-robots-tag
-```
-
-Local equivalent, run on every build: `npm run test:routing`.
+Detach the two Worker routes to restore the existing Lovable response behavior. The page files, canonicals, sitemap, and React application are not changed by that rollback.

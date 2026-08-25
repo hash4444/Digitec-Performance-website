@@ -23,6 +23,7 @@ import {
 } from '@/components/ui/accordion';
 import BrandBookingForm from '@/components/BrandBookingForm';
 import { BRAND_PROFILES, getServicesForBrand } from '@/data/brandServices';
+import { getPriorityBrandSeo, PRIORITY_BRAND_SLUGS } from '@/data/priorityBrandSeo';
 import { CtaAssurance } from '@/components/TrustBar';
 import { LocalizedLink as Link } from '@/components/LocalizedLink';
 import { useLocale } from '@/i18n/use-locale';
@@ -37,10 +38,10 @@ import lamborghiniUrusWorkshop from '@/assets/lamborghini-urus-workshop-dubai.jp
 import porscheWorkshop from '@/assets/porsche-workshop-dubai.jpg';
 import porscheGt3rsWorkshop from '@/assets/porsche-gt3rs-workshop-dubai.jpg';
 import maybachWorkshop from '@/assets/maybach-workshop-dubai.jpg';
-import mercedesWorkshop from '@/assets/mercedes-repair-guide-workshop.jpg';
 import mercedesAmgEngine from '@/assets/mercedes-amg-engine-repair-dubai.jpg';
 import g63BrabusFinishedFront from '@/assets/g63-brabus-g800-finished-front.jpg';
 
+const mercedesWorkshop = '/images/mercedes-repair-dubai-hero.jpg';
 const MERCEDES_META_TITLE = 'Mercedes Repair & Service Dubai | Digi-Tec Specialists';
 const MERCEDES_META_DESCRIPTION = 'Specialist Mercedes repair and service in Dubai for C-Class, E-Class, S-Class, G-Class, GLE, GLS and AMG. XENTRY diagnostics at our Al Quoz workshop in Dubai.';
 
@@ -336,6 +337,8 @@ const BRAND_MODELS: Record<string, string[]> = {
   'defender-service-dubai': ['Defender 90','Defender 110','Defender 130','Defender V8','Defender OCTA'],
   'rolls-royce-service-dubai': ['Phantom','Ghost','Cullinan','Spectre','Wraith','Dawn'],
   'aston-martin-service-dubai': ['DB12','Vantage','DBX','DBS'],
+  'maserati-service-dubai': ['Ghibli','Quattroporte','Levante','Grecale','GranTurismo','MC20'],
+  'cadillac-service-dubai': ['Escalade','CT4','CT5','XT4','XT5','XT6','Lyriq'],
 };
 
 const getServiceProfileSlug = (brandSlug: string) => brandSlug;
@@ -346,6 +349,8 @@ const BrandPage = () => {
   const sourceBrand = slug ? getBrandBySlug(slug) : undefined;
   const brand = sourceBrand && isArabic ? localizeBrandToArabic(sourceBrand) : sourceBrand;
   const serviceProfileSlug = brand ? getServiceProfileSlug(brand.slug) : '';
+  const priorityBrandSeo = getPriorityBrandSeo(sourceBrand?.slug);
+  const prioritySeo = isArabic ? undefined : priorityBrandSeo;
 
   const brandJsonLd = React.useMemo(() => {
     if (!brand) return undefined;
@@ -358,7 +363,9 @@ const BrandPage = () => {
       : `${brand.name} Service & Repair in Dubai`;
     const schemaDescription = isArabic
       ? `خدمة وفحص سيارات ${brand.name} لدى ورشة ديجي-تك في القوز، دبي. تواصل مع الفريق لتأكيد نطاق الخدمة المناسب لطراز سيارتك.`
-      : `${brand.name} vehicle inspection, maintenance and repair at Digi-Tec Performance Center in Al Quoz, Dubai. Contact the team to confirm the appropriate service scope for your model.`;
+      : priorityBrandSeo?.description ?? `${brand.name} vehicle inspection, maintenance and repair at Digi-Tec Performance Center in Al Quoz, Dubai. Contact the team to confirm the appropriate service scope for your model.`;
+    const schemaImage = priorityBrandSeo?.heroImage
+      ?? (isMercedes ? mercedesWorkshop : isRangeRoverHub ? rangeRoverWorkshop : isDefenderHub ? defenderWorkshop : brand.logo || undefined);
     const breadcrumb = buildBreadcrumb(url, [
       { name: isArabic ? 'الرئيسية' : 'Home', url: `https://digitecme.com${isArabic ? '/ar' : '/'}` },
       { name: isArabic ? 'العلامات' : 'Brands', url: `https://digitecme.com${isArabic ? '/ar' : ''}/brands` },
@@ -369,7 +376,7 @@ const BrandPage = () => {
       name: entityName,
       description: schemaDescription,
       breadcrumbId: `${url}#breadcrumb`,
-      primaryImage: isMercedes ? mercedesWorkshop : isRangeRoverHub ? rangeRoverWorkshop : isDefenderHub ? defenderWorkshop : brand.logo || undefined,
+      primaryImage: schemaImage,
       mainEntityId: `${url}#service`,
     });
     const brandEntity = buildBrand({
@@ -385,7 +392,7 @@ const BrandPage = () => {
       name: entityName,
       serviceType: isArabic ? `خدمة سيارات ${brand.name}` : `${brand.name} vehicle service`,
       description: schemaDescription,
-      image: isMercedes ? mercedesWorkshop : isRangeRoverHub ? rangeRoverWorkshop : isDefenderHub ? defenderWorkshop : brand.logo || undefined,
+      image: schemaImage,
       brand: brand.name,
       offers: schemaOffers,
       areaServed: [isArabic ? 'دبي' : 'Dubai'],
@@ -395,13 +402,13 @@ const BrandPage = () => {
       brand.faqs.map((f) => ({ question: f.q, answer: f.a })),
     );
     return pageGraph([webPage, breadcrumb, brandEntity, svc, ...(faq ? [faq] : [])]);
-  }, [brand, isArabic]);
+  }, [brand, isArabic, priorityBrandSeo]);
 
   const isMercedesServiceHub = brand?.slug === 'mercedes-benz-service-dubai';
   const isRangeRoverServiceHub = brand?.slug === 'range-rover-service-dubai';
   const isDefenderServiceHub = brand?.slug === 'defender-service-dubai';
-  const specialistHubTitle = isMercedesServiceHub ? MERCEDES_META_TITLE : isRangeRoverServiceHub ? RANGE_ROVER_META_TITLE : isDefenderServiceHub ? DEFENDER_META_TITLE : undefined;
-  const specialistHubDescription = isMercedesServiceHub ? MERCEDES_META_DESCRIPTION : isRangeRoverServiceHub ? RANGE_ROVER_META_DESCRIPTION : isDefenderServiceHub ? DEFENDER_META_DESCRIPTION : undefined;
+  const specialistHubTitle = prioritySeo?.title ?? (isMercedesServiceHub ? MERCEDES_META_TITLE : isRangeRoverServiceHub ? RANGE_ROVER_META_TITLE : isDefenderServiceHub ? DEFENDER_META_TITLE : undefined);
+  const specialistHubDescription = prioritySeo?.description ?? (isMercedesServiceHub ? MERCEDES_META_DESCRIPTION : isRangeRoverServiceHub ? RANGE_ROVER_META_DESCRIPTION : isDefenderServiceHub ? DEFENDER_META_DESCRIPTION : undefined);
 
   useSeo({
     title: brand
@@ -411,7 +418,12 @@ const BrandPage = () => {
       ? isArabic ? `إصلاح وصيانة ${brand.name} في دبي: تشخيص وصيانة وفرامل وناقل حركة وتعليق وتكييف مع قطع بالمواصفات المناسبة لدى مركز ديجي-تك.` : specialistHubDescription ?? `Specialist ${brand.name} repair and service in Dubai: diagnostics, maintenance, brakes, transmission, suspension and AC at Digi-Tec, Al Quoz.`
       : 'Expert luxury car maintenance, diagnostics, and performance tuning in Dubai at Digi-Tec Performance Centre.',
     canonical: brand ? `https://digitecme.com${isArabic ? '/ar' : ''}/brands/${brand.slug}` : `https://digitecme.com${isArabic ? '/ar' : '/'}`,
-    ogImage: isMercedesServiceHub ? `https://digitecme.com${mercedesWorkshop}` : isRangeRoverServiceHub ? `https://digitecme.com${rangeRoverWorkshop}` : isDefenderServiceHub ? `https://digitecme.com${defenderWorkshop}` : undefined,
+    ogImage: priorityBrandSeo?.heroImage
+      ? `https://digitecme.com${priorityBrandSeo.heroImage}`
+      : isMercedesServiceHub ? `https://digitecme.com${mercedesWorkshop}` : isRangeRoverServiceHub ? `https://digitecme.com${rangeRoverWorkshop}` : isDefenderServiceHub ? `https://digitecme.com${defenderWorkshop}` : undefined,
+    ogImageAlt: priorityBrandSeo?.heroImageAlt,
+    ogImageWidth: priorityBrandSeo?.heroImageWidth,
+    ogImageHeight: priorityBrandSeo?.heroImageHeight,
     ogTitle: specialistHubTitle,
     ogDescription: specialistHubDescription,
     noindex: !brand,
@@ -426,7 +438,13 @@ const BrandPage = () => {
     isArabic ? `مرحباً، أود الاستفسار عن خدمة ${brand.name} لدى مركز ديجي-تك بيرفورمانس.` : `Hi, I'd like to enquire about ${brand.name} service at Digi-Tec Performance Centre.`,
   )}`;
 
-  const otherBrands = brands.filter((b) => b.slug !== brand.slug).slice(0, 12);
+  const otherBrands = (priorityBrandSeo
+    ? PRIORITY_BRAND_SLUGS
+        .map((prioritySlug) => getBrandBySlug(prioritySlug))
+        .filter((item): item is NonNullable<ReturnType<typeof getBrandBySlug>> => Boolean(item))
+    : brands)
+    .filter((b) => b.slug !== brand.slug)
+    .slice(0, 12);
   const relatedServices = brand.relatedServices
     .map((s) => getServiceBySlug(s))
     .filter((s): s is NonNullable<ReturnType<typeof getServiceBySlug>> => Boolean(s));
@@ -452,7 +470,7 @@ const BrandPage = () => {
   const isLamborghini = brand.slug === 'lamborghini-service-dubai';
   const isPorsche = brand.slug === 'porsche-service-dubai';
   const isMaybach = brand.slug === 'maybach-service-dubai';
-  const heroImage = isMercedesServiceHub
+  const heroImage = priorityBrandSeo?.heroImage ?? (isMercedesServiceHub
     ? mercedesWorkshop
     : isMaybach
       ? maybachWorkshop
@@ -468,7 +486,9 @@ const BrandPage = () => {
                 ? rangeRoverWorkshop
                 : isFerrari
                   ? ferrariEngineWorkshop
-                  : undefined;
+                  : undefined);
+  const heroImageAlt = priorityBrandSeo?.heroImageAlt
+    ?? (isMercedesServiceHub ? 'Mercedes-Benz and AMG vehicles inside the Digi-Tec specialist workshop in Dubai' : '');
 
   return (
     <div className="min-h-screen bg-black text-off-white">
@@ -492,8 +512,11 @@ const BrandPage = () => {
           <>
             <img
               src={heroImage}
-              alt=""
-              aria-hidden="true"
+              alt={heroImageAlt}
+              aria-hidden={heroImageAlt ? undefined : true}
+              fetchPriority="high"
+              width={priorityBrandSeo?.heroImageWidth}
+              height={priorityBrandSeo?.heroImageHeight}
               className={`absolute inset-0 h-full w-full object-cover opacity-60 ${isMercedesServiceHub ? 'object-[center_52%]' : 'object-center'}`}
             />
             <div className={`absolute inset-0 ${isMercedesServiceHub ? 'bg-black/75' : 'bg-black/80'}`} />
@@ -725,6 +748,23 @@ const BrandPage = () => {
                 <p className="text-gray-400 text-sm leading-relaxed">{models.join(' • ')}</p>
               </div>
             )}
+            {!isArabic && priorityBrandSeo?.supportingImages?.map((image) => (
+              <figure key={image.src} className="max-w-3xl mx-auto mt-6 sm:mt-8 card-premium rounded-2xl overflow-hidden grid sm:grid-cols-[0.8fr_1.2fr]">
+                <img
+                  src={image.src}
+                  alt={image.alt}
+                  loading="lazy"
+                  width={image.width}
+                  height={image.height}
+                  className="w-full h-72 sm:h-full object-cover"
+                />
+                <figcaption className="p-5 sm:p-7 flex flex-col justify-center">
+                  <span className="text-burnt-orange text-xs font-bold uppercase tracking-widest">Inside our {brand.name} workshop</span>
+                  <h3 className="text-xl font-bold text-off-white mt-2">Vehicle-specific inspection in Dubai</h3>
+                  <p className="text-gray-400 text-sm leading-relaxed mt-3">{image.caption}</p>
+                </figcaption>
+              </figure>
+            ))}
           </div>
         </section>
       )}

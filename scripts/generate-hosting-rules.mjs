@@ -1,243 +1,216 @@
-/**
- * Generates the production HTTP routing layer:
- *   - docs/seo/permanent-redirects.csv  (audit trail, one hop per row)
- *   - dist/_redirects                   (Cloudflare Pages / Netlify style rules)
- *   - dist/_worker.js                   (Cloudflare Pages Functions advanced mode)
- *   - dist/404.html                     (branded, real 404 body)
- *
- * Source of truth:
- *   - Legacy redirects: the <Navigate> routes declared in src/App.tsx
- *   - Valid routes: the prerendered HTML files that exist in dist/
- *
- * No page content, canonical tag, sitemap URL or metadata is touched here.
- */
-import fs from 'node:fs';
+import { mkdir, readFile, writeFile } from 'node:fs/promises';
 import path from 'node:path';
+import { pathToFileURL } from 'node:url';
 
 const root = process.cwd();
-const distDir = path.join(root, 'dist');
-const appSource = fs.readFileSync(path.join(root, 'src/App.tsx'), 'utf8');
-
-/* ------------------------------------------------------------------ *
- * 1. Collect the legacy redirect map from the React router
- * ------------------------------------------------------------------ */
-const rawRedirects = new Map();
-
-// Literal <Route path="/x" element={<Navigate to="/y" replace />} />
-const literalPattern =
-  /<Route\s+path="([^"]+)"\s+element=\{<Navigate\s+to="([^"]+)"/g;
-for (const [, from, to] of appSource.matchAll(literalPattern)) {
-  if (from.includes(':') || from.includes('*')) continue;
-  rawRedirects.set(from, to);
+const distDirectory = path.join(root, 'dist');
+const serverEntry = path.join(root, 'dist-server', 'entry-server.js');
+const appSource = await readFile(path.join(root, 'src', 'App.tsx'), 'utf8');
+const servicePageSource = await readFile(path.join(root, 'src', 'pages', 'ServicePage.tsx'), 'utf8');
+let publicRoutes;
+try {
+  const { getPublicRoutes } = await import(pathToFileURL(serverEntry).href);
+  publicRoutes = getPublicRoutes();
+} catch {
+  // Read-only fallback for constrained local verification. Production builds
+  // always use the compiled route manifest above.
+  const inventory = await readFile(path.join(root, 'docs', 'seo', 'route-schema-matrix.csv'), 'utf8');
+  publicRoutes = inventory
+    .split(/\r?\n/)
+    .slice(1)
+    .map((line) => line.match(/^"[^"]*","([^"]+)"/)?.[1])
+    .filter(Boolean)
+    .map((routePath) => ({ path: routePath }));
+  if (!publicRoutes.length) throw new Error('No public routes were available for hosting-rule generation');
 }
+await mkdir(distDirectory, { recursive: true });
 
-// The two generated Mercedes tables (brand-service -> dedicated service page)
-const readTable = (name) => {
-  const block = appSource.match(
-    new RegExp(`const ${name}[^=]*=\\s*\\[([\\s\\S]*?)\\];`),
-  );
-  if (!block) return [];
-  return [...block[1].matchAll(/\["([^"]+)",\s*"([^"]+)"\]/g)].map((m) => [
-    m[1],
-    m[2],
-  ]);
-};
-
-for (const [serviceSlug, destination] of readTable(
-  'mercedesBrandServiceRedirects',
-)) {
-  rawRedirects.set(
-    `/brands/mercedes-benz-service-dubai/${serviceSlug}`,
-    destination,
-  );
-  rawRedirects.set(
-    `/ar/brands/mercedes-benz-service-dubai/${serviceSlug}`,
-    `/ar${destination}`,
-  );
-}
-
-/* ------------------------------------------------------------------ *
- * 2. Flatten chains so every source resolves in exactly one hop
- * ------------------------------------------------------------------ */
 const redirects = new Map();
-for (const from of rawRedirects.keys()) {
-  let to = rawRedirects.get(from);
-  const seen = new Set([from]);
-  while (rawRedirects.has(to) && !seen.has(to)) {
-    seen.add(to);
-    to = rawRedirects.get(to);
+const addRedirect = (source, destination) => {
+  if (!source.startsWith('/') || !destination.startsWith('/')) {
+    throw new Error(`Redirects must use root-relative paths: ${source} -> ${destination}`);
   }
-  if (to !== from) redirects.set(from, to);
+  const existing = redirects.get(source);
+  if (existing && existing !== destination) {
+    throw new Error(`Conflicting redirects for ${source}: ${existing} and ${destination}`);
+  }
+  redirects.set(source, destination);
+};
+
+// Keep deploy-time redirects synchronized with every literal React <Navigate>.
+const literalRoutePattern = /<Route\s+path="([^"]+)"\s+element=\{<Navigate\s+to="([^"]+)"\s+replace\s*\/>\}\s*\/>/g;
+for (const match of appSource.matchAll(literalRoutePattern)) {
+  addRedirect(match[1], match[2]);
 }
 
-const sortedRedirects = [...redirects.entries()].sort((a, b) =>
-  a[0].localeCompare(b[0]),
-);
+const readArrayPairs = (source, declarationName) => {
+  const block = source.match(new RegExp(`const\\s+${declarationName}[^=]*=\\s*\\[([\\s\\S]*?)\\n\\];`))?.[1];
+  if (!block) throw new Error(`Unable to find ${declarationName}`);
+  return [...block.matchAll(/\["([^"]+)",\s*"([^"]+)"\]/g)].map((match) => [match[1], match[2]]);
+};
 
-/* ------------------------------------------------------------------ *
- * 3. Collect valid routes from the prerendered output
- * ------------------------------------------------------------------ */
-const routes = new Set(['/']);
-const walk = (dir) => {
-  for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
-    const full = path.join(dir, entry.name);
-    if (entry.isDirectory()) {
-      if (entry.name === 'assets') continue;
-      walk(full);
-    } else if (entry.name === 'index.html') {
-      const rel = path.relative(distDir, dir).split(path.sep).join('/');
-      if (rel && rel !== '.') routes.add(`/${rel}`);
+for (const [serviceSlug, destination] of readArrayPairs(appSource, 'mercedesBrandServiceRedirects')) {
+  addRedirect(`/brands/mercedes-benz-service-dubai/${serviceSlug}`, destination);
+  addRedirect(`/ar/brands/mercedes-benz-service-dubai/${serviceSlug}`, `/ar${destination}`);
+}
+
+const readObjectPairs = (source, declarationName) => {
+  const block = source.match(new RegExp(`const\\s+${declarationName}[^=]*=\\s*\\{([\\s\\S]*?)\\n\\};`))?.[1];
+  if (!block) throw new Error(`Unable to find ${declarationName}`);
+  return [...block.matchAll(/'([^']+)'\s*:\s*'([^']+)'/g)].map((match) => [match[1], match[2]]);
+};
+
+for (const [oldSlug, newSlug] of readObjectPairs(servicePageSource, 'OLD_TO_NEW_SLUG')) {
+  addRedirect(`/services/${oldSlug}`, `/services/${newSlug}`);
+  addRedirect(`/ar/services/${oldSlug}`, `/ar/services/${newSlug}`);
+}
+for (const [oldSlug, destination] of readObjectPairs(servicePageSource, 'EXTERNAL_REDIRECTS')) {
+  addRedirect(`/services/${oldSlug}`, destination);
+  addRedirect(`/ar/services/${oldSlug}`, `/ar${destination}`);
+}
+
+// Legacy English URLs may also have been crawled below /ar. Retain locale when
+// the target has an Arabic equivalent instead of sending visitors to English.
+for (const [source, destination] of [...redirects]) {
+  if (source === '/' || source.startsWith('/ar/')) continue;
+  const localizedSource = `/ar${source}`;
+  const localizedDestination = destination === '/' ? '/ar' : `/ar${destination}`;
+  if (!redirects.has(localizedSource)) addRedirect(localizedSource, localizedDestination);
+}
+
+const flattenDestination = (source) => {
+  let destination = redirects.get(source);
+  const visited = new Set([source]);
+  while (redirects.has(destination)) {
+    if (visited.has(destination)) {
+      throw new Error(`Redirect loop detected from ${source}`);
     }
+    visited.add(destination);
+    destination = redirects.get(destination);
   }
+  return destination;
 };
-if (fs.existsSync(distDir)) walk(distDir);
 
-const sortedRoutes = [...routes].sort();
+for (const source of redirects.keys()) redirects.set(source, flattenDestination(source));
 
-/* ------------------------------------------------------------------ *
- * 4. Emit the audit CSV
- * ------------------------------------------------------------------ */
-fs.mkdirSync(path.join(root, 'docs/seo'), { recursive: true });
-fs.writeFileSync(
-  path.join(root, 'docs/seo/permanent-redirects.csv'),
-  ['source,destination,status', ...sortedRedirects.map(([f, t]) => `${f},${t},308`)].join(
-    '\n',
-  ) + '\n',
-);
-
-if (!fs.existsSync(distDir)) {
-  console.log(
-    `hosting-rules: wrote ${sortedRedirects.length} redirect rows to docs/seo/permanent-redirects.csv (no dist/ yet)`,
-  );
-  process.exit(0);
+const validRoutes = new Set(publicRoutes.map((route) => route.path));
+for (const [source, destination] of redirects) {
+  if (validRoutes.has(source)) {
+    throw new Error(`Redirect source is also a public content route: ${source}`);
+  }
+  if (!validRoutes.has(destination)) {
+    throw new Error(`Redirect destination is not a public content route: ${source} -> ${destination}`);
+  }
 }
 
-/* ------------------------------------------------------------------ *
- * 5. Emit dist/_redirects
- * ------------------------------------------------------------------ */
-const redirectLines = [
+const sortedRedirects = [...redirects].sort(([left], [right]) => left.localeCompare(right));
+const redirectsFile = [
   '# Generated by scripts/generate-hosting-rules.mjs. Do not edit by hand.',
-  '# Canonical host: apex only.',
-  'https://www.digitecme.com/* https://digitecme.com/:splat 308!',
+  '# Static 308 redirects preserve authority and avoid redirect chains.',
+  ...sortedRedirects.map(([source, destination]) => `${source} ${destination} 308`),
   '',
-  ...sortedRedirects.map(([from, to]) => `${from} ${to} 308`),
-  '',
-];
-fs.writeFileSync(path.join(distDir, '_redirects'), redirectLines.join('\n'));
+].join('\n');
+await writeFile(path.join(distDirectory, '_redirects'), redirectsFile);
 
-/* ------------------------------------------------------------------ *
- * 6. Emit dist/404.html (real 404 body, branded)
- * ------------------------------------------------------------------ */
-const notFoundHtml = `<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="robots" content="noindex, follow" />
-    <title>Page Not Found | DIGI-TEC Performance Center</title>
-    <link rel="icon" href="/favicon.ico" />
-    <style>
-      html,body{margin:0;height:100%;background:#000;color:#f5f5f5;
-        font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
-      main{min-height:100%;display:flex;align-items:center;justify-content:center;padding:24px}
-      .wrap{max-width:30rem;text-align:center}
-      h1{font-size:3.5rem;margin:0 0 1rem;color:#F04E14;font-weight:900}
-      p{margin:0 0 1.5rem;line-height:1.6}
-      .muted{color:rgba(255,255,255,.6);font-size:.9rem}
-      a{display:inline-block;margin:0 .35rem;padding:.75rem 1.5rem;border-radius:999px;
-        text-decoration:none;font-weight:600}
-      .primary{background:#fff;color:#000}
-      .secondary{border:1px solid rgba(255,255,255,.3);color:#f5f5f5}
-    </style>
-  </head>
-  <body>
-    <main>
-      <div class="wrap">
-        <h1>404</h1>
-        <p>Page not found.</p>
-        <p class="muted">The page you requested does not exist. Try our services or head back home.</p>
-        <div>
-          <a class="primary" href="/">Home</a>
-          <a class="secondary" href="/services">Services</a>
-        </div>
-      </div>
-    </main>
-  </body>
-</html>
-`;
-fs.writeFileSync(path.join(distDir, '404.html'), notFoundHtml);
+const workerSource = `// Generated by scripts/generate-hosting-rules.mjs. Do not edit by hand.
+// Works as a Cloudflare Pages advanced-mode worker (env.ASSETS) or as a
+// zone Worker in front of the existing origin (global fetch).
+const CANONICAL_ORIGIN = 'https://digitecme.com';
+const VALID_ROUTES = new Set(${JSON.stringify([...validRoutes].sort())});
+const PERMANENT_REDIRECTS = new Map(${JSON.stringify(sortedRedirects)});
 
-/* ------------------------------------------------------------------ *
- * 7. Emit dist/_worker.js
- * ------------------------------------------------------------------ */
-const worker = `// Generated by scripts/generate-hosting-rules.mjs. Do not edit by hand.
-const REDIRECTS = new Map(${JSON.stringify(sortedRedirects)});
-const ROUTES = new Set(${JSON.stringify(sortedRoutes)});
-const APEX = 'digitecme.com';
-
-const isAssetPath = (p) =>
-  p.startsWith('/assets/') ||
-  p.startsWith('/functions/') ||
-  p.startsWith('/lovable-uploads/') ||
-  /\\.[a-z0-9]{2,5}$/i.test(p);
-
-const normalize = (p) => {
-  let out = p.toLowerCase().replace(/\\/{2,}/g, '/');
-  if (out.length > 1) out = out.replace(/\\/+$/, '');
-  return out || '/';
+const normalizePathname = (pathname) => {
+  let normalized = pathname.replace(/\\/{2,}/g, '/').toLowerCase();
+  if (normalized.length > 1) normalized = normalized.replace(/\\/+$/, '');
+  return normalized || '/';
 };
 
-const permanent = (url) => Response.redirect(url, 308);
+const redirectResponse = (url, pathname) => {
+  const destination = new URL(CANONICAL_ORIGIN);
+  destination.pathname = pathname;
+  destination.search = url.search;
+  return Response.redirect(destination.toString(), 308);
+};
+
+const originFetchFor = (env) => env?.ASSETS?.fetch
+  ? env.ASSETS.fetch.bind(env.ASSETS)
+  : fetch;
+
+const brandedNotFound = async (request, env, url) => {
+  const originFetch = originFetchFor(env);
+  const notFoundUrl = new URL('/404.html', url);
+  notFoundUrl.hostname = 'digitecme.com';
+  notFoundUrl.protocol = 'https:';
+  const notFoundRequest = new Request(notFoundUrl, {
+    method: 'GET',
+    headers: request.headers,
+    redirect: 'manual',
+  });
+  const page = await originFetch(notFoundRequest);
+  const headers = new Headers(page.headers);
+  headers.set('Cache-Control', 'no-cache, must-revalidate, max-age=0');
+  headers.set('X-Robots-Tag', 'noindex, follow');
+  return new Response(request.method === 'HEAD' ? null : page.body, {
+    status: 404,
+    statusText: 'Not Found',
+    headers,
+  });
+};
+
+export const handleRequest = async (request, env) => {
+  const url = new URL(request.url);
+  const method = request.method.toUpperCase();
+
+  // Never interfere with API/function traffic or non-navigation mutations.
+  if (!['GET', 'HEAD'].includes(method) || url.pathname.startsWith('/functions/')) {
+    return originFetchFor(env)(request);
+  }
+
+  const normalizedPath = normalizePathname(url.pathname);
+
+  // One permanent hop covers http/www, case, duplicate slashes, trailing slash,
+  // and any historical path at the same time.
+  const legacyDestination = PERMANENT_REDIRECTS.get(normalizedPath);
+  if (legacyDestination) return redirectResponse(url, legacyDestination);
+  if (url.protocol !== 'https:' || url.hostname !== 'digitecme.com' || normalizedPath !== url.pathname) {
+    return redirectResponse(url, normalizedPath);
+  }
+
+  if (VALID_ROUTES.has(normalizedPath)) return originFetchFor(env)(request);
+
+  // Static files are not content routes. Let the asset server resolve them, but
+  // convert a SPA HTML fallback into a genuine 404 when the file is missing.
+  if (/\\.[a-z0-9]{1,12}$/i.test(normalizedPath) || normalizedPath.startsWith('/cdn-cgi/')) {
+    const response = await originFetchFor(env)(request);
+    const contentType = response.headers.get('content-type') || '';
+    if (response.status !== 200 || !contentType.includes('text/html')) return response;
+  }
+
+  return brandedNotFound(request, env, url);
+};
 
 export default {
-  async fetch(request, env) {
-    const url = new URL(request.url);
-
-    // 3. Canonical domain: www -> apex, full path and query preserved.
-    if (url.hostname === 'www.' + APEX) {
-      url.hostname = APEX;
-      url.protocol = 'https:';
-      return permanent(url.toString());
-    }
-
-    // 4. Static files, function routes and assets pass straight through.
-    if (isAssetPath(url.pathname)) return env.ASSETS.fetch(request);
-
-    const clean = normalize(url.pathname);
-
-    // 2. Legacy redirects, one hop, query string preserved.
-    const target = REDIRECTS.get(clean);
-    if (target) {
-      const dest = new URL(target, url.origin);
-      dest.search = url.search;
-      return permanent(dest.toString());
-    }
-
-    // Case / trailing-slash normalisation is also a permanent hop.
-    if (clean !== url.pathname) {
-      const dest = new URL(clean, url.origin);
-      dest.search = url.search;
-      return permanent(dest.toString());
-    }
-
-    // 4. Known routes keep returning 200.
-    if (ROUTES.has(clean)) return env.ASSETS.fetch(request);
-
-    // 1. Everything else: genuine 404 with the branded body.
-    const body = await env.ASSETS.fetch(new Request(new URL('/404.html', url.origin).toString()));
-    return new Response(body.body, {
-      status: 404,
-      headers: {
-        'content-type': 'text/html; charset=utf-8',
-        'x-robots-tag': 'noindex, follow',
-        'cache-control': 'no-store',
-      },
-    });
+  fetch(request, env) {
+    return handleRequest(request, env);
   },
 };
 `;
-fs.writeFileSync(path.join(distDir, '_worker.js'), worker);
+await writeFile(path.join(distDirectory, '_worker.js'), workerSource);
+const cloudflareDirectory = path.join(root, 'cloudflare');
+await mkdir(cloudflareDirectory, { recursive: true });
+await writeFile(path.join(cloudflareDirectory, 'digitec-seo-router.js'), workerSource);
 
-console.log(
-  `hosting-rules: ${sortedRedirects.length} redirects, ${sortedRoutes.length} routes -> dist/_redirects, dist/_worker.js, dist/404.html`,
-);
+const docsDirectory = path.join(root, 'docs', 'seo');
+await mkdir(docsDirectory, { recursive: true });
+// Cloudflare Bulk Redirect import format:
+// source,target,status,preserve_query,include_subdomains,subpath,preserve_suffix
+// Source omits the scheme so both HTTP and HTTPS historical links match.
+// Cloudflare requires no header row.
+const csv = [
+  ...sortedRedirects.map(([source, destination]) =>
+    `"digitecme.com${source}","https://digitecme.com${destination}",301,TRUE,FALSE,FALSE,FALSE`),
+  '',
+].join('\n');
+await writeFile(path.join(docsDirectory, 'permanent-redirects.csv'), csv);
+
+console.log(`Generated ${sortedRedirects.length} permanent redirects and an edge route guard for ${validRoutes.size} public routes.`);
