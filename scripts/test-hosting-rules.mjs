@@ -16,6 +16,18 @@ const assetFetch = async (request) => {
   if (url.pathname === '/images/hero-bg.png') {
     return new Response('image', { status: 200, headers: { 'Content-Type': 'image/png' } });
   }
+  if (url.pathname === '/BingSiteAuth.xml') {
+    return new Response('<?xml version="1.0"?><users><user>verification-code</user></users>', {
+      status: 200,
+      headers: { 'Content-Type': 'application/xml' },
+    });
+  }
+  if (url.pathname === '/sitemap.xml') {
+    return new Response('<?xml version="1.0"?><urlset></urlset>', {
+      status: 200,
+      headers: { 'Content-Type': 'application/xml' },
+    });
+  }
   return new Response('<!doctype html><title>Origin</title>', {
     status: 200,
     headers: { 'Content-Type': 'text/html; charset=utf-8' },
@@ -51,6 +63,14 @@ assert.equal(response.headers.get('content-type'), 'image/png');
 
 response = await request('https://digitecme.com/images/missing.png');
 assert.equal(response.status, 404);
+
+response = await request('https://digitecme.com/BingSiteAuth.xml');
+assert.equal(response.status, 200);
+assert.equal(response.headers.get('content-type'), 'application/xml');
+
+response = await request('https://digitecme.com/sitemap.xml');
+assert.equal(response.status, 200);
+assert.equal(response.headers.get('content-type'), 'application/xml');
 
 response = await request('https://digitecme.com/functions/v1/mcp', { method: 'POST', body: '{}' });
 assert.equal(response.status, 200);

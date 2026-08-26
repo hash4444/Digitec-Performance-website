@@ -52,7 +52,11 @@ export const handleRequest = async (request, env) => {
     return originFetchFor(env)(request);
   }
 
-  const normalizedPath = normalizePathname(url.pathname);
+  // Content routes are case-insensitive and canonicalized to lowercase. Static
+  // asset names are case-sensitive, so preserve their exact path (notably
+  // BingSiteAuth.xml, whose casing is prescribed by Bing Webmaster Tools).
+  const isStaticAsset = /\.[a-z0-9]{1,12}$/i.test(url.pathname) || url.pathname.startsWith('/cdn-cgi/');
+  const normalizedPath = isStaticAsset ? url.pathname : normalizePathname(url.pathname);
 
   // One permanent hop covers http/www, case, duplicate slashes, trailing slash,
   // and any historical path at the same time.
@@ -66,7 +70,7 @@ export const handleRequest = async (request, env) => {
 
   // Static files are not content routes. Let the asset server resolve them, but
   // convert a SPA HTML fallback into a genuine 404 when the file is missing.
-  if (/\.[a-z0-9]{1,12}$/i.test(normalizedPath) || normalizedPath.startsWith('/cdn-cgi/')) {
+  if (isStaticAsset) {
     const response = await originFetchFor(env)(request);
     const contentType = response.headers.get('content-type') || '';
     if (response.status !== 200 || !contentType.includes('text/html')) return response;

@@ -36,6 +36,11 @@ const getArticleFaqs = (content: ContentBlock[]) => {
 };
 
 const relatedServiceByPost: Record<string, { href: string; label: string; description: string }> = {
+  'how-much-is-my-mercedes-worth-dubai': {
+    href: '/brands/mercedes-benz-service-dubai',
+    label: 'Mercedes valuation and sale support in Dubai',
+    description: 'Ask Digi-Tec to inspect, value, prepare and help sell your Mercedes through an agreed, transparent process.',
+  },
   'best-oil-change-dubai-mercedes': {
     href: '/services/mercedes-oil-change-dubai',
     label: 'Mercedes oil change in Dubai',

@@ -48,6 +48,139 @@ export const blogCategories = ['All', 'Maintenance', 'Tuning', 'Mercedes', 'Deta
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: 'how-much-is-my-mercedes-worth-dubai',
+    title: 'How Much Is My Mercedes Worth in Dubai?',
+    excerpt:
+      'Your Mercedes is worth more than a generic online estimate can show. Learn what affects its Dubai market value—and how Digi-Tec can value, prepare and sell the car for you.',
+    category: 'Mercedes',
+    author: 'DIGI-TEC Workshop',
+    date: '2026-08-26',
+    readTime: '8 min read',
+    coverGradient: 'from-burnt-orange/40 via-charcoal to-black',
+    coverImage: mercedesRepairGuideWorkshop,
+    metaTitle: 'How Much Is My Mercedes Worth in Dubai? | Valuation & Sale Help',
+    metaDescription:
+      'Find out what your Mercedes is worth in Dubai. Digi-Tec can inspect, value, prepare, market and help sell your Mercedes with a clear, informed process.',
+    keywords:
+      'how much is my Mercedes worth Dubai, Mercedes valuation Dubai, sell my Mercedes Dubai, used Mercedes price UAE, Mercedes resale value, Mercedes sale service Dubai',
+    ogTitle: 'How Much Is My Mercedes Worth in Dubai?',
+    ogDescription:
+      'Understand your Mercedes market value and let Digi-Tec help prepare, market and sell the car in Dubai.',
+    ogType: 'article',
+    twitterCard: 'summary_large_image',
+    twitterTitle: 'What Is My Mercedes Worth in Dubai? | Digi-Tec',
+    twitterDescription:
+      'A practical Mercedes valuation guide, with inspection, preparation and sale support from Digi-Tec in Dubai.',
+    content: [
+      { type: 'h2', text: 'A Mercedes Is Worth What the Market Will Pay for This Particular Car' },
+      {
+        type: 'p',
+        text: 'Two Mercedes-Benz vehicles with the same badge, model year and mileage can sell for very different prices in Dubai. Specification, condition, service history, accident record, ownership history and current buyer demand all influence the result. That is why a generic online estimate should be treated as a starting point, not a final valuation.',
+      },
+      {
+        type: 'p',
+        text: 'At Digi-Tec Performance Centre, we can help you understand the likely market value of your Mercedes based on the car itself—not only a dropdown menu. We can inspect its condition, identify factors that strengthen or reduce its value, recommend sensible preparation and, if you prefer, help manage the sale for you.',
+      },
+      { type: 'h2', text: 'What Determines the Value of a Mercedes in Dubai?' },
+      {
+        type: 'ul',
+        items: [
+          'Exact model, engine, trim level, options and GCC or imported specification',
+          'Model year, registration date, mileage and number of previous owners',
+          'Mechanical condition, dashboard warnings and upcoming maintenance needs',
+          'Paint, body, wheels, glass, interior and signs of previous accident repair',
+          'Dealer or specialist service history, invoices, keys and supporting documents',
+          'Tyre age and condition, battery health, brakes, suspension and air-conditioning performance',
+          'Colour combination, desirable factory options and any documented modifications',
+          'Current supply and buyer demand for that Mercedes model in the UAE',
+        ],
+      },
+      { type: 'h2', text: 'Why Online Mercedes Valuation Tools Can Miss the Real Price' },
+      {
+        type: 'p',
+        text: 'Automated calculators usually compare broad listing data. They may not know whether your car has a complete service record, premium factory options, fresh tyres, a developing mechanical issue or previous body repairs. They also compare advertised prices, which are not always the prices buyers ultimately pay.',
+      },
+      {
+        type: 'p',
+        text: 'A useful valuation combines market evidence with a physical assessment. We review comparable cars, but we also look at the details a serious buyer or pre-purchase inspector will notice. This produces a more realistic pricing range and helps avoid two expensive mistakes: listing too low and giving away value, or listing too high and allowing the car to sit unsold for months.',
+      },
+      { type: 'h2', text: 'How Digi-Tec Helps You Establish the Right Price' },
+      {
+        type: 'p',
+        text: 'The process begins with the vehicle details and an inspection. We confirm the model and specification, review the available history and assess the visible and mechanical condition. Diagnostic scanning or deeper checks may be recommended when warning lights, stored faults or buyer-sensitive concerns need clarification.',
+      },
+      {
+        type: 'p',
+        text: 'We then compare the car with relevant Mercedes listings and current market conditions. Instead of presenting one unsupported number, we explain a practical asking-price range, the likely negotiation room and the factors that could change the result. A valuation is an informed market opinion rather than a guaranteed future sale price, but a transparent assessment gives you a much stronger basis for deciding what to do next.',
+      },
+      { type: 'h2', text: 'Should You Repair or Service the Car Before Selling?' },
+      {
+        type: 'p',
+        text: 'Not every repair pays for itself at resale. Safety concerns, active warning lights, poor AC performance, obvious leaks and neglected routine maintenance can discourage buyers or lead to aggressive negotiation. On the other hand, an expensive cosmetic repair may add less value than it costs. The right approach is to prioritize work that improves buyer confidence and protects the car’s credible market position.',
+      },
+      {
+        type: 'p',
+        text: 'Because Digi-Tec is a Mercedes specialist workshop, we can separate important preparation from unnecessary spending. If work is completed, it can be documented clearly for prospective buyers. If an item is better disclosed and reflected in the price, we will explain that too.',
+      },
+      { type: 'h2', text: 'We Can Help Sell Your Mercedes for You' },
+      {
+        type: 'p',
+        text: 'If you do not want to handle the sale alone, Digi-Tec can support the process from valuation through to a suitable buyer. Depending on the agreed scope, this can include preparing the vehicle, presenting its specification and documented history clearly, creating the listing, handling enquiries, arranging viewings and inspections, and supporting price discussions and the handover process.',
+      },
+      {
+        type: 'p',
+        text: 'This is especially useful for owners who are busy, outside the UAE, unfamiliar with the local market or simply want Mercedes specialists to answer technical questions accurately. Before we begin, we agree the asking strategy, the minimum acceptable position, the work—if any—to complete, and the sale-support terms. You remain informed and make the final decision on any offer.',
+      },
+      { type: 'h2', text: 'Documents That Help Your Mercedes Sell' },
+      {
+        type: 'ul',
+        items: [
+          'UAE registration card and owner identification required for the transfer process',
+          'Service book, digital service information and maintenance invoices',
+          'Both keys and any original manuals or accessories supplied with the car',
+          'Invoices for recent tyres, battery, brakes, repairs or approved upgrades',
+          'Finance settlement information if a loan remains on the vehicle',
+          'Accurate information about previous accidents, paintwork and modifications',
+        ],
+      },
+      {
+        type: 'p',
+        text: 'Clear records reduce uncertainty. Buyers are usually more comfortable paying a fair price when the condition and ownership story are supported by documents rather than sales claims alone.',
+      },
+      { type: 'h2', text: 'Get a Mercedes Valuation and Sale Plan in Dubai' },
+      {
+        type: 'p',
+        text: 'To begin, send Digi-Tec your Mercedes model, model year, mileage, GCC or import specification, service-history details and a few current photographs. For a reliable assessment, bring the vehicle to our Al Quoz workshop so the team can inspect it and discuss the market position with you. We can then recommend a valuation range and, if requested, a clear plan to prepare and sell the car on your behalf.',
+      },
+      { type: 'h2', text: 'FAQs' },
+      { type: 'h3', text: 'Can Digi-Tec tell me exactly how much my Mercedes will sell for?' },
+      {
+        type: 'p',
+        text: 'We can provide an informed valuation range based on the vehicle, its condition and current comparable cars. The final sale price depends on buyer demand, timing, negotiation and the agreed condition of the car, so no responsible valuation can guarantee one exact figure.',
+      },
+      { type: 'h3', text: 'Can you sell my Mercedes for me in Dubai?' },
+      {
+        type: 'p',
+        text: 'Yes. Digi-Tec can help prepare, present and market your Mercedes, manage buyer enquiries and viewings, and support negotiation and handover under an agreed sale-support arrangement.',
+      },
+      { type: 'h3', text: 'Do I need to repair everything before listing the car?' },
+      {
+        type: 'p',
+        text: 'Not necessarily. We can help prioritize issues that affect safety, buyer confidence or value, then compare the likely benefit with the repair cost. Some items are better documented and priced transparently rather than repaired purely for the sale.',
+      },
+      { type: 'h3', text: 'Can you value an AMG, G-Class or modified Mercedes?' },
+      {
+        type: 'p',
+        text: 'Yes. These vehicles require closer attention to factory specification, condition, modification quality, supporting invoices and current specialist demand. Documented upgrades may appeal to the right buyer, but they do not always add their full original cost to the resale price.',
+      },
+      { type: 'h3', text: 'What should I send for an initial assessment?' },
+      {
+        type: 'p',
+        text: 'Send the model, year, mileage, VIN or specification details, service history, known faults, accident or paint information and clear photographs. An in-person inspection is recommended before setting the final asking strategy.',
+      },
+    ],
+  },
+  {
     slug: 'best-oil-change-dubai-mercedes',
     title: 'Best Oil Change in Dubai for Mercedes: What Your Car Actually Needs',
     excerpt:
