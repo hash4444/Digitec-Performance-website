@@ -405,6 +405,9 @@ const BrandPage = () => {
   }, [brand, isArabic, priorityBrandSeo]);
 
   const isMercedesServiceHub = brand?.slug === 'mercedes-benz-service-dubai';
+  const isPorscheServiceHub = brand?.slug === 'porsche-service-dubai';
+  const isBmwServiceHub = brand?.slug === 'bmw-service-dubai';
+  const isPriorityLeadBrand = isMercedesServiceHub || isPorscheServiceHub || isBmwServiceHub;
   const isRangeRoverServiceHub = brand?.slug === 'range-rover-service-dubai';
   const isDefenderServiceHub = brand?.slug === 'defender-service-dubai';
   const specialistHubTitle = prioritySeo?.title ?? (isMercedesServiceHub ? MERCEDES_META_TITLE : isRangeRoverServiceHub ? RANGE_ROVER_META_TITLE : isDefenderServiceHub ? DEFENDER_META_TITLE : undefined);
@@ -435,7 +438,9 @@ const BrandPage = () => {
   }
 
   const whatsappHref = `https://wa.me/97143402223?text=${encodeURIComponent(
-    isArabic ? `مرحباً، أود الاستفسار عن خدمة ${brand.name} لدى مركز ديجي-تك بيرفورمانس.` : `Hi, I'd like to enquire about ${brand.name} service at Digi-Tec Performance Centre.`,
+    isArabic
+      ? `مرحباً، أود الاستفسار عن خدمة ${brand.name} لدى مركز ديجي-تك بيرفورمانس. طراز السيارة وسنتها: `
+      : `Hi Digi-Tec, I found your ${brand.name} service page on Google and would like to arrange an inspection.\n\nModel and year: \nService, warning or symptom: `,
   )}`;
 
   const otherBrands = (priorityBrandSeo
@@ -491,7 +496,7 @@ const BrandPage = () => {
     ?? (isMercedesServiceHub ? 'Mercedes-Benz and AMG vehicles inside the Digi-Tec specialist workshop in Dubai' : '');
 
   return (
-    <div className="min-h-screen bg-black text-off-white">
+    <div className={`min-h-screen bg-black text-off-white ${isPriorityLeadBrand ? 'pb-20 md:pb-0' : ''}`}>
       <Header />
 
       {isMercedesServiceHub && (
@@ -553,13 +558,13 @@ const BrandPage = () => {
                   className="btn-primary"
                 >
                   <MessageCircle className="w-5 h-5" />
-                  {isArabic ? 'راسلنا عبر واتساب' : 'WhatsApp Us'}
+                  {isArabic ? 'راسلنا عبر واتساب' : isPriorityLeadBrand ? `Request a ${brand.name} Inspection` : 'WhatsApp Us'}
                 </a>
                 <a href="tel:+97143402223" className="btn-secondary">
                   <Phone className="w-5 h-5" />
                   {isArabic ? 'اتصل على +971 4 340 2223' : 'Call +971 4 340 2223'}
                 </a>
-                {(isMercedesServiceHub || isRangeRoverServiceHub || isDefenderServiceHub) && (
+                {(isPriorityLeadBrand || isRangeRoverServiceHub || isDefenderServiceHub) && (
                   <a
                     href="https://maps.google.com/?q=Al+Quoz+Industrial+Area+3+Warehouse+No.11-15+Dubai"
                     target="_blank"
@@ -576,6 +581,45 @@ const BrandPage = () => {
           </div>
         </div>
       </section>
+
+      {isPriorityLeadBrand && !isArabic && (
+        <section className="border-t border-white/5 bg-gradient-to-br from-charcoal/50 to-black py-10 sm:py-14">
+          <div className="mx-auto grid max-w-7xl gap-6 px-4 sm:px-6 lg:grid-cols-[1.25fr_0.75fr]">
+            <div className="card-premium rounded-2xl p-6 sm:p-8">
+              <span className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-burnt-orange">
+                <MapPin className="h-4 w-4" /> Al Quoz Industrial Area 3, Dubai
+              </span>
+              <h2 className="mt-3 text-2xl font-black sm:text-4xl">Looking for a {brand.name} Workshop Near You?</h2>
+              <p className="mt-4 max-w-3xl text-sm leading-relaxed text-gray-300 sm:text-base">
+                Digi-Tec is an independent workshop established in 2002, close to Sheikh Zayed Road. We inspect {brand.name} maintenance, warning-light, AC, brake, suspension, engine and transmission concerns from our Al Quoz workshop.
+              </p>
+              <p className="mt-4 text-sm leading-relaxed text-gray-400">
+                Send your model, year, mileage and symptoms before visiting. The team will confirm the appropriate first inspection and an available appointment rather than guessing from a warning code alone.
+              </p>
+              <div className="mt-6 flex flex-col gap-3 sm:flex-row">
+                <a href={whatsappHref} target="_blank" rel="noopener noreferrer" className="btn-primary">
+                  <MessageCircle className="h-5 w-5" /> Request an Inspection
+                </a>
+                <a href="https://maps.google.com/?q=Al+Quoz+Industrial+Area+3+Warehouse+No.11-15+Dubai" target="_blank" rel="noopener noreferrer" className="btn-secondary">
+                  <MapPin className="h-5 w-5" /> Get Directions
+                </a>
+              </div>
+            </div>
+            <div className="card-premium rounded-2xl p-6 sm:p-8">
+              <p className="text-xs font-bold uppercase tracking-widest text-burnt-orange">Models we commonly discuss</p>
+              <h2 className="mt-3 text-xl font-black sm:text-2xl">Your {brand.name}, identified correctly</h2>
+              <div className="mt-5 flex flex-wrap gap-2">
+                {models.map((model) => (
+                  <span key={model} className="rounded-full border border-white/10 bg-white/[0.04] px-3 py-2 text-sm text-gray-200">
+                    {model}
+                  </span>
+                ))}
+              </div>
+              <p className="mt-5 text-sm leading-relaxed text-gray-400">VIN, fitted systems and service history are checked when they affect diagnostics, parts or procedures.</p>
+            </div>
+          </div>
+        </section>
+      )}
 
       {isRangeRoverServiceHub && !isArabic && (
         <section className="py-12 sm:py-16 bg-gradient-to-br from-charcoal/40 to-black border-t border-white/5">
@@ -1242,6 +1286,19 @@ const BrandPage = () => {
       </section>
 
       <Footer />
+
+      {isPriorityLeadBrand && (
+        <aside className="fixed inset-x-0 bottom-0 z-40 border-t border-white/10 bg-black/95 p-3 shadow-2xl backdrop-blur md:hidden" aria-label={`${brand.name} booking options`}>
+          <div className="mx-auto grid max-w-lg grid-cols-2 gap-3">
+            <a href={whatsappHref} target="_blank" rel="noopener noreferrer" className="btn-primary justify-center px-3 py-3 text-sm">
+              <MessageCircle className="h-5 w-5" /> WhatsApp
+            </a>
+            <a href="tel:+97143402223" className="btn-secondary justify-center px-3 py-3 text-sm">
+              <Phone className="h-5 w-5" /> Call Workshop
+            </a>
+          </div>
+        </aside>
+      )}
     </div>
   );
 };
