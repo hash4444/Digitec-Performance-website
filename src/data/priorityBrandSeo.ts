@@ -94,10 +94,10 @@ export const PRIORITY_BRAND_SEO: Record<string, PriorityBrandSeo> = {
     ],
   },
   'ferrari-service-dubai': {
-    title: 'Ferrari Service & Repair Dubai | Digi-Tec Workshop',
-    description: 'Ferrari service and repair enquiries in Dubai for Roma, Portofino, 296, SF90, 812 and Purosangue, with diagnostics and vehicle-specific workshop care.',
+    title: 'Ferrari Service & Repair Dubai | DIGI-TEC Workshop',
+    description: 'Independent Ferrari service and repair enquiries in Dubai for 488, F8, Roma, SF90 and other models, with diagnostics and vehicle-specific workshop care.',
     heroImage: '/images/ferrari-service-dubai-hero.jpg',
-    heroImageAlt: 'Ferrari receiving specialist mechanical inspection at Digi-Tec workshop in Dubai',
+    heroImageAlt: 'Ferrari receiving a mechanical inspection at DIGI-TEC workshop in Dubai',
     heroImageWidth: 941,
     heroImageHeight: 1672,
   },

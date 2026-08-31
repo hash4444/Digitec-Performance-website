@@ -14,6 +14,14 @@ import { localizeBrandToArabic } from '@/i18n/ar-brands';
 import { localizePostSummaryToArabic } from '@/i18n/ar-blog';
 import { localizeBestWorkshopPageToArabic } from '@/i18n/ar-best-workshop';
 import { buildBreadcrumb, buildWebPage, pageGraph, SITE_URL } from '@/lib/schema';
+import { mercedesModelPages } from '@/data/mercedesModelPages';
+import { MERCEDES_PROBLEMS_PATH, mercedesProblemGuides } from '@/data/mercedesProblemGuides';
+import { audiModelPages, audiModelPath } from '@/data/audiModelPages';
+import {
+  FERRARI_488_GUIDE_PATH,
+  FERRARI_MAINTENANCE_GUIDE_PATH,
+  ferrariModelPages,
+} from '@/data/ferrariModelPages';
 
 const SitemapPage = () => {
   const { isArabic } = useLocale();
@@ -68,6 +76,24 @@ const SitemapPage = () => {
       title: isArabic ? 'اعثر على الورشة المناسبة' : 'Find the right workshop',
       links: displayedWorkshopPages.map((page) => ({ label: page.h1, to: `/${page.slug}` })),
     },
+    ...(!isArabic ? [{
+      title: 'Audi model service & repair pages',
+      links: audiModelPages.map((model) => ({ label: model.h1, to: audiModelPath(model) })),
+    }, {
+      title: 'Ferrari model & ownership guides',
+      links: [
+        ...ferrariModelPages.map((model) => ({ label: model.h1, to: model.path })),
+        { label: 'Ferrari maintenance guide for Dubai', to: FERRARI_MAINTENANCE_GUIDE_PATH },
+        { label: 'Ferrari 488 owner maintenance guide', to: FERRARI_488_GUIDE_PATH },
+      ],
+    }, {
+      title: 'Mercedes model & diagnostic guides',
+      links: [
+        ...mercedesModelPages.map((model) => ({ label: model.h1, to: model.path })),
+        { label: 'Mercedes Problems & Diagnostic Guides', to: MERCEDES_PROBLEMS_PATH },
+        ...mercedesProblemGuides.map((guide) => ({ label: guide.h1, to: guide.path })),
+      ],
+    }] : []),
   ];
 
   const sitemapItems = groups.flatMap((group) => group.links);

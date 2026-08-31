@@ -8,7 +8,18 @@ import {
   getAvailableServiceKeys,
 } from '@/data/brandServices';
 import { bestWorkshopPages } from '@/data/bestWorkshopPages';
+import { mercedesModelPages } from '@/data/mercedesModelPages';
+import { MERCEDES_PROBLEMS_PATH, mercedesProblemGuides } from '@/data/mercedesProblemGuides';
+import { porscheModelPages } from '@/data/porscheModelPages';
+import { audiModelPages, audiModelPath } from '@/data/audiModelPages';
+import { PORSCHE_SYSTEMS_PATH, porscheSystemGuides } from '@/data/porscheSystemGuides';
+import { PORSCHE_PROBLEMS_PATH, porscheProblemGuides } from '@/data/porscheProblemGuides';
+import { PORSCHE_GUIDES_PATH, porscheOwnershipGuides } from '@/data/porscheOwnershipGuides';
+import { porscheCaseStudies } from '@/data/porscheCaseStudies';
+import { mercedesCaseStudies } from '@/data/mercedesCaseStudies';
 import { BMW_HUB_PATH, bmwModelPages } from '@/data/bmwModelPages';
+import { ferrariModelPages } from '@/data/ferrariModelPages';
+import { ferrariCaseStudies } from '@/data/ferrariCaseStudies';
 import { isIndexableContentPath } from '@/lib/route-policy';
 
 export type RouteFamily =
@@ -35,7 +46,7 @@ export interface PublicRoute {
 }
 
 /** Date of the current verified SEO/content release. Change only on real edits. */
-export const SEO_RELEASE_DATE = '2026-08-20';
+export const SEO_RELEASE_DATE = '2026-08-31';
 
 const coreRoutes: Array<[string, RouteFamily]> = [
   ['/', 'home'],
@@ -69,7 +80,28 @@ const englishRoutes: Array<[string, RouteFamily]> = [
     ),
   ...bestWorkshopPages.map((page) => [`/${page.slug}`, 'workshop-guide'] as [string, RouteFamily]),
 ];
-const bmwModelRoutes = bmwModelPages.map((model) => [`${BMW_HUB_PATH}/${model.slug}`, 'service'] as [string, RouteFamily]);
+
+// Phase-one Mercedes topical pages are English-only until equivalent Arabic
+// content exists. Existing Arabic blog versions remain untouched.
+const englishOnlyRoutes: Array<[string, RouteFamily]> = [
+  ...bmwModelPages.map((model) => [`${BMW_HUB_PATH}/${model.slug}`, 'service'] as [string, RouteFamily]),
+  ...ferrariModelPages.map((model) => [model.path, 'service'] as [string, RouteFamily]),
+  ...ferrariCaseStudies.map((study) => [`/ferrari/case-studies/${study.slug}`, 'article'] as [string, RouteFamily]),
+  ...mercedesModelPages.map((model) => [model.path, 'service'] as [string, RouteFamily]),
+  ...porscheModelPages.filter((model) => !model.legacyBlogSlug).map((model) => [model.path, 'service'] as [string, RouteFamily]),
+  ...audiModelPages.map((model) => [audiModelPath(model), 'service'] as [string, RouteFamily]),
+  [PORSCHE_SYSTEMS_PATH, 'article'],
+  ...porscheSystemGuides.map((guide) => [`${PORSCHE_SYSTEMS_PATH}/${guide.slug}`, 'article'] as [string, RouteFamily]),
+  [PORSCHE_PROBLEMS_PATH, 'article'],
+  ...porscheProblemGuides.map((guide) => [`${PORSCHE_PROBLEMS_PATH}/${guide.slug}`, 'article'] as [string, RouteFamily]),
+  ...porscheOwnershipGuides.map((guide) => [`${PORSCHE_GUIDES_PATH}/${guide.slug}`, 'article'] as [string, RouteFamily]),
+  ...porscheCaseStudies.map((item) => [`/porsche/case-studies/${item.slug}`, 'article'] as [string, RouteFamily]),
+  [MERCEDES_PROBLEMS_PATH, 'html-sitemap'],
+  ...mercedesProblemGuides.map((guide) => [guide.path, 'article'] as [string, RouteFamily]),
+  ...mercedesCaseStudies.map(
+    (caseStudy) => [`/mercedes/case-studies/${caseStudy.slug}`, 'article'] as [string, RouteFamily],
+  ),
+];
 
 const routeMap = new Map<string, PublicRoute>();
 for (const [path, family] of englishRoutes) {
@@ -83,7 +115,7 @@ for (const [path, family] of englishRoutes) {
   }
 }
 
-for (const [path, family] of bmwModelRoutes) {
+for (const [path, family] of englishOnlyRoutes) {
   routeMap.set(path, {
     path,
     family,

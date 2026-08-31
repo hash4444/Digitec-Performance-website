@@ -24,6 +24,7 @@ import {
 import BrandBookingForm from '@/components/BrandBookingForm';
 import { BRAND_PROFILES, getServicesForBrand } from '@/data/brandServices';
 import { getPriorityBrandSeo, PRIORITY_BRAND_SLUGS } from '@/data/priorityBrandSeo';
+import { audiModelPages, audiModelPath } from '@/data/audiModelPages';
 import { CtaAssurance } from '@/components/TrustBar';
 import { LocalizedLink as Link } from '@/components/LocalizedLink';
 import { useLocale } from '@/i18n/use-locale';
@@ -40,7 +41,11 @@ import porscheGt3rsWorkshop from '@/assets/porsche-gt3rs-workshop-dubai.jpg';
 import maybachWorkshop from '@/assets/maybach-workshop-dubai.jpg';
 import mercedesAmgEngine from '@/assets/mercedes-amg-engine-repair-dubai.jpg';
 import g63BrabusFinishedFront from '@/assets/g63-brabus-g800-finished-front.jpg';
+import { mercedesModelPages } from '@/data/mercedesModelPages';
+import { MERCEDES_PROBLEMS_PATH } from '@/data/mercedesProblemGuides';
+import PorscheKnowledgeCentre from '@/components/PorscheKnowledgeCentre';
 import BmwKnowledgeHub from '@/components/BmwKnowledgeHub';
+import FerrariKnowledgeCentre from '@/components/FerrariKnowledgeCentre';
 
 const mercedesWorkshop = '/images/mercedes-repair-dubai-hero.jpg';
 const MERCEDES_META_TITLE = 'Mercedes Repair & Service Dubai | Digi-Tec Specialists';
@@ -217,32 +222,32 @@ const MERCEDES_COMMON_ISSUES = [
   {
     title: 'Suspension Fault or one side sitting low',
     description: 'AIRMATIC, ABC and E-ACTIVE systems can involve an air spring, compressor, valve block, pressure leak, sensor or electrical fault. S-Class, GLE and GLS vehicles need system testing before a component is replaced.',
-    path: MERCEDES_SERVICE_PATHS['suspension-repair'],
-    label: 'Mercedes suspension diagnostics',
+    path: `${MERCEDES_PROBLEMS_PATH}/airmatic-malfunction`,
+    label: 'Understand the AIRMATIC warning',
   },
   {
     title: 'Jerking, slipping or delayed gear engagement',
     description: '7G-Tronic, 9G-Tronic and AMG SpeedShift symptoms may relate to fluid condition, adaptations, sensors, a conductor plate, mechatronics or internal wear. A scan and road test help define the repair scope.',
-    path: MERCEDES_SERVICE_PATHS['transmission-repair'],
-    label: 'Mercedes transmission repair',
+    path: `${MERCEDES_PROBLEMS_PATH}/gearbox-jerking`,
+    label: 'Read the gearbox symptom guide',
   },
   {
     title: 'Engine light, rough idle or loss of power',
     description: 'The cause can sit in ignition, air metering, boost, fuel delivery, emissions or cooling—not just the component named by a stored code. XENTRY data and physical testing are used together.',
-    path: MERCEDES_SERVICE_PATHS['engine-diagnostics'],
-    label: 'Mercedes XENTRY diagnostics',
+    path: `${MERCEDES_PROBLEMS_PATH}/check-engine-light`,
+    label: 'Read the check-engine guide',
   },
   {
     title: 'Weak AC or rising coolant temperature',
     description: 'High ambient temperatures expose weak compressors, refrigerant leaks, restricted condensers, cooling fans, thermostats and coolant leaks. Early diagnosis matters before Dubai summer load increases.',
-    path: MERCEDES_SERVICE_PATHS['ac-repair'],
-    label: 'Mercedes AC repair',
+    path: `${MERCEDES_PROBLEMS_PATH}/ac-not-cooling`,
+    label: 'Read the weak-AC guide',
   },
   {
     title: 'Battery warning or intermittent electrical faults',
     description: 'A weak main or auxiliary battery, charging fault, voltage drop, wiring concern or control-module communication issue can create several warning messages at once. Any required battery registration or coding is confirmed for compatibility and quoted where supported.',
-    path: MERCEDES_SERVICE_PATHS['electrical-repair'],
-    label: 'Mercedes electrical repair',
+    path: `${MERCEDES_PROBLEMS_PATH}/battery-warning`,
+    label: 'Read the battery-warning guide',
   },
   {
     title: 'Brake warning, vibration or reduced confidence',
@@ -500,14 +505,18 @@ const BrandPage = () => {
     <div className={`min-h-screen bg-black text-off-white ${isPriorityLeadBrand ? 'pb-20 md:pb-0' : ''}`}>
       <Header />
 
-      {isMercedesServiceHub && (
+      {(isMercedesServiceHub || isPorscheServiceHub || isBmwServiceHub) && (
         <nav aria-label={isArabic ? 'مسار التنقل' : 'Breadcrumb'} className="max-w-7xl mx-auto px-4 sm:px-6 pt-6 text-xs sm:text-sm text-gray-400">
           <ol className="flex flex-wrap items-center gap-2">
             <li><Link to="/" className="hover:text-burnt-orange">{isArabic ? 'الرئيسية' : 'Home'}</Link></li>
             <li aria-hidden="true">/</li>
             <li><Link to="/brands" className="hover:text-burnt-orange">{isArabic ? 'العلامات' : 'Brands'}</Link></li>
             <li aria-hidden="true">/</li>
-            <li className="text-off-white font-semibold">{isArabic ? 'إصلاح وصيانة مرسيدس-بنز في دبي' : 'Mercedes-Benz Repair & Service Dubai'}</li>
+            <li className="text-off-white font-semibold">
+              {isArabic
+                ? isPorscheServiceHub ? 'إصلاح وصيانة بورشه في دبي' : 'إصلاح وصيانة مرسيدس-بنز في دبي'
+                : isPorscheServiceHub ? 'Porsche Repair & Service Dubai' : isBmwServiceHub ? 'BMW Service & Repair Dubai' : 'Mercedes-Benz Repair & Service Dubai'}
+            </li>
           </ol>
         </nav>
       )}
@@ -622,6 +631,30 @@ const BrandPage = () => {
         </section>
       )}
 
+      {isPorscheServiceHub && !isArabic && <PorscheKnowledgeCentre />}
+
+      {isFerrari && !isArabic && <FerrariKnowledgeCentre />}
+
+      {brand.slug === 'audi-service-dubai' && !isArabic && (
+        <section className="border-t border-white/5 bg-gradient-to-br from-charcoal/50 to-black py-12 sm:py-16">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6">
+            <p className="eyebrow mb-4">Audi model knowledge centre</p>
+            <h2 className="max-w-4xl text-2xl font-black sm:text-4xl">Audi service information by model, system and symptom</h2>
+            <p className="mt-4 max-w-3xl text-sm leading-relaxed text-white/65 sm:text-base">Choose your Audi model for generation-aware service, engine, gearbox, quattro, suspension and Dubai maintenance guidance. Each page links back here for broad Audi service and repair enquiries.</p>
+            <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+              {audiModelPages.map((model) => (
+                <Link key={model.slug} to={audiModelPath(model)} className="card-premium group rounded-2xl p-5">
+                  <p className="text-xs font-bold uppercase tracking-widest text-burnt-orange">{model.series}</p>
+                  <h3 className="mt-2 text-xl font-black group-hover:text-burnt-orange">{model.name}</h3>
+                  <p className="mt-2 text-sm text-white/55">Service, repair, diagnostics and common concerns.</p>
+                  <span className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-burnt-orange">View {model.name} <ArrowRight className="h-4 w-4" /></span>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
       {isRangeRoverServiceHub && !isArabic && (
         <section className="py-12 sm:py-16 bg-gradient-to-br from-charcoal/40 to-black border-t border-white/5">
           <div className="max-w-5xl mx-auto px-4 sm:px-6">
@@ -660,7 +693,7 @@ const BrandPage = () => {
       )}
 
       {/* Services */}
-      <section className="py-12 sm:py-20 bg-black border-t border-white/5">
+      <section id={isPorscheServiceHub && !isArabic ? 'porsche-services' : undefined} className="scroll-mt-24 py-12 sm:py-20 bg-black border-t border-white/5">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-10 sm:mb-14">
             <h2 className="text-2xl sm:text-4xl lg:text-5xl font-black mb-3 sm:mb-4">
@@ -696,9 +729,9 @@ const BrandPage = () => {
                 ))}
           </div>
         </div>
-      {isBmwServiceHub && !isArabic && <BmwKnowledgeHub />}
-
       </section>
+
+      {isBmwServiceHub && !isArabic && <BmwKnowledgeHub />}
 
       {/* Brand-specific workshop capability */}
       {profile && (
@@ -824,7 +857,7 @@ const BrandPage = () => {
                 Common <span className="text-burnt-orange">Mercedes Problems</span> We Diagnose in Dubai
               </h2>
               <p className="text-gray-400 max-w-3xl mx-auto text-sm sm:text-base">
-                A warning message or symptom is a starting point, not a final diagnosis. These are common reasons Mercedes owners contact our Al Quoz workshop and the focused service page for each concern.
+                A warning message or symptom is a starting point, not a final diagnosis. These are common reasons Mercedes owners contact our Al Quoz workshop and the focused page for each concern.
               </p>
             </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
@@ -837,6 +870,11 @@ const BrandPage = () => {
                   </span>
                 </Link>
               ))}
+            </div>
+            <div className="mt-8 text-center">
+              <Link to={MERCEDES_PROBLEMS_PATH} className="inline-flex items-center gap-2 text-sm font-semibold text-burnt-orange hover:text-off-white">
+                Browse all Mercedes diagnostic guides <ArrowRight className="h-4 w-4" />
+              </Link>
             </div>
           </div>
         </section>
@@ -912,6 +950,17 @@ const BrandPage = () => {
               </p>
             </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+              <nav aria-label="Dedicated Mercedes model pages" className="md:col-span-2 lg:col-span-3">
+                <ul className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-5">
+                  {mercedesModelPages.map((model) => (
+                    <li key={model.path}>
+                      <Link to={model.path} className="group flex h-full items-center justify-between gap-2 rounded-xl border border-white/10 bg-white/[0.025] px-4 py-3 text-sm font-semibold text-white/70 hover:border-burnt-orange/40 hover:text-burnt-orange">
+                        <span>{model.shortName}</span><ArrowRight className="h-3.5 w-3.5 shrink-0" />
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </nav>
               {MERCEDES_MODEL_GROUPS.map((group) => (
                 <article key={group.title} className="card-premium rounded-2xl p-5 sm:p-6">
                   <h3 className="text-lg sm:text-xl font-bold text-off-white">{group.title}</h3>

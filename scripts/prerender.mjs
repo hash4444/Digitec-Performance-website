@@ -77,7 +77,7 @@ const routeHtml = (template, route, rendered) => {
   if (!seo.noindex && canonical) {
     const alternates = [
       `<link rel="alternate" hreflang="en-AE" href="${englishUrl}">`,
-      `<link rel="alternate" hreflang="ar-AE" href="${arabicUrl}">`,
+      ...(seo.hasArabicVersion === false ? [] : [`<link rel="alternate" hreflang="ar-AE" href="${arabicUrl}">`]),
       `<link rel="alternate" hreflang="x-default" href="${englishUrl}">`,
     ].join('\n  ');
     html = html.replace('</head>', `  ${alternates}\n  </head>`);

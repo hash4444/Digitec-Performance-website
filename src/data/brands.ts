@@ -206,12 +206,12 @@ export const brands: Brand[] = [
     logo: '/brand-logos/showcase/ferrari.png',
     specialization: 'Repair • Maintenance • Diagnostics • Performance',
     intro:
-      'Ferrari 488, F8, SF90, Roma and other model owners can request a vehicle-specific inspection at Digi-Tec. Diagnostic functions, F1/DCT, brake, suspension, parts and repair requirements are confirmed before the scope is agreed.',
+      'Ferrari 488, F8, SF90, Roma and other model owners can request a vehicle-specific inspection at DIGI-TEC. Diagnostic functions, F1 or dual-clutch transmission, brake, suspension, parts and repair requirements are confirmed before the scope is agreed.',
     whyChoose: [
       { title: 'Ferrari-Compatible Diagnostic Review', description: 'Scan, live-data, adaptation or programming requirements are checked against the model, modules and available access before booking.' },
-      { title: 'F1 DCT 7-Speed Gearbox Review', description: 'Clutch, fluid and shift concerns can be inspected. Measurement, adaptation or programming functions are included only when supported and confirmed for the exact vehicle.' },
-      { title: 'CCM Carbon-Ceramic Brake Inspection', description: 'CCM3 and CCM-R rotor and pad concerns can be measured; compatible parts and the required procedure are confirmed for the vehicle.' },
-      { title: 'Magnetorheological SCM Damper Inspection', description: 'SCM damper concerns can be inspected; compatible parts, diagnostic access and supported calibration requirements are confirmed for the vehicle.' },
+      { title: 'F1 & Dual-Clutch Gearbox Review', description: 'Single-clutch F1, seven-speed DCT and later eight-speed DCT systems differ by model. Fluid, shift, clutch-data and supported diagnostic requirements are confirmed for the exact vehicle.' },
+      { title: 'Steel & Carbon-Ceramic Brake Inspection', description: 'The fitted steel or Ferrari carbon-ceramic system is identified before measurement, compatible parts or a repair procedure is proposed.' },
+      { title: 'Model-Specific Suspension Inspection', description: 'Conventional or SCM/SCM-E adaptive-damper concerns can be inspected; fitted hardware, parts and supported diagnostic or calibration requirements are confirmed for the vehicle.' },
     ],
     faqs: [
       { q: 'How often should a Ferrari be serviced in Dubai?', a: serviceIntervalAnswer('Ferrari') },

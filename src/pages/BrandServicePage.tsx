@@ -28,6 +28,144 @@ import {
   SITE_URL,
 } from '@/lib/schema';
 import { useLocale } from '@/i18n/use-locale';
+import { MERCEDES_PROBLEMS_PATH } from '@/data/mercedesProblemGuides';
+import {
+  FERRARI_MAINTENANCE_GUIDE_PATH,
+} from '@/data/ferrariModelPages';
+
+const PORSCHE_RELATED_CONTENT: Record<string, { label: string; path: string }[]> = {
+  'oil-change': [
+    { label: 'Porsche 911 maintenance planning', path: '/blog/porsche-911-service-dubai-guide' },
+    { label: 'Porsche Cayenne maintenance planning', path: '/blog/porsche-cayenne-service-dubai-guide' },
+    { label: 'Porsche maintenance in Dubai', path: '/blog/porsche-maintenance-guide-dubai' },
+  ],
+  'transmission-repair': [
+    { label: '911 manual and PDK systems', path: '/blog/porsche-911-service-dubai-guide' },
+    { label: 'Macan PDK, PTM and driveline', path: '/porsche/macan' },
+    { label: 'Panamera PDK considerations', path: '/blog/porsche-panamera-service-dubai-guide' },
+  ],
+  'suspension-repair': [
+    { label: 'Cayenne air suspension and chassis', path: '/blog/porsche-cayenne-service-dubai-guide' },
+    { label: 'Panamera PASM and air suspension', path: '/blog/porsche-panamera-service-dubai-guide' },
+    { label: 'Taycan chassis systems', path: '/porsche/taycan' },
+  ],
+  'engine-diagnostics': [
+    { label: 'Porsche 997 diagnostic considerations', path: '/porsche/911/997' },
+    { label: 'Porsche 991 diagnostic considerations', path: '/porsche/911/991' },
+    { label: 'Porsche 992 diagnostic considerations', path: '/porsche/911/992' },
+  ],
+  'mechanical-repair': [
+    { label: 'Porsche 911 cooling and engine systems', path: '/blog/porsche-911-service-dubai-guide' },
+    { label: 'Cayenne engine and cooling systems', path: '/blog/porsche-cayenne-service-dubai-guide' },
+    { label: '718 powertrain and cooling', path: '/porsche/718' },
+  ],
+  'brake-repair': [
+    { label: '911 steel and PCCB systems', path: '/blog/porsche-911-service-dubai-guide' },
+    { label: 'Cayenne braking considerations', path: '/blog/porsche-cayenne-service-dubai-guide' },
+    { label: 'Taycan regenerative and friction brakes', path: '/porsche/taycan' },
+  ],
+  'electrical-repair': [
+    { label: 'Taycan low-voltage and charging overview', path: '/porsche/taycan' },
+    { label: 'Panamera electrical considerations', path: '/blog/porsche-panamera-service-dubai-guide' },
+    { label: 'Macan electrical and diagnostic scope', path: '/porsche/macan' },
+  ],
+  'battery-replacement': [
+    { label: 'Taycan 12-volt system overview', path: '/porsche/taycan' },
+    { label: 'Porsche maintenance in Dubai', path: '/blog/porsche-maintenance-guide-dubai' },
+    { label: 'Porsche 992 electrical considerations', path: '/porsche/911/992' },
+  ],
+  'ac-repair': [
+    { label: '911 cooling and AC considerations', path: '/blog/porsche-911-service-dubai-guide' },
+    { label: 'Cayenne climate-system considerations', path: '/blog/porsche-cayenne-service-dubai-guide' },
+    { label: 'Taycan thermal-management overview', path: '/porsche/taycan' },
+  ],
+};
+
+const MERCEDES_RELATED_CONTENT: Record<string, { label: string; path: string }[]> = {
+  'transmission-repair': [
+    { label: 'Why a Mercedes gearbox jerks', path: `${MERCEDES_PROBLEMS_PATH}/gearbox-jerking` },
+    { label: 'How to recognise transmission slipping', path: `${MERCEDES_PROBLEMS_PATH}/transmission-slipping` },
+    { label: 'E-Class transmission considerations', path: '/blog/mercedes-e-class-service-dubai-guide' },
+  ],
+  'suspension-repair': [
+    { label: 'What an AIRMATIC malfunction means', path: `${MERCEDES_PROBLEMS_PATH}/airmatic-malfunction` },
+    { label: 'Why air suspension drops overnight', path: `${MERCEDES_PROBLEMS_PATH}/suspension-dropping-overnight` },
+    { label: 'S-Class suspension systems', path: '/blog/mercedes-s-class-service-dubai-guide' },
+  ],
+  'engine-diagnostics': [
+    { label: 'Mercedes check-engine light guide', path: `${MERCEDES_PROBLEMS_PATH}/check-engine-light` },
+    { label: "Mercedes won't-start guide", path: `${MERCEDES_PROBLEMS_PATH}/wont-start` },
+    { label: 'Browse all Mercedes diagnostic guides', path: MERCEDES_PROBLEMS_PATH },
+  ],
+  'mechanical-repair': [
+    { label: 'What to do when a Mercedes overheats', path: `${MERCEDES_PROBLEMS_PATH}/engine-overheating` },
+    { label: 'How a Mercedes oil leak is traced', path: `${MERCEDES_PROBLEMS_PATH}/oil-leak` },
+    { label: 'AMG G63 platform guide', path: '/blog/mercedes-g63-service-dubai-guide' },
+  ],
+  'ac-repair': [
+    { label: 'Why Mercedes AC stops cooling', path: `${MERCEDES_PROBLEMS_PATH}/ac-not-cooling` },
+    { label: 'GLE cooling and climate considerations', path: '/mercedes/models/gle-service-repair-dubai' },
+    { label: 'GLS three-row climate considerations', path: '/mercedes/models/gls-service-repair-dubai' },
+  ],
+  'battery-replacement': [
+    { label: 'What a Mercedes battery warning means', path: `${MERCEDES_PROBLEMS_PATH}/battery-warning` },
+    { label: "Mercedes won't-start guide", path: `${MERCEDES_PROBLEMS_PATH}/wont-start` },
+    { label: 'E-Class 12V and 48V considerations', path: '/blog/mercedes-e-class-service-dubai-guide' },
+  ],
+  'electrical-repair': [
+    { label: 'Mercedes battery and charging warnings', path: `${MERCEDES_PROBLEMS_PATH}/battery-warning` },
+    { label: "No-crank and crank-no-start diagnosis", path: `${MERCEDES_PROBLEMS_PATH}/wont-start` },
+    { label: 'S-Class electrical considerations', path: '/blog/mercedes-s-class-service-dubai-guide' },
+  ],
+};
+
+const FERRARI_RELATED_CONTENT: Record<string, { label: string; path: string }[]> = {
+  'oil-change': [
+    { label: 'Ferrari 296 hybrid maintenance considerations', path: '/brands/ferrari-service-dubai/296' },
+    { label: 'Ferrari 812 V12 maintenance considerations', path: '/brands/ferrari-service-dubai/812' },
+    { label: 'Ferrari maintenance guide for Dubai', path: FERRARI_MAINTENANCE_GUIDE_PATH },
+  ],
+  'brake-repair': [
+    { label: 'Ferrari 296 regenerative braking overview', path: '/brands/ferrari-service-dubai/296' },
+    { label: 'Ferrari 812 brake-system overview', path: '/brands/ferrari-service-dubai/812' },
+    { label: 'Ferrari Purosangue braking considerations', path: '/brands/ferrari-service-dubai/purosangue' },
+  ],
+  'transmission-repair': [
+    { label: 'Portofino seven- versus eight-speed DCT', path: '/brands/ferrari-service-dubai/portofino' },
+    { label: 'Ferrari 812 seven-speed transaxle overview', path: '/brands/ferrari-service-dubai/812' },
+    { label: 'Purosangue eight-speed DCT and 4RM-S evo', path: '/brands/ferrari-service-dubai/purosangue' },
+  ],
+  'suspension-repair': [
+    { label: 'Portofino SCM-E suspension overview', path: '/brands/ferrari-service-dubai/portofino' },
+    { label: 'Ferrari 812 steering and SCM-E overview', path: '/brands/ferrari-service-dubai/812' },
+    { label: 'Purosangue TASV active suspension', path: '/brands/ferrari-service-dubai/purosangue' },
+  ],
+  'engine-diagnostics': [
+    { label: 'Ferrari 296 hybrid diagnostic scope', path: '/brands/ferrari-service-dubai/296' },
+    { label: 'Ferrari 812 V12 diagnostic considerations', path: '/brands/ferrari-service-dubai/812' },
+    { label: 'Purosangue V12 and chassis diagnostics', path: '/brands/ferrari-service-dubai/purosangue' },
+  ],
+  'mechanical-repair': [
+    { label: 'Portofino V8 and roof-system overview', path: '/brands/ferrari-service-dubai/portofino' },
+    { label: 'Ferrari 812 V12 and transaxle overview', path: '/brands/ferrari-service-dubai/812' },
+    { label: 'Purosangue V12 and 4RM-S evo overview', path: '/brands/ferrari-service-dubai/purosangue' },
+  ],
+  'electrical-repair': [
+    { label: 'Ferrari 296 hybrid and low-voltage scope', path: '/brands/ferrari-service-dubai/296' },
+    { label: 'Portofino roof and electrical systems', path: '/brands/ferrari-service-dubai/portofino' },
+    { label: 'Purosangue 12-volt, 48-volt and comfort systems', path: '/brands/ferrari-service-dubai/purosangue' },
+  ],
+  'battery-replacement': [
+    { label: 'Ferrari 296 low-voltage and hybrid considerations', path: '/brands/ferrari-service-dubai/296' },
+    { label: 'Portofino storage and roof-system considerations', path: '/brands/ferrari-service-dubai/portofino' },
+    { label: 'Purosangue 12-volt and 48-volt considerations', path: '/brands/ferrari-service-dubai/purosangue' },
+  ],
+  'ac-repair': [
+    { label: 'Ferrari 296 thermal-management overview', path: '/brands/ferrari-service-dubai/296' },
+    { label: 'Portofino cooling and AC considerations', path: '/brands/ferrari-service-dubai/portofino' },
+    { label: 'Purosangue four-seat climate considerations', path: '/brands/ferrari-service-dubai/purosangue' },
+  ],
+};
 
 const serviceNamesArabic: Record<string, string> = {
   'oil-change': 'تغيير الزيت', 'brake-repair': 'إصلاح الفرامل', 'transmission-repair': 'إصلاح ناقل الحركة', 'ac-repair': 'إصلاح التكييف', 'suspension-repair': 'إصلاح التعليق', 'engine-diagnostics': 'تشخيص المحرك', 'mechanical-repair': 'الإصلاح الميكانيكي', 'steering-repair': 'إصلاح نظام التوجيه', 'battery-replacement': 'تبديل البطارية', 'electrical-repair': 'إصلاح الكهرباء', 'exhaust-repair': 'إصلاح العادم', 'fuel-system-repair': 'إصلاح نظام الوقود', 'body-repair': 'إصلاح الهيكل', 'tire-repair': 'إصلاح الإطارات',
@@ -153,6 +291,35 @@ const BrandServicePage: React.FC<BrandServicePageProps> = ({
 
   const whatsappHref = `https://wa.me/97143402223?text=${encodeURIComponent(combo.whatsAppMessage)}`;
   const otherServices = getServicesForBrand(combo.brandSlug).filter((s) => s.serviceSlug !== combo.serviceSlug);
+  const relatedMercedesContent = combo.brandSlug === 'mercedes-benz-service-dubai'
+    ? MERCEDES_RELATED_CONTENT[combo.serviceSlug] ?? []
+    : [];
+  const relatedPorscheContent = combo.brandSlug === 'porsche-service-dubai'
+    ? PORSCHE_RELATED_CONTENT[combo.serviceSlug] ?? [
+        { label: 'Browse the Porsche Knowledge Centre', path: '/brands/porsche-service-dubai#porsche-knowledge-centre' },
+        { label: 'Porsche 911 model guide', path: '/blog/porsche-911-service-dubai-guide' },
+        { label: 'Porsche Macan model guide', path: '/porsche/macan' },
+      ]
+    : [];
+  const relatedBmwContent = combo.brandSlug === 'bmw-service-dubai'
+    ? [
+        { label: 'BMW X5 service guide', path: '/brands/bmw-service-dubai/x5' },
+        { label: combo.serviceSlug === 'transmission-repair' ? 'BMW M5 drivetrain guide' : 'BMW 3 Series service guide', path: combo.serviceSlug === 'transmission-repair' ? '/brands/bmw-service-dubai/m5' : '/brands/bmw-service-dubai/3-series' },
+        { label: combo.serviceSlug === 'suspension-repair' ? 'BMW X6 chassis guide' : 'BMW M3 service guide', path: combo.serviceSlug === 'suspension-repair' ? '/brands/bmw-service-dubai/x6' : '/brands/bmw-service-dubai/m3' },
+      ]
+    : [];
+  const relatedFerrariContent = combo.brandSlug === 'ferrari-service-dubai'
+    ? FERRARI_RELATED_CONTENT[combo.serviceSlug] ?? [
+        { label: 'Ferrari 296 model guide', path: '/brands/ferrari-service-dubai/296' },
+        { label: 'Ferrari Purosangue model guide', path: '/brands/ferrari-service-dubai/purosangue' },
+        { label: 'Ferrari maintenance guide for Dubai', path: FERRARI_MAINTENANCE_GUIDE_PATH },
+      ]
+    : [];
+  const relatedAuthorityContent = relatedMercedesContent.length > 0
+    ? relatedMercedesContent
+    : relatedPorscheContent.length > 0
+      ? relatedPorscheContent
+      : relatedBmwContent.length > 0 ? relatedBmwContent : relatedFerrariContent;
 
   return (
     <div className="min-h-screen bg-black text-off-white">
@@ -238,7 +405,7 @@ const BrandServicePage: React.FC<BrandServicePageProps> = ({
             {isArabic ? <>طرازات {combo.brandName} التي نوفر لها <span className="text-burnt-orange">{combo.serviceName}</span></> : <>{combo.brandName} Models We <span className="text-burnt-orange">{combo.serviceName}</span></>}
           </h2>
           <p className="text-gray-400 text-sm sm:text-base mb-6 sm:mb-8">
-            {isArabic ? `ندعم طرازات ${combo.brandName} الحديثة والمتداولة في ورشتنا بالقوز.` : `Every current and recent ${combo.brandName} platform is supported in our Al Quoz workshop.`}
+            {isArabic ? `يتم تأكيد نطاق الخدمة حسب طراز ${combo.brandName} والنظام المركب قبل الحجز.` : `Workshop scope, compatible functions and parts are confirmed for the exact ${combo.brandName} model before booking.`}
           </p>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
             {combo.models.map((m) => (
@@ -277,13 +444,32 @@ const BrandServicePage: React.FC<BrandServicePageProps> = ({
             <ShieldCheck className="w-8 h-8 sm:w-10 sm:h-10 text-burnt-orange flex-shrink-0" />
             <div>
               <h2 className="text-xl sm:text-3xl font-black mb-3">
-                {isArabic ? <>قطع <span className="text-burnt-orange">{combo.brandName}</span> موثقة وبالمواصفات المناسبة</> : <>Genuine <span className="text-burnt-orange">{combo.brandName}</span> Parts, Documented</>}
+                {isArabic ? <>خيارات قطع <span className="text-burnt-orange">{combo.brandName}</span> موثقة</> : <><span className="text-burnt-orange">{combo.brandName}</span> Parts Options, Documented</>}
               </h2>
               <p className="text-gray-300 text-sm sm:text-base leading-relaxed">{combo.partsCopy}</p>
             </div>
           </div>
         </div>
       </section>
+
+      {relatedAuthorityContent.length > 0 && !isArabic && (
+        <section className="border-t border-white/5 bg-charcoal/15 py-12 sm:py-16">
+          <div className="mx-auto max-w-5xl px-4 sm:px-6">
+            <p className="eyebrow mb-4">Model and owner guides</p>
+            <h2 className="text-2xl font-black sm:text-4xl">Understand the symptom before the repair</h2>
+            <p className="mt-4 max-w-3xl text-sm leading-relaxed text-white/55">These informational pages explain the warning or platform. This page remains the commercial destination for the confirmed service need.</p>
+            <ul className="mt-7 grid gap-4 sm:grid-cols-3">
+              {relatedAuthorityContent.map((item) => (
+                <li key={item.path}>
+                  <Link to={item.path} className="card-premium group flex h-full items-center justify-between gap-3 rounded-xl p-4 text-sm font-semibold text-white/70 hover:text-burnt-orange">
+                    <span>{item.label}</span><ArrowRight className="h-4 w-4 shrink-0" />
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
+      )}
 
       {/* FAQ */}
       <section className="py-12 sm:py-16 bg-black border-t border-white/5">

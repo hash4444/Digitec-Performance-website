@@ -20,6 +20,8 @@ export interface SeoProps {
   twitterTitle?: string;
   twitterDescription?: string;
   noindex?: boolean;
+  /** Emit an ar-AE alternate only when a real Arabic equivalent is published. */
+  hasArabicVersion?: boolean;
   jsonLd?: Record<string, unknown> | Record<string, unknown>[];
 }
 
@@ -55,6 +57,7 @@ export function useSeo(props: SeoProps) {
     twitterCard,
     twitterTitle,
     twitterDescription,
+    hasArabicVersion = true,
     jsonLd,
   } = props;
   const { pathname } = useLocation();
@@ -142,7 +145,7 @@ export function useSeo(props: SeoProps) {
     if (!effectiveNoindex && effectiveCanonical) {
       [
         { hreflang: 'en-AE', href: englishUrl },
-        { hreflang: 'ar-AE', href: arabicUrl },
+        ...(hasArabicVersion ? [{ hreflang: 'ar-AE', href: arabicUrl }] : []),
         { hreflang: 'x-default', href: englishUrl },
       ].forEach(({ hreflang, href }) => {
         const link = document.createElement('link');
@@ -184,6 +187,7 @@ export function useSeo(props: SeoProps) {
     twitterCard,
     twitterTitle,
     twitterDescription,
+    hasArabicVersion,
     jsonLdString,
   ]);
 }

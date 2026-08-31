@@ -493,22 +493,22 @@ export const aiGuidePosts: BlogPost[] = [
     slug: 'porsche-911-service-dubai-guide',
     title: 'Porsche 911 Service in Dubai: Owner Guide',
     excerpt:
-      'What a 911 needs in UAE conditions, from oil specification and cooling to PDK service, brakes, suspension and the PIWIS diagnostics behind it all.',
+      'What a 911 needs in UAE conditions, from oil specification and cooling to transmission service, brakes, suspension and model-appropriate diagnostics.',
     category: 'Maintenance',
     author: 'DIGI-TEC Workshop',
     date: '2026-08-13',
     readTime: '8 min read',
     coverGradient: 'from-burnt-orange/30 via-charcoal to-black',
-    metaTitle: 'Porsche 911 Service Dubai | PIWIS Specialist Guide',
+    metaTitle: 'Porsche 911 Service & Repair Dubai | Digi-Tec',
     metaDescription:
-      'A Porsche 911 service guide for Dubai owners: oil specification, cooling, PDK service, brakes, suspension and PIWIS diagnostics at an Al Quoz specialist workshop.',
+      'A Porsche 911 service guide for Dubai owners covering oil specifications, cooling, PDK service, brakes, suspension and model-appropriate diagnostics.',
     keywords:
-      'Porsche 911 service Dubai, Porsche workshop Dubai, PIWIS diagnostics Dubai, PDK service Dubai, Porsche repair Al Quoz',
+      'Porsche 911 service Dubai, Porsche workshop Dubai, Porsche diagnostics Dubai, PDK service Dubai, Porsche repair Al Quoz',
     ogType: 'article',
     content: [
       {
         type: 'p',
-        text: 'Short answer: a Porsche 911 in Dubai should follow its scheduled service with particular attention to oil specification and level, cooling system condition, PDK transmission fluid, brake condition and suspension health. Cars driven hard or stored for long periods each have their own risks. Digi-Tec services the 911 range in Al Quoz using PIWIS diagnostics.',
+        text: 'Short answer: a Porsche 911 in Dubai should follow the schedule for its exact model year and powertrain, with attention to oil specification and level, cooling-system condition, transmission service history, brakes and suspension. Cars driven hard or stored for long periods can require different checks. Digi-Tec confirms the available diagnostic and service scope for the vehicle before booking.',
       },
       { type: 'h2', text: 'Oil and cooling' },
       {
@@ -542,10 +542,10 @@ export const aiGuidePosts: BlogPost[] = [
         type: 'p',
         text: 'Annually as a minimum, even at low mileage, with additional inspection for cars that are tracked or stored for long periods.',
       },
-      { type: 'h3', text: 'Do you use PIWIS for Porsche diagnostics?' },
+      { type: 'h3', text: 'What diagnostic functions are available for a Porsche 911?' },
       {
         type: 'p',
-        text: 'Yes. PIWIS is used for fault reading, guided testing, service functions, coding and programming across the Porsche models serviced at Digi-Tec.',
+        text: 'Fault reading, live-data checks and supported service functions depend on the 911 generation, installed modules and required access. Digi-Tec confirms compatible diagnostic, coding or programming functions for the exact vehicle before accepting the work.',
       },
       { type: 'h3', text: 'Is an independent Porsche specialist a safe choice out of warranty?' },
       {

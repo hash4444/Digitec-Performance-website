@@ -35,6 +35,15 @@ const mercedesServiceLinks = [
   { label: 'Mercedes Electrical Repair', arLabel: 'إصلاح كهرباء مرسيدس', href: '/services/mercedes-electrical-repair-dubai' },
 ];
 
+const ferrariServiceLinks = [
+  { label: 'Ferrari Hub', arLabel: 'مركز خدمات فيراري', href: '/brands/ferrari-service-dubai' },
+  { label: 'Ferrari Diagnostics', arLabel: 'فحص وتشخيص فيراري', href: '/brands/ferrari-service-dubai/engine-diagnostics' },
+  { label: 'Ferrari Oil Service', arLabel: 'خدمة زيت فيراري', href: '/brands/ferrari-service-dubai/oil-change' },
+  { label: 'Ferrari Transmission Repair', arLabel: 'إصلاح ناقل حركة فيراري', href: '/brands/ferrari-service-dubai/transmission-repair' },
+  { label: 'Ferrari Suspension Repair', arLabel: 'إصلاح تعليق فيراري', href: '/brands/ferrari-service-dubai/suspension-repair' },
+  { label: 'Ferrari Brake Repair', arLabel: 'إصلاح فرامل فيراري', href: '/brands/ferrari-service-dubai/brake-repair' },
+];
+
 const BrandWorkshopArticleContent = ({ article, isArabic }: { article: BrandWorkshopArticle; isArabic: boolean }) => {
   const url = `${SITE_URL}${isArabic ? '/ar' : ''}/blog/${article.slug}`;
   const metaTitle = isArabic
@@ -91,7 +100,9 @@ const BrandWorkshopArticleContent = ({ article, isArabic }: { article: BrandWork
     { question: `ماذا أحضر إلى موعد ${article.brand}؟`, answer: 'أحضر المفتاح وسجل الصيانة إن توفر وتفاصيل الأعمال الأخيرة وأي صور أو فيديو للأعراض المتقطعة والظروف التي تظهر فيها المشكلة.' },
   ];
   const faqs = isArabic ? arabicFaqs : englishFaqs;
-  const relatedServiceLinks = article.brand === 'Mercedes-Benz' ? mercedesServiceLinks : generalServiceLinks;
+  const relatedServiceLinks = article.brand === 'Mercedes-Benz'
+    ? mercedesServiceLinks
+    : article.brand === 'Ferrari' ? ferrariServiceLinks : generalServiceLinks;
 
   const jsonLd = React.useMemo(() => {
     const breadcrumb = buildBreadcrumb(url, [
@@ -259,6 +270,25 @@ const BrandWorkshopArticleContent = ({ article, isArabic }: { article: BrandWork
                 </ul>
                 <p className="mt-5 leading-relaxed text-gray-300">{t('Ask for an itemised estimate that separates diagnostics, labour, parts and optional preventive work. For a direct service overview or to arrange an inspection, visit our ', 'اطلب عرضاً مفصلاً يفصل التشخيص والعمالة والقطع والأعمال الوقائية الاختيارية. للاطلاع على الخدمات أو حجز فحص، زر صفحة ')}<Link to="/brands/ferrari-service-dubai" className="font-semibold text-burnt-orange hover:underline">{t('Ferrari service Dubai page', 'خدمة فيراري في دبي')}</Link>.</p>
               </section>
+
+              {!isArabic && (
+                <section className="mt-14">
+                  <h2 className="text-2xl font-black sm:text-3xl">Ferrari service information by model</h2>
+                  <p className="mt-4 max-w-3xl leading-relaxed text-gray-300">Use the model guides when the engine, transmission, suspension, braking or hybrid architecture changes the inspection path.</p>
+                  <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+                    {[
+                      ['Ferrari 488', '/brands/ferrari-service-dubai/488'],
+                      ['Ferrari F8 Tributo', '/brands/ferrari-service-dubai/f8-tributo'],
+                      ['Ferrari Roma', '/brands/ferrari-service-dubai/roma'],
+                      ['Ferrari SF90', '/brands/ferrari-service-dubai/sf90'],
+                      ['Ferrari 296', '/brands/ferrari-service-dubai/296'],
+                      ['Ferrari Portofino', '/brands/ferrari-service-dubai/portofino'],
+                      ['Ferrari 812', '/brands/ferrari-service-dubai/812'],
+                      ['Ferrari Purosangue', '/brands/ferrari-service-dubai/purosangue'],
+                    ].map(([label, path]) => <Link key={path} to={path} className="card-premium rounded-xl p-4 text-sm font-bold transition-colors hover:text-burnt-orange">{label}<ArrowRight className="mt-2 h-4 w-4 text-burnt-orange" /></Link>)}
+                  </div>
+                </section>
+              )}
             </>
           )}
 

@@ -174,8 +174,15 @@ for (const route of routes) {
     }
     if (!robots.startsWith('index,')) errors.push(`${route.path}: indexable route has robots=${robots}`);
     const hreflangs = new Set(alternates.map((match) => match[1]));
-    if (alternates.length !== 3 || !['en-AE', 'ar-AE', 'x-default'].every((value) => hreflangs.has(value))) {
-      errors.push(`${route.path}: expected one en-AE, ar-AE and x-default alternate`);
+    const arabicEquivalent = route.path.startsWith('/ar')
+      ? route.path.replace(/^\/ar(?=\/|$)/, '') || '/'
+      : route.path === '/' ? '/ar' : `/ar${route.path}`;
+    const hasArabicEquivalent = route.path.startsWith('/ar') || routePaths.has(arabicEquivalent);
+    const expectedHreflangs = hasArabicEquivalent
+      ? ['en-AE', 'ar-AE', 'x-default']
+      : ['en-AE', 'x-default'];
+    if (alternates.length !== expectedHreflangs.length || !expectedHreflangs.every((value) => hreflangs.has(value))) {
+      errors.push(`${route.path}: expected ${expectedHreflangs.join(', ')} alternates`);
     }
   } else if (!robots.startsWith('noindex,')) {
     errors.push(`${route.path}: pruned route is not noindex`);

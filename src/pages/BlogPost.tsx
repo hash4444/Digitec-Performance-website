@@ -67,9 +67,9 @@ const relatedServiceByPost: Record<string, { href: string; label: string; descri
     description: 'See the workshop overview, service scope, and direct ways to contact Digi-Tec in Al Quoz.',
   },
   'mercedes-repair-dubai-complete-guide': {
-    href: '/brands/mercedes-benz-service-dubai',
-    label: 'Mercedes repair in Dubai',
-    description: 'Explore our Mercedes service and repair capability for diagnostics, maintenance, and specialist workshop support.',
+    href: '/mercedes/problems',
+    label: 'Mercedes problem and diagnostic guides',
+    description: 'Continue from this broad ownership overview into focused AIRMATIC, transmission, cooling, AC, oil-leak, no-start and battery-warning guides.',
   },
   'range-rover-land-rover-air-suspension-problems-dubai': {
     href: '/services/suspension-repair-dubai',
@@ -82,14 +82,39 @@ const relatedServiceByPost: Record<string, { href: string; label: string; descri
     description: 'Arrange a Defender inspection for accident damage, warning lights, diagnostics, bodywork or ongoing maintenance.',
   },
   'g63-to-brabus-g800-conversion-dubai': {
-    href: '/brands/mercedes-benz-service-dubai',
-    label: 'Mercedes-AMG G63 service in Dubai',
-    description: 'Arrange a G63 inspection or conversion consultation with our Mercedes specialists in Al Quoz.',
+    href: '/blog/mercedes-g63-service-dubai-guide',
+    label: 'Mercedes-AMG G63 model service guide',
+    description: 'Review G63 generation, V8, transmission, chassis, cooling and diagnostic considerations before arranging an inspection.',
   },
   'mercedes-amg-gt-black-series-1300hp-build-dubai': {
     href: '/tuning',
     label: 'Mercedes-AMG performance tuning in Dubai',
     description: 'Discuss a custom AMG build, ECU calibration or performance-project inspection with Digi-Tec in Al Quoz.',
+  },
+  'air-suspension-repair-dubai-guide': {
+    href: '/mercedes/problems/airmatic-malfunction',
+    label: 'Mercedes AIRMATIC malfunction guide',
+    description: 'See how the Mercedes-specific warning, air system and chassis variants change the diagnostic path.',
+  },
+  'transmission-service-7g-9g-dubai': {
+    href: '/mercedes/problems/gearbox-jerking',
+    label: 'Mercedes gearbox-jerking guide',
+    description: 'Separate 7G-TRONIC, 9G-TRONIC and AMG symptom diagnosis from routine transmission service intent.',
+  },
+  'check-engine-light-dubai-guide': {
+    href: '/mercedes/problems/check-engine-light',
+    label: 'Mercedes check-engine light guide',
+    description: 'Continue with Mercedes-specific warning urgency, fault context and diagnostic steps.',
+  },
+  'engine-overheating-dubai-what-to-do': {
+    href: '/mercedes/problems/engine-overheating',
+    label: 'Mercedes overheating guide',
+    description: 'Review Mercedes cooling-circuit, fan, thermostat, pump and Dubai traffic considerations.',
+  },
+  'ferrari-488-service-dubai-guide': {
+    href: '/brands/ferrari-service-dubai/488',
+    label: 'Ferrari 488 model service information',
+    description: 'Continue to the model page for 488 powertrain, seven-speed dual-clutch, SCM-E, brake, diagnostic and Dubai ownership considerations.',
   },
 };
 

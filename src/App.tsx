@@ -14,7 +14,21 @@ const AboutUs = lazy(() => import("./pages/AboutUs"));
 const FAQPage = lazy(() => import("./pages/FAQPage"));
 const Blog = lazy(() => import("./pages/Blog"));
 const BlogArticleRouter = lazy(() => import("./pages/BlogArticleRouter"));
+const MercedesModelPage = lazy(() => import("./pages/MercedesModelPage"));
+const MercedesProblemsIndex = lazy(() => import("./pages/MercedesProblemsIndex"));
+const MercedesProblemGuidePage = lazy(() => import("./pages/MercedesProblemGuidePage"));
+const MercedesCaseStudyPage = lazy(() => import("./pages/MercedesCaseStudyPage"));
+const PorscheModelPage = lazy(() => import("./pages/PorscheModelPage"));
+const AudiModelPage = lazy(() => import("./pages/AudiModelPage"));
 const BmwModelPage = lazy(() => import("./pages/BmwModelPage"));
+const FerrariModelPage = lazy(() => import("./pages/FerrariModelPage"));
+const FerrariCaseStudyPage = lazy(() => import("./pages/FerrariCaseStudyPage"));
+const PorscheSystemsIndex = lazy(() => import("./pages/PorscheSystemsIndex"));
+const PorscheSystemGuidePage = lazy(() => import("./pages/PorscheSystemGuidePage"));
+const PorscheProblemsIndex = lazy(() => import("./pages/PorscheProblemsIndex"));
+const PorscheProblemGuidePage = lazy(() => import("./pages/PorscheProblemGuidePage"));
+const PorscheOwnershipGuidePage = lazy(() => import("./pages/PorscheOwnershipGuidePage"));
+const PorscheCaseStudyPage = lazy(() => import("./pages/PorscheCaseStudyPage"));
 const Brands = lazy(() => import("./pages/Brands"));
 const BrandPage = lazy(() => import("./pages/BrandPage"));
 const BrandServicePage = lazy(() => import("./pages/BrandServicePage"));
@@ -24,6 +38,8 @@ const NotFound = lazy(() => import("./pages/NotFound"));
 import LegacyRedirectHandler from "./components/LegacyRedirectHandler";
 import LocaleRedirect from "./components/LocaleRedirect";
 import Analytics from "./components/Analytics";
+import { audiModelPages, audiModelPath } from "./data/audiModelPages";
+import { ferrariModelPages } from "./data/ferrariModelPages";
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -116,6 +132,25 @@ export const AppContent = () => (
           <Route path="/ar/sitemap" element={<SitemapPage />} />
           <Route path="/ar/blog" element={<Blog />} />
           <Route path="/ar/blog/:slug" element={<BlogArticleRouter />} />
+          <Route path="/ar/mercedes/models/:slug" element={<Navigate to="/ar/brands/mercedes-benz-service-dubai" replace />} />
+          <Route path="/ar/mercedes/problems" element={<Navigate to="/ar/brands/mercedes-benz-service-dubai" replace />} />
+          <Route path="/ar/mercedes/problems/:slug" element={<Navigate to="/ar/brands/mercedes-benz-service-dubai" replace />} />
+          <Route path="/ar/mercedes/case-studies/:slug" element={<Navigate to="/ar/brands/mercedes-benz-service-dubai" replace />} />
+          <Route path="/ar/porsche/:slug" element={<Navigate to="/ar/brands/porsche-service-dubai" replace />} />
+          <Route path="/ar/porsche/911/:slug" element={<Navigate to="/ar/brands/porsche-service-dubai" replace />} />
+          <Route path="/ar/porsche/systems" element={<Navigate to="/ar/brands/porsche-service-dubai" replace />} />
+          <Route path="/ar/porsche/systems/:slug" element={<Navigate to="/ar/brands/porsche-service-dubai" replace />} />
+          <Route path="/ar/porsche/problems" element={<Navigate to="/ar/brands/porsche-service-dubai" replace />} />
+          <Route path="/ar/porsche/problems/:slug" element={<Navigate to="/ar/brands/porsche-service-dubai" replace />} />
+          <Route path="/ar/porsche/guides/:slug" element={<Navigate to="/ar/brands/porsche-service-dubai" replace />} />
+          <Route path="/ar/porsche/case-studies/:slug" element={<Navigate to="/ar/brands/porsche-service-dubai" replace />} />
+          {audiModelPages.map((model) => (
+            <Route key={`ar-audi-${model.slug}`} path={`/ar${audiModelPath(model)}`} element={<Navigate to="/ar/brands/audi-service-dubai" replace />} />
+          ))}
+          {ferrariModelPages.map((model) => (
+            <Route key={`ar-ferrari-${model.slug}`} path={`/ar${model.path}`} element={<Navigate to="/ar/brands/ferrari-service-dubai" replace />} />
+          ))}
+          <Route path="/ar/ferrari/case-studies/:slug" element={<Navigate to="/ar/brands/ferrari-service-dubai" replace />} />
           <Route path="/ar/brands" element={<Brands />} />
           <Route path="/ar/brands/:slug" element={<BrandPage />} />
           {mercedesBrandServiceRedirects.map(([serviceSlug, destination]) => (
@@ -161,6 +196,21 @@ export const AppContent = () => (
           <Route path="/sitemap" element={<SitemapPage />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:slug" element={<BlogArticleRouter />} />
+          <Route path="/mercedes/models/:slug" element={<MercedesModelPage />} />
+          <Route path="/mercedes/problems" element={<MercedesProblemsIndex />} />
+          <Route path="/mercedes/problems/:slug" element={<MercedesProblemGuidePage />} />
+          <Route path="/mercedes/case-studies/:slug" element={<MercedesCaseStudyPage />} />
+          <Route path="/porsche/:slug" element={<PorscheModelPage />} />
+          <Route path="/porsche/911/:slug" element={<PorscheModelPage />} />
+          <Route path="/porsche/systems" element={<PorscheSystemsIndex />} />
+          <Route path="/porsche/systems/:slug" element={<PorscheSystemGuidePage />} />
+          <Route path="/porsche/problems" element={<PorscheProblemsIndex />} />
+          <Route path="/porsche/problems/:slug" element={<PorscheProblemGuidePage />} />
+          <Route path="/porsche/guides/:slug" element={<PorscheOwnershipGuidePage />} />
+          <Route path="/porsche/case-studies/:slug" element={<PorscheCaseStudyPage />} />
+          {audiModelPages.map((model) => (
+            <Route key={`audi-${model.slug}`} path={audiModelPath(model)} element={<AudiModelPage />} />
+          ))}
           <Route path="/brands" element={<Brands />} />
           <Route path="/brands/:slug" element={<BrandPage />} />
           <Route path="/brands/bmw-service-dubai/x5" element={<BmwModelPage modelSlugOverride="x5" />} />
@@ -170,6 +220,10 @@ export const AppContent = () => (
           <Route path="/brands/bmw-service-dubai/m3" element={<BmwModelPage modelSlugOverride="m3" />} />
           <Route path="/brands/bmw-service-dubai/m4" element={<BmwModelPage modelSlugOverride="m4" />} />
           <Route path="/brands/bmw-service-dubai/m5" element={<BmwModelPage modelSlugOverride="m5" />} />
+          {ferrariModelPages.map((model) => (
+            <Route key={`ferrari-${model.slug}`} path={model.path} element={<FerrariModelPage />} />
+          ))}
+          <Route path="/ferrari/case-studies/:slug" element={<FerrariCaseStudyPage />} />
           {mercedesBrandServiceRedirects.map(([serviceSlug, destination]) => (
             <Route
               key={serviceSlug}

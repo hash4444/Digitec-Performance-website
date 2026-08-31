@@ -172,8 +172,8 @@ export const BRAND_PROFILES: Record<string, BrandProfile> = {
     shortName: 'Porsche',
     models: ['911 Carrera', '911 Turbo S', '911 GT3', 'Cayman', 'Cayenne', 'Panamera', 'Macan', 'Taycan'],
     diagnosticTool: 'Porsche-compatible diagnostics; coding or programming functions confirmed per vehicle',
-    engineFamily: '9A2 flat-six, M177 V8 biturbo (Cayenne / Panamera), and 4.0 GT flat-six',
-    engineCodes: ['9A2', 'MDG', 'M177', 'MCG', 'MDC.WA'],
+    engineFamily: 'Porsche flat-six, V6, V8 and electric powertrains; exact engine or drive-unit identification confirmed from the VIN',
+    engineCodes: ['9A2', 'MDG', 'MCG', 'MDC.WA'],
     oilSpec: 'Mobil 1 0W-40 A40 for 911, 5W-40 C40 for 9A2 turbo flat-six',
     oilIntervalKm: 15000,
     transmissionName: '7-speed PDK (7DT-45 and 7DT-70) and 8-speed Tiptronic S',
@@ -279,18 +279,18 @@ export const BRAND_PROFILES: Record<string, BrandProfile> = {
     brandName: 'Ferrari',
     shortName: 'Ferrari',
     models: ['488 GTB', '488 Pista', 'F8 Tributo', 'SF90 Stradale', 'Roma', 'Portofino M', '812 Superfast', '296 GTB', 'Purosangue'],
-    diagnosticTool: 'Ferrari-compatible diagnostics; SD3 or DEIS functions confirmed per vehicle',
+    diagnosticTool: 'Ferrari-compatible diagnostics; available SD3, DEIS or other functions are confirmed per vehicle and requested scope',
     engineFamily: 'F154 3.9 twin-turbo V8, F140 6.5 V12, and F163 3.0 twin-turbo V6 hybrid',
     engineCodes: ['F154', 'F140', 'F163'],
-    oilSpec: 'Shell Helix Ultra 5W-40 SP to Ferrari spec',
+    oilSpec: 'Ferrari-approved engine oil matched to the exact model, engine, year and market specification',
     oilIntervalKm: 12500,
-    transmissionName: 'Getrag 7-speed F1 DCT (7DL750) and 8-speed DCT (SF90, 296, Roma)',
-    transmissionFluid: 'transmission fluid matched to the exact Ferrari F1 DCT specification',
-    brakeSystem: 'CCM3 and CCM-R carbon-ceramic rotors with Brembo six-piston calipers',
-    suspensionType: 'SCM-E magnetorheological dampers with Ferrari Dynamic Enhancer',
-    acRefrigerant: 'R-1234yf on current V8, V6, and V12 platforms',
-    climateNote: 'F1 DCT clutch condition may warrant compatible data review where symptoms, use or service history indicate it.',
-    heritageLine: 'Digi-Tec has operated in Dubai since 2002; Ferrari-compatible work is confirmed from the vehicle and requested scope.',
+    transmissionName: 'single-clutch F1, seven-speed dual-clutch and eight-speed dual-clutch systems depending on model and generation',
+    transmissionFluid: 'vehicle- and gearbox-specific Ferrari transmission fluid',
+    brakeSystem: 'steel or Ferrari carbon-ceramic systems depending on model, generation and fitted option',
+    suspensionType: 'conventional or SCM/SCM-E adaptive magnetorheological damping depending on model and generation',
+    acRefrigerant: 'refrigerant specified on the exact vehicle label',
+    climateNote: 'Ferrari cooling, air-conditioning, battery and drivetrain concerns are assessed against the exact model, symptoms and service history.',
+    heritageLine: 'DIGI-TEC has operated in Dubai since 2002; Ferrari-compatible work is confirmed from the vehicle and requested scope.',
   },
   'bugatti-service-dubai': {
     brandSlug: 'bugatti-service-dubai',
@@ -885,6 +885,100 @@ const COMPOSERS: Record<ServiceKey, (p: BrandProfile) => Composed> = {
   'soft-close-door-installation': (p) => composeExtendedService(p, 'soft-close-door-installation'),
 };
 
+const ferrariBranding = (value: string) => value.split('Digi-Tec').join('DIGI-TEC');
+
+function refineFerrariContent(key: ServiceKey, composed: Composed): Composed {
+  const base: Composed = {
+    ...composed,
+    metaTitle: ferrariBranding(composed.metaTitle),
+    metaDescription: ferrariBranding(composed.metaDescription),
+    heroCopy: ferrariBranding(composed.heroCopy),
+    partsCopy: ferrariBranding(composed.partsCopy),
+    processSteps: composed.processSteps.map((step) => ({
+      ...step,
+      description: ferrariBranding(step.description),
+    })),
+    faqs: composed.faqs.map((faq) => ({
+      question: ferrariBranding(faq.question),
+      answer: ferrariBranding(faq.answer),
+    })),
+  };
+
+  if (key === 'oil-change') {
+    return {
+      ...base,
+      heroCopy: 'Ferrari oil approval, viscosity, quantity, filter and level procedure depend on the model, engine, year and market specification. DIGI-TEC verifies the VIN, handbook or applicable service data before quoting. Dubai use and service history are considered, but one universal oil grade or kilometre interval is not applied across the Ferrari range.',
+      symptoms: [
+        'A service reminder is due or the recorded maintenance history is incomplete',
+        'An oil-level or oil-pressure warning appears; an oil-pressure warning requires the engine to be stopped safely',
+        'Fresh oil is visible beneath the vehicle or around an inspected engine area',
+        'The oil specification or quantity used at the previous service cannot be verified',
+        'The vehicle has seen extended storage, repeated short trips or unusually demanding use',
+      ],
+      faqs: [
+        { question: 'How often should Ferrari engine oil be changed in Dubai?', answer: 'Follow the schedule for the exact model, year and market, then consider documented history, use and condition. DIGI-TEC does not apply one mileage or annual interval to every Ferrari.' },
+        { question: 'Which engine oil does my Ferrari need?', answer: 'The required approval, viscosity and quantity are checked against the exact model, engine, year and applicable vehicle information before service. A single grade cannot be assumed for the whole Ferrari range.' },
+        { question: 'Can you reset the Ferrari service reminder?', answer: 'A supported service reset can be included where compatible access is available and the agreed service has been completed. The function is confirmed for the vehicle first.' },
+        { question: 'How long does a Ferrari oil service take?', answer: 'Workshop time depends on access, parts, oil-level procedure and the agreed inspection or reset scope. The expected timing is confirmed after the vehicle details are checked.' },
+        { question: 'Can you investigate an oil leak at the same visit?', answer: 'Yes, an inspection can be requested. Cleaning, tracing or further testing may be needed before the source and repair scope can be confirmed.' },
+      ],
+    };
+  }
+
+  if (key === 'brake-repair') {
+    return {
+      ...base,
+      heroCopy: 'Ferrari brake hardware varies by model, generation and fitted option. The vehicle may use steel or carbon-ceramic components, so DIGI-TEC identifies the installed system and checks compatible measurement, handling, parts and fluid requirements before accepting repair work. Noise alone does not prove that a rotor or pad has failed.',
+      symptoms: [
+        'Brake wear or brake-system warning displayed in the instrument cluster',
+        'A change in pedal feel, braking confidence or stopping behaviour',
+        'Vibration through the pedal or steering wheel under repeatable braking conditions',
+        'Visible fluid loss, a fluid warning or an unusually soft pedal',
+        'New scraping, grinding or persistent noise that needs inspection',
+        'Concern about steel or carbon-ceramic component condition after storage, road use or track use',
+      ],
+      processSteps: [
+        { title: 'Identify the fitted brake system', description: 'The VIN, hardware and fitted option are checked before measurement methods, parts or procedures are proposed.' },
+        { title: 'Inspect pads, rotors, calipers and fluid', description: 'Condition and relevant measurements are reviewed without treating one visual mark or noise as proof of failure.' },
+        { title: 'Confirm parts and handling requirements', description: 'Steel and carbon-ceramic systems require different compatible components and handling. Availability and workshop scope are confirmed before work.' },
+        { title: 'Verify the agreed repair', description: 'Relevant leak, pedal, warning and road-test checks are completed as appropriate to the repair and vehicle condition.' },
+      ],
+    };
+  }
+
+  if (key === 'transmission-repair') {
+    return {
+      ...base,
+      heroCopy: 'Ferrari transmission architecture varies by model and generation, including single-clutch F1 systems, seven-speed dual-clutch systems and later eight-speed dual-clutch systems. DIGI-TEC identifies the fitted gearbox, reported symptom, fluid requirement and supported diagnostic data before recommending service or repair. Clutch or adaptation values are reviewed only where supported and technically meaningful for that system.',
+      symptoms: [
+        'Delayed or inconsistent engagement that can be reproduced and documented',
+        'Harsh, missed or unexpected shifts in a repeatable operating condition',
+        'A gearbox or transmission warning shown in the instrument cluster',
+        'Fluid leakage or contamination identified during inspection',
+        'Abnormal noise or vibration linked to a particular gear or manoeuvre',
+        'Driveability changing after heat, storage, battery work or previous transmission service',
+      ],
+    };
+  }
+
+  if (key === 'suspension-repair') {
+    return {
+      ...base,
+      heroCopy: 'Ferrari suspension differs across generations and may use conventional hardware or SCM/SCM-E adaptive magnetorheological damping. DIGI-TEC confirms the fitted system, symptom, visible condition, tyre influence and compatible diagnostic or calibration scope before proposing repair. Ferrari Dynamic Enhancer functions are model-specific and are not described as universal equipment.',
+      symptoms: [
+        'A suspension or adaptive-damping warning appears in the instrument cluster',
+        'Repeatable knocking, clunking or creaking over a particular road input',
+        'A change in ride quality, stability or response between supported drive settings',
+        'Visible damper leakage or damage found during inspection',
+        'Uneven tyre wear, alignment change or steering pull',
+        'Handling changed after an impact, tyre replacement or previous suspension work',
+      ],
+    };
+  }
+
+  return base;
+}
+
 export function getBrandServiceCombo(brandSlug: string, serviceSlug: string): BrandServiceCombo | undefined {
   const profile = BRAND_PROFILES[brandSlug];
   if (!profile) return undefined;
@@ -892,9 +986,12 @@ export function getBrandServiceCombo(brandSlug: string, serviceSlug: string): Br
   if (!(availableServices as string[]).includes(serviceSlug)) return undefined;
   const key = serviceSlug as ServiceKey;
   const meta = SERVICE_META[key];
-  const composed = COMPOSERS[key](profile);
+  const composed = brandSlug === 'ferrari-service-dubai'
+    ? refineFerrariContent(key, COMPOSERS[key](profile))
+    : COMPOSERS[key](profile);
   const isRoxSoftClose = brandSlug === 'rox-service-dubai' && key === 'soft-close-door-installation';
-  const whatsAppMessage = `Hi, I would like to enquire about ${profile.brandName} ${meta.label} at Digi-Tec Performance Centre.`;
+  const displayBrand = brandSlug === 'ferrari-service-dubai' ? 'DIGI-TEC' : 'Digi-Tec';
+  const whatsAppMessage = `Hi, I would like to enquire about ${profile.brandName} ${meta.label} at ${displayBrand} Performance Centre.`;
   return {
     brandSlug,
     serviceSlug: key,
@@ -929,8 +1026,8 @@ export function getBrandServiceCombo(brandSlug: string, serviceSlug: string): Br
         { question: 'Do you work on ROX 01 door latches and comfort-system wiring?', answer: 'Latch, actuator, wiring, sensor, alignment and related comfort-system concerns can be inspected. The supported repair scope is confirmed for the vehicle.' },
       ],
     } : {
-      metaTitle: `${profile.brandName} ${meta.name} Dubai | Digi-Tec`,
-      metaDescription: `${profile.brandName} ${meta.name.toLowerCase()} in Dubai with model-specific inspection, confirmed parts options and a clear quote at Digi-Tec, Al Quoz.`,
+      metaTitle: `${profile.brandName} ${meta.name} Dubai | ${displayBrand}`,
+      metaDescription: `${profile.brandName} ${meta.name.toLowerCase()} in Dubai with model-specific inspection, confirmed parts options and a clear quote at ${displayBrand}, Al Quoz.`,
     }),
   };
 }

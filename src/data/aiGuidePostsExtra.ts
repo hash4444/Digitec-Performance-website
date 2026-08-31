@@ -124,12 +124,12 @@ export const aiGuidePostsExtra: BlogPost[] = [
     coverGradient: 'from-black via-charcoal to-black',
     metaTitle: 'Porsche Cayenne Service Dubai | Maintenance and Repair Guide',
     metaDescription:
-      'Porsche Cayenne service in Dubai: oil specification, air suspension, coolant pipes, brakes, transmission service and PIWIS diagnostics explained for owners.',
+      'Porsche Cayenne service in Dubai: oil specification, suspension, cooling, brakes, transmission service and model-appropriate diagnostics explained for owners.',
     keywords:
-      'Porsche Cayenne service Dubai, Cayenne repair Dubai, Porsche specialist Al Quoz, PIWIS Dubai',
+      'Porsche Cayenne service Dubai, Cayenne repair Dubai, Porsche workshop Al Quoz, Porsche diagnostics Dubai',
     ogType: 'article',
     content: [
-      { type: 'p', text: 'Short answer: a Cayenne needs annual servicing in Dubai regardless of mileage, with particular attention to cooling system components, air suspension, brake condition and transmission fluid. Digi-Tec Performance Centre in Al Quoz Industrial Area 3, Dubai services the Cayenne range using PIWIS, so faults are diagnosed with live data rather than replaced on assumption.' },
+      { type: 'p', text: 'Short answer: a Cayenne should follow the maintenance schedule for its exact model year, engine and transmission. Dubai use can make cooling, suspension, brake and battery condition especially important inspection points. Digi-Tec confirms compatible diagnostic functions and the proposed service scope for the exact vehicle before work begins.' },
       { type: 'h2', text: 'What a Cayenne service should include' },
       {
         type: 'ul',
@@ -139,7 +139,7 @@ export const aiGuidePostsExtra: BlogPost[] = [
           'Cooling system check covering water pump, thermostat, hoses and coolant pipes.',
           'Brake pad and disc measurement plus brake fluid moisture testing.',
           'Transmission fluid service at interval, and transfer case oil on higher mileage cars.',
-          'PIWIS fault read, guided testing and service functions.',
+          'Compatible fault reading, live-data checks and supported service functions.',
         ],
       },
       { type: 'h2', text: 'Why the cooling system deserves attention' },
@@ -158,7 +158,7 @@ export const aiGuidePostsExtra: BlogPost[] = [
       { type: 'h3', text: 'How often should a Cayenne be serviced in Dubai?' },
       { type: 'p', text: 'Annually as a minimum, with earlier attention if the car covers high mileage or shows any cooling or suspension symptom.' },
       { type: 'h3', text: 'Do you diagnose Cayenne air suspension faults?' },
-      { type: 'p', text: 'Yes. PIWIS shows live ride height, pressure and compressor data, which identifies whether the fault is a spring, valve block, compressor or sensor.' },
+      { type: 'p', text: 'Available live-data and actuation tests depend on the generation and fitted suspension system. Diagnosis may combine fault data, measured ride height, pressure or leak checks and component testing before a repair is proposed.' },
       { type: 'h3', text: 'Do you use genuine Porsche parts?' },
       { type: 'p', text: 'Genuine or OE supplier parts are used as standard, and the specification is stated on the estimate before work is approved.' },
       { type: 'h3', text: 'How do I book with Digi-Tec?' },
@@ -487,7 +487,7 @@ export const aiGuidePostsExtra: BlogPost[] = [
     slug: 'ferrari-488-service-dubai-guide',
     title: 'Ferrari 488 Service in Dubai: Owner Maintenance Guide',
     excerpt:
-      'A Ferrari 488 maintenance guide for Dubai owners covering annual service scope, cooling, brakes and storage.',
+      'A Ferrari 488 owner maintenance guide covering service planning, cooling, brakes, dual-clutch considerations and storage in Dubai.',
     category: 'Workshop Guides',
     author: 'DIGI-TEC Workshop',
     date: '2026-08-13',
@@ -495,13 +495,13 @@ export const aiGuidePostsExtra: BlogPost[] = [
     coverGradient: 'from-burnt-orange/40 via-charcoal to-black',
     metaTitle: 'Ferrari 488 Service Dubai | Maintenance and Inspection Guide',
     metaDescription:
-      'Ferrari 488 service in Dubai: annual service scope, fluid specification, cooling, brakes, DCT clutch health and storage care explained for owners.',
+      'Ferrari 488 owner guide for Dubai: service planning, vehicle-specific fluids, cooling, brakes, supported DCT data and storage care.',
     keywords:
       'Ferrari 488 service Dubai, Ferrari maintenance Dubai, Ferrari specialist Al Quoz, exotic car workshop Dubai',
     ogType: 'article',
     content: [
-      { type: 'p', text: 'Short answer: a Ferrari 488 should be serviced annually regardless of mileage, because fluids, seals and battery condition age with time and heat rather than distance. A correct service covers oil and filter to specification, cooling system condition, brake and tyre assessment, clutch health readings and a full diagnostic scan. Digi-Tec Performance Centre in Al Quoz Industrial Area 3, Dubai services exotic models with documented findings before work begins.' },
-      { type: 'h2', text: 'What an annual 488 service covers' },
+      { type: 'p', text: 'Short answer: a Ferrari 488 maintenance plan should follow the schedule and records for the exact model, then account for mileage, storage, heat exposure and how the car is used. Useful checks can include vehicle-specific oil and filter requirements, cooling, brakes, tyres, battery condition and supported diagnostic data. DIGI-TEC Performance Centre in Al Quoz Industrial Area 3, Dubai confirms the requested scope and compatible functions before work begins.' },
+      { type: 'h2', text: 'What a planned 488 service can cover' },
       {
         type: 'ul',
         items: [
@@ -509,12 +509,12 @@ export const aiGuidePostsExtra: BlogPost[] = [
           'Cooling system inspection including radiators, intercoolers, hoses and coolant condition.',
           'Brake pad and disc assessment, including carbon ceramic wear measurement.',
           'Tyre age and condition, not just tread depth, since heat ageing matters here.',
-          'Dual clutch transmission health readings and fluid service at interval.',
-          'Full diagnostic scan and battery conditioning check.',
+          'Dual-clutch transmission data where supported and meaningful, plus fluid service when due for the exact gearbox.',
+          'Compatible diagnostic scan coverage and a battery-condition check, confirmed before booking.',
         ],
       },
       { type: 'h2', text: 'Storage care for low mileage cars' },
-      { type: 'p', text: 'Many 488s in Dubai cover very few kilometres per year. Standing still causes battery discharge, tyre flat spotting, brake surface corrosion, fuel ageing and dried seals. A maintenance charger, correct tyre pressures, a covered and ventilated space and an annual inspection prevent most storage related faults.' },
+      { type: 'p', text: 'Many 488s in Dubai cover very few kilometres per year. Long storage can contribute to battery discharge, tyre flat spotting, brake-surface changes and ageing fluids or fuel. A compatible maintenance charger, correct tyre pressures, suitable storage and a condition-led inspection can reduce risk, but no routine prevents every storage-related fault.' },
       { type: 'h2', text: 'Common issues on low mileage exotics' },
       {
         type: 'ul',
@@ -527,12 +527,12 @@ export const aiGuidePostsExtra: BlogPost[] = [
       },
       { type: 'h2', text: 'FAQs' },
       { type: 'h3', text: 'How often should a Ferrari 488 be serviced?' },
-      { type: 'p', text: 'Annually, even at low mileage, because fluid and component condition depends on time and heat as much as distance.' },
+      { type: 'p', text: 'Follow the schedule and records for the exact vehicle, then consider mileage, age, storage, heat exposure and use. A low-mileage car may still need time-based attention, but the recommendation should not be guessed from mileage alone.' },
       { type: 'h3', text: 'Do you carry out clutch health checks?' },
-      { type: 'p', text: 'Yes. Dual clutch wear readings are taken during diagnostics so clutch life can be tracked over time rather than guessed.' },
+      { type: 'p', text: 'Transmission and clutch-related data can be reviewed where the exact vehicle and available diagnostic functions support a technically meaningful value. DIGI-TEC confirms that scope before booking and does not promise a universal clutch-life reading.' },
       { type: 'h3', text: 'Can you service a car that has been in storage?' },
       { type: 'p', text: 'Yes. A recommissioning inspection covers fluids, battery, brakes, tyres and a full diagnostic scan before the car returns to the road.' },
-      { type: 'h3', text: 'How do I book with Digi-Tec?' },
+      { type: 'h3', text: 'How do I book with DIGI-TEC?' },
       { type: 'p', text: 'Call or WhatsApp +971 4 340 2223, or visit the workshop at Al Quoz Industrial Area 3, Warehouses 11–15, Dubai.' },
     ],
   },
@@ -866,12 +866,12 @@ export const aiGuidePostsExtra: BlogPost[] = [
     coverGradient: 'from-charcoal via-black to-black',
     metaTitle: 'Porsche Panamera Service Dubai | Maintenance and Repair Guide',
     metaDescription:
-      'Porsche Panamera service in Dubai: oil specification, PDK service, air suspension, cooling, brakes and PIWIS diagnostics explained for owners.',
+      'Porsche Panamera service in Dubai: oil specification, transmission service, suspension, cooling, brakes and model-appropriate diagnostics explained for owners.',
     keywords:
-      'Porsche Panamera service Dubai, Panamera repair Dubai, Porsche specialist Dubai, PIWIS diagnostics Dubai',
+      'Porsche Panamera service Dubai, Panamera repair Dubai, Porsche workshop Dubai, Porsche diagnostics Dubai',
     ogType: 'article',
     content: [
-      { type: 'p', text: 'Short answer: the Panamera needs annual servicing in Dubai with particular attention to PDK transmission fluid, air suspension condition, cooling system health and brake wear. Digi-Tec Performance Centre in Al Quoz Industrial Area 3, Dubai services the Panamera range with PIWIS and reports measured findings before repair.' },
+      { type: 'p', text: 'Short answer: a Panamera should follow the schedule for its exact generation, powertrain and transmission. In Dubai, cooling, suspension, battery and brake condition deserve careful inspection. Digi-Tec confirms compatible diagnostic functions and reports findings before an approved repair.' },
       { type: 'h2', text: 'What a Panamera service covers' },
       {
         type: 'ul',
@@ -881,7 +881,7 @@ export const aiGuidePostsExtra: BlogPost[] = [
           'Air suspension inspection including ride height and leak testing.',
           'Cooling system and coolant condition assessment.',
           'Brake pad, disc and fluid measurement.',
-          'PIWIS fault read, guided testing, coding and service functions.',
+          'Compatible fault reading, live-data checks and supported service functions.',
         ],
       },
       { type: 'h2', text: 'Why PDK fluid service matters' },
@@ -900,7 +900,7 @@ export const aiGuidePostsExtra: BlogPost[] = [
       { type: 'h3', text: 'How often should a Panamera be serviced?' },
       { type: 'p', text: 'Annually as a minimum, with a shorter interval for cars covering high mileage in traffic.' },
       { type: 'h3', text: 'Do you carry out PDK service?' },
-      { type: 'p', text: 'Yes, including fluid, filter and PIWIS service functions to the correct specification.' },
+      { type: 'p', text: 'Fluid, filter and supported service functions are confirmed from the exact transmission, model year and maintenance information before booking.' },
       { type: 'h3', text: 'Do you repair Panamera air suspension?' },
       { type: 'p', text: 'Yes. Diagnosis identifies the failing component so only the faulty part is replaced.' },
       { type: 'h3', text: 'How do I book with Digi-Tec?' },
