@@ -14,6 +14,7 @@ const AboutUs = lazy(() => import("./pages/AboutUs"));
 const FAQPage = lazy(() => import("./pages/FAQPage"));
 const Blog = lazy(() => import("./pages/Blog"));
 const BlogArticleRouter = lazy(() => import("./pages/BlogArticleRouter"));
+const BmwModelPage = lazy(() => import("./pages/BmwModelPage"));
 const Brands = lazy(() => import("./pages/Brands"));
 const BrandPage = lazy(() => import("./pages/BrandPage"));
 const BrandServicePage = lazy(() => import("./pages/BrandServicePage"));
@@ -162,6 +163,13 @@ export const AppContent = () => (
           <Route path="/blog/:slug" element={<BlogArticleRouter />} />
           <Route path="/brands" element={<Brands />} />
           <Route path="/brands/:slug" element={<BrandPage />} />
+          <Route path="/brands/bmw-service-dubai/x5" element={<BmwModelPage modelSlugOverride="x5" />} />
+          <Route path="/brands/bmw-service-dubai/x6" element={<BmwModelPage modelSlugOverride="x6" />} />
+          <Route path="/brands/bmw-service-dubai/3-series" element={<BmwModelPage modelSlugOverride="3-series" />} />
+          <Route path="/brands/bmw-service-dubai/5-series" element={<BmwModelPage modelSlugOverride="5-series" />} />
+          <Route path="/brands/bmw-service-dubai/m3" element={<BmwModelPage modelSlugOverride="m3" />} />
+          <Route path="/brands/bmw-service-dubai/m4" element={<BmwModelPage modelSlugOverride="m4" />} />
+          <Route path="/brands/bmw-service-dubai/m5" element={<BmwModelPage modelSlugOverride="m5" />} />
           {mercedesBrandServiceRedirects.map(([serviceSlug, destination]) => (
             <Route
               key={serviceSlug}

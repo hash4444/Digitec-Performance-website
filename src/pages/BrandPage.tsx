@@ -40,6 +40,7 @@ import porscheGt3rsWorkshop from '@/assets/porsche-gt3rs-workshop-dubai.jpg';
 import maybachWorkshop from '@/assets/maybach-workshop-dubai.jpg';
 import mercedesAmgEngine from '@/assets/mercedes-amg-engine-repair-dubai.jpg';
 import g63BrabusFinishedFront from '@/assets/g63-brabus-g800-finished-front.jpg';
+import BmwKnowledgeHub from '@/components/BmwKnowledgeHub';
 
 const mercedesWorkshop = '/images/mercedes-repair-dubai-hero.jpg';
 const MERCEDES_META_TITLE = 'Mercedes Repair & Service Dubai | Digi-Tec Specialists';
@@ -695,6 +696,8 @@ const BrandPage = () => {
                 ))}
           </div>
         </div>
+      {isBmwServiceHub && !isArabic && <BmwKnowledgeHub />}
+
       </section>
 
       {/* Brand-specific workshop capability */}
