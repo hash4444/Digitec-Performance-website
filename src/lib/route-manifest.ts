@@ -80,7 +80,6 @@ const englishRoutes: Array<[string, RouteFamily]> = [
     ),
   ...bestWorkshopPages.map((page) => [`/${page.slug}`, 'workshop-guide'] as [string, RouteFamily]),
 ];
-
 // Phase-one Mercedes topical pages are English-only until equivalent Arabic
 // content exists. Existing Arabic blog versions remain untouched.
 const englishOnlyRoutes: Array<[string, RouteFamily]> = [
