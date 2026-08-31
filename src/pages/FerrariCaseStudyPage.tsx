@@ -34,6 +34,7 @@ const FerrariCaseStudyPage = () => {
           url: path,
           headline: study.title,
           description: `${study.vehicle}: ${study.customerComplaint}`,
+          datePublished: '2026-08-31',
           author: 'DIGI-TEC Workshop',
           authorType: 'Organization',
           image: study.images[0]?.src,

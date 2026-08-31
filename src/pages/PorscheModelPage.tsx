@@ -8,7 +8,7 @@ import { PORSCHE_HUB_PATH } from '@/data/porscheArchitecture';
 import { getPorscheModelByPath, porscheModelPages, type PorscheModelSection } from '@/data/porscheModelPages';
 import { useSeo } from '@/hooks/use-seo';
 import { stripLocalePrefix } from '@/i18n/use-locale';
-import { buildBreadcrumb, buildService, buildWebPage, pageGraph, SITE_URL } from '@/lib/schema';
+import { buildArticle, buildBreadcrumb, buildService, buildWebPage, pageGraph, SITE_URL } from '@/lib/schema';
 
 const SystemSection = ({ section }: { section: PorscheModelSection }) => (
   <section className="card-premium rounded-2xl p-5 sm:p-7">
@@ -29,12 +29,15 @@ const PorscheModelPage = () => {
     ...(model.parentPath ? [{ name: model.parentLabel ?? 'Model', url: `${SITE_URL}${model.parentPath}` }] : []),
     { name: model.shortName, url: canonical },
   ]) : undefined;
+  const isBlogPath = path.startsWith('/blog/');
   const jsonLd = model ? pageGraph([
-    buildWebPage({ url: canonical, name: model.h1, description: model.metaDescription, breadcrumbId: `${canonical}#breadcrumb`, mainEntityId: `${canonical}#service` }),
+    buildWebPage({ url: canonical, name: model.h1, description: model.metaDescription, type: isBlogPath ? 'ItemPage' : undefined, breadcrumbId: `${canonical}#breadcrumb`, mainEntityId: isBlogPath ? `${canonical}#article` : `${canonical}#service` }),
     breadcrumb!,
     buildService({ url: canonical, name: model.h1, serviceType: `${model.name} inspection, maintenance and repair`, description: model.metaDescription, brand: 'Porsche', areaServed: ['Dubai'] }),
+    ...(isBlogPath ? [buildArticle({ url: canonical, headline: model.h1, description: model.metaDescription, datePublished: '2026-08-31', author: 'DIGI-TEC Workshop', section: 'Porsche Ownership' })] : []),
   ]) : undefined;
-  useSeo({ title: model?.metaTitle ?? 'Porsche Service Dubai | Digi-Tec', description: model?.metaDescription ?? 'Porsche service in Dubai.', canonical, noindex: !model, jsonLd });
+  useSeo({ title: model?.metaTitle ?? 'Porsche Service Dubai | Digi-Tec', description: model?.metaDescription ?? 'Porsche service in Dubai.', canonical, noindex: !model, jsonLd, hasArabicVersion: isBlogPath });
+
   if (!model) return <Navigate to={PORSCHE_HUB_PATH} replace />;
   const whatsapp = `https://wa.me/97143402223?text=${encodeURIComponent(`Hi Digi-Tec, I would like to arrange a ${model.shortName} inspection.\n\nModel year: \nVIN: \nMileage: \nWarning or symptom: `)}`;
   const siblings = porscheModelPages.filter((item) => item.path !== model.path && !item.parentPath);
