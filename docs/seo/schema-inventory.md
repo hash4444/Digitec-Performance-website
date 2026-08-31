@@ -20,14 +20,14 @@ Generated from the production build on 2026-08-20. The CSV in this folder contai
 ## Route counts
 
 - about: 2
-- article: 211
+- article: 209
 - blog-hub: 2
 - brand: 98
 - brand-service: 984
 - brands-hub: 2
 - faq: 2
 - home: 2
-- html-sitemap: 3
+- html-sitemap: 5
 - service: 111
 - services-hub: 2
 - tuning: 2
@@ -36,5 +36,5 @@ Generated from the production build on 2026-08-20. The CSV in this folder contai
 
 ## Validation
 
-- Errors: 130
+- Errors: 18
 - Warnings: 0
