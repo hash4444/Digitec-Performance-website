@@ -125,6 +125,12 @@ export const brands: Brand[] = [
     ],
     faqs: [
       { q: 'How often should a BMW be serviced in Dubai?', a: serviceIntervalAnswer('BMW') },
+      { q: 'What does BMW Condition Based Service mean?', a: 'Condition Based Service uses time, mileage and vehicle data to estimate when monitored items are due. It does not replace inspection, service-history review or diagnosis of a warning or symptom.' },
+      { q: 'Can you diagnose a BMW drivetrain malfunction?', a: 'Yes. The exact warning and stored faults are reviewed with live data and physical tests because engine, boost, ignition, fuel, voltage, transmission or driveline conditions can trigger the message.' },
+      { q: 'Does a BMW ZF 8HP need servicing?', a: 'The appropriate service decision depends on the fitted 8HP variant, BMW and transmission information, history, condition and symptoms. The gearbox is identified before fluid, filter or procedure is proposed.' },
+      { q: 'Why is my BMW losing coolant?', a: 'Possible causes include an external leak, expansion tank, hose, radiator, thermostat housing, water pump or an internal engine concern. Avoid repeated top-ups without finding the source, and stop if the engine overheats.' },
+      { q: 'Can BMW batteries be replaced and registered?', a: 'Battery replacement and registration can be assessed. The replacement specification and supported registration function depend on the exact vehicle, energy-management system and installed battery.' },
+      { q: 'What BMW models use the B58?', a: 'B58 applications include selected 340i and M340i, 440i and M440i, 540i, 740i, X3 M40i, X4 M40i and X5 40i variants. Fitment varies by generation and market, so the VIN should confirm the exact engine.' },
       { q: 'Do you use genuine BMW parts?', a: partsAvailabilityAnswer('BMW') },
       { q: 'How long does a typical BMW service take?', a: serviceTimingAnswer('BMW') },
       { q: 'Can you code iDrive features and retrofits?', a: 'Coding or retrofit support depends on the exact head unit, software level, vehicle order, hardware and required access. Compatibility and available functions are confirmed from the VIN and vehicle before work is accepted.' },

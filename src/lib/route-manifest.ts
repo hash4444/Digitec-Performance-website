@@ -8,6 +8,7 @@ import {
   getAvailableServiceKeys,
 } from '@/data/brandServices';
 import { bestWorkshopPages } from '@/data/bestWorkshopPages';
+import { BMW_HUB_PATH, bmwModelPages } from '@/data/bmwModelPages';
 import { isIndexableContentPath } from '@/lib/route-policy';
 
 export type RouteFamily =
@@ -68,6 +69,7 @@ const englishRoutes: Array<[string, RouteFamily]> = [
     ),
   ...bestWorkshopPages.map((page) => [`/${page.slug}`, 'workshop-guide'] as [string, RouteFamily]),
 ];
+const bmwModelRoutes = bmwModelPages.map((model) => [`${BMW_HUB_PATH}/${model.slug}`, 'service'] as [string, RouteFamily]);
 
 const routeMap = new Map<string, PublicRoute>();
 for (const [path, family] of englishRoutes) {
@@ -79,6 +81,15 @@ for (const [path, family] of englishRoutes) {
       lastmod: SEO_RELEASE_DATE,
     });
   }
+}
+
+for (const [path, family] of bmwModelRoutes) {
+  routeMap.set(path, {
+    path,
+    family,
+    indexable: isIndexableContentPath(path),
+    lastmod: SEO_RELEASE_DATE,
+  });
 }
 
 export const publicRoutes = [...routeMap.values()].sort((a, b) =>
