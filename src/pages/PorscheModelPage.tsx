@@ -8,7 +8,7 @@ import { PORSCHE_HUB_PATH } from '@/data/porscheArchitecture';
 import { getPorscheModelByPath, porscheModelPages, type PorscheModelSection } from '@/data/porscheModelPages';
 import { useSeo } from '@/hooks/use-seo';
 import { stripLocalePrefix } from '@/i18n/use-locale';
-import { buildBreadcrumb, buildService, buildWebPage, pageGraph, SITE_URL } from '@/lib/schema';
+import { buildArticle, buildBreadcrumb, buildService, buildWebPage, pageGraph, SITE_URL } from '@/lib/schema';
 
 const SystemSection = ({ section }: { section: PorscheModelSection }) => (
   <section className="card-premium rounded-2xl p-5 sm:p-7">
