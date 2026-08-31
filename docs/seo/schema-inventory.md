@@ -36,5 +36,5 @@ Generated from the production build on 2026-08-20. The CSV in this folder contai
 
 ## Validation
 
-- Errors: 18
+- Errors: 0
 - Warnings: 0
