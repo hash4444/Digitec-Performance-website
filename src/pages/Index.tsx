@@ -89,8 +89,8 @@ const Index = () => {
       <AnswerBlock
         question={isArabic ? 'ما هو مركز ديجي-تك بيرفورمانس؟' : 'What is Digi-Tec Performance Centre?'}
         answer={isArabic
-          ? 'مركز ديجي-تك بيرفورمانس ورشة سيارات مستقلة في دبي، تأسست عام 2002 وتقع في القوز الصناعية 3، المستودعات 11–15. تشمل فئات الخدمة المعروضة الصيانة الدورية وفحص السيارة وتشخيص الأعطال والإصلاحات الميكانيكية والكهربائية وخدمات المحرك وناقل الحركة والتعليق والتبريد والفرامل وبرمجة الوحدات وأعمال الهيكل والطلاء والعناية بالسيارة واستشارات مشاريع الأداء. يمكن مناقشة السيارة والأعراض والعمل المطلوب قبل الاتفاق على نطاق الإصلاح. للاتصال أو واتساب: +971 4 340 2223.'
-          : 'Digi-Tec Performance Centre is an independent car workshop in Dubai, established in 2002 and located in Al Quoz Industrial Area 3, Warehouses 11–15. Listed service categories include scheduled maintenance, vehicle inspection and diagnostics, mechanical and electrical repair, engine, transmission, suspension, cooling and brake work, module programming, body repair, paintwork, detailing and performance-project consultation. Owners can discuss the vehicle, symptoms and requested work before agreeing the repair scope. Call or WhatsApp +971 4 340 2223.'}
+          ? 'مركز ديجي-تك بيرفورمانس ورشة سيارات مستقلة في دبي، تأسست عام 2002 وتقع في القوز الصناعية 3. تشمل فئات الخدمة المعروضة الصيانة الدورية وفحص السيارة وتشخيص الأعطال والإصلاحات الميكانيكية والكهربائية وخدمات المحرك وناقل الحركة والتعليق والتبريد والفرامل وبرمجة الوحدات وأعمال الهيكل والطلاء والعناية بالسيارة واستشارات مشاريع الأداء. يمكن مناقشة السيارة والأعراض والعمل المطلوب قبل الاتفاق على نطاق الإصلاح. للاتصال أو واتساب: +971 4 340 2223.'
+          : 'Digi-Tec Performance Centre is an independent car workshop in Dubai, established in 2002 and located in Al Quoz Industrial Area 3. Listed service categories include scheduled maintenance, vehicle inspection and diagnostics, mechanical and electrical repair, engine, transmission, suspension, cooling and brake work, module programming, body repair, paintwork, detailing and performance-project consultation. Owners can discuss the vehicle, symptoms and requested work before agreeing the repair scope. Call or WhatsApp +971 4 340 2223.'}
         facts={isArabic ? [
           'تأسست في دبي منذ عام 2002',
           'فحص وخدمة سيارات مرسيدس-بنز والسيارات الأوروبية والفاخرة',
@@ -100,7 +100,7 @@ const Index = () => {
           'إصلاح الهيكل ودهان السيارة وترميم السيارات',
           'استشارات مشاريع الأداء بحسب السيارة والاستخدام المطلوب',
           'شرح نتائج الفحص والعمل المقترح قبل بدء الإصلاح',
-          'الموقع: القوز الصناعية 3، المستودعات 11–15، دبي',
+          'الموقع: القوز الصناعية 3، دبي',
           'الهاتف والواتساب: +971 4 340 2223',
         ] : [
           'Established in Dubai since 2002',
@@ -111,7 +111,7 @@ const Index = () => {
           'Body repair, paintwork and vehicle restoration',
           'Vehicle-specific performance-project consultation',
           'Inspection findings and recommended work explained before repairs begin',
-          'Al Quoz Industrial Area 3, Warehouses 11–15, Dubai',
+          'Al Quoz Industrial Area 3, Dubai',
           'Call or WhatsApp +971 4 340 2223',
         ]}
       />

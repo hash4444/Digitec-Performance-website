@@ -47,7 +47,7 @@ export const ChatWindow: React.FC<ChatWindowProps> = ({ isOpen, onClose }) => {
       let response = '';
       switch (action) {
         case 'book':
-          response = 'To discuss a workshop appointment, call or WhatsApp +971 4 340 2223 and share the model, year and requested work. Digi-Tec is in Al Quoz Industrial Area 3, Warehouses 11–15, Dubai.';
+          response = 'To discuss a workshop appointment, call or WhatsApp +971 4 340 2223 and share the model, year and requested work. Digi-Tec is in Al Quoz Industrial Area 3, Dubai.';
           break;
         case 'question':
           response = 'What would you like to know about the listed maintenance, inspection, repair or performance-project services? Coverage is confirmed for the exact vehicle before booking.';

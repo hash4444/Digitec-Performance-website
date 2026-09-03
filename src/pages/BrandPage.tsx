@@ -576,7 +576,7 @@ const BrandPage = () => {
                 </a>
                 {(isPriorityLeadBrand || isRangeRoverServiceHub || isDefenderServiceHub) && (
                   <a
-                    href="https://maps.google.com/?q=Al+Quoz+Industrial+Area+3+Warehouse+No.11-15+Dubai"
+                    href="https://maps.google.com/?q=Al+Quoz+Industrial+Area+3+Dubai"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="btn-secondary"
@@ -610,7 +610,7 @@ const BrandPage = () => {
                 <a href={whatsappHref} target="_blank" rel="noopener noreferrer" className="btn-primary">
                   <MessageCircle className="h-5 w-5" /> Request an Inspection
                 </a>
-                <a href="https://maps.google.com/?q=Al+Quoz+Industrial+Area+3+Warehouse+No.11-15+Dubai" target="_blank" rel="noopener noreferrer" className="btn-secondary">
+                <a href="https://maps.google.com/?q=Al+Quoz+Industrial+Area+3+Dubai" target="_blank" rel="noopener noreferrer" className="btn-secondary">
                   <MapPin className="h-5 w-5" /> Get Directions
                 </a>
               </div>
@@ -671,7 +671,7 @@ const BrandPage = () => {
                   Call before travelling so we can confirm the right inspection slot for your Range Rover, Sport, Velar or Evoque and prepare the appropriate JLR diagnostic equipment.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-3 mt-6">
-                  <a href="https://maps.google.com/?q=Al+Quoz+Industrial+Area+3+Warehouse+No.11-15+Dubai" target="_blank" rel="noopener noreferrer" className="btn-primary">
+                  <a href="https://maps.google.com/?q=Al+Quoz+Industrial+Area+3+Dubai" target="_blank" rel="noopener noreferrer" className="btn-primary">
                     <MapPin className="w-5 h-5" /> Get Directions
                   </a>
                   <a href="tel:+97143402223" className="btn-secondary"><Phone className="w-5 h-5" /> Call the Workshop</a>
@@ -1108,7 +1108,7 @@ const BrandPage = () => {
                   <div className="bg-black/30 border border-white/10 rounded-xl p-4">
                     <MapPin className="w-5 h-5 text-burnt-orange mb-3" />
                     <h3 className="text-off-white font-bold">Al Quoz Industrial Area 3</h3>
-                    <p className="text-gray-400 text-sm mt-2">Warehouses 11–15, Dubai, with a direct Google Maps route from this page.</p>
+                    <p className="text-gray-400 text-sm mt-2">Dubai, with a direct Google Maps route from this page.</p>
                   </div>
                   <div className="bg-black/30 border border-white/10 rounded-xl p-4">
                     <CheckCircle2 className="w-5 h-5 text-burnt-orange mb-3" />
@@ -1140,8 +1140,8 @@ const BrandPage = () => {
                 <div className="text-xs sm:text-sm text-gray-400 mt-1">{isArabic ? 'ورشة دبي' : 'Dubai Workshop'}</div>
               </div>
               <div>
-                <div className="text-2xl sm:text-4xl font-black text-burnt-orange">11–15</div>
-                <div className="text-xs sm:text-sm text-gray-400 mt-1">{isArabic ? 'المستودعات' : 'Warehouses'}</div>
+                <div className="text-2xl sm:text-4xl font-black text-burnt-orange">40,000</div>
+                <div className="text-xs sm:text-sm text-gray-400 mt-1">{isArabic ? 'قدم مربع مساحة المنشأة' : 'Sq ft facility'}</div>
               </div>
             </div>
               </>

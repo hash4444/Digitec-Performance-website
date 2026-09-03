@@ -64,8 +64,8 @@ const AboutUs = () => {
       <AnswerBlock
         question={isArabic ? 'لماذا يختار الملاك ديجي-تك في دبي؟' : 'Why do owners choose Digi-Tec in Dubai?'}
         answer={isArabic
-          ? 'ديجي-تك ورشة مستقلة في دبي منذ 2002. يمكن للملاك حجز فحص خاص بالسيارة ومناقشة الصيانة والإصلاح الميكانيكي أو الكهربائي وأعمال الهيكل والعناية بالسيارة أو مشروع الأداء قبل تحديد نطاق العمل. الموقع: القوز الصناعية 3، المستودعات 11-15، دبي.'
-          : 'Digi-Tec is an independent Dubai workshop established in 2002. Owners can book a vehicle-specific inspection and discuss maintenance, mechanical or electrical repair, bodywork, detailing or a performance project before the work scope is confirmed. The workshop is in Al Quoz Industrial Area 3, Warehouses 11-15, Dubai.'}
+          ? 'ديجي-تك ورشة مستقلة في دبي منذ 2002. يمكن للملاك حجز فحص خاص بالسيارة ومناقشة الصيانة والإصلاح الميكانيكي أو الكهربائي وأعمال الهيكل والعناية بالسيارة أو مشروع الأداء قبل تحديد نطاق العمل. الموقع: القوز الصناعية 3، دبي.'
+          : 'Digi-Tec is an independent Dubai workshop established in 2002. Owners can book a vehicle-specific inspection and discuss maintenance, mechanical or electrical repair, bodywork, detailing or a performance project before the work scope is confirmed. The workshop is in Al Quoz Industrial Area 3, Dubai.'}
         facts={isArabic ? [
           'تأسست في دبي عام 2002',
           'فحص خاص بالسيارة قبل تحديد نطاق الإصلاح',
@@ -98,7 +98,7 @@ const AboutUs = () => {
                 {isArabic ? 'يبدأ الموعد بتحديد السيارة والمشكلة أو الخدمة المطلوبة. بعد الفحص يمكن مناقشة النتائج والعمل المقترح قبل الاتفاق على نطاق الإصلاح.' : 'An appointment starts by identifying the vehicle and the concern or requested service. After inspection, the findings and proposed work can be discussed before the repair scope is agreed.'}
               </p>
               <p className="text-white/60 text-sm sm:text-base leading-relaxed">
-                {isArabic ? 'تقع الورشة في القوز الصناعية 3، المستودعات 11–15، دبي. للحجز أو الاستفسار اتصل أو أرسل رسالة واتساب إلى +971 4 340 2223.' : 'The workshop is at Al Quoz Industrial Area 3, Warehouses 11–15, Dubai. To book or ask about a service, call or WhatsApp +971 4 340 2223.'}
+                {isArabic ? 'تقع الورشة في القوز الصناعية 3، دبي. للحجز أو الاستفسار اتصل أو أرسل رسالة واتساب إلى +971 4 340 2223.' : 'The workshop is at Al Quoz Industrial Area 3, Dubai. To book or ask about a service, call or WhatsApp +971 4 340 2223.'}
               </p>
             </motion.div>
             <motion.div
@@ -110,7 +110,7 @@ const AboutUs = () => {
               {[
                 { value: '2002', label: isArabic ? 'تأسست في دبي' : 'Established in Dubai' },
                 { value: isArabic ? 'القوز 3' : 'Al Quoz 3', label: isArabic ? 'موقع الورشة' : 'Workshop location' },
-                { value: '11–15', label: isArabic ? 'أرقام المستودعات' : 'Warehouse numbers' },
+                { value: '40,000', label: isArabic ? 'قدم مربع مساحة المنشأة' : 'Sq ft facility' },
                 { value: isArabic ? 'دبي' : 'Dubai', label: isArabic ? 'الإمارات العربية المتحدة' : 'United Arab Emirates' },
               ].map((stat) => (
                 <div key={stat.label} className="bg-white/[0.03] border border-white/[0.06] rounded-2xl p-5 text-center">
@@ -329,7 +329,7 @@ const AboutUs = () => {
           </motion.div>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
             {[
-              { icon: MapPin, title: isArabic ? 'الموقع' : 'Location', text: isArabic ? 'القوز الصناعية 3، المستودعات 11–15، دبي' : 'Al Quoz Industrial Area 3, Warehouses 11–15, Dubai' },
+              { icon: MapPin, title: isArabic ? 'الموقع' : 'Location', text: isArabic ? 'القوز الصناعية 3، دبي' : 'Al Quoz Industrial Area 3, Dubai' },
               { icon: Phone, title: isArabic ? 'الهاتف' : 'Phone', text: '+971 4 340 2223' },
               { icon: Mail, title: isArabic ? 'البريد الإلكتروني' : 'Email', text: 'info@digitecme.com' },
             ].map((item) => (

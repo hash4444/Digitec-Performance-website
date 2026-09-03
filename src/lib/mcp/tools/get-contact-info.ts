@@ -16,7 +16,7 @@ export default defineTool({
       whatsapp_link: "https://wa.me/97143402223",
       website: "https://digitecme.com",
       email: "info@digitecme.com",
-      address: "Al Quoz Industrial Area 3, Warehouses 11–15, Dubai, UAE",
+      address: "Al Quoz Industrial Area 3, Dubai, UAE",
       service_area: "Dubai",
       specialization:
         "Independent workshop for vehicle inspection, maintenance, mechanical and electrical repair, body work, and vehicle-specific performance-project consultation. Confirm coverage for the exact vehicle and requested work.",

@@ -22,7 +22,7 @@ var get_contact_info_default = defineTool({
       whatsapp_link: "https://wa.me/97143402223",
       website: "https://digitecme.com",
       email: "info@digitecme.com",
-      address: "Al Quoz Industrial Area 3, Warehouses 11\u201315, Dubai, UAE",
+      address: "Al Quoz Industrial Area 3, Dubai, UAE",
       service_area: "Dubai",
       specialization: "Independent workshop for vehicle inspection, maintenance, mechanical and electrical repair, body work, and vehicle-specific performance-project consultation. Confirm coverage for the exact vehicle and requested work."
     };
@@ -165,7 +165,7 @@ var mcp_default = defineMcp({
   name: "digitec-mcp",
   title: "Digitec Performance Center",
   version: "0.1.0",
-  instructions: "Tools for Digi-Tec Performance Center, an independent vehicle workshop established in Dubai in 2002 and located at Al Quoz Industrial Area 3, Warehouses 11\u201315. Use `list_services` to discover published service pages, `list_brands` to discover published brand pages, `get_contact_info` for verified contact/location details, and `build_booking_link` to create a WhatsApp enquiry URL. A listed page is not a blanket capability promise; confirm coverage for the exact VIN, model, year and requested work before booking.",
+  instructions: "Tools for Digi-Tec Performance Center, an independent vehicle workshop established in Dubai in 2002 and located at Al Quoz Industrial Area 3. Use `list_services` to discover published service pages, `list_brands` to discover published brand pages, `get_contact_info` for verified contact/location details, and `build_booking_link` to create a WhatsApp enquiry URL. A listed page is not a blanket capability promise; confirm coverage for the exact VIN, model, year and requested work before booking.",
   tools: [get_contact_info_default, list_services_default, list_brands_default, build_booking_link_default]
 });
 

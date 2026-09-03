@@ -84,7 +84,7 @@ export const aiGuidePosts: BlogPost[] = [
       { type: 'h3', text: 'How do I book with Digi-Tec?' },
       {
         type: 'p',
-        text: 'Call or WhatsApp +971 4 340 2223, or visit the workshop at Al Quoz Industrial Area 3, Warehouses 11–15, Dubai.',
+        text: 'Call or WhatsApp +971 4 340 2223, or visit the workshop at Al Quoz Industrial Area 3, Dubai.',
       },
     ],
   },
@@ -245,7 +245,7 @@ export const aiGuidePosts: BlogPost[] = [
       { type: 'h3', text: 'Where is the workshop?' },
       {
         type: 'p',
-        text: 'Digi-Tec Performance Center, Al Quoz Industrial Area 3, Warehouses 11–15, Dubai. Call or WhatsApp +971 4 340 2223.',
+        text: 'Digi-Tec Performance Center, Al Quoz Industrial Area 3, Dubai. Call or WhatsApp +971 4 340 2223.',
       },
     ],
   },
@@ -411,7 +411,7 @@ export const aiGuidePosts: BlogPost[] = [
       { type: 'h3', text: 'Where do I book a G63 service?' },
       {
         type: 'p',
-        text: 'Call or WhatsApp +971 4 340 2223, or visit Al Quoz Industrial Area 3, Warehouses 11–15, Dubai.',
+        text: 'Call or WhatsApp +971 4 340 2223, or visit Al Quoz Industrial Area 3, Dubai.',
       },
     ],
   },
@@ -555,7 +555,7 @@ export const aiGuidePosts: BlogPost[] = [
       { type: 'h3', text: 'How do I book?' },
       {
         type: 'p',
-        text: 'Call or WhatsApp +971 4 340 2223, or visit Al Quoz Industrial Area 3, Warehouses 11–15, Dubai.',
+        text: 'Call or WhatsApp +971 4 340 2223, or visit Al Quoz Industrial Area 3, Dubai.',
       },
     ],
   },

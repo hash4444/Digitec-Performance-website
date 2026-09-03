@@ -8,7 +8,7 @@ export const WhyChooseUs = () => {
   const copy = isArabic ? arHome.why : null;
   const reasons = [
     { value: '2002', title: 'Established in Dubai', description: 'Serving vehicle owners from our Al Quoz workshop since 2002' },
-    { value: 'Al Quoz', title: 'Dubai Workshop', description: 'Located in Al Quoz Industrial Area 3, Warehouses 11–15' },
+    { value: 'Al Quoz', title: 'Dubai Workshop', description: 'Located in Al Quoz Industrial Area 3' },
     { value: 'Inspect', title: 'Start With the Vehicle', description: 'The reported concern and current condition guide the next step' },
     { value: 'Explain', title: 'Clear Repair Scope', description: 'Findings and proposed work are discussed before approval' },
   ];
@@ -40,7 +40,7 @@ export const WhyChooseUs = () => {
             {copy?.facilityTitle ?? 'Our workshop in Al Quoz, Dubai'}
           </h3>
           <div>
-            <p className="home-lead">{copy?.facilityText ?? 'Visit Digi-Tec Performance Center at Al Quoz Industrial Area 3, Warehouses 11–15. Contact the team with your vehicle details so the appropriate inspection or service can be arranged.'}</p>
+            <p className="home-lead">{copy?.facilityText ?? 'Visit Digi-Tec Performance Center at Al Quoz Industrial Area 3. Contact the team with your vehicle details so the appropriate inspection or service can be arranged.'}</p>
             <div className="mt-10 divide-y divide-white/[0.09] border-y border-white/[0.09]">
               {[0, 1, 2].map((index) => (
                 <div key={index} className="grid gap-2 py-5 sm:grid-cols-[12rem_1fr] sm:gap-6">

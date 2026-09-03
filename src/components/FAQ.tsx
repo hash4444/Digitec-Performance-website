@@ -123,7 +123,7 @@ export const faqCategories: FAQCategory[] = [
     faqs: [
       {
         question: "Where are you located in Dubai?",
-        answer: "We're based in Al Quoz Industrial Area 3, Warehouses 11–15, Dubai."
+        answer: "We're based in Al Quoz Industrial Area 3, Dubai."
       },
       {
         question: "Do you offer pickup and drop-off for services?",

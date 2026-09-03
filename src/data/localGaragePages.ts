@@ -23,7 +23,7 @@ export const localGaragePages: LocalGaragePage[] = [
     detail: 'The right garage should be easy to reach and easy to work with. Before any repair, the priority is to understand the concern, inspect the relevant systems and explain the next step clearly. Whether your car has a warning light, weak air-conditioning, a noise, a maintenance reminder or a drivability concern, the workshop team can help you arrange the correct inspection.',
     highlights: ['Workshop location in Al Quoz Industrial Area 3', 'Diagnostics and inspection before major repairs', 'Maintenance, mechanical, brake, suspension and electrical support', 'WhatsApp, phone and directions available before you visit'],
     faqs: [
-      { question: 'Where is DIGI-TEC located in Dubai?', answer: 'DIGI-TEC Performance Center is in Al Quoz Industrial Area 3, Warehouses 11–15, Dubai.' },
+      { question: 'Where is DIGI-TEC located in Dubai?', answer: 'DIGI-TEC Performance Center is in Al Quoz Industrial Area 3, Dubai.' },
       { question: 'Can I book a garage inspection by WhatsApp?', answer: 'Yes. Send your car model, year, mileage and concern on WhatsApp so the team can help arrange the right appointment.' },
       { question: 'What should I bring to a workshop appointment?', answer: 'Bring the vehicle key, service history if available, and photos or videos of intermittent warnings or noises.' },
     ],

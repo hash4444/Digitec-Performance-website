@@ -42,7 +42,7 @@ export const Footer = () => {
               {copy?.description ?? 'Independent luxury and performance car workshop in Al Quoz, Dubai. Specialist diagnostics, repair, maintenance and performance upgrades since 2002.'}
             </p>
             <a
-              href="https://maps.google.com/?q=Al+Quoz+Industrial+Area+3+Warehouse+No.11-15+Dubai"
+              href="https://maps.google.com/?q=Al+Quoz+Industrial+Area+3+Dubai"
               target="_blank"
               rel="noopener noreferrer"
               className="mt-6 inline-flex text-sm font-medium text-white transition-colors hover:text-burnt-orange"
@@ -76,7 +76,7 @@ export const Footer = () => {
           <section aria-label={copy?.contact ?? 'Contact'}>
             <h2 className="text-sm font-semibold text-off-white">{copy?.contact ?? 'Contact'}</h2>
             <div className="mt-5 space-y-5 text-sm leading-6 text-white/45">
-              <p><span className="block font-semibold text-off-white">{isArabic ? 'ورشة دبي' : 'Dubai Workshop'}</span>{isArabic ? <>منطقة القوز الصناعية 3<br />المستودعات 11–15، دبي، الإمارات</> : <>Al Quoz Industrial Area 3<br />Warehouses 11–15, Dubai, UAE</>}</p>
+              <p><span className="block font-semibold text-off-white">{isArabic ? 'ورشة دبي' : 'Dubai Workshop'}</span>{isArabic ? <>منطقة القوز الصناعية 3<br />دبي، الإمارات</> : <>Al Quoz Industrial Area 3<br />Dubai, UAE</>}</p>
               <p><a href="tel:+97143402223" className="font-semibold text-off-white transition-colors hover:text-burnt-orange">+971 4 340 2223</a><br /><a href="mailto:info@digitecme.com" className="transition-colors hover:text-burnt-orange">info@digitecme.com</a></p>
             </div>
             <div className="mt-5 flex gap-3" aria-label={isArabic ? 'حسابات التواصل الاجتماعي' : 'Social media'}>
