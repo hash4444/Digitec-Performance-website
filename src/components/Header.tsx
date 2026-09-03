@@ -117,9 +117,9 @@ const Header = () => {
             )}
           </Link>
 
-          <div className="pointer-events-auto relative w-[calc(100%-3.25rem)] max-w-[258px] lg:absolute lg:left-1/2 lg:w-[258px] lg:-translate-x-1/2">
+          <div className="pointer-events-auto relative w-fit lg:absolute lg:left-1/2 lg:-translate-x-1/2">
             <div className={cn(
-              'flex h-[60px] items-center rounded-full border px-1.5 shadow-[0_12px_32px_rgba(0,0,0,0.24)] transition-colors duration-300',
+              'flex h-[60px] w-fit items-center rounded-full border px-1.5 shadow-[0_12px_32px_rgba(0,0,0,0.24)] transition-colors duration-300',
               colorTheme === 'light'
                 ? 'border-black/[0.08] bg-white text-[#171819]'
                 : 'border-white/[0.08] bg-[#171819] text-white',
@@ -182,7 +182,7 @@ const Header = () => {
             <nav
               id="floating-navigation"
               className={cn(
-                'absolute left-0 right-0 top-[calc(100%+0.75rem)] origin-top overflow-hidden rounded-[1.25rem] border p-2.5 shadow-2xl transition-all duration-200',
+                'absolute right-0 top-[calc(100%+0.75rem)] w-[258px] max-w-[calc(100vw-1.5rem)] origin-top overflow-hidden rounded-[1.25rem] border p-2.5 shadow-2xl transition-all duration-200 lg:left-1/2 lg:right-auto lg:-translate-x-1/2',
                 colorTheme === 'light' ? 'border-black/10 bg-white text-[#171819] shadow-black/15' : 'border-white/10 bg-[#171922] text-white shadow-black/60',
                 isMenuOpen ? 'visible translate-y-0 scale-100 opacity-100' : 'invisible -translate-y-2 scale-[0.98] opacity-0',
               )}
