@@ -1,5 +1,5 @@
 import React from 'react';
-import { ShieldCheck, Clock, Car, MapPin } from 'lucide-react';
+import { ShieldCheck } from 'lucide-react';
 import { useLocale } from '@/i18n/use-locale';
 import { arHome } from '@/i18n/ar-home';
 
@@ -11,43 +11,34 @@ export const TrustBar = ({ className = '' }: { className?: string }) => {
   const { isArabic } = useLocale();
   const englishItems = [
     {
-      icon: <Clock className="w-4 h-4 text-burnt-orange" />,
       value: 'Since 2002',
       label: 'independent workshop',
     },
     {
-      icon: <Car className="w-4 h-4 text-burnt-orange" />,
       value: 'European & luxury',
       label: 'service and repair',
     },
     {
-      icon: <ShieldCheck className="w-4 h-4 text-burnt-orange" />,
       value: 'Inspection-led',
       label: 'recommendations',
     },
     {
-      icon: <MapPin className="w-4 h-4 text-burnt-orange" />,
       value: 'Al Quoz',
       label: 'Dubai workshop',
     },
   ];
-  const icons = [Clock, Car, ShieldCheck, MapPin];
   const items = isArabic
-    ? arHome.trust.map((item, index) => {
-        const Icon = icons[index];
-        return { ...item, icon: <Icon className="w-4 h-4 text-burnt-orange" /> };
-      })
+    ? arHome.trust
     : englishItems;
 
   return (
-    <div className={`border-y border-white/[0.07] bg-white/[0.02] ${className}`}>
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 py-4 sm:py-5 grid grid-cols-2 lg:grid-cols-4 gap-x-4 gap-y-3">
+    <div className={`border-b border-white/[0.08] bg-[#101113] ${className}`}>
+      <div className="mx-auto grid max-w-[90rem] grid-cols-2 px-5 sm:px-8 lg:grid-cols-4 lg:px-12">
         {items.map((item) => (
-          <div key={item.label} className="flex items-center justify-center gap-2.5">
-            {item.icon}
-            <div className="leading-tight text-left">
-              <span className="block text-off-white font-bold text-sm sm:text-base tabular-nums">{item.value}</span>
-              <span className="block text-gray-400 text-[11px] sm:text-xs">{item.label}</span>
+          <div key={item.label} className="border-white/[0.08] py-6 odd:border-r odd:pr-5 even:pl-5 lg:border-r lg:px-8 lg:py-7 lg:first:pl-0 lg:last:border-r-0">
+            <div className="text-left leading-tight">
+              <span className="block text-sm font-semibold text-off-white sm:text-[0.95rem]">{item.value}</span>
+              <span className="mt-1.5 block text-xs text-white/38">{item.label}</span>
             </div>
           </div>
         ))}

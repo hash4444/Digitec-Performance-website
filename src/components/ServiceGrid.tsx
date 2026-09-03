@@ -1,132 +1,85 @@
 import React from 'react';
+import { ArrowRight } from 'lucide-react';
 import { LocalizedLink as Link } from '@/components/LocalizedLink';
-import { Wrench, Settings, Battery, Car, Gauge, Bolt, PaintRoller, Shield, ChevronRight } from 'lucide-react';
 import { services } from '@/data/services';
 import { Reveal } from '@/components/motion/Reveal';
 import { useLocale } from '@/i18n/use-locale';
 import { arHome, arServiceCards } from '@/i18n/ar-home';
 
-const categoryIcons: Record<string, React.ReactNode> = {
-  'Core Mechanical Services': <Wrench className="w-4 h-4 sm:w-6 sm:h-6" />,
-  'Diagnostics & Electrical': <Bolt className="w-4 h-4 sm:w-6 sm:h-6" />,
-  'Comfort Systems': <Settings className="w-4 h-4 sm:w-6 sm:h-6" />,
-  'Body & Visual Work': <Shield className="w-4 h-4 sm:w-6 sm:h-6" />,
-};
-
-const serviceIcons: Record<string, React.ReactNode> = {
-  'Mercedes Repair': <Car className="w-4 h-4 sm:w-5 sm:h-5" />,
-  'Battery Changes': <Battery className="w-4 h-4 sm:w-5 sm:h-5" />,
-  'Electrical System Repairs': <Bolt className="w-4 h-4 sm:w-5 sm:h-5" />,
-  'Routine Maintenance': <Wrench className="w-4 h-4 sm:w-5 sm:h-5" />,
-  'Car Body Repair': <Wrench className="w-4 h-4 sm:w-5 sm:h-5" />,
-  'Car Paint & Protection': <PaintRoller className="w-4 h-4 sm:w-5 sm:h-5" />,
-};
-
-const defaultIcon = <Settings className="w-4 h-4 sm:w-5 sm:h-5" />;
-
 const categoryOrder = ['Core Mechanical Services', 'Diagnostics & Electrical', 'Comfort Systems', 'Body & Visual Work'];
-const grouped = categoryOrder.map((cat) => ({
-  title: cat,
-  icon: categoryIcons[cat],
-  services: services.filter((s) => s.category === cat),
-}));
+const grouped = categoryOrder.map((title) => ({ title, services: services.filter((service) => service.category === title) }));
 
 export const ServiceGrid = () => {
   const { isArabic } = useLocale();
   const copy = isArabic ? arHome.services : null;
-  return (
-    <>
-      <section className="py-10 sm:py-20 lg:py-32 bg-black">
-        <div className="max-w-full mx-auto px-4 sm:px-6">
-          <Reveal className="text-center mb-8 sm:mb-14 lg:mb-20">
-            <span className="eyebrow mb-3 sm:mb-5">{copy?.eyebrow ?? 'Complete Care'}</span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black mb-3 sm:mb-5">
-              {copy?.title ?? 'Explore Our Full Range of Services'}
-            </h2>
-            <p className="text-sm sm:text-base lg:text-lg text-gray-300 max-w-3xl mx-auto mb-2 sm:mb-4 px-4 leading-snug sm:leading-relaxed">
-              {copy?.description ?? 'Premium care for every system, every detail, every ride.'}
-            </p>
-            <p className="hidden sm:inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.25em] text-gray-500">
-              {copy?.scroll ?? 'Scroll to explore'} <span className="text-burnt-orange">{isArabic ? '←' : '→'}</span>
-            </p>
-          </Reveal>
 
-          <div className="space-y-8 sm:space-y-16">
-            {grouped.map((category) => (
-              <div key={category.title} className="space-y-4 sm:space-y-8">
-                <div className="flex items-center gap-3 sm:gap-4 mb-4 sm:mb-8 px-2">
-                  <span className="block w-1 h-5 sm:h-7 rounded-full bg-burnt-orange" aria-hidden="true" />
-                  <h3 className="text-base sm:text-2xl md:text-3xl font-bold text-off-white">
+  return (
+    <section className="home-section">
+      <div className="home-container">
+        <Reveal className="mb-16 grid gap-6 lg:grid-cols-2 lg:items-end lg:mb-24">
+          <div>
+            <p className="home-kicker mb-4">{copy?.eyebrow ?? 'Workshop services'}</p>
+            <h2 className="home-heading max-w-2xl">{copy?.title ?? 'Complete care, clearly organised.'}</h2>
+          </div>
+          <p className="home-lead lg:justify-self-end">
+            {copy?.description ?? 'Maintenance, diagnostics and repair for the systems that keep your vehicle performing as intended.'}
+          </p>
+        </Reveal>
+
+        <div className="space-y-20 lg:space-y-28">
+          {grouped.map((category, categoryIndex) => (
+            <section key={category.title} aria-labelledby={`service-category-${categoryIndex}`}>
+              <div className="mb-7 flex items-end justify-between gap-5 border-b border-white/[0.1] pb-5">
+                <div className="flex items-baseline gap-4">
+                  <span className="text-xs text-burnt-orange">0{categoryIndex + 1}</span>
+                  <h3 id={`service-category-${categoryIndex}`} className="text-xl font-semibold tracking-[-0.025em] text-white sm:text-2xl">
                     {copy?.categories[category.title] ?? category.title}
                   </h3>
                 </div>
+                <span className="hidden text-xs text-white/30 sm:block">{category.services.length} services</span>
+              </div>
 
-                {/* Horizontal scroll on all screens */}
-                <div className="horizontal-scroll-container overflow-x-auto overflow-y-hidden pb-3 sm:pb-4">
-                  <div className="flex gap-3 sm:gap-4 md:gap-6 pl-2 pr-2 sm:pl-4 sm:pr-4" style={{ width: 'max-content' }}>
-                    {category.services.map((service) => (
-                      <div key={service.slug} className="service-card group w-56 sm:w-80 md:w-96">
-                        <div className="card-premium rounded-2xl p-3 sm:p-6 lg:p-8 transition-all duration-500 sm:hover:-translate-y-1 h-full flex flex-col min-h-0 sm:min-h-[400px]">
-                          <div className="mb-3 sm:mb-6 overflow-hidden rounded-xl sm:rounded-2xl bg-gradient-to-br from-gray-900 to-gray-800 aspect-[4/3]">
-                            <img
-                              src={service.image}
-                              alt={service.title}
-                              loading="lazy"
-                              className="w-full h-full object-cover group-hover:scale-110 group-hover:brightness-110 transition-all duration-500"
-                              onError={(e) => {
-                                e.currentTarget.src = 'https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=400&h=300&fit=crop';
-                              }}
-                            />
-                          </div>
-
-                          <div className="flex-1 flex flex-col">
-                            <div className="flex items-start gap-2 sm:gap-4 mb-2 sm:mb-4">
-                              <div className="flex-1">
-                                <h4 className="text-sm sm:text-xl lg:text-2xl font-bold mb-0 sm:mb-3 group-hover:text-burnt-orange transition-colors duration-300 leading-tight line-clamp-2">
-                                  {isArabic ? arServiceCards[service.slug]?.title ?? service.title : service.title}
-                                </h4>
-                              </div>
-                            </div>
-
-                            <p className="text-gray-400 sm:text-gray-300 leading-snug sm:leading-relaxed text-xs sm:text-sm lg:text-base mb-3 sm:mb-6 flex-1 line-clamp-2 sm:line-clamp-none">
-                              {isArabic ? arServiceCards[service.slug]?.description ?? service.description : service.description}
-                            </p>
-
-                            <div className="pt-2 sm:pt-4 sm:border-t sm:border-white/10 mt-auto">
-                              <Link
-                                to={service.slug === 'mercedes-repair-dubai'
-                                  ? '/brands/mercedes-benz-service-dubai'
-                                  : `/services/${service.slug}`}
-                                className="inline-flex sm:hidden items-center gap-1 text-burnt-orange font-semibold text-xs"
-                              >
-                                {copy?.learn ?? 'Learn More'} <ChevronRight className={`w-3 h-3 ${isArabic ? 'rotate-180' : ''}`} />
-                              </Link>
-                              <Link
-                                to={service.slug === 'mercedes-repair-dubai'
-                                  ? '/brands/mercedes-benz-service-dubai'
-                                  : `/services/${service.slug}`}
-                                className="hidden sm:block w-full bg-burnt-orange hover:bg-[#ff7d4d] text-black font-bold text-xs lg:text-sm uppercase tracking-[0.14em] px-6 py-3.5 rounded-lg transition-colors duration-300 text-center"
-                              >
-                                {copy?.learn ?? 'Learn More'}
-                              </Link>
-                            </div>
-                          </div>
-                        </div>
+              <div className="horizontal-scroll-container -mx-5 overflow-x-auto px-5 pb-3 sm:-mx-8 sm:px-8 lg:-mx-12 lg:px-12">
+                <div className="flex w-max gap-5 sm:gap-7">
+                  {category.services.map((service) => (
+                    <Link
+                      key={service.slug}
+                      to={service.slug === 'mercedes-repair-dubai' ? '/brands/mercedes-benz-service-dubai' : `/services/${service.slug}`}
+                      className="group block w-[17rem] sm:w-[21rem]"
+                    >
+                      <div className="aspect-[4/3] overflow-hidden rounded-lg bg-[#18191a]">
+                        <img
+                          src={service.image}
+                          alt={service.title}
+                          loading="lazy"
+                          className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.025]"
+                        />
                       </div>
-                    ))}
-                  </div>
+                      <div className="pt-5">
+                        <div className="flex items-start justify-between gap-4">
+                          <h4 className="text-base font-semibold leading-snug tracking-[-0.015em] text-white transition-colors group-hover:text-burnt-orange sm:text-lg">
+                            {isArabic ? arServiceCards[service.slug]?.title ?? service.title : service.title}
+                          </h4>
+                          <ArrowRight className={`mt-1 h-4 w-4 shrink-0 text-white/30 transition-colors group-hover:text-burnt-orange ${isArabic ? 'rotate-180' : ''}`} />
+                        </div>
+                        <p className="mt-2 line-clamp-2 text-sm leading-6 text-white/42">
+                          {isArabic ? arServiceCards[service.slug]?.description ?? service.description : service.description}
+                        </p>
+                      </div>
+                    </Link>
+                  ))}
                 </div>
               </div>
-            ))}
-          </div>
-
-          <div className="text-center mt-8 sm:mt-16 lg:mt-20">
-            <Link to="/services" className="btn-primary w-full sm:w-auto">
-              {copy?.viewAll ?? 'View All Services'}
-            </Link>
-          </div>
+            </section>
+          ))}
         </div>
-      </section>
-    </>
+
+        <div className="mt-20 border-t border-white/[0.1] pt-8 text-right">
+          <Link to="/services" className="inline-flex items-center gap-2 text-sm font-semibold text-white transition-colors hover:text-burnt-orange">
+            {copy?.viewAll ?? 'View all services'} <ArrowRight className={`h-4 w-4 ${isArabic ? 'rotate-180' : ''}`} />
+          </Link>
+        </div>
+      </div>
+    </section>
   );
 };

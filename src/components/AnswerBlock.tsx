@@ -16,17 +16,19 @@ interface AnswerBlockProps {
  * page states its answer without requiring the whole section to be read.
  */
 export const AnswerBlock = ({ question, answer, facts, className = '' }: AnswerBlockProps) => (
-  <section className={`py-10 sm:py-14 ${className}`} aria-label={question}>
-    <div className="max-w-4xl mx-auto px-5 sm:px-6">
-      <div className="rounded-3xl border border-white/10 bg-white/[0.03] p-6 sm:p-8">
-        <p className="eyebrow mb-3">Quick answer</p>
-        <h2 className="text-xl sm:text-2xl font-bold text-off-white mb-3 leading-snug">{question}</h2>
-        <p className="text-white/70 text-base sm:text-lg leading-relaxed">{answer}</p>
+  <section className={`home-section ${className}`} aria-label={question}>
+    <div className="home-container grid gap-10 lg:grid-cols-[0.65fr_1.35fr] lg:gap-20">
+      <div>
+        <p className="home-kicker mb-4">Quick answer</p>
+        <h2 className="text-3xl font-semibold leading-tight tracking-[-0.035em] text-off-white sm:text-4xl">{question}</h2>
+      </div>
+      <div>
+        <p className="text-base leading-8 text-white/58 sm:text-lg">{answer}</p>
         {facts && facts.length > 0 && (
-          <ul className="mt-5 space-y-2">
+          <ul className="mt-10 grid border-t border-white/[0.09] sm:grid-cols-2">
             {facts.map((fact) => (
-              <li key={fact} className="flex gap-3 text-sm sm:text-base text-white/60">
-                <span aria-hidden className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-burnt-orange" />
+              <li key={fact} className="flex gap-3 border-b border-white/[0.09] py-4 pr-6 text-sm leading-6 text-white/45 sm:odd:border-r sm:even:pl-6">
+                <span aria-hidden className="mt-2 h-1 w-1 shrink-0 rounded-full bg-burnt-orange" />
                 <span>{fact}</span>
               </li>
             ))}

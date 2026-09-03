@@ -7,6 +7,7 @@ import { useSeo } from '@/hooks/use-seo';
 import { brands } from '@/data/brands';
 import { buildBreadcrumb, buildWebPage, pageGraph } from '@/lib/schema';
 import { useLocale } from '@/i18n/use-locale';
+import { PageIntro } from '@/components/PageIntro';
 
 const Brands = () => {
   const { isArabic } = useLocale();
@@ -49,18 +50,13 @@ const Brands = () => {
   });
 
   return (
-    <div className="min-h-screen bg-black text-off-white">
+    <div className="site-page min-h-screen bg-black text-off-white">
       <Header />
-      <section className="relative overflow-hidden py-12 sm:py-24">
-        <div className="absolute inset-0 bg-gradient-to-b from-burnt-orange/10 via-transparent to-transparent" />
-        <div className="relative mx-auto max-w-6xl px-4 text-center sm:px-6">
-          <span className="eyebrow mb-2 block sm:mb-4">{isArabic ? 'العلامات التي نخدمها' : 'Brands We Serve'}</span>
-          <h1 className="mb-3 text-3xl font-black sm:text-5xl md:text-6xl">{isArabic ? 'علامات السيارات الفاخرة وعالية الأداء' : 'Luxury & Performance Car Brands'}</h1>
-          <p className="mx-auto max-w-3xl text-sm leading-relaxed text-gray-400 sm:text-lg">
-            {isArabic ? 'اختر علامة سيارتك للاطلاع على صفحة ديجي-تك المتخصصة وخدمات الورشة المتاحة لها في دبي.' : 'Choose your vehicle brand to explore its dedicated DIGI-TEC page and specialist workshop capability in Dubai.'}
-          </p>
-        </div>
-      </section>
+      <PageIntro
+        eyebrow={isArabic ? 'العلامات التي نخدمها' : 'Brands We Serve'}
+        title={isArabic ? 'علامات السيارات الفاخرة وعالية الأداء' : 'Luxury & Performance Car Brands'}
+        description={isArabic ? 'اختر علامة سيارتك للاطلاع على صفحة ديجي-تك المتخصصة وخدمات الورشة المتاحة لها في دبي.' : 'Choose your vehicle brand to explore its dedicated DIGI-TEC page and specialist workshop capability in Dubai.'}
+      />
       <AnswerBlock
         question={isArabic ? 'ما العلامات التي يخدمها ديجي-تك في دبي؟' : 'Which car brands does Digi-Tec service in Dubai?'}
         answer={isArabic
@@ -77,17 +73,17 @@ const Brands = () => {
         ]}
       />
 
-      <section className="pb-16 sm:pb-24">
-        <div className="mx-auto max-w-6xl px-4 sm:px-6">
-          <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-4 lg:grid-cols-4">
+      <section className="pb-20 sm:pb-28">
+        <div className="mx-auto max-w-[90rem] px-5 sm:px-8 lg:px-12">
+          <div className="grid grid-cols-2 border-t border-white/[0.1] sm:grid-cols-3 lg:grid-cols-4">
             {brands.map((brand) => (
               <Link
                 key={brand.slug}
                 to={`/brands/${brand.slug}`}
-                className="card-premium group flex items-center gap-3 rounded-2xl p-3 transition-all duration-300 sm:gap-4 sm:p-4"
+                className="group flex min-h-32 items-center gap-4 border-b border-white/[0.1] px-2 py-5 transition-colors hover:bg-white/[0.025] sm:min-h-36 sm:px-5"
                 aria-label={isArabic ? `صيانة وإصلاح ${brand.name} في دبي` : `${brand.name} service and repair in Dubai`}
               >
-                <div className="flex h-12 w-12 shrink-0 items-center justify-center overflow-hidden rounded-full bg-white/90 p-1.5 sm:h-14 sm:w-14">
+                <div className="flex h-12 w-16 shrink-0 items-center justify-center overflow-hidden bg-white/[0.94] p-2 sm:h-14 sm:w-20">
                   {brand.logo ? (
                     <img
                       src={brand.name === 'ROX' ? '/brand-logos/rox-card.png' : brand.logo}
@@ -96,12 +92,12 @@ const Brands = () => {
                       loading="lazy"
                     />
                   ) : (
-                    <span className="text-lg font-black text-burnt-orange">{brand.name.charAt(0)}</span>
+                    <span className="text-lg font-semibold text-burnt-orange">{brand.name.charAt(0)}</span>
                   )}
                 </div>
                 <div className="min-w-0">
-                  <h2 className="truncate text-sm font-bold leading-tight transition-colors group-hover:text-burnt-orange sm:text-base">{brand.name}</h2>
-                  <p className="mt-0.5 line-clamp-2 text-[11px] leading-snug text-gray-400 sm:text-xs">{isArabic ? 'صيانة • إصلاح • تشخيص • أداء' : brand.specialization}</p>
+                  <h2 className="truncate text-sm font-semibold leading-tight tracking-[-0.01em] transition-colors group-hover:text-burnt-orange sm:text-base">{brand.name}</h2>
+                  <p className="mt-1.5 line-clamp-2 text-[11px] leading-relaxed text-white/42 sm:text-xs">{isArabic ? 'صيانة • إصلاح • تشخيص • أداء' : brand.specialization}</p>
                 </div>
               </Link>
             ))}

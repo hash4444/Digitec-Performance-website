@@ -51,7 +51,7 @@ const BmwModelPage = ({ modelSlugOverride }: { modelSlugOverride?: string }) => 
           </ol>
         </nav>
 
-        <section className="relative isolate overflow-hidden border-b border-white/10 bg-gradient-to-br from-blue-950/40 via-black to-black">
+        <section className="theme-dark-section relative isolate overflow-hidden border-b border-white/10 bg-gradient-to-br from-blue-950/40 via-black to-black">
           <div className="absolute right-[8%] top-1/2 h-72 w-72 -translate-y-1/2 rounded-full bg-blue-600/10 blur-3xl" />
           <div className="relative mx-auto grid max-w-7xl items-center gap-10 px-4 py-16 sm:px-6 sm:py-24 lg:grid-cols-[1fr_0.35fr]">
             <div>

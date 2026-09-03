@@ -137,18 +137,18 @@ const SitemapPage = () => {
   });
 
   return (
-    <div className="min-h-screen bg-black text-off-white">
+    <div className="site-page min-h-screen bg-black text-off-white">
       <Header />
-      <main className="max-w-6xl mx-auto px-5 sm:px-6 py-16 md:py-24">
+      <main className="mx-auto max-w-[90rem] px-5 py-20 sm:px-8 md:py-24 lg:px-12">
         <p className="eyebrow mb-4">{isArabic ? 'التنقل في الموقع' : 'Website navigation'}</p>
-        <h1 className="text-3xl sm:text-5xl font-black mb-4">{isArabic ? <>خريطة <span className="text-burnt-orange">الموقع</span></> : <>HTML <span className="text-burnt-orange">Sitemap</span></>}</h1>
+        <h1 className="mb-5 text-[clamp(2.75rem,5vw,5.25rem)] font-semibold leading-[0.98] tracking-[-0.05em]">{isArabic ? <>خريطة <span className="text-burnt-orange">الموقع</span></> : <>HTML <span className="text-burnt-orange">Sitemap</span></>}</h1>
         <p className="text-white/60 max-w-2xl leading-relaxed mb-12">
           {isArabic ? 'تصفح خدمات ديجي-تك وصفحات العلامات المتخصصة ونصائح الورشة العملية للسيارات الفاخرة وعالية الأداء في دبي.' : 'Browse Digi-Tec services, specialist brand pages, and practical workshop advice for luxury and performance vehicles in Dubai.'}
         </p>
         <div className="grid md:grid-cols-2 gap-5">
           {groups.map((group) => (
-            <section key={group.title} className="rounded-2xl border border-white/[0.08] bg-white/[0.03] p-6">
-              <h2 className="text-xl font-bold mb-4">{group.title}</h2>
+            <section key={group.title} className="border-t border-white/[0.1] py-6">
+              <h2 className="mb-4 text-xl font-semibold">{group.title}</h2>
               <ul className="space-y-2">
                 {group.links.map((link) => (
                   <li key={link.to}>

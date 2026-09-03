@@ -322,7 +322,7 @@ const BrandServicePage: React.FC<BrandServicePageProps> = ({
       : relatedBmwContent.length > 0 ? relatedBmwContent : relatedFerrariContent;
 
   return (
-    <div className="min-h-screen bg-black text-off-white">
+    <div className="site-page min-h-screen bg-black text-off-white">
       <Header />
 
       {/* Breadcrumbs */}
@@ -339,26 +339,25 @@ const BrandServicePage: React.FC<BrandServicePageProps> = ({
       </nav>
 
       {/* Hero */}
-      <section className="relative bg-black overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-burnt-orange/10 via-transparent to-transparent" />
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-10 sm:py-16 lg:py-20 relative z-10">
-          <div className="max-w-4xl mx-auto">
-            <div className="flex items-center gap-4 mb-5 sm:mb-6">
-              <div className="w-14 h-14 sm:w-20 sm:h-20 p-2 bg-white/90 rounded-full shadow-xl flex items-center justify-center overflow-hidden">
+      <section className="relative overflow-hidden border-b border-white/[0.08] bg-[#101113]">
+        <div className="relative z-10 mx-auto max-w-[90rem] px-5 py-14 sm:px-8 sm:py-20 lg:px-12 lg:py-24">
+          <div className="max-w-4xl">
+            <div className="mb-6 flex items-center gap-4">
+              <div className="flex h-14 w-20 items-center justify-center overflow-hidden bg-white/[0.94] p-2 sm:h-16 sm:w-24">
                 {brand.logo ? (
                   <img src={brand.logo} alt={`${combo.brandName} logo`} className="w-full h-full object-contain" />
                 ) : (
-                  <span className="text-2xl font-black text-burnt-orange">{combo.brandName.charAt(0)}</span>
+                  <span className="text-2xl font-semibold text-burnt-orange">{combo.brandName.charAt(0)}</span>
                 )}
               </div>
-              <span className="text-burnt-orange font-bold uppercase tracking-widest text-[11px] sm:text-sm">
+              <span className="home-kicker">
                 {isArabic ? `متخصصون في ${combo.brandName}` : `${combo.brandName} Specialists`}
               </span>
             </div>
-            <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black mb-4 sm:mb-6 leading-tight">
-              {isArabic ? <><span className="text-burnt-orange">{combo.serviceName}</span> {combo.brandName} في دبي</> : combo.brandSlug === 'rox-service-dubai' && combo.serviceSlug === 'soft-close-door-installation' ? <>ROX 01 <span className="text-burnt-orange">Soft Close Installation Dubai</span></> : <>{combo.brandName} <span className="text-burnt-orange">{combo.serviceName}</span> Dubai</>}
+            <h1 className="mb-5 max-w-4xl text-[clamp(2.65rem,5vw,5.1rem)] font-semibold leading-[0.98] tracking-[-0.05em]">
+              {isArabic ? <><span className="text-white/62">{combo.serviceName}</span> {combo.brandName} في دبي</> : combo.brandSlug === 'rox-service-dubai' && combo.serviceSlug === 'soft-close-door-installation' ? <>ROX 01 <span className="text-white/62">Soft Close Installation Dubai</span></> : <>{combo.brandName} <span className="text-white/62">{combo.serviceName}</span> Dubai</>}
             </h1>
-            <p className="text-gray-300 text-base sm:text-lg leading-relaxed mb-6 sm:mb-8">
+            <p className="mb-8 max-w-2xl text-base leading-8 text-white/58 sm:text-lg">
               {combo.heroCopy}
             </p>
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">

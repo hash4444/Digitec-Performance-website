@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
+import { ChevronDown, Menu, Moon, Sun, X } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
 import { cn } from '@/lib/utils';
 import { arabicPathForEnglishPath, englishPathForArabicPath, LOCALE_STORAGE_KEY, localeMessages } from '@/i18n/locale';
@@ -13,14 +14,26 @@ const primaryLinks: MenuItem[] = [
   { name: 'VRX', href: '/vrx' },
   { name: 'Blog', href: '/blog' },
   { name: 'FAQ', href: '/faq' },
-  { name: 'Contact Us', href: '/about#contact' },
 ];
+
+const whatsappHref = `https://wa.me/97143402223?text=${encodeURIComponent(
+  'Hi DIGI-TEC, I would like to get in touch about my vehicle.',
+)}`;
+
+const THEME_STORAGE_KEY = 'digitec-color-theme';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isLanguageOpen, setIsLanguageOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [colorTheme, setColorTheme] = useState<'dark' | 'light'>(() => {
+    if (typeof window === 'undefined') return 'dark';
+    return window.localStorage.getItem(THEME_STORAGE_KEY) === 'light' ? 'light' : 'dark';
+  });
+  const headerRef = useRef<HTMLElement>(null);
   const location = useLocation();
   const isArabic = location.pathname === '/ar' || location.pathname.startsWith('/ar/');
+  const isHome = location.pathname === '/' || location.pathname === '/ar';
   const englishPath = englishPathForArabicPath(location.pathname);
   const arabicPath = arabicPathForEnglishPath(location.pathname);
   const links = isArabic
@@ -32,119 +45,175 @@ const Header = () => {
         { name: localeMessages.ar.nav.vrx, href: '/ar/vrx' },
         { name: localeMessages.ar.nav.blog, href: '/ar/blog' },
         { name: localeMessages.ar.nav.faq, href: '/ar/faq' },
-        { name: localeMessages.ar.nav.contact, href: '/ar/about#contact' },
       ]
     : primaryLinks;
 
   useEffect(() => {
-    const handleScroll = () => setIsScrolled(window.scrollY > 10);
-    window.addEventListener('scroll', handleScroll);
+    const handleScroll = () => setIsScrolled(window.scrollY > 12);
+    window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   useEffect(() => {
     setIsMenuOpen(false);
+    setIsLanguageOpen(false);
   }, [location.pathname]);
 
   useEffect(() => {
-    if (!isMenuOpen) return undefined;
-
-    const previousOverflow = document.body.style.overflow;
-    const closeOnEscape = (event: KeyboardEvent) => {
-      if (event.key === 'Escape') setIsMenuOpen(false);
+    if (!isMenuOpen && !isLanguageOpen) return undefined;
+    const closeOnOutsideClick = (event: MouseEvent) => {
+      if (!headerRef.current?.contains(event.target as Node)) {
+        setIsMenuOpen(false);
+        setIsLanguageOpen(false);
+      }
     };
-
-    document.body.style.overflow = 'hidden';
+    const closeOnEscape = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') {
+        setIsMenuOpen(false);
+        setIsLanguageOpen(false);
+      }
+    };
+    document.addEventListener('mousedown', closeOnOutsideClick);
     window.addEventListener('keydown', closeOnEscape);
-
     return () => {
-      document.body.style.overflow = previousOverflow;
+      document.removeEventListener('mousedown', closeOnOutsideClick);
       window.removeEventListener('keydown', closeOnEscape);
     };
-  }, [isMenuOpen]);
+  }, [isMenuOpen, isLanguageOpen]);
 
   useEffect(() => {
     document.documentElement.lang = isArabic ? 'ar' : 'en';
     document.documentElement.dir = isArabic ? 'rtl' : 'ltr';
   }, [isArabic]);
 
-  const closeMenus = () => {
-    setIsMenuOpen(false);
-  };
+  useEffect(() => {
+    const isLight = colorTheme === 'light';
+    document.documentElement.classList.toggle('theme-light', isLight);
+    document.documentElement.style.colorScheme = isLight ? 'light' : 'dark';
+    window.localStorage.setItem(THEME_STORAGE_KEY, colorTheme);
+  }, [colorTheme]);
 
   const rememberLocale = (locale: 'en' | 'ar') => localStorage.setItem(LOCALE_STORAGE_KEY, locale);
 
   return (
     <>
-      <header
-        className={cn(
-          'fixed left-0 right-0 top-0 z-[70] border-b border-white/10 bg-[#101113]/95 backdrop-blur-md transition-all duration-300',
-          isScrolled && 'shadow-2xl shadow-black/50',
-        )}
-      >
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="flex h-16 items-center justify-between gap-4 md:h-20">
-            <Link to={isArabic ? '/ar' : '/'} className="z-10 min-w-0" aria-label={isArabic ? 'الصفحة الرئيسية لديجي-تك' : 'DIGI-TEC home'}>
-              <img
-                src="/lovable-uploads/916789e0-b6fb-43d4-9d52-79899ce5a1c2.png"
-                alt={isArabic ? 'مركز ديجي-تك بيرفورمانس' : 'DIGI-TEC Performance Center'}
-                className="h-auto w-[clamp(10rem,56vw,15rem)] max-w-full brightness-110 md:h-9 md:w-auto"
-              />
-            </Link>
-
-            <nav className="hidden items-center gap-5 xl:gap-7 lg:flex" aria-label={isArabic ? 'التنقل الرئيسي' : 'Main navigation'}>
-              {links.map((link) => (
-                <Link key={link.href} to={link.href} className="nav-link">{link.name}</Link>
-              ))}
-            </nav>
-
-            <div className={`hidden items-center gap-2 ${isArabic ? 'border-r pr-4' : 'border-l pl-4'} border-white/10 lg:flex`} aria-label={isArabic ? localeMessages.ar.language.menu : localeMessages.en.language.menu}>
-              <Link to={englishPath} onClick={() => rememberLocale('en')} className={cn('rounded-md px-2.5 py-1.5 text-xs font-bold transition-colors', !isArabic ? 'bg-burnt-orange/15 text-burnt-orange' : 'text-gray-400 hover:text-off-white')}>EN</Link>
-              <Link to={arabicPath} onClick={() => rememberLocale('ar')} className={cn('rounded-md px-2.5 py-1.5 text-xs font-bold transition-colors', isArabic ? 'bg-burnt-orange/15 text-burnt-orange' : 'text-gray-400 hover:text-off-white')}>العربية</Link>
-            </div>
-
-            <button
-              type="button"
-              onClick={() => setIsMenuOpen((isOpen) => !isOpen)}
-              className="relative z-10 flex h-11 w-11 shrink-0 items-center justify-center rounded-lg border border-white/15 bg-white/[0.04] transition-colors hover:border-burnt-orange/60 hover:bg-burnt-orange/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-burnt-orange lg:hidden"
-              aria-label={isMenuOpen ? (isArabic ? 'إغلاق القائمة' : 'Close menu') : (isArabic ? 'فتح القائمة' : 'Open menu')}
-              aria-expanded={isMenuOpen}
-              aria-controls="mobile-navigation"
-            >
-              <span className="relative block h-5 w-6" aria-hidden="true">
-                <span
-                  className={cn(
-                    'absolute left-0 top-[5px] h-0.5 w-6 rounded-full bg-off-white transition-transform duration-300 ease-out',
-                    isMenuOpen && 'translate-y-[5px] rotate-45',
-                  )}
-                />
-                <span
-                  className={cn(
-                    'absolute left-0 top-[15px] h-0.5 w-6 rounded-full bg-off-white transition-transform duration-300 ease-out',
-                    isMenuOpen && '-translate-y-[5px] -rotate-45',
-                  )}
+      <header ref={headerRef} className="pointer-events-none fixed inset-x-0 top-0 z-[70] px-3 pt-4 sm:px-6 sm:pt-5 lg:px-10 lg:pt-7">
+        <div className="relative mx-auto flex max-w-[112rem] items-center justify-between">
+          <Link
+            to={isArabic ? '/ar' : '/'}
+            className="pointer-events-auto flex h-[60px] w-11 shrink-0 items-center justify-center overflow-visible transition-transform hover:-translate-y-0.5 sm:w-14 lg:h-[70px] lg:w-[86px]"
+            aria-label={isArabic ? 'الصفحة الرئيسية لديجي-تك' : 'DIGI-TEC home'}
+          >
+            {colorTheme === 'dark' ? (
+              <span className="relative block h-12 w-11 overflow-hidden sm:w-14 lg:h-[70px] lg:w-[86px]" aria-hidden="true">
+                <img
+                  src="/images/digitec-d-mark.png"
+                  alt=""
+                  className="absolute left-1/2 top-1/2 w-[220px] max-w-none -translate-x-1/2 -translate-y-1/2 mix-blend-screen sm:w-[250px] lg:w-[350px]"
                 />
               </span>
-            </button>
+            ) : (
+              <span className="d-logo-mark block h-10 w-11 sm:h-11 sm:w-14 lg:h-[52px] lg:w-[70px]" aria-hidden="true" />
+            )}
+          </Link>
+
+          <div className="pointer-events-auto relative w-[calc(100%-3.25rem)] max-w-[258px] lg:absolute lg:left-1/2 lg:w-[258px] lg:-translate-x-1/2">
+            <div className={cn(
+              'flex h-[60px] items-center rounded-full border px-1.5 shadow-[0_12px_32px_rgba(0,0,0,0.24)] transition-colors duration-300',
+              colorTheme === 'light'
+                ? 'border-black/[0.08] bg-white text-[#171819]'
+                : 'border-white/[0.08] bg-[#171819] text-white',
+              isScrolled && 'shadow-[0_14px_36px_rgba(0,0,0,0.36)]',
+            )}>
+              <button
+                type="button"
+                onClick={() => { setIsMenuOpen((open) => !open); setIsLanguageOpen(false); }}
+                className={cn(
+                  'flex h-11 shrink-0 items-center gap-2.5 rounded-full px-3 text-left text-sm font-semibold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-burnt-orange',
+                  isArabic ? 'w-[104px]' : 'w-[92px]',
+                  colorTheme === 'light' ? 'hover:bg-black/[0.05]' : 'hover:bg-white/[0.05]',
+                )}
+                aria-expanded={isMenuOpen}
+                aria-controls="floating-navigation"
+              >
+                {isMenuOpen ? <X className="h-4 w-4 opacity-70" /> : <Menu className="h-4 w-4 opacity-70" />}
+                <span>{isArabic ? 'القائمة' : 'Menu'}</span>
+              </button>
+
+              <button
+                type="button"
+                onClick={() => setColorTheme((theme) => theme === 'dark' ? 'light' : 'dark')}
+                className={cn(
+                  'mx-0.5 flex h-9 w-9 shrink-0 items-center justify-center rounded-full border transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-burnt-orange',
+                  colorTheme === 'light' ? 'border-black/15 hover:bg-black/[0.05]' : 'border-white/18 hover:bg-white/[0.05]',
+                )}
+                aria-label={colorTheme === 'dark' ? (isArabic ? 'تفعيل المظهر الفاتح' : 'Use light theme') : (isArabic ? 'تفعيل المظهر الداكن' : 'Use dark theme')}
+                title={colorTheme === 'dark' ? (isArabic ? 'المظهر الفاتح' : 'Light theme') : (isArabic ? 'المظهر الداكن' : 'Dark theme')}
+              >
+                {colorTheme === 'dark' ? <Sun className="h-[17px] w-[17px]" strokeWidth={1.6} /> : <Moon className="h-[17px] w-[17px]" strokeWidth={1.6} />}
+              </button>
+
+              <div className="relative ml-1">
+                <button
+                  type="button"
+                  onClick={() => { setIsLanguageOpen((open) => !open); setIsMenuOpen(false); }}
+                  className={cn(
+                    'flex h-10 min-w-[70px] items-center justify-center gap-1.5 rounded-full px-3 text-sm font-semibold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-burnt-orange',
+                    colorTheme === 'light' ? 'bg-black/[0.06] hover:bg-black/[0.1]' : 'bg-white/[0.08] hover:bg-white/[0.13]',
+                  )}
+                  aria-label={isArabic ? localeMessages.ar.language.menu : localeMessages.en.language.menu}
+                  aria-expanded={isLanguageOpen}
+                >
+                  {isArabic ? 'AR' : 'EN'}
+                  <ChevronDown className={cn('h-4 w-4 opacity-60 transition-transform', isLanguageOpen && 'rotate-180')} />
+                </button>
+
+                <div className={cn(
+                  'absolute right-0 top-[calc(100%+0.75rem)] w-36 origin-top-right overflow-hidden rounded-2xl border p-1.5 shadow-2xl transition-all',
+                  colorTheme === 'light' ? 'border-black/10 bg-white text-[#171819]' : 'border-white/10 bg-[#171922] text-white',
+                  isLanguageOpen ? 'visible scale-100 opacity-100' : 'invisible scale-95 opacity-0',
+                )}>
+                  <Link to={englishPath} onClick={() => rememberLocale('en')} className={cn('block rounded-xl px-4 py-2.5 text-sm font-semibold', colorTheme === 'light' ? 'hover:bg-black/[0.05]' : 'hover:bg-white/10', !isArabic && 'text-burnt-orange')}>English</Link>
+                  <Link to={arabicPath} onClick={() => rememberLocale('ar')} className={cn('block rounded-xl px-4 py-2.5 text-sm font-semibold', colorTheme === 'light' ? 'hover:bg-black/[0.05]' : 'hover:bg-white/10', isArabic && 'text-burnt-orange')}>العربية</Link>
+                </div>
+              </div>
+            </div>
+
+            <nav
+              id="floating-navigation"
+              className={cn(
+                'absolute left-0 right-0 top-[calc(100%+0.75rem)] origin-top overflow-hidden rounded-[1.25rem] border p-2.5 shadow-2xl transition-all duration-200',
+                colorTheme === 'light' ? 'border-black/10 bg-white text-[#171819] shadow-black/15' : 'border-white/10 bg-[#171922] text-white shadow-black/60',
+                isMenuOpen ? 'visible translate-y-0 scale-100 opacity-100' : 'invisible -translate-y-2 scale-[0.98] opacity-0',
+              )}
+              aria-label={isArabic ? 'التنقل الرئيسي' : 'Main navigation'}
+            >
+              <div className="grid grid-cols-2 gap-1">
+                {links.map((item) => (
+                  <Link key={item.href} to={item.href} className={cn('rounded-xl px-3 py-3 text-sm font-semibold opacity-75 transition-colors hover:opacity-100', colorTheme === 'light' ? 'hover:bg-black/[0.05]' : 'hover:bg-white/[0.07]')}>{item.name}</Link>
+                ))}
+              </div>
+              <a href={whatsappHref} target="_blank" rel="noopener noreferrer" className="mt-2 flex items-center justify-center rounded-2xl bg-burnt-orange px-4 py-3 text-sm font-bold text-white transition-colors hover:bg-orange-600">
+                {isArabic ? 'تواصل معنا' : 'Contact Us'}
+              </a>
+            </nav>
           </div>
+
+          <a
+            href={whatsappHref}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={cn(
+              'pointer-events-auto hidden min-h-[52px] min-w-[156px] items-center justify-center rounded-full border px-6 text-sm font-semibold shadow-[0_12px_32px_rgba(0,0,0,0.16)] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-burnt-orange lg:flex',
+              colorTheme === 'light' ? 'border-black/[0.08] bg-white text-[#171819] hover:bg-[#f4f4f2]' : 'border-transparent bg-[#171819] text-white hover:bg-[#202122]',
+            )}
+          >
+            {isArabic ? 'تواصل معنا' : 'Contact Us'}
+          </a>
         </div>
       </header>
 
-      <div id="mobile-navigation" className={cn('fixed inset-0 top-16 z-[60] transition-all duration-300 md:top-20 lg:hidden', isMenuOpen ? 'visible opacity-100' : 'invisible opacity-0')}>
-        <div className="absolute inset-0 bg-black/80 backdrop-blur-sm" onClick={closeMenus} />
-        <div className={cn('relative h-[calc(100dvh-4rem)] overflow-y-auto overscroll-contain border-t border-white/10 bg-[#101113]/98 px-4 pb-[max(1.5rem,env(safe-area-inset-bottom))] pt-4 shadow-2xl transition-transform duration-300 md:h-[calc(100dvh-5rem)] sm:px-6', isMenuOpen ? 'translate-y-0' : '-translate-y-full')}>
-          <nav className="mx-auto max-w-xl space-y-1.5" aria-label={isArabic ? 'التنقل عبر الهاتف' : 'Mobile navigation'}>
-            {links.map((item) => <Link key={item.href} to={item.href} onClick={closeMenus} className="mobile-link">{item.name}</Link>)}
-          </nav>
-          <div className="mx-auto mt-6 flex max-w-xl items-center gap-2 border-t border-white/10 px-3 pt-5 text-sm">
-            <Link to={englishPath} onClick={() => { rememberLocale('en'); closeMenus(); }} className={cn('rounded-md px-2.5 py-1.5 font-bold', !isArabic ? 'bg-burnt-orange/15 text-burnt-orange' : 'text-gray-400')}>English</Link>
-            <Link to={arabicPath} onClick={() => { rememberLocale('ar'); closeMenus(); }} className={cn('rounded-md px-2.5 py-1.5 font-bold', isArabic ? 'bg-burnt-orange/15 text-burnt-orange' : 'text-gray-400')}>العربية</Link>
-          </div>
-        </div>
-      </div>
-
-      <div className="h-16 md:h-20" />
-
+      {!isHome && <div className="h-[98px] lg:h-[126px]" />}
     </>
   );
 };

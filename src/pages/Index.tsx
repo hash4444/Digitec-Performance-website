@@ -70,7 +70,7 @@ const Index = () => {
   });
 
   return (
-    <div className="min-h-screen bg-black text-off-white">
+    <div className="home-premium min-h-screen bg-black text-off-white">
       <Header />
       <div id="home">
         <Hero />

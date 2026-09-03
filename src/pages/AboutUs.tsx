@@ -20,6 +20,7 @@ import lamborghiniWorkshop from '@/assets/lamborghini-workshop-dubai.jpg';
 import porscheWorkshop from '@/assets/porsche-workshop-dubai.jpg';
 import lamborghiniUrusWorkshop from '@/assets/lamborghini-urus-workshop-dubai.jpg';
 import { useLocale } from '@/i18n/use-locale';
+import { PageIntro } from '@/components/PageIntro';
 
 const AboutUs = () => {
   const { isArabic } = useLocale();
@@ -52,39 +53,14 @@ const AboutUs = () => {
   });
 
   return (
-    <div className="min-h-screen bg-black text-off-white">
+    <div className="site-page min-h-screen bg-black text-off-white">
       <Header />
 
-      {/* Hero */}
-      <section className="relative py-24 md:py-32 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-black via-charcoal/30 to-black" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_rgba(255,107,53,0.06)_0%,_transparent_70%)]" />
-        <div className="relative z-10 max-w-4xl mx-auto px-5 sm:px-6 text-center">
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            className="eyebrow mb-4"
-          >
-            {isArabic ? 'من نحن' : 'Who We Are'}
-          </motion.p>
-          <motion.h1
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.2 }}
-            className="text-4xl sm:text-5xl md:text-6xl font-black mb-6"
-          >
-            {isArabic ? <>عن <span className="text-burnt-orange">D</span>IGI-TEC</> : <>About <span className="text-burnt-orange">D</span>IGI-TEC</>}
-          </motion.h1>
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.4 }}
-            className="text-white/50 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed"
-          >
-            {isArabic ? 'ورشة سيارات مستقلة في دبي منذ عام 2002، لخدمات الفحص والصيانة والإصلاح للسيارات الألمانية والفاخرة وعالية الأداء والكهربائية.' : 'An independent Dubai car workshop established in 2002, offering inspection, maintenance and repair services for German, luxury, performance and electric vehicles.'}
-          </motion.p>
-        </div>
-      </section>
+      <PageIntro
+        eyebrow={isArabic ? 'من نحن' : 'Who We Are'}
+        title={isArabic ? <>عن <span className="text-burnt-orange">D</span>IGI-TEC</> : <>About <span className="text-burnt-orange">D</span>IGI-TEC</>}
+        description={isArabic ? 'ورشة سيارات مستقلة في دبي منذ عام 2002، لخدمات الفحص والصيانة والإصلاح للسيارات الألمانية والفاخرة وعالية الأداء والكهربائية.' : 'An independent Dubai car workshop established in 2002, offering inspection, maintenance and repair services for German, luxury, performance and electric vehicles.'}
+      />
       <AnswerBlock
         question={isArabic ? 'لماذا يختار الملاك ديجي-تك في دبي؟' : 'Why do owners choose Digi-Tec in Dubai?'}
         answer={isArabic

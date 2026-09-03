@@ -149,31 +149,31 @@ export const FAQ = () => {
   const copy = isArabic ? arHome.faq : null;
 
   return (
-    <section className="py-10 sm:py-20 bg-black text-white relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-br from-black via-charcoal/20 to-black"></div>
-
-      <div className="container mx-auto px-4 sm:px-6 relative z-10">
+    <section className="home-section bg-[#0c0d0e] text-white">
+      <div className="home-container">
         {/* Section Header */}
-        <Reveal className="text-center mb-6 sm:mb-12">
-          <span className="eyebrow mb-3 sm:mb-5">{copy?.eyebrow ?? 'Answers'}</span>
-          <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold mb-3 sm:mb-4 text-white">
+        <Reveal className="mb-12 grid gap-5 lg:mb-16 lg:grid-cols-2 lg:items-end">
+          <div>
+          <p className="home-kicker mb-4">{copy?.eyebrow ?? 'Answers'}</p>
+          <h2 className="home-heading">
             {copy?.title ?? 'Frequently Asked Questions'}
           </h2>
-          <p className="text-off-white/60 mt-3 sm:mt-6 max-w-2xl mx-auto text-sm sm:text-base leading-snug sm:leading-relaxed px-2">
+          </div>
+          <p className="home-lead lg:justify-self-end">
             {copy?.description ?? 'Browse by topic to find answers about our services, expertise, and process.'}
           </p>
         </Reveal>
 
         {/* Category Tabs */}
-        <div className="max-w-4xl mx-auto mb-6 sm:mb-10 flex sm:flex-wrap sm:justify-center gap-2 sm:gap-3 overflow-x-auto flex-nowrap pb-2 -mx-4 px-4 sm:mx-0 sm:px-0">
+        <div className="mb-10 flex gap-7 overflow-x-auto border-b border-white/[0.09]">
           {categories.map((cat) => (
             <button
               key={cat.id}
               onClick={() => setActiveCategory(cat.id)}
-              className={`shrink-0 px-3 py-1.5 sm:px-5 sm:py-2.5 rounded-full text-xs sm:text-sm font-semibold transition-all duration-300 border ${
+              className={`shrink-0 border-b-2 px-0 pb-4 text-sm font-medium transition-colors ${
                 activeCategory === cat.id
-                  ? 'bg-burnt-orange text-white border-burnt-orange shadow-lg'
-                  : 'bg-charcoal/30 text-off-white/70 border-off-white/10 hover:border-burnt-orange/50 hover:text-white'
+                  ? 'border-burnt-orange text-white'
+                  : 'border-transparent text-white/40 hover:text-white'
               }`}
             >
               {cat.label}
@@ -183,18 +183,18 @@ export const FAQ = () => {
         </div>
 
         {/* FAQ Accordion */}
-        <div className="max-w-4xl mx-auto mb-10 sm:mb-16">
-          <Accordion type="single" collapsible className="space-y-3 sm:space-y-4" key={current.id}>
+        <div className="mx-auto mb-16 max-w-4xl">
+          <Accordion type="single" collapsible className="border-t border-white/[0.09]" key={current.id}>
             {current.faqs.map((faq, index) => (
               <AccordionItem
                 key={`${current.id}-${index}`}
                 value={`item-${index}`}
-                className="bg-charcoal/30 backdrop-blur-sm rounded-xl border border-off-white/10 overflow-hidden hover:border-burnt-orange/50 transition-all duration-300"
+                className="border-b border-white/[0.09]"
               >
-                <AccordionTrigger className="px-4 py-3 sm:px-6 sm:py-4 text-left font-bold text-sm sm:text-lg text-white hover:text-burnt-orange transition-colors duration-300 hover:no-underline [&[data-state=open]]:text-burnt-orange [&[data-state=open]]:border-b [&[data-state=open]]:border-burnt-orange/20">
+                <AccordionTrigger className="py-6 text-left text-base font-medium text-white transition-colors hover:text-burnt-orange hover:no-underline sm:text-lg [&[data-state=open]]:text-burnt-orange">
                   {faq.question}
                 </AccordionTrigger>
-                <AccordionContent className="px-4 pb-4 sm:px-6 sm:pb-6 text-off-white/80 leading-snug sm:leading-relaxed text-sm sm:text-base">
+                <AccordionContent className="max-w-3xl pb-6 text-sm leading-7 text-white/50 sm:text-base">
                   {faq.answer}
                 </AccordionContent>
               </AccordionItem>
@@ -203,16 +203,16 @@ export const FAQ = () => {
         </div>
 
         {/* CTA Section */}
-        <div className="text-center space-y-4 sm:space-y-6">
-          <h3 className="text-lg sm:text-2xl font-bold text-white mb-3 sm:mb-6">
+        <div className="border-t border-white/[0.09] pt-8 text-center">
+          <h3 className="mb-5 text-xl font-semibold text-white">
             {copy?.still ?? 'Still have questions?'}
           </h3>
-          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center">
+          <div className="flex justify-center">
             <a
               href="https://wa.me/97143402223?text=Hi%2C%20I%20have%20a%20question%20about%20your%20services."
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-primary"
+              className="home-button home-button-primary"
             >
               <MessageCircle className="w-4 h-4 sm:w-5 sm:h-5" />
               {copy?.chat ?? 'Chat with us now'}

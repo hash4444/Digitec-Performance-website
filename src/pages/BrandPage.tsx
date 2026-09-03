@@ -502,7 +502,7 @@ const BrandPage = () => {
     ?? (isMercedesServiceHub ? 'Mercedes-Benz and AMG vehicles inside the Digi-Tec specialist workshop in Dubai' : '');
 
   return (
-    <div className={`min-h-screen bg-black text-off-white ${isPriorityLeadBrand ? 'pb-20 md:pb-0' : ''}`}>
+    <div className={`site-page min-h-screen bg-black text-off-white ${isPriorityLeadBrand ? 'pb-20 md:pb-0' : ''}`}>
       <Header />
 
       {(isMercedesServiceHub || isPorscheServiceHub || isBmwServiceHub) && (
@@ -522,7 +522,7 @@ const BrandPage = () => {
       )}
 
       {/* Hero */}
-      <section className="relative bg-black overflow-hidden">
+      <section className="theme-dark-section relative overflow-hidden border-b border-white/[0.08] bg-black">
         {heroImage ? (
           <>
             <img
@@ -532,32 +532,32 @@ const BrandPage = () => {
               fetchPriority="high"
               width={priorityBrandSeo?.heroImageWidth}
               height={priorityBrandSeo?.heroImageHeight}
-              className={`absolute inset-0 h-full w-full object-cover opacity-60 ${isMercedesServiceHub ? 'object-[center_52%]' : 'object-center'}`}
+              className={`absolute inset-0 h-full w-full object-cover opacity-70 ${isMercedesServiceHub ? 'object-[center_52%]' : 'object-center'}`}
             />
-            <div className={`absolute inset-0 ${isMercedesServiceHub ? 'bg-black/75' : 'bg-black/80'}`} />
+            <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(8,9,10,0.93)_0%,rgba(8,9,10,0.7)_52%,rgba(8,9,10,0.38)_100%)]" />
           </>
         ) : (
           <div className="absolute inset-0 bg-gradient-to-b from-burnt-orange/10 via-transparent to-transparent" />
         )}
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-10 sm:py-20 lg:py-24 relative z-10">
-          <div className="max-w-4xl mx-auto">
+        <div className="relative z-10 mx-auto max-w-[90rem] px-5 py-16 sm:px-8 sm:py-24 lg:px-12 lg:py-28">
+          <div className="max-w-4xl">
             <div>
-              <div className="flex items-center gap-4 mb-5 sm:mb-6">
-                <div className="w-16 h-16 sm:w-20 sm:h-20 p-2 bg-white/90 rounded-full shadow-xl flex items-center justify-center overflow-hidden">
+              <div className="mb-6 flex items-center gap-4">
+                <div className="flex h-14 w-20 items-center justify-center overflow-hidden bg-white/[0.94] p-2 sm:h-16 sm:w-24">
                   {brand.logo ? (
                     <img src={brand.logo} alt={`${brand.name} logo`} className="w-full h-full object-contain" />
                   ) : (
-                    <span className="text-2xl font-black text-burnt-orange">{brand.name.charAt(0)}</span>
+                    <span className="text-2xl font-semibold text-burnt-orange">{brand.name.charAt(0)}</span>
                   )}
                 </div>
-                <span className="text-burnt-orange font-bold uppercase tracking-widest text-xs sm:text-sm">
+                <span className="home-kicker">
                   {brand.specialization}
                 </span>
               </div>
-              <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black mb-4 sm:mb-6 leading-tight">
-                {brand.name} <span className="text-burnt-orange">{isArabic ? 'للإصلاح والصيانة في دبي' : isMercedesServiceHub ? 'Repair & Service Dubai' : 'Repair & Service Dubai'}</span>
+              <h1 className="mb-5 max-w-4xl text-[clamp(2.75rem,5vw,5.25rem)] font-semibold leading-[0.98] tracking-[-0.05em]">
+                {brand.name} <span className="text-white/62">{isArabic ? 'للإصلاح والصيانة في دبي' : isMercedesServiceHub ? 'Repair & Service Dubai' : 'Repair & Service Dubai'}</span>
               </h1>
-              <p className="text-gray-300 text-base sm:text-lg leading-relaxed mb-6 sm:mb-8 max-w-2xl">
+              <p className="mb-8 max-w-2xl text-base leading-8 text-white/62 sm:text-lg">
                 {brand.intro}
               </p>
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">

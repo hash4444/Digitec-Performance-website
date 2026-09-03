@@ -11,6 +11,7 @@ import { brandWorkshopArticleSummaries } from '@/data/brandWorkshopArticles';
 import { buildBreadcrumb, buildWebPage, organizationRef, pageGraph } from '@/lib/schema';
 import { useLocale } from '@/i18n/use-locale';
 import { categoryArabic, localizePostSummaryToArabic } from '@/i18n/ar-blog';
+import { PageIntro } from '@/components/PageIntro';
 
 const Blog = () => {
   const { isArabic } = useLocale();
@@ -73,52 +74,27 @@ const Blog = () => {
   );
 
   return (
-    <div className="min-h-screen bg-black text-off-white">
+    <div className="site-page min-h-screen bg-black text-off-white">
       <Header />
 
-      {/* Hero */}
-      <section className="relative py-24 md:py-32 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-black via-charcoal/30 to-black" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_rgba(255,107,53,0.06)_0%,_transparent_70%)]" />
-        <div className="relative z-10 max-w-4xl mx-auto px-5 sm:px-6 text-center">
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            className="eyebrow mb-4"
-          >
-            {isArabic ? 'خبرة ومعرفة' : 'Insights & Expertise'}
-          </motion.p>
-          <motion.h1
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.2 }}
-            className="text-4xl sm:text-5xl md:text-6xl font-black mb-6"
-          >
-            {isArabic ? <>مجلة <span className="text-burnt-orange">ديجي-تك</span></> : <>The <span className="text-burnt-orange">Digitec</span> Journal</>}
-          </motion.h1>
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.4 }}
-            className="text-white/50 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed"
-          >
-            {isArabic ? 'مقالات هندسية وأدلة لتطوير الأداء والعناية بالسيارات الفاخرة يكتبها فريق ورشتنا في دبي.' : 'Engineering insights, tuning deep dives, and luxury car care guides written by our Dubai workshop team.'}
-          </motion.p>
-        </div>
-      </section>
+      <PageIntro
+        eyebrow={isArabic ? 'خبرة ومعرفة' : 'Insights & Expertise'}
+        title={isArabic ? <>مجلة <span className="text-burnt-orange">ديجي-تك</span></> : <>The <span className="text-burnt-orange">Digitec</span> Journal</>}
+        description={isArabic ? 'مقالات هندسية وأدلة لتطوير الأداء والعناية بالسيارات الفاخرة يكتبها فريق ورشتنا في دبي.' : 'Engineering insights, tuning deep dives, and luxury car care guides written by our Dubai workshop team.'}
+      />
 
       {/* Category filter */}
-      <section className="pb-8">
-        <div className="max-w-6xl mx-auto px-5 sm:px-6">
-          <div className="flex flex-wrap gap-2 justify-center">
+      <section className="border-b border-white/[0.08] py-7">
+        <div className="mx-auto max-w-[90rem] px-5 sm:px-8 lg:px-12">
+          <div className="flex flex-wrap gap-x-6 gap-y-3">
             {blogCategories.map((cat) => (
               <button
                 key={cat}
                 onClick={() => setActiveCategory(cat)}
-                className={`px-5 py-2 rounded-full text-sm font-semibold transition-all duration-300 border ${
+                className={`border-b py-2 text-sm font-medium transition-colors ${
                   activeCategory === cat
-                    ? 'bg-burnt-orange text-white border-burnt-orange'
-                    : 'bg-white/[0.03] text-white/60 border-white/10 hover:border-burnt-orange/40 hover:text-white'
+                    ? 'border-burnt-orange text-white'
+                    : 'border-transparent text-white/48 hover:border-white/30 hover:text-white'
                 }`}
               >
                 {isArabic ? categoryArabic[cat] ?? cat : cat}
@@ -129,9 +105,9 @@ const Blog = () => {
       </section>
 
       {/* Posts grid */}
-      <section className="pb-20 md:pb-28">
-        <div className="max-w-6xl mx-auto px-5 sm:px-6">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <section className="py-16 md:py-24">
+        <div className="mx-auto max-w-[90rem] px-5 sm:px-8 lg:px-12">
+          <div className="grid grid-cols-1 gap-x-8 gap-y-14 md:grid-cols-2 lg:grid-cols-3">
             {filtered.map((post, idx) => (
               <motion.article
                 key={post.slug}
@@ -143,10 +119,10 @@ const Blog = () => {
               >
                 <Link
                   to={`/blog/${post.slug}`}
-                  className="card-premium block rounded-2xl overflow-hidden transition-all duration-500 h-full"
+                  className="block h-full overflow-hidden"
                 >
                   <div
-                    className={`aspect-[16/10] bg-gradient-to-br ${post.coverGradient} relative overflow-hidden`}
+                    className={`relative aspect-[16/10] overflow-hidden rounded-lg bg-gradient-to-br ${post.coverGradient}`}
                   >
                     {post.coverImage && (
                       <img
@@ -156,15 +132,12 @@ const Blog = () => {
                         loading={idx < 3 ? 'eager' : 'lazy'}
                       />
                     )}
-                    <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_rgba(255,107,53,0.3),_transparent_60%)]" />
-                    <div className="absolute bottom-4 left-4">
-                      <span className="px-3 py-1 rounded-full bg-black/60 backdrop-blur-sm text-burnt-orange text-xs font-bold uppercase tracking-wider border border-burnt-orange/30">
-                        {isArabic ? categoryArabic[post.category] ?? post.category : post.category}
-                      </span>
-                    </div>
                   </div>
-                  <div className="p-6">
-                    <div className="flex items-center gap-4 text-white/40 text-xs mb-3">
+                  <div className="pt-5">
+                    <div className="mb-3 text-[0.68rem] font-semibold uppercase tracking-[0.16em] text-burnt-orange">
+                      {isArabic ? categoryArabic[post.category] ?? post.category : post.category}
+                    </div>
+                    <div className="mb-3 flex items-center gap-4 text-xs text-white/38">
                       <span className="flex items-center gap-1.5">
                         <Calendar className="w-3 h-3" />
                         {new Date(post.date).toLocaleDateString(isArabic ? 'ar-AE' : 'en-GB', {
@@ -179,13 +152,13 @@ const Blog = () => {
                         {isArabic ? post.readTime.replace('min read', 'دقيقة قراءة') : post.readTime}
                       </span>
                     </div>
-                    <h2 className="text-lg font-bold mb-3 group-hover:text-burnt-orange transition-colors leading-snug">
+                    <h2 className="mb-3 text-xl font-semibold leading-snug tracking-[-0.025em] transition-colors group-hover:text-burnt-orange">
                       {post.title}
                     </h2>
-                    <p className="text-white/50 text-sm leading-relaxed mb-4 line-clamp-3">
+                    <p className="mb-4 line-clamp-3 text-sm leading-relaxed text-white/48">
                       {post.excerpt}
                     </p>
-                    <span className="inline-flex items-center gap-2 text-burnt-orange text-sm font-semibold">
+                    <span className="inline-flex items-center gap-2 text-sm font-medium text-burnt-orange">
                       {isArabic ? 'اقرأ المقال' : 'Read article'}
                       <ArrowRight className={`w-4 h-4 transition-transform ${isArabic ? 'rotate-180 group-hover:-translate-x-1' : 'group-hover:translate-x-1'}`} />
                     </span>

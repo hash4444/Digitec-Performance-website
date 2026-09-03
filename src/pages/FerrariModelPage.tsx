@@ -103,7 +103,7 @@ const FerrariModelPage = () => {
           </ol>
         </nav>
 
-        <section className="relative isolate overflow-hidden border-b border-white/10 bg-charcoal/20">
+        <section className="theme-dark-section relative isolate overflow-hidden border-b border-white/10 bg-charcoal/20">
           <img
             src={workshopImage}
             alt="Ferrari in the DIGI-TEC Performance Centre workshop in Dubai"

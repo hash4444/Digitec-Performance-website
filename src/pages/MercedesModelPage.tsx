@@ -113,7 +113,7 @@ const MercedesModelPage = () => {
           </ol>
         </nav>
 
-        <section className="relative isolate overflow-hidden border-b border-white/10 bg-charcoal/20">
+        <section className="theme-dark-section relative isolate overflow-hidden border-b border-white/10 bg-charcoal/20">
           <img
             src={workshopImage}
             alt={`${model.name} service and repair support at the Digi-Tec Mercedes workshop in Dubai`}

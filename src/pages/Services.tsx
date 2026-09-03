@@ -6,6 +6,7 @@ import { AnswerBlock } from '@/components/AnswerBlock';
 import { Footer } from '@/components/Footer';
 import { TrustBar } from '@/components/TrustBar';
 import { FinalCTA } from '@/components/FinalCTA';
+import { PageIntro } from '@/components/PageIntro';
 
 import { services } from '@/data/services';
 import { buildBreadcrumb, buildWebPage, pageGraph } from '@/lib/schema';
@@ -70,22 +71,14 @@ const Services = () => {
   });
 
   return (
-    <div className="min-h-screen bg-black text-off-white">
+    <div className="site-page min-h-screen bg-black text-off-white">
       <Header />
 
-      {/* Hero */}
-      <section className="relative py-12 sm:py-24">
-        <div className="absolute inset-0 bg-gradient-to-b from-burnt-orange/10 via-transparent to-transparent" />
-        <div className="relative max-w-6xl mx-auto px-4 sm:px-6 text-center">
-          <span className="eyebrow mb-2 sm:mb-4">{isArabic ? 'ما نقدمه' : 'What We Offer'}</span>
-          <h1 className="text-2xl sm:text-5xl md:text-6xl font-black mb-2 sm:mb-4">
-            {isArabic ? 'خدماتنا' : 'Our Services'}
-          </h1>
-          <p className="text-gray-400 text-xs sm:text-lg max-w-4xl mx-auto leading-snug sm:leading-relaxed">
-            {isArabic ? 'يعرض مركز ديجي-تك خدمات صيانة وفحص وإصلاح وبرمجة وأعمال هيكل وعناية بالسيارات من ورشته المستقلة في القوز، دبي. يمكن لمالكي السيارات الأوروبية والفاخرة وبعض السيارات الكهربائية واليومية إرسال رقم الهيكل وتفاصيل العطل أو الخدمة المطلوبة للتأكد من التغطية وتحديد نطاق الفحص المناسب قبل الموعد.' : 'Digi-Tec lists vehicle maintenance, inspection, repair, programming, bodywork and car-care services from its independent workshop in Al Quoz, Dubai. Owners of European, luxury, selected electric and everyday vehicles can share the VIN and requested service or symptoms so coverage and the appropriate inspection scope can be confirmed before an appointment.'}
-          </p>
-        </div>
-      </section>
+      <PageIntro
+        eyebrow={isArabic ? 'ما نقدمه' : 'What We Offer'}
+        title={isArabic ? 'خدماتنا' : 'Our Services'}
+        description={isArabic ? 'يعرض مركز ديجي-تك خدمات صيانة وفحص وإصلاح وبرمجة وأعمال هيكل وعناية بالسيارات من ورشته المستقلة في القوز، دبي. يمكن لمالكي السيارات الأوروبية والفاخرة وبعض السيارات الكهربائية واليومية إرسال رقم الهيكل وتفاصيل العطل أو الخدمة المطلوبة للتأكد من التغطية وتحديد نطاق الفحص المناسب قبل الموعد.' : 'Digi-Tec lists vehicle maintenance, inspection, repair, programming, bodywork and car-care services from its independent workshop in Al Quoz, Dubai. Owners of European, luxury, selected electric and everyday vehicles can share the VIN and requested service or symptoms so coverage and the appropriate inspection scope can be confirmed before an appointment.'}
+      />
       <AnswerBlock
         question={isArabic ? 'ما الخدمات التي يقدمها ديجي-تك في دبي؟' : 'What car services does Digi-Tec offer in Dubai?'}
         answer={isArabic
@@ -105,28 +98,28 @@ const Services = () => {
       <TrustBar className="mb-8 sm:mb-16" />
 
       {/* Services by Category */}
-      <section className="pb-12 sm:pb-24">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 space-y-8 sm:space-y-16">
+      <section className="pb-16 sm:pb-28">
+        <div className="mx-auto max-w-[90rem] space-y-14 px-5 sm:space-y-20 sm:px-8 lg:px-12">
           {categories.map((cat) => {
             const items = services.filter((s) => s.category === cat && s.slug !== 'mercedes-repair-dubai');
             if (items.length === 0) return null;
             return (
-              <div key={cat}>
-                <h2 className={`text-lg sm:text-3xl font-bold mb-4 sm:mb-8 ${isArabic ? 'border-r-4 pr-3 sm:pr-4' : 'border-l-4 pl-3 sm:pl-4'} border-burnt-orange`}>
+              <div key={cat} className="border-t border-white/[0.09] pt-6 sm:pt-8">
+                <h2 className="mb-6 max-w-2xl text-2xl font-semibold tracking-[-0.03em] text-white sm:mb-9 sm:text-3xl">
                   {isArabic ? arHome.services.categories[cat] : categoryHeadings[cat]}
                 </h2>
-                <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-3 gap-2.5 sm:gap-5 lg:gap-6">
+                <div className="grid grid-cols-2 gap-x-3 gap-y-7 sm:grid-cols-3 sm:gap-x-6 sm:gap-y-10 lg:gap-x-8">
                   {items.map((s) => (
                     <Link
                       key={s.slug}
                       to={`/services/${s.slug}`}
-                      className="card-premium group rounded-xl sm:rounded-2xl overflow-hidden transition-all duration-300"
+                      className="group block overflow-hidden"
                     >
-                      <div className="aspect-[4/3] overflow-hidden">
+                      <div className="aspect-[4/3] overflow-hidden rounded-lg bg-white/[0.03]">
                         <img
                           src={s.image}
                           alt={isArabic ? arServiceCards[s.slug]?.title ?? s.title : s.title}
-                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                          className="h-full w-full object-cover transition duration-500 group-hover:scale-[1.025] group-hover:opacity-90"
                           loading="lazy"
                           onError={(e) => {
                             e.currentTarget.src =
@@ -134,11 +127,11 @@ const Services = () => {
                           }}
                         />
                       </div>
-                      <div className="p-2.5 sm:p-4 lg:p-5">
-                        <h3 className="font-bold text-[13px] sm:text-base lg:text-lg leading-tight group-hover:text-burnt-orange transition-colors line-clamp-2">
+                      <div className="pt-3 sm:pt-4">
+                        <h3 className="line-clamp-2 text-sm font-semibold leading-tight tracking-[-0.01em] transition-colors group-hover:text-burnt-orange sm:text-base lg:text-lg">
                           {isArabic ? arServiceCards[s.slug]?.title ?? s.title : s.title}
                         </h3>
-                        <p className="text-gray-400 text-xs sm:text-sm mt-1 sm:mt-2 line-clamp-2">
+                        <p className="mt-1.5 line-clamp-2 text-xs leading-relaxed text-white/45 sm:text-sm">
                           {isArabic ? arServiceCards[s.slug]?.description ?? s.description : s.description}
                         </p>
                       </div>
@@ -154,10 +147,10 @@ const Services = () => {
       <FinalCTA />
 
       <section className="border-t border-white/10 bg-black py-12 sm:py-16" aria-labelledby="local-garage-services">
-        <div className="mx-auto max-w-6xl px-4 sm:px-6">
+        <div className="mx-auto max-w-[90rem] px-5 sm:px-8 lg:px-12">
           <div className="mb-7 max-w-2xl">
             <p className="eyebrow mb-3">{isArabic ? 'طرق أخرى لمساعدتك' : 'More Ways We Can Help'}</p>
-            <h2 id="local-garage-services" className="text-2xl font-black sm:text-4xl">{isArabic ? <>اختر <span className="text-burnt-orange">دعم الورشة المناسب</span></> : <>Find the right <span className="text-burnt-orange">workshop support</span></>}</h2>
+            <h2 id="local-garage-services" className="text-2xl font-semibold tracking-[-0.03em] sm:text-4xl">{isArabic ? <>اختر <span className="text-burnt-orange">دعم الورشة المناسب</span></> : <>Find the right <span className="text-burnt-orange">workshop support</span></>}</h2>
           </div>
           <div className="grid gap-4 md:grid-cols-3">
             {[
@@ -165,10 +158,10 @@ const Services = () => {
               { href: '/services/roadside-assistance-dubai', title: isArabic ? 'المساعدة على الطريق' : 'Roadside Assistance', text: isArabic ? 'احصل على إرشاد آمن وتنسيق النقل وفحص لاحق داخل الورشة.' : 'Get safe next-step guidance, recovery coordination and a follow-up workshop inspection.' },
               { href: '/services/car-garage-dubai', title: isArabic ? 'كراج سيارات في دبي' : 'Car Garage Dubai', text: isArabic ? 'خدمات متكاملة للصيانة والإصلاح والتشخيص وسيارات الأداء.' : 'Explore our complete garage support for servicing, repairs, diagnostics and performance cars.' },
             ].map((page) => (
-              <Link key={page.href} to={page.href} className="card-premium group rounded-2xl p-6 transition-all hover:border-burnt-orange/50">
-                <h3 className="text-xl font-black group-hover:text-burnt-orange">{page.title}</h3>
-                <p className="mt-3 text-sm leading-relaxed text-gray-400">{page.text}</p>
-                <span className="mt-5 inline-block text-sm font-bold text-burnt-orange">{isArabic ? 'استكشف الخدمة ←' : 'Explore service →'}</span>
+              <Link key={page.href} to={page.href} className="group border-t border-white/[0.1] py-6 transition-colors hover:border-burnt-orange/60">
+                <h3 className="text-xl font-semibold tracking-[-0.02em] group-hover:text-burnt-orange">{page.title}</h3>
+                <p className="mt-3 max-w-sm text-sm leading-relaxed text-white/48">{page.text}</p>
+                <span className="mt-5 inline-block text-sm font-medium text-burnt-orange">{isArabic ? 'استكشف الخدمة ←' : 'Explore service →'}</span>
               </Link>
             ))}
           </div>

@@ -3,7 +3,6 @@ import { buildBreadcrumb, buildService, buildWebPage, pageGraph } from '@/lib/sc
 import Header from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { motion } from 'framer-motion';
-import { ChevronDown } from 'lucide-react';
 import { useLocale } from '@/i18n/use-locale';
 import { arVrx } from '@/i18n/ar-vrx';
 
@@ -59,72 +58,30 @@ const VrxPage = () => {
   });
 
   return (
-    <div className="min-h-screen bg-black text-off-white">
+    <div className="site-page min-h-screen bg-black text-off-white">
       <Header />
 
       {/* Hero Section */}
-      <section className="relative min-h-[80vh] md:min-h-screen flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-black via-charcoal/50 to-black" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_rgba(255,107,53,0.08)_0%,_transparent_70%)]" />
-
-        <div className="relative z-10 text-center px-5 sm:px-6 max-w-5xl mx-auto py-20 md:py-0">
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.2 }}
-            className="eyebrow mb-4"
-          >
-            {isArabic ? arVrx.hero.eyebrow : 'Vehicle-Specific Inspection & Consultation'}
-          </motion.p>
-
-          <motion.h1
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.4 }}
-            className="text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-black mb-4 md:mb-6 tracking-tighter"
-          >
-            <span className="text-red-600">Mercedes V-Class VRX Consultation</span>
-          </motion.h1>
-
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.6 }}
-            className="text-lg sm:text-xl md:text-2xl text-white/60 mb-3"
-          >
-            {isArabic ? arVrx.hero.subtitle : 'Dubai workshop consultation for a Mercedes V-Class project.'}
-          </motion.p>
-
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.8 }}
-            className="text-sm sm:text-base md:text-lg text-white/40 max-w-2xl mx-auto leading-relaxed mb-10"
-          >
-            {isArabic ? arVrx.hero.description : 'Discuss the vehicle, its current condition, intended use, interior or exterior requests, and performance goals before a project scope is confirmed.'}
-          </motion.p>
-
-          {/* Hero Image */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.95 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ delay: 1, duration: 0.6 }}
-            className="relative max-w-4xl mx-auto mb-10"
-          >
+      <section className="border-b border-white/[0.08] py-16 sm:py-20 lg:py-24">
+        <div className="mx-auto grid max-w-[90rem] items-center gap-10 px-5 sm:px-8 lg:grid-cols-[0.82fr_1.18fr] lg:gap-16 lg:px-12">
+          <motion.div initial={{ opacity: 0, y: 18 }} animate={{ opacity: 1, y: 0 }}>
+            <p className="eyebrow mb-5">{isArabic ? arVrx.hero.eyebrow : 'Vehicle-Specific Inspection & Consultation'}</p>
+            <h1 className="text-[clamp(2.75rem,5vw,5rem)] font-semibold leading-[0.98] tracking-[-0.05em]">
+              Mercedes V-Class <span className="text-red-500">VRX</span> Consultation
+            </h1>
+            <p className="mt-6 text-lg text-white/64 sm:text-xl">
+              {isArabic ? arVrx.hero.subtitle : 'Dubai workshop consultation for a Mercedes V-Class project.'}
+            </p>
+            <p className="mt-4 max-w-xl text-sm leading-7 text-white/45 sm:text-base">
+              {isArabic ? arVrx.hero.description : 'Discuss the vehicle, its current condition, intended use, interior or exterior requests, and performance goals before a project scope is confirmed.'}
+            </p>
+          </motion.div>
+          <motion.div initial={{ opacity: 0, y: 18 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.15 }}>
             <img
               src="/images/vrx-hero.jpg"
               alt={isArabic ? 'مرسيدس V-Class VRX في دبي' : 'Mercedes V-Class VRX in Dubai'}
-              className="w-full h-auto rounded-2xl ring-1 ring-white/10 shadow-[0_24px_48px_-28px_rgba(0,0,0,0.8)]"
+              className="aspect-[4/3] w-full rounded-lg object-cover ring-1 ring-white/10"
             />
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 1.4 }}
-            className="animate-bounce"
-          >
-            <ChevronDown className="w-6 h-6 text-burnt-orange mx-auto" />
           </motion.div>
         </div>
       </section>

@@ -81,7 +81,7 @@ const BestWorkshopPage: React.FC = () => {
     .map((item) => (isArabic ? localizeBestWorkshopPageToArabic(item) : item));
 
   return (
-    <div className="min-h-screen bg-black text-off-white">
+    <div className="site-page min-h-screen bg-black text-off-white">
       <Header />
 
       {/* Breadcrumbs */}
@@ -94,25 +94,25 @@ const BestWorkshopPage: React.FC = () => {
       </nav>
 
       {/* Hero */}
-      <section className="relative bg-black overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-burnt-orange/10 via-transparent to-transparent" />
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 py-10 sm:py-16 lg:py-20 relative z-10">
+      <section className="relative overflow-hidden border-b border-white/[0.08] bg-[#101113]">
+        <div className="relative z-10 mx-auto max-w-[90rem] px-5 py-14 sm:px-8 sm:py-20 lg:px-12 lg:py-24">
+          <div className="max-w-4xl">
           {page.brandLogo && (
             <div className="flex items-center gap-4 mb-6">
-              <div className="w-14 h-14 sm:w-20 sm:h-20 p-2 bg-white/90 rounded-full shadow-xl flex items-center justify-center">
+              <div className="flex h-14 w-20 items-center justify-center bg-white/[0.94] p-2 sm:h-16 sm:w-24">
                 <img src={page.brandLogo} alt={isArabic ? `شعار ${page.brand}` : `${page.brand} logo`} className="w-full h-full object-contain" />
               </div>
-              <span className="text-burnt-orange font-bold uppercase tracking-widest text-[11px] sm:text-sm">
+              <span className="home-kicker">
                 {isArabic ? `متخصصون في ${page.brand}` : `${page.brand} Specialists`}
               </span>
             </div>
           )}
-          <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black mb-5 sm:mb-6 leading-tight">
+          <h1 className="mb-6 max-w-4xl text-[clamp(2.75rem,5vw,5.25rem)] font-semibold leading-[0.98] tracking-[-0.05em]">
             {page.h1}
           </h1>
 
           {/* Direct answer — quote-ready for AI assistants */}
-          <p className="card-premium text-gray-200 text-base sm:text-lg leading-relaxed rounded-2xl p-5 sm:p-6 mb-6 sm:mb-8">
+          <p className="mb-7 max-w-3xl border-l border-burnt-orange pl-5 text-base leading-8 text-white/62 sm:text-lg">
             {page.directAnswer}
           </p>
 
@@ -136,6 +136,7 @@ const BestWorkshopPage: React.FC = () => {
             </a>
           </div>
           <CtaAssurance className="mt-4" align="start" />
+          </div>
         </div>
       </section>
 

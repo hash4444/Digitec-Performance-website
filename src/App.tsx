@@ -38,6 +38,7 @@ const NotFound = lazy(() => import("./pages/NotFound"));
 import LegacyRedirectHandler from "./components/LegacyRedirectHandler";
 import LocaleRedirect from "./components/LocaleRedirect";
 import Analytics from "./components/Analytics";
+import CustomCursor from "./components/CustomCursor";
 import { audiModelPages, audiModelPath } from "./data/audiModelPages";
 import { ferrariModelPages } from "./data/ferrariModelPages";
 
@@ -94,6 +95,7 @@ const mercedesLegacyServicePages: Array<[string, string]> = [
 export const AppContent = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
+      <CustomCursor />
       <Toaster />
       <Sonner />
         <ScrollToTop />

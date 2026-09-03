@@ -81,29 +81,30 @@ const Tuning = () => {
   });
 
   return (
-    <div className="min-h-screen bg-black text-off-white">
+    <div className="site-page min-h-screen bg-black text-off-white">
       <Header />
       <section
-        className="relative min-h-[60vh] md:min-h-[80vh] flex items-center justify-center bg-cover bg-center bg-no-repeat"
+        className="theme-dark-section relative flex min-h-[68vh] items-end overflow-hidden bg-cover bg-center bg-no-repeat sm:min-h-[74vh]"
         style={{ backgroundImage: "url('/images/tuning-hero-bg.jpg')" }}
       >
-        <div className="absolute inset-0 bg-black/60" />
-        <div className="absolute bottom-0 inset-x-0 h-24 sm:h-32 bg-gradient-to-b from-transparent to-black" />
-        <div className="relative z-10 text-center px-5 sm:px-6 max-w-4xl mx-auto py-12 md:py-0">
-          <span className="eyebrow mb-4 sm:mb-6">{isArabic ? arTuning.hero.eyebrow : 'Vehicle-specific performance projects · Dubai'}</span>
-          <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold mb-4 md:mb-6 tracking-tight">
+        <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(8,9,10,0.9)_0%,rgba(8,9,10,0.58)_48%,rgba(8,9,10,0.2)_100%)]" />
+        <div className="absolute inset-x-0 bottom-0 h-44 bg-gradient-to-b from-transparent to-[#101113]" />
+        <div className="relative z-10 mx-auto w-full max-w-[90rem] px-5 pb-16 pt-24 sm:px-8 sm:pb-20 lg:px-12 lg:pb-24">
+          <div className="max-w-3xl">
+          <span className="eyebrow mb-5">{isArabic ? arTuning.hero.eyebrow : 'Vehicle-specific performance projects · Dubai'}</span>
+          <h1 className="mb-5 text-[clamp(2.75rem,5vw,5rem)] font-semibold leading-[0.98] tracking-[-0.05em]">
             <span className="text-red-600">{isArabic ? arTuning.hero.titlePrefix : 'GAD Motors'}</span> {isArabic ? arTuning.hero.titleSuffix : 'Performance Tuning'}
           </h1>
-          <p className="text-base sm:text-lg md:text-xl text-off-white/80 max-w-2xl mx-auto leading-relaxed">
+          <p className="max-w-2xl text-base leading-8 text-white/68 sm:text-lg">
             {isArabic ? arTuning.hero.description : 'Digi-Tec plans ECU tuning around the exact vehicle, its current condition, fuel, intended use and supporting hardware. The team explains the proposed calibration and expected result before the project begins.'}
           </p>
-          <p className="text-sm sm:text-base md:text-lg text-off-white/60 mt-4">
+          <p className="mt-4 text-sm text-white/48 sm:text-base">
             {isArabic ? arTuning.hero.moreInfo : 'For more info visit'}{' '}
             <a href="https://www.gad-motors.de/" target="_blank" rel="noopener noreferrer" className="text-burnt-orange hover:underline">
               www.gad-motors.de
             </a>
           </p>
-          <div className="flex flex-col sm:flex-row gap-3 sm:gap-5 justify-center items-center mt-7 sm:mt-9">
+          <div className="mt-8 flex flex-col items-start gap-3 sm:flex-row">
             <a
               href={`https://wa.me/97143402223?text=${encodeURIComponent(isArabic ? arTuning.hero.whatsapp : "Hi, I'm interested in GAD performance tuning for my car.")}`}
               target="_blank"
@@ -113,7 +114,8 @@ const Tuning = () => {
               {isArabic ? arTuning.hero.cta : 'Book a Tuning Consultation'}
             </a>
           </div>
-          <CtaAssurance className="mt-4" />
+          <CtaAssurance className="mt-4 justify-start" />
+          </div>
         </div>
       </section>
 

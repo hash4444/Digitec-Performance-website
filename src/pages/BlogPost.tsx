@@ -188,18 +188,16 @@ const BlogPost = () => {
     : relatedService;
 
   return (
-    <div className="min-h-screen bg-black text-off-white">
+    <div className="site-page min-h-screen bg-black text-off-white">
       <Header />
 
       {/* Hero */}
-      <section
-        className={`relative py-20 md:py-28 overflow-hidden bg-gradient-to-br ${post.coverGradient}`}
-      >
-        <div className="absolute inset-0 bg-black/40" />
-        <div className="relative z-10 max-w-3xl mx-auto px-5 sm:px-6">
+      <section className="relative overflow-hidden border-b border-white/[0.08] bg-[#101113] py-16 sm:py-20 lg:py-24">
+        <div className="mx-auto max-w-[90rem] px-5 sm:px-8 lg:px-12">
+          <div className="max-w-4xl">
           <Link
             to="/blog"
-            className="inline-flex items-center gap-2 text-white/70 hover:text-burnt-orange text-sm mb-6 transition-colors"
+            className="mb-8 inline-flex items-center gap-2 text-sm text-white/48 transition-colors hover:text-burnt-orange"
           >
             <ArrowLeft className={`w-4 h-4 ${isArabic ? 'rotate-180' : ''}`} />
             {isArabic ? 'العودة إلى المقالات' : 'Back to journal'}
@@ -207,7 +205,7 @@ const BlogPost = () => {
           <motion.span
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
-            className="inline-block px-3 py-1 rounded-full bg-burnt-orange/20 text-burnt-orange text-xs font-bold uppercase tracking-wider border border-burnt-orange/40 mb-5"
+            className="home-kicker mb-5 block"
           >
             {isArabic ? categoryArabic[post.category] ?? post.category : post.category}
           </motion.span>
@@ -215,11 +213,11 @@ const BlogPost = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1 }}
-            className="text-3xl sm:text-4xl md:text-5xl font-black mb-6 leading-tight"
+            className="mb-7 max-w-4xl text-[clamp(2.65rem,5vw,5rem)] font-semibold leading-[1.02] tracking-[-0.045em]"
           >
             {post.title}
           </motion.h1>
-          <div className="flex flex-wrap items-center gap-5 text-white/60 text-sm">
+          <div className="flex flex-wrap items-center gap-5 text-sm text-white/45">
             <span className="flex items-center gap-1.5">
               <User className="w-4 h-4" />
               {post.author}
@@ -237,6 +235,7 @@ const BlogPost = () => {
               <Clock className="w-4 h-4" />
               {post.readTime}
             </span>
+          </div>
           </div>
         </div>
       </section>

@@ -163,11 +163,11 @@ const ServicePage: React.FC<ServicePageProps> = ({ slugOverride, canonicalPath, 
     .slice(0, 3);
 
   return (
-    <div className="min-h-screen bg-black text-off-white">
+    <div className="site-page min-h-screen bg-black text-off-white">
       <Header />
 
       {/* Hero */}
-      <section className="relative min-h-[50vh] flex items-end pb-12 sm:pb-16">
+      <section className="theme-dark-section relative flex min-h-[56vh] items-end overflow-hidden border-b border-white/[0.08] pb-14 sm:min-h-[62vh] sm:pb-20">
         <div className="absolute inset-0">
           <img
             src={service.image}
@@ -178,23 +178,23 @@ const ServicePage: React.FC<ServicePageProps> = ({ slugOverride, canonicalPath, 
                 'https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=800&h=600&fit=crop';
             }}
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-black via-black/70 to-black/30" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#101113] via-black/65 to-black/20" />
         </div>
-        <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 w-full">
-          <nav className="flex items-center gap-2 text-sm text-gray-400 mb-6">
+        <div className="relative z-10 mx-auto w-full max-w-[90rem] px-5 sm:px-8 lg:px-12">
+          <nav className="mb-6 flex items-center gap-2 text-xs text-white/48 sm:text-sm">
             <Link to="/" className="hover:text-burnt-orange transition-colors">{isArabic ? 'الرئيسية' : 'Home'}</Link>
             <ChevronRight className={`w-4 h-4 ${isArabic ? 'rotate-180' : ''}`} />
             <Link to={brandPath ?? '/services'} className="hover:text-burnt-orange transition-colors">{brandPath ? 'Mercedes-Benz' : isArabic ? 'الخدمات' : 'Services'}</Link>
             <ChevronRight className={`w-4 h-4 ${isArabic ? 'rotate-180' : ''}`} />
             <span className="text-burnt-orange">{service.title}</span>
           </nav>
-          <span className="text-burnt-orange font-semibold text-[11px] sm:text-xs uppercase tracking-[0.3em] mb-3 block">
+          <span className="home-kicker mb-4 block">
             {service.category}
           </span>
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-black mb-4 leading-tight">
+          <h1 className="mb-5 max-w-4xl text-[clamp(2.75rem,5vw,5.25rem)] font-semibold leading-[0.98] tracking-[-0.05em]">
             {service.title}
           </h1>
-          <p className="text-lg sm:text-xl text-gray-300 max-w-2xl">
+          <p className="max-w-2xl text-base leading-7 text-white/64 sm:text-lg">
             {service.description}
           </p>
         </div>
@@ -202,7 +202,7 @@ const ServicePage: React.FC<ServicePageProps> = ({ slugOverride, canonicalPath, 
 
       {/* Content */}
       <section className="py-16 sm:py-24">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6">
+        <div className="mx-auto max-w-6xl px-5 sm:px-8">
           <div className="grid md:grid-cols-3 gap-12">
             {/* Main Content */}
             <div className="md:col-span-2 space-y-12">
