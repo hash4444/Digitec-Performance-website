@@ -584,7 +584,7 @@ const BrandPage = () => {
         ) : (
           <div className="brand-hero__ambient absolute inset-0" />
         )}
-        <div className="brand-hero__shell relative z-10 mx-auto max-w-[90rem] px-5 py-16 sm:px-8 sm:py-24 lg:px-12 lg:py-28">
+        <div className="brand-hero__shell relative z-10 mx-auto max-w-[90rem] px-5 sm:px-8 lg:px-12">
           <div className="brand-hero__copy max-w-4xl">
             <div>
               <div className="brand-hero__identity mb-6 flex items-center gap-4">
