@@ -550,7 +550,7 @@ const BrandPage = () => {
       data-brand-rhythm={brandPageDesign.rhythm}
       style={brandPageStyle}
     >
-      <Header />
+      <Header overlay />
       <main id="main-content" className="brand-page-main">
 
         <nav aria-label={isArabic ? 'مسار التنقل' : 'Breadcrumb'} className="brand-breadcrumb max-w-7xl mx-auto px-4 sm:px-6 pt-6 text-xs sm:text-sm text-gray-400">

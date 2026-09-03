@@ -799,11 +799,17 @@ html.theme-light ::-webkit-scrollbar-track {
 .brand-page-main {
   counter-reset: brand-section;
   overflow: clip;
+  position: relative;
 }
 
 .brand-breadcrumb {
-  padding-top: clamp(7.5rem, 10vw, 9.5rem) !important;
-  padding-bottom: 1.25rem;
+  inset-inline: 0;
+  margin-inline: auto;
+  padding-top: 0 !important;
+  position: absolute;
+  top: clamp(6.5rem, 7vw, 7.5rem);
+  width: 100%;
+  z-index: 20;
 }
 
 .brand-breadcrumb ol {
@@ -848,10 +854,12 @@ html.theme-light ::-webkit-scrollbar-track {
   display: flex;
   min-height: clamp(38rem, 76vh, 52rem);
   align-items: center;
+  padding-top: clamp(11rem, 18vh, 14rem);
 }
 
 .brand-hero__media {
-  filter: saturate(0.86) contrast(1.05);
+  filter: brightness(0.9) saturate(0.84) contrast(1.06);
+  opacity: 0.62;
   transform: scale(1.015);
 }
 
@@ -896,7 +904,12 @@ html.theme-light ::-webkit-scrollbar-track {
   text-wrap: balance;
 }
 
+.brand-hero__title span {
+  color: rgba(255, 255, 255, 0.84) !important;
+}
+
 .brand-hero__intro {
+  color: rgba(255, 255, 255, 0.76) !important;
   text-wrap: pretty;
 }
 
@@ -1157,7 +1170,7 @@ html.theme-light .brand-experience .brand-page-main > section:nth-of-type(even):
 [data-brand-art='coachbuilt'] .brand-hero__veil,
 [data-brand-art='gallery'] .brand-hero__veil,
 [data-brand-art='vitesse'] .brand-hero__veil {
-  background: linear-gradient(0deg, rgba(7, 8, 9, 0.92), rgba(7, 8, 9, 0.54) 58%, rgba(7, 8, 9, 0.72));
+  background: linear-gradient(0deg, rgba(7, 8, 9, 0.94), rgba(7, 8, 9, 0.68) 58%, rgba(7, 8, 9, 0.78));
 }
 
 [data-brand-art='velocity'] .brand-hero__veil,
@@ -1226,7 +1239,7 @@ html.theme-light .brand-experience .brand-page-main > section:nth-of-type(even):
 
 @media (max-width: 767px) {
   .brand-breadcrumb {
-    padding-top: 6.9rem !important;
+    top: 5.75rem;
   }
 
   .brand-hero,
@@ -1236,6 +1249,7 @@ html.theme-light .brand-experience .brand-page-main > section:nth-of-type(even):
 
   .brand-hero__shell {
     align-items: flex-end !important;
+    padding-top: 9rem;
   }
 
   .brand-hero__copy {

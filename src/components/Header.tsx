@@ -22,7 +22,11 @@ const whatsappHref = `https://wa.me/97143402223?text=${encodeURIComponent(
 
 const THEME_STORAGE_KEY = 'digitec-color-theme';
 
-const Header = () => {
+type HeaderProps = {
+  overlay?: boolean;
+};
+
+const Header = ({ overlay = false }: HeaderProps) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isLanguageOpen, setIsLanguageOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -213,7 +217,7 @@ const Header = () => {
         </div>
       </header>
 
-      {!isHome && <div className="h-[98px] lg:h-[126px]" />}
+      {!isHome && !overlay && <div className="h-[98px] lg:h-[126px]" />}
     </>
   );
 };
