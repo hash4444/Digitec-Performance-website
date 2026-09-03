@@ -853,8 +853,9 @@ html.theme-light ::-webkit-scrollbar-track {
 .brand-hero__shell {
   display: flex;
   min-height: clamp(38rem, 76vh, 52rem);
-  align-items: center;
-  padding-top: clamp(11rem, 18vh, 14rem);
+  align-items: flex-start;
+  padding-top: clamp(13.5rem, 23vh, 16rem);
+  padding-bottom: clamp(5rem, 10vh, 7rem);
 }
 
 .brand-hero__media {
