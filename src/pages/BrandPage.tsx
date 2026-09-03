@@ -51,6 +51,42 @@ const mercedesWorkshop = '/images/mercedes-repair-dubai-hero.jpg';
 const MERCEDES_META_TITLE = 'Mercedes Repair & Service Dubai | Digi-Tec Specialists';
 const MERCEDES_META_DESCRIPTION = 'Specialist Mercedes repair and service in Dubai for C-Class, E-Class, S-Class, G-Class, GLE, GLS and AMG. XENTRY diagnostics at our Al Quoz workshop in Dubai.';
 
+type BrandPageDesign = {
+  art: string;
+  rhythm: 'precision' | 'editorial' | 'performance' | 'terrain' | 'technical';
+  accent: string;
+  accentRgb: string;
+  heroPosition: string;
+};
+
+const DEFAULT_BRAND_PAGE_DESIGN: BrandPageDesign = {
+  art: 'workshop',
+  rhythm: 'technical',
+  accent: '#ff6638',
+  accentRgb: '255, 102, 56',
+  heroPosition: 'center',
+};
+
+const BRAND_PAGE_DESIGNS: Record<string, BrandPageDesign> = {
+  'mercedes-benz-service-dubai': { art: 'stuttgart', rhythm: 'precision', accent: '#c7ced6', accentRgb: '199, 206, 214', heroPosition: 'center 52%' },
+  'maybach-service-dubai': { art: 'couture', rhythm: 'editorial', accent: '#d7bd82', accentRgb: '215, 189, 130', heroPosition: 'center 48%' },
+  'porsche-service-dubai': { art: 'velocity', rhythm: 'performance', accent: '#ef5a43', accentRgb: '239, 90, 67', heroPosition: 'center 54%' },
+  'audi-service-dubai': { art: 'quattro', rhythm: 'precision', accent: '#d24b50', accentRgb: '210, 75, 80', heroPosition: 'center' },
+  'bmw-service-dubai': { art: 'bavaria', rhythm: 'technical', accent: '#4d9be8', accentRgb: '77, 155, 232', heroPosition: 'center' },
+  'lamborghini-service-dubai': { art: 'wedge', rhythm: 'performance', accent: '#d8c44b', accentRgb: '216, 196, 75', heroPosition: 'center 46%' },
+  'bentley-service-dubai': { art: 'coachbuilt', rhythm: 'editorial', accent: '#95b4a2', accentRgb: '149, 180, 162', heroPosition: 'center 46%' },
+  'mclaren-service-dubai': { art: 'apex', rhythm: 'performance', accent: '#ff8a32', accentRgb: '255, 138, 50', heroPosition: 'center' },
+  'ferrari-service-dubai': { art: 'scuderia', rhythm: 'performance', accent: '#ef4b3f', accentRgb: '239, 75, 63', heroPosition: 'center 44%' },
+  'bugatti-service-dubai': { art: 'vitesse', rhythm: 'editorial', accent: '#77a7d2', accentRgb: '119, 167, 210', heroPosition: 'center' },
+  'land-rover-service-dubai': { art: 'expedition', rhythm: 'terrain', accent: '#97aa91', accentRgb: '151, 170, 145', heroPosition: 'center' },
+  'rolls-royce-service-dubai': { art: 'gallery', rhythm: 'editorial', accent: '#c9bca5', accentRgb: '201, 188, 165', heroPosition: 'center' },
+  'aston-martin-service-dubai': { art: 'grand-tourer', rhythm: 'editorial', accent: '#8eb39f', accentRgb: '142, 179, 159', heroPosition: 'center 48%' },
+  'maserati-service-dubai': { art: 'trident', rhythm: 'editorial', accent: '#6689b3', accentRgb: '102, 137, 179', heroPosition: 'center 48%' },
+  'cadillac-service-dubai': { art: 'modernist', rhythm: 'technical', accent: '#d6b66f', accentRgb: '214, 182, 111', heroPosition: 'center' },
+  'range-rover-service-dubai': { art: 'horizon', rhythm: 'terrain', accent: '#a5b49a', accentRgb: '165, 180, 154', heroPosition: 'center 52%' },
+  'defender-service-dubai': { art: 'utility', rhythm: 'terrain', accent: '#a8b0a4', accentRgb: '168, 176, 164', heroPosition: 'center 48%' },
+};
+
 const RANGE_ROVER_META_TITLE = 'Range Rover Workshop Dubai | Repair & Service';
 const RANGE_ROVER_META_DESCRIPTION = 'Range Rover workshop in Al Quoz, Dubai for Vogue, Sport, Velar and Evoque repair and service. JLR diagnostics, air suspension, cooling and ZF expertise.';
 const DEFENDER_META_TITLE = 'Defender Repair Dubai | Land Rover Specialists | Digi-Tec';
@@ -500,29 +536,37 @@ const BrandPage = () => {
                   : undefined);
   const heroImageAlt = priorityBrandSeo?.heroImageAlt
     ?? (isMercedesServiceHub ? 'Mercedes-Benz and AMG vehicles inside the Digi-Tec specialist workshop in Dubai' : '');
+  const brandPageDesign = BRAND_PAGE_DESIGNS[brand.slug] ?? DEFAULT_BRAND_PAGE_DESIGN;
+  const brandPageStyle = {
+    '--brand-accent': brandPageDesign.accent,
+    '--brand-accent-rgb': brandPageDesign.accentRgb,
+    '--brand-hero-position': brandPageDesign.heroPosition,
+  } as React.CSSProperties;
 
   return (
-    <div className={`site-page min-h-screen bg-black text-off-white ${isPriorityLeadBrand ? 'pb-20 md:pb-0' : ''}`}>
+    <div
+      className={`brand-experience site-page min-h-screen bg-black text-off-white ${isPriorityLeadBrand ? 'pb-20 md:pb-0' : ''}`}
+      data-brand-art={brandPageDesign.art}
+      data-brand-rhythm={brandPageDesign.rhythm}
+      style={brandPageStyle}
+    >
       <Header />
+      <main id="main-content" className="brand-page-main">
 
-      {(isMercedesServiceHub || isPorscheServiceHub || isBmwServiceHub) && (
-        <nav aria-label={isArabic ? 'مسار التنقل' : 'Breadcrumb'} className="max-w-7xl mx-auto px-4 sm:px-6 pt-6 text-xs sm:text-sm text-gray-400">
+        <nav aria-label={isArabic ? 'مسار التنقل' : 'Breadcrumb'} className="brand-breadcrumb max-w-7xl mx-auto px-4 sm:px-6 pt-6 text-xs sm:text-sm text-gray-400">
           <ol className="flex flex-wrap items-center gap-2">
             <li><Link to="/" className="hover:text-burnt-orange">{isArabic ? 'الرئيسية' : 'Home'}</Link></li>
             <li aria-hidden="true">/</li>
             <li><Link to="/brands" className="hover:text-burnt-orange">{isArabic ? 'العلامات' : 'Brands'}</Link></li>
             <li aria-hidden="true">/</li>
-            <li className="text-off-white font-semibold">
-              {isArabic
-                ? isPorscheServiceHub ? 'إصلاح وصيانة بورشه في دبي' : 'إصلاح وصيانة مرسيدس-بنز في دبي'
-                : isPorscheServiceHub ? 'Porsche Repair & Service Dubai' : isBmwServiceHub ? 'BMW Service & Repair Dubai' : 'Mercedes-Benz Repair & Service Dubai'}
+            <li className="text-off-white font-semibold" aria-current="page">
+              {isArabic ? `إصلاح وصيانة ${brand.name} في دبي` : `${brand.name} Repair & Service Dubai`}
             </li>
           </ol>
         </nav>
-      )}
 
       {/* Hero */}
-      <section className="theme-dark-section relative overflow-hidden border-b border-white/[0.08] bg-black">
+      <section className={`brand-hero brand-hero--${brandPageDesign.art} theme-dark-section relative overflow-hidden border-b border-white/[0.08] bg-black`}>
         {heroImage ? (
           <>
             <img
@@ -532,35 +576,36 @@ const BrandPage = () => {
               fetchPriority="high"
               width={priorityBrandSeo?.heroImageWidth}
               height={priorityBrandSeo?.heroImageHeight}
-              className={`absolute inset-0 h-full w-full object-cover opacity-70 ${isMercedesServiceHub ? 'object-[center_52%]' : 'object-center'}`}
+              className="brand-hero__media absolute inset-0 h-full w-full object-cover opacity-70"
+              style={{ objectPosition: brandPageDesign.heroPosition }}
             />
-            <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(8,9,10,0.93)_0%,rgba(8,9,10,0.7)_52%,rgba(8,9,10,0.38)_100%)]" />
+            <div className="brand-hero__veil absolute inset-0" />
           </>
         ) : (
-          <div className="absolute inset-0 bg-gradient-to-b from-burnt-orange/10 via-transparent to-transparent" />
+          <div className="brand-hero__ambient absolute inset-0" />
         )}
-        <div className="relative z-10 mx-auto max-w-[90rem] px-5 py-16 sm:px-8 sm:py-24 lg:px-12 lg:py-28">
-          <div className="max-w-4xl">
+        <div className="brand-hero__shell relative z-10 mx-auto max-w-[90rem] px-5 py-16 sm:px-8 sm:py-24 lg:px-12 lg:py-28">
+          <div className="brand-hero__copy max-w-4xl">
             <div>
-              <div className="mb-6 flex items-center gap-4">
-                <div className="flex h-14 w-20 items-center justify-center overflow-hidden bg-white/[0.94] p-2 sm:h-16 sm:w-24">
+              <div className="brand-hero__identity mb-6 flex items-center gap-4">
+                <div className="brand-logo-lockup flex h-14 w-20 items-center justify-center overflow-hidden bg-white/[0.94] p-2 sm:h-16 sm:w-24">
                   {brand.logo ? (
                     <img src={brand.logo} alt={`${brand.name} logo`} className="w-full h-full object-contain" />
                   ) : (
                     <span className="text-2xl font-semibold text-burnt-orange">{brand.name.charAt(0)}</span>
                   )}
                 </div>
-                <span className="home-kicker">
+                <span className="brand-hero__kicker home-kicker">
                   {brand.specialization}
                 </span>
               </div>
-              <h1 className="mb-5 max-w-4xl text-[clamp(2.75rem,5vw,5.25rem)] font-semibold leading-[0.98] tracking-[-0.05em]">
+              <h1 className="brand-hero__title mb-5 max-w-4xl text-[clamp(2.75rem,5vw,5.25rem)] font-semibold leading-[0.98] tracking-[-0.05em]">
                 {brand.name} <span className="text-white/62">{isArabic ? 'للإصلاح والصيانة في دبي' : isMercedesServiceHub ? 'Repair & Service Dubai' : 'Repair & Service Dubai'}</span>
               </h1>
-              <p className="mb-8 max-w-2xl text-base leading-8 text-white/62 sm:text-lg">
+              <p className="brand-hero__intro mb-8 max-w-2xl text-base leading-8 text-white/62 sm:text-lg">
                 {brand.intro}
               </p>
-              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
+              <div className="brand-hero__actions flex flex-col sm:flex-row gap-3 sm:gap-4">
                 <a
                   href={whatsappHref}
                   target="_blank"
@@ -593,7 +638,7 @@ const BrandPage = () => {
       </section>
 
       {isPriorityLeadBrand && !isArabic && (
-        <section className="border-t border-white/5 bg-gradient-to-br from-charcoal/50 to-black py-10 sm:py-14">
+        <section className="brand-section brand-section--local border-t border-white/5 bg-gradient-to-br from-charcoal/50 to-black py-10 sm:py-14">
           <div className="mx-auto grid max-w-7xl gap-6 px-4 sm:px-6 lg:grid-cols-[1.25fr_0.75fr]">
             <div className="card-premium rounded-2xl p-6 sm:p-8">
               <span className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-burnt-orange">
@@ -636,7 +681,7 @@ const BrandPage = () => {
       {isFerrari && !isArabic && <FerrariKnowledgeCentre />}
 
       {brand.slug === 'audi-service-dubai' && !isArabic && (
-        <section className="border-t border-white/5 bg-gradient-to-br from-charcoal/50 to-black py-12 sm:py-16">
+        <section className="brand-section brand-section--knowledge border-t border-white/5 bg-gradient-to-br from-charcoal/50 to-black py-12 sm:py-16">
           <div className="mx-auto max-w-7xl px-4 sm:px-6">
             <p className="eyebrow mb-4">Audi model knowledge centre</p>
             <h2 className="max-w-4xl text-2xl font-black sm:text-4xl">Audi service information by model, system and symptom</h2>
@@ -656,7 +701,7 @@ const BrandPage = () => {
       )}
 
       {isRangeRoverServiceHub && !isArabic && (
-        <section className="py-12 sm:py-16 bg-gradient-to-br from-charcoal/40 to-black border-t border-white/5">
+        <section className="brand-section brand-section--local-detail py-12 sm:py-16 bg-gradient-to-br from-charcoal/40 to-black border-t border-white/5">
           <div className="max-w-5xl mx-auto px-4 sm:px-6">
             <div className="grid lg:grid-cols-[1.3fr_0.7fr] gap-6 items-stretch">
               <div className="card-premium rounded-2xl p-6 sm:p-8">
@@ -693,9 +738,9 @@ const BrandPage = () => {
       )}
 
       {/* Services */}
-      <section id={isPorscheServiceHub && !isArabic ? 'porsche-services' : undefined} className="scroll-mt-24 py-12 sm:py-20 bg-black border-t border-white/5">
+      <section id={isPorscheServiceHub && !isArabic ? 'porsche-services' : undefined} className="brand-section brand-section--services scroll-mt-24 py-12 sm:py-20 bg-black border-t border-white/5">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          <div className="text-center mb-10 sm:mb-14">
+          <div className="brand-section-heading text-center mb-10 sm:mb-14">
             <h2 className="text-2xl sm:text-4xl lg:text-5xl font-black mb-3 sm:mb-4">
               {isArabic ? <>خدمات <span className="text-burnt-orange">{brand.name}</span></> : isMercedesServiceHub ? <>Mercedes <span className="text-burnt-orange">Repair & Maintenance</span> in Dubai</> : <>Our <span className="text-burnt-orange">{brand.name}</span> Services</>}
             </h2>
@@ -703,7 +748,7 @@ const BrandPage = () => {
               {isArabic ? `عناية متكاملة بسيارات ${brand.name}، من الصيانة الدورية إلى الإصلاحات المتقدمة.` : isMercedesServiceHub ? 'Start with the symptom or service your Mercedes needs. Each area below links to a focused page with the relevant warning signs, inspection process and model-specific technical detail.' : `Comprehensive care for every ${brand.name}, from routine maintenance to advanced performance work.`}
             </p>
           </div>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+          <div className="brand-services-grid grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
             {isMercedesServiceHub && !isArabic
               ? MERCEDES_CORE_SERVICES.map((s) => (
                   <Link
@@ -735,9 +780,9 @@ const BrandPage = () => {
 
       {/* Brand-specific workshop capability */}
       {profile && (
-        <section className="py-12 sm:py-20 bg-gradient-to-br from-charcoal/40 to-black border-t border-white/5">
+        <section className="brand-section brand-section--capability py-12 sm:py-20 bg-gradient-to-br from-charcoal/40 to-black border-t border-white/5">
           <div className="max-w-7xl mx-auto px-4 sm:px-6">
-            <div className="text-center mb-8 sm:mb-12">
+            <div className="brand-section-heading text-center mb-8 sm:mb-12">
               <h2 className="text-2xl sm:text-4xl lg:text-5xl font-black mb-3">
                 {isArabic ? <>كيف نخدم <span className="text-burnt-orange">{brand.name}</span> في دبي</> : <>How We Service <span className="text-burnt-orange">{brand.name}</span> in Dubai</>}
               </h2>
@@ -745,7 +790,7 @@ const BrandPage = () => {
                 {isArabic ? `نخصص خطوات الورشة لأنظمة التشخيص ومجموعة الحركة ونقاط التآكل المرتبطة بالمناخ في سيارة ${brand.name}.` : `The workshop process is tailored to the diagnostic systems, drivetrain, and climate-related wear points of your ${brand.name}.`}
               </p>
             </div>
-            <div className="grid sm:grid-cols-3 gap-4 sm:gap-6">
+            <div className="brand-capability-grid grid sm:grid-cols-3 gap-4 sm:gap-6">
               <div className="card-premium rounded-2xl p-5 sm:p-6">
                 <h3 className="text-lg font-bold text-off-white mb-3">{isArabic ? 'منصة التشخيص' : 'Diagnostic platform'}</h3>
                 <p className="text-gray-400 text-sm leading-relaxed">{isArabic ? `يتم تأكيد توافق الفحص وقراءة البيانات وأي برمجة أو إعادة ضبط مطلوبة لسيارة ${brand.name} المحددة قبل إدراجها في عرض السعر.` : `${profile.diagnosticTool}. Compatible fault tracing, live data, coding, programming and service-reset functions are confirmed for the exact vehicle and required module before quotation.`}</p>
@@ -850,9 +895,9 @@ const BrandPage = () => {
       )}
 
       {isMercedesServiceHub && !isArabic && (
-        <section className="py-12 sm:py-20 bg-black border-t border-white/5">
+        <section className="brand-section brand-section--issues py-12 sm:py-20 bg-black border-t border-white/5">
           <div className="max-w-7xl mx-auto px-4 sm:px-6">
-            <div className="text-center mb-8 sm:mb-12">
+            <div className="brand-section-heading text-center mb-8 sm:mb-12">
               <h2 className="text-2xl sm:text-4xl lg:text-5xl font-black mb-3">
                 Common <span className="text-burnt-orange">Mercedes Problems</span> We Diagnose in Dubai
               </h2>
@@ -860,7 +905,7 @@ const BrandPage = () => {
                 A warning message or symptom is a starting point, not a final diagnosis. These are common reasons Mercedes owners contact our Al Quoz workshop and the focused page for each concern.
               </p>
             </div>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+            <div className="brand-issues-grid grid md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
               {MERCEDES_COMMON_ISSUES.map((issue) => (
                 <Link key={issue.title} to={issue.path} className="card-premium group rounded-2xl p-5 sm:p-6">
                   <h3 className="text-lg font-bold text-off-white group-hover:text-burnt-orange transition-colors">{issue.title}</h3>
@@ -881,9 +926,9 @@ const BrandPage = () => {
       )}
 
       {(isRangeRoverServiceHub || isDefenderServiceHub) && !isArabic && (
-        <section className="py-12 sm:py-20 bg-black border-t border-white/5">
+        <section className="brand-section brand-section--issues py-12 sm:py-20 bg-black border-t border-white/5">
           <div className="max-w-7xl mx-auto px-4 sm:px-6">
-            <div className="text-center mb-8 sm:mb-12">
+            <div className="brand-section-heading text-center mb-8 sm:mb-12">
               <h2 className="text-2xl sm:text-4xl lg:text-5xl font-black mb-3">
                 Common <span className="text-burnt-orange">{isRangeRoverServiceHub ? 'Range Rover' : 'Defender'} Problems</span> We Diagnose in Dubai
               </h2>
@@ -891,7 +936,7 @@ const BrandPage = () => {
                 The warning message or symptom is a starting point, not a diagnosis. These are the concerns owners commonly bring to our Al Quoz workshop and the specialist service area for each one.
               </p>
             </div>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+            <div className="brand-issues-grid grid md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
               {(isRangeRoverServiceHub ? RANGE_ROVER_COMMON_ISSUES : DEFENDER_COMMON_ISSUES).map((issue) => (
                 <Link key={issue.title} to={getServicePath(issue.path)} className="card-premium group rounded-2xl p-5 sm:p-6">
                   <h3 className="text-lg font-bold text-off-white group-hover:text-burnt-orange transition-colors">{issue.title}</h3>
@@ -907,9 +952,9 @@ const BrandPage = () => {
       )}
 
       {(isRangeRoverServiceHub || isDefenderServiceHub) && !isArabic && (
-        <section className="py-12 sm:py-20 bg-gradient-to-br from-charcoal/40 to-black border-t border-white/5">
+        <section className="brand-section brand-section--models py-12 sm:py-20 bg-gradient-to-br from-charcoal/40 to-black border-t border-white/5">
           <div className="max-w-7xl mx-auto px-4 sm:px-6">
-            <div className="text-center mb-8 sm:mb-12">
+            <div className="brand-section-heading text-center mb-8 sm:mb-12">
               <h2 className="text-2xl sm:text-4xl lg:text-5xl font-black mb-3">
                 {isRangeRoverServiceHub ? 'Range Rover' : 'Defender'} Models We <span className="text-burnt-orange">Repair & Service</span> in Dubai
               </h2>
@@ -917,7 +962,7 @@ const BrandPage = () => {
                 The exact procedure, fluid specification, diagnostic function and repair scope are confirmed from the model, year, VIN, fitted systems and reported concern.
               </p>
             </div>
-            <div className="grid md:grid-cols-2 gap-4 sm:gap-6">
+            <div className="brand-models-grid grid md:grid-cols-2 gap-4 sm:gap-6">
               {(isRangeRoverServiceHub ? RANGE_ROVER_MODEL_GROUPS : DEFENDER_MODEL_GROUPS).map((group) => (
                 <article key={group.title} className="card-premium rounded-2xl p-5 sm:p-6">
                   <h3 className="text-lg sm:text-xl font-bold text-off-white">{group.title}</h3>
@@ -939,9 +984,9 @@ const BrandPage = () => {
       )}
 
       {isMercedesServiceHub && !isArabic && (
-        <section className="py-12 sm:py-20 bg-gradient-to-br from-charcoal/40 to-black border-t border-white/5">
+        <section className="brand-section brand-section--models py-12 sm:py-20 bg-gradient-to-br from-charcoal/40 to-black border-t border-white/5">
           <div className="max-w-7xl mx-auto px-4 sm:px-6">
-            <div className="text-center mb-8 sm:mb-12">
+            <div className="brand-section-heading text-center mb-8 sm:mb-12">
               <h2 className="text-2xl sm:text-4xl lg:text-5xl font-black mb-3">
                 Mercedes Models We <span className="text-burnt-orange">Repair & Service</span> in Dubai
               </h2>
@@ -949,7 +994,7 @@ const BrandPage = () => {
                 Digi-Tec supports current and earlier Mercedes-Benz platforms. The exact diagnostic procedure, parts specification and workshop scope are confirmed from the model, year, VIN and fitted systems.
               </p>
             </div>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+            <div className="brand-models-grid grid md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
               <nav aria-label="Dedicated Mercedes model pages" className="md:col-span-2 lg:col-span-3">
                 <ul className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-5">
                   {mercedesModelPages.map((model) => (
@@ -986,9 +1031,9 @@ const BrandPage = () => {
       )}
 
       {/* Why Choose */}
-      <section className="py-12 sm:py-20 bg-gradient-to-br from-charcoal/40 to-black">
+      <section className="brand-section brand-section--reasons py-12 sm:py-20 bg-gradient-to-br from-charcoal/40 to-black">
         <div className="max-w-5xl mx-auto px-4 sm:px-6">
-          <div className="text-center mb-8 sm:mb-12">
+          <div className="brand-section-heading text-center mb-8 sm:mb-12">
             <h2 className="text-2xl sm:text-4xl lg:text-5xl font-black mb-3 sm:mb-4">
               {isArabic ? <>لماذا يختار ملاك {brand.name} <span className="text-burnt-orange">D</span>IGI-TEC؟</> : isMercedesServiceHub ? <>Why Choose Digi-Tec as Your <span className="text-burnt-orange">Mercedes Workshop</span> in Dubai?</> : <>Why {brand.name} Owners Choose <span className="text-burnt-orange">D</span>igi-Tec</>}
             </h2>
@@ -996,7 +1041,7 @@ const BrandPage = () => {
               {isArabic ? `خبرة فنية فعلية بأنظمة ${brand.name} وخدمة مصممة للسيارة، لا حلول عامة.` : isMercedesServiceHub ? 'The right Mercedes specialist should be able to explain the diagnostic evidence, fitted systems, parts options and repair plan before asking you to approve the work.' : `Real technical depth on the systems that define your ${brand.name}, not generic service copy.`}
             </p>
           </div>
-          <div className="grid sm:grid-cols-2 gap-4 sm:gap-5">
+          <div className="brand-reasons-grid grid sm:grid-cols-2 gap-4 sm:gap-5">
             {brand.whyChoose.map((item) => (
               <div
                 key={item.title}
@@ -1015,9 +1060,9 @@ const BrandPage = () => {
 
       {/* Dedicated brand-service SEO pages */}
       {brandServices.length > 0 && (
-        <section className="py-12 sm:py-20 bg-black border-t border-white/5">
+        <section className="brand-section brand-section--directory py-12 sm:py-20 bg-black border-t border-white/5">
           <div className="max-w-7xl mx-auto px-4 sm:px-6">
-            <div className="text-center mb-8 sm:mb-12">
+            <div className="brand-section-heading text-center mb-8 sm:mb-12">
               <h2 className="text-2xl sm:text-4xl lg:text-5xl font-black mb-3">
                 {isArabic ? <>{brand.name} <span className="text-burnt-orange">للإصلاح في دبي</span> — جميع الخدمات</> : isMercedesServiceHub ? <>Mercedes <span className="text-burnt-orange">Repair Services</span> in Dubai</> : <>{brand.name} <span className="text-burnt-orange">Repair Dubai</span> — Every Service</>}
               </h2>
@@ -1025,7 +1070,7 @@ const BrandPage = () => {
                 {isArabic ? `اختر صفحة إصلاح ${brand.name} أو تغيير الزيت أو إصلاح الفرامل لمراجعة المعلومات العامة، ثم تواصل معنا لتأكيد نطاق الخدمة المتاح لسيارتك.` : isMercedesServiceHub ? 'Choose the exact service to see its warning signs, diagnostic process, relevant Mercedes systems and booking options. Broad Mercedes repair questions stay on this hub; detailed service questions live on the pages below.' : `Choose a ${brand.name} repair, oil-change or brake page for general guidance, then contact the workshop to confirm the available scope for your exact vehicle.`}
               </p>
             </div>
-            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 sm:gap-4">
+            <div className="brand-directory-grid grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 sm:gap-4">
               {brandServices.map((s) => (
                 <Link
                   key={s.serviceSlug}
@@ -1097,9 +1142,9 @@ const BrandPage = () => {
       )}
 
       {/* Trust */}
-      <section className="py-12 sm:py-20 bg-black border-t border-white/5">
+      <section className="brand-section brand-section--proof py-12 sm:py-20 bg-black border-t border-white/5">
         <div className="max-w-5xl mx-auto px-4 sm:px-6">
-          <div className="card-premium text-center rounded-2xl p-6 sm:p-10">
+          <div className="brand-proof-card card-premium text-center rounded-2xl p-6 sm:p-10">
             {isMercedesServiceHub && !isArabic ? (
               <>
                 <p className="text-off-white font-bold text-xl sm:text-2xl mb-2">A Mercedes Workshop Process You Can Check</p>
@@ -1152,9 +1197,9 @@ const BrandPage = () => {
 
       {/* FAQ */}
       {/* SEO Content */}
-      <section className="py-12 sm:py-20 bg-black border-t border-white/5">
+      <section className="brand-section brand-section--story py-12 sm:py-20 bg-black border-t border-white/5">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
-          <article className="space-y-8 sm:space-y-10">
+          <article className="brand-story space-y-8 sm:space-y-10">
             <header>
               <h2 className="text-2xl sm:text-4xl lg:text-5xl font-black mb-4 sm:mb-6 leading-tight">
                 {isArabic ? <>خدمة مستقلة لسيارات <span className="text-burnt-orange">{brand.name}</span> في دبي</> : isMercedesServiceHub ? <>Independent <span className="text-burnt-orange">Mercedes-Benz Workshop</span> in Dubai</> : <>Independent <span className="text-burnt-orange">{brand.name}</span> Service in Dubai</>}
@@ -1187,9 +1232,9 @@ const BrandPage = () => {
       </section>
 
       {/* FAQ */}
-      <section className="py-12 sm:py-20 bg-gradient-to-br from-charcoal/40 to-black border-t border-white/5">
+      <section className="brand-section brand-section--faq py-12 sm:py-20 bg-gradient-to-br from-charcoal/40 to-black border-t border-white/5">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
-          <div className="text-center mb-8 sm:mb-12">
+          <div className="brand-section-heading text-center mb-8 sm:mb-12">
             <h2 className="text-2xl sm:text-4xl lg:text-5xl font-black mb-3 sm:mb-4">
               {brand.name} <span className="text-burnt-orange">{isArabic ? 'الأسئلة الشائعة' : 'FAQs'}</span>
             </h2>
@@ -1197,7 +1242,7 @@ const BrandPage = () => {
               {isArabic ? `أكثر الأسئلة التي يطرحها ملاك ${brand.name}.` : `The questions ${brand.name} owners ask us most.`}
             </p>
           </div>
-          <Accordion type="single" collapsible className="space-y-3">
+          <Accordion type="single" collapsible className="brand-faq space-y-3">
             {brand.faqs.map((f, i) => (
               <AccordionItem
                 key={i}
@@ -1217,9 +1262,9 @@ const BrandPage = () => {
       </section>
 
       {/* Booking CTA + Form */}
-      <section className="py-12 sm:py-20 bg-black border-t border-white/5">
+      <section className="brand-section brand-section--booking py-12 sm:py-20 bg-black border-t border-white/5">
         <div className="max-w-5xl mx-auto px-4 sm:px-6">
-          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-start">
+          <div className="brand-booking-grid grid lg:grid-cols-2 gap-8 lg:gap-12 items-start">
             <div>
               <h2 className="text-2xl sm:text-4xl lg:text-5xl font-black mb-4 sm:mb-6 leading-tight">
                 {isArabic ? <>احجز خدمة <span className="text-burnt-orange">{brand.name}</span></> : <>Book Your <span className="text-burnt-orange">{brand.name}</span> Service</>}
@@ -1258,9 +1303,9 @@ const BrandPage = () => {
 
       {/* Related Services */}
       {relatedServices.length > 0 && (
-        <section className="py-12 sm:py-20 bg-gradient-to-br from-charcoal/40 to-black border-t border-white/5">
+        <section className="brand-section brand-section--related py-12 sm:py-20 bg-gradient-to-br from-charcoal/40 to-black border-t border-white/5">
           <div className="max-w-7xl mx-auto px-4 sm:px-6">
-            <div className="text-center mb-8 sm:mb-12">
+            <div className="brand-section-heading text-center mb-8 sm:mb-12">
               <h2 className="text-2xl sm:text-4xl font-black mb-3">
                 {isArabic ? <>خدمات <span className="text-burnt-orange">ذات صلة</span> بـ {brand.name}</> : <>Related <span className="text-burnt-orange">Services</span> for {brand.name}</>}
               </h2>
@@ -1268,7 +1313,7 @@ const BrandPage = () => {
                 {isArabic ? `أكثر الخدمات التي نقدمها لملاك ${brand.name}.` : `The specialist work we do most often for ${brand.name} owners.`}
               </p>
             </div>
-            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+            <div className="brand-related-grid grid sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
               {relatedServices.map((sourceService) => {
                 const s = isArabic ? localizeServiceToArabic(sourceService) : sourceService;
                 return (
@@ -1303,9 +1348,9 @@ const BrandPage = () => {
       )}
 
       {/* Other Brands */}
-      <section className="py-12 sm:py-20 bg-black border-t border-white/5">
+      <section className="brand-section brand-section--other-brands py-12 sm:py-20 bg-black border-t border-white/5">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          <div className="text-center mb-8 sm:mb-12">
+          <div className="brand-section-heading text-center mb-8 sm:mb-12">
             <h2 className="text-2xl sm:text-4xl font-black mb-3">
               {isArabic ? <>علامات <span className="text-burnt-orange">أخرى</span> نخدمها</> : <>Other <span className="text-burnt-orange">Brands</span> We Service</>}
             </h2>
@@ -1313,7 +1358,7 @@ const BrandPage = () => {
               {isArabic ? 'عناية متخصصة بمختلف علامات السيارات الفاخرة في ورشتنا.' : 'Specialist care for every prestige marque in our workshop.'}
             </p>
           </div>
-          <div className="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-6 gap-3 sm:gap-5">
+          <div className="brand-other-grid grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-6 gap-3 sm:gap-5">
             {otherBrands.map((b) => (
               <Link
                 key={b.slug}
@@ -1336,6 +1381,8 @@ const BrandPage = () => {
           </div>
         </div>
       </section>
+
+      </main>
 
       <Footer />
 

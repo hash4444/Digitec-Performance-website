@@ -788,3 +788,508 @@ html.theme-light :is(.home-premium, .site-page, div.min-h-screen.bg-black.text-o
 html.theme-light ::-webkit-scrollbar-track {
   background: #ecece8;
 }
+
+/* Brand pages: one content system, individually art-directed. */
+.brand-experience {
+  --brand-accent: #ff6638;
+  --brand-accent-rgb: 255, 102, 56;
+  background: #0a0b0c;
+}
+
+.brand-page-main {
+  counter-reset: brand-section;
+  overflow: clip;
+}
+
+.brand-breadcrumb {
+  padding-top: clamp(7.5rem, 10vw, 9.5rem) !important;
+  padding-bottom: 1.25rem;
+}
+
+.brand-breadcrumb ol {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.09);
+  padding-bottom: 1rem;
+}
+
+.brand-breadcrumb li:last-child {
+  color: var(--brand-accent);
+}
+
+.brand-hero {
+  isolation: isolate;
+  min-height: clamp(38rem, 76vh, 52rem);
+}
+
+.brand-hero::before,
+.brand-hero::after {
+  content: '';
+  pointer-events: none;
+  position: absolute;
+  z-index: 1;
+}
+
+.brand-hero::before {
+  inset: 0 auto 0 0;
+  width: 3px;
+  background: linear-gradient(180deg, transparent 8%, var(--brand-accent) 48%, transparent 92%);
+  opacity: 0.72;
+}
+
+.brand-hero::after {
+  right: clamp(1rem, 6vw, 7rem);
+  top: clamp(2rem, 8vw, 7rem);
+  height: clamp(11rem, 30vw, 25rem);
+  width: clamp(11rem, 30vw, 25rem);
+  border: 1px solid rgba(var(--brand-accent-rgb), 0.18);
+  opacity: 0.8;
+}
+
+.brand-hero__shell {
+  display: flex;
+  min-height: clamp(38rem, 76vh, 52rem);
+  align-items: center;
+}
+
+.brand-hero__media {
+  filter: saturate(0.86) contrast(1.05);
+  transform: scale(1.015);
+}
+
+.brand-hero__veil {
+  background:
+    linear-gradient(90deg, rgba(7, 8, 9, 0.96) 0%, rgba(7, 8, 9, 0.78) 46%, rgba(7, 8, 9, 0.25) 100%),
+    linear-gradient(0deg, rgba(7, 8, 9, 0.88) 0%, transparent 58%);
+}
+
+.brand-hero__ambient {
+  background:
+    radial-gradient(circle at 75% 28%, rgba(var(--brand-accent-rgb), 0.2), transparent 26%),
+    linear-gradient(115deg, rgba(var(--brand-accent-rgb), 0.1), transparent 38%),
+    repeating-linear-gradient(90deg, transparent 0, transparent 8rem, rgba(255, 255, 255, 0.025) 8rem, rgba(255, 255, 255, 0.025) calc(8rem + 1px));
+}
+
+.brand-hero__copy {
+  position: relative;
+}
+
+.brand-hero__copy::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: -1.4rem;
+  height: 2px;
+  width: clamp(3.5rem, 8vw, 7rem);
+  background: var(--brand-accent);
+}
+
+.brand-logo-lockup {
+  border: 1px solid rgba(var(--brand-accent-rgb), 0.34);
+  border-radius: 1rem;
+  box-shadow: 0 18px 48px rgba(0, 0, 0, 0.24);
+}
+
+.brand-hero__kicker {
+  color: var(--brand-accent) !important;
+}
+
+.brand-hero__title {
+  text-wrap: balance;
+}
+
+.brand-hero__intro {
+  text-wrap: pretty;
+}
+
+.brand-section {
+  counter-increment: brand-section;
+  isolation: isolate;
+  position: relative;
+}
+
+.brand-section::before {
+  content: '';
+  position: absolute;
+  left: max(1rem, calc((100vw - 80rem) / 2));
+  top: 0;
+  height: 1px;
+  width: clamp(3rem, 7vw, 6rem);
+  background: var(--brand-accent);
+  opacity: 0.55;
+}
+
+.brand-section > div,
+.brand-page-main > section > div {
+  position: relative;
+  z-index: 1;
+}
+
+.brand-section-heading h2 {
+  font-weight: 600;
+  letter-spacing: -0.045em;
+  line-height: 1;
+  text-wrap: balance;
+}
+
+.brand-section .card-premium {
+  border-color: rgba(var(--brand-accent-rgb), 0.15);
+  box-shadow: none;
+}
+
+.brand-section .card-premium:hover {
+  border-color: rgba(var(--brand-accent-rgb), 0.42);
+}
+
+.brand-section--story .brand-story {
+  position: relative;
+}
+
+.brand-story::before {
+  content: '';
+  position: absolute;
+  inset: 0 auto 0 -2rem;
+  width: 1px;
+  background: linear-gradient(180deg, var(--brand-accent), transparent 88%);
+}
+
+.brand-proof-card {
+  overflow: hidden;
+  position: relative;
+}
+
+.brand-proof-card::after {
+  content: '';
+  position: absolute;
+  right: -5rem;
+  top: -7rem;
+  height: 16rem;
+  width: 16rem;
+  border: 1px solid rgba(var(--brand-accent-rgb), 0.2);
+  border-radius: 999px;
+}
+
+.brand-faq [data-state='open'] {
+  border-color: rgba(var(--brand-accent-rgb), 0.5) !important;
+}
+
+html:not(.theme-light) .brand-experience .brand-page-main > section:not(.brand-hero) {
+  background-color: #0b0c0d !important;
+  background-image: linear-gradient(125deg, rgba(var(--brand-accent-rgb), 0.035), transparent 32%) !important;
+}
+
+html:not(.theme-light) .brand-experience .brand-page-main > section:nth-of-type(even):not(.brand-hero) {
+  background-color: #111315 !important;
+  background-image: linear-gradient(305deg, rgba(var(--brand-accent-rgb), 0.05), transparent 38%) !important;
+}
+
+html.theme-light .brand-experience .brand-breadcrumb ol {
+  border-color: rgba(20, 21, 20, 0.12);
+}
+
+html.theme-light .brand-experience .brand-page-main > section:not(.theme-dark-section) {
+  background-color: #f4f4f1 !important;
+  background-image: linear-gradient(125deg, rgba(var(--brand-accent-rgb), 0.055), transparent 34%) !important;
+}
+
+html.theme-light .brand-experience .brand-page-main > section:nth-of-type(even):not(.theme-dark-section) {
+  background-color: #ffffff !important;
+}
+
+/* Precision: restrained grids for Mercedes, Porsche-derived German engineering, and Audi. */
+[data-brand-rhythm='precision'] .brand-section-heading {
+  max-width: 54rem;
+  text-align: left !important;
+}
+
+[data-brand-rhythm='precision'] .brand-section-heading p {
+  margin-left: 0;
+}
+
+[data-brand-rhythm='precision'] .brand-section .card-premium {
+  border-radius: 0.45rem;
+}
+
+[data-brand-rhythm='precision'] .brand-section::after {
+  color: rgba(var(--brand-accent-rgb), 0.28);
+  content: '0' counter(brand-section);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  position: absolute;
+  right: max(1rem, calc((100vw - 80rem) / 2));
+  top: 1.2rem;
+}
+
+/* Editorial: generous rhythm and asymmetric pacing for coachbuilt marques. */
+[data-brand-rhythm='editorial'] .brand-section {
+  padding-bottom: clamp(4rem, 8vw, 8rem);
+  padding-top: clamp(4rem, 8vw, 8rem);
+}
+
+[data-brand-rhythm='editorial'] .brand-section .card-premium {
+  border-radius: 2rem;
+}
+
+[data-brand-rhythm='editorial'] .brand-section:nth-of-type(even) .brand-section-heading {
+  margin-left: auto;
+  max-width: 50rem;
+  text-align: right !important;
+}
+
+[data-brand-rhythm='editorial'] .brand-section:nth-of-type(even) .brand-section-heading p {
+  margin-right: 0;
+}
+
+/* Performance: offset cards and sharper geometry for the track-led marques. */
+[data-brand-rhythm='performance'] .brand-section-heading {
+  max-width: 58rem;
+  text-align: left !important;
+}
+
+[data-brand-rhythm='performance'] .brand-section-heading p {
+  margin-left: 0;
+}
+
+[data-brand-rhythm='performance'] .brand-section .card-premium {
+  border-radius: 0.9rem 2.2rem 0.9rem 0.9rem;
+}
+
+[data-brand-rhythm='performance'] .brand-section::before {
+  width: clamp(5rem, 12vw, 11rem);
+  transform: skewX(-28deg);
+  transform-origin: left;
+}
+
+/* Terrain: horizontal horizons and sturdy cards for the JLR family. */
+[data-brand-rhythm='terrain'] .brand-section-heading {
+  max-width: 62rem;
+  text-align: left !important;
+}
+
+[data-brand-rhythm='terrain'] .brand-section-heading p {
+  margin-left: 0;
+}
+
+[data-brand-rhythm='terrain'] .brand-section .card-premium {
+  border-left: 3px solid rgba(var(--brand-accent-rgb), 0.55);
+  border-radius: 0.4rem 1.5rem 1.5rem 0.4rem;
+}
+
+/* Technical: clean modular panels for BMW, Cadillac, and the fallback layout. */
+[data-brand-rhythm='technical'] .brand-section-heading {
+  max-width: 48rem;
+  text-align: left !important;
+}
+
+[data-brand-rhythm='technical'] .brand-section-heading p {
+  margin-left: 0;
+}
+
+[data-brand-rhythm='technical'] .brand-section .card-premium {
+  border-radius: 0.75rem;
+  background-image: linear-gradient(145deg, rgba(var(--brand-accent-rgb), 0.04), transparent 55%);
+}
+
+@media (min-width: 768px) {
+  [data-brand-rhythm='editorial'] .brand-reasons-grid > :first-child {
+    grid-column: 1 / -1;
+    padding-inline: clamp(2rem, 6vw, 5rem);
+  }
+
+  [data-brand-rhythm='performance'] .brand-services-grid > :first-child,
+  [data-brand-rhythm='performance'] .brand-related-grid > :first-child {
+    grid-column: span 2;
+  }
+
+  [data-brand-rhythm='performance'] .brand-reasons-grid > :nth-child(even) {
+    transform: translateY(1.25rem);
+  }
+
+  [data-brand-rhythm='terrain'] .brand-capability-grid > :first-child {
+    grid-column: span 2;
+  }
+
+  [data-brand-rhythm='technical'] .brand-services-grid > :nth-child(3n + 2) {
+    transform: translateY(1rem);
+  }
+}
+
+/* Individual hero compositions. */
+[data-brand-art='stuttgart'] .brand-hero::after {
+  border-radius: 999px;
+}
+
+[data-brand-art='couture'] .brand-hero__copy,
+[data-brand-art='coachbuilt'] .brand-hero__copy,
+[data-brand-art='gallery'] .brand-hero__copy,
+[data-brand-art='vitesse'] .brand-hero__copy {
+  margin-inline: auto;
+  max-width: 58rem;
+  text-align: center;
+}
+
+[data-brand-art='couture'] .brand-hero__identity,
+[data-brand-art='coachbuilt'] .brand-hero__identity,
+[data-brand-art='gallery'] .brand-hero__identity,
+[data-brand-art='vitesse'] .brand-hero__identity,
+[data-brand-art='couture'] .brand-hero__actions,
+[data-brand-art='coachbuilt'] .brand-hero__actions,
+[data-brand-art='gallery'] .brand-hero__actions,
+[data-brand-art='vitesse'] .brand-hero__actions {
+  justify-content: center;
+}
+
+[data-brand-art='couture'] .brand-hero__intro,
+[data-brand-art='coachbuilt'] .brand-hero__intro,
+[data-brand-art='gallery'] .brand-hero__intro,
+[data-brand-art='vitesse'] .brand-hero__intro {
+  margin-inline: auto;
+}
+
+[data-brand-art='couture'] .brand-hero__copy::before,
+[data-brand-art='coachbuilt'] .brand-hero__copy::before,
+[data-brand-art='gallery'] .brand-hero__copy::before,
+[data-brand-art='vitesse'] .brand-hero__copy::before {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+[data-brand-art='couture'] .brand-hero__veil,
+[data-brand-art='coachbuilt'] .brand-hero__veil,
+[data-brand-art='gallery'] .brand-hero__veil,
+[data-brand-art='vitesse'] .brand-hero__veil {
+  background: linear-gradient(0deg, rgba(7, 8, 9, 0.92), rgba(7, 8, 9, 0.54) 58%, rgba(7, 8, 9, 0.72));
+}
+
+[data-brand-art='velocity'] .brand-hero__veil,
+[data-brand-art='wedge'] .brand-hero__veil,
+[data-brand-art='apex'] .brand-hero__veil {
+  background: linear-gradient(108deg, rgba(7, 8, 9, 0.96) 0 42%, rgba(7, 8, 9, 0.38) 69%, rgba(7, 8, 9, 0.74));
+}
+
+[data-brand-art='velocity'] .brand-hero::after,
+[data-brand-art='wedge'] .brand-hero::after,
+[data-brand-art='apex'] .brand-hero::after {
+  border-radius: 0;
+  transform: rotate(-12deg);
+}
+
+[data-brand-art='quattro'] .brand-hero__copy,
+[data-brand-art='trident'] .brand-hero__copy {
+  border-left: 1px solid rgba(var(--brand-accent-rgb), 0.62);
+  padding-left: clamp(1.25rem, 3vw, 2.5rem);
+}
+
+[data-brand-art='quattro'] .brand-hero::after {
+  border-radius: 999px;
+  box-shadow: -4rem 0 0 -1px #090a0b, -4rem 0 0 0 rgba(var(--brand-accent-rgb), 0.16);
+}
+
+[data-brand-art='bavaria'] .brand-hero__copy,
+[data-brand-art='modernist'] .brand-hero__copy {
+  margin-left: auto;
+  max-width: 49rem;
+}
+
+[data-brand-art='bavaria'] .brand-hero__veil,
+[data-brand-art='modernist'] .brand-hero__veil {
+  background: linear-gradient(270deg, rgba(7, 8, 9, 0.96), rgba(7, 8, 9, 0.72) 56%, rgba(7, 8, 9, 0.38));
+}
+
+[data-brand-art='scuderia'] .brand-hero__copy,
+[data-brand-art='grand-tourer'] .brand-hero__copy {
+  margin-left: auto;
+  max-width: 52rem;
+}
+
+[data-brand-art='scuderia'] .brand-hero__veil,
+[data-brand-art='grand-tourer'] .brand-hero__veil {
+  background: linear-gradient(270deg, rgba(7, 8, 9, 0.95), rgba(7, 8, 9, 0.68) 52%, rgba(7, 8, 9, 0.26));
+}
+
+[data-brand-art='expedition'] .brand-hero__shell,
+[data-brand-art='horizon'] .brand-hero__shell,
+[data-brand-art='utility'] .brand-hero__shell {
+  align-items: flex-end;
+}
+
+[data-brand-art='expedition'] .brand-hero__copy,
+[data-brand-art='horizon'] .brand-hero__copy,
+[data-brand-art='utility'] .brand-hero__copy {
+  max-width: 68rem;
+}
+
+[data-brand-art='expedition'] .brand-hero__veil,
+[data-brand-art='horizon'] .brand-hero__veil,
+[data-brand-art='utility'] .brand-hero__veil {
+  background: linear-gradient(0deg, rgba(7, 8, 9, 0.98) 0%, rgba(7, 8, 9, 0.58) 64%, rgba(7, 8, 9, 0.24));
+}
+
+@media (max-width: 767px) {
+  .brand-breadcrumb {
+    padding-top: 6.9rem !important;
+  }
+
+  .brand-hero,
+  .brand-hero__shell {
+    min-height: 42rem;
+  }
+
+  .brand-hero__shell {
+    align-items: flex-end !important;
+  }
+
+  .brand-hero__copy {
+    border-left: 0 !important;
+    margin-inline: 0 !important;
+    max-width: none !important;
+    padding-left: 0 !important;
+    text-align: left !important;
+  }
+
+  [dir='rtl'] .brand-hero__copy {
+    text-align: right !important;
+  }
+
+  .brand-hero__identity,
+  .brand-hero__actions {
+    justify-content: flex-start !important;
+  }
+
+  [dir='rtl'] .brand-hero__identity,
+  [dir='rtl'] .brand-hero__actions {
+    justify-content: flex-end !important;
+  }
+
+  .brand-hero__intro {
+    margin-inline: 0 !important;
+  }
+
+  .brand-hero__copy::before {
+    left: 0 !important;
+    transform: none !important;
+  }
+
+  [dir='rtl'] .brand-hero__copy::before {
+    left: auto !important;
+    right: 0;
+  }
+
+  .brand-hero::after {
+    height: 9rem;
+    right: -2rem;
+    top: 2rem;
+    width: 9rem;
+  }
+
+  .brand-story::before {
+    left: -0.75rem;
+  }
+
+  [data-brand-rhythm='editorial'] .brand-section:nth-of-type(even) .brand-section-heading {
+    text-align: left !important;
+  }
+
+  [dir='rtl'] [data-brand-rhythm='editorial'] .brand-section:nth-of-type(even) .brand-section-heading {
+    text-align: right !important;
+  }
+}
