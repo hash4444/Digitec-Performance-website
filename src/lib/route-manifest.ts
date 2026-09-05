@@ -109,7 +109,27 @@ for (const [path, family] of englishRoutes) {
       path: localizedPath,
       family,
       indexable: isIndexableContentPath(localizedPath),
-      lastmod: SEO_RELEASE_DATE,
+      lastmod: localizedPath === BMW_HUB_PATH || [
+        '/brands/mclaren-service-dubai',
+        '/brands/mclaren-service-dubai/transmission-repair',
+        '/brands/mclaren-service-dubai/engine-diagnostics',
+        '/brands/mclaren-service-dubai/oil-change',
+        '/brands/mclaren-service-dubai/mechanical-repair',
+        '/blog/mclaren-best-workshop-dubai',
+        '/brands/lamborghini-service-dubai',
+        '/brands/lamborghini-service-dubai/battery-replacement',
+        '/brands/lamborghini-service-dubai/engine-diagnostics',
+        '/brands/lamborghini-service-dubai/transmission-repair',
+        '/brands/lamborghini-service-dubai/suspension-repair',
+        '/brands/lamborghini-service-dubai/oil-change',
+        '/brands/lamborghini-service-dubai/mechanical-repair',
+        '/brands/lamborghini-service-dubai/brake-repair',
+        '/brands/lamborghini-service-dubai/ac-repair',
+        '/brands/lamborghini-service-dubai/electrical-repair',
+        '/best-lamborghini-workshop-dubai',
+        '/blog/lamborghini-maintenance-guide-dubai',
+        '/blog/lamborghini-urus-service-dubai-guide',
+      ].includes(localizedPath) ? '2026-09-05' : SEO_RELEASE_DATE,
     });
   }
 }

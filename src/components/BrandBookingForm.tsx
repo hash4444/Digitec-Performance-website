@@ -16,9 +16,10 @@ const getSchema = (isArabic: boolean) => z.object({
 
 interface Props {
   brandName: string;
+  issuePlaceholder?: string;
 }
 
-const BrandBookingForm: React.FC<Props> = ({ brandName }) => {
+const BrandBookingForm: React.FC<Props> = ({ brandName, issuePlaceholder }) => {
   const { isArabic } = useLocale();
   const [values, setValues] = useState({ name: '', phone: '', issue: '' });
   const [errors, setErrors] = useState<Record<string, string>>({});
@@ -38,6 +39,12 @@ const BrandBookingForm: React.FC<Props> = ({ brandName }) => {
     const message =
       (isArabic ? `طلب حجز من digitecme.com\nالاسم: ${result.data.name}\nالهاتف: ${result.data.phone}\nالعلامة: ${brandName}\nالخدمة أو المشكلة: ${result.data.issue}` : `Booking request from digitecme.com\nName: ${result.data.name}\nPhone: ${result.data.phone}\nBrand: ${brandName}\nIssue: ${result.data.issue}`);
     const url = `https://wa.me/97143402223?text=${encodeURIComponent(message)}`;
+    window.gtag?.('event', 'whatsapp_draft_opened', {
+      brand: brandName,
+      page_path: window.location.pathname,
+      form_id: 'brand-booking-form',
+      cta_placement: 'booking_form',
+    });
     window.open(url, '_blank', 'noopener,noreferrer');
   };
 
@@ -45,7 +52,7 @@ const BrandBookingForm: React.FC<Props> = ({ brandName }) => {
     'w-full bg-black/60 border border-white/10 focus:border-burnt-orange/60 rounded-2xl px-4 py-3 text-off-white placeholder-gray-500 outline-none transition-colors';
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-4" noValidate>
+    <form id="brand-booking-form" onSubmit={handleSubmit} className="space-y-4" noValidate>
       <div className="grid sm:grid-cols-2 gap-4">
         <div>
           <label htmlFor="bf-name" className="block text-sm text-gray-300 mb-2">{isArabic ? 'الاسم الكامل' : 'Full name'}</label>
@@ -92,7 +99,7 @@ const BrandBookingForm: React.FC<Props> = ({ brandName }) => {
           value={values.issue}
           onChange={(e) => setValues((v) => ({ ...v, issue: e.target.value }))}
           className={`${input} resize-none`}
-          placeholder={isArabic ? 'أخبرنا عن سيارتك وما تحتاج إليه: صيانة أو إصلاح أو تشخيص أو تطوير أداء' : 'Tell us about your car and what you need (service, repair, diagnostics, tuning, etc.)'}
+          placeholder={isArabic ? 'أخبرنا عن سيارتك وما تحتاج إليه: صيانة أو إصلاح أو تشخيص أو تطوير أداء' : issuePlaceholder ?? 'Tell us about your car and what you need (service, repair, diagnostics, tuning, etc.)'}
           maxLength={600}
         />
         {errors.issue && <p className="text-burnt-orange text-xs mt-1">{errors.issue}</p>}

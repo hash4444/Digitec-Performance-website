@@ -1,3 +1,5 @@
+import { FERRARI_HUB_FAQS } from './ferrariHubContent';
+
 export interface Brand {
   name: string;
   slug: string;
@@ -23,7 +25,7 @@ export const brands: Brand[] = [
     name: 'Mercedes-Benz',
     slug: 'mercedes-benz-service-dubai',
     logo: '/brand-logos/showcase/mercedes-benz.png',
-    specialization: 'Repair • Maintenance • Diagnostics • Performance',
+    specialization: 'Service • Maintenance • Diagnostics • Repairs',
     intro:
       'Digi-Tec Performance Centre is an independent Mercedes-Benz workshop in Al Quoz, Dubai. Owners of C-Class, E-Class, S-Class, G-Class, GLE, GLS, AMG and other Mercedes models can request inspection, maintenance and repair; diagnostic functions and the final scope are confirmed for the vehicle before work begins.',
     whyChoose: [
@@ -147,8 +149,8 @@ export const brands: Brand[] = [
     whyChoose: [
       { title: 'Lamborghini-Compatible Diagnostic Review', description: 'Required scan, live-data, service or software functions are checked against the model, modules and available access before the appointment is accepted.' },
       { title: 'CCB Carbon-Ceramic Brake Inspection', description: 'CCB rotor and pad concerns can be measured; parts, handling procedure and repair availability are confirmed for the exact vehicle.' },
-      { title: 'LDF / ISR Gearbox Inspection', description: 'LDF and ISR symptoms, service history and fluid requirements can be assessed before a service or repair scope is proposed.' },
-      { title: 'ANIMA & Adaptive Damper Inspection', description: 'Drive-mode, selector and adaptive-damper concerns can be inspected; supported diagnostic or calibration functions are confirmed for the exact vehicle.' },
+      { title: 'Model-Specific Gearbox Inspection', description: 'LDF, ISR and automatic-transmission discussions are attached only to the applicable model; supported service and repair scope is confirmed before quotation.' },
+      { title: 'Model-Specific Suspension Review', description: 'Urus air suspension and supercar lift or damper systems are not treated as interchangeable; supported diagnostic, hydraulic and calibration functions are confirmed first.' },
     ],
     faqs: [
       { q: 'How often should a Lamborghini be serviced in Dubai?', a: serviceIntervalAnswer('Lamborghini') },
@@ -204,21 +206,16 @@ export const brands: Brand[] = [
     name: 'Ferrari',
     slug: 'ferrari-service-dubai',
     logo: '/brand-logos/showcase/ferrari.png',
-    specialization: 'Repair • Maintenance • Diagnostics • Performance',
+    specialization: 'Service • Maintenance • Diagnostics • Specialist Repairs',
     intro:
-      'Ferrari 488, F8, SF90, Roma and other model owners can request a vehicle-specific inspection at DIGI-TEC. Diagnostic functions, F1 or dual-clutch transmission, brake, suspension, parts and repair requirements are confirmed before the scope is agreed.',
+      'DIGI-TEC Performance Center provides independent Ferrari service, maintenance, diagnostics and repair in Al Quoz, Dubai. Owners can request scheduled servicing, engine and transmission diagnosis, electrical fault finding, brake and suspension inspection, and AC or cooling-system work. The VIN, model, service history and reported concern are reviewed before the available workshop scope is confirmed.',
     whyChoose: [
       { title: 'Ferrari-Compatible Diagnostic Review', description: 'Scan, live-data, adaptation or programming requirements are checked against the model, modules and available access before booking.' },
       { title: 'F1 & Dual-Clutch Gearbox Review', description: 'Single-clutch F1, seven-speed DCT and later eight-speed DCT systems differ by model. Fluid, shift, clutch-data and supported diagnostic requirements are confirmed for the exact vehicle.' },
       { title: 'Steel & Carbon-Ceramic Brake Inspection', description: 'The fitted steel or Ferrari carbon-ceramic system is identified before measurement, compatible parts or a repair procedure is proposed.' },
       { title: 'Model-Specific Suspension Inspection', description: 'Conventional or SCM/SCM-E adaptive-damper concerns can be inspected; fitted hardware, parts and supported diagnostic or calibration requirements are confirmed for the vehicle.' },
     ],
-    faqs: [
-      { q: 'How often should a Ferrari be serviced in Dubai?', a: serviceIntervalAnswer('Ferrari') },
-      { q: 'Do you use genuine Ferrari parts?', a: partsAvailabilityAnswer('Ferrari') },
-      { q: 'How long does a typical Ferrari service take?', a: serviceTimingAnswer('Ferrari') },
-      { q: 'Can you measure F1 clutch wear?', a: 'F1 clutch concerns can be assessed where the exact vehicle and available diagnostic functions support the required measurement. Scope and report availability are confirmed before booking.' },
-    ],
+    faqs: FERRARI_HUB_FAQS,
     relatedServices: ['mechanical-repair-dubai', 'brake-repair-dubai', 'transmission-repair-dubai', 'paint-protection-dubai'],
   },
   {

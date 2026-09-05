@@ -116,6 +116,11 @@ const relatedServiceByPost: Record<string, { href: string; label: string; descri
     label: 'Ferrari 488 model service information',
     description: 'Continue to the model page for 488 powertrain, seven-speed dual-clutch, SCM-E, brake, diagnostic and Dubai ownership considerations.',
   },
+  'rolls-royce-ghost-service-dubai-guide': {
+    href: '/brands/rolls-royce-service-dubai',
+    label: 'Rolls-Royce service and repair in Dubai',
+    description: 'Continue to the Rolls-Royce hub for maintenance, diagnostics, suspension, transmission and vehicle-specific repair enquiries in Al Quoz.',
+  },
 };
 
 const BlogPost = () => {

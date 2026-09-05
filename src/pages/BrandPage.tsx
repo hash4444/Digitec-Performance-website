@@ -45,7 +45,16 @@ import { mercedesModelPages } from '@/data/mercedesModelPages';
 import { MERCEDES_PROBLEMS_PATH } from '@/data/mercedesProblemGuides';
 import PorscheKnowledgeCentre from '@/components/PorscheKnowledgeCentre';
 import BmwKnowledgeHub from '@/components/BmwKnowledgeHub';
+import { BmwBookingActions, BmwBookingChecklist, BmwCoreServices, BmwWorkshopProof } from '@/components/BmwHubSections';
+import { BMW_CORE_SERVICES, BMW_ADDITIONAL_SERVICES, BMW_HUB_FAQS, BMW_HUB_INTRO, BMW_WHATSAPP_HREF } from '@/data/bmwHubContent';
 import FerrariKnowledgeCentre from '@/components/FerrariKnowledgeCentre';
+import { MclarenHubSections } from '@/components/MclarenHubSections';
+import { MCLAREN_FAQS, MCLAREN_HUB_INTRO, MCLAREN_SERVICES, MCLAREN_WHATSAPP_HREF } from '@/data/mclarenHubContent';
+import { FERRARI_HUB_SERVICES } from '@/data/ferrariHubContent';
+import { LamborghiniHubSections } from '@/components/LamborghiniHubSections';
+import { LAMBORGHINI_FAQS, LAMBORGHINI_HUB_INTRO, LAMBORGHINI_SERVICES, LAMBORGHINI_WHATSAPP_HREF } from '@/data/lamborghiniHubContent';
+import { RollsRoyceHubSections } from '@/components/RollsRoyceHubSections';
+import { ROLLS_ROYCE_FAQS, ROLLS_ROYCE_HUB_INTRO, ROLLS_ROYCE_SERVICES, ROLLS_ROYCE_WHATSAPP_HREF } from '@/data/rollsRoyceHubContent';
 
 const mercedesWorkshop = '/images/mercedes-repair-dubai-hero.jpg';
 const MERCEDES_META_TITLE = 'Mercedes Repair & Service Dubai | Digi-Tec Specialists';
@@ -389,7 +398,12 @@ const BrandPage = () => {
   const { isArabic, localizedPath } = useLocale();
   const { slug } = useParams<{ slug: string }>();
   const sourceBrand = slug ? getBrandBySlug(slug) : undefined;
-  const brand = sourceBrand && isArabic ? localizeBrandToArabic(sourceBrand) : sourceBrand;
+  const isEnglishBmwHub = !isArabic && sourceBrand?.slug === 'bmw-service-dubai';
+  const isEnglishFerrariHub = !isArabic && sourceBrand?.slug === 'ferrari-service-dubai';
+  const isEnglishMclarenHub = !isArabic && sourceBrand?.slug === 'mclaren-service-dubai';
+  const isEnglishLamborghiniHub = !isArabic && sourceBrand?.slug === 'lamborghini-service-dubai';
+  const isEnglishRollsRoyceHub = !isArabic && sourceBrand?.slug === 'rolls-royce-service-dubai';
+  const brand = sourceBrand && isArabic ? localizeBrandToArabic(sourceBrand) : isEnglishBmwHub ? { ...sourceBrand, intro: BMW_HUB_INTRO, faqs: BMW_HUB_FAQS } : isEnglishMclarenHub ? { ...sourceBrand, intro: MCLAREN_HUB_INTRO, faqs: MCLAREN_FAQS, specialization: 'Service • Maintenance • Diagnostics • Repairs' } : isEnglishLamborghiniHub ? { ...sourceBrand, intro: LAMBORGHINI_HUB_INTRO, faqs: [...LAMBORGHINI_FAQS], specialization: 'Service • Maintenance • Diagnostics • Repairs' } : isEnglishRollsRoyceHub ? { ...sourceBrand, intro: ROLLS_ROYCE_HUB_INTRO, faqs: [...ROLLS_ROYCE_FAQS], specialization: 'Service • Maintenance • Diagnostics • Repairs' } : sourceBrand;
   const serviceProfileSlug = brand ? getServiceProfileSlug(brand.slug) : '';
   const priorityBrandSeo = getPriorityBrandSeo(sourceBrand?.slug);
   const prioritySeo = isArabic ? undefined : priorityBrandSeo;
@@ -427,6 +441,11 @@ const BrandPage = () => {
     });
     const schemaOffers = isMercedes && !isArabic
       ? MERCEDES_SCHEMA_OFFERS.map((offer) => offer.name)
+      : isEnglishBmwHub ? [...BMW_CORE_SERVICES.map((service) => service.title), ...BMW_ADDITIONAL_SERVICES.map((service) => service.label)]
+      : isEnglishFerrariHub ? FERRARI_HUB_SERVICES.map((service) => service.title)
+      : isEnglishMclarenHub ? MCLAREN_SERVICES.map((service) => service.title)
+      : isEnglishLamborghiniHub ? LAMBORGHINI_SERVICES.map((service) => service.title)
+      : isEnglishRollsRoyceHub ? ROLLS_ROYCE_SERVICES.map((service) => service.title)
       : (isArabic ? arBrandServices.map((service) => service.title) : BRAND_OFFER_CATALOG)
         .map((offer) => `${brand.name} ${offer}`);
     const svc = buildService({
@@ -444,12 +463,12 @@ const BrandPage = () => {
       brand.faqs.map((f) => ({ question: f.q, answer: f.a })),
     );
     return pageGraph([webPage, breadcrumb, brandEntity, svc, ...(faq ? [faq] : [])]);
-  }, [brand, isArabic, priorityBrandSeo]);
+  }, [brand, isArabic, isEnglishBmwHub, isEnglishFerrariHub, isEnglishLamborghiniHub, isEnglishMclarenHub, isEnglishRollsRoyceHub, priorityBrandSeo]);
 
   const isMercedesServiceHub = brand?.slug === 'mercedes-benz-service-dubai';
   const isPorscheServiceHub = brand?.slug === 'porsche-service-dubai';
   const isBmwServiceHub = brand?.slug === 'bmw-service-dubai';
-  const isPriorityLeadBrand = isMercedesServiceHub || isPorscheServiceHub || isBmwServiceHub;
+  const isPriorityLeadBrand = isMercedesServiceHub || isPorscheServiceHub || isBmwServiceHub || isEnglishLamborghiniHub || isEnglishRollsRoyceHub;
   const isRangeRoverServiceHub = brand?.slug === 'range-rover-service-dubai';
   const isDefenderServiceHub = brand?.slug === 'defender-service-dubai';
   const specialistHubTitle = prioritySeo?.title ?? (isMercedesServiceHub ? MERCEDES_META_TITLE : isRangeRoverServiceHub ? RANGE_ROVER_META_TITLE : isDefenderServiceHub ? DEFENDER_META_TITLE : undefined);
@@ -479,7 +498,7 @@ const BrandPage = () => {
     return <Navigate to={localizedPath('/')} replace />;
   }
 
-  const whatsappHref = `https://wa.me/97143402223?text=${encodeURIComponent(
+  const whatsappHref = isEnglishBmwHub ? BMW_WHATSAPP_HREF : isEnglishMclarenHub ? MCLAREN_WHATSAPP_HREF : isEnglishLamborghiniHub ? LAMBORGHINI_WHATSAPP_HREF : isEnglishRollsRoyceHub ? ROLLS_ROYCE_WHATSAPP_HREF : `https://wa.me/97143402223?text=${encodeURIComponent(
     isArabic
       ? `مرحباً، أود الاستفسار عن خدمة ${brand.name} لدى مركز ديجي-تك بيرفورمانس. طراز السيارة وسنتها: `
       : `Hi Digi-Tec, I found your ${brand.name} service page on Google and would like to arrange an inspection.\n\nModel and year: \nService, warning or symptom: `,
@@ -560,7 +579,7 @@ const BrandPage = () => {
             <li><Link to="/brands" className="hover:text-burnt-orange">{isArabic ? 'العلامات' : 'Brands'}</Link></li>
             <li aria-hidden="true">/</li>
             <li className="text-off-white font-semibold" aria-current="page">
-              {isArabic ? `إصلاح وصيانة ${brand.name} في دبي` : `${brand.name} Repair & Service Dubai`}
+              {isArabic ? `إصلاح وصيانة ${brand.name} في دبي` : isEnglishBmwHub ? 'BMW Service & Repair Dubai' : isFerrari ? 'Ferrari Service & Repair Dubai' : isEnglishMclarenHub ? 'McLaren Service & Repair Dubai' : isEnglishLamborghiniHub ? 'Lamborghini Service & Repair Dubai' : isEnglishRollsRoyceHub ? 'Rolls-Royce Service & Repair Dubai' : `${brand.name} Repair & Service Dubai`}
             </li>
           </ol>
         </nav>
@@ -600,12 +619,12 @@ const BrandPage = () => {
                 </span>
               </div>
               <h1 className="brand-hero__title mb-5 max-w-4xl text-[clamp(2.75rem,5vw,5.25rem)] font-semibold leading-[0.98] tracking-[-0.05em]">
-                {brand.name} <span className="text-white/62">{isArabic ? 'للإصلاح والصيانة في دبي' : isMercedesServiceHub ? 'Repair & Service Dubai' : 'Repair & Service Dubai'}</span>
+                {brand.name} <span className="text-white/62">{isArabic ? 'للإصلاح والصيانة في دبي' : isEnglishBmwHub || isFerrari || isEnglishMclarenHub || isEnglishLamborghiniHub || isEnglishRollsRoyceHub ? 'Service & Repair Dubai' : 'Repair & Service Dubai'}</span>
               </h1>
               <p className="brand-hero__intro mb-8 max-w-2xl text-base leading-8 text-white/62 sm:text-lg">
                 {brand.intro}
               </p>
-              <div className="brand-hero__actions flex flex-col sm:flex-row gap-3 sm:gap-4">
+              <div className={isEnglishBmwHub ? 'brand-hero__actions flex flex-col flex-wrap gap-3 sm:gap-4 xl:flex-row' : 'brand-hero__actions flex flex-col sm:flex-row gap-3 sm:gap-4'}>
                 <a
                   href={whatsappHref}
                   target="_blank"
@@ -613,11 +632,11 @@ const BrandPage = () => {
                   className="btn-primary"
                 >
                   <MessageCircle className="w-5 h-5" />
-                  {isArabic ? 'راسلنا عبر واتساب' : isPriorityLeadBrand ? `Request a ${brand.name} Inspection` : 'WhatsApp Us'}
+                  {isArabic ? 'راسلنا عبر واتساب' : isEnglishBmwHub ? 'Book a BMW inspection on WhatsApp' : isFerrari ? 'Request a Ferrari inspection' : isEnglishMclarenHub ? 'Request a McLaren Assessment' : isEnglishLamborghiniHub ? 'Request a Lamborghini Assessment' : isEnglishRollsRoyceHub ? 'Request a Rolls-Royce Service Quote' : isPriorityLeadBrand ? `Request a ${brand.name} Inspection` : 'WhatsApp Us'}
                 </a>
                 <a href="tel:+97143402223" className="btn-secondary">
                   <Phone className="w-5 h-5" />
-                  {isArabic ? 'اتصل على +971 4 340 2223' : 'Call +971 4 340 2223'}
+                  {isArabic ? 'اتصل على +971 4 340 2223' : isEnglishBmwHub || isEnglishRollsRoyceHub ? 'Call the Al Quoz workshop' : 'Call +971 4 340 2223'}
                 </a>
                 {(isPriorityLeadBrand || isRangeRoverServiceHub || isDefenderServiceHub) && (
                   <a
@@ -637,7 +656,21 @@ const BrandPage = () => {
         </div>
       </section>
 
-      {isPriorityLeadBrand && !isArabic && (
+      {isEnglishBmwHub && (
+        <section className="brand-section brand-section--local border-t border-white/5 bg-gradient-to-br from-charcoal/50 to-black py-10 sm:py-14">
+          <div className="mx-auto grid max-w-7xl gap-6 px-4 sm:px-6 lg:grid-cols-2">
+            <div className="p-6 sm:p-8">
+              <p className="eyebrow mb-4">Al Quoz Industrial Area 3, Dubai</p>
+              <h2 className="text-2xl font-black sm:text-4xl">A local workshop for your BMW</h2>
+              <p className="mt-4 text-base leading-relaxed text-gray-300">Bring your car service or repair enquiry to DIGI-TEC, an independent workshop established in 2002. Discuss due maintenance, a warning light or a change in how your BMW drives with the team before arranging the appropriate inspection.</p>
+              <a href="#bmw-services" className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-burnt-orange hover:underline">Explore BMW services <ArrowRight className="h-4 w-4" /></a>
+            </div>
+            <BmwBookingChecklist />
+          </div>
+        </section>
+      )}
+
+      {isPriorityLeadBrand && !isArabic && !isEnglishBmwHub && !isEnglishMclarenHub && !isEnglishLamborghiniHub && !isEnglishRollsRoyceHub && (
         <section className="brand-section brand-section--local border-t border-white/5 bg-gradient-to-br from-charcoal/50 to-black py-10 sm:py-14">
           <div className="mx-auto grid max-w-7xl gap-6 px-4 sm:px-6 lg:grid-cols-[1.25fr_0.75fr]">
             <div className="card-premium rounded-2xl p-6 sm:p-8">
@@ -738,6 +771,7 @@ const BrandPage = () => {
       )}
 
       {/* Services */}
+      {isEnglishMclarenHub ? <MclarenHubSections /> : isEnglishLamborghiniHub ? <LamborghiniHubSections /> : isEnglishRollsRoyceHub ? <RollsRoyceHubSections /> : isEnglishBmwHub ? <BmwCoreServices /> : isFerrari && !isArabic ? null : (
       <section id={isPorscheServiceHub && !isArabic ? 'porsche-services' : undefined} className="brand-section brand-section--services scroll-mt-24 py-12 sm:py-20 bg-black border-t border-white/5">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="brand-section-heading text-center mb-10 sm:mb-14">
@@ -776,10 +810,12 @@ const BrandPage = () => {
         </div>
       </section>
 
-      {isBmwServiceHub && !isArabic && <BmwKnowledgeHub />}
+      )}
+
+      {isEnglishBmwHub && <><BmwKnowledgeHub /><BmwWorkshopProof /></>}
 
       {/* Brand-specific workshop capability */}
-      {profile && (
+      {profile && !isEnglishBmwHub && !isEnglishMclarenHub && !isEnglishLamborghiniHub && !isEnglishRollsRoyceHub && (
         <section className="brand-section brand-section--capability py-12 sm:py-20 bg-gradient-to-br from-charcoal/40 to-black border-t border-white/5">
           <div className="max-w-7xl mx-auto px-4 sm:px-6">
             <div className="brand-section-heading text-center mb-8 sm:mb-12">
@@ -1031,6 +1067,7 @@ const BrandPage = () => {
       )}
 
       {/* Why Choose */}
+      {!isEnglishBmwHub && !isEnglishMclarenHub && !isEnglishLamborghiniHub && !isEnglishRollsRoyceHub && (
       <section className="brand-section brand-section--reasons py-12 sm:py-20 bg-gradient-to-br from-charcoal/40 to-black">
         <div className="max-w-5xl mx-auto px-4 sm:px-6">
           <div className="brand-section-heading text-center mb-8 sm:mb-12">
@@ -1058,8 +1095,9 @@ const BrandPage = () => {
         </div>
       </section>
 
+      )}
       {/* Dedicated brand-service SEO pages */}
-      {brandServices.length > 0 && (
+      {brandServices.length > 0 && !isEnglishBmwHub && !isEnglishMclarenHub && !isEnglishLamborghiniHub && !isEnglishRollsRoyceHub && (
         <section className="brand-section brand-section--directory py-12 sm:py-20 bg-black border-t border-white/5">
           <div className="max-w-7xl mx-auto px-4 sm:px-6">
             <div className="brand-section-heading text-center mb-8 sm:mb-12">
@@ -1142,6 +1180,8 @@ const BrandPage = () => {
       )}
 
       {/* Trust */}
+      {!isEnglishBmwHub && !isFerrari && !isEnglishMclarenHub && !isEnglishLamborghiniHub && !isEnglishRollsRoyceHub && (
+      <>
       <section className="brand-section brand-section--proof py-12 sm:py-20 bg-black border-t border-white/5">
         <div className="max-w-5xl mx-auto px-4 sm:px-6">
           <div className="brand-proof-card card-premium text-center rounded-2xl p-6 sm:p-10">
@@ -1232,6 +1272,8 @@ const BrandPage = () => {
       </section>
 
       {/* FAQ */}
+      </>
+      )}
       <section className="brand-section brand-section--faq py-12 sm:py-20 bg-gradient-to-br from-charcoal/40 to-black border-t border-white/5">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <div className="brand-section-heading text-center mb-8 sm:mb-12">
@@ -1247,12 +1289,12 @@ const BrandPage = () => {
               <AccordionItem
                 key={i}
                 value={`q-${i}`}
-                className="bg-white/[0.03] border border-white/10 rounded-2xl px-5 sm:px-6 data-[state=open]:border-burnt-orange/40"
+                className={`bg-white/[0.03] border border-white/10 rounded-2xl px-5 sm:px-6 data-[state=open]:border-burnt-orange/40 ${isEnglishBmwHub || isEnglishMclarenHub || isEnglishLamborghiniHub || isEnglishRollsRoyceHub ? '[&>[role=region][data-state=closed]]:hidden' : ''}`}
               >
                 <AccordionTrigger className={`${isArabic ? 'text-right' : 'text-left'} text-off-white font-semibold text-base sm:text-lg hover:no-underline py-5`}>
                   {f.q}
                 </AccordionTrigger>
-                <AccordionContent className="text-gray-300 text-sm sm:text-base leading-relaxed pb-5">
+                <AccordionContent forceMount={isEnglishBmwHub || isEnglishMclarenHub || isEnglishLamborghiniHub || isEnglishRollsRoyceHub ? true : undefined} className="text-gray-300 text-sm sm:text-base leading-relaxed pb-5">
                   {f.a}
                 </AccordionContent>
               </AccordionItem>
@@ -1270,8 +1312,9 @@ const BrandPage = () => {
                 {isArabic ? <>احجز خدمة <span className="text-burnt-orange">{brand.name}</span></> : <>Book Your <span className="text-burnt-orange">{brand.name}</span> Service</>}
               </h2>
               <p className="text-gray-300 text-base sm:text-lg leading-relaxed mb-6">
-                {isArabic ? 'أخبرنا عن سيارتك والخدمة المطلوبة، وسنتواصل معك عبر واتساب بعرض السعر وأقرب موعد متاح.' : isMercedesServiceHub ? 'Tell us the Mercedes model, year, mileage, warning message and symptoms. We will reply on WhatsApp to confirm the appropriate first inspection and available booking options.' : 'Tell us about your car and the work you need. We will get back to you on WhatsApp with a quote and the earliest available slot.'}
+                {isArabic ? 'أخبرنا عن سيارتك والخدمة المطلوبة، وسنتواصل معك عبر واتساب بعرض السعر وأقرب موعد متاح.' : isEnglishMclarenHub ? 'Send the McLaren model, year, mileage, warning or symptoms and preferred time. The team will confirm the appropriate assessment and available appointment. A repair estimate may require inspection.' : isEnglishLamborghiniHub ? 'Send the Lamborghini model, year, mileage, warning or symptoms and preferred time. The team will confirm the appropriate assessment and available workshop scope. An accurate repair estimate may require inspection.' : isEnglishRollsRoyceHub ? 'Send the Rolls-Royce model, year, mileage, service history, warning or symptoms and preferred time. The team will confirm the appropriate first assessment and appointment availability. An accurate repair estimate may require inspection.' : isEnglishBmwHub ? 'Send your BMW model, year, mileage, warning lights or symptoms, and preferred appointment time. The team will confirm the appropriate inspection and available booking options. For costs and timing, the scope may need to be established after inspection.' : isFerrari ? 'Send the Ferrari model, year, mileage, service history, warning message or symptoms, and preferred appointment time. The team will confirm the appropriate first inspection and available workshop scope.' : isMercedesServiceHub ? 'Tell us the Mercedes model, year, mileage, warning message and symptoms. We will reply on WhatsApp to confirm the appropriate first inspection and available booking options.' : 'Tell us about your car and the work you need. We will get back to you on WhatsApp with a quote and the earliest available slot.'}
               </p>
+              {isEnglishBmwHub ? <div className="mb-6"><BmwBookingActions /></div> : (
               <div className="flex flex-col sm:flex-row gap-3 mb-6">
                 <a
                   href={whatsappHref}
@@ -1290,12 +1333,13 @@ const BrandPage = () => {
                   +971 4 340 2223
                 </a>
               </div>
+              )}
               <p className="text-gray-500 text-sm">
                 {isArabic ? 'أو استخدم النموذج لإرسال تفاصيلك مباشرة.' : 'Or use the form to send your details directly.'}
               </p>
             </div>
             <div className="card-premium rounded-2xl p-5 sm:p-8">
-              <BrandBookingForm brandName={brand.name} />
+              <BrandBookingForm brandName={brand.name} issuePlaceholder={isEnglishBmwHub ? 'BMW model, year, mileage, warning lights or symptoms, and preferred appointment day/time' : isFerrari ? 'Ferrari model, year, mileage, service history, warning or symptoms, and preferred appointment time' : isEnglishMclarenHub ? 'McLaren model, year, mileage, warning or symptoms, and preferred appointment time' : isEnglishLamborghiniHub ? 'Lamborghini model, year, mileage, warning or symptoms, and preferred appointment time' : isEnglishRollsRoyceHub ? 'Rolls-Royce model, year, mileage, service history, warning or symptoms, and preferred appointment time' : undefined} />
             </div>
           </div>
         </div>

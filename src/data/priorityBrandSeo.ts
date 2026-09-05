@@ -37,12 +37,12 @@ export const PRIORITY_BRAND_SEO: Record<string, PriorityBrandSeo> = {
     heroImageHeight: 1600,
   },
   'bmw-service-dubai': {
-    title: 'BMW Service & Repair Dubai | Digi-Tec Al Quoz',
-    description: 'BMW service and repair in Dubai for 3, 5 and 7 Series, X models, BMW M and i models. Diagnostics, ZF transmission, brakes and mechanical care in Al Quoz.',
+    title: 'BMW Service & Repair Dubai | Independent BMW Workshop | DIGI-TEC',
+    description: 'BMW service, repair, diagnostics and maintenance in Al Quoz, Dubai. DIGI-TEC inspects BMW engine, transmission, brakes, AC, electrical and coding concerns. Book via WhatsApp.',
   },
   'lamborghini-service-dubai': {
-    title: 'Lamborghini Service Dubai | Repair & Diagnostics',
-    description: 'Lamborghini service and repair in Dubai for Urus, Huracan, Aventador and Revuelto. Vehicle-specific diagnostics, brakes, suspension and mechanical care.',
+    title: 'Lamborghini Service & Repair Dubai | DIGI-TEC',
+    description: 'Lamborghini service and repair in Al Quoz, Dubai. Discuss maintenance, diagnostics and repairs for your model with DIGI-TEC. Request a service assessment.',
     heroImage: '/images/lamborghini-service-dubai-hero.jpg',
     heroImageAlt: 'Lamborghini receiving specialist inspection at Digi-Tec workshop in Dubai',
     heroImageWidth: 900,
@@ -65,8 +65,8 @@ export const PRIORITY_BRAND_SEO: Record<string, PriorityBrandSeo> = {
     heroImageHeight: 1600,
   },
   'rolls-royce-service-dubai': {
-    title: 'Rolls-Royce Service Dubai | Independent Workshop',
-    description: 'Rolls-Royce service and repair enquiries in Dubai for Phantom, Ghost, Cullinan, Spectre, Wraith and Dawn, with vehicle-specific inspection in Al Quoz.',
+    title: 'Rolls-Royce Service & Repair Dubai | DIGI-TEC',
+    description: 'Independent Rolls-Royce service and repair in Al Quoz, Dubai. Contact DIGI-TEC for maintenance, diagnostics and a vehicle-specific service estimate.',
   },
   'bentley-service-dubai': {
     title: 'Bentley Service & Repair Dubai | Digi-Tec Workshop',
@@ -94,16 +94,16 @@ export const PRIORITY_BRAND_SEO: Record<string, PriorityBrandSeo> = {
     ],
   },
   'ferrari-service-dubai': {
-    title: 'Ferrari Service & Repair Dubai | DIGI-TEC Workshop',
-    description: 'Independent Ferrari service and repair enquiries in Dubai for 488, F8, Roma, SF90 and other models, with diagnostics and vehicle-specific workshop care.',
+    title: 'Ferrari Service & Repair Dubai | DIGI-TEC',
+    description: 'Ferrari service and repair in Dubai at DIGI-TEC. Independent diagnostics, maintenance, engine, transmission, brake, suspension and electrical work in Al Quoz.',
     heroImage: '/images/ferrari-service-dubai-hero.jpg',
     heroImageAlt: 'Ferrari receiving a mechanical inspection at DIGI-TEC workshop in Dubai',
     heroImageWidth: 941,
     heroImageHeight: 1672,
   },
   'mclaren-service-dubai': {
-    title: 'McLaren Service Dubai | Repair & Diagnostics',
-    description: 'McLaren service and repair enquiries in Dubai for 570S, 720S, 750S, Artura and GT, with vehicle-specific diagnostics, chassis and drivetrain inspection.',
+    title: 'McLaren Service & Repair Dubai | DIGI-TEC',
+    description: 'McLaren service and repair enquiries in Al Quoz, Dubai. Discuss maintenance, diagnostics and vehicle-specific repairs with DIGI-TEC. Request an assessment.',
   },
   'maserati-service-dubai': {
     title: 'Maserati Service & Repair Dubai | Digi-Tec Workshop',

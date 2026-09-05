@@ -16,6 +16,13 @@ const contactMethod = (href: string): string | null => {
   return null;
 };
 
+const contactEvent: Record<string, string> = {
+  phone: 'telephone_link_clicked',
+  email: 'email_link_clicked',
+  whatsapp: 'whatsapp_chat_opened',
+  directions: 'directions_clicked',
+};
+
 type Attribution = Record<string, string>;
 const ATTRIBUTION_KEY = 'digitec_first_touch';
 
@@ -84,29 +91,18 @@ const Analytics = () => {
       if (!(target instanceof HTMLAnchorElement)) return;
       const method = contactMethod(target.href);
       if (!method) return;
-      window.gtag?.('event', 'generate_lead', {
+      window.gtag?.('event', contactEvent[method], {
         method,
         link_url: target.href,
         page_path: window.location.pathname,
-        ...attribution.current,
-      });
-    };
-
-    const trackForm = (event: SubmitEvent) => {
-      if (!(event.target instanceof HTMLFormElement)) return;
-      window.gtag?.('event', 'generate_lead', {
-        method: 'form',
-        form_id: event.target.id || event.target.getAttribute('name') || 'website_form',
-        page_path: window.location.pathname,
+        cta_placement: target.dataset.ctaPlacement || 'unspecified',
         ...attribution.current,
       });
     };
 
     document.addEventListener('click', trackContact);
-    document.addEventListener('submit', trackForm, true);
     return () => {
       document.removeEventListener('click', trackContact);
-      document.removeEventListener('submit', trackForm, true);
     };
   }, []);
 
