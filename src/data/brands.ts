@@ -53,7 +53,7 @@ export const brands: Brand[] = [
     name: 'Maybach',
     slug: 'maybach-service-dubai',
     logo: '/brand-logos/showcase/maybach.png',
-    specialization: 'Repair • Maintenance • Diagnostics • Performance',
+    specialization: 'Service • Maintenance • Diagnostics • Repairs',
     intro:
       'Maybach owners can request vehicle-specific inspection, scheduled maintenance, mechanical or electrical repair and detailing at Digi-Tec in Al Quoz. Model, system, parts and diagnostic requirements are confirmed from the VIN and vehicle before the work scope is agreed.',
     whyChoose: [
@@ -164,20 +164,20 @@ export const brands: Brand[] = [
     name: 'Bentley',
     slug: 'bentley-service-dubai',
     logo: '/brand-logos/showcase/bentley.png',
-    specialization: 'Repair • Maintenance • Diagnostics • Performance',
+    specialization: 'Service • Maintenance • Diagnostics • Repairs',
     intro:
-      'Continental GT, Flying Spur and Bentayga owners can request vehicle-specific inspection and service at Digi-Tec. W12, V8, transmission, air-suspension and interior-work scope is confirmed from the VIN, condition and parts availability.',
+      'Continental GT, Flying Spur, Bentayga and earlier Bentley owners can request vehicle-specific inspection and service at Digi-Tec. Maintenance, drivetrain, suspension, electrical and comfort-system scope is confirmed from the model, year, condition and parts availability.',
     whyChoose: [
-      { title: 'W12 TSI Twin-Turbo Systems', description: 'Coil, coolant-transfer-pipe and timing concerns on the 6.0 W12 can be inspected before parts and repair scope are confirmed.' },
-      { title: 'Continuous Damping Control & Air Suspension', description: '48V active anti-roll and air-suspension concerns can be inspected; supported calibration and repair functions are confirmed for the vehicle.' },
-      { title: 'ZF 8HP Gearbox Review', description: 'Fluid, filter and shift concerns can be inspected. Fluid specification, fill procedure and any supported adaptation function are confirmed for the exact gearbox before work.' },
+      { title: 'Engine and cooling assessment', description: 'Oil, cooling, ignition and drivability concerns are inspected against the exact engine and model year before parts or repair scope are confirmed.' },
+      { title: 'Suspension and ride-quality assessment', description: 'Air suspension, damping and 48-volt equipment vary by model and fitted options. Supported calibration and repair functions are confirmed for the vehicle.' },
+      { title: 'Transmission assessment', description: 'Fluid, filter, warning and shift concerns are assessed against the fitted transmission. Fluid specification, procedure and supported service functions are confirmed first.' },
       { title: 'Interior Condition Review', description: 'Leather, veneer and headlining requests are reviewed for the specific materials and vehicle before work is accepted.' },
     ],
     faqs: [
       { q: 'How often should a Bentley be serviced in Dubai?', a: serviceIntervalAnswer('Bentley') },
       { q: 'Do you use genuine Bentley parts?', a: partsAvailabilityAnswer('Bentley') },
       { q: 'How long does a typical Bentley service take?', a: serviceTimingAnswer('Bentley') },
-      { q: 'Do you service the W12 coolant transfer pipe?', a: 'A suspected W12 coolant-transfer-pipe concern can be inspected. The required part source, coolant specification and repair availability are confirmed from the VIN and findings before work is accepted.' },
+      { q: 'Can you assess Bentley air-suspension concerns?', a: 'Ride-height warnings, leaning, compressor operation, noise and changes in ride quality can be assessed. The fitted suspension and supported repair scope are confirmed before work.' },
     ],
     relatedServices: ['mechanical-repair-dubai', 'suspension-repair-dubai', 'transmission-repair-dubai', 'paint-protection-dubai'],
   },
@@ -403,7 +403,31 @@ const additionalBrandLogos: Record<string, string> = {
   Volvo: '/brand-logos/showcase/volvo.png',
 };
 
-const createAdditionalBrand = ([name, slug]: [string, string]): Brand => ({
+const createAdditionalBrand = ([name, slug]: [string, string]): Brand => {
+  if (name === 'ROX') {
+    return {
+      name: 'ROX',
+      slug,
+      logo: additionalBrandLogos[name] ?? '',
+      specialization: 'ROX 01 Service • Diagnostics • Hybrid Systems',
+      intro: 'ROX 01 owners can request maintenance, repair and diagnostic support at Digi-Tec in Al Quoz, Dubai. We begin with the reported concern, vehicle version, warning messages and an inspection before confirming the appropriate workshop scope.',
+      whyChoose: [
+        { title: 'ROX 01 Diagnostic-First Inspection', description: 'Warning messages, driveability concerns, charging questions and comfort-system faults are assessed from the vehicle, diagnostic findings and the affected system before repair work is recommended.' },
+        { title: 'Range-Extender and Electric-Drive Review', description: 'The ROX 01 combines electric drive with a range-extender system. Any work involving high-voltage, generator-engine, cooling or drive systems is confirmed against the exact vehicle and concern first.' },
+        { title: 'Dubai Cooling, AC and Battery Checks', description: 'High cabin-cooling demand and heat make air conditioning, cooling and low-voltage battery condition practical inspection priorities for a daily-driven ROX 01.' },
+        { title: 'ROX 01 Soft-Close Door Support', description: 'Owners can also request a compatibility inspection for soft-close-door installation, or diagnosis of latches, actuators, wiring and door-alignment concerns.' },
+      ],
+      faqs: [
+        { q: 'Do you service ROX 01 vehicles in Dubai?', a: 'ROX 01 maintenance, repair and diagnostic enquiries can be assessed at Digi-Tec in Al Quoz. Send the model, year, mileage and concern so the appropriate inspection scope can be confirmed before booking.' },
+        { q: 'Can you diagnose a ROX 01 warning light or driveability concern?', a: 'A diagnostic inspection can be requested for warning messages, charging, driveability, cooling, electrical and comfort-system concerns. The compatible diagnostic functions and repair scope are confirmed from the exact vehicle and findings.' },
+        { q: 'Can you install or repair ROX 01 soft-close doors?', a: 'We assess compatible ROX 01 vehicles for soft-close-door installation and inspect latch, actuator, wiring, sensor and alignment faults. Compatibility and available parts are confirmed before work is proposed.' },
+        { q: 'What should I send before booking a ROX 01 inspection?', a: 'Please send the model year, mileage, warning message or symptom, recent service history where available, and your preferred appointment time. This helps the workshop prepare the most useful first inspection.' },
+      ],
+      relatedServices: ['car-diagnostics-dubai', 'car-ac-repair-dubai', 'brake-repair-dubai', 'soft-close-door-repair-dubai'],
+    };
+  }
+
+  return {
   name,
   slug,
   logo: additionalBrandLogos[name] ?? '',
@@ -422,7 +446,8 @@ const createAdditionalBrand = ([name, slug]: [string, string]): Brand => ({
     { q: `Where is Digi-Tec located?`, a: 'Digi-Tec Performance Centre is located in Al Quoz Industrial Area 3, Dubai. Call or WhatsApp us to arrange an inspection.' },
   ],
   relatedServices: ['mechanical-repair-dubai', 'car-diagnostics-dubai', 'brake-repair-dubai', 'car-ac-repair-dubai'],
-});
+  };
+};
 
 brands.push(...additionalBrandEntries.map(createAdditionalBrand));
 

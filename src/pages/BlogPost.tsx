@@ -36,6 +36,7 @@ const getArticleFaqs = (content: ContentBlock[]) => {
 };
 
 const relatedServiceByPost: Record<string, { href: string; label: string; description: string }> = {
+  'aston-martin-db11-service-dubai-guide': { href: '/brands/aston-martin-service-dubai', label: 'Aston Martin service and repair in Dubai', description: 'Discuss your model, maintenance or repair concern with the Al Quoz workshop.' },
   'how-much-is-my-mercedes-worth-dubai': {
     href: '/brands/mercedes-benz-service-dubai',
     label: 'Mercedes valuation and sale support in Dubai',

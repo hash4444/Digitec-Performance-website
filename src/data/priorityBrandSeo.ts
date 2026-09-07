@@ -69,16 +69,20 @@ export const PRIORITY_BRAND_SEO: Record<string, PriorityBrandSeo> = {
     description: 'Independent Rolls-Royce service and repair in Al Quoz, Dubai. Contact DIGI-TEC for maintenance, diagnostics and a vehicle-specific service estimate.',
   },
   'bentley-service-dubai': {
-    title: 'Bentley Service & Repair Dubai | Digi-Tec Workshop',
-    description: 'Bentley service and repair in Dubai for Continental GT, Flying Spur and Bentayga, including diagnostics, W12 and V8 systems, suspension and gearbox care.',
+    title: 'Bentley Service & Repair Dubai | Independent Workshop | DIGI-TEC',
+    description: 'Independent Bentley service, repair, diagnostics and maintenance in Al Quoz, Dubai. Contact DIGI-TEC for a vehicle-specific inspection and estimate.',
     heroImage: '/images/bentley-service-dubai-hero.jpg',
     heroImageAlt: 'Bentley Flying Spur inside the Digi-Tec specialist workshop in Dubai',
     heroImageWidth: 941,
     heroImageHeight: 1672,
   },
+  'audi-service-dubai': {
+    title: 'Audi Service & Repair Dubai | Independent Audi Workshop | DIGI-TEC',
+    description: 'Audi service, repair, diagnostics and maintenance in Al Quoz, Dubai. Discuss engine, transmission, brakes, AC, suspension and battery concerns with DIGI-TEC.',
+  },
   'aston-martin-service-dubai': {
-    title: 'Aston Martin Service Dubai | Repair & Diagnostics',
-    description: 'Aston Martin service and repair in Dubai for Vantage, DB11, DB12, DBS and DBX, including diagnostics, V8 and V12 systems, brakes and transmission care.',
+    title: 'Aston Martin Service & Repair Dubai | DIGI-TEC',
+    description: 'Independent Aston Martin service and repair in Al Quoz, Dubai. Contact DIGI-TEC for maintenance, diagnostics and a vehicle-specific service estimate.',
     heroImage: '/images/aston-martin-service-dubai-hero.jpg',
     heroImageAlt: 'Aston Martin Vantage undergoing inspection at Digi-Tec workshop in Dubai',
     heroImageWidth: 941,
@@ -116,6 +120,10 @@ export const PRIORITY_BRAND_SEO: Record<string, PriorityBrandSeo> = {
   'cadillac-service-dubai': {
     title: 'Cadillac Service & Repair Dubai | Digi-Tec Al Quoz',
     description: 'Cadillac service and repair in Dubai for Escalade, CT4, CT5, XT models and Lyriq, including diagnostics, AC, suspension, brakes and mechanical inspection.',
+  },
+  'rox-service-dubai': {
+    title: 'ROX 01 Service & Repair Dubai | DIGI-TEC Al Quoz',
+    description: 'ROX 01 service, repair and diagnostics in Al Quoz, Dubai. Discuss maintenance, AC, brakes, warning lights and soft-close-door concerns with DIGI-TEC.',
   },
 };
 

@@ -109,7 +109,27 @@ for (const [path, family] of englishRoutes) {
       path: localizedPath,
       family,
       indexable: isIndexableContentPath(localizedPath),
-      lastmod: localizedPath === BMW_HUB_PATH || [
+      lastmod: (localizedPath.startsWith('/brands/aston-martin-service-dubai') || ['/blog/aston-martin-best-workshop-dubai','/blog/aston-martin-db11-service-dubai-guide'].includes(localizedPath)) ? '2026-09-07' : [
+        '/brands/audi-service-dubai',
+        '/brands/audi-service-dubai/oil-change',
+        '/brands/audi-service-dubai/engine-diagnostics',
+        '/brands/audi-service-dubai/mechanical-repair',
+        '/brands/audi-service-dubai/transmission-repair',
+        '/brands/audi-service-dubai/brake-repair',
+        '/brands/audi-service-dubai/suspension-repair',
+        '/brands/audi-service-dubai/ac-repair',
+        '/brands/audi-service-dubai/battery-replacement',
+        '/brands/audi-service-dubai/body-repair',
+        '/best-audi-workshop-dubai',
+        '/blog/audi-maintenance-guide-dubai',
+      ].includes(localizedPath) ? '2026-09-07' : localizedPath === BMW_HUB_PATH || [
+        '/brands/bentley-service-dubai',
+        '/brands/bentley-service-dubai/transmission-repair',
+        '/brands/bentley-service-dubai/suspension-repair',
+        '/brands/bentley-service-dubai/ac-repair',
+        '/blog/bentley-best-workshop-dubai',
+        '/blog/bentley-continental-gt-service-dubai-guide',
+      ].includes(localizedPath) ? '2026-09-07' : localizedPath === BMW_HUB_PATH || [
         '/brands/mclaren-service-dubai',
         '/brands/mclaren-service-dubai/transmission-repair',
         '/brands/mclaren-service-dubai/engine-diagnostics',

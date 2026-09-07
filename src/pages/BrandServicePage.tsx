@@ -189,6 +189,20 @@ const MERCEDES_SERVICE_PATHS: Record<string, string> = {
   'tire-repair': '/services/mercedes-tire-repair-dubai',
 };
 
+import { ASTON_SERVICES } from '@/data/astonMartinHubContent';
+const astonServiceOverride = (combo: NonNullable<ReturnType<typeof getBrandServiceCombo>>) => {
+  const content = ASTON_SERVICES.find(s => s.slug === combo.serviceSlug);
+  if (!content) return combo;
+  const name = combo.serviceSlug === 'mechanical-repair' ? 'Engine & Mechanical Repair' : combo.serviceName;
+  return { ...combo, h1: `Aston Martin ${name} Dubai`, metaTitle: `Aston Martin ${name} Dubai | DIGI-TEC`,
+    metaDescription: `Aston Martin ${content.title.toLowerCase()} in Al Quoz, Dubai. Discuss symptoms, inspection findings and a vehicle-specific estimate with DIGI-TEC.`,
+    heroCopy: content.copy, symptoms: content.concerns,
+    partsCopy: 'The estimate identifies proposed parts and fluids, their specification and availability. The exact vehicle and findings determine the work. Ask about the options before approving the quote.',
+    processSteps: [{title:'Record the concern',description:'Review model, year, mileage, history and when the symptom occurs.'},{title:'Inspect the relevant system',description:content.check},{title:'Explain findings and estimate',description:'Separate confirmed findings from further tests. Confirm parts, accepted scope, labour and timing before approval.'},{title:'Complete agreed work',description:'Carry out approved work and relevant verification, recording the service or repair performed.'}],
+    faqs: [{question:content.question,answer:content.answer},{question:`What affects Aston Martin ${content.title.toLowerCase()} cost?`,answer:'The model, fitted equipment, diagnostic time, findings, parts and labour determine the estimate.'},{question:'What information should I send?',answer:'Send the model, year, mileage and concern. A VIN is not required for the initial enquiry.'}],
+    whatsAppMessage: `Hello DIGI-TEC, I would like to discuss Aston Martin ${content.title.toLowerCase()}. Model/year: Mileage: Symptoms: Preferred time:`,
+  };
+};
 interface BrandServicePageProps {
   brandSlugOverride?: string;
   serviceSlugOverride?: string;
@@ -288,6 +302,32 @@ const rollsRoyceServiceOverride = (combo: NonNullable<ReturnType<typeof getBrand
   return { ...combo, ...shared };
 };
 
+const bentleyServiceOverride = (combo: NonNullable<ReturnType<typeof getBrandServiceCombo>>) => {
+  const shared = {
+    whatsAppMessage: `Hi DIGI-TEC, I would like to request a Bentley ${combo.serviceName.toLowerCase()} assessment.\n\nModel: \nYear: \nMileage: \nService history: \nWarning or symptoms: `,
+    partsCopy: 'Parts, fluids and procedures are selected after the exact Bentley, fitted system and inspection findings are reviewed. The itemised estimate identifies the proposed option and availability before approval; one specification is not applied to every model or generation.',
+  };
+  if (combo.serviceSlug === 'transmission-repair') return { ...combo, ...shared,
+    h1: 'Bentley Transmission Repair Dubai', metaTitle: 'Bentley Transmission Repair Dubai | DIGI-TEC', metaDescription: 'Bentley gearbox and transmission assessment in Al Quoz, Dubai. Warning, leak, engagement and shift concerns are assessed for the exact vehicle.',
+    heroCopy: 'DIGI-TEC assesses Bentley gearbox warnings, leaks, engagement and shift-quality concerns in Al Quoz. The model, year and fitted transmission are identified before compatible data, fluid, procedures, parts or supported repair scope are proposed. A warning or symptom does not by itself prove a failed component.',
+    symptoms: ['Transmission or gearbox warning displayed','Delayed, harsh or inconsistent engagement','Change in shift quality or drivability','Fluid leak or unusual noise near the transmission'],
+    processSteps: [{title:'Identify the fitted transmission',description:'Confirm the model, year, VIN where needed, transmission variant, history and concern.'},{title:'Assess the evidence',description:'Review compatible fault data, physical condition, leaks and drivability where appropriate.'},{title:'Define the supported scope',description:'Confirm fluid, parts, service functions and whether further specialist repair is available.'},{title:'Estimate before approval',description:'Explain findings, proposed work and expected timing before authorised work begins.'}],
+    faqs: [{question:'Do all Bentley models use the same transmission?',answer:'No. Transmission design, fluid and procedure vary by model and generation. The exact vehicle and fitted unit are confirmed before work is proposed.'},{question:'Can a fluid service fix a gearbox warning?',answer:'A fluid service is not a universal fix. The warning, symptoms, fault data and condition must be assessed first.'},{question:'Do you rebuild Bentley gearboxes?',answer:'Assessment is available. Internal repair, calibration and rebuild scope must be confirmed for the exact transmission after diagnosis.'},{question:'What determines the estimate?',answer:'Diagnostic time, the fitted transmission, service or repair scope, parts, fluid and availability determine the estimate.'}] };
+  if (combo.serviceSlug === 'suspension-repair') return { ...combo, ...shared,
+    h1: 'Bentley Suspension Repair Dubai', metaTitle: 'Bentley Suspension Repair Dubai | DIGI-TEC', metaDescription: 'Bentley suspension, ride-height and ride-quality assessment in Al Quoz, Dubai. Fitted air suspension, damping and 48-volt systems are identified first.',
+    heroCopy: 'Bentley suspension systems vary by model, generation and option. DIGI-TEC identifies the fitted arrangement before assessing ride-height warnings, leaning, compressor operation, noise or ride-quality changes. Air suspension, damping and 48-volt equipment are not assumed to be the same across every Bentley.',
+    symptoms: ['Suspension or ride-height warning','Vehicle sits unevenly or changes height slowly','Compressor noise, leak or unusual suspension noise','Ride-quality, handling or steering change'],
+    processSteps: [{title:'Identify the fitted system',description:'Confirm the model, year, options and exact symptom.'},{title:'Inspect the concern',description:'Check visible condition and supported fault or pressure information as applicable.'},{title:'Confirm repair capability',description:'Define supported mechanical, pneumatic, hydraulic, parts and calibration scope.'},{title:'Quote and verify',description:'Explain the proposed work and suitable post-repair checks before approval.'}],
+    faqs: [{question:'Do all Bentleys have the same air suspension?',answer:'No. The exact model, year and fitted equipment must be identified before inspection or parts are proposed.'},{question:'Can a ride-height warning prove a failed air spring?',answer:'No. Leaks, compressor operation, valves, sensors and other mechanical or electrical factors may need testing.'},{question:'Do you calibrate Bentley suspension?',answer:'Supported calibration functions depend on the exact vehicle, access and accepted workshop scope.'},{question:'What affects suspension-repair cost?',answer:'The fitted system, diagnosis, parts, access, calibration requirements and findings determine the estimate.'}] };
+  if (combo.serviceSlug === 'ac-repair') return { ...combo, ...shared,
+    h1: 'Bentley AC Repair Dubai', metaTitle: 'Bentley AC Repair Dubai | DIGI-TEC', metaDescription: 'Bentley air-conditioning assessment in Al Quoz, Dubai for weak cooling, leaks, airflow and compressor concerns. Refrigerant and repair scope are confirmed per vehicle.',
+    heroCopy: 'DIGI-TEC assesses Bentley weak cooling, leaks, airflow, compressor noise and cabin-zone concerns. The exact vehicle, climate-system configuration and test findings determine the supported repair scope. Refrigerant, service equipment and parts are confirmed from the vehicle label and assessment before work.',
+    symptoms: ['Weak or uneven cabin cooling','Air-conditioning warning, unusual smell or poor airflow','Compressor noise or suspected refrigerant leak','Cabin-zone or control concern'],
+    processSteps: [{title:'Record the concern',description:'Confirm the exact symptom, operating conditions and previous work.'},{title:'Identify the fitted system',description:'Check the vehicle label and climate-system configuration before service.'},{title:'Test before parts or refrigerant',description:'Use appropriate leak, pressure, airflow and electrical checks.'},{title:'Quote the supported repair',description:'Explain findings, parts, procedure and timing before approval.'}],
+    faqs: [{question:'Does every Bentley use the same refrigerant?',answer:'No. The vehicle label and model-specific information determine the correct refrigerant and service equipment.'},{question:'Can low refrigerant identify the leak source?',answer:'No. A leak assessment may be needed before refrigerant or parts are recommended.'},{question:'Can you fix multi-zone cooling issues?',answer:'The concern can be assessed, but the fitted climate system, access, parts and supported repair scope are confirmed first.'},{question:'What affects AC repair cost?',answer:'Test time, leak source, parts, refrigerant specification, access and findings determine the estimate.'}] };
+  return { ...combo, ...shared };
+};
+
 const lamborghiniServiceOverride = (combo: NonNullable<ReturnType<typeof getBrandServiceCombo>>) => {
   const shared = {
     whatsAppMessage: `Hi DIGI-TEC, I would like to request a Lamborghini ${combo.serviceName.toLowerCase()} assessment.\n\nModel: \nYear: \nMileage: \nWarning or symptoms: `,
@@ -380,12 +420,14 @@ const BrandServicePage: React.FC<BrandServicePageProps> = ({
       whatsAppMessage: `مرحباً ديجي-تك، أريد حجز ${serviceName} لسيارة ${sourceCombo.brandName}.`,
     };
   })() : sourceCombo;
-  const combo = localizedCombo && !isArabic && localizedCombo.brandSlug === 'mclaren-service-dubai'
+  const combo = localizedCombo && !isArabic && localizedCombo.brandSlug === 'aston-martin-service-dubai' ? astonServiceOverride(localizedCombo) : localizedCombo && !isArabic && localizedCombo.brandSlug === 'mclaren-service-dubai'
     ? mcLarenServiceOverride(localizedCombo)
     : localizedCombo && !isArabic && localizedCombo.brandSlug === 'lamborghini-service-dubai'
       ? lamborghiniServiceOverride(localizedCombo)
       : localizedCombo && !isArabic && localizedCombo.brandSlug === 'rolls-royce-service-dubai'
         ? rollsRoyceServiceOverride(localizedCombo)
+      : localizedCombo && !isArabic && localizedCombo.brandSlug === 'bentley-service-dubai'
+        ? bentleyServiceOverride(localizedCombo)
       : localizedCombo;
   const brand = brandSlug ? getBrandBySlug(brandSlug) : undefined;
   const profile = brandSlug ? BRAND_PROFILES[brandSlug] : undefined;
@@ -515,7 +557,7 @@ const BrandServicePage: React.FC<BrandServicePageProps> = ({
               </span>
             </div>
             <h1 className="mb-5 max-w-4xl text-[clamp(2.65rem,5vw,5.1rem)] font-semibold leading-[0.98] tracking-[-0.05em]">
-            {isArabic ? <><span className="text-white/62">{combo.serviceName}</span> {combo.brandName} في دبي</> : combo.brandSlug === 'rox-service-dubai' && combo.serviceSlug === 'soft-close-door-installation' ? <>ROX 01 <span className="text-white/62">Soft Close Installation Dubai</span></> : combo.brandSlug === 'mclaren-service-dubai' || combo.brandSlug === 'lamborghini-service-dubai' || combo.brandSlug === 'rolls-royce-service-dubai' ? <>{combo.h1}</> : <>{combo.brandName} <span className="text-white/62">{combo.serviceName}</span> Dubai</>}
+            {isArabic ? <><span className="text-white/62">{combo.serviceName}</span> {combo.brandName} في دبي</> : combo.brandSlug === 'rox-service-dubai' && combo.serviceSlug === 'soft-close-door-installation' ? <>ROX 01 <span className="text-white/62">Soft Close Installation Dubai</span></> : combo.brandSlug === 'aston-martin-service-dubai' || combo.brandSlug === 'mclaren-service-dubai' || combo.brandSlug === 'lamborghini-service-dubai' || combo.brandSlug === 'rolls-royce-service-dubai' ? <>{combo.h1}</> : <>{combo.brandName} <span className="text-white/62">{combo.serviceName}</span> Dubai</>}
             </h1>
             <p className="mb-8 max-w-2xl text-base leading-8 text-white/58 sm:text-lg">
               {combo.heroCopy}
@@ -561,7 +603,7 @@ const BrandServicePage: React.FC<BrandServicePageProps> = ({
       <section className="py-12 sm:py-16 bg-gradient-to-br from-charcoal/40 to-black">
         <div className="max-w-5xl mx-auto px-4 sm:px-6">
           <h2 className="text-2xl sm:text-4xl font-black mb-3">
-            {isArabic ? <>طرازات {combo.brandName} التي نوفر لها <span className="text-burnt-orange">{combo.serviceName}</span></> : combo.brandSlug === 'mclaren-service-dubai' ? <>McLaren models for <span className="text-burnt-orange">{combo.serviceName}</span></> : combo.brandSlug === 'lamborghini-service-dubai' ? <>Models covered by this <span className="text-burnt-orange">Lamborghini service</span></> : combo.brandSlug === 'rolls-royce-service-dubai' ? <>Rolls-Royce models for <span className="text-burnt-orange">{combo.serviceName}</span></> : <>{combo.brandName} Models We <span className="text-burnt-orange">{combo.serviceName}</span></>}
+            {isArabic ? <>طرازات {combo.brandName} التي نوفر لها <span className="text-burnt-orange">{combo.serviceName}</span></> : combo.brandSlug === 'mclaren-service-dubai' ? <>McLaren models for <span className="text-burnt-orange">{combo.serviceName}</span></> : combo.brandSlug === 'lamborghini-service-dubai' ? <>Models covered by this <span className="text-burnt-orange">Lamborghini service</span></> : combo.brandSlug === 'rolls-royce-service-dubai' ? <>Rolls-Royce models for <span className="text-burnt-orange">{combo.serviceName}</span></> : combo.brandSlug === 'aston-martin-service-dubai' ? <>Aston Martin models and fitted systems</> : <>{combo.brandName} Models We <span className="text-burnt-orange">{combo.serviceName}</span></>}
           </h2>
           <p className="text-gray-400 text-sm sm:text-base mb-6 sm:mb-8">
             {isArabic ? `يتم تأكيد نطاق الخدمة حسب طراز ${combo.brandName} والنظام المركب قبل الحجز.` : `Workshop scope, compatible functions and parts are confirmed for the exact ${combo.brandName} model before booking.`}
