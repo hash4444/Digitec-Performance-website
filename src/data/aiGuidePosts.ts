@@ -164,91 +164,118 @@ export const aiGuidePosts: BlogPost[] = [
     ],
   },
   {
-    slug: 'mercedes-service-cost-dubai-guide',
-    title: 'Mercedes Service in Dubai: Scope, Intervals and What Affects Cost',
-    excerpt:
-      'What Service A and Service B actually cover, which extra items matter in Dubai heat, and how a Mercedes estimate should be presented before you approve it.',
-    category: 'Mercedes',
-    author: 'DIGI-TEC Workshop',
-    date: '2026-08-13',
-    readTime: '8 min read',
-    coverGradient: 'from-burnt-orange/30 via-charcoal to-black',
-    metaTitle: 'Mercedes Service Dubai | Intervals, Scope and Cost Factors',
-    metaDescription:
-      'A Mercedes service guide for Dubai owners: what Service A and Service B include, the extra checks Dubai heat demands, and what drives the final cost.',
-    keywords:
-      'Mercedes service Dubai, Mercedes Service A Dubai, Mercedes Service B Dubai, Mercedes service cost Dubai, Mercedes workshop Al Quoz',
-    ogType: 'article',
-    content: [
+    "slug": "mercedes-service-cost-dubai-guide",
+    "title": "Mercedes Service Cost in Dubai: Service A & B Scope",
+    "excerpt": "Understand Mercedes Service A and B cost factors in Dubai: due work, oil specification, parts, labour, diagnosis and the details an itemized quote should show.",
+    "category": "Mercedes",
+    "author": "DIGI-TEC Workshop",
+    "date": "2026-08-13",
+    "updatedDate": "2026-09-08",
+    "readTime": "5 min read",
+    "coverGradient": "from-burnt-orange/30 via-charcoal to-black",
+    "metaTitle": "Mercedes Service Cost Dubai | A & B Scope | Digi-Tec",
+    "metaDescription": "Understand Mercedes Service A and B cost factors in Dubai: due work, oil specification, parts, labour, diagnosis and the details an itemized quote should show.",
+    "ogType": "article",
+    "content": [
       {
-        type: 'p',
-        text: 'Short answer: most Mercedes models in Dubai alternate between Service A and Service B, roughly every twelve months or at the mileage the onboard ASSYST indicator requests, whichever arrives first. Service A is the lighter visit built around engine oil, filter and a full inspection. Service B adds the cabin filter, brake fluid and a wider set of checks. Cost is driven by engine family, oil approval, filter set and any additional findings, which is why Digi-Tec confirms scope after inspection using XENTRY.',
+        "type": "p",
+        "text": "A useful Mercedes service quote starts with the vehicle and the work due. The VIN, model year, mileage, ASSYST display and recorded service history determine the scope. Engine oil capacity, fluid approvals, parts choice, labour and additional findings then affect the cost. A package label alone is not enough to compare two estimates."
       },
-      { type: 'h2', text: 'What Service A covers' },
       {
-        type: 'ul',
-        items: [
-          'Engine oil to the correct Mercedes approval for the engine, plus the oil filter.',
-          'Fluid level checks and top up where required.',
-          'Tyre condition and pressure check.',
-          'Brake component visual inspection.',
-          'Full vehicle inspection and ASSYST service counter reset.',
-        ],
+        "type": "h2",
+        "text": "How Service A and Service B affect the quote"
       },
-      { type: 'h2', text: 'What Service B adds' },
       {
-        type: 'ul',
-        items: [
-          'Cabin combination filter, which matters in Dubai dust.',
-          'Brake fluid renewal on the manufacturer schedule.',
-          'A broader inspection covering suspension, cooling, drivetrain and body items.',
-          'Diagnostic scan to capture stored faults before they become breakdowns.',
-        ],
+        "type": "p",
+        "text": "Service A generally describes a smaller scheduled visit and Service B a broader one, but the precise checklist must be matched to the vehicle. Oil and filter work, inspections and other due items should be listed individually. Cabin filters, spark plugs, brake fluid and transmission servicing must not be assumed to be included simply because an estimate says Service B or major service."
       },
-      { type: 'h2', text: 'The Dubai specific items worth adding' },
       {
-        type: 'p',
-        text: 'Heat and dust shorten the working life of several components regardless of mileage. On most Mercedes models it is worth having the cooling system, battery health, air conditioning performance, brake fluid moisture content and suspension bushes assessed at every visit. Catching a weak battery or a marginal cooling system during a service is far less disruptive than dealing with it on Sheikh Zayed Road in August.',
+        "type": "h2",
+        "text": "What an itemized estimate should include"
       },
-      { type: 'h2', text: 'What changes the cost' },
       {
-        type: 'ul',
-        items: [
-          'Engine family and oil capacity, which differ sharply between a four cylinder C-Class and an AMG V8.',
-          'The oil approval required for your exact engine and model year.',
-          'Whether the visit is Service A or Service B.',
-          'Findings from inspection, such as brakes, tyres, bushes or leaks.',
-          'Parts choice between genuine and suitable OE supplier alternatives where appropriate.',
-        ],
+        "type": "ul",
+        "items": [
+          "The exact vehicle, mileage and service message used to select the work.",
+          "Engine oil approval, quantity, oil filter and required seals or consumables.",
+          "Every additional due filter, plug or fluid item, with its parts option and quantity.",
+          "Labour, diagnostic charges, applicable VAT and the total payable.",
+          "Exclusions, parts availability, expected timing and the approval process for additional findings."
+        ]
       },
-      { type: 'h2', text: 'FAQs' },
-      { type: 'h3', text: 'How often should a Mercedes be serviced in Dubai?' },
       {
-        type: 'p',
-        text: 'Follow the ASSYST indicator, and treat twelve months as the outer limit even for low mileage cars. Heat and short trips age oil and fluids faster than distance alone suggests.',
+        "type": "h2",
+        "text": "Routine maintenance and fault diagnosis have different scopes"
       },
-      { type: 'h3', text: 'What is the difference between Service A and Service B?' },
       {
-        type: 'p',
-        text: 'Service A is the lighter alternating visit centred on engine oil, filter and inspection. Service B is the fuller visit, adding the cabin filter, brake fluid renewal and a wider inspection scope.',
+        "type": "p",
+        "text": "An oil service does not automatically investigate a warning light, repair a leak or resolve a gearbox fault. Describe those concerns before booking so the workshop can separate scheduled work from diagnostic time. If investigation requires further dismantling, agree that stage and its cost before it proceeds."
       },
-      { type: 'h3', text: 'Does Digi-Tec use XENTRY for Mercedes?' },
       {
-        type: 'p',
-        text: 'Yes. XENTRY is used for fault reading, guided testing, service resets, coding and programming across the Mercedes-Benz, Maybach and AMG models serviced at the Al Quoz workshop.',
+        "type": "h2",
+        "text": "How Dubai use influences the assessment"
       },
-      { type: 'h3', text: 'Will independent servicing affect my Mercedes resale value?' },
       {
-        type: 'p',
-        text: 'Not when the work is documented. Detailed invoices listing date, mileage, parts and fluids maintain a credible service history for valuation and resale.',
+        "type": "p",
+        "text": "Explain short trips, extended parking, towing, heavy loads and any cooling or AC concern. The vehicle schedule remains the basis for due work; observed condition and applicable operating guidance determine additional checks. A local climate alone does not justify one replacement interval for every Mercedes."
       },
-      { type: 'h3', text: 'Where is the workshop?' },
       {
-        type: 'p',
-        text: 'Digi-Tec Performance Center, Al Quoz Industrial Area 3, Dubai. Call or WhatsApp +971 4 340 2223.',
+        "type": "h2",
+        "text": "Compare parts and records, as well as the total"
       },
-    ],
+      {
+        "type": "p",
+        "text": "Ask which items are genuine Mercedes-Benz, OE-supplier or a proposed alternative, and confirm compatibility before approval. Keep invoices showing date, mileage, parts, fluids and work performed. These records help a future buyer assess the history, but they do not guarantee a particular resale value."
+      },
+      {
+        "type": "p",
+        "text": "For booking and detailed scope, use these service pages:",
+        "links": [
+          {
+            "href": "/brands/mercedes-benz-service-dubai",
+            "label": "Mercedes Service A/B and repair booking"
+          },
+          {
+            "href": "/services/mercedes-oil-change-dubai",
+            "label": "Mercedes oil and filter service"
+          },
+          {
+            "href": "/blog/mercedes-service-intervals-dubai-heat",
+            "label": "ASSYST and service-interval guide"
+          }
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "FAQs"
+      },
+      {
+        "type": "h3",
+        "text": "Can I get a fixed price without the vehicle details?"
+      },
+      {
+        "type": "p",
+        "text": "The workshop needs the model and year or VIN, mileage, service message and relevant history to confirm the due scope. An initial estimate may still depend on inspection findings. Ask for assumptions and exclusions in writing."
+      },
+      {
+        "type": "h3",
+        "text": "Is coding or programming part of a routine service?"
+      },
+      {
+        "type": "p",
+        "text": "Only if a required, supported function is explicitly included. Eligibility depends on the vehicle, module, requested work and access. A routine service does not establish coverage for all coding or programming functions."
+      },
+      {
+        "type": "h3",
+        "text": "Where can I arrange a Mercedes service quote?"
+      },
+      {
+        "type": "p",
+        "text": "Contact Digi-Tec Performance Center in Al Quoz Industrial Area 3, Dubai, on +971 4 340 2223 by phone or WhatsApp. Send the vehicle details and confirm the appointment and availability before visiting."
+      }
+    ]
   },
+
   {
     slug: 'mercedes-amg-gt-tuning-dubai',
     title: 'Mercedes-AMG GT Tuning in Dubai: A Complete Upgrade Guide',
@@ -273,7 +300,7 @@ export const aiGuidePosts: BlogPost[] = [
       { type: 'h2', text: 'Which AMG GT models are covered' },
       {
         type: 'p',
-        text: 'The guide applies to the AMG GT, GT S, GT C, GT R and the four door GT models sharing the M177 and M178 twin turbo V8 family, along with related AMG platforms such as the C63 and E63 that use the same calibration approach.',
+        text: 'Earlier AMG GT, GT S, GT C and GT R models, four-door GT variants and other AMG platforms have different engines, control units and supporting systems. Confirm the generation, engine, existing software and modifications before discussing a calibration; C63 and E63 badges do not establish the same tuning scope.',
       },
       { type: 'h2', text: 'Stage one: ECU calibration' },
       {
@@ -310,7 +337,7 @@ export const aiGuidePosts: BlogPost[] = [
       { type: 'h3', text: 'Is AMG GT tuning reliable?' },
       {
         type: 'p',
-        text: 'It is when the car is inspected first, the calibration leaves a safety margin, and cooling, fuelling and transmission capacity are matched to the target. Problems usually come from aggressive calibration on tired hardware rather than from tuning itself.',
+        text: 'A health assessment and suitable supporting systems help inform the decision, but tuning cannot carry a universal reliability guarantee. Discuss the intended use, fuel, thermal load, drivetrain limits, maintenance and any warranty implications for the exact vehicle before agreeing the project.',
       },
       { type: 'h3', text: 'Does tuning affect my Mercedes warranty?' },
       {

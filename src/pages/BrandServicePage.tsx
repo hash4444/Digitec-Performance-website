@@ -29,6 +29,7 @@ import {
 } from '@/lib/schema';
 import { useLocale } from '@/i18n/use-locale';
 import { MERCEDES_PROBLEMS_PATH } from '@/data/mercedesProblemGuides';
+import mercedesEngineWorkshop from '@/assets/mercedes-amg-engine-repair-dubai.jpg';
 import {
   FERRARI_MAINTENANCE_GUIDE_PATH,
 } from '@/data/ferrariModelPages';
@@ -82,7 +83,21 @@ const PORSCHE_RELATED_CONTENT: Record<string, { label: string; path: string }[]>
 };
 
 const MERCEDES_RELATED_CONTENT: Record<string, { label: string; path: string }[]> = {
+  'oil-change': [
+    { label: 'Mercedes Service A/B and maintenance booking', path: '/brands/mercedes-benz-service-dubai#mercedes-maintenance-scope' },
+    { label: 'Mercedes oil-service guide', path: '/blog/best-oil-change-dubai-mercedes' },
+    { label: 'How oil approvals are selected', path: '/blog/oil-specification-guide-dubai-luxury' },
+  ],
+  'brake-repair': [{ label: 'Brake inspection and repair guide', path: '/blog/brake-repair-dubai' }],
+  'body-repair': [
+    { label: 'Body repair and paintwork scope', path: '/services/car-body-repair-dubai' },
+    { label: 'Paint protection film options', path: '/services/paint-protection-film' },
+    { label: 'Documented G63 conversion project', path: '/blog/g63-to-brabus-g800-conversion-dubai' },
+  ],
+  'steering-repair': [{ label: 'Mercedes suspension assessment', path: '/services/mercedes-suspension-repair-dubai' }],
+  'exhaust-repair': [{ label: 'Performance hardware and tuning assessment', path: '/tuning' }],
   'transmission-repair': [
+    { label: '7G and 9G transmission service guide', path: '/blog/transmission-service-7g-9g-dubai' },
     { label: 'Why a Mercedes gearbox jerks', path: `${MERCEDES_PROBLEMS_PATH}/gearbox-jerking` },
     { label: 'How to recognise transmission slipping', path: `${MERCEDES_PROBLEMS_PATH}/transmission-slipping` },
     { label: 'E-Class transmission considerations', path: '/blog/mercedes-e-class-service-dubai-guide' },
@@ -93,11 +108,14 @@ const MERCEDES_RELATED_CONTENT: Record<string, { label: string; path: string }[]
     { label: 'S-Class suspension systems', path: '/blog/mercedes-s-class-service-dubai-guide' },
   ],
   'engine-diagnostics': [
+    { label: 'Electrical and ECU hardware faults', path: '/services/mercedes-electrical-repair-dubai' },
+    { label: 'Performance tuning assessment', path: '/tuning' },
     { label: 'Mercedes check-engine light guide', path: `${MERCEDES_PROBLEMS_PATH}/check-engine-light` },
     { label: "Mercedes won't-start guide", path: `${MERCEDES_PROBLEMS_PATH}/wont-start` },
     { label: 'Browse all Mercedes diagnostic guides', path: MERCEDES_PROBLEMS_PATH },
   ],
   'mechanical-repair': [
+    { label: 'Mercedes transmission and gearbox assessment', path: '/services/mercedes-transmission-repair-dubai' },
     { label: 'What to do when a Mercedes overheats', path: `${MERCEDES_PROBLEMS_PATH}/engine-overheating` },
     { label: 'How a Mercedes oil leak is traced', path: `${MERCEDES_PROBLEMS_PATH}/oil-leak` },
     { label: 'AMG G63 platform guide', path: '/blog/mercedes-g63-service-dubai-guide' },
@@ -113,6 +131,7 @@ const MERCEDES_RELATED_CONTENT: Record<string, { label: string; path: string }[]
     { label: 'E-Class 12V and 48V considerations', path: '/blog/mercedes-e-class-service-dubai-guide' },
   ],
   'electrical-repair': [
+    { label: 'Supported diagnostics, coding and programming', path: '/services/mercedes-diagnostics-dubai' },
     { label: 'Mercedes battery and charging warnings', path: `${MERCEDES_PROBLEMS_PATH}/battery-warning` },
     { label: "No-crank and crank-no-start diagnosis", path: `${MERCEDES_PROBLEMS_PATH}/wont-start` },
     { label: 'S-Class electrical considerations', path: '/blog/mercedes-s-class-service-dubai-guide' },
@@ -389,7 +408,7 @@ const BrandServicePage: React.FC<BrandServicePageProps> = ({
   const { brandSlug: routeBrandSlug, serviceSlug: routeServiceSlug } = useParams<{ brandSlug: string; serviceSlug: string }>();
   const brandSlug = brandSlugOverride ?? routeBrandSlug;
   const serviceSlug = serviceSlugOverride ?? routeServiceSlug;
-  const sourceCombo = brandSlug && serviceSlug ? getBrandServiceCombo(brandSlug, serviceSlug) : undefined;
+  const sourceCombo = brandSlug && serviceSlug ? getBrandServiceCombo(brandSlug, serviceSlug, { mercedesEnglishContent: !isArabic }) : undefined;
   const localizedCombo = sourceCombo && isArabic ? (() => {
     const serviceName = serviceNamesArabic[sourceCombo.serviceSlug] ?? 'خدمة السيارات';
     const standardFaqs = [
@@ -557,7 +576,7 @@ const BrandServicePage: React.FC<BrandServicePageProps> = ({
               </span>
             </div>
             <h1 className="mb-5 max-w-4xl text-[clamp(2.65rem,5vw,5.1rem)] font-semibold leading-[0.98] tracking-[-0.05em]">
-            {isArabic ? <><span className="text-white/62">{combo.serviceName}</span> {combo.brandName} في دبي</> : combo.brandSlug === 'rox-service-dubai' && combo.serviceSlug === 'soft-close-door-installation' ? <>ROX 01 <span className="text-white/62">Soft Close Installation Dubai</span></> : combo.brandSlug === 'aston-martin-service-dubai' || combo.brandSlug === 'mclaren-service-dubai' || combo.brandSlug === 'lamborghini-service-dubai' || combo.brandSlug === 'rolls-royce-service-dubai' ? <>{combo.h1}</> : <>{combo.brandName} <span className="text-white/62">{combo.serviceName}</span> Dubai</>}
+            {combo.brandSlug === 'mercedes-benz-service-dubai' && !isArabic ? combo.h1 : isArabic ? <><span className="text-white/62">{combo.serviceName}</span> {combo.brandName} في دبي</> : combo.brandSlug === 'rox-service-dubai' && combo.serviceSlug === 'soft-close-door-installation' ? <>ROX 01 <span className="text-white/62">Soft Close Installation Dubai</span></> : combo.brandSlug === 'aston-martin-service-dubai' || combo.brandSlug === 'mclaren-service-dubai' || combo.brandSlug === 'lamborghini-service-dubai' || combo.brandSlug === 'rolls-royce-service-dubai' ? <>{combo.h1}</> : <>{combo.brandName} <span className="text-white/62">{combo.serviceName}</span> Dubai</>}
             </h1>
             <p className="mb-8 max-w-2xl text-base leading-8 text-white/58 sm:text-lg">
               {combo.heroCopy}
@@ -599,11 +618,18 @@ const BrandServicePage: React.FC<BrandServicePageProps> = ({
         </div>
       </section>
 
+      {combo.brandSlug === 'mercedes-benz-service-dubai' && combo.serviceSlug === 'mechanical-repair' && !isArabic && (
+        <figure className="mx-auto max-w-5xl px-4 pb-12 sm:px-6">
+          <img src={mercedesEngineWorkshop} alt="Mercedes-AMG engine work at the Digi-Tec workshop" loading="lazy" className="max-h-[32rem] w-full rounded-2xl object-cover" />
+          <figcaption className="mt-3 text-sm text-white/60">Mercedes-AMG engine work photographed at Digi-Tec. The assessment and repair scope for your engine are confirmed separately.</figcaption>
+        </figure>
+      )}
+
       {/* Models */}
       <section className="py-12 sm:py-16 bg-gradient-to-br from-charcoal/40 to-black">
         <div className="max-w-5xl mx-auto px-4 sm:px-6">
           <h2 className="text-2xl sm:text-4xl font-black mb-3">
-            {isArabic ? <>طرازات {combo.brandName} التي نوفر لها <span className="text-burnt-orange">{combo.serviceName}</span></> : combo.brandSlug === 'mclaren-service-dubai' ? <>McLaren models for <span className="text-burnt-orange">{combo.serviceName}</span></> : combo.brandSlug === 'lamborghini-service-dubai' ? <>Models covered by this <span className="text-burnt-orange">Lamborghini service</span></> : combo.brandSlug === 'rolls-royce-service-dubai' ? <>Rolls-Royce models for <span className="text-burnt-orange">{combo.serviceName}</span></> : combo.brandSlug === 'aston-martin-service-dubai' ? <>Aston Martin models and fitted systems</> : <>{combo.brandName} Models We <span className="text-burnt-orange">{combo.serviceName}</span></>}
+            {isArabic ? <>طرازات {combo.brandName} التي نوفر لها <span className="text-burnt-orange">{combo.serviceName}</span></> : combo.brandSlug === 'mercedes-benz-service-dubai' ? <>Mercedes models and fitted systems</> : combo.brandSlug === 'mclaren-service-dubai' ? <>McLaren models for <span className="text-burnt-orange">{combo.serviceName}</span></> : combo.brandSlug === 'lamborghini-service-dubai' ? <>Models covered by this <span className="text-burnt-orange">Lamborghini service</span></> : combo.brandSlug === 'rolls-royce-service-dubai' ? <>Rolls-Royce models for <span className="text-burnt-orange">{combo.serviceName}</span></> : combo.brandSlug === 'aston-martin-service-dubai' ? <>Aston Martin models and fitted systems</> : <>{combo.brandName} Models We <span className="text-burnt-orange">{combo.serviceName}</span></>}
           </h2>
           <p className="text-gray-400 text-sm sm:text-base mb-6 sm:mb-8">
             {isArabic ? `يتم تأكيد نطاق الخدمة حسب طراز ${combo.brandName} والنظام المركب قبل الحجز.` : `Workshop scope, compatible functions and parts are confirmed for the exact ${combo.brandName} model before booking.`}
@@ -658,7 +684,7 @@ const BrandServicePage: React.FC<BrandServicePageProps> = ({
           <div className="mx-auto max-w-5xl px-4 sm:px-6">
             <p className="eyebrow mb-4">Model and owner guides</p>
             <h2 className="text-2xl font-black sm:text-4xl">Understand the symptom before the repair</h2>
-            <p className="mt-4 max-w-3xl text-sm leading-relaxed text-white/55">These informational pages explain the warning or platform. This page remains the commercial destination for the confirmed service need.</p>
+            <p className="mt-4 max-w-3xl text-sm leading-relaxed text-white/55">Explore the relevant symptom, model or service scope to help describe the concern when you contact the workshop.</p>
             <ul className="mt-7 grid gap-4 sm:grid-cols-3">
               {relatedAuthorityContent.map((item) => (
                 <li key={item.path}>

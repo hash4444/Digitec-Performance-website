@@ -1,4 +1,5 @@
 import { stripLocalePrefix } from '@/i18n/use-locale';
+import { MERCEDES_UNTRANSLATED_MODEL_PATHS } from '@/i18n/mercedes-language';
 
 /**
  * Brand/service combinations retained for users but excluded from indexing.
@@ -42,4 +43,4 @@ export const isLowValueBrandServicePath = (pathname: string): boolean => {
 };
 
 export const isIndexableContentPath = (pathname: string): boolean =>
-  !isLowValueBrandServicePath(pathname);
+  !isLowValueBrandServicePath(pathname) && !(pathname.startsWith('/ar/') && MERCEDES_UNTRANSLATED_MODEL_PATHS.has(stripLocalePrefix(pathname)));

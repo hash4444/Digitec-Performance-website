@@ -11,6 +11,7 @@ import { getBlogPostBySlug, blogPosts } from '@/data/blogPosts';
 import { buildArticle, buildBreadcrumb, buildFAQ, buildWebPage, pageGraph } from '@/lib/schema';
 import { useLocale } from '@/i18n/use-locale';
 import { categoryArabic, localizeBlogPostToArabic, localizePostSummaryToArabic } from '@/i18n/ar-blog';
+import { MERCEDES_UNTRANSLATED_MODEL_PATHS } from '@/i18n/mercedes-language';
 
 type ContentBlock = { type: 'h2' | 'h3' | 'p' | 'ul'; text?: string; items?: string[] };
 
@@ -146,6 +147,7 @@ const BlogPost = () => {
       breadcrumbId: `${url}#breadcrumb`,
       primaryImage: post.coverImage,
       datePublished: post.date,
+      dateModified: post.updatedDate,
       mainEntityId: `${url}#article`,
     });
     const article = buildArticle({
@@ -153,6 +155,7 @@ const BlogPost = () => {
       headline: post.title,
       description: post.excerpt,
       datePublished: post.date,
+      dateModified: post.updatedDate,
       author: post.author,
       authorType: 'Organization',
       image: post.coverImage,
@@ -176,6 +179,7 @@ const BlogPost = () => {
     canonical:
       post ? `https://digitecme.com${isArabic ? '/ar' : ''}/blog/${post.slug}` : `https://digitecme.com${isArabic ? '/ar' : ''}/blog`,
     jsonLd: articleJsonLd,
+    noindex: isArabic && Boolean(post && MERCEDES_UNTRANSLATED_MODEL_PATHS.has(`/blog/${post.slug}`)),
   });
 
   if (!post) return <Navigate to={localizedPath('/blog')} replace />;
@@ -241,6 +245,7 @@ const BlogPost = () => {
               <Clock className="w-4 h-4" />
               {post.readTime}
             </span>
+            {post.updatedDate && <span>{isArabic ? 'تحديث: ' : 'Updated: '}{post.updatedDate}</span>}
           </div>
           </div>
         </div>

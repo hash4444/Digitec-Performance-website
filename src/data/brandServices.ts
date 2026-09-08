@@ -554,6 +554,8 @@ Object.assign(BRAND_PROFILES, {
 
 export const BRAND_SLUGS = Object.keys(BRAND_PROFILES);
 
+import { MERCEDES_SERVICE_CONTENT } from './mercedesServiceContent';
+
 export interface FAQ {
   question: string;
   answer: string;
@@ -981,7 +983,7 @@ function refineFerrariContent(key: ServiceKey, composed: Composed): Composed {
   return base;
 }
 
-export function getBrandServiceCombo(brandSlug: string, serviceSlug: string): BrandServiceCombo | undefined {
+export function getBrandServiceCombo(brandSlug: string, serviceSlug: string, options?: { mercedesEnglishContent?: boolean }): BrandServiceCombo | undefined {
   const profile = BRAND_PROFILES[brandSlug];
   if (!profile) return undefined;
   const availableServices = getAvailableServiceKeys(brandSlug);
@@ -1031,6 +1033,7 @@ export function getBrandServiceCombo(brandSlug: string, serviceSlug: string): Br
       metaTitle: `${profile.brandName} ${meta.name} Dubai | ${displayBrand}`,
       metaDescription: `${profile.brandName} ${meta.name.toLowerCase()} in Dubai with model-specific inspection, confirmed parts options and a clear quote at ${displayBrand}, Al Quoz.`,
     }),
+    ...(brandSlug === 'mercedes-benz-service-dubai' && options?.mercedesEnglishContent !== false ? MERCEDES_SERVICE_CONTENT[key] : {}),
   };
 }
 

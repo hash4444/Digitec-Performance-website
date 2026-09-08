@@ -162,6 +162,35 @@ const Tuning = () => {
         </div>
       </section>
 
+      {!isArabic && <section id="mercedes-amg-tuning" className="border-t border-white/10 bg-charcoal/20 py-14 sm:py-20">
+        <div className="mx-auto max-w-5xl px-4 sm:px-6">
+          <h2 className="text-2xl font-bold sm:text-4xl">Mercedes-AMG ECU tuning and project planning</h2>
+          <div className="mt-6 space-y-5 text-base leading-8 text-white/65">
+            <p>Share the model, year, engine, current modifications, fuel and intended use. The starting point is the car's condition: warnings, cooling, fuel delivery, brakes, tyres and drivetrain concerns should be assessed before a performance proposal is agreed.</p>
+            <h3 className="text-xl font-bold text-off-white">What do Stage 1 and Stage 2 mean?</h3>
+            <p>Stage labels describe a supplier's package and vary by platform. Confirm the exact calibration, fuel requirement, hardware dependencies and testing for your vehicle. A software-focused proposal and one requiring supporting hardware have different costs and installation scope; a stage name alone does not establish suitability or a fixed power gain.</p>
+            <p>Diagnostic scanning and module coding serve different needs from performance tuning. For warnings or configuration requests, start with <Link to="/services/mercedes-diagnostics-dubai" className="text-burnt-orange hover:underline">Mercedes diagnostics and supported coding</Link>. Tuning availability is confirmed separately for the ECU, gearbox and vehicle specification.</p>
+          </div>
+          <h3 className="mt-8 text-xl font-bold">GAD guidance and documented Mercedes projects</h3>
+          <ul className="mt-5 grid gap-4 sm:grid-cols-2">
+            {[
+              ['Questions to ask about a GAD tuning project', '/blog/gad-tuning-explained'],
+              ['Mercedes-AMG GT tuning assessment', '/blog/mercedes-amg-gt-tuning-dubai'],
+              ['AMG GT Black Series project', '/blog/mercedes-amg-gt-black-series-1300hp-build-dubai'],
+              ['G63 to Brabus G800 conversion project', '/blog/g63-to-brabus-g800-conversion-dubai'],
+            ].map(([label, path]) => <li key={path}><Link to={path} className="card-premium block h-full rounded-xl p-5 text-sm font-semibold text-burnt-orange hover:underline">{label}</Link></li>)}
+          </ul>
+          <p className="mt-5 text-sm leading-7 text-white/55">Project photographs and specifications describe those individual builds. Your proposal and expected result depend on the assessed vehicle and agreed supporting work.</p>
+        </div>
+      </section>}
+
+      <section className="border-t border-white/10 py-14 sm:py-20">
+        <div className="mx-auto max-w-4xl px-4 sm:px-6">
+          <h2 className="text-2xl font-bold sm:text-3xl">{isArabic ? 'أسئلة حول تطوير الأداء' : 'Performance tuning questions'}</h2>
+          <div className="mt-7 space-y-6">{tuningFaqs.map((faq) => <div key={faq.question}><h3 className="text-lg font-semibold">{faq.question}</h3><p className="mt-2 text-sm leading-7 text-white/65">{faq.answer}</p></div>)}</div>
+        </div>
+      </section>
+
       <TuningConfigurator />
 
       {/* GAD Tuning Near Me Section */}

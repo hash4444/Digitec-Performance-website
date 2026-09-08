@@ -26,6 +26,7 @@ export interface BlogPost {
   category: 'Maintenance' | 'Tuning' | 'Mercedes' | 'Detailing' | 'Workshop Guides';
   author: string;
   date: string; // ISO
+  updatedDate?: string;
   readTime: string;
   coverGradient: string; // tailwind gradient classes
   coverImage?: string;
@@ -688,46 +689,93 @@ export const blogPosts: BlogPost[] = [
     ],
   },
   {
-    slug: 'mercedes-service-intervals-dubai-heat',
-    title: 'Mercedes Service Intervals in Dubai Heat: What You Need to Know',
-    excerpt:
-      'Dubai temperatures push every component to the limit. Here is how often your Mercedes really needs servicing in the UAE climate.',
-    category: 'Mercedes',
-    author: 'DIGI-TEC Workshop',
-    date: '2026-04-10',
-    readTime: '6 min read',
-    coverGradient: 'from-burnt-orange/40 via-charcoal to-black',
-    metaTitle: 'Mercedes Service Intervals Dubai | Digitec Performance',
-    metaDescription:
-      'Learn the right Mercedes service interval for Dubai heat. Expert advice on oil, coolant, and brake intervals from Digitec Performance Center.',
-    content: [
+    "slug": "mercedes-service-intervals-dubai-heat",
+    "title": "Mercedes Service Intervals & ASSYST in Dubai",
+    "excerpt": "How VIN, model year, ASSYST and service history determine Mercedes maintenance in Dubai. Interpret the displayed service code before selecting due work.",
+    "category": "Mercedes",
+    "author": "DIGI-TEC Workshop",
+    "date": "2026-04-10",
+    "updatedDate": "2026-09-08",
+    "readTime": "5 min read",
+    "coverGradient": "from-burnt-orange/30 via-charcoal to-black",
+    "metaTitle": "Mercedes Service Intervals & ASSYST Dubai | Digi-Tec",
+    "metaDescription": "How VIN, model year, ASSYST and service history determine Mercedes maintenance in Dubai. Interpret the displayed service code before selecting due work.",
+    "ogType": "article",
+    "content": [
       {
-        type: 'p',
-        text: 'Mercedes-Benz factory service intervals are calibrated for European driving conditions. In Dubai, where ambient temperatures regularly exceed 45°C and stop-and-go traffic stresses every cooling and lubrication system, those intervals need adjustment.',
+        "type": "p",
+        "text": "There is no single oil, coolant, brake-fluid or transmission interval that applies to every Mercedes in Dubai. Use the exact vehicle schedule, the service display and the documented history to identify what is due. The workshop should explain any additional recommendation with reference to the fitted equipment, operating guidance or observed condition."
       },
-      { type: 'h2', text: 'Why Dubai Heat Changes Everything' },
       {
-        type: 'p',
-        text: 'Engine oil breaks down faster under sustained high temperatures. Coolant degrades. Rubber hoses harden. Brake fluid absorbs moisture from the humid coastal air. Every fluid in your car ages quicker here than it would in Stuttgart.',
+        "type": "h2",
+        "text": "What to collect before choosing a service interval"
       },
-      { type: 'h2', text: 'Recommended Intervals for the UAE' },
       {
-        type: 'ul',
-        items: [
-          'Engine oil and filter: every 10,000 km or 6 months',
-          'Brake fluid: every 18 months (vs factory 24)',
-          'Coolant flush: every 3 years',
-          'Transmission service: every 60,000 km',
-          'AC system inspection: annually before summer',
-        ],
+        "type": "ul",
+        "items": [
+          "VIN, model year, engine and transmission details where available.",
+          "Current mileage and a photograph of the complete ASSYST or service-display message.",
+          "Dates and mileages of earlier oil, fluid, filter and other maintenance work.",
+          "Use patterns such as short trips, towing, extended storage and any present warning or symptom."
+        ]
       },
-      { type: 'h2', text: 'Signs You Should Not Ignore' },
       {
-        type: 'p',
-        text: 'Dashboard warnings, longer cranking, gearbox hesitation, weak AC, or a faint coolant smell all point to heat-stressed components. Address them early. In Dubai, small issues escalate fast.',
+        "type": "h2",
+        "text": "ASSYST, Service A and Service B"
       },
-    ],
+      {
+        "type": "p",
+        "text": "The display helps identify a scheduled visit, but the workshop must reconcile it with the vehicle data and work already completed. Oil approvals, filter requirements and additional time- or mileage-dependent items vary. A reset indicator alone does not establish that every due item was performed."
+      },
+      {
+        "type": "h2",
+        "text": "What do A3, A9 or AH service messages mean?"
+      },
+      {
+        "type": "p",
+        "text": "Send the complete message exactly as displayed, together with the VIN and mileage. Letters and numbers must be interpreted using the service information applicable to that vehicle. Do not use an online A3, A9 or AH checklist as a universal parts order: model, year and previous work can change the due scope."
+      },
+      {
+        "type": "h2",
+        "text": "How heat, dust and use affect inspection priorities"
+      },
+      {
+        "type": "p",
+        "text": "Mention weak AC, coolant loss, difficult starting or unusual operation when booking. Cooling, battery, tyre and airflow checks can be selected from the complaint and use of the vehicle. Replacing fluids or components earlier than the applicable schedule needs a stated reason; it should not follow an arbitrary Dubai-wide mileage rule."
+      },
+      {
+        "type": "h2",
+        "text": "A warning and a service reminder are different"
+      },
+      {
+        "type": "p",
+        "text": "A scheduled service reminder identifies due maintenance. An oil-pressure, temperature, braking or other fault warning may require immediate assessment under the vehicle handbook instructions. Do not wait for the next routine service to describe a new fault to the workshop."
+      },
+      {
+        "type": "h2",
+        "text": "Record the completed work"
+      },
+      {
+        "type": "p",
+        "text": "Keep the invoice with date, mileage, oil approval, quantities and completed items. Reset only the relevant completed service and use the record when planning the next visit. Unrecorded history may require an assessment of what can be verified before catch-up maintenance is proposed."
+      },
+      {
+        "type": "p",
+        "text": "Continue with the service scope and booking information:",
+        "links": [
+          {
+            "href": "/brands/mercedes-benz-service-dubai",
+            "label": "Mercedes maintenance and repair booking"
+          },
+          {
+            "href": "/blog/mercedes-service-cost-dubai-guide",
+            "label": "Service A/B scope and cost factors"
+          }
+        ]
+      }
+    ]
   },
+
   {
     slug: 'gad-tuning-explained',
     title: 'GAD Tuning: Questions to Ask Before an ECU Project',

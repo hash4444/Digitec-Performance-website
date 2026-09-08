@@ -2,7 +2,7 @@
 
 ## Project info
 
-**URL**: https://lovable.dev/projects/83534549-6ed4-4257-8213-524bd2b6bb38
+**URL**: https://lovable.dev/projects/b8255283-fdd9-4c2d-8b46-ccb596f695e1
 
 ## How can I edit this code?
 
@@ -10,7 +10,7 @@ There are several ways of editing your application.
 
 **Use Lovable**
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/83534549-6ed4-4257-8213-524bd2b6bb38) and start prompting.
+Simply visit the [Lovable Project](https://lovable.dev/projects/b8255283-fdd9-4c2d-8b46-ccb596f695e1) and start prompting.
 
 Changes made via Lovable will be committed automatically to this repo.
 
@@ -62,7 +62,9 @@ This project is built with:
 
 ## How can I deploy this project?
 
-Simply open [Lovable](https://lovable.dev/projects/83534549-6ed4-4257-8213-524bd2b6bb38) and click on Share -> Publish.
+Simply open [Lovable](https://lovable.dev/projects/b8255283-fdd9-4c2d-8b46-ccb596f695e1) and click on Share -> Publish.
+
+For the Mercedes release, follow [the scoped production and redirect instructions](docs/seo/mercedes-release-deployment.md). Publishing static redirect files alone does not activate HTTP redirects on the custom domain.
 
 ## Can I connect a custom domain to my Lovable project?
 

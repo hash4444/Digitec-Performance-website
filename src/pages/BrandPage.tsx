@@ -23,6 +23,7 @@ import {
 } from '@/components/ui/accordion';
 import BrandBookingForm from '@/components/BrandBookingForm';
 import BrandPaintCareLinks from '@/components/BrandPaintCareLinks';
+import MercedesMaintenanceScope from '@/components/MercedesMaintenanceScope';
 import { BRAND_PROFILES, getServicesForBrand } from '@/data/brandServices';
 import { getPriorityBrandSeo, PRIORITY_BRAND_SLUGS } from '@/data/priorityBrandSeo';
 import { audiModelPages, audiModelPath } from '@/data/audiModelPages';
@@ -242,9 +243,9 @@ const MERCEDES_SERVICE_LABELS: Record<string, string> = {
 
 const MERCEDES_CORE_SERVICES = [
   {
-    title: 'Mercedes Maintenance & Oil Service',
-    description: 'Service A, Service B, oil and filter changes, fluid checks and maintenance resets using the specification required by the vehicle.',
-    path: MERCEDES_SERVICE_PATHS['oil-change'],
+    title: 'Mercedes Service A, Service B & Maintenance',
+    description: 'Compare minor and major service scope, due oil and filter work, inspections, exclusions and the details needed for an itemized quote.',
+    path: '/brands/mercedes-benz-service-dubai#mercedes-maintenance-scope',
   },
   {
     title: 'XENTRY Diagnostics & Warning Lights',
@@ -262,14 +263,14 @@ const MERCEDES_CORE_SERVICES = [
     path: MERCEDES_SERVICE_PATHS['suspension-repair'],
   },
   {
-    title: 'Mercedes AC, Cooling & Mechanical Repair',
-    description: 'Inspection of weak AC, overheating, coolant loss, oil leaks, unusual engine noise and reduced performance in Dubai conditions.',
+    title: 'Mercedes Engine, Cooling & Mechanical Repair',
+    description: 'Assessment of overheating, coolant loss, oil leaks, misfires, engine vibration and repair-versus-replacement options.',
     path: MERCEDES_SERVICE_PATHS['mechanical-repair'],
   },
   {
-    title: 'AMG & G-Class Specialist Support',
-    description: 'Model-aware diagnostics, brakes, driveline, suspension and engine health checks for C63, E63, G63, S63, AMG GT and other AMG models.',
-    path: MERCEDES_SERVICE_PATHS['mechanical-repair'],
+    title: 'Mercedes AC & Air Conditioning Repair',
+    description: 'Weak or uneven cooling, airflow and leak checks, with recharge, compressor and evaporator work scoped after diagnosis.',
+    path: MERCEDES_SERVICE_PATHS['ac-repair'],
   },
 ];
 
@@ -494,7 +495,7 @@ const BrandPage = () => {
 
   useSeo({
     title: brand
-      ? isArabic ? `إصلاح وصيانة ${brand.name} في دبي | مركز ديجي-تك` : specialistHubTitle ?? `${brand.name} Repair Dubai | Digi-Tec`
+      ? isArabic ? isMercedesServiceHub ? 'إصلاح وصيانة مرسيدس في دبي | ديجي-تك' : `إصلاح وصيانة ${brand.name} في دبي | مركز ديجي-تك` : specialistHubTitle ?? `${brand.name} Repair Dubai | Digi-Tec`
       : 'Brand Service in Dubai | Digi-Tec Performance Centre',
     description: brand
       ? isArabic ? `إصلاح وصيانة ${brand.name} في دبي: تشخيص وصيانة وفرامل وناقل حركة وتعليق وتكييف مع قطع بالمواصفات المناسبة لدى مركز ديجي-تك.` : specialistHubDescription ?? `Specialist ${brand.name} repair and service in Dubai: diagnostics, maintenance, brakes, transmission, suspension and AC at Digi-Tec, Al Quoz.`
@@ -506,8 +507,8 @@ const BrandPage = () => {
     ogImageAlt: priorityBrandSeo?.heroImageAlt,
     ogImageWidth: priorityBrandSeo?.heroImageWidth,
     ogImageHeight: priorityBrandSeo?.heroImageHeight,
-    ogTitle: specialistHubTitle,
-    ogDescription: specialistHubDescription,
+    ogTitle: isArabic && isMercedesServiceHub ? undefined : specialistHubTitle,
+    ogDescription: isArabic && isMercedesServiceHub ? undefined : specialistHubDescription,
     noindex: !brand,
     jsonLd: brandJsonLd,
   });
@@ -637,7 +638,7 @@ const BrandPage = () => {
                 </span>
               </div>
               <h1 className="brand-hero__title mb-5 max-w-4xl text-[clamp(2.75rem,5vw,5.25rem)] font-semibold leading-[0.98] tracking-[-0.05em]">
-                {isEnglishRoxHub ? 'ROX 01' : brand.name} <span className="text-white/62">{isArabic ? 'للإصلاح والصيانة في دبي' : isEnglishBmwHub || isFerrari || isEnglishMclarenHub || isEnglishLamborghiniHub || isEnglishRollsRoyceHub || isEnglishAudiHub || isEnglishBentleyHub || isEnglishAstonHub || isEnglishRoxHub ? 'Service & Repair Dubai' : 'Repair & Service Dubai'}</span>
+                {isMercedesServiceHub && isArabic ? <>إصلاح وصيانة <span className="text-white/62">مرسيدس بنز في دبي</span></> : <>{isEnglishRoxHub ? 'ROX 01' : brand.name} <span className="text-white/62">{isArabic ? 'للإصلاح والصيانة في دبي' : isEnglishBmwHub || isFerrari || isEnglishMclarenHub || isEnglishLamborghiniHub || isEnglishRollsRoyceHub || isEnglishAudiHub || isEnglishBentleyHub || isEnglishAstonHub || isEnglishRoxHub ? 'Service & Repair Dubai' : 'Repair & Service Dubai'}</span></>}
               </h1>
               <p className="brand-hero__intro mb-8 max-w-2xl text-base leading-8 text-white/62 sm:text-lg">
                 {brand.intro}
@@ -654,7 +655,7 @@ const BrandPage = () => {
                 </a>
                 <a href="tel:+97143402223" className="btn-secondary">
                   <Phone className="w-5 h-5" />
-                  {isArabic ? 'اتصل على +971 4 340 2223' : isEnglishBmwHub || isEnglishAudiHub || isEnglishRollsRoyceHub || isEnglishBentleyHub ? 'Call the Al Quoz workshop' : 'Call +971 4 340 2223'}
+                  {isArabic && isMercedesServiceHub ? <>اتصل على <bdi dir="ltr">+971 4 340 2223</bdi></> : isArabic ? 'اتصل على +971 4 340 2223' : isEnglishBmwHub || isEnglishAudiHub || isEnglishRollsRoyceHub || isEnglishBentleyHub ? 'Call the Al Quoz workshop' : 'Call +971 4 340 2223'}
                 </a>
                 {(isPriorityLeadBrand || isRangeRoverServiceHub || isDefenderServiceHub) && (
                   <a
@@ -1123,7 +1124,7 @@ const BrandPage = () => {
                 {isArabic ? <>{brand.name} <span className="text-burnt-orange">للإصلاح في دبي</span> — جميع الخدمات</> : isMercedesServiceHub ? <>Mercedes <span className="text-burnt-orange">Repair Services</span> in Dubai</> : <>{brand.name} <span className="text-burnt-orange">Repair Dubai</span> — Every Service</>}
               </h2>
               <p className="text-gray-400 max-w-2xl mx-auto text-sm sm:text-base">
-                {isArabic ? `اختر صفحة إصلاح ${brand.name} أو تغيير الزيت أو إصلاح الفرامل لمراجعة المعلومات العامة، ثم تواصل معنا لتأكيد نطاق الخدمة المتاح لسيارتك.` : isMercedesServiceHub ? 'Choose the exact service to see its warning signs, diagnostic process, relevant Mercedes systems and booking options. Broad Mercedes repair questions stay on this hub; detailed service questions live on the pages below.' : `Choose a ${brand.name} repair, oil-change or brake page for general guidance, then contact the workshop to confirm the available scope for your exact vehicle.`}
+                {isArabic ? `اختر صفحة إصلاح ${brand.name} أو تغيير الزيت أو إصلاح الفرامل لمراجعة المعلومات العامة، ثم تواصل معنا لتأكيد نطاق الخدمة المتاح لسيارتك.` : isMercedesServiceHub ? 'Choose the service that matches your concern to review warning signs, inspection steps, quote inputs and booking options.' : `Choose a ${brand.name} repair, oil-change or brake page for general guidance, then contact the workshop to confirm the available scope for your exact vehicle.`}
               </p>
             </div>
             <div className="brand-directory-grid grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 sm:gap-4">
@@ -1196,6 +1197,9 @@ const BrandPage = () => {
           </div>
         </section>
       )}
+
+      {isMercedesServiceHub && <MercedesMaintenanceScope isArabic={isArabic} />}
+      {isMaybach && !isArabic && <section className="border-t border-white/5 py-10"><div className="mx-auto max-w-5xl px-4 sm:px-6"><h2 className="text-2xl font-bold">Mercedes-Maybach and S-Class equipment</h2><p className="mt-4 text-sm leading-7 text-white/65">Confirm the VIN, body style and Maybach-specific comfort and chassis equipment before booking. For the wider family, see the <Link to="/blog/mercedes-s-class-service-dubai-guide" className="text-burnt-orange hover:underline">S-Class service and repair guide</Link> or the <Link to="/brands/mercedes-benz-service-dubai" className="text-burnt-orange hover:underline">Mercedes service hub</Link>.</p></div></section>}
 
       {/* Trust */}
       {!isEnglishBmwHub && !isFerrari && !isEnglishAudiHub && !isEnglishBentleyHub && !isEnglishAstonHub && !isEnglishMclarenHub && !isEnglishLamborghiniHub && !isEnglishRollsRoyceHub && !isEnglishRoxHub && (
@@ -1451,13 +1455,13 @@ const BrandPage = () => {
       <Footer />
 
       {isPriorityLeadBrand && (
-        <aside className="fixed inset-x-0 bottom-0 z-40 border-t border-white/10 bg-black/95 p-3 shadow-2xl backdrop-blur md:hidden" aria-label={`${brand.name} booking options`}>
+        <aside className="fixed inset-x-0 bottom-0 z-40 border-t border-white/10 bg-black/95 p-3 shadow-2xl backdrop-blur md:hidden" aria-label={isArabic && isMercedesServiceHub ? 'خيارات حجز صيانة مرسيدس' : `${brand.name} booking options`}>
           <div className="mx-auto grid max-w-lg grid-cols-2 gap-3">
             <a href={whatsappHref} target="_blank" rel="noopener noreferrer" className="btn-primary justify-center px-3 py-3 text-sm">
-              <MessageCircle className="h-5 w-5" /> WhatsApp
+              <MessageCircle className="h-5 w-5" /> {isArabic && isMercedesServiceHub ? 'واتساب' : 'WhatsApp'}
             </a>
             <a href="tel:+97143402223" className="btn-secondary justify-center px-3 py-3 text-sm">
-              <Phone className="h-5 w-5" /> Call Workshop
+              <Phone className="h-5 w-5" /> {isArabic && isMercedesServiceHub ? 'اتصل بالورشة' : 'Call Workshop'}
             </a>
           </div>
         </aside>

@@ -3,6 +3,7 @@ import { ChevronDown, Menu, Moon, Sun, X } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
 import { cn } from '@/lib/utils';
 import { arabicPathForEnglishPath, englishPathForArabicPath, LOCALE_STORAGE_KEY, localeMessages } from '@/i18n/locale';
+import { isEnglishMercedesModelPath } from '@/i18n/mercedes-language';
 
 type MenuItem = { name: string; href: string };
 
@@ -178,7 +179,7 @@ const Header = ({ overlay = false }: HeaderProps) => {
                   isLanguageOpen ? 'visible scale-100 opacity-100' : 'invisible scale-95 opacity-0',
                 )}>
                   <Link to={englishPath} onClick={() => rememberLocale('en')} className={cn('block rounded-xl px-4 py-2.5 text-sm font-semibold', colorTheme === 'light' ? 'hover:bg-black/[0.05]' : 'hover:bg-white/10', !isArabic && 'text-burnt-orange')}>English</Link>
-                  <Link to={arabicPath} onClick={() => rememberLocale('ar')} className={cn('block rounded-xl px-4 py-2.5 text-sm font-semibold', colorTheme === 'light' ? 'hover:bg-black/[0.05]' : 'hover:bg-white/10', isArabic && 'text-burnt-orange')}>العربية</Link>
+                  <Link to={arabicPath} onClick={() => rememberLocale('ar')} className={cn('block rounded-xl px-4 py-2.5 text-sm font-semibold', colorTheme === 'light' ? 'hover:bg-black/[0.05]' : 'hover:bg-white/10', isArabic && 'text-burnt-orange')}>{isEnglishMercedesModelPath(englishPath) ? 'العربية — خدمات مرسيدس' : 'العربية'}</Link>
                 </div>
               </div>
             </div>

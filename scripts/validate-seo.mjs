@@ -177,7 +177,8 @@ for (const route of routes) {
     const arabicEquivalent = route.path.startsWith('/ar')
       ? route.path.replace(/^\/ar(?=\/|$)/, '') || '/'
       : route.path === '/' ? '/ar' : `/ar${route.path}`;
-    const hasArabicEquivalent = route.path.startsWith('/ar') || routePaths.has(arabicEquivalent);
+    // A retained noindex template is not an eligible translated counterpart.
+    const hasArabicEquivalent = indexablePaths.has(arabicEquivalent);
     const expectedHreflangs = hasArabicEquivalent
       ? ['en-AE', 'ar-AE', 'x-default']
       : ['en-AE', 'x-default'];

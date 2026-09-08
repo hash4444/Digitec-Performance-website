@@ -1,3 +1,5 @@
+import { isEnglishMercedesModelPath } from './mercedes-language';
+
 export type Locale = 'en' | 'ar';
 
 export const LOCALE_STORAGE_KEY = 'digitec-locale';
@@ -17,6 +19,7 @@ export const arabicPathForEnglishPath = (path: string) => {
   const englishPath = path.replace(/^\/ar(?=\/|$)/, '') || '/';
   // The combined paint-correction hub has no published Arabic equivalent yet.
   if (englishPath === '/services/car-polishing-dubai') return '/ar/services';
+  if (isEnglishMercedesModelPath(englishPath)) return '/ar/brands/mercedes-benz-service-dubai';
   return `/ar${englishPath === '/' ? '' : englishPath}`;
 };
 

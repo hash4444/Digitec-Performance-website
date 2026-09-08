@@ -48,7 +48,8 @@ export const LegacyRedirectHandler = () => {
 
     // 4. Retain attribution parameters and remove legacy or unrelated query junk.
     //    Canonical URL generation is handled independently by the SEO layer.
-    const nextSearch = normalizeAttributionSearch(search);
+    const isMercedesPath = /(?:^|\/)(?:best-)?mercedes(?:-|\/|$)/.test(nextPath);
+    const nextSearch = isMercedesPath ? search : normalizeAttributionSearch(search);
     if (nextSearch !== search) {
       changed = true;
     }

@@ -2,7 +2,7 @@ export const MERCEDES_HUB_PATH = '/brands/mercedes-benz-service-dubai';
 export const MERCEDES_PROBLEMS_PATH = '/mercedes/problems';
 
 export const MERCEDES_SERVICE_LINKS = {
-  maintenance: '/services/mercedes-oil-change-dubai',
+  maintenance: `${MERCEDES_HUB_PATH}#mercedes-maintenance-scope`,
   mechanical: '/services/mercedes-mechanical-repair-dubai',
   transmission: '/services/mercedes-transmission-repair-dubai',
   suspension: '/services/mercedes-suspension-repair-dubai',
@@ -259,6 +259,7 @@ export const mercedesModelPages: MercedesModelPageData[] = [
     coverage: [
       'W204 C63 and C63 Black Series applications with the M156 6.2-litre naturally aspirated V8.',
       'W205 C63 and C63 S applications with the M177 4.0-litre biturbo V8.',
+      'Earlier C63 coupe and W205-family coupe/cabriolet variants are identified by their own chassis and equipment. The W206 E PERFORMANCE coverage here does not imply a W206 C63 coupe or cabriolet.',
       'W206 C63 S E PERFORMANCE applications with the M139l 2.0-litre engine, rear electric drive unit and high-voltage battery.',
     ],
     maintenance: {
@@ -349,6 +350,7 @@ export const mercedesModelPages: MercedesModelPageData[] = [
     coverage: [
       'W204 C-Class saloon, estate and coupe derivatives with petrol or diesel engines and 5G/7G-era transmissions.',
       'W205 C-Class models including M274/M264 petrol, OM651/OM654 diesel and selected plug-in hybrid variants.',
+      'C200/C300 enquiries and C-Class coupe/cabriolet variants are grouped here, with engine, year and chassis confirmed individually. C205 coupe and A205 cabriolet equipment must not be inferred from the later W206 saloon.',
       'W206 C-Class models with 9G-TRONIC, 48-volt mild-hybrid or plug-in hybrid systems depending on specification.',
     ],
     maintenance: {
@@ -381,7 +383,7 @@ export const mercedesModelPages: MercedesModelPageData[] = [
     },
     suspension: {
       title: 'C-Class suspension and steering',
-      summary: 'Most C-Class vehicles use steel springs with multi-link suspension; adaptive dampers or rear air assistance depend on body style and equipment. The fitted system must be verified before diagnosis.',
+      summary: 'C-Class suspension depends on generation and optional equipment. W205 models could have optional AIRMATIC on both front and rear axles, while other vehicles use steel springs with their fitted damping system. Confirm the installed suspension before selecting a leak, ride-height or mechanical-wear test.',
       points: [
         'Knocking may come from control-arm bushes, ball joints, top mounts or dampers.',
         'Uneven tyre wear requires tyre, wheel, joint and alignment checks together.',
@@ -528,6 +530,7 @@ export const mercedesModelPages: MercedesModelPageData[] = [
     coverage: [
       'W212 E-Class saloon and estate models with generation-specific petrol, diesel, 7G-TRONIC and suspension equipment.',
       'W213 E-Class models with 9G-TRONIC, optional AIRMATIC and selected mild-hybrid or plug-in hybrid systems.',
+      'E300/E350 and E-Class coupe/cabriolet enquiries are assessed by year and VIN. Earlier C207/A207 and later C238/A238 body styles have their own equipment; they are not W214 coupe or cabriolet derivatives.',
       'W214 E-Class vehicles with 48-volt or plug-in hybrid powertrains and newer MBUX/electrical architecture, subject to exact compatibility.',
     ],
     maintenance: {
@@ -619,6 +622,7 @@ export const mercedesModelPages: MercedesModelPageData[] = [
       'W221 S-Class petrol and diesel variants with AIRMATIC or ABC depending on model and specification.',
       'W222 S-Class variants with AIRMATIC, MAGIC BODY CONTROL/ABC on selected models, 7G or 9G transmissions and complex comfort systems.',
       'W223 S-Class with AIRMATIC or optional E-ACTIVE BODY CONTROL, rear-axle steering on equipped vehicles and electrified powertrains depending on model.',
+      'C217 coupe and A217 cabriolet enquiries, including S65 V12 variants, require their own engine, body and chassis-equipment identification. S65 V12 work must not use an S63 V8 or E PERFORMANCE checklist.',
     ],
     maintenance: {
       title: 'S-Class service and condition checks',
@@ -707,6 +711,7 @@ export const mercedesModelPages: MercedesModelPageData[] = [
     coverage: [
       'W221 S63 applications with M156 or later M157 V8 powertrains and generation-specific AMG transmission equipment.',
       'W222 S63 applications with M157 or M177 biturbo V8, AMG transmission and AIRMATIC-based AMG RIDE CONTROL.',
+      'C217 S63 coupe and A217 S63 cabriolet variants are checked for their own fitted suspension, roof, powertrain and equipment. S65 V12 enquiries belong with the wider S-Class assessment.',
       'W223 S63 E PERFORMANCE with M177 V8, rear electric drive unit, high-voltage battery and AMG SPEEDSHIFT MCT 9G.',
     ],
     maintenance: {
@@ -795,7 +800,8 @@ export const mercedesModelPages: MercedesModelPageData[] = [
     intro: 'The GLE spans the W166-era M-Class/GLE and the W167 platform, with petrol, diesel, AMG, mild-hybrid and plug-in hybrid variants. Transmission, 4MATIC, suspension and cooling equipment must be identified before service or repair is scoped.',
     coverage: [
       'W166 M-Class and GLE applications with petrol, diesel or AMG powertrains, 7G/9G transmissions and optional air suspension depending on specification.',
-      'W167 GLE SUV and Coupe variants with 9G-TRONIC, 4MATIC and optional AIRMATIC or E-ACTIVE BODY CONTROL.',
+      'W167 GLE SUV and corresponding Coupe-family variants with model-specific transmission, 4MATIC and optional AIRMATIC or E-ACTIVE BODY CONTROL equipment.',
+      'ML63 and GLE63 AMG enquiries require their own engine, AMG gearbox, brakes and chassis identification; a conventional 9G-TRONIC service scope is not assumed for every AMG.',
       'Mild-hybrid, plug-in hybrid and AMG variants where compatible diagnostic and repair scope is confirmed from the VIN.',
     ],
     maintenance: {
@@ -906,7 +912,7 @@ export const mercedesModelPages: MercedesModelPageData[] = [
     },
     transmission: {
       title: '9G-TRONIC and 4MATIC driveline',
-      summary: 'Most later GLS variants use 9G-TRONIC with permanent all-wheel drive. A low-speed shudder, delayed drive or clunk should be separated across gearbox, mounts, transfer case, shafts, differentials and tyre condition.',
+      summary: 'Later GLS transmission equipment varies by model: conventional 9G-TRONIC and GLS63 AMG applications require separate identification before fluid or repair work. A low-speed shudder, delayed drive or clunk should be separated across gearbox, mounts, transfer case, shafts, differentials and tyre condition.',
       points: [
         'Reproduce the symptom by temperature, steering angle, gear and load.',
         'Inspect tyre size and rolling circumference before internal driveline work.',

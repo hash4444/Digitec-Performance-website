@@ -76,3 +76,47 @@ response = await request('https://digitecme.com/functions/v1/mcp', { method: 'PO
 assert.equal(response.status, 200);
 
 console.log('Hosting rule tests passed: canonical host, permanent redirects, valid routes, assets, functions and true 404 responses.');
+
+const { handleRequest: mercedesRequest, aliases, canonicalPaths } = await import(pathToFileURL(path.join(process.cwd(), 'cloudflare/mercedes-seo-router.js')).href);
+const hub = '/brands/mercedes-benz-service-dubai';
+const required = new Map([
+  ['/services/mercedes-repair-dubai', hub],
+  ['/best-mercedes-workshop-dubai', hub],
+  ['/services/mercedes-service-dubai', hub],
+  ['/brands/mercedes-benz-service-dubai/suspension-repair', '/services/mercedes-suspension-repair-dubai'],
+  ['/ar/mercedes/models/c63-service-repair-dubai', '/ar/brands/mercedes-benz-service-dubai'],
+  ['/ar/mercedes/problems/airmatic-malfunction', '/ar/brands/mercedes-benz-service-dubai'],
+]);
+for (const [source, target] of required) assert.equal(aliases.get(source), target);
+assert.ok([...aliases.keys()].every((source) => !source.includes(':')), 'Exact redirects must not contain React parameter placeholders');
+let checked = 0;
+for (const [source, target] of aliases) {
+  for (const host of ['https://digitecme.com', 'http://www.digitecme.com']) {
+    for (const suffix of ['', '/']) {
+      const query = '?utm_source=release%20check&gclid=abc&msclkid=xyz&fbclid=123&utm_source=second';
+      for (const method of ['GET', 'HEAD']) {
+        const result = await mercedesRequest(new Request(`${host}${source}${suffix}${query}`, { method }), assetFetch);
+        assert.equal(result.status, 308, source);
+        assert.equal(result.headers.get('location'), `https://digitecme.com${target}${query}`);
+        const final = await mercedesRequest(new Request(result.headers.get('location'), { method }), assetFetch);
+        assert.equal(final.status, 200, `Redirect chain or loop for ${source}`);
+        checked++;
+      }
+    }
+  }
+}
+for (const target of canonicalPaths) {
+  const result = await mercedesRequest(new Request(`https://digitecme.com${target}/?utm_campaign=test`), assetFetch);
+  assert.equal(result.status, 308);
+  assert.equal(result.headers.get('location'), `https://digitecme.com${target}?utm_campaign=test`);
+}
+for (const url of ['https://digitecme.com/unrelated-missing-page', 'http://www.digitecme.com/about/', 'https://digitecme.com/services/mercedes-repair-dubai/extra', 'https://other.example/services/mercedes-repair-dubai']) {
+  let forwarded;
+  const original = new Request(url);
+  const result = await mercedesRequest(original, async (request) => { forwarded = request; return new Response('unchanged', { status: 202 }); });
+  assert.equal(forwarded, original);
+  assert.equal(result.status, 202);
+}
+response = await mercedesRequest(new Request('https://digitecme.com/services/mercedes-repair-dubai', { method: 'POST', body: 'untouched' }), assetFetch);
+assert.equal(response.status, 200);
+console.log(`Mercedes scoped routing passed: ${checked} alias cases, ${canonicalPaths.size} slash variants, parameters, direct destinations and unrelated/mutation passthrough.`);

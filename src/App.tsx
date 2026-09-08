@@ -1,3 +1,4 @@
+import PreserveQueryNavigate from '@/components/PreserveQueryNavigate';
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -118,8 +119,8 @@ export const AppContent = () => (
           <Route path="/ar/services/garage-near-me-dubai" element={<LocalGaragePage />} />
           <Route path="/ar/services/roadside-assistance-dubai" element={<LocalGaragePage />} />
           <Route path="/ar/services/car-garage-dubai" element={<LocalGaragePage />} />
-          <Route path="/ar/services/mercedes-repair-dubai" element={<Navigate to="/ar/brands/mercedes-benz-service-dubai" replace />} />
-          <Route path="/ar/services/mercedes-service-dubai" element={<Navigate to="/ar/brands/mercedes-benz-service-dubai" replace />} />
+          <Route path="/ar/services/mercedes-repair-dubai" element={<PreserveQueryNavigate to="/ar/brands/mercedes-benz-service-dubai" replace />} />
+          <Route path="/ar/services/mercedes-service-dubai" element={<PreserveQueryNavigate to="/ar/brands/mercedes-benz-service-dubai" replace />} />
           {mercedesLegacyServicePages.map(([legacySlug, serviceSlug]) => (
             <Route
               key={`ar-${legacySlug}`}
@@ -139,10 +140,10 @@ export const AppContent = () => (
           <Route path="/ar/sitemap" element={<SitemapPage />} />
           <Route path="/ar/blog" element={<Blog />} />
           <Route path="/ar/blog/:slug" element={<BlogArticleRouter />} />
-          <Route path="/ar/mercedes/models/:slug" element={<Navigate to="/ar/brands/mercedes-benz-service-dubai" replace />} />
-          <Route path="/ar/mercedes/problems" element={<Navigate to="/ar/brands/mercedes-benz-service-dubai" replace />} />
-          <Route path="/ar/mercedes/problems/:slug" element={<Navigate to="/ar/brands/mercedes-benz-service-dubai" replace />} />
-          <Route path="/ar/mercedes/case-studies/:slug" element={<Navigate to="/ar/brands/mercedes-benz-service-dubai" replace />} />
+          <Route path="/ar/mercedes/models/:slug" element={<PreserveQueryNavigate to="/ar/brands/mercedes-benz-service-dubai" replace />} />
+          <Route path="/ar/mercedes/problems" element={<PreserveQueryNavigate to="/ar/brands/mercedes-benz-service-dubai" replace />} />
+          <Route path="/ar/mercedes/problems/:slug" element={<PreserveQueryNavigate to="/ar/brands/mercedes-benz-service-dubai" replace />} />
+          <Route path="/ar/mercedes/case-studies/:slug" element={<PreserveQueryNavigate to="/ar/brands/mercedes-benz-service-dubai" replace />} />
           <Route path="/ar/porsche/:slug" element={<Navigate to="/ar/brands/porsche-service-dubai" replace />} />
           <Route path="/ar/porsche/911/:slug" element={<Navigate to="/ar/brands/porsche-service-dubai" replace />} />
           <Route path="/ar/porsche/systems" element={<Navigate to="/ar/brands/porsche-service-dubai" replace />} />
@@ -164,12 +165,12 @@ export const AppContent = () => (
             <Route
               key={`ar-${serviceSlug}`}
               path={`/ar/brands/mercedes-benz-service-dubai/${serviceSlug}`}
-              element={<Navigate to={`/ar${destination}`} replace />}
+              element={<PreserveQueryNavigate to={`/ar${destination}`} replace />}
             />
           ))}
           <Route path="/ar/brands/:brandSlug/:serviceSlug" element={<BrandServicePage />} />
           <Route path="/ar/best-car-workshop-dubai" element={<BestWorkshopPage />} />
-          <Route path="/ar/best-mercedes-workshop-dubai" element={<Navigate to="/ar/brands/mercedes-benz-service-dubai" replace />} />
+          <Route path="/ar/best-mercedes-workshop-dubai" element={<PreserveQueryNavigate to="/ar/brands/mercedes-benz-service-dubai" replace />} />
           <Route path="/ar/best-bmw-workshop-dubai" element={<BestWorkshopPage />} />
           <Route path="/ar/best-porsche-workshop-dubai" element={<BestWorkshopPage />} />
           <Route path="/ar/best-audi-workshop-dubai" element={<BestWorkshopPage />} />
@@ -182,8 +183,8 @@ export const AppContent = () => (
           <Route path="/services/garage-near-me-dubai" element={<LocalGaragePage />} />
           <Route path="/services/roadside-assistance-dubai" element={<LocalGaragePage />} />
           <Route path="/services/car-garage-dubai" element={<LocalGaragePage />} />
-          <Route path="/services/mercedes-repair-dubai" element={<Navigate to="/brands/mercedes-benz-service-dubai" replace />} />
-          <Route path="/services/mercedes-service-dubai" element={<Navigate to="/brands/mercedes-benz-service-dubai" replace />} />
+          <Route path="/services/mercedes-repair-dubai" element={<PreserveQueryNavigate to="/brands/mercedes-benz-service-dubai" replace />} />
+          <Route path="/services/mercedes-service-dubai" element={<PreserveQueryNavigate to="/brands/mercedes-benz-service-dubai" replace />} />
           {mercedesLegacyServicePages.map(([legacySlug, serviceSlug]) => (
             <Route
               key={legacySlug}
@@ -238,13 +239,13 @@ export const AppContent = () => (
             <Route
               key={serviceSlug}
               path={`/brands/mercedes-benz-service-dubai/${serviceSlug}`}
-              element={<Navigate to={destination} replace />}
+              element={<PreserveQueryNavigate to={destination} replace />}
             />
           ))}
           <Route path="/brands/:brandSlug/:serviceSlug" element={<BrandServicePage />} />
           {/* AEO landing pages — targeted at AI assistants ("best ... in Dubai") */}
           <Route path="/best-car-workshop-dubai" element={<BestWorkshopPage />} />
-          <Route path="/best-mercedes-workshop-dubai" element={<Navigate to="/brands/mercedes-benz-service-dubai" replace />} />
+          <Route path="/best-mercedes-workshop-dubai" element={<PreserveQueryNavigate to="/brands/mercedes-benz-service-dubai" replace />} />
           <Route path="/best-bmw-workshop-dubai" element={<BestWorkshopPage />} />
           <Route path="/best-porsche-workshop-dubai" element={<BestWorkshopPage />} />
           <Route path="/best-audi-workshop-dubai" element={<BestWorkshopPage />} />
@@ -304,12 +305,12 @@ export const AppContent = () => (
           {/* Old WordPress /services/* slugs still in Google's index → canonical new slugs */}
           <Route path="/services/performance-tuning-dubai" element={<Navigate to="/tuning" replace />} />
           <Route path="/services/performance-tuning" element={<Navigate to="/tuning" replace />} />
-          <Route path="/services/mercedes-oil-change" element={<Navigate to="/services/mercedes-oil-change-dubai" replace />} />
-          <Route path="/services/mercedes-ac-repair" element={<Navigate to="/services/mercedes-ac-repair-dubai" replace />} />
-          <Route path="/services/mercedes-suspension-repair" element={<Navigate to="/services/mercedes-suspension-repair-dubai" replace />} />
-          <Route path="/services/mercedes-brake-repair" element={<Navigate to="/services/mercedes-brake-repair-dubai" replace />} />
-          <Route path="/services/mercedes-transmission-repair" element={<Navigate to="/services/mercedes-transmission-repair-dubai" replace />} />
-          <Route path="/services/mercedes-body-repair" element={<Navigate to="/services/mercedes-body-repair-dubai" replace />} />
+          <Route path="/services/mercedes-oil-change" element={<PreserveQueryNavigate to="/services/mercedes-oil-change-dubai" replace />} />
+          <Route path="/services/mercedes-ac-repair" element={<PreserveQueryNavigate to="/services/mercedes-ac-repair-dubai" replace />} />
+          <Route path="/services/mercedes-suspension-repair" element={<PreserveQueryNavigate to="/services/mercedes-suspension-repair-dubai" replace />} />
+          <Route path="/services/mercedes-brake-repair" element={<PreserveQueryNavigate to="/services/mercedes-brake-repair-dubai" replace />} />
+          <Route path="/services/mercedes-transmission-repair" element={<PreserveQueryNavigate to="/services/mercedes-transmission-repair-dubai" replace />} />
+          <Route path="/services/mercedes-body-repair" element={<PreserveQueryNavigate to="/services/mercedes-body-repair-dubai" replace />} />
           <Route path="/services/steering-repair" element={<Navigate to="/services/steering-repair-dubai" replace />} />
           <Route path="/services/suspension-repair" element={<Navigate to="/services/suspension-repair-dubai" replace />} />
           <Route path="/services/brake-repair" element={<Navigate to="/services/brake-repair-dubai" replace />} />
@@ -343,23 +344,23 @@ export const AppContent = () => (
           <Route path="/terms-of-service" element={<Navigate to="/" replace />} />
 
           {/* Legacy WordPress top-level URLs → new /services/* slugs (single hop, preserves SEO) */}
-          <Route path="/mercedes" element={<Navigate to="/brands/mercedes-benz-service-dubai" replace />} />
-          <Route path="/mercedes-service" element={<Navigate to="/brands/mercedes-benz-service-dubai" replace />} />
-          <Route path="/mercedes-repair" element={<Navigate to="/brands/mercedes-benz-service-dubai" replace />} />
-          <Route path="/mercedes-repair-dubai" element={<Navigate to="/brands/mercedes-benz-service-dubai" replace />} />
-          <Route path="/mercedes-workshop" element={<Navigate to="/brands/mercedes-benz-service-dubai" replace />} />
-          <Route path="/mercedes-brake-repair" element={<Navigate to="/services/mercedes-brake-repair-dubai" replace />} />
-          <Route path="/mercedes-brake-repair-dubai" element={<Navigate to="/services/mercedes-brake-repair-dubai" replace />} />
-          <Route path="/mercedes-transmission-repair" element={<Navigate to="/services/mercedes-transmission-repair-dubai" replace />} />
-          <Route path="/mercedes-transmission-repair-dubai" element={<Navigate to="/services/mercedes-transmission-repair-dubai" replace />} />
-          <Route path="/mercedes-ac-repair" element={<Navigate to="/services/mercedes-ac-repair-dubai" replace />} />
-          <Route path="/mercedes-ac-repair-dubai" element={<Navigate to="/services/mercedes-ac-repair-dubai" replace />} />
-          <Route path="/mercedes-suspension-repair" element={<Navigate to="/services/mercedes-suspension-repair-dubai" replace />} />
-          <Route path="/mercedes-suspension-repair-dubai" element={<Navigate to="/services/mercedes-suspension-repair-dubai" replace />} />
-          <Route path="/mercedes-oil-change" element={<Navigate to="/services/mercedes-oil-change-dubai" replace />} />
-          <Route path="/mercedes-oil-change-dubai" element={<Navigate to="/services/mercedes-oil-change-dubai" replace />} />
-          <Route path="/mercedes-body-repair" element={<Navigate to="/services/mercedes-body-repair-dubai" replace />} />
-          <Route path="/mercedes-body-repair-dubai" element={<Navigate to="/services/mercedes-body-repair-dubai" replace />} />
+          <Route path="/mercedes" element={<PreserveQueryNavigate to="/brands/mercedes-benz-service-dubai" replace />} />
+          <Route path="/mercedes-service" element={<PreserveQueryNavigate to="/brands/mercedes-benz-service-dubai" replace />} />
+          <Route path="/mercedes-repair" element={<PreserveQueryNavigate to="/brands/mercedes-benz-service-dubai" replace />} />
+          <Route path="/mercedes-repair-dubai" element={<PreserveQueryNavigate to="/brands/mercedes-benz-service-dubai" replace />} />
+          <Route path="/mercedes-workshop" element={<PreserveQueryNavigate to="/brands/mercedes-benz-service-dubai" replace />} />
+          <Route path="/mercedes-brake-repair" element={<PreserveQueryNavigate to="/services/mercedes-brake-repair-dubai" replace />} />
+          <Route path="/mercedes-brake-repair-dubai" element={<PreserveQueryNavigate to="/services/mercedes-brake-repair-dubai" replace />} />
+          <Route path="/mercedes-transmission-repair" element={<PreserveQueryNavigate to="/services/mercedes-transmission-repair-dubai" replace />} />
+          <Route path="/mercedes-transmission-repair-dubai" element={<PreserveQueryNavigate to="/services/mercedes-transmission-repair-dubai" replace />} />
+          <Route path="/mercedes-ac-repair" element={<PreserveQueryNavigate to="/services/mercedes-ac-repair-dubai" replace />} />
+          <Route path="/mercedes-ac-repair-dubai" element={<PreserveQueryNavigate to="/services/mercedes-ac-repair-dubai" replace />} />
+          <Route path="/mercedes-suspension-repair" element={<PreserveQueryNavigate to="/services/mercedes-suspension-repair-dubai" replace />} />
+          <Route path="/mercedes-suspension-repair-dubai" element={<PreserveQueryNavigate to="/services/mercedes-suspension-repair-dubai" replace />} />
+          <Route path="/mercedes-oil-change" element={<PreserveQueryNavigate to="/services/mercedes-oil-change-dubai" replace />} />
+          <Route path="/mercedes-oil-change-dubai" element={<PreserveQueryNavigate to="/services/mercedes-oil-change-dubai" replace />} />
+          <Route path="/mercedes-body-repair" element={<PreserveQueryNavigate to="/services/mercedes-body-repair-dubai" replace />} />
+          <Route path="/mercedes-body-repair-dubai" element={<PreserveQueryNavigate to="/services/mercedes-body-repair-dubai" replace />} />
           <Route path="/engine-diagnostics" element={<Navigate to="/services/car-diagnostics-dubai" replace />} />
           <Route path="/engine-diagnostics-dubai" element={<Navigate to="/services/car-diagnostics-dubai" replace />} />
           <Route path="/performance-tuning" element={<Navigate to="/tuning" replace />} />

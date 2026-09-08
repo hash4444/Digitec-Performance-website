@@ -13,6 +13,7 @@ import {
   MERCEDES_HUB_PATH,
   getMercedesModelByPath,
   mercedesModelPages,
+  MERCEDES_SERVICE_LINKS,
   type MercedesModelSection,
 } from '@/data/mercedesModelPages';
 import { useSeo } from '@/hooks/use-seo';
@@ -21,7 +22,7 @@ import { buildBreadcrumb, buildService, buildWebPage, pageGraph, SITE_URL } from
 
 const workshopImage = '/images/mercedes-repair-dubai-hero.jpg';
 
-const ModelSystemSection = ({ section }: { section: MercedesModelSection }) => (
+const ModelSystemSection = ({ section, servicePath, serviceLabel }: { section: MercedesModelSection; servicePath: string; serviceLabel: string }) => (
   <section className="card-premium rounded-2xl p-5 sm:p-7">
     <h2 className="text-xl sm:text-2xl font-black text-off-white">{section.title}</h2>
     <p className="mt-3 text-sm sm:text-base leading-relaxed text-white/65">{section.summary}</p>
@@ -33,6 +34,7 @@ const ModelSystemSection = ({ section }: { section: MercedesModelSection }) => (
         </li>
       ))}
     </ul>
+    <Link to={servicePath} className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-burnt-orange hover:underline">{serviceLabel}<ArrowRight className="h-4 w-4" /></Link>
   </section>
 );
 
@@ -54,7 +56,7 @@ const MercedesModelPage = () => {
           breadcrumbId,
           primaryImage: workshopImage,
           mainEntityId: serviceId,
-          dateModified: '2026-08-31',
+          dateModified: '2026-09-08',
         }),
         buildBreadcrumb(canonical, [
           { name: 'Home', url: `${SITE_URL}/` },
@@ -82,7 +84,7 @@ const MercedesModelPage = () => {
     ogImageAlt: model ? `${model.name} service and repair at Digi-Tec Performance Centre in Dubai` : undefined,
     ogType: 'website',
     jsonLd,
-    hasArabicVersion: Boolean(model?.legacyBlogSlug),
+    hasArabicVersion: false,
   });
 
   if (!model) return <Navigate to={MERCEDES_HUB_PATH} replace />;
@@ -181,13 +183,22 @@ const MercedesModelPage = () => {
 
         <section className="bg-gradient-to-b from-charcoal/20 to-black py-14 sm:py-20">
           <div className="mx-auto max-w-7xl px-4 sm:px-6">
+            {['Mercedes S-Class', 'Mercedes-AMG S63', 'Mercedes GLS'].includes(model.name) && <p className="mb-8 text-sm leading-7 text-white/65">For Maybach-specific equipment, see the <Link to="/brands/maybach-service-dubai" className="text-burnt-orange hover:underline">Maybach service and repair hub</Link>. Compare <Link to="/blog/mercedes-s-class-service-dubai-guide" className="text-burnt-orange hover:underline">S-Class and S65 assessment</Link> with <Link to="/mercedes/models/s63-service-repair-dubai" className="text-burnt-orange hover:underline">S63 AMG service scope</Link> for the fitted powertrain.</p>}
+            {model.name === 'Mercedes G-Class' && <p className="mb-8 text-sm leading-7 text-white/65">For the AMG powertrain and model-specific equipment, use the <Link to="/blog/mercedes-g63-service-dubai-guide" className="text-burnt-orange hover:underline">Mercedes-AMG G63 service guide</Link>.</p>}
             <div className="mx-auto mb-10 max-w-3xl text-center">
               <p className="eyebrow mb-4">Model-specific systems</p>
               <h2 className="text-2xl font-black sm:text-4xl">What changes the service and repair plan</h2>
             </div>
             <div className="grid gap-5 lg:grid-cols-2">
-              {[model.maintenance, model.powertrain, model.transmission, model.suspension, model.climate, model.electrical].map((section) => (
-                <ModelSystemSection key={section.title} section={section} />
+              {[
+                { section: model.maintenance, path: MERCEDES_SERVICE_LINKS.maintenance, label: 'Mercedes scheduled service and booking' },
+                { section: model.powertrain, path: MERCEDES_SERVICE_LINKS.mechanical, label: 'Mercedes engine repair assessment' },
+                { section: model.transmission, path: MERCEDES_SERVICE_LINKS.transmission, label: 'Mercedes gearbox diagnosis and repair' },
+                { section: model.suspension, path: MERCEDES_SERVICE_LINKS.suspension, label: 'Mercedes suspension assessment' },
+                { section: model.climate, path: MERCEDES_SERVICE_LINKS.ac, label: 'Mercedes AC diagnosis and repair' },
+                { section: model.electrical, path: MERCEDES_SERVICE_LINKS.electrical, label: 'Mercedes electrical fault assessment' },
+              ].map(({ section, path, label }) => (
+                <ModelSystemSection key={section.title} section={section} servicePath={path} serviceLabel={label} />
               ))}
             </div>
           </div>
