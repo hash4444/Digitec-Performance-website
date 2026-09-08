@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { z } from 'zod';
 import { MessageCircle } from 'lucide-react';
 import { useLocale } from '@/i18n/use-locale';
+import { trackWhatsAppClick } from '@/lib/whatsapp-tracking';
 
 const getSchema = (isArabic: boolean) => z.object({
   name: z.string().trim().min(2, isArabic ? 'يرجى إدخال الاسم' : 'Please enter your name').max(80),
@@ -39,6 +40,7 @@ const BrandBookingForm: React.FC<Props> = ({ brandName, issuePlaceholder }) => {
     const message =
       (isArabic ? `طلب حجز من digitecme.com\nالاسم: ${result.data.name}\nالهاتف: ${result.data.phone}\nالعلامة: ${brandName}\nالخدمة أو المشكلة: ${result.data.issue}` : `Booking request from digitecme.com\nName: ${result.data.name}\nPhone: ${result.data.phone}\nBrand: ${brandName}\nIssue: ${result.data.issue}`);
     const url = `https://wa.me/97143402223?text=${encodeURIComponent(message)}`;
+    trackWhatsAppClick(url);
     window.gtag?.('event', 'whatsapp_draft_opened', {
       brand: brandName,
       page_path: window.location.pathname,

@@ -1,5 +1,6 @@
 import { useEffect, useRef } from 'react';
 import { useLocation } from 'react-router-dom';
+import { trackWhatsAppClick } from '@/lib/whatsapp-tracking';
 
 declare global {
   interface Window {
@@ -91,6 +92,7 @@ const Analytics = () => {
       if (!(target instanceof HTMLAnchorElement)) return;
       const method = contactMethod(target.href);
       if (!method) return;
+      if (method === 'whatsapp') trackWhatsAppClick(target.href);
       window.gtag?.('event', contactEvent[method], {
         method,
         link_url: target.href,
