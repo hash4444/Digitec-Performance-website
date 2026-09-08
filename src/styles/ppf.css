@@ -19,8 +19,8 @@
 .ppf-actions { display: flex; gap: .8rem; align-items: center; flex-wrap: wrap; margin: 1.75rem 0; }
 .ppf-button { display: inline-flex; align-items: center; justify-content: center; gap: .6rem; font-weight: 650; font-size: .9375rem; min-height: 50px; padding: .9rem 1.25rem; border-radius: 6px; border: 1px solid transparent; text-align: center; line-height: 1.4; transition: background .18s ease; }
 .ppf-button svg { flex-shrink: 0; }
-.ppf-page .ppf-button-primary { background: #ff875a; color: #101113; }
-.ppf-page .ppf-button-primary:hover { background: #ffa682; }
+.ppf-page .ppf-button-primary { background: #ff6b35; color: #000; }
+.ppf-page .ppf-button-primary:hover { background: #ff7d4d; }
 .ppf-page .ppf-button-secondary { color: #f5f5f6; background: transparent; border-color: #ffffff50; }
 .ppf-page .ppf-button-secondary:hover { background: #ffffff12; }
 .ppf-page .ppf-text-link { display: inline-flex; align-items: center; gap: .6rem; color: #ffae8b; font-size: .9375rem; line-height: 1.6; text-decoration: underline; text-underline-offset: 5px; }
@@ -120,7 +120,7 @@
   .ppf-brand-links { grid-template-columns: repeat(2, 1fr); gap: .5rem 1.25rem; }
   .ppf-hero .ppf-actions { align-items: stretch; flex-direction: column; }
   .ppf-mobile-contact { display: grid; grid-template-columns: 1.6fr 1fr; position: fixed; bottom: 0; left: 0; right: 0; z-index: 40; padding: .65rem 1rem calc(.65rem + env(safe-area-inset-bottom)); gap: .65rem; background: #101113f5; border-top: 1px solid #ffffff35; }
-  .ppf-mobile-contact a { display: flex; align-items: center; justify-content: center; gap: .6rem; padding: .85rem .5rem; background: #ff875a; color: #101113; border-radius: 5px; font-weight: 600; font-size: .9375rem; }
+  .ppf-mobile-contact a { display: flex; align-items: center; justify-content: center; gap: .6rem; padding: .85rem .5rem; background: #ff6b35; color: #000; border-radius: 5px; font-weight: 600; font-size: .9375rem; }
   .ppf-mobile-contact a:last-child { background: #28292c; color: #fff; }
 }
 @media (max-width: 420px) { .ppf-form-grid { grid-template-columns: 1fr; } .ppf-brand-links { gap: .5rem 1rem; } }

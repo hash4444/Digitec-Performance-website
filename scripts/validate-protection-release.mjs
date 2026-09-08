@@ -17,6 +17,17 @@ const client = await readFile(path.join(dist, entry.file), 'utf8');
 const sitemap = await readFile(path.join(dist, 'sitemap.xml'), 'utf8');
 const worker = await readFile(path.join(dist, '_worker.js'), 'utf8');
 const app = await readFile(path.join(root, 'src/App.tsx'), 'utf8');
+const primaryButtonStyles = [
+  ['src/styles/ppf.css', '.ppf-page .ppf-button-primary { background: #ff6b35; color: #000; }', '.ppf-page .ppf-button-primary:hover { background: #ff7d4d; }', 'background: #ff6b35; color: #000; border-radius: 5px'],
+  ['src/styles/ceramic-coating.css', '.ceramic-page .cc-primary { background: #ff6b35; color: #000; }', '.ceramic-page .cc-primary:hover { background: #ff7d4d; }', 'background: #ff6b35; color: #000; font-size: .9375rem'],
+  ['src/styles/paint-correction.css', '.paint-care-page .paint-primary { background: #ff6b35; color: #000; }', '.paint-care-page .paint-primary:hover { background: #ff7d4d; }', 'color: #000; background: #ff6b35; min-height: 50px'],
+];
+for (const [file, desktop, hover, mobile] of primaryButtonStyles) {
+  const css = await readFile(path.join(root, file), 'utf8');
+  assert.ok(css.includes(desktop), `Primary CTA does not match the site button color: ${file}`);
+  assert.ok(css.includes(hover), `Primary CTA hover does not match the site button color: ${file}`);
+  assert.ok(css.includes(mobile), `Mobile primary CTA does not match the site button color: ${file}`);
+}
 const fileFor = (route) => path.join(dist, route.replace(/^\//, ''), 'index.html');
 const decode = (value) => value.replaceAll('&amp;', '&').replaceAll('&#x27;', "'").replaceAll('&quot;', '"').replace(/<[^>]+>/g, '').trim();
 const graphNodes = (html) => [...html.matchAll(/<script[^>]*type="application\/ld\+json"[^>]*>([\s\S]*?)<\/script>/g)].flatMap((match) => { const json = JSON.parse(match[1]); return json['@graph'] || [json]; });
