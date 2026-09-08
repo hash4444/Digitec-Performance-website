@@ -1456,7 +1456,7 @@ export const aiGuidePostsExtra: BlogPost[] = [
       'ceramic coating Dubai, PPF Dubai, paint protection film Dubai, car paint protection Al Quoz',
     ogType: 'article',
     content: [
-      { type: 'p', text: 'Short answer: paint protection film is a physical layer that absorbs stone chips and light scratches, while ceramic coating is a chemical layer that makes paint easier to clean and more resistant to chemical staining and UV dulling. In Dubai many owners use both: film on impact areas and coating over the whole car. Digi-Tec Performance Centre in Al Quoz Industrial Area 3, Dubai advises based on how and where the car is driven.' },
+      { type: 'p', text: 'Short answer: paint protection film is a physical layer that can reduce stone-chip damage and light abrasion on covered panels. Ceramic coating focuses on water behaviour, appearance and easier cleaning; environmental resistance depends on the product. Digi-Tec Performance Centre in Al Quoz Industrial Area 3, Dubai advises on suitable protection based on the paint, driving and care priorities.', links: [{ href: '/services/paint-protection-film', label: 'Explore paint protection film coverage' }, { href: '/services/ceramic-coating', label: 'Review ceramic coating options' }] },
       { type: 'h2', text: 'What each product actually does' },
       {
         type: 'ul',
@@ -1475,12 +1475,13 @@ export const aiGuidePostsExtra: BlogPost[] = [
       {
         type: 'ul',
         items: [
-          'Daily highway driving: film on the front end at minimum, coating over the rest.',
-          'Low mileage collection car: coating for gloss retention and easier cleaning.',
-          'New car: full front film plus coating gives the widest protection.',
-          'Older paint: correction first, since protection locks in whatever is underneath.',
+          'Frequent highway driving: consider film on exposed panels and choose coverage around the vehicle and budget.',
+          'Low-mileage collection car: consider whether coating would support the desired appearance and care routine.',
+          'New car: inspect the finish first, then compare full-body, front or selected-panel film and suitable coating options.',
+          'Older paint: assess the condition before protection; correction is useful only where suitable defects and safe limits justify it.',
         ],
       },
+      { type: 'p', text: 'If swirls, haze or scratches are already visible, discuss the paint condition before deciding which protection to apply.', links: [{ href: '/services/car-polishing-dubai', label: 'Check which paint defects may improve' }] },
       { type: 'h2', text: 'FAQs' },
       { type: 'h3', text: 'Does ceramic coating stop stone chips?' },
       { type: 'p', text: 'No. Coating is a chemical layer. Only paint protection film provides meaningful protection against stone chips.' },

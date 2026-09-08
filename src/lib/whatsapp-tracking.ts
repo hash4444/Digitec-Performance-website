@@ -13,7 +13,7 @@ const isWhatsAppUrl = (href: string) => {
   }
 };
 
-const safeWhatsAppUrl = (href: string) => {
+export const safeWhatsAppUrl = (href: string) => {
   const url = new URL(href, window.location.origin);
   // The prefilled `text` value can contain message content or form data.
   url.search = '';

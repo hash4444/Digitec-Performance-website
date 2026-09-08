@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react';
 import { useLocation } from 'react-router-dom';
-import { trackWhatsAppClick } from '@/lib/whatsapp-tracking';
+import { safeWhatsAppUrl, trackWhatsAppClick } from '@/lib/whatsapp-tracking';
 
 declare global {
   interface Window {
@@ -95,7 +95,7 @@ const Analytics = () => {
       if (method === 'whatsapp') trackWhatsAppClick(target.href);
       window.gtag?.('event', contactEvent[method], {
         method,
-        link_url: target.href,
+        link_url: method === 'whatsapp' ? safeWhatsAppUrl(target.href) : target.href,
         page_path: window.location.pathname,
         cta_placement: target.dataset.ctaPlacement || 'unspecified',
         ...attribution.current,

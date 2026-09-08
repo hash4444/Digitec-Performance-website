@@ -9,6 +9,9 @@ const serverEntry = path.join(root, 'dist-server', 'entry-server.js');
 const { getPublicRoutes, renderRoute } = await import(pathToFileURL(serverEntry).href);
 const routes = getPublicRoutes();
 const baseTemplate = await readFile(path.join(distDirectory, 'index.html'), 'utf8');
+const clientManifest = JSON.parse(await readFile(path.join(distDirectory, '.vite', 'manifest.json'), 'utf8'));
+const ppfStylesheets = clientManifest['src/pages/PpfPage.tsx']?.css;
+if (!ppfStylesheets?.length) throw new Error('Missing PPF stylesheet in the client build manifest');
 
 const escapeHtml = (value = '') => String(value)
   .replace(/&/g, '&amp;')
@@ -87,6 +90,14 @@ const routeHtml = (template, route, rendered) => {
   if (seo.jsonLd) {
     const jsonLd = JSON.stringify(seo.jsonLd).replace(/</g, '\\u003c');
     html = html.replace('</head>', `  <script type="application/ld+json" data-route-jsonld="true">${jsonLd}</script>\n  </head>`);
+  }
+
+  // The dedicated PPF layout must be styled in the initial HTML, before the
+  // lazy React module loads, including when JavaScript is unavailable.
+  if (route.path === '/services/paint-protection-film') {
+    for (const stylesheet of ppfStylesheets) {
+      html = html.replace('</head>', `  <link rel="stylesheet" crossorigin href="/${escapeHtml(stylesheet)}">\n  </head>`);
+    }
   }
 
   if (!html.includes('<div id="root"></div>')) {

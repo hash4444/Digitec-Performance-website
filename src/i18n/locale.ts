@@ -15,6 +15,8 @@ export const localeMessages = {
 
 export const arabicPathForEnglishPath = (path: string) => {
   const englishPath = path.replace(/^\/ar(?=\/|$)/, '') || '/';
+  // The combined paint-correction hub has no published Arabic equivalent yet.
+  if (englishPath === '/services/car-polishing-dubai') return '/ar/services';
   return `/ar${englishPath === '/' ? '' : englishPath}`;
 };
 

@@ -8,6 +8,9 @@ import softCloseDoorImg from '@/assets/soft-close-door-repair.jpg';
 import suspensionRepairImg from '@/assets/suspension-repair-dubai.jpg';
 import exhaustRepairImg from '@/assets/exhaust-repair-dubai.jpg';
 import { mercedesServices } from './mercedesServices';
+import { CERAMIC_TITLE, CERAMIC_DESCRIPTION, CERAMIC_H1 } from './ceramicCoatingContent';
+import { PPF_TITLE, PPF_DESCRIPTION, PPF_H1 } from './ppfContent';
+import { PAINT_CORRECTION_H1 } from './paintCorrectionContent';
 
 export interface ServiceData {
   slug: string;
@@ -864,13 +867,13 @@ export const services: ServiceData[] = [
   },
   {
     slug: 'paint-protection-dubai',
-    metaTitle: 'Paint Protection Dubai | PPF, Ceramic & Paint Correction',
-    metaDescription: 'Paint protection in Dubai with PPF, ceramic coating and paint-correction options assessed for the vehicle and selected product.',
-    title: 'Car Paint Protection in Dubai',
-    description: 'Paint correction, ceramic coating, and paint protection film for luxury cars in Dubai.',
+    metaTitle: 'Car Paint Care Dubai | Correction & Protection | DIGI-TEC',
+    metaDescription: 'Explore paint correction, ceramic coating and film options at DIGI-TEC in Dubai. Assess your car’s paint condition and choose a suitable care service.',
+    title: 'Car Paint Care & Protection Options in Dubai',
+    description: 'Compare paint correction, ceramic coating and film, starting with your car’s paint condition.',
     image: '/lovable-uploads/f1cfe23e-d23b-4717-9f75-a07199716d98.png',
     category: 'Body & Visual Work',
-    seoKeyword: 'Paint Protection Film Dubai',
+    seoKeyword: 'Car Paint Care Dubai',
     intro: 'Digi-Tec Performance Center offers paint-protection options in Dubai, including ceramic coating, paint protection film (PPF) and paint correction. Paint condition, product properties, preparation, covered areas and maintenance requirements are assessed before application.',
     whyImportant: 'UV exposure, sand, road debris and contaminants can affect automotive paint in Dubai. Paint condition and the owner\'s coverage priorities determine whether correction, film, coating or another finish-care option is appropriate.',
     whyChoose: 'Digi-Tec offers paint correction, ceramic coating and PPF options. Product properties, preparation, coverage, maintenance requirements and expected durability depend on the selected product and are documented in the estimate.',
@@ -888,9 +891,9 @@ export const services: ServiceData[] = [
   },
   {
     slug: 'paint-protection-film',
-    metaTitle: 'Paint Protection Film Dubai | Full & Partial PPF Coverage',
-    metaDescription: 'Paint protection film installation in Dubai with film properties, preparation, panel coverage and product terms confirmed before application.',
-    title: 'Paint Protection Film (PPF) in Dubai',
+    metaTitle: PPF_TITLE,
+    metaDescription: PPF_DESCRIPTION,
+    title: PPF_H1,
     description: 'Paint protection film installation with vehicle-specific coverage options in Dubai.',
     image: ppfImage,
     category: 'Body & Visual Work',
@@ -911,10 +914,10 @@ export const services: ServiceData[] = [
   },
   {
     slug: 'ceramic-coating',
-    metaTitle: 'Ceramic Coating Dubai | Gloss & Surface Protection | Digitec',
-    metaDescription: 'Ceramic coating in Dubai with product, preparation, coverage, maintenance and rated properties confirmed before application.',
-    title: 'Ceramic Coating in Dubai',
-    description: 'Nano-ceramic coating with product-specific gloss and surface-protection properties.',
+    metaTitle: CERAMIC_TITLE,
+    metaDescription: CERAMIC_DESCRIPTION,
+    title: CERAMIC_H1,
+    description: 'Ceramic coating, paint preparation and optional surface coverage for luxury cars in Dubai.',
     image: ceramicImage,
     category: 'Body & Visual Work',
     seoKeyword: 'Ceramic Coating Dubai',
@@ -953,3 +956,15 @@ export const getServiceBySlug = (slug: string): ServiceData | undefined => {
 // and sitemap generation; the base `services` array stays the canonical
 // "all services" list shown on the /services index.
 export const allServices: ServiceData[] = [...services, ...mercedesServices];
+
+// Dedicated English pages join navigation without generating generic or
+// untranslated Arabic service pages. Their exact routes own the full content.
+export const englishOnlyServices: Pick<ServiceData, 'slug' | 'title' | 'description' | 'image' | 'category'>[] = [
+  {
+    slug: 'car-polishing-dubai',
+    title: PAINT_CORRECTION_H1,
+    description: 'Assess swirl marks, light scratches and dull paint before choosing polishing or correction.',
+    image: '/images/paint-correction/porsche-workshop-640.webp',
+    category: 'Body & Visual Work',
+  },
+];

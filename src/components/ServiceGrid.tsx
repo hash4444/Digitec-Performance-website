@@ -1,16 +1,16 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
 import { LocalizedLink as Link } from '@/components/LocalizedLink';
-import { services } from '@/data/services';
+import { services, englishOnlyServices } from '@/data/services';
 import { Reveal } from '@/components/motion/Reveal';
 import { useLocale } from '@/i18n/use-locale';
 import { arHome, arServiceCards } from '@/i18n/ar-home';
 
 const categoryOrder = ['Core Mechanical Services', 'Diagnostics & Electrical', 'Comfort Systems', 'Body & Visual Work'];
-const grouped = categoryOrder.map((title) => ({ title, services: services.filter((service) => service.category === title) }));
 
 export const ServiceGrid = () => {
   const { isArabic } = useLocale();
+  const grouped = categoryOrder.map((title) => ({ title, services: [...services, ...(isArabic ? [] : englishOnlyServices)].filter((service) => service.category === title) }));
   const copy = isArabic ? arHome.services : null;
 
   return (

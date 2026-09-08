@@ -5,10 +5,15 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route, useLocation, Navigate } from "react-router-dom";
 import { lazy, Suspense, useEffect } from "react";
 import Index from "./pages/Index";
+// Keep this small, scoped stylesheet in initial HTML for ceramic prerendering.
+import "./styles/ceramic-coating.css";
 const Tuning = lazy(() => import("./pages/Tuning"));
 const VRX = lazy(() => import("./pages/VRX"));
 const Services = lazy(() => import("./pages/Services"));
+const PaintCorrectionPage = lazy(() => import("./pages/PaintCorrectionPage"));
 const ServicePage = lazy(() => import("./pages/ServicePage"));
+const CeramicCoatingPage = lazy(() => import("./pages/CeramicCoatingPage"));
+const PpfPage = lazy(() => import("./pages/PpfPage"));
 const LocalGaragePage = lazy(() => import("./pages/LocalGaragePage"));
 const AboutUs = lazy(() => import("./pages/AboutUs"));
 const FAQPage = lazy(() => import("./pages/FAQPage"));
@@ -192,6 +197,9 @@ export const AppContent = () => (
               }
             />
           ))}
+          <Route path="/services/paint-protection-film" element={<PpfPage />} />
+          <Route path="/services/ceramic-coating" element={<CeramicCoatingPage />} />
+          <Route path="/services/car-polishing-dubai" element={<PaintCorrectionPage />} />
           <Route path="/services/:slug" element={<ServicePage />} />
           <Route path="/about" element={<AboutUs />} />
           <Route path="/faq" element={<FAQPage />} />
@@ -287,8 +295,8 @@ export const AppContent = () => (
           <Route path="/body-repair" element={<Navigate to="/services/car-body-repair-dubai" replace />} />
           <Route path="/paint-protection" element={<Navigate to="/services/paint-protection-dubai" replace />} />
           <Route path="/car-paint-protection" element={<Navigate to="/services/paint-protection-dubai" replace />} />
-          <Route path="/ppf" element={<Navigate to="/services/paint-protection-dubai" replace />} />
-          <Route path="/ceramic-coating" element={<Navigate to="/services/paint-protection-dubai" replace />} />
+          <Route path="/ppf" element={<Navigate to="/services/paint-protection-film" replace />} />
+          <Route path="/ceramic-coating" element={<Navigate to="/services/ceramic-coating" replace />} />
 
           {/* Legacy /services/* slug redirects (one-hop to new H1-derived URLs) */}
           <Route path="/services/engine-diagnostics" element={<Navigate to="/services/car-diagnostics-dubai" replace />} />
@@ -326,7 +334,7 @@ export const AppContent = () => (
           <Route path="/services/body-repair" element={<Navigate to="/services/car-body-repair-dubai" replace />} />
           <Route path="/services/paint-protection" element={<Navigate to="/services/paint-protection-dubai" replace />} />
           <Route path="/services/car-paint-protection" element={<Navigate to="/services/paint-protection-dubai" replace />} />
-          <Route path="/services/ppf" element={<Navigate to="/services/paint-protection-dubai" replace />} />
+          <Route path="/services/ppf" element={<Navigate to="/services/paint-protection-film" replace />} />
           <Route path="/services/car-service" element={<Navigate to="/services/car-service-dubai" replace />} />
           <Route path="/services/car-diagnostics" element={<Navigate to="/services/car-diagnostics-dubai" replace />} />
           {/* Old WP top-level pages still in index */}

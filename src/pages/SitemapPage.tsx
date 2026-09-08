@@ -2,7 +2,7 @@ import { LocalizedLink as Link } from '@/components/LocalizedLink';
 import Header from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { useSeo } from '@/hooks/use-seo';
-import { allServices } from '@/data/services';
+import { allServices, englishOnlyServices } from '@/data/services';
 import { brands } from '@/data/brands';
 import { blogPosts } from '@/data/blogPosts';
 import { brandWorkshopArticleSummaries } from '@/data/brandWorkshopArticles';
@@ -52,6 +52,7 @@ const SitemapPage = () => {
       title: isArabic ? 'الخدمات الأساسية' : 'Core services',
       links: [
         ...displayedServices.map((service) => ({ label: service.title, to: `/services/${service.slug}` })),
+        ...(isArabic ? [] : englishOnlyServices.map((service) => ({ label: service.title, to: `/services/${service.slug}` }))),
         ...localGaragePages.map((page) => ({
           label: isArabic
             ? ({

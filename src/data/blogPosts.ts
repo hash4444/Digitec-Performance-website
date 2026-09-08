@@ -41,7 +41,7 @@ export interface BlogPost {
   twitterTitle?: string;
   twitterDescription?: string;
   canonicalOverride?: string;
-  content: { type: 'h2' | 'h3' | 'p' | 'ul'; text?: string; items?: string[] }[];
+  content: { type: 'h2' | 'h3' | 'p' | 'ul'; text?: string; items?: string[]; links?: { href: string; label: string }[] }[];
 }
 
 export const blogCategories = ['All', 'Maintenance', 'Tuning', 'Mercedes', 'Detailing', 'Workshop Guides'] as const;
@@ -773,39 +773,40 @@ export const blogPosts: BlogPost[] = [
     slug: 'why-ceramic-coating-matters-uae',
     title: 'Why Ceramic Coating Matters in the UAE',
     excerpt:
-      'Sun, sand, and salt air destroy paint faster than anywhere else. Ceramic coating is not optional in the Gulf, it is essential.',
+      'Understand where ceramic coating can help with paint care in the UAE, how preparation matters and when film offers a different kind of protection.',
     category: 'Detailing',
     author: 'DIGI-TEC Detailing',
     date: '2026-04-05',
     readTime: '5 min read',
     coverGradient: 'from-charcoal via-burnt-orange/30 to-black',
-    metaTitle: 'Ceramic Coating UAE | Digitec Performance Center Dubai',
+    metaTitle: 'Ceramic Coating in the UAE: Benefits & Preparation | DIGI-TEC',
     metaDescription:
-      'Learn why ceramic coating is essential for cars in the UAE. Protection from sun, sand, and salt by Digitec Performance Center Dubai.',
+      'Understand ceramic coating benefits, paint preparation and how coating differs from PPF for vehicle care in the UAE.',
     content: [
       {
         type: 'p',
-        text: 'Three forces work against your paint in the UAE: ultraviolet radiation, abrasive sand, and salt-laden coastal humidity. A ceramic coating addresses all three in a single application.',
+        text: 'Sun exposure, dust and coastal contaminants make regular paint care relevant in the UAE. A suitable ceramic coating can support cleaning and finish maintenance, but it does not provide the physical abrasion barrier of film or eliminate the need for careful washing.',
       },
       { type: 'h2', text: 'What Ceramic Coating Actually Does' },
       {
         type: 'p',
-        text: 'It bonds chemically to the clear coat, forming a hydrophobic, UV-resistant layer measured in microns but engineered to last years. Water beads off. Dust releases easily. Bird droppings and tree sap cannot etch the paint.',
+        text: 'A compatible coating forms a surface treatment that can encourage water beading and make dirt release more easily. UV resistance, chemical resistance and service life depend on the chosen product and care. Bird droppings, sap and water spots can still mark the finish and should be addressed using suitable care guidance.',
       },
       { type: 'h2', text: 'Coating vs Wax vs PPF' },
       {
         type: 'ul',
         items: [
-          'Wax: cheap, lasts weeks, no real protection',
-          'Ceramic coating: chemical bond, 2 to 5 years, gloss + UV defence',
-          'PPF: physical film, blocks rock chips, ideal for front clip',
-          'Best result: PPF on impact zones, ceramic over the rest',
+          'Wax or sealant: appearance and water-behaviour benefits, with product-dependent reapplication needs.',
+          'Ceramic coating: a surface treatment with product-specific preparation, protection and maintenance requirements.',
+          'PPF: a physical film that can reduce small-impact damage on the covered panels.',
+          'Combined protection: suitable coating and film can complement each other when the products and surfaces are compatible.',
         ],
       },
       { type: 'h2', text: 'What to Expect at Digitec' },
       {
         type: 'p',
-        text: 'Full paint correction first, then a multi-layer ceramic system applied in a controlled environment. The car cures for 24 to 48 hours. After that, washing becomes a 15-minute job.',
+        text: 'DIGI-TEC assesses the paint and agrees the preparation before coating. Polishing or correction is considered where the paint condition justifies it. The chosen product and scope determine application, curing and care requirements.',
+        links: [{ href: '/services/car-polishing-dubai', label: 'Assess polishing and paint correction' }, { href: '/services/ceramic-coating', label: 'Explore the ceramic coating service' }],
       },
     ],
   },

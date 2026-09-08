@@ -22,6 +22,7 @@ import {
   AccordionTrigger,
 } from '@/components/ui/accordion';
 import BrandBookingForm from '@/components/BrandBookingForm';
+import BrandPaintCareLinks from '@/components/BrandPaintCareLinks';
 import { BRAND_PROFILES, getServicesForBrand } from '@/data/brandServices';
 import { getPriorityBrandSeo, PRIORITY_BRAND_SLUGS } from '@/data/priorityBrandSeo';
 import { audiModelPages, audiModelPath } from '@/data/audiModelPages';
@@ -1319,6 +1320,8 @@ const BrandPage = () => {
           </Accordion>
         </div>
       </section>
+
+      {!isArabic && <BrandPaintCareLinks brandName={brand.name} />}
 
       {/* Booking CTA + Form */}
       <section className="brand-section brand-section--booking py-12 sm:py-20 bg-black border-t border-white/5">

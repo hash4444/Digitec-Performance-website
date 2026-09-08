@@ -325,6 +325,7 @@ const BlogPost = () => {
               return (
                 <p key={i} className="text-white/70 leading-relaxed text-base">
                   {block.text}
+                  {!isArabic && block.links?.length ? <span className="mt-3 flex flex-wrap gap-x-5 gap-y-2">{block.links.map((link) => <Link key={link.href} to={link.href} className="text-burnt-orange underline">{link.label}</Link>)}</span> : null}
                 </p>
               );
             })}

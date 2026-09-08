@@ -5,12 +5,15 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build && vite build --ssr src/entry-server.tsx --outDir dist-server && node scripts/prerender.mjs && node scripts/generate-hosting-rules.mjs && node scripts/test-hosting-rules.mjs && node scripts/validate-seo.mjs",
+    "build": "vite build && vite build --ssr src/entry-server.tsx --outDir dist-server && node scripts/prerender.mjs && node scripts/generate-hosting-rules.mjs && node scripts/test-hosting-rules.mjs && node scripts/validate-seo.mjs && node scripts/validate-ppf.mjs && node scripts/validate-paint-correction.mjs && node scripts/validate-protection-release.mjs",
+    "build:release:local": "node scripts/build-production-local.mjs",
+    "preview:release": "node scripts/preview-production-local.mjs",
     "build:dev": "vite build --mode development",
     "lint": "eslint .",
     "preview": "vite preview",
     "sitemap:brands": "node scripts/sync-brand-sitemap.mjs",
     "validate:seo": "node scripts/validate-seo.mjs",
+    "validate:ppf": "node scripts/validate-ppf.mjs",
     "hosting:rules": "node scripts/generate-hosting-rules.mjs",
     "test:routing": "node scripts/test-hosting-rules.mjs"
   },

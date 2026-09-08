@@ -8,7 +8,7 @@ import { TrustBar } from '@/components/TrustBar';
 import { FinalCTA } from '@/components/FinalCTA';
 import { PageIntro } from '@/components/PageIntro';
 
-import { services } from '@/data/services';
+import { services, englishOnlyServices } from '@/data/services';
 import { buildBreadcrumb, buildWebPage, pageGraph } from '@/lib/schema';
 import { useLocale } from '@/i18n/use-locale';
 import { arHome, arServiceCards } from '@/i18n/ar-home';
@@ -49,8 +49,8 @@ const Services = () => {
           '@type': 'ItemList',
           '@id': `${url}#servicelist`,
           name: isArabic ? 'الخدمات التي يقدمها مركز ديجي-تك' : 'Services offered by Digitec Performance Center',
-          numberOfItems: services.filter((s) => s.slug !== 'mercedes-repair-dubai').length,
-          itemListElement: services.filter((s) => s.slug !== 'mercedes-repair-dubai').map((s, i) => ({
+          numberOfItems: [...services, ...(isArabic ? [] : englishOnlyServices)].filter((s) => s.slug !== 'mercedes-repair-dubai').length,
+          itemListElement: [...services, ...(isArabic ? [] : englishOnlyServices)].filter((s) => s.slug !== 'mercedes-repair-dubai').map((s, i) => ({
             '@type': 'ListItem',
             position: i + 1,
             url: `https://digitecme.com${isArabic ? '/ar' : ''}/services/${s.slug}`,
@@ -101,7 +101,7 @@ const Services = () => {
       <section className="pb-16 sm:pb-28">
         <div className="mx-auto max-w-[90rem] space-y-14 px-5 sm:space-y-20 sm:px-8 lg:px-12">
           {categories.map((cat) => {
-            const items = services.filter((s) => s.category === cat && s.slug !== 'mercedes-repair-dubai');
+            const items = [...services, ...(isArabic ? [] : englishOnlyServices)].filter((s) => s.category === cat && s.slug !== 'mercedes-repair-dubai');
             if (items.length === 0) return null;
             return (
               <div key={cat} className="border-t border-white/[0.09] pt-6 sm:pt-8">

@@ -207,9 +207,18 @@ const ServicePage: React.FC<ServicePageProps> = ({ slugOverride, canonicalPath, 
             {/* Main Content */}
             <div className="md:col-span-2 space-y-12">
               {/* Intro */}
-              <div>
+              <div id={service.slug === 'paint-protection-dubai' ? 'paint-correction' : undefined}>
                 <h2 className="text-2xl sm:text-3xl font-bold mb-5">{isArabic ? 'نظرة عامة' : 'Overview'}</h2>
                 <p className="text-gray-300 leading-relaxed text-lg">{service.intro}</p>
+                {!isArabic && service.slug === 'paint-protection-dubai' && (
+                  <p className="mt-5 text-gray-300 leading-relaxed text-lg"><Link to="/services/car-polishing-dubai" className="text-burnt-orange underline">Car polishing and paint correction</Link> address existing surface defects before protection is selected. For a physical barrier against road debris, explore <Link to="/services/paint-protection-film" className="text-burnt-orange underline">PPF coverage and installation in Dubai</Link>. For water behaviour and finish maintenance, see our <Link to="/services/ceramic-coating" className="text-burnt-orange underline">ceramic coating service</Link>. Preparation and product compatibility are assessed for your car.</p>
+                )}
+                {!isArabic && service.slug === 'car-body-repair-dubai' && (
+                  <p className="mt-5 text-gray-300 leading-relaxed text-lg">For shallow surface marks, <Link to="/services/car-polishing-dubai#paint-scratches" className="text-burnt-orange underline">assess whether polishing can improve the scratch</Link>. Deeper damage, missing paint and dents need a different repair approach.</p>
+                )}
+                {!isArabic && service.slug === 'ceramic-coating' && (
+                  <p className="mt-5 text-gray-300 leading-relaxed text-lg">Looking for a physical barrier against stone chips? Compare <Link to="/services/paint-protection-film#ppf-comparison" className="text-burnt-orange underline">paint protection film with ceramic coating</Link> and review full-body or selected-panel film coverage. A compatible coating can complement suitable PPF.</p>
+                )}
               </div>
 
               {/* Why It Matters */}

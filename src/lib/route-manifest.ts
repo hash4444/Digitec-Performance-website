@@ -1,4 +1,4 @@
-import { allServices } from '@/data/services';
+import { allServices, englishOnlyServices } from '@/data/services';
 import { localGaragePages } from '@/data/localGaragePages';
 import { blogPosts } from '@/data/blogPosts';
 import { brandWorkshopArticles } from '@/data/brandWorkshopArticles';
@@ -83,6 +83,7 @@ const englishRoutes: Array<[string, RouteFamily]> = [
 // Phase-one Mercedes topical pages are English-only until equivalent Arabic
 // content exists. Existing Arabic blog versions remain untouched.
 const englishOnlyRoutes: Array<[string, RouteFamily]> = [
+  ...englishOnlyServices.map((service) => [`/services/${service.slug}`, 'service'] as [string, RouteFamily]),
   ...bmwModelPages.map((model) => [`${BMW_HUB_PATH}/${model.slug}`, 'service'] as [string, RouteFamily]),
   ...ferrariModelPages.map((model) => [model.path, 'service'] as [string, RouteFamily]),
   ...ferrariCaseStudies.map((study) => [`/ferrari/case-studies/${study.slug}`, 'article'] as [string, RouteFamily]),
@@ -103,6 +104,13 @@ const englishOnlyRoutes: Array<[string, RouteFamily]> = [
 ];
 
 const routeMap = new Map<string, PublicRoute>();
+const paintCareUpdatedPaths = new Set([
+  '/', '/services', '/sitemap', '/services/paint-protection-film',
+  '/services/paint-protection-dubai', '/services/ceramic-coating',
+  '/services/car-body-repair-dubai', '/sitemap',
+  '/blog/why-ceramic-coating-matters-uae', '/blog/ceramic-coating-vs-ppf-dubai',
+  ...['mercedes-benz', 'bmw', 'porsche', 'ferrari', 'lamborghini', 'mclaren', 'aston-martin', 'rolls-royce', 'range-rover'].map((brand) => `/brands/${brand}-service-dubai`),
+]);
 for (const [path, family] of englishRoutes) {
   for (const localizedPath of [path, path === '/' ? '/ar' : `/ar${path}`]) {
     routeMap.set(localizedPath, {
@@ -159,11 +167,11 @@ for (const [path, family] of englishOnlyRoutes) {
     path,
     family,
     indexable: isIndexableContentPath(path),
-    lastmod: SEO_RELEASE_DATE,
+    lastmod: path === '/services/car-polishing-dubai' ? '2026-09-08' : SEO_RELEASE_DATE,
   });
 }
 
-export const publicRoutes = [...routeMap.values()].sort((a, b) =>
+export const publicRoutes = [...routeMap.values()].map((route) => paintCareUpdatedPaths.has(route.path) ? { ...route, lastmod: '2026-09-08' } : route).sort((a, b) =>
   a.path.localeCompare(b.path),
 );
 
