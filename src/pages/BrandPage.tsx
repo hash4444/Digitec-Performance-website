@@ -520,7 +520,7 @@ const BrandPage = () => {
   const whatsappHref = isEnglishAstonHub ? ASTON_WHATSAPP_HREF : isEnglishBmwHub ? BMW_WHATSAPP_HREF : isEnglishMclarenHub ? MCLAREN_WHATSAPP_HREF : isEnglishLamborghiniHub ? LAMBORGHINI_WHATSAPP_HREF : isEnglishRollsRoyceHub ? ROLLS_ROYCE_WHATSAPP_HREF : isEnglishAudiHub ? AUDI_WHATSAPP_HREF : isEnglishBentleyHub ? BENTLEY_WHATSAPP_HREF : `https://wa.me/97143402223?text=${encodeURIComponent(
     isArabic
       ? `مرحباً، أود الاستفسار عن خدمة ${brand.name} لدى مركز ديجي-تك بيرفورمانس. طراز السيارة وسنتها: `
-      : `Hi Digi-Tec, I found your ${brand.name} service page on Google and would like to arrange an inspection.\n\nModel and year: \nService, warning or symptom: `,
+      : `Hi Digi-Tec, I am enquiring from your ${brand.name} service page and would like to arrange an inspection.\n\nModel and year: \nService, warning or symptom: `,
   )}`;
 
   const otherBrands = (priorityBrandSeo
@@ -646,6 +646,7 @@ const BrandPage = () => {
               <div className={isEnglishBmwHub ? 'brand-hero__actions flex flex-col flex-wrap gap-3 sm:gap-4 xl:flex-row' : 'brand-hero__actions flex flex-col sm:flex-row gap-3 sm:gap-4'}>
                 <a
                   href={whatsappHref}
+                  data-cta-placement="hero"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn-primary"
@@ -653,13 +654,14 @@ const BrandPage = () => {
                   <MessageCircle className="w-5 h-5" />
                   {isArabic ? 'راسلنا عبر واتساب' : isEnglishAstonHub ? 'Request an Aston Martin Service Quote' : isEnglishBmwHub ? 'Request BMW Service' : isEnglishAudiHub ? 'Book an Audi inspection on WhatsApp' : isEnglishBentleyHub ? 'Book a Bentley inspection on WhatsApp' : isEnglishRoxHub ? 'Book a ROX 01 inspection on WhatsApp' : isFerrari ? 'Request a Ferrari inspection' : isEnglishMclarenHub ? 'Request McLaren Service' : isEnglishLamborghiniHub ? 'Request a Lamborghini Assessment' : isEnglishRollsRoyceHub ? 'Request a Rolls-Royce Service Quote' : isMercedesServiceHub ? 'Book Mercedes Service' : isPriorityLeadBrand ? `Request a ${brand.name} Inspection` : `Request ${brand.name} Service`}
                 </a>
-                <a href="tel:+97143402223" className="btn-secondary">
+                <a href="tel:+97143402223" data-cta-placement="hero" className="btn-secondary">
                   <Phone className="w-5 h-5" />
                   {isArabic && isMercedesServiceHub ? <>اتصل على <bdi dir="ltr">+971 4 340 2223</bdi></> : isArabic ? 'اتصل على +971 4 340 2223' : isEnglishBmwHub || isEnglishAudiHub || isEnglishRollsRoyceHub || isEnglishBentleyHub ? 'Call the Al Quoz workshop' : 'Call +971 4 340 2223'}
                 </a>
                 {(isPriorityLeadBrand || isRangeRoverServiceHub || isDefenderServiceHub) && (
                   <a
                     href="https://maps.google.com/?q=Al+Quoz+Industrial+Area+3+Dubai"
+                    data-cta-placement="hero"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="btn-secondary"
@@ -704,10 +706,10 @@ const BrandPage = () => {
                 Send your model, year, mileage and symptoms before visiting. The team will confirm the appropriate first inspection and an available appointment rather than guessing from a warning code alone.
               </p>
               <div className="mt-6 flex flex-col gap-3 sm:flex-row">
-                <a href={whatsappHref} target="_blank" rel="noopener noreferrer" className="btn-primary">
+                <a href={whatsappHref} data-cta-placement="location_section" target="_blank" rel="noopener noreferrer" className="btn-primary">
                   <MessageCircle className="h-5 w-5" /> Request an Inspection
                 </a>
-                <a href="https://maps.google.com/?q=Al+Quoz+Industrial+Area+3+Dubai" target="_blank" rel="noopener noreferrer" className="btn-secondary">
+                <a href="https://maps.google.com/?q=Al+Quoz+Industrial+Area+3+Dubai" data-cta-placement="location_section" target="_blank" rel="noopener noreferrer" className="btn-secondary">
                   <MapPin className="h-5 w-5" /> Get Directions
                 </a>
               </div>
@@ -1345,6 +1347,7 @@ const BrandPage = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center gap-2 bg-burnt-orange hover:bg-burnt-orange/90 text-black font-bold px-6 py-3 rounded-2xl transition-all duration-300 hover:scale-105 shadow-xl"
+                  data-cta-placement="booking_section"
                 >
                   <MessageCircle className="w-5 h-5" />
                   {isArabic ? 'واتساب الآن' : isMercedesServiceHub ? 'Book Mercedes Service' : `Request ${brand.name} Service`}
@@ -1352,6 +1355,7 @@ const BrandPage = () => {
                 <a
                   href="tel:+97143402223"
                   className="inline-flex items-center justify-center gap-2 bg-off-white text-black hover:bg-white font-bold px-6 py-3 rounded-2xl transition-all duration-300 shadow-xl"
+                  data-cta-placement="booking_section"
                 >
                   <Phone className="w-5 h-5" />
                   +971 4 340 2223
@@ -1457,10 +1461,10 @@ const BrandPage = () => {
       {isPriorityLeadBrand && (
         <aside className="fixed inset-x-0 bottom-0 z-40 border-t border-white/10 bg-black/95 p-3 shadow-2xl backdrop-blur md:hidden" aria-label={isArabic && isMercedesServiceHub ? 'خيارات حجز صيانة مرسيدس' : `${brand.name} booking options`}>
           <div className="mx-auto grid max-w-lg grid-cols-2 gap-3">
-            <a href={whatsappHref} target="_blank" rel="noopener noreferrer" className="btn-primary justify-center px-3 py-3 text-sm">
+            <a href={whatsappHref} data-cta-placement="mobile_bar" target="_blank" rel="noopener noreferrer" className="btn-primary justify-center px-3 py-3 text-sm">
               <MessageCircle className="h-5 w-5" /> {isArabic && isMercedesServiceHub ? 'واتساب' : 'WhatsApp'}
             </a>
-            <a href="tel:+97143402223" className="btn-secondary justify-center px-3 py-3 text-sm">
+            <a href="tel:+97143402223" data-cta-placement="mobile_bar" className="btn-secondary justify-center px-3 py-3 text-sm">
               <Phone className="h-5 w-5" /> {isArabic && isMercedesServiceHub ? 'اتصل بالورشة' : 'Call Workshop'}
             </a>
           </div>

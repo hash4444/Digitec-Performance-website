@@ -32,6 +32,7 @@ export const FinalCTA = ({ title, description, label, href }: FinalCTAProps = {}
             <p className="home-lead">{copy?.description ?? description ?? 'Share the make, model, year and the service or symptoms you want checked. The Digi-Tec team can help arrange the appropriate workshop visit.'}</p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <a
+                data-cta-placement="final_cta"
                 href={href ?? `https://wa.me/97143402223?text=${encodeURIComponent("Hi, I'd like to schedule a consultation at Digi-Tec Performance Center.")}`}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -39,7 +40,7 @@ export const FinalCTA = ({ title, description, label, href }: FinalCTAProps = {}
               >
                 {copy?.schedule ?? label ?? 'Request an appointment'} <ArrowRight className="h-4 w-4 shrink-0" />
               </a>
-              <a href="tel:+97143402223" className="home-button home-button-secondary">
+              <a href="tel:+97143402223" data-cta-placement="final_cta" className="home-button home-button-secondary">
                 <Phone className="h-4 w-4" /> {copy?.call ?? 'Call +971 4 340 2223'}
               </a>
             </div>

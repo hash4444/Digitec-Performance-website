@@ -179,13 +179,26 @@
     }
     </script>
 
-    <!-- Existing GA4 property; the captured location preserves referral/UTM attribution. -->
+    <!-- Existing GA4 property; exclude enquiry parameters from page URLs. -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-4TRCEJSY4S"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-      gtag('config', 'G-4TRCEJSY4S', { page_location: window.location.href });
+      // Enquiry values and private referrer paths must not enter page events.
+      var analyticsLocation = window.location.origin + window.location.pathname;
+      var analyticsReferrer = '';
+      try { analyticsReferrer = document.referrer ? new URL(document.referrer).origin : ''; } catch (error) {}
+      // Retain recognised acquisition channels without sending arbitrary UTM text.
+      // Keep these labels aligned with src/lib/contact-attribution.ts.
+      var analyticsParams = new URLSearchParams(window.location.search);
+      var analyticsSource = (analyticsParams.get('utm_source') || '').toLowerCase().trim().replace(/^www\./, '').replace(/\.com$/, '');
+      var analyticsMedium = (analyticsParams.get('utm_medium') || '').toLowerCase().trim();
+      var analyticsConfig = {};
+      if (['google', 'bing', 'chatgpt', 'openai', 'perplexity', 'gemini', 'claude', 'copilot', 'duckduckgo', 'instagram', 'facebook', 'youtube', 'newsletter', 'whatsapp'].includes(analyticsSource)) analyticsConfig.campaign_source = analyticsSource;
+      if (['organic', 'cpc', 'ppc', 'paid_search', 'paid_social', 'social', 'email', 'referral', 'display', 'direct', 'organic_social'].includes(analyticsMedium)) analyticsConfig.campaign_medium = analyticsMedium;
+      gtag('set', { page_location: analyticsLocation, page_referrer: analyticsReferrer });
+      gtag('config', 'G-4TRCEJSY4S', analyticsConfig);
     </script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />

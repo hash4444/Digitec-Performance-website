@@ -596,6 +596,7 @@ const BrandServicePage: React.FC<BrandServicePageProps> = ({
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
               <a
                 href={whatsappHref}
+                data-cta-placement="hero"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-primary"
@@ -603,7 +604,7 @@ const BrandServicePage: React.FC<BrandServicePageProps> = ({
                 <MessageCircle className="w-5 h-5" />
                 {isArabic ? 'راسلنا عبر واتساب' : enquiryLabel}
               </a>
-              <a href="tel:+97143402223" className="btn-secondary">
+              <a href="tel:+97143402223" data-cta-placement="hero" className="btn-secondary">
                 <Phone className="w-5 h-5" />
                 {isArabic ? 'اتصل على +971 4 340 2223' : 'Call +971 4 340 2223'}
               </a>
@@ -687,7 +688,7 @@ const BrandServicePage: React.FC<BrandServicePageProps> = ({
               </h2>
               <p className="text-gray-300 text-sm sm:text-base leading-relaxed">{combo.partsCopy}</p>
               {!isArabic && ['mercedes-benz-service-dubai', 'bmw-service-dubai', 'porsche-service-dubai', 'aston-martin-service-dubai', 'mclaren-service-dubai'].includes(combo.brandSlug) && (
-                <a href={whatsappHref} target="_blank" rel="noopener noreferrer" className="mt-6 inline-flex items-center gap-2 text-base font-semibold text-burnt-orange hover:underline">
+                <a href={whatsappHref} data-cta-placement="service_scope" target="_blank" rel="noopener noreferrer" className="mt-6 inline-flex items-center gap-2 text-base font-semibold text-burnt-orange hover:underline">
                   {enquiryLabel}<ArrowRight className="h-4 w-4 shrink-0" />
                 </a>
               )}

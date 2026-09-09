@@ -200,8 +200,8 @@ const ServicePage: React.FC<ServicePageProps> = ({ slugOverride, canonicalPath, 
             {service.description}
           </p>
           {service.ctaLabel && <div className="mt-7 flex flex-col flex-wrap gap-3 sm:flex-row">
-            <a href={enquiryHref} target="_blank" rel="noopener noreferrer" className="btn-primary"><MessageCircle className="h-5 w-5 shrink-0" />{enquiryLabel}</a>
-            <a href="tel:+97143402223" className="btn-secondary"><Phone className="h-5 w-5 shrink-0" />{isArabic ? 'اتصل بالورشة' : 'Call the Al Quoz workshop'}</a>
+            <a href={enquiryHref} data-cta-placement="hero" target="_blank" rel="noopener noreferrer" className="btn-primary"><MessageCircle className="h-5 w-5 shrink-0" />{enquiryLabel}</a>
+            <a href="tel:+97143402223" data-cta-placement="hero" className="btn-secondary"><Phone className="h-5 w-5 shrink-0" />{isArabic ? 'اتصل بالورشة' : 'Call the Al Quoz workshop'}</a>
           </div>}
         </div>
       </section>
@@ -284,7 +284,7 @@ const ServicePage: React.FC<ServicePageProps> = ({ slugOverride, canonicalPath, 
               {!isArabic && service.quoteGuidance && <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-6 sm:p-8">
                 <h2 className="mb-4 text-2xl font-bold">Discuss the inspection and quote</h2>
                 <p className="mb-6 text-base leading-8 text-gray-300">{service.quoteGuidance}</p>
-                <a href={enquiryHref} target="_blank" rel="noopener noreferrer" className="btn-primary"><MessageCircle className="h-5 w-5 shrink-0" />{enquiryLabel}</a>
+                <a href={enquiryHref} data-cta-placement="service_scope" target="_blank" rel="noopener noreferrer" className="btn-primary"><MessageCircle className="h-5 w-5 shrink-0" />{enquiryLabel}</a>
               </div>}
               {service.extraSections?.map((section, i) => (
                 <div key={i}>
@@ -473,7 +473,8 @@ const ServicePage: React.FC<ServicePageProps> = ({ slugOverride, canonicalPath, 
 
                 <div className="space-y-3">
                   <a
-                    href="https://wa.me/97143402223"
+                    href={enquiryHref}
+                    data-cta-placement="service_details"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center justify-center gap-2 w-full bg-burnt-orange hover:bg-[#ff7d4d] text-black font-bold text-sm uppercase tracking-[0.12em] py-3.5 rounded-lg transition-colors duration-300"
@@ -483,6 +484,7 @@ const ServicePage: React.FC<ServicePageProps> = ({ slugOverride, canonicalPath, 
                   </a>
                   <a
                     href="tel:+97143402223"
+                    data-cta-placement="service_details"
                     className="flex items-center justify-center gap-2 w-full border border-white/20 text-off-white hover:border-burnt-orange/70 hover:text-burnt-orange font-bold text-sm uppercase tracking-[0.12em] py-3.5 rounded-lg transition-all duration-300"
                   >
                     <Phone className="w-5 h-5" />

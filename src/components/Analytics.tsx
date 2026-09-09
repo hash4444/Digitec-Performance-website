@@ -1,6 +1,7 @@
 import { useEffect, useRef } from 'react';
 import { useLocation } from 'react-router-dom';
 import { safeWhatsAppUrl, trackWhatsAppClick } from '@/lib/whatsapp-tracking';
+import { analyticsPageUrl, analyticsReferrer, ATTRIBUTION_KEY, buildAttribution, sanitizeAttribution, type ContactAttribution } from '@/lib/contact-attribution';
 
 declare global {
   interface Window {
@@ -24,38 +25,12 @@ const contactEvent: Record<string, string> = {
   directions: 'directions_clicked',
 };
 
-type Attribution = Record<string, string>;
-const ATTRIBUTION_KEY = 'digitec_first_touch';
-
-const classifyAiReferrer = (value: string) => {
-  const host = value.toLowerCase();
-  if (host.includes('chatgpt.com') || host.includes('openai.com')) return 'chatgpt';
-  if (host.includes('perplexity.ai')) return 'perplexity';
-  if (host.includes('copilot.microsoft.com') || host.includes('bing.com/chat')) return 'copilot';
-  if (host.includes('gemini.google.com') || host.includes('bard.google.com')) return 'gemini';
-  if (host.includes('claude.ai')) return 'claude';
-  return '';
-};
-
-const readAttribution = (): Attribution => {
+const readAttribution = (): ContactAttribution => {
   try {
     const stored = window.sessionStorage.getItem(ATTRIBUTION_KEY);
-    if (stored) return JSON.parse(stored) as Attribution;
-
-    const params = new URLSearchParams(window.location.search);
-    const attribution: Attribution = {
-      landing_page: window.location.href,
-      initial_referrer: document.referrer || 'direct',
-    };
-    ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term', 'gclid']
-      .forEach((key) => {
-        const value = params.get(key);
-        if (value) attribution[key] = value;
-      });
-    const aiReferrer = classifyAiReferrer(
-      `${params.get('utm_source') ?? ''} ${document.referrer}`,
-    );
-    if (aiReferrer) attribution.ai_referrer = aiReferrer;
+    const attribution = stored
+      ? sanitizeAttribution(JSON.parse(stored), window.location.origin)
+      : buildAttribution(window.location.href, document.referrer);
     window.sessionStorage.setItem(ATTRIBUTION_KEY, JSON.stringify(attribution));
     return attribution;
   } catch {
@@ -67,21 +42,27 @@ const readAttribution = (): Attribution => {
 const Analytics = () => {
   const { pathname, search } = useLocation();
   const initialPageView = useRef(true);
-  const attribution = useRef<Attribution>({});
+  const attribution = useRef<ContactAttribution>({});
 
   useEffect(() => {
     attribution.current = readAttribution();
   }, []);
 
   useEffect(() => {
+    const pageContext = {
+      page_location: analyticsPageUrl(window.location.href, window.location.origin),
+      page_referrer: analyticsReferrer(document.referrer),
+    };
+    // Keep automatic events aligned with the current SPA route as well.
+    window.gtag?.('set', pageContext);
     if (initialPageView.current) {
       initialPageView.current = false;
       return;
     }
     window.gtag?.('event', 'page_view', {
       page_title: document.title,
-      page_location: window.location.href,
-      page_path: `${pathname}${search}`,
+      ...pageContext,
+      page_path: pathname,
       ...attribution.current,
     });
   }, [pathname, search]);
