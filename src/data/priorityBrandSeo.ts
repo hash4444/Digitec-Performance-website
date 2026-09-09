@@ -37,7 +37,7 @@ export const PRIORITY_BRAND_SEO: Record<string, PriorityBrandSeo> = {
     heroImageHeight: 1600,
   },
   'bmw-service-dubai': {
-    title: 'BMW Service & Repair Dubai | Independent BMW Workshop | DIGI-TEC',
+    title: 'BMW Service & Repair Dubai | DIGI-TEC',
     description: 'BMW service, repair, diagnostics and maintenance in Al Quoz, Dubai. DIGI-TEC inspects BMW engine, transmission, brakes, AC, electrical and coding concerns. Book via WhatsApp.',
   },
   'lamborghini-service-dubai': {

@@ -555,6 +555,8 @@ Object.assign(BRAND_PROFILES, {
 export const BRAND_SLUGS = Object.keys(BRAND_PROFILES);
 
 import { MERCEDES_SERVICE_CONTENT } from './mercedesServiceContent';
+import { getQueryServiceContent } from './queryServiceContent';
+import { EXTENDED_SERVICE_INTROS, EXTENDED_SERVICE_STEPS } from './extendedServiceContent';
 
 export interface FAQ {
   question: string;
@@ -606,11 +608,11 @@ function composeOilChange(p: BrandProfile): Composed {
     metaDescription: `${p.brandName} oil and filter service in Dubai, with oil specification, filter, reset functions and parts confirmed for the exact vehicle before work.`,
     heroCopy: `${p.brandName} oil requirements vary by engine, model year and market specification. The profile reference for these platforms is ${p.oilSpec}, but Digi-Tec verifies the VIN, handbook or under-bonnet specification before quoting oil, filter, seals and any supported service-reset function. Dubai heat, short trips and stop-start traffic can affect oil condition, so the vehicle history and use pattern are reviewed rather than applying one interval to every model. ${p.heritageLine}`,
     symptoms: [
-      `${p.brandName} service reminder counting down within 1,500 km or 30 days`,
-      'Oil looking dark or gritty on the dipstick, or a burnt smell after a long drive',
-      `Low oil pressure warning on cold start, common on ${p.engineCodes[0]} engines that have missed a service`,
-      'Ticking valvetrain noise that quietens once the engine warms up',
-      'Any oil top-up over one litre between services, worth a leak inspection at the same time',
+      `${p.brandName} service reminder or scheduled oil service due`,
+      'Unknown oil-service history or a change in driving use',
+      'Oil-level warning or repeated top-ups needing assessment',
+      'Visible oil leakage or a burning smell to discuss before service',
+      'An oil-pressure warning or unusual engine noise requires diagnosis before routine service',
     ],
     models: p.models.slice(0, 6),
     processSteps: [
@@ -644,14 +646,14 @@ function composeBrakeRepair(p: BrandProfile): Composed {
       'Squeal, grinding, or metallic scrape on light braking',
       'Steering-wheel or pedal vibration under braking from motorway speed',
       'Brake fluid warning or spongy pedal feel after a long descent',
-      `Uneven pad wear front-to-rear, common on ${p.brandName} platforms with a stuck EPB caliper`,
-      isCarbon ? 'Carbon-ceramic rotor edge cracks, glazing, or squeal that only ceramic-compound pads resolve' : 'Rotor lip more than 1.5 mm, a sign the discs are past service life, not just the pads',
+      'Uneven pad wear or a parking-brake concern needing inspection',
+      isCarbon ? 'Visible carbon-ceramic surface damage requiring a system-specific assessment' : 'Visible rotor wear or scoring; remaining thickness must be measured against the applicable limit',
     ],
     models: p.models.slice(0, 6),
     processSteps: [
       { title: 'Measurement and supported scan', description: `Rotor, pad and caliper condition are measured. Electronic pad-wear or parking-brake data is read only where the vehicle and available diagnostic functions support it.` },
       { title: 'Confirm parts and compound', description: `${p.brandName} pads and rotors must match the fitted ${p.brakeSystem}. The proposed source, compound and compatibility are documented in the quotation before parts are ordered.` },
-      { title: 'Fluid change and boil-point test', description: 'Full brake fluid replacement (DOT 4 LV or DOT 5.1 as your platform demands) with a refractometer boil-point test before and after, critical in Dubai summer.' },
+      { title: 'Confirm fluid condition and specification', description: 'Check the applicable brake-fluid specification and service schedule. Fluid replacement and bleeding are included when the findings and agreed scope require them.' },
       { title: 'Bedding-in and EPB function', description: 'The required bedding procedure, road test and any supported EPB retract or reset function are confirmed for the vehicle and included only where applicable.' },
     ],
     partsCopy: `Pads, rotors, sensors and fluid are selected for the exact VIN, fitted brake option and agreed use. The estimate may specify a genuine part, an established OE-supplier component or another suitable customer-approved option, subject to availability. Carbon-ceramic pad and rotor compatibility is confirmed before work.`,
@@ -675,10 +677,10 @@ function composeTransmission(p: BrandProfile): Composed {
     symptoms: [
       `Hard 1-2 or 2-3 shift on the ${p.transmissionName.split(' ')[0]}, particularly cold`,
       'Flare or slip on part-throttle upshift, or delayed engagement into D or R',
-      'Judder on light-throttle cruise between 40 and 80 km/h (classic torque-converter lock-up wear)',
+      'Judder during light acceleration or steady-speed driving',
       'Transmission fluid stain on the underside of the car or on the driveway',
       `Gearbox warning light or ${p.brandName}-specific "Transmission Malfunction, Consult Workshop" message`,
-      'Loss of gears (limp home to third) after hard driving in summer heat',
+      'Reduced drive or unavailable gears requiring fault assessment',
     ],
     models: p.models.slice(0, 6),
     processSteps: [
@@ -738,13 +740,13 @@ function composeSuspension(p: BrandProfile): Composed {
     h1: `${p.brandName} Suspension Repair Dubai`,
     metaTitle: `${p.brandName} Suspension Repair Dubai | ${isAir ? 'Air Suspension Service' : 'Adaptive Damping'} | Digi-Tec`,
     metaDescription: `${p.brandName} suspension inspection and repair in Dubai. Parts, compatible diagnostic functions and calibration requirements are confirmed for the vehicle.`,
-    heroCopy: `Digi-Tec inspects ${p.brandName} suspension concerns involving ${p.suspensionType.toLowerCase()}, including ride-height changes, warning messages, leaks, noise and poor handling. The exact fitted system, failed component, compatible parts and supported diagnostic or calibration functions are confirmed before repair. Air strut, compressor, valve-block, damper and sensor work depends on the model, findings and parts availability. ${p.climateNote} ${p.heritageLine}`,
+    heroCopy: `Ride-height changes, clunks, uneven tyre wear or a suspension warning on your ${p.brandName} need the fitted system identified first. The model range includes ${p.suspensionType.toLowerCase()}, but equipment varies. Digi-Tec checks mechanical condition, tyre influence and compatible fault data before proposing damper, joint, air-system or control repairs. Parts, supported calibration and alignment needs are confirmed from the findings.`,
     symptoms: [
-      isAir ? `${p.brandName} car sitting low on one corner overnight, leaking air strut or valve block seal` : 'Knocking or clunking over expansion joints from front or rear suspension',
+      isAir ? `${p.brandName} sitting low or unevenly after parking` : 'Knocking or clunking over expansion joints from front or rear suspension',
       isAir ? 'Compressor running continuously or throwing a "Suspension Malfunction" warning' : 'Wandering steering feel or uneven tyre wear across the tread',
-      'Ride feels harsh in Comfort and no different in Sport, adaptive damper failure',
+      'A change in ride comfort or response to an available driving mode',
       `Ride-height warning on the ${p.brandName} cluster, or refusal to raise or lower on request`,
-      'Grease or oil weeping from strut body, worn shaft seal, replace before it fails completely',
+      'Visible leakage or damage around a damper or strut',
       'Nose dive under braking and squat under acceleration heavier than you remember from new',
     ],
     models: p.models.slice(0, 6),
@@ -858,10 +860,10 @@ function composeExtendedService(p: BrandProfile, key: ExtendedServiceKey): Compo
     h1: `${p.brandName} ${meta.name} Dubai`,
     metaTitle: `${p.brandName} ${meta.name} Dubai | Digi-Tec`,
     metaDescription: `${p.brandName} ${meta.name.toLowerCase()} in Dubai with vehicle-specific inspection, confirmed parts options and a clear repair quote at Digi-Tec.`,
-    heroCopy: `Digi-Tec inspects ${p.brandName} ${meta.name.toLowerCase()} concerns in Dubai and confirms the vehicle-specific workshop scope before repair. Compatible scan coverage, special functions, parts, procedures and calibration requirements vary by model and are checked from the VIN, fitted system and findings. ${p.climateNote} ${p.heritageLine}`,
+    heroCopy: `${p.brandName} ${EXTENDED_SERVICE_INTROS[key]} Digi-Tec assesses the concern in Al Quoz, Dubai, identifies the fitted system and explains the findings before parts or repair are agreed.`,
     symptoms: copy.symptoms,
     models: p.models.slice(0, 6),
-    processSteps: copy.process.map((title) => ({ title, description: `${title} for your ${p.brandName}. Compatible ${p.diagnosticTool} functions and applicable workshop procedures are confirmed for the vehicle.` })),
+    processSteps: copy.process.map((title, index) => ({ title, description: EXTENDED_SERVICE_STEPS[key][index] })),
     partsCopy: `Parts for ${copy.parts} are selected for the exact vehicle and agreed repair. The quotation may identify genuine, established OE-supplier, remanufactured or other suitable customer-approved options, subject to compatibility and availability.`,
     faqs: [
       { question: `Do you handle ${p.brandName} ${meta.name.toLowerCase()} in Dubai?`, answer: `The concern can be inspected and a vehicle-specific repair route proposed. Diagnostic functions, procedures, parts and repair availability are confirmed before work is accepted.` },
@@ -1033,6 +1035,7 @@ export function getBrandServiceCombo(brandSlug: string, serviceSlug: string, opt
       metaTitle: `${profile.brandName} ${meta.name} Dubai | ${displayBrand}`,
       metaDescription: `${profile.brandName} ${meta.name.toLowerCase()} in Dubai with model-specific inspection, confirmed parts options and a clear quote at ${displayBrand}, Al Quoz.`,
     }),
+    ...getQueryServiceContent(brandSlug, key),
     ...(brandSlug === 'mercedes-benz-service-dubai' && options?.mercedesEnglishContent !== false ? MERCEDES_SERVICE_CONTENT[key] : {}),
   };
 }

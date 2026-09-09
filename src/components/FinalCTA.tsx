@@ -4,7 +4,14 @@ import { Reveal } from '@/components/motion/Reveal';
 import { useLocale } from '@/i18n/use-locale';
 import { arHome } from '@/i18n/ar-home';
 
-export const FinalCTA = () => {
+interface FinalCTAProps {
+  title?: string;
+  description?: string;
+  label?: string;
+  href?: string;
+}
+
+export const FinalCTA = ({ title, description, label, href }: FinalCTAProps = {}) => {
   const { isArabic } = useLocale();
   const copy = isArabic ? arHome.cta : null;
   const steps = [
@@ -19,18 +26,18 @@ export const FinalCTA = () => {
         <Reveal className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:gap-20">
           <div>
             <p className="home-kicker mb-4">{copy?.eyebrow ?? 'Contact the workshop'}</p>
-            <h2 className="home-heading max-w-3xl">{copy?.title ?? 'Tell us about your vehicle.'}</h2>
+            <h2 className="home-heading max-w-3xl">{copy?.title ?? title ?? 'Tell us about your vehicle.'}</h2>
           </div>
           <div className="lg:pt-2">
-            <p className="home-lead">{copy?.description ?? 'Share the make, model, year and the service or symptoms you want checked. The Digi-Tec team can help arrange the appropriate workshop visit.'}</p>
+            <p className="home-lead">{copy?.description ?? description ?? 'Share the make, model, year and the service or symptoms you want checked. The Digi-Tec team can help arrange the appropriate workshop visit.'}</p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <a
-                href={`https://wa.me/97143402223?text=${encodeURIComponent("Hi, I'd like to schedule a consultation at Digi-Tec Performance Center.")}`}
+                href={href ?? `https://wa.me/97143402223?text=${encodeURIComponent("Hi, I'd like to schedule a consultation at Digi-Tec Performance Center.")}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="home-button home-button-primary"
               >
-                {copy?.schedule ?? 'Request an appointment'} <ArrowRight className="h-4 w-4" />
+                {copy?.schedule ?? label ?? 'Request an appointment'} <ArrowRight className="h-4 w-4 shrink-0" />
               </a>
               <a href="tel:+97143402223" className="home-button home-button-secondary">
                 <Phone className="h-4 w-4" /> {copy?.call ?? 'Call +971 4 340 2223'}

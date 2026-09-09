@@ -31,6 +31,9 @@ export interface ServiceData {
   faqs?: { question: string; answer: string }[];
   localIntent: string;
   details: string;
+  ctaLabel?: string;
+  quoteGuidance?: string;
+  relatedServiceLinks?: { path: string; label: string }[];
 }
 
 export const services: ServiceData[] = [
@@ -148,6 +151,9 @@ export const services: ServiceData[] = [
   },
   {
     slug: 'mechanical-repair-dubai',
+    ctaLabel: 'Request a Mechanical Inspection',
+    quoteGuidance: 'Share the model, year, mileage and when the noise, leak or drivability concern occurs. The findings determine the next test and whether component repair or more detailed investigation is appropriate.',
+    relatedServiceLinks: [{ label: 'Steering and rack repair', path: '/services/steering-repair-dubai' }, { label: 'Exhaust leak and silencer repair', path: '/services/exhaust-repair-dubai' }, { label: 'Suspension inspection', path: '/services/suspension-repair-dubai' }],
     metaTitle: 'Mechanical Repair Dubai | Engine & Drivetrain | Digitec',
     metaDescription: 'Mechanical repair in Dubai for engine, gearbox and drivetrain concerns on selected German, luxury and other vehicles. Book an inspection.',
     title: 'Mechanical Repair in Dubai',
@@ -227,6 +233,9 @@ export const services: ServiceData[] = [
   },
   {
     slug: 'suspension-repair-dubai',
+    ctaLabel: 'Request a Suspension Inspection',
+    quoteGuidance: 'Tell us which corner sits low, when the noise occurs and whether a warning is displayed. Parts, ride-height calibration and alignment are quoted only where the fitted system and findings require them.',
+    relatedServiceLinks: [{ label: 'Steering and rack inspection', path: '/services/steering-repair-dubai' }, { label: 'Mercedes AIRMATIC assessment', path: '/services/mercedes-suspension-repair-dubai' }, { label: 'Porsche suspension assessment', path: '/brands/porsche-service-dubai/suspension-repair' }],
     metaTitle: 'Suspension Repair Dubai | AIRMATIC, Shocks, Air Struts',
     metaDescription: 'Air suspension sagging or harsh ride? Book AIRMATIC, shock and air-strut inspection and repair in Dubai with vehicle-specific parts options.',
     title: 'Suspension Repair in Dubai',
@@ -272,7 +281,10 @@ export const services: ServiceData[] = [
   },
   {
     slug: 'steering-repair-dubai',
-    metaTitle: 'Steering Repair Dubai | Power Steering, Rack & EPS',
+    ctaLabel: 'Request a Steering Inspection',
+    quoteGuidance: 'Describe when the steering becomes heavy, noisy or loose, and mention recent tyre, alignment or suspension work. The inspection distinguishes rack or assistance faults from joints, tyres and geometry before repair or replacement is quoted.',
+    relatedServiceLinks: [{ label: 'Suspension and alignment considerations', path: '/services/suspension-repair-dubai' }, { label: 'Porsche steering inspection', path: '/brands/porsche-service-dubai/steering-repair' }, { label: 'Mercedes steering inspection', path: '/services/mercedes-steering-repair-dubai' }],
+    metaTitle: 'Power Steering & Rack Repair Dubai | DIGI-TEC',
     metaDescription: 'Heavy, noisy or leaking steering? Book rack, pump and EPS inspection and repair in Dubai for selected German and luxury cars.',
     title: 'Steering Repair in Dubai',
     description: 'Power-steering, rack, linkage, and EPS inspection in Dubai.',
@@ -317,6 +329,9 @@ export const services: ServiceData[] = [
   },
   {
     slug: 'brake-repair-dubai',
+    ctaLabel: 'Request a Brake Inspection',
+    quoteGuidance: 'Describe the warning, noise or change in pedal feel. Pad and disc measurements, fluid condition, fitted hardware and required electronic functions determine the repair and estimate.',
+    relatedServiceLinks: [{ label: 'BMW brake inspection', path: '/brands/bmw-service-dubai/brake-repair' }, { label: 'Mercedes brake service', path: '/services/mercedes-brake-repair-dubai' }],
     metaTitle: 'Brake Repair Dubai | Pads, Discs, Calipers & ABS | Digitec',
     metaDescription: 'Brake inspection and repair in Dubai covering pads, discs, calipers, fluid and supported ABS diagnostics for selected luxury and German cars.',
     title: 'Brake Repair in Dubai',
@@ -430,9 +445,12 @@ export const services: ServiceData[] = [
   },
   {
     slug: 'oil-change-dubai',
-    metaTitle: 'Car Oil Change Dubai | Vehicle-Specified Oil & Filter | Digi-Tec',
+    ctaLabel: 'Book an Oil Change',
+    quoteGuidance: 'Send the model, year, mileage and service history. Oil approval, quantity, filter and any due maintenance are confirmed for the fitted engine before the estimate is agreed.',
+    relatedServiceLinks: [{ label: 'Car service and maintenance', path: '/services/car-service-dubai' }, { label: 'Mercedes oil service', path: '/services/mercedes-oil-change-dubai' }, { label: 'BMW oil service', path: '/brands/bmw-service-dubai/oil-change' }],
+    metaTitle: 'Car Oil Change Dubai | Oil & Filter Service | DIGI-TEC',
     metaDescription: 'Car oil change in Dubai with oil approval, viscosity, capacity and filter selected for the exact vehicle. Book Digi-Tec for a confirmed estimate.',
-    title: 'Oil Change in Dubai',
+    title: 'Car Oil Change in Dubai',
     description: 'Vehicle-specific car oil and filter service in Dubai.',
     image: '/lovable-uploads/b25532a7-eae9-45ae-b8bf-425984dbfa6d.png',
     category: 'Core Mechanical Services',
@@ -525,6 +543,9 @@ export const services: ServiceData[] = [
   },
   {
     slug: 'tire-repair-dubai',
+    ctaLabel: 'Request a Tyre Assessment',
+    quoteGuidance: 'Share the vehicle, tyre size and whether the concern is a puncture, repeated pressure loss or vibration. The Al Quoz workshop confirms inspection availability, repair eligibility and replacement options before work is agreed. Contact the workshop before visiting to check appointment and tyre availability.',
+    relatedServiceLinks: [{ label: 'Suspension and uneven-wear inspection', path: '/services/suspension-repair-dubai' }, { label: 'Steering and alignment concerns', path: '/services/steering-repair-dubai' }],
     metaTitle: 'Tire Repair Dubai | Puncture Assessment & Fitment | Digitec',
     metaDescription: 'Tire repair in Dubai with puncture assessment, replacement, balancing and alignment subject to vehicle fitment and product availability.',
     title: 'Tire Repair Dubai',
@@ -580,6 +601,9 @@ export const services: ServiceData[] = [
   },
   {
     slug: 'battery-replacement-dubai',
+    ctaLabel: 'Request a Battery Check',
+    quoteGuidance: 'Tell us the model, year and whether the concern is slow starting, a warning or repeated discharge. Testing determines whether replacement or further fault diagnosis is appropriate. Workshop availability is confirmed before visiting; mobile delivery is not included by default.',
+    relatedServiceLinks: [{ label: 'Electrical fault diagnosis', path: '/services/auto-electrical-repair-dubai' }, { label: 'Mercedes battery assessment', path: '/services/mercedes-battery-replacement-dubai' }],
     metaTitle: 'Car Battery Replacement Dubai | Testing, Fitting & Coding',
     metaDescription: 'Car battery testing and replacement in Dubai with battery type, capacity, coding requirements, availability and timing confirmed for the vehicle.',
     title: 'Car Battery Replacement in Dubai',
@@ -625,8 +649,11 @@ export const services: ServiceData[] = [
   },
   {
     slug: 'exhaust-repair-dubai',
-    metaTitle: 'Exhaust Repair Dubai | Cat, Muffler, DPF & Performance',
-    metaDescription: 'Exhaust inspection and repair in Dubai for leaks, mufflers, sensors, catalysts, DPF concerns and compatible performance systems.',
+    ctaLabel: 'Request an Exhaust Inspection',
+    quoteGuidance: 'Share the vehicle details and whether the concern is noise, a leak, vibration or a warning. The quote separates the affected joints, pipework, silencer or control components. Performance changes require a separate compatibility and scope discussion.',
+    relatedServiceLinks: [{ label: 'Performance exhaust and tuning assessment', path: '/tuning' }, { label: 'Mechanical inspection', path: '/services/mechanical-repair-dubai' }],
+    metaTitle: 'Exhaust & Muffler Repair Dubai | DIGI-TEC',
+    metaDescription: 'Exhaust and muffler repair in Al Quoz, Dubai. Assessment of leaks, noise, sensors and catalyst or DPF concerns before repair is quoted at DIGI-TEC.',
     title: 'Exhaust Repair in Dubai',
     description: 'Exhaust leak, muffler, catalyst, sensor, and DPF inspection in Dubai.',
     image: exhaustRepairImg,
@@ -718,6 +745,9 @@ export const services: ServiceData[] = [
   },
   {
     slug: 'fuel-system-repair-dubai',
+    ctaLabel: 'Request Fuel-System Diagnosis',
+    quoteGuidance: 'Share the starting or running symptom, any warning and recent repairs. Test requirements, the fitted fuel system and findings determine injector, pump, line or control work and its cost.',
+    relatedServiceLinks: [{ label: 'Engine and control-system diagnostics', path: '/services/car-diagnostics-dubai' }],
     metaTitle: 'Fuel System Repair Dubai | Injector & Pump | Digitec',
     metaDescription: 'Fuel-system inspection and repair in Dubai for supported injectors, pumps, filters, pressure controls, lines and throttle systems.',
     title: 'Fuel System Repair in Dubai',
@@ -867,6 +897,8 @@ export const services: ServiceData[] = [
   },
   {
     slug: 'paint-protection-dubai',
+    ctaLabel: 'Discuss Paint Protection Options',
+    quoteGuidance: 'Start with the paint condition and your priority: improving existing marks, adding a physical film barrier or making finish maintenance easier. Preparation, covered surfaces and product compatibility should be agreed together.',
     metaTitle: 'Car Paint Care Dubai | Correction & Protection | DIGI-TEC',
     metaDescription: 'Explore paint correction, ceramic coating and film options at DIGI-TEC in Dubai. Assess your car’s paint condition and choose a suitable care service.',
     title: 'Car Paint Care & Protection Options in Dubai',

@@ -39,6 +39,10 @@ export const isLowValueBrandServicePath = (pathname: string): boolean => {
   const match = englishPath.match(/^\/brands\/([a-z0-9-]+)-service-dubai\/([a-z0-9-]+)$/);
   if (!match) return false;
   const [, brandSlug, serviceSlug] = match;
+  // Existing English ROX page has a distinct installation/repair process,
+  // compatibility checks and local demand. Keep the generic Arabic template
+  // excluded until it has an equivalent service-specific translation.
+  if (!pathname.startsWith('/ar/') && brandSlug === 'rox' && serviceSlug === 'soft-close-door-installation') return false;
   return !PRIMARY_BRANDS.has(brandSlug) && !INDEXABLE_SECONDARY_SERVICES.has(serviceSlug);
 };
 

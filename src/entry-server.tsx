@@ -18,7 +18,7 @@ export const getPublicRoutes = () => publicRoutes;
 
 export const renderRoute = (url: string): Promise<RenderedRoute> =>
   new Promise((resolve, reject) => {
-    let html = '';
+    const htmlChunks: Buffer[] = [];
     let seo: ResolvedSeoProps | undefined;
     let renderError: unknown;
     const timeout: ReturnType<typeof setTimeout> = setTimeout(() => {
@@ -28,7 +28,8 @@ export const renderRoute = (url: string): Promise<RenderedRoute> =>
 
     const destination = new Writable({
       write(chunk, _encoding, callback) {
-        html += chunk.toString();
+        // Decode only after joining chunks so multibyte text cannot be split.
+        htmlChunks.push(Buffer.from(chunk));
         callback();
       },
     });
@@ -39,6 +40,9 @@ export const renderRoute = (url: string): Promise<RenderedRoute> =>
         reject(renderError);
         return;
       }
+      // React 18's streaming UTF-8 buffer can insert NUL padding at chunk
+      // boundaries. NUL is not valid page text; remove only that padding.
+      const html = Buffer.concat(htmlChunks).toString('utf8').replace(/\u0000/g, '');
       resolve({ html, seo });
     });
     destination.on('error', reject);

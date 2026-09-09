@@ -173,7 +173,15 @@ for (const [path, family] of englishOnlyRoutes) {
 
 const mercedesUpdatedPaths = new Set(["/brands/mercedes-benz-service-dubai", "/services/mercedes-mechanical-repair-dubai", "/services/mercedes-suspension-repair-dubai", "/services/mercedes-transmission-repair-dubai", "/services/mercedes-oil-change-dubai", "/services/mercedes-diagnostics-dubai", "/services/mercedes-ac-repair-dubai", "/services/mercedes-battery-replacement-dubai", "/services/mercedes-brake-repair-dubai", "/services/mercedes-body-repair-dubai", "/services/mercedes-electrical-repair-dubai", "/services/mercedes-steering-repair-dubai", "/services/mercedes-exhaust-repair-dubai", "/tuning", "/blog/mercedes-g63-service-dubai-guide", "/mercedes/models/g-class-service-repair-dubai", "/mercedes/models/c63-service-repair-dubai", "/blog/mercedes-c-class-service-dubai-guide", "/mercedes/models/e63-service-repair-dubai", "/blog/mercedes-e-class-service-dubai-guide", "/blog/mercedes-s-class-service-dubai-guide", "/mercedes/models/s63-service-repair-dubai", "/mercedes/models/gle-service-repair-dubai", "/mercedes/models/gls-service-repair-dubai", "/brands/maybach-service-dubai", "/blog/mercedes-service-cost-dubai-guide", "/blog/mercedes-service-intervals-dubai-heat", "/blog/mercedes-benz-maintenance-guide-dubai", "/ar/brands/mercedes-benz-service-dubai", "/ar/tuning", "/ar/blog/mercedes-benz-maintenance-guide-dubai", "/blog/mercedes-amg-gt-tuning-dubai"]);
 
-export const publicRoutes = [...routeMap.values()].map((route) => (paintCareUpdatedPaths.has(route.path) || mercedesUpdatedPaths.has(route.path)) ? { ...route, lastmod: '2026-09-08' } : route).sort((a, b) =>
+// Service enquiry paths changed in both languages; English brand hubs gained
+// specific booking labels and selected paint-care links. Retained articles and
+// the unchanged polishing page keep their actual preceding release date.
+const queryReleaseChanged = (route: PublicRoute) =>
+  route.family === 'brand-service' ||
+  (route.family === 'brand' && !route.path.startsWith('/ar/')) ||
+  (route.family === 'service' && /^\/(ar\/)?services\//.test(route.path) && !['/services/car-polishing-dubai', ...localGaragePages.map(page => `/services/${page.slug}`), ...localGaragePages.map(page => `/ar/services/${page.slug}`)].includes(route.path));
+
+export const publicRoutes = [...routeMap.values()].map((route) => queryReleaseChanged(route) ? { ...route, lastmod: '2026-09-09' } : (paintCareUpdatedPaths.has(route.path) || mercedesUpdatedPaths.has(route.path)) ? { ...route, lastmod: '2026-09-08' } : route).sort((a, b) =>
   a.path.localeCompare(b.path),
 );
 

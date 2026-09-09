@@ -1,6 +1,9 @@
 import { LocalizedLink as Link } from '@/components/LocalizedLink';
 
 const contexts: Record<string, { introduction: string; filmAnchor: string; next: string; href: string; anchor: string; ending: string }> = {
+  Audi: { introduction: 'Before choosing protection for your Audi, assess the finish and compare ', filmAnchor: 'paint protection film coverage', next: '. For swirls or haze, discuss ', href: '/services/car-polishing-dubai', anchor: 'paint correction', ending: ' before the preparation and protection are agreed.' },
+  Bentley: { introduction: 'The paint history and finish on your Bentley guide the choice of ', filmAnchor: 'physical film protection', next: '. If finish maintenance is the priority, compare ', href: '/services/ceramic-coating', anchor: 'ceramic coating and its care requirements', ending: ' for the surfaces you want treated.' },
+
   'Mercedes-Benz': { introduction: 'For your Mercedes-Benz, assess the finish and any previous paintwork before choosing ', filmAnchor: 'paint protection film', next: '. If wash marks or haze are the concern, start with ', href: '/services/car-polishing-dubai', anchor: 'a paint assessment', ending: ' to discuss which defects may safely improve.' },
   BMW: { introduction: 'For a BMW used regularly, compare the covered panels and care needs of ', filmAnchor: 'PPF coverage options', next: '. If easier washing is your main priority, explore ', href: '/services/ceramic-coating', anchor: 'ceramic coating', ending: ' and confirm the preparation appropriate for the paint.' },
   Porsche: { introduction: 'Original paint, repaired panels and how you use your Porsche all matter when selecting ', filmAnchor: 'film protection for your Porsche', next: '. Existing surface marks may call for ', href: '/services/car-polishing-dubai', anchor: 'polishing or paint correction', ending: ' before the protection plan is agreed.' },

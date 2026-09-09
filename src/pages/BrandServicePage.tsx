@@ -4,6 +4,8 @@ import { LocalizedLink as Link } from '@/components/LocalizedLink';
 import { Phone, MessageCircle, CheckCircle2, ArrowRight, Wrench, ShieldCheck } from 'lucide-react';
 import Header from '@/components/Header';
 import { Footer } from '@/components/Footer';
+import { FinalCTA } from '@/components/FinalCTA';
+import { serviceEnquiryLabel } from '@/data/queryServiceContent';
 import { useSeo } from '@/hooks/use-seo';
 import {
   Accordion,
@@ -35,6 +37,11 @@ import {
 } from '@/data/ferrariModelPages';
 
 const PORSCHE_RELATED_CONTENT: Record<string, { label: string; path: string }[]> = {
+  'steering-repair': [
+    { label: 'Porsche suspension inspection', path: '/brands/porsche-service-dubai/suspension-repair' },
+    { label: 'Porsche Cayenne chassis guide', path: '/blog/porsche-cayenne-service-dubai-guide' },
+    { label: 'Porsche service and repair', path: '/brands/porsche-service-dubai' },
+  ],
   'oil-change': [
     { label: 'Porsche 911 maintenance planning', path: '/blog/porsche-911-service-dubai-guide' },
     { label: 'Porsche Cayenne maintenance planning', path: '/blog/porsche-cayenne-service-dubai-guide' },
@@ -495,6 +502,7 @@ const BrandServicePage: React.FC<BrandServicePageProps> = ({
     description: combo ? combo.metaDescription : isArabic ? 'خدمة متخصصة للسيارات في دبي لدى مركز ديجي-تك.' : 'Specialist brand service in Dubai at Digi-Tec Performance Centre.',
     canonical: combo ? url : `${SITE_URL}/services`,
     noindex: !combo || !brand || !profile,
+    hasArabicVersion: !(combo?.brandSlug === 'rox-service-dubai' && combo.serviceSlug === 'soft-close-door-installation'),
     jsonLd,
   });
 
@@ -503,6 +511,7 @@ const BrandServicePage: React.FC<BrandServicePageProps> = ({
   }
 
   const whatsappHref = `https://wa.me/97143402223?text=${encodeURIComponent(combo.whatsAppMessage)}`;
+  const enquiryLabel = serviceEnquiryLabel(combo.serviceSlug, combo.brandName === 'Mercedes-Benz' ? 'Mercedes' : combo.brandName);
   const otherServices = getServicesForBrand(combo.brandSlug).filter((s) => s.serviceSlug !== combo.serviceSlug);
   const relatedMercedesContent = combo.brandSlug === 'mercedes-benz-service-dubai'
     ? MERCEDES_RELATED_CONTENT[combo.serviceSlug] ?? []
@@ -576,11 +585,14 @@ const BrandServicePage: React.FC<BrandServicePageProps> = ({
               </span>
             </div>
             <h1 className="mb-5 max-w-4xl text-[clamp(2.65rem,5vw,5.1rem)] font-semibold leading-[0.98] tracking-[-0.05em]">
-            {combo.brandSlug === 'mercedes-benz-service-dubai' && !isArabic ? combo.h1 : isArabic ? <><span className="text-white/62">{combo.serviceName}</span> {combo.brandName} في دبي</> : combo.brandSlug === 'rox-service-dubai' && combo.serviceSlug === 'soft-close-door-installation' ? <>ROX 01 <span className="text-white/62">Soft Close Installation Dubai</span></> : combo.brandSlug === 'aston-martin-service-dubai' || combo.brandSlug === 'mclaren-service-dubai' || combo.brandSlug === 'lamborghini-service-dubai' || combo.brandSlug === 'rolls-royce-service-dubai' ? <>{combo.h1}</> : <>{combo.brandName} <span className="text-white/62">{combo.serviceName}</span> Dubai</>}
+            {combo.h1}
             </h1>
             <p className="mb-8 max-w-2xl text-base leading-8 text-white/58 sm:text-lg">
               {combo.heroCopy}
             </p>
+            {!isArabic && combo.serviceSlug === 'body-repair' && <p className="mb-7 max-w-2xl text-base leading-8 text-white/65">
+              For shallow finish marks, start with <Link to="/services/car-polishing-dubai" className="text-burnt-orange underline">polishing and paint correction assessment</Link>. After any necessary repair, compare <Link to="/services/paint-protection-film" className="text-burnt-orange underline">paint protection film</Link> and <Link to="/services/ceramic-coating" className="text-burnt-orange underline">ceramic coating</Link>; paint condition and product requirements determine suitable timing.
+            </p>}
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
               <a
                 href={whatsappHref}
@@ -589,7 +601,7 @@ const BrandServicePage: React.FC<BrandServicePageProps> = ({
                 className="btn-primary"
               >
                 <MessageCircle className="w-5 h-5" />
-                {isArabic ? 'راسلنا عبر واتساب' : 'WhatsApp Us'}
+                {isArabic ? 'راسلنا عبر واتساب' : enquiryLabel}
               </a>
               <a href="tel:+97143402223" className="btn-secondary">
                 <Phone className="w-5 h-5" />
@@ -629,7 +641,7 @@ const BrandServicePage: React.FC<BrandServicePageProps> = ({
       <section className="py-12 sm:py-16 bg-gradient-to-br from-charcoal/40 to-black">
         <div className="max-w-5xl mx-auto px-4 sm:px-6">
           <h2 className="text-2xl sm:text-4xl font-black mb-3">
-            {isArabic ? <>طرازات {combo.brandName} التي نوفر لها <span className="text-burnt-orange">{combo.serviceName}</span></> : combo.brandSlug === 'mercedes-benz-service-dubai' ? <>Mercedes models and fitted systems</> : combo.brandSlug === 'mclaren-service-dubai' ? <>McLaren models for <span className="text-burnt-orange">{combo.serviceName}</span></> : combo.brandSlug === 'lamborghini-service-dubai' ? <>Models covered by this <span className="text-burnt-orange">Lamborghini service</span></> : combo.brandSlug === 'rolls-royce-service-dubai' ? <>Rolls-Royce models for <span className="text-burnt-orange">{combo.serviceName}</span></> : combo.brandSlug === 'aston-martin-service-dubai' ? <>Aston Martin models and fitted systems</> : <>{combo.brandName} Models We <span className="text-burnt-orange">{combo.serviceName}</span></>}
+            {isArabic ? <>طرازات {combo.brandName} والأنظمة المركبة</> : <>{combo.brandName} models and fitted systems</>}
           </h2>
           <p className="text-gray-400 text-sm sm:text-base mb-6 sm:mb-8">
             {isArabic ? `يتم تأكيد نطاق الخدمة حسب طراز ${combo.brandName} والنظام المركب قبل الحجز.` : `Workshop scope, compatible functions and parts are confirmed for the exact ${combo.brandName} model before booking.`}
@@ -674,6 +686,11 @@ const BrandServicePage: React.FC<BrandServicePageProps> = ({
                 {isArabic ? <>خيارات قطع <span className="text-burnt-orange">{combo.brandName}</span> موثقة</> : <><span className="text-burnt-orange">{combo.brandName}</span> Parts Options, Documented</>}
               </h2>
               <p className="text-gray-300 text-sm sm:text-base leading-relaxed">{combo.partsCopy}</p>
+              {!isArabic && ['mercedes-benz-service-dubai', 'bmw-service-dubai', 'porsche-service-dubai', 'aston-martin-service-dubai', 'mclaren-service-dubai'].includes(combo.brandSlug) && (
+                <a href={whatsappHref} target="_blank" rel="noopener noreferrer" className="mt-6 inline-flex items-center gap-2 text-base font-semibold text-burnt-orange hover:underline">
+                  {enquiryLabel}<ArrowRight className="h-4 w-4 shrink-0" />
+                </a>
+              )}
             </div>
           </div>
         </div>
@@ -756,6 +773,12 @@ const BrandServicePage: React.FC<BrandServicePageProps> = ({
         </div>
       </section>
 
+      <FinalCTA
+        title={`${combo.brandName} ${combo.serviceName}: discuss the next step`}
+        description="Share the model, year, mileage and the concern you want checked. The workshop can confirm the appropriate assessment, scope and appointment availability."
+        label={enquiryLabel}
+        href={whatsappHref}
+      />
       <Footer />
     </div>
   );

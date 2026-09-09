@@ -6,7 +6,7 @@ import workshopServiceFloor from '@/assets/digitec-workshop-service-floor.jpg';
 export const BmwBookingActions = () => (
   <div className="flex flex-col flex-wrap gap-3 sm:flex-row">
     <a href={BMW_WHATSAPP_HREF} target="_blank" rel="noopener noreferrer" className="btn-primary">
-      <MessageCircle className="h-5 w-5 shrink-0" /> Book a BMW inspection on WhatsApp
+      <MessageCircle className="h-5 w-5 shrink-0" /> Request BMW Service
     </a>
     <a href="tel:+97143402223" className="btn-secondary">
       <Phone className="h-5 w-5 shrink-0" /> Call the Al Quoz workshop

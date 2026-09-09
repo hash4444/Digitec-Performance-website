@@ -157,6 +157,8 @@ const ServicePage: React.FC<ServicePageProps> = ({ slugOverride, canonicalPath, 
   }
 
   const isMercedes = service.slug.startsWith('mercedes-');
+  const enquiryLabel = isArabic ? 'ناقش الخدمة عبر واتساب' : service.ctaLabel;
+  const enquiryHref = `https://wa.me/97143402223?text=${encodeURIComponent(isArabic ? `مرحباً ديجي-تك، أود مناقشة ${service.title}.` : `Hi DIGI-TEC, I would like to discuss ${service.title}. Model/year: Mileage: Concern: Preferred appointment:`)}`;
   const related = allServices
     .filter((s) => s.category === sourceService?.category && s.slug !== service.slug)
     .filter((s) => (isMercedes ? s.slug.startsWith('mercedes-') : !s.slug.startsWith('mercedes-')))
@@ -197,6 +199,10 @@ const ServicePage: React.FC<ServicePageProps> = ({ slugOverride, canonicalPath, 
           <p className="max-w-2xl text-base leading-7 text-white/64 sm:text-lg">
             {service.description}
           </p>
+          {service.ctaLabel && <div className="mt-7 flex flex-col flex-wrap gap-3 sm:flex-row">
+            <a href={enquiryHref} target="_blank" rel="noopener noreferrer" className="btn-primary"><MessageCircle className="h-5 w-5 shrink-0" />{enquiryLabel}</a>
+            <a href="tel:+97143402223" className="btn-secondary"><Phone className="h-5 w-5 shrink-0" />{isArabic ? 'اتصل بالورشة' : 'Call the Al Quoz workshop'}</a>
+          </div>}
         </div>
       </section>
 
@@ -210,6 +216,9 @@ const ServicePage: React.FC<ServicePageProps> = ({ slugOverride, canonicalPath, 
               <div id={service.slug === 'paint-protection-dubai' ? 'paint-correction' : undefined}>
                 <h2 className="text-2xl sm:text-3xl font-bold mb-5">{isArabic ? 'نظرة عامة' : 'Overview'}</h2>
                 <p className="text-gray-300 leading-relaxed text-lg">{service.intro}</p>
+                {!isArabic && service.relatedServiceLinks && <nav className="mt-5 flex flex-wrap gap-x-6 gap-y-3" aria-label="Related inspection and service options">
+                  {service.relatedServiceLinks.map(link => <Link key={link.path} to={link.path} className="text-base text-burnt-orange underline">{link.label}</Link>)}
+                </nav>}
                 {!isArabic && service.slug === 'paint-protection-dubai' && (
                   <p className="mt-5 text-gray-300 leading-relaxed text-lg"><Link to="/services/car-polishing-dubai" className="text-burnt-orange underline">Car polishing and paint correction</Link> address existing surface defects before protection is selected. For a physical barrier against road debris, explore <Link to="/services/paint-protection-film" className="text-burnt-orange underline">PPF coverage and installation in Dubai</Link>. For water behaviour and finish maintenance, see our <Link to="/services/ceramic-coating" className="text-burnt-orange underline">ceramic coating service</Link>. Preparation and product compatibility are assessed for your car.</p>
                 )}
@@ -272,6 +281,11 @@ const ServicePage: React.FC<ServicePageProps> = ({ slugOverride, canonicalPath, 
               </div>
 
               {/* Extra Sections (optional) */}
+              {!isArabic && service.quoteGuidance && <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-6 sm:p-8">
+                <h2 className="mb-4 text-2xl font-bold">Discuss the inspection and quote</h2>
+                <p className="mb-6 text-base leading-8 text-gray-300">{service.quoteGuidance}</p>
+                <a href={enquiryHref} target="_blank" rel="noopener noreferrer" className="btn-primary"><MessageCircle className="h-5 w-5 shrink-0" />{enquiryLabel}</a>
+              </div>}
               {service.extraSections?.map((section, i) => (
                 <div key={i}>
                   <h2 className="text-2xl sm:text-3xl font-bold mb-5">{section.heading}</h2>
@@ -555,7 +569,7 @@ const ServicePage: React.FC<ServicePageProps> = ({ slugOverride, canonicalPath, 
         </div>
       </section>
 
-      <FinalCTA />
+      <FinalCTA title={service.ctaLabel ? service.title : undefined} label={enquiryLabel} href={enquiryHref} />
       <Footer />
     </div>
   );

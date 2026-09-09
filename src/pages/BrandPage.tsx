@@ -651,7 +651,7 @@ const BrandPage = () => {
                   className="btn-primary"
                 >
                   <MessageCircle className="w-5 h-5" />
-                  {isArabic ? 'راسلنا عبر واتساب' : isEnglishAstonHub ? 'Request an Aston Martin Service Quote' : isEnglishBmwHub ? 'Book a BMW inspection on WhatsApp' : isEnglishAudiHub ? 'Book an Audi inspection on WhatsApp' : isEnglishBentleyHub ? 'Book a Bentley inspection on WhatsApp' : isEnglishRoxHub ? 'Book a ROX 01 inspection on WhatsApp' : isFerrari ? 'Request a Ferrari inspection' : isEnglishMclarenHub ? 'Request a McLaren Assessment' : isEnglishLamborghiniHub ? 'Request a Lamborghini Assessment' : isEnglishRollsRoyceHub ? 'Request a Rolls-Royce Service Quote' : isPriorityLeadBrand ? `Request a ${brand.name} Inspection` : 'WhatsApp Us'}
+                  {isArabic ? 'راسلنا عبر واتساب' : isEnglishAstonHub ? 'Request an Aston Martin Service Quote' : isEnglishBmwHub ? 'Request BMW Service' : isEnglishAudiHub ? 'Book an Audi inspection on WhatsApp' : isEnglishBentleyHub ? 'Book a Bentley inspection on WhatsApp' : isEnglishRoxHub ? 'Book a ROX 01 inspection on WhatsApp' : isFerrari ? 'Request a Ferrari inspection' : isEnglishMclarenHub ? 'Request McLaren Service' : isEnglishLamborghiniHub ? 'Request a Lamborghini Assessment' : isEnglishRollsRoyceHub ? 'Request a Rolls-Royce Service Quote' : isMercedesServiceHub ? 'Book Mercedes Service' : isPriorityLeadBrand ? `Request a ${brand.name} Inspection` : `Request ${brand.name} Service`}
                 </a>
                 <a href="tel:+97143402223" className="btn-secondary">
                   <Phone className="w-5 h-5" />
@@ -1347,7 +1347,7 @@ const BrandPage = () => {
                   className="inline-flex items-center justify-center gap-2 bg-burnt-orange hover:bg-burnt-orange/90 text-black font-bold px-6 py-3 rounded-2xl transition-all duration-300 hover:scale-105 shadow-xl"
                 >
                   <MessageCircle className="w-5 h-5" />
-                  {isArabic ? 'واتساب الآن' : 'WhatsApp Now'}
+                  {isArabic ? 'واتساب الآن' : isMercedesServiceHub ? 'Book Mercedes Service' : `Request ${brand.name} Service`}
                 </a>
                 <a
                   href="tel:+97143402223"
