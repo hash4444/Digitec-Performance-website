@@ -194,9 +194,9 @@ export const services: ServiceData[] = [
   },
   {
     slug: 'transmission-repair-dubai',
-    metaTitle: 'Transmission Repair Dubai | DCT, Automatic & Manual Gearboxes',
-    metaDescription: 'Transmission inspection and repair in Dubai for supported automatic, manual, DCT and CVT systems. Gearbox coverage is confirmed before booking.',
-    title: 'Transmission Repair in Dubai',
+    metaTitle: 'Transmission Repair Dubai | Gearbox Specialists | DIGI-TEC',
+    metaDescription: 'Transmission and gearbox repair in Dubai for automatic, DCT, DSG, CVT and manual systems. Diagnostics, fluid service and repair at DIGI-TEC Al Quoz.',
+    title: 'Transmission Repair & Gearbox Repair in Dubai',
     description: 'Gearbox inspection and transmission repair for supported vehicles in Dubai.',
     image: '/lovable-uploads/b56133bf-55e4-4bc9-884f-15f732132259.png',
     category: 'Core Mechanical Services',
