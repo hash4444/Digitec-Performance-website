@@ -6,8 +6,10 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route, useLocation, Navigate } from "react-router-dom";
 import { lazy, Suspense, useEffect } from "react";
 import Index from "./pages/Index";
-// Keep this small, scoped stylesheet in initial HTML for ceramic prerendering.
+// Keep dedicated-page styles in the initial HTML for prerendered content.
 import "./styles/ceramic-coating.css";
+import "./styles/oil-change.css";
+const OilChangePage = lazy(() => import("./pages/OilChangePage"));
 const Tuning = lazy(() => import("./pages/Tuning"));
 const VRX = lazy(() => import("./pages/VRX"));
 const Services = lazy(() => import("./pages/Services"));
@@ -201,6 +203,7 @@ export const AppContent = () => (
           <Route path="/services/paint-protection-film" element={<PpfPage />} />
           <Route path="/services/ceramic-coating" element={<CeramicCoatingPage />} />
           <Route path="/services/car-polishing-dubai" element={<PaintCorrectionPage />} />
+          <Route path="/services/oil-change-dubai" element={<OilChangePage />} />
           <Route path="/services/:slug" element={<ServicePage />} />
           <Route path="/about" element={<AboutUs />} />
           <Route path="/faq" element={<FAQPage />} />

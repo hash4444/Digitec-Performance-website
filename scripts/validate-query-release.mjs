@@ -12,7 +12,7 @@ const expected = new Map([
   ['/brands/bmw-service-dubai', 'BMW Service &amp; Repair Dubai | DIGI-TEC'],
   ['/brands/bmw-service-dubai/engine-diagnostics', 'BMW Diagnostics &amp; Coding Dubai | DIGI-TEC'],
   ['/brands/porsche-service-dubai/engine-diagnostics', 'Porsche Diagnostics Dubai | DIGI-TEC Al Quoz'],
-  ['/services/oil-change-dubai', 'Car Oil Change Dubai | Oil &amp; Filter Service | DIGI-TEC'],
+  ['/services/oil-change-dubai', 'Car Oil Change Dubai | Engine Oil &amp; Filter Service | DIGI-TEC'],
   ['/services/exhaust-repair-dubai', 'Exhaust &amp; Muffler Repair Dubai | DIGI-TEC'],
   ['/services/steering-repair-dubai', 'Power Steering &amp; Rack Repair Dubai | DIGI-TEC'],
 ]);

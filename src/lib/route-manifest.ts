@@ -181,7 +181,13 @@ const queryReleaseChanged = (route: PublicRoute) =>
   (route.family === 'brand' && !route.path.startsWith('/ar/')) ||
   (route.family === 'service' && /^\/(ar\/)?services\//.test(route.path) && !['/services/car-polishing-dubai', ...localGaragePages.map(page => `/services/${page.slug}`), ...localGaragePages.map(page => `/ar/services/${page.slug}`)].includes(route.path));
 
-export const publicRoutes = [...routeMap.values()].map((route) => queryReleaseChanged(route) ? { ...route, lastmod: '2026-09-09' } : (paintCareUpdatedPaths.has(route.path) || mercedesUpdatedPaths.has(route.path)) ? { ...route, lastmod: '2026-09-08' } : route).sort((a, b) =>
+// Dedicated English oil page and the eight oil pages with a contextual return link.
+const oilChangeUpdatedPaths = new Set([
+  '/services/oil-change-dubai', '/services/mercedes-oil-change-dubai',
+  ...['bmw', 'porsche', 'lamborghini', 'ferrari', 'mclaren', 'rolls-royce', 'bentley'].map(brand => `/brands/${brand}-service-dubai/oil-change`),
+]);
+
+export const publicRoutes = [...routeMap.values()].map((route) => oilChangeUpdatedPaths.has(route.path) ? { ...route, lastmod: '2026-09-10' } : queryReleaseChanged(route) ? { ...route, lastmod: '2026-09-09' } : (paintCareUpdatedPaths.has(route.path) || mercedesUpdatedPaths.has(route.path)) ? { ...route, lastmod: '2026-09-08' } : route).sort((a, b) =>
   a.path.localeCompare(b.path),
 );
 
