@@ -9,7 +9,9 @@ import Index from "./pages/Index";
 // Keep dedicated-page styles in the initial HTML for prerendered content.
 import "./styles/ceramic-coating.css";
 import "./styles/oil-change.css";
+import "./styles/suspension.css";
 const OilChangePage = lazy(() => import("./pages/OilChangePage"));
+const SuspensionRepairPage = lazy(() => import("./pages/SuspensionRepairPage"));
 const Tuning = lazy(() => import("./pages/Tuning"));
 const VRX = lazy(() => import("./pages/VRX"));
 const Services = lazy(() => import("./pages/Services"));
@@ -204,6 +206,7 @@ export const AppContent = () => (
           <Route path="/services/ceramic-coating" element={<CeramicCoatingPage />} />
           <Route path="/services/car-polishing-dubai" element={<PaintCorrectionPage />} />
           <Route path="/services/oil-change-dubai" element={<OilChangePage />} />
+          <Route path="/services/suspension-repair-dubai" element={<SuspensionRepairPage />} />
           <Route path="/services/:slug" element={<ServicePage />} />
           <Route path="/about" element={<AboutUs />} />
           <Route path="/faq" element={<FAQPage />} />

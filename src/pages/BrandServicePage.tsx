@@ -642,6 +642,10 @@ const BrandServicePage: React.FC<BrandServicePageProps> = ({
         <div className="border-t border-white/10 bg-charcoal/20 py-6"><p className="mx-auto max-w-5xl px-4 text-base leading-8 text-gray-300 sm:px-6">For general scope, quote factors and the difference from a full service, see our <Link to="/services/oil-change-dubai" className="text-burnt-orange underline underline-offset-4">car oil and filter change in Dubai</Link> guide. The oil specification and procedure for your {combo.brandName} remain specific to its engine.</p></div>
       )}
 
+      {!isArabic && combo.serviceSlug === 'suspension-repair' && ['mercedes-benz-service-dubai', 'bmw-service-dubai', 'porsche-service-dubai', 'audi-service-dubai', 'range-rover-service-dubai', 'bentley-service-dubai'].includes(combo.brandSlug) && (
+        <div className="border-t border-white/10 bg-charcoal/20 py-6"><p className="mx-auto max-w-5xl px-4 text-base leading-8 text-gray-300 sm:px-6">For help describing noises, ride-height changes or warnings, see our <Link to="/services/suspension-repair-dubai" className="text-burnt-orange underline underline-offset-4">car suspension inspection and repair in Dubai</Link> guide. Your {combo.brandName}’s fitted system determines the relevant diagnostic and repair procedure.</p></div>
+      )}
+
       {/* Models */}
       <section className="py-12 sm:py-16 bg-gradient-to-br from-charcoal/40 to-black">
         <div className="max-w-5xl mx-auto px-4 sm:px-6">

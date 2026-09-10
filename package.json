@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build && vite build --ssr src/entry-server.tsx --outDir dist-server && node scripts/prerender.mjs && node scripts/generate-hosting-rules.mjs && node scripts/test-hosting-rules.mjs && node scripts/validate-seo.mjs && node scripts/validate-ppf.mjs && node scripts/validate-paint-correction.mjs && node scripts/validate-protection-release.mjs && node scripts/validate-query-release.mjs && node scripts/test-contact-attribution.mjs && node scripts/validate-oil-change.mjs",
+    "build": "vite build && vite build --ssr src/entry-server.tsx --outDir dist-server && node scripts/prerender.mjs && node scripts/generate-hosting-rules.mjs && node scripts/test-hosting-rules.mjs && node scripts/validate-seo.mjs && node scripts/validate-ppf.mjs && node scripts/validate-paint-correction.mjs && node scripts/validate-protection-release.mjs && node scripts/validate-query-release.mjs && node scripts/test-contact-attribution.mjs && node scripts/validate-oil-change.mjs && node scripts/validate-suspension.mjs",
     "build:release:local": "node scripts/build-production-local.mjs",
     "preview:release": "node scripts/preview-production-local.mjs",
     "build:dev": "vite build --mode development",
