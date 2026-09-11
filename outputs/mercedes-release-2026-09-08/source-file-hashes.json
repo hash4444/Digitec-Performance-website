@@ -1,0 +1,183 @@
+{
+  "base": "704245d7ebfb561c9ad29d6001fa76c6d8564c11",
+  "commit": "622176a65a48cd1e680fa2b289d79ac7cd905f65",
+  "sourceFileCount": 34,
+  "hashConvention": "Git blob bytes (LF); compare normalized source when checking a CRLF working copy",
+  "patch": {
+    "name": "Mercedes-reviewed-release.patch",
+    "bytes": 368490,
+    "sha256": "3a6575fd012201b9fab036eb3648a7f07d33334ad8c7e87ec5fa3dcc840677ff"
+  },
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 2369,
+      "sha256": "aa826d7c2bb82034bda68e269103b0ca3b775ee67dd6a8584167afc9d9abd79f"
+    },
+    {
+      "path": "cloudflare/mercedes-seo-router.js",
+      "bytes": 12154,
+      "sha256": "2f1867d33b31cb03cd2e65c728268ab0ca74ad56e8058518311c7a01dbec0329"
+    },
+    {
+      "path": "docs/seo/mercedes-permanent-redirects.csv",
+      "bytes": 98253,
+      "sha256": "8a7386b768ed2a6afb65156fd72b1ae0c45736b2427fb7d4a5326bbcccb95275"
+    },
+    {
+      "path": "docs/seo/mercedes-release-deployment.md",
+      "bytes": 5211,
+      "sha256": "f705a76f48609b30d437e572f9391116cc578a5d887522605c91fa903e9141dc"
+    },
+    {
+      "path": "docs/seo/protection-release-validation.json",
+      "bytes": 1614,
+      "sha256": "802f082675912248b884dbe26a6983c123a1cf4100d7068521a5bfce54fb9366"
+    },
+    {
+      "path": "docs/seo/route-schema-matrix.csv",
+      "bytes": 928804,
+      "sha256": "e28f5a28f982a739cdf6cca91ef66c2f4cfa7edc4613632ed5081d1c82e5f0e0"
+    },
+    {
+      "path": "docs/seo/schema-inventory.md",
+      "bytes": 1194,
+      "sha256": "6a268e71ccfd7db7cc9763063fb6d654c0658121ffda946ce1d69db36f3f7396"
+    },
+    {
+      "path": "public/sitemap.xml",
+      "bytes": 148790,
+      "sha256": "0065342e36dc3ce4cb9105dbb10030c297cd7501ba03bf7e92a507a00efba824"
+    },
+    {
+      "path": "scripts/generate-hosting-rules.mjs",
+      "bytes": 12587,
+      "sha256": "3c596182528acd7c038783bc21582fa719cd663bfa83e656f84db18438f9b368"
+    },
+    {
+      "path": "scripts/test-hosting-rules.mjs",
+      "bytes": 6217,
+      "sha256": "87053bd3319019ea1a0be7d2f7422721b97fb58d4ca03c8dcc404882975ad87a"
+    },
+    {
+      "path": "scripts/validate-seo.mjs",
+      "bytes": 16818,
+      "sha256": "359c8c8b8f4129c49a6511c5e57903aae1f8f1ed696119b4a74040c606d56a32"
+    },
+    {
+      "path": "src/App.tsx",
+      "bytes": 29720,
+      "sha256": "47fd1d8349b4b19d6ebb81433ba095edabb7f66a918b255365106e230decfe97"
+    },
+    {
+      "path": "src/components/Header.tsx",
+      "bytes": 12166,
+      "sha256": "d59c52ac5a8eb625db5f9a5a359ae19cede80efe0298a0c30b7d73d59e611ab6"
+    },
+    {
+      "path": "src/components/LegacyRedirectHandler.tsx",
+      "bytes": 3558,
+      "sha256": "d215804957a3675ac82c00bfa4b308e5d1be65461c67d34869f4e23c4e100e90"
+    },
+    {
+      "path": "src/components/MercedesMaintenanceScope.tsx",
+      "bytes": 5541,
+      "sha256": "0b3edb554aa5e24ce913ef40462b6b0d57d7bc44ec1e308f21610b198bf46440"
+    },
+    {
+      "path": "src/components/PreserveQueryNavigate.tsx",
+      "bytes": 355,
+      "sha256": "50f197fec8b19d6423c3b9b20a6e5bbd78eb300a74ee4a018b65bb181cde5005"
+    },
+    {
+      "path": "src/data/aiGuidePosts.ts",
+      "bytes": 36399,
+      "sha256": "892ac849961c27eeaf5b51ad80cdd3226b3406e56a53daab3fe37f3ca0e881c9"
+    },
+    {
+      "path": "src/data/blogPosts.ts",
+      "bytes": 104208,
+      "sha256": "3a6aaee7a9db016bc4096d5768049c8312ee145f0d7e717a45374975b6cc8570"
+    },
+    {
+      "path": "src/data/brandServices.ts",
+      "bytes": 92990,
+      "sha256": "e7da39d19b926423ba2473647239169409ed404901306f4e752f841ea3ac879c"
+    },
+    {
+      "path": "src/data/brandWorkshopArticles.ts",
+      "bytes": 31171,
+      "sha256": "eb90b7cabaf5c3147bd33cc647abb9e70119dfc13dab4676d17e83289f3a51d8"
+    },
+    {
+      "path": "src/data/mercedesModelPages.ts",
+      "bytes": 80092,
+      "sha256": "09b9ff053389f14478f616b766687be9299bf0a25a2125b7d574ac9f9d91b69f"
+    },
+    {
+      "path": "src/data/mercedesServiceContent.ts",
+      "bytes": 34409,
+      "sha256": "cbe252526538635561aa92bee898e0692569dfc0a8997ab2c347fd3448199efe"
+    },
+    {
+      "path": "src/i18n/ar-brands.ts",
+      "bytes": 7998,
+      "sha256": "dc81ee64852494d555e91be1865cd1eb8168f19ff31fb16f70060b40f8a83c93"
+    },
+    {
+      "path": "src/i18n/locale.ts",
+      "bytes": 1346,
+      "sha256": "644cae3e465319925fe32f8dc535a95d0b5efc78223520a637799a4b649865f5"
+    },
+    {
+      "path": "src/i18n/mercedes-language.ts",
+      "bytes": 638,
+      "sha256": "ea1e5c82047e07d553606356cd796bc442c874f8ac1f78822281683f322bdbaa"
+    },
+    {
+      "path": "src/lib/route-manifest.ts",
+      "bytes": 10232,
+      "sha256": "e0c6412beea8879cdfc356c4ffba161ad50a76b7a096bc82714ecf082eb5f135"
+    },
+    {
+      "path": "src/lib/route-policy.ts",
+      "bytes": 1372,
+      "sha256": "12b36a414188cb83b49c00c855fa01137ee466d06cf990557cb6c2e0e80526a0"
+    },
+    {
+      "path": "src/main.tsx",
+      "bytes": 1133,
+      "sha256": "a96a6032cd45ade44409ce5a665cf7dc269deed17beb8a67945b29646ccfb444"
+    },
+    {
+      "path": "src/pages/BlogPost.tsx",
+      "bytes": 18092,
+      "sha256": "200567e272df0f78fae49ef0983aba29c723321b25c645c4ee43239fc4a14e87"
+    },
+    {
+      "path": "src/pages/BrandPage.tsx",
+      "bytes": 114935,
+      "sha256": "e31388531df15716eac0eeb8a803e3149ac699c9d64fc393bd684feff0df34bc"
+    },
+    {
+      "path": "src/pages/BrandServicePage.tsx",
+      "bytes": 89230,
+      "sha256": "b2319d5207a4f1c6eecdb5ef9229d6325c72476186d97d9e2122f94a2f115350"
+    },
+    {
+      "path": "src/pages/BrandWorkshopArticlePage.tsx",
+      "bytes": 78160,
+      "sha256": "63f12b46981fc25190ce2fbd25d00f19f2c0e8fc64b315883156bab011361a04"
+    },
+    {
+      "path": "src/pages/MercedesModelPage.tsx",
+      "bytes": 17571,
+      "sha256": "48a69281f4ff0968ce08d2f55f98cb9656a1f08ec1cdf5dae1ce3b1e4b653722"
+    },
+    {
+      "path": "src/pages/Tuning.tsx",
+      "bytes": 15479,
+      "sha256": "cf96627259b196bb521cdccd91b58ef0b1c1bd1efd80bec469c47bf884816641"
+    }
+  ]
+}

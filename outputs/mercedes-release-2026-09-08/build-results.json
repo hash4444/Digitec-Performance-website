@@ -1,0 +1,64 @@
+{
+  "startedAt": "2026-09-08T14:47:17.298Z",
+  "outputDirectory": "dist",
+  "sourceManifest": "release-qa.local/source-manifest.json",
+  "sourceSha256": "8a0fd23cd6100b4852a521595bd7dfc0fd30e95aeea29f50f77ad2cc95472700",
+  "steps": [
+    {
+      "command": "vite build",
+      "exitCode": 0,
+      "seconds": 5.39,
+      "log": "release-qa.local/build-1.log"
+    },
+    {
+      "command": "vite build --ssr src/entry-server.tsx --outDir dist-server",
+      "exitCode": 0,
+      "seconds": 1.586,
+      "log": "release-qa.local/build-2.log"
+    },
+    {
+      "command": "node scripts/prerender.mjs",
+      "exitCode": 0,
+      "seconds": 5.235,
+      "log": "release-qa.local/build-3.log"
+    },
+    {
+      "command": "node scripts/generate-hosting-rules.mjs",
+      "exitCode": 0,
+      "seconds": 0.256,
+      "log": "release-qa.local/build-4.log"
+    },
+    {
+      "command": "node scripts/test-hosting-rules.mjs",
+      "exitCode": 0,
+      "seconds": 0.104,
+      "log": "release-qa.local/build-5.log"
+    },
+    {
+      "command": "node scripts/validate-seo.mjs",
+      "exitCode": 0,
+      "seconds": 1.125,
+      "log": "release-qa.local/build-6.log"
+    },
+    {
+      "command": "node scripts/validate-ppf.mjs",
+      "exitCode": 0,
+      "seconds": 0.519,
+      "log": "release-qa.local/build-7.log"
+    },
+    {
+      "command": "node scripts/validate-paint-correction.mjs",
+      "exitCode": 0,
+      "seconds": 0.264,
+      "log": "release-qa.local/build-8.log"
+    },
+    {
+      "command": "node scripts/validate-protection-release.mjs",
+      "exitCode": 0,
+      "seconds": 0.295,
+      "log": "release-qa.local/build-9.log"
+    }
+  ],
+  "passed": true,
+  "finishedAt": "2026-09-08T14:47:32.191Z"
+}

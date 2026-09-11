@@ -1,0 +1,28 @@
+{
+  "date": "2026-09-08",
+  "environment": "Local Vite development and built production preview; not public deployment",
+  "productionPreview": "http://127.0.0.1:4173",
+  "finalSourceCommit": "622176a65a48cd1e680fa2b289d79ac7cd905f65",
+  "method": "Actual Codex browser navigation, rendered screenshots, DOM inspection and browser error logs",
+  "viewports": [{"width":1440,"height":1000},{"width":390,"height":844}],
+  "checks": [
+    {"page":"/brands/mercedes-benz-service-dubai","checks":"Desktop and mobile layout, no horizontal overflow, maintenance anchor scroll and oil-service link","result":"passed"},
+    {"page":"/services/mercedes-oil-change-dubai","checks":"Mobile layout, planned title/H1, phone and WhatsApp hrefs, service A/B FAQ expansion","result":"passed"},
+    {"page":"/services/mercedes-diagnostics-dubai","checks":"Desktop layout, planned title/H1, no horizontal overflow","result":"passed"},
+    {"page":"/blog/mercedes-c-class-service-dubai-guide","checks":"Desktop and mobile layout, title/H1/canonical, explicit Arabic hub language destination","result":"passed"},
+    {"page":"/ar/brands/mercedes-benz-service-dubai","checks":"RTL mobile layout, natural title/H1, reciprocal English/Arabic alternates, LTR telephone text, Arabic sticky booking labels","result":"passed"},
+    {"page":"/services/mercedes-repair-dubai/?utm_source=final-check&gclid=abc&msclkid=xyz&fbclid=123","checks":"Built-preview client fallback reaches hub with all four parameters preserved; fresh browser tab has no error logs","result":"passed"}
+  ],
+  "regressionsFoundAndFixed": [
+    "Maintenance fragment navigation initially did not scroll; added location-hash handling and verified target offset.",
+    "Arabic phone number needed LTR isolation and mobile booking controls needed Arabic labels; corrected and verified in final built preview.",
+    "Homepage HTML returned for a legacy Mercedes path caused React hydration error #422; scoped fallback rendering fixed and fresh built-preview tab had zero errors through hub, oil, C-Class and Arabic navigation."
+  ],
+  "finalBuiltBrowserErrors": [],
+  "noEnquirySubmitted": true,
+  "limitations": [
+    "Browser fallback does not constitute an HTTP permanent redirect. Public response results are recorded separately in production-final.json.",
+    "No call or WhatsApp enquiry was sent. Booking targets were inspected and navigation tested without submitting personal data.",
+    "Representative visual checks complement the generated HTML checks across all 37 affected existing pages."
+  ]
+}

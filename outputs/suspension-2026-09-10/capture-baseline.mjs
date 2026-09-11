@@ -1,0 +1,21 @@
+import {readFile,writeFile} from 'node:fs/promises';
+const dir='outputs/suspension-2026-09-10';
+const target='/services/suspension-repair-dubai';
+const source=JSON.parse(await readFile('outputs/search-query-2026-09-09/source.json','utf8'));
+const summary=JSON.parse(await readFile('outputs/search-query-2026-09-09/summary.json','utf8'));
+const queries=JSON.parse(await readFile('outputs/search-query-2026-09-09/query-map.json','utf8')).filter(q=>q.owner===`https://digitecme.com${target}`);
+const row=source.Pages.find(r=>r[0]===`https://digitecme.com${target}`);
+const impressions=queries.reduce((s,q)=>s+q.impressions,0),clicks=queries.reduce((s,q)=>s+q.clicks,0);
+const baseline={dateRange:summary.dates,url:{url:row[0],clicks:row[1],impressions:row[2],exportedCtr:row[3],calculatedCtr:row[1]/row[2],position:row[4]},assignedCluster:{rows:queries.length,clicks,impressions,ctr:clicks/impressions,impressionWeightedPosition:queries.reduce((s,q)=>s+q.position*q.impressions,0)/impressions},queryCaveat:'Property-level queries assigned to an intent owner, not URL-filtered query pairs.',queries};
+await writeFile(`${dir}/search-console-baseline.json`,JSON.stringify(baseline,null,2));
+const plain=s=>s.replace(/<[^>]+>/g,' ').replaceAll('&amp;','&').replaceAll('&#x27;',"'").replace(/\s+/g,' ').trim();
+const snapshot=h=>({title:plain(h.match(/<title>(.*?)<\/title>/s)?.[1]||''),description:plain(h.match(/<meta name="description" content="([^"]*)"/)?.[1]||''),h1:[...h.matchAll(/<h1\b[^>]*>(.*?)<\/h1>/gs)].map(m=>plain(m[1])),h2:[...h.matchAll(/<h2\b[^>]*>(.*?)<\/h2>/gs)].map(m=>plain(m[1]))});
+const paths=[target,`/ar${target}`,'/services/steering-repair-dubai','/services/oil-change-dubai','/brands/bmw-service-dubai/suspension-repair','/services/car-service-dubai'];
+const before={};
+for(const route of paths){const h=await readFile(`dist${route}/index.html`,'utf8');const file=`${route.slice(1).replaceAll('/','__')}.before.html`;await writeFile(`${dir}/${file}`,h);before[route]={...snapshot(h),file};}
+await writeFile(`${dir}/before-local.json`,JSON.stringify(before,null,2));
+const response=await fetch(`https://digitecme.com${target}`,{headers:{'cache-control':'no-cache'},signal:AbortSignal.timeout(30000)});
+const live=await response.text();
+await writeFile(`${dir}/before-live.html`,live);
+await writeFile(`${dir}/before-live.json`,JSON.stringify({checkedAt:new Date().toISOString(),status:response.status,...snapshot(live)},null,2));
+console.log(JSON.stringify({baseline:baseline.url,cluster:baseline.assignedCluster,live:{status:response.status,...snapshot(live)}}));

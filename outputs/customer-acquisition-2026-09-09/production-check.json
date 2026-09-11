@@ -1,0 +1,816 @@
+{
+  "checkedAt": "2026-09-09T13:32:11.182Z",
+  "origin": "https://digitecme.com",
+  "pages": [
+    {
+      "path": "/brands/bmw-service-dubai",
+      "status": 200,
+      "seconds": 0.641,
+      "mismatches": [
+        "optionalBookingDetails",
+        "ctaPlacements"
+      ],
+      "actual": {
+        "title": "BMW Service &amp; Repair Dubai | DIGI-TEC",
+        "h1": [
+          "BMW Service &amp; Repair Dubai"
+        ],
+        "canonical": "https://digitecme.com/brands/bmw-service-dubai",
+        "robots": "index, follow, max-image-preview:large",
+        "description": "BMW service, repair, diagnostics and maintenance in Al Quoz, Dubai. DIGI-TEC inspects BMW engine, transmission, brakes, AC, electrical and coding concerns. Book via WhatsApp.",
+        "phone": true,
+        "whatsapp": true,
+        "optionalBookingDetails": false,
+        "ctaPlacements": [],
+        "script": "/assets/index-D07bMMgd.js"
+      },
+      "expected": {
+        "title": "BMW Service &amp; Repair Dubai | DIGI-TEC",
+        "h1": [
+          "BMW Service &amp; Repair Dubai"
+        ],
+        "canonical": "https://digitecme.com/brands/bmw-service-dubai",
+        "robots": "index, follow, max-image-preview:large",
+        "description": "BMW service, repair, diagnostics and maintenance in Al Quoz, Dubai. DIGI-TEC inspects BMW engine, transmission, brakes, AC, electrical and coding concerns. Book via WhatsApp.",
+        "phone": true,
+        "whatsapp": true,
+        "optionalBookingDetails": true,
+        "ctaPlacements": [
+          "booking_section",
+          "hero",
+          "mobile_bar"
+        ],
+        "script": "/assets/index-wuG4QtBR.js"
+      }
+    },
+    {
+      "path": "/brands/bmw-service-dubai/engine-diagnostics",
+      "status": 200,
+      "seconds": 0.518,
+      "mismatches": [
+        "ctaPlacements"
+      ],
+      "actual": {
+        "title": "BMW Diagnostics &amp; Coding Dubai | DIGI-TEC",
+        "h1": [
+          "BMW Diagnostics &amp; Supported Coding in Dubai"
+        ],
+        "canonical": "https://digitecme.com/brands/bmw-service-dubai/engine-diagnostics",
+        "robots": "index, follow, max-image-preview:large",
+        "description": "BMW diagnostics in Al Quoz, Dubai for warning lights and drivability faults. Coding and programming coverage confirmed for your vehicle. Book DIGI-TEC.",
+        "phone": true,
+        "whatsapp": true,
+        "optionalBookingDetails": false,
+        "ctaPlacements": [],
+        "script": "/assets/index-D07bMMgd.js"
+      },
+      "expected": {
+        "title": "BMW Diagnostics &amp; Coding Dubai | DIGI-TEC",
+        "h1": [
+          "BMW Diagnostics &amp; Supported Coding in Dubai"
+        ],
+        "canonical": "https://digitecme.com/brands/bmw-service-dubai/engine-diagnostics",
+        "robots": "index, follow, max-image-preview:large",
+        "description": "BMW diagnostics in Al Quoz, Dubai for warning lights and drivability faults. Coding and programming coverage confirmed for your vehicle. Book DIGI-TEC.",
+        "phone": true,
+        "whatsapp": true,
+        "optionalBookingDetails": false,
+        "ctaPlacements": [
+          "final_cta",
+          "hero",
+          "service_scope"
+        ],
+        "script": "/assets/index-wuG4QtBR.js"
+      }
+    },
+    {
+      "path": "/brands/bmw-service-dubai/transmission-repair",
+      "status": 200,
+      "seconds": 0.484,
+      "mismatches": [
+        "ctaPlacements"
+      ],
+      "actual": {
+        "title": "BMW Transmission Repair Dubai | Digi-Tec",
+        "h1": [
+          "BMW Transmission Repair Dubai"
+        ],
+        "canonical": "https://digitecme.com/brands/bmw-service-dubai/transmission-repair",
+        "robots": "index, follow, max-image-preview:large",
+        "description": "BMW transmission repair in Dubai with model-specific inspection, confirmed parts options and a clear quote at Digi-Tec, Al Quoz.",
+        "phone": true,
+        "whatsapp": true,
+        "optionalBookingDetails": false,
+        "ctaPlacements": [],
+        "script": "/assets/index-D07bMMgd.js"
+      },
+      "expected": {
+        "title": "BMW Transmission Repair Dubai | Digi-Tec",
+        "h1": [
+          "BMW Transmission Repair Dubai"
+        ],
+        "canonical": "https://digitecme.com/brands/bmw-service-dubai/transmission-repair",
+        "robots": "index, follow, max-image-preview:large",
+        "description": "BMW transmission repair in Dubai with model-specific inspection, confirmed parts options and a clear quote at Digi-Tec, Al Quoz.",
+        "phone": true,
+        "whatsapp": true,
+        "optionalBookingDetails": false,
+        "ctaPlacements": [
+          "final_cta",
+          "hero",
+          "service_scope"
+        ],
+        "script": "/assets/index-wuG4QtBR.js"
+      }
+    },
+    {
+      "path": "/brands/mercedes-benz-service-dubai",
+      "status": 200,
+      "seconds": 1.193,
+      "mismatches": [
+        "optionalBookingDetails",
+        "ctaPlacements"
+      ],
+      "actual": {
+        "title": "Mercedes Repair &amp; Service Dubai | Digi-Tec Specialists",
+        "h1": [
+          "Mercedes-Benz Repair &amp; Service Dubai"
+        ],
+        "canonical": "https://digitecme.com/brands/mercedes-benz-service-dubai",
+        "robots": "index, follow, max-image-preview:large",
+        "description": "Specialist Mercedes repair and service in Dubai for C-Class, E-Class, S-Class, G-Class, GLE, GLS and AMG. XENTRY diagnostics at our Al Quoz workshop in Dubai.",
+        "phone": true,
+        "whatsapp": true,
+        "optionalBookingDetails": false,
+        "ctaPlacements": [],
+        "script": "/assets/index-D07bMMgd.js"
+      },
+      "expected": {
+        "title": "Mercedes Repair &amp; Service Dubai | Digi-Tec Specialists",
+        "h1": [
+          "Mercedes-Benz Repair &amp; Service Dubai"
+        ],
+        "canonical": "https://digitecme.com/brands/mercedes-benz-service-dubai",
+        "robots": "index, follow, max-image-preview:large",
+        "description": "Specialist Mercedes repair and service in Dubai for C-Class, E-Class, S-Class, G-Class, GLE, GLS and AMG. XENTRY diagnostics at our Al Quoz workshop in Dubai.",
+        "phone": true,
+        "whatsapp": true,
+        "optionalBookingDetails": true,
+        "ctaPlacements": [
+          "booking_section",
+          "hero",
+          "location_section",
+          "mobile_bar"
+        ],
+        "script": "/assets/index-wuG4QtBR.js"
+      }
+    },
+    {
+      "path": "/brands/porsche-service-dubai",
+      "status": 200,
+      "seconds": 0.673,
+      "mismatches": [
+        "optionalBookingDetails",
+        "ctaPlacements"
+      ],
+      "actual": {
+        "title": "Porsche Service &amp; Repair Dubai | Digi-Tec Workshop",
+        "h1": [
+          "Porsche Repair &amp; Service Dubai"
+        ],
+        "canonical": "https://digitecme.com/brands/porsche-service-dubai",
+        "robots": "index, follow, max-image-preview:large",
+        "description": "Porsche service and repair in Dubai for 911, Cayenne, Macan, Panamera, Cayman and Taycan, with diagnostics, PDK, brakes and suspension care in Al Quoz.",
+        "phone": true,
+        "whatsapp": true,
+        "optionalBookingDetails": false,
+        "ctaPlacements": [],
+        "script": "/assets/index-D07bMMgd.js"
+      },
+      "expected": {
+        "title": "Porsche Service &amp; Repair Dubai | Digi-Tec Workshop",
+        "h1": [
+          "Porsche Repair &amp; Service Dubai"
+        ],
+        "canonical": "https://digitecme.com/brands/porsche-service-dubai",
+        "robots": "index, follow, max-image-preview:large",
+        "description": "Porsche service and repair in Dubai for 911, Cayenne, Macan, Panamera, Cayman and Taycan, with diagnostics, PDK, brakes and suspension care in Al Quoz.",
+        "phone": true,
+        "whatsapp": true,
+        "optionalBookingDetails": true,
+        "ctaPlacements": [
+          "booking_section",
+          "hero",
+          "location_section",
+          "mobile_bar"
+        ],
+        "script": "/assets/index-wuG4QtBR.js"
+      }
+    },
+    {
+      "path": "/brands/porsche-service-dubai/engine-diagnostics",
+      "status": 200,
+      "seconds": 0.523,
+      "mismatches": [
+        "ctaPlacements"
+      ],
+      "actual": {
+        "title": "Porsche Diagnostics Dubai | DIGI-TEC Al Quoz",
+        "h1": [
+          "Porsche Diagnostics in Dubai"
+        ],
+        "canonical": "https://digitecme.com/brands/porsche-service-dubai/engine-diagnostics",
+        "robots": "index, follow, max-image-preview:large",
+        "description": "Porsche diagnostics in Al Quoz, Dubai for warning lights, drivability and module concerns. Compatible testing and repair scope confirmed at DIGI-TEC.",
+        "phone": true,
+        "whatsapp": true,
+        "optionalBookingDetails": false,
+        "ctaPlacements": [],
+        "script": "/assets/index-D07bMMgd.js"
+      },
+      "expected": {
+        "title": "Porsche Diagnostics Dubai | DIGI-TEC Al Quoz",
+        "h1": [
+          "Porsche Diagnostics in Dubai"
+        ],
+        "canonical": "https://digitecme.com/brands/porsche-service-dubai/engine-diagnostics",
+        "robots": "index, follow, max-image-preview:large",
+        "description": "Porsche diagnostics in Al Quoz, Dubai for warning lights, drivability and module concerns. Compatible testing and repair scope confirmed at DIGI-TEC.",
+        "phone": true,
+        "whatsapp": true,
+        "optionalBookingDetails": false,
+        "ctaPlacements": [
+          "final_cta",
+          "hero",
+          "service_scope"
+        ],
+        "script": "/assets/index-wuG4QtBR.js"
+      }
+    },
+    {
+      "path": "/brands/porsche-service-dubai/steering-repair",
+      "status": 200,
+      "seconds": 0.507,
+      "mismatches": [
+        "ctaPlacements"
+      ],
+      "actual": {
+        "title": "Porsche Steering Repair Dubai | Digi-Tec",
+        "h1": [
+          "Porsche Steering Repair Dubai"
+        ],
+        "canonical": "https://digitecme.com/brands/porsche-service-dubai/steering-repair",
+        "robots": "index, follow, max-image-preview:large",
+        "description": "Porsche steering repair in Dubai with model-specific inspection, confirmed parts options and a clear quote at Digi-Tec, Al Quoz.",
+        "phone": true,
+        "whatsapp": true,
+        "optionalBookingDetails": false,
+        "ctaPlacements": [],
+        "script": "/assets/index-D07bMMgd.js"
+      },
+      "expected": {
+        "title": "Porsche Steering Repair Dubai | Digi-Tec",
+        "h1": [
+          "Porsche Steering Repair Dubai"
+        ],
+        "canonical": "https://digitecme.com/brands/porsche-service-dubai/steering-repair",
+        "robots": "index, follow, max-image-preview:large",
+        "description": "Porsche steering repair in Dubai with model-specific inspection, confirmed parts options and a clear quote at Digi-Tec, Al Quoz.",
+        "phone": true,
+        "whatsapp": true,
+        "optionalBookingDetails": false,
+        "ctaPlacements": [
+          "final_cta",
+          "hero",
+          "service_scope"
+        ],
+        "script": "/assets/index-wuG4QtBR.js"
+      }
+    },
+    {
+      "path": "/brands/rox-service-dubai/soft-close-door-installation",
+      "status": 200,
+      "seconds": 0.499,
+      "mismatches": [
+        "ctaPlacements"
+      ],
+      "actual": {
+        "title": "ROX 01 Soft Close Installation Dubai | Digi-Tec",
+        "h1": [
+          "ROX 01 Soft Close Installation Dubai"
+        ],
+        "canonical": "https://digitecme.com/brands/rox-service-dubai/soft-close-door-installation",
+        "robots": "index, follow, max-image-preview:large",
+        "description": "ROX 01 soft close installation in Dubai. Digi-Tec fits, diagnoses and repairs soft close door systems with compatibility checks in Al Quoz.",
+        "phone": true,
+        "whatsapp": true,
+        "optionalBookingDetails": false,
+        "ctaPlacements": [],
+        "script": "/assets/index-D07bMMgd.js"
+      },
+      "expected": {
+        "title": "ROX 01 Soft Close Installation Dubai | Digi-Tec",
+        "h1": [
+          "ROX 01 Soft Close Installation Dubai"
+        ],
+        "canonical": "https://digitecme.com/brands/rox-service-dubai/soft-close-door-installation",
+        "robots": "index, follow, max-image-preview:large",
+        "description": "ROX 01 soft close installation in Dubai. Digi-Tec fits, diagnoses and repairs soft close door systems with compatibility checks in Al Quoz.",
+        "phone": true,
+        "whatsapp": true,
+        "optionalBookingDetails": false,
+        "ctaPlacements": [
+          "final_cta",
+          "hero"
+        ],
+        "script": "/assets/index-wuG4QtBR.js"
+      }
+    },
+    {
+      "path": "/services/car-polishing-dubai",
+      "status": 200,
+      "seconds": 0.55,
+      "mismatches": [],
+      "actual": {
+        "title": "Car Polishing &amp; Paint Correction Dubai | DIGI-TEC",
+        "h1": [
+          "Car Polishing &amp; Paint Correction Dubai"
+        ],
+        "canonical": "https://digitecme.com/services/car-polishing-dubai",
+        "robots": "index, follow, max-image-preview:large",
+        "description": "Professional car polishing and paint correction in Dubai. Assess swirl marks, light scratches and dull paint on your premium car. Get a DIGI-TEC quote.",
+        "phone": true,
+        "whatsapp": true,
+        "optionalBookingDetails": false,
+        "ctaPlacements": [
+          "paint_assessment_photos",
+          "paint_contact",
+          "paint_hero",
+          "paint_location",
+          "paint_mobile_call",
+          "paint_mobile_photos",
+          "paint_scratch_photo"
+        ],
+        "script": "/assets/index-D07bMMgd.js"
+      },
+      "expected": {
+        "title": "Car Polishing &amp; Paint Correction Dubai | DIGI-TEC",
+        "h1": [
+          "Car Polishing &amp; Paint Correction Dubai"
+        ],
+        "canonical": "https://digitecme.com/services/car-polishing-dubai",
+        "robots": "index, follow, max-image-preview:large",
+        "description": "Professional car polishing and paint correction in Dubai. Assess swirl marks, light scratches and dull paint on your premium car. Get a DIGI-TEC quote.",
+        "phone": true,
+        "whatsapp": true,
+        "optionalBookingDetails": false,
+        "ctaPlacements": [
+          "paint_assessment_photos",
+          "paint_contact",
+          "paint_hero",
+          "paint_location",
+          "paint_mobile_call",
+          "paint_mobile_photos",
+          "paint_scratch_photo"
+        ],
+        "script": "/assets/index-wuG4QtBR.js"
+      }
+    },
+    {
+      "path": "/services/ceramic-coating",
+      "status": 200,
+      "seconds": 0.541,
+      "mismatches": [],
+      "actual": {
+        "title": "Ceramic Coating Dubai | Car Paint Protection | DIGI-TEC",
+        "h1": [
+          "Ceramic Coating Dubai"
+        ],
+        "canonical": "https://digitecme.com/services/ceramic-coating",
+        "robots": "index, follow, max-image-preview:large",
+        "description": "Professional ceramic coating in Dubai for luxury and performance cars. Explore paint preparation and surface protection at DIGI-TEC. Request your quote.",
+        "phone": true,
+        "whatsapp": true,
+        "optionalBookingDetails": false,
+        "ctaPlacements": [
+          "ceramic_comparison",
+          "ceramic_contact",
+          "ceramic_faq",
+          "ceramic_hero",
+          "ceramic_mobile",
+          "ceramic_options",
+          "ceramic_price",
+          "ceramic_workshop"
+        ],
+        "script": "/assets/index-D07bMMgd.js"
+      },
+      "expected": {
+        "title": "Ceramic Coating Dubai | Car Paint Protection | DIGI-TEC",
+        "h1": [
+          "Ceramic Coating Dubai"
+        ],
+        "canonical": "https://digitecme.com/services/ceramic-coating",
+        "robots": "index, follow, max-image-preview:large",
+        "description": "Professional ceramic coating in Dubai for luxury and performance cars. Explore paint preparation and surface protection at DIGI-TEC. Request your quote.",
+        "phone": true,
+        "whatsapp": true,
+        "optionalBookingDetails": false,
+        "ctaPlacements": [
+          "ceramic_comparison",
+          "ceramic_contact",
+          "ceramic_faq",
+          "ceramic_hero",
+          "ceramic_mobile",
+          "ceramic_options",
+          "ceramic_price",
+          "ceramic_workshop"
+        ],
+        "script": "/assets/index-wuG4QtBR.js"
+      }
+    },
+    {
+      "path": "/services/exhaust-repair-dubai",
+      "status": 200,
+      "seconds": 0.502,
+      "mismatches": [
+        "ctaPlacements"
+      ],
+      "actual": {
+        "title": "Exhaust &amp; Muffler Repair Dubai | DIGI-TEC",
+        "h1": [
+          "Exhaust Repair in Dubai"
+        ],
+        "canonical": "https://digitecme.com/services/exhaust-repair-dubai",
+        "robots": "index, follow, max-image-preview:large",
+        "description": "Exhaust and muffler repair in Al Quoz, Dubai. Assessment of leaks, noise, sensors and catalyst or DPF concerns before repair is quoted at DIGI-TEC.",
+        "phone": true,
+        "whatsapp": true,
+        "optionalBookingDetails": false,
+        "ctaPlacements": [],
+        "script": "/assets/index-D07bMMgd.js"
+      },
+      "expected": {
+        "title": "Exhaust &amp; Muffler Repair Dubai | DIGI-TEC",
+        "h1": [
+          "Exhaust Repair in Dubai"
+        ],
+        "canonical": "https://digitecme.com/services/exhaust-repair-dubai",
+        "robots": "index, follow, max-image-preview:large",
+        "description": "Exhaust and muffler repair in Al Quoz, Dubai. Assessment of leaks, noise, sensors and catalyst or DPF concerns before repair is quoted at DIGI-TEC.",
+        "phone": true,
+        "whatsapp": true,
+        "optionalBookingDetails": false,
+        "ctaPlacements": [
+          "final_cta",
+          "hero",
+          "service_details",
+          "service_scope"
+        ],
+        "script": "/assets/index-wuG4QtBR.js"
+      }
+    },
+    {
+      "path": "/services/mercedes-diagnostics-dubai",
+      "status": 200,
+      "seconds": 1.124,
+      "mismatches": [
+        "ctaPlacements"
+      ],
+      "actual": {
+        "title": "Mercedes Diagnostics &amp; Coding Dubai | Digi-Tec",
+        "h1": [
+          "Mercedes Diagnostics, Coding &amp; Programming in Dubai"
+        ],
+        "canonical": "https://digitecme.com/services/mercedes-diagnostics-dubai",
+        "robots": "index, follow, max-image-preview:large",
+        "description": "Mercedes diagnostics in Al Quoz, Dubai, with coding and programming eligibility checked by VIN and module. Fault reports and supported next steps explained.",
+        "phone": true,
+        "whatsapp": true,
+        "optionalBookingDetails": false,
+        "ctaPlacements": [],
+        "script": "/assets/index-D07bMMgd.js"
+      },
+      "expected": {
+        "title": "Mercedes Diagnostics &amp; Coding Dubai | Digi-Tec",
+        "h1": [
+          "Mercedes Diagnostics, Coding &amp; Programming in Dubai"
+        ],
+        "canonical": "https://digitecme.com/services/mercedes-diagnostics-dubai",
+        "robots": "index, follow, max-image-preview:large",
+        "description": "Mercedes diagnostics in Al Quoz, Dubai, with coding and programming eligibility checked by VIN and module. Fault reports and supported next steps explained.",
+        "phone": true,
+        "whatsapp": true,
+        "optionalBookingDetails": false,
+        "ctaPlacements": [
+          "final_cta",
+          "hero",
+          "service_scope"
+        ],
+        "script": "/assets/index-wuG4QtBR.js"
+      }
+    },
+    {
+      "path": "/services/mercedes-mechanical-repair-dubai",
+      "status": 200,
+      "seconds": 1.127,
+      "mismatches": [
+        "ctaPlacements"
+      ],
+      "actual": {
+        "title": "Mercedes Engine &amp; Mechanical Repair Dubai | Digi-Tec",
+        "h1": [
+          "Mercedes Engine &amp; Mechanical Repair in Dubai"
+        ],
+        "canonical": "https://digitecme.com/services/mercedes-mechanical-repair-dubai",
+        "robots": "index, follow, max-image-preview:large",
+        "description": "Mercedes engine repair in Al Quoz, Dubai. Assessment of overheating, oil leaks, misfires and mounts, with repair options and an itemized quote.",
+        "phone": true,
+        "whatsapp": true,
+        "optionalBookingDetails": false,
+        "ctaPlacements": [],
+        "script": "/assets/index-D07bMMgd.js"
+      },
+      "expected": {
+        "title": "Mercedes Engine &amp; Mechanical Repair Dubai | Digi-Tec",
+        "h1": [
+          "Mercedes Engine &amp; Mechanical Repair in Dubai"
+        ],
+        "canonical": "https://digitecme.com/services/mercedes-mechanical-repair-dubai",
+        "robots": "index, follow, max-image-preview:large",
+        "description": "Mercedes engine repair in Al Quoz, Dubai. Assessment of overheating, oil leaks, misfires and mounts, with repair options and an itemized quote.",
+        "phone": true,
+        "whatsapp": true,
+        "optionalBookingDetails": false,
+        "ctaPlacements": [
+          "final_cta",
+          "hero",
+          "service_scope"
+        ],
+        "script": "/assets/index-wuG4QtBR.js"
+      }
+    },
+    {
+      "path": "/services/mercedes-transmission-repair-dubai",
+      "status": 200,
+      "seconds": 1.134,
+      "mismatches": [
+        "ctaPlacements"
+      ],
+      "actual": {
+        "title": "Mercedes Transmission &amp; Gearbox Repair Dubai | Digi-Tec",
+        "h1": [
+          "Mercedes Transmission &amp; Gearbox Repair in Dubai"
+        ],
+        "canonical": "https://digitecme.com/services/mercedes-transmission-repair-dubai",
+        "robots": "index, follow, max-image-preview:large",
+        "description": "Mercedes transmission and gearbox repair assessment in Al Quoz. Identify the fitted gearbox and compare fluid service, fault repair and replacement scope.",
+        "phone": true,
+        "whatsapp": true,
+        "optionalBookingDetails": false,
+        "ctaPlacements": [],
+        "script": "/assets/index-D07bMMgd.js"
+      },
+      "expected": {
+        "title": "Mercedes Transmission &amp; Gearbox Repair Dubai | Digi-Tec",
+        "h1": [
+          "Mercedes Transmission &amp; Gearbox Repair in Dubai"
+        ],
+        "canonical": "https://digitecme.com/services/mercedes-transmission-repair-dubai",
+        "robots": "index, follow, max-image-preview:large",
+        "description": "Mercedes transmission and gearbox repair assessment in Al Quoz. Identify the fitted gearbox and compare fluid service, fault repair and replacement scope.",
+        "phone": true,
+        "whatsapp": true,
+        "optionalBookingDetails": false,
+        "ctaPlacements": [
+          "final_cta",
+          "hero",
+          "service_scope"
+        ],
+        "script": "/assets/index-wuG4QtBR.js"
+      }
+    },
+    {
+      "path": "/services/oil-change-dubai",
+      "status": 200,
+      "seconds": 0.518,
+      "mismatches": [
+        "ctaPlacements"
+      ],
+      "actual": {
+        "title": "Car Oil Change Dubai | Oil &amp; Filter Service | DIGI-TEC",
+        "h1": [
+          "Car Oil Change in Dubai"
+        ],
+        "canonical": "https://digitecme.com/services/oil-change-dubai",
+        "robots": "index, follow, max-image-preview:large",
+        "description": "Car oil change in Dubai with oil approval, viscosity, capacity and filter selected for the exact vehicle. Book Digi-Tec for a confirmed estimate.",
+        "phone": true,
+        "whatsapp": true,
+        "optionalBookingDetails": false,
+        "ctaPlacements": [],
+        "script": "/assets/index-D07bMMgd.js"
+      },
+      "expected": {
+        "title": "Car Oil Change Dubai | Oil &amp; Filter Service | DIGI-TEC",
+        "h1": [
+          "Car Oil Change in Dubai"
+        ],
+        "canonical": "https://digitecme.com/services/oil-change-dubai",
+        "robots": "index, follow, max-image-preview:large",
+        "description": "Car oil change in Dubai with oil approval, viscosity, capacity and filter selected for the exact vehicle. Book Digi-Tec for a confirmed estimate.",
+        "phone": true,
+        "whatsapp": true,
+        "optionalBookingDetails": false,
+        "ctaPlacements": [
+          "final_cta",
+          "hero",
+          "service_details",
+          "service_scope"
+        ],
+        "script": "/assets/index-wuG4QtBR.js"
+      }
+    },
+    {
+      "path": "/services/paint-protection-film",
+      "status": 200,
+      "seconds": 0.508,
+      "mismatches": [],
+      "actual": {
+        "title": "PPF Dubai | Paint Protection Film for Cars | DIGI-TEC",
+        "h1": [
+          "Paint Protection Film (PPF) Dubai"
+        ],
+        "canonical": "https://digitecme.com/services/paint-protection-film",
+        "robots": "index, follow, max-image-preview:large",
+        "description": "PPF installation in Dubai for luxury and performance cars. Explore full-body and selected-panel paint protection film at DIGI-TEC. Get your car’s quote.",
+        "phone": true,
+        "whatsapp": true,
+        "optionalBookingDetails": false,
+        "ctaPlacements": [
+          "ppf_contact",
+          "ppf_full_body",
+          "ppf_hero",
+          "ppf_mobile",
+          "ppf_price"
+        ],
+        "script": "/assets/index-D07bMMgd.js"
+      },
+      "expected": {
+        "title": "PPF Dubai | Paint Protection Film for Cars | DIGI-TEC",
+        "h1": [
+          "Paint Protection Film (PPF) Dubai"
+        ],
+        "canonical": "https://digitecme.com/services/paint-protection-film",
+        "robots": "index, follow, max-image-preview:large",
+        "description": "PPF installation in Dubai for luxury and performance cars. Explore full-body and selected-panel paint protection film at DIGI-TEC. Get your car’s quote.",
+        "phone": true,
+        "whatsapp": true,
+        "optionalBookingDetails": false,
+        "ctaPlacements": [
+          "ppf_contact",
+          "ppf_full_body",
+          "ppf_hero",
+          "ppf_mobile",
+          "ppf_price"
+        ],
+        "script": "/assets/index-wuG4QtBR.js"
+      }
+    },
+    {
+      "path": "/services/steering-repair-dubai",
+      "status": 200,
+      "seconds": 0.505,
+      "mismatches": [
+        "ctaPlacements"
+      ],
+      "actual": {
+        "title": "Power Steering &amp; Rack Repair Dubai | DIGI-TEC",
+        "h1": [
+          "Steering Repair in Dubai"
+        ],
+        "canonical": "https://digitecme.com/services/steering-repair-dubai",
+        "robots": "index, follow, max-image-preview:large",
+        "description": "Heavy, noisy or leaking steering? Book rack, pump and EPS inspection and repair in Dubai for selected German and luxury cars.",
+        "phone": true,
+        "whatsapp": true,
+        "optionalBookingDetails": false,
+        "ctaPlacements": [],
+        "script": "/assets/index-D07bMMgd.js"
+      },
+      "expected": {
+        "title": "Power Steering &amp; Rack Repair Dubai | DIGI-TEC",
+        "h1": [
+          "Steering Repair in Dubai"
+        ],
+        "canonical": "https://digitecme.com/services/steering-repair-dubai",
+        "robots": "index, follow, max-image-preview:large",
+        "description": "Heavy, noisy or leaking steering? Book rack, pump and EPS inspection and repair in Dubai for selected German and luxury cars.",
+        "phone": true,
+        "whatsapp": true,
+        "optionalBookingDetails": false,
+        "ctaPlacements": [
+          "final_cta",
+          "hero",
+          "service_details",
+          "service_scope"
+        ],
+        "script": "/assets/index-wuG4QtBR.js"
+      }
+    },
+    {
+      "path": "/services/tire-repair-dubai",
+      "status": 200,
+      "seconds": 0.556,
+      "mismatches": [
+        "ctaPlacements"
+      ],
+      "actual": {
+        "title": "Tire Repair Dubai | Puncture Assessment &amp; Fitment | Digitec",
+        "h1": [
+          "Tire Repair Dubai"
+        ],
+        "canonical": "https://digitecme.com/services/tire-repair-dubai",
+        "robots": "index, follow, max-image-preview:large",
+        "description": "Tire repair in Dubai with puncture assessment, replacement, balancing and alignment subject to vehicle fitment and product availability.",
+        "phone": true,
+        "whatsapp": true,
+        "optionalBookingDetails": false,
+        "ctaPlacements": [],
+        "script": "/assets/index-D07bMMgd.js"
+      },
+      "expected": {
+        "title": "Tire Repair Dubai | Puncture Assessment &amp; Fitment | Digitec",
+        "h1": [
+          "Tire Repair Dubai"
+        ],
+        "canonical": "https://digitecme.com/services/tire-repair-dubai",
+        "robots": "index, follow, max-image-preview:large",
+        "description": "Tire repair in Dubai with puncture assessment, replacement, balancing and alignment subject to vehicle fitment and product availability.",
+        "phone": true,
+        "whatsapp": true,
+        "optionalBookingDetails": false,
+        "ctaPlacements": [
+          "final_cta",
+          "hero",
+          "service_details",
+          "service_scope"
+        ],
+        "script": "/assets/index-wuG4QtBR.js"
+      }
+    }
+  ],
+  "redirects": [
+    {
+      "path": "/services/mercedes-repair-dubai",
+      "method": "GET",
+      "status": 200,
+      "location": null,
+      "bodyLength": 109783,
+      "title": "Digi-Tec Performance Center | Independent Car Workshop Dubai",
+      "canonical": "https://digitecme.com/"
+    },
+    {
+      "path": "/services/mercedes-repair-dubai",
+      "method": "HEAD",
+      "status": 200,
+      "location": null,
+      "bodyLength": 0,
+      "title": "",
+      "canonical": ""
+    },
+    {
+      "path": "/services/mercedes-service-dubai",
+      "method": "GET",
+      "status": 200,
+      "location": null,
+      "bodyLength": 109783,
+      "title": "Digi-Tec Performance Center | Independent Car Workshop Dubai",
+      "canonical": "https://digitecme.com/"
+    },
+    {
+      "path": "/services/mercedes-service-dubai",
+      "method": "HEAD",
+      "status": 200,
+      "location": null,
+      "bodyLength": 0,
+      "title": "",
+      "canonical": ""
+    }
+  ],
+  "ancillary": [
+    {
+      "path": "/robots.txt",
+      "status": 200,
+      "bytes": 292,
+      "content": "# OpenAI search and assistant crawlers are explicitly permitted.\nUser-agent: OAI-SearchBot\nUser-agent: ChatGPT-User\nUser-agent: GPTBot\nAllow: /\nDisallow: /wp-admin\nDisallow: /wp-login\n\nUser-agent: *\nAllow: /\nDisallow: /wp-admin\nDisallow: /wp-login\n\nSitemap: https://digitecme.com/sitemap.xml\n"
+    },
+    {
+      "path": "/sitemap.xml",
+      "status": 200,
+      "bytes": 148932,
+      "urls": 1155
+    }
+  ],
+  "contentPassed": false,
+  "redirectsPassed": false
+}

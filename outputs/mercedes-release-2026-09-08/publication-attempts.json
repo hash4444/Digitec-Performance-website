@@ -1,0 +1,17 @@
+{
+  "date": "2026-09-08",
+  "status": "blocked_by_existing_access",
+  "userAuthorizedPublication": true,
+  "publicDomain": "https://digitecme.com",
+  "repository": "https://github.com/hash4444/Digitec-Performance-website",
+  "observedRemoteMain": "704245d7ebfb561c9ad29d6001fa76c6d8564c11",
+  "preparedLocalCommit": "622176a65a48cd1e680fa2b289d79ac7cd905f65",
+  "attempts": [
+    {"route":"GitHub connector","action":"Create the reviewed source tree","result":"HTTP 403: Resource not accessible by integration","sourceWriteSucceeded":false,"nextAction":"Authorize a connection with write access to the existing repository, then publish the prepared commit through the normal source sync route."},
+    {"route":"Lovable connector","projectId":"b8255283-fdd9-4c2d-8b46-ccb596f695e1","projectName":"dubai-performance-art","action":"Request upload URL to import the exact prepared source patch","result":"Connection lacks required projects:write scope. Connector says remove and add the app again to re-authorize; disconnect/reconnect retains old permissions.","sourceWriteSucceeded":false,"deploymentSubmitted":false,"nextAction":"Re-authorize Lovable with projects:write, import and verify the exact prepared source changes, and deploy the existing project to its existing custom domain."},
+    {"route":"Cloudflare dashboard","action":"Open dashboard to configure the Mercedes-only HTTP redirect layer","result":"Login page; no authenticated account available","configurationChanged":false,"nextAction":"Sign in to the account managing digitecme.com, then activate the scoped Mercedes Worker or GET/HEAD-restricted Bulk Redirect rule and verify live responses."}
+  ],
+  "separateSitesPreviewPublished": false,
+  "publicReleaseVerified": false,
+  "remainingLiveVerification": "After authorized publication, rerun check_release_live.py with the final phase and verify actual redirects, destination content, canonical metadata, links and assets."
+}

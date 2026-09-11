@@ -1,0 +1,42 @@
+{
+  "pages": [
+    "/brands/mercedes-benz-service-dubai",
+    "/services/mercedes-mechanical-repair-dubai",
+    "/services/mercedes-diagnostics-dubai",
+    "/services/mercedes-suspension-repair-dubai",
+    "/services/mercedes-oil-change-dubai",
+    "/services/mercedes-transmission-repair-dubai",
+    "/services/mercedes-brake-repair-dubai",
+    "/brands/bmw-service-dubai",
+    "/brands/bmw-service-dubai/transmission-repair",
+    "/brands/bmw-service-dubai/engine-diagnostics",
+    "/brands/porsche-service-dubai/steering-repair",
+    "/brands/porsche-service-dubai/engine-diagnostics",
+    "/brands/aston-martin-service-dubai/brake-repair",
+    "/brands/aston-martin-service-dubai/transmission-repair",
+    "/brands/mclaren-service-dubai",
+    "/brands/mclaren-service-dubai/oil-change",
+    "/services/steering-repair-dubai",
+    "/services/exhaust-repair-dubai",
+    "/services/oil-change-dubai",
+    "/services/paint-protection-film",
+    "/services/ceramic-coating",
+    "/services/paint-protection-dubai",
+    "/services/car-polishing-dubai"
+  ],
+  "widths": [
+    1440,
+    390
+  ],
+  "checks": 46,
+  "failures": [],
+  "extra_checks": [
+    "Aston Martin gearbox CTA at 320px: wrapping and an article verified",
+    "Tyre owner at 390px: no overflow and three assessment CTAs",
+    "Porsche steering FAQ opens and displays answer",
+    "BMW M3 Arabic selector points to published brand hub",
+    "Paint assessment: empty required fields rejected; synthetic BMW/320d/2024 opens WhatsApp draft for 97143402223; no message sent"
+  ],
+  "environment": "Local built production output; not public deployment",
+  "console_errors_observed": []
+}

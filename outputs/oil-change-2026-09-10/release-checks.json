@@ -1,0 +1,112 @@
+{
+  "checkedAt": "2026-09-10T07:17:50.615Z",
+  "passed": true,
+  "targetTitleAndMetaUniqueAcrossRoutes": 1438,
+  "unchangedMainContentAndTitles": [
+    "/ar/services/oil-change-dubai",
+    "/services/car-service-dubai",
+    "/services/mechanical-repair-dubai",
+    "/brands/audi-service-dubai/oil-change"
+  ],
+  "heroBytes": {
+    "small": 48596,
+    "large": 133194
+  },
+  "productionBuild": {
+    "startedAt": "2026-09-10T07:16:01.043Z",
+    "outputDirectory": "dist",
+    "sourceManifest": "release-qa.local/source-manifest.json",
+    "sourceSha256": "be991274284a2c7660c4fc5f0c9f5199e1a886e289457c404ba7b9bde74e2ea2",
+    "steps": [
+      {
+        "command": "vite build",
+        "exitCode": 0,
+        "seconds": 5.857,
+        "log": "release-qa.local/build-1.log"
+      },
+      {
+        "command": "vite build --ssr src/entry-server.tsx --outDir dist-server",
+        "exitCode": 0,
+        "seconds": 1.492,
+        "log": "release-qa.local/build-2.log"
+      },
+      {
+        "command": "node scripts/prerender.mjs",
+        "exitCode": 0,
+        "seconds": 6.93,
+        "log": "release-qa.local/build-3.log"
+      },
+      {
+        "command": "node scripts/generate-hosting-rules.mjs",
+        "exitCode": 0,
+        "seconds": 0.409,
+        "log": "release-qa.local/build-4.log"
+      },
+      {
+        "command": "node scripts/test-hosting-rules.mjs",
+        "exitCode": 0,
+        "seconds": 0.092,
+        "log": "release-qa.local/build-5.log"
+      },
+      {
+        "command": "node scripts/validate-seo.mjs",
+        "exitCode": 0,
+        "seconds": 1.467,
+        "log": "release-qa.local/build-6.log"
+      },
+      {
+        "command": "node scripts/validate-ppf.mjs",
+        "exitCode": 0,
+        "seconds": 0.567,
+        "log": "release-qa.local/build-7.log"
+      },
+      {
+        "command": "node scripts/validate-paint-correction.mjs",
+        "exitCode": 0,
+        "seconds": 0.228,
+        "log": "release-qa.local/build-8.log"
+      },
+      {
+        "command": "node scripts/validate-protection-release.mjs",
+        "exitCode": 0,
+        "seconds": 0.27,
+        "log": "release-qa.local/build-9.log"
+      },
+      {
+        "command": "node scripts/validate-query-release.mjs",
+        "exitCode": 0,
+        "seconds": 0.978,
+        "log": "release-qa.local/build-10.log"
+      },
+      {
+        "command": "node scripts/test-contact-attribution.mjs",
+        "exitCode": 0,
+        "seconds": 0.25,
+        "log": "release-qa.local/build-11.log"
+      },
+      {
+        "command": "node scripts/validate-oil-change.mjs",
+        "exitCode": 0,
+        "seconds": 0.387,
+        "log": "release-qa.local/build-12.log"
+      }
+    ],
+    "passed": true,
+    "finishedAt": "2026-09-10T07:16:20.362Z"
+  },
+  "oilChecks": {
+    "passed": true,
+    "route": "/services/oil-change-dubai",
+    "oneH1": true,
+    "selfCanonical": true,
+    "indexable": true,
+    "sitemap": true,
+    "sections": 11,
+    "matchingFaqs": 10,
+    "brandOilPaths": 8,
+    "reciprocalLinks": 8,
+    "localAssets": 15,
+    "initialCss": true,
+    "date": "2026-09-10"
+  }
+}

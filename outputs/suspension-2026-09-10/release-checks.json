@@ -1,0 +1,115 @@
+{
+  "checkedAt": "2026-09-10T08:16:30.652Z",
+  "passed": true,
+  "unchangedMainContentAndTitles": [
+    "/ar/services/suspension-repair-dubai",
+    "/services/steering-repair-dubai",
+    "/services/oil-change-dubai",
+    "/services/car-service-dubai"
+  ],
+  "unrelatedTransmissionEditsExcluded": true,
+  "build": {
+    "startedAt": "2026-09-10T08:12:09.358Z",
+    "outputDirectory": "dist",
+    "sourceManifest": "release-qa.local/source-manifest.json",
+    "sourceSha256": "adf03b27d8fb42235ac0f3dd81853b1fae305da8fae54d1e751555df6d52a8d8",
+    "steps": [
+      {
+        "command": "vite build",
+        "exitCode": 0,
+        "seconds": 4.279,
+        "log": "release-qa.local/build-1.log"
+      },
+      {
+        "command": "vite build --ssr src/entry-server.tsx --outDir dist-server",
+        "exitCode": 0,
+        "seconds": 1.407,
+        "log": "release-qa.local/build-2.log"
+      },
+      {
+        "command": "node scripts/prerender.mjs",
+        "exitCode": 0,
+        "seconds": 5.571,
+        "log": "release-qa.local/build-3.log"
+      },
+      {
+        "command": "node scripts/generate-hosting-rules.mjs",
+        "exitCode": 0,
+        "seconds": 0.227,
+        "log": "release-qa.local/build-4.log"
+      },
+      {
+        "command": "node scripts/test-hosting-rules.mjs",
+        "exitCode": 0,
+        "seconds": 0.085,
+        "log": "release-qa.local/build-5.log"
+      },
+      {
+        "command": "node scripts/validate-seo.mjs",
+        "exitCode": 0,
+        "seconds": 1.355,
+        "log": "release-qa.local/build-6.log"
+      },
+      {
+        "command": "node scripts/validate-ppf.mjs",
+        "exitCode": 0,
+        "seconds": 0.518,
+        "log": "release-qa.local/build-7.log"
+      },
+      {
+        "command": "node scripts/validate-paint-correction.mjs",
+        "exitCode": 0,
+        "seconds": 0.224,
+        "log": "release-qa.local/build-8.log"
+      },
+      {
+        "command": "node scripts/validate-protection-release.mjs",
+        "exitCode": 0,
+        "seconds": 0.259,
+        "log": "release-qa.local/build-9.log"
+      },
+      {
+        "command": "node scripts/validate-query-release.mjs",
+        "exitCode": 0,
+        "seconds": 1.037,
+        "log": "release-qa.local/build-10.log"
+      },
+      {
+        "command": "node scripts/test-contact-attribution.mjs",
+        "exitCode": 0,
+        "seconds": 0.218,
+        "log": "release-qa.local/build-11.log"
+      },
+      {
+        "command": "node scripts/validate-oil-change.mjs",
+        "exitCode": 0,
+        "seconds": 0.372,
+        "log": "release-qa.local/build-12.log"
+      },
+      {
+        "command": "node scripts/validate-suspension.mjs",
+        "exitCode": 0,
+        "seconds": 0.626,
+        "log": "release-qa.local/build-13.log"
+      }
+    ],
+    "passed": true,
+    "finishedAt": "2026-09-10T08:12:25.668Z"
+  },
+  "checks": {
+    "passed": true,
+    "route": "/services/suspension-repair-dubai",
+    "oneH1": true,
+    "selfCanonical": true,
+    "indexable": true,
+    "sitemap": true,
+    "uniqueMetadataAcrossRoutes": 1438,
+    "serverRenderedSections": 9,
+    "concernChoices": 4,
+    "matchingFaqs": 12,
+    "brandDestinations": 6,
+    "reciprocalLinks": 6,
+    "localAssets": 11,
+    "initialCss": true
+  }
+}

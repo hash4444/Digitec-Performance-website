@@ -1,0 +1,458 @@
+{
+  "_PageIntro-BZbZzflk.js": {
+    "file": "assets/PageIntro-BZbZzflk.js",
+    "name": "PageIntro"
+  },
+  "_ar-best-workshop-BMuRYA1p.js": {
+    "file": "assets/ar-best-workshop-BMuRYA1p.js",
+    "name": "ar-best-workshop"
+  },
+  "_ar-blog-DylLIgex.js": {
+    "file": "assets/ar-blog-DylLIgex.js",
+    "name": "ar-blog"
+  },
+  "_ar-brands-CgvxLF5U.js": {
+    "file": "assets/ar-brands-CgvxLF5U.js",
+    "name": "ar-brands"
+  },
+  "_ar-services-FRxiHbXW.js": {
+    "file": "assets/ar-services-FRxiHbXW.js",
+    "name": "ar-services",
+    "imports": [
+      "src/entry-server.tsx"
+    ]
+  },
+  "_astonMartinHubContent-DBKvoWfm.js": {
+    "file": "assets/astonMartinHubContent-DBKvoWfm.js",
+    "name": "astonMartinHubContent"
+  },
+  "_porsche-workshop-dubai-95nDtwZI.js": {
+    "file": "assets/porsche-workshop-dubai-95nDtwZI.js",
+    "name": "porsche-workshop-dubai",
+    "assets": [
+      "assets/digitec-workshop-luxury-bays-Bpp5B17h.jpg",
+      "assets/digitec-workshop-service-floor-sy5B5uz0.jpg",
+      "assets/digitec-workshop-lifts-CcNVxHco.jpg",
+      "assets/porsche-gt3rs-workshop-dubai-D8xamBuX.jpg",
+      "assets/ferrari-engine-workshop-dubai-DU37kxeN.jpg",
+      "assets/maybach-workshop-dubai-B_1vLEAe.jpg",
+      "assets/lamborghini-workshop-dubai-Bf9qJnfc.jpg",
+      "assets/porsche-workshop-dubai-gvWwvQQg.jpg"
+    ]
+  },
+  "_select-z72M2dx1.js": {
+    "file": "assets/select-z72M2dx1.js",
+    "name": "select",
+    "imports": [
+      "src/entry-server.tsx"
+    ]
+  },
+  "_verified-pricing-CGXp-YYp.js": {
+    "file": "assets/verified-pricing-CGXp-YYp.js",
+    "name": "verified-pricing",
+    "imports": [
+      "src/entry-server.tsx"
+    ]
+  },
+  "src/entry-server.tsx": {
+    "file": "entry-server.js",
+    "name": "entry-server",
+    "src": "src/entry-server.tsx",
+    "isEntry": true,
+    "dynamicImports": [
+      "src/pages/Tuning.tsx",
+      "src/pages/VRX.tsx",
+      "src/pages/Services.tsx",
+      "src/pages/PaintCorrectionPage.tsx",
+      "src/pages/ServicePage.tsx",
+      "src/pages/CeramicCoatingPage.tsx",
+      "src/pages/PpfPage.tsx",
+      "src/pages/LocalGaragePage.tsx",
+      "src/pages/AboutUs.tsx",
+      "src/pages/FAQPage.tsx",
+      "src/pages/Blog.tsx",
+      "src/pages/BlogArticleRouter.tsx",
+      "src/pages/MercedesModelPage.tsx",
+      "src/pages/MercedesProblemsIndex.tsx",
+      "src/pages/MercedesProblemGuidePage.tsx",
+      "src/pages/MercedesCaseStudyPage.tsx",
+      "src/pages/PorscheModelPage.tsx",
+      "src/pages/AudiModelPage.tsx",
+      "src/pages/BmwModelPage.tsx",
+      "src/pages/FerrariModelPage.tsx",
+      "src/pages/FerrariCaseStudyPage.tsx",
+      "src/pages/PorscheSystemsIndex.tsx",
+      "src/pages/PorscheSystemGuidePage.tsx",
+      "src/pages/PorscheProblemsIndex.tsx",
+      "src/pages/PorscheProblemGuidePage.tsx",
+      "src/pages/PorscheOwnershipGuidePage.tsx",
+      "src/pages/PorscheCaseStudyPage.tsx",
+      "src/pages/Brands.tsx",
+      "src/pages/BrandPage.tsx",
+      "src/pages/BrandServicePage.tsx",
+      "src/pages/BestWorkshopPage.tsx",
+      "src/pages/SitemapPage.tsx",
+      "src/pages/NotFound.tsx"
+    ],
+    "css": [
+      "assets/entry-server-BBxIp3cD.css"
+    ],
+    "assets": [
+      "assets/mercedes-amg-engine-repair-dubai--M87Xe7H.jpg",
+      "assets/routine-maintenance-optimized-BkcEIeXp.jpg",
+      "assets/tire-repair-DRcZ2QmZ.jpg",
+      "assets/ppf-application-Bhdwmsn3.jpg",
+      "assets/ceramic-coating-CkFGxCKk.jpg",
+      "assets/mercedes-repair-E9aFRbm2.jpg",
+      "assets/soft-close-door-repair-BTR5h1QP.jpg",
+      "assets/suspension-repair-dubai-jBXugG2X.jpg",
+      "assets/exhaust-repair-dubai-D6tZkcc6.jpg",
+      "assets/range-rover-workshop-dubai-BHADPo2T.png",
+      "assets/defender-accident-repair-front-BFDuvOIB.jpg",
+      "assets/defender-accident-repair-corner-TjDds8yN.jpg",
+      "assets/defender-accident-repair-disassembly-B1m_Mu61.jpg",
+      "assets/defender-accident-repair-reassembly-vkYVIP5O.jpg",
+      "assets/defender-accident-repair-finished-D6LQe3dV.jpg",
+      "assets/defender-workshop-dubai-C_NWYDCd.jpg",
+      "assets/mercedes-repair-guide-workshop-BgsuoacB.jpg",
+      "assets/g63-brabus-g800-finished-front-DKJRDYPA.jpg",
+      "assets/g63-brabus-g800-rear-interior-strip-down-BucgieJa.jpg",
+      "assets/g63-brabus-g800-front-interior-strip-down-CSu1nGDz.jpg",
+      "assets/g63-brabus-g800-rear-body-preparation-BNO4mitc.jpg",
+      "assets/g63-brabus-g800-front-body-preparation-4cvD1osB.jpg",
+      "assets/g63-brabus-g800-side-preparation-BzeNc7cc.jpg",
+      "assets/g63-brabus-g800-finished-rear-CXTuyEYU.jpg",
+      "assets/mercedes-amg-gt-black-series-1300hp-build-CfbrECOo.jpg",
+      "assets/mercedes-amg-gt-black-series-1300hp-build-B_x6OhGR.mov",
+      "assets/lamborghini-urus-workshop-dubai-DfBGhBoE.jpg"
+    ]
+  },
+  "src/pages/AboutUs.tsx": {
+    "file": "assets/AboutUs-VH9KIbdx.js",
+    "name": "AboutUs",
+    "src": "src/pages/AboutUs.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/entry-server.tsx",
+      "_porsche-workshop-dubai-95nDtwZI.js",
+      "_PageIntro-BZbZzflk.js"
+    ]
+  },
+  "src/pages/AudiModelPage.tsx": {
+    "file": "assets/AudiModelPage-CFQFgt-f.js",
+    "name": "AudiModelPage",
+    "src": "src/pages/AudiModelPage.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/entry-server.tsx"
+    ]
+  },
+  "src/pages/BestWorkshopPage.tsx": {
+    "file": "assets/BestWorkshopPage-CDHO6Cif.js",
+    "name": "BestWorkshopPage",
+    "src": "src/pages/BestWorkshopPage.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/entry-server.tsx",
+      "_ar-best-workshop-BMuRYA1p.js"
+    ]
+  },
+  "src/pages/Blog.tsx": {
+    "file": "assets/Blog-DU2ZJ9nN.js",
+    "name": "Blog",
+    "src": "src/pages/Blog.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/entry-server.tsx",
+      "_ar-blog-DylLIgex.js",
+      "_PageIntro-BZbZzflk.js"
+    ]
+  },
+  "src/pages/BlogArticleRouter.tsx": {
+    "file": "assets/BlogArticleRouter-D4C3nTkP.js",
+    "name": "BlogArticleRouter",
+    "src": "src/pages/BlogArticleRouter.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/entry-server.tsx",
+      "_ar-blog-DylLIgex.js",
+      "src/pages/MercedesModelPage.tsx",
+      "src/pages/PorscheModelPage.tsx"
+    ]
+  },
+  "src/pages/BmwModelPage.tsx": {
+    "file": "assets/BmwModelPage-DN4aHLSx.js",
+    "name": "BmwModelPage",
+    "src": "src/pages/BmwModelPage.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/entry-server.tsx"
+    ]
+  },
+  "src/pages/BrandPage.tsx": {
+    "file": "assets/BrandPage-BpcA1QcG.js",
+    "name": "BrandPage",
+    "src": "src/pages/BrandPage.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/entry-server.tsx",
+      "_ar-brands-CgvxLF5U.js",
+      "_ar-services-FRxiHbXW.js",
+      "_porsche-workshop-dubai-95nDtwZI.js",
+      "_astonMartinHubContent-DBKvoWfm.js"
+    ],
+    "assets": [
+      "assets/nissan-workshop-dubai-YSpDHWpT.jpg"
+    ]
+  },
+  "src/pages/BrandServicePage.tsx": {
+    "file": "assets/BrandServicePage-D-pY5Pus.js",
+    "name": "BrandServicePage",
+    "src": "src/pages/BrandServicePage.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/entry-server.tsx",
+      "_astonMartinHubContent-DBKvoWfm.js"
+    ]
+  },
+  "src/pages/Brands.tsx": {
+    "file": "assets/Brands-DnK4uhGs.js",
+    "name": "Brands",
+    "src": "src/pages/Brands.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/entry-server.tsx",
+      "_PageIntro-BZbZzflk.js"
+    ]
+  },
+  "src/pages/CeramicCoatingPage.tsx": {
+    "file": "assets/CeramicCoatingPage-DeOpIncB.js",
+    "name": "CeramicCoatingPage",
+    "src": "src/pages/CeramicCoatingPage.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/entry-server.tsx",
+      "_verified-pricing-CGXp-YYp.js"
+    ]
+  },
+  "src/pages/FAQPage.tsx": {
+    "file": "assets/FAQPage-DlBMOtDX.js",
+    "name": "FAQPage",
+    "src": "src/pages/FAQPage.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/entry-server.tsx",
+      "_PageIntro-BZbZzflk.js"
+    ]
+  },
+  "src/pages/FerrariCaseStudyPage.tsx": {
+    "file": "assets/FerrariCaseStudyPage-BoPwZdXJ.js",
+    "name": "FerrariCaseStudyPage",
+    "src": "src/pages/FerrariCaseStudyPage.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/entry-server.tsx"
+    ]
+  },
+  "src/pages/FerrariModelPage.tsx": {
+    "file": "assets/FerrariModelPage-B2xhEicv.js",
+    "name": "FerrariModelPage",
+    "src": "src/pages/FerrariModelPage.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/entry-server.tsx"
+    ]
+  },
+  "src/pages/LocalGaragePage.tsx": {
+    "file": "assets/LocalGaragePage-B_SDsE8E.js",
+    "name": "LocalGaragePage",
+    "src": "src/pages/LocalGaragePage.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/entry-server.tsx"
+    ]
+  },
+  "src/pages/MercedesCaseStudyPage.tsx": {
+    "file": "assets/MercedesCaseStudyPage-DgFgk54V.js",
+    "name": "MercedesCaseStudyPage",
+    "src": "src/pages/MercedesCaseStudyPage.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/entry-server.tsx"
+    ]
+  },
+  "src/pages/MercedesModelPage.tsx": {
+    "file": "assets/MercedesModelPage-Btku5Fcv.js",
+    "name": "MercedesModelPage",
+    "src": "src/pages/MercedesModelPage.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/entry-server.tsx"
+    ]
+  },
+  "src/pages/MercedesProblemGuidePage.tsx": {
+    "file": "assets/MercedesProblemGuidePage-D_XiW-B4.js",
+    "name": "MercedesProblemGuidePage",
+    "src": "src/pages/MercedesProblemGuidePage.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/entry-server.tsx"
+    ]
+  },
+  "src/pages/MercedesProblemsIndex.tsx": {
+    "file": "assets/MercedesProblemsIndex-DXA45Qb4.js",
+    "name": "MercedesProblemsIndex",
+    "src": "src/pages/MercedesProblemsIndex.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/entry-server.tsx"
+    ]
+  },
+  "src/pages/NotFound.tsx": {
+    "file": "assets/NotFound-D2w8hHSg.js",
+    "name": "NotFound",
+    "src": "src/pages/NotFound.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/entry-server.tsx"
+    ]
+  },
+  "src/pages/PaintCorrectionPage.tsx": {
+    "file": "assets/PaintCorrectionPage-DBSHak6c.js",
+    "name": "PaintCorrectionPage",
+    "src": "src/pages/PaintCorrectionPage.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/entry-server.tsx",
+      "_select-z72M2dx1.js"
+    ]
+  },
+  "src/pages/PorscheCaseStudyPage.tsx": {
+    "file": "assets/PorscheCaseStudyPage-CmeEVESR.js",
+    "name": "PorscheCaseStudyPage",
+    "src": "src/pages/PorscheCaseStudyPage.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/entry-server.tsx"
+    ]
+  },
+  "src/pages/PorscheModelPage.tsx": {
+    "file": "assets/PorscheModelPage-CP7Xt7E_.js",
+    "name": "PorscheModelPage",
+    "src": "src/pages/PorscheModelPage.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/entry-server.tsx"
+    ]
+  },
+  "src/pages/PorscheOwnershipGuidePage.tsx": {
+    "file": "assets/PorscheOwnershipGuidePage-CJDiq8mJ.js",
+    "name": "PorscheOwnershipGuidePage",
+    "src": "src/pages/PorscheOwnershipGuidePage.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/entry-server.tsx"
+    ]
+  },
+  "src/pages/PorscheProblemGuidePage.tsx": {
+    "file": "assets/PorscheProblemGuidePage-mH8R4zKW.js",
+    "name": "PorscheProblemGuidePage",
+    "src": "src/pages/PorscheProblemGuidePage.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/entry-server.tsx"
+    ]
+  },
+  "src/pages/PorscheProblemsIndex.tsx": {
+    "file": "assets/PorscheProblemsIndex-DumrzPii.js",
+    "name": "PorscheProblemsIndex",
+    "src": "src/pages/PorscheProblemsIndex.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/entry-server.tsx"
+    ]
+  },
+  "src/pages/PorscheSystemGuidePage.tsx": {
+    "file": "assets/PorscheSystemGuidePage-mmcppz2E.js",
+    "name": "PorscheSystemGuidePage",
+    "src": "src/pages/PorscheSystemGuidePage.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/entry-server.tsx"
+    ]
+  },
+  "src/pages/PorscheSystemsIndex.tsx": {
+    "file": "assets/PorscheSystemsIndex-BYVUCi_T.js",
+    "name": "PorscheSystemsIndex",
+    "src": "src/pages/PorscheSystemsIndex.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/entry-server.tsx"
+    ]
+  },
+  "src/pages/PpfPage.tsx": {
+    "file": "assets/PpfPage-BeN_nzrA.js",
+    "name": "PpfPage",
+    "src": "src/pages/PpfPage.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/entry-server.tsx",
+      "_verified-pricing-CGXp-YYp.js",
+      "_select-z72M2dx1.js"
+    ],
+    "css": [
+      "assets/PpfPage-DI3UBVhE.css"
+    ]
+  },
+  "src/pages/ServicePage.tsx": {
+    "file": "assets/ServicePage-Cjdbm3aK.js",
+    "name": "ServicePage",
+    "src": "src/pages/ServicePage.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/entry-server.tsx",
+      "_ar-services-FRxiHbXW.js"
+    ]
+  },
+  "src/pages/Services.tsx": {
+    "file": "assets/Services-CRmUiqZW.js",
+    "name": "Services",
+    "src": "src/pages/Services.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/entry-server.tsx",
+      "_PageIntro-BZbZzflk.js"
+    ]
+  },
+  "src/pages/SitemapPage.tsx": {
+    "file": "assets/SitemapPage-CI712lIS.js",
+    "name": "SitemapPage",
+    "src": "src/pages/SitemapPage.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/entry-server.tsx",
+      "_ar-services-FRxiHbXW.js",
+      "_ar-brands-CgvxLF5U.js",
+      "_ar-blog-DylLIgex.js",
+      "_ar-best-workshop-BMuRYA1p.js"
+    ]
+  },
+  "src/pages/Tuning.tsx": {
+    "file": "assets/Tuning-CIp3z_ff.js",
+    "name": "Tuning",
+    "src": "src/pages/Tuning.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/entry-server.tsx"
+    ]
+  },
+  "src/pages/VRX.tsx": {
+    "file": "assets/VRX-C2QlJT1b.js",
+    "name": "VRX",
+    "src": "src/pages/VRX.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/entry-server.tsx"
+    ]
+  }
+}

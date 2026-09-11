@@ -1,0 +1,164 @@
+{
+  "provider": "Lovable project analytics",
+  "project": "digitecme.com",
+  "requestedStart": "2026-08-12T00:00:00Z",
+  "requestedEnd": "2026-09-09T00:00:00Z",
+  "note": "Provider response includes a 2026-09-09 time-series bucket. These totals describe website traffic, not enquiries or customers.",
+  "totals": {
+    "visitors": 877,
+    "pageviews": 1366,
+    "pageviewsPerVisit": 1.56,
+    "sessionDuration": 34,
+    "bounceRate": 80
+  },
+  "breakdowns": {
+    "page": {
+      "label": "page",
+      "data": [
+        {
+          "label": "/",
+          "value": 238
+        },
+        {
+          "label": "/brands/mercedes-benz-service-dubai",
+          "value": 68
+        },
+        {
+          "label": "/about",
+          "value": 57
+        },
+        {
+          "label": "/services/oil-change-dubai",
+          "value": 54
+        },
+        {
+          "label": "/services",
+          "value": 42
+        },
+        {
+          "label": "/brands",
+          "value": 39
+        },
+        {
+          "label": "/tuning",
+          "value": 27
+        },
+        {
+          "label": "/ar",
+          "value": 19
+        },
+        {
+          "label": "/blog",
+          "value": 12
+        },
+        {
+          "label": "/brands/bmw-service-dubai",
+          "value": 12
+        }
+      ]
+    },
+    "source": {
+      "label": "source",
+      "data": [
+        {
+          "label": "Direct",
+          "value": 644
+        },
+        {
+          "label": "google.com",
+          "value": 198
+        },
+        {
+          "label": "chatgpt.com",
+          "value": 10
+        },
+        {
+          "label": "bing.com",
+          "value": 8
+        },
+        {
+          "label": "search.google.com",
+          "value": 7
+        },
+        {
+          "label": "l.instagram.com",
+          "value": 3
+        },
+        {
+          "label": "gemini.google.com",
+          "value": 3
+        },
+        {
+          "label": "duckduckgo.com",
+          "value": 2
+        },
+        {
+          "label": "facebook.com",
+          "value": 2
+        },
+        {
+          "label": "l.wl.co",
+          "value": 2
+        }
+      ]
+    },
+    "device": {
+      "label": "device",
+      "data": [
+        {
+          "label": "desktop",
+          "value": 521
+        },
+        {
+          "label": "mobile",
+          "value": 356
+        }
+      ]
+    },
+    "country": {
+      "label": "country",
+      "data": [
+        {
+          "label": "AE",
+          "value": 342
+        },
+        {
+          "label": "CN",
+          "value": 286
+        },
+        {
+          "label": "US",
+          "value": 115
+        },
+        {
+          "label": "Unknown",
+          "value": 43
+        },
+        {
+          "label": "JO",
+          "value": 17
+        },
+        {
+          "label": "IN",
+          "value": 10
+        },
+        {
+          "label": "PK",
+          "value": 10
+        },
+        {
+          "label": "RU",
+          "value": 5
+        },
+        {
+          "label": "SA",
+          "value": 4
+        },
+        {
+          "label": "GB",
+          "value": 4
+        }
+      ]
+    }
+  }
+}
