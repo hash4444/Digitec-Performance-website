@@ -35,7 +35,6 @@ import { localizeServiceToArabic } from '@/i18n/ar-services';
 import ferrariEngineWorkshop from '@/assets/ferrari-engine-workshop-dubai.jpg';
 import rangeRoverWorkshop from '@/assets/range-rover-workshop-dubai.png';
 import defenderWorkshop from '@/assets/defender-workshop-dubai.jpg';
-import nissanWorkshop from '@/assets/nissan-workshop-dubai.jpg';
 import lamborghiniWorkshop from '@/assets/lamborghini-workshop-dubai.jpg';
 import lamborghiniUrusWorkshop from '@/assets/lamborghini-urus-workshop-dubai.jpg';
 import porscheWorkshop from '@/assets/porsche-workshop-dubai.jpg';
@@ -551,7 +550,6 @@ const BrandPage = () => {
   const isFerrari = brand.slug === 'ferrari-service-dubai';
   const isRangeRover = brand.slug === 'range-rover-service-dubai';
   const isDefender = brand.slug === 'defender-service-dubai' || brand.name === 'Defender';
-  const isNissan = brand.slug === 'nissan-service-dubai';
   const isLamborghini = brand.slug === 'lamborghini-service-dubai';
   const isPorsche = brand.slug === 'porsche-service-dubai';
   const isMaybach = brand.slug === 'maybach-service-dubai';
@@ -563,9 +561,7 @@ const BrandPage = () => {
         ? porscheGt3rsWorkshop
         : isLamborghini
           ? lamborghiniWorkshop
-          : isNissan
-            ? nissanWorkshop
-            : isDefender
+          : isDefender
               ? defenderWorkshop
               : isRangeRover
                 ? rangeRoverWorkshop

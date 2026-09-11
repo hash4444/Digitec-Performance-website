@@ -602,7 +602,7 @@ const createStaticRoute = (pathname) => {
 const primaryBrandSlugs = [
   'mercedes-benz', 'bmw', 'audi', 'porsche', 'range-rover', 'land-rover',
   'ferrari', 'lamborghini', 'bentley', 'rolls-royce', 'mclaren', 'maserati',
-  'aston-martin', 'maybach', 'defender', 'toyota', 'lexus', 'nissan',
+  'aston-martin', 'maybach', 'defender',
 ];
 const primaryServiceSlugs = [
   'car-service-dubai', 'oil-change-dubai', 'brake-repair-dubai', 'car-ac-repair-dubai',

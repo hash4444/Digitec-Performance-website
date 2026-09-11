@@ -1,4 +1,5 @@
 import assert from 'node:assert/strict';
+import { readFile } from 'node:fs/promises';
 import { pathToFileURL } from 'node:url';
 import path from 'node:path';
 
@@ -52,6 +53,21 @@ assert.equal(response.headers.get('location'), 'https://digitecme.com/services/c
 response = await request('https://digitecme.com/brands/porsche-service-dubai');
 assert.equal(response.status, 200);
 
+const removedUrlInventory = await readFile(path.join(process.cwd(), 'docs', 'seo', 'removed-brand-urls.csv'), 'utf8');
+const removedUrls = removedUrlInventory
+  .split(/\r?\n/)
+  .slice(1)
+  .filter(Boolean)
+  .map((line) => line.match(/^"([^"]+)"/)?.[1])
+  .filter(Boolean);
+assert.equal(removedUrls.length, 194);
+for (const removedUrl of removedUrls) {
+  response = await request(removedUrl);
+  assert.equal(response.status, 410, `${removedUrl} should be gone`);
+  assert.equal(response.headers.get('x-robots-tag'), null);
+  assert.match(await response.text(), /Page Not Found/);
+}
+
 response = await request('https://digitecme.com/not-a-real-page-seo-status-test');
 assert.equal(response.status, 404);
 assert.equal(response.headers.get('x-robots-tag'), 'noindex, follow');
@@ -75,7 +91,7 @@ assert.equal(response.headers.get('content-type'), 'application/xml');
 response = await request('https://digitecme.com/functions/v1/mcp', { method: 'POST', body: '{}' });
 assert.equal(response.status, 200);
 
-console.log('Hosting rule tests passed: canonical host, permanent redirects, valid routes, assets, functions and true 404 responses.');
+console.log(`Hosting rule tests passed: canonical host, permanent redirects, ${removedUrls.length} gone URLs, valid routes, assets, functions and true 404 responses.`);
 
 const { handleRequest: mercedesRequest, aliases, canonicalPaths } = await import(pathToFileURL(path.join(process.cwd(), 'cloudflare/mercedes-seo-router.js')).href);
 const hub = '/brands/mercedes-benz-service-dubai';

@@ -5,7 +5,7 @@ import { Reveal } from '@/components/motion/Reveal';
 import { useLocale } from '@/i18n/use-locale';
 import { arHome } from '@/i18n/ar-home';
 
-const LIGHTEN_ON_DARK = new Set(['Hummer', 'Lincoln', 'Maserati', 'Nissan']);
+const LIGHTEN_ON_DARK = new Set(['Hummer', 'Lincoln', 'Maserati']);
 
 export const BrandsWeServe = () => {
   const { isArabic } = useLocale();

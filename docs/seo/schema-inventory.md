@@ -12,7 +12,7 @@ Generated from the production build on 2026-08-20. The CSV in this folder contai
 
 ## After
 
-- 1438 real React routes are statically rendered: 1155 indexable and 283 consistently noindex.
+- 1244 real React routes are statically rendered: 993 indexable and 251 consistently noindex.
 - The sitemap contains only canonical indexable content routes.
 - Every route has one site entity graph and one route graph, with stable IDs.
 - Initial HTML contains the route title, description, canonical, H1, semantic content, internal links and JSON-LD.
@@ -20,10 +20,10 @@ Generated from the production build on 2026-08-20. The CSV in this folder contai
 ## Route counts
 
 - about: 2
-- article: 209
+- article: 201
 - blog-hub: 2
-- brand: 98
-- brand-service: 984
+- brand: 76
+- brand-service: 820
 - brands-hub: 2
 - faq: 2
 - home: 2

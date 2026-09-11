@@ -22,9 +22,6 @@ const PRIMARY_BRANDS = new Set([
   'aston-martin',
   'maybach',
   'defender',
-  'toyota',
-  'lexus',
-  'nissan',
 ]);
 
 const INDEXABLE_SECONDARY_SERVICES = new Set([
