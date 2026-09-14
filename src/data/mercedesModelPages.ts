@@ -592,6 +592,7 @@ export const mercedesModelPages: MercedesModelPageData[] = [
       { title: 'Jerking between gears', detail: 'Reproduce it and separate transmission behaviour from engine torque and mounts.', guidePath: problem('gearbox-jerking'), guideLabel: 'Read the gearbox-jerking guide' },
       { title: 'Rear or corner drops when parked', detail: 'Applicable only to air-equipped variants and requires leak isolation.', guidePath: problem('suspension-dropping-overnight'), guideLabel: 'Read the suspension-drop guide' },
       { title: 'Battery or charging warning', detail: 'The warning can indicate a charging-system fault rather than a battery needing replacement.', guidePath: problem('battery-warning'), guideLabel: 'Read the battery-warning guide' },
+      { title: 'No crank or starts only with a jump', detail: 'Battery, starter, authorization and engine inputs require different checks.', guidePath: problem('wont-start'), guideLabel: 'Read the no-start guide' },
       { title: 'AC weak in traffic', detail: 'Fan, airflow, pressure and compressor command should be checked.', guidePath: problem('ac-not-cooling'), guideLabel: 'Read the AC guide' },
     ],
     services: [
@@ -863,6 +864,7 @@ export const mercedesModelPages: MercedesModelPageData[] = [
       { title: 'Rear or one corner low overnight', detail: 'Applicable to air-equipped GLE variants and needs leak isolation.', guidePath: problem('suspension-dropping-overnight'), guideLabel: 'Read the suspension-drop guide' },
       { title: 'AIRMATIC or E-ACTIVE warning', detail: 'Identify the fitted system before interpreting pressure or voltage faults.', guidePath: problem('airmatic-malfunction'), guideLabel: 'Read the AIRMATIC guide' },
       { title: 'Jerking or shuddering driveline', detail: 'Separate gearbox, transfer-case, tyre and mount behaviour.', guidePath: problem('gearbox-jerking'), guideLabel: 'Read the gearbox guide' },
+      { title: 'No power, no crank or jump-start only', detail: 'Separate 12-volt supply, starter command and authorization from a crank-no-start fault.', guidePath: problem('wont-start'), guideLabel: 'Read the no-start guide' },
       { title: 'Weak AC in the third row or rear', detail: 'Zone airflow and control may be involved alongside refrigerant performance.', guidePath: problem('ac-not-cooling'), guideLabel: 'Read the AC guide' },
     ],
     services: [

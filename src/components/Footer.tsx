@@ -35,6 +35,10 @@ export const Footer = () => {
               <img
                 src="/lovable-uploads/916789e0-b6fb-43d4-9d52-79899ce5a1c2.png"
                 alt={isArabic ? 'مركز ديجي-تك بيرفورمانس' : 'DIGI-TEC Performance Center'}
+                width="429"
+                height="49"
+                loading="lazy"
+                decoding="async"
                 className="h-9 w-auto brightness-110"
               />
             </LocalizedLink>

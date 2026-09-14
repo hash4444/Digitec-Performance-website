@@ -499,8 +499,8 @@ export const services: ServiceData[] = [
   },
   {
     slug: 'mercedes-oil-change-dubai',
-    metaTitle: 'Mercedes Oil Change Dubai | VIN-Specific Oil & Filter',
-    metaDescription: 'Mercedes oil change in Dubai with the applicable MB oil approval, capacity, filter and supported ASSYST procedure confirmed from the vehicle.',
+    metaTitle: 'Mercedes Oil Change Dubai | MB-Approved Oil | Digi-Tec',
+    metaDescription: 'Mercedes oil change in Al Quoz, Dubai with the correct MB oil approval, filter, fill quantity and supported ASSYST reset. Request an itemized quote.',
     title: 'Mercedes Oil Change in Dubai',
     description: 'Mercedes-Benz oil change service using the oil approval specified for the exact engine.',
     image: mercedesRepairImg,

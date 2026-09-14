@@ -28,8 +28,8 @@ export const MERCEDES_SERVICE_CONTENT: Partial<Record<ServiceKey, MercedesConten
   'suspension-repair': {
     serviceName: 'Suspension & AIRMATIC Repair',
     h1: 'Mercedes Suspension & AIRMATIC Repair in Dubai',
-    metaTitle: 'Mercedes Suspension & AIRMATIC Repair Dubai | Digi-Tec',
-    metaDescription: 'Mercedes suspension and AIRMATIC assessment in Al Quoz, Dubai. Leak, compressor, valve-block and ride-height checks before repair is quoted.',
+    metaTitle: 'Mercedes Suspension Repair Dubai | AIRMATIC & ABC | Digi-Tec',
+    metaDescription: 'Mercedes suspension repair in Al Quoz, Dubai for AIRMATIC warnings, overnight drops, air-strut leaks and compressor faults. Book an inspection.',
     heroCopy: 'A Mercedes sitting low, dropping overnight or showing an AIRMATIC warning needs the fitted suspension identified first. We assess air-system concerns, conventional springs, dampers and suspension wear, then explain the findings and proposed repair.',
     symptoms: ['One corner drops or the car sits unevenly after parking', 'AIRMATIC or ride-height warning on the dashboard', 'Frequent compressor operation or slow height adjustment', 'Clunks, harsh ride or uneven tyre wear'],
     processSteps: [
@@ -42,8 +42,11 @@ export const MERCEDES_SERVICE_CONTENT: Partial<Record<ServiceKey, MercedesConten
     faqs: [
       { question: 'Does every Mercedes have AIRMATIC?', answer: 'No. Suspension varies by model, generation and optional equipment. A coil-spring concern needs a different inspection from an air-pressure or ride-height fault.' },
       { question: 'Does dropping overnight prove the compressor is faulty?', answer: 'No. A leak, valve issue or control fault may cause height loss. The pressure supply and the cause of the drop must be assessed before replacing the compressor.' },
+      { question: 'Can I drive with a Mercedes “Vehicle Too Low” warning?', answer: 'Do not drive normally if the vehicle is very low, a tyre is close to the body, steering or braking is affected, or the display tells you to stop. Arrange recovery or workshop advice for the exact condition.' },
+      { question: 'What affects Mercedes AIRMATIC repair cost?', answer: 'The fitted suspension, diagnostic time, proven leak or electrical fault, parts, access, calibration and any related compressor damage determine the estimate. A warning message alone is not enough for an accurate price.' },
       { question: 'What information helps with a suspension quote?', answer: 'Send the VIN or model and year, mileage, warning message, which corner drops and how long it takes. Photographs taken on level ground can help the initial discussion.' },
     ],
+    whatsAppMessage: 'Hi Digi-Tec, I need a Mercedes suspension assessment.\n\nModel/year: \nVIN: \nMileage: \nWarning or symptom: \nWhich corner drops, and when: ',
   },
   'transmission-repair': {
     serviceName: 'Transmission & Gearbox Repair',
@@ -68,9 +71,9 @@ export const MERCEDES_SERVICE_CONTENT: Partial<Record<ServiceKey, MercedesConten
   'oil-change': {
     serviceName: 'Oil Change',
     h1: 'Mercedes Oil Change in Dubai',
-    metaTitle: 'Mercedes Oil Change Dubai | Service & Filter | Digi-Tec',
-    metaDescription: 'Mercedes engine oil and filter service in Al Quoz, Dubai. VIN-matched oil approval, quantity, filter and due-service checks with a clear quotation.',
-    heroCopy: 'Book a Mercedes engine oil and filter service with the specification confirmed for your car. The VIN, engine and service history determine the oil approval, quantity and filter; the same oil or interval is not suitable for every Mercedes.',
+    metaTitle: 'Mercedes Oil Change Dubai | MB-Approved Oil | Digi-Tec',
+    metaDescription: 'Mercedes oil change in Al Quoz, Dubai with the correct MB oil approval, filter, fill quantity and supported ASSYST reset. Request an itemized quote.',
+    heroCopy: 'Book a Mercedes engine oil and filter service with the specification confirmed for your car. The VIN, engine and service history determine the oil approval, quantity and filter; the same oil or interval is not suitable for every Mercedes. An oil change is not automatically a complete Service A or Service B, so any other due items are listed separately.',
     symptoms: ['Engine oil service is due on the vehicle display', 'Service history or the last oil specification is unclear', 'Oil-level message or visible leakage needs inspection', 'You need an itemized oil and filter quotation'],
     processSteps: [
       { title: 'Confirm the specification and due work', description: 'Check vehicle identity, mileage, the service display and history. An oil-level or pressure warning is assessed as a fault where appropriate, rather than treated as an ordinary service booking.' },
@@ -82,8 +85,12 @@ export const MERCEDES_SERVICE_CONTENT: Partial<Record<ServiceKey, MercedesConten
     faqs: [
       { question: 'Which oil does my Mercedes need?', answer: 'The required Mercedes-Benz approval and fill quantity are confirmed from the exact engine and vehicle data. Viscosity alone does not establish that an oil is suitable.' },
       { question: 'Is an oil change the same as Service A or Service B?', answer: 'No. An oil and filter change may be part of the scheduled work, but the service display, vehicle schedule and history determine the other due items.' },
+      { question: 'How much does a Mercedes oil change cost in Dubai?', answer: 'The engine, required MB oil approval and quantity, filter, seals, labour and any separately approved due items determine the price. Send the VIN and mileage for an itemized quote.' },
+      { question: 'How long does a Mercedes oil change take?', answer: 'Workshop time depends on the engine, oil capacity, filter availability, inspection findings and current schedule. The expected completion time is confirmed with the quote before booking.' },
+      { question: 'Is an ASSYST service reset included?', answer: 'A supported reset is performed only for the maintenance actually completed and where the exact vehicle supports the available procedure. Digital service-record access, if requested, is confirmed separately.' },
       { question: 'What should I send for a quote?', answer: 'Send the VIN or model and year, engine if known, mileage, service-display message and any oil warning or leak. The workshop confirms scope and availability before booking.' },
     ],
+    whatsAppMessage: 'Hi Digi-Tec, I need a Mercedes oil-service quote.\n\nModel/year: \nVIN: \nMileage: \nASSYST message: \nOil warning or leak (if any): ',
   },
   'ac-repair': {
     serviceName: 'AC & Air Conditioning Repair',
@@ -147,13 +154,13 @@ export const MERCEDES_SERVICE_CONTENT: Partial<Record<ServiceKey, MercedesConten
   },
   'engine-diagnostics': {
     serviceName: 'Diagnostics, Coding & Programming',
-    h1: 'Mercedes Diagnostics, Coding & Programming in Dubai',
-    metaTitle: 'Mercedes Diagnostics & Coding Dubai | Digi-Tec',
-    metaDescription: 'Mercedes diagnostics in Al Quoz, Dubai, with coding and programming eligibility checked by VIN and module. Fault reports and supported next steps explained.',
-    heroCopy: 'Start with the fault or function you need, the VIN and the module details. Digi-Tec assesses Mercedes diagnostic enquiries and confirms whether the requested coding or programming function is supported before agreeing the work. Access to one function does not establish support for every module or model.',
-    symptoms: ['Check-engine warning, stored faults or reduced performance', 'No-start or intermittent electronic warnings', 'A replacement module needs compatibility assessment', 'A coding or software request needs eligibility confirmed'],
+    h1: 'Mercedes XENTRY Diagnostics & Coding in Dubai',
+    metaTitle: 'Mercedes XENTRY Diagnostics Dubai | Coding | Digi-Tec',
+    metaDescription: 'Mercedes XENTRY diagnostics in Al Quoz, Dubai for warning lights, no-start, AIRMATIC, 7G/9G transmission and supported coding. Get a clear fault report.',
+    heroCopy: 'Bring us the warning text, VIN, model year and when the fault occurs. Digi-Tec combines XENTRY/DAS or compatible Mercedes diagnostic access with live data and physical testing for supported engine, 7G/9G transmission, AIRMATIC, 12V/48V, AC and body-control systems. Coding or programming eligibility is confirmed for the exact module before work begins.',
+    symptoms: ['Check-engine warning, rough running or reduced performance', 'Battery or 48V warning, no-crank or won’t-start condition', 'AIRMATIC, gearbox or AC warning that appears intermittently', 'Several electrical warnings or modules stop communicating', 'A replacement module needs compatibility assessment', 'A coding or software request needs eligibility confirmed'],
     processSteps: [
-      { title: 'Diagnostic scanning and testing', description: 'Read compatible fault information and relevant live data, then use physical or electrical tests where needed. A code report is the starting point for a fault investigation; clearing codes is not a repair.' },
+      { title: 'XENTRY scan and directed testing', description: 'Read compatible Mercedes fault information, freeze-frame context and relevant live data, then use physical or electrical tests where needed. A code report is the starting point for a fault investigation; clearing codes is not a repair.' },
       { title: 'Supported module coding', description: 'Coding concerns configuration. Check the VIN, module part number, current equipment, requested change and any required permissions before confirming that a function can be carried out.' },
       { title: 'Programming eligibility', description: 'Programming concerns module software and can require suitable equipment, stable power, compatible software and manufacturer or account access. Confirm these requirements and module compatibility before accepting the job.' },
       { title: 'Report and post-work checks', description: 'Explain the findings, agreed changes and unresolved faults. After supported coding or programming, review relevant faults and test the affected functions; further hardware repair is quoted separately.' },
@@ -162,8 +169,12 @@ export const MERCEDES_SERVICE_CONTENT: Partial<Record<ServiceKey, MercedesConten
     faqs: [
       { question: 'Do you support all Mercedes coding and programming requests?', answer: 'No blanket coverage is promised. Support depends on the vehicle, module, requested function, compatible equipment and any required access. The workshop confirms eligibility before booking.' },
       { question: 'Is diagnostic scanning the same as coding?', answer: 'No. Scanning retrieves diagnostic information; coding configures supported settings; programming writes compatible software. A wiring or voltage fault may need repair before any software work.' },
+      { question: 'Can XENTRY tell which Mercedes part has failed?', answer: 'Not by itself. Fault codes and live data show what a control unit observed. Voltage, wiring, pressure, signal or mechanical tests may still be needed before a component is recommended.' },
+      { question: 'Can you diagnose a Mercedes that will not start?', answer: 'Yes, subject to vehicle access and recovery. The first step is to separate no power, no crank, slow crank, crank-no-start and start-and-stall because each pattern requires different battery, starter, authorization, fuel or engine tests.' },
+      { question: 'What affects the cost of Mercedes diagnostics?', answer: 'The complaint, number of systems involved, time needed to reproduce the fault, available module access and required physical or electrical tests determine the diagnostic scope. The initial stage is agreed before further work.' },
       { question: 'Is ECU tuning included?', answer: 'Performance tuning is a separate assessment on the tuning page. A diagnostic or coding request does not establish suitability for a performance software change.' },
     ],
+    whatsAppMessage: 'Hi Digi-Tec, I need a Mercedes diagnostic assessment.\n\nModel/year: \nVIN: \nWarning or symptom: \nWhen it happens: \nCoding/programming request (if any): ',
   },
   'electrical-repair': {
     serviceName: 'Electrical Fault Diagnosis & Repair',

@@ -192,7 +192,15 @@ const suspensionUpdatedPaths = new Set([
   ...['bmw', 'porsche', 'audi', 'range-rover', 'bentley'].map(brand => `/brands/${brand}-service-dubai/suspension-repair`),
 ]);
 
-export const publicRoutes = [...routeMap.values()].map((route) => (route.path === '/services/transmission-repair-dubai' || oilChangeUpdatedPaths.has(route.path) || suspensionUpdatedPaths.has(route.path)) ? { ...route, lastmod: '2026-09-10' } : queryReleaseChanged(route) ? { ...route, lastmod: '2026-09-09' } : (paintCareUpdatedPaths.has(route.path) || mercedesUpdatedPaths.has(route.path)) ? { ...route, lastmod: '2026-09-08' } : route).sort((a, b) =>
+const currentMercedesSeoPaths = new Set([
+  '/brands/mercedes-benz-service-dubai',
+  '/services/mercedes-diagnostics-dubai',
+  '/services/mercedes-oil-change-dubai',
+  '/services/mercedes-suspension-repair-dubai',
+  '/mercedes/problems/wont-start',
+]);
+
+export const publicRoutes = [...routeMap.values()].map((route) => currentMercedesSeoPaths.has(route.path) ? { ...route, lastmod: '2026-09-14' } : (route.path === '/services/transmission-repair-dubai' || oilChangeUpdatedPaths.has(route.path) || suspensionUpdatedPaths.has(route.path)) ? { ...route, lastmod: '2026-09-10' } : queryReleaseChanged(route) ? { ...route, lastmod: '2026-09-09' } : (paintCareUpdatedPaths.has(route.path) || mercedesUpdatedPaths.has(route.path)) ? { ...route, lastmod: '2026-09-08' } : route).sort((a, b) =>
   a.path.localeCompare(b.path),
 );
 

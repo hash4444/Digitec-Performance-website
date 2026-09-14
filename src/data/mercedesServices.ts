@@ -62,8 +62,8 @@ export const mercedesServices: ServiceData[] = [
   },
   {
     slug: 'mercedes-suspension-repair-dubai',
-    metaTitle: 'Mercedes AIRMATIC Repair Dubai ★ Air Suspension & ABC Specialists',
-    metaDescription: 'Mercedes AIRMATIC, ABC and Magic Body Control repair in Dubai. Air strut, compressor and valve block replacement by Digi-Tec specialists.',
+    metaTitle: 'Mercedes Suspension Repair Dubai | AIRMATIC & ABC | Digi-Tec',
+    metaDescription: 'Mercedes suspension repair in Al Quoz, Dubai for AIRMATIC warnings, overnight drops, air-strut leaks and compressor faults. Book an inspection.',
     title: 'Mercedes Suspension Repair in Dubai',
     description: 'AIRMATIC, ABC and Magic Body Control specialist repair and service.',
     image: mercedesRepairImg,
@@ -249,8 +249,8 @@ export const mercedesServices: ServiceData[] = [
   },
   {
     slug: 'mercedes-diagnostics-dubai',
-    metaTitle: 'Mercedes Diagnostics Dubai ★ Star Diagnostic XENTRY Specialists',
-    metaDescription: 'Mercedes diagnostics in Dubai with compatible platform coverage for supported engine, transmission, AIRMATIC, AMG and EQ systems.',
+    metaTitle: 'Mercedes XENTRY Diagnostics Dubai | Coding | Digi-Tec',
+    metaDescription: 'Mercedes XENTRY diagnostics in Al Quoz, Dubai for warning lights, no-start, AIRMATIC, 7G/9G transmission and supported coding. Get a clear fault report.',
     title: 'Mercedes Diagnostics in Dubai',
     description: 'Mercedes diagnostic scanning and supported module functions, subject to vehicle and platform compatibility.',
     image: mercedesRepairImg,

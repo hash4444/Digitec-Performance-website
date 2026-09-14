@@ -17,7 +17,7 @@ import {
   mercedesProblemGuides,
 } from '@/data/mercedesProblemGuides';
 import { useSeo } from '@/hooks/use-seo';
-import { buildArticle, buildBreadcrumb, buildWebPage, pageGraph, SITE_URL } from '@/lib/schema';
+import { buildArticle, buildBreadcrumb, buildFAQ, buildWebPage, pageGraph, SITE_URL } from '@/lib/schema';
 
 const guideImage = '/images/mercedes-repair-dubai-hero.jpg';
 
@@ -26,9 +26,14 @@ const MercedesProblemGuidePage = () => {
   const guide = slug ? getMercedesProblemGuide(slug) : undefined;
   const canonical = guide ? `${SITE_URL}${guide.path}` : `${SITE_URL}${MERCEDES_PROBLEMS_PATH}`;
   const articleId = `${canonical}#article`;
+  const dateModified = guide?.dateModified ?? MERCEDES_GUIDE_PUBLISHED;
+  const reviewedLabel = new Intl.DateTimeFormat('en-GB', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' })
+    .format(new Date(`${dateModified}T00:00:00Z`));
 
   const jsonLd = guide
-    ? pageGraph([
+    ? (() => {
+      const faq = buildFAQ(canonical, guide.faqs);
+      return pageGraph([
         buildWebPage({
           url: canonical,
           name: guide.metaTitle,
@@ -37,7 +42,7 @@ const MercedesProblemGuidePage = () => {
           breadcrumbId: `${canonical}#breadcrumb`,
           primaryImage: guideImage,
           datePublished: MERCEDES_GUIDE_PUBLISHED,
-          dateModified: MERCEDES_GUIDE_PUBLISHED,
+          dateModified,
           mainEntityId: articleId,
         }),
         buildBreadcrumb(canonical, [
@@ -51,14 +56,16 @@ const MercedesProblemGuidePage = () => {
           headline: guide.title,
           description: guide.summary,
           datePublished: MERCEDES_GUIDE_PUBLISHED,
-          dateModified: MERCEDES_GUIDE_PUBLISHED,
+          dateModified,
           author: 'DIGI-TEC Workshop',
           authorType: 'Organization',
           image: guideImage,
           section: 'Mercedes diagnostic guides',
           keywords: `${guide.h1}, Mercedes diagnostics Dubai, Mercedes warning guide`,
         }),
-      ])
+        ...(faq ? [faq] : []),
+      ]);
+    })()
     : undefined;
 
   useSeo({
@@ -80,7 +87,7 @@ const MercedesProblemGuidePage = () => {
 
   return (
     <div className="min-h-screen bg-black text-off-white">
-      <Header />
+      <Header hasArabicVersion={false} />
       <main>
         <nav aria-label="Breadcrumb" className="border-b border-white/5">
           <ol className="mx-auto flex max-w-6xl flex-wrap items-center gap-2 px-4 py-4 text-xs text-white/50 sm:px-6">
@@ -104,17 +111,32 @@ const MercedesProblemGuidePage = () => {
             </div>
             <h1 className="max-w-4xl text-3xl font-black leading-tight sm:text-5xl lg:text-6xl">{guide.h1}</h1>
             <p className="mt-6 max-w-4xl text-base leading-relaxed text-white/70 sm:text-xl">{guide.summary}</p>
-            <p className="mt-6 text-sm text-white/45">Reviewed for diagnostic intent on 31 August 2026 · This guide does not replace inspection of the exact vehicle.</p>
+            <p className="mt-6 text-sm text-white/45">Reviewed for diagnostic intent on {reviewedLabel} · This guide does not replace inspection of the exact vehicle.</p>
           </div>
         </section>
 
         <div className="mx-auto grid max-w-6xl gap-10 px-4 py-14 sm:px-6 sm:py-20 lg:grid-cols-[minmax(0,1fr)_19rem]">
           <article className="min-w-0">
-            <section className="rounded-2xl border border-burnt-orange/30 bg-burnt-orange/[0.08] p-5 sm:p-7" aria-labelledby="short-answer-heading">
-              <p className="text-xs font-bold uppercase tracking-[0.2em] text-burnt-orange">Short answer</p>
-              <h2 id="short-answer-heading" className="mt-3 text-xl font-black sm:text-2xl">The symptom is evidence, not a parts diagnosis</h2>
-              <p className="mt-3 leading-relaxed text-white/70">{guide.summary}</p>
-            </section>
+            {guide.answerCards?.length ? (
+              <section className="rounded-2xl border border-burnt-orange/30 bg-burnt-orange/[0.08] p-5 sm:p-7" aria-labelledby="short-answer-heading">
+                <p className="text-xs font-bold uppercase tracking-[0.2em] text-burnt-orange">Start here</p>
+                <h2 id="short-answer-heading" className="mt-3 text-xl font-black sm:text-2xl">Match the exact starting pattern to the next check</h2>
+                <div className="mt-6 grid gap-3 sm:grid-cols-2">
+                  {guide.answerCards.map((item) => (
+                    <article key={item.title} className="rounded-xl border border-white/10 bg-black/25 p-4">
+                      <h3 className="font-bold text-off-white">{item.title}</h3>
+                      <p className="mt-2 text-sm leading-relaxed text-white/60">{item.description}</p>
+                    </article>
+                  ))}
+                </div>
+              </section>
+            ) : (
+              <section className="rounded-2xl border border-burnt-orange/30 bg-burnt-orange/[0.08] p-5 sm:p-7" aria-labelledby="short-answer-heading">
+                <p className="text-xs font-bold uppercase tracking-[0.2em] text-burnt-orange">Short answer</p>
+                <h2 id="short-answer-heading" className="mt-3 text-xl font-black sm:text-2xl">The symptom is evidence, not a parts diagnosis</h2>
+                <p className="mt-3 leading-relaxed text-white/70">{guide.summary}</p>
+              </section>
+            )}
 
             <div className="mt-12 space-y-12">
               {guide.sections.map((section) => (
@@ -144,6 +166,12 @@ const MercedesProblemGuidePage = () => {
                     <p className="mt-3 leading-relaxed text-white/70">{guide.driveAdvice}</p>
                   </div>
                 </div>
+                {guide.slug === 'wont-start' ? (
+                  <div className="mt-6 border-t border-red-300/15 pt-5">
+                    <p className="text-sm leading-relaxed text-white/65">If the car starts with a jump or displays a 12V or 48V message, compare the <Link to={`${MERCEDES_PROBLEMS_PATH}/battery-warning`} className="font-semibold text-burnt-orange hover:underline">Mercedes battery-warning guide</Link>. A <Link to="/services/mercedes-battery-replacement-dubai" className="font-semibold text-burnt-orange hover:underline">battery replacement</Link> should follow battery and charging tests.</p>
+                    <a href={`https://wa.me/97143402223?text=${whatsappText}`} data-cta-placement="no_start_safety" target="_blank" rel="noopener noreferrer" className="btn-primary mt-5 inline-flex">Book no-start diagnosis</a>
+                  </div>
+                ) : null}
               </section>
 
               <section>

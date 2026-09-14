@@ -49,7 +49,7 @@ for(const field of ['offers','aggregateRating','review']) assert.ok(!(field in s
 for(const brand of suspensionBrands){
   assert.ok(html.includes(`href="${brand.path}"`));
   assert.equal(routes.find(r=>r.path===brand.path)?.indexable,true,brand.path);
-  assert.equal(routes.find(r=>r.path===brand.path)?.lastmod,'2026-09-10');
+  assert.equal(routes.find(r=>r.path===brand.path)?.lastmod,brand.path==='/services/mercedes-suspension-repair-dubai'?'2026-09-14':'2026-09-10');
   assert.match(await htmlFor(brand.path),/car suspension inspection and repair in Dubai/);
 }
 let assets=0;

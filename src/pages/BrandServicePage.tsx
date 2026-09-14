@@ -32,6 +32,7 @@ import {
 import { useLocale } from '@/i18n/use-locale';
 import { MERCEDES_PROBLEMS_PATH } from '@/data/mercedesProblemGuides';
 import mercedesEngineWorkshop from '@/assets/mercedes-amg-engine-repair-dubai.jpg';
+import suspensionRepairImage from '@/assets/suspension-repair-dubai.jpg';
 import {
   FERRARI_MAINTENANCE_GUIDE_PATH,
 } from '@/data/ferrariModelPages';
@@ -92,7 +93,8 @@ const PORSCHE_RELATED_CONTENT: Record<string, { label: string; path: string }[]>
 const MERCEDES_RELATED_CONTENT: Record<string, { label: string; path: string }[]> = {
   'oil-change': [
     { label: 'Mercedes Service A/B and maintenance booking', path: '/brands/mercedes-benz-service-dubai#mercedes-maintenance-scope' },
-    { label: 'Mercedes oil-service guide', path: '/blog/best-oil-change-dubai-mercedes' },
+    { label: 'How Mercedes service costs are calculated', path: '/blog/mercedes-service-cost-dubai-guide' },
+    { label: 'ASSYST and Mercedes service intervals', path: '/blog/mercedes-service-intervals-dubai-heat' },
     { label: 'How oil approvals are selected', path: '/blog/oil-specification-guide-dubai-luxury' },
   ],
   'brake-repair': [{ label: 'Brake inspection and repair guide', path: '/blog/brake-repair-dubai' }],
@@ -112,11 +114,12 @@ const MERCEDES_RELATED_CONTENT: Record<string, { label: string; path: string }[]
   'suspension-repair': [
     { label: 'What an AIRMATIC malfunction means', path: `${MERCEDES_PROBLEMS_PATH}/airmatic-malfunction` },
     { label: 'Why air suspension drops overnight', path: `${MERCEDES_PROBLEMS_PATH}/suspension-dropping-overnight` },
+    { label: 'Mercedes diagnostics for control and sensor warnings', path: '/services/mercedes-diagnostics-dubai' },
     { label: 'S-Class suspension systems', path: '/blog/mercedes-s-class-service-dubai-guide' },
   ],
   'engine-diagnostics': [
     { label: 'Electrical and ECU hardware faults', path: '/services/mercedes-electrical-repair-dubai' },
-    { label: 'Performance tuning assessment', path: '/tuning' },
+    { label: 'Mercedes battery and 48V warning guide', path: `${MERCEDES_PROBLEMS_PATH}/battery-warning` },
     { label: 'Mercedes check-engine light guide', path: `${MERCEDES_PROBLEMS_PATH}/check-engine-light` },
     { label: "Mercedes won't-start guide", path: `${MERCEDES_PROBLEMS_PATH}/wont-start` },
     { label: 'Browse all Mercedes diagnostic guides', path: MERCEDES_PROBLEMS_PATH },
@@ -213,6 +216,77 @@ const MERCEDES_SERVICE_PATHS: Record<string, string> = {
   'fuel-system-repair': '/services/mercedes-fuel-system-repair-dubai',
   'body-repair': '/services/mercedes-body-repair-dubai',
   'tire-repair': '/services/mercedes-tire-repair-dubai',
+};
+
+type MercedesScopeItem = {
+  title: string;
+  description: string;
+  path?: string;
+};
+
+const MERCEDES_SERVICE_SCOPE: Record<string, { heading: string; intro: string; items: MercedesScopeItem[] }> = {
+  'engine-diagnostics': {
+    heading: 'Mercedes systems we diagnose',
+    intro: 'Start with the exact warning or behaviour. Compatible scan data is combined with the physical, electrical or mechanical test the affected system requires.',
+    items: [
+      { title: 'Engine and drivability', description: 'Check-engine lights, misfires, reduced power and intermittent running faults.', path: `${MERCEDES_PROBLEMS_PATH}/check-engine-light` },
+      { title: 'No-start, 12V and 48V', description: 'No power, no crank, crank-no-start and battery or charging warnings follow different test paths.', path: `${MERCEDES_PROBLEMS_PATH}/wont-start` },
+      { title: '7G, 9G and AMG gearboxes', description: 'Shift warnings, harsh engagement and live transmission data are assessed with the fitted unit identified.', path: `${MERCEDES_PROBLEMS_PATH}/gearbox-jerking` },
+      { title: 'AIRMATIC and active chassis', description: 'Ride-height, pressure, voltage and sensor evidence are compared before a component is proposed.', path: `${MERCEDES_PROBLEMS_PATH}/airmatic-malfunction` },
+      { title: 'AC and body electronics', description: 'Climate, comfort, communication and control faults are traced beyond a basic emissions-code scan.', path: `${MERCEDES_PROBLEMS_PATH}/ac-not-cooling` },
+      { title: 'Coding and programming', description: 'VIN, module, requested function, software compatibility and required access are checked before acceptance.' },
+    ],
+  },
+  'oil-change': {
+    heading: 'What your Mercedes oil service includes',
+    intro: 'The quote identifies the engine-specific oil service first, then separates any additional Service A, Service B or fault-related work.',
+    items: [
+      { title: 'VIN and engine check', description: 'Confirm the exact engine, model year, service display and available history.' },
+      { title: 'MB oil approval', description: 'Select the required approval and viscosity from vehicle-specific information.' },
+      { title: 'Oil, filter and seal', description: 'List the proposed products, filter, drain seal and required fill quantity.' },
+      { title: 'Level and leak check', description: 'Set the level using the vehicle procedure and inspect the serviced area for leakage.' },
+      { title: 'Supported ASSYST reset', description: 'Reset the relevant reminder only for completed work and where the procedure is supported.' },
+      { title: 'Itemized record', description: 'Record the oil service and show inspections, extra filters or repairs as separate scope.' },
+    ],
+  },
+  'suspension-repair': {
+    heading: 'Match the suspension symptom to the right test',
+    intro: 'Parked height, warning text, compressor behaviour and fitted suspension narrow the test plan; none proves a failed part alone.',
+    items: [
+      { title: 'AIRMATIC malfunction or Vehicle Too Low', description: 'Compare pressure, actual height, voltage and stored fault context.', path: `${MERCEDES_PROBLEMS_PATH}/airmatic-malfunction` },
+      { title: 'One corner or the rear drops overnight', description: 'Use controlled height and leak-retention checks before blaming the compressor.', path: `${MERCEDES_PROBLEMS_PATH}/suspension-dropping-overnight` },
+      { title: 'Compressor runs repeatedly', description: 'Test pressure build, current, supply and the leak that may be increasing run time.' },
+      { title: 'Air lines, fittings or valve block', description: 'Trace the pneumatic path and isolate the source before parts are ordered.' },
+      { title: 'E-Class rear self-levelling', description: 'Confirm whether the exact saloon or estate uses steel springs, rear levelling or AIRMATIC.', path: '/blog/mercedes-e-class-service-dubai-guide' },
+      { title: 'GLE or GLS sits low', description: 'Identify AIRMATIC or E-ACTIVE equipment and test the relevant rear or corner circuit.', path: '/mercedes/models/gle-service-repair-dubai' },
+    ],
+  },
+};
+
+const MERCEDES_MODEL_PATHS: Record<string, string> = {
+  'C-Class': '/blog/mercedes-c-class-service-dubai-guide',
+  'E-Class': '/blog/mercedes-e-class-service-dubai-guide',
+  'S-Class': '/blog/mercedes-s-class-service-dubai-guide',
+  'G-Class': '/mercedes/models/g-class-service-repair-dubai',
+  GLE: '/mercedes/models/gle-service-repair-dubai',
+  GLS: '/mercedes/models/gls-service-repair-dubai',
+};
+
+const MERCEDES_SERVICE_MEDIA: Record<string, { src: string; alt: string; caption: string; width: number; height: number }> = {
+  'engine-diagnostics': {
+    src: mercedesEngineWorkshop,
+    alt: 'Mercedes-AMG engine undergoing diagnostic inspection at Digi-Tec in Dubai',
+    caption: 'Mercedes-AMG engine inspection at Digi-Tec. Scan results are checked against the vehicle and the affected system before repair is proposed.',
+    width: 1086,
+    height: 1448,
+  },
+  'suspension-repair': {
+    src: suspensionRepairImage,
+    alt: 'Mercedes suspension, steering and brake hardware ready for inspection',
+    caption: 'Mercedes suspension hardware differs by chassis and equipment. Vehicle identification comes before leak, pressure, sensor or wear testing.',
+    width: 1600,
+    height: 1066,
+  },
 };
 
 import { ASTON_SERVICES } from '@/data/astonMartinHubContent';
@@ -457,6 +531,9 @@ const BrandServicePage: React.FC<BrandServicePageProps> = ({
       : localizedCombo;
   const brand = brandSlug ? getBrandBySlug(brandSlug) : undefined;
   const profile = brandSlug ? BRAND_PROFILES[brandSlug] : undefined;
+  const mercedesServiceMedia = combo && !isArabic && combo.brandSlug === 'mercedes-benz-service-dubai'
+    ? MERCEDES_SERVICE_MEDIA[combo.serviceSlug]
+    : undefined;
 
   const url = combo
     ? canonicalPath ? `${SITE_URL}${canonicalPath}` : `${SITE_URL}${isArabic ? '/ar' : ''}/brands/${combo.brandSlug}/${combo.serviceSlug}`
@@ -464,9 +541,8 @@ const BrandServicePage: React.FC<BrandServicePageProps> = ({
 
   const jsonLd = React.useMemo(() => {
     if (!combo || !brand || !profile) return undefined;
-    const schemaDescription = isArabic
-      ? `${combo.serviceName} لسيارات ${combo.brandName} لدى ورشة ديجي-تك في القوز، دبي. تواصل لترتيب الفحص أو الخدمة المناسبة.`
-      : `${combo.serviceName} for ${combo.brandName} vehicles at Digi-Tec Performance Center in Al Quoz, Dubai. Contact the workshop to arrange the appropriate inspection or service.`;
+    const schemaDescription = combo.metaDescription;
+    const schemaImage = mercedesServiceMedia?.src ?? brand.logo ?? undefined;
     const breadcrumb = buildBreadcrumb(url, [
       { name: isArabic ? 'الرئيسية' : 'Home', url: `${SITE_URL}${isArabic ? '/ar' : '/'}` },
       { name: isArabic ? 'العلامات' : 'Brands', url: `${SITE_URL}${isArabic ? '/ar' : ''}/brands` },
@@ -478,7 +554,7 @@ const BrandServicePage: React.FC<BrandServicePageProps> = ({
       name: combo.h1,
       description: schemaDescription,
       breadcrumbId: `${url}#breadcrumb`,
-      primaryImage: brand.logo || undefined,
+      primaryImage: schemaImage,
       mainEntityId: `${url}#service`,
     });
     const brandEntity = buildBrand({
@@ -490,12 +566,13 @@ const BrandServicePage: React.FC<BrandServicePageProps> = ({
       name: combo.h1,
       serviceType: `${combo.brandName} ${combo.serviceType}`,
       description: schemaDescription,
+      image: schemaImage,
       brand: combo.brandName,
       areaServed: [isArabic ? 'دبي' : 'Dubai'],
     });
     const faq = buildFAQ(url, combo.faqs);
     return pageGraph([webPage, breadcrumb, brandEntity, service, ...(faq ? [faq] : [])]);
-  }, [combo, brand, isArabic, profile, url]);
+  }, [combo, brand, isArabic, mercedesServiceMedia, profile, url]);
 
   useSeo({
     title: combo ? combo.metaTitle : isArabic ? 'خدمة السيارات | مركز ديجي-تك' : 'Brand Service | Digi-Tec Performance Centre',
@@ -516,6 +593,9 @@ const BrandServicePage: React.FC<BrandServicePageProps> = ({
   const relatedMercedesContent = combo.brandSlug === 'mercedes-benz-service-dubai'
     ? MERCEDES_RELATED_CONTENT[combo.serviceSlug] ?? []
     : [];
+  const mercedesServiceScope = combo.brandSlug === 'mercedes-benz-service-dubai' && !isArabic
+    ? MERCEDES_SERVICE_SCOPE[combo.serviceSlug]
+    : undefined;
   const relatedPorscheContent = combo.brandSlug === 'porsche-service-dubai'
     ? PORSCHE_RELATED_CONTENT[combo.serviceSlug] ?? [
         { label: 'Browse the Porsche Knowledge Centre', path: '/brands/porsche-service-dubai#porsche-knowledge-centre' },
@@ -575,7 +655,7 @@ const BrandServicePage: React.FC<BrandServicePageProps> = ({
             <div className="mb-6 flex items-center gap-4">
               <div className="flex h-14 w-20 items-center justify-center overflow-hidden bg-white/[0.94] p-2 sm:h-16 sm:w-24">
                 {brand.logo ? (
-                  <img src={brand.logo} alt={`${combo.brandName} logo`} className="w-full h-full object-contain" />
+                  <img src={brand.logo} alt={`${combo.brandName} logo`} width="96" height="64" decoding="async" className="w-full h-full object-contain" />
                 ) : (
                   <span className="text-2xl font-semibold text-burnt-orange">{combo.brandName.charAt(0)}</span>
                 )}
@@ -610,12 +690,34 @@ const BrandServicePage: React.FC<BrandServicePageProps> = ({
               </a>
             </div>
             <CtaAssurance className="mt-4" align="start" text={isArabic ? 'تواصل معنا لمناقشة السيارة وطلب موعد' : undefined} />
+            {!isArabic && combo.brandSlug === 'mercedes-benz-service-dubai' && (
+              <p className="mt-5 text-xs font-semibold uppercase tracking-[0.14em] text-white/45">Independent Mercedes workshop in Al Quoz · Established 2002 · XENTRY/Star diagnosis where compatible</p>
+            )}
           </div>
         </div>
       </section>
 
+      {!isArabic && combo.brandSlug === 'mercedes-benz-service-dubai' && (
+        <nav aria-label="On this page" className="border-b border-white/10 bg-black">
+          <div className="mx-auto flex max-w-5xl gap-2 overflow-x-auto px-4 py-3 sm:px-6">
+            {[
+              ['Symptoms', '#service-symptoms'],
+              ...(mercedesServiceScope ? [['Scope', '#service-scope']] : []),
+              ['Process', '#service-process'],
+              ...(relatedAuthorityContent.length ? [['Guides', '#service-guides']] : []),
+              ['FAQs', '#service-faqs'],
+              ['Book', '#service-booking'],
+            ].map(([label, href]) => (
+              <a key={href} href={href} className="inline-flex min-h-11 shrink-0 items-center rounded-full border border-white/10 px-4 py-2 text-xs font-semibold text-white/65 transition-colors hover:border-burnt-orange/50 hover:text-burnt-orange focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-burnt-orange">
+                {label}
+              </a>
+            ))}
+          </div>
+        </nav>
+      )}
+
       {/* Symptoms */}
-      <section className="py-12 sm:py-16 bg-black border-t border-white/5">
+      <section id="service-symptoms" className="scroll-mt-24 py-12 sm:py-16 bg-black border-t border-white/5">
         <div className="max-w-5xl mx-auto px-4 sm:px-6">
           <h2 className="text-2xl sm:text-4xl font-black mb-6 sm:mb-8">
             {isArabic ? <>متى تحجز <span className="text-burnt-orange">{combo.serviceName} {combo.brandName}</span>؟</> : <>When to Book <span className="text-burnt-orange">{combo.brandName} {combo.serviceName}</span></>}
@@ -630,6 +732,38 @@ const BrandServicePage: React.FC<BrandServicePageProps> = ({
           </div>
         </div>
       </section>
+
+      {mercedesServiceScope && (
+        <section id="service-scope" className="scroll-mt-24 border-t border-white/5 bg-gradient-to-br from-charcoal/35 to-black py-12 sm:py-16">
+          <div className="mx-auto max-w-5xl px-4 sm:px-6">
+            <p className="eyebrow mb-4">Vehicle-specific scope</p>
+            <h2 className="text-2xl font-black sm:text-4xl">{mercedesServiceScope.heading}</h2>
+            <p className="mt-4 max-w-3xl text-sm leading-relaxed text-white/60 sm:text-base">{mercedesServiceScope.intro}</p>
+            <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+              {mercedesServiceScope.items.map((item) => {
+                const content = (
+                  <>
+                    <h3 className="font-bold text-off-white group-hover:text-burnt-orange">{item.title}</h3>
+                    <p className="mt-2 text-sm leading-relaxed text-white/55">{item.description}</p>
+                    {item.path ? <span className="mt-4 inline-flex items-center gap-1 text-xs font-semibold text-burnt-orange">Read the relevant guide <ArrowRight className="h-3.5 w-3.5" /></span> : null}
+                  </>
+                );
+                return item.path ? (
+                  <Link key={item.title} to={item.path} className="card-premium group rounded-2xl p-5">{content}</Link>
+                ) : (
+                  <article key={item.title} className="card-premium group rounded-2xl p-5">{content}</article>
+                );
+              })}
+            </div>
+            {mercedesServiceMedia ? (
+              <figure className="mt-8 overflow-hidden rounded-2xl border border-white/10 bg-black">
+                <img src={mercedesServiceMedia.src} alt={mercedesServiceMedia.alt} width={mercedesServiceMedia.width} height={mercedesServiceMedia.height} loading="lazy" decoding="async" className="max-h-[30rem] w-full object-cover" />
+                <figcaption className="px-5 py-4 text-sm leading-relaxed text-white/50">{mercedesServiceMedia.caption}</figcaption>
+              </figure>
+            ) : null}
+          </div>
+        </section>
+      )}
 
       {combo.brandSlug === 'mercedes-benz-service-dubai' && combo.serviceSlug === 'mechanical-repair' && !isArabic && (
         <figure className="mx-auto max-w-5xl px-4 pb-12 sm:px-6">
@@ -656,17 +790,24 @@ const BrandServicePage: React.FC<BrandServicePageProps> = ({
             {isArabic ? `يتم تأكيد نطاق الخدمة حسب طراز ${combo.brandName} والنظام المركب قبل الحجز.` : `Workshop scope, compatible functions and parts are confirmed for the exact ${combo.brandName} model before booking.`}
           </p>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
-            {combo.models.map((m) => (
-              <div key={m} className="card-premium rounded-2xl p-3 sm:p-4 text-center">
-                <span className="text-off-white text-xs sm:text-sm font-semibold">{m}</span>
-              </div>
-            ))}
+            {combo.models.map((m) => {
+              const modelPath = combo.brandSlug === 'mercedes-benz-service-dubai' && !isArabic ? MERCEDES_MODEL_PATHS[m] : undefined;
+              return modelPath ? (
+                <Link key={m} to={modelPath} className="card-premium group rounded-2xl p-3 text-center sm:p-4">
+                  <span className="text-xs font-semibold text-off-white group-hover:text-burnt-orange sm:text-sm">{m}</span>
+                </Link>
+              ) : (
+                <div key={m} className="card-premium rounded-2xl p-3 text-center sm:p-4">
+                  <span className="text-xs font-semibold text-off-white sm:text-sm">{m}</span>
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>
 
       {/* Process */}
-      <section className="py-12 sm:py-16 bg-black border-t border-white/5">
+      <section id="service-process" className="scroll-mt-24 py-12 sm:py-16 bg-black border-t border-white/5">
         <div className="max-w-5xl mx-auto px-4 sm:px-6">
           <h2 className="text-2xl sm:text-4xl font-black mb-6 sm:mb-10">
             {isArabic ? <>خطوات <span className="text-burnt-orange">{combo.serviceName}</span></> : <>Our <span className="text-burnt-orange">{combo.serviceName}</span> Process</>}
@@ -692,7 +833,7 @@ const BrandServicePage: React.FC<BrandServicePageProps> = ({
             <ShieldCheck className="w-8 h-8 sm:w-10 sm:h-10 text-burnt-orange flex-shrink-0" />
             <div>
               <h2 className="text-xl sm:text-3xl font-black mb-3">
-                {isArabic ? <>خيارات قطع <span className="text-burnt-orange">{combo.brandName}</span> موثقة</> : <><span className="text-burnt-orange">{combo.brandName}</span> Parts Options, Documented</>}
+                {isArabic ? <>خيارات قطع <span className="text-burnt-orange">{combo.brandName}</span> موثقة</> : combo.brandSlug === 'mercedes-benz-service-dubai' && combo.serviceSlug === 'engine-diagnostics' ? <>Diagnostic findings and <span className="text-burnt-orange">module compatibility</span></> : combo.brandSlug === 'mercedes-benz-service-dubai' && combo.serviceSlug === 'oil-change' ? <>What your <span className="text-burnt-orange">oil-service quote</span> includes</> : <><span className="text-burnt-orange">{combo.brandName}</span> Parts Options, Documented</>}
               </h2>
               <p className="text-gray-300 text-sm sm:text-base leading-relaxed">{combo.partsCopy}</p>
               {!isArabic && ['mercedes-benz-service-dubai', 'bmw-service-dubai', 'porsche-service-dubai', 'aston-martin-service-dubai', 'mclaren-service-dubai'].includes(combo.brandSlug) && (
@@ -706,10 +847,10 @@ const BrandServicePage: React.FC<BrandServicePageProps> = ({
       </section>
 
       {relatedAuthorityContent.length > 0 && !isArabic && (
-        <section className="border-t border-white/5 bg-charcoal/15 py-12 sm:py-16">
+        <section id="service-guides" className="scroll-mt-24 border-t border-white/5 bg-charcoal/15 py-12 sm:py-16">
           <div className="mx-auto max-w-5xl px-4 sm:px-6">
             <p className="eyebrow mb-4">Model and owner guides</p>
-            <h2 className="text-2xl font-black sm:text-4xl">Understand the symptom before the repair</h2>
+            <h2 className="text-2xl font-black sm:text-4xl">{combo.brandSlug === 'mercedes-benz-service-dubai' && combo.serviceSlug === 'oil-change' ? 'Choose the correct Mercedes maintenance scope' : combo.brandSlug === 'mercedes-benz-service-dubai' && combo.serviceSlug === 'engine-diagnostics' ? 'Continue with the relevant Mercedes diagnostic path' : combo.brandSlug === 'mercedes-benz-service-dubai' && combo.serviceSlug === 'suspension-repair' ? 'Compare the warning with the likely test path' : 'Understand the symptom before the repair'}</h2>
             <p className="mt-4 max-w-3xl text-sm leading-relaxed text-white/55">Explore the relevant symptom, model or service scope to help describe the concern when you contact the workshop.</p>
             <ul className="mt-7 grid gap-4 sm:grid-cols-3">
               {relatedAuthorityContent.map((item) => (
@@ -725,7 +866,7 @@ const BrandServicePage: React.FC<BrandServicePageProps> = ({
       )}
 
       {/* FAQ */}
-      <section className="py-12 sm:py-16 bg-black border-t border-white/5">
+      <section id="service-faqs" className="scroll-mt-24 py-12 sm:py-16 bg-black border-t border-white/5">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <h2 className="text-2xl sm:text-4xl font-black text-center mb-8 sm:mb-10">
             {combo.brandName} {combo.serviceName} <span className="text-burnt-orange">{isArabic ? 'الأسئلة الشائعة' : 'FAQs'}</span>
@@ -782,12 +923,20 @@ const BrandServicePage: React.FC<BrandServicePageProps> = ({
         </div>
       </section>
 
-      <FinalCTA
-        title={`${combo.brandName} ${combo.serviceName}: discuss the next step`}
-        description="Share the model, year, mileage and the concern you want checked. The workshop can confirm the appropriate assessment, scope and appointment availability."
-        label={enquiryLabel}
-        href={whatsappHref}
-      />
+      <div id="service-booking" className="scroll-mt-24">
+        <FinalCTA
+          title={`${combo.brandName} ${combo.serviceName}: discuss the next step`}
+          description={combo.brandSlug === 'mercedes-benz-service-dubai' && combo.serviceSlug === 'engine-diagnostics'
+            ? 'Send the model, year, VIN, exact warning or symptom, when it occurs and any coding or programming request. We will confirm the appropriate first diagnostic stage and available access.'
+            : combo.brandSlug === 'mercedes-benz-service-dubai' && combo.serviceSlug === 'oil-change'
+              ? 'Send the model, year, VIN, mileage, ASSYST message and any oil warning or leak. We will confirm the oil approval, itemized scope and appointment availability.'
+              : combo.brandSlug === 'mercedes-benz-service-dubai' && combo.serviceSlug === 'suspension-repair'
+                ? 'Send the model, year, VIN, mileage, exact warning, which corner drops and when. We will confirm the appropriate suspension inspection and appointment availability.'
+                : 'Share the model, year, mileage and the concern you want checked. The workshop can confirm the appropriate assessment, scope and appointment availability.'}
+          label={enquiryLabel}
+          href={whatsappHref}
+        />
+      </div>
       <Footer />
     </div>
   );

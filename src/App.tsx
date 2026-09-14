@@ -5,12 +5,12 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route, useLocation, Navigate } from "react-router-dom";
 import { lazy, Suspense, useEffect } from "react";
-import Index from "./pages/Index";
 // Keep dedicated-page styles in the initial HTML for prerendered content.
 import "./styles/ceramic-coating.css";
 import "./styles/oil-change.css";
 import "./styles/suspension.css";
 import "./styles/transmission.css";
+const Index = lazy(() => import("./pages/Index"));
 const OilChangePage = lazy(() => import("./pages/OilChangePage"));
 const SuspensionRepairPage = lazy(() => import("./pages/SuspensionRepairPage"));
 const TransmissionPage = lazy(() => import("./pages/TransmissionPage"));

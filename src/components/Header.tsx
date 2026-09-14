@@ -25,9 +25,10 @@ const THEME_STORAGE_KEY = 'digitec-color-theme';
 
 type HeaderProps = {
   overlay?: boolean;
+  hasArabicVersion?: boolean;
 };
 
-const Header = ({ overlay = false }: HeaderProps) => {
+const Header = ({ overlay = false, hasArabicVersion = true }: HeaderProps) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isLanguageOpen, setIsLanguageOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -114,6 +115,9 @@ const Header = ({ overlay = false }: HeaderProps) => {
                 <img
                   src="/images/digitec-d-mark.png"
                   alt=""
+                  width="1536"
+                  height="1024"
+                  decoding="async"
                   className="absolute left-1/2 top-1/2 w-[220px] max-w-none -translate-x-1/2 -translate-y-1/2 mix-blend-screen sm:w-[250px] lg:w-[350px]"
                 />
               </span>
@@ -149,7 +153,7 @@ const Header = ({ overlay = false }: HeaderProps) => {
                 type="button"
                 onClick={() => setColorTheme((theme) => theme === 'dark' ? 'light' : 'dark')}
                 className={cn(
-                  'mx-0.5 flex h-9 w-9 shrink-0 items-center justify-center rounded-full border transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-burnt-orange',
+                  'mx-0.5 flex h-11 w-11 shrink-0 items-center justify-center rounded-full border transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-burnt-orange',
                   colorTheme === 'light' ? 'border-black/15 hover:bg-black/[0.05]' : 'border-white/18 hover:bg-white/[0.05]',
                 )}
                 aria-label={colorTheme === 'dark' ? (isArabic ? 'تفعيل المظهر الفاتح' : 'Use light theme') : (isArabic ? 'تفعيل المظهر الداكن' : 'Use dark theme')}
@@ -158,12 +162,12 @@ const Header = ({ overlay = false }: HeaderProps) => {
                 {colorTheme === 'dark' ? <Sun className="h-[17px] w-[17px]" strokeWidth={1.6} /> : <Moon className="h-[17px] w-[17px]" strokeWidth={1.6} />}
               </button>
 
-              <div className="relative ml-1">
+              {hasArabicVersion ? <div className="relative ml-1">
                 <button
                   type="button"
                   onClick={() => { setIsLanguageOpen((open) => !open); setIsMenuOpen(false); }}
                   className={cn(
-                    'flex h-10 min-w-[70px] items-center justify-center gap-1.5 rounded-full px-3 text-sm font-semibold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-burnt-orange',
+                    'flex h-11 min-w-[70px] items-center justify-center gap-1.5 rounded-full px-3 text-sm font-semibold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-burnt-orange',
                     colorTheme === 'light' ? 'bg-black/[0.06] hover:bg-black/[0.1]' : 'bg-white/[0.08] hover:bg-white/[0.13]',
                   )}
                   aria-label={isArabic ? localeMessages.ar.language.menu : localeMessages.en.language.menu}
@@ -181,7 +185,7 @@ const Header = ({ overlay = false }: HeaderProps) => {
                   <Link to={englishPath} onClick={() => rememberLocale('en')} className={cn('block rounded-xl px-4 py-2.5 text-sm font-semibold', colorTheme === 'light' ? 'hover:bg-black/[0.05]' : 'hover:bg-white/10', !isArabic && 'text-burnt-orange')}>English</Link>
                   <Link to={arabicPath} onClick={() => rememberLocale('ar')} className={cn('block rounded-xl px-4 py-2.5 text-sm font-semibold', colorTheme === 'light' ? 'hover:bg-black/[0.05]' : 'hover:bg-white/10', isArabic && 'text-burnt-orange')}>{isEnglishMercedesModelPath(englishPath) ? 'العربية — خدمات مرسيدس' : 'العربية'}</Link>
                 </div>
-              </div>
+              </div> : null}
             </div>
 
             <nav

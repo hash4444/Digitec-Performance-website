@@ -49,7 +49,7 @@ for (const item of oilFaqs) {
 for (const brand of oilBrandPaths) {
   assert.ok(html.includes(`href="${brand.path}"`), brand.path);
   assert.equal(routes.find(r => r.path === brand.path)?.indexable, true, brand.path);
-  assert.equal(routes.find(r => r.path === brand.path)?.lastmod, '2026-09-10', brand.path);
+  assert.equal(routes.find(r => r.path === brand.path)?.lastmod, brand.path === '/services/mercedes-oil-change-dubai' ? '2026-09-14' : '2026-09-10', brand.path);
   const brandHtml = await htmlFor(brand.path);
   assert.match(brandHtml, /car oil and filter change in Dubai/);
   assert.ok(brandHtml.includes(`href="${route}"`), `Return link ${brand.path}`);

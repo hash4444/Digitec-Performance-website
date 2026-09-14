@@ -14,6 +14,8 @@ export interface MercedesProblemGuide {
   metaTitle: string;
   metaDescription: string;
   summary: string;
+  dateModified?: string;
+  answerCards?: { title: string; description: string }[];
   urgent: boolean;
   sections: MercedesGuideSection[];
   driveAdvice: string;
@@ -466,11 +468,20 @@ export const mercedesProblemGuides: MercedesProblemGuide[] = [
   {
     slug: 'wont-start',
     path: guidePath('wont-start'),
-    title: "Mercedes Won't Start: No-Crank and Crank-No-Start Diagnosis",
+    title: 'Mercedes Won’t Start? No Power, No Crank and Jump-Start Guide',
     h1: "Mercedes Won't Start",
-    metaTitle: "Mercedes Won't Start | No-Crank Diagnostic Guide",
-    metaDescription: "Mercedes won't start guide: how no-crank differs from crank-no-start, possible battery, starter, key, fuel and sensor causes, and safe diagnosis.",
+    metaTitle: 'Mercedes Won’t Start? No Power, No Crank & Jump-Start Guide',
+    metaDescription: 'Mercedes won’t start but lights work, has no power, clicks once or starts only with a jump? Compare battery, starter, key and crank-no-start causes safely.',
     summary: 'The most useful first distinction is whether the engine does not crank, cranks at normal speed but does not start, cranks slowly, or starts and immediately stops. Each pattern leads to a different electrical, authorization, fuel or engine-management test path.',
+    dateModified: '2026-09-14',
+    answerCards: [
+      { title: 'No power, but it starts with a jump', description: 'Test battery condition under load, charging output and key-off draw. Starting after a jump does not prove the battery is the only fault.' },
+      { title: 'Lights come on, but it will not crank', description: 'Check voltage drop, starter command, gear-position data and key authorization; dashboard lights need much less current than the starter.' },
+      { title: 'One click or intermittent no-start', description: 'A click can involve the battery, cables, grounds, relay/control path or starter. Measure the circuit before replacing a part.' },
+      { title: 'Cranks normally but will not fire', description: 'Move the test path toward engine-speed signals, fuel pressure, ignition, immobilizer state and mechanical timing or compression.' },
+      { title: 'Starts and stalls immediately', description: 'Record key and authorization messages, running time and fault context before repeated attempts erase useful evidence.' },
+      { title: 'No-start after an accident or recent repair', description: 'Power distribution, grounds, connectors, authorization and affected wiring need inspection before the symptom is treated as an ordinary flat battery.' },
+    ],
     urgent: false,
     sections: [
       {
@@ -506,16 +517,20 @@ export const mercedesProblemGuides: MercedesProblemGuide[] = [
     relatedServices: [
       service('Mercedes diagnostics in Dubai', MERCEDES_SERVICE_LINKS.diagnostics, 'Commercial diagnostic information for no-start scan and system testing.'),
       service('Mercedes electrical repair in Dubai', MERCEDES_SERVICE_LINKS.electrical, 'Battery, starter, wiring, ground and module-circuit repair information.'),
+      service('Mercedes battery replacement in Dubai', MERCEDES_SERVICE_LINKS.battery, 'Battery replacement information after battery, charging and key-off draw tests establish the required scope.'),
     ],
     relatedModels: [
       { label: 'Mercedes C-Class service guide', path: '/blog/mercedes-c-class-service-dubai-guide' },
       { label: 'Mercedes E-Class service guide', path: '/blog/mercedes-e-class-service-dubai-guide' },
       { label: 'Mercedes S-Class service guide', path: '/blog/mercedes-s-class-service-dubai-guide' },
       { label: 'Mercedes G-Class service guide', path: '/mercedes/models/g-class-service-repair-dubai' },
+      { label: 'Mercedes GLE service guide', path: '/mercedes/models/gle-service-repair-dubai' },
     ],
     faqs: [
       { question: 'Can the lights work even when the battery cannot start the car?', answer: 'Yes. Lights and modules draw much less current than the starter. Battery voltage under load and cable voltage drop are more useful than the lights alone.' },
-      { question: 'Why does the Mercedes start after a jump and then fail again?', answer: 'The battery may not retain charge, the charging system may be weak or the vehicle may have an excessive key-off draw. All three require measurement.' },
+      { question: 'Why will my Mercedes start with a jump but not on its own?', answer: 'The battery may not retain charge, the charging system may be weak or the vehicle may have an excessive key-off draw. All three require measurement before replacement is recommended.' },
+      { question: 'Why does my Mercedes click once but not start?', answer: 'The click shows that part of the command path may be operating, but it does not identify the failed component. Battery load, cable voltage drop, grounds, starter command and starter current need checking.' },
+      { question: 'Can XENTRY diagnose a Mercedes that will not start?', answer: 'Compatible diagnostics can reveal authorization, voltage, engine-speed and module data, but a scan is only one part of the diagnosis. High-current, fuel, ignition, wiring or mechanical tests may still be required.' },
       { question: 'Does a crankshaft-sensor code prove the sensor failed?', answer: 'Not always. Wiring, supply, signal integrity, timing and low cranking speed can affect the observed signal. Test the circuit and waveform or live data as appropriate.' },
     ],
   },

@@ -19,7 +19,7 @@ export default function MercedesMaintenanceScope({ isArabic }: { isArabic: boole
     ['Separately quoted work', 'Fault diagnosis, repairs, leaks, tyres, brakes and transmission servicing are separate unless expressly included. Additional findings are explained before extra work is approved.'],
   ];
   return (
-    <section id="mercedes-maintenance-scope" className="brand-section scroll-mt-24 border-t border-white/5 bg-charcoal/20 py-12 sm:py-16">
+    <section id="mercedes-maintenance-scope" className="brand-section scroll-mt-[10rem] border-t border-white/5 bg-charcoal/20 py-12 sm:py-16">
       <div className="mx-auto max-w-5xl px-4 sm:px-6">
         <h2 className="text-2xl font-black sm:text-4xl">{isArabic ? 'نطاق صيانة مرسيدس: الخدمة الصغيرة والكبيرة' : 'Mercedes minor and major service: what is included?'}</h2>
         <dl className="mt-7 grid gap-4 sm:grid-cols-2">

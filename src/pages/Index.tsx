@@ -11,6 +11,7 @@ import { BrandsWeServe } from '@/components/BrandsWeServe';
 import { ServiceGrid } from '@/components/ServiceGrid';
 import { WhyChooseUs } from '@/components/WhyChooseUs';
 import { TrustBar } from '@/components/TrustBar';
+import { GoogleReviews } from '@/components/GoogleReviews';
 
 import { FAQ } from '@/components/FAQ';
 import { FinalCTA } from '@/components/FinalCTA';
@@ -85,6 +86,8 @@ const Index = () => {
       <div id="about">
         <WhyChooseUs />
       </div>
+
+      <GoogleReviews />
 
       <AnswerBlock
         question={isArabic ? 'ما هو مركز ديجي-تك بيرفورمانس؟' : 'What is Digi-Tec Performance Centre?'}

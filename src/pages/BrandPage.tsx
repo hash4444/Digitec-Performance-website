@@ -24,6 +24,7 @@ import {
 import BrandBookingForm from '@/components/BrandBookingForm';
 import BrandPaintCareLinks from '@/components/BrandPaintCareLinks';
 import MercedesMaintenanceScope from '@/components/MercedesMaintenanceScope';
+import { GoogleReviews } from '@/components/GoogleReviews';
 import { BRAND_PROFILES, getServicesForBrand } from '@/data/brandServices';
 import { getPriorityBrandSeo, PRIORITY_BRAND_SLUGS } from '@/data/priorityBrandSeo';
 import { audiModelPages, audiModelPath } from '@/data/audiModelPages';
@@ -44,31 +45,34 @@ import mercedesAmgEngine from '@/assets/mercedes-amg-engine-repair-dubai.jpg';
 import g63BrabusFinishedFront from '@/assets/g63-brabus-g800-finished-front.jpg';
 import { mercedesModelPages } from '@/data/mercedesModelPages';
 import { MERCEDES_PROBLEMS_PATH } from '@/data/mercedesProblemGuides';
-import PorscheKnowledgeCentre from '@/components/PorscheKnowledgeCentre';
-import BmwKnowledgeHub from '@/components/BmwKnowledgeHub';
-import { BmwBookingActions, BmwBookingChecklist, BmwCoreServices, BmwWorkshopProof } from '@/components/BmwHubSections';
 import { BMW_CORE_SERVICES, BMW_ADDITIONAL_SERVICES, BMW_HUB_FAQS, BMW_HUB_INTRO, BMW_WHATSAPP_HREF } from '@/data/bmwHubContent';
-import FerrariKnowledgeCentre from '@/components/FerrariKnowledgeCentre';
-import { MclarenHubSections } from '@/components/MclarenHubSections';
 import { MCLAREN_FAQS, MCLAREN_HUB_INTRO, MCLAREN_SERVICES, MCLAREN_WHATSAPP_HREF } from '@/data/mclarenHubContent';
 import { FERRARI_HUB_SERVICES } from '@/data/ferrariHubContent';
-import { LamborghiniHubSections } from '@/components/LamborghiniHubSections';
 import { LAMBORGHINI_FAQS, LAMBORGHINI_HUB_INTRO, LAMBORGHINI_SERVICES, LAMBORGHINI_WHATSAPP_HREF } from '@/data/lamborghiniHubContent';
-import { RollsRoyceHubSections } from '@/components/RollsRoyceHubSections';
 import { ROLLS_ROYCE_FAQS, ROLLS_ROYCE_HUB_INTRO, ROLLS_ROYCE_SERVICES, ROLLS_ROYCE_WHATSAPP_HREF } from '@/data/rollsRoyceHubContent';
-import { AudiHubSections } from '@/components/AudiHubSections';
 import { AUDI_FAQS, AUDI_HUB_INTRO, AUDI_SERVICES, AUDI_WHATSAPP_HREF } from '@/data/audiHubContent';
-import { BentleyHubSections } from '@/components/BentleyHubSections';
 import { BENTLEY_FAQS, BENTLEY_HUB_INTRO, BENTLEY_SERVICES, BENTLEY_WHATSAPP_HREF } from '@/data/bentleyHubContent';
-import { RoxHubSections } from '@/components/RoxHubSections';
 import { ROX_HUB_FAQS, ROX_HUB_INTRO } from '@/data/roxHubContent';
-
-import { AstonMartinHubSections } from '@/components/AstonMartinHubSections';
 import { ASTON_HUB_INTRO, ASTON_FAQS, ASTON_SERVICES, ASTON_WHATSAPP_HREF } from '@/data/astonMartinHubContent';
 
+const PorscheKnowledgeCentre = React.lazy(() => import('@/components/PorscheKnowledgeCentre'));
+const BmwKnowledgeHub = React.lazy(() => import('@/components/BmwKnowledgeHub'));
+const BmwBookingActions = React.lazy(() => import('@/components/BmwHubSections').then((module) => ({ default: module.BmwBookingActions })));
+const BmwBookingChecklist = React.lazy(() => import('@/components/BmwHubSections').then((module) => ({ default: module.BmwBookingChecklist })));
+const BmwCoreServices = React.lazy(() => import('@/components/BmwHubSections').then((module) => ({ default: module.BmwCoreServices })));
+const BmwWorkshopProof = React.lazy(() => import('@/components/BmwHubSections').then((module) => ({ default: module.BmwWorkshopProof })));
+const FerrariKnowledgeCentre = React.lazy(() => import('@/components/FerrariKnowledgeCentre'));
+const MclarenHubSections = React.lazy(() => import('@/components/MclarenHubSections').then((module) => ({ default: module.MclarenHubSections })));
+const LamborghiniHubSections = React.lazy(() => import('@/components/LamborghiniHubSections').then((module) => ({ default: module.LamborghiniHubSections })));
+const RollsRoyceHubSections = React.lazy(() => import('@/components/RollsRoyceHubSections').then((module) => ({ default: module.RollsRoyceHubSections })));
+const AudiHubSections = React.lazy(() => import('@/components/AudiHubSections').then((module) => ({ default: module.AudiHubSections })));
+const BentleyHubSections = React.lazy(() => import('@/components/BentleyHubSections').then((module) => ({ default: module.BentleyHubSections })));
+const RoxHubSections = React.lazy(() => import('@/components/RoxHubSections').then((module) => ({ default: module.RoxHubSections })));
+const AstonMartinHubSections = React.lazy(() => import('@/components/AstonMartinHubSections').then((module) => ({ default: module.AstonMartinHubSections })));
+
 const mercedesWorkshop = '/images/mercedes-repair-dubai-hero.jpg';
-const MERCEDES_META_TITLE = 'Mercedes Repair & Service Dubai | Digi-Tec Specialists';
-const MERCEDES_META_DESCRIPTION = 'Specialist Mercedes repair and service in Dubai for C-Class, E-Class, S-Class, G-Class, GLE, GLS and AMG. XENTRY diagnostics at our Al Quoz workshop in Dubai.';
+const MERCEDES_META_TITLE = 'Mercedes Repair Dubai | Al Quoz Workshop | Digi-Tec';
+const MERCEDES_META_DESCRIPTION = 'Independent Mercedes repair and service in Al Quoz, Dubai since 2002. XENTRY diagnostics, maintenance, gearbox, AIRMATIC, AC and electrical work.';
 
 type BrandPageDesign = {
   art: string;
@@ -274,6 +278,12 @@ const MERCEDES_CORE_SERVICES = [
 ];
 
 const MERCEDES_COMMON_ISSUES = [
+  {
+    title: 'No power, no crank or the engine will not start',
+    description: 'A Mercedes no-start can involve the 12-volt supply, starter circuit, key authorisation, fuel, ignition, engine-speed input or another control fault. The first step is to identify whether the car has no power, will not crank or cranks without starting.',
+    path: `${MERCEDES_PROBLEMS_PATH}/wont-start`,
+    label: 'Read the Mercedes no-start guide',
+  },
   {
     title: 'Suspension Fault or one side sitting low',
     description: 'AIRMATIC, ABC and E-ACTIVE systems can involve an air spring, compressor, valve block, pressure leak, sensor or electrical fault. S-Class, GLE and GLS vehicles need system testing before a component is replaced.',
@@ -608,8 +618,8 @@ const BrandPage = () => {
               alt={heroImageAlt}
               aria-hidden={heroImageAlt ? undefined : true}
               fetchPriority="high"
-              width={priorityBrandSeo?.heroImageWidth}
-              height={priorityBrandSeo?.heroImageHeight}
+              width={priorityBrandSeo?.heroImageWidth ?? (isMercedesServiceHub ? 1200 : undefined)}
+              height={priorityBrandSeo?.heroImageHeight ?? (isMercedesServiceHub ? 1600 : undefined)}
               className="brand-hero__media absolute inset-0 h-full w-full object-cover opacity-70"
               style={{ objectPosition: brandPageDesign.heroPosition }}
             />
@@ -624,7 +634,7 @@ const BrandPage = () => {
               <div className="brand-hero__identity mb-6 flex items-center gap-4">
                 <div className="brand-logo-lockup flex h-14 w-20 items-center justify-center overflow-hidden bg-white/[0.94] p-2 sm:h-16 sm:w-24">
                   {brand.logo ? (
-                    <img src={brand.logo} alt={`${brand.name} logo`} className="w-full h-full object-contain" />
+                    <img src={brand.logo} alt={`${brand.name} logo`} width="96" height="64" decoding="async" className="w-full h-full object-contain" />
                   ) : (
                     <span className="text-2xl font-semibold text-burnt-orange">{brand.name.charAt(0)}</span>
                   )}
@@ -726,6 +736,29 @@ const BrandPage = () => {
         </section>
       )}
 
+      {isMercedesServiceHub && !isArabic && (
+        <nav aria-label="Mercedes page sections" className="sticky top-[76px] z-30 border-y border-white/10 bg-black/90 backdrop-blur lg:top-[97px]">
+          <div className="relative mx-auto max-w-7xl">
+          <div className="flex gap-2 overflow-x-auto px-4 py-3 pr-12 sm:px-6 sm:pr-14">
+            {[
+              ['Services', '#mercedes-services'],
+              ['Problems', '#mercedes-problems'],
+              ['Models', '#mercedes-models'],
+              ['Maintenance', '#mercedes-maintenance-scope'],
+              ['Reviews', '#mercedes-reviews'],
+              ['FAQs', '#mercedes-faqs'],
+              ['Book', '#mercedes-booking'],
+            ].map(([label, href]) => (
+              <a key={href} href={href} className="inline-flex min-h-11 shrink-0 items-center rounded-full border border-white/10 px-4 py-2 text-xs font-semibold text-white/65 transition-colors hover:border-burnt-orange/50 hover:text-burnt-orange focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-burnt-orange">
+                {label}
+              </a>
+            ))}
+          </div>
+          <span aria-hidden="true" className="pointer-events-none absolute inset-y-0 right-0 w-12 bg-gradient-to-l from-black via-black/85 to-transparent" />
+          </div>
+        </nav>
+      )}
+
       {isPorscheServiceHub && !isArabic && <PorscheKnowledgeCentre />}
 
       {isFerrari && !isArabic && <FerrariKnowledgeCentre />}
@@ -789,7 +822,7 @@ const BrandPage = () => {
 
       {/* Services */}
       {isEnglishAstonHub ? <AstonMartinHubSections /> : isEnglishAudiHub ? <AudiHubSections /> : isEnglishBentleyHub ? <BentleyHubSections /> : isEnglishRoxHub ? <RoxHubSections /> : isEnglishMclarenHub ? <MclarenHubSections /> : isEnglishLamborghiniHub ? <LamborghiniHubSections /> : isEnglishRollsRoyceHub ? <RollsRoyceHubSections /> : isEnglishBmwHub ? <BmwCoreServices /> : isFerrari && !isArabic ? null : (
-      <section id={isPorscheServiceHub && !isArabic ? 'porsche-services' : undefined} className="brand-section brand-section--services scroll-mt-24 py-12 sm:py-20 bg-black border-t border-white/5">
+      <section id={isPorscheServiceHub && !isArabic ? 'porsche-services' : isMercedesServiceHub && !isArabic ? 'mercedes-services' : undefined} className={`brand-section brand-section--services ${isMercedesServiceHub && !isArabic ? 'scroll-mt-[10rem]' : 'scroll-mt-24'} py-12 sm:py-20 bg-black border-t border-white/5`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="brand-section-heading text-center mb-10 sm:mb-14">
             <h2 className="text-2xl sm:text-4xl lg:text-5xl font-black mb-3 sm:mb-4">
@@ -948,7 +981,7 @@ const BrandPage = () => {
       )}
 
       {isMercedesServiceHub && !isArabic && (
-        <section className="brand-section brand-section--issues py-12 sm:py-20 bg-black border-t border-white/5">
+        <section id="mercedes-problems" className="brand-section brand-section--issues scroll-mt-[10rem] py-12 sm:py-20 bg-black border-t border-white/5">
           <div className="max-w-7xl mx-auto px-4 sm:px-6">
             <div className="brand-section-heading text-center mb-8 sm:mb-12">
               <h2 className="text-2xl sm:text-4xl lg:text-5xl font-black mb-3">
@@ -1037,7 +1070,7 @@ const BrandPage = () => {
       )}
 
       {isMercedesServiceHub && !isArabic && (
-        <section className="brand-section brand-section--models py-12 sm:py-20 bg-gradient-to-br from-charcoal/40 to-black border-t border-white/5">
+        <section id="mercedes-models" className="brand-section brand-section--models scroll-mt-[10rem] py-12 sm:py-20 bg-gradient-to-br from-charcoal/40 to-black border-t border-white/5">
           <div className="max-w-7xl mx-auto px-4 sm:px-6">
             <div className="brand-section-heading text-center mb-8 sm:mb-12">
               <h2 className="text-2xl sm:text-4xl lg:text-5xl font-black mb-3">
@@ -1065,7 +1098,7 @@ const BrandPage = () => {
                   <p className="text-burnt-orange text-sm font-semibold mt-2">{group.models}</p>
                   <p className="text-gray-400 text-sm leading-relaxed mt-3">{group.description}</p>
                   <ul className="flex flex-wrap gap-x-4 gap-y-2 mt-4" aria-label={`${group.title} related services`}>
-                    {group.links.map((link) => (
+                    {group.links.slice(0, 1).map((link) => (
                       <li key={link.label}>
                         <Link to={link.path} className="inline-flex items-center gap-1 text-burnt-orange text-sm font-semibold hover:text-off-white transition-colors">
                           {link.label} <ArrowRight className="w-3.5 h-3.5" />
@@ -1294,7 +1327,7 @@ const BrandPage = () => {
       {/* FAQ */}
       </>
       )}
-      <section className="brand-section brand-section--faq py-12 sm:py-20 bg-gradient-to-br from-charcoal/40 to-black border-t border-white/5">
+      <section id={isMercedesServiceHub && !isArabic ? 'mercedes-faqs' : undefined} className={`brand-section brand-section--faq ${isMercedesServiceHub && !isArabic ? 'scroll-mt-[10rem]' : 'scroll-mt-24'} py-12 sm:py-20 bg-gradient-to-br from-charcoal/40 to-black border-t border-white/5`}>
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <div className="brand-section-heading text-center mb-8 sm:mb-12">
             <h2 className="text-2xl sm:text-4xl lg:text-5xl font-black mb-3 sm:mb-4">
@@ -1325,8 +1358,10 @@ const BrandPage = () => {
 
       {!isArabic && <BrandPaintCareLinks brandName={brand.name} />}
 
+      {isMercedesServiceHub && !isArabic && <div id="mercedes-reviews" className="scroll-mt-[10rem]"><GoogleReviews /></div>}
+
       {/* Booking CTA + Form */}
-      <section className="brand-section brand-section--booking py-12 sm:py-20 bg-black border-t border-white/5">
+      <section id={isMercedesServiceHub && !isArabic ? 'mercedes-booking' : undefined} className={`brand-section brand-section--booking ${isMercedesServiceHub && !isArabic ? 'scroll-mt-[10rem]' : 'scroll-mt-24'} py-12 sm:py-20 bg-black border-t border-white/5`}>
         <div className="max-w-5xl mx-auto px-4 sm:px-6">
           <div className="brand-booking-grid grid lg:grid-cols-2 gap-8 lg:gap-12 items-start">
             <div>
@@ -1370,7 +1405,7 @@ const BrandPage = () => {
       </section>
 
       {/* Related Services */}
-      {relatedServices.length > 0 && (
+      {relatedServices.length > 0 && !isMercedesServiceHub && (
         <section className="brand-section brand-section--related py-12 sm:py-20 bg-gradient-to-br from-charcoal/40 to-black border-t border-white/5">
           <div className="max-w-7xl mx-auto px-4 sm:px-6">
             <div className="brand-section-heading text-center mb-8 sm:mb-12">
@@ -1416,7 +1451,7 @@ const BrandPage = () => {
       )}
 
       {/* Other Brands */}
-      <section className="brand-section brand-section--other-brands py-12 sm:py-20 bg-black border-t border-white/5">
+      {!isMercedesServiceHub && <section className="brand-section brand-section--other-brands py-12 sm:py-20 bg-black border-t border-white/5">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="brand-section-heading text-center mb-8 sm:mb-12">
             <h2 className="text-2xl sm:text-4xl font-black mb-3">
@@ -1436,7 +1471,7 @@ const BrandPage = () => {
               >
                 <div className="w-14 h-14 sm:w-16 sm:h-16 p-2 bg-white/90 rounded-full flex items-center justify-center overflow-hidden group-hover:scale-110 transition-transform duration-300">
                   {b.logo ? (
-                    <img src={b.logo} alt={isArabic ? `شعار ${b.name}` : `${b.name} logo`} className="w-full h-full object-contain" />
+                    <img src={b.logo} alt={isArabic ? `شعار ${b.name}` : `${b.name} logo`} width="64" height="64" loading="lazy" decoding="async" className="w-full h-full object-contain" />
                   ) : (
                     <span className="text-xl font-black text-burnt-orange">{b.name.charAt(0)}</span>
                   )}
@@ -1448,7 +1483,7 @@ const BrandPage = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section>}
 
       </main>
 
