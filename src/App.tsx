@@ -55,14 +55,38 @@ import { audiModelPages, audiModelPath } from "./data/audiModelPages";
 import { ferrariModelPages } from "./data/ferrariModelPages";
 
 const ScrollToTop = () => {
-  const { pathname } = useLocation();
+  const { pathname, hash } = useLocation();
   useEffect(() => {
     if (typeof window === 'undefined') return;
-    window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
     if ('scrollRestoration' in window.history) {
       window.history.scrollRestoration = 'manual';
     }
-  }, [pathname]);
+    if (!hash) {
+      window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+      return;
+    }
+    // A related-service fragment may arrive before its lazy route has mounted.
+    let id: string;
+    try { id = decodeURIComponent(hash.slice(1)); } catch { return; }
+    let frame: number;
+    const revealTarget = () => {
+      const target = document.getElementById(id);
+      if (!target) return false;
+      frame = window.requestAnimationFrame(() => target.scrollIntoView({ block: 'start' }));
+      return true;
+    };
+    if (revealTarget()) return () => window.cancelAnimationFrame(frame);
+    const observer = new MutationObserver(() => {
+      if (revealTarget()) observer.disconnect();
+    });
+    observer.observe(document.getElementById('root') ?? document.body, { childList: true, subtree: true });
+    const timeout = window.setTimeout(() => observer.disconnect(), 5000);
+    return () => {
+      observer.disconnect();
+      window.clearTimeout(timeout);
+      window.cancelAnimationFrame(frame);
+    };
+  }, [pathname, hash]);
   return null;
 };
 

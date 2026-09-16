@@ -3,7 +3,7 @@
 // deliberately not asserted without a confirmed product or job record.
 export const PPF_PATH = '/services/paint-protection-film';
 export const PPF_TITLE = 'PPF Dubai | Paint Protection Film for Cars | DIGI-TEC';
-export const PPF_DESCRIPTION = 'PPF installation in Dubai for luxury and performance cars. Explore full-body and selected-panel paint protection film at DIGI-TEC. Get your car’s quote.';
+export const PPF_DESCRIPTION = 'Car paint protection film in Dubai. Compare full-body and selected-panel PPF, preparation and aftercare at DIGI-TEC in Al Quoz. Request a quote for your car.';
 export const PPF_H1 = 'Paint Protection Film (PPF) Dubai';
 export const PPF_WHATSAPP = `https://wa.me/97143402223?text=${encodeURIComponent('Hi DIGI-TEC, I would like a PPF quote for my car. Please help me choose the coverage.')}`;
 

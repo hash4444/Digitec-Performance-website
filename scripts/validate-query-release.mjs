@@ -15,6 +15,8 @@ const expected = new Map([
   ['/services/oil-change-dubai', 'Car Oil Change Dubai | Engine Oil &amp; Filter Service | DIGI-TEC'],
   ['/services/exhaust-repair-dubai', 'Exhaust &amp; Muffler Repair Dubai | DIGI-TEC'],
   ['/services/steering-repair-dubai', 'Power Steering &amp; Rack Repair Dubai | DIGI-TEC'],
+  ['/blog/ferrari-maintenance-guide-dubai', 'Ferrari Maintenance Dubai | Schedule, Cost &amp; Service'],
+  ['/blog/porsche-maintenance-guide-dubai', 'Porsche Maintenance Dubai: Service Guide | Digi-Tec'],
 ]);
 const htmlFor = route => readFile(path.join(root, 'dist', route, 'index.html'), 'utf8');
 for (const route of routes) {
@@ -29,6 +31,18 @@ assert.match(steering, /Request a Porsche Steering Inspection/);
 const transmission = await htmlFor('/brands/bmw-service-dubai/transmission-repair');
 assert.match(transmission, /Delayed engagement, rough shifts, slipping/);
 assert.match(transmission, /Compare service and repair options/);
+const ferrariGuide = await htmlFor('/blog/ferrari-maintenance-guide-dubai');
+assert.match(ferrariGuide, /Ferrari Maintenance Dubai: Schedule, Cost/);
+assert.match(ferrariGuide, /Ferrari maintenance in Dubai: the short answer/);
+assert.match(ferrariGuide, /href="\/brands\/ferrari-service-dubai\/oil-change"/);
+assert.match(ferrariGuide, /"dateModified":"2026-09-14"/);
+const porscheGuide = await htmlFor('/blog/porsche-maintenance-guide-dubai');
+assert.match(porscheGuide, /Porsche Maintenance in Dubai: Intervals/);
+assert.match(porscheGuide, /Porsche workshop services in Dubai/);
+assert.match(porscheGuide, /href="\/brands\/porsche-service-dubai\/transmission-repair"/);
+assert.match(porscheGuide, /"@type":"ItemList"/);
+assert.match(porscheGuide, /How often should a Porsche be serviced in Dubai/);
+assert.match(porscheGuide, /"dateModified":"2026-09-14"/);
 for (const route of routes.filter(r => r.family === 'brand-service' || r.path.startsWith('/services/mercedes-'))) {
   const html = await htmlFor(route.path);
   assert.doesNotMatch(html, /Models We (?:<[^>]+>)*\s*(?:Steering|Transmission|Oil|Brake|AC|Engine|Electrical|Battery|Suspension|Body|Fuel|Tire|Exhaust)/, route.path);
@@ -90,6 +104,6 @@ const {trackWhatsAppClick} = await import(`data:text/javascript;base64,${Buffer.
 trackWhatsAppClick('https://wa.me/97143402223?text=TEST_NAME%20TEST_VIN%20TEST_PHONE#private');
 assert.deepEqual(window.dataLayer, [{event: 'whatsapp_click', link_url: 'https://wa.me/97143402223', page_path: '/services/oil-change-dubai'}]);
 delete globalThis.window;
-const report = {passed: true, routes: routes.length, titleChecks: expected.size, internalLinksChecked: internalLinks, existingLocaleFallbackLinks, realHtmlRedirectCases: redirects, roxEnglishOnlyIndexation: true, whatsappPiiAndSingleEvent: true};
+const report = {passed: true, routes: routes.length, titleChecks: expected.size, maintenanceGuideChecks: 2, internalLinksChecked: internalLinks, existingLocaleFallbackLinks, realHtmlRedirectCases: redirects, roxEnglishOnlyIndexation: true, whatsappPiiAndSingleEvent: true};
 await writeFile('docs/seo/query-release-validation.json', JSON.stringify(report, null, 2));
 console.log(`Query release checks passed: ${expected.size} titles, ${internalLinks} links, ${redirects} real-HTML redirect cases, ROX directives and WhatsApp privacy. ${existingLocaleFallbackLinks.length} existing locale/alias fallback links recorded for review.`);

@@ -1,0 +1,36 @@
+{
+  "checkedAt": "2026-09-16T08:25:01.455Z",
+  "passed": true,
+  "results": [
+    {
+      "name": "TypeScript app",
+      "command": "node node_modules/typescript/bin/tsc --noEmit -p tsconfig.app.json",
+      "exitCode": 0,
+      "log": "outputs/seo-2026-09-16/typescript-app.log"
+    },
+    {
+      "name": "TypeScript node",
+      "command": "node node_modules/typescript/bin/tsc --noEmit -p tsconfig.node.json",
+      "exitCode": 0,
+      "log": "outputs/seo-2026-09-16/typescript-node.log"
+    },
+    {
+      "name": "ESLint",
+      "command": "node node_modules/eslint/bin/eslint.js .",
+      "exitCode": 0,
+      "log": "outputs/seo-2026-09-16/eslint.log"
+    },
+    {
+      "name": "Master SEO",
+      "command": "node scripts/validate-master-seo.mjs",
+      "exitCode": 0,
+      "log": "outputs/seo-2026-09-16/master-seo.log"
+    },
+    {
+      "name": "BMW hub",
+      "command": "node scripts/validate-bmw-hub.mjs",
+      "exitCode": 0,
+      "log": "outputs/seo-2026-09-16/bmw-hub.log"
+    }
+  ]
+}

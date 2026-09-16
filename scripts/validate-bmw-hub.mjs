@@ -4,8 +4,8 @@ import { getPublicRoutes } from '../dist-server/entry-server.js';
 
 const hub = '/brands/bmw-service-dubai';
 const origin = 'https://digitecme.com';
-const expectedTitle = 'BMW Service & Repair Dubai | Independent BMW Workshop | DIGI-TEC';
-const expectedDescription = 'BMW service, repair, diagnostics and maintenance in Al Quoz, Dubai. DIGI-TEC inspects BMW engine, transmission, brakes, AC, electrical and coding concerns. Book via WhatsApp.';
+const expectedTitle = 'BMW Service & Repair Dubai | DIGI-TEC';
+const expectedDescription = 'BMW service and repair in Al Quoz, Dubai. Independent workshop for scheduled maintenance, engine diagnostics, transmission, brakes, AC and electrical faults.';
 const services = ['oil-change', 'mechanical-repair', 'engine-diagnostics', 'transmission-repair', 'brake-repair', 'suspension-repair', 'ac-repair', 'electrical-repair', 'battery-replacement', 'body-repair', 'steering-repair', 'exhaust-repair', 'fuel-system-repair', 'tire-repair'];
 const models = ['3-series', 'm5', 'm4', '5-series', 'x5', 'x6', 'm3'];
 const routes = getPublicRoutes();

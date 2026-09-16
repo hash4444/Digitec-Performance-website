@@ -34,6 +34,16 @@ export const BmwCoreServices = () => (
         <h2 id="bmw-services-heading" className="text-3xl font-black sm:text-5xl">BMW service in Dubai, from routine care to fault finding</h2>
         <p className="mt-5 text-base leading-relaxed text-gray-300">Choose the concern you need help with. Each service page explains the inspection and repair options in more detail, with scope confirmed for your BMW.</p>
       </div>
+      <div className="mb-8 grid gap-5 md:grid-cols-2">
+        <article className="rounded-2xl border border-white/10 p-6">
+          <h3 className="text-xl font-bold">Service due or history incomplete?</h3>
+          <p className="mt-3 text-base leading-relaxed text-gray-300">Bring the Condition Based Service information and any available invoices. Our <Link to={bmwServicePath('oil-change')} className="font-semibold text-burnt-orange hover:underline">BMW oil service and maintenance checks</Link> help establish what is due for the engine, mileage and history before agreeing the work.</p>
+        </article>
+        <article className="rounded-2xl border border-white/10 p-6">
+          <h3 className="text-xl font-bold">Battery warning or slow starting?</h3>
+          <p className="mt-3 text-base leading-relaxed text-gray-300">Start with <Link to={bmwServicePath('battery-replacement')} className="font-semibold text-burnt-orange hover:underline">BMW battery and charging checks</Link>. Repeated discharge may need <Link to="/services/auto-electrical-repair-dubai" className="font-semibold text-burnt-orange hover:underline">electrical fault tracing</Link>; fitting a battery alone may leave the cause unresolved.</p>
+        </article>
+      </div>
       <div className="brand-services-grid grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
         {BMW_CORE_SERVICES.map((service) => (
           <article key={service.slug} className="card-premium flex flex-col rounded-2xl p-6">

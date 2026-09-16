@@ -200,7 +200,26 @@ const currentMercedesSeoPaths = new Set([
   '/mercedes/problems/wont-start',
 ]);
 
-export const publicRoutes = [...routeMap.values()].map((route) => currentMercedesSeoPaths.has(route.path) ? { ...route, lastmod: '2026-09-14' } : (route.path === '/services/transmission-repair-dubai' || oilChangeUpdatedPaths.has(route.path) || suspensionUpdatedPaths.has(route.path)) ? { ...route, lastmod: '2026-09-10' } : queryReleaseChanged(route) ? { ...route, lastmod: '2026-09-09' } : (paintCareUpdatedPaths.has(route.path) || mercedesUpdatedPaths.has(route.path)) ? { ...route, lastmod: '2026-09-08' } : route).sort((a, b) =>
+const currentMaintenanceGuidePaths = new Set([
+  '/blog/ferrari-maintenance-guide-dubai',
+  '/ar/blog/ferrari-maintenance-guide-dubai',
+  '/blog/porsche-maintenance-guide-dubai',
+]);
+
+const masterSeoUpdatedPaths = new Set([
+  '/services', '/sitemap',
+  '/brands/bmw-service-dubai', '/brands/rolls-royce-service-dubai',
+  '/brands/aston-martin-service-dubai', '/brands/bentley-service-dubai',
+  '/brands/cadillac-service-dubai', '/brands/mercedes-benz-service-dubai',
+  '/brands/bentley-service-dubai/electrical-repair',
+  '/services/mercedes-electrical-repair-dubai',
+  '/services/paint-protection-film', '/services/ceramic-coating',
+  '/services/auto-electrical-repair-dubai', '/services/tire-repair-dubai',
+  '/services/cadillac-cue-screen-repair-dubai', '/services/head-unit-repair-dubai',
+  '/services/mercedes-audio-upgrade-dubai',
+]);
+
+export const publicRoutes = [...routeMap.values()].map((route) => masterSeoUpdatedPaths.has(route.path) ? { ...route, lastmod: '2026-09-16' } : (currentMercedesSeoPaths.has(route.path) || currentMaintenanceGuidePaths.has(route.path)) ? { ...route, lastmod: '2026-09-14' } : (route.path === '/services/transmission-repair-dubai' || oilChangeUpdatedPaths.has(route.path) || suspensionUpdatedPaths.has(route.path)) ? { ...route, lastmod: '2026-09-10' } : queryReleaseChanged(route) ? { ...route, lastmod: '2026-09-09' } : (paintCareUpdatedPaths.has(route.path) || mercedesUpdatedPaths.has(route.path)) ? { ...route, lastmod: '2026-09-08' } : route).sort((a, b) =>
   a.path.localeCompare(b.path),
 );
 

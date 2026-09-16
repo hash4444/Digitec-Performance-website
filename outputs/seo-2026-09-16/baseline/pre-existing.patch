@@ -1,0 +1,798 @@
+diff --git a/docs/seo/protection-release-validation.json b/docs/seo/protection-release-validation.json
+index 25a6b0b..0abb10d 100644
+--- a/docs/seo/protection-release-validation.json
++++ b/docs/seo/protection-release-validation.json
+@@ -1,9 +1,9 @@
+ {
+-  "checkedAt": "2026-09-14T06:53:50.156Z",
++  "checkedAt": "2026-09-14T08:45:12.837Z",
+   "passed": true,
+   "outputDirectory": "dist",
+-  "clientEntry": "assets/index-JdE-okSy.js",
+-  "clientSha256": "cf4ad1af6c063f7467e2a62f95dee47a72809f5f2a48cec7d013bea8c9612976",
++  "clientEntry": "assets/index-C4rI1vlK.js",
++  "clientSha256": "dc7be18c3a9c34ee154b63646367bf03f23621bd74298a41e1501710a6eb89f3",
+   "prerenderedRoutes": 1244,
+   "sitemapUrls": 993,
+   "pages": [
+@@ -13,8 +13,8 @@
+       "canonical": "https://digitecme.com/services/paint-protection-film",
+       "title": "PPF Dubai | Paint Protection Film for Cars | DIGI-TEC",
+       "internalLinks": 56,
+-      "htmlSha256": "7f08b574ab4fc86329ac3c581940625f1c0e8ca0b116376927014308a6fd1031",
+-      "clientChunk": "assets/PpfPage-DhOON_HJ.js",
++      "htmlSha256": "35e6a24aa67c36ce06e044d27414c41f67682e1d298905ae1b14d0e07e85ea3c",
++      "clientChunk": "assets/PpfPage-CtjcBoff.js",
+       "checks": "passed"
+     },
+     {
+@@ -23,8 +23,8 @@
+       "canonical": "https://digitecme.com/services/ceramic-coating",
+       "title": "Ceramic Coating Dubai | Car Paint Protection | DIGI-TEC",
+       "internalLinks": 52,
+-      "htmlSha256": "d3fd3ecb7014db977e5460181903c6d884521f050b7b9b6d1cef9389d826819c",
+-      "clientChunk": "assets/CeramicCoatingPage-CHZPUnL3.js",
++      "htmlSha256": "f9130d3312b3c6ca4b5d2dbc31f74e5f18e7b4b50966cdc7ca32eb67aa1f5a01",
++      "clientChunk": "assets/CeramicCoatingPage-BYYZm44O.js",
+       "checks": "passed"
+     },
+     {
+@@ -33,8 +33,8 @@
+       "canonical": "https://digitecme.com/services/car-polishing-dubai",
+       "title": "Car Polishing & Paint Correction Dubai | DIGI-TEC",
+       "internalLinks": 51,
+-      "htmlSha256": "8f8f83da6ba77aab222f75eff018eeaa2c3c9c1a06e9eb4a79a1ce949ba3a902",
+-      "clientChunk": "assets/PaintCorrectionPage-AEjcRt_G.js",
++      "htmlSha256": "a8172cbf81001d65334d3c1964b57683b39346ceac197e45cdbfe6c85c77db11",
++      "clientChunk": "assets/PaintCorrectionPage-DMFGKQqL.js",
+       "checks": "passed"
+     }
+   ]
+diff --git a/docs/seo/query-release-validation.json b/docs/seo/query-release-validation.json
+index ce20436..48591a2 100644
+--- a/docs/seo/query-release-validation.json
++++ b/docs/seo/query-release-validation.json
+@@ -1,7 +1,8 @@
+ {
+   "passed": true,
+   "routes": 1244,
+-  "titleChecks": 6,
++  "titleChecks": 8,
++  "maintenanceGuideChecks": 2,
+   "internalLinksChecked": 44195,
+   "existingLocaleFallbackLinks": [],
+   "realHtmlRedirectCases": 16,
+diff --git a/docs/seo/route-schema-matrix.csv b/docs/seo/route-schema-matrix.csv
+index 5395e9a..da56ac8 100644
+--- a/docs/seo/route-schema-matrix.csv
++++ b/docs/seo/route-schema-matrix.csv
+@@ -40,7 +40,7 @@
+ "https://digitecme.com/ar/blog/defender-service-dubai-guide","/ar/blog/defender-service-dubai-guide","ar-AE","article","Owner guide or workshop article","index, follow","Owner guide or workshop article","Some routes missing initial schema; otherwise conflicting Article/BlogPosting graphs","Answer; AutoRepair; AutomotiveBusiness; BlogPosting; BreadcrumbList; City; ContactPoint; FAQPage; ImageObject; ItemPage; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Question; Service; WebSite","ItemPage, BreadcrumbList, BlogPosting, visible FAQPage when present","Yes","3","Linked","Defender Service Dubai | Land Rover Defender Maintenance Guide"
+ "https://digitecme.com/ar/blog/ecu-remap-safe-dubai-guide","/ar/blog/ecu-remap-safe-dubai-guide","ar-AE","article","Owner guide or workshop article","index, follow","Owner guide or workshop article","Some routes missing initial schema; otherwise conflicting Article/BlogPosting graphs","Answer; AutoRepair; AutomotiveBusiness; BlogPosting; BreadcrumbList; City; ContactPoint; FAQPage; ImageObject; ItemPage; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Question; Service; WebSite","ItemPage, BreadcrumbList, BlogPosting, visible FAQPage when present","Yes","3","Linked","ECU Remap Dubai | Is Tuning Safe for Your Car?"
+ "https://digitecme.com/ar/blog/engine-overheating-dubai-what-to-do","/ar/blog/engine-overheating-dubai-what-to-do","ar-AE","article","Owner guide or workshop article","index, follow","Owner guide or workshop article","Some routes missing initial schema; otherwise conflicting Article/BlogPosting graphs","Answer; AutoRepair; AutomotiveBusiness; BlogPosting; BreadcrumbList; City; ContactPoint; FAQPage; ImageObject; ItemPage; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Question; Service; WebSite","ItemPage, BreadcrumbList, BlogPosting, visible FAQPage when present","Yes","3","Linked","Engine Overheating Dubai | Causes and What to Do Immediately"
+-"https://digitecme.com/ar/blog/ferrari-488-service-dubai-guide","/ar/blog/ferrari-488-service-dubai-guide","ar-AE","article","Owner guide or workshop article","index, follow","Owner guide or workshop article","Some routes missing initial schema; otherwise conflicting Article/BlogPosting graphs","Answer; AutoRepair; AutomotiveBusiness; BlogPosting; BreadcrumbList; City; ContactPoint; FAQPage; ImageObject; ItemPage; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Question; Service; WebSite","ItemPage, BreadcrumbList, BlogPosting, visible FAQPage when present","Yes","3","Linked","Ferrari 488 Service Dubai | Maintenance and Inspection Guide"
++"https://digitecme.com/ar/blog/ferrari-488-service-dubai-guide","/ar/blog/ferrari-488-service-dubai-guide","ar-AE","article","Owner guide or workshop article","index, follow","Owner guide or workshop article","Some routes missing initial schema; otherwise conflicting Article/BlogPosting graphs","Answer; AutoRepair; AutomotiveBusiness; BlogPosting; BreadcrumbList; City; ContactPoint; FAQPage; ImageObject; ItemPage; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Question; Service; WebSite","ItemPage, BreadcrumbList, BlogPosting, visible FAQPage when present","Yes","4","Linked","Ferrari 488 Service Dubai | Maintenance and Inspection Guide"
+ "https://digitecme.com/ar/blog/ferrari-maintenance-guide-dubai","/ar/blog/ferrari-maintenance-guide-dubai","ar-AE","article","Owner guide or workshop article","index, follow","Owner guide or workshop article","Some routes missing initial schema; otherwise conflicting Article/BlogPosting graphs","Answer; AutoRepair; AutomotiveBusiness; BlogPosting; BreadcrumbList; City; ContactPoint; FAQPage; ImageObject; ItemPage; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Question; Service; WebSite","ItemPage, BreadcrumbList, BlogPosting, visible FAQPage when present","Yes","3","Linked","صيانة فيراري في دبي | جدول الخدمة والتكلفة"
+ "https://digitecme.com/ar/blog/ford-best-workshop-dubai","/ar/blog/ford-best-workshop-dubai","ar-AE","article","Owner guide or workshop article","index, follow","Owner guide or workshop article","Some routes missing initial schema; otherwise conflicting Article/BlogPosting graphs","Answer; AutoRepair; AutomotiveBusiness; BlogPosting; BreadcrumbList; City; ContactPoint; FAQPage; ImageObject; ItemPage; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Question; Service; WebSite","ItemPage, BreadcrumbList, BlogPosting, visible FAQPage when present","Yes","3","Linked","ورشة Ford في دبي | ديجي-تك"
+ "https://digitecme.com/ar/blog/g63-to-brabus-g800-conversion-dubai","/ar/blog/g63-to-brabus-g800-conversion-dubai","ar-AE","article","Owner guide or workshop article","index, follow","Owner guide or workshop article","Some routes missing initial schema; otherwise conflicting Article/BlogPosting graphs","Answer; AutoRepair; AutomotiveBusiness; BlogPosting; BreadcrumbList; City; ContactPoint; FAQPage; ImageObject; ItemPage; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Question; Service; WebSite","ItemPage, BreadcrumbList, BlogPosting, visible FAQPage when present","Yes","3","Linked","G63 to BRABUS G 800 Conversion Dubai | Before &amp; After"
+@@ -51,13 +51,13 @@
+ "https://digitecme.com/ar/blog/lamborghini-urus-service-dubai-guide","/ar/blog/lamborghini-urus-service-dubai-guide","ar-AE","article","Owner guide or workshop article","index, follow","Owner guide or workshop article","Some routes missing initial schema; otherwise conflicting Article/BlogPosting graphs","Answer; AutoRepair; AutomotiveBusiness; BlogPosting; BreadcrumbList; City; ContactPoint; FAQPage; ImageObject; ItemPage; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Question; Service; WebSite","ItemPage, BreadcrumbList, BlogPosting, visible FAQPage when present","Yes","3","Linked","Lamborghini Urus Service Dubai | Maintenance and Repair Guide"
+ "https://digitecme.com/ar/blog/land-rover-best-workshop-dubai","/ar/blog/land-rover-best-workshop-dubai","ar-AE","article","Owner guide or workshop article","index, follow","Owner guide or workshop article","Some routes missing initial schema; otherwise conflicting Article/BlogPosting graphs","Answer; AutoRepair; AutomotiveBusiness; BlogPosting; BreadcrumbList; City; ContactPoint; FAQPage; ImageObject; ItemPage; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Question; Service; WebSite","ItemPage, BreadcrumbList, BlogPosting, visible FAQPage when present","Yes","3","Linked","ورشة Land Rover في دبي | ديجي-تك"
+ "https://digitecme.com/ar/blog/maserati-best-workshop-dubai","/ar/blog/maserati-best-workshop-dubai","ar-AE","article","Owner guide or workshop article","index, follow","Owner guide or workshop article","Some routes missing initial schema; otherwise conflicting Article/BlogPosting graphs","Answer; AutoRepair; AutomotiveBusiness; BlogPosting; BreadcrumbList; City; ContactPoint; FAQPage; ImageObject; ItemPage; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Question; Service; WebSite","ItemPage, BreadcrumbList, BlogPosting, visible FAQPage when present","Yes","3","Linked","ورشة Maserati في دبي | ديجي-تك"
+-"https://digitecme.com/ar/blog/maybach-best-workshop-dubai","/ar/blog/maybach-best-workshop-dubai","ar-AE","article","Owner guide or workshop article","index, follow","Owner guide or workshop article","Some routes missing initial schema; otherwise conflicting Article/BlogPosting graphs","Answer; AutoRepair; AutomotiveBusiness; BlogPosting; BreadcrumbList; City; ContactPoint; FAQPage; ImageObject; ItemPage; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Question; Service; WebSite","ItemPage, BreadcrumbList, BlogPosting, visible FAQPage when present","Yes","22","Linked","ورشة Maybach في دبي | ديجي-تك"
++"https://digitecme.com/ar/blog/maybach-best-workshop-dubai","/ar/blog/maybach-best-workshop-dubai","ar-AE","article","Owner guide or workshop article","index, follow","Owner guide or workshop article","Some routes missing initial schema; otherwise conflicting Article/BlogPosting graphs","Answer; AutoRepair; AutomotiveBusiness; BlogPosting; BreadcrumbList; City; ContactPoint; FAQPage; ImageObject; ItemPage; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Question; Service; WebSite","ItemPage, BreadcrumbList, BlogPosting, visible FAQPage when present","Yes","21","Linked","ورشة Maybach في دبي | ديجي-تك"
+ "https://digitecme.com/ar/blog/maybach-s580-service-dubai-guide","/ar/blog/maybach-s580-service-dubai-guide","ar-AE","article","Owner guide or workshop article","index, follow","Owner guide or workshop article","Some routes missing initial schema; otherwise conflicting Article/BlogPosting graphs","Answer; AutoRepair; AutomotiveBusiness; BlogPosting; BreadcrumbList; City; ContactPoint; FAQPage; ImageObject; ItemPage; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Question; Service; WebSite","ItemPage, BreadcrumbList, BlogPosting, visible FAQPage when present","Yes","3","Linked","Maybach Service Dubai | Mercedes-Maybach Maintenance Guide"
+ "https://digitecme.com/ar/blog/mclaren-720s-service-dubai-guide","/ar/blog/mclaren-720s-service-dubai-guide","ar-AE","article","Owner guide or workshop article","index, follow","Owner guide or workshop article","Some routes missing initial schema; otherwise conflicting Article/BlogPosting graphs","Answer; AutoRepair; AutomotiveBusiness; BlogPosting; BreadcrumbList; City; ContactPoint; FAQPage; ImageObject; ItemPage; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Question; Service; WebSite","ItemPage, BreadcrumbList, BlogPosting, visible FAQPage when present","Yes","3","Linked","McLaren 720S Service Dubai | Maintenance and Inspection Guide"
+ "https://digitecme.com/ar/blog/mclaren-best-workshop-dubai","/ar/blog/mclaren-best-workshop-dubai","ar-AE","article","Owner guide or workshop article","index, follow","Owner guide or workshop article","Some routes missing initial schema; otherwise conflicting Article/BlogPosting graphs","Answer; AutoRepair; AutomotiveBusiness; BlogPosting; BreadcrumbList; City; ContactPoint; FAQPage; ImageObject; ItemPage; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Question; Service; WebSite","ItemPage, BreadcrumbList, BlogPosting, visible FAQPage when present","Yes","3","Linked","ورشة McLaren في دبي | ديجي-تك"
+ "https://digitecme.com/ar/blog/mercedes-amg-gt-black-series-1300hp-build-dubai","/ar/blog/mercedes-amg-gt-black-series-1300hp-build-dubai","ar-AE","article","Owner guide or workshop article","index, follow","Owner guide or workshop article","Some routes missing initial schema; otherwise conflicting Article/BlogPosting graphs","Answer; AutoRepair; AutomotiveBusiness; BlogPosting; BreadcrumbList; City; ContactPoint; FAQPage; ImageObject; ItemPage; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Question; Service; WebSite","ItemPage, BreadcrumbList, BlogPosting, visible FAQPage when present","Yes","3","Linked","مشروع GT Black Series بقوة 1300 حصان في دبي | ديجي-تك"
+ "https://digitecme.com/ar/blog/mercedes-amg-gt-tuning-dubai","/ar/blog/mercedes-amg-gt-tuning-dubai","ar-AE","article","Owner guide or workshop article","index, follow","Owner guide or workshop article","Some routes missing initial schema; otherwise conflicting Article/BlogPosting graphs","Answer; AutoRepair; AutomotiveBusiness; BlogPosting; BreadcrumbList; City; ContactPoint; FAQPage; ImageObject; ItemPage; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Question; Service; WebSite","ItemPage, BreadcrumbList, BlogPosting, visible FAQPage when present","Yes","3","Linked","Mercedes AMG GT Tuning Dubai | Vehicle-Specific Guide"
+-"https://digitecme.com/ar/blog/mercedes-benz-maintenance-guide-dubai","/ar/blog/mercedes-benz-maintenance-guide-dubai","ar-AE","article","Owner guide or workshop article","index, follow","Owner guide or workshop article","Some routes missing initial schema; otherwise conflicting Article/BlogPosting graphs","Answer; AutoRepair; AutomotiveBusiness; BlogPosting; BreadcrumbList; City; ContactPoint; FAQPage; ImageObject; ItemPage; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Question; Service; WebSite","ItemPage, BreadcrumbList, BlogPosting, visible FAQPage when present","Yes","22","Linked","ورشة Mercedes-Benz في دبي | ديجي-تك"
++"https://digitecme.com/ar/blog/mercedes-benz-maintenance-guide-dubai","/ar/blog/mercedes-benz-maintenance-guide-dubai","ar-AE","article","Owner guide or workshop article","index, follow","Owner guide or workshop article","Some routes missing initial schema; otherwise conflicting Article/BlogPosting graphs","Answer; AutoRepair; AutomotiveBusiness; BlogPosting; BreadcrumbList; City; ContactPoint; FAQPage; ImageObject; ItemPage; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Question; Service; WebSite","ItemPage, BreadcrumbList, BlogPosting, visible FAQPage when present","Yes","21","Linked","ورشة Mercedes-Benz في دبي | ديجي-تك"
+ "https://digitecme.com/ar/blog/mercedes-c-class-service-dubai-guide","/ar/blog/mercedes-c-class-service-dubai-guide","ar-AE","article","Owner guide or workshop article","noindex, follow","Owner guide or workshop article","Some routes missing initial schema; otherwise conflicting Article/BlogPosting graphs","Answer; AutoRepair; AutomotiveBusiness; BlogPosting; BreadcrumbList; City; ContactPoint; FAQPage; ImageObject; ItemPage; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Question; Service; WebSite","ItemPage, BreadcrumbList, BlogPosting, visible FAQPage when present","No","2","Linked","Mercedes C-Class Service Dubai | Owner Maintenance Guide"
+ "https://digitecme.com/ar/blog/mercedes-e-class-service-dubai-guide","/ar/blog/mercedes-e-class-service-dubai-guide","ar-AE","article","Owner guide or workshop article","noindex, follow","Owner guide or workshop article","Some routes missing initial schema; otherwise conflicting Article/BlogPosting graphs","Answer; AutoRepair; AutomotiveBusiness; BlogPosting; BreadcrumbList; City; ContactPoint; FAQPage; ImageObject; ItemPage; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Question; Service; WebSite","ItemPage, BreadcrumbList, BlogPosting, visible FAQPage when present","No","2","Linked","Mercedes E-Class Service Dubai | Maintenance and Repair Guide"
+ "https://digitecme.com/ar/blog/mercedes-g63-service-dubai-guide","/ar/blog/mercedes-g63-service-dubai-guide","ar-AE","article","Owner guide or workshop article","noindex, follow","Owner guide or workshop article","Some routes missing initial schema; otherwise conflicting Article/BlogPosting graphs","Answer; AutoRepair; AutomotiveBusiness; BlogPosting; BreadcrumbList; City; ContactPoint; FAQPage; ImageObject; ItemPage; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Question; Service; WebSite","ItemPage, BreadcrumbList, BlogPosting, visible FAQPage when present","No","3","Linked","Mercedes G63 Service Dubai | AMG G-Class Owner Guide"
+@@ -69,9 +69,9 @@
+ "https://digitecme.com/ar/blog/oil-specification-guide-dubai-luxury","/ar/blog/oil-specification-guide-dubai-luxury","ar-AE","article","Owner guide or workshop article","index, follow","Owner guide or workshop article","Some routes missing initial schema; otherwise conflicting Article/BlogPosting graphs","Answer; AutoRepair; AutomotiveBusiness; BlogPosting; BreadcrumbList; City; ContactPoint; FAQPage; ImageObject; ItemPage; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Question; Service; WebSite","ItemPage, BreadcrumbList, BlogPosting, visible FAQPage when present","Yes","3","Linked","Engine Oil Specification Dubai | Choosing the Right Oil"
+ "https://digitecme.com/ar/blog/porsche-911-service-dubai-guide","/ar/blog/porsche-911-service-dubai-guide","ar-AE","article","Owner guide or workshop article","index, follow","Owner guide or workshop article","Some routes missing initial schema; otherwise conflicting Article/BlogPosting graphs","Answer; AutoRepair; AutomotiveBusiness; BlogPosting; BreadcrumbList; City; ContactPoint; FAQPage; ImageObject; ItemPage; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Question; Service; WebSite","ItemPage, BreadcrumbList, BlogPosting, visible FAQPage when present","Yes","3","Linked","Porsche 911 Service &amp; Repair Dubai | Digi-Tec"
+ "https://digitecme.com/ar/blog/porsche-cayenne-service-dubai-guide","/ar/blog/porsche-cayenne-service-dubai-guide","ar-AE","article","Owner guide or workshop article","index, follow","Owner guide or workshop article","Some routes missing initial schema; otherwise conflicting Article/BlogPosting graphs","Answer; AutoRepair; AutomotiveBusiness; BlogPosting; BreadcrumbList; City; ContactPoint; FAQPage; ImageObject; ItemPage; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Question; Service; WebSite","ItemPage, BreadcrumbList, BlogPosting, visible FAQPage when present","Yes","3","Linked","Porsche Cayenne Service Dubai | Maintenance and Repair Guide"
+-"https://digitecme.com/ar/blog/porsche-maintenance-guide-dubai","/ar/blog/porsche-maintenance-guide-dubai","ar-AE","article","Owner guide or workshop article","index, follow","Owner guide or workshop article","Some routes missing initial schema; otherwise conflicting Article/BlogPosting graphs","Answer; AutoRepair; AutomotiveBusiness; BlogPosting; BreadcrumbList; City; ContactPoint; FAQPage; ImageObject; ItemPage; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Question; Service; WebSite","ItemPage, BreadcrumbList, BlogPosting, visible FAQPage when present","Yes","22","Linked","ورشة Porsche في دبي | ديجي-تك"
++"https://digitecme.com/ar/blog/porsche-maintenance-guide-dubai","/ar/blog/porsche-maintenance-guide-dubai","ar-AE","article","Owner guide or workshop article","index, follow","Owner guide or workshop article","Some routes missing initial schema; otherwise conflicting Article/BlogPosting graphs","Answer; AutoRepair; AutomotiveBusiness; BlogPosting; BreadcrumbList; City; ContactPoint; FAQPage; ImageObject; ItemPage; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Question; Service; WebSite","ItemPage, BreadcrumbList, BlogPosting, visible FAQPage when present","Yes","21","Linked","ورشة Porsche في دبي | ديجي-تك"
+ "https://digitecme.com/ar/blog/porsche-panamera-service-dubai-guide","/ar/blog/porsche-panamera-service-dubai-guide","ar-AE","article","Owner guide or workshop article","index, follow","Owner guide or workshop article","Some routes missing initial schema; otherwise conflicting Article/BlogPosting graphs","Answer; AutoRepair; AutomotiveBusiness; BlogPosting; BreadcrumbList; City; ContactPoint; FAQPage; ImageObject; ItemPage; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Question; Service; WebSite","ItemPage, BreadcrumbList, BlogPosting, visible FAQPage when present","Yes","3","Linked","Porsche Panamera Service Dubai | Maintenance and Repair Guide"
+-"https://digitecme.com/ar/blog/pre-purchase-inspection-dubai-guide","/ar/blog/pre-purchase-inspection-dubai-guide","ar-AE","article","Owner guide or workshop article","index, follow","Owner guide or workshop article","Some routes missing initial schema; otherwise conflicting Article/BlogPosting graphs","Answer; AutoRepair; AutomotiveBusiness; BlogPosting; BreadcrumbList; City; ContactPoint; FAQPage; ImageObject; ItemPage; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Question; Service; WebSite","ItemPage, BreadcrumbList, BlogPosting, visible FAQPage when present","Yes","3","Linked","Pre-Purchase Inspection Dubai | Used Luxury Car Check Guide"
++"https://digitecme.com/ar/blog/pre-purchase-inspection-dubai-guide","/ar/blog/pre-purchase-inspection-dubai-guide","ar-AE","article","Owner guide or workshop article","index, follow","Owner guide or workshop article","Some routes missing initial schema; otherwise conflicting Article/BlogPosting graphs","Answer; AutoRepair; AutomotiveBusiness; BlogPosting; BreadcrumbList; City; ContactPoint; FAQPage; ImageObject; ItemPage; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Question; Service; WebSite","ItemPage, BreadcrumbList, BlogPosting, visible FAQPage when present","Yes","4","Linked","Pre-Purchase Inspection Dubai | Used Luxury Car Check Guide"
+ "https://digitecme.com/ar/blog/range-rover-land-rover-air-suspension-problems-dubai","/ar/blog/range-rover-land-rover-air-suspension-problems-dubai","ar-AE","article","Owner guide or workshop article","index, follow","Owner guide or workshop article","Some routes missing initial schema; otherwise conflicting Article/BlogPosting graphs","Answer; AutoRepair; AutomotiveBusiness; BlogPosting; BreadcrumbList; City; ContactPoint; FAQPage; ImageObject; ItemPage; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Question; Service; WebSite","ItemPage, BreadcrumbList, BlogPosting, visible FAQPage when present","Yes","3","Linked","إصلاح تعليق رينج روفر الهوائي في دبي | ديجي-تك"
+ "https://digitecme.com/ar/blog/range-rover-maintenance-guide-dubai","/ar/blog/range-rover-maintenance-guide-dubai","ar-AE","article","Owner guide or workshop article","index, follow","Owner guide or workshop article","Some routes missing initial schema; otherwise conflicting Article/BlogPosting graphs","Answer; AutoRepair; AutomotiveBusiness; BlogPosting; BreadcrumbList; City; ContactPoint; FAQPage; ImageObject; ItemPage; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Question; Service; WebSite","ItemPage, BreadcrumbList, BlogPosting, visible FAQPage when present","Yes","3","Linked","ورشة Range Rover في دبي | ديجي-تك"
+ "https://digitecme.com/ar/blog/range-rover-sport-service-dubai-guide","/ar/blog/range-rover-sport-service-dubai-guide","ar-AE","article","Owner guide or workshop article","index, follow","Owner guide or workshop article","Some routes missing initial schema; otherwise conflicting Article/BlogPosting graphs","Answer; AutoRepair; AutomotiveBusiness; BlogPosting; BreadcrumbList; City; ContactPoint; FAQPage; ImageObject; ItemPage; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Question; Service; WebSite","ItemPage, BreadcrumbList, BlogPosting, visible FAQPage when present","Yes","3","Linked","Range Rover Sport Service Dubai | JLR Specialist Guide"
+@@ -609,8 +609,8 @@
+ "https://digitecme.com/blog/defender-service-dubai-guide","/blog/defender-service-dubai-guide","en-AE","article","Owner guide or workshop article","index, follow","Owner guide or workshop article","Some routes missing initial schema; otherwise conflicting Article/BlogPosting graphs","Answer; AutoRepair; AutomotiveBusiness; BlogPosting; BreadcrumbList; City; ContactPoint; FAQPage; ImageObject; ItemPage; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Question; Service; WebSite","ItemPage, BreadcrumbList, BlogPosting, visible FAQPage when present","Yes","3","Linked","Defender Service Dubai | Land Rover Defender Maintenance Guide"
+ "https://digitecme.com/blog/ecu-remap-safe-dubai-guide","/blog/ecu-remap-safe-dubai-guide","en-AE","article","Owner guide or workshop article","index, follow","Owner guide or workshop article","Some routes missing initial schema; otherwise conflicting Article/BlogPosting graphs","Answer; AutoRepair; AutomotiveBusiness; BlogPosting; BreadcrumbList; City; ContactPoint; FAQPage; ImageObject; ItemPage; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Question; Service; WebSite","ItemPage, BreadcrumbList, BlogPosting, visible FAQPage when present","Yes","3","Linked","ECU Remap Dubai | Is Tuning Safe for Your Car?"
+ "https://digitecme.com/blog/engine-overheating-dubai-what-to-do","/blog/engine-overheating-dubai-what-to-do","en-AE","article","Owner guide or workshop article","index, follow","Owner guide or workshop article","Some routes missing initial schema; otherwise conflicting Article/BlogPosting graphs","Answer; AutoRepair; AutomotiveBusiness; BlogPosting; BreadcrumbList; City; ContactPoint; FAQPage; ImageObject; ItemPage; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Question; Service; WebSite","ItemPage, BreadcrumbList, BlogPosting, visible FAQPage when present","Yes","3","Linked","Engine Overheating Dubai | Causes and What to Do Immediately"
+-"https://digitecme.com/blog/ferrari-488-service-dubai-guide","/blog/ferrari-488-service-dubai-guide","en-AE","article","Owner guide or workshop article","index, follow","Owner guide or workshop article","Some routes missing initial schema; otherwise conflicting Article/BlogPosting graphs","Answer; AutoRepair; AutomotiveBusiness; BlogPosting; BreadcrumbList; City; ContactPoint; FAQPage; ImageObject; ItemPage; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Question; Service; WebSite","ItemPage, BreadcrumbList, BlogPosting, visible FAQPage when present","Yes","6","Linked","Ferrari 488 Service Dubai | Maintenance and Inspection Guide"
+-"https://digitecme.com/blog/ferrari-maintenance-guide-dubai","/blog/ferrari-maintenance-guide-dubai","en-AE","article","Owner guide or workshop article","index, follow","Owner guide or workshop article","Some routes missing initial schema; otherwise conflicting Article/BlogPosting graphs","Answer; AutoRepair; AutomotiveBusiness; BlogPosting; BreadcrumbList; City; ContactPoint; FAQPage; ImageObject; ItemPage; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Question; Service; WebSite","ItemPage, BreadcrumbList, BlogPosting, visible FAQPage when present","Yes","18","Linked","Ferrari Maintenance Dubai | Ownership &amp; Service Guide"
++"https://digitecme.com/blog/ferrari-488-service-dubai-guide","/blog/ferrari-488-service-dubai-guide","en-AE","article","Owner guide or workshop article","index, follow","Owner guide or workshop article","Some routes missing initial schema; otherwise conflicting Article/BlogPosting graphs","Answer; AutoRepair; AutomotiveBusiness; BlogPosting; BreadcrumbList; City; ContactPoint; FAQPage; ImageObject; ItemPage; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Question; Service; WebSite","ItemPage, BreadcrumbList, BlogPosting, visible FAQPage when present","Yes","7","Linked","Ferrari 488 Service Dubai | Maintenance and Inspection Guide"
++"https://digitecme.com/blog/ferrari-maintenance-guide-dubai","/blog/ferrari-maintenance-guide-dubai","en-AE","article","Owner guide or workshop article","index, follow","Owner guide or workshop article","Some routes missing initial schema; otherwise conflicting Article/BlogPosting graphs","Answer; AutoRepair; AutomotiveBusiness; BlogPosting; BreadcrumbList; City; ContactPoint; FAQPage; ImageObject; ItemPage; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Question; Service; WebSite","ItemPage, BreadcrumbList, BlogPosting, visible FAQPage when present","Yes","18","Linked","Ferrari Maintenance Dubai | Schedule, Cost &amp; Service"
+ "https://digitecme.com/blog/ford-best-workshop-dubai","/blog/ford-best-workshop-dubai","en-AE","article","Owner guide or workshop article","index, follow","Owner guide or workshop article","Some routes missing initial schema; otherwise conflicting Article/BlogPosting graphs","Answer; AutoRepair; AutomotiveBusiness; BlogPosting; BreadcrumbList; City; ContactPoint; FAQPage; ImageObject; ItemPage; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Question; Service; WebSite","ItemPage, BreadcrumbList, BlogPosting, visible FAQPage when present","Yes","3","Linked","Ford Workshop Selection Guide Dubai | DIGI-TEC"
+ "https://digitecme.com/blog/g63-to-brabus-g800-conversion-dubai","/blog/g63-to-brabus-g800-conversion-dubai","en-AE","article","Owner guide or workshop article","index, follow","Owner guide or workshop article","Some routes missing initial schema; otherwise conflicting Article/BlogPosting graphs","Answer; AutoRepair; AutomotiveBusiness; BlogPosting; BreadcrumbList; City; ContactPoint; FAQPage; ImageObject; ItemPage; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Question; Service; WebSite","ItemPage, BreadcrumbList, BlogPosting, visible FAQPage when present","Yes","7","Linked","G63 to BRABUS G 800 Conversion Dubai | Before &amp; After"
+ "https://digitecme.com/blog/gad-tuning-explained","/blog/gad-tuning-explained","en-AE","article","Owner guide or workshop article","index, follow","Owner guide or workshop article","Some routes missing initial schema; otherwise conflicting Article/BlogPosting graphs","AutoRepair; AutomotiveBusiness; BlogPosting; BreadcrumbList; City; ContactPoint; ImageObject; ItemPage; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Service; WebSite","ItemPage, BreadcrumbList, BlogPosting, visible FAQPage when present","Yes","4","Linked","GAD Tuning Explained | Digitec Performance Center Dubai"
+@@ -620,13 +620,13 @@
+ "https://digitecme.com/blog/lamborghini-urus-service-dubai-guide","/blog/lamborghini-urus-service-dubai-guide","en-AE","article","Owner guide or workshop article","index, follow","Owner guide or workshop article","Some routes missing initial schema; otherwise conflicting Article/BlogPosting graphs","Answer; AutoRepair; AutomotiveBusiness; BlogPosting; BreadcrumbList; City; ContactPoint; FAQPage; ImageObject; ItemPage; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Question; Service; WebSite","ItemPage, BreadcrumbList, BlogPosting, visible FAQPage when present","Yes","4","Linked","Lamborghini Urus Service Dubai | Maintenance and Repair Guide"
+ "https://digitecme.com/blog/land-rover-best-workshop-dubai","/blog/land-rover-best-workshop-dubai","en-AE","article","Owner guide or workshop article","index, follow","Owner guide or workshop article","Some routes missing initial schema; otherwise conflicting Article/BlogPosting graphs","Answer; AutoRepair; AutomotiveBusiness; BlogPosting; BreadcrumbList; City; ContactPoint; FAQPage; ImageObject; ItemPage; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Question; Service; WebSite","ItemPage, BreadcrumbList, BlogPosting, visible FAQPage when present","Yes","3","Linked","Land Rover Workshop Selection Guide Dubai | DIGI-TEC"
+ "https://digitecme.com/blog/maserati-best-workshop-dubai","/blog/maserati-best-workshop-dubai","en-AE","article","Owner guide or workshop article","index, follow","Owner guide or workshop article","Some routes missing initial schema; otherwise conflicting Article/BlogPosting graphs","Answer; AutoRepair; AutomotiveBusiness; BlogPosting; BreadcrumbList; City; ContactPoint; FAQPage; ImageObject; ItemPage; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Question; Service; WebSite","ItemPage, BreadcrumbList, BlogPosting, visible FAQPage when present","Yes","3","Linked","Maserati Workshop Selection Guide Dubai | DIGI-TEC"
+-"https://digitecme.com/blog/maybach-best-workshop-dubai","/blog/maybach-best-workshop-dubai","en-AE","article","Owner guide or workshop article","index, follow","Owner guide or workshop article","Some routes missing initial schema; otherwise conflicting Article/BlogPosting graphs","Answer; AutoRepair; AutomotiveBusiness; BlogPosting; BreadcrumbList; City; ContactPoint; FAQPage; ImageObject; ItemPage; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Question; Service; WebSite","ItemPage, BreadcrumbList, BlogPosting, visible FAQPage when present","Yes","21","Linked","Maybach Workshop Selection Guide Dubai | DIGI-TEC"
++"https://digitecme.com/blog/maybach-best-workshop-dubai","/blog/maybach-best-workshop-dubai","en-AE","article","Owner guide or workshop article","index, follow","Owner guide or workshop article","Some routes missing initial schema; otherwise conflicting Article/BlogPosting graphs","Answer; AutoRepair; AutomotiveBusiness; BlogPosting; BreadcrumbList; City; ContactPoint; FAQPage; ImageObject; ItemPage; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Question; Service; WebSite","ItemPage, BreadcrumbList, BlogPosting, visible FAQPage when present","Yes","20","Linked","Maybach Workshop Selection Guide Dubai | DIGI-TEC"
+ "https://digitecme.com/blog/maybach-s580-service-dubai-guide","/blog/maybach-s580-service-dubai-guide","en-AE","article","Owner guide or workshop article","index, follow","Owner guide or workshop article","Some routes missing initial schema; otherwise conflicting Article/BlogPosting graphs","Answer; AutoRepair; AutomotiveBusiness; BlogPosting; BreadcrumbList; City; ContactPoint; FAQPage; ImageObject; ItemPage; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Question; Service; WebSite","ItemPage, BreadcrumbList, BlogPosting, visible FAQPage when present","Yes","3","Linked","Maybach Service Dubai | Mercedes-Maybach Maintenance Guide"
+ "https://digitecme.com/blog/mclaren-720s-service-dubai-guide","/blog/mclaren-720s-service-dubai-guide","en-AE","article","Owner guide or workshop article","index, follow","Owner guide or workshop article","Some routes missing initial schema; otherwise conflicting Article/BlogPosting graphs","Answer; AutoRepair; AutomotiveBusiness; BlogPosting; BreadcrumbList; City; ContactPoint; FAQPage; ImageObject; ItemPage; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Question; Service; WebSite","ItemPage, BreadcrumbList, BlogPosting, visible FAQPage when present","Yes","3","Linked","McLaren 720S Service Dubai | Maintenance and Inspection Guide"
+ "https://digitecme.com/blog/mclaren-best-workshop-dubai","/blog/mclaren-best-workshop-dubai","en-AE","article","Owner guide or workshop article","index, follow","Owner guide or workshop article","Some routes missing initial schema; otherwise conflicting Article/BlogPosting graphs","Answer; AutoRepair; AutomotiveBusiness; BlogPosting; BreadcrumbList; City; ContactPoint; FAQPage; ImageObject; ItemPage; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Question; Service; WebSite","ItemPage, BreadcrumbList, BlogPosting, visible FAQPage when present","Yes","4","Linked","Choosing a McLaren Workshop Dubai | Owner Guide"
+ "https://digitecme.com/blog/mercedes-amg-gt-black-series-1300hp-build-dubai","/blog/mercedes-amg-gt-black-series-1300hp-build-dubai","en-AE","article","Owner guide or workshop article","index, follow","Owner guide or workshop article","Some routes missing initial schema; otherwise conflicting Article/BlogPosting graphs","Answer; AutoRepair; AutomotiveBusiness; BlogPosting; BreadcrumbList; City; ContactPoint; FAQPage; ImageObject; ItemPage; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Question; Service; WebSite","ItemPage, BreadcrumbList, BlogPosting, visible FAQPage when present","Yes","4","Linked","GT Black Series 1300 HP Build Dubai | Digi-Tec"
+ "https://digitecme.com/blog/mercedes-amg-gt-tuning-dubai","/blog/mercedes-amg-gt-tuning-dubai","en-AE","article","Owner guide or workshop article","index, follow","Owner guide or workshop article","Some routes missing initial schema; otherwise conflicting Article/BlogPosting graphs","Answer; AutoRepair; AutomotiveBusiness; BlogPosting; BreadcrumbList; City; ContactPoint; FAQPage; ImageObject; ItemPage; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Question; Service; WebSite","ItemPage, BreadcrumbList, BlogPosting, visible FAQPage when present","Yes","4","Linked","Mercedes AMG GT Tuning Dubai | Vehicle-Specific Guide"
+-"https://digitecme.com/blog/mercedes-benz-maintenance-guide-dubai","/blog/mercedes-benz-maintenance-guide-dubai","en-AE","article","Owner guide or workshop article","index, follow","Owner guide or workshop article","Some routes missing initial schema; otherwise conflicting Article/BlogPosting graphs","Answer; AutoRepair; AutomotiveBusiness; BlogPosting; BreadcrumbList; City; ContactPoint; FAQPage; ImageObject; ItemPage; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Question; Service; WebSite","ItemPage, BreadcrumbList, BlogPosting, visible FAQPage when present","Yes","21","Linked","Mercedes-Benz Maintenance Dubai | DIGI-TEC"
++"https://digitecme.com/blog/mercedes-benz-maintenance-guide-dubai","/blog/mercedes-benz-maintenance-guide-dubai","en-AE","article","Owner guide or workshop article","index, follow","Owner guide or workshop article","Some routes missing initial schema; otherwise conflicting Article/BlogPosting graphs","Answer; AutoRepair; AutomotiveBusiness; BlogPosting; BreadcrumbList; City; ContactPoint; FAQPage; ImageObject; ItemPage; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Question; Service; WebSite","ItemPage, BreadcrumbList, BlogPosting, visible FAQPage when present","Yes","20","Linked","Mercedes-Benz Maintenance Dubai | DIGI-TEC"
+ "https://digitecme.com/blog/mercedes-c-class-service-dubai-guide","/blog/mercedes-c-class-service-dubai-guide","en-AE","service","Individual workshop service","index, follow","Individual workshop service","Duplicate synthetic and client WebPage/Service/BreadcrumbList/FAQPage","AutoRepair; AutomotiveBusiness; BreadcrumbList; City; ContactPoint; ImageObject; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Service; WebPage; WebSite","WebPage, BreadcrumbList, Service, visible FAQPage, OfferCatalog when visible","Yes","27","Linked","Mercedes C-Class Service &amp; Repair Dubai | Digi-Tec"
+ "https://digitecme.com/blog/mercedes-e-class-service-dubai-guide","/blog/mercedes-e-class-service-dubai-guide","en-AE","service","Individual workshop service","index, follow","Individual workshop service","Duplicate synthetic and client WebPage/Service/BreadcrumbList/FAQPage","AutoRepair; AutomotiveBusiness; BreadcrumbList; City; ContactPoint; ImageObject; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Service; WebPage; WebSite","WebPage, BreadcrumbList, Service, visible FAQPage, OfferCatalog when visible","Yes","29","Linked","Mercedes E-Class Service &amp; Repair Dubai | Digi-Tec"
+ "https://digitecme.com/blog/mercedes-g63-service-dubai-guide","/blog/mercedes-g63-service-dubai-guide","en-AE","service","Individual workshop service","index, follow","Individual workshop service","Duplicate synthetic and client WebPage/Service/BreadcrumbList/FAQPage","AutoRepair; AutomotiveBusiness; BreadcrumbList; City; ContactPoint; ImageObject; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Service; WebPage; WebSite","WebPage, BreadcrumbList, Service, visible FAQPage, OfferCatalog when visible","Yes","14","Linked","Mercedes-AMG G63 Service &amp; Repair Dubai | Digi-Tec"
+@@ -636,11 +636,11 @@
+ "https://digitecme.com/blog/mercedes-service-intervals-dubai-heat","/blog/mercedes-service-intervals-dubai-heat","en-AE","article","Owner guide or workshop article","index, follow","Owner guide or workshop article","Some routes missing initial schema; otherwise conflicting Article/BlogPosting graphs","AutoRepair; AutomotiveBusiness; BlogPosting; BreadcrumbList; City; ContactPoint; ImageObject; ItemPage; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Service; WebSite","ItemPage, BreadcrumbList, BlogPosting, visible FAQPage when present","Yes","6","Linked","Mercedes Service Intervals &amp; ASSYST Dubai | Digi-Tec"
+ "https://digitecme.com/blog/mini-best-workshop-dubai","/blog/mini-best-workshop-dubai","en-AE","article","Owner guide or workshop article","index, follow","Owner guide or workshop article","Some routes missing initial schema; otherwise conflicting Article/BlogPosting graphs","Answer; AutoRepair; AutomotiveBusiness; BlogPosting; BreadcrumbList; City; ContactPoint; FAQPage; ImageObject; ItemPage; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Question; Service; WebSite","ItemPage, BreadcrumbList, BlogPosting, visible FAQPage when present","Yes","3","Linked","MINI Workshop Selection Guide Dubai | DIGI-TEC"
+ "https://digitecme.com/blog/oil-specification-guide-dubai-luxury","/blog/oil-specification-guide-dubai-luxury","en-AE","article","Owner guide or workshop article","index, follow","Owner guide or workshop article","Some routes missing initial schema; otherwise conflicting Article/BlogPosting graphs","Answer; AutoRepair; AutomotiveBusiness; BlogPosting; BreadcrumbList; City; ContactPoint; FAQPage; ImageObject; ItemPage; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Question; Service; WebSite","ItemPage, BreadcrumbList, BlogPosting, visible FAQPage when present","Yes","4","Linked","Engine Oil Specification Dubai | Choosing the Right Oil"
+-"https://digitecme.com/blog/porsche-911-service-dubai-guide","/blog/porsche-911-service-dubai-guide","en-AE","article","Owner guide or workshop article","index, follow","Owner guide or workshop article","Some routes missing initial schema; otherwise conflicting Article/BlogPosting graphs","AutoRepair; AutomotiveBusiness; BlogPosting; BreadcrumbList; City; ContactPoint; ImageObject; ItemPage; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Service; WebSite","ItemPage, BreadcrumbList, BlogPosting, visible FAQPage when present","Yes","45","Linked","Porsche 911 Service &amp; Repair Dubai | Digi-Tec"
+-"https://digitecme.com/blog/porsche-cayenne-service-dubai-guide","/blog/porsche-cayenne-service-dubai-guide","en-AE","article","Owner guide or workshop article","index, follow","Owner guide or workshop article","Some routes missing initial schema; otherwise conflicting Article/BlogPosting graphs","AutoRepair; AutomotiveBusiness; BlogPosting; BreadcrumbList; City; ContactPoint; ImageObject; ItemPage; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Service; WebSite","ItemPage, BreadcrumbList, BlogPosting, visible FAQPage when present","Yes","41","Linked","Porsche Cayenne Service &amp; Repair Dubai | Digi-Tec"
+-"https://digitecme.com/blog/porsche-maintenance-guide-dubai","/blog/porsche-maintenance-guide-dubai","en-AE","article","Owner guide or workshop article","index, follow","Owner guide or workshop article","Some routes missing initial schema; otherwise conflicting Article/BlogPosting graphs","AutoRepair; AutomotiveBusiness; BlogPosting; BreadcrumbList; City; ContactPoint; ImageObject; ItemPage; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Service; WebSite","ItemPage, BreadcrumbList, BlogPosting, visible FAQPage when present","Yes","45","Linked","Porsche Maintenance Guide for Dubai Owners | Digi-Tec"
+-"https://digitecme.com/blog/porsche-panamera-service-dubai-guide","/blog/porsche-panamera-service-dubai-guide","en-AE","article","Owner guide or workshop article","index, follow","Owner guide or workshop article","Some routes missing initial schema; otherwise conflicting Article/BlogPosting graphs","AutoRepair; AutomotiveBusiness; BlogPosting; BreadcrumbList; City; ContactPoint; ImageObject; ItemPage; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Service; WebSite","ItemPage, BreadcrumbList, BlogPosting, visible FAQPage when present","Yes","42","Linked","Porsche Panamera Service &amp; Repair Dubai | Digi-Tec"
+-"https://digitecme.com/blog/pre-purchase-inspection-dubai-guide","/blog/pre-purchase-inspection-dubai-guide","en-AE","article","Owner guide or workshop article","index, follow","Owner guide or workshop article","Some routes missing initial schema; otherwise conflicting Article/BlogPosting graphs","Answer; AutoRepair; AutomotiveBusiness; BlogPosting; BreadcrumbList; City; ContactPoint; FAQPage; ImageObject; ItemPage; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Question; Service; WebSite","ItemPage, BreadcrumbList, BlogPosting, visible FAQPage when present","Yes","4","Linked","Pre-Purchase Inspection Dubai | Used Luxury Car Check Guide"
++"https://digitecme.com/blog/porsche-911-service-dubai-guide","/blog/porsche-911-service-dubai-guide","en-AE","article","Owner guide or workshop article","index, follow","Owner guide or workshop article","Some routes missing initial schema; otherwise conflicting Article/BlogPosting graphs","AutoRepair; AutomotiveBusiness; BlogPosting; BreadcrumbList; City; ContactPoint; ImageObject; ItemPage; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Service; WebSite","ItemPage, BreadcrumbList, BlogPosting, visible FAQPage when present","Yes","46","Linked","Porsche 911 Service &amp; Repair Dubai | Digi-Tec"
++"https://digitecme.com/blog/porsche-cayenne-service-dubai-guide","/blog/porsche-cayenne-service-dubai-guide","en-AE","article","Owner guide or workshop article","index, follow","Owner guide or workshop article","Some routes missing initial schema; otherwise conflicting Article/BlogPosting graphs","AutoRepair; AutomotiveBusiness; BlogPosting; BreadcrumbList; City; ContactPoint; ImageObject; ItemPage; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Service; WebSite","ItemPage, BreadcrumbList, BlogPosting, visible FAQPage when present","Yes","42","Linked","Porsche Cayenne Service &amp; Repair Dubai | Digi-Tec"
++"https://digitecme.com/blog/porsche-maintenance-guide-dubai","/blog/porsche-maintenance-guide-dubai","en-AE","article","Owner guide or workshop article","index, follow","Owner guide or workshop article","Some routes missing initial schema; otherwise conflicting Article/BlogPosting graphs","Answer; AutoRepair; AutomotiveBusiness; BlogPosting; BreadcrumbList; City; ContactPoint; FAQPage; ImageObject; ItemList; ItemPage; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Question; Service; WebSite","ItemPage, BreadcrumbList, BlogPosting, visible FAQPage when present","Yes","44","Linked","Porsche Maintenance Dubai: Service Guide | Digi-Tec"
++"https://digitecme.com/blog/porsche-panamera-service-dubai-guide","/blog/porsche-panamera-service-dubai-guide","en-AE","article","Owner guide or workshop article","index, follow","Owner guide or workshop article","Some routes missing initial schema; otherwise conflicting Article/BlogPosting graphs","AutoRepair; AutomotiveBusiness; BlogPosting; BreadcrumbList; City; ContactPoint; ImageObject; ItemPage; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Service; WebSite","ItemPage, BreadcrumbList, BlogPosting, visible FAQPage when present","Yes","43","Linked","Porsche Panamera Service &amp; Repair Dubai | Digi-Tec"
++"https://digitecme.com/blog/pre-purchase-inspection-dubai-guide","/blog/pre-purchase-inspection-dubai-guide","en-AE","article","Owner guide or workshop article","index, follow","Owner guide or workshop article","Some routes missing initial schema; otherwise conflicting Article/BlogPosting graphs","Answer; AutoRepair; AutomotiveBusiness; BlogPosting; BreadcrumbList; City; ContactPoint; FAQPage; ImageObject; ItemPage; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Question; Service; WebSite","ItemPage, BreadcrumbList, BlogPosting, visible FAQPage when present","Yes","5","Linked","Pre-Purchase Inspection Dubai | Used Luxury Car Check Guide"
+ "https://digitecme.com/blog/range-rover-land-rover-air-suspension-problems-dubai","/blog/range-rover-land-rover-air-suspension-problems-dubai","en-AE","article","Owner guide or workshop article","index, follow","Owner guide or workshop article","Some routes missing initial schema; otherwise conflicting Article/BlogPosting graphs","Answer; AutoRepair; AutomotiveBusiness; BlogPosting; BreadcrumbList; City; ContactPoint; FAQPage; ImageObject; ItemPage; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Question; Service; WebSite","ItemPage, BreadcrumbList, BlogPosting, visible FAQPage when present","Yes","3","Linked","Range Rover Air Suspension Problems Dubai | Digi-Tec"
+ "https://digitecme.com/blog/range-rover-maintenance-guide-dubai","/blog/range-rover-maintenance-guide-dubai","en-AE","article","Owner guide or workshop article","index, follow","Owner guide or workshop article","Some routes missing initial schema; otherwise conflicting Article/BlogPosting graphs","Answer; AutoRepair; AutomotiveBusiness; BlogPosting; BreadcrumbList; City; ContactPoint; FAQPage; ImageObject; ItemPage; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Question; Service; WebSite","ItemPage, BreadcrumbList, BlogPosting, visible FAQPage when present","Yes","3","Linked","Range Rover Maintenance Dubai | DIGI-TEC"
+ "https://digitecme.com/blog/range-rover-sport-service-dubai-guide","/blog/range-rover-sport-service-dubai-guide","en-AE","article","Owner guide or workshop article","index, follow","Owner guide or workshop article","Some routes missing initial schema; otherwise conflicting Article/BlogPosting graphs","Answer; AutoRepair; AutomotiveBusiness; BlogPosting; BreadcrumbList; City; ContactPoint; FAQPage; ImageObject; ItemPage; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Question; Service; WebSite","ItemPage, BreadcrumbList, BlogPosting, visible FAQPage when present","Yes","3","Linked","Range Rover Sport Service Dubai | JLR Specialist Guide"
+@@ -1019,17 +1019,17 @@
+ "https://digitecme.com/brands/porsche-service-dubai/ac-repair","/brands/porsche-service-dubai/ac-repair","en-AE","brand-service","Brand-specific workshop service","index, follow","Brand-specific workshop service","Duplicate WebPage/Service/BreadcrumbList/OfferCatalog/FAQPage; noindex conflict","Answer; AutoRepair; AutomotiveBusiness; Brand; BreadcrumbList; City; ContactPoint; FAQPage; ImageObject; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Question; Service; WebPage; WebSite","WebPage, BreadcrumbList, Brand, Service, visible FAQPage, OfferCatalog","Yes","17","Linked","Porsche AC Repair Dubai | Digi-Tec"
+ "https://digitecme.com/brands/porsche-service-dubai/battery-replacement","/brands/porsche-service-dubai/battery-replacement","en-AE","brand-service","Brand-specific workshop service","index, follow","Brand-specific workshop service","Duplicate WebPage/Service/BreadcrumbList/OfferCatalog/FAQPage; noindex conflict","Answer; AutoRepair; AutomotiveBusiness; Brand; BreadcrumbList; City; ContactPoint; FAQPage; ImageObject; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Question; Service; WebPage; WebSite","WebPage, BreadcrumbList, Brand, Service, visible FAQPage, OfferCatalog","Yes","18","Linked","Porsche Battery Replacement Dubai | Digi-Tec"
+ "https://digitecme.com/brands/porsche-service-dubai/body-repair","/brands/porsche-service-dubai/body-repair","en-AE","brand-service","Brand-specific workshop service","index, follow","Brand-specific workshop service","Duplicate WebPage/Service/BreadcrumbList/OfferCatalog/FAQPage; noindex conflict","Answer; AutoRepair; AutomotiveBusiness; Brand; BreadcrumbList; City; ContactPoint; FAQPage; ImageObject; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Question; Service; WebPage; WebSite","WebPage, BreadcrumbList, Brand, Service, visible FAQPage, OfferCatalog","Yes","15","Linked","Porsche Body Repair Dubai | Digi-Tec"
+-"https://digitecme.com/brands/porsche-service-dubai/brake-repair","/brands/porsche-service-dubai/brake-repair","en-AE","brand-service","Brand-specific workshop service","index, follow","Brand-specific workshop service","Duplicate WebPage/Service/BreadcrumbList/OfferCatalog/FAQPage; noindex conflict","Answer; AutoRepair; AutomotiveBusiness; Brand; BreadcrumbList; City; ContactPoint; FAQPage; ImageObject; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Question; Service; WebPage; WebSite","WebPage, BreadcrumbList, Brand, Service, visible FAQPage, OfferCatalog","Yes","19","Linked","Porsche Brake Repair Dubai | Digi-Tec"
++"https://digitecme.com/brands/porsche-service-dubai/brake-repair","/brands/porsche-service-dubai/brake-repair","en-AE","brand-service","Brand-specific workshop service","index, follow","Brand-specific workshop service","Duplicate WebPage/Service/BreadcrumbList/OfferCatalog/FAQPage; noindex conflict","Answer; AutoRepair; AutomotiveBusiness; Brand; BreadcrumbList; City; ContactPoint; FAQPage; ImageObject; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Question; Service; WebPage; WebSite","WebPage, BreadcrumbList, Brand, Service, visible FAQPage, OfferCatalog","Yes","20","Linked","Porsche Brake Repair Dubai | Digi-Tec"
+ "https://digitecme.com/brands/porsche-service-dubai/electrical-repair","/brands/porsche-service-dubai/electrical-repair","en-AE","brand-service","Brand-specific workshop service","index, follow","Brand-specific workshop service","Duplicate WebPage/Service/BreadcrumbList/OfferCatalog/FAQPage; noindex conflict","Answer; AutoRepair; AutomotiveBusiness; Brand; BreadcrumbList; City; ContactPoint; FAQPage; ImageObject; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Question; Service; WebPage; WebSite","WebPage, BreadcrumbList, Brand, Service, visible FAQPage, OfferCatalog","Yes","18","Linked","Porsche Electrical Repair Dubai | Digi-Tec"
+-"https://digitecme.com/brands/porsche-service-dubai/engine-diagnostics","/brands/porsche-service-dubai/engine-diagnostics","en-AE","brand-service","Brand-specific workshop service","index, follow","Brand-specific workshop service","Duplicate WebPage/Service/BreadcrumbList/OfferCatalog/FAQPage; noindex conflict","Answer; AutoRepair; AutomotiveBusiness; Brand; BreadcrumbList; City; ContactPoint; FAQPage; ImageObject; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Question; Service; WebPage; WebSite","WebPage, BreadcrumbList, Brand, Service, visible FAQPage, OfferCatalog","Yes","30","Linked","Porsche Diagnostics Dubai | DIGI-TEC Al Quoz"
++"https://digitecme.com/brands/porsche-service-dubai/engine-diagnostics","/brands/porsche-service-dubai/engine-diagnostics","en-AE","brand-service","Brand-specific workshop service","index, follow","Brand-specific workshop service","Duplicate WebPage/Service/BreadcrumbList/OfferCatalog/FAQPage; noindex conflict","Answer; AutoRepair; AutomotiveBusiness; Brand; BreadcrumbList; City; ContactPoint; FAQPage; ImageObject; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Question; Service; WebPage; WebSite","WebPage, BreadcrumbList, Brand, Service, visible FAQPage, OfferCatalog","Yes","31","Linked","Porsche Diagnostics Dubai | DIGI-TEC Al Quoz"
+ "https://digitecme.com/brands/porsche-service-dubai/exhaust-repair","/brands/porsche-service-dubai/exhaust-repair","en-AE","brand-service","Brand-specific workshop service","index, follow","Brand-specific workshop service","Duplicate WebPage/Service/BreadcrumbList/OfferCatalog/FAQPage; noindex conflict","Answer; AutoRepair; AutomotiveBusiness; Brand; BreadcrumbList; City; ContactPoint; FAQPage; ImageObject; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Question; Service; WebPage; WebSite","WebPage, BreadcrumbList, Brand, Service, visible FAQPage, OfferCatalog","Yes","15","Linked","Porsche Exhaust Repair Dubai | Digi-Tec"
+ "https://digitecme.com/brands/porsche-service-dubai/fuel-system-repair","/brands/porsche-service-dubai/fuel-system-repair","en-AE","brand-service","Brand-specific workshop service","index, follow","Brand-specific workshop service","Duplicate WebPage/Service/BreadcrumbList/OfferCatalog/FAQPage; noindex conflict","Answer; AutoRepair; AutomotiveBusiness; Brand; BreadcrumbList; City; ContactPoint; FAQPage; ImageObject; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Question; Service; WebPage; WebSite","WebPage, BreadcrumbList, Brand, Service, visible FAQPage, OfferCatalog","Yes","15","Linked","Porsche Fuel System Repair Dubai | Digi-Tec"
+ "https://digitecme.com/brands/porsche-service-dubai/mechanical-repair","/brands/porsche-service-dubai/mechanical-repair","en-AE","brand-service","Brand-specific workshop service","index, follow","Brand-specific workshop service","Duplicate WebPage/Service/BreadcrumbList/OfferCatalog/FAQPage; noindex conflict","Answer; AutoRepair; AutomotiveBusiness; Brand; BreadcrumbList; City; ContactPoint; FAQPage; ImageObject; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Question; Service; WebPage; WebSite","WebPage, BreadcrumbList, Brand, Service, visible FAQPage, OfferCatalog","Yes","24","Linked","Porsche Mechanical Repair Dubai | Digi-Tec"
+-"https://digitecme.com/brands/porsche-service-dubai/oil-change","/brands/porsche-service-dubai/oil-change","en-AE","brand-service","Brand-specific workshop service","index, follow","Brand-specific workshop service","Duplicate WebPage/Service/BreadcrumbList/OfferCatalog/FAQPage; noindex conflict","Answer; AutoRepair; AutomotiveBusiness; Brand; BreadcrumbList; City; ContactPoint; FAQPage; ImageObject; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Question; Service; WebPage; WebSite","WebPage, BreadcrumbList, Brand, Service, visible FAQPage, OfferCatalog","Yes","26","Linked","Porsche Oil Change Dubai | Digi-Tec"
++"https://digitecme.com/brands/porsche-service-dubai/oil-change","/brands/porsche-service-dubai/oil-change","en-AE","brand-service","Brand-specific workshop service","index, follow","Brand-specific workshop service","Duplicate WebPage/Service/BreadcrumbList/OfferCatalog/FAQPage; noindex conflict","Answer; AutoRepair; AutomotiveBusiness; Brand; BreadcrumbList; City; ContactPoint; FAQPage; ImageObject; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Question; Service; WebPage; WebSite","WebPage, BreadcrumbList, Brand, Service, visible FAQPage, OfferCatalog","Yes","27","Linked","Porsche Oil Change Dubai | Digi-Tec"
+ "https://digitecme.com/brands/porsche-service-dubai/steering-repair","/brands/porsche-service-dubai/steering-repair","en-AE","brand-service","Brand-specific workshop service","index, follow","Brand-specific workshop service","Duplicate WebPage/Service/BreadcrumbList/OfferCatalog/FAQPage; noindex conflict","Answer; AutoRepair; AutomotiveBusiness; Brand; BreadcrumbList; City; ContactPoint; FAQPage; ImageObject; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Question; Service; WebPage; WebSite","WebPage, BreadcrumbList, Brand, Service, visible FAQPage, OfferCatalog","Yes","18","Linked","Porsche Steering Repair Dubai | Digi-Tec"
+ "https://digitecme.com/brands/porsche-service-dubai/suspension-repair","/brands/porsche-service-dubai/suspension-repair","en-AE","brand-service","Brand-specific workshop service","index, follow","Brand-specific workshop service","Duplicate WebPage/Service/BreadcrumbList/OfferCatalog/FAQPage; noindex conflict","Answer; AutoRepair; AutomotiveBusiness; Brand; BreadcrumbList; City; ContactPoint; FAQPage; ImageObject; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Question; Service; WebPage; WebSite","WebPage, BreadcrumbList, Brand, Service, visible FAQPage, OfferCatalog","Yes","33","Linked","Porsche Suspension Repair Dubai | Digi-Tec"
+ "https://digitecme.com/brands/porsche-service-dubai/tire-repair","/brands/porsche-service-dubai/tire-repair","en-AE","brand-service","Brand-specific workshop service","index, follow","Brand-specific workshop service","Duplicate WebPage/Service/BreadcrumbList/OfferCatalog/FAQPage; noindex conflict","Answer; AutoRepair; AutomotiveBusiness; Brand; BreadcrumbList; City; ContactPoint; FAQPage; ImageObject; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Question; Service; WebPage; WebSite","WebPage, BreadcrumbList, Brand, Service, visible FAQPage, OfferCatalog","Yes","16","Linked","Porsche Tyre Repair Dubai | Digi-Tec"
+-"https://digitecme.com/brands/porsche-service-dubai/transmission-repair","/brands/porsche-service-dubai/transmission-repair","en-AE","brand-service","Brand-specific workshop service","index, follow","Brand-specific workshop service","Duplicate WebPage/Service/BreadcrumbList/OfferCatalog/FAQPage; noindex conflict","Answer; AutoRepair; AutomotiveBusiness; Brand; BreadcrumbList; City; ContactPoint; FAQPage; ImageObject; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Question; Service; WebPage; WebSite","WebPage, BreadcrumbList, Brand, Service, visible FAQPage, OfferCatalog","Yes","31","Linked","Porsche Transmission Repair Dubai | Digi-Tec"
++"https://digitecme.com/brands/porsche-service-dubai/transmission-repair","/brands/porsche-service-dubai/transmission-repair","en-AE","brand-service","Brand-specific workshop service","index, follow","Brand-specific workshop service","Duplicate WebPage/Service/BreadcrumbList/OfferCatalog/FAQPage; noindex conflict","Answer; AutoRepair; AutomotiveBusiness; Brand; BreadcrumbList; City; ContactPoint; FAQPage; ImageObject; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Question; Service; WebPage; WebSite","WebPage, BreadcrumbList, Brand, Service, visible FAQPage, OfferCatalog","Yes","32","Linked","Porsche Transmission Repair Dubai | Digi-Tec"
+ "https://digitecme.com/brands/range-rover-service-dubai","/brands/range-rover-service-dubai","en-AE","brand","Vehicle-brand workshop hub","index, follow","Vehicle-brand workshop hub","Duplicate WebPage/Service + client Brand/OfferCatalog/FAQPage","Answer; AutoRepair; AutomotiveBusiness; Brand; BreadcrumbList; City; ContactPoint; FAQPage; ImageObject; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Question; Service; WebPage; WebSite","WebPage, BreadcrumbList, Brand, Service, visible FAQPage, OfferCatalog","Yes","50","Linked","Range Rover Repair Dubai | JLR Specialist Workshop"
+ "https://digitecme.com/brands/range-rover-service-dubai/ac-repair","/brands/range-rover-service-dubai/ac-repair","en-AE","brand-service","Brand-specific workshop service","index, follow","Brand-specific workshop service","Duplicate WebPage/Service/BreadcrumbList/OfferCatalog/FAQPage; noindex conflict","Answer; AutoRepair; AutomotiveBusiness; Brand; BreadcrumbList; City; ContactPoint; FAQPage; ImageObject; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Question; Service; WebPage; WebSite","WebPage, BreadcrumbList, Brand, Service, visible FAQPage, OfferCatalog","Yes","15","Linked","Range Rover AC Repair Dubai | Digi-Tec"
+ "https://digitecme.com/brands/range-rover-service-dubai/battery-replacement","/brands/range-rover-service-dubai/battery-replacement","en-AE","brand-service","Brand-specific workshop service","index, follow","Brand-specific workshop service","Duplicate WebPage/Service/BreadcrumbList/OfferCatalog/FAQPage; noindex conflict","Answer; AutoRepair; AutomotiveBusiness; Brand; BreadcrumbList; City; ContactPoint; FAQPage; ImageObject; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Question; Service; WebPage; WebSite","WebPage, BreadcrumbList, Brand, Service, visible FAQPage, OfferCatalog","Yes","15","Linked","Range Rover Battery Replacement Dubai | Digi-Tec"
+@@ -1141,7 +1141,7 @@
+ "https://digitecme.com/mercedes/problems/suspension-dropping-overnight","/mercedes/problems/suspension-dropping-overnight","en-AE","article","Owner guide or workshop article","index, follow","Owner guide or workshop article","Some routes missing initial schema; otherwise conflicting Article/BlogPosting graphs","Answer; AutoRepair; AutomotiveBusiness; BlogPosting; BreadcrumbList; City; ContactPoint; FAQPage; ImageObject; ItemPage; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Question; Service; WebSite","ItemPage, BreadcrumbList, BlogPosting, visible FAQPage when present","Yes","11","Linked","Mercedes Suspension Dropping Overnight | Leak Guide"
+ "https://digitecme.com/mercedes/problems/transmission-slipping","/mercedes/problems/transmission-slipping","en-AE","article","Owner guide or workshop article","index, follow","Owner guide or workshop article","Some routes missing initial schema; otherwise conflicting Article/BlogPosting graphs","Answer; AutoRepair; AutomotiveBusiness; BlogPosting; BreadcrumbList; City; ContactPoint; FAQPage; ImageObject; ItemPage; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Question; Service; WebSite","ItemPage, BreadcrumbList, BlogPosting, visible FAQPage when present","Yes","7","Linked","Mercedes Transmission Slipping | Signs &amp; Diagnosis"
+ "https://digitecme.com/mercedes/problems/wont-start","/mercedes/problems/wont-start","en-AE","article","Owner guide or workshop article","index, follow","Owner guide or workshop article","Some routes missing initial schema; otherwise conflicting Article/BlogPosting graphs","Answer; AutoRepair; AutomotiveBusiness; BlogPosting; BreadcrumbList; City; ContactPoint; FAQPage; ImageObject; ItemPage; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Question; Service; WebSite","ItemPage, BreadcrumbList, BlogPosting, visible FAQPage when present","Yes","12","Linked","Mercedes Won’t Start? No Power, No Crank &amp; Jump-Start Guide"
+-"https://digitecme.com/porsche/718","/porsche/718","en-AE","service","Individual workshop service","index, follow","Individual workshop service","Duplicate synthetic and client WebPage/Service/BreadcrumbList/FAQPage","AutoRepair; AutomotiveBusiness; BreadcrumbList; City; ContactPoint; ImageObject; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Service; WebPage; WebSite","WebPage, BreadcrumbList, Service, visible FAQPage, OfferCatalog when visible","Yes","31","Linked","Porsche 718 Cayman &amp; Boxster Service Dubai | Digi-Tec"
++"https://digitecme.com/porsche/718","/porsche/718","en-AE","service","Individual workshop service","index, follow","Individual workshop service","Duplicate synthetic and client WebPage/Service/BreadcrumbList/FAQPage","AutoRepair; AutomotiveBusiness; BreadcrumbList; City; ContactPoint; ImageObject; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Service; WebPage; WebSite","WebPage, BreadcrumbList, Service, visible FAQPage, OfferCatalog when visible","Yes","32","Linked","Porsche 718 Cayman &amp; Boxster Service Dubai | Digi-Tec"
+ "https://digitecme.com/porsche/911/991","/porsche/911/991","en-AE","service","Individual workshop service","index, follow","Individual workshop service","Duplicate synthetic and client WebPage/Service/BreadcrumbList/FAQPage","AutoRepair; AutomotiveBusiness; BreadcrumbList; City; ContactPoint; ImageObject; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Service; WebPage; WebSite","WebPage, BreadcrumbList, Service, visible FAQPage, OfferCatalog when visible","Yes","2","Linked","Porsche 991 Service &amp; Repair Dubai | Digi-Tec"
+ "https://digitecme.com/porsche/911/992","/porsche/911/992","en-AE","service","Individual workshop service","index, follow","Individual workshop service","Duplicate synthetic and client WebPage/Service/BreadcrumbList/FAQPage","AutoRepair; AutomotiveBusiness; BreadcrumbList; City; ContactPoint; ImageObject; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Service; WebPage; WebSite","WebPage, BreadcrumbList, Service, visible FAQPage, OfferCatalog when visible","Yes","3","Linked","Porsche 992 Service &amp; Repair Dubai | Digi-Tec"
+ "https://digitecme.com/porsche/911/997","/porsche/911/997","en-AE","service","Individual workshop service","index, follow","Individual workshop service","Duplicate synthetic and client WebPage/Service/BreadcrumbList/FAQPage","AutoRepair; AutomotiveBusiness; BreadcrumbList; City; ContactPoint; ImageObject; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Service; WebPage; WebSite","WebPage, BreadcrumbList, Service, visible FAQPage, OfferCatalog when visible","Yes","3","Linked","Porsche 997 Service &amp; Repair Dubai | Digi-Tec"
+@@ -1165,7 +1165,7 @@
+ "https://digitecme.com/porsche/guides/taycan-maintenance","/porsche/guides/taycan-maintenance","en-AE","article","Owner guide or workshop article","index, follow","Owner guide or workshop article","Some routes missing initial schema; otherwise conflicting Article/BlogPosting graphs","AutoRepair; AutomotiveBusiness; BlogPosting; BreadcrumbList; City; ContactPoint; ImageObject; ItemPage; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Service; WebSite","ItemPage, BreadcrumbList, BlogPosting, visible FAQPage when present","Yes","1","Linked","Porsche Taycan Maintenance Guide UAE | Digi-Tec Dubai"
+ "https://digitecme.com/porsche/guides/tyre-wear-dubai","/porsche/guides/tyre-wear-dubai","en-AE","article","Owner guide or workshop article","index, follow","Owner guide or workshop article","Some routes missing initial schema; otherwise conflicting Article/BlogPosting graphs","AutoRepair; AutomotiveBusiness; BlogPosting; BreadcrumbList; City; ContactPoint; ImageObject; ItemPage; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Service; WebSite","ItemPage, BreadcrumbList, BlogPosting, visible FAQPage when present","Yes","1","Linked","Porsche Tyre Wear in Dubai | Digi-Tec Dubai"
+ "https://digitecme.com/porsche/guides/warning-lights","/porsche/guides/warning-lights","en-AE","article","Owner guide or workshop article","index, follow","Owner guide or workshop article","Some routes missing initial schema; otherwise conflicting Article/BlogPosting graphs","AutoRepair; AutomotiveBusiness; BlogPosting; BreadcrumbList; City; ContactPoint; ImageObject; ItemPage; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Service; WebSite","ItemPage, BreadcrumbList, BlogPosting, visible FAQPage when present","Yes","2","Linked","Porsche Warning Lights Explained | Digi-Tec Dubai"
+-"https://digitecme.com/porsche/macan","/porsche/macan","en-AE","service","Individual workshop service","index, follow","Individual workshop service","Duplicate synthetic and client WebPage/Service/BreadcrumbList/FAQPage","AutoRepair; AutomotiveBusiness; BreadcrumbList; City; ContactPoint; ImageObject; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Service; WebPage; WebSite","WebPage, BreadcrumbList, Service, visible FAQPage, OfferCatalog when visible","Yes","40","Linked","Porsche Macan Service &amp; Repair Dubai | Digi-Tec"
++"https://digitecme.com/porsche/macan","/porsche/macan","en-AE","service","Individual workshop service","index, follow","Individual workshop service","Duplicate synthetic and client WebPage/Service/BreadcrumbList/FAQPage","AutoRepair; AutomotiveBusiness; BreadcrumbList; City; ContactPoint; ImageObject; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Service; WebPage; WebSite","WebPage, BreadcrumbList, Service, visible FAQPage, OfferCatalog when visible","Yes","41","Linked","Porsche Macan Service &amp; Repair Dubai | Digi-Tec"
+ "https://digitecme.com/porsche/problems","/porsche/problems","en-AE","html-sitemap","Human-readable website navigation","index, follow","Human-readable website navigation","Synthetic Service only; no client route graph","AutoRepair; AutomotiveBusiness; BreadcrumbList; City; CollectionPage; ContactPoint; ImageObject; ItemList; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Service; WebSite","CollectionPage, BreadcrumbList, ItemList","Yes","27","Linked","Porsche Problems &amp; Warning Signs | Digi-Tec"
+ "https://digitecme.com/porsche/problems/911-cooling","/porsche/problems/911-cooling","en-AE","article","Owner guide or workshop article","index, follow","Owner guide or workshop article","Some routes missing initial schema; otherwise conflicting Article/BlogPosting graphs","AutoRepair; AutomotiveBusiness; BlogPosting; BreadcrumbList; City; ContactPoint; ImageObject; ItemPage; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Service; WebSite","ItemPage, BreadcrumbList, BlogPosting, visible FAQPage when present","Yes","2","Linked","Porsche 911 Cooling Problems: Causes &amp; Diagnosis | Digi-Tec"
+ "https://digitecme.com/porsche/problems/ac-not-cooling","/porsche/problems/ac-not-cooling","en-AE","article","Owner guide or workshop article","index, follow","Owner guide or workshop article","Some routes missing initial schema; otherwise conflicting Article/BlogPosting graphs","AutoRepair; AutomotiveBusiness; BlogPosting; BreadcrumbList; City; ContactPoint; ImageObject; ItemPage; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Service; WebSite","ItemPage, BreadcrumbList, BlogPosting, visible FAQPage when present","Yes","3","Linked","Porsche AC Not Cooling: Causes &amp; Diagnosis | Digi-Tec"
+@@ -1201,7 +1201,7 @@
+ "https://digitecme.com/porsche/systems/rear-axle-steering","/porsche/systems/rear-axle-steering","en-AE","article","Owner guide or workshop article","index, follow","Owner guide or workshop article","Some routes missing initial schema; otherwise conflicting Article/BlogPosting graphs","AutoRepair; AutomotiveBusiness; BlogPosting; BreadcrumbList; City; ContactPoint; ImageObject; ItemPage; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Service; WebSite","ItemPage, BreadcrumbList, BlogPosting, visible FAQPage when present","Yes","1","Linked","Porsche Rear-Axle Steering Explained | Digi-Tec"
+ "https://digitecme.com/porsche/systems/sport-chrono","/porsche/systems/sport-chrono","en-AE","article","Owner guide or workshop article","index, follow","Owner guide or workshop article","Some routes missing initial schema; otherwise conflicting Article/BlogPosting graphs","AutoRepair; AutomotiveBusiness; BlogPosting; BreadcrumbList; City; ContactPoint; ImageObject; ItemPage; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Service; WebSite","ItemPage, BreadcrumbList, BlogPosting, visible FAQPage when present","Yes","1","Linked","Porsche Sport Chrono Explained | Digi-Tec"
+ "https://digitecme.com/porsche/systems/tiptronic","/porsche/systems/tiptronic","en-AE","article","Owner guide or workshop article","index, follow","Owner guide or workshop article","Some routes missing initial schema; otherwise conflicting Article/BlogPosting graphs","AutoRepair; AutomotiveBusiness; BlogPosting; BreadcrumbList; City; ContactPoint; ImageObject; ItemPage; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Service; WebSite","ItemPage, BreadcrumbList, BlogPosting, visible FAQPage when present","Yes","10","Linked","Porsche Tiptronic Explained | Digi-Tec Dubai"
+-"https://digitecme.com/porsche/taycan","/porsche/taycan","en-AE","service","Individual workshop service","index, follow","Individual workshop service","Duplicate synthetic and client WebPage/Service/BreadcrumbList/FAQPage","AutoRepair; AutomotiveBusiness; BreadcrumbList; City; ContactPoint; ImageObject; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Service; WebPage; WebSite","WebPage, BreadcrumbList, Service, visible FAQPage, OfferCatalog when visible","Yes","26","Linked","Porsche Taycan Service &amp; Repair Dubai | Digi-Tec"
++"https://digitecme.com/porsche/taycan","/porsche/taycan","en-AE","service","Individual workshop service","index, follow","Individual workshop service","Duplicate synthetic and client WebPage/Service/BreadcrumbList/FAQPage","AutoRepair; AutomotiveBusiness; BreadcrumbList; City; ContactPoint; ImageObject; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Service; WebPage; WebSite","WebPage, BreadcrumbList, Service, visible FAQPage, OfferCatalog when visible","Yes","27","Linked","Porsche Taycan Service &amp; Repair Dubai | Digi-Tec"
+ "https://digitecme.com/services","/services","en-AE","services-hub","Service collection and navigation","index, follow","Service collection and navigation","Synthetic WebPage/Service + client CollectionPage/BreadcrumbList/ItemList","AutoRepair; AutomotiveBusiness; BreadcrumbList; City; CollectionPage; ContactPoint; ImageObject; ItemList; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Service; WebSite","CollectionPage, BreadcrumbList, ItemList","Yes","673","Linked","All Services | DIGI-TEC Performance Center Dubai"
+ "https://digitecme.com/services/auto-electrical-repair-dubai","/services/auto-electrical-repair-dubai","en-AE","service","Individual workshop service","index, follow","Individual workshop service","Duplicate synthetic and client WebPage/Service/BreadcrumbList/FAQPage","AutoRepair; AutomotiveBusiness; BreadcrumbList; City; ContactPoint; ImageObject; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Service; WebPage; WebSite","WebPage, BreadcrumbList, Service, visible FAQPage, OfferCatalog when visible","Yes","20","Linked","Auto Electrical Repair Dubai | Wiring &amp; ECU | Digitec"
+ "https://digitecme.com/services/battery-replacement-dubai","/services/battery-replacement-dubai","en-AE","service","Individual workshop service","index, follow","Individual workshop service","Duplicate synthetic and client WebPage/Service/BreadcrumbList/FAQPage","AutoRepair; AutomotiveBusiness; BreadcrumbList; City; ContactPoint; ImageObject; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Service; WebPage; WebSite","WebPage, BreadcrumbList, Service, visible FAQPage, OfferCatalog when visible","Yes","5","Linked","Car Battery Replacement Dubai | Testing, Fitting &amp; Coding"
+diff --git a/public/sitemap.xml b/public/sitemap.xml
+index cf252d6..7bcd035 100644
+--- a/public/sitemap.xml
++++ b/public/sitemap.xml
+@@ -170,7 +170,7 @@
+   </url>
+   <url>
+     <loc>https://digitecme.com/ar/blog/ferrari-maintenance-guide-dubai</loc>
+-    <lastmod>2026-08-31</lastmod>
++    <lastmod>2026-09-14</lastmod>
+   </url>
+   <url>
+     <loc>https://digitecme.com/ar/blog/ford-best-workshop-dubai</loc>
+@@ -1934,7 +1934,7 @@
+   </url>
+   <url>
+     <loc>https://digitecme.com/blog/ferrari-maintenance-guide-dubai</loc>
+-    <lastmod>2026-08-31</lastmod>
++    <lastmod>2026-09-14</lastmod>
+   </url>
+   <url>
+     <loc>https://digitecme.com/blog/ford-best-workshop-dubai</loc>
+@@ -2046,7 +2046,7 @@
+   </url>
+   <url>
+     <loc>https://digitecme.com/blog/porsche-maintenance-guide-dubai</loc>
+-    <lastmod>2026-08-31</lastmod>
++    <lastmod>2026-09-14</lastmod>
+   </url>
+   <url>
+     <loc>https://digitecme.com/blog/porsche-panamera-service-dubai-guide</loc>
+diff --git a/scripts/validate-query-release.mjs b/scripts/validate-query-release.mjs
+index c242308..92ef449 100644
+--- a/scripts/validate-query-release.mjs
++++ b/scripts/validate-query-release.mjs
+@@ -15,6 +15,8 @@ const expected = new Map([
+   ['/services/oil-change-dubai', 'Car Oil Change Dubai | Engine Oil &amp; Filter Service | DIGI-TEC'],
+   ['/services/exhaust-repair-dubai', 'Exhaust &amp; Muffler Repair Dubai | DIGI-TEC'],
+   ['/services/steering-repair-dubai', 'Power Steering &amp; Rack Repair Dubai | DIGI-TEC'],
++  ['/blog/ferrari-maintenance-guide-dubai', 'Ferrari Maintenance Dubai | Schedule, Cost &amp; Service'],
++  ['/blog/porsche-maintenance-guide-dubai', 'Porsche Maintenance Dubai: Service Guide | Digi-Tec'],
+ ]);
+ const htmlFor = route => readFile(path.join(root, 'dist', route, 'index.html'), 'utf8');
+ for (const route of routes) {
+@@ -29,6 +31,18 @@ assert.match(steering, /Request a Porsche Steering Inspection/);
+ const transmission = await htmlFor('/brands/bmw-service-dubai/transmission-repair');
+ assert.match(transmission, /Delayed engagement, rough shifts, slipping/);
+ assert.match(transmission, /Compare service and repair options/);
++const ferrariGuide = await htmlFor('/blog/ferrari-maintenance-guide-dubai');
++assert.match(ferrariGuide, /Ferrari Maintenance Dubai: Schedule, Cost/);
++assert.match(ferrariGuide, /Ferrari maintenance in Dubai: the short answer/);
++assert.match(ferrariGuide, /href="\/brands\/ferrari-service-dubai\/oil-change"/);
++assert.match(ferrariGuide, /"dateModified":"2026-09-14"/);
++const porscheGuide = await htmlFor('/blog/porsche-maintenance-guide-dubai');
++assert.match(porscheGuide, /Porsche Maintenance in Dubai: Intervals/);
++assert.match(porscheGuide, /Porsche workshop services in Dubai/);
++assert.match(porscheGuide, /href="\/brands\/porsche-service-dubai\/transmission-repair"/);
++assert.match(porscheGuide, /"@type":"ItemList"/);
++assert.match(porscheGuide, /How often should a Porsche be serviced in Dubai/);
++assert.match(porscheGuide, /"dateModified":"2026-09-14"/);
+ for (const route of routes.filter(r => r.family === 'brand-service' || r.path.startsWith('/services/mercedes-'))) {
+   const html = await htmlFor(route.path);
+   assert.doesNotMatch(html, /Models We (?:<[^>]+>)*\s*(?:Steering|Transmission|Oil|Brake|AC|Engine|Electrical|Battery|Suspension|Body|Fuel|Tire|Exhaust)/, route.path);
+@@ -90,6 +104,6 @@ const {trackWhatsAppClick} = await import(`data:text/javascript;base64,${Buffer.
+ trackWhatsAppClick('https://wa.me/97143402223?text=TEST_NAME%20TEST_VIN%20TEST_PHONE#private');
+ assert.deepEqual(window.dataLayer, [{event: 'whatsapp_click', link_url: 'https://wa.me/97143402223', page_path: '/services/oil-change-dubai'}]);
+ delete globalThis.window;
+-const report = {passed: true, routes: routes.length, titleChecks: expected.size, internalLinksChecked: internalLinks, existingLocaleFallbackLinks, realHtmlRedirectCases: redirects, roxEnglishOnlyIndexation: true, whatsappPiiAndSingleEvent: true};
++const report = {passed: true, routes: routes.length, titleChecks: expected.size, maintenanceGuideChecks: 2, internalLinksChecked: internalLinks, existingLocaleFallbackLinks, realHtmlRedirectCases: redirects, roxEnglishOnlyIndexation: true, whatsappPiiAndSingleEvent: true};
+ await writeFile('docs/seo/query-release-validation.json', JSON.stringify(report, null, 2));
+ console.log(`Query release checks passed: ${expected.size} titles, ${internalLinks} links, ${redirects} real-HTML redirect cases, ROX directives and WhatsApp privacy. ${existingLocaleFallbackLinks.length} existing locale/alias fallback links recorded for review.`);
+diff --git a/src/data/brandWorkshopArticles.ts b/src/data/brandWorkshopArticles.ts
+index 676fedd..49ba05a 100644
+--- a/src/data/brandWorkshopArticles.ts
++++ b/src/data/brandWorkshopArticles.ts
+@@ -55,7 +55,7 @@ const profiles: Omit<BrandWorkshopArticle, 'slug' | 'title' | 'primaryKeyword' |
+   },
+   {
+     brand: 'Ferrari', models: 'California, Portofino, Roma, 488, F8, SF90, Purosangue and classic models', diagnosticFocus: 'a careful pre-work scan, fluid and temperature review, and road-test-led assessment for performance systems',
+-    commonProblems: ['F1 or dual-clutch transmission symptoms that need model-specific diagnosis', 'brake, tyre and suspension concerns that affect confidence', 'cooling, battery and electronic-system faults after heat or storage'], repairFocus: ['routine service and multi-point inspection', 'brake, suspension, cooling and transmission-related repairs', 'pre-purchase, pre-trip and post-storage checks'], maintenanceNote: 'Ferrari maintenance is as much about usage and storage as mileage: battery support, tyre age, fluid condition and heat management deserve planned attention.', performanceNote: 'Track or performance preparation should begin with safety, braking, cooling, tyre and drivetrain condition—not a power upgrade alone.', excerpt: 'A practical Ferrari ownership and maintenance guide for Dubai, covering service planning, warning signs, storage and the checks that matter in UAE conditions.', metaTitle: 'Ferrari Maintenance Dubai | Ownership & Service Guide', metaDescription: 'Plan Ferrari maintenance in Dubai with a model-aware guide to service timing, warning signs, storage and essential checks for UAE heat and performance use.', datePublished: '2026-07-16', dateModified: '2026-08-31', imageAlt: 'Two red Ferrari 348 sports cars inside a specialist workshop', coverGradient: 'from-red-900 via-charcoal to-black', coverImage: '/images/ferrari-maintenance-dubai.jpg',
++    commonProblems: ['F1 or dual-clutch transmission symptoms that need model-specific diagnosis', 'brake, tyre and suspension concerns that affect confidence', 'cooling, battery and electronic-system faults after heat or storage'], repairFocus: ['routine service and multi-point inspection', 'brake, suspension, cooling and transmission-related repairs', 'pre-purchase, pre-trip and post-storage checks'], maintenanceNote: 'Ferrari maintenance is as much about usage and storage as mileage: battery support, tyre age, fluid condition and heat management deserve planned attention.', performanceNote: 'Track or performance preparation should begin with safety, braking, cooling, tyre and drivetrain condition—not a power upgrade alone.', excerpt: 'Ferrari maintenance in Dubai explained: the annual or 20,000 km programme reference, model-specific service scope, cost factors and checks for heat or storage.', metaTitle: 'Ferrari Maintenance Dubai | Schedule, Cost & Service', metaDescription: 'Ferrari maintenance in Dubai: understand annual or 20,000 km programme guidance, service scope, cost factors, warning signs and booking in Al Quoz.', datePublished: '2026-07-16', dateModified: '2026-09-14', imageAlt: 'Two red Ferrari 348 sports cars inside a specialist workshop', coverGradient: 'from-red-900 via-charcoal to-black', coverImage: '/images/ferrari-maintenance-dubai.jpg',
+   },
+   {
+     brand: 'Lamborghini', models: 'Huracán, Urus, Aventador, Gallardo and Revuelto', diagnosticFocus: 'vehicle-specific assessment of warning data, drivetrain, cooling, brakes, suspension and low-voltage electrical systems',
+@@ -131,7 +131,7 @@ export const brandWorkshopArticles: BrandWorkshopArticle[] = profiles.map((profi
+     ...profile,
+     slug: `${brandSlug}-${suffix}`,
+     title: profile.brand === 'Ferrari'
+-      ? 'Ferrari Maintenance in Dubai: Ownership & Service Guide'
++      ? 'Ferrari Maintenance Dubai: Schedule, Cost & Service'
+       : existingBestPage
+         ? `${profile.brand} Maintenance Guide for Dubai Owners`
+         : `Choosing ${profile.brand === 'Aston Martin' ? 'an' : 'a'} ${profile.brand} Workshop in Dubai: Owner Guide`,
+diff --git a/src/lib/route-manifest.ts b/src/lib/route-manifest.ts
+index dc63320..a7d6276 100644
+--- a/src/lib/route-manifest.ts
++++ b/src/lib/route-manifest.ts
+@@ -200,7 +200,13 @@ const currentMercedesSeoPaths = new Set([
+   '/mercedes/problems/wont-start',
+ ]);
+ 
+-export const publicRoutes = [...routeMap.values()].map((route) => currentMercedesSeoPaths.has(route.path) ? { ...route, lastmod: '2026-09-14' } : (route.path === '/services/transmission-repair-dubai' || oilChangeUpdatedPaths.has(route.path) || suspensionUpdatedPaths.has(route.path)) ? { ...route, lastmod: '2026-09-10' } : queryReleaseChanged(route) ? { ...route, lastmod: '2026-09-09' } : (paintCareUpdatedPaths.has(route.path) || mercedesUpdatedPaths.has(route.path)) ? { ...route, lastmod: '2026-09-08' } : route).sort((a, b) =>
++const currentMaintenanceGuidePaths = new Set([
++  '/blog/ferrari-maintenance-guide-dubai',
++  '/ar/blog/ferrari-maintenance-guide-dubai',
++  '/blog/porsche-maintenance-guide-dubai',
++]);
++
++export const publicRoutes = [...routeMap.values()].map((route) => (currentMercedesSeoPaths.has(route.path) || currentMaintenanceGuidePaths.has(route.path)) ? { ...route, lastmod: '2026-09-14' } : (route.path === '/services/transmission-repair-dubai' || oilChangeUpdatedPaths.has(route.path) || suspensionUpdatedPaths.has(route.path)) ? { ...route, lastmod: '2026-09-10' } : queryReleaseChanged(route) ? { ...route, lastmod: '2026-09-09' } : (paintCareUpdatedPaths.has(route.path) || mercedesUpdatedPaths.has(route.path)) ? { ...route, lastmod: '2026-09-08' } : route).sort((a, b) =>
+   a.path.localeCompare(b.path),
+ );
+ 
+diff --git a/src/pages/BrandWorkshopArticlePage.tsx b/src/pages/BrandWorkshopArticlePage.tsx
+index adf3cb7..30e9088 100644
+--- a/src/pages/BrandWorkshopArticlePage.tsx
++++ b/src/pages/BrandWorkshopArticlePage.tsx
+@@ -1,4 +1,3 @@
+-import React from 'react';
+ import { Navigate, useParams } from 'react-router-dom';
+ import { LocalizedLink as Link } from '@/components/LocalizedLink';
+ import { ArrowRight, Calendar, CheckCircle2, MapPin, MessageCircle, Phone, Wrench } from 'lucide-react';
+@@ -94,11 +93,16 @@ const BrandWorkshopArticleContent = ({ article, isArabic }: { article: BrandWork
+     : article.brand === 'Ferrari'
+       ? 'Ferrari maintenance Dubai, Ferrari service Dubai, Ferrari repair Dubai, Ferrari servicing, Ferrari service center Dubai, Ferrari specialist Dubai, Ferrari engine repair Dubai, Ferrari brake repair Dubai'
+       : `${article.primaryKeyword}, ${article.brand} repair Dubai, ${article.brand} garage Dubai, ${article.brand} specialist Dubai, ${article.brand} maintenance Dubai`;
++  const ferrariFaqs = [
++    { question: 'How often should a Ferrari be serviced in Dubai?', answer: 'Ferrari\'s 7-Year Genuine Maintenance programme describes scheduled maintenance every 20,000 km or once a year. The handbook, age, service history, storage and use of the exact car should still determine its final plan.' },
++    { question: 'What can a Ferrari maintenance service include?', answer: 'The scope can include model-approved oil and filters, other time- or distance-based items, fluid and leak checks, cooling, tyres, brakes, suspension, battery condition, a supported system scan and a written inspection. Only items due for the exact car should be included.' },
++    { question: 'How much does Ferrari maintenance cost in Dubai?', answer: 'There is no reliable single price for every Ferrari. Cost depends on the model and generation, scheduled scope, diagnostic time, fluids, parts, tyre and brake condition, history and any additional findings. Ask for an itemised estimate before approving work.' },
++    { question: 'Does a low-mileage or stored Ferrari still need maintenance?', answer: 'Yes. Time, heat cycles and storage can affect fluids, seals, tyres, brakes and the low-voltage battery even when mileage is low. Annual attention and a condition check remain important.' },
++    { question: 'Which engine oil should be used in a Ferrari?', answer: 'Use the specification and approval required for the exact model, engine and model year. Do not choose oil from a generic brand-wide recommendation; confirm the correct product, quantity and level procedure before service.' },
++    { question: 'How long does Ferrari maintenance take?', answer: 'Timing depends on the scheduled scope, inspection findings, diagnostic work and parts availability. The workshop can give a more useful completion estimate after reviewing the exact car and requested work.' },
++    { question: 'How can I request a Ferrari maintenance quote?', answer: 'Send the model, year, mileage, service history, last service date and any warning or symptom. DIGI-TEC can then confirm the appropriate first inspection and prepare an itemised estimate for the agreed scope.' },
++  ];
+   const englishFaqs = [
+-    ...(article.brand === 'Ferrari' ? [
+-      { question: 'How often should a Ferrari be serviced in Dubai?', answer: 'Ferrari\'s official 7-Year Genuine Maintenance programme describes service options of every 20,000 km or once a year. Your model handbook, age, service history, storage pattern and driving conditions should still guide the final maintenance plan.' },
+-      { question: 'How much does Ferrari maintenance cost in Dubai?', answer: 'There is no reliable single price for every Ferrari. Cost depends on the model and generation, scheduled service scope, diagnostic time, fluids, parts, tyre and brake condition, previous maintenance and whether storage or heat has caused additional work. Ask for an itemised inspection and estimate before approving repairs.' },
+-    ] : []),
+     { question: `How do I choose ${article.brand === 'Aston Martin' ? 'an' : 'a'} ${article.brand} workshop in Dubai?`, answer: `Choose a workshop that starts with a documented inspection, explains the fault in plain language, gives a written estimate before work, and can show how the proposed repair relates to your ${article.brand}'s service history and current condition.` },
+     { question: `Does Dubai heat change ${article.brand} maintenance?`, answer: `It can. High ambient temperature, stop-start traffic, dust and heavy air-conditioning demand can increase the importance of cooling, tyres, brakes, batteries and fluid-condition checks. The right interval depends on the model and how it is used.` },
+     { question: `What should ${article.brand === 'Aston Martin' ? 'an' : 'a'} ${article.brand} diagnostic include?`, answer: `A useful diagnostic is more than reading a code. It should combine a scan, live data where relevant, visual checks, a road test when appropriate, and a clear explanation of confirmed faults versus items that need monitoring.` },
+@@ -110,11 +114,16 @@ const BrandWorkshopArticleContent = ({ article, isArabic }: { article: BrandWork
+     { question: `Where is the ${article.brand} workshop located?`, answer: 'DIGI-TEC Performance Center is in Al Quoz Industrial Area 3, Dubai.' },
+     { question: `What should I bring to my ${article.brand} appointment?`, answer: `Bring the key, service history if available, details of recent work, photos or videos of intermittent concerns, and the circumstances in which the issue occurs. This helps the inspection begin with useful context.` },
+   ];
++  const ferrariFaqsArabic = [
++    { question: 'كم مرة يجب صيانة فيراري في دبي؟', answer: 'يوضح برنامج الصيانة الأصلية من فيراري صيانة مجدولة كل 20,000 كيلومتر أو مرة سنوياً. ويبقى دليل السيارة وعمرها وسجلها وطريقة تخزينها واستخدامها أساس تحديد الخطة النهائية.' },
++    { question: 'ماذا يمكن أن تشمل صيانة فيراري؟', answer: 'قد تشمل زيت المحرك والفلاتر بالمواصفات المناسبة، والبنود المستحقة حسب الوقت أو المسافة، وفحص السوائل والتسريبات والتبريد والإطارات والفرامل والتعليق والبطارية والأنظمة المدعومة، مع تقرير مكتوب.' },
++    { question: 'كم تبلغ تكلفة صيانة فيراري في دبي؟', answer: 'لا يوجد سعر واحد لجميع سيارات فيراري. تعتمد التكلفة على الطراز والجيل ونطاق الصيانة ووقت التشخيص والسوائل والقطع وحالة الإطارات والفرامل والسجل والنتائج الإضافية. اطلب عرضاً مفصلاً قبل اعتماد العمل.' },
++    { question: 'هل تحتاج فيراري قليلة الاستخدام أو المخزنة إلى صيانة؟', answer: 'نعم. قد تؤثر المدة والحرارة والتخزين في السوائل والأختام والإطارات والفرامل والبطارية حتى مع قلة المسافة، لذلك تبقى المتابعة السنوية وفحص الحالة مهمين.' },
++    { question: 'ما زيت المحرك المناسب لسيارة فيراري؟', answer: 'استخدم المواصفة والاعتماد المطلوبين للطراز والمحرك وسنة الصنع المحددة. يجب تأكيد المنتج والكمية وطريقة قياس المستوى قبل الخدمة بدلاً من الاعتماد على توصية عامة.' },
++    { question: 'كم تستغرق صيانة فيراري؟', answer: 'تعتمد المدة على نطاق الصيانة والنتائج وأعمال التشخيص وتوفر القطع. يمكن تقديم تقدير أدق بعد مراجعة السيارة والعمل المطلوب.' },
++    { question: 'كيف أطلب عرض سعر لصيانة فيراري؟', answer: 'أرسل الطراز والسنة والمسافة وسجل الصيانة وتاريخ آخر خدمة وأي تحذير أو أعراض، حتى يؤكد فريق ديجي-تك الفحص الأول المناسب ويعد عرضاً مفصلاً للنطاق المتفق عليه.' },
++  ];
+   const arabicFaqs = [
+-    ...(article.brand === 'Ferrari' ? [
+-      { question: 'كم مرة يجب صيانة فيراري في دبي؟', answer: 'يعتمد برنامج الصيانة الأصلية من فيراري على الصيانة كل 20,000 كيلومتر أو مرة سنوياً. ويبقى دليل الطراز وعمر السيارة وسجلها وطريقة تخزينها واستخدامها عوامل أساسية لتحديد الخطة المناسبة.' },
+-      { question: 'كم تبلغ تكلفة صيانة فيراري في دبي؟', answer: 'لا يوجد سعر واحد يناسب جميع سيارات فيراري. تعتمد التكلفة على الطراز والجيل ونطاق الصيانة ووقت التشخيص والسوائل والقطع وحالة الإطارات والفرامل وسجل الأعمال السابقة. اطلب فحصاً وعرض سعر مفصلاً قبل اعتماد الإصلاح.' },
+-    ] : []),
+     { question: `كيف أختار ورشة ${article.brand} متخصصة في دبي؟`, answer: `اختر ورشة تبدأ بفحص موثق، وتشرح سبب العطل بوضوح، وتقدم عرضاً مكتوباً قبل العمل، وتربط التوصية بسجل صيانة ${article.brand} وحالتها الحالية.` },
+     { question: `هل تؤثر حرارة دبي في صيانة ${article.brand}؟`, answer: 'نعم. الحرارة والازدحام والغبار والاستخدام المتواصل للمكيف تزيد أهمية فحص التبريد والإطارات والفرامل والبطارية والسوائل وفق حالة السيارة وطريقة استخدامها.' },
+     { question: `ماذا يجب أن يشمل فحص ${article.brand}؟`, answer: 'يشمل الفحص المفيد قراءة الأنظمة الإلكترونية والبيانات الحية عند الحاجة، والفحص البصري، وتجربة الطريق عندما تكون آمنة، مع توضيح الأعطال المؤكدة وما يحتاج إلى متابعة.' },
+@@ -158,7 +167,9 @@ const BrandWorkshopArticleContent = ({ article, isArabic }: { article: BrandWork
+     { question: 'هل تشمل الصفحة صيانة Spectre الكهربائية؟', answer: 'Spectre سيارة كهربائية وتبقى منفصلة عن صيانة محركات الاحتراق. لا يتم الإعلان عن أعمال البطارية عالية الجهد أو الشحن أو العزل من دون تأكيد التدريب والمعدات والنطاق.' },
+     { question: 'ما الذي يحدد تكلفة خدمة رولز رويس؟', answer: 'تعتمد التكلفة على الطراز والسنة والمسافة والسجل والصيانة المطلوبة ووقت التشخيص والنتائج والقطع والسوائل والعمالة.' },
+   ];
+-  const faqs = !isArabic && article.brand === 'Aston Martin' ? [
++  const faqs = article.brand === 'Ferrari'
++    ? (isArabic ? ferrariFaqsArabic : ferrariFaqs)
++    : !isArabic && article.brand === 'Aston Martin' ? [
+  {question:'How should I compare Aston Martin workshops?',answer:'Ask about model-specific diagnostic access, the inspection process, parts options and written estimates before approving work.'},
+  {question:'What should I send before booking?',answer:'Model, year, mileage, service history and symptoms help the workshop plan the first assessment.'},
+  {question:'Is DIGI-TEC independent?',answer:'DIGI-TEC is an independent workshop in Al Quoz Industrial Area 3, Dubai. No factory authorization is claimed.'},
+@@ -172,7 +183,7 @@ const BrandWorkshopArticleContent = ({ article, isArabic }: { article: BrandWork
+         : article.brand === 'Lamborghini' ? lamborghiniServiceLinks
+           : article.brand === 'Rolls-Royce' ? rollsRoyceServiceLinks : article.brand === 'Aston Martin' && !isArabic ? [{label:'Aston Martin service and repair',arLabel:'',href:'/brands/aston-martin-service-dubai'},{label:'DB11 owner guide',arLabel:'',href:'/blog/aston-martin-db11-service-dubai-guide'},{label:'Brake assessment',arLabel:'',href:'/brands/aston-martin-service-dubai/brake-repair'},{label:'Transmission assessment',arLabel:'',href:'/brands/aston-martin-service-dubai/transmission-repair'}] : generalServiceLinks;
+ 
+-  const jsonLd = React.useMemo(() => {
++  const jsonLd = (() => {
+     const breadcrumb = buildBreadcrumb(url, [
+       { name: isArabic ? 'الرئيسية' : 'Home', url: isArabic ? '/ar' : '/' },
+       { name: isArabic ? 'المقالات' : 'Blog', url: isArabic ? '/ar/blog' : '/blog' },
+@@ -214,7 +225,7 @@ const BrandWorkshopArticleContent = ({ article, isArabic }: { article: BrandWork
+     });
+     const faq = buildFAQ(url, faqs);
+     return pageGraph([webPage, breadcrumb, blogArticle, service, ...(faq ? [faq] : [])]);
+-  }, [article, dateModified, datePublished, faqs, isArabic, keywords, metaDescription, url]);
++  })();
+ 
+   useSeo({
+     title: metaTitle,
+@@ -232,10 +243,19 @@ const BrandWorkshopArticleContent = ({ article, isArabic }: { article: BrandWork
+   });
+ 
+   const whatsappHref = `https://wa.me/97143402223?text=${encodeURIComponent(isArabic ? `مرحباً ديجي-تك، أود حجز فحص لسيارة ${article.brand} في دبي.` : `Hi DIGI-TEC, I would like to book ${article.brand === 'Aston Martin' ? 'an' : 'a'} ${article.brand} inspection in Dubai.`)}`;
+-  const relatedArticles = brandWorkshopArticles
+-    .filter((item) => item.slug !== article.slug)
+-    .slice(0, 3)
+-    .map((item) => (isArabic ? localizePostSummaryToArabic({ ...item, excerpt: '' }) : item));
++  const relatedArticles = article.brand === 'Ferrari'
++    ? [
++        { path: '/blog/ferrari-488-service-dubai-guide', title: isArabic ? 'دليل صيانة فيراري 488 في دبي' : 'Ferrari 488 Service & Maintenance Guide' },
++        { path: '/best-ferrari-workshop-dubai', title: isArabic ? 'كيفية اختيار ورشة فيراري في دبي' : 'How to Choose a Ferrari Workshop in Dubai' },
++        { path: '/blog/pre-purchase-inspection-dubai-guide', title: isArabic ? 'دليل فحص السيارة قبل الشراء في دبي' : 'Pre-Purchase Inspection Guide for Dubai' },
++      ]
++    : brandWorkshopArticles
++        .filter((item) => item.slug !== article.slug)
++        .slice(0, 3)
++        .map((item) => {
++          const localizedItem = isArabic ? localizePostSummaryToArabic({ ...item, excerpt: '' }) : item;
++          return { path: `/blog/${localizedItem.slug}`, title: localizedItem.title };
++        });
+   const t = (english: string, arabic: string) => (isArabic ? arabic : english);
+ 
+   return (
+@@ -251,7 +271,7 @@ const BrandWorkshopArticleContent = ({ article, isArabic }: { article: BrandWork
+         </nav>
+ 
+         <section className={`relative mt-5 overflow-hidden bg-gradient-to-br ${article.coverGradient}`}>
+-          {article.coverImage && <img src={article.coverImage} alt={article.imageAlt} className="absolute inset-0 h-full w-full object-cover" />}
++          {article.coverImage && <img src={article.coverImage} alt={article.imageAlt} width={article.brand === 'Ferrari' ? 1672 : undefined} height={article.brand === 'Ferrari' ? 941 : undefined} decoding="async" className="absolute inset-0 h-full w-full object-cover" />}
+           <div className="absolute inset-0 bg-black/55" />
+           <div className="relative mx-auto max-w-4xl px-5 py-16 sm:px-6 sm:py-24">
+             <p className="mb-4 text-xs font-bold uppercase tracking-[0.24em] text-burnt-orange">{t('Dubai Workshop Guide', 'دليل ورش السيارات في دبي')}</p>
+@@ -278,42 +298,59 @@ const BrandWorkshopArticleContent = ({ article, isArabic }: { article: BrandWork
+ 
+         <article className="mx-auto max-w-4xl px-5 py-14 sm:px-6 sm:py-20">
+           <section className={`${isArabic ? 'border-r-2 pr-5' : 'border-l-2 pl-5'} border-burnt-orange`}>
+-            <h2 className="text-2xl font-black sm:text-3xl">{t(`A practical answer for ${article.brand} owners`, `إجابة عملية لمالكي ${article.brand}`)}</h2>
+-            <p className="mt-4 text-lg leading-relaxed text-gray-300">{t(`The best workshop decision is rarely about a slogan. It is about whether the team can understand the car, define the concern accurately, show you a sensible repair path and keep you informed before costs grow. At DIGI-TEC in Al Quoz, ${article.brand === 'Aston Martin' ? 'an' : 'a'} ${article.brand} appointment starts with the vehicle’s history, symptoms and current condition—not an assumption.`, `اختيار الورشة المناسبة لا يعتمد على شعار، بل على قدرة الفريق على فهم السيارة وتحديد المشكلة بدقة وشرح مسار إصلاح منطقي قبل ارتفاع التكلفة. في ديجي-تك بالقوز، يبدأ موعد ${article.brand} بمراجعة تاريخ السيارة وأعراضها وحالتها الحالية، لا بالافتراضات.`)}</p>
+-            {article.existingBestPage && article.brand === 'Mercedes-Benz' && <p className="mt-4 leading-relaxed text-gray-400">{t('For workshop information and booking, see our ', 'للمعلومات عن الورشة والحجز، راجع ')}<Link to={article.existingBestPage} className="font-semibold text-burnt-orange hover:underline">{article.brand === 'Mercedes-Benz' ? t('Mercedes-Benz repair and service hub', 'مركز إصلاح وصيانة مرسيدس بنز') : t(`${article.brand} workshop selection page`, `دليل اختيار ورشة ${article.brand}`)}</Link>.</p>}
+-            {article.existingBestPage && article.brand !== 'Mercedes-Benz' && <p className="mt-4 leading-relaxed text-gray-400">{t('For a direct comparison of what to look for in a workshop, see our ', 'للمقارنة المباشرة بين معايير اختيار الورشة، راجع صفحة ')}<Link to={article.existingBestPage} className="font-semibold text-burnt-orange hover:underline">{article.brand === 'Mercedes-Benz' ? t('Mercedes-Benz repair and service hub', 'مركز إصلاح وصيانة مرسيدس-بنز') : t(`${article.brand} workshop selection page`, `دليل اختيار ورشة ${article.brand}`)}</Link>{t('. This article is intentionally focused on ownership, maintenance and repair preparation so it does not duplicate that landing page.', '؛ فهذا المقال يركز على الملكية والصيانة والاستعداد للإصلاح من دون تكرار محتوى صفحة الخدمة.')}</p>}
++            {article.brand === 'Ferrari' ? (
++              <>
++                <h2 className="text-2xl font-black sm:text-3xl">{t('Ferrari maintenance in Dubai: the short answer', 'صيانة فيراري في دبي: الإجابة المختصرة')}</h2>
++                <p className="mt-4 text-lg leading-relaxed text-gray-300">{t('Ferrari’s 7-Year Genuine Maintenance programme describes scheduled maintenance every 20,000 km or once a year. Use that as a reference, then confirm the handbook, programme status and recorded history for the exact model because classic, limited-edition and out-of-programme cars can differ.', 'يوضح برنامج الصيانة الأصلية من فيراري صيانة مجدولة كل 20,000 كيلومتر أو مرة سنوياً. استخدم ذلك كمرجع، ثم راجع دليل السيارة وحالة البرنامج والسجل الموثق للطراز المحدد لأن السيارات الكلاسيكية والإصدارات المحدودة والسيارات خارج البرنامج قد تختلف.')}</p>
++                <p className="mt-4 leading-relaxed text-gray-400">{t('The work and price are not one universal package: model, age, mileage, storage, driving use, due items and inspection findings determine the final scope. Ask for those items to be separated in a written estimate before approval.', 'لا يوجد نطاق أو سعر واحد لجميع السيارات؛ فالطراز والعمر والمسافة والتخزين وطريقة الاستخدام والبنود المستحقة ونتيجة الفحص هي ما يحدد العمل النهائي. اطلب فصل هذه البنود في عرض مكتوب قبل الاعتماد.')}</p>
++                <div className="mt-6 grid gap-3 sm:grid-cols-2">
++                  {ferrariServiceLinks.slice(0, 4).map((service) => <Link key={service.href} to={service.href} className="inline-flex min-h-11 items-center justify-between rounded-xl border border-white/10 bg-white/[0.03] px-4 py-3 text-sm font-bold transition-colors hover:border-burnt-orange/50 hover:text-burnt-orange"><span>{isArabic ? service.arLabel : service.label}</span><ArrowRight className={`${isArabic ? 'rotate-180' : ''} h-4 w-4 shrink-0 text-burnt-orange`} /></Link>)}
++                </div>
++              </>
++            ) : (
++              <>
++                <h2 className="text-2xl font-black sm:text-3xl">{t(`A practical answer for ${article.brand} owners`, `إجابة عملية لمالكي ${article.brand}`)}</h2>
++                <p className="mt-4 text-lg leading-relaxed text-gray-300">{t(`The best workshop decision is rarely about a slogan. It is about whether the team can understand the car, define the concern accurately, show you a sensible repair path and keep you informed before costs grow. At DIGI-TEC in Al Quoz, ${article.brand === 'Aston Martin' ? 'an' : 'a'} ${article.brand} appointment starts with the vehicle’s history, symptoms and current condition—not an assumption.`, `اختيار الورشة المناسبة لا يعتمد على شعار، بل على قدرة الفريق على فهم السيارة وتحديد المشكلة بدقة وشرح مسار إصلاح منطقي قبل ارتفاع التكلفة. في ديجي-تك بالقوز، يبدأ موعد ${article.brand} بمراجعة تاريخ السيارة وأعراضها وحالتها الحالية، لا بالافتراضات.`)}</p>
++                {article.existingBestPage && article.brand === 'Mercedes-Benz' && <p className="mt-4 leading-relaxed text-gray-400">{t('For workshop information and booking, see our ', 'للمعلومات عن الورشة والحجز، راجع ')}<Link to={article.existingBestPage} className="font-semibold text-burnt-orange hover:underline">{t('Mercedes-Benz repair and service hub', 'مركز إصلاح وصيانة مرسيدس بنز')}</Link>.</p>}
++                {article.existingBestPage && article.brand !== 'Mercedes-Benz' && <p className="mt-4 leading-relaxed text-gray-400">{t('For a direct comparison of what to look for in a workshop, see our ', 'للمقارنة المباشرة بين معايير اختيار الورشة، راجع صفحة ')}<Link to={article.existingBestPage} className="font-semibold text-burnt-orange hover:underline">{t(`${article.brand} workshop selection page`, `دليل اختيار ورشة ${article.brand}`)}</Link>{t('. This article is intentionally focused on ownership, maintenance and repair preparation so it does not duplicate that landing page.', '؛ فهذا المقال يركز على الملكية والصيانة والاستعداد للإصلاح من دون تكرار محتوى صفحة الخدمة.')}</p>}
++              </>
++            )}
+           </section>
+ 
+-          <section className="mt-14">
+-            <h2 className="text-2xl font-black sm:text-3xl">{t('Why a specialist approach matters', 'لماذا تهم الخبرة المتخصصة؟')}</h2>
+-            <p className="mt-4 leading-relaxed text-gray-300">{t(`Modern ${article.brand} vehicles combine mechanical systems with networked control modules, safety functions, comfort features and model-specific service procedures. A warning light may point to a symptom rather than the failed part. Replacing components without checking fault history, live information, wiring, fluids and the surrounding system can turn a straightforward repair into repeated expense.`, `تجمع سيارات ${article.brand} الحديثة بين الأنظمة الميكانيكية ووحدات التحكم المتصلة ووظائف السلامة والراحة وإجراءات صيانة خاصة بالطراز. قد تشير رسالة التحذير إلى عَرَض لا إلى القطعة التالفة، لذلك يؤدي استبدال المكونات من دون مراجعة سجل الأعطال والبيانات الحية والأسلاك والسوائل إلى تكاليف متكررة.`)}</p>
+-            <p className="mt-4 leading-relaxed text-gray-300">{article.brand === 'Rolls-Royce' ? t('A good workshop should state what is confirmed, what is likely and what still needs testing. That distinction matters when approving maintenance, a repair or a major component replacement, and it makes quotations easier to compare fairly.', 'توضح الورشة الجيدة ما تم تأكيده وما هو محتمل وما يزال يحتاج إلى اختبار. هذا الفرق مهم عند اعتماد الصيانة أو الإصلاح أو استبدال مكوّن رئيسي، ويساعد على مقارنة عروض الأسعار بإنصاف.') : t('A good workshop should be comfortable saying what is confirmed, what is likely, and what still needs testing. That distinction matters when you are deciding whether to approve maintenance, a repair, a major component replacement or a performance upgrade. It also makes it easier to compare quotes fairly.', 'توضح الورشة الجيدة ما تم تأكيده، وما هو محتمل، وما يزال يحتاج إلى اختبار. هذا الفرق مهم عند اعتماد الصيانة أو الإصلاح أو استبدال مكوّن كبير أو تطوير الأداء، ويساعدك أيضاً على مقارنة عروض الأسعار بإنصاف.')}</p>
+-          </section>
++          {article.brand !== 'Ferrari' && (
++            <>
++              <section className="mt-14">
++                <h2 className="text-2xl font-black sm:text-3xl">{t('Why a specialist approach matters', 'لماذا تهم الخبرة المتخصصة؟')}</h2>
++                <p className="mt-4 leading-relaxed text-gray-300">{t(`Modern ${article.brand} vehicles combine mechanical systems with networked control modules, safety functions, comfort features and model-specific service procedures. A warning light may point to a symptom rather than the failed part. Replacing components without checking fault history, live information, wiring, fluids and the surrounding system can turn a straightforward repair into repeated expense.`, `تجمع سيارات ${article.brand} الحديثة بين الأنظمة الميكانيكية ووحدات التحكم المتصلة ووظائف السلامة والراحة وإجراءات صيانة خاصة بالطراز. قد تشير رسالة التحذير إلى عَرَض لا إلى القطعة التالفة، لذلك يؤدي استبدال المكونات من دون مراجعة سجل الأعطال والبيانات الحية والأسلاك والسوائل إلى تكاليف متكررة.`)}</p>
++                <p className="mt-4 leading-relaxed text-gray-300">{article.brand === 'Rolls-Royce' ? t('A good workshop should state what is confirmed, what is likely and what still needs testing. That distinction matters when approving maintenance, a repair or a major component replacement, and it makes quotations easier to compare fairly.', 'توضح الورشة الجيدة ما تم تأكيده وما هو محتمل وما يزال يحتاج إلى اختبار. هذا الفرق مهم عند اعتماد الصيانة أو الإصلاح أو استبدال مكوّن رئيسي، ويساعد على مقارنة عروض الأسعار بإنصاف.') : t('A good workshop should be comfortable saying what is confirmed, what is likely, and what still needs testing. That distinction matters when you are deciding whether to approve maintenance, a repair, a major component replacement or a performance upgrade. It also makes it easier to compare quotes fairly.', 'توضح الورشة الجيدة ما تم تأكيده، وما هو محتمل، وما يزال يحتاج إلى اختبار. هذا الفرق مهم عند اعتماد الصيانة أو الإصلاح أو استبدال مكوّن كبير أو تطوير الأداء، ويساعدك أيضاً على مقارنة عروض الأسعار بإنصاف.')}</p>
++              </section>
+ 
+-          <section className="mt-14">
+-            <h2 className="text-2xl font-black sm:text-3xl">{t(`${article.brand} models and common Dubai concerns`, `طرازات ${article.brand} والأعطال الشائعة في دبي`)}</h2>
+-            <p className="mt-4 leading-relaxed text-gray-300">{t(`We see owners of ${article.models} looking for clear answers around reliability, service planning and the effect of Dubai heat. The exact concern depends on age, mileage, driving pattern and previous work, but these are the areas worth raising during an inspection:`, `يبحث مالكو طرازات ${article.models} عن إجابات واضحة حول الاعتمادية وخطة الصيانة وتأثير حرارة دبي. تختلف الأولويات حسب العمر والمسافة وطريقة القيادة والأعمال السابقة، لكن هذه أهم النقاط التي تستحق الفحص:`)}</p>
+-            <div className="mt-6 grid gap-4 sm:grid-cols-3">
+-              {article.commonProblems.map((problem) => <div key={problem} className="card-premium rounded-2xl p-5"><Wrench className="mb-3 h-5 w-5 text-burnt-orange" /><h3 className="font-bold">{problem}</h3><p className="mt-2 text-sm leading-relaxed text-gray-400">{t('The cause should be confirmed with a measured inspection before any major part is approved.', 'يجب تأكيد السبب بفحص وقياسات واضحة قبل اعتماد استبدال أي قطعة رئيسية.')}</p></div>)}
+-            </div>
+-            <p className="mt-6 leading-relaxed text-gray-300">{t('Heat, traffic, dust, occasional short journeys and long periods of idling can expose a marginal cooling system, tired battery, worn tyre or ageing fluid sooner than an owner expects. The goal is not to replace parts early without reason; it is to identify the items that can cause a breakdown, safety issue or more expensive repair if ignored.', 'قد تكشف الحرارة والازدحام والغبار والرحلات القصيرة وفترات التوقف الطويلة ضعف نظام التبريد أو البطارية أو الإطارات أو السوائل مبكراً. الهدف ليس تبديل القطع بلا سبب، بل تحديد ما قد يؤدي إلى تعطل أو مشكلة سلامة أو إصلاح أغلى إذا تم تجاهله.')}</p>
+-          </section>
++              <section className="mt-14">
++                <h2 className="text-2xl font-black sm:text-3xl">{t(`${article.brand} models and common Dubai concerns`, `طرازات ${article.brand} والأعطال الشائعة في دبي`)}</h2>
++                <p className="mt-4 leading-relaxed text-gray-300">{t(`We see owners of ${article.models} looking for clear answers around reliability, service planning and the effect of Dubai heat. The exact concern depends on age, mileage, driving pattern and previous work, but these are the areas worth raising during an inspection:`, `يبحث مالكو طرازات ${article.models} عن إجابات واضحة حول الاعتمادية وخطة الصيانة وتأثير حرارة دبي. تختلف الأولويات حسب العمر والمسافة وطريقة القيادة والأعمال السابقة، لكن هذه أهم النقاط التي تستحق الفحص:`)}</p>
++                <div className="mt-6 grid gap-4 sm:grid-cols-3">
++                  {article.commonProblems.map((problem) => <div key={problem} className="card-premium rounded-2xl p-5"><Wrench className="mb-3 h-5 w-5 text-burnt-orange" /><h3 className="font-bold">{problem}</h3><p className="mt-2 text-sm leading-relaxed text-gray-400">{t('The cause should be confirmed with a measured inspection before any major part is approved.', 'يجب تأكيد السبب بفحص وقياسات واضحة قبل اعتماد استبدال أي قطعة رئيسية.')}</p></div>)}
++                </div>
++                <p className="mt-6 leading-relaxed text-gray-300">{t('Heat, traffic, dust, occasional short journeys and long periods of idling can expose a marginal cooling system, tired battery, worn tyre or ageing fluid sooner than an owner expects. The goal is not to replace parts early without reason; it is to identify the items that can cause a breakdown, safety issue or more expensive repair if ignored.', 'قد تكشف الحرارة والازدحام والغبار والرحلات القصيرة وفترات التوقف الطويلة ضعف نظام التبريد أو البطارية أو الإطارات أو السوائل مبكراً. الهدف ليس تبديل القطع بلا سبب، بل تحديد ما قد يؤدي إلى تعطل أو مشكلة سلامة أو إصلاح أغلى إذا تم تجاهله.')}</p>
++              </section>
+ 
+-          <section className="mt-14">
+-            <h2 className="text-2xl font-black sm:text-3xl">{t('Diagnostics and typical repair planning', 'التشخيص وخطة الإصلاح المناسبة')}</h2>
+-            <p className="mt-4 leading-relaxed text-gray-300">{t(`For ${article.brand} work, the diagnostic focus is ${article.diagnosticFocus}. The technician should connect the symptom to evidence, then explain the order of work. A thoughtful plan often starts with the least invasive checks, confirms the source of the issue, and only then moves to repair or component replacement.`, `يركز تشخيص ${article.brand} على ${article.diagnosticFocus}. يربط الفني العَرَض بالدليل ثم يشرح ترتيب العمل. تبدأ الخطة المدروسة عادة بأقل الاختبارات تدخلاً، وتؤكد مصدر المشكلة، ثم تنتقل إلى الإصلاح أو الاستبدال.`)}</p>
+-            <ul className="mt-5 space-y-3 text-gray-300">
+-              {article.repairFocus.map((repair) => <li key={repair} className="flex gap-3"><CheckCircle2 className="mt-1 h-4 w-4 shrink-0 text-burnt-orange" /><span>{repair}</span></li>)}
+-            </ul>
+-            <p className="mt-5 leading-relaxed text-gray-300">{t('A written inspection result helps you decide what is urgent, what can be scheduled, and which preventive items are genuinely worthwhile. It also gives you a useful record if you are comparing options, planning a long journey or preparing the car for sale.', 'تساعدك نتيجة الفحص المكتوبة على معرفة ما هو عاجل وما يمكن جدولته وما يستحق الصيانة الوقائية فعلاً. كما توفر سجلاً مفيداً عند مقارنة الخيارات أو التخطيط للسفر أو تجهيز السيارة للبيع.')}</p>
+-          </section>
++              <section className="mt-14">
++                <h2 className="text-2xl font-black sm:text-3xl">{t('Diagnostics and typical repair planning', 'التشخيص وخطة الإصلاح المناسبة')}</h2>
++                <p className="mt-4 leading-relaxed text-gray-300">{t(`For ${article.brand} work, the diagnostic focus is ${article.diagnosticFocus}. The technician should connect the symptom to evidence, then explain the order of work. A thoughtful plan often starts with the least invasive checks, confirms the source of the issue, and only then moves to repair or component replacement.`, `يركز تشخيص ${article.brand} على ${article.diagnosticFocus}. يربط الفني العَرَض بالدليل ثم يشرح ترتيب العمل. تبدأ الخطة المدروسة عادة بأقل الاختبارات تدخلاً، وتؤكد مصدر المشكلة، ثم تنتقل إلى الإصلاح أو الاستبدال.`)}</p>
++                <ul className="mt-5 space-y-3 text-gray-300">
++                  {article.repairFocus.map((repair) => <li key={repair} className="flex gap-3"><CheckCircle2 className="mt-1 h-4 w-4 shrink-0 text-burnt-orange" /><span>{repair}</span></li>)}
++                </ul>
++                <p className="mt-5 leading-relaxed text-gray-300">{t('A written inspection result helps you decide what is urgent, what can be scheduled, and which preventive items are genuinely worthwhile. It also gives you a useful record if you are comparing options, planning a long journey or preparing the car for sale.', 'تساعدك نتيجة الفحص المكتوبة على معرفة ما هو عاجل وما يمكن جدولته وما يستحق الصيانة الوقائية فعلاً. كما توفر سجلاً مفيداً عند مقارنة الخيارات أو التخطيط للسفر أو تجهيز السيارة للبيع.')}</p>
++              </section>
+ 
+-          <section className="mt-14">
+-            <h2 className="text-2xl font-black sm:text-3xl">{t('Maintenance in Dubai: plan by condition, not guesswork', 'الصيانة في دبي: خطة مبنية على الحالة لا التخمين')}</h2>
+-            <p className="mt-4 leading-relaxed text-gray-300">{article.maintenanceNote}</p>
+-            {article.brand === 'Mercedes-Benz' && <div className="mt-6 space-y-4"><h3 className="text-xl font-bold">{t('Is a Mercedes reliable for Gulf ownership?', 'هل تناسب مرسيدس الاستخدام في الخليج؟')}</h3><p className="leading-relaxed text-gray-300">{t('Reliability depends on the individual car: generation, engine, equipment, maintenance, previous repairs and current condition. Check the cooling system, AC, batteries, tyres and warning history alongside the due schedule. A high or low mileage reading alone does not establish whether a car is a sensible purchase.', 'تعتمد الاعتمادية على السيارة نفسها: جيل الطراز والمحرك والتجهيزات والصيانة والإصلاحات السابقة والحالة الحالية. راجع التبريد والتكييف والبطاريات والإطارات وسجل التحذيرات مع الصيانة المستحقة. المسافة المقطوعة وحدها لا تكفي للحكم على ملاءمة الشراء.')}</p>{!isArabic && <Link to="/blog/pre-purchase-inspection-dubai-guide" className="inline-block font-semibold text-burnt-orange hover:underline">What a pre-purchase inspection should cover</Link>}</div>}
+-            <p className="mt-4 leading-relaxed text-gray-300">{t('A practical maintenance conversation covers engine oil and filters, brake condition, tyres, battery health, cooling performance, air-conditioning, fluids, leaks, service records and any stored warning codes. For performance, luxury and older vehicles, it also helps to discuss storage, battery conditioning and how often the car is driven. This gives the workshop a fuller picture than a mileage number on its own.', 'تشمل مناقشة الصيانة العملية زيت المحرك والفلاتر والفرامل والإطارات والبطارية والتبريد والمكيف والسوائل والتسريبات وسجل الصيانة ورموز الأعطال المخزنة. وفي السيارات الفاخرة أو عالية الأداء أو الأقدم، تفيد معرفة مدة التخزين وطريقة شحن البطارية وعدد مرات الاستخدام، لأن هذه الصورة أدق من رقم المسافة وحده.')}</p>
+-          </section>
++              <section className="mt-14">
++                <h2 className="text-2xl font-black sm:text-3xl">{t('Maintenance in Dubai: plan by condition, not guesswork', 'الصيانة في دبي: خطة مبنية على الحالة لا التخمين')}</h2>
++                <p className="mt-4 leading-relaxed text-gray-300">{article.maintenanceNote}</p>
++                {article.brand === 'Mercedes-Benz' && <div className="mt-6 space-y-4"><h3 className="text-xl font-bold">{t('Is a Mercedes reliable for Gulf ownership?', 'هل تناسب مرسيدس الاستخدام في الخليج؟')}</h3><p className="leading-relaxed text-gray-300">{t('Reliability depends on the individual car: generation, engine, equipment, maintenance, previous repairs and current condition. Check the cooling system, AC, batteries, tyres and warning history alongside the due schedule. A high or low mileage reading alone does not establish whether a car is a sensible purchase.', 'تعتمد الاعتمادية على السيارة نفسها: جيل الطراز والمحرك والتجهيزات والصيانة والإصلاحات السابقة والحالة الحالية. راجع التبريد والتكييف والبطاريات والإطارات وسجل التحذيرات مع الصيانة المستحقة. المسافة المقطوعة وحدها لا تكفي للحكم على ملاءمة الشراء.')}</p>{!isArabic && <Link to="/blog/pre-purchase-inspection-dubai-guide" className="inline-block font-semibold text-burnt-orange hover:underline">What a pre-purchase inspection should cover</Link>}</div>}
++                <p className="mt-4 leading-relaxed text-gray-300">{t('A practical maintenance conversation covers engine oil and filters, brake condition, tyres, battery health, cooling performance, air-conditioning, fluids, leaks, service records and any stored warning codes. For performance, luxury and older vehicles, it also helps to discuss storage, battery conditioning and how often the car is driven. This gives the workshop a fuller picture than a mileage number on its own.', 'تشمل مناقشة الصيانة العملية زيت المحرك والفلاتر والفرامل والإطارات والبطارية والتبريد والمكيف والسوائل والتسريبات وسجل الصيانة ورموز الأعطال المخزنة. وفي السيارات الفاخرة أو عالية الأداء أو الأقدم، تفيد معرفة مدة التخزين وطريقة شحن البطارية وعدد مرات الاستخدام، لأن هذه الصورة أدق من رقم المسافة وحده.')}</p>
++              </section>
++            </>
++          )}
+ 
+           {article.brand === 'Ferrari' && (
+             <>
+@@ -326,6 +363,21 @@ const BrandWorkshopArticleContent = ({ article, isArabic }: { article: BrandWork
+                 <p className="mt-4 leading-relaxed text-gray-300">{t('Low mileage does not remove the need for annual attention. Heat cycles, long storage, battery condition, tyre age, fluid ageing and seals can all matter before the odometer reaches the next distance-based interval. Cars used on track or driven hard should be assessed around that use rather than relying on the calendar alone.', 'قلة المسافة لا تلغي الحاجة إلى المتابعة السنوية. تؤثر الحرارة والتخزين الطويل وحالة البطارية وعمر الإطارات وتقادم السوائل والأختام حتى قبل بلوغ موعد المسافة التالي. أما سيارات الحلبة أو الاستخدام القوي فتحتاج إلى فحص يناسب طريقة استخدامها.')}</p>
+               </section>
+ 
++              <section className="mt-14">
++                <h2 className="text-2xl font-black sm:text-3xl">{t('What a Ferrari maintenance visit can include', 'ماذا يمكن أن تشمل زيارة صيانة فيراري؟')}</h2>
++                <p className="mt-4 leading-relaxed text-gray-300">{t('There is no single package for every Ferrari. The due work should be selected from the exact model, model year, programme or handbook information and documented history, then adjusted only when inspection evidence supports it.', 'لا توجد باقة واحدة تناسب جميع سيارات فيراري. تُحدد الأعمال المستحقة وفق الطراز وسنة الصنع ومعلومات البرنامج أو الدليل والسجل الموثق، ولا تضاف أعمال أخرى إلا عندما تدعمها نتيجة الفحص.')}</p>
++                <ul className="mt-5 space-y-3 text-gray-300">
++                  {[
++                    t('Model-approved engine oil, filter and other due consumables', 'زيت المحرك والفلاتر والمواد المستحقة بالمواصفات المناسبة للطراز'),
++                    t('Fluid condition, visible leaks, cooling and heat-management checks', 'حالة السوائل والتسريبات الظاهرة وفحص التبريد وإدارة الحرارة'),
++                    t('Tyre age and wear, brake condition, suspension and battery health', 'عمر الإطارات وتآكلها وحالة الفرامل والتعليق والبطارية'),
++                    t('Supported system scan, warning review and service reset where applicable', 'فحص الأنظمة المدعومة ومراجعة التحذيرات وإعادة ضبط الخدمة عند انطباقها'),
++                    t('Written findings with due, urgent and optional work separated', 'تقرير مكتوب يفصل بين الأعمال المستحقة والعاجلة والاختيارية'),
++                  ].map((item) => <li key={item} className="flex gap-3"><CheckCircle2 className="mt-1 h-4 w-4 shrink-0 text-burnt-orange" /><span>{item}</span></li>)}
++                </ul>
++                <p className="mt-5 leading-relaxed text-gray-300">{t('For the next step, review our ', 'للخطوة التالية، راجع صفحة ')}<Link to="/brands/ferrari-service-dubai/oil-change" className="font-semibold text-burnt-orange hover:underline">{t('Ferrari oil service', 'خدمة زيت فيراري')}</Link>{t(', ', '، و')}<Link to="/brands/ferrari-service-dubai/engine-diagnostics" className="font-semibold text-burnt-orange hover:underline">{t('Ferrari diagnostics', 'تشخيص فيراري')}</Link>{t(' or ', ' أو ')}<Link to="/brands/ferrari-service-dubai/transmission-repair" className="font-semibold text-burnt-orange hover:underline">{t('F1 and dual-clutch transmission assessment', 'فحص ناقل الحركة F1 وثنائي القابض')}</Link>{t(' pages for the workshop scope behind each concern.', ' لمعرفة نطاق الورشة لكل حالة.')}</p>
++              </section>
++
+               <section className="mt-14">
+                 <h2 className="text-2xl font-black sm:text-3xl">{t('What affects Ferrari maintenance cost in Dubai?', 'ما العوامل التي تحدد تكلفة صيانة فيراري في دبي؟')}</h2>
+                 <p className="mt-4 leading-relaxed text-gray-300">{t('A responsible workshop cannot quote one Ferrari maintenance price without knowing the car. The cost changes with the model, generation, mileage, service history, scheduled scope and the evidence found during inspection. A routine annual visit is different from resolving an F1 gearbox concern, a cooling fault or deferred maintenance on a stored car.', 'لا يمكن تقديم سعر واحد مسؤول لصيانة جميع سيارات فيراري من دون معرفة السيارة. تتغير التكلفة حسب الطراز والجيل والمسافة والسجل ونطاق الصيانة ونتيجة الفحص. تختلف الزيارة السنوية المعتادة تماماً عن إصلاح ناقل حركة F1 أو عطل تبريد أو صيانة مؤجلة لسيارة مخزنة.')}</p>
+@@ -424,7 +476,7 @@ const BrandWorkshopArticleContent = ({ article, isArabic }: { article: BrandWork
+ 
+           <section className="mt-14 border-t border-white/10 pt-10">
+             <h2 className="text-2xl font-black">{t('Related workshop guides', 'أدلة ورش مرتبطة')}</h2>
+-            <div className="mt-6 grid gap-4 sm:grid-cols-3">{relatedArticles.map((item) => <Link key={item.slug} to={`/blog/${item.slug}`} className="card-premium rounded-2xl p-5 transition-colors hover:text-burnt-orange"><p className="text-xs font-bold uppercase tracking-widest text-burnt-orange">{t('Workshop Guide', 'دليل الورشة')}</p><h3 className="mt-2 font-bold">{item.title}</h3></Link>)}</div>
++            <div className="mt-6 grid gap-4 sm:grid-cols-3">{relatedArticles.map((item) => <Link key={item.path} to={item.path} className="card-premium rounded-2xl p-5 transition-colors hover:text-burnt-orange"><p className="text-xs font-bold uppercase tracking-widest text-burnt-orange">{t('Workshop Guide', 'دليل الورشة')}</p><h3 className="mt-2 font-bold">{item.title}</h3></Link>)}</div>
+           </section>
+         </article>
+       </main>
+diff --git a/src/pages/PorscheGuidesIndex.tsx b/src/pages/PorscheGuidesIndex.tsx
+index 47bb4df..4657760 100644
+--- a/src/pages/PorscheGuidesIndex.tsx
++++ b/src/pages/PorscheGuidesIndex.tsx
+@@ -1,4 +1,244 @@
+-import { ArrowRight, BookOpen } from 'lucide-react'; import Header from '@/components/Header'; import { Footer } from '@/components/Footer'; import { LocalizedLink as Link } from '@/components/LocalizedLink';
+-import { PORSCHE_HUB_PATH } from '@/data/porscheArchitecture'; import { PORSCHE_GUIDES_PARENT_PATH, PORSCHE_GUIDES_PATH, porscheOwnershipGuides } from '@/data/porscheOwnershipGuides';
+-import { useSeo } from '@/hooks/use-seo'; import { buildArticle, buildBreadcrumb, buildWebPage, pageGraph, SITE_URL } from '@/lib/schema';
+-const PorscheGuidesIndex = () => { const url = `${SITE_URL}${PORSCHE_GUIDES_PARENT_PATH}`; const description = 'Porsche maintenance and ownership knowledge centre for Dubai: service intervals, heat, batteries, brakes, tyres, buying used and model guides.'; useSeo({ title: 'Porsche Maintenance Guide for Dubai Owners | Digi-Tec', description, canonical: url, jsonLd: pageGraph([buildWebPage({ url, type: 'ItemPage', name: 'Porsche Maintenance Guide for Dubai Owners', description, breadcrumbId: `${url}#breadcrumb`, mainEntityId: `${url}#article` }), buildBreadcrumb(url, [{ name: 'Home', url: SITE_URL }, { name: 'Porsche', url: `${SITE_URL}${PORSCHE_HUB_PATH}` }, { name: 'Ownership Guides', url }]), buildArticle({ url, headline: 'Porsche Maintenance Guide for Dubai Owners', description, datePublished: '2026-08-31', author: 'DIGI-TEC Workshop', section: 'Porsche Ownership' })]) }); return <div className="min-h-screen bg-black text-off-white"><Header /><main><nav aria-label="Breadcrumb" className="mx-auto max-w-7xl px-4 pt-6 text-sm text-white/50 sm:px-6"><Link to="/">Home</Link> / <Link to={PORSCHE_HUB_PATH}>Porsche</Link> / <span className="text-white">Ownership Guides</span></nav><section className="py-14 sm:py-20"><div className="mx-auto max-w-7xl px-4 sm:px-6"><BookOpen className="h-9 w-9 text-burnt-orange" /><h1 className="mt-5 text-4xl font-black sm:text-6xl">Porsche Maintenance & Ownership Guides</h1><p className="mt-6 max-w-3xl text-lg leading-relaxed text-white/65">Practical guidance for Dubai owners. Vehicle-specific Porsche maintenance information remains the baseline; these guides explain the factors and questions around it.</p><div className="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-3">{porscheOwnershipGuides.map((item) => <Link key={item.slug} to={`${PORSCHE_GUIDES_PATH}/${item.slug}`} className="card-premium group rounded-2xl p-6"><h2 className="text-lg font-black group-hover:text-burnt-orange">{item.name}</h2><p className="mt-3 text-sm leading-relaxed text-white/55">{item.answer}</p><span className="mt-5 inline-flex items-center gap-1 text-sm font-semibold text-burnt-orange">Read guide <ArrowRight className="h-4 w-4" /></span></Link>)}</div></div></section></main><Footer /></div>; }; export default PorscheGuidesIndex;
++import { ArrowRight, BookOpen, CheckCircle2, MessageCircle, Wrench } from 'lucide-react';
++import Header from '@/components/Header';
++import { Footer } from '@/components/Footer';
++import { LocalizedLink as Link } from '@/components/LocalizedLink';
++import { PORSCHE_HUB_PATH, porscheModelNavigation } from '@/data/porscheArchitecture';
++import {
++  PORSCHE_GUIDES_PARENT_PATH,
++  PORSCHE_GUIDES_PATH,
++  porscheOwnershipGuides,
++} from '@/data/porscheOwnershipGuides';
++import { useSeo } from '@/hooks/use-seo';
++import {
++  buildArticle,
++  buildBreadcrumb,
++  buildFAQ,
++  buildWebPage,
++  pageGraph,
++  SITE_URL,
++} from '@/lib/schema';
++
++const DATE_PUBLISHED = '2026-08-31';
++const DATE_MODIFIED = '2026-09-14';
++const PORSCHE_OG_IMAGE = '/images/porsche-service-dubai-hero.jpg';
++
++const porscheServiceLinks = [
++  { label: 'Porsche service & repair hub', path: PORSCHE_HUB_PATH },
++  { label: 'Porsche engine oil service', path: `${PORSCHE_HUB_PATH}/oil-change` },
++  { label: 'Porsche PDK & transmission repair', path: `${PORSCHE_HUB_PATH}/transmission-repair` },
++  { label: 'Porsche brake inspection & repair', path: `${PORSCHE_HUB_PATH}/brake-repair` },
++  { label: 'Porsche diagnostics', path: `${PORSCHE_HUB_PATH}/engine-diagnostics` },
++];
++
++const guideGroups = [
++  {
++    title: 'Service schedule, scope & fluids',
++    description: 'Start with the exact vehicle schedule, then separate routine work from items due only at a particular time or distance.',
++    slugs: ['service-intervals-uae', 'how-often-service-dubai', 'major-vs-minor-service', 'oil-change-intervals', 'pdk-service-intervals', 'maintenance-cost-dubai'],
++  },
++  {
++    title: 'Dubai conditions & ownership checks',
++    description: 'Understand how heat, traffic, short trips and storage affect condition checks without inventing one replacement interval for every Porsche.',
++    slugs: ['battery-life-dubai', 'dubai-heat', 'ac-maintenance-dubai', 'cooling-maintenance', 'brake-wear-dubai', 'tyre-wear-dubai'],
++  },
++  {
++    title: 'Buying, warnings & workshop planning',
++    description: 'Prepare for an inspection, compare workshop scope and make decisions from the evidence found on the individual car.',
++    slugs: ['pre-purchase-inspection-checklist', 'buying-used-porsche-dubai', 'dealer-vs-independent-specialist', 'warning-lights', 'common-problems-dubai'],
++  },
++  {
++    title: 'Model maintenance guides',
++    description: 'Use a model guide when the powertrain, transmission, chassis or high-voltage architecture changes the maintenance path.',
++    slugs: ['macan-maintenance', '718-maintenance', 'taycan-maintenance'],
++  },
++];
++
++const porscheFaqs = [
++  {
++    question: 'How often should a Porsche be serviced in Dubai?',
++    answer: 'Follow the maintenance information for the exact model, model year, powertrain and market, together with its recorded history and service display. Dubai heat, traffic, short trips, storage or performance use can justify earlier condition checks, but they do not create one universal replacement interval.',
++  },
++  {
++    question: 'What is included in a Porsche maintenance service?',
++    answer: 'The scope is the set of items due for the exact car. A routine visit may include approved engine oil and filter where applicable, a vehicle inspection and checks of brakes, tyres and fluids. PDK service, spark plugs, brake fluid and filters are separate items only when due.',
++  },
++  {
++    question: 'How much does Porsche maintenance cost in Dubai?',
++    answer: 'Cost depends on the model, generation, powertrain, scheduled scope, parts and fluid specifications, labour access and any findings that require diagnosis or repair. Compare itemised estimates containing the same work rather than relying on one generic online price.',
++  },
++];
++
++const PorscheGuidesIndex = () => {
++  const url = `${SITE_URL}${PORSCHE_GUIDES_PARENT_PATH}`;
++  const title = 'Porsche Maintenance Dubai: Service Guide | Digi-Tec';
++  const headline = 'Porsche Maintenance in Dubai: Intervals & What Is Included';
++  const description = 'Porsche maintenance in Dubai: model-specific service intervals, what routine servicing includes, oil, PDK and brake-fluid guidance, and booking advice.';
++  const whatsappHref = `https://wa.me/97143402223?text=${encodeURIComponent('Hi DIGI-TEC, I would like to plan Porsche maintenance.\n\nModel and year: \nMileage: \nService history / last service: \nWarning or symptoms: \nPreferred appointment: ')}`;
++  const guideList = {
++    '@type': 'ItemList',
++    '@id': `${url}#guide-list`,
++    name: 'Porsche maintenance and ownership guides',
++    numberOfItems: porscheOwnershipGuides.length,
++    itemListElement: porscheOwnershipGuides.map((guide, index) => ({
++      '@type': 'ListItem',
++      position: index + 1,
++      name: guide.name,
++      url: `${SITE_URL}${PORSCHE_GUIDES_PATH}/${guide.slug}`,
++    })),
++  };
++
++  useSeo({
++    title,
++    description,
++    canonical: url,
++    ogTitle: title,
++    ogDescription: description,
++    ogImage: `${SITE_URL}${PORSCHE_OG_IMAGE}`,
++    ogImageAlt: 'Porsche inside the DIGI-TEC workshop in Dubai',
++    ogType: 'article',
++    jsonLd: pageGraph([
++      buildWebPage({
++        url,
++        type: 'ItemPage',
++        name: headline,
++        description,
++        breadcrumbId: `${url}#breadcrumb`,
++        primaryImage: PORSCHE_OG_IMAGE,
++        datePublished: DATE_PUBLISHED,
++        dateModified: DATE_MODIFIED,
++        mainEntityId: `${url}#article`,
++      }),
++      buildBreadcrumb(url, [
++        { name: 'Home', url: SITE_URL },
++        { name: 'Porsche', url: `${SITE_URL}${PORSCHE_HUB_PATH}` },
++        { name: 'Maintenance Guide', url },
++      ]),
++      buildArticle({
++        url,
++        headline,
++        description,
++        datePublished: DATE_PUBLISHED,
++        dateModified: DATE_MODIFIED,
++        author: 'DIGI-TEC Workshop',
++        image: PORSCHE_OG_IMAGE,
++        section: 'Porsche Maintenance Guides',
++        keywords: 'Porsche maintenance Dubai, Porsche service intervals, Porsche service cost Dubai, Porsche PDK service',
++      }),
++      guideList,
++      buildFAQ(url, porscheFaqs),
++    ]),
++  });
++
++  return (
++    <div className="min-h-screen bg-black text-off-white">
++      <Header />
++      <main>
++        <nav aria-label="Breadcrumb" className="mx-auto max-w-7xl px-4 pt-6 text-sm text-white/50 sm:px-6">
++          <ol className="flex flex-wrap items-center gap-2">
++            <li><Link to="/" className="hover:text-burnt-orange">Home</Link></li>
++            <li aria-hidden="true">/</li>
++            <li><Link to={PORSCHE_HUB_PATH} className="hover:text-burnt-orange">Porsche</Link></li>
++            <li aria-hidden="true">/</li>
++            <li className="text-white">Maintenance Guide</li>
++          </ol>
++        </nav>
++
++        <section className="border-b border-white/5 py-14 sm:py-20">
++          <div className="mx-auto max-w-7xl px-4 sm:px-6">
++            <BookOpen className="h-9 w-9 text-burnt-orange" />
++            <p className="eyebrow mt-5">Porsche ownership guide</p>
++            <h1 className="mt-4 max-w-5xl text-4xl font-black leading-tight sm:text-6xl">{headline}</h1>
++            <p className="mt-6 max-w-4xl text-lg leading-relaxed text-white/70">Use this page to find the right Porsche maintenance answer, then continue to the exact interval, component, model or workshop service you need.</p>
++            <div className="mt-8 flex flex-col gap-3 sm:flex-row">
++              <a href={whatsappHref} target="_blank" rel="noopener noreferrer" className="btn-primary"><MessageCircle className="h-5 w-5" />Plan my Porsche service</a>
++              <Link to={PORSCHE_HUB_PATH} className="btn-secondary"><Wrench className="h-5 w-5" />View Porsche workshop services</Link>
++            </div>
++            <p className="mt-5 text-sm text-white/45"><time dateTime={DATE_MODIFIED}>Updated 14 September 2026</time></p>
++          </div>
++        </section>
++
++        <article>
++          <section className="py-14 sm:py-20">
++            <div className="mx-auto max-w-5xl px-4 sm:px-6">
++              <div className="rounded-3xl border border-burnt-orange/30 bg-burnt-orange/[0.07] p-6 sm:p-8">
++                <p className="eyebrow mb-4">Quick answer</p>
++                <h2 className="text-2xl font-black sm:text-4xl">Porsche service intervals in Dubai</h2>
++                <p className="mt-5 text-lg leading-relaxed text-white/75">Porsche maintenance should follow the schedule for the exact model, model year, powertrain, market and recorded history. A routine visit may include approved engine oil and filter where applicable, vehicle inspection, and checks of brakes, tyres and fluids; PDK service, spark plugs, brake fluid and filters are separate items only when due.</p>
++                <p className="mt-4 leading-relaxed text-white/60">Dubai heat, traffic, short trips and storage can justify earlier condition checks, but not one universal replacement interval. Use the focused guides below for detail rather than applying a number from another model or market.</p>
++                <div className="mt-7 grid gap-4 sm:grid-cols-3">
++                  {[
++                    ['1. Identify the vehicle', 'Confirm the model, year, powertrain, market specification and service records.'],
++                    ['2. Confirm what is due', 'Separate time- and distance-based items from diagnosis or discovered repairs.'],
++                    ['3. Check actual condition', 'Use inspection evidence for heat-, storage- or usage-related recommendations.'],
++                  ].map(([step, detail]) => <div key={step} className="rounded-2xl border border-white/10 bg-black/30 p-5"><CheckCircle2 className="h-5 w-5 text-burnt-orange" /><h3 className="mt-3 font-black">{step}</h3><p className="mt-2 text-sm leading-relaxed text-white/55">{detail}</p></div>)}
++                </div>
++              </div>
++            </div>
++          </section>
++
++          <section className="border-y border-white/5 bg-white/[0.02] py-14">
++            <div className="mx-auto max-w-7xl px-4 sm:px-6">
++              <div className="max-w-3xl">
++                <p className="eyebrow mb-4">Workshop pathways</p>
++                <h2 className="text-3xl font-black sm:text-4xl">Porsche workshop services in Dubai</h2>
++                <p className="mt-4 leading-relaxed text-white/60">These pages explain the inspection and workshop scope. Use the ownership guides below when you need background before deciding what to book.</p>
++              </div>
++              <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
++                {porscheServiceLinks.map((service) => <Link key={service.path} to={service.path} className="card-premium group flex min-h-32 flex-col justify-between rounded-2xl p-5"><h3 className="font-black group-hover:text-burnt-orange">{service.label}</h3><ArrowRight className="mt-5 h-5 w-5 text-burnt-orange" /></Link>)}
++              </div>
++            </div>
++          </section>
++
++          <section className="py-14 sm:py-20">
++            <div className="mx-auto max-w-7xl px-4 sm:px-6">
++              <p className="eyebrow mb-4">Maintenance knowledge centre</p>
++              <h2 className="text-3xl font-black sm:text-5xl">Choose the guide that matches your question</h2>
++              <p className="mt-5 max-w-3xl leading-relaxed text-white/60">Each guide owns one focused topic so interval, cost, fluid and model advice stays specific instead of being repeated as generic guidance.</p>
++              <div className="mt-12 space-y-14">
++                {guideGroups.map((group) => {
++                  const guides = porscheOwnershipGuides.filter((guide) => group.slugs.includes(guide.slug));
++                  return (
++                    <section key={group.title} aria-labelledby={`guide-group-${group.slugs[0]}`}>
++                      <h3 id={`guide-group-${group.slugs[0]}`} className="text-2xl font-black sm:text-3xl">{group.title}</h3>
++                      <p className="mt-3 max-w-3xl leading-relaxed text-white/55">{group.description}</p>
++                      <div className="mt-6 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
++                        {guides.map((guide) => <Link key={guide.slug} to={`${PORSCHE_GUIDES_PATH}/${guide.slug}`} className="card-premium group rounded-2xl p-6"><h4 className="text-lg font-black group-hover:text-burnt-orange">{guide.name}</h4><p className="mt-3 text-sm leading-relaxed text-white/55">{guide.answer}</p><span className="mt-5 inline-flex min-h-11 items-center gap-1 text-sm font-semibold text-burnt-orange">Read guide <ArrowRight className="h-4 w-4" /></span></Link>)}
++                      </div>
++                    </section>
++                  );
++                })}
++              </div>
++            </div>
++          </section>
++
++          <section className="border-y border-white/5 bg-white/[0.02] py-14 sm:py-20">
++            <div className="mx-auto max-w-7xl px-4 sm:px-6">
++              <h2 className="text-3xl font-black sm:text-4xl">Porsche maintenance by model</h2>
++              <p className="mt-4 max-w-3xl leading-relaxed text-white/60">Choose the exact vehicle family when its engine, transmission, chassis or high-voltage systems change the inspection and service path.</p>
++              <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
++                {porscheModelNavigation.filter((model) => model.path).map((model) => <Link key={model.path} to={model.path!} className="card-premium group rounded-2xl p-6"><h3 className="text-lg font-black group-hover:text-burnt-orange">Porsche {model.title}</h3><p className="mt-3 text-sm leading-relaxed text-white/55">{model.description}</p><span className="mt-5 inline-flex min-h-11 items-center gap-1 text-sm font-semibold text-burnt-orange">View model guide <ArrowRight className="h-4 w-4" /></span></Link>)}
++              </div>
++            </div>
++          </section>
++
++          <section className="py-14 sm:py-20">
++            <div className="mx-auto max-w-5xl px-4 sm:px-6">
++              <h2 className="text-center text-3xl font-black sm:text-4xl">Porsche maintenance FAQs</h2>
++              <div className="mt-8 grid gap-4">
++                {porscheFaqs.map((faq) => <div key={faq.question} className="rounded-2xl border border-white/10 bg-white/[0.03] p-6"><h3 className="text-lg font-black">{faq.question}</h3><p className="mt-3 leading-relaxed text-white/65">{faq.answer}</p></div>)}
++              </div>
++              <div className="mt-12 rounded-3xl border border-burnt-orange/30 bg-burnt-orange/[0.07] p-7 text-center sm:p-10">
++                <h2 className="text-2xl font-black sm:text-3xl">Need a vehicle-specific Porsche maintenance plan?</h2>
++                <p className="mx-auto mt-4 max-w-2xl leading-relaxed text-white/65">Send the model, year, mileage, service history and current warnings or symptoms. DIGI-TEC can confirm the appropriate first inspection before you approve any work.</p>
++                <a href={whatsappHref} target="_blank" rel="noopener noreferrer" className="btn-primary mt-7"><MessageCircle className="h-5 w-5" />WhatsApp the workshop</a>
++              </div>
++            </div>
++          </section>
++        </article>
++      </main>
++      <Footer />
++    </div>
++  );
++};
++
++export default PorscheGuidesIndex;

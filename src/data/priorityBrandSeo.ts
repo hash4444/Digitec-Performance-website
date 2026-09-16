@@ -38,7 +38,7 @@ export const PRIORITY_BRAND_SEO: Record<string, PriorityBrandSeo> = {
   },
   'bmw-service-dubai': {
     title: 'BMW Service & Repair Dubai | DIGI-TEC',
-    description: 'BMW service, repair, diagnostics and maintenance in Al Quoz, Dubai. DIGI-TEC inspects BMW engine, transmission, brakes, AC, electrical and coding concerns. Book via WhatsApp.',
+    description: 'BMW service and repair in Al Quoz, Dubai. Independent workshop for scheduled maintenance, engine diagnostics, transmission, brakes, AC and electrical faults.',
   },
   'lamborghini-service-dubai': {
     title: 'Lamborghini Service & Repair Dubai | DIGI-TEC',
@@ -66,11 +66,11 @@ export const PRIORITY_BRAND_SEO: Record<string, PriorityBrandSeo> = {
   },
   'rolls-royce-service-dubai': {
     title: 'Rolls-Royce Service & Repair Dubai | DIGI-TEC',
-    description: 'Independent Rolls-Royce service and repair in Al Quoz, Dubai. Contact DIGI-TEC for maintenance, diagnostics and a vehicle-specific service estimate.',
+    description: 'Rolls-Royce service and repair in Al Quoz, Dubai for Ghost, Cullinan, Phantom, Wraith and Dawn. Independent maintenance, suspension and electrical diagnosis.',
   },
   'bentley-service-dubai': {
-    title: 'Bentley Service & Repair Dubai | Independent Workshop | DIGI-TEC',
-    description: 'Independent Bentley service, repair, diagnostics and maintenance in Al Quoz, Dubai. Contact DIGI-TEC for a vehicle-specific inspection and estimate.',
+    title: 'Bentley Service & Repair Dubai | DIGI-TEC',
+    description: 'Bentley service and repair in Al Quoz, Dubai for Continental GT, Flying Spur and Bentayga. Independent maintenance, diagnostics and repair estimates.',
     heroImage: '/images/bentley-service-dubai-hero.jpg',
     heroImageAlt: 'Bentley Flying Spur inside the Digi-Tec specialist workshop in Dubai',
     heroImageWidth: 941,
@@ -82,7 +82,7 @@ export const PRIORITY_BRAND_SEO: Record<string, PriorityBrandSeo> = {
   },
   'aston-martin-service-dubai': {
     title: 'Aston Martin Service & Repair Dubai | DIGI-TEC',
-    description: 'Independent Aston Martin service and repair in Al Quoz, Dubai. Contact DIGI-TEC for maintenance, diagnostics and a vehicle-specific service estimate.',
+    description: 'Aston Martin service and repair in Al Quoz, Dubai for Vantage, DB11, DBX and DBS. Engine diagnostics, brakes, maintenance and electrical fault assessment.',
     heroImage: '/images/aston-martin-service-dubai-hero.jpg',
     heroImageAlt: 'Aston Martin Vantage undergoing inspection at Digi-Tec workshop in Dubai',
     heroImageWidth: 941,

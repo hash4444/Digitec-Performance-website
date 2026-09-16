@@ -42,7 +42,7 @@ export const renderRoute = (url: string): Promise<RenderedRoute> =>
       }
       // React 18's streaming UTF-8 buffer can insert NUL padding at chunk
       // boundaries. NUL is not valid page text; remove only that padding.
-      const html = Buffer.concat(htmlChunks).toString('utf8').replace(/\u0000/g, '');
+      const html = Buffer.concat(htmlChunks).toString('utf8').split('\u0000').join('');
       resolve({ html, seo });
     });
     destination.on('error', reject);

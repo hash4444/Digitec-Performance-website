@@ -13,10 +13,11 @@ import { CERAMIC_PATH, CERAMIC_TITLE, CERAMIC_DESCRIPTION, CERAMIC_H1, ceramicBr
 
 const url = `${SITE_URL}${CERAMIC_PATH}`;
 const hero = '/images/ceramic-coating/black-mercedes-finish-1024.webp';
+const heroAlt = 'Black Mercedes-Benz G-Class with ceiling lights reflected across its bonnet and bodywork';
 const whatsapp = `https://wa.me/97143402223?text=${encodeURIComponent('Hi DIGI-TEC, I would like a ceramic coating quote. Please help me choose the preparation and surfaces for my car.\nMake/model: \nYear: \nPaint condition or concerns: ')}`;
 const relatedBrands = ceramicBrands.map((name) => brands.find((brand) => brand.name === name)).filter(Boolean);
 const graph = pageGraph([
-  buildWebPage({ url, name: CERAMIC_TITLE, description: CERAMIC_DESCRIPTION, breadcrumbId: `${url}#breadcrumb`, primaryImage: hero, mainEntityId: `${url}#service`, dateModified: '2026-09-08' }),
+  buildWebPage({ url, name: CERAMIC_TITLE, description: CERAMIC_DESCRIPTION, breadcrumbId: `${url}#breadcrumb`, primaryImage: hero, mainEntityId: `${url}#service`, dateModified: '2026-09-16' }),
   buildBreadcrumb(url, [{ name: 'Home', url: '/' }, { name: 'Services', url: '/services' }, { name: 'Ceramic Coating', url }]),
   buildService({ url, name: CERAMIC_H1, serviceType: 'Automotive ceramic coating', description: 'DIGI-TEC Performance Center offers ceramic coating in Al Quoz Industrial Area 3, Dubai. Paint preparation, product choice and optional wheel, trim or glass coverage are confirmed in the estimate.', image: hero }),
 ]);
@@ -27,7 +28,7 @@ function Quote({ placement, children = 'Get Ceramic Coating Quote' }: { placemen
 }
 
 export default function CeramicCoatingPage() {
-  useSeo({ title: CERAMIC_TITLE, description: CERAMIC_DESCRIPTION, canonical: url, jsonLd: graph });
+  useSeo({ title: CERAMIC_TITLE, description: CERAMIC_DESCRIPTION, canonical: url, ogImage: `${SITE_URL}${hero}`, ogImageAlt: heroAlt, ogImageWidth: 1024, ogImageHeight: 1536, jsonLd: graph });
   return (
     <div className="ceramic-page site-page min-h-screen bg-black text-off-white">
       <Header />
@@ -38,17 +39,17 @@ export default function CeramicCoatingPage() {
             <p className="cc-kicker">DIGI-TEC Performance Center · Al Quoz</p>
             <h1 id="ceramic-heading">Ceramic Coating Dubai</h1>
             <p className="cc-hero-lead">A considered finish.<br />Care that goes beyond the shine.</p>
-            <p>Professional ceramic coating for luxury and performance cars, with paint preparation and surface coverage matched to your vehicle. Discuss gloss, easier cleaning and the right care plan with our Dubai workshop.</p>
+            <p>Ceramic paint protection for luxury and performance cars, with coating, preparation and surface coverage matched to your vehicle. Discuss gloss, easier cleaning and the right care plan with our Dubai workshop.</p>
             <div className="cc-actions"><Quote placement="hero" /><a className="cc-button cc-secondary" href="tel:+97143402223" data-cta-placement="ceramic_hero"><Phone size={18} aria-hidden="true" />Call the workshop</a></div>
             <a className="cc-text-link" href="#ceramic-options">Explore coating options <ArrowRight size={16} aria-hidden="true" /></a>
           </div>
-          <figure className="cc-hero-visual"><img src={hero} srcSet="/images/ceramic-coating/black-mercedes-finish-640.webp 640w, /images/ceramic-coating/black-mercedes-finish-1024.webp 1024w" sizes="(min-width: 1000px) 48vw, 100vw" width={1024} height={1536} alt="Black Mercedes-Benz G-Class with ceiling lights reflected across its bonnet and bodywork" loading="eager" /><figcaption>Paint finish detail</figcaption></figure>
+          <figure className="cc-hero-visual"><img src={hero} srcSet="/images/ceramic-coating/black-mercedes-finish-640.webp 640w, /images/ceramic-coating/black-mercedes-finish-1024.webp 1024w" sizes="(min-width: 1000px) 48vw, 100vw" width={1024} height={1536} alt={heroAlt} loading="eager" fetchPriority="high" /><figcaption>Paint finish detail</figcaption></figure>
         </section>
 
         <div className="cc-trust" aria-label="Verified workshop and service information"><div><MapPin aria-hidden="true" size={19} /><span><strong>Al Quoz Industrial Area 3</strong>Dubai workshop</span></div><div><Check aria-hidden="true" size={19} /><span><strong>Preparation & coating</strong>Scope agreed for your car</span></div><div><Check aria-hidden="true" size={19} /><span><strong>Luxury & performance vehicles</strong>Independent workshop care</span></div></div>
         <nav className="cc-jump" aria-label="On this page"><a href="#ceramic-benefits">Benefits</a><a href="#ceramic-preparation">Preparation</a><a href="#ceramic-options">Options</a><a href="#ceramic-cost">Price & quote</a><a href="#ceramic-comparison">Compare with PPF</a><a href="#ceramic-faq">FAQs</a></nav>
 
-        <section className="cc-section cc-split" aria-labelledby="ceramic-definition"><div><p className="cc-kicker">Understand the treatment</p><h2 id="ceramic-definition">What Is Ceramic Coating?</h2></div><div><p>Ceramic coating is a protective treatment applied to automotive paint and other compatible surfaces. It can improve water behaviour, gloss and resistance to certain contaminants, helping maintain the appearance of properly prepared paint.</p><p>The term <strong>nano ceramic coating</strong> is often used for this category of surface treatment. The actual product, preparation and maintenance determine its properties.</p><p className="cc-callout"><strong>Coating does not make paint scratch-proof.</strong> It does not remove existing defects or provide the physical stone-chip barrier of paint protection film.</p></div></section>
+        <section className="cc-section cc-split" aria-labelledby="ceramic-definition"><div><p className="cc-kicker">Understand the treatment</p><h2 id="ceramic-definition">What Is Ceramic Coating?</h2></div><div><p>Ceramic coating is a protective treatment applied to automotive paint and other compatible surfaces. It can improve water behaviour, gloss and resistance to certain contaminants, helping maintain the appearance of properly prepared paint.</p><p>The term <strong>nano ceramic coating</strong> is often used for this category of surface treatment. A paint protection coating should be specified by product and compatible surface; preparation and maintenance also determine its performance.</p><p className="cc-callout"><strong>Coating does not make paint scratch-proof.</strong> It does not remove existing defects or provide the physical stone-chip barrier of paint protection film.</p></div></section>
 
         <section id="ceramic-benefits" className="cc-section cc-panel" aria-labelledby="ceramic-benefits-heading"><div className="cc-section-intro"><p className="cc-kicker">What changes at the surface</p><h2 id="ceramic-benefits-heading">Ceramic Coating Benefits</h2><p>The aim is a well-prepared finish that is easier to care for. The selected coating determines the level and type of protection.</p></div><div className="cc-benefits">{ceramicBenefits.map((benefit, index) => <article key={benefit.title}><span className="cc-number">0{index + 1}</span><h3>{benefit.title}</h3><p>{benefit.text}</p></article>)}</div></section>
 

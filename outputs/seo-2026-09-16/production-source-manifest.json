@@ -1,0 +1,2070 @@
+[
+  {
+    "file": "index.html",
+    "sha256": "a552644a7db150b2153ee419a933572c065eaa7eb99db1ac312a93d529b0dedf"
+  },
+  {
+    "file": "package-lock.json",
+    "sha256": "6dc35c9bf3c357315ca5ff7894659fb14413ef55ed41a0a309a80a7a4459be20"
+  },
+  {
+    "file": "package.json",
+    "sha256": "800b80395d8649d7adaf518d5ce63ecf4471c827dd3867f2f09470ff42018759"
+  },
+  {
+    "file": "postcss.config.js",
+    "sha256": "374f669f08b18e67d0a7264fa45b71228017e604fe7f6db8a5c1bd5ba27e5c98"
+  },
+  {
+    "file": "public/brand-logos/cadillac.png",
+    "sha256": "aacdcabbf5ab21e29392b892ca434dd1759170760d3896815bfe4bf3b2394e4a"
+  },
+  {
+    "file": "public/brand-logos/changan.png",
+    "sha256": "5329e58bbaafd173fd0577a74b72ddece17640b974c47667ab72d5a8ef7d4ce7"
+  },
+  {
+    "file": "public/brand-logos/chevrolet.png",
+    "sha256": "337c442bcd539137a1d1a61e7b8e2591be4a7883983d24403610e382eaf1742d"
+  },
+  {
+    "file": "public/brand-logos/chrysler.png",
+    "sha256": "e60a9715cb4c10bf89ec71b19db80e9a0ab256f4d6b53dcfc0328adaf9ee758c"
+  },
+  {
+    "file": "public/brand-logos/citroen.png",
+    "sha256": "ef326fe0658dcf6530a808f41d04636e1d4c7dbd441cfc3c02850d4da50a7d53"
+  },
+  {
+    "file": "public/brand-logos/corvette.png",
+    "sha256": "cf393d67021ad82ec7badebd2bb15a2d3dfb4aaa927bcfa832c95408dcfc46a8"
+  },
+  {
+    "file": "public/brand-logos/dodge.png",
+    "sha256": "df00f81f373ed856ac6a337c2ef849c3923f12952e21be1252026e1c37de3d47"
+  },
+  {
+    "file": "public/brand-logos/ford.png",
+    "sha256": "6d5136c93f4df2445e84254bdffbb01999c7248e84a13a862a2a5ce9b07eafa0"
+  },
+  {
+    "file": "public/brand-logos/gac.png",
+    "sha256": "9a0d0d8c5895284ee2f76896317c1c39754473277d6755fbda32e7c0e6d21e40"
+  },
+  {
+    "file": "public/brand-logos/geely.png",
+    "sha256": "4c0348ac551a4bdf15d67abaf6c0d17b56a7a1c71903a532e20ecd89fa84ff63"
+  },
+  {
+    "file": "public/brand-logos/genesis.png",
+    "sha256": "f3d5c22553c3f3463c2cf5fe6122dc0c4085b16f3c6a78751e0ef3afb8e14f0c"
+  },
+  {
+    "file": "public/brand-logos/gmc.png",
+    "sha256": "2f167fff9eda9163a69d3d59a594c7325368b4e576874af932ad78b90bc1283e"
+  },
+  {
+    "file": "public/brand-logos/haval.png",
+    "sha256": "67163a2fa3dc1d61677e2318d8674b98e78c5029eb2a35d6b7f89146cc2cde44"
+  },
+  {
+    "file": "public/brand-logos/honda.png",
+    "sha256": "fc31bd70a190858c847cd52c2c846c73e15f3d40b126d2733f8f73a8e83dee15"
+  },
+  {
+    "file": "public/brand-logos/hummer.png",
+    "sha256": "beda6ef6c3553877de6061731c2436925d943aed1c7557e4b8508bc71ea91472"
+  },
+  {
+    "file": "public/brand-logos/hyundai.png",
+    "sha256": "35b25f24ef3e6909635002a75d4669027dc7bae5130c489a567aeef2e7c7e4cf"
+  },
+  {
+    "file": "public/brand-logos/isuzu.png",
+    "sha256": "f7122458eab4f02f694114c297a77ae8b0206840e6e66e655cc4c6d92155df15"
+  },
+  {
+    "file": "public/brand-logos/jac.png",
+    "sha256": "af9a2045fbd8fcf8c8f7f23a4275f69185573c1609b1a5707971d33a4344288d"
+  },
+  {
+    "file": "public/brand-logos/jaguar.png",
+    "sha256": "77d88f576d18fa0bde8fabbdce7cc597107286f415a9a99511bf6e3ec3f9018a"
+  },
+  {
+    "file": "public/brand-logos/jeep.png",
+    "sha256": "0d0f2c965aedd0b31ec5f01d81e1e8dc7ddb56944b3846c8d0c316a4b39f6645"
+  },
+  {
+    "file": "public/brand-logos/jetour-color.png",
+    "sha256": "fee08787bb08b93bf784e540f7b0e5298938f7cdfb8a3319e3d16f6361c78350"
+  },
+  {
+    "file": "public/brand-logos/jetour.png",
+    "sha256": "e870bb03450e19c3ecc9e25af9aa52c20501e9366899816675df4ac2b0213ef4"
+  },
+  {
+    "file": "public/brand-logos/kia.png",
+    "sha256": "afc8087b9eb54b0c859be3e6b804c9dd83b09cb8f807ea7290e39ee9b6a80c84"
+  },
+  {
+    "file": "public/brand-logos/koenigsegg.png",
+    "sha256": "68fa868dd9aac860f2b80343d2129d6885382cc852238942eea9a9899e46807a"
+  },
+  {
+    "file": "public/brand-logos/lincoln.png",
+    "sha256": "1733d899311ee56885ec332bceeed4c4e62684e4c713bd7610d699d4710b5824"
+  },
+  {
+    "file": "public/brand-logos/maserati.png",
+    "sha256": "1502be50b2bc5bea04c59db4b5e2a15c28942e554b7b36aa499b456374c982c5"
+  },
+  {
+    "file": "public/brand-logos/mini.png",
+    "sha256": "dd3629b32a1afe5527edc8266d303944e043b069b4e93a70ef8479d7d85c943b"
+  },
+  {
+    "file": "public/brand-logos/opel.png",
+    "sha256": "f65474e226faf66c999056aab046d1f21774db055d4806e84eb36665f2ba8d53"
+  },
+  {
+    "file": "public/brand-logos/pagani.png",
+    "sha256": "15244001229e6004672765a53d34961ba95037347592b206dbe04f6e5744c8f8"
+  },
+  {
+    "file": "public/brand-logos/rox-card.png",
+    "sha256": "b3421ff3c31a115f18e3f722b0982922542057f8259990842ccdb82efed928f9"
+  },
+  {
+    "file": "public/brand-logos/showcase/aston-martin.png",
+    "sha256": "4d0fbc1edc1f6035f13a954bea60415b928c82401ae0ed4537eeaf97c871c863"
+  },
+  {
+    "file": "public/brand-logos/showcase/audi.png",
+    "sha256": "50463b2a6c5fb6b3d98ff380c42adf4597924d0c1cb72829d53f93ebb4389f2a"
+  },
+  {
+    "file": "public/brand-logos/showcase/bentley.png",
+    "sha256": "15794d904c99df4d2c2affd8b1bdee021ed43660751f48df1d8cc8c64e6e6ab1"
+  },
+  {
+    "file": "public/brand-logos/showcase/bmw.png",
+    "sha256": "ab8683c39349f09bad34eb58446e9598c553a9a4b6a64094a9d98c35dbe80c09"
+  },
+  {
+    "file": "public/brand-logos/showcase/bugatti.png",
+    "sha256": "2fee4b72aa83e34734b0ae22c0e4fe1689c2de071937e8456ec4a0fe2f2f0030"
+  },
+  {
+    "file": "public/brand-logos/showcase/byd.png",
+    "sha256": "1dbb390222a0dacd85d67140b65ab38cc4319e63a8cd473dbd7309a115e0d516"
+  },
+  {
+    "file": "public/brand-logos/showcase/cadillac.png",
+    "sha256": "1fc912fb07030e68d3f8ade22b97fcd77f80071a6b7d393e8c0757d4a9753750"
+  },
+  {
+    "file": "public/brand-logos/showcase/chevrolet.png",
+    "sha256": "d91c5923521c10b44da342319f0a65f8ec762528e481ec3eeec8b5d4a625cbeb"
+  },
+  {
+    "file": "public/brand-logos/showcase/chrysler.png",
+    "sha256": "254fbc03529bebc5ee0ed9997fa350f13f6f67b624069a16d89e4a15702840d8"
+  },
+  {
+    "file": "public/brand-logos/showcase/corvette.png",
+    "sha256": "f9aa38edccdc02755d00207138bba66437c4d53ff2407936b981c3a6323ddf6d"
+  },
+  {
+    "file": "public/brand-logos/showcase/dodge.png",
+    "sha256": "d28054cfa786945dc4aa553b5f57693a69514c7ce1951c9c2aaa6329778801b3"
+  },
+  {
+    "file": "public/brand-logos/showcase/ferrari.png",
+    "sha256": "bcb2b4a028f45d9364b687f4c0f958a2b33a611314dae3174c2260eed7ce044c"
+  },
+  {
+    "file": "public/brand-logos/showcase/ford.png",
+    "sha256": "27665c4f2cda013455dbcb6e3231e3addb779b49f5e04b5d548f59098608c767"
+  },
+  {
+    "file": "public/brand-logos/showcase/genesis.png",
+    "sha256": "53c4c461c87185a213f6090720f844ae73aa076199e7c3ca7fd7aadf0f5fa017"
+  },
+  {
+    "file": "public/brand-logos/showcase/gmc.png",
+    "sha256": "7be680bb98c2b450f068e7a100e6ed6dfab520725f418b9a076f407f9ec537b8"
+  },
+  {
+    "file": "public/brand-logos/showcase/hummer.png",
+    "sha256": "db4208d072e53830b31eef51f43885c30bd17a31896dac8a6d319bd9f3871f99"
+  },
+  {
+    "file": "public/brand-logos/showcase/jaguar.png",
+    "sha256": "3939aff4af269f18c165fde28f9a8a7971ecf766927688fd41cce50ad32044be"
+  },
+  {
+    "file": "public/brand-logos/showcase/jeep.png",
+    "sha256": "3441ef81128142cdb70f4954b21fd87c28c1ed22389289d2397a4204b0c4b365"
+  },
+  {
+    "file": "public/brand-logos/showcase/jetour.png",
+    "sha256": "f8c04fe9c7e54ce57a56c91dce5194019300ea18ad8866aeec2f12208628a0ea"
+  },
+  {
+    "file": "public/brand-logos/showcase/koenigsegg.png",
+    "sha256": "6ee0c83a363abe2a9f6312b7d70de1d4b7d7f421ccec93221282326c74769670"
+  },
+  {
+    "file": "public/brand-logos/showcase/lamborghini.png",
+    "sha256": "95c497925db4e23c65a73cedf22f485a527dbe4d08c9e275d93c4657210b1d06"
+  },
+  {
+    "file": "public/brand-logos/showcase/land-rover.png",
+    "sha256": "f8e52acba265322f0a2428a89e7189de083bc4db3335e27001f3eb461b4854d9"
+  },
+  {
+    "file": "public/brand-logos/showcase/lincoln.png",
+    "sha256": "12c676cfb74c4e3bb71951eab55cca37a5c458855b9d421d1a18625301710b46"
+  },
+  {
+    "file": "public/brand-logos/showcase/maserati.png",
+    "sha256": "3ab7bb6340bdde84099b02a75b17f45cb928674bbdbe940986af18e68aca9ffe"
+  },
+  {
+    "file": "public/brand-logos/showcase/maybach.png",
+    "sha256": "4e99d307607ff6e536a31a83288f59d2a39621cfbe1835187d3dc798e0ee0234"
+  },
+  {
+    "file": "public/brand-logos/showcase/mclaren.png",
+    "sha256": "844daadd7f9398eb2803b4f8a606a1fa15416aa3c5344ea8be940a6ce7b5b814"
+  },
+  {
+    "file": "public/brand-logos/showcase/mercedes-benz.png",
+    "sha256": "c0af3115625d7e4207858b600eceb4938fa55392f3d6b4e31162bc7d75ab2169"
+  },
+  {
+    "file": "public/brand-logos/showcase/mini.png",
+    "sha256": "ce2d041958d2109655dc02f2b8f7f63907ff0353b23ee5c14d905dd671079955"
+  },
+  {
+    "file": "public/brand-logos/showcase/pagani.png",
+    "sha256": "331fc8e4a2e33b56b40a2d662ad83147a3fb85cf3a76eacfc7ead147399c6043"
+  },
+  {
+    "file": "public/brand-logos/showcase/porsche.png",
+    "sha256": "f98aedcf14debd3df6a92c193c4c26d28be004485681fca554bbaa8ac96938e7"
+  },
+  {
+    "file": "public/brand-logos/showcase/rolls-royce.png",
+    "sha256": "932f2edda6e431f98714e5188483c5d8a36c52e481e342e68723e7a1d905ca2c"
+  },
+  {
+    "file": "public/brand-logos/showcase/rox.png",
+    "sha256": "c719f964b94285f030ff576c957622b57aa7556a02840871e558c43958e5cafa"
+  },
+  {
+    "file": "public/brand-logos/showcase/subaru.png",
+    "sha256": "42ca73bd6c33b5c111c054b3b2b563d8487643db89e1acb885ad58c5049622e1"
+  },
+  {
+    "file": "public/brand-logos/showcase/tesla.png",
+    "sha256": "9c750c143f5bf7a0183ac58c1aa24d43f757df192feda4da779d675e91af7818"
+  },
+  {
+    "file": "public/brand-logos/showcase/volkswagen.png",
+    "sha256": "68b1fa772478e2b3d45b963af1319d4bd9b6d426e04392b0b2b735ba93c7013a"
+  },
+  {
+    "file": "public/brand-logos/showcase/volvo.png",
+    "sha256": "22cdd4fc868b0edefe142a1ffafdbb579fdeaa862aaf3808865f17dd4287f062"
+  },
+  {
+    "file": "public/brand-logos/subaru.png",
+    "sha256": "d50bb5f23de13d6bb84f0e1cff168ff689db578dec23532c66856bf5547f61da"
+  },
+  {
+    "file": "public/brand-logos/tesla.png",
+    "sha256": "95500b57f3817f31ae6c745c8279a7ad67c32cee0a5240c96cdfba50bba76400"
+  },
+  {
+    "file": "public/brand-logos/vector/cadillac.svg",
+    "sha256": "aec91d6dba7fd61378188bd74672909a9695d02b933f15580a7fe9620216fe70"
+  },
+  {
+    "file": "public/brand-logos/vector/chevrolet.svg",
+    "sha256": "c656f8d607bc0230a7a239981b24d79cb7a1550d43c476ff486cf8aa360646f6"
+  },
+  {
+    "file": "public/brand-logos/vector/chrysler.svg",
+    "sha256": "760fe7ef4fccc504bee0a9f4ac91e2ca23bffd9c294aa92a3922538b50c3c403"
+  },
+  {
+    "file": "public/brand-logos/vector/ford.svg",
+    "sha256": "933a0ad57caec864d69c4afb43c316018ebc54bd8e76244ffe545197236299c1"
+  },
+  {
+    "file": "public/brand-logos/vector/jeep.svg",
+    "sha256": "b06a5248c18bf0c0b3181dc52f20558f8e85d6952424f52e7b285410bfd47864"
+  },
+  {
+    "file": "public/brand-logos/vector/koenigsegg.svg",
+    "sha256": "ae4b71d4c647594515bec6e3e2240d566419d38f645bae850743653c09005b32"
+  },
+  {
+    "file": "public/brand-logos/vector/maserati.svg",
+    "sha256": "be4ff671866eb694fa6f5756a5ffdef5b9694c4b3c895ff01427b9d98d144b91"
+  },
+  {
+    "file": "public/brand-logos/vector/mini.svg",
+    "sha256": "b6a2b61d674bf15ef45a468962eca1faac42234ff24b13812c4a16bbc71fcb77"
+  },
+  {
+    "file": "public/brand-logos/vector/subaru.svg",
+    "sha256": "ce64a04d98a02272319baf0fb03576fea64878a40aff5eb36d137e23127109c3"
+  },
+  {
+    "file": "public/brand-logos/vector/tesla.svg",
+    "sha256": "4b94d9eaf23849d6feec7a9c819e3699a35cbb76045ba7d482d17cbcc97414a5"
+  },
+  {
+    "file": "public/brand-logos/vector/volkswagen.svg",
+    "sha256": "de8379968dc31340ab9a06fd54f01d59be56f9846bc07938b9da5bd24407034f"
+  },
+  {
+    "file": "public/brand-logos/vector/volvo.svg",
+    "sha256": "3323cdf4d0f8aabe89f1ecd6d8169aacbd2e3a54a9791d75918ade418f538f19"
+  },
+  {
+    "file": "public/brand-logos/volkswagen.png",
+    "sha256": "d78b263b9ae0ab4a4c1609b8cd321267e700ac38b5cd31c4c1bb9dbde9bb421a"
+  },
+  {
+    "file": "public/brand-logos/volvo.png",
+    "sha256": "36129c09fd7781f4481e0b5a10ea52a921d2f987d15af8381d81693b8ac925b3"
+  },
+  {
+    "file": "public/favicon-192x192.png",
+    "sha256": "718d5e41b56f2a6abc83e0fa77bad95aaa8a93df8bcb50695752c54dc684951f"
+  },
+  {
+    "file": "public/favicon-48x48.png",
+    "sha256": "50b2e2366aca818bebd7de24cf3c18959611a42c28d8e59a1044e48ae50be32d"
+  },
+  {
+    "file": "public/favicon.ico",
+    "sha256": "cbe76856a5e79b388887bc3c85422d8303f7ecc2538f290d2edabb6caf7b870f"
+  },
+  {
+    "file": "public/favicon.png",
+    "sha256": "469bccf265e75cbb3b67bfb4846fb10d96e740837023c5df3d9f4bec644f5c12"
+  },
+  {
+    "file": "public/images/aston-martin-service-dubai-hero.jpg",
+    "sha256": "25b991eabc539ad27c70a1c548ebf7637a9a10d4a70e2af207dbd8282d848e06"
+  },
+  {
+    "file": "public/images/aston-martin-service-dubai-workshop.jpg",
+    "sha256": "b8ecc8ca948d140eac0206f509182e2553a20bc0b580414d6e7e3dff04168fab"
+  },
+  {
+    "file": "public/images/bentley-service-dubai-hero.jpg",
+    "sha256": "38229bebb4b37cf1aa0fcd15dd7d29ae27be07f7d88669bb044495bc8510b915"
+  },
+  {
+    "file": "public/images/cars/a45.png",
+    "sha256": "d56647a15472e10c7a116016a4e5e4d81f747967537237edfb20d2fb06faef28"
+  },
+  {
+    "file": "public/images/cars/amg-gt.png",
+    "sha256": "74e23ddb72d17e77d8ab7313690d47440d8bab5285f042c6e8b9fc2a0bfa6086"
+  },
+  {
+    "file": "public/images/cars/amg-gtr.png",
+    "sha256": "ab712806b4c85e33f73e3cfc99eae490d834ce6da79baa9732ee9809b7a6d975"
+  },
+  {
+    "file": "public/images/cars/audi-rs6.png",
+    "sha256": "aba2b0ead73e38b899e07bc2d5543f59fb831c23702b85fc758906e08a16b95c"
+  },
+  {
+    "file": "public/images/cars/bmw-m3.png",
+    "sha256": "12424bb78e59ad269857d572048b4103bcf3e6d6ac688fc7feb561f606e0bd64"
+  },
+  {
+    "file": "public/images/cars/c43.png",
+    "sha256": "57c3ff5dad3f0e2b2158614c99cf241880907f533c7989394af3b2f68510c995"
+  },
+  {
+    "file": "public/images/cars/c63.png",
+    "sha256": "704e490b4943fbbfe7eaa5a4227d0c3cc8639276bc981c2711ce85bfbe20d907"
+  },
+  {
+    "file": "public/images/cars/cla45.png",
+    "sha256": "07114eb13e1e6663373aaef1da1fc8e47cd55de5a078fdb9e933d49d16e7292d"
+  },
+  {
+    "file": "public/images/cars/db11.png",
+    "sha256": "ff353bc2c17cd4c9219afe112eaeb88799a90ab9746ca46671833a3690edbd40"
+  },
+  {
+    "file": "public/images/cars/e63.png",
+    "sha256": "75a9a5bc4bc6c8e1a125f503607757d765b018674b8fe0016d024970efe863f0"
+  },
+  {
+    "file": "public/images/cars/g63.png",
+    "sha256": "96dba7e74bbfad22fe45e97132999780b73b45069972764d7fa796f7193fb3aa"
+  },
+  {
+    "file": "public/images/cars/glc63.png",
+    "sha256": "2a8cf35d0ae0b3497ec7b04042b889e03dd1919872113067834550bf7359df61"
+  },
+  {
+    "file": "public/images/cars/gt63.png",
+    "sha256": "55467a389a001cdd314d57cdd4c4af38ba61eda4e61a14c7f422b9312b35c14f"
+  },
+  {
+    "file": "public/images/cars/mercedes-c63.png",
+    "sha256": "760bd76c353fce22c90c258dc697632e6aaa3b3a444085bd9f33e78291652124"
+  },
+  {
+    "file": "public/images/cars/porsche-911.png",
+    "sha256": "7237263feaa8e147e41d40d7acff9e43160ed064761d036c477280875f839baa"
+  },
+  {
+    "file": "public/images/cars/s63.png",
+    "sha256": "892797ee10a1e6a4839fff481c6dd71a8fdbc8ecbdd6f05129c499da0346ed17"
+  },
+  {
+    "file": "public/images/cars/urus.png",
+    "sha256": "d5f6855ee16ffa2df695600aa110d9575931372dd3c62c572e26c4c55bcfaeb0"
+  },
+  {
+    "file": "public/images/ceramic-coating/black-mercedes-finish-1024.webp",
+    "sha256": "db5d068a9afff961a771fedc0a82eb23b09ba29f8750ea015013375fa9fb3fab"
+  },
+  {
+    "file": "public/images/ceramic-coating/black-mercedes-finish-640.webp",
+    "sha256": "9001c18155ad194f410cb4c64eb445c3c52a1753a89785bd537cc8f023d4d248"
+  },
+  {
+    "file": "public/images/ceramic-coating/workshop-vehicles-540.webp",
+    "sha256": "39ff368eb9362548a6b0c96b670199ed55d2ccf40322b8f11a6e0a6f5097bd34"
+  },
+  {
+    "file": "public/images/ceramic-coating/workshop-vehicles-960.webp",
+    "sha256": "56cc3b4b716a734ff56818aafaae2bfe269e8d660f5d555b1f4c48bdc46b6e79"
+  },
+  {
+    "file": "public/images/defender-service-dubai-hero.jpg",
+    "sha256": "3303cc34540c3263948859cc2082f51552f44e24dfcc3ea21472f45541ffa230"
+  },
+  {
+    "file": "public/images/digitec-d-mark.png",
+    "sha256": "549996435d1e497bb81fc7c9bc6d097f1ca10f313d2bdaf301c36b2a85b8f1a6"
+  },
+  {
+    "file": "public/images/digitec-d.png",
+    "sha256": "6782ffed4d8dae6506f40c6581aa2d6d5752dbf22e8524afcc022a05dc6532ce"
+  },
+  {
+    "file": "public/images/digitec-logo-english.png",
+    "sha256": "7d079927de18082fb5a4311017ab83cb4f8d3f208bd5952812574956c484130a"
+  },
+  {
+    "file": "public/images/digitec-saas-video-keyframe.png",
+    "sha256": "32976365d3695170647c0722600c25704ea445bec62ea51f6b4e2a64f0881cbc"
+  },
+  {
+    "file": "public/images/ferrari-maintenance-dubai.jpg",
+    "sha256": "21bf18b2a75ff887b845b956db8c0f0643f7713efc9ec9635bc2870e48d98128"
+  },
+  {
+    "file": "public/images/ferrari-service-dubai-hero.jpg",
+    "sha256": "53dab672013e3bdb5794a3204f18d7412fce99e35e0dfaf346d490201270388d"
+  },
+  {
+    "file": "public/images/hero-bg.png",
+    "sha256": "fd103e7de1775ea7dbf884ec2b3b1e1488dc8a44ede8eb3720e56befb8c91e6a"
+  },
+  {
+    "file": "public/images/lamborghini-service-dubai-hero.jpg",
+    "sha256": "506238948add46c6a0388e1e941abaedcb8b3c9c8bdb225c533652c88376cbee"
+  },
+  {
+    "file": "public/images/mascot-wave.png",
+    "sha256": "d8751eb5749a9701e0971d2804a832dd7d09b2f0f3b3a105a591a69e047a251b"
+  },
+  {
+    "file": "public/images/mascot.png",
+    "sha256": "39529859e3201b7adff252c15aa894a536a02e7af310e8b5b45c6cb80d2536e3"
+  },
+  {
+    "file": "public/images/maserati-service-dubai-hero.jpg",
+    "sha256": "a5fd7bf3f787fdf0b660f38e9b247ab1725ac3d3f425a3be77f9708a07d8ed8d"
+  },
+  {
+    "file": "public/images/maybach-service-dubai-hero.jpg",
+    "sha256": "ccb8813a3ffa5cdfb8b0e5fd8f15e93b450f56840d9ec37d3d609ba6b57c98c7"
+  },
+  {
+    "file": "public/images/mercedes-repair-dubai-hero.jpg",
+    "sha256": "638eba7a2a17a6f44c59546a080e4ecbdca1325cd4aec347883345a8817cfba1"
+  },
+  {
+    "file": "public/images/paint-correction/porsche-workshop-1200.webp",
+    "sha256": "971864977f2a89cf80276ede338836957ecb4ea7a9a1a2fd529fca9c9c43ae94"
+  },
+  {
+    "file": "public/images/paint-correction/porsche-workshop-640.webp",
+    "sha256": "002fe6f86c1d06f40c796fdf3fe95875dab17bd7ec1377785764220a42663baa"
+  },
+  {
+    "file": "public/images/paint-correction/workshop-floor-540.webp",
+    "sha256": "2043a3de661c64eb353c1e7ef7749a402372fabd0d2fb4bc257c8598b9f18e9f"
+  },
+  {
+    "file": "public/images/paint-correction/workshop-floor-960.webp",
+    "sha256": "45eba871e8fc8620328a8546bb12db1a437c959a65259795d2c3d78ff19b3fe8"
+  },
+  {
+    "file": "public/images/porsche-service-dubai-hero.jpg",
+    "sha256": "ea86278160d7d5638f6328c742faf8195b57d56f24659c3d634bb17ae907d986"
+  },
+  {
+    "file": "public/images/ppf/film-application-1200.webp",
+    "sha256": "d65097d212b26e3a6866dde8b7cad1ec86c8ca6b7d82d4b3d5a45fb147039f7f"
+  },
+  {
+    "file": "public/images/ppf/film-application-640.webp",
+    "sha256": "d7b32c94c31f0d6823ef8169654746788912fb402af5f22cafd236aeb3a8e70c"
+  },
+  {
+    "file": "public/images/ppf/workshop-540.webp",
+    "sha256": "39ff368eb9362548a6b0c96b670199ed55d2ccf40322b8f11a6e0a6f5097bd34"
+  },
+  {
+    "file": "public/images/ppf/workshop-960.webp",
+    "sha256": "56cc3b4b716a734ff56818aafaae2bfe269e8d660f5d555b1f4c48bdc46b6e79"
+  },
+  {
+    "file": "public/images/range-rover-service-dubai-hero.jpg",
+    "sha256": "6d851287e4140e80b586ac775a8e0f15394ce1e09d006a7a3eafa9b50357177b"
+  },
+  {
+    "file": "public/images/tuning-bg.png",
+    "sha256": "ee820f472f5965a904b59a12328801546403b074718abe03ec9423c2e3feb2b9"
+  },
+  {
+    "file": "public/images/tuning-hero-bg.jpg",
+    "sha256": "cc5f636c8c9db0f03e855f6d8714607d3188dca38d5e65fbf7794f44c524139a"
+  },
+  {
+    "file": "public/images/vrx-ambient.png",
+    "sha256": "bdc329f55b6f9dde400ee9dece88c158ab909d192959c9b4ed6446e7337609ad"
+  },
+  {
+    "file": "public/images/vrx-carbon-parts.png",
+    "sha256": "21a61d6b8ac21a311fecfebda2ca86d593357e23def23e7ceb6a6697dc82b25b"
+  },
+  {
+    "file": "public/images/vrx-engine-bay.png",
+    "sha256": "3d5a67cf0ba81ccb477f957e58b183195902d6576c4f7e81df4e09c5eadf9ae7"
+  },
+  {
+    "file": "public/images/vrx-exhaust.png",
+    "sha256": "2ecdd304356c0aef1e8566d46651faa776a7f612ed80b2bd3c9aba0ab9a46245"
+  },
+  {
+    "file": "public/images/vrx-exterior.jpg",
+    "sha256": "54925f85a00f01f2f6392c9c25ecc91f39f312f7f94a1c6317ece3dc98988454"
+  },
+  {
+    "file": "public/images/vrx-founder-car1.jpg",
+    "sha256": "f740a7a278131dc6c6c00e57d38d6e2bf012c64c234a5e043e2a7d1e15301116"
+  },
+  {
+    "file": "public/images/vrx-founder.jpg",
+    "sha256": "e1bf3388bb479749f420c23ae12507dc9f9cdd1584d8227d92c14085595a13a1"
+  },
+  {
+    "file": "public/images/vrx-fuel.png",
+    "sha256": "7cc5bfc8e6b70b6bf7d34f987e8a3f5e663586e96e6284d1d1021484f5ab5586"
+  },
+  {
+    "file": "public/images/vrx-hero.jpg",
+    "sha256": "e5f08687742798969330b66a5d586c39b722a359a19b1a8f67c8957d77d8bef6"
+  },
+  {
+    "file": "public/images/vrx-interior.jpg",
+    "sha256": "d52c66fdc4b65c91bf7da5ed951ced346ac51057abafad41307b6a365ca39f20"
+  },
+  {
+    "file": "public/images/vrx-motor.png",
+    "sha256": "33f2c3f01801c07d6a7df72091ec5b84166aae01a5a3a5a578be481721007552"
+  },
+  {
+    "file": "public/images/vrx-seats.png",
+    "sha256": "b0590447c9f9b0fbbc403567f04975319b8defe406cb5bc703a507df662da570"
+  },
+  {
+    "file": "public/images/vrx-signature.png",
+    "sha256": "b3b4454b04057eb1b8e82526a6e78b2b38335110cad7ab7146a28811e9a4a0fd"
+  },
+  {
+    "file": "public/images/vrx-transmission.png",
+    "sha256": "e8fc240d2aa39663f1f651543e4564edf4caf170f940889a4f06e86a027d4468"
+  },
+  {
+    "file": "public/images/vrx-trophy.jpg",
+    "sha256": "4b4566cbb445a1f07476104ea4071be3aea898110e70c1366705710d916527b3"
+  },
+  {
+    "file": "public/images/vrx-video-thumb.png",
+    "sha256": "f740a7a278131dc6c6c00e57d38d6e2bf012c64c234a5e043e2a7d1e15301116"
+  },
+  {
+    "file": "public/images/vrx-wheels-ceramic.png",
+    "sha256": "30fe745cbfc25d73f146e21249eb717a4d344e010e94b0100aa88f725e27d139"
+  },
+  {
+    "file": "public/images/vrx-wheels-classic.png",
+    "sha256": "dc67877dc0ef432293df6f5dbaf6a8b39f0d7f698315551cd72f0d170709221b"
+  },
+  {
+    "file": "public/llms.txt",
+    "sha256": "c447c634a88a16b2ed3b8f431be9ec013d4f35060928419ef856d090ddc356a7"
+  },
+  {
+    "file": "public/lovable-uploads/00377e13-62b4-4290-8054-c0aad75b9c00.png",
+    "sha256": "772c9a11764b0b455f99f5d31169df1bd3ee9b91f11649c6eae9d119e48659e7"
+  },
+  {
+    "file": "public/lovable-uploads/02e53b99-9978-4722-8945-bab63d4a4973.png",
+    "sha256": "ad3005ab942488491d5f07db66c6ada9e20906e491cbbfecf2bcd71ad2472a2a"
+  },
+  {
+    "file": "public/lovable-uploads/0d7ae3eb-4e88-4a9b-ba5a-f7f1d25b74ec.png",
+    "sha256": "9a1bbda2ca3c38c055673143ab3d03a72ed026b2b621048ea8767db0c02f193e"
+  },
+  {
+    "file": "public/lovable-uploads/0f7fde8d-a57b-45bc-bb10-c80f98525682.png",
+    "sha256": "f8dd15c30d847d307933c1fab56bb97e220aa2adafa2dafb825488e2f54ac175"
+  },
+  {
+    "file": "public/lovable-uploads/11f29482-f2d3-4278-ae2a-397044a1ff95.png",
+    "sha256": "b9a21c2e8d8fce7f4101b89f212070a26363c689ab851104ffc0d422760adcb1"
+  },
+  {
+    "file": "public/lovable-uploads/150c684d-11eb-476b-b768-afe7cad297cc.png",
+    "sha256": "289e2745704ddebf277cccaf626932657796a54324710a932c5532a8992f6b50"
+  },
+  {
+    "file": "public/lovable-uploads/23c141a0-8b10-4263-a16b-a1c71773f3e5.png",
+    "sha256": "25299138d3874be98383076b7beeb3227bd5a3a6a287ddec5a0d8ab8a88305c8"
+  },
+  {
+    "file": "public/lovable-uploads/4bb58917-704a-4c5d-84b6-dc428a00c004.png",
+    "sha256": "cd486fb8342beded8c44ccf23910915cc5d6f0adbb15df6bd658a1ffc71312cc"
+  },
+  {
+    "file": "public/lovable-uploads/54bab4d8-e8ac-469c-8b33-0116edc6c3b0.png",
+    "sha256": "e6b835029fd356e20d59bc0241129824ee9bc46ece9ae092a62228a052947e22"
+  },
+  {
+    "file": "public/lovable-uploads/5cc5b8af-7dd9-46a9-9ee2-3e5b14fda559.png",
+    "sha256": "769d7d381532a0c79e4b90e7434bace7f8ea70f7dbac304ef36236d921aaa509"
+  },
+  {
+    "file": "public/lovable-uploads/678fdd1f-2841-4606-8533-51f82257a4a0.png",
+    "sha256": "6f95e765a3744a75069697629a54d22cd2e6d1763210bd688851d0a167a8ba2e"
+  },
+  {
+    "file": "public/lovable-uploads/69bd2660-e800-47b4-bc4d-de6e6b65b984.png",
+    "sha256": "a2724c3ffea8182274caf4a5d97ab017812736b96ba50d97d9e7e4cdca1f47e3"
+  },
+  {
+    "file": "public/lovable-uploads/70a5e539-8ab8-44b9-85a1-4ecac36681c2.png",
+    "sha256": "56c0cc937cd73de80c19a3e926a8e1d0e0357fb4e03b26d4a4b8b932869cb7a0"
+  },
+  {
+    "file": "public/lovable-uploads/7a227eaa-c434-4d89-8827-fb1c5d640bc3.png",
+    "sha256": "2332be37a6e881b7c85d8da70164f792f8e4e7b7a7c3b6ba22e58b0ae16b27c1"
+  },
+  {
+    "file": "public/lovable-uploads/7f8d98f4-3581-451c-bfaf-262eb67cf14b.png",
+    "sha256": "ce78c70531e4fe2105b6d0bd26abfb0dc259ec1e236828ee3a1b253455a02a40"
+  },
+  {
+    "file": "public/lovable-uploads/87b8aae3-aba3-4dff-b0e1-dcc04f54440d.png",
+    "sha256": "3f019beaf4b0837c32325e80cdd326e849aa9093ca865f4e6d527bdfe2aeb1b3"
+  },
+  {
+    "file": "public/lovable-uploads/8c4046ee-9977-417a-90a9-820452146832.png",
+    "sha256": "538ce9c2e27d98c699665b056f54e9df72fb8669d1bc607cf629daed4717641d"
+  },
+  {
+    "file": "public/lovable-uploads/8d3bad14-09df-4ef1-86c6-13cfcba7042b.png",
+    "sha256": "7f505bb1af3c9a6fe1c76d0d3caca9e106f547fda2fff67e3618746b4ae11a84"
+  },
+  {
+    "file": "public/lovable-uploads/8e59fadf-f1e4-4860-ac92-81509a23ec94.png",
+    "sha256": "32a20573f4df9dd801a8b54b955ebc20e4cc2ff9b1dbf97470f0f76a356dd403"
+  },
+  {
+    "file": "public/lovable-uploads/8e7e2545-680e-42ac-bd97-ba1f9c063649.png",
+    "sha256": "89a432f1c5b6b5f416f6159400b9fca29424a4109e0b0f38b922bd8ed0711967"
+  },
+  {
+    "file": "public/lovable-uploads/916789e0-b6fb-43d4-9d52-79899ce5a1c2.png",
+    "sha256": "2658e4abbc5f8152675d0d8b493d8ccb1f5097fdb5a8fb464c36a6c0cd00de8d"
+  },
+  {
+    "file": "public/lovable-uploads/99d04ebd-5104-40f5-961d-f26cff7f2030.png",
+    "sha256": "d69fa93e9360620ad80be6ad1d2e297b8d3ddf3c0dd6f9a0d83270c1cb2ae239"
+  },
+  {
+    "file": "public/lovable-uploads/9db7fc3e-a988-4b9d-a7ab-a6494b58561e.png",
+    "sha256": "b2a919b1a90b559d2a20788d692b388d1df09ac329960abab4dfa39727ab860c"
+  },
+  {
+    "file": "public/lovable-uploads/9f435c28-2f08-437b-99ad-2252d8ea2071.png",
+    "sha256": "3a097054e2ed8c7e2d63702048936621e22b74332db2bedcdab5f7cdc0bf353b"
+  },
+  {
+    "file": "public/lovable-uploads/a3e92dde-70a9-499b-a7b0-ae0df117baf9.png",
+    "sha256": "9c5fe7f98ea1f7b344e1cb20e90ff579cb981c555bb7aeee129ccbd79a15095e"
+  },
+  {
+    "file": "public/lovable-uploads/a4c040e8-740a-4fcb-b837-b86e15c25306.png",
+    "sha256": "22a160eed75123bf48910ca1eb5cfa54fa09feb2af5a7d186faf7610f2bfd401"
+  },
+  {
+    "file": "public/lovable-uploads/a6f453f2-f2c5-4140-8f2a-bfa3401611d7.png",
+    "sha256": "5f8f2f13fb31ecf61f97e36d274c7cd2fc3b80d7ef98a0abda8309a2eb006813"
+  },
+  {
+    "file": "public/lovable-uploads/a864ba86-0cc4-45a7-83e5-f3e39a34e6e5.png",
+    "sha256": "ef2e7938480c0952976e6274a2ecbe8fbd6338ce4a8fc9e96de49063436b212a"
+  },
+  {
+    "file": "public/lovable-uploads/aeca6cb5-7000-451e-aaf7-d5171200659f.png",
+    "sha256": "9ad565ab33072ae369d9c274692dbd30e54997b41b413b605ec5bec7e173ea0d"
+  },
+  {
+    "file": "public/lovable-uploads/b25532a7-eae9-45ae-b8bf-425984dbfa6d.png",
+    "sha256": "ad3005ab942488491d5f07db66c6ada9e20906e491cbbfecf2bcd71ad2472a2a"
+  },
+  {
+    "file": "public/lovable-uploads/b2cd5f78-8a43-4a9b-8a0a-19124642ca5a.png",
+    "sha256": "dd3a64c056244df08982bba2ec9bb0c4a124a64590af66d370df960fd1d20e94"
+  },
+  {
+    "file": "public/lovable-uploads/b400327f-926f-4da6-97f8-cff91a39e3ec.png",
+    "sha256": "ba9778141c6b6b1863a5a04849bf20fa6d0c7552ceb2efa389d79769a947f45a"
+  },
+  {
+    "file": "public/lovable-uploads/b56133bf-55e4-4bc9-884f-15f732132259.png",
+    "sha256": "6b527380cfb99e88f8d661b76fd547b66947d545dd4a2df58257bcb1853cc89b"
+  },
+  {
+    "file": "public/lovable-uploads/b632a8da-5197-45f3-96f1-94cd0e9942e3.png",
+    "sha256": "4230f4421aa5d7fbe5588ce2cb7d702576012a595eaeab45e7d9ab29d91f7989"
+  },
+  {
+    "file": "public/lovable-uploads/b8278b01-7cf1-43fb-ae22-3f731c36cec5.png",
+    "sha256": "be515581d34bb65c7a8bd40798d3f585eed0cfc8fd62088f9f9ba093042c8ef7"
+  },
+  {
+    "file": "public/lovable-uploads/bf4fc6ba-f08f-4fa6-a7c6-0e1a65b780b3.png",
+    "sha256": "57f15537c4be60abcb5290b0b73b44ee8212d2f6a4ae53cabd670da6e44d350c"
+  },
+  {
+    "file": "public/lovable-uploads/brabus-g-class.png",
+    "sha256": "090398e626d6a428422ec59ca8904d39f6c30100be4009cd9d099078cdbf65c9"
+  },
+  {
+    "file": "public/lovable-uploads/c1c2c5d8-fd7e-4d38-945c-e52315b4229e.png",
+    "sha256": "2b5a714976d68f5fdae34df8c65ab366a66450822b576b36a42700755cc42609"
+  },
+  {
+    "file": "public/lovable-uploads/c509aefa-0c5f-4a03-8de8-0d508fcd68cc.png",
+    "sha256": "634868ca43f21f87bc32ba9f89b48af7df3d2d2dff94ef918f7ad10a94821b21"
+  },
+  {
+    "file": "public/lovable-uploads/car-body-repair-new.png",
+    "sha256": "3f019beaf4b0837c32325e80cdd326e849aa9093ca865f4e6d527bdfe2aeb1b3"
+  },
+  {
+    "file": "public/lovable-uploads/car-body-repair-v2.png",
+    "sha256": "fa3be4af64057792af13eca9c714df11e735c43062f03d0fa660905f29019a7a"
+  },
+  {
+    "file": "public/lovable-uploads/d66ea83e-7d6a-4c19-bf30-f27eca93ac8e.png",
+    "sha256": "db32325acabab1cf0674278a558fe2cc42f95d3d4db3a672c7de60c50b85d905"
+  },
+  {
+    "file": "public/lovable-uploads/f13e5867-fa2e-4bac-8132-8c6ee447feab.png",
+    "sha256": "eebb6dc7e339ac31b94b47b5a22c974036904c00f21c4ed2edd09c2584aa0698"
+  },
+  {
+    "file": "public/lovable-uploads/f1cfe23e-d23b-4717-9f75-a07199716d98.png",
+    "sha256": "ff1537791c7ce9a08ef85f013bbf0119bf51c437a5dfd29c9a2a5454f1d5ca4d"
+  },
+  {
+    "file": "public/placeholder.svg",
+    "sha256": "64badf7aabda0b9630b87020ffb6095cb858ccbcf66b355c2aa08b1063954d3b"
+  },
+  {
+    "file": "public/privacy-policy.pdf",
+    "sha256": "5030a4a6c5547ac3223e66675ee6fa3c581ef5d24a3d535e663446e5a277c904"
+  },
+  {
+    "file": "public/robots.txt",
+    "sha256": "e0f5158eb8483588641bcf9e7b2f994d48707955b92e587b225efebddaae79bc"
+  },
+  {
+    "file": "scripts/build-ceramic-local.mjs",
+    "sha256": "94a2fa4598b0a4ea476d5aca9d03d6924de8d282c58685349205c1769a9a4b76"
+  },
+  {
+    "file": "scripts/build-paint-correction-local.mjs",
+    "sha256": "0441cfd777aa24adbe759e6a0804a9a9a43703ac4e643f740408aacdd63ca5d7"
+  },
+  {
+    "file": "scripts/build-production-local.mjs",
+    "sha256": "402ba24a2538cf59ae23b965af762fc661b05ef70d650580f01d1882a0d4f5ae"
+  },
+  {
+    "file": "scripts/check-production-release.mjs",
+    "sha256": "68f40e656b79ef3bb71ee5fbab303cb0f7efeb57f6837ac9cb8fe7bfa9f215c0"
+  },
+  {
+    "file": "scripts/generate-hosting-rules.mjs",
+    "sha256": "b261ced75eab27b4ace747a214a30bde0548ff41682f2d5b5f53896cb32ab973"
+  },
+  {
+    "file": "scripts/inspect-aston-metadata.mjs",
+    "sha256": "a4485319e2a0d60266edf7eb2d8ee339c77489a6cd6b4baa8b513a2b34923bdd"
+  },
+  {
+    "file": "scripts/optimize-ceramic-images.mjs",
+    "sha256": "3c317937a0e96976037eadd051f733d2553ce804cf674899164ea7849ae7a8ab"
+  },
+  {
+    "file": "scripts/optimize-ppf-images.mjs",
+    "sha256": "0816debcc97cb0d6297f20a4ad8f9caac3daed45a0f4a7c9979ea3fd1603ee86"
+  },
+  {
+    "file": "scripts/prerender-seo.mjs",
+    "sha256": "d34f1491bbf004795cfcd69e200179eecd24074a963a0d142ceff58b18eb04be"
+  },
+  {
+    "file": "scripts/prerender.mjs",
+    "sha256": "95b524767820019b92062f916347a0c84c49626eb830905e9587d532002fd6a3"
+  },
+  {
+    "file": "scripts/preview-ceramic-local.mjs",
+    "sha256": "515bf53b32c19a936143cd4eb43f4ae9c1bc726b5b5f3c332192f0f582eab227"
+  },
+  {
+    "file": "scripts/preview-production-local.mjs",
+    "sha256": "721834153baa619e320cfc77da6f0b44d2e4e7233d85c43a6ae967bba1c41840"
+  },
+  {
+    "file": "scripts/sync-brand-sitemap.mjs",
+    "sha256": "7c750ff68b125de20098921e5c277ba917204817bda6ea9766da21ecd45b3f7c"
+  },
+  {
+    "file": "scripts/test-ceramic-browser.mjs",
+    "sha256": "f2058e086f49b1e49aca620f24fdd6b43f3901fbbba45b491e60f3084a40380c"
+  },
+  {
+    "file": "scripts/test-contact-attribution.mjs",
+    "sha256": "3d05a780f12cda1fd1219a0bf986e83be6a7270e526d70a226777a7940076f67"
+  },
+  {
+    "file": "scripts/test-hosting-rules.mjs",
+    "sha256": "fb1fc0da7bf68ba1892234df6ba381dbe417cc4183253d2511f0db112c8d1e02"
+  },
+  {
+    "file": "scripts/test-master-seo-browser.mjs",
+    "sha256": "a26cf1e10e0346a4b5e9fd34cf5a47ce4b8b62fcfbf01b990deea175952c9d4a"
+  },
+  {
+    "file": "scripts/test-paint-care-journeys.mjs",
+    "sha256": "2b14ff867c89cd45bcdfd5c1bf54dd2473c78dfdf466f4a6d02bd08847f77086"
+  },
+  {
+    "file": "scripts/test-paint-correction-browser.mjs",
+    "sha256": "5db5bb4523c1d7b0d0310bdbc86d876b0581996b9f1d52867b5a39e6a682954e"
+  },
+  {
+    "file": "scripts/test-ppf-browser.mjs",
+    "sha256": "c51d57fa2c1f8fb3e5c175cf807d73ecbe935167c29f40dc1e658c5823fd175c"
+  },
+  {
+    "file": "scripts/test-protection-release-browser.mjs",
+    "sha256": "309743395e1298f3b242e5c21e8e362d195584c9da568cdcf1ef7a1d15bd46a0"
+  },
+  {
+    "file": "scripts/validate-bmw-hub.mjs",
+    "sha256": "37c241f5ec95f367d6635c977c6815b3ec73b962c17bf5f2b1ed653c973304d5"
+  },
+  {
+    "file": "scripts/validate-master-seo.mjs",
+    "sha256": "9e22e89ab0f7038a76abe3d144ee35b16637f6eda609546f37634f9dd3b76091"
+  },
+  {
+    "file": "scripts/validate-oil-change.mjs",
+    "sha256": "c16bc88ed6489088f4ec1d5e5aba982737785a6caa22084217022db84e6e15f3"
+  },
+  {
+    "file": "scripts/validate-paint-care-cluster.mjs",
+    "sha256": "5bf4cc7261cfb2bca56ca13d4fcc9a2db108bbd750c99bef145653788bb2bab2"
+  },
+  {
+    "file": "scripts/validate-paint-correction.mjs",
+    "sha256": "58101a04d8a152d23986b25411ba44bfadf8a9f17a7e24cd39ffece45a11f6a4"
+  },
+  {
+    "file": "scripts/validate-ppf.mjs",
+    "sha256": "a0056d92a8e98d4aebb3e3c34361448d934c82cc479dfb66f80fc7fb877436de"
+  },
+  {
+    "file": "scripts/validate-protection-release.mjs",
+    "sha256": "6cba8bd835ebb00c7f93e12baedc98acebdc4a677415361968f916519b06f38c"
+  },
+  {
+    "file": "scripts/validate-query-release.mjs",
+    "sha256": "456d47030a8670dea5fcb55aee2e1e4d048539002a264b9cade34847be94273a"
+  },
+  {
+    "file": "scripts/validate-seo.mjs",
+    "sha256": "62676e8814e55a1d191263d8deddac61b13d347cc95a801f991bad04d50a8ce4"
+  },
+  {
+    "file": "scripts/validate-suspension.mjs",
+    "sha256": "9ba2b0c072c2d1eca3f4cf15e7bf0b932af60b0bf07a46241d6059316a795e54"
+  },
+  {
+    "file": "scripts/validate-transmission.mjs",
+    "sha256": "92acce7b444a9be441d5b7ec8931743d57d43c70bb296066f2855983e5c9b1ad"
+  },
+  {
+    "file": "src/App.css",
+    "sha256": "1b75716b5511ad178574cd3e3656e5e8dd94544456944b4ff1d253c9ecc614d4"
+  },
+  {
+    "file": "src/App.tsx",
+    "sha256": "3e39bf0f7991daf5b8ce2e4a1f32fe6fc9c8e4aed7eb3aea5a91354ddd4873f6"
+  },
+  {
+    "file": "src/assets/byd-logo.png.asset.json",
+    "sha256": "f5bfa6d4ee2ddc1ca1fa834a15ea8ab0b66aa6b8f24eb5954fba0511613e831d"
+  },
+  {
+    "file": "src/assets/ceramic-coating.jpg",
+    "sha256": "676d7d138375e17ad66e37e7390a33b949a0e16b690d4a047c77d5bee0c2533a"
+  },
+  {
+    "file": "src/assets/defender-accident-repair-corner 2.jpg",
+    "sha256": "d04c04a584fc1ea261c1f08b676e5cff783367a0362eacc422824a71bf037828"
+  },
+  {
+    "file": "src/assets/defender-accident-repair-corner.jpg",
+    "sha256": "d04c04a584fc1ea261c1f08b676e5cff783367a0362eacc422824a71bf037828"
+  },
+  {
+    "file": "src/assets/defender-accident-repair-disassembly 2.jpg",
+    "sha256": "9d9b485c14cb4dcaccd15e8badad93dab1b9d1e47df8caa9ace9843be153a5d1"
+  },
+  {
+    "file": "src/assets/defender-accident-repair-disassembly.jpg",
+    "sha256": "9d9b485c14cb4dcaccd15e8badad93dab1b9d1e47df8caa9ace9843be153a5d1"
+  },
+  {
+    "file": "src/assets/defender-accident-repair-finished 2.jpg",
+    "sha256": "ae1b4b0b43ca2d3dde7814f60b29f9dceb25a4c899b22f303d3a1e2b148ed5ff"
+  },
+  {
+    "file": "src/assets/defender-accident-repair-finished.jpg",
+    "sha256": "ae1b4b0b43ca2d3dde7814f60b29f9dceb25a4c899b22f303d3a1e2b148ed5ff"
+  },
+  {
+    "file": "src/assets/defender-accident-repair-front 2.jpg",
+    "sha256": "701bf3989c7e4d23f8190ae96c02520fcae2bdc047debb3166baa13fde4813de"
+  },
+  {
+    "file": "src/assets/defender-accident-repair-front.jpg",
+    "sha256": "701bf3989c7e4d23f8190ae96c02520fcae2bdc047debb3166baa13fde4813de"
+  },
+  {
+    "file": "src/assets/defender-accident-repair-reassembly 2.jpg",
+    "sha256": "1799c4676b644dca7eee7d5dcfc2b4202970fbe4db3357118b7efb2026f0c3e6"
+  },
+  {
+    "file": "src/assets/defender-accident-repair-reassembly.jpg",
+    "sha256": "1799c4676b644dca7eee7d5dcfc2b4202970fbe4db3357118b7efb2026f0c3e6"
+  },
+  {
+    "file": "src/assets/defender-workshop-dubai 2.jpg",
+    "sha256": "3303cc34540c3263948859cc2082f51552f44e24dfcc3ea21472f45541ffa230"
+  },
+  {
+    "file": "src/assets/defender-workshop-dubai.jpg",
+    "sha256": "3303cc34540c3263948859cc2082f51552f44e24dfcc3ea21472f45541ffa230"
+  },
+  {
+    "file": "src/assets/digitec-workshop-lifts.jpg",
+    "sha256": "ab92c3420bf1b1d8384635c7e98820102dd37e097e52f317d82fe1b77ea54335"
+  },
+  {
+    "file": "src/assets/digitec-workshop-luxury-bays.jpg",
+    "sha256": "3e1ac5584b7eed61c30846d5f74bd33b2fd181d5b0cf6d358be0698b924416ef"
+  },
+  {
+    "file": "src/assets/digitec-workshop-service-floor.jpg",
+    "sha256": "3ab60f88d2b5472e3b0f8fd669edd65d016693c2bf889950e11ea1ea8427f276"
+  },
+  {
+    "file": "src/assets/exhaust-repair-dubai.jpg",
+    "sha256": "1b0b0fbf9c44b5ae23fe43f79874662ea817326666e341db57e18c7e8f329106"
+  },
+  {
+    "file": "src/assets/ferrari-engine-workshop-dubai.jpg",
+    "sha256": "53dab672013e3bdb5794a3204f18d7412fce99e35e0dfaf346d490201270388d"
+  },
+  {
+    "file": "src/assets/g63-brabus-g800-finished-front.jpg",
+    "sha256": "23ed00dd0978df0a1f163a83a7f2f64e0cf455de25cfe7726eae0af653a222d0"
+  },
+  {
+    "file": "src/assets/g63-brabus-g800-finished-rear.jpg",
+    "sha256": "6b543f5f4680d98c83d56877918b42ce7548ff6e5f17b8f79eb60f0d0ba19866"
+  },
+  {
+    "file": "src/assets/g63-brabus-g800-front-body-preparation.jpg",
+    "sha256": "8c419b536e3b98a9c071ab3743d0711f851a90339f522c0b6b5297a20dd31883"
+  },
+  {
+    "file": "src/assets/g63-brabus-g800-front-interior-strip-down.jpg",
+    "sha256": "e3be2b9e1f272f436502991b73f98af2769e3be5b4aae29a59e8c989ed45fb66"
+  },
+  {
+    "file": "src/assets/g63-brabus-g800-rear-body-preparation.jpg",
+    "sha256": "124f741bfe0743dd9ecae5e501d1262a937f3439d87043b6c753f351ba76f10f"
+  },
+  {
+    "file": "src/assets/g63-brabus-g800-rear-interior-strip-down.jpg",
+    "sha256": "14f83afe7827ab9e33f4c9279175f1481326f1480f56baf5129b7c2151ccc45b"
+  },
+  {
+    "file": "src/assets/g63-brabus-g800-side-preparation.jpg",
+    "sha256": "58acd4b93c35acd003e6d607eee6ada7890ddd95bb886eb2fa778a9fa45a97c6"
+  },
+  {
+    "file": "src/assets/lamborghini-urus-workshop-dubai.jpg",
+    "sha256": "60193331d5f8ac3479516eac3ef6806c69772dc2e1ca534af691e8196fd6afae"
+  },
+  {
+    "file": "src/assets/lamborghini-workshop-dubai.jpg",
+    "sha256": "506238948add46c6a0388e1e941abaedcb8b3c9c8bdb225c533652c88376cbee"
+  },
+  {
+    "file": "src/assets/land-rover-logo.png.asset.json",
+    "sha256": "340425c1f80babae084d129baa7e798bfc73874dcf75eec9330af0c26b1182ca"
+  },
+  {
+    "file": "src/assets/maybach-workshop-dubai.jpg",
+    "sha256": "ccb8813a3ffa5cdfb8b0e5fd8f15e93b450f56840d9ec37d3d609ba6b57c98c7"
+  },
+  {
+    "file": "src/assets/mercedes-amg-engine-repair-dubai.jpg",
+    "sha256": "382f3414cee4eb1e77cb2e88b0caba289eaa4319ec5c5ffb8fbe4aabbeb96739"
+  },
+  {
+    "file": "src/assets/mercedes-amg-gt-black-series-1300hp-build 2.jpg",
+    "sha256": "ef5fac024a27ea2661bc9670a27cdcf055ad3dc5eb27d114ae59f17f99eaa693"
+  },
+  {
+    "file": "src/assets/mercedes-amg-gt-black-series-1300hp-build 2.mov",
+    "sha256": "be20dc07f07ada2e6989729196fa6c54b2c782b1dc6e828b0183692594c930f5"
+  },
+  {
+    "file": "src/assets/mercedes-amg-gt-black-series-1300hp-build.jpg",
+    "sha256": "ef5fac024a27ea2661bc9670a27cdcf055ad3dc5eb27d114ae59f17f99eaa693"
+  },
+  {
+    "file": "src/assets/mercedes-amg-gt-black-series-1300hp-build.mov",
+    "sha256": "be20dc07f07ada2e6989729196fa6c54b2c782b1dc6e828b0183692594c930f5"
+  },
+  {
+    "file": "src/assets/mercedes-repair-guide-workshop.jpg",
+    "sha256": "638eba7a2a17a6f44c59546a080e4ecbdca1325cd4aec347883345a8817cfba1"
+  },
+  {
+    "file": "src/assets/mercedes-repair.jpg",
+    "sha256": "262b3ae4b940f499ed99a4ecada4c5c6719de7905fc07d4326990f702ab35d06"
+  },
+  {
+    "file": "src/assets/mercedes-workshop-dubai.jpg",
+    "sha256": "d2caf39ffbd7a43c15ce35bec8e35167bc078811ca0a707ae3bbf367c045c905"
+  },
+  {
+    "file": "src/assets/porsche-gt3rs-workshop-dubai.jpg",
+    "sha256": "ea86278160d7d5638f6328c742faf8195b57d56f24659c3d634bb17ae907d986"
+  },
+  {
+    "file": "src/assets/porsche-workshop-dubai.jpg",
+    "sha256": "6c43acc9504fec8ae805419473655428d7b2052a51eceacce87f4067cf4665ff"
+  },
+  {
+    "file": "src/assets/ppf-application.jpg",
+    "sha256": "3861433dc17315583fa80c20c6a67d73d25989efee0ad7dcb9b75086c3eb15f9"
+  },
+  {
+    "file": "src/assets/range-rover-workshop-dubai.png",
+    "sha256": "fe288b20d91eb578742d6599f16ed98e2042678dc18bd63374247f8dd3434aa1"
+  },
+  {
+    "file": "src/assets/routine-maintenance-optimized.jpg",
+    "sha256": "adfe7d377f649f5371513f0c24e1d302cf451a3ffaaebef0309ac73a9172b92a"
+  },
+  {
+    "file": "src/assets/routine-maintenance.jpg",
+    "sha256": "3ecdfd86153f0b43177793693e79294672b68df4baef51dc6eddc6b5bc4de6c1"
+  },
+  {
+    "file": "src/assets/rox-logo.png.asset.json",
+    "sha256": "20999852775da829affff4e2936e523acc2379282120da0e904badd335f9a3a7"
+  },
+  {
+    "file": "src/assets/soft-close-door-repair.jpg",
+    "sha256": "22d05f8d18756d5eae618ba7743630526db057e7a44b607b4e56e51bbd724dc4"
+  },
+  {
+    "file": "src/assets/suspension-repair-dubai.jpg",
+    "sha256": "9eee95cf96cd8b07c13d7d192ca7c0a0d23054b0ac6a0bde499337422dd86f66"
+  },
+  {
+    "file": "src/assets/tire-repair.jpg",
+    "sha256": "91801f23d0f6b3eaca03f98adfb566d555ab8b16572bab90400fdc768892c8c4"
+  },
+  {
+    "file": "src/components/Analytics.tsx",
+    "sha256": "25e8abcfa41a1b5f3ee0644e89c8fba284dda1004d5838ccd3d4ac7a7fae1469"
+  },
+  {
+    "file": "src/components/AnswerBlock.tsx",
+    "sha256": "ad394b451af7dcb69dfe401816225986f0fc6f994064d61a5d19eb1d5b6d2e99"
+  },
+  {
+    "file": "src/components/AstonMartinHubSections.tsx",
+    "sha256": "2f5cfc6d703451d0c054e4f50dc353d8410dc354e4bafe44ccb24beac5669f82"
+  },
+  {
+    "file": "src/components/AudiHubSections.tsx",
+    "sha256": "d68a019e6cb381aeeaf4e4ff36135d13737a458e1817e9d9a3da1e9564f98b65"
+  },
+  {
+    "file": "src/components/BentleyCameraSection.tsx",
+    "sha256": "5274ac463524c88664a65abefe9229e559bd875fc7207b6ad9025fcb88c89ef2"
+  },
+  {
+    "file": "src/components/BentleyHubSections.tsx",
+    "sha256": "e88ae0e39d1f56ee0d5c994ca619ee9dc8ded077d6570c8f0b92aa3139e22e2d"
+  },
+  {
+    "file": "src/components/BmwHubSections.tsx",
+    "sha256": "6099f83e51c4289a9095a61bc3f86403235216cf308e634e75a361fd35edbd12"
+  },
+  {
+    "file": "src/components/BmwKnowledgeHub.tsx",
+    "sha256": "14d27232c8544eb663cea8dc2a6e1b6a0ff68e7ad2c0a34781ad187e499dcf76"
+  },
+  {
+    "file": "src/components/BrandBookingForm.tsx",
+    "sha256": "4d76384ce5eb2cef662700e8b6ea92b5eb3ffe3d8169f5fce9a85507460f260c"
+  },
+  {
+    "file": "src/components/BrandPaintCareLinks.tsx",
+    "sha256": "a298527d9cd0d3106f3062b43b2f046fc1f9ee6e72d4dbfb7d655cfc7655a64f"
+  },
+  {
+    "file": "src/components/BrandsWeServe.tsx",
+    "sha256": "5aa561dff7df33c281ffab38618007907014f7a1e9cf1870d19f66a5aa0adeed"
+  },
+  {
+    "file": "src/components/ChatBot/ChatBot.tsx",
+    "sha256": "2fe906ba698d567c9e6f4dad69390827c3a8720d09150bc15247315197172cad"
+  },
+  {
+    "file": "src/components/ChatBot/ChatBotIcon.tsx",
+    "sha256": "2ed3d5e89590c6dea52693d97bd68cd4a6111f7a5c8d351629a92b8004a22511"
+  },
+  {
+    "file": "src/components/ChatBot/ChatWindow.tsx",
+    "sha256": "866b2995333f41078439c3c6cbbc0dc0ca4371ae1aa5f7f9ef019e633fa5f86d"
+  },
+  {
+    "file": "src/components/CustomCursor.tsx",
+    "sha256": "93f247f6437e16912d1087d453a7cf2b9408ff5d2fd0a6d1062f8f1e1204bf4b"
+  },
+  {
+    "file": "src/components/FAQ.tsx",
+    "sha256": "55a68cc6343cc491f41d498256e9c6fb8bb21c045f2ac05bb138bb960704cfc7"
+  },
+  {
+    "file": "src/components/FerrariKnowledgeCentre.tsx",
+    "sha256": "a207370193b533480e5c9b01fa479b3bef4d1c5f6e1e23f619c8882175953dcb"
+  },
+  {
+    "file": "src/components/FinalCTA.tsx",
+    "sha256": "6abdba429af04ae607dffb2b50ebc0728acb1e9900adb6f019d8c0b07135f729"
+  },
+  {
+    "file": "src/components/Footer.tsx",
+    "sha256": "75dfbc119a3929d1c07123d201e5a7645c219817bcf34936753ee9cd440be313"
+  },
+  {
+    "file": "src/components/GoogleReviews.tsx",
+    "sha256": "b12e13966ca2effad35445e00661a55c5d6e183e40e237f2c3158a1f99a74c00"
+  },
+  {
+    "file": "src/components/Header.tsx",
+    "sha256": "215a9ce9ed45193bc2bc42af53af9f1c6e0efe6392c8f28ace571c04ad8613d2"
+  },
+  {
+    "file": "src/components/Hero.tsx",
+    "sha256": "a3de87265e255b8b5c3bb1ad215b597b29872fd6ca05e7703bad0b8ccacf20c9"
+  },
+  {
+    "file": "src/components/LamborghiniHubSections.tsx",
+    "sha256": "9463a714def8c4975a80bdc6ca42014844290875413ae835968c8d6e2da14371"
+  },
+  {
+    "file": "src/components/LegacyRedirectHandler.tsx",
+    "sha256": "7a72df650fee1c945f7d52026d93163cdba5b0c8f61a11c8b8d212cc9e460b41"
+  },
+  {
+    "file": "src/components/LocaleRedirect.tsx",
+    "sha256": "1c256594322b464b15a34d919ec5a0d4b2af2d01ca248c57df3efe59e35f8ec8"
+  },
+  {
+    "file": "src/components/LocalizedLink.tsx",
+    "sha256": "de59d30f199a8eac490f3eda8c304bf713f927d185e59fd67a5d9ce4357de26c"
+  },
+  {
+    "file": "src/components/MascotWidget.tsx",
+    "sha256": "d6abe5cd8f4ec36abbbec66e76fa3ae3b1dce0df6a88d33465290b2ccf1f740b"
+  },
+  {
+    "file": "src/components/MclarenHubSections.tsx",
+    "sha256": "77d158678536042472a457d5bf747f5879228a912f664a25800d32210ea690f5"
+  },
+  {
+    "file": "src/components/MercedesMaintenanceScope.tsx",
+    "sha256": "a5802c0654ef4a2241c32fde819f63c49789ad177f9a780c099d67da460a714a"
+  },
+  {
+    "file": "src/components/PPFCeramicSection.tsx",
+    "sha256": "50790fc2f089fb00e66a998bbbebdda23e53fb658b0b4c6fc7a08ce55c268eab"
+  },
+  {
+    "file": "src/components/PageIntro.tsx",
+    "sha256": "356b0a46cf7d93047f8dce12c5de9260d6a5d2a0ffcd0688ae3678f5c276ecc5"
+  },
+  {
+    "file": "src/components/PaintAssessmentForm.tsx",
+    "sha256": "a8a1e85a5b2682ff277f31cc41d74c1a35c892bc92763e9f1df3ebfb70f600cf"
+  },
+  {
+    "file": "src/components/PaintCorrectionProjects.tsx",
+    "sha256": "8fc6df2724094846bda3b884b6226ddbe783f1a375c8496210f68ac288ffba3d"
+  },
+  {
+    "file": "src/components/PerformanceResults.tsx",
+    "sha256": "2ce23d0313d93a42daa95038da942d2904c5b2f1530ae6445e91998bee4fa3eb"
+  },
+  {
+    "file": "src/components/PorscheKnowledgeCentre.tsx",
+    "sha256": "be8d6a444296012ed386ddd02cf49548956279ed6e9176007885c6e20622fdbd"
+  },
+  {
+    "file": "src/components/PpfQuoteForm.tsx",
+    "sha256": "e05d2aa185abfd6f7a5aefcd82bf90fa537acb5d58b0b20c73f88dc9cc683d7b"
+  },
+  {
+    "file": "src/components/PreserveQueryNavigate.tsx",
+    "sha256": "36078dcb60a6b41a1fb00c8791f545da8341e85e06f01e0d099a7afa0610ee88"
+  },
+  {
+    "file": "src/components/ProtectionProjects.tsx",
+    "sha256": "33a6897bed942b2e6a039023298a522457e0e0f5161f1e5606112e343fa23b54"
+  },
+  {
+    "file": "src/components/RollsRoyceHubSections.tsx",
+    "sha256": "01805ea91b73747668afb90b5ceff538520d1be98b1870f0ebdc878e73bd3666"
+  },
+  {
+    "file": "src/components/RoxHubSections.tsx",
+    "sha256": "1c2663cd32c88f9711958ab8a3f388eadb2811af9a61908fc9169f05440e0b98"
+  },
+  {
+    "file": "src/components/ServiceDetailDialog.tsx",
+    "sha256": "19c77163a3433661bc5d82cd7926984125103cce0f341a62a1271bd9453ce08b"
+  },
+  {
+    "file": "src/components/ServiceGrid.tsx",
+    "sha256": "c9bc1c58050342cc70ff9e0afcb433ea047b6bce4869d263b40ef0122a5d9962"
+  },
+  {
+    "file": "src/components/TrustBar.tsx",
+    "sha256": "2d8c2ccff6362c9ab7693112251cc4f3afdc9bc34b05002de78842450db3d36e"
+  },
+  {
+    "file": "src/components/TuningConfigurator.tsx",
+    "sha256": "fa2851b6d649dc5faf507e627fac8adb24583acfb2142fcfb37e2ade5b2a70a1"
+  },
+  {
+    "file": "src/components/VRX/ExteriorTabs.tsx",
+    "sha256": "018a54be3d464858004df526e2b2956f8bee8f8e4aaa124091c484e8fd2a8e47"
+  },
+  {
+    "file": "src/components/VRX/FounderMessage.tsx",
+    "sha256": "503166a3ebb221fd41704464724060ce4f5aa2900aeb21689a0df0598146b14d"
+  },
+  {
+    "file": "src/components/WhatWeDo.tsx",
+    "sha256": "2e9ed87ddfa66d96bd525d90b331e6fec4b6bcfff070044c487d209a046ae585"
+  },
+  {
+    "file": "src/components/WhyChooseUs.tsx",
+    "sha256": "3ed2f2bd58c3f17488650bc85ef9a601b0f4f7ae01660a02fda92ac264ba1dab"
+  },
+  {
+    "file": "src/components/motion/CountUp.tsx",
+    "sha256": "1a1a51f576eea57d901ab7b1f1a8624836d0eff43c4727d852f67f25ad4bd241"
+  },
+  {
+    "file": "src/components/motion/Reveal.tsx",
+    "sha256": "d833c34e76dd3a00835d2159f5b729909121021bc0a66b663ea818611e23293d"
+  },
+  {
+    "file": "src/components/ui/accordion.tsx",
+    "sha256": "1b13005a243e9d9e943c5bbb97f6d8fccdef1982862a7f92c3cf109a07e16822"
+  },
+  {
+    "file": "src/components/ui/alert-dialog.tsx",
+    "sha256": "938870c65894f35eefcd4723e28fa5408d1332b783768900350780800161b7ab"
+  },
+  {
+    "file": "src/components/ui/alert.tsx",
+    "sha256": "1aaba23c7a1095f7abea7c9f6ce12a43c22bb8f97e957c9cae222666e0c8be83"
+  },
+  {
+    "file": "src/components/ui/aspect-ratio.tsx",
+    "sha256": "62f29cd87c19f52d403dc2d17823849db2c8cbd541c9f96de20ef13e58d379db"
+  },
+  {
+    "file": "src/components/ui/avatar.tsx",
+    "sha256": "57a595117f720435f3552a140f817db59c7a7a8f1719eaad6fd48744b8b88f55"
+  },
+  {
+    "file": "src/components/ui/badge.tsx",
+    "sha256": "563824ae3f6b0a5de408c13e58fe2a195808ff57cb09698fcaf2e875434bfb98"
+  },
+  {
+    "file": "src/components/ui/breadcrumb.tsx",
+    "sha256": "dc4d063ba3cf6ab4a38371297ca94e81db6bbb95541e87efa1ff935b47f8a1f4"
+  },
+  {
+    "file": "src/components/ui/button.tsx",
+    "sha256": "376e7a3c1f6efe5bec442d24106cfb9da6aacc8ccf6fc4b859dfa776949eec41"
+  },
+  {
+    "file": "src/components/ui/calendar.tsx",
+    "sha256": "c6ca0fd8f2ac3ef226ba291cc6842427c3b1e7dba3ae4fdf632353f624bfd83d"
+  },
+  {
+    "file": "src/components/ui/card.tsx",
+    "sha256": "9279e6cc5d87b911b83a0906789adbb1c6b6985233c6d38a7ad29606c34bc43f"
+  },
+  {
+    "file": "src/components/ui/carousel.tsx",
+    "sha256": "d48a52f0bc5161c47ee818c88bebedea98c14742a1e4d3c76639a612ddbb376a"
+  },
+  {
+    "file": "src/components/ui/chart.tsx",
+    "sha256": "976321443cfa59f1c9b010349202e44b85fe9c899e38cefcda1f97978b7cc228"
+  },
+  {
+    "file": "src/components/ui/checkbox.tsx",
+    "sha256": "8fe06fca3f25a01e2ecf407f258a730580ffd07515efa30acbbe0ffbe4571383"
+  },
+  {
+    "file": "src/components/ui/collapsible.tsx",
+    "sha256": "a204a41111b93ca714e5e0a84e7ea09520f7783f2706bf00ecb2bcad5a0659fd"
+  },
+  {
+    "file": "src/components/ui/command.tsx",
+    "sha256": "a41daba29992c7b86062be9b4f3c73fb95bfd68580b1aa7ddeabe04a2f079509"
+  },
+  {
+    "file": "src/components/ui/context-menu.tsx",
+    "sha256": "dbbfcf7e0ed65010362f59cf58da7475f6b6e96c8f85657762d6de43644d7bdc"
+  },
+  {
+    "file": "src/components/ui/dialog.tsx",
+    "sha256": "d4ea8394e9b774f2386f93616b61834ce532172885ff1d6d177390295b363fbb"
+  },
+  {
+    "file": "src/components/ui/drawer.tsx",
+    "sha256": "9710f71dcf19d52d2e757ea2f364a03b4bd4546161f4bbebfdd8a829a382748a"
+  },
+  {
+    "file": "src/components/ui/dropdown-menu.tsx",
+    "sha256": "1c04c9a69cc649e77fb606365f31cc80c13035fb7c56b1eb414e294a92854fe3"
+  },
+  {
+    "file": "src/components/ui/form.tsx",
+    "sha256": "f334f27989a258ebe0435869083c72adcc6c472da52bd2c82253f2a90818630b"
+  },
+  {
+    "file": "src/components/ui/hover-card.tsx",
+    "sha256": "87816a8b7f1d716d6cd53164f30d0b7fe818e4de94371cddcf88cddf5e755326"
+  },
+  {
+    "file": "src/components/ui/input-otp.tsx",
+    "sha256": "2ee885a5810101b04bcf296775ba3607dd1b22a4ba03ea2a9bc9e809134b3f77"
+  },
+  {
+    "file": "src/components/ui/input.tsx",
+    "sha256": "28de1821f9b05b4b16e99f4757c68303fb187447354d6e894b3709a27de80f46"
+  },
+  {
+    "file": "src/components/ui/label.tsx",
+    "sha256": "ece819598d95360af8aedf36d90be41a93af49797240a6d6a69181180b095a76"
+  },
+  {
+    "file": "src/components/ui/menubar.tsx",
+    "sha256": "31a78787071e6c334594ec0d8f48c64e1b3618a2ba3b85c024f112c8e902abdb"
+  },
+  {
+    "file": "src/components/ui/navigation-menu.tsx",
+    "sha256": "71cf201e04c0eca840d481d0a101254a2eeab3291d95eb7f5a3e870ac3cbbc98"
+  },
+  {
+    "file": "src/components/ui/pagination.tsx",
+    "sha256": "7f9821730c7eea34c32da11aa82185d3db1d36f9d476fa9d5ae14765c35a6fc8"
+  },
+  {
+    "file": "src/components/ui/popover.tsx",
+    "sha256": "dea6d875c5390ac91e196220e5cf4413155c1031f9fe8572a99ae05dc7d133d6"
+  },
+  {
+    "file": "src/components/ui/progress.tsx",
+    "sha256": "e17e387ed1c2981e690b6ed4c2b0e470a683fcadd6d9a704d9a1de0f442f55ff"
+  },
+  {
+    "file": "src/components/ui/radio-group.tsx",
+    "sha256": "e67b5ffbd1727e873ca9b2593a7e798328b1d4ef20f507d8379aea3fe69abe93"
+  },
+  {
+    "file": "src/components/ui/resizable.tsx",
+    "sha256": "661b9c7746af0e15b19a82a3c7ff738572cfebfbe7aebd51fc9bc244aca18453"
+  },
+  {
+    "file": "src/components/ui/scroll-area.tsx",
+    "sha256": "5bbf2efc963f2a62d9f9d41fdf2a96f798ad409ee2a1fdb1fe51da947d882dc7"
+  },
+  {
+    "file": "src/components/ui/select.tsx",
+    "sha256": "8c3930799bbd080d6e2ebf8bcb3b26e48ef5602a46142e630eae53a54a6dd8c6"
+  },
+  {
+    "file": "src/components/ui/separator.tsx",
+    "sha256": "1e2f9c2eab409bf25614f4e0b495b9a67646e92a0a7d1a033afaada64fdb1b78"
+  },
+  {
+    "file": "src/components/ui/sheet.tsx",
+    "sha256": "2724802c7c9931e646291a89def1aecd451b5606e40168b7f7ac6d3ec6b5bc09"
+  },
+  {
+    "file": "src/components/ui/sidebar.tsx",
+    "sha256": "086e646d59328c97e3629a64ed8168b0dbe8e1bc5be7113d0b19a81566ece413"
+  },
+  {
+    "file": "src/components/ui/skeleton.tsx",
+    "sha256": "90badf0dcd440128b81554c06d56c4f01b1ccf03748ca3adf7e4a41d611acddd"
+  },
+  {
+    "file": "src/components/ui/slider.tsx",
+    "sha256": "234d9a3e9b62ce0266d580ce885d59b0b0648c6b833604a8fd7dd389ade95329"
+  },
+  {
+    "file": "src/components/ui/sonner.tsx",
+    "sha256": "09c79304c810c7b9158db73bd4a2261be4f1bf6a5be4d11b7dc2e0322acf04fe"
+  },
+  {
+    "file": "src/components/ui/switch.tsx",
+    "sha256": "9d3d144eb219caccadd9da0eab64f463f4f38fcc05f49f3d9b1438222ddce70f"
+  },
+  {
+    "file": "src/components/ui/table.tsx",
+    "sha256": "54bfa4489e6dc84dceb294b63023bb352c6c446c019c67230ce6f1dac76e3713"
+  },
+  {
+    "file": "src/components/ui/tabs.tsx",
+    "sha256": "cbcded04f856af28223e71674f1cf2c6b4e361a752d4d934f27117b3c990df96"
+  },
+  {
+    "file": "src/components/ui/textarea.tsx",
+    "sha256": "6941189547872c1442861178d1346f6720381cba435f780a011c951683e4c065"
+  },
+  {
+    "file": "src/components/ui/toast.tsx",
+    "sha256": "2da684420d53b7826485853a5f433bc794eb8a3fa3ca99db7cabb59974dfff38"
+  },
+  {
+    "file": "src/components/ui/toaster.tsx",
+    "sha256": "d336e69dc56f72df1da448f1f39eedddb3b7e0dd0e5a69ca5be8db7acb32b7e4"
+  },
+  {
+    "file": "src/components/ui/toggle-group.tsx",
+    "sha256": "fd6110ff2f0da54e118917a41567bcb41a5da68179c9157adb2bda80e79c48ce"
+  },
+  {
+    "file": "src/components/ui/toggle.tsx",
+    "sha256": "93d544ef6b0e881d8127d7486c0ea27f707e49276be212f58fcf558671b89a91"
+  },
+  {
+    "file": "src/components/ui/tooltip.tsx",
+    "sha256": "80ae1d2a8eca4705593a0964fa4928ccaba357887f6c4e6dee5203e9ff432d97"
+  },
+  {
+    "file": "src/components/ui/use-toast.ts",
+    "sha256": "3fbe3b856affdf39f3eb2a82c898b96d44560d93d05674ab2fd6105825ca78d1"
+  },
+  {
+    "file": "src/data/aiGuidePosts.ts",
+    "sha256": "8bb57686f422add9694720de88e272ff006a67d2e644c325ccd36c95c7526c15"
+  },
+  {
+    "file": "src/data/aiGuidePostsExtra.ts",
+    "sha256": "8549d0a774bbadbd13801a1902e35ed926de6b978d9bc676f35ac8b9f3e74877"
+  },
+  {
+    "file": "src/data/astonMartinHubContent.ts",
+    "sha256": "1d5bb6435c1c15c1b301a809d8c4e8c58e4944d1fdebada691969cf0045ce54d"
+  },
+  {
+    "file": "src/data/audiHubContent.ts",
+    "sha256": "ce0213d3bd3b1db6bf5788e6ff0e33d04941b1213a5c3304349f11e8f43a14f6"
+  },
+  {
+    "file": "src/data/audiModelPages.ts",
+    "sha256": "0b854d0f4dfd836168410ccbb31c16401b2538a32cb14bdd20523c3ecc261119"
+  },
+  {
+    "file": "src/data/bentleyHubContent.ts",
+    "sha256": "fcfd621a29f0be251df7f682787f6164a9e8e8986da300ef2adefdcd042923cd"
+  },
+  {
+    "file": "src/data/bestWorkshopPages.ts",
+    "sha256": "f6fedd5ebf5ec1bdcd25dbf595fd2127f1cc72c95b5c98e23fcfcef0d27d698c"
+  },
+  {
+    "file": "src/data/blogPosts.ts",
+    "sha256": "b3bcdbfbddb73ccdc0a6a903c9bf6b4afe69c24b74772129dd03f080506429c3"
+  },
+  {
+    "file": "src/data/bmwHubContent.ts",
+    "sha256": "e5b58255b835b081df085f3aca8940d0aabf84e233c790facca3933e584186da"
+  },
+  {
+    "file": "src/data/bmwModelPages.ts",
+    "sha256": "cb08449b74ee443c81e94bf3224ca18edd0416569a9c89dc1032f969ac5451cb"
+  },
+  {
+    "file": "src/data/brandServices.ts",
+    "sha256": "71127bcb9ca81e43aaff098e1b7969f8f031f5705ead636cf87de63c8a338c69"
+  },
+  {
+    "file": "src/data/brandWorkshopArticles.ts",
+    "sha256": "51fa42542992a074a95ba58dd9273baf79a042a047a3b9602084a15be8f6fda9"
+  },
+  {
+    "file": "src/data/brands.ts",
+    "sha256": "25f9b058ec5cbfb60dcca7f86955e51cd33e3b34c4d45e9ae9a7a0f6bcc01b03"
+  },
+  {
+    "file": "src/data/ceramicCoatingContent.ts",
+    "sha256": "f2010e3e1d3a4818fcfb76f3878a7654fbdc86b7f3c3284d512d4b50ddc2d46a"
+  },
+  {
+    "file": "src/data/electronicsServices.ts",
+    "sha256": "911a3dd89abbfb9bc4f45f2ee970bb8b790782eda6b8939fbc3bcbcbd3f97451"
+  },
+  {
+    "file": "src/data/extendedServiceContent.ts",
+    "sha256": "1f2f0e70184dee22cb10c7a8414ce813bf33821556e942a58c95eabcd69e8225"
+  },
+  {
+    "file": "src/data/ferrariCaseStudies.ts",
+    "sha256": "a42473e3e0f0fcc42948bfba1b8b92838988f7381539e4e05b3ad2e061861312"
+  },
+  {
+    "file": "src/data/ferrariHubContent.ts",
+    "sha256": "d4f4b92bb94ae209c7818f2dece7c4c8e34ad00ebb709bd54644dd4bb7e52c5f"
+  },
+  {
+    "file": "src/data/ferrariModelPages.ts",
+    "sha256": "9564ab1db592dea2d510dd5746cb2ad2d2f2ce7541fb4d15ba09cdd6b027004b"
+  },
+  {
+    "file": "src/data/lamborghiniHubContent.ts",
+    "sha256": "d5b87f41c9698e9d9590f3c22889f2ddc24540495a37be294ec80611d06ec3cc"
+  },
+  {
+    "file": "src/data/localGaragePages.ts",
+    "sha256": "60d9a4b38a8185fbf5fa2389818ab07d02fbd3bba0730f4861539263b1307ea4"
+  },
+  {
+    "file": "src/data/mclarenHubContent.ts",
+    "sha256": "22f73ab7fd1d1168714b22f3b71e07e71dfd78ad932fb17dc500a12244517368"
+  },
+  {
+    "file": "src/data/mercedesCaseStudies.ts",
+    "sha256": "7ecf25adba6ad50e351fc998eaefbb4d662a1567bf2da6f004093bde166535bd"
+  },
+  {
+    "file": "src/data/mercedesModelPages.ts",
+    "sha256": "bb5361260f006eb653dbf0f74660ea5d8a96544ae51484ee4e2681c356f38ce7"
+  },
+  {
+    "file": "src/data/mercedesProblemGuides.ts",
+    "sha256": "051e44df539889cbe620f86f6bc19617c12d0830bfb6f48c907bd44504712c85"
+  },
+  {
+    "file": "src/data/mercedesServiceContent.ts",
+    "sha256": "dc90d2242dcc2af73c03b0634974ae93d0cec2430486c8d95c7a1c616f984405"
+  },
+  {
+    "file": "src/data/mercedesServices.ts",
+    "sha256": "e47875965ee0bc476943a7679abed8b3058f584b9b758db51de1c4aff431078c"
+  },
+  {
+    "file": "src/data/oilChangeContent.ts",
+    "sha256": "c7e58a99cc8456123ae0f482d07242e97c7590bf6a2f2e0e275d920429fd8ce6"
+  },
+  {
+    "file": "src/data/paintCareProjects.ts",
+    "sha256": "d80861735b311707df0d30f5a03619a43bbbbd8f157797d75042a22ba7608501"
+  },
+  {
+    "file": "src/data/paintCorrectionContent.ts",
+    "sha256": "38dde5d144d1e6d916c91eaea4539364e0780c7f4f9739ad7fc54c4afe73f10c"
+  },
+  {
+    "file": "src/data/porscheArchitecture.ts",
+    "sha256": "70db50e4b6751ec1af2e013ca68608b6eb3a24c8140a570e1fbabb4b9e2bb632"
+  },
+  {
+    "file": "src/data/porscheCaseStudies.ts",
+    "sha256": "7a6db8fa4056cd3658bf9e37ef6b66d8a638a76ff9912a3db3605d1db53d7dda"
+  },
+  {
+    "file": "src/data/porscheModelPages.ts",
+    "sha256": "ef42ecfb3f4f17ca2d38e8ecbd78717f49b06cde473c004303aa025694359c88"
+  },
+  {
+    "file": "src/data/porscheOwnershipGuides.ts",
+    "sha256": "0b6968745ae528cb7f41f09b7ca9f653beebc833da9e70f506110cbbd8485d52"
+  },
+  {
+    "file": "src/data/porscheProblemGuides.ts",
+    "sha256": "3ef8b491279d2cf7809b03fe4f3c49c45eb1643e9c41251630890449f3f2b347"
+  },
+  {
+    "file": "src/data/porscheSystemGuides.ts",
+    "sha256": "8f7ce16f71a6ca94e9ee4e772dd535ddbbae56eccacac0a9a8f6c6812ee904d3"
+  },
+  {
+    "file": "src/data/ppfContent.ts",
+    "sha256": "ae728aab65897f467e9f5c214bae6dc898dc7aada7168ae235e424e9cbe094fa"
+  },
+  {
+    "file": "src/data/priorityBrandSeo.ts",
+    "sha256": "d4aa6bcd979ef9cd07644ba057697c3d0c98bba58d5db046b5b489fa2689cda5"
+  },
+  {
+    "file": "src/data/queryServiceContent.ts",
+    "sha256": "f8d6b5d2db96f31e32abc46ca5fd2726fa41bf57d540409922624274c3364bba"
+  },
+  {
+    "file": "src/data/rollsRoyceHubContent.ts",
+    "sha256": "ae51a0856d4f80bf7d33fbb05ae505f6f34d8a0f1790629d9b436eb42ec75be5"
+  },
+  {
+    "file": "src/data/roxHubContent.ts",
+    "sha256": "611e4c6e3141b0823bea0e3e39bcaff38c8557737baa4d4790741b17dfae9906"
+  },
+  {
+    "file": "src/data/services.ts",
+    "sha256": "5fe9a22cecc789864334934de2effbb32261e799510300e26a44f97f71ef004c"
+  },
+  {
+    "file": "src/data/suspensionContent.ts",
+    "sha256": "a77444e410f9be361d01b58440c7d25d876f5e2d53fd02d16b71fbd27ca68131"
+  },
+  {
+    "file": "src/data/transmissionContent.ts",
+    "sha256": "0fa6cc5ded8be1ec47a81188a9a8b5e411fac374d985506c3ca6875961420eca"
+  },
+  {
+    "file": "src/data/tuningCars.ts",
+    "sha256": "e487f6f7559261744f6746ffa6a1f48b46b2aaa5e1dda5968108547f680c7ba2"
+  },
+  {
+    "file": "src/entry-server.tsx",
+    "sha256": "49872783143d97bf5aabca91ed2ba711954b6943a709df7375934ea3d023a20e"
+  },
+  {
+    "file": "src/hooks/use-arabic-locale.ts",
+    "sha256": "583414a15275588c470c2fef950ef6c0bf97161c371659de450e12324894a782"
+  },
+  {
+    "file": "src/hooks/use-mobile.tsx",
+    "sha256": "d2377fbad5ad2bdf7fa896a68c36ac8bf4aa74a974b2061f77b41ae58d623001"
+  },
+  {
+    "file": "src/hooks/use-seo.ts",
+    "sha256": "0805d45f4cb20fad6f2f28e88ad0192f41e027e10022dd2cf7727ba41b6838d3"
+  },
+  {
+    "file": "src/hooks/use-toast.ts",
+    "sha256": "52580e80b7d8e7dfc0eee27f3bc8dfa209e32fe8dc96b8e3e79ed61666348dd7"
+  },
+  {
+    "file": "src/hooks/useAnimatedCounter.ts",
+    "sha256": "ab9dca270aa8ea62d2fa3874dc15a3eab7bce33e4938e79ddf36c74f90d70cb0"
+  },
+  {
+    "file": "src/i18n/ar-best-workshop.ts",
+    "sha256": "a35429c11e168fadd69e8750ad1ce52136d1b8ac6c695ed39badc7b3a01e8aad"
+  },
+  {
+    "file": "src/i18n/ar-blog.ts",
+    "sha256": "d338f858640eeeac578107f002c65e3f170115c2f8480500cc83111d3f3e3900"
+  },
+  {
+    "file": "src/i18n/ar-brands.ts",
+    "sha256": "329c7ca084234619286270e60332cd1ff908d0122865aac2b5d411be4de7012a"
+  },
+  {
+    "file": "src/i18n/ar-home.ts",
+    "sha256": "6c398d1d0d330eabe43dd97bee6226d46ca6386c4c6d60ecf6e65c5716969dce"
+  },
+  {
+    "file": "src/i18n/ar-services.ts",
+    "sha256": "96b01f21dac3f478ab0f7ccc17eb2a6cd807654b18d7dc5cf3cad7e0d48c9082"
+  },
+  {
+    "file": "src/i18n/ar-tuning.ts",
+    "sha256": "1649139535619aa78679257ef54e5792bdecd4f7e84c36b2e479101ac67f572c"
+  },
+  {
+    "file": "src/i18n/ar-vrx.ts",
+    "sha256": "34424a0f523dc3be9cb2d156c27fcebb9419f5e9d45657cb7a88acf9faf35349"
+  },
+  {
+    "file": "src/i18n/locale.ts",
+    "sha256": "2cf018f1c723c824cefdda09d580a33010c32cc6d41b408896182e75b98dc2d0"
+  },
+  {
+    "file": "src/i18n/mercedes-language.ts",
+    "sha256": "35a67196916e765d82ba89a795cacb153845472a5ca7aace1bcba3ab1af1f02f"
+  },
+  {
+    "file": "src/i18n/use-locale.ts",
+    "sha256": "d640bede81e214e74fb47bbb4045a360276fc1fb35e18c8f497a7be7ce057ddc"
+  },
+  {
+    "file": "src/index.css",
+    "sha256": "8a987e20ffa9c73d12e187584cb2488f48fff2708f3b5069b2d164091819ce87"
+  },
+  {
+    "file": "src/integrations/supabase/client.ts",
+    "sha256": "86273724e5c18f3b7cab5291c21027a90279182771e8ab418e22262b1a4ed647"
+  },
+  {
+    "file": "src/integrations/supabase/types.ts",
+    "sha256": "6854fb5b82907cfe0d83269402d373484eb0ec18fb23426aa19f096d29888b67"
+  },
+  {
+    "file": "src/lib/contact-attribution.ts",
+    "sha256": "2c281ea1c00771ae562d752e21838506155d4977b46a542439e39d51f857eb59"
+  },
+  {
+    "file": "src/lib/mcp/index.ts",
+    "sha256": "784119c0abce083fe94ec341438894332291920a65f7a469d49ee3b5c302870e"
+  },
+  {
+    "file": "src/lib/mcp/tools/build-booking-link.ts",
+    "sha256": "01078582c2b996dc8b586dedfa4c3efb100b0ff7ac52a392184a4c5505e74e0a"
+  },
+  {
+    "file": "src/lib/mcp/tools/get-contact-info.ts",
+    "sha256": "d13225adfedbc9151fc2896a8548e3eb64259e7b3d5bef068c1adc250ea0b92f"
+  },
+  {
+    "file": "src/lib/mcp/tools/list-brands.ts",
+    "sha256": "56e7290faa12dd2887c142bb6bce5b26f7925d44b19dbaffd4f90b7788f116a1"
+  },
+  {
+    "file": "src/lib/mcp/tools/list-services.ts",
+    "sha256": "d0e5f4924e40ae9c749eb7f743d014c2164874764ba465d182fea1425a159216"
+  },
+  {
+    "file": "src/lib/route-manifest.ts",
+    "sha256": "d0f65218848d248d8c5e42f336179cdc4b7fcd6bec94f9d0006a4ad87bf0d3fb"
+  },
+  {
+    "file": "src/lib/route-policy.ts",
+    "sha256": "36deaf9676db6bf693d69ba3c9780d4594cc16c2e4044b1d6e8ad80ead1e3bb0"
+  },
+  {
+    "file": "src/lib/schema.ts",
+    "sha256": "cdf1ce89f71930d06b285c4649c716c4bbc4bfbdbcec529f62af79d8f8f6d68d"
+  },
+  {
+    "file": "src/lib/utils.ts",
+    "sha256": "74a147991a119f1c4cdc25a4d9b22713632fa32eb136e55ab6939b006d71b9d6"
+  },
+  {
+    "file": "src/lib/verified-pricing.ts",
+    "sha256": "560cf295050a3e848b5a1399e3a8260d0a0f4d5552d3257028850b735fcf829e"
+  },
+  {
+    "file": "src/lib/whatsapp-tracking.ts",
+    "sha256": "94d2ab3b1129d5171f46beddbdd97def13db382d2bbe428687b7f4a844e1a0e4"
+  },
+  {
+    "file": "src/main.tsx",
+    "sha256": "a1115ddd9c2403e00427b0e81a2c6e915ebba4c9152693e51b19775f57180562"
+  },
+  {
+    "file": "src/pages/AboutUs.tsx",
+    "sha256": "adcc4849b4b216c6cc12f574c0ac8fc0c104b2ea80c38716cc1a0ba40f6a1b65"
+  },
+  {
+    "file": "src/pages/ArabicPage.tsx",
+    "sha256": "0fe5d629bbf73407d515bc7a1cf0e1743d4aa88468d85a98eb08ac283b137c91"
+  },
+  {
+    "file": "src/pages/AudiModelPage.tsx",
+    "sha256": "ab0187fec724272e6de4a4011dfc4dd5d3b261e609839b5b716c212ea1a9e02a"
+  },
+  {
+    "file": "src/pages/BestWorkshopPage.tsx",
+    "sha256": "ef365d2134c91d8ad99ecd40e9c167f4e879802b147e398c2e609745d438816f"
+  },
+  {
+    "file": "src/pages/Blog.tsx",
+    "sha256": "6e2cb37008422c616a8cfee761f19facf387ab373e1cae2e114c91bb10d3a310"
+  },
+  {
+    "file": "src/pages/BlogArticleRouter.tsx",
+    "sha256": "f9774ac6c3098a78764f3ce18a656da0b59d87aaf3fa7a1dcee6c54d2cbc4961"
+  },
+  {
+    "file": "src/pages/BlogPost.tsx",
+    "sha256": "ded9fffd7d1ac03d699a60ea414d8c325eb015091e81ee8ac52a53a07bdef199"
+  },
+  {
+    "file": "src/pages/BmwModelPage.tsx",
+    "sha256": "8b28e43c7c4f09a48999c650da493c4b68bacbab16a507db63ae2dedfd6535b4"
+  },
+  {
+    "file": "src/pages/BrandPage.tsx",
+    "sha256": "c6b8240665bea0849d2719d1c50c77e7cd78e68e87e6a8fbd75b8683b599efe8"
+  },
+  {
+    "file": "src/pages/BrandServicePage.tsx",
+    "sha256": "beb799544f1773626654a98f593cba816ef83f4d39454324633fdabe1aaabb3c"
+  },
+  {
+    "file": "src/pages/BrandWorkshopArticlePage.tsx",
+    "sha256": "aba7eef5ff62c02d607fbcac1c0d9f9b3723fd89e3e54b8c002d0a0d52d655b6"
+  },
+  {
+    "file": "src/pages/Brands.tsx",
+    "sha256": "d914c91cdd74936cef546092a54c3a69a246cf807da043ae50f899c1b0248439"
+  },
+  {
+    "file": "src/pages/CeramicCoatingPage.tsx",
+    "sha256": "fc912e8633ea4fde7f19504f199449daf3ebea802e174e2978bcdf97d6e53760"
+  },
+  {
+    "file": "src/pages/FAQPage.tsx",
+    "sha256": "31599d11079f27c0da78d4fb0925b96d59432651451242b9ebb571da71864b42"
+  },
+  {
+    "file": "src/pages/FerrariCaseStudyPage.tsx",
+    "sha256": "2eed1232422e653fd9037a8921d30064caf41c87294fff499ef4752b9a6fbb25"
+  },
+  {
+    "file": "src/pages/FerrariModelPage.tsx",
+    "sha256": "77b158e98d4e1fff0b72ab4d1b762a9ad562a8905bb6748e89a3cdb56055e733"
+  },
+  {
+    "file": "src/pages/Index.tsx",
+    "sha256": "3337e16c983054db0db0feae8979bad40db75555b41761370d1c0197bc697fc2"
+  },
+  {
+    "file": "src/pages/LocalGaragePage.tsx",
+    "sha256": "04bd4b6df4f35ab8fcfb59375ed7cb060b7a2e6b943714a7473d77eef7319aa8"
+  },
+  {
+    "file": "src/pages/MercedesCaseStudyPage.tsx",
+    "sha256": "15603b35fbbb3f117daa6b36a08c17b8cc967dfb497cd875972e0287c1cc0af7"
+  },
+  {
+    "file": "src/pages/MercedesModelPage.tsx",
+    "sha256": "5c9f44a7ca4f80985ffe08d783d504efff94c35c1d31e2365816ec2cd719e27c"
+  },
+  {
+    "file": "src/pages/MercedesProblemGuidePage.tsx",
+    "sha256": "bfaa6c3e14217c4e8889468a5b3b43e00f020473df49b35350892d46544d4b09"
+  },
+  {
+    "file": "src/pages/MercedesProblemsIndex.tsx",
+    "sha256": "333355e71edb261b5da138ba978075fa482dd85fed9fb123cb7dd7c4a78ed90e"
+  },
+  {
+    "file": "src/pages/NotFound.tsx",
+    "sha256": "309a542462f857c5afea352650dcdf15b93f0fe7ecff9c5bb1ff5f9dbf21dc7d"
+  },
+  {
+    "file": "src/pages/OilChangePage.tsx",
+    "sha256": "4fc44e458eb143cb5fea108c590732e8cae8ffeb33738c52ba4e181f47023300"
+  },
+  {
+    "file": "src/pages/PaintCorrectionPage.tsx",
+    "sha256": "63aa0c945e66a03265196b2ef25ff262152cb2a1fa8d6a7d6b66bb0d7513cfee"
+  },
+  {
+    "file": "src/pages/PorscheCaseStudyPage.tsx",
+    "sha256": "8f4d8e83a23e3ddc953bd3d5aefc8dd9a0ed37ab2adba4645855c6180a221334"
+  },
+  {
+    "file": "src/pages/PorscheGuidesIndex.tsx",
+    "sha256": "88537c369ee6419f9391a877569f1236de186306ba85c084cdbb0f52b280c68e"
+  },
+  {
+    "file": "src/pages/PorscheModelPage.tsx",
+    "sha256": "a0c8721eb84273e3224564607e81961a67191c634e1b3afb59c45994b53be288"
+  },
+  {
+    "file": "src/pages/PorscheOwnershipGuidePage.tsx",
+    "sha256": "433bccb5a8887ba96a10b410d9414a575aa8bcad549e92b91c0dc493bd9cab26"
+  },
+  {
+    "file": "src/pages/PorscheProblemGuidePage.tsx",
+    "sha256": "506836317a12fbc514e9baed137cb87d29fe720227f2530d8d9180b64b41dc2b"
+  },
+  {
+    "file": "src/pages/PorscheProblemsIndex.tsx",
+    "sha256": "80d2e08e0ad64371a745462325cf10f61d48ed5d355c296f78484a758e5bb0e3"
+  },
+  {
+    "file": "src/pages/PorscheSystemGuidePage.tsx",
+    "sha256": "43934c05c6e933d8be77f8aeb68ce041ec3dcceb0e36557d78f96558d712a9db"
+  },
+  {
+    "file": "src/pages/PorscheSystemsIndex.tsx",
+    "sha256": "00e1479146b09d72cc15a29d135813173cdf53f5cf08ad62a17bfff7d0dbdfcb"
+  },
+  {
+    "file": "src/pages/PpfPage.tsx",
+    "sha256": "569b3e4b12856045fa1f0fc4063f79a1152bb0b2e052aaeef2ceb16e65bbe65b"
+  },
+  {
+    "file": "src/pages/ServicePage.tsx",
+    "sha256": "a09caeb68ad56c917cc9e6bd2e54bd3b8ad7a4deeaf97854ca3d31b5ae841328"
+  },
+  {
+    "file": "src/pages/Services.tsx",
+    "sha256": "d0b09fdd4c4a4cee7b2dadee1f220e059af25638001cd892df5a10ddc44ceb21"
+  },
+  {
+    "file": "src/pages/SitemapPage.tsx",
+    "sha256": "62e85f19ad78ce8a9a07a8cc5e59185bf3c5b261b2aed13660b11e2f4e6391a2"
+  },
+  {
+    "file": "src/pages/SuspensionRepairPage.tsx",
+    "sha256": "bc6662d8ca7a2c8d78184d15d9ff51a402bca1b5ad8308266db4d09407fd3ef1"
+  },
+  {
+    "file": "src/pages/TransmissionPage.tsx",
+    "sha256": "76f5093ab99849dc162259309ab6a218c575088f10e27b1ac9f0e44fd9763a9e"
+  },
+  {
+    "file": "src/pages/Tuning.tsx",
+    "sha256": "d264a9ef668503814c5500d57d156cf7a6c115a533231fd48a9c17b145f53725"
+  },
+  {
+    "file": "src/pages/VRX.tsx",
+    "sha256": "d606b503297ed8bc705d8ffdf1b693e942bf69463f978c61968244ff0219ecaf"
+  },
+  {
+    "file": "src/styles/ceramic-coating.css",
+    "sha256": "4b249a16047c3824c608ac93b7682743a4d22f68df01f43cc94f2468ac7846bd"
+  },
+  {
+    "file": "src/styles/oil-change.css",
+    "sha256": "1c6e9ff13dfd9f7cbdb17f7401c43122a4fe5ae438d85291a581acc87a0cc7db"
+  },
+  {
+    "file": "src/styles/paint-correction.css",
+    "sha256": "fc2182673e75820257eb9c9861555bb89403f2daa3c6c17c8b971325d78dc805"
+  },
+  {
+    "file": "src/styles/ppf.css",
+    "sha256": "6a9a917a1ebc04674058e0421b736e46fa00ac2e3104a9107bb50c33a6d6d1dd"
+  },
+  {
+    "file": "src/styles/suspension.css",
+    "sha256": "d72e4d3a7046b84e5e2f040630b84cc3685cabc710891e202fb045e5f0c3a433"
+  },
+  {
+    "file": "src/styles/transmission.css",
+    "sha256": "4e503de7b81fb1ca4e5470c074df3fb78b3d5e3e88c515b13b5dc5a2a4144ee5"
+  },
+  {
+    "file": "src/vite-env.d.ts",
+    "sha256": "424faf9241dd699dda995b367ed36665732da1e6ec1f33b2fd40394488ecac92"
+  },
+  {
+    "file": "tailwind.config.ts",
+    "sha256": "1f28ebc603114f877f173cf992629ab48151286308298dac9f229699ed4f1cbe"
+  },
+  {
+    "file": "tsconfig.app.json",
+    "sha256": "2077b3d9b7fc32ece0ac422b015c978463362a22771f3daacd65444146361062"
+  },
+  {
+    "file": "tsconfig.json",
+    "sha256": "e1206dbf9927505806bc412730c1627f0688a10cb39b0dd642a0be6213b193f6"
+  },
+  {
+    "file": "tsconfig.node.json",
+    "sha256": "8dc2fd2a2ff7497afa9e29037a36bcddbfa7c89ea8ff3b7c62b2814b55995449"
+  },
+  {
+    "file": "vite.config.ts",
+    "sha256": "4021a6fca0b5342b5d6a513f42093bcd8c0b2704c9435c94480306def30297ae"
+  }
+]

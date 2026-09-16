@@ -1,0 +1,94 @@
+{
+  "startedAt": "2026-09-16T08:24:17.191Z",
+  "outputDirectory": "dist",
+  "sourceManifest": "release-qa.local/source-manifest.json",
+  "sourceSha256": "7cf75aad8fafea31a8964138a81be9ca7ddce881f86c4073762db190d941c7c4",
+  "steps": [
+    {
+      "command": "vite build",
+      "exitCode": 0,
+      "seconds": 5.059,
+      "log": "release-qa.local/build-1.log"
+    },
+    {
+      "command": "vite build --ssr src/entry-server.tsx --outDir dist-server",
+      "exitCode": 0,
+      "seconds": 1.532,
+      "log": "release-qa.local/build-2.log"
+    },
+    {
+      "command": "node scripts/prerender.mjs",
+      "exitCode": 0,
+      "seconds": 5.151,
+      "log": "release-qa.local/build-3.log"
+    },
+    {
+      "command": "node scripts/generate-hosting-rules.mjs",
+      "exitCode": 0,
+      "seconds": 0.366,
+      "log": "release-qa.local/build-4.log"
+    },
+    {
+      "command": "node scripts/test-hosting-rules.mjs",
+      "exitCode": 0,
+      "seconds": 0.146,
+      "log": "release-qa.local/build-5.log"
+    },
+    {
+      "command": "node scripts/validate-seo.mjs",
+      "exitCode": 0,
+      "seconds": 1.651,
+      "log": "release-qa.local/build-6.log"
+    },
+    {
+      "command": "node scripts/validate-ppf.mjs",
+      "exitCode": 0,
+      "seconds": 0.587,
+      "log": "release-qa.local/build-7.log"
+    },
+    {
+      "command": "node scripts/validate-paint-correction.mjs",
+      "exitCode": 0,
+      "seconds": 0.231,
+      "log": "release-qa.local/build-8.log"
+    },
+    {
+      "command": "node scripts/validate-protection-release.mjs",
+      "exitCode": 0,
+      "seconds": 0.255,
+      "log": "release-qa.local/build-9.log"
+    },
+    {
+      "command": "node scripts/validate-query-release.mjs",
+      "exitCode": 0,
+      "seconds": 1.015,
+      "log": "release-qa.local/build-10.log"
+    },
+    {
+      "command": "node scripts/test-contact-attribution.mjs",
+      "exitCode": 0,
+      "seconds": 0.333,
+      "log": "release-qa.local/build-11.log"
+    },
+    {
+      "command": "node scripts/validate-oil-change.mjs",
+      "exitCode": 0,
+      "seconds": 0.689,
+      "log": "release-qa.local/build-12.log"
+    },
+    {
+      "command": "node scripts/validate-suspension.mjs",
+      "exitCode": 0,
+      "seconds": 0.92,
+      "log": "release-qa.local/build-13.log"
+    },
+    {
+      "command": "node scripts/validate-transmission.mjs",
+      "exitCode": 0,
+      "seconds": 0.676,
+      "log": "release-qa.local/build-14.log"
+    }
+  ],
+  "passed": true,
+  "finishedAt": "2026-09-16T08:24:35.923Z"
+}

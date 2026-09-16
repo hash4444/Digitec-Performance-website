@@ -1,4 +1,5 @@
 import React from 'react';
+import { electronicsServices } from '@/data/electronicsServices';
 import { useParams, Navigate } from 'react-router-dom';
 import { useSeo } from '@/hooks/use-seo';
 import Header from '@/components/Header';
@@ -63,7 +64,8 @@ const ServicePage: React.FC<ServicePageProps> = ({ slugOverride, canonicalPath, 
 
   const externalRedirect = slug ? EXTERNAL_REDIRECTS[slug] : undefined;
   const newSlug = slug ? OLD_TO_NEW_SLUG[slug] : undefined;
-  const sourceService = slug && !newSlug && !externalRedirect ? getServiceBySlug(slug) : undefined;
+  const isElectronics = electronicsServices.some(item => item.slug === slug);
+  const sourceService = slug && !newSlug && !externalRedirect && !(isArabic && isElectronics) ? getServiceBySlug(slug) : undefined;
   const service = sourceService && isArabic ? localizeServiceToArabic(sourceService) : sourceService;
   const servicePath = service ? canonicalPath ?? `/services/${service.slug}` : undefined;
   const url = servicePath
@@ -119,14 +121,17 @@ const ServicePage: React.FC<ServicePageProps> = ({ slugOverride, canonicalPath, 
           }
         : {}),
     });
-    const faq = service.faqs && service.faqs.length > 0 ? buildFAQ(url, service.faqs) : null;
+    const faq = !isElectronics && service.faqs && service.faqs.length > 0 ? buildFAQ(url, service.faqs) : null;
     return pageGraph([webPage, breadcrumb, svc, ...(faq ? [faq] : [])]);
-  }, [service, brandPath, isArabic, url]);
+  }, [service, brandPath, isArabic, isElectronics, url]);
 
   useSeo({
     title: service?.metaTitle || (service ? `${service.seoKeyword} | DIGI-TEC Performance Center` : 'Service Not Found | DIGI-TEC'),
     description: service?.metaDescription || (service ? `${service.intro.slice(0, 155)}…` : ''),
     canonical: url,
+    hasArabicVersion: !isElectronics,
+    ogImage: isElectronics && service ? `https://digitecme.com${service.image}` : undefined,
+    ogImageAlt: service?.imageAlt,
     noindex: !service && !newSlug && !externalRedirect,
     jsonLd: serviceJsonLd,
   });
@@ -166,14 +171,20 @@ const ServicePage: React.FC<ServicePageProps> = ({ slugOverride, canonicalPath, 
 
   return (
     <div className="site-page min-h-screen bg-black text-off-white">
-      <Header />
+      <Header hasArabicVersion={!isElectronics} />
 
       {/* Hero */}
-      <section className="theme-dark-section relative flex min-h-[56vh] items-end overflow-hidden border-b border-white/[0.08] pb-14 sm:min-h-[62vh] sm:pb-20">
+      <main>
+      <section className="theme-dark-section relative flex min-h-[56vh] items-end overflow-hidden border-b border-white/[0.08] pb-14 pt-32 sm:min-h-[62vh] sm:pb-20 sm:pt-36">
         <div className="absolute inset-0">
           <img
             src={service.image}
-            alt={service.title}
+            srcSet={isElectronics ? '/images/paint-correction/workshop-floor-540.webp 540w, /images/paint-correction/workshop-floor-960.webp 960w' : undefined}
+            sizes={isElectronics ? '100vw' : undefined}
+            width={isElectronics ? 960 : undefined}
+            height={isElectronics ? 1280 : undefined}
+            alt={service.imageAlt ?? service.title}
+            fetchPriority="high"
             className="w-full h-full object-cover"
             onError={(e) => {
               e.currentTarget.src =
@@ -183,7 +194,7 @@ const ServicePage: React.FC<ServicePageProps> = ({ slugOverride, canonicalPath, 
           <div className="absolute inset-0 bg-gradient-to-t from-[#101113] via-black/65 to-black/20" />
         </div>
         <div className="relative z-10 mx-auto w-full max-w-[90rem] px-5 sm:px-8 lg:px-12">
-          <nav className="mb-6 flex items-center gap-2 text-xs text-white/48 sm:text-sm">
+          <nav aria-label="Breadcrumb" className="mb-6 flex flex-wrap items-center gap-2 text-xs text-white/48 sm:text-sm">
             <Link to="/" className="hover:text-burnt-orange transition-colors">{isArabic ? 'الرئيسية' : 'Home'}</Link>
             <ChevronRight className={`w-4 h-4 ${isArabic ? 'rotate-180' : ''}`} />
             <Link to={brandPath ?? '/services'} className="hover:text-burnt-orange transition-colors">{brandPath ? 'Mercedes-Benz' : isArabic ? 'الخدمات' : 'Services'}</Link>
@@ -323,7 +334,7 @@ const ServicePage: React.FC<ServicePageProps> = ({ slugOverride, canonicalPath, 
                         <AccordionTrigger className="text-left text-base sm:text-lg font-semibold hover:no-underline py-4">
                           {faq.question}
                         </AccordionTrigger>
-                        <AccordionContent className="text-gray-300 text-base leading-relaxed pb-5">
+                        <AccordionContent forceMount className="text-gray-300 text-base leading-relaxed pb-5">
                           {faq.answer}
                         </AccordionContent>
                       </AccordionItem>
@@ -548,7 +559,7 @@ const ServicePage: React.FC<ServicePageProps> = ({ slugOverride, canonicalPath, 
               {isArabic ? <>متخصصون في العلامات بمدينة <span className="text-burnt-orange">دبي</span></> : <>Brand Specialists in <span className="text-burnt-orange">Dubai</span></>}
             </h2>
             <p className="text-gray-400 text-sm sm:text-base">
-              {isArabic ? `نقدم ${service?.title ?? 'هذه الخدمة'} للعلامات التالية.` : `Every ${service?.title.toLowerCase() ?? 'service'} we perform is available for the marques below.`}
+              {isArabic ? `نقدم ${service?.title ?? 'هذه الخدمة'} للعلامات التالية.` : 'Explore our brand service pages. Coverage for a particular repair or upgrade is confirmed for the exact vehicle and fitted equipment.'}
             </p>
           </div>
           <div className="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-7 gap-3">
@@ -572,6 +583,7 @@ const ServicePage: React.FC<ServicePageProps> = ({ slugOverride, canonicalPath, 
       </section>
 
       <FinalCTA title={service.ctaLabel ? service.title : undefined} label={enquiryLabel} href={enquiryHref} />
+      </main>
       <Footer />
     </div>
   );

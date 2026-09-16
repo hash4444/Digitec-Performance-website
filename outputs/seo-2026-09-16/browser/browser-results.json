@@ -1,0 +1,827 @@
+{
+  "passed": true,
+  "testedAt": "2026-09-16T08:24:51.473Z",
+  "base": "http://127.0.0.1:5190",
+  "browser": "Headless Microsoft Edge",
+  "pageChecks": [
+    {
+      "route": "/brands/bmw-service-dubai",
+      "viewport": "desktop",
+      "dimensions": "1440x1000",
+      "title": "BMW Service & Repair Dubai | DIGI-TEC",
+      "canonical": "https://digitecme.com/brands/bmw-service-dubai",
+      "h1": "BMW Service & Repair Dubai",
+      "trackedWhatsAppLinks": 4,
+      "graphNodes": 10,
+      "overflow": 0,
+      "images": [
+        {
+          "src": "http://127.0.0.1:5190/images/digitec-d-mark.png",
+          "alt": "",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:5190/brand-logos/showcase/bmw.png",
+          "alt": "BMW logo",
+          "loaded": true
+        }
+      ]
+    },
+    {
+      "route": "/brands/rolls-royce-service-dubai",
+      "viewport": "desktop",
+      "dimensions": "1440x1000",
+      "title": "Rolls-Royce Service & Repair Dubai | DIGI-TEC",
+      "canonical": "https://digitecme.com/brands/rolls-royce-service-dubai",
+      "h1": "Rolls-Royce Service & Repair Dubai",
+      "trackedWhatsAppLinks": 6,
+      "graphNodes": 10,
+      "overflow": 0,
+      "images": [
+        {
+          "src": "http://127.0.0.1:5190/images/digitec-d-mark.png",
+          "alt": "",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:5190/brand-logos/showcase/rolls-royce.png",
+          "alt": "Rolls-Royce logo",
+          "loaded": true
+        }
+      ]
+    },
+    {
+      "route": "/brands/aston-martin-service-dubai",
+      "viewport": "desktop",
+      "dimensions": "1440x1000",
+      "title": "Aston Martin Service & Repair Dubai | DIGI-TEC",
+      "canonical": "https://digitecme.com/brands/aston-martin-service-dubai",
+      "h1": "Aston Martin Service & Repair Dubai",
+      "trackedWhatsAppLinks": 3,
+      "graphNodes": 10,
+      "overflow": 0,
+      "images": [
+        {
+          "src": "http://127.0.0.1:5190/images/digitec-d-mark.png",
+          "alt": "",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:5190/images/aston-martin-service-dubai-hero.jpg",
+          "alt": "Aston Martin Vantage undergoing inspection at Digi-Tec workshop in Dubai",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:5190/brand-logos/showcase/aston-martin.png",
+          "alt": "Aston Martin logo",
+          "loaded": true
+        }
+      ]
+    },
+    {
+      "route": "/brands/bentley-service-dubai",
+      "viewport": "desktop",
+      "dimensions": "1440x1000",
+      "title": "Bentley Service & Repair Dubai | DIGI-TEC",
+      "canonical": "https://digitecme.com/brands/bentley-service-dubai",
+      "h1": "Bentley Service & Repair Dubai",
+      "trackedWhatsAppLinks": 6,
+      "graphNodes": 10,
+      "overflow": 0,
+      "images": [
+        {
+          "src": "http://127.0.0.1:5190/images/digitec-d-mark.png",
+          "alt": "",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:5190/images/bentley-service-dubai-hero.jpg",
+          "alt": "Bentley Flying Spur inside the Digi-Tec specialist workshop in Dubai",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:5190/brand-logos/showcase/bentley.png",
+          "alt": "Bentley logo",
+          "loaded": true
+        }
+      ]
+    },
+    {
+      "route": "/services/paint-protection-film",
+      "viewport": "desktop",
+      "dimensions": "1440x1000",
+      "title": "PPF Dubai | Paint Protection Film for Cars | DIGI-TEC",
+      "canonical": "https://digitecme.com/services/paint-protection-film",
+      "h1": "Paint Protection Film (PPF) Dubai",
+      "trackedWhatsAppLinks": 5,
+      "graphNodes": 8,
+      "overflow": 0,
+      "images": [
+        {
+          "src": "http://127.0.0.1:5190/images/digitec-d-mark.png",
+          "alt": "",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:5190/images/ppf/film-application-1200.webp",
+          "alt": "Transparent film being smoothed over a white Porsche bonnet",
+          "loaded": true
+        }
+      ]
+    },
+    {
+      "route": "/services/ceramic-coating",
+      "viewport": "desktop",
+      "dimensions": "1440x1000",
+      "title": "Ceramic Coating Dubai | Car Paint Protection | DIGI-TEC",
+      "canonical": "https://digitecme.com/services/ceramic-coating",
+      "h1": "Ceramic Coating Dubai",
+      "trackedWhatsAppLinks": 8,
+      "graphNodes": 8,
+      "overflow": 0,
+      "images": [
+        {
+          "src": "http://127.0.0.1:5190/images/digitec-d-mark.png",
+          "alt": "",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:5190/images/ceramic-coating/black-mercedes-finish-1024.webp",
+          "alt": "Black Mercedes-Benz G-Class with ceiling lights reflected across its bonnet and bodywork",
+          "loaded": true
+        }
+      ]
+    },
+    {
+      "route": "/services/cadillac-cue-screen-repair-dubai",
+      "viewport": "desktop",
+      "dimensions": "1440x1000",
+      "title": "Cadillac CUE Screen Repair & Replacement Dubai | DIGI-TEC",
+      "canonical": "https://digitecme.com/services/cadillac-cue-screen-repair-dubai",
+      "h1": "Cadillac CUE Screen Repair & Replacement in Dubai",
+      "trackedWhatsAppLinks": 4,
+      "graphNodes": 8,
+      "overflow": 0,
+      "images": [
+        {
+          "src": "http://127.0.0.1:5190/images/digitec-d-mark.png",
+          "alt": "",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:5190/images/paint-correction/workshop-floor-960.webp",
+          "alt": "DIGI-TEC Performance Center workshop in Dubai",
+          "loaded": true
+        }
+      ]
+    },
+    {
+      "route": "/services/auto-electrical-repair-dubai",
+      "viewport": "desktop",
+      "dimensions": "1440x1000",
+      "title": "Car Electrical Repair Dubai | Wiring & Diagnostics | DIGI-TEC",
+      "canonical": "https://digitecme.com/services/auto-electrical-repair-dubai",
+      "h1": "Car Electrical Repair in Dubai",
+      "trackedWhatsAppLinks": 4,
+      "graphNodes": 9,
+      "overflow": 0,
+      "images": [
+        {
+          "src": "http://127.0.0.1:5190/images/digitec-d-mark.png",
+          "alt": "",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:5190/lovable-uploads/9f435c28-2f08-437b-99ad-2252d8ea2071.png",
+          "alt": "Car Electrical Repair in Dubai",
+          "loaded": true
+        }
+      ]
+    },
+    {
+      "route": "/services/head-unit-repair-dubai",
+      "viewport": "desktop",
+      "dimensions": "1440x1000",
+      "title": "Head Unit & Mercedes COMAND Repair Dubai | DIGI-TEC",
+      "canonical": "https://digitecme.com/services/head-unit-repair-dubai",
+      "h1": "Head Unit & Mercedes COMAND Repair in Dubai",
+      "trackedWhatsAppLinks": 4,
+      "graphNodes": 8,
+      "overflow": 0,
+      "images": [
+        {
+          "src": "http://127.0.0.1:5190/images/digitec-d-mark.png",
+          "alt": "",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:5190/images/paint-correction/workshop-floor-960.webp",
+          "alt": "DIGI-TEC Performance Center workshop in Dubai",
+          "loaded": true
+        }
+      ]
+    },
+    {
+      "route": "/services/mercedes-audio-upgrade-dubai",
+      "viewport": "desktop",
+      "dimensions": "1440x1000",
+      "title": "Mercedes Stereo & Audio Upgrade Dubai | DIGI-TEC",
+      "canonical": "https://digitecme.com/services/mercedes-audio-upgrade-dubai",
+      "h1": "Mercedes Stereo & Audio Upgrades in Dubai",
+      "trackedWhatsAppLinks": 4,
+      "graphNodes": 8,
+      "overflow": 0,
+      "images": [
+        {
+          "src": "http://127.0.0.1:5190/images/digitec-d-mark.png",
+          "alt": "",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:5190/images/paint-correction/workshop-floor-960.webp",
+          "alt": "DIGI-TEC Performance Center workshop in Dubai",
+          "loaded": true
+        }
+      ]
+    },
+    {
+      "route": "/brands/bentley-service-dubai/electrical-repair",
+      "viewport": "desktop",
+      "dimensions": "1440x1000",
+      "title": "Bentley Electrical Repair Dubai | Digi-Tec",
+      "canonical": "https://digitecme.com/brands/bentley-service-dubai/electrical-repair",
+      "h1": "Bentley Electrical Repair Dubai",
+      "trackedWhatsAppLinks": 3,
+      "graphNodes": 10,
+      "overflow": 0,
+      "images": [
+        {
+          "src": "http://127.0.0.1:5190/images/digitec-d-mark.png",
+          "alt": "",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:5190/brand-logos/showcase/bentley.png",
+          "alt": "Bentley logo",
+          "loaded": true
+        }
+      ]
+    },
+    {
+      "route": "/services/tire-repair-dubai",
+      "viewport": "desktop",
+      "dimensions": "1440x1000",
+      "title": "Tyre Repair Dubai | Puncture Checks & Replacement | DIGI-TEC",
+      "canonical": "https://digitecme.com/services/tire-repair-dubai",
+      "h1": "Tyre Repair Dubai",
+      "trackedWhatsAppLinks": 4,
+      "graphNodes": 9,
+      "overflow": 0,
+      "images": [
+        {
+          "src": "http://127.0.0.1:5190/images/digitec-d-mark.png",
+          "alt": "",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:5190/assets/tire-repair-DRcZ2QmZ.jpg",
+          "alt": "Tyre Repair Dubai",
+          "loaded": true
+        }
+      ]
+    },
+    {
+      "route": "/brands/bmw-service-dubai",
+      "viewport": "mobile",
+      "dimensions": "390x844",
+      "title": "BMW Service & Repair Dubai | DIGI-TEC",
+      "canonical": "https://digitecme.com/brands/bmw-service-dubai",
+      "h1": "BMW Service & Repair Dubai",
+      "trackedWhatsAppLinks": 4,
+      "graphNodes": 10,
+      "overflow": 0,
+      "images": [
+        {
+          "src": "http://127.0.0.1:5190/images/digitec-d-mark.png",
+          "alt": "",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:5190/brand-logos/showcase/bmw.png",
+          "alt": "BMW logo",
+          "loaded": true
+        }
+      ]
+    },
+    {
+      "route": "/brands/rolls-royce-service-dubai",
+      "viewport": "mobile",
+      "dimensions": "390x844",
+      "title": "Rolls-Royce Service & Repair Dubai | DIGI-TEC",
+      "canonical": "https://digitecme.com/brands/rolls-royce-service-dubai",
+      "h1": "Rolls-Royce Service & Repair Dubai",
+      "trackedWhatsAppLinks": 6,
+      "graphNodes": 10,
+      "overflow": 0,
+      "images": [
+        {
+          "src": "http://127.0.0.1:5190/images/digitec-d-mark.png",
+          "alt": "",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:5190/brand-logos/showcase/rolls-royce.png",
+          "alt": "Rolls-Royce logo",
+          "loaded": true
+        }
+      ]
+    },
+    {
+      "route": "/brands/aston-martin-service-dubai",
+      "viewport": "mobile",
+      "dimensions": "390x844",
+      "title": "Aston Martin Service & Repair Dubai | DIGI-TEC",
+      "canonical": "https://digitecme.com/brands/aston-martin-service-dubai",
+      "h1": "Aston Martin Service & Repair Dubai",
+      "trackedWhatsAppLinks": 3,
+      "graphNodes": 10,
+      "overflow": 0,
+      "images": [
+        {
+          "src": "http://127.0.0.1:5190/images/digitec-d-mark.png",
+          "alt": "",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:5190/images/aston-martin-service-dubai-hero.jpg",
+          "alt": "Aston Martin Vantage undergoing inspection at Digi-Tec workshop in Dubai",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:5190/brand-logos/showcase/aston-martin.png",
+          "alt": "Aston Martin logo",
+          "loaded": true
+        }
+      ]
+    },
+    {
+      "route": "/brands/bentley-service-dubai",
+      "viewport": "mobile",
+      "dimensions": "390x844",
+      "title": "Bentley Service & Repair Dubai | DIGI-TEC",
+      "canonical": "https://digitecme.com/brands/bentley-service-dubai",
+      "h1": "Bentley Service & Repair Dubai",
+      "trackedWhatsAppLinks": 6,
+      "graphNodes": 10,
+      "overflow": 0,
+      "images": [
+        {
+          "src": "http://127.0.0.1:5190/images/digitec-d-mark.png",
+          "alt": "",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:5190/images/bentley-service-dubai-hero.jpg",
+          "alt": "Bentley Flying Spur inside the Digi-Tec specialist workshop in Dubai",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:5190/brand-logos/showcase/bentley.png",
+          "alt": "Bentley logo",
+          "loaded": true
+        }
+      ]
+    },
+    {
+      "route": "/services/paint-protection-film",
+      "viewport": "mobile",
+      "dimensions": "390x844",
+      "title": "PPF Dubai | Paint Protection Film for Cars | DIGI-TEC",
+      "canonical": "https://digitecme.com/services/paint-protection-film",
+      "h1": "Paint Protection Film (PPF) Dubai",
+      "trackedWhatsAppLinks": 5,
+      "graphNodes": 8,
+      "overflow": 0,
+      "images": [
+        {
+          "src": "http://127.0.0.1:5190/images/digitec-d-mark.png",
+          "alt": "",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:5190/images/ppf/film-application-640.webp",
+          "alt": "Transparent film being smoothed over a white Porsche bonnet",
+          "loaded": true
+        }
+      ]
+    },
+    {
+      "route": "/services/ceramic-coating",
+      "viewport": "mobile",
+      "dimensions": "390x844",
+      "title": "Ceramic Coating Dubai | Car Paint Protection | DIGI-TEC",
+      "canonical": "https://digitecme.com/services/ceramic-coating",
+      "h1": "Ceramic Coating Dubai",
+      "trackedWhatsAppLinks": 8,
+      "graphNodes": 8,
+      "overflow": 0,
+      "images": [
+        {
+          "src": "http://127.0.0.1:5190/images/digitec-d-mark.png",
+          "alt": "",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:5190/images/ceramic-coating/black-mercedes-finish-640.webp",
+          "alt": "Black Mercedes-Benz G-Class with ceiling lights reflected across its bonnet and bodywork",
+          "loaded": true
+        }
+      ]
+    },
+    {
+      "route": "/services/cadillac-cue-screen-repair-dubai",
+      "viewport": "mobile",
+      "dimensions": "390x844",
+      "title": "Cadillac CUE Screen Repair & Replacement Dubai | DIGI-TEC",
+      "canonical": "https://digitecme.com/services/cadillac-cue-screen-repair-dubai",
+      "h1": "Cadillac CUE Screen Repair & Replacement in Dubai",
+      "trackedWhatsAppLinks": 4,
+      "graphNodes": 8,
+      "overflow": 0,
+      "images": [
+        {
+          "src": "http://127.0.0.1:5190/images/digitec-d-mark.png",
+          "alt": "",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:5190/images/paint-correction/workshop-floor-540.webp",
+          "alt": "DIGI-TEC Performance Center workshop in Dubai",
+          "loaded": true
+        }
+      ]
+    },
+    {
+      "route": "/services/auto-electrical-repair-dubai",
+      "viewport": "mobile",
+      "dimensions": "390x844",
+      "title": "Car Electrical Repair Dubai | Wiring & Diagnostics | DIGI-TEC",
+      "canonical": "https://digitecme.com/services/auto-electrical-repair-dubai",
+      "h1": "Car Electrical Repair in Dubai",
+      "trackedWhatsAppLinks": 4,
+      "graphNodes": 9,
+      "overflow": 0,
+      "images": [
+        {
+          "src": "http://127.0.0.1:5190/images/digitec-d-mark.png",
+          "alt": "",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:5190/lovable-uploads/9f435c28-2f08-437b-99ad-2252d8ea2071.png",
+          "alt": "Car Electrical Repair in Dubai",
+          "loaded": true
+        }
+      ]
+    },
+    {
+      "route": "/services/head-unit-repair-dubai",
+      "viewport": "mobile",
+      "dimensions": "390x844",
+      "title": "Head Unit & Mercedes COMAND Repair Dubai | DIGI-TEC",
+      "canonical": "https://digitecme.com/services/head-unit-repair-dubai",
+      "h1": "Head Unit & Mercedes COMAND Repair in Dubai",
+      "trackedWhatsAppLinks": 4,
+      "graphNodes": 8,
+      "overflow": 0,
+      "images": [
+        {
+          "src": "http://127.0.0.1:5190/images/digitec-d-mark.png",
+          "alt": "",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:5190/images/paint-correction/workshop-floor-540.webp",
+          "alt": "DIGI-TEC Performance Center workshop in Dubai",
+          "loaded": true
+        }
+      ]
+    },
+    {
+      "route": "/services/mercedes-audio-upgrade-dubai",
+      "viewport": "mobile",
+      "dimensions": "390x844",
+      "title": "Mercedes Stereo & Audio Upgrade Dubai | DIGI-TEC",
+      "canonical": "https://digitecme.com/services/mercedes-audio-upgrade-dubai",
+      "h1": "Mercedes Stereo & Audio Upgrades in Dubai",
+      "trackedWhatsAppLinks": 4,
+      "graphNodes": 8,
+      "overflow": 0,
+      "images": [
+        {
+          "src": "http://127.0.0.1:5190/images/digitec-d-mark.png",
+          "alt": "",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:5190/images/paint-correction/workshop-floor-540.webp",
+          "alt": "DIGI-TEC Performance Center workshop in Dubai",
+          "loaded": true
+        }
+      ]
+    },
+    {
+      "route": "/brands/bentley-service-dubai/electrical-repair",
+      "viewport": "mobile",
+      "dimensions": "390x844",
+      "title": "Bentley Electrical Repair Dubai | Digi-Tec",
+      "canonical": "https://digitecme.com/brands/bentley-service-dubai/electrical-repair",
+      "h1": "Bentley Electrical Repair Dubai",
+      "trackedWhatsAppLinks": 3,
+      "graphNodes": 10,
+      "overflow": 0,
+      "images": [
+        {
+          "src": "http://127.0.0.1:5190/images/digitec-d-mark.png",
+          "alt": "",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:5190/brand-logos/showcase/bentley.png",
+          "alt": "Bentley logo",
+          "loaded": true
+        }
+      ]
+    },
+    {
+      "route": "/services/tire-repair-dubai",
+      "viewport": "mobile",
+      "dimensions": "390x844",
+      "title": "Tyre Repair Dubai | Puncture Checks & Replacement | DIGI-TEC",
+      "canonical": "https://digitecme.com/services/tire-repair-dubai",
+      "h1": "Tyre Repair Dubai",
+      "trackedWhatsAppLinks": 4,
+      "graphNodes": 9,
+      "overflow": 0,
+      "images": [
+        {
+          "src": "http://127.0.0.1:5190/images/digitec-d-mark.png",
+          "alt": "",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:5190/assets/tire-repair-DRcZ2QmZ.jpg",
+          "alt": "Tyre Repair Dubai",
+          "loaded": true
+        }
+      ]
+    },
+    {
+      "route": "/services/cadillac-cue-screen-repair-dubai",
+      "viewport": "narrow",
+      "dimensions": "320x844",
+      "title": "Cadillac CUE Screen Repair & Replacement Dubai | DIGI-TEC",
+      "canonical": "https://digitecme.com/services/cadillac-cue-screen-repair-dubai",
+      "h1": "Cadillac CUE Screen Repair & Replacement in Dubai",
+      "trackedWhatsAppLinks": 4,
+      "graphNodes": 8,
+      "overflow": 0,
+      "images": [
+        {
+          "src": "http://127.0.0.1:5190/images/digitec-d-mark.png",
+          "alt": "",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:5190/images/paint-correction/workshop-floor-540.webp",
+          "alt": "DIGI-TEC Performance Center workshop in Dubai",
+          "loaded": true
+        }
+      ]
+    },
+    {
+      "route": "/services/head-unit-repair-dubai",
+      "viewport": "narrow",
+      "dimensions": "320x844",
+      "title": "Head Unit & Mercedes COMAND Repair Dubai | DIGI-TEC",
+      "canonical": "https://digitecme.com/services/head-unit-repair-dubai",
+      "h1": "Head Unit & Mercedes COMAND Repair in Dubai",
+      "trackedWhatsAppLinks": 4,
+      "graphNodes": 8,
+      "overflow": 0,
+      "images": [
+        {
+          "src": "http://127.0.0.1:5190/images/digitec-d-mark.png",
+          "alt": "",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:5190/images/paint-correction/workshop-floor-540.webp",
+          "alt": "DIGI-TEC Performance Center workshop in Dubai",
+          "loaded": true
+        }
+      ]
+    },
+    {
+      "route": "/services/mercedes-audio-upgrade-dubai",
+      "viewport": "narrow",
+      "dimensions": "320x844",
+      "title": "Mercedes Stereo & Audio Upgrade Dubai | DIGI-TEC",
+      "canonical": "https://digitecme.com/services/mercedes-audio-upgrade-dubai",
+      "h1": "Mercedes Stereo & Audio Upgrades in Dubai",
+      "trackedWhatsAppLinks": 4,
+      "graphNodes": 8,
+      "overflow": 0,
+      "images": [
+        {
+          "src": "http://127.0.0.1:5190/images/digitec-d-mark.png",
+          "alt": "",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:5190/images/paint-correction/workshop-floor-540.webp",
+          "alt": "DIGI-TEC Performance Center workshop in Dubai",
+          "loaded": true
+        }
+      ]
+    }
+  ],
+  "interactions": [
+    {
+      "route": "/services/paint-protection-film",
+      "viewport": "desktop",
+      "check": "#ppf-care rendered without horizontal overflow",
+      "overflow": 0,
+      "images": [
+        {
+          "src": "http://127.0.0.1:5190/images/digitec-d-mark.png",
+          "alt": "",
+          "loaded": true
+        }
+      ]
+    },
+    {
+      "route": "/services/cadillac-cue-screen-repair-dubai",
+      "viewport": "desktop",
+      "check": "FAQ expands by click with visible labelled answer and collapses by keyboard Enter"
+    },
+    {
+      "route": "/services/head-unit-repair-dubai",
+      "viewport": "desktop",
+      "check": "FAQ expands by click with visible labelled answer and collapses by keyboard Enter"
+    },
+    {
+      "route": "/services/mercedes-audio-upgrade-dubai",
+      "viewport": "desktop",
+      "check": "FAQ expands by click with visible labelled answer and collapses by keyboard Enter"
+    },
+    {
+      "route": "/brands/bentley-service-dubai/electrical-repair",
+      "viewport": "desktop",
+      "check": "#reverse-camera rendered without horizontal overflow",
+      "overflow": 0,
+      "images": [
+        {
+          "src": "http://127.0.0.1:5190/images/digitec-d-mark.png",
+          "alt": "",
+          "loaded": true
+        }
+      ]
+    },
+    {
+      "route": "/brands/bentley-service-dubai/electrical-repair",
+      "viewport": "desktop",
+      "check": "All three camera details expand and collapse"
+    },
+    {
+      "route": "/services/paint-protection-film",
+      "viewport": "mobile",
+      "check": "#ppf-care rendered without horizontal overflow",
+      "overflow": 0,
+      "images": [
+        {
+          "src": "http://127.0.0.1:5190/images/digitec-d-mark.png",
+          "alt": "",
+          "loaded": true
+        }
+      ]
+    },
+    {
+      "route": "/services/cadillac-cue-screen-repair-dubai",
+      "viewport": "mobile",
+      "check": "FAQ expands by click with visible labelled answer and collapses by keyboard Enter"
+    },
+    {
+      "route": "/services/head-unit-repair-dubai",
+      "viewport": "mobile",
+      "check": "FAQ expands by click with visible labelled answer and collapses by keyboard Enter"
+    },
+    {
+      "route": "/services/mercedes-audio-upgrade-dubai",
+      "viewport": "mobile",
+      "check": "FAQ expands by click with visible labelled answer and collapses by keyboard Enter"
+    },
+    {
+      "route": "/brands/bentley-service-dubai/electrical-repair",
+      "viewport": "mobile",
+      "check": "#reverse-camera rendered without horizontal overflow",
+      "overflow": 0,
+      "images": [
+        {
+          "src": "http://127.0.0.1:5190/images/digitec-d-mark.png",
+          "alt": "",
+          "loaded": true
+        }
+      ]
+    },
+    {
+      "route": "/brands/bentley-service-dubai/electrical-repair",
+      "viewport": "mobile",
+      "check": "All three camera details expand and collapse"
+    },
+    {
+      "route": "/services/cadillac-cue-screen-repair-dubai",
+      "viewport": "narrow",
+      "check": "FAQ expands by click with visible labelled answer and collapses by keyboard Enter"
+    },
+    {
+      "route": "/services/head-unit-repair-dubai",
+      "viewport": "narrow",
+      "check": "FAQ expands by click with visible labelled answer and collapses by keyboard Enter"
+    },
+    {
+      "route": "/services/mercedes-audio-upgrade-dubai",
+      "viewport": "narrow",
+      "check": "FAQ expands by click with visible labelled answer and collapses by keyboard Enter"
+    },
+    {
+      "route": "/brands/bentley-service-dubai/electrical-repair#reverse-camera",
+      "viewport": "desktop",
+      "check": "Hub SPA link reveals camera section in viewport"
+    },
+    {
+      "route": "/brands/bentley-service-dubai/electrical-repair#reverse-camera",
+      "viewport": "mobile",
+      "check": "Hub SPA link reveals camera section in viewport"
+    }
+  ],
+  "screenshots": [
+    "outputs/seo-2026-09-16/browser/bmw-desktop-hero.png",
+    "outputs/seo-2026-09-16/browser/rolls-royce-desktop-hero.png",
+    "outputs/seo-2026-09-16/browser/aston-martin-desktop-hero.png",
+    "outputs/seo-2026-09-16/browser/bentley-desktop-hero.png",
+    "outputs/seo-2026-09-16/browser/ppf-desktop-section.png",
+    "outputs/seo-2026-09-16/browser/cue-desktop-hero.png",
+    "outputs/seo-2026-09-16/browser/cue-desktop-faq-open.png",
+    "outputs/seo-2026-09-16/browser/head-unit-desktop-hero.png",
+    "outputs/seo-2026-09-16/browser/head-unit-desktop-faq-open.png",
+    "outputs/seo-2026-09-16/browser/mercedes-audio-desktop-hero.png",
+    "outputs/seo-2026-09-16/browser/mercedes-audio-desktop-faq-open.png",
+    "outputs/seo-2026-09-16/browser/bentley-camera-desktop-section.png",
+    "outputs/seo-2026-09-16/browser/bmw-mobile-hero.png",
+    "outputs/seo-2026-09-16/browser/rolls-royce-mobile-hero.png",
+    "outputs/seo-2026-09-16/browser/aston-martin-mobile-hero.png",
+    "outputs/seo-2026-09-16/browser/bentley-mobile-hero.png",
+    "outputs/seo-2026-09-16/browser/ppf-mobile-section.png",
+    "outputs/seo-2026-09-16/browser/cue-mobile-hero.png",
+    "outputs/seo-2026-09-16/browser/cue-mobile-faq-open.png",
+    "outputs/seo-2026-09-16/browser/head-unit-mobile-hero.png",
+    "outputs/seo-2026-09-16/browser/head-unit-mobile-faq-open.png",
+    "outputs/seo-2026-09-16/browser/mercedes-audio-mobile-hero.png",
+    "outputs/seo-2026-09-16/browser/mercedes-audio-mobile-faq-open.png",
+    "outputs/seo-2026-09-16/browser/bentley-camera-mobile-section.png",
+    "outputs/seo-2026-09-16/browser/cue-narrow-hero.png",
+    "outputs/seo-2026-09-16/browser/head-unit-narrow-hero.png",
+    "outputs/seo-2026-09-16/browser/mercedes-audio-narrow-hero.png",
+    "outputs/seo-2026-09-16/browser/bentley-camera-desktop-spa-anchor.png",
+    "outputs/seo-2026-09-16/browser/bentley-camera-mobile-spa-anchor.png"
+  ],
+  "spaNavigation": [
+    "/services/cadillac-cue-screen-repair-dubai",
+    "/services/head-unit-repair-dubai",
+    "/services/mercedes-audio-upgrade-dubai",
+    "/services/mercedes-electrical-repair-dubai",
+    "back:/services/mercedes-audio-upgrade-dubai",
+    "forward:/services/mercedes-electrical-repair-dubai",
+    "/services/auto-electrical-repair-dubai"
+  ],
+  "runtimeOrHydrationErrors": [],
+  "failedLocalResponses": [],
+  "blockedExternalRequests": {
+    "https://www.googletagmanager.com": 62,
+    "https://fonts.googleapis.com": 31
+  },
+  "blockedLocalWrites": [],
+  "unexpectedPopups": [],
+  "enquirySafety": "External requests and contact navigation are blocked. No form is submitted and no enquiry is sent.",
+  "analytics": {
+    "passed": true,
+    "whatsappClickCount": 1,
+    "chatOpenedCount": 1,
+    "placement": "service_scope",
+    "sanitizedUrl": "https://wa.me/97143402223",
+    "messageAndQueryExcluded": true,
+    "navigationPrevented": true
+  },
+  "finishedAt": "2026-09-16T08:25:22.352Z"
+}

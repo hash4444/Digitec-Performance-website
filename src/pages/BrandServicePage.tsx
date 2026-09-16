@@ -3,6 +3,7 @@ import { useParams, Navigate } from 'react-router-dom';
 import { LocalizedLink as Link } from '@/components/LocalizedLink';
 import { Phone, MessageCircle, CheckCircle2, ArrowRight, Wrench, ShieldCheck } from 'lucide-react';
 import Header from '@/components/Header';
+import BentleyCameraSection from '@/components/BentleyCameraSection';
 import { Footer } from '@/components/Footer';
 import { FinalCTA } from '@/components/FinalCTA';
 import { serviceEnquiryLabel } from '@/data/queryServiceContent';
@@ -141,6 +142,9 @@ const MERCEDES_RELATED_CONTENT: Record<string, { label: string; path: string }[]
     { label: 'E-Class 12V and 48V considerations', path: '/blog/mercedes-e-class-service-dubai-guide' },
   ],
   'electrical-repair': [
+    { label: 'Head-unit and COMAND fault repair', path: '/services/head-unit-repair-dubai' },
+    { label: 'Mercedes stereo and sound-system upgrades', path: '/services/mercedes-audio-upgrade-dubai' },
+    { label: 'Car electrical diagnosis and wiring repair', path: '/services/auto-electrical-repair-dubai' },
     { label: 'Supported diagnostics, coding and programming', path: '/services/mercedes-diagnostics-dubai' },
     { label: 'Mercedes battery and charging warnings', path: `${MERCEDES_PROBLEMS_PATH}/battery-warning` },
     { label: "No-crank and crank-no-start diagnosis", path: `${MERCEDES_PROBLEMS_PATH}/wont-start` },
@@ -634,6 +638,7 @@ const BrandServicePage: React.FC<BrandServicePageProps> = ({
   return (
     <div className="site-page min-h-screen bg-black text-off-white">
       <Header />
+      <main>
 
       {/* Breadcrumbs */}
       <nav aria-label="Breadcrumb" className="max-w-7xl mx-auto px-4 sm:px-6 pt-6 text-xs sm:text-sm text-gray-400">
@@ -827,6 +832,7 @@ const BrandServicePage: React.FC<BrandServicePageProps> = ({
       </section>
 
       {/* Parts */}
+      {!isArabic && combo.brandSlug === 'bentley-service-dubai' && combo.serviceSlug === 'electrical-repair' && <BentleyCameraSection />}
       <section className="py-12 sm:py-16 bg-gradient-to-br from-charcoal/40 to-black border-t border-white/5">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <div className="flex items-start gap-4">
@@ -877,7 +883,7 @@ const BrandServicePage: React.FC<BrandServicePageProps> = ({
                 <AccordionTrigger className="text-left text-off-white font-semibold text-base sm:text-lg hover:no-underline py-5">
                   {f.question}
                 </AccordionTrigger>
-                <AccordionContent className="text-gray-300 text-sm sm:text-base leading-relaxed pb-5">
+                <AccordionContent forceMount className="text-gray-300 text-sm sm:text-base leading-relaxed pb-5">
                   {f.answer}
                 </AccordionContent>
               </AccordionItem>
@@ -937,6 +943,7 @@ const BrandServicePage: React.FC<BrandServicePageProps> = ({
           href={whatsappHref}
         />
       </div>
+      </main>
       <Footer />
     </div>
   );

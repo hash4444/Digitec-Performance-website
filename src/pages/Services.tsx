@@ -118,7 +118,7 @@ const Services = () => {
                       <div className="aspect-[4/3] overflow-hidden rounded-lg bg-white/[0.03]">
                         <img
                           src={s.image}
-                          alt={isArabic ? arServiceCards[s.slug]?.title ?? s.title : s.title}
+                          alt={isArabic ? arServiceCards[s.slug]?.title ?? s.title : s.imageAlt ?? s.title}
                           className="h-full w-full object-cover transition duration-500 group-hover:scale-[1.025] group-hover:opacity-90"
                           loading="lazy"
                           onError={(e) => {

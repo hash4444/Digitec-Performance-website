@@ -18,7 +18,7 @@ const heroImage = '/images/ppf/film-application-1200.webp';
 const heroAlt = 'Transparent film being smoothed over a white Porsche bonnet';
 const ppfBrands = ppfBrandNames.map((name) => brands.find((brand) => brand.name === name)).filter(Boolean);
 const graph = pageGraph([
-  buildWebPage({ url, name: PPF_TITLE, description: PPF_DESCRIPTION, breadcrumbId: `${url}#breadcrumb`, primaryImage: heroImage, mainEntityId: `${url}#service`, dateModified: '2026-09-08' }),
+  buildWebPage({ url, name: PPF_TITLE, description: PPF_DESCRIPTION, breadcrumbId: `${url}#breadcrumb`, primaryImage: heroImage, mainEntityId: `${url}#service`, dateModified: '2026-09-16' }),
   buildBreadcrumb(url, [{ name: 'Home', url: '/' }, { name: 'Services', url: '/services' }, { name: 'Paint Protection Film', url }]),
   buildService({ url, name: PPF_H1, serviceType: 'Paint Protection Film (PPF) installation', description: 'DIGI-TEC Performance Center offers paint protection film installation with full-body and selected-panel coverage at Al Quoz Industrial Area 3, Dubai. Film, preparation and covered panels are confirmed in the quotation.', image: heroImage }),
 ]);
@@ -51,7 +51,7 @@ export default function PpfPage() {
             <p className="ppf-eyebrow">DIGI-TEC Performance Center · Al Quoz, Dubai</p>
             <h1 id="ppf-heading">Paint Protection Film <span>(PPF) Dubai</span></h1>
             <p className="ppf-lead">Preserve the paint. Enjoy the drive.</p>
-            <p>PPF installation for luxury and performance cars at DIGI-TEC in Al Quoz, Dubai. Explore full-body and selected-panel coverage.</p>
+            <p>Car paint protection with PPF for luxury and performance vehicles at DIGI-TEC in Al Quoz, Dubai. Explore full-body and selected-panel film coverage, with preparation agreed for your car.</p>
             <div className="ppf-actions"><WhatsApp placement="hero" /><a href="tel:+97143402223" data-cta-placement="ppf_hero" className="ppf-button ppf-button-secondary"><Phone size={18} aria-hidden="true" />Call the workshop</a></div>
             <a className="ppf-text-link" href="#ppf-quote">Have your car details ready? Build your quote request <ArrowRight size={16} aria-hidden="true" /></a>
           </div>
@@ -59,7 +59,7 @@ export default function PpfPage() {
         </section>
 
         <div className="ppf-proof" aria-label="Workshop and service facts"><div><strong>Al Quoz Industrial Area 3</strong><span>Dubai workshop</span></div><div><strong>Luxury & performance vehicles</strong><span>Independent workshop care</span></div><div><strong>Coverage agreed for your car</strong><span>Film and preparation in the quotation</span></div></div>
-        <nav className="ppf-jump" aria-label="On this page"><a href="#ppf-coverage">Coverage</a><a href="#ppf-cost">Price & quote</a><a href="#ppf-process">Process</a><a href="#ppf-comparison">PPF vs coating</a><a href="#ppf-faq">FAQs</a></nav>
+        <nav className="ppf-jump" aria-label="On this page"><a href="#ppf-coverage">Coverage</a><a href="#ppf-cost">Price & quote</a><a href="#ppf-process">Process</a><a href="#ppf-care">Care & removal</a><a href="#ppf-comparison">PPF vs coating</a><a href="#ppf-faq">FAQs</a></nav>
 
         <section className="ppf-section ppf-two-column" aria-labelledby="ppf-definition">
           <div><p className="ppf-eyebrow">A physical layer of protection</p><h2 id="ppf-definition">What Is Paint Protection Film?</h2></div>
@@ -77,6 +77,28 @@ export default function PpfPage() {
         <section className="ppf-section ppf-tinted ppf-two-column" aria-labelledby="finish-heading"><div><p className="ppf-eyebrow">Appearance & film choice</p><h2 id="finish-heading">Clear, Matte & Satin PPF: What Changes?</h2></div><div><p><strong>Clear gloss PPF</strong> is intended to retain the paint’s colour and glossy appearance. <strong>Matte PPF</strong> gives a flatter look, while <strong>satin PPF</strong> has a softer sheen between matte and gloss. These are finish categories, and the result depends on the underlying paint and film.</p><p>Ask DIGI-TEC which finishes are available for your car and request a sample of the selected product. Self-healing and water-beading properties are film-specific, so confirm them alongside finish, care and any warranty terms.</p><h3>What does self-healing PPF mean?</h3><p>On suitable films, the top surface can reduce light marks under the selected product’s specified conditions. It does not repair a cut, torn film, deep scratch or a chip in the paint underneath. Ask which film is proposed and what care or inspection is needed if a mark remains; do not assume every finish has the same properties.</p></div></section>
 
         <section id="ppf-process" className="ppf-section" aria-labelledby="process-heading"><p className="ppf-eyebrow">From paint assessment to handover</p><h2 id="process-heading">Our PPF Installation Process</h2><p className="ppf-section-intro">The vehicle’s condition and selected film determine the preparation and installation method. These are the key stages to discuss with the workshop.</p><ol className="ppf-process">{process.map(([title, description], index) => <li key={title}><span aria-hidden="true">0{index + 1}</span><div><h3>{title}</h3><p>{description}</p></div></li>)}</ol></section>
+
+        <section className="ppf-section ppf-tinted ppf-two-column" aria-labelledby="ppf-installers-heading">
+          <div><p className="ppf-eyebrow">Review the work behind the quote</p><h2 id="ppf-installers-heading">Choosing Paint Protection Film Installers</h2></div>
+          <div>
+            <p>Compare installation scope as well as film choice. Ask to see work on similar panel shapes and inspect edges, joins and the finish under good lighting. Discuss visible boundaries before choosing partial-panel coverage.</p>
+            <p>Share any repainting, previous film or existing damage during the assessment. Ask how the installer will prepare those areas and whether correction or repair is needed first.</p>
+            <p>A useful quote identifies the film, covered panels, exclusions, cutting method and aftercare. Confirm any written product or installation warranty terms separately; the word “PPF” alone does not specify them.</p>
+          </div>
+        </section>
+
+        <section id="ppf-care" className="ppf-section ppf-two-column" aria-labelledby="ppf-care-heading">
+          <div><p className="ppf-eyebrow">After installation</p><h2 id="ppf-care-heading">PPF Care, Lifespan & Removal</h2></div>
+          <div>
+            <h3>Maintain the film as well as the paint</h3>
+            <p>Follow the chosen film’s first-wash interval and approved cleaning guidance. Remove dust gently, avoid dry rubbing and keep pressure-washer jets away from edges. Driving, parking exposure, film choice and care all influence service life; there is no single replacement schedule for every car.</p>
+            <h3>When the film needs attention</h3>
+            <p>Have lifting edges, persistent staining, cuts or damaged areas assessed. Do not assume an aged or damaged film can be restored by polishing or that a mark has only affected the film. An inspection helps establish whether the affected coverage needs replacement and whether the paint underneath needs work.</p>
+            <h3>Can PPF be removed?</h3>
+            <p>Yes. Professional removal should follow the film manufacturer’s guidance. Tell the workshop about previous repainting or repairs before a removal method is agreed. The existing film and paint condition need assessment; removal should not be promised as risk-free.</p>
+            <p className="ppf-small">If the paint needs attention before new film, discuss <Link to="/services/car-polishing-dubai">polishing and paint correction</Link> or <Link to="/services/car-body-repair-dubai">body and paint repair</Link> according to the damage.</p>
+          </div>
+        </section>
 
         <section id="ppf-workshop" className="ppf-section ppf-tinted ppf-workshop" aria-labelledby="workshop-heading"><figure><img src="/images/ppf/workshop-960.webp" srcSet="/images/ppf/workshop-540.webp 540w, /images/ppf/workshop-960.webp 960w" sizes="(min-width: 900px) 42vw, 100vw" width={960} height={1280} loading="lazy" decoding="async" alt="Porsche cars in DIGI-TEC’s workshop bays, with a BMW on a lift behind them" /><figcaption>Inside the DIGI-TEC workshop in Al Quoz. Workshop vehicle photograph; PPF coverage is not documented for these cars.</figcaption></figure><div><p className="ppf-eyebrow">Meet the workshop</p><h2 id="workshop-heading">Why Choose DIGI-TEC for PPF in Dubai?</h2><p>DIGI-TEC Performance Center is an independent Dubai workshop working with luxury and performance vehicles. Paint protection sits alongside paint correction, ceramic coating and bodywork, so existing paint condition can be considered before film is applied.</p><ul className="ppf-checks"><li><Check aria-hidden="true" />Full-body and selected-panel coverage options</li><li><Check aria-hidden="true" />Film, preparation and coverage documented in the estimate</li><li><Check aria-hidden="true" />Related paint-care services in the same workshop</li><li><Check aria-hidden="true" />A workshop location in Al Quoz Industrial Area 3</li></ul><p>Before choosing, ask to see recent PPF work and finish examples relevant to your car and requested coverage.</p><div className="ppf-actions"><Link to="/about" className="ppf-text-link">About DIGI-TEC <ArrowRight size={16} aria-hidden="true" /></Link><a href="#ppf-contact" className="ppf-text-link">Visit the workshop <MapPin size={16} aria-hidden="true" /></a></div></div></section>
 

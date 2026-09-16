@@ -11,6 +11,7 @@ import { mercedesServices } from './mercedesServices';
 import { CERAMIC_TITLE, CERAMIC_DESCRIPTION, CERAMIC_H1 } from './ceramicCoatingContent';
 import { PPF_TITLE, PPF_DESCRIPTION, PPF_H1 } from './ppfContent';
 import { PAINT_CORRECTION_H1 } from './paintCorrectionContent';
+import { electronicsServices, electronicsLinks } from './electronicsServices';
 
 export interface ServiceData {
   slug: string;
@@ -19,6 +20,7 @@ export interface ServiceData {
   title: string;
   description: string;
   image: string;
+  imageAlt?: string;
   category: string;
   seoKeyword: string;
   intro: string;
@@ -546,18 +548,18 @@ export const services: ServiceData[] = [
     ctaLabel: 'Request a Tyre Assessment',
     quoteGuidance: 'Share the vehicle, tyre size and whether the concern is a puncture, repeated pressure loss or vibration. The Al Quoz workshop confirms inspection availability, repair eligibility and replacement options before work is agreed. Contact the workshop before visiting to check appointment and tyre availability.',
     relatedServiceLinks: [{ label: 'Suspension and uneven-wear inspection', path: '/services/suspension-repair-dubai' }, { label: 'Steering and alignment concerns', path: '/services/steering-repair-dubai' }],
-    metaTitle: 'Tire Repair Dubai | Puncture Assessment & Fitment | Digitec',
-    metaDescription: 'Tire repair in Dubai with puncture assessment, replacement, balancing and alignment subject to vehicle fitment and product availability.',
-    title: 'Tire Repair Dubai',
-    description: 'Puncture assessment, tire replacement and wheel alignment in Dubai.',
+    metaTitle: 'Tyre Repair Dubai | Puncture Checks & Replacement | DIGI-TEC',
+    metaDescription: 'Tyre repair in Dubai with puncture inspection, pressure-loss diagnosis and replacement when needed. Discuss balancing, alignment and fitment at DIGI-TEC.',
+    title: 'Tyre Repair Dubai',
+    description: 'Puncture assessment, tyre replacement and wheel alignment in Dubai.',
     image: tireRepairImg,
     category: 'Core Mechanical Services',
-    seoKeyword: 'Tire Repair Dubai',
-    intro: 'Digitec Performance Center inspects punctures, tire damage, fitment and alignment concerns in Dubai. Repair eligibility depends on the puncture location, tire construction, prior underinflated use and manufacturer guidance; replacement fitment and availability are confirmed before work begins.',
-    whyImportant: 'Heat, pressure loss, tread wear, impact damage and prior underinflated use can affect tire condition. A damaged sidewall, exposed cord, severe pressure loss or vibration should be assessed before further driving, and repair eligibility depends on the damage and tire guidance.',
+    seoKeyword: 'Tyre Repair Dubai',
+    intro: 'Digitec Performance Center inspects punctures, tyre damage, fitment and alignment concerns at its Al Quoz workshop in Dubai. Repair eligibility depends on the puncture location, tyre construction, overall condition, prior underinflated use and manufacturer guidance. The inspection determines whether a repair is appropriate or a correctly specified replacement is needed.',
+    whyImportant: 'Pressure loss, tread wear, impact damage and prior underinflated use can affect tyre safety. A sidewall bulge, exposed cord or damage from driving flat cannot be treated as a routine puncture repair. Avoid further driving on a flat or visibly damaged tyre and arrange a safe way to have the vehicle assessed.',
     modelsSection: {
-      heading: 'Tire Repair for Compatible Vehicle Fitments',
-      intro: 'Fitment and service coverage are confirmed by vehicle, wheel and tire specification. Examples include:',
+      heading: 'Tyre Repair for Compatible Vehicle Fitments',
+      intro: 'Fitment and service coverage are confirmed by vehicle, wheel and tyre specification. Examples include:',
       models: [
         'Mercedes-Benz, Maybach, Audi, BMW, Porsche',
         'Lamborghini, Aston Martin, Bugatti, Ferrari, McLaren',
@@ -566,38 +568,44 @@ export const services: ServiceData[] = [
       ],
       outro: 'Size, load and speed ratings, manufacturer markings, wheel specification and alignment requirements are confirmed for the exact vehicle before work is quoted.',
     },
-    whyChoose: 'The inspection records damage, size, load and speed ratings, construction and any manufacturer marking. Repair eligibility, tire options, availability, alignment scope and expected timing are documented in the estimate.',
+    whyChoose: 'The inspection records damage, size, load and speed ratings, construction and any manufacturer marking. Repair eligibility, tyre options, availability, alignment scope and expected timing are documented in the estimate.',
     servicesIntro: {
-      heading: 'Tire Repair & Puncture Assessment in Dubai',
-      text: 'A flat tire, pressure warning or vibration requires inspection before repair. Digi-Tec checks the puncture location, tread, sidewall and evidence of underinflated use, then confirms whether repair or replacement is appropriate and provides an expected timeframe.',
+      heading: 'Tyre Repair & Puncture Assessment in Dubai',
+      text: 'A flat tyre, pressure warning or vibration requires inspection before repair. Digi-Tec checks the puncture location, tread, sidewall and evidence of underinflated use, then confirms whether repair or replacement is appropriate. Internal condition matters too: an external look alone cannot confirm that a punctured tyre is safe to repair.',
     },
     includes: [
       'Puncture assessment and repair where eligible',
-      'Tire leak detection and repair',
-      'Run-flat tire inspection and replacement',
-      'Tire sidewall and tread assessment',
-      'Repair or replacement recommendation after tire inspection',
+      'Tyre, valve and wheel-area leak assessment',
+      'Run-flat tyre inspection and replacement',
+      'Tyre sidewall and tread assessment',
+      'Repair or replacement recommendation after tyre inspection',
     ],
     extraSections: [
       {
-        heading: 'Tire Services in Dubai',
-        text: 'In addition to puncture assessment, available tire services can include replacement, balancing, alignment, rotation and TPMS inspection. The appropriate work depends on tire condition, wheel condition and the vehicle specification.',
+        heading: 'Tyre Services in Dubai',
+        text: 'In addition to puncture assessment, available tyre services can include replacement, balancing, alignment, rotation and TPMS inspection. The appropriate work depends on tyre condition, wheel condition and the vehicle specification.',
         items: [
-          'New tire supply and installation',
+          'New tyre supply and installation',
           'Wheel balancing for smooth driving',
           'Wheel alignment where required and supported',
-          'Tire rotation for even wear',
-          'TPMS (tire pressure monitoring system) diagnostics',
-          'Tire replacement and disposal',
+          'Tyre rotation where suitable for the fitted sizes and tread pattern',
+          'TPMS (tyre pressure monitoring system) diagnostics',
+          'Tyre replacement and disposal',
         ],
       },
       {
-        heading: 'Tire Product and Fitment Options',
+        heading: 'Tyre Product and Fitment Options',
         text: 'Available products depend on the required size, load and speed ratings, manufacturer marking, intended use and current stock. The selected product is identified in the estimate before installation.',
       },
     ],
-    localIntent: 'Digi-Tec assesses punctures, tire condition, balancing, alignment and TPMS concerns at its workshop in Al Quoz Industrial Area 3, Dubai. Repair or replacement depends on the inspection.',
-    details: 'Tire services can include puncture repair, replacement, balancing, alignment and new fitment, subject to inspection, vehicle specification and product availability.',
+    faqs: [
+      { question: 'Can every punctured tyre be repaired?', answer: 'No. Repair eligibility depends on damage location and size, internal condition, tread, prior repairs and the tyre manufacturer’s guidance. Sidewall or shoulder punctures, exposed cords, bulges and damage from driving flat require a replacement assessment rather than a routine puncture repair.' },
+      { question: 'Why does my tyre keep losing pressure?', answer: 'A puncture is one possibility. A valve, wheel sealing area or damaged wheel can also leak, and a pressure-monitoring fault can produce a warning. Check actual pressure and have repeated loss assessed rather than repeatedly clearing the warning or adding air without finding the cause.' },
+      { question: 'Can a run-flat tyre be repaired?', answer: 'Do not assume it can. The tyre manufacturer’s restrictions, the damage and any distance driven with low pressure determine the available options. Internal damage may not be visible from outside. The workshop inspects the tyre and confirms whether replacement is required.' },
+      { question: 'How much does tire repair cost in Dubai?', answer: 'Cost depends on whether the tyre is safely repairable, the work needed and any valve, balancing or replacement requirements. For replacement, size, load and speed ratings and product availability affect the quote. Send the vehicle details, tyre size and symptoms to arrange an assessment.' },
+    ],
+    localIntent: 'Digi-Tec assesses punctures, tyre condition, balancing, alignment and TPMS concerns at its workshop in Al Quoz Industrial Area 3, Dubai. Repair or replacement depends on the inspection.',
+    details: 'Tyre services can include puncture repair, replacement, balancing, alignment and new fitment, subject to inspection, vehicle specification and product availability.',
   },
   {
     slug: 'battery-replacement-dubai',
@@ -721,27 +729,69 @@ export const services: ServiceData[] = [
   },
   {
     slug: 'auto-electrical-repair-dubai',
-    metaTitle: 'Auto Electrical Repair Dubai | Wiring & ECU | Digitec',
-    metaDescription: 'Auto-electrical inspection and repair in Dubai for supported wiring, charging, starting, lighting, sensor and communication faults.',
-    title: 'Auto Electrical Repair in Dubai',
-    description: 'Electrical fault tracing, wiring repair, and sensor calibration in Dubai.',
+    ctaLabel: 'Request Electrical Diagnosis',
+    quoteGuidance: 'Send the make, model, year, symptoms and when the fault occurs: during starting, while driving, after parking or when an accessory is used. Mention warning messages and recent battery, wiring or infotainment work. The workshop confirms diagnostic coverage, the initial investigation and any further testing before repair costs are agreed.',
+    relatedServiceLinks: [
+      ...electronicsLinks,
+      { label: 'Vehicle diagnostics and supported module functions', path: '/services/car-diagnostics-dubai' },
+      { label: 'Battery and charging-system checks', path: '/services/battery-replacement-dubai' },
+    ],
+    metaTitle: 'Car Electrical Repair Dubai | Wiring & Diagnostics | DIGI-TEC',
+    metaDescription: 'Car electrical repair in Dubai for wiring, charging, starting and electronic faults. Book diagnosis at DIGI-TEC in Al Quoz before selecting parts.',
+    title: 'Car Electrical Repair in Dubai',
+    description: 'Electrical fault tracing, car wiring repair and supported electronic-system diagnosis in Dubai.',
     image: '/lovable-uploads/9f435c28-2f08-437b-99ad-2252d8ea2071.png',
     category: 'Diagnostics & Electrical',
-    seoKeyword: 'Auto Electrical Repair Dubai',
-    intro: 'Electrical faults in modern vehicles can involve wiring, sensors, lighting and module communication. Digi-Tec provides auto-electrical inspection and repair for selected German and luxury vehicles, subject to exact-model compatibility.',
-    whyImportant: 'An electrical fault can trigger warning messages or intermittent symptoms across connected systems. Diagnosis may require voltage, current, continuity, wiring and compatible module checks selected for the exact vehicle and reported condition.',
-    whyChoose: 'Electrical inspection can use wiring information, measurement equipment and a compatible diagnostic platform. Available tests, module access, repair method, parts and timing are confirmed for the exact vehicle in the estimate.',
+    seoKeyword: 'Car Electrical Repair Dubai',
+    intro: 'DIGI-TEC provides car electrical repair and fault diagnosis at its independent workshop in Al Quoz, Dubai. Starting trouble, repeated battery discharge, failed lights, intermittent controls or several warning messages can involve a supply, wiring, sensor or module fault. We identify the fitted system and trace the reported problem before recommending work, with diagnostic access and repair coverage confirmed for the exact vehicle.',
+    whyImportant: 'Connected systems can share a power supply, earth connection or communication network. A low-voltage or wiring problem may therefore appear as several unrelated faults. A stored fault code identifies a condition to investigate; it does not by itself establish which component needs replacement.',
+    whyChoose: 'The inspection combines the fault history with relevant electrical measurements, wiring information and compatible system checks. DIGI-TEC explains what the findings establish, any further investigation needed and the proposed parts and labour before approved work begins. Coding, calibration and module access are confirmed separately for the vehicle and repair.',
     includes: [
-      'Alternator and starter motor repair/replacement',
-      'Wiring harness repair and loom fabrication',
+      'Battery, alternator and starter-circuit assessment; repair or replacement where needed',
+      'Wiring harness repair and loom fabrication where appropriate for the damaged circuit',
       'Fuse box diagnosis and repair',
-      'Lighting system repair (LED, Xenon, Laser)',
+      'Lighting-system diagnosis and supported LED, Xenon or laser-light repair',
       'Window regulator and motor replacement',
-      'Sensor calibration and replacement',
-      'CAN-bus communication fault diagnosis',
+      'Sensor diagnosis, supported calibration and replacement where required',
+      'CAN-bus and module communication fault diagnosis where supported',
     ],
-    localIntent: 'For auto-electrical repair in Dubai, contact Digi-Tec with the make, model, year and symptoms to confirm diagnostic coverage.',
-    details: 'Electrical services can cover alternators, starters, wiring, fuse boxes, lighting, windows and supported sensor calibration on compatible vehicles.',
+    extraSections: [
+      {
+        heading: 'Electrical symptoms to describe when booking',
+        items: [
+          'Slow cranking, clicking or an intermittent failure to start.',
+          'A battery or charging warning, or a battery that repeatedly discharges while parked.',
+          'Lights, windows or other controls that stop working or operate intermittently.',
+          'Several warning messages together, or a fault that changes with heat, vibration or accessory use.',
+          'An infotainment, audio or camera problem following electrical work or an equipment change.',
+        ],
+      },
+      {
+        heading: 'How an electrical fault is traced',
+        items: [
+          'Identify the vehicle, fitted equipment and fault history; reproduce the symptom where possible.',
+          'Check relevant battery, charging, supply, earth and connector conditions before blaming a control unit.',
+          'Use appropriate voltage, current, continuity and supported diagnostic tests to narrow the affected circuit or system.',
+          'Explain the findings and repair options, then repeat relevant checks after the approved work.',
+        ],
+      },
+      {
+        heading: 'Car wiring repair and communication faults',
+        text: 'Damaged insulation, corroded connectors, poor connections or previous modifications can interrupt a circuit or create a short. Wiring repair is planned around the circuit, damage and vehicle requirements. Where a module will not communicate, its supply, connections and relevant network are assessed before replacement is proposed. The repair may involve a connector, a suitable wiring repair or a replacement section; the findings determine the scope.',
+      },
+      {
+        heading: 'Battery replacement, component repair or further diagnosis?',
+        text: 'A new battery alone may not resolve a charging fault or an unwanted electrical load while the car is parked. Similarly, a sensor-related code can involve its wiring or supply. The estimate separates confirmed repair work from further testing and any supported programming or calibration. For a screen, head unit, audio upgrade or reverse-camera enquiry, use the related electronics service to describe the system and desired result.',
+      },
+    ],
+    faqs: [
+      { question: 'What car electrical services does DIGI-TEC provide?', answer: 'Available work includes starting and charging checks, car wiring repair, fuse-box and lighting diagnosis, window mechanisms, sensors and supported module communication checks. Share the vehicle details and fault so the exact diagnostic and repair scope can be confirmed.' },
+      { question: 'Does an electrical fault code mean the control module needs replacing?', answer: 'No. The code may relate to a supply, earth connection, wiring, sensor or communication problem. Relevant tests are needed before a module repair or replacement is recommended. Any required programming or setup must also be confirmed for that vehicle.' },
+      { question: 'Why does my battery keep going flat after replacement?', answer: 'Possible causes include a charging problem, a connection fault or an electrical load that remains active while parked. The usage pattern and fitted equipment also matter. Battery and circuit testing help distinguish these causes rather than replacing another battery on symptoms alone.' },
+      { question: 'How much does car electrical repair cost in Dubai?', answer: 'The vehicle, access to the affected circuit, time needed to reproduce the fault, parts and any supported setup work determine the cost. An intermittent problem may need staged testing. DIGI-TEC confirms the initial investigation and explains findings before further work is approved.' },
+    ],
+    localIntent: 'Discuss car electrical repair at DIGI-TEC in Al Quoz Industrial Area 3, Dubai. Send the make, model, year and symptoms before visiting so diagnostic coverage and appointment availability can be confirmed.',
+    details: 'Electrical services can cover starting and charging, wiring, fuse boxes, lighting, windows, sensors and supported communication faults. Testing determines the required repair.',
   },
   {
     slug: 'fuel-system-repair-dubai',
@@ -981,7 +1031,7 @@ export const services: ServiceData[] = [
 ];
 
 export const getServiceBySlug = (slug: string): ServiceData | undefined => {
-  return allServices.find((s) => s.slug === slug);
+  return [...allServices, ...electronicsServices].find((s) => s.slug === slug);
 };
 
 // Combined list including Mercedes-specific variants. Use this for lookups
@@ -991,7 +1041,8 @@ export const allServices: ServiceData[] = [...services, ...mercedesServices];
 
 // Dedicated English pages join navigation without generating generic or
 // untranslated Arabic service pages. Their exact routes own the full content.
-export const englishOnlyServices: Pick<ServiceData, 'slug' | 'title' | 'description' | 'image' | 'category'>[] = [
+export const englishOnlyServices: Pick<ServiceData, 'slug' | 'title' | 'description' | 'image' | 'imageAlt' | 'category'>[] = [
+  ...electronicsServices,
   {
     slug: 'car-polishing-dubai',
     title: PAINT_CORRECTION_H1,

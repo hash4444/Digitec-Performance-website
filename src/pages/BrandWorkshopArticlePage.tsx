@@ -1,4 +1,3 @@
-import React from 'react';
 import { Navigate, useParams } from 'react-router-dom';
 import { LocalizedLink as Link } from '@/components/LocalizedLink';
 import { ArrowRight, Calendar, CheckCircle2, MapPin, MessageCircle, Phone, Wrench } from 'lucide-react';
@@ -94,11 +93,16 @@ const BrandWorkshopArticleContent = ({ article, isArabic }: { article: BrandWork
     : article.brand === 'Ferrari'
       ? 'Ferrari maintenance Dubai, Ferrari service Dubai, Ferrari repair Dubai, Ferrari servicing, Ferrari service center Dubai, Ferrari specialist Dubai, Ferrari engine repair Dubai, Ferrari brake repair Dubai'
       : `${article.primaryKeyword}, ${article.brand} repair Dubai, ${article.brand} garage Dubai, ${article.brand} specialist Dubai, ${article.brand} maintenance Dubai`;
+  const ferrariFaqs = [
+    { question: 'How often should a Ferrari be serviced in Dubai?', answer: 'Ferrari\'s 7-Year Genuine Maintenance programme describes scheduled maintenance every 20,000 km or once a year. The handbook, age, service history, storage and use of the exact car should still determine its final plan.' },
+    { question: 'What can a Ferrari maintenance service include?', answer: 'The scope can include model-approved oil and filters, other time- or distance-based items, fluid and leak checks, cooling, tyres, brakes, suspension, battery condition, a supported system scan and a written inspection. Only items due for the exact car should be included.' },
+    { question: 'How much does Ferrari maintenance cost in Dubai?', answer: 'There is no reliable single price for every Ferrari. Cost depends on the model and generation, scheduled scope, diagnostic time, fluids, parts, tyre and brake condition, history and any additional findings. Ask for an itemised estimate before approving work.' },
+    { question: 'Does a low-mileage or stored Ferrari still need maintenance?', answer: 'Yes. Time, heat cycles and storage can affect fluids, seals, tyres, brakes and the low-voltage battery even when mileage is low. Annual attention and a condition check remain important.' },
+    { question: 'Which engine oil should be used in a Ferrari?', answer: 'Use the specification and approval required for the exact model, engine and model year. Do not choose oil from a generic brand-wide recommendation; confirm the correct product, quantity and level procedure before service.' },
+    { question: 'How long does Ferrari maintenance take?', answer: 'Timing depends on the scheduled scope, inspection findings, diagnostic work and parts availability. The workshop can give a more useful completion estimate after reviewing the exact car and requested work.' },
+    { question: 'How can I request a Ferrari maintenance quote?', answer: 'Send the model, year, mileage, service history, last service date and any warning or symptom. DIGI-TEC can then confirm the appropriate first inspection and prepare an itemised estimate for the agreed scope.' },
+  ];
   const englishFaqs = [
-    ...(article.brand === 'Ferrari' ? [
-      { question: 'How often should a Ferrari be serviced in Dubai?', answer: 'Ferrari\'s official 7-Year Genuine Maintenance programme describes service options of every 20,000 km or once a year. Your model handbook, age, service history, storage pattern and driving conditions should still guide the final maintenance plan.' },
-      { question: 'How much does Ferrari maintenance cost in Dubai?', answer: 'There is no reliable single price for every Ferrari. Cost depends on the model and generation, scheduled service scope, diagnostic time, fluids, parts, tyre and brake condition, previous maintenance and whether storage or heat has caused additional work. Ask for an itemised inspection and estimate before approving repairs.' },
-    ] : []),
     { question: `How do I choose ${article.brand === 'Aston Martin' ? 'an' : 'a'} ${article.brand} workshop in Dubai?`, answer: `Choose a workshop that starts with a documented inspection, explains the fault in plain language, gives a written estimate before work, and can show how the proposed repair relates to your ${article.brand}'s service history and current condition.` },
     { question: `Does Dubai heat change ${article.brand} maintenance?`, answer: `It can. High ambient temperature, stop-start traffic, dust and heavy air-conditioning demand can increase the importance of cooling, tyres, brakes, batteries and fluid-condition checks. The right interval depends on the model and how it is used.` },
     { question: `What should ${article.brand === 'Aston Martin' ? 'an' : 'a'} ${article.brand} diagnostic include?`, answer: `A useful diagnostic is more than reading a code. It should combine a scan, live data where relevant, visual checks, a road test when appropriate, and a clear explanation of confirmed faults versus items that need monitoring.` },
@@ -110,11 +114,16 @@ const BrandWorkshopArticleContent = ({ article, isArabic }: { article: BrandWork
     { question: `Where is the ${article.brand} workshop located?`, answer: 'DIGI-TEC Performance Center is in Al Quoz Industrial Area 3, Dubai.' },
     { question: `What should I bring to my ${article.brand} appointment?`, answer: `Bring the key, service history if available, details of recent work, photos or videos of intermittent concerns, and the circumstances in which the issue occurs. This helps the inspection begin with useful context.` },
   ];
+  const ferrariFaqsArabic = [
+    { question: 'كم مرة يجب صيانة فيراري في دبي؟', answer: 'يوضح برنامج الصيانة الأصلية من فيراري صيانة مجدولة كل 20,000 كيلومتر أو مرة سنوياً. ويبقى دليل السيارة وعمرها وسجلها وطريقة تخزينها واستخدامها أساس تحديد الخطة النهائية.' },
+    { question: 'ماذا يمكن أن تشمل صيانة فيراري؟', answer: 'قد تشمل زيت المحرك والفلاتر بالمواصفات المناسبة، والبنود المستحقة حسب الوقت أو المسافة، وفحص السوائل والتسريبات والتبريد والإطارات والفرامل والتعليق والبطارية والأنظمة المدعومة، مع تقرير مكتوب.' },
+    { question: 'كم تبلغ تكلفة صيانة فيراري في دبي؟', answer: 'لا يوجد سعر واحد لجميع سيارات فيراري. تعتمد التكلفة على الطراز والجيل ونطاق الصيانة ووقت التشخيص والسوائل والقطع وحالة الإطارات والفرامل والسجل والنتائج الإضافية. اطلب عرضاً مفصلاً قبل اعتماد العمل.' },
+    { question: 'هل تحتاج فيراري قليلة الاستخدام أو المخزنة إلى صيانة؟', answer: 'نعم. قد تؤثر المدة والحرارة والتخزين في السوائل والأختام والإطارات والفرامل والبطارية حتى مع قلة المسافة، لذلك تبقى المتابعة السنوية وفحص الحالة مهمين.' },
+    { question: 'ما زيت المحرك المناسب لسيارة فيراري؟', answer: 'استخدم المواصفة والاعتماد المطلوبين للطراز والمحرك وسنة الصنع المحددة. يجب تأكيد المنتج والكمية وطريقة قياس المستوى قبل الخدمة بدلاً من الاعتماد على توصية عامة.' },
+    { question: 'كم تستغرق صيانة فيراري؟', answer: 'تعتمد المدة على نطاق الصيانة والنتائج وأعمال التشخيص وتوفر القطع. يمكن تقديم تقدير أدق بعد مراجعة السيارة والعمل المطلوب.' },
+    { question: 'كيف أطلب عرض سعر لصيانة فيراري؟', answer: 'أرسل الطراز والسنة والمسافة وسجل الصيانة وتاريخ آخر خدمة وأي تحذير أو أعراض، حتى يؤكد فريق ديجي-تك الفحص الأول المناسب ويعد عرضاً مفصلاً للنطاق المتفق عليه.' },
+  ];
   const arabicFaqs = [
-    ...(article.brand === 'Ferrari' ? [
-      { question: 'كم مرة يجب صيانة فيراري في دبي؟', answer: 'يعتمد برنامج الصيانة الأصلية من فيراري على الصيانة كل 20,000 كيلومتر أو مرة سنوياً. ويبقى دليل الطراز وعمر السيارة وسجلها وطريقة تخزينها واستخدامها عوامل أساسية لتحديد الخطة المناسبة.' },
-      { question: 'كم تبلغ تكلفة صيانة فيراري في دبي؟', answer: 'لا يوجد سعر واحد يناسب جميع سيارات فيراري. تعتمد التكلفة على الطراز والجيل ونطاق الصيانة ووقت التشخيص والسوائل والقطع وحالة الإطارات والفرامل وسجل الأعمال السابقة. اطلب فحصاً وعرض سعر مفصلاً قبل اعتماد الإصلاح.' },
-    ] : []),
     { question: `كيف أختار ورشة ${article.brand} متخصصة في دبي؟`, answer: `اختر ورشة تبدأ بفحص موثق، وتشرح سبب العطل بوضوح، وتقدم عرضاً مكتوباً قبل العمل، وتربط التوصية بسجل صيانة ${article.brand} وحالتها الحالية.` },
     { question: `هل تؤثر حرارة دبي في صيانة ${article.brand}؟`, answer: 'نعم. الحرارة والازدحام والغبار والاستخدام المتواصل للمكيف تزيد أهمية فحص التبريد والإطارات والفرامل والبطارية والسوائل وفق حالة السيارة وطريقة استخدامها.' },
     { question: `ماذا يجب أن يشمل فحص ${article.brand}؟`, answer: 'يشمل الفحص المفيد قراءة الأنظمة الإلكترونية والبيانات الحية عند الحاجة، والفحص البصري، وتجربة الطريق عندما تكون آمنة، مع توضيح الأعطال المؤكدة وما يحتاج إلى متابعة.' },
@@ -158,7 +167,9 @@ const BrandWorkshopArticleContent = ({ article, isArabic }: { article: BrandWork
     { question: 'هل تشمل الصفحة صيانة Spectre الكهربائية؟', answer: 'Spectre سيارة كهربائية وتبقى منفصلة عن صيانة محركات الاحتراق. لا يتم الإعلان عن أعمال البطارية عالية الجهد أو الشحن أو العزل من دون تأكيد التدريب والمعدات والنطاق.' },
     { question: 'ما الذي يحدد تكلفة خدمة رولز رويس؟', answer: 'تعتمد التكلفة على الطراز والسنة والمسافة والسجل والصيانة المطلوبة ووقت التشخيص والنتائج والقطع والسوائل والعمالة.' },
   ];
-  const faqs = !isArabic && article.brand === 'Aston Martin' ? [
+  const faqs = article.brand === 'Ferrari'
+    ? (isArabic ? ferrariFaqsArabic : ferrariFaqs)
+    : !isArabic && article.brand === 'Aston Martin' ? [
  {question:'How should I compare Aston Martin workshops?',answer:'Ask about model-specific diagnostic access, the inspection process, parts options and written estimates before approving work.'},
  {question:'What should I send before booking?',answer:'Model, year, mileage, service history and symptoms help the workshop plan the first assessment.'},
  {question:'Is DIGI-TEC independent?',answer:'DIGI-TEC is an independent workshop in Al Quoz Industrial Area 3, Dubai. No factory authorization is claimed.'},
@@ -172,7 +183,7 @@ const BrandWorkshopArticleContent = ({ article, isArabic }: { article: BrandWork
         : article.brand === 'Lamborghini' ? lamborghiniServiceLinks
           : article.brand === 'Rolls-Royce' ? rollsRoyceServiceLinks : article.brand === 'Aston Martin' && !isArabic ? [{label:'Aston Martin service and repair',arLabel:'',href:'/brands/aston-martin-service-dubai'},{label:'DB11 owner guide',arLabel:'',href:'/blog/aston-martin-db11-service-dubai-guide'},{label:'Brake assessment',arLabel:'',href:'/brands/aston-martin-service-dubai/brake-repair'},{label:'Transmission assessment',arLabel:'',href:'/brands/aston-martin-service-dubai/transmission-repair'}] : generalServiceLinks;
 
-  const jsonLd = React.useMemo(() => {
+  const jsonLd = (() => {
     const breadcrumb = buildBreadcrumb(url, [
       { name: isArabic ? 'الرئيسية' : 'Home', url: isArabic ? '/ar' : '/' },
       { name: isArabic ? 'المقالات' : 'Blog', url: isArabic ? '/ar/blog' : '/blog' },
@@ -214,7 +225,7 @@ const BrandWorkshopArticleContent = ({ article, isArabic }: { article: BrandWork
     });
     const faq = buildFAQ(url, faqs);
     return pageGraph([webPage, breadcrumb, blogArticle, service, ...(faq ? [faq] : [])]);
-  }, [article, dateModified, datePublished, faqs, isArabic, keywords, metaDescription, url]);
+  })();
 
   useSeo({
     title: metaTitle,
@@ -232,10 +243,19 @@ const BrandWorkshopArticleContent = ({ article, isArabic }: { article: BrandWork
   });
 
   const whatsappHref = `https://wa.me/97143402223?text=${encodeURIComponent(isArabic ? `مرحباً ديجي-تك، أود حجز فحص لسيارة ${article.brand} في دبي.` : `Hi DIGI-TEC, I would like to book ${article.brand === 'Aston Martin' ? 'an' : 'a'} ${article.brand} inspection in Dubai.`)}`;
-  const relatedArticles = brandWorkshopArticles
-    .filter((item) => item.slug !== article.slug)
-    .slice(0, 3)
-    .map((item) => (isArabic ? localizePostSummaryToArabic({ ...item, excerpt: '' }) : item));
+  const relatedArticles = article.brand === 'Ferrari'
+    ? [
+        { path: '/blog/ferrari-488-service-dubai-guide', title: isArabic ? 'دليل صيانة فيراري 488 في دبي' : 'Ferrari 488 Service & Maintenance Guide' },
+        { path: '/best-ferrari-workshop-dubai', title: isArabic ? 'كيفية اختيار ورشة فيراري في دبي' : 'How to Choose a Ferrari Workshop in Dubai' },
+        { path: '/blog/pre-purchase-inspection-dubai-guide', title: isArabic ? 'دليل فحص السيارة قبل الشراء في دبي' : 'Pre-Purchase Inspection Guide for Dubai' },
+      ]
+    : brandWorkshopArticles
+        .filter((item) => item.slug !== article.slug)
+        .slice(0, 3)
+        .map((item) => {
+          const localizedItem = isArabic ? localizePostSummaryToArabic({ ...item, excerpt: '' }) : item;
+          return { path: `/blog/${localizedItem.slug}`, title: localizedItem.title };
+        });
   const t = (english: string, arabic: string) => (isArabic ? arabic : english);
 
   return (
@@ -251,7 +271,7 @@ const BrandWorkshopArticleContent = ({ article, isArabic }: { article: BrandWork
         </nav>
 
         <section className={`relative mt-5 overflow-hidden bg-gradient-to-br ${article.coverGradient}`}>
-          {article.coverImage && <img src={article.coverImage} alt={article.imageAlt} className="absolute inset-0 h-full w-full object-cover" />}
+          {article.coverImage && <img src={article.coverImage} alt={article.imageAlt} width={article.brand === 'Ferrari' ? 1672 : undefined} height={article.brand === 'Ferrari' ? 941 : undefined} decoding="async" className="absolute inset-0 h-full w-full object-cover" />}
           <div className="absolute inset-0 bg-black/55" />
           <div className="relative mx-auto max-w-4xl px-5 py-16 sm:px-6 sm:py-24">
             <p className="mb-4 text-xs font-bold uppercase tracking-[0.24em] text-burnt-orange">{t('Dubai Workshop Guide', 'دليل ورش السيارات في دبي')}</p>
@@ -278,42 +298,59 @@ const BrandWorkshopArticleContent = ({ article, isArabic }: { article: BrandWork
 
         <article className="mx-auto max-w-4xl px-5 py-14 sm:px-6 sm:py-20">
           <section className={`${isArabic ? 'border-r-2 pr-5' : 'border-l-2 pl-5'} border-burnt-orange`}>
-            <h2 className="text-2xl font-black sm:text-3xl">{t(`A practical answer for ${article.brand} owners`, `إجابة عملية لمالكي ${article.brand}`)}</h2>
-            <p className="mt-4 text-lg leading-relaxed text-gray-300">{t(`The best workshop decision is rarely about a slogan. It is about whether the team can understand the car, define the concern accurately, show you a sensible repair path and keep you informed before costs grow. At DIGI-TEC in Al Quoz, ${article.brand === 'Aston Martin' ? 'an' : 'a'} ${article.brand} appointment starts with the vehicle’s history, symptoms and current condition—not an assumption.`, `اختيار الورشة المناسبة لا يعتمد على شعار، بل على قدرة الفريق على فهم السيارة وتحديد المشكلة بدقة وشرح مسار إصلاح منطقي قبل ارتفاع التكلفة. في ديجي-تك بالقوز، يبدأ موعد ${article.brand} بمراجعة تاريخ السيارة وأعراضها وحالتها الحالية، لا بالافتراضات.`)}</p>
-            {article.existingBestPage && article.brand === 'Mercedes-Benz' && <p className="mt-4 leading-relaxed text-gray-400">{t('For workshop information and booking, see our ', 'للمعلومات عن الورشة والحجز، راجع ')}<Link to={article.existingBestPage} className="font-semibold text-burnt-orange hover:underline">{article.brand === 'Mercedes-Benz' ? t('Mercedes-Benz repair and service hub', 'مركز إصلاح وصيانة مرسيدس بنز') : t(`${article.brand} workshop selection page`, `دليل اختيار ورشة ${article.brand}`)}</Link>.</p>}
-            {article.existingBestPage && article.brand !== 'Mercedes-Benz' && <p className="mt-4 leading-relaxed text-gray-400">{t('For a direct comparison of what to look for in a workshop, see our ', 'للمقارنة المباشرة بين معايير اختيار الورشة، راجع صفحة ')}<Link to={article.existingBestPage} className="font-semibold text-burnt-orange hover:underline">{article.brand === 'Mercedes-Benz' ? t('Mercedes-Benz repair and service hub', 'مركز إصلاح وصيانة مرسيدس-بنز') : t(`${article.brand} workshop selection page`, `دليل اختيار ورشة ${article.brand}`)}</Link>{t('. This article is intentionally focused on ownership, maintenance and repair preparation so it does not duplicate that landing page.', '؛ فهذا المقال يركز على الملكية والصيانة والاستعداد للإصلاح من دون تكرار محتوى صفحة الخدمة.')}</p>}
+            {article.brand === 'Ferrari' ? (
+              <>
+                <h2 className="text-2xl font-black sm:text-3xl">{t('Ferrari maintenance in Dubai: the short answer', 'صيانة فيراري في دبي: الإجابة المختصرة')}</h2>
+                <p className="mt-4 text-lg leading-relaxed text-gray-300">{t('Ferrari’s 7-Year Genuine Maintenance programme describes scheduled maintenance every 20,000 km or once a year. Use that as a reference, then confirm the handbook, programme status and recorded history for the exact model because classic, limited-edition and out-of-programme cars can differ.', 'يوضح برنامج الصيانة الأصلية من فيراري صيانة مجدولة كل 20,000 كيلومتر أو مرة سنوياً. استخدم ذلك كمرجع، ثم راجع دليل السيارة وحالة البرنامج والسجل الموثق للطراز المحدد لأن السيارات الكلاسيكية والإصدارات المحدودة والسيارات خارج البرنامج قد تختلف.')}</p>
+                <p className="mt-4 leading-relaxed text-gray-400">{t('The work and price are not one universal package: model, age, mileage, storage, driving use, due items and inspection findings determine the final scope. Ask for those items to be separated in a written estimate before approval.', 'لا يوجد نطاق أو سعر واحد لجميع السيارات؛ فالطراز والعمر والمسافة والتخزين وطريقة الاستخدام والبنود المستحقة ونتيجة الفحص هي ما يحدد العمل النهائي. اطلب فصل هذه البنود في عرض مكتوب قبل الاعتماد.')}</p>
+                <div className="mt-6 grid gap-3 sm:grid-cols-2">
+                  {ferrariServiceLinks.slice(0, 4).map((service) => <Link key={service.href} to={service.href} className="inline-flex min-h-11 items-center justify-between rounded-xl border border-white/10 bg-white/[0.03] px-4 py-3 text-sm font-bold transition-colors hover:border-burnt-orange/50 hover:text-burnt-orange"><span>{isArabic ? service.arLabel : service.label}</span><ArrowRight className={`${isArabic ? 'rotate-180' : ''} h-4 w-4 shrink-0 text-burnt-orange`} /></Link>)}
+                </div>
+              </>
+            ) : (
+              <>
+                <h2 className="text-2xl font-black sm:text-3xl">{t(`A practical answer for ${article.brand} owners`, `إجابة عملية لمالكي ${article.brand}`)}</h2>
+                <p className="mt-4 text-lg leading-relaxed text-gray-300">{t(`The best workshop decision is rarely about a slogan. It is about whether the team can understand the car, define the concern accurately, show you a sensible repair path and keep you informed before costs grow. At DIGI-TEC in Al Quoz, ${article.brand === 'Aston Martin' ? 'an' : 'a'} ${article.brand} appointment starts with the vehicle’s history, symptoms and current condition—not an assumption.`, `اختيار الورشة المناسبة لا يعتمد على شعار، بل على قدرة الفريق على فهم السيارة وتحديد المشكلة بدقة وشرح مسار إصلاح منطقي قبل ارتفاع التكلفة. في ديجي-تك بالقوز، يبدأ موعد ${article.brand} بمراجعة تاريخ السيارة وأعراضها وحالتها الحالية، لا بالافتراضات.`)}</p>
+                {article.existingBestPage && article.brand === 'Mercedes-Benz' && <p className="mt-4 leading-relaxed text-gray-400">{t('For workshop information and booking, see our ', 'للمعلومات عن الورشة والحجز، راجع ')}<Link to={article.existingBestPage} className="font-semibold text-burnt-orange hover:underline">{t('Mercedes-Benz repair and service hub', 'مركز إصلاح وصيانة مرسيدس بنز')}</Link>.</p>}
+                {article.existingBestPage && article.brand !== 'Mercedes-Benz' && <p className="mt-4 leading-relaxed text-gray-400">{t('For a direct comparison of what to look for in a workshop, see our ', 'للمقارنة المباشرة بين معايير اختيار الورشة، راجع صفحة ')}<Link to={article.existingBestPage} className="font-semibold text-burnt-orange hover:underline">{t(`${article.brand} workshop selection page`, `دليل اختيار ورشة ${article.brand}`)}</Link>{t('. This article is intentionally focused on ownership, maintenance and repair preparation so it does not duplicate that landing page.', '؛ فهذا المقال يركز على الملكية والصيانة والاستعداد للإصلاح من دون تكرار محتوى صفحة الخدمة.')}</p>}
+              </>
+            )}
           </section>
 
-          <section className="mt-14">
-            <h2 className="text-2xl font-black sm:text-3xl">{t('Why a specialist approach matters', 'لماذا تهم الخبرة المتخصصة؟')}</h2>
-            <p className="mt-4 leading-relaxed text-gray-300">{t(`Modern ${article.brand} vehicles combine mechanical systems with networked control modules, safety functions, comfort features and model-specific service procedures. A warning light may point to a symptom rather than the failed part. Replacing components without checking fault history, live information, wiring, fluids and the surrounding system can turn a straightforward repair into repeated expense.`, `تجمع سيارات ${article.brand} الحديثة بين الأنظمة الميكانيكية ووحدات التحكم المتصلة ووظائف السلامة والراحة وإجراءات صيانة خاصة بالطراز. قد تشير رسالة التحذير إلى عَرَض لا إلى القطعة التالفة، لذلك يؤدي استبدال المكونات من دون مراجعة سجل الأعطال والبيانات الحية والأسلاك والسوائل إلى تكاليف متكررة.`)}</p>
-            <p className="mt-4 leading-relaxed text-gray-300">{article.brand === 'Rolls-Royce' ? t('A good workshop should state what is confirmed, what is likely and what still needs testing. That distinction matters when approving maintenance, a repair or a major component replacement, and it makes quotations easier to compare fairly.', 'توضح الورشة الجيدة ما تم تأكيده وما هو محتمل وما يزال يحتاج إلى اختبار. هذا الفرق مهم عند اعتماد الصيانة أو الإصلاح أو استبدال مكوّن رئيسي، ويساعد على مقارنة عروض الأسعار بإنصاف.') : t('A good workshop should be comfortable saying what is confirmed, what is likely, and what still needs testing. That distinction matters when you are deciding whether to approve maintenance, a repair, a major component replacement or a performance upgrade. It also makes it easier to compare quotes fairly.', 'توضح الورشة الجيدة ما تم تأكيده، وما هو محتمل، وما يزال يحتاج إلى اختبار. هذا الفرق مهم عند اعتماد الصيانة أو الإصلاح أو استبدال مكوّن كبير أو تطوير الأداء، ويساعدك أيضاً على مقارنة عروض الأسعار بإنصاف.')}</p>
-          </section>
+          {article.brand !== 'Ferrari' && (
+            <>
+              <section className="mt-14">
+                <h2 className="text-2xl font-black sm:text-3xl">{t('Why a specialist approach matters', 'لماذا تهم الخبرة المتخصصة؟')}</h2>
+                <p className="mt-4 leading-relaxed text-gray-300">{t(`Modern ${article.brand} vehicles combine mechanical systems with networked control modules, safety functions, comfort features and model-specific service procedures. A warning light may point to a symptom rather than the failed part. Replacing components without checking fault history, live information, wiring, fluids and the surrounding system can turn a straightforward repair into repeated expense.`, `تجمع سيارات ${article.brand} الحديثة بين الأنظمة الميكانيكية ووحدات التحكم المتصلة ووظائف السلامة والراحة وإجراءات صيانة خاصة بالطراز. قد تشير رسالة التحذير إلى عَرَض لا إلى القطعة التالفة، لذلك يؤدي استبدال المكونات من دون مراجعة سجل الأعطال والبيانات الحية والأسلاك والسوائل إلى تكاليف متكررة.`)}</p>
+                <p className="mt-4 leading-relaxed text-gray-300">{article.brand === 'Rolls-Royce' ? t('A good workshop should state what is confirmed, what is likely and what still needs testing. That distinction matters when approving maintenance, a repair or a major component replacement, and it makes quotations easier to compare fairly.', 'توضح الورشة الجيدة ما تم تأكيده وما هو محتمل وما يزال يحتاج إلى اختبار. هذا الفرق مهم عند اعتماد الصيانة أو الإصلاح أو استبدال مكوّن رئيسي، ويساعد على مقارنة عروض الأسعار بإنصاف.') : t('A good workshop should be comfortable saying what is confirmed, what is likely, and what still needs testing. That distinction matters when you are deciding whether to approve maintenance, a repair, a major component replacement or a performance upgrade. It also makes it easier to compare quotes fairly.', 'توضح الورشة الجيدة ما تم تأكيده، وما هو محتمل، وما يزال يحتاج إلى اختبار. هذا الفرق مهم عند اعتماد الصيانة أو الإصلاح أو استبدال مكوّن كبير أو تطوير الأداء، ويساعدك أيضاً على مقارنة عروض الأسعار بإنصاف.')}</p>
+              </section>
 
-          <section className="mt-14">
-            <h2 className="text-2xl font-black sm:text-3xl">{t(`${article.brand} models and common Dubai concerns`, `طرازات ${article.brand} والأعطال الشائعة في دبي`)}</h2>
-            <p className="mt-4 leading-relaxed text-gray-300">{t(`We see owners of ${article.models} looking for clear answers around reliability, service planning and the effect of Dubai heat. The exact concern depends on age, mileage, driving pattern and previous work, but these are the areas worth raising during an inspection:`, `يبحث مالكو طرازات ${article.models} عن إجابات واضحة حول الاعتمادية وخطة الصيانة وتأثير حرارة دبي. تختلف الأولويات حسب العمر والمسافة وطريقة القيادة والأعمال السابقة، لكن هذه أهم النقاط التي تستحق الفحص:`)}</p>
-            <div className="mt-6 grid gap-4 sm:grid-cols-3">
-              {article.commonProblems.map((problem) => <div key={problem} className="card-premium rounded-2xl p-5"><Wrench className="mb-3 h-5 w-5 text-burnt-orange" /><h3 className="font-bold">{problem}</h3><p className="mt-2 text-sm leading-relaxed text-gray-400">{t('The cause should be confirmed with a measured inspection before any major part is approved.', 'يجب تأكيد السبب بفحص وقياسات واضحة قبل اعتماد استبدال أي قطعة رئيسية.')}</p></div>)}
-            </div>
-            <p className="mt-6 leading-relaxed text-gray-300">{t('Heat, traffic, dust, occasional short journeys and long periods of idling can expose a marginal cooling system, tired battery, worn tyre or ageing fluid sooner than an owner expects. The goal is not to replace parts early without reason; it is to identify the items that can cause a breakdown, safety issue or more expensive repair if ignored.', 'قد تكشف الحرارة والازدحام والغبار والرحلات القصيرة وفترات التوقف الطويلة ضعف نظام التبريد أو البطارية أو الإطارات أو السوائل مبكراً. الهدف ليس تبديل القطع بلا سبب، بل تحديد ما قد يؤدي إلى تعطل أو مشكلة سلامة أو إصلاح أغلى إذا تم تجاهله.')}</p>
-          </section>
+              <section className="mt-14">
+                <h2 className="text-2xl font-black sm:text-3xl">{t(`${article.brand} models and common Dubai concerns`, `طرازات ${article.brand} والأعطال الشائعة في دبي`)}</h2>
+                <p className="mt-4 leading-relaxed text-gray-300">{t(`We see owners of ${article.models} looking for clear answers around reliability, service planning and the effect of Dubai heat. The exact concern depends on age, mileage, driving pattern and previous work, but these are the areas worth raising during an inspection:`, `يبحث مالكو طرازات ${article.models} عن إجابات واضحة حول الاعتمادية وخطة الصيانة وتأثير حرارة دبي. تختلف الأولويات حسب العمر والمسافة وطريقة القيادة والأعمال السابقة، لكن هذه أهم النقاط التي تستحق الفحص:`)}</p>
+                <div className="mt-6 grid gap-4 sm:grid-cols-3">
+                  {article.commonProblems.map((problem) => <div key={problem} className="card-premium rounded-2xl p-5"><Wrench className="mb-3 h-5 w-5 text-burnt-orange" /><h3 className="font-bold">{problem}</h3><p className="mt-2 text-sm leading-relaxed text-gray-400">{t('The cause should be confirmed with a measured inspection before any major part is approved.', 'يجب تأكيد السبب بفحص وقياسات واضحة قبل اعتماد استبدال أي قطعة رئيسية.')}</p></div>)}
+                </div>
+                <p className="mt-6 leading-relaxed text-gray-300">{t('Heat, traffic, dust, occasional short journeys and long periods of idling can expose a marginal cooling system, tired battery, worn tyre or ageing fluid sooner than an owner expects. The goal is not to replace parts early without reason; it is to identify the items that can cause a breakdown, safety issue or more expensive repair if ignored.', 'قد تكشف الحرارة والازدحام والغبار والرحلات القصيرة وفترات التوقف الطويلة ضعف نظام التبريد أو البطارية أو الإطارات أو السوائل مبكراً. الهدف ليس تبديل القطع بلا سبب، بل تحديد ما قد يؤدي إلى تعطل أو مشكلة سلامة أو إصلاح أغلى إذا تم تجاهله.')}</p>
+              </section>
 
-          <section className="mt-14">
-            <h2 className="text-2xl font-black sm:text-3xl">{t('Diagnostics and typical repair planning', 'التشخيص وخطة الإصلاح المناسبة')}</h2>
-            <p className="mt-4 leading-relaxed text-gray-300">{t(`For ${article.brand} work, the diagnostic focus is ${article.diagnosticFocus}. The technician should connect the symptom to evidence, then explain the order of work. A thoughtful plan often starts with the least invasive checks, confirms the source of the issue, and only then moves to repair or component replacement.`, `يركز تشخيص ${article.brand} على ${article.diagnosticFocus}. يربط الفني العَرَض بالدليل ثم يشرح ترتيب العمل. تبدأ الخطة المدروسة عادة بأقل الاختبارات تدخلاً، وتؤكد مصدر المشكلة، ثم تنتقل إلى الإصلاح أو الاستبدال.`)}</p>
-            <ul className="mt-5 space-y-3 text-gray-300">
-              {article.repairFocus.map((repair) => <li key={repair} className="flex gap-3"><CheckCircle2 className="mt-1 h-4 w-4 shrink-0 text-burnt-orange" /><span>{repair}</span></li>)}
-            </ul>
-            <p className="mt-5 leading-relaxed text-gray-300">{t('A written inspection result helps you decide what is urgent, what can be scheduled, and which preventive items are genuinely worthwhile. It also gives you a useful record if you are comparing options, planning a long journey or preparing the car for sale.', 'تساعدك نتيجة الفحص المكتوبة على معرفة ما هو عاجل وما يمكن جدولته وما يستحق الصيانة الوقائية فعلاً. كما توفر سجلاً مفيداً عند مقارنة الخيارات أو التخطيط للسفر أو تجهيز السيارة للبيع.')}</p>
-          </section>
+              <section className="mt-14">
+                <h2 className="text-2xl font-black sm:text-3xl">{t('Diagnostics and typical repair planning', 'التشخيص وخطة الإصلاح المناسبة')}</h2>
+                <p className="mt-4 leading-relaxed text-gray-300">{t(`For ${article.brand} work, the diagnostic focus is ${article.diagnosticFocus}. The technician should connect the symptom to evidence, then explain the order of work. A thoughtful plan often starts with the least invasive checks, confirms the source of the issue, and only then moves to repair or component replacement.`, `يركز تشخيص ${article.brand} على ${article.diagnosticFocus}. يربط الفني العَرَض بالدليل ثم يشرح ترتيب العمل. تبدأ الخطة المدروسة عادة بأقل الاختبارات تدخلاً، وتؤكد مصدر المشكلة، ثم تنتقل إلى الإصلاح أو الاستبدال.`)}</p>
+                <ul className="mt-5 space-y-3 text-gray-300">
+                  {article.repairFocus.map((repair) => <li key={repair} className="flex gap-3"><CheckCircle2 className="mt-1 h-4 w-4 shrink-0 text-burnt-orange" /><span>{repair}</span></li>)}
+                </ul>
+                <p className="mt-5 leading-relaxed text-gray-300">{t('A written inspection result helps you decide what is urgent, what can be scheduled, and which preventive items are genuinely worthwhile. It also gives you a useful record if you are comparing options, planning a long journey or preparing the car for sale.', 'تساعدك نتيجة الفحص المكتوبة على معرفة ما هو عاجل وما يمكن جدولته وما يستحق الصيانة الوقائية فعلاً. كما توفر سجلاً مفيداً عند مقارنة الخيارات أو التخطيط للسفر أو تجهيز السيارة للبيع.')}</p>
+              </section>
 
-          <section className="mt-14">
-            <h2 className="text-2xl font-black sm:text-3xl">{t('Maintenance in Dubai: plan by condition, not guesswork', 'الصيانة في دبي: خطة مبنية على الحالة لا التخمين')}</h2>
-            <p className="mt-4 leading-relaxed text-gray-300">{article.maintenanceNote}</p>
-            {article.brand === 'Mercedes-Benz' && <div className="mt-6 space-y-4"><h3 className="text-xl font-bold">{t('Is a Mercedes reliable for Gulf ownership?', 'هل تناسب مرسيدس الاستخدام في الخليج؟')}</h3><p className="leading-relaxed text-gray-300">{t('Reliability depends on the individual car: generation, engine, equipment, maintenance, previous repairs and current condition. Check the cooling system, AC, batteries, tyres and warning history alongside the due schedule. A high or low mileage reading alone does not establish whether a car is a sensible purchase.', 'تعتمد الاعتمادية على السيارة نفسها: جيل الطراز والمحرك والتجهيزات والصيانة والإصلاحات السابقة والحالة الحالية. راجع التبريد والتكييف والبطاريات والإطارات وسجل التحذيرات مع الصيانة المستحقة. المسافة المقطوعة وحدها لا تكفي للحكم على ملاءمة الشراء.')}</p>{!isArabic && <Link to="/blog/pre-purchase-inspection-dubai-guide" className="inline-block font-semibold text-burnt-orange hover:underline">What a pre-purchase inspection should cover</Link>}</div>}
-            <p className="mt-4 leading-relaxed text-gray-300">{t('A practical maintenance conversation covers engine oil and filters, brake condition, tyres, battery health, cooling performance, air-conditioning, fluids, leaks, service records and any stored warning codes. For performance, luxury and older vehicles, it also helps to discuss storage, battery conditioning and how often the car is driven. This gives the workshop a fuller picture than a mileage number on its own.', 'تشمل مناقشة الصيانة العملية زيت المحرك والفلاتر والفرامل والإطارات والبطارية والتبريد والمكيف والسوائل والتسريبات وسجل الصيانة ورموز الأعطال المخزنة. وفي السيارات الفاخرة أو عالية الأداء أو الأقدم، تفيد معرفة مدة التخزين وطريقة شحن البطارية وعدد مرات الاستخدام، لأن هذه الصورة أدق من رقم المسافة وحده.')}</p>
-          </section>
+              <section className="mt-14">
+                <h2 className="text-2xl font-black sm:text-3xl">{t('Maintenance in Dubai: plan by condition, not guesswork', 'الصيانة في دبي: خطة مبنية على الحالة لا التخمين')}</h2>
+                <p className="mt-4 leading-relaxed text-gray-300">{article.maintenanceNote}</p>
+                {article.brand === 'Mercedes-Benz' && <div className="mt-6 space-y-4"><h3 className="text-xl font-bold">{t('Is a Mercedes reliable for Gulf ownership?', 'هل تناسب مرسيدس الاستخدام في الخليج؟')}</h3><p className="leading-relaxed text-gray-300">{t('Reliability depends on the individual car: generation, engine, equipment, maintenance, previous repairs and current condition. Check the cooling system, AC, batteries, tyres and warning history alongside the due schedule. A high or low mileage reading alone does not establish whether a car is a sensible purchase.', 'تعتمد الاعتمادية على السيارة نفسها: جيل الطراز والمحرك والتجهيزات والصيانة والإصلاحات السابقة والحالة الحالية. راجع التبريد والتكييف والبطاريات والإطارات وسجل التحذيرات مع الصيانة المستحقة. المسافة المقطوعة وحدها لا تكفي للحكم على ملاءمة الشراء.')}</p>{!isArabic && <Link to="/blog/pre-purchase-inspection-dubai-guide" className="inline-block font-semibold text-burnt-orange hover:underline">What a pre-purchase inspection should cover</Link>}</div>}
+                <p className="mt-4 leading-relaxed text-gray-300">{t('A practical maintenance conversation covers engine oil and filters, brake condition, tyres, battery health, cooling performance, air-conditioning, fluids, leaks, service records and any stored warning codes. For performance, luxury and older vehicles, it also helps to discuss storage, battery conditioning and how often the car is driven. This gives the workshop a fuller picture than a mileage number on its own.', 'تشمل مناقشة الصيانة العملية زيت المحرك والفلاتر والفرامل والإطارات والبطارية والتبريد والمكيف والسوائل والتسريبات وسجل الصيانة ورموز الأعطال المخزنة. وفي السيارات الفاخرة أو عالية الأداء أو الأقدم، تفيد معرفة مدة التخزين وطريقة شحن البطارية وعدد مرات الاستخدام، لأن هذه الصورة أدق من رقم المسافة وحده.')}</p>
+              </section>
+            </>
+          )}
 
           {article.brand === 'Ferrari' && (
             <>
@@ -324,6 +361,21 @@ const BrandWorkshopArticleContent = ({ article, isArabic }: { article: BrandWork
                   <a href="https://www.ferrari.com/en-EN/auto/car-part-services-warranty-maintenance" target="_blank" rel="noopener noreferrer" className="font-semibold text-burnt-orange hover:underline">{t('Ferrari maintenance programme details', 'تفاصيل برنامج صيانة فيراري')}</a>.
                 </p>
                 <p className="mt-4 leading-relaxed text-gray-300">{t('Low mileage does not remove the need for annual attention. Heat cycles, long storage, battery condition, tyre age, fluid ageing and seals can all matter before the odometer reaches the next distance-based interval. Cars used on track or driven hard should be assessed around that use rather than relying on the calendar alone.', 'قلة المسافة لا تلغي الحاجة إلى المتابعة السنوية. تؤثر الحرارة والتخزين الطويل وحالة البطارية وعمر الإطارات وتقادم السوائل والأختام حتى قبل بلوغ موعد المسافة التالي. أما سيارات الحلبة أو الاستخدام القوي فتحتاج إلى فحص يناسب طريقة استخدامها.')}</p>
+              </section>
+
+              <section className="mt-14">
+                <h2 className="text-2xl font-black sm:text-3xl">{t('What a Ferrari maintenance visit can include', 'ماذا يمكن أن تشمل زيارة صيانة فيراري؟')}</h2>
+                <p className="mt-4 leading-relaxed text-gray-300">{t('There is no single package for every Ferrari. The due work should be selected from the exact model, model year, programme or handbook information and documented history, then adjusted only when inspection evidence supports it.', 'لا توجد باقة واحدة تناسب جميع سيارات فيراري. تُحدد الأعمال المستحقة وفق الطراز وسنة الصنع ومعلومات البرنامج أو الدليل والسجل الموثق، ولا تضاف أعمال أخرى إلا عندما تدعمها نتيجة الفحص.')}</p>
+                <ul className="mt-5 space-y-3 text-gray-300">
+                  {[
+                    t('Model-approved engine oil, filter and other due consumables', 'زيت المحرك والفلاتر والمواد المستحقة بالمواصفات المناسبة للطراز'),
+                    t('Fluid condition, visible leaks, cooling and heat-management checks', 'حالة السوائل والتسريبات الظاهرة وفحص التبريد وإدارة الحرارة'),
+                    t('Tyre age and wear, brake condition, suspension and battery health', 'عمر الإطارات وتآكلها وحالة الفرامل والتعليق والبطارية'),
+                    t('Supported system scan, warning review and service reset where applicable', 'فحص الأنظمة المدعومة ومراجعة التحذيرات وإعادة ضبط الخدمة عند انطباقها'),
+                    t('Written findings with due, urgent and optional work separated', 'تقرير مكتوب يفصل بين الأعمال المستحقة والعاجلة والاختيارية'),
+                  ].map((item) => <li key={item} className="flex gap-3"><CheckCircle2 className="mt-1 h-4 w-4 shrink-0 text-burnt-orange" /><span>{item}</span></li>)}
+                </ul>
+                <p className="mt-5 leading-relaxed text-gray-300">{t('For the next step, review our ', 'للخطوة التالية، راجع صفحة ')}<Link to="/brands/ferrari-service-dubai/oil-change" className="font-semibold text-burnt-orange hover:underline">{t('Ferrari oil service', 'خدمة زيت فيراري')}</Link>{t(', ', '، و')}<Link to="/brands/ferrari-service-dubai/engine-diagnostics" className="font-semibold text-burnt-orange hover:underline">{t('Ferrari diagnostics', 'تشخيص فيراري')}</Link>{t(' or ', ' أو ')}<Link to="/brands/ferrari-service-dubai/transmission-repair" className="font-semibold text-burnt-orange hover:underline">{t('F1 and dual-clutch transmission assessment', 'فحص ناقل الحركة F1 وثنائي القابض')}</Link>{t(' pages for the workshop scope behind each concern.', ' لمعرفة نطاق الورشة لكل حالة.')}</p>
               </section>
 
               <section className="mt-14">
@@ -424,7 +476,7 @@ const BrandWorkshopArticleContent = ({ article, isArabic }: { article: BrandWork
 
           <section className="mt-14 border-t border-white/10 pt-10">
             <h2 className="text-2xl font-black">{t('Related workshop guides', 'أدلة ورش مرتبطة')}</h2>
-            <div className="mt-6 grid gap-4 sm:grid-cols-3">{relatedArticles.map((item) => <Link key={item.slug} to={`/blog/${item.slug}`} className="card-premium rounded-2xl p-5 transition-colors hover:text-burnt-orange"><p className="text-xs font-bold uppercase tracking-widest text-burnt-orange">{t('Workshop Guide', 'دليل الورشة')}</p><h3 className="mt-2 font-bold">{item.title}</h3></Link>)}</div>
+            <div className="mt-6 grid gap-4 sm:grid-cols-3">{relatedArticles.map((item) => <Link key={item.path} to={item.path} className="card-premium rounded-2xl p-5 transition-colors hover:text-burnt-orange"><p className="text-xs font-bold uppercase tracking-widest text-burnt-orange">{t('Workshop Guide', 'دليل الورشة')}</p><h3 className="mt-2 font-bold">{item.title}</h3></Link>)}</div>
           </section>
         </article>
       </main>

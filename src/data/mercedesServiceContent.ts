@@ -189,7 +189,7 @@ export const MERCEDES_SERVICE_CONTENT: Partial<Record<ServiceKey, MercedesConten
       { title: 'Choose a supported repair route', description: 'Explain whether findings support wiring or connector repair, further component investigation or replacement. ECU repair availability is confirmed for the specific module; not every unit can be repaired.' },
       { title: 'Verify the affected functions', description: 'After agreed work, recheck the original complaint and relevant faults. Any required coding or programming is assessed separately for compatibility and access.' },
     ],
-    partsCopy: 'The estimate separates fault tracing, wiring or connector work, components and any supported software work. Audio-system fault diagnosis does not establish that an aftermarket audio or stereo upgrade can be supplied or installed.',
+    partsCopy: 'The estimate separates fault tracing, wiring or connector work, components and any supported software work. Mercedes stereo upgrades are assessed separately against the fitted audio system, chosen equipment and integration requirements.',
     faqs: [
       { question: 'Does an ECU fault code prove the ECU is damaged?', answer: 'No. Supply voltage, grounds, wiring and other communicating components may affect the result. The module should be assessed in the context of the vehicle.' },
       { question: 'Can every ECU or SAM be repaired?', answer: 'No. The part number, damage, test findings and supported repair route determine what is possible. Replacement and required software work must also be checked for compatibility.' },

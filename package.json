@@ -13,6 +13,8 @@
     "preview": "vite preview",
     "sitemap:brands": "node scripts/sync-brand-sitemap.mjs",
     "validate:seo": "node scripts/validate-seo.mjs",
+    "validate:master-seo": "node scripts/validate-master-seo.mjs",
+    "typecheck": "tsc --noEmit -p tsconfig.app.json && tsc --noEmit -p tsconfig.node.json",
     "validate:ppf": "node scripts/validate-ppf.mjs",
     "hosting:rules": "node scripts/generate-hosting-rules.mjs",
     "test:routing": "node scripts/test-hosting-rules.mjs"

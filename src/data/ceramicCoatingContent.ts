@@ -2,7 +2,7 @@
 // products, coating schedules, ratings and commercial terms need verification.
 export const CERAMIC_PATH = '/services/ceramic-coating';
 export const CERAMIC_TITLE = 'Ceramic Coating Dubai | Car Paint Protection | DIGI-TEC';
-export const CERAMIC_DESCRIPTION = 'Professional ceramic coating in Dubai for luxury and performance cars. Explore paint preparation and surface protection at DIGI-TEC. Request your quote.';
+export const CERAMIC_DESCRIPTION = 'Ceramic paint protection in Dubai for luxury and performance cars. Explore coating, paint preparation and aftercare at DIGI-TEC in Al Quoz. Get your quote.';
 export const CERAMIC_H1 = 'Ceramic Coating Dubai';
 
 import type { VerifiedStartingPrice } from '@/lib/verified-pricing';

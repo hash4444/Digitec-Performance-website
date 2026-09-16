@@ -1,0 +1,50 @@
+{
+  "passed": true,
+  "testedAt": "2026-09-16T08:25:06.166Z",
+  "sourceSha256": "7cf75aad8fafea31a8964138a81be9ca7ddce881f86c4073762db190d941c7c4",
+  "requests": [
+    {
+      "path": "/services/paint-protection-film",
+      "status": 200
+    },
+    {
+      "path": "/services/paint-protection-film?utm_source=google&utm_medium=organic&utm_campaign=gbp&utm_content=release_qa",
+      "status": 200
+    },
+    {
+      "path": "/services/paint-protection-film/?utm_source=google&utm_medium=organic&utm_campaign=gbp&utm_content=release_slash",
+      "status": 308,
+      "location": "http://127.0.0.1:5190/services/paint-protection-film?utm_source=google&utm_medium=organic&utm_campaign=gbp&utm_content=release_slash"
+    },
+    {
+      "path": "/services/ceramic-coating",
+      "status": 200
+    },
+    {
+      "path": "/services/ceramic-coating?utm_source=google&utm_medium=organic&utm_campaign=gbp&utm_content=release_qa",
+      "status": 200
+    },
+    {
+      "path": "/services/ceramic-coating/?utm_source=google&utm_medium=organic&utm_campaign=gbp&utm_content=release_slash",
+      "status": 308,
+      "location": "http://127.0.0.1:5190/services/ceramic-coating?utm_source=google&utm_medium=organic&utm_campaign=gbp&utm_content=release_slash"
+    },
+    {
+      "path": "/services/car-polishing-dubai",
+      "status": 200
+    },
+    {
+      "path": "/services/car-polishing-dubai?utm_source=google&utm_medium=organic&utm_campaign=gbp&utm_content=release_qa",
+      "status": 200
+    },
+    {
+      "path": "/services/car-polishing-dubai/?utm_source=google&utm_medium=organic&utm_campaign=gbp&utm_content=release_slash",
+      "status": 308,
+      "location": "http://127.0.0.1:5190/services/car-polishing-dubai?utm_source=google&utm_medium=organic&utm_campaign=gbp&utm_content=release_slash"
+    }
+  ],
+  "spaNavigation": "directory to PPF to ceramic to polishing to PPF; back, forward and return checks passed",
+  "runtimeOrHydrationErrors": [],
+  "failedLocalResponses": [],
+  "unknownServiceStatus": 404
+}

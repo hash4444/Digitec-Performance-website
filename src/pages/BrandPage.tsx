@@ -1356,6 +1356,17 @@ const BrandPage = () => {
         </div>
       </section>
 
+      {!isArabic && (brand.slug === 'cadillac-service-dubai' || brand.slug === 'mercedes-benz-service-dubai') && (
+        <section className="border-t border-white/10 py-12 sm:py-16" aria-labelledby="brand-electronics-title">
+          <div className="mx-auto max-w-6xl px-5 sm:px-8">
+            <h2 id="brand-electronics-title" className="text-2xl font-semibold sm:text-3xl">{brand.slug === 'cadillac-service-dubai' ? 'Cadillac CUE touchscreen concerns' : 'Mercedes infotainment repair and audio upgrades'}</h2>
+            <p className="mt-4 max-w-3xl text-base leading-8 text-gray-300">{brand.slug === 'cadillac-service-dubai' ? 'For an unresponsive touchscreen, ghost touches or a damaged display, explore the CUE repair process. Model year, fitted system and diagnosis determine the appropriate screen repair or replacement.' : 'A head-unit fault and a planned sound-system upgrade need different assessments. Describe the symptom or the improvement you want so we can confirm compatible equipment and the right scope.'}</p>
+            <div className="mt-6 flex flex-wrap gap-x-8 gap-y-4">
+              {brand.slug === 'cadillac-service-dubai' ? <Link to="/services/cadillac-cue-screen-repair-dubai" className="text-burnt-orange underline">Cadillac CUE screen repair and replacement</Link> : <><Link to="/services/head-unit-repair-dubai" className="text-burnt-orange underline">Head-unit and COMAND repair</Link><Link to="/services/mercedes-audio-upgrade-dubai" className="text-burnt-orange underline">Mercedes stereo and audio upgrades</Link></>}
+            </div>
+          </div>
+        </section>
+      )}
       {!isArabic && <BrandPaintCareLinks brandName={brand.name} />}
 
       {isMercedesServiceHub && !isArabic && <div id="mercedes-reviews" className="scroll-mt-[10rem]"><GoogleReviews /></div>}
