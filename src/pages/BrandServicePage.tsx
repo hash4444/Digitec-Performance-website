@@ -7,6 +7,7 @@ import BentleyCameraSection from '@/components/BentleyCameraSection';
 import { Footer } from '@/components/Footer';
 import { FinalCTA } from '@/components/FinalCTA';
 import { serviceEnquiryLabel } from '@/data/queryServiceContent';
+import { arabicServiceContent } from '@/data/arabicServiceContent';
 import { useSeo } from '@/hooks/use-seo';
 import {
   Accordion,
@@ -496,31 +497,31 @@ const BrandServicePage: React.FC<BrandServicePageProps> = ({
   const sourceCombo = brandSlug && serviceSlug ? getBrandServiceCombo(brandSlug, serviceSlug, { mercedesEnglishContent: !isArabic }) : undefined;
   const localizedCombo = sourceCombo && isArabic ? (() => {
     const serviceName = serviceNamesArabic[sourceCombo.serviceSlug] ?? 'خدمة السيارات';
+    const serviceCopy = arabicServiceContent[sourceCombo.serviceSlug];
     const standardFaqs = [
-      { question: `متى تحتاج سيارة ${sourceCombo.brandName} إلى ${serviceName}؟`, answer: 'عند ظهور تحذير أو صوت أو تغير في الأداء، أو وفق موعد الصيانة الموصى به للطراز والاستخدام.' },
-      { question: 'هل يتم الفحص قبل الإصلاح؟', answer: 'نعم. نبدأ بالتشخيص ثم نوضح النتيجة وخيارات الإصلاح والتكلفة قبل بدء العمل.' },
-      { question: 'هل تستخدمون قطعاً أصلية؟', answer: 'نوفر قطع OEM أصلية أو بدائل موثوقة مطابقة للمواصفات، ونوضح الخيارات قبل التركيب.' },
-      { question: 'كيف أحجز موعداً؟', answer: 'اتصل بنا أو أرسل رسالة واتساب مع تفاصيل السيارة والخدمة المطلوبة.' },
+      { question: serviceCopy.question, answer: serviceCopy.answer },
+      { question: `ما الذي يحدد تكلفة ${serviceName} لسيارة ${sourceCombo.brandName}؟`, answer: 'تعتمد التكلفة على الطراز والسنة والنظام المركب ووقت الفحص والنتائج والقطع المطلوبة. اطلب توضيح نطاق الاختبارات والقطع والعمالة قبل الموافقة على العمل.' },
+      { question: 'كيف يتم اختيار القطع؟', answer: 'يتم تأكيد المواصفة والتوافق والمصدر والتوفر للسيارة والعمل المطلوب. اطلب بيان خيارات القطع وشروطها في عرض السعر؛ لا يفترض مصدر محدد قبل التأكيد.' },
+      { question: 'ما المعلومات المطلوبة لحجز الفحص؟', answer: 'أرسل الطراز والسنة والمسافة وسجل الصيانة ونص التحذير أو وصف المشكلة ووقت ظهورها. يتم تأكيد نطاق الخدمة ووظائف التشخيص المتاحة والموعد بناءً على السيارة.' },
     ];
     const steps = [
       { title: 'الفحص الأولي', description: 'مراجعة الأعراض وسجل السيارة وإجراء فحص بصري ومنظم.' },
-      { title: 'التشخيص المتقدم', description: 'قراءة الأعطال والبيانات الحية واختبار المكونات المرتبطة.' },
-      { title: 'الإصلاح والمعايرة', description: 'تنفيذ العمل المتفق عليه باستخدام قطع وإجراءات مناسبة للسيارة.' },
-      { title: 'الفحص النهائي', description: 'اختبار النظام والسيارة وتوثيق النتيجة والتوصيات.' },
+      { title: 'الاختبارات المناسبة', description: 'تحديد الاختبارات المطلوبة والبيانات المتاحة حسب النظام المركب ونطاق التشخيص المؤكد.' },
+      { title: 'مراجعة عرض الإصلاح', description: 'تأكيد القطع والإجراءات والعمالة وأي برمجة أو معايرة مطلوبة ومتاحة قبل الموافقة.' },
+      { title: 'مراجعة النتيجة', description: 'مناقشة اختبارات التحقق المناسبة للعمل والنتائج والتوصيات عند التسليم.' },
     ];
-    const symptoms = ['ظهور رسالة أو ضوء تحذير', 'تغير ملحوظ في أداء السيارة', 'صوت أو اهتزاز غير معتاد', 'تأخر موعد الصيانة أو تكرار المشكلة'];
     return {
       ...sourceCombo,
       serviceName,
       serviceType: serviceName,
       h1: `${serviceName} ${sourceCombo.brandName} في دبي`,
       metaTitle: `${serviceName} ${sourceCombo.brandName} في دبي | ديجي-تك`,
-      metaDescription: `${serviceName} متخصص لسيارات ${sourceCombo.brandName} في دبي مع تشخيص متقدم وقطع مناسبة وتسعير واضح لدى مركز ديجي-تك.`,
-      heroCopy: `يقدم مركز ديجي-تك خدمة ${serviceName} المتخصصة لسيارات ${sourceCombo.brandName} في دبي، بدءاً من التشخيص الدقيق وحتى الإصلاح والمعايرة والاختبار النهائي.`,
-      symptoms: sourceCombo.symptoms.map((_, index) => symptoms[index % symptoms.length]),
-      processSteps: sourceCombo.processSteps.map((_, index) => steps[index % steps.length]),
-      partsCopy: `نستخدم قطع OEM أصلية أو بدائل موثوقة مطابقة لمواصفات ${sourceCombo.brandName}، مع توثيق القطع والأعمال بوضوح.`,
-      faqs: sourceCombo.faqs.map((_, index) => standardFaqs[index % standardFaqs.length]),
+      metaDescription: `${serviceName} ${sourceCombo.brandName} في دبي. ${serviceCopy.summary}`,
+      heroCopy: `${serviceName} لسيارات ${sourceCombo.brandName} لدى ديجي-تك في القوز، دبي. ${serviceCopy.summary} يتم تأكيد قبول السيارة والاختبارات والقطع المطلوبة قبل اعتماد العمل.`,
+      symptoms: serviceCopy.symptoms,
+      processSteps: steps,
+      partsCopy: `تحدد بيانات سيارة ${sourceCombo.brandName} والنظام المركب والنتائج القطع المناسبة. يتم تأكيد التوافق والمصدر والتوفر وأي وظائف برمجة أو معايرة مطلوبة قبل طلب المكونات.`,
+      faqs: standardFaqs,
       whatsAppMessage: `مرحباً ديجي-تك، أريد حجز ${serviceName} لسيارة ${sourceCombo.brandName}.`,
     };
   })() : sourceCombo;
@@ -702,16 +703,15 @@ const BrandServicePage: React.FC<BrandServicePageProps> = ({
         </div>
       </section>
 
-      {!isArabic && combo.brandSlug === 'mercedes-benz-service-dubai' && (
-        <nav aria-label="On this page" className="border-b border-white/10 bg-black">
+      <nav aria-label={isArabic ? 'في هذه الصفحة' : 'On this page'} className="border-b border-white/10 bg-black">
           <div className="mx-auto flex max-w-5xl gap-2 overflow-x-auto px-4 py-3 sm:px-6">
             {[
-              ['Symptoms', '#service-symptoms'],
+              [isArabic ? 'الأعراض' : 'Symptoms', '#service-symptoms'],
               ...(mercedesServiceScope ? [['Scope', '#service-scope']] : []),
-              ['Process', '#service-process'],
-              ...(relatedAuthorityContent.length ? [['Guides', '#service-guides']] : []),
-              ['FAQs', '#service-faqs'],
-              ['Book', '#service-booking'],
+              [isArabic ? 'خطوات الفحص' : 'Process', '#service-process'],
+              ...(relatedAuthorityContent.length && !isArabic ? [['Guides', '#service-guides']] : []),
+              [isArabic ? 'الأسئلة الشائعة' : 'FAQs', '#service-faqs'],
+              [isArabic ? 'الحجز' : 'Book', '#service-booking'],
             ].map(([label, href]) => (
               <a key={href} href={href} className="inline-flex min-h-11 shrink-0 items-center rounded-full border border-white/10 px-4 py-2 text-xs font-semibold text-white/65 transition-colors hover:border-burnt-orange/50 hover:text-burnt-orange focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-burnt-orange">
                 {label}
@@ -719,8 +719,6 @@ const BrandServicePage: React.FC<BrandServicePageProps> = ({
             ))}
           </div>
         </nav>
-      )}
-
       {/* Symptoms */}
       <section id="service-symptoms" className="scroll-mt-24 py-12 sm:py-16 bg-black border-t border-white/5">
         <div className="max-w-5xl mx-auto px-4 sm:px-6">

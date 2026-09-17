@@ -61,13 +61,14 @@ const VrxPage = () => {
     <div className="site-page min-h-screen bg-black text-off-white">
       <Header />
 
+      <main>
       {/* Hero Section */}
       <section className="border-b border-white/[0.08] py-16 sm:py-20 lg:py-24">
         <div className="mx-auto grid max-w-[90rem] items-center gap-10 px-5 sm:px-8 lg:grid-cols-[0.82fr_1.18fr] lg:gap-16 lg:px-12">
-          <motion.div initial={{ opacity: 0, y: 18 }} animate={{ opacity: 1, y: 0 }}>
+          <motion.div initial={false} animate={{ opacity: 1, y: 0 }}>
             <p className="eyebrow mb-5">{isArabic ? arVrx.hero.eyebrow : 'Vehicle-Specific Inspection & Consultation'}</p>
             <h1 className="text-[clamp(2.75rem,5vw,5rem)] font-semibold leading-[0.98] tracking-[-0.05em]">
-              Mercedes V-Class <span className="text-red-500">VRX</span> Consultation
+              {isArabic ? <>استشارة مشروع <span className="text-red-500">VRX</span> لمرسيدس V-Class</> : <>Mercedes V-Class <span className="text-red-500">VRX</span> Consultation</>}
             </h1>
             <p className="mt-6 text-lg text-white/64 sm:text-xl">
               {isArabic ? arVrx.hero.subtitle : 'Dubai workshop consultation for a Mercedes V-Class project.'}
@@ -76,7 +77,7 @@ const VrxPage = () => {
               {isArabic ? arVrx.hero.description : 'Discuss the vehicle, its current condition, intended use, interior or exterior requests, and performance goals before a project scope is confirmed.'}
             </p>
           </motion.div>
-          <motion.div initial={{ opacity: 0, y: 18 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.15 }}>
+          <motion.div initial={false} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.15 }}>
             <img
               src="/images/vrx-hero.jpg"
               alt={isArabic ? 'مرسيدس V-Class VRX في دبي' : 'Mercedes V-Class VRX in Dubai'}
@@ -261,6 +262,7 @@ const VrxPage = () => {
         </div>
       </section>
 
+      </main>
       <Footer />
     </div>
   );

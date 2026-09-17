@@ -41,7 +41,7 @@ import lamborghiniUrusWorkshop from '@/assets/lamborghini-urus-workshop-dubai.jp
 import porscheWorkshop from '@/assets/porsche-workshop-dubai.jpg';
 import porscheGt3rsWorkshop from '@/assets/porsche-gt3rs-workshop-dubai.jpg';
 import maybachWorkshop from '@/assets/maybach-workshop-dubai.jpg';
-import mercedesAmgEngine from '@/assets/mercedes-amg-engine-repair-dubai.jpg';
+const mercedesAmgEngine = '/images/seo/mercedes-engine-repair-1086.webp';
 import g63BrabusFinishedFront from '@/assets/g63-brabus-g800-finished-front.jpg';
 import { mercedesModelPages } from '@/data/mercedesModelPages';
 import { MERCEDES_PROBLEMS_PATH } from '@/data/mercedesProblemGuides';
@@ -445,7 +445,7 @@ const BrandPage = () => {
       ? `خدمة وفحص سيارات ${brand.name} لدى ورشة ديجي-تك في القوز، دبي. تواصل مع الفريق لتأكيد نطاق الخدمة المناسب لطراز سيارتك.`
       : priorityBrandSeo?.description ?? `${brand.name} vehicle inspection, maintenance and repair at Digi-Tec Performance Center in Al Quoz, Dubai. Contact the team to confirm the appropriate service scope for your model.`;
     const schemaImage = priorityBrandSeo?.heroImage
-      ?? (isMercedes ? mercedesWorkshop : isRangeRoverHub ? rangeRoverWorkshop : isDefenderHub ? defenderWorkshop : brand.logo || undefined);
+      ?? (isMercedes ? mercedesAmgEngine : isRangeRoverHub ? rangeRoverWorkshop : isDefenderHub ? defenderWorkshop : brand.logo || undefined);
     const breadcrumb = buildBreadcrumb(url, [
       { name: isArabic ? 'الرئيسية' : 'Home', url: `https://digitecme.com${isArabic ? '/ar' : '/'}` },
       { name: isArabic ? 'العلامات' : 'Brands', url: `https://digitecme.com${isArabic ? '/ar' : ''}/brands` },
@@ -512,8 +512,8 @@ const BrandPage = () => {
     canonical: brand ? `https://digitecme.com${isArabic ? '/ar' : ''}/brands/${brand.slug}` : `https://digitecme.com${isArabic ? '/ar' : '/'}`,
     ogImage: priorityBrandSeo?.heroImage
       ? `https://digitecme.com${priorityBrandSeo.heroImage}`
-      : isMercedesServiceHub ? `https://digitecme.com${mercedesWorkshop}` : isRangeRoverServiceHub ? `https://digitecme.com${rangeRoverWorkshop}` : isDefenderServiceHub ? `https://digitecme.com${defenderWorkshop}` : undefined,
-    ogImageAlt: priorityBrandSeo?.heroImageAlt,
+      : isMercedesServiceHub ? `https://digitecme.com${mercedesAmgEngine}` : isRangeRoverServiceHub ? `https://digitecme.com${rangeRoverWorkshop}` : isDefenderServiceHub ? `https://digitecme.com${defenderWorkshop}` : undefined,
+    ogImageAlt: priorityBrandSeo?.heroImageAlt ?? (isMercedesServiceHub ? 'Mercedes-AMG engine bay' : undefined),
     ogImageWidth: priorityBrandSeo?.heroImageWidth,
     ogImageHeight: priorityBrandSeo?.heroImageHeight,
     ogTitle: isArabic && isMercedesServiceHub ? undefined : specialistHubTitle,

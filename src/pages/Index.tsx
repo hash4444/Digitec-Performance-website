@@ -33,7 +33,7 @@ const Index = () => {
           name: isArabic ? 'ديجي-تك — ورشة سيارات مستقلة في دبي' : 'Digi-Tec Performance Center — Independent Car Workshop Dubai',
           description: isArabic ? 'ورشة سيارات مستقلة في دبي تأسست عام 2002، وتعرض خدمات الفحص والصيانة والإصلاح والبرمجة وأعمال الهيكل واستشارات مشاريع الأداء.' : 'Independent Dubai car workshop established in 2002, with vehicle inspection, maintenance, repair, programming, bodywork and performance-project consultation services.',
           type: 'WebPage',
-          primaryImage: 'https://digitecme.com/favicon-192x192.png',
+          primaryImage: 'https://digitecme.com/images/seo/hero-1536.webp',
           mainEntityId: businessRef['@id'],
         }),
         {
@@ -73,6 +73,7 @@ const Index = () => {
   return (
     <div className="home-premium min-h-screen bg-black text-off-white">
       <Header />
+      <main id="main-content">
       <div id="home">
         <Hero />
       </div>
@@ -123,6 +124,7 @@ const Index = () => {
         <FAQ />
       </div>
       <FinalCTA />
+      </main>
       <Footer />
       <MascotWidget />
     </div>

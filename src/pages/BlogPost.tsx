@@ -12,6 +12,7 @@ import { buildArticle, buildBreadcrumb, buildFAQ, buildWebPage, pageGraph } from
 import { useLocale } from '@/i18n/use-locale';
 import { categoryArabic, localizeBlogPostToArabic, localizePostSummaryToArabic } from '@/i18n/ar-blog';
 import { MERCEDES_UNTRANSLATED_MODEL_PATHS } from '@/i18n/mercedes-language';
+import { getRelatedArticles } from '@/lib/related-articles';
 
 type ContentBlock = { type: 'h2' | 'h3' | 'p' | 'ul'; text?: string; items?: string[] };
 
@@ -125,6 +126,17 @@ const relatedServiceByPost: Record<string, { href: string; label: string; descri
   },
 };
 
+// The symptom/model destinations below are English-only. Link Arabic readers
+// to an existing Arabic service owner instead of constructing a missing route.
+const arabicRelatedServiceByPost: Record<string, { href: string; label: string }> = {
+  'air-suspension-repair-dubai-guide': { href: '/services/mercedes-suspension-repair-dubai', label: 'فحص وإصلاح تعليق مرسيدس' },
+  'check-engine-light-dubai-guide': { href: '/services/mercedes-diagnostics-dubai', label: 'فحص وتشخيص مرسيدس' },
+  'engine-overheating-dubai-what-to-do': { href: '/services/mercedes-mechanical-repair-dubai', label: 'فحص وإصلاح مرسيدس الميكانيكي' },
+  'ferrari-488-service-dubai-guide': { href: '/brands/ferrari-service-dubai', label: 'خدمات صيانة وإصلاح فيراري' },
+  'mercedes-repair-dubai-complete-guide': { href: '/brands/mercedes-benz-service-dubai', label: 'خدمات صيانة وإصلاح مرسيدس' },
+  'transmission-service-7g-9g-dubai': { href: '/services/mercedes-transmission-repair-dubai', label: 'فحص ناقل حركة مرسيدس' },
+};
+
 const BlogPost = () => {
   const { isArabic, localizedPath } = useLocale();
   const { slug } = useParams<{ slug: string }>();
@@ -184,22 +196,23 @@ const BlogPost = () => {
 
   if (!post) return <Navigate to={localizedPath('/blog')} replace />;
 
-  const related = blogPosts
-    .filter((p) => p.slug !== post.slug)
-    .slice(0, 2)
+  const related = getRelatedArticles(sourcePost ?? post, blogPosts.filter((item) => !isArabic || !MERCEDES_UNTRANSLATED_MODEL_PATHS.has(`/blog/${item.slug}`)))
     .map((item) => (isArabic ? localizePostSummaryToArabic(item) : item));
+  const articleSections = post.content.flatMap((block, index) => block.type === 'h2' && block.text ? [{ title: block.text, id: `article-section-${index + 1}` }] : []);
   const relatedService = relatedServiceByPost[post.slug];
   const relatedServiceCopy = relatedService && isArabic
     ? {
         ...relatedService,
         label: 'الخدمة المرتبطة بهذا الموضوع',
         description: 'احجز فحصاً متخصصاً لدى فريق ديجي-تك في القوز لتحديد السبب والحصول على توصية واضحة قبل بدء الإصلاح.',
+        ...arabicRelatedServiceByPost[post.slug],
       }
     : relatedService;
 
   return (
     <div className="site-page min-h-screen bg-black text-off-white">
       <Header />
+      <main>
 
       {/* Hero */}
       <section className="relative overflow-hidden border-b border-white/[0.08] bg-[#101113] py-16 sm:py-20 lg:py-24">
@@ -302,11 +315,19 @@ const BlogPost = () => {
               </div>
             </section>
           )}
+          {articleSections.length >= 3 && (
+            <nav aria-label={isArabic ? 'في هذا المقال' : 'In this article'} className="mb-10 rounded-xl border border-white/10 bg-white/[0.03] p-5 sm:p-6">
+              <p className="mb-3 font-semibold">{isArabic ? 'في هذا المقال' : 'In this article'}</p>
+              <ol className="grid gap-3 text-sm leading-relaxed sm:grid-cols-2">
+                {articleSections.map((section) => <li key={section.id}><a href={`#${section.id}`} className="text-white/70 underline decoration-white/20 underline-offset-4 hover:text-burnt-orange focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-burnt-orange">{section.title}</a></li>)}
+              </ol>
+            </nav>
+          )}
           <article className="space-y-6">
             {post.content.map((block, i) => {
               if (block.type === 'h2')
                 return (
-                  <h2 key={i} className="text-2xl sm:text-3xl font-black mt-10 mb-2">
+                  <h2 key={i} id={`article-section-${i + 1}`} className="scroll-mt-28 text-2xl sm:text-3xl font-black mt-10 mb-2">
                     {block.text}
                   </h2>
                 );
@@ -382,6 +403,7 @@ const BlogPost = () => {
       )}
 
       <FinalCTA />
+      </main>
       <Footer />
     </div>
   );

@@ -6,11 +6,11 @@ import { Footer } from '@/components/Footer';
 import { FinalCTA } from '@/components/FinalCTA';
 import { CtaAssurance } from '@/components/TrustBar';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
-import { getBrandWorkshopArticle, brandWorkshopArticles, type BrandWorkshopArticle } from '@/data/brandWorkshopArticles';
+import { getBrandWorkshopArticle, type BrandWorkshopArticle } from '@/data/brandWorkshopArticles';
 import { useSeo } from '@/hooks/use-seo';
 import { buildArticle, buildBreadcrumb, buildFAQ, buildService, buildWebPage, pageGraph, SITE_URL } from '@/lib/schema';
 import { useLocale } from '@/i18n/use-locale';
-import { localizeBrandWorkshopArticleToArabic, localizePostSummaryToArabic } from '@/i18n/ar-blog';
+import { localizeBrandWorkshopArticleToArabic } from '@/i18n/ar-blog';
 
 const generalServiceLinks = [
   { label: 'Diagnostics', arLabel: 'فحص وتشخيص السيارة', href: '/services/car-diagnostics-dubai' },
@@ -83,7 +83,9 @@ const BrandWorkshopArticleContent = ({ article, isArabic }: { article: BrandWork
     ? article.brand === 'Ferrari'
       ? 'دليل صيانة فيراري في دبي: مواعيد الخدمة وعوامل التكلفة وعلامات التحذير والفحوص المهمة في حرارة الإمارات وفترات التخزين.'
       : `ورشة متخصصة في ${article.brand} بدبي للفحص والصيانة والإصلاح. احجز لدى ديجي-تك في القوز للحصول على تشخيص واضح وخدمة احترافية.`
-    : article.metaDescription ?? `${article.brand} workshop in Dubai for diagnostics, maintenance and repair. Visit DIGI-TEC in Al Quoz for clear inspections, practical guidance and booking support.`;
+    : article.metaDescription ?? (article.existingBestPage
+      ? `Plan ${article.brand} maintenance in Dubai: review service history, model-specific inspections, parts and the questions to ask before booking.`
+      : `Compare ${article.brand} workshops in Dubai by inspection scope, model-specific capability, parts and estimate clarity. Prepare a useful service enquiry.`);
   const datePublished = article.datePublished ?? '2026-07-16';
   const dateModified = article.dateModified;
   const displayDate = dateModified ?? datePublished;
@@ -107,7 +109,7 @@ const BrandWorkshopArticleContent = ({ article, isArabic }: { article: BrandWork
     { question: `Does Dubai heat change ${article.brand} maintenance?`, answer: `It can. High ambient temperature, stop-start traffic, dust and heavy air-conditioning demand can increase the importance of cooling, tyres, brakes, batteries and fluid-condition checks. The right interval depends on the model and how it is used.` },
     { question: `What should ${article.brand === 'Aston Martin' ? 'an' : 'a'} ${article.brand} diagnostic include?`, answer: `A useful diagnostic is more than reading a code. It should combine a scan, live data where relevant, visual checks, a road test when appropriate, and a clear explanation of confirmed faults versus items that need monitoring.` },
     { question: `Should I use OEM or aftermarket ${article.brand} parts?`, answer: `The right choice depends on the component, vehicle age, budget and intended use. Safety-critical, electronic and complex driveline parts often need careful sourcing. Ask for the part brand, specification and applicable warranty terms in writing.` },
-    { question: `Can DIGI-TEC inspect ${article.brand === 'Aston Martin' ? 'an' : 'a'} ${article.brand} before I buy it?`, answer: `Yes. A pre-purchase inspection can review visible condition, fault memory, service evidence, tyres, brakes, suspension, cooling and drivability so you can make a better-informed decision before committing.` },
+    { question: `Can DIGI-TEC inspect ${article.brand === 'Aston Martin' ? 'an' : 'a'} ${article.brand} before I buy it?`, answer: 'Send the model, year and requested checks so the team can confirm whether it can accept the inspection and what it covers. Ask which physical checks, diagnostic functions and service-record review are included; an inspection cannot guarantee the absence of every hidden or future fault.' },
     { question: `How long does ${article.brand === 'Aston Martin' ? 'an' : 'a'} ${article.brand} service take?`, answer: `Timing depends on the exact service, inspection findings, parts availability and workshop schedule. Ask for an estimated completion time after the vehicle and requested work have been reviewed.` },
     { question: `Can I book ${article.brand === 'Aston Martin' ? 'an' : 'a'} ${article.brand} inspection by WhatsApp?`, answer: `Yes. Send the model, year, mileage, concern and any warning-light information to DIGI-TEC on WhatsApp. The team can advise the best next step and arrange an inspection in Al Quoz.` },
     { question: `Is performance tuning suitable for every ${article.brand}?`, answer: `No. A performance plan should be based on mechanical health, service history, cooling, brakes, tyres, driveline capacity and intended use. A diagnostic baseline comes before any upgrade recommendation.` },
@@ -128,8 +130,8 @@ const BrandWorkshopArticleContent = ({ article, isArabic }: { article: BrandWork
     { question: `هل تؤثر حرارة دبي في صيانة ${article.brand}؟`, answer: 'نعم. الحرارة والازدحام والغبار والاستخدام المتواصل للمكيف تزيد أهمية فحص التبريد والإطارات والفرامل والبطارية والسوائل وفق حالة السيارة وطريقة استخدامها.' },
     { question: `ماذا يجب أن يشمل فحص ${article.brand}؟`, answer: 'يشمل الفحص المفيد قراءة الأنظمة الإلكترونية والبيانات الحية عند الحاجة، والفحص البصري، وتجربة الطريق عندما تكون آمنة، مع توضيح الأعطال المؤكدة وما يحتاج إلى متابعة.' },
     { question: `هل أختار قطعاً أصلية أم بديلة لسيارة ${article.brand}؟`, answer: 'يعتمد الاختيار على نوع القطعة وعمر السيارة والاستخدام والميزانية. نوضح مصدر القطعة ومواصفاتها والضمان قبل اعتمادها، مع عناية خاصة بأنظمة السلامة والإلكترونيات.' },
-    { question: `هل تقدم ديجي-تك فحص ${article.brand} قبل الشراء؟`, answer: 'نعم. يمكن مراجعة الحالة الظاهرة وذاكرة الأعطال وسجل الصيانة والإطارات والفرامل والتعليق والتبريد وقابلية القيادة قبل اتخاذ قرار الشراء.' },
-    { question: `كم تستغرق صيانة ${article.brand}؟`, answer: 'يمكن إنجاز بعض أعمال الصيانة الدورية في اليوم نفسه حسب توفر الموعد والقطع. أما التشخيص والإصلاحات الكبيرة فتحدد مدتها بعد الفحص الأولي.' },
+    { question: `هل تقدم ديجي-تك فحص ${article.brand} قبل الشراء؟`, answer: 'أرسل الطراز والسنة والفحوص المطلوبة لتأكيد قبول السيارة ونطاق العمل. اسأل عما يشمله الفحص الفعلي والتشخيص ومراجعة السجل؛ لا يضمن الفحص غياب كل عيب خفي أو عطل مستقبلي.' },
+    { question: `كم تستغرق صيانة ${article.brand}؟`, answer: 'تعتمد المدة على نطاق العمل ونتائج الفحص والوصول إلى المكونات وتوفر القطع وأي إجراءات إضافية مطلوبة ومتاحة. يتم تأكيد الموعد والوقت المتوقع بعد مراجعة السيارة والعمل المطلوب.' },
     { question: `هل يمكن حجز فحص ${article.brand} عبر واتساب؟`, answer: 'نعم. أرسل الطراز والسنة والمسافة ووصف المشكلة ورسالة التحذير إن وجدت، وسيساعدك الفريق في ترتيب الموعد المناسب في القوز.' },
     { question: `هل يناسب تطوير الأداء جميع سيارات ${article.brand}؟`, answer: 'لا. يجب أولاً التأكد من صحة المحرك والتبريد والفرامل والإطارات وناقل الحركة، ثم اختيار خطة تناسب الاستخدام وقدرة المكونات.' },
     { question: `أين تقع ورشة ${article.brand}؟`, answer: 'يقع مركز ديجي-تك بيرفورمانس في منطقة القوز الصناعية 3 في دبي، ويخدم مالكي السيارات من مختلف مناطق دبي والإمارات بالمواعيد.' },
@@ -249,13 +251,11 @@ const BrandWorkshopArticleContent = ({ article, isArabic }: { article: BrandWork
         { path: '/best-ferrari-workshop-dubai', title: isArabic ? 'كيفية اختيار ورشة فيراري في دبي' : 'How to Choose a Ferrari Workshop in Dubai' },
         { path: '/blog/pre-purchase-inspection-dubai-guide', title: isArabic ? 'دليل فحص السيارة قبل الشراء في دبي' : 'Pre-Purchase Inspection Guide for Dubai' },
       ]
-    : brandWorkshopArticles
-        .filter((item) => item.slug !== article.slug)
-        .slice(0, 3)
-        .map((item) => {
-          const localizedItem = isArabic ? localizePostSummaryToArabic({ ...item, excerpt: '' }) : item;
-          return { path: `/blog/${localizedItem.slug}`, title: localizedItem.title };
-        });
+    : [
+        { path: '/blog/dealer-vs-independent-workshop-dubai', title: isArabic ? 'المقارنة بين الوكالة والورشة المستقلة' : 'Compare dealer and independent workshop scope' },
+        { path: '/blog/car-service-cost-dubai-luxury-brands', title: isArabic ? 'كيف تقرأ عرض صيانة السيارة؟' : 'How to compare an itemised service estimate' },
+        { path: '/blog/car-service-interval-dubai-heat', title: isArabic ? 'مواعيد الصيانة والوقت والمسافة' : 'Plan maintenance around time, mileage and use' },
+      ];
   const t = (english: string, arabic: string) => (isArabic ? arabic : english);
 
   return (
@@ -461,10 +461,10 @@ const BrandWorkshopArticleContent = ({ article, isArabic }: { article: BrandWork
 
           <section className="mt-14">
             <h2 className="text-2xl font-black sm:text-3xl">{t('Related services and useful next steps', 'خدمات مرتبطة وخطوات تالية مفيدة')}</h2>
+            {article.brandHub && !relatedServiceLinks.some((service) => service.href === article.brandHub) && <p className="mt-4"><Link to={article.brandHub} className="font-semibold text-burnt-orange underline underline-offset-4">{t(`${article.brand} service and repair options`, `خدمات صيانة وإصلاح ${article.brand}`)}</Link></p>}
             <div className="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-4">
               {relatedServiceLinks.map((service) => <Link key={service.href} to={service.href} className="card-premium rounded-xl p-4 text-sm font-bold transition-colors hover:text-burnt-orange">{isArabic ? service.arLabel : service.label}<ArrowRight className={`mt-2 h-4 w-4 text-burnt-orange ${isArabic ? 'rotate-180' : ''}`} /></Link>)}
             </div>
-            {!article.coverImage && !['Aston Martin', 'Mercedes-Benz'].includes(article.brand) && <p className="mt-6 text-sm leading-relaxed text-gray-400">{t(`Useful image plan for this article: ${article.brand === 'Aston Martin' ? 'an' : 'a'} ${article.brand} arriving at the workshop, a technician using diagnostic equipment, a close-up of the relevant repair area, and a wide shot of the workshop. Suggested hero alt text: “${article.imageAlt}”.`, `خطة الصور المقترحة للمقال: سيارة ${article.brand} عند وصولها إلى الورشة، وفني يستخدم جهاز التشخيص، وصورة قريبة لمنطقة الإصلاح، وصورة واسعة للورشة. النص البديل المقترح للصورة الرئيسية: «${article.imageAlt}».`)}</p>}
           </section>
 
           <section className="mt-14">
