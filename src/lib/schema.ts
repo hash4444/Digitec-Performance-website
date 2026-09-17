@@ -26,6 +26,39 @@ type Entity = Record<string, unknown>;
 export const absoluteUrl = (url: string) =>
   url.startsWith('http') ? url : `${SITE_URL}${url.startsWith('/') ? '' : '/'}${url}`;
 
+/** Reuse the current page's published graph for matching social metadata. */
+export function getPageMetadata(jsonLd: Entity | Entity[] | undefined, pageUrl: string) {
+  const documents = jsonLd ? (Array.isArray(jsonLd) ? jsonLd : [jsonLd]) : [];
+  const nodes = documents.flatMap((document) =>
+    Array.isArray(document['@graph']) ? document['@graph'] as Entity[] : [document],
+  );
+  const url = absoluteUrl(pageUrl);
+  const page = nodes.find((node) => node['@id'] === `${url}#webpage`);
+  const mainEntityId = (page?.mainEntity as Entity | undefined)?.['@id'];
+  const mainEntity = mainEntityId ? nodes.find((node) => node['@id'] === mainEntityId) : undefined;
+  const article = nodes.find((node) => {
+    const types = Array.isArray(node['@type']) ? node['@type'] : [node['@type']];
+    return types.some((type) => ['Article', 'BlogPosting', 'NewsArticle'].includes(String(type)))
+      && (node.url === url || node['@id'] === `${url}#article`);
+  });
+  const image = page?.primaryImageOfPage ?? mainEntity?.image ?? article?.image;
+  const primaryImage = Array.isArray(image) ? image[0] : image;
+  const imageUrl = typeof primaryImage === 'string'
+    ? primaryImage
+    : (primaryImage as Entity | undefined)?.contentUrl ?? (primaryImage as Entity | undefined)?.url;
+  // Several existing graphs identify a small brand logo as the primary image.
+  // Keep the site photo for automatic previews rather than magnify those icons.
+  const isPagePhoto = typeof imageUrl === 'string'
+    && !/\/(?:brand-logos\/|favicon(?:[-.]|\/))/i.test(imageUrl);
+
+  return {
+    image: isPagePhoto ? absoluteUrl(imageUrl) : undefined,
+    isArticle: Boolean(article),
+    datePublished: typeof article?.datePublished === 'string' ? article.datePublished : undefined,
+    dateModified: typeof article?.dateModified === 'string' ? article.dateModified : undefined,
+  };
+}
+
 const languageForUrl = (url: string) => {
   const pathname = new URL(absoluteUrl(url)).pathname;
   return pathname === '/ar' || pathname.startsWith('/ar/') ? 'ar-AE' : 'en-AE';
