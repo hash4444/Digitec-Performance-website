@@ -1,4 +1,4 @@
-import mercedesRepairImg from '@/assets/mercedes-repair.jpg';
+const mercedesRepairImg = '/images/mercedes-engine-repair.png';
 import type { ServiceData } from './services';
 
 // Mercedes-specific service variants. These target exact-match Mercedes long-tail

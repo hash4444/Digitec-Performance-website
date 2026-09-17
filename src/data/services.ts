@@ -2,7 +2,7 @@ import routineMaintenanceImg from '@/assets/routine-maintenance-optimized.jpg';
 import tireRepairImg from '@/assets/tire-repair.jpg';
 import ppfImage from '@/assets/ppf-application.jpg';
 import ceramicImage from '@/assets/ceramic-coating.jpg';
-import mercedesRepairImg from '@/assets/mercedes-repair.jpg';
+const mercedesRepairImg = '/images/mercedes-engine-repair.png';
 import mercedesAmgEngineImg from '@/assets/mercedes-amg-engine-repair-dubai.jpg';
 import softCloseDoorImg from '@/assets/soft-close-door-repair.jpg';
 import suspensionRepairImg from '@/assets/suspension-repair-dubai.jpg';
