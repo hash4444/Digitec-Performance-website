@@ -51,6 +51,13 @@ const routeHtml = (template, route, rendered) => {
   html = replaceOrInsertHeadTag(html, /<meta\s+property="og:title"[^>]*>/i, `<meta property="og:title" content="${escapeHtml(seo.ogTitle || seo.title)}">`);
   html = replaceOrInsertHeadTag(html, /<meta\s+property="og:description"[^>]*>/i, `<meta property="og:description" content="${escapeHtml(seo.ogDescription || seo.description)}">`);
   html = replaceOrInsertHeadTag(html, /<meta\s+property="og:type"[^>]*>/i, `<meta property="og:type" content="${escapeHtml(seo.ogType || 'website')}">`);
+  html = html.replace(/\s*<meta\s+property="article:(?:published_time|modified_time)"[^>]*>\s*/gi, '\n');
+  if (seo.articlePublishedTime) {
+    html = replaceOrInsertHeadTag(html, /<meta\s+property="article:published_time"[^>]*>/i, `<meta property="article:published_time" content="${escapeHtml(seo.articlePublishedTime)}">`);
+  }
+  if (seo.articleModifiedTime) {
+    html = replaceOrInsertHeadTag(html, /<meta\s+property="article:modified_time"[^>]*>/i, `<meta property="article:modified_time" content="${escapeHtml(seo.articleModifiedTime)}">`);
+  }
   html = replaceOrInsertHeadTag(html, /<meta\s+property="og:locale"[^>]*>/i, `<meta property="og:locale" content="${language === 'ar' ? 'ar_AE' : 'en_AE'}">`);
   html = replaceOrInsertHeadTag(html, /<meta\s+name="twitter:card"[^>]*>/i, `<meta name="twitter:card" content="${escapeHtml(seo.twitterCard || 'summary_large_image')}">`);
   html = replaceOrInsertHeadTag(html, /<meta\s+name="twitter:title"[^>]*>/i, `<meta name="twitter:title" content="${escapeHtml(seo.twitterTitle || seo.ogTitle || seo.title)}">`);
