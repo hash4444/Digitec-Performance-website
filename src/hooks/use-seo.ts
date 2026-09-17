@@ -1,6 +1,6 @@
 import React, { useContext, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
-import { DEFAULT_OG_IMAGE, SITE_URL } from '@/lib/schema';
+import { absoluteUrl, DEFAULT_OG_IMAGE, getPageMetadata, SITE_URL } from '@/lib/schema';
 import { isArabicPath, stripLocalePrefix } from '@/i18n/use-locale';
 import { isLowValueBrandServicePath } from '@/lib/route-policy';
 
@@ -29,6 +29,8 @@ export interface ResolvedSeoProps extends SeoProps {
   canonical?: string;
   noindex: boolean;
   language: 'en' | 'ar';
+  articlePublishedTime?: string;
+  articleModifiedTime?: string;
 }
 
 type SeoCollector = (seo: ResolvedSeoProps) => void;
@@ -70,7 +72,11 @@ export function useSeo(props: SeoProps) {
   const effectiveCanonical = effectiveNoindex
     ? props.canonical
     : (isArabic ? arabicUrl : (props.canonical ?? englishUrl));
-  const effectiveOgImage = ogImage || DEFAULT_OG_IMAGE;
+  const pageMetadata = getPageMetadata(jsonLd, effectiveCanonical ?? englishUrl);
+  const effectiveOgImage = absoluteUrl(ogImage || pageMetadata.image || DEFAULT_OG_IMAGE);
+  const effectiveOgType = ogType || (pageMetadata.isArticle ? 'article' : 'website');
+  const articlePublishedTime = effectiveOgType === 'article' ? pageMetadata.datePublished : undefined;
+  const articleModifiedTime = effectiveOgType === 'article' ? pageMetadata.dateModified : undefined;
   const jsonLdString = jsonLd ? JSON.stringify(jsonLd) : undefined;
 
   collector?.({
@@ -79,6 +85,9 @@ export function useSeo(props: SeoProps) {
     noindex: effectiveNoindex,
     language: isArabic ? 'ar' : 'en',
     ogImage: effectiveOgImage,
+    ogType: effectiveOgType,
+    articlePublishedTime,
+    articleModifiedTime,
   });
 
   useEffect(() => {
@@ -115,7 +124,9 @@ export function useSeo(props: SeoProps) {
 
     upsertMeta('meta[property="og:title"]', 'property', 'og:title', ogTitle || title);
     upsertMeta('meta[property="og:description"]', 'property', 'og:description', ogDescription || description);
-    upsertMeta('meta[property="og:type"]', 'property', 'og:type', ogType || 'website');
+    upsertMeta('meta[property="og:type"]', 'property', 'og:type', effectiveOgType);
+    upsertMeta('meta[property="article:published_time"]', 'property', 'article:published_time', articlePublishedTime);
+    upsertMeta('meta[property="article:modified_time"]', 'property', 'article:modified_time', articleModifiedTime);
     upsertMeta('meta[property="og:image"]', 'property', 'og:image', effectiveOgImage);
     upsertMeta('meta[property="og:image:alt"]', 'property', 'og:image:alt', ogImageAlt);
     upsertMeta('meta[property="og:image:width"]', 'property', 'og:image:width', ogImageWidth ? String(ogImageWidth) : undefined);
@@ -174,6 +185,9 @@ export function useSeo(props: SeoProps) {
     effectiveCanonical,
     effectiveNoindex,
     effectiveOgImage,
+    effectiveOgType,
+    articlePublishedTime,
+    articleModifiedTime,
     ogImageAlt,
     ogImageWidth,
     ogImageHeight,
@@ -183,7 +197,6 @@ export function useSeo(props: SeoProps) {
     keywords,
     ogTitle,
     ogDescription,
-    ogType,
     twitterCard,
     twitterTitle,
     twitterDescription,
