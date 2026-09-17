@@ -126,7 +126,11 @@ export const MascotWidget = () => {
             {imgOk ? (
               <>
                 <img
-                  src="/images/mascot.png"
+                  src="/images/seo/mascot-256.webp"
+                  width="256"
+                  height="256"
+                  decoding="async"
+                  fetchPriority="low"
                   alt=""
                   draggable={false}
                   onError={() => setImgOk(false)}
@@ -135,7 +139,11 @@ export const MascotWidget = () => {
                   }`}
                 />
                 <img
-                  src="/images/mascot-wave.png"
+                  src="/images/seo/mascot-wave-256.webp"
+                  width="256"
+                  height="256"
+                  decoding="async"
+                  fetchPriority="low"
                   alt=""
                   draggable={false}
                   onError={() => setImgOk(false)}

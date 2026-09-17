@@ -80,7 +80,7 @@ export const Footer = () => {
           <section aria-label={copy?.contact ?? 'Contact'}>
             <h2 className="text-sm font-semibold text-off-white">{copy?.contact ?? 'Contact'}</h2>
             <div className="mt-5 space-y-5 text-sm leading-6 text-white/45">
-              <p><span className="block font-semibold text-off-white">{isArabic ? 'ورشة دبي' : 'Dubai Workshop'}</span>{isArabic ? <>منطقة القوز الصناعية 3<br />دبي، الإمارات</> : <>Al Quoz Industrial Area 3<br />Dubai, UAE</>}</p>
+              <p><span className="block font-semibold text-off-white">{isArabic ? 'ورشة دبي' : 'Dubai Workshop'}</span>{isArabic ? <>المستودعات 11–15، منطقة القوز الصناعية 3<br />دبي، الإمارات</> : <>Warehouses 11–15, Al Quoz Industrial Area 3<br />Dubai, UAE</>}</p>
               <p><a href="tel:+97143402223" className="font-semibold text-off-white transition-colors hover:text-burnt-orange">+971 4 340 2223</a><br /><a href="mailto:info@digitecme.com" className="transition-colors hover:text-burnt-orange">info@digitecme.com</a></p>
             </div>
             <div className="mt-5 flex gap-3" aria-label={isArabic ? 'حسابات التواصل الاجتماعي' : 'Social media'}>

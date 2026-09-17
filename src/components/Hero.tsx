@@ -10,9 +10,17 @@ export const Hero = () => {
 
   return (
     <section className="theme-dark-section relative flex min-h-[100svh] items-center overflow-hidden border-b border-white/[0.08]">
-      <div
-        className="absolute inset-0 bg-cover bg-[62%_center] bg-no-repeat sm:bg-center"
-        style={{ backgroundImage: "url('/images/hero-bg.png')" }}
+      <img
+        src="/images/seo/hero-1536.webp"
+        srcSet="/images/seo/hero-768.webp 768w, /images/seo/hero-1536.webp 1536w"
+        sizes="(max-width: 640px) 150vw, 100vw"
+        width="1536"
+        height="1024"
+        alt=""
+        aria-hidden="true"
+        fetchPriority="high"
+        decoding="async"
+        className="absolute inset-0 h-full w-full object-cover object-[62%_center] sm:object-center"
       />
       <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(10,11,12,0.94)_0%,rgba(10,11,12,0.78)_42%,rgba(10,11,12,0.25)_76%,rgba(10,11,12,0.38)_100%)]" />
       <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-[#101113]/80 to-transparent" />
@@ -25,7 +33,7 @@ export const Hero = () => {
             <span className="block text-[0.78em] sm:text-[0.72em]">{copy?.titleLine ?? 'Performance Center'}</span>
           </h1>
           <h2 className="mt-7 max-w-xl text-xl font-medium tracking-[-0.025em] text-white/90 sm:text-2xl">
-            {copy?.subtitle ?? 'Where Performance Meets Precision.'}
+            {copy?.subtitle ?? 'Independent Car Workshop in Al Quoz, Dubai'}
           </h2>
           <p className="mt-4 max-w-xl text-[0.95rem] leading-7 text-white/60 sm:text-base">
             {copy?.description ?? 'Independent vehicle maintenance, diagnostics, repair, body work and performance-project support from Digi-Tec Performance Center in Al Quoz Industrial Area 3.'}
