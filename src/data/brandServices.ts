@@ -1,3 +1,5 @@
+import { serviceDecisionFaqs } from './serviceDecisionFaqs';
+
 /**
  * Brand × Service SEO landing pages.
  *
@@ -680,7 +682,7 @@ function composeAcRepair(p: BrandProfile): Composed {
     ],
     partsCopy: `Compressors, condensers, valves, evaporators, driers and related components are selected for the exact VIN and fitted climate system. Genuine, established OE-supplier or other suitable customer-approved options may be quoted subject to compatibility and availability. Refrigerant type and quantity are verified from the vehicle before charging.`,
     faqs: [
-      { question: `How much does ${p.brandName} AC regas cost in Dubai?`, answer: `A standard ${p.acRefrigerant} regas with UV dye leak check is priced transparently on quote. If the system is losing charge, a regas alone is not the answer: we quote the underlying repair rather than sell a temporary fix.` },
+      { question: `How much does ${p.brandName} AC regas cost in Dubai?`, answer: 'Cost depends on the refrigerant specified on the vehicle label, the required quantity, the testing scope and any leak or component repair. Ask for the inspection and recharge items to be separated in the estimate; adding refrigerant alone does not resolve an underlying leak.' },
       { question: `Which refrigerant does my ${p.brandName} use?`, answer: `${p.acRefrigerant} applies to some relevant platforms, but the underhood label and vehicle details determine the correct refrigerant. It is verified before connection or charging.` },
       { question: 'Why does AC blow warm at idle but cold on the motorway?', answer: 'Possible causes include condenser airflow, cooling-fan performance, refrigerant charge, pressure control or compressor condition. Testing is needed before recommending cleaning or replacement.' },
       { question: 'How often should the AC system be serviced?', answer: 'Follow the vehicle schedule and respond to reduced performance, odour or unusual noise. Inspection, filter and refrigerant recommendations depend on the fitted system and measured condition.' },
@@ -734,7 +736,7 @@ function composeDiagnostics(p: BrandProfile): Composed {
       'Check engine light, EML, or amber engine warning on the cluster',
       `${p.brandName}-specific message such as "Reduced Engine Power" or "Consult Workshop"`,
       'Rough idle, misfire, or noticeable hesitation under throttle',
-      'Failed emissions test or Nol technical test refusal',
+      'Emissions-related fault or unsuccessful vehicle inspection',
       `Cluster or infotainment communication fault after a battery disconnect on the ${p.engineCodes[0]}`,
       'Loss of turbo boost, limp-home mode, or unusual exhaust smoke colour',
     ],
@@ -822,6 +824,7 @@ function composeExtendedService(p: BrandProfile, key: ExtendedServiceKey): Compo
     processSteps: copy.process.map((title, index) => ({ title, description: EXTENDED_SERVICE_STEPS[key][index] })),
     partsCopy: `Parts for ${copy.parts} are selected for the exact vehicle and agreed repair. The quotation may identify genuine, established OE-supplier, remanufactured or other suitable customer-approved options, subject to compatibility and availability.`,
     faqs: [
+      ...(serviceDecisionFaqs[key] ?? []),
       { question: `Do you handle ${p.brandName} ${meta.name.toLowerCase()} in Dubai?`, answer: `The concern can be inspected and a vehicle-specific repair route proposed. Diagnostic functions, procedures, parts and repair availability are confirmed before work is accepted.` },
       { question: `How long does ${p.brandName} ${meta.name.toLowerCase()} take?`, answer: 'Timing depends on inspection findings, access, parts and any supported calibration or programming requirements. The expected timeline is confirmed with the quotation.' },
       { question: `Do you use genuine ${p.brandName} parts?`, answer: `A quotation may specify genuine ${p.brandName}, established OE-supplier, remanufactured or another suitable customer-approved option. Compatibility, source and availability are documented before ordering.` },

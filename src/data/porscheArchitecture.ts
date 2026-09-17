@@ -43,9 +43,12 @@ export const porscheModelNavigation: PorscheNavigationItem[] = [
 export const porscheSystemNavigation: PorscheNavigationItem[] = [
   { title: 'PDK', description: 'Dual-clutch operation, normal behaviour and warning signs.', path: '/porsche/systems/pdk' },
   { title: 'Tiptronic', description: 'Torque-converter automatic operation and diagnosis.', path: '/porsche/systems/tiptronic' },
-  { title: 'PASM & PDCC', description: 'Adaptive damping and active roll-control systems.', path: '/porsche/systems/pasm' },
+  { title: 'PASM', description: 'Adaptive damping operation, fitment and warning signs.', path: '/porsche/systems/pasm' },
+  { title: 'PDCC', description: 'Active roll-control operation and diagnostic considerations.', path: '/porsche/systems/pdcc' },
   { title: 'PCCB', description: 'Ceramic-composite brake operation and inspection.', path: '/porsche/systems/pccb' },
   { title: 'Air suspension', description: 'Ride-height control, normal operation and warnings.', path: '/porsche/systems/air-suspension' },
+  { title: 'Rear-axle steering', description: 'Low-speed manoeuvring, stability and steering warnings.', path: '/porsche/systems/rear-axle-steering' },
+  { title: 'Sport Chrono', description: 'Drive modes, equipment differences and system messages.', path: '/porsche/systems/sport-chrono' },
   { title: 'Browse all systems', description: 'Sport Chrono, rear-axle steering, PTM and more.', path: '/porsche/systems' },
 ];
 
@@ -54,6 +57,8 @@ export const porscheProblemNavigation: PorscheNavigationItem[] = [
   { title: 'Engine overheating', description: 'Cooling, airflow and circulation warning signs.', path: '/porsche/problems/engine-overheating' },
   { title: 'Oil or coolant leak', description: 'How visible fluid is traced to its source.', path: '/porsche/problems/oil-leak' },
   { title: 'Suspension drops overnight', description: 'Air-loss and control-system diagnosis.', path: '/porsche/problems/suspension-dropping-overnight' },
+  { title: 'Cayenne air-suspension warning', description: 'Uneven ride height and chassis messages on the Cayenne.', path: '/porsche/problems/cayenne-air-suspension' },
+  { title: 'Brake warning light', description: 'Brake messages, wear indicators and inspection decisions.', path: '/porsche/problems/brake-warning-light' },
   { title: 'AC not cooling', description: 'Refrigerant, airflow, compressor and control causes.', path: '/porsche/problems/ac-not-cooling' },
   { title: 'Battery or starting problem', description: 'Low-voltage, charging and no-start pathways.', path: '/porsche/problems/wont-start' },
   { title: 'Browse all problems', description: 'Warning lights, engine, chassis, Macan and Taycan guides.', path: '/porsche/problems' },

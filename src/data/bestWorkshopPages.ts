@@ -114,7 +114,7 @@ export const bestWorkshopPages: BestWorkshopPage[] = [
     slug: 'best-range-rover-workshop-dubai',
     brand: 'Land Rover',
     brandKeyword: 'Range Rover',
-    brandLogo: '/lovable-uploads/6a3fe63c-72a5-4dcd-8f0b-4b0cd11c8b3d.png',
+    brandLogo: '/brand-logos/showcase/land-rover.png',
     h1: 'Range Rover Service & Repair Workshop in Dubai',
     metaTitle: 'Range Rover Service & Repair Workshop Dubai | Digi-Tec',
     metaDescription: 'Compare a specialist Range Rover workshop in Dubai for Vogue, Sport, Velar and Evoque. JLR diagnostics, air suspension expertise and service in Al Quoz.',

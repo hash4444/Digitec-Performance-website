@@ -1,4 +1,5 @@
 import lamborghiniUrusWorkshop from '@/assets/lamborghini-urus-workshop-dubai.jpg';
+import { brands } from './brands';
 
 export type BrandWorkshopArticle = {
   brand: string;
@@ -139,7 +140,10 @@ export const brandWorkshopArticles: BrandWorkshopArticle[] = profiles.map((profi
       ? `${profile.brand} maintenance Dubai`
       : `${profile.brand} Workshop Dubai`,
     existingBestPage,
-    brandHub: existingBrandHubs[profile.brand],
+    brandHub: existingBrandHubs[profile.brand] ?? (() => {
+      const brand = brands.find((item) => item.name.toLowerCase() === profile.brand.toLowerCase());
+      return brand ? `/brands/${brand.slug}` : undefined;
+    })(),
   };
 });
 
@@ -160,5 +164,7 @@ export const brandWorkshopArticleSummaries = brandWorkshopArticles.map((article)
   metaTitle: article.metaTitle ?? (article.existingBestPage
     ? `${article.brand} Maintenance Dubai | DIGI-TEC`
     : `${article.brand} Workshop Dubai | Owner Guide`),
-  metaDescription: article.metaDescription ?? `${article.brand} workshop in Dubai for diagnostics, maintenance and repair. Visit DIGI-TEC in Al Quoz for clear inspections, practical guidance and booking support.`,
+  metaDescription: article.metaDescription ?? (article.existingBestPage
+    ? `Plan ${article.brand} maintenance in Dubai: review service history, model-specific inspections, parts and the questions to ask before booking.`
+    : `Compare ${article.brand} workshops in Dubai by inspection scope, model-specific capability, parts and estimate clarity. Prepare a useful service enquiry.`),
 }));

@@ -421,6 +421,7 @@ export const blogPosts: BlogPost[] = [
     category: 'Maintenance',
     author: 'DIGI-TEC Workshop',
     date: '2026-04-20',
+    updatedDate: '2026-09-17',
     readTime: '7 min read',
     coverGradient: 'from-burnt-orange/40 via-charcoal to-black',
     metaTitle: 'Why Brakes Wear Faster in Dubai | Warning Signs & Workshop Guide',
@@ -430,7 +431,7 @@ export const blogPosts: BlogPost[] = [
       'brake repair Dubai, brake pad replacement Dubai, brake service Dubai, Mercedes brake repair Dubai, BMW brake repair Dubai, ABS repair Dubai, brake disc replacement UAE',
     ogTitle: 'Brake Repair in Dubai | Digitec Performance Center',
     ogDescription:
-      'Expert brake repair, pad replacement, and ABS diagnostics in Dubai for luxury and German cars. Trusted by Mercedes, BMW, Audi, and Porsche owners.',
+      'Understand brake warning signs, inspection measurements, fitted-system differences and the questions to ask before approving a repair in Dubai.',
     ogType: 'article',
     twitterCard: 'summary_large_image',
     twitterTitle: 'Brake Repair in Dubai | Digitec Performance Center',
@@ -441,11 +442,11 @@ export const blogPosts: BlogPost[] = [
       { type: 'h2', text: 'Why Brake Systems Wear Faster in Dubai' },
       {
         type: 'p',
-        text: "Driving conditions in Dubai put significant stress on your vehicle's braking system. High temperatures, heavy traffic, and frequent stop and go driving accelerate brake wear, especially in performance and luxury vehicles like Mercedes-Benz, BMW, Audi, and Porsche.",
+        text: 'Brake wear depends on the fitted system, pad and disc materials, vehicle load, driving and condition. Frequent braking in traffic and heat exposure are useful context for an inspection, but they do not establish the same replacement interval for every Mercedes-Benz, BMW, Audi or Porsche.',
       },
       {
         type: 'p',
-        text: 'Heat buildup can cause brake pads to wear faster and rotors to warp over time, reducing braking efficiency. In addition, fine sand and dust common in UAE environments can accumulate within braking components, leading to premature wear and reduced performance. At Digitec Performance Center, we provide brake system inspections and repairs tailored to Dubai conditions, ensuring consistent stopping power and long term safety.',
+        text: 'Noise, vibration, visible condition and warning messages should be assessed together with appropriate measurements. A vibration alone does not prove a warped disc, and the source may require checks of related components. DIGI-TEC reviews the fitted brake system and confirms the supported inspection and repair scope before work is agreed.',
       },
       { type: 'h2', text: 'Signs Your Brakes Need Repair or Replacement' },
       {
@@ -466,29 +467,29 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'p',
-        text: 'If you experience any of these symptoms, it is important to get your brakes inspected immediately. At Digitec, we perform full brake diagnostics, including pads, rotors, calipers, and ABS systems, to identify and fix issues accurately.',
+        text: 'Follow the vehicle instructions for brake warnings or a change in braking response, and discuss the condition before continuing to use the car. The appropriate inspection may include pads, discs, calipers and relevant electronic data; accepted scope and diagnostic access are confirmed for the vehicle.',
       },
-      { type: 'h2', text: 'Our Complete Brake Service in Dubai' },
+      { type: 'h2', text: 'What a Brake Service Can Include' },
       {
         type: 'p',
-        text: 'A modern braking system involves far more than pads and discs. Our brake service covers every component that influences how your car stops, ensuring nothing is overlooked during inspection or repair.',
+        text: 'A modern braking system involves more than pads and discs. The fitted system and findings determine which checks and procedures are relevant. Confirm the following items against the agreed inspection or repair scope rather than assuming every function is included:',
       },
       {
         type: 'ul',
         items: [
-          'Brake pad inspection and replacement using OEM or performance-grade compounds',
-          'Brake disc and rotor resurfacing or replacement',
-          'Caliper service, including seal replacement, piston freeing, and rebuilds',
-          'Brake fluid flush and bleeding to remove moisture and restore pedal feel',
-          'ABS system diagnostics, sensor replacement, and module coding',
-          'Performance and carbon ceramic brake servicing for AMG, M, RS, and GT models',
+          'Pad condition and compatible replacement options for the fitted brakes.',
+          'Disc measurements and a suitable repair or replacement proposal; resurfacing is not assumed.',
+          'Caliper inspection, with repair or replacement availability confirmed for the component.',
+          'Fluid condition, specification and any required bleeding procedure.',
+          'Relevant ABS or sensor tests where compatible diagnostic access is available.',
+          'Steel or carbon-ceramic system identification, handling and parts scope confirmed before work.',
         ],
       },
       { type: 'h2', text: 'Brake Repair FAQs' },
       { type: 'h3', text: 'How often should I replace brake pads in Dubai?' },
       {
         type: 'p',
-        text: "Brake pads typically last between 20,000 to 40,000 km, but in Dubai's driving conditions they may wear out faster due to heat and traffic.",
+        text: 'Pad life varies with the fitted system, compound, driving, load and condition. Measurements, applicable wear limits and the vehicle warning or service information determine replacement; one mileage interval does not apply to every car.',
       },
       { type: 'h3', text: 'How much does brake repair cost in Dubai?' },
       {
@@ -503,17 +504,17 @@ export const blogPosts: BlogPost[] = [
       { type: 'h3', text: 'Do you use OEM brake parts?' },
       {
         type: 'p',
-        text: 'Yes. We use OEM and performance-grade brake components to ensure maximum safety, durability, and braking efficiency.',
+        text: 'The quotation should identify the proposed part, specification and source for the exact vehicle. Genuine, OE-supplier or another suitable customer-approved option may be discussed, subject to compatibility and availability.',
       },
       { type: 'h3', text: 'How long does a brake service take?' },
       {
         type: 'p',
-        text: 'Most brake services can be completed within 1 to 2 hours, depending on the work required.',
+        text: 'Timing depends on the fitted system, inspection findings, access, parts and any supported electronic functions or post-repair checks. Confirm the expected time once the vehicle and work have been reviewed.',
       },
       { type: 'h3', text: 'Do you repair ABS systems and brake sensors?' },
       {
         type: 'p',
-        text: 'Yes. We provide full diagnostics and repair for ABS systems, brake sensors, and electronic braking components.',
+        text: 'ABS and brake-sensor concerns can be discussed. Compatible diagnostic access, component testing, parts and any coding or programming required must be confirmed for the exact vehicle before the work is accepted.',
       },
       { type: 'h3', text: 'Why do my brakes make noise?' },
       {
@@ -523,7 +524,7 @@ export const blogPosts: BlogPost[] = [
       { type: 'h3', text: 'Do you service Mercedes, BMW, Audi, and Porsche brakes?' },
       {
         type: 'p',
-        text: 'Yes. We specialize in German and luxury vehicles and service standard, performance, and carbon ceramic braking systems to manufacturer specifications.',
+        text: 'Send the model, year and brake concern so the fitted steel or carbon-ceramic system and accepted workshop scope can be confirmed. Procedures, handling, parts and supported functions differ between systems.',
       },
     ],
   },
@@ -531,10 +532,11 @@ export const blogPosts: BlogPost[] = [
     slug: 'car-battery-replacement-dubai',
     title: 'Car Battery Replacement in Dubai: Why Heat Kills Batteries Faster',
     excerpt:
-      "Dubai's extreme climate cuts battery life to 12 to 18 months. Here is why your luxury car battery fails sooner, the warning signs to watch, and answers to the most common replacement questions.",
+      'Heat, storage, charging and driving patterns affect battery condition. Understand the warning signs, testing and vehicle-specific requirements before replacement.',
     category: 'Maintenance',
     author: 'DIGI-TEC Workshop',
     date: '2026-04-18',
+    updatedDate: '2026-09-17',
     readTime: '6 min read',
     coverGradient: 'from-burnt-orange/40 via-charcoal to-black',
     metaTitle: 'Why Car Batteries Fail Faster in Dubai Heat | Owner Guide',
@@ -546,11 +548,11 @@ export const blogPosts: BlogPost[] = [
       { type: 'h2', text: 'Why Car Batteries Fail in Dubai Heat' },
       {
         type: 'p',
-        text: "Dubai's extreme climate is one of the biggest reasons car batteries fail earlier than expected. High temperatures accelerate chemical reactions inside the battery, causing faster wear and reducing overall lifespan. While a car battery may last 3 to 5 years in cooler climates, in Dubai it typically lasts only 12 to 18 months, especially in luxury and high-performance vehicles like Mercedes-Benz, BMW, Audi, and Porsche.",
+        text: 'Heat can affect battery ageing, but there is no single replacement age for every car in Dubai. Battery type, charging condition, storage, journey length and electrical demand also matter. The battery and related starting or accessory systems should be assessed before replacement is recommended.',
       },
       {
         type: 'p',
-        text: 'Frequent short trips, heavy use of air conditioning, and advanced electronic systems also put additional strain on your battery. Modern vehicles rely heavily on electrical components, meaning even a slightly weakened battery can lead to performance issues. At Digitec Performance Center, we understand how Dubai conditions affect your vehicle and provide battery solutions designed specifically for long-lasting reliability in UAE driving conditions.',
+        text: 'Short trips, extended parking and electrical demand can help explain a battery concern, alongside its type and condition. Repeated discharge may also involve charging, connections or unwanted electrical draw. Describe recent work and how long the car stands so the assessment can distinguish those causes.',
       },
       { type: 'h2', text: 'Signs Your Car Battery Needs Replacement' },
       {
@@ -574,13 +576,13 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'p',
-        text: 'In Dubai, battery failure can happen suddenly due to heat stress, so even if your car seems fine, regular testing is essential. At Digitec, we perform full battery diagnostics to detect issues early and recommend replacement before it becomes a problem.',
+        text: 'Discuss testing when these symptoms appear or battery condition is reviewed during maintenance. The warning alone does not confirm a failed battery. Ask which test findings support replacement and whether a charging or drain concern needs separate investigation.',
       },
       { type: 'h2', text: 'Car Battery Replacement FAQs' },
       { type: 'h3', text: 'How long does a car battery last in Dubai?' },
       {
         type: 'p',
-        text: "In Dubai's hot climate, most car batteries last between 12 to 18 months. Heat significantly reduces battery lifespan compared to cooler regions.",
+        text: 'Service life varies with the battery specification, temperature exposure, charging, storage and use. Age is useful context, but test results and the reported symptoms should determine whether replacement or further investigation is appropriate.',
       },
       { type: 'h3', text: 'How much does a car battery replacement cost in Dubai?' },
       {
@@ -595,7 +597,7 @@ export const blogPosts: BlogPost[] = [
       { type: 'h3', text: 'Do you offer battery testing before replacement?' },
       {
         type: 'p',
-        text: 'Yes. We always perform a full battery health check before recommending replacement, ensuring you only replace it when necessary.',
+        text: 'Battery condition can be assessed before replacement is proposed. The vehicle and complaint determine the initial testing scope and whether charging, connections or unwanted drain need further checks.',
       },
       { type: 'h3', text: 'How long does a battery replacement take?' },
       {
@@ -605,7 +607,7 @@ export const blogPosts: BlogPost[] = [
       { type: 'h3', text: 'Do you install batteries for Mercedes, BMW, Audi, and other luxury cars?' },
       {
         type: 'p',
-        text: 'Yes. We specialize in German and luxury vehicles, including Mercedes-Benz, BMW, Audi, Porsche, Range Rover, and more, using batteries that meet manufacturer specifications.',
+        text: 'Send the model, year and concern so low-voltage battery specification, fitment, access and any required supported registration can be confirmed. Electric or hybrid traction-battery work is a separate scope and is not promised by this page.',
       },
     ],
   },
@@ -627,7 +629,7 @@ export const blogPosts: BlogPost[] = [
     ogTitle: 'How to Choose a Car Workshop in Dubai | 2026 Guide',
     ogDescription:
       'Compare diagnostics, service scope, parts options, estimates and communication before choosing a Dubai car workshop.',
-    ogType: 'website',
+    ogType: 'article',
     twitterCard: 'summary_large_image',
     twitterTitle: 'How to Choose a Car Workshop in Dubai | 2026 Guide',
     twitterDescription:
