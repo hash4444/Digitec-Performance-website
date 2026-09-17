@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef } from 'react';
 
 type Direction = 'up' | 'down' | 'left' | 'right' | 'none';
 
@@ -42,22 +42,28 @@ export const Reveal = ({
   amount = 0.2,
 }: RevealProps) => {
   const ref = useRef<HTMLDivElement>(null);
-  const [shown, setShown] = useState(false);
-
   useEffect(() => {
     const el = ref.current;
-    if (!el) return;
+    // Render readable content in initial HTML and when JavaScript is unavailable.
+    // Enhance only offscreen sections; never hide an already visible heading.
+    if (!el || !('IntersectionObserver' in window) || !el.animate ||
+      window.matchMedia('(prefers-reduced-motion: reduce)').matches ||
+      el.getBoundingClientRect().top < window.innerHeight) return;
 
-    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-      setShown(true);
-      return;
-    }
-
+    let animation: Animation | undefined;
     const io = new IntersectionObserver(
       (entries) => {
         entries.forEach((e) => {
           if (e.isIntersecting) {
-            setShown(true);
+            animation = el.animate([
+              { opacity: 0, transform: hidden(direction, distance) },
+              { opacity: 1, transform: 'none' },
+            ], {
+              duration: duration * 1000,
+              delay: delay * 1000,
+              easing: 'cubic-bezier(0.22,1,0.36,1)',
+              fill: 'backwards',
+            });
             io.disconnect();
           }
         });
@@ -65,19 +71,13 @@ export const Reveal = ({
       { threshold: amount, rootMargin: '0px 0px -8% 0px' },
     );
     io.observe(el);
-    return () => io.disconnect();
-  }, [amount]);
+    return () => { io.disconnect(); animation?.cancel(); };
+  }, [amount, delay, direction, distance, duration]);
 
   return (
     <div
       ref={ref}
       className={className}
-      style={{
-        opacity: shown ? 1 : 0,
-        transform: shown ? 'none' : hidden(direction, distance),
-        transition: `opacity ${duration}s cubic-bezier(0.22,1,0.36,1) ${delay}s, transform ${duration}s cubic-bezier(0.22,1,0.36,1) ${delay}s`,
-        willChange: 'opacity, transform',
-      }}
     >
       {children}
     </div>
