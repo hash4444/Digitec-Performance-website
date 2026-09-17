@@ -1,5 +1,9 @@
 import type { BlogPost } from '@/data/blogPosts';
 import type { BrandWorkshopArticle } from '@/data/brandWorkshopArticles';
+import { arGeneralBlogContent } from './ar-general-blog-content';
+import { arModelBlogContent } from './ar-model-blog-content';
+import { arServiceBlogContent } from './ar-service-blog-content';
+import { arSpecialistBlogContent } from './ar-specialist-blog-content';
 
 export const categoryArabic: Record<string, string> = {
   All: 'الكل',
@@ -198,13 +202,37 @@ const defenderGalleryArabic = [
 ];
 
 export const localizeBlogPostToArabic = (post: BlogPost): BlogPost => {
-  const meta = arabicPostMeta[post.slug] ?? {
+  const serviceOrSpecialistContent = arServiceBlogContent[post.slug] ?? arSpecialistBlogContent[post.slug];
+  const adaptation = arGeneralBlogContent[post.slug] ?? arModelBlogContent[post.slug]
+    ?? (serviceOrSpecialistContent ? { ...arabicPostMeta[post.slug], content: serviceOrSpecialistContent } : undefined);
+  const meta = arabicPostMeta[post.slug] ?? adaptation ?? {
     title: post.title,
     excerpt: post.excerpt,
     metaTitle: post.metaTitle,
     metaDescription: post.metaDescription,
     topic: 'صيانة السيارة',
   };
+  if (adaptation) {
+    const wordCount = adaptation.content.reduce((total, block) => total + [block.text ?? '', ...(block.items ?? [])].join(' ').trim().split(/\s+/).filter(Boolean).length, 0);
+    const readingMinutes = Math.max(1, Math.ceil(wordCount / 180));
+    return {
+      ...post,
+      ...adaptation,
+      ...meta,
+      content: adaptation.content,
+      updatedDate: '2026-09-17',
+      author: 'فريق ورشة ديجي-تك',
+      readTime: `${readingMinutes} ${readingMinutes === 1 ? 'دقيقة قراءة' : 'دقائق قراءة'}`,
+      gallery: post.slug === 'best-defender-workshop-dubai'
+        ? post.gallery?.map((image, index) => ({ ...image, ...(defenderGalleryArabic[index] ?? {}) }))
+        : post.gallery,
+      ogType: 'article',
+      ogTitle: meta.title,
+      ogDescription: meta.excerpt,
+      twitterTitle: meta.title,
+      twitterDescription: meta.excerpt,
+    };
+  }
   const headings = headingTemplates(meta.topic);
   const paragraphs = paragraphTemplates(meta.topic);
   const lists = listTemplates(meta.topic);
@@ -254,7 +282,7 @@ export const localizeBlogPostToArabic = (post: BlogPost): BlogPost => {
 };
 
 export const localizePostSummaryToArabic = <T extends { slug: string; title: string; excerpt: string }>(post: T): T => {
-  const fixed = arabicPostMeta[post.slug];
+  const fixed = arabicPostMeta[post.slug] ?? arGeneralBlogContent[post.slug] ?? arModelBlogContent[post.slug];
   if (fixed) return { ...post, title: fixed.title, excerpt: fixed.excerpt };
   const brand = post.title.replace(/^Best /, '').replace(/ Workshop in Dubai.*$/, '').replace(/ Maintenance Guide.*$/, '');
   return {
