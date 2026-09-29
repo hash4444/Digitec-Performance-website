@@ -1,0 +1,5 @@
+
+> vite_react_shadcn_ts@0.0.0 typecheck
+> tsc --noEmit -p tsconfig.app.json && tsc --noEmit -p tsconfig.node.json
+
+src/pages/BrandServicePage.tsx(517,44): error TS2367: This comparison appears to be unintentional because the types '"soft-close-door-installation" | "steering-repair" | "tire-repair" | "exhaust-repair" | "fuel-system-repair" | "body-repair"' and '"electrical-repair"' have no overlap.

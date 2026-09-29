@@ -1,0 +1,305 @@
+{
+  "base": "6aa0db7b3148a52c647be806f0642e57c52f8cb3",
+  "files": [
+    {
+      "path": "docs/seo/protection-release-validation.json",
+      "bytes": 1613,
+      "binary": false,
+      "sha256": "e5e9370f824d55913ef653df0cd8be549ba5b948c834ca9b0550f9ab86751e6b"
+    },
+    {
+      "path": "docs/seo/query-release-validation.json",
+      "bytes": 263,
+      "binary": false,
+      "sha256": "7dde1c33e8fa928e6b1832e89ee31ca1a91ac1687f12872907b95c267034b5ac"
+    },
+    {
+      "path": "docs/seo/route-schema-matrix.csv",
+      "bytes": 805429,
+      "binary": false,
+      "sha256": "8d39895336f46c837ad9b2ce745ba546a90199c7c5b30b468b5ee11b80da7c16"
+    },
+    {
+      "path": "docs/seo/sitewide-release-2026-09-17.md",
+      "bytes": 2574,
+      "binary": false,
+      "sha256": "7c8fcd61f7214cd512d8d758381593f550036ec63f451c29fe8a54d991032653"
+    },
+    {
+      "path": "package.json",
+      "bytes": 4141,
+      "binary": false,
+      "sha256": "b591e81a68890afc70e048efbd6edc4177719f7a559012d98263e3060b5a89dc"
+    },
+    {
+      "path": "public/images/mercedes-engine-repair.png",
+      "bytes": 2318353,
+      "binary": true,
+      "sha256": "43b0db7d49c45521797b592412fc5cdb8f1a9ca654bc7521be590817b8695e9f"
+    },
+    {
+      "path": "public/images/seo/hero-1536.webp",
+      "bytes": 113948,
+      "binary": true,
+      "sha256": "724f279b6969ab32458dfbd3c7ffcf17f9c6690b85680dac741b85f7011a6864"
+    },
+    {
+      "path": "public/images/seo/hero-768.webp",
+      "bytes": 48874,
+      "binary": true,
+      "sha256": "76b59df3e4ded88b88486f236fb972d5f5a0718841ac6758bd14849af30573c1"
+    },
+    {
+      "path": "public/images/seo/mascot-256.webp",
+      "bytes": 12158,
+      "binary": true,
+      "sha256": "b1d3bc572c26b1459db165f4aca542c642d833941d89dc15c338791b52525336"
+    },
+    {
+      "path": "public/images/seo/mascot-wave-256.webp",
+      "bytes": 13570,
+      "binary": true,
+      "sha256": "893c6c109998caa411ec6f2526fd03eac4d630c50679c5ab602872c311a2095d"
+    },
+    {
+      "path": "public/images/seo/mercedes-engine-repair-1086.webp",
+      "bytes": 234886,
+      "binary": true,
+      "sha256": "f54f77363b1b490573fe03956dd196d729aedbbf5061339205f78f78c4d51113"
+    },
+    {
+      "path": "public/sitemap.xml",
+      "bytes": 128265,
+      "binary": false,
+      "sha256": "6ea38fcbbb56f31d09a39846197d74958f97b1b27f29117439e504da450b8458"
+    },
+    {
+      "path": "scripts/audit-sitewide-seo.mjs",
+      "bytes": 13235,
+      "binary": false,
+      "sha256": "c31cfd287c2bc8a9ad6a7e4ce82f7faeb31a68b19ed16a9ca19b4b446bb79a1f"
+    },
+    {
+      "path": "scripts/optimize-sitewide-images.mjs",
+      "bytes": 1373,
+      "binary": false,
+      "sha256": "01bb5c1eac3dcddb62962aa66c0d6c226d56b571e24ff4f9195ed702b8609c56"
+    },
+    {
+      "path": "scripts/prepare-sitewide-release.mjs",
+      "bytes": 1860,
+      "binary": false,
+      "sha256": "6314a7c8a69b834acaff52e222446cfe1f83e55ff9913348b609e36f27fd5427"
+    },
+    {
+      "path": "scripts/prerender.mjs",
+      "bytes": 8606,
+      "binary": false,
+      "sha256": "1704d9591a72313a3190b790d0cfe8759149039f2df2b9237488db85ab927700"
+    },
+    {
+      "path": "scripts/test-sitewide-browser.mjs",
+      "bytes": 5890,
+      "binary": false,
+      "sha256": "a0e432eec1aee592ac22aaf5e0a91532e7f6b81b889c2e931545c7b3db89e254"
+    },
+    {
+      "path": "scripts/update-sitewide-lastmod.mjs",
+      "bytes": 1524,
+      "binary": false,
+      "sha256": "287cd6efc7381420feebaa18c967ec7f53d7323072acd3e84ab8e55eb150a0ae"
+    },
+    {
+      "path": "scripts/validate-social-metadata.mjs",
+      "bytes": 3651,
+      "binary": false,
+      "sha256": "8da7ee63fb06324b5a143bc03eadbb5635df6f0e9fe790792125d031f8e8d5cd"
+    },
+    {
+      "path": "src/components/Footer.tsx",
+      "bytes": 6876,
+      "binary": false,
+      "sha256": "ab87c732e341c0e7569f362a1d934c97f294d0aadf7e1b189f4dfe48118ba759"
+    },
+    {
+      "path": "src/components/Hero.tsx",
+      "bytes": 3262,
+      "binary": false,
+      "sha256": "ebb54217bd2472bca00e40e10791194bd182d74cea745297700feab30e5966f0"
+    },
+    {
+      "path": "src/components/MascotWidget.tsx",
+      "bytes": 7769,
+      "binary": false,
+      "sha256": "95cbb123577b4239d3b3d31be9c0cf284fab95f0131022fc038d2def6d2172f9"
+    },
+    {
+      "path": "src/components/PorscheKnowledgeCentre.tsx",
+      "bytes": 5666,
+      "binary": false,
+      "sha256": "9513557529a2a643e0469ffdbfb77dee3e15247f905eeb79f8fe41ca58eb5d49"
+    },
+    {
+      "path": "src/components/motion/Reveal.tsx",
+      "bytes": 2640,
+      "binary": false,
+      "sha256": "d95b3689354161e43329b5fb95bd9702dd6da1ae04ceb8e758eb3e974e6aa9fe"
+    },
+    {
+      "path": "src/data/arabicServiceContent.ts",
+      "bytes": 13088,
+      "binary": false,
+      "sha256": "1a894e6c5d59873725813b0dfdfd04817c42799ce07a3dac883fffdc6c9f63a6"
+    },
+    {
+      "path": "src/data/bestWorkshopPages.ts",
+      "bytes": 13158,
+      "binary": false,
+      "sha256": "82bf1bb38bc8b46646578025305077cd08ba21fa18c00e74ea3cf4bd59e57794"
+    },
+    {
+      "path": "src/data/blogPosts.ts",
+      "bytes": 104838,
+      "binary": false,
+      "sha256": "46c7f78d63e6a49af83d9dabd17304eb26889866e825c5342e988ee501050182"
+    },
+    {
+      "path": "src/data/brandServices.ts",
+      "bytes": 86868,
+      "binary": false,
+      "sha256": "dc31f397942a7f760907e9b4637230addb9b89e943b67dbe1b21014e76c1f883"
+    },
+    {
+      "path": "src/data/brandWorkshopArticles.ts",
+      "bytes": 27475,
+      "binary": false,
+      "sha256": "f460f26bdd2c1a3b65a57269c9a5b632bb30922b8ba3fb0c3c9278ba54fcdd99"
+    },
+    {
+      "path": "src/data/mercedesServices.ts",
+      "bytes": 37584,
+      "binary": false,
+      "sha256": "15c40d2f4e6121df41e83efd5dacb078d9522ae0fe58f15f3db6c48831687c52"
+    },
+    {
+      "path": "src/data/porscheArchitecture.ts",
+      "bytes": 5017,
+      "binary": false,
+      "sha256": "54c83c2eb0494ae80f92c2d51892469ead3fc286c8d0e0cc0275fe81d36962e7"
+    },
+    {
+      "path": "src/data/serviceDecisionFaqs.ts",
+      "bytes": 5243,
+      "binary": false,
+      "sha256": "f94ea84f6a1dceba5bdd5a97ae588b4397cd15a3289104ea8d74a558a31a8de4"
+    },
+    {
+      "path": "src/data/services.ts",
+      "bytes": 95610,
+      "binary": false,
+      "sha256": "4a76fc3fc5cb25e4d193286c4a96643188691950c3b2999d779402e7149d9f33"
+    },
+    {
+      "path": "src/data/sitewideSeoUpdatedPaths.ts",
+      "bytes": 40923,
+      "binary": false,
+      "sha256": "6781302eb91bec74533af1644d0329d0fd97b2c4711969e0f990dd1b4a651ebb"
+    },
+    {
+      "path": "src/hooks/use-seo.ts",
+      "bytes": 7667,
+      "binary": false,
+      "sha256": "182117fd77ba54526b8936e44648591a376c9cd0170a0f12a4a2c91f8a281205"
+    },
+    {
+      "path": "src/i18n/ar-blog.ts",
+      "bytes": 26538,
+      "binary": false,
+      "sha256": "933c022098f1b311f2965074b5b89d67f5f86b3baa339e0c253d012586c155e4"
+    },
+    {
+      "path": "src/i18n/ar-general-blog-content.ts",
+      "bytes": 46369,
+      "binary": false,
+      "sha256": "e451e217a572c17ec9a31db985bdde5120f0abad3732b21722406e745bf681a9"
+    },
+    {
+      "path": "src/i18n/ar-home.ts",
+      "bytes": 15848,
+      "binary": false,
+      "sha256": "d7080ad2d214fd68fc940587ef7a346a6ef897f30d45a943179ea12d93237144"
+    },
+    {
+      "path": "src/i18n/ar-model-blog-content.ts",
+      "bytes": 58980,
+      "binary": false,
+      "sha256": "99ae9187bb258213265712e9c679370eb3786a7012660daaa4bccda86ea2b0e7"
+    },
+    {
+      "path": "src/i18n/ar-service-blog-content.ts",
+      "bytes": 26175,
+      "binary": false,
+      "sha256": "2d17fdac9f256dba81a6778640126ad3d56f69b8bd0d0a7a50ce741317505f7f"
+    },
+    {
+      "path": "src/i18n/ar-specialist-blog-content.ts",
+      "bytes": 18836,
+      "binary": false,
+      "sha256": "09bb614cc2040e1472935575c3c3d6b63f62de0f1ab069879ad54bd3c352ed7a"
+    },
+    {
+      "path": "src/lib/related-articles.ts",
+      "bytes": 1306,
+      "binary": false,
+      "sha256": "41632449dba576f06f49c92fd1449ce0e68dfee71d634b5615256fadd9c3f52e"
+    },
+    {
+      "path": "src/lib/route-manifest.ts",
+      "bytes": 13181,
+      "binary": false,
+      "sha256": "f49fb3e03f30ecec5b9a1fdd3202d2cb660170f1f474b9b256938b69b90aa661"
+    },
+    {
+      "path": "src/lib/schema.ts",
+      "bytes": 12492,
+      "binary": false,
+      "sha256": "f808dae13738a5fec3bff35e69ffc2c0f731063eee43dffe66e8ce5e191e09be"
+    },
+    {
+      "path": "src/pages/BlogPost.tsx",
+      "bytes": 20396,
+      "binary": false,
+      "sha256": "04c756c6d46c8aaa444872f46d4cd1b22502b4df1271dcbfc86a5370db4a27f9"
+    },
+    {
+      "path": "src/pages/BrandPage.tsx",
+      "bytes": 120677,
+      "binary": false,
+      "sha256": "e5de59f0a8efcbba9671569eb3c81517499f41aef416da069570e84be7c73180"
+    },
+    {
+      "path": "src/pages/BrandServicePage.tsx",
+      "bytes": 104170,
+      "binary": false,
+      "sha256": "604fe534b74fc8fcd86113fa7d2122feca508b9f5825f32fc7499429c16104bc"
+    },
+    {
+      "path": "src/pages/BrandWorkshopArticlePage.tsx",
+      "bytes": 87804,
+      "binary": false,
+      "sha256": "e8c6d741ef9d2b72847b9ebb2d868e1cf9f947c522eab85180c4bd8404a61e72"
+    },
+    {
+      "path": "src/pages/Index.tsx",
+      "bytes": 7420,
+      "binary": false,
+      "sha256": "5840755f64182d8703b247a403f2bba67f2056d9677755fb15c00a33f1822720"
+    },
+    {
+      "path": "src/pages/VRX.tsx",
+      "bytes": 14602,
+      "binary": false,
+      "sha256": "876a54bd5eed24fab24fdb8bdeca5b6e418791a20f152c217042736339753ef8"
+    }
+  ]
+}

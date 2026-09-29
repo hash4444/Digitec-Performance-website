@@ -41,7 +41,12 @@ export interface MercedesModelPageData {
   h1: string;
   metaTitle: string;
   metaDescription: string;
+  dateModified: string;
   intro: string;
+  scopeNote: string;
+  relatedModels: MercedesModelLink[];
+  planning: MercedesModelLink;
+  infotainment?: MercedesModelLink;
   coverage: string[];
   maintenance: MercedesModelSection;
   powertrain: MercedesModelSection;
@@ -74,6 +79,10 @@ export const mercedesModelPages: MercedesModelPageData[] = [
     h1: 'Mercedes-AMG G63 Service & Repair Dubai',
     metaTitle: 'Mercedes-AMG G63 Service & Repair Dubai | Digi-Tec',
     metaDescription: 'G63 service and repair in Dubai for M157 and M177 V8s, AMG transmissions, cooling, brakes, differential locks and G-Class diagnostics.',
+    dateModified: "2026-09-28",
+    scopeNote: "This page covers the AMG G63. A G500, G550 or another non-AMG G-Wagon needs the separate G-Class assessment; body shape alone does not identify the engine, gearbox or brakes.",
+    relatedModels: [{"label": "Mercedes G-Class", "path": "/mercedes/models/g-class-service-repair-dubai", "description": "For non-AMG G500, G550 and other G-Wagon configurations."}, {"label": "Mercedes-AMG C63", "path": "/mercedes/models/c63-service-repair-dubai", "description": "For C63-specific V8 or performance-hybrid service requirements."}],
+    planning: {"label": "G63 service cost and inspection scope", "path": "/blog/mercedes-service-cost-dubai-guide", "description": "A G63 estimate should separate scheduled oil and filter work from AMG brakes, driveline fluids and diagnosis. Share modifications and recent work so the quotation reflects the fitted vehicle."},
     intro: 'A G63 needs more than a generic Mercedes checklist. Digi-Tec scopes maintenance and diagnosis around the exact generation, AMG V8, transmission, transfer case, differential-lock system and fitted suspension—then confirms the work before repair begins.',
     coverage: [
       'Earlier W463 AMG G63 applications, including M157 5.5-litre biturbo V8 vehicles with the seven-speed AMG transmission.',
@@ -166,6 +175,10 @@ export const mercedesModelPages: MercedesModelPageData[] = [
     h1: 'Mercedes G-Class Service & Repair Dubai',
     metaTitle: 'Mercedes G-Class Service & Repair Dubai | Digi-Tec',
     metaDescription: 'Mercedes G-Class service and repair in Dubai for G500, G550 and diesel models: 4MATIC driveline, differential locks, cooling and diagnostics.',
+    dateModified: "2026-09-28",
+    scopeNote: "G-Wagon service and repair here means non-AMG G-Class vehicles. A G63 has a separate AMG service plan; a G-Class badge or exterior conversion does not make the fitted hardware interchangeable.",
+    relatedModels: [{"label": "Mercedes-AMG G63", "path": "/blog/mercedes-g63-service-dubai-guide", "description": "For the AMG G63 engine, gearbox and chassis, including assessment of modified vehicles."}, {"label": "Mercedes GLE", "path": "/mercedes/models/gle-service-repair-dubai", "description": "For a GLE SUV or Coupe with a different chassis and driveline."}],
+    planning: {"label": "G-Class service intervals and off-road use", "path": "/blog/mercedes-service-intervals-dubai-heat", "description": "Use the vehicle service reminder and recorded history to plan maintenance. Sand, towing or low annual mileage add condition checks; they do not justify one fixed interval for every G-Wagon."},
     intro: 'The non-AMG G-Class combines Mercedes road-car electronics and powertrains with a transfer case, low range and three differential locks. Digi-Tec separates routine service, chassis wear and four-wheel-drive faults from the AMG-specific requirements covered on the G63 page.',
     coverage: [
       'Earlier W463 G-Class petrol and diesel models, with equipment confirmed from VIN and market specification.',
@@ -228,7 +241,7 @@ export const mercedesModelPages: MercedesModelPageData[] = [
       ],
     },
     symptoms: [
-      { title: 'Won’t engage a differential lock', detail: 'May involve operating conditions, an actuator, position feedback, wiring or a mechanical fault.', guidePath: problem('check-engine-light'), guideLabel: 'Understand evidence-led diagnostics' },
+      { title: 'Won’t engage a differential lock', detail: 'May involve operating conditions, an actuator, position feedback, wiring or a mechanical fault.', guidePath: MERCEDES_SERVICE_LINKS.diagnostics, guideLabel: 'Arrange a differential-lock diagnostic assessment' },
       { title: 'Harsh engagement or gear change', detail: 'Separate gearbox behaviour from mounts and four-wheel-drive play.', guidePath: problem('gearbox-jerking'), guideLabel: 'Read the gearbox-jerking guide' },
       { title: 'Engine temperature rising', detail: 'Coolant loss or fan and flow problems require prompt testing.', guidePath: problem('engine-overheating'), guideLabel: 'Read the overheating guide' },
       { title: 'Intermittent no-start', detail: 'First distinguish no-crank from crank-no-start.', guidePath: problem('wont-start'), guideLabel: 'Read the no-start guide' },
@@ -255,6 +268,10 @@ export const mercedesModelPages: MercedesModelPageData[] = [
     h1: 'Mercedes-AMG C63 Service & Repair Dubai',
     metaTitle: 'Mercedes-AMG C63 Service & Repair Dubai | Digi-Tec',
     metaDescription: 'Mercedes-AMG C63 service in Dubai for W204, W205 and W206: M156, M177 and M139 hybrid powertrains, AMG transmissions, brakes and cooling.',
+    dateModified: "2026-09-28",
+    scopeNote: "The C63 is an AMG model with its own engine, transmission and chassis requirements. C200, C240 and C300 service belongs with the C-Class page, even when an AMG styling package is fitted.",
+    relatedModels: [{"label": "Mercedes C-Class", "path": "/blog/mercedes-c-class-service-dubai-guide", "description": "For C200, C240, C300 and other C-Class variants, including AMG Line trim."}, {"label": "Mercedes-AMG E63", "path": "/mercedes/models/e63-service-repair-dubai", "description": "For the E63 performance saloon or estate, with its own chassis and gearbox scope."}],
+    planning: {"label": "Planning C63 maintenance by generation", "path": "/blog/mercedes-benz-maintenance-guide-dubai", "description": "A W204 V8 service history does not define a W206 hybrid service plan. Review the engine, gearbox, brake package, use and missing records before choosing work or comparing quotations."},
     intro: 'C63 generations share a badge but not a powertrain: the W204 uses a naturally aspirated V8, the W205 a biturbo V8 and the W206 a four-cylinder E PERFORMANCE hybrid system. Service and diagnosis must follow the generation, engine and high-voltage equipment actually fitted.',
     coverage: [
       'W204 C63 and C63 Black Series applications with the M156 6.2-litre naturally aspirated V8.',
@@ -278,12 +295,12 @@ export const mercedesModelPages: MercedesModelPageData[] = [
       points: [
         'M156 diagnosis may involve ignition, fuelling, intake, valve-train or mechanical checks depending on the evidence.',
         'M177 diagnosis may also require charge-air, turbocharger, crankcase-ventilation and separate cooling-circuit checks.',
-        'W206 diagnosis can cross combustion engine, high-voltage battery, inverter, electric drive unit and 12/48-volt support systems.',
+        'W206 diagnosis can cross combustion engine, high-voltage battery, inverter, electric drive unit and the fitted low-voltage supply systems.',
       ],
     },
     transmission: {
       title: 'AMG SPEEDSHIFT across three generations',
-      summary: 'W204, W205 and W206 C63s use different versions of the AMG multi-clutch transmission concept. A harsh shift or flare must be diagnosed with the correct control strategy and then separated from engine torque reduction, mounts, differential and hybrid intervention.',
+      summary: 'Early W204 C63s use SPEEDSHIFT PLUS 7G-TRONIC with a torque converter; later W204 and W205 applications use MCT variants, with 7- or 9-speed equipment depending on year. W206 C63 E PERFORMANCE uses MCT 9G. A harsh shift or flare must be diagnosed with the correct control strategy and then separated from engine torque reduction, mounts, differential and hybrid intervention.',
       points: [
         'Record drive mode, temperature, gear and throttle position when the symptom occurs.',
         'Confirm fluid type and service procedure by transmission identification.',
@@ -346,8 +363,14 @@ export const mercedesModelPages: MercedesModelPageData[] = [
     h1: 'Mercedes C-Class Service & Repair Dubai',
     metaTitle: 'Mercedes C-Class Service & Repair Dubai | Digi-Tec',
     metaDescription: 'Mercedes C-Class service and repair in Dubai for W204, W205 and W206 models, covering 7G/9G transmissions, cooling, AC, suspension and diagnostics.',
+    dateModified: "2026-09-28",
+    scopeNote: "C200, C240 and C300 enquiries belong here. An AMG Line styling package is not a C63 powertrain; actual C63 vehicles have their own model page and assessment.",
+    relatedModels: [{"label": "Mercedes-AMG C63", "path": "/mercedes/models/c63-service-repair-dubai", "description": "For an actual AMG C63 rather than an AMG exterior or trim package."}, {"label": "Mercedes E-Class", "path": "/blog/mercedes-e-class-service-dubai-guide", "description": "For E200, E300 and E350 saloon, coupe or cabriolet service."}],
+    planning: {"label": "C200, C240 and C300 service estimates", "path": "/blog/mercedes-service-cost-dubai-guide", "description": "Model year, engine, Service A or B requirements and repair findings determine the scope. An older C240 with incomplete records needs a condition review before a package price can be meaningful."},
+    infotainment: {"label": "C-Class screen and COMAND faults", "path": "/services/head-unit-repair-dubai", "description": "A black display, restart loop or lost sound needs identification of the fitted COMAND or MBUX system and its power/network supply. Repair diagnosis is different from changing a working audio system."},
     intro: 'C-Class servicing changes with the W204, W205 and W206 platform, engine, transmission and level of electrification. Digi-Tec identifies those systems first, then scopes maintenance or diagnosis for the vehicle rather than applying one C-Class package to every badge.',
     coverage: [
+      'Older C240 enquiries are assessed by chassis, engine and available service records; the W204/W205/W206 details below do not describe every earlier C-Class.',
       'W204 C-Class saloon, estate and coupe derivatives with petrol or diesel engines and 5G/7G-era transmissions.',
       'W205 C-Class models including M274/M264 petrol, OM651/OM654 diesel and selected plug-in hybrid variants.',
       'C200/C300 enquiries and C-Class coupe/cabriolet variants are grouped here, with engine, year and chassis confirmed individually. C205 coupe and A205 cabriolet equipment must not be inferred from the later W206 saloon.',
@@ -374,7 +397,7 @@ export const mercedesModelPages: MercedesModelPageData[] = [
     },
     transmission: {
       title: '7G-TRONIC and 9G-TRONIC behaviour',
-      summary: 'C-Class generations can use different automatic or AMG transmissions. A jerk, flare or delayed engagement should be reproduced and logged before fluid service or internal work is proposed.',
+      summary: 'C-Class generations use different automatic transmissions, identified by the exact engine and year. C63 AMG equipment is assessed separately. A jerk, flare or delayed engagement should be reproduced and logged before fluid service or internal work is proposed.',
       points: [
         'Check engine and gearbox mounts because movement can amplify otherwise normal torque changes.',
         'Inspect leaks and fluid condition using the procedure for the exact unit.',
@@ -436,6 +459,10 @@ export const mercedesModelPages: MercedesModelPageData[] = [
     h1: 'Mercedes-AMG E63 Service & Repair Dubai',
     metaTitle: 'Mercedes-AMG E63 Service & Repair Dubai | Digi-Tec',
     metaDescription: 'Mercedes-AMG E63 service and repair in Dubai for W212 and W213 M156, M157 and M177 models, AMG MCT, 4MATIC+, air suspension and cooling.',
+    dateModified: "2026-09-28",
+    scopeNote: "This page is for the AMG E63, including generation-specific saloon and estate equipment. E200, E300 and E350 vehicles, including AMG Line trim, remain within the E-Class service scope.",
+    relatedModels: [{"label": "Mercedes E-Class", "path": "/blog/mercedes-e-class-service-dubai-guide", "description": "For the non-E63 E-Class range and its body-style variants."}, {"label": "Mercedes-AMG C63", "path": "/mercedes/models/c63-service-repair-dubai", "description": "Compare a C63 by its own generation and powertrain, not just the AMG badge."}],
+    planning: {"label": "E63 maintenance records and AMG use", "path": "/blog/mercedes-benz-maintenance-guide-dubai", "description": "Record previous gearbox and differential work, brake measurements and any modifications. The scheduled-service list and diagnosis of a new shift or ride complaint should be explained separately."},
     intro: 'E63 maintenance must distinguish the rear-drive and 4MATIC W212 variants from the W213 M177 platform with AMG Performance 4MATIC+, MCT 9G and AMG RIDE CONTROL+ air suspension. Digi-Tec bases the plan on the exact generation and complaint.',
     coverage: [
       'W212 E63 applications with M156 or M157 V8 engines and generation-specific AMG seven-speed transmissions.',
@@ -526,8 +553,14 @@ export const mercedesModelPages: MercedesModelPageData[] = [
     h1: 'Mercedes E-Class Service & Repair Dubai',
     metaTitle: 'Mercedes E-Class Service & Repair Dubai | Digi-Tec',
     metaDescription: 'Mercedes E-Class service and repair in Dubai for W212, W213 and W214, including 7G/9G transmissions, suspension, 48V systems, AC and diagnostics.',
+    dateModified: "2026-09-28",
+    scopeNote: "E200, E300 and E350 saloon, coupe and cabriolet enquiries belong here, with generation and body style confirmed first. An E63 is a separate AMG model; AMG Line trim alone does not change that boundary.",
+    relatedModels: [{"label": "Mercedes-AMG E63", "path": "/mercedes/models/e63-service-repair-dubai", "description": "For the AMG E63 engine, transmission and performance chassis."}, {"label": "Mercedes S-Class", "path": "/blog/mercedes-s-class-service-dubai-guide", "description": "For S-Class comfort, suspension and cabin-electronics equipment."}],
+    planning: {"label": "E-Class service cost and body-style checks", "path": "/blog/mercedes-service-cost-dubai-guide", "description": "Ask which scheduled items, diagnostic time and parts the estimate includes. Coupe or cabriolet roof, glass and seal concerns are additional inspection requests, not assumed parts of every E-Class service."},
+    infotainment: {"label": "E-Class audio upgrade compatibility", "path": "/services/mercedes-audio-upgrade-dubai", "description": "For a working system that you want to improve, discuss the generation, factory amplifier and speaker package. Black screens, freezes and missing sound require fault diagnosis before an upgrade is proposed."},
     intro: 'E-Class generations vary from conventional petrol and diesel W212 models to W213 and W214 vehicles with 9G-TRONIC, 48-volt assistance, plug-in hybrid options and increasingly networked chassis systems. Digi-Tec identifies the fitted configuration before setting the service or diagnostic scope.',
     coverage: [
+      'E200, E300 and E350 service is scoped by the actual engine, year and drivetrain rather than the badge alone.',
       'W212 E-Class saloon and estate models with generation-specific petrol, diesel, 7G-TRONIC and suspension equipment.',
       'W213 E-Class models with 9G-TRONIC, optional AIRMATIC and selected mild-hybrid or plug-in hybrid systems.',
       'E300/E350 and E-Class coupe/cabriolet enquiries are assessed by year and VIN. Earlier C207/A207 and later C238/A238 body styles have their own equipment; they are not W214 coupe or cabriolet derivatives.',
@@ -618,6 +651,11 @@ export const mercedesModelPages: MercedesModelPageData[] = [
     h1: 'Mercedes S-Class Service & Repair Dubai',
     metaTitle: 'Mercedes S-Class Service & Repair Dubai | Digi-Tec',
     metaDescription: 'Mercedes S-Class service and repair in Dubai for W221, W222 and W223, covering AIRMATIC, ABC, E-ACTIVE BODY CONTROL, 9G and electronics.',
+    dateModified: "2026-09-28",
+    scopeNote: "This page covers S-Class saloons and applicable S-Class coupe/cabriolet equipment. S63 performance models and Maybach-specific equipment have separate assessment pages; the badge and fitted chassis both matter.",
+    relatedModels: [{"label": "Mercedes-AMG S63", "path": "/mercedes/models/s63-service-repair-dubai", "description": "For AMG-specific drivetrain and chassis requirements."}, {"label": "Maybach service and repair", "path": "/brands/maybach-service-dubai", "description": "For Maybach-specific comfort and body equipment."}],
+    planning: {"label": "Planning S-Class maintenance and comfort checks", "path": "/blog/mercedes-benz-maintenance-guide-dubai", "description": "Keep suspension repairs, battery changes and recurring comfort warnings with the service record. A scheduled visit can review those concerns without assuming every electronic symptom needs a new module."},
+    infotainment: {"label": "S-Class head-unit and display repair", "path": "/services/head-unit-repair-dubai", "description": "Separate a display, COMAND/MBUX or sound failure from a comfort-network or low-voltage fault. Share the exact screen behaviour and system version before hardware repair or replacement is scoped."},
     intro: 'An S-Class is a networked luxury platform, not just an engine and oil filter. Maintenance and diagnosis must account for the W221, W222 or W223 chassis, fitted AIRMATIC/ABC/E-ACTIVE system, 7G or 9G transmission, comfort electronics and any 48-volt or plug-in hybrid equipment.',
     coverage: [
       'W221 S-Class petrol and diesel variants with AIRMATIC or ABC depending on model and specification.',
@@ -707,11 +745,15 @@ export const mercedesModelPages: MercedesModelPageData[] = [
     path: '/mercedes/models/s63-service-repair-dubai',
     h1: 'Mercedes-AMG S63 Service & Repair Dubai',
     metaTitle: 'Mercedes-AMG S63 Service & Repair Dubai | Digi-Tec',
-    metaDescription: 'Mercedes-AMG S63 service and repair in Dubai for W221, W222 and W223 E PERFORMANCE models: V8, MCT, air suspension, hybrid and cooling.',
-    intro: 'The S63 layers AMG powertrain and brake hardware onto the S-Class comfort, suspension and electrical architecture. W221, W222 and W223 E PERFORMANCE vehicles require different engine, transmission, air-suspension and electrical test plans.',
+    metaDescription: 'Mercedes-AMG S63 service and repair in Dubai for saloon and coupe variants: V8, AMG transmission, fitted suspension and W223 hybrid assessment.',
+    dateModified: "2026-09-28",
+    scopeNote: "S63 AMG saloon, coupe and cabriolet variants need their own engine, gearbox and suspension identification. Standard S-Class, S65 V12 and Maybach enquiries follow their respective model or brand assessment.",
+    relatedModels: [{"label": "Mercedes S-Class", "path": "/blog/mercedes-s-class-service-dubai-guide", "description": "For wider S-Class and S65 V12 enquiries."}, {"label": "Maybach service and repair", "path": "/brands/maybach-service-dubai", "description": "For Maybach equipment, which is not identified by an S63 badge."}],
+    planning: {"label": "Planning S63 coupe and saloon servicing", "path": "/blog/mercedes-benz-maintenance-guide-dubai", "description": "Confirm body style, engine, transmission and fitted suspension before comparing service proposals. Roof or window concerns on a coupe/cabriolet and hybrid warnings on a W223 require different inspection scopes."},
+    intro: 'The S63 layers AMG powertrain and brake hardware onto the S-Class comfort, suspension and electrical architecture. W221, W222 and W223 E PERFORMANCE vehicles require different engine, transmission, chassis and electrical test plans; coupe and cabriolet equipment is checked separately.',
     coverage: [
       'W221 S63 applications with M156 or later M157 V8 powertrains and generation-specific AMG transmission equipment.',
-      'W222 S63 applications with M157 or M177 biturbo V8, AMG transmission and AIRMATIC-based AMG RIDE CONTROL.',
+      'W222 S63 applications with M157 or M177 biturbo V8 and generation-specific AMG transmission; suspension must be identified by drivetrain and market specification.',
       'C217 S63 coupe and A217 S63 cabriolet variants are checked for their own fitted suspension, roof, powertrain and equipment. S65 V12 enquiries belong with the wider S-Class assessment.',
       'W223 S63 E PERFORMANCE with M177 V8, rear electric drive unit, high-voltage battery and AMG SPEEDSHIFT MCT 9G.',
     ],
@@ -721,7 +763,7 @@ export const mercedesModelPages: MercedesModelPageData[] = [
       points: [
         'Confirm engine oil approval, filter and ignition items for the exact generation.',
         'Measure the installed steel or carbon-ceramic brake package.',
-        'Inspect AIRMATIC height retention and compressor behaviour.',
+        'Inspect the fitted air or hydraulic suspension for height retention and pressure-control faults.',
         'Apply compatible high-voltage procedures before W223 hybrid work.',
       ],
     },
@@ -735,8 +777,8 @@ export const mercedesModelPages: MercedesModelPageData[] = [
       ],
     },
     transmission: {
-      title: 'AMG SPEEDSHIFT MCT and driveline',
-      summary: 'AMG MCT behaviour changes by generation, and W223 torque delivery includes electric rear-drive intervention. A perceived transmission slip can therefore need engine, gearbox, hybrid and wheel-speed data together.',
+      title: 'AMG SPEEDSHIFT transmission and driveline',
+      summary: 'Identify the actual SPEEDSHIFT or MCT transmission before selecting fluid or test procedures. W223 torque delivery also includes electric rear-drive intervention. A perceived transmission slip can therefore need engine, gearbox, hybrid and wheel-speed data together.',
       points: [
         'Log the concern by gear, temperature, drive mode and state of charge where relevant.',
         'Inspect mounts, shafts, differential and tyre condition as part of driveline diagnosis.',
@@ -744,11 +786,11 @@ export const mercedesModelPages: MercedesModelPageData[] = [
       ],
     },
     suspension: {
-      title: 'AMG RIDE CONTROL air suspension',
-      summary: 'S63 applications use AMG-tuned air suspension, with technology varying by generation. Height loss, harsh ride or a warning may come from pneumatic leakage, a compressor, valve block, sensor, damper or voltage issue.',
+      title: 'S63 air and hydraulic suspension systems',
+      summary: 'S63 chassis equipment varies by generation, body style and drivetrain. Identify AIRMATIC-based air suspension versus hydraulic ABC or MAGIC BODY CONTROL before choosing tests. Height loss or harsh ride can require air-leak, hydraulic-pressure, sensor, damper or supply checks according to the fitted system.',
       points: [
         'Compare static height and commanded/actual height values.',
-        'Check pressure production, compressor temperature and leak paths.',
+        'Test the fitted pressure source and air or hydraulic leak paths using the applicable procedure.',
         'Inspect mechanical arms, bushes and tyres rather than treating every ride complaint as pneumatic.',
       ],
     },
@@ -763,7 +805,7 @@ export const mercedesModelPages: MercedesModelPageData[] = [
     },
     electrical: {
       title: 'AMG, comfort and high-voltage diagnostics',
-      summary: 'S63 faults may cross AMG drivetrain, air suspension, rear steering, comfort electronics and driver-assistance systems. W223 high-voltage work is accepted only where the exact requested scope and workshop compatibility are confirmed.',
+      summary: 'S63 faults may cross AMG drivetrain, fitted suspension, rear steering, comfort electronics and driver-assistance systems. W223 high-voltage work is accepted only where the exact requested scope and workshop compatibility are confirmed.',
       points: [
         'Scan the full vehicle and preserve chronological event data.',
         'Test 12-volt supply before interpreting widespread communication codes.',
@@ -772,7 +814,7 @@ export const mercedesModelPages: MercedesModelPageData[] = [
     },
     symptoms: [
       { title: 'Transmission flare under acceleration', detail: 'Reduce load and diagnose gearbox, engine and hybrid torque evidence.', guidePath: problem('transmission-slipping'), guideLabel: 'Read the transmission-slipping guide' },
-      { title: 'S63 settles on one corner', detail: 'A controlled leak-down test helps isolate the pneumatic path.', guidePath: problem('suspension-dropping-overnight'), guideLabel: 'Read the suspension-drop guide' },
+      { title: 'S63 settles on one corner', detail: 'Identify air or hydraulic suspension first; height loss needs system-specific leak and pressure tests.', guidePath: problem('suspension-dropping-overnight'), guideLabel: 'Read the suspension-drop guide' },
       { title: 'AIRMATIC warning', detail: 'Do not assume the compressor has failed without pressure and supply tests.', guidePath: problem('airmatic-malfunction'), guideLabel: 'Read the AIRMATIC guide' },
       { title: 'Oil or burning smell', detail: 'Locate the source promptly around hot V8 and exhaust components.', guidePath: problem('oil-leak'), guideLabel: 'Read the oil-leak guide' },
     ],
@@ -780,7 +822,7 @@ export const mercedesModelPages: MercedesModelPageData[] = [
       service('S63 scheduled service', MERCEDES_SERVICE_LINKS.maintenance, 'Generation-specific AMG and S-Class maintenance.'),
       service('AMG mechanical repair', MERCEDES_SERVICE_LINKS.mechanical, 'V8, cooling and compatible hybrid-system inspection.'),
       service('AMG transmission repair', MERCEDES_SERVICE_LINKS.transmission, 'MCT diagnosis using drivetrain and torque evidence.'),
-      service('Mercedes suspension repair', MERCEDES_SERVICE_LINKS.suspension, 'AMG air-suspension pressure, leak and control testing.'),
+      service('Mercedes suspension repair', MERCEDES_SERVICE_LINKS.suspension, 'System-specific air or hydraulic suspension pressure, leak and control testing.'),
     ],
     faqs: [
       { question: 'Is the W223 S63 only a V8?', answer: 'No. The W223 S63 E PERFORMANCE combines an M177 V8 with a rear electric drive unit and high-voltage battery, so diagnosis crosses combustion, transmission and hybrid systems.' },
@@ -798,6 +840,10 @@ export const mercedesModelPages: MercedesModelPageData[] = [
     h1: 'Mercedes GLE Service & Repair Dubai',
     metaTitle: 'Mercedes GLE Service & Repair Dubai | Digi-Tec',
     metaDescription: 'Mercedes GLE service and repair in Dubai for W166 and W167: 4MATIC, 7G/9G, AIRMATIC, E-ACTIVE BODY CONTROL, cooling and diagnostics.',
+    dateModified: "2026-09-28",
+    scopeNote: "GLE SUV and GLE Coupe service is scoped by body style, generation and powertrain. AMG and hybrid badges change the inspection plan; a GLS is a different model even where some systems share a family.",
+    relatedModels: [{"label": "Mercedes GLS", "path": "/mercedes/models/gls-service-repair-dubai", "description": "For three-row GLS/GL loading, rear climate and model-specific equipment."}, {"label": "Mercedes G-Class", "path": "/mercedes/models/g-class-service-repair-dubai", "description": "For G-Class transfer-case and differential-lock systems."}],
+    planning: {"label": "GLE service intervals under SUV use", "path": "/blog/mercedes-service-intervals-dubai-heat", "description": "The service display, model-specific requirements and history guide the schedule. Towing, repeated short journeys and sand exposure should be described so fluid, tyre and cooling checks reflect actual use."},
     intro: 'The GLE spans the W166-era M-Class/GLE and the W167 platform, with petrol, diesel, AMG, mild-hybrid and plug-in hybrid variants. Transmission, 4MATIC, suspension and cooling equipment must be identified before service or repair is scoped.',
     coverage: [
       'W166 M-Class and GLE applications with petrol, diesel or AMG powertrains, 7G/9G transmissions and optional air suspension depending on specification.',
@@ -887,6 +933,10 @@ export const mercedesModelPages: MercedesModelPageData[] = [
     h1: 'Mercedes GLS Service & Repair Dubai',
     metaTitle: 'Mercedes GLS Service & Repair Dubai | Digi-Tec',
     metaDescription: 'Mercedes GLS service and repair in Dubai for X166 and X167: 9G-TRONIC, 4MATIC, AIRMATIC, E-ACTIVE BODY CONTROL, cooling and electronics.',
+    dateModified: "2026-09-28",
+    scopeNote: "GLS and earlier GL enquiries require generation and engine identification. GLS63 and Maybach GLS equipment need an explicit scope check; a GLE service list is not automatically suitable for a seven-seat GLS.",
+    relatedModels: [{"label": "Mercedes GLE", "path": "/mercedes/models/gle-service-repair-dubai", "description": "For GLE SUV and Coupe variants with their own body and equipment."}, {"label": "Maybach service and repair", "path": "/brands/maybach-service-dubai", "description": "For Maybach GLS-specific cabin and chassis scope."}],
+    planning: {"label": "GLS maintenance with passengers and load", "path": "/blog/mercedes-benz-maintenance-guide-dubai", "description": "Service planning should retain brake and tyre measurements, driveline-fluid history and any rear-climate or height-control concerns. Passenger load changes inspection priorities without creating a universal parts-replacement schedule."},
     intro: 'The seven-seat GLS places high load on tyres, brakes, cooling, 4MATIC and self-levelling suspension. X166 and X167 vehicles also use different engine, electrical and active-chassis technology, so Digi-Tec confirms the exact configuration before quoting work.',
     coverage: [
       'X166 GL/GLS petrol, diesel and AMG variants with 7G or 9G-era equipment and AIRMATIC depending on market and specification.',

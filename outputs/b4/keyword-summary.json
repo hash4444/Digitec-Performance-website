@@ -1,0 +1,40 @@
+{
+  "ferrari": {
+    "source_observations": 623,
+    "raw_terms": 427,
+    "normalized_terms": 401,
+    "master_rows": 392,
+    "original_gsc_records": 175,
+    "original_gsc_normalized_terms": 31,
+    "latest_six_month_queries": 28,
+    "latest_six_month_impressions": 3457.0,
+    "latest_six_month_clicks": 1.0,
+    "evidence_counts": {
+      "MEASURED WORKBOOK": 54,
+      "GENERATED TAXONOMY": 354,
+      "RESEARCH KEYWORD": 16,
+      "OTHER SOURCE \u2014 USER BRIEF EXAMPLE": 24,
+      "MEASURED ORIGINAL GSC": 175
+    },
+    "unresolved_owner_conflicts": {}
+  },
+  "lamborghini": {
+    "source_observations": 551,
+    "raw_terms": 421,
+    "normalized_terms": 396,
+    "master_rows": 390,
+    "original_gsc_records": 113,
+    "original_gsc_normalized_terms": 25,
+    "latest_six_month_queries": 21,
+    "latest_six_month_impressions": 2086.0,
+    "latest_six_month_clicks": 0.0,
+    "evidence_counts": {
+      "MEASURED WORKBOOK": 41,
+      "GENERATED TAXONOMY": 361,
+      "RESEARCH KEYWORD": 13,
+      "OTHER SOURCE \u2014 USER BRIEF EXAMPLE": 23,
+      "MEASURED ORIGINAL GSC": 113
+    },
+    "unresolved_owner_conflicts": {}
+  }
+}

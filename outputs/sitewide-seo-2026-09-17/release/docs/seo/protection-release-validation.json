@@ -1,0 +1,41 @@
+{
+  "checkedAt": "2026-09-17T09:40:09.772Z",
+  "passed": true,
+  "outputDirectory": "dist",
+  "clientEntry": "assets/index-BtCA5fEy.js",
+  "clientSha256": "402ffa9d5bf6cc58fb6830acab90a432a6c57c6e1d695aa6935d8aad179df682",
+  "prerenderedRoutes": 1247,
+  "sitemapUrls": 996,
+  "pages": [
+    {
+      "route": "/services/paint-protection-film",
+      "component": "PpfPage",
+      "canonical": "https://digitecme.com/services/paint-protection-film",
+      "title": "PPF Dubai | Paint Protection Film for Cars | DIGI-TEC",
+      "internalLinks": 59,
+      "htmlSha256": "e0fb3618e9ca16b61fe4ca5a66d62926ed979a518fd288ae11aa99b7ec6b5095",
+      "clientChunk": "assets/PpfPage-knaJvxfJ.js",
+      "checks": "passed"
+    },
+    {
+      "route": "/services/ceramic-coating",
+      "component": "CeramicCoatingPage",
+      "canonical": "https://digitecme.com/services/ceramic-coating",
+      "title": "Ceramic Coating Dubai | Car Paint Protection | DIGI-TEC",
+      "internalLinks": 52,
+      "htmlSha256": "1c3d4f8312cb5c8c5bcd3a3e870a4ed7276c1d6ffe4ef228a1111c00492f62e0",
+      "clientChunk": "assets/CeramicCoatingPage-6DqebbFu.js",
+      "checks": "passed"
+    },
+    {
+      "route": "/services/car-polishing-dubai",
+      "component": "PaintCorrectionPage",
+      "canonical": "https://digitecme.com/services/car-polishing-dubai",
+      "title": "Car Polishing & Paint Correction Dubai | DIGI-TEC",
+      "internalLinks": 51,
+      "htmlSha256": "64706dda469e29fb3783947541446d7f6350cdd9d6a27808b7d73d330695b721",
+      "clientChunk": "assets/PaintCorrectionPage-DL8GSIGs.js",
+      "checks": "passed"
+    }
+  ]
+}

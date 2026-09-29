@@ -2,7 +2,7 @@ import routineMaintenanceImg from '@/assets/routine-maintenance-optimized.jpg';
 import tireRepairImg from '@/assets/tire-repair.jpg';
 import ppfImage from '@/assets/ppf-application.jpg';
 import ceramicImage from '@/assets/ceramic-coating.jpg';
-const mercedesRepairImg = '/images/mercedes-engine-repair.png';
+const mercedesRepairImg = '/images/seo/mercedes-engine-repair-1086.webp';
 import mercedesAmgEngineImg from '@/assets/mercedes-amg-engine-repair-dubai.jpg';
 import softCloseDoorImg from '@/assets/soft-close-door-repair.jpg';
 import suspensionRepairImg from '@/assets/suspension-repair-dubai.jpg';
@@ -868,16 +868,16 @@ export const services: ServiceData[] = [
   },
   {
     slug: 'soft-close-door-repair-dubai',
-    metaTitle: 'Soft Close Door Installation Dubai | ROX 01 Retrofit',
-    metaDescription: 'Soft-close door retrofit and repair assessment in Dubai for compatible vehicles, including selected ROX 01 applications.',
-    title: 'Soft Close Door Installation & ROX 01 Retrofit in Dubai',
-    description: 'Soft close door retrofit, installation and repair for compatible vehicles, including assessed ROX 01 applications.',
+    metaTitle: 'Soft-Close Door Repair & Installation Dubai | DIGI-TEC',
+    metaDescription: 'Soft-close door fault inspection and compatibility assessment for installation across supported vehicles at DIGI-TEC in Al Quoz, Dubai.',
+    title: 'Soft-Close Door Repair & Installation in Dubai',
+    description: 'Inspect a door that no longer pulls closed, or ask whether installation is compatible with your vehicle.',
     image: softCloseDoorImg,
     category: 'Comfort Systems',
-    seoKeyword: 'Soft Close Door Installation Dubai',
-    intro: 'Digi-Tec assesses soft-close door installation, retrofit and repair in Dubai for compatible vehicles, including selected ROX 01 applications. Compatibility, latches, actuators, sensors, wiring, control modules and door alignment are inspected before an installation or repair scope is proposed.',
+    seoKeyword: 'Soft Close Door Repair Dubai',
+    intro: 'DIGI-TEC inspects soft-close door faults and installation enquiries for supported vehicles in Dubai. A door that clicks or fails to pull closed needs latch, actuator, wiring and alignment checks; installation starts with a separate compatibility assessment. The exact vehicle and parts availability determine the proposed scope.',
     whyImportant: 'Soft-close doors combine mechanical latches with electric actuators and sensors. A fault can affect pull-close or locking operation, while retrofit feasibility depends on the door structure, available components, wiring and vehicle configuration.',
-    whyChoose: 'Digi-Tec assesses soft-close retrofits and repairs for selected ROX 01, Mercedes-Benz, BMW, Rolls-Royce, Bentley, Range Rover, Porsche and other applications. Compatibility, components, wiring, calibration and timing are confirmed after inspecting the exact vehicle.',
+    whyChoose: 'DIGI-TEC checks the door system and vehicle configuration before quoting repair or installation. The existing ROX 01 installation page handles ROX-specific fitment enquiries; this page remains the cross-brand door-fault and compatibility owner.',
     includes: [
       'Soft close door retrofit and installation',
       'Soft close latch and actuator diagnosis',
@@ -893,11 +893,11 @@ export const services: ServiceData[] = [
     },
     extraSections: [
       {
-        heading: 'ROX 01 Soft Close Door Installation',
+        heading: 'ROX 01 installation enquiries',
         items: [
-          'Soft close door retrofit and installation for compatible ROX 01 vehicles',
-          'Latch, actuator, sensor, wiring, and door-alignment inspection before installation',
-          'Pull-close, locking, and available safety-function checks after fitting',
+          'Use the dedicated ROX 01 page for model-specific installation and fitment questions',
+          'Confirm door structure, wiring, components and vehicle configuration before a quote',
+          'Inspect an existing fault separately before recommending repair',
         ],
       },
       {
@@ -918,7 +918,7 @@ export const services: ServiceData[] = [
       { question: 'Can you install soft close doors on a ROX 01?', answer: 'Digi-Tec assesses selected ROX 01 vehicles for soft-close installation in Dubai. The door, latch area, wiring, available components and vehicle configuration are checked before compatibility and the installation approach are confirmed.' },
       { question: 'Which cars do you install and repair soft close doors on?', answer: 'Coverage depends on door construction, available components, wiring and vehicle configuration. Digi-Tec assesses compatibility for ROX 01 and selected luxury vehicles before confirming installation or repair.' },
     ],
-    localIntent: 'For soft close door installation, ROX 01 retrofit or repair in Dubai, visit Digi-Tec Performance Centre in Al Quoz for a compatibility assessment.',
+    localIntent: 'For a soft-close door fault or a cross-brand installation enquiry in Dubai, contact DIGI-TEC in Al Quoz for an inspection or compatibility assessment.',
     details: 'Soft close door work can include compatibility checks, latch actuators, electric motors, sensors, wiring, alignment, replacement and system testing on supported vehicles.',
   },
   {

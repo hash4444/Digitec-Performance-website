@@ -1,0 +1,65 @@
+{
+  "head_before": "9cf7fec5b9ecaef836408245b03ab2e9f2bd718b",
+  "head_final": "9cf7fec5b9ecaef836408245b03ab2e9f2bd718b",
+  "branch_before": "main",
+  "branch_final": "main",
+  "changed_existing_source_and_generated_files": [
+    "cloudflare/routing-response-data.js",
+    "docs/seo/protection-release-validation.json",
+    "docs/seo/route-schema-matrix.csv",
+    "public/sitemap.xml",
+    "scripts/validate-query-release.mjs",
+    "src/data/brandServices.ts",
+    "src/data/brandWorkshopArticles.ts",
+    "src/i18n/ar-best-workshop.ts",
+    "src/lib/route-manifest.ts",
+    "src/pages/BestWorkshopPage.tsx",
+    "src/pages/BrandPage.tsx",
+    "src/pages/BrandServicePage.tsx",
+    "src/pages/BrandWorkshopArticlePage.tsx"
+  ],
+  "added_source_files": [
+    "src/data/b4UpdatedPaths.ts"
+  ],
+  "ferrari_rendered_urls_changed": [
+    "/ar/best-ferrari-workshop-dubai",
+    "/ar/blog/ferrari-maintenance-guide-dubai",
+    "/ar/brands/ferrari-service-dubai",
+    "/best-ferrari-workshop-dubai",
+    "/blog/ferrari-maintenance-guide-dubai",
+    "/brands/ferrari-service-dubai"
+  ],
+  "lamborghini_rendered_urls_changed": [
+    "/ar/best-lamborghini-workshop-dubai",
+    "/ar/blog/lamborghini-maintenance-guide-dubai",
+    "/ar/brands/lamborghini-service-dubai",
+    "/best-lamborghini-workshop-dubai",
+    "/blog/lamborghini-maintenance-guide-dubai",
+    "/brands/lamborghini-service-dubai/electrical-repair"
+  ],
+  "shared_directory_semantic_changes": [
+    "/blog",
+    "/ar/blog",
+    "/ar/sitemap"
+  ],
+  "new_public_urls": 0,
+  "lastmod_only_route_changes": [
+    "/ar/best-ferrari-workshop-dubai",
+    "/ar/best-lamborghini-workshop-dubai",
+    "/ar/blog/ferrari-maintenance-guide-dubai",
+    "/ar/brands/ferrari-service-dubai",
+    "/ar/brands/lamborghini-service-dubai",
+    "/best-ferrari-workshop-dubai",
+    "/best-lamborghini-workshop-dubai",
+    "/blog/ferrari-maintenance-guide-dubai",
+    "/blog/lamborghini-maintenance-guide-dubai",
+    "/brands/ferrari-service-dubai",
+    "/brands/lamborghini-service-dubai",
+    "/brands/lamborghini-service-dubai/electrical-repair"
+  ],
+  "route_policy_changes": [],
+  "seo_policy_changes": [],
+  "committed": false,
+  "pushed": false,
+  "deployed": false
+}

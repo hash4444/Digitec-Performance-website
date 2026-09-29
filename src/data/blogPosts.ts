@@ -182,110 +182,148 @@ export const blogPosts: BlogPost[] = [
     ],
   },
   {
-    slug: 'best-oil-change-dubai-mercedes',
-    title: 'Best Oil Change in Dubai for Mercedes: What Your Car Actually Needs',
-    excerpt:
-      'A Mercedes oil change is more than draining and refilling. Learn how to choose the right workshop, oil specification and service process for Dubai driving conditions.',
-    category: 'Mercedes',
-    author: 'DIGI-TEC Workshop',
-    date: '2026-08-13',
-    readTime: '7 min read',
-    coverGradient: 'from-burnt-orange/40 via-charcoal to-black',
-    coverImage: mercedesRepairGuideWorkshop,
-    metaTitle: 'Best Oil Change in Dubai for Mercedes | Mercedes Service Guide',
-    metaDescription:
-      'Looking for the best oil change in Dubai for your Mercedes? Learn which oil specification, filter, checks and service records matter for reliable Mercedes maintenance.',
-    keywords:
-      'best oil change Dubai Mercedes, Mercedes oil change Dubai, Mercedes engine oil service Dubai, Mercedes oil filter replacement Dubai, Mercedes service Al Quoz',
-    ogTitle: 'Best Oil Change in Dubai for Mercedes: What Your Car Needs',
-    ogDescription:
-      'A practical Mercedes oil-change guide for Dubai: correct specifications, filters, checks and choosing a specialist workshop.',
-    ogType: 'article',
-    twitterCard: 'summary_large_image',
-    twitterTitle: 'Mercedes Oil Change in Dubai | DIGI-TEC',
-    twitterDescription:
-      'What a proper Mercedes oil change should include in Dubai, from approved oil specifications to diagnostic checks.',
-    content: [
-      { type: 'h2', text: 'A Mercedes Oil Change Is Not a Generic Service' },
+    "slug": "best-oil-change-dubai-mercedes",
+    "title": "How to Choose a Mercedes Oil Change in Dubai",
+    "excerpt": "Compare Mercedes oil-service proposals by engine approval, filter and seals, included checks and completed-work records before you choose a workshop.",
+    "category": "Mercedes",
+    "author": "DIGI-TEC Workshop",
+    "date": "2026-08-13",
+    "updatedDate": "2026-09-28",
+    "readTime": "4 min read",
+    "coverGradient": "from-burnt-orange/40 via-charcoal to-black",
+    "coverImage": mercedesRepairGuideWorkshop,
+    "metaTitle": "Choosing a Mercedes Oil Change Dubai | Owner Checklist",
+    "metaDescription": "Compare Mercedes oil changes in Dubai: confirm the exact oil approval, filter, included checks, service reset and records before choosing a workshop.",
+    "keywords": "choosing Mercedes oil change Dubai, Mercedes oil approval, oil service checklist, best oil change Dubai Mercedes",
+    "ogTitle": "How to Choose a Mercedes Oil Change in Dubai",
+    "ogDescription": "A practical checklist for comparing oil approvals, service scope and records.",
+    "ogType": "article",
+    "twitterCard": "summary_large_image",
+    "twitterTitle": "Choosing a Mercedes Oil Change in Dubai",
+    "twitterDescription": "Questions to ask before approving a Mercedes oil and filter service.",
+    "content": [
       {
-        type: 'p',
-        text: 'For a Mercedes-Benz, an oil change should be a model-aware maintenance visit, not a quick drain-and-fill. The correct oil approval, the right filter, the vehicle’s service history and its current condition all matter. That is especially true in Dubai, where high temperatures, traffic and long periods of air-conditioning use place additional demand on the engine and its lubrication system.',
+        "type": "h2",
+        "text": "Compare the proposed work, not just the package name"
       },
       {
-        type: 'p',
-        text: 'Whether you drive a C-Class, E-Class, S-Class, GLE, G-Class or AMG, the best oil change is the one matched to your exact engine and completed with a clear inspection process. It should protect the car today and give you a reliable service record for the next visit.',
-      },
-      { type: 'h2', text: 'Why the Correct Mercedes Oil Specification Matters' },
-      {
-        type: 'p',
-        text: 'Mercedes engines are designed around specific oil approvals, not simply a viscosity printed on a bottle. The right choice depends on the engine family, model year, emissions equipment and manufacturer guidance. Using an oil that is not approved for the vehicle can affect lubrication performance, deposit control and the long-term condition of components such as turbochargers and timing systems.',
+        "type": "p",
+        "text": "The best oil-service choice for your Mercedes is a proposal matched to the exact engine and due work. Ask each provider to identify the vehicle, specify the oil and filter, and state which checks and records are included. A workshop label or a low headline price does not establish that scope."
       },
       {
-        type: 'p',
-        text: 'A proper workshop checks the vehicle identification and service requirements before selecting the oil. This avoids guessing between commonly used grades and ensures the oil and filter are suitable for the exact Mercedes in front of them.',
-      },
-      { type: 'h2', text: 'What a Proper Mercedes Oil Change Should Include' },
-      {
-        type: 'ul',
-        items: [
-          'Confirmation of the correct Mercedes-approved oil specification for the exact model and engine',
-          'Replacement of the oil filter and sealing components required by the service procedure',
-          'Inspection for leaks, oil-condition concerns and visible issues around the engine bay and underbody',
-          'Reset of the relevant service reminder only after the maintenance work is completed',
-          'A check of key fluids, tyres, brakes, battery condition and dashboard warnings as appropriate',
-          'A clear invoice showing the oil specification, filter and work completed',
-        ],
-      },
-      { type: 'h2', text: 'How Dubai Driving Conditions Affect Oil Service' },
-      {
-        type: 'p',
-        text: 'Dubai heat, stop-start traffic and short journeys can be harder on oil than steady highway driving. Heat increases thermal load, while frequent low-speed operation can mean the engine spends more time in demanding conditions. Dust and sand also make regular inspection important, even though the air filter rather than the engine oil is the primary barrier against airborne particles.',
+        "type": "h2",
+        "text": "Confirm the oil approval and the engine application"
       },
       {
-        type: 'p',
-        text: 'The right interval is not identical for every Mercedes. Start with the ASSYST service indication and the guidance for your exact model, then consider mileage, age, driving pattern and service history. A workshop should explain why it is recommending a particular service rather than applying one universal interval to every vehicle.',
-      },
-      { type: 'h2', text: 'Choosing the Best Mercedes Oil Change Workshop in Dubai' },
-      {
-        type: 'p',
-        text: 'When comparing oil-change providers, look beyond the headline price. Ask whether they check the exact oil approval, replace the filter and seals, record the oil used, and inspect the car for concerns that may need attention. For newer Mercedes models, it is also worth confirming that the workshop can work with the vehicle’s electronic service information correctly.',
+        "type": "p",
+        "text": "An oil viscosity such as 5W-30 does not, by itself, confirm suitability. The required Mercedes-Benz approval and permitted viscosity must be checked against the exact engine, year and service information. Ask for the product name and approval on the estimate, then check the recorded oil and quantity on the invoice."
       },
       {
-        type: 'p',
-        text: 'At DIGI-TEC Performance Centre in Al Quoz, we approach Mercedes maintenance as a system check. The aim is to give owners a clear picture of the car’s condition, use components that match the agreed specification and identify developing concerns before they become larger repairs.',
+        "type": "p",
+        "text": "Mercedes-Benz publishes approved products and application guidance. A product appearing on one approval sheet is not evidence that it suits every Mercedes engine.",
+        "links": [
+          {
+            "href": "https://operatingfluids.mercedes-benz.com/",
+            "label": "Mercedes-Benz operating-fluid approvals"
+          }
+        ]
       },
-      { type: 'h2', text: 'When Should You Book an Oil Service?' },
       {
-        type: 'p',
-        text: 'Book the service when your Mercedes displays its maintenance reminder or when the recommended time or mileage is due. Do not ignore an oil-pressure warning, a red engine warning, an active leak, unusual engine noise or an overheating concern; these require diagnosis rather than a routine oil change. If you have recently bought a used Mercedes with an unclear maintenance record, an inspection can help establish a sensible baseline service plan.',
+        "type": "h2",
+        "text": "Use the same checklist for each quote"
       },
-      { type: 'h2', text: 'FAQs' },
-      { type: 'h3', text: 'Which oil does my Mercedes need?' },
       {
-        type: 'p',
-        text: 'The correct oil depends on your exact model, engine, year and Mercedes approval. A workshop should confirm this from the vehicle information and the manufacturer service guidance before filling the engine.',
+        "type": "ul",
+        "items": [
+          "Vehicle identification, applicable oil approval, product and fill quantity.",
+          "Oil filter and the sealing components required by the engine-specific procedure.",
+          "Agreed inspection for leaks and any oil-consumption or warning concern you reported.",
+          "Which additional checks are included, such as other fluid levels, tyres or brakes.",
+          "Supported service-record handling and reset of the relevant reminder only after the agreed work is complete.",
+          "Itemised parts, labour, total price, exclusions and a dated invoice with mileage."
+        ]
       },
-      { type: 'h3', text: 'How often should I change Mercedes oil in Dubai?' },
       {
-        type: 'p',
-        text: 'Follow the ASSYST reminder and the service guidance for your model. Dubai heat, traffic, short trips and your vehicle history can justify additional inspections, so the interval should be confirmed for the individual car.',
+        "type": "h2",
+        "text": "Separate oil-only work from Service A or Service B"
       },
-      { type: 'h3', text: 'Does an oil change include an oil filter?' },
       {
-        type: 'p',
-        text: 'A proper oil service should include replacing the oil filter and any relevant sealing components specified for the engine. The invoice should make the parts and oil specification clear.',
+        "type": "p",
+        "text": "An oil and filter change is not automatically the complete scheduled visit. Service A/B scope and additional due items must be checked for the vehicle and its history. Ask which items are included, which are due separately and whether fault diagnosis has its own charge."
       },
-      { type: 'h3', text: 'Can a quick-lube centre service a Mercedes?' },
       {
-        type: 'p',
-        text: 'Any provider should be able to demonstrate that it is using the correct approved oil, filter and process for your model. A Mercedes-focused workshop adds model-aware checks and a clearer view of any maintenance or diagnostic concerns found during the visit.',
+        "type": "p",
+        "text": "Use these guides when comparing the wider visit:",
+        "links": [
+          {
+            "href": "/blog/mercedes-service-cost-dubai-guide",
+            "label": "Compare Service A/B scope and cost factors"
+          },
+          {
+            "href": "/blog/mercedes-service-intervals-dubai-heat",
+            "label": "Check ASSYST and service timing"
+          }
+        ]
       },
-      { type: 'h3', text: 'Why is my Mercedes asking for an oil service before I expected?' },
       {
-        type: 'p',
-        text: 'Service timing can be influenced by time, mileage and operating conditions. Check the message and have the vehicle information reviewed rather than assuming the reminder is incorrect.',
+        "type": "h2",
+        "text": "Describe the way the car is used"
       },
-    ],
+      {
+        "type": "p",
+        "text": "Mention short trips, extended parking, heavy use and previous oil or cooling concerns. The schedule and any applicable difficult-use guidance should determine the recommendation. Ask why any work is proposed earlier; do not accept one oil interval or grade for every Mercedes in Dubai."
+      },
+      {
+        "type": "h2",
+        "text": "Report a warning separately from routine maintenance"
+      },
+      {
+        "type": "p",
+        "text": "An oil-pressure warning, abnormal temperature, active leak or unusual engine noise needs assessment under the vehicle handbook instructions. Do not assume an oil change will fix it. Send the exact message and circumstances before booking so the team can distinguish maintenance from diagnostic work."
+      },
+      {
+        "type": "p",
+        "text": "Once the scope is clear, continue to the service owner:",
+        "links": [
+          {
+            "href": "/services/mercedes-oil-change-dubai",
+            "label": "Book a Mercedes oil and filter service"
+          },
+          {
+            "href": "/blog/mercedes-benz-maintenance-guide-dubai",
+            "label": "Keep a practical maintenance record"
+          }
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "FAQs"
+      },
+      {
+        "type": "h3",
+        "text": "Can I choose oil from the viscosity alone?"
+      },
+      {
+        "type": "p",
+        "text": "No. Confirm the approval and permitted viscosity for the exact engine and service information. Ask the provider to identify the product and record what was used."
+      },
+      {
+        "type": "h3",
+        "text": "How do I compare two different oil-service prices?"
+      },
+      {
+        "type": "p",
+        "text": "Compare the same oil specification and quantity, filter and seals, included checks, labour, tax and exclusions. Check whether either quote includes additional due maintenance or diagnostic work."
+      },
+      {
+        "type": "h3",
+        "text": "Does a service-reset message prove the work was completed?"
+      },
+      {
+        "type": "p",
+        "text": "No. Keep the invoice and completed-work record. The reminder should reflect the relevant service actually performed, rather than standing in for evidence of the work."
+      }
+    ]
   },
   {
     slug: 'car-ac-repair-dubai',
@@ -421,6 +459,7 @@ export const blogPosts: BlogPost[] = [
     category: 'Maintenance',
     author: 'DIGI-TEC Workshop',
     date: '2026-04-20',
+    updatedDate: '2026-09-17',
     readTime: '7 min read',
     coverGradient: 'from-burnt-orange/40 via-charcoal to-black',
     metaTitle: 'Why Brakes Wear Faster in Dubai | Warning Signs & Workshop Guide',
@@ -430,7 +469,7 @@ export const blogPosts: BlogPost[] = [
       'brake repair Dubai, brake pad replacement Dubai, brake service Dubai, Mercedes brake repair Dubai, BMW brake repair Dubai, ABS repair Dubai, brake disc replacement UAE',
     ogTitle: 'Brake Repair in Dubai | Digitec Performance Center',
     ogDescription:
-      'Expert brake repair, pad replacement, and ABS diagnostics in Dubai for luxury and German cars. Trusted by Mercedes, BMW, Audi, and Porsche owners.',
+      'Understand brake warning signs, inspection measurements, fitted-system differences and the questions to ask before approving a repair in Dubai.',
     ogType: 'article',
     twitterCard: 'summary_large_image',
     twitterTitle: 'Brake Repair in Dubai | Digitec Performance Center',
@@ -441,11 +480,11 @@ export const blogPosts: BlogPost[] = [
       { type: 'h2', text: 'Why Brake Systems Wear Faster in Dubai' },
       {
         type: 'p',
-        text: "Driving conditions in Dubai put significant stress on your vehicle's braking system. High temperatures, heavy traffic, and frequent stop and go driving accelerate brake wear, especially in performance and luxury vehicles like Mercedes-Benz, BMW, Audi, and Porsche.",
+        text: 'Brake wear depends on the fitted system, pad and disc materials, vehicle load, driving and condition. Frequent braking in traffic and heat exposure are useful context for an inspection, but they do not establish the same replacement interval for every Mercedes-Benz, BMW, Audi or Porsche.',
       },
       {
         type: 'p',
-        text: 'Heat buildup can cause brake pads to wear faster and rotors to warp over time, reducing braking efficiency. In addition, fine sand and dust common in UAE environments can accumulate within braking components, leading to premature wear and reduced performance. At Digitec Performance Center, we provide brake system inspections and repairs tailored to Dubai conditions, ensuring consistent stopping power and long term safety.',
+        text: 'Noise, vibration, visible condition and warning messages should be assessed together with appropriate measurements. A vibration alone does not prove a warped disc, and the source may require checks of related components. DIGI-TEC reviews the fitted brake system and confirms the supported inspection and repair scope before work is agreed.',
       },
       { type: 'h2', text: 'Signs Your Brakes Need Repair or Replacement' },
       {
@@ -466,29 +505,29 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'p',
-        text: 'If you experience any of these symptoms, it is important to get your brakes inspected immediately. At Digitec, we perform full brake diagnostics, including pads, rotors, calipers, and ABS systems, to identify and fix issues accurately.',
+        text: 'Follow the vehicle instructions for brake warnings or a change in braking response, and discuss the condition before continuing to use the car. The appropriate inspection may include pads, discs, calipers and relevant electronic data; accepted scope and diagnostic access are confirmed for the vehicle.',
       },
-      { type: 'h2', text: 'Our Complete Brake Service in Dubai' },
+      { type: 'h2', text: 'What a Brake Service Can Include' },
       {
         type: 'p',
-        text: 'A modern braking system involves far more than pads and discs. Our brake service covers every component that influences how your car stops, ensuring nothing is overlooked during inspection or repair.',
+        text: 'A modern braking system involves more than pads and discs. The fitted system and findings determine which checks and procedures are relevant. Confirm the following items against the agreed inspection or repair scope rather than assuming every function is included:',
       },
       {
         type: 'ul',
         items: [
-          'Brake pad inspection and replacement using OEM or performance-grade compounds',
-          'Brake disc and rotor resurfacing or replacement',
-          'Caliper service, including seal replacement, piston freeing, and rebuilds',
-          'Brake fluid flush and bleeding to remove moisture and restore pedal feel',
-          'ABS system diagnostics, sensor replacement, and module coding',
-          'Performance and carbon ceramic brake servicing for AMG, M, RS, and GT models',
+          'Pad condition and compatible replacement options for the fitted brakes.',
+          'Disc measurements and a suitable repair or replacement proposal; resurfacing is not assumed.',
+          'Caliper inspection, with repair or replacement availability confirmed for the component.',
+          'Fluid condition, specification and any required bleeding procedure.',
+          'Relevant ABS or sensor tests where compatible diagnostic access is available.',
+          'Steel or carbon-ceramic system identification, handling and parts scope confirmed before work.',
         ],
       },
       { type: 'h2', text: 'Brake Repair FAQs' },
       { type: 'h3', text: 'How often should I replace brake pads in Dubai?' },
       {
         type: 'p',
-        text: "Brake pads typically last between 20,000 to 40,000 km, but in Dubai's driving conditions they may wear out faster due to heat and traffic.",
+        text: 'Pad life varies with the fitted system, compound, driving, load and condition. Measurements, applicable wear limits and the vehicle warning or service information determine replacement; one mileage interval does not apply to every car.',
       },
       { type: 'h3', text: 'How much does brake repair cost in Dubai?' },
       {
@@ -503,17 +542,17 @@ export const blogPosts: BlogPost[] = [
       { type: 'h3', text: 'Do you use OEM brake parts?' },
       {
         type: 'p',
-        text: 'Yes. We use OEM and performance-grade brake components to ensure maximum safety, durability, and braking efficiency.',
+        text: 'The quotation should identify the proposed part, specification and source for the exact vehicle. Genuine, OE-supplier or another suitable customer-approved option may be discussed, subject to compatibility and availability.',
       },
       { type: 'h3', text: 'How long does a brake service take?' },
       {
         type: 'p',
-        text: 'Most brake services can be completed within 1 to 2 hours, depending on the work required.',
+        text: 'Timing depends on the fitted system, inspection findings, access, parts and any supported electronic functions or post-repair checks. Confirm the expected time once the vehicle and work have been reviewed.',
       },
       { type: 'h3', text: 'Do you repair ABS systems and brake sensors?' },
       {
         type: 'p',
-        text: 'Yes. We provide full diagnostics and repair for ABS systems, brake sensors, and electronic braking components.',
+        text: 'ABS and brake-sensor concerns can be discussed. Compatible diagnostic access, component testing, parts and any coding or programming required must be confirmed for the exact vehicle before the work is accepted.',
       },
       { type: 'h3', text: 'Why do my brakes make noise?' },
       {
@@ -523,7 +562,7 @@ export const blogPosts: BlogPost[] = [
       { type: 'h3', text: 'Do you service Mercedes, BMW, Audi, and Porsche brakes?' },
       {
         type: 'p',
-        text: 'Yes. We specialize in German and luxury vehicles and service standard, performance, and carbon ceramic braking systems to manufacturer specifications.',
+        text: 'Send the model, year and brake concern so the fitted steel or carbon-ceramic system and accepted workshop scope can be confirmed. Procedures, handling, parts and supported functions differ between systems.',
       },
     ],
   },
@@ -531,10 +570,11 @@ export const blogPosts: BlogPost[] = [
     slug: 'car-battery-replacement-dubai',
     title: 'Car Battery Replacement in Dubai: Why Heat Kills Batteries Faster',
     excerpt:
-      "Dubai's extreme climate cuts battery life to 12 to 18 months. Here is why your luxury car battery fails sooner, the warning signs to watch, and answers to the most common replacement questions.",
+      'Heat, storage, charging and driving patterns affect battery condition. Understand the warning signs, testing and vehicle-specific requirements before replacement.',
     category: 'Maintenance',
     author: 'DIGI-TEC Workshop',
     date: '2026-04-18',
+    updatedDate: '2026-09-17',
     readTime: '6 min read',
     coverGradient: 'from-burnt-orange/40 via-charcoal to-black',
     metaTitle: 'Why Car Batteries Fail Faster in Dubai Heat | Owner Guide',
@@ -546,11 +586,11 @@ export const blogPosts: BlogPost[] = [
       { type: 'h2', text: 'Why Car Batteries Fail in Dubai Heat' },
       {
         type: 'p',
-        text: "Dubai's extreme climate is one of the biggest reasons car batteries fail earlier than expected. High temperatures accelerate chemical reactions inside the battery, causing faster wear and reducing overall lifespan. While a car battery may last 3 to 5 years in cooler climates, in Dubai it typically lasts only 12 to 18 months, especially in luxury and high-performance vehicles like Mercedes-Benz, BMW, Audi, and Porsche.",
+        text: 'Heat can affect battery ageing, but there is no single replacement age for every car in Dubai. Battery type, charging condition, storage, journey length and electrical demand also matter. The battery and related starting or accessory systems should be assessed before replacement is recommended.',
       },
       {
         type: 'p',
-        text: 'Frequent short trips, heavy use of air conditioning, and advanced electronic systems also put additional strain on your battery. Modern vehicles rely heavily on electrical components, meaning even a slightly weakened battery can lead to performance issues. At Digitec Performance Center, we understand how Dubai conditions affect your vehicle and provide battery solutions designed specifically for long-lasting reliability in UAE driving conditions.',
+        text: 'Short trips, extended parking and electrical demand can help explain a battery concern, alongside its type and condition. Repeated discharge may also involve charging, connections or unwanted electrical draw. Describe recent work and how long the car stands so the assessment can distinguish those causes.',
       },
       { type: 'h2', text: 'Signs Your Car Battery Needs Replacement' },
       {
@@ -574,13 +614,13 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'p',
-        text: 'In Dubai, battery failure can happen suddenly due to heat stress, so even if your car seems fine, regular testing is essential. At Digitec, we perform full battery diagnostics to detect issues early and recommend replacement before it becomes a problem.',
+        text: 'Discuss testing when these symptoms appear or battery condition is reviewed during maintenance. The warning alone does not confirm a failed battery. Ask which test findings support replacement and whether a charging or drain concern needs separate investigation.',
       },
       { type: 'h2', text: 'Car Battery Replacement FAQs' },
       { type: 'h3', text: 'How long does a car battery last in Dubai?' },
       {
         type: 'p',
-        text: "In Dubai's hot climate, most car batteries last between 12 to 18 months. Heat significantly reduces battery lifespan compared to cooler regions.",
+        text: 'Service life varies with the battery specification, temperature exposure, charging, storage and use. Age is useful context, but test results and the reported symptoms should determine whether replacement or further investigation is appropriate.',
       },
       { type: 'h3', text: 'How much does a car battery replacement cost in Dubai?' },
       {
@@ -595,7 +635,7 @@ export const blogPosts: BlogPost[] = [
       { type: 'h3', text: 'Do you offer battery testing before replacement?' },
       {
         type: 'p',
-        text: 'Yes. We always perform a full battery health check before recommending replacement, ensuring you only replace it when necessary.',
+        text: 'Battery condition can be assessed before replacement is proposed. The vehicle and complaint determine the initial testing scope and whether charging, connections or unwanted drain need further checks.',
       },
       { type: 'h3', text: 'How long does a battery replacement take?' },
       {
@@ -605,7 +645,7 @@ export const blogPosts: BlogPost[] = [
       { type: 'h3', text: 'Do you install batteries for Mercedes, BMW, Audi, and other luxury cars?' },
       {
         type: 'p',
-        text: 'Yes. We specialize in German and luxury vehicles, including Mercedes-Benz, BMW, Audi, Porsche, Range Rover, and more, using batteries that meet manufacturer specifications.',
+        text: 'Send the model, year and concern so low-voltage battery specification, fitment, access and any required supported registration can be confirmed. Electric or hybrid traction-battery work is a separate scope and is not promised by this page.',
       },
     ],
   },
@@ -627,7 +667,7 @@ export const blogPosts: BlogPost[] = [
     ogTitle: 'How to Choose a Car Workshop in Dubai | 2026 Guide',
     ogDescription:
       'Compare diagnostics, service scope, parts options, estimates and communication before choosing a Dubai car workshop.',
-    ogType: 'website',
+    ogType: 'article',
     twitterCard: 'summary_large_image',
     twitterTitle: 'How to Choose a Car Workshop in Dubai | 2026 Guide',
     twitterDescription:
@@ -695,7 +735,7 @@ export const blogPosts: BlogPost[] = [
     "category": "Mercedes",
     "author": "DIGI-TEC Workshop",
     "date": "2026-04-10",
-    "updatedDate": "2026-09-08",
+    "updatedDate": "2026-09-28",
     "readTime": "5 min read",
     "coverGradient": "from-burnt-orange/30 via-charcoal to-black",
     "metaTitle": "Mercedes Service Intervals & ASSYST Dubai | Digi-Tec",
@@ -725,7 +765,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         "type": "p",
-        "text": "The display helps identify a scheduled visit, but the workshop must reconcile it with the vehicle data and work already completed. Oil approvals, filter requirements and additional time- or mileage-dependent items vary. A reset indicator alone does not establish that every due item was performed."
+        "text": "ASSYST or ASSYST PLUS provides service-due information for the fitted system, including remaining time or distance where supported. Reconcile the complete display message with the vehicle information and work already completed. Oil approvals, filters and additional time- or mileage-dependent items vary. Service A or B identifies scheduled service scope, not merely an oil change. A reset indicator alone does not establish that every due item was performed."
       },
       {
         "type": "h2",
@@ -741,7 +781,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         "type": "p",
-        "text": "Mention weak AC, coolant loss, difficult starting or unusual operation when booking. Cooling, battery, tyre and airflow checks can be selected from the complaint and use of the vehicle. Replacing fluids or components earlier than the applicable schedule needs a stated reason; it should not follow an arbitrary Dubai-wide mileage rule."
+        "text": "Describe short journeys, long periods idling, dust, heavy use and any weak AC, coolant loss or starting difficulty. Difficult operating conditions can require more frequent maintenance under the guidance for the exact vehicle. Ask which requirement or inspection finding supports each recommendation; there is no arbitrary Dubai-wide mileage rule for all fluids and components."
       },
       {
         "type": "h2",
@@ -770,9 +810,24 @@ export const blogPosts: BlogPost[] = [
           {
             "href": "/blog/mercedes-service-cost-dubai-guide",
             "label": "Service A/B scope and cost factors"
+          },
+          {
+            "href": "/blog/mercedes-benz-maintenance-guide-dubai",
+            "label": "Maintain a service-history and condition plan"
+          },
+          {
+            "href": "/services/mercedes-oil-change-dubai",
+            "label": "Arrange the oil service due for your Mercedes"
           }
         ]
-      }
+      },
+      { "type": "h2", "text": "FAQs" },
+      { "type": "h3", "text": "Does low mileage remove the time-based service requirement?" },
+      { "type": "p", "text": "No. Review the time and distance requirements for the vehicle alongside its display and history. Long periods parked should be discussed separately; a low odometer reading does not prove that every maintenance item can wait." },
+      { "type": "h3", "text": "Can I reset an overdue reminder instead of servicing the car?" },
+      { "type": "p", "text": "Resetting the reminder does not perform or document maintenance. Confirm the due work first and record what is completed before the relevant service reminder is reset." },
+      { "type": "h3", "text": "What if the displayed interval and my invoice do not agree?" },
+      { "type": "p", "text": "Provide the complete message, date, mileage and last invoice so the workshop can compare the vehicle information with the work recorded. Do not assume the display is wrong or that every listed task has been completed." }
     ]
   },
 
@@ -859,159 +914,237 @@ export const blogPosts: BlogPost[] = [
     ],
   },
   {
-    slug: 'mercedes-repair-dubai-complete-guide',
-    title: 'Common Mercedes Problems in Dubai: 2026 Owner Guide',
-    excerpt:
-      'A practical guide to Mercedes warning signs in Dubai, including AIRMATIC faults, cooling, AC, batteries and the checks that should happen before repair.',
-    category: 'Mercedes',
-    author: 'DIGI-TEC Workshop',
-    date: '2026-04-21',
-    readTime: '9 min read',
-    coverGradient: 'from-burnt-orange/40 via-charcoal to-black',
-    coverImage: mercedesRepairGuideWorkshop,
-    metaTitle: 'Common Mercedes Problems Dubai | 2026 Owner Guide',
-    metaDescription:
-      'Common Mercedes problems in Dubai: AIRMATIC faults, cooling, AC, batteries and warning signs. Learn what to check and when diagnostics are needed in Dubai.',
-    keywords:
-      'common Mercedes problems Dubai, Mercedes warning lights, AIRMATIC fault, Mercedes overheating Dubai, Mercedes AC problems, Mercedes battery warning, Mercedes owner guide UAE',
-    ogTitle: 'Common Mercedes Problems in Dubai: 2026 Owner Guide',
-    ogDescription:
-      'A practical owner guide to AIRMATIC faults, cooling, AC, electrical warnings and diagnostic decisions in Dubai conditions.',
-    ogType: 'article',
-    twitterCard: 'summary_large_image',
-    twitterTitle: 'Common Mercedes Problems in Dubai (2026)',
-    twitterDescription:
-      'The 2026 Mercedes owner guide for Dubai: common issues, warning signs, and why specialist repair matters.',
-    canonicalOverride: 'https://digitecme.com/blog/mercedes-repair-dubai-complete-guide',
-    content: [
-      { type: 'h2', text: 'Mercedes Ownership in Dubai: What to Watch' },
+    "slug": "mercedes-repair-dubai-complete-guide",
+    "title": "Mercedes Warning Signs in Dubai: An Owner’s Guide",
+    "excerpt": "Recognise Mercedes warning and symptom patterns, record useful evidence and choose the right next assessment without guessing which part has failed.",
+    "category": "Mercedes",
+    "author": "DIGI-TEC Workshop",
+    "date": "2026-04-21",
+    "updatedDate": "2026-09-28",
+    "readTime": "6 min read",
+    "coverGradient": "from-burnt-orange/40 via-charcoal to-black",
+    "coverImage": mercedesRepairGuideWorkshop,
+    "metaTitle": "Mercedes Problems & Warning Signs Dubai | Owner Guide",
+    "metaDescription": "Mercedes warning signs in Dubai: cooling, AIRMATIC, gearbox, battery, oil leaks and AC symptoms. Record the concern and find the right diagnostic next step.",
+    "keywords": "Mercedes problems Dubai, Mercedes warning signs, Mercedes symptoms, Mercedes owner guide",
+    "ogTitle": "Mercedes Warning Signs in Dubai: An Owner’s Guide",
+    "ogDescription": "Understand symptom patterns and the evidence needed before approving a repair.",
+    "ogType": "article",
+    "twitterCard": "summary_large_image",
+    "twitterTitle": "Mercedes Warning Signs: Owner Guide",
+    "twitterDescription": "Find the relevant symptom guide and distinguish a warning from scheduled maintenance.",
+    "canonicalOverride": "https://digitecme.com/blog/mercedes-repair-dubai-complete-guide",
+    "content": [
       {
-        type: 'p',
-        text: 'Mercedes vehicles combine multiple electronic, mechanical and comfort systems, so one warning message can have several possible causes. Dubai heat, traffic and fine dust also increase the importance of cooling, air-conditioning, battery and fluid-condition checks.',
+        "type": "h2",
+        "text": "Start with the exact warning and what changed"
       },
       {
-        type: 'p',
-        text: 'This guide explains common symptoms and the evidence a workshop should collect before recommending parts. It is not a substitute for inspecting the exact model, year, mileage, service history and stored diagnostic data.',
-      },
-      { type: 'h2', text: 'Why Mercedes Repair Requires a Specialist' },
-      {
-        type: 'p',
-        text: 'Mercedes vehicles are engineered differently from most cars. From AMG performance engines to advanced suspension systems and electronic control units, every component is designed with precision.',
-      },
-      { type: 'p', text: 'Generic workshops often lack:' },
-      {
-        type: 'ul',
-        items: [
-          'Mercedes Star Diagnostic systems',
-          'Manufacturer level software access',
-          'Knowledge of AMG and performance models',
-        ],
-      },
-      { type: 'p', text: 'This can lead to:' },
-      {
-        type: 'ul',
-        items: [
-          'Incorrect diagnostics',
-          'Unnecessary part replacements',
-          'Reduced vehicle performance',
-        ],
+        "type": "p",
+        "text": "A Mercedes warning can have several possible causes. This overview helps you describe the concern and find the relevant guide. The cause must be checked against the model year, engine, fitted systems, service history and current test results before a repair is recommended."
       },
       {
-        type: 'p',
-        text: 'A Mercedes-focused diagnostic process reduces guesswork by combining brand-specific scan data with physical testing and the repair procedures required by the fitted system.',
-      },
-      { type: 'h2', text: 'Common Mercedes Problems in Dubai' },
-      {
-        type: 'p',
-        text: 'Dubai\u2019s environment creates unique stress on vehicles. Some of the most common Mercedes issues we see at our workshop include the following.',
-      },
-      { type: 'h3', text: 'Engine and Cooling Issues' },
-      {
-        type: 'p',
-        text: 'High temperatures can cause overheating, coolant leaks, and increased engine stress. Water pumps, thermostats, and radiator hoses tend to fail earlier in UAE summers, especially on M276, M278, and AMG M177 engines.',
-      },
-      { type: 'h3', text: 'Suspension Wear' },
-      {
-        type: 'p',
-        text: 'Air suspension systems (AIRMATIC) can wear faster due to road conditions and heat. Air struts, compressors, and valve blocks are common replacement items on E-Class, S-Class, GLE, and GLS models.',
-      },
-      { type: 'h3', text: 'Battery and Electrical Failures' },
-      {
-        type: 'p',
-        text: 'Heat reduces battery lifespan and affects electronic systems. Auxiliary batteries, voltage stabilisers, and SAM modules are common fault points on modern Mercedes vehicles in Dubai.',
-      },
-      { type: 'h3', text: 'AC System Problems' },
-      {
-        type: 'p',
-        text: 'Constant AC usage in Dubai leads to compressor and cooling system wear. Weak cooling, unusual noises, or inconsistent airflow are clear signs your Mercedes AC needs attention.',
-      },
-      { type: 'h2', text: 'Signs Your Mercedes Needs Repair' },
-      {
-        type: 'ul',
-        items: [
-          'Warning lights on the dashboard',
-          'Reduced performance or acceleration',
-          'Unusual noises from engine, brakes, or suspension',
-          'Vibrations while driving',
-          'Oil leaks or fluid drops under the car',
-          'AC not cooling properly',
-        ],
+        "type": "p",
+        "text": "Follow the instructions in the vehicle handbook and the displayed message. If it calls for stopping, or the car has severe overheating, loss of braking or steering control, an unsafe ride height or another immediate safety concern, stop in a safe place and arrange assistance. Do not keep driving simply to reproduce a fault."
       },
       {
-        type: 'p',
-        text: 'Early diagnosis prevents major repairs and saves costs. A simple Star Diagnostic scan can reveal issues long before they become serious mechanical failures.',
-      },
-      { type: 'h2', text: 'What to Check Before Approving a Mercedes Repair' },
-      {
-        type: 'p',
-        text: 'Before approving a repair, ask what was tested, what evidence supports the diagnosis, which parts and fluid specifications are proposed, and what checks will be completed after the work.',
+        "type": "h2",
+        "text": "Engine warnings, cooling changes and leaks"
       },
       {
-        type: 'ul',
-        items: [
-          'The reported symptom and warning message are recorded accurately',
-          'XENTRY or Star scan results are verified with physical tests',
-          'The estimate identifies parts and fluid specifications',
-          'The repair scope and expected timing are explained before approval',
-          'Post-repair resets, adaptations and road testing are completed when applicable',
-        ],
+        "type": "p",
+        "text": "Record whether a check-engine light is steady or flashing and whether rough running, reduced power, smoke or a temperature warning accompanies it. Coolant loss or oil beneath the car needs source identification. Scan information, physical inspection and system tests help separate possible causes; an engine name or stored code does not establish which component needs replacement."
       },
       {
-        type: 'p',
-        text: 'At Digi-Tec, the Mercedes process follows those steps so the owner can understand why work is recommended rather than relying on a fault-code label alone.',
+        "type": "p",
+        "text": "Continue with the symptom that matches the car:",
+        "links": [
+          {
+            "href": "/mercedes/problems/check-engine-light",
+            "label": "Check-engine warning"
+          },
+          {
+            "href": "/mercedes/problems/engine-overheating",
+            "label": "Engine overheating"
+          },
+          {
+            "href": "/mercedes/problems/oil-leak",
+            "label": "Oil-leak symptoms"
+          },
+          {
+            "href": "/services/mercedes-mechanical-repair-dubai",
+            "label": "Mechanical assessment and repair"
+          }
+        ]
       },
-      { type: 'h2', text: 'FAQs' },
-      { type: 'h3', text: 'How much does Mercedes repair cost in Dubai?' },
       {
-        type: 'p',
-        text: 'Costs vary depending on the issue, but specialist repair ensures long term savings by avoiding incorrect fixes and unnecessary part replacements.',
+        "type": "h2",
+        "text": "Suspension warnings and dropping after parking"
       },
-      { type: 'h3', text: 'Do I need a specialist for Mercedes repair?' },
       {
-        type: 'p',
-        text: 'Yes. Mercedes vehicles require brand specific diagnostics, software, and expertise that generic workshops typically do not have.',
+        "type": "p",
+        "text": "Confirm which suspension is fitted. AIRMATIC is one system, not a feature of every Mercedes. On an air-sprung car, a low corner, repeated compressor operation or a levelling warning can prompt checks of leaks, pressure generation, valves, sensors and electrical supply. A warning message and an overnight height change are related observations, but each gives different diagnostic context."
       },
-      { type: 'h3', text: 'How often should I service my Mercedes in Dubai?' },
       {
-        type: 'p',
-        text: 'Follow the ASSYST reminder and the interval specified for the exact model and year. Mileage, operating conditions and service history can justify additional inspections, so confirm the scope from the vehicle rather than using one interval for every Mercedes.',
+        "type": "p",
+        "text": "Use the focused guides for the observation:",
+        "links": [
+          {
+            "href": "/mercedes/problems/airmatic-malfunction",
+            "label": "AIRMATIC malfunction message"
+          },
+          {
+            "href": "/mercedes/problems/suspension-dropping-overnight",
+            "label": "Suspension dropping overnight"
+          },
+          {
+            "href": "/services/mercedes-suspension-repair-dubai",
+            "label": "Mercedes suspension assessment"
+          }
+        ]
       },
-      { type: 'h3', text: 'Can you repair AMG models?' },
       {
-        type: 'p',
-        text: 'Yes. We specialise in AMG performance vehicles, including servicing, repair, and tuning for models such as the C63, E63, GT, and G63.',
+        "type": "h2",
+        "text": "Gearbox jerking, slipping or delayed engagement"
       },
-      { type: 'h3', text: 'Do you use OEM Mercedes parts?' },
       {
-        type: 'p',
-        text: 'The estimate can specify genuine Mercedes-Benz parts, OE-supplier components or a suitable customer-approved alternative, depending on the repair and owner preference.',
+        "type": "p",
+        "text": "Describe when the behaviour occurs: cold or warm, selecting a gear, changing up or down, or accelerating under load. Jerking and slipping are different symptoms. Identify the installed gearbox and relevant service history before deciding whether fluid service, a control-system investigation or mechanical repair is appropriate. Fresh fluid is not a guaranteed repair for a shift fault."
       },
-      { type: 'h2', text: 'Conclusion' },
       {
-        type: 'p',
-        text: 'Mercedes warning lights and driveability symptoms should be diagnosed from evidence, not from the name of a stored code. Recording the symptom early and arranging a model-aware inspection can help prevent a smaller concern from becoming a more complicated repair.',
+        "type": "p",
+        "text": "Read the matching guide before discussing repair scope:",
+        "links": [
+          {
+            "href": "/mercedes/problems/gearbox-jerking",
+            "label": "Gearbox jerking"
+          },
+          {
+            "href": "/mercedes/problems/transmission-slipping",
+            "label": "Transmission slipping"
+          },
+          {
+            "href": "/services/mercedes-transmission-repair-dubai",
+            "label": "Mercedes transmission assessment"
+          }
+        ]
       },
-    ],
+      {
+        "type": "h2",
+        "text": "Battery warnings, repeated discharge and no-start"
+      },
+      {
+        "type": "p",
+        "text": "Record the precise message and whether the vehicle cranks, clicks or does not respond. A battery warning does not prove that the main or auxiliary battery needs replacement. Battery condition, charging, connections and a possible drain need the relevant tests. Multiple warnings may share a voltage or communication cause, so replacing several modules from code names alone is not a diagnosis."
+      },
+      {
+        "type": "p",
+        "text": "Separate the warning from the confirmed job:",
+        "links": [
+          {
+            "href": "/mercedes/problems/battery-warning",
+            "label": "Battery-warning guide"
+          },
+          {
+            "href": "/mercedes/problems/wont-start",
+            "label": "Mercedes will not start"
+          },
+          {
+            "href": "/services/mercedes-electrical-repair-dubai",
+            "label": "Charging, wiring and repeated battery drain"
+          }
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "Weak AC, frozen screens and sound-system concerns"
+      },
+      {
+        "type": "p",
+        "text": "For AC, distinguish weak airflow from air that flows normally but is warm, and note whether the fault changes in traffic or between cabin zones. Refrigerant top-up does not resolve every cause. For a frozen or black COMAND/MBUX display, describe the installed system, resets and other lost functions. Restoring faulty equipment is a different task from improving a working sound system."
+      },
+      {
+        "type": "p",
+        "text": "Choose the relevant next step:",
+        "links": [
+          {
+            "href": "/mercedes/problems/ac-not-cooling",
+            "label": "AC not cooling"
+          },
+          {
+            "href": "/services/head-unit-repair-dubai",
+            "label": "COMAND, MBUX and head-unit fault assessment"
+          },
+          {
+            "href": "/services/mercedes-audio-upgrade-dubai",
+            "label": "Upgrade a functioning Mercedes audio system"
+          }
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "Prepare useful evidence before the assessment"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Model, year, mileage and relevant service or repair records.",
+          "The exact message, a safe photograph and when the concern occurs.",
+          "Whether the symptom depends on temperature, speed, parking time or a recent repair.",
+          "What was tested before, including any invoices and diagnostic findings."
+        ]
+      },
+      {
+        "type": "p",
+        "text": "DIGI-TEC has XENTRY. The useful diagnostic scope still depends on the vehicle, module and supported function, and scan findings need to be checked against the complaint and appropriate physical tests. Ask what is confirmed, what still needs investigation and what post-repair checks are proposed."
+      },
+      {
+        "type": "p",
+        "text": "For the assessment or planned maintenance:",
+        "links": [
+          {
+            "href": "/services/mercedes-diagnostics-dubai",
+            "label": "Mercedes XENTRY diagnostics"
+          },
+          {
+            "href": "/blog/mercedes-benz-maintenance-guide-dubai",
+            "label": "Build a maintenance plan"
+          },
+          {
+            "href": "/brands/mercedes-benz-service-dubai",
+            "label": "Mercedes service and repair options"
+          }
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "FAQs"
+      },
+      {
+        "type": "h3",
+        "text": "Can a fault code tell me which part to replace?"
+      },
+      {
+        "type": "p",
+        "text": "A code identifies a recorded condition or system concern. It needs the vehicle context, supporting data and appropriate tests before a failed component is confirmed."
+      },
+      {
+        "type": "h3",
+        "text": "Should I wait until the next scheduled service?"
+      },
+      {
+        "type": "p",
+        "text": "A new fault is separate from the maintenance schedule. Follow the warning instructions, describe the concern promptly and confirm whether the vehicle can be driven safely before arranging the assessment."
+      },
+      {
+        "type": "h3",
+        "text": "Will a diagnosis guarantee that no other fault develops?"
+      },
+      {
+        "type": "p",
+        "text": "No. A diagnosis addresses the agreed concern and evidence available at the time. Ask what was tested, any limits of the assessment and which observations require follow-up."
+      }
+    ]
   },
   {
     slug: 'range-rover-land-rover-air-suspension-problems-dubai',

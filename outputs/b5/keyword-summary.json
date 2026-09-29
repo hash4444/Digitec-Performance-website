@@ -1,0 +1,59 @@
+{
+  "rolls-royce": {
+    "source_observations": 501,
+    "raw_terms": 406,
+    "normalized_terms": 382,
+    "master_rows": 385,
+    "original_gsc_records": 82,
+    "original_gsc_normalized_terms": 17,
+    "latest_six_month_queries": 13,
+    "latest_six_month_impressions": 1490.0,
+    "latest_six_month_clicks": 2.0,
+    "evidence_counts": {
+      "MEASURED WORKBOOK": 27,
+      "GENERATED TAXONOMY": 364,
+      "RESEARCH KEYWORD": 12,
+      "OTHER SOURCE \u2014 USER BRIEF EXAMPLE": 16,
+      "MEASURED ORIGINAL GSC": 82
+    },
+    "unresolved_owner_conflicts": {}
+  },
+  "bentley": {
+    "source_observations": 538,
+    "raw_terms": 408,
+    "normalized_terms": 384,
+    "master_rows": 385,
+    "original_gsc_records": 116,
+    "original_gsc_normalized_terms": 25,
+    "latest_six_month_queries": 17,
+    "latest_six_month_impressions": 1193.0,
+    "latest_six_month_clicks": 0.0,
+    "evidence_counts": {
+      "MEASURED WORKBOOK": 33,
+      "GENERATED TAXONOMY": 364,
+      "RESEARCH KEYWORD": 9,
+      "OTHER SOURCE \u2014 USER BRIEF EXAMPLE": 16,
+      "MEASURED ORIGINAL GSC": 116
+    },
+    "unresolved_owner_conflicts": {}
+  },
+  "maybach": {
+    "source_observations": 428,
+    "raw_terms": 400,
+    "normalized_terms": 379,
+    "master_rows": 379,
+    "original_gsc_records": 24,
+    "original_gsc_normalized_terms": 5,
+    "latest_six_month_queries": 4,
+    "latest_six_month_impressions": 134.0,
+    "latest_six_month_clicks": 1.0,
+    "evidence_counts": {
+      "MEASURED WORKBOOK": 8,
+      "GENERATED TAXONOMY": 371,
+      "RESEARCH KEYWORD": 9,
+      "OTHER SOURCE \u2014 USER BRIEF EXAMPLE": 16,
+      "MEASURED ORIGINAL GSC": 24
+    },
+    "unresolved_owner_conflicts": {}
+  }
+}

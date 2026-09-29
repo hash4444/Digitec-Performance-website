@@ -1,0 +1,34 @@
+{
+  "fetched_url_count": 1312,
+  "sitemap_count": 996,
+  "sitemap_english": 553,
+  "sitemap_arabic": 443,
+  "legitimate_self_canonical_documents": 1247,
+  "legitimate_document_locales": {
+    "en": 676,
+    "ar": 571
+  },
+  "noindex_count": 251,
+  "noindex_locale": {
+    "ar": 128,
+    "en": 123
+  },
+  "linked_home_fallback_count": 56,
+  "probe_home_fallback_count": 2,
+  "redirect_count": 6,
+  "sitemap_unreachable_from_home": [],
+  "sitemap_link_depths": {
+    "0": 1,
+    "1": 71,
+    "2": 512,
+    "3": 412
+  },
+  "rendered_browser_tested": true,
+  "hreflang_target_issues_from_sitemap": 0,
+  "rendered_browser_scope": [
+    "EN PDK system page language menu and click",
+    "direct Arabic PDK system URL",
+    "nonexistent route settled404/noindex DOM"
+  ],
+  "browser_inventory_note": "HTTP source inventory is not a rendered crawl. Sample Arabic PDK client-navigates to Arabic Porsche hub; unknown probe hydrates to404/noindex with canonical removed despite initial HTTP200 homepage."
+}

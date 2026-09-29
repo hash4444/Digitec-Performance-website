@@ -1,0 +1,77 @@
+[
+  {
+    "path": "src/App.tsx",
+    "expected": "9c876e9eaabc0ad9ecc6ffa7f345c3e3408b5d72638a9568a3070cec12b55280",
+    "actual": "9c876e9eaabc0ad9ecc6ffa7f345c3e3408b5d72638a9568a3070cec12b55280"
+  },
+  {
+    "path": "src/components/RouteBoundary.tsx",
+    "expected": "76a02839f20a4bd482f0f9148909f02e2a0906f0cd4824962f013725fb590b2f",
+    "actual": "76a02839f20a4bd482f0f9148909f02e2a0906f0cd4824962f013725fb590b2f"
+  },
+  {
+    "path": "src/lib/routing-paths.json",
+    "expected": "26be139e69a8b247f6ed46729d26b3cac5007d0ee6044395ff382ef68f501a26",
+    "actual": "26be139e69a8b247f6ed46729d26b3cac5007d0ee6044395ff382ef68f501a26"
+  },
+  {
+    "path": "src/lib/historical-paths.js",
+    "expected": "aaf2109ef7232eadcc4dd48254a27d8f6424a975d342185dfc6d4ce3d5988031",
+    "actual": "aaf2109ef7232eadcc4dd48254a27d8f6424a975d342185dfc6d4ce3d5988031"
+  },
+  {
+    "path": "src/i18n/locale.ts",
+    "expected": "2767034a622436d56a20085d72aa18621908d80757336ea5114d3b9b1aa299bd",
+    "actual": "2767034a622436d56a20085d72aa18621908d80757336ea5114d3b9b1aa299bd"
+  },
+  {
+    "path": "src/i18n/arabic-route-fallbacks.json",
+    "expected": "9280099e16ac3e2a88770e9aed7434ce47cdcf0df8201d4a51889cd1cdfef4da",
+    "actual": "9280099e16ac3e2a88770e9aed7434ce47cdcf0df8201d4a51889cd1cdfef4da"
+  },
+  {
+    "path": "cloudflare/production-seo-router.js",
+    "expected": "006ecc7a68ddab56c35cd1219fb3555eb0260e8b76a912a77388a3a325d4d626",
+    "actual": "006ecc7a68ddab56c35cd1219fb3555eb0260e8b76a912a77388a3a325d4d626"
+  },
+  {
+    "path": "cloudflare/routing-response-guard.js",
+    "expected": "7ba2e6eab5f633c27fed1d94e8b42a193d440a3165e773530cc4fc8f497c0acf",
+    "actual": "7ba2e6eab5f633c27fed1d94e8b42a193d440a3165e773530cc4fc8f497c0acf"
+  },
+  {
+    "path": "cloudflare/routing-response-data.js",
+    "expected": "6ac0c8ba8cabc6095a8271953149ac726ada9288d3b4798d44bdff43346eb3a3",
+    "actual": "6ac0c8ba8cabc6095a8271953149ac726ada9288d3b4798d44bdff43346eb3a3"
+  },
+  {
+    "path": "scripts/generate-routing-response-data.mjs",
+    "expected": "ea8faa4bfe1d3df3b777b2cd0d2d62520bf5d2b3177d7bd6543c827c241be17f",
+    "actual": "ea8faa4bfe1d3df3b777b2cd0d2d62520bf5d2b3177d7bd6543c827c241be17f"
+  },
+  {
+    "path": "scripts/sync-routing-paths.mjs",
+    "expected": "890381221d2948d74bbd4a1c6dfc4e1ecf6ed01fadd0125c4012182d48936027",
+    "actual": "890381221d2948d74bbd4a1c6dfc4e1ecf6ed01fadd0125c4012182d48936027"
+  },
+  {
+    "path": "scripts/prerender.mjs",
+    "expected": "aaa40ef2d1a64c7bc5d83903ccdb554b1c592cf772e1db949a1301a57c2d0f38",
+    "actual": "aaa40ef2d1a64c7bc5d83903ccdb554b1c592cf772e1db949a1301a57c2d0f38"
+  },
+  {
+    "path": "package.json",
+    "expected": "12afa1a7031c27d0d21bdd8895854e70adb3f7c3a46a7f31afa9cd19f3180c56",
+    "actual": "12afa1a7031c27d0d21bdd8895854e70adb3f7c3a46a7f31afa9cd19f3180c56"
+  },
+  {
+    "path": "scripts/test-routing-response.mjs",
+    "expected": "812d713e7bbeaec2d35d655f712a0154fb99af168c5b4af55034f89c462562eb",
+    "actual": "812d713e7bbeaec2d35d655f712a0154fb99af168c5b4af55034f89c462562eb"
+  },
+  {
+    "path": "scripts/preview-routing-response.mjs",
+    "expected": "b4418ffd8c42999b34246ca6fb60ae439fe0656e6b52dbef47bd9b5073063b66",
+    "actual": "b4418ffd8c42999b34246ca6fb60ae439fe0656e6b52dbef47bd9b5073063b66"
+  }
+]

@@ -1,0 +1,102 @@
+ M docs/seo/protection-release-validation.json
+ M docs/seo/query-release-validation.json
+ M docs/seo/route-schema-matrix.csv
+ M outputs/seo-2026-09-16/master-validation.json
+ M package.json
+ M public/sitemap.xml
+ M scripts/prerender.mjs
+ M src/App.tsx
+ M src/components/Footer.tsx
+ M src/components/Hero.tsx
+ M src/components/MascotWidget.tsx
+ M src/components/MercedesMaintenanceScope.tsx
+ M src/components/PorscheKnowledgeCentre.tsx
+ M src/components/motion/Reveal.tsx
+ M src/data/aiGuidePosts.ts
+ M src/data/aiGuidePostsExtra.ts
+ M src/data/bestWorkshopPages.ts
+ M src/data/blogPosts.ts
+ M src/data/brandServices.ts
+ M src/data/brandWorkshopArticles.ts
+ M src/data/brands.ts
+ M src/data/electronicsServices.ts
+ M src/data/mercedesModelPages.ts
+ M src/data/mercedesProblemGuides.ts
+ M src/data/mercedesServiceContent.ts
+ M src/data/mercedesServices.ts
+ M src/data/porscheArchitecture.ts
+ M src/data/services.ts
+ M src/hooks/use-seo.ts
+ M src/i18n/ar-blog.ts
+ M src/i18n/ar-brands.ts
+ M src/i18n/ar-home.ts
+ M src/i18n/locale.ts
+ M src/lib/route-manifest.ts
+ M src/lib/schema.ts
+ M src/pages/BlogPost.tsx
+ M src/pages/BrandPage.tsx
+ M src/pages/BrandServicePage.tsx
+ M src/pages/BrandWorkshopArticlePage.tsx
+ M src/pages/Index.tsx
+ M src/pages/MercedesModelPage.tsx
+ M src/pages/MercedesProblemGuidePage.tsx
+ M src/pages/MercedesProblemsIndex.tsx
+ M src/pages/VRX.tsx
+?? audit-evidence/
+?? b0-a-routing-fix-report.md
+?? b0-b-intent-ownership-report.md
+?? b0-b-url-decision-register.csv
+?? b1-mercedes-implementation-report.md
+?? b1-mercedes-ownership-map.md
+?? cloudflare/production-seo-router.js
+?? cloudflare/routing-response-data.js
+?? cloudflare/routing-response-guard.js
+?? cloudflare/wrangler.production-seo.jsonc
+?? digitec-brand-orange-edited.png
+?? digitec-brand-orange-lighter-v2.png
+?? docs/seo/production-qa-2026-09-16.md
+?? docs/seo/production-qa-2026-09-17.md
+?? docs/seo/sitewide-release-2026-09-17.md
+?? outputs/b0-a/
+?? outputs/b0-b/
+?? outputs/b1/
+?? outputs/production-qa-2026-09-16/
+?? outputs/production-qa-2026-09-17/
+?? outputs/seo-2026-09-16/browser/failure.png
+?? outputs/seo-2026-09-17/
+?? outputs/sitewide-seo-2026-09-17/
+?? outputs/video-8k-logo/
+?? outputs/video-wall-edit/
+?? public/images/seo/
+?? scripts/audit-production-seo.mjs
+?? scripts/audit-sitewide-seo.mjs
+?? scripts/generate-routing-response-data.mjs
+?? scripts/inspect-gsc-exports.mjs
+?? scripts/optimize-sitewide-images.mjs
+?? scripts/prepare-sitewide-release.mjs
+?? scripts/preview-routing-response.mjs
+?? scripts/sync-routing-paths.mjs
+?? scripts/test-deployed-analytics.mjs
+?? scripts/test-production-seo-router.mjs
+?? scripts/test-routing-response.mjs
+?? scripts/test-sitewide-browser.mjs
+?? scripts/update-sitewide-lastmod.mjs
+?? scripts/validate-social-metadata.mjs
+?? scripts/write-production-qa-report.mjs
+?? seo-audit-keyword-architecture.md
+?? src/components/RouteBoundary.tsx
+?? src/data/arabicServiceContent.ts
+?? src/data/mercedesArabicServiceContent.ts
+?? src/data/mercedesB1UpdatedPaths.ts
+?? src/data/mercedesMaintenanceGuide.ts
+?? src/data/mercedesServiceScope.ts
+?? src/data/serviceDecisionFaqs.ts
+?? src/data/sitewideSeoUpdatedPaths.ts
+?? src/i18n/ar-general-blog-content.ts
+?? src/i18n/ar-model-blog-content.ts
+?? src/i18n/ar-service-blog-content.ts
+?? src/i18n/ar-specialist-blog-content.ts
+?? src/i18n/arabic-route-fallbacks.json
+?? src/lib/historical-paths.js
+?? src/lib/related-articles.ts
+?? src/lib/routing-paths.json

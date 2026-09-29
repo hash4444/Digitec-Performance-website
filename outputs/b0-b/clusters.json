@@ -1,0 +1,431 @@
+[
+  {
+    "id": "A",
+    "name": "Generic workshop",
+    "classification": "INTENT OVERLAP",
+    "action": "CONSOLIDATE CANDIDATE",
+    "priority": "P2",
+    "batch": "B2 Generic",
+    "paths": [
+      "/",
+      "/best-car-workshop-dubai",
+      "/services/car-garage-dubai",
+      "/services/garage-near-me-dubai"
+    ],
+    "reason": "Same single-workshop booking task; the near-me page adds no separate branch or substantial visit-planning resource."
+  },
+  {
+    "id": "B",
+    "name": "Bmw",
+    "classification": "INTENT OVERLAP",
+    "action": "CONSOLIDATE CANDIDATE",
+    "priority": "P2",
+    "batch": "B2 Brand ownership",
+    "paths": [
+      "/brands/bmw-service-dubai",
+      "/best-bmw-workshop-dubai"
+    ],
+    "reason": "The best URL currently sells this provider’s service and repair, with a one-provider criteria table rather than a separate selection resource."
+  },
+  {
+    "id": "C",
+    "name": "Porsche",
+    "classification": "INTENT OVERLAP",
+    "action": "CONSOLIDATE CANDIDATE",
+    "priority": "P2",
+    "batch": "B2 Brand ownership",
+    "paths": [
+      "/brands/porsche-service-dubai",
+      "/best-porsche-workshop-dubai"
+    ],
+    "reason": "The best URL currently sells this provider’s service and repair, with a one-provider criteria table rather than a separate selection resource."
+  },
+  {
+    "id": "D",
+    "name": "Range Rover",
+    "classification": "INTENT OVERLAP",
+    "action": "CONSOLIDATE CANDIDATE",
+    "priority": "P2",
+    "batch": "B2 Brand ownership",
+    "paths": [
+      "/brands/range-rover-service-dubai",
+      "/best-range-rover-workshop-dubai"
+    ],
+    "reason": "The best URL currently sells this provider’s service and repair, with a one-provider criteria table rather than a separate selection resource."
+  },
+  {
+    "id": "E",
+    "name": "Ferrari",
+    "classification": "DISTINCT INTENT",
+    "action": "KEEP BOTH — DISTINCT INTENT",
+    "priority": "P2",
+    "batch": "B2 Selection",
+    "paths": [
+      "/brands/ferrari-service-dubai",
+      "/best-ferrari-workshop-dubai"
+    ],
+    "reason": "English checklist-led selection intent is distinguishable from service booking. Keep the checklist as supporting content and strengthen its actual selection utility later."
+  },
+  {
+    "id": "F",
+    "name": "Lamborghini",
+    "classification": "DISTINCT INTENT",
+    "action": "KEEP BOTH — DISTINCT INTENT",
+    "priority": "P2",
+    "batch": "B2 Selection",
+    "paths": [
+      "/brands/lamborghini-service-dubai",
+      "/best-lamborghini-workshop-dubai"
+    ],
+    "reason": "English checklist-led selection intent is distinguishable from service booking. Keep the checklist as supporting content and strengthen its actual selection utility later."
+  },
+  {
+    "id": "G",
+    "name": "AC information",
+    "classification": "INTENT OVERLAP",
+    "action": "CONSOLIDATE CANDIDATE",
+    "priority": "P2",
+    "batch": "B2 AC",
+    "paths": [
+      "/blog/car-ac-not-cold-dubai-causes",
+      "/blog/car-ac-repair-dubai",
+      "/services/car-ac-repair-dubai"
+    ],
+    "reason": "Both blogs explain weak cooling, leaks, compressors and diagnosis. The service page remains a separate booking owner."
+  },
+  {
+    "id": "H",
+    "name": "Battery information",
+    "classification": "INTENT OVERLAP",
+    "action": "CONSOLIDATE CANDIDATE",
+    "priority": "P2",
+    "batch": "B2 Battery",
+    "paths": [
+      "/blog/car-battery-life-dubai-heat",
+      "/blog/car-battery-replacement-dubai",
+      "/services/battery-replacement-dubai"
+    ],
+    "reason": "Both blogs answer heat-related life and replacement warning questions. Preserve the older article’s more qualified testing and scope advice before any consolidation."
+  },
+  {
+    "id": "I",
+    "name": "ROX and generic soft close",
+    "classification": "INTENT OVERLAP",
+    "action": "DIFFERENTIATE",
+    "priority": "P2",
+    "batch": "B2 ROX",
+    "paths": [
+      "/services/soft-close-door-repair-dubai",
+      "/brands/rox-service-dubai/soft-close-door-installation"
+    ],
+    "reason": "Generic English title/H1 and ROX section intrude on the ROX-specific owner. Keep cross-brand versus ROX scope; do not consolidate."
+  },
+  {
+    "id": "J",
+    "name": "Paint treatments",
+    "classification": "DISTINCT INTENT",
+    "action": "KEEP BOTH — DISTINCT INTENT",
+    "priority": "P3",
+    "batch": "B3 Paint",
+    "paths": [
+      "/services/paint-protection-dubai",
+      "/services/paint-protection-film",
+      "/services/ceramic-coating",
+      "/services/car-polishing-dubai"
+    ],
+    "reason": "Overview and selection, film, coating and correction are distinct treatment tasks."
+  },
+  {
+    "id": "K",
+    "name": "Audi workshop",
+    "classification": "INTENT OVERLAP",
+    "action": "CONSOLIDATE CANDIDATE",
+    "priority": "P2",
+    "batch": "B2 Brand ownership",
+    "paths": [
+      "/brands/audi-service-dubai",
+      "/best-audi-workshop-dubai"
+    ],
+    "reason": "Additional commercial duplicate-task pattern matches BMW and Porsche; not evidence of ranking harm."
+  },
+  {
+    "id": "L",
+    "name": "Other brand selection guides",
+    "classification": "DISTINCT INTENT",
+    "action": "PRIMARY OWNER + SUPPORTING PAGE",
+    "priority": "P3",
+    "batch": "B3 Editorial",
+    "paths": [
+      "/blog/aston-martin-best-workshop-dubai",
+      "/blog/bentley-best-workshop-dubai",
+      "/blog/cadillac-best-workshop-dubai",
+      "/blog/chevrolet-best-workshop-dubai",
+      "/blog/ford-best-workshop-dubai",
+      "/blog/jaguar-best-workshop-dubai",
+      "/blog/land-rover-best-workshop-dubai",
+      "/blog/maserati-best-workshop-dubai",
+      "/blog/maybach-best-workshop-dubai",
+      "/blog/mclaren-best-workshop-dubai",
+      "/blog/mini-best-workshop-dubai",
+      "/blog/rolls-royce-best-workshop-dubai",
+      "/blog/volkswagen-best-workshop-dubai",
+      "/brands/aston-martin-service-dubai",
+      "/brands/bentley-service-dubai",
+      "/brands/cadillac-service-dubai",
+      "/brands/chevrolet-service-dubai",
+      "/brands/ford-service-dubai",
+      "/brands/jaguar-service-dubai",
+      "/brands/land-rover-service-dubai",
+      "/brands/maserati-service-dubai",
+      "/brands/maybach-service-dubai",
+      "/brands/mclaren-service-dubai",
+      "/brands/mini-service-dubai",
+      "/brands/rolls-royce-service-dubai",
+      "/brands/volkswagen-service-dubai"
+    ],
+    "reason": "Guides lead with choosing a workshop, inspection criteria, parts and quote review. Brand hubs own booking; templated guidance should gain brand-specific evidence later."
+  },
+  {
+    "id": "M0",
+    "name": "Mercedes historical URL exposure",
+    "classification": "INSUFFICIENT EVIDENCE",
+    "action": "MONITOR",
+    "priority": "P1",
+    "batch": "B1 Mercedes",
+    "paths": [
+      "/brands/mercedes-benz-service-dubai",
+      "/best-mercedes-workshop-dubai",
+      "/services/mercedes-repair-dubai",
+      "/services/mercedes-repair-dubai/",
+      "/services/mercedes-service-dubai",
+      "/brands/maybach-service-dubai/mechanical-repair"
+    ],
+    "reason": "Historical multi-URL exposure is real, but old Mercedes routes now 301 to the hub. Missing dated query × page data prevents proof of current switching or harm."
+  },
+  {
+    "id": "M1",
+    "name": "Mercedes hub, repair children and generic services",
+    "classification": "DISTINCT INTENT",
+    "action": "KEEP BOTH — DISTINCT INTENT",
+    "priority": "P1",
+    "batch": "B1 Mercedes",
+    "paths": [
+      "/brands/mercedes-benz-service-dubai",
+      "/services/mercedes-oil-change-dubai",
+      "/services/mercedes-mechanical-repair-dubai",
+      "/services/mercedes-suspension-repair-dubai",
+      "/services/mercedes-transmission-repair-dubai",
+      "/services/mercedes-diagnostics-dubai",
+      "/services/mercedes-ac-repair-dubai",
+      "/services/mercedes-body-repair-dubai",
+      "/services/mercedes-battery-replacement-dubai"
+    ],
+    "reason": "Broad Mercedes, exact repair, and generic multi-brand queries form a hierarchy; maintain the eleven specified commercial owners."
+  },
+  {
+    "id": "M2",
+    "name": "Infotainment repair versus upgrade",
+    "classification": "DISTINCT INTENT",
+    "action": "KEEP BOTH — DISTINCT INTENT",
+    "priority": "P1",
+    "batch": "B1 Mercedes",
+    "paths": [
+      "/services/head-unit-repair-dubai",
+      "/services/mercedes-audio-upgrade-dubai",
+      "/services/cadillac-cue-screen-repair-dubai"
+    ],
+    "reason": "Fault restoration, audio improvement and Cadillac CUE assessment have different equipment and task boundaries despite high shared vocabulary."
+  },
+  {
+    "id": "M3",
+    "name": "Diagnostics versus electrical and battery",
+    "classification": "DISTINCT INTENT",
+    "action": "KEEP BOTH — DISTINCT INTENT",
+    "priority": "P1",
+    "batch": "B1 Mercedes",
+    "paths": [
+      "/services/mercedes-diagnostics-dubai",
+      "/services/mercedes-electrical-repair-dubai",
+      "/services/mercedes-battery-replacement-dubai"
+    ],
+    "reason": "XENTRY/coding and fault investigation differ from circuit/wiring/charging repairs and battery fitting. Arabic template repetition requires later differentiation, not merger."
+  },
+  {
+    "id": "M4",
+    "name": "Mercedes model ownership",
+    "classification": "DISTINCT INTENT",
+    "action": "KEEP BOTH — DISTINCT INTENT",
+    "priority": "P1",
+    "batch": "B1 Mercedes",
+    "paths": [
+      "/blog/mercedes-c-class-service-dubai-guide",
+      "/blog/mercedes-e-class-service-dubai-guide",
+      "/blog/mercedes-g63-service-dubai-guide",
+      "/blog/mercedes-s-class-service-dubai-guide",
+      "/mercedes/models/c63-service-repair-dubai",
+      "/mercedes/models/e63-service-repair-dubai",
+      "/mercedes/models/g-class-service-repair-dubai",
+      "/mercedes/models/gle-service-repair-dubai",
+      "/mercedes/models/gls-service-repair-dubai",
+      "/mercedes/models/s63-service-repair-dubai"
+    ],
+    "reason": "Current G-Class page explicitly covers non-AMG vehicles and refers AMG G63 to the G63 page. C/E/S class blog paths currently host commercial model pages; a blog path alone does not make them informational."
+  },
+  {
+    "id": "M5",
+    "name": "Mercedes schedule, cost and oil selection",
+    "classification": "DISTINCT INTENT",
+    "action": "PRIMARY OWNER + SUPPORTING PAGE",
+    "priority": "P1",
+    "batch": "B1 Mercedes",
+    "paths": [
+      "/blog/mercedes-service-intervals-dubai-heat",
+      "/blog/mercedes-service-cost-dubai-guide",
+      "/blog/best-oil-change-dubai-mercedes",
+      "/services/mercedes-oil-change-dubai",
+      "/brands/mercedes-benz-service-dubai"
+    ],
+    "reason": "ASSYST/due-work interpretation, cost drivers and choosing an oil service are separate questions from booking the due service."
+  },
+  {
+    "id": "M6",
+    "name": "Broad Mercedes maintenance guide",
+    "classification": "INTENT OVERLAP",
+    "action": "DIFFERENTIATE",
+    "priority": "P1",
+    "batch": "B1 Mercedes",
+    "paths": [
+      "/blog/mercedes-benz-maintenance-guide-dubai",
+      "/brands/mercedes-benz-service-dubai",
+      "/blog/mercedes-service-intervals-dubai-heat"
+    ],
+    "reason": "Maintenance guide repeats workshop-selection and broad repair sales material. Reserve it for owner maintenance planning; intervals/ASSYST belong to the narrower guide and booking to the hub."
+  },
+  {
+    "id": "M7",
+    "name": "Mercedes problem education",
+    "classification": "DISTINCT INTENT",
+    "action": "PRIMARY OWNER + SUPPORTING PAGE",
+    "priority": "P1",
+    "batch": "B1 Mercedes",
+    "paths": [
+      "/mercedes/problems",
+      "/mercedes/problems/ac-not-cooling",
+      "/mercedes/problems/airmatic-malfunction",
+      "/mercedes/problems/battery-warning",
+      "/mercedes/problems/check-engine-light",
+      "/mercedes/problems/engine-overheating",
+      "/mercedes/problems/gearbox-jerking",
+      "/mercedes/problems/oil-leak",
+      "/mercedes/problems/suspension-dropping-overnight",
+      "/mercedes/problems/transmission-slipping",
+      "/mercedes/problems/wont-start",
+      "/blog/mercedes-repair-dubai-complete-guide"
+    ],
+    "reason": "The complete-guide slug now has a Common Mercedes Problems title/H1. Keep symptom triage separate from commercial repairs; the index is navigation, while the article is a cross-system introduction."
+  },
+  {
+    "id": "N",
+    "name": "Porsche system, symptom and model hierarchy",
+    "classification": "DISTINCT INTENT",
+    "action": "KEEP BOTH — DISTINCT INTENT",
+    "priority": "P3",
+    "batch": "B3 Porsche",
+    "paths": [
+      "/porsche/911/992",
+      "/porsche/guides/service-intervals-uae",
+      "/porsche/problems/pasm-fault",
+      "/porsche/systems/pasm",
+      "/porsche/systems/pdk",
+      "/brands/porsche-service-dubai/engine-diagnostics",
+      "/brands/porsche-service-dubai/suspension-repair",
+      "/brands/porsche-service-dubai/transmission-repair"
+    ],
+    "reason": "PDK/PASM explanation, PASM warning, 992 model scope, due intervals and specific repair booking are separate tasks."
+  },
+  {
+    "id": "O",
+    "name": "Land Rover, Defender and repair case",
+    "classification": "DISTINCT INTENT",
+    "action": "KEEP BOTH — DISTINCT INTENT",
+    "priority": "P3",
+    "batch": "B3 JLR",
+    "paths": [
+      "/brands/range-rover-service-dubai",
+      "/brands/land-rover-service-dubai",
+      "/brands/defender-service-dubai",
+      "/blog/best-defender-workshop-dubai"
+    ],
+    "reason": "Vehicle families are not synonyms; Defender best-workshop slug currently hosts an accident-repair case with a distinct evidence task."
+  },
+  {
+    "id": "P",
+    "name": "Scheduled car service versus broad workshop",
+    "classification": "DISTINCT INTENT",
+    "action": "KEEP BOTH — DISTINCT INTENT",
+    "priority": "P3",
+    "batch": "B3 Generic",
+    "paths": [
+      "/services/car-service-dubai",
+      "/",
+      "/services/mechanical-repair-dubai",
+      "/services/car-diagnostics-dubai"
+    ],
+    "reason": "Scheduled due maintenance, finding a workshop, repairing a physical fault and diagnosing an unknown fault are distinct tasks."
+  },
+  {
+    "id": "Q",
+    "name": "Paint and workshop decision articles",
+    "classification": "DISTINCT INTENT",
+    "action": "PRIMARY OWNER + SUPPORTING PAGE",
+    "priority": "P3",
+    "batch": "B3 Editorial",
+    "paths": [
+      "/blog/ceramic-coating-vs-ppf-dubai",
+      "/blog/why-ceramic-coating-matters-uae",
+      "/blog/best-car-workshop-dubai",
+      "/blog/dealer-vs-independent-workshop-dubai"
+    ],
+    "reason": "Treatment comparison, coating benefits, workshop selection and dealer-versus-independent decision support do not replace commercial service owners."
+  },
+  {
+    "id": "EA",
+    "name": "Ferrari Arabic selection",
+    "classification": "INTENT OVERLAP",
+    "action": "DIFFERENTIATE",
+    "priority": "P2",
+    "batch": "B2 Arabic",
+    "paths": [
+      "/ar/brands/ferrari-service-dubai",
+      "/ar/best-ferrari-workshop-dubai"
+    ],
+    "reason": "Arabic best page still leads with workshop service/repair, unlike the English selection title/H1. Keep both pending a genuine Arabic checklist brief; no automatic redirect."
+  },
+  {
+    "id": "FA",
+    "name": "Lamborghini Arabic selection",
+    "classification": "INTENT OVERLAP",
+    "action": "DIFFERENTIATE",
+    "priority": "P2",
+    "batch": "B2 Arabic",
+    "paths": [
+      "/ar/brands/lamborghini-service-dubai",
+      "/ar/best-lamborghini-workshop-dubai"
+    ],
+    "reason": "Arabic best page still leads with workshop service/repair, unlike the English selection title/H1. Keep both pending a genuine Arabic checklist brief; no automatic redirect."
+  },
+  {
+    "id": "JA",
+    "name": "Arabic paint template",
+    "classification": "INTENT OVERLAP",
+    "action": "DIFFERENTIATE",
+    "priority": "P3",
+    "batch": "B3 Arabic",
+    "paths": [
+      "/ar/services/paint-protection-dubai",
+      "/ar/services/paint-protection-film",
+      "/ar/services/ceramic-coating"
+    ],
+    "reason": "Published Arabic overview, film and coating pages repeat near-identical general service copy; differentiate treatment substance. No dedicated Arabic polishing counterpart was verified; do not fabricate one."
+  }
+]

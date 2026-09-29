@@ -1,0 +1,13 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs/promises';
+import * as before from './before/cloudflare/routing-response-data.js';
+import * as after from '../../cloudflare/routing-response-data.js';
+const clean = html => html.replace(/\/assets\/[^"'\s<>]+/g, '/assets/BUILD-ASSET');
+for (const key of ['validPaths','legacyPaths','localizedFallbacks']) assert.deepEqual(after[key], before[key], key);
+assert.deepEqual(Object.keys(after.notFoundHtml), Object.keys(before.notFoundHtml));
+for (const key of Object.keys(before.notFoundHtml)) assert.equal(clean(after.notFoundHtml[key]),clean(before.notFoundHtml[key]), `404 ${key}: only built asset names may change`);
+await fs.writeFile('outputs/b1/generated-routing-verification.json',JSON.stringify({passed:true,validPaths:after.validPaths.length,legacyPaths:after.legacyPaths.length,localizedFallbacks:after.localizedFallbacks.length,notFoundHtmlLanguages:Object.keys(after.notFoundHtml),only404AssetReferencesChanged:true},null,2));
+let source=await fs.readFile('scripts/test-routing-response.mjs','utf8');
+source=source.replaceAll("'../", "'../../").replace("'outputs/b0-a'", "'outputs/b1/routing'").replace("path.resolve('scripts/test-routing-response.mjs')", "path.resolve('outputs/b1/test-routing-response.mjs')");
+await fs.writeFile('outputs/b1/test-routing-response.mjs',source);
+console.log('B0-A routing collections and 404 content unchanged; generated client/CSS asset references updated.');

@@ -1,0 +1,1135 @@
+{
+  "source": "outputs/seo-2026-09-16/gsc-evidence.json",
+  "actualPeriod": "2026-09-07 through 2026-09-13",
+  "chart": {
+    "rows": 7,
+    "clicks": 44,
+    "impressions": 9396,
+    "computed_ctr": 0.004682843763303533,
+    "impression_weighted_position_approximation": 20.840102171136653
+  },
+  "queryBands": {
+    "1–8": {
+      "rows": 244,
+      "clicks": 9,
+      "impressions": 990
+    },
+    "above 8–20": {
+      "rows": 335,
+      "clicks": 1,
+      "impressions": 2382
+    },
+    "above 20–30": {
+      "rows": 152,
+      "clicks": 1,
+      "impressions": 1147
+    },
+    "above 30": {
+      "rows": 269,
+      "clicks": 0,
+      "impressions": 1929
+    }
+  },
+  "pageBands": {
+    "above 8–20": {
+      "rows": 164,
+      "clicks": 25,
+      "impressions": 4105
+    },
+    "above 20–30": {
+      "rows": 56,
+      "clicks": 7,
+      "impressions": 2358
+    },
+    "above 30": {
+      "rows": 68,
+      "clicks": 4,
+      "impressions": 2861
+    },
+    "1–8": {
+      "rows": 159,
+      "clicks": 8,
+      "impressions": 823
+    }
+  },
+  "quickOpportunities": [
+    {
+      "sheet": "Queries",
+      "row": 11,
+      "source_range": "Queries!A11:E11",
+      "Top queries": "ferrari service dubai",
+      "Clicks": 0,
+      "Impressions": 69,
+      "CTR": 0,
+      "Position": 12.29,
+      "cluster": "Other"
+    },
+    {
+      "sheet": "Queries",
+      "row": 13,
+      "source_range": "Queries!A13:E13",
+      "Top queries": "bmw service dubai",
+      "Clicks": 0,
+      "Impressions": 60,
+      "CTR": 0,
+      "Position": 16.88,
+      "cluster": "BMW"
+    },
+    {
+      "sheet": "Queries",
+      "row": 14,
+      "source_range": "Queries!A14:E14",
+      "Top queries": "mercedes service center dubai",
+      "Clicks": 0,
+      "Impressions": 57,
+      "CTR": 0,
+      "Position": 10,
+      "cluster": "Other"
+    },
+    {
+      "sheet": "Queries",
+      "row": 15,
+      "source_range": "Queries!A15:E15",
+      "Top queries": "mercedes workshop dubai",
+      "Clicks": 0,
+      "Impressions": 50,
+      "CTR": 0,
+      "Position": 9.7,
+      "cluster": "Other"
+    },
+    {
+      "sheet": "Queries",
+      "row": 16,
+      "source_range": "Queries!A16:E16",
+      "Top queries": "rolls royce service dubai",
+      "Clicks": 0,
+      "Impressions": 50,
+      "CTR": 0,
+      "Position": 18.32,
+      "cluster": "Rolls-Royce"
+    },
+    {
+      "sheet": "Queries",
+      "row": 18,
+      "source_range": "Queries!A18:E18",
+      "Top queries": "mercedes service dubai",
+      "Clicks": 0,
+      "Impressions": 44,
+      "CTR": 0,
+      "Position": 10.8,
+      "cluster": "Other"
+    },
+    {
+      "sheet": "Queries",
+      "row": 4,
+      "source_range": "Queries!A4:E4",
+      "Top queries": "car oil change dubai",
+      "Clicks": 1,
+      "Impressions": 43,
+      "CTR": 0.0233,
+      "Position": 17.26,
+      "cluster": "Other"
+    },
+    {
+      "sheet": "Queries",
+      "row": 19,
+      "source_range": "Queries!A19:E19",
+      "Top queries": "paint protection film near me",
+      "Clicks": 0,
+      "Impressions": 43,
+      "CTR": 0,
+      "Position": 14.12,
+      "cluster": "PPF"
+    },
+    {
+      "sheet": "Queries",
+      "row": 21,
+      "source_range": "Queries!A21:E21",
+      "Top queries": "ferrari service",
+      "Clicks": 0,
+      "Impressions": 37,
+      "CTR": 0,
+      "Position": 8.27,
+      "cluster": "Other"
+    },
+    {
+      "sheet": "Queries",
+      "row": 26,
+      "source_range": "Queries!A26:E26",
+      "Top queries": "mercedes service",
+      "Clicks": 0,
+      "Impressions": 35,
+      "CTR": 0,
+      "Position": 18.17,
+      "cluster": "Other"
+    },
+    {
+      "sheet": "Queries",
+      "row": 29,
+      "source_range": "Queries!A29:E29",
+      "Top queries": "mclaren service dubai",
+      "Clicks": 0,
+      "Impressions": 34,
+      "CTR": 0,
+      "Position": 11.88,
+      "cluster": "Other"
+    },
+    {
+      "sheet": "Queries",
+      "row": 30,
+      "source_range": "Queries!A30:E30",
+      "Top queries": "mclaren repair dubai",
+      "Clicks": 0,
+      "Impressions": 34,
+      "CTR": 0,
+      "Position": 15.5,
+      "cluster": "Other"
+    },
+    {
+      "sheet": "Queries",
+      "row": 33,
+      "source_range": "Queries!A33:E33",
+      "Top queries": "ferrari maintenance dubai",
+      "Clicks": 0,
+      "Impressions": 32,
+      "CTR": 0,
+      "Position": 8.66,
+      "cluster": "Other"
+    },
+    {
+      "sheet": "Queries",
+      "row": 38,
+      "source_range": "Queries!A38:E38",
+      "Top queries": "lamborghini service dubai",
+      "Clicks": 0,
+      "Impressions": 30,
+      "CTR": 0,
+      "Position": 19.7,
+      "cluster": "Other"
+    },
+    {
+      "sheet": "Queries",
+      "row": 48,
+      "source_range": "Queries!A48:E48",
+      "Top queries": "rolls royce service",
+      "Clicks": 0,
+      "Impressions": 26,
+      "CTR": 0,
+      "Position": 17.58,
+      "cluster": "Rolls-Royce"
+    },
+    {
+      "sheet": "Queries",
+      "row": 54,
+      "source_range": "Queries!A54:E54",
+      "Top queries": "best chevrolet workshop",
+      "Clicks": 0,
+      "Impressions": 25,
+      "CTR": 0,
+      "Position": 10.52,
+      "cluster": "Other"
+    },
+    {
+      "sheet": "Queries",
+      "row": 55,
+      "source_range": "Queries!A55:E55",
+      "Top queries": "best mini workshop abu dhabi",
+      "Clicks": 0,
+      "Impressions": 25,
+      "CTR": 0,
+      "Position": 17.8,
+      "cluster": "Other"
+    },
+    {
+      "sheet": "Queries",
+      "row": 57,
+      "source_range": "Queries!A57:E57",
+      "Top queries": "ferrari service center dubai",
+      "Clicks": 0,
+      "Impressions": 24,
+      "CTR": 0,
+      "Position": 17.96,
+      "cluster": "Other"
+    },
+    {
+      "sheet": "Queries",
+      "row": 58,
+      "source_range": "Queries!A58:E58",
+      "Top queries": "ferrari servicing",
+      "Clicks": 0,
+      "Impressions": 23,
+      "CTR": 0,
+      "Position": 11.13,
+      "cluster": "Other"
+    },
+    {
+      "sheet": "Queries",
+      "row": 59,
+      "source_range": "Queries!A59:E59",
+      "Top queries": "paint protection film installers",
+      "Clicks": 0,
+      "Impressions": 22,
+      "CTR": 0,
+      "Position": 19.09,
+      "cluster": "PPF"
+    },
+    {
+      "sheet": "Queries",
+      "row": 64,
+      "source_range": "Queries!A64:E64",
+      "Top queries": "porsche maintenance",
+      "Clicks": 0,
+      "Impressions": 20,
+      "CTR": 0,
+      "Position": 9,
+      "cluster": "Other"
+    },
+    {
+      "sheet": "Queries",
+      "row": 65,
+      "source_range": "Queries!A65:E65",
+      "Top queries": "rolls royce service center dubai",
+      "Clicks": 0,
+      "Impressions": 20,
+      "CTR": 0,
+      "Position": 20,
+      "cluster": "Rolls-Royce"
+    },
+    {
+      "sheet": "Queries",
+      "row": 70,
+      "source_range": "Queries!A70:E70",
+      "Top queries": "mercedes repair specialist",
+      "Clicks": 0,
+      "Impressions": 19,
+      "CTR": 0,
+      "Position": 8.68,
+      "cluster": "Other"
+    },
+    {
+      "sheet": "Queries",
+      "row": 71,
+      "source_range": "Queries!A71:E71",
+      "Top queries": "mercedes garage dubai",
+      "Clicks": 0,
+      "Impressions": 19,
+      "CTR": 0,
+      "Position": 17.79,
+      "cluster": "Other"
+    },
+    {
+      "sheet": "Queries",
+      "row": 72,
+      "source_range": "Queries!A72:E72",
+      "Top queries": "mercedes oil change",
+      "Clicks": 0,
+      "Impressions": 19,
+      "CTR": 0,
+      "Position": 19.63,
+      "cluster": "Other"
+    },
+    {
+      "sheet": "Queries",
+      "row": 78,
+      "source_range": "Queries!A78:E78",
+      "Top queries": "bmw repair",
+      "Clicks": 0,
+      "Impressions": 17,
+      "CTR": 0,
+      "Position": 9.88,
+      "cluster": "BMW"
+    },
+    {
+      "sheet": "Queries",
+      "row": 82,
+      "source_range": "Queries!A82:E82",
+      "Top queries": "mclaren repair",
+      "Clicks": 0,
+      "Impressions": 16,
+      "CTR": 0,
+      "Position": 8.81,
+      "cluster": "Other"
+    },
+    {
+      "sheet": "Queries",
+      "row": 83,
+      "source_range": "Queries!A83:E83",
+      "Top queries": "nissan service center al quoz",
+      "Clicks": 0,
+      "Impressions": 16,
+      "CTR": 0,
+      "Position": 11.69,
+      "cluster": "Other"
+    },
+    {
+      "sheet": "Queries",
+      "row": 84,
+      "source_range": "Queries!A84:E84",
+      "Top queries": "lamborghini service",
+      "Clicks": 0,
+      "Impressions": 16,
+      "CTR": 0,
+      "Position": 14.31,
+      "cluster": "Other"
+    },
+    {
+      "sheet": "Queries",
+      "row": 85,
+      "source_range": "Queries!A85:E85",
+      "Top queries": "range rover body repair",
+      "Clicks": 0,
+      "Impressions": 16,
+      "CTR": 0,
+      "Position": 15.62,
+      "cluster": "Other"
+    },
+    {
+      "sheet": "Queries",
+      "row": 90,
+      "source_range": "Queries!A90:E90",
+      "Top queries": "mclaren maintenance dubai",
+      "Clicks": 0,
+      "Impressions": 15,
+      "CTR": 0,
+      "Position": 10.07,
+      "cluster": "Other"
+    },
+    {
+      "sheet": "Queries",
+      "row": 91,
+      "source_range": "Queries!A91:E91",
+      "Top queries": "bmw service in dubai",
+      "Clicks": 0,
+      "Impressions": 15,
+      "CTR": 0,
+      "Position": 16.73,
+      "cluster": "BMW"
+    },
+    {
+      "sheet": "Queries",
+      "row": 92,
+      "source_range": "Queries!A92:E92",
+      "Top queries": "rolls royce maintenance dubai",
+      "Clicks": 0,
+      "Impressions": 15,
+      "CTR": 0,
+      "Position": 18.73,
+      "cluster": "Rolls-Royce"
+    },
+    {
+      "sheet": "Queries",
+      "row": 93,
+      "source_range": "Queries!A93:E93",
+      "Top queries": "mercedes coding service",
+      "Clicks": 0,
+      "Impressions": 15,
+      "CTR": 0,
+      "Position": 19.13,
+      "cluster": "Other"
+    },
+    {
+      "sheet": "Queries",
+      "row": 103,
+      "source_range": "Queries!A103:E103",
+      "Top queries": "ferrari maintenance",
+      "Clicks": 0,
+      "Impressions": 14,
+      "CTR": 0,
+      "Position": 8.71,
+      "cluster": "Other"
+    },
+    {
+      "sheet": "Queries",
+      "row": 104,
+      "source_range": "Queries!A104:E104",
+      "Top queries": "mercedes benz service center dubai",
+      "Clicks": 0,
+      "Impressions": 14,
+      "CTR": 0,
+      "Position": 10,
+      "cluster": "Other"
+    },
+    {
+      "sheet": "Queries",
+      "row": 105,
+      "source_range": "Queries!A105:E105",
+      "Top queries": "mercedes transmission repair dubai",
+      "Clicks": 0,
+      "Impressions": 14,
+      "CTR": 0,
+      "Position": 10.71,
+      "cluster": "Other"
+    },
+    {
+      "sheet": "Queries",
+      "row": 106,
+      "source_range": "Queries!A106:E106",
+      "Top queries": "porsche repair dubai",
+      "Clicks": 0,
+      "Impressions": 14,
+      "CTR": 0,
+      "Position": 11.86,
+      "cluster": "Other"
+    },
+    {
+      "sheet": "Queries",
+      "row": 107,
+      "source_range": "Queries!A107:E107",
+      "Top queries": "mclaren engine repair dubai",
+      "Clicks": 0,
+      "Impressions": 14,
+      "CTR": 0,
+      "Position": 12.71,
+      "cluster": "Other"
+    },
+    {
+      "sheet": "Queries",
+      "row": 108,
+      "source_range": "Queries!A108:E108",
+      "Top queries": "rolls royce service center",
+      "Clicks": 0,
+      "Impressions": 14,
+      "CTR": 0,
+      "Position": 15.36,
+      "cluster": "Rolls-Royce"
+    }
+  ],
+  "mediumOpportunities": [
+    {
+      "sheet": "Queries",
+      "row": 23,
+      "source_range": "Queries!A23:E23",
+      "Top queries": "ceramic paint protection dubai",
+      "Clicks": 0,
+      "Impressions": 36,
+      "CTR": 0,
+      "Position": 20.28,
+      "cluster": "Ceramic"
+    },
+    {
+      "sheet": "Queries",
+      "row": 27,
+      "source_range": "Queries!A27:E27",
+      "Top queries": "paint protection coating",
+      "Clicks": 0,
+      "Impressions": 35,
+      "CTR": 0,
+      "Position": 27.74,
+      "cluster": "Ceramic"
+    },
+    {
+      "sheet": "Queries",
+      "row": 34,
+      "source_range": "Queries!A34:E34",
+      "Top queries": "tire repair dubai",
+      "Clicks": 0,
+      "Impressions": 32,
+      "CTR": 0,
+      "Position": 23.81,
+      "cluster": "Tyres"
+    },
+    {
+      "sheet": "Queries",
+      "row": 5,
+      "source_range": "Queries!A5:E5",
+      "Top queries": "aston martin service dubai",
+      "Clicks": 1,
+      "Impressions": 31,
+      "CTR": 0.0323,
+      "Position": 21.97,
+      "cluster": "Aston Martin"
+    },
+    {
+      "sheet": "Queries",
+      "row": 36,
+      "source_range": "Queries!A36:E36",
+      "Top queries": "bmw service",
+      "Clicks": 0,
+      "Impressions": 31,
+      "CTR": 0,
+      "Position": 27.71,
+      "cluster": "BMW"
+    },
+    {
+      "sheet": "Queries",
+      "row": 40,
+      "source_range": "Queries!A40:E40",
+      "Top queries": "aston martin repair dubai",
+      "Clicks": 0,
+      "Impressions": 29,
+      "CTR": 0,
+      "Position": 29.55,
+      "cluster": "Aston Martin"
+    },
+    {
+      "sheet": "Queries",
+      "row": 43,
+      "source_range": "Queries!A43:E43",
+      "Top queries": "ferrari service center",
+      "Clicks": 0,
+      "Impressions": 28,
+      "CTR": 0,
+      "Position": 21.43,
+      "cluster": "Other"
+    },
+    {
+      "sheet": "Queries",
+      "row": 49,
+      "source_range": "Queries!A49:E49",
+      "Top queries": "rolls royce repair dubai",
+      "Clicks": 0,
+      "Impressions": 26,
+      "CTR": 0,
+      "Position": 20.42,
+      "cluster": "Rolls-Royce"
+    },
+    {
+      "sheet": "Queries",
+      "row": 50,
+      "source_range": "Queries!A50:E50",
+      "Top queries": "bmw service center dubai",
+      "Clicks": 0,
+      "Impressions": 26,
+      "CTR": 0,
+      "Position": 26.58,
+      "cluster": "BMW"
+    },
+    {
+      "sheet": "Queries",
+      "row": 60,
+      "source_range": "Queries!A60:E60",
+      "Top queries": "ferrari repair dubai",
+      "Clicks": 0,
+      "Impressions": 22,
+      "CTR": 0,
+      "Position": 21.45,
+      "cluster": "Other"
+    },
+    {
+      "sheet": "Queries",
+      "row": 61,
+      "source_range": "Queries!A61:E61",
+      "Top queries": "brake repair dubai",
+      "Clicks": 0,
+      "Impressions": 22,
+      "CTR": 0,
+      "Position": 28.55,
+      "cluster": "Other"
+    },
+    {
+      "sheet": "Queries",
+      "row": 66,
+      "source_range": "Queries!A66:E66",
+      "Top queries": "oil change dubai",
+      "Clicks": 0,
+      "Impressions": 20,
+      "CTR": 0,
+      "Position": 20.95,
+      "cluster": "Other"
+    },
+    {
+      "sheet": "Queries",
+      "row": 67,
+      "source_range": "Queries!A67:E67",
+      "Top queries": "tire repair",
+      "Clicks": 0,
+      "Impressions": 20,
+      "CTR": 0,
+      "Position": 23.25,
+      "cluster": "Tyres"
+    },
+    {
+      "sheet": "Queries",
+      "row": 68,
+      "source_range": "Queries!A68:E68",
+      "Top queries": "bmw battery replacement",
+      "Clicks": 0,
+      "Impressions": 20,
+      "CTR": 0,
+      "Position": 27.1,
+      "cluster": "BMW"
+    },
+    {
+      "sheet": "Queries",
+      "row": 73,
+      "source_range": "Queries!A73:E73",
+      "Top queries": "audi repair dubai",
+      "Clicks": 0,
+      "Impressions": 19,
+      "CTR": 0,
+      "Position": 23.26,
+      "cluster": "Other"
+    },
+    {
+      "sheet": "Queries",
+      "row": 77,
+      "source_range": "Queries!A77:E77",
+      "Top queries": "car paint protection dubai",
+      "Clicks": 0,
+      "Impressions": 18,
+      "CTR": 0,
+      "Position": 22.78,
+      "cluster": "PPF"
+    },
+    {
+      "sheet": "Queries",
+      "row": 79,
+      "source_range": "Queries!A79:E79",
+      "Top queries": "mercedes maintenance",
+      "Clicks": 0,
+      "Impressions": 17,
+      "CTR": 0,
+      "Position": 29.94,
+      "cluster": "Other"
+    },
+    {
+      "sheet": "Queries",
+      "row": 86,
+      "source_range": "Queries!A86:E86",
+      "Top queries": "car diagnostic dubai",
+      "Clicks": 0,
+      "Impressions": 16,
+      "CTR": 0,
+      "Position": 26.31,
+      "cluster": "Other"
+    },
+    {
+      "sheet": "Queries",
+      "row": 94,
+      "source_range": "Queries!A94:E94",
+      "Top queries": "hummer engine repair dubai",
+      "Clicks": 0,
+      "Impressions": 15,
+      "CTR": 0,
+      "Position": 22.33,
+      "cluster": "Other"
+    },
+    {
+      "sheet": "Queries",
+      "row": 95,
+      "source_range": "Queries!A95:E95",
+      "Top queries": "aston martin engine repair dubai",
+      "Clicks": 0,
+      "Impressions": 15,
+      "CTR": 0,
+      "Position": 23.87,
+      "cluster": "Aston Martin"
+    },
+    {
+      "sheet": "Queries",
+      "row": 96,
+      "source_range": "Queries!A96:E96",
+      "Top queries": "car diagnostics dip2",
+      "Clicks": 0,
+      "Impressions": 15,
+      "CTR": 0,
+      "Position": 25.47,
+      "cluster": "Other"
+    },
+    {
+      "sheet": "Queries",
+      "row": 97,
+      "source_range": "Queries!A97:E97",
+      "Top queries": "audi service",
+      "Clicks": 0,
+      "Impressions": 15,
+      "CTR": 0,
+      "Position": 26.53,
+      "cluster": "Other"
+    },
+    {
+      "sheet": "Queries",
+      "row": 121,
+      "source_range": "Queries!A121:E121",
+      "Top queries": "rolls royce repair in dubai",
+      "Clicks": 0,
+      "Impressions": 13,
+      "CTR": 0,
+      "Position": 25.38,
+      "cluster": "Rolls-Royce"
+    },
+    {
+      "sheet": "Queries",
+      "row": 122,
+      "source_range": "Queries!A122:E122",
+      "Top queries": "suspension repair dubai",
+      "Clicks": 0,
+      "Impressions": 13,
+      "CTR": 0,
+      "Position": 28.54,
+      "cluster": "Other"
+    },
+    {
+      "sheet": "Queries",
+      "row": 123,
+      "source_range": "Queries!A123:E123",
+      "Top queries": "lamborghini reverse camera in dubai",
+      "Clicks": 0,
+      "Impressions": 13,
+      "CTR": 0,
+      "Position": 30,
+      "cluster": "Other"
+    }
+  ],
+  "priorityPageOpportunities": [
+    {
+      "sheet": "Pages",
+      "row": 2,
+      "source_range": "Pages!A2:E2",
+      "Top pages": "https://digitecme.com/brands/mercedes-benz-service-dubai",
+      "Clicks": 13,
+      "Impressions": 1223,
+      "CTR": 0.0106,
+      "Position": 8.36
+    },
+    {
+      "sheet": "Pages",
+      "row": 3,
+      "source_range": "Pages!A3:E3",
+      "Top pages": "https://digitecme.com/",
+      "Clicks": 8,
+      "Impressions": 382,
+      "CTR": 0.0209,
+      "Position": 18.47
+    },
+    {
+      "sheet": "Pages",
+      "row": 4,
+      "source_range": "Pages!A4:E4",
+      "Top pages": "https://digitecme.com/brands/bmw-service-dubai",
+      "Clicks": 2,
+      "Impressions": 278,
+      "CTR": 0.0072,
+      "Position": 20.27
+    },
+    {
+      "sheet": "Pages",
+      "row": 28,
+      "source_range": "Pages!A28:E28",
+      "Top pages": "https://digitecme.com/brands/rolls-royce-service-dubai",
+      "Clicks": 0,
+      "Impressions": 244,
+      "CTR": 0,
+      "Position": 17.72
+    },
+    {
+      "sheet": "Pages",
+      "row": 5,
+      "source_range": "Pages!A5:E5",
+      "Top pages": "https://digitecme.com/brands/nissan-service-dubai",
+      "Clicks": 1,
+      "Impressions": 220,
+      "CTR": 0.0045000000000000005,
+      "Position": 16.62
+    },
+    {
+      "sheet": "Pages",
+      "row": 32,
+      "source_range": "Pages!A32:E32",
+      "Top pages": "https://digitecme.com/blog/ferrari-maintenance-guide-dubai",
+      "Clicks": 0,
+      "Impressions": 204,
+      "CTR": 0,
+      "Position": 9.47
+    },
+    {
+      "sheet": "Pages",
+      "row": 33,
+      "source_range": "Pages!A33:E33",
+      "Top pages": "https://digitecme.com/brands/mclaren-service-dubai",
+      "Clicks": 0,
+      "Impressions": 196,
+      "CTR": 0,
+      "Position": 15.78
+    },
+    {
+      "sheet": "Pages",
+      "row": 7,
+      "source_range": "Pages!A7:E7",
+      "Top pages": "https://digitecme.com/tuning",
+      "Clicks": 1,
+      "Impressions": 186,
+      "CTR": 0.0054,
+      "Position": 21.59
+    },
+    {
+      "sheet": "Pages",
+      "row": 8,
+      "source_range": "Pages!A8:E8",
+      "Top pages": "https://digitecme.com/services/car-diagnostics-dubai",
+      "Clicks": 1,
+      "Impressions": 170,
+      "CTR": 0.0059,
+      "Position": 26.52
+    },
+    {
+      "sheet": "Pages",
+      "row": 34,
+      "source_range": "Pages!A34:E34",
+      "Top pages": "https://digitecme.com/services/suspension-repair-dubai",
+      "Clicks": 0,
+      "Impressions": 166,
+      "CTR": 0,
+      "Position": 24.7
+    },
+    {
+      "sheet": "Pages",
+      "row": 9,
+      "source_range": "Pages!A9:E9",
+      "Top pages": "https://digitecme.com/brands/aston-martin-service-dubai",
+      "Clicks": 1,
+      "Impressions": 155,
+      "CTR": 0.006500000000000001,
+      "Position": 22.95
+    },
+    {
+      "sheet": "Pages",
+      "row": 10,
+      "source_range": "Pages!A10:E10",
+      "Top pages": "https://digitecme.com/services/oil-change-dubai",
+      "Clicks": 1,
+      "Impressions": 151,
+      "CTR": 0.0066,
+      "Position": 23.94
+    },
+    {
+      "sheet": "Pages",
+      "row": 35,
+      "source_range": "Pages!A35:E35",
+      "Top pages": "https://digitecme.com/brands/lamborghini-service-dubai",
+      "Clicks": 0,
+      "Impressions": 145,
+      "CTR": 0,
+      "Position": 23.93
+    },
+    {
+      "sheet": "Pages",
+      "row": 37,
+      "source_range": "Pages!A37:E37",
+      "Top pages": "https://digitecme.com/services/brake-repair-dubai",
+      "Clicks": 0,
+      "Impressions": 124,
+      "CTR": 0,
+      "Position": 23.31
+    },
+    {
+      "sheet": "Pages",
+      "row": 38,
+      "source_range": "Pages!A38:E38",
+      "Top pages": "https://digitecme.com/brands/audi-service-dubai",
+      "Clicks": 0,
+      "Impressions": 121,
+      "CTR": 0,
+      "Position": 25.71
+    },
+    {
+      "sheet": "Pages",
+      "row": 39,
+      "source_range": "Pages!A39:E39",
+      "Top pages": "https://digitecme.com/services/transmission-repair-dubai",
+      "Clicks": 0,
+      "Impressions": 99,
+      "CTR": 0,
+      "Position": 20.43
+    },
+    {
+      "sheet": "Pages",
+      "row": 40,
+      "source_range": "Pages!A40:E40",
+      "Top pages": "https://digitecme.com/services/exhaust-repair-dubai",
+      "Clicks": 0,
+      "Impressions": 97,
+      "CTR": 0,
+      "Position": 27.38
+    },
+    {
+      "sheet": "Pages",
+      "row": 41,
+      "source_range": "Pages!A41:E41",
+      "Top pages": "https://digitecme.com/services/steering-repair-dubai",
+      "Clicks": 0,
+      "Impressions": 95,
+      "CTR": 0,
+      "Position": 13.54
+    },
+    {
+      "sheet": "Pages",
+      "row": 12,
+      "source_range": "Pages!A12:E12",
+      "Top pages": "https://digitecme.com/services/car-body-repair-dubai",
+      "Clicks": 1,
+      "Impressions": 78,
+      "CTR": 0.0128,
+      "Position": 26.63
+    },
+    {
+      "sheet": "Pages",
+      "row": 43,
+      "source_range": "Pages!A43:E43",
+      "Top pages": "https://digitecme.com/services/mercedes-oil-change-dubai/",
+      "Clicks": 0,
+      "Impressions": 65,
+      "CTR": 0,
+      "Position": 10.6
+    },
+    {
+      "sheet": "Pages",
+      "row": 45,
+      "source_range": "Pages!A45:E45",
+      "Top pages": "https://digitecme.com/brands/cadillac-service-dubai",
+      "Clicks": 0,
+      "Impressions": 58,
+      "CTR": 0,
+      "Position": 27.16
+    },
+    {
+      "sheet": "Pages",
+      "row": 49,
+      "source_range": "Pages!A49:E49",
+      "Top pages": "https://digitecme.com/brands/bugatti-service-dubai",
+      "Clicks": 0,
+      "Impressions": 50,
+      "CTR": 0,
+      "Position": 22.76
+    },
+    {
+      "sheet": "Pages",
+      "row": 50,
+      "source_range": "Pages!A50:E50",
+      "Top pages": "https://digitecme.com/brands/bmw-service-dubai/battery-replacement",
+      "Clicks": 0,
+      "Impressions": 50,
+      "CTR": 0,
+      "Position": 26.44
+    },
+    {
+      "sheet": "Pages",
+      "row": 52,
+      "source_range": "Pages!A52:E52",
+      "Top pages": "https://digitecme.com/brands/lotus-service-dubai",
+      "Clicks": 0,
+      "Impressions": 46,
+      "CTR": 0,
+      "Position": 10.22
+    },
+    {
+      "sheet": "Pages",
+      "row": 53,
+      "source_range": "Pages!A53:E53",
+      "Top pages": "https://digitecme.com/blog/chevrolet-best-workshop-dubai",
+      "Clicks": 0,
+      "Impressions": 43,
+      "CTR": 0,
+      "Position": 10.19
+    },
+    {
+      "sheet": "Pages",
+      "row": 55,
+      "source_range": "Pages!A55:E55",
+      "Top pages": "https://digitecme.com/services/fuel-system-repair-dubai",
+      "Clicks": 0,
+      "Impressions": 42,
+      "CTR": 0,
+      "Position": 18.38
+    },
+    {
+      "sheet": "Pages",
+      "row": 57,
+      "source_range": "Pages!A57:E57",
+      "Top pages": "https://digitecme.com/ar/brands/jetour-service-dubai",
+      "Clicks": 0,
+      "Impressions": 40,
+      "CTR": 0,
+      "Position": 16.77
+    },
+    {
+      "sheet": "Pages",
+      "row": 59,
+      "source_range": "Pages!A59:E59",
+      "Top pages": "https://digitecme.com/blog/volkswagen-best-workshop-dubai",
+      "Clicks": 0,
+      "Impressions": 39,
+      "CTR": 0,
+      "Position": 10.64
+    },
+    {
+      "sheet": "Pages",
+      "row": 60,
+      "source_range": "Pages!A60:E60",
+      "Top pages": "https://digitecme.com/blog/best-oil-change-dubai-mercedes",
+      "Clicks": 0,
+      "Impressions": 39,
+      "CTR": 0,
+      "Position": 10.82
+    },
+    {
+      "sheet": "Pages",
+      "row": 61,
+      "source_range": "Pages!A61:E61",
+      "Top pages": "https://digitecme.com/brands/volvo-service-dubai",
+      "Clicks": 0,
+      "Impressions": 39,
+      "CTR": 0,
+      "Position": 22.28
+    },
+    {
+      "sheet": "Pages",
+      "row": 63,
+      "source_range": "Pages!A63:E63",
+      "Top pages": "https://digitecme.com/brands/porsche-service-dubai/transmission-repair",
+      "Clicks": 0,
+      "Impressions": 37,
+      "CTR": 0,
+      "Position": 14.24
+    },
+    {
+      "sheet": "Pages",
+      "row": 64,
+      "source_range": "Pages!A64:E64",
+      "Top pages": "https://digitecme.com/brands/gmc-service-dubai",
+      "Clicks": 0,
+      "Impressions": 35,
+      "CTR": 0,
+      "Position": 22.91
+    },
+    {
+      "sheet": "Pages",
+      "row": 65,
+      "source_range": "Pages!A65:E65",
+      "Top pages": "https://digitecme.com/brands/jaguar-service-dubai",
+      "Clicks": 0,
+      "Impressions": 35,
+      "CTR": 0,
+      "Position": 24.86
+    },
+    {
+      "sheet": "Pages",
+      "row": 67,
+      "source_range": "Pages!A67:E67",
+      "Top pages": "https://digitecme.com/brands/mazda-service-dubai",
+      "Clicks": 0,
+      "Impressions": 34,
+      "CTR": 0,
+      "Position": 21.94
+    },
+    {
+      "sheet": "Pages",
+      "row": 68,
+      "source_range": "Pages!A68:E68",
+      "Top pages": "https://digitecme.com/blog/jaguar-best-workshop-dubai",
+      "Clicks": 0,
+      "Impressions": 33,
+      "CTR": 0,
+      "Position": 14.85
+    }
+  ],
+  "caveats": [
+    "The export contains separate Queries and Pages aggregates and no query-by-page table. Query-to-URL mapping is an architectural inference. These data cannot prove cannibalization or attribute a query to an individual page.",
+    "File date is 2026-09-16; actual Chart dates are 2026-09-07 through 2026-09-13, inclusive. Filters says Last 7 days, Web. No country filter is recorded.",
+    "The query table contains exactly 1,000 rows; do not assume it is a complete list of searches. Query totals do not reconcile to site chart totals, so query-cluster totals describe the exported subset only.",
+    "Page totals need not equal site totals because several pages can appear in one result set. Never add page or query metrics to site totals.",
+    "The seven-day sample and rounded average positions are directional evidence, not a ranking forecast or proof of any implementation effect.",
+    "Cluster membership is a conservative regex classification for analysis; shared terms such as ceramic vs PPF and electrical vs brand service can require intent review. Each exported query is assigned to one analysis cluster only.",
+    "Aggregate positions below are approximated by impression weighting the already-rounded exported row positions, not independently reported Search Console cluster positions."
+  ]
+}

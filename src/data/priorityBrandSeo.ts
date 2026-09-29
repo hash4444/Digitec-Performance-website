@@ -121,9 +121,17 @@ export const PRIORITY_BRAND_SEO: Record<string, PriorityBrandSeo> = {
     title: 'Cadillac Service & Repair Dubai | Digi-Tec Al Quoz',
     description: 'Cadillac service and repair in Dubai for Escalade, CT4, CT5, XT models and Lyriq, including diagnostics, AC, suspension, brakes and mechanical inspection.',
   },
+  'volkswagen-service-dubai': {
+    title: 'Volkswagen Service & Repair Dubai | DIGI-TEC Al Quoz',
+    description: 'Volkswagen service and repair in Dubai, with DSG assessment, ODIS-supported diagnostics, engine, AC and brake inspections at DIGI-TEC in Al Quoz.',
+  },
   'rox-service-dubai': {
     title: 'ROX 01 Service & Repair Dubai | DIGI-TEC Al Quoz',
     description: 'ROX 01 service, repair and diagnostics in Al Quoz, Dubai. Discuss maintenance, AC, brakes, warning lights and soft-close-door concerns with DIGI-TEC.',
+  },
+  'jetour-service-dubai': {
+    title: 'Jetour Service & Repair Dubai | DIGI-TEC Al Quoz',
+    description: 'Jetour service and repair enquiries in Al Quoz, Dubai. Discuss T2, X70, X90 Plus or Dashing maintenance, warnings, AC and brakes after vehicle-specific inspection.',
   },
 };
 

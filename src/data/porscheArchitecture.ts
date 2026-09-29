@@ -7,6 +7,23 @@ export type PorscheNavigationItem = {
   status?: 'planned';
 };
 
+export const porscheServiceNavigation: PorscheNavigationItem[] = [
+  { title: 'Diagnostics and PIWIS 3', description: 'Warnings and drivability concerns investigated with supported data and directed tests.', path: `${PORSCHE_HUB_PATH}/engine-diagnostics` },
+  { title: 'Transmission and PDK repair', description: 'Jerking, delayed engagement, leaks and gearbox warnings assessed by fitted unit.', path: `${PORSCHE_HUB_PATH}/transmission-repair` },
+  { title: 'Suspension and PASM repair', description: 'Mechanical, adaptive and air-suspension concerns assessed where fitted.', path: `${PORSCHE_HUB_PATH}/suspension-repair` },
+  { title: 'Engine and mechanical repair', description: 'Overheating, leaks, running and driveline concerns diagnosed before repair.', path: `${PORSCHE_HUB_PATH}/mechanical-repair` },
+  { title: 'Oil change', description: 'Oil approval, quantity and filter matched to the exact engine.', path: `${PORSCHE_HUB_PATH}/oil-change` },
+  { title: 'Brake repair', description: 'Inspection of the fitted steel, surface-coated or PCCB braking system.', path: `${PORSCHE_HUB_PATH}/brake-repair` },
+  { title: 'Air-conditioning repair', description: 'Cooling performance, airflow and leaks checked before recharge or parts.', path: `${PORSCHE_HUB_PATH}/ac-repair` },
+  { title: 'Electrical repair', description: 'Wiring, charging and module concerns assessed from symptoms and evidence.', path: `${PORSCHE_HUB_PATH}/electrical-repair` },
+  { title: 'Battery replacement', description: 'Battery and charging assessment before specification-matched fitting.', path: `${PORSCHE_HUB_PATH}/battery-replacement` },
+  { title: 'Steering repair', description: 'Steering warnings, play and vibration checked with tyres and suspension.', path: `${PORSCHE_HUB_PATH}/steering-repair` },
+  { title: 'Exhaust repair', description: 'Noise, leaks and emissions concerns inspected before components are selected.', path: `${PORSCHE_HUB_PATH}/exhaust-repair` },
+  { title: 'Fuel-system repair', description: 'Pressure, delivery and injector concerns tested before parts are proposed.', path: `${PORSCHE_HUB_PATH}/fuel-system-repair` },
+  { title: 'Body repair', description: 'Damage and panel/paint scope assessed for the actual vehicle.', path: `${PORSCHE_HUB_PATH}/body-repair` },
+  { title: 'Tyre service', description: 'Pressure loss, wear and wheel concerns checked against Porsche specification.', path: `${PORSCHE_HUB_PATH}/tire-repair` },
+];
+
 export const porscheModelNavigation: PorscheNavigationItem[] = [
   {
     title: '911',
@@ -43,9 +60,12 @@ export const porscheModelNavigation: PorscheNavigationItem[] = [
 export const porscheSystemNavigation: PorscheNavigationItem[] = [
   { title: 'PDK', description: 'Dual-clutch operation, normal behaviour and warning signs.', path: '/porsche/systems/pdk' },
   { title: 'Tiptronic', description: 'Torque-converter automatic operation and diagnosis.', path: '/porsche/systems/tiptronic' },
-  { title: 'PASM & PDCC', description: 'Adaptive damping and active roll-control systems.', path: '/porsche/systems/pasm' },
+  { title: 'PASM', description: 'Adaptive damping operation, fitment and warning signs.', path: '/porsche/systems/pasm' },
+  { title: 'PDCC', description: 'Active roll-control operation and diagnostic considerations.', path: '/porsche/systems/pdcc' },
   { title: 'PCCB', description: 'Ceramic-composite brake operation and inspection.', path: '/porsche/systems/pccb' },
   { title: 'Air suspension', description: 'Ride-height control, normal operation and warnings.', path: '/porsche/systems/air-suspension' },
+  { title: 'Rear-axle steering', description: 'Low-speed manoeuvring, stability and steering warnings.', path: '/porsche/systems/rear-axle-steering' },
+  { title: 'Sport Chrono', description: 'Drive modes, equipment differences and system messages.', path: '/porsche/systems/sport-chrono' },
   { title: 'Browse all systems', description: 'Sport Chrono, rear-axle steering, PTM and more.', path: '/porsche/systems' },
 ];
 
@@ -54,12 +74,15 @@ export const porscheProblemNavigation: PorscheNavigationItem[] = [
   { title: 'Engine overheating', description: 'Cooling, airflow and circulation warning signs.', path: '/porsche/problems/engine-overheating' },
   { title: 'Oil or coolant leak', description: 'How visible fluid is traced to its source.', path: '/porsche/problems/oil-leak' },
   { title: 'Suspension drops overnight', description: 'Air-loss and control-system diagnosis.', path: '/porsche/problems/suspension-dropping-overnight' },
+  { title: 'Cayenne air-suspension warning', description: 'Uneven ride height and chassis messages on the Cayenne.', path: '/porsche/problems/cayenne-air-suspension' },
+  { title: 'Brake warning light', description: 'Brake messages, wear indicators and inspection decisions.', path: '/porsche/problems/brake-warning-light' },
   { title: 'AC not cooling', description: 'Refrigerant, airflow, compressor and control causes.', path: '/porsche/problems/ac-not-cooling' },
   { title: 'Battery or starting problem', description: 'Low-voltage, charging and no-start pathways.', path: '/porsche/problems/wont-start' },
   { title: 'Browse all problems', description: 'Warning lights, engine, chassis, Macan and Taycan guides.', path: '/porsche/problems' },
 ];
 
 export const porscheGuideNavigation: PorscheNavigationItem[] = [
+  { title: 'Service intervals in the UAE', description: 'How to use the exact model, year and maintenance information without a universal mileage rule.', path: '/porsche/guides/service-intervals-uae' },
   {
     title: 'Porsche maintenance in Dubai',
     description: 'A broad ownership and maintenance overview for UAE conditions.',

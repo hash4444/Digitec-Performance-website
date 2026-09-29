@@ -1,0 +1,50 @@
+[
+  {
+    "Page type": "Brand hub",
+    "What it should target": "repair + service + maintenance + garage + workshop + specialist + service center",
+    "Examples": "Mercedes repair Dubai; Mercedes service Dubai; Mercedes workshop Dubai",
+    "Rule": "One strong hub per brand",
+    "source_sheet": "Page Strategy",
+    "source_row": 2
+  },
+  {
+    "Page type": "Brand × service page",
+    "What it should target": "High-demand distinct service intent",
+    "Examples": "Mercedes engine repair Dubai; Porsche suspension repair Dubai",
+    "Rule": "Create only when intent is distinct and commercially valuable",
+    "source_sheet": "Page Strategy",
+    "source_row": 3
+  },
+  {
+    "Page type": "Service hub",
+    "What it should target": "Generic service across brands",
+    "Examples": "car electrical repair Dubai; transmission repair Dubai",
+    "Rule": "Link to relevant brand/service sections",
+    "source_sheet": "Page Strategy",
+    "source_row": 4
+  },
+  {
+    "Page type": "Problem/symptom section",
+    "What it should target": "Natural-language symptoms",
+    "Examples": "AC not cooling; car overheating; gearbox not shifting",
+    "Rule": "Usually sections/FAQs unless search demand becomes large",
+    "source_sheet": "Page Strategy",
+    "source_row": 5
+  },
+  {
+    "Page type": "Model/system page",
+    "What it should target": "Specialized systems/models",
+    "Examples": "Cadillac CUE screen; Porsche PDK; Mercedes AIRMATIC",
+    "Rule": "Strong opportunity when system-specific intent exists",
+    "source_sheet": "Page Strategy",
+    "source_row": 6
+  },
+  {
+    "Page type": "Location modifier",
+    "What it should target": "Dubai / Al Quoz / near me",
+    "Examples": "Mercedes repair near me",
+    "Rule": "Do not create doorway pages for every neighborhood",
+    "source_sheet": "Page Strategy",
+    "source_row": 7
+  }
+]

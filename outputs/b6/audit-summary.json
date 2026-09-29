@@ -1,0 +1,2219 @@
+{
+  "total_routes": 1247,
+  "route_policy_changes": [],
+  "seo_policy_changes": [],
+  "lastmod_changes": [],
+  "prior_brand_regression": {
+    "mercedes": {
+      "reviewed": 72,
+      "seo_changes": [],
+      "substantive_changes": []
+    },
+    "porsche": {
+      "reviewed": 101,
+      "seo_changes": [],
+      "substantive_changes": []
+    },
+    "bmw": {
+      "reviewed": 45,
+      "seo_changes": [],
+      "substantive_changes": []
+    },
+    "ferrari": {
+      "reviewed": 44,
+      "seo_changes": [],
+      "substantive_changes": []
+    },
+    "lamborghini": {
+      "reviewed": 36,
+      "seo_changes": [],
+      "substantive_changes": []
+    },
+    "rolls-royce": {
+      "reviewed": 34,
+      "seo_changes": [],
+      "substantive_changes": []
+    },
+    "bentley": {
+      "reviewed": 34,
+      "seo_changes": [],
+      "substantive_changes": []
+    },
+    "maybach": {
+      "reviewed": 34,
+      "seo_changes": [],
+      "substantive_changes": []
+    }
+  },
+  "brands": {
+    "range-rover": {
+      "urls_reviewed": 40,
+      "changed_urls": [
+        "/ar/best-range-rover-workshop-dubai",
+        "/ar/blog/range-rover-maintenance-guide-dubai",
+        "/ar/brands/range-rover-service-dubai",
+        "/best-range-rover-workshop-dubai",
+        "/blog/range-rover-maintenance-guide-dubai",
+        "/brands/range-rover-service-dubai",
+        "/brands/range-rover-service-dubai/ac-repair",
+        "/brands/range-rover-service-dubai/brake-repair",
+        "/brands/range-rover-service-dubai/engine-diagnostics",
+        "/brands/range-rover-service-dubai/oil-change",
+        "/brands/range-rover-service-dubai/suspension-repair",
+        "/brands/range-rover-service-dubai/transmission-repair"
+      ],
+      "links_checked": 676,
+      "broken_links": [],
+      "redirecting_links": [],
+      "missing_fragments": [],
+      "orphan_pages": [],
+      "max_same_language_depth": 4,
+      "faq_pairs": 170,
+      "faq_visibility_issues": [],
+      "schema_issues": [],
+      "hreflang_links_checked": 120,
+      "hreflang_issues": [],
+      "nojs_issues": [],
+      "image_issues": [],
+      "prohibited_claims": [],
+      "schema_types": {
+        "WebPage": 32,
+        "BreadcrumbList": 40,
+        "Service": 32,
+        "FAQPage": 38,
+        "ItemPage": 8,
+        "BlogPosting": 8,
+        "Brand": 30
+      },
+      "pages": [
+        {
+          "url": "/ar/best-range-rover-workshop-dubai",
+          "title": "ورشة خدمة وإصلاح Range Rover في دبي | ديجي-تك",
+          "description": "ورشة مستقلة لخدمة وفحص سيارات Range Rover في القوز، دبي. تأسست ديجي-تك عام 2002؛ تواصل لتأكيد نطاق الخدمة المناسب للسيارة.",
+          "h1": [
+            "ورشة خدمة وإصلاح Range Rover في دبي"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/ar/best-range-rover-workshop-dubai",
+          "changed": true,
+          "incoming_contextual": 9,
+          "outgoing_contextual": 23,
+          "depth": 3,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 3127,
+          "image_count": 3
+        },
+        {
+          "url": "/ar/blog/range-rover-land-rover-air-suspension-problems-dubai",
+          "title": "إصلاح تعليق رينج روفر الهوائي في دبي | ديجي-تك",
+          "description": "دليل أعطال التعليق الهوائي في رينج روفر ولاند روفر: ميلان السيارة، تحذير التعليق، تسريب الوسائد، الكمبروسر وخطوات التشخيص في دبي.",
+          "h1": [
+            "مشاكل التعليق الهوائي في رينج روفر ولاند روفر في دبي"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/ar/blog/range-rover-land-rover-air-suspension-problems-dubai",
+          "changed": false,
+          "incoming_contextual": 7,
+          "outgoing_contextual": 4,
+          "depth": 4,
+          "schema_types": [
+            "ItemPage",
+            "BreadcrumbList",
+            "BlogPosting",
+            "FAQPage"
+          ],
+          "body_length": 3224,
+          "image_count": 1
+        },
+        {
+          "url": "/ar/blog/range-rover-maintenance-guide-dubai",
+          "title": "ورشة Range Rover في دبي | ديجي-تك",
+          "description": "ورشة متخصصة في Range Rover بدبي للفحص والصيانة والإصلاح. احجز لدى ديجي-تك في القوز للحصول على تشخيص واضح وخدمة احترافية.",
+          "h1": [
+            "دليل ورشة Range Rover المتخصصة في دبي"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/ar/blog/range-rover-maintenance-guide-dubai",
+          "changed": true,
+          "incoming_contextual": 2,
+          "outgoing_contextual": 10,
+          "depth": 4,
+          "schema_types": [
+            "ItemPage",
+            "BreadcrumbList",
+            "BlogPosting",
+            "FAQPage"
+          ],
+          "body_length": 2387,
+          "image_count": 0
+        },
+        {
+          "url": "/ar/blog/range-rover-sport-service-dubai-guide",
+          "title": "صيانة رينج روفر سبورت دبي | التعليق والتبريد",
+          "description": "دليل رينج روفر سبورت في دبي: هبوط التعليق ليلاً، تسرب الهواء، فحص البطارية والتبريد وصيانة ناقل الحركة ونظام الدفع.",
+          "h1": [
+            "صيانة رينج روفر سبورت في دبي: ما الذي يستحق الفحص؟"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/ar/blog/range-rover-sport-service-dubai-guide",
+          "changed": false,
+          "incoming_contextual": 4,
+          "outgoing_contextual": 3,
+          "depth": 4,
+          "schema_types": [
+            "ItemPage",
+            "BreadcrumbList",
+            "BlogPosting"
+          ],
+          "body_length": 2273,
+          "image_count": 0
+        },
+        {
+          "url": "/ar/blog/range-rover-vogue-service-dubai-guide",
+          "title": "صيانة رينج روفر فوج دبي | التعليق والبطارية والتبريد",
+          "description": "دليل رينج روفر فوج في دبي: هبوط السيارة بعد الوقوف وتسرب الهواء وتشغيل الضاغط وفحص البطارية ووصلات التبريد والفرامل.",
+          "h1": [
+            "صيانة رينج روفر فوج في دبي: الارتفاع والتبريد والكهرباء"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/ar/blog/range-rover-vogue-service-dubai-guide",
+          "changed": false,
+          "incoming_contextual": 3,
+          "outgoing_contextual": 3,
+          "depth": 4,
+          "schema_types": [
+            "ItemPage",
+            "BreadcrumbList",
+            "BlogPosting"
+          ],
+          "body_length": 2267,
+          "image_count": 0
+        },
+        {
+          "url": "/ar/brands/range-rover-service-dubai",
+          "title": "إصلاح وصيانة Range Rover في دبي | مركز ديجي-تك",
+          "description": "إصلاح وصيانة Range Rover في دبي: تشخيص وصيانة وفرامل وناقل حركة وتعليق وتكييف مع قطع بالمواصفات المناسبة لدى مركز ديجي-تك.",
+          "h1": [
+            "Range Rover للإصلاح والصيانة في دبي"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/ar/brands/range-rover-service-dubai",
+          "changed": true,
+          "incoming_contextual": 52,
+          "outgoing_contextual": 32,
+          "depth": 1,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 6056,
+          "image_count": 18
+        },
+        {
+          "url": "/ar/brands/range-rover-service-dubai/ac-repair",
+          "title": "إصلاح التكييف Range Rover في دبي | ديجي-تك",
+          "description": "إصلاح التكييف Range Rover في دبي. فحص ضعف التبريد وتفاوت الهواء والتسرب، مع التأكد من نوع غاز التبريد المكتوب على السيارة.",
+          "h1": [
+            "إصلاح التكييف Range Rover في دبي"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/ar/brands/range-rover-service-dubai/ac-repair",
+          "changed": false,
+          "incoming_contextual": 14,
+          "outgoing_contextual": 16,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 2787,
+          "image_count": 1
+        },
+        {
+          "url": "/ar/brands/range-rover-service-dubai/battery-replacement",
+          "title": "تبديل البطارية Range Rover في دبي | ديجي-تك",
+          "description": "تبديل البطارية Range Rover في دبي. فحص البطارية منخفضة الجهد ونظام الشحن والتوصيلات قبل تأكيد الحاجة إلى الاستبدال والمواصفة المناسبة.",
+          "h1": [
+            "تبديل البطارية Range Rover في دبي"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/ar/brands/range-rover-service-dubai/battery-replacement",
+          "changed": false,
+          "incoming_contextual": 14,
+          "outgoing_contextual": 16,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 2816,
+          "image_count": 1
+        },
+        {
+          "url": "/ar/brands/range-rover-service-dubai/body-repair",
+          "title": "إصلاح الهيكل Range Rover في دبي | ديجي-تك",
+          "description": "إصلاح الهيكل Range Rover في دبي. تقييم تلف الألواح والطلاء والزينة لتحديد الإصلاح أو الاستبدال، وما قد يتطلب فحصاً إضافياً بعد الفك.",
+          "h1": [
+            "إصلاح الهيكل Range Rover في دبي"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/ar/brands/range-rover-service-dubai/body-repair",
+          "changed": false,
+          "incoming_contextual": 14,
+          "outgoing_contextual": 16,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 2775,
+          "image_count": 1
+        },
+        {
+          "url": "/ar/brands/range-rover-service-dubai/brake-repair",
+          "title": "إصلاح الفرامل Range Rover في دبي | ديجي-تك",
+          "description": "إصلاح الفرامل Range Rover في دبي. فحص الضجيج والاهتزاز وتحذيرات الفرامل، مع تحديد نوع الأقراص والفحمات وحالتها قبل اقتراح العمل.",
+          "h1": [
+            "إصلاح الفرامل Range Rover في دبي"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/ar/brands/range-rover-service-dubai/brake-repair",
+          "changed": false,
+          "incoming_contextual": 15,
+          "outgoing_contextual": 16,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 2768,
+          "image_count": 1
+        },
+        {
+          "url": "/ar/brands/range-rover-service-dubai/electrical-repair",
+          "title": "إصلاح الكهرباء Range Rover في دبي | ديجي-تك",
+          "description": "إصلاح الكهرباء Range Rover في دبي. تتبع أعطال التوصيلات والدوائر والحساسات ووظائف الراحة اعتماداً على الأعراض والاختبارات المناسبة.",
+          "h1": [
+            "إصلاح الكهرباء Range Rover في دبي"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/ar/brands/range-rover-service-dubai/electrical-repair",
+          "changed": false,
+          "incoming_contextual": 14,
+          "outgoing_contextual": 16,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 2829,
+          "image_count": 1
+        },
+        {
+          "url": "/ar/brands/range-rover-service-dubai/engine-diagnostics",
+          "title": "تشخيص المحرك Range Rover في دبي | ديجي-تك",
+          "description": "تشخيص المحرك Range Rover في دبي. ربط رسائل التحذير وبيانات الأعطال بالفحص الفعلي لتحديد سبب المشكلة قبل اقتراح تبديل القطع.",
+          "h1": [
+            "تشخيص المحرك Range Rover في دبي"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/ar/brands/range-rover-service-dubai/engine-diagnostics",
+          "changed": false,
+          "incoming_contextual": 15,
+          "outgoing_contextual": 16,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 2773,
+          "image_count": 1
+        },
+        {
+          "url": "/ar/brands/range-rover-service-dubai/exhaust-repair",
+          "title": "إصلاح العادم Range Rover في دبي | ديجي-تك",
+          "description": "إصلاح العادم Range Rover في دبي. فحص التسرب والاهتزاز والضجيج وتحذيرات العادم قبل اقتراح إصلاح المكون المتأثر.",
+          "h1": [
+            "إصلاح العادم Range Rover في دبي"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/ar/brands/range-rover-service-dubai/exhaust-repair",
+          "changed": false,
+          "incoming_contextual": 14,
+          "outgoing_contextual": 16,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 2727,
+          "image_count": 1
+        },
+        {
+          "url": "/ar/brands/range-rover-service-dubai/fuel-system-repair",
+          "title": "إصلاح نظام الوقود Range Rover في دبي | ديجي-تك",
+          "description": "إصلاح نظام الوقود Range Rover في دبي. تقييم صعوبة التشغيل والتقطيع وأعطال ضغط الوقود والبخاخات باختبارات تحدد السبب قبل الاستبدال.",
+          "h1": [
+            "إصلاح نظام الوقود Range Rover في دبي"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/ar/brands/range-rover-service-dubai/fuel-system-repair",
+          "changed": false,
+          "incoming_contextual": 14,
+          "outgoing_contextual": 16,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 2810,
+          "image_count": 1
+        },
+        {
+          "url": "/ar/brands/range-rover-service-dubai/mechanical-repair",
+          "title": "الإصلاح الميكانيكي Range Rover في دبي | ديجي-تك",
+          "description": "الإصلاح الميكانيكي Range Rover في دبي. تقييم التسرب والضجيج والاهتزاز ومشاكل التبريد أو الحركة لتحديد نطاق الإصلاح من نتائج الفحص.",
+          "h1": [
+            "الإصلاح الميكانيكي Range Rover في دبي"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/ar/brands/range-rover-service-dubai/mechanical-repair",
+          "changed": false,
+          "incoming_contextual": 14,
+          "outgoing_contextual": 16,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 2821,
+          "image_count": 1
+        },
+        {
+          "url": "/ar/brands/range-rover-service-dubai/oil-change",
+          "title": "تغيير الزيت Range Rover في دبي | ديجي-تك",
+          "description": "تغيير الزيت Range Rover في دبي. تحديد مواصفة الزيت والكمية والفلتر والبنود المستحقة من بيانات السيارة وسجل صيانتها.",
+          "h1": [
+            "تغيير الزيت Range Rover في دبي"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/ar/brands/range-rover-service-dubai/oil-change",
+          "changed": false,
+          "incoming_contextual": 14,
+          "outgoing_contextual": 16,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 2766,
+          "image_count": 1
+        },
+        {
+          "url": "/ar/brands/range-rover-service-dubai/steering-repair",
+          "title": "إصلاح نظام التوجيه Range Rover في دبي | ديجي-تك",
+          "description": "إصلاح نظام التوجيه Range Rover في دبي. فحص ثقل المقود والضجيج والانحراف، ومراجعة تأثير الإطارات والتعليق والزوايا في التوجيه.",
+          "h1": [
+            "إصلاح نظام التوجيه Range Rover في دبي"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/ar/brands/range-rover-service-dubai/steering-repair",
+          "changed": false,
+          "incoming_contextual": 14,
+          "outgoing_contextual": 16,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 2785,
+          "image_count": 1
+        },
+        {
+          "url": "/ar/brands/range-rover-service-dubai/suspension-repair",
+          "title": "إصلاح التعليق Range Rover في دبي | ديجي-تك",
+          "description": "إصلاح التعليق Range Rover في دبي. تقييم تغير ارتفاع السيارة والضجيج والراحة والتآكل غير المنتظم للإطارات حسب نظام التعليق المركب.",
+          "h1": [
+            "إصلاح التعليق Range Rover في دبي"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/ar/brands/range-rover-service-dubai/suspension-repair",
+          "changed": false,
+          "incoming_contextual": 15,
+          "outgoing_contextual": 16,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 2797,
+          "image_count": 1
+        },
+        {
+          "url": "/ar/brands/range-rover-service-dubai/tire-repair",
+          "title": "إصلاح الإطارات Range Rover في دبي | ديجي-تك",
+          "description": "إصلاح الإطارات Range Rover في دبي. فحص فقدان الضغط والثقب والاهتزاز وحالة الإطار لتحديد صلاحية الإصلاح أو مواصفة الاستبدال.",
+          "h1": [
+            "إصلاح الإطارات Range Rover في دبي"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/ar/brands/range-rover-service-dubai/tire-repair",
+          "changed": false,
+          "incoming_contextual": 14,
+          "outgoing_contextual": 16,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 2719,
+          "image_count": 1
+        },
+        {
+          "url": "/ar/brands/range-rover-service-dubai/transmission-repair",
+          "title": "إصلاح ناقل الحركة Range Rover في دبي | ديجي-تك",
+          "description": "إصلاح ناقل الحركة Range Rover في دبي. تقييم تأخر التعشيق وتغير النقل والتسرب والتحذيرات حسب ناقل الحركة المركب وسجل الخدمة.",
+          "h1": [
+            "إصلاح ناقل الحركة Range Rover في دبي"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/ar/brands/range-rover-service-dubai/transmission-repair",
+          "changed": false,
+          "incoming_contextual": 14,
+          "outgoing_contextual": 16,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 2781,
+          "image_count": 1
+        },
+        {
+          "url": "/best-range-rover-workshop-dubai",
+          "title": "Choosing a Range Rover Workshop in Dubai | Owner Checklist",
+          "description": "Compare independent Range Rover workshops by vehicle-specific diagnostics, suspension checks, documented findings and approval before repair.",
+          "h1": [
+            "How to Choose a Range Rover Workshop in Dubai"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/best-range-rover-workshop-dubai",
+          "changed": true,
+          "incoming_contextual": 10,
+          "outgoing_contextual": 23,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 4065,
+          "image_count": 3
+        },
+        {
+          "url": "/blog/range-rover-land-rover-air-suspension-problems-dubai",
+          "title": "Range Rover Air Suspension Problems Dubai | Digi-Tec",
+          "description": "Range Rover leaning to one side or showing Suspension Fault? Learn common air suspension faults, warning signs and repair steps in Dubai.",
+          "h1": [
+            "Range Rover & Land Rover Air Suspension Problems in Dubai"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/blog/range-rover-land-rover-air-suspension-problems-dubai",
+          "changed": false,
+          "incoming_contextual": 7,
+          "outgoing_contextual": 4,
+          "depth": 4,
+          "schema_types": [
+            "ItemPage",
+            "BreadcrumbList",
+            "BlogPosting",
+            "FAQPage"
+          ],
+          "body_length": 8607,
+          "image_count": 1
+        },
+        {
+          "url": "/blog/range-rover-maintenance-guide-dubai",
+          "title": "Range Rover Maintenance Dubai | Model-Specific Guide",
+          "description": "Plan Range Rover maintenance in Dubai using the exact model, service history, fitted equipment and inspection findings. No universal oil or suspension rule.",
+          "h1": [
+            "Range Rover Maintenance Guide for Dubai Owners"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/blog/range-rover-maintenance-guide-dubai",
+          "changed": true,
+          "incoming_contextual": 2,
+          "outgoing_contextual": 10,
+          "depth": 4,
+          "schema_types": [
+            "ItemPage",
+            "BreadcrumbList",
+            "BlogPosting",
+            "FAQPage"
+          ],
+          "body_length": 2909,
+          "image_count": 0
+        },
+        {
+          "url": "/blog/range-rover-sport-service-dubai-guide",
+          "title": "Range Rover Sport Service Dubai | JLR Specialist Guide",
+          "description": "A Range Rover Sport service guide for Dubai: air suspension, cooling, electrical modules, drivetrain fluids and the checks that prevent roadside failures.",
+          "h1": [
+            "Range Rover Sport Service in Dubai: What to Watch"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/blog/range-rover-sport-service-dubai-guide",
+          "changed": false,
+          "incoming_contextual": 4,
+          "outgoing_contextual": 3,
+          "depth": 4,
+          "schema_types": [
+            "ItemPage",
+            "BreadcrumbList",
+            "BlogPosting",
+            "FAQPage"
+          ],
+          "body_length": 4040,
+          "image_count": 0
+        },
+        {
+          "url": "/blog/range-rover-vogue-service-dubai-guide",
+          "title": "Range Rover Vogue Service Dubai | Maintenance and Repair Guide",
+          "description": "Range Rover Vogue service in Dubai: air suspension, cooling, electrical modules, brakes, fluid intervals and manufacturer level diagnostics explained.",
+          "h1": [
+            "Range Rover Vogue Service in Dubai: Owner Guide"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/blog/range-rover-vogue-service-dubai-guide",
+          "changed": false,
+          "incoming_contextual": 3,
+          "outgoing_contextual": 3,
+          "depth": 4,
+          "schema_types": [
+            "ItemPage",
+            "BreadcrumbList",
+            "BlogPosting",
+            "FAQPage"
+          ],
+          "body_length": 3254,
+          "image_count": 0
+        },
+        {
+          "url": "/brands/range-rover-service-dubai",
+          "title": "Range Rover Repair Dubai | JLR Specialist Workshop",
+          "description": "Range Rover repair and service in Dubai for Range Rover, Sport, Velar and Evoque. JLR diagnostics, air suspension, cooling and ZF care in Al Quoz.",
+          "h1": [
+            "Range Rover Repair & Service Dubai"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/brands/range-rover-service-dubai",
+          "changed": true,
+          "incoming_contextual": 53,
+          "outgoing_contextual": 35,
+          "depth": 1,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 12360,
+          "image_count": 18
+        },
+        {
+          "url": "/brands/range-rover-service-dubai/ac-repair",
+          "title": "Range Rover AC Repair Dubai | Digi-Tec",
+          "description": "Range Rover ac repair in Dubai with model-specific inspection, confirmed parts options and a clear quote at Digi-Tec, Al Quoz.",
+          "h1": [
+            "Range Rover AC Repair Dubai"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/brands/range-rover-service-dubai/ac-repair",
+          "changed": true,
+          "incoming_contextual": 14,
+          "outgoing_contextual": 16,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 5010,
+          "image_count": 1
+        },
+        {
+          "url": "/brands/range-rover-service-dubai/battery-replacement",
+          "title": "Range Rover Battery Replacement Dubai | Digi-Tec",
+          "description": "Range Rover battery replacement in Dubai with model-specific inspection, confirmed parts options and a clear quote at Digi-Tec, Al Quoz.",
+          "h1": [
+            "Range Rover Battery Replacement Dubai"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/brands/range-rover-service-dubai/battery-replacement",
+          "changed": false,
+          "incoming_contextual": 14,
+          "outgoing_contextual": 16,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 4147,
+          "image_count": 1
+        },
+        {
+          "url": "/brands/range-rover-service-dubai/body-repair",
+          "title": "Range Rover Body Repair Dubai | Digi-Tec",
+          "description": "Range Rover body repair in Dubai with model-specific inspection, confirmed parts options and a clear quote at Digi-Tec, Al Quoz.",
+          "h1": [
+            "Range Rover Body Repair Dubai"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/brands/range-rover-service-dubai/body-repair",
+          "changed": false,
+          "incoming_contextual": 14,
+          "outgoing_contextual": 19,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 4244,
+          "image_count": 1
+        },
+        {
+          "url": "/brands/range-rover-service-dubai/brake-repair",
+          "title": "Range Rover Brake Repair Dubai | Digi-Tec",
+          "description": "Range Rover brake repair in Dubai with model-specific inspection, confirmed parts options and a clear quote at Digi-Tec, Al Quoz.",
+          "h1": [
+            "Range Rover Brake Repair Dubai"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/brands/range-rover-service-dubai/brake-repair",
+          "changed": true,
+          "incoming_contextual": 15,
+          "outgoing_contextual": 16,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 5042,
+          "image_count": 1
+        },
+        {
+          "url": "/brands/range-rover-service-dubai/electrical-repair",
+          "title": "Range Rover Electrical Repair Dubai | Digi-Tec",
+          "description": "Range Rover electrical repair in Dubai with model-specific inspection, confirmed parts options and a clear quote at Digi-Tec, Al Quoz.",
+          "h1": [
+            "Range Rover Electrical Repair Dubai"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/brands/range-rover-service-dubai/electrical-repair",
+          "changed": false,
+          "incoming_contextual": 14,
+          "outgoing_contextual": 16,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 4081,
+          "image_count": 1
+        },
+        {
+          "url": "/brands/range-rover-service-dubai/engine-diagnostics",
+          "title": "Range Rover Engine Diagnostics Dubai | Digi-Tec",
+          "description": "Range Rover engine diagnostics in Dubai with model-specific inspection, confirmed parts options and a clear quote at Digi-Tec, Al Quoz.",
+          "h1": [
+            "Range Rover Engine Diagnostics Dubai"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/brands/range-rover-service-dubai/engine-diagnostics",
+          "changed": true,
+          "incoming_contextual": 15,
+          "outgoing_contextual": 16,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 4912,
+          "image_count": 1
+        },
+        {
+          "url": "/brands/range-rover-service-dubai/exhaust-repair",
+          "title": "Range Rover Exhaust Repair Dubai | Digi-Tec",
+          "description": "Range Rover exhaust repair in Dubai with model-specific inspection, confirmed parts options and a clear quote at Digi-Tec, Al Quoz.",
+          "h1": [
+            "Range Rover Exhaust Repair Dubai"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/brands/range-rover-service-dubai/exhaust-repair",
+          "changed": false,
+          "incoming_contextual": 14,
+          "outgoing_contextual": 16,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 3941,
+          "image_count": 1
+        },
+        {
+          "url": "/brands/range-rover-service-dubai/fuel-system-repair",
+          "title": "Range Rover Fuel System Repair Dubai | Digi-Tec",
+          "description": "Range Rover fuel system repair in Dubai with model-specific inspection, confirmed parts options and a clear quote at Digi-Tec, Al Quoz.",
+          "h1": [
+            "Range Rover Fuel System Repair Dubai"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/brands/range-rover-service-dubai/fuel-system-repair",
+          "changed": false,
+          "incoming_contextual": 14,
+          "outgoing_contextual": 16,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 4000,
+          "image_count": 1
+        },
+        {
+          "url": "/brands/range-rover-service-dubai/mechanical-repair",
+          "title": "Range Rover Mechanical Repair Dubai | Digi-Tec",
+          "description": "Range Rover mechanical repair in Dubai with model-specific inspection, confirmed parts options and a clear quote at Digi-Tec, Al Quoz.",
+          "h1": [
+            "Range Rover Mechanical Repair Dubai"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/brands/range-rover-service-dubai/mechanical-repair",
+          "changed": false,
+          "incoming_contextual": 14,
+          "outgoing_contextual": 16,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 4055,
+          "image_count": 1
+        },
+        {
+          "url": "/brands/range-rover-service-dubai/oil-change",
+          "title": "Range Rover Oil Change Dubai | Digi-Tec",
+          "description": "Range Rover oil change in Dubai with model-specific inspection, confirmed parts options and a clear quote at Digi-Tec, Al Quoz.",
+          "h1": [
+            "Range Rover Oil Change Dubai"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/brands/range-rover-service-dubai/oil-change",
+          "changed": true,
+          "incoming_contextual": 14,
+          "outgoing_contextual": 16,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 4791,
+          "image_count": 1
+        },
+        {
+          "url": "/brands/range-rover-service-dubai/steering-repair",
+          "title": "Range Rover Steering Repair Dubai | Digi-Tec",
+          "description": "Range Rover steering repair in Dubai with model-specific inspection, confirmed parts options and a clear quote at Digi-Tec, Al Quoz.",
+          "h1": [
+            "Range Rover Steering Repair Dubai"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/brands/range-rover-service-dubai/steering-repair",
+          "changed": false,
+          "incoming_contextual": 14,
+          "outgoing_contextual": 16,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 3855,
+          "image_count": 1
+        },
+        {
+          "url": "/brands/range-rover-service-dubai/suspension-repair",
+          "title": "Range Rover Suspension Repair Dubai | Digi-Tec",
+          "description": "Range Rover suspension repair in Dubai with model-specific inspection, confirmed parts options and a clear quote at Digi-Tec, Al Quoz.",
+          "h1": [
+            "Range Rover Suspension Repair Dubai"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/brands/range-rover-service-dubai/suspension-repair",
+          "changed": true,
+          "incoming_contextual": 16,
+          "outgoing_contextual": 17,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 4979,
+          "image_count": 1
+        },
+        {
+          "url": "/brands/range-rover-service-dubai/tire-repair",
+          "title": "Range Rover Tyre Repair Dubai | Digi-Tec",
+          "description": "Range Rover tyre repair in Dubai with model-specific inspection, confirmed parts options and a clear quote at Digi-Tec, Al Quoz.",
+          "h1": [
+            "Range Rover Tyre Repair Dubai"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/brands/range-rover-service-dubai/tire-repair",
+          "changed": false,
+          "incoming_contextual": 14,
+          "outgoing_contextual": 16,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 3826,
+          "image_count": 1
+        },
+        {
+          "url": "/brands/range-rover-service-dubai/transmission-repair",
+          "title": "Range Rover Transmission Repair Dubai | Digi-Tec",
+          "description": "Range Rover transmission repair in Dubai with model-specific inspection, confirmed parts options and a clear quote at Digi-Tec, Al Quoz.",
+          "h1": [
+            "Range Rover Transmission Repair Dubai"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/brands/range-rover-service-dubai/transmission-repair",
+          "changed": true,
+          "incoming_contextual": 15,
+          "outgoing_contextual": 16,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 5265,
+          "image_count": 1
+        }
+      ]
+    },
+    "defender": {
+      "urls_reviewed": 34,
+      "changed_urls": [
+        "/ar/brands/defender-service-dubai",
+        "/brands/defender-service-dubai",
+        "/brands/defender-service-dubai/ac-repair",
+        "/brands/defender-service-dubai/brake-repair",
+        "/brands/defender-service-dubai/engine-diagnostics",
+        "/brands/defender-service-dubai/oil-change",
+        "/brands/defender-service-dubai/suspension-repair",
+        "/brands/defender-service-dubai/transmission-repair"
+      ],
+      "links_checked": 576,
+      "broken_links": [],
+      "redirecting_links": [],
+      "missing_fragments": [],
+      "orphan_pages": [],
+      "max_same_language_depth": 4,
+      "faq_pairs": 147,
+      "faq_visibility_issues": [],
+      "schema_issues": [],
+      "hreflang_links_checked": 102,
+      "hreflang_issues": [],
+      "nojs_issues": [],
+      "image_issues": [],
+      "prohibited_claims": [],
+      "schema_types": {
+        "ItemPage": 4,
+        "BreadcrumbList": 34,
+        "BlogPosting": 4,
+        "WebPage": 30,
+        "Brand": 30,
+        "Service": 30,
+        "FAQPage": 32
+      },
+      "pages": [
+        {
+          "url": "/ar/blog/best-defender-workshop-dubai",
+          "title": "أفضل ورشة ديفندر في دبي | إصلاح حادث حقيقي",
+          "description": "شاهد مراحل إصلاح لاند روفر ديفندر بعد حادث في دبي: الفحص، التفكيك، إصلاح الهيكل والدهان وإعادة التجميع داخل ورشة ديجي-تك.",
+          "h1": [
+            "أفضل ورشة ديفندر في دبي: دراسة حالة إصلاح حادث حقيقي"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/ar/blog/best-defender-workshop-dubai",
+          "changed": false,
+          "incoming_contextual": 7,
+          "outgoing_contextual": 4,
+          "depth": 4,
+          "schema_types": [
+            "ItemPage",
+            "BreadcrumbList",
+            "BlogPosting"
+          ],
+          "body_length": 3477,
+          "image_count": 6
+        },
+        {
+          "url": "/ar/blog/defender-service-dubai-guide",
+          "title": "صيانة ديفندر دبي | فحوص ما بعد القيادة في الرمال",
+          "description": "دليل صيانة ديفندر في دبي: فلتر الهواء ونظافة الرديتر وفحص أسفل السيارة والسوائل والفرامل والتعليق بعد الرحلات الصحراوية.",
+          "h1": [
+            "صيانة لاند روفر ديفندر في دبي: الطريق والرحلات الصحراوية"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/ar/blog/defender-service-dubai-guide",
+          "changed": false,
+          "incoming_contextual": 3,
+          "outgoing_contextual": 3,
+          "depth": 4,
+          "schema_types": [
+            "ItemPage",
+            "BreadcrumbList",
+            "BlogPosting"
+          ],
+          "body_length": 2204,
+          "image_count": 0
+        },
+        {
+          "url": "/ar/brands/defender-service-dubai",
+          "title": "إصلاح وصيانة Defender في دبي | مركز ديجي-تك",
+          "description": "إصلاح وصيانة Defender في دبي: تشخيص وصيانة وفرامل وناقل حركة وتعليق وتكييف مع قطع بالمواصفات المناسبة لدى مركز ديجي-تك.",
+          "h1": [
+            "Defender للإصلاح والصيانة في دبي"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/ar/brands/defender-service-dubai",
+          "changed": true,
+          "incoming_contextual": 51,
+          "outgoing_contextual": 32,
+          "depth": 1,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 5895,
+          "image_count": 18
+        },
+        {
+          "url": "/ar/brands/defender-service-dubai/ac-repair",
+          "title": "إصلاح التكييف Defender في دبي | ديجي-تك",
+          "description": "إصلاح التكييف Defender في دبي. فحص ضعف التبريد وتفاوت الهواء والتسرب، مع التأكد من نوع غاز التبريد المكتوب على السيارة.",
+          "h1": [
+            "إصلاح التكييف Defender في دبي"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/ar/brands/defender-service-dubai/ac-repair",
+          "changed": false,
+          "incoming_contextual": 14,
+          "outgoing_contextual": 16,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 2705,
+          "image_count": 1
+        },
+        {
+          "url": "/ar/brands/defender-service-dubai/battery-replacement",
+          "title": "تبديل البطارية Defender في دبي | ديجي-تك",
+          "description": "تبديل البطارية Defender في دبي. فحص البطارية منخفضة الجهد ونظام الشحن والتوصيلات قبل تأكيد الحاجة إلى الاستبدال والمواصفة المناسبة.",
+          "h1": [
+            "تبديل البطارية Defender في دبي"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/ar/brands/defender-service-dubai/battery-replacement",
+          "changed": false,
+          "incoming_contextual": 14,
+          "outgoing_contextual": 16,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 2734,
+          "image_count": 1
+        },
+        {
+          "url": "/ar/brands/defender-service-dubai/body-repair",
+          "title": "إصلاح الهيكل Defender في دبي | ديجي-تك",
+          "description": "إصلاح الهيكل Defender في دبي. تقييم تلف الألواح والطلاء والزينة لتحديد الإصلاح أو الاستبدال، وما قد يتطلب فحصاً إضافياً بعد الفك.",
+          "h1": [
+            "إصلاح الهيكل Defender في دبي"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/ar/brands/defender-service-dubai/body-repair",
+          "changed": false,
+          "incoming_contextual": 14,
+          "outgoing_contextual": 16,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 2693,
+          "image_count": 1
+        },
+        {
+          "url": "/ar/brands/defender-service-dubai/brake-repair",
+          "title": "إصلاح الفرامل Defender في دبي | ديجي-تك",
+          "description": "إصلاح الفرامل Defender في دبي. فحص الضجيج والاهتزاز وتحذيرات الفرامل، مع تحديد نوع الأقراص والفحمات وحالتها قبل اقتراح العمل.",
+          "h1": [
+            "إصلاح الفرامل Defender في دبي"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/ar/brands/defender-service-dubai/brake-repair",
+          "changed": false,
+          "incoming_contextual": 14,
+          "outgoing_contextual": 16,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 2686,
+          "image_count": 1
+        },
+        {
+          "url": "/ar/brands/defender-service-dubai/electrical-repair",
+          "title": "إصلاح الكهرباء Defender في دبي | ديجي-تك",
+          "description": "إصلاح الكهرباء Defender في دبي. تتبع أعطال التوصيلات والدوائر والحساسات ووظائف الراحة اعتماداً على الأعراض والاختبارات المناسبة.",
+          "h1": [
+            "إصلاح الكهرباء Defender في دبي"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/ar/brands/defender-service-dubai/electrical-repair",
+          "changed": false,
+          "incoming_contextual": 14,
+          "outgoing_contextual": 16,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 2747,
+          "image_count": 1
+        },
+        {
+          "url": "/ar/brands/defender-service-dubai/engine-diagnostics",
+          "title": "تشخيص المحرك Defender في دبي | ديجي-تك",
+          "description": "تشخيص المحرك Defender في دبي. ربط رسائل التحذير وبيانات الأعطال بالفحص الفعلي لتحديد سبب المشكلة قبل اقتراح تبديل القطع.",
+          "h1": [
+            "تشخيص المحرك Defender في دبي"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/ar/brands/defender-service-dubai/engine-diagnostics",
+          "changed": false,
+          "incoming_contextual": 14,
+          "outgoing_contextual": 16,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 2691,
+          "image_count": 1
+        },
+        {
+          "url": "/ar/brands/defender-service-dubai/exhaust-repair",
+          "title": "إصلاح العادم Defender في دبي | ديجي-تك",
+          "description": "إصلاح العادم Defender في دبي. فحص التسرب والاهتزاز والضجيج وتحذيرات العادم قبل اقتراح إصلاح المكون المتأثر.",
+          "h1": [
+            "إصلاح العادم Defender في دبي"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/ar/brands/defender-service-dubai/exhaust-repair",
+          "changed": false,
+          "incoming_contextual": 14,
+          "outgoing_contextual": 16,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 2645,
+          "image_count": 1
+        },
+        {
+          "url": "/ar/brands/defender-service-dubai/fuel-system-repair",
+          "title": "إصلاح نظام الوقود Defender في دبي | ديجي-تك",
+          "description": "إصلاح نظام الوقود Defender في دبي. تقييم صعوبة التشغيل والتقطيع وأعطال ضغط الوقود والبخاخات باختبارات تحدد السبب قبل الاستبدال.",
+          "h1": [
+            "إصلاح نظام الوقود Defender في دبي"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/ar/brands/defender-service-dubai/fuel-system-repair",
+          "changed": false,
+          "incoming_contextual": 14,
+          "outgoing_contextual": 16,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 2728,
+          "image_count": 1
+        },
+        {
+          "url": "/ar/brands/defender-service-dubai/mechanical-repair",
+          "title": "الإصلاح الميكانيكي Defender في دبي | ديجي-تك",
+          "description": "الإصلاح الميكانيكي Defender في دبي. تقييم التسرب والضجيج والاهتزاز ومشاكل التبريد أو الحركة لتحديد نطاق الإصلاح من نتائج الفحص.",
+          "h1": [
+            "الإصلاح الميكانيكي Defender في دبي"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/ar/brands/defender-service-dubai/mechanical-repair",
+          "changed": false,
+          "incoming_contextual": 14,
+          "outgoing_contextual": 16,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 2739,
+          "image_count": 1
+        },
+        {
+          "url": "/ar/brands/defender-service-dubai/oil-change",
+          "title": "تغيير الزيت Defender في دبي | ديجي-تك",
+          "description": "تغيير الزيت Defender في دبي. تحديد مواصفة الزيت والكمية والفلتر والبنود المستحقة من بيانات السيارة وسجل صيانتها.",
+          "h1": [
+            "تغيير الزيت Defender في دبي"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/ar/brands/defender-service-dubai/oil-change",
+          "changed": false,
+          "incoming_contextual": 14,
+          "outgoing_contextual": 16,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 2684,
+          "image_count": 1
+        },
+        {
+          "url": "/ar/brands/defender-service-dubai/steering-repair",
+          "title": "إصلاح نظام التوجيه Defender في دبي | ديجي-تك",
+          "description": "إصلاح نظام التوجيه Defender في دبي. فحص ثقل المقود والضجيج والانحراف، ومراجعة تأثير الإطارات والتعليق والزوايا في التوجيه.",
+          "h1": [
+            "إصلاح نظام التوجيه Defender في دبي"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/ar/brands/defender-service-dubai/steering-repair",
+          "changed": false,
+          "incoming_contextual": 14,
+          "outgoing_contextual": 16,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 2703,
+          "image_count": 1
+        },
+        {
+          "url": "/ar/brands/defender-service-dubai/suspension-repair",
+          "title": "إصلاح التعليق Defender في دبي | ديجي-تك",
+          "description": "إصلاح التعليق Defender في دبي. تقييم تغير ارتفاع السيارة والضجيج والراحة والتآكل غير المنتظم للإطارات حسب نظام التعليق المركب.",
+          "h1": [
+            "إصلاح التعليق Defender في دبي"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/ar/brands/defender-service-dubai/suspension-repair",
+          "changed": false,
+          "incoming_contextual": 14,
+          "outgoing_contextual": 16,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 2715,
+          "image_count": 1
+        },
+        {
+          "url": "/ar/brands/defender-service-dubai/tire-repair",
+          "title": "إصلاح الإطارات Defender في دبي | ديجي-تك",
+          "description": "إصلاح الإطارات Defender في دبي. فحص فقدان الضغط والثقب والاهتزاز وحالة الإطار لتحديد صلاحية الإصلاح أو مواصفة الاستبدال.",
+          "h1": [
+            "إصلاح الإطارات Defender في دبي"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/ar/brands/defender-service-dubai/tire-repair",
+          "changed": false,
+          "incoming_contextual": 14,
+          "outgoing_contextual": 16,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 2637,
+          "image_count": 1
+        },
+        {
+          "url": "/ar/brands/defender-service-dubai/transmission-repair",
+          "title": "إصلاح ناقل الحركة Defender في دبي | ديجي-تك",
+          "description": "إصلاح ناقل الحركة Defender في دبي. تقييم تأخر التعشيق وتغير النقل والتسرب والتحذيرات حسب ناقل الحركة المركب وسجل الخدمة.",
+          "h1": [
+            "إصلاح ناقل الحركة Defender في دبي"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/ar/brands/defender-service-dubai/transmission-repair",
+          "changed": false,
+          "incoming_contextual": 14,
+          "outgoing_contextual": 16,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 2699,
+          "image_count": 1
+        },
+        {
+          "url": "/blog/best-defender-workshop-dubai",
+          "title": "Defender Accident Repair Dubai | Real Workshop Case",
+          "description": "Looking for a Defender workshop in Dubai? See how Digi-Tec approaches accident repair, diagnostics, bodywork and final checks for Land Rover Defender owners.",
+          "h1": [
+            "Defender Accident Repair in Dubai: A Real Workshop Case Study"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/blog/best-defender-workshop-dubai",
+          "changed": false,
+          "incoming_contextual": 7,
+          "outgoing_contextual": 4,
+          "depth": 3,
+          "schema_types": [
+            "ItemPage",
+            "BreadcrumbList",
+            "BlogPosting",
+            "FAQPage"
+          ],
+          "body_length": 8646,
+          "image_count": 6
+        },
+        {
+          "url": "/blog/defender-service-dubai-guide",
+          "title": "Defender Service Dubai | Land Rover Defender Maintenance Guide",
+          "description": "Land Rover Defender service in Dubai: oil intervals, air suspension, cooling, desert use checks, brakes and diagnostics for the new Defender range.",
+          "h1": [
+            "Land Rover Defender Service in Dubai: Owner Guide"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/blog/defender-service-dubai-guide",
+          "changed": false,
+          "incoming_contextual": 3,
+          "outgoing_contextual": 3,
+          "depth": 4,
+          "schema_types": [
+            "ItemPage",
+            "BreadcrumbList",
+            "BlogPosting",
+            "FAQPage"
+          ],
+          "body_length": 3329,
+          "image_count": 0
+        },
+        {
+          "url": "/brands/defender-service-dubai",
+          "title": "Defender Service & Repair Dubai | Digi-Tec Workshop",
+          "description": "Land Rover Defender service and repair in Dubai for Defender 90, 110, 130, V8 and OCTA, including diagnostics, suspension, cooling and driveline care.",
+          "h1": [
+            "Defender Repair & Service Dubai"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/brands/defender-service-dubai",
+          "changed": true,
+          "incoming_contextual": 49,
+          "outgoing_contextual": 32,
+          "depth": 1,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 10872,
+          "image_count": 18
+        },
+        {
+          "url": "/brands/defender-service-dubai/ac-repair",
+          "title": "Defender AC Repair Dubai | Digi-Tec",
+          "description": "Defender ac repair in Dubai with model-specific inspection, confirmed parts options and a clear quote at Digi-Tec, Al Quoz.",
+          "h1": [
+            "Defender AC Repair Dubai"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/brands/defender-service-dubai/ac-repair",
+          "changed": true,
+          "incoming_contextual": 14,
+          "outgoing_contextual": 16,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 4907,
+          "image_count": 1
+        },
+        {
+          "url": "/brands/defender-service-dubai/battery-replacement",
+          "title": "Defender Battery Replacement Dubai | Digi-Tec",
+          "description": "Defender battery replacement in Dubai with model-specific inspection, confirmed parts options and a clear quote at Digi-Tec, Al Quoz.",
+          "h1": [
+            "Defender Battery Replacement Dubai"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/brands/defender-service-dubai/battery-replacement",
+          "changed": false,
+          "incoming_contextual": 14,
+          "outgoing_contextual": 16,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 4050,
+          "image_count": 1
+        },
+        {
+          "url": "/brands/defender-service-dubai/body-repair",
+          "title": "Defender Body Repair Dubai | Digi-Tec",
+          "description": "Defender body repair in Dubai with model-specific inspection, confirmed parts options and a clear quote at Digi-Tec, Al Quoz.",
+          "h1": [
+            "Defender Body Repair Dubai"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/brands/defender-service-dubai/body-repair",
+          "changed": false,
+          "incoming_contextual": 14,
+          "outgoing_contextual": 19,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 4147,
+          "image_count": 1
+        },
+        {
+          "url": "/brands/defender-service-dubai/brake-repair",
+          "title": "Defender Brake Repair Dubai | Digi-Tec",
+          "description": "Defender brake repair in Dubai with model-specific inspection, confirmed parts options and a clear quote at Digi-Tec, Al Quoz.",
+          "h1": [
+            "Defender Brake Repair Dubai"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/brands/defender-service-dubai/brake-repair",
+          "changed": true,
+          "incoming_contextual": 14,
+          "outgoing_contextual": 16,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 4939,
+          "image_count": 1
+        },
+        {
+          "url": "/brands/defender-service-dubai/electrical-repair",
+          "title": "Defender Electrical Repair Dubai | Digi-Tec",
+          "description": "Defender electrical repair in Dubai with model-specific inspection, confirmed parts options and a clear quote at Digi-Tec, Al Quoz.",
+          "h1": [
+            "Defender Electrical Repair Dubai"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/brands/defender-service-dubai/electrical-repair",
+          "changed": false,
+          "incoming_contextual": 14,
+          "outgoing_contextual": 16,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 3984,
+          "image_count": 1
+        },
+        {
+          "url": "/brands/defender-service-dubai/engine-diagnostics",
+          "title": "Defender Engine Diagnostics Dubai | Digi-Tec",
+          "description": "Defender engine diagnostics in Dubai with model-specific inspection, confirmed parts options and a clear quote at Digi-Tec, Al Quoz.",
+          "h1": [
+            "Defender Engine Diagnostics Dubai"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/brands/defender-service-dubai/engine-diagnostics",
+          "changed": true,
+          "incoming_contextual": 14,
+          "outgoing_contextual": 16,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 4791,
+          "image_count": 1
+        },
+        {
+          "url": "/brands/defender-service-dubai/exhaust-repair",
+          "title": "Defender Exhaust Repair Dubai | Digi-Tec",
+          "description": "Defender exhaust repair in Dubai with model-specific inspection, confirmed parts options and a clear quote at Digi-Tec, Al Quoz.",
+          "h1": [
+            "Defender Exhaust Repair Dubai"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/brands/defender-service-dubai/exhaust-repair",
+          "changed": false,
+          "incoming_contextual": 14,
+          "outgoing_contextual": 16,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 3844,
+          "image_count": 1
+        },
+        {
+          "url": "/brands/defender-service-dubai/fuel-system-repair",
+          "title": "Defender Fuel System Repair Dubai | Digi-Tec",
+          "description": "Defender fuel system repair in Dubai with model-specific inspection, confirmed parts options and a clear quote at Digi-Tec, Al Quoz.",
+          "h1": [
+            "Defender Fuel System Repair Dubai"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/brands/defender-service-dubai/fuel-system-repair",
+          "changed": false,
+          "incoming_contextual": 14,
+          "outgoing_contextual": 16,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 3903,
+          "image_count": 1
+        },
+        {
+          "url": "/brands/defender-service-dubai/mechanical-repair",
+          "title": "Defender Mechanical Repair Dubai | Digi-Tec",
+          "description": "Defender mechanical repair in Dubai with model-specific inspection, confirmed parts options and a clear quote at Digi-Tec, Al Quoz.",
+          "h1": [
+            "Defender Mechanical Repair Dubai"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/brands/defender-service-dubai/mechanical-repair",
+          "changed": false,
+          "incoming_contextual": 14,
+          "outgoing_contextual": 16,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 3958,
+          "image_count": 1
+        },
+        {
+          "url": "/brands/defender-service-dubai/oil-change",
+          "title": "Defender Oil Change Dubai | Digi-Tec",
+          "description": "Defender oil change in Dubai with model-specific inspection, confirmed parts options and a clear quote at Digi-Tec, Al Quoz.",
+          "h1": [
+            "Defender Oil Change Dubai"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/brands/defender-service-dubai/oil-change",
+          "changed": true,
+          "incoming_contextual": 14,
+          "outgoing_contextual": 16,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 4572,
+          "image_count": 1
+        },
+        {
+          "url": "/brands/defender-service-dubai/steering-repair",
+          "title": "Defender Steering Repair Dubai | Digi-Tec",
+          "description": "Defender steering repair in Dubai with model-specific inspection, confirmed parts options and a clear quote at Digi-Tec, Al Quoz.",
+          "h1": [
+            "Defender Steering Repair Dubai"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/brands/defender-service-dubai/steering-repair",
+          "changed": false,
+          "incoming_contextual": 14,
+          "outgoing_contextual": 16,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 3758,
+          "image_count": 1
+        },
+        {
+          "url": "/brands/defender-service-dubai/suspension-repair",
+          "title": "Defender Suspension Repair Dubai | Digi-Tec",
+          "description": "Defender suspension repair in Dubai with model-specific inspection, confirmed parts options and a clear quote at Digi-Tec, Al Quoz.",
+          "h1": [
+            "Defender Suspension Repair Dubai"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/brands/defender-service-dubai/suspension-repair",
+          "changed": true,
+          "incoming_contextual": 14,
+          "outgoing_contextual": 16,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 4648,
+          "image_count": 1
+        },
+        {
+          "url": "/brands/defender-service-dubai/tire-repair",
+          "title": "Defender Tyre Repair Dubai | Digi-Tec",
+          "description": "Defender tyre repair in Dubai with model-specific inspection, confirmed parts options and a clear quote at Digi-Tec, Al Quoz.",
+          "h1": [
+            "Defender Tyre Repair Dubai"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/brands/defender-service-dubai/tire-repair",
+          "changed": false,
+          "incoming_contextual": 14,
+          "outgoing_contextual": 16,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 3729,
+          "image_count": 1
+        },
+        {
+          "url": "/brands/defender-service-dubai/transmission-repair",
+          "title": "Defender Transmission Repair Dubai | Digi-Tec",
+          "description": "Defender transmission repair in Dubai with model-specific inspection, confirmed parts options and a clear quote at Digi-Tec, Al Quoz.",
+          "h1": [
+            "Defender Transmission Repair Dubai"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/brands/defender-service-dubai/transmission-repair",
+          "changed": true,
+          "incoming_contextual": 14,
+          "outgoing_contextual": 16,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 5201,
+          "image_count": 1
+        }
+      ]
+    },
+    "jaguar": {
+      "urls_reviewed": 16,
+      "changed_urls": [
+        "/ar/blog/jaguar-best-workshop-dubai",
+        "/ar/brands/jaguar-service-dubai",
+        "/blog/jaguar-best-workshop-dubai",
+        "/brands/jaguar-service-dubai",
+        "/brands/jaguar-service-dubai/ac-repair",
+        "/brands/jaguar-service-dubai/brake-repair",
+        "/brands/jaguar-service-dubai/oil-change",
+        "/brands/jaguar-service-dubai/suspension-repair",
+        "/brands/jaguar-service-dubai/transmission-repair"
+      ],
+      "links_checked": 180,
+      "broken_links": [],
+      "redirecting_links": [],
+      "missing_fragments": [],
+      "orphan_pages": [],
+      "max_same_language_depth": 4,
+      "faq_pairs": 73,
+      "faq_visibility_issues": [],
+      "schema_issues": [],
+      "hreflang_links_checked": 36,
+      "hreflang_issues": [],
+      "nojs_issues": [],
+      "image_issues": [],
+      "prohibited_claims": [],
+      "schema_types": {
+        "ItemPage": 2,
+        "BreadcrumbList": 16,
+        "BlogPosting": 2,
+        "FAQPage": 16,
+        "WebPage": 14,
+        "Brand": 14,
+        "Service": 14
+      },
+      "pages": [
+        {
+          "url": "/ar/blog/jaguar-best-workshop-dubai",
+          "title": "ورشة Jaguar في دبي | ديجي-تك",
+          "description": "ورشة متخصصة في Jaguar بدبي للفحص والصيانة والإصلاح. احجز لدى ديجي-تك في القوز للحصول على تشخيص واضح وخدمة احترافية.",
+          "h1": [
+            "دليل ورشة Jaguar المتخصصة في دبي"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/ar/blog/jaguar-best-workshop-dubai",
+          "changed": true,
+          "incoming_contextual": 2,
+          "outgoing_contextual": 9,
+          "depth": 4,
+          "schema_types": [
+            "ItemPage",
+            "BreadcrumbList",
+            "BlogPosting",
+            "FAQPage"
+          ],
+          "body_length": 2399,
+          "image_count": 0
+        },
+        {
+          "url": "/ar/brands/jaguar-service-dubai",
+          "title": "إصلاح وصيانة Jaguar في دبي | مركز ديجي-تك",
+          "description": "إصلاح وصيانة Jaguar في دبي: تشخيص وصيانة وفرامل وناقل حركة وتعليق وتكييف مع قطع بالمواصفات المناسبة لدى مركز ديجي-تك.",
+          "h1": [
+            "Jaguar للإصلاح والصيانة في دبي"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/ar/brands/jaguar-service-dubai",
+          "changed": true,
+          "incoming_contextual": 29,
+          "outgoing_contextual": 24,
+          "depth": 1,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 5457,
+          "image_count": 17
+        },
+        {
+          "url": "/ar/brands/jaguar-service-dubai/ac-repair",
+          "title": "إصلاح التكييف Jaguar في دبي | ديجي-تك",
+          "description": "إصلاح التكييف Jaguar في دبي. فحص ضعف التبريد وتفاوت الهواء والتسرب، مع التأكد من نوع غاز التبريد المكتوب على السيارة.",
+          "h1": [
+            "إصلاح التكييف Jaguar في دبي"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/ar/brands/jaguar-service-dubai/ac-repair",
+          "changed": false,
+          "incoming_contextual": 6,
+          "outgoing_contextual": 8,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 2443,
+          "image_count": 1
+        },
+        {
+          "url": "/ar/brands/jaguar-service-dubai/brake-repair",
+          "title": "إصلاح الفرامل Jaguar في دبي | ديجي-تك",
+          "description": "إصلاح الفرامل Jaguar في دبي. فحص الضجيج والاهتزاز وتحذيرات الفرامل، مع تحديد نوع الأقراص والفحمات وحالتها قبل اقتراح العمل.",
+          "h1": [
+            "إصلاح الفرامل Jaguar في دبي"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/ar/brands/jaguar-service-dubai/brake-repair",
+          "changed": false,
+          "incoming_contextual": 6,
+          "outgoing_contextual": 8,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 2424,
+          "image_count": 1
+        },
+        {
+          "url": "/ar/brands/jaguar-service-dubai/engine-diagnostics",
+          "title": "تشخيص المحرك Jaguar في دبي | ديجي-تك",
+          "description": "تشخيص المحرك Jaguar في دبي. ربط رسائل التحذير وبيانات الأعطال بالفحص الفعلي لتحديد سبب المشكلة قبل اقتراح تبديل القطع.",
+          "h1": [
+            "تشخيص المحرك Jaguar في دبي"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/ar/brands/jaguar-service-dubai/engine-diagnostics",
+          "changed": false,
+          "incoming_contextual": 7,
+          "outgoing_contextual": 8,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 2429,
+          "image_count": 1
+        },
+        {
+          "url": "/ar/brands/jaguar-service-dubai/oil-change",
+          "title": "تغيير الزيت Jaguar في دبي | ديجي-تك",
+          "description": "تغيير الزيت Jaguar في دبي. تحديد مواصفة الزيت والكمية والفلتر والبنود المستحقة من بيانات السيارة وسجل صيانتها.",
+          "h1": [
+            "تغيير الزيت Jaguar في دبي"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/ar/brands/jaguar-service-dubai/oil-change",
+          "changed": false,
+          "incoming_contextual": 6,
+          "outgoing_contextual": 8,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 2422,
+          "image_count": 1
+        },
+        {
+          "url": "/ar/brands/jaguar-service-dubai/suspension-repair",
+          "title": "إصلاح التعليق Jaguar في دبي | ديجي-تك",
+          "description": "إصلاح التعليق Jaguar في دبي. تقييم تغير ارتفاع السيارة والضجيج والراحة والتآكل غير المنتظم للإطارات حسب نظام التعليق المركب.",
+          "h1": [
+            "إصلاح التعليق Jaguar في دبي"
+          ],
+          "indexable": false,
+          "canonical": "https://digitecme.com/ar/brands/jaguar-service-dubai/suspension-repair",
+          "changed": false,
+          "incoming_contextual": 7,
+          "outgoing_contextual": 8,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 2453,
+          "image_count": 1
+        },
+        {
+          "url": "/ar/brands/jaguar-service-dubai/transmission-repair",
+          "title": "إصلاح ناقل الحركة Jaguar في دبي | ديجي-تك",
+          "description": "إصلاح ناقل الحركة Jaguar في دبي. تقييم تأخر التعشيق وتغير النقل والتسرب والتحذيرات حسب ناقل الحركة المركب وسجل الخدمة.",
+          "h1": [
+            "إصلاح ناقل الحركة Jaguar في دبي"
+          ],
+          "indexable": false,
+          "canonical": "https://digitecme.com/ar/brands/jaguar-service-dubai/transmission-repair",
+          "changed": false,
+          "incoming_contextual": 7,
+          "outgoing_contextual": 8,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 2437,
+          "image_count": 1
+        },
+        {
+          "url": "/blog/jaguar-best-workshop-dubai",
+          "title": "Choosing a Jaguar Workshop Dubai | Owner Checklist",
+          "description": "Compare Jaguar workshops in Dubai by diagnostic process, fitted systems, repair estimate and verified I-PACE service scope.",
+          "h1": [
+            "Choosing a Jaguar Workshop in Dubai: Owner Guide"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/blog/jaguar-best-workshop-dubai",
+          "changed": true,
+          "incoming_contextual": 2,
+          "outgoing_contextual": 9,
+          "depth": 4,
+          "schema_types": [
+            "ItemPage",
+            "BreadcrumbList",
+            "BlogPosting",
+            "FAQPage"
+          ],
+          "body_length": 3016,
+          "image_count": 0
+        },
+        {
+          "url": "/brands/jaguar-service-dubai",
+          "title": "Jaguar Repair Dubai | Digi-Tec",
+          "description": "Specialist Jaguar repair and service in Dubai: diagnostics, maintenance, brakes, transmission, suspension and AC at Digi-Tec, Al Quoz.",
+          "h1": [
+            "Jaguar Repair & Service Dubai"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/brands/jaguar-service-dubai",
+          "changed": true,
+          "incoming_contextual": 27,
+          "outgoing_contextual": 24,
+          "depth": 1,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 7926,
+          "image_count": 17
+        },
+        {
+          "url": "/brands/jaguar-service-dubai/ac-repair",
+          "title": "Jaguar AC Repair Dubai | Digi-Tec",
+          "description": "Jaguar ac repair in Dubai with model-specific inspection, confirmed parts options and a clear quote at Digi-Tec, Al Quoz.",
+          "h1": [
+            "Jaguar AC Repair Dubai"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/brands/jaguar-service-dubai/ac-repair",
+          "changed": true,
+          "incoming_contextual": 6,
+          "outgoing_contextual": 8,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 4634,
+          "image_count": 1
+        },
+        {
+          "url": "/brands/jaguar-service-dubai/brake-repair",
+          "title": "Jaguar Brake Repair Dubai | Digi-Tec",
+          "description": "Jaguar brake repair in Dubai with model-specific inspection, confirmed parts options and a clear quote at Digi-Tec, Al Quoz.",
+          "h1": [
+            "Jaguar Brake Repair Dubai"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/brands/jaguar-service-dubai/brake-repair",
+          "changed": true,
+          "incoming_contextual": 6,
+          "outgoing_contextual": 8,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 4650,
+          "image_count": 1
+        },
+        {
+          "url": "/brands/jaguar-service-dubai/engine-diagnostics",
+          "title": "Jaguar Engine Diagnostics Dubai | Digi-Tec",
+          "description": "Jaguar engine diagnostics in Dubai with model-specific inspection, confirmed parts options and a clear quote at Digi-Tec, Al Quoz.",
+          "h1": [
+            "Jaguar Engine Diagnostics Dubai"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/brands/jaguar-service-dubai/engine-diagnostics",
+          "changed": false,
+          "incoming_contextual": 7,
+          "outgoing_contextual": 8,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 4482,
+          "image_count": 1
+        },
+        {
+          "url": "/brands/jaguar-service-dubai/oil-change",
+          "title": "Jaguar Oil Change Dubai | Digi-Tec",
+          "description": "Jaguar oil change in Dubai with model-specific inspection, confirmed parts options and a clear quote at Digi-Tec, Al Quoz.",
+          "h1": [
+            "Jaguar Oil Change Dubai"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/brands/jaguar-service-dubai/oil-change",
+          "changed": true,
+          "incoming_contextual": 6,
+          "outgoing_contextual": 8,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 4396,
+          "image_count": 1
+        },
+        {
+          "url": "/brands/jaguar-service-dubai/suspension-repair",
+          "title": "Jaguar Suspension Repair Dubai | Digi-Tec",
+          "description": "Jaguar suspension repair in Dubai with model-specific inspection, confirmed parts options and a clear quote at Digi-Tec, Al Quoz.",
+          "h1": [
+            "Jaguar Suspension Repair Dubai"
+          ],
+          "indexable": false,
+          "canonical": "https://digitecme.com/brands/jaguar-service-dubai/suspension-repair",
+          "changed": true,
+          "incoming_contextual": 7,
+          "outgoing_contextual": 8,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 4397,
+          "image_count": 1
+        },
+        {
+          "url": "/brands/jaguar-service-dubai/transmission-repair",
+          "title": "Jaguar Transmission Repair Dubai | Digi-Tec",
+          "description": "Jaguar transmission repair in Dubai with model-specific inspection, confirmed parts options and a clear quote at Digi-Tec, Al Quoz.",
+          "h1": [
+            "Jaguar Transmission Repair Dubai"
+          ],
+          "indexable": false,
+          "canonical": "https://digitecme.com/brands/jaguar-service-dubai/transmission-repair",
+          "changed": true,
+          "incoming_contextual": 7,
+          "outgoing_contextual": 8,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 4993,
+          "image_count": 1
+        }
+      ]
+    }
+  }
+}

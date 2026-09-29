@@ -1,0 +1,28 @@
+{
+  "jetour": {
+    "coverage": 380,
+    "ownership": 37,
+    "changed": 30,
+    "classes": {
+      "COVERED \u2014 PRIMARY": 232,
+      "COVERED \u2014 PROBLEM": 16,
+      "COVERED \u2014 SECONDARY": 121,
+      "NOT TARGETED \u2014 INTENTIONALLY": 10,
+      "COVERED \u2014 MODEL": 1
+    },
+    "latest_original_gsc_rows": 0
+  },
+  "rox": {
+    "coverage": 397,
+    "ownership": 40,
+    "changed": 12,
+    "classes": {
+      "COVERED \u2014 SECONDARY": 131,
+      "COVERED \u2014 MODEL": 4,
+      "COVERED \u2014 PRIMARY": 236,
+      "COVERED \u2014 PROBLEM": 16,
+      "NOT TARGETED \u2014 INTENTIONALLY": 10
+    },
+    "latest_original_gsc_rows": 2
+  }
+}

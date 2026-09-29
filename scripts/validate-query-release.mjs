@@ -10,8 +10,8 @@ const routes = getPublicRoutes();
 const routePaths = new Set(routes.map(route => route.path));
 const expected = new Map([
   ['/brands/bmw-service-dubai', 'BMW Service &amp; Repair Dubai | DIGI-TEC'],
-  ['/brands/bmw-service-dubai/engine-diagnostics', 'BMW Diagnostics &amp; Coding Dubai | DIGI-TEC'],
-  ['/brands/porsche-service-dubai/engine-diagnostics', 'Porsche Diagnostics Dubai | DIGI-TEC Al Quoz'],
+  ['/brands/bmw-service-dubai/engine-diagnostics', 'BMW ISTA+ Diagnostics &amp; Coding Dubai | DIGI-TEC'],
+  ['/brands/porsche-service-dubai/engine-diagnostics', 'Porsche PIWIS 3 Diagnostics Dubai | DIGI-TEC'],
   ['/services/oil-change-dubai', 'Car Oil Change Dubai | Engine Oil &amp; Filter Service | DIGI-TEC'],
   ['/services/exhaust-repair-dubai', 'Exhaust &amp; Muffler Repair Dubai | DIGI-TEC'],
   ['/services/steering-repair-dubai', 'Power Steering &amp; Rack Repair Dubai | DIGI-TEC'],
@@ -35,7 +35,7 @@ const ferrariGuide = await htmlFor('/blog/ferrari-maintenance-guide-dubai');
 assert.match(ferrariGuide, /Ferrari Maintenance Dubai: Schedule, Cost/);
 assert.match(ferrariGuide, /Ferrari maintenance in Dubai: the short answer/);
 assert.match(ferrariGuide, /href="\/brands\/ferrari-service-dubai\/oil-change"/);
-assert.match(ferrariGuide, /"dateModified":"2026-09-14"/);
+assert.match(ferrariGuide, /"dateModified":"2026-09-28"/);
 const porscheGuide = await htmlFor('/blog/porsche-maintenance-guide-dubai');
 assert.match(porscheGuide, /Porsche Maintenance in Dubai: Intervals/);
 assert.match(porscheGuide, /Porsche workshop services in Dubai/);

@@ -1,0 +1,37 @@
+{
+  "range-rover": {
+    "coverage": 397,
+    "ownership": 40,
+    "changed": 12,
+    "classes": {
+      "COVERED \u2014 GUIDE": 1,
+      "COVERED \u2014 PRIMARY": 365,
+      "COVERED \u2014 PROBLEM": 3,
+      "COVERED \u2014 SECONDARY": 20,
+      "NOT TARGETED \u2014 INTENTIONALLY": 6,
+      "COVERED \u2014 MODEL": 2
+    }
+  },
+  "defender": {
+    "coverage": 390,
+    "ownership": 34,
+    "changed": 8,
+    "classes": {
+      "COVERED \u2014 PRIMARY": 360,
+      "COVERED \u2014 GUIDE": 5,
+      "COVERED \u2014 SECONDARY": 20,
+      "NOT TARGETED \u2014 INTENTIONALLY": 5
+    }
+  },
+  "jaguar": {
+    "coverage": 390,
+    "ownership": 16,
+    "changed": 9,
+    "classes": {
+      "COVERED \u2014 PRIMARY": 291,
+      "COVERED \u2014 SECONDARY": 94,
+      "NOT TARGETED \u2014 INTENTIONALLY": 4,
+      "COVERED \u2014 SECTION": 1
+    }
+  }
+}

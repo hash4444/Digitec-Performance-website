@@ -7,6 +7,7 @@ import BentleyCameraSection from '@/components/BentleyCameraSection';
 import { Footer } from '@/components/Footer';
 import { FinalCTA } from '@/components/FinalCTA';
 import { serviceEnquiryLabel } from '@/data/queryServiceContent';
+import { arabicServiceContent } from '@/data/arabicServiceContent';
 import { useSeo } from '@/hooks/use-seo';
 import {
   Accordion,
@@ -32,6 +33,8 @@ import {
 } from '@/lib/schema';
 import { useLocale } from '@/i18n/use-locale';
 import { MERCEDES_PROBLEMS_PATH } from '@/data/mercedesProblemGuides';
+import { MERCEDES_ADDITIONAL_SERVICE_SCOPE, type MercedesScopeItem } from '@/data/mercedesServiceScope';
+import { MERCEDES_ARABIC_SERVICE_CONTENT, MERCEDES_ARABIC_RELATED_CONTENT } from '@/data/mercedesArabicServiceContent';
 import mercedesEngineWorkshop from '@/assets/mercedes-amg-engine-repair-dubai.jpg';
 import suspensionRepairImage from '@/assets/suspension-repair-dubai.jpg';
 import {
@@ -45,21 +48,27 @@ const PORSCHE_RELATED_CONTENT: Record<string, { label: string; path: string }[]>
     { label: 'Porsche service and repair', path: '/brands/porsche-service-dubai' },
   ],
   'oil-change': [
+    { label: 'Porsche oil-change interval guidance', path: '/porsche/guides/oil-change-intervals' },
     { label: 'Porsche 911 maintenance planning', path: '/blog/porsche-911-service-dubai-guide' },
     { label: 'Porsche Cayenne maintenance planning', path: '/blog/porsche-cayenne-service-dubai-guide' },
     { label: 'Porsche maintenance in Dubai', path: '/blog/porsche-maintenance-guide-dubai' },
   ],
   'transmission-repair': [
+    { label: 'How Porsche PDK works', path: '/porsche/systems/pdk' },
+    { label: 'PDK jerking: what to record before diagnosis', path: '/porsche/problems/pdk-jerking' },
     { label: '911 manual and PDK systems', path: '/blog/porsche-911-service-dubai-guide' },
     { label: 'Macan PDK, PTM and driveline', path: '/porsche/macan' },
     { label: 'Panamera PDK considerations', path: '/blog/porsche-panamera-service-dubai-guide' },
   ],
   'suspension-repair': [
+    { label: 'How PASM works', path: '/porsche/systems/pasm' },
+    { label: 'PASM fault warning: first checks', path: '/porsche/problems/pasm-fault' },
     { label: 'Cayenne air suspension and chassis', path: '/blog/porsche-cayenne-service-dubai-guide' },
     { label: 'Panamera PASM and air suspension', path: '/blog/porsche-panamera-service-dubai-guide' },
     { label: 'Taycan chassis systems', path: '/porsche/taycan' },
   ],
   'engine-diagnostics': [
+    { label: 'Porsche check-engine light guidance', path: '/porsche/problems/check-engine-light' },
     { label: 'Porsche 997 diagnostic considerations', path: '/porsche/911/997' },
     { label: 'Porsche 991 diagnostic considerations', path: '/porsche/911/991' },
     { label: 'Porsche 992 diagnostic considerations', path: '/porsche/911/992' },
@@ -70,16 +79,20 @@ const PORSCHE_RELATED_CONTENT: Record<string, { label: string; path: string }[]>
     { label: '718 powertrain and cooling', path: '/porsche/718' },
   ],
   'brake-repair': [
+    { label: 'Porsche PCCB explained', path: '/porsche/systems/pccb' },
+    { label: 'What a Porsche brake warning may mean', path: '/porsche/problems/brake-warning-light' },
     { label: '911 steel and PCCB systems', path: '/blog/porsche-911-service-dubai-guide' },
     { label: 'Cayenne braking considerations', path: '/blog/porsche-cayenne-service-dubai-guide' },
     { label: 'Taycan regenerative and friction brakes', path: '/porsche/taycan' },
   ],
   'electrical-repair': [
+    { label: 'Porsche battery warning guide', path: '/porsche/problems/battery-warning' },
     { label: 'Taycan low-voltage and charging overview', path: '/porsche/taycan' },
     { label: 'Panamera electrical considerations', path: '/blog/porsche-panamera-service-dubai-guide' },
     { label: 'Macan electrical and diagnostic scope', path: '/porsche/macan' },
   ],
   'battery-replacement': [
+    { label: 'Porsche battery warning and charging checks', path: '/porsche/problems/battery-warning' },
     { label: 'Taycan 12-volt system overview', path: '/porsche/taycan' },
     { label: 'Porsche maintenance in Dubai', path: '/blog/porsche-maintenance-guide-dubai' },
     { label: 'Porsche 992 electrical considerations', path: '/porsche/911/992' },
@@ -98,14 +111,33 @@ const MERCEDES_RELATED_CONTENT: Record<string, { label: string; path: string }[]
     { label: 'ASSYST and Mercedes service intervals', path: '/blog/mercedes-service-intervals-dubai-heat' },
     { label: 'How oil approvals are selected', path: '/blog/oil-specification-guide-dubai-luxury' },
   ],
-  'brake-repair': [{ label: 'Brake inspection and repair guide', path: '/blog/brake-repair-dubai' }],
+  'brake-repair': [
+    { label: 'Brake inspection and repair guide', path: '/blog/brake-repair-dubai' },
+    { label: 'C63 AMG brake-package considerations', path: '/mercedes/models/c63-service-repair-dubai' },
+    { label: 'Steering vibration beyond the brakes', path: '/services/mercedes-steering-repair-dubai#steering-vibration' },
+  ],
   'body-repair': [
     { label: 'Body repair and paintwork scope', path: '/services/car-body-repair-dubai' },
     { label: 'Paint protection film options', path: '/services/paint-protection-film' },
     { label: 'Documented G63 conversion project', path: '/blog/g63-to-brabus-g800-conversion-dubai' },
   ],
-  'steering-repair': [{ label: 'Mercedes suspension assessment', path: '/services/mercedes-suspension-repair-dubai' }],
-  'exhaust-repair': [{ label: 'Performance hardware and tuning assessment', path: '/tuning' }],
+  'steering-repair': [
+    { label: 'Mercedes suspension assessment', path: '/services/mercedes-suspension-repair-dubai' },
+    { label: 'Tyre damage and pressure checks', path: '/services/mercedes-tire-repair-dubai' },
+  ],
+  'exhaust-repair': [
+    { label: 'Check-engine and emissions warnings', path: `${MERCEDES_PROBLEMS_PATH}/check-engine-light` },
+    { label: 'Engine checks for white or blue exhaust smoke', path: '/services/mercedes-mechanical-repair-dubai#exhaust-smoke' },
+    { label: 'Performance hardware and tuning assessment', path: '/tuning' },
+  ],
+  'fuel-system-repair': [
+    { label: 'Cranking without starting: the diagnostic sequence', path: `${MERCEDES_PROBLEMS_PATH}/wont-start` },
+    { label: 'Rough idle, misfire and engine shaking', path: '/services/mercedes-mechanical-repair-dubai#rough-idle' },
+  ],
+  'tire-repair': [
+    { label: 'Steering vibration and pulling checks', path: '/services/mercedes-steering-repair-dubai#steering-vibration' },
+    { label: 'Suspension inspection after an impact', path: '/services/mercedes-suspension-repair-dubai' },
+  ],
   'transmission-repair': [
     { label: '7G and 9G transmission service guide', path: '/blog/transmission-service-7g-9g-dubai' },
     { label: 'Why a Mercedes gearbox jerks', path: `${MERCEDES_PROBLEMS_PATH}/gearbox-jerking` },
@@ -222,13 +254,8 @@ const MERCEDES_SERVICE_PATHS: Record<string, string> = {
   'tire-repair': '/services/mercedes-tire-repair-dubai',
 };
 
-type MercedesScopeItem = {
-  title: string;
-  description: string;
-  path?: string;
-};
-
-const MERCEDES_SERVICE_SCOPE: Record<string, { heading: string; intro: string; items: MercedesScopeItem[] }> = {
+const MERCEDES_SERVICE_SCOPE: Partial<Record<string, { heading: string; intro: string; items: MercedesScopeItem[] }>> = {
+  ...MERCEDES_ADDITIONAL_SERVICE_SCOPE,
   'engine-diagnostics': {
     heading: 'Mercedes systems we diagnose',
     intro: 'Start with the exact warning or behaviour. Compatible scan data is combined with the physical, electrical or mechanical test the affected system requires.',
@@ -437,6 +464,14 @@ const lamborghiniServiceOverride = (combo: NonNullable<ReturnType<typeof getBran
     whatsAppMessage: `Hi DIGI-TEC, I would like to request a Lamborghini ${combo.serviceName.toLowerCase()} assessment.\n\nModel: \nYear: \nMileage: \nWarning or symptoms: `,
     partsCopy: 'Parts, fluids, procedures and supported service functions are confirmed after the exact Lamborghini and fitted system are identified. The estimate lists the proposed scope before approval; no one specification is applied to every model.',
   };
+  if (combo.serviceSlug === 'electrical-repair') return { ...combo, ...shared,
+    h1: 'Lamborghini Electrical & Camera Fault Assessment Dubai',
+    metaTitle: 'Lamborghini Electrical Repair Dubai | DIGI-TEC',
+    metaDescription: 'Lamborghini electrical, screen and reversing-camera fault assessment in Al Quoz, Dubai. Fitted equipment and supported repair scope are checked per vehicle.',
+    heroCopy: 'A blank reversing-camera image, intermittent display or electrical warning does not identify a failed camera by itself. DIGI-TEC first confirms the Lamborghini model and fitted equipment, then checks the reported conditions, power, connections and compatible fault information before proposing a supported repair. Camera installation or retrofit is a separate request whose compatibility and workshop scope must be confirmed.',
+    symptoms: ['Reversing-camera image is blank, intermittent or distorted where fitted', 'Display or infotainment system does not respond as expected', 'Electrical warning or accessory function changes after battery work', 'Intermittent power, connector or wiring concern'],
+    processSteps: [{ title: 'Confirm the fitted equipment', description: 'Identify the model, year, original or retrofitted camera and exact symptom.' }, { title: 'Trace the signal and power path', description: 'Inspect suitable connections, supply, display behaviour and compatible fault data before blaming a component.' }, { title: 'Agree the repair scope', description: 'Confirm parts, access and any supported configuration function for the exact vehicle.' }, { title: 'Verify the result', description: 'Recheck the affected function under the conditions that triggered the concern.' }],
+    faqs: [{ question: 'Can you assess a Lamborghini reversing-camera fault?', answer: 'Yes, the symptom can be assessed where the equipment is fitted. The camera, display, wiring, power and any supported module information are considered before repair is proposed.' }, { question: 'Do you install a reversing camera in every Lamborghini?', answer: 'No universal retrofit is advertised. Compatibility, parts, integration and workshop scope must be confirmed for the exact model and existing equipment before accepting an installation request.' }, { question: 'Does a blank screen prove the camera has failed?', answer: 'No. Display, power, connector, wiring or communication issues can produce a similar symptom. Testing is needed to isolate the cause.' }, { question: 'Will a fault scan always locate the failed part?', answer: 'No. Available fault information guides the investigation; physical and electrical checks may still be required.' }] };
   if (combo.serviceSlug === 'transmission-repair') return { ...combo, ...shared,
     h1:'Lamborghini Transmission & Gearbox Assessment Dubai', metaTitle:'Lamborghini Transmission Repair Dubai | DIGI-TEC', metaDescription:'Lamborghini gearbox and transmission assessment in Al Quoz, Dubai. LDF, ISR and automatic systems are identified before service or repair is proposed.',
     heroCopy:'Lamborghini transmission architecture varies by model. Huracán EVO uses a seven-speed LDF dual-clutch transmission, Urus S an eight-speed automatic, and Aventador SVJ an ISR gearbox. DIGI-TEC identifies the fitted unit and assesses the warning, leak, shift or clutch concern before confirming fluid, service functions, parts or available repair scope.',
@@ -479,8 +514,8 @@ const lamborghiniServiceOverride = (combo: NonNullable<ReturnType<typeof getBran
     symptoms:['Brake warning or wear message','Vibration, noise or change in pedal feel','Pad, disc or fluid service concern','Carbon-ceramic condition or measurement enquiry'],
     processSteps:[{title:'Confirm the fitted brakes',description:'Identify model, option and complaint.'},{title:'Inspect and measure',description:'Check applicable friction, hydraulic and electronic components.'},{title:'Define parts and procedure',description:'Confirm availability and supported work for steel or carbon-ceramic equipment.'},{title:'Estimate before repair',description:'Explain findings and approved scope before work starts.'}],
     faqs:[{question:'Do all Lamborghinis have the same brakes?',answer:'No. The exact steel or carbon-ceramic system and options must be identified.'},{question:'Do you resurface carbon-ceramic discs?',answer:'Carbon-ceramic resurfacing is not advertised. Inspection and available replacement scope are confirmed first.'},{question:'Can vibration prove a warped disc?',answer:'No. Disc, pad, hub, tyre, suspension and installation factors may need inspection.'},{question:'What affects brake-service cost?',answer:'The fitted system, measurements, parts, fluid, labour and findings determine the estimate.'}] };
-  if (combo.serviceSlug === 'ac-repair' || combo.serviceSlug === 'electrical-repair') return { ...combo, ...shared,
-    heroCopy:`DIGI-TEC assesses Lamborghini ${combo.serviceSlug === 'ac-repair' ? 'weak cooling, leaks, airflow and compressor concerns' : 'voltage, charging, wiring, sensor and module-communication concerns'}. The exact vehicle, fitted system and test findings determine the supported repair scope. Refrigerant, programming and special functions are never assumed from the badge alone.` };
+  if (combo.serviceSlug === 'ac-repair') return { ...combo, ...shared,
+    heroCopy:'DIGI-TEC assesses Lamborghini weak cooling, leaks, airflow and compressor concerns. The exact vehicle, fitted system and test findings determine the supported repair scope. Refrigerant, programming and special functions are never assumed from the badge alone.' };
   return { ...combo, ...shared };
 };
 
@@ -496,32 +531,53 @@ const BrandServicePage: React.FC<BrandServicePageProps> = ({
   const sourceCombo = brandSlug && serviceSlug ? getBrandServiceCombo(brandSlug, serviceSlug, { mercedesEnglishContent: !isArabic }) : undefined;
   const localizedCombo = sourceCombo && isArabic ? (() => {
     const serviceName = serviceNamesArabic[sourceCombo.serviceSlug] ?? 'خدمة السيارات';
+    const serviceCopy = arabicServiceContent[sourceCombo.serviceSlug];
     const standardFaqs = [
-      { question: `متى تحتاج سيارة ${sourceCombo.brandName} إلى ${serviceName}؟`, answer: 'عند ظهور تحذير أو صوت أو تغير في الأداء، أو وفق موعد الصيانة الموصى به للطراز والاستخدام.' },
-      { question: 'هل يتم الفحص قبل الإصلاح؟', answer: 'نعم. نبدأ بالتشخيص ثم نوضح النتيجة وخيارات الإصلاح والتكلفة قبل بدء العمل.' },
-      { question: 'هل تستخدمون قطعاً أصلية؟', answer: 'نوفر قطع OEM أصلية أو بدائل موثوقة مطابقة للمواصفات، ونوضح الخيارات قبل التركيب.' },
-      { question: 'كيف أحجز موعداً؟', answer: 'اتصل بنا أو أرسل رسالة واتساب مع تفاصيل السيارة والخدمة المطلوبة.' },
+      { question: serviceCopy.question, answer: serviceCopy.answer },
+      { question: `ما الذي يحدد تكلفة ${serviceName} لسيارة ${sourceCombo.brandName}؟`, answer: 'تعتمد التكلفة على الطراز والسنة والنظام المركب ووقت الفحص والنتائج والقطع المطلوبة. اطلب توضيح نطاق الاختبارات والقطع والعمالة قبل الموافقة على العمل.' },
+      ...(sourceCombo.brandSlug === 'porsche-service-dubai' ? [] : [
+        { question: 'كيف يتم اختيار القطع؟', answer: 'يتم تأكيد المواصفة والتوافق والمصدر والتوفر للسيارة والعمل المطلوب. اطلب بيان خيارات القطع وشروطها في عرض السعر؛ لا يفترض مصدر محدد قبل التأكيد.' },
+        { question: 'ما المعلومات المطلوبة لحجز الفحص؟', answer: 'أرسل الطراز والسنة والمسافة وسجل الصيانة ونص التحذير أو وصف المشكلة ووقت ظهورها. يتم تأكيد نطاق الخدمة ووظائف التشخيص المتاحة والموعد بناءً على السيارة.' },
+      ]),
     ];
     const steps = [
       { title: 'الفحص الأولي', description: 'مراجعة الأعراض وسجل السيارة وإجراء فحص بصري ومنظم.' },
-      { title: 'التشخيص المتقدم', description: 'قراءة الأعطال والبيانات الحية واختبار المكونات المرتبطة.' },
-      { title: 'الإصلاح والمعايرة', description: 'تنفيذ العمل المتفق عليه باستخدام قطع وإجراءات مناسبة للسيارة.' },
-      { title: 'الفحص النهائي', description: 'اختبار النظام والسيارة وتوثيق النتيجة والتوصيات.' },
+      { title: 'الاختبارات المناسبة', description: 'تحديد الاختبارات المطلوبة والبيانات المتاحة حسب النظام المركب ونطاق التشخيص المؤكد.' },
+      { title: 'مراجعة عرض الإصلاح', description: 'تأكيد القطع والإجراءات والعمالة وأي برمجة أو معايرة مطلوبة ومتاحة قبل الموافقة.' },
+      { title: 'مراجعة النتيجة', description: 'مناقشة اختبارات التحقق المناسبة للعمل والنتائج والتوصيات عند التسليم.' },
     ];
-    const symptoms = ['ظهور رسالة أو ضوء تحذير', 'تغير ملحوظ في أداء السيارة', 'صوت أو اهتزاز غير معتاد', 'تأخر موعد الصيانة أو تكرار المشكلة'];
     return {
       ...sourceCombo,
       serviceName,
       serviceType: serviceName,
       h1: `${serviceName} ${sourceCombo.brandName} في دبي`,
       metaTitle: `${serviceName} ${sourceCombo.brandName} في دبي | ديجي-تك`,
-      metaDescription: `${serviceName} متخصص لسيارات ${sourceCombo.brandName} في دبي مع تشخيص متقدم وقطع مناسبة وتسعير واضح لدى مركز ديجي-تك.`,
-      heroCopy: `يقدم مركز ديجي-تك خدمة ${serviceName} المتخصصة لسيارات ${sourceCombo.brandName} في دبي، بدءاً من التشخيص الدقيق وحتى الإصلاح والمعايرة والاختبار النهائي.`,
-      symptoms: sourceCombo.symptoms.map((_, index) => symptoms[index % symptoms.length]),
-      processSteps: sourceCombo.processSteps.map((_, index) => steps[index % steps.length]),
-      partsCopy: `نستخدم قطع OEM أصلية أو بدائل موثوقة مطابقة لمواصفات ${sourceCombo.brandName}، مع توثيق القطع والأعمال بوضوح.`,
-      faqs: sourceCombo.faqs.map((_, index) => standardFaqs[index % standardFaqs.length]),
+      metaDescription: `${serviceName} ${sourceCombo.brandName} في دبي. ${serviceCopy.summary}`,
+      heroCopy: `${serviceName} لسيارات ${sourceCombo.brandName} لدى ديجي-تك في القوز، دبي. ${serviceCopy.summary} يتم تأكيد قبول السيارة والاختبارات والقطع المطلوبة قبل اعتماد العمل.`,
+      symptoms: serviceCopy.symptoms,
+      processSteps: steps,
+      partsCopy: `تحدد بيانات سيارة ${sourceCombo.brandName} والنظام المركب والنتائج القطع المناسبة. يتم تأكيد التوافق والمصدر والتوفر وأي وظائف برمجة أو معايرة مطلوبة قبل طلب المكونات.`,
+      faqs: standardFaqs,
       whatsAppMessage: `مرحباً ديجي-تك، أريد حجز ${serviceName} لسيارة ${sourceCombo.brandName}.`,
+      ...(sourceCombo.brandSlug === 'mercedes-benz-service-dubai' ? MERCEDES_ARABIC_SERVICE_CONTENT[sourceCombo.serviceSlug] : {}),
+      ...(sourceCombo.brandSlug === 'rox-service-dubai' && sourceCombo.serviceSlug === 'oil-change' ? {
+        h1: 'خدمة زيت محرك مولد المدى ROX 01 في دبي',
+        metaTitle: 'خدمة زيت مولد المدى ROX 01 في دبي | ديجي-تك',
+        metaDescription: 'استفسر عن زيت محرك مولد المدى في ROX 01 بعد التحقق من مواصفات السيارة وسجل الصيانة. لا تشمل الخدمة أعمال بطارية الجر أو الجهد العالي.',
+        heroCopy: 'تعمل ROX 01 بمحركات كهربائية للدفع وتستخدم محرك احتراق لتوليد الطاقة وزيادة المدى. يقتصر طلب خدمة الزيت على محرك المولد حسب متطلبات السيارة المحددة؛ لا يفترض ذلك توفر أعمال بطارية الجر أو نظام الدفع الكهربائي.',
+      } : {}),
+      ...(sourceCombo.brandSlug === 'rox-service-dubai' && sourceCombo.serviceSlug === 'engine-diagnostics' ? {
+        h1: 'فحص أعطال ROX 01 في دبي',
+        metaTitle: 'فحص أعطال ROX 01 في دبي | ديجي-تك',
+        metaDescription: 'فحص التحذيرات والأنظمة منخفضة الجهد أو تجهيزات الراحة في ROX 01 وفق الوظائف المتاحة للسيارة. لا يفترض توفر إصلاح أنظمة الجهد العالي.',
+        heroCopy: 'يبدأ فحص تحذير ROX 01 بتسجيل الأعراض والتأكد من وظائف التشخيص المتاحة للسيارة المحددة. يمكن مناقشة الأنظمة منخفضة الجهد وتجهيزات الراحة، ولا يتم الإعلان عن إصلاح بطارية الجر أو نظام الدفع أو الشحن عالي الجهد.',
+      } : {}),
+      ...(sourceCombo.brandSlug === 'rox-service-dubai' && sourceCombo.serviceSlug === 'soft-close-door-installation' ? {
+        h1: 'تركيب الإغلاق الناعم لأبواب ROX 01 في دبي',
+        metaTitle: 'تركيب الإغلاق الناعم لأبواب ROX 01 | ديجي-تك',
+        metaDescription: 'استفسر عن توافق تركيب الإغلاق الناعم لأبواب ROX 01 في دبي. يتم فحص الأبواب والأسلاك والقطع قبل تأكيد إمكانية التركيب وعرض السعر.',
+        heroCopy: 'يخص هذا المسار طلب تركيب الإغلاق الناعم لأبواب ROX 01 بعد التأكد من توافق السيارة والقطع. إذا كانت وظيفة مركبة مسبقاً لا تعمل، يبدأ الأمر بفحص عطل الباب عبر خدمة الإصلاح العامة.',
+      } : {}),
     };
   })() : sourceCombo;
   const combo = localizedCombo && !isArabic && localizedCombo.brandSlug === 'aston-martin-service-dubai' ? astonServiceOverride(localizedCombo) : localizedCombo && !isArabic && localizedCombo.brandSlug === 'mclaren-service-dubai'
@@ -595,7 +651,7 @@ const BrandServicePage: React.FC<BrandServicePageProps> = ({
   const enquiryLabel = serviceEnquiryLabel(combo.serviceSlug, combo.brandName === 'Mercedes-Benz' ? 'Mercedes' : combo.brandName);
   const otherServices = getServicesForBrand(combo.brandSlug).filter((s) => s.serviceSlug !== combo.serviceSlug);
   const relatedMercedesContent = combo.brandSlug === 'mercedes-benz-service-dubai'
-    ? MERCEDES_RELATED_CONTENT[combo.serviceSlug] ?? []
+    ? (isArabic ? MERCEDES_ARABIC_RELATED_CONTENT[combo.serviceSlug] : MERCEDES_RELATED_CONTENT[combo.serviceSlug]) ?? []
     : [];
   const mercedesServiceScope = combo.brandSlug === 'mercedes-benz-service-dubai' && !isArabic
     ? MERCEDES_SERVICE_SCOPE[combo.serviceSlug]
@@ -702,16 +758,15 @@ const BrandServicePage: React.FC<BrandServicePageProps> = ({
         </div>
       </section>
 
-      {!isArabic && combo.brandSlug === 'mercedes-benz-service-dubai' && (
-        <nav aria-label="On this page" className="border-b border-white/10 bg-black">
+      <nav aria-label={isArabic ? 'في هذه الصفحة' : 'On this page'} className="border-b border-white/10 bg-black">
           <div className="mx-auto flex max-w-5xl gap-2 overflow-x-auto px-4 py-3 sm:px-6">
             {[
-              ['Symptoms', '#service-symptoms'],
+              [isArabic ? 'الأعراض' : 'Symptoms', '#service-symptoms'],
               ...(mercedesServiceScope ? [['Scope', '#service-scope']] : []),
-              ['Process', '#service-process'],
-              ...(relatedAuthorityContent.length ? [['Guides', '#service-guides']] : []),
-              ['FAQs', '#service-faqs'],
-              ['Book', '#service-booking'],
+              [isArabic ? 'خطوات الفحص' : 'Process', '#service-process'],
+              ...(relatedAuthorityContent.length && (!isArabic || combo.brandSlug === 'mercedes-benz-service-dubai') ? [[isArabic ? 'أدلة مرتبطة' : 'Guides', '#service-guides']] : []),
+              [isArabic ? 'الأسئلة الشائعة' : 'FAQs', '#service-faqs'],
+              [isArabic ? 'الحجز' : 'Book', '#service-booking'],
             ].map(([label, href]) => (
               <a key={href} href={href} className="inline-flex min-h-11 shrink-0 items-center rounded-full border border-white/10 px-4 py-2 text-xs font-semibold text-white/65 transition-colors hover:border-burnt-orange/50 hover:text-burnt-orange focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-burnt-orange">
                 {label}
@@ -719,8 +774,6 @@ const BrandServicePage: React.FC<BrandServicePageProps> = ({
             ))}
           </div>
         </nav>
-      )}
-
       {/* Symptoms */}
       <section id="service-symptoms" className="scroll-mt-24 py-12 sm:py-16 bg-black border-t border-white/5">
         <div className="max-w-5xl mx-auto px-4 sm:px-6">
@@ -750,13 +803,13 @@ const BrandServicePage: React.FC<BrandServicePageProps> = ({
                   <>
                     <h3 className="font-bold text-off-white group-hover:text-burnt-orange">{item.title}</h3>
                     <p className="mt-2 text-sm leading-relaxed text-white/55">{item.description}</p>
-                    {item.path ? <span className="mt-4 inline-flex items-center gap-1 text-xs font-semibold text-burnt-orange">Read the relevant guide <ArrowRight className="h-3.5 w-3.5" /></span> : null}
+                    {item.path ? <span className="mt-4 inline-flex items-center gap-1 text-xs font-semibold text-burnt-orange">{item.linkLabel ?? 'Read the relevant guide'} <ArrowRight className="h-3.5 w-3.5" /></span> : null}
                   </>
                 );
                 return item.path ? (
-                  <Link key={item.title} to={item.path} className="card-premium group rounded-2xl p-5">{content}</Link>
+                  <Link id={item.id} key={item.title} to={item.path} className="card-premium group scroll-mt-28 rounded-2xl p-5">{content}</Link>
                 ) : (
-                  <article key={item.title} className="card-premium group rounded-2xl p-5">{content}</article>
+                  <article id={item.id} key={item.title} className="card-premium group scroll-mt-28 rounded-2xl p-5">{content}</article>
                 );
               })}
             </div>
@@ -852,12 +905,12 @@ const BrandServicePage: React.FC<BrandServicePageProps> = ({
         </div>
       </section>
 
-      {relatedAuthorityContent.length > 0 && !isArabic && (
+      {relatedAuthorityContent.length > 0 && (!isArabic || combo.brandSlug === 'mercedes-benz-service-dubai') && (
         <section id="service-guides" className="scroll-mt-24 border-t border-white/5 bg-charcoal/15 py-12 sm:py-16">
           <div className="mx-auto max-w-5xl px-4 sm:px-6">
-            <p className="eyebrow mb-4">Model and owner guides</p>
-            <h2 className="text-2xl font-black sm:text-4xl">{combo.brandSlug === 'mercedes-benz-service-dubai' && combo.serviceSlug === 'oil-change' ? 'Choose the correct Mercedes maintenance scope' : combo.brandSlug === 'mercedes-benz-service-dubai' && combo.serviceSlug === 'engine-diagnostics' ? 'Continue with the relevant Mercedes diagnostic path' : combo.brandSlug === 'mercedes-benz-service-dubai' && combo.serviceSlug === 'suspension-repair' ? 'Compare the warning with the likely test path' : 'Understand the symptom before the repair'}</h2>
-            <p className="mt-4 max-w-3xl text-sm leading-relaxed text-white/55">Explore the relevant symptom, model or service scope to help describe the concern when you contact the workshop.</p>
+            <p className="eyebrow mb-4">{isArabic ? 'أدلة وخدمات مرتبطة' : 'Model and owner guides'}</p>
+            <h2 className="text-2xl font-black sm:text-4xl">{isArabic ? `معلومات مرتبطة بخدمة ${combo.serviceName}` : combo.brandSlug === 'mercedes-benz-service-dubai' && combo.serviceSlug === 'oil-change' ? 'Choose the correct Mercedes maintenance scope' : combo.brandSlug === 'mercedes-benz-service-dubai' && combo.serviceSlug === 'engine-diagnostics' ? 'Continue with the relevant Mercedes diagnostic path' : combo.brandSlug === 'mercedes-benz-service-dubai' && combo.serviceSlug === 'suspension-repair' ? 'Compare the warning with the likely test path' : 'Understand the symptom before the repair'}</h2>
+            <p className="mt-4 max-w-3xl text-sm leading-relaxed text-white/55">{isArabic ? 'تساعد هذه الأدلة في توضيح الأعراض أو بيانات الطراز ونطاق العمل عند التواصل مع الورشة.' : 'Explore the relevant symptom, model or service scope to help describe the concern when you contact the workshop.'}</p>
             <ul className="mt-7 grid gap-4 sm:grid-cols-3">
               {relatedAuthorityContent.map((item) => (
                 <li key={item.path}>
@@ -893,6 +946,24 @@ const BrandServicePage: React.FC<BrandServicePageProps> = ({
       </section>
 
       {/* Cross-links: other services for this brand */}
+      {!isArabic && combo.brandSlug === 'volkswagen-service-dubai' && combo.serviceSlug === 'engine-diagnostics' && (
+        <section className="border-t border-white/10 bg-black py-8">
+          <div className="mx-auto max-w-5xl px-4 sm:px-6">
+            <h2 className="text-xl font-semibold">When a gearbox warning needs repair</h2>
+            <p className="mt-3 leading-relaxed text-gray-300">ODIS-supported information can guide a gearbox investigation, but diagnosis and a confirmed repair are different tasks. If inspection points to the fitted DSG or another transmission, review the proposed service or repair scope.</p>
+            <Link to="/services/transmission-repair-dubai" className="mt-4 inline-block text-burnt-orange underline">Transmission and DSG assessment</Link>
+          </div>
+        </section>
+      )}
+      {!isArabic && combo.brandSlug === 'rox-service-dubai' && combo.serviceSlug === 'soft-close-door-installation' && (
+        <section className="border-t border-white/10 bg-black py-8">
+          <div className="mx-auto max-w-5xl px-4 sm:px-6">
+            <h2 className="text-xl font-semibold">Already fitted, but no longer pulling closed?</h2>
+            <p className="mt-3 leading-relaxed text-gray-300">That is a fault-inspection task. The cross-brand soft-close service checks the latch, actuator, wiring and door alignment before a repair is proposed. Installation here starts with ROX 01 compatibility and component availability.</p>
+            <Link to="/services/soft-close-door-repair-dubai" className="mt-4 inline-block text-burnt-orange underline">Soft-close door fault inspection</Link>
+          </div>
+        </section>
+      )}
       <section className="py-12 sm:py-16 bg-gradient-to-br from-charcoal/40 to-black border-t border-white/5">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="flex items-center gap-3 mb-6 sm:mb-8">

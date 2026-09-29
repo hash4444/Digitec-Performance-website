@@ -1,5 +1,17 @@
 import type { BlogPost } from '@/data/blogPosts';
 import type { BrandWorkshopArticle } from '@/data/brandWorkshopArticles';
+import { arGeneralBlogContent } from './ar-general-blog-content';
+import { arModelBlogContent } from './ar-model-blog-content';
+import { arServiceBlogContent } from './ar-service-blog-content';
+import { arSpecialistBlogContent } from './ar-specialist-blog-content';
+import { mercedesMaintenanceGuide, MERCEDES_MAINTENANCE_UPDATED } from '@/data/mercedesMaintenanceGuide';
+
+const mercedesUpdatedArabicArticles = new Set([
+  'mercedes-c-class-service-dubai-guide', 'mercedes-e-class-service-dubai-guide',
+  'mercedes-s-class-service-dubai-guide', 'mercedes-g63-service-dubai-guide',
+  'best-oil-change-dubai-mercedes', 'mercedes-service-intervals-dubai-heat',
+  'mercedes-service-cost-dubai-guide', 'mercedes-repair-dubai-complete-guide',
+]);
 
 export const categoryArabic: Record<string, string> = {
   All: 'الكل',
@@ -15,6 +27,13 @@ type ArabicPostMeta = Pick<BlogPost, 'title' | 'excerpt' | 'metaTitle' | 'metaDe
 };
 
 const arabicPostMeta: Record<string, ArabicPostMeta> = {
+  'mercedes-benz-maintenance-guide-dubai': {
+    title: mercedesMaintenanceGuide.ar.title,
+    excerpt: mercedesMaintenanceGuide.ar.description,
+    metaTitle: mercedesMaintenanceGuide.ar.metaTitle,
+    metaDescription: mercedesMaintenanceGuide.ar.description,
+    topic: 'تخطيط صيانة مرسيدس',
+  },
   'how-much-is-my-mercedes-worth-dubai': {
     title: 'كم تبلغ قيمة سيارتي مرسيدس في دبي؟',
     excerpt: 'تعرّف إلى العوامل التي تحدد سعر مرسيدس في سوق دبي، وكيف تساعدك ديجي-تك في تقييم السيارة وتجهيزها وتسويقها وبيعها.',
@@ -23,9 +42,9 @@ const arabicPostMeta: Record<string, ArabicPostMeta> = {
     topic: 'تقييم وبيع مرسيدس في دبي',
   },
   'best-oil-change-dubai-mercedes': {
-    title: 'أفضل تغيير زيت مرسيدس في دبي: ما الذي تحتاجه سيارتك فعلاً؟',
+    title: 'كيف تختار خدمة تغيير زيت مرسيدس في دبي؟',
     excerpt: 'دليل عملي لاختيار تغيير زيت مرسيدس المناسب في دبي، من مواصفة الزيت والفلتر إلى خطوات الفحص داخل الورشة.',
-    metaTitle: 'أفضل تغيير زيت مرسيدس في دبي | دليل الصيانة',
+    metaTitle: 'اختيار خدمة زيت مرسيدس في دبي | دليل المقارنة',
     metaDescription: 'دليل تغيير زيت مرسيدس في دبي: اختيار مواصفة الزيت المناسبة والفلتر والفحوص المهمة وكيف تختار ورشة متخصصة في القوز.',
     topic: 'تغيير زيت مرسيدس في دبي',
   },
@@ -65,10 +84,10 @@ const arabicPostMeta: Record<string, ArabicPostMeta> = {
     topic: 'اختيار ورشة سيارات موثوقة',
   },
   'mercedes-service-intervals-dubai-heat': {
-    title: 'مواعيد صيانة مرسيدس في حرارة دبي: ما الذي يجب معرفته؟',
-    excerpt: 'كيف تؤثر حرارة دبي والاستخدام اليومي في جدول صيانة مرسيدس والزيوت والتبريد والبطارية.',
-    metaTitle: 'جدول صيانة مرسيدس في دبي | دليل حرارة الإمارات',
-    metaDescription: 'دليل مواعيد صيانة مرسيدس في دبي وفحص الزيت والتبريد والفرامل والبطارية بما يناسب الحرارة والغبار والازدحام في الإمارات.',
+    title: 'مواعيد صيانة مرسيدس وقراءة ASSYST في دبي',
+    excerpt: 'راجع رسالة ASSYST ورقم الهيكل والسجل لتحديد الأعمال المستحقة، مع مراعاة الوقت والمسافة وإرشادات الاستخدام للسيارة المحددة.',
+    metaTitle: 'مواعيد صيانة مرسيدس وASSYST في دبي | دليل المالك',
+    metaDescription: 'كيف تحدد موعد صيانة مرسيدس في دبي من رسالة ASSYST وبيانات السيارة والسجل؟ افصل التذكير الدوري عن التحذير وتجنب فترات عامة لكل الطرازات.',
     topic: 'صيانة مرسيدس في مناخ دبي',
   },
   'gad-tuning-explained': {
@@ -86,9 +105,9 @@ const arabicPostMeta: Record<string, ArabicPostMeta> = {
     topic: 'حماية الطلاء بالسيراميك',
   },
   'mercedes-repair-dubai-complete-guide': {
-    title: 'أعطال مرسيدس الشائعة في دبي: دليل المالك 2026',
+    title: 'أعراض وتحذيرات مرسيدس في دبي: دليل المالك',
     excerpt: 'دليل عملي لتحذيرات مرسيدس الشائعة في دبي، بما يشمل التعليق AIRMATIC والتبريد والتكييف والبطارية وخطوات التشخيص قبل الإصلاح.',
-    metaTitle: 'أعطال مرسيدس الشائعة في دبي | دليل المالك 2026',
+    metaTitle: 'أعراض وتحذيرات مرسيدس في دبي | دليل المالك',
     metaDescription: 'تعرّف إلى أعطال مرسيدس الشائعة في دبي: تعليق AIRMATIC والتبريد والتكييف والبطارية وإشارات التحذير، وما يجب فحصه قبل اعتماد الإصلاح.',
     topic: 'أعطال مرسيدس الشائعة',
   },
@@ -198,13 +217,37 @@ const defenderGalleryArabic = [
 ];
 
 export const localizeBlogPostToArabic = (post: BlogPost): BlogPost => {
-  const meta = arabicPostMeta[post.slug] ?? {
+  const serviceOrSpecialistContent = arServiceBlogContent[post.slug] ?? arSpecialistBlogContent[post.slug];
+  const adaptation = arGeneralBlogContent[post.slug] ?? arModelBlogContent[post.slug]
+    ?? (serviceOrSpecialistContent ? { ...arabicPostMeta[post.slug], content: serviceOrSpecialistContent } : undefined);
+  const meta = arabicPostMeta[post.slug] ?? adaptation ?? {
     title: post.title,
     excerpt: post.excerpt,
     metaTitle: post.metaTitle,
     metaDescription: post.metaDescription,
     topic: 'صيانة السيارة',
   };
+  if (adaptation) {
+    const wordCount = adaptation.content.reduce((total, block) => total + [block.text ?? '', ...(block.items ?? [])].join(' ').trim().split(/\s+/).filter(Boolean).length, 0);
+    const readingMinutes = Math.max(1, Math.ceil(wordCount / 180));
+    return {
+      ...post,
+      ...adaptation,
+      ...meta,
+      content: adaptation.content,
+      updatedDate: mercedesUpdatedArabicArticles.has(post.slug) ? '2026-09-28' : '2026-09-17',
+      author: 'فريق ورشة ديجي-تك',
+      readTime: `${readingMinutes} ${readingMinutes === 1 ? 'دقيقة قراءة' : 'دقائق قراءة'}`,
+      gallery: post.slug === 'best-defender-workshop-dubai'
+        ? post.gallery?.map((image, index) => ({ ...image, ...(defenderGalleryArabic[index] ?? {}) }))
+        : post.gallery,
+      ogType: 'article',
+      ogTitle: meta.title,
+      ogDescription: meta.excerpt,
+      twitterTitle: meta.title,
+      twitterDescription: meta.excerpt,
+    };
+  }
   const headings = headingTemplates(meta.topic);
   const paragraphs = paragraphTemplates(meta.topic);
   const lists = listTemplates(meta.topic);
@@ -254,7 +297,7 @@ export const localizeBlogPostToArabic = (post: BlogPost): BlogPost => {
 };
 
 export const localizePostSummaryToArabic = <T extends { slug: string; title: string; excerpt: string }>(post: T): T => {
-  const fixed = arabicPostMeta[post.slug];
+  const fixed = arabicPostMeta[post.slug] ?? arGeneralBlogContent[post.slug] ?? arModelBlogContent[post.slug];
   if (fixed) return { ...post, title: fixed.title, excerpt: fixed.excerpt };
   const brand = post.title.replace(/^Best /, '').replace(/ Workshop in Dubai.*$/, '').replace(/ Maintenance Guide.*$/, '');
   return {
@@ -266,10 +309,10 @@ export const localizePostSummaryToArabic = <T extends { slug: string; title: str
 
 export const localizeBrandWorkshopArticleToArabic = (article: BrandWorkshopArticle): BrandWorkshopArticle => ({
   ...article,
-  title: article.brand === 'Ferrari'
+  title: article.brand === 'Mercedes-Benz' ? mercedesMaintenanceGuide.ar.title : article.brand === 'Ferrari'
     ? 'صيانة فيراري في دبي: جدول الخدمة والتكلفة وما يجب توقعه'
     : `دليل ورشة ${article.brand} المتخصصة في دبي`,
-  excerpt: article.brand === 'Ferrari'
+  excerpt: article.brand === 'Mercedes-Benz' ? mercedesMaintenanceGuide.ar.description : article.brand === 'Ferrari'
     ? 'دليل عملي لمالكي فيراري في دبي عن مواعيد الصيانة وعوامل التكلفة والفحوص المهمة في ظروف الإمارات.'
     : `دليل عملي لمالكي ${article.brand} في دبي عن الصيانة والتشخيص والإصلاح واختيار الورشة المناسبة.`,
   commonProblems: article.commonProblems.map((_, index) => [
@@ -289,4 +332,5 @@ export const localizeBrandWorkshopArticleToArabic = (article: BrandWorkshopArtic
   imageAlt: article.brand === 'Ferrari'
     ? 'سيارتا فيراري 348 حمراوان داخل ورشة سيارات متخصصة'
     : `سيارة ${article.brand} داخل ورشة ديجي-تك المتخصصة في القوز دبي`,
+  ...(article.brand === 'Mercedes-Benz' ? { dateModified: MERCEDES_MAINTENANCE_UPDATED, metaTitle: mercedesMaintenanceGuide.ar.metaTitle, metaDescription: mercedesMaintenanceGuide.ar.description } : {}),
 });

@@ -1,0 +1,57 @@
+{
+  "routes": 1247,
+  "bmw_urls_reviewed": 45,
+  "bmw_urls_changed": 21,
+  "new_urls": 0,
+  "normalized_keywords": 490,
+  "measured_original_gsc_normalized_terms": 91,
+  "latest_six_month_query_rows": 45,
+  "latest_six_month_impressions": 2660,
+  "latest_six_month_clicks": 5,
+  "coverage_classes": {
+    "COVERED — INFORMATIONAL GUIDE": 7,
+    "NOT TARGETED — INTENTIONALLY": 20,
+    "COVERED — SECTION": 172,
+    "COVERED — PRIMARY": 269,
+    "COVERED — MODEL PAGE": 9,
+    "COVERED — SECONDARY": 13
+  },
+  "remaining_gaps": 0,
+  "unresolved_owner_conflicts": 0,
+  "route_policy_changes": [],
+  "seo_policy_changes": [],
+  "lastmod_updates": 21,
+  "mercedes_html_changes": [],
+  "mercedes_content_regressions": [],
+  "porsche_html_changes": [],
+  "porsche_content_regressions": [],
+  "protected_file_changes": [
+    {
+      "file": "cloudflare/routing-response-data.js",
+      "byte_identical": false
+    }
+  ],
+  "bmw_internal_links_checked": 813,
+  "broken_links": [],
+  "redirecting_internal_links": [],
+  "missing_fragments": [],
+  "orphan_bmw_pages": [],
+  "max_bmw_crawl_depth": 4,
+  "faq_schema_pairs": 167,
+  "faq_visibility_issues": [],
+  "schema_types": {
+    "WebPage": 39,
+    "BreadcrumbList": 45,
+    "Service": 41,
+    "FAQPage": 36,
+    "ItemPage": 6,
+    "BlogPosting": 6,
+    "Brand": 30
+  },
+  "schema_issues": [],
+  "hreflang_links_checked": 128,
+  "hreflang_issues": [],
+  "free_diagnostic_claims": [],
+  "paragraph_repeat_pairs_4plus": [],
+  "initial_html_failures": []
+}

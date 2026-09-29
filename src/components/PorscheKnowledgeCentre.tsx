@@ -4,6 +4,7 @@ import {
   porscheGuideNavigation,
   porscheModelNavigation,
   porscheProblemNavigation,
+  porscheServiceNavigation,
   porscheSystemNavigation,
   type PorscheNavigationItem,
 } from '@/data/porscheArchitecture';
@@ -67,7 +68,7 @@ const PorscheKnowledgeCentre = () => (
         <p className="text-xs font-bold uppercase tracking-[0.2em] text-burnt-orange">Porsche Knowledge Centre</p>
         <h2 className="mt-3 text-3xl font-black leading-tight text-off-white sm:text-5xl">Browse by model, system or symptom</h2>
         <p className="mt-4 text-base leading-relaxed text-gray-300">
-          Start with the Porsche you own, the system you want to understand or the symptom you have noticed. Published guides and workshop services are linked now; planned guides are shown without creating empty pages.
+          Start with the Porsche you own, the system you want to understand or the symptom you have noticed. Each guide explains the topic and links to relevant inspection and repair information.
         </p>
       </header>
 
@@ -77,7 +78,7 @@ const PorscheKnowledgeCentre = () => (
           ['Systems', '#porsche-systems'],
           ['Problems', '#porsche-problems'],
           ['Guides', '#porsche-guides'],
-          ['Services', '#porsche-services'],
+          ['Services', '#porsche-service-directory'],
         ].map(([label, href]) => (
           <a key={href} href={href} className="rounded-full border border-white/10 bg-white/[0.03] px-4 py-2 text-sm font-semibold text-gray-200 transition-colors hover:border-burnt-orange/50 hover:text-burnt-orange">
             {label}
@@ -87,9 +88,10 @@ const PorscheKnowledgeCentre = () => (
 
       <div className="space-y-12 sm:space-y-16">
         <NavigationGroup id="porsche-models" title="Porsche models" description="Model-family guidance with generation detail added only where the platform creates a distinct owner need." items={porscheModelNavigation} icon={Car} />
-        <NavigationGroup id="porsche-systems" title="Porsche systems" description="Choose the fitted system or workshop area. Dedicated explainers will be introduced in a later reviewed batch." items={porscheSystemNavigation} icon={Cog} />
+        <NavigationGroup id="porsche-systems" title="Porsche systems" description="Understand the fitted system, its normal behaviour and the warning signs that need investigation." items={porscheSystemNavigation} icon={Cog} />
         <NavigationGroup id="porsche-problems" title="Problems and warning signs" description="A symptom is a starting point, not a confirmed diagnosis. These links lead to the relevant inspection or repair area." items={porscheProblemNavigation} icon={CircleAlert} />
         <NavigationGroup id="porsche-guides" title="Ownership guides" description="Maintenance and workshop-selection information for Porsche owners in Dubai." items={porscheGuideNavigation} icon={BookOpen} />
+        <NavigationGroup id="porsche-service-directory" title="Porsche inspection and repair" description="Choose the work your Porsche needs. Each service explains its own inspection scope and booking step." items={porscheServiceNavigation} icon={Wrench} />
 
         <section aria-labelledby="porsche-cases-title" className="rounded-2xl border border-white/10 bg-white/[0.025] p-6 sm:p-8">
           <div className="flex items-start gap-3">

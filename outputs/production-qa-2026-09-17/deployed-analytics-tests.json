@@ -1,0 +1,118 @@
+{
+  "testedAt": "2026-09-17T06:16:35.200Z",
+  "passed": true,
+  "method": "Downloaded production JS, isolated Node VM with React effect/document mocks; no network events or enquiries sent",
+  "assetPath": "/assets/index-BYKtDuhZ.js",
+  "sha256": "6f9a99cb5334d35967f45c3590615354496fb395b8ed220860f2d91693b5e4a0",
+  "results": [
+    {
+      "route": "/brands/bmw-service-dubai",
+      "passed": true,
+      "whatsappClickCount": 1,
+      "chatOpenedCount": 1,
+      "spaPageViewCount": 1,
+      "messageExcluded": true,
+      "handlerCleanup": true
+    },
+    {
+      "route": "/brands/rolls-royce-service-dubai",
+      "passed": true,
+      "whatsappClickCount": 1,
+      "chatOpenedCount": 1,
+      "spaPageViewCount": 1,
+      "messageExcluded": true,
+      "handlerCleanup": true
+    },
+    {
+      "route": "/brands/aston-martin-service-dubai",
+      "passed": true,
+      "whatsappClickCount": 1,
+      "chatOpenedCount": 1,
+      "spaPageViewCount": 1,
+      "messageExcluded": true,
+      "handlerCleanup": true
+    },
+    {
+      "route": "/brands/bentley-service-dubai",
+      "passed": true,
+      "whatsappClickCount": 1,
+      "chatOpenedCount": 1,
+      "spaPageViewCount": 1,
+      "messageExcluded": true,
+      "handlerCleanup": true
+    },
+    {
+      "route": "/services/paint-protection-film",
+      "passed": true,
+      "whatsappClickCount": 1,
+      "chatOpenedCount": 1,
+      "spaPageViewCount": 1,
+      "messageExcluded": true,
+      "handlerCleanup": true
+    },
+    {
+      "route": "/services/ceramic-coating",
+      "passed": true,
+      "whatsappClickCount": 1,
+      "chatOpenedCount": 1,
+      "spaPageViewCount": 1,
+      "messageExcluded": true,
+      "handlerCleanup": true
+    },
+    {
+      "route": "/services/cadillac-cue-screen-repair-dubai",
+      "passed": true,
+      "whatsappClickCount": 1,
+      "chatOpenedCount": 1,
+      "spaPageViewCount": 1,
+      "messageExcluded": true,
+      "handlerCleanup": true
+    },
+    {
+      "route": "/services/auto-electrical-repair-dubai",
+      "passed": true,
+      "whatsappClickCount": 1,
+      "chatOpenedCount": 1,
+      "spaPageViewCount": 1,
+      "messageExcluded": true,
+      "handlerCleanup": true
+    },
+    {
+      "route": "/services/head-unit-repair-dubai",
+      "passed": true,
+      "whatsappClickCount": 1,
+      "chatOpenedCount": 1,
+      "spaPageViewCount": 1,
+      "messageExcluded": true,
+      "handlerCleanup": true
+    },
+    {
+      "route": "/services/mercedes-audio-upgrade-dubai",
+      "passed": true,
+      "whatsappClickCount": 1,
+      "chatOpenedCount": 1,
+      "spaPageViewCount": 1,
+      "messageExcluded": true,
+      "handlerCleanup": true
+    },
+    {
+      "route": "/brands/bentley-service-dubai/electrical-repair",
+      "passed": true,
+      "whatsappClickCount": 1,
+      "chatOpenedCount": 1,
+      "spaPageViewCount": 1,
+      "messageExcluded": true,
+      "handlerCleanup": true
+    },
+    {
+      "route": "/services/tire-repair-dubai",
+      "passed": true,
+      "whatsappClickCount": 1,
+      "chatOpenedCount": 1,
+      "spaPageViewCount": 1,
+      "messageExcluded": true,
+      "handlerCleanup": true
+    }
+  ],
+  "gaIngestionVerified": false
+}

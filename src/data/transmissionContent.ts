@@ -43,6 +43,7 @@ export const transmissionBrands = [
   ['BMW','/brands/bmw-service-dubai/transmission-repair','ZF automatic · DCT · manual'],
   ['Porsche','/brands/porsche-service-dubai/transmission-repair','PDK · Tiptronic'],
   ['Audi','/brands/audi-service-dubai/transmission-repair','S tronic · Tiptronic'],
+  ['Volkswagen','/brands/volkswagen-service-dubai','DSG · manual · fitted automatic'],
   ['Range Rover','/brands/range-rover-service-dubai/transmission-repair','Fitted ZF applications'],
   ['Rolls-Royce','/brands/rolls-royce-service-dubai/transmission-repair','Vehicle-specific automatic'],
   ['Bentley','/brands/bentley-service-dubai/transmission-repair','Model-specific gearbox'],

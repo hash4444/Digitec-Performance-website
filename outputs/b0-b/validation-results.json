@@ -1,0 +1,47 @@
+{
+  "checks": {
+    "all_32_sections": true,
+    "section_numbers": true,
+    "unique_urls": true,
+    "register_count": true,
+    "deep_coverage": true,
+    "screen_coverage": true,
+    "preferred_owners_exist_in_register": true,
+    "ownership_map_owners_exist": true,
+    "allowed_actions": true,
+    "allowed_classifications": true,
+    "nine_candidates": true,
+    "candidate_validation": true,
+    "no_arabic_redirects": true,
+    "expected_columns": true,
+    "cluster_totals": true,
+    "all_eleven_mercedes": true,
+    "b0a_preserved": true,
+    "git_status_only_expected_report_additions": true,
+    "all_live_fetches_succeeded": true,
+    "existing_aliases_four": true,
+    "duplicate_exports_identical": true,
+    "local_links_exist": true
+  },
+  "failed": [],
+  "missing_local_links": [],
+  "counts": {
+    "clusters": 27,
+    "confirmed": 0,
+    "probable": 0,
+    "intent_overlap": 12,
+    "distinct_intent": 14,
+    "insufficient_evidence": 1,
+    "consolidation_candidate_urls": 9,
+    "candidate_clusters": 7,
+    "deep_urls": 241,
+    "screened_canonical_pages": 1247,
+    "register_urls": 1251,
+    "ownership_rows": 93
+  },
+  "output_sizes": {
+    "b0-b-intent-ownership-report.md": 335610,
+    "b0-b-url-decision-register.csv": 844836,
+    "b1-mercedes-ownership-map.md": 12912
+  }
+}

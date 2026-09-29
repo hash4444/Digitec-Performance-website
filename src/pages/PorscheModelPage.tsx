@@ -14,7 +14,7 @@ const SystemSection = ({ section }: { section: PorscheModelSection }) => (
   <section className="card-premium rounded-2xl p-5 sm:p-7">
     <h2 className="text-xl font-black sm:text-2xl">{section.title}</h2>
     <p className="mt-3 text-sm leading-relaxed text-white/65 sm:text-base">{section.summary}</p>
-    <ul className="mt-5 space-y-3">{section.points.map((point) => <li key={point} className="flex gap-3 text-sm leading-relaxed text-white/70"><CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-burnt-orange" /><span>{point}</span></li>)}</ul>
+    {section.points.length > 0 && <ul className="mt-5 space-y-3">{section.points.map((point) => <li key={point} className="flex gap-3 text-sm leading-relaxed text-white/70"><CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-burnt-orange" /><span>{point}</span></li>)}</ul>}
   </section>
 );
 

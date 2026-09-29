@@ -1,0 +1,2473 @@
+{
+  "total_routes": 1247,
+  "route_policy_changes": [],
+  "seo_policy_changes": [],
+  "lastmod_changes": [],
+  "prior_brand_regression": {
+    "mercedes": {
+      "reviewed": 72,
+      "seo_changes": [],
+      "substantive_changes": []
+    },
+    "porsche": {
+      "reviewed": 101,
+      "seo_changes": [],
+      "substantive_changes": []
+    },
+    "bmw": {
+      "reviewed": 45,
+      "seo_changes": [],
+      "substantive_changes": []
+    },
+    "ferrari": {
+      "reviewed": 44,
+      "seo_changes": [],
+      "substantive_changes": []
+    },
+    "lamborghini": {
+      "reviewed": 36,
+      "seo_changes": [],
+      "substantive_changes": []
+    }
+  },
+  "brands": {
+    "rolls-royce": {
+      "urls_reviewed": 34,
+      "changed_urls": [
+        "/ar/blog/rolls-royce-best-workshop-dubai",
+        "/ar/brands/rolls-royce-service-dubai",
+        "/blog/rolls-royce-best-workshop-dubai"
+      ],
+      "links_checked": 625,
+      "broken_links": [],
+      "redirecting_links": [],
+      "missing_fragments": [],
+      "orphan_pages": [],
+      "max_same_language_depth": 4,
+      "faq_pairs": 146,
+      "faq_visibility_issues": [],
+      "schema_issues": [],
+      "hreflang_links_checked": 102,
+      "hreflang_issues": [],
+      "nojs_issues": [],
+      "image_issues": [],
+      "prohibited_claims": [],
+      "schema_types": {
+        "ItemPage": 4,
+        "BreadcrumbList": 34,
+        "BlogPosting": 4,
+        "Service": 32,
+        "FAQPage": 33,
+        "WebPage": 30,
+        "Brand": 30
+      },
+      "pages": [
+        {
+          "url": "/ar/blog/rolls-royce-best-workshop-dubai",
+          "title": "ورشة Rolls-Royce في دبي | ديجي-تك",
+          "description": "ورشة متخصصة في Rolls-Royce بدبي للفحص والصيانة والإصلاح. احجز لدى ديجي-تك في القوز للحصول على تشخيص واضح وخدمة احترافية.",
+          "h1": [
+            "دليل ورشة Rolls-Royce المتخصصة في دبي"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/ar/blog/rolls-royce-best-workshop-dubai",
+          "changed": true,
+          "incoming_contextual": 2,
+          "outgoing_contextual": 11,
+          "depth": 4,
+          "schema_types": [
+            "ItemPage",
+            "BreadcrumbList",
+            "BlogPosting",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 3470,
+          "image_count": 0
+        },
+        {
+          "url": "/ar/blog/rolls-royce-ghost-service-dubai-guide",
+          "title": "صيانة رولز رويس غوست دبي | الأجيال وأنظمة الراحة",
+          "description": "دليل صيانة غوست في دبي: تحديد الجيل وتجهيزات Planar وFlagbearer وفحص التعليق والجهد والتبريد والعناية بعد فترات التخزين.",
+          "h1": [
+            "صيانة رولز رويس غوست في دبي: الأجيال والراحة والتخزين"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/ar/blog/rolls-royce-ghost-service-dubai-guide",
+          "changed": false,
+          "incoming_contextual": 2,
+          "outgoing_contextual": 4,
+          "depth": 4,
+          "schema_types": [
+            "ItemPage",
+            "BreadcrumbList",
+            "BlogPosting"
+          ],
+          "body_length": 2362,
+          "image_count": 0
+        },
+        {
+          "url": "/ar/brands/rolls-royce-service-dubai",
+          "title": "إصلاح وصيانة Rolls-Royce في دبي | مركز ديجي-تك",
+          "description": "إصلاح وصيانة Rolls-Royce في دبي: تشخيص وصيانة وفرامل وناقل حركة وتعليق وتكييف مع قطع بالمواصفات المناسبة لدى مركز ديجي-تك.",
+          "h1": [
+            "Rolls-Royce للإصلاح والصيانة في دبي"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/ar/brands/rolls-royce-service-dubai",
+          "changed": true,
+          "incoming_contextual": 74,
+          "outgoing_contextual": 32,
+          "depth": 1,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 6005,
+          "image_count": 17
+        },
+        {
+          "url": "/ar/brands/rolls-royce-service-dubai/ac-repair",
+          "title": "إصلاح التكييف Rolls-Royce في دبي | ديجي-تك",
+          "description": "إصلاح التكييف Rolls-Royce في دبي. فحص ضعف التبريد وتفاوت الهواء والتسرب، مع التأكد من نوع غاز التبريد المكتوب على السيارة.",
+          "h1": [
+            "إصلاح التكييف Rolls-Royce في دبي"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/ar/brands/rolls-royce-service-dubai/ac-repair",
+          "changed": false,
+          "incoming_contextual": 15,
+          "outgoing_contextual": 16,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 2789,
+          "image_count": 1
+        },
+        {
+          "url": "/ar/brands/rolls-royce-service-dubai/battery-replacement",
+          "title": "تبديل البطارية Rolls-Royce في دبي | ديجي-تك",
+          "description": "تبديل البطارية Rolls-Royce في دبي. فحص البطارية منخفضة الجهد ونظام الشحن والتوصيلات قبل تأكيد الحاجة إلى الاستبدال والمواصفة المناسبة.",
+          "h1": [
+            "تبديل البطارية Rolls-Royce في دبي"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/ar/brands/rolls-royce-service-dubai/battery-replacement",
+          "changed": false,
+          "incoming_contextual": 14,
+          "outgoing_contextual": 16,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 2818,
+          "image_count": 1
+        },
+        {
+          "url": "/ar/brands/rolls-royce-service-dubai/body-repair",
+          "title": "إصلاح الهيكل Rolls-Royce في دبي | ديجي-تك",
+          "description": "إصلاح الهيكل Rolls-Royce في دبي. تقييم تلف الألواح والطلاء والزينة لتحديد الإصلاح أو الاستبدال، وما قد يتطلب فحصاً إضافياً بعد الفك.",
+          "h1": [
+            "إصلاح الهيكل Rolls-Royce في دبي"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/ar/brands/rolls-royce-service-dubai/body-repair",
+          "changed": false,
+          "incoming_contextual": 14,
+          "outgoing_contextual": 16,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 2777,
+          "image_count": 1
+        },
+        {
+          "url": "/ar/brands/rolls-royce-service-dubai/brake-repair",
+          "title": "إصلاح الفرامل Rolls-Royce في دبي | ديجي-تك",
+          "description": "إصلاح الفرامل Rolls-Royce في دبي. فحص الضجيج والاهتزاز وتحذيرات الفرامل، مع تحديد نوع الأقراص والفحمات وحالتها قبل اقتراح العمل.",
+          "h1": [
+            "إصلاح الفرامل Rolls-Royce في دبي"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/ar/brands/rolls-royce-service-dubai/brake-repair",
+          "changed": false,
+          "incoming_contextual": 14,
+          "outgoing_contextual": 16,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 2770,
+          "image_count": 1
+        },
+        {
+          "url": "/ar/brands/rolls-royce-service-dubai/electrical-repair",
+          "title": "إصلاح الكهرباء Rolls-Royce في دبي | ديجي-تك",
+          "description": "إصلاح الكهرباء Rolls-Royce في دبي. تتبع أعطال التوصيلات والدوائر والحساسات ووظائف الراحة اعتماداً على الأعراض والاختبارات المناسبة.",
+          "h1": [
+            "إصلاح الكهرباء Rolls-Royce في دبي"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/ar/brands/rolls-royce-service-dubai/electrical-repair",
+          "changed": false,
+          "incoming_contextual": 14,
+          "outgoing_contextual": 16,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 2831,
+          "image_count": 1
+        },
+        {
+          "url": "/ar/brands/rolls-royce-service-dubai/engine-diagnostics",
+          "title": "تشخيص المحرك Rolls-Royce في دبي | ديجي-تك",
+          "description": "تشخيص المحرك Rolls-Royce في دبي. ربط رسائل التحذير وبيانات الأعطال بالفحص الفعلي لتحديد سبب المشكلة قبل اقتراح تبديل القطع.",
+          "h1": [
+            "تشخيص المحرك Rolls-Royce في دبي"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/ar/brands/rolls-royce-service-dubai/engine-diagnostics",
+          "changed": false,
+          "incoming_contextual": 15,
+          "outgoing_contextual": 16,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 2775,
+          "image_count": 1
+        },
+        {
+          "url": "/ar/brands/rolls-royce-service-dubai/exhaust-repair",
+          "title": "إصلاح العادم Rolls-Royce في دبي | ديجي-تك",
+          "description": "إصلاح العادم Rolls-Royce في دبي. فحص التسرب والاهتزاز والضجيج وتحذيرات العادم قبل اقتراح إصلاح المكون المتأثر.",
+          "h1": [
+            "إصلاح العادم Rolls-Royce في دبي"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/ar/brands/rolls-royce-service-dubai/exhaust-repair",
+          "changed": false,
+          "incoming_contextual": 14,
+          "outgoing_contextual": 16,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 2729,
+          "image_count": 1
+        },
+        {
+          "url": "/ar/brands/rolls-royce-service-dubai/fuel-system-repair",
+          "title": "إصلاح نظام الوقود Rolls-Royce في دبي | ديجي-تك",
+          "description": "إصلاح نظام الوقود Rolls-Royce في دبي. تقييم صعوبة التشغيل والتقطيع وأعطال ضغط الوقود والبخاخات باختبارات تحدد السبب قبل الاستبدال.",
+          "h1": [
+            "إصلاح نظام الوقود Rolls-Royce في دبي"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/ar/brands/rolls-royce-service-dubai/fuel-system-repair",
+          "changed": false,
+          "incoming_contextual": 14,
+          "outgoing_contextual": 16,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 2812,
+          "image_count": 1
+        },
+        {
+          "url": "/ar/brands/rolls-royce-service-dubai/mechanical-repair",
+          "title": "الإصلاح الميكانيكي Rolls-Royce في دبي | ديجي-تك",
+          "description": "الإصلاح الميكانيكي Rolls-Royce في دبي. تقييم التسرب والضجيج والاهتزاز ومشاكل التبريد أو الحركة لتحديد نطاق الإصلاح من نتائج الفحص.",
+          "h1": [
+            "الإصلاح الميكانيكي Rolls-Royce في دبي"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/ar/brands/rolls-royce-service-dubai/mechanical-repair",
+          "changed": false,
+          "incoming_contextual": 14,
+          "outgoing_contextual": 16,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 2823,
+          "image_count": 1
+        },
+        {
+          "url": "/ar/brands/rolls-royce-service-dubai/oil-change",
+          "title": "تغيير الزيت Rolls-Royce في دبي | ديجي-تك",
+          "description": "تغيير الزيت Rolls-Royce في دبي. تحديد مواصفة الزيت والكمية والفلتر والبنود المستحقة من بيانات السيارة وسجل صيانتها.",
+          "h1": [
+            "تغيير الزيت Rolls-Royce في دبي"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/ar/brands/rolls-royce-service-dubai/oil-change",
+          "changed": false,
+          "incoming_contextual": 15,
+          "outgoing_contextual": 16,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 2768,
+          "image_count": 1
+        },
+        {
+          "url": "/ar/brands/rolls-royce-service-dubai/steering-repair",
+          "title": "إصلاح نظام التوجيه Rolls-Royce في دبي | ديجي-تك",
+          "description": "إصلاح نظام التوجيه Rolls-Royce في دبي. فحص ثقل المقود والضجيج والانحراف، ومراجعة تأثير الإطارات والتعليق والزوايا في التوجيه.",
+          "h1": [
+            "إصلاح نظام التوجيه Rolls-Royce في دبي"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/ar/brands/rolls-royce-service-dubai/steering-repair",
+          "changed": false,
+          "incoming_contextual": 14,
+          "outgoing_contextual": 16,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 2787,
+          "image_count": 1
+        },
+        {
+          "url": "/ar/brands/rolls-royce-service-dubai/suspension-repair",
+          "title": "إصلاح التعليق Rolls-Royce في دبي | ديجي-تك",
+          "description": "إصلاح التعليق Rolls-Royce في دبي. تقييم تغير ارتفاع السيارة والضجيج والراحة والتآكل غير المنتظم للإطارات حسب نظام التعليق المركب.",
+          "h1": [
+            "إصلاح التعليق Rolls-Royce في دبي"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/ar/brands/rolls-royce-service-dubai/suspension-repair",
+          "changed": false,
+          "incoming_contextual": 15,
+          "outgoing_contextual": 16,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 2799,
+          "image_count": 1
+        },
+        {
+          "url": "/ar/brands/rolls-royce-service-dubai/tire-repair",
+          "title": "إصلاح الإطارات Rolls-Royce في دبي | ديجي-تك",
+          "description": "إصلاح الإطارات Rolls-Royce في دبي. فحص فقدان الضغط والثقب والاهتزاز وحالة الإطار لتحديد صلاحية الإصلاح أو مواصفة الاستبدال.",
+          "h1": [
+            "إصلاح الإطارات Rolls-Royce في دبي"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/ar/brands/rolls-royce-service-dubai/tire-repair",
+          "changed": false,
+          "incoming_contextual": 14,
+          "outgoing_contextual": 16,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 2721,
+          "image_count": 1
+        },
+        {
+          "url": "/ar/brands/rolls-royce-service-dubai/transmission-repair",
+          "title": "إصلاح ناقل الحركة Rolls-Royce في دبي | ديجي-تك",
+          "description": "إصلاح ناقل الحركة Rolls-Royce في دبي. تقييم تأخر التعشيق وتغير النقل والتسرب والتحذيرات حسب ناقل الحركة المركب وسجل الخدمة.",
+          "h1": [
+            "إصلاح ناقل الحركة Rolls-Royce في دبي"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/ar/brands/rolls-royce-service-dubai/transmission-repair",
+          "changed": false,
+          "incoming_contextual": 15,
+          "outgoing_contextual": 16,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 2783,
+          "image_count": 1
+        },
+        {
+          "url": "/blog/rolls-royce-best-workshop-dubai",
+          "title": "Rolls-Royce Workshop Selection Guide Dubai | DIGI-TEC",
+          "description": "Compare Rolls-Royce workshops in Dubai by assessment process, diagnostic scope, parts, estimates and vehicle-specific repair capability.",
+          "h1": [
+            "Choosing a Rolls-Royce Workshop in Dubai: Owner Guide"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/blog/rolls-royce-best-workshop-dubai",
+          "changed": true,
+          "incoming_contextual": 17,
+          "outgoing_contextual": 11,
+          "depth": 2,
+          "schema_types": [
+            "ItemPage",
+            "BreadcrumbList",
+            "BlogPosting",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 4592,
+          "image_count": 0
+        },
+        {
+          "url": "/blog/rolls-royce-ghost-service-dubai-guide",
+          "title": "Rolls-Royce Ghost Service Dubai | Maintenance and Repair Guide",
+          "description": "Rolls-Royce Ghost service in Dubai: maintenance planning, suspension, cooling, battery, brakes and diagnostic concerns explained for owners.",
+          "h1": [
+            "Rolls-Royce Ghost Service in Dubai: Owner Guide"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/blog/rolls-royce-ghost-service-dubai-guide",
+          "changed": false,
+          "incoming_contextual": 17,
+          "outgoing_contextual": 4,
+          "depth": 2,
+          "schema_types": [
+            "ItemPage",
+            "BreadcrumbList",
+            "BlogPosting",
+            "FAQPage"
+          ],
+          "body_length": 4340,
+          "image_count": 0
+        },
+        {
+          "url": "/brands/rolls-royce-service-dubai",
+          "title": "Rolls-Royce Service & Repair Dubai | DIGI-TEC",
+          "description": "Rolls-Royce service and repair in Al Quoz, Dubai for Ghost, Cullinan, Phantom, Wraith and Dawn. Independent maintenance, suspension and electrical diagnosis.",
+          "h1": [
+            "Rolls-Royce Service & Repair Dubai"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/brands/rolls-royce-service-dubai",
+          "changed": false,
+          "incoming_contextual": 75,
+          "outgoing_contextual": 38,
+          "depth": 1,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 10482,
+          "image_count": 18
+        },
+        {
+          "url": "/brands/rolls-royce-service-dubai/ac-repair",
+          "title": "Rolls-Royce AC Repair Dubai | DIGI-TEC",
+          "description": "Rolls-Royce air-conditioning assessment in Al Quoz, Dubai for weak cooling, airflow, leaks, compressor and cabin-zone concerns.",
+          "h1": [
+            "Rolls-Royce AC Repair Dubai"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/brands/rolls-royce-service-dubai/ac-repair",
+          "changed": false,
+          "incoming_contextual": 15,
+          "outgoing_contextual": 18,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 3583,
+          "image_count": 1
+        },
+        {
+          "url": "/brands/rolls-royce-service-dubai/battery-replacement",
+          "title": "Rolls-Royce Battery Replacement Dubai | DIGI-TEC",
+          "description": "Rolls-Royce low-voltage battery, charging and battery-drain assessment in Al Quoz, Dubai. Specification and supported functions are confirmed.",
+          "h1": [
+            "Rolls-Royce Battery Replacement & Diagnosis Dubai"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/brands/rolls-royce-service-dubai/battery-replacement",
+          "changed": false,
+          "incoming_contextual": 14,
+          "outgoing_contextual": 18,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 3513,
+          "image_count": 1
+        },
+        {
+          "url": "/brands/rolls-royce-service-dubai/body-repair",
+          "title": "Rolls-Royce Body Repair Dubai | Digi-Tec",
+          "description": "Rolls-Royce body repair in Dubai with model-specific inspection, confirmed parts options and a clear quote at Digi-Tec, Al Quoz.",
+          "h1": [
+            "Rolls-Royce Body Repair Dubai"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/brands/rolls-royce-service-dubai/body-repair",
+          "changed": false,
+          "incoming_contextual": 14,
+          "outgoing_contextual": 21,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 4507,
+          "image_count": 1
+        },
+        {
+          "url": "/brands/rolls-royce-service-dubai/brake-repair",
+          "title": "Rolls-Royce Brake Repair Dubai | Digi-Tec",
+          "description": "Rolls-Royce brake repair in Dubai with model-specific inspection, confirmed parts options and a clear quote at Digi-Tec, Al Quoz.",
+          "h1": [
+            "Rolls-Royce Brake Repair Dubai"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/brands/rolls-royce-service-dubai/brake-repair",
+          "changed": false,
+          "incoming_contextual": 14,
+          "outgoing_contextual": 18,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 5254,
+          "image_count": 1
+        },
+        {
+          "url": "/brands/rolls-royce-service-dubai/electrical-repair",
+          "title": "Rolls-Royce Electrical Repair Dubai | DIGI-TEC",
+          "description": "Rolls-Royce electrical fault and low-voltage assessment in Al Quoz, Dubai. Wiring, charging and module concerns are tested before repair.",
+          "h1": [
+            "Rolls-Royce Electrical Repair Dubai"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/brands/rolls-royce-service-dubai/electrical-repair",
+          "changed": false,
+          "incoming_contextual": 14,
+          "outgoing_contextual": 18,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 3622,
+          "image_count": 1
+        },
+        {
+          "url": "/brands/rolls-royce-service-dubai/engine-diagnostics",
+          "title": "Rolls-Royce Engine Diagnostics Dubai | DIGI-TEC",
+          "description": "Rolls-Royce warning-light and drivability diagnostics in Al Quoz, Dubai. Compatible scan coverage and physical testing are confirmed for the vehicle.",
+          "h1": [
+            "Rolls-Royce Engine Diagnostics Dubai"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/brands/rolls-royce-service-dubai/engine-diagnostics",
+          "changed": false,
+          "incoming_contextual": 15,
+          "outgoing_contextual": 18,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 3632,
+          "image_count": 1
+        },
+        {
+          "url": "/brands/rolls-royce-service-dubai/exhaust-repair",
+          "title": "Rolls-Royce Exhaust Repair Dubai | Digi-Tec",
+          "description": "Rolls-Royce exhaust repair in Dubai with model-specific inspection, confirmed parts options and a clear quote at Digi-Tec, Al Quoz.",
+          "h1": [
+            "Rolls-Royce Exhaust Repair Dubai"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/brands/rolls-royce-service-dubai/exhaust-repair",
+          "changed": false,
+          "incoming_contextual": 14,
+          "outgoing_contextual": 18,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 4186,
+          "image_count": 1
+        },
+        {
+          "url": "/brands/rolls-royce-service-dubai/fuel-system-repair",
+          "title": "Rolls-Royce Fuel System Repair Dubai | Digi-Tec",
+          "description": "Rolls-Royce fuel system repair in Dubai with model-specific inspection, confirmed parts options and a clear quote at Digi-Tec, Al Quoz.",
+          "h1": [
+            "Rolls-Royce Fuel System Repair Dubai"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/brands/rolls-royce-service-dubai/fuel-system-repair",
+          "changed": false,
+          "incoming_contextual": 14,
+          "outgoing_contextual": 18,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 4250,
+          "image_count": 1
+        },
+        {
+          "url": "/brands/rolls-royce-service-dubai/mechanical-repair",
+          "title": "Rolls-Royce Engine Repair Dubai | DIGI-TEC",
+          "description": "Rolls-Royce engine, cooling and mechanical assessment in Al Quoz, Dubai. Repair scope follows vehicle identification and inspection findings.",
+          "h1": [
+            "Rolls-Royce Engine & Mechanical Repair Dubai"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/brands/rolls-royce-service-dubai/mechanical-repair",
+          "changed": false,
+          "incoming_contextual": 14,
+          "outgoing_contextual": 18,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 3656,
+          "image_count": 1
+        },
+        {
+          "url": "/brands/rolls-royce-service-dubai/oil-change",
+          "title": "Rolls-Royce Oil Change & Maintenance Dubai | DIGI-TEC",
+          "description": "Rolls-Royce oil service and maintenance assessment in Al Quoz, Dubai. Oil, filters and due items are matched to the exact combustion model.",
+          "h1": [
+            "Rolls-Royce Oil Change & Maintenance Dubai"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/brands/rolls-royce-service-dubai/oil-change",
+          "changed": false,
+          "incoming_contextual": 16,
+          "outgoing_contextual": 19,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 3723,
+          "image_count": 1
+        },
+        {
+          "url": "/brands/rolls-royce-service-dubai/steering-repair",
+          "title": "Rolls-Royce Steering Repair Dubai | Digi-Tec",
+          "description": "Rolls-Royce steering repair in Dubai with model-specific inspection, confirmed parts options and a clear quote at Digi-Tec, Al Quoz.",
+          "h1": [
+            "Rolls-Royce Steering Repair Dubai"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/brands/rolls-royce-service-dubai/steering-repair",
+          "changed": false,
+          "incoming_contextual": 14,
+          "outgoing_contextual": 18,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 4107,
+          "image_count": 1
+        },
+        {
+          "url": "/brands/rolls-royce-service-dubai/suspension-repair",
+          "title": "Rolls-Royce Suspension Repair Dubai | DIGI-TEC",
+          "description": "Rolls-Royce ride-height, air-suspension and ride-quality assessment in Al Quoz, Dubai. Fitted systems and repair scope are confirmed first.",
+          "h1": [
+            "Rolls-Royce Air Suspension Repair Dubai"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/brands/rolls-royce-service-dubai/suspension-repair",
+          "changed": false,
+          "incoming_contextual": 15,
+          "outgoing_contextual": 18,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 3624,
+          "image_count": 1
+        },
+        {
+          "url": "/brands/rolls-royce-service-dubai/tire-repair",
+          "title": "Rolls-Royce Tyre Repair Dubai | Digi-Tec",
+          "description": "Rolls-Royce tyre repair in Dubai with model-specific inspection, confirmed parts options and a clear quote at Digi-Tec, Al Quoz.",
+          "h1": [
+            "Rolls-Royce Tyre Repair Dubai"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/brands/rolls-royce-service-dubai/tire-repair",
+          "changed": false,
+          "incoming_contextual": 14,
+          "outgoing_contextual": 18,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 4076,
+          "image_count": 1
+        },
+        {
+          "url": "/brands/rolls-royce-service-dubai/transmission-repair",
+          "title": "Rolls-Royce Transmission Repair Dubai | DIGI-TEC",
+          "description": "Rolls-Royce transmission and gearbox assessment in Al Quoz, Dubai for warnings, leaks, engagement and shift-quality concerns.",
+          "h1": [
+            "Rolls-Royce Transmission Repair Dubai"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/brands/rolls-royce-service-dubai/transmission-repair",
+          "changed": false,
+          "incoming_contextual": 16,
+          "outgoing_contextual": 18,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 3584,
+          "image_count": 1
+        }
+      ]
+    },
+    "bentley": {
+      "urls_reviewed": 34,
+      "changed_urls": [
+        "/ar/blog/bentley-best-workshop-dubai",
+        "/ar/brands/bentley-service-dubai",
+        "/blog/bentley-best-workshop-dubai",
+        "/brands/bentley-service-dubai/electrical-repair"
+      ],
+      "links_checked": 590,
+      "broken_links": [],
+      "redirecting_links": [],
+      "missing_fragments": [],
+      "orphan_pages": [],
+      "max_same_language_depth": 4,
+      "faq_pairs": 159,
+      "faq_visibility_issues": [],
+      "schema_issues": [],
+      "hreflang_links_checked": 102,
+      "hreflang_issues": [],
+      "nojs_issues": [],
+      "image_issues": [],
+      "prohibited_claims": [],
+      "schema_types": {
+        "ItemPage": 4,
+        "BreadcrumbList": 34,
+        "BlogPosting": 4,
+        "Service": 32,
+        "FAQPage": 33,
+        "WebPage": 30,
+        "Brand": 30
+      },
+      "pages": [
+        {
+          "url": "/ar/blog/bentley-best-workshop-dubai",
+          "title": "ورشة Bentley في دبي | ديجي-تك",
+          "description": "ورشة متخصصة في Bentley بدبي للفحص والصيانة والإصلاح. احجز لدى ديجي-تك في القوز للحصول على تشخيص واضح وخدمة احترافية.",
+          "h1": [
+            "دليل ورشة Bentley المتخصصة في دبي"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/ar/blog/bentley-best-workshop-dubai",
+          "changed": true,
+          "incoming_contextual": 2,
+          "outgoing_contextual": 14,
+          "depth": 4,
+          "schema_types": [
+            "ItemPage",
+            "BreadcrumbList",
+            "BlogPosting",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 4227,
+          "image_count": 0
+        },
+        {
+          "url": "/ar/blog/bentley-continental-gt-service-dubai-guide",
+          "title": "صيانة بنتلي كونتيننتال GT دبي | الجيل والسجل والحالة",
+          "description": "دليل صيانة كونتيننتال GT في دبي: اختلاف الأجيال والتعليق والتبريد والناقل والبطارية وفحص السيارات قليلة الاستخدام قبل الإصلاح.",
+          "h1": [
+            "صيانة بنتلي كونتيننتال GT في دبي: دليل بحسب الجيل"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/ar/blog/bentley-continental-gt-service-dubai-guide",
+          "changed": false,
+          "incoming_contextual": 2,
+          "outgoing_contextual": 3,
+          "depth": 4,
+          "schema_types": [
+            "ItemPage",
+            "BreadcrumbList",
+            "BlogPosting"
+          ],
+          "body_length": 2238,
+          "image_count": 0
+        },
+        {
+          "url": "/ar/brands/bentley-service-dubai",
+          "title": "إصلاح وصيانة Bentley في دبي | مركز ديجي-تك",
+          "description": "إصلاح وصيانة Bentley في دبي: تشخيص وصيانة وفرامل وناقل حركة وتعليق وتكييف مع قطع بالمواصفات المناسبة لدى مركز ديجي-تك.",
+          "h1": [
+            "Bentley للإصلاح والصيانة في دبي"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/ar/brands/bentley-service-dubai",
+          "changed": true,
+          "incoming_contextual": 73,
+          "outgoing_contextual": 32,
+          "depth": 1,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 5806,
+          "image_count": 18
+        },
+        {
+          "url": "/ar/brands/bentley-service-dubai/ac-repair",
+          "title": "إصلاح التكييف Bentley في دبي | ديجي-تك",
+          "description": "إصلاح التكييف Bentley في دبي. فحص ضعف التبريد وتفاوت الهواء والتسرب، مع التأكد من نوع غاز التبريد المكتوب على السيارة.",
+          "h1": [
+            "إصلاح التكييف Bentley في دبي"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/ar/brands/bentley-service-dubai/ac-repair",
+          "changed": false,
+          "incoming_contextual": 14,
+          "outgoing_contextual": 16,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 2680,
+          "image_count": 1
+        },
+        {
+          "url": "/ar/brands/bentley-service-dubai/battery-replacement",
+          "title": "تبديل البطارية Bentley في دبي | ديجي-تك",
+          "description": "تبديل البطارية Bentley في دبي. فحص البطارية منخفضة الجهد ونظام الشحن والتوصيلات قبل تأكيد الحاجة إلى الاستبدال والمواصفة المناسبة.",
+          "h1": [
+            "تبديل البطارية Bentley في دبي"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/ar/brands/bentley-service-dubai/battery-replacement",
+          "changed": false,
+          "incoming_contextual": 14,
+          "outgoing_contextual": 16,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 2709,
+          "image_count": 1
+        },
+        {
+          "url": "/ar/brands/bentley-service-dubai/body-repair",
+          "title": "إصلاح الهيكل Bentley في دبي | ديجي-تك",
+          "description": "إصلاح الهيكل Bentley في دبي. تقييم تلف الألواح والطلاء والزينة لتحديد الإصلاح أو الاستبدال، وما قد يتطلب فحصاً إضافياً بعد الفك.",
+          "h1": [
+            "إصلاح الهيكل Bentley في دبي"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/ar/brands/bentley-service-dubai/body-repair",
+          "changed": false,
+          "incoming_contextual": 14,
+          "outgoing_contextual": 16,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 2668,
+          "image_count": 1
+        },
+        {
+          "url": "/ar/brands/bentley-service-dubai/brake-repair",
+          "title": "إصلاح الفرامل Bentley في دبي | ديجي-تك",
+          "description": "إصلاح الفرامل Bentley في دبي. فحص الضجيج والاهتزاز وتحذيرات الفرامل، مع تحديد نوع الأقراص والفحمات وحالتها قبل اقتراح العمل.",
+          "h1": [
+            "إصلاح الفرامل Bentley في دبي"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/ar/brands/bentley-service-dubai/brake-repair",
+          "changed": false,
+          "incoming_contextual": 14,
+          "outgoing_contextual": 16,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 2661,
+          "image_count": 1
+        },
+        {
+          "url": "/ar/brands/bentley-service-dubai/electrical-repair",
+          "title": "إصلاح الكهرباء Bentley في دبي | ديجي-تك",
+          "description": "إصلاح الكهرباء Bentley في دبي. تتبع أعطال التوصيلات والدوائر والحساسات ووظائف الراحة اعتماداً على الأعراض والاختبارات المناسبة.",
+          "h1": [
+            "إصلاح الكهرباء Bentley في دبي"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/ar/brands/bentley-service-dubai/electrical-repair",
+          "changed": false,
+          "incoming_contextual": 14,
+          "outgoing_contextual": 16,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 2722,
+          "image_count": 1
+        },
+        {
+          "url": "/ar/brands/bentley-service-dubai/engine-diagnostics",
+          "title": "تشخيص المحرك Bentley في دبي | ديجي-تك",
+          "description": "تشخيص المحرك Bentley في دبي. ربط رسائل التحذير وبيانات الأعطال بالفحص الفعلي لتحديد سبب المشكلة قبل اقتراح تبديل القطع.",
+          "h1": [
+            "تشخيص المحرك Bentley في دبي"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/ar/brands/bentley-service-dubai/engine-diagnostics",
+          "changed": false,
+          "incoming_contextual": 14,
+          "outgoing_contextual": 16,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 2666,
+          "image_count": 1
+        },
+        {
+          "url": "/ar/brands/bentley-service-dubai/exhaust-repair",
+          "title": "إصلاح العادم Bentley في دبي | ديجي-تك",
+          "description": "إصلاح العادم Bentley في دبي. فحص التسرب والاهتزاز والضجيج وتحذيرات العادم قبل اقتراح إصلاح المكون المتأثر.",
+          "h1": [
+            "إصلاح العادم Bentley في دبي"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/ar/brands/bentley-service-dubai/exhaust-repair",
+          "changed": false,
+          "incoming_contextual": 14,
+          "outgoing_contextual": 16,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 2620,
+          "image_count": 1
+        },
+        {
+          "url": "/ar/brands/bentley-service-dubai/fuel-system-repair",
+          "title": "إصلاح نظام الوقود Bentley في دبي | ديجي-تك",
+          "description": "إصلاح نظام الوقود Bentley في دبي. تقييم صعوبة التشغيل والتقطيع وأعطال ضغط الوقود والبخاخات باختبارات تحدد السبب قبل الاستبدال.",
+          "h1": [
+            "إصلاح نظام الوقود Bentley في دبي"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/ar/brands/bentley-service-dubai/fuel-system-repair",
+          "changed": false,
+          "incoming_contextual": 14,
+          "outgoing_contextual": 16,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 2703,
+          "image_count": 1
+        },
+        {
+          "url": "/ar/brands/bentley-service-dubai/mechanical-repair",
+          "title": "الإصلاح الميكانيكي Bentley في دبي | ديجي-تك",
+          "description": "الإصلاح الميكانيكي Bentley في دبي. تقييم التسرب والضجيج والاهتزاز ومشاكل التبريد أو الحركة لتحديد نطاق الإصلاح من نتائج الفحص.",
+          "h1": [
+            "الإصلاح الميكانيكي Bentley في دبي"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/ar/brands/bentley-service-dubai/mechanical-repair",
+          "changed": false,
+          "incoming_contextual": 14,
+          "outgoing_contextual": 16,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 2714,
+          "image_count": 1
+        },
+        {
+          "url": "/ar/brands/bentley-service-dubai/oil-change",
+          "title": "تغيير الزيت Bentley في دبي | ديجي-تك",
+          "description": "تغيير الزيت Bentley في دبي. تحديد مواصفة الزيت والكمية والفلتر والبنود المستحقة من بيانات السيارة وسجل صيانتها.",
+          "h1": [
+            "تغيير الزيت Bentley في دبي"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/ar/brands/bentley-service-dubai/oil-change",
+          "changed": false,
+          "incoming_contextual": 14,
+          "outgoing_contextual": 16,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 2659,
+          "image_count": 1
+        },
+        {
+          "url": "/ar/brands/bentley-service-dubai/steering-repair",
+          "title": "إصلاح نظام التوجيه Bentley في دبي | ديجي-تك",
+          "description": "إصلاح نظام التوجيه Bentley في دبي. فحص ثقل المقود والضجيج والانحراف، ومراجعة تأثير الإطارات والتعليق والزوايا في التوجيه.",
+          "h1": [
+            "إصلاح نظام التوجيه Bentley في دبي"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/ar/brands/bentley-service-dubai/steering-repair",
+          "changed": false,
+          "incoming_contextual": 14,
+          "outgoing_contextual": 16,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 2678,
+          "image_count": 1
+        },
+        {
+          "url": "/ar/brands/bentley-service-dubai/suspension-repair",
+          "title": "إصلاح التعليق Bentley في دبي | ديجي-تك",
+          "description": "إصلاح التعليق Bentley في دبي. تقييم تغير ارتفاع السيارة والضجيج والراحة والتآكل غير المنتظم للإطارات حسب نظام التعليق المركب.",
+          "h1": [
+            "إصلاح التعليق Bentley في دبي"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/ar/brands/bentley-service-dubai/suspension-repair",
+          "changed": false,
+          "incoming_contextual": 14,
+          "outgoing_contextual": 16,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 2690,
+          "image_count": 1
+        },
+        {
+          "url": "/ar/brands/bentley-service-dubai/tire-repair",
+          "title": "إصلاح الإطارات Bentley في دبي | ديجي-تك",
+          "description": "إصلاح الإطارات Bentley في دبي. فحص فقدان الضغط والثقب والاهتزاز وحالة الإطار لتحديد صلاحية الإصلاح أو مواصفة الاستبدال.",
+          "h1": [
+            "إصلاح الإطارات Bentley في دبي"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/ar/brands/bentley-service-dubai/tire-repair",
+          "changed": false,
+          "incoming_contextual": 14,
+          "outgoing_contextual": 16,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 2612,
+          "image_count": 1
+        },
+        {
+          "url": "/ar/brands/bentley-service-dubai/transmission-repair",
+          "title": "إصلاح ناقل الحركة Bentley في دبي | ديجي-تك",
+          "description": "إصلاح ناقل الحركة Bentley في دبي. تقييم تأخر التعشيق وتغير النقل والتسرب والتحذيرات حسب ناقل الحركة المركب وسجل الخدمة.",
+          "h1": [
+            "إصلاح ناقل الحركة Bentley في دبي"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/ar/brands/bentley-service-dubai/transmission-repair",
+          "changed": false,
+          "incoming_contextual": 14,
+          "outgoing_contextual": 16,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 2674,
+          "image_count": 1
+        },
+        {
+          "url": "/blog/bentley-best-workshop-dubai",
+          "title": "Bentley Workshop Selection Guide Dubai | DIGI-TEC",
+          "description": "Compare Bentley workshops in Dubai by inspection scope, model-specific capability, parts and estimate clarity. Prepare a useful service enquiry.",
+          "h1": [
+            "Choosing a Bentley Workshop in Dubai: Owner Guide"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/blog/bentley-best-workshop-dubai",
+          "changed": true,
+          "incoming_contextual": 3,
+          "outgoing_contextual": 14,
+          "depth": 2,
+          "schema_types": [
+            "ItemPage",
+            "BreadcrumbList",
+            "BlogPosting",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 5711,
+          "image_count": 0
+        },
+        {
+          "url": "/blog/bentley-continental-gt-service-dubai-guide",
+          "title": "Bentley Continental GT Service Dubai | Maintenance Guide",
+          "description": "Bentley Continental GT maintenance in Dubai: vehicle-specific service planning, suspension, cooling, brakes, gearbox and diagnostic concerns explained for owners.",
+          "h1": [
+            "Bentley Continental GT Service in Dubai: Owner Guide"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/blog/bentley-continental-gt-service-dubai-guide",
+          "changed": false,
+          "incoming_contextual": 3,
+          "outgoing_contextual": 3,
+          "depth": 2,
+          "schema_types": [
+            "ItemPage",
+            "BreadcrumbList",
+            "BlogPosting",
+            "FAQPage"
+          ],
+          "body_length": 3458,
+          "image_count": 0
+        },
+        {
+          "url": "/brands/bentley-service-dubai",
+          "title": "Bentley Service & Repair Dubai | DIGI-TEC",
+          "description": "Bentley service and repair in Al Quoz, Dubai for Continental GT, Flying Spur and Bentayga. Independent maintenance, diagnostics and repair estimates.",
+          "h1": [
+            "Bentley Service & Repair Dubai"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/brands/bentley-service-dubai",
+          "changed": false,
+          "incoming_contextual": 71,
+          "outgoing_contextual": 37,
+          "depth": 1,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 9923,
+          "image_count": 19
+        },
+        {
+          "url": "/brands/bentley-service-dubai/ac-repair",
+          "title": "Bentley AC Repair Dubai | DIGI-TEC",
+          "description": "Bentley air-conditioning assessment in Al Quoz, Dubai for weak cooling, leaks, airflow and compressor concerns. Refrigerant and repair scope are confirmed per vehicle.",
+          "h1": [
+            "Bentley AC Repair Dubai"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/brands/bentley-service-dubai/ac-repair",
+          "changed": false,
+          "incoming_contextual": 14,
+          "outgoing_contextual": 16,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 2980,
+          "image_count": 1
+        },
+        {
+          "url": "/brands/bentley-service-dubai/battery-replacement",
+          "title": "Bentley Battery Replacement Dubai | Digi-Tec",
+          "description": "Bentley battery replacement in Dubai with model-specific inspection, confirmed parts options and a clear quote at Digi-Tec, Al Quoz.",
+          "h1": [
+            "Bentley Battery Replacement Dubai"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/brands/bentley-service-dubai/battery-replacement",
+          "changed": false,
+          "incoming_contextual": 14,
+          "outgoing_contextual": 16,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 3969,
+          "image_count": 1
+        },
+        {
+          "url": "/brands/bentley-service-dubai/body-repair",
+          "title": "Bentley Body Repair Dubai | Digi-Tec",
+          "description": "Bentley body repair in Dubai with model-specific inspection, confirmed parts options and a clear quote at Digi-Tec, Al Quoz.",
+          "h1": [
+            "Bentley Body Repair Dubai"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/brands/bentley-service-dubai/body-repair",
+          "changed": false,
+          "incoming_contextual": 14,
+          "outgoing_contextual": 19,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 4093,
+          "image_count": 1
+        },
+        {
+          "url": "/brands/bentley-service-dubai/brake-repair",
+          "title": "Bentley Brake Repair Dubai | Digi-Tec",
+          "description": "Bentley brake repair in Dubai with model-specific inspection, confirmed parts options and a clear quote at Digi-Tec, Al Quoz.",
+          "h1": [
+            "Bentley Brake Repair Dubai"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/brands/bentley-service-dubai/brake-repair",
+          "changed": false,
+          "incoming_contextual": 14,
+          "outgoing_contextual": 16,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 4845,
+          "image_count": 1
+        },
+        {
+          "url": "/brands/bentley-service-dubai/electrical-repair",
+          "title": "Bentley Electrical Repair Dubai | Digi-Tec",
+          "description": "Bentley electrical repair in Dubai with model-specific inspection, confirmed parts options and a clear quote at Digi-Tec, Al Quoz.",
+          "h1": [
+            "Bentley Electrical Repair Dubai"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/brands/bentley-service-dubai/electrical-repair",
+          "changed": true,
+          "incoming_contextual": 15,
+          "outgoing_contextual": 17,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 6669,
+          "image_count": 1
+        },
+        {
+          "url": "/brands/bentley-service-dubai/engine-diagnostics",
+          "title": "Bentley Engine Diagnostics Dubai | Digi-Tec",
+          "description": "Bentley engine diagnostics in Dubai with model-specific inspection, confirmed parts options and a clear quote at Digi-Tec, Al Quoz.",
+          "h1": [
+            "Bentley Engine Diagnostics Dubai"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/brands/bentley-service-dubai/engine-diagnostics",
+          "changed": false,
+          "incoming_contextual": 14,
+          "outgoing_contextual": 16,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 4692,
+          "image_count": 1
+        },
+        {
+          "url": "/brands/bentley-service-dubai/exhaust-repair",
+          "title": "Bentley Exhaust Repair Dubai | Digi-Tec",
+          "description": "Bentley exhaust repair in Dubai with model-specific inspection, confirmed parts options and a clear quote at Digi-Tec, Al Quoz.",
+          "h1": [
+            "Bentley Exhaust Repair Dubai"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/brands/bentley-service-dubai/exhaust-repair",
+          "changed": false,
+          "incoming_contextual": 14,
+          "outgoing_contextual": 16,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 3772,
+          "image_count": 1
+        },
+        {
+          "url": "/brands/bentley-service-dubai/fuel-system-repair",
+          "title": "Bentley Fuel System Repair Dubai | Digi-Tec",
+          "description": "Bentley fuel system repair in Dubai with model-specific inspection, confirmed parts options and a clear quote at Digi-Tec, Al Quoz.",
+          "h1": [
+            "Bentley Fuel System Repair Dubai"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/brands/bentley-service-dubai/fuel-system-repair",
+          "changed": false,
+          "incoming_contextual": 14,
+          "outgoing_contextual": 16,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 3836,
+          "image_count": 1
+        },
+        {
+          "url": "/brands/bentley-service-dubai/mechanical-repair",
+          "title": "Bentley Mechanical Repair Dubai | Digi-Tec",
+          "description": "Bentley mechanical repair in Dubai with model-specific inspection, confirmed parts options and a clear quote at Digi-Tec, Al Quoz.",
+          "h1": [
+            "Bentley Mechanical Repair Dubai"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/brands/bentley-service-dubai/mechanical-repair",
+          "changed": false,
+          "incoming_contextual": 14,
+          "outgoing_contextual": 16,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 3916,
+          "image_count": 1
+        },
+        {
+          "url": "/brands/bentley-service-dubai/oil-change",
+          "title": "Bentley Oil Change Dubai | Digi-Tec",
+          "description": "Bentley oil change in Dubai with model-specific inspection, confirmed parts options and a clear quote at Digi-Tec, Al Quoz.",
+          "h1": [
+            "Bentley Oil Change Dubai"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/brands/bentley-service-dubai/oil-change",
+          "changed": false,
+          "incoming_contextual": 15,
+          "outgoing_contextual": 17,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 4752,
+          "image_count": 1
+        },
+        {
+          "url": "/brands/bentley-service-dubai/steering-repair",
+          "title": "Bentley Steering Repair Dubai | Digi-Tec",
+          "description": "Bentley steering repair in Dubai with model-specific inspection, confirmed parts options and a clear quote at Digi-Tec, Al Quoz.",
+          "h1": [
+            "Bentley Steering Repair Dubai"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/brands/bentley-service-dubai/steering-repair",
+          "changed": false,
+          "incoming_contextual": 14,
+          "outgoing_contextual": 16,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 3693,
+          "image_count": 1
+        },
+        {
+          "url": "/brands/bentley-service-dubai/suspension-repair",
+          "title": "Bentley Suspension Repair Dubai | DIGI-TEC",
+          "description": "Bentley suspension, ride-height and ride-quality assessment in Al Quoz, Dubai. Fitted air suspension, damping and 48-volt systems are identified first.",
+          "h1": [
+            "Bentley Suspension Repair Dubai"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/brands/bentley-service-dubai/suspension-repair",
+          "changed": false,
+          "incoming_contextual": 15,
+          "outgoing_contextual": 17,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 3283,
+          "image_count": 1
+        },
+        {
+          "url": "/brands/bentley-service-dubai/tire-repair",
+          "title": "Bentley Tyre Repair Dubai | Digi-Tec",
+          "description": "Bentley tyre repair in Dubai with model-specific inspection, confirmed parts options and a clear quote at Digi-Tec, Al Quoz.",
+          "h1": [
+            "Bentley Tyre Repair Dubai"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/brands/bentley-service-dubai/tire-repair",
+          "changed": false,
+          "incoming_contextual": 14,
+          "outgoing_contextual": 16,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 3662,
+          "image_count": 1
+        },
+        {
+          "url": "/brands/bentley-service-dubai/transmission-repair",
+          "title": "Bentley Transmission Repair Dubai | DIGI-TEC",
+          "description": "Bentley gearbox and transmission assessment in Al Quoz, Dubai. Warning, leak, engagement and shift concerns are assessed for the exact vehicle.",
+          "h1": [
+            "Bentley Transmission Repair Dubai"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/brands/bentley-service-dubai/transmission-repair",
+          "changed": false,
+          "incoming_contextual": 15,
+          "outgoing_contextual": 16,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 3236,
+          "image_count": 1
+        }
+      ]
+    },
+    "maybach": {
+      "urls_reviewed": 34,
+      "changed_urls": [
+        "/ar/blog/maybach-best-workshop-dubai",
+        "/ar/brands/maybach-service-dubai",
+        "/blog/maybach-best-workshop-dubai",
+        "/brands/maybach-service-dubai"
+      ],
+      "links_checked": 584,
+      "broken_links": [],
+      "redirecting_links": [],
+      "missing_fragments": [],
+      "orphan_pages": [],
+      "max_same_language_depth": 4,
+      "faq_pairs": 159,
+      "faq_visibility_issues": [],
+      "schema_issues": [],
+      "hreflang_links_checked": 102,
+      "hreflang_issues": [],
+      "nojs_issues": [],
+      "image_issues": [],
+      "prohibited_claims": [],
+      "schema_types": {
+        "ItemPage": 4,
+        "BreadcrumbList": 34,
+        "BlogPosting": 4,
+        "Service": 32,
+        "FAQPage": 33,
+        "WebPage": 30,
+        "Brand": 30
+      },
+      "pages": [
+        {
+          "url": "/ar/blog/maybach-best-workshop-dubai",
+          "title": "ورشة Maybach في دبي | ديجي-تك",
+          "description": "ورشة متخصصة في Maybach بدبي للفحص والصيانة والإصلاح. احجز لدى ديجي-تك في القوز للحصول على تشخيص واضح وخدمة احترافية.",
+          "h1": [
+            "دليل ورشة Maybach المتخصصة في دبي"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/ar/blog/maybach-best-workshop-dubai",
+          "changed": true,
+          "incoming_contextual": 2,
+          "outgoing_contextual": 14,
+          "depth": 4,
+          "schema_types": [
+            "ItemPage",
+            "BreadcrumbList",
+            "BlogPosting",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 4240,
+          "image_count": 0
+        },
+        {
+          "url": "/ar/blog/maybach-s580-service-dubai-guide",
+          "title": "صيانة مرسيدس مايباخ دبي | التعليق والمقصورة الخلفية",
+          "description": "دليل صيانة مايباخ في دبي: التعليق المركب والمكيف والبطارية وأنظمة المقاعد الخلفية وتأثير ساعات الوقوف على خطة الخدمة.",
+          "h1": [
+            "صيانة مرسيدس مايباخ في دبي: الراحة والمقصورة الخلفية"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/ar/blog/maybach-s580-service-dubai-guide",
+          "changed": false,
+          "incoming_contextual": 2,
+          "outgoing_contextual": 3,
+          "depth": 4,
+          "schema_types": [
+            "ItemPage",
+            "BreadcrumbList",
+            "BlogPosting"
+          ],
+          "body_length": 2114,
+          "image_count": 0
+        },
+        {
+          "url": "/ar/brands/maybach-service-dubai",
+          "title": "إصلاح وصيانة Maybach في دبي | مركز ديجي-تك",
+          "description": "إصلاح وصيانة Maybach في دبي: تشخيص وصيانة وفرامل وناقل حركة وتعليق وتكييف مع قطع بالمواصفات المناسبة لدى مركز ديجي-تك.",
+          "h1": [
+            "Maybach للإصلاح والصيانة في دبي"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/ar/brands/maybach-service-dubai",
+          "changed": true,
+          "incoming_contextual": 74,
+          "outgoing_contextual": 32,
+          "depth": 1,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 5813,
+          "image_count": 18
+        },
+        {
+          "url": "/ar/brands/maybach-service-dubai/ac-repair",
+          "title": "إصلاح التكييف Mercedes-Maybach في دبي | ديجي-تك",
+          "description": "إصلاح التكييف Mercedes-Maybach في دبي. فحص ضعف التبريد وتفاوت الهواء والتسرب، مع التأكد من نوع غاز التبريد المكتوب على السيارة.",
+          "h1": [
+            "إصلاح التكييف Mercedes-Maybach في دبي"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/ar/brands/maybach-service-dubai/ac-repair",
+          "changed": false,
+          "incoming_contextual": 14,
+          "outgoing_contextual": 16,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 2922,
+          "image_count": 1
+        },
+        {
+          "url": "/ar/brands/maybach-service-dubai/battery-replacement",
+          "title": "تبديل البطارية Mercedes-Maybach في دبي | ديجي-تك",
+          "description": "تبديل البطارية Mercedes-Maybach في دبي. فحص البطارية منخفضة الجهد ونظام الشحن والتوصيلات قبل تأكيد الحاجة إلى الاستبدال والمواصفة المناسبة.",
+          "h1": [
+            "تبديل البطارية Mercedes-Maybach في دبي"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/ar/brands/maybach-service-dubai/battery-replacement",
+          "changed": false,
+          "incoming_contextual": 14,
+          "outgoing_contextual": 16,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 2951,
+          "image_count": 1
+        },
+        {
+          "url": "/ar/brands/maybach-service-dubai/body-repair",
+          "title": "إصلاح الهيكل Mercedes-Maybach في دبي | ديجي-تك",
+          "description": "إصلاح الهيكل Mercedes-Maybach في دبي. تقييم تلف الألواح والطلاء والزينة لتحديد الإصلاح أو الاستبدال، وما قد يتطلب فحصاً إضافياً بعد الفك.",
+          "h1": [
+            "إصلاح الهيكل Mercedes-Maybach في دبي"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/ar/brands/maybach-service-dubai/body-repair",
+          "changed": false,
+          "incoming_contextual": 14,
+          "outgoing_contextual": 16,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 2910,
+          "image_count": 1
+        },
+        {
+          "url": "/ar/brands/maybach-service-dubai/brake-repair",
+          "title": "إصلاح الفرامل Mercedes-Maybach في دبي | ديجي-تك",
+          "description": "إصلاح الفرامل Mercedes-Maybach في دبي. فحص الضجيج والاهتزاز وتحذيرات الفرامل، مع تحديد نوع الأقراص والفحمات وحالتها قبل اقتراح العمل.",
+          "h1": [
+            "إصلاح الفرامل Mercedes-Maybach في دبي"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/ar/brands/maybach-service-dubai/brake-repair",
+          "changed": false,
+          "incoming_contextual": 14,
+          "outgoing_contextual": 16,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 2903,
+          "image_count": 1
+        },
+        {
+          "url": "/ar/brands/maybach-service-dubai/electrical-repair",
+          "title": "إصلاح الكهرباء Mercedes-Maybach في دبي | ديجي-تك",
+          "description": "إصلاح الكهرباء Mercedes-Maybach في دبي. تتبع أعطال التوصيلات والدوائر والحساسات ووظائف الراحة اعتماداً على الأعراض والاختبارات المناسبة.",
+          "h1": [
+            "إصلاح الكهرباء Mercedes-Maybach في دبي"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/ar/brands/maybach-service-dubai/electrical-repair",
+          "changed": false,
+          "incoming_contextual": 14,
+          "outgoing_contextual": 16,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 2964,
+          "image_count": 1
+        },
+        {
+          "url": "/ar/brands/maybach-service-dubai/engine-diagnostics",
+          "title": "تشخيص المحرك Mercedes-Maybach في دبي | ديجي-تك",
+          "description": "تشخيص المحرك Mercedes-Maybach في دبي. ربط رسائل التحذير وبيانات الأعطال بالفحص الفعلي لتحديد سبب المشكلة قبل اقتراح تبديل القطع.",
+          "h1": [
+            "تشخيص المحرك Mercedes-Maybach في دبي"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/ar/brands/maybach-service-dubai/engine-diagnostics",
+          "changed": false,
+          "incoming_contextual": 14,
+          "outgoing_contextual": 16,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 2908,
+          "image_count": 1
+        },
+        {
+          "url": "/ar/brands/maybach-service-dubai/exhaust-repair",
+          "title": "إصلاح العادم Mercedes-Maybach في دبي | ديجي-تك",
+          "description": "إصلاح العادم Mercedes-Maybach في دبي. فحص التسرب والاهتزاز والضجيج وتحذيرات العادم قبل اقتراح إصلاح المكون المتأثر.",
+          "h1": [
+            "إصلاح العادم Mercedes-Maybach في دبي"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/ar/brands/maybach-service-dubai/exhaust-repair",
+          "changed": false,
+          "incoming_contextual": 14,
+          "outgoing_contextual": 16,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 2862,
+          "image_count": 1
+        },
+        {
+          "url": "/ar/brands/maybach-service-dubai/fuel-system-repair",
+          "title": "إصلاح نظام الوقود Mercedes-Maybach في دبي | ديجي-تك",
+          "description": "إصلاح نظام الوقود Mercedes-Maybach في دبي. تقييم صعوبة التشغيل والتقطيع وأعطال ضغط الوقود والبخاخات باختبارات تحدد السبب قبل الاستبدال.",
+          "h1": [
+            "إصلاح نظام الوقود Mercedes-Maybach في دبي"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/ar/brands/maybach-service-dubai/fuel-system-repair",
+          "changed": false,
+          "incoming_contextual": 14,
+          "outgoing_contextual": 16,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 2945,
+          "image_count": 1
+        },
+        {
+          "url": "/ar/brands/maybach-service-dubai/mechanical-repair",
+          "title": "الإصلاح الميكانيكي Mercedes-Maybach في دبي | ديجي-تك",
+          "description": "الإصلاح الميكانيكي Mercedes-Maybach في دبي. تقييم التسرب والضجيج والاهتزاز ومشاكل التبريد أو الحركة لتحديد نطاق الإصلاح من نتائج الفحص.",
+          "h1": [
+            "الإصلاح الميكانيكي Mercedes-Maybach في دبي"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/ar/brands/maybach-service-dubai/mechanical-repair",
+          "changed": false,
+          "incoming_contextual": 14,
+          "outgoing_contextual": 16,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 2956,
+          "image_count": 1
+        },
+        {
+          "url": "/ar/brands/maybach-service-dubai/oil-change",
+          "title": "تغيير الزيت Mercedes-Maybach في دبي | ديجي-تك",
+          "description": "تغيير الزيت Mercedes-Maybach في دبي. تحديد مواصفة الزيت والكمية والفلتر والبنود المستحقة من بيانات السيارة وسجل صيانتها.",
+          "h1": [
+            "تغيير الزيت Mercedes-Maybach في دبي"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/ar/brands/maybach-service-dubai/oil-change",
+          "changed": false,
+          "incoming_contextual": 14,
+          "outgoing_contextual": 16,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 2901,
+          "image_count": 1
+        },
+        {
+          "url": "/ar/brands/maybach-service-dubai/steering-repair",
+          "title": "إصلاح نظام التوجيه Mercedes-Maybach في دبي | ديجي-تك",
+          "description": "إصلاح نظام التوجيه Mercedes-Maybach في دبي. فحص ثقل المقود والضجيج والانحراف، ومراجعة تأثير الإطارات والتعليق والزوايا في التوجيه.",
+          "h1": [
+            "إصلاح نظام التوجيه Mercedes-Maybach في دبي"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/ar/brands/maybach-service-dubai/steering-repair",
+          "changed": false,
+          "incoming_contextual": 14,
+          "outgoing_contextual": 16,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 2920,
+          "image_count": 1
+        },
+        {
+          "url": "/ar/brands/maybach-service-dubai/suspension-repair",
+          "title": "إصلاح التعليق Mercedes-Maybach في دبي | ديجي-تك",
+          "description": "إصلاح التعليق Mercedes-Maybach في دبي. تقييم تغير ارتفاع السيارة والضجيج والراحة والتآكل غير المنتظم للإطارات حسب نظام التعليق المركب.",
+          "h1": [
+            "إصلاح التعليق Mercedes-Maybach في دبي"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/ar/brands/maybach-service-dubai/suspension-repair",
+          "changed": false,
+          "incoming_contextual": 14,
+          "outgoing_contextual": 16,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 2932,
+          "image_count": 1
+        },
+        {
+          "url": "/ar/brands/maybach-service-dubai/tire-repair",
+          "title": "إصلاح الإطارات Mercedes-Maybach في دبي | ديجي-تك",
+          "description": "إصلاح الإطارات Mercedes-Maybach في دبي. فحص فقدان الضغط والثقب والاهتزاز وحالة الإطار لتحديد صلاحية الإصلاح أو مواصفة الاستبدال.",
+          "h1": [
+            "إصلاح الإطارات Mercedes-Maybach في دبي"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/ar/brands/maybach-service-dubai/tire-repair",
+          "changed": false,
+          "incoming_contextual": 14,
+          "outgoing_contextual": 16,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 2854,
+          "image_count": 1
+        },
+        {
+          "url": "/ar/brands/maybach-service-dubai/transmission-repair",
+          "title": "إصلاح ناقل الحركة Mercedes-Maybach في دبي | ديجي-تك",
+          "description": "إصلاح ناقل الحركة Mercedes-Maybach في دبي. تقييم تأخر التعشيق وتغير النقل والتسرب والتحذيرات حسب ناقل الحركة المركب وسجل الخدمة.",
+          "h1": [
+            "إصلاح ناقل الحركة Mercedes-Maybach في دبي"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/ar/brands/maybach-service-dubai/transmission-repair",
+          "changed": false,
+          "incoming_contextual": 14,
+          "outgoing_contextual": 16,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 2916,
+          "image_count": 1
+        },
+        {
+          "url": "/blog/maybach-best-workshop-dubai",
+          "title": "Maybach Workshop Selection Guide Dubai | DIGI-TEC",
+          "description": "Compare Maybach workshops in Dubai by inspection scope, model-specific capability, parts and estimate clarity. Prepare a useful service enquiry.",
+          "h1": [
+            "Choosing a Maybach Workshop in Dubai: Owner Guide"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/blog/maybach-best-workshop-dubai",
+          "changed": true,
+          "incoming_contextual": 2,
+          "outgoing_contextual": 14,
+          "depth": 4,
+          "schema_types": [
+            "ItemPage",
+            "BreadcrumbList",
+            "BlogPosting",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 5800,
+          "image_count": 0
+        },
+        {
+          "url": "/blog/maybach-s580-service-dubai-guide",
+          "title": "Maybach Service Dubai | Mercedes-Maybach Maintenance Guide",
+          "description": "Mercedes-Maybach service in Dubai: AIRMATIC and E-ACTIVE suspension, cooling, rear cabin electronics, brakes and XENTRY diagnostics explained.",
+          "h1": [
+            "Mercedes-Maybach Service in Dubai: Owner Guide"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/blog/maybach-s580-service-dubai-guide",
+          "changed": false,
+          "incoming_contextual": 3,
+          "outgoing_contextual": 3,
+          "depth": 2,
+          "schema_types": [
+            "ItemPage",
+            "BreadcrumbList",
+            "BlogPosting",
+            "FAQPage"
+          ],
+          "body_length": 3129,
+          "image_count": 0
+        },
+        {
+          "url": "/brands/maybach-service-dubai",
+          "title": "Maybach Service & Repair Dubai | Digi-Tec Workshop",
+          "description": "Maybach service and repair in Dubai for S-Class, GLS, S580 and S680. Vehicle-specific diagnostics, suspension, AC and mechanical care in Al Quoz.",
+          "h1": [
+            "Maybach Repair & Service Dubai"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/brands/maybach-service-dubai",
+          "changed": true,
+          "incoming_contextual": 75,
+          "outgoing_contextual": 35,
+          "depth": 1,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 8931,
+          "image_count": 18
+        },
+        {
+          "url": "/brands/maybach-service-dubai/ac-repair",
+          "title": "Mercedes-Maybach AC Repair Dubai | Digi-Tec",
+          "description": "Mercedes-Maybach ac repair in Dubai with model-specific inspection, confirmed parts options and a clear quote at Digi-Tec, Al Quoz.",
+          "h1": [
+            "Mercedes-Maybach AC Repair Dubai"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/brands/maybach-service-dubai/ac-repair",
+          "changed": false,
+          "incoming_contextual": 14,
+          "outgoing_contextual": 16,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 5169,
+          "image_count": 1
+        },
+        {
+          "url": "/brands/maybach-service-dubai/battery-replacement",
+          "title": "Mercedes-Maybach Battery Replacement Dubai | Digi-Tec",
+          "description": "Mercedes-Maybach battery replacement in Dubai with model-specific inspection, confirmed parts options and a clear quote at Digi-Tec, Al Quoz.",
+          "h1": [
+            "Mercedes-Maybach Battery Replacement Dubai"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/brands/maybach-service-dubai/battery-replacement",
+          "changed": false,
+          "incoming_contextual": 14,
+          "outgoing_contextual": 16,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 4307,
+          "image_count": 1
+        },
+        {
+          "url": "/brands/maybach-service-dubai/body-repair",
+          "title": "Mercedes-Maybach Body Repair Dubai | Digi-Tec",
+          "description": "Mercedes-Maybach body repair in Dubai with model-specific inspection, confirmed parts options and a clear quote at Digi-Tec, Al Quoz.",
+          "h1": [
+            "Mercedes-Maybach Body Repair Dubai"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/brands/maybach-service-dubai/body-repair",
+          "changed": false,
+          "incoming_contextual": 14,
+          "outgoing_contextual": 19,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 4404,
+          "image_count": 1
+        },
+        {
+          "url": "/brands/maybach-service-dubai/brake-repair",
+          "title": "Mercedes-Maybach Brake Repair Dubai | Digi-Tec",
+          "description": "Mercedes-Maybach brake repair in Dubai with model-specific inspection, confirmed parts options and a clear quote at Digi-Tec, Al Quoz.",
+          "h1": [
+            "Mercedes-Maybach Brake Repair Dubai"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/brands/maybach-service-dubai/brake-repair",
+          "changed": false,
+          "incoming_contextual": 14,
+          "outgoing_contextual": 16,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 5167,
+          "image_count": 1
+        },
+        {
+          "url": "/brands/maybach-service-dubai/electrical-repair",
+          "title": "Mercedes-Maybach Electrical Repair Dubai | Digi-Tec",
+          "description": "Mercedes-Maybach electrical repair in Dubai with model-specific inspection, confirmed parts options and a clear quote at Digi-Tec, Al Quoz.",
+          "h1": [
+            "Mercedes-Maybach Electrical Repair Dubai"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/brands/maybach-service-dubai/electrical-repair",
+          "changed": false,
+          "incoming_contextual": 14,
+          "outgoing_contextual": 16,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 4241,
+          "image_count": 1
+        },
+        {
+          "url": "/brands/maybach-service-dubai/engine-diagnostics",
+          "title": "Mercedes-Maybach Engine Diagnostics Dubai | Digi-Tec",
+          "description": "Mercedes-Maybach engine diagnostics in Dubai with model-specific inspection, confirmed parts options and a clear quote at Digi-Tec, Al Quoz.",
+          "h1": [
+            "Mercedes-Maybach Engine Diagnostics Dubai"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/brands/maybach-service-dubai/engine-diagnostics",
+          "changed": false,
+          "incoming_contextual": 14,
+          "outgoing_contextual": 16,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 5023,
+          "image_count": 1
+        },
+        {
+          "url": "/brands/maybach-service-dubai/exhaust-repair",
+          "title": "Mercedes-Maybach Exhaust Repair Dubai | Digi-Tec",
+          "description": "Mercedes-Maybach exhaust repair in Dubai with model-specific inspection, confirmed parts options and a clear quote at Digi-Tec, Al Quoz.",
+          "h1": [
+            "Mercedes-Maybach Exhaust Repair Dubai"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/brands/maybach-service-dubai/exhaust-repair",
+          "changed": false,
+          "incoming_contextual": 14,
+          "outgoing_contextual": 16,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 4101,
+          "image_count": 1
+        },
+        {
+          "url": "/brands/maybach-service-dubai/fuel-system-repair",
+          "title": "Mercedes-Maybach Fuel System Repair Dubai | Digi-Tec",
+          "description": "Mercedes-Maybach fuel system repair in Dubai with model-specific inspection, confirmed parts options and a clear quote at Digi-Tec, Al Quoz.",
+          "h1": [
+            "Mercedes-Maybach Fuel System Repair Dubai"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/brands/maybach-service-dubai/fuel-system-repair",
+          "changed": false,
+          "incoming_contextual": 14,
+          "outgoing_contextual": 16,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 4160,
+          "image_count": 1
+        },
+        {
+          "url": "/brands/maybach-service-dubai/mechanical-repair",
+          "title": "Mercedes-Maybach Mechanical Repair Dubai | Digi-Tec",
+          "description": "Mercedes-Maybach mechanical repair in Dubai with model-specific inspection, confirmed parts options and a clear quote at Digi-Tec, Al Quoz.",
+          "h1": [
+            "Mercedes-Maybach Mechanical Repair Dubai"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/brands/maybach-service-dubai/mechanical-repair",
+          "changed": false,
+          "incoming_contextual": 14,
+          "outgoing_contextual": 16,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 4215,
+          "image_count": 1
+        },
+        {
+          "url": "/brands/maybach-service-dubai/oil-change",
+          "title": "Mercedes-Maybach Oil Change Dubai | Digi-Tec",
+          "description": "Mercedes-Maybach oil change in Dubai with model-specific inspection, confirmed parts options and a clear quote at Digi-Tec, Al Quoz.",
+          "h1": [
+            "Mercedes-Maybach Oil Change Dubai"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/brands/maybach-service-dubai/oil-change",
+          "changed": false,
+          "incoming_contextual": 14,
+          "outgoing_contextual": 16,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 4849,
+          "image_count": 1
+        },
+        {
+          "url": "/brands/maybach-service-dubai/steering-repair",
+          "title": "Mercedes-Maybach Steering Repair Dubai | Digi-Tec",
+          "description": "Mercedes-Maybach steering repair in Dubai with model-specific inspection, confirmed parts options and a clear quote at Digi-Tec, Al Quoz.",
+          "h1": [
+            "Mercedes-Maybach Steering Repair Dubai"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/brands/maybach-service-dubai/steering-repair",
+          "changed": false,
+          "incoming_contextual": 14,
+          "outgoing_contextual": 16,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 4015,
+          "image_count": 1
+        },
+        {
+          "url": "/brands/maybach-service-dubai/suspension-repair",
+          "title": "Mercedes-Maybach Suspension Repair Dubai | Digi-Tec",
+          "description": "Mercedes-Maybach suspension repair in Dubai with model-specific inspection, confirmed parts options and a clear quote at Digi-Tec, Al Quoz.",
+          "h1": [
+            "Mercedes-Maybach Suspension Repair Dubai"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/brands/maybach-service-dubai/suspension-repair",
+          "changed": false,
+          "incoming_contextual": 14,
+          "outgoing_contextual": 16,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 4879,
+          "image_count": 1
+        },
+        {
+          "url": "/brands/maybach-service-dubai/tire-repair",
+          "title": "Mercedes-Maybach Tyre Repair Dubai | Digi-Tec",
+          "description": "Mercedes-Maybach tyre repair in Dubai with model-specific inspection, confirmed parts options and a clear quote at Digi-Tec, Al Quoz.",
+          "h1": [
+            "Mercedes-Maybach Tyre Repair Dubai"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/brands/maybach-service-dubai/tire-repair",
+          "changed": false,
+          "incoming_contextual": 14,
+          "outgoing_contextual": 16,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 3986,
+          "image_count": 1
+        },
+        {
+          "url": "/brands/maybach-service-dubai/transmission-repair",
+          "title": "Mercedes-Maybach Transmission Repair Dubai | Digi-Tec",
+          "description": "Mercedes-Maybach transmission repair in Dubai with model-specific inspection, confirmed parts options and a clear quote at Digi-Tec, Al Quoz.",
+          "h1": [
+            "Mercedes-Maybach Transmission Repair Dubai"
+          ],
+          "indexable": true,
+          "canonical": "https://digitecme.com/brands/maybach-service-dubai/transmission-repair",
+          "changed": false,
+          "incoming_contextual": 14,
+          "outgoing_contextual": 16,
+          "depth": 2,
+          "schema_types": [
+            "WebPage",
+            "BreadcrumbList",
+            "Brand",
+            "Service",
+            "FAQPage"
+          ],
+          "body_length": 5156,
+          "image_count": 1
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "name": "digitec-production-seo-router",
+  "main": "production-seo-router.js",
+  "compatibility_date": "2026-09-16",
+  "workers_dev": false,
+  "routes": [
+    { "pattern": "digitecme.com/*", "zone_name": "digitecme.com" },
+    { "pattern": "www.digitecme.com/*", "zone_name": "digitecme.com" }
+  ],
+  "observability": { "enabled": true, "head_sampling_rate": 0.1 }
+}

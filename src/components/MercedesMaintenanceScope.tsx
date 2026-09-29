@@ -32,7 +32,11 @@ export default function MercedesMaintenanceScope({ isArabic }: { isArabic: boole
           <p>{isArabic ? 'الورشة في منطقة القوز الصناعية 3، دبي. للحجز ومعرفة ساعات العمل الحالية اتصل أو راسلنا على ‎+971 4 340 2223 قبل الزيارة.' : 'Visit the workshop in Al Quoz Industrial Area 3, Dubai. Call or WhatsApp +971 4 340 2223 to confirm the appointment and current opening hours before travelling.'}</p>
           <div className="flex flex-wrap gap-x-6 gap-y-3 pt-2">
             <Link to="/services/mercedes-oil-change-dubai" className="font-semibold text-burnt-orange hover:underline">{isArabic ? 'تغيير زيت مرسيدس والفلتر' : 'Engine oil and filter scope'}</Link>
-            {!isArabic && <><Link to="/blog/mercedes-service-cost-dubai-guide" className="font-semibold text-burnt-orange hover:underline">How service costs are calculated</Link><Link to="/blog/mercedes-service-intervals-dubai-heat" className="font-semibold text-burnt-orange hover:underline">ASSYST and service intervals</Link></>}
+            <Link to="/blog/mercedes-service-cost-dubai-guide" className="font-semibold text-burnt-orange hover:underline">{isArabic ? 'كيف تُحسب تكلفة صيانة مرسيدس؟' : 'How service costs are calculated'}</Link>
+            <Link to="/blog/mercedes-service-intervals-dubai-heat" className="font-semibold text-burnt-orange hover:underline">{isArabic ? 'مواعيد الصيانة ومؤشر ASSYST' : 'ASSYST and service intervals'}</Link>
+            <Link to="/blog/mercedes-benz-maintenance-guide-dubai" className="font-semibold text-burnt-orange hover:underline">{isArabic ? 'تنظيم سجل الصيانة وأولويات الإصلاح' : 'Organise maintenance records and repair priorities'}</Link>
+            <Link to="/blog/best-oil-change-dubai-mercedes" className="font-semibold text-burnt-orange hover:underline">{isArabic ? 'مقارنة عروض تغيير الزيت' : 'Compare oil-change proposals'}</Link>
+            <Link to="/blog/mercedes-repair-dubai-complete-guide" className="font-semibold text-burnt-orange hover:underline">{isArabic ? 'تمييز أعراض الأعطال والخطوة التالية' : 'Match a warning sign to the next inspection'}</Link>
           </div>
         </div>
       </div>

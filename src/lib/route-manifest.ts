@@ -1,4 +1,9 @@
 import { allServices, englishOnlyServices } from '@/data/services';
+import { sitewideSeoUpdatedPaths } from '@/data/sitewideSeoUpdatedPaths';
+import { mercedesB1UpdatedPaths } from '@/data/mercedesB1UpdatedPaths';
+import { porscheB2UpdatedPaths } from '@/data/porscheB2UpdatedPaths';
+import { bmwB3UpdatedPaths } from '@/data/bmwB3UpdatedPaths';
+import { b4UpdatedPaths } from '@/data/b4UpdatedPaths';
 import { localGaragePages } from '@/data/localGaragePages';
 import { blogPosts } from '@/data/blogPosts';
 import { brandWorkshopArticles } from '@/data/brandWorkshopArticles';
@@ -219,7 +224,7 @@ const masterSeoUpdatedPaths = new Set([
   '/services/mercedes-audio-upgrade-dubai',
 ]);
 
-export const publicRoutes = [...routeMap.values()].map((route) => masterSeoUpdatedPaths.has(route.path) ? { ...route, lastmod: '2026-09-16' } : (currentMercedesSeoPaths.has(route.path) || currentMaintenanceGuidePaths.has(route.path)) ? { ...route, lastmod: '2026-09-14' } : (route.path === '/services/transmission-repair-dubai' || oilChangeUpdatedPaths.has(route.path) || suspensionUpdatedPaths.has(route.path)) ? { ...route, lastmod: '2026-09-10' } : queryReleaseChanged(route) ? { ...route, lastmod: '2026-09-09' } : (paintCareUpdatedPaths.has(route.path) || mercedesUpdatedPaths.has(route.path)) ? { ...route, lastmod: '2026-09-08' } : route).sort((a, b) =>
+export const publicRoutes = [...routeMap.values()].map((route) => b4UpdatedPaths.has(route.path) ? { ...route, lastmod: '2026-09-28' } : bmwB3UpdatedPaths.has(route.path) ? { ...route, lastmod: '2026-09-28' } : porscheB2UpdatedPaths.has(route.path) ? { ...route, lastmod: '2026-09-28' } : mercedesB1UpdatedPaths.has(route.path) ? { ...route, lastmod: '2026-09-28' } : sitewideSeoUpdatedPaths.has(route.path) ? { ...route, lastmod: '2026-09-17' } : masterSeoUpdatedPaths.has(route.path) ? { ...route, lastmod: '2026-09-16' } : (currentMercedesSeoPaths.has(route.path) || currentMaintenanceGuidePaths.has(route.path)) ? { ...route, lastmod: '2026-09-14' } : (route.path === '/services/transmission-repair-dubai' || oilChangeUpdatedPaths.has(route.path) || suspensionUpdatedPaths.has(route.path)) ? { ...route, lastmod: '2026-09-10' } : queryReleaseChanged(route) ? { ...route, lastmod: '2026-09-09' } : (paintCareUpdatedPaths.has(route.path) || mercedesUpdatedPaths.has(route.path)) ? { ...route, lastmod: '2026-09-08' } : route).sort((a, b) =>
   a.path.localeCompare(b.path),
 );
 

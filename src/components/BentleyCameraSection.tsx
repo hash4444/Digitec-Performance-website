@@ -26,18 +26,18 @@ export default function BentleyCameraSection() {
       <div className="mx-auto max-w-7xl px-5 sm:px-6">
         <div className="max-w-3xl">
           <p className="eyebrow mb-4 inline-flex items-center gap-2"><Camera className="h-4 w-4" aria-hidden="true" /> Parking visibility and integration</p>
-          <h2 id="bentley-camera-heading" className="text-3xl font-black leading-tight sm:text-5xl">Bentley reverse-camera installation in Dubai</h2>
-          <p className="mt-5 text-base leading-8 text-gray-300">DIGI-TEC installs reverse cameras and investigates existing camera faults at our Al Quoz workshop. For Continental GT, Flying Spur and Bentayga enquiries, we check the exact year, factory display and fitted equipment before confirming compatibility or a repair plan.</p>
+          <h2 id="bentley-camera-heading" className="text-3xl font-black leading-tight sm:text-5xl">Bentley reverse-camera fault assessment in Dubai</h2>
+          <p className="mt-5 text-base leading-8 text-gray-300">A missing, flickering or distorted reversing image needs fault assessment before a camera is replaced. DIGI-TEC also handles separate installation enquiries at its Al Quoz workshop. For Continental GT, Flying Spur and Bentayga, we check the exact year, display and fitted equipment before confirming a repair or installation scope.</p>
         </div>
 
         <div className="mt-8 grid gap-5 md:grid-cols-2">
           <article className="card-premium rounded-2xl p-6 sm:p-8">
-            <h3 className="text-xl font-bold">Adding a reverse camera</h3>
-            <p className="mt-4 text-base leading-7 text-gray-300">Tell us whether you want to add a camera or change an existing setup. We review the display interface, camera mounting, wiring route and reverse-gear activation, along with the parking functions you want to retain. Parts, integration and any supported setup procedures are agreed before installation.</p>
-          </article>
-          <article className="card-premium rounded-2xl p-6 sm:p-8">
             <h3 className="text-xl font-bold">Repairing a missing or intermittent image</h3>
             <p className="mt-4 text-base leading-7 text-gray-300">A black screen, flickering picture or failure to switch into camera view needs diagnosis. Camera power, wiring, connectors, the display and interface are checked as appropriate. Describe whether the fault is constant, appears after starting or changes when selecting reverse.</p>
+          </article>
+          <article className="card-premium rounded-2xl p-6 sm:p-8">
+            <h3 className="text-xl font-bold">Adding a reverse camera</h3>
+            <p className="mt-4 text-base leading-7 text-gray-300">Installation is a separate request from repairing a fitted camera. We review the display interface, camera mounting, wiring route and reverse-gear activation, along with parking functions you want to retain. Compatibility, parts and any supported setup procedures are agreed before installation.</p>
           </article>
         </div>
 

@@ -1,0 +1,25 @@
+{
+  "changed_or_new_files": [
+    "cloudflare/routing-response-data.js",
+    "docs/seo/protection-release-validation.json",
+    "docs/seo/query-release-validation.json",
+    "docs/seo/route-schema-matrix.csv",
+    "public/sitemap.xml",
+    "scripts/validate-oil-change.mjs",
+    "scripts/validate-query-release.mjs",
+    "scripts/validate-suspension.mjs",
+    "src/components/BmwKnowledgeHub.tsx",
+    "src/data/bestWorkshopPages.ts",
+    "src/data/bmwB3UpdatedPaths.ts",
+    "src/data/bmwHubContent.ts",
+    "src/data/brandServices.ts",
+    "src/data/queryServiceContent.ts",
+    "src/i18n/ar-best-workshop.ts",
+    "src/lib/route-manifest.ts",
+    "src/pages/BestWorkshopPage.tsx",
+    "src/pages/BmwModelPage.tsx",
+    "src/pages/BrandPage.tsx",
+    "src/pages/BrandWorkshopArticlePage.tsx"
+  ],
+  "count": 20
+}

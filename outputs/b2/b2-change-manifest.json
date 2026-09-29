@@ -1,0 +1,25 @@
+{
+  "changed_or_new_files": [
+    "cloudflare/routing-response-data.js",
+    "docs/seo/protection-release-validation.json",
+    "docs/seo/query-release-validation.json",
+    "docs/seo/route-schema-matrix.csv",
+    "public/sitemap.xml",
+    "scripts/validate-oil-change.mjs",
+    "scripts/validate-query-release.mjs",
+    "scripts/validate-suspension.mjs",
+    "src/components/PorscheKnowledgeCentre.tsx",
+    "src/data/brandServices.ts",
+    "src/data/porscheArchitecture.ts",
+    "src/data/porscheModelPages.ts",
+    "src/data/queryServiceContent.ts",
+    "src/lib/route-manifest.ts",
+    "src/pages/BestWorkshopPage.tsx",
+    "src/pages/BrandPage.tsx",
+    "src/pages/BrandServicePage.tsx",
+    "src/pages/BrandWorkshopArticlePage.tsx",
+    "src/pages/PorscheModelPage.tsx",
+    "src/data/porscheB2UpdatedPaths.ts"
+  ],
+  "count": 20
+}

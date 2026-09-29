@@ -30,15 +30,17 @@ const faqTemplates = (brand: string) => [
 
 export const localizeBestWorkshopPageToArabic = (page: BestWorkshopPage): BestWorkshopPage => {
   const brand = brandName(page);
+  const isBmwSelection = page.slug === 'best-bmw-workshop-dubai';
+  const isB4Selection = ['best-ferrari-workshop-dubai', 'best-lamborghini-workshop-dubai'].includes(page.slug);
   const faqs = faqTemplates(brand);
   const criteria = criteriaTemplates(brand);
   const why = whyTemplates(brand);
   return {
     ...page,
-    h1: page.brand ? `ورشة خدمة وإصلاح ${brand} في دبي` : 'ورشة سيارات فاخرة وأوروبية في دبي',
-    metaTitle: page.brand ? `ورشة خدمة وإصلاح ${brand} في دبي | ديجي-تك` : 'ورشة سيارات فاخرة وأوروبية في دبي | ديجي-تك',
-    metaDescription: `ورشة مستقلة لخدمة وفحص سيارات ${brand} في القوز، دبي. تأسست ديجي-تك عام 2002؛ تواصل لتأكيد نطاق الخدمة المناسب للسيارة.`,
-    directAnswer: `ديجي-تك ورشة مستقلة في القوز الصناعية 3 بدبي، تأسست عام 2002. يمكن لمالك سيارة ${brand} إرسال الطراز والسنة والمشكلة لتأكيد نطاق الفحص أو الخدمة المناسب، ثم مناقشة النتائج وخيارات القطع والعمل المقترح قبل الموافقة.`,
+    h1: isBmwSelection || isB4Selection ? `كيف تختار ورشة ${brand} في دبي` : page.brand ? `ورشة خدمة وإصلاح ${brand} في دبي` : 'ورشة سيارات فاخرة وأوروبية في دبي',
+    metaTitle: isBmwSelection || isB4Selection ? `اختيار ورشة ${brand} في دبي | ديجي-تك` : page.brand ? `ورشة خدمة وإصلاح ${brand} في دبي | ديجي-تك` : 'ورشة سيارات فاخرة وأوروبية في دبي | ديجي-تك',
+    metaDescription: isBmwSelection ? 'أسئلة لاختيار ورشة BMW في دبي: نطاق الفحص، دعم الطراز، القطع، عرض العمل والموافقة قبل الإصلاح. ديجي-تك في القوز.' : isB4Selection ? `أسئلة لاختيار ورشة ${brand} في دبي: توافق الطراز، نطاق الفحص، القطع، عرض العمل والموافقة قبل الإصلاح. ديجي-تك في القوز.` : `ورشة مستقلة لخدمة وفحص سيارات ${brand} في القوز، دبي. تأسست ديجي-تك عام 2002؛ تواصل لتأكيد نطاق الخدمة المناسب للسيارة.`,
+    directAnswer: isBmwSelection ? 'عند اختيار ورشة BMW في دبي، اسأل عن طريقة تأكيد الطراز والتجهيزات، وفحص المشكلة، وشرح خيارات القطع والعمل المقترح قبل الموافقة. ديجي-تك ورشة مستقلة في القوز الصناعية 3؛ أرسل الطراز والسنة والمشكلة لتأكيد نطاق الفحص المتاح.' : isB4Selection ? `عند اختيار ورشة ${brand} في دبي، اسأل عن طريقة تأكيد الطراز والتجهيزات وفحص المشكلة وشرح القطع والعمل المقترح قبل الموافقة. ديجي-تك ورشة مستقلة في القوز الصناعية 3؛ أرسل الطراز والسنة والمشكلة لتأكيد نطاق الفحص المتاح.` : `ديجي-تك ورشة مستقلة في القوز الصناعية 3 بدبي، تأسست عام 2002. يمكن لمالك سيارة ${brand} إرسال الطراز والسنة والمشكلة لتأكيد نطاق الفحص أو الخدمة المناسب، ثم مناقشة النتائج وخيارات القطع والعمل المقترح قبل الموافقة.`,
     whyList: page.whyList.map((_, index) => why[index % why.length]),
     criteria: page.criteria.map((_, index) => criteria[index % criteria.length]),
     faqs: page.faqs.map((_, index) => faqs[index % faqs.length]),

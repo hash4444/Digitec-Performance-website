@@ -1,0 +1,144 @@
+{
+  "passed": true,
+  "routes": 1247,
+  "sitemap_urls": 996,
+  "primary_pages": 67,
+  "related_guide_pages": 4,
+  "faq_pairs_present_in_html": 214,
+  "verified_internal_links": 3393,
+  "protected_b0a_files": 15,
+  "route_policy_changes": 0,
+  "changed_pages": 81,
+  "groups": {
+    "shared-reference": 15,
+    "primary": 64,
+    "related-guide": 2
+  },
+  "errors": [],
+  "warnings": [],
+  "b0a_files": [
+    {
+      "path": "src/App.tsx",
+      "unchanged": true,
+      "before": "9c876e9eaabc0ad9ecc6ffa7f345c3e3408b5d72638a9568a3070cec12b55280",
+      "after": "9c876e9eaabc0ad9ecc6ffa7f345c3e3408b5d72638a9568a3070cec12b55280"
+    },
+    {
+      "path": "src/components/RouteBoundary.tsx",
+      "unchanged": true,
+      "before": "76a02839f20a4bd482f0f9148909f02e2a0906f0cd4824962f013725fb590b2f",
+      "after": "76a02839f20a4bd482f0f9148909f02e2a0906f0cd4824962f013725fb590b2f"
+    },
+    {
+      "path": "src/lib/routing-paths.json",
+      "unchanged": true,
+      "before": "26be139e69a8b247f6ed46729d26b3cac5007d0ee6044395ff382ef68f501a26",
+      "after": "26be139e69a8b247f6ed46729d26b3cac5007d0ee6044395ff382ef68f501a26"
+    },
+    {
+      "path": "src/lib/historical-paths.js",
+      "unchanged": true,
+      "before": "aaf2109ef7232eadcc4dd48254a27d8f6424a975d342185dfc6d4ce3d5988031",
+      "after": "aaf2109ef7232eadcc4dd48254a27d8f6424a975d342185dfc6d4ce3d5988031"
+    },
+    {
+      "path": "src/i18n/locale.ts",
+      "unchanged": true,
+      "before": "2767034a622436d56a20085d72aa18621908d80757336ea5114d3b9b1aa299bd",
+      "after": "2767034a622436d56a20085d72aa18621908d80757336ea5114d3b9b1aa299bd"
+    },
+    {
+      "path": "src/i18n/arabic-route-fallbacks.json",
+      "unchanged": true,
+      "before": "9280099e16ac3e2a88770e9aed7434ce47cdcf0df8201d4a51889cd1cdfef4da",
+      "after": "9280099e16ac3e2a88770e9aed7434ce47cdcf0df8201d4a51889cd1cdfef4da"
+    },
+    {
+      "path": "cloudflare/production-seo-router.js",
+      "unchanged": true,
+      "before": "006ecc7a68ddab56c35cd1219fb3555eb0260e8b76a912a77388a3a325d4d626",
+      "after": "006ecc7a68ddab56c35cd1219fb3555eb0260e8b76a912a77388a3a325d4d626"
+    },
+    {
+      "path": "cloudflare/routing-response-guard.js",
+      "unchanged": true,
+      "before": "7ba2e6eab5f633c27fed1d94e8b42a193d440a3165e773530cc4fc8f497c0acf",
+      "after": "7ba2e6eab5f633c27fed1d94e8b42a193d440a3165e773530cc4fc8f497c0acf"
+    },
+    {
+      "path": "cloudflare/routing-response-data.js",
+      "unchanged": false,
+      "before": "6ac0c8ba8cabc6095a8271953149ac726ada9288d3b4798d44bdff43346eb3a3",
+      "after": "75b2a23fc37bd2a88fcbf691d096aa400d8f0a78539535d772526503ea68b8a6",
+      "generated_assets_only": true
+    },
+    {
+      "path": "scripts/generate-routing-response-data.mjs",
+      "unchanged": true,
+      "before": "ea8faa4bfe1d3df3b777b2cd0d2d62520bf5d2b3177d7bd6543c827c241be17f",
+      "after": "ea8faa4bfe1d3df3b777b2cd0d2d62520bf5d2b3177d7bd6543c827c241be17f"
+    },
+    {
+      "path": "scripts/sync-routing-paths.mjs",
+      "unchanged": true,
+      "before": "890381221d2948d74bbd4a1c6dfc4e1ecf6ed01fadd0125c4012182d48936027",
+      "after": "890381221d2948d74bbd4a1c6dfc4e1ecf6ed01fadd0125c4012182d48936027"
+    },
+    {
+      "path": "scripts/prerender.mjs",
+      "unchanged": true,
+      "before": "aaa40ef2d1a64c7bc5d83903ccdb554b1c592cf772e1db949a1301a57c2d0f38",
+      "after": "aaa40ef2d1a64c7bc5d83903ccdb554b1c592cf772e1db949a1301a57c2d0f38"
+    },
+    {
+      "path": "package.json",
+      "unchanged": true,
+      "before": "12afa1a7031c27d0d21bdd8895854e70adb3f7c3a46a7f31afa9cd19f3180c56",
+      "after": "12afa1a7031c27d0d21bdd8895854e70adb3f7c3a46a7f31afa9cd19f3180c56"
+    },
+    {
+      "path": "scripts/test-routing-response.mjs",
+      "unchanged": true,
+      "before": "812d713e7bbeaec2d35d655f712a0154fb99af168c5b4af55034f89c462562eb",
+      "after": "812d713e7bbeaec2d35d655f712a0154fb99af168c5b4af55034f89c462562eb"
+    },
+    {
+      "path": "scripts/preview-routing-response.mjs",
+      "unchanged": true,
+      "before": "b4418ffd8c42999b34246ca6fb60ae439fe0656e6b52dbef47bd9b5073063b66",
+      "after": "b4418ffd8c42999b34246ca6fb60ae439fe0656e6b52dbef47bd9b5073063b66"
+    }
+  ],
+  "source_changes": [
+    "cloudflare/routing-response-data.js",
+    "public/sitemap.xml",
+    "src/components/MercedesMaintenanceScope.tsx",
+    "src/data/aiGuidePosts.ts",
+    "src/data/aiGuidePostsExtra.ts",
+    "src/data/blogPosts.ts",
+    "src/data/brands.ts",
+    "src/data/brandWorkshopArticles.ts",
+    "src/data/electronicsServices.ts",
+    "src/data/mercedesModelPages.ts",
+    "src/data/mercedesProblemGuides.ts",
+    "src/data/mercedesServiceContent.ts",
+    "src/i18n/ar-blog.ts",
+    "src/i18n/ar-brands.ts",
+    "src/i18n/ar-general-blog-content.ts",
+    "src/i18n/ar-model-blog-content.ts",
+    "src/i18n/ar-service-blog-content.ts",
+    "src/i18n/ar-specialist-blog-content.ts",
+    "src/lib/route-manifest.ts",
+    "src/pages/BlogPost.tsx",
+    "src/pages/BrandPage.tsx",
+    "src/pages/BrandServicePage.tsx",
+    "src/pages/BrandWorkshopArticlePage.tsx",
+    "src/pages/MercedesModelPage.tsx",
+    "src/pages/MercedesProblemGuidePage.tsx",
+    "src/pages/MercedesProblemsIndex.tsx",
+    "src/data/mercedesArabicServiceContent.ts",
+    "src/data/mercedesB1UpdatedPaths.ts",
+    "src/data/mercedesMaintenanceGuide.ts",
+    "src/data/mercedesServiceScope.ts"
+  ]
+}

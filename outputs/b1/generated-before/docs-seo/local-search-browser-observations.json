@@ -1,0 +1,89 @@
+{
+  "auditDate": "2026-09-08",
+  "timezone": "Asia/Dubai",
+  "method": "Read-only rendered browser inspection. Google Maps signed out, English, Dubai/Al Quoz viewport; device location permission not granted. Observations are a discovery sample, not a citywide ranking grid or Google Search local-pack audit.",
+  "limitations": [
+    "HTTP response status was not measured through the rendered-page inspection.",
+    "No authenticated GBP, GA4, GTM or GSC account was available.",
+    "Public category labels do not expose the full configured primary/secondary category set.",
+    "Relative review/photo dates remain relative; competitor review dates were sampled, not sorted newest.",
+    "The companion command-line live fetch attempts failed; the successful browser observations below are a separate evidence source."
+  ],
+  "businessProfile": {
+    "url": "https://www.google.com/maps/place/Digitec+Performance+Center+L.L.C./@25.1213214,55.2243735,17z/data=!3m1!4b1!4m6!3m5!1s0x3e5f6a2a79f55b5b:0x190c9fb42d33d1aa!8m2!3d25.1213214!4d55.2243735!16s%2Fg%2F11c2ppzjlb?hl=en",
+    "displayName": "Digitec Performance Center L.L.C.",
+    "displayedMainCategory": "Auto repair shop",
+    "addressAsDisplayed": "Warehouse No.11-15 - Al Qouz Ind.third - Dubai",
+    "phoneAsDisplayed": "04 340 2223",
+    "websiteLink": "https://digitecme.com/",
+    "rating": 4.4,
+    "reviewCount": 154,
+    "reviewSort": "Newest",
+    "firstThreeReviewAgeLabels": ["a month ago", "2 months ago", "3 months ago"],
+    "ownerRepliesOnFirstThree": "None displayed in inspected sample",
+    "hoursAsDisplayed": {
+      "Monday-Friday": "08:00-18:00",
+      "Saturday": "08:00-14:00",
+      "Sunday": "Closed"
+    },
+    "hoursOwnerVerified": false,
+    "ownerPhotoObservation": "Workshop cars and lifts; image/capture label July 2026; does not establish a PPF installation job.",
+    "notExposedOnInspectedSurface": ["business description", "detailed Services menu", "owner Post", "Q&A", "chat", "appointment", "native quote action"]
+  },
+  "liveServicePages": [
+    {
+      "url": "https://digitecme.com/services/paint-protection-film?utm_source=google&utm_medium=organic&utm_campaign=gbp&utm_content=website_audit",
+      "title": "Paint Protection Film Dubai | Full & Partial PPF Coverage",
+      "h1": "Paint Protection Film (PPF) in Dubai",
+      "canonical": "https://digitecme.com/services/paint-protection-film",
+      "serviceId": "https://digitecme.com/services/paint-protection-film#service",
+      "serviceProviderId": "https://digitecme.com/#business",
+      "breadcrumbId": "https://digitecme.com/services/paint-protection-film#breadcrumb",
+      "observation": "Older service page is live; upgraded local page has different title and content."
+    },
+    {
+      "url": "https://digitecme.com/services/ceramic-coating?utm_source=google&utm_medium=organic&utm_campaign=gbp&utm_content=website_audit",
+      "title": "Ceramic Coating Dubai | Gloss & Surface Protection | Digitec",
+      "h1": "Ceramic Coating in Dubai",
+      "canonical": "https://digitecme.com/services/ceramic-coating",
+      "serviceId": "https://digitecme.com/services/ceramic-coating#service",
+      "serviceProviderId": "https://digitecme.com/#business",
+      "breadcrumbId": "https://digitecme.com/services/ceramic-coating#breadcrumb",
+      "observation": "Older service page is live; upgraded local page has different title and content."
+    },
+    {
+      "url": "https://digitecme.com/services/car-polishing-dubai?utm_source=google&utm_medium=organic&utm_campaign=gbp&utm_content=website_audit",
+      "title": "Service Not Found | DIGI-TEC",
+      "h1": "Service Not Found",
+      "canonical": null,
+      "serviceId": null,
+      "breadcrumbId": null,
+      "observation": "After hydration, error heading replaces initial content; only shared entity graph remains."
+    },
+    {
+      "url": "https://digitecme.com/services/car-polishing-dubai",
+      "title": "Service Not Found | DIGI-TEC",
+      "h1": "Service Not Found",
+      "canonical": null,
+      "observation": "Separately checked clean URL also displays the error after loading."
+    }
+  ],
+  "sharedEntityIdsOnTaggedPages": {
+    "organization": "https://digitecme.com/#organization",
+    "business": "https://digitecme.com/#business",
+    "businessTypes": ["AutoRepair", "AutomotiveBusiness"],
+    "website": "https://digitecme.com/#website",
+    "serviceCatalog": "https://digitecme.com/#service-catalog"
+  },
+  "directCompetitorProfileBaselines": [
+    {"name": "System X Car Polish", "rating": 4.7, "reviews": 202, "displayedCategory": "Car detailing service", "location": "Al Quoz 2", "sampledReviewAges": "2-7 months", "photoAgeLabel": "17 days", "ownerPost": "12 July 2026"},
+    {"name": "Elite Shine Al Quoz", "rating": 4.9, "reviews": 216, "displayedCategory": "Car detailing service", "location": "Al Quoz 2", "sampledReviewAges": "2-5 months", "photoAgeLabel": "25 days", "ownerPost": "5 days ago"},
+    {"name": "CARS STUDIO DETAILING", "rating": 4.9, "reviews": 169, "displayedCategory": "Car detailing service", "location": "Al Quoz 1", "sampledReviewAges": "2-6 months", "photoAgeLabel": "11 days", "ownerPost": "Not exposed"},
+    {"name": "Phantom Ppf", "rating": 4.9, "reviews": 60, "displayedCategory": "Vehicle wrapping service", "location": "Al Quoz 2", "sampledReviewAges": "1-4 months", "photoAgeLabel": "a day", "ownerPost": "Not exposed; visitor update 5 months ago"},
+    {"name": "Modcare", "rating": 4.9, "reviews": 132, "displayedCategory": "Car detailing service", "location": "Al Quoz 2", "sampledReviewAges": "about a month", "photoAgeLabel": "Not exposed", "ownerPost": "4 days ago"}
+  ],
+  "finalCarDetailingDubaiSample": {
+    "unpaidVisibleOrder": ["Elite Shine Al Quoz", "7 Road Auto Care", "55 Car Care", "Safa Lux Auto Care", "System X Car Polish", "Crystal Shine Car Care"],
+    "sponsoredExcluded": ["Carengineering Dubai", "MrCAP Al Quoz"]
+  }
+}

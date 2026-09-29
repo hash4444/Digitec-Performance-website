@@ -12,8 +12,17 @@ import { buildArticle, buildBreadcrumb, buildFAQ, buildWebPage, pageGraph } from
 import { useLocale } from '@/i18n/use-locale';
 import { categoryArabic, localizeBlogPostToArabic, localizePostSummaryToArabic } from '@/i18n/ar-blog';
 import { MERCEDES_UNTRANSLATED_MODEL_PATHS } from '@/i18n/mercedes-language';
+import { getRelatedArticles } from '@/lib/related-articles';
 
 type ContentBlock = { type: 'h2' | 'h3' | 'p' | 'ul'; text?: string; items?: string[] };
+
+// These Arabic adaptations contain reviewed links to existing Arabic owners.
+const mercedesArabicLinkedArticles = new Set([
+  'mercedes-c-class-service-dubai-guide', 'mercedes-e-class-service-dubai-guide',
+  'mercedes-s-class-service-dubai-guide', 'mercedes-g63-service-dubai-guide',
+  'best-oil-change-dubai-mercedes', 'mercedes-service-intervals-dubai-heat',
+  'mercedes-service-cost-dubai-guide', 'mercedes-repair-dubai-complete-guide',
+]);
 
 /** Extract only the visible question-and-answer pairs beneath an article FAQ heading. */
 const getArticleFaqs = (content: ContentBlock[]) => {
@@ -46,7 +55,7 @@ const relatedServiceByPost: Record<string, { href: string; label: string; descri
   'best-oil-change-dubai-mercedes': {
     href: '/services/mercedes-oil-change-dubai',
     label: 'Mercedes oil change in Dubai',
-    description: 'Arrange a Mercedes oil service and vehicle health check with our specialists in Al Quoz.',
+    description: 'Confirm the engine-specific oil, filter, agreed checks and service records before booking in Al Quoz.',
   },
   'car-ac-repair-dubai': {
     href: '/services/car-ac-repair-dubai',
@@ -94,14 +103,14 @@ const relatedServiceByPost: Record<string, { href: string; label: string; descri
     description: 'Discuss a custom AMG build, ECU calibration or performance-project inspection with Digi-Tec in Al Quoz.',
   },
   'air-suspension-repair-dubai-guide': {
-    href: '/mercedes/problems/airmatic-malfunction',
-    label: 'Mercedes AIRMATIC malfunction guide',
-    description: 'See how the Mercedes-specific warning, air system and chassis variants change the diagnostic path.',
+    href: '/services/suspension-repair-dubai',
+    label: 'Suspension assessment and repair',
+    description: 'Confirm the fitted system and agree an assessment for a ride-height, levelling or ride-quality concern.',
   },
   'transmission-service-7g-9g-dubai': {
-    href: '/mercedes/problems/gearbox-jerking',
-    label: 'Mercedes gearbox-jerking guide',
-    description: 'Separate 7G-TRONIC, 9G-TRONIC and AMG symptom diagnosis from routine transmission service intent.',
+    href: '/services/transmission-repair-dubai',
+    label: 'Transmission service and fault assessment',
+    description: 'Identify the gearbox and separate scheduled fluid service from the investigation of a shift fault.',
   },
   'check-engine-light-dubai-guide': {
     href: '/mercedes/problems/check-engine-light',
@@ -123,6 +132,17 @@ const relatedServiceByPost: Record<string, { href: string; label: string; descri
     label: 'Rolls-Royce service and repair in Dubai',
     description: 'Continue to the Rolls-Royce hub for maintenance, diagnostics, suspension, transmission and vehicle-specific repair enquiries in Al Quoz.',
   },
+};
+
+// The symptom/model destinations below are English-only. Link Arabic readers
+// to an existing Arabic service owner instead of constructing a missing route.
+const arabicRelatedServiceByPost: Record<string, { href: string; label: string }> = {
+  'air-suspension-repair-dubai-guide': { href: '/services/suspension-repair-dubai', label: 'فحص وإصلاح التعليق حسب السيارة' },
+  'check-engine-light-dubai-guide': { href: '/services/mercedes-diagnostics-dubai', label: 'فحص وتشخيص مرسيدس' },
+  'engine-overheating-dubai-what-to-do': { href: '/services/mercedes-mechanical-repair-dubai', label: 'فحص وإصلاح مرسيدس الميكانيكي' },
+  'ferrari-488-service-dubai-guide': { href: '/brands/ferrari-service-dubai', label: 'خدمات صيانة وإصلاح فيراري' },
+  'mercedes-repair-dubai-complete-guide': { href: '/brands/mercedes-benz-service-dubai', label: 'خدمات صيانة وإصلاح مرسيدس' },
+  'transmission-service-7g-9g-dubai': { href: '/services/transmission-repair-dubai', label: 'خدمة وفحص ناقل الحركة حسب السيارة' },
 };
 
 const BlogPost = () => {
@@ -184,22 +204,27 @@ const BlogPost = () => {
 
   if (!post) return <Navigate to={localizedPath('/blog')} replace />;
 
-  const related = blogPosts
-    .filter((p) => p.slug !== post.slug)
-    .slice(0, 2)
+  const mercedesGuideRelated = new Set(['best-oil-change-dubai-mercedes', 'mercedes-service-intervals-dubai-heat', 'mercedes-service-cost-dubai-guide', 'mercedes-repair-dubai-complete-guide']);
+  const related = getRelatedArticles(sourcePost ?? post, blogPosts.filter((item) =>
+    (!isArabic || !MERCEDES_UNTRANSLATED_MODEL_PATHS.has(`/blog/${item.slug}`)) &&
+    (!mercedesGuideRelated.has(post.slug) || item.slug !== 'how-much-is-my-mercedes-worth-dubai'),
+  ))
     .map((item) => (isArabic ? localizePostSummaryToArabic(item) : item));
+  const articleSections = post.content.flatMap((block, index) => block.type === 'h2' && block.text ? [{ title: block.text, id: `article-section-${index + 1}` }] : []);
   const relatedService = relatedServiceByPost[post.slug];
   const relatedServiceCopy = relatedService && isArabic
     ? {
         ...relatedService,
         label: 'الخدمة المرتبطة بهذا الموضوع',
         description: 'احجز فحصاً متخصصاً لدى فريق ديجي-تك في القوز لتحديد السبب والحصول على توصية واضحة قبل بدء الإصلاح.',
+        ...arabicRelatedServiceByPost[post.slug],
       }
     : relatedService;
 
   return (
     <div className="site-page min-h-screen bg-black text-off-white">
       <Header />
+      <main>
 
       {/* Hero */}
       <section className="relative overflow-hidden border-b border-white/[0.08] bg-[#101113] py-16 sm:py-20 lg:py-24">
@@ -302,11 +327,19 @@ const BlogPost = () => {
               </div>
             </section>
           )}
+          {articleSections.length >= 3 && (
+            <nav aria-label={isArabic ? 'في هذا المقال' : 'In this article'} className="mb-10 rounded-xl border border-white/10 bg-white/[0.03] p-5 sm:p-6">
+              <p className="mb-3 font-semibold">{isArabic ? 'في هذا المقال' : 'In this article'}</p>
+              <ol className="grid gap-3 text-sm leading-relaxed sm:grid-cols-2">
+                {articleSections.map((section) => <li key={section.id}><a href={`#${section.id}`} className="text-white/70 underline decoration-white/20 underline-offset-4 hover:text-burnt-orange focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-burnt-orange">{section.title}</a></li>)}
+              </ol>
+            </nav>
+          )}
           <article className="space-y-6">
             {post.content.map((block, i) => {
               if (block.type === 'h2')
                 return (
-                  <h2 key={i} className="text-2xl sm:text-3xl font-black mt-10 mb-2">
+                  <h2 key={i} id={`article-section-${i + 1}`} className="scroll-mt-28 text-2xl sm:text-3xl font-black mt-10 mb-2">
                     {block.text}
                   </h2>
                 );
@@ -330,7 +363,7 @@ const BlogPost = () => {
               return (
                 <p key={i} className="text-white/70 leading-relaxed text-base">
                   {block.text}
-                  {!isArabic && block.links?.length ? <span className="mt-3 flex flex-wrap gap-x-5 gap-y-2">{block.links.map((link) => <Link key={link.href} to={link.href} className="text-burnt-orange underline">{link.label}</Link>)}</span> : null}
+                  {(!isArabic || mercedesArabicLinkedArticles.has(post.slug)) && block.links?.length ? <span className="mt-3 flex flex-wrap gap-x-5 gap-y-2">{block.links.map((link) => <Link key={link.href} to={link.href} className="text-burnt-orange underline">{link.label}</Link>)}</span> : null}
                 </p>
               );
             })}
@@ -382,6 +415,7 @@ const BlogPost = () => {
       )}
 
       <FinalCTA />
+      </main>
       <Footer />
     </div>
   );

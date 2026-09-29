@@ -170,7 +170,7 @@ export const aiGuidePosts: BlogPost[] = [
     "category": "Mercedes",
     "author": "DIGI-TEC Workshop",
     "date": "2026-08-13",
-    "updatedDate": "2026-09-08",
+    "updatedDate": "2026-09-28",
     "readTime": "5 min read",
     "coverGradient": "from-burnt-orange/30 via-charcoal to-black",
     "metaTitle": "Mercedes Service Cost Dubai | A & B Scope | Digi-Tec",
@@ -187,7 +187,7 @@ export const aiGuidePosts: BlogPost[] = [
       },
       {
         "type": "p",
-        "text": "Service A generally describes a smaller scheduled visit and Service B a broader one, but the precise checklist must be matched to the vehicle. Oil and filter work, inspections and other due items should be listed individually. Cabin filters, spark plugs, brake fluid and transmission servicing must not be assumed to be included simply because an estimate says Service B or major service."
+        "text": "Service A and Service B are scheduled maintenance scopes, with B generally broader. The precise service sheet and additional due work must be matched to the vehicle and its history. Compare the listed oil, filter, inspection and other items rather than assuming that two packages with the same name include identical work. Confirm cabin-filter and brake-fluid requirements, and list any due spark plugs or transmission servicing separately where applicable."
       },
       {
         "type": "h2",
@@ -242,6 +242,14 @@ export const aiGuidePosts: BlogPost[] = [
           {
             "href": "/blog/mercedes-service-intervals-dubai-heat",
             "label": "ASSYST and service-interval guide"
+          },
+          {
+            "href": "/blog/mercedes-benz-maintenance-guide-dubai",
+            "label": "Plan due work and keep service records"
+          },
+          {
+            "href": "/services/mercedes-diagnostics-dubai",
+            "label": "Agree a separate diagnostic assessment"
           }
         ]
       },

@@ -6,11 +6,14 @@ import { Footer } from '@/components/Footer';
 import { FinalCTA } from '@/components/FinalCTA';
 import { CtaAssurance } from '@/components/TrustBar';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
-import { getBrandWorkshopArticle, brandWorkshopArticles, type BrandWorkshopArticle } from '@/data/brandWorkshopArticles';
+import { getBrandWorkshopArticle, type BrandWorkshopArticle } from '@/data/brandWorkshopArticles';
 import { useSeo } from '@/hooks/use-seo';
 import { buildArticle, buildBreadcrumb, buildFAQ, buildService, buildWebPage, pageGraph, SITE_URL } from '@/lib/schema';
 import { useLocale } from '@/i18n/use-locale';
-import { localizeBrandWorkshopArticleToArabic, localizePostSummaryToArabic } from '@/i18n/ar-blog';
+import { localizeBrandWorkshopArticleToArabic } from '@/i18n/ar-blog';
+import { mercedesMaintenanceGuide, MERCEDES_MAINTENANCE_UPDATED } from '@/data/mercedesMaintenanceGuide';
+import { B5SelectionGuideBody } from '@/components/B5SelectionGuideBody';
+import { B6JlrGuideBody } from '@/components/B6JlrGuideBody';
 
 const generalServiceLinks = [
   { label: 'Diagnostics', arLabel: 'فحص وتشخيص السيارة', href: '/services/car-diagnostics-dubai' },
@@ -71,6 +74,7 @@ const rollsRoyceServiceLinks = [
 ];
 
 const BrandWorkshopArticleContent = ({ article, isArabic }: { article: BrandWorkshopArticle; isArabic: boolean }) => {
+  const isB5SelectionGuide = ['Rolls-Royce', 'Bentley', 'Maybach'].includes(article.brand);
   const url = `${SITE_URL}${isArabic ? '/ar' : ''}/blog/${article.slug}`;
   const metaTitle = isArabic
     ? article.brand === 'Ferrari'
@@ -83,7 +87,9 @@ const BrandWorkshopArticleContent = ({ article, isArabic }: { article: BrandWork
     ? article.brand === 'Ferrari'
       ? 'دليل صيانة فيراري في دبي: مواعيد الخدمة وعوامل التكلفة وعلامات التحذير والفحوص المهمة في حرارة الإمارات وفترات التخزين.'
       : `ورشة متخصصة في ${article.brand} بدبي للفحص والصيانة والإصلاح. احجز لدى ديجي-تك في القوز للحصول على تشخيص واضح وخدمة احترافية.`
-    : article.metaDescription ?? `${article.brand} workshop in Dubai for diagnostics, maintenance and repair. Visit DIGI-TEC in Al Quoz for clear inspections, practical guidance and booking support.`;
+    : article.metaDescription ?? (article.existingBestPage
+      ? `Plan ${article.brand} maintenance in Dubai: review service history, model-specific inspections, parts and the questions to ask before booking.`
+      : `Compare ${article.brand} workshops in Dubai by inspection scope, model-specific capability, parts and estimate clarity. Prepare a useful service enquiry.`);
   const datePublished = article.datePublished ?? '2026-07-16';
   const dateModified = article.dateModified;
   const displayDate = dateModified ?? datePublished;
@@ -107,7 +113,7 @@ const BrandWorkshopArticleContent = ({ article, isArabic }: { article: BrandWork
     { question: `Does Dubai heat change ${article.brand} maintenance?`, answer: `It can. High ambient temperature, stop-start traffic, dust and heavy air-conditioning demand can increase the importance of cooling, tyres, brakes, batteries and fluid-condition checks. The right interval depends on the model and how it is used.` },
     { question: `What should ${article.brand === 'Aston Martin' ? 'an' : 'a'} ${article.brand} diagnostic include?`, answer: `A useful diagnostic is more than reading a code. It should combine a scan, live data where relevant, visual checks, a road test when appropriate, and a clear explanation of confirmed faults versus items that need monitoring.` },
     { question: `Should I use OEM or aftermarket ${article.brand} parts?`, answer: `The right choice depends on the component, vehicle age, budget and intended use. Safety-critical, electronic and complex driveline parts often need careful sourcing. Ask for the part brand, specification and applicable warranty terms in writing.` },
-    { question: `Can DIGI-TEC inspect ${article.brand === 'Aston Martin' ? 'an' : 'a'} ${article.brand} before I buy it?`, answer: `Yes. A pre-purchase inspection can review visible condition, fault memory, service evidence, tyres, brakes, suspension, cooling and drivability so you can make a better-informed decision before committing.` },
+    { question: `Can DIGI-TEC inspect ${article.brand === 'Aston Martin' ? 'an' : 'a'} ${article.brand} before I buy it?`, answer: 'Send the model, year and requested checks so the team can confirm whether it can accept the inspection and what it covers. Ask which physical checks, diagnostic functions and service-record review are included; an inspection cannot guarantee the absence of every hidden or future fault.' },
     { question: `How long does ${article.brand === 'Aston Martin' ? 'an' : 'a'} ${article.brand} service take?`, answer: `Timing depends on the exact service, inspection findings, parts availability and workshop schedule. Ask for an estimated completion time after the vehicle and requested work have been reviewed.` },
     { question: `Can I book ${article.brand === 'Aston Martin' ? 'an' : 'a'} ${article.brand} inspection by WhatsApp?`, answer: `Yes. Send the model, year, mileage, concern and any warning-light information to DIGI-TEC on WhatsApp. The team can advise the best next step and arrange an inspection in Al Quoz.` },
     { question: `Is performance tuning suitable for every ${article.brand}?`, answer: `No. A performance plan should be based on mechanical health, service history, cooling, brakes, tyres, driveline capacity and intended use. A diagnostic baseline comes before any upgrade recommendation.` },
@@ -128,8 +134,8 @@ const BrandWorkshopArticleContent = ({ article, isArabic }: { article: BrandWork
     { question: `هل تؤثر حرارة دبي في صيانة ${article.brand}؟`, answer: 'نعم. الحرارة والازدحام والغبار والاستخدام المتواصل للمكيف تزيد أهمية فحص التبريد والإطارات والفرامل والبطارية والسوائل وفق حالة السيارة وطريقة استخدامها.' },
     { question: `ماذا يجب أن يشمل فحص ${article.brand}؟`, answer: 'يشمل الفحص المفيد قراءة الأنظمة الإلكترونية والبيانات الحية عند الحاجة، والفحص البصري، وتجربة الطريق عندما تكون آمنة، مع توضيح الأعطال المؤكدة وما يحتاج إلى متابعة.' },
     { question: `هل أختار قطعاً أصلية أم بديلة لسيارة ${article.brand}؟`, answer: 'يعتمد الاختيار على نوع القطعة وعمر السيارة والاستخدام والميزانية. نوضح مصدر القطعة ومواصفاتها والضمان قبل اعتمادها، مع عناية خاصة بأنظمة السلامة والإلكترونيات.' },
-    { question: `هل تقدم ديجي-تك فحص ${article.brand} قبل الشراء؟`, answer: 'نعم. يمكن مراجعة الحالة الظاهرة وذاكرة الأعطال وسجل الصيانة والإطارات والفرامل والتعليق والتبريد وقابلية القيادة قبل اتخاذ قرار الشراء.' },
-    { question: `كم تستغرق صيانة ${article.brand}؟`, answer: 'يمكن إنجاز بعض أعمال الصيانة الدورية في اليوم نفسه حسب توفر الموعد والقطع. أما التشخيص والإصلاحات الكبيرة فتحدد مدتها بعد الفحص الأولي.' },
+    { question: `هل تقدم ديجي-تك فحص ${article.brand} قبل الشراء؟`, answer: 'أرسل الطراز والسنة والفحوص المطلوبة لتأكيد قبول السيارة ونطاق العمل. اسأل عما يشمله الفحص الفعلي والتشخيص ومراجعة السجل؛ لا يضمن الفحص غياب كل عيب خفي أو عطل مستقبلي.' },
+    { question: `كم تستغرق صيانة ${article.brand}؟`, answer: 'تعتمد المدة على نطاق العمل ونتائج الفحص والوصول إلى المكونات وتوفر القطع وأي إجراءات إضافية مطلوبة ومتاحة. يتم تأكيد الموعد والوقت المتوقع بعد مراجعة السيارة والعمل المطلوب.' },
     { question: `هل يمكن حجز فحص ${article.brand} عبر واتساب؟`, answer: 'نعم. أرسل الطراز والسنة والمسافة ووصف المشكلة ورسالة التحذير إن وجدت، وسيساعدك الفريق في ترتيب الموعد المناسب في القوز.' },
     { question: `هل يناسب تطوير الأداء جميع سيارات ${article.brand}؟`, answer: 'لا. يجب أولاً التأكد من صحة المحرك والتبريد والفرامل والإطارات وناقل الحركة، ثم اختيار خطة تناسب الاستخدام وقدرة المكونات.' },
     { question: `أين تقع ورشة ${article.brand}؟`, answer: 'يقع مركز ديجي-تك بيرفورمانس في منطقة القوز الصناعية 3 في دبي، ويخدم مالكي السيارات من مختلف مناطق دبي والإمارات بالمواعيد.' },
@@ -167,7 +173,23 @@ const BrandWorkshopArticleContent = ({ article, isArabic }: { article: BrandWork
     { question: 'هل تشمل الصفحة صيانة Spectre الكهربائية؟', answer: 'Spectre سيارة كهربائية وتبقى منفصلة عن صيانة محركات الاحتراق. لا يتم الإعلان عن أعمال البطارية عالية الجهد أو الشحن أو العزل من دون تأكيد التدريب والمعدات والنطاق.' },
     { question: 'ما الذي يحدد تكلفة خدمة رولز رويس؟', answer: 'تعتمد التكلفة على الطراز والسنة والمسافة والسجل والصيانة المطلوبة ووقت التشخيص والنتائج والقطع والسوائل والعمالة.' },
   ];
-  const faqs = article.brand === 'Ferrari'
+  const faqs = article.brand === 'Range Rover' ? (isArabic ? [
+    { question: 'هل تستخدم جميع سيارات رينج روفر التعليق الهوائي؟', answer: 'لا. تختلف تجهيزات التعليق حسب الطراز والسنة والمواصفات، لذلك يجب تحديد النظام المركب قبل اقتراح الفحص أو القطع.' },
+    { question: 'هل يوجد موعد صيانة واحد لكل طرازات رينج روفر؟', answer: 'لا. حدد البنود المستحقة من معلومات السيارة وسجلها وطريقة استخدامها، ثم افصل أي إصلاح إضافي عن الصيانة الدورية.' },
+    { question: 'كيف تُحدد تكلفة الصيانة؟', answer: 'تعتمد على الطراز والبنود المستحقة ومواصفات القطع والسوائل ونتائج الفحص والعمالة المعتمدة.' },
+  ] : [
+    { question: 'Does every Range Rover use air suspension?', answer: 'No. Suspension equipment varies by model, year and specification. The fitted system should be identified before a repair is proposed.' },
+    { question: 'Is there one service interval for every Range Rover?', answer: 'No. Due work depends on the exact vehicle, applicable service information, history and use.' },
+    { question: 'What determines a Range Rover service estimate?', answer: 'The due items, parts and fluid specifications, labour and inspection findings determine the agreed scope.' },
+  ]) : article.brand === 'Jaguar' ? (isArabic ? [
+    { question: 'هل يعني تحذير ناقل الحركة ضرورة استبداله؟', answer: 'لا. يتطلب تحديد السبب مراجعة الأعراض والبيانات المتاحة والفحوص الفعلية قبل اقتراح قطع أو إصلاح.' },
+    { question: 'هل تُصان جاكوار I-PACE مثل سيارات البنزين؟', answer: 'لا. I-PACE كهربائية ولا تحتاج إلى زيت محرك احتراق أو شمعات إشعال. يجب تأكيد نطاق أي عمل كهربائي أو جهد عالٍ قبل قبوله.' },
+    { question: 'ما الذي يجب إرساله قبل حجز فحص جاكوار؟', answer: 'أرسل الطراز والسنة والسجل ورسالة التحذير والأعراض ووقت ظهورها حتى تحدد الورشة الفحص الأول المناسب.' },
+  ] : [
+    { question: 'Does a Jaguar gearbox warning mean replacement?', answer: 'No. The symptom, available fault data and relevant physical checks must be reviewed before a gearbox repair is recommended.' },
+    { question: 'Is I-PACE maintained like a petrol Jaguar?', answer: 'No. I-PACE is electric and does not need combustion-engine oil or spark-plug service. High-voltage work requires separate capability confirmation.' },
+    { question: 'What should I share before a Jaguar inspection?', answer: 'Send the model, year, history, exact warning and when the symptom occurs so the first assessment can be planned.' },
+  ]) : article.brand === 'Ferrari'
     ? (isArabic ? ferrariFaqsArabic : ferrariFaqs)
     : !isArabic && article.brand === 'Aston Martin' ? [
  {question:'How should I compare Aston Martin workshops?',answer:'Ask about model-specific diagnostic access, the inspection process, parts options and written estimates before approving work.'},
@@ -181,7 +203,17 @@ const BrandWorkshopArticleContent = ({ article, isArabic }: { article: BrandWork
     : article.brand === 'Ferrari' ? ferrariServiceLinks
       : article.brand === 'McLaren' ? mclarenServiceLinks
         : article.brand === 'Lamborghini' ? lamborghiniServiceLinks
-          : article.brand === 'Rolls-Royce' ? rollsRoyceServiceLinks : article.brand === 'Aston Martin' && !isArabic ? [{label:'Aston Martin service and repair',arLabel:'',href:'/brands/aston-martin-service-dubai'},{label:'DB11 owner guide',arLabel:'',href:'/blog/aston-martin-db11-service-dubai-guide'},{label:'Brake assessment',arLabel:'',href:'/brands/aston-martin-service-dubai/brake-repair'},{label:'Transmission assessment',arLabel:'',href:'/brands/aston-martin-service-dubai/transmission-repair'}] : generalServiceLinks;
+          : article.brand === 'Rolls-Royce' ? rollsRoyceServiceLinks : article.brand === 'Range Rover' ? [
+            {label:'Range Rover service',arLabel:'خدمات رينج روفر',href:'/brands/range-rover-service-dubai'},
+            {label:'Suspension assessment',arLabel:'فحص التعليق',href:'/brands/range-rover-service-dubai/suspension-repair'},
+            {label:'Engine diagnostics',arLabel:'تشخيص المحرك',href:'/brands/range-rover-service-dubai/engine-diagnostics'},
+            {label:'Brake assessment',arLabel:'فحص الفرامل',href:'/brands/range-rover-service-dubai/brake-repair'},
+          ] : article.brand === 'Jaguar' ? [
+            {label:'Jaguar service',arLabel:'خدمات جاكوار',href:'/brands/jaguar-service-dubai'},
+            {label:'Jaguar diagnostics',arLabel:'تشخيص جاكوار',href:'/brands/jaguar-service-dubai/engine-diagnostics'},
+            {label:'Transmission assessment',arLabel:'فحص ناقل الحركة',href:'/brands/jaguar-service-dubai/transmission-repair'},
+            {label:'Suspension assessment',arLabel:'فحص التعليق',href:'/brands/jaguar-service-dubai/suspension-repair'},
+          ] : article.brand === 'Aston Martin' && !isArabic ? [{label:'Aston Martin service and repair',arLabel:'',href:'/brands/aston-martin-service-dubai'},{label:'DB11 owner guide',arLabel:'',href:'/blog/aston-martin-db11-service-dubai-guide'},{label:'Brake assessment',arLabel:'',href:'/brands/aston-martin-service-dubai/brake-repair'},{label:'Transmission assessment',arLabel:'',href:'/brands/aston-martin-service-dubai/transmission-repair'}] : generalServiceLinks;
 
   const jsonLd = (() => {
     const breadcrumb = buildBreadcrumb(url, [
@@ -224,7 +256,7 @@ const BrandWorkshopArticleContent = ({ article, isArabic }: { article: BrandWork
       areaServed: isArabic ? ['دبي'] : ['Dubai'],
     });
     const faq = buildFAQ(url, faqs);
-    return pageGraph([webPage, breadcrumb, blogArticle, service, ...(faq ? [faq] : [])]);
+    return pageGraph([webPage, breadcrumb, blogArticle, ...(['Range Rover', 'Jaguar'].includes(article.brand) ? [] : [service]), ...(faq ? [faq] : [])]);
   })();
 
   useSeo({
@@ -249,14 +281,16 @@ const BrandWorkshopArticleContent = ({ article, isArabic }: { article: BrandWork
         { path: '/best-ferrari-workshop-dubai', title: isArabic ? 'كيفية اختيار ورشة فيراري في دبي' : 'How to Choose a Ferrari Workshop in Dubai' },
         { path: '/blog/pre-purchase-inspection-dubai-guide', title: isArabic ? 'دليل فحص السيارة قبل الشراء في دبي' : 'Pre-Purchase Inspection Guide for Dubai' },
       ]
-    : brandWorkshopArticles
-        .filter((item) => item.slug !== article.slug)
-        .slice(0, 3)
-        .map((item) => {
-          const localizedItem = isArabic ? localizePostSummaryToArabic({ ...item, excerpt: '' }) : item;
-          return { path: `/blog/${localizedItem.slug}`, title: localizedItem.title };
-        });
+    : [
+        { path: '/blog/dealer-vs-independent-workshop-dubai', title: isArabic ? 'المقارنة بين الوكالة والورشة المستقلة' : 'Compare dealer and independent workshop scope' },
+        { path: '/blog/car-service-cost-dubai-luxury-brands', title: isArabic ? 'كيف تقرأ عرض صيانة السيارة؟' : 'How to compare an itemised service estimate' },
+        { path: '/blog/car-service-interval-dubai-heat', title: isArabic ? 'مواعيد الصيانة والوقت والمسافة' : 'Plan maintenance around time, mileage and use' },
+      ];
   const t = (english: string, arabic: string) => (isArabic ? arabic : english);
+  const b4Link = (path: string) => isArabic && ['Range Rover', 'Jaguar'].includes(article.brand) && path.startsWith(`/brands/${article.brand.toLowerCase().replace(' ','-')}-service-dubai`) ? `/ar${path}` : isArabic && ['Ferrari', 'Lamborghini'].includes(article.brand) && (
+    path.startsWith(`/brands/${article.brand.toLowerCase()}-service-dubai`) ||
+    (article.brand === 'Ferrari' && ['/blog/ferrari-488-service-dubai-guide', '/best-ferrari-workshop-dubai'].includes(path))
+  ) ? `/ar${path}` : path;
 
   return (
     <div className="min-h-screen bg-black text-off-white">
@@ -297,6 +331,7 @@ const BrandWorkshopArticleContent = ({ article, isArabic }: { article: BrandWork
         </section>
 
         <article className="mx-auto max-w-4xl px-5 py-14 sm:px-6 sm:py-20">
+          {['Range Rover', 'Jaguar'].includes(article.brand) ? <B6JlrGuideBody brand={article.brand as 'Range Rover' | 'Jaguar'} isArabic={isArabic} /> : isB5SelectionGuide ? <B5SelectionGuideBody brand={article.brand as 'Rolls-Royce' | 'Bentley' | 'Maybach'} isArabic={isArabic} /> : <>
           <section className={`${isArabic ? 'border-r-2 pr-5' : 'border-l-2 pl-5'} border-burnt-orange`}>
             {article.brand === 'Ferrari' ? (
               <>
@@ -375,7 +410,7 @@ const BrandWorkshopArticleContent = ({ article, isArabic }: { article: BrandWork
                     t('Written findings with due, urgent and optional work separated', 'تقرير مكتوب يفصل بين الأعمال المستحقة والعاجلة والاختيارية'),
                   ].map((item) => <li key={item} className="flex gap-3"><CheckCircle2 className="mt-1 h-4 w-4 shrink-0 text-burnt-orange" /><span>{item}</span></li>)}
                 </ul>
-                <p className="mt-5 leading-relaxed text-gray-300">{t('For the next step, review our ', 'للخطوة التالية، راجع صفحة ')}<Link to="/brands/ferrari-service-dubai/oil-change" className="font-semibold text-burnt-orange hover:underline">{t('Ferrari oil service', 'خدمة زيت فيراري')}</Link>{t(', ', '، و')}<Link to="/brands/ferrari-service-dubai/engine-diagnostics" className="font-semibold text-burnt-orange hover:underline">{t('Ferrari diagnostics', 'تشخيص فيراري')}</Link>{t(' or ', ' أو ')}<Link to="/brands/ferrari-service-dubai/transmission-repair" className="font-semibold text-burnt-orange hover:underline">{t('F1 and dual-clutch transmission assessment', 'فحص ناقل الحركة F1 وثنائي القابض')}</Link>{t(' pages for the workshop scope behind each concern.', ' لمعرفة نطاق الورشة لكل حالة.')}</p>
+                <p className="mt-5 leading-relaxed text-gray-300">{t('For the next step, review our ', 'للخطوة التالية، راجع صفحة ')}<Link to={b4Link('/brands/ferrari-service-dubai/oil-change')} className="font-semibold text-burnt-orange hover:underline">{t('Ferrari oil service', 'خدمة زيت فيراري')}</Link>{t(', ', '، و')}<Link to={b4Link('/brands/ferrari-service-dubai/engine-diagnostics')} className="font-semibold text-burnt-orange hover:underline">{t('Ferrari diagnostics', 'تشخيص فيراري')}</Link>{t(' or ', ' أو ')}<Link to={b4Link('/brands/ferrari-service-dubai/transmission-repair')} className="font-semibold text-burnt-orange hover:underline">{t('F1 and dual-clutch transmission assessment', 'فحص ناقل الحركة F1 وثنائي القابض')}</Link>{t(' pages for the workshop scope behind each concern.', ' لمعرفة نطاق الورشة لكل حالة.')}</p>
               </section>
 
               <section className="mt-14">
@@ -390,7 +425,7 @@ const BrandWorkshopArticleContent = ({ article, isArabic }: { article: BrandWork
                     t('OEM parts availability and any work discovered after inspection', 'توفر القطع الأصلية وأي أعمال تظهر بعد الفحص'),
                   ].map((factor) => <li key={factor} className="flex gap-3"><CheckCircle2 className="mt-1 h-4 w-4 shrink-0 text-burnt-orange" /><span>{factor}</span></li>)}
                 </ul>
-                <p className="mt-5 leading-relaxed text-gray-300">{t('Ask for an itemised estimate that separates diagnostics, labour, parts and optional preventive work. For a direct service overview or to arrange an inspection, visit our ', 'اطلب عرضاً مفصلاً يفصل التشخيص والعمالة والقطع والأعمال الوقائية الاختيارية. للاطلاع على الخدمات أو حجز فحص، زر صفحة ')}<Link to="/brands/ferrari-service-dubai" className="font-semibold text-burnt-orange hover:underline">{t('Ferrari service Dubai page', 'خدمة فيراري في دبي')}</Link>.</p>
+                <p className="mt-5 leading-relaxed text-gray-300">{t('Ask for an itemised estimate that separates diagnostics, labour, parts and optional preventive work. For a direct service overview or to arrange an inspection, visit our ', 'اطلب عرضاً مفصلاً يفصل التشخيص والعمالة والقطع والأعمال الوقائية الاختيارية. للاطلاع على الخدمات أو حجز فحص، زر صفحة ')}<Link to={b4Link('/brands/ferrari-service-dubai')} className="font-semibold text-burnt-orange hover:underline">{t('Ferrari service Dubai page', 'خدمة فيراري في دبي')}</Link>.</p>
               </section>
 
               {!isArabic && (
@@ -414,6 +449,23 @@ const BrandWorkshopArticleContent = ({ article, isArabic }: { article: BrandWork
             </>
           )}
 
+          {article.brand === 'Lamborghini' && (
+            <section className="mt-14">
+              <h2 className="text-2xl font-black sm:text-3xl">{t('Plan Lamborghini maintenance around the fitted vehicle', 'خطط لصيانة لامبورغيني وفق السيارة وتجهيزاتها')}</h2>
+              <p className="mt-4 leading-relaxed text-gray-300">{t('An Urus, a Huracán and an Aventador do not share one gearbox or one service procedure. Record the model, year, VIN, service history, warning text and storage pattern before requesting an estimate. The fitted transmission, brake hardware, suspension and fluid specifications determine the relevant checks; a generic “Lamborghini service package” cannot establish them.', 'لا تستخدم أوروس وهوراكان وأفينتادور ناقل الحركة نفسه أو إجراءات صيانة واحدة. جهّز الطراز والسنة ورقم الهيكل وسجل الصيانة ونص التحذير وطريقة التخزين قبل طلب عرض السعر. يحدد ناقل الحركة والفرامل والتعليق والسوائل المركبة الفحوص المناسبة، ولا تكفي باقة عامة لتحديدها.')}</p>
+              <p className="mt-4 leading-relaxed text-gray-300">{t('For a car driven infrequently, ask for a condition-based review of low-voltage battery health, tyre age, visible fluid leaks and brake condition alongside the applicable schedule. A warning or a harsh shift should be assessed before a part or fluid change is approved. Hybrid models also require the workshop to confirm any high-voltage scope separately; this guide does not promise traction-battery repair.', 'إذا كانت السيارة قليلة الاستخدام، اطلب مراجعة حالة البطارية منخفضة الجهد وعمر الإطارات والتسريبات الظاهرة والفرامل مع الجدول المناسب. يجب تقييم التحذير أو تبديل السرعات القاسي قبل اعتماد قطعة أو تغيير سائل. وتتطلب الطرازات الهجينة تأكيد نطاق الجهد العالي بصورة منفصلة؛ ولا يعد هذا الدليل بإصلاح بطارية الجر.')}</p>
+              <p className="mt-4 leading-relaxed text-gray-300">{t('Request an estimate that separates inspection, due maintenance and optional findings. For a gearbox warning, follow the ', 'اطلب عرضاً يفصل الفحص والصيانة المستحقة والملاحظات الاختيارية. عند تحذير ناقل الحركة، راجع صفحة ')}<Link to={b4Link('/brands/lamborghini-service-dubai/transmission-repair')} className="font-semibold text-burnt-orange hover:underline">{t('Lamborghini transmission assessment', 'فحص ناقل حركة لامبورغيني')}</Link>{t('; for an unexplained engine warning, use the ', '؛ ولتحذير المحرك غير الواضح، راجع صفحة ')}<Link to={b4Link('/brands/lamborghini-service-dubai/engine-diagnostics')} className="font-semibold text-burnt-orange hover:underline">{t('diagnostics page', 'التشخيص')}</Link>.</p>
+            </section>
+          )}
+
+          {(article.brand === 'Ferrari' || article.brand === 'Lamborghini') && (
+            <section className="mt-14">
+              <h2 className="text-2xl font-black sm:text-3xl">{t(`When to stop driving a ${article.brand}`, `متى تتوقف عن قيادة ${article.brand}؟`)}</h2>
+              <p className="mt-4 leading-relaxed text-gray-300">{t('A red oil-pressure or brake warning, overheating, smoke, a strong fuel smell or a sudden handling change calls for a safe stop and advice before the car is driven farther. For other warnings, record the exact message and when it appears. Avoid repeatedly clearing faults before an inspection, because stored information may help identify the affected system.', 'يتطلب تحذير ضغط الزيت أو الفرامل الأحمر أو ارتفاع الحرارة أو الدخان أو رائحة وقود قوية أو تغيراً مفاجئاً في التحكم التوقف بأمان وطلب المشورة قبل متابعة القيادة. وللتحذيرات الأخرى، دوّن الرسالة ووقت ظهورها. تجنب مسح الأعطال مراراً قبل الفحص لأن البيانات المحفوظة قد تساعد في تحديد النظام المعني.')}</p>
+            </section>
+          )}
+
+          {article.brand !== 'Ferrari' && article.brand !== 'Lamborghini' && <>
           <section className="mt-14">
             <h2 className="text-2xl font-black sm:text-3xl">{article.brand === 'McLaren' || article.brand === 'Rolls-Royce' || (!isArabic && article.brand === 'Aston Martin') ? t('Parts, fluids and confirmed workshop scope', 'القطع والسوائل ونطاق العمل المؤكد') : t('OEM parts, alternatives and performance work', 'القطع الأصلية والبدائل وتطوير الأداء')}</h2>
             <p className="mt-4 leading-relaxed text-gray-300">{t('Parts choices should be transparent. The workshop should tell you whether a component is genuine OEM, OEM-equivalent or aftermarket, why it suits the job, and what warranty terms apply. The right choice depends on the repair: safety, electronics, complex driveline components and software-sensitive systems deserve especially careful sourcing.', 'يجب أن يكون اختيار القطع واضحاً. من حقك معرفة ما إذا كانت القطعة أصلية أو مكافئة لمواصفات المصنع أو من سوق البدائل، ولماذا تناسب الإصلاح وما شروط ضمانها. تحتاج مكونات السلامة والإلكترونيات وناقل الحركة والأنظمة الحساسة للبرمجة إلى عناية خاصة في الاختيار.')}</p>
@@ -452,35 +504,114 @@ const BrandWorkshopArticleContent = ({ article, isArabic }: { article: BrandWork
             <p className="mt-4 leading-relaxed text-gray-300">{t('Some symptoms should not wait for the next scheduled service. Stop and arrange advice promptly if you see an overheating message, a red oil-pressure or brake warning, a strong fuel smell, smoke, a major coolant loss, sudden loss of power, a steering change, a harsh new transmission behaviour or a suspension warning that changes how the car sits or handles. Continuing to drive can turn a contained issue into damage to an engine, transmission, brake system or safety-related component.', 'بعض الأعراض لا تنتظر موعد الصيانة التالي. توقف واطلب المشورة عند ظهور سخونة أو تحذير أحمر لضغط الزيت أو الفرامل أو رائحة وقود قوية أو دخان أو فقدان كبير لسائل التبريد أو قوة المحرك أو تغير في التوجيه أو سلوك قاسٍ لناقل الحركة أو تحذير تعليق يؤثر في ارتفاع السيارة أو التحكم بها. استمرار القيادة قد يحول المشكلة إلى تلف أكبر.')}</p>
             <p className="mt-4 leading-relaxed text-gray-300">{t('For less urgent warnings, note the exact message and whether the car drives normally. Do not clear codes repeatedly before the appointment, because stored information may help identify the cause. If you are unsure whether it is safe to continue, contact the workshop with the warning, model and current symptoms. Clear information allows the team to advise whether to bring the vehicle in, arrange recovery or schedule a controlled inspection. It also prevents wasted time, protects the vehicle’s service record and helps you make a calmer, better-informed decision. A short call before driving across Dubai may save a costly avoidable failure today.', 'للتحذيرات الأقل إلحاحاً، دوّن الرسالة وهل تقود السيارة بصورة طبيعية، ولا تمسح الرموز مراراً قبل الموعد لأن البيانات المخزنة قد تكشف السبب. إذا شككت في سلامة الاستمرار، تواصل مع الورشة وأرسل التحذير والطراز والأعراض. تساعد هذه المعلومات الفريق على تحديد ما إذا كان يجب إحضار السيارة أو طلب سطحة أو ترتيب فحص، وقد تمنع عطلاً مكلفاً يمكن تجنبه.')}</p>
           </section>
+          </>}
+          </>}
 
           <section className="mt-14 rounded-3xl border border-burnt-orange/25 bg-burnt-orange/5 p-6 sm:p-8">
             <h2 className="text-2xl font-black sm:text-3xl">{t('Why book with DIGI-TEC in Al Quoz', 'لماذا تحجز لدى ديجي-تك في القوز؟')}</h2>
-            <p className="mt-4 leading-relaxed text-gray-300">{article.brand === 'McLaren' ? t('DIGI-TEC Performance Center is an independent workshop in Al Quoz Industrial Area 3, Dubai. For a McLaren enquiry, share the model, year, mileage and concern so the team can confirm the appropriate first assessment and workshop scope before work moves forward.', 'ديجي-تك بيرفورمانس ورشة مستقلة في القوز الصناعية 3 بدبي. لاستفسار مكلارين، أرسل الطراز والسنة والمسافة والمشكلة حتى يؤكد الفريق الفحص الأول المناسب ونطاق العمل قبل بدء التنفيذ.') : article.brand === 'Rolls-Royce' ? t('DIGI-TEC Performance Center is an independent workshop in Al Quoz Industrial Area 3, Dubai. Share the Rolls-Royce model, year, mileage, history and concern so the team can confirm the appropriate first assessment, accepted scope and appointment availability before work moves forward.', 'ديجي-تك بيرفورمانس ورشة مستقلة في القوز الصناعية 3 بدبي. أرسل طراز رولز رويس والسنة والمسافة والسجل والمشكلة حتى يؤكد الفريق الفحص الأول والنطاق المقبول وتوفر الموعد قبل بدء العمل.') : t('DIGI-TEC Performance Center is located in Al Quoz Industrial Area 3, Dubai. Our team works with luxury, performance and everyday vehicles, using a clear inspection-first process, practical service advice and written communication before repair work moves forward. Whether you need routine maintenance, a warning-light diagnosis, a second opinion or a pre-purchase check, the aim is to give you a useful decision path—not vague recommendations.', 'يقع مركز ديجي-تك بيرفورمانس في منطقة القوز الصناعية 3 بدبي. يعمل فريقنا على السيارات الفاخرة وعالية الأداء والسيارات اليومية بمنهج يبدأ بالفحص، وتوصيات عملية، وتواصل مكتوب قبل بدء الإصلاح. سواء احتجت إلى صيانة دورية أو تشخيص تحذير أو رأي ثانٍ أو فحص قبل الشراء، هدفنا أن نمنحك مسار قرار واضحاً لا توصيات مبهمة.')}</p>
+            <p className="mt-4 leading-relaxed text-gray-300">{article.brand === 'Range Rover' ? t('For a Range Rover enquiry, send DIGI-TEC in Al Quoz the model, year, history and due-service information or symptom. The team can confirm the fitted system and first inspection before proposing parts or a maintenance estimate.', 'لاستفسار رينج روفر لدى ديجي-تك في القوز، أرسل الطراز والسنة والسجل ومعلومات الصيانة المستحقة أو العَرَض. يمكن للفريق تأكيد النظام المركب والفحص الأول قبل اقتراح القطع أو تقدير الصيانة.') : article.brand === 'Jaguar' ? t('For a Jaguar enquiry, identify whether the car is a combustion model or electric I-PACE and describe the warning or driving change. DIGI-TEC in Al Quoz confirms supported diagnostic and repair scope before work is agreed.', 'لاستفسار جاكوار، حدد ما إذا كانت السيارة بطراز احتراق أو I-PACE الكهربائية واشرح التحذير أو تغير القيادة. تؤكد ديجي-تك في القوز نطاق التشخيص والإصلاح المتاح قبل اعتماد العمل.') : article.brand === 'McLaren' ? t('DIGI-TEC Performance Center is an independent workshop in Al Quoz Industrial Area 3, Dubai. For a McLaren enquiry, share the model, year, mileage and concern so the team can confirm the appropriate first assessment and workshop scope before work moves forward.', 'ديجي-تك بيرفورمانس ورشة مستقلة في القوز الصناعية 3 بدبي. لاستفسار مكلارين، أرسل الطراز والسنة والمسافة والمشكلة حتى يؤكد الفريق الفحص الأول المناسب ونطاق العمل قبل بدء التنفيذ.') : article.brand === 'Rolls-Royce' ? t('DIGI-TEC Performance Center is an independent workshop in Al Quoz Industrial Area 3, Dubai. Share the Rolls-Royce model, year, mileage, history and concern so the team can confirm the appropriate first assessment, accepted scope and appointment availability before work moves forward.', 'ديجي-تك بيرفورمانس ورشة مستقلة في القوز الصناعية 3 بدبي. أرسل طراز رولز رويس والسنة والمسافة والسجل والمشكلة حتى يؤكد الفريق الفحص الأول والنطاق المقبول وتوفر الموعد قبل بدء العمل.') : article.brand === 'Bentley' ? t('For a Bentley enquiry, tell DIGI-TEC in Al Quoz whether the concern is maintenance, a warning, ride quality or a fitted reversing-camera fault. Include the model, year and relevant equipment so the workshop can confirm its first assessment and accepted scope.', 'لاستفسار بنتلي لدى ديجي-تك في القوز، وضح ما إذا كان الطلب صيانة أو تحذيراً أو تغيراً في الراحة أو عطلاً في كاميرا الرجوع المركبة. أرسل الطراز والسنة والتجهيزات ذات الصلة حتى يؤكد الفريق الفحص الأول والنطاق المقبول.') : article.brand === 'Maybach' ? t('For a Mercedes-Maybach enquiry, send DIGI-TEC in Al Quoz the VIN, S-Class or GLS variant, warning and affected rear-cabin or chassis function. The team can then confirm a suitable first inspection and available scope before work is agreed.', 'لاستفسار مرسيدس-مايباخ، أرسل إلى ديجي-تك في القوز رقم الهيكل وطراز فئة S أو GLS والتحذير والوظيفة المتأثرة في المقصورة الخلفية أو التعليق. عندها يمكن للفريق تأكيد الفحص الأول والنطاق المتاح قبل اعتماد العمل.') : t('DIGI-TEC Performance Center is located in Al Quoz Industrial Area 3, Dubai. Our team works with luxury, performance and everyday vehicles, using a clear inspection-first process, practical service advice and written communication before repair work moves forward. Whether you need routine maintenance, a warning-light diagnosis, a second opinion or a pre-purchase check, the aim is to give you a useful decision path—not vague recommendations.', 'يقع مركز ديجي-تك بيرفورمانس في منطقة القوز الصناعية 3 بدبي. يعمل فريقنا على السيارات الفاخرة وعالية الأداء والسيارات اليومية بمنهج يبدأ بالفحص، وتوصيات عملية، وتواصل مكتوب قبل بدء الإصلاح. سواء احتجت إلى صيانة دورية أو تشخيص تحذير أو رأي ثانٍ أو فحص قبل الشراء، هدفنا أن نمنحك مسار قرار واضحاً لا توصيات مبهمة.')}</p>
             <div className="mt-6 flex flex-col gap-3 sm:flex-row"><a href={whatsappHref} target="_blank" rel="noopener noreferrer" className="btn-primary"><MessageCircle className="h-5 w-5" />{t('Request a Quote', 'اطلب عرض سعر')}</a><a href="https://maps.google.com/?q=Al+Quoz+Industrial+Area+3+Dubai" target="_blank" rel="noopener noreferrer" className="btn-secondary"><MapPin className="h-5 w-5" />{t('Get Directions', 'اعرض الموقع على الخريطة')}</a></div>
           </section>
 
           <section className="mt-14">
             <h2 className="text-2xl font-black sm:text-3xl">{t('Related services and useful next steps', 'خدمات مرتبطة وخطوات تالية مفيدة')}</h2>
+            {article.brandHub && !relatedServiceLinks.some((service) => service.href === article.brandHub) && <p className="mt-4"><Link to={b4Link(article.brandHub)} className="font-semibold text-burnt-orange underline underline-offset-4">{t(`${article.brand} service and repair options`, `خدمات صيانة وإصلاح ${article.brand}`)}</Link></p>}
             <div className="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-4">
-              {relatedServiceLinks.map((service) => <Link key={service.href} to={service.href} className="card-premium rounded-xl p-4 text-sm font-bold transition-colors hover:text-burnt-orange">{isArabic ? service.arLabel : service.label}<ArrowRight className={`mt-2 h-4 w-4 text-burnt-orange ${isArabic ? 'rotate-180' : ''}`} /></Link>)}
+              {relatedServiceLinks.map((service) => <Link key={service.href} to={b4Link(service.href)} className="card-premium rounded-xl p-4 text-sm font-bold transition-colors hover:text-burnt-orange">{isArabic ? service.arLabel : service.label}<ArrowRight className={`mt-2 h-4 w-4 text-burnt-orange ${isArabic ? 'rotate-180' : ''}`} /></Link>)}
             </div>
-            {!article.coverImage && !['Aston Martin', 'Mercedes-Benz'].includes(article.brand) && <p className="mt-6 text-sm leading-relaxed text-gray-400">{t(`Useful image plan for this article: ${article.brand === 'Aston Martin' ? 'an' : 'a'} ${article.brand} arriving at the workshop, a technician using diagnostic equipment, a close-up of the relevant repair area, and a wide shot of the workshop. Suggested hero alt text: “${article.imageAlt}”.`, `خطة الصور المقترحة للمقال: سيارة ${article.brand} عند وصولها إلى الورشة، وفني يستخدم جهاز التشخيص، وصورة قريبة لمنطقة الإصلاح، وصورة واسعة للورشة. النص البديل المقترح للصورة الرئيسية: «${article.imageAlt}».`)}</p>}
           </section>
 
           <section className="mt-14">
             <h2 className="text-center text-2xl font-black sm:text-3xl">{t(`${article.brand} workshop FAQs`, `الأسئلة الشائعة عن ورشة ${article.brand}`)}</h2>
             <Accordion type="single" collapsible className="mt-7 space-y-3">
-              {faqs.map((faq, index) => <AccordionItem key={faq.question} value={`faq-${index}`} className="rounded-2xl border border-white/10 bg-white/[0.03] px-5"><AccordionTrigger className={`${isArabic ? 'text-right' : 'text-left'} font-bold hover:no-underline`}>{faq.question}</AccordionTrigger><AccordionContent className="leading-relaxed text-gray-300">{faq.answer}</AccordionContent></AccordionItem>)}
+              {faqs.map((faq, index) => <AccordionItem key={faq.question} value={`faq-${index}`} className="rounded-2xl border border-white/10 bg-white/[0.03] px-5"><AccordionTrigger className={`${isArabic ? 'text-right' : 'text-left'} font-bold hover:no-underline`}>{faq.question}</AccordionTrigger><AccordionContent forceMount={['Porsche', 'BMW', 'Ferrari', 'Lamborghini', 'Rolls-Royce', 'Bentley', 'Maybach', 'Range Rover', 'Jaguar', 'Cadillac', 'Volkswagen'].includes(article.brand) ? true : undefined} className="leading-relaxed text-gray-300">{faq.answer}</AccordionContent></AccordionItem>)}
             </Accordion>
           </section>
 
           <section className="mt-14 border-t border-white/10 pt-10">
             <h2 className="text-2xl font-black">{t('Related workshop guides', 'أدلة ورش مرتبطة')}</h2>
-            <div className="mt-6 grid gap-4 sm:grid-cols-3">{relatedArticles.map((item) => <Link key={item.path} to={item.path} className="card-premium rounded-2xl p-5 transition-colors hover:text-burnt-orange"><p className="text-xs font-bold uppercase tracking-widest text-burnt-orange">{t('Workshop Guide', 'دليل الورشة')}</p><h3 className="mt-2 font-bold">{item.title}</h3></Link>)}</div>
+            <div className="mt-6 grid gap-4 sm:grid-cols-3">{relatedArticles.map((item) => <Link key={item.path} to={b4Link(item.path)} className="card-premium rounded-2xl p-5 transition-colors hover:text-burnt-orange"><p className="text-xs font-bold uppercase tracking-widest text-burnt-orange">{t('Workshop Guide', 'دليل الورشة')}</p><h3 className="mt-2 font-bold">{item.title}</h3></Link>)}</div>
           </section>
         </article>
       </main>
       <aside className={`fixed bottom-4 ${isArabic ? 'left-4' : 'right-4'} z-30 hidden rounded-2xl border border-burnt-orange/40 bg-black/95 p-4 shadow-2xl shadow-black/60 lg:block`} aria-label={t('Book a workshop inspection', 'احجز فحصاً في الورشة')}><p className="text-sm font-bold">{t(`Book ${article.brand === 'Aston Martin' ? 'an' : 'a'} ${article.brand} inspection`, `احجز فحص ${article.brand}`)}</p><a href={whatsappHref} target="_blank" rel="noopener noreferrer" className="mt-3 inline-flex text-sm font-bold text-burnt-orange hover:underline">{t('WhatsApp DIGI-TEC', 'تواصل مع ديجي-تك عبر واتساب')} <ArrowRight className={`${isArabic ? 'mr-1 rotate-180' : 'ml-1'} h-4 w-4`} /></a></aside>
+      <FinalCTA />
+      <Footer />
+    </div>
+  );
+};
+
+const MercedesMaintenanceArticle = ({ article, isArabic }: { article: BrandWorkshopArticle; isArabic: boolean }) => {
+  const guide = mercedesMaintenanceGuide[isArabic ? 'ar' : 'en'];
+  const url = `${SITE_URL}${isArabic ? '/ar' : ''}/blog/${article.slug}`;
+  const datePublished = article.datePublished ?? '2026-07-16';
+  const breadcrumb = buildBreadcrumb(url, [
+    { name: isArabic ? 'الرئيسية' : 'Home', url: isArabic ? '/ar' : '/' },
+    { name: isArabic ? 'المقالات' : 'Blog', url: isArabic ? '/ar/blog' : '/blog' },
+    { name: guide.title, url },
+  ]);
+  const faq = buildFAQ(url, guide.faqs);
+  useSeo({
+    title: guide.metaTitle,
+    description: guide.description,
+    canonical: url,
+    ogTitle: guide.title,
+    ogDescription: guide.description,
+    ogType: 'article',
+    twitterTitle: guide.title,
+    twitterDescription: guide.description,
+    twitterCard: 'summary_large_image',
+    jsonLd: pageGraph([
+      buildWebPage({ url, name: guide.title, description: guide.description, type: 'ItemPage', breadcrumbId: `${url}#breadcrumb`, datePublished, dateModified: MERCEDES_MAINTENANCE_UPDATED, mainEntityId: `${url}#article` }),
+      breadcrumb,
+      buildArticle({ url, headline: guide.title, description: guide.description, datePublished, dateModified: MERCEDES_MAINTENANCE_UPDATED, author: isArabic ? 'فريق ورشة ديجي-تك' : 'DIGI-TEC Workshop', section: isArabic ? 'تخطيط الصيانة' : 'Maintenance planning' }),
+      ...(faq ? [faq] : []),
+    ]),
+  });
+
+  return (
+    <div className="min-h-screen bg-black text-off-white">
+      <Header />
+      <main>
+        <nav aria-label={isArabic ? 'مسار التنقل' : 'Breadcrumb'} className="mx-auto max-w-6xl px-5 pt-6 text-sm text-gray-400 sm:px-6">
+          <ol className="flex flex-wrap items-center gap-2">
+            <li><Link to="/" className="hover:text-burnt-orange">{isArabic ? 'الرئيسية' : 'Home'}</Link></li><li aria-hidden="true">/</li>
+            <li><Link to="/blog" className="hover:text-burnt-orange">{isArabic ? 'المقالات' : 'Blog'}</Link></li><li aria-hidden="true">/</li>
+            <li className="text-off-white">{isArabic ? 'تخطيط صيانة مرسيدس' : 'Mercedes maintenance planning'}</li>
+          </ol>
+        </nav>
+        <section className={`mt-5 bg-gradient-to-br ${article.coverGradient}`}>
+          <div className="mx-auto max-w-4xl px-5 py-16 sm:px-6 sm:py-24">
+            <p className="mb-4 text-xs font-bold uppercase tracking-[0.24em] text-burnt-orange">{isArabic ? 'دليل المالك' : 'Owner guide'}</p>
+            <h1 className="text-4xl font-black leading-tight sm:text-5xl lg:text-6xl">{guide.title}</h1>
+            <p className="mt-5 text-sm text-gray-400">{isArabic ? 'آخر تحديث: ' : 'Updated: '}{MERCEDES_MAINTENANCE_UPDATED}</p>
+            <p className="mt-6 text-lg leading-relaxed text-gray-200">{guide.description}</p>
+          </div>
+        </section>
+        <article className="mx-auto max-w-4xl px-5 py-14 sm:px-6 sm:py-20">
+          <nav aria-label={isArabic ? 'في هذا الدليل' : 'In this guide'} className="mb-12 rounded-xl border border-white/10 bg-white/[0.03] p-5">
+            <ol className="grid gap-3 text-sm sm:grid-cols-2">{guide.sections.map((section, index) => <li key={section.heading}><a className="text-gray-300 underline underline-offset-4 hover:text-burnt-orange" href={`#planning-${index + 1}`}>{section.heading}</a></li>)}</ol>
+          </nav>
+          {guide.sections.map((section, index) => (
+            <section key={section.heading} className="mb-12">
+              <h2 id={`planning-${index + 1}`} className="scroll-mt-28 text-2xl font-black sm:text-3xl">{section.heading}</h2>
+              <p className="mt-4 leading-relaxed text-gray-300">{section.text}</p>
+              {section.items && <ul className="mt-5 list-disc space-y-3 ps-5 text-gray-300">{section.items.map((item) => <li key={item}>{item}</li>)}</ul>}
+              {section.links && <div className="mt-5 flex flex-wrap gap-x-6 gap-y-3">{section.links.map((link) => <Link key={link.href} to={link.href} className="font-semibold text-burnt-orange underline underline-offset-4">{link.label}</Link>)}</div>}
+            </section>
+          ))}
+          <section className="mt-14">
+            <h2 className="text-2xl font-black">{isArabic ? 'أسئلة عن تخطيط الصيانة' : 'Maintenance-planning questions'}</h2>
+            <Accordion type="single" collapsible className="mt-7 space-y-3">
+              {guide.faqs.map((item, index) => <AccordionItem key={item.question} value={`planning-faq-${index}`} className="rounded-2xl border border-white/10 bg-white/[0.03] px-5"><AccordionTrigger className={`${isArabic ? 'text-right' : 'text-left'} font-bold hover:no-underline`}>{item.question}</AccordionTrigger><AccordionContent forceMount className="leading-relaxed text-gray-300">{item.answer}</AccordionContent></AccordionItem>)}
+            </Accordion>
+          </section>
+          <section className="mt-14 border-t border-white/10 pt-10">
+            <h2 className="text-2xl font-black">{isArabic ? 'أدلة تساعدك في الخطوة التالية' : 'Continue with the detail you need'}</h2>
+            <div className="mt-6 grid gap-4 sm:grid-cols-3">{guide.related.map((link) => <Link key={link.href} to={link.href} className="card-premium rounded-2xl p-5 font-semibold hover:text-burnt-orange">{link.label}</Link>)}</div>
+          </section>
+        </article>
+      </main>
       <FinalCTA />
       <Footer />
     </div>
@@ -493,6 +624,8 @@ const BrandWorkshopArticlePage = () => {
   const sourceArticle = slug ? getBrandWorkshopArticle(slug) : undefined;
 
   if (!sourceArticle) return <Navigate to={localizedPath('/blog')} replace />;
+
+  if (sourceArticle.slug === 'mercedes-benz-maintenance-guide-dubai') return <MercedesMaintenanceArticle article={sourceArticle} isArabic={isArabic} />;
 
   const article = isArabic ? localizeBrandWorkshopArticleToArabic(sourceArticle) : sourceArticle;
   return <BrandWorkshopArticleContent article={article} isArabic={isArabic} />;

@@ -109,7 +109,7 @@ const BmwModelPage = ({ modelSlugOverride }: { modelSlugOverride?: string }) => 
         <section className="py-14 sm:py-20">
           <div className="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-[0.7fr_1.3fr]">
             <div><p className="eyebrow mb-4">Owner questions</p><h2 className="text-2xl font-black sm:text-4xl">{model.name} service FAQ</h2></div>
-            <Accordion type="single" collapsible className="space-y-3">{model.faqs.map((faq, index) => <AccordionItem key={faq.question} value={`faq-${index}`} className="rounded-xl border border-white/10 bg-white/[0.025] px-5"><AccordionTrigger className="text-left font-bold hover:text-burnt-orange">{faq.question}</AccordionTrigger><AccordionContent className="text-sm leading-relaxed text-white/65">{faq.answer}</AccordionContent></AccordionItem>)}</Accordion>
+            <Accordion type="single" collapsible className="space-y-3">{model.faqs.map((faq, index) => <AccordionItem key={faq.question} value={`faq-${index}`} className="rounded-xl border border-white/10 bg-white/[0.025] px-5"><AccordionTrigger className="text-left font-bold hover:text-burnt-orange">{faq.question}</AccordionTrigger><AccordionContent forceMount className="text-sm leading-relaxed text-white/65">{faq.answer}</AccordionContent></AccordionItem>)}</Accordion>
           </div>
         </section>
 

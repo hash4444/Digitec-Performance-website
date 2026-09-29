@@ -7,6 +7,7 @@ type MercedesContent = Pick<BrandServiceCombo, 'h1' | 'metaTitle' | 'metaDescrip
 export const MERCEDES_SERVICE_CONTENT: Partial<Record<ServiceKey, MercedesContent>> = {
   'mechanical-repair': {
     serviceName: 'Engine & Mechanical Repair',
+    serviceType: 'Engine, Cooling & Mechanical Repair',
     h1: 'Mercedes Engine & Mechanical Repair in Dubai',
     metaTitle: 'Mercedes Engine & Mechanical Repair Dubai | Digi-Tec',
     metaDescription: 'Mercedes engine repair in Al Quoz, Dubai. Assessment of overheating, oil leaks, misfires and mounts, with repair options and an itemized quote.',
@@ -23,6 +24,8 @@ export const MERCEDES_SERVICE_CONTENT: Partial<Record<ServiceKey, MercedesConten
       { question: 'Does an engine warning mean the engine needs replacing?', answer: 'No. A warning can have electrical, fuel, ignition, cooling or mechanical causes. Replacement cannot be recommended from a dashboard message alone.' },
       { question: 'Can you quote an engine repair from a photograph?', answer: 'Photos and warning details help plan the booking, but they may not reveal the source or extent of a fault. Inspection and, where justified, further testing determine the repair scope.' },
       { question: 'Is gearbox repair included on this page?', answer: 'Gearbox engagement, slipping and shift faults have a separate Mercedes transmission assessment. The initial inspection helps distinguish an engine concern from a transmission or driveline concern.' },
+      { question: 'Why is my Mercedes shaking at idle?', answer: 'Rough combustion, an air or fuel concern, ignition, compression or a worn mounting can feel similar. Tell us whether it happens cold, warm, in gear or while stationary. Scan data and the appropriate physical tests establish the repair scope.' },
+      { question: 'Does white or blue smoke mean the turbocharger has failed?', answer: 'No. Smoke colour, duration, temperature and any oil or coolant loss need to be considered together. A turbocharger, seal or internal-engine repair is proposed only when the inspection supports it.' },
     ],
   },
   'suspension-repair': {
@@ -50,6 +53,7 @@ export const MERCEDES_SERVICE_CONTENT: Partial<Record<ServiceKey, MercedesConten
   },
   'transmission-repair': {
     serviceName: 'Transmission & Gearbox Repair',
+    serviceType: 'Transmission & Gearbox Diagnosis and Repair',
     h1: 'Mercedes Transmission & Gearbox Repair in Dubai',
     metaTitle: 'Mercedes Transmission & Gearbox Repair Dubai | Digi-Tec',
     metaDescription: 'Mercedes transmission and gearbox repair assessment in Al Quoz. Identify the fitted gearbox and compare fluid service, fault repair and replacement scope.',
@@ -177,9 +181,9 @@ export const MERCEDES_SERVICE_CONTENT: Partial<Record<ServiceKey, MercedesConten
     whatsAppMessage: 'Hi Digi-Tec, I need a Mercedes diagnostic assessment.\n\nModel/year: \nVIN: \nWarning or symptom: \nWhen it happens: \nCoding/programming request (if any): ',
   },
   'electrical-repair': {
-    serviceName: 'Electrical Fault Diagnosis & Repair',
-    h1: 'Mercedes Electrical Fault Diagnosis & Repair in Dubai',
-    metaTitle: 'Mercedes Electrical & ECU Fault Repair Dubai | Digi-Tec',
+    serviceName: 'Electrical Repair & Fault Tracing',
+    h1: 'Mercedes Electrical Repair & Fault Tracing in Dubai',
+    metaTitle: 'Mercedes Electrical Repair Dubai | Wiring & Charging',
     metaDescription: 'Mercedes electrical and ECU fault assessment in Al Quoz. Wiring, voltage, charging and network checks guide supported repair or replacement decisions.',
     heroCopy: 'Intermittent warnings and control-unit faults can begin with a voltage, wiring or communication problem. Our Mercedes electrical assessment works from the reported symptom and test findings before recommending a component, ECU or SAM replacement.',
     symptoms: ['Intermittent warnings or systems that stop communicating', 'Repeated battery drain or charging concerns', 'Lighting, locking or cabin electrical functions fail', 'Suspected ECU or SAM fault after water damage or previous work'],
@@ -194,12 +198,14 @@ export const MERCEDES_SERVICE_CONTENT: Partial<Record<ServiceKey, MercedesConten
       { question: 'Does an ECU fault code prove the ECU is damaged?', answer: 'No. Supply voltage, grounds, wiring and other communicating components may affect the result. The module should be assessed in the context of the vehicle.' },
       { question: 'Can every ECU or SAM be repaired?', answer: 'No. The part number, damage, test findings and supported repair route determine what is possible. Replacement and required software work must also be checked for compatibility.' },
       { question: 'Should I book electrical repair or coding?', answer: 'Describe the symptom or intended change first. A malfunction usually needs diagnosis; a configuration request goes through coding eligibility checks. Both may be involved in a confirmed repair.' },
+      { question: 'Why does my Mercedes battery keep dying?', answer: 'Repeated discharge can involve battery condition, charging, connections, use patterns or unwanted electrical draw. Share how long the vehicle stands and any recent battery or accessory work so the workshop can agree the relevant tests before another battery is fitted.' },
+      { question: 'Does a failed reversing camera need a new head unit?', answer: 'Not necessarily. Camera supply, wiring, communication and the display can cause different failures. Record whether the screen changes in reverse and whether other screen functions work. The failed function is traced before a component is selected.' },
     ],
   },
   'body-repair': {
     serviceName: 'Body Repair & Paintwork',
     h1: 'Mercedes Body Repair & Paintwork in Dubai',
-    metaTitle: 'Mercedes Body Repair & Body Shop Dubai | Digi-Tec',
+    metaTitle: 'Mercedes Body & Accident Repair Dubai | Digi-Tec',
     metaDescription: 'Mercedes body repair and paintwork assessment in Al Quoz. Inspect dents, bumpers and panels, confirm finish requirements and receive an itemized scope.',
     heroCopy: 'Send clear photos of the damage and your Mercedes model details to arrange a bodywork assessment in Al Quoz. The final repair and paintwork scope follows inspection of the panel, finish and any components behind the visible damage.',
     symptoms: ['Dents, scuffs or scratches on a panel', 'Bumper damage, loose trim or mounting concerns', 'Paint damage or a previous colour-match issue', 'Impact damage needing an assessment of hidden components'],
@@ -252,6 +258,48 @@ export const MERCEDES_SERVICE_CONTENT: Partial<Record<ServiceKey, MercedesConten
     faqs: [
       { question: 'Does a sensor code mean the sensor needs replacing?', answer: 'Not necessarily. Wiring, leaks or engine-running concerns can affect the reading. Diagnosis should establish the cause before parts are selected.' },
       { question: 'Is a performance exhaust included in exhaust repair?', answer: 'No. Repair addresses a fault on the fitted system. Performance hardware availability and suitability are reviewed through a separate tuning enquiry.' },
+    ],
+  },
+  'fuel-system-repair': {
+    serviceName: 'Fuel System Repair',
+    serviceType: 'Fuel Delivery & Injection Assessment and Repair',
+    h1: 'Mercedes Fuel System Repair in Dubai',
+    metaTitle: 'Mercedes Fuel System Repair Dubai | Pump & Injector Checks',
+    metaDescription: 'Mercedes fuel-system assessment in Al Quoz. Investigate starting, pressure, leak and injector concerns before choosing a repair. Send your vehicle details.',
+    heroCopy: 'Hard starting, hesitation or an injector-related code needs the fitted petrol or diesel system identified first. Digi-Tec assesses Mercedes fuel-delivery concerns alongside the relevant engine data before explaining the supported repair and parts options.',
+    symptoms: ['Hard starting, hesitation or uneven running', 'Fuel-pressure or injector-related fault information', 'Fuel smell or suspected leakage', 'Reduced power needing fuel and engine checks'],
+    processSteps: [
+      { title: 'Identify the engine and concern', description: 'Confirm VIN, fuel type, mileage, warning text and recent fuel or repair history. Petrol and diesel pressure systems use different components and procedures.' },
+      { title: 'Test the suspected fuel circuit', description: 'Relevant pressure, supply, leak and injector findings are considered alongside ignition, air and mechanical evidence. A fault code alone does not confirm a failed injector.' },
+      { title: 'Agree the component and work scope', description: 'The estimate separates further testing, the confirmed repair, parts, seals and labour. Compatibility, availability and any required supported coding are checked before approval.' },
+      { title: 'Verify the reported fault', description: 'Recheck relevant sealing, operating data and starting or running behaviour after the agreed work. Further findings and outstanding concerns are explained at handover.' },
+    ],
+    partsCopy: 'Fuel pumps, injectors, lines, seals and control components are selected for the exact system and diagnosed fault. Do not treat a fuel-system enquiry as an automatic injector-cleaning, pump-replacement or engine-rebuild package.',
+    faqs: [
+      { question: 'Does an injector code prove the injector needs replacing?', answer: 'No. Wiring, supply pressure, control and engine-running concerns may affect the result. Appropriate tests establish whether an injector or another component needs work.' },
+      { question: 'Is injector coding included?', answer: 'Only where required and supported for the exact engine and component. The quote states the fitting and software procedures included in the accepted work.' },
+      { question: 'Can I drive with a strong fuel smell?', answer: 'A strong fuel smell or visible leakage needs prompt advice before starting or continuing to drive. Contact the workshop with the symptoms and arrange assessment or recovery as appropriate.' },
+    ],
+  },
+  'tire-repair': {
+    serviceName: 'Tyre Repair & Assessment',
+    serviceType: 'Tyre Condition, Puncture & Pressure Assessment',
+    h1: 'Mercedes Tyre Repair & Assessment in Dubai',
+    metaTitle: 'Mercedes Tyre Repair Dubai | Puncture & Pressure Checks',
+    metaDescription: 'Mercedes tyre checks in Al Quoz for punctures, pressure loss, uneven wear and vibration. Repairability and the correct fitment are assessed before work.',
+    heroCopy: 'A pressure warning, puncture or vibration needs the tyre and wheel inspected before repair or replacement is agreed. We check Mercedes wheel fitment, tyre condition and relevant monitoring requirements for the exact vehicle.',
+    symptoms: ['Puncture or repeated pressure loss', 'Pressure warning that returns after adjustment', 'Uneven wear or visible tyre damage', 'Vibration linked to road speed or wheel condition'],
+    processSteps: [
+      { title: 'Check the fitted specification', description: 'Confirm the vehicle guidance, wheel sizes, axle fitment and tyre type. Run-flat construction and different front/rear sizes are not assumed for every Mercedes.' },
+      { title: 'Locate the concern', description: 'Inspect tyre, valve and wheel condition to trace leakage or damage. Internal condition and previous operation at low pressure affect repairability.' },
+      { title: 'Explain a suitable repair or replacement', description: 'Only a suitable tyre and damage location can be considered for repair. Replacement specification, balancing and any separately needed wheel or chassis work are itemized.' },
+      { title: 'Check pressure and monitoring', description: 'Set the specified pressures, verify the repaired concern and perform the applicable supported monitoring procedure. Alignment or sensor replacement is included only when agreed.' },
+    ],
+    partsCopy: 'The quote identifies tyre specification, repairability or replacement, valves and any balancing or monitoring work. Tyre changes do not replace diagnosis of a steering, brake or suspension fault that is causing vibration or wear.',
+    faqs: [
+      { question: 'Can every Mercedes run-flat tyre be repaired?', answer: 'No. Tyre guidance, damage location, internal condition and how it was used after pressure loss determine whether a repair can be considered. Inspection is required before repair is offered.' },
+      { question: 'Will new tyres fix steering vibration?', answer: 'Only if the tyres are the confirmed cause. Wheel damage, balance, brake or chassis concerns may need separate checks, so the speed and conditions of the vibration matter.' },
+      { question: 'Does a pressure warning always need a new sensor?', answer: 'No. Low pressure, leakage, a reset requirement or a sensor/system concern can produce different warnings. The pressure and fitted monitoring system are checked first.' },
     ],
   },
 };

@@ -1,0 +1,30 @@
+{
+  "date": "2026-09-28",
+  "method": "Codex in-app browser via CUA; read-only navigation and DOM observations",
+  "checks": [
+    {
+      "requested_url": "https://digitecme.com/porsche/systems/pdk",
+      "observation": "Page renders PDK system guide. Opening language selection exposes Arabic anchor href https://digitecme.com/ar/porsche/systems/pdk. Clicking navigates through client routing to https://digitecme.com/ar/brands/porsche-service-dubai, which settles as Arabic Porsche hub."
+    },
+    {
+      "requested_url": "https://digitecme.com/ar/porsche/systems/pdk",
+      "observation": "Direct browser navigation ultimately changes URL to https://digitecme.com/ar/brands/porsche-service-dubai and renders Arabic Porsche hub."
+    },
+    {
+      "requested_url": "https://digitecme.com/seo-audit-nonexistent-20260928",
+      "initial_observation": "Homepage source and transient rendered homepage; HTTP200 confirmed by separate crawl.",
+      "settled_observation": "Visible404 Page not found; URL unchanged.",
+      "settled_dom": {
+        "title": "Page Not Found | DIGI-TEC Performance Center",
+        "h1": [
+          "404"
+        ],
+        "robots": [
+          "noindex, follow"
+        ],
+        "canonical": []
+      }
+    }
+  ],
+  "interpretation": "Confirmed HTTP/prerender/crawlable-href versus client-route inconsistency. Not proof of Google index inclusion or widespread failure of sitemap URLs."
+}

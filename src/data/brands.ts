@@ -29,7 +29,7 @@ export const brands: Brand[] = [
     intro:
       'Digi-Tec Performance Centre is an independent Mercedes-Benz workshop in Al Quoz, Dubai. Owners of C-Class, E-Class, S-Class, G-Class, GLE, GLS, AMG and other Mercedes models can request inspection, maintenance and repair; diagnostic functions and the final scope are confirmed for the vehicle before work begins.',
     whyChoose: [
-      { title: 'Mercedes-Compatible Diagnostics', description: 'Fault-code analysis, live data, guided testing, service resets or adaptations may be used where the fitted control systems and available vehicle access support them; functions are confirmed from the VIN and vehicle.' },
+      { title: 'Mercedes XENTRY Diagnostics', description: 'Our XENTRY capability supports Mercedes fault tracing with live data and guided testing. Resets, adaptations, coding and programming depend on the vehicle, fitted modules and available access; the required functions are confirmed before work.' },
       { title: 'AIRMATIC, ABC & E-ACTIVE Suspension', description: 'System testing for low ride height, slow lifting, compressor noise, harsh ride and suspension warnings before a component is recommended.' },
       { title: '7G-Tronic, 9G-Tronic & AMG SpeedShift', description: 'Diagnosis for delayed engagement, rough shifting, slipping, leaks and transmission warnings, followed by the repair scope the test results support.' },
       { title: 'Mercedes-AMG & G-Class Experience', description: 'Model-aware diagnostics and mechanical support for C63, E63, G63, S63, AMG GT and other high-output Mercedes platforms.' },
@@ -43,7 +43,7 @@ export const brands: Brand[] = [
       { q: 'Do you repair Mercedes AIRMATIC suspension faults?', a: 'AIRMATIC, ABC and E-ACTIVE symptoms such as one side sitting low, slow lifting, compressor noise, harsh ride and suspension warnings can be inspected. The cause and available repair scope are confirmed for the vehicle before replacement is recommended.' },
       { q: 'Can you diagnose 7G-Tronic and 9G-Tronic transmission problems?', a: 'Delayed engagement, jerking, slipping, leaks and transmission warnings can be assessed using the checks supported by the vehicle, with a road test where appropriate. The repair scope is confirmed after inspection.' },
       { q: 'Which Mercedes models do you repair?', a: 'Appointments can be requested for A-Class, C-Class, E-Class, S-Class, CLA, CLS, GLA, GLB, GLC, GLE, GLS, G-Class, AMG models, selected EQ vehicles and V-Class. Send the VIN and concern so model, system and parts coverage can be confirmed before booking.' },
-      { q: 'Do you use Mercedes-compatible diagnostics?', a: 'Diagnostic support depends on the VIN, fitted modules and the functions required. Available scanning, live-data, reset, adaptation or programming functions are confirmed for the vehicle before they are included in the work scope.' },
+      { q: 'Do you use XENTRY for Mercedes diagnostics?', a: 'Yes. Digi-Tec has Mercedes XENTRY diagnostic capability. We combine fault data and guided tests with physical checks. The exact reset, adaptation, coding or programming function depends on the vehicle, module and available access, and is confirmed before it is included in the work scope.' },
       { q: 'Is Digi-Tec a Mercedes garage in Al Quoz, Dubai?', a: 'Yes. The workshop is in Al Quoz Industrial Area 3, Dubai. The Mercedes page includes a direct Google Maps link, phone number and WhatsApp booking option.' },
       { q: 'How should I choose the best Mercedes workshop in Dubai?', a: 'Look for Mercedes-specific diagnostics, a model-aware inspection process, clear evidence behind the diagnosis, written parts and fluid options, and approval before work begins. Ask the workshop to explain the test results and post-repair checks for your exact model.' },
     ],
@@ -390,23 +390,87 @@ const additionalBrandLogos: Record<string, string> = {
 };
 
 const createAdditionalBrand = ([name, slug]: [string, string]): Brand => {
+  if (name === 'Volkswagen') {
+    return {
+      name, slug, logo: additionalBrandLogos[name] ?? '',
+      specialization: 'Service • DSG Assessment • ODIS Diagnostics',
+      intro: 'Volkswagen Golf, GTI, Golf R, Tiguan, Touareg, Passat and T-Roc owners can request service, fault diagnosis and repair at DIGI-TEC in Al Quoz. We identify the fitted engine, gearbox and equipment before agreeing inspection, parts or maintenance work. ID electric-drive enquiries are assessed separately from combustion-engine service.',
+      whyChoose: [
+        { title: 'ODIS-Supported Fault Investigation', description: 'Available ODIS fault, live-data and guided functions are checked for the exact vehicle. A stored code guides testing; it does not by itself identify a failed part.' },
+        { title: 'DSG and Gearbox Assessment', description: 'Shift symptoms, warnings and service history are reviewed against the fitted gearbox code. Fluid service, mechatronic work, clutch work and internal repair are different decisions after diagnosis.' },
+        { title: 'Engine, Cooling and Electrical Checks', description: 'Misfire, coolant loss, EPC warnings, battery drain and screen concerns follow the affected system and vehicle specification before repair is proposed.' },
+        { title: 'Clear Scope Before Work', description: 'DIGI-TEC explains the supported inspection, parts and repair route for approval. Coding or programming is confirmed for the exact module and available access.' },
+      ],
+      faqs: [
+        { q: 'Do you service Volkswagen vehicles in Dubai?', a: 'Yes. Share the model, year, mileage and concern so the applicable maintenance or repair scope can be confirmed for the exact vehicle.' },
+        { q: 'Can DIGI-TEC assess a Volkswagen DSG warning or jerking?', a: 'A transmission inspection can be requested. The fitted gearbox, fault information, service history and operating symptoms guide the checks; jerking does not by itself prove a mechatronic or clutch failure.' },
+        { q: 'Do you use ODIS for Volkswagen diagnostics?', a: 'DIGI-TEC has ODIS capability. Available modules, live data and guided functions depend on the vehicle and access; a fault code is followed by appropriate testing before parts are recommended.' },
+        { q: 'Does an EPC light identify the failed component?', a: 'No. Record the warning and any loss of power or rough running. The affected control system and exact cause need diagnosis; limit driving and request advice if the vehicle is running poorly.' },
+      ],
+      relatedServices: ['transmission-repair-dubai', 'car-diagnostics-dubai', 'mechanical-repair-dubai', 'car-ac-repair-dubai'],
+    };
+  }
+  if (name === 'Jaguar') {
+    return {
+      name,
+      slug,
+      logo: additionalBrandLogos[name] ?? '',
+      specialization: 'Service • Diagnostics • Repairs',
+      intro: 'Jaguar owners can request independent service and fault assessment at Digi-Tec in Al Quoz. Tell us whether the vehicle is an F-PACE, F-TYPE, XE, XF, XJ, I-PACE or another model, and describe the warning or symptom. We confirm diagnostic access and workshop scope for that exact vehicle before booking.',
+      whyChoose: [
+        { title: 'Vehicle-Specific Fault Assessment', description: 'Warning messages, live data and the affected system are reviewed together; a fault code alone does not identify a failed part. Available JLR-compatible functions depend on model and module.' },
+        { title: 'Combustion and Electric Models', description: 'Engine, gearbox and oil-service enquiries apply to the fitted combustion powertrain. I-PACE is electric, so its electrical or chassis concerns need a separate scope check; high-voltage repair is not assumed.' },
+        { title: 'Suspension and Brakes', description: 'A ride or braking concern is inspected against the fitted hardware before parts are proposed. Adaptive or air suspension is model- and specification-dependent.' },
+        { title: 'Written Repair Scope', description: 'The workshop explains its findings, relevant parts and proposed work for approval before repair begins.' },
+      ],
+      faqs: [
+        { q: 'Can you inspect a Jaguar warning light?', a: 'Yes, request an inspection with the model, year, warning message and symptoms. Supported scan and live-data functions are checked for the vehicle; a code is a starting point, not a parts diagnosis.' },
+        { q: 'Is Jaguar I-PACE service the same as petrol Jaguar service?', a: 'No. I-PACE uses electric drive and does not need combustion-engine oil or spark-plug service. Contact us with the exact concern so available low-voltage, brake, AC, chassis or diagnostic scope can be confirmed; high-voltage repair is not promised.' },
+        { q: 'Does a Jaguar suspension warning mean a damper has failed?', a: 'No. The fitted suspension, sensor data, electrical supply and physical condition need inspection before a repair recommendation.' },
+        { q: 'Where is Digi-Tec?', a: 'Digi-Tec Performance Centre is in Al Quoz Industrial Area 3, Dubai. Contact the workshop to arrange an inspection.' },
+      ],
+      relatedServices: ['car-diagnostics-dubai', 'mechanical-repair-dubai', 'car-ac-repair-dubai', 'brake-repair-dubai'],
+    };
+  }
+  if (name === 'Jetour') {
+    return {
+      name: 'Jetour',
+      slug,
+      logo: additionalBrandLogos[name] ?? '',
+      specialization: 'Service • Diagnostics • Repairs',
+      intro: 'Jetour owners in Dubai can ask DIGI-TEC about maintenance, warning lights, AC, brakes and mechanical concerns at the Al Quoz workshop. Share the model, year, mileage and symptom first; compatible diagnostic access and the exact repair scope are confirmed before work is quoted.',
+      whyChoose: [
+        { title: 'Model-aware enquiries', description: 'T2, X70, X70 Plus, X90 Plus and Dashing have different configurations. The VIN and fitted powertrain are checked before a service procedure or parts option is proposed.' },
+        { title: 'Warnings before parts', description: 'A check-engine light, no-start complaint or loss of power needs a symptom history, available fault data and physical checks. One code does not establish a failed component.' },
+        { title: 'Existing service routes', description: 'AC, brakes, oil and diagnostics have existing Jetour pages. Transmission, suspension, battery and electrical concerns can use the relevant workshop service owner without a new Jetour page for each phrase.' },
+        { title: 'Approved repair scope', description: 'The workshop confirms compatible parts, necessary checks and the proposed work with the owner before repair begins.' },
+      ],
+      faqs: [
+        { q: 'Do you service Jetour T2 and other Jetour models in Dubai?', a: 'Send the model, year, VIN, mileage and service request. DIGI-TEC checks the fitted vehicle and available workshop scope before confirming an appointment or quote.' },
+        { q: 'Can DIGI-TEC diagnose a Jetour warning light?', a: 'A diagnostic inspection can be requested. Available scan functions and the affected system are confirmed for the exact vehicle; a fault code alone is not a parts diagnosis.' },
+        { q: 'Does a Jetour no-start problem always mean the battery has failed?', a: 'No. Battery condition, connections, starting controls and other vehicle systems may need checking before replacement is proposed.' },
+        { q: 'Is there one service interval for every Jetour?', a: 'No. The applicable schedule, fluid and procedure depend on model, year, fitted powertrain and service history. The vehicle information is checked before a maintenance plan is quoted.' },
+      ],
+      relatedServices: ['car-diagnostics-dubai', 'car-ac-repair-dubai', 'brake-repair-dubai', 'transmission-repair-dubai'],
+    };
+  }
   if (name === 'ROX') {
     return {
       name: 'ROX',
       slug,
       logo: additionalBrandLogos[name] ?? '',
-      specialization: 'ROX 01 Service • Diagnostics • Hybrid Systems',
+      specialization: 'ROX 01 Service • Diagnostics • Comfort Systems',
       intro: 'ROX 01 owners can request maintenance, repair and diagnostic support at Digi-Tec in Al Quoz, Dubai. We begin with the reported concern, vehicle version, warning messages and an inspection before confirming the appropriate workshop scope.',
       whyChoose: [
-        { title: 'ROX 01 Diagnostic-First Inspection', description: 'Warning messages, driveability concerns, charging questions and comfort-system faults are assessed from the vehicle, diagnostic findings and the affected system before repair work is recommended.' },
-        { title: 'Range-Extender and Electric-Drive Review', description: 'The ROX 01 combines electric drive with a range-extender system. Any work involving high-voltage, generator-engine, cooling or drive systems is confirmed against the exact vehicle and concern first.' },
+        { title: 'ROX 01 Diagnostic-First Inspection', description: 'Warning messages and supported low-voltage or comfort-system concerns start with the reported symptom and available vehicle checks. High-voltage diagnostic or repair access is not assumed.' },
+        { title: 'Range-Extender Architecture', description: 'The ROX 01 is driven by electric motors and carries a generator range extender. Generator-engine maintenance requirements are checked against the exact vehicle; traction-battery, electric-drive and charging-system repair are outside confirmed workshop scope.' },
         { title: 'Dubai Cooling, AC and Battery Checks', description: 'High cabin-cooling demand and heat make air conditioning, cooling and low-voltage battery condition practical inspection priorities for a daily-driven ROX 01.' },
-        { title: 'ROX 01 Soft-Close Door Support', description: 'Owners can also request a compatibility inspection for soft-close-door installation, or diagnosis of latches, actuators, wiring and door-alignment concerns.' },
+        { title: 'ROX 01 Soft-Close Door Support', description: 'The ROX 01 installation route handles fitment compatibility. A fitted door that no longer pulls closed follows the cross-brand repair service.' },
       ],
       faqs: [
         { q: 'Do you service ROX 01 vehicles in Dubai?', a: 'ROX 01 maintenance, repair and diagnostic enquiries can be assessed at Digi-Tec in Al Quoz. Send the model, year, mileage and concern so the appropriate inspection scope can be confirmed before booking.' },
-        { q: 'Can you diagnose a ROX 01 warning light or driveability concern?', a: 'A diagnostic inspection can be requested for warning messages, charging, driveability, cooling, electrical and comfort-system concerns. The compatible diagnostic functions and repair scope are confirmed from the exact vehicle and findings.' },
-        { q: 'Can you install or repair ROX 01 soft-close doors?', a: 'We assess compatible ROX 01 vehicles for soft-close-door installation and inspect latch, actuator, wiring, sensor and alignment faults. Compatibility and available parts are confirmed before work is proposed.' },
+        { q: 'Can you diagnose a ROX 01 warning light or driveability concern?', a: 'Available diagnostic access is confirmed for the exact vehicle and concern. Low-voltage and comfort-system inspection may be possible; high-voltage battery, electric-drive and charging-system repair are not promised.' },
+        { q: 'Can you install or repair ROX 01 soft-close doors?', a: 'ROX 01 installation requests start with compatibility inspection. A non-working fitted door follows the separate soft-close repair assessment; the fault and available parts are confirmed before work.' },
         { q: 'What should I send before booking a ROX 01 inspection?', a: 'Please send the model year, mileage, warning message or symptom, recent service history where available, and your preferred appointment time. This helps the workshop prepare the most useful first inspection.' },
       ],
       relatedServices: ['car-diagnostics-dubai', 'car-ac-repair-dubai', 'brake-repair-dubai', 'soft-close-door-repair-dubai'],

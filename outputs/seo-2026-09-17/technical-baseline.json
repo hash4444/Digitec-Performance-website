@@ -1,0 +1,5194 @@
+{
+  "auditedAt": "2026-09-17T09:06:27.744Z",
+  "source": "Existing dist initial HTML before shared metadata fix",
+  "routes": 1247,
+  "indexable": 996,
+  "families": {
+    "home": 2,
+    "about": 2,
+    "workshop-guide": 14,
+    "blog-hub": 2,
+    "article": 201,
+    "brands-hub": 2,
+    "brand": 76,
+    "brand-service": 820,
+    "faq": 2,
+    "services-hub": 2,
+    "service": 115,
+    "html-sitemap": 5,
+    "tuning": 2,
+    "vrx": 2
+  },
+  "relativeSocialImages": [
+    "/blog/mercedes-c-class-service-dubai-guide",
+    "/blog/mercedes-e-class-service-dubai-guide",
+    "/blog/mercedes-g63-service-dubai-guide",
+    "/blog/mercedes-s-class-service-dubai-guide",
+    "/brands/audi-service-dubai/a4",
+    "/brands/audi-service-dubai/a6",
+    "/brands/audi-service-dubai/q5",
+    "/brands/audi-service-dubai/q7",
+    "/brands/audi-service-dubai/q8",
+    "/brands/audi-service-dubai/r8",
+    "/brands/audi-service-dubai/rs3",
+    "/brands/audi-service-dubai/rs6",
+    "/brands/bmw-service-dubai/3-series",
+    "/brands/bmw-service-dubai/5-series",
+    "/brands/bmw-service-dubai/m3",
+    "/brands/bmw-service-dubai/m4",
+    "/brands/bmw-service-dubai/m5",
+    "/brands/bmw-service-dubai/x5",
+    "/brands/bmw-service-dubai/x6",
+    "/brands/ferrari-service-dubai/296",
+    "/brands/ferrari-service-dubai/488",
+    "/brands/ferrari-service-dubai/812",
+    "/brands/ferrari-service-dubai/f8-tributo",
+    "/brands/ferrari-service-dubai/portofino",
+    "/brands/ferrari-service-dubai/purosangue",
+    "/brands/ferrari-service-dubai/roma",
+    "/brands/ferrari-service-dubai/sf90",
+    "/mercedes/models/c63-service-repair-dubai",
+    "/mercedes/models/e63-service-repair-dubai",
+    "/mercedes/models/g-class-service-repair-dubai",
+    "/mercedes/models/gle-service-repair-dubai",
+    "/mercedes/models/gls-service-repair-dubai",
+    "/mercedes/models/s63-service-repair-dubai",
+    "/mercedes/problems",
+    "/mercedes/problems/ac-not-cooling",
+    "/mercedes/problems/airmatic-malfunction",
+    "/mercedes/problems/battery-warning",
+    "/mercedes/problems/check-engine-light",
+    "/mercedes/problems/engine-overheating",
+    "/mercedes/problems/gearbox-jerking",
+    "/mercedes/problems/oil-leak",
+    "/mercedes/problems/suspension-dropping-overnight",
+    "/mercedes/problems/transmission-slipping",
+    "/mercedes/problems/wont-start"
+  ],
+  "genericImagesWithPageImage": [
+    {
+      "path": "/",
+      "image": "https://digitecme.com/favicon-192x192.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar",
+      "image": "https://digitecme.com/favicon-192x192.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/best-audi-workshop-dubai",
+      "image": "https://digitecme.com/lovable-uploads/a3e92dde-70a9-499b-a7b0-ae0df117baf9.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/best-bmw-workshop-dubai",
+      "image": "https://digitecme.com/lovable-uploads/d66ea83e-7d6a-4c19-bf30-f27eca93ac8e.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/best-ferrari-workshop-dubai",
+      "image": "https://digitecme.com/lovable-uploads/11f29482-f2d3-4278-ae2a-397044a1ff95.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/best-lamborghini-workshop-dubai",
+      "image": "https://digitecme.com/lovable-uploads/8c4046ee-9977-417a-90a9-820452146832.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/best-porsche-workshop-dubai",
+      "image": "https://digitecme.com/lovable-uploads/8e7e2545-680e-42ac-bd97-ba1f9c063649.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/best-range-rover-workshop-dubai",
+      "image": "https://digitecme.com/lovable-uploads/6a3fe63c-72a5-4dcd-8f0b-4b0cd11c8b3d.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/blog/best-defender-workshop-dubai",
+      "image": "https://digitecme.com/assets/defender-workshop-dubai-C_NWYDCd.jpg",
+      "isArticle": true
+    },
+    {
+      "path": "/ar/blog/best-oil-change-dubai-mercedes",
+      "image": "https://digitecme.com/assets/mercedes-repair-guide-workshop-BgsuoacB.jpg",
+      "isArticle": true
+    },
+    {
+      "path": "/ar/blog/g63-to-brabus-g800-conversion-dubai",
+      "image": "https://digitecme.com/assets/g63-brabus-g800-finished-front-DKJRDYPA.jpg",
+      "isArticle": true
+    },
+    {
+      "path": "/ar/blog/how-much-is-my-mercedes-worth-dubai",
+      "image": "https://digitecme.com/assets/mercedes-repair-guide-workshop-BgsuoacB.jpg",
+      "isArticle": true
+    },
+    {
+      "path": "/ar/blog/mercedes-amg-gt-black-series-1300hp-build-dubai",
+      "image": "https://digitecme.com/assets/mercedes-amg-gt-black-series-1300hp-build-CfbrECOo.jpg",
+      "isArticle": true
+    },
+    {
+      "path": "/ar/blog/mercedes-repair-dubai-complete-guide",
+      "image": "https://digitecme.com/assets/mercedes-repair-guide-workshop-BgsuoacB.jpg",
+      "isArticle": true
+    },
+    {
+      "path": "/ar/blog/range-rover-land-rover-air-suspension-problems-dubai",
+      "image": "https://digitecme.com/assets/range-rover-workshop-dubai-BHADPo2T.png",
+      "isArticle": true
+    },
+    {
+      "path": "/ar/brands/aston-martin-service-dubai/ac-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/aston-martin.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/aston-martin-service-dubai/battery-replacement",
+      "image": "https://digitecme.com/brand-logos/showcase/aston-martin.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/aston-martin-service-dubai/body-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/aston-martin.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/aston-martin-service-dubai/brake-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/aston-martin.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/aston-martin-service-dubai/electrical-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/aston-martin.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/aston-martin-service-dubai/engine-diagnostics",
+      "image": "https://digitecme.com/brand-logos/showcase/aston-martin.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/aston-martin-service-dubai/exhaust-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/aston-martin.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/aston-martin-service-dubai/fuel-system-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/aston-martin.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/aston-martin-service-dubai/mechanical-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/aston-martin.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/aston-martin-service-dubai/oil-change",
+      "image": "https://digitecme.com/brand-logos/showcase/aston-martin.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/aston-martin-service-dubai/steering-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/aston-martin.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/aston-martin-service-dubai/suspension-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/aston-martin.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/aston-martin-service-dubai/tire-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/aston-martin.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/aston-martin-service-dubai/transmission-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/aston-martin.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/audi-service-dubai",
+      "image": "https://digitecme.com/brand-logos/showcase/audi.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/audi-service-dubai/ac-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/audi.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/audi-service-dubai/battery-replacement",
+      "image": "https://digitecme.com/brand-logos/showcase/audi.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/audi-service-dubai/body-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/audi.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/audi-service-dubai/brake-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/audi.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/audi-service-dubai/electrical-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/audi.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/audi-service-dubai/engine-diagnostics",
+      "image": "https://digitecme.com/brand-logos/showcase/audi.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/audi-service-dubai/exhaust-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/audi.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/audi-service-dubai/fuel-system-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/audi.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/audi-service-dubai/mechanical-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/audi.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/audi-service-dubai/oil-change",
+      "image": "https://digitecme.com/brand-logos/showcase/audi.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/audi-service-dubai/steering-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/audi.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/audi-service-dubai/suspension-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/audi.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/audi-service-dubai/tire-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/audi.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/audi-service-dubai/transmission-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/audi.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/bentley-service-dubai/ac-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/bentley.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/bentley-service-dubai/battery-replacement",
+      "image": "https://digitecme.com/brand-logos/showcase/bentley.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/bentley-service-dubai/body-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/bentley.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/bentley-service-dubai/brake-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/bentley.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/bentley-service-dubai/electrical-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/bentley.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/bentley-service-dubai/engine-diagnostics",
+      "image": "https://digitecme.com/brand-logos/showcase/bentley.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/bentley-service-dubai/exhaust-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/bentley.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/bentley-service-dubai/fuel-system-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/bentley.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/bentley-service-dubai/mechanical-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/bentley.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/bentley-service-dubai/oil-change",
+      "image": "https://digitecme.com/brand-logos/showcase/bentley.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/bentley-service-dubai/steering-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/bentley.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/bentley-service-dubai/suspension-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/bentley.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/bentley-service-dubai/tire-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/bentley.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/bentley-service-dubai/transmission-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/bentley.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/bmw-service-dubai",
+      "image": "https://digitecme.com/brand-logos/showcase/bmw.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/bmw-service-dubai/ac-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/bmw.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/bmw-service-dubai/battery-replacement",
+      "image": "https://digitecme.com/brand-logos/showcase/bmw.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/bmw-service-dubai/body-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/bmw.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/bmw-service-dubai/brake-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/bmw.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/bmw-service-dubai/electrical-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/bmw.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/bmw-service-dubai/engine-diagnostics",
+      "image": "https://digitecme.com/brand-logos/showcase/bmw.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/bmw-service-dubai/exhaust-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/bmw.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/bmw-service-dubai/fuel-system-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/bmw.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/bmw-service-dubai/mechanical-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/bmw.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/bmw-service-dubai/oil-change",
+      "image": "https://digitecme.com/brand-logos/showcase/bmw.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/bmw-service-dubai/steering-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/bmw.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/bmw-service-dubai/suspension-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/bmw.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/bmw-service-dubai/tire-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/bmw.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/bmw-service-dubai/transmission-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/bmw.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/bugatti-service-dubai",
+      "image": "https://digitecme.com/brand-logos/showcase/bugatti.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/bugatti-service-dubai/ac-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/bugatti.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/bugatti-service-dubai/battery-replacement",
+      "image": "https://digitecme.com/brand-logos/showcase/bugatti.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/bugatti-service-dubai/body-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/bugatti.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/bugatti-service-dubai/brake-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/bugatti.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/bugatti-service-dubai/electrical-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/bugatti.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/bugatti-service-dubai/engine-diagnostics",
+      "image": "https://digitecme.com/brand-logos/showcase/bugatti.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/bugatti-service-dubai/exhaust-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/bugatti.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/bugatti-service-dubai/fuel-system-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/bugatti.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/bugatti-service-dubai/mechanical-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/bugatti.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/bugatti-service-dubai/oil-change",
+      "image": "https://digitecme.com/brand-logos/showcase/bugatti.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/bugatti-service-dubai/steering-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/bugatti.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/bugatti-service-dubai/suspension-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/bugatti.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/bugatti-service-dubai/tire-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/bugatti.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/bugatti-service-dubai/transmission-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/bugatti.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/byd-service-dubai",
+      "image": "https://digitecme.com/brand-logos/showcase/byd.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/byd-service-dubai/ac-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/byd.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/byd-service-dubai/battery-replacement",
+      "image": "https://digitecme.com/brand-logos/showcase/byd.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/byd-service-dubai/body-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/byd.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/byd-service-dubai/brake-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/byd.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/byd-service-dubai/electrical-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/byd.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/byd-service-dubai/engine-diagnostics",
+      "image": "https://digitecme.com/brand-logos/showcase/byd.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/byd-service-dubai/exhaust-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/byd.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/byd-service-dubai/fuel-system-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/byd.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/byd-service-dubai/mechanical-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/byd.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/byd-service-dubai/oil-change",
+      "image": "https://digitecme.com/brand-logos/showcase/byd.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/byd-service-dubai/steering-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/byd.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/byd-service-dubai/suspension-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/byd.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/byd-service-dubai/tire-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/byd.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/byd-service-dubai/transmission-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/byd.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/cadillac-service-dubai",
+      "image": "https://digitecme.com/brand-logos/showcase/cadillac.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/cadillac-service-dubai/ac-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/cadillac.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/cadillac-service-dubai/battery-replacement",
+      "image": "https://digitecme.com/brand-logos/showcase/cadillac.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/cadillac-service-dubai/body-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/cadillac.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/cadillac-service-dubai/brake-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/cadillac.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/cadillac-service-dubai/electrical-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/cadillac.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/cadillac-service-dubai/engine-diagnostics",
+      "image": "https://digitecme.com/brand-logos/showcase/cadillac.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/cadillac-service-dubai/exhaust-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/cadillac.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/cadillac-service-dubai/fuel-system-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/cadillac.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/cadillac-service-dubai/mechanical-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/cadillac.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/cadillac-service-dubai/oil-change",
+      "image": "https://digitecme.com/brand-logos/showcase/cadillac.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/cadillac-service-dubai/steering-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/cadillac.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/cadillac-service-dubai/suspension-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/cadillac.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/cadillac-service-dubai/tire-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/cadillac.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/cadillac-service-dubai/transmission-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/cadillac.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/chevrolet-service-dubai",
+      "image": "https://digitecme.com/brand-logos/showcase/chevrolet.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/chevrolet-service-dubai/ac-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/chevrolet.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/chevrolet-service-dubai/brake-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/chevrolet.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/chevrolet-service-dubai/engine-diagnostics",
+      "image": "https://digitecme.com/brand-logos/showcase/chevrolet.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/chevrolet-service-dubai/oil-change",
+      "image": "https://digitecme.com/brand-logos/showcase/chevrolet.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/chevrolet-service-dubai/suspension-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/chevrolet.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/chevrolet-service-dubai/transmission-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/chevrolet.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/chrysler-service-dubai",
+      "image": "https://digitecme.com/brand-logos/showcase/chrysler.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/chrysler-service-dubai/ac-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/chrysler.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/chrysler-service-dubai/brake-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/chrysler.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/chrysler-service-dubai/engine-diagnostics",
+      "image": "https://digitecme.com/brand-logos/showcase/chrysler.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/chrysler-service-dubai/oil-change",
+      "image": "https://digitecme.com/brand-logos/showcase/chrysler.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/chrysler-service-dubai/suspension-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/chrysler.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/chrysler-service-dubai/transmission-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/chrysler.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/corvette-service-dubai",
+      "image": "https://digitecme.com/brand-logos/showcase/corvette.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/corvette-service-dubai/ac-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/corvette.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/corvette-service-dubai/brake-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/corvette.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/corvette-service-dubai/engine-diagnostics",
+      "image": "https://digitecme.com/brand-logos/showcase/corvette.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/corvette-service-dubai/oil-change",
+      "image": "https://digitecme.com/brand-logos/showcase/corvette.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/corvette-service-dubai/suspension-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/corvette.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/corvette-service-dubai/transmission-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/corvette.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/defender-service-dubai/ac-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/land-rover.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/defender-service-dubai/battery-replacement",
+      "image": "https://digitecme.com/brand-logos/showcase/land-rover.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/defender-service-dubai/body-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/land-rover.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/defender-service-dubai/brake-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/land-rover.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/defender-service-dubai/electrical-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/land-rover.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/defender-service-dubai/engine-diagnostics",
+      "image": "https://digitecme.com/brand-logos/showcase/land-rover.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/defender-service-dubai/exhaust-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/land-rover.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/defender-service-dubai/fuel-system-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/land-rover.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/defender-service-dubai/mechanical-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/land-rover.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/defender-service-dubai/oil-change",
+      "image": "https://digitecme.com/brand-logos/showcase/land-rover.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/defender-service-dubai/steering-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/land-rover.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/defender-service-dubai/suspension-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/land-rover.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/defender-service-dubai/tire-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/land-rover.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/defender-service-dubai/transmission-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/land-rover.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/dodge-service-dubai",
+      "image": "https://digitecme.com/brand-logos/showcase/dodge.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/dodge-service-dubai/ac-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/dodge.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/dodge-service-dubai/brake-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/dodge.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/dodge-service-dubai/engine-diagnostics",
+      "image": "https://digitecme.com/brand-logos/showcase/dodge.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/dodge-service-dubai/oil-change",
+      "image": "https://digitecme.com/brand-logos/showcase/dodge.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/dodge-service-dubai/suspension-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/dodge.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/dodge-service-dubai/transmission-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/dodge.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/ferrari-service-dubai/ac-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/ferrari.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/ferrari-service-dubai/battery-replacement",
+      "image": "https://digitecme.com/brand-logos/showcase/ferrari.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/ferrari-service-dubai/body-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/ferrari.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/ferrari-service-dubai/brake-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/ferrari.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/ferrari-service-dubai/electrical-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/ferrari.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/ferrari-service-dubai/engine-diagnostics",
+      "image": "https://digitecme.com/brand-logos/showcase/ferrari.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/ferrari-service-dubai/exhaust-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/ferrari.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/ferrari-service-dubai/fuel-system-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/ferrari.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/ferrari-service-dubai/mechanical-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/ferrari.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/ferrari-service-dubai/oil-change",
+      "image": "https://digitecme.com/brand-logos/showcase/ferrari.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/ferrari-service-dubai/steering-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/ferrari.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/ferrari-service-dubai/suspension-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/ferrari.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/ferrari-service-dubai/tire-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/ferrari.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/ferrari-service-dubai/transmission-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/ferrari.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/ford-service-dubai",
+      "image": "https://digitecme.com/brand-logos/showcase/ford.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/ford-service-dubai/ac-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/ford.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/ford-service-dubai/brake-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/ford.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/ford-service-dubai/engine-diagnostics",
+      "image": "https://digitecme.com/brand-logos/showcase/ford.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/ford-service-dubai/oil-change",
+      "image": "https://digitecme.com/brand-logos/showcase/ford.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/ford-service-dubai/suspension-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/ford.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/ford-service-dubai/transmission-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/ford.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/genesis-service-dubai",
+      "image": "https://digitecme.com/brand-logos/showcase/genesis.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/genesis-service-dubai/ac-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/genesis.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/genesis-service-dubai/brake-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/genesis.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/genesis-service-dubai/engine-diagnostics",
+      "image": "https://digitecme.com/brand-logos/showcase/genesis.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/genesis-service-dubai/oil-change",
+      "image": "https://digitecme.com/brand-logos/showcase/genesis.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/genesis-service-dubai/suspension-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/genesis.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/genesis-service-dubai/transmission-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/genesis.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/gmc-service-dubai",
+      "image": "https://digitecme.com/brand-logos/showcase/gmc.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/gmc-service-dubai/ac-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/gmc.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/gmc-service-dubai/brake-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/gmc.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/gmc-service-dubai/engine-diagnostics",
+      "image": "https://digitecme.com/brand-logos/showcase/gmc.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/gmc-service-dubai/oil-change",
+      "image": "https://digitecme.com/brand-logos/showcase/gmc.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/gmc-service-dubai/suspension-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/gmc.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/gmc-service-dubai/transmission-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/gmc.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/hummer-service-dubai",
+      "image": "https://digitecme.com/brand-logos/showcase/hummer.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/hummer-service-dubai/ac-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/hummer.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/hummer-service-dubai/brake-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/hummer.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/hummer-service-dubai/engine-diagnostics",
+      "image": "https://digitecme.com/brand-logos/showcase/hummer.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/hummer-service-dubai/oil-change",
+      "image": "https://digitecme.com/brand-logos/showcase/hummer.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/hummer-service-dubai/suspension-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/hummer.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/hummer-service-dubai/transmission-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/hummer.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/jaguar-service-dubai",
+      "image": "https://digitecme.com/brand-logos/showcase/jaguar.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/jaguar-service-dubai/ac-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/jaguar.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/jaguar-service-dubai/brake-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/jaguar.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/jaguar-service-dubai/engine-diagnostics",
+      "image": "https://digitecme.com/brand-logos/showcase/jaguar.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/jaguar-service-dubai/oil-change",
+      "image": "https://digitecme.com/brand-logos/showcase/jaguar.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/jaguar-service-dubai/suspension-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/jaguar.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/jaguar-service-dubai/transmission-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/jaguar.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/jeep-service-dubai",
+      "image": "https://digitecme.com/brand-logos/showcase/jeep.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/jeep-service-dubai/ac-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/jeep.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/jeep-service-dubai/battery-replacement",
+      "image": "https://digitecme.com/brand-logos/showcase/jeep.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/jeep-service-dubai/body-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/jeep.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/jeep-service-dubai/brake-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/jeep.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/jeep-service-dubai/electrical-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/jeep.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/jeep-service-dubai/engine-diagnostics",
+      "image": "https://digitecme.com/brand-logos/showcase/jeep.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/jeep-service-dubai/exhaust-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/jeep.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/jeep-service-dubai/fuel-system-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/jeep.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/jeep-service-dubai/mechanical-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/jeep.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/jeep-service-dubai/oil-change",
+      "image": "https://digitecme.com/brand-logos/showcase/jeep.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/jeep-service-dubai/steering-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/jeep.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/jeep-service-dubai/suspension-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/jeep.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/jeep-service-dubai/tire-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/jeep.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/jeep-service-dubai/transmission-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/jeep.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/jetour-service-dubai",
+      "image": "https://digitecme.com/brand-logos/showcase/jetour.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/jetour-service-dubai/ac-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/jetour.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/jetour-service-dubai/battery-replacement",
+      "image": "https://digitecme.com/brand-logos/showcase/jetour.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/jetour-service-dubai/body-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/jetour.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/jetour-service-dubai/brake-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/jetour.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/jetour-service-dubai/electrical-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/jetour.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/jetour-service-dubai/engine-diagnostics",
+      "image": "https://digitecme.com/brand-logos/showcase/jetour.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/jetour-service-dubai/exhaust-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/jetour.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/jetour-service-dubai/fuel-system-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/jetour.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/jetour-service-dubai/mechanical-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/jetour.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/jetour-service-dubai/oil-change",
+      "image": "https://digitecme.com/brand-logos/showcase/jetour.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/jetour-service-dubai/steering-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/jetour.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/jetour-service-dubai/suspension-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/jetour.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/jetour-service-dubai/tire-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/jetour.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/jetour-service-dubai/transmission-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/jetour.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/koenigsegg-service-dubai",
+      "image": "https://digitecme.com/brand-logos/showcase/koenigsegg.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/koenigsegg-service-dubai/ac-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/koenigsegg.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/koenigsegg-service-dubai/brake-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/koenigsegg.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/koenigsegg-service-dubai/engine-diagnostics",
+      "image": "https://digitecme.com/brand-logos/showcase/koenigsegg.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/koenigsegg-service-dubai/oil-change",
+      "image": "https://digitecme.com/brand-logos/showcase/koenigsegg.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/koenigsegg-service-dubai/suspension-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/koenigsegg.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/koenigsegg-service-dubai/transmission-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/koenigsegg.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/lamborghini-service-dubai/ac-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/lamborghini.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/lamborghini-service-dubai/battery-replacement",
+      "image": "https://digitecme.com/brand-logos/showcase/lamborghini.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/lamborghini-service-dubai/body-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/lamborghini.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/lamborghini-service-dubai/brake-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/lamborghini.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/lamborghini-service-dubai/electrical-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/lamborghini.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/lamborghini-service-dubai/engine-diagnostics",
+      "image": "https://digitecme.com/brand-logos/showcase/lamborghini.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/lamborghini-service-dubai/exhaust-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/lamborghini.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/lamborghini-service-dubai/fuel-system-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/lamborghini.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/lamborghini-service-dubai/mechanical-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/lamborghini.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/lamborghini-service-dubai/oil-change",
+      "image": "https://digitecme.com/brand-logos/showcase/lamborghini.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/lamborghini-service-dubai/steering-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/lamborghini.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/lamborghini-service-dubai/suspension-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/lamborghini.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/lamborghini-service-dubai/tire-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/lamborghini.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/lamborghini-service-dubai/transmission-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/lamborghini.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/land-rover-service-dubai",
+      "image": "https://digitecme.com/brand-logos/showcase/land-rover.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/land-rover-service-dubai/ac-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/land-rover.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/land-rover-service-dubai/battery-replacement",
+      "image": "https://digitecme.com/brand-logos/showcase/land-rover.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/land-rover-service-dubai/body-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/land-rover.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/land-rover-service-dubai/brake-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/land-rover.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/land-rover-service-dubai/electrical-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/land-rover.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/land-rover-service-dubai/engine-diagnostics",
+      "image": "https://digitecme.com/brand-logos/showcase/land-rover.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/land-rover-service-dubai/exhaust-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/land-rover.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/land-rover-service-dubai/fuel-system-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/land-rover.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/land-rover-service-dubai/mechanical-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/land-rover.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/land-rover-service-dubai/oil-change",
+      "image": "https://digitecme.com/brand-logos/showcase/land-rover.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/land-rover-service-dubai/steering-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/land-rover.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/land-rover-service-dubai/suspension-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/land-rover.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/land-rover-service-dubai/tire-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/land-rover.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/land-rover-service-dubai/transmission-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/land-rover.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/lincoln-service-dubai",
+      "image": "https://digitecme.com/brand-logos/showcase/lincoln.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/lincoln-service-dubai/ac-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/lincoln.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/lincoln-service-dubai/brake-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/lincoln.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/lincoln-service-dubai/engine-diagnostics",
+      "image": "https://digitecme.com/brand-logos/showcase/lincoln.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/lincoln-service-dubai/oil-change",
+      "image": "https://digitecme.com/brand-logos/showcase/lincoln.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/lincoln-service-dubai/suspension-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/lincoln.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/lincoln-service-dubai/transmission-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/lincoln.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/maserati-service-dubai/ac-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/maserati.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/maserati-service-dubai/battery-replacement",
+      "image": "https://digitecme.com/brand-logos/showcase/maserati.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/maserati-service-dubai/body-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/maserati.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/maserati-service-dubai/brake-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/maserati.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/maserati-service-dubai/electrical-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/maserati.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/maserati-service-dubai/engine-diagnostics",
+      "image": "https://digitecme.com/brand-logos/showcase/maserati.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/maserati-service-dubai/exhaust-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/maserati.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/maserati-service-dubai/fuel-system-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/maserati.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/maserati-service-dubai/mechanical-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/maserati.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/maserati-service-dubai/oil-change",
+      "image": "https://digitecme.com/brand-logos/showcase/maserati.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/maserati-service-dubai/steering-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/maserati.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/maserati-service-dubai/suspension-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/maserati.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/maserati-service-dubai/tire-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/maserati.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/maserati-service-dubai/transmission-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/maserati.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/maybach-service-dubai/ac-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/maybach.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/maybach-service-dubai/battery-replacement",
+      "image": "https://digitecme.com/brand-logos/showcase/maybach.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/maybach-service-dubai/body-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/maybach.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/maybach-service-dubai/brake-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/maybach.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/maybach-service-dubai/electrical-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/maybach.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/maybach-service-dubai/engine-diagnostics",
+      "image": "https://digitecme.com/brand-logos/showcase/maybach.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/maybach-service-dubai/exhaust-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/maybach.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/maybach-service-dubai/fuel-system-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/maybach.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/maybach-service-dubai/mechanical-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/maybach.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/maybach-service-dubai/oil-change",
+      "image": "https://digitecme.com/brand-logos/showcase/maybach.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/maybach-service-dubai/steering-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/maybach.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/maybach-service-dubai/suspension-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/maybach.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/maybach-service-dubai/tire-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/maybach.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/maybach-service-dubai/transmission-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/maybach.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/mclaren-service-dubai",
+      "image": "https://digitecme.com/brand-logos/showcase/mclaren.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/mclaren-service-dubai/ac-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/mclaren.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/mclaren-service-dubai/battery-replacement",
+      "image": "https://digitecme.com/brand-logos/showcase/mclaren.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/mclaren-service-dubai/body-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/mclaren.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/mclaren-service-dubai/brake-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/mclaren.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/mclaren-service-dubai/electrical-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/mclaren.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/mclaren-service-dubai/engine-diagnostics",
+      "image": "https://digitecme.com/brand-logos/showcase/mclaren.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/mclaren-service-dubai/exhaust-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/mclaren.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/mclaren-service-dubai/fuel-system-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/mclaren.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/mclaren-service-dubai/mechanical-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/mclaren.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/mclaren-service-dubai/oil-change",
+      "image": "https://digitecme.com/brand-logos/showcase/mclaren.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/mclaren-service-dubai/steering-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/mclaren.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/mclaren-service-dubai/suspension-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/mclaren.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/mclaren-service-dubai/tire-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/mclaren.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/mclaren-service-dubai/transmission-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/mclaren.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/mini-service-dubai",
+      "image": "https://digitecme.com/brand-logos/showcase/mini.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/mini-service-dubai/ac-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/mini.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/mini-service-dubai/brake-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/mini.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/mini-service-dubai/engine-diagnostics",
+      "image": "https://digitecme.com/brand-logos/showcase/mini.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/mini-service-dubai/oil-change",
+      "image": "https://digitecme.com/brand-logos/showcase/mini.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/mini-service-dubai/suspension-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/mini.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/mini-service-dubai/transmission-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/mini.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/pagani-service-dubai",
+      "image": "https://digitecme.com/brand-logos/showcase/pagani.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/pagani-service-dubai/ac-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/pagani.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/pagani-service-dubai/battery-replacement",
+      "image": "https://digitecme.com/brand-logos/showcase/pagani.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/pagani-service-dubai/body-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/pagani.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/pagani-service-dubai/brake-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/pagani.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/pagani-service-dubai/electrical-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/pagani.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/pagani-service-dubai/engine-diagnostics",
+      "image": "https://digitecme.com/brand-logos/showcase/pagani.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/pagani-service-dubai/exhaust-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/pagani.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/pagani-service-dubai/fuel-system-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/pagani.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/pagani-service-dubai/mechanical-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/pagani.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/pagani-service-dubai/oil-change",
+      "image": "https://digitecme.com/brand-logos/showcase/pagani.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/pagani-service-dubai/steering-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/pagani.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/pagani-service-dubai/suspension-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/pagani.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/pagani-service-dubai/tire-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/pagani.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/pagani-service-dubai/transmission-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/pagani.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/porsche-service-dubai/ac-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/porsche.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/porsche-service-dubai/battery-replacement",
+      "image": "https://digitecme.com/brand-logos/showcase/porsche.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/porsche-service-dubai/body-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/porsche.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/porsche-service-dubai/brake-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/porsche.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/porsche-service-dubai/electrical-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/porsche.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/porsche-service-dubai/engine-diagnostics",
+      "image": "https://digitecme.com/brand-logos/showcase/porsche.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/porsche-service-dubai/exhaust-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/porsche.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/porsche-service-dubai/fuel-system-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/porsche.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/porsche-service-dubai/mechanical-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/porsche.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/porsche-service-dubai/oil-change",
+      "image": "https://digitecme.com/brand-logos/showcase/porsche.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/porsche-service-dubai/steering-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/porsche.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/porsche-service-dubai/suspension-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/porsche.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/porsche-service-dubai/tire-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/porsche.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/porsche-service-dubai/transmission-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/porsche.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/range-rover-service-dubai/ac-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/land-rover.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/range-rover-service-dubai/battery-replacement",
+      "image": "https://digitecme.com/brand-logos/showcase/land-rover.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/range-rover-service-dubai/body-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/land-rover.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/range-rover-service-dubai/brake-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/land-rover.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/range-rover-service-dubai/electrical-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/land-rover.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/range-rover-service-dubai/engine-diagnostics",
+      "image": "https://digitecme.com/brand-logos/showcase/land-rover.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/range-rover-service-dubai/exhaust-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/land-rover.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/range-rover-service-dubai/fuel-system-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/land-rover.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/range-rover-service-dubai/mechanical-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/land-rover.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/range-rover-service-dubai/oil-change",
+      "image": "https://digitecme.com/brand-logos/showcase/land-rover.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/range-rover-service-dubai/steering-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/land-rover.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/range-rover-service-dubai/suspension-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/land-rover.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/range-rover-service-dubai/tire-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/land-rover.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/range-rover-service-dubai/transmission-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/land-rover.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/rolls-royce-service-dubai",
+      "image": "https://digitecme.com/brand-logos/showcase/rolls-royce.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/rolls-royce-service-dubai/ac-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/rolls-royce.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/rolls-royce-service-dubai/battery-replacement",
+      "image": "https://digitecme.com/brand-logos/showcase/rolls-royce.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/rolls-royce-service-dubai/body-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/rolls-royce.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/rolls-royce-service-dubai/brake-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/rolls-royce.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/rolls-royce-service-dubai/electrical-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/rolls-royce.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/rolls-royce-service-dubai/engine-diagnostics",
+      "image": "https://digitecme.com/brand-logos/showcase/rolls-royce.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/rolls-royce-service-dubai/exhaust-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/rolls-royce.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/rolls-royce-service-dubai/fuel-system-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/rolls-royce.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/rolls-royce-service-dubai/mechanical-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/rolls-royce.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/rolls-royce-service-dubai/oil-change",
+      "image": "https://digitecme.com/brand-logos/showcase/rolls-royce.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/rolls-royce-service-dubai/steering-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/rolls-royce.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/rolls-royce-service-dubai/suspension-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/rolls-royce.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/rolls-royce-service-dubai/tire-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/rolls-royce.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/rolls-royce-service-dubai/transmission-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/rolls-royce.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/rox-service-dubai",
+      "image": "https://digitecme.com/brand-logos/showcase/rox.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/rox-service-dubai/ac-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/rox.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/rox-service-dubai/battery-replacement",
+      "image": "https://digitecme.com/brand-logos/showcase/rox.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/rox-service-dubai/body-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/rox.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/rox-service-dubai/brake-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/rox.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/rox-service-dubai/electrical-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/rox.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/rox-service-dubai/engine-diagnostics",
+      "image": "https://digitecme.com/brand-logos/showcase/rox.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/rox-service-dubai/exhaust-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/rox.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/rox-service-dubai/fuel-system-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/rox.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/rox-service-dubai/mechanical-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/rox.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/rox-service-dubai/oil-change",
+      "image": "https://digitecme.com/brand-logos/showcase/rox.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/rox-service-dubai/soft-close-door-installation",
+      "image": "https://digitecme.com/brand-logos/showcase/rox.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/rox-service-dubai/steering-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/rox.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/rox-service-dubai/suspension-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/rox.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/rox-service-dubai/tire-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/rox.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/rox-service-dubai/transmission-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/rox.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/subaru-service-dubai",
+      "image": "https://digitecme.com/brand-logos/showcase/subaru.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/subaru-service-dubai/ac-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/subaru.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/subaru-service-dubai/brake-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/subaru.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/subaru-service-dubai/engine-diagnostics",
+      "image": "https://digitecme.com/brand-logos/showcase/subaru.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/subaru-service-dubai/oil-change",
+      "image": "https://digitecme.com/brand-logos/showcase/subaru.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/subaru-service-dubai/suspension-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/subaru.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/subaru-service-dubai/transmission-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/subaru.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/tesla-service-dubai",
+      "image": "https://digitecme.com/brand-logos/showcase/tesla.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/tesla-service-dubai/ac-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/tesla.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/tesla-service-dubai/battery-replacement",
+      "image": "https://digitecme.com/brand-logos/showcase/tesla.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/tesla-service-dubai/body-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/tesla.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/tesla-service-dubai/brake-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/tesla.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/tesla-service-dubai/electrical-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/tesla.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/tesla-service-dubai/mechanical-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/tesla.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/tesla-service-dubai/steering-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/tesla.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/tesla-service-dubai/suspension-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/tesla.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/tesla-service-dubai/tire-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/tesla.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/volkswagen-service-dubai",
+      "image": "https://digitecme.com/brand-logos/showcase/volkswagen.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/volkswagen-service-dubai/ac-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/volkswagen.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/volkswagen-service-dubai/battery-replacement",
+      "image": "https://digitecme.com/brand-logos/showcase/volkswagen.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/volkswagen-service-dubai/body-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/volkswagen.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/volkswagen-service-dubai/brake-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/volkswagen.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/volkswagen-service-dubai/electrical-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/volkswagen.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/volkswagen-service-dubai/engine-diagnostics",
+      "image": "https://digitecme.com/brand-logos/showcase/volkswagen.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/volkswagen-service-dubai/exhaust-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/volkswagen.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/volkswagen-service-dubai/fuel-system-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/volkswagen.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/volkswagen-service-dubai/mechanical-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/volkswagen.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/volkswagen-service-dubai/oil-change",
+      "image": "https://digitecme.com/brand-logos/showcase/volkswagen.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/volkswagen-service-dubai/steering-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/volkswagen.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/volkswagen-service-dubai/suspension-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/volkswagen.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/volkswagen-service-dubai/tire-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/volkswagen.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/volkswagen-service-dubai/transmission-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/volkswagen.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/volvo-service-dubai",
+      "image": "https://digitecme.com/brand-logos/showcase/volvo.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/volvo-service-dubai/ac-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/volvo.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/volvo-service-dubai/battery-replacement",
+      "image": "https://digitecme.com/brand-logos/showcase/volvo.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/volvo-service-dubai/body-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/volvo.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/volvo-service-dubai/brake-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/volvo.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/volvo-service-dubai/electrical-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/volvo.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/volvo-service-dubai/engine-diagnostics",
+      "image": "https://digitecme.com/brand-logos/showcase/volvo.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/volvo-service-dubai/exhaust-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/volvo.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/volvo-service-dubai/fuel-system-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/volvo.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/volvo-service-dubai/mechanical-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/volvo.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/volvo-service-dubai/oil-change",
+      "image": "https://digitecme.com/brand-logos/showcase/volvo.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/volvo-service-dubai/steering-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/volvo.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/volvo-service-dubai/suspension-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/volvo.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/volvo-service-dubai/tire-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/volvo.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/brands/volvo-service-dubai/transmission-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/volvo.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/services/auto-electrical-repair-dubai",
+      "image": "https://digitecme.com/lovable-uploads/9f435c28-2f08-437b-99ad-2252d8ea2071.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/services/battery-replacement-dubai",
+      "image": "https://digitecme.com/lovable-uploads/c1c2c5d8-fd7e-4d38-945c-e52315b4229e.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/services/brake-repair-dubai",
+      "image": "https://digitecme.com/lovable-uploads/99d04ebd-5104-40f5-961d-f26cff7f2030.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/services/car-ac-repair-dubai",
+      "image": "https://digitecme.com/lovable-uploads/9db7fc3e-a988-4b9d-a7ab-a6494b58561e.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/services/car-body-repair-dubai",
+      "image": "https://digitecme.com/lovable-uploads/car-body-repair-v2.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/services/car-diagnostics-dubai",
+      "image": "https://digitecme.com/lovable-uploads/150c684d-11eb-476b-b768-afe7cad297cc.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/services/car-service-dubai",
+      "image": "https://digitecme.com/assets/routine-maintenance-optimized-BkcEIeXp.jpg",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/services/ceramic-coating",
+      "image": "https://digitecme.com/assets/ceramic-coating-CkFGxCKk.jpg",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/services/exhaust-repair-dubai",
+      "image": "https://digitecme.com/assets/exhaust-repair-dubai-D6tZkcc6.jpg",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/services/fuel-system-repair-dubai",
+      "image": "https://digitecme.com/lovable-uploads/678fdd1f-2841-4606-8533-51f82257a4a0.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/services/mechanical-repair-dubai",
+      "image": "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=800&h=600&fit=crop",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/services/mercedes-ac-repair-dubai",
+      "image": "https://digitecme.com/brand-logos/showcase/mercedes-benz.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/services/mercedes-battery-replacement-dubai",
+      "image": "https://digitecme.com/brand-logos/showcase/mercedes-benz.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/services/mercedes-body-repair-dubai",
+      "image": "https://digitecme.com/brand-logos/showcase/mercedes-benz.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/services/mercedes-brake-repair-dubai",
+      "image": "https://digitecme.com/brand-logos/showcase/mercedes-benz.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/services/mercedes-diagnostics-dubai",
+      "image": "https://digitecme.com/brand-logos/showcase/mercedes-benz.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/services/mercedes-electrical-repair-dubai",
+      "image": "https://digitecme.com/brand-logos/showcase/mercedes-benz.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/services/mercedes-exhaust-repair-dubai",
+      "image": "https://digitecme.com/brand-logos/showcase/mercedes-benz.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/services/mercedes-fuel-system-repair-dubai",
+      "image": "https://digitecme.com/brand-logos/showcase/mercedes-benz.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/services/mercedes-mechanical-repair-dubai",
+      "image": "https://digitecme.com/brand-logos/showcase/mercedes-benz.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/services/mercedes-oil-change-dubai",
+      "image": "https://digitecme.com/brand-logos/showcase/mercedes-benz.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/services/mercedes-steering-repair-dubai",
+      "image": "https://digitecme.com/brand-logos/showcase/mercedes-benz.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/services/mercedes-suspension-repair-dubai",
+      "image": "https://digitecme.com/brand-logos/showcase/mercedes-benz.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/services/mercedes-tire-repair-dubai",
+      "image": "https://digitecme.com/brand-logos/showcase/mercedes-benz.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/services/mercedes-transmission-repair-dubai",
+      "image": "https://digitecme.com/brand-logos/showcase/mercedes-benz.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/services/oil-change-dubai",
+      "image": "https://digitecme.com/lovable-uploads/b25532a7-eae9-45ae-b8bf-425984dbfa6d.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/services/paint-protection-dubai",
+      "image": "https://digitecme.com/lovable-uploads/f1cfe23e-d23b-4717-9f75-a07199716d98.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/services/paint-protection-film",
+      "image": "https://digitecme.com/assets/ppf-application-Bhdwmsn3.jpg",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/services/soft-close-door-repair-dubai",
+      "image": "https://digitecme.com/assets/soft-close-door-repair-BTR5h1QP.jpg",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/services/steering-repair-dubai",
+      "image": "https://digitecme.com/lovable-uploads/b8278b01-7cf1-43fb-ae22-3f731c36cec5.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/services/suspension-repair-dubai",
+      "image": "https://digitecme.com/assets/suspension-repair-dubai-jBXugG2X.jpg",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/services/tire-repair-dubai",
+      "image": "https://digitecme.com/assets/tire-repair-DRcZ2QmZ.jpg",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/services/transmission-repair-dubai",
+      "image": "https://digitecme.com/lovable-uploads/b56133bf-55e4-4bc9-884f-15f732132259.png",
+      "isArticle": false
+    },
+    {
+      "path": "/ar/vrx",
+      "image": "https://digitecme.com/images/vrx-exterior.jpg",
+      "isArticle": false
+    },
+    {
+      "path": "/best-audi-workshop-dubai",
+      "image": "https://digitecme.com/lovable-uploads/a3e92dde-70a9-499b-a7b0-ae0df117baf9.png",
+      "isArticle": false
+    },
+    {
+      "path": "/best-bmw-workshop-dubai",
+      "image": "https://digitecme.com/lovable-uploads/d66ea83e-7d6a-4c19-bf30-f27eca93ac8e.png",
+      "isArticle": false
+    },
+    {
+      "path": "/best-ferrari-workshop-dubai",
+      "image": "https://digitecme.com/lovable-uploads/11f29482-f2d3-4278-ae2a-397044a1ff95.png",
+      "isArticle": false
+    },
+    {
+      "path": "/best-lamborghini-workshop-dubai",
+      "image": "https://digitecme.com/lovable-uploads/8c4046ee-9977-417a-90a9-820452146832.png",
+      "isArticle": false
+    },
+    {
+      "path": "/best-porsche-workshop-dubai",
+      "image": "https://digitecme.com/lovable-uploads/8e7e2545-680e-42ac-bd97-ba1f9c063649.png",
+      "isArticle": false
+    },
+    {
+      "path": "/best-range-rover-workshop-dubai",
+      "image": "https://digitecme.com/lovable-uploads/6a3fe63c-72a5-4dcd-8f0b-4b0cd11c8b3d.png",
+      "isArticle": false
+    },
+    {
+      "path": "/blog/best-defender-workshop-dubai",
+      "image": "https://digitecme.com/assets/defender-workshop-dubai-C_NWYDCd.jpg",
+      "isArticle": true
+    },
+    {
+      "path": "/blog/best-oil-change-dubai-mercedes",
+      "image": "https://digitecme.com/assets/mercedes-repair-guide-workshop-BgsuoacB.jpg",
+      "isArticle": true
+    },
+    {
+      "path": "/blog/g63-to-brabus-g800-conversion-dubai",
+      "image": "https://digitecme.com/assets/g63-brabus-g800-finished-front-DKJRDYPA.jpg",
+      "isArticle": true
+    },
+    {
+      "path": "/blog/how-much-is-my-mercedes-worth-dubai",
+      "image": "https://digitecme.com/assets/mercedes-repair-guide-workshop-BgsuoacB.jpg",
+      "isArticle": true
+    },
+    {
+      "path": "/blog/mercedes-amg-gt-black-series-1300hp-build-dubai",
+      "image": "https://digitecme.com/assets/mercedes-amg-gt-black-series-1300hp-build-CfbrECOo.jpg",
+      "isArticle": true
+    },
+    {
+      "path": "/blog/mercedes-repair-dubai-complete-guide",
+      "image": "https://digitecme.com/assets/mercedes-repair-guide-workshop-BgsuoacB.jpg",
+      "isArticle": true
+    },
+    {
+      "path": "/blog/range-rover-land-rover-air-suspension-problems-dubai",
+      "image": "https://digitecme.com/assets/range-rover-workshop-dubai-BHADPo2T.png",
+      "isArticle": true
+    },
+    {
+      "path": "/brands/aston-martin-service-dubai/ac-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/aston-martin.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/aston-martin-service-dubai/battery-replacement",
+      "image": "https://digitecme.com/brand-logos/showcase/aston-martin.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/aston-martin-service-dubai/body-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/aston-martin.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/aston-martin-service-dubai/brake-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/aston-martin.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/aston-martin-service-dubai/electrical-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/aston-martin.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/aston-martin-service-dubai/engine-diagnostics",
+      "image": "https://digitecme.com/brand-logos/showcase/aston-martin.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/aston-martin-service-dubai/exhaust-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/aston-martin.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/aston-martin-service-dubai/fuel-system-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/aston-martin.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/aston-martin-service-dubai/mechanical-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/aston-martin.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/aston-martin-service-dubai/oil-change",
+      "image": "https://digitecme.com/brand-logos/showcase/aston-martin.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/aston-martin-service-dubai/steering-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/aston-martin.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/aston-martin-service-dubai/suspension-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/aston-martin.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/aston-martin-service-dubai/tire-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/aston-martin.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/aston-martin-service-dubai/transmission-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/aston-martin.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/audi-service-dubai",
+      "image": "https://digitecme.com/brand-logos/showcase/audi.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/audi-service-dubai/ac-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/audi.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/audi-service-dubai/battery-replacement",
+      "image": "https://digitecme.com/brand-logos/showcase/audi.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/audi-service-dubai/body-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/audi.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/audi-service-dubai/brake-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/audi.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/audi-service-dubai/electrical-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/audi.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/audi-service-dubai/engine-diagnostics",
+      "image": "https://digitecme.com/brand-logos/showcase/audi.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/audi-service-dubai/exhaust-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/audi.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/audi-service-dubai/fuel-system-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/audi.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/audi-service-dubai/mechanical-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/audi.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/audi-service-dubai/oil-change",
+      "image": "https://digitecme.com/brand-logos/showcase/audi.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/audi-service-dubai/steering-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/audi.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/audi-service-dubai/suspension-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/audi.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/audi-service-dubai/tire-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/audi.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/audi-service-dubai/transmission-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/audi.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/bentley-service-dubai/ac-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/bentley.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/bentley-service-dubai/battery-replacement",
+      "image": "https://digitecme.com/brand-logos/showcase/bentley.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/bentley-service-dubai/body-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/bentley.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/bentley-service-dubai/brake-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/bentley.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/bentley-service-dubai/electrical-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/bentley.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/bentley-service-dubai/engine-diagnostics",
+      "image": "https://digitecme.com/brand-logos/showcase/bentley.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/bentley-service-dubai/exhaust-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/bentley.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/bentley-service-dubai/fuel-system-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/bentley.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/bentley-service-dubai/mechanical-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/bentley.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/bentley-service-dubai/oil-change",
+      "image": "https://digitecme.com/brand-logos/showcase/bentley.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/bentley-service-dubai/steering-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/bentley.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/bentley-service-dubai/suspension-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/bentley.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/bentley-service-dubai/tire-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/bentley.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/bentley-service-dubai/transmission-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/bentley.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/bmw-service-dubai",
+      "image": "https://digitecme.com/brand-logos/showcase/bmw.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/bmw-service-dubai/ac-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/bmw.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/bmw-service-dubai/battery-replacement",
+      "image": "https://digitecme.com/brand-logos/showcase/bmw.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/bmw-service-dubai/body-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/bmw.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/bmw-service-dubai/brake-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/bmw.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/bmw-service-dubai/electrical-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/bmw.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/bmw-service-dubai/engine-diagnostics",
+      "image": "https://digitecme.com/brand-logos/showcase/bmw.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/bmw-service-dubai/exhaust-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/bmw.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/bmw-service-dubai/fuel-system-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/bmw.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/bmw-service-dubai/mechanical-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/bmw.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/bmw-service-dubai/oil-change",
+      "image": "https://digitecme.com/brand-logos/showcase/bmw.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/bmw-service-dubai/steering-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/bmw.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/bmw-service-dubai/suspension-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/bmw.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/bmw-service-dubai/tire-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/bmw.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/bmw-service-dubai/transmission-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/bmw.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/bugatti-service-dubai",
+      "image": "https://digitecme.com/brand-logos/showcase/bugatti.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/bugatti-service-dubai/ac-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/bugatti.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/bugatti-service-dubai/battery-replacement",
+      "image": "https://digitecme.com/brand-logos/showcase/bugatti.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/bugatti-service-dubai/body-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/bugatti.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/bugatti-service-dubai/brake-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/bugatti.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/bugatti-service-dubai/electrical-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/bugatti.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/bugatti-service-dubai/engine-diagnostics",
+      "image": "https://digitecme.com/brand-logos/showcase/bugatti.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/bugatti-service-dubai/exhaust-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/bugatti.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/bugatti-service-dubai/fuel-system-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/bugatti.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/bugatti-service-dubai/mechanical-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/bugatti.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/bugatti-service-dubai/oil-change",
+      "image": "https://digitecme.com/brand-logos/showcase/bugatti.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/bugatti-service-dubai/steering-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/bugatti.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/bugatti-service-dubai/suspension-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/bugatti.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/bugatti-service-dubai/tire-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/bugatti.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/bugatti-service-dubai/transmission-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/bugatti.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/byd-service-dubai",
+      "image": "https://digitecme.com/brand-logos/showcase/byd.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/byd-service-dubai/ac-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/byd.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/byd-service-dubai/battery-replacement",
+      "image": "https://digitecme.com/brand-logos/showcase/byd.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/byd-service-dubai/body-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/byd.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/byd-service-dubai/brake-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/byd.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/byd-service-dubai/electrical-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/byd.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/byd-service-dubai/engine-diagnostics",
+      "image": "https://digitecme.com/brand-logos/showcase/byd.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/byd-service-dubai/exhaust-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/byd.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/byd-service-dubai/fuel-system-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/byd.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/byd-service-dubai/mechanical-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/byd.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/byd-service-dubai/oil-change",
+      "image": "https://digitecme.com/brand-logos/showcase/byd.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/byd-service-dubai/steering-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/byd.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/byd-service-dubai/suspension-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/byd.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/byd-service-dubai/tire-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/byd.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/byd-service-dubai/transmission-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/byd.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/cadillac-service-dubai",
+      "image": "https://digitecme.com/brand-logos/showcase/cadillac.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/cadillac-service-dubai/ac-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/cadillac.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/cadillac-service-dubai/battery-replacement",
+      "image": "https://digitecme.com/brand-logos/showcase/cadillac.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/cadillac-service-dubai/body-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/cadillac.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/cadillac-service-dubai/brake-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/cadillac.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/cadillac-service-dubai/electrical-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/cadillac.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/cadillac-service-dubai/engine-diagnostics",
+      "image": "https://digitecme.com/brand-logos/showcase/cadillac.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/cadillac-service-dubai/exhaust-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/cadillac.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/cadillac-service-dubai/fuel-system-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/cadillac.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/cadillac-service-dubai/mechanical-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/cadillac.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/cadillac-service-dubai/oil-change",
+      "image": "https://digitecme.com/brand-logos/showcase/cadillac.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/cadillac-service-dubai/steering-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/cadillac.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/cadillac-service-dubai/suspension-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/cadillac.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/cadillac-service-dubai/tire-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/cadillac.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/cadillac-service-dubai/transmission-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/cadillac.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/chevrolet-service-dubai",
+      "image": "https://digitecme.com/brand-logos/showcase/chevrolet.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/chevrolet-service-dubai/ac-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/chevrolet.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/chevrolet-service-dubai/brake-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/chevrolet.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/chevrolet-service-dubai/engine-diagnostics",
+      "image": "https://digitecme.com/brand-logos/showcase/chevrolet.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/chevrolet-service-dubai/oil-change",
+      "image": "https://digitecme.com/brand-logos/showcase/chevrolet.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/chevrolet-service-dubai/suspension-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/chevrolet.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/chevrolet-service-dubai/transmission-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/chevrolet.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/chrysler-service-dubai",
+      "image": "https://digitecme.com/brand-logos/showcase/chrysler.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/chrysler-service-dubai/ac-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/chrysler.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/chrysler-service-dubai/brake-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/chrysler.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/chrysler-service-dubai/engine-diagnostics",
+      "image": "https://digitecme.com/brand-logos/showcase/chrysler.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/chrysler-service-dubai/oil-change",
+      "image": "https://digitecme.com/brand-logos/showcase/chrysler.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/chrysler-service-dubai/suspension-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/chrysler.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/chrysler-service-dubai/transmission-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/chrysler.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/corvette-service-dubai",
+      "image": "https://digitecme.com/brand-logos/showcase/corvette.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/corvette-service-dubai/ac-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/corvette.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/corvette-service-dubai/brake-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/corvette.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/corvette-service-dubai/engine-diagnostics",
+      "image": "https://digitecme.com/brand-logos/showcase/corvette.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/corvette-service-dubai/oil-change",
+      "image": "https://digitecme.com/brand-logos/showcase/corvette.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/corvette-service-dubai/suspension-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/corvette.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/corvette-service-dubai/transmission-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/corvette.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/defender-service-dubai/ac-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/land-rover.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/defender-service-dubai/battery-replacement",
+      "image": "https://digitecme.com/brand-logos/showcase/land-rover.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/defender-service-dubai/body-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/land-rover.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/defender-service-dubai/brake-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/land-rover.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/defender-service-dubai/electrical-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/land-rover.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/defender-service-dubai/engine-diagnostics",
+      "image": "https://digitecme.com/brand-logos/showcase/land-rover.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/defender-service-dubai/exhaust-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/land-rover.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/defender-service-dubai/fuel-system-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/land-rover.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/defender-service-dubai/mechanical-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/land-rover.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/defender-service-dubai/oil-change",
+      "image": "https://digitecme.com/brand-logos/showcase/land-rover.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/defender-service-dubai/steering-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/land-rover.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/defender-service-dubai/suspension-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/land-rover.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/defender-service-dubai/tire-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/land-rover.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/defender-service-dubai/transmission-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/land-rover.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/dodge-service-dubai",
+      "image": "https://digitecme.com/brand-logos/showcase/dodge.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/dodge-service-dubai/ac-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/dodge.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/dodge-service-dubai/brake-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/dodge.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/dodge-service-dubai/engine-diagnostics",
+      "image": "https://digitecme.com/brand-logos/showcase/dodge.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/dodge-service-dubai/oil-change",
+      "image": "https://digitecme.com/brand-logos/showcase/dodge.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/dodge-service-dubai/suspension-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/dodge.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/dodge-service-dubai/transmission-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/dodge.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/ferrari-service-dubai/ac-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/ferrari.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/ferrari-service-dubai/battery-replacement",
+      "image": "https://digitecme.com/brand-logos/showcase/ferrari.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/ferrari-service-dubai/body-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/ferrari.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/ferrari-service-dubai/brake-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/ferrari.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/ferrari-service-dubai/electrical-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/ferrari.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/ferrari-service-dubai/engine-diagnostics",
+      "image": "https://digitecme.com/brand-logos/showcase/ferrari.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/ferrari-service-dubai/exhaust-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/ferrari.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/ferrari-service-dubai/fuel-system-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/ferrari.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/ferrari-service-dubai/mechanical-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/ferrari.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/ferrari-service-dubai/oil-change",
+      "image": "https://digitecme.com/brand-logos/showcase/ferrari.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/ferrari-service-dubai/steering-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/ferrari.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/ferrari-service-dubai/suspension-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/ferrari.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/ferrari-service-dubai/tire-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/ferrari.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/ferrari-service-dubai/transmission-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/ferrari.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/ford-service-dubai",
+      "image": "https://digitecme.com/brand-logos/showcase/ford.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/ford-service-dubai/ac-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/ford.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/ford-service-dubai/brake-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/ford.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/ford-service-dubai/engine-diagnostics",
+      "image": "https://digitecme.com/brand-logos/showcase/ford.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/ford-service-dubai/oil-change",
+      "image": "https://digitecme.com/brand-logos/showcase/ford.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/ford-service-dubai/suspension-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/ford.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/ford-service-dubai/transmission-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/ford.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/genesis-service-dubai",
+      "image": "https://digitecme.com/brand-logos/showcase/genesis.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/genesis-service-dubai/ac-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/genesis.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/genesis-service-dubai/brake-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/genesis.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/genesis-service-dubai/engine-diagnostics",
+      "image": "https://digitecme.com/brand-logos/showcase/genesis.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/genesis-service-dubai/oil-change",
+      "image": "https://digitecme.com/brand-logos/showcase/genesis.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/genesis-service-dubai/suspension-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/genesis.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/genesis-service-dubai/transmission-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/genesis.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/gmc-service-dubai",
+      "image": "https://digitecme.com/brand-logos/showcase/gmc.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/gmc-service-dubai/ac-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/gmc.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/gmc-service-dubai/brake-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/gmc.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/gmc-service-dubai/engine-diagnostics",
+      "image": "https://digitecme.com/brand-logos/showcase/gmc.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/gmc-service-dubai/oil-change",
+      "image": "https://digitecme.com/brand-logos/showcase/gmc.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/gmc-service-dubai/suspension-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/gmc.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/gmc-service-dubai/transmission-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/gmc.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/hummer-service-dubai",
+      "image": "https://digitecme.com/brand-logos/showcase/hummer.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/hummer-service-dubai/ac-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/hummer.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/hummer-service-dubai/brake-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/hummer.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/hummer-service-dubai/engine-diagnostics",
+      "image": "https://digitecme.com/brand-logos/showcase/hummer.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/hummer-service-dubai/oil-change",
+      "image": "https://digitecme.com/brand-logos/showcase/hummer.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/hummer-service-dubai/suspension-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/hummer.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/hummer-service-dubai/transmission-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/hummer.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/jaguar-service-dubai",
+      "image": "https://digitecme.com/brand-logos/showcase/jaguar.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/jaguar-service-dubai/ac-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/jaguar.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/jaguar-service-dubai/brake-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/jaguar.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/jaguar-service-dubai/engine-diagnostics",
+      "image": "https://digitecme.com/brand-logos/showcase/jaguar.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/jaguar-service-dubai/oil-change",
+      "image": "https://digitecme.com/brand-logos/showcase/jaguar.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/jaguar-service-dubai/suspension-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/jaguar.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/jaguar-service-dubai/transmission-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/jaguar.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/jeep-service-dubai",
+      "image": "https://digitecme.com/brand-logos/showcase/jeep.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/jeep-service-dubai/ac-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/jeep.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/jeep-service-dubai/battery-replacement",
+      "image": "https://digitecme.com/brand-logos/showcase/jeep.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/jeep-service-dubai/body-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/jeep.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/jeep-service-dubai/brake-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/jeep.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/jeep-service-dubai/electrical-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/jeep.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/jeep-service-dubai/engine-diagnostics",
+      "image": "https://digitecme.com/brand-logos/showcase/jeep.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/jeep-service-dubai/exhaust-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/jeep.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/jeep-service-dubai/fuel-system-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/jeep.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/jeep-service-dubai/mechanical-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/jeep.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/jeep-service-dubai/oil-change",
+      "image": "https://digitecme.com/brand-logos/showcase/jeep.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/jeep-service-dubai/steering-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/jeep.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/jeep-service-dubai/suspension-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/jeep.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/jeep-service-dubai/tire-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/jeep.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/jeep-service-dubai/transmission-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/jeep.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/jetour-service-dubai",
+      "image": "https://digitecme.com/brand-logos/showcase/jetour.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/jetour-service-dubai/ac-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/jetour.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/jetour-service-dubai/battery-replacement",
+      "image": "https://digitecme.com/brand-logos/showcase/jetour.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/jetour-service-dubai/body-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/jetour.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/jetour-service-dubai/brake-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/jetour.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/jetour-service-dubai/electrical-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/jetour.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/jetour-service-dubai/engine-diagnostics",
+      "image": "https://digitecme.com/brand-logos/showcase/jetour.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/jetour-service-dubai/exhaust-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/jetour.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/jetour-service-dubai/fuel-system-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/jetour.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/jetour-service-dubai/mechanical-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/jetour.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/jetour-service-dubai/oil-change",
+      "image": "https://digitecme.com/brand-logos/showcase/jetour.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/jetour-service-dubai/steering-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/jetour.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/jetour-service-dubai/suspension-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/jetour.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/jetour-service-dubai/tire-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/jetour.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/jetour-service-dubai/transmission-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/jetour.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/koenigsegg-service-dubai",
+      "image": "https://digitecme.com/brand-logos/showcase/koenigsegg.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/koenigsegg-service-dubai/ac-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/koenigsegg.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/koenigsegg-service-dubai/brake-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/koenigsegg.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/koenigsegg-service-dubai/engine-diagnostics",
+      "image": "https://digitecme.com/brand-logos/showcase/koenigsegg.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/koenigsegg-service-dubai/oil-change",
+      "image": "https://digitecme.com/brand-logos/showcase/koenigsegg.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/koenigsegg-service-dubai/suspension-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/koenigsegg.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/koenigsegg-service-dubai/transmission-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/koenigsegg.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/lamborghini-service-dubai/ac-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/lamborghini.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/lamborghini-service-dubai/battery-replacement",
+      "image": "https://digitecme.com/brand-logos/showcase/lamborghini.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/lamborghini-service-dubai/body-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/lamborghini.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/lamborghini-service-dubai/brake-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/lamborghini.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/lamborghini-service-dubai/electrical-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/lamborghini.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/lamborghini-service-dubai/engine-diagnostics",
+      "image": "https://digitecme.com/brand-logos/showcase/lamborghini.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/lamborghini-service-dubai/exhaust-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/lamborghini.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/lamborghini-service-dubai/fuel-system-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/lamborghini.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/lamborghini-service-dubai/mechanical-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/lamborghini.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/lamborghini-service-dubai/oil-change",
+      "image": "https://digitecme.com/brand-logos/showcase/lamborghini.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/lamborghini-service-dubai/steering-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/lamborghini.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/lamborghini-service-dubai/suspension-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/lamborghini.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/lamborghini-service-dubai/tire-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/lamborghini.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/lamborghini-service-dubai/transmission-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/lamborghini.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/land-rover-service-dubai",
+      "image": "https://digitecme.com/brand-logos/showcase/land-rover.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/land-rover-service-dubai/ac-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/land-rover.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/land-rover-service-dubai/battery-replacement",
+      "image": "https://digitecme.com/brand-logos/showcase/land-rover.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/land-rover-service-dubai/body-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/land-rover.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/land-rover-service-dubai/brake-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/land-rover.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/land-rover-service-dubai/electrical-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/land-rover.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/land-rover-service-dubai/engine-diagnostics",
+      "image": "https://digitecme.com/brand-logos/showcase/land-rover.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/land-rover-service-dubai/exhaust-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/land-rover.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/land-rover-service-dubai/fuel-system-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/land-rover.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/land-rover-service-dubai/mechanical-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/land-rover.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/land-rover-service-dubai/oil-change",
+      "image": "https://digitecme.com/brand-logos/showcase/land-rover.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/land-rover-service-dubai/steering-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/land-rover.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/land-rover-service-dubai/suspension-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/land-rover.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/land-rover-service-dubai/tire-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/land-rover.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/land-rover-service-dubai/transmission-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/land-rover.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/lincoln-service-dubai",
+      "image": "https://digitecme.com/brand-logos/showcase/lincoln.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/lincoln-service-dubai/ac-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/lincoln.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/lincoln-service-dubai/brake-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/lincoln.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/lincoln-service-dubai/engine-diagnostics",
+      "image": "https://digitecme.com/brand-logos/showcase/lincoln.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/lincoln-service-dubai/oil-change",
+      "image": "https://digitecme.com/brand-logos/showcase/lincoln.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/lincoln-service-dubai/suspension-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/lincoln.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/lincoln-service-dubai/transmission-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/lincoln.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/maserati-service-dubai/ac-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/maserati.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/maserati-service-dubai/battery-replacement",
+      "image": "https://digitecme.com/brand-logos/showcase/maserati.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/maserati-service-dubai/body-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/maserati.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/maserati-service-dubai/brake-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/maserati.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/maserati-service-dubai/electrical-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/maserati.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/maserati-service-dubai/engine-diagnostics",
+      "image": "https://digitecme.com/brand-logos/showcase/maserati.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/maserati-service-dubai/exhaust-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/maserati.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/maserati-service-dubai/fuel-system-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/maserati.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/maserati-service-dubai/mechanical-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/maserati.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/maserati-service-dubai/oil-change",
+      "image": "https://digitecme.com/brand-logos/showcase/maserati.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/maserati-service-dubai/steering-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/maserati.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/maserati-service-dubai/suspension-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/maserati.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/maserati-service-dubai/tire-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/maserati.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/maserati-service-dubai/transmission-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/maserati.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/maybach-service-dubai/ac-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/maybach.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/maybach-service-dubai/battery-replacement",
+      "image": "https://digitecme.com/brand-logos/showcase/maybach.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/maybach-service-dubai/body-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/maybach.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/maybach-service-dubai/brake-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/maybach.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/maybach-service-dubai/electrical-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/maybach.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/maybach-service-dubai/engine-diagnostics",
+      "image": "https://digitecme.com/brand-logos/showcase/maybach.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/maybach-service-dubai/exhaust-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/maybach.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/maybach-service-dubai/fuel-system-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/maybach.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/maybach-service-dubai/mechanical-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/maybach.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/maybach-service-dubai/oil-change",
+      "image": "https://digitecme.com/brand-logos/showcase/maybach.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/maybach-service-dubai/steering-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/maybach.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/maybach-service-dubai/suspension-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/maybach.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/maybach-service-dubai/tire-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/maybach.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/maybach-service-dubai/transmission-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/maybach.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/mclaren-service-dubai",
+      "image": "https://digitecme.com/brand-logos/showcase/mclaren.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/mclaren-service-dubai/ac-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/mclaren.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/mclaren-service-dubai/battery-replacement",
+      "image": "https://digitecme.com/brand-logos/showcase/mclaren.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/mclaren-service-dubai/body-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/mclaren.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/mclaren-service-dubai/brake-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/mclaren.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/mclaren-service-dubai/electrical-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/mclaren.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/mclaren-service-dubai/engine-diagnostics",
+      "image": "https://digitecme.com/brand-logos/showcase/mclaren.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/mclaren-service-dubai/exhaust-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/mclaren.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/mclaren-service-dubai/fuel-system-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/mclaren.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/mclaren-service-dubai/mechanical-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/mclaren.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/mclaren-service-dubai/oil-change",
+      "image": "https://digitecme.com/brand-logos/showcase/mclaren.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/mclaren-service-dubai/steering-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/mclaren.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/mclaren-service-dubai/suspension-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/mclaren.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/mclaren-service-dubai/tire-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/mclaren.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/mclaren-service-dubai/transmission-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/mclaren.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/mini-service-dubai",
+      "image": "https://digitecme.com/brand-logos/showcase/mini.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/mini-service-dubai/ac-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/mini.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/mini-service-dubai/brake-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/mini.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/mini-service-dubai/engine-diagnostics",
+      "image": "https://digitecme.com/brand-logos/showcase/mini.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/mini-service-dubai/oil-change",
+      "image": "https://digitecme.com/brand-logos/showcase/mini.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/mini-service-dubai/suspension-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/mini.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/mini-service-dubai/transmission-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/mini.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/pagani-service-dubai",
+      "image": "https://digitecme.com/brand-logos/showcase/pagani.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/pagani-service-dubai/ac-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/pagani.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/pagani-service-dubai/battery-replacement",
+      "image": "https://digitecme.com/brand-logos/showcase/pagani.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/pagani-service-dubai/body-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/pagani.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/pagani-service-dubai/brake-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/pagani.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/pagani-service-dubai/electrical-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/pagani.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/pagani-service-dubai/engine-diagnostics",
+      "image": "https://digitecme.com/brand-logos/showcase/pagani.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/pagani-service-dubai/exhaust-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/pagani.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/pagani-service-dubai/fuel-system-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/pagani.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/pagani-service-dubai/mechanical-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/pagani.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/pagani-service-dubai/oil-change",
+      "image": "https://digitecme.com/brand-logos/showcase/pagani.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/pagani-service-dubai/steering-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/pagani.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/pagani-service-dubai/suspension-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/pagani.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/pagani-service-dubai/tire-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/pagani.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/pagani-service-dubai/transmission-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/pagani.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/porsche-service-dubai/ac-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/porsche.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/porsche-service-dubai/battery-replacement",
+      "image": "https://digitecme.com/brand-logos/showcase/porsche.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/porsche-service-dubai/body-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/porsche.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/porsche-service-dubai/brake-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/porsche.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/porsche-service-dubai/electrical-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/porsche.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/porsche-service-dubai/engine-diagnostics",
+      "image": "https://digitecme.com/brand-logos/showcase/porsche.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/porsche-service-dubai/exhaust-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/porsche.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/porsche-service-dubai/fuel-system-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/porsche.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/porsche-service-dubai/mechanical-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/porsche.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/porsche-service-dubai/oil-change",
+      "image": "https://digitecme.com/brand-logos/showcase/porsche.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/porsche-service-dubai/steering-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/porsche.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/porsche-service-dubai/suspension-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/porsche.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/porsche-service-dubai/tire-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/porsche.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/porsche-service-dubai/transmission-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/porsche.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/range-rover-service-dubai/ac-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/land-rover.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/range-rover-service-dubai/battery-replacement",
+      "image": "https://digitecme.com/brand-logos/showcase/land-rover.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/range-rover-service-dubai/body-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/land-rover.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/range-rover-service-dubai/brake-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/land-rover.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/range-rover-service-dubai/electrical-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/land-rover.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/range-rover-service-dubai/engine-diagnostics",
+      "image": "https://digitecme.com/brand-logos/showcase/land-rover.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/range-rover-service-dubai/exhaust-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/land-rover.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/range-rover-service-dubai/fuel-system-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/land-rover.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/range-rover-service-dubai/mechanical-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/land-rover.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/range-rover-service-dubai/oil-change",
+      "image": "https://digitecme.com/brand-logos/showcase/land-rover.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/range-rover-service-dubai/steering-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/land-rover.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/range-rover-service-dubai/suspension-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/land-rover.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/range-rover-service-dubai/tire-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/land-rover.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/range-rover-service-dubai/transmission-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/land-rover.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/rolls-royce-service-dubai",
+      "image": "https://digitecme.com/brand-logos/showcase/rolls-royce.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/rolls-royce-service-dubai/ac-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/rolls-royce.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/rolls-royce-service-dubai/battery-replacement",
+      "image": "https://digitecme.com/brand-logos/showcase/rolls-royce.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/rolls-royce-service-dubai/body-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/rolls-royce.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/rolls-royce-service-dubai/brake-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/rolls-royce.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/rolls-royce-service-dubai/electrical-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/rolls-royce.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/rolls-royce-service-dubai/engine-diagnostics",
+      "image": "https://digitecme.com/brand-logos/showcase/rolls-royce.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/rolls-royce-service-dubai/exhaust-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/rolls-royce.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/rolls-royce-service-dubai/fuel-system-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/rolls-royce.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/rolls-royce-service-dubai/mechanical-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/rolls-royce.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/rolls-royce-service-dubai/oil-change",
+      "image": "https://digitecme.com/brand-logos/showcase/rolls-royce.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/rolls-royce-service-dubai/steering-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/rolls-royce.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/rolls-royce-service-dubai/suspension-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/rolls-royce.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/rolls-royce-service-dubai/tire-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/rolls-royce.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/rolls-royce-service-dubai/transmission-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/rolls-royce.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/rox-service-dubai",
+      "image": "https://digitecme.com/brand-logos/showcase/rox.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/rox-service-dubai/ac-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/rox.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/rox-service-dubai/battery-replacement",
+      "image": "https://digitecme.com/brand-logos/showcase/rox.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/rox-service-dubai/body-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/rox.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/rox-service-dubai/brake-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/rox.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/rox-service-dubai/electrical-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/rox.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/rox-service-dubai/engine-diagnostics",
+      "image": "https://digitecme.com/brand-logos/showcase/rox.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/rox-service-dubai/exhaust-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/rox.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/rox-service-dubai/fuel-system-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/rox.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/rox-service-dubai/mechanical-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/rox.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/rox-service-dubai/oil-change",
+      "image": "https://digitecme.com/brand-logos/showcase/rox.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/rox-service-dubai/soft-close-door-installation",
+      "image": "https://digitecme.com/brand-logos/showcase/rox.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/rox-service-dubai/steering-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/rox.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/rox-service-dubai/suspension-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/rox.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/rox-service-dubai/tire-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/rox.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/rox-service-dubai/transmission-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/rox.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/subaru-service-dubai",
+      "image": "https://digitecme.com/brand-logos/showcase/subaru.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/subaru-service-dubai/ac-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/subaru.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/subaru-service-dubai/brake-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/subaru.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/subaru-service-dubai/engine-diagnostics",
+      "image": "https://digitecme.com/brand-logos/showcase/subaru.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/subaru-service-dubai/oil-change",
+      "image": "https://digitecme.com/brand-logos/showcase/subaru.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/subaru-service-dubai/suspension-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/subaru.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/subaru-service-dubai/transmission-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/subaru.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/tesla-service-dubai",
+      "image": "https://digitecme.com/brand-logos/showcase/tesla.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/tesla-service-dubai/ac-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/tesla.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/tesla-service-dubai/battery-replacement",
+      "image": "https://digitecme.com/brand-logos/showcase/tesla.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/tesla-service-dubai/body-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/tesla.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/tesla-service-dubai/brake-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/tesla.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/tesla-service-dubai/electrical-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/tesla.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/tesla-service-dubai/mechanical-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/tesla.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/tesla-service-dubai/steering-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/tesla.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/tesla-service-dubai/suspension-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/tesla.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/tesla-service-dubai/tire-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/tesla.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/volkswagen-service-dubai",
+      "image": "https://digitecme.com/brand-logos/showcase/volkswagen.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/volkswagen-service-dubai/ac-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/volkswagen.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/volkswagen-service-dubai/battery-replacement",
+      "image": "https://digitecme.com/brand-logos/showcase/volkswagen.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/volkswagen-service-dubai/body-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/volkswagen.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/volkswagen-service-dubai/brake-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/volkswagen.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/volkswagen-service-dubai/electrical-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/volkswagen.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/volkswagen-service-dubai/engine-diagnostics",
+      "image": "https://digitecme.com/brand-logos/showcase/volkswagen.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/volkswagen-service-dubai/exhaust-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/volkswagen.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/volkswagen-service-dubai/fuel-system-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/volkswagen.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/volkswagen-service-dubai/mechanical-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/volkswagen.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/volkswagen-service-dubai/oil-change",
+      "image": "https://digitecme.com/brand-logos/showcase/volkswagen.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/volkswagen-service-dubai/steering-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/volkswagen.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/volkswagen-service-dubai/suspension-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/volkswagen.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/volkswagen-service-dubai/tire-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/volkswagen.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/volkswagen-service-dubai/transmission-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/volkswagen.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/volvo-service-dubai",
+      "image": "https://digitecme.com/brand-logos/showcase/volvo.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/volvo-service-dubai/ac-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/volvo.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/volvo-service-dubai/battery-replacement",
+      "image": "https://digitecme.com/brand-logos/showcase/volvo.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/volvo-service-dubai/body-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/volvo.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/volvo-service-dubai/brake-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/volvo.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/volvo-service-dubai/electrical-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/volvo.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/volvo-service-dubai/engine-diagnostics",
+      "image": "https://digitecme.com/brand-logos/showcase/volvo.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/volvo-service-dubai/exhaust-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/volvo.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/volvo-service-dubai/fuel-system-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/volvo.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/volvo-service-dubai/mechanical-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/volvo.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/volvo-service-dubai/oil-change",
+      "image": "https://digitecme.com/brand-logos/showcase/volvo.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/volvo-service-dubai/steering-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/volvo.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/volvo-service-dubai/suspension-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/volvo.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/volvo-service-dubai/tire-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/volvo.png",
+      "isArticle": false
+    },
+    {
+      "path": "/brands/volvo-service-dubai/transmission-repair",
+      "image": "https://digitecme.com/brand-logos/showcase/volvo.png",
+      "isArticle": false
+    },
+    {
+      "path": "/services/auto-electrical-repair-dubai",
+      "image": "https://digitecme.com/lovable-uploads/9f435c28-2f08-437b-99ad-2252d8ea2071.png",
+      "isArticle": false
+    },
+    {
+      "path": "/services/battery-replacement-dubai",
+      "image": "https://digitecme.com/lovable-uploads/c1c2c5d8-fd7e-4d38-945c-e52315b4229e.png",
+      "isArticle": false
+    },
+    {
+      "path": "/services/brake-repair-dubai",
+      "image": "https://digitecme.com/lovable-uploads/99d04ebd-5104-40f5-961d-f26cff7f2030.png",
+      "isArticle": false
+    },
+    {
+      "path": "/services/car-ac-repair-dubai",
+      "image": "https://digitecme.com/lovable-uploads/9db7fc3e-a988-4b9d-a7ab-a6494b58561e.png",
+      "isArticle": false
+    },
+    {
+      "path": "/services/car-body-repair-dubai",
+      "image": "https://digitecme.com/lovable-uploads/car-body-repair-v2.png",
+      "isArticle": false
+    },
+    {
+      "path": "/services/car-diagnostics-dubai",
+      "image": "https://digitecme.com/lovable-uploads/150c684d-11eb-476b-b768-afe7cad297cc.png",
+      "isArticle": false
+    },
+    {
+      "path": "/services/car-polishing-dubai",
+      "image": "https://digitecme.com/images/paint-correction/porsche-workshop-1200.webp",
+      "isArticle": false
+    },
+    {
+      "path": "/services/car-service-dubai",
+      "image": "https://digitecme.com/assets/routine-maintenance-optimized-BkcEIeXp.jpg",
+      "isArticle": false
+    },
+    {
+      "path": "/services/exhaust-repair-dubai",
+      "image": "https://digitecme.com/assets/exhaust-repair-dubai-D6tZkcc6.jpg",
+      "isArticle": false
+    },
+    {
+      "path": "/services/fuel-system-repair-dubai",
+      "image": "https://digitecme.com/lovable-uploads/678fdd1f-2841-4606-8533-51f82257a4a0.png",
+      "isArticle": false
+    },
+    {
+      "path": "/services/mechanical-repair-dubai",
+      "image": "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=800&h=600&fit=crop",
+      "isArticle": false
+    },
+    {
+      "path": "/services/mercedes-ac-repair-dubai",
+      "image": "https://digitecme.com/brand-logos/showcase/mercedes-benz.png",
+      "isArticle": false
+    },
+    {
+      "path": "/services/mercedes-battery-replacement-dubai",
+      "image": "https://digitecme.com/brand-logos/showcase/mercedes-benz.png",
+      "isArticle": false
+    },
+    {
+      "path": "/services/mercedes-body-repair-dubai",
+      "image": "https://digitecme.com/brand-logos/showcase/mercedes-benz.png",
+      "isArticle": false
+    },
+    {
+      "path": "/services/mercedes-brake-repair-dubai",
+      "image": "https://digitecme.com/brand-logos/showcase/mercedes-benz.png",
+      "isArticle": false
+    },
+    {
+      "path": "/services/mercedes-diagnostics-dubai",
+      "image": "https://digitecme.com/assets/mercedes-amg-engine-repair-dubai--M87Xe7H.jpg",
+      "isArticle": false
+    },
+    {
+      "path": "/services/mercedes-electrical-repair-dubai",
+      "image": "https://digitecme.com/brand-logos/showcase/mercedes-benz.png",
+      "isArticle": false
+    },
+    {
+      "path": "/services/mercedes-exhaust-repair-dubai",
+      "image": "https://digitecme.com/brand-logos/showcase/mercedes-benz.png",
+      "isArticle": false
+    },
+    {
+      "path": "/services/mercedes-fuel-system-repair-dubai",
+      "image": "https://digitecme.com/brand-logos/showcase/mercedes-benz.png",
+      "isArticle": false
+    },
+    {
+      "path": "/services/mercedes-mechanical-repair-dubai",
+      "image": "https://digitecme.com/brand-logos/showcase/mercedes-benz.png",
+      "isArticle": false
+    },
+    {
+      "path": "/services/mercedes-oil-change-dubai",
+      "image": "https://digitecme.com/brand-logos/showcase/mercedes-benz.png",
+      "isArticle": false
+    },
+    {
+      "path": "/services/mercedes-steering-repair-dubai",
+      "image": "https://digitecme.com/brand-logos/showcase/mercedes-benz.png",
+      "isArticle": false
+    },
+    {
+      "path": "/services/mercedes-suspension-repair-dubai",
+      "image": "https://digitecme.com/assets/suspension-repair-dubai-jBXugG2X.jpg",
+      "isArticle": false
+    },
+    {
+      "path": "/services/mercedes-tire-repair-dubai",
+      "image": "https://digitecme.com/brand-logos/showcase/mercedes-benz.png",
+      "isArticle": false
+    },
+    {
+      "path": "/services/mercedes-transmission-repair-dubai",
+      "image": "https://digitecme.com/brand-logos/showcase/mercedes-benz.png",
+      "isArticle": false
+    },
+    {
+      "path": "/services/paint-protection-dubai",
+      "image": "https://digitecme.com/lovable-uploads/f1cfe23e-d23b-4717-9f75-a07199716d98.png",
+      "isArticle": false
+    },
+    {
+      "path": "/services/soft-close-door-repair-dubai",
+      "image": "https://digitecme.com/assets/soft-close-door-repair-BTR5h1QP.jpg",
+      "isArticle": false
+    },
+    {
+      "path": "/services/steering-repair-dubai",
+      "image": "https://digitecme.com/lovable-uploads/b8278b01-7cf1-43fb-ae22-3f731c36cec5.png",
+      "isArticle": false
+    },
+    {
+      "path": "/services/suspension-repair-dubai",
+      "image": "https://digitecme.com/assets/suspension-repair-dubai-jBXugG2X.jpg",
+      "isArticle": false
+    },
+    {
+      "path": "/services/tire-repair-dubai",
+      "image": "https://digitecme.com/assets/tire-repair-DRcZ2QmZ.jpg",
+      "isArticle": false
+    },
+    {
+      "path": "/vrx",
+      "image": "https://digitecme.com/images/vrx-exterior.jpg",
+      "isArticle": false
+    }
+  ],
+  "articleTypeMismatch": [
+    "/ar/blog/best-car-workshop-dubai",
+    "/ar/blog/car-battery-replacement-dubai",
+    "/ar/blog/gad-tuning-explained",
+    "/ar/blog/why-ceramic-coating-matters-uae",
+    "/blog/best-car-workshop-dubai",
+    "/blog/car-battery-replacement-dubai",
+    "/blog/gad-tuning-explained",
+    "/blog/porsche-911-service-dubai-guide",
+    "/blog/porsche-cayenne-service-dubai-guide",
+    "/blog/porsche-panamera-service-dubai-guide",
+    "/blog/why-ceramic-coating-matters-uae",
+    "/porsche/guides/718-maintenance",
+    "/porsche/guides/ac-maintenance-dubai",
+    "/porsche/guides/battery-life-dubai",
+    "/porsche/guides/brake-wear-dubai",
+    "/porsche/guides/buying-used-porsche-dubai",
+    "/porsche/guides/common-problems-dubai",
+    "/porsche/guides/cooling-maintenance",
+    "/porsche/guides/dealer-vs-independent-specialist",
+    "/porsche/guides/dubai-heat",
+    "/porsche/guides/how-often-service-dubai",
+    "/porsche/guides/macan-maintenance",
+    "/porsche/guides/maintenance-cost-dubai",
+    "/porsche/guides/major-vs-minor-service",
+    "/porsche/guides/oil-change-intervals",
+    "/porsche/guides/pdk-service-intervals",
+    "/porsche/guides/pre-purchase-inspection-checklist",
+    "/porsche/guides/service-intervals-uae",
+    "/porsche/guides/taycan-maintenance",
+    "/porsche/guides/tyre-wear-dubai",
+    "/porsche/guides/warning-lights",
+    "/porsche/problems/911-cooling",
+    "/porsche/problems/ac-not-cooling",
+    "/porsche/problems/air-suspension-warning",
+    "/porsche/problems/battery-warning",
+    "/porsche/problems/brake-warning-light",
+    "/porsche/problems/cayenne-air-suspension",
+    "/porsche/problems/check-engine-light",
+    "/porsche/problems/coolant-leak",
+    "/porsche/problems/delayed-gear-engagement",
+    "/porsche/problems/engine-misfire",
+    "/porsche/problems/engine-overheating",
+    "/porsche/problems/excessive-oil-consumption",
+    "/porsche/problems/macan-transfer-case",
+    "/porsche/problems/oil-leak",
+    "/porsche/problems/pasm-fault",
+    "/porsche/problems/pdcc-fault",
+    "/porsche/problems/pdk-jerking",
+    "/porsche/problems/pdk-slipping",
+    "/porsche/problems/pdk-warning-message",
+    "/porsche/problems/steering-vibration",
+    "/porsche/problems/suspension-dropping-overnight",
+    "/porsche/problems/taycan-12v-battery",
+    "/porsche/problems/taycan-charging",
+    "/porsche/problems/wont-start",
+    "/porsche/systems/air-suspension",
+    "/porsche/systems/pasm",
+    "/porsche/systems/pccb",
+    "/porsche/systems/pdcc",
+    "/porsche/systems/pdk",
+    "/porsche/systems/ptm-awd",
+    "/porsche/systems/rear-axle-steering",
+    "/porsche/systems/sport-chrono",
+    "/porsche/systems/tiptronic"
+  ],
+  "articleDateOmissions": [
+    "/ar/blog/air-suspension-repair-dubai-guide",
+    "/ar/blog/aston-martin-best-workshop-dubai",
+    "/ar/blog/aston-martin-db11-service-dubai-guide",
+    "/ar/blog/audi-maintenance-guide-dubai",
+    "/ar/blog/audi-q7-service-dubai-guide",
+    "/ar/blog/audi-rs-service-dubai-guide",
+    "/ar/blog/bentley-best-workshop-dubai",
+    "/ar/blog/bentley-continental-gt-service-dubai-guide",
+    "/ar/blog/best-car-workshop-dubai",
+    "/ar/blog/best-defender-workshop-dubai",
+    "/ar/blog/best-oil-change-dubai-mercedes",
+    "/ar/blog/bmw-m-service-dubai-guide",
+    "/ar/blog/bmw-maintenance-guide-dubai",
+    "/ar/blog/bmw-x5-service-dubai-guide",
+    "/ar/blog/brake-repair-dubai",
+    "/ar/blog/cadillac-best-workshop-dubai",
+    "/ar/blog/car-ac-not-cold-dubai-causes",
+    "/ar/blog/car-ac-repair-dubai",
+    "/ar/blog/car-battery-life-dubai-heat",
+    "/ar/blog/car-battery-replacement-dubai",
+    "/ar/blog/car-service-cost-dubai-luxury-brands",
+    "/ar/blog/car-service-interval-dubai-heat",
+    "/ar/blog/ceramic-coating-vs-ppf-dubai",
+    "/ar/blog/check-engine-light-dubai-guide",
+    "/ar/blog/chevrolet-best-workshop-dubai",
+    "/ar/blog/dealer-vs-independent-workshop-dubai",
+    "/ar/blog/defender-service-dubai-guide",
+    "/ar/blog/ecu-remap-safe-dubai-guide",
+    "/ar/blog/engine-overheating-dubai-what-to-do",
+    "/ar/blog/ferrari-488-service-dubai-guide",
+    "/ar/blog/ferrari-maintenance-guide-dubai",
+    "/ar/blog/ford-best-workshop-dubai",
+    "/ar/blog/g63-to-brabus-g800-conversion-dubai",
+    "/ar/blog/gad-tuning-explained",
+    "/ar/blog/how-much-is-my-mercedes-worth-dubai",
+    "/ar/blog/jaguar-best-workshop-dubai",
+    "/ar/blog/lamborghini-maintenance-guide-dubai",
+    "/ar/blog/lamborghini-urus-service-dubai-guide",
+    "/ar/blog/land-rover-best-workshop-dubai",
+    "/ar/blog/maserati-best-workshop-dubai",
+    "/ar/blog/maybach-best-workshop-dubai",
+    "/ar/blog/maybach-s580-service-dubai-guide",
+    "/ar/blog/mclaren-720s-service-dubai-guide",
+    "/ar/blog/mclaren-best-workshop-dubai",
+    "/ar/blog/mercedes-amg-gt-black-series-1300hp-build-dubai",
+    "/ar/blog/mercedes-amg-gt-tuning-dubai",
+    "/ar/blog/mercedes-benz-maintenance-guide-dubai",
+    "/ar/blog/mercedes-c-class-service-dubai-guide",
+    "/ar/blog/mercedes-e-class-service-dubai-guide",
+    "/ar/blog/mercedes-g63-service-dubai-guide",
+    "/ar/blog/mercedes-repair-dubai-complete-guide",
+    "/ar/blog/mercedes-s-class-service-dubai-guide",
+    "/ar/blog/mercedes-service-cost-dubai-guide",
+    "/ar/blog/mercedes-service-intervals-dubai-heat",
+    "/ar/blog/mini-best-workshop-dubai",
+    "/ar/blog/oil-specification-guide-dubai-luxury",
+    "/ar/blog/porsche-911-service-dubai-guide",
+    "/ar/blog/porsche-cayenne-service-dubai-guide",
+    "/ar/blog/porsche-maintenance-guide-dubai",
+    "/ar/blog/porsche-panamera-service-dubai-guide",
+    "/ar/blog/pre-purchase-inspection-dubai-guide",
+    "/ar/blog/range-rover-land-rover-air-suspension-problems-dubai",
+    "/ar/blog/range-rover-maintenance-guide-dubai",
+    "/ar/blog/range-rover-sport-service-dubai-guide",
+    "/ar/blog/range-rover-vogue-service-dubai-guide",
+    "/ar/blog/rolls-royce-best-workshop-dubai",
+    "/ar/blog/rolls-royce-ghost-service-dubai-guide",
+    "/ar/blog/summer-car-preparation-dubai-checklist",
+    "/ar/blog/transmission-service-7g-9g-dubai",
+    "/ar/blog/volkswagen-best-workshop-dubai",
+    "/ar/blog/why-ceramic-coating-matters-uae",
+    "/blog/air-suspension-repair-dubai-guide",
+    "/blog/aston-martin-best-workshop-dubai",
+    "/blog/aston-martin-db11-service-dubai-guide",
+    "/blog/audi-maintenance-guide-dubai",
+    "/blog/audi-q7-service-dubai-guide",
+    "/blog/audi-rs-service-dubai-guide",
+    "/blog/bentley-best-workshop-dubai",
+    "/blog/bentley-continental-gt-service-dubai-guide",
+    "/blog/best-car-workshop-dubai",
+    "/blog/best-defender-workshop-dubai",
+    "/blog/best-oil-change-dubai-mercedes",
+    "/blog/bmw-m-service-dubai-guide",
+    "/blog/bmw-maintenance-guide-dubai",
+    "/blog/bmw-x5-service-dubai-guide",
+    "/blog/brake-repair-dubai",
+    "/blog/cadillac-best-workshop-dubai",
+    "/blog/car-ac-not-cold-dubai-causes",
+    "/blog/car-ac-repair-dubai",
+    "/blog/car-battery-life-dubai-heat",
+    "/blog/car-battery-replacement-dubai",
+    "/blog/car-service-cost-dubai-luxury-brands",
+    "/blog/car-service-interval-dubai-heat",
+    "/blog/ceramic-coating-vs-ppf-dubai",
+    "/blog/check-engine-light-dubai-guide",
+    "/blog/chevrolet-best-workshop-dubai",
+    "/blog/dealer-vs-independent-workshop-dubai",
+    "/blog/defender-service-dubai-guide",
+    "/blog/ecu-remap-safe-dubai-guide",
+    "/blog/engine-overheating-dubai-what-to-do",
+    "/blog/ferrari-488-service-dubai-guide",
+    "/blog/ferrari-maintenance-guide-dubai",
+    "/blog/ford-best-workshop-dubai",
+    "/blog/g63-to-brabus-g800-conversion-dubai",
+    "/blog/gad-tuning-explained",
+    "/blog/how-much-is-my-mercedes-worth-dubai",
+    "/blog/jaguar-best-workshop-dubai",
+    "/blog/lamborghini-maintenance-guide-dubai",
+    "/blog/lamborghini-urus-service-dubai-guide",
+    "/blog/land-rover-best-workshop-dubai",
+    "/blog/maserati-best-workshop-dubai",
+    "/blog/maybach-best-workshop-dubai",
+    "/blog/maybach-s580-service-dubai-guide",
+    "/blog/mclaren-720s-service-dubai-guide",
+    "/blog/mclaren-best-workshop-dubai",
+    "/blog/mercedes-amg-gt-black-series-1300hp-build-dubai",
+    "/blog/mercedes-amg-gt-tuning-dubai",
+    "/blog/mercedes-benz-maintenance-guide-dubai",
+    "/blog/mercedes-repair-dubai-complete-guide",
+    "/blog/mercedes-service-cost-dubai-guide",
+    "/blog/mercedes-service-intervals-dubai-heat",
+    "/blog/mini-best-workshop-dubai",
+    "/blog/oil-specification-guide-dubai-luxury",
+    "/blog/porsche-911-service-dubai-guide",
+    "/blog/porsche-cayenne-service-dubai-guide",
+    "/blog/porsche-maintenance-guide-dubai",
+    "/blog/porsche-panamera-service-dubai-guide",
+    "/blog/pre-purchase-inspection-dubai-guide",
+    "/blog/range-rover-land-rover-air-suspension-problems-dubai",
+    "/blog/range-rover-maintenance-guide-dubai",
+    "/blog/range-rover-sport-service-dubai-guide",
+    "/blog/range-rover-vogue-service-dubai-guide",
+    "/blog/rolls-royce-best-workshop-dubai",
+    "/blog/rolls-royce-ghost-service-dubai-guide",
+    "/blog/summer-car-preparation-dubai-checklist",
+    "/blog/transmission-service-7g-9g-dubai",
+    "/blog/volkswagen-best-workshop-dubai",
+    "/blog/why-ceramic-coating-matters-uae",
+    "/mercedes/problems/ac-not-cooling",
+    "/mercedes/problems/airmatic-malfunction",
+    "/mercedes/problems/battery-warning",
+    "/mercedes/problems/check-engine-light",
+    "/mercedes/problems/engine-overheating",
+    "/mercedes/problems/gearbox-jerking",
+    "/mercedes/problems/oil-leak",
+    "/mercedes/problems/suspension-dropping-overnight",
+    "/mercedes/problems/transmission-slipping",
+    "/mercedes/problems/wont-start",
+    "/porsche/guides/718-maintenance",
+    "/porsche/guides/ac-maintenance-dubai",
+    "/porsche/guides/battery-life-dubai",
+    "/porsche/guides/brake-wear-dubai",
+    "/porsche/guides/buying-used-porsche-dubai",
+    "/porsche/guides/common-problems-dubai",
+    "/porsche/guides/cooling-maintenance",
+    "/porsche/guides/dealer-vs-independent-specialist",
+    "/porsche/guides/dubai-heat",
+    "/porsche/guides/how-often-service-dubai",
+    "/porsche/guides/macan-maintenance",
+    "/porsche/guides/maintenance-cost-dubai",
+    "/porsche/guides/major-vs-minor-service",
+    "/porsche/guides/oil-change-intervals",
+    "/porsche/guides/pdk-service-intervals",
+    "/porsche/guides/pre-purchase-inspection-checklist",
+    "/porsche/guides/service-intervals-uae",
+    "/porsche/guides/taycan-maintenance",
+    "/porsche/guides/tyre-wear-dubai",
+    "/porsche/guides/warning-lights",
+    "/porsche/problems/911-cooling",
+    "/porsche/problems/ac-not-cooling",
+    "/porsche/problems/air-suspension-warning",
+    "/porsche/problems/battery-warning",
+    "/porsche/problems/brake-warning-light",
+    "/porsche/problems/cayenne-air-suspension",
+    "/porsche/problems/check-engine-light",
+    "/porsche/problems/coolant-leak",
+    "/porsche/problems/delayed-gear-engagement",
+    "/porsche/problems/engine-misfire",
+    "/porsche/problems/engine-overheating",
+    "/porsche/problems/excessive-oil-consumption",
+    "/porsche/problems/macan-transfer-case",
+    "/porsche/problems/oil-leak",
+    "/porsche/problems/pasm-fault",
+    "/porsche/problems/pdcc-fault",
+    "/porsche/problems/pdk-jerking",
+    "/porsche/problems/pdk-slipping",
+    "/porsche/problems/pdk-warning-message",
+    "/porsche/problems/steering-vibration",
+    "/porsche/problems/suspension-dropping-overnight",
+    "/porsche/problems/taycan-12v-battery",
+    "/porsche/problems/taycan-charging",
+    "/porsche/problems/wont-start",
+    "/porsche/systems/air-suspension",
+    "/porsche/systems/pasm",
+    "/porsche/systems/pccb",
+    "/porsche/systems/pdcc",
+    "/porsche/systems/pdk",
+    "/porsche/systems/ptm-awd",
+    "/porsche/systems/rear-axle-steering",
+    "/porsche/systems/sport-chrono",
+    "/porsche/systems/tiptronic"
+  ],
+  "ineligibleHreflangTargets": [],
+  "robotMismatch": [],
+  "counts": {
+    "relativeSocialImages": 44,
+    "genericImagesWithPageImage": 969,
+    "articleTypeMismatch": 64,
+    "articleDateOmissions": 201,
+    "ineligibleHreflangTargets": 0,
+    "robotMismatch": 0
+  }
+}

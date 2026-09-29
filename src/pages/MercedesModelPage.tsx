@@ -12,13 +12,12 @@ import {
 import {
   MERCEDES_HUB_PATH,
   getMercedesModelByPath,
-  mercedesModelPages,
   MERCEDES_SERVICE_LINKS,
   type MercedesModelSection,
 } from '@/data/mercedesModelPages';
 import { useSeo } from '@/hooks/use-seo';
 import { stripLocalePrefix } from '@/i18n/use-locale';
-import { buildBreadcrumb, buildService, buildWebPage, pageGraph, SITE_URL } from '@/lib/schema';
+import { buildBreadcrumb, buildFAQ, buildService, buildWebPage, pageGraph, SITE_URL } from '@/lib/schema';
 
 const workshopImage = '/images/mercedes-repair-dubai-hero.jpg';
 
@@ -56,7 +55,7 @@ const MercedesModelPage = () => {
           breadcrumbId,
           primaryImage: workshopImage,
           mainEntityId: serviceId,
-          dateModified: '2026-09-08',
+          dateModified: model.dateModified,
         }),
         buildBreadcrumb(canonical, [
           { name: 'Home', url: `${SITE_URL}/` },
@@ -73,6 +72,7 @@ const MercedesModelPage = () => {
           offers: model.services.map((item) => item.label),
           areaServed: ['Dubai'],
         }),
+        buildFAQ(canonical, model.faqs),
       ])
     : undefined;
 
@@ -89,13 +89,7 @@ const MercedesModelPage = () => {
 
   if (!model) return <Navigate to={MERCEDES_HUB_PATH} replace />;
 
-  const otherModels = mercedesModelPages
-    .filter((item) => item.path !== model.path)
-    .filter((item) => {
-      const isAmg = model.name.includes('AMG');
-      return item.name.includes('AMG') === isAmg;
-    })
-    .slice(0, 3);
+  const otherModels = model.relatedModels.filter((item) => item.path !== model.path);
 
   const whatsappText = encodeURIComponent(
     `Hi, I'd like to arrange a ${model.name} inspection at Digi-Tec. My model year is ____ and the concern is ____.`,
@@ -168,6 +162,7 @@ const MercedesModelPage = () => {
                 <p className="eyebrow mb-4">Platforms covered</p>
                 <h2 className="text-2xl font-black sm:text-4xl">Which {model.shortName} vehicles this page covers</h2>
                 <p className="mt-4 text-sm leading-relaxed text-white/55">Badges can span several engine and chassis generations. Final compatibility is checked from the VIN and fitted systems.</p>
+                <p className="mt-4 text-sm leading-relaxed text-white/65">{model.scopeNote}</p>
               </div>
               <ul className="grid gap-4">
                 {model.coverage.map((item) => (
@@ -183,13 +178,20 @@ const MercedesModelPage = () => {
 
         <section className="bg-gradient-to-b from-charcoal/20 to-black py-14 sm:py-20">
           <div className="mx-auto max-w-7xl px-4 sm:px-6">
-            {['Mercedes S-Class', 'Mercedes-AMG S63', 'Mercedes GLS'].includes(model.name) && <p className="mb-8 text-sm leading-7 text-white/65">For Maybach-specific equipment, see the <Link to="/brands/maybach-service-dubai" className="text-burnt-orange hover:underline">Maybach service and repair hub</Link>. Compare <Link to="/blog/mercedes-s-class-service-dubai-guide" className="text-burnt-orange hover:underline">S-Class and S65 assessment</Link> with <Link to="/mercedes/models/s63-service-repair-dubai" className="text-burnt-orange hover:underline">S63 AMG service scope</Link> for the fitted powertrain.</p>}
-            {model.name === 'Mercedes G-Class' && <p className="mb-8 text-sm leading-7 text-white/65">For the AMG powertrain and model-specific equipment, use the <Link to="/blog/mercedes-g63-service-dubai-guide" className="text-burnt-orange hover:underline">Mercedes-AMG G63 service guide</Link>.</p>}
             <div className="mx-auto mb-10 max-w-3xl text-center">
               <p className="eyebrow mb-4">Model-specific systems</p>
               <h2 className="text-2xl font-black sm:text-4xl">What changes the service and repair plan</h2>
             </div>
-            <div className="grid gap-5 lg:grid-cols-2">
+            <div className="mt-6 grid gap-5 md:grid-cols-2">
+              {[model.planning, ...(model.infotainment ? [model.infotainment] : [])].map((item) => (
+                <section key={item.path} className="rounded-2xl border border-white/10 p-5 sm:p-7">
+                  <h3 className="text-lg font-bold">{item.label}</h3>
+                  <p className="mt-3 text-sm leading-relaxed text-white/65">{item.description}</p>
+                  <Link to={item.path} className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-burnt-orange hover:underline">View details <ArrowRight className="h-4 w-4" /></Link>
+                </section>
+              ))}
+            </div>
+            <div className="mt-6 grid gap-5 lg:grid-cols-2">
               {[
                 { section: model.maintenance, path: MERCEDES_SERVICE_LINKS.maintenance, label: 'Mercedes scheduled service and booking' },
                 { section: model.powertrain, path: MERCEDES_SERVICE_LINKS.mechanical, label: 'Mercedes engine repair assessment' },
@@ -208,8 +210,8 @@ const MercedesModelPage = () => {
           <div className="mx-auto max-w-7xl px-4 sm:px-6">
             <div className="mb-10 max-w-3xl">
               <p className="eyebrow mb-4">Start with the symptom</p>
-              <h2 className="text-2xl font-black sm:text-4xl">Common {model.shortName} concerns owners describe</h2>
-              <p className="mt-4 text-white/60">These guides explain what the symptom can mean and when to stop driving. They are informational; the commercial repair page is linked separately after diagnosis.</p>
+              <h2 className="text-2xl font-black sm:text-4xl">{model.shortName} symptoms to describe before an inspection</h2>
+              <p className="mt-4 text-white/60">These guides explain possible causes, useful observations and when to stop driving. You can book an inspection with the symptom alone; the workshop confirms the cause before recommending repairs.</p>
             </div>
             <div className="grid gap-5 md:grid-cols-2">
               {model.symptoms.map((symptom) => (
@@ -229,7 +231,7 @@ const MercedesModelPage = () => {
           <div className="mx-auto max-w-7xl px-4 sm:px-6">
             <div className="mb-10 max-w-3xl">
               <p className="eyebrow mb-4">Relevant Digi-Tec services</p>
-              <h2 className="text-2xl font-black sm:text-4xl">Commercial service pages for the diagnosed need</h2>
+              <h2 className="text-2xl font-black sm:text-4xl">Service and repair options for your {model.shortName}</h2>
             </div>
             <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-4">
               {model.services.map((item) => (
@@ -272,7 +274,7 @@ const MercedesModelPage = () => {
               {model.faqs.map((faq, index) => (
                 <AccordionItem key={faq.question} value={`faq-${index}`} className="rounded-xl border border-white/10 bg-white/[0.025] px-5">
                   <AccordionTrigger className="text-left font-bold hover:text-burnt-orange">{faq.question}</AccordionTrigger>
-                  <AccordionContent className="text-sm leading-relaxed text-white/65">{faq.answer}</AccordionContent>
+                  <AccordionContent forceMount className="text-sm leading-relaxed text-white/65">{faq.answer}</AccordionContent>
                 </AccordionItem>
               ))}
             </Accordion>
@@ -293,13 +295,14 @@ const MercedesModelPage = () => {
 
         <section className="py-12 sm:py-16">
           <div className="mx-auto max-w-7xl px-4 sm:px-6">
-            <h2 className="text-xl font-black sm:text-2xl">Related Mercedes model pages</h2>
-            <ul className="mt-5 flex flex-wrap gap-3">
+            <h2 className="text-xl font-black sm:text-2xl">Compare the right Mercedes model and equipment</h2>
+            <ul className="mt-5 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
               {otherModels.map((item) => (
                 <li key={item.path}>
-                  <Link to={item.path} className="inline-flex items-center gap-1 rounded-full border border-white/10 bg-white/[0.03] px-4 py-2 text-sm text-white/65 hover:border-burnt-orange/40 hover:text-burnt-orange">
-                    {item.shortName} <ArrowRight className="h-3.5 w-3.5" />
+                  <Link to={item.path} className="font-semibold text-burnt-orange hover:underline">
+                    {item.label}
                   </Link>
+                  <p className="mt-2 text-sm leading-relaxed text-white/60">{item.description}</p>
                 </li>
               ))}
             </ul>

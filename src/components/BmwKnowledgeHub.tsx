@@ -31,9 +31,27 @@ const BmwKnowledgeHub = () => (
         <div className="mt-8 grid gap-5 lg:grid-cols-3">
           <article className="rounded-2xl border border-white/10 p-6"><h3 className="text-xl font-bold">Engine code and fitted components</h3><p className="mt-3 text-base leading-relaxed text-gray-300">B48, B58, N20, N54, N55, N63, S55, S58 and S63 engines have different maintenance and diagnostic requirements. The VIN and engine code guide checks of cooling, oil leaks, charge pipes, oil separators or VANOS when symptoms and history warrant them.</p></article>
           <article className="rounded-2xl border border-white/10 p-6"><h3 className="text-xl font-bold">ZF 8HP, M-DCT and chassis systems</h3><p className="mt-3 text-base leading-relaxed text-gray-300">The fitted gearbox determines the fluid, filter and service procedure. ZF 8HP variants, M-DCT and manual gearboxes need different checks. Suspension inspection also distinguishes steel springs, Adaptive M dampers, rear self-levelling and two-axle air systems.</p></article>
-          <article className="rounded-2xl border border-white/10 p-6"><h3 className="text-xl font-bold">ISTA-compatible testing and coding</h3><p className="mt-3 text-base leading-relaxed text-gray-300">Fault review and live data are combined with physical tests. ISTA, E-Sys, ENET, service resets, battery registration and iDrive functions are confirmed for the exact vehicle and required access. CarPlay, Live Cockpit or other retrofit enquiries also need hardware and software compatibility checks.</p></article>
+          <article className="rounded-2xl border border-white/10 p-6"><h3 className="text-xl font-bold">ISTA+ testing and supported functions</h3><p className="mt-3 text-base leading-relaxed text-gray-300">ISTA+ fault review and live data are combined with physical tests. Service functions, battery registration, coding and programming are separate tasks; each depends on the exact vehicle, control unit and required access. An iDrive or retrofit enquiry needs hardware and software compatibility checks before work is accepted.</p></article>
         </div>
         <div className="mt-8 rounded-2xl border border-white/10 bg-blue-950/10 p-6 sm:p-8"><h3 className="text-xl font-bold">BMW maintenance for Dubai heat and traffic</h3><p className="mt-3 max-w-4xl text-base leading-relaxed text-gray-300">Heat, stop-start driving and dust add load to cooling, batteries, air conditioning and filters. Share how the car is used alongside its service history. Cooling performance, leaks, battery health, brake wear and AC output can then be considered in the inspection, with the service plan matched to your BMW.</p><Link to={bmwServicePath('oil-change')} className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-burnt-orange hover:underline">Oil specification and maintenance checks <ArrowRight className="h-4 w-4" /></Link></div>
+      </div>
+    </section>
+
+    <section className="border-t border-white/5 py-14 sm:py-20" aria-labelledby="bmw-warning-paths">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6">
+        <h2 id="bmw-warning-paths" className="text-2xl font-black sm:text-4xl">Find the right first check for a BMW warning or symptom</h2>
+        <p className="mt-4 max-w-3xl text-base leading-relaxed text-gray-300">A message or symptom does not identify a failed part. Tell the workshop when it occurs, what the display says and whether the car can be driven safely.</p>
+        <div className="mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+          {[
+            { title: 'Drivetrain malfunction or engine warning', path: bmwServicePath('engine-diagnostics'), detail: 'Start with ISTA+ supported fault data and physical checks before choosing a repair.' },
+            { title: 'Rough shift or gearbox warning', path: bmwServicePath('transmission-repair'), detail: 'Identify the fitted transmission and separate gearbox, engine and driveline causes.' },
+            { title: 'Overheating or coolant loss', path: bmwServicePath('mechanical-repair'), detail: 'Stop safely for an overheating instruction; trace the cooling fault before replacing parts.' },
+            { title: 'Low ride height or chassis warning', path: bmwServicePath('suspension-repair'), detail: 'Check the fitted suspension, electrical controls and physical condition.' },
+            { title: 'iDrive screen or camera fault', path: bmwServicePath('electrical-repair'), detail: 'Assess voltage, wiring, display and module communication before a head-unit decision.' },
+            { title: 'Repeated battery warning', path: bmwServicePath('battery-replacement'), detail: 'Test the 12V battery, charging and possible drain before replacement or registration.' },
+          ].map((item) => <article key={item.title} className="rounded-2xl border border-white/10 p-6"><h3 className="text-lg font-bold">{item.title}</h3><p className="mt-3 text-sm leading-relaxed text-gray-300">{item.detail}</p><Link to={item.path} className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-burnt-orange hover:underline">View the relevant service <ArrowRight className="h-4 w-4" /></Link></article>)}
+        </div>
+        <p className="mt-8 text-sm leading-relaxed text-gray-300">Planning routine work instead? Read the <Link to="/blog/bmw-maintenance-guide-dubai" className="font-semibold text-burnt-orange hover:underline">BMW maintenance guide</Link> or the <Link to="/blog/bmw-m-service-dubai-guide" className="font-semibold text-burnt-orange hover:underline">BMW M guide</Link>. Model-specific service paths appear above.</p>
       </div>
     </section>
   </>

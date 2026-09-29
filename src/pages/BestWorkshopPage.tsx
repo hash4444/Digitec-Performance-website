@@ -78,7 +78,19 @@ const BestWorkshopPage: React.FC = () => {
 
   const otherPages = bestWorkshopPages
     .filter((p) => p.slug !== page.slug)
-    .map((item) => (isArabic ? localizeBestWorkshopPageToArabic(item) : item));
+    .map((item) => {
+      const related = isArabic ? localizeBestWorkshopPageToArabic(item) : item;
+      // Preserve cross-brand navigation copy while the BMW page itself takes a
+      // clearer workshop-selection role in B3.
+      return item.slug === 'best-bmw-workshop-dubai'
+        ? { ...related, h1: isArabic ? 'ورشة خدمة وإصلاح BMW في دبي' : 'BMW Service & Repair Workshop in Dubai' }
+        : item.slug === 'best-range-rover-workshop-dubai'
+          ? { ...related, h1: isArabic ? related.h1 : 'Range Rover Service & Repair Workshop in Dubai' }
+        : !['best-ferrari-workshop-dubai', 'best-lamborghini-workshop-dubai'].includes(page.slug) &&
+          ['best-ferrari-workshop-dubai', 'best-lamborghini-workshop-dubai'].includes(item.slug)
+          ? { ...related, h1: isArabic ? `ورشة خدمة وإصلاح ${item.brandKeyword ?? item.brand} في دبي` : related.h1 }
+        : related;
+    });
 
   return (
     <div className="site-page min-h-screen bg-black text-off-white">
@@ -216,7 +228,7 @@ const BestWorkshopPage: React.FC = () => {
                 <AccordionTrigger className={`${isArabic ? 'text-right' : 'text-left'} text-off-white font-semibold text-base sm:text-lg hover:no-underline py-5`}>
                   {f.q}
                 </AccordionTrigger>
-                <AccordionContent className="text-gray-300 text-sm sm:text-base leading-relaxed pb-5">
+                <AccordionContent forceMount={['best-porsche-workshop-dubai', 'best-bmw-workshop-dubai', 'best-ferrari-workshop-dubai', 'best-lamborghini-workshop-dubai', 'best-range-rover-workshop-dubai'].includes(slug) ? true : undefined} className="text-gray-300 text-sm sm:text-base leading-relaxed pb-5">
                   {f.a}
                 </AccordionContent>
               </AccordionItem>

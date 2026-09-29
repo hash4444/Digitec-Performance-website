@@ -1,0 +1,449 @@
+{
+  "checkedAt": "2026-09-17T09:34:03.666Z",
+  "method": "Read-only TypeScript AST inventory of the 51 BlogPost slugs and adaptation-map keys; connected means module imported by ar-blog.ts. Final rendered-body coverage requires checking the final build.",
+  "totalBlogPostSlugs": 51,
+  "prepared": 51,
+  "connected": 51,
+  "unprepared": [],
+  "notConnected": [],
+  "modules": [
+    {
+      "file": "src/i18n/ar-general-blog-content.ts",
+      "articleCount": 16,
+      "connectedInResolver": true,
+      "slugs": [
+        "dealer-vs-independent-workshop-dubai",
+        "car-service-cost-dubai-luxury-brands",
+        "mercedes-service-cost-dubai-guide",
+        "mercedes-amg-gt-tuning-dubai",
+        "car-ac-not-cold-dubai-causes",
+        "engine-overheating-dubai-what-to-do",
+        "check-engine-light-dubai-guide",
+        "car-battery-life-dubai-heat",
+        "transmission-service-7g-9g-dubai",
+        "air-suspension-repair-dubai-guide",
+        "ecu-remap-safe-dubai-guide",
+        "pre-purchase-inspection-dubai-guide",
+        "car-service-interval-dubai-heat",
+        "ceramic-coating-vs-ppf-dubai",
+        "oil-specification-guide-dubai-luxury",
+        "summer-car-preparation-dubai-checklist"
+      ]
+    },
+    {
+      "file": "src/i18n/ar-model-blog-content.ts",
+      "articleCount": 22,
+      "connectedInResolver": true,
+      "slugs": [
+        "mercedes-g63-service-dubai-guide",
+        "range-rover-sport-service-dubai-guide",
+        "porsche-911-service-dubai-guide",
+        "bmw-m-service-dubai-guide",
+        "audi-rs-service-dubai-guide",
+        "porsche-cayenne-service-dubai-guide",
+        "mercedes-s-class-service-dubai-guide",
+        "mercedes-c-class-service-dubai-guide",
+        "mercedes-e-class-service-dubai-guide",
+        "bmw-x5-service-dubai-guide",
+        "range-rover-vogue-service-dubai-guide",
+        "defender-service-dubai-guide",
+        "ferrari-488-service-dubai-guide",
+        "lamborghini-urus-service-dubai-guide",
+        "bentley-continental-gt-service-dubai-guide",
+        "rolls-royce-ghost-service-dubai-guide",
+        "mclaren-720s-service-dubai-guide",
+        "aston-martin-db11-service-dubai-guide",
+        "maybach-s580-service-dubai-guide",
+        "porsche-panamera-service-dubai-guide",
+        "audi-q7-service-dubai-guide",
+        "g63-to-brabus-g800-conversion-dubai"
+      ]
+    },
+    {
+      "file": "src/i18n/ar-service-blog-content.ts",
+      "articleCount": 7,
+      "connectedInResolver": true,
+      "slugs": [
+        "best-oil-change-dubai-mercedes",
+        "car-ac-repair-dubai",
+        "brake-repair-dubai",
+        "car-battery-replacement-dubai",
+        "mercedes-service-intervals-dubai-heat",
+        "why-ceramic-coating-matters-uae",
+        "range-rover-land-rover-air-suspension-problems-dubai"
+      ]
+    },
+    {
+      "file": "src/i18n/ar-specialist-blog-content.ts",
+      "articleCount": 6,
+      "connectedInResolver": true,
+      "slugs": [
+        "best-defender-workshop-dubai",
+        "mercedes-amg-gt-black-series-1300hp-build-dubai",
+        "how-much-is-my-mercedes-worth-dubai",
+        "gad-tuning-explained",
+        "best-car-workshop-dubai",
+        "mercedes-repair-dubai-complete-guide"
+      ]
+    }
+  ],
+  "rows": [
+    {
+      "slug": "how-much-is-my-mercedes-worth-dubai",
+      "prepared": true,
+      "resolverModuleConnected": true,
+      "canonicalArabic": true,
+      "candidateBodyChanged": true
+    },
+    {
+      "slug": "best-oil-change-dubai-mercedes",
+      "prepared": true,
+      "resolverModuleConnected": true,
+      "canonicalArabic": true,
+      "candidateBodyChanged": true
+    },
+    {
+      "slug": "car-ac-repair-dubai",
+      "prepared": true,
+      "resolverModuleConnected": true,
+      "canonicalArabic": true,
+      "candidateBodyChanged": true
+    },
+    {
+      "slug": "brake-repair-dubai",
+      "prepared": true,
+      "resolverModuleConnected": true,
+      "canonicalArabic": true,
+      "candidateBodyChanged": true
+    },
+    {
+      "slug": "car-battery-replacement-dubai",
+      "prepared": true,
+      "resolverModuleConnected": true,
+      "canonicalArabic": true,
+      "candidateBodyChanged": true
+    },
+    {
+      "slug": "best-car-workshop-dubai",
+      "prepared": true,
+      "resolverModuleConnected": true,
+      "canonicalArabic": true,
+      "candidateBodyChanged": true
+    },
+    {
+      "slug": "mercedes-service-intervals-dubai-heat",
+      "prepared": true,
+      "resolverModuleConnected": true,
+      "canonicalArabic": true,
+      "candidateBodyChanged": false
+    },
+    {
+      "slug": "gad-tuning-explained",
+      "prepared": true,
+      "resolverModuleConnected": true,
+      "canonicalArabic": true,
+      "candidateBodyChanged": true
+    },
+    {
+      "slug": "why-ceramic-coating-matters-uae",
+      "prepared": true,
+      "resolverModuleConnected": true,
+      "canonicalArabic": true,
+      "candidateBodyChanged": true
+    },
+    {
+      "slug": "mercedes-repair-dubai-complete-guide",
+      "prepared": true,
+      "resolverModuleConnected": true,
+      "canonicalArabic": true,
+      "candidateBodyChanged": false
+    },
+    {
+      "slug": "range-rover-land-rover-air-suspension-problems-dubai",
+      "prepared": true,
+      "resolverModuleConnected": true,
+      "canonicalArabic": true,
+      "candidateBodyChanged": true
+    },
+    {
+      "slug": "best-defender-workshop-dubai",
+      "prepared": true,
+      "resolverModuleConnected": true,
+      "canonicalArabic": true,
+      "candidateBodyChanged": true
+    },
+    {
+      "slug": "mercedes-amg-gt-black-series-1300hp-build-dubai",
+      "prepared": true,
+      "resolverModuleConnected": true,
+      "canonicalArabic": true,
+      "candidateBodyChanged": true
+    },
+    {
+      "slug": "g63-to-brabus-g800-conversion-dubai",
+      "prepared": true,
+      "resolverModuleConnected": true,
+      "canonicalArabic": true,
+      "candidateBodyChanged": true
+    },
+    {
+      "slug": "dealer-vs-independent-workshop-dubai",
+      "prepared": true,
+      "resolverModuleConnected": true,
+      "canonicalArabic": true,
+      "candidateBodyChanged": true
+    },
+    {
+      "slug": "car-service-cost-dubai-luxury-brands",
+      "prepared": true,
+      "resolverModuleConnected": true,
+      "canonicalArabic": true,
+      "candidateBodyChanged": true
+    },
+    {
+      "slug": "mercedes-service-cost-dubai-guide",
+      "prepared": true,
+      "resolverModuleConnected": true,
+      "canonicalArabic": true,
+      "candidateBodyChanged": true
+    },
+    {
+      "slug": "mercedes-amg-gt-tuning-dubai",
+      "prepared": true,
+      "resolverModuleConnected": true,
+      "canonicalArabic": true,
+      "candidateBodyChanged": true
+    },
+    {
+      "slug": "mercedes-g63-service-dubai-guide",
+      "prepared": true,
+      "resolverModuleConnected": true,
+      "canonicalArabic": false,
+      "candidateBodyChanged": true
+    },
+    {
+      "slug": "range-rover-sport-service-dubai-guide",
+      "prepared": true,
+      "resolverModuleConnected": true,
+      "canonicalArabic": true,
+      "candidateBodyChanged": true
+    },
+    {
+      "slug": "porsche-911-service-dubai-guide",
+      "prepared": true,
+      "resolverModuleConnected": true,
+      "canonicalArabic": true,
+      "candidateBodyChanged": true
+    },
+    {
+      "slug": "bmw-m-service-dubai-guide",
+      "prepared": true,
+      "resolverModuleConnected": true,
+      "canonicalArabic": true,
+      "candidateBodyChanged": true
+    },
+    {
+      "slug": "audi-rs-service-dubai-guide",
+      "prepared": true,
+      "resolverModuleConnected": true,
+      "canonicalArabic": true,
+      "candidateBodyChanged": true
+    },
+    {
+      "slug": "porsche-cayenne-service-dubai-guide",
+      "prepared": true,
+      "resolverModuleConnected": true,
+      "canonicalArabic": true,
+      "candidateBodyChanged": true
+    },
+    {
+      "slug": "mercedes-s-class-service-dubai-guide",
+      "prepared": true,
+      "resolverModuleConnected": true,
+      "canonicalArabic": false,
+      "candidateBodyChanged": true
+    },
+    {
+      "slug": "mercedes-c-class-service-dubai-guide",
+      "prepared": true,
+      "resolverModuleConnected": true,
+      "canonicalArabic": false,
+      "candidateBodyChanged": true
+    },
+    {
+      "slug": "mercedes-e-class-service-dubai-guide",
+      "prepared": true,
+      "resolverModuleConnected": true,
+      "canonicalArabic": false,
+      "candidateBodyChanged": true
+    },
+    {
+      "slug": "bmw-x5-service-dubai-guide",
+      "prepared": true,
+      "resolverModuleConnected": true,
+      "canonicalArabic": true,
+      "candidateBodyChanged": true
+    },
+    {
+      "slug": "range-rover-vogue-service-dubai-guide",
+      "prepared": true,
+      "resolverModuleConnected": true,
+      "canonicalArabic": true,
+      "candidateBodyChanged": true
+    },
+    {
+      "slug": "defender-service-dubai-guide",
+      "prepared": true,
+      "resolverModuleConnected": true,
+      "canonicalArabic": true,
+      "candidateBodyChanged": true
+    },
+    {
+      "slug": "ferrari-488-service-dubai-guide",
+      "prepared": true,
+      "resolverModuleConnected": true,
+      "canonicalArabic": true,
+      "candidateBodyChanged": true
+    },
+    {
+      "slug": "lamborghini-urus-service-dubai-guide",
+      "prepared": true,
+      "resolverModuleConnected": true,
+      "canonicalArabic": true,
+      "candidateBodyChanged": true
+    },
+    {
+      "slug": "bentley-continental-gt-service-dubai-guide",
+      "prepared": true,
+      "resolverModuleConnected": true,
+      "canonicalArabic": true,
+      "candidateBodyChanged": true
+    },
+    {
+      "slug": "rolls-royce-ghost-service-dubai-guide",
+      "prepared": true,
+      "resolverModuleConnected": true,
+      "canonicalArabic": true,
+      "candidateBodyChanged": true
+    },
+    {
+      "slug": "mclaren-720s-service-dubai-guide",
+      "prepared": true,
+      "resolverModuleConnected": true,
+      "canonicalArabic": true,
+      "candidateBodyChanged": true
+    },
+    {
+      "slug": "aston-martin-db11-service-dubai-guide",
+      "prepared": true,
+      "resolverModuleConnected": true,
+      "canonicalArabic": true,
+      "candidateBodyChanged": true
+    },
+    {
+      "slug": "maybach-s580-service-dubai-guide",
+      "prepared": true,
+      "resolverModuleConnected": true,
+      "canonicalArabic": true,
+      "candidateBodyChanged": true
+    },
+    {
+      "slug": "porsche-panamera-service-dubai-guide",
+      "prepared": true,
+      "resolverModuleConnected": true,
+      "canonicalArabic": true,
+      "candidateBodyChanged": true
+    },
+    {
+      "slug": "audi-q7-service-dubai-guide",
+      "prepared": true,
+      "resolverModuleConnected": true,
+      "canonicalArabic": true,
+      "candidateBodyChanged": true
+    },
+    {
+      "slug": "car-ac-not-cold-dubai-causes",
+      "prepared": true,
+      "resolverModuleConnected": true,
+      "canonicalArabic": true,
+      "candidateBodyChanged": true
+    },
+    {
+      "slug": "engine-overheating-dubai-what-to-do",
+      "prepared": true,
+      "resolverModuleConnected": true,
+      "canonicalArabic": true,
+      "candidateBodyChanged": true
+    },
+    {
+      "slug": "check-engine-light-dubai-guide",
+      "prepared": true,
+      "resolverModuleConnected": true,
+      "canonicalArabic": true,
+      "candidateBodyChanged": true
+    },
+    {
+      "slug": "car-battery-life-dubai-heat",
+      "prepared": true,
+      "resolverModuleConnected": true,
+      "canonicalArabic": true,
+      "candidateBodyChanged": true
+    },
+    {
+      "slug": "transmission-service-7g-9g-dubai",
+      "prepared": true,
+      "resolverModuleConnected": true,
+      "canonicalArabic": true,
+      "candidateBodyChanged": true
+    },
+    {
+      "slug": "air-suspension-repair-dubai-guide",
+      "prepared": true,
+      "resolverModuleConnected": true,
+      "canonicalArabic": true,
+      "candidateBodyChanged": true
+    },
+    {
+      "slug": "ecu-remap-safe-dubai-guide",
+      "prepared": true,
+      "resolverModuleConnected": true,
+      "canonicalArabic": true,
+      "candidateBodyChanged": true
+    },
+    {
+      "slug": "pre-purchase-inspection-dubai-guide",
+      "prepared": true,
+      "resolverModuleConnected": true,
+      "canonicalArabic": true,
+      "candidateBodyChanged": true
+    },
+    {
+      "slug": "car-service-interval-dubai-heat",
+      "prepared": true,
+      "resolverModuleConnected": true,
+      "canonicalArabic": true,
+      "candidateBodyChanged": true
+    },
+    {
+      "slug": "ceramic-coating-vs-ppf-dubai",
+      "prepared": true,
+      "resolverModuleConnected": true,
+      "canonicalArabic": true,
+      "candidateBodyChanged": true
+    },
+    {
+      "slug": "oil-specification-guide-dubai-luxury",
+      "prepared": true,
+      "resolverModuleConnected": true,
+      "canonicalArabic": true,
+      "candidateBodyChanged": true
+    },
+    {
+      "slug": "summer-car-preparation-dubai-checklist",
+      "prepared": true,
+      "resolverModuleConnected": true,
+      "canonicalArabic": true,
+      "candidateBodyChanged": true
+    }
+  ]
+}

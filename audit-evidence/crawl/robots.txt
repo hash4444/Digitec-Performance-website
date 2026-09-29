@@ -1,0 +1,14 @@
+# OpenAI search and assistant crawlers are explicitly permitted.
+User-agent: OAI-SearchBot
+User-agent: ChatGPT-User
+User-agent: GPTBot
+Allow: /
+Disallow: /wp-admin
+Disallow: /wp-login
+
+User-agent: *
+Allow: /
+Disallow: /wp-admin
+Disallow: /wp-login
+
+Sitemap: https://digitecme.com/sitemap.xml

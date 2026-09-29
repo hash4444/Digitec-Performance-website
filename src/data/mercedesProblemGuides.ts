@@ -14,6 +14,9 @@ export interface MercedesProblemGuide {
   metaTitle: string;
   metaDescription: string;
   summary: string;
+  answerHeading: string;
+  answer: string;
+  relatedProblemSlugs: string[];
   dateModified?: string;
   answerCards?: { title: string; description: string }[];
   urgent: boolean;
@@ -43,6 +46,10 @@ export const mercedesProblemGuides: MercedesProblemGuide[] = [
     metaTitle: 'Mercedes AIRMATIC Malfunction | Causes & Diagnosis',
     metaDescription: 'What a Mercedes AIRMATIC malfunction means, possible air-spring, compressor, valve, sensor and voltage causes, and how the fault should be diagnosed.',
     summary: 'An AIRMATIC warning means the suspension control system has detected a condition outside its expected range. It does not identify which component failed, and it does not automatically mean the compressor or all four air struts need replacement.',
+    answerHeading: "A suspension warning does not identify a failed compressor",
+    answer: "Record the exact warning and whether the car is level, low or slow to rise. AIRMATIC faults can involve air loss, pressure production, height sensing or electrical supply. If the vehicle has ABC, E-ACTIVE BODY CONTROL or coil springs, the inspection must follow that fitted system rather than assuming an air-spring failure.",
+    relatedProblemSlugs: ["suspension-dropping-overnight", "battery-warning"],
+    dateModified: "2026-09-28",
     urgent: true,
     sections: [
       {
@@ -76,7 +83,7 @@ export const mercedesProblemGuides: MercedesProblemGuide[] = [
     ],
     faultCodeNote: 'A code for pressure build-up, level control or a specific corner describes what the control unit observed. It does not by itself prove that the compressor, strut or sensor is defective. For example, a compressor can run too long because a leaking air spring is demanding more air than the system can retain.',
     professionalHelp: 'Professional diagnosis is appropriate when the warning repeats, the car changes height, the compressor runs often, the ride becomes harsh or the system will not complete a height change. A workshop should be able to explain the leak, pressure, sensor or supply evidence behind the repair recommendation.',
-    relatedServices: [service('Mercedes suspension repair in Dubai', MERCEDES_SERVICE_LINKS.suspension, 'Commercial inspection and repair information for AIRMATIC, ABC and supported active-suspension systems.')],
+    relatedServices: [service('Mercedes suspension repair in Dubai', MERCEDES_SERVICE_LINKS.suspension, 'Inspection and repair options for AIRMATIC, ABC and supported active-suspension systems.')],
     relatedModels: [
       { label: 'Mercedes S-Class service guide', path: '/blog/mercedes-s-class-service-dubai-guide' },
       { label: 'Mercedes E-Class service guide', path: '/blog/mercedes-e-class-service-dubai-guide' },
@@ -97,6 +104,10 @@ export const mercedesProblemGuides: MercedesProblemGuide[] = [
     metaTitle: 'Mercedes Suspension Dropping Overnight | Leak Guide',
     metaDescription: 'Why a Mercedes with air suspension may drop overnight, how corner and full-vehicle height loss differ, and how leaks should be isolated before repair.',
     summary: 'A Mercedes that sits lower after several hours is showing a height-retention symptom. On an air-equipped model, the pattern—one corner, one axle or the whole vehicle—helps direct leak testing, but the parked position alone does not prove which component is leaking.',
+    answerHeading: "Measure the drop before choosing a repair",
+    answer: "Photograph all four corners on level ground before starting the car, and note how long it was parked. On air-equipped vehicles, repeated one-corner or axle height loss needs leak isolation. A car that rises again can still have a leak; compressor replacement alone does not explain where the air went.",
+    relatedProblemSlugs: ["airmatic-malfunction"],
+    dateModified: "2026-09-28",
     urgent: false,
     sections: [
       {
@@ -115,7 +126,7 @@ export const mercedesProblemGuides: MercedesProblemGuide[] = [
       },
       {
         title: 'Models and systems differ',
-        paragraphs: ['S-Class, E-Class, GLE and GLS vehicles may use different AIRMATIC generations, and selected later SUVs combine air springs with E-ACTIVE BODY CONTROL. G-Class/G63 and C-Class/C63 vehicles generally use coil springs, so “dropping overnight” should first be confirmed as an actual air-suspension application.'],
+        paragraphs: ['S-Class, E-Class, GLE and GLS vehicles may use different AIRMATIC generations, and selected later SUVs combine air springs with E-ACTIVE BODY CONTROL. G-Class/G63 and C63 vehicles use coil springs, while some C-Class variants have optional air suspension. Confirm the fitted system before treating overnight height loss as an air leak.'],
       },
     ],
     driveAdvice: 'If the vehicle rises to normal height quickly and no tyre contact or red warning is present, a short careful trip to diagnosis may be possible. Do not drive if it remains very low, rises unevenly, contacts the body, rides harshly on its stops or displays a stop instruction.',
@@ -130,7 +141,7 @@ export const mercedesProblemGuides: MercedesProblemGuide[] = [
     ],
     faultCodeNote: 'An overnight leak may leave no decisive fault code because the vehicle is parked and the pressure loss is physical. Conversely, a compressor run-time or level-control code can be the result of the leak rather than proof that the compressor started the problem.',
     professionalHelp: 'Arrange diagnosis when the drop repeats, the compressor runs longer than before or ride height affects driving. Ask for measured height or leak evidence and confirmation of whether the compressor was damaged by the original leak.',
-    relatedServices: [service('Mercedes suspension repair in Dubai', MERCEDES_SERVICE_LINKS.suspension, 'Commercial service information for air-spring, compressor, valve and height-control diagnosis.')],
+    relatedServices: [service('Mercedes suspension repair in Dubai', MERCEDES_SERVICE_LINKS.suspension, 'Inspection and repair options for air-spring, compressor, valve and height-control diagnosis.')],
     relatedModels: [
       { label: 'Mercedes S-Class service guide', path: '/blog/mercedes-s-class-service-dubai-guide' },
       { label: 'Mercedes-AMG E63 service guide', path: '/mercedes/models/e63-service-repair-dubai' },
@@ -151,6 +162,10 @@ export const mercedesProblemGuides: MercedesProblemGuide[] = [
     metaTitle: 'Mercedes Gearbox Jerking | 7G, 9G & AMG Guide',
     metaDescription: 'Why a Mercedes gearbox may jerk when changing gears, differences across 7G-TRONIC, 9G-TRONIC and AMG transmissions, and how to diagnose it.',
     summary: '“Jerking” can mean a sharp upshift, a thump into Drive, a bump during coast-down or a shudder under light acceleration. Those are different events. Identifying the gear, temperature, load and direction of torque is more useful than replacing parts from a code list.',
+    answerHeading: "Describe the exact gear-shifting problem",
+    answer: "Separate a thump when selecting Drive, a harsh upshift, a coast-down bump and a steady-speed shudder. Note cold versus hot behaviour and drive mode. Gearbox control, fluid, mounts, engine torque and driveline condition can produce similar sensations, so the test should reproduce your specific event.",
+    relatedProblemSlugs: ["transmission-slipping", "check-engine-light"],
+    dateModified: "2026-09-28",
     urgent: false,
     sections: [
       {
@@ -184,7 +199,7 @@ export const mercedesProblemGuides: MercedesProblemGuide[] = [
     ],
     faultCodeNote: 'A solenoid, ratio or speed-sensor code identifies a circuit or measured condition. It does not prove that the named solenoid, valve body or complete gearbox is the root cause. Wiring, fluid/pressure, mechanical slip and control inputs must be checked against the code conditions.',
     professionalHelp: 'Professional diagnosis is appropriate when the symptom repeats, worsens hot, affects engagement or appears with a warning. Ask the workshop to identify the transmission and explain whether the evidence points to maintenance, mounts/driveline, electrical control, mechatronics or internal repair.',
-    relatedServices: [service('Mercedes transmission repair in Dubai', MERCEDES_SERVICE_LINKS.transmission, 'Commercial service details for 7G-TRONIC, 9G-TRONIC and compatible AMG transmission diagnosis.')],
+    relatedServices: [service('Mercedes transmission repair in Dubai', MERCEDES_SERVICE_LINKS.transmission, 'Inspection and repair options for 7G-TRONIC, 9G-TRONIC and compatible AMG transmission diagnosis.')],
     relatedModels: [
       { label: 'Mercedes C-Class service guide', path: '/blog/mercedes-c-class-service-dubai-guide' },
       { label: 'Mercedes E-Class service guide', path: '/blog/mercedes-e-class-service-dubai-guide' },
@@ -205,6 +220,10 @@ export const mercedesProblemGuides: MercedesProblemGuide[] = [
     metaTitle: 'Mercedes Transmission Slipping | Signs & Diagnosis',
     metaDescription: 'How to recognize Mercedes transmission slipping, possible fluid, hydraulic, clutch and control causes, driving risk, and the diagnostic process.',
     summary: 'Transmission slip is a mismatch between engine speed and the vehicle acceleration or commanded gear. Owners may describe an RPM flare, delayed drive or loss of pull. It should be distinguished from a normal downshift, traction-control intervention or engine power fault.',
+    answerHeading: "Repeated RPM flare needs prompt assessment",
+    answer: "An engine-speed rise without matching acceleration can indicate slip, but wheelspin, an ordinary downshift and engine power loss must be distinguished. Avoid repeated acceleration tests. Loss of drive, burning smell or a fluid leak changes the urgency and may require recovery.",
+    relatedProblemSlugs: ["gearbox-jerking", "oil-leak"],
+    dateModified: "2026-09-28",
     urgent: true,
     sections: [
       {
@@ -238,7 +257,7 @@ export const mercedesProblemGuides: MercedesProblemGuide[] = [
     ],
     faultCodeNote: 'A ratio-monitoring code confirms that actual speeds did not match the control unit’s expected ratio under recorded conditions. It does not alone identify whether the cause is fluid, hydraulic pressure, a sensor/circuit, a clutch or a mechanical part.',
     professionalHelp: 'Prompt diagnosis is appropriate after the first repeatable slip. A professional estimate should separate testing from repair and explain whether measured ratio, pressure, fluid or internal evidence supports the proposed component work.',
-    relatedServices: [service('Mercedes transmission repair in Dubai', MERCEDES_SERVICE_LINKS.transmission, 'Commercial transmission inspection, service and repair information after the symptom has been diagnosed.')],
+    relatedServices: [service('Mercedes transmission repair in Dubai', MERCEDES_SERVICE_LINKS.transmission, 'Transmission inspection and repair options, with testing before a component recommendation.')],
     relatedModels: [
       { label: 'Mercedes-AMG E63 service guide', path: '/mercedes/models/e63-service-repair-dubai' },
       { label: 'Mercedes-AMG S63 service guide', path: '/mercedes/models/s63-service-repair-dubai' },
@@ -259,6 +278,10 @@ export const mercedesProblemGuides: MercedesProblemGuide[] = [
     metaTitle: 'Mercedes Check Engine Light | Meaning & Diagnosis',
     metaDescription: 'Mercedes check engine light guide: steady vs flashing warnings, possible ignition, fuel, boost and emissions causes, and why a code is not a diagnosis.',
     summary: 'The check-engine light means the engine or emissions control has detected a fault that meets its reporting threshold. A steady light and a flashing light carry different urgency, while the stored code identifies the monitored condition—not automatically the failed part.',
+    answerHeading: "First identify the symbol and whether it flashes",
+    answer: "An amber engine-shaped light belongs to engine or emissions diagnosis. Other Mercedes dashboard warning lights can refer to oil pressure, coolant temperature, charging, brakes or suspension and need different action. Record the exact symbol and text; a flashing engine light, severe shaking or a red stop message calls for stopping safely.",
+    relatedProblemSlugs: ["engine-overheating", "wont-start"],
+    dateModified: "2026-09-28",
     urgent: true,
     sections: [
       {
@@ -290,7 +313,7 @@ export const mercedesProblemGuides: MercedesProblemGuide[] = [
     ],
     faultCodeNote: 'A code such as “system too lean”, “misfire cylinder 3” or “boost pressure deviation” names the detected result or circuit. It does not prove an oxygen sensor, coil, injector or turbocharger has failed. Vacuum/boost leaks, wiring, fuel supply and mechanical condition can produce the same monitored result.',
     professionalHelp: 'Arrange prompt diagnosis for any flashing light, rough running, reduced power or recurring code. Even a steady light should be read before inspection renewal or a long trip, because a stored condition may affect emissions, fuel use or secondary components.',
-    relatedServices: [service('Mercedes diagnostics in Dubai', MERCEDES_SERVICE_LINKS.diagnostics, 'Commercial information for full-module scanning, live data and directed testing.')],
+    relatedServices: [service('Mercedes diagnostics in Dubai', MERCEDES_SERVICE_LINKS.diagnostics, 'Inspection options for full-module scanning, live data and directed testing.')],
     relatedModels: [
       { label: 'Mercedes C-Class service guide', path: '/blog/mercedes-c-class-service-dubai-guide' },
       { label: 'Mercedes-AMG C63 service guide', path: '/mercedes/models/c63-service-repair-dubai' },
@@ -311,6 +334,10 @@ export const mercedesProblemGuides: MercedesProblemGuide[] = [
     metaTitle: 'Mercedes Engine Overheating | Stop & Diagnose Guide',
     metaDescription: 'What to do when a Mercedes overheats, possible coolant leak, pump, thermostat, fan and airflow causes, and how the cooling system is diagnosed.',
     summary: 'Overheating means the cooling system is no longer controlling engine temperature under the current load. Continuing to drive can turn a hose, fan or pump fault into cylinder-head, turbocharger or lubrication damage.',
+    answerHeading: "Stop for a true overheat; a top-up is not a diagnosis",
+    answer: "A red temperature warning, steam or confirmed overheating calls for a safe stop and recovery. Do not open a hot coolant cap. Record whether the rise happened in traffic or under load, and describe coolant loss or weak AC; the workshop must test the affected cooling circuit and airflow.",
+    relatedProblemSlugs: ["ac-not-cooling", "check-engine-light"],
+    dateModified: "2026-09-28",
     urgent: true,
     sections: [
       {
@@ -344,7 +371,7 @@ export const mercedesProblemGuides: MercedesProblemGuide[] = [
     faultCodeNote: 'A thermostat, pump or temperature-sensor code can indicate unexpected warm-up or control response; it does not automatically prove that component is the only fault. Low coolant, trapped air, wiring, airflow and sensor plausibility can alter the same data.',
     professionalHelp: 'Any true overheat warrants professional inspection before normal driving resumes. Repeated coolant top-ups, fan operation after every trip or temperature rise in traffic are early reasons to book diagnosis even before a red warning occurs.',
     relatedServices: [
-      service('Mercedes mechanical repair in Dubai', MERCEDES_SERVICE_LINKS.mechanical, 'Commercial information for cooling-system inspection and mechanical repair.'),
+      service('Mercedes mechanical repair in Dubai', MERCEDES_SERVICE_LINKS.mechanical, 'Inspection options for cooling-system inspection and mechanical repair.'),
       service('Mercedes diagnostics in Dubai', MERCEDES_SERVICE_LINKS.diagnostics, 'Live-data and control-system testing where a warning or intermittent overheat needs tracing.'),
     ],
     relatedModels: [
@@ -367,6 +394,10 @@ export const mercedesProblemGuides: MercedesProblemGuide[] = [
     metaTitle: 'Mercedes AC Not Cooling | Causes & Diagnosis',
     metaDescription: 'Why a Mercedes AC may blow warm, cool only while moving or differ by vent, plus refrigerant, compressor, airflow and climate-control diagnosis.',
     summary: 'Weak Mercedes AC can be caused by refrigerant loss, inadequate condenser airflow, compressor control, pressure/temperature sensors, blower restriction or air-distribution faults. “Needs gas” is a symptom guess, not a leak diagnosis.',
+    answerHeading: "Compare traffic, moving airflow and cabin zones",
+    answer: "Record whether the AC is warm only at idle, becomes warm after a journey, affects one side or leaves the rear cabin warmer than the front. These patterns guide airflow, pressure, compressor and flap-control checks. Adding refrigerant without checking the specified charge and leak path can miss the cause.",
+    relatedProblemSlugs: ["engine-overheating"],
+    dateModified: "2026-09-28",
     urgent: false,
     sections: [
       {
@@ -400,7 +431,7 @@ export const mercedesProblemGuides: MercedesProblemGuide[] = [
     ],
     faultCodeNote: 'A pressure-sensor or compressor-control code can be caused by the circuit, implausible pressure from low refrigerant, wiring or a commanded safety shutdown. The code should be matched to actual pressures, temperatures and electrical measurements.',
     professionalHelp: 'Professional diagnosis is appropriate when cooling is weak, refrigerant has been added before, one zone differs or the system stops cooling in traffic. Ask for the specified refrigerant, measured performance and leak/control evidence behind the estimate.',
-    relatedServices: [service('Mercedes AC repair in Dubai', MERCEDES_SERVICE_LINKS.ac, 'Commercial AC leak, compressor, condenser and climate-control service information.')],
+    relatedServices: [service('Mercedes AC repair in Dubai', MERCEDES_SERVICE_LINKS.ac, 'AC leak testing, compressor assessment and climate-control repair options.')],
     relatedModels: [
       { label: 'Mercedes C-Class service guide', path: '/blog/mercedes-c-class-service-dubai-guide' },
       { label: 'Mercedes S-Class service guide', path: '/blog/mercedes-s-class-service-dubai-guide' },
@@ -421,6 +452,10 @@ export const mercedesProblemGuides: MercedesProblemGuide[] = [
     metaTitle: 'Mercedes Oil Leak | Sources, Risk & Diagnosis',
     metaDescription: 'Mercedes oil leak guide covering leak patterns, possible covers, housings, coolers, turbo lines and sump sources, driving risk and diagnosis.',
     summary: 'Oil on the undertray or garage floor confirms leakage but not its origin. Mercedes undertrays and airflow can carry oil rearward, so diagnosis should start at the highest fresh wet point after the area is inspected and, when appropriate, cleaned.',
+    answerHeading: "Identify the fluid and highest fresh leak point",
+    answer: "A mark under the car does not identify the leaking part: undertrays can carry oil away from its source, and dirty engine, gearbox or hydraulic fluids can look alike. Note the level warning, smell and location. Red oil-pressure warnings or oil reaching hot exhaust parts need prompt action.",
+    relatedProblemSlugs: ["engine-overheating", "transmission-slipping"],
+    dateModified: "2026-09-28",
     urgent: false,
     sections: [
       {
@@ -452,7 +487,7 @@ export const mercedesProblemGuides: MercedesProblemGuide[] = [
     ],
     faultCodeNote: 'Many oil leaks generate no fault code. An oil-level or oil-pressure code does not identify the leak source, and a pressure warning may represent a more urgent lubrication problem than external seepage.',
     professionalHelp: 'Arrange diagnosis for any recurring oil smell, new floor stain, level message or wet undertray. Seek immediate help for rapid leakage, smoke or an oil-pressure warning. A useful estimate should name the traced source rather than a list of possible gaskets.',
-    relatedServices: [service('Mercedes mechanical repair in Dubai', MERCEDES_SERVICE_LINKS.mechanical, 'Commercial mechanical inspection and repair information for verified engine oil leaks.')],
+    relatedServices: [service('Mercedes mechanical repair in Dubai', MERCEDES_SERVICE_LINKS.mechanical, 'Mechanical inspection and repair options for verified engine oil leaks.')],
     relatedModels: [
       { label: 'Mercedes-AMG G63 service guide', path: '/blog/mercedes-g63-service-dubai-guide' },
       { label: 'Mercedes-AMG C63 service guide', path: '/mercedes/models/c63-service-repair-dubai' },
@@ -473,7 +508,6 @@ export const mercedesProblemGuides: MercedesProblemGuide[] = [
     metaTitle: 'Mercedes Won’t Start? No Power, No Crank & Jump-Start Guide',
     metaDescription: 'Mercedes won’t start but lights work, has no power, clicks once or starts only with a jump? Compare battery, starter, key and crank-no-start causes safely.',
     summary: 'The most useful first distinction is whether the engine does not crank, cranks at normal speed but does not start, cranks slowly, or starts and immediately stops. Each pattern leads to a different electrical, authorization, fuel or engine-management test path.',
-    dateModified: '2026-09-14',
     answerCards: [
       { title: 'No power, but it starts with a jump', description: 'Test battery condition under load, charging output and key-off draw. Starting after a jump does not prove the battery is the only fault.' },
       { title: 'Lights come on, but it will not crank', description: 'Check voltage drop, starter command, gear-position data and key authorization; dashboard lights need much less current than the starter.' },
@@ -482,6 +516,10 @@ export const mercedesProblemGuides: MercedesProblemGuide[] = [
       { title: 'Starts and stalls immediately', description: 'Record key and authorization messages, running time and fault context before repeated attempts erase useful evidence.' },
       { title: 'No-start after an accident or recent repair', description: 'Power distribution, grounds, connectors, authorization and affected wiring need inspection before the symptom is treated as an ordinary flat battery.' },
     ],
+    answerHeading: "Match the exact starting pattern to the next check",
+    answer: "Distinguish no electrical power, lights with no crank, a single click and normal cranking without firing. Tell the workshop whether a jump changed the result and whether battery work or another repair preceded it. Those observations narrow the test plan without proving which part failed.",
+    relatedProblemSlugs: ["battery-warning", "check-engine-light"],
+    dateModified: "2026-09-28",
     urgent: false,
     sections: [
       {
@@ -515,7 +553,7 @@ export const mercedesProblemGuides: MercedesProblemGuide[] = [
     faultCodeNote: 'A stored undervoltage code may be a result of repeated failed starts, while a starter, crank-sensor or authorization code may describe a circuit or missing signal. Voltage-drop and signal tests are needed before the named part is replaced.',
     professionalHelp: 'Arrange recovery and professional diagnosis when the car repeatedly will not crank, cranks but will not fire, stalls immediately or shows key/authorization, 48-volt or hybrid warnings. A mobile jump-start is not a substitute for determining why the battery was low.',
     relatedServices: [
-      service('Mercedes diagnostics in Dubai', MERCEDES_SERVICE_LINKS.diagnostics, 'Commercial diagnostic information for no-start scan and system testing.'),
+      service('Mercedes diagnostics in Dubai', MERCEDES_SERVICE_LINKS.diagnostics, 'No-start scan, supply checks and directed system testing.'),
       service('Mercedes electrical repair in Dubai', MERCEDES_SERVICE_LINKS.electrical, 'Battery, starter, wiring, ground and module-circuit repair information.'),
       service('Mercedes battery replacement in Dubai', MERCEDES_SERVICE_LINKS.battery, 'Battery replacement information after battery, charging and key-off draw tests establish the required scope.'),
     ],
@@ -530,7 +568,7 @@ export const mercedesProblemGuides: MercedesProblemGuide[] = [
       { question: 'Can the lights work even when the battery cannot start the car?', answer: 'Yes. Lights and modules draw much less current than the starter. Battery voltage under load and cable voltage drop are more useful than the lights alone.' },
       { question: 'Why will my Mercedes start with a jump but not on its own?', answer: 'The battery may not retain charge, the charging system may be weak or the vehicle may have an excessive key-off draw. All three require measurement before replacement is recommended.' },
       { question: 'Why does my Mercedes click once but not start?', answer: 'The click shows that part of the command path may be operating, but it does not identify the failed component. Battery load, cable voltage drop, grounds, starter command and starter current need checking.' },
-      { question: 'Can XENTRY diagnose a Mercedes that will not start?', answer: 'Compatible diagnostics can reveal authorization, voltage, engine-speed and module data, but a scan is only one part of the diagnosis. High-current, fuel, ignition, wiring or mechanical tests may still be required.' },
+      { question: 'Can a diagnostic scan explain why my Mercedes will not start?', answer: 'Compatible diagnostics can reveal authorization, voltage, engine-speed and module data, but a scan is only one part of the diagnosis. High-current, fuel, ignition, wiring or mechanical tests may still be required.' },
       { question: 'Does a crankshaft-sensor code prove the sensor failed?', answer: 'Not always. Wiring, supply, signal integrity, timing and low cranking speed can affect the observed signal. Test the circuit and waveform or live data as appropriate.' },
     ],
   },
@@ -542,6 +580,10 @@ export const mercedesProblemGuides: MercedesProblemGuide[] = [
     metaTitle: 'Mercedes Battery Warning | 12V, 48V & Charging',
     metaDescription: 'What Mercedes battery and charging warnings can mean across 12V, auxiliary and 48V systems, when to stop, and how voltage faults are diagnosed.',
     summary: 'A Mercedes battery message can refer to low 12-volt state of charge, an auxiliary/backup battery function, a charging-system fault or, on equipped models, a 48-volt/DC-DC problem. Replacing the main battery without identifying the exact message can miss the fault.',
+    answerHeading: "Read the message before ordering a battery",
+    answer: "A charging warning while driving, an auxiliary-battery message and a 48V-system warning describe different situations. A replacement battery will not fix an untested charging, cable, DC-DC or parasitic-draw fault. Share the exact text and when it appeared; follow any stop instruction before continuing.",
+    relatedProblemSlugs: ["wont-start", "airmatic-malfunction"],
+    dateModified: "2026-09-28",
     urgent: true,
     sections: [
       {
@@ -575,7 +617,8 @@ export const mercedesProblemGuides: MercedesProblemGuide[] = [
     faultCodeNote: 'Undervoltage codes across many modules may show that supply dropped, but not why. They can result from an ageing battery, poor connection, charging fault or repeated start attempts. A 48-volt code likewise needs isolation to the storage, converter, wiring or control system.',
     professionalHelp: 'Seek prompt help for a red charging symbol, repeated low-battery message, no-start or 48-volt warning. A battery replacement should follow load/health and charging tests, not be used as the first diagnostic step for every electrical message.',
     relatedServices: [
-      service('Mercedes electrical repair in Dubai', MERCEDES_SERVICE_LINKS.electrical, 'Commercial charging, wiring, module and 48-volt diagnostic information.'),
+      service('Mercedes diagnostics in Dubai', MERCEDES_SERVICE_LINKS.diagnostics, 'Identify the warning and affected supply system before selecting battery or circuit work.'),
+      service('Mercedes electrical repair in Dubai', MERCEDES_SERVICE_LINKS.electrical, 'Charging, wiring, module and compatible 48-volt diagnostic assessment.'),
       service('Mercedes battery replacement in Dubai', MERCEDES_SERVICE_LINKS.battery, 'Battery testing and replacement information after the correct battery system is identified.'),
     ],
     relatedModels: [

@@ -1,0 +1,1620 @@
+{
+  "startedAt": "2026-09-17T09:05:27.326Z",
+  "completedAt": "2026-09-17T09:07:04.965Z",
+  "mode": "fresh-live-http",
+  "phase": "baseline",
+  "totalPages": 996,
+  "canonicalSitemapEntries": 996,
+  "canonicalPagesChecked": 995,
+  "sitemapDuplicatePaths": [],
+  "families": {
+    "home": 2,
+    "about": 2,
+    "workshop-guide": 14,
+    "blog-hub": 2,
+    "article": 197,
+    "brands-hub": 2,
+    "brand": 76,
+    "brand-service": 572,
+    "faq": 2,
+    "services-hub": 2,
+    "service": 115,
+    "html-sitemap": 5,
+    "tuning": 2,
+    "vrx": 2
+  },
+  "canonicalFamilies": {
+    "home": 2,
+    "about": 2,
+    "workshop-guide": 14,
+    "blog-hub": 2,
+    "article": 197,
+    "brands-hub": 2,
+    "brand": 76,
+    "brand-service": 572,
+    "faq": 2,
+    "services-hub": 2,
+    "service": 115,
+    "html-sitemap": 5,
+    "tuning": 2,
+    "vrx": 2
+  },
+  "languages": {
+    "en": 552,
+    "ar": 443
+  },
+  "excludedFromSitemap": 0,
+  "errors": [
+    {
+      "path": "/brands/dodge-service-dubai/ac-repair",
+      "error": "The operation was aborted due to timeout: "
+    }
+  ],
+  "statusCounts": {
+    "200": 995
+  },
+  "non200": [],
+  "infrastructure": {
+    "sitemap": {
+      "status": 200,
+      "headers": {
+        "cf-ray": "a3c6f3024e40f08b-DXB",
+        "connection": "keep-alive",
+        "content-encoding": "gzip",
+        "content-type": "text/xml; charset=utf-8",
+        "date": "Thu, 17 Sep 2026 09:05:28 GMT",
+        "etag": "W/\"f2f589857a5b731867e24afd63281c79\"",
+        "referrer-policy": "strict-origin-when-cross-origin",
+        "server": "cloudflare",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "transfer-encoding": "chunked",
+        "x-content-type-options": "nosniff",
+        "x-deployment-id": "160d16a7-7e6d-45ef-8cb2-032dc527d542"
+      }
+    },
+    "robots": {
+      "status": 200,
+      "text": "# OpenAI search and assistant crawlers are explicitly permitted.\nUser-agent: OAI-SearchBot\nUser-agent: ChatGPT-User\nUser-agent: GPTBot\nAllow: /\nDisallow: /wp-admin\nDisallow: /wp-login\n\nUser-agent: *\nAllow: /\nDisallow: /wp-admin\nDisallow: /wp-login\n\nSitemap: https://digitecme.com/sitemap.xml\n",
+      "headers": {
+        "cf-ray": "a3c6f3024f540d5c-DXB",
+        "connection": "keep-alive",
+        "content-encoding": "gzip",
+        "content-type": "text/plain; charset=utf-8",
+        "date": "Thu, 17 Sep 2026 09:05:28 GMT",
+        "etag": "W/\"14fc2802d14120128b4b3e1a7938870b\"",
+        "referrer-policy": "strict-origin-when-cross-origin",
+        "server": "cloudflare",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "transfer-encoding": "chunked",
+        "x-content-type-options": "nosniff",
+        "x-deployment-id": "160d16a7-7e6d-45ef-8cb2-032dc527d542"
+      }
+    }
+  },
+  "metadataIssues": [],
+  "duplicateTitles": [
+    {
+      "value": "air suspension repair dubai | diagnosis, leaks and compressors",
+      "paths": [
+        "/ar/blog/air-suspension-repair-dubai-guide",
+        "/blog/air-suspension-repair-dubai-guide"
+      ]
+    },
+    {
+      "value": "aston martin db11 service dubai | maintenance guide",
+      "paths": [
+        "/ar/blog/aston-martin-db11-service-dubai-guide",
+        "/blog/aston-martin-db11-service-dubai-guide"
+      ]
+    },
+    {
+      "value": "audi q7 service dubai | maintenance and repair guide",
+      "paths": [
+        "/ar/blog/audi-q7-service-dubai-guide",
+        "/blog/audi-q7-service-dubai-guide"
+      ]
+    },
+    {
+      "value": "audi rs service dubai | rs6, rs7, rsq8 maintenance guide",
+      "paths": [
+        "/ar/blog/audi-rs-service-dubai-guide",
+        "/blog/audi-rs-service-dubai-guide"
+      ]
+    },
+    {
+      "value": "bentley continental gt service dubai | maintenance guide",
+      "paths": [
+        "/ar/blog/bentley-continental-gt-service-dubai-guide",
+        "/blog/bentley-continental-gt-service-dubai-guide"
+      ]
+    },
+    {
+      "value": "bmw m service dubai | m2, m3, m4, m5 maintenance guide",
+      "paths": [
+        "/ar/blog/bmw-m-service-dubai-guide",
+        "/blog/bmw-m-service-dubai-guide"
+      ]
+    },
+    {
+      "value": "bmw x5 service dubai | maintenance and repair guide",
+      "paths": [
+        "/ar/blog/bmw-x5-service-dubai-guide",
+        "/blog/bmw-x5-service-dubai-guide"
+      ]
+    },
+    {
+      "value": "car ac not cold in dubai | causes, checks and repair guide",
+      "paths": [
+        "/ar/blog/car-ac-not-cold-dubai-causes",
+        "/blog/car-ac-not-cold-dubai-causes"
+      ]
+    },
+    {
+      "value": "car battery life dubai | why batteries fail in uae heat",
+      "paths": [
+        "/ar/blog/car-battery-life-dubai-heat",
+        "/blog/car-battery-life-dubai-heat"
+      ]
+    },
+    {
+      "value": "car service cost in dubai | what drives luxury car quotes",
+      "paths": [
+        "/ar/blog/car-service-cost-dubai-luxury-brands",
+        "/blog/car-service-cost-dubai-luxury-brands"
+      ]
+    },
+    {
+      "value": "car service interval dubai | how often to service in uae heat",
+      "paths": [
+        "/ar/blog/car-service-interval-dubai-heat",
+        "/blog/car-service-interval-dubai-heat"
+      ]
+    },
+    {
+      "value": "ceramic coating vs ppf dubai | which protection is right?",
+      "paths": [
+        "/ar/blog/ceramic-coating-vs-ppf-dubai",
+        "/blog/ceramic-coating-vs-ppf-dubai"
+      ]
+    },
+    {
+      "value": "check engine light dubai | causes and diagnostic guide",
+      "paths": [
+        "/ar/blog/check-engine-light-dubai-guide",
+        "/blog/check-engine-light-dubai-guide"
+      ]
+    },
+    {
+      "value": "dealer vs independent workshop dubai | owner comparison",
+      "paths": [
+        "/ar/blog/dealer-vs-independent-workshop-dubai",
+        "/blog/dealer-vs-independent-workshop-dubai"
+      ]
+    },
+    {
+      "value": "defender service dubai | land rover defender maintenance guide",
+      "paths": [
+        "/ar/blog/defender-service-dubai-guide",
+        "/blog/defender-service-dubai-guide"
+      ]
+    },
+    {
+      "value": "ecu remap dubai | is tuning safe for your car?",
+      "paths": [
+        "/ar/blog/ecu-remap-safe-dubai-guide",
+        "/blog/ecu-remap-safe-dubai-guide"
+      ]
+    },
+    {
+      "value": "engine overheating dubai | causes and what to do immediately",
+      "paths": [
+        "/ar/blog/engine-overheating-dubai-what-to-do",
+        "/blog/engine-overheating-dubai-what-to-do"
+      ]
+    },
+    {
+      "value": "ferrari 488 service dubai | maintenance and inspection guide",
+      "paths": [
+        "/ar/blog/ferrari-488-service-dubai-guide",
+        "/blog/ferrari-488-service-dubai-guide"
+      ]
+    },
+    {
+      "value": "g63 to brabus g 800 conversion dubai | before & after",
+      "paths": [
+        "/ar/blog/g63-to-brabus-g800-conversion-dubai",
+        "/blog/g63-to-brabus-g800-conversion-dubai"
+      ]
+    },
+    {
+      "value": "lamborghini urus service dubai | maintenance and repair guide",
+      "paths": [
+        "/ar/blog/lamborghini-urus-service-dubai-guide",
+        "/blog/lamborghini-urus-service-dubai-guide"
+      ]
+    },
+    {
+      "value": "maybach service dubai | mercedes-maybach maintenance guide",
+      "paths": [
+        "/ar/blog/maybach-s580-service-dubai-guide",
+        "/blog/maybach-s580-service-dubai-guide"
+      ]
+    },
+    {
+      "value": "mclaren 720s service dubai | maintenance and inspection guide",
+      "paths": [
+        "/ar/blog/mclaren-720s-service-dubai-guide",
+        "/blog/mclaren-720s-service-dubai-guide"
+      ]
+    },
+    {
+      "value": "mercedes amg gt tuning dubai | vehicle-specific guide",
+      "paths": [
+        "/ar/blog/mercedes-amg-gt-tuning-dubai",
+        "/blog/mercedes-amg-gt-tuning-dubai"
+      ]
+    },
+    {
+      "value": "mercedes service cost dubai | a & b scope | digi-tec",
+      "paths": [
+        "/ar/blog/mercedes-service-cost-dubai-guide",
+        "/blog/mercedes-service-cost-dubai-guide"
+      ]
+    },
+    {
+      "value": "engine oil specification dubai | choosing the right oil",
+      "paths": [
+        "/ar/blog/oil-specification-guide-dubai-luxury",
+        "/blog/oil-specification-guide-dubai-luxury"
+      ]
+    },
+    {
+      "value": "porsche 911 service & repair dubai | digi-tec",
+      "paths": [
+        "/ar/blog/porsche-911-service-dubai-guide",
+        "/blog/porsche-911-service-dubai-guide"
+      ]
+    },
+    {
+      "value": "pre-purchase inspection dubai | used luxury car check guide",
+      "paths": [
+        "/ar/blog/pre-purchase-inspection-dubai-guide",
+        "/blog/pre-purchase-inspection-dubai-guide"
+      ]
+    },
+    {
+      "value": "range rover sport service dubai | jlr specialist guide",
+      "paths": [
+        "/ar/blog/range-rover-sport-service-dubai-guide",
+        "/blog/range-rover-sport-service-dubai-guide"
+      ]
+    },
+    {
+      "value": "range rover vogue service dubai | maintenance and repair guide",
+      "paths": [
+        "/ar/blog/range-rover-vogue-service-dubai-guide",
+        "/blog/range-rover-vogue-service-dubai-guide"
+      ]
+    },
+    {
+      "value": "rolls-royce ghost service dubai | maintenance and repair guide",
+      "paths": [
+        "/ar/blog/rolls-royce-ghost-service-dubai-guide",
+        "/blog/rolls-royce-ghost-service-dubai-guide"
+      ]
+    },
+    {
+      "value": "summer car check dubai | preparation checklist before heat",
+      "paths": [
+        "/ar/blog/summer-car-preparation-dubai-checklist",
+        "/blog/summer-car-preparation-dubai-checklist"
+      ]
+    },
+    {
+      "value": "automatic transmission service dubai | fluid, filter and repair",
+      "paths": [
+        "/ar/blog/transmission-service-7g-9g-dubai",
+        "/blog/transmission-service-7g-9g-dubai"
+      ]
+    }
+  ],
+  "duplicateDescriptions": [
+    {
+      "value": "air suspension repair in dubai explained: why springs leak in uae heat, how faults are diagnosed with live data, and when a compressor or valve block is the real cause.",
+      "paths": [
+        "/ar/blog/air-suspension-repair-dubai-guide",
+        "/blog/air-suspension-repair-dubai-guide"
+      ]
+    },
+    {
+      "value": "aston martin db11 service in dubai: oil specification, cooling, brakes, gearbox fluid, electronics and diagnostics explained for owners.",
+      "paths": [
+        "/ar/blog/aston-martin-db11-service-dubai-guide",
+        "/blog/aston-martin-db11-service-dubai-guide"
+      ]
+    },
+    {
+      "value": "audi q7 service in dubai: oil specification, air suspension, gearbox and transfer case fluid, cooling, brakes and odis diagnostics explained.",
+      "paths": [
+        "/ar/blog/audi-q7-service-dubai-guide",
+        "/blog/audi-q7-service-dubai-guide"
+      ]
+    },
+    {
+      "value": "audi rs service in dubai explained: oil specification, quattro driveline fluids, dsg and tiptronic service, cooling, brakes and odis diagnostics for rs6, rs7 and rsq8.",
+      "paths": [
+        "/ar/blog/audi-rs-service-dubai-guide",
+        "/blog/audi-rs-service-dubai-guide"
+      ]
+    },
+    {
+      "value": "bentley continental gt maintenance in dubai: vehicle-specific service planning, suspension, cooling, brakes, gearbox and diagnostic concerns explained for owners.",
+      "paths": [
+        "/ar/blog/bentley-continental-gt-service-dubai-guide",
+        "/blog/bentley-continental-gt-service-dubai-guide"
+      ]
+    },
+    {
+      "value": "what bmw m service in dubai should include: oil specification, cooling, brakes, dct and gearbox fluid, differential care and ista+ diagnostics for m2, m3, m4, m5 and x5 m.",
+      "paths": [
+        "/ar/blog/bmw-m-service-dubai-guide",
+        "/blog/bmw-m-service-dubai-guide"
+      ]
+    },
+    {
+      "value": "bmw x5 service in dubai: oil intervals, cooling, air suspension, transfer case, brakes and ista+ diagnostics explained for g05 and f15 owners.",
+      "paths": [
+        "/ar/blog/bmw-x5-service-dubai-guide",
+        "/blog/bmw-x5-service-dubai-guide"
+      ]
+    },
+    {
+      "value": "why your car ac is not cold in dubai: refrigerant loss, condenser fouling, compressor faults, blend door issues and how a workshop diagnoses each one.",
+      "paths": [
+        "/ar/blog/car-ac-not-cold-dubai-causes",
+        "/blog/car-ac-not-cold-dubai-causes"
+      ]
+    },
+    {
+      "value": "why car batteries fail early in dubai, how long they really last, the warning signs, and why modern cars need battery registration after replacement.",
+      "paths": [
+        "/ar/blog/car-battery-life-dubai-heat",
+        "/blog/car-battery-life-dubai-heat"
+      ]
+    },
+    {
+      "value": "understand what drives car service cost in dubai for luxury and german brands, how to read an estimate, and the questions to ask before approving any repair.",
+      "paths": [
+        "/ar/blog/car-service-cost-dubai-luxury-brands",
+        "/blog/car-service-cost-dubai-luxury-brands"
+      ]
+    },
+    {
+      "value": "how often you should service your car in dubai, why uae heat shortens fluid life, and when time based servicing beats distance based schedules.",
+      "paths": [
+        "/ar/blog/car-service-interval-dubai-heat",
+        "/blog/car-service-interval-dubai-heat"
+      ]
+    },
+    {
+      "value": "ceramic coating or paint protection film in dubai: what each product actually does, how uae sun and sand affect paint, and how to decide between them.",
+      "paths": [
+        "/ar/blog/ceramic-coating-vs-ppf-dubai",
+        "/blog/ceramic-coating-vs-ppf-dubai"
+      ]
+    },
+    {
+      "value": "what a check engine light means, when it is safe to drive, why code readers are not a diagnosis, and how proper fault finding works in a dubai workshop.",
+      "paths": [
+        "/ar/blog/check-engine-light-dubai-guide",
+        "/blog/check-engine-light-dubai-guide"
+      ]
+    },
+    {
+      "value": "compare main dealer service with a specialist independent workshop in dubai: diagnostics, genuine parts, warranty, service records, turnaround and communication.",
+      "paths": [
+        "/ar/blog/dealer-vs-independent-workshop-dubai",
+        "/blog/dealer-vs-independent-workshop-dubai"
+      ]
+    },
+    {
+      "value": "land rover defender service in dubai: oil intervals, air suspension, cooling, desert use checks, brakes and diagnostics for the new defender range.",
+      "paths": [
+        "/ar/blog/defender-service-dubai-guide",
+        "/blog/defender-service-dubai-guide"
+      ]
+    },
+    {
+      "value": "is ecu remapping safe in dubai? how professional tuning is developed, what hardware supporting mods matter, cooling in uae heat and what to ask before booking.",
+      "paths": [
+        "/ar/blog/ecu-remap-safe-dubai-guide",
+        "/blog/ecu-remap-safe-dubai-guide"
+      ]
+    },
+    {
+      "value": "what to do if your engine overheats in dubai, the most common causes in uae heat, and how a workshop diagnoses cooling system faults properly.",
+      "paths": [
+        "/ar/blog/engine-overheating-dubai-what-to-do",
+        "/blog/engine-overheating-dubai-what-to-do"
+      ]
+    },
+    {
+      "value": "ferrari 488 owner guide for dubai: service planning, vehicle-specific fluids, cooling, brakes, supported dct data and storage care.",
+      "paths": [
+        "/ar/blog/ferrari-488-service-dubai-guide",
+        "/blog/ferrari-488-service-dubai-guide"
+      ]
+    },
+    {
+      "value": "see a real mercedes-amg g63 to brabus g 800-style conversion in dubai. before-and-after photos, bodywork, fitment, wiring and final quality checks at digi-tec.",
+      "paths": [
+        "/ar/blog/g63-to-brabus-g800-conversion-dubai",
+        "/blog/g63-to-brabus-g800-conversion-dubai"
+      ]
+    },
+    {
+      "value": "lamborghini urus service guide for dubai: model-specific maintenance, eight-speed automatic, brakes, cooling and suspension considerations.",
+      "paths": [
+        "/ar/blog/lamborghini-urus-service-dubai-guide",
+        "/blog/lamborghini-urus-service-dubai-guide"
+      ]
+    },
+    {
+      "value": "mercedes-maybach service in dubai: airmatic and e-active suspension, cooling, rear cabin electronics, brakes and xentry diagnostics explained.",
+      "paths": [
+        "/ar/blog/maybach-s580-service-dubai-guide",
+        "/blog/maybach-s580-service-dubai-guide"
+      ]
+    },
+    {
+      "value": "mclaren 720s service in dubai: annual service scope, hydraulic suspension, cooling, brakes, tyres and diagnostics explained for owners.",
+      "paths": [
+        "/ar/blog/mclaren-720s-service-dubai-guide",
+        "/blog/mclaren-720s-service-dubai-guide"
+      ]
+    },
+    {
+      "value": "a complete mercedes-amg gt tuning guide for dubai: ecu calibration, downpipes, intercooling, turbo upgrades and the supporting work the m178 v8 needs in uae heat.",
+      "paths": [
+        "/ar/blog/mercedes-amg-gt-tuning-dubai",
+        "/blog/mercedes-amg-gt-tuning-dubai"
+      ]
+    },
+    {
+      "value": "understand mercedes service a and b cost factors in dubai: due work, oil specification, parts, labour, diagnosis and the details an itemized quote should show.",
+      "paths": [
+        "/ar/blog/mercedes-service-cost-dubai-guide",
+        "/blog/mercedes-service-cost-dubai-guide"
+      ]
+    },
+    {
+      "value": "how to choose the correct engine oil in dubai: why manufacturer approvals matter more than viscosity, what heat changes, and what a workshop should record.",
+      "paths": [
+        "/ar/blog/oil-specification-guide-dubai-luxury",
+        "/blog/oil-specification-guide-dubai-luxury"
+      ]
+    },
+    {
+      "value": "what a pre-purchase inspection in dubai should cover before you buy a used luxury car: diagnostics, accident evidence, fluids, suspension, brakes and service history.",
+      "paths": [
+        "/ar/blog/pre-purchase-inspection-dubai-guide",
+        "/blog/pre-purchase-inspection-dubai-guide"
+      ]
+    },
+    {
+      "value": "a range rover sport service guide for dubai: air suspension, cooling, electrical modules, drivetrain fluids and the checks that prevent roadside failures.",
+      "paths": [
+        "/ar/blog/range-rover-sport-service-dubai-guide",
+        "/blog/range-rover-sport-service-dubai-guide"
+      ]
+    },
+    {
+      "value": "range rover vogue service in dubai: air suspension, cooling, electrical modules, brakes, fluid intervals and manufacturer level diagnostics explained.",
+      "paths": [
+        "/ar/blog/range-rover-vogue-service-dubai-guide",
+        "/blog/range-rover-vogue-service-dubai-guide"
+      ]
+    },
+    {
+      "value": "rolls-royce ghost service in dubai: maintenance planning, suspension, cooling, battery, brakes and diagnostic concerns explained for owners.",
+      "paths": [
+        "/ar/blog/rolls-royce-ghost-service-dubai-guide",
+        "/blog/rolls-royce-ghost-service-dubai-guide"
+      ]
+    },
+    {
+      "value": "a practical summer car preparation checklist for dubai: cooling, ac, battery, tyres, fluids and the checks that prevent breakdowns in peak heat.",
+      "paths": [
+        "/ar/blog/summer-car-preparation-dubai-checklist",
+        "/blog/summer-car-preparation-dubai-checklist"
+      ]
+    },
+    {
+      "value": "automatic transmission service in dubai explained: when fluid should be changed, what a proper service includes, and the symptoms that need diagnosis first.",
+      "paths": [
+        "/ar/blog/transmission-service-7g-9g-dubai",
+        "/blog/transmission-service-7g-9g-dubai"
+      ]
+    }
+  ],
+  "duplicateH1": [
+    {
+      "value": "air suspension repair in dubai: diagnosis before replacement",
+      "paths": [
+        "/ar/blog/air-suspension-repair-dubai-guide",
+        "/blog/air-suspension-repair-dubai-guide"
+      ]
+    },
+    {
+      "value": "aston martin db11 service in dubai: owner guide",
+      "paths": [
+        "/ar/blog/aston-martin-db11-service-dubai-guide",
+        "/blog/aston-martin-db11-service-dubai-guide"
+      ]
+    },
+    {
+      "value": "audi q7 service in dubai: owner maintenance guide",
+      "paths": [
+        "/ar/blog/audi-q7-service-dubai-guide",
+        "/blog/audi-q7-service-dubai-guide"
+      ]
+    },
+    {
+      "value": "audi rs service in dubai: maintenance for rs and s models",
+      "paths": [
+        "/ar/blog/audi-rs-service-dubai-guide",
+        "/blog/audi-rs-service-dubai-guide"
+      ]
+    },
+    {
+      "value": "bentley continental gt service in dubai: owner guide",
+      "paths": [
+        "/ar/blog/bentley-continental-gt-service-dubai-guide",
+        "/blog/bentley-continental-gt-service-dubai-guide"
+      ]
+    },
+    {
+      "value": "bmw m service in dubai: what an m car actually needs",
+      "paths": [
+        "/ar/blog/bmw-m-service-dubai-guide",
+        "/blog/bmw-m-service-dubai-guide"
+      ]
+    },
+    {
+      "value": "bmw x5 service in dubai: maintenance guide for owners",
+      "paths": [
+        "/ar/blog/bmw-x5-service-dubai-guide",
+        "/blog/bmw-x5-service-dubai-guide"
+      ]
+    },
+    {
+      "value": "car ac not cold in dubai: causes and what to check first",
+      "paths": [
+        "/ar/blog/car-ac-not-cold-dubai-causes",
+        "/blog/car-ac-not-cold-dubai-causes"
+      ]
+    },
+    {
+      "value": "car battery life in dubai: why heat kills batteries",
+      "paths": [
+        "/ar/blog/car-battery-life-dubai-heat",
+        "/blog/car-battery-life-dubai-heat"
+      ]
+    },
+    {
+      "value": "what drives car service cost in dubai for luxury brands",
+      "paths": [
+        "/ar/blog/car-service-cost-dubai-luxury-brands",
+        "/blog/car-service-cost-dubai-luxury-brands"
+      ]
+    },
+    {
+      "value": "car service intervals in dubai: why heat changes the rules",
+      "paths": [
+        "/ar/blog/car-service-interval-dubai-heat",
+        "/blog/car-service-interval-dubai-heat"
+      ]
+    },
+    {
+      "value": "ceramic coating or ppf in dubai: which should you choose?",
+      "paths": [
+        "/ar/blog/ceramic-coating-vs-ppf-dubai",
+        "/blog/ceramic-coating-vs-ppf-dubai"
+      ]
+    },
+    {
+      "value": "check engine light in dubai: what it means and what to do",
+      "paths": [
+        "/ar/blog/check-engine-light-dubai-guide",
+        "/blog/check-engine-light-dubai-guide"
+      ]
+    },
+    {
+      "value": "dealer or independent workshop in dubai: how to choose",
+      "paths": [
+        "/ar/blog/dealer-vs-independent-workshop-dubai",
+        "/blog/dealer-vs-independent-workshop-dubai"
+      ]
+    },
+    {
+      "value": "land rover defender service in dubai: owner guide",
+      "paths": [
+        "/ar/blog/defender-service-dubai-guide",
+        "/blog/defender-service-dubai-guide"
+      ]
+    },
+    {
+      "value": "is ecu remapping safe in dubai? an honest guide",
+      "paths": [
+        "/ar/blog/ecu-remap-safe-dubai-guide",
+        "/blog/ecu-remap-safe-dubai-guide"
+      ]
+    },
+    {
+      "value": "engine overheating in dubai: what to do and why it happens",
+      "paths": [
+        "/ar/blog/engine-overheating-dubai-what-to-do",
+        "/blog/engine-overheating-dubai-what-to-do"
+      ]
+    },
+    {
+      "value": "ferrari 488 service in dubai: owner maintenance guide",
+      "paths": [
+        "/ar/blog/ferrari-488-service-dubai-guide",
+        "/blog/ferrari-488-service-dubai-guide"
+      ]
+    },
+    {
+      "value": "g63 to brabus g 800-style conversion in dubai: before & after",
+      "paths": [
+        "/ar/blog/g63-to-brabus-g800-conversion-dubai",
+        "/blog/g63-to-brabus-g800-conversion-dubai"
+      ]
+    },
+    {
+      "value": "lamborghini urus service in dubai: owner guide",
+      "paths": [
+        "/ar/blog/lamborghini-urus-service-dubai-guide",
+        "/blog/lamborghini-urus-service-dubai-guide"
+      ]
+    },
+    {
+      "value": "mercedes-maybach service in dubai: owner guide",
+      "paths": [
+        "/ar/blog/maybach-s580-service-dubai-guide",
+        "/blog/maybach-s580-service-dubai-guide"
+      ]
+    },
+    {
+      "value": "mclaren 720s service in dubai: owner maintenance guide",
+      "paths": [
+        "/ar/blog/mclaren-720s-service-dubai-guide",
+        "/blog/mclaren-720s-service-dubai-guide"
+      ]
+    },
+    {
+      "value": "mercedes-amg gt tuning in dubai: a complete upgrade guide",
+      "paths": [
+        "/ar/blog/mercedes-amg-gt-tuning-dubai",
+        "/blog/mercedes-amg-gt-tuning-dubai"
+      ]
+    },
+    {
+      "value": "mercedes service cost in dubai: service a & b scope",
+      "paths": [
+        "/ar/blog/mercedes-service-cost-dubai-guide",
+        "/blog/mercedes-service-cost-dubai-guide"
+      ]
+    },
+    {
+      "value": "engine oil specifications in dubai: choosing correctly",
+      "paths": [
+        "/ar/blog/oil-specification-guide-dubai-luxury",
+        "/blog/oil-specification-guide-dubai-luxury"
+      ]
+    },
+    {
+      "value": "pre-purchase inspection in dubai: what it should cover",
+      "paths": [
+        "/ar/blog/pre-purchase-inspection-dubai-guide",
+        "/blog/pre-purchase-inspection-dubai-guide"
+      ]
+    },
+    {
+      "value": "range rover sport service in dubai: what to watch",
+      "paths": [
+        "/ar/blog/range-rover-sport-service-dubai-guide",
+        "/blog/range-rover-sport-service-dubai-guide"
+      ]
+    },
+    {
+      "value": "range rover vogue service in dubai: owner guide",
+      "paths": [
+        "/ar/blog/range-rover-vogue-service-dubai-guide",
+        "/blog/range-rover-vogue-service-dubai-guide"
+      ]
+    },
+    {
+      "value": "rolls-royce ghost service in dubai: owner guide",
+      "paths": [
+        "/ar/blog/rolls-royce-ghost-service-dubai-guide",
+        "/blog/rolls-royce-ghost-service-dubai-guide"
+      ]
+    },
+    {
+      "value": "summer car preparation in dubai: a practical checklist",
+      "paths": [
+        "/ar/blog/summer-car-preparation-dubai-checklist",
+        "/blog/summer-car-preparation-dubai-checklist"
+      ]
+    },
+    {
+      "value": "automatic transmission service in dubai: 7g, 9g and zf",
+      "paths": [
+        "/ar/blog/transmission-service-7g-9g-dubai",
+        "/blog/transmission-service-7g-9g-dubai"
+      ]
+    },
+    {
+      "value": "mercedes v-class vrx consultation",
+      "paths": [
+        "/ar/vrx",
+        "/vrx"
+      ]
+    }
+  ],
+  "duplicateContent": [],
+  "shortContentUnder300Words": [
+    {
+      "path": "/ar/best-audi-workshop-dubai",
+      "words": 242,
+      "family": "workshop-guide"
+    },
+    {
+      "path": "/ar/best-bmw-workshop-dubai",
+      "words": 242,
+      "family": "workshop-guide"
+    },
+    {
+      "path": "/ar/best-car-workshop-dubai",
+      "words": 241,
+      "family": "workshop-guide"
+    },
+    {
+      "path": "/ar/best-ferrari-workshop-dubai",
+      "words": 242,
+      "family": "workshop-guide"
+    },
+    {
+      "path": "/ar/best-lamborghini-workshop-dubai",
+      "words": 242,
+      "family": "workshop-guide"
+    },
+    {
+      "path": "/ar/best-porsche-workshop-dubai",
+      "words": 242,
+      "family": "workshop-guide"
+    },
+    {
+      "path": "/ar/blog/why-ceramic-coating-matters-uae",
+      "words": 288,
+      "family": "article"
+    },
+    {
+      "path": "/ar/faq",
+      "words": 200,
+      "family": "faq"
+    },
+    {
+      "path": "/ar/services/car-garage-dubai",
+      "words": 168,
+      "family": "service"
+    },
+    {
+      "path": "/ar/services/garage-near-me-dubai",
+      "words": 180,
+      "family": "service"
+    },
+    {
+      "path": "/ar/services/roadside-assistance-dubai",
+      "words": 182,
+      "family": "service"
+    },
+    {
+      "path": "/ar/vrx",
+      "words": 211,
+      "family": "vrx"
+    },
+    {
+      "path": "/best-audi-workshop-dubai",
+      "words": 293,
+      "family": "workshop-guide"
+    },
+    {
+      "path": "/best-bmw-workshop-dubai",
+      "words": 294,
+      "family": "workshop-guide"
+    },
+    {
+      "path": "/best-car-workshop-dubai",
+      "words": 271,
+      "family": "workshop-guide"
+    },
+    {
+      "path": "/best-ferrari-workshop-dubai",
+      "words": 292,
+      "family": "workshop-guide"
+    },
+    {
+      "path": "/best-lamborghini-workshop-dubai",
+      "words": 292,
+      "family": "workshop-guide"
+    },
+    {
+      "path": "/best-porsche-workshop-dubai",
+      "words": 293,
+      "family": "workshop-guide"
+    },
+    {
+      "path": "/faq",
+      "words": 247,
+      "family": "faq"
+    },
+    {
+      "path": "/porsche/guides/718-maintenance",
+      "words": 125,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/guides/ac-maintenance-dubai",
+      "words": 139,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/guides/battery-life-dubai",
+      "words": 133,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/guides/brake-wear-dubai",
+      "words": 131,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/guides/buying-used-porsche-dubai",
+      "words": 139,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/guides/common-problems-dubai",
+      "words": 129,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/guides/cooling-maintenance",
+      "words": 140,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/guides/dealer-vs-independent-specialist",
+      "words": 141,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/guides/dubai-heat",
+      "words": 144,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/guides/how-often-service-dubai",
+      "words": 150,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/guides/macan-maintenance",
+      "words": 136,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/guides/maintenance-cost-dubai",
+      "words": 137,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/guides/major-vs-minor-service",
+      "words": 152,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/guides/oil-change-intervals",
+      "words": 147,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/guides/pdk-service-intervals",
+      "words": 141,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/guides/pre-purchase-inspection-checklist",
+      "words": 141,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/guides/service-intervals-uae",
+      "words": 158,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/guides/taycan-maintenance",
+      "words": 138,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/guides/tyre-wear-dubai",
+      "words": 134,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/guides/warning-lights",
+      "words": 130,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/problems/911-cooling",
+      "words": 236,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/problems/ac-not-cooling",
+      "words": 216,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/problems/air-suspension-warning",
+      "words": 235,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/problems/battery-warning",
+      "words": 239,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/problems/brake-warning-light",
+      "words": 233,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/problems/cayenne-air-suspension",
+      "words": 228,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/problems/check-engine-light",
+      "words": 240,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/problems/coolant-leak",
+      "words": 252,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/problems/delayed-gear-engagement",
+      "words": 242,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/problems/engine-misfire",
+      "words": 239,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/problems/engine-overheating",
+      "words": 247,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/problems/excessive-oil-consumption",
+      "words": 228,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/problems/macan-transfer-case",
+      "words": 236,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/problems/oil-leak",
+      "words": 240,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/problems/pasm-fault",
+      "words": 255,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/problems/pdcc-fault",
+      "words": 236,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/problems/pdk-jerking",
+      "words": 258,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/problems/pdk-slipping",
+      "words": 240,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/problems/pdk-warning-message",
+      "words": 240,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/problems/steering-vibration",
+      "words": 228,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/problems/suspension-dropping-overnight",
+      "words": 234,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/problems/taycan-12v-battery",
+      "words": 230,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/problems/taycan-charging",
+      "words": 200,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/problems/wont-start",
+      "words": 238,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/systems/air-suspension",
+      "words": 217,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/systems/pasm",
+      "words": 215,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/systems/pccb",
+      "words": 238,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/systems/pdcc",
+      "words": 224,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/systems/pdk",
+      "words": 242,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/systems/ptm-awd",
+      "words": 211,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/systems/rear-axle-steering",
+      "words": 206,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/systems/sport-chrono",
+      "words": 222,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/systems/tiptronic",
+      "words": 214,
+      "family": "article"
+    },
+    {
+      "path": "/services/car-garage-dubai",
+      "words": 264,
+      "family": "service"
+    },
+    {
+      "path": "/services/garage-near-me-dubai",
+      "words": 282,
+      "family": "service"
+    },
+    {
+      "path": "/services/roadside-assistance-dubai",
+      "words": 297,
+      "family": "service"
+    },
+    {
+      "path": "/vrx",
+      "words": 256,
+      "family": "vrx"
+    }
+  ],
+  "shortestContent": [
+    {
+      "path": "/porsche/guides/718-maintenance",
+      "words": 125,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/guides/common-problems-dubai",
+      "words": 129,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/guides/warning-lights",
+      "words": 130,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/guides/brake-wear-dubai",
+      "words": 131,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/guides/battery-life-dubai",
+      "words": 133,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/guides/tyre-wear-dubai",
+      "words": 134,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/guides/macan-maintenance",
+      "words": 136,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/guides/maintenance-cost-dubai",
+      "words": 137,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/guides/taycan-maintenance",
+      "words": 138,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/guides/ac-maintenance-dubai",
+      "words": 139,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/guides/buying-used-porsche-dubai",
+      "words": 139,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/guides/cooling-maintenance",
+      "words": 140,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/guides/dealer-vs-independent-specialist",
+      "words": 141,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/guides/pdk-service-intervals",
+      "words": 141,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/guides/pre-purchase-inspection-checklist",
+      "words": 141,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/guides/dubai-heat",
+      "words": 144,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/guides/oil-change-intervals",
+      "words": 147,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/guides/how-often-service-dubai",
+      "words": 150,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/guides/major-vs-minor-service",
+      "words": 152,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/guides/service-intervals-uae",
+      "words": 158,
+      "family": "article"
+    },
+    {
+      "path": "/ar/services/car-garage-dubai",
+      "words": 168,
+      "family": "service"
+    },
+    {
+      "path": "/ar/services/garage-near-me-dubai",
+      "words": 180,
+      "family": "service"
+    },
+    {
+      "path": "/ar/services/roadside-assistance-dubai",
+      "words": 182,
+      "family": "service"
+    },
+    {
+      "path": "/ar/faq",
+      "words": 200,
+      "family": "faq"
+    },
+    {
+      "path": "/porsche/problems/taycan-charging",
+      "words": 200,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/systems/rear-axle-steering",
+      "words": 206,
+      "family": "article"
+    },
+    {
+      "path": "/ar/vrx",
+      "words": 211,
+      "family": "vrx"
+    },
+    {
+      "path": "/porsche/systems/ptm-awd",
+      "words": 211,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/systems/tiptronic",
+      "words": 214,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/systems/pasm",
+      "words": 215,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/problems/ac-not-cooling",
+      "words": 216,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/systems/air-suspension",
+      "words": 217,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/systems/sport-chrono",
+      "words": 222,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/systems/pdcc",
+      "words": 224,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/problems/cayenne-air-suspension",
+      "words": 228,
+      "family": "article"
+    }
+  ],
+  "arabicPagesWithLowArabicShare": [],
+  "englishPagesWithHighArabicShare": [],
+  "noContentInlinksExcludingSitemaps": [
+    "/ar",
+    "/ar/about",
+    "/ar/faq",
+    "/ar/sitemap",
+    "/faq",
+    "/porsche/problems/brake-warning-light",
+    "/porsche/problems/cayenne-air-suspension",
+    "/porsche/systems/rear-axle-steering",
+    "/porsche/systems/sport-chrono",
+    "/sitemap"
+  ],
+  "lowestContentInlinkCounts": [
+    {
+      "path": "/",
+      "inlinks": 0
+    },
+    {
+      "path": "/ar",
+      "inlinks": 0
+    },
+    {
+      "path": "/ar/about",
+      "inlinks": 0
+    },
+    {
+      "path": "/ar/faq",
+      "inlinks": 0
+    },
+    {
+      "path": "/ar/sitemap",
+      "inlinks": 0
+    },
+    {
+      "path": "/faq",
+      "inlinks": 0
+    },
+    {
+      "path": "/porsche/problems/brake-warning-light",
+      "inlinks": 0
+    },
+    {
+      "path": "/porsche/problems/cayenne-air-suspension",
+      "inlinks": 0
+    },
+    {
+      "path": "/porsche/systems/rear-axle-steering",
+      "inlinks": 0
+    },
+    {
+      "path": "/porsche/systems/sport-chrono",
+      "inlinks": 0
+    },
+    {
+      "path": "/sitemap",
+      "inlinks": 0
+    },
+    {
+      "path": "/ar/blog/air-suspension-repair-dubai-guide",
+      "inlinks": 1
+    },
+    {
+      "path": "/ar/blog/aston-martin-best-workshop-dubai",
+      "inlinks": 1
+    },
+    {
+      "path": "/ar/blog/aston-martin-db11-service-dubai-guide",
+      "inlinks": 1
+    },
+    {
+      "path": "/ar/blog/audi-maintenance-guide-dubai",
+      "inlinks": 1
+    },
+    {
+      "path": "/ar/blog/audi-q7-service-dubai-guide",
+      "inlinks": 1
+    },
+    {
+      "path": "/ar/blog/audi-rs-service-dubai-guide",
+      "inlinks": 1
+    },
+    {
+      "path": "/ar/blog/bentley-best-workshop-dubai",
+      "inlinks": 1
+    },
+    {
+      "path": "/ar/blog/bentley-continental-gt-service-dubai-guide",
+      "inlinks": 1
+    },
+    {
+      "path": "/ar/blog/best-car-workshop-dubai",
+      "inlinks": 1
+    },
+    {
+      "path": "/ar/blog/best-defender-workshop-dubai",
+      "inlinks": 1
+    },
+    {
+      "path": "/ar/blog/bmw-m-service-dubai-guide",
+      "inlinks": 1
+    },
+    {
+      "path": "/ar/blog/bmw-x5-service-dubai-guide",
+      "inlinks": 1
+    },
+    {
+      "path": "/ar/blog/cadillac-best-workshop-dubai",
+      "inlinks": 1
+    },
+    {
+      "path": "/ar/blog/car-ac-not-cold-dubai-causes",
+      "inlinks": 1
+    },
+    {
+      "path": "/ar/blog/car-battery-life-dubai-heat",
+      "inlinks": 1
+    },
+    {
+      "path": "/ar/blog/car-service-cost-dubai-luxury-brands",
+      "inlinks": 1
+    },
+    {
+      "path": "/ar/blog/car-service-interval-dubai-heat",
+      "inlinks": 1
+    },
+    {
+      "path": "/ar/blog/ceramic-coating-vs-ppf-dubai",
+      "inlinks": 1
+    },
+    {
+      "path": "/ar/blog/check-engine-light-dubai-guide",
+      "inlinks": 1
+    },
+    {
+      "path": "/ar/blog/chevrolet-best-workshop-dubai",
+      "inlinks": 1
+    },
+    {
+      "path": "/ar/blog/dealer-vs-independent-workshop-dubai",
+      "inlinks": 1
+    },
+    {
+      "path": "/ar/blog/defender-service-dubai-guide",
+      "inlinks": 1
+    },
+    {
+      "path": "/ar/blog/ecu-remap-safe-dubai-guide",
+      "inlinks": 1
+    },
+    {
+      "path": "/ar/blog/engine-overheating-dubai-what-to-do",
+      "inlinks": 1
+    },
+    {
+      "path": "/ar/blog/ferrari-maintenance-guide-dubai",
+      "inlinks": 1
+    },
+    {
+      "path": "/ar/blog/ford-best-workshop-dubai",
+      "inlinks": 1
+    },
+    {
+      "path": "/ar/blog/g63-to-brabus-g800-conversion-dubai",
+      "inlinks": 1
+    },
+    {
+      "path": "/ar/blog/gad-tuning-explained",
+      "inlinks": 1
+    },
+    {
+      "path": "/ar/blog/jaguar-best-workshop-dubai",
+      "inlinks": 1
+    }
+  ],
+  "brokenLinks": [
+    {
+      "from": "/ar/blog/air-suspension-repair-dubai-guide",
+      "path": "/ar/mercedes/problems/airmatic-malfunction",
+      "hash": "",
+      "anchor": "استكشف الخدمة واحجز موعداً",
+      "rel": ""
+    },
+    {
+      "from": "/ar/blog/check-engine-light-dubai-guide",
+      "path": "/ar/mercedes/problems/check-engine-light",
+      "hash": "",
+      "anchor": "استكشف الخدمة واحجز موعداً",
+      "rel": ""
+    },
+    {
+      "from": "/ar/blog/engine-overheating-dubai-what-to-do",
+      "path": "/ar/mercedes/problems/engine-overheating",
+      "hash": "",
+      "anchor": "استكشف الخدمة واحجز موعداً",
+      "rel": ""
+    },
+    {
+      "from": "/ar/blog/ferrari-488-service-dubai-guide",
+      "path": "/ar/brands/ferrari-service-dubai/488",
+      "hash": "",
+      "anchor": "استكشف الخدمة واحجز موعداً",
+      "rel": ""
+    },
+    {
+      "from": "/ar/blog/mercedes-repair-dubai-complete-guide",
+      "path": "/ar/mercedes/problems",
+      "hash": "",
+      "anchor": "استكشف الخدمة واحجز موعداً",
+      "rel": ""
+    },
+    {
+      "from": "/ar/blog/transmission-service-7g-9g-dubai",
+      "path": "/ar/mercedes/problems/gearbox-jerking",
+      "hash": "",
+      "anchor": "استكشف الخدمة واحجز موعداً",
+      "rel": ""
+    }
+  ],
+  "brokenFragments": [],
+  "noindexContentLinkCount": 1215,
+  "missingImageAltAttributes": [],
+  "imageElementsWithoutDimensions": 2192,
+  "largestHtml": [
+    {
+      "path": "/ar/blog",
+      "bytes": 219307
+    },
+    {
+      "path": "/blog",
+      "bytes": 204940
+    },
+    {
+      "path": "/brands/mercedes-benz-service-dubai",
+      "bytes": 147627
+    },
+    {
+      "path": "/",
+      "bytes": 129686
+    },
+    {
+      "path": "/ar",
+      "bytes": 126322
+    },
+    {
+      "path": "/brands/porsche-service-dubai",
+      "bytes": 118114
+    },
+    {
+      "path": "/brands/ferrari-service-dubai",
+      "bytes": 117319
+    },
+    {
+      "path": "/brands/bmw-service-dubai",
+      "bytes": 107602
+    },
+    {
+      "path": "/brands/range-rover-service-dubai",
+      "bytes": 104372
+    },
+    {
+      "path": "/brands/defender-service-dubai",
+      "bytes": 99246
+    },
+    {
+      "path": "/brands/rolls-royce-service-dubai",
+      "bytes": 97904
+    },
+    {
+      "path": "/brands/lamborghini-service-dubai",
+      "bytes": 97901
+    },
+    {
+      "path": "/brands/bentley-service-dubai",
+      "bytes": 96929
+    },
+    {
+      "path": "/brands/mclaren-service-dubai",
+      "bytes": 93679
+    },
+    {
+      "path": "/brands/audi-service-dubai",
+      "bytes": 93055
+    }
+  ],
+  "repeatedParagraphCount": 52,
+  "caveats": [
+    "Word counts, title length, shared paragraphs and language proportions are review signals, not Google ranking thresholds.",
+    "Paragraph/content extraction excludes header, footer, nav, script, style and SVG but may include shared in-page calls to action.",
+    "Inlinks count unique source pages excluding HTML sitemap sources; normal directory and related-service links remain.",
+    "Live HTTP response timing is a diagnostic sample, not Core Web Vitals.",
+    "The local compiled route manifest may predate concurrent source edits."
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "file": "src/data/blogPosts.ts",
+      "changed": [
+        "best-oil-change-dubai-mercedes",
+        "mercedes-service-intervals-dubai-heat",
+        "mercedes-repair-dubai-complete-guide"
+      ],
+      "unexpected": [],
+      "missingLinks": []
+    },
+    {
+      "file": "src/data/aiGuidePosts.ts",
+      "changed": [
+        "mercedes-service-cost-dubai-guide"
+      ],
+      "unexpected": [],
+      "missingLinks": []
+    },
+    {
+      "file": "src/data/aiGuidePostsExtra.ts",
+      "changed": [
+        "transmission-service-7g-9g-dubai",
+        "air-suspension-repair-dubai-guide"
+      ],
+      "unexpected": [],
+      "missingLinks": []
+    },
+    {
+      "file": "src/i18n/ar-service-blog-content.ts",
+      "changed": [
+        "best-oil-change-dubai-mercedes",
+        "mercedes-service-intervals-dubai-heat"
+      ],
+      "unexpected": [],
+      "missingLinks": []
+    },
+    {
+      "file": "src/i18n/ar-general-blog-content.ts",
+      "changed": [
+        "mercedes-service-cost-dubai-guide"
+      ],
+      "unexpected": [],
+      "missingLinks": []
+    },
+    {
+      "file": "src/i18n/ar-specialist-blog-content.ts",
+      "changed": [
+        "mercedes-repair-dubai-complete-guide"
+      ],
+      "unexpected": [],
+      "missingLinks": []
+    },
+    {
+      "file": "src/data/mercedesMaintenanceGuide.ts",
+      "missingLinks": []
+    }
+  ]
+}

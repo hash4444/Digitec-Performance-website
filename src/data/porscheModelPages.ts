@@ -52,24 +52,36 @@ type CompactModelInput = Pick<PorscheModelPageData, 'name' | 'shortName' | 'path
 const compactModel = (input: CompactModelInput): PorscheModelPageData => ({
   ...input,
   sections: [
-    { title: 'Powertrain architecture', summary: input.powertrain, points: ['Identify the exact engine or drive system from VIN and build data.', 'Match oil, coolant and service procedures to the fitted powertrain.', 'Use measured evidence before naming a component as failed.'] },
-    { title: 'Transmission and driveline', summary: input.transmission, points: ['Record temperature, load and drive mode when the symptom occurs.', 'Confirm the transmission and fluid history before proposing service.', 'Separate gearbox behaviour from mounts, engine torque, tyres and driveline play.'] },
-    { title: 'Suspension and steering', summary: input.chassis, points: ['Confirm fitted PASM, active or air-suspension equipment.', 'Combine warning data with physical joint, bush, tyre and alignment checks.', 'Verify calibration needs after relevant work.'] },
-    { title: 'Cooling and Dubai operation', summary: input.cooling, points: ['Inspect airflow, heat exchangers, fans and visible leakage.', 'Treat repeated coolant loss or temperature warnings as diagnostic concerns.', 'Use the vehicle schedule plus condition and actual duty cycle.'] },
-    { title: 'Braking systems', summary: input.brakes, points: ['Identify steel or PCCB hardware before applying inspection criteria.', 'Measure pad, disc and tyre condition.', 'Investigate vibration through brakes, hubs, wheels and suspension.'] },
-    { title: 'Electrical and diagnostic scope', summary: input.electrical, points: ['Retain warning text and event data before clearing faults.', 'Establish low-voltage health when several warnings appear.', 'Confirm supported coding, programming or service functions before booking.'] },
+    { title: 'Powertrain architecture', summary: input.powertrain, points: [] },
+    { title: 'Transmission and driveline', summary: input.transmission, points: [] },
+    { title: 'Suspension and steering', summary: input.chassis, points: [] },
+    { title: 'Cooling and Dubai operation', summary: input.cooling, points: [] },
+    { title: 'Braking systems', summary: input.brakes, points: [] },
+    { title: 'Electrical and diagnostic scope', summary: input.electrical, points: [] },
   ],
-  symptoms: [
+  symptoms: input.shortName === 'Taycan' ? [
+    { title: 'Charging warning or failed charging session', detail: 'Record the displayed message, charger type and whether the issue repeats at another supply.', path: '/porsche/problems/taycan-charging', label: 'Read the Taycan charging guide' },
+    { title: '12-volt battery or readiness warning', detail: 'Low-voltage supply can prevent start-up or create several warnings even when the traction battery has charge.', path: '/porsche/problems/taycan-12v-battery', label: 'Read the Taycan 12-volt guide' },
+    { title: 'Air-suspension or chassis warning', detail: 'Confirm fitted equipment and inspect ride height, tyres and compatible fault data.', path: '/porsche/problems/air-suspension-warning', label: 'Read the air-suspension warning guide' },
+  ] : [
     { title: 'Warning light or reduced performance', detail: 'A complete scan and directed tests are needed before parts are proposed.', path: '/porsche/problems/check-engine-light', label: 'Read the Porsche warning-light guide' },
     { title: 'Shift, engagement or driveline concern', detail: 'Document when it occurs and arrange unit-specific diagnosis.', path: '/porsche/problems/delayed-gear-engagement', label: 'Read the gear-engagement guide' },
     { title: 'Chassis warning, vibration or uneven ride', detail: 'Tyres and mechanical condition should be checked with control-system data.', path: '/porsche/problems/pasm-fault', label: 'Read the PASM fault guide' },
     { title: 'Coolant loss or rising temperature', detail: 'Avoid continued heavy use until the affected circuit is identified.', path: '/porsche/problems/engine-overheating', label: 'Read the overheating guide' },
   ],
-  services: [service(`${input.shortName} maintenance`, PORSCHE_SERVICE_LINKS.maintenance, 'Scheduled work matched to the exact vehicle and history.'), service('Porsche transmission repair', PORSCHE_SERVICE_LINKS.transmission, 'Shift and driveline diagnosis before repair.'), service('Porsche suspension repair', PORSCHE_SERVICE_LINKS.suspension, 'Mechanical and controlled-chassis testing.'), service('Porsche diagnostics', PORSCHE_SERVICE_LINKS.diagnostics, 'Compatible data followed by directed checks.')],
-  faqs: [
+  services: input.shortName === 'Taycan' ? [
+    service('Porsche electrical assessment', PORSCHE_SERVICE_LINKS.electrical, '12-volt and supported control-system checks; high-voltage scope confirmed separately.'),
+    service('Porsche AC assessment', PORSCHE_SERVICE_LINKS.ac, 'Cabin cooling and thermal concerns reviewed within confirmed workshop scope.'),
+    service('Porsche brake repair', PORSCHE_SERVICE_LINKS.brakes, 'Friction brakes still require inspection despite regeneration.'),
+    service('Porsche suspension repair', PORSCHE_SERVICE_LINKS.suspension, 'Fitted chassis equipment and ride-height concerns checked.'),
+  ] : [service(`${input.shortName} maintenance`, PORSCHE_SERVICE_LINKS.maintenance, 'Scheduled work matched to the exact vehicle and history.'), service('Porsche transmission repair', PORSCHE_SERVICE_LINKS.transmission, 'Shift and driveline diagnosis before repair.'), service('Porsche suspension repair', PORSCHE_SERVICE_LINKS.suspension, 'Mechanical and controlled-chassis testing.'), service('Porsche diagnostics', PORSCHE_SERVICE_LINKS.diagnostics, 'Compatible data followed by directed checks.')],
+  faqs: input.shortName === 'Taycan' ? [
+    { question: 'Does Taycan maintenance include engine oil or PDK service?', answer: 'No. Taycan service planning addresses the electric drive platform, 12-volt supply, thermal systems, brakes, tyres and fitted chassis equipment.' },
+    { question: 'Can a full traction battery rule out a 12-volt problem?', answer: 'No. The 12-volt system has a separate role in vehicle readiness and control. Its condition and charging path need their own assessment.' },
+    { question: 'Can DIGI-TEC repair every Taycan high-voltage component?', answer: 'No blanket high-voltage repair capability is claimed. The exact concern, qualification, procedure and supported workshop scope are confirmed before accepting work.' },
+  ] : [
     { question: `Does every ${input.shortName} use the same engine and transmission?`, answer: 'No. Powertrain and driveline equipment vary by model year, generation and variant. VIN and build data determine the correct service information.' },
     { question: `Can a warning code confirm which ${input.shortName} part has failed?`, answer: 'Usually not by itself. A code records a condition. Live data, physical inspection and directed electrical, pressure or mechanical tests may be required.' },
-    { question: 'Are service intervals shortened automatically for Dubai?', answer: 'The manufacturer schedule for the exact vehicle remains the baseline. Actual use, history and measured condition can justify additional checks without inventing one universal interval.' },
     { question: `How do I book a ${input.shortName} inspection?`, answer: 'Send the VIN, model year, mileage, warning text, service history and when the symptom occurs so the appropriate first inspection can be confirmed.' },
   ],
 });

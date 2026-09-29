@@ -27,7 +27,7 @@ const MercedesProblemsIndex = () => {
       type: 'CollectionPage',
       breadcrumbId: `${canonical}#breadcrumb`,
       mainEntityId: listId,
-      dateModified: '2026-08-31',
+      dateModified: '2026-09-28',
     }),
     buildBreadcrumb(canonical, [
       { name: 'Home', url: `${SITE_URL}/` },
@@ -78,7 +78,7 @@ const MercedesProblemsIndex = () => {
           <div className="relative mx-auto max-w-7xl px-4 sm:px-6">
             <p className="eyebrow mb-5">Owner-first diagnostic information</p>
             <h1 className="max-w-5xl text-3xl font-black leading-tight sm:text-5xl lg:text-6xl">Mercedes Problems & Diagnostic Guides</h1>
-            <p className="mt-6 max-w-4xl text-base leading-relaxed text-white/70 sm:text-xl">Understand what the symptom feels like, what can cause it, when to stop driving and what evidence should support a repair recommendation. These guides inform; the linked service pages handle commercial repair intent.</p>
+            <p className="mt-6 max-w-4xl text-base leading-relaxed text-white/70 sm:text-xl">Start with the warning or behaviour you can describe: a low suspension corner, harsh gear change, rising temperature, weak AC or a car that will not start. Each guide explains possible causes, when to stop driving and what a workshop should check before recommending repairs.</p>
           </div>
         </section>
 
@@ -108,7 +108,7 @@ const MercedesProblemsIndex = () => {
             {[
               ['1', 'Identify the symptom', 'Record the warning text, temperature, gear, speed, parking duration or other condition that makes it repeatable.'],
               ['2', 'Test the system', 'Combine vehicle-compatible scan data with pressure, voltage, leak, wiring and physical checks relevant to the fault.'],
-              ['3', 'Link to the repair', 'Move to the commercial service page only after the likely system and appropriate repair route are understood.'],
+              ['3', 'Review the findings', 'Ask the workshop to explain the measured fault, proposed work and estimate. You can arrange the first inspection without knowing which component has failed.'],
             ].map(([number, title, copy]) => (
               <article key={number}>
                 <span className="flex h-10 w-10 items-center justify-center rounded-full bg-burnt-orange font-black text-black">{number}</span>
@@ -121,9 +121,9 @@ const MercedesProblemsIndex = () => {
 
         <section className="py-14 sm:py-20">
           <div className="mx-auto max-w-5xl px-4 text-center sm:px-6">
-            <p className="eyebrow mb-4">Need commercial service information?</p>
+            <p className="eyebrow mb-4">Ready to arrange an inspection?</p>
             <h2 className="text-2xl font-black sm:text-4xl">Return to the Mercedes-Benz service hub</h2>
-            <p className="mx-auto mt-4 max-w-3xl text-white/60">The parent hub contains Digi-Tec service coverage, workshop information, booking options and links to the correct Mercedes commercial service page.</p>
+            <p className="mx-auto mt-4 max-w-3xl text-white/60">Find Mercedes workshop services, the Al Quoz location and booking options. Send the model, year, warning message and when the concern occurs so the team can confirm the appropriate first checks.</p>
             <Link to={MERCEDES_HUB_PATH} className="btn-primary mt-8">Explore Mercedes service & repair</Link>
           </div>
         </section>

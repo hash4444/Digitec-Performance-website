@@ -1,0 +1,352 @@
+import { mkdir, readFile, writeFile } from 'node:fs/promises';
+import path from 'node:path';
+import { pathToFileURL } from 'node:url';
+
+const root = process.cwd();
+const distDirectory = path.join(root, 'dist');
+const serverEntry = path.join(root, 'dist-server', 'entry-server.js');
+const discontinuedBrandSlugs = [
+  'abarth-service-dubai',
+  'alfa-romeo-service-dubai',
+  'fiat-service-dubai',
+  'infiniti-service-dubai',
+  'lexus-service-dubai',
+  'lotus-service-dubai',
+  'mazda-service-dubai',
+  'mitsubishi-service-dubai',
+  'nissan-service-dubai',
+  'renault-service-dubai',
+  'toyota-service-dubai',
+];
+const discontinuedArticleSlugs = [
+  'alfa-romeo-best-workshop-dubai',
+  'lexus-best-workshop-dubai',
+  'nissan-best-workshop-dubai',
+  'toyota-best-workshop-dubai',
+];
+const goneRoutePrefixes = discontinuedBrandSlugs.flatMap((slug) => [
+  `/brands/${slug}`,
+  `/ar/brands/${slug}`,
+]);
+const goneRoutes = discontinuedArticleSlugs.flatMap((slug) => [
+  `/blog/${slug}`,
+  `/ar/blog/${slug}`,
+]);
+const coreDiscontinuedServices = [
+  'oil-change',
+  'brake-repair',
+  'transmission-repair',
+  'ac-repair',
+  'suspension-repair',
+  'engine-diagnostics',
+];
+const extendedDiscontinuedServices = [
+  ...coreDiscontinuedServices,
+  'mechanical-repair',
+  'steering-repair',
+  'battery-replacement',
+  'electrical-repair',
+  'exhaust-repair',
+  'fuel-system-repair',
+  'body-repair',
+  'tire-repair',
+];
+const appSource = await readFile(path.join(root, 'src', 'App.tsx'), 'utf8');
+const servicePageSource = await readFile(path.join(root, 'src', 'pages', 'ServicePage.tsx'), 'utf8');
+let publicRoutes;
+try {
+  const { getPublicRoutes } = await import(pathToFileURL(serverEntry).href);
+  publicRoutes = getPublicRoutes();
+} catch {
+  // Read-only fallback for constrained local verification. Production builds
+  // always use the compiled route manifest above.
+  const inventory = await readFile(path.join(root, 'docs', 'seo', 'route-schema-matrix.csv'), 'utf8');
+  publicRoutes = inventory
+    .split(/\r?\n/)
+    .slice(1)
+    .map((line) => line.match(/^"[^"]*","([^"]+)"/)?.[1])
+    .filter(Boolean)
+    .map((routePath) => ({ path: routePath }));
+  if (!publicRoutes.length) throw new Error('No public routes were available for hosting-rule generation');
+}
+await mkdir(distDirectory, { recursive: true });
+
+const redirects = new Map();
+const addRedirect = (source, destination) => {
+  if (!source.startsWith('/') || !destination.startsWith('/')) {
+    throw new Error(`Redirects must use root-relative paths: ${source} -> ${destination}`);
+  }
+  const existing = redirects.get(source);
+  if (existing && existing !== destination) {
+    throw new Error(`Conflicting redirects for ${source}: ${existing} and ${destination}`);
+  }
+  redirects.set(source, destination);
+};
+
+// Keep deploy-time redirects synchronized with every literal React <Navigate>.
+const literalRoutePattern = /<Route\s+path="([^"]+)"\s+element=\{<(?:Navigate|PreserveQueryNavigate)\s+to="([^"]+)"\s+replace\s*\/>\}\s*\/>/g;
+for (const match of appSource.matchAll(literalRoutePattern)) {
+  addRedirect(match[1], match[2]);
+}
+
+const readArrayPairs = (source, declarationName) => {
+  const block = source.match(new RegExp(`const\\s+${declarationName}[^=]*=\\s*\\[([\\s\\S]*?)\\n\\];`))?.[1];
+  if (!block) throw new Error(`Unable to find ${declarationName}`);
+  return [...block.matchAll(/\["([^"]+)",\s*"([^"]+)"\]/g)].map((match) => [match[1], match[2]]);
+};
+
+for (const [serviceSlug, destination] of readArrayPairs(appSource, 'mercedesBrandServiceRedirects')) {
+  addRedirect(`/brands/mercedes-benz-service-dubai/${serviceSlug}`, destination);
+  addRedirect(`/ar/brands/mercedes-benz-service-dubai/${serviceSlug}`, `/ar${destination}`);
+}
+
+const readObjectPairs = (source, declarationName) => {
+  const block = source.match(new RegExp(`const\\s+${declarationName}[^=]*=\\s*\\{([\\s\\S]*?)\\n\\};`))?.[1];
+  if (!block) throw new Error(`Unable to find ${declarationName}`);
+  return [...block.matchAll(/'([^']+)'\s*:\s*'([^']+)'/g)].map((match) => [match[1], match[2]]);
+};
+
+for (const [oldSlug, newSlug] of readObjectPairs(servicePageSource, 'OLD_TO_NEW_SLUG')) {
+  addRedirect(`/services/${oldSlug}`, `/services/${newSlug}`);
+  addRedirect(`/ar/services/${oldSlug}`, `/ar/services/${newSlug}`);
+}
+for (const [oldSlug, destination] of readObjectPairs(servicePageSource, 'EXTERNAL_REDIRECTS')) {
+  addRedirect(`/services/${oldSlug}`, destination);
+  addRedirect(`/ar/services/${oldSlug}`, `/ar${destination}`);
+}
+
+// Legacy English URLs may also have been crawled below /ar. Retain locale when
+// the target has an Arabic equivalent instead of sending visitors to English.
+for (const [source, destination] of [...redirects]) {
+  if (source === '/' || source.startsWith('/ar/')) continue;
+  const localizedSource = `/ar${source}`;
+  const localizedDestination = destination === '/' ? '/ar' : `/ar${destination}`;
+  if (!redirects.has(localizedSource)) addRedirect(localizedSource, localizedDestination);
+}
+
+const flattenDestination = (source) => {
+  let destination = redirects.get(source);
+  const visited = new Set([source]);
+  while (redirects.has(destination)) {
+    if (visited.has(destination)) {
+      throw new Error(`Redirect loop detected from ${source}`);
+    }
+    visited.add(destination);
+    destination = redirects.get(destination);
+  }
+  return destination;
+};
+
+for (const source of redirects.keys()) redirects.set(source, flattenDestination(source));
+
+const validRoutes = new Set(publicRoutes.map((route) => route.path));
+for (const [source, destination] of redirects) {
+  if (validRoutes.has(source)) {
+    throw new Error(`Redirect source is also a public content route: ${source}`);
+  }
+  if (!validRoutes.has(destination)) {
+    throw new Error(`Redirect destination is not a public content route: ${source} -> ${destination}`);
+  }
+}
+
+const sortedRedirects = [...redirects].sort(([left], [right]) => left.localeCompare(right));
+const redirectsFile = [
+  '# Generated by scripts/generate-hosting-rules.mjs. Do not edit by hand.',
+  '# Static 308 redirects preserve authority and avoid redirect chains.',
+  ...sortedRedirects.map(([source, destination]) => `${source} ${destination} 308`),
+  '',
+].join('\n');
+await writeFile(path.join(distDirectory, '_redirects'), redirectsFile);
+
+const workerSource = `// Generated by scripts/generate-hosting-rules.mjs. Do not edit by hand.
+// Works as a Cloudflare Pages advanced-mode worker (env.ASSETS) or as a
+// zone Worker in front of the existing origin (global fetch).
+const CANONICAL_ORIGIN = 'https://digitecme.com';
+const VALID_ROUTES = new Set(${JSON.stringify([...validRoutes].sort())});
+const PERMANENT_REDIRECTS = new Map(${JSON.stringify(sortedRedirects)});
+const GONE_ROUTE_PREFIXES = ${JSON.stringify(goneRoutePrefixes)};
+const GONE_ROUTES = new Set(${JSON.stringify(goneRoutes)});
+
+const normalizePathname = (pathname) => {
+  let normalized = pathname.replace(/\\/{2,}/g, '/').toLowerCase();
+  if (normalized.length > 1) normalized = normalized.replace(/\\/+$/, '');
+  return normalized || '/';
+};
+
+const redirectResponse = (url, pathname) => {
+  const destination = new URL(CANONICAL_ORIGIN);
+  destination.pathname = pathname;
+  destination.search = url.search;
+  return Response.redirect(destination.toString(), 308);
+};
+
+const originFetchFor = (env) => env?.ASSETS?.fetch
+  ? env.ASSETS.fetch.bind(env.ASSETS)
+  : fetch;
+
+const brandedNotFound = async (request, env, url) => {
+  const originFetch = originFetchFor(env);
+  const notFoundUrl = new URL('/404.html', url);
+  notFoundUrl.hostname = 'digitecme.com';
+  notFoundUrl.protocol = 'https:';
+  const notFoundRequest = new Request(notFoundUrl, {
+    method: 'GET',
+    headers: request.headers,
+    redirect: 'manual',
+  });
+  const page = await originFetch(notFoundRequest);
+  const headers = new Headers(page.headers);
+  headers.set('Cache-Control', 'no-cache, must-revalidate, max-age=0');
+  headers.set('X-Robots-Tag', 'noindex, follow');
+  return new Response(request.method === 'HEAD' ? null : page.body, {
+    status: 404,
+    statusText: 'Not Found',
+    headers,
+  });
+};
+
+const brandedGone = async (request, env, url) => {
+  const originFetch = originFetchFor(env);
+  const notFoundUrl = new URL('/404.html', url);
+  notFoundUrl.hostname = 'digitecme.com';
+  notFoundUrl.protocol = 'https:';
+  const page = await originFetch(new Request(notFoundUrl, {
+    method: 'GET',
+    headers: request.headers,
+    redirect: 'manual',
+  }));
+  const headers = new Headers(page.headers);
+  headers.set('Cache-Control', 'no-cache, must-revalidate, max-age=0');
+  return new Response(request.method === 'HEAD' ? null : page.body, {
+    status: 410,
+    statusText: 'Gone',
+    headers,
+  });
+};
+
+export const handleRequest = async (request, env) => {
+  const url = new URL(request.url);
+  const method = request.method.toUpperCase();
+
+  // Never interfere with API/function traffic or non-navigation mutations.
+  if (!['GET', 'HEAD'].includes(method) || url.pathname.startsWith('/functions/')) {
+    return originFetchFor(env)(request);
+  }
+
+  // Content routes are case-insensitive and canonicalized to lowercase. Static
+  // asset names are case-sensitive, so preserve their exact path (notably
+  // BingSiteAuth.xml, whose casing is prescribed by Bing Webmaster Tools).
+  const isStaticAsset = /\\.[a-z0-9]{1,12}$/i.test(url.pathname) || url.pathname.startsWith('/cdn-cgi/');
+  const normalizedPath = isStaticAsset ? url.pathname : normalizePathname(url.pathname);
+
+  // One permanent hop covers http/www, case, duplicate slashes, trailing slash,
+  // and any historical path at the same time.
+  const legacyDestination = PERMANENT_REDIRECTS.get(normalizedPath);
+  if (legacyDestination) return redirectResponse(url, legacyDestination);
+  if (url.protocol !== 'https:' || url.hostname !== 'digitecme.com' || normalizedPath !== url.pathname) {
+    return redirectResponse(url, normalizedPath);
+  }
+
+  const isGoneRoute = GONE_ROUTES.has(normalizedPath)
+    || GONE_ROUTE_PREFIXES.some((prefix) => normalizedPath === prefix || normalizedPath.startsWith(prefix + '/'));
+  if (isGoneRoute) return brandedGone(request, env, url);
+
+  if (VALID_ROUTES.has(normalizedPath)) return originFetchFor(env)(request);
+
+  // Static files are not content routes. Let the asset server resolve them, but
+  // convert a SPA HTML fallback into a genuine 404 when the file is missing.
+  if (isStaticAsset) {
+    const response = await originFetchFor(env)(request);
+    const contentType = response.headers.get('content-type') || '';
+    if (response.status !== 200 || !contentType.includes('text/html')) return response;
+  }
+
+  return brandedNotFound(request, env, url);
+};
+
+export default {
+  fetch(request, env) {
+    return handleRequest(request, env);
+  },
+};
+`;
+await writeFile(path.join(distDirectory, '_worker.js'), workerSource);
+const cloudflareDirectory = path.join(root, 'cloudflare');
+await mkdir(cloudflareDirectory, { recursive: true });
+await writeFile(path.join(cloudflareDirectory, 'digitec-seo-router.js'), workerSource);
+
+const docsDirectory = path.join(root, 'docs', 'seo');
+await mkdir(docsDirectory, { recursive: true });
+const removedUrlRows = [['url', 'status', 'reason']];
+for (const brandSlug of discontinuedBrandSlugs) {
+  const serviceSlugs = ['nissan-service-dubai', 'toyota-service-dubai'].includes(brandSlug)
+    ? extendedDiscontinuedServices
+    : coreDiscontinuedServices;
+  for (const localePrefix of ['', '/ar']) {
+    removedUrlRows.push([`https://digitecme.com${localePrefix}/brands/${brandSlug}`, '410', 'Discontinued brand marketing page']);
+    for (const serviceSlug of serviceSlugs) {
+      removedUrlRows.push([`https://digitecme.com${localePrefix}/brands/${brandSlug}/${serviceSlug}`, '410', 'Discontinued brand service page']);
+    }
+  }
+}
+for (const articleSlug of discontinuedArticleSlugs) {
+  for (const localePrefix of ['', '/ar']) {
+    removedUrlRows.push([`https://digitecme.com${localePrefix}/blog/${articleSlug}`, '410', 'Discontinued commercial brand article']);
+  }
+}
+const removedUrlsCsv = removedUrlRows
+  .map((row) => row.map((value) => `"${value.replaceAll('"', '""')}"`).join(','))
+  .join('\n') + '\n';
+await writeFile(path.join(docsDirectory, 'removed-brand-urls.csv'), removedUrlsCsv);
+// Cloudflare Bulk Redirect import format:
+// source,target,status,preserve_query,include_subdomains,subpath,preserve_suffix
+// Source omits the scheme so both HTTP and HTTPS historical links match.
+// Cloudflare requires no header row.
+const csv = [
+  ...sortedRedirects.map(([source, destination]) =>
+    `"digitecme.com${source}","https://digitecme.com${destination}",301,TRUE,FALSE,FALSE,FALSE`),
+  '',
+].join('\n');
+await writeFile(path.join(docsDirectory, 'permanent-redirects.csv'), csv);
+
+// A scoped zone handler for the Mercedes release. Unrelated URLs and all
+// mutation/API traffic retain their existing origin behavior.
+const mercedesPath = (value) => /(?:^|\/)(?:best-)?mercedes(?:-|\/|$)/.test(value);
+const mercedesAliasMap = new Map(sortedRedirects.filter(([source]) => mercedesPath(source) && !source.includes(':')));
+// React parameter placeholders are not literal HTTP paths. Expand only known
+// English model/problem/case routes into their existing Arabic hub fallback.
+for (const route of validRoutes) {
+  if (/^\/mercedes\/(models|problems|case-studies)\//.test(route)) mercedesAliasMap.set(`/ar${route}`, '/ar/brands/mercedes-benz-service-dubai');
+}
+const mercedesAliases = [...mercedesAliasMap].sort(([a], [b]) => a.localeCompare(b));
+const mercedesCanonicalPaths = [...validRoutes].filter(mercedesPath);
+const mercedesWorker = `// Generated by scripts/generate-hosting-rules.mjs; Mercedes routes only.
+export const aliases = new Map(${JSON.stringify(mercedesAliases)});
+export const canonicalPaths = new Set(${JSON.stringify(mercedesCanonicalPaths)});
+export async function handleRequest(request, originFetch = fetch) {
+  const url = new URL(request.url);
+  if (!['GET', 'HEAD'].includes(request.method) || !['digitecme.com', 'www.digitecme.com'].includes(url.hostname)) return originFetch(request);
+  const normalized = url.pathname.replace(/\\/{2,}/g, '/').toLowerCase().replace(/\\/+$/, '') || '/';
+  const target = aliases.get(normalized) || (canonicalPaths.has(normalized) ? normalized : undefined);
+  if (!target) return originFetch(request);
+  const destination = new URL('https://digitecme.com');
+  destination.pathname = target;
+  destination.search = url.search;
+  if (destination.href === url.href) return originFetch(request);
+  return Response.redirect(destination.href, 308);
+}
+export default { fetch(request) { return handleRequest(request); } };
+`;
+await writeFile(path.join(cloudflareDirectory, 'mercedes-seo-router.js'), mercedesWorker);
+// Exact Cloudflare Bulk Redirect entries: apex/www, slash/no-slash, no subpaths.
+const mercedesBulk = new Map(mercedesAliases.flatMap(([source, target]) => [[source, target], [source + '/', target]]));
+for (const target of mercedesCanonicalPaths) mercedesBulk.set(target + '/', target);
+const mercedesCsvRows = [...mercedesBulk].flatMap(([source, target]) => ['digitecme.com', 'www.digitecme.com'].map((host) => `"${host}${source}","https://digitecme.com${target}",308,TRUE,FALSE,FALSE,FALSE`));
+for (const target of mercedesCanonicalPaths) {
+  mercedesCsvRows.push(`"www.digitecme.com${target}","https://digitecme.com${target}",308,TRUE,FALSE,FALSE,FALSE`);
+  mercedesCsvRows.push(`"http://digitecme.com${target}","https://digitecme.com${target}",308,TRUE,FALSE,FALSE,FALSE`);
+}
+const mercedesCsv = mercedesCsvRows.join('\n') + '\n';
+await writeFile(path.join(docsDirectory, 'mercedes-permanent-redirects.csv'), mercedesCsv);
+
+console.log(`Generated ${sortedRedirects.length} permanent redirects and an edge route guard for ${validRoutes.size} public routes.`);

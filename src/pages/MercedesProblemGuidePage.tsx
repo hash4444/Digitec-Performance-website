@@ -14,7 +14,6 @@ import {
   MERCEDES_GUIDE_PUBLISHED,
   MERCEDES_PROBLEMS_PATH,
   getMercedesProblemGuide,
-  mercedesProblemGuides,
 } from '@/data/mercedesProblemGuides';
 import { useSeo } from '@/hooks/use-seo';
 import { buildArticle, buildBreadcrumb, buildFAQ, buildWebPage, pageGraph, SITE_URL } from '@/lib/schema';
@@ -81,8 +80,10 @@ const MercedesProblemGuidePage = () => {
 
   if (!guide) return <Navigate to={MERCEDES_PROBLEMS_PATH} replace />;
 
-  const index = mercedesProblemGuides.findIndex((item) => item.slug === guide.slug);
-  const adjacent = [mercedesProblemGuides[index - 1], mercedesProblemGuides[index + 1]].filter(Boolean);
+  const relatedGuides = guide.relatedProblemSlugs.flatMap((relatedSlug) => {
+    const related = getMercedesProblemGuide(relatedSlug);
+    return related && related.slug !== guide.slug ? [related] : [];
+  });
   const whatsappText = encodeURIComponent(`Hi, I need a Mercedes diagnostic appointment. The symptom is: ${guide.h1}. My model/year is ____.`);
 
   return (
@@ -111,7 +112,7 @@ const MercedesProblemGuidePage = () => {
             </div>
             <h1 className="max-w-4xl text-3xl font-black leading-tight sm:text-5xl lg:text-6xl">{guide.h1}</h1>
             <p className="mt-6 max-w-4xl text-base leading-relaxed text-white/70 sm:text-xl">{guide.summary}</p>
-            <p className="mt-6 text-sm text-white/45">Reviewed for diagnostic intent on {reviewedLabel} · This guide does not replace inspection of the exact vehicle.</p>
+            <p className="mt-6 text-sm text-white/45">Updated {reviewedLabel} · The next step depends on inspection of your vehicle.</p>
           </div>
         </section>
 
@@ -120,7 +121,8 @@ const MercedesProblemGuidePage = () => {
             {guide.answerCards?.length ? (
               <section className="rounded-2xl border border-burnt-orange/30 bg-burnt-orange/[0.08] p-5 sm:p-7" aria-labelledby="short-answer-heading">
                 <p className="text-xs font-bold uppercase tracking-[0.2em] text-burnt-orange">Start here</p>
-                <h2 id="short-answer-heading" className="mt-3 text-xl font-black sm:text-2xl">Match the exact starting pattern to the next check</h2>
+                <h2 id="short-answer-heading" className="mt-3 text-xl font-black sm:text-2xl">{guide.answerHeading}</h2>
+                <p className="mt-3 leading-relaxed text-white/70">{guide.answer}</p>
                 <div className="mt-6 grid gap-3 sm:grid-cols-2">
                   {guide.answerCards.map((item) => (
                     <article key={item.title} className="rounded-xl border border-white/10 bg-black/25 p-4">
@@ -133,8 +135,8 @@ const MercedesProblemGuidePage = () => {
             ) : (
               <section className="rounded-2xl border border-burnt-orange/30 bg-burnt-orange/[0.08] p-5 sm:p-7" aria-labelledby="short-answer-heading">
                 <p className="text-xs font-bold uppercase tracking-[0.2em] text-burnt-orange">Short answer</p>
-                <h2 id="short-answer-heading" className="mt-3 text-xl font-black sm:text-2xl">The symptom is evidence, not a parts diagnosis</h2>
-                <p className="mt-3 leading-relaxed text-white/70">{guide.summary}</p>
+                <h2 id="short-answer-heading" className="mt-3 text-xl font-black sm:text-2xl">{guide.answerHeading}</h2>
+                <p className="mt-3 leading-relaxed text-white/70">{guide.answer}</p>
               </section>
             )}
 
@@ -213,7 +215,7 @@ const MercedesProblemGuidePage = () => {
                   {guide.faqs.map((faq, faqIndex) => (
                     <AccordionItem key={faq.question} value={`faq-${faqIndex}`} className="rounded-xl border border-white/10 bg-white/[0.025] px-5">
                       <AccordionTrigger className="text-left font-bold hover:text-burnt-orange">{faq.question}</AccordionTrigger>
-                      <AccordionContent className="text-sm leading-relaxed text-white/65">{faq.answer}</AccordionContent>
+                      <AccordionContent forceMount className="text-sm leading-relaxed text-white/65">{faq.answer}</AccordionContent>
                     </AccordionItem>
                   ))}
                 </Accordion>
@@ -223,8 +225,8 @@ const MercedesProblemGuidePage = () => {
 
           <aside className="space-y-5 lg:sticky lg:top-24 lg:self-start">
             <section className="rounded-2xl border border-burnt-orange/30 bg-burnt-orange/[0.08] p-5">
-              <p className="text-xs font-bold uppercase tracking-[0.18em] text-burnt-orange">After diagnosis</p>
-              <h2 className="mt-3 text-lg font-black">Related commercial service</h2>
+              <p className="text-xs font-bold uppercase tracking-[0.18em] text-burnt-orange">Arrange an inspection</p>
+              <h2 className="mt-3 text-lg font-black">Diagnosis and repair options</h2>
               <div className="mt-4 space-y-4">
                 {guide.relatedServices.map((item) => (
                   <div key={item.path}>
@@ -254,9 +256,9 @@ const MercedesProblemGuidePage = () => {
 
         <section className="border-t border-white/5 py-12 sm:py-16">
           <div className="mx-auto max-w-6xl px-4 sm:px-6">
-            <h2 className="text-xl font-black sm:text-2xl">Continue through the Mercedes knowledge cluster</h2>
+            <h2 className="text-xl font-black sm:text-2xl">Related symptoms and warning guides</h2>
             <div className="mt-6 grid gap-4 md:grid-cols-2">
-              {adjacent.map((item) => (
+              {relatedGuides.map((item) => (
                 <Link key={item.path} to={item.path} className="card-premium group rounded-2xl p-5">
                   <p className="text-xs font-bold uppercase tracking-[0.18em] text-burnt-orange">Diagnostic guide</p>
                   <h3 className="mt-2 font-bold group-hover:text-burnt-orange">{item.h1}</h3>

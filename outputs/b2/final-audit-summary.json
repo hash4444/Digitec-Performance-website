@@ -1,0 +1,62 @@
+{
+  "routes": 1247,
+  "porsche_urls_reviewed": 101,
+  "porsche_urls_changed": 34,
+  "new_urls": 0,
+  "normalized_keywords": 487,
+  "measured_original_gsc_normalized_terms": 89,
+  "latest_six_month_query_rows": 60,
+  "latest_six_month_impressions": 2925,
+  "latest_six_month_clicks": 2,
+  "coverage_classes": {
+    "COVERED — INFORMATIONAL GUIDE": 24,
+    "COVERED — PRIMARY": 224,
+    "COVERED — SYSTEM PAGE": 10,
+    "COVERED — SECTION": 128,
+    "COVERED — MODEL PAGE": 14,
+    "COVERED — PROBLEM GUIDE": 31,
+    "NOT TARGETED — INTENTIONALLY": 25,
+    "COVERED — SECONDARY": 31
+  },
+  "remaining_gaps": 0,
+  "unresolved_owner_conflicts": 0,
+  "route_policy_changes": [],
+  "seo_policy_changes": [],
+  "lastmod_updates": 34,
+  "mercedes_html_changes": [
+    "/ar/brands/mercedes-benz-service-dubai",
+    "/brands/mercedes-benz-service-dubai"
+  ],
+  "mercedes_content_regressions": [],
+  "protected_file_changes": [
+    {
+      "file": "cloudflare/routing-response-data.js",
+      "byte_identical": false
+    }
+  ],
+  "porsche_internal_links_checked": 1412,
+  "broken_links": [],
+  "redirecting_internal_links": [],
+  "missing_fragments": [],
+  "orphan_porsche_pages": [],
+  "max_porsche_crawl_depth": 3,
+  "faq_schema_pairs": 114,
+  "faq_visibility_issues": [],
+  "schema_types": {
+    "WebPage": 38,
+    "BreadcrumbList": 101,
+    "Service": 42,
+    "FAQPage": 34,
+    "ItemPage": 61,
+    "BlogPosting": 61,
+    "Brand": 30,
+    "ItemList": 3,
+    "CollectionPage": 2
+  },
+  "schema_issues": [],
+  "hreflang_links_checked": 242,
+  "hreflang_issues": [],
+  "free_diagnostic_claims": [],
+  "paragraph_repeat_pairs_4plus": [],
+  "initial_html_failures": []
+}

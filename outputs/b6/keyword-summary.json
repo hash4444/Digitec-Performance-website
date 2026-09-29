@@ -1,0 +1,82 @@
+{
+  "range-rover": {
+    "source_observations": 518,
+    "raw_terms": 402,
+    "normalized_terms": 397,
+    "measured_original_gsc_terms": 34,
+    "latest_gsc_rows": 15,
+    "unresolved_conflicts": 0,
+    "owner_observations": {
+      "/brands/range-rover-service-dubai": 251,
+      "/brands/range-rover-service-dubai/body-repair": 33,
+      "/brands/range-rover-service-dubai/ac-repair": 20,
+      "NOT TARGETED": 8,
+      "/brands/range-rover-service-dubai/transmission-repair": 33,
+      "/brands/range-rover-service-dubai/mechanical-repair": 34,
+      "/brands/range-rover-service-dubai/suspension-repair": 32,
+      "/brands/range-rover-service-dubai/brake-repair": 21,
+      "/brands/range-rover-service-dubai/engine-diagnostics": 19,
+      "/brands/range-rover-service-dubai/battery-replacement": 5,
+      "/brands/range-rover-service-dubai/electrical-repair": 30,
+      "/brands/range-rover-service-dubai/oil-change": 5,
+      "/blog/range-rover-land-rover-air-suspension-problems-dubai": 3,
+      "/tuning": 10,
+      "/services/ceramic-coating": 2,
+      "/services/paint-protection-dubai": 8,
+      "/blog/range-rover-sport-service-dubai-guide": 1,
+      "/blog/range-rover-vogue-service-dubai-guide": 1,
+      "/best-range-rover-workshop-dubai": 2
+    }
+  },
+  "defender": {
+    "source_observations": 401,
+    "raw_terms": 393,
+    "normalized_terms": 390,
+    "measured_original_gsc_terms": 8,
+    "latest_gsc_rows": 0,
+    "unresolved_conflicts": 0,
+    "owner_observations": {
+      "/brands/defender-service-dubai/suspension-repair": 19,
+      "/brands/defender-service-dubai/ac-repair": 13,
+      "/brands/defender-service-dubai/mechanical-repair": 30,
+      "/brands/defender-service-dubai": 195,
+      "/brands/defender-service-dubai/brake-repair": 19,
+      "/brands/defender-service-dubai/engine-diagnostics": 20,
+      "/brands/defender-service-dubai/battery-replacement": 5,
+      "/brands/defender-service-dubai/electrical-repair": 27,
+      "NOT TARGETED": 5,
+      "/brands/defender-service-dubai/oil-change": 5,
+      "/brands/defender-service-dubai/transmission-repair": 24,
+      "/brands/defender-service-dubai/body-repair": 14,
+      "/tuning": 10,
+      "/services/ceramic-coating": 2,
+      "/services/paint-protection-dubai": 8,
+      "/blog/defender-service-dubai-guide": 5
+    }
+  },
+  "jaguar": {
+    "source_observations": 457,
+    "raw_terms": 396,
+    "normalized_terms": 390,
+    "measured_original_gsc_terms": 20,
+    "latest_gsc_rows": 9,
+    "unresolved_conflicts": 0,
+    "owner_observations": {
+      "/brands/jaguar-service-dubai": 254,
+      "/brands/jaguar-service-dubai/suspension-repair": 18,
+      "/brands/jaguar-service-dubai/ac-repair": 13,
+      "/services/mechanical-repair-dubai": 29,
+      "/brands/jaguar-service-dubai/brake-repair": 19,
+      "/brands/jaguar-service-dubai/engine-diagnostics": 24,
+      "/services/battery-replacement-dubai": 5,
+      "/services/auto-electrical-repair-dubai": 29,
+      "NOT TARGETED": 4,
+      "/brands/jaguar-service-dubai/oil-change": 5,
+      "/brands/jaguar-service-dubai/transmission-repair": 25,
+      "/services/car-body-repair-dubai": 12,
+      "/tuning": 10,
+      "/services/ceramic-coating": 2,
+      "/services/paint-protection-dubai": 8
+    }
+  }
+}

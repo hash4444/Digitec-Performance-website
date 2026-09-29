@@ -1,3 +1,5 @@
+import { serviceDecisionFaqs } from './serviceDecisionFaqs';
+
 /**
  * Brand × Service SEO landing pages.
  *
@@ -169,16 +171,16 @@ export const BRAND_PROFILES: Record<string, BrandProfile> = {
     brandName: 'Porsche',
     shortName: 'Porsche',
     models: ['911 Carrera', '911 Turbo S', '911 GT3', 'Cayman', 'Cayenne', 'Panamera', 'Macan', 'Taycan'],
-    diagnosticTool: 'Porsche-compatible diagnostics; coding or programming functions confirmed per vehicle',
+    diagnosticTool: 'PIWIS 3 diagnostic capability; supported functions confirmed for the vehicle and control unit',
     engineFamily: 'Porsche flat-six, V6, V8 and electric powertrains; exact engine or drive-unit identification confirmed from the VIN',
     engineCodes: ['9A2', 'MDG', 'MCG', 'MDC.WA'],
-    oilSpec: 'Mobil 1 0W-40 A40 for 911, 5W-40 C40 for 9A2 turbo flat-six',
-    oilIntervalKm: 15000,
-    transmissionName: '7-speed PDK (7DT-45 and 7DT-70) and 8-speed Tiptronic S',
-    transmissionFluid: 'Porsche PDK fluid 999.917.080.00',
-    brakeSystem: 'Steel or PCCB Porsche Ceramic Composite Brakes on Turbo S, GT3, and Cayenne Turbo GT',
-    suspensionType: 'PASM adaptive dampers and PDCC active roll stabilisation',
-    acRefrigerant: 'R-1234yf on 992, 9YA Cayenne, and Taycan; R-134a on older platforms',
+    oilSpec: 'vehicle-specific Porsche oil approval and viscosity',
+    oilIntervalKm: 0,
+    transmissionName: 'PDK, Tiptronic or manual gearbox by model',
+    transmissionFluid: 'vehicle-specific transmission fluid',
+    brakeSystem: 'fitted steel, surface-coated or PCCB brake hardware',
+    suspensionType: 'PASM, PDCC or air suspension where fitted',
+    acRefrigerant: 'refrigerant specified on the vehicle label',
     climateNote: 'Cayenne air-suspension and 911 GT3 track-use concerns are assessed against heat exposure, use, history and measured condition.',
     heritageLine: 'Digi-Tec has operated in Dubai since 2002; the Porsche workshop scope is confirmed for each vehicle.',
   },
@@ -205,12 +207,12 @@ export const BRAND_PROFILES: Record<string, BrandProfile> = {
     brandName: 'BMW',
     shortName: 'BMW',
     models: ['3 Series', '5 Series', '7 Series', 'X3', 'X5', 'X7', 'M3', 'M5', 'M8', 'i8'],
-    diagnosticTool: 'BMW-compatible diagnostics; ISTA, E-Sys or ENET functions confirmed per vehicle',
+    diagnosticTool: 'BMW ISTA+ diagnostics; coding and programming functions confirmed for the exact vehicle and control unit',
     engineFamily: 'B58 inline-six, N63 and S63 V8, and S55 and S58 M-power six',
     engineCodes: ['B58', 'B48', 'S55', 'S58', 'N63', 'S63'],
     oilSpec: 'BMW-approved oil matched to the exact engine, model year and market specification',
-    oilIntervalKm: 12000,
-    transmissionName: 'ZF 8HP (8HP50, 8HP70, 8HP76) and DCT M-DCT on F80 and F82',
+    oilIntervalKm: 0,
+    transmissionName: 'the fitted BMW automatic, dual-clutch or manual gearbox, identified by model and generation',
     transmissionFluid: 'gearbox-specific approved fluid confirmed from the fitted ZF 8HP, M-DCT or manual transmission',
     brakeSystem: 'M Compound and optional M Carbon Ceramic on M3, M4, M5, M8',
     suspensionType: 'steel-spring, Adaptive M, rear self-levelling and two-axle air-suspension systems depending on chassis and options',
@@ -277,7 +279,7 @@ export const BRAND_PROFILES: Record<string, BrandProfile> = {
     brandName: 'Ferrari',
     shortName: 'Ferrari',
     models: ['488 GTB', '488 Pista', 'F8 Tributo', 'SF90 Stradale', 'Roma', 'Portofino M', '812 Superfast', '296 GTB', 'Purosangue'],
-    diagnosticTool: 'Ferrari-compatible diagnostics; available SD3, DEIS or other functions are confirmed per vehicle and requested scope',
+    diagnosticTool: 'Ferrari-compatible diagnostic access; supported functions are confirmed for the vehicle and requested scope',
     engineFamily: 'F154 3.9 twin-turbo V8, F140 6.5 V12, and F163 3.0 twin-turbo V6 hybrid',
     engineCodes: ['F154', 'F140', 'F163'],
     oilSpec: 'Ferrari-approved engine oil matched to the exact model, engine, year and market specification',
@@ -370,6 +372,15 @@ BRAND_PROFILES['range-rover-service-dubai'] = {
   brandName: 'Range Rover',
   shortName: 'Range Rover',
   models: ['Range Rover', 'Range Rover Sport', 'Range Rover Velar', 'Range Rover Evoque'],
+  engineFamily: 'model- and generation-specific petrol, diesel, hybrid or electrified powertrain',
+  engineCodes: ['engine or electric drive identification confirmed from the VIN'],
+  oilSpec: 'oil specification confirmed for the exact engine and market; not applicable to an electric drive',
+  oilIntervalKm: 0,
+  transmissionName: 'transmission or electric drive system fitted to the exact vehicle',
+  transmissionFluid: 'fluid and procedure confirmed for the fitted transmission',
+  brakeSystem: 'braking hardware and electronic functions confirmed for the exact specification',
+  suspensionType: 'coil, adaptive or air suspension according to model and fitted options',
+  acRefrigerant: 'refrigerant confirmed from the vehicle label and service data',
   heritageLine: 'Digi-Tec has operated in Dubai since 2002; Range Rover workshop scope is confirmed for the exact vehicle.',
 };
 
@@ -379,6 +390,15 @@ BRAND_PROFILES['defender-service-dubai'] = {
   brandName: 'Defender',
   shortName: 'Defender',
   models: ['Defender 90', 'Defender 110', 'Defender 130', 'Defender V8', 'Defender OCTA'],
+  engineFamily: 'model- and generation-specific petrol, diesel or electrified powertrain',
+  engineCodes: ['engine identification confirmed from the VIN'],
+  oilSpec: 'oil specification confirmed for the exact engine and market',
+  oilIntervalKm: 0,
+  transmissionName: 'transmission and four-wheel-drive system fitted to the exact vehicle',
+  transmissionFluid: 'fluid and procedure confirmed for the fitted gearbox and driveline',
+  brakeSystem: 'braking hardware and electronic functions confirmed for the exact specification',
+  suspensionType: 'coil or air suspension according to model and fitted options',
+  acRefrigerant: 'refrigerant confirmed from the vehicle label and service data',
   heritageLine: 'Digi-Tec has operated in Dubai since 2002; Defender workshop scope is confirmed for the exact vehicle.',
 };
 
@@ -414,10 +434,34 @@ Object.assign(BRAND_PROFILES, {
   'jeep-service-dubai': createAdditionalServiceProfile('jeep-service-dubai', 'Jeep', ['Wrangler', 'Grand Cherokee', 'Gladiator', 'Compass', 'Cherokee'], 'WiTECH-compatible diagnostic access and advanced live-data testing', 'Pentastar V6, Hurricane turbo, and plug-in hybrid platforms', '8-speed automatic and four-wheel-drive drivetrain systems'),
   'maserati-service-dubai': createAdditionalServiceProfile('maserati-service-dubai', 'Maserati', ['Ghibli', 'Quattroporte', 'Levante', 'Grecale', 'GranTurismo', 'MC20'], 'Maserati-compatible diagnostic access and advanced live-data testing', 'V6 twin-turbo, V8, and Nettuno V6 platforms', 'ZF 8-speed automatic and dual-clutch transmission systems'),
   'pagani-service-dubai': createAdditionalServiceProfile('pagani-service-dubai', 'Pagani', ['Huayra', 'Zonda', 'Utopia'], 'compatible multi-brand diagnostics; fault-tracing and workshop scope confirmed per vehicle', 'Mercedes-AMG V12 twin-turbo platforms', 'automated manual and bespoke drivetrain systems'),
-  'volkswagen-service-dubai': createAdditionalServiceProfile('volkswagen-service-dubai', 'Volkswagen', ['Golf', 'Golf GTI', 'Golf R', 'Tiguan', 'Touareg', 'Passat', 'T-Roc'], 'ODIS-compatible diagnostic access and advanced live-data testing', 'TSI petrol, TDI diesel, GTI, R, and plug-in hybrid platforms', 'DSG dual-clutch, automatic, and 4MOTION drivetrain systems'),
+  'volkswagen-service-dubai': createAdditionalServiceProfile('volkswagen-service-dubai', 'Volkswagen', ['Golf', 'Golf GTI', 'Golf R', 'Tiguan', 'Touareg', 'Passat', 'T-Roc'], 'ODIS diagnostic capability with supported fault and live-data functions', 'fitted TSI petrol, TDI diesel or plug-in-hybrid combustion engine identified from the VIN', 'DSG, manual or automatic gearbox fitted to the exact vehicle', {
+    engineCodes: ['engine and gearbox codes confirmed from the VIN before work'],
+    oilSpec: 'engine oil approved for the exact fitted combustion engine; not applicable to ID electric drive',
+    oilIntervalKm: 0,
+    transmissionFluid: 'fluid and service procedure verified for the fitted gearbox code; DSG designs and requirements vary',
+    brakeSystem: 'braking hardware and electronic functions confirmed by model, year and specification',
+    suspensionType: 'conventional or adaptive suspension where fitted, confirmed from vehicle specification',
+    acRefrigerant: 'refrigerant confirmed from the vehicle label and service data',
+  }),
   'volvo-service-dubai': createAdditionalServiceProfile('volvo-service-dubai', 'Volvo', ['XC40', 'XC60', 'XC90', 'S60', 'S90', 'V60', 'EX30'], 'VIDA-compatible diagnostic access and advanced live-data testing', 'turbocharged petrol, mild-hybrid, plug-in hybrid, and electric platforms', 'automatic, hybrid, and all-wheel-drive drivetrain systems'),
-  'jetour-service-dubai': createAdditionalServiceProfile('jetour-service-dubai', 'Jetour', ['T2', 'X70', 'X90 Plus', 'Dashing', 'X50'], 'compatible diagnostic access and live-data functions, confirmed per vehicle', 'turbocharged petrol and hybrid platforms', 'dual-clutch, automatic, and all-wheel-drive drivetrain systems'),
-  'cadillac-service-dubai': createAdditionalServiceProfile('cadillac-service-dubai', 'Cadillac', ['Escalade', 'CT4', 'CT5', 'XT4', 'XT5', 'XT6', 'Lyriq'], 'GM GDS2-compatible diagnostic access and advanced live-data testing', 'turbocharged petrol, V8, Super Cruise, and electric platforms', 'automatic, all-wheel-drive, and performance drivetrain systems'),
+  'jetour-service-dubai': createAdditionalServiceProfile('jetour-service-dubai', 'Jetour', ['T2', 'X70', 'X70 Plus', 'X90 Plus', 'Dashing'], 'compatible diagnostic and live-data functions confirmed for the exact vehicle', 'model-specific petrol or electrified powertrain identified from the VIN', 'gearbox and driveline fitted to the exact model and year', {
+    engineCodes: ['engine and powertrain identified from the VIN before work'],
+    oilSpec: 'engine oil confirmed for the exact fitted combustion engine and market specification',
+    oilIntervalKm: 0,
+    transmissionFluid: 'fluid and service procedure confirmed for the fitted gearbox; no universal Jetour transmission requirement',
+    brakeSystem: 'braking hardware and electronic functions confirmed by model and specification',
+    suspensionType: 'fitted suspension and steering hardware confirmed from the vehicle',
+    acRefrigerant: 'refrigerant confirmed from the vehicle label and service information',
+  }),
+  'cadillac-service-dubai': createAdditionalServiceProfile('cadillac-service-dubai', 'Cadillac', ['Escalade', 'CT4', 'CT5', 'XT4', 'XT5', 'XT6', 'Lyriq'], 'available GM-compatible diagnostic functions confirmed for the exact vehicle and workshop access', 'model-specific petrol or electric architecture identified from the VIN; Super Cruise is a driver-assistance feature, not a powertrain', 'fitted automatic gearbox, all-wheel-drive system or electric drive confirmed for the exact vehicle', {
+    engineCodes: ['model-specific combustion engine or electric drive identified before work'],
+    oilSpec: 'engine oil matched to the exact combustion engine and applicable vehicle requirements; not applicable to electric drive',
+    oilIntervalKm: 0,
+    transmissionFluid: 'fluid and procedure confirmed for the fitted gearbox; an electric drive is not assumed to use a combustion-model gearbox',
+    brakeSystem: 'fitted mechanical and electronic brake systems confirmed by model, year and specification',
+    suspensionType: 'conventional suspension, Magnetic Ride Control or Air Ride Adaptive Suspension where fitted',
+    acRefrigerant: 'refrigerant confirmed from the vehicle label and service data',
+  }),
   'chevrolet-service-dubai': createAdditionalServiceProfile('chevrolet-service-dubai', 'Chevrolet', ['Tahoe', 'Suburban', 'Silverado', 'Camaro', 'Traverse', 'Captiva'], 'GM GDS2-compatible diagnostics with module programming and live-data testing', 'EcoTec petrol, small-block V8, turbocharged, and Duramax diesel platforms', 'GM 6-speed, 8-speed, and 10-speed automatic transmissions', {
     engineCodes: ['EcoTec', 'LT V8', 'Duramax'],
     brakeSystem: 'GM ABS and electronic brake-control systems with performance Brembo packages where fitted',
@@ -455,10 +499,14 @@ Object.assign(BRAND_PROFILES, {
     engineCodes: ['Vortec V8', 'Duramax', 'Ultium electric'],
     suspensionType: 'heavy-duty independent suspension and Adaptive Air Ride on Hummer EV',
   }),
-  'jaguar-service-dubai': createAdditionalServiceProfile('jaguar-service-dubai', 'Jaguar', ['F-PACE', 'F-TYPE', 'XE', 'XF', 'XJ', 'I-PACE'], 'JLR SDD and Pathfinder-compatible diagnostics with coding and live-data testing', 'Ingenium four- and six-cylinder, AJ-V8, and electric platforms', 'ZF 8-speed automatic, all-wheel-drive, and electric drive systems', {
+  'jaguar-service-dubai': createAdditionalServiceProfile('jaguar-service-dubai', 'Jaguar', ['F-PACE', 'F-TYPE', 'XE', 'XF', 'XJ', 'I-PACE'], 'JLR-compatible diagnostic functions confirmed for the exact vehicle and available access', 'model-specific combustion or electric architecture confirmed from the VIN', 'fitted gearbox, driveline or electric drive confirmed for the exact vehicle', {
     engineCodes: ['Ingenium', 'AJ133 V8', 'electric drive'],
-    brakeSystem: 'Jaguar electronic brake-control systems with performance packages on R and SVR models',
-    suspensionType: 'Adaptive Dynamics, air suspension, and performance damper systems depending on model',
+    oilSpec: 'engine oil matched to the exact combustion engine; not applicable to I-PACE electric drive',
+    oilIntervalKm: 0,
+    transmissionFluid: 'fluid and procedure confirmed for the fitted gearbox; not an ICE gearbox on I-PACE',
+    brakeSystem: 'braking hardware and electronic functions confirmed for the exact model',
+    suspensionType: 'conventional, adaptive or air suspension where fitted, depending on model',
+    acRefrigerant: 'refrigerant confirmed from the vehicle label and service data',
   }),
   'koenigsegg-service-dubai': createAdditionalServiceProfile('koenigsegg-service-dubai', 'Koenigsegg', ['Agera', 'Regera', 'Jesko', 'Gemera', 'CCX'], 'compatible diagnostic and model-specific workshop requirements confirmed before booking', 'twin-turbo V8 and high-voltage hybrid hypercar platforms', 'multi-clutch Light Speed Transmission, Direct Drive, and automated manual systems', {
     engineCodes: ['Koenigsegg twin-turbo V8', 'hybrid drive'],
@@ -497,14 +545,15 @@ Object.assign(BRAND_PROFILES, {
     acRefrigerant: 'vehicle-specified refrigerant confirmed from the under-bonnet label before service',
     climateNote: 'BYD battery cooling, cabin air conditioning, low-voltage systems, tyres, brakes, and suspension are inspected with Dubai heat and high cabin-cooling demand in mind.',
   }),
-  'rox-service-dubai': createAdditionalServiceProfile('rox-service-dubai', 'ROX', ['ROX 01'], 'ROX-compatible diagnostics with high-voltage safety procedures, live-data testing, and module checks', 'range-extender electric, high-voltage battery, and generator-engine platforms', 'electric drive units, range-extender generator systems, and all-wheel-drive drivetrain systems', {
-    engineCodes: ['range-extender electric drive', 'generator engine', 'high-voltage battery system'],
-    oilSpec: 'engine oil matched to the range-extender generator requirement',
-    transmissionFluid: 'electric drive-unit fluid matched to the vehicle-specific requirement',
+  'rox-service-dubai': createAdditionalServiceProfile('rox-service-dubai', 'ROX', ['ROX 01'], 'available low-voltage and comfort-system diagnostic functions confirmed for the exact vehicle; high-voltage access is not assumed', 'electric-drive range-extender architecture with a generator engine; service scope confirmed by system', 'electric drive architecture; drive-unit repair is not offered without verified workshop capability', {
+    engineCodes: ['range-extender generator engine identified from the exact vehicle'],
+    oilSpec: 'generator-engine oil requirement confirmed from the exact vehicle and applicable service information',
+    oilIntervalKm: 0,
+    transmissionFluid: 'drive-system fluid or procedure not quoted without exact vehicle requirements and verified workshop scope',
     brakeSystem: 'regenerative braking integrated with hydraulic ABS and electronic brake-control systems',
     suspensionType: 'SUV suspension with electronic steering, ride-height checks, and comfort-system inspection',
     acRefrigerant: 'vehicle-specified refrigerant confirmed from the under-bonnet label before service',
-    climateNote: 'ROX high-voltage systems, generator cooling, air conditioning, soft-close comfort features, brakes, tyres, and suspension are inspected for Dubai heat and daily SUV use.',
+    climateNote: 'ROX 01 cabin AC, low-voltage, soft-close doors, brakes, tyres and suspension can be assessed against the reported concern and Dubai use. High-voltage and traction-battery work is outside the confirmed scope.',
   }),
 });
 
@@ -552,7 +601,7 @@ const SERVICE_META: Record<ServiceKey, { name: string; serviceType: string; labe
   'fuel-system-repair': { name: 'Fuel System Repair', serviceType: 'Fuel Injection & Delivery Repair', label: 'Fuel System Repair' },
   'body-repair': { name: 'Body Repair', serviceType: 'Bodywork & Paint Repair', label: 'Body Repair' },
   'tire-repair': { name: 'Tyre Repair', serviceType: 'Tyre Repair & Replacement', label: 'Tyre Repair' },
-  'soft-close-door-installation': { name: 'Soft Close Door Installation', serviceType: 'Soft Close Door Installation & Repair', label: 'Soft Close Installation' },
+  'soft-close-door-installation': { name: 'Soft Close Door Installation', serviceType: 'Soft Close Door Installation', label: 'Soft Close Installation' },
 };
 
 type Composed = Omit<BrandServiceCombo, 'brandSlug' | 'serviceSlug' | 'brandName' | 'serviceName' | 'serviceType' | 'whatsAppMessage'>;
@@ -680,7 +729,7 @@ function composeAcRepair(p: BrandProfile): Composed {
     ],
     partsCopy: `Compressors, condensers, valves, evaporators, driers and related components are selected for the exact VIN and fitted climate system. Genuine, established OE-supplier or other suitable customer-approved options may be quoted subject to compatibility and availability. Refrigerant type and quantity are verified from the vehicle before charging.`,
     faqs: [
-      { question: `How much does ${p.brandName} AC regas cost in Dubai?`, answer: `A standard ${p.acRefrigerant} regas with UV dye leak check is priced transparently on quote. If the system is losing charge, a regas alone is not the answer: we quote the underlying repair rather than sell a temporary fix.` },
+      { question: `How much does ${p.brandName} AC regas cost in Dubai?`, answer: 'Cost depends on the refrigerant specified on the vehicle label, the required quantity, the testing scope and any leak or component repair. Ask for the inspection and recharge items to be separated in the estimate; adding refrigerant alone does not resolve an underlying leak.' },
       { question: `Which refrigerant does my ${p.brandName} use?`, answer: `${p.acRefrigerant} applies to some relevant platforms, but the underhood label and vehicle details determine the correct refrigerant. It is verified before connection or charging.` },
       { question: 'Why does AC blow warm at idle but cold on the motorway?', answer: 'Possible causes include condenser airflow, cooling-fan performance, refrigerant charge, pressure control or compressor condition. Testing is needed before recommending cleaning or replacement.' },
       { question: 'How often should the AC system be serviced?', answer: 'Follow the vehicle schedule and respond to reduced performance, odour or unusual noise. Inspection, filter and refrigerant recommendations depend on the fitted system and measured condition.' },
@@ -734,7 +783,7 @@ function composeDiagnostics(p: BrandProfile): Composed {
       'Check engine light, EML, or amber engine warning on the cluster',
       `${p.brandName}-specific message such as "Reduced Engine Power" or "Consult Workshop"`,
       'Rough idle, misfire, or noticeable hesitation under throttle',
-      'Failed emissions test or Nol technical test refusal',
+      'Emissions-related fault or unsuccessful vehicle inspection',
       `Cluster or infotainment communication fault after a battery disconnect on the ${p.engineCodes[0]}`,
       'Loss of turbo boost, limp-home mode, or unusual exhaust smoke colour',
     ],
@@ -822,6 +871,7 @@ function composeExtendedService(p: BrandProfile, key: ExtendedServiceKey): Compo
     processSteps: copy.process.map((title, index) => ({ title, description: EXTENDED_SERVICE_STEPS[key][index] })),
     partsCopy: `Parts for ${copy.parts} are selected for the exact vehicle and agreed repair. The quotation may identify genuine, established OE-supplier, remanufactured or other suitable customer-approved options, subject to compatibility and availability.`,
     faqs: [
+      ...(serviceDecisionFaqs[key] ?? []),
       { question: `Do you handle ${p.brandName} ${meta.name.toLowerCase()} in Dubai?`, answer: `The concern can be inspected and a vehicle-specific repair route proposed. Diagnostic functions, procedures, parts and repair availability are confirmed before work is accepted.` },
       { question: `How long does ${p.brandName} ${meta.name.toLowerCase()} take?`, answer: 'Timing depends on inspection findings, access, parts and any supported calibration or programming requirements. The expected timeline is confirmed with the quotation.' },
       { question: `Do you use genuine ${p.brandName} parts?`, answer: `A quotation may specify genuine ${p.brandName}, established OE-supplier, remanufactured or another suitable customer-approved option. Compatibility, source and availability are documented before ordering.` },
@@ -941,6 +991,120 @@ function refineFerrariContent(key: ServiceKey, composed: Composed): Composed {
   return base;
 }
 
+function refineVolkswagenContent(key: ServiceKey, base: Composed): Composed {
+  if (key === 'engine-diagnostics') return {
+    ...base,
+    h1: 'Volkswagen Diagnostics & ODIS in Dubai',
+    metaTitle: 'Volkswagen Diagnostics & ODIS Dubai | DIGI-TEC',
+    metaDescription: 'Volkswagen EPC, engine and gearbox warning diagnosis with ODIS-supported fault and live-data checks in Al Quoz. Scope depends on the fitted vehicle and module.',
+    heroCopy: 'An EPC light, check-engine warning, rough running or gearbox message calls for fault investigation, not a parts guess. DIGI-TEC uses available ODIS functions, the warning history and suitable physical checks to narrow the affected system. Module access, guided functions, coding, adaptations and programming are confirmed for the exact Volkswagen before they are included in a scope.',
+    symptoms: ['EPC or check-engine warning with rough running or reduced power', 'A gearbox warning or shift complaint requiring fault investigation', 'Intermittent warning after battery, wiring or previous repair work', 'A fault code that needs live-data and physical confirmation'],
+    processSteps: [
+      { title: 'Record the exact warning', description: 'Note the message, operating conditions, recent work and whether power or driveability changed.' },
+      { title: 'Confirm ODIS access', description: 'Identify the vehicle and modules, then read supported fault information and live data without assuming every function is available.' },
+      { title: 'Test the affected system', description: 'Use electrical, mechanical or transmission checks appropriate to the symptom and data; a fault code alone is not a component diagnosis.' },
+      { title: 'Explain the repair path', description: 'Separate confirmed faults from further testing and quote supported repair, coding or service functions before work.' },
+    ],
+    faqs: [
+      { question: 'What does a Volkswagen EPC light mean?', answer: 'It indicates an electronic control concern that needs vehicle-specific diagnosis. Record whether the car has reduced power or rough running; limit driving if it is not operating normally and arrange an assessment.' },
+      { question: 'Does an EPC warning always mean a throttle-body failure?', answer: 'No. The warning does not identify one component. Fault data, live values and appropriate electrical or mechanical tests are needed before a repair is proposed.' },
+      { question: 'Can ODIS identify every failed part?', answer: 'No. Available fault and guided information helps locate a system or condition; physical checks and symptom context may still be needed.' },
+      { question: 'Can every Volkswagen module be coded or programmed?', answer: 'No universal access is promised. Vehicle year, module, software, security access and the supported workshop function must be confirmed before accepting coding, adaptation or programming work.' },
+    ],
+  };
+  if (key === 'transmission-repair') return {
+    ...base,
+    h1: 'Volkswagen DSG & Transmission Assessment in Dubai',
+    metaTitle: 'Volkswagen DSG & Transmission Assessment Dubai | DIGI-TEC',
+    metaDescription: 'Volkswagen DSG and transmission inspection in Al Quoz. Gearbox code, fluid requirements and supported diagnostics are checked before service or repair is proposed.',
+    heroCopy: 'A DSG shift complaint, warning or service enquiry starts with identifying the gearbox fitted to the Volkswagen. DSG designs, clutch arrangements, fluids and maintenance requirements vary by model and gearbox code. DIGI-TEC reviews the symptom, history and supported diagnostic data before deciding whether fluid service, further mechatronic or clutch testing, or repair is appropriate.',
+    symptoms: ['Jerking, shuddering or hesitation under known driving conditions', 'Delayed engagement, slipping or difficulty selecting a gear', 'A gearbox warning or intermittent shift complaint', 'DSG service due according to the exact gearbox schedule or documented history'],
+    faqs: [
+      { question: 'Does DSG jerking mean the mechatronic unit has failed?', answer: 'No. Clutch behavior, fluid condition, controls, mounts and other faults may need consideration. Diagnosis precedes a component recommendation.' },
+      { question: 'Do all Volkswagen DSG gearboxes use the same fluid and interval?', answer: 'No. The gearbox code, model, year and applicable vehicle requirements determine the correct fluid, procedure and schedule.' },
+      { question: 'Can you assess a DSG fault before gearbox removal?', answer: 'Available fault information, live data, history and external checks can guide the first assessment. Further access or repair scope is explained after findings.' },
+      { question: 'Do you repair every DSG clutch or mechatronic?', answer: 'No universal repair coverage is promised. The fitted unit, findings, parts and supported workshop procedure determine available repair options.' },
+    ],
+  };
+  return base;
+}
+
+function refineB9Content(brandSlug: string, key: ServiceKey, base: Composed): Composed {
+  if (brandSlug === 'jetour-service-dubai' && key === 'ac-repair') return {
+    ...base,
+    heroCopy: 'If a Jetour cabin takes too long to cool or the airflow changes, the first checks should establish what the fitted climate system is doing. DIGI-TEC records the symptom, verifies the refrigerant from the vehicle label and checks cooling performance, leaks and relevant electrical controls before proposing a recharge or component repair.',
+    faqs: [
+      { question: 'Does weak Jetour AC always need a gas refill?', answer: 'No. Airflow, refrigerant loss, condenser condition, controls or another fault may be involved. The vehicle is inspected before refrigerant or parts are proposed.' },
+      { question: 'Is the same refrigerant used in every Jetour?', answer: 'No universal refrigerant is assumed. The vehicle label and applicable service information are checked first.' },
+    ],
+  };
+  if (brandSlug === 'jetour-service-dubai' && key === 'brake-repair') return {
+    ...base,
+    heroCopy: 'Jetour brake noise, vibration or a warning should be checked against the fitted model, wheel and brake hardware. DIGI-TEC measures wear, inspects the hydraulic and electronic systems where applicable, and identifies the cause of the symptom before quoting pads, discs or other parts.',
+    faqs: [
+      { question: 'Does a Jetour brake warning mean the pads are worn out?', answer: 'Not necessarily. The exact warning, fitted sensors, pad condition and brake system need inspection before parts are recommended.' },
+      { question: 'Can vibration have a cause outside the brake disc?', answer: 'Yes. Tyre, wheel, suspension or other conditions can contribute. The concern should be reproduced and inspected before a repair is agreed.' },
+    ],
+  };
+  if (brandSlug === 'jetour-service-dubai' && key === 'engine-diagnostics') return {
+    ...base,
+    h1: 'Jetour Warning-Light & Diagnostic Assessment in Dubai',
+    heroCopy: 'A Jetour warning light, rough running or no-start complaint needs the exact model and fitted system identified before a repair is proposed. DIGI-TEC checks the symptom history, available vehicle data and relevant physical systems. Diagnostic access is confirmed for the vehicle; proprietary tooling, coding and programming are not assumed.',
+    faqs: [
+      { question: 'Can you inspect a Jetour warning light?', answer: 'Yes, request an assessment with the model, year, warning message and symptoms. Compatible diagnostic functions are confirmed before the inspection scope is agreed.' },
+      { question: 'Does a Jetour fault code show which part to replace?', answer: 'No. A code points to a condition or system. Live data and physical tests may be needed before a part is recommended.' },
+      { question: 'Can you program every Jetour module?', answer: 'No. Coding and programming capability is not offered as a universal service; any supported function needs separate vehicle and access confirmation.' },
+    ],
+  };
+  if (brandSlug !== 'rox-service-dubai') return base;
+  if (key === 'ac-repair') return {
+    ...base,
+    heroCopy: 'ROX 01 uses an electrified range-extender architecture, so a cabin-cooling complaint should be assessed from the exact vehicle and climate-system configuration. DIGI-TEC can discuss airflow, temperature performance and supported low-voltage control checks; work on high-voltage thermal, battery or charging systems is not assumed. Refrigerant is identified from the vehicle information before service.',
+    faqs: [
+      { question: 'Is ROX 01 AC service identical to a petrol SUV?', answer: 'No identical procedure is assumed. The fitted climate system, vehicle label, symptoms and available workshop scope are checked first.' },
+      { question: 'Does a ROX 01 cooling concern mean high-voltage battery repair?', answer: 'No. Cabin AC symptoms and high-voltage thermal concerns must be distinguished; high-voltage battery repair is not offered without verified capability.' },
+    ],
+  };
+  if (key === 'brake-repair') return {
+    ...base,
+    heroCopy: 'ROX 01 combines regenerative braking with conventional hydraulic braking. A pedal, warning, noise or vibration concern needs the fitted system and operating conditions recorded before the hydraulic hardware and supported electronic functions are inspected. DIGI-TEC confirms the safe workshop scope for the exact vehicle before brake work is quoted.',
+    faqs: [
+      { question: 'Does regenerative braking replace ROX 01 brake inspection?', answer: 'No. The fitted hydraulic brake parts, fluid, warning and vehicle behaviour still need inspection when a concern is reported.' },
+      { question: 'Does a ROX 01 brake warning identify the failed part?', answer: 'No. Warning context, available data and physical checks are needed before a repair recommendation.' },
+    ],
+  };
+  if (key === 'engine-diagnostics') return {
+    ...base,
+    h1: 'ROX 01 Diagnostic Assessment in Dubai',
+    heroCopy: 'The ROX 01 is driven by electric motors with a generator range extender. A warning, screen concern or driveability change is recorded against the exact vehicle before available low-voltage or comfort-system checks are proposed. DIGI-TEC does not assume proprietary diagnostic access, high-voltage battery repair, electric-drive repair or charging-system repair.',
+    symptoms: ['A warning message or changed driveability that needs assessment', 'A low-voltage, screen or comfort-system concern', 'An intermittent symptom whose conditions should be recorded before testing'],
+    faqs: [
+      { question: 'Can you diagnose every ROX 01 system?', answer: 'No. Available diagnostic access and workshop scope are confirmed for the exact vehicle and concern. High-voltage battery, electric-drive and charging-system repair are not promised.' },
+      { question: 'Does a ROX 01 warning identify a failed component?', answer: 'No. The warning, vehicle history and compatible checks need to be reviewed before a repair recommendation.' },
+      { question: 'Can you investigate a ROX 01 screen or door concern?', answer: 'A low-voltage, display or comfort-system inspection can be requested. The available diagnostic and repair scope is confirmed before work is accepted.' },
+    ],
+  };
+  if (key === 'oil-change') return {
+    ...base,
+    h1: 'ROX 01 Range-Extender Generator Oil Service in Dubai',
+    heroCopy: 'ROX 01 uses electric motors for propulsion and a combustion generator as a range extender. This oil-service enquiry applies only to that generator engine where the exact vehicle schedule calls for it. DIGI-TEC checks the service history, oil requirement and workshop scope before quoting; the electric drive itself is not treated as a conventional engine.',
+    faqs: [
+      { question: 'Does a ROX 01 have an engine-oil service?', answer: 'Its range-extender generator uses a combustion engine, but the applicable oil specification and schedule must be checked against the exact vehicle and service information.' },
+      { question: 'Does a ROX 01 oil visit include high-voltage work?', answer: 'No high-voltage battery, electric-drive or charging-system repair is implied by a generator-engine oil enquiry. Such capability has not been verified.' },
+    ],
+  };
+  if (key === 'transmission-repair') return {
+    ...base,
+    h1: 'ROX 01 Driveability Enquiry in Dubai',
+    heroCopy: 'ROX 01 propulsion comes from electric motors, while the range extender generates power. A conventional gearbox-repair procedure must not be assumed. DIGI-TEC first confirms the symptom and whether the affected system falls within available workshop scope; high-voltage drive-unit repair is not advertised.',
+    faqs: [
+      { question: 'Does ROX 01 use the same gearbox service as a petrol SUV?', answer: 'No conventional petrol-SUV gearbox procedure is assumed. The fitted system and applicable vehicle requirements must be identified before any service proposal.' },
+      { question: 'Can DIGI-TEC repair ROX 01 electric drive units?', answer: 'Electric-drive and high-voltage repair capability has not been verified and is not offered on this page.' },
+    ],
+  };
+  return base;
+}
+
 export function getBrandServiceCombo(brandSlug: string, serviceSlug: string, options?: { mercedesEnglishContent?: boolean }): BrandServiceCombo | undefined {
   const profile = BRAND_PROFILES[brandSlug];
   if (!profile) return undefined;
@@ -950,7 +1114,11 @@ export function getBrandServiceCombo(brandSlug: string, serviceSlug: string, opt
   const meta = SERVICE_META[key];
   const composed = brandSlug === 'ferrari-service-dubai'
     ? refineFerrariContent(key, COMPOSERS[key](profile))
-    : COMPOSERS[key](profile);
+    : brandSlug === 'volkswagen-service-dubai'
+      ? refineVolkswagenContent(key, COMPOSERS[key](profile))
+      : brandSlug === 'jetour-service-dubai' || brandSlug === 'rox-service-dubai'
+        ? refineB9Content(brandSlug, key, COMPOSERS[key](profile))
+        : COMPOSERS[key](profile);
   const isRoxSoftClose = brandSlug === 'rox-service-dubai' && key === 'soft-close-door-installation';
   const displayBrand = brandSlug === 'ferrari-service-dubai' ? 'DIGI-TEC' : 'Digi-Tec';
   const whatsAppMessage = `Hi, I would like to enquire about ${profile.brandName} ${meta.label} at ${displayBrand} Performance Centre.`;
@@ -965,28 +1133,36 @@ export function getBrandServiceCombo(brandSlug: string, serviceSlug: string, opt
     ...(isRoxSoftClose ? {
       h1: 'ROX 01 Soft Close Installation Dubai',
       metaTitle: 'ROX 01 Soft Close Installation Dubai | Digi-Tec',
-      metaDescription: 'ROX 01 soft close installation in Dubai. Digi-Tec fits, diagnoses and repairs soft close door systems with compatibility checks in Al Quoz.',
-      heroCopy: 'Digi-Tec provides dedicated ROX 01 soft close installation in Dubai for owners who want the premium pull-close function added to their SUV. Our Al Quoz workshop checks door compatibility, latch fitment, wiring routes, door alignment and safety operation before installation. We also diagnose and repair ROX soft close systems that click, stop halfway, fail to pull the door shut or leave a door-open warning on the display.',
+      metaDescription: 'ROX 01 soft-close installation enquiry in Dubai. DIGI-TEC checks door, wiring and component compatibility before confirming a fitting scope and quote.',
+      heroCopy: 'ROX 01 owners can request a soft-close door installation assessment at DIGI-TEC in Al Quoz. Door construction, latch fitment, wiring routes, vehicle specification and parts availability must be checked before compatibility and an installation quote can be confirmed. If a fitted door has stopped pulling closed, the separate cross-brand soft-close repair service is the next diagnostic path.',
       symptoms: [
-        'You want soft close functionality installed on your ROX 01',
-        'The door needs to be slammed before it latches correctly',
-        'The soft close motor clicks, grinds, stops halfway or does not pull the door in',
-        'A door-open warning remains after the door is closed',
+        'You want to ask whether soft-close functionality can be installed on your ROX 01',
+        'You need to confirm which doors and components are compatible',
+        'A previously fitted soft-close door has stopped working and needs a separate fault inspection',
       ],
       processSteps: [
-        { title: 'ROX 01 compatibility inspection', description: 'We inspect the doors, latch area, trim, wiring routes and vehicle configuration before recommending the correct ROX soft close installation.' },
-        { title: 'Installation plan and clear quote', description: 'You receive a clear scope covering components, fitting, calibration and the expected workshop time before work starts.' },
-        { title: 'Professional fitment and adjustment', description: 'Our technicians install or repair the required latches, actuators, wiring and door-striker components, then set the alignment correctly.' },
-        { title: 'Safety and locking verification', description: 'Every fitted door is tested for pull-close operation, locking, anti-pinch safety and warning-light behaviour before handover.' },
+        { title: 'Check ROX 01 compatibility', description: 'Inspect the doors, latch area, wiring routes and vehicle configuration before confirming whether a suitable installation is available.' },
+        { title: 'Confirm components and quote', description: 'Explain the compatible parts, fitting scope and expected timing after checking availability and the exact vehicle.' },
+        { title: 'Fit only approved components', description: 'Complete the agreed installation and any supported adjustment according to the selected system and vehicle.' },
+        { title: 'Verify door operation', description: 'Test pull-close, locking and relevant warning behaviour on the fitted doors before handover.' },
       ],
-      partsCopy: 'For ROX 01 soft close installation and repair, we use suitable latches, actuators, motors, sensors, wiring and door-striker components selected after the compatibility inspection. We document the recommended solution and verify the locking and safety functions after fitting.',
+      partsCopy: 'Suitable latches, actuators, wiring and related parts are selected only after the ROX 01 configuration and installation compatibility are confirmed. Existing door faults are inspected on the cross-brand repair path before parts are recommended.',
       faqs: [
         { question: 'Can you install soft close doors on a ROX 01 in Dubai?', answer: 'Compatibility, door fitment, wiring, component availability and installation scope are inspected first. A clear installation proposal is provided only when the vehicle and selected system are suitable.' },
-        { question: 'Can you repair a ROX soft close door that is not working?', answer: 'The fault can be inspected for latch, actuator, wiring, sensor and alignment concerns. Repair availability and parts are confirmed after diagnosis.' },
+        { question: 'What if a ROX soft-close door is not working?', answer: 'A non-working fitted door is a repair enquiry. The separate soft-close door repair service inspects the latch, actuator, wiring and alignment before recommending work.' },
         { question: 'How long does ROX 01 soft close installation take?', answer: 'Timing depends on the number of doors, the selected components and the vehicle inspection. We confirm the installation plan and timeline after checking your ROX 01.' },
         { question: 'Where can I find ROX soft close installation near me in Dubai?', answer: 'Digi-Tec Performance Centre is in Al Quoz Industrial Area 3, Dubai. Contact us by WhatsApp or phone to arrange a ROX 01 soft close compatibility inspection.' },
-        { question: 'Do you work on ROX 01 door latches and comfort-system wiring?', answer: 'Latch, actuator, wiring, sensor, alignment and related comfort-system concerns can be inspected. The supported repair scope is confirmed for the vehicle.' },
+        { question: 'Is soft-close installation compatible with every ROX 01?', answer: 'No universal compatibility is promised. Door construction, wiring, vehicle specification and suitable parts must be checked before an installation can be quoted.' },
       ],
+    } : brandSlug === 'rox-service-dubai' && key === 'engine-diagnostics' ? {
+      metaTitle: 'ROX 01 Diagnostic Assessment Dubai | DIGI-TEC',
+      metaDescription: 'ROX 01 warning and supported low-voltage or comfort-system assessment in Al Quoz. Diagnostic access and repair scope are confirmed for the exact vehicle.',
+    } : brandSlug === 'rox-service-dubai' && key === 'oil-change' ? {
+      metaTitle: 'ROX 01 Range-Extender Oil Service Dubai | DIGI-TEC',
+      metaDescription: 'ROX 01 generator-engine oil service enquiry in Dubai. Oil specification, schedule and workshop scope are checked against the exact vehicle.',
+    } : brandSlug === 'rox-service-dubai' && key === 'transmission-repair' ? {
+      metaTitle: 'ROX 01 Driveability Assessment Dubai | DIGI-TEC',
+      metaDescription: 'ROX 01 driveability enquiry in Al Quoz. Electric-drive architecture and available workshop scope are checked before any service proposal.',
     } : {
       metaTitle: `${profile.brandName} ${meta.name} Dubai | ${displayBrand}`,
       metaDescription: `${profile.brandName} ${meta.name.toLowerCase()} in Dubai with model-specific inspection, confirmed parts options and a clear quote at ${displayBrand}, Al Quoz.`,
