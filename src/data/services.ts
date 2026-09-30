@@ -18,6 +18,7 @@ export interface ServiceData {
   metaTitle?: string;
   metaDescription?: string;
   title: string;
+  pageTitle?: string;
   description: string;
   image: string;
   imageAlt?: string;
@@ -376,6 +377,7 @@ export const services: ServiceData[] = [
     metaTitle: 'Car Service Dubai | Scheduled Maintenance & Inspection',
     metaDescription: 'Scheduled car service in Dubai with vehicle-specific oil, filters, fluids and inspection items. Share the VIN and service history for a quotation.',
     title: 'Car Service in Dubai for Mercedes, BMW, Audi & Porsche',
+    pageTitle: 'Car Service & Scheduled Maintenance in Dubai',
     description: 'Vehicle-specific routine maintenance and scheduled servicing in Dubai.',
     image: routineMaintenanceImg,
     category: 'Core Mechanical Services',
@@ -708,24 +710,39 @@ export const services: ServiceData[] = [
     metaTitle: 'Car Diagnostics Dubai | Fault Scanning & Supported ECU Functions',
     metaDescription: 'Vehicle-specific diagnostics in Dubai with supported module scanning, live data, resets and coding functions confirmed before booking.',
     title: 'Car Diagnostics & ECU Programming in Dubai',
+    pageTitle: 'Car Diagnostics & Fault Investigation in Dubai',
     description: 'Vehicle-specific fault scanning, supported ECU functions, resets and digital system inspection in Dubai.',
     image: '/lovable-uploads/150c684d-11eb-476b-b768-afe7cad297cc.png',
     category: 'Diagnostics & Electrical',
     seoKeyword: 'Car Diagnostic Dubai',
-    intro: 'Modern vehicles can use interconnected electronic modules beyond basic OBD-II coverage. Digi-Tec identifies the exact make, model, year and module before selecting a compatible diagnostic platform and confirming supported scan, reset, coding, key or programming functions.',
+    intro: 'Modern vehicles can use interconnected electronic modules beyond basic OBD-II coverage. Digi-Tec identifies the exact make, model, year and module before selecting a compatible diagnostic platform and confirming supported scan, reset, coding or programming functions.',
     whyImportant: 'Electronic faults can appear across more than one vehicle system, and a stored code alone does not identify every cause. Vehicle-compatible scanning, available data, circuit checks and physical inspection are selected according to the symptom before parts are recommended.',
-    whyChoose: 'The diagnostic platform is selected according to the exact vehicle and required module. Scan coverage, live data, coding, key functions, software access and security authorization vary by model, year and available access and are confirmed before quoting.',
+    whyChoose: 'The diagnostic platform is selected according to the exact vehicle and required module. Scan coverage, live data, coding, software access and security authorization vary by model, year and available access and are confirmed before quoting.',
     includes: [
       'OBD-II and supported manufacturer-specific diagnostic scanning',
       'Fault code reading, analysis, and clearing',
       'Supported ECU coding and module programming where compatible',
-      'Supported key programming and replacement where authorized access is available',
       'Service indicator and maintenance reset',
       'Live data stream analysis',
       'Supported software updates and reflashing where compatible',
     ],
     localIntent: 'For car diagnostics or ECU coding in Dubai, contact Digi-Tec with the VIN, model year and required function so platform compatibility can be confirmed.',
-    details: 'Diagnostic work can include fault-code analysis, live data, resets and supported module functions. Coding, key, initialization and software capability depend on the exact vehicle and available access.',
+    details: 'Diagnostic work can include fault-code analysis, live data, resets and supported module functions. Coding, initialization and software capability depend on the exact vehicle and available access.',
+    ctaLabel: 'Request a Diagnostic Assessment',
+    quoteGuidance: 'Send the VIN, model year, warning text and when the concern occurs. Include recent repairs and any existing scan report. The initial investigation and any further testing are agreed before repair work is quoted.',
+    relatedServiceLinks: [
+      { label: 'Electrical circuit and wiring repair', path: '/services/auto-electrical-repair-dubai' },
+      { label: 'Mechanical inspection and repair', path: '/services/mechanical-repair-dubai' },
+      { label: 'Transmission assessment and repair', path: '/services/transmission-repair-dubai' },
+    ],
+    extraSections: [
+      { heading: 'Diagnosis, repair or a supported module function?', text: 'A diagnostic assessment investigates the reported fault. A wiring repair, mechanical repair or transmission repair is a separate decision based on the findings. Coding, programming and service resets are also separate tasks: describe the requested function so vehicle compatibility and access can be checked before booking. A scan does not establish that a module needs replacement or a software update.' },
+    ],
+    faqs: [
+      { question: 'Does a fault code identify the part that needs replacing?', answer: 'Not by itself. The code describes a detected condition. Relevant data, circuit checks or physical inspection are needed to establish the cause and decide whether repair is necessary.' },
+      { question: 'Can every vehicle module be coded or programmed?', answer: 'No universal coverage is promised. The vehicle, module, requested function, software and access requirements must be confirmed. Diagnostic access alone does not establish that a programming operation is available.' },
+      { question: 'What should I send before a diagnostic appointment?', answer: 'Send the VIN or make, model and year, the exact warning or symptom, when it happens and any recent work. Photos, a short video or a previous scan report can help define the initial investigation.' },
+    ],
   },
   {
     slug: 'auto-electrical-repair-dubai',
@@ -778,6 +795,14 @@ export const services: ServiceData[] = [
       {
         heading: 'Car wiring repair and communication faults',
         text: 'Damaged insulation, corroded connectors, poor connections or previous modifications can interrupt a circuit or create a short. Wiring repair is planned around the circuit, damage and vehicle requirements. Where a module will not communicate, its supply, connections and relevant network are assessed before replacement is proposed. The repair may involve a connector, a suitable wiring repair or a replacement section; the findings determine the scope.',
+      },
+      {
+        heading: 'Screen and touchscreen fault assessment',
+        text: 'Describe whether the display is blank, touch does not respond, the unit restarts or there is visible damage. Mention whether audio and other controls still work. The fitted equipment and relevant power, connections and system operation need assessment before a screen or head unit is recommended. Display damage, a touch-input fault and a head-unit fault are different repair enquiries; replacement suitability and any setup requirements are confirmed for the exact vehicle.',
+      },
+      {
+        heading: 'Reverse-camera fault assessment',
+        text: 'For a missing or intermittent camera image, share whether the screen works for other functions and whether a warning appears when reverse is selected. The assessment follows the fitted camera, relevant supply and connections, and the display or module relationship where supported. A missing image does not by itself prove that the camera has failed. Adding a camera to a vehicle is a separate installation enquiry and is not included in this repair scope.',
       },
       {
         heading: 'Battery replacement, component repair or further diagnosis?',

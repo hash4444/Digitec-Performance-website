@@ -20,6 +20,7 @@ import {
 import { LocalizedLink as Link } from '@/components/LocalizedLink';
 import { useLocale } from '@/i18n/use-locale';
 import { localizeServiceToArabic } from '@/i18n/ar-services';
+import { refineGenericArabicService } from '@/i18n/ar-generic-services';
 
 // Map every legacy slug directly to its new slug (single-hop redirects, no chains).
 // Also handles previously-indexed Google URLs.
@@ -66,7 +67,8 @@ const ServicePage: React.FC<ServicePageProps> = ({ slugOverride, canonicalPath, 
   const newSlug = slug ? OLD_TO_NEW_SLUG[slug] : undefined;
   const isElectronics = electronicsServices.some(item => item.slug === slug);
   const sourceService = slug && !newSlug && !externalRedirect && !(isArabic && isElectronics) ? getServiceBySlug(slug) : undefined;
-  const service = sourceService && isArabic ? localizeServiceToArabic(sourceService) : sourceService;
+  const service = sourceService && isArabic ? (brandPath ? localizeServiceToArabic(sourceService) : refineGenericArabicService(localizeServiceToArabic(sourceService)))
+    : sourceService && !brandPath && sourceService.pageTitle ? { ...sourceService, title: sourceService.pageTitle } : sourceService;
   const servicePath = service ? canonicalPath ?? `/services/${service.slug}` : undefined;
   const url = servicePath
     ? `https://digitecme.com${isArabic ? '/ar' : ''}${servicePath}`

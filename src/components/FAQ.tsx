@@ -145,7 +145,6 @@ export const FAQ = () => {
   const { isArabic } = useLocale();
   const categories: readonly FAQCategory[] = isArabic ? arFaqCategories : faqCategories;
   const [activeCategory, setActiveCategory] = useState<string>(categories[0].id);
-  const current = categories.find((c) => c.id === activeCategory) ?? categories[0];
   const copy = isArabic ? arHome.faq : null;
 
   return (
@@ -184,7 +183,8 @@ export const FAQ = () => {
 
         {/* FAQ Accordion */}
         <div className="mx-auto mb-16 max-w-4xl">
-          <Accordion type="single" collapsible className="border-t border-white/[0.09]" key={current.id}>
+          {categories.map((current) => <div key={current.id} hidden={current.id !== activeCategory}>
+          <Accordion type="single" collapsible className="border-t border-white/[0.09]">
             {current.faqs.map((faq, index) => (
               <AccordionItem
                 key={`${current.id}-${index}`}
@@ -194,12 +194,13 @@ export const FAQ = () => {
                 <AccordionTrigger className="py-6 text-left text-base font-medium text-white transition-colors hover:text-burnt-orange hover:no-underline sm:text-lg [&[data-state=open]]:text-burnt-orange">
                   {faq.question}
                 </AccordionTrigger>
-                <AccordionContent className="max-w-3xl pb-6 text-sm leading-7 text-white/50 sm:text-base">
+                <AccordionContent forceMount className="max-w-3xl pb-6 text-sm leading-7 text-white/50 sm:text-base">
                   {faq.answer}
                 </AccordionContent>
               </AccordionItem>
             ))}
           </Accordion>
+          </div>)}
         </div>
 
         {/* CTA Section */}
