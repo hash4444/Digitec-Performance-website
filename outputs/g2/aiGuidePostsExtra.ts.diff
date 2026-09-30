@@ -1,0 +1,445 @@
+diff --git a/src/data/aiGuidePostsExtra.ts b/src/data/aiGuidePostsExtra.ts
+index 76c1e82..e103768 100644
+--- a/src/data/aiGuidePostsExtra.ts
++++ b/src/data/aiGuidePostsExtra.ts
+@@ -970,6 +970,7 @@ export const aiGuidePostsExtra: BlogPost[] = [
+     category: 'Maintenance',
+     author: 'DIGI-TEC Workshop',
+     date: '2026-08-13',
++    updatedDate: '2026-09-30',
+     readTime: '6 min read',
+     coverGradient: 'from-burnt-orange/40 via-charcoal to-black',
+     metaTitle: 'Car AC Not Cold in Dubai | Causes, Checks and Repair Guide',
+@@ -979,41 +980,84 @@ export const aiGuidePostsExtra: BlogPost[] = [
+       'car AC not cold Dubai, car AC repair Dubai, AC gas refill Dubai, car air conditioning service Dubai',
+     ogType: 'article',
+     content: [
+-      { type: 'p', text: 'Short answer: weak car AC in Dubai is usually caused by refrigerant loss from a leak, a blocked or dirty condenser, a failing compressor or clutch, a blocked cabin filter, or an electronic fault in the blend or control system. Simply refilling gas without finding the leak is a temporary fix. Digi-Tec Performance Centre in Al Quoz Industrial Area 3, Dubai tests pressures and vent temperature, then locates the leak before recharging.' },
+-      { type: 'h2', text: 'What a proper AC diagnosis includes' },
+-      {
+-        type: 'ul',
+-        items: [
+-          'Vent temperature measurement at set fan speeds to quantify the actual output.',
+-          'High and low side pressure readings with the system running.',
+-          'Leak detection using dye or an electronic detector, not guesswork.',
+-          'Condenser and radiator face inspection for dust and sand blockage.',
+-          'Cabin filter condition and blower performance check.',
+-          'Diagnostic scan of the climate module for stored faults and actuator errors.',
+-        ],
+-      },
+-      { type: 'h2', text: 'Why gas refills alone fail' },
+-      { type: 'p', text: 'A sealed AC system does not consume refrigerant. If the charge is low, there is a leak, usually at a hose crimp, condenser, seal or the compressor shaft seal. Recharging without repair means the same complaint returns within weeks, and running low on refrigerant also starves the compressor of oil, which can turn a small repair into a compressor replacement.' },
+-      { type: 'h2', text: 'Common AC faults we see in Dubai' },
+-      {
+-        type: 'ul',
+-        items: [
+-          'Condenser damage or fouling from road debris, dust and sand.',
+-          'Compressor clutch failure after running with low refrigerant.',
+-          'Blend door actuator faults producing warm air on one side only.',
+-          'Blocked cabin filters reducing airflow and cooling performance.',
+-        ],
+-      },
+-      { type: 'h2', text: 'FAQs' },
+-      { type: 'h3', text: 'How often should car AC be serviced in Dubai?' },
+-      { type: 'p', text: 'An annual AC performance check before summer is sensible here, since the system runs almost year round.' },
+-      { type: 'h3', text: 'Is it normal to top up AC gas every year?' },
+-      { type: 'p', text: 'No. A healthy system holds its charge. Needing regular top ups indicates a leak that should be found and repaired.' },
+-      { type: 'h3', text: 'Can you repair the AC without replacing the compressor?' },
+-      { type: 'p', text: 'Often yes. Diagnosis identifies whether the fault is a leak, a condenser, an actuator, a sensor or the compressor itself.' },
+-      { type: 'h3', text: 'How do I book with Digi-Tec?' },
+-      { type: 'p', text: 'Call or WhatsApp +971 4 340 2223, or visit the workshop at Al Quoz Industrial Area 3, Dubai.' },
+-    ],
++  {
++    "type": "p",
++    "text": "Warm air and weak airflow are different complaints. Note whether air reaches the vents normally but stays warm, or whether little air comes out even at a higher fan setting. Refrigerant condition, heat exchange, airflow and climate controls may be involved. The symptom alone does not establish a leak or a failed compressor."
++  },
++  {
++    "type": "h2",
++    "text": "Cooling at speed, at idle or on one side"
++  },
++  {
++    "type": "p",
++    "text": "Tell the workshop whether cooling changes in traffic, improves while moving, differs between left and right vents, or fades after a period of operation. Record the selected temperature and fan setting. These observations help direct checks of airflow through the heat exchangers, cabin airflow and temperature control; they do not identify one failed part."
++  },
++  {
++    "type": "h2",
++    "text": "Useful observations before the appointment"
++  },
++  {
++    "type": "ul",
++    "items": [
++      "Describe whether airflow is weak or the air is warm despite normal airflow.",
++      "Mention unusual noises or smells and whether they appear only with AC selected.",
++      "Explain when the complaint began, including any recent AC work.",
++      "Provide the model, year and any dashboard messages. Do not attempt refrigerant handling or touch moving engine-bay components."
++    ]
++  },
++  {
++    "type": "h2",
++    "text": "What an AC assessment may include"
++  },
++  {
++    "type": "p",
++    "text": "DIGI-TEC can discuss an AC inspection covering vent temperature, airflow, accessible components and system operation. Pressure readings, temperature measurements and supported live data are considered together. Cabin filter and blower checks address airflow; refrigerant and leak checks address the refrigerant circuit. The inspection scope depends on the vehicle and findings."
++  },
++  {
++    "type": "h2",
++    "text": "Why a recharge is not the default answer"
++  },
++  {
++    "type": "p",
++    "text": "A low charge needs investigation of its amount, service history and possible leakage. Warm air can also occur with a control or airflow fault, so a symptom does not justify a refill. Refrigerant type, quantity and any oil requirement must match the exact vehicle. Replacing a compressor should follow confirmation of the fault and repair scope, not the description “not cold.”"
++  },
++  {
++    "type": "h2",
++    "text": "When to limit driving"
++  },
++  {
++    "type": "p",
++    "text": "For reduced cabin cooling alone, arrange an AC inspection and avoid journeys where cabin heat would make travel unsafe for occupants. Poor demisting can also affect visibility. If cooling loss occurs with a high-temperature warning, smoke or a burning smell, stop safely and seek assistance rather than treating it as a comfort-only fault. An AC fault on an electrified vehicle does not establish that high-voltage work is available at this workshop."
++  },
++  {
++    "type": "h2",
++    "text": "FAQs"
++  },
++  {
++    "type": "h3",
++    "text": "Why does the AC cool while driving but not at idle?"
++  },
++  {
++    "type": "p",
++    "text": "The operating pattern helps guide airflow, fan, refrigerant and control checks. It does not prove a fan or compressor failure. Describe how quickly the temperature changes and whether an engine-temperature warning also appears."
++  },
++  {
++    "type": "h3",
++    "text": "Does warm air always mean the AC needs gas?"
++  },
++  {
++    "type": "p",
++    "text": "No. Refrigerant quantity is one check among several. Air distribution, compressor control and airflow can also affect cooling. The system needs assessment before a recharge or replacement decision."
++  },
++  {
++    "type": "h3",
++    "text": "What is the next step?"
++  },
++  {
++    "type": "p",
++    "text": "Use the AC repair service below to describe the cooling or airflow complaint and arrange an assessment in Al Quoz. The findings establish the proposed repair and quote before work is approved."
++  }
++],
+   },
+   {
+     slug: 'engine-overheating-dubai-what-to-do',
+@@ -1023,6 +1067,7 @@ export const aiGuidePostsExtra: BlogPost[] = [
+     category: 'Maintenance',
+     author: 'DIGI-TEC Workshop',
+     date: '2026-08-13',
++    updatedDate: '2026-09-30',
+     readTime: '6 min read',
+     coverGradient: 'from-charcoal via-black to-black',
+     metaTitle: 'Engine Overheating Dubai | Causes and What to Do Immediately',
+@@ -1032,41 +1077,84 @@ export const aiGuidePostsExtra: BlogPost[] = [
+       'engine overheating Dubai, car overheating UAE, cooling system repair Dubai, radiator repair Dubai',
+     ogType: 'article',
+     content: [
+-      { type: 'p', text: 'Short answer: if the temperature gauge rises or a warning appears, turn the AC off, turn the cabin heater on to pull heat from the engine, pull over safely and switch the engine off. Do not open the expansion tank while hot. The usual causes in Dubai are coolant loss, a failed thermostat or water pump, a blocked radiator face, a failed cooling fan or a head gasket fault. Digi-Tec Performance Centre in Al Quoz Industrial Area 3, Dubai pressure tests the system before quoting.' },
+-      { type: 'h2', text: 'What to do immediately' },
+-      {
+-        type: 'ul',
+-        items: [
+-          'Switch the air conditioning off to reduce load on the engine and condenser.',
+-          'Turn the cabin heater and blower to maximum to draw heat away from the engine.',
+-          'Pull over safely as soon as possible and switch off the engine.',
+-          'Do not open the coolant expansion tank while the system is hot.',
+-          'Check for visible steam, coolant on the ground or a shredded belt.',
+-          'Arrange recovery rather than continuing to drive, which risks head gasket damage.',
+-        ],
+-      },
+-      { type: 'h2', text: 'How a workshop finds the real cause' },
+-      { type: 'p', text: 'A cooling fault should be diagnosed with a pressure test, a thermostat and fan function check, coolant condition analysis and live temperature data from the diagnostic platform. Combustion gas testing identifies a head gasket issue. Replacing a radiator or thermostat without testing often leaves the actual fault in place.' },
+-      { type: 'h2', text: 'Common overheating causes in Dubai' },
+-      {
+-        type: 'ul',
+-        items: [
+-          'Slow coolant loss from a hose joint, plastic housing or radiator seam.',
+-          'Radiator and condenser faces blocked by dust and sand, reducing airflow.',
+-          'Cooling fan or fan control module failure, most noticeable in traffic.',
+-          'Thermostat or water pump failure on higher mileage cars.',
+-        ],
+-      },
+-      { type: 'h2', text: 'FAQs' },
+-      { type: 'h3', text: 'Can I keep driving a short distance if the engine is overheating?' },
+-      { type: 'p', text: 'No. Continuing to drive risks warping the cylinder head or damaging the head gasket, which is a far larger repair.' },
+-      { type: 'h3', text: 'Why does my car only overheat in traffic?' },
+-      { type: 'p', text: 'That pattern usually points to airflow: a cooling fan fault or a blocked radiator and condenser face, since there is no ram air at low speed.' },
+-      { type: 'h3', text: 'Do you pressure test the cooling system?' },
+-      { type: 'p', text: 'Yes. Pressure testing, thermostat and fan checks and live data are used to find the actual cause before any part is quoted.' },
+-      { type: 'h3', text: 'How do I book with Digi-Tec?' },
+-      { type: 'p', text: 'Call or WhatsApp +971 4 340 2223, or visit the workshop at Al Quoz Industrial Area 3, Dubai.' },
+-    ],
++  {
++    "type": "p",
++    "text": "An abnormal temperature reading, a high-temperature warning or steam can indicate that the vehicle needs to be stopped safely. Move out of traffic as soon as it is safe, switch off the engine and follow the vehicle handbook. Do not keep driving to test whether the temperature will settle. Arrange assistance if overheating persists or there is steam or significant fluid loss."
++  },
++  {
++    "type": "h2",
++    "text": "Do not open a hot cooling system"
++  },
++  {
++    "type": "p",
++    "text": "Keep clear of steam and hot components. Do not remove a coolant cap while the system is hot or pressurised, and do not open the bonnet if steam or smoke makes approaching unsafe. Wait for professional assistance where needed. Turning on the cabin heater is not a substitute for stopping and does not establish that further driving is safe."
++  },
++  {
++    "type": "h2",
++    "text": "Overheating and coolant loss are different observations"
++  },
++  {
++    "type": "p",
++    "text": "A leak can exist without a high-temperature reading, and overheating can occur without an obvious puddle. Cooling-system circulation, airflow, coolant loss, temperature measurement and engine operating conditions may be involved. Neither overheating nor the colour of a puddle identifies a failed pump, radiator or head gasket."
++  },
++  {
++    "type": "h2",
++    "text": "What to tell the workshop"
++  },
++  {
++    "type": "ul",
++    "items": [
++      "The exact warning or gauge behaviour, and whether it appeared in traffic or at road speed.",
++      "Whether there was steam, a visible leak, reduced power or another warning.",
++      "Any recent cooling-system work or repeated need to add coolant.",
++      "The vehicle model, year and powertrain. Record observations only when safe; do not restart solely to reproduce the fault."
++    ]
++  },
++  {
++    "type": "h2",
++    "text": "How the cause is investigated"
++  },
++  {
++    "type": "p",
++    "text": "Once safe and cool, an inspection can compare reported symptoms with coolant level and condition, visible leakage, airflow and supported temperature data. Pressure testing and further circulation or component checks depend on the system and findings. A single symptom or test result is not a blanket head-gasket diagnosis. The mechanical service owner below handles the inspection enquiry and confirmed repair scope."
++  },
++  {
++    "type": "h2",
++    "text": "When recovery is the appropriate next step"
++  },
++  {
++    "type": "p",
++    "text": "A continuing high-temperature warning, steam, major fluid loss or abnormal engine operation is a reason to avoid restarting and arrange recovery advice. If an oil-pressure warning also appears while the engine is running, stop safely and switch off rather than assuming a coolant top-up will resolve it. Exact warning instructions vary by vehicle. This generic guide does not replace a manufacturer-specific procedure or imply high-voltage thermal-system repair capability."
++  },
++  {
++    "type": "h2",
++    "text": "FAQs"
++  },
++  {
++    "type": "h3",
++    "text": "Can I drive a short distance after an overheating warning?"
++  },
++  {
++    "type": "p",
++    "text": "Do not assume a short distance is safe. Stop safely and follow the handbook. Continuing overheating, steam or fluid loss requires assistance; a falling gauge alone does not confirm the problem is resolved."
++  },
++  {
++    "type": "h3",
++    "text": "Why does it happen only in traffic?"
++  },
++  {
++    "type": "p",
++    "text": "Low-speed airflow and fan operation may be relevant, but circulation, coolant condition and other controls can also need checking. The traffic pattern directs inspection rather than confirming one component."
++  },
++  {
++    "type": "h3",
++    "text": "Does a coolant leak mean the engine is damaged?"
++  },
++  {
++    "type": "p",
++    "text": "Not necessarily. The location, amount of loss, temperature history and test results matter. Keep coolant-loss and engine-damage conclusions separate until the vehicle has been inspected."
++  }
++],
+   },
+   {
+     slug: 'check-engine-light-dubai-guide',
+@@ -1076,6 +1164,7 @@ export const aiGuidePostsExtra: BlogPost[] = [
+     category: 'Maintenance',
+     author: 'DIGI-TEC Workshop',
+     date: '2026-08-13',
++    updatedDate: '2026-09-30',
+     readTime: '6 min read',
+     coverGradient: 'from-black via-charcoal to-black',
+     metaTitle: 'Check Engine Light Dubai | Causes and Diagnostic Guide',
+@@ -1085,41 +1174,79 @@ export const aiGuidePostsExtra: BlogPost[] = [
+       'check engine light Dubai, car diagnostics Dubai, engine warning light UAE, ECU diagnostics Al Quoz',
+     ogType: 'article',
+     content: [
+-      { type: 'p', text: 'Short answer: a steady check engine light means a fault has been stored and the car should be diagnosed soon. A flashing light means stop driving, because it usually indicates a misfire that can damage the catalytic converter. A code reader gives a code, not a diagnosis. Digi-Tec Performance Centre in Al Quoz Industrial Area 3, Dubai uses manufacturer level platforms and guided testing to confirm the actual fault before any part is replaced.' },
+-      { type: 'h2', text: 'Steady light or flashing light' },
+-      {
+-        type: 'ul',
+-        items: [
+-          'Steady light: a stored fault. Continue carefully and book a diagnosis.',
+-          'Flashing light: usually a misfire. Stop driving and arrange recovery.',
+-          'Light with a temperature or oil warning: stop immediately.',
+-          'Light with reduced power: the engine is in a protection mode and needs diagnosis.',
+-          'Light that clears itself: the fault is intermittent and remains stored in memory.',
+-          'Light after refuelling: often a loose or faulty fuel cap seal on some models.',
+-        ],
+-      },
+-      { type: 'h2', text: 'Why a code is not a diagnosis' },
+-      { type: 'p', text: 'A code such as a lean mixture fault names a symptom, not a failed part. The same code can come from an intake leak, a fuel delivery issue, a sensor fault or a wiring problem. Guided testing, live data and component testing separate those possibilities. Replacing the part named in a code is the most common cause of repeat repairs.' },
+-      { type: 'h2', text: 'Common causes we see in Dubai' },
+-      {
+-        type: 'ul',
+-        items: [
+-          'Ignition coil and spark plug faults, especially in high heat.',
+-          'Intake and vacuum leaks from hardened rubber components.',
+-          'Sensor faults reported after voltage problems rather than sensor failure.',
+-          'Emissions and evaporation system faults triggered by seal ageing.',
+-        ],
+-      },
+-      { type: 'h2', text: 'FAQs' },
+-      { type: 'h3', text: 'Can I drive with a check engine light on?' },
+-      { type: 'p', text: 'With a steady light, drive carefully and book a diagnosis. With a flashing light, stop and arrange recovery.' },
+-      { type: 'h3', text: 'Does clearing the code fix the problem?' },
+-      { type: 'p', text: 'No. Clearing the memory removes the warning but not the fault, and the light returns once the condition repeats.' },
+-      { type: 'h3', text: 'Which diagnostic systems do you use?' },
+-      { type: 'p', text: 'Manufacturer level platforms such as XENTRY, ISTA+, PIWIS and ODIS, depending on the brand, together with guided testing.' },
+-      { type: 'h3', text: 'How do I book with Digi-Tec?' },
+-      { type: 'p', text: 'Call or WhatsApp +971 4 340 2223, or visit the workshop at Al Quoz Industrial Area 3, Dubai.' },
+-    ],
++  {
++    "type": "p",
++    "text": "A check-engine warning calls for fault investigation. The exact lamp, message, whether it is steady or flashing, and how the car is running all matter. A steady light is not a blanket assurance that driving is safe. Read the vehicle handbook and describe any change in power, vibration, temperature or other warnings when arranging help."
++  },
++  {
++    "type": "h2",
++    "text": "When to stop and seek assistance"
++  },
++  {
++    "type": "p",
++    "text": "If the light flashes with severe shaking or reduced power, stop as soon as it is safe and seek assistance. Also stop safely for an accompanying oil-pressure warning, high-temperature warning, smoke or major change in vehicle control. Do not keep restarting or driving to reproduce a severe symptom. Warning behaviour varies by model and powertrain."
++  },
++  {
++    "type": "h2",
++    "text": "A steady light with no other symptoms"
++  },
++  {
++    "type": "p",
++    "text": "Arrange prompt diagnostic assessment and follow the handbook for that specific warning. If the car develops rough running, power loss or another warning, reassess the situation rather than relying on the lamp being steady. If you cannot establish that a trip can be made safely, ask for recovery advice. A warning that later disappears can still merit investigation."
++  },
++  {
++    "type": "h2",
++    "text": "Fault codes are a starting point"
++  },
++  {
++    "type": "p",
++    "text": "A code describes a condition detected by a control system; it does not by itself prove a failed component. Depending on the vehicle, power supply, wiring, air or fuel delivery, combustion and control-system behaviour may need checking. Avoid clearing codes before assessment because stored information can help establish when the fault occurred."
++  },
++  {
++    "type": "h2",
++    "text": "Misfire, rough idle and loss of power"
++  },
++  {
++    "type": "p",
++    "text": "Describe whether shaking occurs while stationary, under acceleration or only at a certain road speed. An engine-running complaint is different from steering-wheel vibration or vibration while braking. Rough idle and power loss guide the diagnostic work, but they do not automatically identify spark plugs, a turbo or a transmission as the cause. Severe running changes with a flashing warning require the stronger stop-and-assistance response above."
++  },
++  {
++    "type": "h2",
++    "text": "What DIGI-TEC would assess"
++  },
++  {
++    "type": "p",
++    "text": "Provide the model, year, warning message, operating conditions and recent service history. The diagnostic assessment can review stored information, supported live data and relevant electrical or mechanical checks. Tool access and procedures depend on the vehicle and system. Findings determine whether electrical, mechanical or another repair service is needed; a scan alone is not a parts-replacement instruction."
++  },
++  {
++    "type": "h2",
++    "text": "FAQs"
++  },
++  {
++    "type": "h3",
++    "text": "Does a steady check-engine light mean I can keep driving?"
++  },
++  {
++    "type": "p",
++    "text": "Not by itself. Follow the handbook and consider the way the vehicle is running and any other warning. Seek assistance if there is severe vibration, power loss, overheating, smoke or an oil-pressure warning."
++  },
++  {
++    "type": "h3",
++    "text": "Does clearing the code repair the fault?"
++  },
++  {
++    "type": "p",
++    "text": "Clearing a code does not establish that the cause has been repaired. Preserve the warning details for the workshop, which can determine whether a fault is active, intermittent or resolved through testing."
++  },
++  {
++    "type": "h3",
++    "text": "How much will diagnosis cost?"
++  },
++  {
++    "type": "p",
++    "text": "The scope depends on the vehicle, the symptom and the testing required. Contact DIGI-TEC through the diagnostic service below to discuss the assessment and quote; this guide does not offer a free scan or a fixed diagnostic price."
++  }
++],
+   },
+   {
+     slug: 'car-battery-life-dubai-heat',
+@@ -1129,17 +1256,18 @@ export const aiGuidePostsExtra: BlogPost[] = [
+     category: 'Maintenance',
+     author: 'DIGI-TEC Workshop',
+     date: '2026-08-13',
++    updatedDate: '2026-09-30',
+     readTime: '5 min read',
+     coverGradient: 'from-burnt-orange/40 via-charcoal to-black',
+     metaTitle: 'Car Battery Life Dubai | Why Batteries Fail in UAE Heat',
+     metaDescription:
+-      'Why car batteries fail early in Dubai, how long they really last, the warning signs, and why modern cars need battery registration after replacement.',
++      'Battery life and repeated discharge in Dubai: distinguish battery condition, charging and electrical draw, with registration checked for the exact vehicle.',
+     keywords:
+       'car battery Dubai, car battery replacement Dubai, battery life UAE heat, battery registration Dubai',
+     ogType: 'article',
+     content: [
+-      { type: 'p', text: 'Short answer: in Dubai a car battery typically lasts around two to three years, considerably less than in cooler climates, because sustained high temperature accelerates internal degradation. Warning signs include slow cranking, flickering lights, random electrical warnings and a car that needs a jump start after standing. Digi-Tec Performance Centre in Al Quoz Industrial Area 3, Dubai tests batteries under load and registers the replacement to the vehicle where required.' },
+-      { type: 'h2', text: 'Warning signs a battery is near the end' },
++      { type: 'p', text: 'Heat, battery specification, charging, storage and electrical demand all affect battery condition. There is no single replacement age for every car in Dubai. Slow cranking, flickering lights or repeated discharge are reasons to investigate the battery and related systems, not proof that a new battery is required.' },
++      { type: 'h2', text: 'Observations that help direct testing' },
+       {
+         type: 'ul',
+         items: [
+@@ -1148,28 +1276,34 @@ export const aiGuidePostsExtra: BlogPost[] = [
+           'Comfort features behaving oddly, such as windows or seat memory.',
+           'The car needing a jump start after standing for a few days.',
+           'Start stop function disabling itself.',
+-          'A battery older than three years in UAE conditions.',
++          'Battery age, specification and any recent replacement or accessory work.',
+         ],
+       },
+       { type: 'h2', text: 'Why battery registration matters' },
+-      { type: 'p', text: 'Modern cars manage charging based on the battery type and age recorded in the vehicle. Fitting a new battery without registering it means the charging strategy stays set for an old battery, which shortens the new one\'s life. On most German brands, registration and coding are part of a correct replacement, not an optional extra.' },
++      { type: 'p', text: 'Some vehicles require a battery replacement to be registered or configured in the energy-management system. This is not a universal procedure. The exact vehicle and battery specification determine what is required and whether the necessary service function is supported.' },
++      { type: 'h2', text: 'Repeated discharge versus a battery warning' },
++      { type: 'p', text: 'A battery that repeatedly goes flat after parking needs investigation of battery condition, charging, connections and possible unwanted electrical draw. Record how long the car was parked and which accessories were used. A battery or charging warning while driving is a different observation: follow the handbook and seek assistance if other safety-critical warnings or loss of vehicle function occur.' },
++      { type: 'h2', text: 'No crank or cranking without starting?' },
++      { type: 'p', text: 'Tell the workshop whether the engine does not turn, turns slowly, turns normally without starting, or starts and then stops. These are different diagnostic paths. Do not assume that cranking without starting is a battery fault, repeatedly attempt starting, or handle a damaged, leaking or unusually hot battery. Arrange an assessment once the vehicle is safely parked.' },
++      { type: 'h2', text: 'Inspection and the next service' },
++      { type: 'p', text: 'DIGI-TEC can discuss low-voltage battery and charging checks for the exact vehicle. Repeated drain or an electrical warning should follow the electrical fault-assessment path; replacement is appropriate only when the battery and required fitting procedure have been confirmed. This does not claim traction-battery or high-voltage repair capability.' },
+       { type: 'h2', text: 'How to extend battery life in Dubai' },
+       {
+         type: 'ul',
+         items: [
+           'Park in shade or covered parking where possible.',
+-          'Use a maintenance charger if the car sits unused for more than a week.',
++          'Follow the vehicle and charger instructions if supported battery maintenance is needed during storage.',
+           'Avoid repeated very short journeys that never fully recharge the battery.',
+           'Have the charging system tested at each service, not just the battery.',
+         ],
+       },
+       { type: 'h2', text: 'FAQs' },
+       { type: 'h3', text: 'How long does a car battery last in Dubai?' },
+-      { type: 'p', text: 'Typically two to three years, because sustained heat accelerates degradation compared with cooler climates.' },
++      { type: 'p', text: 'Service life varies with specification, temperature exposure, charging and use. Age provides context; appropriate test results and the complaint determine whether replacement or further investigation is needed.' },
+       { type: 'h3', text: 'Do you register the new battery to the car?' },
+       { type: 'p', text: 'Yes, where the vehicle requires registration or coding, so the charging strategy matches the new battery.' },
+       { type: 'h3', text: 'Can a weak battery cause warning lights?' },
+-      { type: 'p', text: 'Yes. Low voltage is one of the most common causes of multiple unrelated warning messages on modern cars.' },
++      { type: 'p', text: 'Low voltage can affect several systems, but warning messages alone do not confirm a failed battery. Charging, connections and the stored fault information may also need checking.' },
+       { type: 'h3', text: 'How do I book with Digi-Tec?' },
+       { type: 'p', text: 'Call or WhatsApp +971 4 340 2223, or visit the workshop at Al Quoz Industrial Area 3, Dubai.' },
+     ],

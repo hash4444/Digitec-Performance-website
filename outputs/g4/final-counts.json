@@ -1,0 +1,48 @@
+{
+  "intents": 1247,
+  "primary_owners": 996,
+  "support_relationships": 15886,
+  "intent_types": {
+    "GENERIC COMMERCIAL": 45,
+    "OTHER": 15,
+    "SELECTION / COMPARISON": 14,
+    "PROBLEM / SYMPTOM": 54,
+    "GUIDE / INFORMATIONAL": 119,
+    "MODEL": 50,
+    "PROTECTION": 11,
+    "BRAND COMMERCIAL": 930,
+    "SYSTEM / COMPONENT": 9
+  },
+  "indexable": 996,
+  "noindex": 251,
+  "links": {
+    "navigation": 15414,
+    "contextual body": 14803,
+    "service / article card": 1461,
+    "footer": 19952,
+    "language switch": 1136,
+    "breadcrumb": 3123,
+    "brand directory": 1368
+  },
+  "weak_context": 18,
+  "opportunity_rows": 666,
+  "opportunity_bands": {
+    "4\u201310": 79,
+    "11\u201320": 198,
+    "21\u201340": 269,
+    "zero_click_high_impression": 153
+  },
+  "capabilities": {
+    "VERIFIED \u2014 EXISTING SITE/BUSINESS EVIDENCE": 41,
+    "PARTIALLY VERIFIED": 11,
+    "UNVERIFIED": 12,
+    "VERIFIED \u2014 EXISTING DIGI-TEC SERVICE": 1,
+    "NOT OFFERED / EXCLUDED": 1
+  },
+  "backlog": {
+    "HIGH": 3,
+    "MEDIUM": 5,
+    "LOW": 3
+  },
+  "reports": 20
+}

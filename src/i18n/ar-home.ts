@@ -118,8 +118,8 @@ export const arServiceCards: Record<string, { title: string; description: string
   'soft-close-door-repair-dubai': { title: 'تركيب وإصلاح الأبواب ذات الإغلاق الناعم', description: 'تركيب وتحديث وإصلاح نظام الإغلاق الناعم لجميع السيارات، ومنها ROX.' },
   'car-body-repair-dubai': { title: 'إصلاح هيكل السيارة', description: 'إصلاح دقيق للانبعاجات والخدوش والأضرار الهيكلية.' },
   'paint-protection-dubai': { title: 'حماية طلاء السيارة', description: 'طلاء سيراميك وأفلام حماية للحفاظ على مظهر السيارة.' },
-  'paint-protection-film': { title: 'فيلم حماية الطلاء PPF', description: 'حماية شفافة ذاتية المعالجة لطلاء سيارتك.' },
-  'ceramic-coating': { title: 'الطلاء السيراميكي', description: 'لمعان دائم وحماية نانوية سهلة العناية.' },
+  'paint-protection-film': { title: 'فيلم حماية الطلاء PPF', description: 'فيلم يساعد على حماية الطلاء، مع اختيار التغطية حسب حالة السيارة والمنتج.' },
+  'ceramic-coating': { title: 'الطلاء السيراميكي', description: 'طلاء سطحي بعد تجهيز الطلاء، وتعتمد خصائصه والعناية به على المنتج المستخدم.' },
 };
 
 export const arFaqCategories = [

@@ -1,0 +1,5 @@
+from pathlib import Path
+p=Path('src/data/ppfContent.ts');s=p.read_text();a=s.index("  { question: 'What should I do about bubbles");b=s.index("  { question: 'How should PPF be maintained?'",a);s=s[:a]+s[b:]
+s=s.replace('Ask for the expected workshop time and any aftercare or settling period when the team confirms your car’s scope.','Ask for the expected workshop time and any aftercare or settling period when the team confirms your car’s scope. Existing-film removal or replacement is a separate enquiry: confirm availability, paint condition, risks and scope before booking.')
+s=s.replace('Ask the workshop about lifting edges, staining or damage.','For bubbles, lifting edges, staining or damage, record the installation date and send photos. Settling, contamination, adhesion and physical damage need different assessments. Do not puncture, pull or heat the film yourself. Ask for inspection rather than assuming the film can be repaired or must be replaced.')
+p.write_text(s,encoding='utf-8')

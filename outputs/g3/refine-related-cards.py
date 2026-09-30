@@ -1,0 +1,4 @@
+from pathlib import Path
+p=Path('src/pages/ServicePage.tsx');s=p.read_text(encoding='utf-8');s=s.replace("const s = isArabic ? localizeServiceToArabic(sourceRelated) : sourceRelated;", "const localizedRelated = isArabic ? localizeServiceToArabic(sourceRelated) : sourceRelated;\n                const s = isArabic && ['paint-protection-dubai', 'paint-protection-film', 'ceramic-coating'].includes(service.slug) ? refineArabicProtectionService(localizedRelated) : localizedRelated;")
+s=s.replace("{isArabic ? `نقدم ${service?.title ?? 'هذه الخدمة'} للعلامات التالية.` :", "{isArabic ? (['paint-protection-dubai', 'paint-protection-film', 'ceramic-coating'].includes(service.slug) ? 'استعرض صفحات العلامات، وأكد ملاءمة المنتج والسطح ونطاق العمل للسيارة المعنية قبل الحجز.' : `نقدم ${service?.title ?? 'هذه الخدمة'} للعلامات التالية.`) :")
+p.write_text(s,encoding='utf-8')

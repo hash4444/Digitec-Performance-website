@@ -113,14 +113,24 @@ const relatedServiceByPost: Record<string, { href: string; label: string; descri
     description: 'Identify the gearbox and separate scheduled fluid service from the investigation of a shift fault.',
   },
   'check-engine-light-dubai-guide': {
-    href: '/mercedes/problems/check-engine-light',
-    label: 'Mercedes check-engine light guide',
-    description: 'Continue with Mercedes-specific warning urgency, fault context and diagnostic steps.',
+    href: '/services/car-diagnostics-dubai',
+    label: 'vehicle diagnostic assessment',
+    description: 'Describe the warning and driving symptoms so the appropriate diagnostic checks can be agreed.',
   },
   'engine-overheating-dubai-what-to-do': {
-    href: '/mercedes/problems/engine-overheating',
-    label: 'Mercedes overheating guide',
-    description: 'Review Mercedes cooling-circuit, fan, thermostat, pump and Dubai traffic considerations.',
+    href: '/services/mechanical-repair-dubai',
+    label: 'cooling-system and mechanical assessment',
+    description: 'Discuss the temperature warning, fluid loss and safe transport before arranging inspection.',
+  },
+  'car-ac-not-cold-dubai-causes': {
+    href: '/services/car-ac-repair-dubai',
+    label: 'AC fault assessment',
+    description: 'Explain when cooling or airflow changes and arrange the relevant AC inspection.',
+  },
+  'car-battery-life-dubai-heat': {
+    href: '/services/auto-electrical-repair-dubai',
+    label: 'battery-drain and electrical fault assessment',
+    description: 'Describe the starting behaviour, parking duration and any charging warning before deciding on replacement.',
   },
   'ferrari-488-service-dubai-guide': {
     href: '/brands/ferrari-service-dubai/488',
@@ -138,8 +148,9 @@ const relatedServiceByPost: Record<string, { href: string; label: string; descri
 // to an existing Arabic service owner instead of constructing a missing route.
 const arabicRelatedServiceByPost: Record<string, { href: string; label: string }> = {
   'air-suspension-repair-dubai-guide': { href: '/services/suspension-repair-dubai', label: 'فحص وإصلاح التعليق حسب السيارة' },
-  'check-engine-light-dubai-guide': { href: '/services/mercedes-diagnostics-dubai', label: 'فحص وتشخيص مرسيدس' },
-  'engine-overheating-dubai-what-to-do': { href: '/services/mercedes-mechanical-repair-dubai', label: 'فحص وإصلاح مرسيدس الميكانيكي' },
+  'check-engine-light-dubai-guide': { href: '/services/car-diagnostics-dubai', label: 'فحص وتشخيص السيارة' },
+  'engine-overheating-dubai-what-to-do': { href: '/services/mechanical-repair-dubai', label: 'فحص التبريد والأجزاء الميكانيكية' },
+  'car-ac-not-cold-dubai-causes': { href: '/services/car-ac-repair-dubai', label: 'فحص وإصلاح مكيف السيارة' },
   'ferrari-488-service-dubai-guide': { href: '/brands/ferrari-service-dubai', label: 'خدمات صيانة وإصلاح فيراري' },
   'mercedes-repair-dubai-complete-guide': { href: '/brands/mercedes-benz-service-dubai', label: 'خدمات صيانة وإصلاح مرسيدس' },
   'transmission-service-7g-9g-dubai': { href: '/services/transmission-repair-dubai', label: 'خدمة وفحص ناقل الحركة حسب السيارة' },

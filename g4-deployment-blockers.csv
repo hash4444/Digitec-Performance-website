@@ -1,0 +1,3 @@
+﻿blocker_id,category,severity,url_or_scope,issue,evidence,required_fix,fixed_in_g4,remaining,deployment_blocking,notes
+G4-001,FAQ / SSR,HIGH,69 routes; baseline/schema-faq-ssr-issues.json,Emitted FAQ answers absent from initial HTML on unmounted accordions,Baseline scan; post-fix 4999 emitted Q&A pairs present across 1247 routes,forceMount existing answers in four page components,YES,NO,NO,No FAQ wording or schema filtering changed.
+G4-002,PRODUCT CLAIMS,HIGH,/ar; /ar/services; /ar/services/car-body-repair-dubai,Permanent ceramic gloss / unqualified self-healing PPF card descriptions,src/i18n/ar-home.ts; justified-fixes.json,Qualify shared product descriptions,YES,NO,NO,"Service titles, primary owners and policy retained."

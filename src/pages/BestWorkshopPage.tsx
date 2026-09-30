@@ -228,7 +228,7 @@ const BestWorkshopPage: React.FC = () => {
                 <AccordionTrigger className={`${isArabic ? 'text-right' : 'text-left'} text-off-white font-semibold text-base sm:text-lg hover:no-underline py-5`}>
                   {f.q}
                 </AccordionTrigger>
-                <AccordionContent forceMount={['best-car-workshop-dubai', 'best-porsche-workshop-dubai', 'best-bmw-workshop-dubai', 'best-ferrari-workshop-dubai', 'best-lamborghini-workshop-dubai', 'best-range-rover-workshop-dubai'].includes(slug) ? true : undefined} className="text-gray-300 text-sm sm:text-base leading-relaxed pb-5">
+                <AccordionContent forceMount className="text-gray-300 text-sm sm:text-base leading-relaxed pb-5">
                   {f.a}
                 </AccordionContent>
               </AccordionItem>

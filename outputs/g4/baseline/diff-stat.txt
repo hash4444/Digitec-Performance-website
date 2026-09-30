@@ -1,0 +1,11 @@
+ cloudflare/routing-response-data.js    |   2 +-
+ docs/seo/query-release-validation.json |   2 +-
+ docs/seo/route-schema-matrix.csv       |  34 +--
+ src/data/aiGuidePostsExtra.ts          | 375 ++++++++++++++++++++++-----------
+ src/data/ppfContent.ts                 |   4 +-
+ src/i18n/ar-blog.ts                    |   4 +-
+ src/i18n/ar-general-blog-content.ts    |  28 +++
+ src/pages/BlogPost.tsx                 |  27 ++-
+ src/pages/PpfPage.tsx                  |   2 +-
+ src/pages/ServicePage.tsx              |  17 +-
+ 10 files changed, 341 insertions(+), 154 deletions(-)

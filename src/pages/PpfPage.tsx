@@ -18,7 +18,7 @@ const heroImage = '/images/ppf/film-application-1200.webp';
 const heroAlt = 'Transparent film being smoothed over a white Porsche bonnet';
 const ppfBrands = ppfBrandNames.map((name) => brands.find((brand) => brand.name === name)).filter(Boolean);
 const graph = pageGraph([
-  buildWebPage({ url, name: PPF_TITLE, description: PPF_DESCRIPTION, breadcrumbId: `${url}#breadcrumb`, primaryImage: heroImage, mainEntityId: `${url}#service`, dateModified: '2026-09-16' }),
+  buildWebPage({ url, name: PPF_TITLE, description: PPF_DESCRIPTION, breadcrumbId: `${url}#breadcrumb`, primaryImage: heroImage, mainEntityId: `${url}#service`, dateModified: '2026-09-30' }),
   buildBreadcrumb(url, [{ name: 'Home', url: '/' }, { name: 'Services', url: '/services' }, { name: 'Paint Protection Film', url }]),
   buildService({ url, name: PPF_H1, serviceType: 'Paint Protection Film (PPF) installation', description: 'DIGI-TEC Performance Center offers paint protection film installation with full-body and selected-panel coverage at Al Quoz Industrial Area 3, Dubai. Film, preparation and covered panels are confirmed in the quotation.', image: heroImage }),
 ]);

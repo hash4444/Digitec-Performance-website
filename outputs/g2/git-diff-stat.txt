@@ -1,0 +1,7 @@
+cloudflare/routing-response-data.js |   2 +-
+ docs/seo/route-schema-matrix.csv    |  26 +--
+ src/data/aiGuidePostsExtra.ts       | 360 +++++++++++++++++++++++++-----------
+ src/i18n/ar-blog.ts                 |   4 +-
+ src/i18n/ar-general-blog-content.ts |  28 +++
+ src/pages/BlogPost.tsx              |  27 ++-
+ 6 files changed, 311 insertions(+), 136 deletions(-)

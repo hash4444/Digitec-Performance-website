@@ -1,0 +1,21 @@
+{
+  "baseline": "bbca5e0dbd49b0ff7ef9b7873aa09b2e2e600c9c",
+  "head": "bbca5e0dbd49b0ff7ef9b7873aa09b2e2e600c9c",
+  "branch": "main",
+  "source_files": [
+    "src/data/aiGuidePostsExtra.ts",
+    "src/i18n/ar-blog.ts",
+    "src/i18n/ar-general-blog-content.ts",
+    "src/pages/BlogPost.tsx"
+  ],
+  "source_lines_added": 297,
+  "source_lines_removed": 122,
+  "generated_files": [
+    "cloudflare/routing-response-data.js",
+    "docs/seo/route-schema-matrix.csv"
+  ],
+  "reports": 14,
+  "committed": false,
+  "pushed": false,
+  "deployed": false
+}

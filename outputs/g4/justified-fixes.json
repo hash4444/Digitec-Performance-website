@@ -1,0 +1,23 @@
+[
+  {
+    "issue": "FAQ answers absent from initial HTML while FAQPage schema emitted",
+    "files": [
+      "BrandPage.tsx",
+      "BestWorkshopPage.tsx",
+      "BrandWorkshopArticlePage.tsx",
+      "AudiModelPage.tsx"
+    ],
+    "fix": "Mount existing accordion answers in SSR; preserve closed-state CSS and existing FAQ filtering/content",
+    "baseline_evidence": "baseline/schema-faq-ssr-issues.json"
+  },
+  {
+    "issue": "Unqualified permanent ceramic gloss and self-healing PPF claims in shared Arabic service cards",
+    "file": "src/i18n/ar-home.ts",
+    "baseline_affected_routes": [
+      "/ar",
+      "/ar/services",
+      "/ar/services/car-body-repair-dubai"
+    ],
+    "fix": "Qualified product-dependent descriptions; titles and owners unchanged"
+  }
+]

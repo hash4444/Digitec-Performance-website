@@ -1,0 +1,43 @@
+{
+  "source_observations": 14271,
+  "brief_observations": 83,
+  "generic_observations": 146,
+  "raw_generic_strings": 117,
+  "normalized_terms": 113,
+  "original_gsc_terms": 11,
+  "generated_terms": 23,
+  "research_terms": 3,
+  "brief_terms": 83,
+  "coverage": {
+    "COVERED — PRIMARY PROBLEM PAGE": 14,
+    "COVERED — PROBLEM SECTION": 3,
+    "COVERED — FAQ": 0,
+    "COVERED — G1 COMMERCIAL OWNER": 89,
+    "COVERED — BRAND OWNER": 0,
+    "NOT TARGETED — INTENTIONALLY": 0,
+    "DEFERRED — INSUFFICIENT EVIDENCE": 7,
+    "GAP — REVIEW REQUIRED": 0
+  },
+  "families": 24,
+  "urls_reviewed": 43,
+  "urls_changed": 8,
+  "urls_retained": 35,
+  "new_urls": 0,
+  "new_url_rejected": 21,
+  "new_url_deferred": 3,
+  "unresolved_conflicts": 0,
+  "links": 175,
+  "all_main_links": 1152,
+  "depth": 3,
+  "urgency_scenarios": {
+    "MONITOR / BOOK SERVICE": 4,
+    "PROMPT INSPECTION": 6,
+    "LIMIT DRIVING": 4,
+    "STOP DRIVING / RECOVERY MAY BE APPROPRIATE": 8
+  },
+  "cannibalization_classes": {
+    "DISTINCT INTENT": 54,
+    "INTENT OVERLAP": 2
+  },
+  "brand_relationships": 27
+}

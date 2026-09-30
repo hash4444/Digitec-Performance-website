@@ -15,6 +15,14 @@ dist-ssr
 *.tsbuildinfo
 *.local
 
+# Local Python audit cache
+__pycache__/
+*.pyc
+
+# Full preservation backups stay local; manifests and reports are versioned.
+outputs/g3/baseline/local-g2-approved-files.zip
+outputs/g4/baseline/local-g3-approved-files.zip
+
 # Nested release checkout generated during verification
 outputs/suspension-2026-09-10/release-checkout/
 

@@ -1,0 +1,769 @@
+{
+  "startedAt": "2026-09-30T11:50:51.398Z",
+  "completedAt": "2026-09-30T11:50:52.393Z",
+  "mode": "local-built-html",
+  "phase": "after",
+  "totalPages": 1247,
+  "canonicalSitemapEntries": 996,
+  "canonicalPagesChecked": 996,
+  "sitemapDuplicatePaths": [],
+  "families": {
+    "home": 2,
+    "about": 2,
+    "workshop-guide": 14,
+    "blog-hub": 2,
+    "article": 201,
+    "brands-hub": 2,
+    "brand": 76,
+    "brand-service": 820,
+    "faq": 2,
+    "services-hub": 2,
+    "service": 115,
+    "html-sitemap": 5,
+    "tuning": 2,
+    "vrx": 2
+  },
+  "canonicalFamilies": {
+    "home": 2,
+    "about": 2,
+    "workshop-guide": 14,
+    "blog-hub": 2,
+    "article": 197,
+    "brands-hub": 2,
+    "brand": 76,
+    "brand-service": 573,
+    "faq": 2,
+    "services-hub": 2,
+    "service": 115,
+    "html-sitemap": 5,
+    "tuning": 2,
+    "vrx": 2
+  },
+  "languages": {
+    "en": 553,
+    "ar": 443
+  },
+  "excludedFromSitemap": 251,
+  "errors": [],
+  "metadataIssues": [],
+  "duplicateTitles": [],
+  "duplicateDescriptions": [],
+  "duplicateH1": [],
+  "duplicateContent": [],
+  "shortContentUnder300Words": [
+    {
+      "path": "/ar/services/car-garage-dubai",
+      "words": 196,
+      "family": "service"
+    },
+    {
+      "path": "/ar/services/garage-near-me-dubai",
+      "words": 208,
+      "family": "service"
+    },
+    {
+      "path": "/ar/services/roadside-assistance-dubai",
+      "words": 210,
+      "family": "service"
+    },
+    {
+      "path": "/ar/vrx",
+      "words": 212,
+      "family": "vrx"
+    },
+    {
+      "path": "/porsche/guides/718-maintenance",
+      "words": 125,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/guides/ac-maintenance-dubai",
+      "words": 139,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/guides/battery-life-dubai",
+      "words": 133,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/guides/brake-wear-dubai",
+      "words": 131,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/guides/buying-used-porsche-dubai",
+      "words": 139,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/guides/common-problems-dubai",
+      "words": 129,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/guides/cooling-maintenance",
+      "words": 140,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/guides/dealer-vs-independent-specialist",
+      "words": 141,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/guides/dubai-heat",
+      "words": 144,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/guides/how-often-service-dubai",
+      "words": 150,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/guides/macan-maintenance",
+      "words": 136,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/guides/maintenance-cost-dubai",
+      "words": 137,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/guides/major-vs-minor-service",
+      "words": 152,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/guides/oil-change-intervals",
+      "words": 147,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/guides/pdk-service-intervals",
+      "words": 141,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/guides/pre-purchase-inspection-checklist",
+      "words": 141,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/guides/service-intervals-uae",
+      "words": 158,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/guides/taycan-maintenance",
+      "words": 138,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/guides/tyre-wear-dubai",
+      "words": 134,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/guides/warning-lights",
+      "words": 130,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/problems/911-cooling",
+      "words": 236,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/problems/ac-not-cooling",
+      "words": 216,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/problems/air-suspension-warning",
+      "words": 235,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/problems/battery-warning",
+      "words": 239,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/problems/brake-warning-light",
+      "words": 233,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/problems/cayenne-air-suspension",
+      "words": 228,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/problems/check-engine-light",
+      "words": 240,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/problems/coolant-leak",
+      "words": 252,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/problems/delayed-gear-engagement",
+      "words": 242,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/problems/engine-misfire",
+      "words": 239,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/problems/engine-overheating",
+      "words": 247,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/problems/excessive-oil-consumption",
+      "words": 228,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/problems/macan-transfer-case",
+      "words": 236,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/problems/oil-leak",
+      "words": 240,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/problems/pasm-fault",
+      "words": 255,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/problems/pdcc-fault",
+      "words": 236,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/problems/pdk-jerking",
+      "words": 258,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/problems/pdk-slipping",
+      "words": 240,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/problems/pdk-warning-message",
+      "words": 240,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/problems/steering-vibration",
+      "words": 228,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/problems/suspension-dropping-overnight",
+      "words": 234,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/problems/taycan-12v-battery",
+      "words": 230,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/problems/taycan-charging",
+      "words": 200,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/problems/wont-start",
+      "words": 238,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/systems/air-suspension",
+      "words": 217,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/systems/pasm",
+      "words": 215,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/systems/pccb",
+      "words": 238,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/systems/pdcc",
+      "words": 224,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/systems/pdk",
+      "words": 242,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/systems/ptm-awd",
+      "words": 211,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/systems/rear-axle-steering",
+      "words": 206,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/systems/sport-chrono",
+      "words": 222,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/systems/tiptronic",
+      "words": 214,
+      "family": "article"
+    },
+    {
+      "path": "/vrx",
+      "words": 256,
+      "family": "vrx"
+    }
+  ],
+  "shortestContent": [
+    {
+      "path": "/porsche/guides/718-maintenance",
+      "words": 125,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/guides/common-problems-dubai",
+      "words": 129,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/guides/warning-lights",
+      "words": 130,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/guides/brake-wear-dubai",
+      "words": 131,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/guides/battery-life-dubai",
+      "words": 133,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/guides/tyre-wear-dubai",
+      "words": 134,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/guides/macan-maintenance",
+      "words": 136,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/guides/maintenance-cost-dubai",
+      "words": 137,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/guides/taycan-maintenance",
+      "words": 138,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/guides/ac-maintenance-dubai",
+      "words": 139,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/guides/buying-used-porsche-dubai",
+      "words": 139,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/guides/cooling-maintenance",
+      "words": 140,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/guides/dealer-vs-independent-specialist",
+      "words": 141,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/guides/pdk-service-intervals",
+      "words": 141,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/guides/pre-purchase-inspection-checklist",
+      "words": 141,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/guides/dubai-heat",
+      "words": 144,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/guides/oil-change-intervals",
+      "words": 147,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/guides/how-often-service-dubai",
+      "words": 150,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/guides/major-vs-minor-service",
+      "words": 152,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/guides/service-intervals-uae",
+      "words": 158,
+      "family": "article"
+    },
+    {
+      "path": "/ar/services/car-garage-dubai",
+      "words": 196,
+      "family": "service"
+    },
+    {
+      "path": "/porsche/problems/taycan-charging",
+      "words": 200,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/systems/rear-axle-steering",
+      "words": 206,
+      "family": "article"
+    },
+    {
+      "path": "/ar/services/garage-near-me-dubai",
+      "words": 208,
+      "family": "service"
+    },
+    {
+      "path": "/ar/services/roadside-assistance-dubai",
+      "words": 210,
+      "family": "service"
+    },
+    {
+      "path": "/porsche/systems/ptm-awd",
+      "words": 211,
+      "family": "article"
+    },
+    {
+      "path": "/ar/vrx",
+      "words": 212,
+      "family": "vrx"
+    },
+    {
+      "path": "/porsche/systems/tiptronic",
+      "words": 214,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/systems/pasm",
+      "words": 215,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/problems/ac-not-cooling",
+      "words": 216,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/systems/air-suspension",
+      "words": 217,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/systems/sport-chrono",
+      "words": 222,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/systems/pdcc",
+      "words": 224,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/problems/cayenne-air-suspension",
+      "words": 228,
+      "family": "article"
+    },
+    {
+      "path": "/porsche/problems/excessive-oil-consumption",
+      "words": 228,
+      "family": "article"
+    }
+  ],
+  "arabicPagesWithLowArabicShare": [],
+  "englishPagesWithHighArabicShare": [],
+  "noContentInlinksExcludingSitemaps": [
+    "/ar",
+    "/ar/about",
+    "/ar/faq",
+    "/ar/sitemap",
+    "/faq",
+    "/sitemap"
+  ],
+  "lowestContentInlinkCounts": [
+    {
+      "path": "/",
+      "inlinks": 0
+    },
+    {
+      "path": "/ar",
+      "inlinks": 0
+    },
+    {
+      "path": "/ar/about",
+      "inlinks": 0
+    },
+    {
+      "path": "/ar/faq",
+      "inlinks": 0
+    },
+    {
+      "path": "/ar/sitemap",
+      "inlinks": 0
+    },
+    {
+      "path": "/faq",
+      "inlinks": 0
+    },
+    {
+      "path": "/sitemap",
+      "inlinks": 0
+    },
+    {
+      "path": "/ar/blog/aston-martin-best-workshop-dubai",
+      "inlinks": 1
+    },
+    {
+      "path": "/ar/blog/aston-martin-db11-service-dubai-guide",
+      "inlinks": 1
+    },
+    {
+      "path": "/ar/blog/audi-maintenance-guide-dubai",
+      "inlinks": 1
+    },
+    {
+      "path": "/ar/blog/bentley-best-workshop-dubai",
+      "inlinks": 1
+    },
+    {
+      "path": "/ar/blog/bentley-continental-gt-service-dubai-guide",
+      "inlinks": 1
+    },
+    {
+      "path": "/ar/blog/bmw-maintenance-guide-dubai",
+      "inlinks": 1
+    },
+    {
+      "path": "/ar/blog/cadillac-best-workshop-dubai",
+      "inlinks": 1
+    },
+    {
+      "path": "/ar/blog/chevrolet-best-workshop-dubai",
+      "inlinks": 1
+    },
+    {
+      "path": "/ar/blog/ferrari-maintenance-guide-dubai",
+      "inlinks": 1
+    },
+    {
+      "path": "/ar/blog/ford-best-workshop-dubai",
+      "inlinks": 1
+    },
+    {
+      "path": "/ar/blog/g63-to-brabus-g800-conversion-dubai",
+      "inlinks": 1
+    },
+    {
+      "path": "/ar/blog/jaguar-best-workshop-dubai",
+      "inlinks": 1
+    },
+    {
+      "path": "/ar/blog/lamborghini-maintenance-guide-dubai",
+      "inlinks": 1
+    },
+    {
+      "path": "/ar/blog/lamborghini-urus-service-dubai-guide",
+      "inlinks": 1
+    },
+    {
+      "path": "/ar/blog/land-rover-best-workshop-dubai",
+      "inlinks": 1
+    },
+    {
+      "path": "/ar/blog/maserati-best-workshop-dubai",
+      "inlinks": 1
+    },
+    {
+      "path": "/ar/blog/maybach-best-workshop-dubai",
+      "inlinks": 1
+    },
+    {
+      "path": "/ar/blog/maybach-s580-service-dubai-guide",
+      "inlinks": 1
+    },
+    {
+      "path": "/ar/blog/mclaren-720s-service-dubai-guide",
+      "inlinks": 1
+    },
+    {
+      "path": "/ar/blog/mclaren-best-workshop-dubai",
+      "inlinks": 1
+    },
+    {
+      "path": "/ar/blog/mini-best-workshop-dubai",
+      "inlinks": 1
+    },
+    {
+      "path": "/ar/blog/oil-specification-guide-dubai-luxury",
+      "inlinks": 1
+    },
+    {
+      "path": "/ar/blog/range-rover-maintenance-guide-dubai",
+      "inlinks": 1
+    },
+    {
+      "path": "/ar/blog/rolls-royce-best-workshop-dubai",
+      "inlinks": 1
+    },
+    {
+      "path": "/ar/blog/rolls-royce-ghost-service-dubai-guide",
+      "inlinks": 1
+    },
+    {
+      "path": "/ar/blog/summer-car-preparation-dubai-checklist",
+      "inlinks": 1
+    },
+    {
+      "path": "/ar/blog/transmission-service-7g-9g-dubai",
+      "inlinks": 1
+    },
+    {
+      "path": "/ar/blog/volkswagen-best-workshop-dubai",
+      "inlinks": 1
+    },
+    {
+      "path": "/ar/brands",
+      "inlinks": 1
+    },
+    {
+      "path": "/ar/services",
+      "inlinks": 1
+    },
+    {
+      "path": "/ar/services/car-garage-dubai",
+      "inlinks": 1
+    },
+    {
+      "path": "/ar/services/garage-near-me-dubai",
+      "inlinks": 1
+    },
+    {
+      "path": "/ar/services/roadside-assistance-dubai",
+      "inlinks": 1
+    }
+  ],
+  "brokenLinks": [],
+  "brokenFragments": [],
+  "noindexContentLinkCount": 3007,
+  "missingImageAltAttributes": [],
+  "imageElementsWithoutDimensions": 2188,
+  "largestHtml": [
+    {
+      "path": "/ar/blog",
+      "bytes": 222900
+    },
+    {
+      "path": "/blog",
+      "bytes": 204925
+    },
+    {
+      "path": "/",
+      "bytes": 161970
+    },
+    {
+      "path": "/brands/mercedes-benz-service-dubai",
+      "bytes": 159307
+    },
+    {
+      "path": "/ar",
+      "bytes": 146063
+    },
+    {
+      "path": "/brands/porsche-service-dubai",
+      "bytes": 136607
+    },
+    {
+      "path": "/brands/ferrari-service-dubai",
+      "bytes": 121398
+    },
+    {
+      "path": "/brands/bmw-service-dubai",
+      "bytes": 113032
+    },
+    {
+      "path": "/brands/range-rover-service-dubai",
+      "bytes": 105663
+    },
+    {
+      "path": "/brands/defender-service-dubai",
+      "bytes": 100335
+    },
+    {
+      "path": "/brands/rolls-royce-service-dubai",
+      "bytes": 97897
+    },
+    {
+      "path": "/brands/lamborghini-service-dubai",
+      "bytes": 97894
+    },
+    {
+      "path": "/brands/bentley-service-dubai",
+      "bytes": 96922
+    },
+    {
+      "path": "/ar/brands/porsche-service-dubai",
+      "bytes": 93845
+    },
+    {
+      "path": "/brands/mclaren-service-dubai",
+      "bytes": 93672
+    }
+  ],
+  "repeatedParagraphCount": 48,
+  "caveats": [
+    "Word counts, title length, shared paragraphs and language proportions are review signals, not Google ranking thresholds.",
+    "Paragraph/content extraction excludes header, footer, nav, script, style and SVG but may include shared in-page calls to action.",
+    "Inlinks count unique source pages excluding HTML sitemap sources; normal directory and related-service links remain.",
+    "Live HTTP response timing is a diagnostic sample, not Core Web Vitals.",
+    "The local compiled route manifest may predate concurrent source edits."
+  ]
+}

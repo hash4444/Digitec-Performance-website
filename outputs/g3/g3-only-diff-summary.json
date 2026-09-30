@@ -1,0 +1,57 @@
+{
+  "files": [
+    {
+      "file": "cloudflare/routing-response-data.js",
+      "added": 1,
+      "removed": 1,
+      "kind": "generated"
+    },
+    {
+      "file": "docs/seo/query-release-validation.json",
+      "added": 1,
+      "removed": 1,
+      "kind": "generated"
+    },
+    {
+      "file": "docs/seo/route-schema-matrix.csv",
+      "added": 4,
+      "removed": 4,
+      "kind": "generated"
+    },
+    {
+      "file": "src/data/aiGuidePostsExtra.ts",
+      "added": 8,
+      "removed": 7,
+      "kind": "source"
+    },
+    {
+      "file": "src/data/ppfContent.ts",
+      "added": 2,
+      "removed": 2,
+      "kind": "source"
+    },
+    {
+      "file": "src/pages/PpfPage.tsx",
+      "added": 1,
+      "removed": 1,
+      "kind": "source"
+    },
+    {
+      "file": "src/pages/ServicePage.tsx",
+      "added": 14,
+      "removed": 3,
+      "kind": "source"
+    },
+    {
+      "file": "src/i18n/ar-protection-services.ts",
+      "added": 62,
+      "removed": 0,
+      "kind": "source"
+    }
+  ],
+  "authored_source_files": 5,
+  "source_lines_added": 87,
+  "source_lines_removed": 13,
+  "generated_files": 3,
+  "g2_artifacts_modified": []
+}

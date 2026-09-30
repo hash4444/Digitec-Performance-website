@@ -19,6 +19,7 @@ import {
 } from '@/lib/schema';
 import { LocalizedLink as Link } from '@/components/LocalizedLink';
 import { useLocale } from '@/i18n/use-locale';
+import { refineArabicProtectionService } from '@/i18n/ar-protection-services';
 import { localizeServiceToArabic } from '@/i18n/ar-services';
 import { refineGenericArabicService } from '@/i18n/ar-generic-services';
 
@@ -67,7 +68,7 @@ const ServicePage: React.FC<ServicePageProps> = ({ slugOverride, canonicalPath, 
   const newSlug = slug ? OLD_TO_NEW_SLUG[slug] : undefined;
   const isElectronics = electronicsServices.some(item => item.slug === slug);
   const sourceService = slug && !newSlug && !externalRedirect && !(isArabic && isElectronics) ? getServiceBySlug(slug) : undefined;
-  const service = sourceService && isArabic ? (brandPath ? localizeServiceToArabic(sourceService) : refineGenericArabicService(localizeServiceToArabic(sourceService)))
+  const service = sourceService && isArabic ? (brandPath ? localizeServiceToArabic(sourceService) : refineArabicProtectionService(refineGenericArabicService(localizeServiceToArabic(sourceService))))
     : sourceService && !brandPath && sourceService.pageTitle ? { ...sourceService, title: sourceService.pageTitle } : sourceService;
   const servicePath = service ? canonicalPath ?? `/services/${service.slug}` : undefined;
   const url = servicePath
@@ -232,6 +233,15 @@ const ServicePage: React.FC<ServicePageProps> = ({ slugOverride, canonicalPath, 
                 {!isArabic && service.relatedServiceLinks && <nav className="mt-5 flex flex-wrap gap-x-6 gap-y-3" aria-label="Related inspection and service options">
                   {service.relatedServiceLinks.map(link => <Link key={link.path} to={link.path} className="text-base text-burnt-orange underline">{link.label}</Link>)}
                 </nav>}
+                {isArabic && ['paint-protection-dubai', 'paint-protection-film', 'ceramic-coating'].includes(service.slug) && (
+                  <p className="mt-5 text-gray-300 leading-relaxed text-lg">
+                    قارن <Link to="/services/paint-protection-dubai" className="text-burnt-orange underline">خيارات حماية الطلاء</Link>،
+                    وراجع <Link to="/services/paint-protection-film" className="text-burnt-orange underline">تغطية أفلام PPF</Link> أو
+                    <Link to="/services/ceramic-coating" className="text-burnt-orange underline"> معالجة السيراميك والعناية</Link>.
+                    يساعد <Link to="/blog/ceramic-coating-vs-ppf-dubai" className="text-burnt-orange underline">دليل المقارنة</Link> في اختيار الهدف؛
+                    أما فقدان الطلاء أو الضرر العميق فيحتاج إلى <Link to="/services/car-body-repair-dubai" className="text-burnt-orange underline">تقييم إصلاح الهيكل والدهان</Link>.
+                  </p>
+                )}
                 {!isArabic && service.slug === 'paint-protection-dubai' && (
                   <p className="mt-5 text-gray-300 leading-relaxed text-lg"><Link to="/services/car-polishing-dubai" className="text-burnt-orange underline">Car polishing and paint correction</Link> address existing surface defects before protection is selected. For a physical barrier against road debris, explore <Link to="/services/paint-protection-film" className="text-burnt-orange underline">PPF coverage and installation in Dubai</Link>. For water behaviour and finish maintenance, see our <Link to="/services/ceramic-coating" className="text-burnt-orange underline">ceramic coating service</Link>. Preparation and product compatibility are assessed for your car.</p>
                 )}
@@ -520,7 +530,8 @@ const ServicePage: React.FC<ServicePageProps> = ({ slugOverride, canonicalPath, 
             <h2 className="text-2xl sm:text-3xl font-bold mb-8">{isArabic ? 'خدمات ذات صلة' : 'Related Services'}</h2>
             <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
               {related.map((sourceRelated) => {
-                const s = isArabic ? localizeServiceToArabic(sourceRelated) : sourceRelated;
+                const localizedRelated = isArabic ? localizeServiceToArabic(sourceRelated) : sourceRelated;
+                const s = isArabic && ['paint-protection-dubai', 'paint-protection-film', 'ceramic-coating'].includes(service.slug) ? refineArabicProtectionService(localizedRelated) : localizedRelated;
                 return (
                 <Link
                   key={s.slug}
@@ -561,7 +572,7 @@ const ServicePage: React.FC<ServicePageProps> = ({ slugOverride, canonicalPath, 
               {isArabic ? <>متخصصون في العلامات بمدينة <span className="text-burnt-orange">دبي</span></> : <>Brand Specialists in <span className="text-burnt-orange">Dubai</span></>}
             </h2>
             <p className="text-gray-400 text-sm sm:text-base">
-              {isArabic ? `نقدم ${service?.title ?? 'هذه الخدمة'} للعلامات التالية.` : 'Explore our brand service pages. Coverage for a particular repair or upgrade is confirmed for the exact vehicle and fitted equipment.'}
+              {isArabic ? (['paint-protection-dubai', 'paint-protection-film', 'ceramic-coating'].includes(service.slug) ? 'استعرض صفحات العلامات، وأكد ملاءمة المنتج والسطح ونطاق العمل للسيارة المعنية قبل الحجز.' : `نقدم ${service?.title ?? 'هذه الخدمة'} للعلامات التالية.`) : 'Explore our brand service pages. Coverage for a particular repair or upgrade is confirmed for the exact vehicle and fitted equipment.'}
             </p>
           </div>
           <div className="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-7 gap-3">

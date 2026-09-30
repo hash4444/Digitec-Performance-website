@@ -524,7 +524,7 @@ const BrandWorkshopArticleContent = ({ article, isArabic }: { article: BrandWork
           <section className="mt-14">
             <h2 className="text-center text-2xl font-black sm:text-3xl">{t(`${article.brand} workshop FAQs`, `الأسئلة الشائعة عن ورشة ${article.brand}`)}</h2>
             <Accordion type="single" collapsible className="mt-7 space-y-3">
-              {faqs.map((faq, index) => <AccordionItem key={faq.question} value={`faq-${index}`} className="rounded-2xl border border-white/10 bg-white/[0.03] px-5"><AccordionTrigger className={`${isArabic ? 'text-right' : 'text-left'} font-bold hover:no-underline`}>{faq.question}</AccordionTrigger><AccordionContent forceMount={['Porsche', 'BMW', 'Ferrari', 'Lamborghini', 'Rolls-Royce', 'Bentley', 'Maybach', 'Range Rover', 'Jaguar', 'Cadillac', 'Volkswagen'].includes(article.brand) ? true : undefined} className="leading-relaxed text-gray-300">{faq.answer}</AccordionContent></AccordionItem>)}
+              {faqs.map((faq, index) => <AccordionItem key={faq.question} value={`faq-${index}`} className="rounded-2xl border border-white/10 bg-white/[0.03] px-5"><AccordionTrigger className={`${isArabic ? 'text-right' : 'text-left'} font-bold hover:no-underline`}>{faq.question}</AccordionTrigger><AccordionContent forceMount className="leading-relaxed text-gray-300">{faq.answer}</AccordionContent></AccordionItem>)}
             </Accordion>
           </section>
 

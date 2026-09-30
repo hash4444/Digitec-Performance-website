@@ -1422,7 +1422,7 @@ const BrandPage = () => {
                 <AccordionTrigger className={`${isArabic ? 'text-right' : 'text-left'} text-off-white font-semibold text-base sm:text-lg hover:no-underline py-5`}>
                   {f.q}
                 </AccordionTrigger>
-                <AccordionContent forceMount={isPorscheServiceHub || isMercedesServiceHub || isBmwServiceHub || isFerrari || isEnglishAudiHub || brand.slug === 'bentley-service-dubai' || isEnglishAstonHub || isEnglishMclarenHub || isLamborghini || brand.slug === 'rolls-royce-service-dubai' || isMaybach || isEnglishRoxHub || ['range-rover-service-dubai', 'defender-service-dubai', 'jaguar-service-dubai', 'cadillac-service-dubai', 'volkswagen-service-dubai', 'jetour-service-dubai', 'rox-service-dubai'].includes(brand.slug) ? true : undefined} className="text-gray-300 text-sm sm:text-base leading-relaxed pb-5">
+                <AccordionContent forceMount className="text-gray-300 text-sm sm:text-base leading-relaxed pb-5">
                   {f.a}
                 </AccordionContent>
               </AccordionItem>

@@ -1,0 +1,170 @@
+{
+  "No-start": {
+    "problem_family": "No-start",
+    "primary_owner": "/services/car-diagnostics-dubai",
+    "g1_commercial_owner": "/services/car-diagnostics-dubai",
+    "role": "commercial",
+    "reason": "Separate no crank, cranks without firing and starts then dies; electrical testing when no crank. No new URL from brief examples alone."
+  },
+  "Battery drain": {
+    "problem_family": "Battery drain",
+    "primary_owner": "/blog/car-battery-life-dubai-heat",
+    "g1_commercial_owner": "/services/auto-electrical-repair-dubai",
+    "role": "section",
+    "reason": "Repeated-discharge section within existing battery guide, then electrical assessment rather than automatic replacement."
+  },
+  "Battery warning": {
+    "problem_family": "Battery warning",
+    "primary_owner": "/services/auto-electrical-repair-dubai",
+    "g1_commercial_owner": "/services/auto-electrical-repair-dubai",
+    "role": "commercial",
+    "reason": "Warning is a charging/electrical task; low-voltage battery replacement only after testing."
+  },
+  "Oil pressure": {
+    "problem_family": "Oil pressure",
+    "primary_owner": "/services/mechanical-repair-dubai",
+    "g1_commercial_owner": "/services/mechanical-repair-dubai",
+    "role": "deferred",
+    "reason": "Dedicated warning explanation deferred; urgent warning must follow exact vehicle manual, not oil-change marketing."
+  },
+  "Check-engine warning": {
+    "problem_family": "Check-engine warning",
+    "primary_owner": "/blog/check-engine-light-dubai-guide",
+    "g1_commercial_owner": "/services/car-diagnostics-dubai",
+    "role": "problem",
+    "reason": "Warning interpretation and conditional urgency, then diagnostic assessment; cost queries remain commercial."
+  },
+  "Misfire / rough idle": {
+    "problem_family": "Misfire / rough idle",
+    "primary_owner": "/services/car-diagnostics-dubai",
+    "g1_commercial_owner": "/services/car-diagnostics-dubai",
+    "role": "commercial",
+    "reason": "Investigate running fault; mechanical repair follows findings. Do not presume ignition component failure."
+  },
+  "Overheating": {
+    "problem_family": "Overheating",
+    "primary_owner": "/blog/engine-overheating-dubai-what-to-do",
+    "g1_commercial_owner": "/services/mechanical-repair-dubai",
+    "role": "problem",
+    "reason": "Immediate safety and temperature context; distinct from coolant leak without temperature rise."
+  },
+  "Coolant leak": {
+    "problem_family": "Coolant leak",
+    "primary_owner": "/services/mechanical-repair-dubai",
+    "g1_commercial_owner": "/services/mechanical-repair-dubai",
+    "role": "commercial",
+    "reason": "Locate fluid loss; related overheating guide supports urgency, not a claim all leaks cause overheating."
+  },
+  "Oil leak": {
+    "problem_family": "Oil leak",
+    "primary_owner": "/services/mechanical-repair-dubai",
+    "g1_commercial_owner": "/services/mechanical-repair-dubai",
+    "role": "commercial",
+    "reason": "Identify source and severity; distinguish fluid loss from oil-pressure warning."
+  },
+  "Smoke": {
+    "problem_family": "Smoke",
+    "primary_owner": "/services/mechanical-repair-dubai",
+    "g1_commercial_owner": "/services/mechanical-repair-dubai",
+    "role": "deferred",
+    "reason": "White, blue and black exhaust smoke and engine-bay smoke remain separate observations. No measured generic case for a new page; colour alone does not diagnose."
+  },
+  "Transmission symptoms": {
+    "problem_family": "Transmission symptoms",
+    "primary_owner": "/services/transmission-repair-dubai",
+    "g1_commercial_owner": "/services/transmission-repair-dubai",
+    "role": "commercial",
+    "reason": "Jerking, slipping, delayed engagement and warning are distinct contexts within fault assessment; maintenance is separate."
+  },
+  "AC cooling / airflow": {
+    "problem_family": "AC cooling / airflow",
+    "primary_owner": "/blog/car-ac-not-cold-dubai-causes",
+    "g1_commercial_owner": "/services/car-ac-repair-dubai",
+    "role": "problem",
+    "reason": "Cooling output, weak airflow, idle-only and one-side complaints are distinguished; no automatic regas or compressor verdict."
+  },
+  "Suspension symptoms": {
+    "problem_family": "Suspension symptoms",
+    "primary_owner": "/services/suspension-repair-dubai",
+    "g1_commercial_owner": "/services/suspension-repair-dubai",
+    "role": "commercial",
+    "reason": "Noise, lean and low ride height are assessment contexts; air suspension only where fitted."
+  },
+  "Steering symptoms": {
+    "problem_family": "Steering symptoms",
+    "primary_owner": "/services/steering-repair-dubai",
+    "g1_commercial_owner": "/services/steering-repair-dubai",
+    "role": "commercial",
+    "reason": "Assistance and steering feel; speed-related wheel vibration also supports tyre/suspension assessment."
+  },
+  "Brake symptoms": {
+    "problem_family": "Brake symptoms",
+    "primary_owner": "/services/brake-repair-dubai",
+    "g1_commercial_owner": "/services/brake-repair-dubai",
+    "role": "commercial",
+    "reason": "Squeak, grinding, braking vibration and changed pedal feel are not interchangeable; no pad replacement from noise alone."
+  },
+  "Screen / head-unit fault": {
+    "problem_family": "Screen / head-unit fault",
+    "primary_owner": "/services/auto-electrical-repair-dubai",
+    "g1_commercial_owner": "/services/auto-electrical-repair-dubai",
+    "role": "commercial",
+    "reason": "Display/touch symptoms to electrical; head-unit or no-audio task to existing head-unit owner; CUE stays Cadillac."
+  },
+  "Camera fault": {
+    "problem_family": "Camera fault",
+    "primary_owner": "/services/auto-electrical-repair-dubai",
+    "g1_commercial_owner": "/services/auto-electrical-repair-dubai",
+    "role": "commercial",
+    "reason": "Power, connection and display checks; repair distinct from unverified generic camera installation."
+  },
+  "Soft-close fault": {
+    "problem_family": "Soft-close fault",
+    "primary_owner": "/services/soft-close-door-repair-dubai",
+    "g1_commercial_owner": "/services/soft-close-door-repair-dubai",
+    "role": "commercial",
+    "reason": "Fault in fitted system, distinct from protected ROX installation and compatibility enquiry."
+  },
+  "Power loss / boost": {
+    "problem_family": "Power loss / boost",
+    "primary_owner": "/services/car-diagnostics-dubai",
+    "g1_commercial_owner": "/services/car-diagnostics-dubai",
+    "role": "commercial",
+    "reason": "Power loss is not proof of turbo failure; mechanical, fuel and transmission checks depend on findings."
+  },
+  "Exhaust noise": {
+    "problem_family": "Exhaust noise",
+    "primary_owner": "/services/exhaust-repair-dubai",
+    "g1_commercial_owner": "/services/exhaust-repair-dubai",
+    "role": "commercial",
+    "reason": "Noise/leak assessment, not exhaust modification or tuning."
+  },
+  "Tyre / wheel symptoms": {
+    "problem_family": "Tyre / wheel symptoms",
+    "primary_owner": "/services/tire-repair-dubai",
+    "g1_commercial_owner": "/services/tire-repair-dubai",
+    "role": "commercial",
+    "reason": "Puncture/air loss and speed-related wheel concerns; repair eligibility requires inspection."
+  },
+  "Vibration": {
+    "problem_family": "Vibration",
+    "primary_owner": "/services/car-diagnostics-dubai",
+    "g1_commercial_owner": "/services/car-diagnostics-dubai",
+    "role": "deferred",
+    "reason": "Broad unspecified shaking cannot choose one system; idle, road speed and braking contexts are separated before referral."
+  },
+  "Engine noise": {
+    "problem_family": "Engine noise",
+    "primary_owner": "/services/mechanical-repair-dubai",
+    "g1_commercial_owner": "/services/mechanical-repair-dubai",
+    "role": "commercial",
+    "reason": "Identify noise conditions and associated warnings; do not invent common component failures."
+  },
+  "Electrical symptoms": {
+    "problem_family": "Electrical symptoms",
+    "primary_owner": "/services/auto-electrical-repair-dubai",
+    "g1_commercial_owner": "/services/auto-electrical-repair-dubai",
+    "role": "commercial",
+    "reason": "Circuit/voltage investigation; multiple warnings do not imply multiple failed modules."
+  }
+}
