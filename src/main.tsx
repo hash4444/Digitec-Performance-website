@@ -2,6 +2,27 @@ import { createRoot, hydrateRoot } from 'react-dom/client'
 import App from './App.tsx'
 import './index.css'
 
+// After a new deploy, old hashed chunks disappear. Reload once so the browser
+// fetches the fresh build instead of showing a blank screen.
+const RELOAD_KEY = 'chunk-reload-at';
+const reloadForStaleChunk = () => {
+  const last = Number(sessionStorage.getItem(RELOAD_KEY) || 0);
+  if (Date.now() - last < 10_000) return;
+  sessionStorage.setItem(RELOAD_KEY, String(Date.now()));
+  window.location.reload();
+};
+window.addEventListener('vite:preloadError', (event) => {
+  event.preventDefault();
+  reloadForStaleChunk();
+});
+window.addEventListener('unhandledrejection', (event) => {
+  const message = String((event.reason as Error)?.message ?? event.reason ?? '');
+  if (/Failed to fetch dynamically imported module|Importing a module script failed|error loading dynamically imported module/i.test(message)) {
+    event.preventDefault();
+    reloadForStaleChunk();
+  }
+});
+
 const rootElement = document.getElementById('root');
 
 if (!rootElement) {
