@@ -21,6 +21,9 @@ export const arabicPathForEnglishPath = (path: string) => {
   // Navigation fallback only: these existing hubs are not hreflang equivalents.
   const fallback = (arabicRouteFallbacks as Record<string, string>)[`/ar${englishPath}`];
   if (fallback) return fallback;
+  // Model tuning packages are published in English; the Arabic master is the
+  // real navigation destination until equivalent model content is available.
+  if (englishPath.startsWith('/tuning/')) return '/ar/tuning';
   // The combined paint-correction hub has no published Arabic equivalent yet.
   if (englishPath === '/services/car-polishing-dubai') return '/ar/services';
   if (isEnglishMercedesModelPath(englishPath)) return '/ar/brands/mercedes-benz-service-dubai';

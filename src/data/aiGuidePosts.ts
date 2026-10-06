@@ -1,4 +1,10 @@
 import type { BlogPost } from './blogPosts';
+import { tuningCars, type Stage } from './tuningCars';
+
+const amgGtPackageCommercialDetails = (stage: Stage) => tuningCars
+  .filter((car) => ['amg-gt-gts', 'amg-gtc-gtr'].includes(car.id) && car.stages[stage])
+  .map((car) => `${car.name}: ${car.stages[stage]!.price}, ${car.stages[stage]!.time}`)
+  .join('; ');
 
 /**
  * Answer-first guides written for AI assistants and AI Overviews.
@@ -286,55 +292,58 @@ export const aiGuidePosts: BlogPost[] = [
 
   {
     slug: 'mercedes-amg-gt-tuning-dubai',
-    title: 'Mercedes-AMG GT Tuning in Dubai: A Complete Upgrade Guide',
+    title: 'Understanding Mercedes-AMG GT Tuning Packages',
     excerpt:
-      'How AMG GT tuning is staged in Dubai, from ECU calibration through downpipes, intercooling and turbo upgrades, and what the M177 and M178 engines need to stay reliable.',
+      'How to read AMG GT package scope, distinguish GT / GT S from GT C / GT R and review vehicle condition, software, fuel and supporting hardware before a decision.',
     category: 'Tuning',
     author: 'DIGI-TEC Workshop',
     date: '2026-08-13',
+    updatedDate: '2026-10-05',
     readTime: '9 min read',
     coverGradient: 'from-burnt-orange/40 via-charcoal to-black',
-    metaTitle: 'Mercedes AMG GT Tuning Dubai | Vehicle-Specific Guide',
+    metaTitle: 'AMG GT Tuning Packages Explained | Digi-Tec',
     metaDescription:
-      'A complete Mercedes-AMG GT tuning guide for Dubai: ECU calibration, downpipes, intercooling, turbo upgrades and the supporting work the M178 V8 needs in UAE heat.',
+      'Understand the listed AMG GT / GT S and GT C / GT R packages, stage-specific hardware, inspection questions and how to read vehicle-specific prices.',
     keywords:
       'mercedes amg gt tuning, AMG GT tuning Dubai, M178 tuning Dubai, AMG GT ECU remap Dubai, GAD Motors Dubai, AMG performance tuning UAE',
     ogType: 'article',
     content: [
       {
         type: 'p',
-        text: 'Short answer: Mercedes-AMG GT tuning in Dubai is staged work on the M178 twin-turbo V8. A project can begin with ECU calibration and progress to exhaust, intercooling, intake, turbo, fuel-system and transmission changes. The appropriate scope depends on the exact car, current condition, fuel, existing modifications and intended use; Digi-Tec discusses those inputs at its Al Quoz workshop before proposing work.',
+        text: 'This guide explains how to assess the published M178 AMG GT / GT S and GT C / GT R packages. A stage label describes one vehicle-specific package; it does not establish the same hardware, price or output for every AMG. Use the model tuning page for current package comparisons, prices and a booking enquiry, then review the exact vehicle, software, condition, fuel and existing modifications with the team.',
+        links: [{ href: '/tuning/mercedes-amg-gt', label: 'AMG GT tuning packages, prices and vehicle enquiry' }],
       },
-      { type: 'h2', text: 'Which AMG GT models are covered' },
+      { type: 'h2', text: 'Which AMG GT configuration are you comparing?' },
       {
         type: 'p',
-        text: 'Earlier AMG GT, GT S, GT C and GT R models, four-door GT variants and other AMG platforms have different engines, control units and supporting systems. Confirm the generation, engine, existing software and modifications before discussing a calibration; C63 and E63 badges do not establish the same tuning scope.',
+        text: 'The configurator separates M178 AMG GT / GT S and GT C / GT R entries, with different stock and tuned outputs. Four-door GT63 and other AMG platforms have their own configurations. Confirm the generation, engine, existing software and modifications; a shared AMG or GT badge does not establish identical tuning scope.',
       },
-      { type: 'h2', text: 'Stage one: ECU calibration' },
+      { type: 'h2', text: 'What is in the listed Stage 1 package?' },
       {
         type: 'p',
-        text: 'Stage one is a recalibration of boost, ignition, fuelling and torque limiters on standard hardware. On a healthy car it improves throttle response and pull through the mid range, and it is the stage where calibration quality matters most because the standard turbochargers, cooling and clutch pack are all being asked to work harder. A pre tune health check is part of the process: no calibration should be loaded onto an engine with a boost leak, a tired spark plug set or a marginal cooling system.',
+        text: `For both published M178 AMG GT entries, Stage 1 lists an airfilter, optimization of engine software and deactivation of the V-Max speed limiter. The configurator records these prices and estimated workshop times: ${amgGtPackageCommercialDetails('stage1')}. It is therefore not accurate to describe every Stage 1 package as software only. The exact vehicle, software access, fuel and mechanical condition still need review before agreeing the scope.`,
+        links: [{ href: '/tuning/mercedes-amg-gt', label: 'Compare the actual AMG GT Stage 1 figures and price' }],
       },
-      { type: 'h2', text: 'Stage two: exhaust flow' },
+      { type: 'h2', text: 'How does the listed Stage 2 package differ?' },
       {
         type: 'p',
-        text: 'Downpipes and a freer flowing exhaust reduce backpressure so the turbochargers spool with less restriction. This stage is always paired with a fresh calibration; fitting hardware without recalibration leaves the engine running to a map that no longer matches it.',
+        text: `The two published AMG GT Stage 2 packages add a downpipe with sport catalytic converter, downpipe heat coating and transmission software optimization (TCU) to the listed airfilter and engine-software work. Their recorded prices and estimated workshop times are: ${amgGtPackageCommercialDetails('stage2')}. That TCU item is package-specific evidence; it should not be assumed to be included in every engine calibration or every vehicle stage.`,
+        links: [{ href: '/tuning/mercedes-amg-gt', label: 'Compare the AMG GT Stage 2 package scope' }],
       },
-      { type: 'h2', text: 'Beyond stage two: hardware' },
+      { type: 'h2', text: 'What changes in higher packages?' },
       {
         type: 'ul',
         items: [
-          'Upgraded intercooling, which is the single most valuable change in UAE heat because intake temperatures decide how much timing the engine can safely keep.',
-          'Intake and charge pipe upgrades to reduce restriction and remove weak points under higher boost.',
-          'Turbocharger upgrades selected for the platform and agreed project target.',
-          'Fuel system capacity to match the airflow.',
-          'Transmission calibration and clutch capacity so the drivetrain can hold the torque.',
+          'The listed AMG GT Stage 3 packages name a Pulse Flow exhaust manifold, a GAD 177 55/63 twin-scroll turbocharger and a higher-flow high-pressure fuel system.',
+          'Higher listed stages name different turbochargers and, where specified, forged pistons or cylinder-head changes. These items belong to their own package rows.',
+          'TCU software and double-clutch reinforcement are explicitly named in relevant higher AMG GT packages; their stated scope does not apply to every model.',
+          'VIP entries are individual custom requests. Confirm vehicle availability, the written scope and testing rather than treating a custom example as a standard package.',
         ],
       },
       { type: 'h2', text: 'What Dubai heat changes' },
       {
         type: 'p',
-        text: 'Ambient temperature is the limiting factor for tuned AMG V8 engines here. A calibration that behaves perfectly in European conditions can pull timing and reduce boost in a UAE summer. That is why cooling capacity, intake temperature management and a conservative safety margin in the calibration matter more locally than a headline figure written on a dyno sheet elsewhere.',
+        text: 'Ambient temperature, cooling condition, intake temperature, fuel and intended use affect performance under load. A peak figure from another vehicle or test environment cannot establish the result for your car. Ask how the vehicle will be checked before and after the work and whether the proposal fits its actual driving conditions.',
       },
       { type: 'h2', text: 'Confirm the software and hardware source' },
       {
@@ -355,7 +364,7 @@ export const aiGuidePosts: BlogPost[] = [
       { type: 'h3', text: 'Can the car be returned to standard?' },
       {
         type: 'p',
-        text: 'A software only stage one can generally be returned to the original calibration. Hardware changes such as downpipes and turbos require the parts to be refitted to reverse.',
+        text: 'Ask which original software records are retained, whether the exact control unit can be returned to its previous calibration and what that process involves. The listed Stage 1 package also contains an airfilter; higher-package hardware changes need their own reversal plan. Do not assume every modification is fully reversible.',
       },
       { type: 'h3', text: 'How long does AMG GT tuning take?' },
       {
@@ -365,7 +374,8 @@ export const aiGuidePosts: BlogPost[] = [
       { type: 'h3', text: 'How do I start?' },
       {
         type: 'p',
-        text: 'Send your model, year and any existing modifications on WhatsApp to +971 4 340 2223, or visit the workshop in Al Quoz Industrial Area 3 for a tuning consultation.',
+        text: 'Start with the model page to compare the two published M178 configurations, stage data and EUR prices. Then send the model, year, software information where known, fuel, existing modifications and intended use so the team can review availability and the proposed scope.',
+        links: [{ href: '/tuning/mercedes-amg-gt', label: 'AMG GT model tuning page and booking enquiry' }, { href: '/tuning', label: 'Performance Configurator and generic tuning guidance' }],
       },
     ],
   },

@@ -95,20 +95,20 @@ export const brands: Brand[] = [
     name: 'Audi',
     slug: 'audi-service-dubai',
     logo: '/brand-logos/showcase/audi.png',
-    specialization: 'Repair • Maintenance • Diagnostics • Performance',
+    specialization: 'Repair • Maintenance • Diagnostics',
     intro:
-      'Audi A4, A6, A8, Q, S, RS and R8 owners can request vehicle-specific inspection and service at Digi-Tec. Quattro, S Tronic, powertrain, brake, suspension and performance-project scope is confirmed from the VIN and vehicle before work begins.',
+      'Audi A4, A6, A8, Q, S, RS and R8 owners can request vehicle-specific inspection and service at Digi-Tec. Quattro, S Tronic, powertrain, brake, suspension and repair scope is confirmed from the VIN and vehicle before work begins.',
     whyChoose: [
       { title: 'Audi-Compatible Diagnostics', description: 'Scanning, live data, service functions, adaptations, coding or software work depend on the fitted modules and available access; functions are confirmed per vehicle.' },
       { title: 'Quattro & Sport Differential Inspection', description: 'Haldex, centre-differential and rear sport-differential concerns can be inspected; fluid, parts and supported calibration requirements are confirmed for the exact vehicle.' },
       { title: 'S Tronic DCT Gearbox Systems', description: 'DL501 / DQ500 mechatronic, clutch and fluid requirements are checked for the exact gearbox before service or basic-setting work is proposed.' },
-      { title: 'EA888 & 4.0 TFSI Project Consultation', description: 'RS3, RS4, RS6 and RS7 performance requests are reviewed against vehicle health, fitted hardware and intended use before any tuning scope is proposed.' },
+      { title: 'EA888 & 4.0 TFSI Health Inspection', description: 'RS3, RS4, RS6 and RS7 cooling, ignition, boost and fuel-system concerns are reviewed against the fitted engine, vehicle condition and diagnostic findings before repair is proposed.' },
     ],
     faqs: [
       { q: 'How often should an Audi be serviced in Dubai?', a: serviceIntervalAnswer('Audi') },
       { q: 'Do you use genuine Audi parts?', a: partsAvailabilityAnswer('Audi') },
       { q: 'How long does a typical Audi service take?', a: serviceTimingAnswer('Audi') },
-      { q: 'Can you tune an RS3, RS6, or RS7?', a: 'A performance consultation can be requested. Vehicle health, software and hardware compatibility, supported calibration access and the intended use are reviewed before any package is proposed.' },
+      { q: 'Can you inspect an RS3, RS6, or RS7?', a: 'An inspection can be requested. The team reviews vehicle condition, fitted equipment and any warnings or symptoms before confirming the diagnostic and repair scope.' },
     ],
     relatedServices: ['mechanical-repair-dubai', 'transmission-repair-dubai', 'car-diagnostics-dubai', 'brake-repair-dubai'],
   },
@@ -116,13 +116,13 @@ export const brands: Brand[] = [
     name: 'BMW',
     slug: 'bmw-service-dubai',
     logo: '/brand-logos/showcase/bmw.png',
-    specialization: 'Repair • Maintenance • Diagnostics • Performance',
+    specialization: 'Repair • Maintenance • Diagnostics',
     intro:
-      'BMW owners can request routine maintenance, fault inspection and performance-project consultation at Digi-Tec in Al Quoz. Diagnostic, iDrive, coding, parts and repair availability are confirmed for the VIN, fitted modules and requested work before the scope is agreed.',
+      'BMW owners can request routine maintenance and fault inspection at Digi-Tec in Al Quoz. Diagnostic, iDrive, coding, parts and repair availability are confirmed for the VIN, fitted modules and requested work before the scope is agreed.',
     whyChoose: [
       { title: 'BMW-Compatible Diagnostics & Coding Review', description: 'Scan, live-data, service, coding or retrofit functions depend on the F, G or i-Series vehicle and required access; availability is confirmed before booking.' },
-      { title: 'S55, S58 & S63 Engine Systems', description: 'Charge-pipe, oil-cooler, VANOS and performance-project requests for M3, M4, M5 and X5M/X6M are reviewed against the vehicle before a scope is proposed.' },
-      { title: 'ZF 8HP Transmission Review', description: 'Fluid, filter, fault and shift-quality concerns can be inspected. The exact fluid, supported service functions and any performance request are reviewed for the fitted gearbox before a scope is proposed.' },
+      { title: 'S55, S58 & S63 Engine Systems', description: 'Charge-pipe, oil-cooler and VANOS concerns for M3, M4, M5 and X5M/X6M are reviewed against the vehicle before a repair scope is proposed.' },
+      { title: 'ZF 8HP Transmission Review', description: 'Fluid, filter, fault and shift-quality concerns can be inspected. The exact fluid and supported service functions are reviewed for the fitted gearbox before a scope is proposed.' },
       { title: 'iDrive & Retrofit Consultation', description: 'CarPlay, Live Cockpit, DAB+ or other retrofit requests are checked for hardware, software and coding compatibility before a scope is offered.' },
     ],
     faqs: [

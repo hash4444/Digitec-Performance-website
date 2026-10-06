@@ -1,6 +1,7 @@
 import React, { useState, useRef, useCallback, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { tuningCars, stageLabels, type Stage, type TuningCar } from '@/data/tuningCars';
+import { getTuningPriceNote, getTuningPublicationNote, hasPublishedTuningPackage, publishedTuningMods } from '@/data/tuningPublication';
 import { useAnimatedCounter } from '@/hooks/useAnimatedCounter';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend } from 'recharts';
 import { Zap, Gauge, Timer, Wrench, Clock, DollarSign, Crown, ChevronLeft, ChevronRight } from 'lucide-react';
@@ -107,7 +108,7 @@ function CarSelector({ cars, selectedIndex, onSelect, isArabic }: {
               <AnimatePresence mode="wait">
                 {isSelected && (
                   <motion.div
-                    initial={{ opacity: 0, y: 10 }}
+                    initial={false}
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: -10 }}
                     className="mt-3 text-center"
@@ -127,7 +128,8 @@ function CarSelector({ cars, selectedIndex, onSelect, isArabic }: {
         {cars.map((_, i) => (
           <button
             key={i}
-            aria-label={isArabic ? `اختر السيارة رقم ${i + 1}` : `Select car ${i + 1}`}
+              aria-label={isArabic ? `اختر ${cars[i].name}` : `Select ${cars[i].name}`}
+              aria-pressed={i === selectedIndex}
             onClick={() => onSelect(i)}
             className={`w-1.5 h-1.5 md:w-2 md:h-2 rounded-full transition-all duration-300 ${
               i === selectedIndex ? 'bg-burnt-orange w-4 md:w-6' : 'bg-white/20 hover:bg-white/40'
@@ -149,6 +151,7 @@ function StageSelector({ stages, active, onChange, isArabic }: { stages: Stage[]
         return (
           <button
             key={stage}
+            aria-pressed={isActive}
             onClick={() => onChange(stage)}
             className={`relative px-2.5 sm:px-3 md:px-5 py-2 sm:py-2.5 rounded-xl text-[10px] sm:text-xs md:text-sm font-semibold uppercase tracking-wider transition-all duration-300 ${
               isActive
@@ -169,6 +172,7 @@ function StageSelector({ stages, active, onChange, isArabic }: { stages: Stage[]
 
 // ─── Performance Graph ───
 function PerformanceGraph({ car, stage }: { car: TuningCar; stage: Stage }) {
+  if (!hasPublishedTuningPackage(car.id)) return null;
   const stockData = car.stages.stock?.powerCurve || [];
   const tunedData = car.stages[stage]?.powerCurve || [];
   const isStock = stage === 'stock';
@@ -227,12 +231,16 @@ export default function TuningConfigurator() {
   if (!stageInfo || !stockSpec) return null;
 
   const isVip = stage === 'vip';
+  const publishesPackage = hasPublishedTuningPackage(car.id);
+  const publicationNote = getTuningPublicationNote(car.id, isArabic);
+  const priceNote = getTuningPriceNote(car.id, stage, isArabic);
+  const publicMods = publishedTuningMods(car.id, stage, stageInfo.mods);
   const hpGain = stageInfo.spec.hp - stockSpec.hp;
   const torqueGain = stageInfo.spec.torque - stockSpec.torque;
   const timeGain = +(stageInfo.spec.zeroToHundred - stockSpec.zeroToHundred).toFixed(1);
 
   return (
-    <section className="relative overflow-hidden border-y border-white/[0.08] bg-[#101113] py-16 transition-colors duration-700 md:py-24">
+    <section id="performance-configurator" className="relative overflow-hidden border-y border-white/[0.08] bg-[#101113] py-16 transition-colors duration-700 md:py-24">
 
       <div className="relative z-10 mx-auto max-w-[90rem] px-5 sm:px-8 lg:px-12">
         <div className="mb-12 max-w-3xl">
@@ -243,23 +251,27 @@ export default function TuningConfigurator() {
           <p className="mt-4 max-w-lg text-sm leading-7 text-white/45 md:text-base">
             {isArabic ? arTuning.configurator.description : 'Select your vehicle and configure your performance stage'}
           </p>
+          <a href="#performance-packages" className="mt-4 inline-block text-sm text-burnt-orange underline">{isArabic ? 'قارن جميع الحِزم والأسعار' : 'Compare all vehicle packages and prices'}</a>
         </div>
 
         <CarSelector cars={tuningCars} selectedIndex={carIndex} onSelect={setCarIndex} isArabic={isArabic} />
 
+        {publishesPackage && <>
+        {publicationNote && <p className="mx-auto mt-8 max-w-2xl text-sm leading-7 text-white/70" data-tuning-publication-note={car.id}>{publicationNote}</p>}
         <div className="mt-10 mb-10">
           <StageSelector stages={availableStages} active={stage} onChange={setStage} isArabic={isArabic} />
         </div>
 
         <motion.div
           key={`${car.id}-${stage}`}
-          initial={{ opacity: 0, y: 20 }}
+          initial={false}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.4 }}
           className="flex justify-center mb-12"
         >
           <AnimatedStat label={isArabic ? arTuning.configurator.horsepower : 'Horsepower'} value={stageInfo.spec.hp} unit="HP" icon={Zap} gain={hpGain} />
         </motion.div>
+        </>}
 
         <div className="relative mb-12 flex items-center justify-center">
           <motion.img
@@ -267,16 +279,17 @@ export default function TuningConfigurator() {
             src={car.image}
             alt={car.name}
             className="relative z-10 h-auto w-[260px] object-contain sm:w-[340px] md:w-[500px]"
-            initial={{ opacity: 0, scale: 0.9 }}
+            initial={false}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5 }}
           />
         </div>
 
+        {publishesPackage ? <>
         <div className="max-w-2xl mx-auto mb-12">
           <motion.div
             key={`mods-${car.id}-${stage}`}
-            initial={{ opacity: 0, y: 20 }}
+            initial={false}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4 }}
             className="border-t border-white/[0.1] py-6 md:py-8"
@@ -287,11 +300,12 @@ export default function TuningConfigurator() {
                 ? isArabic ? arTuning.configurator.factory : 'Factory Specifications'
                 : isArabic ? `${arTuning.configurator.package} ${arabicStageLabels[stage]}` : `${stageLabels[stage]} Package`}
             </h3>
+            {priceNote && <p className="mb-5 text-sm leading-7 text-white/70" data-tuning-price-note={`${car.id}:${stage}`}>{priceNote}</p>}
             <ul className="space-y-3 mb-6">
-              {stageInfo.mods.map((mod, i) => (
+              {publicMods.map((mod, i) => (
                 <motion.li
                   key={mod}
-                  initial={{ opacity: 0, x: -10 }}
+                  initial={false}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: i * 0.05 }}
                   className="flex items-start gap-3 text-sm text-white/70"
@@ -330,22 +344,29 @@ export default function TuningConfigurator() {
                 {isArabic ? arTuning.configurator.vipTitle : 'VIP Performance Package'}
               </h3>
               <p className="text-white/50 max-w-xl mx-auto mb-6 text-sm md:text-base">
-                {isArabic ? arTuning.configurator.vipDescription : 'Custom-built for maximum performance. Includes bespoke ECU calibration, professional dyno testing, advanced hardware upgrades, and a dedicated performance engineer assigned to your build.'}
+                {isArabic ? arTuning.configurator.vipDescription : 'Review the listed software and hardware for this vehicle’s VIP package with the workshop. Confirm compatibility, scope and testing before agreeing the build.'}
               </p>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-lg mx-auto">
-                {(isArabic ? arTuning.configurator.vipItems : ['Custom Dyno Tuning', 'Premium Components']).map((item) => (
+                {(isArabic ? arTuning.configurator.vipItems : ['Vehicle-specific scope', 'Confirm package compatibility']).map((item) => (
                   <div key={item} className="flex items-center justify-center gap-2 text-sm text-burnt-orange font-medium">
                     <div className="w-1 h-1 rounded-full bg-burnt-orange" />
                     {item}
                   </div>
                 ))}
               </div>
-              <button className="btn-primary mt-8">
+              <a href={`https://wa.me/97143402223?text=${encodeURIComponent(`Hi DIGI-TEC, I would like to discuss the ${car.name} ${car.engine} VIP tuning package.`)}`} target="_blank" rel="noopener noreferrer" className="btn-primary mt-8 inline-flex">
                 {isArabic ? arTuning.configurator.vipCta : 'Request VIP Consultation'}
-              </button>
+              </a>
             </motion.div>
           )}
         </AnimatePresence>
+        </> : <div className="mx-auto max-w-2xl border-t border-white/10 py-8 text-center" data-tuning-enquiry={car.id}>
+          <h3 className="text-xl font-semibold text-off-white">{isArabic ? 'استفسار عن S63 AMG E PERFORMANCE' : 'S63 AMG E PERFORMANCE enquiry'}</h3>
+          <p className="mt-4 text-sm leading-7 text-white/70">{publicationNote}</p>
+          <a href={`https://wa.me/97143402223?text=${encodeURIComponent(isArabic ? 'مرحباً ديجي-تك، أود تقييم تطوير أداء سيارتي S63 AMG E PERFORMANCE وتأكيد الحِزم المتاحة وفق رقم الهيكل.' : 'Hi DIGI-TEC, I would like an S63 AMG E PERFORMANCE assessment and confirmation of any model-specific tuning package for my VIN.')}`} target="_blank" rel="noopener noreferrer" className="btn-primary mt-6 inline-flex">
+            {isArabic ? 'اطلب تقييم سيارتك' : 'Request vehicle assessment'}
+          </a>
+        </div>}
       </div>
     </section>
   );

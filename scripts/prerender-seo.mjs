@@ -203,7 +203,7 @@ const blogPostMetadata = {
     en: {
       title: 'GAD Tuning Explained | Digitec Performance Center Dubai',
       heading: 'GAD Tuning Explained: What Makes It Different',
-      description: 'Discover what makes GAD Motors tuning different. Official GAD partner in Dubai explains the engineering behind every stage.',
+      description: 'Questions to ask before a GAD Motors tuning project: vehicle-specific software, supporting hardware, fuel and verification in Dubai.',
       summary: 'A practical look at the GAD Motors approach to calibration, supporting hardware and reliable performance for Dubai conditions.',
     },
     ar: {
@@ -473,12 +473,12 @@ const staticRoutes = {
     services: ['How diagnostics and estimates work', 'Parts, warranty and aftercare', 'Service intervals in Dubai heat', 'How to book an inspection'],
   },
   '/tuning': {
-    title: 'Car Tuning Dubai | GAD Motors Partner | Digi-Tec',
-    description: 'Performance tuning in Dubai with official GAD Motors calibration for Mercedes-AMG, BMW M, Audi RS and Porsche, plus supporting hardware and inspection.',
+    title: 'Performance Tuning Dubai | Vehicle-Specific Packages | Digi-Tec',
+    description: 'Vehicle-specific ECU tuning and performance packages in Dubai, with published configurations for Mercedes-AMG, Aston Martin DB11 and Lamborghini Urus.',
     heading: 'Performance Tuning in Dubai',
-    sectionHeading: 'Official GAD Motors tuning partner in Dubai',
-    summary: 'Digi-Tec Performance Center is the official GAD Motors tuning partner in Dubai. Every project starts with a mechanical health inspection, then calibration and supporting hardware chosen for the vehicle and how it is actually driven in UAE conditions.',
-    services: ['ECU calibration by GAD Motors', 'Mercedes-AMG and BMW M projects', 'Supporting hardware and cooling', 'Pre-tuning mechanical inspection'],
+    sectionHeading: 'GAD Motors tuning enquiries in Dubai',
+    summary: 'Digi-Tec is listed by GAD Motors as a UAE contact in Al Quoz, Dubai. Published configurator packages are tied to the exact vehicle, engine and stage. Porsche project details are confirmed directly with the team while the model configuration list is pending.',
+    services: ['Vehicle-specific ECU calibration', 'Configurator package prices and workshop times', 'Supporting hardware where listed', 'Pre-tuning vehicle-condition assessment'],
   },
   '/vrx': {
     title: 'VRX Performance Programs Dubai | Digi-Tec',
@@ -526,11 +526,11 @@ const arabicStaticRoutes = {
   },
   '/tuning': {
     title: 'برمجة وتطوير أداء السيارات في دبي | ديجي-تك',
-    description: 'تطوير أداء السيارات في دبي مع برمجة GAD Motors الرسمية لمرسيدس AMG وبي إم دبليو M وأودي RS وبورشه، مع القطع الداعمة والفحص المسبق.',
+    description: 'برمجة ECU وحِزم تطوير أداء حسب السيارة في دبي، مع تكوينات منشورة لمرسيدس AMG وأستون مارتن DB11 ولامبورغيني Urus.',
     heading: 'تطوير أداء السيارات في دبي',
-    sectionHeading: 'الشريك الرسمي لـ GAD Motors في دبي',
-    summary: 'مركز ديجي-تك هو الشريك الرسمي لـ GAD Motors في دبي. يبدأ كل مشروع بفحص ميكانيكي شامل، ثم البرمجة والقطع الداعمة المناسبة للسيارة وطريقة استخدامها في أجواء الإمارات.',
-    services: ['برمجة ECU من GAD Motors', 'مشاريع مرسيدس AMG وبي إم دبليو M', 'القطع الداعمة وأنظمة التبريد', 'فحص ميكانيكي قبل البرمجة'],
+    sectionHeading: 'استفسارات تطوير الأداء مع GAD Motors في دبي',
+    summary: 'تدرج GAD Motors ديجي-تك جهة تواصل في الإمارات بمنطقة القوز بدبي. ترتبط الحِزم المنشورة بالطراز والمحرك والمرحلة المحددة. تُؤكد تفاصيل مشاريع بورشه مع الفريق إلى أن تتوفر قائمة التكوينات.',
+    services: ['معايرة ECU حسب السيارة', 'أسعار الحِزم والمدة في المهيئ', 'القطع الداعمة حيث ترد في الحزمة', 'تقييم حالة السيارة قبل البرمجة'],
   },
   '/vrx': {
     title: 'برامج أداء VRX في دبي | ديجي-تك',

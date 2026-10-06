@@ -26,6 +26,8 @@ import { BMW_HUB_PATH, bmwModelPages } from '@/data/bmwModelPages';
 import { ferrariModelPages } from '@/data/ferrariModelPages';
 import { ferrariCaseStudies } from '@/data/ferrariCaseStudies';
 import { isIndexableContentPath } from '@/lib/route-policy';
+import { tuningModelPages } from '@/data/tuningModelPages';
+import { T1_UPDATED_DATE, T1_UPDATED_PATHS } from '@/data/t1UpdatedPaths';
 
 export type RouteFamily =
   | 'home'
@@ -88,6 +90,7 @@ const englishRoutes: Array<[string, RouteFamily]> = [
 // Phase-one Mercedes topical pages are English-only until equivalent Arabic
 // content exists. Existing Arabic blog versions remain untouched.
 const englishOnlyRoutes: Array<[string, RouteFamily]> = [
+  ...tuningModelPages.map(model => [model.path, 'tuning'] as [string, RouteFamily]),
   ...englishOnlyServices.map((service) => [`/services/${service.slug}`, 'service'] as [string, RouteFamily]),
   ...bmwModelPages.map((model) => [`${BMW_HUB_PATH}/${model.slug}`, 'service'] as [string, RouteFamily]),
   ...ferrariModelPages.map((model) => [model.path, 'service'] as [string, RouteFamily]),
@@ -224,7 +227,7 @@ const masterSeoUpdatedPaths = new Set([
   '/services/mercedes-audio-upgrade-dubai',
 ]);
 
-export const publicRoutes = [...routeMap.values()].map((route) => b4UpdatedPaths.has(route.path) ? { ...route, lastmod: '2026-09-28' } : bmwB3UpdatedPaths.has(route.path) ? { ...route, lastmod: '2026-09-28' } : porscheB2UpdatedPaths.has(route.path) ? { ...route, lastmod: '2026-09-28' } : mercedesB1UpdatedPaths.has(route.path) ? { ...route, lastmod: '2026-09-28' } : sitewideSeoUpdatedPaths.has(route.path) ? { ...route, lastmod: '2026-09-17' } : masterSeoUpdatedPaths.has(route.path) ? { ...route, lastmod: '2026-09-16' } : (currentMercedesSeoPaths.has(route.path) || currentMaintenanceGuidePaths.has(route.path)) ? { ...route, lastmod: '2026-09-14' } : (route.path === '/services/transmission-repair-dubai' || oilChangeUpdatedPaths.has(route.path) || suspensionUpdatedPaths.has(route.path)) ? { ...route, lastmod: '2026-09-10' } : queryReleaseChanged(route) ? { ...route, lastmod: '2026-09-09' } : (paintCareUpdatedPaths.has(route.path) || mercedesUpdatedPaths.has(route.path)) ? { ...route, lastmod: '2026-09-08' } : route).sort((a, b) =>
+export const publicRoutes = [...routeMap.values()].map((route) => b4UpdatedPaths.has(route.path) ? { ...route, lastmod: '2026-09-28' } : bmwB3UpdatedPaths.has(route.path) ? { ...route, lastmod: '2026-09-28' } : porscheB2UpdatedPaths.has(route.path) ? { ...route, lastmod: '2026-09-28' } : mercedesB1UpdatedPaths.has(route.path) ? { ...route, lastmod: '2026-09-28' } : sitewideSeoUpdatedPaths.has(route.path) ? { ...route, lastmod: '2026-09-17' } : masterSeoUpdatedPaths.has(route.path) ? { ...route, lastmod: '2026-09-16' } : (currentMercedesSeoPaths.has(route.path) || currentMaintenanceGuidePaths.has(route.path)) ? { ...route, lastmod: '2026-09-14' } : (route.path === '/services/transmission-repair-dubai' || oilChangeUpdatedPaths.has(route.path) || suspensionUpdatedPaths.has(route.path)) ? { ...route, lastmod: '2026-09-10' } : queryReleaseChanged(route) ? { ...route, lastmod: '2026-09-09' } : (paintCareUpdatedPaths.has(route.path) || mercedesUpdatedPaths.has(route.path)) ? { ...route, lastmod: '2026-09-08' } : route).map(route => T1_UPDATED_PATHS.has(route.path) ? { ...route, lastmod: T1_UPDATED_DATE } : route).sort((a, b) =>
   a.path.localeCompare(b.path),
 );
 

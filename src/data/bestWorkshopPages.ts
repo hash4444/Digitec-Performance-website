@@ -106,7 +106,7 @@ export const bestWorkshopPages: BestWorkshopPage[] = [
     criteria: commonCriteria('Audi'),
     faqs: [
       { q: 'How should I choose an Audi workshop in Dubai?', a: 'Ask how the workshop confirms the exact Audi platform and system, documents diagnostic findings, explains parts options and obtains approval before work begins.' },
-      { q: 'Can I ask about an Audi RS performance project?', a: 'Yes. Send the exact model, year, current specification and goals so the team can confirm whether the requested work is available and what inspection is needed first.' },
+      { q: 'Can I arrange an Audi RS inspection?', a: 'Yes. Send the exact model, year, service history and any warnings or symptoms so the team can confirm the appropriate inspection and available repair scope.' },
       ...commonFaqTail('Audi'),
     ],
   },

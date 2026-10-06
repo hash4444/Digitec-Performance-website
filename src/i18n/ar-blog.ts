@@ -235,7 +235,7 @@ export const localizeBlogPostToArabic = (post: BlogPost): BlogPost => {
       ...adaptation,
       ...meta,
       content: adaptation.content,
-      updatedDate: ['car-ac-not-cold-dubai-causes', 'engine-overheating-dubai-what-to-do', 'check-engine-light-dubai-guide', 'car-battery-life-dubai-heat'].includes(post.slug)
+      updatedDate: post.slug === 'mercedes-amg-gt-tuning-dubai' ? '2026-10-05' : ['car-ac-not-cold-dubai-causes', 'engine-overheating-dubai-what-to-do', 'check-engine-light-dubai-guide', 'car-battery-life-dubai-heat'].includes(post.slug)
         ? '2026-09-30'
         : mercedesUpdatedArabicArticles.has(post.slug) ? '2026-09-28' : '2026-09-17',
       author: 'فريق ورشة ديجي-تك',

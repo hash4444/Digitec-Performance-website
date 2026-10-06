@@ -1,34 +1,61 @@
 {
-  "checkedAt": "2026-09-08T11:57:49.773Z",
-  "sourceSha256": "544cf6819269e25122073c47cf17d95b58885d45e38d9e0e3c5327a2bea9b52b",
+  "checkedAt": "2026-10-05T07:02:49.694Z",
+  "sourceSha256": "2cd4ef57011a6fd0ec6ab8784946c1872b9507181dcae909a145ad8531b8d9ec",
   "passed": true,
-  "inspectedRoutes": 1438,
+  "inspectedRoutes": 1256,
   "relevantPages": 19,
-  "imagesChecked": 98,
+  "imagesChecked": 89,
   "externalImages": [
     "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=800&h=600&fit=crop"
   ],
   "brokenLinks": [],
   "incoming": {
     "/services/paint-protection-film": {
-      "uniqueContentSources": 17,
-      "contentLinkInstances": 18,
+      "uniqueContentSources": 44,
+      "contentLinkInstances": 46,
       "sources": [
         "/",
         "/blog/ceramic-coating-vs-ppf-dubai",
         "/brands/aston-martin-service-dubai",
+        "/brands/aston-martin-service-dubai/body-repair",
+        "/brands/audi-service-dubai",
+        "/brands/audi-service-dubai/body-repair",
+        "/brands/bentley-service-dubai",
+        "/brands/bentley-service-dubai/body-repair",
         "/brands/bmw-service-dubai",
+        "/brands/bmw-service-dubai/body-repair",
+        "/brands/bugatti-service-dubai/body-repair",
+        "/brands/byd-service-dubai/body-repair",
+        "/brands/cadillac-service-dubai/body-repair",
+        "/brands/defender-service-dubai/body-repair",
         "/brands/ferrari-service-dubai",
+        "/brands/ferrari-service-dubai/body-repair",
+        "/brands/jeep-service-dubai/body-repair",
+        "/brands/jetour-service-dubai/body-repair",
         "/brands/lamborghini-service-dubai",
+        "/brands/lamborghini-service-dubai/body-repair",
+        "/brands/land-rover-service-dubai/body-repair",
+        "/brands/maserati-service-dubai/body-repair",
+        "/brands/maybach-service-dubai/body-repair",
         "/brands/mclaren-service-dubai",
+        "/brands/mclaren-service-dubai/body-repair",
         "/brands/mercedes-benz-service-dubai",
+        "/brands/pagani-service-dubai/body-repair",
         "/brands/porsche-service-dubai",
+        "/brands/porsche-service-dubai/body-repair",
         "/brands/range-rover-service-dubai",
+        "/brands/range-rover-service-dubai/body-repair",
         "/brands/rolls-royce-service-dubai",
+        "/brands/rolls-royce-service-dubai/body-repair",
+        "/brands/rox-service-dubai/body-repair",
+        "/brands/tesla-service-dubai/body-repair",
+        "/brands/volkswagen-service-dubai/body-repair",
+        "/brands/volvo-service-dubai/body-repair",
         "/services",
         "/services/car-body-repair-dubai",
         "/services/car-polishing-dubai",
         "/services/ceramic-coating",
+        "/services/mercedes-body-repair-dubai",
         "/services/paint-protection-dubai",
         "/sitemap"
       ],
@@ -41,29 +68,57 @@
         "PPF installation",
         "Paint Protection Film (PPF) Dubai",
         "Paint Protection Film (PPF) DubaiPaint protection film installation with vehicle-specific coverage options in Dubai.",
+        "Paint protection film options",
         "film protection for your Porsche",
         "full-body or selected-panel PPF",
         "paint protection film",
         "paint protection film coverage",
         "paint protection options with film",
+        "physical film protection",
         "physical paint protection",
         "selected-panel and full-body film"
       ]
     },
     "/services/ceramic-coating": {
-      "uniqueContentSources": 13,
-      "contentLinkInstances": 14,
+      "uniqueContentSources": 39,
+      "contentLinkInstances": 40,
       "sources": [
         "/",
         "/blog/ceramic-coating-vs-ppf-dubai",
         "/blog/why-ceramic-coating-matters-uae",
+        "/brands/aston-martin-service-dubai/body-repair",
+        "/brands/audi-service-dubai/body-repair",
+        "/brands/bentley-service-dubai",
+        "/brands/bentley-service-dubai/body-repair",
         "/brands/bmw-service-dubai",
+        "/brands/bmw-service-dubai/body-repair",
+        "/brands/bugatti-service-dubai/body-repair",
+        "/brands/byd-service-dubai/body-repair",
+        "/brands/cadillac-service-dubai/body-repair",
+        "/brands/defender-service-dubai/body-repair",
+        "/brands/ferrari-service-dubai/body-repair",
+        "/brands/jeep-service-dubai/body-repair",
+        "/brands/jetour-service-dubai/body-repair",
         "/brands/lamborghini-service-dubai",
+        "/brands/lamborghini-service-dubai/body-repair",
+        "/brands/land-rover-service-dubai/body-repair",
+        "/brands/maserati-service-dubai/body-repair",
+        "/brands/maybach-service-dubai/body-repair",
+        "/brands/mclaren-service-dubai/body-repair",
+        "/brands/pagani-service-dubai/body-repair",
+        "/brands/porsche-service-dubai/body-repair",
         "/brands/range-rover-service-dubai",
+        "/brands/range-rover-service-dubai/body-repair",
         "/brands/rolls-royce-service-dubai",
+        "/brands/rolls-royce-service-dubai/body-repair",
+        "/brands/rox-service-dubai/body-repair",
+        "/brands/tesla-service-dubai/body-repair",
+        "/brands/volkswagen-service-dubai/body-repair",
+        "/brands/volvo-service-dubai/body-repair",
         "/services",
         "/services/car-body-repair-dubai",
         "/services/car-polishing-dubai",
+        "/services/mercedes-body-repair-dubai",
         "/services/paint-protection-dubai",
         "/services/paint-protection-film",
         "/sitemap"
@@ -75,6 +130,7 @@
         "Explore the ceramic coating service",
         "Review ceramic coating options",
         "ceramic coating",
+        "ceramic coating and its care requirements",
         "ceramic coating service",
         "ceramic paint protection",
         "coating options",
@@ -82,19 +138,45 @@
       ]
     },
     "/services/car-polishing-dubai": {
-      "uniqueContentSources": 13,
-      "contentLinkInstances": 13,
+      "uniqueContentSources": 39,
+      "contentLinkInstances": 40,
       "sources": [
         "/",
         "/blog/ceramic-coating-vs-ppf-dubai",
         "/blog/why-ceramic-coating-matters-uae",
         "/brands/aston-martin-service-dubai",
+        "/brands/aston-martin-service-dubai/body-repair",
+        "/brands/audi-service-dubai",
+        "/brands/audi-service-dubai/body-repair",
+        "/brands/bentley-service-dubai/body-repair",
+        "/brands/bmw-service-dubai/body-repair",
+        "/brands/bugatti-service-dubai/body-repair",
+        "/brands/byd-service-dubai/body-repair",
+        "/brands/cadillac-service-dubai/body-repair",
+        "/brands/defender-service-dubai/body-repair",
         "/brands/ferrari-service-dubai",
+        "/brands/ferrari-service-dubai/body-repair",
+        "/brands/jeep-service-dubai/body-repair",
+        "/brands/jetour-service-dubai/body-repair",
+        "/brands/lamborghini-service-dubai/body-repair",
+        "/brands/land-rover-service-dubai/body-repair",
+        "/brands/maserati-service-dubai/body-repair",
+        "/brands/maybach-service-dubai/body-repair",
+        "/brands/mclaren-service-dubai/body-repair",
         "/brands/mercedes-benz-service-dubai",
+        "/brands/pagani-service-dubai/body-repair",
         "/brands/porsche-service-dubai",
+        "/brands/porsche-service-dubai/body-repair",
+        "/brands/range-rover-service-dubai/body-repair",
+        "/brands/rolls-royce-service-dubai/body-repair",
+        "/brands/rox-service-dubai/body-repair",
+        "/brands/tesla-service-dubai/body-repair",
+        "/brands/volkswagen-service-dubai/body-repair",
+        "/brands/volvo-service-dubai/body-repair",
         "/services",
         "/services/car-body-repair-dubai",
         "/services/ceramic-coating",
+        "/services/mercedes-body-repair-dubai",
         "/services/paint-protection-dubai",
         "/services/paint-protection-film",
         "/sitemap"
@@ -110,6 +192,9 @@
         "assess the paint’s correction limits",
         "assess whether polishing can improve the scratch",
         "car polishing and paint correction",
+        "paint correction",
+        "polishing and paint correction",
+        "polishing and paint correction assessment",
         "polishing or paint correction",
         "restoring paint clarity"
       ]
@@ -173,7 +258,7 @@
       "route": "/services/paint-protection-film",
       "title": "PPF Dubai | Paint Protection Film for Cars | DIGI-TEC",
       "h1": "Paint Protection Film (PPF) Dubai",
-      "description": "PPF installation in Dubai for luxury and performance cars. Explore full-body and selected-panel paint protection film at DIGI-TEC. Get your car’s quote.",
+      "description": "Car paint protection film in Dubai. Compare full-body and selected-panel PPF, preparation and aftercare at DIGI-TEC in Al Quoz. Request a quote for your car.",
       "provider": "https://digitecme.com/#business",
       "breadcrumb": [
         {
@@ -200,7 +285,7 @@
       "route": "/services/ceramic-coating",
       "title": "Ceramic Coating Dubai | Car Paint Protection | DIGI-TEC",
       "h1": "Ceramic Coating Dubai",
-      "description": "Professional ceramic coating in Dubai for luxury and performance cars. Explore paint preparation and surface protection at DIGI-TEC. Request your quote.",
+      "description": "Ceramic paint protection in Dubai for luxury and performance cars. Explore coating, paint preparation and aftercare at DIGI-TEC in Al Quoz. Get your quote.",
       "provider": "https://digitecme.com/#business",
       "breadcrumb": [
         {
@@ -560,6 +645,13 @@
       "source": "/services/paint-protection-film",
       "target": "/services/paint-protection-film",
       "rawPath": "/services/paint-protection-film",
+      "fragment": "ppf-care",
+      "anchor": "Care & removal"
+    },
+    {
+      "source": "/services/paint-protection-film",
+      "target": "/services/paint-protection-film",
+      "rawPath": "/services/paint-protection-film",
       "fragment": "ppf-comparison",
       "anchor": "PPF vs coating"
     },
@@ -590,6 +682,13 @@
       "rawPath": "/services/paint-protection-film",
       "fragment": "ppf-quote",
       "anchor": "Discuss partial coverage"
+    },
+    {
+      "source": "/services/paint-protection-film",
+      "target": "/services/car-polishing-dubai",
+      "rawPath": "/services/car-polishing-dubai",
+      "fragment": "",
+      "anchor": "polishing and paint correction"
     },
     {
       "source": "/services/paint-protection-film",
@@ -950,6 +1049,34 @@
     },
     {
       "source": "/blog/ceramic-coating-vs-ppf-dubai",
+      "target": "/blog/ceramic-coating-vs-ppf-dubai",
+      "rawPath": "/blog/ceramic-coating-vs-ppf-dubai",
+      "fragment": "article-section-2",
+      "anchor": "What each product actually does"
+    },
+    {
+      "source": "/blog/ceramic-coating-vs-ppf-dubai",
+      "target": "/blog/ceramic-coating-vs-ppf-dubai",
+      "rawPath": "/blog/ceramic-coating-vs-ppf-dubai",
+      "fragment": "article-section-4",
+      "anchor": "Why Dubai conditions matter"
+    },
+    {
+      "source": "/blog/ceramic-coating-vs-ppf-dubai",
+      "target": "/blog/ceramic-coating-vs-ppf-dubai",
+      "rawPath": "/blog/ceramic-coating-vs-ppf-dubai",
+      "fragment": "article-section-6",
+      "anchor": "How to choose"
+    },
+    {
+      "source": "/blog/ceramic-coating-vs-ppf-dubai",
+      "target": "/blog/ceramic-coating-vs-ppf-dubai",
+      "rawPath": "/blog/ceramic-coating-vs-ppf-dubai",
+      "fragment": "article-section-9",
+      "anchor": "FAQs"
+    },
+    {
+      "source": "/blog/ceramic-coating-vs-ppf-dubai",
       "target": "/services/paint-protection-film",
       "rawPath": "/services/paint-protection-film",
       "fragment": "",
@@ -970,6 +1097,34 @@
       "anchor": "Check which paint defects may improve"
     },
     {
+      "source": "/blog/ceramic-coating-vs-ppf-dubai",
+      "target": "/blog/why-ceramic-coating-matters-uae",
+      "rawPath": "/blog/why-ceramic-coating-matters-uae",
+      "fragment": "",
+      "anchor": "DetailingWhy Ceramic Coating Matters in the UAEUnderstand where ceramic coating can help with paint care in the UAE, how preparation matters and when film offers a different kind of protection."
+    },
+    {
+      "source": "/blog/why-ceramic-coating-matters-uae",
+      "target": "/blog/why-ceramic-coating-matters-uae",
+      "rawPath": "/blog/why-ceramic-coating-matters-uae",
+      "fragment": "article-section-2",
+      "anchor": "What Ceramic Coating Actually Does"
+    },
+    {
+      "source": "/blog/why-ceramic-coating-matters-uae",
+      "target": "/blog/why-ceramic-coating-matters-uae",
+      "rawPath": "/blog/why-ceramic-coating-matters-uae",
+      "fragment": "article-section-4",
+      "anchor": "Coating vs Wax vs PPF"
+    },
+    {
+      "source": "/blog/why-ceramic-coating-matters-uae",
+      "target": "/blog/why-ceramic-coating-matters-uae",
+      "rawPath": "/blog/why-ceramic-coating-matters-uae",
+      "fragment": "article-section-6",
+      "anchor": "What to Expect at Digitec"
+    },
+    {
       "source": "/blog/why-ceramic-coating-matters-uae",
       "target": "/services/car-polishing-dubai",
       "rawPath": "/services/car-polishing-dubai",
@@ -982,6 +1137,13 @@
       "rawPath": "/services/ceramic-coating",
       "fragment": "",
       "anchor": "Explore the ceramic coating service"
+    },
+    {
+      "source": "/blog/why-ceramic-coating-matters-uae",
+      "target": "/blog/ceramic-coating-vs-ppf-dubai",
+      "rawPath": "/blog/ceramic-coating-vs-ppf-dubai",
+      "fragment": "",
+      "anchor": "DetailingCeramic Coating or PPF in Dubai: Which Should You Choose?The honest difference between ceramic coating and PPF for Dubai conditions, and how to choose."
     }
   ]
 }

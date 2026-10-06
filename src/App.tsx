@@ -16,6 +16,7 @@ const OilChangePage = lazy(() => import("./pages/OilChangePage"));
 const SuspensionRepairPage = lazy(() => import("./pages/SuspensionRepairPage"));
 const TransmissionPage = lazy(() => import("./pages/TransmissionPage"));
 const Tuning = lazy(() => import("./pages/Tuning"));
+const TuningModelPage = lazy(() => import("./pages/TuningModelPage"));
 const VRX = lazy(() => import("./pages/VRX"));
 const Services = lazy(() => import("./pages/Services"));
 const PaintCorrectionPage = lazy(() => import("./pages/PaintCorrectionPage"));
@@ -54,6 +55,7 @@ import Analytics from "./components/Analytics";
 import CustomCursor from "./components/CustomCursor";
 import { audiModelPages, audiModelPath } from "./data/audiModelPages";
 import { ferrariModelPages } from "./data/ferrariModelPages";
+import { tuningModelPages } from "./data/tuningModelPages";
 
 const ScrollToTop = () => {
   const { pathname, hash } = useLocation();
@@ -209,6 +211,7 @@ export const AppContent = () => (
           <Route path="/ar/best-ferrari-workshop-dubai" element={<BestWorkshopPage />} />
           <Route path="/ar/best-lamborghini-workshop-dubai" element={<BestWorkshopPage />} />
           <Route path="/tuning" element={<Tuning />} />
+          {tuningModelPages.map(model => <Route key={model.path} path={model.path} element={<TuningModelPage />} />)}
           <Route path="/vrx" element={<VRX />} />
           <Route path="/services" element={<Services />} />
           <Route path="/services/garage-near-me-dubai" element={<LocalGaragePage />} />

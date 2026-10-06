@@ -22,6 +22,7 @@ const mercedesArabicLinkedArticles = new Set([
   'mercedes-s-class-service-dubai-guide', 'mercedes-g63-service-dubai-guide',
   'best-oil-change-dubai-mercedes', 'mercedes-service-intervals-dubai-heat',
   'mercedes-service-cost-dubai-guide', 'mercedes-repair-dubai-complete-guide',
+  'mercedes-amg-gt-tuning-dubai',
 ]);
 
 /** Extract only the visible question-and-answer pairs beneath an article FAQ heading. */

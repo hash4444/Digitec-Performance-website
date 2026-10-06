@@ -17,6 +17,7 @@ import { buildBreadcrumb, buildWebPage, pageGraph, SITE_URL } from '@/lib/schema
 import { mercedesModelPages } from '@/data/mercedesModelPages';
 import { MERCEDES_PROBLEMS_PATH, mercedesProblemGuides } from '@/data/mercedesProblemGuides';
 import { audiModelPages, audiModelPath } from '@/data/audiModelPages';
+import { tuningModelPages } from '@/data/tuningModelPages';
 import {
   FERRARI_488_GUIDE_PATH,
   FERRARI_MAINTENANCE_GUIDE_PATH,
@@ -78,6 +79,9 @@ const SitemapPage = () => {
       links: displayedWorkshopPages.map((page) => ({ label: page.h1, to: `/${page.slug}` })),
     },
     ...(!isArabic ? [{
+      title: 'Performance tuning by model',
+      links: tuningModelPages.map(model => ({ label: model.h1, to: model.path })),
+    }, {
       title: 'Audi model service & repair pages',
       links: audiModelPages.map((model) => ({ label: model.h1, to: audiModelPath(model) })),
     }, {

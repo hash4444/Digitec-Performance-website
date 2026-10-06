@@ -14,6 +14,11 @@ import { localizeBrandWorkshopArticleToArabic } from '@/i18n/ar-blog';
 import { mercedesMaintenanceGuide, MERCEDES_MAINTENANCE_UPDATED } from '@/data/mercedesMaintenanceGuide';
 import { B5SelectionGuideBody } from '@/components/B5SelectionGuideBody';
 import { B6JlrGuideBody } from '@/components/B6JlrGuideBody';
+import { tuningCars } from '@/data/tuningCars';
+
+const configuratorTuningBrands = new Set(tuningCars
+  .filter((car) => !['bmw', 'audi'].includes(car.brand.toLowerCase()))
+  .map((car) => car.brand === 'Mercedes' ? 'Mercedes-Benz' : car.brand));
 
 const generalServiceLinks = [
   { label: 'Diagnostics', arLabel: 'فحص وتشخيص السيارة', href: '/services/car-diagnostics-dubai' },
@@ -75,6 +80,7 @@ const rollsRoyceServiceLinks = [
 
 const BrandWorkshopArticleContent = ({ article, isArabic }: { article: BrandWorkshopArticle; isArabic: boolean }) => {
   const isB5SelectionGuide = ['Rolls-Royce', 'Bentley', 'Maybach'].includes(article.brand);
+  const hasConfiguratorTuning = configuratorTuningBrands.has(article.brand);
   const url = `${SITE_URL}${isArabic ? '/ar' : ''}/blog/${article.slug}`;
   const metaTitle = isArabic
     ? article.brand === 'Ferrari'
@@ -116,7 +122,9 @@ const BrandWorkshopArticleContent = ({ article, isArabic }: { article: BrandWork
     { question: `Can DIGI-TEC inspect ${article.brand === 'Aston Martin' ? 'an' : 'a'} ${article.brand} before I buy it?`, answer: 'Send the model, year and requested checks so the team can confirm whether it can accept the inspection and what it covers. Ask which physical checks, diagnostic functions and service-record review are included; an inspection cannot guarantee the absence of every hidden or future fault.' },
     { question: `How long does ${article.brand === 'Aston Martin' ? 'an' : 'a'} ${article.brand} service take?`, answer: `Timing depends on the exact service, inspection findings, parts availability and workshop schedule. Ask for an estimated completion time after the vehicle and requested work have been reviewed.` },
     { question: `Can I book ${article.brand === 'Aston Martin' ? 'an' : 'a'} ${article.brand} inspection by WhatsApp?`, answer: `Yes. Send the model, year, mileage, concern and any warning-light information to DIGI-TEC on WhatsApp. The team can advise the best next step and arrange an inspection in Al Quoz.` },
-    { question: `Is performance tuning suitable for every ${article.brand}?`, answer: `No. A performance plan should be based on mechanical health, service history, cooling, brakes, tyres, driveline capacity and intended use. A diagnostic baseline comes before any upgrade recommendation.` },
+    hasConfiguratorTuning
+      ? { question: `Is performance tuning suitable for every ${article.brand}?`, answer: 'No. Only the exact vehicles and configurations listed in the Performance Configurator have published packages. Confirm mechanical health, vehicle specification, software, fuel and any package hardware requirements before agreeing a project.' }
+      : { question: `Can you assess the mechanical condition of my ${article.brand}?`, answer: 'Send the model, year, service history, existing modifications and any warnings or symptoms. The team confirms the available inspection scope, reviews the findings and explains any recommended maintenance or repair.' },
     { question: `Where is the ${article.brand} workshop located?`, answer: 'DIGI-TEC Performance Center is in Al Quoz Industrial Area 3, Dubai.' },
     { question: `What should I bring to my ${article.brand} appointment?`, answer: `Bring the key, service history if available, details of recent work, photos or videos of intermittent concerns, and the circumstances in which the issue occurs. This helps the inspection begin with useful context.` },
   ];
@@ -137,7 +145,9 @@ const BrandWorkshopArticleContent = ({ article, isArabic }: { article: BrandWork
     { question: `هل تقدم ديجي-تك فحص ${article.brand} قبل الشراء؟`, answer: 'أرسل الطراز والسنة والفحوص المطلوبة لتأكيد قبول السيارة ونطاق العمل. اسأل عما يشمله الفحص الفعلي والتشخيص ومراجعة السجل؛ لا يضمن الفحص غياب كل عيب خفي أو عطل مستقبلي.' },
     { question: `كم تستغرق صيانة ${article.brand}؟`, answer: 'تعتمد المدة على نطاق العمل ونتائج الفحص والوصول إلى المكونات وتوفر القطع وأي إجراءات إضافية مطلوبة ومتاحة. يتم تأكيد الموعد والوقت المتوقع بعد مراجعة السيارة والعمل المطلوب.' },
     { question: `هل يمكن حجز فحص ${article.brand} عبر واتساب؟`, answer: 'نعم. أرسل الطراز والسنة والمسافة ووصف المشكلة ورسالة التحذير إن وجدت، وسيساعدك الفريق في ترتيب الموعد المناسب في القوز.' },
-    { question: `هل يناسب تطوير الأداء جميع سيارات ${article.brand}؟`, answer: 'لا. يجب أولاً التأكد من صحة المحرك والتبريد والفرامل والإطارات وناقل الحركة، ثم اختيار خطة تناسب الاستخدام وقدرة المكونات.' },
+    hasConfiguratorTuning
+      ? { question: `هل يناسب تطوير الأداء جميع سيارات ${article.brand}؟`, answer: 'لا. الحِزم المنشورة ترتبط بالسيارات والتكوينات المحددة في مهيئ الأداء. تُراجع حالة السيارة ومواصفاتها وبرمجياتها والوقود ومتطلبات القطع الخاصة بالحزمة قبل الاتفاق على المشروع.' }
+      : { question: `هل يمكن تقييم الحالة الميكانيكية لسيارة ${article.brand}؟`, answer: 'أرسل الطراز والسنة وسجل الصيانة والتعديلات الموجودة وأي أعراض أو تحذيرات. يؤكد الفريق نطاق الفحص المتاح ويشرح النتائج وأي صيانة أو إصلاح مقترح.' },
     { question: `أين تقع ورشة ${article.brand}؟`, answer: 'يقع مركز ديجي-تك بيرفورمانس في منطقة القوز الصناعية 3 في دبي، ويخدم مالكي السيارات من مختلف مناطق دبي والإمارات بالمواعيد.' },
     { question: `ماذا أحضر إلى موعد ${article.brand}؟`, answer: 'أحضر المفتاح وسجل الصيانة إن توفر وتفاصيل الأعمال الأخيرة وأي صور أو فيديو للأعراض المتقطعة والظروف التي تظهر فيها المشكلة.' },
   ];
@@ -357,7 +367,7 @@ const BrandWorkshopArticleContent = ({ article, isArabic }: { article: BrandWork
               <section className="mt-14">
                 <h2 className="text-2xl font-black sm:text-3xl">{t('Why a specialist approach matters', 'لماذا تهم الخبرة المتخصصة؟')}</h2>
                 <p className="mt-4 leading-relaxed text-gray-300">{t(`Modern ${article.brand} vehicles combine mechanical systems with networked control modules, safety functions, comfort features and model-specific service procedures. A warning light may point to a symptom rather than the failed part. Replacing components without checking fault history, live information, wiring, fluids and the surrounding system can turn a straightforward repair into repeated expense.`, `تجمع سيارات ${article.brand} الحديثة بين الأنظمة الميكانيكية ووحدات التحكم المتصلة ووظائف السلامة والراحة وإجراءات صيانة خاصة بالطراز. قد تشير رسالة التحذير إلى عَرَض لا إلى القطعة التالفة، لذلك يؤدي استبدال المكونات من دون مراجعة سجل الأعطال والبيانات الحية والأسلاك والسوائل إلى تكاليف متكررة.`)}</p>
-                <p className="mt-4 leading-relaxed text-gray-300">{article.brand === 'Rolls-Royce' ? t('A good workshop should state what is confirmed, what is likely and what still needs testing. That distinction matters when approving maintenance, a repair or a major component replacement, and it makes quotations easier to compare fairly.', 'توضح الورشة الجيدة ما تم تأكيده وما هو محتمل وما يزال يحتاج إلى اختبار. هذا الفرق مهم عند اعتماد الصيانة أو الإصلاح أو استبدال مكوّن رئيسي، ويساعد على مقارنة عروض الأسعار بإنصاف.') : t('A good workshop should be comfortable saying what is confirmed, what is likely, and what still needs testing. That distinction matters when you are deciding whether to approve maintenance, a repair, a major component replacement or a performance upgrade. It also makes it easier to compare quotes fairly.', 'توضح الورشة الجيدة ما تم تأكيده، وما هو محتمل، وما يزال يحتاج إلى اختبار. هذا الفرق مهم عند اعتماد الصيانة أو الإصلاح أو استبدال مكوّن كبير أو تطوير الأداء، ويساعدك أيضاً على مقارنة عروض الأسعار بإنصاف.')}</p>
+                <p className="mt-4 leading-relaxed text-gray-300">{!hasConfiguratorTuning ? t('A good workshop should state what is confirmed, what is likely and what still needs testing. That distinction matters when approving maintenance, a repair or a major component replacement, and it makes quotations easier to compare fairly.', 'توضح الورشة الجيدة ما تم تأكيده وما هو محتمل وما يزال يحتاج إلى اختبار. هذا الفرق مهم عند اعتماد الصيانة أو الإصلاح أو استبدال مكوّن رئيسي، ويساعد على مقارنة عروض الأسعار بإنصاف.') : t('A good workshop should be comfortable saying what is confirmed, what is likely, and what still needs testing. That distinction matters when you are deciding whether to approve maintenance, a repair, a major component replacement or a performance upgrade. It also makes it easier to compare quotes fairly.', 'توضح الورشة الجيدة ما تم تأكيده، وما هو محتمل، وما يزال يحتاج إلى اختبار. هذا الفرق مهم عند اعتماد الصيانة أو الإصلاح أو استبدال مكوّن كبير أو تطوير الأداء، ويساعدك أيضاً على مقارنة عروض الأسعار بإنصاف.')}</p>
               </section>
 
               <section className="mt-14">
@@ -467,9 +477,11 @@ const BrandWorkshopArticleContent = ({ article, isArabic }: { article: BrandWork
 
           {article.brand !== 'Ferrari' && article.brand !== 'Lamborghini' && <>
           <section className="mt-14">
-            <h2 className="text-2xl font-black sm:text-3xl">{article.brand === 'McLaren' || article.brand === 'Rolls-Royce' || (!isArabic && article.brand === 'Aston Martin') ? t('Parts, fluids and confirmed workshop scope', 'القطع والسوائل ونطاق العمل المؤكد') : t('OEM parts, alternatives and performance work', 'القطع الأصلية والبدائل وتطوير الأداء')}</h2>
+            <h2 className="text-2xl font-black sm:text-3xl">{!hasConfiguratorTuning || (!isArabic && article.brand === 'Aston Martin') ? t('Parts, fluids and confirmed workshop scope', 'القطع والسوائل ونطاق العمل المؤكد') : t('OEM parts, alternatives and performance work', 'القطع الأصلية والبدائل وتطوير الأداء')}</h2>
             <p className="mt-4 leading-relaxed text-gray-300">{t('Parts choices should be transparent. The workshop should tell you whether a component is genuine OEM, OEM-equivalent or aftermarket, why it suits the job, and what warranty terms apply. The right choice depends on the repair: safety, electronics, complex driveline components and software-sensitive systems deserve especially careful sourcing.', 'يجب أن يكون اختيار القطع واضحاً. من حقك معرفة ما إذا كانت القطعة أصلية أو مكافئة لمواصفات المصنع أو من سوق البدائل، ولماذا تناسب الإصلاح وما شروط ضمانها. تحتاج مكونات السلامة والإلكترونيات وناقل الحركة والأنظمة الحساسة للبرمجة إلى عناية خاصة في الاختيار.')}</p>
-            <p className="mt-4 leading-relaxed text-gray-300">{article.performanceNote}</p>
+            <p className="mt-4 leading-relaxed text-gray-300">{isArabic && ['BMW', 'Audi'].includes(article.brand)
+              ? `تُراجع الحالة الميكانيكية لسيارة ${article.brand} وفق نتائج التشخيص وحالة التبريد والفرامل والإطارات وطريقة الاستخدام. تُسجل التعديلات الموجودة ضمن معلومات الفحص، وتُقترح الصيانة أو الإصلاح وفق النتائج.`
+              : article.performanceNote}</p>
           </section>
 
           <section className="mt-14">

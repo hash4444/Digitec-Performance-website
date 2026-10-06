@@ -97,7 +97,7 @@ const Brands = () => {
                 </div>
                 <div className="min-w-0">
                   <h2 className="truncate text-sm font-semibold leading-tight tracking-[-0.01em] transition-colors group-hover:text-burnt-orange sm:text-base">{brand.name}</h2>
-                  <p className="mt-1.5 line-clamp-2 text-[11px] leading-relaxed text-white/42 sm:text-xs">{isArabic ? 'صيانة • إصلاح • تشخيص • أداء' : brand.specialization}</p>
+                  <p className="mt-1.5 line-clamp-2 text-[11px] leading-relaxed text-white/42 sm:text-xs">{isArabic ? (['BMW', 'Audi'].includes(brand.name) ? 'صيانة • إصلاح • تشخيص' : 'صيانة • إصلاح • تشخيص • أداء') : brand.specialization}</p>
                 </div>
               </Link>
             ))}

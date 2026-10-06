@@ -871,7 +871,10 @@ function composeExtendedService(p: BrandProfile, key: ExtendedServiceKey): Compo
     processSteps: copy.process.map((title, index) => ({ title, description: EXTENDED_SERVICE_STEPS[key][index] })),
     partsCopy: `Parts for ${copy.parts} are selected for the exact vehicle and agreed repair. The quotation may identify genuine, established OE-supplier, remanufactured or other suitable customer-approved options, subject to compatibility and availability.`,
     faqs: [
-      ...(serviceDecisionFaqs[key] ?? []),
+      ...(serviceDecisionFaqs[key] ?? []).map(faq => key === 'exhaust-repair' && ['BMW', 'Audi'].includes(p.brandName)
+        && faq.question === 'Is exhaust repair the same as a performance exhaust upgrade?'
+        ? { ...faq, answer: 'Repair addresses a diagnosed leak, damaged component, noise or operating fault. This service covers repair of the existing system; it does not establish availability of performance modifications.' }
+        : faq),
       { question: `Do you handle ${p.brandName} ${meta.name.toLowerCase()} in Dubai?`, answer: `The concern can be inspected and a vehicle-specific repair route proposed. Diagnostic functions, procedures, parts and repair availability are confirmed before work is accepted.` },
       { question: `How long does ${p.brandName} ${meta.name.toLowerCase()} take?`, answer: 'Timing depends on inspection findings, access, parts and any supported calibration or programming requirements. The expected timeline is confirmed with the quotation.' },
       { question: `Do you use genuine ${p.brandName} parts?`, answer: `A quotation may specify genuine ${p.brandName}, established OE-supplier, remanufactured or another suitable customer-approved option. Compatibility, source and availability are documented before ordering.` },

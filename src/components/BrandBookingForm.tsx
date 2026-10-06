@@ -114,7 +114,7 @@ const BrandBookingForm: React.FC<Props> = ({ brandName, issuePlaceholder }) => {
           value={values.issue}
           onChange={(e) => setValues((v) => ({ ...v, issue: e.target.value }))}
           className={`${input} resize-none`}
-          placeholder={isArabic ? 'أخبرنا عن سيارتك وما تحتاج إليه: صيانة أو إصلاح أو تشخيص أو تطوير أداء' : issuePlaceholder ?? 'Tell us about your car and what you need (service, repair, diagnostics, tuning, etc.)'}
+          placeholder={isArabic ? 'أخبرنا عن سيارتك وما تحتاج إليه: صيانة أو إصلاح أو تشخيص' : issuePlaceholder ?? 'Tell us about your car and what you need (service, repair or diagnostics)'}
           maxLength={600}
         />
         {errors.issue && <p id="bf-issue-error" role="alert" className="text-burnt-orange text-xs mt-1">{errors.issue}</p>}
