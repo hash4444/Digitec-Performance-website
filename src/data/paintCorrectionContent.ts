@@ -1,7 +1,7 @@
 export const PAINT_CORRECTION_PATH = '/services/car-polishing-dubai';
-export const PAINT_CORRECTION_TITLE = 'Car Polishing & Paint Correction Dubai | DIGI-TEC';
+export const PAINT_CORRECTION_TITLE = 'Car Polishing Dubai | Paint Correction | DIGI-TEC';
 export const PAINT_CORRECTION_H1 = 'Car Polishing & Paint Correction Dubai';
-export const PAINT_CORRECTION_DESCRIPTION = 'Professional car polishing and paint correction in Dubai. Assess swirl marks, light scratches and dull paint on your premium car. Get a DIGI-TEC quote.';
+export const PAINT_CORRECTION_DESCRIPTION = 'Car polishing and paint correction in Al Quoz, Dubai for swirl marks, light scratches and dull paint. Ask DIGI-TEC for an assessed scope and quote.';
 export const PAINT_WHATSAPP = 'https://wa.me/97143402223';
 export const paintWhatsappHref = (message: string) => `${PAINT_WHATSAPP}?text=${encodeURIComponent(message)}`;
 export const PAINT_ASSESSMENT_HREF = paintWhatsappHref('Hi DIGI-TEC, I would like a paint assessment and quote for car polishing or paint correction. I can send photos of the paint condition.');
@@ -55,7 +55,7 @@ export const verifiedPaintProjects: VerifiedPaintProject[] = [];
 export const paintFaqs = [
   { question: 'What is car polishing?', answer: 'Car polishing uses a polish and suitable technique to improve paint clarity and gloss and reduce some surface imperfections. Abrasive polishing removes a small amount of the finish, so the method must suit the paint condition. It does not repair dents, chips or missing paint.' },
   { question: 'What is paint correction?', answer: 'Paint correction is a deliberate assessment and polishing process aimed at improving defects such as swirl marks, haze and suitable light scratches. The achievable result depends on defect depth, paint condition, previous repairs and safe correction limits.' },
-  { question: 'What is the difference between car polishing and paint correction?', answer: 'Polishing describes a technique that can enhance gloss and reduce minor marks. Paint correction describes a more targeted plan for assessed defects and may use polishing as part of that work. The terms overlap; the agreed scope matters more than the package name.' },
+  { question: 'What is the difference between car polishing and paint correction?', answer: 'Polishing describes a technique that can enhance gloss and reduce minor marks. Paint correction describes a more targeted plan for assessed defects and may use polishing as part of that work. Neither provides long-term protective coverage by itself; suitable coating or film is a separate service to discuss.' },
   { question: 'How much does car polishing cost in Dubai?', answer: 'Car polishing cost depends on vehicle size, paint condition, preparation and the improvement required. Optional protection afterward affects the total too. Send DIGI-TEC the model, year and paint concerns for a quotation; an in-person assessment may be needed.' },
   { question: 'How much does paint correction cost in Dubai?', answer: 'Paint correction pricing depends on the affected area, defect severity, previous paintwork, preparation and the amount of safe correction required. DIGI-TEC confirms the scope and cost for the vehicle rather than quoting one universal correction price.' },
   { question: 'Can polishing remove scratches?', answer: 'Some light marks within the clear coat can be improved or removed by suitable polishing. A photograph can help start the conversation, but it cannot reliably establish scratch depth or the remaining clear coat. The paint needs assessment before a removal claim can be made.' },

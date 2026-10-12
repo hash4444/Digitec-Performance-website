@@ -251,7 +251,7 @@ try {
   report.checks.contextualRelationships = relationships.map(([from, to]) => ({ from, to }));
 
   for (const [route, expectedTitle, expectedH1] of [
-    ['/services/paint-protection-film', 'PPF Dubai | Paint Protection Film for Cars | DIGI-TEC', 'Paint Protection Film (PPF) Dubai'],
+    ['/services/paint-protection-film', 'PPF Dubai | Paint Protection Film Installation | DIGI-TEC', 'Paint Protection Film (PPF) Dubai'],
     ['/services/ceramic-coating', 'Ceramic Coating Dubai | Car Paint Protection | DIGI-TEC', 'Ceramic Coating Dubai'],
   ]) {
     const checked = report.owners.find(item => item.canonical === `${origin}${route}`);

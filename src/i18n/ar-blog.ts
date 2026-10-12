@@ -99,9 +99,9 @@ const arabicPostMeta: Record<string, ArabicPostMeta> = {
   },
   'why-ceramic-coating-matters-uae': {
     title: 'لماذا يهم الطلاء السيراميكي في الإمارات؟',
-    excerpt: 'كيف يساعد الطلاء السيراميكي في حماية اللمعان وتسهيل العناية بالسيارة في ظروف الإمارات.',
-    metaTitle: 'الطلاء السيراميكي للسيارات في الإمارات | دليل الحماية',
-    metaDescription: 'دليل فوائد الطلاء السيراميكي في الإمارات وحماية دهان السيارة من الشمس والغبار والرطوبة مع توضيح الفرق بينه وبين الشمع وPPF.',
+    excerpt: 'تعرّف إلى دور السيراميك في تسهيل العناية بالطلاء، وأهمية التحضير، ومتى يقدم الفيلم نوعاً مختلفاً من الحماية.',
+    metaTitle: 'فوائد السيراميك للسيارات في الإمارات | التحضير والعناية',
+    metaDescription: 'تعرّف إلى فوائد السيراميك وتحضير طلاء السيارة والعناية به في الإمارات، والفرق بين الطلاء السطحي وأفلام PPF للحماية المادية.',
     topic: 'حماية الطلاء بالسيراميك',
   },
   'mercedes-repair-dubai-complete-guide': {
@@ -235,7 +235,7 @@ export const localizeBlogPostToArabic = (post: BlogPost): BlogPost => {
       ...adaptation,
       ...meta,
       content: adaptation.content,
-      updatedDate: post.slug === 'mercedes-amg-gt-tuning-dubai' ? '2026-10-05' : ['car-ac-not-cold-dubai-causes', 'engine-overheating-dubai-what-to-do', 'check-engine-light-dubai-guide', 'car-battery-life-dubai-heat'].includes(post.slug)
+      updatedDate: ['why-ceramic-coating-matters-uae', 'ceramic-coating-vs-ppf-dubai'].includes(post.slug) ? '2026-10-12' : post.slug === 'mercedes-amg-gt-tuning-dubai' ? '2026-10-05' : ['car-ac-not-cold-dubai-causes', 'engine-overheating-dubai-what-to-do', 'check-engine-light-dubai-guide', 'car-battery-life-dubai-heat'].includes(post.slug)
         ? '2026-09-30'
         : mercedesUpdatedArabicArticles.has(post.slug) ? '2026-09-28' : '2026-09-17',
       author: 'فريق ورشة ديجي-تك',

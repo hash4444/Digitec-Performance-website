@@ -62,7 +62,7 @@ try {
   await ready();
   assert.equal(await page.locator('h1').count(), 1);
   assert.equal(await page.locator('h1').textContent(), 'Paint Protection Film (PPF) Dubai');
-  assert.equal(await page.title(), 'PPF Dubai | Paint Protection Film for Cars | DIGI-TEC');
+  assert.equal(await page.title(), 'PPF Dubai | Paint Protection Film Installation | DIGI-TEC');
   assert.equal(await page.locator('link[rel=canonical]').getAttribute('href'), `https://digitecme.com${route}`);
   assert.equal(await page.locator('.ppf-faqs details').count(), 14);
   assert.equal(await page.locator('.ppf-brand-links a').count(), 9);

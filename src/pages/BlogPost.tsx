@@ -375,7 +375,7 @@ const BlogPost = () => {
               return (
                 <p key={i} className="text-white/70 leading-relaxed text-base">
                   {block.text}
-                  {(!isArabic || mercedesArabicLinkedArticles.has(post.slug)) && block.links?.length ? <span className="mt-3 flex flex-wrap gap-x-5 gap-y-2">{block.links.map((link) => <Link key={link.href} to={link.href} className="text-burnt-orange underline">{link.label}</Link>)}</span> : null}
+                  {(!isArabic || mercedesArabicLinkedArticles.has(post.slug) || ['ceramic-coating-vs-ppf-dubai', 'why-ceramic-coating-matters-uae'].includes(post.slug)) && block.links?.length ? <span className="mt-3 flex flex-wrap gap-x-5 gap-y-2">{block.links.map((link) => <Link key={link.href} to={link.href} className="text-burnt-orange underline">{link.label}</Link>)}</span> : null}
                 </p>
               );
             })}

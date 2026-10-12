@@ -47,7 +47,7 @@ try {
   await initTracking();
   assert.equal(await page.locator('h1').count(), 1);
   assert.equal(await page.locator('h1').textContent(), 'Car Polishing & Paint Correction Dubai');
-  assert.equal(await page.title(), 'Car Polishing & Paint Correction Dubai | DIGI-TEC');
+  assert.equal(await page.title(), 'Car Polishing Dubai | Paint Correction | DIGI-TEC');
   assert.equal(await page.locator('.paint-brands a').count(), 9);
   assert.equal(await page.locator('.paint-faqs details').count(), 16);
   assert.equal(await page.locator('link[hreflang="ar-AE"]').count(), 0);

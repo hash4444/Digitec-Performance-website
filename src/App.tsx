@@ -8,6 +8,7 @@ import { BrowserRouter, Routes, Route, useLocation, Navigate } from "react-route
 import { lazy, Suspense, useEffect } from "react";
 // Keep dedicated-page styles in the initial HTML for prerendered content.
 import "./styles/ceramic-coating.css";
+import "./styles/paint-protection.css";
 import "./styles/oil-change.css";
 import "./styles/suspension.css";
 import "./styles/transmission.css";
@@ -20,6 +21,7 @@ const TuningModelPage = lazy(() => import("./pages/TuningModelPage"));
 const VRX = lazy(() => import("./pages/VRX"));
 const Services = lazy(() => import("./pages/Services"));
 const PaintCorrectionPage = lazy(() => import("./pages/PaintCorrectionPage"));
+const PaintProtectionPage = lazy(() => import("./pages/PaintProtectionPage"));
 const ServicePage = lazy(() => import("./pages/ServicePage"));
 const CeramicCoatingPage = lazy(() => import("./pages/CeramicCoatingPage"));
 const PpfPage = lazy(() => import("./pages/PpfPage"));
@@ -167,6 +169,7 @@ export const AppContent = () => (
               }
             />
           ))}
+          <Route path="/ar/services/paint-protection-dubai" element={<PaintProtectionPage />} />
           <Route path="/ar/services/:slug" element={<ServicePage />} />
           <Route path="/ar/about" element={<AboutUs />} />
           <Route path="/ar/faq" element={<FAQPage />} />
@@ -232,6 +235,7 @@ export const AppContent = () => (
               }
             />
           ))}
+          <Route path="/services/paint-protection-dubai" element={<PaintProtectionPage />} />
           <Route path="/services/paint-protection-film" element={<PpfPage />} />
           <Route path="/services/ceramic-coating" element={<CeramicCoatingPage />} />
           <Route path="/services/car-polishing-dubai" element={<PaintCorrectionPage />} />

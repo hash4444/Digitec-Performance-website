@@ -32,9 +32,9 @@ const fileFor = (route) => path.join(dist, route.replace(/^\//, ''), 'index.html
 const decode = (value) => value.replaceAll('&amp;', '&').replaceAll('&#x27;', "'").replaceAll('&quot;', '"').replace(/<[^>]+>/g, '').trim();
 const graphNodes = (html) => [...html.matchAll(/<script[^>]*type="application\/ld\+json"[^>]*>([\s\S]*?)<\/script>/g)].flatMap((match) => { const json = JSON.parse(match[1]); return json['@graph'] || [json]; });
 const specifications = [
-  { slug: 'paint-protection-film', component: 'PpfPage', h1: 'Paint Protection Film (PPF) Dubai', title: 'PPF Dubai | Paint Protection Film for Cars | DIGI-TEC' },
+  { slug: 'paint-protection-film', component: 'PpfPage', h1: 'Paint Protection Film (PPF) Dubai', title: 'PPF Dubai | Paint Protection Film Installation | DIGI-TEC' },
   { slug: 'ceramic-coating', component: 'CeramicCoatingPage', h1: 'Ceramic Coating Dubai', title: 'Ceramic Coating Dubai | Car Paint Protection | DIGI-TEC' },
-  { slug: 'car-polishing-dubai', component: 'PaintCorrectionPage', h1: 'Car Polishing & Paint Correction Dubai', title: 'Car Polishing & Paint Correction Dubai | DIGI-TEC' },
+  { slug: 'car-polishing-dubai', component: 'PaintCorrectionPage', h1: 'Car Polishing & Paint Correction Dubai', title: 'Car Polishing Dubai | Paint Correction | DIGI-TEC' },
 ];
 const results = [];
 for (const spec of specifications) {

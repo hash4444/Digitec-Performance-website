@@ -2,7 +2,7 @@
 // products, coating schedules, ratings and commercial terms need verification.
 export const CERAMIC_PATH = '/services/ceramic-coating';
 export const CERAMIC_TITLE = 'Ceramic Coating Dubai | Car Paint Protection | DIGI-TEC';
-export const CERAMIC_DESCRIPTION = 'Ceramic paint protection in Dubai for luxury and performance cars. Explore coating, paint preparation and aftercare at DIGI-TEC in Al Quoz. Get your quote.';
+export const CERAMIC_DESCRIPTION = 'Ceramic coating for cars in Al Quoz, Dubai. Discuss paint preparation, water-beading benefits and ongoing care at DIGI-TEC. Request a vehicle-specific quote.';
 export const CERAMIC_H1 = 'Ceramic Coating Dubai';
 
 import type { VerifiedStartingPrice } from '@/lib/verified-pricing';
@@ -40,7 +40,7 @@ export const ceramicFaqs = [
   { question: 'Does ceramic coating protect against stone chips?', answer: 'Ceramic coating does not provide meaningful stone-chip protection. PPF is a physical film that can reduce damage from some small impacts on covered panels. Choose the protection according to the risk you want to address.' },
   { question: 'Does ceramic coating protect against UV exposure?', answer: 'Some coatings have manufacturer-rated properties relating to UV or environmental exposure. Confirm those properties for the actual product in your quote. Do not assume that coating completely prevents sun damage, oxidation or deterioration.' },
   { question: 'Can ceramic coating be applied to a new car?', answer: 'Yes, after assessing the paint and confirming product suitability. New cars may still have contamination or surface marks, so new paint does not automatically mean that no preparation is required.' },
-  { question: 'Should paint correction be done before ceramic coating?', answer: 'Correction may be useful if there are swirls, haze or suitable surface defects. It is not automatically needed on every car. Coating will not remove these imperfections, so discuss the desired finish and appropriate preparation before application.' },
+  { question: 'Should paint correction be done before ceramic coating?', answer: 'Polishing and ceramic coating are separate processes: polishing can correct suitable surface defects, while coating is applied to the prepared finish. Correction may be useful for swirls or haze, but it is not automatically needed on every car and cannot safely remove every defect. Discuss the desired finish and appropriate preparation before application.' },
   { question: 'Can ceramic coating be applied over PPF?', answer: 'Yes, where the film and coating are compatible and their application requirements are followed. DIGI-TEC discusses combined options for suitable surfaces. Confirm the chosen products, application order and any implications for finish, care or warranty.' },
   { question: 'What is better: PPF or ceramic coating?', answer: 'They meet different needs. PPF provides a physical film that can reduce small-impact damage and minor abrasion. Ceramic coating focuses on surface behaviour, appearance and cleaning. Compatible products can complement each other; neither is universally better.' },
   { question: 'How long does ceramic coating take to apply?', answer: 'The workshop time depends on paint condition, correction, the surfaces being treated and the coating system’s application and curing requirements. Ask DIGI-TEC for an expected schedule after the scope is assessed.' },

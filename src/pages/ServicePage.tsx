@@ -67,6 +67,7 @@ const ServicePage: React.FC<ServicePageProps> = ({ slugOverride, canonicalPath, 
   const externalRedirect = slug ? EXTERNAL_REDIRECTS[slug] : undefined;
   const newSlug = slug ? OLD_TO_NEW_SLUG[slug] : undefined;
   const isElectronics = electronicsServices.some(item => item.slug === slug);
+  const isProtectionService = !brandPath && ['paint-protection-dubai', 'paint-protection-film', 'ceramic-coating'].includes(slug ?? '');
   const sourceService = slug && !newSlug && !externalRedirect && !(isArabic && isElectronics) ? getServiceBySlug(slug) : undefined;
   const service = sourceService && isArabic ? (brandPath ? localizeServiceToArabic(sourceService) : refineArabicProtectionService(refineGenericArabicService(localizeServiceToArabic(sourceService))))
     : sourceService && !brandPath && sourceService.pageTitle ? { ...sourceService, title: sourceService.pageTitle } : sourceService;
@@ -80,7 +81,7 @@ const ServicePage: React.FC<ServicePageProps> = ({ slugOverride, canonicalPath, 
   // the sitewide ones by @id.
   const serviceJsonLd = React.useMemo(() => {
     if (!service || !url) return undefined;
-    const schemaDescription = isArabic
+    const schemaDescription = isProtectionService ? service.intro : isArabic
       ? `${service.title} لدى مركز ديجي-تك بيرفورمانس في القوز، دبي. تواصل مع الورشة لترتيب الفحص أو الخدمة المناسبة.`
       : `${service.title} at Digi-Tec Performance Center in Al Quoz, Dubai. Contact the workshop to arrange the appropriate inspection or service.`;
     const breadcrumb = buildBreadcrumb(url, [
@@ -126,7 +127,7 @@ const ServicePage: React.FC<ServicePageProps> = ({ slugOverride, canonicalPath, 
     });
     const faq = !isElectronics && service.faqs && service.faqs.length > 0 ? buildFAQ(url, service.faqs) : null;
     return pageGraph([webPage, breadcrumb, svc, ...(faq ? [faq] : [])]);
-  }, [service, brandPath, isArabic, isElectronics, url]);
+  }, [service, brandPath, isArabic, isElectronics, isProtectionService, url]);
 
   useSeo({
     title: service?.metaTitle || (service ? `${service.seoKeyword} | DIGI-TEC Performance Center` : 'Service Not Found | DIGI-TEC'),
@@ -165,7 +166,10 @@ const ServicePage: React.FC<ServicePageProps> = ({ slugOverride, canonicalPath, 
   }
 
   const isMercedes = service.slug.startsWith('mercedes-');
-  const enquiryLabel = isArabic ? 'ناقش الخدمة عبر واتساب' : service.ctaLabel;
+  const protectionImage = isProtectionService ? (service.slug === 'ceramic-coating'
+    ? { srcSet: '/images/ceramic-coating/black-mercedes-finish-640.webp 640w, /images/ceramic-coating/black-mercedes-finish-1024.webp 1024w', width: 1024, height: 1536 }
+    : { srcSet: '/images/ppf/film-application-640.webp 640w, /images/ppf/film-application-1200.webp 1200w', width: 1200, height: 1200 }) : undefined;
+  const enquiryLabel = isArabic ? (isProtectionService ? service.ctaLabel ?? 'اطلب عرض سعر لسيارتك' : 'ناقش الخدمة عبر واتساب') : service.ctaLabel;
   const enquiryHref = `https://wa.me/97143402223?text=${encodeURIComponent(isArabic ? `مرحباً ديجي-تك، أود مناقشة ${service.title}.` : `Hi DIGI-TEC, I would like to discuss ${service.title}. Model/year: Mileage: Concern: Preferred appointment:`)}`;
   const related = allServices
     .filter((s) => s.category === sourceService?.category && s.slug !== service.slug)
@@ -173,19 +177,19 @@ const ServicePage: React.FC<ServicePageProps> = ({ slugOverride, canonicalPath, 
     .slice(0, 3);
 
   return (
-    <div className="site-page min-h-screen bg-black text-off-white">
+    <div className={`site-page ${isProtectionService ? 'protection-service-page ' : ''}min-h-screen bg-black text-off-white`}>
       <Header hasArabicVersion={!isElectronics} />
 
       {/* Hero */}
       <main>
-      <section className="theme-dark-section relative flex min-h-[56vh] items-end overflow-hidden border-b border-white/[0.08] pb-14 pt-32 sm:min-h-[62vh] sm:pb-20 sm:pt-36">
+      <section className={`theme-dark-section ${isProtectionService ? 'protection-service-hero ' : ''}relative flex min-h-[56vh] items-end overflow-hidden border-b border-white/[0.08] pb-14 pt-32 sm:min-h-[62vh] sm:pb-20 sm:pt-36`}>
         <div className="absolute inset-0">
           <img
             src={service.image}
-            srcSet={isElectronics ? '/images/paint-correction/workshop-floor-540.webp 540w, /images/paint-correction/workshop-floor-960.webp 960w' : undefined}
-            sizes={isElectronics ? '100vw' : undefined}
-            width={isElectronics ? 960 : undefined}
-            height={isElectronics ? 1280 : undefined}
+            srcSet={protectionImage?.srcSet ?? (isElectronics ? '/images/paint-correction/workshop-floor-540.webp 540w, /images/paint-correction/workshop-floor-960.webp 960w' : undefined)}
+            sizes={isElectronics || isProtectionService ? '100vw' : undefined}
+            width={protectionImage?.width ?? (isElectronics ? 960 : undefined)}
+            height={protectionImage?.height ?? (isElectronics ? 1280 : undefined)}
             alt={service.imageAlt ?? service.title}
             fetchPriority="high"
             className="w-full h-full object-cover"
@@ -213,7 +217,7 @@ const ServicePage: React.FC<ServicePageProps> = ({ slugOverride, canonicalPath, 
           <p className="max-w-2xl text-base leading-7 text-white/64 sm:text-lg">
             {service.description}
           </p>
-          {service.ctaLabel && <div className="mt-7 flex flex-col flex-wrap gap-3 sm:flex-row">
+          {(service.ctaLabel || isProtectionService) && <div className="mt-7 flex flex-col flex-wrap gap-3 sm:flex-row">
             <a href={enquiryHref} data-cta-placement="hero" target="_blank" rel="noopener noreferrer" className="btn-primary"><MessageCircle className="h-5 w-5 shrink-0" />{enquiryLabel}</a>
             <a href="tel:+97143402223" data-cta-placement="hero" className="btn-secondary"><Phone className="h-5 w-5 shrink-0" />{isArabic ? 'اتصل بالورشة' : 'Call the Al Quoz workshop'}</a>
           </div>}
@@ -478,11 +482,11 @@ const ServicePage: React.FC<ServicePageProps> = ({ slugOverride, canonicalPath, 
                 <ul className="space-y-3 text-gray-300 text-sm mb-6">
                   <li className="flex items-start gap-2">
                     <span className="text-burnt-orange mt-1">✓</span>
-                    {isArabic ? 'توضيح القطع والسوائل المقترحة قبل الموافقة' : 'Proposed parts and fluids explained before approval'}
+                    {isProtectionService ? (isArabic ? 'تحديد المنتج والتحضير والأسطح المشمولة' : 'Product, preparation and covered surfaces agreed') : (isArabic ? 'توضيح القطع والسوائل المقترحة قبل الموافقة' : 'Proposed parts and fluids explained before approval')}
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-burnt-orange mt-1">✓</span>
-                    {isArabic ? 'فحص وتشخيص يناسب السيارة' : 'Vehicle-specific inspection and diagnostics'}
+                    {isProtectionService ? (isArabic ? 'تقييم حالة الطلاء والإصلاحات السابقة' : 'Paint condition and previous repairs assessed') : (isArabic ? 'فحص وتشخيص يناسب السيارة' : 'Vehicle-specific inspection and diagnostics')}
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-burnt-orange mt-1">✓</span>

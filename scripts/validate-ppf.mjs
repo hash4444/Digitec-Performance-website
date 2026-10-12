@@ -12,7 +12,7 @@ const html = await readFile(pageFile(ppfPath), 'utf8');
 const decode = (value) => value.replace(/&amp;/g, '&').replace(/&#x27;|&#39;/g, "'").replace(/&quot;/g, '"');
 const title = (value) => value.match(/<title>(.*?)<\/title>/s)?.[1];
 const description = (value) => value.match(/<meta name="description" content="([^"]*)"/)?.[1];
-assert.equal(title(html), 'PPF Dubai | Paint Protection Film for Cars | DIGI-TEC');
+assert.equal(title(html), 'PPF Dubai | Paint Protection Film Installation | DIGI-TEC');
 assert.equal((html.match(/<h1\b/g) || []).length, 1);
 assert.equal(html.match(/<h1[^>]*>(.*?)<\/h1>/s)[1].replace(/<[^>]*>/g, ''), 'Paint Protection Film (PPF) Dubai');
 assert.equal((html.match(/rel="canonical"/g) || []).length, 1);

@@ -231,4 +231,18 @@ export const publicRoutes = [...routeMap.values()].map((route) => b4UpdatedPaths
   a.path.localeCompare(b.path),
 );
 
+// Only pages whose paint-care content changed receive this modification date.
+const paintProtectionUpdatedPaths = new Set([
+  '/services', '/ar/services', '/sitemap', '/ar/sitemap',
+  '/services/paint-protection-dubai', '/ar/services/paint-protection-dubai',
+  '/services/paint-protection-film', '/ar/services/paint-protection-film',
+  '/services/ceramic-coating', '/ar/services/ceramic-coating',
+  '/services/car-polishing-dubai',
+  '/blog/ceramic-coating-vs-ppf-dubai', '/ar/blog/ceramic-coating-vs-ppf-dubai',
+  '/blog/why-ceramic-coating-matters-uae', '/ar/blog/why-ceramic-coating-matters-uae',
+]);
+for (const route of publicRoutes) {
+  if (paintProtectionUpdatedPaths.has(route.path)) route.lastmod = '2026-10-12';
+}
+
 export const indexableRoutes = publicRoutes.filter((route) => route.indexable);

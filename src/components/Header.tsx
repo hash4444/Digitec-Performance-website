@@ -32,10 +32,10 @@ const Header = ({ overlay = false, hasArabicVersion = true }: HeaderProps) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isLanguageOpen, setIsLanguageOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-  const [colorTheme, setColorTheme] = useState<'dark' | 'light'>(() => {
-    if (typeof window === 'undefined') return 'dark';
-    return window.localStorage.getItem(THEME_STORAGE_KEY) === 'light' ? 'light' : 'dark';
-  });
+  // Match the prerendered header on the first client render, then restore the
+  // saved preference after hydration so the theme icon cannot invalidate SSR.
+  const [colorTheme, setColorTheme] = useState<'dark' | 'light'>('dark');
+  const [themeReady, setThemeReady] = useState(false);
   const headerRef = useRef<HTMLElement>(null);
   const location = useLocation();
   const isArabic = location.pathname === '/ar' || location.pathname.startsWith('/ar/');
@@ -93,11 +93,17 @@ const Header = ({ overlay = false, hasArabicVersion = true }: HeaderProps) => {
   }, [isArabic]);
 
   useEffect(() => {
+    setColorTheme(window.localStorage.getItem(THEME_STORAGE_KEY) === 'light' ? 'light' : 'dark');
+    setThemeReady(true);
+  }, []);
+
+  useEffect(() => {
+    if (!themeReady) return;
     const isLight = colorTheme === 'light';
     document.documentElement.classList.toggle('theme-light', isLight);
     document.documentElement.style.colorScheme = isLight ? 'light' : 'dark';
     window.localStorage.setItem(THEME_STORAGE_KEY, colorTheme);
-  }, [colorTheme]);
+  }, [colorTheme, themeReady]);
 
   const rememberLocale = (locale: 'en' | 'ar') => localStorage.setItem(LOCALE_STORAGE_KEY, locale);
 

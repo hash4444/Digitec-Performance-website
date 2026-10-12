@@ -48,7 +48,9 @@ try {
         assert.equal(response.headers().location, url.replace(`${spec.route}/?`, `${spec.route}?`));
       } else {
         assert.equal(response.status(), 200);
-        assert.ok((await response.text()).includes(spec.h1.replaceAll('&', '&amp;')), `Initial HTML: ${url}`);
+        const html = await response.text();
+        const initialH1 = html.match(/<h1[^>]*>([\s\S]*?)<\/h1>/)?.[1].replace(/<[^>]*>/g, '').replaceAll('&amp;', '&');
+        assert.equal(initialH1, spec.h1, `Initial HTML: ${url}`);
       }
       requests.push({ path: spec.route + suffix, status: response.status(), location: response.headers().location });
       await page.goto(url);
