@@ -1,0 +1,11 @@
+import { createRequire } from 'node:module';
+import { readFile, writeFile } from 'node:fs/promises';
+import { createHash } from 'node:crypto';
+const require=createRequire(import.meta.url);
+const {build}=createRequire(require.resolve('vite/package.json'))('esbuild');
+const out='outputs/ppf-phase3-4-2026-10-17/routing';
+await build({entryPoints:['cloudflare/production-seo-router.js'],bundle:true,format:'esm',platform:'neutral',target:'es2022',outfile:out+'/production-seo-router.bundle.js',legalComments:'none'});
+const files=['cloudflare/production-seo-router.js','cloudflare/mercedes-seo-router.js','cloudflare/routing-response-guard.js','cloudflare/routing-response-data.js','src/lib/historical-paths.js','cloudflare/wrangler.production-seo.jsonc',out+'/production-seo-router.bundle.js'];
+const records=await Promise.all(files.map(async file=>{const body=await readFile(file);return {file,sha256:createHash('sha256').update(body).digest('hex'),bytes:body.length};}));
+await writeFile(out+'/router-bundle-manifest.json',JSON.stringify({builtAt:new Date().toISOString(),method:'Offline local esbuild from the installed Vite dependency; no upload or deployment.',records},null,2));
+console.log('Built actual Wrangler entrypoint bundle locally and recorded hashes.');

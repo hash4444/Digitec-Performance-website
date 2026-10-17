@@ -1,0 +1,14 @@
+{
+  "testedAt": "2026-10-17T09:32:03.955Z",
+  "passed": true,
+  "redirects": 5424,
+  "passthroughs": 266,
+  "guardedRequests": 13,
+  "notFoundChecks": 4,
+  "originResponseChecks": 5,
+  "protectionAliases": 12,
+  "protectionNormalizationChecks": 192,
+  "protectionSafetyChecks": 90,
+  "deployed": false,
+  "scope": "113 aliases plus known PPF/paint-options/Mercedes/tyre normalization; canonical, endpoint, unrelated-host and mutation identity; unknown GET/HEAD request preservation and manual origin fetch; HTML 404, HEAD body, assets and origin redirects/errors"
+}

@@ -9,7 +9,7 @@ const base = process.argv[3] || 'http://127.0.0.1:5194';
 const output = 'paint-care-integration-qa.local';
 await mkdir(output, { recursive: true });
 const specs = [
-  { key: 'ppf', path: '/services/paint-protection-film', h1: 'Paint Protection Film (PPF) Dubai', form: '#ppf-quote-form', faq: '.ppf-faqs summary', count: 14, selector: '#ppf-requested-coverage', service: 'ppf' },
+  { key: 'ppf', path: '/services/paint-protection-film', h1: 'Paint Protection Film (PPF) in Dubai', form: '#ppf-quote-form', faq: '.ppf-faqs summary', count: 14, selector: '#ppf-requested-coverage', service: 'ppf' },
   { key: 'ceramic', path: '/services/ceramic-coating', h1: 'Ceramic Coating Dubai', faq: '.cc-faq button', count: 16 },
   { key: 'paint', path: '/services/car-polishing-dubai', h1: 'Car Polishing & Paint Correction Dubai', form: '#paint-assessment-form', faq: '.paint-faqs summary', count: 16, selector: '#paint-concern', service: 'paint_correction' },
 ];
@@ -57,6 +57,10 @@ const checkForm = async (spec) => {
   await form.getByLabel('Vehicle brand', { exact: true }).fill('   ');
   await form.getByLabel('Vehicle model', { exact: true }).fill('Private Model Ω &');
   await form.getByLabel('Year', { exact: true }).fill('2025');
+  if (spec.key === 'ppf') {
+    await form.locator('#ppf-name').fill('Private Customer');
+    await form.locator('#ppf-contact-details').fill('+971501234567');
+  }
   await form.locator('button[type=submit]').click();
   assert.equal(await form.getByRole('alert').count(), 1);
   await form.getByLabel('Vehicle brand', { exact: true }).fill('Private Brand Ω &');
@@ -64,8 +68,11 @@ const checkForm = async (spec) => {
   await form.locator('button[type=submit]').click();
   assert.equal(events.filter((event) => event.event === 'whatsapp_click').length, 0);
   await form.getByLabel('Year', { exact: true }).fill('2025');
-  await page.locator(spec.selector).click();
-  await page.getByRole('option', { name: spec.key === 'ppf' ? 'Full Front' : 'Scratches', exact: true }).click();
+  if (spec.key === 'ppf') await page.locator(spec.selector).selectOption('Full Front');
+  else {
+    await page.locator(spec.selector).click();
+    await page.getByRole('option', { name: 'Scratches', exact: true }).click();
+  }
   assert.equal(events.filter((event) => Array.isArray(event) && event[1] === 'quote_started').length, 1);
   const request = page.waitForRequest((req) => req.url().startsWith('https://wa.me/'));
   await form.locator('button[type=submit]').click();
@@ -158,10 +165,15 @@ try {
     if (spec.form) {
       const form = noJsPage.locator(spec.form);
       assert.equal(await form.locator('button[type=submit]').isDisabled(), true);
-      await form.getByLabel('Vehicle brand', { exact: true }).fill('Private NoJS');
-      await form.getByLabel('Vehicle model', { exact: true }).fill('Private NoJS Model');
-      await form.getByLabel('Year', { exact: true }).fill('2025');
-      await form.getByLabel('Year', { exact: true }).press('Enter');
+      if (spec.key === 'ppf') {
+        assert.equal(await form.getByLabel('Vehicle brand', { exact: true }).isDisabled(), true);
+        await noJsPage.locator('body').press('Enter');
+      } else {
+        await form.getByLabel('Vehicle brand', { exact: true }).fill('Private NoJS');
+        await form.getByLabel('Vehicle model', { exact: true }).fill('Private NoJS Model');
+        await form.getByLabel('Year', { exact: true }).fill('2025');
+        await form.getByLabel('Year', { exact: true }).press('Enter');
+      }
       await noJsPage.waitForTimeout(150);
       assert.equal(noJsPage.url(), base + spec.path, 'No GET fallback with form data');
     }

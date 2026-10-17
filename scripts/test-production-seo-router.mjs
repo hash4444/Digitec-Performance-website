@@ -3,9 +3,18 @@ import { writeFile, mkdir } from 'node:fs/promises';
 import { aliases, canonicalPaths } from '../cloudflare/mercedes-seo-router.js';
 const { handleRequest } = await import(new URL(process.argv[2] || '../cloudflare/production-seo-router.js', import.meta.url));
 
-const pairs = [...aliases, ['/services/tire-repair', '/services/tire-repair-dubai'], ['/ar/services/tire-repair', '/ar/services/tire-repair-dubai']];
+const protectionPairs = [
+  ['/ppf', '/services/paint-protection-film'],
+  ['/services/ppf', '/services/paint-protection-film'],
+  ['/paint-protection', '/services/paint-protection-dubai'],
+  ['/car-paint-protection', '/services/paint-protection-dubai'],
+  ['/services/paint-protection', '/services/paint-protection-dubai'],
+  ['/services/car-paint-protection', '/services/paint-protection-dubai'],
+].flatMap(([source, target]) => [[source, target], [`/ar${source}`, `/ar${target}`]]);
+const protectionCanonicalPaths = [...new Set(protectionPairs.map(([, target]) => target))];
+const pairs = [...aliases, ...protectionPairs, ['/services/tire-repair', '/services/tire-repair-dubai'], ['/ar/services/tire-repair', '/ar/services/tire-repair-dubai']];
 const queries = ['', '?utm_source=google&gclid=qa-check&tag=a&tag=b&text=a%20b'];
-let redirects = 0, passthroughs = 0, guardedRequests = 0, notFoundChecks = 0, originResponseChecks = 0;
+let redirects = 0, passthroughs = 0, guardedRequests = 0, notFoundChecks = 0, originResponseChecks = 0, protectionNormalizationChecks = 0, protectionSafetyChecks = 0;
 const assertGuardedRequest = (forwarded, original) => {
   assert.notEqual(forwarded, original);
   assert.equal(forwarded.url, original.url);
@@ -26,7 +35,23 @@ for (const [source, target] of pairs) {
     }
   }
 }
-for (const route of [...canonicalPaths, '/services/tire-repair-dubai', '/ar/services/tire-repair-dubai', '/services/head-unit-repair-dubai', '/services/cadillac-cue-screen-repair-dubai', '/brands/bmw-service-dubai', '/unknown-page', '/functions/contact', '/assets/app.js']) {
+for (const route of protectionCanonicalPaths) {
+  for (const host of ['https://digitecme.com', 'http://digitecme.com', 'https://www.digitecme.com', 'http://www.digitecme.com']) {
+    for (const variant of [route, `${route}/`, route.toUpperCase().replaceAll('/', '//')]) {
+      for (const method of ['GET', 'HEAD']) for (const query of queries) {
+        const request = new Request(`${host}${variant}${query}`, { method });
+        const expected = `https://digitecme.com${route}${query}`;
+        const origin = new Response(method === 'HEAD' ? null : 'canonical origin', { status: 200 });
+        let calls = 0;
+        const response = await handleRequest(request, forwarded => { assert.equal(forwarded, request); calls++; return origin; });
+        if (request.url === expected) { assert.equal(response, origin); assert.equal(calls, 1); }
+        else { assert.equal(response.status, 308); assert.equal(response.headers.get('location'), expected); assert.equal(calls, 0); }
+        protectionNormalizationChecks++;
+      }
+    }
+  }
+}
+for (const route of [...canonicalPaths, ...protectionCanonicalPaths, '/services/tire-repair-dubai', '/ar/services/tire-repair-dubai', '/services/head-unit-repair-dubai', '/services/cadillac-cue-screen-repair-dubai', '/brands/bmw-service-dubai', '/unknown-page', '/functions/contact', '/assets/app.js']) {
   for (const method of ['GET', 'HEAD', 'POST']) {
     const request = new Request(`https://digitecme.com${route}?keep=1`, { method, headers: { 'X-Router-Test': 'preserve' } });
     let count = 0;
@@ -37,6 +62,26 @@ for (const route of [...canonicalPaths, '/services/tire-repair-dubai', '/ar/serv
       return new Response('origin', {status:200});
     });
     assert.equal(count, 1); assert.equal(response.status, 200); passthroughs++;
+  }
+}
+// The PPF scope must not intercept mutations, application endpoints, another
+// hostname or an unrelated valid page merely because its query mentions PPF.
+for (const route of [...protectionPairs.map(([source]) => source), ...protectionCanonicalPaths]) {
+  for (const method of ['POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS']) {
+    const body = method === 'OPTIONS' ? undefined : '{"preserve":"body"}';
+    const request = new Request(`https://digitecme.com${route}/?tag=a&tag=b`, { method, headers: { 'X-Router-Test': 'preserve', 'Content-Type': 'application/json' }, body });
+    const response = await handleRequest(request, async forwarded => {
+      assert.equal(forwarded, request); assert.equal(await forwarded.text(), body || '');
+      return new Response('unchanged', { status: 202 });
+    });
+    assert.equal(response.status, 202); assert.equal(await response.text(), 'unchanged'); protectionSafetyChecks++;
+  }
+}
+for (const url of ['https://unrelated.example/ppf/', 'https://digitecme.com/api/ppf', 'https://digitecme.com/functions/ppf', 'https://digitecme.com/cdn-cgi/ppf', 'https://digitecme.com/tuning?next=/ppf']) {
+  for (const method of ['GET', 'HEAD']) {
+    const request = new Request(url, { method });
+    const response = await handleRequest(request, forwarded => { assert.equal(forwarded, request); return new Response(null, { status: 202 }); });
+    assert.equal(response.status, 202); protectionSafetyChecks++;
   }
 }
 for (const url of ['https://unrelated.example/services/tire-repair', 'https://digitecme.com/services/tire-repair-extra', 'https://digitecme.com/services/mercedes-repair-dubai']) {
@@ -92,8 +137,8 @@ assert.equal(mutationCount, 1); assert.equal(mutationResponse.status, 202); pass
 const unrelated = new Request('https://unrelated.example/services/tire-repair?keep=1');
 const unrelatedResponse = await handleRequest(unrelated, r => { assert.equal(r, unrelated); return new Response('unrelated unchanged', {status:202}); });
 assert.equal(unrelatedResponse.status, 202); passthroughs++;
-const outputDir = process.env.SEO_ROUTER_TEST_OUTPUT_DIR || 'outputs/production-qa-2026-09-16';
+const outputDir = process.env.SEO_ROUTER_TEST_OUTPUT_DIR || 'release-qa.local/production-router';
 await mkdir(outputDir, {recursive:true});
-const report = { testedAt:new Date().toISOString(), passed:true, redirects, passthroughs, guardedRequests, notFoundChecks, originResponseChecks, deployed:false, scope:`${pairs.length} aliases plus known Mercedes/tyre normalization; canonical, endpoint, unrelated-host and mutation identity; unknown GET/HEAD request preservation and manual origin fetch; HTML 404, HEAD body, assets and origin redirects/errors` };
+const report = { testedAt:new Date().toISOString(), passed:true, redirects, passthroughs, guardedRequests, notFoundChecks, originResponseChecks, protectionAliases:protectionPairs.length, protectionNormalizationChecks, protectionSafetyChecks, deployed:false, scope:`${pairs.length} aliases plus known PPF/paint-options/Mercedes/tyre normalization; canonical, endpoint, unrelated-host and mutation identity; unknown GET/HEAD request preservation and manual origin fetch; HTML 404, HEAD body, assets and origin redirects/errors` };
 await writeFile(`${outputDir}/${process.argv[2] ? 'scoped-router-bundle-tests' : 'scoped-router-tests'}.json`, JSON.stringify(report,null,2));
 console.log(report);

@@ -1,0 +1,44 @@
+{
+  "checkedAt": "2026-10-17T09:53:49.689Z",
+  "head": "5461e2c0f28c006f45196f6d9a7f4dcf312f464c",
+  "branch": "main",
+  "scope": "Only incremental Phases 3–4 code/generated changes, relative to saved Phase 2 working files; no source rollback executed. New report/evidence files are separate.",
+  "rollbackReverseCheckPassed": true,
+  "records": [
+    {
+      "file": "cloudflare/routing-response-data.js",
+      "kind": "modified",
+      "beforeSha256": "2965c5f0fbdbab6a4cb11287e1e265e89cdbb64ff12f36b433d3275ff5ba36e0",
+      "afterSha256": "81d88b0bc0dfb8a97221111494deff467958dd36efcf4802fd58bc69c1b86a27",
+      "rollbackSource": "outputs/ppf-phase3-4-2026-10-17/baseline/source/cloudflare/routing-response-data.js"
+    },
+    {
+      "file": "docs/seo/protection-release-validation.json",
+      "kind": "modified",
+      "beforeSha256": "69e8fe93627c5d707150ffec148458ec92f635e35b582ebc99c0753d6b725d1d",
+      "afterSha256": "5bf229b97e973c6b3f6a03df2661c76b411b876ba38e35fb1a794e2f314ec841",
+      "rollbackSource": "outputs/ppf-phase3-4-2026-10-17/baseline/source/docs/seo/protection-release-validation.json"
+    },
+    {
+      "file": "docs/seo/query-release-validation.json",
+      "kind": "modified",
+      "beforeSha256": "d717baa4eaa13ede4097da319f5f601a78cdb698f617fab6cfe54418fafc97dc",
+      "afterSha256": "8e384fd3c68555fdcadbb6c0dfca5105e26bcb1ce55da943bff22a459b568263",
+      "rollbackSource": "outputs/ppf-phase3-4-2026-10-17/baseline/source/docs/seo/query-release-validation.json"
+    },
+    {
+      "file": "src/i18n/ar-protection-services.ts",
+      "kind": "modified",
+      "beforeSha256": "51c3e127eb22838e6f58f0cbe51e356aedd17126265e8939aa0ccb97fe557d75",
+      "afterSha256": "bb1cfbddea0aa8f5d3536d5371978483b36db14cd8f2839cade8e1ecdd953d29",
+      "rollbackSource": "outputs/ppf-phase3-4-2026-10-17/baseline/source/src/i18n/ar-protection-services.ts"
+    },
+    {
+      "file": "src/pages/PpfPage.tsx",
+      "kind": "modified",
+      "beforeSha256": "b27cb0cc977936c97e197e09e76e1f6c6eb3161a6b157eafdd0dd3484b4c8dc6",
+      "afterSha256": "1d85ae7f8534cc5bf626acebd8e095c70ef9bf88336bcdadb3ccd2ff2ea0db55",
+      "rollbackSource": "outputs/ppf-phase3-4-2026-10-17/baseline/source/src/pages/PpfPage.tsx"
+    }
+  ]
+}

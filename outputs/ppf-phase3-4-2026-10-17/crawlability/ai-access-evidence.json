@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-17",
+  "timezone": "Asia/Dubai",
+  "browser_tool": {
+    "attempt": "cua.createBrowserTab('iab', Google search URL, { visible: false })",
+    "result": "Browser is not available: iab",
+    "inventory": { "apps": [], "browsers": [] },
+    "consequence": "No enabled browser surface existed for authenticated or logged-out AI UI observation. No authentication, CAPTCHA or permission flow was attempted."
+  },
+  "public_page_attempts": [
+    { "platform": "Google AI Mode", "url": "https://www.google.com/search?udm=50&q=Where+can+I+get+PPF+installed+in+Dubai%3F&hl=en&gl=ae", "result": "URL is not accessible via this tool.", "generated_answer_observed": false },
+    { "platform": "Google Search / possible AI Overview", "url": "https://www.google.com/search?q=Where+can+I+get+PPF+installed+in+Dubai%3F&hl=en&gl=ae", "result": "URL is not accessible via this tool.", "generated_answer_observed": false },
+    { "platform": "Google Search / possible AI Overview", "url": "https://www.google.com/search?q=Is+PPF+better+than+ceramic+coating+for+Dubai+driving%3F&hl=en&gl=ae", "result": "URL is not accessible via this tool.", "generated_answer_observed": false },
+    { "platform": "Bing Copilot Search", "url": "https://www.bing.com/copilotsearch?q=Where+can+I+get+PPF+installed+in+Dubai%3F", "result": "URL is not accessible via this tool.", "generated_answer_observed": false },
+    { "platform": "ChatGPT query URL", "url": "https://chatgpt.com/?q=Where+can+I+get+PPF+installed+in+Dubai%3F&hints=search", "result": "Failed to fetch: Cache miss.", "generated_answer_observed": false },
+    { "platform": "ChatGPT public landing page", "url": "https://chatgpt.com/", "result": "Generic page with Log in, Sign up for free, Web search and generic UI text; no answer to the test question captured.", "generated_answer_observed": false },
+    { "platform": "Gemini", "url": "https://gemini.google.com/app", "result": "Public extraction shows Sign in and Google apps only; no query entered or answer captured.", "generated_answer_observed": false }
+  ],
+  "interpretation": "These are access attempts, not completed AI-search answers. DIGI-TEC mentions, citations, competitor mentions and answer accuracy are unknown. No AI visibility rate or platform ranking can be computed.",
+  "conventional_search_method": "Four separate natural-language web search retrieval requests returned source URL samples. They do not expose Google AI Overview/AI Mode, ChatGPT or Gemini generated responses. No Google UI rank or fixed geolocation is asserted."
+}

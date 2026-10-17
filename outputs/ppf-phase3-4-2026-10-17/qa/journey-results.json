@@ -1,0 +1,57 @@
+{
+  "passed": true,
+  "checkedAt": "2026-10-17T09:53:37.316Z",
+  "sourceSha256": "b2bf92aba294bbb0807b1abd4943e5b47dd93b262e4dd99a306e04b6f00049da",
+  "pages": [
+    {
+      "page": "/services/paint-protection-film",
+      "viewports": [
+        1440,
+        390,
+        320
+      ],
+      "whatsappActivations": 5,
+      "keyboard": true,
+      "lightTheme": true,
+      "phone": true
+    },
+    {
+      "page": "/services/ceramic-coating",
+      "viewports": [
+        1440,
+        390,
+        320
+      ],
+      "whatsappActivations": 8,
+      "keyboard": true,
+      "lightTheme": true,
+      "phone": true
+    },
+    {
+      "page": "/services/car-polishing-dubai",
+      "viewports": [
+        1440,
+        390,
+        320
+      ],
+      "whatsappActivations": 5,
+      "keyboard": true,
+      "lightTheme": true,
+      "phone": true
+    }
+  ],
+  "journeys": [
+    "A: PPF/comparison/quote",
+    "B: ceramic/correction/assessment",
+    "C: scratch/photo",
+    "D: BMW/coating/enquiry",
+    "E: article/PPF/enquiry",
+    "Homepage and Services to polishing"
+  ],
+  "invalidFormsBlocked": true,
+  "noJavaScriptFormsDisabled": true,
+  "noEnteredDataInAnalytics": true,
+  "noDuplicateWhatsAppEvents": true,
+  "runtimeErrors": [],
+  "externalBlocked": 38
+}

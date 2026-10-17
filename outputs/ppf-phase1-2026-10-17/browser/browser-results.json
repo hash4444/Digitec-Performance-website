@@ -1,0 +1,44 @@
+{
+  "passed": true,
+  "base": "http://127.0.0.1:53917",
+  "prerenderedWithoutJavaScript": true,
+  "viewportWidths": [
+    1440,
+    390,
+    320
+  ],
+  "whatsappCtas": 5,
+  "quotationForms": [
+    {
+      "route": "/services/paint-protection-film",
+      "emptyBlocked": true,
+      "invalidVehicleAndContactBlocked": true,
+      "allContactMethods": true,
+      "unsureCoverage": true,
+      "duplicateHandoffSuppressed": true,
+      "personalDataExcluded": true,
+      "noConfirmedLeadEvent": true
+    },
+    {
+      "route": "/ar/services/paint-protection-film",
+      "emptyBlocked": true,
+      "invalidVehicleAndContactBlocked": true,
+      "allContactMethods": true,
+      "unsureCoverage": true,
+      "duplicateHandoffSuppressed": true,
+      "personalDataExcluded": true,
+      "noConfirmedLeadEvent": true
+    }
+  ],
+  "validReplyMethods": [
+    "Phone",
+    "WhatsApp",
+    "Email"
+  ],
+  "languageSwitchRoundTrip": true,
+  "ppfSpaPageLocationVerified": true,
+  "ppfPageViewDeduplication": true,
+  "externalRequestsBlocked": 28,
+  "gaIngestionVerified": false,
+  "errors": []
+}

@@ -1,0 +1,399 @@
+{
+  "passed": true,
+  "checks": 76,
+  "tests": [
+    {
+      "name": "Minimal synthetic received record; unknown landing is null",
+      "expected": "valid",
+      "passed": true
+    },
+    {
+      "name": "Optional draft reference",
+      "expected": "valid",
+      "passed": true
+    },
+    {
+      "name": "Malformed draft reference",
+      "expected": "invalid",
+      "passed": true
+    },
+    {
+      "name": "Received record requires receipt evidence",
+      "expected": "invalid",
+      "passed": true
+    },
+    {
+      "name": "Received record requires a stable CRM ID",
+      "expected": "invalid",
+      "passed": true
+    },
+    {
+      "name": "Non-UUID CRM ID rejected",
+      "expected": "invalid",
+      "passed": true
+    },
+    {
+      "name": "Invalid receipt timestamp rejected",
+      "expected": "invalid",
+      "passed": true
+    },
+    {
+      "name": "Unspecified personal-data field rejected",
+      "expected": "invalid",
+      "passed": true
+    },
+    {
+      "name": "Approved landing path: /",
+      "expected": "valid",
+      "passed": true
+    },
+    {
+      "name": "Approved landing path: /ar",
+      "expected": "valid",
+      "passed": true
+    },
+    {
+      "name": "Approved landing path: /services",
+      "expected": "valid",
+      "passed": true
+    },
+    {
+      "name": "Approved landing path: /ar/services",
+      "expected": "valid",
+      "passed": true
+    },
+    {
+      "name": "Approved landing path: /services/paint-protection-film",
+      "expected": "valid",
+      "passed": true
+    },
+    {
+      "name": "Approved landing path: /ar/services/paint-protection-film",
+      "expected": "valid",
+      "passed": true
+    },
+    {
+      "name": "Approved landing path: /services/paint-protection-dubai",
+      "expected": "valid",
+      "passed": true
+    },
+    {
+      "name": "Approved landing path: /ar/services/paint-protection-dubai",
+      "expected": "valid",
+      "passed": true
+    },
+    {
+      "name": "Approved landing path: /services/ceramic-coating",
+      "expected": "valid",
+      "passed": true
+    },
+    {
+      "name": "Approved landing path: /ar/services/ceramic-coating",
+      "expected": "valid",
+      "passed": true
+    },
+    {
+      "name": "Approved landing path: /blog/ceramic-coating-vs-ppf-dubai",
+      "expected": "valid",
+      "passed": true
+    },
+    {
+      "name": "Approved landing path: /ar/blog/ceramic-coating-vs-ppf-dubai",
+      "expected": "valid",
+      "passed": true
+    },
+    {
+      "name": "Approved landing path: /services/car-polishing-dubai",
+      "expected": "valid",
+      "passed": true
+    },
+    {
+      "name": "Arbitrary/query/fragment landing rejected: unknown",
+      "expected": "invalid",
+      "passed": true
+    },
+    {
+      "name": "Arbitrary/query/fragment landing rejected: /PRIVATE_NAME",
+      "expected": "invalid",
+      "passed": true
+    },
+    {
+      "name": "Arbitrary/query/fragment landing rejected: /services/paint-protection-film?email=synthetic@example.test",
+      "expected": "invalid",
+      "passed": true
+    },
+    {
+      "name": "Arbitrary/query/fragment landing rejected: /services/paint-protection-film#PRIVATE_NOTE",
+      "expected": "invalid",
+      "passed": true
+    },
+    {
+      "name": "Arbitrary/query/fragment landing rejected: https://digitecme.com/services/paint-protection-film",
+      "expected": "invalid",
+      "passed": true
+    },
+    {
+      "name": "Arbitrary/query/fragment landing rejected: https://evil.example/?phone=PRIVATE_PHONE",
+      "expected": "invalid",
+      "passed": true
+    },
+    {
+      "name": "Search taxonomy: cpc/ppf_general",
+      "expected": "valid",
+      "passed": true
+    },
+    {
+      "name": "Search taxonomy: cpc/ppf_full_body",
+      "expected": "valid",
+      "passed": true
+    },
+    {
+      "name": "Search taxonomy: cpc/ppf_quote",
+      "expected": "valid",
+      "passed": true
+    },
+    {
+      "name": "Search taxonomy: cpc/unknown",
+      "expected": "valid",
+      "passed": true
+    },
+    {
+      "name": "Search taxonomy: ppc/ppf_general",
+      "expected": "valid",
+      "passed": true
+    },
+    {
+      "name": "Search taxonomy: ppc/ppf_full_body",
+      "expected": "valid",
+      "passed": true
+    },
+    {
+      "name": "Search taxonomy: ppc/ppf_quote",
+      "expected": "valid",
+      "passed": true
+    },
+    {
+      "name": "Search taxonomy: ppc/unknown",
+      "expected": "valid",
+      "passed": true
+    },
+    {
+      "name": "Search taxonomy: paid_search/ppf_general",
+      "expected": "valid",
+      "passed": true
+    },
+    {
+      "name": "Search taxonomy: paid_search/ppf_full_body",
+      "expected": "valid",
+      "passed": true
+    },
+    {
+      "name": "Search taxonomy: paid_search/ppf_quote",
+      "expected": "valid",
+      "passed": true
+    },
+    {
+      "name": "Search taxonomy: paid_search/unknown",
+      "expected": "valid",
+      "passed": true
+    },
+    {
+      "name": "Meta taxonomy: facebook/ppf_meta_prospecting/ppf_prospecting",
+      "expected": "valid",
+      "passed": true
+    },
+    {
+      "name": "Meta taxonomy: facebook/ppf_meta_prospecting/unknown",
+      "expected": "valid",
+      "passed": true
+    },
+    {
+      "name": "Meta taxonomy: facebook/ppf_meta_retargeting/ppf_retargeting",
+      "expected": "valid",
+      "passed": true
+    },
+    {
+      "name": "Meta taxonomy: facebook/ppf_meta_retargeting/unknown",
+      "expected": "valid",
+      "passed": true
+    },
+    {
+      "name": "Meta taxonomy: instagram/ppf_meta_prospecting/ppf_prospecting",
+      "expected": "valid",
+      "passed": true
+    },
+    {
+      "name": "Meta taxonomy: instagram/ppf_meta_prospecting/unknown",
+      "expected": "valid",
+      "passed": true
+    },
+    {
+      "name": "Meta taxonomy: instagram/ppf_meta_retargeting/ppf_retargeting",
+      "expected": "valid",
+      "passed": true
+    },
+    {
+      "name": "Meta taxonomy: instagram/ppf_meta_retargeting/unknown",
+      "expected": "valid",
+      "passed": true
+    },
+    {
+      "name": "Mismatched or edited taxonomy: {\"source\":\"instagram\",\"medium\":\"cpc\",\"campaign\":\"ppf_search\",\"ad_group\":\"ppf_quote\"}",
+      "expected": "invalid",
+      "passed": true
+    },
+    {
+      "name": "Mismatched or edited taxonomy: {\"source\":\"google\",\"medium\":\"organic\",\"campaign\":\"ppf_search\",\"ad_group\":\"ppf_quote\"}",
+      "expected": "invalid",
+      "passed": true
+    },
+    {
+      "name": "Mismatched or edited taxonomy: {\"source\":\"google\",\"medium\":\"cpc\",\"campaign\":\"ppf_search\",\"ad_group\":\"ppf_prospecting\"}",
+      "expected": "invalid",
+      "passed": true
+    },
+    {
+      "name": "Mismatched or edited taxonomy: {\"source\":\"google\",\"medium\":\"paid_social\",\"campaign\":\"ppf_meta_prospecting\",\"ad_group\":\"ppf_prospecting\"}",
+      "expected": "invalid",
+      "passed": true
+    },
+    {
+      "name": "Mismatched or edited taxonomy: {\"source\":\"facebook\",\"medium\":\"cpc\",\"campaign\":\"ppf_meta_prospecting\",\"ad_group\":\"ppf_prospecting\"}",
+      "expected": "invalid",
+      "passed": true
+    },
+    {
+      "name": "Mismatched or edited taxonomy: {\"source\":\"facebook\",\"medium\":\"paid_social\",\"campaign\":\"ppf_meta_prospecting\",\"ad_group\":\"ppf_retargeting\"}",
+      "expected": "invalid",
+      "passed": true
+    },
+    {
+      "name": "Mismatched or edited taxonomy: {\"source\":\"instagram\",\"medium\":\"paid_social\",\"campaign\":\"ppf_meta_retargeting\",\"ad_group\":\"ppf_prospecting\"}",
+      "expected": "invalid",
+      "passed": true
+    },
+    {
+      "name": "Mismatched or edited taxonomy: {\"source\":\"instagram\",\"medium\":\"paid_social\",\"campaign\":\"ppf_meta_retargeting\",\"ad_group\":\"ppf_quote\"}",
+      "expected": "invalid",
+      "passed": true
+    },
+    {
+      "name": "Mismatched or edited taxonomy: {\"source\":\"google\",\"medium\":\"cpc\",\"campaign\":\"unknown\",\"ad_group\":\"ppf_quote\"}",
+      "expected": "invalid",
+      "passed": true
+    },
+    {
+      "name": "Mismatched or edited taxonomy: {\"source\":\"google\",\"medium\":\"cpc\",\"campaign\":\"PRIVATE_CAMPAIGN\",\"ad_group\":\"PRIVATE_GROUP\"}",
+      "expected": "invalid",
+      "passed": true
+    },
+    {
+      "name": "Frontend context maps into received contract: ?utm_source=google&utm_medium=cpc&utm_campaign=ppf_search&utm_content=ppf_quote",
+      "expected": "valid",
+      "passed": true
+    },
+    {
+      "name": "Frontend context maps into received contract: ?utm_source=instagram&utm_medium=paid_social&utm_campaign=ppf_meta_prospecting&utm_content=ppf_prospecting",
+      "expected": "valid",
+      "passed": true
+    },
+    {
+      "name": "Frontend context maps into received contract: ?utm_source=facebook&utm_medium=paid_social&utm_campaign=ppf_meta_retargeting&utm_content=ppf_retargeting",
+      "expected": "valid",
+      "passed": true
+    },
+    {
+      "name": "Frontend context maps into received contract: ?utm_source=PRIVATE_NAME&utm_campaign=PRIVATE_CAMPAIGN&gclid=PRIVATE_CLICK",
+      "expected": "valid",
+      "passed": true
+    },
+    {
+      "name": "Frontend context maps into received contract: ",
+      "expected": "valid",
+      "passed": true
+    },
+    {
+      "name": "Unknown frontend landing explicitly maps to intake null",
+      "expected": "valid",
+      "passed": true
+    },
+    {
+      "name": "Confirmed booking requires ID/time",
+      "expected": "invalid",
+      "passed": true
+    },
+    {
+      "name": "Confirmed booking rejects null ID",
+      "expected": "invalid",
+      "passed": true
+    },
+    {
+      "name": "Confirmed booking with fixture source record",
+      "expected": "valid",
+      "passed": true
+    },
+    {
+      "name": "Sent quote requires quote ID/value",
+      "expected": "invalid",
+      "passed": true
+    },
+    {
+      "name": "Sent quote permits actual zero amount",
+      "expected": "valid",
+      "passed": true
+    },
+    {
+      "name": "Sent quote accepts ordinary two-decimal AED amount",
+      "expected": "valid",
+      "passed": true
+    },
+    {
+      "name": "Issued invoice requires ID/value",
+      "expected": "invalid",
+      "passed": true
+    },
+    {
+      "name": "Paid invoice requires actual record/value",
+      "expected": "valid",
+      "passed": true
+    },
+    {
+      "name": "Negative invoice value rejected",
+      "expected": "invalid",
+      "passed": true
+    },
+    {
+      "name": "Three-decimal amount rejected",
+      "expected": "invalid",
+      "passed": true
+    },
+    {
+      "name": "Vehicle year lower bound enforced",
+      "expected": "invalid",
+      "passed": true
+    },
+    {
+      "name": "Design-schema limit: future upper year requires intake runtime validation",
+      "expected": "valid",
+      "passed": true
+    },
+    {
+      "name": "Empty register/schema field consistency",
+      "expected": "matching field sets",
+      "passed": true
+    }
+  ],
+  "validator": "ajv@8.20.0 draft-2020-12 + ajv-formats@3.0.1_ajv@8.20.0",
+  "validationOptions": {
+    "strict": true,
+    "formats": true,
+    "multipleOfPrecision": 8
+  },
+  "scope": "Local synthetic design-contract validation only; no approved CRM integration, receipt authentication, booking verification, datastore or analytics import exists.",
+  "limitations": [
+    "JSON Schema cannot authenticate receipt evidence or paid-click provenance; future adapter must verify protected source-system records.",
+    "Vehicle year upper bound must be current year + 1 in the future intake adapter; this static schema only enforces the lower bound.",
+    "Frontend unknown landing label must explicitly map to null at intake; schema rejects unknown as a path.",
+    "A future JS-number adapter must deliberately preserve currency precision; these tests configure Ajv multipleOfPrecision=8."
+  ]
+}

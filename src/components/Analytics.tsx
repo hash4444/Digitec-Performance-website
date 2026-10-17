@@ -43,6 +43,19 @@ const Analytics = () => {
   const { pathname, search } = useLocation();
   const initialPageView = useRef(true);
   const attribution = useRef<ContactAttribution>({});
+  const lastServicePath = useRef('');
+
+  useEffect(() => {
+    if (lastServicePath.current === pathname) return;
+    lastServicePath.current = pathname;
+    if (pathname === '/services/paint-protection-film' || pathname === '/ar/services/paint-protection-film') {
+      window.gtag?.('event', 'ppf_page_view', {
+        page_path: pathname, service: 'ppf', language: pathname.startsWith('/ar/') ? 'ar' : 'en',
+        page_location: analyticsPageUrl(window.location.href, window.location.origin),
+        page_referrer: analyticsReferrer(document.referrer),
+      });
+    }
+  }, [pathname]);
 
   useEffect(() => {
     attribution.current = readAttribution();

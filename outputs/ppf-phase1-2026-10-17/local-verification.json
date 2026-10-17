@@ -1,0 +1,116 @@
+{
+  "verifiedAt": "2026-10-17T09:12:19.665Z",
+  "scope": "Local final dist, fresh dist-server rendering and generated production worker only; no live traffic or external analytics.",
+  "routeCount": 13,
+  "publicRouteCount": 1256,
+  "sitemapUrlCount": 1005,
+  "checks": 1248,
+  "passed": 1248,
+  "failed": 0,
+  "internalLinkInstances": 767,
+  "distinctLocalDestinations": 151,
+  "localImageInstances": 290,
+  "workerResults": [
+    {
+      "path": "/services/paint-protection-film",
+      "status": 200,
+      "xRobotsTag": null
+    },
+    {
+      "path": "/ar/services/paint-protection-film",
+      "status": 200,
+      "xRobotsTag": null
+    },
+    {
+      "path": "/services/paint-protection-dubai",
+      "status": 200,
+      "xRobotsTag": null
+    },
+    {
+      "path": "/ar/services/paint-protection-dubai",
+      "status": 200,
+      "xRobotsTag": null
+    },
+    {
+      "path": "/blog/ceramic-coating-vs-ppf-dubai",
+      "status": 200,
+      "xRobotsTag": null
+    },
+    {
+      "path": "/ar/blog/ceramic-coating-vs-ppf-dubai",
+      "status": 200,
+      "xRobotsTag": null
+    },
+    {
+      "path": "/services/ceramic-coating",
+      "status": 200,
+      "xRobotsTag": null
+    },
+    {
+      "path": "/ar/services/ceramic-coating",
+      "status": 200,
+      "xRobotsTag": null
+    },
+    {
+      "path": "/services/car-polishing-dubai",
+      "status": 200,
+      "xRobotsTag": null
+    },
+    {
+      "path": "/",
+      "status": 200,
+      "xRobotsTag": null
+    },
+    {
+      "path": "/ar",
+      "status": 200,
+      "xRobotsTag": null
+    },
+    {
+      "path": "/services",
+      "status": 200,
+      "xRobotsTag": null
+    },
+    {
+      "path": "/ar/services",
+      "status": 200,
+      "xRobotsTag": null
+    },
+    {
+      "path": "/ppf",
+      "status": 308,
+      "location": "https://digitecme.com/services/paint-protection-film?utm_source=local-qa"
+    },
+    {
+      "path": "/services/ppf",
+      "status": 308,
+      "location": "https://digitecme.com/services/paint-protection-film?utm_source=local-qa"
+    },
+    {
+      "path": "/ar/ppf",
+      "status": 308,
+      "location": "https://digitecme.com/ar/services/paint-protection-film?utm_source=local-qa"
+    },
+    {
+      "path": "/ar/services/ppf",
+      "status": 308,
+      "location": "https://digitecme.com/ar/services/paint-protection-film?utm_source=local-qa"
+    }
+  ],
+  "httpChecks": [],
+  "failures": [],
+  "advisories": [
+    {
+      "route": "/services",
+      "detail": "Existing services-directory template has no main landmark; substantive crawlable body content and one H1 are present. No source change made."
+    },
+    {
+      "route": "/ar/services",
+      "detail": "Existing services-directory template has no main landmark; substantive crawlable body content and one H1 are present. No source change made."
+    }
+  ],
+  "limitations": [
+    "Pattern checks cannot prove every business statement; claims were also audited manually.",
+    "No production indexing, Google selected canonical, real-user Core Web Vitals, WhatsApp delivery, CRM lead or booking confirmation is established."
+  ]
+}

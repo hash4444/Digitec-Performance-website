@@ -22,6 +22,7 @@ import { useLocale } from '@/i18n/use-locale';
 import { refineArabicProtectionService } from '@/i18n/ar-protection-services';
 import { localizeServiceToArabic } from '@/i18n/ar-services';
 import { refineGenericArabicService } from '@/i18n/ar-generic-services';
+import PpfQuoteForm from '@/components/PpfQuoteForm';
 
 // Map every legacy slug directly to its new slug (single-hop redirects, no chains).
 // Also handles previously-indexed Google URLs.
@@ -546,6 +547,8 @@ const ServicePage: React.FC<ServicePageProps> = ({ slugOverride, canonicalPath, 
                     <img
                       src={s.image}
                       alt={s.title}
+                      width={service.slug === 'paint-protection-film' ? 400 : undefined}
+                      height={service.slug === 'paint-protection-film' ? 300 : undefined}
                       loading="lazy"
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                       onError={(e) => {
@@ -588,7 +591,7 @@ const ServicePage: React.FC<ServicePageProps> = ({ slugOverride, canonicalPath, 
                 className="group flex flex-col items-center gap-2 p-3 bg-white/5 hover:bg-white/10 border border-white/5 hover:border-burnt-orange/40 rounded-2xl transition-all duration-300"
               >
                 <div className="w-12 h-12 sm:w-14 sm:h-14 p-1.5 bg-white/90 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                  <img src={b.logo} alt={`${b.name} service Dubai`} loading="lazy" className="w-full h-full object-contain" />
+                  <img src={b.logo} alt={`${b.name} service Dubai`} width={service.slug === 'paint-protection-film' ? 56 : undefined} height={service.slug === 'paint-protection-film' ? 56 : undefined} loading="lazy" className="w-full h-full object-contain" />
                 </div>
                 <span className="text-[11px] sm:text-xs text-gray-300 group-hover:text-burnt-orange text-center font-medium leading-tight">
                   {isArabic ? `خدمة ${b.name}` : `${b.name} Service`}
@@ -599,6 +602,13 @@ const ServicePage: React.FC<ServicePageProps> = ({ slugOverride, canonicalPath, 
         </div>
       </section>
 
+      {isArabic && !brandPath && service.slug === 'paint-protection-film' && (
+        <section id="ppf-quote" className="mx-auto max-w-5xl px-5 py-16 sm:px-8" aria-labelledby="ppf-quote-heading">
+          <h2 id="ppf-quote-heading" className="mb-5 text-2xl font-bold sm:text-3xl">اطلب عرض سعر لأفلام حماية الطلاء</h2>
+          <p className="mb-8 leading-8 text-gray-300">شارك بيانات السيارة والتغطية المطلوبة ووسيلة التواصل المفضلة. اختر «غير متأكد» للمساعدة في تحديد التغطية. راجع الطلب وأرسله في واتساب؛ تُؤكّد التغطية والتحضير والمنتج في عرض السعر.</p>
+          <PpfQuoteForm />
+        </section>
+      )}
       <FinalCTA title={service.ctaLabel ? service.title : undefined} label={enquiryLabel} href={enquiryHref} />
       </main>
       <Footer />

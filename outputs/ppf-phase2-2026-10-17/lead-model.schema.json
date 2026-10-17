@@ -1,0 +1,416 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "DIGI-TEC received PPF lead — proposed restricted CRM contract",
+  "description": "Design artifact only. A draft/click cannot produce this received-lead record. No production datastore is created.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "lead_id",
+    "received_at",
+    "receipt_evidence_id",
+    "source",
+    "medium",
+    "campaign",
+    "ad_group",
+    "landing_page",
+    "attribution_basis",
+    "vehicle_make",
+    "vehicle_model",
+    "vehicle_year",
+    "coverage_requested",
+    "qualification_status",
+    "quotation_status",
+    "quotation_value_aed",
+    "booking_status",
+    "invoice_status",
+    "final_invoiced_value_aed"
+  ],
+  "properties": {
+    "lead_id": {
+      "type": "string",
+      "format": "uuid"
+    },
+    "enquiry_reference": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^PPF-[0-9A-F]{24}$"
+    },
+    "received_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "receipt_evidence_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 160,
+      "description": "Restricted system evidence pointer, never public URL or analytics payload."
+    },
+    "source": {
+      "type": "string",
+      "enum": [
+        "google",
+        "bing",
+        "chatgpt",
+        "openai",
+        "perplexity",
+        "gemini",
+        "claude",
+        "copilot",
+        "duckduckgo",
+        "instagram",
+        "facebook",
+        "youtube",
+        "newsletter",
+        "whatsapp",
+        "other",
+        "unknown"
+      ]
+    },
+    "medium": {
+      "type": "string",
+      "enum": [
+        "organic",
+        "cpc",
+        "ppc",
+        "paid_search",
+        "paid_social",
+        "social",
+        "email",
+        "referral",
+        "display",
+        "direct",
+        "organic_social",
+        "other",
+        "unknown"
+      ]
+    },
+    "campaign": {
+      "type": "string",
+      "enum": [
+        "ppf_search",
+        "ppf_meta_prospecting",
+        "ppf_meta_retargeting",
+        "unknown"
+      ]
+    },
+    "ad_group": {
+      "type": "string",
+      "enum": [
+        "ppf_general",
+        "ppf_full_body",
+        "ppf_quote",
+        "ppf_prospecting",
+        "ppf_retargeting",
+        "unknown"
+      ]
+    },
+    "landing_page": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "enum": [
+        "/",
+        "/ar",
+        "/services",
+        "/ar/services",
+        "/services/paint-protection-film",
+        "/ar/services/paint-protection-film",
+        "/services/paint-protection-dubai",
+        "/ar/services/paint-protection-dubai",
+        "/services/ceramic-coating",
+        "/ar/services/ceramic-coating",
+        "/blog/ceramic-coating-vs-ppf-dubai",
+        "/ar/blog/ceramic-coating-vs-ppf-dubai",
+        "/services/car-polishing-dubai",
+        null
+      ],
+      "description": "Approved public route only. At intake convert the frontend label unknown to null; reject arbitrary URLs, queries, fragments and customer information."
+    },
+    "attribution_basis": {
+      "type": "string",
+      "enum": [
+        "reported_campaign",
+        "customer_reported",
+        "verified_click",
+        "unknown"
+      ]
+    },
+    "vehicle_make": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 60
+    },
+    "vehicle_model": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 80
+    },
+    "vehicle_year": {
+      "type": "integer",
+      "minimum": 1900,
+      "description": "Intake validates current year+1 dynamically."
+    },
+    "coverage_requested": {
+      "type": "string",
+      "enum": [
+        "Full Body",
+        "Full Front",
+        "Partial / High Impact Areas",
+        "Unsure — advise me"
+      ]
+    },
+    "qualification_status": {
+      "type": "string",
+      "enum": [
+        "pending",
+        "qualified",
+        "unqualified"
+      ]
+    },
+    "quotation_status": {
+      "type": "string",
+      "enum": [
+        "not_prepared",
+        "preparing",
+        "sent",
+        "accepted",
+        "declined",
+        "expired"
+      ]
+    },
+    "quotation_value_aed": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0,
+      "multipleOf": 0.01
+    },
+    "quote_id": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 160
+    },
+    "booking_status": {
+      "type": "string",
+      "enum": [
+        "not_booked",
+        "requested",
+        "confirmed",
+        "cancelled",
+        "completed"
+      ]
+    },
+    "booking_id": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 160
+    },
+    "booking_confirmed_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    },
+    "invoice_status": {
+      "type": "string",
+      "enum": [
+        "not_issued",
+        "issued",
+        "part_paid",
+        "paid",
+        "void"
+      ]
+    },
+    "invoice_id": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 160
+    },
+    "final_invoiced_value_aed": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0,
+      "multipleOf": 0.01
+    },
+    "contact_record_id": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 160
+    },
+    "owner_id": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 160
+    },
+    "notice_version": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 160
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": { "campaign": { "const": "ppf_search" } },
+        "required": ["campaign"]
+      },
+      "then": {
+        "properties": {
+          "source": { "const": "google" },
+          "medium": { "enum": ["cpc", "ppc", "paid_search"] },
+          "ad_group": { "enum": ["ppf_general", "ppf_full_body", "ppf_quote", "unknown"] }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": { "campaign": { "const": "ppf_meta_prospecting" } },
+        "required": ["campaign"]
+      },
+      "then": {
+        "properties": {
+          "source": { "enum": ["facebook", "instagram"] },
+          "medium": { "const": "paid_social" },
+          "ad_group": { "enum": ["ppf_prospecting", "unknown"] }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": { "campaign": { "const": "ppf_meta_retargeting" } },
+        "required": ["campaign"]
+      },
+      "then": {
+        "properties": {
+          "source": { "enum": ["facebook", "instagram"] },
+          "medium": { "const": "paid_social" },
+          "ad_group": { "enum": ["ppf_retargeting", "unknown"] }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": { "campaign": { "const": "unknown" } },
+        "required": ["campaign"]
+      },
+      "then": {
+        "properties": { "ad_group": { "const": "unknown" } }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "booking_status": {
+            "enum": [
+              "confirmed",
+              "completed"
+            ]
+          }
+        },
+        "required": [
+          "booking_status"
+        ]
+      },
+      "then": {
+        "required": [
+          "booking_id",
+          "booking_confirmed_at"
+        ],
+        "properties": {
+          "booking_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "booking_confirmed_at": {
+            "type": "string",
+            "format": "date-time"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "invoice_status": {
+            "enum": [
+              "issued",
+              "part_paid",
+              "paid"
+            ]
+          }
+        },
+        "required": [
+          "invoice_status"
+        ]
+      },
+      "then": {
+        "required": [
+          "invoice_id"
+        ],
+        "properties": {
+          "invoice_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "final_invoiced_value_aed": {
+            "type": "number",
+            "minimum": 0,
+            "multipleOf": 0.01
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "quotation_status": {
+            "enum": [
+              "sent",
+              "accepted",
+              "declined",
+              "expired"
+            ]
+          }
+        },
+        "required": [
+          "quotation_status"
+        ]
+      },
+      "then": {
+        "required": [
+          "quote_id"
+        ],
+        "properties": {
+          "quote_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "quotation_value_aed": {
+            "type": "number",
+            "minimum": 0,
+            "multipleOf": 0.01
+          }
+        }
+      }
+    }
+  ]
+}

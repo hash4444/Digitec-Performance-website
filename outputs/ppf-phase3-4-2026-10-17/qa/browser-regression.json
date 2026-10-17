@@ -1,0 +1,20 @@
+{
+  "checkedAt": "2026-10-17T09:53:37.685Z",
+  "sourceSha256": "b2bf92aba294bbb0807b1abd4943e5b47dd93b262e4dd99a306e04b6f00049da",
+  "passed": true,
+  "results": [
+    {
+      "name": "ppf-browser",
+      "exitCode": 0,
+      "elapsedSeconds": 25.328,
+      "error": null
+    },
+    {
+      "name": "paint-care-journeys",
+      "exitCode": 0,
+      "elapsedSeconds": 31.153,
+      "error": null
+    }
+  ],
+  "scope": "Local production HTML; external analytics, enquiry and other network requests blocked by test harnesses."
+}

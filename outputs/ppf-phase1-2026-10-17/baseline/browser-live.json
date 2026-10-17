@@ -1,0 +1,1534 @@
+{
+  "checkedAt": "2026-10-17T09:03:00.897Z",
+  "method": "Read-only production browser pages. Only GET/HEAD on digitecme.com permitted. Third-party and mutation requests blocked. No form submits, CTA clicks or test leads.",
+  "metricsLimitation": "Single uncontrolled-network headless lab samples; no CPU/network mobile emulation; not CrUX field data or a Core Web Vitals pass claim.",
+  "results": [
+    {
+      "route": "/services/paint-protection-film",
+      "width": 390,
+      "status": 200,
+      "title": "PPF Dubai | Paint Protection Film Installation | DIGI-TEC",
+      "lang": "en",
+      "dir": "ltr",
+      "h1": [
+        "Paint Protection Film (PPF) Dubai"
+      ],
+      "canonical": "https://digitecme.com/services/paint-protection-film",
+      "overflow": false,
+      "documentWidth": 390,
+      "viewportWidth": 390,
+      "forms": [
+        {
+          "id": "ppf-quote-form",
+          "fields": [
+            {
+              "name": "vehicle_brand",
+              "type": "text",
+              "required": true,
+              "disabled": false
+            },
+            {
+              "name": "vehicle_model",
+              "type": "text",
+              "required": true,
+              "disabled": false
+            },
+            {
+              "name": "vehicle_year",
+              "type": "number",
+              "required": true,
+              "disabled": false
+            },
+            {
+              "name": "",
+              "type": "select-one",
+              "required": false,
+              "disabled": false
+            }
+          ],
+          "submit": [
+            {
+              "text": "Continue to WhatsApp",
+              "disabled": false
+            }
+          ]
+        }
+      ],
+      "tel": [
+        {
+          "href": "tel:+97143402223",
+          "text": "Call the workshop"
+        },
+        {
+          "href": "tel:+97143402223",
+          "text": "+971 4 340 2223"
+        },
+        {
+          "href": "tel:+97143402223",
+          "text": "+971 4 340 2223"
+        },
+        {
+          "href": "tel:+97143402223",
+          "text": "Call"
+        }
+      ],
+      "whatsapp": [
+        {
+          "href": "https://wa.me/97143402223?text=Hi%20DIGI-TEC%2C%20I%20would%20like%20to%20get%20in%20touch%20about%20my%20vehicle.",
+          "text": "Contact Us"
+        },
+        {
+          "href": "https://wa.me/97143402223?text=Hi%20DIGI-TEC%2C%20I%20would%20like%20to%20get%20in%20touch%20about%20my%20vehicle.",
+          "text": "Contact Us"
+        },
+        {
+          "href": "https://wa.me/97143402223?text=Hi%20DIGI-TEC%2C%20I%20would%20like%20a%20PPF%20quote%20for%20my%20car.%20Please%20help%20me%20choose%20the%20coverage.",
+          "text": "Get Your PPF Quote"
+        },
+        {
+          "href": "https://wa.me/97143402223?text=Hi%20DIGI-TEC%2C%20I%20would%20like%20a%20PPF%20quote%20for%20my%20car.%20Please%20help%20me%20choose%20the%20coverage.",
+          "text": "Ask About Full Body PPF"
+        },
+        {
+          "href": "https://wa.me/97143402223?text=Hi%20DIGI-TEC%2C%20I%20would%20like%20a%20PPF%20quote%20for%20my%20car.%20Please%20help%20me%20choose%20the%20coverage.",
+          "text": "Get an Exact PPF Quote for Your Car"
+        },
+        {
+          "href": "https://wa.me/97143402223?text=Hi%20DIGI-TEC%2C%20I%20would%20like%20a%20PPF%20quote%20for%20my%20car.%20Please%20help%20me%20choose%20the%20coverage.",
+          "text": "WhatsApp DIGI-TEC"
+        },
+        {
+          "href": "https://wa.me/97143402223?text=Hi%20DIGI-TEC%2C%20I%20would%20like%20a%20PPF%20quote%20for%20my%20car.%20Please%20help%20me%20choose%20the%20coverage.",
+          "text": "WhatsApp quote"
+        }
+      ],
+      "images": [
+        {
+          "src": "https://digitecme.com/images/digitec-d-mark.png",
+          "loaded": true,
+          "width": 1536,
+          "height": 1024
+        },
+        {
+          "src": "https://digitecme.com/images/ppf/film-application-640.webp",
+          "loaded": true,
+          "width": 390,
+          "height": 390
+        },
+        {
+          "src": "",
+          "loaded": false,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "",
+          "loaded": false,
+          "width": 0,
+          "height": 0
+        }
+      ],
+      "labMetrics": {
+        "lcpMs": 1076,
+        "cls": 0,
+        "navigation": {
+          "ttfb": 288.7000000178814,
+          "domContentLoaded": 1159.7999999821186,
+          "load": 1274.5
+        }
+      },
+      "screenshot": "screenshots/en-390.png"
+    },
+    {
+      "route": "/services/paint-protection-film",
+      "width": 320,
+      "status": 200,
+      "title": "PPF Dubai | Paint Protection Film Installation | DIGI-TEC",
+      "lang": "en",
+      "dir": "ltr",
+      "h1": [
+        "Paint Protection Film (PPF) Dubai"
+      ],
+      "canonical": "https://digitecme.com/services/paint-protection-film",
+      "overflow": false,
+      "documentWidth": 320,
+      "viewportWidth": 320,
+      "forms": [
+        {
+          "id": "ppf-quote-form",
+          "fields": [
+            {
+              "name": "vehicle_brand",
+              "type": "text",
+              "required": true,
+              "disabled": false
+            },
+            {
+              "name": "vehicle_model",
+              "type": "text",
+              "required": true,
+              "disabled": false
+            },
+            {
+              "name": "vehicle_year",
+              "type": "number",
+              "required": true,
+              "disabled": false
+            },
+            {
+              "name": "",
+              "type": "select-one",
+              "required": false,
+              "disabled": false
+            }
+          ],
+          "submit": [
+            {
+              "text": "Continue to WhatsApp",
+              "disabled": false
+            }
+          ]
+        }
+      ],
+      "tel": [
+        {
+          "href": "tel:+97143402223",
+          "text": "Call the workshop"
+        },
+        {
+          "href": "tel:+97143402223",
+          "text": "+971 4 340 2223"
+        },
+        {
+          "href": "tel:+97143402223",
+          "text": "+971 4 340 2223"
+        },
+        {
+          "href": "tel:+97143402223",
+          "text": "Call"
+        }
+      ],
+      "whatsapp": [
+        {
+          "href": "https://wa.me/97143402223?text=Hi%20DIGI-TEC%2C%20I%20would%20like%20to%20get%20in%20touch%20about%20my%20vehicle.",
+          "text": "Contact Us"
+        },
+        {
+          "href": "https://wa.me/97143402223?text=Hi%20DIGI-TEC%2C%20I%20would%20like%20to%20get%20in%20touch%20about%20my%20vehicle.",
+          "text": "Contact Us"
+        },
+        {
+          "href": "https://wa.me/97143402223?text=Hi%20DIGI-TEC%2C%20I%20would%20like%20a%20PPF%20quote%20for%20my%20car.%20Please%20help%20me%20choose%20the%20coverage.",
+          "text": "Get Your PPF Quote"
+        },
+        {
+          "href": "https://wa.me/97143402223?text=Hi%20DIGI-TEC%2C%20I%20would%20like%20a%20PPF%20quote%20for%20my%20car.%20Please%20help%20me%20choose%20the%20coverage.",
+          "text": "Ask About Full Body PPF"
+        },
+        {
+          "href": "https://wa.me/97143402223?text=Hi%20DIGI-TEC%2C%20I%20would%20like%20a%20PPF%20quote%20for%20my%20car.%20Please%20help%20me%20choose%20the%20coverage.",
+          "text": "Get an Exact PPF Quote for Your Car"
+        },
+        {
+          "href": "https://wa.me/97143402223?text=Hi%20DIGI-TEC%2C%20I%20would%20like%20a%20PPF%20quote%20for%20my%20car.%20Please%20help%20me%20choose%20the%20coverage.",
+          "text": "WhatsApp DIGI-TEC"
+        },
+        {
+          "href": "https://wa.me/97143402223?text=Hi%20DIGI-TEC%2C%20I%20would%20like%20a%20PPF%20quote%20for%20my%20car.%20Please%20help%20me%20choose%20the%20coverage.",
+          "text": "WhatsApp quote"
+        }
+      ],
+      "images": [
+        {
+          "src": "https://digitecme.com/images/digitec-d-mark.png",
+          "loaded": true,
+          "width": 1536,
+          "height": 1024
+        },
+        {
+          "src": "https://digitecme.com/images/ppf/film-application-640.webp",
+          "loaded": true,
+          "width": 320,
+          "height": 320
+        },
+        {
+          "src": "",
+          "loaded": false,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "",
+          "loaded": false,
+          "width": 0,
+          "height": 0
+        }
+      ],
+      "labMetrics": {
+        "lcpMs": 448,
+        "cls": 0,
+        "navigation": {
+          "ttfb": 182.40000000596046,
+          "domContentLoaded": 418.30000001192093,
+          "load": 441.60000002384186
+        }
+      },
+      "screenshot": "screenshots/en-320.png"
+    },
+    {
+      "route": "/services/paint-protection-film",
+      "width": 1440,
+      "status": 200,
+      "title": "PPF Dubai | Paint Protection Film Installation | DIGI-TEC",
+      "lang": "en",
+      "dir": "ltr",
+      "h1": [
+        "Paint Protection Film (PPF) Dubai"
+      ],
+      "canonical": "https://digitecme.com/services/paint-protection-film",
+      "overflow": false,
+      "documentWidth": 1440,
+      "viewportWidth": 1440,
+      "forms": [
+        {
+          "id": "ppf-quote-form",
+          "fields": [
+            {
+              "name": "vehicle_brand",
+              "type": "text",
+              "required": true,
+              "disabled": false
+            },
+            {
+              "name": "vehicle_model",
+              "type": "text",
+              "required": true,
+              "disabled": false
+            },
+            {
+              "name": "vehicle_year",
+              "type": "number",
+              "required": true,
+              "disabled": false
+            },
+            {
+              "name": "",
+              "type": "select-one",
+              "required": false,
+              "disabled": false
+            }
+          ],
+          "submit": [
+            {
+              "text": "Continue to WhatsApp",
+              "disabled": false
+            }
+          ]
+        }
+      ],
+      "tel": [
+        {
+          "href": "tel:+97143402223",
+          "text": "Call the workshop"
+        },
+        {
+          "href": "tel:+97143402223",
+          "text": "+971 4 340 2223"
+        },
+        {
+          "href": "tel:+97143402223",
+          "text": "+971 4 340 2223"
+        },
+        {
+          "href": "tel:+97143402223",
+          "text": "Call"
+        }
+      ],
+      "whatsapp": [
+        {
+          "href": "https://wa.me/97143402223?text=Hi%20DIGI-TEC%2C%20I%20would%20like%20to%20get%20in%20touch%20about%20my%20vehicle.",
+          "text": "Contact Us"
+        },
+        {
+          "href": "https://wa.me/97143402223?text=Hi%20DIGI-TEC%2C%20I%20would%20like%20to%20get%20in%20touch%20about%20my%20vehicle.",
+          "text": "Contact Us"
+        },
+        {
+          "href": "https://wa.me/97143402223?text=Hi%20DIGI-TEC%2C%20I%20would%20like%20a%20PPF%20quote%20for%20my%20car.%20Please%20help%20me%20choose%20the%20coverage.",
+          "text": "Get Your PPF Quote"
+        },
+        {
+          "href": "https://wa.me/97143402223?text=Hi%20DIGI-TEC%2C%20I%20would%20like%20a%20PPF%20quote%20for%20my%20car.%20Please%20help%20me%20choose%20the%20coverage.",
+          "text": "Ask About Full Body PPF"
+        },
+        {
+          "href": "https://wa.me/97143402223?text=Hi%20DIGI-TEC%2C%20I%20would%20like%20a%20PPF%20quote%20for%20my%20car.%20Please%20help%20me%20choose%20the%20coverage.",
+          "text": "Get an Exact PPF Quote for Your Car"
+        },
+        {
+          "href": "https://wa.me/97143402223?text=Hi%20DIGI-TEC%2C%20I%20would%20like%20a%20PPF%20quote%20for%20my%20car.%20Please%20help%20me%20choose%20the%20coverage.",
+          "text": "WhatsApp DIGI-TEC"
+        },
+        {
+          "href": "https://wa.me/97143402223?text=Hi%20DIGI-TEC%2C%20I%20would%20like%20a%20PPF%20quote%20for%20my%20car.%20Please%20help%20me%20choose%20the%20coverage.",
+          "text": "WhatsApp quote"
+        }
+      ],
+      "images": [
+        {
+          "src": "https://digitecme.com/images/digitec-d-mark.png",
+          "loaded": true,
+          "width": 1536,
+          "height": 1024
+        },
+        {
+          "src": "https://digitecme.com/images/ppf/film-application-1200.webp",
+          "loaded": true,
+          "width": 720,
+          "height": 720
+        },
+        {
+          "src": "",
+          "loaded": false,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "",
+          "loaded": false,
+          "width": 0,
+          "height": 0
+        }
+      ],
+      "labMetrics": {
+        "lcpMs": 464,
+        "cls": 0,
+        "navigation": {
+          "ttfb": 188,
+          "domContentLoaded": 432.7999999821186,
+          "load": 494.09999999403954
+        }
+      },
+      "screenshot": "screenshots/en-1440.png"
+    },
+    {
+      "route": "/ar/services/paint-protection-film",
+      "width": 390,
+      "status": 200,
+      "title": "أفلام حماية الطلاء PPF دبي | التغطية والتركيب | ديجي-تك",
+      "lang": "ar",
+      "dir": "rtl",
+      "h1": [
+        "تركيب أفلام حماية الطلاء PPF في دبي"
+      ],
+      "canonical": "https://digitecme.com/ar/services/paint-protection-film",
+      "overflow": false,
+      "documentWidth": 390,
+      "viewportWidth": 390,
+      "forms": [],
+      "tel": [
+        {
+          "href": "tel:+97143402223",
+          "text": "اتصل بالورشة"
+        },
+        {
+          "href": "tel:+97143402223",
+          "text": "اتصل الآن"
+        },
+        {
+          "href": "tel:+97143402223",
+          "text": " اتصل على +971 4 340 2223"
+        },
+        {
+          "href": "tel:+97143402223",
+          "text": "+971 4 340 2223"
+        }
+      ],
+      "whatsapp": [
+        {
+          "href": "https://wa.me/97143402223?text=Hi%20DIGI-TEC%2C%20I%20would%20like%20to%20get%20in%20touch%20about%20my%20vehicle.",
+          "text": "تواصل معنا"
+        },
+        {
+          "href": "https://wa.me/97143402223?text=Hi%20DIGI-TEC%2C%20I%20would%20like%20to%20get%20in%20touch%20about%20my%20vehicle.",
+          "text": "تواصل معنا"
+        },
+        {
+          "href": "https://wa.me/97143402223?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20%D8%AF%D9%8A%D8%AC%D9%8A-%D8%AA%D9%83%D8%8C%20%D8%A3%D9%88%D8%AF%20%D9%85%D9%86%D8%A7%D9%82%D8%B4%D8%A9%20%D8%AA%D8%B1%D9%83%D9%8A%D8%A8%20%D8%A3%D9%81%D9%84%D8%A7%D9%85%20%D8%AD%D9%85%D8%A7%D9%8A%D8%A9%20%D8%A7%D9%84%D8%B7%D9%84%D8%A7%D8%A1%20PPF%20%D9%81%D9%8A%20%D8%AF%D8%A8%D9%8A.",
+          "text": "اطلب عرض سعر لتركيب PPF"
+        },
+        {
+          "href": "https://wa.me/97143402223?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20%D8%AF%D9%8A%D8%AC%D9%8A-%D8%AA%D9%83%D8%8C%20%D8%A3%D9%88%D8%AF%20%D9%85%D9%86%D8%A7%D9%82%D8%B4%D8%A9%20%D8%AA%D8%B1%D9%83%D9%8A%D8%A8%20%D8%A3%D9%81%D9%84%D8%A7%D9%85%20%D8%AD%D9%85%D8%A7%D9%8A%D8%A9%20%D8%A7%D9%84%D8%B7%D9%84%D8%A7%D8%A1%20PPF%20%D9%81%D9%8A%20%D8%AF%D8%A8%D9%8A.",
+          "text": "راسلنا عبر واتساب"
+        },
+        {
+          "href": "https://wa.me/97143402223?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20%D8%AF%D9%8A%D8%AC%D9%8A-%D8%AA%D9%83%D8%8C%20%D8%A3%D9%88%D8%AF%20%D9%85%D9%86%D8%A7%D9%82%D8%B4%D8%A9%20%D8%AA%D8%B1%D9%83%D9%8A%D8%A8%20%D8%A3%D9%81%D9%84%D8%A7%D9%85%20%D8%AD%D9%85%D8%A7%D9%8A%D8%A9%20%D8%A7%D9%84%D8%B7%D9%84%D8%A7%D8%A1%20PPF%20%D9%81%D9%8A%20%D8%AF%D8%A8%D9%8A.",
+          "text": "احجز استشارتك "
+        }
+      ],
+      "images": [
+        {
+          "src": "https://digitecme.com/images/digitec-d-mark.png",
+          "loaded": true,
+          "width": 1536,
+          "height": 1024
+        },
+        {
+          "src": "https://digitecme.com/images/ppf/film-application-640.webp",
+          "loaded": true,
+          "width": 390,
+          "height": 390
+        },
+        {
+          "src": "",
+          "loaded": false,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "",
+          "loaded": false,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "",
+          "loaded": false,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "",
+          "loaded": false,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "",
+          "loaded": false,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "",
+          "loaded": false,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "",
+          "loaded": false,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "",
+          "loaded": false,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "",
+          "loaded": false,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "",
+          "loaded": false,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "",
+          "loaded": false,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "",
+          "loaded": false,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "",
+          "loaded": false,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "",
+          "loaded": false,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "",
+          "loaded": false,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "",
+          "loaded": false,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "",
+          "loaded": false,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "",
+          "loaded": false,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "",
+          "loaded": false,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "",
+          "loaded": false,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "",
+          "loaded": false,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "",
+          "loaded": false,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "",
+          "loaded": false,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "",
+          "loaded": false,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "",
+          "loaded": false,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "",
+          "loaded": false,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "",
+          "loaded": false,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "",
+          "loaded": false,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "",
+          "loaded": false,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "",
+          "loaded": false,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "",
+          "loaded": false,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "",
+          "loaded": false,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "",
+          "loaded": false,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "",
+          "loaded": false,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "",
+          "loaded": false,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "",
+          "loaded": false,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "",
+          "loaded": false,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "",
+          "loaded": false,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "",
+          "loaded": false,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "",
+          "loaded": false,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "",
+          "loaded": false,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "",
+          "loaded": false,
+          "width": 0,
+          "height": 0
+        }
+      ],
+      "labMetrics": {
+        "lcpMs": 544,
+        "cls": 0,
+        "navigation": {
+          "ttfb": 214.80000001192093,
+          "domContentLoaded": 491.40000000596046,
+          "load": 497.5
+        }
+      },
+      "screenshot": "screenshots/ar-390.png"
+    },
+    {
+      "route": "/ar/services/paint-protection-film",
+      "width": 320,
+      "status": 200,
+      "title": "أفلام حماية الطلاء PPF دبي | التغطية والتركيب | ديجي-تك",
+      "lang": "ar",
+      "dir": "rtl",
+      "h1": [
+        "تركيب أفلام حماية الطلاء PPF في دبي"
+      ],
+      "canonical": "https://digitecme.com/ar/services/paint-protection-film",
+      "overflow": false,
+      "documentWidth": 320,
+      "viewportWidth": 320,
+      "forms": [],
+      "tel": [
+        {
+          "href": "tel:+97143402223",
+          "text": "اتصل بالورشة"
+        },
+        {
+          "href": "tel:+97143402223",
+          "text": "اتصل الآن"
+        },
+        {
+          "href": "tel:+97143402223",
+          "text": " اتصل على +971 4 340 2223"
+        },
+        {
+          "href": "tel:+97143402223",
+          "text": "+971 4 340 2223"
+        }
+      ],
+      "whatsapp": [
+        {
+          "href": "https://wa.me/97143402223?text=Hi%20DIGI-TEC%2C%20I%20would%20like%20to%20get%20in%20touch%20about%20my%20vehicle.",
+          "text": "تواصل معنا"
+        },
+        {
+          "href": "https://wa.me/97143402223?text=Hi%20DIGI-TEC%2C%20I%20would%20like%20to%20get%20in%20touch%20about%20my%20vehicle.",
+          "text": "تواصل معنا"
+        },
+        {
+          "href": "https://wa.me/97143402223?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20%D8%AF%D9%8A%D8%AC%D9%8A-%D8%AA%D9%83%D8%8C%20%D8%A3%D9%88%D8%AF%20%D9%85%D9%86%D8%A7%D9%82%D8%B4%D8%A9%20%D8%AA%D8%B1%D9%83%D9%8A%D8%A8%20%D8%A3%D9%81%D9%84%D8%A7%D9%85%20%D8%AD%D9%85%D8%A7%D9%8A%D8%A9%20%D8%A7%D9%84%D8%B7%D9%84%D8%A7%D8%A1%20PPF%20%D9%81%D9%8A%20%D8%AF%D8%A8%D9%8A.",
+          "text": "اطلب عرض سعر لتركيب PPF"
+        },
+        {
+          "href": "https://wa.me/97143402223?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20%D8%AF%D9%8A%D8%AC%D9%8A-%D8%AA%D9%83%D8%8C%20%D8%A3%D9%88%D8%AF%20%D9%85%D9%86%D8%A7%D9%82%D8%B4%D8%A9%20%D8%AA%D8%B1%D9%83%D9%8A%D8%A8%20%D8%A3%D9%81%D9%84%D8%A7%D9%85%20%D8%AD%D9%85%D8%A7%D9%8A%D8%A9%20%D8%A7%D9%84%D8%B7%D9%84%D8%A7%D8%A1%20PPF%20%D9%81%D9%8A%20%D8%AF%D8%A8%D9%8A.",
+          "text": "راسلنا عبر واتساب"
+        },
+        {
+          "href": "https://wa.me/97143402223?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20%D8%AF%D9%8A%D8%AC%D9%8A-%D8%AA%D9%83%D8%8C%20%D8%A3%D9%88%D8%AF%20%D9%85%D9%86%D8%A7%D9%82%D8%B4%D8%A9%20%D8%AA%D8%B1%D9%83%D9%8A%D8%A8%20%D8%A3%D9%81%D9%84%D8%A7%D9%85%20%D8%AD%D9%85%D8%A7%D9%8A%D8%A9%20%D8%A7%D9%84%D8%B7%D9%84%D8%A7%D8%A1%20PPF%20%D9%81%D9%8A%20%D8%AF%D8%A8%D9%8A.",
+          "text": "احجز استشارتك "
+        }
+      ],
+      "images": [
+        {
+          "src": "https://digitecme.com/images/digitec-d-mark.png",
+          "loaded": true,
+          "width": 1536,
+          "height": 1024
+        },
+        {
+          "src": "https://digitecme.com/images/ppf/film-application-640.webp",
+          "loaded": true,
+          "width": 320,
+          "height": 320
+        },
+        {
+          "src": "",
+          "loaded": false,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "",
+          "loaded": false,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "",
+          "loaded": false,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "",
+          "loaded": false,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "",
+          "loaded": false,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "",
+          "loaded": false,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "",
+          "loaded": false,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "",
+          "loaded": false,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "",
+          "loaded": false,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "",
+          "loaded": false,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "",
+          "loaded": false,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "",
+          "loaded": false,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "",
+          "loaded": false,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "",
+          "loaded": false,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "",
+          "loaded": false,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "",
+          "loaded": false,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "",
+          "loaded": false,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "",
+          "loaded": false,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "",
+          "loaded": false,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "",
+          "loaded": false,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "",
+          "loaded": false,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "",
+          "loaded": false,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "",
+          "loaded": false,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "",
+          "loaded": false,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "",
+          "loaded": false,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "",
+          "loaded": false,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "",
+          "loaded": false,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "",
+          "loaded": false,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "",
+          "loaded": false,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "",
+          "loaded": false,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "",
+          "loaded": false,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "",
+          "loaded": false,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "",
+          "loaded": false,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "",
+          "loaded": false,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "",
+          "loaded": false,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "",
+          "loaded": false,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "",
+          "loaded": false,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "",
+          "loaded": false,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "",
+          "loaded": false,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "",
+          "loaded": false,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "",
+          "loaded": false,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "",
+          "loaded": false,
+          "width": 0,
+          "height": 0
+        }
+      ],
+      "labMetrics": {
+        "lcpMs": 416,
+        "cls": 0,
+        "navigation": {
+          "ttfb": 172.10000002384186,
+          "domContentLoaded": 384.40000000596046,
+          "load": 399.90000000596046
+        }
+      },
+      "screenshot": "screenshots/ar-320.png"
+    },
+    {
+      "route": "/ar/services/paint-protection-film",
+      "width": 1440,
+      "status": 200,
+      "title": "أفلام حماية الطلاء PPF دبي | التغطية والتركيب | ديجي-تك",
+      "lang": "ar",
+      "dir": "rtl",
+      "h1": [
+        "تركيب أفلام حماية الطلاء PPF في دبي"
+      ],
+      "canonical": "https://digitecme.com/ar/services/paint-protection-film",
+      "overflow": false,
+      "documentWidth": 1440,
+      "viewportWidth": 1440,
+      "forms": [],
+      "tel": [
+        {
+          "href": "tel:+97143402223",
+          "text": "اتصل بالورشة"
+        },
+        {
+          "href": "tel:+97143402223",
+          "text": "اتصل الآن"
+        },
+        {
+          "href": "tel:+97143402223",
+          "text": " اتصل على +971 4 340 2223"
+        },
+        {
+          "href": "tel:+97143402223",
+          "text": "+971 4 340 2223"
+        }
+      ],
+      "whatsapp": [
+        {
+          "href": "https://wa.me/97143402223?text=Hi%20DIGI-TEC%2C%20I%20would%20like%20to%20get%20in%20touch%20about%20my%20vehicle.",
+          "text": "تواصل معنا"
+        },
+        {
+          "href": "https://wa.me/97143402223?text=Hi%20DIGI-TEC%2C%20I%20would%20like%20to%20get%20in%20touch%20about%20my%20vehicle.",
+          "text": "تواصل معنا"
+        },
+        {
+          "href": "https://wa.me/97143402223?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20%D8%AF%D9%8A%D8%AC%D9%8A-%D8%AA%D9%83%D8%8C%20%D8%A3%D9%88%D8%AF%20%D9%85%D9%86%D8%A7%D9%82%D8%B4%D8%A9%20%D8%AA%D8%B1%D9%83%D9%8A%D8%A8%20%D8%A3%D9%81%D9%84%D8%A7%D9%85%20%D8%AD%D9%85%D8%A7%D9%8A%D8%A9%20%D8%A7%D9%84%D8%B7%D9%84%D8%A7%D8%A1%20PPF%20%D9%81%D9%8A%20%D8%AF%D8%A8%D9%8A.",
+          "text": "اطلب عرض سعر لتركيب PPF"
+        },
+        {
+          "href": "https://wa.me/97143402223?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20%D8%AF%D9%8A%D8%AC%D9%8A-%D8%AA%D9%83%D8%8C%20%D8%A3%D9%88%D8%AF%20%D9%85%D9%86%D8%A7%D9%82%D8%B4%D8%A9%20%D8%AA%D8%B1%D9%83%D9%8A%D8%A8%20%D8%A3%D9%81%D9%84%D8%A7%D9%85%20%D8%AD%D9%85%D8%A7%D9%8A%D8%A9%20%D8%A7%D9%84%D8%B7%D9%84%D8%A7%D8%A1%20PPF%20%D9%81%D9%8A%20%D8%AF%D8%A8%D9%8A.",
+          "text": "راسلنا عبر واتساب"
+        },
+        {
+          "href": "https://wa.me/97143402223?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20%D8%AF%D9%8A%D8%AC%D9%8A-%D8%AA%D9%83%D8%8C%20%D8%A3%D9%88%D8%AF%20%D9%85%D9%86%D8%A7%D9%82%D8%B4%D8%A9%20%D8%AA%D8%B1%D9%83%D9%8A%D8%A8%20%D8%A3%D9%81%D9%84%D8%A7%D9%85%20%D8%AD%D9%85%D8%A7%D9%8A%D8%A9%20%D8%A7%D9%84%D8%B7%D9%84%D8%A7%D8%A1%20PPF%20%D9%81%D9%8A%20%D8%AF%D8%A8%D9%8A.",
+          "text": "احجز استشارتك "
+        }
+      ],
+      "images": [
+        {
+          "src": "https://digitecme.com/images/digitec-d-mark.png",
+          "loaded": true,
+          "width": 1536,
+          "height": 1024
+        },
+        {
+          "src": "https://digitecme.com/images/ppf/film-application-1200.webp",
+          "loaded": true,
+          "width": 1440,
+          "height": 1440
+        },
+        {
+          "src": "",
+          "loaded": false,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "https://digitecme.com/images/ppf/film-application-1200.webp",
+          "loaded": false,
+          "width": 1200,
+          "height": 1200
+        },
+        {
+          "src": "",
+          "loaded": false,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "",
+          "loaded": false,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "",
+          "loaded": false,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "",
+          "loaded": false,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "",
+          "loaded": false,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "",
+          "loaded": false,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "",
+          "loaded": false,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "",
+          "loaded": false,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "",
+          "loaded": false,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "",
+          "loaded": false,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "",
+          "loaded": false,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "",
+          "loaded": false,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "",
+          "loaded": false,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "",
+          "loaded": false,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "",
+          "loaded": false,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "",
+          "loaded": false,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "",
+          "loaded": false,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "",
+          "loaded": false,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "",
+          "loaded": false,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "",
+          "loaded": false,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "",
+          "loaded": false,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "",
+          "loaded": false,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "",
+          "loaded": false,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "",
+          "loaded": false,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "",
+          "loaded": false,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "",
+          "loaded": false,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "",
+          "loaded": false,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "",
+          "loaded": false,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "",
+          "loaded": false,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "",
+          "loaded": false,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "",
+          "loaded": false,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "",
+          "loaded": false,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "",
+          "loaded": false,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "",
+          "loaded": false,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "",
+          "loaded": false,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "",
+          "loaded": false,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "",
+          "loaded": false,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "",
+          "loaded": false,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "",
+          "loaded": false,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "",
+          "loaded": false,
+          "width": 0,
+          "height": 0
+        }
+      ],
+      "labMetrics": {
+        "lcpMs": 428,
+        "cls": 0,
+        "navigation": {
+          "ttfb": 168.30000001192093,
+          "domContentLoaded": 381.7999999821186,
+          "load": 401.7999999821186
+        }
+      },
+      "screenshot": "screenshots/ar-1440.png"
+    }
+  ],
+  "errors": [],
+  "blocked": [
+    {
+      "url": "https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092",
+      "method": "GET"
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtag/js?id=G-4TRCEJSY4S",
+      "method": "GET"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Tajawal:wght@400;500;700;800;900&display=swap",
+      "method": "GET"
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtm.js?id=GTM-T3GVSPND",
+      "method": "GET"
+    },
+    {
+      "url": "https://digitecme.com/__l5e/trackevents",
+      "method": "POST"
+    },
+    {
+      "url": "https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092",
+      "method": "GET"
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtag/js?id=G-4TRCEJSY4S",
+      "method": "GET"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Tajawal:wght@400;500;700;800;900&display=swap",
+      "method": "GET"
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtm.js?id=GTM-T3GVSPND",
+      "method": "GET"
+    },
+    {
+      "url": "https://digitecme.com/__l5e/trackevents",
+      "method": "POST"
+    },
+    {
+      "url": "https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092",
+      "method": "GET"
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtag/js?id=G-4TRCEJSY4S",
+      "method": "GET"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Tajawal:wght@400;500;700;800;900&display=swap",
+      "method": "GET"
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtm.js?id=GTM-T3GVSPND",
+      "method": "GET"
+    },
+    {
+      "url": "https://digitecme.com/__l5e/trackevents",
+      "method": "POST"
+    },
+    {
+      "url": "https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092",
+      "method": "GET"
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtag/js?id=G-4TRCEJSY4S",
+      "method": "GET"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Tajawal:wght@400;500;700;800;900&display=swap",
+      "method": "GET"
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtm.js?id=GTM-T3GVSPND",
+      "method": "GET"
+    },
+    {
+      "url": "https://digitecme.com/__l5e/trackevents",
+      "method": "POST"
+    },
+    {
+      "url": "https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092",
+      "method": "GET"
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtag/js?id=G-4TRCEJSY4S",
+      "method": "GET"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Tajawal:wght@400;500;700;800;900&display=swap",
+      "method": "GET"
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtm.js?id=GTM-T3GVSPND",
+      "method": "GET"
+    },
+    {
+      "url": "https://digitecme.com/__l5e/trackevents",
+      "method": "POST"
+    },
+    {
+      "url": "https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092",
+      "method": "GET"
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtag/js?id=G-4TRCEJSY4S",
+      "method": "GET"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Tajawal:wght@400;500;700;800;900&display=swap",
+      "method": "GET"
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtm.js?id=GTM-T3GVSPND",
+      "method": "GET"
+    },
+    {
+      "url": "https://digitecme.com/__l5e/trackevents",
+      "method": "POST"
+    }
+  ]
+}

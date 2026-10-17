@@ -1,0 +1,84 @@
+{
+  "checkedAt": "2026-10-17T09:34:28.019Z",
+  "head": "5461e2c0f28c006f45196f6d9a7f4dcf312f464c",
+  "branch": "main",
+  "scope": "Only incremental Phase 2 code/generated changes, relative to saved Phase 1 working files; no rollback executed.",
+  "rollbackReverseCheckPassed": true,
+  "records": [
+    {
+      "file": "cloudflare/production-seo-router.js",
+      "kind": "modified",
+      "beforeSha256": "006ecc7a68ddab56c35cd1219fb3555eb0260e8b76a912a77388a3a325d4d626",
+      "afterSha256": "b96d330f3e64dc6be60ff86580132139fa01eb5fa4a1774701954ca57abafc8f",
+      "rollbackSource": "outputs/ppf-phase2-2026-10-17/baseline/source/cloudflare/production-seo-router.js"
+    },
+    {
+      "file": "cloudflare/routing-response-data.js",
+      "kind": "modified",
+      "beforeSha256": "e64ee11e321bfdfbbba5b6bd64df93e85c0c5d48d29b9e832a23f0a25126d426",
+      "afterSha256": "2965c5f0fbdbab6a4cb11287e1e265e89cdbb64ff12f36b433d3275ff5ba36e0",
+      "rollbackSource": "outputs/ppf-phase2-2026-10-17/baseline/source/cloudflare/routing-response-data.js"
+    },
+    {
+      "file": "docs/seo/protection-release-validation.json",
+      "kind": "modified",
+      "beforeSha256": "2c3d630f4ef24c45b6e8165f79390f9e65cc1a5c104862455f447bc4602f73e6",
+      "afterSha256": "69e8fe93627c5d707150ffec148458ec92f635e35b582ebc99c0753d6b725d1d",
+      "rollbackSource": "outputs/ppf-phase2-2026-10-17/baseline/source/docs/seo/protection-release-validation.json"
+    },
+    {
+      "file": "package.json",
+      "kind": "modified",
+      "beforeSha256": "82746a9b05d72940c61e357b096aee463370df96f5f400a049fb4c2bb96bffcf",
+      "afterSha256": "0079f6c3631eef2412243c812f59cd8f842b07c4d508f500eb91d6ef12de3130",
+      "rollbackSource": "outputs/ppf-phase2-2026-10-17/baseline/source/package.json"
+    },
+    {
+      "file": "scripts/test-ppf-browser.mjs",
+      "kind": "modified",
+      "beforeSha256": "6d0eda3e95312fc99cf6f57ab3eae1187346c9cd6107b55b2358961cb660de53",
+      "afterSha256": "ada0ceeeb806b601d6a99de677752dc79476c5d4f33b4286f251ff7e101ee9ab",
+      "rollbackSource": "outputs/ppf-phase2-2026-10-17/baseline/source/scripts/test-ppf-browser.mjs"
+    },
+    {
+      "file": "scripts/test-production-seo-router.mjs",
+      "kind": "modified",
+      "beforeSha256": "67be70ded0cf5345f9f683914daa6906153be0dd47c5443a06106dd445f56703",
+      "afterSha256": "5123ae9d1edc89d83fd24eedc040e12f0e5b7f49c90ac7bf277a6c753bc35d2d",
+      "rollbackSource": "outputs/ppf-phase2-2026-10-17/baseline/source/scripts/test-production-seo-router.mjs"
+    },
+    {
+      "file": "src/components/PpfQuoteForm.tsx",
+      "kind": "modified",
+      "beforeSha256": "25ad2eaeeedf08fa4af671a63ff4847a9c4962c18d0290f3e2d2886a15eb670a",
+      "afterSha256": "9c1c7f3000ef41172124bc347c7e48387e356a5cd0dff284f509c8f1e7f0b696",
+      "rollbackSource": "outputs/ppf-phase2-2026-10-17/baseline/source/src/components/PpfQuoteForm.tsx"
+    },
+    {
+      "file": "src/i18n/ar-protection-services.ts",
+      "kind": "modified",
+      "beforeSha256": "b90a876b84b92f6b45c39395765777d1d4103604c0760e459d33fe33f1a4629f",
+      "afterSha256": "51c3e127eb22838e6f58f0cbe51e356aedd17126265e8939aa0ccb97fe557d75",
+      "rollbackSource": "outputs/ppf-phase2-2026-10-17/baseline/source/src/i18n/ar-protection-services.ts"
+    },
+    {
+      "file": "src/pages/PpfPage.tsx",
+      "kind": "modified",
+      "beforeSha256": "26967c1eb461e2d3adb88498383e7336963c8895ae88ce8311d97eed2b1e856b",
+      "afterSha256": "b27cb0cc977936c97e197e09e76e1f6c6eb3161a6b157eafdd0dd3484b4c8dc6",
+      "rollbackSource": "outputs/ppf-phase2-2026-10-17/baseline/source/src/pages/PpfPage.tsx"
+    },
+    {
+      "file": "src/lib/ppf-enquiry.ts",
+      "kind": "new",
+      "beforeSha256": null,
+      "afterSha256": "f369277c1f843499e0be62060c6d75064059f7bb0460758527d2e51e1f715fd3"
+    },
+    {
+      "file": "scripts/test-ppf-enquiry.mjs",
+      "kind": "new",
+      "beforeSha256": null,
+      "afterSha256": "4aacfe42b8199ce8c8e10d0ad7063db994edee775c538c7c6e71c76279aecc96"
+    }
+  ]
+}

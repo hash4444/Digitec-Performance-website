@@ -243,6 +243,7 @@ const paintProtectionUpdatedPaths = new Set([
 ]);
 for (const route of publicRoutes) {
   if (paintProtectionUpdatedPaths.has(route.path)) route.lastmod = '2026-10-12';
+  if (['/services/paint-protection-film', '/ar/services/paint-protection-film'].includes(route.path)) route.lastmod = '2026-10-17';
 }
 
 export const indexableRoutes = publicRoutes.filter((route) => route.indexable);

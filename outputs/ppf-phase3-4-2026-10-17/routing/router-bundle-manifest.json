@@ -1,0 +1,41 @@
+{
+  "builtAt": "2026-10-17T09:51:51.796Z",
+  "method": "Offline local esbuild from the installed Vite dependency; no upload or deployment.",
+  "records": [
+    {
+      "file": "cloudflare/production-seo-router.js",
+      "sha256": "b96d330f3e64dc6be60ff86580132139fa01eb5fa4a1774701954ca57abafc8f",
+      "bytes": 2376
+    },
+    {
+      "file": "cloudflare/mercedes-seo-router.js",
+      "sha256": "167bef07cddeb86365dcfb426b3773f72c6953e1119492b5bc37862a50f590c8",
+      "bytes": 12386
+    },
+    {
+      "file": "cloudflare/routing-response-guard.js",
+      "sha256": "7ba2e6eab5f633c27fed1d94e8b42a193d440a3165e773530cc4fc8f497c0acf",
+      "bytes": 1964
+    },
+    {
+      "file": "cloudflare/routing-response-data.js",
+      "sha256": "81d88b0bc0dfb8a97221111494deff467958dd36efcf4802fd58bc69c1b86a27",
+      "bytes": 83004
+    },
+    {
+      "file": "src/lib/historical-paths.js",
+      "sha256": "aaf2109ef7232eadcc4dd48254a27d8f6424a975d342185dfc6d4ce3d5988031",
+      "bytes": 471
+    },
+    {
+      "file": "cloudflare/wrangler.production-seo.jsonc",
+      "sha256": "2ee0cb254944a94f93db5a1065e997a2b0050c47575d7fb76497dc77be023221",
+      "bytes": 371
+    },
+    {
+      "file": "outputs/ppf-phase3-4-2026-10-17/routing/production-seo-router.bundle.js",
+      "sha256": "25b80f21fad85539aa29ee1c479ab2d334326824fd25707957de8498e51c8a48",
+      "bytes": 102221
+    }
+  ]
+}

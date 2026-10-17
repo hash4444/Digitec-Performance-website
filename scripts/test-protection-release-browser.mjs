@@ -9,7 +9,7 @@ const base = process.argv[3] || 'http://127.0.0.1:5190';
 const output = 'release-qa.local/integration';
 await mkdir(output, { recursive: true });
 const pages = [
-  { route: '/services/paint-protection-film', h1: 'Paint Protection Film (PPF) Dubai', marker: '#ppf-quote-form button[type=submit]:not([disabled])' },
+  { route: '/services/paint-protection-film', h1: 'Paint Protection Film (PPF) in Dubai', marker: '#ppf-quote-form button[type=submit]:not([disabled])' },
   { route: '/services/ceramic-coating', h1: 'Ceramic Coating Dubai', marker: '.cc-faq button[aria-expanded]' },
   { route: '/services/car-polishing-dubai', h1: 'Car Polishing & Paint Correction Dubai', marker: '#paint-assessment-form button[type=submit]:not([disabled])' },
 ];

@@ -1,0 +1,18 @@
+.ppf-form fieldset { min-width: 0; }
+.ppf-form .ppf-form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; margin-bottom: 1.5rem; }
+.ppf-form .ppf-form-wide { grid-column: 1 / -1; }
+.ppf-form label { display: block; font-size: .9375rem; margin-bottom: .6rem; }
+.ppf-form :is(input, select, textarea) { display: block; width: 100%; min-width: 0; background: #101113; color: #f5f5f6; border: 1px solid #ffffff44; padding: .85rem 1rem; min-height: 52px; border-radius: 6px; font-size: 1rem; }
+.ppf-form textarea { resize: vertical; }
+.ppf-form :is(input, textarea)::placeholder { color: #9c9ca2; }
+.ppf-form :is(input, select, textarea, button):focus-visible { outline: 2px solid #ff8f65; outline-offset: 4px; }
+.ppf-form fieldset > button { display: flex; align-items: center; justify-content: center; gap: .6rem; width: 100%; min-height: 50px; padding: .9rem 1.25rem; background: #ff6b35; color: #000; border-radius: 6px; font-weight: 650; margin-bottom: 1rem; }
+.ppf-form button:disabled { opacity: .6; }
+.ppf-form .ppf-small { font-size: .875rem; color: #b7b8bc; line-height: 1.7; margin: .65rem 0; }
+.ppf-form .ppf-small a { color: #ffae8b; text-decoration: underline; }
+.ppf-form [role=alert] { color: #ffae8b; margin-bottom: 1rem; }
+html.theme-light .ppf-form :is(input, select, textarea) { background: #fff; color: #181918; border-color: #18191855; }
+html.theme-light .ppf-form :is(input, textarea)::placeholder { color: #64666a; }
+html.theme-light .ppf-form .ppf-small { color: #55585f; }
+html.theme-light .ppf-form :is(.ppf-small a, [role=alert]) { color: #a63b14; }
+@media (max-width: 600px) { .ppf-form .ppf-form-grid { grid-template-columns: 1fr; } }

@@ -17,7 +17,7 @@ const owners = [
   { name: 'rolls-royce', route: '/brands/rolls-royce-service-dubai', h1: 'Rolls-Royce Service & Repair Dubai', hero: true },
   { name: 'aston-martin', route: '/brands/aston-martin-service-dubai', h1: 'Aston Martin Service & Repair Dubai', hero: true },
   { name: 'bentley', route: '/brands/bentley-service-dubai', h1: 'Bentley Service & Repair Dubai', hero: true },
-  { name: 'ppf', route: '/services/paint-protection-film', h1: 'Paint Protection Film (PPF) Dubai', section: '#ppf-care' },
+  { name: 'ppf', route: '/services/paint-protection-film', h1: 'Paint Protection Film (PPF) in Dubai', section: '#ppf-care' },
   { name: 'ceramic', route: '/services/ceramic-coating', h1: 'Ceramic Coating Dubai' },
   { name: 'cue', route: '/services/cadillac-cue-screen-repair-dubai', h1: 'Cadillac CUE Screen Repair & Replacement in Dubai', newPage: true },
   { name: 'electrical', route: '/services/auto-electrical-repair-dubai', h1: 'Car Electrical Repair in Dubai' },

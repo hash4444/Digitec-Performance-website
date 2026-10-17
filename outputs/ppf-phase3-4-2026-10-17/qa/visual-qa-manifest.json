@@ -1,0 +1,84 @@
+{
+  "reviewedAt": "2026-10-17T09:54:59.036Z",
+  "sourceSha256": "b2bf92aba294bbb0807b1abd4943e5b47dd93b262e4dd99a306e04b6f00049da",
+  "method": "Each listed local PNG inspected directly with view_image; no screenshot editing or browser mutations.",
+  "records": [
+    {
+      "file": "browser/en-quote-320-dark.png",
+      "sha256": "bf1264a8aa3453f8b4d707bba2e7c4d09e678b698b9a0495c510e9de9132fca0",
+      "width": 272,
+      "height": 1306,
+      "reviewed": true
+    },
+    {
+      "file": "browser/en-quote-320-light.png",
+      "sha256": "669c5a059f983e410f86e656c866487fabe07783d819cef4431a43895cba8408",
+      "width": 272,
+      "height": 1306,
+      "reviewed": true
+    },
+    {
+      "file": "browser/en-quote-390-dark.png",
+      "sha256": "485efad1c980e8f3d90e97124d18e43339537efbb55beb54b542064f36210315",
+      "width": 342,
+      "height": 1258,
+      "reviewed": true
+    },
+    {
+      "file": "browser/en-quote-390-light.png",
+      "sha256": "40eab501069f692ec4ad994fec14f97e60ce32c93bf7b6f5b663e7eb5bda486e",
+      "width": 342,
+      "height": 1258,
+      "reviewed": true
+    },
+    {
+      "file": "browser/ar-quote-320-dark.png",
+      "sha256": "9f01766d5eb6e5c98b9cbdb8b3617db5aade774402dfea6778cf500c30a96ef9",
+      "width": 280,
+      "height": 1255,
+      "reviewed": true
+    },
+    {
+      "file": "browser/ar-quote-320-light.png",
+      "sha256": "4a67e0bbe982d23b760f7278ced0b838f52dc88ac9e72fc2e5f249e1b418fa57",
+      "width": 280,
+      "height": 1255,
+      "reviewed": true
+    },
+    {
+      "file": "browser/ar-quote-390-dark.png",
+      "sha256": "308218b82f8d300ba9c3be58c42144784da6877fe62c9e4a1a9b9601fde96f21",
+      "width": 350,
+      "height": 1208,
+      "reviewed": true
+    },
+    {
+      "file": "browser/ar-quote-390-light.png",
+      "sha256": "f6e8db6f5ff13ef0c3a8650c1c7b1bc5eb2b79788e462bc51271b8ca557e627d",
+      "width": 350,
+      "height": 1208,
+      "reviewed": true
+    },
+    {
+      "file": "browser/desktop.png",
+      "sha256": "769586bcdd212a61f2bae0a228eab1a5ab3dc1f5fcd322e171ca70dab255c56b",
+      "width": 1440,
+      "height": 1000,
+      "reviewed": true
+    },
+    {
+      "file": "browser/mobile-320.png",
+      "sha256": "f5e1d2cd11c41fe62bf23b6e9786d6763fcea720c24ed8b775229e62c4ae31a0",
+      "width": 320,
+      "height": 844,
+      "reviewed": true
+    },
+    {
+      "file": "browser/workshop.png",
+      "sha256": "779be521333b47c30634ce8cdaa93fcdeddbd3a718127b8debb5beb4038ff1ff",
+      "width": 1440,
+      "height": 1000,
+      "reviewed": true
+    }
+  ]
+}

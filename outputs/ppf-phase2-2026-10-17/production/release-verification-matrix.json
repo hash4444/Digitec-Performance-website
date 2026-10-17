@@ -1,0 +1,1391 @@
+{
+  "checkedAt": "2026-10-17T09:34:33.504Z",
+  "liveCheckedAt": "2026-10-17T09:24:44.253Z",
+  "scope": "Local actual configured entrypoint plus final built dist metadata; fresh public GET/HEAD evidence. Live observations do not use local results as proof of production success.",
+  "finalBuild": {
+    "file": "outputs/ppf-phase2-2026-10-17/qa/build-results.json",
+    "sourceManifest": "outputs/ppf-phase2-2026-10-17/qa/source-manifest.json",
+    "passed": true,
+    "sourceSha256": "b66850d24222e5193cf8bc98e9631e61a0e6efbe650bb965ec88cd08e5efbc4e",
+    "stages": 19,
+    "finishedAt": "2026-10-17T09:31:23.515Z"
+  },
+  "localVerification": {
+    "file": "outputs/ppf-phase2-2026-10-17/local-verification.json",
+    "checks": 1248,
+    "passed": 1248,
+    "failed": 0
+  },
+  "rows": [
+    {
+      "kind": "canonical",
+      "request": "/services/paint-protection-film",
+      "expectedStatus": 200,
+      "expectedLocation": null,
+      "local": {
+        "status": 200,
+        "location": null,
+        "title": "Paint Protection Film (PPF) Dubai | DIGI-TEC",
+        "canonical": [
+          "https://digitecme.com/services/paint-protection-film"
+        ],
+        "hreflang": [
+          {
+            "lang": "en-AE",
+            "href": "https://digitecme.com/services/paint-protection-film"
+          },
+          {
+            "lang": "ar-AE",
+            "href": "https://digitecme.com/ar/services/paint-protection-film"
+          },
+          {
+            "lang": "x-default",
+            "href": "https://digitecme.com/services/paint-protection-film"
+          }
+        ],
+        "h1": [
+          "Paint Protection Film (PPF) in Dubai"
+        ],
+        "quoteFields": [
+          "vehicle_brand",
+          "vehicle_model",
+          "vehicle_year",
+          "coverage",
+          "customer_name",
+          "contact_method",
+          "contact_details",
+          "customer_notes"
+        ],
+        "fieldsetsDisabled": true,
+        "inSitemap": true,
+        "mobile": "PASS final Phase2 EN/AR 320/390/1440; browser/browser-results.json",
+        "quotationWorkflow": "PASS local draft/validation/privacy/deduplication; receipt unverified"
+      },
+      "production": {
+        "status": 200,
+        "location": null,
+        "title": "PPF Dubai | Paint Protection Film Installation | DIGI-TEC",
+        "canonical": [
+          "https://digitecme.com/services/paint-protection-film"
+        ],
+        "h1": [
+          "Paint Protection Film (PPF) Dubai"
+        ],
+        "hreflang": [
+          {
+            "lang": "en-AE",
+            "href": "https://digitecme.com/services/paint-protection-film"
+          },
+          {
+            "lang": "ar-AE",
+            "href": "https://digitecme.com/ar/services/paint-protection-film"
+          },
+          {
+            "lang": "x-default",
+            "href": "https://digitecme.com/services/paint-protection-film"
+          }
+        ],
+        "inSitemap": true,
+        "quoteFields": [
+          "vehicle_brand",
+          "vehicle_model",
+          "vehicle_year"
+        ],
+        "mobile": "Earlier Phase1 read-only layout baseline only; published new build unverified",
+        "quotationWorkflow": "FAIL new form publication: old form in public initial HTML"
+      },
+      "releaseResult": "Local intended change is not yet published"
+    },
+    {
+      "kind": "canonical",
+      "request": "/ar/services/paint-protection-film",
+      "expectedStatus": 200,
+      "expectedLocation": null,
+      "local": {
+        "status": 200,
+        "location": null,
+        "title": "أفلام حماية الطلاء PPF دبي | التغطية والتركيب | ديجي-تك",
+        "canonical": [
+          "https://digitecme.com/ar/services/paint-protection-film"
+        ],
+        "hreflang": [
+          {
+            "lang": "en-AE",
+            "href": "https://digitecme.com/services/paint-protection-film"
+          },
+          {
+            "lang": "ar-AE",
+            "href": "https://digitecme.com/ar/services/paint-protection-film"
+          },
+          {
+            "lang": "x-default",
+            "href": "https://digitecme.com/services/paint-protection-film"
+          }
+        ],
+        "h1": [
+          "تركيب أفلام حماية الطلاء PPF في دبي"
+        ],
+        "quoteFields": [
+          "vehicle_brand",
+          "vehicle_model",
+          "vehicle_year",
+          "coverage",
+          "customer_name",
+          "contact_method",
+          "contact_details",
+          "customer_notes"
+        ],
+        "fieldsetsDisabled": true,
+        "inSitemap": true,
+        "mobile": "PASS final Phase2 EN/AR 320/390/1440; browser/browser-results.json",
+        "quotationWorkflow": "PASS local draft/validation/privacy/deduplication; receipt unverified"
+      },
+      "production": {
+        "status": 200,
+        "location": null,
+        "title": "أفلام حماية الطلاء PPF دبي | التغطية والتركيب | ديجي-تك",
+        "canonical": [
+          "https://digitecme.com/ar/services/paint-protection-film"
+        ],
+        "h1": [
+          "تركيب أفلام حماية الطلاء PPF في دبي"
+        ],
+        "hreflang": [
+          {
+            "lang": "en-AE",
+            "href": "https://digitecme.com/services/paint-protection-film"
+          },
+          {
+            "lang": "ar-AE",
+            "href": "https://digitecme.com/ar/services/paint-protection-film"
+          },
+          {
+            "lang": "x-default",
+            "href": "https://digitecme.com/services/paint-protection-film"
+          }
+        ],
+        "inSitemap": true,
+        "quoteFields": [],
+        "mobile": "Earlier Phase1 read-only layout baseline only; published new build unverified",
+        "quotationWorkflow": "FAIL new form publication: absent in public initial HTML"
+      },
+      "releaseResult": "Current local metadata equals production; check intended content separately"
+    },
+    {
+      "kind": "canonical",
+      "request": "/services/paint-protection-dubai",
+      "expectedStatus": 200,
+      "expectedLocation": null,
+      "local": {
+        "status": 200,
+        "location": null,
+        "title": "Car Paint Protection Dubai | PPF & Ceramic Coating | DIGI-TEC",
+        "canonical": [
+          "https://digitecme.com/services/paint-protection-dubai"
+        ],
+        "hreflang": [
+          {
+            "lang": "en-AE",
+            "href": "https://digitecme.com/services/paint-protection-dubai"
+          },
+          {
+            "lang": "ar-AE",
+            "href": "https://digitecme.com/ar/services/paint-protection-dubai"
+          },
+          {
+            "lang": "x-default",
+            "href": "https://digitecme.com/services/paint-protection-dubai"
+          }
+        ],
+        "h1": [
+          "Car Paint Protection in Dubai"
+        ],
+        "quoteFields": [],
+        "fieldsetsDisabled": false,
+        "inSitemap": true,
+        "mobile": "Not directly sampled in final mobile suite; static route checks PASS",
+        "quotationWorkflow": "Not the primary PPF quotation form owner; inspect destination links"
+      },
+      "production": {
+        "status": 200,
+        "location": null,
+        "title": "Car Paint Protection Dubai | PPF & Ceramic Coating | DIGI-TEC",
+        "canonical": [
+          "https://digitecme.com/services/paint-protection-dubai"
+        ],
+        "h1": [
+          "Car Paint Protection in Dubai"
+        ],
+        "hreflang": [
+          {
+            "lang": "en-AE",
+            "href": "https://digitecme.com/services/paint-protection-dubai"
+          },
+          {
+            "lang": "ar-AE",
+            "href": "https://digitecme.com/ar/services/paint-protection-dubai"
+          },
+          {
+            "lang": "x-default",
+            "href": "https://digitecme.com/services/paint-protection-dubai"
+          }
+        ],
+        "inSitemap": true,
+        "quoteFields": [],
+        "mobile": "No fresh Phase2 mobile release test",
+        "quotationWorkflow": "Not the primary PPF quotation form owner"
+      },
+      "releaseResult": "Current local metadata equals production; check intended content separately"
+    },
+    {
+      "kind": "canonical",
+      "request": "/ar/services/paint-protection-dubai",
+      "expectedStatus": 200,
+      "expectedLocation": null,
+      "local": {
+        "status": 200,
+        "location": null,
+        "title": "حماية طلاء السيارة في دبي | أفلام PPF والسيراميك | ديجي-تك",
+        "canonical": [
+          "https://digitecme.com/ar/services/paint-protection-dubai"
+        ],
+        "hreflang": [
+          {
+            "lang": "en-AE",
+            "href": "https://digitecme.com/services/paint-protection-dubai"
+          },
+          {
+            "lang": "ar-AE",
+            "href": "https://digitecme.com/ar/services/paint-protection-dubai"
+          },
+          {
+            "lang": "x-default",
+            "href": "https://digitecme.com/services/paint-protection-dubai"
+          }
+        ],
+        "h1": [
+          "حماية طلاء السيارة في دبي"
+        ],
+        "quoteFields": [],
+        "fieldsetsDisabled": false,
+        "inSitemap": true,
+        "mobile": "Not directly sampled in final mobile suite; static route checks PASS",
+        "quotationWorkflow": "Not the primary PPF quotation form owner; inspect destination links"
+      },
+      "production": {
+        "status": 200,
+        "location": null,
+        "title": "حماية طلاء السيارة في دبي | أفلام PPF والسيراميك | ديجي-تك",
+        "canonical": [
+          "https://digitecme.com/ar/services/paint-protection-dubai"
+        ],
+        "h1": [
+          "حماية طلاء السيارة في دبي"
+        ],
+        "hreflang": [
+          {
+            "lang": "en-AE",
+            "href": "https://digitecme.com/services/paint-protection-dubai"
+          },
+          {
+            "lang": "ar-AE",
+            "href": "https://digitecme.com/ar/services/paint-protection-dubai"
+          },
+          {
+            "lang": "x-default",
+            "href": "https://digitecme.com/services/paint-protection-dubai"
+          }
+        ],
+        "inSitemap": true,
+        "quoteFields": [],
+        "mobile": "No fresh Phase2 mobile release test",
+        "quotationWorkflow": "Not the primary PPF quotation form owner"
+      },
+      "releaseResult": "Current local metadata equals production; check intended content separately"
+    },
+    {
+      "kind": "canonical",
+      "request": "/blog/ceramic-coating-vs-ppf-dubai",
+      "expectedStatus": 200,
+      "expectedLocation": null,
+      "local": {
+        "status": 200,
+        "location": null,
+        "title": "Ceramic Coating vs PPF: Dubai Owner’s Guide | DIGI-TEC",
+        "canonical": [
+          "https://digitecme.com/blog/ceramic-coating-vs-ppf-dubai"
+        ],
+        "hreflang": [
+          {
+            "lang": "en-AE",
+            "href": "https://digitecme.com/blog/ceramic-coating-vs-ppf-dubai"
+          },
+          {
+            "lang": "ar-AE",
+            "href": "https://digitecme.com/ar/blog/ceramic-coating-vs-ppf-dubai"
+          },
+          {
+            "lang": "x-default",
+            "href": "https://digitecme.com/blog/ceramic-coating-vs-ppf-dubai"
+          }
+        ],
+        "h1": [
+          "Ceramic Coating or PPF in Dubai: Which Should You Choose?"
+        ],
+        "quoteFields": [],
+        "fieldsetsDisabled": false,
+        "inSitemap": true,
+        "mobile": "Not directly sampled in final mobile suite; static route checks PASS",
+        "quotationWorkflow": "Not the primary PPF quotation form owner; inspect destination links"
+      },
+      "production": {
+        "status": 200,
+        "location": null,
+        "title": "Ceramic Coating vs PPF: Dubai Owner’s Guide | DIGI-TEC",
+        "canonical": [
+          "https://digitecme.com/blog/ceramic-coating-vs-ppf-dubai"
+        ],
+        "h1": [
+          "Ceramic Coating or PPF in Dubai: Which Should You Choose?"
+        ],
+        "hreflang": [
+          {
+            "lang": "en-AE",
+            "href": "https://digitecme.com/blog/ceramic-coating-vs-ppf-dubai"
+          },
+          {
+            "lang": "ar-AE",
+            "href": "https://digitecme.com/ar/blog/ceramic-coating-vs-ppf-dubai"
+          },
+          {
+            "lang": "x-default",
+            "href": "https://digitecme.com/blog/ceramic-coating-vs-ppf-dubai"
+          }
+        ],
+        "inSitemap": true,
+        "quoteFields": [],
+        "mobile": "No fresh Phase2 mobile release test",
+        "quotationWorkflow": "Not the primary PPF quotation form owner"
+      },
+      "releaseResult": "Current local metadata equals production; check intended content separately"
+    },
+    {
+      "kind": "canonical",
+      "request": "/ar/blog/ceramic-coating-vs-ppf-dubai",
+      "expectedStatus": 200,
+      "expectedLocation": null,
+      "local": {
+        "status": 200,
+        "location": null,
+        "title": "السيراميك أم أفلام PPF في دبي: دليل اختيار حماية الطلاء | ديجي-تك",
+        "canonical": [
+          "https://digitecme.com/ar/blog/ceramic-coating-vs-ppf-dubai"
+        ],
+        "hreflang": [
+          {
+            "lang": "en-AE",
+            "href": "https://digitecme.com/blog/ceramic-coating-vs-ppf-dubai"
+          },
+          {
+            "lang": "ar-AE",
+            "href": "https://digitecme.com/ar/blog/ceramic-coating-vs-ppf-dubai"
+          },
+          {
+            "lang": "x-default",
+            "href": "https://digitecme.com/blog/ceramic-coating-vs-ppf-dubai"
+          }
+        ],
+        "h1": [
+          "السيراميك أم أفلام PPF في دبي: دليل اختيار حماية الطلاء"
+        ],
+        "quoteFields": [],
+        "fieldsetsDisabled": false,
+        "inSitemap": true,
+        "mobile": "Not directly sampled in final mobile suite; static route checks PASS",
+        "quotationWorkflow": "Not the primary PPF quotation form owner; inspect destination links"
+      },
+      "production": {
+        "status": 200,
+        "location": null,
+        "title": "السيراميك أم أفلام PPF في دبي: دليل اختيار حماية الطلاء | ديجي-تك",
+        "canonical": [
+          "https://digitecme.com/ar/blog/ceramic-coating-vs-ppf-dubai"
+        ],
+        "h1": [
+          "السيراميك أم أفلام PPF في دبي: دليل اختيار حماية الطلاء"
+        ],
+        "hreflang": [
+          {
+            "lang": "en-AE",
+            "href": "https://digitecme.com/blog/ceramic-coating-vs-ppf-dubai"
+          },
+          {
+            "lang": "ar-AE",
+            "href": "https://digitecme.com/ar/blog/ceramic-coating-vs-ppf-dubai"
+          },
+          {
+            "lang": "x-default",
+            "href": "https://digitecme.com/blog/ceramic-coating-vs-ppf-dubai"
+          }
+        ],
+        "inSitemap": true,
+        "quoteFields": [],
+        "mobile": "No fresh Phase2 mobile release test",
+        "quotationWorkflow": "Not the primary PPF quotation form owner"
+      },
+      "releaseResult": "Current local metadata equals production; check intended content separately"
+    },
+    {
+      "kind": "canonical",
+      "request": "/services/ceramic-coating",
+      "expectedStatus": 200,
+      "expectedLocation": null,
+      "local": {
+        "status": 200,
+        "location": null,
+        "title": "Ceramic Coating Dubai | Car Paint Protection | DIGI-TEC",
+        "canonical": [
+          "https://digitecme.com/services/ceramic-coating"
+        ],
+        "hreflang": [
+          {
+            "lang": "en-AE",
+            "href": "https://digitecme.com/services/ceramic-coating"
+          },
+          {
+            "lang": "ar-AE",
+            "href": "https://digitecme.com/ar/services/ceramic-coating"
+          },
+          {
+            "lang": "x-default",
+            "href": "https://digitecme.com/services/ceramic-coating"
+          }
+        ],
+        "h1": [
+          "Ceramic Coating Dubai"
+        ],
+        "quoteFields": [],
+        "fieldsetsDisabled": false,
+        "inSitemap": true,
+        "mobile": "PASS final Phase2 1440/390/320; qa/journey-results.json",
+        "quotationWorkflow": "Not the primary PPF quotation form owner; inspect destination links"
+      },
+      "production": {
+        "status": 200,
+        "location": null,
+        "title": "Ceramic Coating Dubai | Car Paint Protection | DIGI-TEC",
+        "canonical": [
+          "https://digitecme.com/services/ceramic-coating"
+        ],
+        "h1": [
+          "Ceramic Coating Dubai"
+        ],
+        "hreflang": [
+          {
+            "lang": "en-AE",
+            "href": "https://digitecme.com/services/ceramic-coating"
+          },
+          {
+            "lang": "ar-AE",
+            "href": "https://digitecme.com/ar/services/ceramic-coating"
+          },
+          {
+            "lang": "x-default",
+            "href": "https://digitecme.com/services/ceramic-coating"
+          }
+        ],
+        "inSitemap": true,
+        "quoteFields": [],
+        "mobile": "No fresh Phase2 mobile release test",
+        "quotationWorkflow": "Not the primary PPF quotation form owner"
+      },
+      "releaseResult": "Current local metadata equals production; check intended content separately"
+    },
+    {
+      "kind": "canonical",
+      "request": "/ar/services/ceramic-coating",
+      "expectedStatus": 200,
+      "expectedLocation": null,
+      "local": {
+        "status": 200,
+        "location": null,
+        "title": "طلاء سيراميك السيارات دبي | التحضير والعناية | ديجي-تك",
+        "canonical": [
+          "https://digitecme.com/ar/services/ceramic-coating"
+        ],
+        "hreflang": [
+          {
+            "lang": "en-AE",
+            "href": "https://digitecme.com/services/ceramic-coating"
+          },
+          {
+            "lang": "ar-AE",
+            "href": "https://digitecme.com/ar/services/ceramic-coating"
+          },
+          {
+            "lang": "x-default",
+            "href": "https://digitecme.com/services/ceramic-coating"
+          }
+        ],
+        "h1": [
+          "الطلاء السيراميكي للسيارات في دبي"
+        ],
+        "quoteFields": [],
+        "fieldsetsDisabled": false,
+        "inSitemap": true,
+        "mobile": "Not directly sampled in final mobile suite; static route checks PASS",
+        "quotationWorkflow": "Not the primary PPF quotation form owner; inspect destination links"
+      },
+      "production": {
+        "status": 200,
+        "location": null,
+        "title": "طلاء سيراميك السيارات دبي | التحضير والعناية | ديجي-تك",
+        "canonical": [
+          "https://digitecme.com/ar/services/ceramic-coating"
+        ],
+        "h1": [
+          "الطلاء السيراميكي للسيارات في دبي"
+        ],
+        "hreflang": [
+          {
+            "lang": "en-AE",
+            "href": "https://digitecme.com/services/ceramic-coating"
+          },
+          {
+            "lang": "ar-AE",
+            "href": "https://digitecme.com/ar/services/ceramic-coating"
+          },
+          {
+            "lang": "x-default",
+            "href": "https://digitecme.com/services/ceramic-coating"
+          }
+        ],
+        "inSitemap": true,
+        "quoteFields": [],
+        "mobile": "No fresh Phase2 mobile release test",
+        "quotationWorkflow": "Not the primary PPF quotation form owner"
+      },
+      "releaseResult": "Current local metadata equals production; check intended content separately"
+    },
+    {
+      "kind": "alias",
+      "request": "/ppf",
+      "expectedStatus": 308,
+      "expectedLocation": "https://digitecme.com/services/paint-protection-film",
+      "local": {
+        "status": 308,
+        "location": "https://digitecme.com/services/paint-protection-film",
+        "canonical": [],
+        "rendered": "Redirect response; inspect destination canonical row",
+        "inSitemap": false,
+        "mobile": "PASS final Phase2 EN/AR 320/390/1440; browser/browser-results.json",
+        "quotationWorkflow": "PASS local draft/validation/privacy/deduplication; receipt unverified"
+      },
+      "production": {
+        "status": 200,
+        "location": null,
+        "canonical": [
+          "https://digitecme.com/"
+        ],
+        "rendered": "Digi-Tec Performance Center | Independent Car Workshop Dubai",
+        "inSitemap": false,
+        "mobile": "Earlier Phase1 read-only layout baseline only; published new build unverified",
+        "quotationWorkflow": "FAIL new form publication: old form in public initial HTML"
+      },
+      "releaseResult": "FAIL production redirect; PASS local actual entrypoint"
+    },
+    {
+      "kind": "alias",
+      "request": "/ppf/",
+      "expectedStatus": 308,
+      "expectedLocation": "https://digitecme.com/services/paint-protection-film",
+      "local": {
+        "status": 308,
+        "location": "https://digitecme.com/services/paint-protection-film",
+        "canonical": [],
+        "rendered": "Redirect response; inspect destination canonical row",
+        "inSitemap": false,
+        "mobile": "PASS final Phase2 EN/AR 320/390/1440; browser/browser-results.json",
+        "quotationWorkflow": "PASS local draft/validation/privacy/deduplication; receipt unverified"
+      },
+      "production": {
+        "status": 200,
+        "location": null,
+        "canonical": [
+          "https://digitecme.com/"
+        ],
+        "rendered": "Digi-Tec Performance Center | Independent Car Workshop Dubai",
+        "inSitemap": false,
+        "mobile": "Earlier Phase1 read-only layout baseline only; published new build unverified",
+        "quotationWorkflow": "FAIL new form publication: old form in public initial HTML"
+      },
+      "releaseResult": "FAIL production redirect; PASS local actual entrypoint"
+    },
+    {
+      "kind": "alias",
+      "request": "/ar/ppf",
+      "expectedStatus": 308,
+      "expectedLocation": "https://digitecme.com/ar/services/paint-protection-film",
+      "local": {
+        "status": 308,
+        "location": "https://digitecme.com/ar/services/paint-protection-film",
+        "canonical": [],
+        "rendered": "Redirect response; inspect destination canonical row",
+        "inSitemap": false,
+        "mobile": "PASS final Phase2 EN/AR 320/390/1440; browser/browser-results.json",
+        "quotationWorkflow": "PASS local draft/validation/privacy/deduplication; receipt unverified"
+      },
+      "production": {
+        "status": 200,
+        "location": null,
+        "canonical": [
+          "https://digitecme.com/"
+        ],
+        "rendered": "Digi-Tec Performance Center | Independent Car Workshop Dubai",
+        "inSitemap": false,
+        "mobile": "Earlier Phase1 read-only layout baseline only; published new build unverified",
+        "quotationWorkflow": "FAIL new form publication: absent in public initial HTML"
+      },
+      "releaseResult": "FAIL production redirect; PASS local actual entrypoint"
+    },
+    {
+      "kind": "alias",
+      "request": "/ar/ppf/",
+      "expectedStatus": 308,
+      "expectedLocation": "https://digitecme.com/ar/services/paint-protection-film",
+      "local": {
+        "status": 308,
+        "location": "https://digitecme.com/ar/services/paint-protection-film",
+        "canonical": [],
+        "rendered": "Redirect response; inspect destination canonical row",
+        "inSitemap": false,
+        "mobile": "PASS final Phase2 EN/AR 320/390/1440; browser/browser-results.json",
+        "quotationWorkflow": "PASS local draft/validation/privacy/deduplication; receipt unverified"
+      },
+      "production": {
+        "status": 200,
+        "location": null,
+        "canonical": [
+          "https://digitecme.com/"
+        ],
+        "rendered": "Digi-Tec Performance Center | Independent Car Workshop Dubai",
+        "inSitemap": false,
+        "mobile": "Earlier Phase1 read-only layout baseline only; published new build unverified",
+        "quotationWorkflow": "FAIL new form publication: absent in public initial HTML"
+      },
+      "releaseResult": "FAIL production redirect; PASS local actual entrypoint"
+    },
+    {
+      "kind": "alias",
+      "request": "/services/ppf",
+      "expectedStatus": 308,
+      "expectedLocation": "https://digitecme.com/services/paint-protection-film",
+      "local": {
+        "status": 308,
+        "location": "https://digitecme.com/services/paint-protection-film",
+        "canonical": [],
+        "rendered": "Redirect response; inspect destination canonical row",
+        "inSitemap": false,
+        "mobile": "PASS final Phase2 EN/AR 320/390/1440; browser/browser-results.json",
+        "quotationWorkflow": "PASS local draft/validation/privacy/deduplication; receipt unverified"
+      },
+      "production": {
+        "status": 200,
+        "location": null,
+        "canonical": [
+          "https://digitecme.com/"
+        ],
+        "rendered": "Digi-Tec Performance Center | Independent Car Workshop Dubai",
+        "inSitemap": false,
+        "mobile": "Earlier Phase1 read-only layout baseline only; published new build unverified",
+        "quotationWorkflow": "FAIL new form publication: old form in public initial HTML"
+      },
+      "releaseResult": "FAIL production redirect; PASS local actual entrypoint"
+    },
+    {
+      "kind": "alias",
+      "request": "/services/ppf/",
+      "expectedStatus": 308,
+      "expectedLocation": "https://digitecme.com/services/paint-protection-film",
+      "local": {
+        "status": 308,
+        "location": "https://digitecme.com/services/paint-protection-film",
+        "canonical": [],
+        "rendered": "Redirect response; inspect destination canonical row",
+        "inSitemap": false,
+        "mobile": "PASS final Phase2 EN/AR 320/390/1440; browser/browser-results.json",
+        "quotationWorkflow": "PASS local draft/validation/privacy/deduplication; receipt unverified"
+      },
+      "production": {
+        "status": 200,
+        "location": null,
+        "canonical": [
+          "https://digitecme.com/"
+        ],
+        "rendered": "Digi-Tec Performance Center | Independent Car Workshop Dubai",
+        "inSitemap": false,
+        "mobile": "Earlier Phase1 read-only layout baseline only; published new build unverified",
+        "quotationWorkflow": "FAIL new form publication: old form in public initial HTML"
+      },
+      "releaseResult": "FAIL production redirect; PASS local actual entrypoint"
+    },
+    {
+      "kind": "alias",
+      "request": "/ar/services/ppf",
+      "expectedStatus": 308,
+      "expectedLocation": "https://digitecme.com/ar/services/paint-protection-film",
+      "local": {
+        "status": 308,
+        "location": "https://digitecme.com/ar/services/paint-protection-film",
+        "canonical": [],
+        "rendered": "Redirect response; inspect destination canonical row",
+        "inSitemap": false,
+        "mobile": "PASS final Phase2 EN/AR 320/390/1440; browser/browser-results.json",
+        "quotationWorkflow": "PASS local draft/validation/privacy/deduplication; receipt unverified"
+      },
+      "production": {
+        "status": 200,
+        "location": null,
+        "canonical": [
+          "https://digitecme.com/"
+        ],
+        "rendered": "Digi-Tec Performance Center | Independent Car Workshop Dubai",
+        "inSitemap": false,
+        "mobile": "Earlier Phase1 read-only layout baseline only; published new build unverified",
+        "quotationWorkflow": "FAIL new form publication: absent in public initial HTML"
+      },
+      "releaseResult": "FAIL production redirect; PASS local actual entrypoint"
+    },
+    {
+      "kind": "alias",
+      "request": "/ar/services/ppf/",
+      "expectedStatus": 308,
+      "expectedLocation": "https://digitecme.com/ar/services/paint-protection-film",
+      "local": {
+        "status": 308,
+        "location": "https://digitecme.com/ar/services/paint-protection-film",
+        "canonical": [],
+        "rendered": "Redirect response; inspect destination canonical row",
+        "inSitemap": false,
+        "mobile": "PASS final Phase2 EN/AR 320/390/1440; browser/browser-results.json",
+        "quotationWorkflow": "PASS local draft/validation/privacy/deduplication; receipt unverified"
+      },
+      "production": {
+        "status": 200,
+        "location": null,
+        "canonical": [
+          "https://digitecme.com/"
+        ],
+        "rendered": "Digi-Tec Performance Center | Independent Car Workshop Dubai",
+        "inSitemap": false,
+        "mobile": "Earlier Phase1 read-only layout baseline only; published new build unverified",
+        "quotationWorkflow": "FAIL new form publication: absent in public initial HTML"
+      },
+      "releaseResult": "FAIL production redirect; PASS local actual entrypoint"
+    },
+    {
+      "kind": "alias",
+      "request": "/paint-protection",
+      "expectedStatus": 308,
+      "expectedLocation": "https://digitecme.com/services/paint-protection-dubai",
+      "local": {
+        "status": 308,
+        "location": "https://digitecme.com/services/paint-protection-dubai",
+        "canonical": [],
+        "rendered": "Redirect response; inspect destination canonical row",
+        "inSitemap": false,
+        "mobile": "Not directly sampled in final mobile suite; static route checks PASS",
+        "quotationWorkflow": "Not the primary PPF quotation form owner; inspect destination links"
+      },
+      "production": {
+        "status": 200,
+        "location": null,
+        "canonical": [
+          "https://digitecme.com/"
+        ],
+        "rendered": "Digi-Tec Performance Center | Independent Car Workshop Dubai",
+        "inSitemap": false,
+        "mobile": "No fresh Phase2 mobile release test",
+        "quotationWorkflow": "Not the primary PPF quotation form owner"
+      },
+      "releaseResult": "FAIL production redirect; PASS local actual entrypoint"
+    },
+    {
+      "kind": "alias",
+      "request": "/paint-protection/",
+      "expectedStatus": 308,
+      "expectedLocation": "https://digitecme.com/services/paint-protection-dubai",
+      "local": {
+        "status": 308,
+        "location": "https://digitecme.com/services/paint-protection-dubai",
+        "canonical": [],
+        "rendered": "Redirect response; inspect destination canonical row",
+        "inSitemap": false,
+        "mobile": "Not directly sampled in final mobile suite; static route checks PASS",
+        "quotationWorkflow": "Not the primary PPF quotation form owner; inspect destination links"
+      },
+      "production": {
+        "status": 200,
+        "location": null,
+        "canonical": [
+          "https://digitecme.com/"
+        ],
+        "rendered": "Digi-Tec Performance Center | Independent Car Workshop Dubai",
+        "inSitemap": false,
+        "mobile": "No fresh Phase2 mobile release test",
+        "quotationWorkflow": "Not the primary PPF quotation form owner"
+      },
+      "releaseResult": "FAIL production redirect; PASS local actual entrypoint"
+    },
+    {
+      "kind": "alias",
+      "request": "/ar/paint-protection",
+      "expectedStatus": 308,
+      "expectedLocation": "https://digitecme.com/ar/services/paint-protection-dubai",
+      "local": {
+        "status": 308,
+        "location": "https://digitecme.com/ar/services/paint-protection-dubai",
+        "canonical": [],
+        "rendered": "Redirect response; inspect destination canonical row",
+        "inSitemap": false,
+        "mobile": "Not directly sampled in final mobile suite; static route checks PASS",
+        "quotationWorkflow": "Not the primary PPF quotation form owner; inspect destination links"
+      },
+      "production": {
+        "status": 200,
+        "location": null,
+        "canonical": [
+          "https://digitecme.com/"
+        ],
+        "rendered": "Digi-Tec Performance Center | Independent Car Workshop Dubai",
+        "inSitemap": false,
+        "mobile": "No fresh Phase2 mobile release test",
+        "quotationWorkflow": "Not the primary PPF quotation form owner"
+      },
+      "releaseResult": "FAIL production redirect; PASS local actual entrypoint"
+    },
+    {
+      "kind": "alias",
+      "request": "/ar/paint-protection/",
+      "expectedStatus": 308,
+      "expectedLocation": "https://digitecme.com/ar/services/paint-protection-dubai",
+      "local": {
+        "status": 308,
+        "location": "https://digitecme.com/ar/services/paint-protection-dubai",
+        "canonical": [],
+        "rendered": "Redirect response; inspect destination canonical row",
+        "inSitemap": false,
+        "mobile": "Not directly sampled in final mobile suite; static route checks PASS",
+        "quotationWorkflow": "Not the primary PPF quotation form owner; inspect destination links"
+      },
+      "production": {
+        "status": 200,
+        "location": null,
+        "canonical": [
+          "https://digitecme.com/"
+        ],
+        "rendered": "Digi-Tec Performance Center | Independent Car Workshop Dubai",
+        "inSitemap": false,
+        "mobile": "No fresh Phase2 mobile release test",
+        "quotationWorkflow": "Not the primary PPF quotation form owner"
+      },
+      "releaseResult": "FAIL production redirect; PASS local actual entrypoint"
+    },
+    {
+      "kind": "alias",
+      "request": "/car-paint-protection",
+      "expectedStatus": 308,
+      "expectedLocation": "https://digitecme.com/services/paint-protection-dubai",
+      "local": {
+        "status": 308,
+        "location": "https://digitecme.com/services/paint-protection-dubai",
+        "canonical": [],
+        "rendered": "Redirect response; inspect destination canonical row",
+        "inSitemap": false,
+        "mobile": "Not directly sampled in final mobile suite; static route checks PASS",
+        "quotationWorkflow": "Not the primary PPF quotation form owner; inspect destination links"
+      },
+      "production": {
+        "status": 200,
+        "location": null,
+        "canonical": [
+          "https://digitecme.com/"
+        ],
+        "rendered": "Digi-Tec Performance Center | Independent Car Workshop Dubai",
+        "inSitemap": false,
+        "mobile": "No fresh Phase2 mobile release test",
+        "quotationWorkflow": "Not the primary PPF quotation form owner"
+      },
+      "releaseResult": "FAIL production redirect; PASS local actual entrypoint"
+    },
+    {
+      "kind": "alias",
+      "request": "/car-paint-protection/",
+      "expectedStatus": 308,
+      "expectedLocation": "https://digitecme.com/services/paint-protection-dubai",
+      "local": {
+        "status": 308,
+        "location": "https://digitecme.com/services/paint-protection-dubai",
+        "canonical": [],
+        "rendered": "Redirect response; inspect destination canonical row",
+        "inSitemap": false,
+        "mobile": "Not directly sampled in final mobile suite; static route checks PASS",
+        "quotationWorkflow": "Not the primary PPF quotation form owner; inspect destination links"
+      },
+      "production": {
+        "status": 200,
+        "location": null,
+        "canonical": [
+          "https://digitecme.com/"
+        ],
+        "rendered": "Digi-Tec Performance Center | Independent Car Workshop Dubai",
+        "inSitemap": false,
+        "mobile": "No fresh Phase2 mobile release test",
+        "quotationWorkflow": "Not the primary PPF quotation form owner"
+      },
+      "releaseResult": "FAIL production redirect; PASS local actual entrypoint"
+    },
+    {
+      "kind": "alias",
+      "request": "/ar/car-paint-protection",
+      "expectedStatus": 308,
+      "expectedLocation": "https://digitecme.com/ar/services/paint-protection-dubai",
+      "local": {
+        "status": 308,
+        "location": "https://digitecme.com/ar/services/paint-protection-dubai",
+        "canonical": [],
+        "rendered": "Redirect response; inspect destination canonical row",
+        "inSitemap": false,
+        "mobile": "Not directly sampled in final mobile suite; static route checks PASS",
+        "quotationWorkflow": "Not the primary PPF quotation form owner; inspect destination links"
+      },
+      "production": {
+        "status": 200,
+        "location": null,
+        "canonical": [
+          "https://digitecme.com/"
+        ],
+        "rendered": "Digi-Tec Performance Center | Independent Car Workshop Dubai",
+        "inSitemap": false,
+        "mobile": "No fresh Phase2 mobile release test",
+        "quotationWorkflow": "Not the primary PPF quotation form owner"
+      },
+      "releaseResult": "FAIL production redirect; PASS local actual entrypoint"
+    },
+    {
+      "kind": "alias",
+      "request": "/ar/car-paint-protection/",
+      "expectedStatus": 308,
+      "expectedLocation": "https://digitecme.com/ar/services/paint-protection-dubai",
+      "local": {
+        "status": 308,
+        "location": "https://digitecme.com/ar/services/paint-protection-dubai",
+        "canonical": [],
+        "rendered": "Redirect response; inspect destination canonical row",
+        "inSitemap": false,
+        "mobile": "Not directly sampled in final mobile suite; static route checks PASS",
+        "quotationWorkflow": "Not the primary PPF quotation form owner; inspect destination links"
+      },
+      "production": {
+        "status": 200,
+        "location": null,
+        "canonical": [
+          "https://digitecme.com/"
+        ],
+        "rendered": "Digi-Tec Performance Center | Independent Car Workshop Dubai",
+        "inSitemap": false,
+        "mobile": "No fresh Phase2 mobile release test",
+        "quotationWorkflow": "Not the primary PPF quotation form owner"
+      },
+      "releaseResult": "FAIL production redirect; PASS local actual entrypoint"
+    },
+    {
+      "kind": "alias",
+      "request": "/services/paint-protection",
+      "expectedStatus": 308,
+      "expectedLocation": "https://digitecme.com/services/paint-protection-dubai",
+      "local": {
+        "status": 308,
+        "location": "https://digitecme.com/services/paint-protection-dubai",
+        "canonical": [],
+        "rendered": "Redirect response; inspect destination canonical row",
+        "inSitemap": false,
+        "mobile": "Not directly sampled in final mobile suite; static route checks PASS",
+        "quotationWorkflow": "Not the primary PPF quotation form owner; inspect destination links"
+      },
+      "production": {
+        "status": 200,
+        "location": null,
+        "canonical": [
+          "https://digitecme.com/"
+        ],
+        "rendered": "Digi-Tec Performance Center | Independent Car Workshop Dubai",
+        "inSitemap": false,
+        "mobile": "No fresh Phase2 mobile release test",
+        "quotationWorkflow": "Not the primary PPF quotation form owner"
+      },
+      "releaseResult": "FAIL production redirect; PASS local actual entrypoint"
+    },
+    {
+      "kind": "alias",
+      "request": "/services/paint-protection/",
+      "expectedStatus": 308,
+      "expectedLocation": "https://digitecme.com/services/paint-protection-dubai",
+      "local": {
+        "status": 308,
+        "location": "https://digitecme.com/services/paint-protection-dubai",
+        "canonical": [],
+        "rendered": "Redirect response; inspect destination canonical row",
+        "inSitemap": false,
+        "mobile": "Not directly sampled in final mobile suite; static route checks PASS",
+        "quotationWorkflow": "Not the primary PPF quotation form owner; inspect destination links"
+      },
+      "production": {
+        "status": 200,
+        "location": null,
+        "canonical": [
+          "https://digitecme.com/"
+        ],
+        "rendered": "Digi-Tec Performance Center | Independent Car Workshop Dubai",
+        "inSitemap": false,
+        "mobile": "No fresh Phase2 mobile release test",
+        "quotationWorkflow": "Not the primary PPF quotation form owner"
+      },
+      "releaseResult": "FAIL production redirect; PASS local actual entrypoint"
+    },
+    {
+      "kind": "alias",
+      "request": "/ar/services/paint-protection",
+      "expectedStatus": 308,
+      "expectedLocation": "https://digitecme.com/ar/services/paint-protection-dubai",
+      "local": {
+        "status": 308,
+        "location": "https://digitecme.com/ar/services/paint-protection-dubai",
+        "canonical": [],
+        "rendered": "Redirect response; inspect destination canonical row",
+        "inSitemap": false,
+        "mobile": "Not directly sampled in final mobile suite; static route checks PASS",
+        "quotationWorkflow": "Not the primary PPF quotation form owner; inspect destination links"
+      },
+      "production": {
+        "status": 200,
+        "location": null,
+        "canonical": [
+          "https://digitecme.com/"
+        ],
+        "rendered": "Digi-Tec Performance Center | Independent Car Workshop Dubai",
+        "inSitemap": false,
+        "mobile": "No fresh Phase2 mobile release test",
+        "quotationWorkflow": "Not the primary PPF quotation form owner"
+      },
+      "releaseResult": "FAIL production redirect; PASS local actual entrypoint"
+    },
+    {
+      "kind": "alias",
+      "request": "/ar/services/paint-protection/",
+      "expectedStatus": 308,
+      "expectedLocation": "https://digitecme.com/ar/services/paint-protection-dubai",
+      "local": {
+        "status": 308,
+        "location": "https://digitecme.com/ar/services/paint-protection-dubai",
+        "canonical": [],
+        "rendered": "Redirect response; inspect destination canonical row",
+        "inSitemap": false,
+        "mobile": "Not directly sampled in final mobile suite; static route checks PASS",
+        "quotationWorkflow": "Not the primary PPF quotation form owner; inspect destination links"
+      },
+      "production": {
+        "status": 200,
+        "location": null,
+        "canonical": [
+          "https://digitecme.com/"
+        ],
+        "rendered": "Digi-Tec Performance Center | Independent Car Workshop Dubai",
+        "inSitemap": false,
+        "mobile": "No fresh Phase2 mobile release test",
+        "quotationWorkflow": "Not the primary PPF quotation form owner"
+      },
+      "releaseResult": "FAIL production redirect; PASS local actual entrypoint"
+    },
+    {
+      "kind": "alias",
+      "request": "/services/car-paint-protection",
+      "expectedStatus": 308,
+      "expectedLocation": "https://digitecme.com/services/paint-protection-dubai",
+      "local": {
+        "status": 308,
+        "location": "https://digitecme.com/services/paint-protection-dubai",
+        "canonical": [],
+        "rendered": "Redirect response; inspect destination canonical row",
+        "inSitemap": false,
+        "mobile": "Not directly sampled in final mobile suite; static route checks PASS",
+        "quotationWorkflow": "Not the primary PPF quotation form owner; inspect destination links"
+      },
+      "production": {
+        "status": 200,
+        "location": null,
+        "canonical": [
+          "https://digitecme.com/"
+        ],
+        "rendered": "Digi-Tec Performance Center | Independent Car Workshop Dubai",
+        "inSitemap": false,
+        "mobile": "No fresh Phase2 mobile release test",
+        "quotationWorkflow": "Not the primary PPF quotation form owner"
+      },
+      "releaseResult": "FAIL production redirect; PASS local actual entrypoint"
+    },
+    {
+      "kind": "alias",
+      "request": "/services/car-paint-protection/",
+      "expectedStatus": 308,
+      "expectedLocation": "https://digitecme.com/services/paint-protection-dubai",
+      "local": {
+        "status": 308,
+        "location": "https://digitecme.com/services/paint-protection-dubai",
+        "canonical": [],
+        "rendered": "Redirect response; inspect destination canonical row",
+        "inSitemap": false,
+        "mobile": "Not directly sampled in final mobile suite; static route checks PASS",
+        "quotationWorkflow": "Not the primary PPF quotation form owner; inspect destination links"
+      },
+      "production": {
+        "status": 200,
+        "location": null,
+        "canonical": [
+          "https://digitecme.com/"
+        ],
+        "rendered": "Digi-Tec Performance Center | Independent Car Workshop Dubai",
+        "inSitemap": false,
+        "mobile": "No fresh Phase2 mobile release test",
+        "quotationWorkflow": "Not the primary PPF quotation form owner"
+      },
+      "releaseResult": "FAIL production redirect; PASS local actual entrypoint"
+    },
+    {
+      "kind": "alias",
+      "request": "/ar/services/car-paint-protection",
+      "expectedStatus": 308,
+      "expectedLocation": "https://digitecme.com/ar/services/paint-protection-dubai",
+      "local": {
+        "status": 308,
+        "location": "https://digitecme.com/ar/services/paint-protection-dubai",
+        "canonical": [],
+        "rendered": "Redirect response; inspect destination canonical row",
+        "inSitemap": false,
+        "mobile": "Not directly sampled in final mobile suite; static route checks PASS",
+        "quotationWorkflow": "Not the primary PPF quotation form owner; inspect destination links"
+      },
+      "production": {
+        "status": 200,
+        "location": null,
+        "canonical": [
+          "https://digitecme.com/"
+        ],
+        "rendered": "Digi-Tec Performance Center | Independent Car Workshop Dubai",
+        "inSitemap": false,
+        "mobile": "No fresh Phase2 mobile release test",
+        "quotationWorkflow": "Not the primary PPF quotation form owner"
+      },
+      "releaseResult": "FAIL production redirect; PASS local actual entrypoint"
+    },
+    {
+      "kind": "alias",
+      "request": "/ar/services/car-paint-protection/",
+      "expectedStatus": 308,
+      "expectedLocation": "https://digitecme.com/ar/services/paint-protection-dubai",
+      "local": {
+        "status": 308,
+        "location": "https://digitecme.com/ar/services/paint-protection-dubai",
+        "canonical": [],
+        "rendered": "Redirect response; inspect destination canonical row",
+        "inSitemap": false,
+        "mobile": "Not directly sampled in final mobile suite; static route checks PASS",
+        "quotationWorkflow": "Not the primary PPF quotation form owner; inspect destination links"
+      },
+      "production": {
+        "status": 200,
+        "location": null,
+        "canonical": [
+          "https://digitecme.com/"
+        ],
+        "rendered": "Digi-Tec Performance Center | Independent Car Workshop Dubai",
+        "inSitemap": false,
+        "mobile": "No fresh Phase2 mobile release test",
+        "quotationWorkflow": "Not the primary PPF quotation form owner"
+      },
+      "releaseResult": "FAIL production redirect; PASS local actual entrypoint"
+    },
+    {
+      "kind": "canonical-slash",
+      "request": "/services/paint-protection-film/",
+      "expectedStatus": 308,
+      "expectedLocation": "https://digitecme.com/services/paint-protection-film",
+      "local": {
+        "status": 308,
+        "location": "https://digitecme.com/services/paint-protection-film",
+        "canonical": [],
+        "mobile": "PASS final Phase2 EN/AR 320/390/1440; browser/browser-results.json",
+        "quotationWorkflow": "PASS local draft/validation/privacy/deduplication; receipt unverified"
+      },
+      "production": {
+        "status": 200,
+        "location": null,
+        "canonical": [
+          "https://digitecme.com/services/paint-protection-film"
+        ],
+        "rendered": "PPF Dubai | Paint Protection Film Installation | DIGI-TEC",
+        "mobile": "Earlier Phase1 read-only layout baseline only; published new build unverified",
+        "quotationWorkflow": "FAIL new form publication: old form in public initial HTML"
+      },
+      "releaseResult": "FAIL production normalization; PASS local actual entrypoint"
+    },
+    {
+      "kind": "canonical-slash",
+      "request": "/ar/services/paint-protection-film/",
+      "expectedStatus": 308,
+      "expectedLocation": "https://digitecme.com/ar/services/paint-protection-film",
+      "local": {
+        "status": 308,
+        "location": "https://digitecme.com/ar/services/paint-protection-film",
+        "canonical": [],
+        "mobile": "PASS final Phase2 EN/AR 320/390/1440; browser/browser-results.json",
+        "quotationWorkflow": "PASS local draft/validation/privacy/deduplication; receipt unverified"
+      },
+      "production": {
+        "status": 200,
+        "location": null,
+        "canonical": [
+          "https://digitecme.com/ar/services/paint-protection-film"
+        ],
+        "rendered": "أفلام حماية الطلاء PPF دبي | التغطية والتركيب | ديجي-تك",
+        "mobile": "Earlier Phase1 read-only layout baseline only; published new build unverified",
+        "quotationWorkflow": "FAIL new form publication: absent in public initial HTML"
+      },
+      "releaseResult": "FAIL production normalization; PASS local actual entrypoint"
+    },
+    {
+      "kind": "canonical-slash",
+      "request": "/services/paint-protection-dubai/",
+      "expectedStatus": 308,
+      "expectedLocation": "https://digitecme.com/services/paint-protection-dubai",
+      "local": {
+        "status": 308,
+        "location": "https://digitecme.com/services/paint-protection-dubai",
+        "canonical": [],
+        "mobile": "Not directly sampled in final mobile suite; static route checks PASS",
+        "quotationWorkflow": "Not the primary PPF quotation form owner; inspect destination links"
+      },
+      "production": {
+        "status": 200,
+        "location": null,
+        "canonical": [
+          "https://digitecme.com/services/paint-protection-dubai"
+        ],
+        "rendered": "Car Paint Protection Dubai | PPF & Ceramic Coating | DIGI-TEC",
+        "mobile": "No fresh Phase2 mobile release test",
+        "quotationWorkflow": "Not the primary PPF quotation form owner"
+      },
+      "releaseResult": "FAIL production normalization; PASS local actual entrypoint"
+    },
+    {
+      "kind": "canonical-slash",
+      "request": "/ar/services/paint-protection-dubai/",
+      "expectedStatus": 308,
+      "expectedLocation": "https://digitecme.com/ar/services/paint-protection-dubai",
+      "local": {
+        "status": 308,
+        "location": "https://digitecme.com/ar/services/paint-protection-dubai",
+        "canonical": [],
+        "mobile": "Not directly sampled in final mobile suite; static route checks PASS",
+        "quotationWorkflow": "Not the primary PPF quotation form owner; inspect destination links"
+      },
+      "production": {
+        "status": 200,
+        "location": null,
+        "canonical": [
+          "https://digitecme.com/ar/services/paint-protection-dubai"
+        ],
+        "rendered": "حماية طلاء السيارة في دبي | أفلام PPF والسيراميك | ديجي-تك",
+        "mobile": "No fresh Phase2 mobile release test",
+        "quotationWorkflow": "Not the primary PPF quotation form owner"
+      },
+      "releaseResult": "FAIL production normalization; PASS local actual entrypoint"
+    }
+  ],
+  "mobileAndQuotationEvidence": {
+    "currentPhase2": {
+      "file": "outputs/ppf-phase2-2026-10-17/browser/browser-results.json",
+      "passed": true,
+      "widths": [
+        1440,
+        390,
+        320
+      ],
+      "quotationForms": [
+        {
+          "route": "/services/paint-protection-film",
+          "emptyBlocked": true,
+          "invalidVehicleAndContactBlocked": true,
+          "allContactMethods": true,
+          "unsureCoverage": true,
+          "duplicateHandoffSuppressed": true,
+          "personalDataExcluded": true,
+          "noConfirmedLeadEvent": true
+        },
+        {
+          "route": "/ar/services/paint-protection-film",
+          "emptyBlocked": true,
+          "invalidVehicleAndContactBlocked": true,
+          "allContactMethods": true,
+          "unsureCoverage": true,
+          "duplicateHandoffSuppressed": true,
+          "personalDataExcluded": true,
+          "noConfirmedLeadEvent": true
+        }
+      ],
+      "languageSwitch": true,
+      "errors": []
+    },
+    "currentPhase2Journey": {
+      "file": "outputs/ppf-phase2-2026-10-17/qa/journey-results.json",
+      "passed": true
+    },
+    "inheritedPhase1": {
+      "file": "outputs/ppf-phase1-2026-10-17/browser/browser-results.json",
+      "passed": true,
+      "widths": [
+        1440,
+        390,
+        320
+      ],
+      "quotationForms": [
+        {
+          "route": "/services/paint-protection-film",
+          "emptyBlocked": true,
+          "invalidVehicleAndContactBlocked": true,
+          "allContactMethods": true,
+          "unsureCoverage": true,
+          "duplicateHandoffSuppressed": true,
+          "personalDataExcluded": true,
+          "noConfirmedLeadEvent": true
+        },
+        {
+          "route": "/ar/services/paint-protection-film",
+          "emptyBlocked": true,
+          "invalidVehicleAndContactBlocked": true,
+          "allContactMethods": true,
+          "unsureCoverage": true,
+          "duplicateHandoffSuppressed": true,
+          "personalDataExcluded": true,
+          "noConfirmedLeadEvent": true
+        }
+      ],
+      "languageSwitch": true,
+      "scope": "Historical Phase1 build only; kept separately from current Phase2 evidence."
+    },
+    "production": {
+      "mobile": "Phase1 live read-only layout baseline only; no fresh Phase2 browser enquiry or receipt tests performed.",
+      "quotation": "Fresh raw HTML remains pre-Phase1 EN four-field form and no AR form; no received enquiry or booking verified."
+    }
+  }
+}

@@ -1,0 +1,705 @@
+{
+  "checkedAt": "2026-10-17T09:32:43.569Z",
+  "method": "Pure local Request/Response handlers using an injected 200 homepage origin. No HTTP/network requests, account access, deployment or configuration changes.",
+  "entrypointConfig": {
+    "name": "digitec-production-seo-router",
+    "main": "production-seo-router.js",
+    "routes": [
+      {
+        "pattern": "digitecme.com/*",
+        "zone_name": "digitecme.com"
+      },
+      {
+        "pattern": "www.digitecme.com/*",
+        "zone_name": "digitecme.com"
+      }
+    ],
+    "workers_dev": false
+  },
+  "beforeSource": "outputs/ppf-phase2-2026-10-17/baseline/source/cloudflare/production-seo-router.js",
+  "beforeAfterCases": [
+    {
+      "route": "/ppf",
+      "url": "https://digitecme.com/ppf?utm_source=google&tag=a&tag=b",
+      "before": {
+        "status": 200,
+        "location": null
+      },
+      "after": {
+        "status": 308,
+        "location": "https://digitecme.com/services/paint-protection-film?utm_source=google&tag=a&tag=b"
+      },
+      "generated": {
+        "status": 308,
+        "location": "https://digitecme.com/services/paint-protection-film?utm_source=google&tag=a&tag=b"
+      }
+    },
+    {
+      "route": "/ppf/",
+      "url": "https://digitecme.com/ppf/?utm_source=google&tag=a&tag=b",
+      "before": {
+        "status": 200,
+        "location": null
+      },
+      "after": {
+        "status": 308,
+        "location": "https://digitecme.com/services/paint-protection-film?utm_source=google&tag=a&tag=b"
+      },
+      "generated": {
+        "status": 308,
+        "location": "https://digitecme.com/services/paint-protection-film?utm_source=google&tag=a&tag=b"
+      }
+    },
+    {
+      "route": "/ar/ppf",
+      "url": "https://digitecme.com/ar/ppf?utm_source=google&tag=a&tag=b",
+      "before": {
+        "status": 200,
+        "location": null
+      },
+      "after": {
+        "status": 308,
+        "location": "https://digitecme.com/ar/services/paint-protection-film?utm_source=google&tag=a&tag=b"
+      },
+      "generated": {
+        "status": 308,
+        "location": "https://digitecme.com/ar/services/paint-protection-film?utm_source=google&tag=a&tag=b"
+      }
+    },
+    {
+      "route": "/ar/ppf/",
+      "url": "https://digitecme.com/ar/ppf/?utm_source=google&tag=a&tag=b",
+      "before": {
+        "status": 200,
+        "location": null
+      },
+      "after": {
+        "status": 308,
+        "location": "https://digitecme.com/ar/services/paint-protection-film?utm_source=google&tag=a&tag=b"
+      },
+      "generated": {
+        "status": 308,
+        "location": "https://digitecme.com/ar/services/paint-protection-film?utm_source=google&tag=a&tag=b"
+      }
+    },
+    {
+      "route": "/services/ppf",
+      "url": "https://digitecme.com/services/ppf?utm_source=google&tag=a&tag=b",
+      "before": {
+        "status": 200,
+        "location": null
+      },
+      "after": {
+        "status": 308,
+        "location": "https://digitecme.com/services/paint-protection-film?utm_source=google&tag=a&tag=b"
+      },
+      "generated": {
+        "status": 308,
+        "location": "https://digitecme.com/services/paint-protection-film?utm_source=google&tag=a&tag=b"
+      }
+    },
+    {
+      "route": "/services/ppf/",
+      "url": "https://digitecme.com/services/ppf/?utm_source=google&tag=a&tag=b",
+      "before": {
+        "status": 200,
+        "location": null
+      },
+      "after": {
+        "status": 308,
+        "location": "https://digitecme.com/services/paint-protection-film?utm_source=google&tag=a&tag=b"
+      },
+      "generated": {
+        "status": 308,
+        "location": "https://digitecme.com/services/paint-protection-film?utm_source=google&tag=a&tag=b"
+      }
+    },
+    {
+      "route": "/ar/services/ppf",
+      "url": "https://digitecme.com/ar/services/ppf?utm_source=google&tag=a&tag=b",
+      "before": {
+        "status": 200,
+        "location": null
+      },
+      "after": {
+        "status": 308,
+        "location": "https://digitecme.com/ar/services/paint-protection-film?utm_source=google&tag=a&tag=b"
+      },
+      "generated": {
+        "status": 308,
+        "location": "https://digitecme.com/ar/services/paint-protection-film?utm_source=google&tag=a&tag=b"
+      }
+    },
+    {
+      "route": "/ar/services/ppf/",
+      "url": "https://digitecme.com/ar/services/ppf/?utm_source=google&tag=a&tag=b",
+      "before": {
+        "status": 200,
+        "location": null
+      },
+      "after": {
+        "status": 308,
+        "location": "https://digitecme.com/ar/services/paint-protection-film?utm_source=google&tag=a&tag=b"
+      },
+      "generated": {
+        "status": 308,
+        "location": "https://digitecme.com/ar/services/paint-protection-film?utm_source=google&tag=a&tag=b"
+      }
+    },
+    {
+      "route": "/paint-protection",
+      "url": "https://digitecme.com/paint-protection?utm_source=google&tag=a&tag=b",
+      "before": {
+        "status": 200,
+        "location": null
+      },
+      "after": {
+        "status": 308,
+        "location": "https://digitecme.com/services/paint-protection-dubai?utm_source=google&tag=a&tag=b"
+      },
+      "generated": {
+        "status": 308,
+        "location": "https://digitecme.com/services/paint-protection-dubai?utm_source=google&tag=a&tag=b"
+      }
+    },
+    {
+      "route": "/paint-protection/",
+      "url": "https://digitecme.com/paint-protection/?utm_source=google&tag=a&tag=b",
+      "before": {
+        "status": 200,
+        "location": null
+      },
+      "after": {
+        "status": 308,
+        "location": "https://digitecme.com/services/paint-protection-dubai?utm_source=google&tag=a&tag=b"
+      },
+      "generated": {
+        "status": 308,
+        "location": "https://digitecme.com/services/paint-protection-dubai?utm_source=google&tag=a&tag=b"
+      }
+    },
+    {
+      "route": "/ar/paint-protection",
+      "url": "https://digitecme.com/ar/paint-protection?utm_source=google&tag=a&tag=b",
+      "before": {
+        "status": 200,
+        "location": null
+      },
+      "after": {
+        "status": 308,
+        "location": "https://digitecme.com/ar/services/paint-protection-dubai?utm_source=google&tag=a&tag=b"
+      },
+      "generated": {
+        "status": 308,
+        "location": "https://digitecme.com/ar/services/paint-protection-dubai?utm_source=google&tag=a&tag=b"
+      }
+    },
+    {
+      "route": "/ar/paint-protection/",
+      "url": "https://digitecme.com/ar/paint-protection/?utm_source=google&tag=a&tag=b",
+      "before": {
+        "status": 200,
+        "location": null
+      },
+      "after": {
+        "status": 308,
+        "location": "https://digitecme.com/ar/services/paint-protection-dubai?utm_source=google&tag=a&tag=b"
+      },
+      "generated": {
+        "status": 308,
+        "location": "https://digitecme.com/ar/services/paint-protection-dubai?utm_source=google&tag=a&tag=b"
+      }
+    },
+    {
+      "route": "/car-paint-protection",
+      "url": "https://digitecme.com/car-paint-protection?utm_source=google&tag=a&tag=b",
+      "before": {
+        "status": 200,
+        "location": null
+      },
+      "after": {
+        "status": 308,
+        "location": "https://digitecme.com/services/paint-protection-dubai?utm_source=google&tag=a&tag=b"
+      },
+      "generated": {
+        "status": 308,
+        "location": "https://digitecme.com/services/paint-protection-dubai?utm_source=google&tag=a&tag=b"
+      }
+    },
+    {
+      "route": "/car-paint-protection/",
+      "url": "https://digitecme.com/car-paint-protection/?utm_source=google&tag=a&tag=b",
+      "before": {
+        "status": 200,
+        "location": null
+      },
+      "after": {
+        "status": 308,
+        "location": "https://digitecme.com/services/paint-protection-dubai?utm_source=google&tag=a&tag=b"
+      },
+      "generated": {
+        "status": 308,
+        "location": "https://digitecme.com/services/paint-protection-dubai?utm_source=google&tag=a&tag=b"
+      }
+    },
+    {
+      "route": "/ar/car-paint-protection",
+      "url": "https://digitecme.com/ar/car-paint-protection?utm_source=google&tag=a&tag=b",
+      "before": {
+        "status": 200,
+        "location": null
+      },
+      "after": {
+        "status": 308,
+        "location": "https://digitecme.com/ar/services/paint-protection-dubai?utm_source=google&tag=a&tag=b"
+      },
+      "generated": {
+        "status": 308,
+        "location": "https://digitecme.com/ar/services/paint-protection-dubai?utm_source=google&tag=a&tag=b"
+      }
+    },
+    {
+      "route": "/ar/car-paint-protection/",
+      "url": "https://digitecme.com/ar/car-paint-protection/?utm_source=google&tag=a&tag=b",
+      "before": {
+        "status": 200,
+        "location": null
+      },
+      "after": {
+        "status": 308,
+        "location": "https://digitecme.com/ar/services/paint-protection-dubai?utm_source=google&tag=a&tag=b"
+      },
+      "generated": {
+        "status": 308,
+        "location": "https://digitecme.com/ar/services/paint-protection-dubai?utm_source=google&tag=a&tag=b"
+      }
+    },
+    {
+      "route": "/services/paint-protection",
+      "url": "https://digitecme.com/services/paint-protection?utm_source=google&tag=a&tag=b",
+      "before": {
+        "status": 200,
+        "location": null
+      },
+      "after": {
+        "status": 308,
+        "location": "https://digitecme.com/services/paint-protection-dubai?utm_source=google&tag=a&tag=b"
+      },
+      "generated": {
+        "status": 308,
+        "location": "https://digitecme.com/services/paint-protection-dubai?utm_source=google&tag=a&tag=b"
+      }
+    },
+    {
+      "route": "/services/paint-protection/",
+      "url": "https://digitecme.com/services/paint-protection/?utm_source=google&tag=a&tag=b",
+      "before": {
+        "status": 200,
+        "location": null
+      },
+      "after": {
+        "status": 308,
+        "location": "https://digitecme.com/services/paint-protection-dubai?utm_source=google&tag=a&tag=b"
+      },
+      "generated": {
+        "status": 308,
+        "location": "https://digitecme.com/services/paint-protection-dubai?utm_source=google&tag=a&tag=b"
+      }
+    },
+    {
+      "route": "/ar/services/paint-protection",
+      "url": "https://digitecme.com/ar/services/paint-protection?utm_source=google&tag=a&tag=b",
+      "before": {
+        "status": 200,
+        "location": null
+      },
+      "after": {
+        "status": 308,
+        "location": "https://digitecme.com/ar/services/paint-protection-dubai?utm_source=google&tag=a&tag=b"
+      },
+      "generated": {
+        "status": 308,
+        "location": "https://digitecme.com/ar/services/paint-protection-dubai?utm_source=google&tag=a&tag=b"
+      }
+    },
+    {
+      "route": "/ar/services/paint-protection/",
+      "url": "https://digitecme.com/ar/services/paint-protection/?utm_source=google&tag=a&tag=b",
+      "before": {
+        "status": 200,
+        "location": null
+      },
+      "after": {
+        "status": 308,
+        "location": "https://digitecme.com/ar/services/paint-protection-dubai?utm_source=google&tag=a&tag=b"
+      },
+      "generated": {
+        "status": 308,
+        "location": "https://digitecme.com/ar/services/paint-protection-dubai?utm_source=google&tag=a&tag=b"
+      }
+    },
+    {
+      "route": "/services/car-paint-protection",
+      "url": "https://digitecme.com/services/car-paint-protection?utm_source=google&tag=a&tag=b",
+      "before": {
+        "status": 200,
+        "location": null
+      },
+      "after": {
+        "status": 308,
+        "location": "https://digitecme.com/services/paint-protection-dubai?utm_source=google&tag=a&tag=b"
+      },
+      "generated": {
+        "status": 308,
+        "location": "https://digitecme.com/services/paint-protection-dubai?utm_source=google&tag=a&tag=b"
+      }
+    },
+    {
+      "route": "/services/car-paint-protection/",
+      "url": "https://digitecme.com/services/car-paint-protection/?utm_source=google&tag=a&tag=b",
+      "before": {
+        "status": 200,
+        "location": null
+      },
+      "after": {
+        "status": 308,
+        "location": "https://digitecme.com/services/paint-protection-dubai?utm_source=google&tag=a&tag=b"
+      },
+      "generated": {
+        "status": 308,
+        "location": "https://digitecme.com/services/paint-protection-dubai?utm_source=google&tag=a&tag=b"
+      }
+    },
+    {
+      "route": "/ar/services/car-paint-protection",
+      "url": "https://digitecme.com/ar/services/car-paint-protection?utm_source=google&tag=a&tag=b",
+      "before": {
+        "status": 200,
+        "location": null
+      },
+      "after": {
+        "status": 308,
+        "location": "https://digitecme.com/ar/services/paint-protection-dubai?utm_source=google&tag=a&tag=b"
+      },
+      "generated": {
+        "status": 308,
+        "location": "https://digitecme.com/ar/services/paint-protection-dubai?utm_source=google&tag=a&tag=b"
+      }
+    },
+    {
+      "route": "/ar/services/car-paint-protection/",
+      "url": "https://digitecme.com/ar/services/car-paint-protection/?utm_source=google&tag=a&tag=b",
+      "before": {
+        "status": 200,
+        "location": null
+      },
+      "after": {
+        "status": 308,
+        "location": "https://digitecme.com/ar/services/paint-protection-dubai?utm_source=google&tag=a&tag=b"
+      },
+      "generated": {
+        "status": 308,
+        "location": "https://digitecme.com/ar/services/paint-protection-dubai?utm_source=google&tag=a&tag=b"
+      }
+    },
+    {
+      "route": "/services/paint-protection-film",
+      "url": "https://digitecme.com/services/paint-protection-film?utm_source=google&tag=a&tag=b",
+      "before": {
+        "status": 200,
+        "location": null
+      },
+      "after": {
+        "status": 200,
+        "location": null
+      },
+      "generated": {
+        "status": 200,
+        "location": null
+      }
+    },
+    {
+      "route": "/services/paint-protection-film/",
+      "url": "https://digitecme.com/services/paint-protection-film/?utm_source=google&tag=a&tag=b",
+      "before": {
+        "status": 200,
+        "location": null
+      },
+      "after": {
+        "status": 308,
+        "location": "https://digitecme.com/services/paint-protection-film?utm_source=google&tag=a&tag=b"
+      },
+      "generated": {
+        "status": 308,
+        "location": "https://digitecme.com/services/paint-protection-film?utm_source=google&tag=a&tag=b"
+      }
+    },
+    {
+      "route": "/ar/services/paint-protection-film",
+      "url": "https://digitecme.com/ar/services/paint-protection-film?utm_source=google&tag=a&tag=b",
+      "before": {
+        "status": 200,
+        "location": null
+      },
+      "after": {
+        "status": 200,
+        "location": null
+      },
+      "generated": {
+        "status": 200,
+        "location": null
+      }
+    },
+    {
+      "route": "/ar/services/paint-protection-film/",
+      "url": "https://digitecme.com/ar/services/paint-protection-film/?utm_source=google&tag=a&tag=b",
+      "before": {
+        "status": 200,
+        "location": null
+      },
+      "after": {
+        "status": 308,
+        "location": "https://digitecme.com/ar/services/paint-protection-film?utm_source=google&tag=a&tag=b"
+      },
+      "generated": {
+        "status": 308,
+        "location": "https://digitecme.com/ar/services/paint-protection-film?utm_source=google&tag=a&tag=b"
+      }
+    },
+    {
+      "route": "/services/paint-protection-dubai",
+      "url": "https://digitecme.com/services/paint-protection-dubai?utm_source=google&tag=a&tag=b",
+      "before": {
+        "status": 200,
+        "location": null
+      },
+      "after": {
+        "status": 200,
+        "location": null
+      },
+      "generated": {
+        "status": 200,
+        "location": null
+      }
+    },
+    {
+      "route": "/services/paint-protection-dubai/",
+      "url": "https://digitecme.com/services/paint-protection-dubai/?utm_source=google&tag=a&tag=b",
+      "before": {
+        "status": 200,
+        "location": null
+      },
+      "after": {
+        "status": 308,
+        "location": "https://digitecme.com/services/paint-protection-dubai?utm_source=google&tag=a&tag=b"
+      },
+      "generated": {
+        "status": 308,
+        "location": "https://digitecme.com/services/paint-protection-dubai?utm_source=google&tag=a&tag=b"
+      }
+    },
+    {
+      "route": "/ar/services/paint-protection-dubai",
+      "url": "https://digitecme.com/ar/services/paint-protection-dubai?utm_source=google&tag=a&tag=b",
+      "before": {
+        "status": 200,
+        "location": null
+      },
+      "after": {
+        "status": 200,
+        "location": null
+      },
+      "generated": {
+        "status": 200,
+        "location": null
+      }
+    },
+    {
+      "route": "/ar/services/paint-protection-dubai/",
+      "url": "https://digitecme.com/ar/services/paint-protection-dubai/?utm_source=google&tag=a&tag=b",
+      "before": {
+        "status": 200,
+        "location": null
+      },
+      "after": {
+        "status": 308,
+        "location": "https://digitecme.com/ar/services/paint-protection-dubai?utm_source=google&tag=a&tag=b"
+      },
+      "generated": {
+        "status": 308,
+        "location": "https://digitecme.com/ar/services/paint-protection-dubai?utm_source=google&tag=a&tag=b"
+      }
+    }
+  ],
+  "artifactComparison": [
+    {
+      "file": "cloudflare/digitec-seo-router.js",
+      "sha256": "47208557115070b192a66e867c27be7b847b00a6304c25519fdb84033b7d1e45",
+      "bytes": 78360,
+      "ppfAliases": [
+        {
+          "source": "/ppf",
+          "target": "/services/paint-protection-film"
+        },
+        {
+          "source": "/ar/ppf",
+          "target": "/ar/services/paint-protection-film"
+        },
+        {
+          "source": "/services/ppf",
+          "target": "/services/paint-protection-film"
+        },
+        {
+          "source": "/ar/services/ppf",
+          "target": "/ar/services/paint-protection-film"
+        },
+        {
+          "source": "/paint-protection",
+          "target": "/services/paint-protection-dubai"
+        },
+        {
+          "source": "/ar/paint-protection",
+          "target": "/ar/services/paint-protection-dubai"
+        },
+        {
+          "source": "/car-paint-protection",
+          "target": "/services/paint-protection-dubai"
+        },
+        {
+          "source": "/ar/car-paint-protection",
+          "target": "/ar/services/paint-protection-dubai"
+        },
+        {
+          "source": "/services/paint-protection",
+          "target": "/services/paint-protection-dubai"
+        },
+        {
+          "source": "/ar/services/paint-protection",
+          "target": "/ar/services/paint-protection-dubai"
+        },
+        {
+          "source": "/services/car-paint-protection",
+          "target": "/services/paint-protection-dubai"
+        },
+        {
+          "source": "/ar/services/car-paint-protection",
+          "target": "/ar/services/paint-protection-dubai"
+        }
+      ],
+      "hasGuard": true
+    },
+    {
+      "file": "dist/_worker.js",
+      "sha256": "47208557115070b192a66e867c27be7b847b00a6304c25519fdb84033b7d1e45",
+      "bytes": 78360,
+      "ppfAliases": [
+        {
+          "source": "/ppf",
+          "target": "/services/paint-protection-film"
+        },
+        {
+          "source": "/ar/ppf",
+          "target": "/ar/services/paint-protection-film"
+        },
+        {
+          "source": "/services/ppf",
+          "target": "/services/paint-protection-film"
+        },
+        {
+          "source": "/ar/services/ppf",
+          "target": "/ar/services/paint-protection-film"
+        },
+        {
+          "source": "/paint-protection",
+          "target": "/services/paint-protection-dubai"
+        },
+        {
+          "source": "/ar/paint-protection",
+          "target": "/ar/services/paint-protection-dubai"
+        },
+        {
+          "source": "/car-paint-protection",
+          "target": "/services/paint-protection-dubai"
+        },
+        {
+          "source": "/ar/car-paint-protection",
+          "target": "/ar/services/paint-protection-dubai"
+        },
+        {
+          "source": "/services/paint-protection",
+          "target": "/services/paint-protection-dubai"
+        },
+        {
+          "source": "/ar/services/paint-protection",
+          "target": "/ar/services/paint-protection-dubai"
+        },
+        {
+          "source": "/services/car-paint-protection",
+          "target": "/services/paint-protection-dubai"
+        },
+        {
+          "source": "/ar/services/car-paint-protection",
+          "target": "/ar/services/paint-protection-dubai"
+        }
+      ],
+      "hasGuard": true
+    },
+    {
+      "file": "outputs/ppf-phase2-2026-10-17/production/_worker.js",
+      "sha256": "47208557115070b192a66e867c27be7b847b00a6304c25519fdb84033b7d1e45",
+      "bytes": 78360,
+      "ppfAliases": [
+        {
+          "source": "/ppf",
+          "target": "/services/paint-protection-film"
+        },
+        {
+          "source": "/ar/ppf",
+          "target": "/ar/services/paint-protection-film"
+        },
+        {
+          "source": "/services/ppf",
+          "target": "/services/paint-protection-film"
+        },
+        {
+          "source": "/ar/services/ppf",
+          "target": "/ar/services/paint-protection-film"
+        },
+        {
+          "source": "/paint-protection",
+          "target": "/services/paint-protection-dubai"
+        },
+        {
+          "source": "/ar/paint-protection",
+          "target": "/ar/services/paint-protection-dubai"
+        },
+        {
+          "source": "/car-paint-protection",
+          "target": "/services/paint-protection-dubai"
+        },
+        {
+          "source": "/ar/car-paint-protection",
+          "target": "/ar/services/paint-protection-dubai"
+        },
+        {
+          "source": "/services/paint-protection",
+          "target": "/services/paint-protection-dubai"
+        },
+        {
+          "source": "/ar/services/paint-protection",
+          "target": "/ar/services/paint-protection-dubai"
+        },
+        {
+          "source": "/services/car-paint-protection",
+          "target": "/services/paint-protection-dubai"
+        },
+        {
+          "source": "/ar/services/car-paint-protection",
+          "target": "/ar/services/paint-protection-dubai"
+        }
+      ],
+      "hasGuard": true
+    }
+  ],
+  "limits": "A downloadable Worker is an origin asset, not proof of edge execution. Public behaviors contradict the tested entrypoint handlers, but deployed version, route bindings, route precedence and account ownership require authenticated inspection."
+}

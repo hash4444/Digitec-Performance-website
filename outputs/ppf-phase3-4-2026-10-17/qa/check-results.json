@@ -1,0 +1,56 @@
+{
+  "asOf": "2026-10-17",
+  "timezone": "Asia/Dubai",
+  "sourceSha256": "b2bf92aba294bbb0807b1abd4943e5b47dd93b262e4dd99a306e04b6f00049da",
+  "passed": true,
+  "checks": [
+    {
+      "name": "typescript-app",
+      "exitCode": 0,
+      "seconds": 6.2377979,
+      "log": "qa/typescript-app.log"
+    },
+    {
+      "name": "typescript-node",
+      "exitCode": 0,
+      "seconds": 1.1366671,
+      "log": "qa/typescript-node.log"
+    },
+    {
+      "name": "eslint",
+      "exitCode": 0,
+      "seconds": 4.246345,
+      "log": "qa/eslint.log"
+    },
+    {
+      "name": "focused-local-verification",
+      "exitCode": 0,
+      "seconds": 1.8978481999999999,
+      "log": "qa/local-verification.log"
+    }
+  ],
+  "eslint": {
+    "errors": 0,
+    "warnings": 11
+  },
+  "focusedVerification": {
+    "checks": 1265,
+    "passed": 1265,
+    "failed": 0,
+    "routes": 13,
+    "internalLinkInstances": 768,
+    "distinctLocalDestinations": 151,
+    "localImageInstances": 290,
+    "prerenderedAndFreshSsrPpfCorrectionCopy": true,
+    "prerenderedAndFreshSsrVisitConfirmationCopy": true,
+    "metadataComparedWith": "Phase2 metadata-after.json copied as current baseline/metadata-before.json",
+    "metadataComparisons": 52,
+    "metadataChanges": 0
+  },
+  "limitations": [
+    "Local final build, fresh SSR and generated worker only; no production repair verified.",
+    "Existing English and Arabic services directory templates lack a main landmark; no source correction made.",
+    "No master validator or browser tests run by this workstream; parent owns browser QA.",
+    "No app source edited and no external analytics or live enquiries sent."
+  ]
+}

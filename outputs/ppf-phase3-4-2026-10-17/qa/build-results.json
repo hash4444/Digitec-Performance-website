@@ -1,0 +1,124 @@
+{
+  "startedAt": "2026-10-17T09:47:31.870Z",
+  "outputDirectory": "dist",
+  "sourceManifest": "release-qa.local/source-manifest.json",
+  "sourceSha256": "b2bf92aba294bbb0807b1abd4943e5b47dd93b262e4dd99a306e04b6f00049da",
+  "steps": [
+    {
+      "command": "vite build --ssr src/entry-server.tsx --outDir dist-server",
+      "exitCode": 0,
+      "seconds": 2.23,
+      "log": "release-qa.local/build-1.log"
+    },
+    {
+      "command": "node scripts/sync-routing-paths.mjs",
+      "exitCode": 0,
+      "seconds": 0.333,
+      "log": "release-qa.local/build-2.log"
+    },
+    {
+      "command": "vite build",
+      "exitCode": 0,
+      "seconds": 7.118,
+      "log": "release-qa.local/build-3.log"
+    },
+    {
+      "command": "vite build --ssr src/entry-server.tsx --outDir dist-server",
+      "exitCode": 0,
+      "seconds": 2.004,
+      "log": "release-qa.local/build-4.log"
+    },
+    {
+      "command": "node scripts/prerender.mjs",
+      "exitCode": 0,
+      "seconds": 6.657,
+      "log": "release-qa.local/build-5.log"
+    },
+    {
+      "command": "node scripts/generate-hosting-rules.mjs",
+      "exitCode": 0,
+      "seconds": 0.503,
+      "log": "release-qa.local/build-6.log"
+    },
+    {
+      "command": "node scripts/test-hosting-rules.mjs",
+      "exitCode": 0,
+      "seconds": 0.097,
+      "log": "release-qa.local/build-7.log"
+    },
+    {
+      "command": "node scripts/test-production-seo-router.mjs",
+      "exitCode": 0,
+      "seconds": 0.127,
+      "log": "release-qa.local/build-8.log"
+    },
+    {
+      "command": "node scripts/validate-seo.mjs",
+      "exitCode": 0,
+      "seconds": 1.499,
+      "log": "release-qa.local/build-9.log"
+    },
+    {
+      "command": "node scripts/validate-ppf.mjs",
+      "exitCode": 0,
+      "seconds": 0.612,
+      "log": "release-qa.local/build-10.log"
+    },
+    {
+      "command": "node scripts/validate-paint-correction.mjs",
+      "exitCode": 0,
+      "seconds": 0.325,
+      "log": "release-qa.local/build-11.log"
+    },
+    {
+      "command": "node scripts/validate-protection-release.mjs",
+      "exitCode": 0,
+      "seconds": 0.391,
+      "log": "release-qa.local/build-12.log"
+    },
+    {
+      "command": "node scripts/validate-query-release.mjs",
+      "exitCode": 0,
+      "seconds": 1.326,
+      "log": "release-qa.local/build-13.log"
+    },
+    {
+      "command": "node scripts/test-contact-attribution.mjs",
+      "exitCode": 0,
+      "seconds": 0.232,
+      "log": "release-qa.local/build-14.log"
+    },
+    {
+      "command": "node scripts/test-ppf-enquiry.mjs",
+      "exitCode": 0,
+      "seconds": 0.252,
+      "log": "release-qa.local/build-15.log"
+    },
+    {
+      "command": "node scripts/validate-oil-change.mjs",
+      "exitCode": 0,
+      "seconds": 0.507,
+      "log": "release-qa.local/build-16.log"
+    },
+    {
+      "command": "node scripts/validate-suspension.mjs",
+      "exitCode": 0,
+      "seconds": 0.753,
+      "log": "release-qa.local/build-17.log"
+    },
+    {
+      "command": "node scripts/validate-transmission.mjs",
+      "exitCode": 0,
+      "seconds": 0.828,
+      "log": "release-qa.local/build-18.log"
+    },
+    {
+      "command": "node scripts/validate-social-metadata.mjs",
+      "exitCode": 0,
+      "seconds": 0.722,
+      "log": "release-qa.local/build-19.log"
+    }
+  ],
+  "passed": true,
+  "finishedAt": "2026-10-17T09:47:58.647Z"
+}
