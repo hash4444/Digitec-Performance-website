@@ -406,6 +406,8 @@ const createAdditionalBrand = ([name, slug]: [string, string]): Brand => {
         { q: 'Can DIGI-TEC assess a Volkswagen DSG warning or jerking?', a: 'A transmission inspection can be requested. The fitted gearbox, fault information, service history and operating symptoms guide the checks; jerking does not by itself prove a mechatronic or clutch failure.' },
         { q: 'Do you use ODIS for Volkswagen diagnostics?', a: 'DIGI-TEC has ODIS capability. Available modules, live data and guided functions depend on the vehicle and access; a fault code is followed by appropriate testing before parts are recommended.' },
         { q: 'Does an EPC light identify the failed component?', a: 'No. Record the warning and any loss of power or rough running. The affected control system and exact cause need diagnosis; limit driving and request advice if the vehicle is running poorly.' },
+        { q: 'What is included in Volkswagen routine maintenance?', a: 'The model-year schedule, fitted engine, mileage and service history determine which oil, filters, fluids and inspection items are due. Oil approvals and any gearbox service procedure are confirmed for the vehicle before quotation; no single interval applies to every Volkswagen.' },
+        { q: 'How do I request a Volkswagen service or repair estimate?', a: 'Call the Al Quoz workshop or send a WhatsApp message with the model, year, mileage, service history and symptoms. The team confirms the appropriate first assessment and availability. Repair costs and timing may require inspection; parts, fluids and labour are explained before approval.' },
       ],
       relatedServices: ['transmission-repair-dubai', 'car-diagnostics-dubai', 'mechanical-repair-dubai', 'car-ac-repair-dubai'],
     };

@@ -123,7 +123,7 @@ export const PRIORITY_BRAND_SEO: Record<string, PriorityBrandSeo> = {
   },
   'volkswagen-service-dubai': {
     title: 'Volkswagen Service & Repair Dubai | DIGI-TEC Al Quoz',
-    description: 'Volkswagen service and repair in Dubai, with DSG assessment, ODIS-supported diagnostics, engine, AC and brake inspections at DIGI-TEC in Al Quoz.',
+    description: 'Volkswagen service and repair in Al Quoz, Dubai. Discuss routine maintenance, diagnostics, mechanical and electrical faults with DIGI-TEC. Request an assessment.',
   },
   'rox-service-dubai': {
     title: 'ROX 01 Service & Repair Dubai | DIGI-TEC Al Quoz',

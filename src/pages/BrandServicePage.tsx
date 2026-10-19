@@ -6,6 +6,8 @@ import Header from '@/components/Header';
 import BentleyCameraSection from '@/components/BentleyCameraSection';
 import { Footer } from '@/components/Footer';
 import { FinalCTA } from '@/components/FinalCTA';
+import { RepairEnquiryPanel } from '@/components/RepairEnquiryPanel';
+import { getRepairServiceContent, refineRepairService } from '@/data/repairServiceContent';
 import { serviceEnquiryLabel } from '@/data/queryServiceContent';
 import { arabicServiceContent } from '@/data/arabicServiceContent';
 import { useSeo } from '@/hooks/use-seo';
@@ -580,7 +582,7 @@ const BrandServicePage: React.FC<BrandServicePageProps> = ({
       } : {}),
     };
   })() : sourceCombo;
-  const combo = localizedCombo && !isArabic && localizedCombo.brandSlug === 'aston-martin-service-dubai' ? astonServiceOverride(localizedCombo) : localizedCombo && !isArabic && localizedCombo.brandSlug === 'mclaren-service-dubai'
+  const existingCombo = localizedCombo && !isArabic && localizedCombo.brandSlug === 'aston-martin-service-dubai' ? astonServiceOverride(localizedCombo) : localizedCombo && !isArabic && localizedCombo.brandSlug === 'mclaren-service-dubai'
     ? mcLarenServiceOverride(localizedCombo)
     : localizedCombo && !isArabic && localizedCombo.brandSlug === 'lamborghini-service-dubai'
       ? lamborghiniServiceOverride(localizedCombo)
@@ -589,6 +591,8 @@ const BrandServicePage: React.FC<BrandServicePageProps> = ({
       : localizedCombo && !isArabic && localizedCombo.brandSlug === 'bentley-service-dubai'
         ? bentleyServiceOverride(localizedCombo)
       : localizedCombo;
+  const repairContent = getRepairServiceContent(brandSlug, serviceSlug);
+  const combo = existingCombo && repairContent ? refineRepairService(existingCombo, isArabic) : existingCombo;
   const brand = brandSlug ? getBrandBySlug(brandSlug) : undefined;
   const profile = brandSlug ? BRAND_PROFILES[brandSlug] : undefined;
   const mercedesServiceMedia = combo && !isArabic && combo.brandSlug === 'mercedes-benz-service-dubai'
@@ -747,7 +751,7 @@ const BrandServicePage: React.FC<BrandServicePageProps> = ({
               </a>
               <a href="tel:+97143402223" data-cta-placement="hero" className="btn-secondary">
                 <Phone className="w-5 h-5" />
-                {isArabic ? 'اتصل على +971 4 340 2223' : 'Call +971 4 340 2223'}
+                {isArabic && repairContent ? <>اتصل على <bdi dir="ltr">+971 4 340 2223</bdi></> : isArabic ? 'اتصل على +971 4 340 2223' : 'Call +971 4 340 2223'}
               </a>
             </div>
             <CtaAssurance className="mt-4" align="start" text={isArabic ? 'تواصل معنا لمناقشة السيارة وطلب موعد' : undefined} />
@@ -1001,7 +1005,7 @@ const BrandServicePage: React.FC<BrandServicePageProps> = ({
       </section>
 
       <div id="service-booking" className="scroll-mt-24">
-        <FinalCTA
+        {repairContent ? <RepairEnquiryPanel content={repairContent} isArabic={isArabic} whatsappHref={whatsappHref} /> : <FinalCTA
           title={`${combo.brandName} ${combo.serviceName}: discuss the next step`}
           description={combo.brandSlug === 'mercedes-benz-service-dubai' && combo.serviceSlug === 'engine-diagnostics'
             ? 'Send the model, year, VIN, exact warning or symptom, when it occurs and any coding or programming request. We will confirm the appropriate first diagnostic stage and available access.'
@@ -1012,7 +1016,7 @@ const BrandServicePage: React.FC<BrandServicePageProps> = ({
                 : 'Share the model, year, mileage and the concern you want checked. The workshop can confirm the appropriate assessment, scope and appointment availability.'}
           label={enquiryLabel}
           href={whatsappHref}
-        />
+        />}
       </div>
       </main>
       <Footer />

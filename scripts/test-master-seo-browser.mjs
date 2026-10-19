@@ -26,7 +26,7 @@ const owners = [
   { name: 'bentley-camera', route: '/brands/bentley-service-dubai/electrical-repair', h1: 'Bentley Electrical Repair Dubai', section: '#reverse-camera' },
   { name: 'tyres', route: '/services/tire-repair-dubai', h1: 'Tyre Repair Dubai' },
 ];
-const mercedesElectrical = { name: 'mercedes-electrical', route: '/services/mercedes-electrical-repair-dubai', h1: 'Mercedes Electrical Fault Diagnosis & Repair in Dubai' };
+const mercedesElectrical = { name: 'mercedes-electrical', route: '/services/mercedes-electrical-repair-dubai', h1: 'Mercedes Electrical Repair & Fault Tracing in Dubai' };
 const viewports = [
   { name: 'desktop', width: 1440, height: 1000 },
   { name: 'mobile', width: 390, height: 844 },
