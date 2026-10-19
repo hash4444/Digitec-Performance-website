@@ -23,6 +23,10 @@ import { refineArabicProtectionService } from '@/i18n/ar-protection-services';
 import { localizeServiceToArabic } from '@/i18n/ar-services';
 import { refineGenericArabicService } from '@/i18n/ar-generic-services';
 import PpfQuoteForm from '@/components/PpfQuoteForm';
+import { DiagnosticAcEnquiryPanel } from '@/components/DiagnosticAcEnquiryPanel';
+import { diagnosticAcMessage, getGeneralDiagnosticAcMode, refineDiagnosticAcGeneral } from '@/data/diagnosticsAcGeneralContent';
+import { EcuElectronicsEnquiryPanel } from '@/components/EcuElectronicsEnquiryPanel';
+import { getEcuElectronicsContent } from '@/data/ecuElectronicsContent';
 
 // Map every legacy slug directly to its new slug (single-hop redirects, no chains).
 // Also handles previously-indexed Google URLs.
@@ -70,19 +74,22 @@ const ServicePage: React.FC<ServicePageProps> = ({ slugOverride, canonicalPath, 
   const isElectronics = electronicsServices.some(item => item.slug === slug);
   const isProtectionService = !brandPath && ['paint-protection-dubai', 'paint-protection-film', 'ceramic-coating'].includes(slug ?? '');
   const sourceService = slug && !newSlug && !externalRedirect && !(isArabic && isElectronics) ? getServiceBySlug(slug) : undefined;
-  const service = sourceService && isArabic ? (brandPath ? localizeServiceToArabic(sourceService) : refineArabicProtectionService(refineGenericArabicService(localizeServiceToArabic(sourceService))))
+  const existingService = sourceService && isArabic ? (brandPath ? localizeServiceToArabic(sourceService) : refineArabicProtectionService(refineGenericArabicService(localizeServiceToArabic(sourceService))))
     : sourceService && !brandPath && sourceService.pageTitle ? { ...sourceService, title: sourceService.pageTitle } : sourceService;
+  const diagnosticAcMode = !brandPath ? getGeneralDiagnosticAcMode(slug) : undefined;
+  const service = existingService && diagnosticAcMode ? refineDiagnosticAcGeneral(existingService, isArabic) : existingService;
   const servicePath = service ? canonicalPath ?? `/services/${service.slug}` : undefined;
   const url = servicePath
     ? `https://digitecme.com${isArabic ? '/ar' : ''}${servicePath}`
     : undefined;
+  const ecuElectronicsContent = getEcuElectronicsContent(servicePath?.replace(/^\/ar(?=\/)/, '') ?? '', isArabic);
 
   // Build the per-page JSON-LD @graph. Sitewide Organization / Business / WebSite
   // are declared in index.html; here we only add page-scoped entities and reference
   // the sitewide ones by @id.
   const serviceJsonLd = React.useMemo(() => {
     if (!service || !url) return undefined;
-    const schemaDescription = isProtectionService ? service.intro : isArabic
+    const schemaDescription = diagnosticAcMode ? service.metaDescription ?? service.intro : isProtectionService ? service.intro : isArabic
       ? `${service.title} لدى مركز ديجي-تك بيرفورمانس في القوز، دبي. تواصل مع الورشة لترتيب الفحص أو الخدمة المناسبة.`
       : `${service.title} at Digi-Tec Performance Center in Al Quoz, Dubai. Contact the workshop to arrange the appropriate inspection or service.`;
     const breadcrumb = buildBreadcrumb(url, [
@@ -128,7 +135,7 @@ const ServicePage: React.FC<ServicePageProps> = ({ slugOverride, canonicalPath, 
     });
     const faq = !isElectronics && service.faqs && service.faqs.length > 0 ? buildFAQ(url, service.faqs) : null;
     return pageGraph([webPage, breadcrumb, svc, ...(faq ? [faq] : [])]);
-  }, [service, brandPath, isArabic, isElectronics, isProtectionService, url]);
+  }, [service, brandPath, isArabic, isElectronics, isProtectionService, diagnosticAcMode, url]);
 
   useSeo({
     title: service?.metaTitle || (service ? `${service.seoKeyword} | DIGI-TEC Performance Center` : 'Service Not Found | DIGI-TEC'),
@@ -170,8 +177,8 @@ const ServicePage: React.FC<ServicePageProps> = ({ slugOverride, canonicalPath, 
   const protectionImage = isProtectionService ? (service.slug === 'ceramic-coating'
     ? { srcSet: '/images/ceramic-coating/black-mercedes-finish-640.webp 640w, /images/ceramic-coating/black-mercedes-finish-1024.webp 1024w', width: 1024, height: 1536 }
     : { srcSet: '/images/ppf/film-application-640.webp 640w, /images/ppf/film-application-1200.webp 1200w', width: 1200, height: 1200 }) : undefined;
-  const enquiryLabel = isArabic ? (isProtectionService ? service.ctaLabel ?? 'اطلب عرض سعر لسيارتك' : 'ناقش الخدمة عبر واتساب') : service.ctaLabel;
-  const enquiryHref = `https://wa.me/97143402223?text=${encodeURIComponent(isArabic ? `مرحباً ديجي-تك، أود مناقشة ${service.title}.` : `Hi DIGI-TEC, I would like to discuss ${service.title}. Model/year: Mileage: Concern: Preferred appointment:`)}`;
+  const enquiryLabel = isArabic ? (isProtectionService || diagnosticAcMode ? service.ctaLabel ?? 'اطلب عرض سعر لسيارتك' : 'ناقش الخدمة عبر واتساب') : service.ctaLabel;
+  const enquiryHref = `https://wa.me/97143402223?text=${encodeURIComponent(diagnosticAcMode ? diagnosticAcMessage(diagnosticAcMode, isArabic) : isArabic ? `مرحباً ديجي-تك، أود مناقشة ${service.title}.` : `Hi DIGI-TEC, I would like to discuss ${service.title}. Model/year: Mileage: Concern: Preferred appointment:`)}`;
   const related = allServices
     .filter((s) => s.category === sourceService?.category && s.slug !== service.slug)
     .filter((s) => (isMercedes ? s.slug.startsWith('mercedes-') : !s.slug.startsWith('mercedes-')))
@@ -309,7 +316,8 @@ const ServicePage: React.FC<ServicePageProps> = ({ slugOverride, canonicalPath, 
               </div>
 
               {/* Extra Sections (optional) */}
-              {!isArabic && service.quoteGuidance && <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-6 sm:p-8">
+              {diagnosticAcMode && <DiagnosticAcEnquiryPanel mode={diagnosticAcMode} isArabic={isArabic} whatsappHref={enquiryHref} />}
+              {!diagnosticAcMode && !isArabic && service.quoteGuidance && <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-6 sm:p-8">
                 <h2 className="mb-4 text-2xl font-bold">Discuss the inspection and quote</h2>
                 <p className="mb-6 text-base leading-8 text-gray-300">{service.quoteGuidance}</p>
                 <a href={enquiryHref} data-cta-placement="service_scope" target="_blank" rel="noopener noreferrer" className="btn-primary"><MessageCircle className="h-5 w-5 shrink-0" />{enquiryLabel}</a>
@@ -363,6 +371,7 @@ const ServicePage: React.FC<ServicePageProps> = ({ slugOverride, canonicalPath, 
               {/* Local Intent */}
               <div className="card-premium rounded-2xl p-6 sm:p-8">
                 <p className="text-gray-300 leading-relaxed text-lg italic">{service.localIntent}</p>
+                {ecuElectronicsContent && <div className="mt-7"><EcuElectronicsEnquiryPanel content={ecuElectronicsContent} isArabic={isArabic} /></div>}
               </div>
 
               {/* Related Blog: Battery */}

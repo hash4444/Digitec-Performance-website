@@ -7,6 +7,10 @@ import BentleyCameraSection from '@/components/BentleyCameraSection';
 import { Footer } from '@/components/Footer';
 import { FinalCTA } from '@/components/FinalCTA';
 import { RepairEnquiryPanel } from '@/components/RepairEnquiryPanel';
+import { DiagnosticAcEnquiryPanel } from '@/components/DiagnosticAcEnquiryPanel';
+import { getDiagnosticsAcBrandContent } from '@/data/diagnosticsAcBrandContent';
+import { EcuElectronicsEnquiryPanel } from '@/components/EcuElectronicsEnquiryPanel';
+import { getEcuElectronicsContent } from '@/data/ecuElectronicsContent';
 import { getRepairServiceContent, refineRepairService } from '@/data/repairServiceContent';
 import { serviceEnquiryLabel } from '@/data/queryServiceContent';
 import { arabicServiceContent } from '@/data/arabicServiceContent';
@@ -592,7 +596,10 @@ const BrandServicePage: React.FC<BrandServicePageProps> = ({
         ? bentleyServiceOverride(localizedCombo)
       : localizedCombo;
   const repairContent = getRepairServiceContent(brandSlug, serviceSlug);
-  const combo = existingCombo && repairContent ? refineRepairService(existingCombo, isArabic) : existingCombo;
+  const repairCombo = existingCombo && repairContent ? refineRepairService(existingCombo, isArabic) : existingCombo;
+  const diagnosticAcContent = getDiagnosticsAcBrandContent(brandSlug, serviceSlug, isArabic);
+  const diagnosticAcMode = diagnosticAcContent ? serviceSlug === 'ac-repair' ? 'ac' : 'diagnostics' : undefined;
+  const combo = repairCombo && diagnosticAcContent ? { ...repairCombo, ...diagnosticAcContent } : repairCombo;
   const brand = brandSlug ? getBrandBySlug(brandSlug) : undefined;
   const profile = brandSlug ? BRAND_PROFILES[brandSlug] : undefined;
   const mercedesServiceMedia = combo && !isArabic && combo.brandSlug === 'mercedes-benz-service-dubai'
@@ -602,6 +609,7 @@ const BrandServicePage: React.FC<BrandServicePageProps> = ({
   const url = combo
     ? canonicalPath ? `${SITE_URL}${canonicalPath}` : `${SITE_URL}${isArabic ? '/ar' : ''}/brands/${combo.brandSlug}/${combo.serviceSlug}`
     : SITE_URL;
+  const ecuElectronicsContent = getEcuElectronicsContent(url.slice(SITE_URL.length).replace(/^\/ar(?=\/)/, ''), isArabic);
 
   const jsonLd = React.useMemo(() => {
     if (!combo || !brand || !profile) return undefined;
@@ -751,7 +759,7 @@ const BrandServicePage: React.FC<BrandServicePageProps> = ({
               </a>
               <a href="tel:+97143402223" data-cta-placement="hero" className="btn-secondary">
                 <Phone className="w-5 h-5" />
-                {isArabic && repairContent ? <>اتصل على <bdi dir="ltr">+971 4 340 2223</bdi></> : isArabic ? 'اتصل على +971 4 340 2223' : 'Call +971 4 340 2223'}
+                {isArabic && (repairContent || diagnosticAcContent) ? <>اتصل على <bdi dir="ltr">+971 4 340 2223</bdi></> : isArabic ? 'اتصل على +971 4 340 2223' : 'Call +971 4 340 2223'}
               </a>
             </div>
             <CtaAssurance className="mt-4" align="start" text={isArabic ? 'تواصل معنا لمناقشة السيارة وطلب موعد' : undefined} />
@@ -1005,7 +1013,8 @@ const BrandServicePage: React.FC<BrandServicePageProps> = ({
       </section>
 
       <div id="service-booking" className="scroll-mt-24">
-        {repairContent ? <RepairEnquiryPanel content={repairContent} isArabic={isArabic} whatsappHref={whatsappHref} /> : <FinalCTA
+        {ecuElectronicsContent && <div className="mx-auto max-w-5xl px-4 pt-12 sm:px-6"><EcuElectronicsEnquiryPanel content={ecuElectronicsContent} isArabic={isArabic} /></div>}
+        {diagnosticAcMode ? <div className="mx-auto max-w-5xl px-4 py-12 sm:px-6 sm:py-16"><DiagnosticAcEnquiryPanel mode={diagnosticAcMode} isArabic={isArabic} whatsappHref={whatsappHref} brandSlug={brandSlug} /></div> : repairContent ? <RepairEnquiryPanel content={repairContent} isArabic={isArabic} whatsappHref={whatsappHref} /> : <FinalCTA
           title={`${combo.brandName} ${combo.serviceName}: discuss the next step`}
           description={combo.brandSlug === 'mercedes-benz-service-dubai' && combo.serviceSlug === 'engine-diagnostics'
             ? 'Send the model, year, VIN, exact warning or symptom, when it occurs and any coding or programming request. We will confirm the appropriate first diagnostic stage and available access.'
