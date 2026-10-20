@@ -22,6 +22,8 @@ import {
   AccordionTrigger,
 } from '@/components/ui/accordion';
 import BrandBookingForm from '@/components/BrandBookingForm';
+import MercedesServiceBookingForm from '@/components/MercedesServiceBookingForm';
+import { mercedesServiceCampaign } from '@/data/mercedesServiceCampaign';
 import { BrandServiceScope } from '@/components/BrandServiceScope';
 import { getServiceSprintBrand, getSprintServices, VOLKSWAGEN_SERVICE_OWNERS } from '@/data/brandServiceSprint';
 import BrandPaintCareLinks from '@/components/BrandPaintCareLinks';
@@ -73,8 +75,8 @@ const RoxHubSections = React.lazy(() => import('@/components/RoxHubSections').th
 const AstonMartinHubSections = React.lazy(() => import('@/components/AstonMartinHubSections').then((module) => ({ default: module.AstonMartinHubSections })));
 
 const mercedesWorkshop = '/images/mercedes-repair-dubai-hero.jpg';
-const MERCEDES_META_TITLE = 'Mercedes Repair & Service Dubai | Al Quoz | Digi-Tec';
-const MERCEDES_META_DESCRIPTION = 'Independent Mercedes repair and service in Al Quoz, Dubai since 2002. XENTRY diagnostics, maintenance, gearbox, AIRMATIC, AC and electrical work.';
+const MERCEDES_META_TITLE = mercedesServiceCampaign.en.title;
+const MERCEDES_META_DESCRIPTION = mercedesServiceCampaign.en.description;
 
 type BrandPageDesign = {
   art: string;
@@ -437,6 +439,7 @@ const BrandPage = () => {
   const { isArabic, localizedPath } = useLocale();
   const { slug } = useParams<{ slug: string }>();
   const sourceBrand = slug ? getBrandBySlug(slug) : undefined;
+  const mercedesCampaign = mercedesServiceCampaign[isArabic ? 'ar' : 'en'];
   const serviceSprintBrand = getServiceSprintBrand(sourceBrand?.slug);
   const isEnglishBmwHub = !isArabic && sourceBrand?.slug === 'bmw-service-dubai';
   const isEnglishFerrariHub = !isArabic && sourceBrand?.slug === 'ferrari-service-dubai';
@@ -449,7 +452,7 @@ const BrandPage = () => {
   const isEnglishJetourHub = !isArabic && sourceBrand?.slug === 'jetour-service-dubai';
   const isB9Brand = sourceBrand?.slug === 'jetour-service-dubai' || sourceBrand?.slug === 'rox-service-dubai';
   const isEnglishAstonHub = !isArabic && sourceBrand?.slug === 'aston-martin-service-dubai';
-  const brand = sourceBrand && isArabic ? localizeBrandToArabic(sourceBrand) : isEnglishBmwHub ? { ...sourceBrand, intro: BMW_HUB_INTRO, faqs: BMW_HUB_FAQS } : isEnglishMclarenHub ? { ...sourceBrand, intro: MCLAREN_HUB_INTRO, faqs: MCLAREN_FAQS, specialization: 'Service • Maintenance • Diagnostics • Repairs' } : isEnglishLamborghiniHub ? { ...sourceBrand, intro: LAMBORGHINI_HUB_INTRO, faqs: [...LAMBORGHINI_FAQS], specialization: 'Service • Maintenance • Diagnostics • Repairs' } : isEnglishRollsRoyceHub ? { ...sourceBrand, intro: ROLLS_ROYCE_HUB_INTRO, faqs: [...ROLLS_ROYCE_FAQS], specialization: 'Service • Maintenance • Diagnostics • Repairs' } : isEnglishAudiHub ? { ...sourceBrand, intro: AUDI_HUB_INTRO, faqs: [...AUDI_FAQS], specialization: 'Service • Maintenance • Diagnostics • Repairs' } : isEnglishBentleyHub ? { ...sourceBrand, intro: BENTLEY_HUB_INTRO, faqs: [...BENTLEY_FAQS], specialization: 'Service • Maintenance • Diagnostics • Repairs' } : isEnglishRoxHub ? { ...sourceBrand, intro: ROX_HUB_INTRO, faqs: [...ROX_HUB_FAQS], specialization: 'ROX 01 Service • Diagnostics • Comfort Systems' } : isEnglishAstonHub ? { ...sourceBrand, intro: ASTON_HUB_INTRO, faqs: ASTON_FAQS, specialization: 'Maintenance • Diagnostics • Repairs' } : sourceBrand;
+  const brand = sourceBrand?.slug === 'mercedes-benz-service-dubai' ? { ...(isArabic ? localizeBrandToArabic(sourceBrand) : sourceBrand), intro: mercedesCampaign.intro, specialization: mercedesCampaign.specialization, faqs: mercedesCampaign.faqs } : sourceBrand && isArabic ? localizeBrandToArabic(sourceBrand) : isEnglishBmwHub ? { ...sourceBrand, intro: BMW_HUB_INTRO, faqs: BMW_HUB_FAQS } : isEnglishMclarenHub ? { ...sourceBrand, intro: MCLAREN_HUB_INTRO, faqs: MCLAREN_FAQS, specialization: 'Service • Maintenance • Diagnostics • Repairs' } : isEnglishLamborghiniHub ? { ...sourceBrand, intro: LAMBORGHINI_HUB_INTRO, faqs: [...LAMBORGHINI_FAQS], specialization: 'Service • Maintenance • Diagnostics • Repairs' } : isEnglishRollsRoyceHub ? { ...sourceBrand, intro: ROLLS_ROYCE_HUB_INTRO, faqs: [...ROLLS_ROYCE_FAQS], specialization: 'Service • Maintenance • Diagnostics • Repairs' } : isEnglishAudiHub ? { ...sourceBrand, intro: AUDI_HUB_INTRO, faqs: [...AUDI_FAQS], specialization: 'Service • Maintenance • Diagnostics • Repairs' } : isEnglishBentleyHub ? { ...sourceBrand, intro: BENTLEY_HUB_INTRO, faqs: [...BENTLEY_FAQS], specialization: 'Service • Maintenance • Diagnostics • Repairs' } : isEnglishRoxHub ? { ...sourceBrand, intro: ROX_HUB_INTRO, faqs: [...ROX_HUB_FAQS], specialization: 'ROX 01 Service • Diagnostics • Comfort Systems' } : isEnglishAstonHub ? { ...sourceBrand, intro: ASTON_HUB_INTRO, faqs: ASTON_FAQS, specialization: 'Maintenance • Diagnostics • Repairs' } : sourceBrand;
   const serviceProfileSlug = brand ? getServiceProfileSlug(brand.slug) : '';
   const priorityBrandSeo = getPriorityBrandSeo(sourceBrand?.slug);
   const prioritySeo = isArabic ? undefined : priorityBrandSeo;
@@ -460,10 +463,10 @@ const BrandPage = () => {
     const isMercedes = brand.slug === 'mercedes-benz-service-dubai';
     const isRangeRoverHub = brand.slug === 'range-rover-service-dubai';
     const isDefenderHub = brand.slug === 'defender-service-dubai';
-    const entityName = isArabic
+    const entityName = isMercedes ? mercedesCampaign.h1 : isArabic
       ? `صيانة وإصلاح ${brand.name} في دبي`
       : `${brand.name} Service & Repair in Dubai`;
-    const schemaDescription = isArabic
+    const schemaDescription = isMercedes ? mercedesCampaign.description : isArabic
       ? `خدمة وفحص سيارات ${brand.name} لدى ورشة ديجي-تك في القوز، دبي. تواصل مع الفريق لتأكيد نطاق الخدمة المناسب لطراز سيارتك.`
       : priorityBrandSeo?.description ?? `${brand.name} vehicle inspection, maintenance and repair at Digi-Tec Performance Center in Al Quoz, Dubai. Contact the team to confirm the appropriate service scope for your model.`;
     const schemaImage = priorityBrandSeo?.heroImage
@@ -515,7 +518,7 @@ const BrandPage = () => {
       brand.faqs.map((f) => ({ question: f.q, answer: f.a })),
     );
     return pageGraph([webPage, breadcrumb, brandEntity, svc, ...(faq ? [faq] : [])]);
-  }, [brand, isArabic, isEnglishAstonHub, isEnglishAudiHub, isEnglishBentleyHub, isEnglishBmwHub, isEnglishFerrariHub, isEnglishLamborghiniHub, isEnglishMclarenHub, isEnglishRollsRoyceHub, isEnglishRoxHub, priorityBrandSeo, serviceSprintBrand, sourceBrand]);
+  }, [brand, isArabic, isEnglishAstonHub, isEnglishAudiHub, isEnglishBentleyHub, isEnglishBmwHub, isEnglishFerrariHub, isEnglishLamborghiniHub, isEnglishMclarenHub, isEnglishRollsRoyceHub, isEnglishRoxHub, priorityBrandSeo, serviceSprintBrand, sourceBrand, mercedesCampaign]);
 
   const isMercedesServiceHub = brand?.slug === 'mercedes-benz-service-dubai';
   const isPorscheServiceHub = brand?.slug === 'porsche-service-dubai';
@@ -528,10 +531,10 @@ const BrandPage = () => {
 
   useSeo({
     title: brand
-      ? isArabic ? isMercedesServiceHub ? 'إصلاح وصيانة مرسيدس في دبي | ديجي-تك' : `إصلاح وصيانة ${serviceSprintBrand?.arabicName ?? brand.name} في دبي | مركز ديجي-تك` : specialistHubTitle ?? `${brand.name} Repair Dubai | Digi-Tec`
+      ? isArabic ? isMercedesServiceHub ? mercedesCampaign.title : `إصلاح وصيانة ${serviceSprintBrand?.arabicName ?? brand.name} في دبي | مركز ديجي-تك` : specialistHubTitle ?? `${brand.name} Repair Dubai | Digi-Tec`
       : 'Brand Service in Dubai | Digi-Tec Performance Centre',
     description: brand
-      ? isArabic ? isMercedesServiceHub ? 'ورشة مستقلة لصيانة وإصلاح مرسيدس في القوز، دبي. تشخيص XENTRY وفحص المحرك والقير والتعليق والتكييف والكهرباء مع توضيح النطاق والتكلفة قبل العمل.' : serviceSprintBrand ? `صيانة وإصلاح ${serviceSprintBrand.arabicName} في القوز، دبي. ناقش الصيانة والتشخيص والأعطال الميكانيكية والكهربائية مع ديجي-تك لتأكيد نطاق الفحص وطلب موعد.` : `إصلاح وصيانة ${brand.name} في دبي: تشخيص وصيانة وفرامل وناقل حركة وتعليق وتكييف مع قطع بالمواصفات المناسبة لدى مركز ديجي-تك.` : specialistHubDescription ?? `Specialist ${brand.name} repair and service in Dubai: diagnostics, maintenance, brakes, transmission, suspension and AC at Digi-Tec, Al Quoz.`
+      ? isArabic ? isMercedesServiceHub ? mercedesCampaign.description : serviceSprintBrand ? `صيانة وإصلاح ${serviceSprintBrand.arabicName} في القوز، دبي. ناقش الصيانة والتشخيص والأعطال الميكانيكية والكهربائية مع ديجي-تك لتأكيد نطاق الفحص وطلب موعد.` : `إصلاح وصيانة ${brand.name} في دبي: تشخيص وصيانة وفرامل وناقل حركة وتعليق وتكييف مع قطع بالمواصفات المناسبة لدى مركز ديجي-تك.` : specialistHubDescription ?? `Specialist ${brand.name} repair and service in Dubai: diagnostics, maintenance, brakes, transmission, suspension and AC at Digi-Tec, Al Quoz.`
       : 'Expert luxury car maintenance, diagnostics, and performance tuning in Dubai at Digi-Tec Performance Centre.',
     canonical: brand ? `https://digitecme.com${isArabic ? '/ar' : ''}/brands/${brand.slug}` : `https://digitecme.com${isArabic ? '/ar' : '/'}`,
     ogImage: priorityBrandSeo?.heroImage
@@ -550,7 +553,7 @@ const BrandPage = () => {
     return <Navigate to={localizedPath('/')} replace />;
   }
 
-  const whatsappHref = isEnglishAstonHub ? ASTON_WHATSAPP_HREF : isEnglishBmwHub ? BMW_WHATSAPP_HREF : isEnglishMclarenHub ? MCLAREN_WHATSAPP_HREF : isEnglishLamborghiniHub ? LAMBORGHINI_WHATSAPP_HREF : isEnglishRollsRoyceHub ? ROLLS_ROYCE_WHATSAPP_HREF : isEnglishAudiHub ? AUDI_WHATSAPP_HREF : isEnglishBentleyHub ? BENTLEY_WHATSAPP_HREF : `https://wa.me/97143402223?text=${encodeURIComponent(
+  const whatsappHref = isMercedesServiceHub ? `https://wa.me/97143402223?text=${encodeURIComponent(mercedesCampaign.message)}` : isEnglishAstonHub ? ASTON_WHATSAPP_HREF : isEnglishBmwHub ? BMW_WHATSAPP_HREF : isEnglishMclarenHub ? MCLAREN_WHATSAPP_HREF : isEnglishLamborghiniHub ? LAMBORGHINI_WHATSAPP_HREF : isEnglishRollsRoyceHub ? ROLLS_ROYCE_WHATSAPP_HREF : isEnglishAudiHub ? AUDI_WHATSAPP_HREF : isEnglishBentleyHub ? BENTLEY_WHATSAPP_HREF : `https://wa.me/97143402223?text=${encodeURIComponent(
     isArabic
       ? `مرحباً، أود الاستفسار عن خدمة ${brand.name} لدى مركز ديجي-تك بيرفورمانس. طراز السيارة وسنتها: `
       : `Hi Digi-Tec, I am enquiring from your ${brand.name} service page and would like to arrange an inspection.\n\nModel and year: \nService, warning or symptom: `,
@@ -630,7 +633,7 @@ const BrandPage = () => {
             <li><Link to="/brands" className="hover:text-burnt-orange">{isArabic ? 'العلامات' : 'Brands'}</Link></li>
             <li aria-hidden="true">/</li>
             <li className="text-off-white font-semibold" aria-current="page">
-              {isArabic ? `إصلاح وصيانة ${brand.name} في دبي` : isEnglishBmwHub ? 'BMW Service & Repair Dubai' : isFerrari ? 'Ferrari Service & Repair Dubai' : isEnglishMclarenHub ? 'McLaren Service & Repair Dubai' : isEnglishLamborghiniHub ? 'Lamborghini Service & Repair Dubai' : isEnglishRollsRoyceHub ? 'Rolls-Royce Service & Repair Dubai' : isEnglishAudiHub ? 'Audi Service & Repair Dubai' : isEnglishBentleyHub ? 'Bentley Service & Repair Dubai' : isEnglishRoxHub ? 'ROX 01 Service & Repair Dubai' : isEnglishAstonHub ? 'Aston Martin Service & Repair Dubai' : `${brand.name} Repair & Service Dubai`}
+              {isMercedesServiceHub ? mercedesCampaign.h1 : isArabic ? `إصلاح وصيانة ${brand.name} في دبي` : isEnglishBmwHub ? 'BMW Service & Repair Dubai' : isFerrari ? 'Ferrari Service & Repair Dubai' : isEnglishMclarenHub ? 'McLaren Service & Repair Dubai' : isEnglishLamborghiniHub ? 'Lamborghini Service & Repair Dubai' : isEnglishRollsRoyceHub ? 'Rolls-Royce Service & Repair Dubai' : isEnglishAudiHub ? 'Audi Service & Repair Dubai' : isEnglishBentleyHub ? 'Bentley Service & Repair Dubai' : isEnglishRoxHub ? 'ROX 01 Service & Repair Dubai' : isEnglishAstonHub ? 'Aston Martin Service & Repair Dubai' : `${brand.name} Repair & Service Dubai`}
             </li>
           </ol>
         </nav>
@@ -670,7 +673,7 @@ const BrandPage = () => {
                 </span>
               </div>
               <h1 className="brand-hero__title mb-5 max-w-4xl text-[clamp(2.75rem,5vw,5.25rem)] font-semibold leading-[0.98] tracking-[-0.05em]">
-                {isArabic && serviceSprintBrand ? <>إصلاح وصيانة <span className="text-white/62">{serviceSprintBrand.arabicName} في دبي</span></> : <>{isEnglishRoxHub ? 'ROX 01' : brand.name} <span className="text-white/62">{isArabic ? 'للإصلاح والصيانة في دبي' : isEnglishBmwHub || isFerrari || isEnglishMclarenHub || isEnglishLamborghiniHub || isEnglishRollsRoyceHub || isEnglishAudiHub || isEnglishBentleyHub || isEnglishAstonHub || isEnglishRoxHub ? 'Service & Repair Dubai' : 'Repair & Service Dubai'}</span></>}
+                {isMercedesServiceHub ? mercedesCampaign.h1 : isArabic && serviceSprintBrand ? <>إصلاح وصيانة <span className="text-white/62">{serviceSprintBrand.arabicName} في دبي</span></> : <>{isEnglishRoxHub ? 'ROX 01' : brand.name} <span className="text-white/62">{isArabic ? 'للإصلاح والصيانة في دبي' : isEnglishBmwHub || isFerrari || isEnglishMclarenHub || isEnglishLamborghiniHub || isEnglishRollsRoyceHub || isEnglishAudiHub || isEnglishBentleyHub || isEnglishAstonHub || isEnglishRoxHub ? 'Service & Repair Dubai' : 'Repair & Service Dubai'}</span></>}
               </h1>
               <p className="brand-hero__intro mb-8 max-w-2xl text-base leading-8 text-white/62 sm:text-lg">
                 {brand.intro}
@@ -684,7 +687,7 @@ const BrandPage = () => {
                   className="btn-primary"
                 >
                   <MessageCircle className="w-5 h-5" />
-                  {isArabic ? 'راسلنا عبر واتساب' : isEnglishAstonHub ? 'Request an Aston Martin Service Quote' : isEnglishBmwHub ? 'Request BMW Service' : isEnglishAudiHub ? 'Book an Audi inspection on WhatsApp' : isEnglishBentleyHub ? 'Book a Bentley inspection on WhatsApp' : isEnglishRoxHub ? 'Book a ROX 01 inspection on WhatsApp' : isFerrari ? 'Request a Ferrari inspection' : isEnglishMclarenHub ? 'Request McLaren Service' : isEnglishLamborghiniHub ? 'Request a Lamborghini Assessment' : isEnglishRollsRoyceHub ? 'Request a Rolls-Royce Service Quote' : isMercedesServiceHub ? 'Book Mercedes Service' : isPriorityLeadBrand ? `Request a ${brand.name} Inspection` : `Request ${brand.name} Service`}
+                  {isArabic ? isMercedesServiceHub ? 'احجز صيانة مرسيدس' : 'راسلنا عبر واتساب' : isEnglishAstonHub ? 'Request an Aston Martin Service Quote' : isEnglishBmwHub ? 'Request BMW Service' : isEnglishAudiHub ? 'Book an Audi inspection on WhatsApp' : isEnglishBentleyHub ? 'Book a Bentley inspection on WhatsApp' : isEnglishRoxHub ? 'Book a ROX 01 inspection on WhatsApp' : isFerrari ? 'Request a Ferrari inspection' : isEnglishMclarenHub ? 'Request McLaren Service' : isEnglishLamborghiniHub ? 'Request a Lamborghini Assessment' : isEnglishRollsRoyceHub ? 'Request a Rolls-Royce Service Quote' : isMercedesServiceHub ? 'Book Mercedes Service' : isPriorityLeadBrand ? `Request a ${brand.name} Inspection` : `Request ${brand.name} Service`}
                 </a>
                 <a href="tel:+97143402223" data-cta-placement="hero" className="btn-secondary">
                   <Phone className="w-5 h-5" />
@@ -723,7 +726,7 @@ const BrandPage = () => {
         </section>
       )}
 
-      {isPriorityLeadBrand && !isArabic && !isEnglishBmwHub && !isEnglishAudiHub && !isEnglishMclarenHub && !isEnglishLamborghiniHub && !isEnglishRollsRoyceHub && !isEnglishBentleyHub && !isEnglishAstonHub && !isEnglishRoxHub && (
+      {isPriorityLeadBrand && !isArabic && !isMercedesServiceHub && !isEnglishBmwHub && !isEnglishAudiHub && !isEnglishMclarenHub && !isEnglishLamborghiniHub && !isEnglishRollsRoyceHub && !isEnglishBentleyHub && !isEnglishAstonHub && !isEnglishRoxHub && (
         <section className="brand-section brand-section--local border-t border-white/5 bg-gradient-to-br from-charcoal/50 to-black py-10 sm:py-14">
           <div className="mx-auto grid max-w-7xl gap-6 px-4 sm:px-6 lg:grid-cols-[1.25fr_0.75fr]">
             <div className="card-premium rounded-2xl p-6 sm:p-8">
@@ -767,10 +770,10 @@ const BrandPage = () => {
           <div className="relative mx-auto max-w-7xl">
           <div className="flex gap-2 overflow-x-auto px-4 py-3 pr-12 sm:px-6 sm:pr-14">
             {[
-              ['Services', '#mercedes-services'],
+              ['Maintenance', '#mercedes-maintenance-scope'],
+              ['Other services', '#mercedes-services'],
               ['Problems', '#mercedes-problems'],
               ['Models', '#mercedes-models'],
-              ['Maintenance', '#mercedes-maintenance-scope'],
               ['Reviews', '#mercedes-reviews'],
               ['FAQs', '#mercedes-faqs'],
               ['Book', '#mercedes-booking'],
@@ -784,6 +787,8 @@ const BrandPage = () => {
           </div>
         </nav>
       )}
+
+      {isMercedesServiceHub && <MercedesMaintenanceScope isArabic={isArabic} />}
 
       {isPorscheServiceHub && !isArabic && <PorscheKnowledgeCentre />}
       {isPorscheServiceHub && isArabic && (
@@ -869,10 +874,10 @@ const BrandPage = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="brand-section-heading text-center mb-10 sm:mb-14">
             <h2 className="text-2xl sm:text-4xl lg:text-5xl font-black mb-3 sm:mb-4">
-              {isArabic ? <>خدمات <span className="text-burnt-orange">{brand.name}</span></> : isMercedesServiceHub ? <>Mercedes <span className="text-burnt-orange">Repair & Maintenance</span> in Dubai</> : isPorscheServiceHub ? <>Porsche <span className="text-burnt-orange">Service & Repair</span> in Dubai</> : <>Our <span className="text-burnt-orange">{brand.name}</span> Services</>}
+              {isArabic ? <>خدمات <span className="text-burnt-orange">{brand.name}</span></> : isMercedesServiceHub ? <>Additional Mercedes <span className="text-burnt-orange">Repair & Diagnostic Services</span></> : isPorscheServiceHub ? <>Porsche <span className="text-burnt-orange">Service & Repair</span> in Dubai</> : <>Our <span className="text-burnt-orange">{brand.name}</span> Services</>}
             </h2>
             <p className="text-gray-300 max-w-3xl mx-auto text-sm sm:text-lg">
-              {isArabic ? `عناية متكاملة بسيارات ${brand.name}، من الصيانة الدورية إلى الإصلاحات المتقدمة.` : isMercedesServiceHub ? 'Start with the symptom or service your Mercedes needs. Each area below links to a focused page with the relevant warning signs, inspection process and model-specific technical detail.' : isPorscheServiceHub ? 'Choose the concern or scheduled work for your Porsche. The service directory above links to the relevant inspection scope, while model, system and symptom guides explain what may change the decision.' : `Comprehensive care for every ${brand.name}, from routine maintenance to advanced performance work.`}
+              {isArabic ? `عناية متكاملة بسيارات ${brand.name}، من الصيانة الدورية إلى الإصلاحات المتقدمة.` : isMercedesServiceHub ? 'A warning, leak or change in how the car drives needs its own assessment. Use the relevant repair or diagnostic page below; these investigations are separate from scheduled servicing unless included in the agreed quotation.' : isPorscheServiceHub ? 'Choose the concern or scheduled work for your Porsche. The service directory above links to the relevant inspection scope, while model, system and symptom guides explain what may change the decision.' : `Comprehensive care for every ${brand.name}, from routine maintenance to advanced performance work.`}
             </p>
           </div>
           <div className="brand-services-grid grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
@@ -1242,21 +1247,9 @@ const BrandPage = () => {
               {isMercedesServiceHub && !isArabic ? (
                 <>
                   <div>
-                    <h3 className="text-xl sm:text-2xl font-bold text-off-white mb-2">Mercedes Service A vs Service B</h3>
-                    <p className="text-gray-400 text-sm sm:text-base leading-relaxed">
-                      Mercedes Service A is generally the smaller scheduled visit, while Service B adds a wider set of inspections and maintenance items. The correct scope depends on the model, model year, mileage, ASSYST display and available service history. We confirm those details before quoting instead of applying the same checklist to every Mercedes.
-                    </p>
-                  </div>
-                  <div>
                     <h3 className="text-xl sm:text-2xl font-bold text-off-white mb-2">How a Mercedes Repair Is Diagnosed</h3>
                     <p className="text-gray-400 text-sm sm:text-base leading-relaxed">
                       The process starts with the symptom and warning message, followed by XENTRY scan data, a physical inspection and a road test when appropriate. We then explain the likely cause, further tests if needed, parts options and estimated scope. A stored fault code is evidence, but it is not treated as proof that the named component must be replaced.
-                    </p>
-                  </div>
-                  <div>
-                    <h3 className="text-xl sm:text-2xl font-bold text-off-white mb-2">Mercedes Parts and Fluid Specifications</h3>
-                    <p className="text-gray-400 text-sm sm:text-base leading-relaxed">
-                      The estimate identifies the proposed genuine Mercedes-Benz, OE-supplier or customer-approved alternative parts and the fluid specification required by the vehicle. Approval comes before fitting, and post-repair checks are matched to the system repaired.
                     </p>
                   </div>
                 </>
@@ -1293,7 +1286,6 @@ const BrandPage = () => {
         </section>
       )}
 
-      {isMercedesServiceHub && <MercedesMaintenanceScope isArabic={isArabic} />}
       {isMercedesServiceHub && isArabic && (
         <section className="border-t border-white/5 bg-black py-10 sm:py-14">
           <div className="mx-auto max-w-5xl px-4 sm:px-6">
@@ -1373,7 +1365,7 @@ const BrandPage = () => {
 
       {/* FAQ */}
       {/* SEO Content */}
-      <section className="brand-section brand-section--story py-12 sm:py-20 bg-black border-t border-white/5">
+      {!isMercedesServiceHub && <section className="brand-section brand-section--story py-12 sm:py-20 bg-black border-t border-white/5">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <article className="brand-story space-y-8 sm:space-y-10">
             <header>
@@ -1405,7 +1397,7 @@ const BrandPage = () => {
             </div>
           </article>
         </div>
-      </section>
+      </section>}
 
       {/* FAQ */}
       </>
@@ -1467,7 +1459,7 @@ const BrandPage = () => {
       {isMercedesServiceHub && !isArabic && <div id="mercedes-reviews" className="scroll-mt-[10rem]"><GoogleReviews /></div>}
 
       {/* Booking CTA + Form */}
-      <section id={isMercedesServiceHub && !isArabic ? 'mercedes-booking' : undefined} className={`brand-section brand-section--booking ${isMercedesServiceHub && !isArabic ? 'scroll-mt-[10rem]' : 'scroll-mt-24'} py-12 sm:py-20 bg-black border-t border-white/5`}>
+      <section id={isMercedesServiceHub ? 'mercedes-booking' : undefined} className={`brand-section brand-section--booking ${isMercedesServiceHub && !isArabic ? 'scroll-mt-[10rem]' : 'scroll-mt-24'} py-12 sm:py-20 bg-black border-t border-white/5`}>
         <div className="max-w-5xl mx-auto px-4 sm:px-6">
           <div className="brand-booking-grid grid lg:grid-cols-2 gap-8 lg:gap-12 items-start">
             <div>
@@ -1475,7 +1467,7 @@ const BrandPage = () => {
                 {isArabic ? <>احجز خدمة <span className="text-burnt-orange">{brand.name}</span></> : <>Book Your <span className="text-burnt-orange">{brand.name}</span> Service</>}
               </h2>
               <p className="text-gray-300 text-base sm:text-lg leading-relaxed mb-6">
-                {serviceSprintBrand ? (isArabic ? 'أرسل الطراز وسنة الصنع والمسافة وسجل الصيانة والأعراض والموعد المفضل. يؤكد الفريق نطاق الفحص والتوفر بعد استلام رسالتك. قد يتطلب عرض سعر الإصلاح فحص السيارة؛ وتُوضح القطع والسوائل والأجرة قبل الموافقة على العمل.' : 'Send the model, year, mileage, service history, symptoms and preferred time. The team confirms the appropriate assessment and availability after receiving your message. A repair estimate may require inspection; proposed parts, fluids and labour are explained before you approve the work.') : isArabic ? 'أخبرنا عن سيارتك والخدمة المطلوبة، وسنتواصل معك عبر واتساب بعرض السعر وأقرب موعد متاح.' : isEnglishAstonHub ? 'Send your model, year, mileage and concern. The team will confirm the first assessment and appointment availability after receiving your message.' : isEnglishRoxHub ? 'Send the ROX 01 model year, mileage, warning or symptoms and preferred appointment time. The team will confirm the appropriate inspection and available workshop scope.' : isEnglishAudiHub ? 'Send the Audi model, year, mileage, warning or symptoms and preferred time. The team will confirm the appropriate assessment and available appointment. A repair estimate may require inspection.' : isEnglishBentleyHub ? 'Send the Bentley model, year, mileage, service history, warning or symptoms and preferred appointment time. The team will confirm the appropriate first assessment and available workshop scope. An accurate repair estimate may require inspection.' : isEnglishMclarenHub ? 'Send the McLaren model, year, mileage, warning or symptoms and preferred time. The team will confirm the appropriate assessment and available appointment. A repair estimate may require inspection.' : isEnglishLamborghiniHub ? 'Send the Lamborghini model, year, mileage, warning or symptoms and preferred time. The team will confirm the appropriate assessment and available workshop scope. An accurate repair estimate may require inspection.' : isEnglishRollsRoyceHub ? 'Send the Rolls-Royce model, year, mileage, service history, warning or symptoms and preferred time. The team will confirm the appropriate first assessment and appointment availability. An accurate repair estimate may require inspection.' : isEnglishBmwHub ? 'Send your BMW model, year, mileage, warning lights or symptoms, and preferred appointment time. The team will confirm the appropriate inspection and available booking options. For costs and timing, the scope may need to be established after inspection.' : isFerrari ? 'Send the Ferrari model, year, mileage, service history, warning message or symptoms, and preferred appointment time. The team will confirm the appropriate first inspection and available workshop scope.' : isMercedesServiceHub ? 'Tell us the Mercedes model, year, mileage, warning message and symptoms. We will reply on WhatsApp to confirm the appropriate first inspection and available booking options.' : 'Tell us about your car and the work you need. We will get back to you on WhatsApp with a quote and the earliest available slot.'}
+                {isMercedesServiceHub ? (isArabic ? 'أرسل طراز مرسيدس وسنة الصنع والمسافة ورسالة Service A أو Service B أو أي رسالة صيانة أخرى، والسجل المتاح والموعد المفضل. يؤكد الفريق الأعمال المستحقة والتوفر وعرض السعر. تُناقش الأعطال والأعمال الإضافية بصورة منفصلة قبل الموافقة.' : 'Send your Mercedes model, year, mileage, Service A/B reminder or other service message, available history and preferred appointment. The team confirms the due work, availability and quotation. Fault investigation and additional work are discussed separately before approval.') : serviceSprintBrand ? (isArabic ? 'أرسل الطراز وسنة الصنع والمسافة وسجل الصيانة والأعراض والموعد المفضل. يؤكد الفريق نطاق الفحص والتوفر بعد استلام رسالتك. قد يتطلب عرض سعر الإصلاح فحص السيارة؛ وتُوضح القطع والسوائل والأجرة قبل الموافقة على العمل.' : 'Send the model, year, mileage, service history, symptoms and preferred time. The team confirms the appropriate assessment and availability after receiving your message. A repair estimate may require inspection; proposed parts, fluids and labour are explained before you approve the work.') : isArabic ? 'أخبرنا عن سيارتك والخدمة المطلوبة، وسنتواصل معك عبر واتساب بعرض السعر وأقرب موعد متاح.' : isEnglishAstonHub ? 'Send your model, year, mileage and concern. The team will confirm the first assessment and appointment availability after receiving your message.' : isEnglishRoxHub ? 'Send the ROX 01 model year, mileage, warning or symptoms and preferred appointment time. The team will confirm the appropriate inspection and available workshop scope.' : isEnglishAudiHub ? 'Send the Audi model, year, mileage, warning or symptoms and preferred time. The team will confirm the appropriate assessment and available appointment. A repair estimate may require inspection.' : isEnglishBentleyHub ? 'Send the Bentley model, year, mileage, service history, warning or symptoms and preferred appointment time. The team will confirm the appropriate first assessment and available workshop scope. An accurate repair estimate may require inspection.' : isEnglishMclarenHub ? 'Send the McLaren model, year, mileage, warning or symptoms and preferred time. The team will confirm the appropriate assessment and available appointment. A repair estimate may require inspection.' : isEnglishLamborghiniHub ? 'Send the Lamborghini model, year, mileage, warning or symptoms and preferred time. The team will confirm the appropriate assessment and available workshop scope. An accurate repair estimate may require inspection.' : isEnglishRollsRoyceHub ? 'Send the Rolls-Royce model, year, mileage, service history, warning or symptoms and preferred time. The team will confirm the appropriate first assessment and appointment availability. An accurate repair estimate may require inspection.' : isEnglishBmwHub ? 'Send your BMW model, year, mileage, warning lights or symptoms, and preferred appointment time. The team will confirm the appropriate inspection and available booking options. For costs and timing, the scope may need to be established after inspection.' : isFerrari ? 'Send the Ferrari model, year, mileage, service history, warning message or symptoms, and preferred appointment time. The team will confirm the appropriate first inspection and available workshop scope.' : isMercedesServiceHub ? 'Tell us the Mercedes model, year, mileage, warning message and symptoms. We will reply on WhatsApp to confirm the appropriate first inspection and available booking options.' : 'Tell us about your car and the work you need. We will get back to you on WhatsApp with a quote and the earliest available slot.'}
               </p>
               {isEnglishBmwHub ? <div className="mb-6"><BmwBookingActions /></div> : (
               <div className="flex flex-col sm:flex-row gap-3 mb-6">
@@ -1487,7 +1479,7 @@ const BrandPage = () => {
                   data-cta-placement="booking_section"
                 >
                   <MessageCircle className="w-5 h-5" />
-                  {isArabic ? 'واتساب الآن' : isMercedesServiceHub ? 'Book Mercedes Service' : `Request ${brand.name} Service`}
+                  {isArabic ? isMercedesServiceHub ? 'احجز صيانة مرسيدس' : 'واتساب الآن' : isMercedesServiceHub ? 'Book Mercedes Service' : `Request ${brand.name} Service`}
                 </a>
                 <a
                   href="tel:+97143402223"
@@ -1504,7 +1496,7 @@ const BrandPage = () => {
               </p>
             </div>
             <div className="card-premium rounded-2xl p-5 sm:p-8">
-              <BrandBookingForm brandName={brand.name} issuePlaceholder={isEnglishAstonHub ? 'Model, year, mileage, symptoms and preferred appointment' : isEnglishBmwHub ? 'BMW model, year, mileage, warning lights or symptoms, and preferred appointment day/time' : isEnglishRoxHub ? 'ROX 01 model year, mileage, warning or symptoms, and preferred appointment time' : isEnglishAudiHub ? 'Audi model, year, mileage, warning lights or symptoms, and preferred appointment time' : isEnglishBentleyHub ? 'Bentley model, year, mileage, service history, warning or symptoms, and preferred appointment time' : isFerrari ? 'Ferrari model, year, mileage, service history, warning or symptoms, and preferred appointment time' : isEnglishMclarenHub ? 'McLaren model, year, mileage, warning or symptoms, and preferred appointment time' : isEnglishLamborghiniHub ? 'Lamborghini model, year, mileage, warning or symptoms, and preferred appointment time' : isEnglishRollsRoyceHub ? 'Rolls-Royce model, year, mileage, service history, warning or symptoms, and preferred appointment time' : serviceSprintBrand && !isArabic ? 'Model, year, mileage, service history, warning or symptoms, and preferred appointment time' : undefined} />
+              {isMercedesServiceHub ? <MercedesServiceBookingForm /> : <BrandBookingForm brandName={brand.name} issuePlaceholder={isEnglishAstonHub ? 'Model, year, mileage, symptoms and preferred appointment' : isEnglishBmwHub ? 'BMW model, year, mileage, warning lights or symptoms, and preferred appointment day/time' : isEnglishRoxHub ? 'ROX 01 model year, mileage, warning or symptoms, and preferred appointment time' : isEnglishAudiHub ? 'Audi model, year, mileage, warning lights or symptoms, and preferred appointment time' : isEnglishBentleyHub ? 'Bentley model, year, mileage, service history, warning or symptoms, and preferred appointment time' : isFerrari ? 'Ferrari model, year, mileage, service history, warning or symptoms, and preferred appointment time' : isEnglishMclarenHub ? 'McLaren model, year, mileage, warning or symptoms, and preferred appointment time' : isEnglishLamborghiniHub ? 'Lamborghini model, year, mileage, warning or symptoms, and preferred appointment time' : isEnglishRollsRoyceHub ? 'Rolls-Royce model, year, mileage, service history, warning or symptoms, and preferred appointment time' : serviceSprintBrand && !isArabic ? 'Model, year, mileage, service history, warning or symptoms, and preferred appointment time' : undefined} />}
             </div>
           </div>
         </div>

@@ -21,6 +21,7 @@ import porscheWorkshop from '@/assets/porsche-workshop-dubai.jpg';
 import lamborghiniUrusWorkshop from '@/assets/lamborghini-urus-workshop-dubai.jpg';
 import { useLocale } from '@/i18n/use-locale';
 import { PageIntro } from '@/components/PageIntro';
+import AboutVideoStrip from '@/components/AboutVideoStrip';
 
 const AboutUs = () => {
   const { isArabic } = useLocale();
@@ -122,6 +123,8 @@ const AboutUs = () => {
           </div>
         </div>
       </section>
+
+      <AboutVideoStrip />
 
       {/* Workshop gallery */}
       <section className="py-16 md:py-24 bg-charcoal/20">

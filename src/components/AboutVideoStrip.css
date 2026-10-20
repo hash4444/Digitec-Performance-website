@@ -1,0 +1,54 @@
+.about-video-strip {
+  padding-block: clamp(3.5rem, 7vw, 6rem);
+  overflow: hidden;
+  background: #0c0d0e;
+  color: #f5f5f5;
+  border-block: 1px solid rgb(255 255 255 / 8%);
+}
+.about-video-strip__heading {
+  max-width: 1200px;
+  margin: 0 auto 2rem;
+  padding-inline: 1.25rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: end;
+  gap: 1.5rem;
+}
+.about-video-strip__eyebrow { margin-bottom: .75rem; font-size: .7rem; font-weight: 650; letter-spacing: .22em; text-transform: uppercase; color: #ff6638; }
+.about-video-strip h2 { font-size: clamp(1.75rem, 3vw, 2.75rem); line-height: 1.15; font-weight: 750; letter-spacing: -.035em; }
+.about-video-strip__viewport {
+  max-width: 1600px;
+  margin-inline: auto;
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  scrollbar-width: none;
+  touch-action: pan-x pan-y pinch-zoom;
+}
+.about-video-strip__viewport::-webkit-scrollbar { display: none; }
+.about-video-strip__track { display: flex; width: max-content; }
+.about-video-strip__group { display: flex; gap: 20px; padding-inline-end: 20px; flex: none; }
+.about-video-strip__card {
+  position: relative;
+  display: block;
+  flex: none;
+  width: clamp(230px, 23vw, 300px);
+  aspect-ratio: 9 / 16;
+  overflow: hidden;
+  border: 1px solid rgb(255 255 255 / 15%);
+  border-radius: 18px;
+  background: #17191b;
+  color: #fff;
+  isolation: isolate;
+}
+.about-video-strip__poster, .about-video-strip__preview { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; pointer-events: none; }
+.about-video-strip__preview { opacity: 0; transition: opacity 200ms; }
+.about-video-strip__preview.is-playing { opacity: 1; }
+.about-video-strip__card::after { content: ''; position: absolute; inset: 50% 0 0; background: linear-gradient(transparent, rgb(0 0 0 / 80%)); pointer-events: none; }
+.about-video-strip__caption { position: absolute; z-index: 1; inset-inline: 16px; bottom: 17px; display: flex; align-items: center; gap: .7rem; font-size: .8rem; font-weight: 650; color: #fff; }
+.about-video-strip__social { display: grid; place-items: center; width: 38px; height: 38px; border-radius: 50%; background: #ff6638; color: #080808; transition: transform 150ms; }
+.about-video-strip__card:hover .about-video-strip__social { transform: scale(1.08); }
+.about-video-strip a:focus-visible, .about-video-strip__viewport:focus-visible { outline: 3px solid #ff6638; outline-offset: -3px; }
+@media (prefers-reduced-motion: reduce) {
+  .about-video-strip__preview, .about-video-strip__social { transition: none; }
+}

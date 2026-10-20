@@ -246,4 +246,13 @@ for (const route of publicRoutes) {
   if (['/services/paint-protection-film', '/ar/services/paint-protection-film'].includes(route.path)) route.lastmod = '2026-10-17';
 }
 
+// Substantive servicing copy and the contextual directory link changed only here.
+const mercedesServiceCampaignPaths = new Set([
+  '/brands/mercedes-benz-service-dubai', '/ar/brands/mercedes-benz-service-dubai',
+  '/services', '/ar/services',
+]);
+for (const route of publicRoutes) {
+  if (mercedesServiceCampaignPaths.has(route.path)) route.lastmod = '2026-10-20';
+}
+
 export const indexableRoutes = publicRoutes.filter((route) => route.indexable);

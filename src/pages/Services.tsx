@@ -95,6 +95,14 @@ const Services = () => {
         ]}
       />
 
+      <section className="mx-auto mb-10 max-w-[90rem] px-5 sm:px-8 lg:px-12" aria-labelledby="mercedes-scheduled-service">
+        <h2 id="mercedes-scheduled-service" className="text-xl font-semibold sm:text-2xl">{isArabic ? 'الصيانة الدورية لمرسيدس' : 'Scheduled Mercedes servicing'}</h2>
+        <p className="mt-3 max-w-3xl text-sm leading-7 text-white/65">
+          {isArabic ? 'هل ظهر تذكير Service A أو Service B؟ راجع نطاق الصيانة والزيت والفلاتر والفحوص المطلوبة حسب سيارتك، ثم أرسل بياناتها لطلب موعد. ' : 'If Service A or Service B is due, review the maintenance, oil, filter and inspection scope for your vehicle, then share its details to request an appointment. '}
+          <Link to="/brands/mercedes-benz-service-dubai#mercedes-maintenance-scope" className="font-semibold text-burnt-orange underline">{isArabic ? 'خطط لصيانة مرسيدس في ورشة القوز' : 'Plan Mercedes service at the Al Quoz workshop'}</Link>
+        </p>
+      </section>
+
       <TrustBar className="mb-8 sm:mb-16" />
 
       {/* Services by Category */}
