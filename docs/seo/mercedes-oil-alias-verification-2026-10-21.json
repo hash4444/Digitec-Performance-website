@@ -1,0 +1,70 @@
+{
+  "observedOn": "2026-10-21",
+  "timezone": "Asia/Dubai",
+  "zone": "digitecme.com",
+  "mechanism": "Cloudflare Single Redirect",
+  "ruleId": "5addb0c068414fb5b985a869ded26c68",
+  "ruleDefinition": "cloudflare/single-redirects/mercedes-oil-alias-2026-10-21.json",
+  "submittedAtUtc": "2026-10-21T06:40:17.643Z",
+  "dashboardConfirmedAtUtc": "2026-10-21T06:40:42.774Z",
+  "enabled": true,
+  "order": [
+    "5addb0c068414fb5b985a869ded26c68",
+    "dbe42693423442afbc3bab9b993242a7",
+    "9781b1ef743f4ffbaadbe5cb3250eeca"
+  ],
+  "existingRuleDefinitionsAndRelativeOrderRetained": true,
+  "preflight": {
+    "passed": true,
+    "getHeadCases": 28,
+    "unexpectedConfigurationDrift": false,
+    "createOneRuleFormValidated": true
+  },
+  "liveVerification": {
+    "startedAtUtc": "2026-10-21T06:40:44.946Z",
+    "finishedAtUtc": "2026-10-21T06:40:54.945Z",
+    "passed": true,
+    "cases": 72,
+    "failures": 0,
+    "legacyCases": 48,
+    "protectedRouteCases": 16,
+    "existingMercedesRedirectCases": 8,
+    "legacyDimensions": {
+      "paths": [
+        "/brands/mercedes-benz-service-dubai/oil-change",
+        "/brands/mercedes-benz-service-dubai/oil-change/"
+      ],
+      "hosts": ["digitecme.com", "www.digitecme.com"],
+      "schemes": ["http", "https"],
+      "methods": ["GET", "HEAD"],
+      "queryConditions": ["empty", "repeated parameters and synthetic click ID", "encoded, plus, empty and valueless parameters"]
+    },
+    "expectedLegacyResponse": {
+      "status": 308,
+      "target": "https://digitecme.com/services/mercedes-oil-change-dubai",
+      "queryPreserved": true,
+      "redirectHops": 1,
+      "finalStatus": 200
+    },
+    "bothServiceFormsDirect200": true,
+    "protectedPageMetadataAndNormalizedMainTextUnchanged": true,
+    "serviceNormalizedMainTextSha256": "0e9d0523c0a9d344e14aa5a9aeae598f2c5c6387811445cdf725938a8ebb60dd"
+  },
+  "localProposalValidation": {
+    "offlineAssertionsPassed": 1658,
+    "seoAndRoutingChecksPassed": 12,
+    "protectedSourceFilesUnchangedAtActivation": 601
+  },
+  "rollbackPerformed": false,
+  "sourceEvidence": {
+    "retention": "Local investigation evidence; raw authenticated snapshots and GSC data are not included in this Git record.",
+    "activation": "outputs/mercedes-oil-activation-2026-10-21/cloudflare/new-rule.json",
+    "liveHttpResults": "outputs/mercedes-oil-activation-2026-10-21/http/post-results.json",
+    "independentReview": "outputs/mercedes-oil-activation-2026-10-21/review/FINAL-INDEPENDENT-REVIEW.json"
+  },
+  "limitations": [
+    "Submission and confirmation times are observations, not a separate Cloudflare audit-event timestamp.",
+    "Control-plane evidence is authenticated dashboard state rather than an API ruleset-version export.",
+    "Google canonical convergence and ranking impact have not been established."
+  ]
+}
