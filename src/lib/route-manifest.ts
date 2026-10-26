@@ -253,6 +253,8 @@ const mercedesServiceCampaignPaths = new Set([
 ]);
 for (const route of publicRoutes) {
   if (mercedesServiceCampaignPaths.has(route.path)) route.lastmod = '2026-10-20';
+  // These English pages received the reviewed Phase 4 content/link revision on 26 October.
+  if (['/brands/mercedes-benz-service-dubai', '/services/mercedes-body-repair-dubai'].includes(route.path)) route.lastmod = '2026-10-26';
 }
 
 export const indexableRoutes = publicRoutes.filter((route) => route.indexable);

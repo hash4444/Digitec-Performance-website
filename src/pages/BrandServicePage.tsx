@@ -1022,7 +1022,9 @@ const BrandServicePage: React.FC<BrandServicePageProps> = ({
               ? 'Send the model, year, VIN, mileage, ASSYST message and any oil warning or leak. We will confirm the oil approval, itemized scope and appointment availability.'
               : combo.brandSlug === 'mercedes-benz-service-dubai' && combo.serviceSlug === 'suspension-repair'
                 ? 'Send the model, year, VIN, mileage, exact warning, which corner drops and when. We will confirm the appropriate suspension inspection and appointment availability.'
-                : 'Share the model, year, mileage and the concern you want checked. The workshop can confirm the appropriate assessment, scope and appointment availability.'}
+                : !isArabic && combo.brandSlug === 'mercedes-benz-service-dubai' && combo.serviceSlug === 'body-repair'
+                  ? 'Send your model and year, which panels are damaged, any known previous repair and any sensor warning. Attach clear photos for the initial discussion; the final scope and price follow inspection.'
+                  : 'Share the model, year, mileage and the concern you want checked. The workshop can confirm the appropriate assessment, scope and appointment availability.'}
           label={enquiryLabel}
           href={whatsappHref}
         />}

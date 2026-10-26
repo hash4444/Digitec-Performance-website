@@ -221,6 +221,7 @@ export const MERCEDES_SERVICE_CONTENT: Partial<Record<ServiceKey, MercedesConten
       { question: 'Does a body repair include paint protection film?', answer: 'Only if separately specified and suitable for the repaired finish. Film coverage, preparation and timing should be agreed as a separate scope.' },
       { question: 'Is a G63 conversion the same as an accident repair?', answer: 'No. A documented conversion shows that particular project, not the scope or outcome of an accident repair. Conversion enquiries are reviewed separately.' },
     ],
+    whatsAppMessage: 'Hi Digi-Tec, I would like a Mercedes bodywork assessment.\n\nModel/year: \nAffected panels: \nPrevious paint or repair (if known): \nSensor warning (if any): \nI can attach clear photos of the damage.',
   },
   'steering-repair': {
     serviceName: 'Steering Repair',
