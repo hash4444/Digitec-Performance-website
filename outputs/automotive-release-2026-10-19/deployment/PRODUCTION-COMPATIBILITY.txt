@@ -1,0 +1,266 @@
+DIGI-TEC automotive SEO release — production compatibility and runbook
+Prepared 19 October 2026, Asia/Dubai. Read-only production inspection only.
+
+RECOMMENDATION
+
+NO-GO for production promotion at this preparation checkpoint. The local candidate
+can be reviewed and tested independently, but the controlling Cloudflare account,
+active routes/bindings/deployment and a complete recoverable live deployment have
+not been verified. Fresh authenticated API requests failed with 403 / 9109,
+"Invalid access token". The Cloudflare dashboard opened at its sign-in screen.
+No production write, credential refresh, token creation, commit or push occurred.
+
+VERIFIED SOURCE AND HOSTING SIGNALS
+
+Local HEAD is 6180f453feaaf21b8c786f23bb3867a09666ed64, "SEO: complete PPF
+growth phases 1-4". The PPF commit is the candidate's baseline; it must not be
+replaced with the 5461e2c parent recorded by the earlier PPF commit plan.
+
+Lovable get_project returns project b8255283-fdd9-4c2d-8b46-ccb596f695e1,
+name "Digiec Performance Center L.L.C", published=true, ready, latest_commit_sha
+6180f453feaaf21b8c786f23bb3867a09666ed64 and last_edited_at
+2026-10-17T10:06:06.486Z. That SHA describes editor/preview source; it is not
+proof of the exact deployed production snapshot. The connected read tool does not
+provide a published deployment ID or an immutable published-commit selector.
+
+Repository README and docs/seo/mercedes-release-deployment.md identify this
+Lovable project as the custom-domain production content host, synchronized with
+hash4444/Digitec-Performance-website. .openai/hosting.json instead identifies a
+separate Sites mirror (appgprj_6a95274d6f648191874009d7412c8228). The mirror is
+not an authorized production target for digitecme.com.
+
+Current public snapshot: 50 GET/HEAD requests, no transport errors, captured
+2026-10-19T07:33:29Z (11:33 Dubai). Raw bodies, response fields and SHA-256
+fingerprints are in public-snapshot/ and public-production-state.json. This
+includes all five hubs, ten repair owners and their Arabic counterparts, PPF,
+paint options, tuning, sitemap, robots, aliases and unknown-path probes.
+
+The public domain is behind Cloudflare (Server: cloudflare, CF-Ray). Current
+PPF markup contains the phase 1-4 customer-name, contact-details and notes form
+fields. /services/paint-protection-film and /tuning return rendered 200 HTML;
+the app script observed on them is /assets/index-CkbEeNd8.js.
+
+Seven different public X-Deployment-Id values were observed across routes, all
+with psr2.cf14717a-af2a-4961-854a-3adf9053a1ef prefixes. Those application
+headers are not Cloudflare Workers deployment/version API UUIDs and cannot
+serve as a verified Cloudflare rollback target or source-commit attestation.
+
+ACTUAL CONFIGURATION BOUNDARY
+
+cloudflare/wrangler.production-seo.jsonc names digitec-production-seo-router,
+entry production-seo-router.js, compatibility_date 2026-09-16, workers_dev=false,
+observability enabled with head_sampling_rate 0.1, and desired zone routes:
+  digitecme.com/*
+  www.digitecme.com/*
+The checked-in config declares NO static assets binding, directory, storage,
+services, environment variables or account ID. Its default fetch handler proxies
+to the current origin through the routing guard. Deploying this file would change
+edge code; it would not upload the rebuilt automotive HTML/React content.
+
+The current domain serves /_worker.js as JavaScript with 200 and /_redirects as
+an octet-stream file with 200. A unique unknown path and /ppf both returned the
+homepage with 200. This differs from the checked-in production router, which
+would give the unknown path 404 and /ppf a 308. Therefore this router's behavior
+was not executing for those observed requests. Existing Mercedes alias and www
+requests did return one-hop 301 responses, preserving the query on the Mercedes
+alias. Their controlling rule cannot be identified from public responses alone.
+
+Observed architecture is consistent with the repository's Lovable-origin plus
+Cloudflare-fronting history. Whether an additional custom Worker/static-assets
+deployment now sits in that path cannot be conclusively determined without the
+account API/dashboard. Do not migrate hosting, attach these desired routes,
+redeploy this router or infer remote configuration from the local config.
+
+ARTIFACTS AND BUILD COMMANDS
+
+Run only in the isolated candidate supplied by the parent preparation task:
+  npm run typecheck
+  npm run lint
+  npm run build
+
+The exact production pipeline is package.json scripts.build. It performs the Vite
+SSR build, routing-path synchronization, client build, SSR rebuild, prerendering,
+hosting-rule generation and declared routing/SEO/PPF/paint/contact validators.
+The publishable content is the complete dist/ tree: prerendered route index.html
+files, client assets and copied public assets, sitemap.xml, robots.txt, _headers,
+_redirects and _worker.js. dist-server/ is an intermediate SSR build artifact.
+The generated _worker.js/_redirects are static files on the observed host, so their
+presence does not activate edge routing. Build-generated backend files must be
+excluded from the automotive source delta, as must all Cloudflare config changes.
+
+No repository deploy script or Cloudflare static-assets deployment config was
+found. There is no verified one-command Cloudflare content promotion for this
+site. Do not use `wrangler pages deploy dist` or add `--assets dist` against a
+guessed Worker: either would invent a different release architecture.
+
+RELEASE ACTIONS — DOCUMENTATION ONLY; NOT EXECUTED OR READY TO EXECUTE
+
+After explicit approval AND after all live-state gates below pass, synchronize
+the reviewed isolated source commit through the existing GitHub/Lovable flow.
+Re-read Lovable get_project and require latest_commit_sha to equal the approved
+release commit immediately before publication. Then use the existing project's
+Publish -> Publish changes UI, or this connected call:
+  mcp__codex_apps__lovable_deploy_project({
+    project_id: "b8255283-fdd9-4c2d-8b46-ccb596f695e1"
+  })
+The call publishes the current project, not an arbitrary local dist directory,
+and has no source SHA parameter. It must never run while the editor source is
+newer than or different from the reviewed release commit. Record its returned
+deployment_id and verify the custom domain, not only the returned lovable.app URL.
+No such promotion is authorized by this preparation request.
+
+Existing Cloudflare edge behavior should remain unchanged in this content-only
+release. If a remote static-assets Worker is discovered, stop this Lovable
+procedure and reconcile the live architecture before approval. The following are
+Cloudflare command forms for that later verified architecture, not executable
+release commands for the current candidate:
+  npx wrangler deployments status --name <verified-worker> --json
+  npx wrangler versions list --name <verified-worker> --json
+  npx wrangler versions view <active-version-id> --name <verified-worker> --json
+  npx wrangler versions upload --config <remote-matched-config> --strict --keep-vars
+  npx wrangler versions deploy <reviewed-uploaded-version-id>@100% --name <verified-worker>
+Neither versions upload nor a preview upload was performed; both write remote
+state. Do not run triggers deploy, alter routes or apply local config to the live
+Worker. --keep-vars only preserves variables; it does not preserve every binding,
+asset collection or route by itself. --strict is additional protection, not an
+atomic lock against a concurrent promotion.
+
+REQUIRED NO-OVERWRITE GATES BEFORE ANY FUTURE PROMOTION
+
+1. Freeze concurrent publications for the short release window. Record the exact
+   active content deployment and source SHA from the actual host. Confirm it
+   contains the published PPF phases and all newer approved production changes.
+2. Authenticate read access to the controlling Cloudflare zone/account. Export
+   active deployment versions/traffic weights, version details and bindings,
+   code multipart, script settings, route mappings, custom domains, DNS proxy
+   mode and relevant redirect/ruleset configuration with GET only. Keep secret
+   values private. Preserve these remote snapshots unchanged in the release.
+3. The current inspect-cloudflare.mjs tries GET /accounts and /zones first;
+   repeat only after normal account access is available. Its requests and 403
+   failures are recorded in cloudflare-readonly-index.json. This is not a
+   successful remote configuration backup.
+4. Compare the candidate baseline to that actual active release, not just local
+   origin/main. If production has newer edits, rebase/reconstruct the isolated
+   candidate on them, preserve PPF/tuning/backend/config, and repeat full QA.
+5. Immediately before publication, repeat remote deployment IDs/weights/settings/
+   route hashes and source SHA checks. Abort if any changed. Recompare the public
+   PPF/tuning/sitemap snapshots and selected rendered content. Route-varying public
+   headers and body snapshots are additional drift evidence, not a complete
+   no-overwrite proof.
+6. Require a verified rollback operation to the exact active remote snapshot,
+   then request approval for the concrete candidate and promotion action.
+
+The prepared fail-closed backup/preflight command, from the repository root:
+  node outputs/automotive-release-2026-10-19/deployment/snapshot-cloudflare-readonly.mjs
+It reads an existing CLOUDFLARE_API_TOKEN environment variable or the existing
+Wrangler OAuth access token privately. It never creates/refreshes credentials.
+Each run creates a new deployment/snapshots/<UTC timestamp>.local directory with
+exclusive file writes, so it cannot replace the earlier capture. The *.local
+directory is ignored by Git because raw settings can contain private values.
+Do not attach its raw configurations to a public report or commit them.
+
+The command captures GET zone/account metadata, DNS, Worker routes/custom domains,
+page rules, zone/account rulesets and redirect lists, relevant HTTPS settings,
+active deployments, version history/details including bindings/settings, raw
+code multipart/download, script settings, schedules and subdomain configuration.
+Any missing permission, API error, unhandled pagination or state drift prevents a
+complete snapshot. It identifies Workers from actual route/domain mappings rather
+than assuming the repository Worker name is live. It verifies active deployments
+and routes again at the end. A new read-only comparison is run with:
+  node outputs/automotive-release-2026-10-19/deployment/snapshot-cloudflare-readonly.mjs --compare=<path-to-prior-complete-timestamp.local> --origin-state=<private-origin-evidence.json>
+
+The private origin evidence must record host, publishedDeploymentId,
+publishedSourceSha, rollbackTarget and verifiedAt from the actual published host.
+Those fields are an evidence requirement, not a method to discover or fabricate
+unknown IDs. The script fingerprints the captured remote base and compares it to
+the prior complete capture; failure exits nonzero. It never sets releaseAllowed
+to true because read-only evidence cannot authorize publication. Recheck the
+reviewed candidate's baseline and source hashes independently against the captured
+base before any future upload. Even a passed comparison needs a short publication
+freeze, current origin verification and explicit approval; it is not an atomic
+compare-and-swap deployment lock.
+
+Syntax was checked. Its current-session execution made one GET, received
+403 / 9109 and exited 1 with cloudflareSnapshotComplete=false,
+originSnapshotComplete=false and releaseAllowed=false. A non-secret copy of that
+result is cloudflare-preflight-result.json. No version upload, API mutation,
+publisher invocation or Cloudflare dry-run promotion was executed.
+
+ROLLBACK PROCEDURE AND PRESENT LIMIT
+
+A complete executable rollback target was NOT obtained. Public HTML/headers and
+the editor SHA are preserved, but they do not contain every live asset, binding,
+rule or the immutable live deployment identifier. Do not claim that local HEAD,
+the old PPF parent, or an archived router bundle restores the current production.
+
+For the verified Lovable path, obtain and record the exact pre-release published
+snapshot/commit and the supported recovery operation before GO. After approval,
+restore that exact remote snapshot through the same host and republish, preserving
+all pre-release PPF/tuning changes. Avoid working-tree reset/checkout/stash and
+do not unpublish the site as a rollback.
+
+If the actual content host is a Workers version with static assets, save the full
+pre-release version and traffic split first. Cloudflare's supported single-version
+rollback form is:
+  npx wrangler rollback <pre-release-active-version-id> --name <verified-worker> --message "Restore pre-automotive-release version"
+For a pre-existing split deployment, restoring only one version at 100% does not
+restore the prior split. Restore the saved version percentages with versions
+deploy instead. Rollbacks do not restore independent storage or routes. No
+storage/route/config changes should be included in this automotive release.
+
+After any rollback, compare all saved PPF and tuning rendered markers and contact
+paths, the affected 30 EN/AR routes, sitemap, canonical/hreflang/schema and known
+redirects to the captured pre-release state. Investigate any mismatch before
+reopening release work.
+
+Treat origin and edge as a recovery pair: record both immutable pre-release
+states, declare which is changing, and keep the unchanged member pinned. For
+this content-only release the edge remains unchanged while the approved Lovable
+snapshot is promoted. A failed content release should restore that recorded
+origin snapshot with the same edge. If unexpected edge drift is observed, stop
+and restore only the exact recorded edge state after reviewing current traffic;
+do not detach routes to return to an assumed historical origin. If the real host
+uses Worker static assets, its saved version covers code/assets/bindings, while
+the recorded routes/custom domains and any separate Lovable origin still require
+verification. No verified origin or Worker rollback UUID is available now.
+
+POST-RELEASE CHECKLIST
+
+post-release-checklist.csv contains all 30 target routes. For each, verify live
+200 rendered copy, exactly one H1, intended title/description, self canonical,
+indexable robots, reciprocal en-AE/ar-AE/x-default, intended Service graph, working
+hub/repair links, and sitemap inclusion. Check mobile at 320/390px and Arabic RTL.
+Test quotation validation and the composed WhatsApp draft through interception;
+do not send a customer message or count draft openings/clicks as enquiries.
+
+Also check: www and legacy redirects preserve path/query without chains; sitemap
+has the current owners and correct alternates; robots permits them; PPF/tuning
+and their current contacts behave as in the baseline; unrelated endpoint probes
+remain unchanged. Record the existing unknown-path 200 and /ppf alias 200 defects
+as pre-existing edge behavior, not failures introduced by this content candidate.
+Do not silently enable the locally prepared guard to fix them in this release.
+
+GSC URL Inspection after release: inspect five hubs + ten owners + Arabic
+counterparts, compare live test/HTTP with indexed status, last crawl, user-declared
+and Google-selected canonical, crawl/indexing availability, rendered content and
+sitemap discovery. Request indexing only after live checks pass and if approved
+within the release workflow. GSC indexed-state and live-test evidence has not been
+retrieved by this release preparation. Monitor 28/92-day query/enquiry results;
+contact clicks remain engagement events rather than confirmed leads.
+
+OFFICIAL REFERENCES CHECKED 19 OCTOBER 2026
+
+https://docs.lovable.dev/features/publish
+  Publication deploys the current project snapshot; later edits need publication.
+https://developers.cloudflare.com/workers/versions-and-deployments/
+  Versions capture code/assets/bindings/settings; deployments select traffic.
+https://developers.cloudflare.com/workers/wrangler/commands/workers/
+  Read/list, upload, deploy, keep-vars, strict and rollback command semantics.
+https://developers.cloudflare.com/workers/versions-and-deployments/rollbacks/
+  Rollback deploys a saved version; independent resources are not rolled back.
+https://developers.cloudflare.com/api/resources/workers/subresources/scripts/
+  GET endpoints for content, settings, deployments and versions.
+
+Files created by this deployment audit are confined to this deployment/ folder.
+No app, Cloudflare configuration, backend, Git index, remote or production content
+was changed.

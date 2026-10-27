@@ -1,0 +1,79 @@
+[
+  {
+    "id": "5addb0c068414fb5b985a869ded26c68",
+    "description": "Mercedes oil change legacy URLs to existing service",
+    "expression": "(http.host in {\"digitecme.com\" \"www.digitecme.com\"}) and (http.request.method in {\"GET\" \"HEAD\"}) and (http.request.uri.path in {\"/brands/mercedes-benz-service-dubai/oil-change\" \"/brands/mercedes-benz-service-dubai/oil-change/\"})",
+    "target": "https://digitecme.com/services/mercedes-oil-change-dubai",
+    "statusCode": 308,
+    "preserveQuery": true,
+    "type": "Static",
+    "readAt": "2026-10-26T07:35:30.651Z",
+    "allFieldsMatch": true
+  },
+  {
+    "id": "dbe42693423442afbc3bab9b993242a7",
+    "description": "Legacy Mercedes URLs to Mercedes brand service page",
+    "expression": "http.request.uri.path in {\"/services/mercedes-repair-dubai\" \"/services/mercedes-repair-dubai/\" \"/services/mercedes-service-dubai\" \"/best-mercedes-workshop-dubai\"}",
+    "target": "https://digitecme.com/brands/mercedes-benz-service-dubai",
+    "statusCode": 301,
+    "preserveQuery": true,
+    "type": "Static",
+    "readAt": "2026-10-26T07:35:31.414Z",
+    "allFieldsMatch": true
+  },
+  {
+    "id": "b835ca6b88b448d6809f01271dba491b",
+    "description": "Mercedes Arabic oil legacy alias to existing service",
+    "expression": "(http.host in {\"digitecme.com\" \"www.digitecme.com\"}) and (http.request.method in {\"GET\" \"HEAD\"}) and (http.request.uri.path in {\"/ar/brands/mercedes-benz-service-dubai/oil-change\" \"/ar/brands/mercedes-benz-service-dubai/oil-change/\"})",
+    "target": "https://digitecme.com/ar/services/mercedes-oil-change-dubai",
+    "statusCode": 308,
+    "preserveQuery": true,
+    "type": "Static",
+    "readAt": "2026-10-26T07:35:32.215Z",
+    "allFieldsMatch": true
+  },
+  {
+    "id": "5fafd20389964771885d8d1194f01d77",
+    "description": "Mercedes body repair legacy alias to existing service",
+    "expression": "(http.host in {\"digitecme.com\" \"www.digitecme.com\"}) and (http.request.method in {\"GET\" \"HEAD\"}) and (http.request.uri.path in {\"/brands/mercedes-benz-service-dubai/body-repair\" \"/brands/mercedes-benz-service-dubai/body-repair/\"})",
+    "target": "https://digitecme.com/services/mercedes-body-repair-dubai",
+    "statusCode": 308,
+    "preserveQuery": true,
+    "type": "Static",
+    "readAt": "2026-10-26T07:35:33.016Z",
+    "allFieldsMatch": true
+  },
+  {
+    "id": "239ab46545704096bec2628d8eedf9b9",
+    "description": "Mercedes Arabic battery legacy alias to existing service",
+    "expression": "(http.host in {\"digitecme.com\" \"www.digitecme.com\"}) and (http.request.method in {\"GET\" \"HEAD\"}) and (http.request.uri.path in {\"/ar/brands/mercedes-benz-service-dubai/battery-replacement\" \"/ar/brands/mercedes-benz-service-dubai/battery-replacement/\"})",
+    "target": "https://digitecme.com/ar/services/mercedes-battery-replacement-dubai",
+    "statusCode": 308,
+    "preserveQuery": true,
+    "type": "Static",
+    "readAt": "2026-10-26T07:35:33.806Z",
+    "allFieldsMatch": true
+  },
+  {
+    "id": "2873f5b6de04417d8a486b22cc878835",
+    "description": "Mercedes Arabic mechanical legacy alias to existing service",
+    "expression": "(http.host in {\"digitecme.com\" \"www.digitecme.com\"}) and (http.request.method in {\"GET\" \"HEAD\"}) and (http.request.uri.path in {\"/ar/brands/mercedes-benz-service-dubai/mechanical-repair\" \"/ar/brands/mercedes-benz-service-dubai/mechanical-repair/\"})",
+    "target": "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai",
+    "statusCode": 308,
+    "preserveQuery": true,
+    "type": "Static",
+    "readAt": "2026-10-26T07:35:34.596Z",
+    "allFieldsMatch": true
+  },
+  {
+    "id": "9781b1ef743f4ffbaadbe5cb3250eeca",
+    "description": "www to primary domain",
+    "expression": "(http.host eq \"www.digitecme.com\")",
+    "target": "concat(\"https://digitecme.com\", http.request.uri.path)",
+    "statusCode": 301,
+    "preserveQuery": true,
+    "type": "Dynamic",
+    "readAt": "2026-10-26T07:35:51.192Z",
+    "allFieldsMatch": true
+  }
+]

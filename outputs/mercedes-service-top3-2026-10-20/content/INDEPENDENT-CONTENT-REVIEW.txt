@@ -1,0 +1,40 @@
+INDEPENDENT CONTENT AND SOURCE REVIEW — 20 OCTOBER 2026
+Result: PASS for the reviewed source snapshot; no critical or blocking issue found. Read-only review, no product edits. Build, rendered schema/routing and browser behavior remain covered by the separate QA workstream.
+
+Scope: src/data/mercedesServiceCampaign.ts, src/components/MercedesServiceBookingForm.tsx, src/components/MercedesMaintenanceScope.tsx, src/pages/BrandPage.tsx, src/pages/Services.tsx and src/lib/route-manifest.ts. Compared tracked changes with Git HEAD and inspected complete new campaign/form files, relevant existing tracking and locale helpers, metadata/schema integration and anchor targets.
+
+Claims and servicing accuracy
+- Service A/B text is conditional and vehicle-specific. It does not convert US manufacturer intervals into Dubai intervals or prescribe one oil grade, fluid quantity, fixed package or mileage for all models.
+- ASSYST/reminders, year/market specification, mileage, elapsed-time requirements and service history determine due work. Warnings/fault diagnosis remain distinct from scheduled servicing. Service B filter/brake-fluid work is described as potentially due under the applicable schedule, not a universal inclusion.
+- AMG variants and use are qualified; track driving/modifications are intake context. Hybrid/electric scope requires separate confirmation; combustion oil servicing is explicitly not universal. No high-voltage procedure, software function or digital-service-book access is promised.
+- No new manufacturer authorization, certification, diagnostic licence/function, equipment compatibility, price, free diagnosis, warranty, guaranteed duration or ranking claim introduced. The retained XENTRY wording is pre-existing source, not newly established by OEM evidence. Do not treat the external GBP service list as proof of workshop capabilities.
+- Estimate/scope/extra-work approval wording is consistent with cautious existing-service language. Heat/dust/short trips justify condition checks subject to exact-vehicle guidance; no blanket replacement interval is asserted.
+
+English/Arabic consistency
+- Title/H1, six customer answers, introductory scope, A/B rows, quotation inputs and the eight form fields express materially equivalent intent and caveats.
+- Both locales request model, year, mileage/unit, complete service message, available history and preferred appointment. Model/message are required with an unknown option; year/mileage/history/appointment remain optional to avoid blocking an initial enquiry. Optional name/phone are clearly labelled.
+- The Arabic telephone input uses LTR direction; maintenance contact uses bdi. Existing unrelated Arabic content is preserved. Arabic does not gain a broader capability or guaranteed booking claim.
+
+Conversion and analytics
+- Primary English hero CTA is Book Mercedes Service; Arabic equivalent is present. Fixed workshop telephone/WhatsApp destination remains +97143402223.
+- New form explicitly prepares a WhatsApp draft. It tells users to review/send the draft and wait for the team to confirm scope and availability. Opening it does not count as a confirmed appointment or received enquiry.
+- Code emits whatsapp_click and whatsapp_draft_opened only; no lead/booking-success event or backend submission was added. Existing tracking helper strips the message query before analytics. Structured analytics payload carries brand/path/form/placement/intent, not model, phone, history or free-text content.
+- Validation precedes draft creation; input is encoded with encodeURIComponent, and new window uses noopener/noreferrer. Name and callback details remain optional. No passwords or account credentials are requested.
+
+Integration, anchors and graph
+- Campaign data overrides sourceBrand only for exact mercedes-benz-service-dubai. New form and maintenance panel render only under isMercedesServiceHub. Other brand fallbacks remain in place.
+- English Mercedes metadata comes from campaign data; no Mercedes entry in priorityBrandSeo shadows it. Arabic uses its matching campaign values. URL/canonical construction is unchanged.
+- Existing pageGraph/buildService/brand/provider builders and IDs are retained. Service/WebPage name/description and FAQ data are intentionally aligned with visible Mercedes content; no new business entity, review/rating, AI schema or fabricated offer was added.
+- Maintenance section moved earlier and duplicate general story/old A/B/parts paragraphs are consolidated. Repair, model and diagnostic sections remain secondary; no routes are created.
+- All seven English section-nav destinations exist: maintenance-scope, services, problems, models, reviews, faqs and booking. New #mercedes-booking exists for both locales. Services-directory fragment points at the existing hub and LocalizedLink preserves the fragment with the Arabic prefix. Six maintenance links continue using LocalizedLink and varied contextual labels. Actual HTTP/localized existence and SPA scrolling remain browser-QA checks, not inferred solely from source.
+- Additional route-manifest change is justified: only the two Mercedes hub locales and the two services-directory locales receive lastmod 2026-10-20, matching substantive content/link changes. Routing, indexing and all other route dates, including PPF/tuning, are unaffected by the exact-path Set.
+
+Nonblocking operational limits
+- Analytics configuration outside these files is not independently verified: an operator must not mark draft/click events as confirmed bookings or infer WhatsApp receipt from them.
+- Job photographs, technician credentials, actual GBP category corrections and editorial/citation outreach remain evidence/approval tasks; no new source claims fill those gaps.
+
+Six source SHA256 hashes are recorded in INDEPENDENT-CONTENT-REVIEW.json to identify this read-only review snapshot. The final form was reread with the lastmod addition: Arabic labels, placeholders, unknown option and draft disclaimer are clear and consistent; no new fixed hours or inherited technical promises were added. If source changes after this review, inspect the changed portions before relying on this result.
+
+Final source delta reviewed: English hero intro shortened to 39 whitespace-separated words to address the separately measured 320px fixed-bar overlap. It retains scheduled servicing, independent Al Quoz identity, model/year/mileage/reminder/history, confirmation of maintenance/quotation/appointment availability and separate repair/diagnostic scope. Approval and vehicle-specific caveats remain below in the scope, FAQs, booking copy and draft disclaimer. Arabic's existing equivalent meaning remains intact; identical word count is unnecessary. Content result remains PASS; the new dist must separately pass the six initial-viewport geometry cases. Current campaign-data SHA256: 98012343a3f8450ba6a34bb094425beaa4049932d534d9115d0b373ded32c8dd.
+
+Final geometry evidence received: all six cases PASS on rebuilt candidate fingerprint7d3d58e24c826757c32c28cec6c1cf03f74251d8d76af1fed0a03b48d0cc18d2. Final EN320 and AR390 screenshots visually inspected; all six source hashes rechecked unchanged after measurement. See qa/above-fold/ABOVE-FOLD-REVIEW.txt and above-fold-results.json; original failing geometry is preserved in before-fix/.

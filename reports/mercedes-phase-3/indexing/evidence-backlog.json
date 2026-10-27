@@ -1,0 +1,86 @@
+{
+  "preparedDateDubai": "2026-10-26",
+  "status": "Read-only investigation and reviewable local proposals; no source or production changes",
+  "items": [
+    {
+      "id": "BI-01",
+      "priority": "P1 evidence",
+      "action": "Retain fresh authenticated stored inspection of body slashless/slash owners, legacy source and indexed service controls, with exact observation/last-crawl/canonical/referrer/sitemap fields.",
+      "owner": "Root Search Console operator",
+      "evidence": "Current public body response is 200/self-canonical/indexable; prior Google body record was crawled currently not indexed with last crawl 11 October.",
+      "expectedImpact": "Resolves evidence timing and canonical uncertainty; no ranking effect from reading data.",
+      "risk": "Low read-only risk; do not substitute current HTML canonical for unavailable Google-selected values.",
+      "verification": "Body strict displayed URL equality and expanded fields accepted; preserve exact report/evidence hashes and literal crawl timezone uncertainty. Compare a later stored record with a newer crawl before attributing effects to R2.",
+      "approval": "Read-only collection is authorized; no Test live URL, Request indexing or submission included.",
+      "status": "Fresh strict-URL body readback and eight accepted controls completed; remaining planned controls unknown after root paused GSC on performance429",
+      "latestBodyObservation": {
+        "capturedAt": "2026-10-26T08:22:33.455Z",
+        "exactUrlValidated": true,
+        "status": "Crawled - currently not indexed",
+        "lastCrawlDisplayed": "11 Oct 2026, 09:31:46",
+        "userDeclaredCanonical": "N/A",
+        "googleSelectedCanonical": "N/A",
+        "evidence": "body-indexed-observation.json"
+      }
+    },
+    {
+      "id": "S1",
+      "priority": "P2 customer clarity",
+      "action": "Review mercedes-body-enquiry-minimal.patch for the existing English body owner.",
+      "evidence": "Hero asks for photos but existing body WhatsApp drafts contain only a generic enquiry; final CTA uses generic vehicle wording.",
+      "expectedImpact": "Clearer initial damage information and quote expectations; indexing/ranking impact unproven.",
+      "risk": "Low code scope across two existing files; ensure Arabic/other services and metadata remain unchanged.",
+      "verification": "Applicability/syntax already pass. In an approved isolated implementation copy, verify generated SSR message, encoded existing phone destination, unchanged title/H1/canonical/robots/schema, desktop/mobile and keyboard behavior; do not send a test message.",
+      "approval": "Requires explicit source-application and publication approval; neither performed."
+    },
+    {
+      "id": "S2",
+      "priority": "P2 optional navigation",
+      "action": "Review general-body-to-mercedes-context-link.patch independently.",
+      "evidence": "Current general-body main content has no direct Mercedes-body edge; the Mercedes owner already has five contextual live inbounds and two-hop home discovery.",
+      "expectedImpact": "Useful brand-specific customer path and modest additional internal discovery context; not an orphan fix or guaranteed indexing improvement.",
+      "risk": "Low; adds one existing-page link with no capability claim.",
+      "verification": "Applicability/syntax already pass. Verify exact target 200/canonical/indexability and English-only paragraph, focus and anchor placement in approved implementation QA.",
+      "approval": "Optional separate source/publication approval required; not applied."
+    },
+    {
+      "id": "BI-02",
+      "priority": "P1 conditional evidence",
+      "action": "Collect one genuine Mercedes bodywork job record for an eventual on-page proof block, not a new URL.",
+      "evidence": "Body owner contains only a Mercedes logo as main image; existing linked G63 gallery is a conversion and does not prove an accident repair.",
+      "requiredFacts": [
+        "Vehicle model/year and job date with identifiers redacted",
+        "Actual inspected damage and findings",
+        "Repair versus replacement/paintwork scope",
+        "Who performed any specialist work and what was verified",
+        "Authentic before/process/after images and provenance",
+        "Operator approval and publication consent"
+      ],
+      "expectedImpact": "More useful first-hand evidence and differentiation; no guaranteed index inclusion or ranking gain.",
+      "risk": "High factual/reputational risk if a conversion, stock image or undocumented capability is presented as accident-repair proof.",
+      "verification": "Match each proposed sentence/caption to job documentation and operator approval; preserve exclusions and visible/schema consistency.",
+      "approval": "Blocked on real evidence and content/publication approval. No placeholder claims or case copy prepared as fact."
+    },
+    {
+      "id": "BI-03",
+      "priority": "P2 verification",
+      "action": "Retain root desktop render evidence and close remaining mobile/keyboard gaps only in separately scoped QA. Google rendered screenshot would require its excluded live-test workflow.",
+      "evidence": "Root screenshot1272x6069 and rendered/FAQ-expanded AX captured at2026-10-26T08:27:21.552Z under indexing/browser; relevant content and CTAs render, first FAQ works, no enquiry submitted.",
+      "expectedImpact": "Detects actual visibility/hydration/accessibility defects if present; no defect is asserted from absence of browser access.",
+      "risk": "Low read-only review; do not submit enquiry forms, change site settings or invoke indexing actions.",
+      "verification": "Capture viewport/device, screenshot and accessibility state; confirm content visibility, wrap/overflow, focus order, FAQ expansion and unchanged SEO fields.",
+      "approval": "Read-only inspection authorized when access exists; any fix/release requires a reviewed concrete change.",
+      "status": "Root desktop public render completed; first FAQ expansion observed; mobile/keyboard/Googlebot/analytics remain untested"
+    },
+    {
+      "id": "BI-04",
+      "priority": "P1 canonical evidence",
+      "action": "Retain body and oil slash/slashless variants separately in query-page analysis and compare later stored Google decisions after a newer ordinary crawl.",
+      "evidence": "Eight accepted records show body slash indexed/Google-selected slash from July1 while declaring slashless; body slashless is crawled currently not indexed from October11. English oil has an analogous stored split.",
+      "expectedImpact": "Clarifies measured landing-page ownership and whether preferred variants converge; observation alone has no direct ranking effect.",
+      "risk": "An automatic slash redirect or canonical switch would change existing SEO behavior without evidence of the latest Google evaluation.",
+      "verification": "Preserve exact slash equality, last-crawl dates, declared versus selected fields and both variants' real performance rows; unavailable selected fields remain N/A. Other planned inspections stay unknown after the429pause.",
+      "approval": "Current read-only analysis completed; no automation or additional GSC calls scheduled. Any later canonical/routing change needs its own concrete reviewed proposal and approval."
+    }
+  ]
+}

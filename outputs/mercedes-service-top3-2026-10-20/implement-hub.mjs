@@ -1,0 +1,32 @@
+import fs from 'node:fs/promises';
+const file='src/pages/BrandPage.tsx';let code=(await fs.readFile(file,'utf8')).replaceAll('\r\n','\n');
+function once(before,after){if(code.split(before).length!==2)throw Error('Expected one match: '+before.slice(0,100));code=code.replace(before,after);}
+once('const brand = sourceBrand && isArabic ?', "const brand = sourceBrand?.slug === 'mercedes-benz-service-dubai' ? { ...(isArabic ? localizeBrandToArabic(sourceBrand) : sourceBrand), intro: mercedesCampaign.intro, specialization: mercedesCampaign.specialization, faqs: mercedesCampaign.faqs } : sourceBrand && isArabic ?");
+once('const entityName = isArabic', 'const entityName = isMercedes ? mercedesCampaign.h1 : isArabic');
+once('const schemaDescription = isArabic', 'const schemaDescription = isMercedes ? mercedesCampaign.description : isArabic');
+once('priorityBrandSeo, serviceSprintBrand, sourceBrand]);', 'priorityBrandSeo, serviceSprintBrand, sourceBrand, mercedesCampaign]);');
+once("isMercedesServiceHub ? 'إصلاح وصيانة مرسيدس في دبي | ديجي-تك'", 'isMercedesServiceHub ? mercedesCampaign.title');
+once("isMercedesServiceHub ? 'ورشة مستقلة لصيانة وإصلاح مرسيدس في القوز، دبي. تشخيص XENTRY وفحص المحرك والقير والتعليق والتكييف والكهرباء مع توضيح النطاق والتكلفة قبل العمل.'", 'isMercedesServiceHub ? mercedesCampaign.description');
+once('const whatsappHref = isEnglishAstonHub', 'const whatsappHref = isMercedesServiceHub ? `https://wa.me/97143402223?text=${encodeURIComponent(mercedesCampaign.message)}` : isEnglishAstonHub');
+once("{isArabic && serviceSprintBrand ? <>إصلاح وصيانة", "{isMercedesServiceHub ? mercedesCampaign.h1 : isArabic && serviceSprintBrand ? <>إصلاح وصيانة");
+once("{isArabic ? 'راسلنا عبر واتساب'", "{isArabic ? isMercedesServiceHub ? 'احجز صيانة مرسيدس' : 'راسلنا عبر واتساب'");
+once('{isPriorityLeadBrand && !isArabic && !isEnglishBmwHub', '{isPriorityLeadBrand && !isArabic && !isMercedesServiceHub && !isEnglishBmwHub');
+once("              ['Services', '#mercedes-services'],", "              ['Maintenance', '#mercedes-maintenance-scope'],\n              ['Other services', '#mercedes-services'],");
+once("              ['Maintenance', '#mercedes-maintenance-scope'],\n              ['Reviews'", "              ['Reviews'");
+once('      {isMercedesServiceHub && <MercedesMaintenanceScope isArabic={isArabic} />}\n', '');
+once('      {isPorscheServiceHub && !isArabic && <PorscheKnowledgeCentre />}','      {isMercedesServiceHub && <MercedesMaintenanceScope isArabic={isArabic} />}\n\n      {isPorscheServiceHub && !isArabic && <PorscheKnowledgeCentre />}');
+once('<>Mercedes <span className="text-burnt-orange">Repair & Maintenance</span> in Dubai</>', '<>Additional Mercedes <span className="text-burnt-orange">Repair & Diagnostic Services</span></>');
+once("'Start with the symptom or service your Mercedes needs. Each area below links to a focused page with the relevant warning signs, inspection process and model-specific technical detail.'", "'A warning, leak or change in how the car drives needs its own assessment. Use the relevant repair or diagnostic page below; these investigations are separate from scheduled servicing unless included in the agreed quotation.'");
+const duplicateA=/                  <div>\r?\n                    <h3[^>]+>Mercedes Service A vs Service B<\/h3>[\s\S]*?                  <\/div>\r?\n/;
+if((code.match(duplicateA)||[]).length!==1)throw Error('Missing duplicate A/B block');code=code.replace(duplicateA,'');
+const duplicateParts=/                  <div>\r?\n                    <h3[^>]+>Mercedes Parts and Fluid Specifications<\/h3>[\s\S]*?                  <\/div>\r?\n/;
+if((code.match(duplicateParts)||[]).length!==1)throw Error('Missing duplicate parts block');code=code.replace(duplicateParts,'');
+once('<section className="brand-section brand-section--story', '{!isMercedesServiceHub && <section className="brand-section brand-section--story');
+once('      </section>\n\n      {/* FAQ */}\n      </>', '      </section>}\n\n      {/* FAQ */}\n      </>');
+const formLine=/              <BrandBookingForm [^\n]+ \/>/;if(!formLine.test(code))throw Error('Missing generic form');code=code.replace(formLine,line=>line.replace('<BrandBookingForm','{isMercedesServiceHub ? <MercedesServiceBookingForm /> : <BrandBookingForm')+'}');
+once("{serviceSprintBrand ? (isArabic ? 'أرسل الطراز", "{isMercedesServiceHub ? (isArabic ? 'أرسل طراز مرسيدس وسنة الصنع والمسافة ورسالة Service A أو Service B أو أي رسالة صيانة أخرى، والسجل المتاح والموعد المفضل. يؤكد الفريق الأعمال المستحقة والتوفر وعرض السعر. تُناقش الأعطال والأعمال الإضافية بصورة منفصلة قبل الموافقة.' : 'Send your Mercedes model, year, mileage, Service A/B reminder or other service message, available history and preferred appointment. The team confirms the due work, availability and quotation. Fault investigation and additional work are discussed separately before approval.') : serviceSprintBrand ? (isArabic ? 'أرسل الطراز");
+once("{isArabic ? 'واتساب الآن' : isMercedesServiceHub ? 'Book Mercedes Service'", "{isArabic ? isMercedesServiceHub ? 'احجز صيانة مرسيدس' : 'واتساب الآن' : isMercedesServiceHub ? 'Book Mercedes Service'");
+// The breadcrumb describes the same unchanged owner in both languages.
+once("{isArabic ? `إصلاح وصيانة ${brand.name} في دبي` : isEnglishBmwHub", "{isMercedesServiceHub ? mercedesCampaign.h1 : isArabic ? `إصلاح وصيانة ${brand.name} في دبي` : isEnglishBmwHub");
+await fs.writeFile(file,code);
+console.log('Scoped Mercedes hub integration complete');

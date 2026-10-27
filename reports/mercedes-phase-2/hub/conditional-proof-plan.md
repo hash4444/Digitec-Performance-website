@@ -1,0 +1,12 @@
+# Conditional collection plan for genuine Mercedes repair proof
+
+This is an evidence request and sequence, not a scheduled automation or approved website change. No new page, case registry entry or replacement caption is proposed by this plan.
+
+| Relative step after operator agreement | Owner/input needed | Reviewable output |
+|---|---|---|
+| Step 1: confirm visit facts | Workshop operator confirms current master name, warehouse range, visitor entrance/pin, public phone and hours; provides current source record | Fact sheet with source, confirmation date and named approver. Reconcile any conflicting citations separately. The current proposal reuses the published warehouse range/phone; no hours or entrance claim is added. |
+| Step 2: identify one real repair or diagnostic job | Workshop supplies an anonymised job record for an existing service owner and confirms permission to use images and relevant details | Model/year/engine or fitted system, original concern, supported diagnostic functions, checks and findings, recommended scope, owner-approved work, actual work performed, parts, and dated before/after test evidence where available. Do not use a VIN, registration, name, phone or other customer identifier in public copy. |
+| Step 3: technical and publication review | Technician checks the diagnosis and outcome; business confirms image rights and which claims are publishable | A short, evidence-backed paragraph or caption for the existing hub/service page, linked to the existing relevant owner. Clearly separate “inspected”, “diagnosed”, “repaired” and “outcome confirmed”; publish only supported stages. Retain any access limitations. |
+| Step 4: separate content approval | User reviews the concrete new paragraph/caption and its evidence | A later minimal diff, subject to explicit approval before any source implementation or production publication. No automatic addition to `mercedesCaseStudies`, routes or sitemap. |
+
+Until a real record passes those checks, retain the empty repair case collection. The existing Mercedes-AMG engine image supports workshop context; the G63 conversion gallery supports the documented conversion scope. Neither supplies the missing mechanical repair outcome. Do not add years of Mercedes-specific experience, job counts, warranties, prices, turnaround times, certifications, manufacturer status, testimonials or performance figures without specific supporting evidence.

@@ -1,0 +1,20 @@
+// Public GET/HEAD only; no browser JS, forms, authentication or mutations.
+import {mkdir,writeFile} from 'node:fs/promises';
+import {createHash} from 'node:crypto';
+import {fileURLToPath} from 'node:url';
+import {resolve} from 'node:path';
+const root=fileURLToPath(new URL('./',import.meta.url));
+const out=resolve(root,'http',new Date().toISOString().replace(/[:.]/g,'-'));
+await mkdir(resolve(out,'html'),{recursive:true});
+const origin='https://digitecme.com';
+const pages=[['body-en','/services/mercedes-body-repair-dubai'],['body-en-slash','/services/mercedes-body-repair-dubai/'],['body-ar','/ar/services/mercedes-body-repair-dubai'],['body-general','/services/car-body-repair-dubai'],['body-bmw','/brands/bmw-service-dubai/body-repair'],['hub-en','/brands/mercedes-benz-service-dubai'],['hub-ar','/ar/brands/mercedes-benz-service-dubai'],['oil-en','/services/mercedes-oil-change-dubai'],['oil-ar','/ar/services/mercedes-oil-change-dubai'],['mechanical-en','/services/mercedes-mechanical-repair-dubai'],['mechanical-ar','/ar/services/mercedes-mechanical-repair-dubai'],['diagnostics-en','/services/mercedes-diagnostics-dubai'],['diagnostics-ar','/ar/services/mercedes-diagnostics-dubai'],['battery-ar','/ar/services/mercedes-battery-replacement-dubai'],['services','/services'],['brands','/brands'],['home','/'],['blog','/blog'],['g63-case','/blog/g63-to-brabus-g800-conversion-dubai'],['about','/about'],['sitemap-page','/sitemap'],['legacy-body','/brands/mercedes-benz-service-dubai/body-repair'],['paint-protection','/services/paint-protection-dubai']];
+const rows=[];
+const requests=pages.flatMap(([key,path])=>['GET','HEAD'].map(method=>({key,path,method})));
+const startedAt=new Date().toISOString();
+let cursor=0;
+await Promise.all(Array.from({length:3},async()=>{while(cursor<requests.length){const item=requests[cursor++];const chain=[];let url=origin+item.path;for(let hop=0;hop<4;hop++){const at=new Date().toISOString();try{const response=await fetch(url,{method:item.method,redirect:'manual',signal:AbortSignal.timeout(25000),headers:{'User-Agent':'DIGI-TEC-Phase3-ReadOnly-Indexing-Review/1.0'}});const headers=Object.fromEntries([...response.headers].filter(([k])=>k!=='set-cookie'));const row={at,url,method:item.method,status:response.status,headers};if(item.method==='GET'){const body=await response.text();row.bodySha256=createHash('sha256').update(body).digest('hex');row.htmlFile=`html/${item.key}-hop${hop}.html`;await writeFile(resolve(out,row.htmlFile),body);}chain.push(row);if(![301,302,303,307,308].includes(response.status)||!headers.location)break;const target=new URL(headers.location,url);if(!['digitecme.com','www.digitecme.com'].includes(target.hostname)){row.unsafeFollowTarget=target.href;break;}url=target.href;}catch(e){chain.push({at,url,method:item.method,status:0,error:e.message+':'+(e.cause?.code||'')});break;}}rows.push({...item,chain});}}));
+const infrastructure=[];
+for(const name of ['robots.txt','sitemap.xml']){const at=new Date().toISOString();const response=await fetch(origin+'/'+name,{redirect:'manual',signal:AbortSignal.timeout(25000)});const body=await response.text();await writeFile(resolve(out,name),body);infrastructure.push({at,url:origin+'/'+name,status:response.status,headers:Object.fromEntries([...response.headers].filter(([k])=>k!=='set-cookie')),file:name,bodySha256:createHash('sha256').update(body).digest('hex')});}
+const report={startedAt,finishedAt:new Date().toISOString(),readOnly:true,scope:'Public GET/HEAD only; all headers except Set-Cookie retained, all GET hop HTML saved; no browser scripts, forms or mutations',pages:rows.sort((a,b)=>a.key.localeCompare(b.key)||a.method.localeCompare(b.method)),infrastructure};
+await writeFile(resolve(out,'capture.json'),JSON.stringify(report,null,2));
+console.log(JSON.stringify({directory:out,cases:rows.length,requests:rows.reduce((sum,r)=>sum+r.chain.length,0)+infrastructure.length,errors:rows.flatMap(r=>r.chain).filter(r=>r.status===0),non200final:rows.filter(r=>r.chain.at(-1).status!==200)},null,2));

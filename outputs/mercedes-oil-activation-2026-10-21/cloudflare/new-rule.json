@@ -1,0 +1,25 @@
+{
+  "ruleId": "5addb0c068414fb5b985a869ded26c68",
+  "submittedAtUtc": "2026-10-21T06:40:17.643Z",
+  "confirmedAtUtc": "2026-10-21T06:40:42.774Z",
+  "scope": {
+    "description": "Mercedes oil change legacy URLs to existing service",
+    "expression": "(http.host in {\"digitecme.com\" \"www.digitecme.com\"}) and (http.request.method in {\"GET\" \"HEAD\"}) and (http.request.uri.path in {\"/brands/mercedes-benz-service-dubai/oil-change\" \"/brands/mercedes-benz-service-dubai/oil-change/\"})",
+    "action": "redirect",
+    "action_parameters": {
+      "from_value": {
+        "target_url": {
+          "value": "https://digitecme.com/services/mercedes-oil-change-dubai"
+        },
+        "status_code": 308,
+        "preserve_query_string": true
+      }
+    },
+    "enabled": true,
+    "position": {
+      "before": "dbe42693423442afbc3bab9b993242a7"
+    }
+  },
+  "observedFirst": true,
+  "enabled": true
+}

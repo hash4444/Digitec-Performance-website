@@ -29,8 +29,8 @@ export const PRIORITY_BRAND_SEO: Record<string, PriorityBrandSeo> = {
     heroImageHeight: 1600,
   },
   'porsche-service-dubai': {
-    title: 'Porsche Service & Repair Dubai | Digi-Tec Workshop',
-    description: 'Porsche service and repair in Dubai for 911, Cayenne, Macan, Panamera, Cayman and Taycan, with diagnostics, PDK, brakes and suspension care in Al Quoz.',
+    title: 'Porsche Repair & Service Dubai | DIGI-TEC Al Quoz',
+    description: 'Independent Porsche repair and service in Al Quoz, Dubai. Maintenance, PIWIS 3 diagnostics, engine, PDK, brakes and suspension. Request an inspection.',
     heroImage: '/images/porsche-service-dubai-hero.jpg',
     heroImageAlt: 'Porsche GT3 RS inside the Digi-Tec specialist workshop in Dubai',
     heroImageWidth: 1200,

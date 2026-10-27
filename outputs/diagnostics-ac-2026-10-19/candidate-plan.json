@@ -1,0 +1,18 @@
+{
+  "base": "acef3427b57b48259bc5b39d6a0f75798603ae95",
+  "candidate": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\diagnostics-ac-2026-10-19\\candidate.local",
+  "selected": [
+    "src/pages/ServicePage.tsx",
+    "src/pages/BrandServicePage.tsx",
+    "src/components/DiagnosticAcEnquiryPanel.tsx",
+    "src/data/diagnosticsAcGeneralContent.ts",
+    "src/data/diagnosticsAcBrandContent.ts",
+    "scripts/validate-query-release.mjs"
+  ],
+  "fixtures": [
+    "outputs/five-brand-service-2026-10-19/conversion/test-five-brand-browser.mjs",
+    "outputs/repair-service-2026-10-19/qa/test-repair-browser.mjs",
+    "outputs/repair-service-2026-10-19/qa/repair-routes.mjs",
+    "outputs/repair-service-2026-10-19/qa/test-brand-form.mjs"
+  ]
+}

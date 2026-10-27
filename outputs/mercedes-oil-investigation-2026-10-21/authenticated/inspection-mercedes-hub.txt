@@ -1,0 +1,184 @@
+- banner:
+  - button "Main menu":
+  - link "Google Search Console":
+    - /url: ./search-console?resource_id=sc-domain%3Adigitecme.com
+  - search:
+    - textbox [disabled]: Inspect any URL in 'digitecme.com'
+    - combobox "Inspect any URL in digitecme.com"
+    - button "Search":
+  - button "Help":
+    - generic: help_outline
+  - tooltip: Help
+  - button "User settings":
+    - generic: manage_accounts
+  - tooltip: User settings
+  - 'button "Unread messages: 38"':
+    - generic: notifications
+  - tooltip: Messages
+  - generic: "38"
+  - button "Google apps":
+  - 'button "Google Account: Hashem Qusibatie (hqusibatie24@gmail.com)"':
+- dialog "navigational drawer":
+  - navigation "Primary":
+    - button "Search property":
+      - img "favicon"
+      - combobox "digitecme.com"
+      - generic: 
+    - link "Overview":
+      - /url: ./search-console?resource_id=sc-domain%3Adigitecme.com
+      - generic: home
+      - generic: Overview
+    - link "Insights":
+      - /url: ./search-console/performance/insights?resource_id=sc-domain%3Adigitecme.com
+      - generic: lightbulb_2
+      - generic: Insights
+    - link "Performance":
+      - /url: ./search-console/performance/search-analytics?resource_id=sc-domain%3Adigitecme.com
+      - generic: trending_up
+      - generic: Performance
+    - button "Performance report section":
+      - generic: keyboard_arrow_down
+    - button "URL inspection":
+      - generic: search
+      - generic: URL inspection
+    - generic: Indexing
+    - button "Indexing report section" [expanded]:
+      - generic: keyboard_arrow_up
+    - link "Pages":
+      - /url: ./search-console/index?resource_id=sc-domain%3Adigitecme.com
+      - generic: file_copy
+      - generic: Pages
+    - link "Videos":
+      - /url: ./search-console/video-index?resource_id=sc-domain%3Adigitecme.com
+      - generic: video_library
+      - generic: Videos
+    - link "Sitemaps":
+      - /url: ./search-console/sitemaps?resource_id=sc-domain%3Adigitecme.com
+      - generic: account_tree
+      - generic: Sitemaps
+    - link "Removals":
+      - /url: ./search-console/removals?resource_id=sc-domain%3Adigitecme.com
+      - generic: visibility_off
+      - generic: Removals
+    - generic: Experience
+    - button "Experience report section" [expanded]:
+      - generic: keyboard_arrow_up
+    - link "Core web vitals":
+      - /url: ./search-console/core-web-vitals?resource_id=sc-domain%3Adigitecme.com
+      - generic: speed
+      - generic: Core web vitals
+    - link "HTTPS":
+      - /url: ./search-console/https?resource_id=sc-domain%3Adigitecme.com
+      - generic: lock
+      - generic: HTTPS
+    - generic: Shopping
+    - button "Shopping report section" [expanded]:
+      - generic: keyboard_arrow_up
+    - link "Product snippets":
+      - /url: ./search-console/r/product?resource_id=sc-domain%3Adigitecme.com
+      - generic: layers
+      - generic: Product snippets
+    - link "Merchant listings":
+      - /url: ./search-console/r/merchant-listings?resource_id=sc-domain%3Adigitecme.com
+      - generic: layers
+      - generic: Merchant listings
+    - generic: Enhancements
+    - button "Enhancements report section" [expanded]:
+      - generic: keyboard_arrow_up
+    - link "Breadcrumbs":
+      - /url: ./search-console/r/breadcrumbs?resource_id=sc-domain%3Adigitecme.com
+      - generic: layers
+      - generic: Breadcrumbs
+    - link "Review snippets":
+      - /url: ./search-console/r/review-snippet?resource_id=sc-domain%3Adigitecme.com
+      - generic: layers
+      - generic: Review snippets
+    - generic: Security & Manual Actions
+    - button "Security & Manual Actions report section":
+      - generic: keyboard_arrow_down
+    - link "Links report":
+      - /url: ./search-console/links?resource_id=sc-domain%3Adigitecme.com
+      - generic: link_2
+      - generic: Links
+    - link "Achievements":
+      - /url: ./search-console/achievements?resource_id=sc-domain%3Adigitecme.com
+      - generic: trophy
+      - generic: Achievements
+    - link "Settings":
+      - /url: ./search-console/settings?resource_id=sc-domain%3Adigitecme.com
+      - generic: settings
+      - generic: Settings
+    - button "Submit feedback":
+      - generic: feedback
+      - generic: Submit feedback
+    - button "About Search Console":
+      - generic: info
+      - generic: About Search Console
+    - link "Privacy":
+      - /url: https://myaccount.google.com/privacypolicy?hl=en-GB
+    - link "Terms":
+      - /url: https://myaccount.google.com/termsofservice?hl=en-GB
+- generic: https://digitecme.com/brands/mercedes-benz-service-dubai
+- navigation "Breadcrumbs":
+  - heading "URL Inspection" [level=1]
+- button "Test live URL":
+  - generic: Test live URL
+- main:
+  - generic: check_circle
+  - generic: URL is on Google
+  - text: It can appear in Google Search results (if not subject to a manual action or removal request) with all relevant enhancements.
+  - link "Learn more":
+    - /url: https://support.google.com/webmasters/answer/9012289#url_on_google
+  - button "View crawled page":
+    - generic: View crawled page
+  - generic: Page changed?
+  - button "Request indexingRequest again":
+    - generic: Request indexing
+  - button "Page indexing Page is indexed" [expanded] [active]:
+    - generic: check_circle
+    - generic: Page indexing
+    - generic: Page is indexed
+    - generic: 
+  - generic: Discovery
+  - generic: Sitemaps
+  - generic: Temporary processing error
+  - generic: Referring page
+  - generic: https://digitecme.com/services/mercedes-repair
+  - generic: https://digitecme.com/services/mercedes-repair-dubai/
+  - generic: Crawl
+  - generic: Last crawl
+  - generic: 16 Oct 2026, 21:18:38
+  - generic: Crawled as
+  - generic: Googlebot smartphone
+  - generic: Crawl allowed?
+  - generic: "Yes"
+  - generic: Page fetch
+  - generic: Successful
+  - generic: Indexing allowed?
+  - generic: "Yes"
+  - generic: Indexing
+  - generic: User-declared canonical
+  - generic: https://digitecme.com/brands/mercedes-benz-service-dubai
+  - generic: Google-selected canonical
+  - button "null":
+    - generic: 
+  - generic: Inspected URL
+  - link "Link to more extensive documentation":
+    - /url: https://support.google.com/webmasters/answer/7440203#submitted_and_indexed
+    - generic: Learn More
+  - link "open report":
+    - /url: ./search-console/index/drilldown?resource_id=sc-domain%3Adigitecme.com&item_key=CAMYASAB
+    - generic: open report
+  - generic: Enhancements and experience
+  - link "HTTPS Page is served over HTTPS":
+    - /url: ./search-console/inspect/https?resource_id=sc-domain%3Adigitecme.com&id=EuYvhdtt5x94wH63hc89cw
+    - generic: check_circle
+    - generic: HTTPS
+    - generic: Page is served over HTTPS
+    - generic: 
+  - link "Breadcrumbs 1 valid item detected":
+    - /url: ./search-console/inspect/r/breadcrumbs?resource_id=sc-domain%3Adigitecme.com&id=EuYvhdtt5x94wH63hc89cw
+    - generic: check_circle
+    - generic: Breadcrumbs
+    - generic: 1 valid item detected
+    - generic: 

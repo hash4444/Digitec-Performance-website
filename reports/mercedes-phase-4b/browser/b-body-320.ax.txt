@@ -1,0 +1,32 @@
+Browser tab: 12, Title: "Phase 4 local responsive QA 320px", URL: "http://127.0.0.1:5197/__phase4_frame?width=320&height=844&path=/services/mercedes-body-repair-dubai".
+The following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.
+~1 AXWebArea Phase 4 local responsive QA 320px, URL: 127.0.0.1:5197/__phase4_frame?width=320&height=844&path=/services/mercedes-body-repair-dubai
+~	2 text LOCAL QA — 320 × 844 CSS pixels, desktop browser engine. Contact actions are intercepted; external analytics/connections blocked.
+~	3 container Mercedes candidate 320 pixel responsive viewport
+~	209 text {
+  "title": "Mercedes Body & Accident Repair Dubai | Digi-Tec",
+  "path": "/services/mercedes-body-repair-dubai",
+  "width": 320,
+  "clientWidth": 312,
+  "scrollWidth": 312,
+  "height": 844,
+  "focus": {
+    "tag": "BODY",
+    "text": "<iframe src=\"https://www.googletagmanager.com/ns.html?id=GTM-T3GVSPND\"\n    height=\"0\" width=\"0\" style=\"display:none;visibility:hidden\"></iframe>\n    \n    MenuENEnglishالعربيةAbout ",
+    "href": null,
+    "focusVisible": false,
+    "outline": "rgb(248, 248, 248) none 2.66667px",
+    "boxShadow": "none",
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 312,
+      "height": 10212.396484375,
+      "top": 0,
+      "right": 312,
+      "bottom": 10212.396484375,
+      "left": 0
+    }
+  }
+}
+The focused UI element is 1 AXWebArea Phase 4 local responsive QA 320px, URL: 127.0.0.1:5197/__phase4_frame?width=320&height=844&path=/services/mercedes-body-repair-dubai

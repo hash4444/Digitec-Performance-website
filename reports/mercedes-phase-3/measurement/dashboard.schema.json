@@ -1,0 +1,397 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Mercedes weekly dashboard snapshot",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "template_only",
+    "registry_version",
+    "run_id",
+    "generated_at_utc",
+    "report_owner",
+    "source_latest_complete_day",
+    "source_timezone",
+    "country_scope",
+    "device_scope",
+    "cohort_view",
+    "source_refs",
+    "windows",
+    "quality_notes",
+    "latest_serp_snapshot"
+  ],
+  "properties": {
+    "template_only": {
+      "type": "boolean"
+    },
+    "registry_version": {
+      "type": "string"
+    },
+    "run_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "generated_at_utc": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    },
+    "report_owner": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "source_latest_complete_day": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date"
+    },
+    "source_timezone": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "gsc",
+        "ga4",
+        "crm",
+        "finance"
+      ],
+      "properties": {
+        "gsc": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "ga4": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "crm": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "finance": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "country_scope": {
+      "enum": [
+        "ARE",
+        "ALL",
+        "OTHER",
+        "UNKNOWN"
+      ]
+    },
+    "device_scope": {
+      "enum": [
+        "ALL",
+        "MOBILE",
+        "DESKTOP",
+        "TABLET",
+        "UNKNOWN"
+      ]
+    },
+    "cohort_view": {
+      "type": "string"
+    },
+    "source_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "windows": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 3,
+      "items": {
+        "$ref": "#/$defs/window"
+      }
+    },
+    "quality_notes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "latest_serp_snapshot": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "captured_at_utc",
+        "context_ref",
+        "fixed_query_count",
+        "validated_query_count",
+        "digitec_in_top3_query_count",
+        "observed_top3_share",
+        "source_refs",
+        "availability"
+      ],
+      "properties": {
+        "captured_at_utc": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date-time"
+        },
+        "context_ref": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "fixed_query_count": {
+          "const": 6
+        },
+        "validated_query_count": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 6
+        },
+        "digitec_in_top3_query_count": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 6
+        },
+        "observed_top3_share": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 1
+        },
+        "source_refs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "availability": {
+          "enum": [
+            "not_collected",
+            "available",
+            "partial",
+            "unavailable"
+          ]
+        }
+      }
+    }
+  },
+  "$defs": {
+    "metric": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "metric_id",
+        "source",
+        "current",
+        "previous",
+        "absolute_delta",
+        "relative_delta",
+        "availability",
+        "reason",
+        "source_refs"
+      ],
+      "properties": {
+        "metric_id": {
+          "enum": [
+            "gsc_clicks",
+            "gsc_impressions",
+            "gsc_ctr",
+            "gsc_average_position",
+            "organic_top3_observed_query_share",
+            "gsc_avg_position_le3_proxy_share",
+            "target_query_top10_observed_share",
+            "mercedes_page_clicks",
+            "mercedes_page_impressions",
+            "mercedes_page_ctr",
+            "organic_mercedes_landing_sessions",
+            "telephone_link_interactions",
+            "whatsapp_anchor_interactions",
+            "whatsapp_draft_attempts",
+            "contact_interactions_total",
+            "organic_contact_interaction_rate",
+            "received_mercedes_enquiries",
+            "qualified_mercedes_leads",
+            "qualified_enquiry_rate",
+            "confirmed_bookings",
+            "qualified_to_booking_rate",
+            "cancelled_bookings",
+            "attributed_net_revenue_aed",
+            "deterministic_attribution_coverage"
+          ]
+        },
+        "source": {
+          "enum": [
+            "crm_and_restricted_join",
+            "finance_and_restricted_join",
+            "ga4_verified_export",
+            "gsc",
+            "serp_manual_verified"
+          ]
+        },
+        "current": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "previous": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "absolute_delta": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "relative_delta": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "availability": {
+          "enum": [
+            "not_collected",
+            "available",
+            "partial",
+            "suppressed",
+            "unavailable",
+            "not_comparable"
+          ]
+        },
+        "reason": {
+          "type": "string"
+        },
+        "source_refs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "availability": {
+                "enum": [
+                  "not_collected",
+                  "suppressed",
+                  "unavailable"
+                ]
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "current": {
+                "type": "null"
+              },
+              "previous": {
+                "type": "null"
+              },
+              "absolute_delta": {
+                "type": "null"
+              },
+              "relative_delta": {
+                "type": "null"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "window": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "days",
+        "current_start",
+        "current_end",
+        "previous_start",
+        "previous_end",
+        "as_of_utc",
+        "metrics"
+      ],
+      "properties": {
+        "days": {
+          "enum": [
+            7,
+            28,
+            90
+          ]
+        },
+        "current_start": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date"
+        },
+        "current_end": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date"
+        },
+        "previous_start": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date"
+        },
+        "previous_end": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date"
+        },
+        "as_of_utc": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date-time"
+        },
+        "metrics": {
+          "type": "array",
+          "minItems": 24,
+          "maxItems": 24,
+          "items": {
+            "$ref": "#/$defs/metric"
+          }
+        }
+      }
+    }
+  }
+}

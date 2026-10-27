@@ -1,0 +1,87 @@
+{
+  "id": "query-pages__90d__ALL__ALL__mercedes-service-dubai",
+  "capturedAt": "2026-10-26T08:10:42.338Z",
+  "property": "sc-domain:digitecme.com",
+  "searchType": "Web (Text-based verified separately)",
+  "expected": {
+    "kind": "query-pages",
+    "query": "mercedes service dubai",
+    "country": "ALL",
+    "device": "ALL",
+    "window": {
+      "id": "90d",
+      "start": "20260727",
+      "end": "20261024",
+      "startLabel": "27 July 2026",
+      "endLabel": "24 October 2026"
+    },
+    "breakdown": "page",
+    "current": true
+  },
+  "navigationUrl": "https://search.google.com/search-console/performance/search-analytics?resource_id=sc-domain%3Adigitecme.com&metrics=CLICKS%2CIMPRESSIONS%2CCTR%2CPOSITION&start_date=20260727&end_date=20261024&query=!mercedes%20service%20dubai&breakdown=page",
+  "displayedFilterChecks": {
+    "query": true,
+    "country": true,
+    "device": true,
+    "page": true,
+    "date": true,
+    "breakdown": true
+  },
+  "loading": false,
+  "readinessReloads": 0,
+  "header": [
+    "Top pages",
+    "Clicks",
+    "Impressions",
+    "CTR",
+    "Position"
+  ],
+  "rows": [
+    [
+      "https://digitecme.com/brands/mercedes-benz-service-dubai",
+      "2",
+      "548",
+      "0.4%",
+      "11.7"
+    ],
+    [
+      "https://digitecme.com/services/mercedes-repair-dubai",
+      "1",
+      "48",
+      "2.1%",
+      "23.6"
+    ],
+    [
+      "https://digitecme.com/services/mercedes-oil-change-dubai/",
+      "0",
+      "10",
+      "0%",
+      "9.8"
+    ],
+    [
+      "https://digitecme.com/services/mercedes-brake-repair-dubai/",
+      "0",
+      "8",
+      "0%",
+      "34.6"
+    ],
+    [
+      "https://digitecme.com/services/mercedes-suspension-repair-dubai/",
+      "0",
+      "1",
+      "0%",
+      "14.0"
+    ]
+  ],
+  "pagination": "1-5 of 5",
+  "completeVisibleTable": true,
+  "availability": "visible_rows_complete",
+  "cards": {
+    "clicks": "3",
+    "impressions": "608",
+    "ctr": "0.5%",
+    "position": "12.5"
+  },
+  "axFile": "raw/query-pages__90d__ALL__ALL__mercedes-service-dubai-ax.txt",
+  "textFile": "raw/query-pages__90d__ALL__ALL__mercedes-service-dubai-visible.txt"
+}

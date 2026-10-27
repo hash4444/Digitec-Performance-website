@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-T3GVSPND');</script>
+    <!-- End Google Tag Manager -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page Not Found | DIGI-TEC Performance Center</title>
+    <meta name="description" content="The page you are looking for does not exist. Browse our services or contact Digitec Performance Center in Dubai.">
+    <meta name="author" content="Digi-Tec Performance Center" />
+    <meta name="robots" content="noindex, follow">
+
+
+<link rel="icon" href="/favicon.ico?v=3" sizes="any" />
+    <link rel="icon" type="image/png" href="/favicon-192x192.png?v=3" sizes="192x192" />
+    <link rel="apple-touch-icon" href="/favicon-192x192.png?v=3" />
+
+    <meta property="og:title" content="Page Not Found | DIGI-TEC Performance Center">
+    <meta property="og:description" content="The page you are looking for does not exist. Browse our services or contact Digitec Performance Center in Dubai.">
+    <meta property="og:type" content="website">
+<meta property="og:site_name" content="Digi-Tec Performance Center" />
+    <meta property="og:locale" content="en_AE">
+    
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@digitec_performance" />
+    <meta name="twitter:title" content="Page Not Found | DIGI-TEC Performance Center">
+    <meta name="twitter:description" content="The page you are looking for does not exist. Browse our services or contact Digitec Performance Center in Dubai.">
+    
+
+    <!-- Shared factual entity graph. Route graphs reference these stable IDs. -->
+    
+
+    <!-- Existing GA4 property; exclude enquiry parameters from page URLs. -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4TRCEJSY4S"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      // Enquiry values and private referrer paths must not enter page events.
+      var analyticsLocation = window.location.origin + window.location.pathname;
+      var analyticsReferrer = '';
+      try { analyticsReferrer = document.referrer ? new URL(document.referrer).origin : ''; } catch (error) {}
+      // Retain recognised acquisition channels without sending arbitrary UTM text.
+      // Keep these labels aligned with src/lib/contact-attribution.ts.
+      var analyticsParams = new URLSearchParams(window.location.search);
+      var analyticsSource = (analyticsParams.get('utm_source') || '').toLowerCase().trim().replace(/^www\./, '').replace(/\.com$/, '');
+      var analyticsMedium = (analyticsParams.get('utm_medium') || '').toLowerCase().trim();
+      var analyticsConfig = {};
+      if (['google', 'bing', 'chatgpt', 'openai', 'perplexity', 'gemini', 'claude', 'copilot', 'duckduckgo', 'instagram', 'facebook', 'youtube', 'newsletter', 'whatsapp'].includes(analyticsSource)) analyticsConfig.campaign_source = analyticsSource;
+      if (['organic', 'cpc', 'ppc', 'paid_search', 'paid_social', 'social', 'email', 'referral', 'display', 'direct', 'organic_social'].includes(analyticsMedium)) analyticsConfig.campaign_medium = analyticsMedium;
+      gtag('set', { page_location: analyticsLocation, page_referrer: analyticsReferrer });
+      gtag('config', 'G-4TRCEJSY4S', analyticsConfig);
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet" />
+    <script type="module" crossorigin src="/assets/index-cGjtMRI1.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-CwEpzSrs.css">
+  <script defer src="/~flock.js" data-proxy-url="/~api/analytics"></script><script defer src="/__l5e/events.b21a279f52bb8621.js" data-artifact-kind="dwl_content_hash" data-artifact-id="c634c3ca8de91d224a721901aa2a5d0170c250c5734dc9f0f6f5bc0319ce19b2" data-commit-sha="13d1c19e99e9696ab63e5721ada18ffcfce11519" data-context-token="v1.eyJwcm9qZWN0X2lkIjoibG92cF8wend5MHhmc3hmOHBjYXZuNmtwOXI2ZnphZyIsImFydGlmYWN0X2tpbmQiOiJkd2xfY29udGVudF9oYXNoIiwiYXJ0aWZhY3RfaWQiOiJjNjM0YzNjYThkZTkxZDIyNGE3MjE5MDFhYTJhNWQwMTcwYzI1MGM1NzM0ZGM5ZjBmNmY1YmMwMzE5Y2UxOWIyIiwiY29tbWl0X3NoYSI6IjEzZDFjMTllOTllOTY5NmFiNjNlNTcyMWFkYTE4ZmZjZmNlMTE1MTkiLCJleHAiOjE3OTU2MDQyMzF9.QBLTHvFArF67MaWSOAasesePFF1kVIp2eauL-5spU6Q"></script><meta property="og:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/54401438-c17a-4c0a-a0e9-e326d6fb9dcb"><meta name="twitter:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/54401438-c17a-4c0a-a0e9-e326d6fb9dcb"></head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T3GVSPND"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div id="root"><div class="custom-cursor" aria-hidden="true"></div><div role="region" aria-label="Notifications (F8)" tabindex="-1" style="pointer-events:none"><ol tabindex="-1" class="fixed top-0 z-[100] flex max-h-screen w-full flex-col-reverse p-4 sm:bottom-0 sm:right-0 sm:top-auto sm:flex-col md:max-w-[420px]"></ol></div><!--$--><div class="min-h-screen flex items-center justify-center bg-black text-off-white px-6"><div class="text-center max-w-md"><h1 class="text-6xl font-black mb-4 text-burnt-orange">404</h1><p class="text-xl mb-6">Page not found.</p><p class="text-white/60 mb-8 text-sm">The page you requested does not exist. Try our services or head back home.</p><div class="flex gap-3 justify-center"><a class="btn-primary" href="/">Home</a><a class="btn-secondary" href="/services">Services</a></div></div></div><!--/$--></div>
+  </body>
+</html>

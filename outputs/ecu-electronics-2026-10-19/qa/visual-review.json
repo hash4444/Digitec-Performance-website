@@ -1,0 +1,20 @@
+{
+  "checkedAt": "2026-10-19T08:46:25.069Z",
+  "passed": true,
+  "method": "Five saved 390px touch-emulated screenshots were opened and inspected using view_image. The original desktop-pointer snapshots are retained separately.",
+  "screenshots": [
+    "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\ecu-electronics-2026-10-19\\qa\\ecu-electronics-browser\\services__car-diagnostics-dubai-390.png",
+    "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\ecu-electronics-2026-10-19\\qa\\ecu-electronics-browser\\ar__services__mercedes-diagnostics-dubai-390.png",
+    "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\ecu-electronics-2026-10-19\\qa\\ecu-electronics-browser\\ar__brands__bmw-service-dubai__electrical-repair-390.png",
+    "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\ecu-electronics-2026-10-19\\qa\\ecu-electronics-browser\\services__head-unit-repair-dubai-390.png",
+    "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\ecu-electronics-2026-10-19\\qa\\ecu-electronics-browser\\services__cadillac-cue-screen-repair-dubai-390.png"
+  ],
+  "observations": [
+    "English software enquiry copy, quotation button, phone number and receipt/privacy notes readable at390px.",
+    "Arabic software and BMW electrical copy aligned RTL; telephone number remains readable LTR and both contact actions are visible.",
+    "English CUE and head-unit pages retain their English-only navigation and clear fitted-unit assessment CTAs.",
+    "No horizontal clipping or overlapping contact controls. The existing sticky header remains at the top while scrolling.",
+    "Coarse touch emulation removes the desktop mouse-cursor dot seen in the first screenshots; five safe touch contact pairs pass."
+  ],
+  "limits": "Representative visual checks plus automated320/390/1440px coverage; not a field usability study or Core Web Vitals measurement."
+}

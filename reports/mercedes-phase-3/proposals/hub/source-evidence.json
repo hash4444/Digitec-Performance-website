@@ -1,0 +1,68 @@
+{
+  "capturedAtUtc": "2026-10-26T07:47:31.459067+00:00",
+  "proposalOnly": true,
+  "sourceFilesChanged": 0,
+  "applicationSourceSha256": "f5d68037c056bb1f32d73cc5c009e066287da0ab225267b9606d834a23002c33",
+  "proposedCopySha256": "fed34d81d52c879960d90eb38db91e31d9290ceb7b9895a222a2d075feb13bc2",
+  "sources": [
+    {
+      "path": "src/pages/BrandPage.tsx",
+      "sha256": "f5d68037c056bb1f32d73cc5c009e066287da0ab225267b9606d834a23002c33"
+    },
+    {
+      "path": "src/components/MercedesMaintenanceScope.tsx",
+      "sha256": "1e6728a7de40ef56f7bf77af495784cff38c34cd9a653d6777757fee62616aff"
+    },
+    {
+      "path": "src/components/MercedesServiceBookingForm.tsx",
+      "sha256": "c45f5468d2361b5b2de37edee90fff8b1d0cd145e2379439c8aad973fd1291fd"
+    },
+    {
+      "path": "src/data/mercedesServiceCampaign.ts",
+      "sha256": "98012343a3f8450ba6a34bb094425beaa4049932d534d9115d0b373ded32c8dd"
+    },
+    {
+      "path": "src/data/mercedesCaseStudies.ts",
+      "sha256": "7ecf25adba6ad50e351fc998eaefbb4d662a1567bf2da6f004093bde166535bd"
+    },
+    {
+      "path": "src/components/Footer.tsx",
+      "sha256": "a792225ae1bb6dc7f11542c92bb54912712e5c7d19dce2466e7389d6086149d3"
+    },
+    {
+      "path": "src/components/Analytics.tsx",
+      "sha256": "ac7685242e86dce5b808ba004fbf9f01fd16f5197b25b26e3be874e03a1a99d2"
+    },
+    {
+      "path": "src/lib/whatsapp-tracking.ts",
+      "sha256": "94d2ab3b1129d5171f46beddbdd97def13db382d2bbe428687b7f4a844e1a0e4"
+    },
+    {
+      "path": "src/lib/contact-attribution.ts",
+      "sha256": "2c281ea1c00771ae562d752e21838506155d4977b46a542439e39d51f857eb59"
+    },
+    {
+      "path": "index.html",
+      "sha256": "af94e9be5df1e1cbe1c556ed977447ab128ae1f950f24bf6a7570bc9420f9215"
+    }
+  ],
+  "changeCount": 2,
+  "changedOriginalLines": [
+    1004,
+    1324
+  ],
+  "preserved": {
+    "captionPlainText": true,
+    "quotationCopy": true,
+    "url": "https://digitecme.com/brands/mercedes-benz-service-dubai",
+    "title": "Mercedes Service Dubai | Maintenance & Repair | DIGI-TEC",
+    "h1": "Mercedes-Benz Service in Dubai",
+    "canonical": "https://digitecme.com/brands/mercedes-benz-service-dubai",
+    "schemaCodeUntouched": true,
+    "arabicBranchesUntouched": true,
+    "commercialRepairCopyUntouched": true
+  },
+  "publishedContactSource": "src/components/Footer.tsx:83-84; src/data/mercedesServiceCampaign.ts:13; index.html:92-99",
+  "independentWorkshopFactConfirmation": "Not obtained; no warehouse range/hours/new capability claim is added.",
+  "futureImplementationRequiresApproval": true
+}

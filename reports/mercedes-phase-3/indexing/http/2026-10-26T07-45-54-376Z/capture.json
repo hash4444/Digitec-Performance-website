@@ -1,0 +1,1619 @@
+{
+  "startedAt": "2026-10-26T07:45:54.378Z",
+  "finishedAt": "2026-10-26T07:46:03.591Z",
+  "readOnly": true,
+  "scope": "Public GET/HEAD only; all headers except Set-Cookie retained, all GET hop HTML saved; no browser scripts, forms or mutations",
+  "pages": [
+    {
+      "key": "about",
+      "path": "/about",
+      "method": "GET",
+      "chain": [
+        {
+          "at": "2026-10-26T07:46:00.613Z",
+          "url": "https://digitecme.com/about",
+          "method": "GET",
+          "status": 200,
+          "headers": {
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "cache-control": "no-cache, must-revalidate, max-age=0",
+            "cf-cache-status": "DYNAMIC",
+            "cf-ray": "a507d857a8b2fefb-CDG",
+            "connection": "keep-alive",
+            "content-encoding": "br",
+            "content-type": "text/html; charset=utf-8",
+            "date": "Mon, 26 Oct 2026 07:46:04 GMT",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "referrer-policy": "strict-origin-when-cross-origin",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=6bE0Bms0wpKQa%2FnpwXvsH77OLVlqUs5kijfTTPX21Njhar0Cjtv0IWeT%2FhyS%2FmRLqIp74htPZZvZlWla4DyGJke0Bv6ePN6NzqX0fKuNqwGLHXxJbhLxOQkxwXk%2F5obp\"}]}",
+            "server": "cloudflare",
+            "speculation-rules": "\"/cdn-cgi/speculation\"",
+            "strict-transport-security": "max-age=31536000; includeSubDomains",
+            "transfer-encoding": "chunked",
+            "vary": "accept-encoding",
+            "x-content-type-options": "nosniff",
+            "x-deployment-id": "psr2.455fbd60-7be3-4d3f-b5a2-4af11984e472.1793605564.GcqTyjMP5fQr5G7bK7tdqkCz0IDxnfBRj7MYqN6WxEU"
+          },
+          "bodySha256": "d8cbaecdf6cf6a2b4755702549e9e3a2abb6384c0f8b0cb76a0c4ec147243629",
+          "htmlFile": "html/about-hop0.html"
+        }
+      ]
+    },
+    {
+      "key": "about",
+      "path": "/about",
+      "method": "HEAD",
+      "chain": [
+        {
+          "at": "2026-10-26T07:46:00.948Z",
+          "url": "https://digitecme.com/about",
+          "method": "HEAD",
+          "status": 200,
+          "headers": {
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "cache-control": "no-cache, must-revalidate, max-age=0",
+            "cf-cache-status": "DYNAMIC",
+            "cf-ray": "a507d859ef385329-AMS",
+            "connection": "close",
+            "content-encoding": "br",
+            "content-type": "text/html; charset=utf-8",
+            "date": "Mon, 26 Oct 2026 07:46:04 GMT",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "referrer-policy": "strict-origin-when-cross-origin",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=3WXR1HBIWZVVRK6CJgj52dzwSyhbdd3gBCNj9hFqZdhlrgZcPjL%2FOMD55wXdF1jLNdnH3ttW2qqrt84THJTeAEYEr0O3pk9J%2Bq5i4vtyRdYmKFiX8C8D0Kjz6IkHzIdD\"}]}",
+            "server": "cloudflare",
+            "speculation-rules": "\"/cdn-cgi/speculation\"",
+            "strict-transport-security": "max-age=31536000; includeSubDomains",
+            "x-content-type-options": "nosniff",
+            "x-deployment-id": "psr2.455fbd60-7be3-4d3f-b5a2-4af11984e472.1793605564.GcqTyjMP5fQr5G7bK7tdqkCz0IDxnfBRj7MYqN6WxEU"
+          }
+        }
+      ]
+    },
+    {
+      "key": "battery-ar",
+      "path": "/ar/services/mercedes-battery-replacement-dubai",
+      "method": "GET",
+      "chain": [
+        {
+          "at": "2026-10-26T07:45:59.188Z",
+          "url": "https://digitecme.com/ar/services/mercedes-battery-replacement-dubai",
+          "method": "GET",
+          "status": 200,
+          "headers": {
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "cache-control": "no-cache, must-revalidate, max-age=0",
+            "cf-cache-status": "DYNAMIC",
+            "cf-ray": "a507d84d7babe866-FRA",
+            "connection": "keep-alive",
+            "content-encoding": "br",
+            "content-type": "text/html; charset=utf-8",
+            "date": "Mon, 26 Oct 2026 07:46:02 GMT",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "referrer-policy": "strict-origin-when-cross-origin",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=tRwnzUL4vn%2FptjHfuXRUZMloWjlDqWuxQ3VZkDZlkMSiw%2BW5iI7eMBsIPHQ7kZ0%2FvKukhSqKrhKo42jeLUGdYQv0CB36qZg0ruAHYFvb7QvyurwZKt7%2FoQxbHmX6GmSW\"}]}",
+            "server": "cloudflare",
+            "speculation-rules": "\"/cdn-cgi/speculation\"",
+            "strict-transport-security": "max-age=31536000; includeSubDomains",
+            "transfer-encoding": "chunked",
+            "vary": "accept-encoding",
+            "x-content-type-options": "nosniff",
+            "x-deployment-id": "psr2.455fbd60-7be3-4d3f-b5a2-4af11984e472.1793605562.QEjIZO8CJ8sSdkixN1EAPG1ukWIzujCzVPe4MPctMr0"
+          },
+          "bodySha256": "a496006721e6b18aa8c522cb11dc2c0e7e57a5fcf81481ab4e6971e57d3e4fcc",
+          "htmlFile": "html/battery-ar-hop0.html"
+        }
+      ]
+    },
+    {
+      "key": "battery-ar",
+      "path": "/ar/services/mercedes-battery-replacement-dubai",
+      "method": "HEAD",
+      "chain": [
+        {
+          "at": "2026-10-26T07:45:59.197Z",
+          "url": "https://digitecme.com/ar/services/mercedes-battery-replacement-dubai",
+          "method": "HEAD",
+          "status": 200,
+          "headers": {
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "cache-control": "no-cache, must-revalidate, max-age=0",
+            "cf-cache-status": "DYNAMIC",
+            "cf-ray": "a507d84d69dc8b45-HKG",
+            "connection": "close",
+            "content-encoding": "br",
+            "content-type": "text/html; charset=utf-8",
+            "date": "Mon, 26 Oct 2026 07:46:02 GMT",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "referrer-policy": "strict-origin-when-cross-origin",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=qjY%2Bb%2F%2BzpPV5E921t7smXCLONr24iUzGplSNu6AsXVrEajsnu6%2F%2Fc%2F%2Bqf8eecjuX3bIqAtdKcU8zIvsxi8LXAFi5Kkba7Dw4R9kqifmlboY%2BbQcjIfLcFk8igs4FnZXJ\"}]}",
+            "server": "cloudflare",
+            "speculation-rules": "\"/cdn-cgi/speculation\"",
+            "strict-transport-security": "max-age=31536000; includeSubDomains",
+            "x-content-type-options": "nosniff",
+            "x-deployment-id": "psr2.455fbd60-7be3-4d3f-b5a2-4af11984e472.1793605562.QEjIZO8CJ8sSdkixN1EAPG1ukWIzujCzVPe4MPctMr0"
+          }
+        }
+      ]
+    },
+    {
+      "key": "blog",
+      "path": "/blog",
+      "method": "GET",
+      "chain": [
+        {
+          "at": "2026-10-26T07:46:00.216Z",
+          "url": "https://digitecme.com/blog",
+          "method": "GET",
+          "status": 200,
+          "headers": {
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "cache-control": "no-cache, must-revalidate, max-age=0",
+            "cf-cache-status": "DYNAMIC",
+            "cf-ray": "a507d853deec735b-CDG",
+            "connection": "keep-alive",
+            "content-encoding": "br",
+            "content-type": "text/html; charset=utf-8",
+            "date": "Mon, 26 Oct 2026 07:46:03 GMT",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "referrer-policy": "strict-origin-when-cross-origin",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=E%2FTOptTt6xOMSgedBS3Fpn8bVr8IHAyN37Ej03Sv%2Fo8qdI3EoqevIT1RoxTEdwl73hpTlCnNLP2D7qRvsCbTRipbp2RJTUXIzbO6C7cJNUHUYLI8uGGskCmDTCl2H01c\"}]}",
+            "server": "cloudflare",
+            "speculation-rules": "\"/cdn-cgi/speculation\"",
+            "strict-transport-security": "max-age=31536000; includeSubDomains",
+            "transfer-encoding": "chunked",
+            "vary": "accept-encoding",
+            "x-content-type-options": "nosniff",
+            "x-deployment-id": "psr2.455fbd60-7be3-4d3f-b5a2-4af11984e472.1793605563.Wc0d1X7ldKytaA6EAt_G3HYgtULQvvjig34fOmxFqOQ"
+          },
+          "bodySha256": "23a460c00402010c77637806bb0e6e2d5718c03871264ccad3dde4850001d548",
+          "htmlFile": "html/blog-hop0.html"
+        }
+      ]
+    },
+    {
+      "key": "blog",
+      "path": "/blog",
+      "method": "HEAD",
+      "chain": [
+        {
+          "at": "2026-10-26T07:46:00.435Z",
+          "url": "https://digitecme.com/blog",
+          "method": "HEAD",
+          "status": 200,
+          "headers": {
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "cache-control": "no-cache, must-revalidate, max-age=0",
+            "cf-cache-status": "DYNAMIC",
+            "cf-ray": "a507d85539a6735b-CDG",
+            "connection": "close",
+            "content-encoding": "br",
+            "content-type": "text/html; charset=utf-8",
+            "date": "Mon, 26 Oct 2026 07:46:03 GMT",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "referrer-policy": "strict-origin-when-cross-origin",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=Q2qTXghMX2RUEgxP3BGZeLNAzlcvC0rI3wQhtJqV124yhdUSXOeG%2FpSOtjB952Y0QmIG9bkhO8PLNePS04AUrViGaaaTLoYrtOIqaou%2FK22yn82qJG8UbgbAOw2e8Z%2B7\"}]}",
+            "server": "cloudflare",
+            "speculation-rules": "\"/cdn-cgi/speculation\"",
+            "strict-transport-security": "max-age=31536000; includeSubDomains",
+            "x-content-type-options": "nosniff",
+            "x-deployment-id": "psr2.455fbd60-7be3-4d3f-b5a2-4af11984e472.1793605563.Wc0d1X7ldKytaA6EAt_G3HYgtULQvvjig34fOmxFqOQ"
+          }
+        }
+      ]
+    },
+    {
+      "key": "body-ar",
+      "path": "/ar/services/mercedes-body-repair-dubai",
+      "method": "GET",
+      "chain": [
+        {
+          "at": "2026-10-26T07:45:54.993Z",
+          "url": "https://digitecme.com/ar/services/mercedes-body-repair-dubai",
+          "method": "GET",
+          "status": 200,
+          "headers": {
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "cache-control": "no-cache, must-revalidate, max-age=0",
+            "cf-cache-status": "DYNAMIC",
+            "cf-ray": "a507d834bcf1dfa3-FRA",
+            "connection": "keep-alive",
+            "content-encoding": "br",
+            "content-type": "text/html; charset=utf-8",
+            "date": "Mon, 26 Oct 2026 07:45:58 GMT",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "referrer-policy": "strict-origin-when-cross-origin",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=ewYu60Tdd4uO6Gf6Wk6VzI7rmcGYUDW1EdLkVEmyjze2XECU2g00o0yHnc4mSq3I6wDJEQyLl7ABpjShlSGN7T6TZIKLBH90xtr4UqQgWLgYaU%2BlpAHRkOBAdyr427pU\"}]}",
+            "server": "cloudflare",
+            "speculation-rules": "\"/cdn-cgi/speculation\"",
+            "strict-transport-security": "max-age=31536000; includeSubDomains",
+            "transfer-encoding": "chunked",
+            "vary": "accept-encoding",
+            "x-content-type-options": "nosniff",
+            "x-deployment-id": "psr2.455fbd60-7be3-4d3f-b5a2-4af11984e472.1793605558.h25enlVFn7Tu5Bzl1hpZXFL3c6WyZH-e5vv20BFiw8c"
+          },
+          "bodySha256": "729707807303b0fa4a51d13f2cafa98e4b9edf80fa5b146e27f87f70a68817af",
+          "htmlFile": "html/body-ar-hop0.html"
+        }
+      ]
+    },
+    {
+      "key": "body-ar",
+      "path": "/ar/services/mercedes-body-repair-dubai",
+      "method": "HEAD",
+      "chain": [
+        {
+          "at": "2026-10-26T07:45:55.038Z",
+          "url": "https://digitecme.com/ar/services/mercedes-body-repair-dubai",
+          "method": "HEAD",
+          "status": 200,
+          "headers": {
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "cache-control": "no-cache, must-revalidate, max-age=0",
+            "cf-cache-status": "DYNAMIC",
+            "cf-ray": "a507d8338a3c0d9a-CDG",
+            "connection": "close",
+            "content-encoding": "br",
+            "content-type": "text/html; charset=utf-8",
+            "date": "Mon, 26 Oct 2026 07:45:58 GMT",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "referrer-policy": "strict-origin-when-cross-origin",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=3gvAohr%2B%2B0mm%2FjMv3dX5UH4x%2BcX5hmlc9UwwhMT%2BHtwMZZwp4HQ2gkrdsLSp99VyldjZZbC0colvznvPO9uoEsJZobCXDqmjBP%2BCNhOC0UHl7EC3kmBVuaSGpFRN78hK\"}]}",
+            "server": "cloudflare",
+            "speculation-rules": "\"/cdn-cgi/speculation\"",
+            "strict-transport-security": "max-age=31536000; includeSubDomains",
+            "x-content-type-options": "nosniff",
+            "x-deployment-id": "psr2.455fbd60-7be3-4d3f-b5a2-4af11984e472.1793605558.h25enlVFn7Tu5Bzl1hpZXFL3c6WyZH-e5vv20BFiw8c"
+          }
+        }
+      ]
+    },
+    {
+      "key": "body-bmw",
+      "path": "/brands/bmw-service-dubai/body-repair",
+      "method": "GET",
+      "chain": [
+        {
+          "at": "2026-10-26T07:45:55.471Z",
+          "url": "https://digitecme.com/brands/bmw-service-dubai/body-repair",
+          "method": "GET",
+          "status": 200,
+          "headers": {
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "cache-control": "no-cache, must-revalidate, max-age=0",
+            "cf-cache-status": "DYNAMIC",
+            "cf-ray": "a507d8364e5fdfa3-FRA",
+            "connection": "keep-alive",
+            "content-encoding": "br",
+            "content-type": "text/html; charset=utf-8",
+            "date": "Mon, 26 Oct 2026 07:45:58 GMT",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "referrer-policy": "strict-origin-when-cross-origin",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=jNvL1iW5IjwqzAt4hGO8585RyZVoHIUvtLIhj5U%2F9ZQ9uR2BlPHDQSNZOJwuXbnpBKJs%2BtMXFbKYpI4jk13fWTmj2Gx30KBCedMEBHkTCa8b1vWvxwd%2Fi%2FYDTOf9LEK6\"}]}",
+            "server": "cloudflare",
+            "speculation-rules": "\"/cdn-cgi/speculation\"",
+            "strict-transport-security": "max-age=31536000; includeSubDomains",
+            "transfer-encoding": "chunked",
+            "vary": "accept-encoding",
+            "x-content-type-options": "nosniff",
+            "x-deployment-id": "psr2.455fbd60-7be3-4d3f-b5a2-4af11984e472.1793605558.h25enlVFn7Tu5Bzl1hpZXFL3c6WyZH-e5vv20BFiw8c"
+          },
+          "bodySha256": "69b9390d274b1dfba448fb5ac3d1d35d8c04dd4024897895047fe482d6bb5e05",
+          "htmlFile": "html/body-bmw-hop0.html"
+        }
+      ]
+    },
+    {
+      "key": "body-bmw",
+      "path": "/brands/bmw-service-dubai/body-repair",
+      "method": "HEAD",
+      "chain": [
+        {
+          "at": "2026-10-26T07:45:55.737Z",
+          "url": "https://digitecme.com/brands/bmw-service-dubai/body-repair",
+          "method": "HEAD",
+          "status": 200,
+          "headers": {
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "cache-control": "no-cache, must-revalidate, max-age=0",
+            "cf-cache-status": "DYNAMIC",
+            "cf-ray": "a507d837e81adfa3-FRA",
+            "connection": "close",
+            "content-encoding": "br",
+            "content-type": "text/html; charset=utf-8",
+            "date": "Mon, 26 Oct 2026 07:45:59 GMT",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "referrer-policy": "strict-origin-when-cross-origin",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=GSiigiwektM0%2FS2iQBQMXmgAgJp9Rr9Q4lvCtpMmOmIBHXJVet2v%2BazEECJE4EtzuluuohNUEdgvEp8T1j262L5YrW31zgqThYZH1En%2B%2FcuQUXtUEsUNeekhdkU0BpbU\"}]}",
+            "server": "cloudflare",
+            "speculation-rules": "\"/cdn-cgi/speculation\"",
+            "strict-transport-security": "max-age=31536000; includeSubDomains",
+            "x-content-type-options": "nosniff",
+            "x-deployment-id": "psr2.455fbd60-7be3-4d3f-b5a2-4af11984e472.1793605559.7ZdDyzeGxgmtwUmTzPcgpmnVXT0M5GB7Cib2HiLVSYo"
+          }
+        }
+      ]
+    },
+    {
+      "key": "body-en",
+      "path": "/services/mercedes-body-repair-dubai",
+      "method": "GET",
+      "chain": [
+        {
+          "at": "2026-10-26T07:45:54.379Z",
+          "url": "https://digitecme.com/services/mercedes-body-repair-dubai",
+          "method": "GET",
+          "status": 200,
+          "headers": {
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "cache-control": "no-cache, must-revalidate, max-age=0",
+            "cf-cache-status": "DYNAMIC",
+            "cf-ray": "a507d8311bf166ff-AMS",
+            "connection": "keep-alive",
+            "content-encoding": "br",
+            "content-type": "text/html; charset=utf-8",
+            "date": "Mon, 26 Oct 2026 07:45:58 GMT",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "referrer-policy": "strict-origin-when-cross-origin",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=gWQnzjgjepjHW%2FEp1nsl19E2%2Fkb%2BusWlIW12VqLUCN7XhJm7Xj4wXmhTjWyVKnJV8yQhTqyX15Tx8DwWNqTBGkaHn%2FugcYZ8RIUu9OOg%2FcktG%2BErTbE7kBm0TOsdfHNg\"}]}",
+            "server": "cloudflare",
+            "speculation-rules": "\"/cdn-cgi/speculation\"",
+            "strict-transport-security": "max-age=31536000; includeSubDomains",
+            "transfer-encoding": "chunked",
+            "vary": "accept-encoding",
+            "x-content-type-options": "nosniff",
+            "x-deployment-id": "psr2.455fbd60-7be3-4d3f-b5a2-4af11984e472.1793605558.h25enlVFn7Tu5Bzl1hpZXFL3c6WyZH-e5vv20BFiw8c"
+          },
+          "bodySha256": "794103f2a6c80c7561cbe53f2a208dc5dba02d724dfa95ba07a63531648ca001",
+          "htmlFile": "html/body-en-hop0.html"
+        }
+      ]
+    },
+    {
+      "key": "body-en",
+      "path": "/services/mercedes-body-repair-dubai",
+      "method": "HEAD",
+      "chain": [
+        {
+          "at": "2026-10-26T07:45:54.402Z",
+          "url": "https://digitecme.com/services/mercedes-body-repair-dubai",
+          "method": "HEAD",
+          "status": 200,
+          "headers": {
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "cache-control": "no-cache, must-revalidate, max-age=0",
+            "cf-cache-status": "DYNAMIC",
+            "cf-ray": "a507d8311fd2e5da-FRA",
+            "connection": "close",
+            "content-encoding": "br",
+            "content-type": "text/html; charset=utf-8",
+            "date": "Mon, 26 Oct 2026 07:45:58 GMT",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "referrer-policy": "strict-origin-when-cross-origin",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=Otf%2FJin%2Fyci0bdfMUtG77szAmD8OglINY2KPnndXrBgkICCa0SF24LAHIVj%2BxMUV6rcwPPUpMrcSNYXeWnIrXIGkN2qV%2BitZs84YqYLAmW%2BupyK%2Brc4%2BYxyPZ5chh2LA\"}]}",
+            "server": "cloudflare",
+            "speculation-rules": "\"/cdn-cgi/speculation\"",
+            "strict-transport-security": "max-age=31536000; includeSubDomains",
+            "x-content-type-options": "nosniff",
+            "x-deployment-id": "psr2.455fbd60-7be3-4d3f-b5a2-4af11984e472.1793605558.h25enlVFn7Tu5Bzl1hpZXFL3c6WyZH-e5vv20BFiw8c"
+          }
+        }
+      ]
+    },
+    {
+      "key": "body-en-slash",
+      "path": "/services/mercedes-body-repair-dubai/",
+      "method": "GET",
+      "chain": [
+        {
+          "at": "2026-10-26T07:45:54.403Z",
+          "url": "https://digitecme.com/services/mercedes-body-repair-dubai/",
+          "method": "GET",
+          "status": 200,
+          "headers": {
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "cache-control": "no-cache, must-revalidate, max-age=0",
+            "cf-cache-status": "DYNAMIC",
+            "cf-ray": "a507d830fcf20d9a-CDG",
+            "connection": "keep-alive",
+            "content-encoding": "br",
+            "content-type": "text/html; charset=utf-8",
+            "date": "Mon, 26 Oct 2026 07:45:58 GMT",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "referrer-policy": "strict-origin-when-cross-origin",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=aKjDiw4OI258DnAa1ek%2Fpo5%2F%2FgslERr4i0cEoEyqkeZUdp8XZ7Luzzzl9CN3Vskvdr5Zuug%2Fw%2FU1zLkuyMb4CVcNnKfcNJ%2Bc%2BDOU6qsQfhvP%2BjsmY%2BJeG8pJrLjr0s7H\"}]}",
+            "server": "cloudflare",
+            "speculation-rules": "\"/cdn-cgi/speculation\"",
+            "strict-transport-security": "max-age=31536000; includeSubDomains",
+            "transfer-encoding": "chunked",
+            "vary": "accept-encoding",
+            "x-content-type-options": "nosniff",
+            "x-deployment-id": "psr2.455fbd60-7be3-4d3f-b5a2-4af11984e472.1793605558.h25enlVFn7Tu5Bzl1hpZXFL3c6WyZH-e5vv20BFiw8c"
+          },
+          "bodySha256": "ccbed5c50d84e051250afaab62890000a98fc39240166a50b587e8700f706f7b",
+          "htmlFile": "html/body-en-slash-hop0.html"
+        }
+      ]
+    },
+    {
+      "key": "body-en-slash",
+      "path": "/services/mercedes-body-repair-dubai/",
+      "method": "HEAD",
+      "chain": [
+        {
+          "at": "2026-10-26T07:45:54.990Z",
+          "url": "https://digitecme.com/services/mercedes-body-repair-dubai/",
+          "method": "HEAD",
+          "status": 200,
+          "headers": {
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "cache-control": "no-cache, must-revalidate, max-age=0",
+            "cf-cache-status": "DYNAMIC",
+            "cf-ray": "a507d8332f7566ff-AMS",
+            "connection": "close",
+            "content-encoding": "br",
+            "content-type": "text/html; charset=utf-8",
+            "date": "Mon, 26 Oct 2026 07:45:58 GMT",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "referrer-policy": "strict-origin-when-cross-origin",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=t2NSUjrolT3yAcZgRH8FwMpjuXixIW11kFB4YF6RRtWRMlTj89tvhVOJ3y8DdZtFP5lDM38mzCOMdgces94pXqw%2Bvyo1I%2FcsbTZuzCt%2B8n5mbilXrnd7dt9dsKIGDGJN\"}]}",
+            "server": "cloudflare",
+            "speculation-rules": "\"/cdn-cgi/speculation\"",
+            "strict-transport-security": "max-age=31536000; includeSubDomains",
+            "x-content-type-options": "nosniff",
+            "x-deployment-id": "psr2.455fbd60-7be3-4d3f-b5a2-4af11984e472.1793605558.h25enlVFn7Tu5Bzl1hpZXFL3c6WyZH-e5vv20BFiw8c"
+          }
+        }
+      ]
+    },
+    {
+      "key": "body-general",
+      "path": "/services/car-body-repair-dubai",
+      "method": "GET",
+      "chain": [
+        {
+          "at": "2026-10-26T07:45:55.213Z",
+          "url": "https://digitecme.com/services/car-body-repair-dubai",
+          "method": "GET",
+          "status": 200,
+          "headers": {
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "cache-control": "no-cache, must-revalidate, max-age=0",
+            "cf-cache-status": "DYNAMIC",
+            "cf-ray": "a507d8360874b6a7-HKG",
+            "connection": "keep-alive",
+            "content-encoding": "br",
+            "content-type": "text/html; charset=utf-8",
+            "date": "Mon, 26 Oct 2026 07:46:00 GMT",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "referrer-policy": "strict-origin-when-cross-origin",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=WaFVLMpyP5r8eHJJmALtEaMsuZPQKxzumWRjxfwy0WjtSBkoB7JRMPlhjvL6rxncu8JEtyyruUjPtfB%2BD4OOnINhzoSgw0C4GaTK0o2vRHHBuAZ%2BAQEzBu3ymyW5Ep56\"}]}",
+            "server": "cloudflare",
+            "speculation-rules": "\"/cdn-cgi/speculation\"",
+            "strict-transport-security": "max-age=31536000; includeSubDomains",
+            "transfer-encoding": "chunked",
+            "vary": "accept-encoding",
+            "x-content-type-options": "nosniff",
+            "x-deployment-id": "psr2.455fbd60-7be3-4d3f-b5a2-4af11984e472.1793605559.7ZdDyzeGxgmtwUmTzPcgpmnVXT0M5GB7Cib2HiLVSYo"
+          },
+          "bodySha256": "87ab2a33a1933d39f09a1aa648a51c7c1edeff78f93d56895f5d1bfdee99714b",
+          "htmlFile": "html/body-general-hop0.html"
+        }
+      ]
+    },
+    {
+      "key": "body-general",
+      "path": "/services/car-body-repair-dubai",
+      "method": "HEAD",
+      "chain": [
+        {
+          "at": "2026-10-26T07:45:55.263Z",
+          "url": "https://digitecme.com/services/car-body-repair-dubai",
+          "method": "HEAD",
+          "status": 200,
+          "headers": {
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "cache-control": "no-cache, must-revalidate, max-age=0",
+            "cf-cache-status": "DYNAMIC",
+            "cf-ray": "a507d836884204e9-HKG",
+            "connection": "close",
+            "content-encoding": "br",
+            "content-type": "text/html; charset=utf-8",
+            "date": "Mon, 26 Oct 2026 07:46:00 GMT",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "referrer-policy": "strict-origin-when-cross-origin",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=i20Dh8OoDODGbFADJgtO1jfHCN53tpOI2JCOM64AvPvcuwOiYpZMrA7Ew%2BIu%2BsRZTSsPlFMwf7wmMj36ojHWdJwQzSf9uTv15b09n%2FumHxMqb12YllqrXNP%2BMCKf7MsI\"}]}",
+            "server": "cloudflare",
+            "speculation-rules": "\"/cdn-cgi/speculation\"",
+            "strict-transport-security": "max-age=31536000; includeSubDomains",
+            "x-content-type-options": "nosniff",
+            "x-deployment-id": "psr2.455fbd60-7be3-4d3f-b5a2-4af11984e472.1793605559.7ZdDyzeGxgmtwUmTzPcgpmnVXT0M5GB7Cib2HiLVSYo"
+          }
+        }
+      ]
+    },
+    {
+      "key": "brands",
+      "path": "/brands",
+      "method": "GET",
+      "chain": [
+        {
+          "at": "2026-10-26T07:45:59.589Z",
+          "url": "https://digitecme.com/brands",
+          "method": "GET",
+          "status": 200,
+          "headers": {
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "cache-control": "no-cache, must-revalidate, max-age=0",
+            "cf-cache-status": "DYNAMIC",
+            "cf-ray": "a507d8513830735b-CDG",
+            "connection": "keep-alive",
+            "content-encoding": "br",
+            "content-type": "text/html; charset=utf-8",
+            "date": "Mon, 26 Oct 2026 07:46:03 GMT",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "referrer-policy": "strict-origin-when-cross-origin",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=I0r2Vy6i79pFBG3YSL%2BreCdqkedlHEW1kNSZKd1tDQAktpVkaO7uQyFv6BLC3QkajhNo1WZFVa8oswcUHzHi3c8YPawiYpf8JxgwUBfvbCu0sEfgHkw0%2BQsqAux52aVU\"}]}",
+            "server": "cloudflare",
+            "speculation-rules": "\"/cdn-cgi/speculation\"",
+            "strict-transport-security": "max-age=31536000; includeSubDomains",
+            "transfer-encoding": "chunked",
+            "vary": "accept-encoding",
+            "x-content-type-options": "nosniff",
+            "x-deployment-id": "psr2.455fbd60-7be3-4d3f-b5a2-4af11984e472.1793605563.Wc0d1X7ldKytaA6EAt_G3HYgtULQvvjig34fOmxFqOQ"
+          },
+          "bodySha256": "3f5102fd91a189f81c30c76548fbce3f10849a5759f0a6cf273a681fb3e8f8f9",
+          "htmlFile": "html/brands-hop0.html"
+        }
+      ]
+    },
+    {
+      "key": "brands",
+      "path": "/brands",
+      "method": "HEAD",
+      "chain": [
+        {
+          "at": "2026-10-26T07:45:59.867Z",
+          "url": "https://digitecme.com/brands",
+          "method": "HEAD",
+          "status": 200,
+          "headers": {
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "cache-control": "no-cache, must-revalidate, max-age=0",
+            "cf-cache-status": "DYNAMIC",
+            "cf-ray": "a507d8530abc7231-HKG",
+            "connection": "close",
+            "content-encoding": "br",
+            "content-type": "text/html; charset=utf-8",
+            "date": "Mon, 26 Oct 2026 07:46:03 GMT",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "referrer-policy": "strict-origin-when-cross-origin",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=pbw%2BEeeqdvD8QBPIM7rWjrliL%2BcWrwIDDzV4qGQofRRzYPmJERpKuLK%2Fak709f9Cua8syZTEQ8F2C9W5LjmP6aQzlFkUTzcgkxeYu5H1VwSVb%2B6ErYSzrhyiP4pLJ0W2\"}]}",
+            "server": "cloudflare",
+            "speculation-rules": "\"/cdn-cgi/speculation\"",
+            "strict-transport-security": "max-age=31536000; includeSubDomains",
+            "x-content-type-options": "nosniff",
+            "x-deployment-id": "psr2.455fbd60-7be3-4d3f-b5a2-4af11984e472.1793605563.Wc0d1X7ldKytaA6EAt_G3HYgtULQvvjig34fOmxFqOQ"
+          }
+        }
+      ]
+    },
+    {
+      "key": "diagnostics-ar",
+      "path": "/ar/services/mercedes-diagnostics-dubai",
+      "method": "GET",
+      "chain": [
+        {
+          "at": "2026-10-26T07:45:58.673Z",
+          "url": "https://digitecme.com/ar/services/mercedes-diagnostics-dubai",
+          "method": "GET",
+          "status": 200,
+          "headers": {
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "cache-control": "no-cache, must-revalidate, max-age=0",
+            "cf-cache-status": "DYNAMIC",
+            "cf-ray": "a507d84a3c0ce866-FRA",
+            "connection": "keep-alive",
+            "content-encoding": "br",
+            "content-type": "text/html; charset=utf-8",
+            "date": "Mon, 26 Oct 2026 07:46:02 GMT",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "referrer-policy": "strict-origin-when-cross-origin",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=%2F0l%2BXMoykyXp4Wwxvra8ig%2FfaUMia%2BlE5jZ%2BC54GWa2kGRwspbTfRNYTSVWuw8y9hG9U4xkvolK0CYBkhfe8TRILJ%2BeXsEkj8pmOCxErvRGAV93Z%2FJ7tNdxut%2BVIXgrr\"}]}",
+            "server": "cloudflare",
+            "speculation-rules": "\"/cdn-cgi/speculation\"",
+            "strict-transport-security": "max-age=31536000; includeSubDomains",
+            "transfer-encoding": "chunked",
+            "vary": "accept-encoding",
+            "x-content-type-options": "nosniff",
+            "x-deployment-id": "psr2.455fbd60-7be3-4d3f-b5a2-4af11984e472.1793605561.huLPqXTO_GOtoknZ2QzXOjieWsBvne33dFtkucCQb_o"
+          },
+          "bodySha256": "40106cb32f32e11339fe711fa2cd33eb098f19e970c834cf1149486a231abf7f",
+          "htmlFile": "html/diagnostics-ar-hop0.html"
+        }
+      ]
+    },
+    {
+      "key": "diagnostics-ar",
+      "path": "/ar/services/mercedes-diagnostics-dubai",
+      "method": "HEAD",
+      "chain": [
+        {
+          "at": "2026-10-26T07:45:58.903Z",
+          "url": "https://digitecme.com/ar/services/mercedes-diagnostics-dubai",
+          "method": "HEAD",
+          "status": 200,
+          "headers": {
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "cache-control": "no-cache, must-revalidate, max-age=0",
+            "cf-cache-status": "DYNAMIC",
+            "cf-ray": "a507d84cfc140977-HKG",
+            "connection": "close",
+            "content-encoding": "br",
+            "content-type": "text/html; charset=utf-8",
+            "date": "Mon, 26 Oct 2026 07:46:02 GMT",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "referrer-policy": "strict-origin-when-cross-origin",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=fi11G%2BRUTgLQYMchPo1byvZ8A7JK0QWE%2FUlv7hGLdhM1jxPr1OBUXQEOtEoGWcdrEbcORXUDx3zYIBMtOQmtOfB4hrPD2fMx%2F7HjwfSpoM6Ya593DPWrbvbf%2F9Dgczln\"}]}",
+            "server": "cloudflare",
+            "speculation-rules": "\"/cdn-cgi/speculation\"",
+            "strict-transport-security": "max-age=31536000; includeSubDomains",
+            "x-content-type-options": "nosniff",
+            "x-deployment-id": "psr2.455fbd60-7be3-4d3f-b5a2-4af11984e472.1793605562.QEjIZO8CJ8sSdkixN1EAPG1ukWIzujCzVPe4MPctMr0"
+          }
+        }
+      ]
+    },
+    {
+      "key": "diagnostics-en",
+      "path": "/services/mercedes-diagnostics-dubai",
+      "method": "GET",
+      "chain": [
+        {
+          "at": "2026-10-26T07:45:58.507Z",
+          "url": "https://digitecme.com/services/mercedes-diagnostics-dubai",
+          "method": "GET",
+          "status": 200,
+          "headers": {
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "cache-control": "no-cache, must-revalidate, max-age=0",
+            "cf-cache-status": "DYNAMIC",
+            "cf-ray": "a507d84a7f308b45-HKG",
+            "connection": "keep-alive",
+            "content-encoding": "br",
+            "content-type": "text/html; charset=utf-8",
+            "date": "Mon, 26 Oct 2026 07:46:02 GMT",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "referrer-policy": "strict-origin-when-cross-origin",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=zO%2BcWvQtIhQ0URMy9GnvbvU7gjBddi0eOYAXndiaZDlItqFbeTpB1H5bg%2FSogffCh8DlsQWOcufX8itXnlMmqr3RRT5EBBTQrn53TPFlCHCW62Ks%2FRZrzjbNcqpA5hjy\"}]}",
+            "server": "cloudflare",
+            "speculation-rules": "\"/cdn-cgi/speculation\"",
+            "strict-transport-security": "max-age=31536000; includeSubDomains",
+            "transfer-encoding": "chunked",
+            "vary": "accept-encoding",
+            "x-content-type-options": "nosniff",
+            "x-deployment-id": "psr2.455fbd60-7be3-4d3f-b5a2-4af11984e472.1793605562.QEjIZO8CJ8sSdkixN1EAPG1ukWIzujCzVPe4MPctMr0"
+          },
+          "bodySha256": "a84be89f33c18110a56191c7977a05cb3c56c9c179803e2b39a74a1f87fbc23f",
+          "htmlFile": "html/diagnostics-en-hop0.html"
+        }
+      ]
+    },
+    {
+      "key": "diagnostics-en",
+      "path": "/services/mercedes-diagnostics-dubai",
+      "method": "HEAD",
+      "chain": [
+        {
+          "at": "2026-10-26T07:45:58.561Z",
+          "url": "https://digitecme.com/services/mercedes-diagnostics-dubai",
+          "method": "HEAD",
+          "status": 200,
+          "headers": {
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "cache-control": "no-cache, must-revalidate, max-age=0",
+            "cf-cache-status": "DYNAMIC",
+            "cf-ray": "a507d84b1f2584c7-HKG",
+            "connection": "close",
+            "content-encoding": "br",
+            "content-type": "text/html; charset=utf-8",
+            "date": "Mon, 26 Oct 2026 07:46:02 GMT",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "referrer-policy": "strict-origin-when-cross-origin",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=PRsHPtNFseecHI4T5pWX2AmpeOsDC%2Ff4iRMrwO%2BkQh1RsWvDxzpWjELde4Rtr%2BTsrR6JLZCeFR4XPu1HBwILgaqTBvx1deXX4AEokYli%2FAfi5%2BhKlEtgS01nKn8%2F48Em\"}]}",
+            "server": "cloudflare",
+            "speculation-rules": "\"/cdn-cgi/speculation\"",
+            "strict-transport-security": "max-age=31536000; includeSubDomains",
+            "x-content-type-options": "nosniff",
+            "x-deployment-id": "psr2.455fbd60-7be3-4d3f-b5a2-4af11984e472.1793605562.QEjIZO8CJ8sSdkixN1EAPG1ukWIzujCzVPe4MPctMr0"
+          }
+        }
+      ]
+    },
+    {
+      "key": "g63-case",
+      "path": "/blog/g63-to-brabus-g800-conversion-dubai",
+      "method": "GET",
+      "chain": [
+        {
+          "at": "2026-10-26T07:46:00.511Z",
+          "url": "https://digitecme.com/blog/g63-to-brabus-g800-conversion-dubai",
+          "method": "GET",
+          "status": 200,
+          "headers": {
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "cache-control": "no-cache, must-revalidate, max-age=0",
+            "cf-cache-status": "DYNAMIC",
+            "cf-ray": "a507d857197eed85-CDG",
+            "connection": "keep-alive",
+            "content-encoding": "br",
+            "content-type": "text/html; charset=utf-8",
+            "date": "Mon, 26 Oct 2026 07:46:04 GMT",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "referrer-policy": "strict-origin-when-cross-origin",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=ecr%2Fsvgos4yQAhrN%2FmJr9NkuH6wUpJz%2BrcUSaNkR9s%2BIipx89XqixxvmgoxUYKSLxQfX0R%2BYnXxTl%2F3ERXlEXexX8O%2FThOOOVk0AsnVeUu1TUb6IUDchECV7P2gcfpQv\"}]}",
+            "server": "cloudflare",
+            "speculation-rules": "\"/cdn-cgi/speculation\"",
+            "strict-transport-security": "max-age=31536000; includeSubDomains",
+            "transfer-encoding": "chunked",
+            "vary": "accept-encoding",
+            "x-content-type-options": "nosniff",
+            "x-deployment-id": "psr2.455fbd60-7be3-4d3f-b5a2-4af11984e472.1793605564.GcqTyjMP5fQr5G7bK7tdqkCz0IDxnfBRj7MYqN6WxEU"
+          },
+          "bodySha256": "d4007a6c0278bce52e382fe3a01ad446d7fb2cc2ab5cc0611fab0de8f3a1c933",
+          "htmlFile": "html/g63-case-hop0.html"
+        }
+      ]
+    },
+    {
+      "key": "g63-case",
+      "path": "/blog/g63-to-brabus-g800-conversion-dubai",
+      "method": "HEAD",
+      "chain": [
+        {
+          "at": "2026-10-26T07:46:00.609Z",
+          "url": "https://digitecme.com/blog/g63-to-brabus-g800-conversion-dubai",
+          "method": "HEAD",
+          "status": 200,
+          "headers": {
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "cache-control": "no-cache, must-revalidate, max-age=0",
+            "cf-cache-status": "DYNAMIC",
+            "cf-ray": "a507d857caf5854d-HKG",
+            "connection": "close",
+            "content-encoding": "br",
+            "content-type": "text/html; charset=utf-8",
+            "date": "Mon, 26 Oct 2026 07:46:04 GMT",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "referrer-policy": "strict-origin-when-cross-origin",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=PFrqSadDSaliDSS89G%2FqIpiEdTYYj5X4WZ6d7XUYMEn2ONi%2FiiZG1XdeXzObSHDeuOqB8tNj6RyQmwwmV4SlwDNGCiZ30YuTQMFjFm%2BfkrpVTdoBY5AQYRrbD%2BaQTl5l\"}]}",
+            "server": "cloudflare",
+            "speculation-rules": "\"/cdn-cgi/speculation\"",
+            "strict-transport-security": "max-age=31536000; includeSubDomains",
+            "x-content-type-options": "nosniff",
+            "x-deployment-id": "psr2.455fbd60-7be3-4d3f-b5a2-4af11984e472.1793605564.GcqTyjMP5fQr5G7bK7tdqkCz0IDxnfBRj7MYqN6WxEU"
+          }
+        }
+      ]
+    },
+    {
+      "key": "home",
+      "path": "/",
+      "method": "GET",
+      "chain": [
+        {
+          "at": "2026-10-26T07:46:00.000Z",
+          "url": "https://digitecme.com/",
+          "method": "GET",
+          "status": 200,
+          "headers": {
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "cache-control": "no-cache, must-revalidate, max-age=0",
+            "cf-cache-status": "DYNAMIC",
+            "cf-ray": "a507d8527bc1735b-CDG",
+            "connection": "keep-alive",
+            "content-encoding": "br",
+            "content-type": "text/html; charset=utf-8",
+            "date": "Mon, 26 Oct 2026 07:46:03 GMT",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "referrer-policy": "strict-origin-when-cross-origin",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=keU2QBSFw%2BrL2CJtqaos17WfISBoP%2FtJmgbxQnstmvTeHZOAoBmy0HldTUkY3F75CMnWAVzj%2FBo5Lii1j%2BLjxagqmV7qE7sPM2tkSOhYl5uOhVHIbQvDggXJzCH1ei1h\"}]}",
+            "server": "cloudflare",
+            "speculation-rules": "\"/cdn-cgi/speculation\"",
+            "strict-transport-security": "max-age=31536000; includeSubDomains",
+            "transfer-encoding": "chunked",
+            "vary": "accept-encoding",
+            "x-content-type-options": "nosniff",
+            "x-deployment-id": "psr2.455fbd60-7be3-4d3f-b5a2-4af11984e472.1793605563.Wc0d1X7ldKytaA6EAt_G3HYgtULQvvjig34fOmxFqOQ"
+          },
+          "bodySha256": "c16015d999ea0b74ca2d4a56696ec416f1728defea658b081819d5e1541e9702",
+          "htmlFile": "html/home-hop0.html"
+        }
+      ]
+    },
+    {
+      "key": "home",
+      "path": "/",
+      "method": "HEAD",
+      "chain": [
+        {
+          "at": "2026-10-26T07:46:00.148Z",
+          "url": "https://digitecme.com/",
+          "method": "HEAD",
+          "status": 200,
+          "headers": {
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "cache-control": "no-cache, must-revalidate, max-age=0",
+            "cf-cache-status": "DYNAMIC",
+            "cf-ray": "a507d853581920e1-HKG",
+            "connection": "close",
+            "content-encoding": "br",
+            "content-type": "text/html; charset=utf-8",
+            "date": "Mon, 26 Oct 2026 07:46:03 GMT",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "referrer-policy": "strict-origin-when-cross-origin",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=mwTdyOdd%2Bra%2B1vKuxOpjUaxglVENp0N0xAJVb3wwWjeBCd4sMb4z4QxOhSAosMb0tNgra8dL6ZnMjnnek8pXXOPKY0iuBA8TCxcQyHlxWsjN8OX7e4zwtaBFvafett2Z\"}]}",
+            "server": "cloudflare",
+            "speculation-rules": "\"/cdn-cgi/speculation\"",
+            "strict-transport-security": "max-age=31536000; includeSubDomains",
+            "x-content-type-options": "nosniff",
+            "x-deployment-id": "psr2.455fbd60-7be3-4d3f-b5a2-4af11984e472.1793605563.Wc0d1X7ldKytaA6EAt_G3HYgtULQvvjig34fOmxFqOQ"
+          }
+        }
+      ]
+    },
+    {
+      "key": "hub-ar",
+      "path": "/ar/brands/mercedes-benz-service-dubai",
+      "method": "GET",
+      "chain": [
+        {
+          "at": "2026-10-26T07:45:57.062Z",
+          "url": "https://digitecme.com/ar/brands/mercedes-benz-service-dubai",
+          "method": "GET",
+          "status": 200,
+          "headers": {
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "cache-control": "no-cache, must-revalidate, max-age=0",
+            "cf-cache-status": "DYNAMIC",
+            "cf-ray": "a507d8415e7b6cdf-CDG",
+            "connection": "keep-alive",
+            "content-encoding": "br",
+            "content-type": "text/html; charset=utf-8",
+            "date": "Mon, 26 Oct 2026 07:46:00 GMT",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "referrer-policy": "strict-origin-when-cross-origin",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=Dxr%2B3iJ4wkUoLzpJcJUVv8vPW%2BI6lacBEvgxyuqYFJjZJzXs6zCcXyWggHHTUsS12sn9UfenIxyaqGkl5%2BaRy%2Bg%2FYkEzSmzu7ZZiKeQQwzT8BAUP00eMaS4HwLlQVC3X\"}]}",
+            "server": "cloudflare",
+            "speculation-rules": "\"/cdn-cgi/speculation\"",
+            "strict-transport-security": "max-age=31536000; includeSubDomains",
+            "transfer-encoding": "chunked",
+            "vary": "accept-encoding",
+            "x-content-type-options": "nosniff",
+            "x-deployment-id": "psr2.455fbd60-7be3-4d3f-b5a2-4af11984e472.1793605560.tNKTwTZZkiyVLCTpzc5GEE8Xg4uBVh10VE_QD150W6Y"
+          },
+          "bodySha256": "ba65fc6e11da98b03dee9d2e76bf255855f9585862f34ab9661749ae5d79c346",
+          "htmlFile": "html/hub-ar-hop0.html"
+        }
+      ]
+    },
+    {
+      "key": "hub-ar",
+      "path": "/ar/brands/mercedes-benz-service-dubai",
+      "method": "HEAD",
+      "chain": [
+        {
+          "at": "2026-10-26T07:45:57.064Z",
+          "url": "https://digitecme.com/ar/brands/mercedes-benz-service-dubai",
+          "method": "HEAD",
+          "status": 200,
+          "headers": {
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "cache-control": "no-cache, must-revalidate, max-age=0",
+            "cf-cache-status": "DYNAMIC",
+            "cf-ray": "a507d84019e28ca6-HKG",
+            "connection": "close",
+            "content-encoding": "br",
+            "content-type": "text/html; charset=utf-8",
+            "date": "Mon, 26 Oct 2026 07:46:00 GMT",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "referrer-policy": "strict-origin-when-cross-origin",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=jGqQm9g1VDVv8jdbcSmqcdJH7p13iWxvPWnliL0hqtnE8F41qGzar7qOR%2BP50LG9KnMlIk3H3xvFmixdh6pmN6FaiSFCI3DjtIj3fJKH%2BTk4uC2wyJeWXvej0MZTcXzE\"}]}",
+            "server": "cloudflare",
+            "speculation-rules": "\"/cdn-cgi/speculation\"",
+            "strict-transport-security": "max-age=31536000; includeSubDomains",
+            "x-content-type-options": "nosniff",
+            "x-deployment-id": "psr2.455fbd60-7be3-4d3f-b5a2-4af11984e472.1793605560.tNKTwTZZkiyVLCTpzc5GEE8Xg4uBVh10VE_QD150W6Y"
+          }
+        }
+      ]
+    },
+    {
+      "key": "hub-en",
+      "path": "/brands/mercedes-benz-service-dubai",
+      "method": "GET",
+      "chain": [
+        {
+          "at": "2026-10-26T07:45:55.943Z",
+          "url": "https://digitecme.com/brands/mercedes-benz-service-dubai",
+          "method": "GET",
+          "status": 200,
+          "headers": {
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "cache-control": "no-cache, must-revalidate, max-age=0",
+            "cf-cache-status": "DYNAMIC",
+            "cf-ray": "a507d83a7e558ca6-HKG",
+            "connection": "keep-alive",
+            "content-encoding": "br",
+            "content-type": "text/html; charset=utf-8",
+            "date": "Mon, 26 Oct 2026 07:46:00 GMT",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "referrer-policy": "strict-origin-when-cross-origin",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=W0xkMuHBs1OAgeF21c3fheeTE%2BN8GPjrTKpGzCvGWq7SenXl5%2B7CQYEQug4UTVLeH%2B2zjLJ5dF%2B4lje%2FZTNSOT0IVU7ynhkVUXg6erjRsf7eNSwZAdpsSDBEA7SFlTEF\"}]}",
+            "server": "cloudflare",
+            "speculation-rules": "\"/cdn-cgi/speculation\"",
+            "strict-transport-security": "max-age=31536000; includeSubDomains",
+            "transfer-encoding": "chunked",
+            "vary": "accept-encoding",
+            "x-content-type-options": "nosniff",
+            "x-deployment-id": "psr2.455fbd60-7be3-4d3f-b5a2-4af11984e472.1793605559.7ZdDyzeGxgmtwUmTzPcgpmnVXT0M5GB7Cib2HiLVSYo"
+          },
+          "bodySha256": "1ecec0e601abddd64ef27924620dd736b22e52222fd6802ecd47292e01e1808b",
+          "htmlFile": "html/hub-en-hop0.html"
+        }
+      ]
+    },
+    {
+      "key": "hub-en",
+      "path": "/brands/mercedes-benz-service-dubai",
+      "method": "HEAD",
+      "chain": [
+        {
+          "at": "2026-10-26T07:45:57.055Z",
+          "url": "https://digitecme.com/brands/mercedes-benz-service-dubai",
+          "method": "HEAD",
+          "status": 200,
+          "headers": {
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "cache-control": "no-cache, must-revalidate, max-age=0",
+            "cf-cache-status": "DYNAMIC",
+            "cf-ray": "a507d84169c20987-HKG",
+            "connection": "close",
+            "content-encoding": "br",
+            "content-type": "text/html; charset=utf-8",
+            "date": "Mon, 26 Oct 2026 07:46:00 GMT",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "referrer-policy": "strict-origin-when-cross-origin",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=%2BbssuRST7ngtousO4H4iSby%2BMTF45xSeDW%2FjeDLTs0lMjNxhXumQwiYR986Fb7eM%2FdJaNo8nvsM7GQ08nmFY1MuJG%2BwJQ9eZaB171MDm1a5mg2yIZgX0m0V0VkrwpLpn\"}]}",
+            "server": "cloudflare",
+            "speculation-rules": "\"/cdn-cgi/speculation\"",
+            "strict-transport-security": "max-age=31536000; includeSubDomains",
+            "x-content-type-options": "nosniff",
+            "x-deployment-id": "psr2.455fbd60-7be3-4d3f-b5a2-4af11984e472.1793605560.tNKTwTZZkiyVLCTpzc5GEE8Xg4uBVh10VE_QD150W6Y"
+          }
+        }
+      ]
+    },
+    {
+      "key": "legacy-body",
+      "path": "/brands/mercedes-benz-service-dubai/body-repair",
+      "method": "GET",
+      "chain": [
+        {
+          "at": "2026-10-26T07:46:01.416Z",
+          "url": "https://digitecme.com/brands/mercedes-benz-service-dubai/body-repair",
+          "method": "GET",
+          "status": 308,
+          "headers": {
+            "cf-ray": "a507d85e199d6fea-CDG",
+            "connection": "keep-alive",
+            "content-type": "text/html; charset=UTF-8",
+            "date": "Mon, 26 Oct 2026 07:46:05 GMT",
+            "location": "https://digitecme.com/services/mercedes-body-repair-dubai",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=nE4qDkRNSgQGRNfI9sonjaWVVg2XpQA%2FtBu8wET1ALksohlvtor4lGqFADjhvLETU9eM4K8rONUdbPDWzFMGG4fn%2B4XvZQtcOCL1Cn5tE0AIscc3e05a0QODSRTrPVLV\"}]}",
+            "server": "cloudflare",
+            "speculation-rules": "\"/cdn-cgi/speculation\"",
+            "transfer-encoding": "chunked"
+          },
+          "bodySha256": "c230f673289b2f53f31d1a678e11b9167b824aa5b6ed2195fdaecb63260dad63",
+          "htmlFile": "html/legacy-body-hop0.html"
+        },
+        {
+          "at": "2026-10-26T07:46:01.988Z",
+          "url": "https://digitecme.com/services/mercedes-body-repair-dubai",
+          "method": "GET",
+          "status": 200,
+          "headers": {
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "cache-control": "no-cache, must-revalidate, max-age=0",
+            "cf-cache-status": "DYNAMIC",
+            "cf-ray": "a507d8605b211bf1-CDG",
+            "connection": "keep-alive",
+            "content-encoding": "br",
+            "content-type": "text/html; charset=utf-8",
+            "date": "Mon, 26 Oct 2026 07:46:05 GMT",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "referrer-policy": "strict-origin-when-cross-origin",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=XOhk5PM49STJHNKV1KkYmRlF1Uc18ydJboXTEQ65xyPzrBgfP4eE7G5yyQtrRp5jKyoTCrMHSqJWIKm6QfHt%2B0azuHONjUSwPqhsBa46iK4qXZ%2F5ckDKYvmFS%2FJw%2B7Yt\"}]}",
+            "server": "cloudflare",
+            "speculation-rules": "\"/cdn-cgi/speculation\"",
+            "strict-transport-security": "max-age=31536000; includeSubDomains",
+            "transfer-encoding": "chunked",
+            "vary": "accept-encoding",
+            "x-content-type-options": "nosniff",
+            "x-deployment-id": "psr2.455fbd60-7be3-4d3f-b5a2-4af11984e472.1793605565.VDoW8d1M69Ho1naPiz8b_a6Sj99sbPckt42oFG3-X5s"
+          },
+          "bodySha256": "424e36bb11436b2288b91df74123c0fe4b6ed5bc540ff256164f8c33d7d5f8de",
+          "htmlFile": "html/legacy-body-hop1.html"
+        }
+      ]
+    },
+    {
+      "key": "legacy-body",
+      "path": "/brands/mercedes-benz-service-dubai/body-repair",
+      "method": "HEAD",
+      "chain": [
+        {
+          "at": "2026-10-26T07:46:02.051Z",
+          "url": "https://digitecme.com/brands/mercedes-benz-service-dubai/body-repair",
+          "method": "HEAD",
+          "status": 308,
+          "headers": {
+            "cf-ray": "a507d860ea65d949-AMS",
+            "connection": "close",
+            "content-type": "text/html; charset=UTF-8",
+            "date": "Mon, 26 Oct 2026 07:46:05 GMT",
+            "location": "https://digitecme.com/services/mercedes-body-repair-dubai",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=hUDGjVCc8aU%2BHBzeXL3E6%2FgLcy5XjuS2Fmpnj8sDD5G0G%2FbVjp%2FD8GHh2qEmL1CeoSRTF9FFjvHaIez8aFV%2FpDYhbDOlI%2FVcfz7MOH%2BPFxEXi8BcKr4Um8%2F0j5l4owoG\"}]}",
+            "server": "cloudflare",
+            "speculation-rules": "\"/cdn-cgi/speculation\""
+          }
+        },
+        {
+          "at": "2026-10-26T07:46:02.453Z",
+          "url": "https://digitecme.com/services/mercedes-body-repair-dubai",
+          "method": "HEAD",
+          "status": 200,
+          "headers": {
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "cache-control": "no-cache, must-revalidate, max-age=0",
+            "cf-cache-status": "DYNAMIC",
+            "cf-ray": "a507d8637bdd1c1a-AMS",
+            "connection": "close",
+            "content-encoding": "br",
+            "content-type": "text/html; charset=utf-8",
+            "date": "Mon, 26 Oct 2026 07:46:06 GMT",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "referrer-policy": "strict-origin-when-cross-origin",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=6CFL%2F1S6QgcbwVGBNJrKqufOXFjkW3kaFizVHzM18GjcYYNUswyXtavKdizaQLO7Zt4VbPOpSRK8QaJx5RVQI5DVj%2BC%2FXfTG2z23C3MfChr7U%2Bun6VmuUqbOLUR4zXmb\"}]}",
+            "server": "cloudflare",
+            "speculation-rules": "\"/cdn-cgi/speculation\"",
+            "strict-transport-security": "max-age=31536000; includeSubDomains",
+            "x-content-type-options": "nosniff",
+            "x-deployment-id": "psr2.455fbd60-7be3-4d3f-b5a2-4af11984e472.1793605566.SMKMoe0RW8a-qOG-ypN7Z3OpcXKY412Y2kyp9_fp8Po"
+          }
+        }
+      ]
+    },
+    {
+      "key": "mechanical-ar",
+      "path": "/ar/services/mercedes-mechanical-repair-dubai",
+      "method": "GET",
+      "chain": [
+        {
+          "at": "2026-10-26T07:45:58.060Z",
+          "url": "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai",
+          "method": "GET",
+          "status": 200,
+          "headers": {
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "cache-control": "no-cache, must-revalidate, max-age=0",
+            "cf-cache-status": "DYNAMIC",
+            "cf-ray": "a507d8467bee0520-AMS",
+            "connection": "keep-alive",
+            "content-encoding": "br",
+            "content-type": "text/html; charset=utf-8",
+            "date": "Mon, 26 Oct 2026 07:46:01 GMT",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "referrer-policy": "strict-origin-when-cross-origin",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=6AwuQSEeRRjcPodM98aneFK7Dyxl5DVoGMIEj1oZTDiGDpCUeXr39aSL6BlgB1IO2rZEaJRwjOf7iGT%2B6s%2BfZXzjz3mCxSAMdBmAoeCt%2B8eQTbzEV5L4p94LfXkgX38D\"}]}",
+            "server": "cloudflare",
+            "speculation-rules": "\"/cdn-cgi/speculation\"",
+            "strict-transport-security": "max-age=31536000; includeSubDomains",
+            "transfer-encoding": "chunked",
+            "vary": "accept-encoding",
+            "x-content-type-options": "nosniff",
+            "x-deployment-id": "psr2.455fbd60-7be3-4d3f-b5a2-4af11984e472.1793605561.huLPqXTO_GOtoknZ2QzXOjieWsBvne33dFtkucCQb_o"
+          },
+          "bodySha256": "498398a477de318057aedbdfb1e246e72b3cf2dfa2538b850da8a600a3631d1a",
+          "htmlFile": "html/mechanical-ar-hop0.html"
+        }
+      ]
+    },
+    {
+      "key": "mechanical-ar",
+      "path": "/ar/services/mercedes-mechanical-repair-dubai",
+      "method": "HEAD",
+      "chain": [
+        {
+          "at": "2026-10-26T07:45:58.297Z",
+          "url": "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai",
+          "method": "HEAD",
+          "status": 200,
+          "headers": {
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "cache-control": "no-cache, must-revalidate, max-age=0",
+            "cf-cache-status": "DYNAMIC",
+            "cf-ray": "a507d847ebf00520-AMS",
+            "connection": "close",
+            "content-encoding": "br",
+            "content-type": "text/html; charset=utf-8",
+            "date": "Mon, 26 Oct 2026 07:46:01 GMT",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "referrer-policy": "strict-origin-when-cross-origin",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=L1HXmZLOJgRsuHggkkIHK8hLyEd62YBl93IgmLGHog94lTVEYT5X1yPxfjju8jNRbPfsBICdpNF6AGp8sbST42cVd7LREZpCTyu13PbHYhzQYmBVA8muFCtowX0TZVja\"}]}",
+            "server": "cloudflare",
+            "speculation-rules": "\"/cdn-cgi/speculation\"",
+            "strict-transport-security": "max-age=31536000; includeSubDomains",
+            "x-content-type-options": "nosniff",
+            "x-deployment-id": "psr2.455fbd60-7be3-4d3f-b5a2-4af11984e472.1793605561.huLPqXTO_GOtoknZ2QzXOjieWsBvne33dFtkucCQb_o"
+          }
+        }
+      ]
+    },
+    {
+      "key": "mechanical-en",
+      "path": "/services/mercedes-mechanical-repair-dubai",
+      "method": "GET",
+      "chain": [
+        {
+          "at": "2026-10-26T07:45:57.894Z",
+          "url": "https://digitecme.com/services/mercedes-mechanical-repair-dubai",
+          "method": "GET",
+          "status": 200,
+          "headers": {
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "cache-control": "no-cache, must-revalidate, max-age=0",
+            "cf-cache-status": "DYNAMIC",
+            "cf-ray": "a507d846fca9e866-FRA",
+            "connection": "keep-alive",
+            "content-encoding": "br",
+            "content-type": "text/html; charset=utf-8",
+            "date": "Mon, 26 Oct 2026 07:46:01 GMT",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "referrer-policy": "strict-origin-when-cross-origin",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=kBmCPbRxNV45qGgN6H5p0LMabUx7UAcyedMUIF5RTC6Eor9vJARrou1BzqMbRRTptPwV5tjzxCn6m32U7IdMH3MdCDEINyQDypXMCcGe8KRf3kDVEq5pUOvwNAGu1CcP\"}]}",
+            "server": "cloudflare",
+            "speculation-rules": "\"/cdn-cgi/speculation\"",
+            "strict-transport-security": "max-age=31536000; includeSubDomains",
+            "transfer-encoding": "chunked",
+            "vary": "accept-encoding",
+            "x-content-type-options": "nosniff",
+            "x-deployment-id": "psr2.455fbd60-7be3-4d3f-b5a2-4af11984e472.1793605561.huLPqXTO_GOtoknZ2QzXOjieWsBvne33dFtkucCQb_o"
+          },
+          "bodySha256": "9ffa63f1f48f646c7704e4afa651c6d0fd460ae4006bc8bdf221f1d5dc4feee1",
+          "htmlFile": "html/mechanical-en-hop0.html"
+        }
+      ]
+    },
+    {
+      "key": "mechanical-en",
+      "path": "/services/mercedes-mechanical-repair-dubai",
+      "method": "HEAD",
+      "chain": [
+        {
+          "at": "2026-10-26T07:45:57.978Z",
+          "url": "https://digitecme.com/services/mercedes-mechanical-repair-dubai",
+          "method": "HEAD",
+          "status": 200,
+          "headers": {
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "cache-control": "no-cache, must-revalidate, max-age=0",
+            "cf-cache-status": "DYNAMIC",
+            "cf-ray": "a507d8476b5b4a25-AMS",
+            "connection": "close",
+            "content-encoding": "br",
+            "content-type": "text/html; charset=utf-8",
+            "date": "Mon, 26 Oct 2026 07:46:01 GMT",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "referrer-policy": "strict-origin-when-cross-origin",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=m38Nw6B0bZXgGZKECLLXgrDHLrTPDfLnefdaISxonJRIxLzAR1cE3lsDyBED3pgYQ7XBwFiMNh1NA%2FkZzNcP91om2uMFqxHugzOheXRXm89K%2BPIjO6DdP6wrNNppeZ1G\"}]}",
+            "server": "cloudflare",
+            "speculation-rules": "\"/cdn-cgi/speculation\"",
+            "strict-transport-security": "max-age=31536000; includeSubDomains",
+            "x-content-type-options": "nosniff",
+            "x-deployment-id": "psr2.455fbd60-7be3-4d3f-b5a2-4af11984e472.1793605561.huLPqXTO_GOtoknZ2QzXOjieWsBvne33dFtkucCQb_o"
+          }
+        }
+      ]
+    },
+    {
+      "key": "oil-ar",
+      "path": "/ar/services/mercedes-oil-change-dubai",
+      "method": "GET",
+      "chain": [
+        {
+          "at": "2026-10-26T07:45:57.564Z",
+          "url": "https://digitecme.com/ar/services/mercedes-oil-change-dubai",
+          "method": "GET",
+          "status": 200,
+          "headers": {
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "cache-control": "no-cache, must-revalidate, max-age=0",
+            "cf-cache-status": "DYNAMIC",
+            "cf-ray": "a507d844fc650520-AMS",
+            "connection": "keep-alive",
+            "content-encoding": "br",
+            "content-type": "text/html; charset=utf-8",
+            "date": "Mon, 26 Oct 2026 07:46:01 GMT",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "referrer-policy": "strict-origin-when-cross-origin",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=L958uVtPNoUdfqYlh03Vt%2B%2FUAmNtuEF9maE%2FpVuR1AprFNdxtKzdfhd4r%2F60E5CFkByrbuXf0BxxOg1%2F4PGJ8XvtK7CNk3GLXQAddkgJ%2B0jOkn6DWmeY9oJ9CxsMxYnn\"}]}",
+            "server": "cloudflare",
+            "speculation-rules": "\"/cdn-cgi/speculation\"",
+            "strict-transport-security": "max-age=31536000; includeSubDomains",
+            "transfer-encoding": "chunked",
+            "vary": "accept-encoding",
+            "x-content-type-options": "nosniff",
+            "x-deployment-id": "psr2.455fbd60-7be3-4d3f-b5a2-4af11984e472.1793605561.huLPqXTO_GOtoknZ2QzXOjieWsBvne33dFtkucCQb_o"
+          },
+          "bodySha256": "aec6e6b812f107482656d9172432fea8e3bab73652fe3880003d7aea2b8433c2",
+          "htmlFile": "html/oil-ar-hop0.html"
+        }
+      ]
+    },
+    {
+      "key": "oil-ar",
+      "path": "/ar/services/mercedes-oil-change-dubai",
+      "method": "HEAD",
+      "chain": [
+        {
+          "at": "2026-10-26T07:45:57.701Z",
+          "url": "https://digitecme.com/ar/services/mercedes-oil-change-dubai",
+          "method": "HEAD",
+          "status": 200,
+          "headers": {
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "cache-control": "no-cache, must-revalidate, max-age=0",
+            "cf-cache-status": "DYNAMIC",
+            "cf-ray": "a507d8440f186cdf-CDG",
+            "connection": "close",
+            "content-encoding": "br",
+            "content-type": "text/html; charset=utf-8",
+            "date": "Mon, 26 Oct 2026 07:46:01 GMT",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "referrer-policy": "strict-origin-when-cross-origin",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=Tp85E1Y4AreYyy3GXUYOf%2F7qE7mf0colNdJc3Wt6JFgPgAxQF6EuuCJJx2gN1vd4rVKMdku696dnyAVFfdelOqmolEBhKE78WQcTERTV3QOvDu0OSv4HSWPVM9ojlPEM\"}]}",
+            "server": "cloudflare",
+            "speculation-rules": "\"/cdn-cgi/speculation\"",
+            "strict-transport-security": "max-age=31536000; includeSubDomains",
+            "x-content-type-options": "nosniff",
+            "x-deployment-id": "psr2.455fbd60-7be3-4d3f-b5a2-4af11984e472.1793605560.tNKTwTZZkiyVLCTpzc5GEE8Xg4uBVh10VE_QD150W6Y"
+          }
+        }
+      ]
+    },
+    {
+      "key": "oil-en",
+      "path": "/services/mercedes-oil-change-dubai",
+      "method": "GET",
+      "chain": [
+        {
+          "at": "2026-10-26T07:45:57.462Z",
+          "url": "https://digitecme.com/services/mercedes-oil-change-dubai",
+          "method": "GET",
+          "status": 200,
+          "headers": {
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "cache-control": "no-cache, must-revalidate, max-age=0",
+            "cf-cache-status": "DYNAMIC",
+            "cf-ray": "a507d8429a476cdf-CDG",
+            "connection": "keep-alive",
+            "content-encoding": "br",
+            "content-type": "text/html; charset=utf-8",
+            "date": "Mon, 26 Oct 2026 07:46:00 GMT",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "referrer-policy": "strict-origin-when-cross-origin",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=kmJPoL9zfrcZTnO5cS6mutIVZPERnd8n4u6PpyoXI2e7cczeZeD%2FA5zu4DZt0Q4U9ptU5kvx3Aa5rdr%2FQ7jxPqdwo75f1zrHxnLVySOXQKCShU4sWpSw%2BFP8X0Zo%2BSMh\"}]}",
+            "server": "cloudflare",
+            "speculation-rules": "\"/cdn-cgi/speculation\"",
+            "strict-transport-security": "max-age=31536000; includeSubDomains",
+            "transfer-encoding": "chunked",
+            "vary": "accept-encoding",
+            "x-content-type-options": "nosniff",
+            "x-deployment-id": "psr2.455fbd60-7be3-4d3f-b5a2-4af11984e472.1793605560.tNKTwTZZkiyVLCTpzc5GEE8Xg4uBVh10VE_QD150W6Y"
+          },
+          "bodySha256": "7a284c671aa07d6d7781690db1da7cc7d47d883fc0f25df968af66f663e084ef",
+          "htmlFile": "html/oil-en-hop0.html"
+        }
+      ]
+    },
+    {
+      "key": "oil-en",
+      "path": "/services/mercedes-oil-change-dubai",
+      "method": "HEAD",
+      "chain": [
+        {
+          "at": "2026-10-26T07:45:57.548Z",
+          "url": "https://digitecme.com/services/mercedes-oil-change-dubai",
+          "method": "HEAD",
+          "status": 200,
+          "headers": {
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "cache-control": "no-cache, must-revalidate, max-age=0",
+            "cf-cache-status": "DYNAMIC",
+            "cf-ray": "a507d8432e7cb6a7-HKG",
+            "connection": "close",
+            "content-encoding": "br",
+            "content-type": "text/html; charset=utf-8",
+            "date": "Mon, 26 Oct 2026 07:46:01 GMT",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "referrer-policy": "strict-origin-when-cross-origin",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=VN0vVDfjpRcMs1%2FTaFa%2FlmHMRb3TcyMd02cGt9QR24njlwpgdfFS5QrYJHEBN7HUqKJD6HszRJ1nemsSvt%2BHYEN8r6uW5fuSo%2BOU3qcyG2jbODh3JlBch1DqWKd5OdJS\"}]}",
+            "server": "cloudflare",
+            "speculation-rules": "\"/cdn-cgi/speculation\"",
+            "strict-transport-security": "max-age=31536000; includeSubDomains",
+            "x-content-type-options": "nosniff",
+            "x-deployment-id": "psr2.455fbd60-7be3-4d3f-b5a2-4af11984e472.1793605560.tNKTwTZZkiyVLCTpzc5GEE8Xg4uBVh10VE_QD150W6Y"
+          }
+        }
+      ]
+    },
+    {
+      "key": "paint-protection",
+      "path": "/services/paint-protection-dubai",
+      "method": "GET",
+      "chain": [
+        {
+          "at": "2026-10-26T07:46:02.056Z",
+          "url": "https://digitecme.com/services/paint-protection-dubai",
+          "method": "GET",
+          "status": 200,
+          "headers": {
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "cache-control": "no-cache, must-revalidate, max-age=0",
+            "cf-cache-status": "DYNAMIC",
+            "cf-ray": "a507d860dc9f0088-CDG",
+            "connection": "keep-alive",
+            "content-encoding": "br",
+            "content-type": "text/html; charset=utf-8",
+            "date": "Mon, 26 Oct 2026 07:46:05 GMT",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "referrer-policy": "strict-origin-when-cross-origin",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=syChn4XrubKHrFPbaoc63M67znWAKmMdF9XG74XjZxqbG0yEiBarH%2FCg52puz6oJwnfj6JfESJnJMWQfHyPusSWnoo9tQcbpdA8HLrss5NsbYfbbcUzE1nE3vgnJF92n\"}]}",
+            "server": "cloudflare",
+            "speculation-rules": "\"/cdn-cgi/speculation\"",
+            "strict-transport-security": "max-age=31536000; includeSubDomains",
+            "transfer-encoding": "chunked",
+            "vary": "accept-encoding",
+            "x-content-type-options": "nosniff",
+            "x-deployment-id": "psr2.455fbd60-7be3-4d3f-b5a2-4af11984e472.1793605565.VDoW8d1M69Ho1naPiz8b_a6Sj99sbPckt42oFG3-X5s"
+          },
+          "bodySha256": "5030c75b8b3e112c84e356824690e4df041084a7890a92066cda683ee78fb0f9",
+          "htmlFile": "html/paint-protection-hop0.html"
+        }
+      ]
+    },
+    {
+      "key": "paint-protection",
+      "path": "/services/paint-protection-dubai",
+      "method": "HEAD",
+      "chain": [
+        {
+          "at": "2026-10-26T07:46:02.499Z",
+          "url": "https://digitecme.com/services/paint-protection-dubai",
+          "method": "HEAD",
+          "status": 200,
+          "headers": {
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "cache-control": "no-cache, must-revalidate, max-age=0",
+            "cf-cache-status": "DYNAMIC",
+            "cf-ray": "a507d863aab018db-FRA",
+            "connection": "close",
+            "content-encoding": "br",
+            "content-type": "text/html; charset=utf-8",
+            "date": "Mon, 26 Oct 2026 07:46:06 GMT",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "referrer-policy": "strict-origin-when-cross-origin",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=aEHbKqv%2BMne6ZIJF%2FyJ6Zac%2F8Mge5ZvtU5MW0PekauQLAXuuPkwZseKfclpTB4vpkO7kWpF4bKcB5%2B4XLY3FooVpZGTHU%2F%2FfrtVWGO2KRY1lNOvAEUju0RG5w1a40EGW\"}]}",
+            "server": "cloudflare",
+            "speculation-rules": "\"/cdn-cgi/speculation\"",
+            "strict-transport-security": "max-age=31536000; includeSubDomains",
+            "x-content-type-options": "nosniff",
+            "x-deployment-id": "psr2.455fbd60-7be3-4d3f-b5a2-4af11984e472.1793605566.SMKMoe0RW8a-qOG-ypN7Z3OpcXKY412Y2kyp9_fp8Po"
+          }
+        }
+      ]
+    },
+    {
+      "key": "services",
+      "path": "/services",
+      "method": "GET",
+      "chain": [
+        {
+          "at": "2026-10-26T07:45:59.421Z",
+          "url": "https://digitecme.com/services",
+          "method": "GET",
+          "status": 200,
+          "headers": {
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "cache-control": "no-cache, must-revalidate, max-age=0",
+            "cf-cache-status": "DYNAMIC",
+            "cf-ray": "a507d8504dba20e1-HKG",
+            "connection": "keep-alive",
+            "content-encoding": "br",
+            "content-type": "text/html; charset=utf-8",
+            "date": "Mon, 26 Oct 2026 07:46:03 GMT",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "referrer-policy": "strict-origin-when-cross-origin",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=MKIfKY3bNQ%2FBlzR%2FrujN64jRC6k8eLUmg2eGge1XMaWvmzzcB%2FeZ9ddI%2BwVS9hdpoyyNEA1QPEEkYmvaxI9PQBLVCglEkWS8rScLO8aBHxHwy1mOU3xNy6AiBm1BEpRr\"}]}",
+            "server": "cloudflare",
+            "speculation-rules": "\"/cdn-cgi/speculation\"",
+            "strict-transport-security": "max-age=31536000; includeSubDomains",
+            "transfer-encoding": "chunked",
+            "vary": "accept-encoding",
+            "x-content-type-options": "nosniff",
+            "x-deployment-id": "psr2.455fbd60-7be3-4d3f-b5a2-4af11984e472.1793605563.Wc0d1X7ldKytaA6EAt_G3HYgtULQvvjig34fOmxFqOQ"
+          },
+          "bodySha256": "12c7ab707bf1f3ee34466b1436283cded56e3bcdbb76bd614db142fd16f3cb70",
+          "htmlFile": "html/services-hop0.html"
+        }
+      ]
+    },
+    {
+      "key": "services",
+      "path": "/services",
+      "method": "HEAD",
+      "chain": [
+        {
+          "at": "2026-10-26T07:45:59.562Z",
+          "url": "https://digitecme.com/services",
+          "method": "HEAD",
+          "status": 200,
+          "headers": {
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "cache-control": "no-cache, must-revalidate, max-age=0",
+            "cf-cache-status": "DYNAMIC",
+            "cf-ray": "a507d84fc8e2e866-FRA",
+            "connection": "close",
+            "content-encoding": "br",
+            "content-type": "text/html; charset=utf-8",
+            "date": "Mon, 26 Oct 2026 07:46:03 GMT",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "referrer-policy": "strict-origin-when-cross-origin",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=HKyj5cAaElLLcGfL1h1eRiJRi2JsipHVZuY0SuUOvhmnm7JLQlnGqvrCvmIE3bVPlfTNEMpjiZ6K9mSEojwwQGLxvVmZD0jtyArwztDNKC0ZqJYCvKSfV0ASbnP9Lf5b\"}]}",
+            "server": "cloudflare",
+            "speculation-rules": "\"/cdn-cgi/speculation\"",
+            "strict-transport-security": "max-age=31536000; includeSubDomains",
+            "x-content-type-options": "nosniff",
+            "x-deployment-id": "psr2.455fbd60-7be3-4d3f-b5a2-4af11984e472.1793605562.QEjIZO8CJ8sSdkixN1EAPG1ukWIzujCzVPe4MPctMr0"
+          }
+        }
+      ]
+    },
+    {
+      "key": "sitemap-page",
+      "path": "/sitemap",
+      "method": "GET",
+      "chain": [
+        {
+          "at": "2026-10-26T07:46:01.068Z",
+          "url": "https://digitecme.com/sitemap",
+          "method": "GET",
+          "status": 200,
+          "headers": {
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "cache-control": "no-cache, must-revalidate, max-age=0",
+            "cf-cache-status": "DYNAMIC",
+            "cf-ray": "a507d85aafa890e4-HKG",
+            "connection": "keep-alive",
+            "content-encoding": "br",
+            "content-type": "text/html; charset=utf-8",
+            "date": "Mon, 26 Oct 2026 07:46:05 GMT",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "referrer-policy": "strict-origin-when-cross-origin",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=rNN%2BIc1Wj2ecahpcrmSCNwoc1rhiYilYC0pbThrY%2F%2BvPQ4gKCTW0XVx4P7I8oELidxiQ1j03Ts60Rr4%2BT2vUJJ84ylLQyRE9bQ%2F%2FQSoxo3vnuuCokmFyN%2BvlNEdnQVrU\"}]}",
+            "server": "cloudflare",
+            "speculation-rules": "\"/cdn-cgi/speculation\"",
+            "strict-transport-security": "max-age=31536000; includeSubDomains",
+            "transfer-encoding": "chunked",
+            "vary": "accept-encoding",
+            "x-content-type-options": "nosniff",
+            "x-deployment-id": "psr2.455fbd60-7be3-4d3f-b5a2-4af11984e472.1793605564.GcqTyjMP5fQr5G7bK7tdqkCz0IDxnfBRj7MYqN6WxEU"
+          },
+          "bodySha256": "a8f481b80e2ef203bfa6bd315397b897608a54b41395cb79457d9dea1c575c44",
+          "htmlFile": "html/sitemap-page-hop0.html"
+        }
+      ]
+    },
+    {
+      "key": "sitemap-page",
+      "path": "/sitemap",
+      "method": "HEAD",
+      "chain": [
+        {
+          "at": "2026-10-26T07:46:01.298Z",
+          "url": "https://digitecme.com/sitemap",
+          "method": "HEAD",
+          "status": 200,
+          "headers": {
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "cache-control": "no-cache, must-revalidate, max-age=0",
+            "cf-cache-status": "DYNAMIC",
+            "cf-ray": "a507d85c6f914b09-HKG",
+            "connection": "close",
+            "content-encoding": "br",
+            "content-type": "text/html; charset=utf-8",
+            "date": "Mon, 26 Oct 2026 07:46:05 GMT",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "referrer-policy": "strict-origin-when-cross-origin",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=kZlcGVPkPRJU4ScIpMyYIEPNTwjDVBG1wFjKuR20Jz9UNoZ7d8LW5It08h%2BhExFHMuLKNyictQDHFgk7GMFlSTALttXTqvCiRpgVsWG7n%2BlImwvatufnVhqiaVrlN2H5\"}]}",
+            "server": "cloudflare",
+            "speculation-rules": "\"/cdn-cgi/speculation\"",
+            "strict-transport-security": "max-age=31536000; includeSubDomains",
+            "x-content-type-options": "nosniff",
+            "x-deployment-id": "psr2.455fbd60-7be3-4d3f-b5a2-4af11984e472.1793605564.GcqTyjMP5fQr5G7bK7tdqkCz0IDxnfBRj7MYqN6WxEU"
+          }
+        }
+      ]
+    }
+  ],
+  "infrastructure": [
+    {
+      "at": "2026-10-26T07:46:03.149Z",
+      "url": "https://digitecme.com/robots.txt",
+      "status": 200,
+      "headers": {
+        "alt-svc": "h3=\":443\"; ma=86400",
+        "cf-cache-status": "BYPASS",
+        "cf-ray": "a507d86629540088-CDG",
+        "connection": "keep-alive",
+        "content-encoding": "gzip",
+        "content-type": "text/plain; charset=utf-8",
+        "date": "Mon, 26 Oct 2026 07:46:06 GMT",
+        "etag": "W/\"14fc2802d14120128b4b3e1a7938870b\"",
+        "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "referrer-policy": "strict-origin-when-cross-origin",
+        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=bvxUWqDGuKJid3UZqIxYDi3tgrQCKdQTajg%2FjaWiMLaKfxiCIDFwMGJ1B8m2MSMO%2F0%2FZmsqrVgSgFMM6JQr5qD4wqzOtHl%2BvVLWWZGCtt6ye8krXOM6iPjIEXR9y4rbV\"}]}",
+        "server": "cloudflare",
+        "speculation-rules": "\"/cdn-cgi/speculation\"",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "transfer-encoding": "chunked",
+        "vary": "accept-encoding",
+        "x-content-type-options": "nosniff",
+        "x-deployment-id": "psr2.455fbd60-7be3-4d3f-b5a2-4af11984e472.1793605566.SMKMoe0RW8a-qOG-ypN7Z3OpcXKY412Y2kyp9_fp8Po"
+      },
+      "file": "robots.txt",
+      "bodySha256": "e3c8657fde29aa5504479e3b941052f85278b72811ebd9429bf94fb80eba8b61"
+    },
+    {
+      "at": "2026-10-26T07:46:03.372Z",
+      "url": "https://digitecme.com/sitemap.xml",
+      "status": 200,
+      "headers": {
+        "alt-svc": "h3=\":443\"; ma=86400",
+        "cf-cache-status": "DYNAMIC",
+        "cf-ray": "a507d8679a880088-CDG",
+        "connection": "keep-alive",
+        "content-encoding": "gzip",
+        "content-type": "application/xml",
+        "date": "Mon, 26 Oct 2026 07:46:06 GMT",
+        "etag": "W/\"f089bc7c8ba44ee684f9823a6c75aad5\"",
+        "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "referrer-policy": "strict-origin-when-cross-origin",
+        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=6s9krUR8%2FloY8L%2BgXTD7ffCSJD0EHv1a2%2F4H65%2FwQudSm9SfFQGinQmlgQuoyduVE8g4G%2FbU9HmowS3I1RanHxps8Pia3sT11UveGaKeWAKXDBvAkdh%2FyjbmpNcjgSaK\"}]}",
+        "server": "cloudflare",
+        "speculation-rules": "\"/cdn-cgi/speculation\"",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "transfer-encoding": "chunked",
+        "vary": "accept-encoding",
+        "x-content-type-options": "nosniff",
+        "x-deployment-id": "psr2.455fbd60-7be3-4d3f-b5a2-4af11984e472.1793605566.SMKMoe0RW8a-qOG-ypN7Z3OpcXKY412Y2kyp9_fp8Po"
+      },
+      "file": "sitemap.xml",
+      "bodySha256": "294c4917d6a19ff8d5fb3575d780debe465643520031850802355d1b54ad42cf"
+    }
+  ]
+}

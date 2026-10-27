@@ -1,0 +1,472 @@
+- banner:
+  - button:
+  - link:
+    - /url: ./search-console?resource_id=sc-domain%3Adigitecme.com
+  - search:
+    - button:
+  - button:
+    - generic: help_outline
+  - tooltip: Help
+  - button:
+    - generic: manage_accounts
+  - tooltip: User settings
+  - button:
+    - generic: notifications
+  - tooltip: Messages
+  - generic: "38"
+  - button:
+  - button:
+- navigation:
+  - heading [level=1]: Performance
+- button:
+  - generic: 
+  - generic: EXPORT
+- radiogroup:
+  - radio:
+    - generic: 24 hours
+  - radio:
+    - generic: 7 days
+  - radio [checked]:
+    - generic: 28 days
+  - radio:
+    - generic: 3 months
+- button:
+  - generic: More
+  - generic: arrow_drop_down
+- list:
+  - button:
+    - generic: "Search type: Web"
+    - generic: arrow_drop_down
+  - tooltip: "Search type: Web"
+  - button:
+    - generic: "Query: mercedes oil change dubai"
+  - tooltip: "Query: mercedes oil change dubai"
+  - button:
+    - generic: close
+  - button:
+    - generic: "Page: https://digitecme.com/services/mercedes-oil-change-dubai/"
+  - tooltip: "Page: https://digitecme.com/services/mercedes-oil-change-dubai/"
+  - button:
+    - generic: close
+  - button:
+    - generic: "Country: United Arab Emirates"
+  - tooltip: "Country: United Arab Emirates"
+  - button:
+    - generic: close
+  - button:
+    - generic: add
+    - generic: Add filter
+  - tooltip: Add filter
+  - button:
+    - generic: filter_list_spark
+  - tooltip: Customise your performance report using AI
+  - button:
+    - generic: Reset filters
+  - tooltip: Reset filters
+- generic: "Last update: 5.5 hours ago"
+- main:
+  - button:
+    - generic: 
+    - generic: Total clicks
+    - generic: "0"
+  - button:
+    - generic: 
+  - button:
+    - generic: 
+    - generic: Total impressions
+    - generic: "13"
+  - button:
+    - generic: 
+  - button:
+    - generic: 
+    - generic: Average CTR
+    - generic: 0%
+  - button:
+    - generic: 
+  - button:
+    - generic: 
+    - generic: Average position
+    - generic: "15.8"
+  - button:
+    - generic: 
+  - button:
+    - generic: Daily
+  - application:
+    - generic: Chart, containing counts of Total clicks, Total impressions, Average CTR and Average position from 21 September 2026 to 18 October 2026
+  - generic: Generative AI report
+  - generic: chevron_forward
+  - link:
+    - /url: ./search-console/performance/search-analytics/ai?resource_id=sc-domain%3Adigitecme.com
+  - generic: 
+  - tablist:
+    - tab:
+      - generic: Queries
+    - tab:
+      - generic: Pages
+    - tab:
+      - generic: Countries
+    - tab:
+      - generic: Devices
+    - tab:
+      - generic: Search appearance
+    - tab [selected]:
+      - generic: Days
+  - tabpanel:
+    - button:
+      - generic: 
+    - table:
+      - rowgroup:
+        - row:
+          - columnheader:
+            - generic: Day
+            - button:
+          - columnheader:
+            - button:
+            - generic: Clicks
+          - columnheader:
+            - button:
+            - generic: Impressions
+          - columnheader:
+            - button:
+            - generic: CTR
+          - columnheader:
+            - button:
+            - generic: Position
+      - rowgroup:
+        - row:
+          - cell:
+            - generic: 18 Oct 2026
+          - cell:
+            - generic: "0"
+          - cell:
+            - generic: "1"
+          - cell:
+            - generic: 0%
+          - cell:
+            - generic: "11.0"
+        - row:
+          - cell:
+            - generic: 17 Oct 2026
+          - cell:
+            - generic: "0"
+          - cell:
+            - generic: "1"
+          - cell:
+            - generic: 0%
+          - cell:
+            - generic: "10.0"
+        - row:
+          - cell:
+            - generic: 16 Oct 2026
+          - cell:
+            - generic: "0"
+          - cell:
+            - generic: "2"
+          - cell:
+            - generic: 0%
+          - cell:
+            - generic: "8.0"
+        - row:
+          - cell:
+            - generic: 15 Oct 2026
+          - cell:
+            - generic: "0"
+          - cell:
+            - generic: "0"
+          - cell:
+            - generic: —
+          - cell:
+            - generic: —
+        - row:
+          - cell:
+            - generic: 14 Oct 2026
+          - cell:
+            - generic: "0"
+          - cell:
+            - generic: "0"
+          - cell:
+            - generic: —
+          - cell:
+            - generic: —
+        - row:
+          - cell:
+            - generic: 13 Oct 2026
+          - cell:
+            - generic: "0"
+          - cell:
+            - generic: "0"
+          - cell:
+            - generic: —
+          - cell:
+            - generic: —
+        - row:
+          - cell:
+            - generic: 12 Oct 2026
+          - cell:
+            - generic: "0"
+          - cell:
+            - generic: "1"
+          - cell:
+            - generic: 0%
+          - cell:
+            - generic: "20.0"
+        - row:
+          - cell:
+            - generic: 11 Oct 2026
+          - cell:
+            - generic: "0"
+          - cell:
+            - generic: "0"
+          - cell:
+            - generic: —
+          - cell:
+            - generic: —
+        - row:
+          - cell:
+            - generic: 10 Oct 2026
+          - cell:
+            - generic: "0"
+          - cell:
+            - generic: "0"
+          - cell:
+            - generic: —
+          - cell:
+            - generic: —
+        - row:
+          - cell:
+            - generic: 9 Oct 2026
+          - cell:
+            - generic: "0"
+          - cell:
+            - generic: "0"
+          - cell:
+            - generic: —
+          - cell:
+            - generic: —
+        - row:
+          - cell:
+            - generic: 8 Oct 2026
+          - cell:
+            - generic: "0"
+          - cell:
+            - generic: "0"
+          - cell:
+            - generic: —
+          - cell:
+            - generic: —
+        - row:
+          - cell:
+            - generic: 7 Oct 2026
+          - cell:
+            - generic: "0"
+          - cell:
+            - generic: "1"
+          - cell:
+            - generic: 0%
+          - cell:
+            - generic: "26.0"
+        - row:
+          - cell:
+            - generic: 6 Oct 2026
+          - cell:
+            - generic: "0"
+          - cell:
+            - generic: "0"
+          - cell:
+            - generic: —
+          - cell:
+            - generic: —
+        - row:
+          - cell:
+            - generic: 5 Oct 2026
+          - cell:
+            - generic: "0"
+          - cell:
+            - generic: "0"
+          - cell:
+            - generic: —
+          - cell:
+            - generic: —
+        - row:
+          - cell:
+            - generic: 4 Oct 2026
+          - cell:
+            - generic: "0"
+          - cell:
+            - generic: "1"
+          - cell:
+            - generic: 0%
+          - cell:
+            - generic: "10.0"
+        - row:
+          - cell:
+            - generic: 3 Oct 2026
+          - cell:
+            - generic: "0"
+          - cell:
+            - generic: "0"
+          - cell:
+            - generic: —
+          - cell:
+            - generic: —
+        - row:
+          - cell:
+            - generic: 2 Oct 2026
+          - cell:
+            - generic: "0"
+          - cell:
+            - generic: "1"
+          - cell:
+            - generic: 0%
+          - cell:
+            - generic: "12.0"
+        - row:
+          - cell:
+            - generic: 1 Oct 2026
+          - cell:
+            - generic: "0"
+          - cell:
+            - generic: "0"
+          - cell:
+            - generic: —
+          - cell:
+            - generic: —
+        - row:
+          - cell:
+            - generic: 30 Sept 2026
+          - cell:
+            - generic: "0"
+          - cell:
+            - generic: "2"
+          - cell:
+            - generic: 0%
+          - cell:
+            - generic: "10.0"
+        - row:
+          - cell:
+            - generic: 29 Sept 2026
+          - cell:
+            - generic: "0"
+          - cell:
+            - generic: "0"
+          - cell:
+            - generic: —
+          - cell:
+            - generic: —
+        - row:
+          - cell:
+            - generic: 28 Sept 2026
+          - cell:
+            - generic: "0"
+          - cell:
+            - generic: "0"
+          - cell:
+            - generic: —
+          - cell:
+            - generic: —
+        - row:
+          - cell:
+            - generic: 27 Sept 2026
+          - cell:
+            - generic: "0"
+          - cell:
+            - generic: "0"
+          - cell:
+            - generic: —
+          - cell:
+            - generic: —
+        - row:
+          - cell:
+            - generic: 26 Sept 2026
+          - cell:
+            - generic: "0"
+          - cell:
+            - generic: "0"
+          - cell:
+            - generic: —
+          - cell:
+            - generic: —
+        - row:
+          - cell:
+            - generic: 25 Sept 2026
+          - cell:
+            - generic: "0"
+          - cell:
+            - generic: "1"
+          - cell:
+            - generic: 0%
+          - cell:
+            - generic: "31.0"
+        - row:
+          - cell:
+            - generic: 24 Sept 2026
+          - cell:
+            - generic: "0"
+          - cell:
+            - generic: "1"
+          - cell:
+            - generic: 0%
+          - cell:
+            - generic: "16.0"
+        - row:
+          - cell:
+            - generic: 23 Sept 2026
+          - cell:
+            - generic: "0"
+          - cell:
+            - generic: "1"
+          - cell:
+            - generic: 0%
+          - cell:
+            - generic: "34.0"
+        - row:
+          - cell:
+            - generic: 22 Sept 2026
+          - cell:
+            - generic: "0"
+          - cell:
+            - generic: "0"
+          - cell:
+            - generic: —
+          - cell:
+            - generic: —
+        - row:
+          - cell:
+            - generic: 21 Sept 2026
+          - cell:
+            - generic: "0"
+          - cell:
+            - generic: "0"
+          - cell:
+            - generic: —
+          - cell:
+            - generic: —
+    - generic: "Rows per page:"
+    - listbox:
+      - text: 5 10 25
+      - option [selected]: "50"
+      - text: 100 250 500
+    - generic: 1-28 of 28
+    - button [disabled]:
+    - tooltip: Previous page
+    - button [disabled]:
+    - tooltip: Next page
+- dialog "Query":
+  - heading "Query" [level=2]:
+    - generic: Query
+  - tablist:
+    - tab "Filter" [selected]:
+      - generic: Filter
+    - tab "Compare":
+      - generic: Compare
+  - tabpanel "Filter":
+    - combobox "String matching options drop-down menu":
+      - generic: Exact query
+    - generic: Keyword
+    - generic: Keyword
+    - generic: Keyword
+    - textbox "Keyword" [active]: mercedes oil change dubai
+  - button "Cancel":
+    - generic: Cancel
+  - button "Apply":
+    - generic: Apply

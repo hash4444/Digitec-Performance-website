@@ -1,0 +1,15 @@
+{
+  "result": "PASS",
+  "targetedHubs": [
+    "bmw-service-dubai",
+    "rolls-royce-service-dubai",
+    "lamborghini-service-dubai",
+    "volkswagen-service-dubai"
+  ],
+  "targetBrandIdentity": "unchanged",
+  "otherBrandBehavior": "unchanged for Mercedes-Benz, Audi, Ferrari and unrelated sentinel",
+  "globalArabicServiceCards": "unchanged",
+  "globalArabicServiceNames": "unchanged",
+  "lint": "node node_modules/eslint/bin/eslint.js src/i18n/ar-brands.ts: PASS",
+  "sourceFile": "src/i18n/ar-brands.ts"
+}

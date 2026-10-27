@@ -1,0 +1,11 @@
+import fs from 'node:fs/promises';
+const source='outputs/diagnostics-ac-2026-10-19/audit/audit-owners.mjs';
+let code=await fs.readFile(source,'utf8');
+code=code.replace("outputs/diagnostics-ac-2026-10-19/audit", "outputs/ecu-electronics-2026-10-19/audit");
+code=code.replace("outputs/automotive-release-2026-10-19/candidate.local/dist", "outputs/diagnostics-ac-2026-10-19/candidate.local/dist");
+code=code.replace("const targetRoutes=all.filter(","const targetRoutes=all.filter(");
+const start=code.indexOf('const targetRoutes=');
+const end=code.indexOf('\nconst records=[];',start);
+code=code.slice(0,start)+String.raw`const targetRoutes=all.filter(r=>/^\/(ar\/)?services\/(car-diagnostics-dubai|auto-electrical-repair-dubai|mercedes-(diagnostics|electrical-repair|transmission-repair)-dubai|head-unit-repair-dubai|cadillac-cue-screen-repair-dubai|mercedes-audio-upgrade-dubai)$/.test(r.route)||/^\/(ar\/)?brands\/[^/]+\/(engine-diagnostics|electrical-repair)$/.test(r.route)||/^\/(ar\/)?tuning$/.test(r.route));`+code.slice(end);
+code=code.replace("Read-only prior combined release candidate dist; source HEAD acef342 is reviewed overlay over baseline6180f45. Current sprint changes not included.","Read-only completed diagnostics/AC candidate dist; base acef342 plus all six completed local diagnostics/AC files. This is the ECU sprint immutable content baseline, not a claim of current live publication.");
+await fs.writeFile('outputs/ecu-electronics-2026-10-19/audit/audit-owners.mjs',code);

@@ -1,0 +1,58 @@
+{
+  "id": "query-pages__7d__ARE__DESKTOP__mercedes-maintenance-dubai",
+  "capturedAt": "2026-10-26T08:03:48.467Z",
+  "property": "sc-domain:digitecme.com",
+  "searchType": "Web (Text-based verified separately)",
+  "expected": {
+    "kind": "query-pages",
+    "query": "mercedes maintenance dubai",
+    "country": "ARE",
+    "device": "DESKTOP",
+    "window": {
+      "id": "7d",
+      "start": "20261018",
+      "end": "20261024",
+      "startLabel": "18 October 2026",
+      "endLabel": "24 October 2026"
+    },
+    "breakdown": "page"
+  },
+  "navigationUrl": "https://search.google.com/search-console/performance/search-analytics?resource_id=sc-domain%3Adigitecme.com&metrics=CLICKS%2CIMPRESSIONS%2CCTR%2CPOSITION&start_date=20261018&end_date=20261024&query=!mercedes%20maintenance%20dubai&breakdown=page&country=are&device=DESKTOP",
+  "displayedFilterChecks": {
+    "query": true,
+    "country": true,
+    "device": true,
+    "page": true,
+    "date": false,
+    "breakdown": true
+  },
+  "loading": false,
+  "readinessReloads": 0,
+  "header": [
+    "Top pages",
+    "Clicks",
+    "Impressions",
+    "CTR",
+    "Position"
+  ],
+  "rows": [
+    [
+      "https://digitecme.com/brands/mercedes-benz-service-dubai",
+      "0",
+      "11",
+      "0%",
+      "17.0"
+    ]
+  ],
+  "pagination": "1-1 of 1",
+  "completeVisibleTable": true,
+  "availability": "capture_not_validated",
+  "cards": {
+    "clicks": "0",
+    "impressions": "11",
+    "ctr": "0%",
+    "position": "17"
+  },
+  "axFile": "raw/query-pages__7d__ARE__DESKTOP__mercedes-maintenance-dubai-ax.txt",
+  "textFile": "raw/query-pages__7d__ARE__DESKTOP__mercedes-maintenance-dubai-visible.txt"
+}

@@ -1,0 +1,16 @@
+{
+  "changed": [
+    {
+      "file": "src/pages/BrandServicePage.tsx",
+      "before": "f9934e2c76437935bd171704888355fdf5473d20859d4fc2ea9c11fd44703557",
+      "after": "033cbc5a228c36e83877e1184161a337a4fa2b12ed1db8272c2509eee44960e4"
+    }
+  ],
+  "added": [
+    "src/components/RepairEnquiryPanel.tsx",
+    "src/data/repairServiceArabic.ts",
+    "src/data/repairServiceContent.ts"
+  ],
+  "evidenceDirectory": "outputs/repair-service-2026-10-19",
+  "existingUncommittedChangesPreserved": true
+}

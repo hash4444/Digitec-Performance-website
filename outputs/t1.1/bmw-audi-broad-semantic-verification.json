@@ -1,0 +1,2916 @@
+{
+  "auditedAt": "2026-10-05T07:40:50.728Z",
+  "renderedRoutesScanned": 1256,
+  "brandOwnedRoutes": 91,
+  "matchedContexts": 1190,
+  "uniqueSentences": 165,
+  "reviewedUniqueSentences": 165,
+  "unknownSentences": 0,
+  "stalePositiveOrAmbiguousSentencesRemaining": 0,
+  "positiveBMWTuningClaims": 0,
+  "positiveAudiTuningClaims": 0,
+  "passed": true,
+  "method": "Manual reading of every one of 172 pre-correction unique actual rendered sentences, followed by exact-text reviewed allowlist. Unknown final sentences must be reviewed; they cannot inherit a harmless classification.",
+  "reviewed": [
+    {
+      "text": "مركز دبي المتخصص في السيارات الفاخرة وتطوير الأداء، بخبرة تجمع بين الهندسة الدقيقة والخدمة الاحترافية.",
+      "occurrences": 38,
+      "routes": [
+        "/ar/best-audi-workshop-dubai",
+        "/ar/best-bmw-workshop-dubai",
+        "/ar/blog/audi-maintenance-guide-dubai",
+        "/ar/blog/audi-q7-service-dubai-guide",
+        "/ar/blog/audi-rs-service-dubai-guide",
+        "/ar/blog/bmw-m-service-dubai-guide",
+        "/ar/blog/bmw-maintenance-guide-dubai",
+        "/ar/blog/bmw-x5-service-dubai-guide",
+        "/ar/brands/audi-service-dubai/ac-repair",
+        "/ar/brands/audi-service-dubai/battery-replacement",
+        "/ar/brands/audi-service-dubai/body-repair",
+        "/ar/brands/audi-service-dubai/brake-repair",
+        "/ar/brands/audi-service-dubai/electrical-repair",
+        "/ar/brands/audi-service-dubai/engine-diagnostics",
+        "/ar/brands/audi-service-dubai/exhaust-repair",
+        "/ar/brands/audi-service-dubai/fuel-system-repair",
+        "/ar/brands/audi-service-dubai",
+        "/ar/brands/audi-service-dubai/mechanical-repair",
+        "/ar/brands/audi-service-dubai/oil-change",
+        "/ar/brands/audi-service-dubai/steering-repair",
+        "/ar/brands/audi-service-dubai/suspension-repair",
+        "/ar/brands/audi-service-dubai/tire-repair",
+        "/ar/brands/audi-service-dubai/transmission-repair",
+        "/ar/brands/bmw-service-dubai/ac-repair",
+        "/ar/brands/bmw-service-dubai/battery-replacement",
+        "/ar/brands/bmw-service-dubai/body-repair",
+        "/ar/brands/bmw-service-dubai/brake-repair",
+        "/ar/brands/bmw-service-dubai/electrical-repair",
+        "/ar/brands/bmw-service-dubai/engine-diagnostics",
+        "/ar/brands/bmw-service-dubai/exhaust-repair",
+        "/ar/brands/bmw-service-dubai/fuel-system-repair",
+        "/ar/brands/bmw-service-dubai",
+        "/ar/brands/bmw-service-dubai/mechanical-repair",
+        "/ar/brands/bmw-service-dubai/oil-change",
+        "/ar/brands/bmw-service-dubai/steering-repair",
+        "/ar/brands/bmw-service-dubai/suspension-repair",
+        "/ar/brands/bmw-service-dubai/tire-repair",
+        "/ar/brands/bmw-service-dubai/transmission-repair"
+      ],
+      "fields": [
+        "p"
+      ],
+      "classification": "SHARED CORPORATE FOOTER / NAVIGATION / ORGANIZATION SCHEMA",
+      "reason": "This exact shared company name, navigation link, corporate footer or Organization offer is company-wide and does not identify BMW/Audi as a tuning vehicle. Brand-specific page copy and its service scope remain repair/inspection.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "تطوير الأداء",
+      "occurrences": 38,
+      "routes": [
+        "/ar/best-audi-workshop-dubai",
+        "/ar/best-bmw-workshop-dubai",
+        "/ar/blog/audi-maintenance-guide-dubai",
+        "/ar/blog/audi-q7-service-dubai-guide",
+        "/ar/blog/audi-rs-service-dubai-guide",
+        "/ar/blog/bmw-m-service-dubai-guide",
+        "/ar/blog/bmw-maintenance-guide-dubai",
+        "/ar/blog/bmw-x5-service-dubai-guide",
+        "/ar/brands/audi-service-dubai/ac-repair",
+        "/ar/brands/audi-service-dubai/battery-replacement",
+        "/ar/brands/audi-service-dubai/body-repair",
+        "/ar/brands/audi-service-dubai/brake-repair",
+        "/ar/brands/audi-service-dubai/electrical-repair",
+        "/ar/brands/audi-service-dubai/engine-diagnostics",
+        "/ar/brands/audi-service-dubai/exhaust-repair",
+        "/ar/brands/audi-service-dubai/fuel-system-repair",
+        "/ar/brands/audi-service-dubai",
+        "/ar/brands/audi-service-dubai/mechanical-repair",
+        "/ar/brands/audi-service-dubai/oil-change",
+        "/ar/brands/audi-service-dubai/steering-repair",
+        "/ar/brands/audi-service-dubai/suspension-repair",
+        "/ar/brands/audi-service-dubai/tire-repair",
+        "/ar/brands/audi-service-dubai/transmission-repair",
+        "/ar/brands/bmw-service-dubai/ac-repair",
+        "/ar/brands/bmw-service-dubai/battery-replacement",
+        "/ar/brands/bmw-service-dubai/body-repair",
+        "/ar/brands/bmw-service-dubai/brake-repair",
+        "/ar/brands/bmw-service-dubai/electrical-repair",
+        "/ar/brands/bmw-service-dubai/engine-diagnostics",
+        "/ar/brands/bmw-service-dubai/exhaust-repair",
+        "/ar/brands/bmw-service-dubai/fuel-system-repair",
+        "/ar/brands/bmw-service-dubai",
+        "/ar/brands/bmw-service-dubai/mechanical-repair",
+        "/ar/brands/bmw-service-dubai/oil-change",
+        "/ar/brands/bmw-service-dubai/steering-repair",
+        "/ar/brands/bmw-service-dubai/suspension-repair",
+        "/ar/brands/bmw-service-dubai/tire-repair",
+        "/ar/brands/bmw-service-dubai/transmission-repair"
+      ],
+      "fields": [
+        "a"
+      ],
+      "classification": "SHARED CORPORATE FOOTER / NAVIGATION / ORGANIZATION SCHEMA",
+      "reason": "This exact shared company name, navigation link, corporate footer or Organization offer is company-wide and does not identify BMW/Audi as a tuning vehicle. Brand-specific page copy and its service scope remain repair/inspection.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "التشخيص والبرمجة",
+      "occurrences": 38,
+      "routes": [
+        "/ar/best-audi-workshop-dubai",
+        "/ar/best-bmw-workshop-dubai",
+        "/ar/blog/audi-maintenance-guide-dubai",
+        "/ar/blog/audi-q7-service-dubai-guide",
+        "/ar/blog/audi-rs-service-dubai-guide",
+        "/ar/blog/bmw-m-service-dubai-guide",
+        "/ar/blog/bmw-maintenance-guide-dubai",
+        "/ar/blog/bmw-x5-service-dubai-guide",
+        "/ar/brands/audi-service-dubai/ac-repair",
+        "/ar/brands/audi-service-dubai/battery-replacement",
+        "/ar/brands/audi-service-dubai/body-repair",
+        "/ar/brands/audi-service-dubai/brake-repair",
+        "/ar/brands/audi-service-dubai/electrical-repair",
+        "/ar/brands/audi-service-dubai/engine-diagnostics",
+        "/ar/brands/audi-service-dubai/exhaust-repair",
+        "/ar/brands/audi-service-dubai/fuel-system-repair",
+        "/ar/brands/audi-service-dubai",
+        "/ar/brands/audi-service-dubai/mechanical-repair",
+        "/ar/brands/audi-service-dubai/oil-change",
+        "/ar/brands/audi-service-dubai/steering-repair",
+        "/ar/brands/audi-service-dubai/suspension-repair",
+        "/ar/brands/audi-service-dubai/tire-repair",
+        "/ar/brands/audi-service-dubai/transmission-repair",
+        "/ar/brands/bmw-service-dubai/ac-repair",
+        "/ar/brands/bmw-service-dubai/battery-replacement",
+        "/ar/brands/bmw-service-dubai/body-repair",
+        "/ar/brands/bmw-service-dubai/brake-repair",
+        "/ar/brands/bmw-service-dubai/electrical-repair",
+        "/ar/brands/bmw-service-dubai/engine-diagnostics",
+        "/ar/brands/bmw-service-dubai/exhaust-repair",
+        "/ar/brands/bmw-service-dubai/fuel-system-repair",
+        "/ar/brands/bmw-service-dubai",
+        "/ar/brands/bmw-service-dubai/mechanical-repair",
+        "/ar/brands/bmw-service-dubai/oil-change",
+        "/ar/brands/bmw-service-dubai/steering-repair",
+        "/ar/brands/bmw-service-dubai/suspension-repair",
+        "/ar/brands/bmw-service-dubai/tire-repair",
+        "/ar/brands/bmw-service-dubai/transmission-repair"
+      ],
+      "fields": [
+        "a"
+      ],
+      "classification": "SHARED CORPORATE FOOTER / NAVIGATION / ORGANIZATION SCHEMA",
+      "reason": "This exact shared company name, navigation link, corporate footer or Organization offer is company-wide and does not identify BMW/Audi as a tuning vehicle. Brand-specific page copy and its service scope remain repair/inspection.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "Digi-Tec Performance Center",
+      "occurrences": 364,
+      "routes": [
+        "/ar/best-audi-workshop-dubai",
+        "/ar/best-bmw-workshop-dubai",
+        "/ar/blog/audi-maintenance-guide-dubai",
+        "/ar/blog/audi-q7-service-dubai-guide",
+        "/ar/blog/audi-rs-service-dubai-guide",
+        "/ar/blog/bmw-m-service-dubai-guide",
+        "/ar/blog/bmw-maintenance-guide-dubai",
+        "/ar/blog/bmw-x5-service-dubai-guide",
+        "/ar/brands/audi-service-dubai/ac-repair",
+        "/ar/brands/audi-service-dubai/battery-replacement",
+        "/ar/brands/audi-service-dubai/body-repair",
+        "/ar/brands/audi-service-dubai/brake-repair",
+        "/ar/brands/audi-service-dubai/electrical-repair",
+        "/ar/brands/audi-service-dubai/engine-diagnostics",
+        "/ar/brands/audi-service-dubai/exhaust-repair",
+        "/ar/brands/audi-service-dubai/fuel-system-repair",
+        "/ar/brands/audi-service-dubai",
+        "/ar/brands/audi-service-dubai/mechanical-repair",
+        "/ar/brands/audi-service-dubai/oil-change",
+        "/ar/brands/audi-service-dubai/steering-repair",
+        "/ar/brands/audi-service-dubai/suspension-repair",
+        "/ar/brands/audi-service-dubai/tire-repair",
+        "/ar/brands/audi-service-dubai/transmission-repair",
+        "/ar/brands/bmw-service-dubai/ac-repair",
+        "/ar/brands/bmw-service-dubai/battery-replacement",
+        "/ar/brands/bmw-service-dubai/body-repair",
+        "/ar/brands/bmw-service-dubai/brake-repair",
+        "/ar/brands/bmw-service-dubai/electrical-repair",
+        "/ar/brands/bmw-service-dubai/engine-diagnostics",
+        "/ar/brands/bmw-service-dubai/exhaust-repair",
+        "/ar/brands/bmw-service-dubai/fuel-system-repair",
+        "/ar/brands/bmw-service-dubai",
+        "/ar/brands/bmw-service-dubai/mechanical-repair",
+        "/ar/brands/bmw-service-dubai/oil-change",
+        "/ar/brands/bmw-service-dubai/steering-repair",
+        "/ar/brands/bmw-service-dubai/suspension-repair",
+        "/ar/brands/bmw-service-dubai/tire-repair",
+        "/ar/brands/bmw-service-dubai/transmission-repair",
+        "/best-audi-workshop-dubai",
+        "/best-bmw-workshop-dubai",
+        "/blog/audi-maintenance-guide-dubai",
+        "/blog/audi-q7-service-dubai-guide",
+        "/blog/audi-rs-service-dubai-guide",
+        "/blog/bmw-m-service-dubai-guide",
+        "/blog/bmw-maintenance-guide-dubai",
+        "/blog/bmw-x5-service-dubai-guide",
+        "/brands/audi-service-dubai/a4",
+        "/brands/audi-service-dubai/a6",
+        "/brands/audi-service-dubai/ac-repair",
+        "/brands/audi-service-dubai/battery-replacement",
+        "/brands/audi-service-dubai/body-repair",
+        "/brands/audi-service-dubai/brake-repair",
+        "/brands/audi-service-dubai/electrical-repair",
+        "/brands/audi-service-dubai/engine-diagnostics",
+        "/brands/audi-service-dubai/exhaust-repair",
+        "/brands/audi-service-dubai/fuel-system-repair",
+        "/brands/audi-service-dubai",
+        "/brands/audi-service-dubai/mechanical-repair",
+        "/brands/audi-service-dubai/oil-change",
+        "/brands/audi-service-dubai/q5",
+        "/brands/audi-service-dubai/q7",
+        "/brands/audi-service-dubai/q8",
+        "/brands/audi-service-dubai/r8",
+        "/brands/audi-service-dubai/rs3",
+        "/brands/audi-service-dubai/rs6",
+        "/brands/audi-service-dubai/steering-repair",
+        "/brands/audi-service-dubai/suspension-repair",
+        "/brands/audi-service-dubai/tire-repair",
+        "/brands/audi-service-dubai/transmission-repair",
+        "/brands/bmw-service-dubai/3-series",
+        "/brands/bmw-service-dubai/5-series",
+        "/brands/bmw-service-dubai/ac-repair",
+        "/brands/bmw-service-dubai/battery-replacement",
+        "/brands/bmw-service-dubai/body-repair",
+        "/brands/bmw-service-dubai/brake-repair",
+        "/brands/bmw-service-dubai/electrical-repair",
+        "/brands/bmw-service-dubai/engine-diagnostics",
+        "/brands/bmw-service-dubai/exhaust-repair",
+        "/brands/bmw-service-dubai/fuel-system-repair",
+        "/brands/bmw-service-dubai",
+        "/brands/bmw-service-dubai/m3",
+        "/brands/bmw-service-dubai/m4",
+        "/brands/bmw-service-dubai/m5",
+        "/brands/bmw-service-dubai/mechanical-repair",
+        "/brands/bmw-service-dubai/oil-change",
+        "/brands/bmw-service-dubai/steering-repair",
+        "/brands/bmw-service-dubai/suspension-repair",
+        "/brands/bmw-service-dubai/tire-repair",
+        "/brands/bmw-service-dubai/transmission-repair",
+        "/brands/bmw-service-dubai/x5",
+        "/brands/bmw-service-dubai/x6"
+      ],
+      "fields": [
+        "schema.@graph.0.name",
+        "schema.@graph.1.caption",
+        "schema.@graph.2.name",
+        "schema.@graph.3.name"
+      ],
+      "classification": "SHARED CORPORATE FOOTER / NAVIGATION / ORGANIZATION SCHEMA",
+      "reason": "This exact shared company name, navigation link, corporate footer or Organization offer is company-wide and does not identify BMW/Audi as a tuning vehicle. Brand-specific page copy and its service scope remain repair/inspection.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "https://digitecme.com/#offer-performance",
+      "occurrences": 91,
+      "routes": [
+        "/ar/best-audi-workshop-dubai",
+        "/ar/best-bmw-workshop-dubai",
+        "/ar/blog/audi-maintenance-guide-dubai",
+        "/ar/blog/audi-q7-service-dubai-guide",
+        "/ar/blog/audi-rs-service-dubai-guide",
+        "/ar/blog/bmw-m-service-dubai-guide",
+        "/ar/blog/bmw-maintenance-guide-dubai",
+        "/ar/blog/bmw-x5-service-dubai-guide",
+        "/ar/brands/audi-service-dubai/ac-repair",
+        "/ar/brands/audi-service-dubai/battery-replacement",
+        "/ar/brands/audi-service-dubai/body-repair",
+        "/ar/brands/audi-service-dubai/brake-repair",
+        "/ar/brands/audi-service-dubai/electrical-repair",
+        "/ar/brands/audi-service-dubai/engine-diagnostics",
+        "/ar/brands/audi-service-dubai/exhaust-repair",
+        "/ar/brands/audi-service-dubai/fuel-system-repair",
+        "/ar/brands/audi-service-dubai",
+        "/ar/brands/audi-service-dubai/mechanical-repair",
+        "/ar/brands/audi-service-dubai/oil-change",
+        "/ar/brands/audi-service-dubai/steering-repair",
+        "/ar/brands/audi-service-dubai/suspension-repair",
+        "/ar/brands/audi-service-dubai/tire-repair",
+        "/ar/brands/audi-service-dubai/transmission-repair",
+        "/ar/brands/bmw-service-dubai/ac-repair",
+        "/ar/brands/bmw-service-dubai/battery-replacement",
+        "/ar/brands/bmw-service-dubai/body-repair",
+        "/ar/brands/bmw-service-dubai/brake-repair",
+        "/ar/brands/bmw-service-dubai/electrical-repair",
+        "/ar/brands/bmw-service-dubai/engine-diagnostics",
+        "/ar/brands/bmw-service-dubai/exhaust-repair",
+        "/ar/brands/bmw-service-dubai/fuel-system-repair",
+        "/ar/brands/bmw-service-dubai",
+        "/ar/brands/bmw-service-dubai/mechanical-repair",
+        "/ar/brands/bmw-service-dubai/oil-change",
+        "/ar/brands/bmw-service-dubai/steering-repair",
+        "/ar/brands/bmw-service-dubai/suspension-repair",
+        "/ar/brands/bmw-service-dubai/tire-repair",
+        "/ar/brands/bmw-service-dubai/transmission-repair",
+        "/best-audi-workshop-dubai",
+        "/best-bmw-workshop-dubai",
+        "/blog/audi-maintenance-guide-dubai",
+        "/blog/audi-q7-service-dubai-guide",
+        "/blog/audi-rs-service-dubai-guide",
+        "/blog/bmw-m-service-dubai-guide",
+        "/blog/bmw-maintenance-guide-dubai",
+        "/blog/bmw-x5-service-dubai-guide",
+        "/brands/audi-service-dubai/a4",
+        "/brands/audi-service-dubai/a6",
+        "/brands/audi-service-dubai/ac-repair",
+        "/brands/audi-service-dubai/battery-replacement",
+        "/brands/audi-service-dubai/body-repair",
+        "/brands/audi-service-dubai/brake-repair",
+        "/brands/audi-service-dubai/electrical-repair",
+        "/brands/audi-service-dubai/engine-diagnostics",
+        "/brands/audi-service-dubai/exhaust-repair",
+        "/brands/audi-service-dubai/fuel-system-repair",
+        "/brands/audi-service-dubai",
+        "/brands/audi-service-dubai/mechanical-repair",
+        "/brands/audi-service-dubai/oil-change",
+        "/brands/audi-service-dubai/q5",
+        "/brands/audi-service-dubai/q7",
+        "/brands/audi-service-dubai/q8",
+        "/brands/audi-service-dubai/r8",
+        "/brands/audi-service-dubai/rs3",
+        "/brands/audi-service-dubai/rs6",
+        "/brands/audi-service-dubai/steering-repair",
+        "/brands/audi-service-dubai/suspension-repair",
+        "/brands/audi-service-dubai/tire-repair",
+        "/brands/audi-service-dubai/transmission-repair",
+        "/brands/bmw-service-dubai/3-series",
+        "/brands/bmw-service-dubai/5-series",
+        "/brands/bmw-service-dubai/ac-repair",
+        "/brands/bmw-service-dubai/battery-replacement",
+        "/brands/bmw-service-dubai/body-repair",
+        "/brands/bmw-service-dubai/brake-repair",
+        "/brands/bmw-service-dubai/electrical-repair",
+        "/brands/bmw-service-dubai/engine-diagnostics",
+        "/brands/bmw-service-dubai/exhaust-repair",
+        "/brands/bmw-service-dubai/fuel-system-repair",
+        "/brands/bmw-service-dubai",
+        "/brands/bmw-service-dubai/m3",
+        "/brands/bmw-service-dubai/m4",
+        "/brands/bmw-service-dubai/m5",
+        "/brands/bmw-service-dubai/mechanical-repair",
+        "/brands/bmw-service-dubai/oil-change",
+        "/brands/bmw-service-dubai/steering-repair",
+        "/brands/bmw-service-dubai/suspension-repair",
+        "/brands/bmw-service-dubai/tire-repair",
+        "/brands/bmw-service-dubai/transmission-repair",
+        "/brands/bmw-service-dubai/x5",
+        "/brands/bmw-service-dubai/x6"
+      ],
+      "fields": [
+        "schema.@graph.4.itemListElement.5.@id"
+      ],
+      "classification": "SHARED CORPORATE FOOTER / NAVIGATION / ORGANIZATION SCHEMA",
+      "reason": "This exact shared company name, navigation link, corporate footer or Organization offer is company-wide and does not identify BMW/Audi as a tuning vehicle. Brand-specific page copy and its service scope remain repair/inspection.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "https://digitecme.com/#service-performance",
+      "occurrences": 91,
+      "routes": [
+        "/ar/best-audi-workshop-dubai",
+        "/ar/best-bmw-workshop-dubai",
+        "/ar/blog/audi-maintenance-guide-dubai",
+        "/ar/blog/audi-q7-service-dubai-guide",
+        "/ar/blog/audi-rs-service-dubai-guide",
+        "/ar/blog/bmw-m-service-dubai-guide",
+        "/ar/blog/bmw-maintenance-guide-dubai",
+        "/ar/blog/bmw-x5-service-dubai-guide",
+        "/ar/brands/audi-service-dubai/ac-repair",
+        "/ar/brands/audi-service-dubai/battery-replacement",
+        "/ar/brands/audi-service-dubai/body-repair",
+        "/ar/brands/audi-service-dubai/brake-repair",
+        "/ar/brands/audi-service-dubai/electrical-repair",
+        "/ar/brands/audi-service-dubai/engine-diagnostics",
+        "/ar/brands/audi-service-dubai/exhaust-repair",
+        "/ar/brands/audi-service-dubai/fuel-system-repair",
+        "/ar/brands/audi-service-dubai",
+        "/ar/brands/audi-service-dubai/mechanical-repair",
+        "/ar/brands/audi-service-dubai/oil-change",
+        "/ar/brands/audi-service-dubai/steering-repair",
+        "/ar/brands/audi-service-dubai/suspension-repair",
+        "/ar/brands/audi-service-dubai/tire-repair",
+        "/ar/brands/audi-service-dubai/transmission-repair",
+        "/ar/brands/bmw-service-dubai/ac-repair",
+        "/ar/brands/bmw-service-dubai/battery-replacement",
+        "/ar/brands/bmw-service-dubai/body-repair",
+        "/ar/brands/bmw-service-dubai/brake-repair",
+        "/ar/brands/bmw-service-dubai/electrical-repair",
+        "/ar/brands/bmw-service-dubai/engine-diagnostics",
+        "/ar/brands/bmw-service-dubai/exhaust-repair",
+        "/ar/brands/bmw-service-dubai/fuel-system-repair",
+        "/ar/brands/bmw-service-dubai",
+        "/ar/brands/bmw-service-dubai/mechanical-repair",
+        "/ar/brands/bmw-service-dubai/oil-change",
+        "/ar/brands/bmw-service-dubai/steering-repair",
+        "/ar/brands/bmw-service-dubai/suspension-repair",
+        "/ar/brands/bmw-service-dubai/tire-repair",
+        "/ar/brands/bmw-service-dubai/transmission-repair",
+        "/best-audi-workshop-dubai",
+        "/best-bmw-workshop-dubai",
+        "/blog/audi-maintenance-guide-dubai",
+        "/blog/audi-q7-service-dubai-guide",
+        "/blog/audi-rs-service-dubai-guide",
+        "/blog/bmw-m-service-dubai-guide",
+        "/blog/bmw-maintenance-guide-dubai",
+        "/blog/bmw-x5-service-dubai-guide",
+        "/brands/audi-service-dubai/a4",
+        "/brands/audi-service-dubai/a6",
+        "/brands/audi-service-dubai/ac-repair",
+        "/brands/audi-service-dubai/battery-replacement",
+        "/brands/audi-service-dubai/body-repair",
+        "/brands/audi-service-dubai/brake-repair",
+        "/brands/audi-service-dubai/electrical-repair",
+        "/brands/audi-service-dubai/engine-diagnostics",
+        "/brands/audi-service-dubai/exhaust-repair",
+        "/brands/audi-service-dubai/fuel-system-repair",
+        "/brands/audi-service-dubai",
+        "/brands/audi-service-dubai/mechanical-repair",
+        "/brands/audi-service-dubai/oil-change",
+        "/brands/audi-service-dubai/q5",
+        "/brands/audi-service-dubai/q7",
+        "/brands/audi-service-dubai/q8",
+        "/brands/audi-service-dubai/r8",
+        "/brands/audi-service-dubai/rs3",
+        "/brands/audi-service-dubai/rs6",
+        "/brands/audi-service-dubai/steering-repair",
+        "/brands/audi-service-dubai/suspension-repair",
+        "/brands/audi-service-dubai/tire-repair",
+        "/brands/audi-service-dubai/transmission-repair",
+        "/brands/bmw-service-dubai/3-series",
+        "/brands/bmw-service-dubai/5-series",
+        "/brands/bmw-service-dubai/ac-repair",
+        "/brands/bmw-service-dubai/battery-replacement",
+        "/brands/bmw-service-dubai/body-repair",
+        "/brands/bmw-service-dubai/brake-repair",
+        "/brands/bmw-service-dubai/electrical-repair",
+        "/brands/bmw-service-dubai/engine-diagnostics",
+        "/brands/bmw-service-dubai/exhaust-repair",
+        "/brands/bmw-service-dubai/fuel-system-repair",
+        "/brands/bmw-service-dubai",
+        "/brands/bmw-service-dubai/m3",
+        "/brands/bmw-service-dubai/m4",
+        "/brands/bmw-service-dubai/m5",
+        "/brands/bmw-service-dubai/mechanical-repair",
+        "/brands/bmw-service-dubai/oil-change",
+        "/brands/bmw-service-dubai/steering-repair",
+        "/brands/bmw-service-dubai/suspension-repair",
+        "/brands/bmw-service-dubai/tire-repair",
+        "/brands/bmw-service-dubai/transmission-repair",
+        "/brands/bmw-service-dubai/x5",
+        "/brands/bmw-service-dubai/x6"
+      ],
+      "fields": [
+        "schema.@graph.4.itemListElement.5.itemOffered.@id"
+      ],
+      "classification": "SHARED CORPORATE FOOTER / NAVIGATION / ORGANIZATION SCHEMA",
+      "reason": "This exact shared company name, navigation link, corporate footer or Organization offer is company-wide and does not identify BMW/Audi as a tuning vehicle. Brand-specific page copy and its service scope remain repair/inspection.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "Vehicle performance services",
+      "occurrences": 91,
+      "routes": [
+        "/ar/best-audi-workshop-dubai",
+        "/ar/best-bmw-workshop-dubai",
+        "/ar/blog/audi-maintenance-guide-dubai",
+        "/ar/blog/audi-q7-service-dubai-guide",
+        "/ar/blog/audi-rs-service-dubai-guide",
+        "/ar/blog/bmw-m-service-dubai-guide",
+        "/ar/blog/bmw-maintenance-guide-dubai",
+        "/ar/blog/bmw-x5-service-dubai-guide",
+        "/ar/brands/audi-service-dubai/ac-repair",
+        "/ar/brands/audi-service-dubai/battery-replacement",
+        "/ar/brands/audi-service-dubai/body-repair",
+        "/ar/brands/audi-service-dubai/brake-repair",
+        "/ar/brands/audi-service-dubai/electrical-repair",
+        "/ar/brands/audi-service-dubai/engine-diagnostics",
+        "/ar/brands/audi-service-dubai/exhaust-repair",
+        "/ar/brands/audi-service-dubai/fuel-system-repair",
+        "/ar/brands/audi-service-dubai",
+        "/ar/brands/audi-service-dubai/mechanical-repair",
+        "/ar/brands/audi-service-dubai/oil-change",
+        "/ar/brands/audi-service-dubai/steering-repair",
+        "/ar/brands/audi-service-dubai/suspension-repair",
+        "/ar/brands/audi-service-dubai/tire-repair",
+        "/ar/brands/audi-service-dubai/transmission-repair",
+        "/ar/brands/bmw-service-dubai/ac-repair",
+        "/ar/brands/bmw-service-dubai/battery-replacement",
+        "/ar/brands/bmw-service-dubai/body-repair",
+        "/ar/brands/bmw-service-dubai/brake-repair",
+        "/ar/brands/bmw-service-dubai/electrical-repair",
+        "/ar/brands/bmw-service-dubai/engine-diagnostics",
+        "/ar/brands/bmw-service-dubai/exhaust-repair",
+        "/ar/brands/bmw-service-dubai/fuel-system-repair",
+        "/ar/brands/bmw-service-dubai",
+        "/ar/brands/bmw-service-dubai/mechanical-repair",
+        "/ar/brands/bmw-service-dubai/oil-change",
+        "/ar/brands/bmw-service-dubai/steering-repair",
+        "/ar/brands/bmw-service-dubai/suspension-repair",
+        "/ar/brands/bmw-service-dubai/tire-repair",
+        "/ar/brands/bmw-service-dubai/transmission-repair",
+        "/best-audi-workshop-dubai",
+        "/best-bmw-workshop-dubai",
+        "/blog/audi-maintenance-guide-dubai",
+        "/blog/audi-q7-service-dubai-guide",
+        "/blog/audi-rs-service-dubai-guide",
+        "/blog/bmw-m-service-dubai-guide",
+        "/blog/bmw-maintenance-guide-dubai",
+        "/blog/bmw-x5-service-dubai-guide",
+        "/brands/audi-service-dubai/a4",
+        "/brands/audi-service-dubai/a6",
+        "/brands/audi-service-dubai/ac-repair",
+        "/brands/audi-service-dubai/battery-replacement",
+        "/brands/audi-service-dubai/body-repair",
+        "/brands/audi-service-dubai/brake-repair",
+        "/brands/audi-service-dubai/electrical-repair",
+        "/brands/audi-service-dubai/engine-diagnostics",
+        "/brands/audi-service-dubai/exhaust-repair",
+        "/brands/audi-service-dubai/fuel-system-repair",
+        "/brands/audi-service-dubai",
+        "/brands/audi-service-dubai/mechanical-repair",
+        "/brands/audi-service-dubai/oil-change",
+        "/brands/audi-service-dubai/q5",
+        "/brands/audi-service-dubai/q7",
+        "/brands/audi-service-dubai/q8",
+        "/brands/audi-service-dubai/r8",
+        "/brands/audi-service-dubai/rs3",
+        "/brands/audi-service-dubai/rs6",
+        "/brands/audi-service-dubai/steering-repair",
+        "/brands/audi-service-dubai/suspension-repair",
+        "/brands/audi-service-dubai/tire-repair",
+        "/brands/audi-service-dubai/transmission-repair",
+        "/brands/bmw-service-dubai/3-series",
+        "/brands/bmw-service-dubai/5-series",
+        "/brands/bmw-service-dubai/ac-repair",
+        "/brands/bmw-service-dubai/battery-replacement",
+        "/brands/bmw-service-dubai/body-repair",
+        "/brands/bmw-service-dubai/brake-repair",
+        "/brands/bmw-service-dubai/electrical-repair",
+        "/brands/bmw-service-dubai/engine-diagnostics",
+        "/brands/bmw-service-dubai/exhaust-repair",
+        "/brands/bmw-service-dubai/fuel-system-repair",
+        "/brands/bmw-service-dubai",
+        "/brands/bmw-service-dubai/m3",
+        "/brands/bmw-service-dubai/m4",
+        "/brands/bmw-service-dubai/m5",
+        "/brands/bmw-service-dubai/mechanical-repair",
+        "/brands/bmw-service-dubai/oil-change",
+        "/brands/bmw-service-dubai/steering-repair",
+        "/brands/bmw-service-dubai/suspension-repair",
+        "/brands/bmw-service-dubai/tire-repair",
+        "/brands/bmw-service-dubai/transmission-repair",
+        "/brands/bmw-service-dubai/x5",
+        "/brands/bmw-service-dubai/x6"
+      ],
+      "fields": [
+        "schema.@graph.4.itemListElement.5.itemOffered.name"
+      ],
+      "classification": "SHARED CORPORATE FOOTER / NAVIGATION / ORGANIZATION SCHEMA",
+      "reason": "This exact shared company name, navigation link, corporate footer or Organization offer is company-wide and does not identify BMW/Audi as a tuning vehicle. Brand-specific page copy and its service scope remain repair/inspection.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "تشمل مناقشة الصيانة العملية زيت المحرك والفلاتر والفرامل والإطارات والبطارية والتبريد والمكيف والسوائل والتسريبات وسجل الصيانة ورموز الأعطال المخزنة. وفي السيارات الفاخرة أو عالية الأداء أو الأقدم، تفيد معرفة مدة التخزين وطريقة شحن البطارية وعدد مرات الاستخدام، لأن هذه الصورة أدق من رقم المسافة وحده.",
+      "occurrences": 2,
+      "routes": [
+        "/ar/blog/audi-maintenance-guide-dubai",
+        "/ar/blog/bmw-maintenance-guide-dubai"
+      ],
+      "fields": [
+        "p"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "يجب أن يكون اختيار القطع واضحاً. من حقك معرفة ما إذا كانت القطعة أصلية أو مكافئة لمواصفات المصنع أو من سوق البدائل، ولماذا تناسب الإصلاح وما شروط ضمانها. تحتاج مكونات السلامة والإلكترونيات وناقل الحركة والأنظمة الحساسة للبرمجة إلى عناية خاصة في الاختيار.",
+      "occurrences": 2,
+      "routes": [
+        "/ar/blog/audi-maintenance-guide-dubai",
+        "/ar/blog/bmw-maintenance-guide-dubai"
+      ],
+      "fields": [
+        "p"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "تُراجع الحالة الميكانيكية لسيارة Audi وفق نتائج التشخيص وحالة التبريد والفرامل والإطارات وطريقة الاستخدام. تُسجل التعديلات الموجودة ضمن معلومات الفحص، وتُقترح الصيانة أو الإصلاح وفق النتائج.",
+      "occurrences": 1,
+      "routes": [
+        "/ar/blog/audi-maintenance-guide-dubai"
+      ],
+      "fields": [
+        "p"
+      ],
+      "classification": "CORRECTED ARABIC INSPECTION / REPAIR SCOPE",
+      "reason": "Replaces the unsupported Arabic tuning offer with inspection findings, existing modification history and maintenance/repair recommendations.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "قائمة صيانة سيارات الأداء والفخامة في دبي",
+      "occurrences": 2,
+      "routes": [
+        "/ar/blog/audi-maintenance-guide-dubai",
+        "/ar/blog/bmw-maintenance-guide-dubai"
+      ],
+      "fields": [
+        "h2"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "بعض الأعراض لا تنتظر موعد الصيانة التالي. توقف واطلب المشورة عند ظهور سخونة أو تحذير أحمر لضغط الزيت أو الفرامل أو رائحة وقود قوية أو دخان أو فقدان كبير لسائل التبريد أو قوة المحرك أو تغير في التوجيه أو سلوك قاسٍ لناقل الحركة أو تحذير تعليق يؤثر في ارتفاع السيارة أو التحكم بها. استمرار القيادة قد يحول المشكلة إلى تلف أكبر.",
+      "occurrences": 2,
+      "routes": [
+        "/ar/blog/audi-maintenance-guide-dubai",
+        "/ar/blog/bmw-maintenance-guide-dubai"
+      ],
+      "fields": [
+        "p"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "يقع مركز ديجي-تك بيرفورمانس في منطقة القوز الصناعية 3 بدبي. يعمل فريقنا على السيارات الفاخرة وعالية الأداء والسيارات اليومية بمنهج يبدأ بالفحص، وتوصيات عملية، وتواصل مكتوب قبل بدء الإصلاح. سواء احتجت إلى صيانة دورية أو تشخيص تحذير أو رأي ثانٍ أو فحص قبل الشراء، هدفنا أن نمنحك مسار قرار واضحاً لا توصيات مبهمة.",
+      "occurrences": 2,
+      "routes": [
+        "/ar/blog/audi-maintenance-guide-dubai",
+        "/ar/blog/bmw-maintenance-guide-dubai"
+      ],
+      "fields": [
+        "p"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "أرسل الطراز والسنة وسجل الصيانة والتعديلات الموجودة وأي أعراض أو تحذيرات. يؤكد الفريق نطاق الفحص المتاح ويشرح النتائج وأي صيانة أو إصلاح مقترح.",
+      "occurrences": 2,
+      "routes": [
+        "/ar/blog/audi-maintenance-guide-dubai",
+        "/ar/blog/bmw-maintenance-guide-dubai"
+      ],
+      "fields": [
+        "schema.@graph.4.mainEntity.6.acceptedAnswer.text"
+      ],
+      "classification": "EXISTING MODIFICATION / USAGE CONTEXT FOR INSPECTION",
+      "reason": "The sentence asks about existing modifications or intended usage so the workshop can inspect the existing vehicle accurately. It does not offer DIGI-TEC tuning or promise to carry out a proposed power upgrade.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "تُراجع مواصفة زيت VW الخاصة بالمحرك، وتُفحص الخراطيم والمبردات وسائل التبريد ونظام هواء الشحن. انخفاض كفاءة التبريد في الصيف يستحق القياس والفحص، خصوصاً إذا تغير الأداء بعد القيادة لفترة.",
+      "occurrences": 1,
+      "routes": [
+        "/ar/blog/audi-rs-service-dubai-guide"
+      ],
+      "fields": [
+        "p"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "▸ التحقق من كفاءة مبردات الهواء عند ملاحظة تراجع الأداء مع الحرارة.",
+      "occurrences": 1,
+      "routes": [
+        "/ar/blog/bmw-m-service-dubai-guide"
+      ],
+      "fields": [
+        "li"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "أحضر بيانات المحرك وتاريخ السوائل وأي تعديلات أو استخدام على الحلبة. ينبغي أن يوضح نطاق العمل الفحوص والقطع والسوائل المطلوبة، وأن يُؤكد دعم وظائف التشخيص قبل الاعتماد. راجع شروط أي عقد صيانة أو ضمان خاص بسيارتك.",
+      "occurrences": 1,
+      "routes": [
+        "/ar/blog/bmw-m-service-dubai-guide"
+      ],
+      "fields": [
+        "p"
+      ],
+      "classification": "EXISTING MODIFICATION / USAGE CONTEXT FOR INSPECTION",
+      "reason": "The sentence asks about existing modifications or intended usage so the workshop can inspect the existing vehicle accurately. It does not offer DIGI-TEC tuning or promise to carry out a proposed power upgrade.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "تُراجع الحالة الميكانيكية لسيارة BMW وفق نتائج التشخيص وحالة التبريد والفرامل والإطارات وطريقة الاستخدام. تُسجل التعديلات الموجودة ضمن معلومات الفحص، وتُقترح الصيانة أو الإصلاح وفق النتائج.",
+      "occurrences": 1,
+      "routes": [
+        "/ar/blog/bmw-maintenance-guide-dubai"
+      ],
+      "fields": [
+        "p"
+      ],
+      "classification": "CORRECTED ARABIC INSPECTION / REPAIR SCOPE",
+      "reason": "Replaces the unsupported Arabic tuning offer with inspection findings, existing modification history and maintenance/repair recommendations.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "تأكيد القطع والإجراءات والعمالة وأي برمجة أو معايرة مطلوبة ومتاحة قبل الموافقة.",
+      "occurrences": 28,
+      "routes": [
+        "/ar/brands/audi-service-dubai/ac-repair",
+        "/ar/brands/audi-service-dubai/battery-replacement",
+        "/ar/brands/audi-service-dubai/body-repair",
+        "/ar/brands/audi-service-dubai/brake-repair",
+        "/ar/brands/audi-service-dubai/electrical-repair",
+        "/ar/brands/audi-service-dubai/engine-diagnostics",
+        "/ar/brands/audi-service-dubai/exhaust-repair",
+        "/ar/brands/audi-service-dubai/fuel-system-repair",
+        "/ar/brands/audi-service-dubai/mechanical-repair",
+        "/ar/brands/audi-service-dubai/oil-change",
+        "/ar/brands/audi-service-dubai/steering-repair",
+        "/ar/brands/audi-service-dubai/suspension-repair",
+        "/ar/brands/audi-service-dubai/tire-repair",
+        "/ar/brands/audi-service-dubai/transmission-repair",
+        "/ar/brands/bmw-service-dubai/ac-repair",
+        "/ar/brands/bmw-service-dubai/battery-replacement",
+        "/ar/brands/bmw-service-dubai/body-repair",
+        "/ar/brands/bmw-service-dubai/brake-repair",
+        "/ar/brands/bmw-service-dubai/electrical-repair",
+        "/ar/brands/bmw-service-dubai/engine-diagnostics",
+        "/ar/brands/bmw-service-dubai/exhaust-repair",
+        "/ar/brands/bmw-service-dubai/fuel-system-repair",
+        "/ar/brands/bmw-service-dubai/mechanical-repair",
+        "/ar/brands/bmw-service-dubai/oil-change",
+        "/ar/brands/bmw-service-dubai/steering-repair",
+        "/ar/brands/bmw-service-dubai/suspension-repair",
+        "/ar/brands/bmw-service-dubai/tire-repair",
+        "/ar/brands/bmw-service-dubai/transmission-repair"
+      ],
+      "fields": [
+        "p"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "تحدد بيانات سيارة Audi والنظام المركب والنتائج القطع المناسبة. يتم تأكيد التوافق والمصدر والتوفر وأي وظائف برمجة أو معايرة مطلوبة قبل طلب المكونات.",
+      "occurrences": 14,
+      "routes": [
+        "/ar/brands/audi-service-dubai/ac-repair",
+        "/ar/brands/audi-service-dubai/battery-replacement",
+        "/ar/brands/audi-service-dubai/body-repair",
+        "/ar/brands/audi-service-dubai/brake-repair",
+        "/ar/brands/audi-service-dubai/electrical-repair",
+        "/ar/brands/audi-service-dubai/engine-diagnostics",
+        "/ar/brands/audi-service-dubai/exhaust-repair",
+        "/ar/brands/audi-service-dubai/fuel-system-repair",
+        "/ar/brands/audi-service-dubai/mechanical-repair",
+        "/ar/brands/audi-service-dubai/oil-change",
+        "/ar/brands/audi-service-dubai/steering-repair",
+        "/ar/brands/audi-service-dubai/suspension-repair",
+        "/ar/brands/audi-service-dubai/tire-repair",
+        "/ar/brands/audi-service-dubai/transmission-repair"
+      ],
+      "fields": [
+        "p"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "لا. لا يعالج مسح الرمز سبب المشكلة. قد يلزم فحص مصدر التغذية والتوصيلات والدائرة والبيانات قبل اقتراح الإصلاح. البرمجة أو الترميز يتطلبان تأكيد التوافق والوصول المتاح.",
+      "occurrences": 2,
+      "routes": [
+        "/ar/brands/audi-service-dubai/electrical-repair",
+        "/ar/brands/bmw-service-dubai/electrical-repair"
+      ],
+      "fields": [
+        "schema.@graph.4.mainEntity.0.acceptedAnswer.text"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "تغير الأداء مع مشكلة بالعادم",
+      "occurrences": 2,
+      "routes": [
+        "/ar/brands/audi-service-dubai/exhaust-repair",
+        "/ar/brands/bmw-service-dubai/exhaust-repair"
+      ],
+      "fields": [
+        "span"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "تشخيص متقدم وبرمجة وحدات التحكم وإصلاح الأنظمة الكهربائية الحديثة.",
+      "occurrences": 2,
+      "routes": [
+        "/ar/brands/audi-service-dubai",
+        "/ar/brands/bmw-service-dubai"
+      ],
+      "fields": [
+        "p"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "يتم تأكيد توافق الفحص وقراءة البيانات وأي برمجة أو إعادة ضبط مطلوبة لسيارة Audi المحددة قبل إدراجها في عرض السعر.",
+      "occurrences": 1,
+      "routes": [
+        "/ar/brands/audi-service-dubai"
+      ],
+      "fields": [
+        "p"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "يتم تأكيد مواصفة الزيت والفلتر حسب طراز Audi والمحرك. وقد يشمل نطاق الخدمة المتفق عليه فحوصاً إضافية وإعادة ضبط المؤشر عند الحاجة.",
+      "occurrences": 1,
+      "routes": [
+        "/ar/brands/audi-service-dubai"
+      ],
+      "fields": [
+        "p"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "تشمل خبرتنا بسيارات Audi الصيانة والتشخيص والمحرك وناقل الحركة والتعليق والفرامل والكهرباء والتكييف، مع المعايرة والاختبار بعد الإصلاح.",
+      "occurrences": 1,
+      "routes": [
+        "/ar/brands/audi-service-dubai"
+      ],
+      "fields": [
+        "p"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "برمجة وتشخيص السيارات برمجة وحدات التحكم وإعادة الضبط والفحص الرقمي الكامل. اعرف المزيد",
+      "occurrences": 2,
+      "routes": [
+        "/ar/brands/audi-service-dubai",
+        "/ar/brands/bmw-service-dubai"
+      ],
+      "fields": [
+        "a"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "تغير الأداء أو ظهور مشكلة بعد صيانة سابقة",
+      "occurrences": 2,
+      "routes": [
+        "/ar/brands/audi-service-dubai/mechanical-repair",
+        "/ar/brands/bmw-service-dubai/mechanical-repair"
+      ],
+      "fields": [
+        "span"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "لا يحدد الانحراف وحده سبب المشكلة. قد تحتاج الإطارات والزوايا والتعليق ومكونات التوجيه إلى فحص قبل اقتراح قطعة، مع تأكيد أي معايرة مطلوبة ومتاحة.",
+      "occurrences": 2,
+      "routes": [
+        "/ar/brands/audi-service-dubai/steering-repair",
+        "/ar/brands/bmw-service-dubai/steering-repair"
+      ],
+      "fields": [
+        "schema.@graph.4.mainEntity.0.acceptedAnswer.text"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "تحدد بيانات سيارة BMW والنظام المركب والنتائج القطع المناسبة. يتم تأكيد التوافق والمصدر والتوفر وأي وظائف برمجة أو معايرة مطلوبة قبل طلب المكونات.",
+      "occurrences": 14,
+      "routes": [
+        "/ar/brands/bmw-service-dubai/ac-repair",
+        "/ar/brands/bmw-service-dubai/battery-replacement",
+        "/ar/brands/bmw-service-dubai/body-repair",
+        "/ar/brands/bmw-service-dubai/brake-repair",
+        "/ar/brands/bmw-service-dubai/electrical-repair",
+        "/ar/brands/bmw-service-dubai/engine-diagnostics",
+        "/ar/brands/bmw-service-dubai/exhaust-repair",
+        "/ar/brands/bmw-service-dubai/fuel-system-repair",
+        "/ar/brands/bmw-service-dubai/mechanical-repair",
+        "/ar/brands/bmw-service-dubai/oil-change",
+        "/ar/brands/bmw-service-dubai/steering-repair",
+        "/ar/brands/bmw-service-dubai/suspension-repair",
+        "/ar/brands/bmw-service-dubai/tire-repair",
+        "/ar/brands/bmw-service-dubai/transmission-repair"
+      ],
+      "fields": [
+        "p"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "يتم تأكيد توافق الفحص وقراءة البيانات وأي برمجة أو إعادة ضبط مطلوبة لسيارة BMW المحددة قبل إدراجها في عرض السعر.",
+      "occurrences": 1,
+      "routes": [
+        "/ar/brands/bmw-service-dubai"
+      ],
+      "fields": [
+        "p"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "يتم تأكيد مواصفة الزيت والفلتر حسب طراز BMW والمحرك. وقد يشمل نطاق الخدمة المتفق عليه فحوصاً إضافية وإعادة ضبط المؤشر عند الحاجة.",
+      "occurrences": 1,
+      "routes": [
+        "/ar/brands/bmw-service-dubai"
+      ],
+      "fields": [
+        "p"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "تشمل خبرتنا بسيارات BMW الصيانة والتشخيص والمحرك وناقل الحركة والتعليق والفرامل والكهرباء والتكييف، مع المعايرة والاختبار بعد الإصلاح.",
+      "occurrences": 1,
+      "routes": [
+        "/ar/brands/bmw-service-dubai"
+      ],
+      "fields": [
+        "p"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "يقدم ديجي-تك في القوز، دبي الصيانة الدورية وتغيير الزيت، والتشخيص الإلكتروني، وإصلاح المحرك وناقل الحركة، والفرامل والتعليق والتوجيه، وإصلاح التكييف والكهرباء، والبرمجة والتكويد، وأعمال الهيكل والطلاء، وحماية الطلاء والسيراميك. تشمل علامات الصيانة والإصلاح مرسيدس وبي إم دبليو وأودي وبورشه والسيارات الفاخرة والكهربائية. تُراجع حِزم تطوير الأداء والتغطية بشكل منفصل وفق مهيئ الأداء ومواصفات السيارة.",
+      "occurrences": 1,
+      "routes": [
+        "/ar/services"
+      ],
+      "fields": [
+        "p"
+      ],
+      "classification": "EXPLICIT REPAIR / TUNING SCOPE SEPARATION",
+      "reason": "The paragraph assigns BMW/Audi to service/repair coverage, then separately limits tuning review to the Performance Configurator. No BMW/Audi tuning record or package is claimed.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "Digi-Tec Performance Center provides independent Audi inspection, maintenance and repair in Al Quoz Industrial Area 3, Dubai. Owners can share the exact model, year and concern so the workshop can confirm the relevant inspection process, available service scope, proposed parts and expected timing. Established in 2002.",
+      "occurrences": 1,
+      "routes": [
+        "/best-audi-workshop-dubai"
+      ],
+      "fields": [
+        "p"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "Independent luxury and performance car workshop in Al Quoz, Dubai. Specialist diagnostics, repair, maintenance and performance upgrades since 2002.",
+      "occurrences": 53,
+      "routes": [
+        "/best-audi-workshop-dubai",
+        "/best-bmw-workshop-dubai",
+        "/blog/audi-maintenance-guide-dubai",
+        "/blog/audi-q7-service-dubai-guide",
+        "/blog/audi-rs-service-dubai-guide",
+        "/blog/bmw-m-service-dubai-guide",
+        "/blog/bmw-maintenance-guide-dubai",
+        "/blog/bmw-x5-service-dubai-guide",
+        "/brands/audi-service-dubai/a4",
+        "/brands/audi-service-dubai/a6",
+        "/brands/audi-service-dubai/ac-repair",
+        "/brands/audi-service-dubai/battery-replacement",
+        "/brands/audi-service-dubai/body-repair",
+        "/brands/audi-service-dubai/brake-repair",
+        "/brands/audi-service-dubai/electrical-repair",
+        "/brands/audi-service-dubai/engine-diagnostics",
+        "/brands/audi-service-dubai/exhaust-repair",
+        "/brands/audi-service-dubai/fuel-system-repair",
+        "/brands/audi-service-dubai",
+        "/brands/audi-service-dubai/mechanical-repair",
+        "/brands/audi-service-dubai/oil-change",
+        "/brands/audi-service-dubai/q5",
+        "/brands/audi-service-dubai/q7",
+        "/brands/audi-service-dubai/q8",
+        "/brands/audi-service-dubai/r8",
+        "/brands/audi-service-dubai/rs3",
+        "/brands/audi-service-dubai/rs6",
+        "/brands/audi-service-dubai/steering-repair",
+        "/brands/audi-service-dubai/suspension-repair",
+        "/brands/audi-service-dubai/tire-repair",
+        "/brands/audi-service-dubai/transmission-repair",
+        "/brands/bmw-service-dubai/3-series",
+        "/brands/bmw-service-dubai/5-series",
+        "/brands/bmw-service-dubai/ac-repair",
+        "/brands/bmw-service-dubai/battery-replacement",
+        "/brands/bmw-service-dubai/body-repair",
+        "/brands/bmw-service-dubai/brake-repair",
+        "/brands/bmw-service-dubai/electrical-repair",
+        "/brands/bmw-service-dubai/engine-diagnostics",
+        "/brands/bmw-service-dubai/exhaust-repair",
+        "/brands/bmw-service-dubai/fuel-system-repair",
+        "/brands/bmw-service-dubai",
+        "/brands/bmw-service-dubai/m3",
+        "/brands/bmw-service-dubai/m4",
+        "/brands/bmw-service-dubai/m5",
+        "/brands/bmw-service-dubai/mechanical-repair",
+        "/brands/bmw-service-dubai/oil-change",
+        "/brands/bmw-service-dubai/steering-repair",
+        "/brands/bmw-service-dubai/suspension-repair",
+        "/brands/bmw-service-dubai/tire-repair",
+        "/brands/bmw-service-dubai/transmission-repair",
+        "/brands/bmw-service-dubai/x5",
+        "/brands/bmw-service-dubai/x6"
+      ],
+      "fields": [
+        "p"
+      ],
+      "classification": "SHARED CORPORATE FOOTER / NAVIGATION / ORGANIZATION SCHEMA",
+      "reason": "This exact shared company name, navigation link, corporate footer or Organization offer is company-wide and does not identify BMW/Audi as a tuning vehicle. Brand-specific page copy and its service scope remain repair/inspection.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "Performance Tuning",
+      "occurrences": 53,
+      "routes": [
+        "/best-audi-workshop-dubai",
+        "/best-bmw-workshop-dubai",
+        "/blog/audi-maintenance-guide-dubai",
+        "/blog/audi-q7-service-dubai-guide",
+        "/blog/audi-rs-service-dubai-guide",
+        "/blog/bmw-m-service-dubai-guide",
+        "/blog/bmw-maintenance-guide-dubai",
+        "/blog/bmw-x5-service-dubai-guide",
+        "/brands/audi-service-dubai/a4",
+        "/brands/audi-service-dubai/a6",
+        "/brands/audi-service-dubai/ac-repair",
+        "/brands/audi-service-dubai/battery-replacement",
+        "/brands/audi-service-dubai/body-repair",
+        "/brands/audi-service-dubai/brake-repair",
+        "/brands/audi-service-dubai/electrical-repair",
+        "/brands/audi-service-dubai/engine-diagnostics",
+        "/brands/audi-service-dubai/exhaust-repair",
+        "/brands/audi-service-dubai/fuel-system-repair",
+        "/brands/audi-service-dubai",
+        "/brands/audi-service-dubai/mechanical-repair",
+        "/brands/audi-service-dubai/oil-change",
+        "/brands/audi-service-dubai/q5",
+        "/brands/audi-service-dubai/q7",
+        "/brands/audi-service-dubai/q8",
+        "/brands/audi-service-dubai/r8",
+        "/brands/audi-service-dubai/rs3",
+        "/brands/audi-service-dubai/rs6",
+        "/brands/audi-service-dubai/steering-repair",
+        "/brands/audi-service-dubai/suspension-repair",
+        "/brands/audi-service-dubai/tire-repair",
+        "/brands/audi-service-dubai/transmission-repair",
+        "/brands/bmw-service-dubai/3-series",
+        "/brands/bmw-service-dubai/5-series",
+        "/brands/bmw-service-dubai/ac-repair",
+        "/brands/bmw-service-dubai/battery-replacement",
+        "/brands/bmw-service-dubai/body-repair",
+        "/brands/bmw-service-dubai/brake-repair",
+        "/brands/bmw-service-dubai/electrical-repair",
+        "/brands/bmw-service-dubai/engine-diagnostics",
+        "/brands/bmw-service-dubai/exhaust-repair",
+        "/brands/bmw-service-dubai/fuel-system-repair",
+        "/brands/bmw-service-dubai",
+        "/brands/bmw-service-dubai/m3",
+        "/brands/bmw-service-dubai/m4",
+        "/brands/bmw-service-dubai/m5",
+        "/brands/bmw-service-dubai/mechanical-repair",
+        "/brands/bmw-service-dubai/oil-change",
+        "/brands/bmw-service-dubai/steering-repair",
+        "/brands/bmw-service-dubai/suspension-repair",
+        "/brands/bmw-service-dubai/tire-repair",
+        "/brands/bmw-service-dubai/transmission-repair",
+        "/brands/bmw-service-dubai/x5",
+        "/brands/bmw-service-dubai/x6"
+      ],
+      "fields": [
+        "a"
+      ],
+      "classification": "SHARED CORPORATE FOOTER / NAVIGATION / ORGANIZATION SCHEMA",
+      "reason": "This exact shared company name, navigation link, corporate footer or Organization offer is company-wide and does not identify BMW/Audi as a tuning vehicle. Brand-specific page copy and its service scope remain repair/inspection.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "© 2026 D IGI-TEC Performance Center. All rights reserved.",
+      "occurrences": 53,
+      "routes": [
+        "/best-audi-workshop-dubai",
+        "/best-bmw-workshop-dubai",
+        "/blog/audi-maintenance-guide-dubai",
+        "/blog/audi-q7-service-dubai-guide",
+        "/blog/audi-rs-service-dubai-guide",
+        "/blog/bmw-m-service-dubai-guide",
+        "/blog/bmw-maintenance-guide-dubai",
+        "/blog/bmw-x5-service-dubai-guide",
+        "/brands/audi-service-dubai/a4",
+        "/brands/audi-service-dubai/a6",
+        "/brands/audi-service-dubai/ac-repair",
+        "/brands/audi-service-dubai/battery-replacement",
+        "/brands/audi-service-dubai/body-repair",
+        "/brands/audi-service-dubai/brake-repair",
+        "/brands/audi-service-dubai/electrical-repair",
+        "/brands/audi-service-dubai/engine-diagnostics",
+        "/brands/audi-service-dubai/exhaust-repair",
+        "/brands/audi-service-dubai/fuel-system-repair",
+        "/brands/audi-service-dubai",
+        "/brands/audi-service-dubai/mechanical-repair",
+        "/brands/audi-service-dubai/oil-change",
+        "/brands/audi-service-dubai/q5",
+        "/brands/audi-service-dubai/q7",
+        "/brands/audi-service-dubai/q8",
+        "/brands/audi-service-dubai/r8",
+        "/brands/audi-service-dubai/rs3",
+        "/brands/audi-service-dubai/rs6",
+        "/brands/audi-service-dubai/steering-repair",
+        "/brands/audi-service-dubai/suspension-repair",
+        "/brands/audi-service-dubai/tire-repair",
+        "/brands/audi-service-dubai/transmission-repair",
+        "/brands/bmw-service-dubai/3-series",
+        "/brands/bmw-service-dubai/5-series",
+        "/brands/bmw-service-dubai/ac-repair",
+        "/brands/bmw-service-dubai/battery-replacement",
+        "/brands/bmw-service-dubai/body-repair",
+        "/brands/bmw-service-dubai/brake-repair",
+        "/brands/bmw-service-dubai/electrical-repair",
+        "/brands/bmw-service-dubai/engine-diagnostics",
+        "/brands/bmw-service-dubai/exhaust-repair",
+        "/brands/bmw-service-dubai/fuel-system-repair",
+        "/brands/bmw-service-dubai",
+        "/brands/bmw-service-dubai/m3",
+        "/brands/bmw-service-dubai/m4",
+        "/brands/bmw-service-dubai/m5",
+        "/brands/bmw-service-dubai/mechanical-repair",
+        "/brands/bmw-service-dubai/oil-change",
+        "/brands/bmw-service-dubai/steering-repair",
+        "/brands/bmw-service-dubai/suspension-repair",
+        "/brands/bmw-service-dubai/tire-repair",
+        "/brands/bmw-service-dubai/transmission-repair",
+        "/brands/bmw-service-dubai/x5",
+        "/brands/bmw-service-dubai/x6"
+      ],
+      "fields": [
+        "p"
+      ],
+      "classification": "SHARED CORPORATE FOOTER / NAVIGATION / ORGANIZATION SCHEMA",
+      "reason": "This exact shared company name, navigation link, corporate footer or Organization offer is company-wide and does not identify BMW/Audi as a tuning vehicle. Brand-specific page copy and its service scope remain repair/inspection.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "Digi-Tec Performance Center is in Al Quoz Industrial Area 3, Dubai. Call +971 4 340 2223 to discuss your vehicle and request an appointment.",
+      "occurrences": 2,
+      "routes": [
+        "/best-audi-workshop-dubai",
+        "/best-bmw-workshop-dubai"
+      ],
+      "fields": [
+        "schema.@graph.3.mainEntity.4.acceptedAnswer.text"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "A practical maintenance conversation covers engine oil and filters, brake condition, tyres, battery health, cooling performance, air-conditioning, fluids, leaks, service records and any stored warning codes. For performance, luxury and older vehicles, it also helps to discuss storage, battery conditioning and how often the car is driven. This gives the workshop a fuller picture than a mileage number on its own.",
+      "occurrences": 2,
+      "routes": [
+        "/blog/audi-maintenance-guide-dubai",
+        "/blog/bmw-maintenance-guide-dubai"
+      ],
+      "fields": [
+        "p"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "A Dubai maintenance checklist for luxury and performance cars",
+      "occurrences": 2,
+      "routes": [
+        "/blog/audi-maintenance-guide-dubai",
+        "/blog/bmw-maintenance-guide-dubai"
+      ],
+      "fields": [
+        "h2"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "When booking, describe how the Audi is used: city commuting, chauffeur work, school runs, weekend driving, towing, track days, desert trips or storage. That information helps the workshop tailor the inspection. A vehicle driven gently in Al Quoz traffic has different priorities from one used for high-speed motorway trips or performance driving, even when both have the same mileage.",
+      "occurrences": 1,
+      "routes": [
+        "/blog/audi-maintenance-guide-dubai"
+      ],
+      "fields": [
+        "p"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "For maintenance work, tell the workshop about upcoming travel, inspection deadlines, track use, towing or plans for an upgrade. For a pre-purchase check, allow enough time for a proper review rather than asking for a rushed decision at the seller’s location. The purpose is not to make the process complicated; it is to give the technician enough information to inspect the right systems first and give you a more reliable answer.",
+      "occurrences": 2,
+      "routes": [
+        "/blog/audi-maintenance-guide-dubai",
+        "/blog/bmw-maintenance-guide-dubai"
+      ],
+      "fields": [
+        "p"
+      ],
+      "classification": "EXISTING MODIFICATION / USAGE CONTEXT FOR INSPECTION",
+      "reason": "The sentence asks about existing modifications or intended usage so the workshop can inspect the existing vehicle accurately. It does not offer DIGI-TEC tuning or promise to carry out a proposed power upgrade.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "Some symptoms should not wait for the next scheduled service. Stop and arrange advice promptly if you see an overheating message, a red oil-pressure or brake warning, a strong fuel smell, smoke, a major coolant loss, sudden loss of power, a steering change, a harsh new transmission behaviour or a suspension warning that changes how the car sits or handles. Continuing to drive can turn a contained issue into damage to an engine, transmission, brake system or safety-related component.",
+      "occurrences": 2,
+      "routes": [
+        "/blog/audi-maintenance-guide-dubai",
+        "/blog/bmw-maintenance-guide-dubai"
+      ],
+      "fields": [
+        "p"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "DIGI-TEC Performance Center is located in Al Quoz Industrial Area 3, Dubai. Our team works with luxury, performance and everyday vehicles, using a clear inspection-first process, practical service advice and written communication before repair work moves forward. Whether you need routine maintenance, a warning-light diagnosis, a second opinion or a pre-purchase check, the aim is to give you a useful decision path—not vague recommendations.",
+      "occurrences": 2,
+      "routes": [
+        "/blog/audi-maintenance-guide-dubai",
+        "/blog/bmw-maintenance-guide-dubai"
+      ],
+      "fields": [
+        "p"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "DIGI-TEC Performance Center is in Al Quoz Industrial Area 3, Dubai.",
+      "occurrences": 2,
+      "routes": [
+        "/blog/audi-maintenance-guide-dubai",
+        "/blog/bmw-maintenance-guide-dubai"
+      ],
+      "fields": [
+        "schema.@graph.4.mainEntity.6.acceptedAnswer.text"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "Short answer: the Q7 is a heavy family SUV, so air suspension, driveline fluids, cooling and brakes matter as much as routine oil service. Digi-Tec Performance Centre in Al Quoz Industrial Area 3, Dubai services the Q7 with ODIS and provides measured findings before any repair is approved.",
+      "occurrences": 1,
+      "routes": [
+        "/blog/audi-q7-service-dubai-guide"
+      ],
+      "fields": [
+        "p"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "▸ Cooling and AC performance loss when condenser faces are fouled.",
+      "occurrences": 1,
+      "routes": [
+        "/blog/audi-q7-service-dubai-guide"
+      ],
+      "fields": [
+        "li"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "Short answer: Audi RS models are heavy, high output cars with a full quattro driveline, so maintenance has to cover more than the engine. Oil to the correct VW approval, gearbox and transfer case fluid, differential oil, cooling system condition and brake condition all matter, alongside a full ODIS scan. Digi-Tec Performance Centre in Al Quoz Industrial Area 3, Dubai services RS and S models with the manufacturer level platform and documents the scope before work begins.",
+      "occurrences": 1,
+      "routes": [
+        "/blog/audi-rs-service-dubai-guide"
+      ],
+      "fields": [
+        "p"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "Short answer: a BMW M car needs a shorter, harder maintenance cycle than a standard BMW, because the S55, S58, S63 and S85 family engines run higher loads and higher temperatures. In Dubai that means closer attention to oil condition, cooling system health, brake fluid, gearbox and differential fluid, and full ISTA+ diagnostics at every visit. Digi-Tec Performance Centre in Al Quoz Industrial Area 3, Dubai services M models with the manufacturer level platform and records every part and fluid on the invoice.",
+      "occurrences": 1,
+      "routes": [
+        "/blog/bmw-m-service-dubai-guide"
+      ],
+      "fields": [
+        "p"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "When booking, describe how the BMW is used: city commuting, chauffeur work, school runs, weekend driving, towing, track days, desert trips or storage. That information helps the workshop tailor the inspection. A vehicle driven gently in Al Quoz traffic has different priorities from one used for high-speed motorway trips or performance driving, even when both have the same mileage.",
+      "occurrences": 1,
+      "routes": [
+        "/blog/bmw-maintenance-guide-dubai"
+      ],
+      "fields": [
+        "p"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "Short answer: the X5 is a heavy SUV that works hard in Dubai heat, so cooling, air suspension, transfer case and brakes need inspection alongside routine oil and filter work. Digi-Tec Performance Centre in Al Quoz Industrial Area 3, Dubai services the X5 range with ISTA+ and provides measured findings before any repair is approved.",
+      "occurrences": 1,
+      "routes": [
+        "/blog/bmw-x5-service-dubai-guide"
+      ],
+      "fields": [
+        "p"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "Check AC output at idle and cooling-fan performance.",
+      "occurrences": 1,
+      "routes": [
+        "/brands/audi-service-dubai/a4"
+      ],
+      "fields": [
+        "li"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "Audi AC repair Cooling performance, pressures, airflow and electrical control checked under Dubai conditions. View service",
+      "occurrences": 8,
+      "routes": [
+        "/brands/audi-service-dubai/a4",
+        "/brands/audi-service-dubai/a6",
+        "/brands/audi-service-dubai/q5",
+        "/brands/audi-service-dubai/q7",
+        "/brands/audi-service-dubai/q8",
+        "/brands/audi-service-dubai/r8",
+        "/brands/audi-service-dubai/rs3",
+        "/brands/audi-service-dubai/rs6"
+      ],
+      "fields": [
+        "a"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "A6 powertrains can include EA888 four-cylinder and EA839 or earlier V6 applications. Cooling, PCV, boost and oil-leak diagnosis must follow the installed engine rather than the badge alone.",
+      "occurrences": 1,
+      "routes": [
+        "/brands/audi-service-dubai/a6"
+      ],
+      "fields": [
+        "p"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "Inspect cooling-stack cleanliness and AC condenser performance.",
+      "occurrences": 1,
+      "routes": [
+        "/brands/audi-service-dubai/a6"
+      ],
+      "fields": [
+        "li"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "EPC is a powertrain-control warning, not a diagnosis. Throttle, boost, ignition, fuel, sensors, wiring and other systems can trigger it; scan data and symptom testing are needed.",
+      "occurrences": 1,
+      "routes": [
+        "/brands/audi-service-dubai/a6"
+      ],
+      "fields": [
+        "schema.@graph.3.mainEntity.0.acceptedAnswer.text"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "Digi-Tec inspects Audi air-conditioning concerns such as weak cooling, leaks, compressor noise, airflow problems and climate-zone faults. The refrigerant label and VIN are checked before recovery or charging because requirements vary by model and market. Equipment compatibility, parts availability, dashboard or evaporator work and any supported climate calibration are confirmed before the repair is accepted. Digi-Tec has operated in Dubai since 2002; the Audi workshop scope is confirmed for each vehicle.",
+      "occurrences": 1,
+      "routes": [
+        "/brands/audi-service-dubai/ac-repair"
+      ],
+      "fields": [
+        "p"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "Performance and leak assessment",
+      "occurrences": 2,
+      "routes": [
+        "/brands/audi-service-dubai/ac-repair",
+        "/brands/bmw-service-dubai/ac-repair"
+      ],
+      "fields": [
+        "h3"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "Recharge and supported calibration",
+      "occurrences": 2,
+      "routes": [
+        "/brands/audi-service-dubai/ac-repair",
+        "/brands/bmw-service-dubai/ac-repair"
+      ],
+      "fields": [
+        "h3"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "Refrigerant and oil quantities follow the verified vehicle specification. Climate calibration or reset is included only where required and supported.",
+      "occurrences": 2,
+      "routes": [
+        "/brands/audi-service-dubai/ac-repair",
+        "/brands/bmw-service-dubai/ac-repair"
+      ],
+      "fields": [
+        "p"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "Possible causes include condenser airflow, cooling-fan performance, refrigerant charge, pressure control or compressor condition. Testing is needed before recommending cleaning or replacement.",
+      "occurrences": 2,
+      "routes": [
+        "/brands/audi-service-dubai/ac-repair",
+        "/brands/bmw-service-dubai/ac-repair"
+      ],
+      "fields": [
+        "schema.@graph.4.mainEntity.2.acceptedAnswer.text"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "Follow the vehicle schedule and respond to reduced performance, odour or unusual noise. Inspection, filter and refrigerant recommendations depend on the fitted system and measured condition.",
+      "occurrences": 2,
+      "routes": [
+        "/brands/audi-service-dubai/ac-repair",
+        "/brands/bmw-service-dubai/ac-repair"
+      ],
+      "fields": [
+        "schema.@graph.4.mainEntity.3.acceptedAnswer.text"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "No. Battery condition, connections, charging performance and unwanted electrical drain may need separate checks. The findings should explain whether replacement addresses the reported concern.",
+      "occurrences": 2,
+      "routes": [
+        "/brands/audi-service-dubai/battery-replacement",
+        "/brands/bmw-service-dubai/battery-replacement"
+      ],
+      "fields": [
+        "schema.@graph.4.mainEntity.0.acceptedAnswer.text"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "Timing depends on inspection findings, access, parts and any supported calibration or programming requirements. The expected timeline is confirmed with the quotation.",
+      "occurrences": 15,
+      "routes": [
+        "/brands/audi-service-dubai/battery-replacement",
+        "/brands/audi-service-dubai/body-repair",
+        "/brands/audi-service-dubai/electrical-repair",
+        "/brands/audi-service-dubai/exhaust-repair",
+        "/brands/audi-service-dubai/fuel-system-repair",
+        "/brands/audi-service-dubai/mechanical-repair",
+        "/brands/audi-service-dubai/steering-repair",
+        "/brands/audi-service-dubai/tire-repair",
+        "/brands/bmw-service-dubai/battery-replacement",
+        "/brands/bmw-service-dubai/body-repair",
+        "/brands/bmw-service-dubai/exhaust-repair",
+        "/brands/bmw-service-dubai/fuel-system-repair",
+        "/brands/bmw-service-dubai/mechanical-repair",
+        "/brands/bmw-service-dubai/steering-repair",
+        "/brands/bmw-service-dubai/tire-repair"
+      ],
+      "fields": [
+        "schema.@graph.4.mainEntity.3.acceptedAnswer.text"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "Audi brake hardware and procedures vary by model and fitted option, including model-specific steel, performance and carbon-ceramic brake systems confirmed from the vehicle. Digi-Tec begins with vehicle-specific measurements and confirms pad compound, rotor type, fluid specification, parts sourcing and any supported electronic parking-brake or sensor function before quoting repair. Carbon-ceramic systems require model-specific handling, so capability and parts are confirmed before the vehicle is accepted. Digi-Tec has operated in Dubai since 2002; the Audi workshop scope is confirmed for each vehicle.",
+      "occurrences": 1,
+      "routes": [
+        "/brands/audi-service-dubai/brake-repair"
+      ],
+      "fields": [
+        "p"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "Audi pads and rotors must match the fitted model-specific steel, performance and carbon-ceramic brake systems confirmed from the vehicle. The proposed source, compound and compatibility are documented in the quotation before parts are ordered.",
+      "occurrences": 1,
+      "routes": [
+        "/brands/audi-service-dubai/brake-repair"
+      ],
+      "fields": [
+        "p"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "Timing depends on inspection findings, fitted brake system, parts availability and any supported EPB or calibration function. The expected timeline is confirmed with the quotation.",
+      "occurrences": 1,
+      "routes": [
+        "/brands/audi-service-dubai/brake-repair"
+      ],
+      "fields": [
+        "schema.@graph.4.mainEntity.4.acceptedAnswer.text"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "An EPB or handbrake fault can be inspected. Retract, calibration, coding or motor-replacement availability depends on the fitted system and compatible access, which is confirmed before work.",
+      "occurrences": 1,
+      "routes": [
+        "/brands/audi-service-dubai/brake-repair"
+      ],
+      "fields": [
+        "schema.@graph.4.mainEntity.5.acceptedAnswer.text"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "Record the affected functions, conditions and recent repairs. Review compatible module faults and power supply.",
+      "occurrences": 2,
+      "routes": [
+        "/brands/audi-service-dubai/electrical-repair",
+        "/brands/bmw-service-dubai/electrical-repair"
+      ],
+      "fields": [
+        "p"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "No. A fault code can identify an affected circuit or system without proving which component failed. Wiring, connections, power supply and relevant live data may need testing before repair or replacement is proposed.",
+      "occurrences": 1,
+      "routes": [
+        "/brands/audi-service-dubai/electrical-repair"
+      ],
+      "fields": [
+        "schema.@graph.4.mainEntity.0.acceptedAnswer.text"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "Audi-specific message such as \"Reduced Engine Power\" or \"Consult Workshop\"",
+      "occurrences": 1,
+      "routes": [
+        "/brands/audi-service-dubai/engine-diagnostics"
+      ],
+      "fields": [
+        "span"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "Loss of turbo boost, limp-home mode, or unusual exhaust smoke colour",
+      "occurrences": 1,
+      "routes": [
+        "/brands/audi-service-dubai/engine-diagnostics"
+      ],
+      "fields": [
+        "span"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "Can you code a new ECU or module?",
+      "occurrences": 4,
+      "routes": [
+        "/brands/audi-service-dubai/engine-diagnostics",
+        "/brands/bmw-service-dubai/engine-diagnostics"
+      ],
+      "fields": [
+        "h3",
+        "schema.@graph.4.mainEntity.2.name"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "Audi Engine & ECU Diagnostics",
+      "occurrences": 1,
+      "routes": [
+        "/brands/audi-service-dubai/engine-diagnostics"
+      ],
+      "fields": [
+        "schema.@graph.3.serviceType"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "Coding or programming may be available for some modules. VIN compatibility, security access, software requirements, power supply and supported variant functions are checked before accepting the job.",
+      "occurrences": 2,
+      "routes": [
+        "/brands/audi-service-dubai/engine-diagnostics",
+        "/brands/bmw-service-dubai/engine-diagnostics"
+      ],
+      "fields": [
+        "schema.@graph.4.mainEntity.2.acceptedAnswer.text"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "Audi exhaust noise, rattling, leaks or emissions warnings need inspection of the affected pipework, joints, mounts, silencer or control components. Repair of the existing system is assessed separately from performance modification. Digi-Tec assesses the concern in Al Quoz, Dubai, identifies the fitted system and explains the findings before parts or repair are agreed.",
+      "occurrences": 1,
+      "routes": [
+        "/brands/audi-service-dubai/exhaust-repair"
+      ],
+      "fields": [
+        "p"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "Loss of power, fuel economy, or emissions-test failure",
+      "occurrences": 2,
+      "routes": [
+        "/brands/audi-service-dubai/exhaust-repair",
+        "/brands/bmw-service-dubai/exhaust-repair"
+      ],
+      "fields": [
+        "span"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "Measure catalyst, sensor, and back-pressure performance",
+      "occurrences": 2,
+      "routes": [
+        "/brands/audi-service-dubai/exhaust-repair",
+        "/brands/bmw-service-dubai/exhaust-repair"
+      ],
+      "fields": [
+        "h3"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "Is exhaust repair the same as a performance exhaust upgrade?",
+      "occurrences": 4,
+      "routes": [
+        "/brands/audi-service-dubai/exhaust-repair",
+        "/brands/bmw-service-dubai/exhaust-repair"
+      ],
+      "fields": [
+        "h3",
+        "schema.@graph.4.mainEntity.1.name"
+      ],
+      "classification": "EXHAUST REPAIR FAQ QUESTION",
+      "reason": "Read with its corrected answer, this question distinguishes an existing-system repair from performance modification; the answer explicitly says repair coverage does not establish availability of a performance upgrade.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "Repair addresses a diagnosed leak, damaged component, noise or operating fault. This service covers repair of the existing system; it does not establish availability of performance modifications.",
+      "occurrences": 2,
+      "routes": [
+        "/brands/audi-service-dubai/exhaust-repair",
+        "/brands/bmw-service-dubai/exhaust-repair"
+      ],
+      "fields": [
+        "schema.@graph.4.mainEntity.1.acceptedAnswer.text"
+      ],
+      "classification": "CORRECTED EXHAUST REPAIR FAQ / EXPLICIT LIMIT",
+      "reason": "Explicitly limits the service to existing-system repair and does not establish an available performance modification.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "Hard starting, hesitation, misfire, or reduced power",
+      "occurrences": 2,
+      "routes": [
+        "/brands/audi-service-dubai/fuel-system-repair",
+        "/brands/bmw-service-dubai/fuel-system-repair"
+      ],
+      "fields": [
+        "span"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "Engine diagnostics and warning lights Fault context, live data and suitable physical checks help investigate warning lights, misfires, reduced power and starting concerns. Audi engine diagnostics",
+      "occurrences": 1,
+      "routes": [
+        "/brands/audi-service-dubai"
+      ],
+      "fields": [
+        "a"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "Battery replacement and charging diagnosis Battery condition, charging performance and unwanted-current concerns are tested before a low-voltage battery is recommended. Audi battery replacement in Dubai",
+      "occurrences": 1,
+      "routes": [
+        "/brands/audi-service-dubai"
+      ],
+      "fields": [
+        "a"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "Car Diagnostics & ECU Programming in Dubai Vehicle-specific fault scanning, supported ECU functions, resets and digital system inspection in Dubai. Learn more",
+      "occurrences": 2,
+      "routes": [
+        "/brands/audi-service-dubai",
+        "/brands/bmw-service-dubai"
+      ],
+      "fields": [
+        "a"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "DIGI-TEC Performance Center is in Al Quoz Industrial Area 3, Dubai. Send the Audi model, year, mileage and concern on WhatsApp before visiting so the appropriate inspection can be confirmed.",
+      "occurrences": 1,
+      "routes": [
+        "/brands/audi-service-dubai"
+      ],
+      "fields": [
+        "schema.@graph.4.mainEntity.0.acceptedAnswer.text"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "Unusual engine noise, vibration, oil leak, or loss of power",
+      "occurrences": 2,
+      "routes": [
+        "/brands/audi-service-dubai/mechanical-repair",
+        "/brands/bmw-service-dubai/mechanical-repair"
+      ],
+      "fields": [
+        "span"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "Confirm compatible parts, required calibration, and road-test scope",
+      "occurrences": 2,
+      "routes": [
+        "/brands/audi-service-dubai/mechanical-repair",
+        "/brands/bmw-service-dubai/mechanical-repair"
+      ],
+      "fields": [
+        "h3"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "Quote parts, labour and necessary verification for the confirmed repair. Calibration and road checks are included only where applicable.",
+      "occurrences": 2,
+      "routes": [
+        "/brands/audi-service-dubai/mechanical-repair",
+        "/brands/bmw-service-dubai/mechanical-repair"
+      ],
+      "fields": [
+        "p"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "Many Q5 vehicles use EA888 2.0 TFSI engines; selected variants use V6 or other powertrains. PCV, water-pump, oil-consumption and cooling discussions apply only where the fitted engine and evidence support them.",
+      "occurrences": 1,
+      "routes": [
+        "/brands/audi-service-dubai/q5"
+      ],
+      "fields": [
+        "p"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "Most concerns begin with bushes, arms, dampers, mounts, bearings, tyres or alignment; selected Q5 variants add adaptive control that needs scan data and calibration awareness.",
+      "occurrences": 1,
+      "routes": [
+        "/brands/audi-service-dubai/q5"
+      ],
+      "fields": [
+        "p"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "Inspect cooling and AC performance before summer.",
+      "occurrences": 1,
+      "routes": [
+        "/brands/audi-service-dubai/q5"
+      ],
+      "fields": [
+        "li"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "Depending on generation and market, Q7 engines include supercharged or turbocharged 3.0 TFSI, 4.0 TFSI performance applications and several TDI variants. Cooling, oil specification and diagnostic paths are not interchangeable.",
+      "occurrences": 1,
+      "routes": [
+        "/brands/audi-service-dubai/q7"
+      ],
+      "fields": [
+        "p"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "Coolant warning or rising temperature · Vehicle sitting low after parking · Shudder on full-lock or low-speed acceleration · EPC light, reduced power or repeated low-voltage warnings",
+      "occurrences": 1,
+      "routes": [
+        "/brands/audi-service-dubai/q7"
+      ],
+      "fields": [
+        "p"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "Common regional Q8 applications include the EA839 3.0 TFSI; SQ8 and RS Q8 use different high-output powertrains. Cooling layouts, lubrication requirements and 48-volt architecture must be confirmed per vehicle.",
+      "occurrences": 1,
+      "routes": [
+        "/brands/audi-service-dubai/q8"
+      ],
+      "fields": [
+        "p"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "Adaptive air suspension and rear-steering equipment vary. Diagnosis can require ride-height measurements, pressure testing, sensor data and wheel-alignment or calibration checks.",
+      "occurrences": 1,
+      "routes": [
+        "/brands/audi-service-dubai/q8"
+      ],
+      "fields": [
+        "p"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "Test both battery/charging architecture and AC performance under load.",
+      "occurrences": 1,
+      "routes": [
+        "/brands/audi-service-dubai/q8"
+      ],
+      "fields": [
+        "li"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "Audi Q8 service and repair in Dubai for 55 TFSI and performance variants, including 48-volt, quattro, air suspension, cooling, brakes, AC and diagnostics.",
+      "occurrences": 3,
+      "routes": [
+        "/brands/audi-service-dubai/q8"
+      ],
+      "fields": [
+        "metadata.description",
+        "schema.@graph.0.description",
+        "schema.@graph.2.description"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "It can, but that does not prove the battery is the only fault. Battery condition, charging performance, network codes and the order in which warnings occurred should be assessed together.",
+      "occurrences": 1,
+      "routes": [
+        "/brands/audi-service-dubai/q8"
+      ],
+      "fields": [
+        "schema.@graph.3.mainEntity.1.acceptedAnswer.text"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "Misfire, reduced power or electrical warnings requiring configuration-specific diagnosis",
+      "occurrences": 1,
+      "routes": [
+        "/brands/audi-service-dubai/r8"
+      ],
+      "fields": [
+        "li"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "Confirm cooling integrity and AC performance before peak heat.",
+      "occurrences": 1,
+      "routes": [
+        "/brands/audi-service-dubai/r8"
+      ],
+      "fields": [
+        "li"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "The 2.5 TFSI five-cylinder has generation-specific revisions. Misfire, boost, cooling, crankcase and oil concerns should be tested rather than inferred from modified or unrelated vehicles.",
+      "occurrences": 1,
+      "routes": [
+        "/brands/audi-service-dubai/rs3"
+      ],
+      "fields": [
+        "p"
+      ],
+      "classification": "EXISTING MODIFICATION / USAGE CONTEXT FOR INSPECTION",
+      "reason": "The sentence asks about existing modifications or intended usage so the workshop can inspect the existing vehicle accurately. It does not offer DIGI-TEC tuning or promise to carry out a proposed power upgrade.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "S tronic behaviour depends on clutch, mechatronic, fluid, adaptation, temperature and engine torque quality. The 8Y rear torque-split hardware adds a different diagnostic layer from earlier systems.",
+      "occurrences": 1,
+      "routes": [
+        "/brands/audi-service-dubai/rs3"
+      ],
+      "fields": [
+        "p"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "Misfire or boost-control symptoms under load",
+      "occurrences": 1,
+      "routes": [
+        "/brands/audi-service-dubai/rs3"
+      ],
+      "fields": [
+        "li"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "Use matched performance tyres with correct pressures and adequate heat condition.",
+      "occurrences": 1,
+      "routes": [
+        "/brands/audi-service-dubai/rs3"
+      ],
+      "fields": [
+        "li"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "Clutch adaptation, temperature, fluid, mechatronics, mounts, engine torque irregularity or internal wear are possible. A scan and reproducible road test should come first.",
+      "occurrences": 1,
+      "routes": [
+        "/brands/audi-service-dubai/rs3"
+      ],
+      "fields": [
+        "schema.@graph.3.mainEntity.1.acceptedAnswer.text"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "Yes. ECU or transmission software, intake, exhaust, cooling, suspension and wheel changes can alter expected readings and loads. Declare the full specification when booking.",
+      "occurrences": 1,
+      "routes": [
+        "/brands/audi-service-dubai/rs3"
+      ],
+      "fields": [
+        "schema.@graph.3.mainEntity.2.acceptedAnswer.text"
+      ],
+      "classification": "EXISTING MODIFICATION / USAGE CONTEXT FOR INSPECTION",
+      "reason": "The sentence asks about existing modifications or intended usage so the workshop can inspect the existing vehicle accurately. It does not offer DIGI-TEC tuning or promise to carry out a proposed power upgrade.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "Both generations use 4.0 TFSI V8 applications, but hardware and control strategies differ. Oil pressure, cooling, boost, crankcase ventilation and cylinder-deactivation concerns require generation-specific evidence.",
+      "occurrences": 1,
+      "routes": [
+        "/brands/audi-service-dubai/rs6"
+      ],
+      "fields": [
+        "p"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "RS6 vehicles use high-torque automatic transmissions and quattro. Shift complaints require data and checks of temperature, fluid history, mounts, shafts, differentials and tyres.",
+      "occurrences": 1,
+      "routes": [
+        "/brands/audi-service-dubai/rs6"
+      ],
+      "fields": [
+        "p"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "Drive-system warnings or loss of performance",
+      "occurrences": 1,
+      "routes": [
+        "/brands/audi-service-dubai/rs6"
+      ],
+      "fields": [
+        "li"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "Use oil and fluid approvals matched to the exact powertrain and service record.",
+      "occurrences": 1,
+      "routes": [
+        "/brands/audi-service-dubai/rs6"
+      ],
+      "fields": [
+        "li"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "Oil-pressure or coolant warning · Misfire, EPC or reduced power · Knock, uneven ride height or suspension warning · Brake vibration or pedal change",
+      "occurrences": 1,
+      "routes": [
+        "/brands/audi-service-dubai/rs6"
+      ],
+      "fields": [
+        "p"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "Repair, calibration, alignment, and road test",
+      "occurrences": 2,
+      "routes": [
+        "/brands/audi-service-dubai/steering-repair",
+        "/brands/bmw-service-dubai/steering-repair"
+      ],
+      "fields": [
+        "h3"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "Confirm repair or replacement options, then check alignment and supported calibration where the completed work requires them.",
+      "occurrences": 2,
+      "routes": [
+        "/brands/audi-service-dubai/steering-repair",
+        "/brands/bmw-service-dubai/steering-repair"
+      ],
+      "fields": [
+        "p"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "Ask which component or measurement supports the diagnosis, which parts are proposed, and whether alignment or a supported steering calibration is required for the work.",
+      "occurrences": 2,
+      "routes": [
+        "/brands/audi-service-dubai/steering-repair",
+        "/brands/bmw-service-dubai/steering-repair"
+      ],
+      "fields": [
+        "schema.@graph.4.mainEntity.1.acceptedAnswer.text"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "Ride-height changes, clunks, uneven tyre wear or a suspension warning on your Audi need the fitted system identified first. The model range includes mechanical, adaptive and air-suspension systems depending on model and fitted equipment, but equipment varies. Digi-Tec checks mechanical condition, tyre influence and compatible fault data before proposing damper, joint, air-system or control repairs. Parts, supported calibration and alignment needs are confirmed from the findings.",
+      "occurrences": 1,
+      "routes": [
+        "/brands/audi-service-dubai/suspension-repair"
+      ],
+      "fields": [
+        "p"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "Supported calibration and road test",
+      "occurrences": 2,
+      "routes": [
+        "/brands/audi-service-dubai/suspension-repair",
+        "/brands/bmw-service-dubai/suspension-repair"
+      ],
+      "fields": [
+        "h3"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "Ride-height or damper calibration is included only if required and supported for the platform, followed by an appropriate alignment check and road test.",
+      "occurrences": 2,
+      "routes": [
+        "/brands/audi-service-dubai/suspension-repair",
+        "/brands/bmw-service-dubai/suspension-repair"
+      ],
+      "fields": [
+        "p"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "Dampers, mounts, control arms and bushings are selected for the exact Audi configuration. The quotation may identify genuine, established OE-supplier, upgrade or other suitable customer-approved options, with compatibility and availability confirmed before ordering.",
+      "occurrences": 1,
+      "routes": [
+        "/brands/audi-service-dubai/suspension-repair"
+      ],
+      "fields": [
+        "p"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "The system can be inspected and a repair route proposed. Compressor, valve-block, sensor, damper and calibration availability is confirmed for the exact Audi platform before work.",
+      "occurrences": 1,
+      "routes": [
+        "/brands/audi-service-dubai/suspension-repair"
+      ],
+      "fields": [
+        "schema.@graph.4.mainEntity.1.acceptedAnswer.text"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "Timing depends on the fitted system, inspection findings, parts availability, access and any supported calibration or alignment work. It is confirmed with the quotation.",
+      "occurrences": 1,
+      "routes": [
+        "/brands/audi-service-dubai/suspension-repair"
+      ],
+      "fields": [
+        "schema.@graph.4.mainEntity.4.acceptedAnswer.text"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "The model-specific S tronic, tiptronic, manual and driveline systems in a Audi has model-specific fluid, temperature and adaptation requirements. Digi-Tec first confirms the VIN, fitted gearbox, service history and symptoms. The specified fluid reference, fill procedure, compatible parts, supported diagnostic functions and workshop scope are then documented before service. Mechatronic, clutch-pack, torque-converter or rebuild work is recommended only after inspection, and availability is confirmed for the exact unit. Digi-Tec has operated in Dubai since 2002; the Audi workshop scope is confirmed for each vehicle.",
+      "occurrences": 1,
+      "routes": [
+        "/brands/audi-service-dubai/transmission-repair"
+      ],
+      "fields": [
+        "p"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "Calibrate steering or driver-assistance functions where the repair procedure requires it.",
+      "occurrences": 1,
+      "routes": [
+        "/brands/bmw-service-dubai/3-series"
+      ],
+      "fields": [
+        "li"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "A 5 Series can be a four-cylinder commuter, B58-powered 540i, V8 550i, diesel or electrified model. F10, G30 and G60 systems differ substantially, so the VIN, engine and option list guide every service or diagnostic plan.",
+      "occurrences": 1,
+      "routes": [
+        "/brands/bmw-service-dubai/5-series"
+      ],
+      "fields": [
+        "p"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "Investigate fan, thermostat, pump and airflow performance when temperature behaviour changes.",
+      "occurrences": 1,
+      "routes": [
+        "/brands/bmw-service-dubai/5-series"
+      ],
+      "fields": [
+        "li"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "Scan the correct chassis modules and test power supply first when warnings multiply.",
+      "occurrences": 1,
+      "routes": [
+        "/brands/bmw-service-dubai/5-series"
+      ],
+      "fields": [
+        "li"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "Stop safely if braking performance or pedal feel changes, fluid is leaking, or the vehicle displays an urgent brake instruction. Arrange recovery if braking is unsafe.",
+      "occurrences": 1,
+      "routes": [
+        "/brands/bmw-service-dubai/brake-repair"
+      ],
+      "fields": [
+        "schema.@graph.4.mainEntity.2.acceptedAnswer.text"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "A black screen, iDrive reboot, camera fault or repeated battery drain can involve supply voltage, wiring, display, head unit or module communication. DIGI-TEC traces the reported function and identifies the fitted CCC, CIC, NBT or later architecture where relevant. Fault repair differs from an audio or infotainment upgrade. Coding and programming are offered only if the vehicle, module and required access support the requested function.",
+      "occurrences": 1,
+      "routes": [
+        "/brands/bmw-service-dubai/electrical-repair"
+      ],
+      "fields": [
+        "p"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "Is an iDrive upgrade the same as repairing a fault?",
+      "occurrences": 2,
+      "routes": [
+        "/brands/bmw-service-dubai/electrical-repair"
+      ],
+      "fields": [
+        "h3",
+        "schema.@graph.4.mainEntity.2.name"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "No. Power supply, display, software state, wiring and communication need checking before a unit is condemned.",
+      "occurrences": 1,
+      "routes": [
+        "/brands/bmw-service-dubai/electrical-repair"
+      ],
+      "fields": [
+        "schema.@graph.4.mainEntity.0.acceptedAnswer.text"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "No. A fault investigation identifies why the current system does not work. A retrofit or upgrade requires separate compatibility and scope confirmation.",
+      "occurrences": 1,
+      "routes": [
+        "/brands/bmw-service-dubai/electrical-repair"
+      ],
+      "fields": [
+        "schema.@graph.4.mainEntity.2.acceptedAnswer.text"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "Engine or drivetrain warning, misfire or reduced performance",
+      "occurrences": 1,
+      "routes": [
+        "/brands/bmw-service-dubai/engine-diagnostics"
+      ],
+      "fields": [
+        "span"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "Use relevant circuit or mechanical tests for a fault. For coding or programming, confirm the requested function, hardware, software, access and power-supply requirements first.",
+      "occurrences": 1,
+      "routes": [
+        "/brands/bmw-service-dubai/engine-diagnostics"
+      ],
+      "fields": [
+        "p"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "BMW Engine & ECU Diagnostics",
+      "occurrences": 1,
+      "routes": [
+        "/brands/bmw-service-dubai/engine-diagnostics"
+      ],
+      "fields": [
+        "schema.@graph.3.serviceType"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "BMW exhaust noise, rattling, leaks or emissions warnings need inspection of the affected pipework, joints, mounts, silencer or control components. Repair of the existing system is assessed separately from performance modification. Digi-Tec assesses the concern in Al Quoz, Dubai, identifies the fitted system and explains the findings before parts or repair are agreed.",
+      "occurrences": 1,
+      "routes": [
+        "/brands/bmw-service-dubai/exhaust-repair"
+      ],
+      "fields": [
+        "p"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "Weak cooling, warm air at idle or uneven cabin temperature needs AC performance testing. Inspection may cover refrigerant leaks, the compressor, condenser, fans and climate controls before a recharge or repair is proposed.",
+      "occurrences": 1,
+      "routes": [
+        "/brands/bmw-service-dubai"
+      ],
+      "fields": [
+        "p"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "Heat, stop-start driving and dust add load to cooling, batteries, air conditioning and filters. Share how the car is used alongside its service history. Cooling performance, leaks, battery health, brake wear and AC output can then be considered in the inspection, with the service plan matched to your BMW.",
+      "occurrences": 1,
+      "routes": [
+        "/brands/bmw-service-dubai"
+      ],
+      "fields": [
+        "p"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "We can inspect the warning using compatible fault data, live readings and physical tests. Engine, ignition, boost, fuel, voltage, transmission and driveline concerns can trigger similar messages. Send the exact warning, model, year and symptoms so the workshop can confirm the first inspection.",
+      "occurrences": 1,
+      "routes": [
+        "/brands/bmw-service-dubai"
+      ],
+      "fields": [
+        "schema.@graph.4.mainEntity.2.acceptedAnswer.text"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "We can inspect weak cooling, warm air and climate-control faults. AC performance, leaks, compressor operation, airflow and electrical controls may need testing. The available repair and refrigerant specification are confirmed for your vehicle before work is agreed.",
+      "occurrences": 1,
+      "routes": [
+        "/brands/bmw-service-dubai"
+      ],
+      "fields": [
+        "schema.@graph.4.mainEntity.5.acceptedAnswer.text"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "M3 generations are mechanically distinct. The V8 E9x, S55-powered F80 and S58-powered G80 require different oil, cooling, transmission and diagnostic decisions. Digi-Tec identifies the chassis and installed hardware before planning maintenance or performance-related inspection.",
+      "occurrences": 1,
+      "routes": [
+        "/brands/bmw-service-dubai/m3"
+      ],
+      "fields": [
+        "p"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "Check dampers, arms, bushes, wheels and tyres before alignment or chassis calibration.",
+      "occurrences": 1,
+      "routes": [
+        "/brands/bmw-service-dubai/m3"
+      ],
+      "fields": [
+        "li"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "Boost, ignition, fuel, temperature, transmission and sensor conditions can contribute.",
+      "occurrences": 1,
+      "routes": [
+        "/brands/bmw-service-dubai/m3"
+      ],
+      "fields": [
+        "p"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "Cooling warning or reduced performance",
+      "occurrences": 1,
+      "routes": [
+        "/brands/bmw-service-dubai/m3"
+      ],
+      "fields": [
+        "h3"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "Log boost, mixture, ignition and temperatures when diagnosing load-related faults.",
+      "occurrences": 1,
+      "routes": [
+        "/brands/bmw-service-dubai/m4"
+      ],
+      "fields": [
+        "li"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "Diagnose roof or body-electrical concerns separately from powertrain warnings.",
+      "occurrences": 1,
+      "routes": [
+        "/brands/bmw-service-dubai/m4"
+      ],
+      "fields": [
+        "li"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "Power loss or misfire under boost",
+      "occurrences": 1,
+      "routes": [
+        "/brands/bmw-service-dubai/m4"
+      ],
+      "fields": [
+        "h3"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "Air, boost, ignition, fuel, temperature or control faults require recorded evidence.",
+      "occurrences": 1,
+      "routes": [
+        "/brands/bmw-service-dubai/m4"
+      ],
+      "fields": [
+        "p"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "Inspect engine and charge-air cooling performance according to the generation.",
+      "occurrences": 1,
+      "routes": [
+        "/brands/bmw-service-dubai/m5"
+      ],
+      "fields": [
+        "li"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "Check engine torque delivery, mounts and differential play alongside gearbox data.",
+      "occurrences": 1,
+      "routes": [
+        "/brands/bmw-service-dubai/m5"
+      ],
+      "fields": [
+        "li"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "M chassis and high-performance brakes",
+      "occurrences": 1,
+      "routes": [
+        "/brands/bmw-service-dubai/m5"
+      ],
+      "fields": [
+        "h3"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "S63 engine, voltage, transmission or xDrive faults can trigger reduced power.",
+      "occurrences": 1,
+      "routes": [
+        "/brands/bmw-service-dubai/m5"
+      ],
+      "fields": [
+        "p"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "An oil stain, coolant loss, rough idle, overheating or reduced power does not identify one failed BMW component. DIGI-TEC checks the exact engine and history, then inspects the relevant cooling, lubrication, ignition, fuel, boost or mechanical path. VANOS and Valvetronic concerns are assessed where fitted and indicated by evidence. The repair proposal separates confirmed findings from further testing or dismantling.",
+      "occurrences": 1,
+      "routes": [
+        "/brands/bmw-service-dubai/mechanical-repair"
+      ],
+      "fields": [
+        "p"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "BMW engine and mechanical repair assessment in Al Quoz for leaks, overheating, rough running and power loss. A diagnosis precedes a repair quote.",
+      "occurrences": 3,
+      "routes": [
+        "/brands/bmw-service-dubai/mechanical-repair"
+      ],
+      "fields": [
+        "metadata.description",
+        "schema.@graph.0.description",
+        "schema.@graph.3.description"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "Oil quantity and level-check procedure are matched to the fitted B58 inline-six, N63 and S63 V8, and S55 and S58 M-power six variant rather than assumed from the brand alone.",
+      "occurrences": 1,
+      "routes": [
+        "/brands/bmw-service-dubai/oil-change"
+      ],
+      "fields": [
+        "p"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "Air struts, compressors, valve blocks and sensors are selected for the exact BMW system. The quotation may identify genuine, established OE-supplier, upgrade or other suitable customer-approved options, with compatibility and availability confirmed before ordering.",
+      "occurrences": 1,
+      "routes": [
+        "/brands/bmw-service-dubai/suspension-repair"
+      ],
+      "fields": [
+        "p"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "The X5 combines BMW powertrains with xDrive, a heavy SUV chassis and generation-dependent suspension and electronics. Digi-Tec plans maintenance and fault-finding around the exact E70, F15 or G05 configuration—not the X5 badge alone.",
+      "occurrences": 1,
+      "routes": [
+        "/brands/bmw-service-dubai/x5"
+      ],
+      "fields": [
+        "p"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "Calibrate relevant ride-height or driver-assistance systems after applicable work.",
+      "occurrences": 1,
+      "routes": [
+        "/brands/bmw-service-dubai/x5"
+      ],
+      "fields": [
+        "li"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "Drivetrain malfunction or reduced power",
+      "occurrences": 1,
+      "routes": [
+        "/brands/bmw-service-dubai/x5"
+      ],
+      "fields": [
+        "h3"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "The message can be triggered by engine, boost, fuel, ignition, transmission or voltage faults; the message alone is not a diagnosis.",
+      "occurrences": 1,
+      "routes": [
+        "/brands/bmw-service-dubai/x5"
+      ],
+      "fields": [
+        "p"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "X6 diagnosis must distinguish its generation, engine and chassis options. The E71, F16 and G06 use different electronics and powertrains, while xDrive, wide staggered tyres and adaptive chassis systems can make one symptom appear in several systems.",
+      "occurrences": 1,
+      "routes": [
+        "/brands/bmw-service-dubai/x6"
+      ],
+      "fields": [
+        "p"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "N54/N55 and V8-era powertrains with generation-specific six- or eight-speed automatic and xDrive systems.",
+      "occurrences": 1,
+      "routes": [
+        "/brands/bmw-service-dubai/x6"
+      ],
+      "fields": [
+        "p"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "Powertrain and cooling",
+      "occurrences": 1,
+      "routes": [
+        "/brands/bmw-service-dubai/x6"
+      ],
+      "fields": [
+        "h3"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "Use ride-height calibration only when required by the completed repair.",
+      "occurrences": 1,
+      "routes": [
+        "/brands/bmw-service-dubai/x6"
+      ],
+      "fields": [
+        "li"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "X6 transmission repair Gearbox symptoms separated from xDrive and engine torque concerns. View service",
+      "occurrences": 1,
+      "routes": [
+        "/brands/bmw-service-dubai/x6"
+      ],
+      "fields": [
+        "a"
+      ],
+      "classification": "EXISTING REPAIR / MAINTENANCE / SYSTEM CONDITION",
+      "reason": "Read as a complete rendered sentence and with its page/schema context, this describes fitted vehicle systems, fault symptoms, maintenance, diagnostic findings, repair parts or required post-repair calibration. It makes no DIGI-TEC power-tuning offer for BMW/Audi.",
+      "positiveTuningClaim": false
+    },
+    {
+      "text": "Digi-Tec in Al Quoz, Dubai covers scheduled servicing and oil changes, electronic diagnostics, engine and transmission repair, brakes, suspension and steering, air conditioning and electrical repair, module coding and programming, body and paint work, paint protection film and ceramic coating. Workshop service and repair brands include Mercedes-Benz, BMW, Audi, Porsche, Ferrari, Lamborghini, Range Rover and luxury electric vehicles. Performance tuning packages and coverage are reviewed separately against the Performance Configurator and exact vehicle specification.",
+      "occurrences": 1,
+      "routes": [
+        "/services"
+      ],
+      "fields": [
+        "p"
+      ],
+      "classification": "EXPLICIT REPAIR / TUNING SCOPE SEPARATION",
+      "reason": "The paragraph assigns BMW/Audi to service/repair coverage, then separately limits tuning review to the Performance Configurator. No BMW/Audi tuning record or package is claimed.",
+      "positiveTuningClaim": false
+    }
+  ],
+  "pending": [],
+  "staleRemaining": []
+}

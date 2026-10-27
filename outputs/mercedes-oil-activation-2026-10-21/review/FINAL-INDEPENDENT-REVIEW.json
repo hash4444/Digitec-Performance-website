@@ -1,0 +1,26 @@
+{
+  "comparedAt": "2026-10-21T06:42:49.373Z",
+  "passed": true,
+  "ruleId": "5addb0c068414fb5b985a869ded26c68",
+  "submittedAtUtc": "2026-10-21T06:40:17.643Z",
+  "confirmedAtUtc": "2026-10-21T06:40:42.774Z",
+  "actualFormMatchesReviewedCandidate": true,
+  "threeEnabledRulesOnly": true,
+  "newRuleFirst": true,
+  "existingIdsAndDefinitionsRetained": true,
+  "existingRelativeOrderRetained": true,
+  "protectedFilesUnchanged": true,
+  "protectedSourceFiles": 601,
+  "liveHttpCasesPassed": 72,
+  "liveHttpFailures": [],
+  "rollbackPerformed": false,
+  "evidence": [
+    "../cloudflare/post-new-rule.txt",
+    "../cloudflare/post-rule-inventory.txt",
+    "../cloudflare/post-rules-overview.txt",
+    "post-cloudflare-comparison.json",
+    "protected-file-comparison.json",
+    "../http/post-results.json"
+  ],
+  "limitation": "Control-plane review uses root-captured authenticated visible state and recorded rule link ID, not an API version export. HTTP outcomes are from the independent read-only HTTP agent."
+}

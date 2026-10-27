@@ -1,0 +1,124 @@
+PPF and ceramic implementation notes — 12 October 2026
+
+Scope
+- Modified only src/pages/PpfPage.tsx, src/pages/CeramicCoatingPage.tsx,
+  src/data/ppfContent.ts and src/data/ceramicCoatingContent.ts.
+- Before copies saved in outputs/paint-seo-2026-10-12/before/ with matching
+  source-relative paths before editing.
+- No commits, pushes, deployment, infrastructure changes or new dependencies.
+- No AGENTS.md found in repository file inventory or inspected ancestor folders.
+
+Audit findings
+- Both existing English dedicated pages already have one H1, original substantial
+  copy, semantic comparison tables, product-dependent FAQs, branded workshop
+  information, dimensioned responsive images and shared WebPage/Service/
+  BreadcrumbList schema. Dedicated rewrite or duplicate routes were unnecessary.
+- Existing PPF title emphasized "for Cars" instead of installation. Search intent
+  ownership in the brief supports making installation explicit; this is an intent
+  decision, not evidence that current rankings are caused by the old title.
+- Existing PPF copy discussed self-healing and matte/satin film without evidence
+  for products or finishes actually installed at DIGI-TEC. services.ts contains
+  conditional descriptions but no verified product record, manufacturer or SKU.
+  Those descriptions were removed from these owned PPF files to meet the brief.
+- Ceramic maintenance and curing information was dispersed across process and
+  FAQ text; a dedicated visible section now makes those requirements easier to
+  review before requesting a quote.
+- Existing ceramic title/H1 already match the intended commercial ownership and
+  are retained. The preparation text now distinguishes car polishing and coating
+  explicitly, without inventing correction packages or guaranteed results.
+- Existing captions correctly distinguish workshop photographs from documented
+  coating/PPF project results; image assets, alt text and captions were preserved.
+
+Implemented changes
+src/data/ppfContent.ts
+  Installation-focused metadata; scratch and appearance FAQs now avoid
+  unverified self-healing and available-finish implications. Retained all 14 FAQs,
+  WhatsApp phone/draft and existing coverage options.
+src/pages/PpfPage.tsx
+  Installation-focused intro; contextual hub comparison link near the definition;
+  explicit full-body vs partial scope and film-boundary tradeoffs; concrete surface
+  preparation steps; film/finish selection guidance without unverified features;
+  comparison table no longer mentions self-healing; dateModified 2026-10-12.
+src/data/ceramicCoatingContent.ts
+  Description leads with ceramic coating for cars and Al Quoz location; correction
+  FAQ clearly explains the separate processes and safe limits. Retained 16 FAQs.
+src/pages/CeramicCoatingPage.tsx
+  Service-specific intro and H1 rendered from existing constant; explicit polishing
+  distinction; contextual hub comparison link; a curing and aftercare section with
+  first-wash instructions, careful cleaning and assessment of surface changes;
+  jump-navigation anchor for the section; dateModified 2026-10-12.
+
+Before and after metadata
+URL: /services/paint-protection-film
+Title before: PPF Dubai | Paint Protection Film for Cars | DIGI-TEC
+Title after: PPF Dubai | Paint Protection Film Installation | DIGI-TEC
+Description before: Car paint protection film in Dubai. Compare full-body and selected-panel PPF, preparation and aftercare at DIGI-TEC in Al Quoz. Request a quote for your car.
+Description after: PPF installation in Al Quoz, Dubai. Compare full-body and selected-panel paint protection film, preparation and aftercare. Request a DIGI-TEC quote for your car.
+H1 before/after: Paint Protection Film (PPF) Dubai
+Canonical before/after: https://digitecme.com/services/paint-protection-film
+
+URL: /services/ceramic-coating
+Title before/after: Ceramic Coating Dubai | Car Paint Protection | DIGI-TEC
+Description before: Ceramic paint protection in Dubai for luxury and performance cars. Explore coating, paint preparation and aftercare at DIGI-TEC in Al Quoz. Get your quote.
+Description after: Ceramic coating for cars in Al Quoz, Dubai. Discuss paint preparation, water-beading benefits and ongoing care at DIGI-TEC. Request a vehicle-specific quote.
+H1 before/after: Ceramic Coating Dubai
+Canonical before/after: https://digitecme.com/services/ceramic-coating
+
+Internal linking changes
+- /services/paint-protection-film -> /services/paint-protection-dubai
+  New definition-section link: "Compare film, coating and paint correction".
+- /services/ceramic-coating -> /services/paint-protection-dubai
+  New aftercare-section link: "Compare your paint protection options".
+- /services/ceramic-coating -> /services/car-polishing-dubai
+  Existing preparation link refined to "Explore car polishing and paint correction".
+- /services/ceramic-coating -> #ceramic-care
+  New same-page jump link: "Curing & aftercare".
+- Existing dedicated service, comparison blog, brand, repair and contact links
+  retained. No new routes, aliases, redirects or canonical changes.
+
+Verification performed by this subtask
+- Executed .\node_modules\.bin\eslint.cmd on the four owned files after edits.
+  Result: exit 0 with no lint errors or warnings.
+- Full build, type checking, prerender metadata/schema validation, all-link crawl,
+  mobile visual checks and English/Arabic consistency are owned by the parent
+  integration task; not claimed as passed here.
+- Parent notified that scripts/validate-ppf.mjs hardcodes the old title. Parent must
+  update expected title assertions, including other relevant validators, before
+  checking the newly built output. FAQ counts remain 14 PPF and 16 ceramic.
+- Routes, existing WhatsApp/call tracking placements, contact values, PPF form and
+  responsive image dimensions were preserved.
+
+Technical references
+General maintenance guidance was checked against primary manufacturer sources.
+These sources do not establish that DIGI-TEC installs either manufacturer's products;
+no product brands, durations, specifications or warranties were added.
+- Gtechniq, How to Wash a Ceramic Coated Car:
+  https://gtechniq.com/how-to-wash-a-ceramic-coated-car/
+  Supports careful removal of dirt and compatible washing rather than rubbing
+  contamination into the paint.
+- Gtechniq, How to Fully Decontaminate Your Car:
+  https://www.gtechniq.co.uk/how-do-i-fully-decontaminate-my-car-to-get-the-water-beading-back/
+  Supports assessing surface contamination and condition before assuming reduced
+  water beading means the original coating has disappeared. The page copy draws
+  only this general conclusion; no specific chemicals or reconditioning schedule.
+- XPEL, Product Care Instructions:
+  https://www.xpel.com/product-care
+  Confirms product-dependent first-wash/curing and maintenance guidance. Fixed
+  intervals were deliberately not copied into DIGI-TEC's service copy.
+
+Remaining opportunities and Arabic gaps for parent
+- Arabic equivalents use ServicePage and refineArabicProtectionService rather than
+  these dedicated English components. The existing Arabic protection file has
+  concise and accurate intros/FAQs, but lacks equivalent depth for coverage choice,
+  preparation stages, curing and ongoing care. Parent owns Arabic enhancements.
+- Arabic polishing does not appear as an indexable existing canonical route;
+  preserve current routing and avoid creating unverified translated destinations.
+- Conditional self-healing claims also remain outside this owned scope in
+  services.ts, PPFCeramicSection.tsx and older English/Arabic blog material. Parent
+  should review them against the brief and product evidence.
+- Business confirmation is needed for offered film finishes, brands, product-rated
+  properties, film removal service scope, coating systems and surface compatibility.
+- Product documentation and real project photographs are needed before any
+  self-healing, warranty, hardness, thickness, durability or package-price claims.
+- GSC workbook observations alone do not establish keyword cannibalization;
+  query-page exports are required to verify which URL ranks for each query.

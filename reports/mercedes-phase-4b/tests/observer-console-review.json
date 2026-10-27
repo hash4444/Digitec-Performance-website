@@ -1,0 +1,219 @@
+{
+  "reviewedAtUtc": "2026-10-26T10:41:42.924Z",
+  "readOnly": true,
+  "sourceEdits": 0,
+  "networkRequests": 0,
+  "evidence": {
+    "earlierPhase4Console": {
+      "file": "reports/mercedes-phase-4/browser/console-log.json",
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "entries": [],
+      "limit": "The earlier report explicitly says an empty browser API capture does not guarantee every possible diagnostic was captured."
+    },
+    "phase4bConsoleSnapshot": {
+      "file": "reports/mercedes-phase-4b/browser/browser-console.json",
+      "sha256": "be1c8793afc87bf41d356a83634ad4fcd8e4dfa25b06fec4fc35144bf8eeaf5d",
+      "entries": {
+        "a": [
+          {
+            "level": "error",
+            "message": "Uncaught TypeError: Failed to execute 'observe' on 'MutationObserver': parameter 1 is not of type 'Node'.",
+            "timestamp": "2026-10-26T10:35:49.488Z"
+          }
+        ],
+        "b": []
+      },
+      "limit": "Snapshot at this review time; root may separately capture repeat observations. No stack/source URL was present in this snapshot."
+    },
+    "sourceHashes": [
+      {
+        "file": "src/App.tsx",
+        "sha256": "02a02dc0ddc586316873d45f9d2db96d8cbee2f09251d47d21738c17dd08bd4e"
+      },
+      {
+        "file": "reports/mercedes-phase-4/baseline.local/src/App.tsx",
+        "sha256": "02a02dc0ddc586316873d45f9d2db96d8cbee2f09251d47d21738c17dd08bd4e"
+      },
+      {
+        "file": "reports/mercedes-phase-4/candidate.local/src/App.tsx",
+        "sha256": "02a02dc0ddc586316873d45f9d2db96d8cbee2f09251d47d21738c17dd08bd4e"
+      },
+      {
+        "file": "reports/mercedes-phase-4b/production-matched.local/baseline.local/src/App.tsx",
+        "sha256": "02a02dc0ddc586316873d45f9d2db96d8cbee2f09251d47d21738c17dd08bd4e"
+      },
+      {
+        "file": "reports/mercedes-phase-4b/production-matched.local/candidate.local/src/App.tsx",
+        "sha256": "02a02dc0ddc586316873d45f9d2db96d8cbee2f09251d47d21738c17dd08bd4e"
+      },
+      {
+        "file": "reports/mercedes-phase-4b/production-matched.local/release-b.local/src/App.tsx",
+        "sha256": "02a02dc0ddc586316873d45f9d2db96d8cbee2f09251d47d21738c17dd08bd4e"
+      }
+    ],
+    "sourceByteIdenticalAcrossAllSix": true,
+    "scrollToTopSourceExcerpt": [
+      {
+        "line": 64,
+        "text": "  const { pathname, hash } = useLocation();"
+      },
+      {
+        "line": 65,
+        "text": "  useEffect(() => {"
+      },
+      {
+        "line": 66,
+        "text": "    if (typeof window === 'undefined') return;"
+      },
+      {
+        "line": 67,
+        "text": "    if ('scrollRestoration' in window.history) {"
+      },
+      {
+        "line": 68,
+        "text": "      window.history.scrollRestoration = 'manual';"
+      },
+      {
+        "line": 69,
+        "text": "    }"
+      },
+      {
+        "line": 70,
+        "text": "    if (!hash) {"
+      },
+      {
+        "line": 71,
+        "text": "      window.scrollTo({ top: 0, left: 0, behavior: 'instant' });"
+      },
+      {
+        "line": 72,
+        "text": "      return;"
+      },
+      {
+        "line": 73,
+        "text": "    }"
+      },
+      {
+        "line": 74,
+        "text": "    // A related-service fragment may arrive before its lazy route has mounted."
+      },
+      {
+        "line": 75,
+        "text": "    let id: string;"
+      },
+      {
+        "line": 76,
+        "text": "    try { id = decodeURIComponent(hash.slice(1)); } catch { return; }"
+      },
+      {
+        "line": 77,
+        "text": "    let frame: number;"
+      },
+      {
+        "line": 78,
+        "text": "    const revealTarget = () => {"
+      },
+      {
+        "line": 79,
+        "text": "      const target = document.getElementById(id);"
+      },
+      {
+        "line": 80,
+        "text": "      if (!target) return false;"
+      },
+      {
+        "line": 81,
+        "text": "      frame = window.requestAnimationFrame(() => target.scrollIntoView({ block: 'start' }));"
+      },
+      {
+        "line": 82,
+        "text": "      return true;"
+      },
+      {
+        "line": 83,
+        "text": "    };"
+      },
+      {
+        "line": 84,
+        "text": "    if (revealTarget()) return () => window.cancelAnimationFrame(frame);"
+      },
+      {
+        "line": 85,
+        "text": "    const observer = new MutationObserver(() => {"
+      },
+      {
+        "line": 86,
+        "text": "      if (revealTarget()) observer.disconnect();"
+      },
+      {
+        "line": 87,
+        "text": "    });"
+      },
+      {
+        "line": 88,
+        "text": "    observer.observe(document.getElementById('root') ?? document.body, { childList: true, subtree: true });"
+      },
+      {
+        "line": 89,
+        "text": "    const timeout = window.setTimeout(() => observer.disconnect(), 5000);"
+      },
+      {
+        "line": 90,
+        "text": "    return () => {"
+      },
+      {
+        "line": 91,
+        "text": "      observer.disconnect();"
+      },
+      {
+        "line": 92,
+        "text": "      window.clearTimeout(timeout);"
+      },
+      {
+        "line": 93,
+        "text": "      window.cancelAnimationFrame(frame);"
+      },
+      {
+        "line": 94,
+        "text": "    };"
+      },
+      {
+        "line": 95,
+        "text": "  }, [pathname, hash]);"
+      },
+      {
+        "line": 96,
+        "text": "  return null;"
+      },
+      {
+        "line": 97,
+        "text": "};"
+      },
+      {
+        "line": 98,
+        "text": ""
+      }
+    ],
+    "lastRelevantSourceCommit": {
+      "sha": "6180f453feaaf21b8c786f23bb3867a09666ed64",
+      "dateDubai": "2026-10-17T14:05:08+04:00",
+      "subject": "SEO: complete PPF growth phases 1-4"
+    }
+  },
+  "assessment": {
+    "observerCodePredatesApprovedChanges": true,
+    "exactErrorPreviouslyRecordedInReviewedPhase4Logs": false,
+    "errorProvenPreExisting": false,
+    "errorAttributedToScrollToTop": false,
+    "causeEstablished": false,
+    "reason": "The earlier console capture is empty; the exact exception exists in the Phase4B A log without stack/source. Existing observer code remains unchanged, but its presence is insufficient to attribute this event.",
+    "hashBranch": "ScrollToTop returns before constructing its MutationObserver when the URL has no fragment. The newly approved service links contain no fragment; this bounds relevance without proving a different source.",
+    "observedFunctionality": "Root reported successful A contact interception/navigation and no B log entry in the first capture; that does not make the console error harmless or the browser globally clean."
+  },
+  "recommendedEvidence": "Retain the diagnostic and compare fresh baseline/A/B observations, exact URL+fragment, action sequence, console source/stack if exposed, and timestamps. Do not patch product code without attribution and separate scope approval.",
+  "limitations": [
+    "Search of earlier saved logs is not proof that an unrecorded earlier error never occurred.",
+    "Unchanged source does not establish a pre-existing runtime failure.",
+    "No browser replay or error injection was performed by this subtask."
+  ]
+}

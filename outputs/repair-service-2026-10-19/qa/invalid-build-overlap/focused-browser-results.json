@@ -1,0 +1,1316 @@
+{
+  "checkedAt": "2026-10-19T06:44:36.472Z",
+  "base": "http://127.0.0.1:5196",
+  "passed": false,
+  "browser": "Headless Microsoft Edge using bundled Playwright",
+  "pageChecks": [
+    {
+      "route": "/services/mercedes-mechanical-repair-dubai",
+      "language": "en",
+      "viewport": "desktop",
+      "width": 1440,
+      "title": "Mercedes Engine & Mechanical Repair Dubai | Digi-Tec",
+      "h1": "Mercedes Engine & Mechanical Repair in Dubai",
+      "images": [
+        {
+          "source": "/images/digitec-d-mark.png",
+          "loaded": true
+        },
+        {
+          "source": "/brand-logos/showcase/mercedes-benz.png",
+          "loaded": true
+        }
+      ],
+      "viewportWidth": 1440,
+      "documentWidth": 1440,
+      "bodyWidth": 1440,
+      "overflow": 0,
+      "graphNodes": 10,
+      "serviceProvider": "https://digitecme.com/#business",
+      "faqQuestions": 5,
+      "faqOpensByClick": true,
+      "faqClosesByKeyboard": true,
+      "labelledAnswer": true,
+      "repairDraft": "Hi DIGI-TEC, I would like to request a Mercedes engine repair assessment.\n\nModel: \nYear: \nMileage: \nService history or recent work: \nWarning or symptoms: \nWhen it occurs: \nPreferred appointment time: ",
+      "contactLinks": [
+        {
+          "href": "https://wa.me/97143402223?text=Hi%20DIGI-TEC%2C%20I%20would%20like%20to%20request%20a%20Mercedes%20engine%20repair%20assessment.%0A%0AModel%3A%20%0AYear%3A%20%0AMileage%3A%20%0AService%20history%20or%20recent%20work%3A%20%0AWarning%20or%20symptoms%3A%20%0AWhen%20it%20occurs%3A%20%0APreferred%20appointment%20time%3A%20",
+          "placement": "hero",
+          "label": "Request a Mercedes Engine Inspection"
+        },
+        {
+          "href": "https://wa.me/97143402223?text=Hi%20DIGI-TEC%2C%20I%20would%20like%20to%20request%20a%20Mercedes%20engine%20repair%20assessment.%0A%0AModel%3A%20%0AYear%3A%20%0AMileage%3A%20%0AService%20history%20or%20recent%20work%3A%20%0AWarning%20or%20symptoms%3A%20%0AWhen%20it%20occurs%3A%20%0APreferred%20appointment%20time%3A%20",
+          "placement": "service_scope",
+          "label": "Request a Mercedes Engine Inspection"
+        },
+        {
+          "href": "https://wa.me/97143402223?text=Hi%20DIGI-TEC%2C%20I%20would%20like%20to%20request%20a%20Mercedes%20engine%20repair%20assessment.%0A%0AModel%3A%20%0AYear%3A%20%0AMileage%3A%20%0AService%20history%20or%20recent%20work%3A%20%0AWarning%20or%20symptoms%3A%20%0AWhen%20it%20occurs%3A%20%0APreferred%20appointment%20time%3A%20",
+          "placement": "repair_quote",
+          "label": "Request an assessment on WhatsApp"
+        }
+      ],
+      "safeWhatsAppClicks": 2,
+      "safePhoneClicks": 1,
+      "confirmedEnquiries": 0,
+      "passed": true
+    },
+    {
+      "route": "/ar/services/mercedes-mechanical-repair-dubai",
+      "language": "ar",
+      "viewport": "desktop",
+      "width": 1440,
+      "title": "إصلاح محرك مرسيدس في دبي | ديجي تيك القوز",
+      "h1": "إصلاح محرك مرسيدس والأعطال الميكانيكية في دبي",
+      "images": [
+        {
+          "source": "/images/digitec-d-mark.png",
+          "loaded": true
+        },
+        {
+          "source": "/brand-logos/showcase/mercedes-benz.png",
+          "loaded": true
+        }
+      ],
+      "viewportWidth": 1440,
+      "documentWidth": 1440,
+      "bodyWidth": 1440,
+      "overflow": 0,
+      "graphNodes": 10,
+      "serviceProvider": "https://digitecme.com/#business",
+      "faqQuestions": 3,
+      "faqOpensByClick": true,
+      "faqClosesByKeyboard": true,
+      "labelledAnswer": true,
+      "repairDraft": "مرحباً ديجي-تك، أود طلب فحص بخصوص إصلاح محرك مرسيدس.\n\nالطراز: \nسنة الصنع: \nالمسافة: \nسجل الصيانة أو العمل الأخير: \nالتحذير أو الأعراض: \nمتى تظهر: \nالموعد المفضل: ",
+      "contactLinks": [
+        {
+          "href": "https://wa.me/97143402223?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20%D8%AF%D9%8A%D8%AC%D9%8A-%D8%AA%D9%83%D8%8C%20%D8%A3%D9%88%D8%AF%20%D8%B7%D9%84%D8%A8%20%D9%81%D8%AD%D8%B5%20%D8%A8%D8%AE%D8%B5%D9%88%D8%B5%20%D8%A5%D8%B5%D9%84%D8%A7%D8%AD%20%D9%85%D8%AD%D8%B1%D9%83%20%D9%85%D8%B1%D8%B3%D9%8A%D8%AF%D8%B3.%0A%0A%D8%A7%D9%84%D8%B7%D8%B1%D8%A7%D8%B2%3A%20%0A%D8%B3%D9%86%D8%A9%20%D8%A7%D9%84%D8%B5%D9%86%D8%B9%3A%20%0A%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D9%81%D8%A9%3A%20%0A%D8%B3%D8%AC%D9%84%20%D8%A7%D9%84%D8%B5%D9%8A%D8%A7%D9%86%D8%A9%20%D8%A3%D9%88%20%D8%A7%D9%84%D8%B9%D9%85%D9%84%20%D8%A7%D9%84%D8%A3%D8%AE%D9%8A%D8%B1%3A%20%0A%D8%A7%D9%84%D8%AA%D8%AD%D8%B0%D9%8A%D8%B1%20%D8%A3%D9%88%20%D8%A7%D9%84%D8%A3%D8%B9%D8%B1%D8%A7%D8%B6%3A%20%0A%D9%85%D8%AA%D9%89%20%D8%AA%D8%B8%D9%87%D8%B1%3A%20%0A%D8%A7%D9%84%D9%85%D9%88%D8%B9%D8%AF%20%D8%A7%D9%84%D9%85%D9%81%D8%B6%D9%84%3A%20",
+          "placement": "hero",
+          "label": "راسلنا عبر واتساب"
+        },
+        {
+          "href": "https://wa.me/97143402223?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20%D8%AF%D9%8A%D8%AC%D9%8A-%D8%AA%D9%83%D8%8C%20%D8%A3%D9%88%D8%AF%20%D8%B7%D9%84%D8%A8%20%D9%81%D8%AD%D8%B5%20%D8%A8%D8%AE%D8%B5%D9%88%D8%B5%20%D8%A5%D8%B5%D9%84%D8%A7%D8%AD%20%D9%85%D8%AD%D8%B1%D9%83%20%D9%85%D8%B1%D8%B3%D9%8A%D8%AF%D8%B3.%0A%0A%D8%A7%D9%84%D8%B7%D8%B1%D8%A7%D8%B2%3A%20%0A%D8%B3%D9%86%D8%A9%20%D8%A7%D9%84%D8%B5%D9%86%D8%B9%3A%20%0A%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D9%81%D8%A9%3A%20%0A%D8%B3%D8%AC%D9%84%20%D8%A7%D9%84%D8%B5%D9%8A%D8%A7%D9%86%D8%A9%20%D8%A3%D9%88%20%D8%A7%D9%84%D8%B9%D9%85%D9%84%20%D8%A7%D9%84%D8%A3%D8%AE%D9%8A%D8%B1%3A%20%0A%D8%A7%D9%84%D8%AA%D8%AD%D8%B0%D9%8A%D8%B1%20%D8%A3%D9%88%20%D8%A7%D9%84%D8%A3%D8%B9%D8%B1%D8%A7%D8%B6%3A%20%0A%D9%85%D8%AA%D9%89%20%D8%AA%D8%B8%D9%87%D8%B1%3A%20%0A%D8%A7%D9%84%D9%85%D9%88%D8%B9%D8%AF%20%D8%A7%D9%84%D9%85%D9%81%D8%B6%D9%84%3A%20",
+          "placement": "repair_quote",
+          "label": "اطلب فحصاً وعرض سعر عبر واتساب"
+        }
+      ],
+      "safeWhatsAppClicks": 2,
+      "safePhoneClicks": 1,
+      "confirmedEnquiries": 0,
+      "passed": true
+    },
+    {
+      "route": "/services/mercedes-suspension-repair-dubai",
+      "language": "en",
+      "viewport": "desktop",
+      "width": 1440,
+      "title": "Mercedes Suspension Repair Dubai | AIRMATIC & ABC | Digi-Tec",
+      "h1": "Mercedes Suspension & AIRMATIC Repair in Dubai",
+      "images": [
+        {
+          "source": "/images/digitec-d-mark.png",
+          "loaded": true
+        },
+        {
+          "source": "/brand-logos/showcase/mercedes-benz.png",
+          "loaded": true
+        }
+      ],
+      "viewportWidth": 1440,
+      "documentWidth": 1440,
+      "bodyWidth": 1440,
+      "overflow": 0,
+      "graphNodes": 10,
+      "serviceProvider": "https://digitecme.com/#business",
+      "faqQuestions": 5,
+      "faqOpensByClick": true,
+      "faqClosesByKeyboard": true,
+      "labelledAnswer": true,
+      "repairDraft": "Hi DIGI-TEC, I would like to request a Mercedes suspension repair assessment.\n\nModel: \nYear: \nMileage: \nService history or recent work: \nWarning or symptoms: \nWhen it occurs: \nPreferred appointment time: ",
+      "contactLinks": [
+        {
+          "href": "https://wa.me/97143402223?text=Hi%20DIGI-TEC%2C%20I%20would%20like%20to%20request%20a%20Mercedes%20suspension%20repair%20assessment.%0A%0AModel%3A%20%0AYear%3A%20%0AMileage%3A%20%0AService%20history%20or%20recent%20work%3A%20%0AWarning%20or%20symptoms%3A%20%0AWhen%20it%20occurs%3A%20%0APreferred%20appointment%20time%3A%20",
+          "placement": "hero",
+          "label": "Request a Mercedes Suspension Inspection"
+        },
+        {
+          "href": "https://wa.me/97143402223?text=Hi%20DIGI-TEC%2C%20I%20would%20like%20to%20request%20a%20Mercedes%20suspension%20repair%20assessment.%0A%0AModel%3A%20%0AYear%3A%20%0AMileage%3A%20%0AService%20history%20or%20recent%20work%3A%20%0AWarning%20or%20symptoms%3A%20%0AWhen%20it%20occurs%3A%20%0APreferred%20appointment%20time%3A%20",
+          "placement": "service_scope",
+          "label": "Request a Mercedes Suspension Inspection"
+        },
+        {
+          "href": "https://wa.me/97143402223?text=Hi%20DIGI-TEC%2C%20I%20would%20like%20to%20request%20a%20Mercedes%20suspension%20repair%20assessment.%0A%0AModel%3A%20%0AYear%3A%20%0AMileage%3A%20%0AService%20history%20or%20recent%20work%3A%20%0AWarning%20or%20symptoms%3A%20%0AWhen%20it%20occurs%3A%20%0APreferred%20appointment%20time%3A%20",
+          "placement": "repair_quote",
+          "label": "Request an assessment on WhatsApp"
+        }
+      ],
+      "safeWhatsAppClicks": 2,
+      "safePhoneClicks": 1,
+      "confirmedEnquiries": 0,
+      "passed": true
+    },
+    {
+      "route": "/ar/services/mercedes-suspension-repair-dubai",
+      "language": "ar",
+      "viewport": "desktop",
+      "width": 1440,
+      "title": "إصلاح تعليق مرسيدس وAIRMATIC في دبي | ديجي تيك",
+      "h1": "إصلاح تعليق مرسيدس ونظام AIRMATIC في دبي",
+      "images": [
+        {
+          "source": "/images/digitec-d-mark.png",
+          "loaded": true
+        },
+        {
+          "source": "/brand-logos/showcase/mercedes-benz.png",
+          "loaded": true
+        }
+      ],
+      "viewportWidth": 1440,
+      "documentWidth": 1440,
+      "bodyWidth": 1440,
+      "overflow": 0,
+      "graphNodes": 10,
+      "serviceProvider": "https://digitecme.com/#business",
+      "faqQuestions": 3,
+      "faqOpensByClick": true,
+      "faqClosesByKeyboard": true,
+      "labelledAnswer": true,
+      "repairDraft": "مرحباً ديجي-تك، أود طلب فحص بخصوص إصلاح تعليق مرسيدس.\n\nالطراز: \nسنة الصنع: \nالمسافة: \nسجل الصيانة أو العمل الأخير: \nالتحذير أو الأعراض: \nمتى تظهر: \nالموعد المفضل: ",
+      "contactLinks": [
+        {
+          "href": "https://wa.me/97143402223?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20%D8%AF%D9%8A%D8%AC%D9%8A-%D8%AA%D9%83%D8%8C%20%D8%A3%D9%88%D8%AF%20%D8%B7%D9%84%D8%A8%20%D9%81%D8%AD%D8%B5%20%D8%A8%D8%AE%D8%B5%D9%88%D8%B5%20%D8%A5%D8%B5%D9%84%D8%A7%D8%AD%20%D8%AA%D8%B9%D9%84%D9%8A%D9%82%20%D9%85%D8%B1%D8%B3%D9%8A%D8%AF%D8%B3.%0A%0A%D8%A7%D9%84%D8%B7%D8%B1%D8%A7%D8%B2%3A%20%0A%D8%B3%D9%86%D8%A9%20%D8%A7%D9%84%D8%B5%D9%86%D8%B9%3A%20%0A%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D9%81%D8%A9%3A%20%0A%D8%B3%D8%AC%D9%84%20%D8%A7%D9%84%D8%B5%D9%8A%D8%A7%D9%86%D8%A9%20%D8%A3%D9%88%20%D8%A7%D9%84%D8%B9%D9%85%D9%84%20%D8%A7%D9%84%D8%A3%D8%AE%D9%8A%D8%B1%3A%20%0A%D8%A7%D9%84%D8%AA%D8%AD%D8%B0%D9%8A%D8%B1%20%D8%A3%D9%88%20%D8%A7%D9%84%D8%A3%D8%B9%D8%B1%D8%A7%D8%B6%3A%20%0A%D9%85%D8%AA%D9%89%20%D8%AA%D8%B8%D9%87%D8%B1%3A%20%0A%D8%A7%D9%84%D9%85%D9%88%D8%B9%D8%AF%20%D8%A7%D9%84%D9%85%D9%81%D8%B6%D9%84%3A%20",
+          "placement": "hero",
+          "label": "راسلنا عبر واتساب"
+        },
+        {
+          "href": "https://wa.me/97143402223?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20%D8%AF%D9%8A%D8%AC%D9%8A-%D8%AA%D9%83%D8%8C%20%D8%A3%D9%88%D8%AF%20%D8%B7%D9%84%D8%A8%20%D9%81%D8%AD%D8%B5%20%D8%A8%D8%AE%D8%B5%D9%88%D8%B5%20%D8%A5%D8%B5%D9%84%D8%A7%D8%AD%20%D8%AA%D8%B9%D9%84%D9%8A%D9%82%20%D9%85%D8%B1%D8%B3%D9%8A%D8%AF%D8%B3.%0A%0A%D8%A7%D9%84%D8%B7%D8%B1%D8%A7%D8%B2%3A%20%0A%D8%B3%D9%86%D8%A9%20%D8%A7%D9%84%D8%B5%D9%86%D8%B9%3A%20%0A%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D9%81%D8%A9%3A%20%0A%D8%B3%D8%AC%D9%84%20%D8%A7%D9%84%D8%B5%D9%8A%D8%A7%D9%86%D8%A9%20%D8%A3%D9%88%20%D8%A7%D9%84%D8%B9%D9%85%D9%84%20%D8%A7%D9%84%D8%A3%D8%AE%D9%8A%D8%B1%3A%20%0A%D8%A7%D9%84%D8%AA%D8%AD%D8%B0%D9%8A%D8%B1%20%D8%A3%D9%88%20%D8%A7%D9%84%D8%A3%D8%B9%D8%B1%D8%A7%D8%B6%3A%20%0A%D9%85%D8%AA%D9%89%20%D8%AA%D8%B8%D9%87%D8%B1%3A%20%0A%D8%A7%D9%84%D9%85%D9%88%D8%B9%D8%AF%20%D8%A7%D9%84%D9%85%D9%81%D8%B6%D9%84%3A%20",
+          "placement": "repair_quote",
+          "label": "اطلب فحصاً وعرض سعر عبر واتساب"
+        }
+      ],
+      "safeWhatsAppClicks": 2,
+      "safePhoneClicks": 1,
+      "confirmedEnquiries": 0,
+      "passed": true
+    }
+  ],
+  "interactions": [
+    {
+      "route": "/services/mercedes-mechanical-repair-dubai",
+      "viewport": "desktop",
+      "faqOpensByClick": true,
+      "faqClosesByKeyboard": true,
+      "safeWhatsAppClicks": 2,
+      "safePhoneClicks": 1,
+      "confirmedEnquiries": 0
+    },
+    {
+      "route": "/ar/services/mercedes-mechanical-repair-dubai",
+      "viewport": "desktop",
+      "faqOpensByClick": true,
+      "faqClosesByKeyboard": true,
+      "safeWhatsAppClicks": 2,
+      "safePhoneClicks": 1,
+      "confirmedEnquiries": 0
+    },
+    {
+      "route": "/services/mercedes-suspension-repair-dubai",
+      "viewport": "desktop",
+      "faqOpensByClick": true,
+      "faqClosesByKeyboard": true,
+      "safeWhatsAppClicks": 2,
+      "safePhoneClicks": 1,
+      "confirmedEnquiries": 0
+    },
+    {
+      "route": "/ar/services/mercedes-suspension-repair-dubai",
+      "viewport": "desktop",
+      "faqOpensByClick": true,
+      "faqClosesByKeyboard": true,
+      "safeWhatsAppClicks": 2,
+      "safePhoneClicks": 1,
+      "confirmedEnquiries": 0
+    }
+  ],
+  "noJavaScript": [],
+  "hubLinks": [],
+  "screenshots": [
+    "outputs/repair-service-2026-10-19/qa/browser/mercedes-engine-en-desktop-hero.png",
+    "outputs/repair-service-2026-10-19/qa/browser/mercedes-engine-ar-desktop-hero.png",
+    "outputs/repair-service-2026-10-19/qa/browser/mercedes-suspension-en-desktop-hero.png",
+    "outputs/repair-service-2026-10-19/qa/browser/mercedes-suspension-ar-desktop-hero.png",
+    "outputs/repair-service-2026-10-19/qa/browser/mercedes-diagnostics-en-desktop-failure.png",
+    "outputs/repair-service-2026-10-19/qa/browser/mercedes-diagnostics-ar-desktop-failure.png",
+    "outputs/repair-service-2026-10-19/qa/browser/mercedes-transmission-en-desktop-failure.png",
+    "outputs/repair-service-2026-10-19/qa/browser/mercedes-transmission-ar-desktop-failure.png",
+    "outputs/repair-service-2026-10-19/qa/browser/bmw-transmission-en-desktop-failure.png",
+    "outputs/repair-service-2026-10-19/qa/browser/bmw-transmission-ar-desktop-failure.png",
+    "outputs/repair-service-2026-10-19/qa/browser/bmw-engine-en-desktop-failure.png",
+    "outputs/repair-service-2026-10-19/qa/browser/bmw-engine-ar-desktop-failure.png",
+    "outputs/repair-service-2026-10-19/qa/browser/rolls-royce-engine-en-desktop-failure.png",
+    "outputs/repair-service-2026-10-19/qa/browser/rolls-royce-engine-ar-desktop-failure.png",
+    "outputs/repair-service-2026-10-19/qa/browser/rolls-royce-suspension-en-desktop-failure.png",
+    "outputs/repair-service-2026-10-19/qa/browser/rolls-royce-suspension-ar-desktop-failure.png",
+    "outputs/repair-service-2026-10-19/qa/browser/lamborghini-transmission-en-desktop-failure.png",
+    "outputs/repair-service-2026-10-19/qa/browser/lamborghini-transmission-ar-desktop-failure.png",
+    "outputs/repair-service-2026-10-19/qa/browser/lamborghini-engine-en-desktop-failure.png",
+    "outputs/repair-service-2026-10-19/qa/browser/lamborghini-engine-ar-desktop-failure.png",
+    "outputs/repair-service-2026-10-19/qa/browser/lamborghini-diagnostics-en-desktop-failure.png",
+    "outputs/repair-service-2026-10-19/qa/browser/lamborghini-diagnostics-ar-desktop-failure.png",
+    "outputs/repair-service-2026-10-19/qa/browser/mercedes-engine-en-mobile-failure.png",
+    "outputs/repair-service-2026-10-19/qa/browser/mercedes-engine-ar-mobile-failure.png",
+    "outputs/repair-service-2026-10-19/qa/browser/mercedes-suspension-en-mobile-failure.png",
+    "outputs/repair-service-2026-10-19/qa/browser/mercedes-suspension-ar-mobile-failure.png",
+    "outputs/repair-service-2026-10-19/qa/browser/mercedes-diagnostics-en-mobile-failure.png",
+    "outputs/repair-service-2026-10-19/qa/browser/mercedes-diagnostics-ar-mobile-failure.png",
+    "outputs/repair-service-2026-10-19/qa/browser/mercedes-transmission-en-mobile-failure.png",
+    "outputs/repair-service-2026-10-19/qa/browser/mercedes-transmission-ar-mobile-failure.png",
+    "outputs/repair-service-2026-10-19/qa/browser/bmw-transmission-en-mobile-failure.png",
+    "outputs/repair-service-2026-10-19/qa/browser/bmw-transmission-ar-mobile-failure.png",
+    "outputs/repair-service-2026-10-19/qa/browser/bmw-engine-en-mobile-failure.png",
+    "outputs/repair-service-2026-10-19/qa/browser/bmw-engine-ar-mobile-failure.png",
+    "outputs/repair-service-2026-10-19/qa/browser/rolls-royce-engine-en-mobile-failure.png",
+    "outputs/repair-service-2026-10-19/qa/browser/rolls-royce-engine-ar-mobile-failure.png",
+    "outputs/repair-service-2026-10-19/qa/browser/rolls-royce-suspension-en-mobile-failure.png",
+    "outputs/repair-service-2026-10-19/qa/browser/rolls-royce-suspension-ar-mobile-failure.png",
+    "outputs/repair-service-2026-10-19/qa/browser/lamborghini-transmission-en-mobile-failure.png",
+    "outputs/repair-service-2026-10-19/qa/browser/lamborghini-transmission-ar-mobile-failure.png",
+    "outputs/repair-service-2026-10-19/qa/browser/lamborghini-engine-en-mobile-failure.png",
+    "outputs/repair-service-2026-10-19/qa/browser/lamborghini-engine-ar-mobile-failure.png",
+    "outputs/repair-service-2026-10-19/qa/browser/lamborghini-diagnostics-en-mobile-failure.png",
+    "outputs/repair-service-2026-10-19/qa/browser/lamborghini-diagnostics-ar-mobile-failure.png",
+    "outputs/repair-service-2026-10-19/qa/browser/mercedes-engine-en-narrow-failure.png",
+    "outputs/repair-service-2026-10-19/qa/browser/mercedes-engine-ar-narrow-failure.png",
+    "outputs/repair-service-2026-10-19/qa/browser/mercedes-suspension-en-narrow-failure.png",
+    "outputs/repair-service-2026-10-19/qa/browser/mercedes-suspension-ar-narrow-failure.png",
+    "outputs/repair-service-2026-10-19/qa/browser/mercedes-diagnostics-en-narrow-failure.png",
+    "outputs/repair-service-2026-10-19/qa/browser/mercedes-diagnostics-ar-narrow-failure.png",
+    "outputs/repair-service-2026-10-19/qa/browser/mercedes-transmission-en-narrow-failure.png",
+    "outputs/repair-service-2026-10-19/qa/browser/mercedes-transmission-ar-narrow-failure.png",
+    "outputs/repair-service-2026-10-19/qa/browser/bmw-transmission-en-narrow-failure.png",
+    "outputs/repair-service-2026-10-19/qa/browser/bmw-transmission-ar-narrow-failure.png",
+    "outputs/repair-service-2026-10-19/qa/browser/bmw-engine-en-narrow-failure.png",
+    "outputs/repair-service-2026-10-19/qa/browser/bmw-engine-ar-narrow-failure.png",
+    "outputs/repair-service-2026-10-19/qa/browser/rolls-royce-engine-en-narrow-failure.png",
+    "outputs/repair-service-2026-10-19/qa/browser/rolls-royce-engine-ar-narrow-failure.png",
+    "outputs/repair-service-2026-10-19/qa/browser/rolls-royce-suspension-en-narrow-failure.png",
+    "outputs/repair-service-2026-10-19/qa/browser/rolls-royce-suspension-ar-narrow-failure.png",
+    "outputs/repair-service-2026-10-19/qa/browser/lamborghini-transmission-en-narrow-failure.png",
+    "outputs/repair-service-2026-10-19/qa/browser/lamborghini-transmission-ar-narrow-failure.png",
+    "outputs/repair-service-2026-10-19/qa/browser/lamborghini-engine-en-narrow-failure.png",
+    "outputs/repair-service-2026-10-19/qa/browser/lamborghini-engine-ar-narrow-failure.png",
+    "outputs/repair-service-2026-10-19/qa/browser/lamborghini-diagnostics-en-narrow-failure.png",
+    "outputs/repair-service-2026-10-19/qa/browser/lamborghini-diagnostics-ar-narrow-failure.png"
+  ],
+  "failures": [
+    {
+      "at": "/services/mercedes-diagnostics-dubai desktop",
+      "message": "/services/mercedes-diagnostics-dubai desktop: 104px horizontal overflow"
+    },
+    {
+      "at": "/ar/services/mercedes-diagnostics-dubai desktop",
+      "message": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at http://127.0.0.1:5196/ar/services/mercedes-diagnostics-dubai\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5196/ar/services/mercedes-diagnostics-dubai\", waiting until \"networkidle\"\u001b[22m\n"
+    },
+    {
+      "at": "/services/mercedes-transmission-repair-dubai desktop",
+      "message": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at http://127.0.0.1:5196/services/mercedes-transmission-repair-dubai\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5196/services/mercedes-transmission-repair-dubai\", waiting until \"networkidle\"\u001b[22m\n"
+    },
+    {
+      "at": "/ar/services/mercedes-transmission-repair-dubai desktop",
+      "message": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at http://127.0.0.1:5196/ar/services/mercedes-transmission-repair-dubai\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5196/ar/services/mercedes-transmission-repair-dubai\", waiting until \"networkidle\"\u001b[22m\n"
+    },
+    {
+      "at": "/brands/bmw-service-dubai/transmission-repair desktop",
+      "message": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at http://127.0.0.1:5196/brands/bmw-service-dubai/transmission-repair\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5196/brands/bmw-service-dubai/transmission-repair\", waiting until \"networkidle\"\u001b[22m\n"
+    },
+    {
+      "at": "/ar/brands/bmw-service-dubai/transmission-repair desktop",
+      "message": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at http://127.0.0.1:5196/ar/brands/bmw-service-dubai/transmission-repair\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5196/ar/brands/bmw-service-dubai/transmission-repair\", waiting until \"networkidle\"\u001b[22m\n"
+    },
+    {
+      "at": "/brands/bmw-service-dubai/mechanical-repair desktop",
+      "message": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at http://127.0.0.1:5196/brands/bmw-service-dubai/mechanical-repair\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5196/brands/bmw-service-dubai/mechanical-repair\", waiting until \"networkidle\"\u001b[22m\n"
+    },
+    {
+      "at": "/ar/brands/bmw-service-dubai/mechanical-repair desktop",
+      "message": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at http://127.0.0.1:5196/ar/brands/bmw-service-dubai/mechanical-repair\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5196/ar/brands/bmw-service-dubai/mechanical-repair\", waiting until \"networkidle\"\u001b[22m\n"
+    },
+    {
+      "at": "/brands/rolls-royce-service-dubai/mechanical-repair desktop",
+      "message": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at http://127.0.0.1:5196/brands/rolls-royce-service-dubai/mechanical-repair\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5196/brands/rolls-royce-service-dubai/mechanical-repair\", waiting until \"networkidle\"\u001b[22m\n"
+    },
+    {
+      "at": "/ar/brands/rolls-royce-service-dubai/mechanical-repair desktop",
+      "message": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at http://127.0.0.1:5196/ar/brands/rolls-royce-service-dubai/mechanical-repair\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5196/ar/brands/rolls-royce-service-dubai/mechanical-repair\", waiting until \"networkidle\"\u001b[22m\n"
+    },
+    {
+      "at": "/brands/rolls-royce-service-dubai/suspension-repair desktop",
+      "message": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at http://127.0.0.1:5196/brands/rolls-royce-service-dubai/suspension-repair\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5196/brands/rolls-royce-service-dubai/suspension-repair\", waiting until \"networkidle\"\u001b[22m\n"
+    },
+    {
+      "at": "/ar/brands/rolls-royce-service-dubai/suspension-repair desktop",
+      "message": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at http://127.0.0.1:5196/ar/brands/rolls-royce-service-dubai/suspension-repair\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5196/ar/brands/rolls-royce-service-dubai/suspension-repair\", waiting until \"networkidle\"\u001b[22m\n"
+    },
+    {
+      "at": "/brands/lamborghini-service-dubai/transmission-repair desktop",
+      "message": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at http://127.0.0.1:5196/brands/lamborghini-service-dubai/transmission-repair\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5196/brands/lamborghini-service-dubai/transmission-repair\", waiting until \"networkidle\"\u001b[22m\n"
+    },
+    {
+      "at": "/ar/brands/lamborghini-service-dubai/transmission-repair desktop",
+      "message": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at http://127.0.0.1:5196/ar/brands/lamborghini-service-dubai/transmission-repair\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5196/ar/brands/lamborghini-service-dubai/transmission-repair\", waiting until \"networkidle\"\u001b[22m\n"
+    },
+    {
+      "at": "/brands/lamborghini-service-dubai/mechanical-repair desktop",
+      "message": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at http://127.0.0.1:5196/brands/lamborghini-service-dubai/mechanical-repair\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5196/brands/lamborghini-service-dubai/mechanical-repair\", waiting until \"networkidle\"\u001b[22m\n"
+    },
+    {
+      "at": "/ar/brands/lamborghini-service-dubai/mechanical-repair desktop",
+      "message": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at http://127.0.0.1:5196/ar/brands/lamborghini-service-dubai/mechanical-repair\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5196/ar/brands/lamborghini-service-dubai/mechanical-repair\", waiting until \"networkidle\"\u001b[22m\n"
+    },
+    {
+      "at": "/brands/lamborghini-service-dubai/engine-diagnostics desktop",
+      "message": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at http://127.0.0.1:5196/brands/lamborghini-service-dubai/engine-diagnostics\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5196/brands/lamborghini-service-dubai/engine-diagnostics\", waiting until \"networkidle\"\u001b[22m\n"
+    },
+    {
+      "at": "/ar/brands/lamborghini-service-dubai/engine-diagnostics desktop",
+      "message": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at http://127.0.0.1:5196/ar/brands/lamborghini-service-dubai/engine-diagnostics\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5196/ar/brands/lamborghini-service-dubai/engine-diagnostics\", waiting until \"networkidle\"\u001b[22m\n"
+    },
+    {
+      "at": "/services/mercedes-mechanical-repair-dubai mobile",
+      "message": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at http://127.0.0.1:5196/services/mercedes-mechanical-repair-dubai\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5196/services/mercedes-mechanical-repair-dubai\", waiting until \"networkidle\"\u001b[22m\n"
+    },
+    {
+      "at": "/ar/services/mercedes-mechanical-repair-dubai mobile",
+      "message": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at http://127.0.0.1:5196/ar/services/mercedes-mechanical-repair-dubai\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5196/ar/services/mercedes-mechanical-repair-dubai\", waiting until \"networkidle\"\u001b[22m\n"
+    },
+    {
+      "at": "/services/mercedes-suspension-repair-dubai mobile",
+      "message": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at http://127.0.0.1:5196/services/mercedes-suspension-repair-dubai\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5196/services/mercedes-suspension-repair-dubai\", waiting until \"networkidle\"\u001b[22m\n"
+    },
+    {
+      "at": "/ar/services/mercedes-suspension-repair-dubai mobile",
+      "message": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at http://127.0.0.1:5196/ar/services/mercedes-suspension-repair-dubai\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5196/ar/services/mercedes-suspension-repair-dubai\", waiting until \"networkidle\"\u001b[22m\n"
+    },
+    {
+      "at": "/services/mercedes-diagnostics-dubai mobile",
+      "message": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at http://127.0.0.1:5196/services/mercedes-diagnostics-dubai\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5196/services/mercedes-diagnostics-dubai\", waiting until \"networkidle\"\u001b[22m\n"
+    },
+    {
+      "at": "/ar/services/mercedes-diagnostics-dubai mobile",
+      "message": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at http://127.0.0.1:5196/ar/services/mercedes-diagnostics-dubai\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5196/ar/services/mercedes-diagnostics-dubai\", waiting until \"networkidle\"\u001b[22m\n"
+    },
+    {
+      "at": "/services/mercedes-transmission-repair-dubai mobile",
+      "message": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at http://127.0.0.1:5196/services/mercedes-transmission-repair-dubai\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5196/services/mercedes-transmission-repair-dubai\", waiting until \"networkidle\"\u001b[22m\n"
+    },
+    {
+      "at": "/ar/services/mercedes-transmission-repair-dubai mobile",
+      "message": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at http://127.0.0.1:5196/ar/services/mercedes-transmission-repair-dubai\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5196/ar/services/mercedes-transmission-repair-dubai\", waiting until \"networkidle\"\u001b[22m\n"
+    },
+    {
+      "at": "/brands/bmw-service-dubai/transmission-repair mobile",
+      "message": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at http://127.0.0.1:5196/brands/bmw-service-dubai/transmission-repair\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5196/brands/bmw-service-dubai/transmission-repair\", waiting until \"networkidle\"\u001b[22m\n"
+    },
+    {
+      "at": "/ar/brands/bmw-service-dubai/transmission-repair mobile",
+      "message": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at http://127.0.0.1:5196/ar/brands/bmw-service-dubai/transmission-repair\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5196/ar/brands/bmw-service-dubai/transmission-repair\", waiting until \"networkidle\"\u001b[22m\n"
+    },
+    {
+      "at": "/brands/bmw-service-dubai/mechanical-repair mobile",
+      "message": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at http://127.0.0.1:5196/brands/bmw-service-dubai/mechanical-repair\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5196/brands/bmw-service-dubai/mechanical-repair\", waiting until \"networkidle\"\u001b[22m\n"
+    },
+    {
+      "at": "/ar/brands/bmw-service-dubai/mechanical-repair mobile",
+      "message": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at http://127.0.0.1:5196/ar/brands/bmw-service-dubai/mechanical-repair\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5196/ar/brands/bmw-service-dubai/mechanical-repair\", waiting until \"networkidle\"\u001b[22m\n"
+    },
+    {
+      "at": "/brands/rolls-royce-service-dubai/mechanical-repair mobile",
+      "message": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at http://127.0.0.1:5196/brands/rolls-royce-service-dubai/mechanical-repair\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5196/brands/rolls-royce-service-dubai/mechanical-repair\", waiting until \"networkidle\"\u001b[22m\n"
+    },
+    {
+      "at": "/ar/brands/rolls-royce-service-dubai/mechanical-repair mobile",
+      "message": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at http://127.0.0.1:5196/ar/brands/rolls-royce-service-dubai/mechanical-repair\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5196/ar/brands/rolls-royce-service-dubai/mechanical-repair\", waiting until \"networkidle\"\u001b[22m\n"
+    },
+    {
+      "at": "/brands/rolls-royce-service-dubai/suspension-repair mobile",
+      "message": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at http://127.0.0.1:5196/brands/rolls-royce-service-dubai/suspension-repair\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5196/brands/rolls-royce-service-dubai/suspension-repair\", waiting until \"networkidle\"\u001b[22m\n"
+    },
+    {
+      "at": "/ar/brands/rolls-royce-service-dubai/suspension-repair mobile",
+      "message": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at http://127.0.0.1:5196/ar/brands/rolls-royce-service-dubai/suspension-repair\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5196/ar/brands/rolls-royce-service-dubai/suspension-repair\", waiting until \"networkidle\"\u001b[22m\n"
+    },
+    {
+      "at": "/brands/lamborghini-service-dubai/transmission-repair mobile",
+      "message": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at http://127.0.0.1:5196/brands/lamborghini-service-dubai/transmission-repair\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5196/brands/lamborghini-service-dubai/transmission-repair\", waiting until \"networkidle\"\u001b[22m\n"
+    },
+    {
+      "at": "/ar/brands/lamborghini-service-dubai/transmission-repair mobile",
+      "message": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at http://127.0.0.1:5196/ar/brands/lamborghini-service-dubai/transmission-repair\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5196/ar/brands/lamborghini-service-dubai/transmission-repair\", waiting until \"networkidle\"\u001b[22m\n"
+    },
+    {
+      "at": "/brands/lamborghini-service-dubai/mechanical-repair mobile",
+      "message": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at http://127.0.0.1:5196/brands/lamborghini-service-dubai/mechanical-repair\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5196/brands/lamborghini-service-dubai/mechanical-repair\", waiting until \"networkidle\"\u001b[22m\n"
+    },
+    {
+      "at": "/ar/brands/lamborghini-service-dubai/mechanical-repair mobile",
+      "message": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at http://127.0.0.1:5196/ar/brands/lamborghini-service-dubai/mechanical-repair\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5196/ar/brands/lamborghini-service-dubai/mechanical-repair\", waiting until \"networkidle\"\u001b[22m\n"
+    },
+    {
+      "at": "/brands/lamborghini-service-dubai/engine-diagnostics mobile",
+      "message": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at http://127.0.0.1:5196/brands/lamborghini-service-dubai/engine-diagnostics\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5196/brands/lamborghini-service-dubai/engine-diagnostics\", waiting until \"networkidle\"\u001b[22m\n"
+    },
+    {
+      "at": "/ar/brands/lamborghini-service-dubai/engine-diagnostics mobile",
+      "message": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at http://127.0.0.1:5196/ar/brands/lamborghini-service-dubai/engine-diagnostics\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5196/ar/brands/lamborghini-service-dubai/engine-diagnostics\", waiting until \"networkidle\"\u001b[22m\n"
+    },
+    {
+      "at": "/services/mercedes-mechanical-repair-dubai narrow",
+      "message": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at http://127.0.0.1:5196/services/mercedes-mechanical-repair-dubai\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5196/services/mercedes-mechanical-repair-dubai\", waiting until \"networkidle\"\u001b[22m\n"
+    },
+    {
+      "at": "/ar/services/mercedes-mechanical-repair-dubai narrow",
+      "message": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at http://127.0.0.1:5196/ar/services/mercedes-mechanical-repair-dubai\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5196/ar/services/mercedes-mechanical-repair-dubai\", waiting until \"networkidle\"\u001b[22m\n"
+    },
+    {
+      "at": "/services/mercedes-suspension-repair-dubai narrow",
+      "message": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at http://127.0.0.1:5196/services/mercedes-suspension-repair-dubai\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5196/services/mercedes-suspension-repair-dubai\", waiting until \"networkidle\"\u001b[22m\n"
+    },
+    {
+      "at": "/ar/services/mercedes-suspension-repair-dubai narrow",
+      "message": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at http://127.0.0.1:5196/ar/services/mercedes-suspension-repair-dubai\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5196/ar/services/mercedes-suspension-repair-dubai\", waiting until \"networkidle\"\u001b[22m\n"
+    },
+    {
+      "at": "/services/mercedes-diagnostics-dubai narrow",
+      "message": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at http://127.0.0.1:5196/services/mercedes-diagnostics-dubai\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5196/services/mercedes-diagnostics-dubai\", waiting until \"networkidle\"\u001b[22m\n"
+    },
+    {
+      "at": "/ar/services/mercedes-diagnostics-dubai narrow",
+      "message": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at http://127.0.0.1:5196/ar/services/mercedes-diagnostics-dubai\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5196/ar/services/mercedes-diagnostics-dubai\", waiting until \"networkidle\"\u001b[22m\n"
+    },
+    {
+      "at": "/services/mercedes-transmission-repair-dubai narrow",
+      "message": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at http://127.0.0.1:5196/services/mercedes-transmission-repair-dubai\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5196/services/mercedes-transmission-repair-dubai\", waiting until \"networkidle\"\u001b[22m\n"
+    },
+    {
+      "at": "/ar/services/mercedes-transmission-repair-dubai narrow",
+      "message": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at http://127.0.0.1:5196/ar/services/mercedes-transmission-repair-dubai\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5196/ar/services/mercedes-transmission-repair-dubai\", waiting until \"networkidle\"\u001b[22m\n"
+    },
+    {
+      "at": "/brands/bmw-service-dubai/transmission-repair narrow",
+      "message": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at http://127.0.0.1:5196/brands/bmw-service-dubai/transmission-repair\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5196/brands/bmw-service-dubai/transmission-repair\", waiting until \"networkidle\"\u001b[22m\n"
+    },
+    {
+      "at": "/ar/brands/bmw-service-dubai/transmission-repair narrow",
+      "message": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at http://127.0.0.1:5196/ar/brands/bmw-service-dubai/transmission-repair\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5196/ar/brands/bmw-service-dubai/transmission-repair\", waiting until \"networkidle\"\u001b[22m\n"
+    },
+    {
+      "at": "/brands/bmw-service-dubai/mechanical-repair narrow",
+      "message": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at http://127.0.0.1:5196/brands/bmw-service-dubai/mechanical-repair\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5196/brands/bmw-service-dubai/mechanical-repair\", waiting until \"networkidle\"\u001b[22m\n"
+    },
+    {
+      "at": "/ar/brands/bmw-service-dubai/mechanical-repair narrow",
+      "message": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at http://127.0.0.1:5196/ar/brands/bmw-service-dubai/mechanical-repair\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5196/ar/brands/bmw-service-dubai/mechanical-repair\", waiting until \"networkidle\"\u001b[22m\n"
+    },
+    {
+      "at": "/brands/rolls-royce-service-dubai/mechanical-repair narrow",
+      "message": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at http://127.0.0.1:5196/brands/rolls-royce-service-dubai/mechanical-repair\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5196/brands/rolls-royce-service-dubai/mechanical-repair\", waiting until \"networkidle\"\u001b[22m\n"
+    },
+    {
+      "at": "/ar/brands/rolls-royce-service-dubai/mechanical-repair narrow",
+      "message": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at http://127.0.0.1:5196/ar/brands/rolls-royce-service-dubai/mechanical-repair\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5196/ar/brands/rolls-royce-service-dubai/mechanical-repair\", waiting until \"networkidle\"\u001b[22m\n"
+    },
+    {
+      "at": "/brands/rolls-royce-service-dubai/suspension-repair narrow",
+      "message": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at http://127.0.0.1:5196/brands/rolls-royce-service-dubai/suspension-repair\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5196/brands/rolls-royce-service-dubai/suspension-repair\", waiting until \"networkidle\"\u001b[22m\n"
+    },
+    {
+      "at": "/ar/brands/rolls-royce-service-dubai/suspension-repair narrow",
+      "message": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at http://127.0.0.1:5196/ar/brands/rolls-royce-service-dubai/suspension-repair\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5196/ar/brands/rolls-royce-service-dubai/suspension-repair\", waiting until \"networkidle\"\u001b[22m\n"
+    },
+    {
+      "at": "/brands/lamborghini-service-dubai/transmission-repair narrow",
+      "message": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at http://127.0.0.1:5196/brands/lamborghini-service-dubai/transmission-repair\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5196/brands/lamborghini-service-dubai/transmission-repair\", waiting until \"networkidle\"\u001b[22m\n"
+    },
+    {
+      "at": "/ar/brands/lamborghini-service-dubai/transmission-repair narrow",
+      "message": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at http://127.0.0.1:5196/ar/brands/lamborghini-service-dubai/transmission-repair\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5196/ar/brands/lamborghini-service-dubai/transmission-repair\", waiting until \"networkidle\"\u001b[22m\n"
+    },
+    {
+      "at": "/brands/lamborghini-service-dubai/mechanical-repair narrow",
+      "message": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at http://127.0.0.1:5196/brands/lamborghini-service-dubai/mechanical-repair\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5196/brands/lamborghini-service-dubai/mechanical-repair\", waiting until \"networkidle\"\u001b[22m\n"
+    },
+    {
+      "at": "/ar/brands/lamborghini-service-dubai/mechanical-repair narrow",
+      "message": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at http://127.0.0.1:5196/ar/brands/lamborghini-service-dubai/mechanical-repair\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5196/ar/brands/lamborghini-service-dubai/mechanical-repair\", waiting until \"networkidle\"\u001b[22m\n"
+    },
+    {
+      "at": "/brands/lamborghini-service-dubai/engine-diagnostics narrow",
+      "message": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at http://127.0.0.1:5196/brands/lamborghini-service-dubai/engine-diagnostics\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5196/brands/lamborghini-service-dubai/engine-diagnostics\", waiting until \"networkidle\"\u001b[22m\n"
+    },
+    {
+      "at": "/ar/brands/lamborghini-service-dubai/engine-diagnostics narrow",
+      "message": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at http://127.0.0.1:5196/ar/brands/lamborghini-service-dubai/engine-diagnostics\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5196/ar/brands/lamborghini-service-dubai/engine-diagnostics\", waiting until \"networkidle\"\u001b[22m\n"
+    },
+    {
+      "at": "Hub link /brands/mercedes-benz-service-dubai -> /services/mercedes-mechanical-repair-dubai",
+      "message": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at http://127.0.0.1:5196/brands/mercedes-benz-service-dubai\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5196/brands/mercedes-benz-service-dubai\", waiting until \"networkidle\"\u001b[22m\n"
+    },
+    {
+      "at": "Hub link /ar/brands/mercedes-benz-service-dubai -> /ar/services/mercedes-mechanical-repair-dubai",
+      "message": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at http://127.0.0.1:5196/ar/brands/mercedes-benz-service-dubai\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5196/ar/brands/mercedes-benz-service-dubai\", waiting until \"networkidle\"\u001b[22m\n"
+    },
+    {
+      "at": "Hub link /brands/mercedes-benz-service-dubai -> /services/mercedes-suspension-repair-dubai",
+      "message": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at http://127.0.0.1:5196/brands/mercedes-benz-service-dubai\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5196/brands/mercedes-benz-service-dubai\", waiting until \"networkidle\"\u001b[22m\n"
+    },
+    {
+      "at": "Hub link /ar/brands/mercedes-benz-service-dubai -> /ar/services/mercedes-suspension-repair-dubai",
+      "message": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at http://127.0.0.1:5196/ar/brands/mercedes-benz-service-dubai\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5196/ar/brands/mercedes-benz-service-dubai\", waiting until \"networkidle\"\u001b[22m\n"
+    },
+    {
+      "at": "Hub link /brands/mercedes-benz-service-dubai -> /services/mercedes-diagnostics-dubai",
+      "message": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at http://127.0.0.1:5196/brands/mercedes-benz-service-dubai\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5196/brands/mercedes-benz-service-dubai\", waiting until \"networkidle\"\u001b[22m\n"
+    },
+    {
+      "at": "Hub link /ar/brands/mercedes-benz-service-dubai -> /ar/services/mercedes-diagnostics-dubai",
+      "message": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at http://127.0.0.1:5196/ar/brands/mercedes-benz-service-dubai\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5196/ar/brands/mercedes-benz-service-dubai\", waiting until \"networkidle\"\u001b[22m\n"
+    },
+    {
+      "at": "Hub link /brands/mercedes-benz-service-dubai -> /services/mercedes-transmission-repair-dubai",
+      "message": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at http://127.0.0.1:5196/brands/mercedes-benz-service-dubai\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5196/brands/mercedes-benz-service-dubai\", waiting until \"networkidle\"\u001b[22m\n"
+    },
+    {
+      "at": "Hub link /ar/brands/mercedes-benz-service-dubai -> /ar/services/mercedes-transmission-repair-dubai",
+      "message": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at http://127.0.0.1:5196/ar/brands/mercedes-benz-service-dubai\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5196/ar/brands/mercedes-benz-service-dubai\", waiting until \"networkidle\"\u001b[22m\n"
+    },
+    {
+      "at": "Hub link /brands/bmw-service-dubai -> /brands/bmw-service-dubai/transmission-repair",
+      "message": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at http://127.0.0.1:5196/brands/bmw-service-dubai\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5196/brands/bmw-service-dubai\", waiting until \"networkidle\"\u001b[22m\n"
+    },
+    {
+      "at": "Hub link /ar/brands/bmw-service-dubai -> /ar/brands/bmw-service-dubai/transmission-repair",
+      "message": "page.goto: Navigation to \"http://127.0.0.1:5196/ar/brands/bmw-service-dubai\" is interrupted by another navigation to \"chrome-error://chromewebdata/\"\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5196/ar/brands/bmw-service-dubai\", waiting until \"networkidle\"\u001b[22m\n"
+    },
+    {
+      "at": "Hub link /brands/bmw-service-dubai -> /brands/bmw-service-dubai/mechanical-repair",
+      "message": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at http://127.0.0.1:5196/brands/bmw-service-dubai\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5196/brands/bmw-service-dubai\", waiting until \"networkidle\"\u001b[22m\n"
+    },
+    {
+      "at": "Hub link /ar/brands/bmw-service-dubai -> /ar/brands/bmw-service-dubai/mechanical-repair",
+      "message": "page.goto: Navigation to \"http://127.0.0.1:5196/ar/brands/bmw-service-dubai\" is interrupted by another navigation to \"chrome-error://chromewebdata/\"\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5196/ar/brands/bmw-service-dubai\", waiting until \"networkidle\"\u001b[22m\n"
+    },
+    {
+      "at": "Hub link /brands/rolls-royce-service-dubai -> /brands/rolls-royce-service-dubai/mechanical-repair",
+      "message": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at http://127.0.0.1:5196/brands/rolls-royce-service-dubai\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5196/brands/rolls-royce-service-dubai\", waiting until \"networkidle\"\u001b[22m\n"
+    },
+    {
+      "at": "Hub link /ar/brands/rolls-royce-service-dubai -> /ar/brands/rolls-royce-service-dubai/mechanical-repair",
+      "message": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at http://127.0.0.1:5196/ar/brands/rolls-royce-service-dubai\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5196/ar/brands/rolls-royce-service-dubai\", waiting until \"networkidle\"\u001b[22m\n"
+    },
+    {
+      "at": "Hub link /brands/rolls-royce-service-dubai -> /brands/rolls-royce-service-dubai/suspension-repair",
+      "message": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at http://127.0.0.1:5196/brands/rolls-royce-service-dubai\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5196/brands/rolls-royce-service-dubai\", waiting until \"networkidle\"\u001b[22m\n"
+    },
+    {
+      "at": "Hub link /ar/brands/rolls-royce-service-dubai -> /ar/brands/rolls-royce-service-dubai/suspension-repair",
+      "message": "page.goto: Navigation to \"http://127.0.0.1:5196/ar/brands/rolls-royce-service-dubai\" is interrupted by another navigation to \"chrome-error://chromewebdata/\"\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5196/ar/brands/rolls-royce-service-dubai\", waiting until \"networkidle\"\u001b[22m\n"
+    },
+    {
+      "at": "Hub link /brands/lamborghini-service-dubai -> /brands/lamborghini-service-dubai/transmission-repair",
+      "message": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at http://127.0.0.1:5196/brands/lamborghini-service-dubai\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5196/brands/lamborghini-service-dubai\", waiting until \"networkidle\"\u001b[22m\n"
+    },
+    {
+      "at": "Hub link /ar/brands/lamborghini-service-dubai -> /ar/brands/lamborghini-service-dubai/transmission-repair",
+      "message": "page.goto: Navigation to \"http://127.0.0.1:5196/ar/brands/lamborghini-service-dubai\" is interrupted by another navigation to \"chrome-error://chromewebdata/\"\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5196/ar/brands/lamborghini-service-dubai\", waiting until \"networkidle\"\u001b[22m\n"
+    },
+    {
+      "at": "Hub link /brands/lamborghini-service-dubai -> /brands/lamborghini-service-dubai/mechanical-repair",
+      "message": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at http://127.0.0.1:5196/brands/lamborghini-service-dubai\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5196/brands/lamborghini-service-dubai\", waiting until \"networkidle\"\u001b[22m\n"
+    },
+    {
+      "at": "Hub link /ar/brands/lamborghini-service-dubai -> /ar/brands/lamborghini-service-dubai/mechanical-repair",
+      "message": "page.goto: Navigation to \"http://127.0.0.1:5196/ar/brands/lamborghini-service-dubai\" is interrupted by another navigation to \"chrome-error://chromewebdata/\"\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5196/ar/brands/lamborghini-service-dubai\", waiting until \"networkidle\"\u001b[22m\n"
+    },
+    {
+      "at": "Hub link /brands/lamborghini-service-dubai -> /brands/lamborghini-service-dubai/engine-diagnostics",
+      "message": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at http://127.0.0.1:5196/brands/lamborghini-service-dubai\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5196/brands/lamborghini-service-dubai\", waiting until \"networkidle\"\u001b[22m\n"
+    },
+    {
+      "at": "Hub link /ar/brands/lamborghini-service-dubai -> /ar/brands/lamborghini-service-dubai/engine-diagnostics",
+      "message": "page.goto: Navigation to \"http://127.0.0.1:5196/ar/brands/lamborghini-service-dubai\" is interrupted by another navigation to \"chrome-error://chromewebdata/\"\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5196/ar/brands/lamborghini-service-dubai\", waiting until \"networkidle\"\u001b[22m\n"
+    },
+    {
+      "at": "/services/mercedes-mechanical-repair-dubai no JavaScript",
+      "message": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at http://127.0.0.1:5196/services/mercedes-mechanical-repair-dubai\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5196/services/mercedes-mechanical-repair-dubai\", waiting until \"networkidle\"\u001b[22m\n"
+    },
+    {
+      "at": "/ar/services/mercedes-mechanical-repair-dubai no JavaScript",
+      "message": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at http://127.0.0.1:5196/ar/services/mercedes-mechanical-repair-dubai\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5196/ar/services/mercedes-mechanical-repair-dubai\", waiting until \"networkidle\"\u001b[22m\n"
+    },
+    {
+      "at": "/services/mercedes-suspension-repair-dubai no JavaScript",
+      "message": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at http://127.0.0.1:5196/services/mercedes-suspension-repair-dubai\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5196/services/mercedes-suspension-repair-dubai\", waiting until \"networkidle\"\u001b[22m\n"
+    },
+    {
+      "at": "/ar/services/mercedes-suspension-repair-dubai no JavaScript",
+      "message": "page.goto: Navigation to \"http://127.0.0.1:5196/ar/services/mercedes-suspension-repair-dubai\" is interrupted by another navigation to \"chrome-error://chromewebdata/\"\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5196/ar/services/mercedes-suspension-repair-dubai\", waiting until \"networkidle\"\u001b[22m\n"
+    },
+    {
+      "at": "/services/mercedes-diagnostics-dubai no JavaScript",
+      "message": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at http://127.0.0.1:5196/services/mercedes-diagnostics-dubai\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5196/services/mercedes-diagnostics-dubai\", waiting until \"networkidle\"\u001b[22m\n"
+    },
+    {
+      "at": "/ar/services/mercedes-diagnostics-dubai no JavaScript",
+      "message": "page.goto: Navigation to \"http://127.0.0.1:5196/ar/services/mercedes-diagnostics-dubai\" is interrupted by another navigation to \"chrome-error://chromewebdata/\"\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5196/ar/services/mercedes-diagnostics-dubai\", waiting until \"networkidle\"\u001b[22m\n"
+    },
+    {
+      "at": "/services/mercedes-transmission-repair-dubai no JavaScript",
+      "message": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at http://127.0.0.1:5196/services/mercedes-transmission-repair-dubai\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5196/services/mercedes-transmission-repair-dubai\", waiting until \"networkidle\"\u001b[22m\n"
+    },
+    {
+      "at": "/ar/services/mercedes-transmission-repair-dubai no JavaScript",
+      "message": "page.goto: Navigation to \"http://127.0.0.1:5196/ar/services/mercedes-transmission-repair-dubai\" is interrupted by another navigation to \"chrome-error://chromewebdata/\"\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5196/ar/services/mercedes-transmission-repair-dubai\", waiting until \"networkidle\"\u001b[22m\n"
+    },
+    {
+      "at": "/brands/bmw-service-dubai/transmission-repair no JavaScript",
+      "message": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at http://127.0.0.1:5196/brands/bmw-service-dubai/transmission-repair\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5196/brands/bmw-service-dubai/transmission-repair\", waiting until \"networkidle\"\u001b[22m\n"
+    },
+    {
+      "at": "/ar/brands/bmw-service-dubai/transmission-repair no JavaScript",
+      "message": "page.goto: Navigation to \"http://127.0.0.1:5196/ar/brands/bmw-service-dubai/transmission-repair\" is interrupted by another navigation to \"chrome-error://chromewebdata/\"\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5196/ar/brands/bmw-service-dubai/transmission-repair\", waiting until \"networkidle\"\u001b[22m\n"
+    },
+    {
+      "at": "/brands/bmw-service-dubai/mechanical-repair no JavaScript",
+      "message": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at http://127.0.0.1:5196/brands/bmw-service-dubai/mechanical-repair\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5196/brands/bmw-service-dubai/mechanical-repair\", waiting until \"networkidle\"\u001b[22m\n"
+    },
+    {
+      "at": "/ar/brands/bmw-service-dubai/mechanical-repair no JavaScript",
+      "message": "page.goto: Navigation to \"http://127.0.0.1:5196/ar/brands/bmw-service-dubai/mechanical-repair\" is interrupted by another navigation to \"chrome-error://chromewebdata/\"\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5196/ar/brands/bmw-service-dubai/mechanical-repair\", waiting until \"networkidle\"\u001b[22m\n"
+    },
+    {
+      "at": "/brands/rolls-royce-service-dubai/mechanical-repair no JavaScript",
+      "message": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at http://127.0.0.1:5196/brands/rolls-royce-service-dubai/mechanical-repair\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5196/brands/rolls-royce-service-dubai/mechanical-repair\", waiting until \"networkidle\"\u001b[22m\n"
+    },
+    {
+      "at": "/ar/brands/rolls-royce-service-dubai/mechanical-repair no JavaScript",
+      "message": "page.goto: Navigation to \"http://127.0.0.1:5196/ar/brands/rolls-royce-service-dubai/mechanical-repair\" is interrupted by another navigation to \"chrome-error://chromewebdata/\"\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5196/ar/brands/rolls-royce-service-dubai/mechanical-repair\", waiting until \"networkidle\"\u001b[22m\n"
+    },
+    {
+      "at": "/brands/rolls-royce-service-dubai/suspension-repair no JavaScript",
+      "message": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at http://127.0.0.1:5196/brands/rolls-royce-service-dubai/suspension-repair\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5196/brands/rolls-royce-service-dubai/suspension-repair\", waiting until \"networkidle\"\u001b[22m\n"
+    },
+    {
+      "at": "/ar/brands/rolls-royce-service-dubai/suspension-repair no JavaScript",
+      "message": "page.goto: Navigation to \"http://127.0.0.1:5196/ar/brands/rolls-royce-service-dubai/suspension-repair\" is interrupted by another navigation to \"chrome-error://chromewebdata/\"\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5196/ar/brands/rolls-royce-service-dubai/suspension-repair\", waiting until \"networkidle\"\u001b[22m\n"
+    },
+    {
+      "at": "/brands/lamborghini-service-dubai/transmission-repair no JavaScript",
+      "message": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at http://127.0.0.1:5196/brands/lamborghini-service-dubai/transmission-repair\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5196/brands/lamborghini-service-dubai/transmission-repair\", waiting until \"networkidle\"\u001b[22m\n"
+    },
+    {
+      "at": "/ar/brands/lamborghini-service-dubai/transmission-repair no JavaScript",
+      "message": "page.goto: Navigation to \"http://127.0.0.1:5196/ar/brands/lamborghini-service-dubai/transmission-repair\" is interrupted by another navigation to \"chrome-error://chromewebdata/\"\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5196/ar/brands/lamborghini-service-dubai/transmission-repair\", waiting until \"networkidle\"\u001b[22m\n"
+    },
+    {
+      "at": "/brands/lamborghini-service-dubai/mechanical-repair no JavaScript",
+      "message": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at http://127.0.0.1:5196/brands/lamborghini-service-dubai/mechanical-repair\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5196/brands/lamborghini-service-dubai/mechanical-repair\", waiting until \"networkidle\"\u001b[22m\n"
+    },
+    {
+      "at": "/ar/brands/lamborghini-service-dubai/mechanical-repair no JavaScript",
+      "message": "page.goto: Navigation to \"http://127.0.0.1:5196/ar/brands/lamborghini-service-dubai/mechanical-repair\" is interrupted by another navigation to \"chrome-error://chromewebdata/\"\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5196/ar/brands/lamborghini-service-dubai/mechanical-repair\", waiting until \"networkidle\"\u001b[22m\n"
+    },
+    {
+      "at": "/brands/lamborghini-service-dubai/engine-diagnostics no JavaScript",
+      "message": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at http://127.0.0.1:5196/brands/lamborghini-service-dubai/engine-diagnostics\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5196/brands/lamborghini-service-dubai/engine-diagnostics\", waiting until \"networkidle\"\u001b[22m\n"
+    },
+    {
+      "at": "/ar/brands/lamborghini-service-dubai/engine-diagnostics no JavaScript",
+      "message": "page.goto: Navigation to \"http://127.0.0.1:5196/ar/brands/lamborghini-service-dubai/engine-diagnostics\" is interrupted by another navigation to \"chrome-error://chromewebdata/\"\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5196/ar/brands/lamborghini-service-dubai/engine-diagnostics\", waiting until \"networkidle\"\u001b[22m\n"
+    },
+    {
+      "at": "/ar/brands/lamborghini-service-dubai/engine-diagnostics no JavaScript",
+      "message": "All hydrated route/viewport cases pass\n\n4 !== 66\n"
+    }
+  ],
+  "runtimeOrHydrationErrors": [
+    {
+      "at": "/services/mercedes-diagnostics-dubai desktop",
+      "message": "Cannot read properties of undefined (reading 'default')"
+    },
+    {
+      "at": "/services/mercedes-diagnostics-dubai desktop",
+      "message": "Cannot read properties of undefined (reading 'default')"
+    },
+    {
+      "at": "/services/mercedes-diagnostics-dubai desktop",
+      "message": "Minified React error #422; visit https://reactjs.org/docs/error-decoder.html?invariant=422 for the full message or use the non-minified dev environment for full errors and additional helpful warnings."
+    }
+  ],
+  "failedLocalResponses": [
+    {
+      "at": "/services/mercedes-diagnostics-dubai desktop",
+      "path": "/assets/mercedes-amg-engine-repair-dubai--M87Xe7H.jpg",
+      "status": 404
+    },
+    {
+      "at": "/services/mercedes-diagnostics-dubai desktop",
+      "path": "/assets/BrandServicePage-D5PIjlvx.js",
+      "status": 404
+    },
+    {
+      "at": "/services/mercedes-diagnostics-dubai desktop",
+      "path": "/assets/Footer-CsqKA7jk.js",
+      "status": 404
+    },
+    {
+      "at": "/services/mercedes-diagnostics-dubai desktop",
+      "path": "/assets/camera-CMxv8cSW.js",
+      "status": 404
+    },
+    {
+      "at": "/services/mercedes-diagnostics-dubai desktop",
+      "path": "/assets/arrow-right-CMVjFi3Q.js",
+      "status": 404
+    },
+    {
+      "at": "/services/mercedes-diagnostics-dubai desktop",
+      "path": "/assets/message-circle-B_Q-bCel.js",
+      "status": 404
+    },
+    {
+      "at": "/services/mercedes-diagnostics-dubai desktop",
+      "path": "/assets/phone-ru8dXsWV.js",
+      "status": 404
+    },
+    {
+      "at": "/services/mercedes-diagnostics-dubai desktop",
+      "path": "/assets/FinalCTA-GA0qXkjm.js",
+      "status": 404
+    },
+    {
+      "at": "/services/mercedes-diagnostics-dubai desktop",
+      "path": "/assets/Reveal-DW7Nu7Kp.js",
+      "status": 404
+    },
+    {
+      "at": "/services/mercedes-diagnostics-dubai desktop",
+      "path": "/assets/astonMartinHubContent-FZdxiOBc.js",
+      "status": 404
+    },
+    {
+      "at": "/services/mercedes-diagnostics-dubai desktop",
+      "path": "/assets/accordion-BpalTPTJ.js",
+      "status": 404
+    },
+    {
+      "at": "/services/mercedes-diagnostics-dubai desktop",
+      "path": "/assets/index-D88ASJyM.js",
+      "status": 404
+    },
+    {
+      "at": "/services/mercedes-diagnostics-dubai desktop",
+      "path": "/assets/brands-C0C1hH2D.js",
+      "status": 404
+    },
+    {
+      "at": "/services/mercedes-diagnostics-dubai desktop",
+      "path": "/assets/TrustBar-ILLNv5Xs.js",
+      "status": 404
+    },
+    {
+      "at": "/services/mercedes-diagnostics-dubai desktop",
+      "path": "/assets/mercedesProblemGuides-GbL9AgyS.js",
+      "status": 404
+    },
+    {
+      "at": "/services/mercedes-diagnostics-dubai desktop",
+      "path": "/assets/mercedes-amg-engine-repair-dubai-DVcJbu9t.js",
+      "status": 404
+    },
+    {
+      "at": "/services/mercedes-diagnostics-dubai desktop",
+      "path": "/assets/mercedesModelPages-C5MlnnLW.js",
+      "status": 404
+    },
+    {
+      "at": "/services/mercedes-diagnostics-dubai desktop",
+      "path": "/assets/suspension-repair-dubai-ChRPM65Z.js",
+      "status": 404
+    },
+    {
+      "at": "/services/mercedes-diagnostics-dubai desktop",
+      "path": "/assets/circle-check-CF4HcX7X.js",
+      "status": 404
+    },
+    {
+      "at": "/services/mercedes-diagnostics-dubai desktop",
+      "path": "/assets/wrench-CNJzLTH8.js",
+      "status": 404
+    },
+    {
+      "at": "/services/mercedes-diagnostics-dubai desktop",
+      "path": "/assets/index-Ckl3hhBR.js",
+      "status": 404
+    },
+    {
+      "at": "/services/mercedes-diagnostics-dubai desktop",
+      "path": "/assets/index-DKzVD-XN.css",
+      "status": 404
+    },
+    {
+      "at": "/ar/services/mercedes-diagnostics-dubai desktop",
+      "path": "/ar/services/mercedes-diagnostics-dubai",
+      "status": 404
+    },
+    {
+      "at": "/services/mercedes-transmission-repair-dubai desktop",
+      "path": "/services/mercedes-transmission-repair-dubai",
+      "status": 404
+    },
+    {
+      "at": "/ar/services/mercedes-transmission-repair-dubai desktop",
+      "path": "/ar/services/mercedes-transmission-repair-dubai",
+      "status": 404
+    },
+    {
+      "at": "/brands/bmw-service-dubai/transmission-repair desktop",
+      "path": "/brands/bmw-service-dubai/transmission-repair",
+      "status": 404
+    },
+    {
+      "at": "/ar/brands/bmw-service-dubai/transmission-repair desktop",
+      "path": "/ar/brands/bmw-service-dubai/transmission-repair",
+      "status": 404
+    },
+    {
+      "at": "/brands/bmw-service-dubai/mechanical-repair desktop",
+      "path": "/brands/bmw-service-dubai/mechanical-repair",
+      "status": 404
+    },
+    {
+      "at": "/ar/brands/bmw-service-dubai/mechanical-repair desktop",
+      "path": "/ar/brands/bmw-service-dubai/mechanical-repair",
+      "status": 404
+    },
+    {
+      "at": "/brands/rolls-royce-service-dubai/mechanical-repair desktop",
+      "path": "/brands/rolls-royce-service-dubai/mechanical-repair",
+      "status": 404
+    },
+    {
+      "at": "/ar/brands/rolls-royce-service-dubai/mechanical-repair desktop",
+      "path": "/ar/brands/rolls-royce-service-dubai/mechanical-repair",
+      "status": 404
+    },
+    {
+      "at": "/brands/rolls-royce-service-dubai/suspension-repair desktop",
+      "path": "/brands/rolls-royce-service-dubai/suspension-repair",
+      "status": 404
+    },
+    {
+      "at": "/ar/brands/rolls-royce-service-dubai/suspension-repair desktop",
+      "path": "/ar/brands/rolls-royce-service-dubai/suspension-repair",
+      "status": 404
+    },
+    {
+      "at": "/brands/lamborghini-service-dubai/transmission-repair desktop",
+      "path": "/brands/lamborghini-service-dubai/transmission-repair",
+      "status": 404
+    },
+    {
+      "at": "/ar/brands/lamborghini-service-dubai/transmission-repair desktop",
+      "path": "/ar/brands/lamborghini-service-dubai/transmission-repair",
+      "status": 404
+    },
+    {
+      "at": "/brands/lamborghini-service-dubai/mechanical-repair desktop",
+      "path": "/brands/lamborghini-service-dubai/mechanical-repair",
+      "status": 404
+    },
+    {
+      "at": "/ar/brands/lamborghini-service-dubai/mechanical-repair desktop",
+      "path": "/ar/brands/lamborghini-service-dubai/mechanical-repair",
+      "status": 404
+    },
+    {
+      "at": "/brands/lamborghini-service-dubai/engine-diagnostics desktop",
+      "path": "/brands/lamborghini-service-dubai/engine-diagnostics",
+      "status": 404
+    },
+    {
+      "at": "/ar/brands/lamborghini-service-dubai/engine-diagnostics desktop",
+      "path": "/ar/brands/lamborghini-service-dubai/engine-diagnostics",
+      "status": 404
+    },
+    {
+      "at": "/services/mercedes-mechanical-repair-dubai mobile",
+      "path": "/services/mercedes-mechanical-repair-dubai",
+      "status": 404
+    },
+    {
+      "at": "/ar/services/mercedes-mechanical-repair-dubai mobile",
+      "path": "/ar/services/mercedes-mechanical-repair-dubai",
+      "status": 404
+    },
+    {
+      "at": "/services/mercedes-suspension-repair-dubai mobile",
+      "path": "/services/mercedes-suspension-repair-dubai",
+      "status": 404
+    },
+    {
+      "at": "/ar/services/mercedes-suspension-repair-dubai mobile",
+      "path": "/ar/services/mercedes-suspension-repair-dubai",
+      "status": 404
+    },
+    {
+      "at": "/services/mercedes-diagnostics-dubai mobile",
+      "path": "/services/mercedes-diagnostics-dubai",
+      "status": 404
+    },
+    {
+      "at": "/ar/services/mercedes-diagnostics-dubai mobile",
+      "path": "/ar/services/mercedes-diagnostics-dubai",
+      "status": 404
+    },
+    {
+      "at": "/services/mercedes-transmission-repair-dubai mobile",
+      "path": "/services/mercedes-transmission-repair-dubai",
+      "status": 404
+    },
+    {
+      "at": "/ar/services/mercedes-transmission-repair-dubai mobile",
+      "path": "/ar/services/mercedes-transmission-repair-dubai",
+      "status": 404
+    },
+    {
+      "at": "/brands/bmw-service-dubai/transmission-repair mobile",
+      "path": "/brands/bmw-service-dubai/transmission-repair",
+      "status": 404
+    },
+    {
+      "at": "/ar/brands/bmw-service-dubai/transmission-repair mobile",
+      "path": "/ar/brands/bmw-service-dubai/transmission-repair",
+      "status": 404
+    },
+    {
+      "at": "/brands/bmw-service-dubai/mechanical-repair mobile",
+      "path": "/brands/bmw-service-dubai/mechanical-repair",
+      "status": 404
+    },
+    {
+      "at": "/ar/brands/bmw-service-dubai/mechanical-repair mobile",
+      "path": "/ar/brands/bmw-service-dubai/mechanical-repair",
+      "status": 404
+    },
+    {
+      "at": "/brands/rolls-royce-service-dubai/mechanical-repair mobile",
+      "path": "/brands/rolls-royce-service-dubai/mechanical-repair",
+      "status": 404
+    },
+    {
+      "at": "/ar/brands/rolls-royce-service-dubai/mechanical-repair mobile",
+      "path": "/ar/brands/rolls-royce-service-dubai/mechanical-repair",
+      "status": 404
+    },
+    {
+      "at": "/brands/rolls-royce-service-dubai/suspension-repair mobile",
+      "path": "/brands/rolls-royce-service-dubai/suspension-repair",
+      "status": 404
+    },
+    {
+      "at": "/ar/brands/rolls-royce-service-dubai/suspension-repair mobile",
+      "path": "/ar/brands/rolls-royce-service-dubai/suspension-repair",
+      "status": 404
+    },
+    {
+      "at": "/brands/lamborghini-service-dubai/transmission-repair mobile",
+      "path": "/brands/lamborghini-service-dubai/transmission-repair",
+      "status": 404
+    },
+    {
+      "at": "/ar/brands/lamborghini-service-dubai/transmission-repair mobile",
+      "path": "/ar/brands/lamborghini-service-dubai/transmission-repair",
+      "status": 404
+    },
+    {
+      "at": "/brands/lamborghini-service-dubai/mechanical-repair mobile",
+      "path": "/brands/lamborghini-service-dubai/mechanical-repair",
+      "status": 404
+    },
+    {
+      "at": "/ar/brands/lamborghini-service-dubai/mechanical-repair mobile",
+      "path": "/ar/brands/lamborghini-service-dubai/mechanical-repair",
+      "status": 404
+    },
+    {
+      "at": "/brands/lamborghini-service-dubai/engine-diagnostics mobile",
+      "path": "/brands/lamborghini-service-dubai/engine-diagnostics",
+      "status": 404
+    },
+    {
+      "at": "/ar/brands/lamborghini-service-dubai/engine-diagnostics mobile",
+      "path": "/ar/brands/lamborghini-service-dubai/engine-diagnostics",
+      "status": 404
+    },
+    {
+      "at": "/services/mercedes-mechanical-repair-dubai narrow",
+      "path": "/services/mercedes-mechanical-repair-dubai",
+      "status": 404
+    },
+    {
+      "at": "/ar/services/mercedes-mechanical-repair-dubai narrow",
+      "path": "/ar/services/mercedes-mechanical-repair-dubai",
+      "status": 404
+    },
+    {
+      "at": "/services/mercedes-suspension-repair-dubai narrow",
+      "path": "/services/mercedes-suspension-repair-dubai",
+      "status": 404
+    },
+    {
+      "at": "/ar/services/mercedes-suspension-repair-dubai narrow",
+      "path": "/ar/services/mercedes-suspension-repair-dubai",
+      "status": 404
+    },
+    {
+      "at": "/services/mercedes-diagnostics-dubai narrow",
+      "path": "/services/mercedes-diagnostics-dubai",
+      "status": 404
+    },
+    {
+      "at": "/ar/services/mercedes-diagnostics-dubai narrow",
+      "path": "/ar/services/mercedes-diagnostics-dubai",
+      "status": 404
+    },
+    {
+      "at": "/services/mercedes-transmission-repair-dubai narrow",
+      "path": "/services/mercedes-transmission-repair-dubai",
+      "status": 404
+    },
+    {
+      "at": "/ar/services/mercedes-transmission-repair-dubai narrow",
+      "path": "/ar/services/mercedes-transmission-repair-dubai",
+      "status": 404
+    },
+    {
+      "at": "/brands/bmw-service-dubai/transmission-repair narrow",
+      "path": "/brands/bmw-service-dubai/transmission-repair",
+      "status": 404
+    },
+    {
+      "at": "/ar/brands/bmw-service-dubai/transmission-repair narrow",
+      "path": "/ar/brands/bmw-service-dubai/transmission-repair",
+      "status": 404
+    },
+    {
+      "at": "/brands/bmw-service-dubai/mechanical-repair narrow",
+      "path": "/brands/bmw-service-dubai/mechanical-repair",
+      "status": 404
+    },
+    {
+      "at": "/ar/brands/bmw-service-dubai/mechanical-repair narrow",
+      "path": "/ar/brands/bmw-service-dubai/mechanical-repair",
+      "status": 404
+    },
+    {
+      "at": "/brands/rolls-royce-service-dubai/mechanical-repair narrow",
+      "path": "/brands/rolls-royce-service-dubai/mechanical-repair",
+      "status": 404
+    },
+    {
+      "at": "/ar/brands/rolls-royce-service-dubai/mechanical-repair narrow",
+      "path": "/ar/brands/rolls-royce-service-dubai/mechanical-repair",
+      "status": 404
+    },
+    {
+      "at": "/brands/rolls-royce-service-dubai/suspension-repair narrow",
+      "path": "/brands/rolls-royce-service-dubai/suspension-repair",
+      "status": 404
+    },
+    {
+      "at": "/ar/brands/rolls-royce-service-dubai/suspension-repair narrow",
+      "path": "/ar/brands/rolls-royce-service-dubai/suspension-repair",
+      "status": 404
+    },
+    {
+      "at": "/brands/lamborghini-service-dubai/transmission-repair narrow",
+      "path": "/brands/lamborghini-service-dubai/transmission-repair",
+      "status": 404
+    },
+    {
+      "at": "/ar/brands/lamborghini-service-dubai/transmission-repair narrow",
+      "path": "/ar/brands/lamborghini-service-dubai/transmission-repair",
+      "status": 404
+    },
+    {
+      "at": "/brands/lamborghini-service-dubai/mechanical-repair narrow",
+      "path": "/brands/lamborghini-service-dubai/mechanical-repair",
+      "status": 404
+    },
+    {
+      "at": "/ar/brands/lamborghini-service-dubai/mechanical-repair narrow",
+      "path": "/ar/brands/lamborghini-service-dubai/mechanical-repair",
+      "status": 404
+    },
+    {
+      "at": "/brands/lamborghini-service-dubai/engine-diagnostics narrow",
+      "path": "/brands/lamborghini-service-dubai/engine-diagnostics",
+      "status": 404
+    },
+    {
+      "at": "/ar/brands/lamborghini-service-dubai/engine-diagnostics narrow",
+      "path": "/ar/brands/lamborghini-service-dubai/engine-diagnostics",
+      "status": 404
+    },
+    {
+      "at": "Hub link /brands/mercedes-benz-service-dubai -> /services/mercedes-mechanical-repair-dubai",
+      "path": "/brands/mercedes-benz-service-dubai",
+      "status": 404
+    },
+    {
+      "at": "Hub link /ar/brands/mercedes-benz-service-dubai -> /ar/services/mercedes-mechanical-repair-dubai",
+      "path": "/ar/brands/mercedes-benz-service-dubai",
+      "status": 404
+    },
+    {
+      "at": "Hub link /brands/mercedes-benz-service-dubai -> /services/mercedes-suspension-repair-dubai",
+      "path": "/brands/mercedes-benz-service-dubai",
+      "status": 404
+    },
+    {
+      "at": "Hub link /ar/brands/mercedes-benz-service-dubai -> /ar/services/mercedes-suspension-repair-dubai",
+      "path": "/ar/brands/mercedes-benz-service-dubai",
+      "status": 404
+    },
+    {
+      "at": "Hub link /brands/mercedes-benz-service-dubai -> /services/mercedes-diagnostics-dubai",
+      "path": "/brands/mercedes-benz-service-dubai",
+      "status": 404
+    },
+    {
+      "at": "Hub link /ar/brands/mercedes-benz-service-dubai -> /ar/services/mercedes-diagnostics-dubai",
+      "path": "/ar/brands/mercedes-benz-service-dubai",
+      "status": 404
+    },
+    {
+      "at": "Hub link /brands/mercedes-benz-service-dubai -> /services/mercedes-transmission-repair-dubai",
+      "path": "/brands/mercedes-benz-service-dubai",
+      "status": 404
+    },
+    {
+      "at": "Hub link /ar/brands/mercedes-benz-service-dubai -> /ar/services/mercedes-transmission-repair-dubai",
+      "path": "/ar/brands/mercedes-benz-service-dubai",
+      "status": 404
+    },
+    {
+      "at": "Hub link /brands/bmw-service-dubai -> /brands/bmw-service-dubai/transmission-repair",
+      "path": "/brands/bmw-service-dubai",
+      "status": 404
+    },
+    {
+      "at": "Hub link /brands/bmw-service-dubai -> /brands/bmw-service-dubai/mechanical-repair",
+      "path": "/brands/bmw-service-dubai",
+      "status": 404
+    },
+    {
+      "at": "Hub link /brands/rolls-royce-service-dubai -> /brands/rolls-royce-service-dubai/mechanical-repair",
+      "path": "/brands/rolls-royce-service-dubai",
+      "status": 404
+    },
+    {
+      "at": "Hub link /ar/brands/rolls-royce-service-dubai -> /ar/brands/rolls-royce-service-dubai/mechanical-repair",
+      "path": "/ar/brands/rolls-royce-service-dubai",
+      "status": 404
+    },
+    {
+      "at": "Hub link /brands/rolls-royce-service-dubai -> /brands/rolls-royce-service-dubai/suspension-repair",
+      "path": "/brands/rolls-royce-service-dubai",
+      "status": 404
+    },
+    {
+      "at": "Hub link /brands/lamborghini-service-dubai -> /brands/lamborghini-service-dubai/transmission-repair",
+      "path": "/brands/lamborghini-service-dubai",
+      "status": 404
+    },
+    {
+      "at": "Hub link /brands/lamborghini-service-dubai -> /brands/lamborghini-service-dubai/mechanical-repair",
+      "path": "/brands/lamborghini-service-dubai",
+      "status": 404
+    },
+    {
+      "at": "Hub link /brands/lamborghini-service-dubai -> /brands/lamborghini-service-dubai/engine-diagnostics",
+      "path": "/brands/lamborghini-service-dubai",
+      "status": 404
+    },
+    {
+      "at": "/services/mercedes-mechanical-repair-dubai no JavaScript",
+      "path": "/services/mercedes-mechanical-repair-dubai",
+      "status": 404
+    },
+    {
+      "at": "/ar/services/mercedes-mechanical-repair-dubai no JavaScript",
+      "path": "/ar/services/mercedes-mechanical-repair-dubai",
+      "status": 404
+    },
+    {
+      "at": "/services/mercedes-suspension-repair-dubai no JavaScript",
+      "path": "/services/mercedes-suspension-repair-dubai",
+      "status": 404
+    },
+    {
+      "at": "/services/mercedes-diagnostics-dubai no JavaScript",
+      "path": "/services/mercedes-diagnostics-dubai",
+      "status": 404
+    },
+    {
+      "at": "/services/mercedes-transmission-repair-dubai no JavaScript",
+      "path": "/services/mercedes-transmission-repair-dubai",
+      "status": 404
+    },
+    {
+      "at": "/brands/bmw-service-dubai/transmission-repair no JavaScript",
+      "path": "/brands/bmw-service-dubai/transmission-repair",
+      "status": 404
+    },
+    {
+      "at": "/brands/bmw-service-dubai/mechanical-repair no JavaScript",
+      "path": "/brands/bmw-service-dubai/mechanical-repair",
+      "status": 404
+    },
+    {
+      "at": "/brands/rolls-royce-service-dubai/mechanical-repair no JavaScript",
+      "path": "/brands/rolls-royce-service-dubai/mechanical-repair",
+      "status": 404
+    },
+    {
+      "at": "/brands/rolls-royce-service-dubai/suspension-repair no JavaScript",
+      "path": "/brands/rolls-royce-service-dubai/suspension-repair",
+      "status": 404
+    },
+    {
+      "at": "/brands/lamborghini-service-dubai/transmission-repair no JavaScript",
+      "path": "/brands/lamborghini-service-dubai/transmission-repair",
+      "status": 404
+    },
+    {
+      "at": "/brands/lamborghini-service-dubai/mechanical-repair no JavaScript",
+      "path": "/brands/lamborghini-service-dubai/mechanical-repair",
+      "status": 404
+    },
+    {
+      "at": "/brands/lamborghini-service-dubai/engine-diagnostics no JavaScript",
+      "path": "/brands/lamborghini-service-dubai/engine-diagnostics",
+      "status": 404
+    }
+  ],
+  "blockedExternalRequests": {
+    "https://www.googletagmanager.com": 31,
+    "https://fonts.googleapis.com": 20
+  },
+  "blockedLocalWrites": [],
+  "unexpectedPopups": [],
+  "safety": "External requests and contact navigation blocked; non-GET/HEAD requests blocked; window.open stubbed. Contact clicks are interest signals, never confirmed enquiries.",
+  "limitations": "Local built HTML and browser behavior only. No delivery, CRM receipt, field Core Web Vitals, GA4 ingestion, live ranking, or confirmed customer enquiry is asserted.",
+  "finishedAt": "2026-10-19T06:44:48.366Z"
+}

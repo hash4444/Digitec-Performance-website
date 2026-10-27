@@ -1,0 +1,14 @@
+{
+  "phase": "3",
+  "agent_role": "delegated read-only Search Console collection",
+  "attempt": "cua.createBrowserTab('iab', Search Console performance URL, visible:false)",
+  "outcome": "BROWSER_UNAVAILABLE",
+  "observed_error": "Browser is not available: iab",
+  "authentication_failure_inferred": false,
+  "scope_change_attempted": false,
+  "credential_or_cookie_access_attempted": false,
+  "api_backdoor_attempted": false,
+  "fresh_data_collected_by_this_attempt": false,
+  "handoff": "Root agent notified immediately and will collect authenticated UI evidence in its working browser.",
+  "fallback_work": "Prepared exact collection matrix, headers-only templates, export instructions and source-hashed local comparability controls. These are not new measured datasets."
+}

@@ -1,0 +1,15 @@
+// Offline summary of preserved public evidence, not a new deployment or request.
+import {readFile,writeFile} from 'node:fs/promises';
+import {createHash} from 'node:crypto';
+import {resolve} from 'node:path';
+const out=resolve('reports/mercedes-phase-4b/production');
+const sha=v=>createHash('sha256').update(v).digest('hex');
+const httpPath='http/2026-10-26T10-20-06-242Z/capture.json',redirectPath='redirects-http/post-2026-10-26T10-22-00-253Z/capture.json';
+const hbytes=await readFile(resolve(out,httpPath)),rbytes=await readFile(resolve(out,redirectPath));
+const h=JSON.parse(hbytes),r=JSON.parse(rbytes);
+const relevant=h.cases.filter(c=>/^(hub|body|diagnostics|mechanical)-(en|ar)$/.test(c.key));
+const pageChecks=relevant.map(c=>({key:c.key,method:c.method,url:c.chain[0].url,direct200:c.chain.length===1&&c.chain[0].status===200,...(c.method==='GET'?{title:c.chain[0].title,h1:c.chain[0].h1,canonical:c.chain[0].canonical,canonicalExact:JSON.stringify(c.chain[0].canonical)===JSON.stringify(['https://digitecme.com'+c.path]),robots:c.chain[0].robots,noNoindex:[...(c.chain[0].robots||[]),c.chain[0].headers?.['x-robots-tag']||''].every(v=>!/(^|[^a-z])noindex([^a-z]|$)/i.test(v))}:{}),cfRay:c.chain[0].headers?.['cf-ray']}));
+const grouped={};for(const c of r.cases){const key=c.group+(c.rule?':'+c.rule:'');grouped[key]??={cases:0,responses:0,methods:{},firstStatusCounts:{}};const g=grouped[key];g.cases++;g.responses+=c.chain.length;g.methods[c.method]=(g.methods[c.method]||0)+1;const status=c.chain[0]?.status;g.firstStatusCounts[status]=(g.firstStatusCounts[status]||0)+1;}
+const summary={preparedAtUtc:new Date().toISOString(),readOnly:true,productionPublicationPerformed:false,sourceChangesPerformed:false,networkMutationPerformed:false,evidence:{publicCapture:{path:httpPath,sha256:sha(hbytes),startedAt:h.startedAt,finishedAt:h.finishedAt,summary:h.summary},redirectCapture:{path:redirectPath,sha256:sha(rbytes),startedAt:r.startedAt,finishedAt:r.finishedAt,summary:r.summary,stageMeaning:'The reviewed verifier post stage checks the already active Phase 2A redirect behavior. It is a fresh Phase 4B baseline protection check, not evidence of a Phase 4B content publication.'}},relevantPageChecks:pageChecks,relevantChecksPassed:pageChecks.every(c=>c.direct200&&c.canonicalExact!==false&&c.noNoindex!==false),redirectGroups:grouped,failedAssertions:r.assertions.filter(a=>!a.pass),limits:['Public HTTP does not refresh authenticated Cloudflare configuration inventory or establish executing rule IDs.','GET/HEAD confirms observed server output and indexability signals, not Google-selected canonicals or indexing status.','Production assets and local dependency provenance are analyzed separately; no production source identity is assumed.']};
+await writeFile(resolve(out,'baseline-summary.json'),JSON.stringify(summary,null,2));
+console.log(JSON.stringify({pageCases:pageChecks.length,relevantChecksPassed:summary.relevantChecksPassed,redirectSummary:r.summary,redirectGroups:grouped},null,2));

@@ -1,0 +1,5555 @@
+{
+  "at": "2026-10-20T06:25:40.013Z",
+  "passed": true,
+  "checks": 10086,
+  "aboutPages": [
+    {
+      "route": "/about",
+      "passed": true,
+      "metadata": {
+        "title": "About Digitec Performance Center | Car Workshop in Dubai",
+        "description": "Learn about Digi-Tec, an independent car workshop in Al Quoz, Dubai since 2002 for inspection, maintenance, repair, bodywork and performance-project consultation.",
+        "canonical": [
+          "https://digitecme.com/about"
+        ],
+        "alternates": [
+          {
+            "rel": "alternate",
+            "hreflang": "en-AE",
+            "href": "https://digitecme.com/about"
+          },
+          {
+            "rel": "alternate",
+            "hreflang": "ar-AE",
+            "href": "https://digitecme.com/ar/about"
+          },
+          {
+            "rel": "alternate",
+            "hreflang": "x-default",
+            "href": "https://digitecme.com/about"
+          }
+        ],
+        "robots": [
+          "index, follow, max-image-preview:large"
+        ],
+        "h1": [
+          "About D IGI-TEC"
+        ],
+        "graphs": [
+          {
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": "Organization",
+                "@id": "https://digitecme.com/#organization",
+                "name": "Digi-Tec Performance Center",
+                "legalName": "DIGI-TEC Performance Center L.L.C.",
+                "alternateName": [
+                  "Digi-Tec",
+                  "DIGI-TEC",
+                  "Digitec"
+                ],
+                "url": "https://digitecme.com/",
+                "email": "info@digitecme.com",
+                "logo": {
+                  "@id": "https://digitecme.com/#logo"
+                },
+                "image": {
+                  "@id": "https://digitecme.com/#logo"
+                },
+                "sameAs": [
+                  "https://www.instagram.com/digi_tec/",
+                  "https://www.facebook.com/Digitecme/"
+                ],
+                "contactPoint": {
+                  "@type": "ContactPoint",
+                  "telephone": "+971 4 340 2223",
+                  "contactType": "customer service"
+                }
+              },
+              {
+                "@type": "ImageObject",
+                "@id": "https://digitecme.com/#logo",
+                "url": "https://digitecme.com/favicon-192x192.png",
+                "contentUrl": "https://digitecme.com/favicon-192x192.png",
+                "width": 192,
+                "height": 192,
+                "caption": "Digi-Tec Performance Center"
+              },
+              {
+                "@type": "WebSite",
+                "@id": "https://digitecme.com/#website",
+                "url": "https://digitecme.com/",
+                "name": "Digi-Tec Performance Center",
+                "publisher": {
+                  "@id": "https://digitecme.com/#organization"
+                },
+                "inLanguage": [
+                  "en-AE",
+                  "ar-AE"
+                ]
+              },
+              {
+                "@type": [
+                  "AutoRepair",
+                  "AutomotiveBusiness"
+                ],
+                "@id": "https://digitecme.com/#business",
+                "name": "Digi-Tec Performance Center",
+                "url": "https://digitecme.com/",
+                "logo": {
+                  "@id": "https://digitecme.com/#logo"
+                },
+                "image": {
+                  "@id": "https://digitecme.com/#logo"
+                },
+                "parentOrganization": {
+                  "@id": "https://digitecme.com/#organization"
+                },
+                "description": "Independent luxury, European and German vehicle workshop in Al Quoz Industrial Area 3, Dubai.",
+                "foundingDate": "2002",
+                "telephone": "+971 4 340 2223",
+                "email": "info@digitecme.com",
+                "address": {
+                  "@type": "PostalAddress",
+                  "streetAddress": "Al Quoz Industrial Area 3, Warehouses 11–15",
+                  "addressLocality": "Dubai",
+                  "addressCountry": "AE"
+                },
+                "areaServed": {
+                  "@type": "City",
+                  "name": "Dubai"
+                },
+                "contactPoint": {
+                  "@type": "ContactPoint",
+                  "telephone": "+971 4 340 2223",
+                  "contactType": "customer service"
+                },
+                "sameAs": [
+                  "https://www.instagram.com/digi_tec/",
+                  "https://www.facebook.com/Digitecme/"
+                ],
+                "hasOfferCatalog": {
+                  "@id": "https://digitecme.com/#service-catalog"
+                }
+              },
+              {
+                "@type": "OfferCatalog",
+                "@id": "https://digitecme.com/#service-catalog",
+                "name": "Digi-Tec vehicle workshop services",
+                "itemListElement": [
+                  {
+                    "@type": "Offer",
+                    "@id": "https://digitecme.com/#offer-maintenance",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "@id": "https://digitecme.com/#service-maintenance",
+                      "name": "Vehicle maintenance",
+                      "provider": {
+                        "@id": "https://digitecme.com/#business"
+                      }
+                    }
+                  },
+                  {
+                    "@type": "Offer",
+                    "@id": "https://digitecme.com/#offer-diagnostics",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "@id": "https://digitecme.com/#service-diagnostics",
+                      "name": "Vehicle diagnostics",
+                      "provider": {
+                        "@id": "https://digitecme.com/#business"
+                      }
+                    }
+                  },
+                  {
+                    "@type": "Offer",
+                    "@id": "https://digitecme.com/#offer-mechanical-repair",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "@id": "https://digitecme.com/#service-mechanical-repair",
+                      "name": "Mechanical repair",
+                      "provider": {
+                        "@id": "https://digitecme.com/#business"
+                      }
+                    }
+                  },
+                  {
+                    "@type": "Offer",
+                    "@id": "https://digitecme.com/#offer-electrical-repair",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "@id": "https://digitecme.com/#service-electrical-repair",
+                      "name": "Auto electrical repair",
+                      "provider": {
+                        "@id": "https://digitecme.com/#business"
+                      }
+                    }
+                  },
+                  {
+                    "@type": "Offer",
+                    "@id": "https://digitecme.com/#offer-body-repair",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "@id": "https://digitecme.com/#service-body-repair",
+                      "name": "Vehicle body repair",
+                      "provider": {
+                        "@id": "https://digitecme.com/#business"
+                      }
+                    }
+                  },
+                  {
+                    "@type": "Offer",
+                    "@id": "https://digitecme.com/#offer-performance",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "@id": "https://digitecme.com/#service-performance",
+                      "name": "Vehicle performance services",
+                      "provider": {
+                        "@id": "https://digitecme.com/#business"
+                      }
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": "AboutPage",
+                "@id": "https://digitecme.com/about#webpage",
+                "url": "https://digitecme.com/about",
+                "name": "About Digitec Performance Center | Car Workshop in Dubai",
+                "description": "Digi-Tec Performance Center is an independent workshop in Al Quoz, Dubai, established in 2002, with inspection, maintenance, repair, bodywork and performance-project consultation services.",
+                "isPartOf": {
+                  "@id": "https://digitecme.com/#website"
+                },
+                "publisher": {
+                  "@id": "https://digitecme.com/#organization"
+                },
+                "about": {
+                  "@id": "https://digitecme.com/#business"
+                },
+                "mainEntity": {
+                  "@id": "https://digitecme.com/#business"
+                },
+                "breadcrumb": {
+                  "@id": "https://digitecme.com/about#breadcrumb"
+                },
+                "inLanguage": "en-AE"
+              },
+              {
+                "@type": "BreadcrumbList",
+                "@id": "https://digitecme.com/about#breadcrumb",
+                "itemListElement": [
+                  {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://digitecme.com/"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "About",
+                    "item": "https://digitecme.com/about"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "uniqueFilms": 8,
+      "cards": 16,
+      "noInitialVideoSources": true,
+      "previousVisibleMarkupPreserved": true
+    },
+    {
+      "route": "/ar/about",
+      "passed": true,
+      "metadata": {
+        "title": "عن مركز ديجي-تك | ورشة سيارات في دبي",
+        "description": "تعرف على ديجي-تك، ورشة سيارات مستقلة في القوز بدبي منذ 2002 لخدمات الفحص والصيانة والإصلاح وأعمال الهيكل واستشارات مشاريع الأداء.",
+        "canonical": [
+          "https://digitecme.com/ar/about"
+        ],
+        "alternates": [
+          {
+            "rel": "alternate",
+            "hreflang": "en-AE",
+            "href": "https://digitecme.com/about"
+          },
+          {
+            "rel": "alternate",
+            "hreflang": "ar-AE",
+            "href": "https://digitecme.com/ar/about"
+          },
+          {
+            "rel": "alternate",
+            "hreflang": "x-default",
+            "href": "https://digitecme.com/about"
+          }
+        ],
+        "robots": [
+          "index, follow, max-image-preview:large"
+        ],
+        "h1": [
+          "عن D IGI-TEC"
+        ],
+        "graphs": [
+          {
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": "Organization",
+                "@id": "https://digitecme.com/#organization",
+                "name": "Digi-Tec Performance Center",
+                "legalName": "DIGI-TEC Performance Center L.L.C.",
+                "alternateName": [
+                  "Digi-Tec",
+                  "DIGI-TEC",
+                  "Digitec"
+                ],
+                "url": "https://digitecme.com/",
+                "email": "info@digitecme.com",
+                "logo": {
+                  "@id": "https://digitecme.com/#logo"
+                },
+                "image": {
+                  "@id": "https://digitecme.com/#logo"
+                },
+                "sameAs": [
+                  "https://www.instagram.com/digi_tec/",
+                  "https://www.facebook.com/Digitecme/"
+                ],
+                "contactPoint": {
+                  "@type": "ContactPoint",
+                  "telephone": "+971 4 340 2223",
+                  "contactType": "customer service"
+                }
+              },
+              {
+                "@type": "ImageObject",
+                "@id": "https://digitecme.com/#logo",
+                "url": "https://digitecme.com/favicon-192x192.png",
+                "contentUrl": "https://digitecme.com/favicon-192x192.png",
+                "width": 192,
+                "height": 192,
+                "caption": "Digi-Tec Performance Center"
+              },
+              {
+                "@type": "WebSite",
+                "@id": "https://digitecme.com/#website",
+                "url": "https://digitecme.com/",
+                "name": "Digi-Tec Performance Center",
+                "publisher": {
+                  "@id": "https://digitecme.com/#organization"
+                },
+                "inLanguage": [
+                  "en-AE",
+                  "ar-AE"
+                ]
+              },
+              {
+                "@type": [
+                  "AutoRepair",
+                  "AutomotiveBusiness"
+                ],
+                "@id": "https://digitecme.com/#business",
+                "name": "Digi-Tec Performance Center",
+                "url": "https://digitecme.com/",
+                "logo": {
+                  "@id": "https://digitecme.com/#logo"
+                },
+                "image": {
+                  "@id": "https://digitecme.com/#logo"
+                },
+                "parentOrganization": {
+                  "@id": "https://digitecme.com/#organization"
+                },
+                "description": "Independent luxury, European and German vehicle workshop in Al Quoz Industrial Area 3, Dubai.",
+                "foundingDate": "2002",
+                "telephone": "+971 4 340 2223",
+                "email": "info@digitecme.com",
+                "address": {
+                  "@type": "PostalAddress",
+                  "streetAddress": "Al Quoz Industrial Area 3, Warehouses 11–15",
+                  "addressLocality": "Dubai",
+                  "addressCountry": "AE"
+                },
+                "areaServed": {
+                  "@type": "City",
+                  "name": "Dubai"
+                },
+                "contactPoint": {
+                  "@type": "ContactPoint",
+                  "telephone": "+971 4 340 2223",
+                  "contactType": "customer service"
+                },
+                "sameAs": [
+                  "https://www.instagram.com/digi_tec/",
+                  "https://www.facebook.com/Digitecme/"
+                ],
+                "hasOfferCatalog": {
+                  "@id": "https://digitecme.com/#service-catalog"
+                }
+              },
+              {
+                "@type": "OfferCatalog",
+                "@id": "https://digitecme.com/#service-catalog",
+                "name": "Digi-Tec vehicle workshop services",
+                "itemListElement": [
+                  {
+                    "@type": "Offer",
+                    "@id": "https://digitecme.com/#offer-maintenance",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "@id": "https://digitecme.com/#service-maintenance",
+                      "name": "Vehicle maintenance",
+                      "provider": {
+                        "@id": "https://digitecme.com/#business"
+                      }
+                    }
+                  },
+                  {
+                    "@type": "Offer",
+                    "@id": "https://digitecme.com/#offer-diagnostics",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "@id": "https://digitecme.com/#service-diagnostics",
+                      "name": "Vehicle diagnostics",
+                      "provider": {
+                        "@id": "https://digitecme.com/#business"
+                      }
+                    }
+                  },
+                  {
+                    "@type": "Offer",
+                    "@id": "https://digitecme.com/#offer-mechanical-repair",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "@id": "https://digitecme.com/#service-mechanical-repair",
+                      "name": "Mechanical repair",
+                      "provider": {
+                        "@id": "https://digitecme.com/#business"
+                      }
+                    }
+                  },
+                  {
+                    "@type": "Offer",
+                    "@id": "https://digitecme.com/#offer-electrical-repair",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "@id": "https://digitecme.com/#service-electrical-repair",
+                      "name": "Auto electrical repair",
+                      "provider": {
+                        "@id": "https://digitecme.com/#business"
+                      }
+                    }
+                  },
+                  {
+                    "@type": "Offer",
+                    "@id": "https://digitecme.com/#offer-body-repair",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "@id": "https://digitecme.com/#service-body-repair",
+                      "name": "Vehicle body repair",
+                      "provider": {
+                        "@id": "https://digitecme.com/#business"
+                      }
+                    }
+                  },
+                  {
+                    "@type": "Offer",
+                    "@id": "https://digitecme.com/#offer-performance",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "@id": "https://digitecme.com/#service-performance",
+                      "name": "Vehicle performance services",
+                      "provider": {
+                        "@id": "https://digitecme.com/#business"
+                      }
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": "AboutPage",
+                "@id": "https://digitecme.com/ar/about#webpage",
+                "url": "https://digitecme.com/ar/about",
+                "name": "عن مركز ديجي-تك | ورشة سيارات في دبي",
+                "description": "ديجي-تك ورشة سيارات مستقلة في القوز بدبي، تأسست عام 2002 وتعرض خدمات الفحص والصيانة والإصلاح وأعمال الهيكل واستشارات مشاريع الأداء.",
+                "isPartOf": {
+                  "@id": "https://digitecme.com/#website"
+                },
+                "publisher": {
+                  "@id": "https://digitecme.com/#organization"
+                },
+                "about": {
+                  "@id": "https://digitecme.com/#business"
+                },
+                "mainEntity": {
+                  "@id": "https://digitecme.com/#business"
+                },
+                "breadcrumb": {
+                  "@id": "https://digitecme.com/ar/about#breadcrumb"
+                },
+                "inLanguage": "ar-AE"
+              },
+              {
+                "@type": "BreadcrumbList",
+                "@id": "https://digitecme.com/ar/about#breadcrumb",
+                "itemListElement": [
+                  {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "الرئيسية",
+                    "item": "https://digitecme.com/ar"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "من نحن",
+                    "item": "https://digitecme.com/ar/about"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "uniqueFilms": 8,
+      "cards": 16,
+      "noInitialVideoSources": true,
+      "previousVisibleMarkupPreserved": true
+    }
+  ],
+  "preservedRoutes": [
+    {
+      "route": "/",
+      "passed": true
+    },
+    {
+      "route": "/ar",
+      "passed": true
+    },
+    {
+      "route": "/ar/best-audi-workshop-dubai",
+      "passed": true
+    },
+    {
+      "route": "/ar/best-bmw-workshop-dubai",
+      "passed": true
+    },
+    {
+      "route": "/ar/best-car-workshop-dubai",
+      "passed": true
+    },
+    {
+      "route": "/ar/best-ferrari-workshop-dubai",
+      "passed": true
+    },
+    {
+      "route": "/ar/best-lamborghini-workshop-dubai",
+      "passed": true
+    },
+    {
+      "route": "/ar/best-porsche-workshop-dubai",
+      "passed": true
+    },
+    {
+      "route": "/ar/best-range-rover-workshop-dubai",
+      "passed": true
+    },
+    {
+      "route": "/ar/blog",
+      "passed": true
+    },
+    {
+      "route": "/ar/blog/air-suspension-repair-dubai-guide",
+      "passed": true
+    },
+    {
+      "route": "/ar/blog/aston-martin-best-workshop-dubai",
+      "passed": true
+    },
+    {
+      "route": "/ar/blog/aston-martin-db11-service-dubai-guide",
+      "passed": true
+    },
+    {
+      "route": "/ar/blog/audi-maintenance-guide-dubai",
+      "passed": true
+    },
+    {
+      "route": "/ar/blog/audi-q7-service-dubai-guide",
+      "passed": true
+    },
+    {
+      "route": "/ar/blog/audi-rs-service-dubai-guide",
+      "passed": true
+    },
+    {
+      "route": "/ar/blog/bentley-best-workshop-dubai",
+      "passed": true
+    },
+    {
+      "route": "/ar/blog/bentley-continental-gt-service-dubai-guide",
+      "passed": true
+    },
+    {
+      "route": "/ar/blog/best-car-workshop-dubai",
+      "passed": true
+    },
+    {
+      "route": "/ar/blog/best-defender-workshop-dubai",
+      "passed": true
+    },
+    {
+      "route": "/ar/blog/best-oil-change-dubai-mercedes",
+      "passed": true
+    },
+    {
+      "route": "/ar/blog/bmw-m-service-dubai-guide",
+      "passed": true
+    },
+    {
+      "route": "/ar/blog/bmw-maintenance-guide-dubai",
+      "passed": true
+    },
+    {
+      "route": "/ar/blog/bmw-x5-service-dubai-guide",
+      "passed": true
+    },
+    {
+      "route": "/ar/blog/brake-repair-dubai",
+      "passed": true
+    },
+    {
+      "route": "/ar/blog/cadillac-best-workshop-dubai",
+      "passed": true
+    },
+    {
+      "route": "/ar/blog/car-ac-not-cold-dubai-causes",
+      "passed": true
+    },
+    {
+      "route": "/ar/blog/car-ac-repair-dubai",
+      "passed": true
+    },
+    {
+      "route": "/ar/blog/car-battery-life-dubai-heat",
+      "passed": true
+    },
+    {
+      "route": "/ar/blog/car-battery-replacement-dubai",
+      "passed": true
+    },
+    {
+      "route": "/ar/blog/car-service-cost-dubai-luxury-brands",
+      "passed": true
+    },
+    {
+      "route": "/ar/blog/car-service-interval-dubai-heat",
+      "passed": true
+    },
+    {
+      "route": "/ar/blog/ceramic-coating-vs-ppf-dubai",
+      "passed": true
+    },
+    {
+      "route": "/ar/blog/check-engine-light-dubai-guide",
+      "passed": true
+    },
+    {
+      "route": "/ar/blog/chevrolet-best-workshop-dubai",
+      "passed": true
+    },
+    {
+      "route": "/ar/blog/dealer-vs-independent-workshop-dubai",
+      "passed": true
+    },
+    {
+      "route": "/ar/blog/defender-service-dubai-guide",
+      "passed": true
+    },
+    {
+      "route": "/ar/blog/ecu-remap-safe-dubai-guide",
+      "passed": true
+    },
+    {
+      "route": "/ar/blog/engine-overheating-dubai-what-to-do",
+      "passed": true
+    },
+    {
+      "route": "/ar/blog/ferrari-488-service-dubai-guide",
+      "passed": true
+    },
+    {
+      "route": "/ar/blog/ferrari-maintenance-guide-dubai",
+      "passed": true
+    },
+    {
+      "route": "/ar/blog/ford-best-workshop-dubai",
+      "passed": true
+    },
+    {
+      "route": "/ar/blog/g63-to-brabus-g800-conversion-dubai",
+      "passed": true
+    },
+    {
+      "route": "/ar/blog/gad-tuning-explained",
+      "passed": true
+    },
+    {
+      "route": "/ar/blog/how-much-is-my-mercedes-worth-dubai",
+      "passed": true
+    },
+    {
+      "route": "/ar/blog/jaguar-best-workshop-dubai",
+      "passed": true
+    },
+    {
+      "route": "/ar/blog/lamborghini-maintenance-guide-dubai",
+      "passed": true
+    },
+    {
+      "route": "/ar/blog/lamborghini-urus-service-dubai-guide",
+      "passed": true
+    },
+    {
+      "route": "/ar/blog/land-rover-best-workshop-dubai",
+      "passed": true
+    },
+    {
+      "route": "/ar/blog/maserati-best-workshop-dubai",
+      "passed": true
+    },
+    {
+      "route": "/ar/blog/maybach-best-workshop-dubai",
+      "passed": true
+    },
+    {
+      "route": "/ar/blog/maybach-s580-service-dubai-guide",
+      "passed": true
+    },
+    {
+      "route": "/ar/blog/mclaren-720s-service-dubai-guide",
+      "passed": true
+    },
+    {
+      "route": "/ar/blog/mclaren-best-workshop-dubai",
+      "passed": true
+    },
+    {
+      "route": "/ar/blog/mercedes-amg-gt-black-series-1300hp-build-dubai",
+      "passed": true
+    },
+    {
+      "route": "/ar/blog/mercedes-amg-gt-tuning-dubai",
+      "passed": true
+    },
+    {
+      "route": "/ar/blog/mercedes-benz-maintenance-guide-dubai",
+      "passed": true
+    },
+    {
+      "route": "/ar/blog/mercedes-c-class-service-dubai-guide",
+      "passed": true
+    },
+    {
+      "route": "/ar/blog/mercedes-e-class-service-dubai-guide",
+      "passed": true
+    },
+    {
+      "route": "/ar/blog/mercedes-g63-service-dubai-guide",
+      "passed": true
+    },
+    {
+      "route": "/ar/blog/mercedes-repair-dubai-complete-guide",
+      "passed": true
+    },
+    {
+      "route": "/ar/blog/mercedes-s-class-service-dubai-guide",
+      "passed": true
+    },
+    {
+      "route": "/ar/blog/mercedes-service-cost-dubai-guide",
+      "passed": true
+    },
+    {
+      "route": "/ar/blog/mercedes-service-intervals-dubai-heat",
+      "passed": true
+    },
+    {
+      "route": "/ar/blog/mini-best-workshop-dubai",
+      "passed": true
+    },
+    {
+      "route": "/ar/blog/oil-specification-guide-dubai-luxury",
+      "passed": true
+    },
+    {
+      "route": "/ar/blog/porsche-911-service-dubai-guide",
+      "passed": true
+    },
+    {
+      "route": "/ar/blog/porsche-cayenne-service-dubai-guide",
+      "passed": true
+    },
+    {
+      "route": "/ar/blog/porsche-maintenance-guide-dubai",
+      "passed": true
+    },
+    {
+      "route": "/ar/blog/porsche-panamera-service-dubai-guide",
+      "passed": true
+    },
+    {
+      "route": "/ar/blog/pre-purchase-inspection-dubai-guide",
+      "passed": true
+    },
+    {
+      "route": "/ar/blog/range-rover-land-rover-air-suspension-problems-dubai",
+      "passed": true
+    },
+    {
+      "route": "/ar/blog/range-rover-maintenance-guide-dubai",
+      "passed": true
+    },
+    {
+      "route": "/ar/blog/range-rover-sport-service-dubai-guide",
+      "passed": true
+    },
+    {
+      "route": "/ar/blog/range-rover-vogue-service-dubai-guide",
+      "passed": true
+    },
+    {
+      "route": "/ar/blog/rolls-royce-best-workshop-dubai",
+      "passed": true
+    },
+    {
+      "route": "/ar/blog/rolls-royce-ghost-service-dubai-guide",
+      "passed": true
+    },
+    {
+      "route": "/ar/blog/summer-car-preparation-dubai-checklist",
+      "passed": true
+    },
+    {
+      "route": "/ar/blog/transmission-service-7g-9g-dubai",
+      "passed": true
+    },
+    {
+      "route": "/ar/blog/volkswagen-best-workshop-dubai",
+      "passed": true
+    },
+    {
+      "route": "/ar/blog/why-ceramic-coating-matters-uae",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/aston-martin-service-dubai",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/aston-martin-service-dubai/ac-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/aston-martin-service-dubai/battery-replacement",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/aston-martin-service-dubai/body-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/aston-martin-service-dubai/brake-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/aston-martin-service-dubai/electrical-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/aston-martin-service-dubai/engine-diagnostics",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/aston-martin-service-dubai/exhaust-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/aston-martin-service-dubai/fuel-system-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/aston-martin-service-dubai/mechanical-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/aston-martin-service-dubai/oil-change",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/aston-martin-service-dubai/steering-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/aston-martin-service-dubai/suspension-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/aston-martin-service-dubai/tire-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/aston-martin-service-dubai/transmission-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/audi-service-dubai",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/audi-service-dubai/ac-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/audi-service-dubai/battery-replacement",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/audi-service-dubai/body-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/audi-service-dubai/brake-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/audi-service-dubai/electrical-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/audi-service-dubai/engine-diagnostics",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/audi-service-dubai/exhaust-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/audi-service-dubai/fuel-system-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/audi-service-dubai/mechanical-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/audi-service-dubai/oil-change",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/audi-service-dubai/steering-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/audi-service-dubai/suspension-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/audi-service-dubai/tire-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/audi-service-dubai/transmission-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/bentley-service-dubai",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/bentley-service-dubai/ac-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/bentley-service-dubai/battery-replacement",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/bentley-service-dubai/body-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/bentley-service-dubai/brake-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/bentley-service-dubai/electrical-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/bentley-service-dubai/engine-diagnostics",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/bentley-service-dubai/exhaust-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/bentley-service-dubai/fuel-system-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/bentley-service-dubai/mechanical-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/bentley-service-dubai/oil-change",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/bentley-service-dubai/steering-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/bentley-service-dubai/suspension-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/bentley-service-dubai/tire-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/bentley-service-dubai/transmission-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/bmw-service-dubai",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/bmw-service-dubai/ac-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/bmw-service-dubai/battery-replacement",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/bmw-service-dubai/body-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/bmw-service-dubai/brake-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/bmw-service-dubai/electrical-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/bmw-service-dubai/engine-diagnostics",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/bmw-service-dubai/exhaust-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/bmw-service-dubai/fuel-system-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/bmw-service-dubai/mechanical-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/bmw-service-dubai/oil-change",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/bmw-service-dubai/steering-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/bmw-service-dubai/suspension-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/bmw-service-dubai/tire-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/bmw-service-dubai/transmission-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/bugatti-service-dubai",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/bugatti-service-dubai/ac-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/bugatti-service-dubai/battery-replacement",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/bugatti-service-dubai/body-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/bugatti-service-dubai/brake-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/bugatti-service-dubai/electrical-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/bugatti-service-dubai/engine-diagnostics",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/bugatti-service-dubai/exhaust-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/bugatti-service-dubai/fuel-system-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/bugatti-service-dubai/mechanical-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/bugatti-service-dubai/oil-change",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/bugatti-service-dubai/steering-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/bugatti-service-dubai/suspension-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/bugatti-service-dubai/tire-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/bugatti-service-dubai/transmission-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/byd-service-dubai",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/byd-service-dubai/ac-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/byd-service-dubai/battery-replacement",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/byd-service-dubai/body-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/byd-service-dubai/brake-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/byd-service-dubai/electrical-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/byd-service-dubai/engine-diagnostics",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/byd-service-dubai/exhaust-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/byd-service-dubai/fuel-system-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/byd-service-dubai/mechanical-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/byd-service-dubai/oil-change",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/byd-service-dubai/steering-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/byd-service-dubai/suspension-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/byd-service-dubai/tire-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/byd-service-dubai/transmission-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/cadillac-service-dubai",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/cadillac-service-dubai/ac-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/cadillac-service-dubai/battery-replacement",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/cadillac-service-dubai/body-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/cadillac-service-dubai/brake-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/cadillac-service-dubai/electrical-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/cadillac-service-dubai/engine-diagnostics",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/cadillac-service-dubai/exhaust-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/cadillac-service-dubai/fuel-system-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/cadillac-service-dubai/mechanical-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/cadillac-service-dubai/oil-change",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/cadillac-service-dubai/steering-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/cadillac-service-dubai/suspension-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/cadillac-service-dubai/tire-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/cadillac-service-dubai/transmission-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/chevrolet-service-dubai",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/chevrolet-service-dubai/ac-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/chevrolet-service-dubai/brake-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/chevrolet-service-dubai/engine-diagnostics",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/chevrolet-service-dubai/oil-change",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/chevrolet-service-dubai/suspension-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/chevrolet-service-dubai/transmission-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/chrysler-service-dubai",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/chrysler-service-dubai/ac-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/chrysler-service-dubai/brake-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/chrysler-service-dubai/engine-diagnostics",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/chrysler-service-dubai/oil-change",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/chrysler-service-dubai/suspension-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/chrysler-service-dubai/transmission-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/corvette-service-dubai",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/corvette-service-dubai/ac-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/corvette-service-dubai/brake-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/corvette-service-dubai/engine-diagnostics",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/corvette-service-dubai/oil-change",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/corvette-service-dubai/suspension-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/corvette-service-dubai/transmission-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/defender-service-dubai",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/defender-service-dubai/ac-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/defender-service-dubai/battery-replacement",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/defender-service-dubai/body-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/defender-service-dubai/brake-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/defender-service-dubai/electrical-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/defender-service-dubai/engine-diagnostics",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/defender-service-dubai/exhaust-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/defender-service-dubai/fuel-system-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/defender-service-dubai/mechanical-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/defender-service-dubai/oil-change",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/defender-service-dubai/steering-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/defender-service-dubai/suspension-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/defender-service-dubai/tire-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/defender-service-dubai/transmission-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/dodge-service-dubai",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/dodge-service-dubai/ac-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/dodge-service-dubai/brake-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/dodge-service-dubai/engine-diagnostics",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/dodge-service-dubai/oil-change",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/dodge-service-dubai/suspension-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/dodge-service-dubai/transmission-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/ferrari-service-dubai",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/ferrari-service-dubai/ac-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/ferrari-service-dubai/battery-replacement",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/ferrari-service-dubai/body-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/ferrari-service-dubai/brake-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/ferrari-service-dubai/electrical-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/ferrari-service-dubai/engine-diagnostics",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/ferrari-service-dubai/exhaust-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/ferrari-service-dubai/fuel-system-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/ferrari-service-dubai/mechanical-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/ferrari-service-dubai/oil-change",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/ferrari-service-dubai/steering-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/ferrari-service-dubai/suspension-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/ferrari-service-dubai/tire-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/ferrari-service-dubai/transmission-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/ford-service-dubai",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/ford-service-dubai/ac-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/ford-service-dubai/brake-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/ford-service-dubai/engine-diagnostics",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/ford-service-dubai/oil-change",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/ford-service-dubai/suspension-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/ford-service-dubai/transmission-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/genesis-service-dubai",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/genesis-service-dubai/ac-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/genesis-service-dubai/brake-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/genesis-service-dubai/engine-diagnostics",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/genesis-service-dubai/oil-change",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/genesis-service-dubai/suspension-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/genesis-service-dubai/transmission-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/gmc-service-dubai",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/gmc-service-dubai/ac-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/gmc-service-dubai/brake-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/gmc-service-dubai/engine-diagnostics",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/gmc-service-dubai/oil-change",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/gmc-service-dubai/suspension-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/gmc-service-dubai/transmission-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/hummer-service-dubai",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/hummer-service-dubai/ac-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/hummer-service-dubai/brake-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/hummer-service-dubai/engine-diagnostics",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/hummer-service-dubai/oil-change",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/hummer-service-dubai/suspension-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/hummer-service-dubai/transmission-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/jaguar-service-dubai",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/jaguar-service-dubai/ac-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/jaguar-service-dubai/brake-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/jaguar-service-dubai/engine-diagnostics",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/jaguar-service-dubai/oil-change",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/jaguar-service-dubai/suspension-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/jaguar-service-dubai/transmission-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/jeep-service-dubai",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/jeep-service-dubai/ac-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/jeep-service-dubai/battery-replacement",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/jeep-service-dubai/body-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/jeep-service-dubai/brake-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/jeep-service-dubai/electrical-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/jeep-service-dubai/engine-diagnostics",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/jeep-service-dubai/exhaust-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/jeep-service-dubai/fuel-system-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/jeep-service-dubai/mechanical-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/jeep-service-dubai/oil-change",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/jeep-service-dubai/steering-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/jeep-service-dubai/suspension-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/jeep-service-dubai/tire-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/jeep-service-dubai/transmission-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/jetour-service-dubai",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/jetour-service-dubai/ac-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/jetour-service-dubai/battery-replacement",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/jetour-service-dubai/body-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/jetour-service-dubai/brake-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/jetour-service-dubai/electrical-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/jetour-service-dubai/engine-diagnostics",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/jetour-service-dubai/exhaust-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/jetour-service-dubai/fuel-system-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/jetour-service-dubai/mechanical-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/jetour-service-dubai/oil-change",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/jetour-service-dubai/steering-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/jetour-service-dubai/suspension-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/jetour-service-dubai/tire-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/jetour-service-dubai/transmission-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/koenigsegg-service-dubai",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/koenigsegg-service-dubai/ac-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/koenigsegg-service-dubai/brake-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/koenigsegg-service-dubai/engine-diagnostics",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/koenigsegg-service-dubai/oil-change",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/koenigsegg-service-dubai/suspension-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/koenigsegg-service-dubai/transmission-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/lamborghini-service-dubai",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/lamborghini-service-dubai/ac-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/lamborghini-service-dubai/battery-replacement",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/lamborghini-service-dubai/body-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/lamborghini-service-dubai/brake-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/lamborghini-service-dubai/electrical-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/lamborghini-service-dubai/engine-diagnostics",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/lamborghini-service-dubai/exhaust-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/lamborghini-service-dubai/fuel-system-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/lamborghini-service-dubai/mechanical-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/lamborghini-service-dubai/oil-change",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/lamborghini-service-dubai/steering-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/lamborghini-service-dubai/suspension-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/lamborghini-service-dubai/tire-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/lamborghini-service-dubai/transmission-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/land-rover-service-dubai",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/land-rover-service-dubai/ac-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/land-rover-service-dubai/battery-replacement",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/land-rover-service-dubai/body-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/land-rover-service-dubai/brake-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/land-rover-service-dubai/electrical-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/land-rover-service-dubai/engine-diagnostics",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/land-rover-service-dubai/exhaust-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/land-rover-service-dubai/fuel-system-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/land-rover-service-dubai/mechanical-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/land-rover-service-dubai/oil-change",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/land-rover-service-dubai/steering-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/land-rover-service-dubai/suspension-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/land-rover-service-dubai/tire-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/land-rover-service-dubai/transmission-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/lincoln-service-dubai",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/lincoln-service-dubai/ac-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/lincoln-service-dubai/brake-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/lincoln-service-dubai/engine-diagnostics",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/lincoln-service-dubai/oil-change",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/lincoln-service-dubai/suspension-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/lincoln-service-dubai/transmission-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/maserati-service-dubai",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/maserati-service-dubai/ac-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/maserati-service-dubai/battery-replacement",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/maserati-service-dubai/body-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/maserati-service-dubai/brake-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/maserati-service-dubai/electrical-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/maserati-service-dubai/engine-diagnostics",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/maserati-service-dubai/exhaust-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/maserati-service-dubai/fuel-system-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/maserati-service-dubai/mechanical-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/maserati-service-dubai/oil-change",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/maserati-service-dubai/steering-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/maserati-service-dubai/suspension-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/maserati-service-dubai/tire-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/maserati-service-dubai/transmission-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/maybach-service-dubai",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/maybach-service-dubai/ac-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/maybach-service-dubai/battery-replacement",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/maybach-service-dubai/body-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/maybach-service-dubai/brake-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/maybach-service-dubai/electrical-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/maybach-service-dubai/engine-diagnostics",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/maybach-service-dubai/exhaust-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/maybach-service-dubai/fuel-system-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/maybach-service-dubai/mechanical-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/maybach-service-dubai/oil-change",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/maybach-service-dubai/steering-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/maybach-service-dubai/suspension-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/maybach-service-dubai/tire-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/maybach-service-dubai/transmission-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/mclaren-service-dubai",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/mclaren-service-dubai/ac-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/mclaren-service-dubai/battery-replacement",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/mclaren-service-dubai/body-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/mclaren-service-dubai/brake-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/mclaren-service-dubai/electrical-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/mclaren-service-dubai/engine-diagnostics",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/mclaren-service-dubai/exhaust-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/mclaren-service-dubai/fuel-system-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/mclaren-service-dubai/mechanical-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/mclaren-service-dubai/oil-change",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/mclaren-service-dubai/steering-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/mclaren-service-dubai/suspension-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/mclaren-service-dubai/tire-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/mclaren-service-dubai/transmission-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/mercedes-benz-service-dubai",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/mini-service-dubai",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/mini-service-dubai/ac-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/mini-service-dubai/brake-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/mini-service-dubai/engine-diagnostics",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/mini-service-dubai/oil-change",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/mini-service-dubai/suspension-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/mini-service-dubai/transmission-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/pagani-service-dubai",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/pagani-service-dubai/ac-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/pagani-service-dubai/battery-replacement",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/pagani-service-dubai/body-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/pagani-service-dubai/brake-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/pagani-service-dubai/electrical-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/pagani-service-dubai/engine-diagnostics",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/pagani-service-dubai/exhaust-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/pagani-service-dubai/fuel-system-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/pagani-service-dubai/mechanical-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/pagani-service-dubai/oil-change",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/pagani-service-dubai/steering-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/pagani-service-dubai/suspension-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/pagani-service-dubai/tire-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/pagani-service-dubai/transmission-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/porsche-service-dubai",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/porsche-service-dubai/ac-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/porsche-service-dubai/battery-replacement",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/porsche-service-dubai/body-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/porsche-service-dubai/brake-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/porsche-service-dubai/electrical-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/porsche-service-dubai/engine-diagnostics",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/porsche-service-dubai/exhaust-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/porsche-service-dubai/fuel-system-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/porsche-service-dubai/mechanical-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/porsche-service-dubai/oil-change",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/porsche-service-dubai/steering-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/porsche-service-dubai/suspension-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/porsche-service-dubai/tire-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/porsche-service-dubai/transmission-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/range-rover-service-dubai",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/range-rover-service-dubai/ac-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/range-rover-service-dubai/battery-replacement",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/range-rover-service-dubai/body-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/range-rover-service-dubai/brake-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/range-rover-service-dubai/electrical-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/range-rover-service-dubai/engine-diagnostics",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/range-rover-service-dubai/exhaust-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/range-rover-service-dubai/fuel-system-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/range-rover-service-dubai/mechanical-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/range-rover-service-dubai/oil-change",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/range-rover-service-dubai/steering-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/range-rover-service-dubai/suspension-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/range-rover-service-dubai/tire-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/range-rover-service-dubai/transmission-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/rolls-royce-service-dubai",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/rolls-royce-service-dubai/ac-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/rolls-royce-service-dubai/battery-replacement",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/rolls-royce-service-dubai/body-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/rolls-royce-service-dubai/brake-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/rolls-royce-service-dubai/electrical-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/rolls-royce-service-dubai/engine-diagnostics",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/rolls-royce-service-dubai/exhaust-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/rolls-royce-service-dubai/fuel-system-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/rolls-royce-service-dubai/mechanical-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/rolls-royce-service-dubai/oil-change",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/rolls-royce-service-dubai/steering-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/rolls-royce-service-dubai/suspension-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/rolls-royce-service-dubai/tire-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/rolls-royce-service-dubai/transmission-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/rox-service-dubai",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/rox-service-dubai/ac-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/rox-service-dubai/battery-replacement",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/rox-service-dubai/body-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/rox-service-dubai/brake-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/rox-service-dubai/electrical-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/rox-service-dubai/engine-diagnostics",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/rox-service-dubai/exhaust-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/rox-service-dubai/fuel-system-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/rox-service-dubai/mechanical-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/rox-service-dubai/oil-change",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/rox-service-dubai/soft-close-door-installation",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/rox-service-dubai/steering-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/rox-service-dubai/suspension-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/rox-service-dubai/tire-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/rox-service-dubai/transmission-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/subaru-service-dubai",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/subaru-service-dubai/ac-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/subaru-service-dubai/brake-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/subaru-service-dubai/engine-diagnostics",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/subaru-service-dubai/oil-change",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/subaru-service-dubai/suspension-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/subaru-service-dubai/transmission-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/tesla-service-dubai",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/tesla-service-dubai/ac-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/tesla-service-dubai/battery-replacement",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/tesla-service-dubai/body-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/tesla-service-dubai/brake-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/tesla-service-dubai/electrical-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/tesla-service-dubai/mechanical-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/tesla-service-dubai/steering-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/tesla-service-dubai/suspension-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/tesla-service-dubai/tire-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/volkswagen-service-dubai",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/volkswagen-service-dubai/ac-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/volkswagen-service-dubai/battery-replacement",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/volkswagen-service-dubai/body-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/volkswagen-service-dubai/brake-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/volkswagen-service-dubai/electrical-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/volkswagen-service-dubai/engine-diagnostics",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/volkswagen-service-dubai/exhaust-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/volkswagen-service-dubai/fuel-system-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/volkswagen-service-dubai/mechanical-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/volkswagen-service-dubai/oil-change",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/volkswagen-service-dubai/steering-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/volkswagen-service-dubai/suspension-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/volkswagen-service-dubai/tire-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/volkswagen-service-dubai/transmission-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/volvo-service-dubai",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/volvo-service-dubai/ac-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/volvo-service-dubai/battery-replacement",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/volvo-service-dubai/body-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/volvo-service-dubai/brake-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/volvo-service-dubai/electrical-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/volvo-service-dubai/engine-diagnostics",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/volvo-service-dubai/exhaust-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/volvo-service-dubai/fuel-system-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/volvo-service-dubai/mechanical-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/volvo-service-dubai/oil-change",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/volvo-service-dubai/steering-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/volvo-service-dubai/suspension-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/volvo-service-dubai/tire-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/volvo-service-dubai/transmission-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/faq",
+      "passed": true
+    },
+    {
+      "route": "/ar/services",
+      "passed": true
+    },
+    {
+      "route": "/ar/services/auto-electrical-repair-dubai",
+      "passed": true
+    },
+    {
+      "route": "/ar/services/battery-replacement-dubai",
+      "passed": true
+    },
+    {
+      "route": "/ar/services/brake-repair-dubai",
+      "passed": true
+    },
+    {
+      "route": "/ar/services/car-ac-repair-dubai",
+      "passed": true
+    },
+    {
+      "route": "/ar/services/car-body-repair-dubai",
+      "passed": true
+    },
+    {
+      "route": "/ar/services/car-diagnostics-dubai",
+      "passed": true
+    },
+    {
+      "route": "/ar/services/car-garage-dubai",
+      "passed": true
+    },
+    {
+      "route": "/ar/services/car-service-dubai",
+      "passed": true
+    },
+    {
+      "route": "/ar/services/ceramic-coating",
+      "passed": true
+    },
+    {
+      "route": "/ar/services/exhaust-repair-dubai",
+      "passed": true
+    },
+    {
+      "route": "/ar/services/fuel-system-repair-dubai",
+      "passed": true
+    },
+    {
+      "route": "/ar/services/garage-near-me-dubai",
+      "passed": true
+    },
+    {
+      "route": "/ar/services/mechanical-repair-dubai",
+      "passed": true
+    },
+    {
+      "route": "/ar/services/mercedes-ac-repair-dubai",
+      "passed": true
+    },
+    {
+      "route": "/ar/services/mercedes-battery-replacement-dubai",
+      "passed": true
+    },
+    {
+      "route": "/ar/services/mercedes-body-repair-dubai",
+      "passed": true
+    },
+    {
+      "route": "/ar/services/mercedes-brake-repair-dubai",
+      "passed": true
+    },
+    {
+      "route": "/ar/services/mercedes-diagnostics-dubai",
+      "passed": true
+    },
+    {
+      "route": "/ar/services/mercedes-electrical-repair-dubai",
+      "passed": true
+    },
+    {
+      "route": "/ar/services/mercedes-exhaust-repair-dubai",
+      "passed": true
+    },
+    {
+      "route": "/ar/services/mercedes-fuel-system-repair-dubai",
+      "passed": true
+    },
+    {
+      "route": "/ar/services/mercedes-mechanical-repair-dubai",
+      "passed": true
+    },
+    {
+      "route": "/ar/services/mercedes-oil-change-dubai",
+      "passed": true
+    },
+    {
+      "route": "/ar/services/mercedes-steering-repair-dubai",
+      "passed": true
+    },
+    {
+      "route": "/ar/services/mercedes-suspension-repair-dubai",
+      "passed": true
+    },
+    {
+      "route": "/ar/services/mercedes-tire-repair-dubai",
+      "passed": true
+    },
+    {
+      "route": "/ar/services/mercedes-transmission-repair-dubai",
+      "passed": true
+    },
+    {
+      "route": "/ar/services/oil-change-dubai",
+      "passed": true
+    },
+    {
+      "route": "/ar/services/paint-protection-dubai",
+      "passed": true
+    },
+    {
+      "route": "/ar/services/paint-protection-film",
+      "passed": true
+    },
+    {
+      "route": "/ar/services/roadside-assistance-dubai",
+      "passed": true
+    },
+    {
+      "route": "/ar/services/soft-close-door-repair-dubai",
+      "passed": true
+    },
+    {
+      "route": "/ar/services/steering-repair-dubai",
+      "passed": true
+    },
+    {
+      "route": "/ar/services/suspension-repair-dubai",
+      "passed": true
+    },
+    {
+      "route": "/ar/services/tire-repair-dubai",
+      "passed": true
+    },
+    {
+      "route": "/ar/services/transmission-repair-dubai",
+      "passed": true
+    },
+    {
+      "route": "/ar/sitemap",
+      "passed": true
+    },
+    {
+      "route": "/ar/tuning",
+      "passed": true
+    },
+    {
+      "route": "/ar/vrx",
+      "passed": true
+    },
+    {
+      "route": "/best-audi-workshop-dubai",
+      "passed": true
+    },
+    {
+      "route": "/best-bmw-workshop-dubai",
+      "passed": true
+    },
+    {
+      "route": "/best-car-workshop-dubai",
+      "passed": true
+    },
+    {
+      "route": "/best-ferrari-workshop-dubai",
+      "passed": true
+    },
+    {
+      "route": "/best-lamborghini-workshop-dubai",
+      "passed": true
+    },
+    {
+      "route": "/best-porsche-workshop-dubai",
+      "passed": true
+    },
+    {
+      "route": "/best-range-rover-workshop-dubai",
+      "passed": true
+    },
+    {
+      "route": "/blog",
+      "passed": true
+    },
+    {
+      "route": "/blog/air-suspension-repair-dubai-guide",
+      "passed": true
+    },
+    {
+      "route": "/blog/aston-martin-best-workshop-dubai",
+      "passed": true
+    },
+    {
+      "route": "/blog/aston-martin-db11-service-dubai-guide",
+      "passed": true
+    },
+    {
+      "route": "/blog/audi-maintenance-guide-dubai",
+      "passed": true
+    },
+    {
+      "route": "/blog/audi-q7-service-dubai-guide",
+      "passed": true
+    },
+    {
+      "route": "/blog/audi-rs-service-dubai-guide",
+      "passed": true
+    },
+    {
+      "route": "/blog/bentley-best-workshop-dubai",
+      "passed": true
+    },
+    {
+      "route": "/blog/bentley-continental-gt-service-dubai-guide",
+      "passed": true
+    },
+    {
+      "route": "/blog/best-car-workshop-dubai",
+      "passed": true
+    },
+    {
+      "route": "/blog/best-defender-workshop-dubai",
+      "passed": true
+    },
+    {
+      "route": "/blog/best-oil-change-dubai-mercedes",
+      "passed": true
+    },
+    {
+      "route": "/blog/bmw-m-service-dubai-guide",
+      "passed": true
+    },
+    {
+      "route": "/blog/bmw-maintenance-guide-dubai",
+      "passed": true
+    },
+    {
+      "route": "/blog/bmw-x5-service-dubai-guide",
+      "passed": true
+    },
+    {
+      "route": "/blog/brake-repair-dubai",
+      "passed": true
+    },
+    {
+      "route": "/blog/cadillac-best-workshop-dubai",
+      "passed": true
+    },
+    {
+      "route": "/blog/car-ac-not-cold-dubai-causes",
+      "passed": true
+    },
+    {
+      "route": "/blog/car-ac-repair-dubai",
+      "passed": true
+    },
+    {
+      "route": "/blog/car-battery-life-dubai-heat",
+      "passed": true
+    },
+    {
+      "route": "/blog/car-battery-replacement-dubai",
+      "passed": true
+    },
+    {
+      "route": "/blog/car-service-cost-dubai-luxury-brands",
+      "passed": true
+    },
+    {
+      "route": "/blog/car-service-interval-dubai-heat",
+      "passed": true
+    },
+    {
+      "route": "/blog/ceramic-coating-vs-ppf-dubai",
+      "passed": true
+    },
+    {
+      "route": "/blog/check-engine-light-dubai-guide",
+      "passed": true
+    },
+    {
+      "route": "/blog/chevrolet-best-workshop-dubai",
+      "passed": true
+    },
+    {
+      "route": "/blog/dealer-vs-independent-workshop-dubai",
+      "passed": true
+    },
+    {
+      "route": "/blog/defender-service-dubai-guide",
+      "passed": true
+    },
+    {
+      "route": "/blog/ecu-remap-safe-dubai-guide",
+      "passed": true
+    },
+    {
+      "route": "/blog/engine-overheating-dubai-what-to-do",
+      "passed": true
+    },
+    {
+      "route": "/blog/ferrari-488-service-dubai-guide",
+      "passed": true
+    },
+    {
+      "route": "/blog/ferrari-maintenance-guide-dubai",
+      "passed": true
+    },
+    {
+      "route": "/blog/ford-best-workshop-dubai",
+      "passed": true
+    },
+    {
+      "route": "/blog/g63-to-brabus-g800-conversion-dubai",
+      "passed": true
+    },
+    {
+      "route": "/blog/gad-tuning-explained",
+      "passed": true
+    },
+    {
+      "route": "/blog/how-much-is-my-mercedes-worth-dubai",
+      "passed": true
+    },
+    {
+      "route": "/blog/jaguar-best-workshop-dubai",
+      "passed": true
+    },
+    {
+      "route": "/blog/lamborghini-maintenance-guide-dubai",
+      "passed": true
+    },
+    {
+      "route": "/blog/lamborghini-urus-service-dubai-guide",
+      "passed": true
+    },
+    {
+      "route": "/blog/land-rover-best-workshop-dubai",
+      "passed": true
+    },
+    {
+      "route": "/blog/maserati-best-workshop-dubai",
+      "passed": true
+    },
+    {
+      "route": "/blog/maybach-best-workshop-dubai",
+      "passed": true
+    },
+    {
+      "route": "/blog/maybach-s580-service-dubai-guide",
+      "passed": true
+    },
+    {
+      "route": "/blog/mclaren-720s-service-dubai-guide",
+      "passed": true
+    },
+    {
+      "route": "/blog/mclaren-best-workshop-dubai",
+      "passed": true
+    },
+    {
+      "route": "/blog/mercedes-amg-gt-black-series-1300hp-build-dubai",
+      "passed": true
+    },
+    {
+      "route": "/blog/mercedes-amg-gt-tuning-dubai",
+      "passed": true
+    },
+    {
+      "route": "/blog/mercedes-benz-maintenance-guide-dubai",
+      "passed": true
+    },
+    {
+      "route": "/blog/mercedes-c-class-service-dubai-guide",
+      "passed": true
+    },
+    {
+      "route": "/blog/mercedes-e-class-service-dubai-guide",
+      "passed": true
+    },
+    {
+      "route": "/blog/mercedes-g63-service-dubai-guide",
+      "passed": true
+    },
+    {
+      "route": "/blog/mercedes-repair-dubai-complete-guide",
+      "passed": true
+    },
+    {
+      "route": "/blog/mercedes-s-class-service-dubai-guide",
+      "passed": true
+    },
+    {
+      "route": "/blog/mercedes-service-cost-dubai-guide",
+      "passed": true
+    },
+    {
+      "route": "/blog/mercedes-service-intervals-dubai-heat",
+      "passed": true
+    },
+    {
+      "route": "/blog/mini-best-workshop-dubai",
+      "passed": true
+    },
+    {
+      "route": "/blog/oil-specification-guide-dubai-luxury",
+      "passed": true
+    },
+    {
+      "route": "/blog/porsche-911-service-dubai-guide",
+      "passed": true
+    },
+    {
+      "route": "/blog/porsche-cayenne-service-dubai-guide",
+      "passed": true
+    },
+    {
+      "route": "/blog/porsche-maintenance-guide-dubai",
+      "passed": true
+    },
+    {
+      "route": "/blog/porsche-panamera-service-dubai-guide",
+      "passed": true
+    },
+    {
+      "route": "/blog/pre-purchase-inspection-dubai-guide",
+      "passed": true
+    },
+    {
+      "route": "/blog/range-rover-land-rover-air-suspension-problems-dubai",
+      "passed": true
+    },
+    {
+      "route": "/blog/range-rover-maintenance-guide-dubai",
+      "passed": true
+    },
+    {
+      "route": "/blog/range-rover-sport-service-dubai-guide",
+      "passed": true
+    },
+    {
+      "route": "/blog/range-rover-vogue-service-dubai-guide",
+      "passed": true
+    },
+    {
+      "route": "/blog/rolls-royce-best-workshop-dubai",
+      "passed": true
+    },
+    {
+      "route": "/blog/rolls-royce-ghost-service-dubai-guide",
+      "passed": true
+    },
+    {
+      "route": "/blog/summer-car-preparation-dubai-checklist",
+      "passed": true
+    },
+    {
+      "route": "/blog/transmission-service-7g-9g-dubai",
+      "passed": true
+    },
+    {
+      "route": "/blog/volkswagen-best-workshop-dubai",
+      "passed": true
+    },
+    {
+      "route": "/blog/why-ceramic-coating-matters-uae",
+      "passed": true
+    },
+    {
+      "route": "/brands",
+      "passed": true
+    },
+    {
+      "route": "/brands/aston-martin-service-dubai",
+      "passed": true
+    },
+    {
+      "route": "/brands/aston-martin-service-dubai/ac-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/aston-martin-service-dubai/battery-replacement",
+      "passed": true
+    },
+    {
+      "route": "/brands/aston-martin-service-dubai/body-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/aston-martin-service-dubai/brake-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/aston-martin-service-dubai/electrical-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/aston-martin-service-dubai/engine-diagnostics",
+      "passed": true
+    },
+    {
+      "route": "/brands/aston-martin-service-dubai/exhaust-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/aston-martin-service-dubai/fuel-system-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/aston-martin-service-dubai/mechanical-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/aston-martin-service-dubai/oil-change",
+      "passed": true
+    },
+    {
+      "route": "/brands/aston-martin-service-dubai/steering-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/aston-martin-service-dubai/suspension-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/aston-martin-service-dubai/tire-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/aston-martin-service-dubai/transmission-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/audi-service-dubai",
+      "passed": true
+    },
+    {
+      "route": "/brands/audi-service-dubai/a4",
+      "passed": true
+    },
+    {
+      "route": "/brands/audi-service-dubai/a6",
+      "passed": true
+    },
+    {
+      "route": "/brands/audi-service-dubai/ac-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/audi-service-dubai/battery-replacement",
+      "passed": true
+    },
+    {
+      "route": "/brands/audi-service-dubai/body-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/audi-service-dubai/brake-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/audi-service-dubai/electrical-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/audi-service-dubai/engine-diagnostics",
+      "passed": true
+    },
+    {
+      "route": "/brands/audi-service-dubai/exhaust-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/audi-service-dubai/fuel-system-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/audi-service-dubai/mechanical-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/audi-service-dubai/oil-change",
+      "passed": true
+    },
+    {
+      "route": "/brands/audi-service-dubai/q5",
+      "passed": true
+    },
+    {
+      "route": "/brands/audi-service-dubai/q7",
+      "passed": true
+    },
+    {
+      "route": "/brands/audi-service-dubai/q8",
+      "passed": true
+    },
+    {
+      "route": "/brands/audi-service-dubai/r8",
+      "passed": true
+    },
+    {
+      "route": "/brands/audi-service-dubai/rs3",
+      "passed": true
+    },
+    {
+      "route": "/brands/audi-service-dubai/rs6",
+      "passed": true
+    },
+    {
+      "route": "/brands/audi-service-dubai/steering-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/audi-service-dubai/suspension-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/audi-service-dubai/tire-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/audi-service-dubai/transmission-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/bentley-service-dubai",
+      "passed": true
+    },
+    {
+      "route": "/brands/bentley-service-dubai/ac-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/bentley-service-dubai/battery-replacement",
+      "passed": true
+    },
+    {
+      "route": "/brands/bentley-service-dubai/body-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/bentley-service-dubai/brake-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/bentley-service-dubai/electrical-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/bentley-service-dubai/engine-diagnostics",
+      "passed": true
+    },
+    {
+      "route": "/brands/bentley-service-dubai/exhaust-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/bentley-service-dubai/fuel-system-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/bentley-service-dubai/mechanical-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/bentley-service-dubai/oil-change",
+      "passed": true
+    },
+    {
+      "route": "/brands/bentley-service-dubai/steering-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/bentley-service-dubai/suspension-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/bentley-service-dubai/tire-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/bentley-service-dubai/transmission-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/bmw-service-dubai",
+      "passed": true
+    },
+    {
+      "route": "/brands/bmw-service-dubai/3-series",
+      "passed": true
+    },
+    {
+      "route": "/brands/bmw-service-dubai/5-series",
+      "passed": true
+    },
+    {
+      "route": "/brands/bmw-service-dubai/ac-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/bmw-service-dubai/battery-replacement",
+      "passed": true
+    },
+    {
+      "route": "/brands/bmw-service-dubai/body-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/bmw-service-dubai/brake-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/bmw-service-dubai/electrical-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/bmw-service-dubai/engine-diagnostics",
+      "passed": true
+    },
+    {
+      "route": "/brands/bmw-service-dubai/exhaust-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/bmw-service-dubai/fuel-system-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/bmw-service-dubai/m3",
+      "passed": true
+    },
+    {
+      "route": "/brands/bmw-service-dubai/m4",
+      "passed": true
+    },
+    {
+      "route": "/brands/bmw-service-dubai/m5",
+      "passed": true
+    },
+    {
+      "route": "/brands/bmw-service-dubai/mechanical-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/bmw-service-dubai/oil-change",
+      "passed": true
+    },
+    {
+      "route": "/brands/bmw-service-dubai/steering-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/bmw-service-dubai/suspension-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/bmw-service-dubai/tire-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/bmw-service-dubai/transmission-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/bmw-service-dubai/x5",
+      "passed": true
+    },
+    {
+      "route": "/brands/bmw-service-dubai/x6",
+      "passed": true
+    },
+    {
+      "route": "/brands/bugatti-service-dubai",
+      "passed": true
+    },
+    {
+      "route": "/brands/bugatti-service-dubai/ac-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/bugatti-service-dubai/battery-replacement",
+      "passed": true
+    },
+    {
+      "route": "/brands/bugatti-service-dubai/body-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/bugatti-service-dubai/brake-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/bugatti-service-dubai/electrical-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/bugatti-service-dubai/engine-diagnostics",
+      "passed": true
+    },
+    {
+      "route": "/brands/bugatti-service-dubai/exhaust-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/bugatti-service-dubai/fuel-system-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/bugatti-service-dubai/mechanical-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/bugatti-service-dubai/oil-change",
+      "passed": true
+    },
+    {
+      "route": "/brands/bugatti-service-dubai/steering-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/bugatti-service-dubai/suspension-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/bugatti-service-dubai/tire-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/bugatti-service-dubai/transmission-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/byd-service-dubai",
+      "passed": true
+    },
+    {
+      "route": "/brands/byd-service-dubai/ac-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/byd-service-dubai/battery-replacement",
+      "passed": true
+    },
+    {
+      "route": "/brands/byd-service-dubai/body-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/byd-service-dubai/brake-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/byd-service-dubai/electrical-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/byd-service-dubai/engine-diagnostics",
+      "passed": true
+    },
+    {
+      "route": "/brands/byd-service-dubai/exhaust-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/byd-service-dubai/fuel-system-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/byd-service-dubai/mechanical-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/byd-service-dubai/oil-change",
+      "passed": true
+    },
+    {
+      "route": "/brands/byd-service-dubai/steering-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/byd-service-dubai/suspension-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/byd-service-dubai/tire-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/byd-service-dubai/transmission-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/cadillac-service-dubai",
+      "passed": true
+    },
+    {
+      "route": "/brands/cadillac-service-dubai/ac-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/cadillac-service-dubai/battery-replacement",
+      "passed": true
+    },
+    {
+      "route": "/brands/cadillac-service-dubai/body-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/cadillac-service-dubai/brake-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/cadillac-service-dubai/electrical-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/cadillac-service-dubai/engine-diagnostics",
+      "passed": true
+    },
+    {
+      "route": "/brands/cadillac-service-dubai/exhaust-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/cadillac-service-dubai/fuel-system-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/cadillac-service-dubai/mechanical-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/cadillac-service-dubai/oil-change",
+      "passed": true
+    },
+    {
+      "route": "/brands/cadillac-service-dubai/steering-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/cadillac-service-dubai/suspension-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/cadillac-service-dubai/tire-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/cadillac-service-dubai/transmission-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/chevrolet-service-dubai",
+      "passed": true
+    },
+    {
+      "route": "/brands/chevrolet-service-dubai/ac-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/chevrolet-service-dubai/brake-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/chevrolet-service-dubai/engine-diagnostics",
+      "passed": true
+    },
+    {
+      "route": "/brands/chevrolet-service-dubai/oil-change",
+      "passed": true
+    },
+    {
+      "route": "/brands/chevrolet-service-dubai/suspension-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/chevrolet-service-dubai/transmission-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/chrysler-service-dubai",
+      "passed": true
+    },
+    {
+      "route": "/brands/chrysler-service-dubai/ac-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/chrysler-service-dubai/brake-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/chrysler-service-dubai/engine-diagnostics",
+      "passed": true
+    },
+    {
+      "route": "/brands/chrysler-service-dubai/oil-change",
+      "passed": true
+    },
+    {
+      "route": "/brands/chrysler-service-dubai/suspension-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/chrysler-service-dubai/transmission-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/corvette-service-dubai",
+      "passed": true
+    },
+    {
+      "route": "/brands/corvette-service-dubai/ac-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/corvette-service-dubai/brake-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/corvette-service-dubai/engine-diagnostics",
+      "passed": true
+    },
+    {
+      "route": "/brands/corvette-service-dubai/oil-change",
+      "passed": true
+    },
+    {
+      "route": "/brands/corvette-service-dubai/suspension-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/corvette-service-dubai/transmission-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/defender-service-dubai",
+      "passed": true
+    },
+    {
+      "route": "/brands/defender-service-dubai/ac-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/defender-service-dubai/battery-replacement",
+      "passed": true
+    },
+    {
+      "route": "/brands/defender-service-dubai/body-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/defender-service-dubai/brake-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/defender-service-dubai/electrical-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/defender-service-dubai/engine-diagnostics",
+      "passed": true
+    },
+    {
+      "route": "/brands/defender-service-dubai/exhaust-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/defender-service-dubai/fuel-system-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/defender-service-dubai/mechanical-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/defender-service-dubai/oil-change",
+      "passed": true
+    },
+    {
+      "route": "/brands/defender-service-dubai/steering-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/defender-service-dubai/suspension-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/defender-service-dubai/tire-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/defender-service-dubai/transmission-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/dodge-service-dubai",
+      "passed": true
+    },
+    {
+      "route": "/brands/dodge-service-dubai/ac-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/dodge-service-dubai/brake-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/dodge-service-dubai/engine-diagnostics",
+      "passed": true
+    },
+    {
+      "route": "/brands/dodge-service-dubai/oil-change",
+      "passed": true
+    },
+    {
+      "route": "/brands/dodge-service-dubai/suspension-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/dodge-service-dubai/transmission-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/ferrari-service-dubai",
+      "passed": true
+    },
+    {
+      "route": "/brands/ferrari-service-dubai/296",
+      "passed": true
+    },
+    {
+      "route": "/brands/ferrari-service-dubai/488",
+      "passed": true
+    },
+    {
+      "route": "/brands/ferrari-service-dubai/812",
+      "passed": true
+    },
+    {
+      "route": "/brands/ferrari-service-dubai/ac-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/ferrari-service-dubai/battery-replacement",
+      "passed": true
+    },
+    {
+      "route": "/brands/ferrari-service-dubai/body-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/ferrari-service-dubai/brake-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/ferrari-service-dubai/electrical-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/ferrari-service-dubai/engine-diagnostics",
+      "passed": true
+    },
+    {
+      "route": "/brands/ferrari-service-dubai/exhaust-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/ferrari-service-dubai/f8-tributo",
+      "passed": true
+    },
+    {
+      "route": "/brands/ferrari-service-dubai/fuel-system-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/ferrari-service-dubai/mechanical-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/ferrari-service-dubai/oil-change",
+      "passed": true
+    },
+    {
+      "route": "/brands/ferrari-service-dubai/portofino",
+      "passed": true
+    },
+    {
+      "route": "/brands/ferrari-service-dubai/purosangue",
+      "passed": true
+    },
+    {
+      "route": "/brands/ferrari-service-dubai/roma",
+      "passed": true
+    },
+    {
+      "route": "/brands/ferrari-service-dubai/sf90",
+      "passed": true
+    },
+    {
+      "route": "/brands/ferrari-service-dubai/steering-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/ferrari-service-dubai/suspension-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/ferrari-service-dubai/tire-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/ferrari-service-dubai/transmission-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/ford-service-dubai",
+      "passed": true
+    },
+    {
+      "route": "/brands/ford-service-dubai/ac-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/ford-service-dubai/brake-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/ford-service-dubai/engine-diagnostics",
+      "passed": true
+    },
+    {
+      "route": "/brands/ford-service-dubai/oil-change",
+      "passed": true
+    },
+    {
+      "route": "/brands/ford-service-dubai/suspension-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/ford-service-dubai/transmission-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/genesis-service-dubai",
+      "passed": true
+    },
+    {
+      "route": "/brands/genesis-service-dubai/ac-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/genesis-service-dubai/brake-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/genesis-service-dubai/engine-diagnostics",
+      "passed": true
+    },
+    {
+      "route": "/brands/genesis-service-dubai/oil-change",
+      "passed": true
+    },
+    {
+      "route": "/brands/genesis-service-dubai/suspension-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/genesis-service-dubai/transmission-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/gmc-service-dubai",
+      "passed": true
+    },
+    {
+      "route": "/brands/gmc-service-dubai/ac-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/gmc-service-dubai/brake-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/gmc-service-dubai/engine-diagnostics",
+      "passed": true
+    },
+    {
+      "route": "/brands/gmc-service-dubai/oil-change",
+      "passed": true
+    },
+    {
+      "route": "/brands/gmc-service-dubai/suspension-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/gmc-service-dubai/transmission-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/hummer-service-dubai",
+      "passed": true
+    },
+    {
+      "route": "/brands/hummer-service-dubai/ac-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/hummer-service-dubai/brake-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/hummer-service-dubai/engine-diagnostics",
+      "passed": true
+    },
+    {
+      "route": "/brands/hummer-service-dubai/oil-change",
+      "passed": true
+    },
+    {
+      "route": "/brands/hummer-service-dubai/suspension-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/hummer-service-dubai/transmission-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/jaguar-service-dubai",
+      "passed": true
+    },
+    {
+      "route": "/brands/jaguar-service-dubai/ac-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/jaguar-service-dubai/brake-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/jaguar-service-dubai/engine-diagnostics",
+      "passed": true
+    },
+    {
+      "route": "/brands/jaguar-service-dubai/oil-change",
+      "passed": true
+    },
+    {
+      "route": "/brands/jaguar-service-dubai/suspension-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/jaguar-service-dubai/transmission-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/jeep-service-dubai",
+      "passed": true
+    },
+    {
+      "route": "/brands/jeep-service-dubai/ac-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/jeep-service-dubai/battery-replacement",
+      "passed": true
+    },
+    {
+      "route": "/brands/jeep-service-dubai/body-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/jeep-service-dubai/brake-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/jeep-service-dubai/electrical-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/jeep-service-dubai/engine-diagnostics",
+      "passed": true
+    },
+    {
+      "route": "/brands/jeep-service-dubai/exhaust-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/jeep-service-dubai/fuel-system-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/jeep-service-dubai/mechanical-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/jeep-service-dubai/oil-change",
+      "passed": true
+    },
+    {
+      "route": "/brands/jeep-service-dubai/steering-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/jeep-service-dubai/suspension-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/jeep-service-dubai/tire-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/jeep-service-dubai/transmission-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/jetour-service-dubai",
+      "passed": true
+    },
+    {
+      "route": "/brands/jetour-service-dubai/ac-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/jetour-service-dubai/battery-replacement",
+      "passed": true
+    },
+    {
+      "route": "/brands/jetour-service-dubai/body-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/jetour-service-dubai/brake-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/jetour-service-dubai/electrical-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/jetour-service-dubai/engine-diagnostics",
+      "passed": true
+    },
+    {
+      "route": "/brands/jetour-service-dubai/exhaust-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/jetour-service-dubai/fuel-system-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/jetour-service-dubai/mechanical-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/jetour-service-dubai/oil-change",
+      "passed": true
+    },
+    {
+      "route": "/brands/jetour-service-dubai/steering-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/jetour-service-dubai/suspension-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/jetour-service-dubai/tire-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/jetour-service-dubai/transmission-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/koenigsegg-service-dubai",
+      "passed": true
+    },
+    {
+      "route": "/brands/koenigsegg-service-dubai/ac-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/koenigsegg-service-dubai/brake-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/koenigsegg-service-dubai/engine-diagnostics",
+      "passed": true
+    },
+    {
+      "route": "/brands/koenigsegg-service-dubai/oil-change",
+      "passed": true
+    },
+    {
+      "route": "/brands/koenigsegg-service-dubai/suspension-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/koenigsegg-service-dubai/transmission-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/lamborghini-service-dubai",
+      "passed": true
+    },
+    {
+      "route": "/brands/lamborghini-service-dubai/ac-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/lamborghini-service-dubai/battery-replacement",
+      "passed": true
+    },
+    {
+      "route": "/brands/lamborghini-service-dubai/body-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/lamborghini-service-dubai/brake-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/lamborghini-service-dubai/electrical-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/lamborghini-service-dubai/engine-diagnostics",
+      "passed": true
+    },
+    {
+      "route": "/brands/lamborghini-service-dubai/exhaust-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/lamborghini-service-dubai/fuel-system-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/lamborghini-service-dubai/mechanical-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/lamborghini-service-dubai/oil-change",
+      "passed": true
+    },
+    {
+      "route": "/brands/lamborghini-service-dubai/steering-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/lamborghini-service-dubai/suspension-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/lamborghini-service-dubai/tire-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/lamborghini-service-dubai/transmission-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/land-rover-service-dubai",
+      "passed": true
+    },
+    {
+      "route": "/brands/land-rover-service-dubai/ac-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/land-rover-service-dubai/battery-replacement",
+      "passed": true
+    },
+    {
+      "route": "/brands/land-rover-service-dubai/body-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/land-rover-service-dubai/brake-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/land-rover-service-dubai/electrical-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/land-rover-service-dubai/engine-diagnostics",
+      "passed": true
+    },
+    {
+      "route": "/brands/land-rover-service-dubai/exhaust-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/land-rover-service-dubai/fuel-system-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/land-rover-service-dubai/mechanical-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/land-rover-service-dubai/oil-change",
+      "passed": true
+    },
+    {
+      "route": "/brands/land-rover-service-dubai/steering-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/land-rover-service-dubai/suspension-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/land-rover-service-dubai/tire-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/land-rover-service-dubai/transmission-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/lincoln-service-dubai",
+      "passed": true
+    },
+    {
+      "route": "/brands/lincoln-service-dubai/ac-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/lincoln-service-dubai/brake-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/lincoln-service-dubai/engine-diagnostics",
+      "passed": true
+    },
+    {
+      "route": "/brands/lincoln-service-dubai/oil-change",
+      "passed": true
+    },
+    {
+      "route": "/brands/lincoln-service-dubai/suspension-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/lincoln-service-dubai/transmission-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/maserati-service-dubai",
+      "passed": true
+    },
+    {
+      "route": "/brands/maserati-service-dubai/ac-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/maserati-service-dubai/battery-replacement",
+      "passed": true
+    },
+    {
+      "route": "/brands/maserati-service-dubai/body-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/maserati-service-dubai/brake-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/maserati-service-dubai/electrical-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/maserati-service-dubai/engine-diagnostics",
+      "passed": true
+    },
+    {
+      "route": "/brands/maserati-service-dubai/exhaust-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/maserati-service-dubai/fuel-system-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/maserati-service-dubai/mechanical-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/maserati-service-dubai/oil-change",
+      "passed": true
+    },
+    {
+      "route": "/brands/maserati-service-dubai/steering-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/maserati-service-dubai/suspension-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/maserati-service-dubai/tire-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/maserati-service-dubai/transmission-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/maybach-service-dubai",
+      "passed": true
+    },
+    {
+      "route": "/brands/maybach-service-dubai/ac-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/maybach-service-dubai/battery-replacement",
+      "passed": true
+    },
+    {
+      "route": "/brands/maybach-service-dubai/body-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/maybach-service-dubai/brake-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/maybach-service-dubai/electrical-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/maybach-service-dubai/engine-diagnostics",
+      "passed": true
+    },
+    {
+      "route": "/brands/maybach-service-dubai/exhaust-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/maybach-service-dubai/fuel-system-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/maybach-service-dubai/mechanical-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/maybach-service-dubai/oil-change",
+      "passed": true
+    },
+    {
+      "route": "/brands/maybach-service-dubai/steering-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/maybach-service-dubai/suspension-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/maybach-service-dubai/tire-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/maybach-service-dubai/transmission-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/mclaren-service-dubai",
+      "passed": true
+    },
+    {
+      "route": "/brands/mclaren-service-dubai/ac-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/mclaren-service-dubai/battery-replacement",
+      "passed": true
+    },
+    {
+      "route": "/brands/mclaren-service-dubai/body-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/mclaren-service-dubai/brake-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/mclaren-service-dubai/electrical-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/mclaren-service-dubai/engine-diagnostics",
+      "passed": true
+    },
+    {
+      "route": "/brands/mclaren-service-dubai/exhaust-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/mclaren-service-dubai/fuel-system-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/mclaren-service-dubai/mechanical-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/mclaren-service-dubai/oil-change",
+      "passed": true
+    },
+    {
+      "route": "/brands/mclaren-service-dubai/steering-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/mclaren-service-dubai/suspension-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/mclaren-service-dubai/tire-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/mclaren-service-dubai/transmission-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/mercedes-benz-service-dubai",
+      "passed": true
+    },
+    {
+      "route": "/brands/mini-service-dubai",
+      "passed": true
+    },
+    {
+      "route": "/brands/mini-service-dubai/ac-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/mini-service-dubai/brake-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/mini-service-dubai/engine-diagnostics",
+      "passed": true
+    },
+    {
+      "route": "/brands/mini-service-dubai/oil-change",
+      "passed": true
+    },
+    {
+      "route": "/brands/mini-service-dubai/suspension-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/mini-service-dubai/transmission-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/pagani-service-dubai",
+      "passed": true
+    },
+    {
+      "route": "/brands/pagani-service-dubai/ac-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/pagani-service-dubai/battery-replacement",
+      "passed": true
+    },
+    {
+      "route": "/brands/pagani-service-dubai/body-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/pagani-service-dubai/brake-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/pagani-service-dubai/electrical-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/pagani-service-dubai/engine-diagnostics",
+      "passed": true
+    },
+    {
+      "route": "/brands/pagani-service-dubai/exhaust-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/pagani-service-dubai/fuel-system-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/pagani-service-dubai/mechanical-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/pagani-service-dubai/oil-change",
+      "passed": true
+    },
+    {
+      "route": "/brands/pagani-service-dubai/steering-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/pagani-service-dubai/suspension-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/pagani-service-dubai/tire-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/pagani-service-dubai/transmission-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/porsche-service-dubai",
+      "passed": true
+    },
+    {
+      "route": "/brands/porsche-service-dubai/ac-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/porsche-service-dubai/battery-replacement",
+      "passed": true
+    },
+    {
+      "route": "/brands/porsche-service-dubai/body-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/porsche-service-dubai/brake-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/porsche-service-dubai/electrical-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/porsche-service-dubai/engine-diagnostics",
+      "passed": true
+    },
+    {
+      "route": "/brands/porsche-service-dubai/exhaust-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/porsche-service-dubai/fuel-system-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/porsche-service-dubai/mechanical-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/porsche-service-dubai/oil-change",
+      "passed": true
+    },
+    {
+      "route": "/brands/porsche-service-dubai/steering-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/porsche-service-dubai/suspension-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/porsche-service-dubai/tire-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/porsche-service-dubai/transmission-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/range-rover-service-dubai",
+      "passed": true
+    },
+    {
+      "route": "/brands/range-rover-service-dubai/ac-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/range-rover-service-dubai/battery-replacement",
+      "passed": true
+    },
+    {
+      "route": "/brands/range-rover-service-dubai/body-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/range-rover-service-dubai/brake-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/range-rover-service-dubai/electrical-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/range-rover-service-dubai/engine-diagnostics",
+      "passed": true
+    },
+    {
+      "route": "/brands/range-rover-service-dubai/exhaust-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/range-rover-service-dubai/fuel-system-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/range-rover-service-dubai/mechanical-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/range-rover-service-dubai/oil-change",
+      "passed": true
+    },
+    {
+      "route": "/brands/range-rover-service-dubai/steering-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/range-rover-service-dubai/suspension-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/range-rover-service-dubai/tire-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/range-rover-service-dubai/transmission-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/rolls-royce-service-dubai",
+      "passed": true
+    },
+    {
+      "route": "/brands/rolls-royce-service-dubai/ac-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/rolls-royce-service-dubai/battery-replacement",
+      "passed": true
+    },
+    {
+      "route": "/brands/rolls-royce-service-dubai/body-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/rolls-royce-service-dubai/brake-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/rolls-royce-service-dubai/electrical-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/rolls-royce-service-dubai/engine-diagnostics",
+      "passed": true
+    },
+    {
+      "route": "/brands/rolls-royce-service-dubai/exhaust-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/rolls-royce-service-dubai/fuel-system-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/rolls-royce-service-dubai/mechanical-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/rolls-royce-service-dubai/oil-change",
+      "passed": true
+    },
+    {
+      "route": "/brands/rolls-royce-service-dubai/steering-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/rolls-royce-service-dubai/suspension-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/rolls-royce-service-dubai/tire-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/rolls-royce-service-dubai/transmission-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/rox-service-dubai",
+      "passed": true
+    },
+    {
+      "route": "/brands/rox-service-dubai/ac-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/rox-service-dubai/battery-replacement",
+      "passed": true
+    },
+    {
+      "route": "/brands/rox-service-dubai/body-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/rox-service-dubai/brake-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/rox-service-dubai/electrical-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/rox-service-dubai/engine-diagnostics",
+      "passed": true
+    },
+    {
+      "route": "/brands/rox-service-dubai/exhaust-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/rox-service-dubai/fuel-system-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/rox-service-dubai/mechanical-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/rox-service-dubai/oil-change",
+      "passed": true
+    },
+    {
+      "route": "/brands/rox-service-dubai/soft-close-door-installation",
+      "passed": true
+    },
+    {
+      "route": "/brands/rox-service-dubai/steering-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/rox-service-dubai/suspension-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/rox-service-dubai/tire-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/rox-service-dubai/transmission-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/subaru-service-dubai",
+      "passed": true
+    },
+    {
+      "route": "/brands/subaru-service-dubai/ac-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/subaru-service-dubai/brake-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/subaru-service-dubai/engine-diagnostics",
+      "passed": true
+    },
+    {
+      "route": "/brands/subaru-service-dubai/oil-change",
+      "passed": true
+    },
+    {
+      "route": "/brands/subaru-service-dubai/suspension-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/subaru-service-dubai/transmission-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/tesla-service-dubai",
+      "passed": true
+    },
+    {
+      "route": "/brands/tesla-service-dubai/ac-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/tesla-service-dubai/battery-replacement",
+      "passed": true
+    },
+    {
+      "route": "/brands/tesla-service-dubai/body-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/tesla-service-dubai/brake-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/tesla-service-dubai/electrical-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/tesla-service-dubai/mechanical-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/tesla-service-dubai/steering-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/tesla-service-dubai/suspension-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/tesla-service-dubai/tire-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/volkswagen-service-dubai",
+      "passed": true
+    },
+    {
+      "route": "/brands/volkswagen-service-dubai/ac-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/volkswagen-service-dubai/battery-replacement",
+      "passed": true
+    },
+    {
+      "route": "/brands/volkswagen-service-dubai/body-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/volkswagen-service-dubai/brake-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/volkswagen-service-dubai/electrical-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/volkswagen-service-dubai/engine-diagnostics",
+      "passed": true
+    },
+    {
+      "route": "/brands/volkswagen-service-dubai/exhaust-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/volkswagen-service-dubai/fuel-system-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/volkswagen-service-dubai/mechanical-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/volkswagen-service-dubai/oil-change",
+      "passed": true
+    },
+    {
+      "route": "/brands/volkswagen-service-dubai/steering-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/volkswagen-service-dubai/suspension-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/volkswagen-service-dubai/tire-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/volkswagen-service-dubai/transmission-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/volvo-service-dubai",
+      "passed": true
+    },
+    {
+      "route": "/brands/volvo-service-dubai/ac-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/volvo-service-dubai/battery-replacement",
+      "passed": true
+    },
+    {
+      "route": "/brands/volvo-service-dubai/body-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/volvo-service-dubai/brake-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/volvo-service-dubai/electrical-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/volvo-service-dubai/engine-diagnostics",
+      "passed": true
+    },
+    {
+      "route": "/brands/volvo-service-dubai/exhaust-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/volvo-service-dubai/fuel-system-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/volvo-service-dubai/mechanical-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/volvo-service-dubai/oil-change",
+      "passed": true
+    },
+    {
+      "route": "/brands/volvo-service-dubai/steering-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/volvo-service-dubai/suspension-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/volvo-service-dubai/tire-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/volvo-service-dubai/transmission-repair",
+      "passed": true
+    },
+    {
+      "route": "/faq",
+      "passed": true
+    },
+    {
+      "route": "/mercedes/models/c63-service-repair-dubai",
+      "passed": true
+    },
+    {
+      "route": "/mercedes/models/e63-service-repair-dubai",
+      "passed": true
+    },
+    {
+      "route": "/mercedes/models/g-class-service-repair-dubai",
+      "passed": true
+    },
+    {
+      "route": "/mercedes/models/gle-service-repair-dubai",
+      "passed": true
+    },
+    {
+      "route": "/mercedes/models/gls-service-repair-dubai",
+      "passed": true
+    },
+    {
+      "route": "/mercedes/models/s63-service-repair-dubai",
+      "passed": true
+    },
+    {
+      "route": "/mercedes/problems",
+      "passed": true
+    },
+    {
+      "route": "/mercedes/problems/ac-not-cooling",
+      "passed": true
+    },
+    {
+      "route": "/mercedes/problems/airmatic-malfunction",
+      "passed": true
+    },
+    {
+      "route": "/mercedes/problems/battery-warning",
+      "passed": true
+    },
+    {
+      "route": "/mercedes/problems/check-engine-light",
+      "passed": true
+    },
+    {
+      "route": "/mercedes/problems/engine-overheating",
+      "passed": true
+    },
+    {
+      "route": "/mercedes/problems/gearbox-jerking",
+      "passed": true
+    },
+    {
+      "route": "/mercedes/problems/oil-leak",
+      "passed": true
+    },
+    {
+      "route": "/mercedes/problems/suspension-dropping-overnight",
+      "passed": true
+    },
+    {
+      "route": "/mercedes/problems/transmission-slipping",
+      "passed": true
+    },
+    {
+      "route": "/mercedes/problems/wont-start",
+      "passed": true
+    },
+    {
+      "route": "/porsche/718",
+      "passed": true
+    },
+    {
+      "route": "/porsche/911/991",
+      "passed": true
+    },
+    {
+      "route": "/porsche/911/992",
+      "passed": true
+    },
+    {
+      "route": "/porsche/911/997",
+      "passed": true
+    },
+    {
+      "route": "/porsche/guides/718-maintenance",
+      "passed": true
+    },
+    {
+      "route": "/porsche/guides/ac-maintenance-dubai",
+      "passed": true
+    },
+    {
+      "route": "/porsche/guides/battery-life-dubai",
+      "passed": true
+    },
+    {
+      "route": "/porsche/guides/brake-wear-dubai",
+      "passed": true
+    },
+    {
+      "route": "/porsche/guides/buying-used-porsche-dubai",
+      "passed": true
+    },
+    {
+      "route": "/porsche/guides/common-problems-dubai",
+      "passed": true
+    },
+    {
+      "route": "/porsche/guides/cooling-maintenance",
+      "passed": true
+    },
+    {
+      "route": "/porsche/guides/dealer-vs-independent-specialist",
+      "passed": true
+    },
+    {
+      "route": "/porsche/guides/dubai-heat",
+      "passed": true
+    },
+    {
+      "route": "/porsche/guides/how-often-service-dubai",
+      "passed": true
+    },
+    {
+      "route": "/porsche/guides/macan-maintenance",
+      "passed": true
+    },
+    {
+      "route": "/porsche/guides/maintenance-cost-dubai",
+      "passed": true
+    },
+    {
+      "route": "/porsche/guides/major-vs-minor-service",
+      "passed": true
+    },
+    {
+      "route": "/porsche/guides/oil-change-intervals",
+      "passed": true
+    },
+    {
+      "route": "/porsche/guides/pdk-service-intervals",
+      "passed": true
+    },
+    {
+      "route": "/porsche/guides/pre-purchase-inspection-checklist",
+      "passed": true
+    },
+    {
+      "route": "/porsche/guides/service-intervals-uae",
+      "passed": true
+    },
+    {
+      "route": "/porsche/guides/taycan-maintenance",
+      "passed": true
+    },
+    {
+      "route": "/porsche/guides/tyre-wear-dubai",
+      "passed": true
+    },
+    {
+      "route": "/porsche/guides/warning-lights",
+      "passed": true
+    },
+    {
+      "route": "/porsche/macan",
+      "passed": true
+    },
+    {
+      "route": "/porsche/problems",
+      "passed": true
+    },
+    {
+      "route": "/porsche/problems/911-cooling",
+      "passed": true
+    },
+    {
+      "route": "/porsche/problems/ac-not-cooling",
+      "passed": true
+    },
+    {
+      "route": "/porsche/problems/air-suspension-warning",
+      "passed": true
+    },
+    {
+      "route": "/porsche/problems/battery-warning",
+      "passed": true
+    },
+    {
+      "route": "/porsche/problems/brake-warning-light",
+      "passed": true
+    },
+    {
+      "route": "/porsche/problems/cayenne-air-suspension",
+      "passed": true
+    },
+    {
+      "route": "/porsche/problems/check-engine-light",
+      "passed": true
+    },
+    {
+      "route": "/porsche/problems/coolant-leak",
+      "passed": true
+    },
+    {
+      "route": "/porsche/problems/delayed-gear-engagement",
+      "passed": true
+    },
+    {
+      "route": "/porsche/problems/engine-misfire",
+      "passed": true
+    },
+    {
+      "route": "/porsche/problems/engine-overheating",
+      "passed": true
+    },
+    {
+      "route": "/porsche/problems/excessive-oil-consumption",
+      "passed": true
+    },
+    {
+      "route": "/porsche/problems/macan-transfer-case",
+      "passed": true
+    },
+    {
+      "route": "/porsche/problems/oil-leak",
+      "passed": true
+    },
+    {
+      "route": "/porsche/problems/pasm-fault",
+      "passed": true
+    },
+    {
+      "route": "/porsche/problems/pdcc-fault",
+      "passed": true
+    },
+    {
+      "route": "/porsche/problems/pdk-jerking",
+      "passed": true
+    },
+    {
+      "route": "/porsche/problems/pdk-slipping",
+      "passed": true
+    },
+    {
+      "route": "/porsche/problems/pdk-warning-message",
+      "passed": true
+    },
+    {
+      "route": "/porsche/problems/steering-vibration",
+      "passed": true
+    },
+    {
+      "route": "/porsche/problems/suspension-dropping-overnight",
+      "passed": true
+    },
+    {
+      "route": "/porsche/problems/taycan-12v-battery",
+      "passed": true
+    },
+    {
+      "route": "/porsche/problems/taycan-charging",
+      "passed": true
+    },
+    {
+      "route": "/porsche/problems/wont-start",
+      "passed": true
+    },
+    {
+      "route": "/porsche/systems",
+      "passed": true
+    },
+    {
+      "route": "/porsche/systems/air-suspension",
+      "passed": true
+    },
+    {
+      "route": "/porsche/systems/pasm",
+      "passed": true
+    },
+    {
+      "route": "/porsche/systems/pccb",
+      "passed": true
+    },
+    {
+      "route": "/porsche/systems/pdcc",
+      "passed": true
+    },
+    {
+      "route": "/porsche/systems/pdk",
+      "passed": true
+    },
+    {
+      "route": "/porsche/systems/ptm-awd",
+      "passed": true
+    },
+    {
+      "route": "/porsche/systems/rear-axle-steering",
+      "passed": true
+    },
+    {
+      "route": "/porsche/systems/sport-chrono",
+      "passed": true
+    },
+    {
+      "route": "/porsche/systems/tiptronic",
+      "passed": true
+    },
+    {
+      "route": "/porsche/taycan",
+      "passed": true
+    },
+    {
+      "route": "/services",
+      "passed": true
+    },
+    {
+      "route": "/services/auto-electrical-repair-dubai",
+      "passed": true
+    },
+    {
+      "route": "/services/battery-replacement-dubai",
+      "passed": true
+    },
+    {
+      "route": "/services/brake-repair-dubai",
+      "passed": true
+    },
+    {
+      "route": "/services/cadillac-cue-screen-repair-dubai",
+      "passed": true
+    },
+    {
+      "route": "/services/car-ac-repair-dubai",
+      "passed": true
+    },
+    {
+      "route": "/services/car-body-repair-dubai",
+      "passed": true
+    },
+    {
+      "route": "/services/car-diagnostics-dubai",
+      "passed": true
+    },
+    {
+      "route": "/services/car-garage-dubai",
+      "passed": true
+    },
+    {
+      "route": "/services/car-polishing-dubai",
+      "passed": true
+    },
+    {
+      "route": "/services/car-service-dubai",
+      "passed": true
+    },
+    {
+      "route": "/services/ceramic-coating",
+      "passed": true
+    },
+    {
+      "route": "/services/exhaust-repair-dubai",
+      "passed": true
+    },
+    {
+      "route": "/services/fuel-system-repair-dubai",
+      "passed": true
+    },
+    {
+      "route": "/services/garage-near-me-dubai",
+      "passed": true
+    },
+    {
+      "route": "/services/head-unit-repair-dubai",
+      "passed": true
+    },
+    {
+      "route": "/services/mechanical-repair-dubai",
+      "passed": true
+    },
+    {
+      "route": "/services/mercedes-ac-repair-dubai",
+      "passed": true
+    },
+    {
+      "route": "/services/mercedes-audio-upgrade-dubai",
+      "passed": true
+    },
+    {
+      "route": "/services/mercedes-battery-replacement-dubai",
+      "passed": true
+    },
+    {
+      "route": "/services/mercedes-body-repair-dubai",
+      "passed": true
+    },
+    {
+      "route": "/services/mercedes-brake-repair-dubai",
+      "passed": true
+    },
+    {
+      "route": "/services/mercedes-diagnostics-dubai",
+      "passed": true
+    },
+    {
+      "route": "/services/mercedes-electrical-repair-dubai",
+      "passed": true
+    },
+    {
+      "route": "/services/mercedes-exhaust-repair-dubai",
+      "passed": true
+    },
+    {
+      "route": "/services/mercedes-fuel-system-repair-dubai",
+      "passed": true
+    },
+    {
+      "route": "/services/mercedes-mechanical-repair-dubai",
+      "passed": true
+    },
+    {
+      "route": "/services/mercedes-oil-change-dubai",
+      "passed": true
+    },
+    {
+      "route": "/services/mercedes-steering-repair-dubai",
+      "passed": true
+    },
+    {
+      "route": "/services/mercedes-suspension-repair-dubai",
+      "passed": true
+    },
+    {
+      "route": "/services/mercedes-tire-repair-dubai",
+      "passed": true
+    },
+    {
+      "route": "/services/mercedes-transmission-repair-dubai",
+      "passed": true
+    },
+    {
+      "route": "/services/oil-change-dubai",
+      "passed": true
+    },
+    {
+      "route": "/services/paint-protection-dubai",
+      "passed": true
+    },
+    {
+      "route": "/services/paint-protection-film",
+      "passed": true
+    },
+    {
+      "route": "/services/roadside-assistance-dubai",
+      "passed": true
+    },
+    {
+      "route": "/services/soft-close-door-repair-dubai",
+      "passed": true
+    },
+    {
+      "route": "/services/steering-repair-dubai",
+      "passed": true
+    },
+    {
+      "route": "/services/suspension-repair-dubai",
+      "passed": true
+    },
+    {
+      "route": "/services/tire-repair-dubai",
+      "passed": true
+    },
+    {
+      "route": "/services/transmission-repair-dubai",
+      "passed": true
+    },
+    {
+      "route": "/sitemap",
+      "passed": true
+    },
+    {
+      "route": "/tuning",
+      "passed": true
+    },
+    {
+      "route": "/tuning/aston-martin-db11",
+      "passed": true
+    },
+    {
+      "route": "/tuning/lamborghini-urus",
+      "passed": true
+    },
+    {
+      "route": "/tuning/mercedes-amg-c63",
+      "passed": true
+    },
+    {
+      "route": "/tuning/mercedes-amg-e63",
+      "passed": true
+    },
+    {
+      "route": "/tuning/mercedes-amg-g63",
+      "passed": true
+    },
+    {
+      "route": "/tuning/mercedes-amg-glc63",
+      "passed": true
+    },
+    {
+      "route": "/tuning/mercedes-amg-gt",
+      "passed": true
+    },
+    {
+      "route": "/tuning/mercedes-amg-gt63",
+      "passed": true
+    },
+    {
+      "route": "/tuning/mercedes-amg-s65",
+      "passed": true
+    },
+    {
+      "route": "/vrx",
+      "passed": true
+    }
+  ],
+  "failures": [],
+  "normalization": "All routes compare metadata/schema exactly; visible root/main markup normalizes whitespace and generated Radix useId only. About removes exactly its one new marked video section before comparing previous visible markup."
+}

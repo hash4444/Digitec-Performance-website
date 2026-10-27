@@ -1,0 +1,21 @@
+INDEPENDENT ECU/ELECTRONICS INTEGRATION REVIEW — PASS
+19 October 2026. Source review before final build/browser QA; not a claim of live production verification.
+
+Reviewed src/data/ecuElectronicsContent.ts, src/components/EcuElectronicsEnquiryPanel.tsx, and the new calls/renders in src/pages/ServicePage.tsx and src/pages/BrandServicePage.tsx.
+
+Compared both existing templates to the captured diagnostics/AC prior-work-overlay, rather than comparing only with Git HEAD. Each differs by exactly two imports, one exact-owner content lookup and one additive panel render. Removing those four additive lines restores the prior template text, allowing CRLF/LF normalization. No previous metadata, H1, canonical, hreflang, schema/FAQ construction, copy or CTA URL/code was changed by this sprint.
+
+The four other prior diagnostics/AC files retain their expected byte hashes. Existing PPF, tuning, backend and routing code are outside these source edits.
+
+Scope is exactly eight existing English owners and six existing Arabic counterparts. EN-only CUE/head-unit content is excluded on Arabic. Links to those EN-only services are removed from Arabic module variants. Generic and brand software owners explain diagnostics/configuration/software/setup distinctions with exact-function acceptance gates. Electrical owners investigate supply/wiring/communication before controller replacement. Infotainment owners separate touch/display/audio and conditional setup. No universal software, replacement-unit, hardware repair, cloning, security or high-voltage capability is newly asserted.
+
+Each panel supplies three H3 questions with visible paragraph answers. These are ordinary crawlable HTML, and the new component does not call schema builders or create a second FAQPage node. Previous FAQ arrays/policy remain intact.
+
+New WhatsApp drafts contain vehicle/year, symptoms, warning, optional report, recent replacement details, requested function if known and preferred appointment. They do not request passwords or security credentials. Public privacy copy rejects passwords/account credentials and asks customers to remove unnecessary report details; it does not advertise security-related service functions.
+
+The new panel states that opening a draft is not received enquiry or confirmed appointment. Its anchors use the established WhatsApp destination and telephone. It contains no custom event submission or lead-confirmation event. Existing delegated contact tracking strips the WhatsApp message query before analytics. Actual account-wide GTM/enhanced measurement and reception remain outside this source review.
+
+One panel is rendered per supported page; its unique section ID is therefore not duplicated by the new integration. Heading hierarchy is H2 then H3. Telephone Arabic rendering uses bdi with LTR direction. The links retain minimum touch-height utility styling. Runtime/mobile/no-JavaScript behavior is for the separate final browser QA.
+
+Actionable findings: none.
+Machine-readable source hashes, preservation checks and 16 owner/locale inclusion checks: integration-review.json.

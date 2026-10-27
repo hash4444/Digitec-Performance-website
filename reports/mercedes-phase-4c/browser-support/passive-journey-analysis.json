@@ -1,0 +1,515 @@
+{
+  "generatedAt": "2026-10-26T11:05:08.624Z",
+  "journeysFile": "../browser/passive-journeys.json",
+  "journeysSha256": "029b573f2eb9cce444e19bd0402701c0804b5d980f1db5ef0203430871d63a62",
+  "design": "Fresh tab per option; same browser1280px outer viewport, alternating baseline/A/B,10sequenceseach with identical commonXENTRYservicecard; passivefirst-headcaptureanddirectstaticserving. No generatedroutinglayerexecuted.",
+  "scope": "Only client-timestamped events within the first/last recorded common repeat sequence for each option. Later contact/screenshots excluded.",
+  "options": [
+    {
+      "label": "baseline",
+      "option": "baseline",
+      "sourceLog": "baseline-passive-2026-10-26T11-01-30.395Z.ndjson",
+      "snapshot": "runs/baseline-common-journeys.snapshot.json",
+      "window": {
+        "start": "2026-10-26T11:02:20.871Z",
+        "end": "2026-10-26T11:03:23.314Z"
+      },
+      "sequences": 10,
+      "steps": 50,
+      "kindCounts": {
+        "instrumentation-installed": 30,
+        "csp-block": 70,
+        "dom-content-loaded": 30,
+        "resource-error": 60,
+        "page-show": 30,
+        "window-load": 30,
+        "focus-in": 10,
+        "anchor-click": 10,
+        "pop-state": 10,
+        "page-hide": 29
+      },
+      "inPageExceptionCount": 0,
+      "inPageExceptions": [],
+      "nativeLogCount": 0,
+      "nativeLogs": [],
+      "cspCount": 70,
+      "cspGroups": {
+        "script-src-elem https://www.googletagmanager.com/gtm.js?id=GTM-T3GVSPND": 30,
+        "script-src-elem https://www.googletagmanager.com/gtag/js?id=G-4TRCEJSY4S": 30,
+        "script-src eval": 10
+      },
+      "resourceErrorCount": 60,
+      "resourceGroups": {
+        "https://www.googletagmanager.com/gtm.js?id=GTM-T3GVSPND": 30,
+        "https://www.googletagmanager.com/gtag/js?id=G-4TRCEJSY4S": 30
+      },
+      "unexpectedResourceErrors": [],
+      "build": {
+        "manifestSha256": "eb2c17bc541cb99c6b4e6e93aba745cccf3e1050f9de1c313c8837ede1a23db7",
+        "entry": "assets/index-CvWuKuLH.js",
+        "css": [
+          "assets/index-CumuXRQA.css"
+        ],
+        "hub": "assets/BrandPage-CqCGvxL4.js",
+        "body": "assets/BrandServicePage-mV81kvfw.js"
+      },
+      "rounds": [
+        {
+          "round": 1,
+          "start": "2026-10-26T11:02:20.871Z",
+          "end": "2026-10-26T11:02:22.422Z",
+          "stepCount": 5,
+          "reportedErrors": 0,
+          "nativeErrors": [],
+          "inPageExceptions": []
+        },
+        {
+          "round": 2,
+          "start": "2026-10-26T11:02:25.062Z",
+          "end": "2026-10-26T11:02:26.198Z",
+          "stepCount": 5,
+          "reportedErrors": 0,
+          "nativeErrors": [],
+          "inPageExceptions": []
+        },
+        {
+          "round": 3,
+          "start": "2026-10-26T11:02:28.410Z",
+          "end": "2026-10-26T11:02:29.513Z",
+          "stepCount": 5,
+          "reportedErrors": 0,
+          "nativeErrors": [],
+          "inPageExceptions": []
+        },
+        {
+          "round": 4,
+          "start": "2026-10-26T11:02:31.749Z",
+          "end": "2026-10-26T11:02:32.836Z",
+          "stepCount": 5,
+          "reportedErrors": 0,
+          "nativeErrors": [],
+          "inPageExceptions": []
+        },
+        {
+          "round": 5,
+          "start": "2026-10-26T11:02:35.031Z",
+          "end": "2026-10-26T11:02:36.195Z",
+          "stepCount": 5,
+          "reportedErrors": 0,
+          "nativeErrors": [],
+          "inPageExceptions": []
+        },
+        {
+          "round": 6,
+          "start": "2026-10-26T11:03:07.964Z",
+          "end": "2026-10-26T11:03:09.206Z",
+          "stepCount": 5,
+          "reportedErrors": 0,
+          "nativeErrors": [],
+          "inPageExceptions": []
+        },
+        {
+          "round": 7,
+          "start": "2026-10-26T11:03:11.515Z",
+          "end": "2026-10-26T11:03:12.622Z",
+          "stepCount": 5,
+          "reportedErrors": 0,
+          "nativeErrors": [],
+          "inPageExceptions": []
+        },
+        {
+          "round": 8,
+          "start": "2026-10-26T11:03:14.883Z",
+          "end": "2026-10-26T11:03:16.025Z",
+          "stepCount": 5,
+          "reportedErrors": 0,
+          "nativeErrors": [],
+          "inPageExceptions": []
+        },
+        {
+          "round": 9,
+          "start": "2026-10-26T11:03:18.422Z",
+          "end": "2026-10-26T11:03:19.641Z",
+          "stepCount": 5,
+          "reportedErrors": 0,
+          "nativeErrors": [],
+          "inPageExceptions": []
+        },
+        {
+          "round": 10,
+          "start": "2026-10-26T11:03:22.091Z",
+          "end": "2026-10-26T11:03:23.314Z",
+          "stepCount": 5,
+          "reportedErrors": 0,
+          "nativeErrors": [],
+          "inPageExceptions": []
+        }
+      ]
+    },
+    {
+      "label": "A",
+      "option": "candidate",
+      "sourceLog": "candidate-passive-2026-10-26T11-01-29.574Z.ndjson",
+      "snapshot": "runs/candidate-common-journeys.snapshot.json",
+      "window": {
+        "start": "2026-10-26T11:02:22.422Z",
+        "end": "2026-10-26T11:03:24.478Z"
+      },
+      "sequences": 10,
+      "steps": 50,
+      "kindCounts": {
+        "instrumentation-installed": 30,
+        "csp-block": 70,
+        "dom-content-loaded": 30,
+        "resource-error": 60,
+        "window-load": 30,
+        "page-show": 30,
+        "focus-in": 10,
+        "anchor-click": 10,
+        "pop-state": 10,
+        "page-hide": 29
+      },
+      "inPageExceptionCount": 0,
+      "inPageExceptions": [],
+      "nativeLogCount": 0,
+      "nativeLogs": [],
+      "cspCount": 70,
+      "cspGroups": {
+        "script-src-elem https://www.googletagmanager.com/gtm.js?id=GTM-T3GVSPND": 30,
+        "script-src-elem https://www.googletagmanager.com/gtag/js?id=G-4TRCEJSY4S": 30,
+        "script-src eval": 10
+      },
+      "resourceErrorCount": 60,
+      "resourceGroups": {
+        "https://www.googletagmanager.com/gtm.js?id=GTM-T3GVSPND": 30,
+        "https://www.googletagmanager.com/gtag/js?id=G-4TRCEJSY4S": 30
+      },
+      "unexpectedResourceErrors": [],
+      "build": {
+        "manifestSha256": "ee7d1f30093b0e84dd1a54f7d009dc39ee6644b683eda16251064a2a21f42655",
+        "entry": "assets/index-DxoEjBa9.js",
+        "css": [
+          "assets/index-CumuXRQA.css"
+        ],
+        "hub": "assets/BrandPage-BnKA0VjP.js",
+        "body": "assets/BrandServicePage-CdNEbwkY.js"
+      },
+      "rounds": [
+        {
+          "round": 1,
+          "start": "2026-10-26T11:02:22.422Z",
+          "end": "2026-10-26T11:02:23.742Z",
+          "stepCount": 5,
+          "reportedErrors": 0,
+          "nativeErrors": [],
+          "inPageExceptions": []
+        },
+        {
+          "round": 2,
+          "start": "2026-10-26T11:02:26.198Z",
+          "end": "2026-10-26T11:02:27.295Z",
+          "stepCount": 5,
+          "reportedErrors": 0,
+          "nativeErrors": [],
+          "inPageExceptions": []
+        },
+        {
+          "round": 3,
+          "start": "2026-10-26T11:02:29.513Z",
+          "end": "2026-10-26T11:02:30.639Z",
+          "stepCount": 5,
+          "reportedErrors": 0,
+          "nativeErrors": [],
+          "inPageExceptions": []
+        },
+        {
+          "round": 4,
+          "start": "2026-10-26T11:02:32.836Z",
+          "end": "2026-10-26T11:02:33.934Z",
+          "stepCount": 5,
+          "reportedErrors": 0,
+          "nativeErrors": [],
+          "inPageExceptions": []
+        },
+        {
+          "round": 5,
+          "start": "2026-10-26T11:02:36.195Z",
+          "end": "2026-10-26T11:02:37.308Z",
+          "stepCount": 5,
+          "reportedErrors": 0,
+          "nativeErrors": [],
+          "inPageExceptions": []
+        },
+        {
+          "round": 6,
+          "start": "2026-10-26T11:03:09.206Z",
+          "end": "2026-10-26T11:03:10.325Z",
+          "stepCount": 5,
+          "reportedErrors": 0,
+          "nativeErrors": [],
+          "inPageExceptions": []
+        },
+        {
+          "round": 7,
+          "start": "2026-10-26T11:03:12.622Z",
+          "end": "2026-10-26T11:03:13.751Z",
+          "stepCount": 5,
+          "reportedErrors": 0,
+          "nativeErrors": [],
+          "inPageExceptions": []
+        },
+        {
+          "round": 8,
+          "start": "2026-10-26T11:03:16.025Z",
+          "end": "2026-10-26T11:03:17.210Z",
+          "stepCount": 5,
+          "reportedErrors": 0,
+          "nativeErrors": [],
+          "inPageExceptions": []
+        },
+        {
+          "round": 9,
+          "start": "2026-10-26T11:03:19.641Z",
+          "end": "2026-10-26T11:03:20.868Z",
+          "stepCount": 5,
+          "reportedErrors": 0,
+          "nativeErrors": [],
+          "inPageExceptions": []
+        },
+        {
+          "round": 10,
+          "start": "2026-10-26T11:03:23.314Z",
+          "end": "2026-10-26T11:03:24.478Z",
+          "stepCount": 5,
+          "reportedErrors": 0,
+          "nativeErrors": [],
+          "inPageExceptions": []
+        }
+      ]
+    },
+    {
+      "label": "B",
+      "option": "release-b",
+      "sourceLog": "release-b-passive-2026-10-26T11-01-30.395Z.ndjson",
+      "snapshot": "runs/release-b-common-journeys.snapshot.json",
+      "window": {
+        "start": "2026-10-26T11:02:23.742Z",
+        "end": "2026-10-26T11:03:25.638Z"
+      },
+      "sequences": 10,
+      "steps": 50,
+      "kindCounts": {
+        "instrumentation-installed": 30,
+        "csp-block": 70,
+        "dom-content-loaded": 30,
+        "resource-error": 60,
+        "window-load": 30,
+        "page-show": 30,
+        "focus-in": 10,
+        "anchor-click": 10,
+        "pop-state": 10,
+        "page-hide": 29
+      },
+      "inPageExceptionCount": 0,
+      "inPageExceptions": [],
+      "nativeLogCount": 0,
+      "nativeLogs": [],
+      "cspCount": 70,
+      "cspGroups": {
+        "script-src-elem https://www.googletagmanager.com/gtm.js?id=GTM-T3GVSPND": 30,
+        "script-src-elem https://www.googletagmanager.com/gtag/js?id=G-4TRCEJSY4S": 30,
+        "script-src eval": 10
+      },
+      "resourceErrorCount": 60,
+      "resourceGroups": {
+        "https://www.googletagmanager.com/gtm.js?id=GTM-T3GVSPND": 30,
+        "https://www.googletagmanager.com/gtag/js?id=G-4TRCEJSY4S": 30
+      },
+      "unexpectedResourceErrors": [],
+      "build": {
+        "manifestSha256": "ee7d1f30093b0e84dd1a54f7d009dc39ee6644b683eda16251064a2a21f42655",
+        "entry": "assets/index-DxoEjBa9.js",
+        "css": [
+          "assets/index-CumuXRQA.css"
+        ],
+        "hub": "assets/BrandPage-BnKA0VjP.js",
+        "body": "assets/BrandServicePage-CdNEbwkY.js"
+      },
+      "rounds": [
+        {
+          "round": 1,
+          "start": "2026-10-26T11:02:23.742Z",
+          "end": "2026-10-26T11:02:25.062Z",
+          "stepCount": 5,
+          "reportedErrors": 0,
+          "nativeErrors": [],
+          "inPageExceptions": []
+        },
+        {
+          "round": 2,
+          "start": "2026-10-26T11:02:27.295Z",
+          "end": "2026-10-26T11:02:28.410Z",
+          "stepCount": 5,
+          "reportedErrors": 0,
+          "nativeErrors": [],
+          "inPageExceptions": []
+        },
+        {
+          "round": 3,
+          "start": "2026-10-26T11:02:30.639Z",
+          "end": "2026-10-26T11:02:31.749Z",
+          "stepCount": 5,
+          "reportedErrors": 0,
+          "nativeErrors": [],
+          "inPageExceptions": []
+        },
+        {
+          "round": 4,
+          "start": "2026-10-26T11:02:33.934Z",
+          "end": "2026-10-26T11:02:35.031Z",
+          "stepCount": 5,
+          "reportedErrors": 0,
+          "nativeErrors": [],
+          "inPageExceptions": []
+        },
+        {
+          "round": 5,
+          "start": "2026-10-26T11:02:37.308Z",
+          "end": "2026-10-26T11:02:38.452Z",
+          "stepCount": 5,
+          "reportedErrors": 0,
+          "nativeErrors": [],
+          "inPageExceptions": []
+        },
+        {
+          "round": 6,
+          "start": "2026-10-26T11:03:10.325Z",
+          "end": "2026-10-26T11:03:11.515Z",
+          "stepCount": 5,
+          "reportedErrors": 0,
+          "nativeErrors": [],
+          "inPageExceptions": []
+        },
+        {
+          "round": 7,
+          "start": "2026-10-26T11:03:13.751Z",
+          "end": "2026-10-26T11:03:14.883Z",
+          "stepCount": 5,
+          "reportedErrors": 0,
+          "nativeErrors": [],
+          "inPageExceptions": []
+        },
+        {
+          "round": 8,
+          "start": "2026-10-26T11:03:17.210Z",
+          "end": "2026-10-26T11:03:18.422Z",
+          "stepCount": 5,
+          "reportedErrors": 0,
+          "nativeErrors": [],
+          "inPageExceptions": []
+        },
+        {
+          "round": 9,
+          "start": "2026-10-26T11:03:20.868Z",
+          "end": "2026-10-26T11:03:22.091Z",
+          "stepCount": 5,
+          "reportedErrors": 0,
+          "nativeErrors": [],
+          "inPageExceptions": []
+        },
+        {
+          "round": 10,
+          "start": "2026-10-26T11:03:24.478Z",
+          "end": "2026-10-26T11:03:25.638Z",
+          "stepCount": 5,
+          "reportedErrors": 0,
+          "nativeErrors": [],
+          "inPageExceptions": []
+        }
+      ]
+    }
+  ],
+  "evalCspExplanation": {
+    "package": "zod",
+    "version": "4.5.4",
+    "file": "v4/core/util.js",
+    "sha256": "e50c63d70e8b1abf2968936acf22c9e4e96e735f0af6d367785e0948e46553fa",
+    "excerpt": [
+      {
+        "line": 148,
+        "text": "export const allowsEval = /* @__PURE__*/ cached(() => {"
+      },
+      {
+        "line": 149,
+        "text": "    // Skip the probe under `jitless`: strict CSPs report the caught `new Function` as a `securitypolicyviolation` even though the throw is swallowed."
+      },
+      {
+        "line": 150,
+        "text": "    if (globalConfig.jitless) {"
+      },
+      {
+        "line": 151,
+        "text": "        return false;"
+      },
+      {
+        "line": 152,
+        "text": "    }"
+      },
+      {
+        "line": 153,
+        "text": "    // @ts-ignore"
+      },
+      {
+        "line": 154,
+        "text": "    if (typeof navigator !== \"undefined\" && navigator?.userAgent?.includes(\"Cloudflare\")) {"
+      },
+      {
+        "line": 155,
+        "text": "        return false;"
+      },
+      {
+        "line": 156,
+        "text": "    }"
+      },
+      {
+        "line": 157,
+        "text": "    try {"
+      },
+      {
+        "line": 158,
+        "text": "        const F = Function;"
+      },
+      {
+        "line": 159,
+        "text": "        new F(\"\");"
+      },
+      {
+        "line": 160,
+        "text": "        return true;"
+      },
+      {
+        "line": 161,
+        "text": "    }"
+      },
+      {
+        "line": 162,
+        "text": "    catch (_) {"
+      },
+      {
+        "line": 163,
+        "text": "        return false;"
+      },
+      {
+        "line": 164,
+        "text": "    }"
+      },
+      {
+        "line": 165,
+        "text": "});"
+      }
+    ],
+    "classification": "Caught feature detection under the deliberately strict local QA CSP; baseline/A/B each report ten eval CSP events and no uncaught exception."
+  },
+  "totalSequences": 30,
+  "totalSteps": 150
+}

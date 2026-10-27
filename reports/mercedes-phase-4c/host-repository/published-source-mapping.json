@@ -1,0 +1,112 @@
+{
+  "reconciledAtUtc": "2026-10-26T11:09:15.628Z",
+  "readOnly": true,
+  "uiCaptureActor": "Parent /root via authenticated browser",
+  "reviewer": "host_repository, independently reading and crossmatching saved evidence",
+  "decision": "NO-GO",
+  "publishedSourceIdentified": true,
+  "publishedSourceSha": "13d1c19e99e9696ab63e5721ada18ffcfce11519",
+  "lovableEditId": "edt-c8e47408-b978-42a4-af1c-a3556a12986b",
+  "sourceVersionTitle": "Record activated Mercedes oil alias redirect",
+  "sourceVersionCreatedAtUtc": "2026-10-21T06:58:03Z",
+  "uiVersionTimeLabel": "Oct 21, 10:58 AM",
+  "actualPublicationActivationTimestamp": null,
+  "providerDeploymentId": null,
+  "checks": {
+    "uniqueAuthenticatedEditTitle": true,
+    "uniquePublishedUiRow": true,
+    "editShaMatchesGitHubCommit": true,
+    "githubCommitMessageMatchesUi": true,
+    "allThreeGitHubCreatedFilesAppearInUi": true,
+    "publishedPanel": true,
+    "upToDatePanel": true,
+    "disabledPublish": true,
+    "existingDomainVisible": true,
+    "connectedRepository": true,
+    "activeBranchMain": true,
+    "inSync": true
+  },
+  "evidence": [
+    {
+      "path": "../host/history-loaded.ax.txt",
+      "sha256": "050bb3ba063ea19ca62e0ddb2ba4eb6d214ab18a192ba853fa8db426fcd9cf90",
+      "bytes": 38320
+    },
+    {
+      "path": "../host/edit-history.json",
+      "sha256": "266dc587ccfa5840463c57205e3437517b4dc87ec9dc3c5c20b2c58fed486f9b",
+      "bytes": 4333
+    },
+    {
+      "path": "../host/publish-panel.ax.txt",
+      "sha256": "0c4666746f9909a5b9e872da097b0c122bf209d5121e94834278caecd315195f",
+      "bytes": 40022
+    },
+    {
+      "path": "../host/github-sync-loaded.ax.txt",
+      "sha256": "2641611d313ef4d78ee030e9b1d9ff1e00e81c9134ef64b23f1fc3bf95adf993",
+      "bytes": 14865
+    },
+    {
+      "path": "../host/published-version-code-loaded.ax.txt",
+      "sha256": "f22bdd210a7d4fb22d487a51ef771d8a97ed5198cabf5939521d2c80879b8aa4",
+      "bytes": 29001
+    },
+    {
+      "path": "../host/current-published-revert-dialog.ax.txt",
+      "sha256": "c3f3f50cd81d486759d8d68cb8e3129a972d6f92b44b100b5cee00cd9a0fc1b1",
+      "bytes": 318
+    },
+    {
+      "path": "../host/published-actions.ax.txt",
+      "sha256": "d980b30572bb2751739dc16434780a434a03a6ec6b8f0122f637df0031306865",
+      "bytes": 2338
+    },
+    {
+      "path": "../host/historical-restore-confirmation.ax.txt",
+      "sha256": "abecd8d0ad7706a0c0c721a8a13111b2b84248fa4ceaa5f2eb3ba60d0bad16cc",
+      "bytes": 935
+    },
+    {
+      "path": "../host/revert-affordance-dom.json",
+      "sha256": "bdbc73c88afcc5bf197dcaa1a3b65d0f121f262c533e726938dbb52a7fb88800",
+      "bytes": 4888
+    },
+    {
+      "path": "../host/ui-observations.json",
+      "sha256": "f45f49e5e25c054f35326023f54ab64c85e2591f4d5dd2d03c7944d9c79ec8d8",
+      "bytes": 1938
+    }
+  ],
+  "restoreObservation": {
+    "rawCapture": "../host/current-published-revert-dialog.ax.txt",
+    "capturedResult": "No accessibility tree change after parent inspection of current Published version Revert.",
+    "restoreExecuted": false,
+    "rollbackReliabilityVerified": false,
+    "limits": [
+      "Current-version unavailable control does not prove future historical restore ability.",
+      "No complete compiled rollback snapshot or host recipe was obtained.",
+      "Generic Revert can affect associated edge functions; no such action was executed."
+    ],
+    "domEvidence": {
+      "path": "../host/revert-affordance-dom.json",
+      "currentRowCursorNotAllowed": true,
+      "currentRowHtmlDisabled": false,
+      "currentRowAriaDisabled": null
+    },
+    "historicalConfirmation": {
+      "path": "../host/historical-restore-confirmation.ax.txt",
+      "screenshot": "../host/historical-restore-confirmation.png",
+      "openedOnly": true,
+      "confirmationAccepted": false,
+      "dismissed": true,
+      "actualRestorePerformed": false,
+      "scopeLimit": "Older Oct20 confirmation describes project restore; no exact compiled artifact guarantee or static-only/backend exclusion is shown."
+    }
+  },
+  "remainingBlockers": [
+    "Actual host production install/build recipe and reviewed Option B host output are not established.",
+    "Reliable restoration of the current coherent compiled production version is not verified."
+  ],
+  "conclusion": "Known published source and clean patch applicability resolve source identity, not host rebuild compatibility or compiled rollback."
+}

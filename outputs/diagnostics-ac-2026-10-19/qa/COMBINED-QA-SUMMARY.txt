@@ -1,0 +1,27 @@
+DIGI-TEC DIAGNOSTICS & AC COMBINED QA — PASS
+2026-10-19T08:18:20.371Z
+
+Isolated candidate: C:\Users\ADMIN\Documents\ChatGPT\DIGITEC\outputs\diagnostics-ac-2026-10-19\candidate.local
+Base: acef3427b57b48259bc5b39d6a0f75798603ae95
+Source fingerprint: 3d37bc4323d40b413ec1b0469acb38960c20a4914f3df91b7953d75b4851d7ac
+Reviewed overlay: 6 files, all hashes match. 581 build inputs unchanged after browser QA.
+
+Production build: all 19 declared stages PASS; 1,256 rendered routes; 1,005 canonical sitemap URLs.
+Additional CLI: TypeScript app and Node, ESLint (0errors/11warnings), master SEO, BMW hub, paint-care, tuning, full routing-response regression, existing brand form, prior combined service static and new diagnostics/AC static all PASS.
+
+New static: 8owners/16locales, 1011 assertions, 38 new direct canonical link occurrences. Single H1/title/description, initial content, indexing, canonicals, reciprocal English/Arabic hreflang, sitemap, displayed FAQ/schema agreement, stable provider/entity IDs and service-specific safe CTAs verified.
+Prior combined static: 32hub/repair locales, 1454 assertions, 64 direct-link occurrences. 53 protected visible HTML routes unchanged after normalization only of generated Radix IDs/whitespace. 20 existing noindex policies retained. No new routes.
+
+New browser: 48responsive cases (16locales×1440/390/320), 16mobile contact triples, 16no-JavaScript pages and 16localized SPA links; 0runtime/hydration errors and 0failed local resources. WhatsApp service draft context, established telephone/WhatsApp destinations, Arabic LTR phone and sanitized intent analytics verified. Three representative390px screenshots visually reviewed.
+Five-brand browser: 30 responsive, 30 interactions and 10 no-JavaScript PASS.
+Repair browser: 66 responsive, 22 no-JavaScript and 22 hub links PASS.
+Master SEO browser: 27 responsive, 17 interactions, 7 SPA checks PASS.
+Protection routing browser: 9 HTTP requests, cross-service/back/forward navigation, true404 PASS.
+PPF browser: EN/AR, 5 WhatsApp CTAs, 2 forms, 3 reply methods, desktop/mobile, validation/privacy/duplicate suppression and language round trip PASS.
+Tuning browser: 6EN/AR responsive configurator cases PASS; 62source package rows/prices retained, S63enquiry-only and DB11withheld items preserved.
+
+Harness attempts are retained: initial generated routing sync, protected generated-ID comparison and two legacy port guards. Only affected harness checks reran; no application fixes were required after the reviewed source was frozen. Final aggregate records rerun timestamps and exact logs.
+
+Safety: Browser requests allowed only loopback GET/HEAD. External requests and local write requests blocked; contact navigation prevented/window.open stubbed. No live enquiry, WhatsApp send, phone call, CRM/backend write, commit, push, deployment or publication was performed by QA.
+
+Limits: Local browser/layout checks are not field Core Web Vitals. Structured data validated locally; no Google Rich Results or URL Inspection API was invoked. Contact events are intent signals; message delivery, connected calls, GA4 ingestion and confirmed enquiries remain unverified. These results do not authorize production publication or establish the active Cloudflare deployment/rollback state.

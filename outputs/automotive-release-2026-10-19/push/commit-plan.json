@@ -1,0 +1,25 @@
+{
+  "checkedAt": "2026-10-19T07:53:36.362Z",
+  "userAuthorization": "push to mian git (interpreted as main)",
+  "branch": "main",
+  "base": "6180f453feaaf21b8c786f23bb3867a09666ed64",
+  "staged": [
+    "scripts/test-master-seo-browser.mjs",
+    "src/components/BrandServiceScope.tsx",
+    "src/components/RepairEnquiryPanel.tsx",
+    "src/data/brandServiceSprint.ts",
+    "src/data/brands.ts",
+    "src/data/priorityBrandSeo.ts",
+    "src/data/repairServiceArabic.ts",
+    "src/data/repairServiceContent.ts",
+    "src/i18n/ar-brands.ts",
+    "src/pages/BrandPage.tsx",
+    "src/pages/BrandServicePage.tsx"
+  ],
+  "sourceMatchesReviewedManifest": true,
+  "stagedMatchesFilteredSource": true,
+  "diffCheckPassed": true,
+  "statusBefore": "M outputs/seo-2026-09-16/master-validation.json\n M scripts/test-master-seo-browser.mjs\n M src/data/brands.ts\n M src/data/priorityBrandSeo.ts\n M src/i18n/ar-brands.ts\n M src/pages/BrandPage.tsx\n M src/pages/BrandServicePage.tsx\n M supabase/functions/mcp/index.ts\n?? outputs/automotive-release-2026-10-19/\n?? outputs/five-brand-service-2026-10-19/\n?? outputs/gad-posters-2026-10-07/\n?? outputs/paint-seo-2026-10-12/\n?? outputs/paint-seo-predeployment-2026-10-12/\n?? outputs/ppf-phase1-2026-10-17/baseline/pre-existing.patch\n?? outputs/ppf-phase1-2026-10-17/baseline/source/\n?? outputs/ppf-phase2-2026-10-17/baseline/source/\n?? outputs/ppf-phase2-2026-10-17/baseline/start-tracked.patch\n?? outputs/ppf-phase2-2026-10-17/tabular-work/\n?? outputs/ppf-phase3-4-2026-10-17/artifact-work/\n?? outputs/ppf-phase3-4-2026-10-17/baseline/source/\n?? outputs/ppf-phase3-4-2026-10-17/baseline/start-tracked.patch\n?? outputs/ppf-phase3-4-2026-10-17/qa/build-logs/\n?? outputs/ppf-phase3-4-2026-10-17/workbook-runtime/\n?? outputs/ppf-push-2026-10-17/\n?? outputs/repair-service-2026-10-19/\n?? outputs/t1-release-2026-10-06/\n?? outputs/t1.1/\n?? outputs/t1/README.md\n?? outputs/t1/analysis-runtime/\n?? outputs/t1/analyze-tuning-gsc.py\n?? outputs/t1/audit-t1-baseline.mjs\n?? outputs/t1/baseline/README.md\n?? outputs/t1/baseline/T1_BASELINE_HEAD.txt\n?? outputs/t1/baseline/Tuning.tsx\n?? outputs/t1/baseline/ar-tuning.html\n?? outputs/t1/baseline/git-branch.txt\n?? outputs/t1/baseline/git-log.txt\n?? outputs/t1/baseline/live-rendered.html\n?? outputs/t1/baseline/live-response.json\n?? outputs/t1/baseline/master-validation.json\n?? outputs/t1/baseline/mobile-live.jpg\n?? outputs/t1/baseline/paint-care-cluster-audit.json\n?? outputs/t1/baseline/protection-release-validation.json\n?? outputs/t1/baseline/sitemap.xml\n?? outputs/t1/baseline/sitewide-noindex-inlinks.json\n?? outputs/t1/baseline/sitewide-records.json\n?? outputs/t1/baseline/sitewide-repeated-paragraphs.json\n?? outputs/t1/baseline/sitewide-summary.json\n?? outputs/t1/baseline/standalone-router-test-drift-analysis.md\n?? outputs/t1/baseline/tuning-page-evidence.json\n?? outputs/t1/baseline/tuning.html\n?? outputs/t1/configurator-extracted.json\n?? outputs/t1/configurator-extraction-checks.json\n?? outputs/t1/current-tuning-page-audit.md\n?? outputs/t1/finalize-t1-evidence.mjs\n?? outputs/t1/gad-motors-evidence.md\n?? outputs/t1/performance-configurator-inventory.csv\n?? outputs/t1/preview-t1.mjs\n?? outputs/t1/tuning-ecosystem-affected-route-evidence.json\n?? outputs/t1/tuning-gsc-query-register.csv\n?? outputs/t1/tuning-gsc-workbook-data.json\n?? outputs/t1/tuning-gsc-workbook-scope.md\n?? outputs/t1/tuning-master-generic-ownership-assessment.csv\n?? outputs/t1/tuning-model-factual-qa.json\n?? outputs/t1/tuning-model-gsc-evidence.csv\n?? outputs/t1/tuning-model-gsc-evidence.json\n?? outputs/t1/tuning-model-page-decisions.csv\n?? outputs/t1/tuning-model-tier-rationale.md\n?? outputs/t1/tuning-supported-vehicle-whitelist.csv\n?? outputs/t1/tuning-wrong-owner-queries.csv\n?? outputs/t1/unsupported-tuning-brand-audit.md\n?? outputs/t1/validation/\n?? outputs/t1/verification/\n?? src/components/BrandServiceScope.tsx\n?? src/components/RepairEnquiryPanel.tsx\n?? src/data/brandServiceSprint.ts\n?? src/data/repairServiceArabic.ts\n?? src/data/repairServiceContent.ts",
+  "diffStat": "scripts/test-master-seo-browser.mjs   |   2 +-\n src/components/BrandServiceScope.tsx  |  29 ++++++\n src/components/RepairEnquiryPanel.tsx |  40 ++++++++\n src/data/brandServiceSprint.ts        |  67 +++++++++++++\n src/data/brands.ts                    |   2 +\n src/data/priorityBrandSeo.ts          |   2 +-\n src/data/repairServiceArabic.ts       | 171 ++++++++++++++++++++++++++++++++++\n src/data/repairServiceContent.ts      |  99 ++++++++++++++++++++\n src/i18n/ar-brands.ts                 |  74 +++++++++++++++\n src/pages/BrandPage.tsx               |  50 +++++-----\n src/pages/BrandServicePage.tsx        |  12 ++-\n 11 files changed, 521 insertions(+), 27 deletions(-)",
+  "deploymentAuthorized": false
+}

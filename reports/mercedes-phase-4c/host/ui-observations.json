@@ -1,0 +1,46 @@
+{
+  "recordedAt": "2026-10-26T11:06:03.948Z",
+  "readOnly": true,
+  "projectId": "b8255283-fdd9-4c2d-8b46-ccb596f695e1",
+  "publishedSource": {
+    "historyTitle": "Record activated Mercedes oil alias redirect",
+    "badge": "Published",
+    "displayedHistoryTime": "Oct21,10:58AM",
+    "mappedCommit": "13d1c19e99e9696ab63e5721ada18ffcfce11519",
+    "basis": "Authenticated Published badge + unique matching edit commit record + three-file code diff + in-sync current branch; no compiled-deployment attestation provided"
+  },
+  "publishPanel": {
+    "state": "Published",
+    "message": "Your website is up to date",
+    "publishChangesDisabled": true,
+    "website": "https://digitecme.com",
+    "domainCount": 3
+  },
+  "git": {
+    "repository": "hash4444/Digitec-Performance-website",
+    "branch": "main",
+    "status": "In sync with GitHub",
+    "message": "Lovable and GitHub are on the same commit",
+    "lastSyncedDisplay": "5 days ago"
+  },
+  "settings": {
+    "livePreviewEnabled": true,
+    "securityAutoFixEnabled": true,
+    "buildCommandOrRuntimeVersionExposed": false
+  },
+  "restore": {
+    "currentLatestRevertHadNoEffect": true,
+    "olderVersionConfirmationOpenedOnly": true,
+    "confirmationText": "This will revert your project to how it looked on Oct20,10:35AM. Recent changes after this point stay in the chat and can be reapplied anytime.",
+    "confirmationCancelled": true,
+    "actualRestorePerformed": false,
+    "compiledSnapshotRestoreVerified": false,
+    "backendScopeOmission": "Dialog does not specify static-only operation or backend exclusion. No restore command executed."
+  },
+  "mutationsPerformed": [],
+  "limits": [
+    "History time identifies edit time, not proven publication activation time.",
+    "No host install/build log, exactBunversion, lockselection or compiledrollbackversion was exposed.",
+    "No hidden runtime/app state, private endpoints or network interception was used."
+  ]
+}

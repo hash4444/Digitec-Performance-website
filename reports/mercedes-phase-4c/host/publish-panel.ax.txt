@@ -1,0 +1,513 @@
+Browser tab: 14, Title: "Digiec Performance Center L.L.C | Lovable", URL: "https://lovable.dev/projects/b8255283-fdd9-4c2d-8b46-ccb596f695e1".
+0 AXWebArea Digiec Performance Center L.L.C | Lovable, URL: lovable.dev/projects/b8255283…
+	1 container
+		2 link Description: Skip to chat input, Value: lovable.dev/projects/b8255283…
+		3 container
+			4 container
+				5 button Description: Open sidebar, ID: base-ui-_r_ic_
+				6 pop up button (collapsed) Digiec Performance Center L.L.C, ID: base-ui-_r_17l_, Secondary Actions: Expand
+					7 text Digiec Performance Center L.L.C
+				8 checkbox Description: Show history, Value: 0, ID: base-ui-_r_iq_
+				9 button Description: Hide chat panel, ID: base-ui-_r_it_
+				10 tab group
+					11 tab (selected, settable, boolean) Description: Preview, Value: 1, ID: base-ui-_r_17q_
+					12 tab (selectable, settable, boolean) Description: Files, Value: 0, ID: base-ui-_r_17s_
+					13 tab (selectable, settable, boolean) Description: Code, Value: 0, ID: base-ui-_r_17u_
+					14 tab (selectable, settable, boolean) Description: More, Value: 0, ID: base-ui-_r_180_
+				15 container
+					16 button Description: Desktop view, ID: base-ui-_r_12h_
+					17 container
+						18 button Description: Refresh, ID: base-ui-_r_12j_
+						19 pop up button (collapsed) Description: Homepage — current page, switch pages, ID: base-ui-_r_12m_, Secondary Actions: Expand
+					20 link Description: Open in new tab, Value: preview--dubai-performance-ar…, ID: base-ui-_r_12v_
+				21 container
+					22 pop up button (collapsed) Share, ID: base-ui-_r_133_, Secondary Actions: Expand
+					23 pop up button (expanded) Description: Publish, ID: publish-menu, Secondary Actions: Collapse
+					485 container
+						486 container
+							487 heading Published, Value: 3
+								488 text Published
+							489 button Description: 1.3k visits, ID: base-ui-_r_239_
+							490 pop up button (collapsed) Description: Published site actions, ID: base-ui-_r_23d_, Secondary Actions: Expand
+							491 text Your website is up to date
+							492 container
+								493 text Website URL
+								494 button Manage 3 domains, ID: base-ui-_r_23k_
+								495 button Description: Edit icon and details, ID: base-ui-_r_23q_
+								496 link Description: digitecme.com, Value: digitecme.com/
+								497 button Description: Copy URL, ID: base-ui-_r_23t_
+								498 button Visible to anyone with the link, ID: base-ui-_r_23v_
+								499 button No security issues found
+								500 button (disabled) Publish changes, ID: base-ui-_r_245_
+			24 container
+				25 container Description: Chat, ID: sidebar-panel
+					26 container
+						27 container
+							28 container
+								29 container main:agent#00000000142834#gcm:COPLTUYE
+									30 container
+										31 text Pushed from  GitHub SEO: complete G2-G4 problem, protection and sitewide readiness
+										32 button Details
+										33 checkbox Preview, Value: 0, ID: base-ui-_r_1ke_
+									34 button (collapsed) Description: Revert to this version, ID: base-ui-_r_1ki_, Secondary Actions: Expand
+									35 pop up button (collapsed) Description: More options, ID: base-ui-_r_1kn_, Secondary Actions: Expand
+								36 container
+									37 text Oct 5 at 10:30 AM
+									38 text Fix error
+									39 text Uncaught TypeError: Failed to fetch dynamically imported module: https://id-preview--b8255283-fdd9-4c2d-8b46-ccb596f695e1.lovable.app/assets/Index-sgBwX6pa.js
+{
+  "timestamp": 1791181828793,
+  "error_type": "RUNTIME_ERROR",
+  "filename": "https://[redacted].lovable.app/assets/index-CgzJn7mm.js",
+  "lineno": 41,
+  "colno": 41115,
+  "stack": "TypeError: Failed to fetch dynamically imported module: https://id-preview--b8255283-fdd9-4c2d-8b46-ccb596f695e1.lovable.app/assets/Index-sgBwX6pa.js",
+  "has_blank_screen": true
+}
+									40 button (collapsed) Show more, Secondary Actions: Expand
+									41 button Description: Copy message link, ID: base-ui-_r_1kt_
+								42 container main:agent#00000000142836#ast:GP7JDQAC
+									43 button (collapsed) Thought for 4s, Secondary Actions: Expand
+									44 text This happens when the preview gets updated while a tab is still open: the old page asks for a file that no longer exists. I'll add a one-time automatic reload so the page picks up the new version instead of showing a blank screen.
+									45 container
+										46 text Added a one-time auto reload for outdated pages and checked the homepage loads
+										47 button Description: Bookmark in history, ID: base-ui-_r_1ld_
+										48 button Details
+										49 checkbox Preview, Value: 0, ID: base-ui-_r_1m0_
+									50 text The blank screen should be fixed. When the site has been updated while a page is still open, the page now reloads once by itself and shows the latest version.
+									51 text The homepage opens normally and shows no errors. I couldn't reproduce the exact blank screen, because it only happens when someone already has the page open during an update. So the automatic reload itself hasn't been tested yet.
+									52 text If you still see a blank page right now, refresh it once.
+									53 button (collapsed) Description: Revert to this version, ID: base-ui-_r_1m6_, Secondary Actions: Expand
+									54 checkbox Description: Helpful, Value: 0, ID: base-ui-_r_1m9_
+									55 checkbox Description: Not helpful, Value: 0, ID: base-ui-_r_1mc_
+									56 button Description: Copy message, ID: base-ui-_r_1mf_
+									57 pop up button (collapsed) Description: More options, ID: base-ui-_r_1mk_, Secondary Actions: Expand
+								58 container main:agent#00000000142889#gcm:BQIKSDOR
+									59 container
+										60 text Pushed from  GitHub SEO: complete T1 tuning authority and factual verification
+										61 button Details
+										62 checkbox Preview, Value: 0, ID: base-ui-_r_1np_
+									63 button (collapsed) Description: Revert to this version, ID: base-ui-_r_1nt_, Secondary Actions: Expand
+									64 pop up button (collapsed) Description: More options, ID: base-ui-_r_1o2_, Secondary Actions: Expand
+								65 container main:agent#00000000142890#gcm:HLSMF7UD
+									66 container
+										67 text Pushed from  GitHub SEO: optimize bilingual paint protection pages and theme hydration
+										68 button Details
+										69 checkbox Preview, Value: 0, ID: base-ui-_r_1p7_
+									70 button (collapsed) Description: Revert to this version, ID: base-ui-_r_1pb_, Secondary Actions: Expand
+									71 pop up button (collapsed) Description: More options, ID: base-ui-_r_1pg_, Secondary Actions: Expand
+								72 container main:agent#00000000142891#gcm:VL6QYOXT
+									73 container
+										74 text Pushed from  GitHub SEO: complete PPF growth phases 1-4
+										75 button Details
+										76 checkbox Preview, Value: 0, ID: base-ui-_r_1ql_
+									77 button (collapsed) Description: Revert to this version, ID: base-ui-_r_1qp_, Secondary Actions: Expand
+									78 pop up button (collapsed) Description: More options, ID: base-ui-_r_1qu_, Secondary Actions: Expand
+								79 container main:agent#00000000142892#gcm:OEQYBFKU
+									80 container
+										81 text Pushed from  GitHub SEO: improve five-brand service and repair enquiries
+										82 button Details
+										83 checkbox Preview, Value: 0, ID: base-ui-_r_1s3_
+									84 button (collapsed) Description: Revert to this version, ID: base-ui-_r_1s7_, Secondary Actions: Expand
+									85 pop up button (collapsed) Description: More options, ID: base-ui-_r_1sc_, Secondary Actions: Expand
+								86 container main:agent#00000000142893#gcm:H6PXRE74
+									87 container
+										88 text Pushed from  GitHub SEO: improve diagnostics, AC and electronics service enquiries
+										89 button Details
+										90 checkbox Preview, Value: 0, ID: base-ui-_r_1th_
+									91 button (collapsed) Description: Revert to this version, ID: base-ui-_r_1tl_, Secondary Actions: Expand
+									92 pop up button (collapsed) Description: More options, ID: base-ui-_r_1tq_, Secondary Actions: Expand
+								93 container main:agent#00000000142894#gcm:YTB6BV7K
+									94 container
+										95 text Pushed from  GitHub Add Mercedes service SEO campaign and About Us video strip
+										96 button Details
+										97 checkbox Preview, Value: 0, ID: base-ui-_r_1uv_
+									98 button (collapsed) Description: Revert to this version, ID: base-ui-_r_1v3_, Secondary Actions: Expand
+									99 pop up button (collapsed) Description: More options, ID: base-ui-_r_1v8_, Secondary Actions: Expand
+								100 container main:agent#00000000142895#gcm:TNUSIRRW
+									101 container
+										102 text Pushed from  GitHub Record activated Mercedes oil alias redirect
+										103 button Details
+										104 checkbox (disabled) Previewing, Value: 1, ID: base-ui-_r_20d_
+									105 pop up button (collapsed) Description: Undo latest edit, ID: base-ui-_r_20h_, Secondary Actions: Expand
+									106 pop up button (collapsed) Description: More options, ID: base-ui-_r_20p_, Secondary Actions: Expand
+								107 container
+									108 text is there an seo complications that isnt getting me top 3 Oct 22 at 1:58 PM
+									109 button Description: Copy message, ID: base-ui-_r_1hp_
+									110 button Description: Copy message link, ID: base-ui-_r_1hs_
+									111 button Description: Edit message, ID: base-ui-_r_1hv_
+								112 container main:agent#00000000142897#ast:AIWXKENF
+									113 button (collapsed) Checked Google visibility, Secondary Actions: Expand
+									114 text Nothing is blocking you technically. Google has your homepage indexed, it crawled it yesterday, and your average position improved from 21.7 to 17.3 over the last 28 days (Search Console). A few things are holding you back from the top 3:
+									115 text What's working
+									116 content list
+										117 container
+											118 AXListMarker • 
+											119 text "digitec performance center": position 3.1
+										120 container
+											121 AXListMarker • 
+											122 text "mercedes repair dubai": position 3.9, so you're nearly there
+										123 container
+											124 AXListMarker • 
+											125 text Mercedes engine overheating guide: position 5
+									126 text What's holding you back
+									127 content list
+										128 container
+											129 AXListMarker 1. 
+											130 text Your old Mercedes links still don't redirect.  They still load as normal pages, so Google splits its ranking signals between the old pages and the new Mercedes page. That's likely why "mercedes service dubai" sits at position 13 while "mercedes repair dubai" is near 4. This gets fixed once the Lovable proxy setting saves and I switch the Cloudflare proxy on.
+										131 container
+											132 AXListMarker 2. 
+											133 text Very few people click your Mercedes page.  It showed up 4,119 times at about position 9 but got only 10 clicks (0.24%). Normal for that position is 2 to 4%. A sharper title and description in search results would help, and more clicks also help rankings.
+										134 container
+											135 AXListMarker 3. 
+											136 text The site has too many similar pages.  About 1,157 pages are listed for Google, and 984 of them are brand plus service combinations with very similar text. Google spreads its trust thin and ranks them around positions 15 to 24 (Chevrolet, GMC, Audi). Cutting these down to the brands that bring real customers would make the main pages stronger.
+										137 container
+											138 AXListMarker 4. 
+											139 text Your reputation outside the site is the biggest gap.  The top 3 spots for "car service Dubai" usually go to workshops with many fresh Google reviews, an active Business Profile and mentions on other sites like YallaMotor or Time Out. That's not something I can change from the site.
+									140 text Semrush data is also available if you want me to see which competitors outrank you and why.
+									141 text The fastest win is point 2. Should I rewrite the search titles and descriptions for your Mercedes, tuning, Chevrolet, GMC and Audi pages?
+									142 pop up button (collapsed) Description: Undo latest edit, ID: base-ui-_r_1ii_, Secondary Actions: Expand
+									143 checkbox Description: Helpful, Value: 0, ID: base-ui-_r_1io_
+									144 checkbox Description: Not helpful, Value: 0, ID: base-ui-_r_1ir_
+									145 button Description: Copy message, ID: base-ui-_r_1iu_
+									146 pop up button (collapsed) Description: More options, ID: base-ui-_r_1j3_, Secondary Actions: Expand
+						147 container
+							148 button See who visits your app
+							149 button Guide customers to services, ID: base-ui-_r_19a_
+							150 button Improve search snippets, ID: base-ui-_r_19d_
+							151 button Strengthen key brand pages, ID: base-ui-_r_19g_
+						152 container
+							153 image Information
+							154 text Get notified when Lovable finishes
+							155 pop up button (collapsed) Description: More info, ID: base-ui-_r_22m_, Secondary Actions: Expand
+							156 button Description: Dismiss notice, ID: base-ui-_r_22s_
+							157 button Enable, ID: base-ui-_r_22v_
+						158 container chat-input
+							159 text entry area (settable) Description: Ask Lovable..., Value: 
+
+							160 pop up button (collapsed) Description: Chat actions, Secondary Actions: Expand
+							161 pop up button (collapsed) Build, ID: base-ui-_r_o9_, Secondary Actions: Expand
+							162 button Description: Transcribe, ID: base-ui-_r_oe_
+							163 button (disabled) Description: Send message, ID: chatinput-send-message-button
+				164 splitter 30
+				165 container Description: Preview, ID: preview-panel
+					166 container
+						167 container
+							168 container
+								501 container Description: Project preview, ID: live-preview-panel
+									502 AXWebArea Digi-Tec Performance Center | Independent Car Workshop Dubai, URL: b8255283-fdd9-4c2d-8b46-ccb59…
+										503 container root
+											504 container Notifications (F8)
+												505 content list
+											506 container
+												507 link Description: DIGI-TEC home, Value: b8255283-fdd9-4c2d-8b46-ccb59…
+												508 button (collapsed) Menu, Secondary Actions: Expand
+													509 image
+													510 text Menu
+												511 button Description: Use light theme, Help: Light theme
+													512 image
+												513 button (collapsed) Description: Language selection, Secondary Actions: Expand
+													514 text EN
+													515 image
+											516 container main-content
+												517 container
+													518 text ESTABLISHED IN 2002 · AL QUOZ, DUBAI
+													519 heading DIGI-TEC Performance Center, Value: 1
+														520 text D IGI-TEC Performance Center
+													521 heading Independent Car Workshop in Al Quoz, Dubai, Value: 2
+														522 text Independent Car Workshop in Al Quoz, Dubai
+													523 text Independent vehicle maintenance, diagnostics, repair, body work and performance-project support from Digi-Tec Performance Center in Al Quoz Industrial Area 3.
+													524 link Description: Book Appointment, Value: wa.me/97143402223
+													525 link Description: Explore Services, Value: b8255283-fdd9-4c2d-8b46-ccb59…
+												526 text Since 2002 independent workshop European & luxury service and repair Inspection-led recommendations Al Quoz Dubai workshop
+												527 container
+													528 text OUR EXPERTISE
+													529 heading Care for every part of the vehicle., Value: 2
+														530 text Care for every part of the vehicle.
+													531 text Digi-Tec provides maintenance, diagnostics, mechanical and electrical repair, body work and vehicle-specific performance projects from its Al Quoz workshop.
+													532 link Value: b8255283-fdd9-4c2d-8b46-ccb59…, Description: Mercedes-AMG engine prepared for performance tuning at DIGI-TEC Dubai 01 Performance Tuning ECU and supporting-hardware projects planned around the vehicle, fuel, intended use and current condition. Explore
+													533 link Value: b8255283-fdd9-4c2d-8b46-ccb59…, Description: Aesthetic Enhancement - Brabus G-Class 02 Aesthetic Enhancement Body, exterior and wheel projects assessed for fitment, condition and the owner’s requested specification.
+													534 link Value: b8255283-fdd9-4c2d-8b46-ccb59…, Description: Precision Maintenance - Engine Oil Service 03 Precision Maintenance Scheduled maintenance and fault inspection for the mechanical, electrical, cooling, brake and comfort systems.
+												535 container brands
+													536 text MARQUE SPECIALISTS
+													537 heading Brands we serve, Value: 2
+														538 text Brands we serve
+													539 text Precision service for the world's most prestigious automotive marques.
+													540 link Description: Explore all brands, Value: b8255283-fdd9-4c2d-8b46-ccb59…
+													541 container Car brands serviced by Digi-Tec
+														542 link Description: Mercedes-Benz service and repair in Dubai, Value: b8255283-fdd9-4c2d-8b46-ccb59…
+														543 link Description: Maybach service and repair in Dubai, Value: b8255283-fdd9-4c2d-8b46-ccb59…
+														544 link Description: Porsche service and repair in Dubai, Value: b8255283-fdd9-4c2d-8b46-ccb59…
+														545 link Description: Audi service and repair in Dubai, Value: b8255283-fdd9-4c2d-8b46-ccb59…
+														546 link Description: BMW service and repair in Dubai, Value: b8255283-fdd9-4c2d-8b46-ccb59…
+														547 link Description: Lamborghini service and repair in Dubai, Value: b8255283-fdd9-4c2d-8b46-ccb59…
+														548 link Description: Bentley service and repair in Dubai, Value: b8255283-fdd9-4c2d-8b46-ccb59…
+														549 link Description: McLaren service and repair in Dubai, Value: b8255283-fdd9-4c2d-8b46-ccb59…
+														550 link Description: Ferrari service and repair in Dubai, Value: b8255283-fdd9-4c2d-8b46-ccb59…
+														551 link Description: Bugatti service and repair in Dubai, Value: b8255283-fdd9-4c2d-8b46-ccb59…
+														552 link Description: Land Rover service and repair in Dubai, Value: b8255283-fdd9-4c2d-8b46-ccb59…
+														553 link Description: Rolls-Royce service and repair in Dubai, Value: b8255283-fdd9-4c2d-8b46-ccb59…
+														554 link Description: Aston Martin service and repair in Dubai, Value: b8255283-fdd9-4c2d-8b46-ccb59…
+														555 link Description: Maserati service and repair in Dubai, Value: b8255283-fdd9-4c2d-8b46-ccb59…
+														556 link Description: Cadillac service and repair in Dubai, Value: b8255283-fdd9-4c2d-8b46-ccb59…
+														557 link Description: BYD service and repair in Dubai, Value: b8255283-fdd9-4c2d-8b46-ccb59…
+														558 link Description: Chevrolet service and repair in Dubai, Value: b8255283-fdd9-4c2d-8b46-ccb59…
+														559 link Description: Chrysler service and repair in Dubai, Value: b8255283-fdd9-4c2d-8b46-ccb59…
+														560 link Description: Corvette service and repair in Dubai, Value: b8255283-fdd9-4c2d-8b46-ccb59…
+														561 link Description: Dodge service and repair in Dubai, Value: b8255283-fdd9-4c2d-8b46-ccb59…
+														562 link Description: Ford service and repair in Dubai, Value: b8255283-fdd9-4c2d-8b46-ccb59…
+														563 link Description: Genesis service and repair in Dubai, Value: b8255283-fdd9-4c2d-8b46-ccb59…
+														564 link Description: GMC service and repair in Dubai, Value: b8255283-fdd9-4c2d-8b46-ccb59…
+														565 link Description: Hummer service and repair in Dubai, Value: b8255283-fdd9-4c2d-8b46-ccb59…
+														566 link Description: Jaguar service and repair in Dubai, Value: b8255283-fdd9-4c2d-8b46-ccb59…
+														567 link Description: Jeep service and repair in Dubai, Value: b8255283-fdd9-4c2d-8b46-ccb59…
+														568 link Description: Jetour service and repair in Dubai, Value: b8255283-fdd9-4c2d-8b46-ccb59…
+														569 link Description: Koenigsegg service and repair in Dubai, Value: b8255283-fdd9-4c2d-8b46-ccb59…
+														570 link Description: Lincoln service and repair in Dubai, Value: b8255283-fdd9-4c2d-8b46-ccb59…
+														571 link Description: MINI service and repair in Dubai, Value: b8255283-fdd9-4c2d-8b46-ccb59…
+														572 link Description: Pagani service and repair in Dubai, Value: b8255283-fdd9-4c2d-8b46-ccb59…
+														573 link Description: ROX service and repair in Dubai, Value: b8255283-fdd9-4c2d-8b46-ccb59…
+														574 link Description: Subaru service and repair in Dubai, Value: b8255283-fdd9-4c2d-8b46-ccb59…
+														575 link Description: Tesla service and repair in Dubai, Value: b8255283-fdd9-4c2d-8b46-ccb59…
+														576 link Description: Volkswagen service and repair in Dubai, Value: b8255283-fdd9-4c2d-8b46-ccb59…
+														577 link Description: Volvo service and repair in Dubai, Value: b8255283-fdd9-4c2d-8b46-ccb59…
+														578 link Description: Range Rover service and repair in Dubai, Value: b8255283-fdd9-4c2d-8b46-ccb59…
+														579 link Description: Defender service and repair in Dubai, Value: b8255283-fdd9-4c2d-8b46-ccb59…
+													580 text Choose your marque to explore specialist service, repair and diagnostics in Dubai.
+												581 container
+													582 text WORKSHOP SERVICES
+													583 heading Complete care, clearly organised., Value: 2
+														584 text Complete care, clearly organised.
+													585 text Maintenance, diagnostics and repair for the systems that keep your vehicle performing as intended.
+													586 container Core Mechanical Services
+														587 text 0 1
+														588 heading Core Mechanical Services, Value: 3, ID: service-category-0
+															589 text Core Mechanical Services
+														590 text 12  services
+														591 container
+															592 link Value: b8255283-fdd9-4c2d-8b46-ccb59…, Description: Mercedes Repair in Dubai Mercedes Repair in Dubai Mercedes-Benz diagnostics, maintenance, and repair in Dubai.
+															593 link Value: b8255283-fdd9-4c2d-8b46-ccb59…, Description: Mechanical Repair in Dubai Mechanical Repair in Dubai Engine, gearbox, and drivetrain inspection and repair in Dubai.
+															594 link Value: b8255283-fdd9-4c2d-8b46-ccb59…, Description: Transmission Repair & Gearbox Repair in Dubai Transmission Repair & Gearbox Repair in Dubai Gearbox inspection and transmission repair for supported vehicles in Dubai.
+															595 link Value: b8255283-fdd9-4c2d-8b46-ccb59…, Description: Suspension Repair in Dubai Suspension Repair in Dubai Suspension and air-suspension inspection and repair in Dubai.
+															596 link Value: b8255283-fdd9-4c2d-8b46-ccb59…, Description: Steering Repair in Dubai Steering Repair in Dubai Power-steering, rack, linkage, and EPS inspection in Dubai.
+															597 link Value: b8255283-fdd9-4c2d-8b46-ccb59…, Description: Brake Repair in Dubai Brake Repair in Dubai Brake pads, discs, calipers, fluid, and supported ABS diagnostics in Dubai.
+															598 link Value: b8255283-fdd9-4c2d-8b46-ccb59…, Description: Car Service in Dubai for Mercedes, BMW, Audi & Porsche Car Service in Dubai for Mercedes, BMW, Audi & Porsche Vehicle-specific routine maintenance and scheduled servicing in Dubai.
+															599 link Value: b8255283-fdd9-4c2d-8b46-ccb59…, Description: Car Oil Change in Dubai Car Oil Change in Dubai Vehicle-specific car oil and filter service in Dubai.
+															600 link Value: b8255283-fdd9-4c2d-8b46-ccb59…, Description: Mercedes Oil Change in Dubai Mercedes Oil Change in Dubai Mercedes-Benz oil change service using the oil approval specified for the exact engine.
+															601 link Value: b8255283-fdd9-4c2d-8b46-ccb59…, Description: Tyre Repair Dubai Tyre Repair Dubai Puncture assessment, tyre replacement and wheel alignment in Dubai.
+															602 link Value: b8255283-fdd9-4c2d-8b46-ccb59…, Description: Car Battery Replacement in Dubai Car Battery Replacement in Dubai Battery testing and vehicle-specific replacement in Dubai.
+															603 link Value: b8255283-fdd9-4c2d-8b46-ccb59…, Description: Exhaust Repair in Dubai Exhaust Repair in Dubai Exhaust leak, muffler, catalyst, sensor, and DPF inspection in Dubai.
+													604 container Diagnostics & Electrical
+														605 text 0 2
+														606 heading Diagnostics & Electrical, Value: 3, ID: service-category-1
+															607 text Diagnostics & Electrical
+														608 text 6  services
+														609 container
+															610 link Value: b8255283-fdd9-4c2d-8b46-ccb59…, Description: Car Diagnostics & ECU Programming in Dubai Car Diagnostics & ECU Programming in Dubai Vehicle-specific fault scanning, supported ECU functions, resets and digital system inspection in Dubai.
+															611 link Value: b8255283-fdd9-4c2d-8b46-ccb59…, Description: Car Electrical Repair in Dubai Car Electrical Repair in Dubai Electrical fault tracing, car wiring repair and supported electronic-system diagnosis in Dubai.
+															612 link Value: b8255283-fdd9-4c2d-8b46-ccb59…, Description: Fuel System Repair in Dubai Fuel System Repair in Dubai Injector, fuel-pump, and fuel-pressure inspection and repair in Dubai.
+															613 link Value: b8255283-fdd9-4c2d-8b46-ccb59…, Description: Cadillac CUE Screen Repair & Replacement in Dubai Cadillac CUE Screen Repair & Replacement in Dubai Restore usable touchscreen controls with a repair selected from the fault and the fitted CUE system.
+															614 link Value: b8255283-fdd9-4c2d-8b46-ccb59…, Description: Head Unit & Mercedes COMAND Repair in Dubai Head Unit & Mercedes COMAND Repair in Dubai Infotainment fault finding for screens, audio and connectivity, with repair options matched to the installed system.
+															615 link Value: b8255283-fdd9-4c2d-8b46-ccb59…, Description: Mercedes Stereo & Audio Upgrades in Dubai Mercedes Stereo & Audio Upgrades in Dubai Plan a sound-system upgrade around your listening priorities, the equipment fitted and the controls you want to retain.
+													616 container Comfort Systems
+														617 text 0 3
+														618 heading Comfort Systems, Value: 3, ID: service-category-2
+															619 text Comfort Systems
+														620 text 2  services
+														621 link Value: b8255283-fdd9-4c2d-8b46-ccb59…, Description: Car AC Repair in Dubai: Auto Air Conditioning Service Car AC Repair in Dubai: Auto Air Conditioning Service Auto air-conditioning inspection, refrigerant service, and compressor repair in Dubai.
+														622 link Value: b8255283-fdd9-4c2d-8b46-ccb59…, Description: Soft-Close Door Repair & Installation in Dubai Soft-Close Door Repair & Installation in Dubai Inspect a door that no longer pulls closed, or ask whether installation is compatible with your vehicle.
+													623 container Body & Visual Work
+														624 text 0 4
+														625 heading Body & Visual Work, Value: 3, ID: service-category-3
+															626 text Body & Visual Work
+														627 text 5  services
+														628 container
+															629 link Value: b8255283-fdd9-4c2d-8b46-ccb59…, Description: Car Body Repair in Dubai Car Body Repair in Dubai Dent, bumper, scratch, panel, and minor collision repair in Dubai.
+															630 link Value: b8255283-fdd9-4c2d-8b46-ccb59…, Description: Car Paint Protection in Dubai Car Paint Protection in Dubai Compare PPF and ceramic coating, with polishing assessed separately for existing paint marks.
+															631 link Value: b8255283-fdd9-4c2d-8b46-ccb59…, Description: Paint Protection Film (PPF) in Dubai Paint Protection Film (PPF) in Dubai Paint protection film installation with vehicle-specific coverage options in Dubai.
+															632 link Value: b8255283-fdd9-4c2d-8b46-ccb59…, Description: Ceramic Coating Dubai Ceramic Coating Dubai Ceramic coating, paint preparation and optional surface coverage for luxury cars in Dubai.
+															633 link Value: b8255283-fdd9-4c2d-8b46-ccb59…, Description: Car Polishing & Paint Correction Dubai Car Polishing & Paint Correction Dubai Assess swirl marks, light scratches and dull paint before choosing polishing or correction.
+													634 link Description: View all services, Value: b8255283-fdd9-4c2d-8b46-ccb59…
+												635 container
+													636 text THE DIGI-TEC STANDARD
+													637 heading Experience shaped by a clear process., Value: 2
+														638 text Experience shaped by a clear process.
+													639 text An independent Dubai workshop for maintenance, diagnostics, repair, body work and vehicle-specific performance projects, established in 2002. 2002
+													640 heading Established in Dubai, Value: 3
+														641 text Established in Dubai
+													642 text Serving vehicle owners from our Al Quoz workshop since 2002 Al Quoz
+													643 heading Dubai Workshop, Value: 3
+														644 text Dubai Workshop
+													645 text Located in Al Quoz Industrial Area 3 Inspect
+													646 heading Start With the Vehicle, Value: 3
+														647 text Start With the Vehicle
+													648 text The reported concern and current condition guide the next step Explain
+													649 heading Clear Repair Scope, Value: 3
+														650 text Clear Repair Scope
+													651 text Findings and proposed work are discussed before approval
+													652 heading Our workshop in Al Quoz, Dubai, Value: 3
+														653 text Our workshop in Al Quoz, Dubai
+													654 text Visit Digi-Tec Performance Center at Al Quoz Industrial Area 3. Contact the team with your vehicle details so the appropriate inspection or service can be arranged. Advanced Diagnostics Fault finding based on the reported concern and vehicle condition Workshop Services Maintenance plus mechanical, electrical and body repair Project Planning Vehicle-specific discussion before performance or conversion work
+												655 container Our customers, in their own words.
+													656 text REAL GOOGLE REVIEWS
+													657 heading Our customers, in their own words., Value: 2, ID: google-reviews-heading
+														658 text Our customers, in their own words.
+													659 link Description: 4.4 from 155 reviews, Value: google.com/maps/place/Digitec…
+													660 container
+														808 container 4 of 10
+															809 container 5 stars
+															810 container
+																811 text “ Clean, highly professional work, and Samer’s manner was excellent. ”
+															812 container
+																813 text Moh. Khalifa GOOGLE ·  2021
+														814 container 5 of 10
+															815 container 5 stars
+															816 container
+																817 text “ An excellent company, especially Samer. ”
+															818 container
+																819 text Mohammad Al alawi GOOGLE ·  2025
+														820 container 6 of 10
+															821 container 5 stars
+															822 container
+																823 text “ A top-level car repair garage. ”
+															824 container
+																825 text Ebrahim Rashad GOOGLE ·  2019
+													680 text Excerpts from public reviews on the DIGI-TEC Google profile.
+													681 button Previous reviews
+														682 image
+													683 text 2  /  4
+													684 button Next reviews
+														685 image
+													686 button Pause automatic review rotation
+												687 container What is Digi-Tec Performance Centre?
+													688 text QUICK ANSWER
+													689 heading What is Digi-Tec Performance Centre?, Value: 2
+														690 text What is Digi-Tec Performance Centre?
+													691 text Digi-Tec Performance Centre is an independent car workshop in Dubai, established in 2002 and located in Al Quoz Industrial Area 3. Listed service categories include scheduled maintenance, vehicle inspection and diagnostics, mechanical and electrical repair, engine, transmission, suspension, cooling and brake work, module programming, body repair, paintwork, detailing and performance-project consultation. Owners can discuss the vehicle, symptoms and requested work before agreeing the repair scope. Call or WhatsApp +971 4 340 2223.
+													692 content list
+														693 text Established in Dubai since 2002
+														694 text Inspection and service for Mercedes-Benz, European and luxury vehicles
+														695 text Mechanical and electrical fault diagnosis and repair
+														696 text Engine, transmission, suspension, cooling and braking system services
+														697 text ECU and electronic module diagnostics, coding and programming
+														698 text Body repair, paintwork and vehicle restoration
+														699 text Vehicle-specific performance-project consultation
+														700 text Inspection findings and recommended work explained before repairs begin
+														701 text Al Quoz Industrial Area 3, Dubai
+														702 text Call or WhatsApp +971 4 340 2223
+												703 container
+													704 text ANSWERS
+													705 heading Frequently Asked Questions, Value: 2
+														706 text Frequently Asked Questions
+													707 text Browse by topic to find answers about our services, expertise, and process.
+													708 button General(4)
+														709 text General
+														710 text (
+														711 text 4
+														712 text )
+													713 button Car Service(8)
+														714 text Car Service
+														715 text (
+														716 text 8
+														717 text )
+													718 button Performance & Tuning(2)
+														719 text Performance & Tuning
+														720 text (
+														721 text 2
+														722 text )
+													723 button Car AC Repair(7)
+														724 text Car AC Repair
+														725 text (
+														726 text 7
+														727 text )
+													728 button Location & Service(3)
+														729 text Location & Service
+														730 text (
+														731 text 3
+														732 text )
+													733 heading How often should I service my luxury vehicle in Dubai?, Value: 3
+														734 button (collapsed) How often should I service my luxury vehicle in Dubai?, ID: radix-:r0:, Secondary Actions: Expand
+															735 text How often should I service my luxury vehicle in Dubai?
+															736 image
+													737 heading What are signs my vehicle needs immediate attention?, Value: 3
+														738 button (collapsed) What are signs my vehicle needs immediate attention?, ID: radix-:r2:, Secondary Actions: Expand
+															739 text What are signs my vehicle needs immediate attention?
+															740 image
+													741 heading What makes DIGI-TEC different from regular garages?, Value: 3
+														742 button (collapsed) What makes DIGI-TEC different from regular garages?, ID: radix-:r4:, Secondary Actions: Expand
+															743 text What makes DIGI-TEC different from regular garages?
+															744 image
+													745 heading Can you repair hybrid and electric luxury cars?, Value: 3
+														746 button (collapsed) Can you repair hybrid and electric luxury cars?, ID: radix-:r6:, Secondary Actions: Expand
+															747 text Can you repair hybrid and electric luxury cars?
+															748 image
+													749 heading Still have questions?, Value: 3
+														750 text Still have questions?
+													751 link Description: Chat with us now, Value: wa.me/97143402223
+												752 container
+													753 text CONTACT THE WORKSHOP
+													754 heading Tell us about your vehicle., Value: 2
+														755 text Tell us about your vehicle.
+													756 text Share the make, model, year and the service or symptoms you want checked. The Digi-Tec team can help arrange the appropriate workshop visit.
+													757 link Description: Request an appointment, Value: wa.me/97143402223
+													758 link Description: Call +971 4 340 2223, Value: tel:+97143402223
+													759 text 0 1
+													760 heading Share the details, Value: 3
+														761 text Share the details
+													762 text Make, model, year and current concern 0 2
+													763 heading Arrange the visit, Value: 3
+														764 text Arrange the visit
+													765 text Choose the appropriate workshop inspection or service 0 3
+													766 heading Review the scope, Value: 3
+														767 text Review the scope
+													768 text Discuss findings and proposed work before approval
+											769 container
+												770 container DIGI-TEC Performance Center
+													771 link Description: DIGI-TEC Performance Center, Value: b8255283-fdd9-4c2d-8b46-ccb59…
+													772 text Independent luxury and performance car workshop in Al Quoz, Dubai. Specialist diagnostics, repair, maintenance and performance upgrades since 2002.
+													773 link Description: Get directions to our workshop →, Value: maps.google.com/
+												774 container Quick links
+													775 heading Quick Links, Value: 2
+														776 text Quick Links
+													777 link Description: About Us, Value: b8255283-fdd9-4c2d-8b46-ccb59…
+													778 link Description: All Services, Value: b8255283-fdd9-4c2d-8b46-ccb59…
+													779 link Description: Brands We Service, Value: b8255283-fdd9-4c2d-8b46-ccb59…
+													780 link Description: Performance Tuning, Value: b8255283-fdd9-4c2d-8b46-ccb59…
+													781 link Description: VRX, Value: b8255283-fdd9-4c2d-8b46-ccb59…
+													782 link Description: Workshop Guides, Value: b8255283-fdd9-4c2d-8b46-ccb59…
+												783 container Selected services
+													784 heading Popular Services, Value: 2
+														785 text Popular Services
+													786 link Description: Mercedes Repair, Value: b8255283-fdd9-4c2d-8b46-ccb59…
+													787 link Description: Diagnostics & Programming, Value: b8255283-fdd9-4c2d-8b46-ccb59…
+													788 link Description: Oil Change Service, Value: b8255283-fdd9-4c2d-8b46-ccb59…
+													789 link Description: Transmission Repair, Value: b8255283-fdd9-4c2d-8b46-ccb59…
+													790 link Description: Brake Repair, Value: b8255283-fdd9-4c2d-8b46-ccb59…
+													791 link Description: Performance Tuning, Value: b8255283-fdd9-4c2d-8b46-ccb59…
+												792 container Contact
+													793 heading Contact, Value: 2
+														794 text Contact
+													795 text Dubai Workshop Warehouses 11–15, Al Quoz Industrial Area 3
+													796 text Dubai, UAE
+													797 container
+														798 link Description: +971 4 340 2223, Value: tel:+97143402223
+														799 link Description: info@digitecme.com, Value: mailto:info@digitecme.com
+													800 container Social media
+														801 link Description: DIGI-TEC on Instagram, Value: instagram.com/digi_tec/
+														802 link Description: DIGI-TEC on Facebook, Value: facebook.com/Digitecme/
+												803 text © 2026  D IGI-TEC Performance Center. All rights reserved.
+												804 link Description: FAQ, Value: b8255283-fdd9-4c2d-8b46-ccb59…
+												805 link Description: Sitemap, Value: b8255283-fdd9-4c2d-8b46-ccb59…
+												806 link Description: Privacy Policy, Value: b8255283-fdd9-4c2d-8b46-ccb59…
+											807 button (collapsed) Description: Contact Digi-Tec — call or message us, Secondary Actions: Expand
+						476 toolbar Preview interactions
+							477 container
+								478 checkbox Description: Select elements, Value: 0
+								479 checkbox Description: Edit text inline, Value: 0
+								480 checkbox Description: Draw annotation, Value: 0
+								481 checkbox Description: Add a comment, Value: 0
+							482 container
+								483 pop up button (collapsed) Description: Toolbar options, ID: base-ui-_r_193_, Secondary Actions: Expand
+								484 button Description: Minimize toolbar, ID: base-ui-_r_195_
+
+The focused UI element is 485 container

@@ -1,0 +1,28 @@
+{
+  "checkedAt": "2026-10-19T07:37:52.663Z",
+  "output": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\automotive-release-2026-10-19\\deployment\\snapshots\\2026-10-19T07-37-51-937Z.local",
+  "methods": [
+    "GET"
+  ],
+  "remoteMutations": 0,
+  "requests": 1,
+  "cloudflareSnapshotComplete": false,
+  "originSnapshotComplete": false,
+  "releaseAllowed": false,
+  "reason": "Read-only snapshot/preflight cannot grant release authorization. Origin/edge recovery pair, reviewed candidate/base comparison and explicit approval remain required.",
+  "baseFingerprint": "1e3fa61ec39d56df9703c609629826aa4a1070780be80bbea604c8af926aebcb",
+  "comparison": null,
+  "activeWorkers": [],
+  "failures": [
+    {
+      "endpoint": "/zones?name=digitecme.com&page=1&per_page=100",
+      "status": 403,
+      "codes": [
+        9109
+      ]
+    },
+    {
+      "error": "Error: Exactly one accessible digitecme.com zone is required."
+    }
+  ]
+}

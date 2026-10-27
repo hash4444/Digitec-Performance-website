@@ -1,0 +1,1116 @@
+{
+  "sequences": [
+    {
+      "label": "baseline",
+      "round": 1,
+      "startedAt": "2026-10-26T11:02:20.871Z",
+      "steps": [
+        {
+          "action": "hub-direct",
+          "errors": 0
+        },
+        {
+          "action": "diagnostics-card",
+          "errors": 0
+        },
+        {
+          "action": "back-hub",
+          "errors": 0
+        },
+        {
+          "action": "body-direct",
+          "errors": 0
+        },
+        {
+          "action": "body390-frame",
+          "errors": 0
+        }
+      ],
+      "finishedAt": "2026-10-26T11:02:22.422Z"
+    },
+    {
+      "label": "A",
+      "round": 1,
+      "startedAt": "2026-10-26T11:02:22.422Z",
+      "steps": [
+        {
+          "action": "hub-direct",
+          "errors": 0
+        },
+        {
+          "action": "diagnostics-card",
+          "errors": 0
+        },
+        {
+          "action": "back-hub",
+          "errors": 0
+        },
+        {
+          "action": "body-direct",
+          "errors": 0
+        },
+        {
+          "action": "body390-frame",
+          "errors": 0
+        }
+      ],
+      "finishedAt": "2026-10-26T11:02:23.742Z"
+    },
+    {
+      "label": "B",
+      "round": 1,
+      "startedAt": "2026-10-26T11:02:23.742Z",
+      "steps": [
+        {
+          "action": "hub-direct",
+          "errors": 0
+        },
+        {
+          "action": "diagnostics-card",
+          "errors": 0
+        },
+        {
+          "action": "back-hub",
+          "errors": 0
+        },
+        {
+          "action": "body-direct",
+          "errors": 0
+        },
+        {
+          "action": "body390-frame",
+          "errors": 0
+        }
+      ],
+      "finishedAt": "2026-10-26T11:02:25.062Z"
+    },
+    {
+      "label": "baseline",
+      "round": 2,
+      "startedAt": "2026-10-26T11:02:25.062Z",
+      "steps": [
+        {
+          "action": "hub-direct",
+          "errors": 0
+        },
+        {
+          "action": "diagnostics-card",
+          "errors": 0
+        },
+        {
+          "action": "back-hub",
+          "errors": 0
+        },
+        {
+          "action": "body-direct",
+          "errors": 0
+        },
+        {
+          "action": "body390-frame",
+          "errors": 0
+        }
+      ],
+      "finishedAt": "2026-10-26T11:02:26.198Z"
+    },
+    {
+      "label": "A",
+      "round": 2,
+      "startedAt": "2026-10-26T11:02:26.198Z",
+      "steps": [
+        {
+          "action": "hub-direct",
+          "errors": 0
+        },
+        {
+          "action": "diagnostics-card",
+          "errors": 0
+        },
+        {
+          "action": "back-hub",
+          "errors": 0
+        },
+        {
+          "action": "body-direct",
+          "errors": 0
+        },
+        {
+          "action": "body390-frame",
+          "errors": 0
+        }
+      ],
+      "finishedAt": "2026-10-26T11:02:27.295Z"
+    },
+    {
+      "label": "B",
+      "round": 2,
+      "startedAt": "2026-10-26T11:02:27.295Z",
+      "steps": [
+        {
+          "action": "hub-direct",
+          "errors": 0
+        },
+        {
+          "action": "diagnostics-card",
+          "errors": 0
+        },
+        {
+          "action": "back-hub",
+          "errors": 0
+        },
+        {
+          "action": "body-direct",
+          "errors": 0
+        },
+        {
+          "action": "body390-frame",
+          "errors": 0
+        }
+      ],
+      "finishedAt": "2026-10-26T11:02:28.410Z"
+    },
+    {
+      "label": "baseline",
+      "round": 3,
+      "startedAt": "2026-10-26T11:02:28.410Z",
+      "steps": [
+        {
+          "action": "hub-direct",
+          "errors": 0
+        },
+        {
+          "action": "diagnostics-card",
+          "errors": 0
+        },
+        {
+          "action": "back-hub",
+          "errors": 0
+        },
+        {
+          "action": "body-direct",
+          "errors": 0
+        },
+        {
+          "action": "body390-frame",
+          "errors": 0
+        }
+      ],
+      "finishedAt": "2026-10-26T11:02:29.513Z"
+    },
+    {
+      "label": "A",
+      "round": 3,
+      "startedAt": "2026-10-26T11:02:29.513Z",
+      "steps": [
+        {
+          "action": "hub-direct",
+          "errors": 0
+        },
+        {
+          "action": "diagnostics-card",
+          "errors": 0
+        },
+        {
+          "action": "back-hub",
+          "errors": 0
+        },
+        {
+          "action": "body-direct",
+          "errors": 0
+        },
+        {
+          "action": "body390-frame",
+          "errors": 0
+        }
+      ],
+      "finishedAt": "2026-10-26T11:02:30.639Z"
+    },
+    {
+      "label": "B",
+      "round": 3,
+      "startedAt": "2026-10-26T11:02:30.639Z",
+      "steps": [
+        {
+          "action": "hub-direct",
+          "errors": 0
+        },
+        {
+          "action": "diagnostics-card",
+          "errors": 0
+        },
+        {
+          "action": "back-hub",
+          "errors": 0
+        },
+        {
+          "action": "body-direct",
+          "errors": 0
+        },
+        {
+          "action": "body390-frame",
+          "errors": 0
+        }
+      ],
+      "finishedAt": "2026-10-26T11:02:31.749Z"
+    },
+    {
+      "label": "baseline",
+      "round": 4,
+      "startedAt": "2026-10-26T11:02:31.749Z",
+      "steps": [
+        {
+          "action": "hub-direct",
+          "errors": 0
+        },
+        {
+          "action": "diagnostics-card",
+          "errors": 0
+        },
+        {
+          "action": "back-hub",
+          "errors": 0
+        },
+        {
+          "action": "body-direct",
+          "errors": 0
+        },
+        {
+          "action": "body390-frame",
+          "errors": 0
+        }
+      ],
+      "finishedAt": "2026-10-26T11:02:32.836Z"
+    },
+    {
+      "label": "A",
+      "round": 4,
+      "startedAt": "2026-10-26T11:02:32.836Z",
+      "steps": [
+        {
+          "action": "hub-direct",
+          "errors": 0
+        },
+        {
+          "action": "diagnostics-card",
+          "errors": 0
+        },
+        {
+          "action": "back-hub",
+          "errors": 0
+        },
+        {
+          "action": "body-direct",
+          "errors": 0
+        },
+        {
+          "action": "body390-frame",
+          "errors": 0
+        }
+      ],
+      "finishedAt": "2026-10-26T11:02:33.934Z"
+    },
+    {
+      "label": "B",
+      "round": 4,
+      "startedAt": "2026-10-26T11:02:33.934Z",
+      "steps": [
+        {
+          "action": "hub-direct",
+          "errors": 0
+        },
+        {
+          "action": "diagnostics-card",
+          "errors": 0
+        },
+        {
+          "action": "back-hub",
+          "errors": 0
+        },
+        {
+          "action": "body-direct",
+          "errors": 0
+        },
+        {
+          "action": "body390-frame",
+          "errors": 0
+        }
+      ],
+      "finishedAt": "2026-10-26T11:02:35.031Z"
+    },
+    {
+      "label": "baseline",
+      "round": 5,
+      "startedAt": "2026-10-26T11:02:35.031Z",
+      "steps": [
+        {
+          "action": "hub-direct",
+          "errors": 0
+        },
+        {
+          "action": "diagnostics-card",
+          "errors": 0
+        },
+        {
+          "action": "back-hub",
+          "errors": 0
+        },
+        {
+          "action": "body-direct",
+          "errors": 0
+        },
+        {
+          "action": "body390-frame",
+          "errors": 0
+        }
+      ],
+      "finishedAt": "2026-10-26T11:02:36.195Z"
+    },
+    {
+      "label": "A",
+      "round": 5,
+      "startedAt": "2026-10-26T11:02:36.195Z",
+      "steps": [
+        {
+          "action": "hub-direct",
+          "errors": 0
+        },
+        {
+          "action": "diagnostics-card",
+          "errors": 0
+        },
+        {
+          "action": "back-hub",
+          "errors": 0
+        },
+        {
+          "action": "body-direct",
+          "errors": 0
+        },
+        {
+          "action": "body390-frame",
+          "errors": 0
+        }
+      ],
+      "finishedAt": "2026-10-26T11:02:37.308Z"
+    },
+    {
+      "label": "B",
+      "round": 5,
+      "startedAt": "2026-10-26T11:02:37.308Z",
+      "steps": [
+        {
+          "action": "hub-direct",
+          "errors": 0
+        },
+        {
+          "action": "diagnostics-card",
+          "errors": 0
+        },
+        {
+          "action": "back-hub",
+          "errors": 0
+        },
+        {
+          "action": "body-direct",
+          "errors": 0
+        },
+        {
+          "action": "body390-frame",
+          "errors": 0
+        }
+      ],
+      "finishedAt": "2026-10-26T11:02:38.452Z"
+    }
+  ],
+  "steps": [
+    {
+      "label": "baseline",
+      "round": 1,
+      "action": "hub-direct",
+      "startedAt": "2026-10-26T11:02:20.871Z",
+      "finishedAt": "2026-10-26T11:02:21.336Z",
+      "logs": [],
+      "observation": "Browser tab: 15, Title: \"Mercedes Service Dubai | Maintenance & Repair | DIGI-TEC\", URL: \"http://127.0.0.1:5200/brands/mercedes-benz-service-dubai\".\n1 AXWebArea Mercedes Service Dubai | Maintenance & Repair | DIGI-TEC, URL: 127.0.0.1:5200/brands/mercedes-benz-service-dubai\n\t2 container root\n\t\t3 container Notifications (F8)\n\t\t\t4 content list\n\t\t5 container Notifications alt+T\n\t\t6 container\n\t\t\t7 link Description: DIGI-TEC home, Value: 127.0.0.1:5200/\n\t\t\t8 button (collapsed) Menu, Secondary Actions: Expand\n\t\t\t\t9 image\n\t\t\t\t10 text Menu\n\t\t\t11 button "
+    },
+    {
+      "label": "baseline",
+      "round": 1,
+      "action": "diagnostics-card",
+      "startedAt": "2026-10-26T11:02:21.337Z",
+      "finishedAt": "2026-10-26T11:02:21.695Z",
+      "logs": [],
+      "observation": "Browser tab: 15, Title: \"Mercedes Diagnostics Dubai | XENTRY Fault Tracing | DIGI-TEC\", URL: \"http://127.0.0.1:5200/services/mercedes-diagnostics-dubai\".\n1 AXWebArea Mercedes Diagnostics Dubai | XENTRY Fault Tracing | DIGI-TEC, URL: 127.0.0.1:5200/services/mercedes-diagnostics-dubai\n\t2 container root\n\t\t3 container Notifications (F8)\n\t\t\t4 content list\n\t\t5 container Notifications alt+T\n\t\t6 container\n\t\t\t7 link Description: DIGI-TEC home, Value: 127.0.0.1:5200/\n\t\t\t8 button (collapsed) Menu, Secondary Actions: Expand\n\t\t\t\t9 image\n\t\t\t\t10 text Menu\n\t\t\t"
+    },
+    {
+      "label": "baseline",
+      "round": 1,
+      "action": "back-hub",
+      "startedAt": "2026-10-26T11:02:21.696Z",
+      "finishedAt": "2026-10-26T11:02:21.933Z",
+      "logs": [],
+      "observation": "Browser tab: 15, Title: \"Mercedes Service Dubai | Maintenance & Repair | DIGI-TEC\", URL: \"http://127.0.0.1:5200/brands/mercedes-benz-service-dubai\".\n1 AXWebArea Mercedes Service Dubai | Maintenance & Repair | DIGI-TEC, URL: 127.0.0.1:5200/brands/mercedes-benz-service-dubai\n\t2 container root\n\t\t3 container Notifications (F8)\n\t\t\t4 content list\n\t\t5 container Notifications alt+T\n\t\t6 container\n\t\t\t7 link Description: DIGI-TEC home, Value: 127.0.0.1:5200/\n\t\t\t8 button (collapsed) Menu, Secondary Actions: Expand\n\t\t\t\t9 image\n\t\t\t\t10 text Menu\n\t\t\t11 button "
+    },
+    {
+      "label": "baseline",
+      "round": 1,
+      "action": "body-direct",
+      "startedAt": "2026-10-26T11:02:21.934Z",
+      "finishedAt": "2026-10-26T11:02:22.168Z",
+      "logs": [],
+      "observation": "Browser tab: 15, Title: \"Mercedes Body & Accident Repair Dubai | Digi-Tec\", URL: \"http://127.0.0.1:5200/services/mercedes-body-repair-dubai\".\n1 AXWebArea Mercedes Body & Accident Repair Dubai | Digi-Tec, URL: 127.0.0.1:5200/services/mercedes-body-repair-dubai\n\t2 container root\n\t\t3 container Notifications (F8)\n\t\t\t4 content list\n\t\t5 container Notifications alt+T\n\t\t6 container\n\t\t\t7 link Description: DIGI-TEC home, Value: 127.0.0.1:5200/\n\t\t\t8 button (collapsed) Menu, Secondary Actions: Expand\n\t\t\t\t9 image\n\t\t\t\t10 text Menu\n\t\t\t11 button Description: U"
+    },
+    {
+      "label": "baseline",
+      "round": 1,
+      "action": "body390-frame",
+      "startedAt": "2026-10-26T11:02:22.168Z",
+      "finishedAt": "2026-10-26T11:02:22.411Z",
+      "logs": [],
+      "observation": "Browser tab: 15, Title: \"Phase 4C baseline local responsive QA 390px\", URL: \"http://127.0.0.1:5200/__phase4_frame?width=390&height=844&path=/services/mercedes-body-repair-dubai\".\n1 AXWebArea Phase 4C baseline local responsive QA 390px, URL: 127.0.0.1:5200/__phase4_frame?width=390&height=844&path=/services/mercedes-body-repair-dubai\n\t2 text LOCAL QA baseline passive — 390 × 844 CSS pixels, desktop browser engine. Contact intercepted; analytics blocked.\n\t3 container Mercedes baseline 390 pixel responsive viewport\n\t\t4 AXWebArea Mercedes Body & Acc",
+      "metrics": "{\n  \"url\": \"http://127.0.0.1:5200/services/mercedes-body-repair-dubai\",\n  \"path\": \"/services/mercedes-body-repair-dubai\",\n  \"hash\": \"\",\n  \"title\": \"Mercedes Body & Accident Repair Dubai | Digi-Tec\",\n  \"readyState\": \"complete\",\n  \"width\": 390,\n  \"height\": 844,\n  \"clientWidth\": 382,\n  \"scrollWidth\": 382,\n  \"rootPresent\": true,\n  \"bodyPresent\": true,\n  \"active\": {\n    \"tag\": \"BODY\",\n    \"label\": \"<iframe src=\\\"https://www.googletagmanager.com/ns.html?id=GTM-T3GVSPND\\\"\\n    height=\\\"0\\\" width=\\\"0\\\" style=\\\"display:none;visibility:hidden\\\"></iframe>\\n    \\n    MenuENEnglishالعربيةAbout UsServicesBrandsGADV\",\n    \"href\": null\n  },\n  \"scripts\": [\n    {\n      \"src\": \"https://www.googletagmanager.com/gtm.js?id=GTM-T3GVSPND\",\n      \"type\": null,\n      \"qa\": false\n    },\n    {\n      \"src\": null,\n      \"type\": null,\n      \"qa\": true\n    },\n    {\n      \"src\": null,\n      \"type\": null,\n      \"qa\": false\n    },\n    {\n      \"src\": null,\n      \"type\": \"application/ld+json\",\n      \"qa\": false\n    },\n    {\n      \"src\": \"https://www.googletagmanager.com/gtag/js?id=G-4TRCEJSY4S\",\n      \"type\": null,\n      \"qa\": false\n    },\n    {\n      \"src\": null,\n      \"type\": null,\n      \"qa\": false\n    },\n    {\n      \"src\": \"http://127.0.0.1:5200/assets/index-CvWuKuLH.js\",\n      \"type\": \"module\",\n      \"qa\": false\n    },\n    {\n      \"src\": null,\n      \"type\": \"application/ld+json\",\n      \"qa\": false\n    }\n  ],\n  \"resources\": [\n    {\n      \"name\": \"http://127.0.0.1:5200/assets/index-CumuXRQA.css\",\n      \"startTime\": 16,\n      \"duration\": 10.600000023841858\n    },\n    {\n      \"name\": \"http://127.0.0.1:5200/assets/index-CvWuKuLH.js\",\n      \"startTime\": 16,\n      \"duration\": 11.100000023841858\n    },\n    {\n      \"name\": \"https://www.googletagmanager.com/gtm.js?id=GTM-T3GVSPND\",\n      \"startTime\": 17.200000047683716,\n      \"duration\": 0\n    }\n  ],\n  \"focus\": {\n    \"tag\": \"BODY\",\n    \"text\": \"<iframe src=\\\"https://www.googletagmanager.com/ns.html?id=GTM-T3GVSPND\\\"\\n    height=\\\"0\\\" width=\\\"0\\\" style=\\\"display:none;visibility:hidden\\\"></iframe>\\n    \\n    MenuENEnglishالعربيةAbout \",\n    \"href\": null,\n    \"focusVisible\": false,\n    \"outline\": \"rgb(248, 248, 248) none 2.66667px\",\n    \"boxShadow\": \"none\",\n    \"rect\": {\n      \"x\": 0,\n      \"y\": 0,\n      \"width\": 382,\n      \"height\": 9335.177734375,\n      \"top\": 0,\n      \"right\": 382,\n      \"bottom\": 9335.177734375,\n      \"left\": 0\n    }\n  }\n}"
+    },
+    {
+      "label": "A",
+      "round": 1,
+      "action": "hub-direct",
+      "startedAt": "2026-10-26T11:02:22.422Z",
+      "finishedAt": "2026-10-26T11:02:22.766Z",
+      "logs": [],
+      "observation": "Browser tab: 16, Title: \"Mercedes Service Dubai | Maintenance & Repair | DIGI-TEC\", URL: \"http://127.0.0.1:5201/brands/mercedes-benz-service-dubai\".\n1 AXWebArea Mercedes Service Dubai | Maintenance & Repair | DIGI-TEC, URL: 127.0.0.1:5201/brands/mercedes-benz-service-dubai\n\t2 container root\n\t\t3 container Notifications (F8)\n\t\t\t4 content list\n\t\t5 container Notifications alt+T\n\t\t6 container\n\t\t\t7 link Description: DIGI-TEC home, Value: 127.0.0.1:5201/\n\t\t\t8 button (collapsed) Menu, Secondary Actions: Expand\n\t\t\t\t9 image\n\t\t\t\t10 text Menu\n\t\t\t11 button "
+    },
+    {
+      "label": "A",
+      "round": 1,
+      "action": "diagnostics-card",
+      "startedAt": "2026-10-26T11:02:22.766Z",
+      "finishedAt": "2026-10-26T11:02:23.081Z",
+      "logs": [],
+      "observation": "Browser tab: 16, Title: \"Mercedes Diagnostics Dubai | XENTRY Fault Tracing | DIGI-TEC\", URL: \"http://127.0.0.1:5201/services/mercedes-diagnostics-dubai\".\n1 AXWebArea Mercedes Diagnostics Dubai | XENTRY Fault Tracing | DIGI-TEC, URL: 127.0.0.1:5201/services/mercedes-diagnostics-dubai\n\t2 container root\n\t\t3 container Notifications (F8)\n\t\t\t4 content list\n\t\t5 container Notifications alt+T\n\t\t6 container\n\t\t\t7 link Description: DIGI-TEC home, Value: 127.0.0.1:5201/\n\t\t\t8 button (collapsed) Menu, Secondary Actions: Expand\n\t\t\t\t9 image\n\t\t\t\t10 text Menu\n\t\t\t"
+    },
+    {
+      "label": "A",
+      "round": 1,
+      "action": "back-hub",
+      "startedAt": "2026-10-26T11:02:23.082Z",
+      "finishedAt": "2026-10-26T11:02:23.252Z",
+      "logs": [],
+      "observation": "Browser tab: 16, Title: \"Mercedes Service Dubai | Maintenance & Repair | DIGI-TEC\", URL: \"http://127.0.0.1:5201/brands/mercedes-benz-service-dubai\".\n1 AXWebArea Mercedes Service Dubai | Maintenance & Repair | DIGI-TEC, URL: 127.0.0.1:5201/brands/mercedes-benz-service-dubai\n\t2 container root\n\t\t3 container Notifications (F8)\n\t\t\t4 content list\n\t\t5 container Notifications alt+T\n\t\t6 container\n\t\t\t7 link Description: DIGI-TEC home, Value: 127.0.0.1:5201/\n\t\t\t8 button (collapsed) Menu, Secondary Actions: Expand\n\t\t\t\t9 image\n\t\t\t\t10 text Menu\n\t\t\t11 button "
+    },
+    {
+      "label": "A",
+      "round": 1,
+      "action": "body-direct",
+      "startedAt": "2026-10-26T11:02:23.252Z",
+      "finishedAt": "2026-10-26T11:02:23.461Z",
+      "logs": [],
+      "observation": "Browser tab: 16, Title: \"Mercedes Body & Accident Repair Dubai | Digi-Tec\", URL: \"http://127.0.0.1:5201/services/mercedes-body-repair-dubai\".\n1 AXWebArea Mercedes Body & Accident Repair Dubai | Digi-Tec, URL: 127.0.0.1:5201/services/mercedes-body-repair-dubai\n\t2 container root\n\t\t3 container Notifications (F8)\n\t\t\t4 content list\n\t\t5 container Notifications alt+T\n\t\t6 container\n\t\t\t7 link Description: DIGI-TEC home, Value: 127.0.0.1:5201/\n\t\t\t8 button (collapsed) Menu, Secondary Actions: Expand\n\t\t\t\t9 image\n\t\t\t\t10 text Menu\n\t\t\t11 button Description: U"
+    },
+    {
+      "label": "A",
+      "round": 1,
+      "action": "body390-frame",
+      "startedAt": "2026-10-26T11:02:23.462Z",
+      "finishedAt": "2026-10-26T11:02:23.733Z",
+      "logs": [],
+      "observation": "Browser tab: 16, Title: \"Phase 4C candidate local responsive QA 390px\", URL: \"http://127.0.0.1:5201/__phase4_frame?width=390&height=844&path=/services/mercedes-body-repair-dubai\".\n1 AXWebArea Phase 4C candidate local responsive QA 390px, URL: 127.0.0.1:5201/__phase4_frame?width=390&height=844&path=/services/mercedes-body-repair-dubai\n\t2 text LOCAL QA candidate passive — 390 × 844 CSS pixels, desktop browser engine. Contact intercepted; analytics blocked.\n\t3 container Mercedes candidate 390 pixel responsive viewport\n\t\t4 AXWebArea Mercedes Body &",
+      "metrics": "{\n  \"url\": \"http://127.0.0.1:5201/services/mercedes-body-repair-dubai\",\n  \"path\": \"/services/mercedes-body-repair-dubai\",\n  \"hash\": \"\",\n  \"title\": \"Mercedes Body & Accident Repair Dubai | Digi-Tec\",\n  \"readyState\": \"complete\",\n  \"width\": 390,\n  \"height\": 844,\n  \"clientWidth\": 382,\n  \"scrollWidth\": 382,\n  \"rootPresent\": true,\n  \"bodyPresent\": true,\n  \"active\": {\n    \"tag\": \"BODY\",\n    \"label\": \"<iframe src=\\\"https://www.googletagmanager.com/ns.html?id=GTM-T3GVSPND\\\"\\n    height=\\\"0\\\" width=\\\"0\\\" style=\\\"display:none;visibility:hidden\\\"></iframe>\\n    \\n    MenuENEnglishالعربيةAbout UsServicesBrandsGADV\",\n    \"href\": null\n  },\n  \"scripts\": [\n    {\n      \"src\": \"https://www.googletagmanager.com/gtm.js?id=GTM-T3GVSPND\",\n      \"type\": null,\n      \"qa\": false\n    },\n    {\n      \"src\": null,\n      \"type\": null,\n      \"qa\": true\n    },\n    {\n      \"src\": null,\n      \"type\": null,\n      \"qa\": false\n    },\n    {\n      \"src\": null,\n      \"type\": \"application/ld+json\",\n      \"qa\": false\n    },\n    {\n      \"src\": \"https://www.googletagmanager.com/gtag/js?id=G-4TRCEJSY4S\",\n      \"type\": null,\n      \"qa\": false\n    },\n    {\n      \"src\": null,\n      \"type\": null,\n      \"qa\": false\n    },\n    {\n      \"src\": \"http://127.0.0.1:5201/assets/index-DxoEjBa9.js\",\n      \"type\": \"module\",\n      \"qa\": false\n    },\n    {\n      \"src\": null,\n      \"type\": \"application/ld+json\",\n      \"qa\": false\n    }\n  ],\n  \"resources\": [\n    {\n      \"name\": \"http://127.0.0.1:5201/assets/index-DxoEjBa9.js\",\n      \"startTime\": 14.900000095367432,\n      \"duration\": 9.699999928474426\n    },\n    {\n      \"name\": \"http://127.0.0.1:5201/assets/index-CumuXRQA.css\",\n      \"startTime\": 15,\n      \"duration\": 10.600000023841858\n    },\n    {\n      \"name\": \"https://www.googletagmanager.com/gtm.js?id=GTM-T3GVSPND\",\n      \"startTime\": 16.300000071525574,\n      \"duration\": 0\n    }\n  ],\n  \"focus\": {\n    \"tag\": \"BODY\",\n    \"text\": \"<iframe src=\\\"https://www.googletagmanager.com/ns.html?id=GTM-T3GVSPND\\\"\\n    height=\\\"0\\\" width=\\\"0\\\" style=\\\"display:none;visibility:hidden\\\"></iframe>\\n    \\n    MenuENEnglishالعربيةAbout \",\n    \"href\": null,\n    \"focusVisible\": false,\n    \"outline\": \"rgb(248, 248, 248) none 2.66667px\",\n    \"boxShadow\": \"none\",\n    \"rect\": {\n      \"x\": 0,\n      \"y\": 0,\n      \"width\": 382,\n      \"height\": 9361.771484375,\n      \"top\": 0,\n      \"right\": 382,\n      \"bottom\": 9361.771484375,\n      \"left\": 0\n    }\n  }\n}"
+    },
+    {
+      "label": "B",
+      "round": 1,
+      "action": "hub-direct",
+      "startedAt": "2026-10-26T11:02:23.742Z",
+      "finishedAt": "2026-10-26T11:02:24.080Z",
+      "logs": [],
+      "observation": "Browser tab: 17, Title: \"Mercedes Service Dubai | Maintenance & Repair | DIGI-TEC\", URL: \"http://127.0.0.1:5202/brands/mercedes-benz-service-dubai\".\n1 AXWebArea Mercedes Service Dubai | Maintenance & Repair | DIGI-TEC, URL: 127.0.0.1:5202/brands/mercedes-benz-service-dubai\n\t2 container root\n\t\t3 container Notifications (F8)\n\t\t\t4 content list\n\t\t5 container Notifications alt+T\n\t\t6 container\n\t\t\t7 link Description: DIGI-TEC home, Value: 127.0.0.1:5202/\n\t\t\t8 button (collapsed) Menu, Secondary Actions: Expand\n\t\t\t\t9 image\n\t\t\t\t10 text Menu\n\t\t\t11 button "
+    },
+    {
+      "label": "B",
+      "round": 1,
+      "action": "diagnostics-card",
+      "startedAt": "2026-10-26T11:02:24.081Z",
+      "finishedAt": "2026-10-26T11:02:24.406Z",
+      "logs": [],
+      "observation": "Browser tab: 17, Title: \"Mercedes Diagnostics Dubai | XENTRY Fault Tracing | DIGI-TEC\", URL: \"http://127.0.0.1:5202/services/mercedes-diagnostics-dubai\".\n1 AXWebArea Mercedes Diagnostics Dubai | XENTRY Fault Tracing | DIGI-TEC, URL: 127.0.0.1:5202/services/mercedes-diagnostics-dubai\n\t2 container root\n\t\t3 container Notifications (F8)\n\t\t\t4 content list\n\t\t5 container Notifications alt+T\n\t\t6 container\n\t\t\t7 link Description: DIGI-TEC home, Value: 127.0.0.1:5202/\n\t\t\t8 button (collapsed) Menu, Secondary Actions: Expand\n\t\t\t\t9 image\n\t\t\t\t10 text Menu\n\t\t\t"
+    },
+    {
+      "label": "B",
+      "round": 1,
+      "action": "back-hub",
+      "startedAt": "2026-10-26T11:02:24.407Z",
+      "finishedAt": "2026-10-26T11:02:24.579Z",
+      "logs": [],
+      "observation": "Browser tab: 17, Title: \"Mercedes Service Dubai | Maintenance & Repair | DIGI-TEC\", URL: \"http://127.0.0.1:5202/brands/mercedes-benz-service-dubai\".\n1 AXWebArea Mercedes Service Dubai | Maintenance & Repair | DIGI-TEC, URL: 127.0.0.1:5202/brands/mercedes-benz-service-dubai\n\t2 container root\n\t\t3 container Notifications (F8)\n\t\t\t4 content list\n\t\t5 container Notifications alt+T\n\t\t6 container\n\t\t\t7 link Description: DIGI-TEC home, Value: 127.0.0.1:5202/\n\t\t\t8 button (collapsed) Menu, Secondary Actions: Expand\n\t\t\t\t9 image\n\t\t\t\t10 text Menu\n\t\t\t11 button "
+    },
+    {
+      "label": "B",
+      "round": 1,
+      "action": "body-direct",
+      "startedAt": "2026-10-26T11:02:24.580Z",
+      "finishedAt": "2026-10-26T11:02:24.820Z",
+      "logs": [],
+      "observation": "Browser tab: 17, Title: \"Mercedes Body & Accident Repair Dubai | Digi-Tec\", URL: \"http://127.0.0.1:5202/services/mercedes-body-repair-dubai\".\n1 AXWebArea Mercedes Body & Accident Repair Dubai | Digi-Tec, URL: 127.0.0.1:5202/services/mercedes-body-repair-dubai\n\t2 container root\n\t\t3 container Notifications (F8)\n\t\t\t4 content list\n\t\t5 container Notifications alt+T\n\t\t6 container\n\t\t\t7 link Description: DIGI-TEC home, Value: 127.0.0.1:5202/\n\t\t\t8 button (collapsed) Menu, Secondary Actions: Expand\n\t\t\t\t9 image\n\t\t\t\t10 text Menu\n\t\t\t11 button Description: U"
+    },
+    {
+      "label": "B",
+      "round": 1,
+      "action": "body390-frame",
+      "startedAt": "2026-10-26T11:02:24.820Z",
+      "finishedAt": "2026-10-26T11:02:25.054Z",
+      "logs": [],
+      "observation": "Browser tab: 17, Title: \"Phase 4C release-b local responsive QA 390px\", URL: \"http://127.0.0.1:5202/__phase4_frame?width=390&height=844&path=/services/mercedes-body-repair-dubai\".\n1 AXWebArea Phase 4C release-b local responsive QA 390px, URL: 127.0.0.1:5202/__phase4_frame?width=390&height=844&path=/services/mercedes-body-repair-dubai\n\t2 text LOCAL QA release-b passive — 390 × 844 CSS pixels, desktop browser engine. Contact intercepted; analytics blocked.\n\t3 container Mercedes release-b 390 pixel responsive viewport\n\t\t4 AXWebArea Mercedes Body &",
+      "metrics": "{\n  \"url\": \"http://127.0.0.1:5202/services/mercedes-body-repair-dubai\",\n  \"path\": \"/services/mercedes-body-repair-dubai\",\n  \"hash\": \"\",\n  \"title\": \"Mercedes Body & Accident Repair Dubai | Digi-Tec\",\n  \"readyState\": \"complete\",\n  \"width\": 390,\n  \"height\": 844,\n  \"clientWidth\": 382,\n  \"scrollWidth\": 382,\n  \"rootPresent\": true,\n  \"bodyPresent\": true,\n  \"active\": {\n    \"tag\": \"BODY\",\n    \"label\": \"<iframe src=\\\"https://www.googletagmanager.com/ns.html?id=GTM-T3GVSPND\\\"\\n    height=\\\"0\\\" width=\\\"0\\\" style=\\\"display:none;visibility:hidden\\\"></iframe>\\n    \\n    MenuENEnglishالعربيةAbout UsServicesBrandsGADV\",\n    \"href\": null\n  },\n  \"scripts\": [\n    {\n      \"src\": \"https://www.googletagmanager.com/gtm.js?id=GTM-T3GVSPND\",\n      \"type\": null,\n      \"qa\": false\n    },\n    {\n      \"src\": null,\n      \"type\": null,\n      \"qa\": true\n    },\n    {\n      \"src\": null,\n      \"type\": null,\n      \"qa\": false\n    },\n    {\n      \"src\": null,\n      \"type\": \"application/ld+json\",\n      \"qa\": false\n    },\n    {\n      \"src\": \"https://www.googletagmanager.com/gtag/js?id=G-4TRCEJSY4S\",\n      \"type\": null,\n      \"qa\": false\n    },\n    {\n      \"src\": null,\n      \"type\": null,\n      \"qa\": false\n    },\n    {\n      \"src\": \"http://127.0.0.1:5202/assets/index-DxoEjBa9.js\",\n      \"type\": \"module\",\n      \"qa\": false\n    },\n    {\n      \"src\": null,\n      \"type\": \"application/ld+json\",\n      \"qa\": false\n    }\n  ],\n  \"resources\": [\n    {\n      \"name\": \"http://127.0.0.1:5202/assets/index-CumuXRQA.css\",\n      \"startTime\": 14.299999952316284,\n      \"duration\": 4.400000095367432\n    },\n    {\n      \"name\": \"http://127.0.0.1:5202/assets/index-DxoEjBa9.js\",\n      \"startTime\": 14.299999952316284,\n      \"duration\": 5.700000047683716\n    },\n    {\n      \"name\": \"https://www.googletagmanager.com/gtm.js?id=GTM-T3GVSPND\",\n      \"startTime\": 15.5,\n      \"duration\": 0\n    }\n  ],\n  \"focus\": {\n    \"tag\": \"BODY\",\n    \"text\": \"<iframe src=\\\"https://www.googletagmanager.com/ns.html?id=GTM-T3GVSPND\\\"\\n    height=\\\"0\\\" width=\\\"0\\\" style=\\\"display:none;visibility:hidden\\\"></iframe>\\n    \\n    MenuENEnglishالعربيةAbout \",\n    \"href\": null,\n    \"focusVisible\": false,\n    \"outline\": \"rgb(248, 248, 248) none 2.66667px\",\n    \"boxShadow\": \"none\",\n    \"rect\": {\n      \"x\": 0,\n      \"y\": 0,\n      \"width\": 382,\n      \"height\": 9361.771484375,\n      \"top\": 0,\n      \"right\": 382,\n      \"bottom\": 9361.771484375,\n      \"left\": 0\n    }\n  }\n}"
+    },
+    {
+      "label": "baseline",
+      "round": 2,
+      "action": "hub-direct",
+      "startedAt": "2026-10-26T11:02:25.062Z",
+      "finishedAt": "2026-10-26T11:02:25.331Z",
+      "logs": [],
+      "observation": "Browser tab: 15, Title: \"Mercedes Service Dubai | Maintenance & Repair | DIGI-TEC\", URL: \"http://127.0.0.1:5200/brands/mercedes-benz-service-dubai\".\n1 AXWebArea Mercedes Service Dubai | Maintenance & Repair | DIGI-TEC, URL: 127.0.0.1:5200/brands/mercedes-benz-service-dubai\n\t2 container root\n\t\t3 container Notifications (F8)\n\t\t\t4 content list\n\t\t5 container Notifications alt+T\n\t\t6 container\n\t\t\t7 link Description: DIGI-TEC home, Value: 127.0.0.1:5200/\n\t\t\t8 button (collapsed) Menu, Secondary Actions: Expand\n\t\t\t\t9 image\n\t\t\t\t10 text Menu\n\t\t\t11 button "
+    },
+    {
+      "label": "baseline",
+      "round": 2,
+      "action": "diagnostics-card",
+      "startedAt": "2026-10-26T11:02:25.331Z",
+      "finishedAt": "2026-10-26T11:02:25.624Z",
+      "logs": [],
+      "observation": "Browser tab: 15, Title: \"Mercedes Diagnostics Dubai | XENTRY Fault Tracing | DIGI-TEC\", URL: \"http://127.0.0.1:5200/services/mercedes-diagnostics-dubai\".\n1 AXWebArea Mercedes Diagnostics Dubai | XENTRY Fault Tracing | DIGI-TEC, URL: 127.0.0.1:5200/services/mercedes-diagnostics-dubai\n\t2 container root\n\t\t3 container Notifications (F8)\n\t\t\t4 content list\n\t\t5 container Notifications alt+T\n\t\t6 container\n\t\t\t7 link Description: DIGI-TEC home, Value: 127.0.0.1:5200/\n\t\t\t8 button (collapsed) Menu, Secondary Actions: Expand\n\t\t\t\t9 image\n\t\t\t\t10 text Menu\n\t\t\t"
+    },
+    {
+      "label": "baseline",
+      "round": 2,
+      "action": "back-hub",
+      "startedAt": "2026-10-26T11:02:25.624Z",
+      "finishedAt": "2026-10-26T11:02:25.776Z",
+      "logs": [],
+      "observation": "Browser tab: 15, Title: \"Mercedes Service Dubai | Maintenance & Repair | DIGI-TEC\", URL: \"http://127.0.0.1:5200/brands/mercedes-benz-service-dubai\".\n1 AXWebArea Mercedes Service Dubai | Maintenance & Repair | DIGI-TEC, URL: 127.0.0.1:5200/brands/mercedes-benz-service-dubai\n\t2 container root\n\t\t3 container Notifications (F8)\n\t\t\t4 content list\n\t\t5 container Notifications alt+T\n\t\t6 container\n\t\t\t7 link Description: DIGI-TEC home, Value: 127.0.0.1:5200/\n\t\t\t8 button (collapsed) Menu, Secondary Actions: Expand\n\t\t\t\t9 image\n\t\t\t\t10 text Menu\n\t\t\t11 button "
+    },
+    {
+      "label": "baseline",
+      "round": 2,
+      "action": "body-direct",
+      "startedAt": "2026-10-26T11:02:25.776Z",
+      "finishedAt": "2026-10-26T11:02:25.975Z",
+      "logs": [],
+      "observation": "Browser tab: 15, Title: \"Mercedes Body & Accident Repair Dubai | Digi-Tec\", URL: \"http://127.0.0.1:5200/services/mercedes-body-repair-dubai\".\n1 AXWebArea Mercedes Body & Accident Repair Dubai | Digi-Tec, URL: 127.0.0.1:5200/services/mercedes-body-repair-dubai\n\t2 container root\n\t\t3 container Notifications (F8)\n\t\t\t4 content list\n\t\t5 container Notifications alt+T\n\t\t6 container\n\t\t\t7 link Description: DIGI-TEC home, Value: 127.0.0.1:5200/\n\t\t\t8 button (collapsed) Menu, Secondary Actions: Expand\n\t\t\t\t9 image\n\t\t\t\t10 text Menu\n\t\t\t11 button Description: U"
+    },
+    {
+      "label": "baseline",
+      "round": 2,
+      "action": "body390-frame",
+      "startedAt": "2026-10-26T11:02:25.975Z",
+      "finishedAt": "2026-10-26T11:02:26.190Z",
+      "logs": [],
+      "observation": "Browser tab: 15, Title: \"Phase 4C baseline local responsive QA 390px\", URL: \"http://127.0.0.1:5200/__phase4_frame?width=390&height=844&path=/services/mercedes-body-repair-dubai\".\n1 AXWebArea Phase 4C baseline local responsive QA 390px, URL: 127.0.0.1:5200/__phase4_frame?width=390&height=844&path=/services/mercedes-body-repair-dubai\n\t2 text LOCAL QA baseline passive — 390 × 844 CSS pixels, desktop browser engine. Contact intercepted; analytics blocked.\n\t3 container Mercedes baseline 390 pixel responsive viewport\n\t\t4 AXWebArea Mercedes Body & Acc",
+      "metrics": "{\n  \"url\": \"http://127.0.0.1:5200/services/mercedes-body-repair-dubai\",\n  \"path\": \"/services/mercedes-body-repair-dubai\",\n  \"hash\": \"\",\n  \"title\": \"Mercedes Body & Accident Repair Dubai | Digi-Tec\",\n  \"readyState\": \"complete\",\n  \"width\": 390,\n  \"height\": 844,\n  \"clientWidth\": 382,\n  \"scrollWidth\": 382,\n  \"rootPresent\": true,\n  \"bodyPresent\": true,\n  \"active\": {\n    \"tag\": \"BODY\",\n    \"label\": \"<iframe src=\\\"https://www.googletagmanager.com/ns.html?id=GTM-T3GVSPND\\\"\\n    height=\\\"0\\\" width=\\\"0\\\" style=\\\"display:none;visibility:hidden\\\"></iframe>\\n    \\n    MenuENEnglishالعربيةAbout UsServicesBrandsGADV\",\n    \"href\": null\n  },\n  \"scripts\": [\n    {\n      \"src\": \"https://www.googletagmanager.com/gtm.js?id=GTM-T3GVSPND\",\n      \"type\": null,\n      \"qa\": false\n    },\n    {\n      \"src\": null,\n      \"type\": null,\n      \"qa\": true\n    },\n    {\n      \"src\": null,\n      \"type\": null,\n      \"qa\": false\n    },\n    {\n      \"src\": null,\n      \"type\": \"application/ld+json\",\n      \"qa\": false\n    },\n    {\n      \"src\": \"https://www.googletagmanager.com/gtag/js?id=G-4TRCEJSY4S\",\n      \"type\": null,\n      \"qa\": false\n    },\n    {\n      \"src\": null,\n      \"type\": null,\n      \"qa\": false\n    },\n    {\n      \"src\": \"http://127.0.0.1:5200/assets/index-CvWuKuLH.js\",\n      \"type\": \"module\",\n      \"qa\": false\n    },\n    {\n      \"src\": null,\n      \"type\": \"application/ld+json\",\n      \"qa\": false\n    }\n  ],\n  \"resources\": [\n    {\n      \"name\": \"http://127.0.0.1:5200/assets/index-CumuXRQA.css\",\n      \"startTime\": 14,\n      \"duration\": 5.700000047683716\n    },\n    {\n      \"name\": \"http://127.0.0.1:5200/assets/index-CvWuKuLH.js\",\n      \"startTime\": 14,\n      \"duration\": 7.300000071525574\n    },\n    {\n      \"name\": \"https://www.googletagmanager.com/gtm.js?id=GTM-T3GVSPND\",\n      \"startTime\": 15.400000095367432,\n      \"duration\": 0\n    }\n  ],\n  \"focus\": {\n    \"tag\": \"BODY\",\n    \"text\": \"<iframe src=\\\"https://www.googletagmanager.com/ns.html?id=GTM-T3GVSPND\\\"\\n    height=\\\"0\\\" width=\\\"0\\\" style=\\\"display:none;visibility:hidden\\\"></iframe>\\n    \\n    MenuENEnglishالعربيةAbout \",\n    \"href\": null,\n    \"focusVisible\": false,\n    \"outline\": \"rgb(248, 248, 248) none 2.66667px\",\n    \"boxShadow\": \"none\",\n    \"rect\": {\n      \"x\": 0,\n      \"y\": 0,\n      \"width\": 382,\n      \"height\": 9335.177734375,\n      \"top\": 0,\n      \"right\": 382,\n      \"bottom\": 9335.177734375,\n      \"left\": 0\n    }\n  }\n}"
+    },
+    {
+      "label": "A",
+      "round": 2,
+      "action": "hub-direct",
+      "startedAt": "2026-10-26T11:02:26.198Z",
+      "finishedAt": "2026-10-26T11:02:26.453Z",
+      "logs": [],
+      "observation": "Browser tab: 16, Title: \"Mercedes Service Dubai | Maintenance & Repair | DIGI-TEC\", URL: \"http://127.0.0.1:5201/brands/mercedes-benz-service-dubai\".\n1 AXWebArea Mercedes Service Dubai | Maintenance & Repair | DIGI-TEC, URL: 127.0.0.1:5201/brands/mercedes-benz-service-dubai\n\t2 container root\n\t\t3 container Notifications (F8)\n\t\t\t4 content list\n\t\t5 container Notifications alt+T\n\t\t6 container\n\t\t\t7 link Description: DIGI-TEC home, Value: 127.0.0.1:5201/\n\t\t\t8 button (collapsed) Menu, Secondary Actions: Expand\n\t\t\t\t9 image\n\t\t\t\t10 text Menu\n\t\t\t11 button "
+    },
+    {
+      "label": "A",
+      "round": 2,
+      "action": "diagnostics-card",
+      "startedAt": "2026-10-26T11:02:26.453Z",
+      "finishedAt": "2026-10-26T11:02:26.716Z",
+      "logs": [],
+      "observation": "Browser tab: 16, Title: \"Mercedes Diagnostics Dubai | XENTRY Fault Tracing | DIGI-TEC\", URL: \"http://127.0.0.1:5201/services/mercedes-diagnostics-dubai\".\n1 AXWebArea Mercedes Diagnostics Dubai | XENTRY Fault Tracing | DIGI-TEC, URL: 127.0.0.1:5201/services/mercedes-diagnostics-dubai\n\t2 container root\n\t\t3 container Notifications (F8)\n\t\t\t4 content list\n\t\t5 container Notifications alt+T\n\t\t6 container\n\t\t\t7 link Description: DIGI-TEC home, Value: 127.0.0.1:5201/\n\t\t\t8 button (collapsed) Menu, Secondary Actions: Expand\n\t\t\t\t9 image\n\t\t\t\t10 text Menu\n\t\t\t"
+    },
+    {
+      "label": "A",
+      "round": 2,
+      "action": "back-hub",
+      "startedAt": "2026-10-26T11:02:26.716Z",
+      "finishedAt": "2026-10-26T11:02:26.869Z",
+      "logs": [],
+      "observation": "Browser tab: 16, Title: \"Mercedes Service Dubai | Maintenance & Repair | DIGI-TEC\", URL: \"http://127.0.0.1:5201/brands/mercedes-benz-service-dubai\".\n1 AXWebArea Mercedes Service Dubai | Maintenance & Repair | DIGI-TEC, URL: 127.0.0.1:5201/brands/mercedes-benz-service-dubai\n\t2 container root\n\t\t3 container Notifications (F8)\n\t\t\t4 content list\n\t\t5 container Notifications alt+T\n\t\t6 container\n\t\t\t7 link Description: DIGI-TEC home, Value: 127.0.0.1:5201/\n\t\t\t8 button (collapsed) Menu, Secondary Actions: Expand\n\t\t\t\t9 image\n\t\t\t\t10 text Menu\n\t\t\t11 button "
+    },
+    {
+      "label": "A",
+      "round": 2,
+      "action": "body-direct",
+      "startedAt": "2026-10-26T11:02:26.869Z",
+      "finishedAt": "2026-10-26T11:02:27.069Z",
+      "logs": [],
+      "observation": "Browser tab: 16, Title: \"Mercedes Body & Accident Repair Dubai | Digi-Tec\", URL: \"http://127.0.0.1:5201/services/mercedes-body-repair-dubai\".\n1 AXWebArea Mercedes Body & Accident Repair Dubai | Digi-Tec, URL: 127.0.0.1:5201/services/mercedes-body-repair-dubai\n\t2 container root\n\t\t3 container Notifications (F8)\n\t\t\t4 content list\n\t\t5 container Notifications alt+T\n\t\t6 container\n\t\t\t7 link Description: DIGI-TEC home, Value: 127.0.0.1:5201/\n\t\t\t8 button (collapsed) Menu, Secondary Actions: Expand\n\t\t\t\t9 image\n\t\t\t\t10 text Menu\n\t\t\t11 button Description: U"
+    },
+    {
+      "label": "A",
+      "round": 2,
+      "action": "body390-frame",
+      "startedAt": "2026-10-26T11:02:27.069Z",
+      "finishedAt": "2026-10-26T11:02:27.287Z",
+      "logs": [],
+      "observation": "Browser tab: 16, Title: \"Phase 4C candidate local responsive QA 390px\", URL: \"http://127.0.0.1:5201/__phase4_frame?width=390&height=844&path=/services/mercedes-body-repair-dubai\".\n1 AXWebArea Phase 4C candidate local responsive QA 390px, URL: 127.0.0.1:5201/__phase4_frame?width=390&height=844&path=/services/mercedes-body-repair-dubai\n\t2 text LOCAL QA candidate passive — 390 × 844 CSS pixels, desktop browser engine. Contact intercepted; analytics blocked.\n\t3 container Mercedes candidate 390 pixel responsive viewport\n\t\t4 AXWebArea Mercedes Body &",
+      "metrics": "{\n  \"url\": \"http://127.0.0.1:5201/services/mercedes-body-repair-dubai\",\n  \"path\": \"/services/mercedes-body-repair-dubai\",\n  \"hash\": \"\",\n  \"title\": \"Mercedes Body & Accident Repair Dubai | Digi-Tec\",\n  \"readyState\": \"complete\",\n  \"width\": 390,\n  \"height\": 844,\n  \"clientWidth\": 382,\n  \"scrollWidth\": 382,\n  \"rootPresent\": true,\n  \"bodyPresent\": true,\n  \"active\": {\n    \"tag\": \"BODY\",\n    \"label\": \"<iframe src=\\\"https://www.googletagmanager.com/ns.html?id=GTM-T3GVSPND\\\"\\n    height=\\\"0\\\" width=\\\"0\\\" style=\\\"display:none;visibility:hidden\\\"></iframe>\\n    \\n    MenuENEnglishالعربيةAbout UsServicesBrandsGADV\",\n    \"href\": null\n  },\n  \"scripts\": [\n    {\n      \"src\": \"https://www.googletagmanager.com/gtm.js?id=GTM-T3GVSPND\",\n      \"type\": null,\n      \"qa\": false\n    },\n    {\n      \"src\": null,\n      \"type\": null,\n      \"qa\": true\n    },\n    {\n      \"src\": null,\n      \"type\": null,\n      \"qa\": false\n    },\n    {\n      \"src\": null,\n      \"type\": \"application/ld+json\",\n      \"qa\": false\n    },\n    {\n      \"src\": \"https://www.googletagmanager.com/gtag/js?id=G-4TRCEJSY4S\",\n      \"type\": null,\n      \"qa\": false\n    },\n    {\n      \"src\": null,\n      \"type\": null,\n      \"qa\": false\n    },\n    {\n      \"src\": \"http://127.0.0.1:5201/assets/index-DxoEjBa9.js\",\n      \"type\": \"module\",\n      \"qa\": false\n    },\n    {\n      \"src\": null,\n      \"type\": \"application/ld+json\",\n      \"qa\": false\n    }\n  ],\n  \"resources\": [\n    {\n      \"name\": \"http://127.0.0.1:5201/assets/index-DxoEjBa9.js\",\n      \"startTime\": 16.899999976158142,\n      \"duration\": 13\n    },\n    {\n      \"name\": \"http://127.0.0.1:5201/assets/index-CumuXRQA.css\",\n      \"startTime\": 17.100000023841858,\n      \"duration\": 10.399999976158142\n    },\n    {\n      \"name\": \"https://www.googletagmanager.com/gtm.js?id=GTM-T3GVSPND\",\n      \"startTime\": 18.100000023841858,\n      \"duration\": 0\n    }\n  ],\n  \"focus\": {\n    \"tag\": \"BODY\",\n    \"text\": \"<iframe src=\\\"https://www.googletagmanager.com/ns.html?id=GTM-T3GVSPND\\\"\\n    height=\\\"0\\\" width=\\\"0\\\" style=\\\"display:none;visibility:hidden\\\"></iframe>\\n    \\n    MenuENEnglishالعربيةAbout \",\n    \"href\": null,\n    \"focusVisible\": false,\n    \"outline\": \"rgb(248, 248, 248) none 2.66667px\",\n    \"boxShadow\": \"none\",\n    \"rect\": {\n      \"x\": 0,\n      \"y\": 0,\n      \"width\": 382,\n      \"height\": 9361.771484375,\n      \"top\": 0,\n      \"right\": 382,\n      \"bottom\": 9361.771484375,\n      \"left\": 0\n    }\n  }\n}"
+    },
+    {
+      "label": "B",
+      "round": 2,
+      "action": "hub-direct",
+      "startedAt": "2026-10-26T11:02:27.295Z",
+      "finishedAt": "2026-10-26T11:02:27.582Z",
+      "logs": [],
+      "observation": "Browser tab: 17, Title: \"Mercedes Service Dubai | Maintenance & Repair | DIGI-TEC\", URL: \"http://127.0.0.1:5202/brands/mercedes-benz-service-dubai\".\n1 AXWebArea Mercedes Service Dubai | Maintenance & Repair | DIGI-TEC, URL: 127.0.0.1:5202/brands/mercedes-benz-service-dubai\n\t2 container root\n\t\t3 container Notifications (F8)\n\t\t\t4 content list\n\t\t5 container Notifications alt+T\n\t\t6 container\n\t\t\t7 link Description: DIGI-TEC home, Value: 127.0.0.1:5202/\n\t\t\t8 button (collapsed) Menu, Secondary Actions: Expand\n\t\t\t\t9 image\n\t\t\t\t10 text Menu\n\t\t\t11 button "
+    },
+    {
+      "label": "B",
+      "round": 2,
+      "action": "diagnostics-card",
+      "startedAt": "2026-10-26T11:02:27.582Z",
+      "finishedAt": "2026-10-26T11:02:27.837Z",
+      "logs": [],
+      "observation": "Browser tab: 17, Title: \"Mercedes Diagnostics Dubai | XENTRY Fault Tracing | DIGI-TEC\", URL: \"http://127.0.0.1:5202/services/mercedes-diagnostics-dubai\".\n1 AXWebArea Mercedes Diagnostics Dubai | XENTRY Fault Tracing | DIGI-TEC, URL: 127.0.0.1:5202/services/mercedes-diagnostics-dubai\n\t2 container root\n\t\t3 container Notifications (F8)\n\t\t\t4 content list\n\t\t5 container Notifications alt+T\n\t\t6 container\n\t\t\t7 link Description: DIGI-TEC home, Value: 127.0.0.1:5202/\n\t\t\t8 button (collapsed) Menu, Secondary Actions: Expand\n\t\t\t\t9 image\n\t\t\t\t10 text Menu\n\t\t\t"
+    },
+    {
+      "label": "B",
+      "round": 2,
+      "action": "back-hub",
+      "startedAt": "2026-10-26T11:02:27.837Z",
+      "finishedAt": "2026-10-26T11:02:27.978Z",
+      "logs": [],
+      "observation": "Browser tab: 17, Title: \"Mercedes Service Dubai | Maintenance & Repair | DIGI-TEC\", URL: \"http://127.0.0.1:5202/brands/mercedes-benz-service-dubai\".\n1 AXWebArea Mercedes Service Dubai | Maintenance & Repair | DIGI-TEC, URL: 127.0.0.1:5202/brands/mercedes-benz-service-dubai\n\t2 container root\n\t\t3 container Notifications (F8)\n\t\t\t4 content list\n\t\t5 container Notifications alt+T\n\t\t6 container\n\t\t\t7 link Description: DIGI-TEC home, Value: 127.0.0.1:5202/\n\t\t\t8 button (collapsed) Menu, Secondary Actions: Expand\n\t\t\t\t9 image\n\t\t\t\t10 text Menu\n\t\t\t11 button "
+    },
+    {
+      "label": "B",
+      "round": 2,
+      "action": "body-direct",
+      "startedAt": "2026-10-26T11:02:27.978Z",
+      "finishedAt": "2026-10-26T11:02:28.184Z",
+      "logs": [],
+      "observation": "Browser tab: 17, Title: \"Mercedes Body & Accident Repair Dubai | Digi-Tec\", URL: \"http://127.0.0.1:5202/services/mercedes-body-repair-dubai\".\n1 AXWebArea Mercedes Body & Accident Repair Dubai | Digi-Tec, URL: 127.0.0.1:5202/services/mercedes-body-repair-dubai\n\t2 container root\n\t\t3 container Notifications (F8)\n\t\t\t4 content list\n\t\t5 container Notifications alt+T\n\t\t6 container\n\t\t\t7 link Description: DIGI-TEC home, Value: 127.0.0.1:5202/\n\t\t\t8 button (collapsed) Menu, Secondary Actions: Expand\n\t\t\t\t9 image\n\t\t\t\t10 text Menu\n\t\t\t11 button Description: U"
+    },
+    {
+      "label": "B",
+      "round": 2,
+      "action": "body390-frame",
+      "startedAt": "2026-10-26T11:02:28.184Z",
+      "finishedAt": "2026-10-26T11:02:28.403Z",
+      "logs": [],
+      "observation": "Browser tab: 17, Title: \"Phase 4C release-b local responsive QA 390px\", URL: \"http://127.0.0.1:5202/__phase4_frame?width=390&height=844&path=/services/mercedes-body-repair-dubai\".\n1 AXWebArea Phase 4C release-b local responsive QA 390px, URL: 127.0.0.1:5202/__phase4_frame?width=390&height=844&path=/services/mercedes-body-repair-dubai\n\t2 text LOCAL QA release-b passive — 390 × 844 CSS pixels, desktop browser engine. Contact intercepted; analytics blocked.\n\t3 container Mercedes release-b 390 pixel responsive viewport\n\t\t4 AXWebArea Mercedes Body &",
+      "metrics": "{\n  \"url\": \"http://127.0.0.1:5202/services/mercedes-body-repair-dubai\",\n  \"path\": \"/services/mercedes-body-repair-dubai\",\n  \"hash\": \"\",\n  \"title\": \"Mercedes Body & Accident Repair Dubai | Digi-Tec\",\n  \"readyState\": \"complete\",\n  \"width\": 390,\n  \"height\": 844,\n  \"clientWidth\": 382,\n  \"scrollWidth\": 382,\n  \"rootPresent\": true,\n  \"bodyPresent\": true,\n  \"active\": {\n    \"tag\": \"BODY\",\n    \"label\": \"<iframe src=\\\"https://www.googletagmanager.com/ns.html?id=GTM-T3GVSPND\\\"\\n    height=\\\"0\\\" width=\\\"0\\\" style=\\\"display:none;visibility:hidden\\\"></iframe>\\n    \\n    MenuENEnglishالعربيةAbout UsServicesBrandsGADV\",\n    \"href\": null\n  },\n  \"scripts\": [\n    {\n      \"src\": \"https://www.googletagmanager.com/gtm.js?id=GTM-T3GVSPND\",\n      \"type\": null,\n      \"qa\": false\n    },\n    {\n      \"src\": null,\n      \"type\": null,\n      \"qa\": true\n    },\n    {\n      \"src\": null,\n      \"type\": null,\n      \"qa\": false\n    },\n    {\n      \"src\": null,\n      \"type\": \"application/ld+json\",\n      \"qa\": false\n    },\n    {\n      \"src\": \"https://www.googletagmanager.com/gtag/js?id=G-4TRCEJSY4S\",\n      \"type\": null,\n      \"qa\": false\n    },\n    {\n      \"src\": null,\n      \"type\": null,\n      \"qa\": false\n    },\n    {\n      \"src\": \"http://127.0.0.1:5202/assets/index-DxoEjBa9.js\",\n      \"type\": \"module\",\n      \"qa\": false\n    },\n    {\n      \"src\": null,\n      \"type\": \"application/ld+json\",\n      \"qa\": false\n    }\n  ],\n  \"resources\": [\n    {\n      \"name\": \"http://127.0.0.1:5202/assets/index-DxoEjBa9.js\",\n      \"startTime\": 14.200000047683716,\n      \"duration\": 12.5\n    },\n    {\n      \"name\": \"http://127.0.0.1:5202/assets/index-CumuXRQA.css\",\n      \"startTime\": 14.300000071525574,\n      \"duration\": 13\n    },\n    {\n      \"name\": \"https://www.googletagmanager.com/gtm.js?id=GTM-T3GVSPND\",\n      \"startTime\": 15.399999976158142,\n      \"duration\": 0\n    }\n  ],\n  \"focus\": {\n    \"tag\": \"BODY\",\n    \"text\": \"<iframe src=\\\"https://www.googletagmanager.com/ns.html?id=GTM-T3GVSPND\\\"\\n    height=\\\"0\\\" width=\\\"0\\\" style=\\\"display:none;visibility:hidden\\\"></iframe>\\n    \\n    MenuENEnglishالعربيةAbout \",\n    \"href\": null,\n    \"focusVisible\": false,\n    \"outline\": \"rgb(248, 248, 248) none 2.66667px\",\n    \"boxShadow\": \"none\",\n    \"rect\": {\n      \"x\": 0,\n      \"y\": 0,\n      \"width\": 382,\n      \"height\": 9361.771484375,\n      \"top\": 0,\n      \"right\": 382,\n      \"bottom\": 9361.771484375,\n      \"left\": 0\n    }\n  }\n}"
+    },
+    {
+      "label": "baseline",
+      "round": 3,
+      "action": "hub-direct",
+      "startedAt": "2026-10-26T11:02:28.410Z",
+      "finishedAt": "2026-10-26T11:02:28.668Z",
+      "logs": [],
+      "observation": "Browser tab: 15, Title: \"Mercedes Service Dubai | Maintenance & Repair | DIGI-TEC\", URL: \"http://127.0.0.1:5200/brands/mercedes-benz-service-dubai\".\n1 AXWebArea Mercedes Service Dubai | Maintenance & Repair | DIGI-TEC, URL: 127.0.0.1:5200/brands/mercedes-benz-service-dubai\n\t2 container root\n\t\t3 container Notifications (F8)\n\t\t\t4 content list\n\t\t5 container Notifications alt+T\n\t\t6 container\n\t\t\t7 link Description: DIGI-TEC home, Value: 127.0.0.1:5200/\n\t\t\t8 button (collapsed) Menu, Secondary Actions: Expand\n\t\t\t\t9 image\n\t\t\t\t10 text Menu\n\t\t\t11 button "
+    },
+    {
+      "label": "baseline",
+      "round": 3,
+      "action": "diagnostics-card",
+      "startedAt": "2026-10-26T11:02:28.668Z",
+      "finishedAt": "2026-10-26T11:02:28.960Z",
+      "logs": [],
+      "observation": "Browser tab: 15, Title: \"Mercedes Diagnostics Dubai | XENTRY Fault Tracing | DIGI-TEC\", URL: \"http://127.0.0.1:5200/services/mercedes-diagnostics-dubai\".\n1 AXWebArea Mercedes Diagnostics Dubai | XENTRY Fault Tracing | DIGI-TEC, URL: 127.0.0.1:5200/services/mercedes-diagnostics-dubai\n\t2 container root\n\t\t3 container Notifications (F8)\n\t\t\t4 content list\n\t\t5 container Notifications alt+T\n\t\t6 container\n\t\t\t7 link Description: DIGI-TEC home, Value: 127.0.0.1:5200/\n\t\t\t8 button (collapsed) Menu, Secondary Actions: Expand\n\t\t\t\t9 image\n\t\t\t\t10 text Menu\n\t\t\t"
+    },
+    {
+      "label": "baseline",
+      "round": 3,
+      "action": "back-hub",
+      "startedAt": "2026-10-26T11:02:28.960Z",
+      "finishedAt": "2026-10-26T11:02:29.102Z",
+      "logs": [],
+      "observation": "Browser tab: 15, Title: \"Mercedes Service Dubai | Maintenance & Repair | DIGI-TEC\", URL: \"http://127.0.0.1:5200/brands/mercedes-benz-service-dubai\".\n1 AXWebArea Mercedes Service Dubai | Maintenance & Repair | DIGI-TEC, URL: 127.0.0.1:5200/brands/mercedes-benz-service-dubai\n\t2 container root\n\t\t3 container Notifications (F8)\n\t\t\t4 content list\n\t\t5 container Notifications alt+T\n\t\t6 container\n\t\t\t7 link Description: DIGI-TEC home, Value: 127.0.0.1:5200/\n\t\t\t8 button (collapsed) Menu, Secondary Actions: Expand\n\t\t\t\t9 image\n\t\t\t\t10 text Menu\n\t\t\t11 button "
+    },
+    {
+      "label": "baseline",
+      "round": 3,
+      "action": "body-direct",
+      "startedAt": "2026-10-26T11:02:29.102Z",
+      "finishedAt": "2026-10-26T11:02:29.290Z",
+      "logs": [],
+      "observation": "Browser tab: 15, Title: \"Mercedes Body & Accident Repair Dubai | Digi-Tec\", URL: \"http://127.0.0.1:5200/services/mercedes-body-repair-dubai\".\n1 AXWebArea Mercedes Body & Accident Repair Dubai | Digi-Tec, URL: 127.0.0.1:5200/services/mercedes-body-repair-dubai\n\t2 container root\n\t\t3 container Notifications (F8)\n\t\t\t4 content list\n\t\t5 container Notifications alt+T\n\t\t6 container\n\t\t\t7 link Description: DIGI-TEC home, Value: 127.0.0.1:5200/\n\t\t\t8 button (collapsed) Menu, Secondary Actions: Expand\n\t\t\t\t9 image\n\t\t\t\t10 text Menu\n\t\t\t11 button Description: U"
+    },
+    {
+      "label": "baseline",
+      "round": 3,
+      "action": "body390-frame",
+      "startedAt": "2026-10-26T11:02:29.290Z",
+      "finishedAt": "2026-10-26T11:02:29.505Z",
+      "logs": [],
+      "observation": "Browser tab: 15, Title: \"Phase 4C baseline local responsive QA 390px\", URL: \"http://127.0.0.1:5200/__phase4_frame?width=390&height=844&path=/services/mercedes-body-repair-dubai\".\n1 AXWebArea Phase 4C baseline local responsive QA 390px, URL: 127.0.0.1:5200/__phase4_frame?width=390&height=844&path=/services/mercedes-body-repair-dubai\n\t2 text LOCAL QA baseline passive — 390 × 844 CSS pixels, desktop browser engine. Contact intercepted; analytics blocked.\n\t3 container Mercedes baseline 390 pixel responsive viewport\n\t\t4 AXWebArea Mercedes Body & Acc",
+      "metrics": "{\n  \"url\": \"http://127.0.0.1:5200/services/mercedes-body-repair-dubai\",\n  \"path\": \"/services/mercedes-body-repair-dubai\",\n  \"hash\": \"\",\n  \"title\": \"Mercedes Body & Accident Repair Dubai | Digi-Tec\",\n  \"readyState\": \"complete\",\n  \"width\": 390,\n  \"height\": 844,\n  \"clientWidth\": 382,\n  \"scrollWidth\": 382,\n  \"rootPresent\": true,\n  \"bodyPresent\": true,\n  \"active\": {\n    \"tag\": \"BODY\",\n    \"label\": \"<iframe src=\\\"https://www.googletagmanager.com/ns.html?id=GTM-T3GVSPND\\\"\\n    height=\\\"0\\\" width=\\\"0\\\" style=\\\"display:none;visibility:hidden\\\"></iframe>\\n    \\n    MenuENEnglishالعربيةAbout UsServicesBrandsGADV\",\n    \"href\": null\n  },\n  \"scripts\": [\n    {\n      \"src\": \"https://www.googletagmanager.com/gtm.js?id=GTM-T3GVSPND\",\n      \"type\": null,\n      \"qa\": false\n    },\n    {\n      \"src\": null,\n      \"type\": null,\n      \"qa\": true\n    },\n    {\n      \"src\": null,\n      \"type\": null,\n      \"qa\": false\n    },\n    {\n      \"src\": null,\n      \"type\": \"application/ld+json\",\n      \"qa\": false\n    },\n    {\n      \"src\": \"https://www.googletagmanager.com/gtag/js?id=G-4TRCEJSY4S\",\n      \"type\": null,\n      \"qa\": false\n    },\n    {\n      \"src\": null,\n      \"type\": null,\n      \"qa\": false\n    },\n    {\n      \"src\": \"http://127.0.0.1:5200/assets/index-CvWuKuLH.js\",\n      \"type\": \"module\",\n      \"qa\": false\n    },\n    {\n      \"src\": null,\n      \"type\": \"application/ld+json\",\n      \"qa\": false\n    }\n  ],\n  \"resources\": [\n    {\n      \"name\": \"http://127.0.0.1:5200/assets/index-CumuXRQA.css\",\n      \"startTime\": 14.099999904632568,\n      \"duration\": 5.600000023841858\n    },\n    {\n      \"name\": \"http://127.0.0.1:5200/assets/index-CvWuKuLH.js\",\n      \"startTime\": 14.099999904632568,\n      \"duration\": 5.400000095367432\n    },\n    {\n      \"name\": \"https://www.googletagmanager.com/gtm.js?id=GTM-T3GVSPND\",\n      \"startTime\": 15.199999928474426,\n      \"duration\": 0\n    }\n  ],\n  \"focus\": {\n    \"tag\": \"BODY\",\n    \"text\": \"<iframe src=\\\"https://www.googletagmanager.com/ns.html?id=GTM-T3GVSPND\\\"\\n    height=\\\"0\\\" width=\\\"0\\\" style=\\\"display:none;visibility:hidden\\\"></iframe>\\n    \\n    MenuENEnglishالعربيةAbout \",\n    \"href\": null,\n    \"focusVisible\": false,\n    \"outline\": \"rgb(248, 248, 248) none 2.66667px\",\n    \"boxShadow\": \"none\",\n    \"rect\": {\n      \"x\": 0,\n      \"y\": 0,\n      \"width\": 382,\n      \"height\": 9335.177734375,\n      \"top\": 0,\n      \"right\": 382,\n      \"bottom\": 9335.177734375,\n      \"left\": 0\n    }\n  }\n}"
+    },
+    {
+      "label": "A",
+      "round": 3,
+      "action": "hub-direct",
+      "startedAt": "2026-10-26T11:02:29.513Z",
+      "finishedAt": "2026-10-26T11:02:29.795Z",
+      "logs": [],
+      "observation": "Browser tab: 16, Title: \"Mercedes Service Dubai | Maintenance & Repair | DIGI-TEC\", URL: \"http://127.0.0.1:5201/brands/mercedes-benz-service-dubai\".\n1 AXWebArea Mercedes Service Dubai | Maintenance & Repair | DIGI-TEC, URL: 127.0.0.1:5201/brands/mercedes-benz-service-dubai\n\t2 container root\n\t\t3 container Notifications (F8)\n\t\t\t4 content list\n\t\t5 container Notifications alt+T\n\t\t6 container\n\t\t\t7 link Description: DIGI-TEC home, Value: 127.0.0.1:5201/\n\t\t\t8 button (collapsed) Menu, Secondary Actions: Expand\n\t\t\t\t9 image\n\t\t\t\t10 text Menu\n\t\t\t11 button "
+    },
+    {
+      "label": "A",
+      "round": 3,
+      "action": "diagnostics-card",
+      "startedAt": "2026-10-26T11:02:29.795Z",
+      "finishedAt": "2026-10-26T11:02:30.066Z",
+      "logs": [],
+      "observation": "Browser tab: 16, Title: \"Mercedes Diagnostics Dubai | XENTRY Fault Tracing | DIGI-TEC\", URL: \"http://127.0.0.1:5201/services/mercedes-diagnostics-dubai\".\n1 AXWebArea Mercedes Diagnostics Dubai | XENTRY Fault Tracing | DIGI-TEC, URL: 127.0.0.1:5201/services/mercedes-diagnostics-dubai\n\t2 container root\n\t\t3 container Notifications (F8)\n\t\t\t4 content list\n\t\t5 container Notifications alt+T\n\t\t6 container\n\t\t\t7 link Description: DIGI-TEC home, Value: 127.0.0.1:5201/\n\t\t\t8 button (collapsed) Menu, Secondary Actions: Expand\n\t\t\t\t9 image\n\t\t\t\t10 text Menu\n\t\t\t"
+    },
+    {
+      "label": "A",
+      "round": 3,
+      "action": "back-hub",
+      "startedAt": "2026-10-26T11:02:30.066Z",
+      "finishedAt": "2026-10-26T11:02:30.208Z",
+      "logs": [],
+      "observation": "Browser tab: 16, Title: \"Mercedes Service Dubai | Maintenance & Repair | DIGI-TEC\", URL: \"http://127.0.0.1:5201/brands/mercedes-benz-service-dubai\".\n1 AXWebArea Mercedes Service Dubai | Maintenance & Repair | DIGI-TEC, URL: 127.0.0.1:5201/brands/mercedes-benz-service-dubai\n\t2 container root\n\t\t3 container Notifications (F8)\n\t\t\t4 content list\n\t\t5 container Notifications alt+T\n\t\t6 container\n\t\t\t7 link Description: DIGI-TEC home, Value: 127.0.0.1:5201/\n\t\t\t8 button (collapsed) Menu, Secondary Actions: Expand\n\t\t\t\t9 image\n\t\t\t\t10 text Menu\n\t\t\t11 button "
+    },
+    {
+      "label": "A",
+      "round": 3,
+      "action": "body-direct",
+      "startedAt": "2026-10-26T11:02:30.208Z",
+      "finishedAt": "2026-10-26T11:02:30.398Z",
+      "logs": [],
+      "observation": "Browser tab: 16, Title: \"Mercedes Body & Accident Repair Dubai | Digi-Tec\", URL: \"http://127.0.0.1:5201/services/mercedes-body-repair-dubai\".\n1 AXWebArea Mercedes Body & Accident Repair Dubai | Digi-Tec, URL: 127.0.0.1:5201/services/mercedes-body-repair-dubai\n\t2 container root\n\t\t3 container Notifications (F8)\n\t\t\t4 content list\n\t\t5 container Notifications alt+T\n\t\t6 container\n\t\t\t7 link Description: DIGI-TEC home, Value: 127.0.0.1:5201/\n\t\t\t8 button (collapsed) Menu, Secondary Actions: Expand\n\t\t\t\t9 image\n\t\t\t\t10 text Menu\n\t\t\t11 button Description: U"
+    },
+    {
+      "label": "A",
+      "round": 3,
+      "action": "body390-frame",
+      "startedAt": "2026-10-26T11:02:30.398Z",
+      "finishedAt": "2026-10-26T11:02:30.632Z",
+      "logs": [],
+      "observation": "Browser tab: 16, Title: \"Phase 4C candidate local responsive QA 390px\", URL: \"http://127.0.0.1:5201/__phase4_frame?width=390&height=844&path=/services/mercedes-body-repair-dubai\".\n1 AXWebArea Phase 4C candidate local responsive QA 390px, URL: 127.0.0.1:5201/__phase4_frame?width=390&height=844&path=/services/mercedes-body-repair-dubai\n\t2 text LOCAL QA candidate passive — 390 × 844 CSS pixels, desktop browser engine. Contact intercepted; analytics blocked.\n\t3 container Mercedes candidate 390 pixel responsive viewport\n\t\t4 AXWebArea Mercedes Body &",
+      "metrics": "{\n  \"url\": \"http://127.0.0.1:5201/services/mercedes-body-repair-dubai\",\n  \"path\": \"/services/mercedes-body-repair-dubai\",\n  \"hash\": \"\",\n  \"title\": \"Mercedes Body & Accident Repair Dubai | Digi-Tec\",\n  \"readyState\": \"complete\",\n  \"width\": 390,\n  \"height\": 844,\n  \"clientWidth\": 382,\n  \"scrollWidth\": 382,\n  \"rootPresent\": true,\n  \"bodyPresent\": true,\n  \"active\": {\n    \"tag\": \"BODY\",\n    \"label\": \"<iframe src=\\\"https://www.googletagmanager.com/ns.html?id=GTM-T3GVSPND\\\"\\n    height=\\\"0\\\" width=\\\"0\\\" style=\\\"display:none;visibility:hidden\\\"></iframe>\\n    \\n    MenuENEnglishالعربيةAbout UsServicesBrandsGADV\",\n    \"href\": null\n  },\n  \"scripts\": [\n    {\n      \"src\": \"https://www.googletagmanager.com/gtm.js?id=GTM-T3GVSPND\",\n      \"type\": null,\n      \"qa\": false\n    },\n    {\n      \"src\": null,\n      \"type\": null,\n      \"qa\": true\n    },\n    {\n      \"src\": null,\n      \"type\": null,\n      \"qa\": false\n    },\n    {\n      \"src\": null,\n      \"type\": \"application/ld+json\",\n      \"qa\": false\n    },\n    {\n      \"src\": \"https://www.googletagmanager.com/gtag/js?id=G-4TRCEJSY4S\",\n      \"type\": null,\n      \"qa\": false\n    },\n    {\n      \"src\": null,\n      \"type\": null,\n      \"qa\": false\n    },\n    {\n      \"src\": \"http://127.0.0.1:5201/assets/index-DxoEjBa9.js\",\n      \"type\": \"module\",\n      \"qa\": false\n    },\n    {\n      \"src\": null,\n      \"type\": \"application/ld+json\",\n      \"qa\": false\n    }\n  ],\n  \"resources\": [\n    {\n      \"name\": \"http://127.0.0.1:5201/assets/index-DxoEjBa9.js\",\n      \"startTime\": 15.600000023841858,\n      \"duration\": 13.799999952316284\n    },\n    {\n      \"name\": \"http://127.0.0.1:5201/assets/index-CumuXRQA.css\",\n      \"startTime\": 15.699999928474426,\n      \"duration\": 12\n    },\n    {\n      \"name\": \"https://www.googletagmanager.com/gtm.js?id=GTM-T3GVSPND\",\n      \"startTime\": 16.799999952316284,\n      \"duration\": 0\n    }\n  ],\n  \"focus\": {\n    \"tag\": \"BODY\",\n    \"text\": \"<iframe src=\\\"https://www.googletagmanager.com/ns.html?id=GTM-T3GVSPND\\\"\\n    height=\\\"0\\\" width=\\\"0\\\" style=\\\"display:none;visibility:hidden\\\"></iframe>\\n    \\n    MenuENEnglishالعربيةAbout \",\n    \"href\": null,\n    \"focusVisible\": false,\n    \"outline\": \"rgb(248, 248, 248) none 2.66667px\",\n    \"boxShadow\": \"none\",\n    \"rect\": {\n      \"x\": 0,\n      \"y\": 0,\n      \"width\": 382,\n      \"height\": 9361.771484375,\n      \"top\": 0,\n      \"right\": 382,\n      \"bottom\": 9361.771484375,\n      \"left\": 0\n    }\n  }\n}"
+    },
+    {
+      "label": "B",
+      "round": 3,
+      "action": "hub-direct",
+      "startedAt": "2026-10-26T11:02:30.639Z",
+      "finishedAt": "2026-10-26T11:02:30.893Z",
+      "logs": [],
+      "observation": "Browser tab: 17, Title: \"Mercedes Service Dubai | Maintenance & Repair | DIGI-TEC\", URL: \"http://127.0.0.1:5202/brands/mercedes-benz-service-dubai\".\n1 AXWebArea Mercedes Service Dubai | Maintenance & Repair | DIGI-TEC, URL: 127.0.0.1:5202/brands/mercedes-benz-service-dubai\n\t2 container root\n\t\t3 container Notifications (F8)\n\t\t\t4 content list\n\t\t5 container Notifications alt+T\n\t\t6 container\n\t\t\t7 link Description: DIGI-TEC home, Value: 127.0.0.1:5202/\n\t\t\t8 button (collapsed) Menu, Secondary Actions: Expand\n\t\t\t\t9 image\n\t\t\t\t10 text Menu\n\t\t\t11 button "
+    },
+    {
+      "label": "B",
+      "round": 3,
+      "action": "diagnostics-card",
+      "startedAt": "2026-10-26T11:02:30.893Z",
+      "finishedAt": "2026-10-26T11:02:31.152Z",
+      "logs": [],
+      "observation": "Browser tab: 17, Title: \"Mercedes Diagnostics Dubai | XENTRY Fault Tracing | DIGI-TEC\", URL: \"http://127.0.0.1:5202/services/mercedes-diagnostics-dubai\".\n1 AXWebArea Mercedes Diagnostics Dubai | XENTRY Fault Tracing | DIGI-TEC, URL: 127.0.0.1:5202/services/mercedes-diagnostics-dubai\n\t2 container root\n\t\t3 container Notifications (F8)\n\t\t\t4 content list\n\t\t5 container Notifications alt+T\n\t\t6 container\n\t\t\t7 link Description: DIGI-TEC home, Value: 127.0.0.1:5202/\n\t\t\t8 button (collapsed) Menu, Secondary Actions: Expand\n\t\t\t\t9 image\n\t\t\t\t10 text Menu\n\t\t\t"
+    },
+    {
+      "label": "B",
+      "round": 3,
+      "action": "back-hub",
+      "startedAt": "2026-10-26T11:02:31.152Z",
+      "finishedAt": "2026-10-26T11:02:31.294Z",
+      "logs": [],
+      "observation": "Browser tab: 17, Title: \"Mercedes Service Dubai | Maintenance & Repair | DIGI-TEC\", URL: \"http://127.0.0.1:5202/brands/mercedes-benz-service-dubai\".\n1 AXWebArea Mercedes Service Dubai | Maintenance & Repair | DIGI-TEC, URL: 127.0.0.1:5202/brands/mercedes-benz-service-dubai\n\t2 container root\n\t\t3 container Notifications (F8)\n\t\t\t4 content list\n\t\t5 container Notifications alt+T\n\t\t6 container\n\t\t\t7 link Description: DIGI-TEC home, Value: 127.0.0.1:5202/\n\t\t\t8 button (collapsed) Menu, Secondary Actions: Expand\n\t\t\t\t9 image\n\t\t\t\t10 text Menu\n\t\t\t11 button "
+    },
+    {
+      "label": "B",
+      "round": 3,
+      "action": "body-direct",
+      "startedAt": "2026-10-26T11:02:31.294Z",
+      "finishedAt": "2026-10-26T11:02:31.490Z",
+      "logs": [],
+      "observation": "Browser tab: 17, Title: \"Mercedes Body & Accident Repair Dubai | Digi-Tec\", URL: \"http://127.0.0.1:5202/services/mercedes-body-repair-dubai\".\n1 AXWebArea Mercedes Body & Accident Repair Dubai | Digi-Tec, URL: 127.0.0.1:5202/services/mercedes-body-repair-dubai\n\t2 container root\n\t\t3 container Notifications (F8)\n\t\t\t4 content list\n\t\t5 container Notifications alt+T\n\t\t6 container\n\t\t\t7 link Description: DIGI-TEC home, Value: 127.0.0.1:5202/\n\t\t\t8 button (collapsed) Menu, Secondary Actions: Expand\n\t\t\t\t9 image\n\t\t\t\t10 text Menu\n\t\t\t11 button Description: U"
+    },
+    {
+      "label": "B",
+      "round": 3,
+      "action": "body390-frame",
+      "startedAt": "2026-10-26T11:02:31.490Z",
+      "finishedAt": "2026-10-26T11:02:31.743Z",
+      "logs": [],
+      "observation": "Browser tab: 17, Title: \"Phase 4C release-b local responsive QA 390px\", URL: \"http://127.0.0.1:5202/__phase4_frame?width=390&height=844&path=/services/mercedes-body-repair-dubai\".\n1 AXWebArea Phase 4C release-b local responsive QA 390px, URL: 127.0.0.1:5202/__phase4_frame?width=390&height=844&path=/services/mercedes-body-repair-dubai\n\t2 text LOCAL QA release-b passive — 390 × 844 CSS pixels, desktop browser engine. Contact intercepted; analytics blocked.\n\t3 container Mercedes release-b 390 pixel responsive viewport\n\t\t4 AXWebArea Mercedes Body &",
+      "metrics": "{\n  \"url\": \"http://127.0.0.1:5202/services/mercedes-body-repair-dubai\",\n  \"path\": \"/services/mercedes-body-repair-dubai\",\n  \"hash\": \"\",\n  \"title\": \"Mercedes Body & Accident Repair Dubai | Digi-Tec\",\n  \"readyState\": \"complete\",\n  \"width\": 390,\n  \"height\": 844,\n  \"clientWidth\": 382,\n  \"scrollWidth\": 382,\n  \"rootPresent\": true,\n  \"bodyPresent\": true,\n  \"active\": {\n    \"tag\": \"BODY\",\n    \"label\": \"<iframe src=\\\"https://www.googletagmanager.com/ns.html?id=GTM-T3GVSPND\\\"\\n    height=\\\"0\\\" width=\\\"0\\\" style=\\\"display:none;visibility:hidden\\\"></iframe>\\n    \\n    MenuENEnglishالعربيةAbout UsServicesBrandsGADV\",\n    \"href\": null\n  },\n  \"scripts\": [\n    {\n      \"src\": \"https://www.googletagmanager.com/gtm.js?id=GTM-T3GVSPND\",\n      \"type\": null,\n      \"qa\": false\n    },\n    {\n      \"src\": null,\n      \"type\": null,\n      \"qa\": true\n    },\n    {\n      \"src\": null,\n      \"type\": null,\n      \"qa\": false\n    },\n    {\n      \"src\": null,\n      \"type\": \"application/ld+json\",\n      \"qa\": false\n    },\n    {\n      \"src\": \"https://www.googletagmanager.com/gtag/js?id=G-4TRCEJSY4S\",\n      \"type\": null,\n      \"qa\": false\n    },\n    {\n      \"src\": null,\n      \"type\": null,\n      \"qa\": false\n    },\n    {\n      \"src\": \"http://127.0.0.1:5202/assets/index-DxoEjBa9.js\",\n      \"type\": \"module\",\n      \"qa\": false\n    },\n    {\n      \"src\": null,\n      \"type\": \"application/ld+json\",\n      \"qa\": false\n    }\n  ],\n  \"resources\": [\n    {\n      \"name\": \"http://127.0.0.1:5202/assets/index-DxoEjBa9.js\",\n      \"startTime\": 13.899999976158142,\n      \"duration\": 9.600000023841858\n    },\n    {\n      \"name\": \"http://127.0.0.1:5202/assets/index-CumuXRQA.css\",\n      \"startTime\": 14.100000023841858,\n      \"duration\": 7.600000023841858\n    },\n    {\n      \"name\": \"https://www.googletagmanager.com/gtm.js?id=GTM-T3GVSPND\",\n      \"startTime\": 15.399999976158142,\n      \"duration\": 0\n    }\n  ],\n  \"focus\": {\n    \"tag\": \"BODY\",\n    \"text\": \"<iframe src=\\\"https://www.googletagmanager.com/ns.html?id=GTM-T3GVSPND\\\"\\n    height=\\\"0\\\" width=\\\"0\\\" style=\\\"display:none;visibility:hidden\\\"></iframe>\\n    \\n    MenuENEnglishالعربيةAbout \",\n    \"href\": null,\n    \"focusVisible\": false,\n    \"outline\": \"rgb(248, 248, 248) none 2.66667px\",\n    \"boxShadow\": \"none\",\n    \"rect\": {\n      \"x\": 0,\n      \"y\": 0,\n      \"width\": 382,\n      \"height\": 9361.771484375,\n      \"top\": 0,\n      \"right\": 382,\n      \"bottom\": 9361.771484375,\n      \"left\": 0\n    }\n  }\n}"
+    },
+    {
+      "label": "baseline",
+      "round": 4,
+      "action": "hub-direct",
+      "startedAt": "2026-10-26T11:02:31.749Z",
+      "finishedAt": "2026-10-26T11:02:31.996Z",
+      "logs": [],
+      "observation": "Browser tab: 15, Title: \"Mercedes Service Dubai | Maintenance & Repair | DIGI-TEC\", URL: \"http://127.0.0.1:5200/brands/mercedes-benz-service-dubai\".\n1 AXWebArea Mercedes Service Dubai | Maintenance & Repair | DIGI-TEC, URL: 127.0.0.1:5200/brands/mercedes-benz-service-dubai\n\t2 container root\n\t\t3 container Notifications (F8)\n\t\t\t4 content list\n\t\t5 container Notifications alt+T\n\t\t6 container\n\t\t\t7 link Description: DIGI-TEC home, Value: 127.0.0.1:5200/\n\t\t\t8 button (collapsed) Menu, Secondary Actions: Expand\n\t\t\t\t9 image\n\t\t\t\t10 text Menu\n\t\t\t11 button "
+    },
+    {
+      "label": "baseline",
+      "round": 4,
+      "action": "diagnostics-card",
+      "startedAt": "2026-10-26T11:02:31.996Z",
+      "finishedAt": "2026-10-26T11:02:32.259Z",
+      "logs": [],
+      "observation": "Browser tab: 15, Title: \"Mercedes Diagnostics Dubai | XENTRY Fault Tracing | DIGI-TEC\", URL: \"http://127.0.0.1:5200/services/mercedes-diagnostics-dubai\".\n1 AXWebArea Mercedes Diagnostics Dubai | XENTRY Fault Tracing | DIGI-TEC, URL: 127.0.0.1:5200/services/mercedes-diagnostics-dubai\n\t2 container root\n\t\t3 container Notifications (F8)\n\t\t\t4 content list\n\t\t5 container Notifications alt+T\n\t\t6 container\n\t\t\t7 link Description: DIGI-TEC home, Value: 127.0.0.1:5200/\n\t\t\t8 button (collapsed) Menu, Secondary Actions: Expand\n\t\t\t\t9 image\n\t\t\t\t10 text Menu\n\t\t\t"
+    },
+    {
+      "label": "baseline",
+      "round": 4,
+      "action": "back-hub",
+      "startedAt": "2026-10-26T11:02:32.259Z",
+      "finishedAt": "2026-10-26T11:02:32.391Z",
+      "logs": [],
+      "observation": "Browser tab: 15, Title: \"Mercedes Service Dubai | Maintenance & Repair | DIGI-TEC\", URL: \"http://127.0.0.1:5200/brands/mercedes-benz-service-dubai\".\n1 AXWebArea Mercedes Service Dubai | Maintenance & Repair | DIGI-TEC, URL: 127.0.0.1:5200/brands/mercedes-benz-service-dubai\n\t2 container root\n\t\t3 container Notifications (F8)\n\t\t\t4 content list\n\t\t5 container Notifications alt+T\n\t\t6 container\n\t\t\t7 link Description: DIGI-TEC home, Value: 127.0.0.1:5200/\n\t\t\t8 button (collapsed) Menu, Secondary Actions: Expand\n\t\t\t\t9 image\n\t\t\t\t10 text Menu\n\t\t\t11 button "
+    },
+    {
+      "label": "baseline",
+      "round": 4,
+      "action": "body-direct",
+      "startedAt": "2026-10-26T11:02:32.391Z",
+      "finishedAt": "2026-10-26T11:02:32.596Z",
+      "logs": [],
+      "observation": "Browser tab: 15, Title: \"Mercedes Body & Accident Repair Dubai | Digi-Tec\", URL: \"http://127.0.0.1:5200/services/mercedes-body-repair-dubai\".\n1 AXWebArea Mercedes Body & Accident Repair Dubai | Digi-Tec, URL: 127.0.0.1:5200/services/mercedes-body-repair-dubai\n\t2 container root\n\t\t3 container Notifications (F8)\n\t\t\t4 content list\n\t\t5 container Notifications alt+T\n\t\t6 container\n\t\t\t7 link Description: DIGI-TEC home, Value: 127.0.0.1:5200/\n\t\t\t8 button (collapsed) Menu, Secondary Actions: Expand\n\t\t\t\t9 image\n\t\t\t\t10 text Menu\n\t\t\t11 button Description: U"
+    },
+    {
+      "label": "baseline",
+      "round": 4,
+      "action": "body390-frame",
+      "startedAt": "2026-10-26T11:02:32.596Z",
+      "finishedAt": "2026-10-26T11:02:32.828Z",
+      "logs": [],
+      "observation": "Browser tab: 15, Title: \"Phase 4C baseline local responsive QA 390px\", URL: \"http://127.0.0.1:5200/__phase4_frame?width=390&height=844&path=/services/mercedes-body-repair-dubai\".\n1 AXWebArea Phase 4C baseline local responsive QA 390px, URL: 127.0.0.1:5200/__phase4_frame?width=390&height=844&path=/services/mercedes-body-repair-dubai\n\t2 text LOCAL QA baseline passive — 390 × 844 CSS pixels, desktop browser engine. Contact intercepted; analytics blocked.\n\t3 container Mercedes baseline 390 pixel responsive viewport\n\t\t4 AXWebArea Mercedes Body & Acc",
+      "metrics": "{\n  \"url\": \"http://127.0.0.1:5200/services/mercedes-body-repair-dubai\",\n  \"path\": \"/services/mercedes-body-repair-dubai\",\n  \"hash\": \"\",\n  \"title\": \"Mercedes Body & Accident Repair Dubai | Digi-Tec\",\n  \"readyState\": \"complete\",\n  \"width\": 390,\n  \"height\": 844,\n  \"clientWidth\": 382,\n  \"scrollWidth\": 382,\n  \"rootPresent\": true,\n  \"bodyPresent\": true,\n  \"active\": {\n    \"tag\": \"BODY\",\n    \"label\": \"<iframe src=\\\"https://www.googletagmanager.com/ns.html?id=GTM-T3GVSPND\\\"\\n    height=\\\"0\\\" width=\\\"0\\\" style=\\\"display:none;visibility:hidden\\\"></iframe>\\n    \\n    MenuENEnglishالعربيةAbout UsServicesBrandsGADV\",\n    \"href\": null\n  },\n  \"scripts\": [\n    {\n      \"src\": \"https://www.googletagmanager.com/gtm.js?id=GTM-T3GVSPND\",\n      \"type\": null,\n      \"qa\": false\n    },\n    {\n      \"src\": null,\n      \"type\": null,\n      \"qa\": true\n    },\n    {\n      \"src\": null,\n      \"type\": null,\n      \"qa\": false\n    },\n    {\n      \"src\": null,\n      \"type\": \"application/ld+json\",\n      \"qa\": false\n    },\n    {\n      \"src\": \"https://www.googletagmanager.com/gtag/js?id=G-4TRCEJSY4S\",\n      \"type\": null,\n      \"qa\": false\n    },\n    {\n      \"src\": null,\n      \"type\": null,\n      \"qa\": false\n    },\n    {\n      \"src\": \"http://127.0.0.1:5200/assets/index-CvWuKuLH.js\",\n      \"type\": \"module\",\n      \"qa\": false\n    },\n    {\n      \"src\": null,\n      \"type\": \"application/ld+json\",\n      \"qa\": false\n    }\n  ],\n  \"resources\": [\n    {\n      \"name\": \"http://127.0.0.1:5200/assets/index-CvWuKuLH.js\",\n      \"startTime\": 13.899999976158142,\n      \"duration\": 7.699999928474426\n    },\n    {\n      \"name\": \"http://127.0.0.1:5200/assets/index-CumuXRQA.css\",\n      \"startTime\": 14,\n      \"duration\": 5.799999952316284\n    },\n    {\n      \"name\": \"https://www.googletagmanager.com/gtm.js?id=GTM-T3GVSPND\",\n      \"startTime\": 15.299999952316284,\n      \"duration\": 0\n    }\n  ],\n  \"focus\": {\n    \"tag\": \"BODY\",\n    \"text\": \"<iframe src=\\\"https://www.googletagmanager.com/ns.html?id=GTM-T3GVSPND\\\"\\n    height=\\\"0\\\" width=\\\"0\\\" style=\\\"display:none;visibility:hidden\\\"></iframe>\\n    \\n    MenuENEnglishالعربيةAbout \",\n    \"href\": null,\n    \"focusVisible\": false,\n    \"outline\": \"rgb(248, 248, 248) none 2.66667px\",\n    \"boxShadow\": \"none\",\n    \"rect\": {\n      \"x\": 0,\n      \"y\": 0,\n      \"width\": 382,\n      \"height\": 9335.177734375,\n      \"top\": 0,\n      \"right\": 382,\n      \"bottom\": 9335.177734375,\n      \"left\": 0\n    }\n  }\n}"
+    },
+    {
+      "label": "A",
+      "round": 4,
+      "action": "hub-direct",
+      "startedAt": "2026-10-26T11:02:32.836Z",
+      "finishedAt": "2026-10-26T11:02:33.121Z",
+      "logs": [],
+      "observation": "Browser tab: 16, Title: \"Mercedes Service Dubai | Maintenance & Repair | DIGI-TEC\", URL: \"http://127.0.0.1:5201/brands/mercedes-benz-service-dubai\".\n1 AXWebArea Mercedes Service Dubai | Maintenance & Repair | DIGI-TEC, URL: 127.0.0.1:5201/brands/mercedes-benz-service-dubai\n\t2 container root\n\t\t3 container Notifications (F8)\n\t\t\t4 content list\n\t\t5 container Notifications alt+T\n\t\t6 container\n\t\t\t7 link Description: DIGI-TEC home, Value: 127.0.0.1:5201/\n\t\t\t8 button (collapsed) Menu, Secondary Actions: Expand\n\t\t\t\t9 image\n\t\t\t\t10 text Menu\n\t\t\t11 button "
+    },
+    {
+      "label": "A",
+      "round": 4,
+      "action": "diagnostics-card",
+      "startedAt": "2026-10-26T11:02:33.121Z",
+      "finishedAt": "2026-10-26T11:02:33.384Z",
+      "logs": [],
+      "observation": "Browser tab: 16, Title: \"Mercedes Diagnostics Dubai | XENTRY Fault Tracing | DIGI-TEC\", URL: \"http://127.0.0.1:5201/services/mercedes-diagnostics-dubai\".\n1 AXWebArea Mercedes Diagnostics Dubai | XENTRY Fault Tracing | DIGI-TEC, URL: 127.0.0.1:5201/services/mercedes-diagnostics-dubai\n\t2 container root\n\t\t3 container Notifications (F8)\n\t\t\t4 content list\n\t\t5 container Notifications alt+T\n\t\t6 container\n\t\t\t7 link Description: DIGI-TEC home, Value: 127.0.0.1:5201/\n\t\t\t8 button (collapsed) Menu, Secondary Actions: Expand\n\t\t\t\t9 image\n\t\t\t\t10 text Menu\n\t\t\t"
+    },
+    {
+      "label": "A",
+      "round": 4,
+      "action": "back-hub",
+      "startedAt": "2026-10-26T11:02:33.384Z",
+      "finishedAt": "2026-10-26T11:02:33.522Z",
+      "logs": [],
+      "observation": "Browser tab: 16, Title: \"Mercedes Service Dubai | Maintenance & Repair | DIGI-TEC\", URL: \"http://127.0.0.1:5201/brands/mercedes-benz-service-dubai\".\n1 AXWebArea Mercedes Service Dubai | Maintenance & Repair | DIGI-TEC, URL: 127.0.0.1:5201/brands/mercedes-benz-service-dubai\n\t2 container root\n\t\t3 container Notifications (F8)\n\t\t\t4 content list\n\t\t5 container Notifications alt+T\n\t\t6 container\n\t\t\t7 link Description: DIGI-TEC home, Value: 127.0.0.1:5201/\n\t\t\t8 button (collapsed) Menu, Secondary Actions: Expand\n\t\t\t\t9 image\n\t\t\t\t10 text Menu\n\t\t\t11 button "
+    },
+    {
+      "label": "A",
+      "round": 4,
+      "action": "body-direct",
+      "startedAt": "2026-10-26T11:02:33.522Z",
+      "finishedAt": "2026-10-26T11:02:33.708Z",
+      "logs": [],
+      "observation": "Browser tab: 16, Title: \"Mercedes Body & Accident Repair Dubai | Digi-Tec\", URL: \"http://127.0.0.1:5201/services/mercedes-body-repair-dubai\".\n1 AXWebArea Mercedes Body & Accident Repair Dubai | Digi-Tec, URL: 127.0.0.1:5201/services/mercedes-body-repair-dubai\n\t2 container root\n\t\t3 container Notifications (F8)\n\t\t\t4 content list\n\t\t5 container Notifications alt+T\n\t\t6 container\n\t\t\t7 link Description: DIGI-TEC home, Value: 127.0.0.1:5201/\n\t\t\t8 button (collapsed) Menu, Secondary Actions: Expand\n\t\t\t\t9 image\n\t\t\t\t10 text Menu\n\t\t\t11 button Description: U"
+    },
+    {
+      "label": "A",
+      "round": 4,
+      "action": "body390-frame",
+      "startedAt": "2026-10-26T11:02:33.708Z",
+      "finishedAt": "2026-10-26T11:02:33.926Z",
+      "logs": [],
+      "observation": "Browser tab: 16, Title: \"Phase 4C candidate local responsive QA 390px\", URL: \"http://127.0.0.1:5201/__phase4_frame?width=390&height=844&path=/services/mercedes-body-repair-dubai\".\n1 AXWebArea Phase 4C candidate local responsive QA 390px, URL: 127.0.0.1:5201/__phase4_frame?width=390&height=844&path=/services/mercedes-body-repair-dubai\n\t2 text LOCAL QA candidate passive — 390 × 844 CSS pixels, desktop browser engine. Contact intercepted; analytics blocked.\n\t3 container Mercedes candidate 390 pixel responsive viewport\n\t\t4 AXWebArea Mercedes Body &",
+      "metrics": "{\n  \"url\": \"http://127.0.0.1:5201/services/mercedes-body-repair-dubai\",\n  \"path\": \"/services/mercedes-body-repair-dubai\",\n  \"hash\": \"\",\n  \"title\": \"Mercedes Body & Accident Repair Dubai | Digi-Tec\",\n  \"readyState\": \"complete\",\n  \"width\": 390,\n  \"height\": 844,\n  \"clientWidth\": 382,\n  \"scrollWidth\": 382,\n  \"rootPresent\": true,\n  \"bodyPresent\": true,\n  \"active\": {\n    \"tag\": \"BODY\",\n    \"label\": \"<iframe src=\\\"https://www.googletagmanager.com/ns.html?id=GTM-T3GVSPND\\\"\\n    height=\\\"0\\\" width=\\\"0\\\" style=\\\"display:none;visibility:hidden\\\"></iframe>\\n    \\n    MenuENEnglishالعربيةAbout UsServicesBrandsGADV\",\n    \"href\": null\n  },\n  \"scripts\": [\n    {\n      \"src\": \"https://www.googletagmanager.com/gtm.js?id=GTM-T3GVSPND\",\n      \"type\": null,\n      \"qa\": false\n    },\n    {\n      \"src\": null,\n      \"type\": null,\n      \"qa\": true\n    },\n    {\n      \"src\": null,\n      \"type\": null,\n      \"qa\": false\n    },\n    {\n      \"src\": null,\n      \"type\": \"application/ld+json\",\n      \"qa\": false\n    },\n    {\n      \"src\": \"https://www.googletagmanager.com/gtag/js?id=G-4TRCEJSY4S\",\n      \"type\": null,\n      \"qa\": false\n    },\n    {\n      \"src\": null,\n      \"type\": null,\n      \"qa\": false\n    },\n    {\n      \"src\": \"http://127.0.0.1:5201/assets/index-DxoEjBa9.js\",\n      \"type\": \"module\",\n      \"qa\": false\n    },\n    {\n      \"src\": null,\n      \"type\": \"application/ld+json\",\n      \"qa\": false\n    }\n  ],\n  \"resources\": [\n    {\n      \"name\": \"http://127.0.0.1:5201/assets/index-DxoEjBa9.js\",\n      \"startTime\": 14.100000023841858,\n      \"duration\": 7.799999952316284\n    },\n    {\n      \"name\": \"http://127.0.0.1:5201/assets/index-CumuXRQA.css\",\n      \"startTime\": 14.299999952316284,\n      \"duration\": 7.899999976158142\n    },\n    {\n      \"name\": \"https://www.googletagmanager.com/gtm.js?id=GTM-T3GVSPND\",\n      \"startTime\": 15.600000023841858,\n      \"duration\": 0\n    }\n  ],\n  \"focus\": {\n    \"tag\": \"BODY\",\n    \"text\": \"<iframe src=\\\"https://www.googletagmanager.com/ns.html?id=GTM-T3GVSPND\\\"\\n    height=\\\"0\\\" width=\\\"0\\\" style=\\\"display:none;visibility:hidden\\\"></iframe>\\n    \\n    MenuENEnglishالعربيةAbout \",\n    \"href\": null,\n    \"focusVisible\": false,\n    \"outline\": \"rgb(248, 248, 248) none 2.66667px\",\n    \"boxShadow\": \"none\",\n    \"rect\": {\n      \"x\": 0,\n      \"y\": 0,\n      \"width\": 382,\n      \"height\": 9361.771484375,\n      \"top\": 0,\n      \"right\": 382,\n      \"bottom\": 9361.771484375,\n      \"left\": 0\n    }\n  }\n}"
+    },
+    {
+      "label": "B",
+      "round": 4,
+      "action": "hub-direct",
+      "startedAt": "2026-10-26T11:02:33.934Z",
+      "finishedAt": "2026-10-26T11:02:34.207Z",
+      "logs": [],
+      "observation": "Browser tab: 17, Title: \"Mercedes Service Dubai | Maintenance & Repair | DIGI-TEC\", URL: \"http://127.0.0.1:5202/brands/mercedes-benz-service-dubai\".\n1 AXWebArea Mercedes Service Dubai | Maintenance & Repair | DIGI-TEC, URL: 127.0.0.1:5202/brands/mercedes-benz-service-dubai\n\t2 container root\n\t\t3 container Notifications (F8)\n\t\t\t4 content list\n\t\t5 container Notifications alt+T\n\t\t6 container\n\t\t\t7 link Description: DIGI-TEC home, Value: 127.0.0.1:5202/\n\t\t\t8 button (collapsed) Menu, Secondary Actions: Expand\n\t\t\t\t9 image\n\t\t\t\t10 text Menu\n\t\t\t11 button "
+    },
+    {
+      "label": "B",
+      "round": 4,
+      "action": "diagnostics-card",
+      "startedAt": "2026-10-26T11:02:34.207Z",
+      "finishedAt": "2026-10-26T11:02:34.467Z",
+      "logs": [],
+      "observation": "Browser tab: 17, Title: \"Mercedes Diagnostics Dubai | XENTRY Fault Tracing | DIGI-TEC\", URL: \"http://127.0.0.1:5202/services/mercedes-diagnostics-dubai\".\n1 AXWebArea Mercedes Diagnostics Dubai | XENTRY Fault Tracing | DIGI-TEC, URL: 127.0.0.1:5202/services/mercedes-diagnostics-dubai\n\t2 container root\n\t\t3 container Notifications (F8)\n\t\t\t4 content list\n\t\t5 container Notifications alt+T\n\t\t6 container\n\t\t\t7 link Description: DIGI-TEC home, Value: 127.0.0.1:5202/\n\t\t\t8 button (collapsed) Menu, Secondary Actions: Expand\n\t\t\t\t9 image\n\t\t\t\t10 text Menu\n\t\t\t"
+    },
+    {
+      "label": "B",
+      "round": 4,
+      "action": "back-hub",
+      "startedAt": "2026-10-26T11:02:34.467Z",
+      "finishedAt": "2026-10-26T11:02:34.600Z",
+      "logs": [],
+      "observation": "Browser tab: 17, Title: \"Mercedes Service Dubai | Maintenance & Repair | DIGI-TEC\", URL: \"http://127.0.0.1:5202/brands/mercedes-benz-service-dubai\".\n1 AXWebArea Mercedes Service Dubai | Maintenance & Repair | DIGI-TEC, URL: 127.0.0.1:5202/brands/mercedes-benz-service-dubai\n\t2 container root\n\t\t3 container Notifications (F8)\n\t\t\t4 content list\n\t\t5 container Notifications alt+T\n\t\t6 container\n\t\t\t7 link Description: DIGI-TEC home, Value: 127.0.0.1:5202/\n\t\t\t8 button (collapsed) Menu, Secondary Actions: Expand\n\t\t\t\t9 image\n\t\t\t\t10 text Menu\n\t\t\t11 button "
+    },
+    {
+      "label": "B",
+      "round": 4,
+      "action": "body-direct",
+      "startedAt": "2026-10-26T11:02:34.600Z",
+      "finishedAt": "2026-10-26T11:02:34.800Z",
+      "logs": [],
+      "observation": "Browser tab: 17, Title: \"Mercedes Body & Accident Repair Dubai | Digi-Tec\", URL: \"http://127.0.0.1:5202/services/mercedes-body-repair-dubai\".\n1 AXWebArea Mercedes Body & Accident Repair Dubai | Digi-Tec, URL: 127.0.0.1:5202/services/mercedes-body-repair-dubai\n\t2 container root\n\t\t3 container Notifications (F8)\n\t\t\t4 content list\n\t\t5 container Notifications alt+T\n\t\t6 container\n\t\t\t7 link Description: DIGI-TEC home, Value: 127.0.0.1:5202/\n\t\t\t8 button (collapsed) Menu, Secondary Actions: Expand\n\t\t\t\t9 image\n\t\t\t\t10 text Menu\n\t\t\t11 button Description: U"
+    },
+    {
+      "label": "B",
+      "round": 4,
+      "action": "body390-frame",
+      "startedAt": "2026-10-26T11:02:34.800Z",
+      "finishedAt": "2026-10-26T11:02:35.024Z",
+      "logs": [],
+      "observation": "Browser tab: 17, Title: \"Phase 4C release-b local responsive QA 390px\", URL: \"http://127.0.0.1:5202/__phase4_frame?width=390&height=844&path=/services/mercedes-body-repair-dubai\".\n1 AXWebArea Phase 4C release-b local responsive QA 390px, URL: 127.0.0.1:5202/__phase4_frame?width=390&height=844&path=/services/mercedes-body-repair-dubai\n\t2 text LOCAL QA release-b passive — 390 × 844 CSS pixels, desktop browser engine. Contact intercepted; analytics blocked.\n\t3 container Mercedes release-b 390 pixel responsive viewport\n\t\t4 AXWebArea Mercedes Body &",
+      "metrics": "{\n  \"url\": \"http://127.0.0.1:5202/services/mercedes-body-repair-dubai\",\n  \"path\": \"/services/mercedes-body-repair-dubai\",\n  \"hash\": \"\",\n  \"title\": \"Mercedes Body & Accident Repair Dubai | Digi-Tec\",\n  \"readyState\": \"complete\",\n  \"width\": 390,\n  \"height\": 844,\n  \"clientWidth\": 382,\n  \"scrollWidth\": 382,\n  \"rootPresent\": true,\n  \"bodyPresent\": true,\n  \"active\": {\n    \"tag\": \"BODY\",\n    \"label\": \"<iframe src=\\\"https://www.googletagmanager.com/ns.html?id=GTM-T3GVSPND\\\"\\n    height=\\\"0\\\" width=\\\"0\\\" style=\\\"display:none;visibility:hidden\\\"></iframe>\\n    \\n    MenuENEnglishالعربيةAbout UsServicesBrandsGADV\",\n    \"href\": null\n  },\n  \"scripts\": [\n    {\n      \"src\": \"https://www.googletagmanager.com/gtm.js?id=GTM-T3GVSPND\",\n      \"type\": null,\n      \"qa\": false\n    },\n    {\n      \"src\": null,\n      \"type\": null,\n      \"qa\": true\n    },\n    {\n      \"src\": null,\n      \"type\": null,\n      \"qa\": false\n    },\n    {\n      \"src\": null,\n      \"type\": \"application/ld+json\",\n      \"qa\": false\n    },\n    {\n      \"src\": \"https://www.googletagmanager.com/gtag/js?id=G-4TRCEJSY4S\",\n      \"type\": null,\n      \"qa\": false\n    },\n    {\n      \"src\": null,\n      \"type\": null,\n      \"qa\": false\n    },\n    {\n      \"src\": \"http://127.0.0.1:5202/assets/index-DxoEjBa9.js\",\n      \"type\": \"module\",\n      \"qa\": false\n    },\n    {\n      \"src\": null,\n      \"type\": \"application/ld+json\",\n      \"qa\": false\n    }\n  ],\n  \"resources\": [\n    {\n      \"name\": \"http://127.0.0.1:5202/assets/index-DxoEjBa9.js\",\n      \"startTime\": 13.300000071525574,\n      \"duration\": 12\n    },\n    {\n      \"name\": \"http://127.0.0.1:5202/assets/index-CumuXRQA.css\",\n      \"startTime\": 13.400000095367432,\n      \"duration\": 12.699999928474426\n    },\n    {\n      \"name\": \"https://www.googletagmanager.com/gtm.js?id=GTM-T3GVSPND\",\n      \"startTime\": 14.400000095367432,\n      \"duration\": 0\n    }\n  ],\n  \"focus\": {\n    \"tag\": \"BODY\",\n    \"text\": \"<iframe src=\\\"https://www.googletagmanager.com/ns.html?id=GTM-T3GVSPND\\\"\\n    height=\\\"0\\\" width=\\\"0\\\" style=\\\"display:none;visibility:hidden\\\"></iframe>\\n    \\n    MenuENEnglishالعربيةAbout \",\n    \"href\": null,\n    \"focusVisible\": false,\n    \"outline\": \"rgb(248, 248, 248) none 2.66667px\",\n    \"boxShadow\": \"none\",\n    \"rect\": {\n      \"x\": 0,\n      \"y\": 0,\n      \"width\": 382,\n      \"height\": 9361.771484375,\n      \"top\": 0,\n      \"right\": 382,\n      \"bottom\": 9361.771484375,\n      \"left\": 0\n    }\n  }\n}"
+    },
+    {
+      "label": "baseline",
+      "round": 5,
+      "action": "hub-direct",
+      "startedAt": "2026-10-26T11:02:35.031Z",
+      "finishedAt": "2026-10-26T11:02:35.340Z",
+      "logs": [],
+      "observation": "Browser tab: 15, Title: \"Mercedes Service Dubai | Maintenance & Repair | DIGI-TEC\", URL: \"http://127.0.0.1:5200/brands/mercedes-benz-service-dubai\".\n1 AXWebArea Mercedes Service Dubai | Maintenance & Repair | DIGI-TEC, URL: 127.0.0.1:5200/brands/mercedes-benz-service-dubai\n\t2 container root\n\t\t3 container Notifications (F8)\n\t\t\t4 content list\n\t\t5 container Notifications alt+T\n\t\t6 container\n\t\t\t7 link Description: DIGI-TEC home, Value: 127.0.0.1:5200/\n\t\t\t8 button (collapsed) Menu, Secondary Actions: Expand\n\t\t\t\t9 image\n\t\t\t\t10 text Menu\n\t\t\t11 button "
+    },
+    {
+      "label": "baseline",
+      "round": 5,
+      "action": "diagnostics-card",
+      "startedAt": "2026-10-26T11:02:35.340Z",
+      "finishedAt": "2026-10-26T11:02:35.610Z",
+      "logs": [],
+      "observation": "Browser tab: 15, Title: \"Mercedes Diagnostics Dubai | XENTRY Fault Tracing | DIGI-TEC\", URL: \"http://127.0.0.1:5200/services/mercedes-diagnostics-dubai\".\n1 AXWebArea Mercedes Diagnostics Dubai | XENTRY Fault Tracing | DIGI-TEC, URL: 127.0.0.1:5200/services/mercedes-diagnostics-dubai\n\t2 container root\n\t\t3 container Notifications (F8)\n\t\t\t4 content list\n\t\t5 container Notifications alt+T\n\t\t6 container\n\t\t\t7 link Description: DIGI-TEC home, Value: 127.0.0.1:5200/\n\t\t\t8 button (collapsed) Menu, Secondary Actions: Expand\n\t\t\t\t9 image\n\t\t\t\t10 text Menu\n\t\t\t"
+    },
+    {
+      "label": "baseline",
+      "round": 5,
+      "action": "back-hub",
+      "startedAt": "2026-10-26T11:02:35.611Z",
+      "finishedAt": "2026-10-26T11:02:35.747Z",
+      "logs": [],
+      "observation": "Browser tab: 15, Title: \"Mercedes Service Dubai | Maintenance & Repair | DIGI-TEC\", URL: \"http://127.0.0.1:5200/brands/mercedes-benz-service-dubai\".\n1 AXWebArea Mercedes Service Dubai | Maintenance & Repair | DIGI-TEC, URL: 127.0.0.1:5200/brands/mercedes-benz-service-dubai\n\t2 container root\n\t\t3 container Notifications (F8)\n\t\t\t4 content list\n\t\t5 container Notifications alt+T\n\t\t6 container\n\t\t\t7 link Description: DIGI-TEC home, Value: 127.0.0.1:5200/\n\t\t\t8 button (collapsed) Menu, Secondary Actions: Expand\n\t\t\t\t9 image\n\t\t\t\t10 text Menu\n\t\t\t11 button "
+    },
+    {
+      "label": "baseline",
+      "round": 5,
+      "action": "body-direct",
+      "startedAt": "2026-10-26T11:02:35.748Z",
+      "finishedAt": "2026-10-26T11:02:35.952Z",
+      "logs": [],
+      "observation": "Browser tab: 15, Title: \"Mercedes Body & Accident Repair Dubai | Digi-Tec\", URL: \"http://127.0.0.1:5200/services/mercedes-body-repair-dubai\".\n1 AXWebArea Mercedes Body & Accident Repair Dubai | Digi-Tec, URL: 127.0.0.1:5200/services/mercedes-body-repair-dubai\n\t2 container root\n\t\t3 container Notifications (F8)\n\t\t\t4 content list\n\t\t5 container Notifications alt+T\n\t\t6 container\n\t\t\t7 link Description: DIGI-TEC home, Value: 127.0.0.1:5200/\n\t\t\t8 button (collapsed) Menu, Secondary Actions: Expand\n\t\t\t\t9 image\n\t\t\t\t10 text Menu\n\t\t\t11 button Description: U"
+    },
+    {
+      "label": "baseline",
+      "round": 5,
+      "action": "body390-frame",
+      "startedAt": "2026-10-26T11:02:35.952Z",
+      "finishedAt": "2026-10-26T11:02:36.187Z",
+      "logs": [],
+      "observation": "Browser tab: 15, Title: \"Phase 4C baseline local responsive QA 390px\", URL: \"http://127.0.0.1:5200/__phase4_frame?width=390&height=844&path=/services/mercedes-body-repair-dubai\".\n1 AXWebArea Phase 4C baseline local responsive QA 390px, URL: 127.0.0.1:5200/__phase4_frame?width=390&height=844&path=/services/mercedes-body-repair-dubai\n\t2 text LOCAL QA baseline passive — 390 × 844 CSS pixels, desktop browser engine. Contact intercepted; analytics blocked.\n\t3 container Mercedes baseline 390 pixel responsive viewport\n\t\t4 AXWebArea Mercedes Body & Acc",
+      "metrics": "{\n  \"url\": \"http://127.0.0.1:5200/services/mercedes-body-repair-dubai\",\n  \"path\": \"/services/mercedes-body-repair-dubai\",\n  \"hash\": \"\",\n  \"title\": \"Mercedes Body & Accident Repair Dubai | Digi-Tec\",\n  \"readyState\": \"complete\",\n  \"width\": 390,\n  \"height\": 844,\n  \"clientWidth\": 382,\n  \"scrollWidth\": 382,\n  \"rootPresent\": true,\n  \"bodyPresent\": true,\n  \"active\": {\n    \"tag\": \"BODY\",\n    \"label\": \"<iframe src=\\\"https://www.googletagmanager.com/ns.html?id=GTM-T3GVSPND\\\"\\n    height=\\\"0\\\" width=\\\"0\\\" style=\\\"display:none;visibility:hidden\\\"></iframe>\\n    \\n    MenuENEnglishالعربيةAbout UsServicesBrandsGADV\",\n    \"href\": null\n  },\n  \"scripts\": [\n    {\n      \"src\": \"https://www.googletagmanager.com/gtm.js?id=GTM-T3GVSPND\",\n      \"type\": null,\n      \"qa\": false\n    },\n    {\n      \"src\": null,\n      \"type\": null,\n      \"qa\": true\n    },\n    {\n      \"src\": null,\n      \"type\": null,\n      \"qa\": false\n    },\n    {\n      \"src\": null,\n      \"type\": \"application/ld+json\",\n      \"qa\": false\n    },\n    {\n      \"src\": \"https://www.googletagmanager.com/gtag/js?id=G-4TRCEJSY4S\",\n      \"type\": null,\n      \"qa\": false\n    },\n    {\n      \"src\": null,\n      \"type\": null,\n      \"qa\": false\n    },\n    {\n      \"src\": \"http://127.0.0.1:5200/assets/index-CvWuKuLH.js\",\n      \"type\": \"module\",\n      \"qa\": false\n    },\n    {\n      \"src\": null,\n      \"type\": \"application/ld+json\",\n      \"qa\": false\n    }\n  ],\n  \"resources\": [\n    {\n      \"name\": \"http://127.0.0.1:5200/assets/index-CvWuKuLH.js\",\n      \"startTime\": 12.799999952316284,\n      \"duration\": 19.300000071525574\n    },\n    {\n      \"name\": \"http://127.0.0.1:5200/assets/index-CumuXRQA.css\",\n      \"startTime\": 12.899999976158142,\n      \"duration\": 18.100000023841858\n    },\n    {\n      \"name\": \"https://www.googletagmanager.com/gtm.js?id=GTM-T3GVSPND\",\n      \"startTime\": 14.100000023841858,\n      \"duration\": 0\n    }\n  ],\n  \"focus\": {\n    \"tag\": \"BODY\",\n    \"text\": \"<iframe src=\\\"https://www.googletagmanager.com/ns.html?id=GTM-T3GVSPND\\\"\\n    height=\\\"0\\\" width=\\\"0\\\" style=\\\"display:none;visibility:hidden\\\"></iframe>\\n    \\n    MenuENEnglishالعربيةAbout \",\n    \"href\": null,\n    \"focusVisible\": false,\n    \"outline\": \"rgb(248, 248, 248) none 2.66667px\",\n    \"boxShadow\": \"none\",\n    \"rect\": {\n      \"x\": 0,\n      \"y\": 0,\n      \"width\": 382,\n      \"height\": 9335.177734375,\n      \"top\": 0,\n      \"right\": 382,\n      \"bottom\": 9335.177734375,\n      \"left\": 0\n    }\n  }\n}"
+    },
+    {
+      "label": "A",
+      "round": 5,
+      "action": "hub-direct",
+      "startedAt": "2026-10-26T11:02:36.195Z",
+      "finishedAt": "2026-10-26T11:02:36.450Z",
+      "logs": [],
+      "observation": "Browser tab: 16, Title: \"Mercedes Service Dubai | Maintenance & Repair | DIGI-TEC\", URL: \"http://127.0.0.1:5201/brands/mercedes-benz-service-dubai\".\n1 AXWebArea Mercedes Service Dubai | Maintenance & Repair | DIGI-TEC, URL: 127.0.0.1:5201/brands/mercedes-benz-service-dubai\n\t2 container root\n\t\t3 container Notifications (F8)\n\t\t\t4 content list\n\t\t5 container Notifications alt+T\n\t\t6 container\n\t\t\t7 link Description: DIGI-TEC home, Value: 127.0.0.1:5201/\n\t\t\t8 button (collapsed) Menu, Secondary Actions: Expand\n\t\t\t\t9 image\n\t\t\t\t10 text Menu\n\t\t\t11 button "
+    },
+    {
+      "label": "A",
+      "round": 5,
+      "action": "diagnostics-card",
+      "startedAt": "2026-10-26T11:02:36.451Z",
+      "finishedAt": "2026-10-26T11:02:36.719Z",
+      "logs": [],
+      "observation": "Browser tab: 16, Title: \"Mercedes Diagnostics Dubai | XENTRY Fault Tracing | DIGI-TEC\", URL: \"http://127.0.0.1:5201/services/mercedes-diagnostics-dubai\".\n1 AXWebArea Mercedes Diagnostics Dubai | XENTRY Fault Tracing | DIGI-TEC, URL: 127.0.0.1:5201/services/mercedes-diagnostics-dubai\n\t2 container root\n\t\t3 container Notifications (F8)\n\t\t\t4 content list\n\t\t5 container Notifications alt+T\n\t\t6 container\n\t\t\t7 link Description: DIGI-TEC home, Value: 127.0.0.1:5201/\n\t\t\t8 button (collapsed) Menu, Secondary Actions: Expand\n\t\t\t\t9 image\n\t\t\t\t10 text Menu\n\t\t\t"
+    },
+    {
+      "label": "A",
+      "round": 5,
+      "action": "back-hub",
+      "startedAt": "2026-10-26T11:02:36.719Z",
+      "finishedAt": "2026-10-26T11:02:36.853Z",
+      "logs": [],
+      "observation": "Browser tab: 16, Title: \"Mercedes Service Dubai | Maintenance & Repair | DIGI-TEC\", URL: \"http://127.0.0.1:5201/brands/mercedes-benz-service-dubai\".\n1 AXWebArea Mercedes Service Dubai | Maintenance & Repair | DIGI-TEC, URL: 127.0.0.1:5201/brands/mercedes-benz-service-dubai\n\t2 container root\n\t\t3 container Notifications (F8)\n\t\t\t4 content list\n\t\t5 container Notifications alt+T\n\t\t6 container\n\t\t\t7 link Description: DIGI-TEC home, Value: 127.0.0.1:5201/\n\t\t\t8 button (collapsed) Menu, Secondary Actions: Expand\n\t\t\t\t9 image\n\t\t\t\t10 text Menu\n\t\t\t11 button "
+    },
+    {
+      "label": "A",
+      "round": 5,
+      "action": "body-direct",
+      "startedAt": "2026-10-26T11:02:36.854Z",
+      "finishedAt": "2026-10-26T11:02:37.086Z",
+      "logs": [],
+      "observation": "Browser tab: 16, Title: \"Mercedes Body & Accident Repair Dubai | Digi-Tec\", URL: \"http://127.0.0.1:5201/services/mercedes-body-repair-dubai\".\n1 AXWebArea Mercedes Body & Accident Repair Dubai | Digi-Tec, URL: 127.0.0.1:5201/services/mercedes-body-repair-dubai\n\t2 container root\n\t\t3 container Notifications (F8)\n\t\t\t4 content list\n\t\t5 container Notifications alt+T\n\t\t6 container\n\t\t\t7 link Description: DIGI-TEC home, Value: 127.0.0.1:5201/\n\t\t\t8 button (collapsed) Menu, Secondary Actions: Expand\n\t\t\t\t9 image\n\t\t\t\t10 text Menu\n\t\t\t11 button Description: U"
+    },
+    {
+      "label": "A",
+      "round": 5,
+      "action": "body390-frame",
+      "startedAt": "2026-10-26T11:02:37.086Z",
+      "finishedAt": "2026-10-26T11:02:37.301Z",
+      "logs": [],
+      "observation": "Browser tab: 16, Title: \"Phase 4C candidate local responsive QA 390px\", URL: \"http://127.0.0.1:5201/__phase4_frame?width=390&height=844&path=/services/mercedes-body-repair-dubai\".\n1 AXWebArea Phase 4C candidate local responsive QA 390px, URL: 127.0.0.1:5201/__phase4_frame?width=390&height=844&path=/services/mercedes-body-repair-dubai\n\t2 text LOCAL QA candidate passive — 390 × 844 CSS pixels, desktop browser engine. Contact intercepted; analytics blocked.\n\t3 container Mercedes candidate 390 pixel responsive viewport\n\t\t4 AXWebArea Mercedes Body &",
+      "metrics": "{\n  \"url\": \"http://127.0.0.1:5201/services/mercedes-body-repair-dubai\",\n  \"path\": \"/services/mercedes-body-repair-dubai\",\n  \"hash\": \"\",\n  \"title\": \"Mercedes Body & Accident Repair Dubai | Digi-Tec\",\n  \"readyState\": \"complete\",\n  \"width\": 390,\n  \"height\": 844,\n  \"clientWidth\": 382,\n  \"scrollWidth\": 382,\n  \"rootPresent\": true,\n  \"bodyPresent\": true,\n  \"active\": {\n    \"tag\": \"BODY\",\n    \"label\": \"<iframe src=\\\"https://www.googletagmanager.com/ns.html?id=GTM-T3GVSPND\\\"\\n    height=\\\"0\\\" width=\\\"0\\\" style=\\\"display:none;visibility:hidden\\\"></iframe>\\n    \\n    MenuENEnglishالعربيةAbout UsServicesBrandsGADV\",\n    \"href\": null\n  },\n  \"scripts\": [\n    {\n      \"src\": \"https://www.googletagmanager.com/gtm.js?id=GTM-T3GVSPND\",\n      \"type\": null,\n      \"qa\": false\n    },\n    {\n      \"src\": null,\n      \"type\": null,\n      \"qa\": true\n    },\n    {\n      \"src\": null,\n      \"type\": null,\n      \"qa\": false\n    },\n    {\n      \"src\": null,\n      \"type\": \"application/ld+json\",\n      \"qa\": false\n    },\n    {\n      \"src\": \"https://www.googletagmanager.com/gtag/js?id=G-4TRCEJSY4S\",\n      \"type\": null,\n      \"qa\": false\n    },\n    {\n      \"src\": null,\n      \"type\": null,\n      \"qa\": false\n    },\n    {\n      \"src\": \"http://127.0.0.1:5201/assets/index-DxoEjBa9.js\",\n      \"type\": \"module\",\n      \"qa\": false\n    },\n    {\n      \"src\": null,\n      \"type\": \"application/ld+json\",\n      \"qa\": false\n    }\n  ],\n  \"resources\": [\n    {\n      \"name\": \"http://127.0.0.1:5201/assets/index-CumuXRQA.css\",\n      \"startTime\": 9.299999952316284,\n      \"duration\": 9.100000023841858\n    },\n    {\n      \"name\": \"http://127.0.0.1:5201/assets/index-DxoEjBa9.js\",\n      \"startTime\": 9.299999952316284,\n      \"duration\": 9.800000071525574\n    },\n    {\n      \"name\": \"https://www.googletagmanager.com/gtm.js?id=GTM-T3GVSPND\",\n      \"startTime\": 10.399999976158142,\n      \"duration\": 0\n    }\n  ],\n  \"focus\": {\n    \"tag\": \"BODY\",\n    \"text\": \"<iframe src=\\\"https://www.googletagmanager.com/ns.html?id=GTM-T3GVSPND\\\"\\n    height=\\\"0\\\" width=\\\"0\\\" style=\\\"display:none;visibility:hidden\\\"></iframe>\\n    \\n    MenuENEnglishالعربيةAbout \",\n    \"href\": null,\n    \"focusVisible\": false,\n    \"outline\": \"rgb(248, 248, 248) none 2.66667px\",\n    \"boxShadow\": \"none\",\n    \"rect\": {\n      \"x\": 0,\n      \"y\": 0,\n      \"width\": 382,\n      \"height\": 9361.771484375,\n      \"top\": 0,\n      \"right\": 382,\n      \"bottom\": 9361.771484375,\n      \"left\": 0\n    }\n  }\n}"
+    },
+    {
+      "label": "B",
+      "round": 5,
+      "action": "hub-direct",
+      "startedAt": "2026-10-26T11:02:37.308Z",
+      "finishedAt": "2026-10-26T11:02:37.592Z",
+      "logs": [],
+      "observation": "Browser tab: 17, Title: \"Mercedes Service Dubai | Maintenance & Repair | DIGI-TEC\", URL: \"http://127.0.0.1:5202/brands/mercedes-benz-service-dubai\".\n1 AXWebArea Mercedes Service Dubai | Maintenance & Repair | DIGI-TEC, URL: 127.0.0.1:5202/brands/mercedes-benz-service-dubai\n\t2 container root\n\t\t3 container Notifications (F8)\n\t\t\t4 content list\n\t\t5 container Notifications alt+T\n\t\t6 container\n\t\t\t7 link Description: DIGI-TEC home, Value: 127.0.0.1:5202/\n\t\t\t8 button (collapsed) Menu, Secondary Actions: Expand\n\t\t\t\t9 image\n\t\t\t\t10 text Menu\n\t\t\t11 button "
+    },
+    {
+      "label": "B",
+      "round": 5,
+      "action": "diagnostics-card",
+      "startedAt": "2026-10-26T11:02:37.594Z",
+      "finishedAt": "2026-10-26T11:02:37.868Z",
+      "logs": [],
+      "observation": "Browser tab: 17, Title: \"Mercedes Diagnostics Dubai | XENTRY Fault Tracing | DIGI-TEC\", URL: \"http://127.0.0.1:5202/services/mercedes-diagnostics-dubai\".\n1 AXWebArea Mercedes Diagnostics Dubai | XENTRY Fault Tracing | DIGI-TEC, URL: 127.0.0.1:5202/services/mercedes-diagnostics-dubai\n\t2 container root\n\t\t3 container Notifications (F8)\n\t\t\t4 content list\n\t\t5 container Notifications alt+T\n\t\t6 container\n\t\t\t7 link Description: DIGI-TEC home, Value: 127.0.0.1:5202/\n\t\t\t8 button (collapsed) Menu, Secondary Actions: Expand\n\t\t\t\t9 image\n\t\t\t\t10 text Menu\n\t\t\t"
+    },
+    {
+      "label": "B",
+      "round": 5,
+      "action": "back-hub",
+      "startedAt": "2026-10-26T11:02:37.868Z",
+      "finishedAt": "2026-10-26T11:02:38.002Z",
+      "logs": [],
+      "observation": "Browser tab: 17, Title: \"Mercedes Service Dubai | Maintenance & Repair | DIGI-TEC\", URL: \"http://127.0.0.1:5202/brands/mercedes-benz-service-dubai\".\n1 AXWebArea Mercedes Service Dubai | Maintenance & Repair | DIGI-TEC, URL: 127.0.0.1:5202/brands/mercedes-benz-service-dubai\n\t2 container root\n\t\t3 container Notifications (F8)\n\t\t\t4 content list\n\t\t5 container Notifications alt+T\n\t\t6 container\n\t\t\t7 link Description: DIGI-TEC home, Value: 127.0.0.1:5202/\n\t\t\t8 button (collapsed) Menu, Secondary Actions: Expand\n\t\t\t\t9 image\n\t\t\t\t10 text Menu\n\t\t\t11 button "
+    },
+    {
+      "label": "B",
+      "round": 5,
+      "action": "body-direct",
+      "startedAt": "2026-10-26T11:02:38.003Z",
+      "finishedAt": "2026-10-26T11:02:38.221Z",
+      "logs": [],
+      "observation": "Browser tab: 17, Title: \"Mercedes Body & Accident Repair Dubai | Digi-Tec\", URL: \"http://127.0.0.1:5202/services/mercedes-body-repair-dubai\".\n1 AXWebArea Mercedes Body & Accident Repair Dubai | Digi-Tec, URL: 127.0.0.1:5202/services/mercedes-body-repair-dubai\n\t2 container root\n\t\t3 container Notifications (F8)\n\t\t\t4 content list\n\t\t5 container Notifications alt+T\n\t\t6 container\n\t\t\t7 link Description: DIGI-TEC home, Value: 127.0.0.1:5202/\n\t\t\t8 button (collapsed) Menu, Secondary Actions: Expand\n\t\t\t\t9 image\n\t\t\t\t10 text Menu\n\t\t\t11 button Description: U"
+    },
+    {
+      "label": "B",
+      "round": 5,
+      "action": "body390-frame",
+      "startedAt": "2026-10-26T11:02:38.221Z",
+      "finishedAt": "2026-10-26T11:02:38.444Z",
+      "logs": [],
+      "observation": "Browser tab: 17, Title: \"Phase 4C release-b local responsive QA 390px\", URL: \"http://127.0.0.1:5202/__phase4_frame?width=390&height=844&path=/services/mercedes-body-repair-dubai\".\n1 AXWebArea Phase 4C release-b local responsive QA 390px, URL: 127.0.0.1:5202/__phase4_frame?width=390&height=844&path=/services/mercedes-body-repair-dubai\n\t2 text LOCAL QA release-b passive — 390 × 844 CSS pixels, desktop browser engine. Contact intercepted; analytics blocked.\n\t3 container Mercedes release-b 390 pixel responsive viewport\n\t\t4 AXWebArea Mercedes Body &",
+      "metrics": "{\n  \"url\": \"http://127.0.0.1:5202/services/mercedes-body-repair-dubai\",\n  \"path\": \"/services/mercedes-body-repair-dubai\",\n  \"hash\": \"\",\n  \"title\": \"Mercedes Body & Accident Repair Dubai | Digi-Tec\",\n  \"readyState\": \"complete\",\n  \"width\": 390,\n  \"height\": 844,\n  \"clientWidth\": 382,\n  \"scrollWidth\": 382,\n  \"rootPresent\": true,\n  \"bodyPresent\": true,\n  \"active\": {\n    \"tag\": \"BODY\",\n    \"label\": \"<iframe src=\\\"https://www.googletagmanager.com/ns.html?id=GTM-T3GVSPND\\\"\\n    height=\\\"0\\\" width=\\\"0\\\" style=\\\"display:none;visibility:hidden\\\"></iframe>\\n    \\n    MenuENEnglishالعربيةAbout UsServicesBrandsGADV\",\n    \"href\": null\n  },\n  \"scripts\": [\n    {\n      \"src\": \"https://www.googletagmanager.com/gtm.js?id=GTM-T3GVSPND\",\n      \"type\": null,\n      \"qa\": false\n    },\n    {\n      \"src\": null,\n      \"type\": null,\n      \"qa\": true\n    },\n    {\n      \"src\": null,\n      \"type\": null,\n      \"qa\": false\n    },\n    {\n      \"src\": null,\n      \"type\": \"application/ld+json\",\n      \"qa\": false\n    },\n    {\n      \"src\": \"https://www.googletagmanager.com/gtag/js?id=G-4TRCEJSY4S\",\n      \"type\": null,\n      \"qa\": false\n    },\n    {\n      \"src\": null,\n      \"type\": null,\n      \"qa\": false\n    },\n    {\n      \"src\": \"http://127.0.0.1:5202/assets/index-DxoEjBa9.js\",\n      \"type\": \"module\",\n      \"qa\": false\n    },\n    {\n      \"src\": null,\n      \"type\": \"application/ld+json\",\n      \"qa\": false\n    }\n  ],\n  \"resources\": [\n    {\n      \"name\": \"http://127.0.0.1:5202/assets/index-DxoEjBa9.js\",\n      \"startTime\": 15.200000047683716,\n      \"duration\": 7.599999904632568\n    },\n    {\n      \"name\": \"http://127.0.0.1:5202/assets/index-CumuXRQA.css\",\n      \"startTime\": 15.299999952316284,\n      \"duration\": 6.800000071525574\n    },\n    {\n      \"name\": \"https://www.googletagmanager.com/gtm.js?id=GTM-T3GVSPND\",\n      \"startTime\": 16.5,\n      \"duration\": 0\n    }\n  ],\n  \"focus\": {\n    \"tag\": \"BODY\",\n    \"text\": \"<iframe src=\\\"https://www.googletagmanager.com/ns.html?id=GTM-T3GVSPND\\\"\\n    height=\\\"0\\\" width=\\\"0\\\" style=\\\"display:none;visibility:hidden\\\"></iframe>\\n    \\n    MenuENEnglishالعربيةAbout \",\n    \"href\": null,\n    \"focusVisible\": false,\n    \"outline\": \"rgb(248, 248, 248) none 2.66667px\",\n    \"boxShadow\": \"none\",\n    \"rect\": {\n      \"x\": 0,\n      \"y\": 0,\n      \"width\": 382,\n      \"height\": 9361.771484375,\n      \"top\": 0,\n      \"right\": 382,\n      \"bottom\": 9361.771484375,\n      \"left\": 0\n    }\n  }\n}"
+    }
+  ]
+}

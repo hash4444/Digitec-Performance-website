@@ -1,0 +1,40 @@
+{
+  "completedAt": "2026-10-19T08:47:04.174Z",
+  "base": "acef3427b57b48259bc5b39d6a0f75798603ae95",
+  "baselineIncludesCompletedUncommittedDiagnosticsAc": true,
+  "localImplementationComplete": true,
+  "localQaPassed": true,
+  "productionGo": false,
+  "productionRecommendation": "NO-GO pending authenticated live origin/edge and rollback verification, cumulative source reconciliation, drift checks and explicit authorization",
+  "owners": 8,
+  "localePages": 14,
+  "newRoutes": 0,
+  "measuredQueries": 69,
+  "proposedQueries": 23,
+  "metadataChanges": 0,
+  "newSprintFiles": [
+    "src/pages/ServicePage.tsx",
+    "src/pages/BrandServicePage.tsx",
+    "src/components/EcuElectronicsEnquiryPanel.tsx",
+    "src/data/ecuElectronicsContent.ts"
+  ],
+  "cumulativePendingSourceFiles": [
+    "src/pages/ServicePage.tsx",
+    "src/pages/BrandServicePage.tsx",
+    "src/components/DiagnosticAcEnquiryPanel.tsx",
+    "src/data/diagnosticsAcGeneralContent.ts",
+    "src/data/diagnosticsAcBrandContent.ts",
+    "scripts/validate-query-release.mjs",
+    "src/components/EcuElectronicsEnquiryPanel.tsx",
+    "src/data/ecuElectronicsContent.ts"
+  ],
+  "sourceSha256": "5b36413f42162887ca9321530579ddc1c6a96cf64f6288912dc33d00c01a9841",
+  "byteIdenticalUnrelatedFiles": 31635,
+  "committed": false,
+  "pushed": false,
+  "deployed": false,
+  "published": false,
+  "googleBusinessProfileModified": false,
+  "customerEnquirySent": false,
+  "report": "COMPLETED-REPORT.txt"
+}

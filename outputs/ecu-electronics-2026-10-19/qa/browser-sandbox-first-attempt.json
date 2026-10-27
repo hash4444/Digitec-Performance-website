@@ -1,0 +1,14 @@
+{
+  "checkedAt": "2026-10-19T08:38:04.107Z",
+  "candidate": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\ecu-electronics-2026-10-19\\candidate.local",
+  "passed": false,
+  "safety": "Loopback GET/HEAD requests only. Existing protected contact test stubs/blocked network retained. No actual message, customer enquiry, backend write, or production request.",
+  "results": [
+    {
+      "name": "orchestration",
+      "exitCode": 1,
+      "passed": false,
+      "error": "Local candidate preview did not become ready"
+    }
+  ]
+}

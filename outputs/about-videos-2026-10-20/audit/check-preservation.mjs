@@ -1,0 +1,15 @@
+import fs from 'node:fs';
+import crypto from 'node:crypto';
+import { execFileSync } from 'node:child_process';
+const base = 'outputs/about-videos-2026-10-20/audit';
+const manifest = JSON.parse(fs.readFileSync(`${base}/preservation-baseline.json`, 'utf8'));
+const hash = file => crypto.createHash('sha256').update(fs.readFileSync(file)).digest('hex');
+const results = manifest.preservedFiles.map(row => ({ file: row.file, expectedSha256: row.sha256, actualSha256: hash(row.file), pass: hash(row.file) === row.sha256 }));
+const head = execFileSync('git', ['rev-parse', 'HEAD'], { encoding: 'utf8' }).trim();
+const branch = execFileSync('git', ['branch', '--show-current'], { encoding: 'utf8' }).trim();
+const stagedFiles = execFileSync('git', ['diff', '--cached', '--name-only'], { encoding: 'utf8' }).trim().split('\n').filter(Boolean);
+const checks = { checkedAt: new Date().toISOString(), head, branch, stagedFiles, headUnchanged: head === manifest.head, branchUnchanged: branch === manifest.branch, indexUnchanged: JSON.stringify(stagedFiles) === JSON.stringify(manifest.stagedFiles), results };
+checks.pass = checks.headUnchanged && checks.branchUnchanged && checks.indexUnchanged && results.every(row => row.pass);
+fs.writeFileSync(`${base}/preservation-results.json`, JSON.stringify(checks, null, 2) + '\n');
+console.log(JSON.stringify({ pass: checks.pass, protectedFiles: results.length, head, stagedFiles }));
+if (!checks.pass) process.exitCode = 1;

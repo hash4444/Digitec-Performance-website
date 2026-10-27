@@ -1,0 +1,815 @@
+{
+  "baselineHead": "546e02fb214212e187c159c303fda2354d480ff3",
+  "method": "Exact edited text in baseline prerendered HTML; includes actually changed related-card labels and form placeholders",
+  "routes": [
+    {
+      "path": "/ar/blog",
+      "indexable": true,
+      "reasons": [
+        "تطوير أداء مرسيدس AMG GT في دبي: خطة حسب السيارة"
+      ]
+    },
+    {
+      "path": "/ar/blog/aston-martin-best-workshop-dubai",
+      "indexable": true,
+      "reasons": [
+        "هل يناسب تطوير الأداء جميع سيارات ",
+        "القطع الأصلية والبدائل وتطوير الأداء"
+      ]
+    },
+    {
+      "path": "/ar/blog/audi-maintenance-guide-dubai",
+      "indexable": true,
+      "reasons": [
+        "هل يناسب تطوير الأداء جميع سيارات ",
+        "القطع الأصلية والبدائل وتطوير الأداء"
+      ]
+    },
+    {
+      "path": "/ar/blog/bentley-best-workshop-dubai",
+      "indexable": true,
+      "reasons": [
+        "هل يناسب تطوير الأداء جميع سيارات "
+      ]
+    },
+    {
+      "path": "/ar/blog/bentley-continental-gt-service-dubai-guide",
+      "indexable": true,
+      "reasons": [
+        "تطوير أداء مرسيدس AMG GT في دبي: خطة حسب السيارة"
+      ]
+    },
+    {
+      "path": "/ar/blog/bmw-maintenance-guide-dubai",
+      "indexable": true,
+      "reasons": [
+        "هل يناسب تطوير الأداء جميع سيارات ",
+        "القطع الأصلية والبدائل وتطوير الأداء"
+      ]
+    },
+    {
+      "path": "/ar/blog/cadillac-best-workshop-dubai",
+      "indexable": true,
+      "reasons": [
+        "هل يناسب تطوير الأداء جميع سيارات ",
+        "القطع الأصلية والبدائل وتطوير الأداء"
+      ]
+    },
+    {
+      "path": "/ar/blog/chevrolet-best-workshop-dubai",
+      "indexable": true,
+      "reasons": [
+        "هل يناسب تطوير الأداء جميع سيارات ",
+        "القطع الأصلية والبدائل وتطوير الأداء"
+      ]
+    },
+    {
+      "path": "/ar/blog/ford-best-workshop-dubai",
+      "indexable": true,
+      "reasons": [
+        "هل يناسب تطوير الأداء جميع سيارات ",
+        "القطع الأصلية والبدائل وتطوير الأداء"
+      ]
+    },
+    {
+      "path": "/ar/blog/gad-tuning-explained",
+      "indexable": true,
+      "reasons": [
+        "تطوير أداء مرسيدس AMG GT في دبي: خطة حسب السيارة"
+      ]
+    },
+    {
+      "path": "/ar/blog/lamborghini-maintenance-guide-dubai",
+      "indexable": true,
+      "reasons": [
+        "هل يناسب تطوير الأداء جميع سيارات "
+      ]
+    },
+    {
+      "path": "/ar/blog/land-rover-best-workshop-dubai",
+      "indexable": true,
+      "reasons": [
+        "هل يناسب تطوير الأداء جميع سيارات ",
+        "القطع الأصلية والبدائل وتطوير الأداء"
+      ]
+    },
+    {
+      "path": "/ar/blog/maserati-best-workshop-dubai",
+      "indexable": true,
+      "reasons": [
+        "هل يناسب تطوير الأداء جميع سيارات ",
+        "القطع الأصلية والبدائل وتطوير الأداء"
+      ]
+    },
+    {
+      "path": "/ar/blog/maybach-best-workshop-dubai",
+      "indexable": true,
+      "reasons": [
+        "هل يناسب تطوير الأداء جميع سيارات "
+      ]
+    },
+    {
+      "path": "/ar/blog/mercedes-amg-gt-black-series-1300hp-build-dubai",
+      "indexable": true,
+      "reasons": [
+        "تطوير أداء مرسيدس AMG GT في دبي: خطة حسب السيارة"
+      ]
+    },
+    {
+      "path": "/ar/blog/mercedes-amg-gt-tuning-dubai",
+      "indexable": true,
+      "reasons": [
+        "تطوير أداء مرسيدس AMG GT في دبي: خطة حسب السيارة"
+      ]
+    },
+    {
+      "path": "/ar/blog/mercedes-g63-service-dubai-guide",
+      "indexable": false,
+      "reasons": [
+        "تطوير أداء مرسيدس AMG GT في دبي: خطة حسب السيارة"
+      ]
+    },
+    {
+      "path": "/ar/blog/mini-best-workshop-dubai",
+      "indexable": true,
+      "reasons": [
+        "هل يناسب تطوير الأداء جميع سيارات ",
+        "القطع الأصلية والبدائل وتطوير الأداء"
+      ]
+    },
+    {
+      "path": "/ar/blog/porsche-maintenance-guide-dubai",
+      "indexable": true,
+      "reasons": [
+        "هل يناسب تطوير الأداء جميع سيارات ",
+        "القطع الأصلية والبدائل وتطوير الأداء"
+      ]
+    },
+    {
+      "path": "/ar/blog/volkswagen-best-workshop-dubai",
+      "indexable": true,
+      "reasons": [
+        "هل يناسب تطوير الأداء جميع سيارات ",
+        "القطع الأصلية والبدائل وتطوير الأداء"
+      ]
+    },
+    {
+      "path": "/ar/brands/aston-martin-service-dubai",
+      "indexable": true,
+      "reasons": [
+        "أخبرنا عن سيارتك وما تحتاج إليه: صيانة أو إصلاح أو تشخيص أو تطوير أداء"
+      ]
+    },
+    {
+      "path": "/ar/brands/audi-service-dubai",
+      "indexable": true,
+      "reasons": [
+        "أخبرنا عن سيارتك وما تحتاج إليه: صيانة أو إصلاح أو تشخيص أو تطوير أداء"
+      ]
+    },
+    {
+      "path": "/ar/brands/bentley-service-dubai",
+      "indexable": true,
+      "reasons": [
+        "أخبرنا عن سيارتك وما تحتاج إليه: صيانة أو إصلاح أو تشخيص أو تطوير أداء"
+      ]
+    },
+    {
+      "path": "/ar/brands/bmw-service-dubai",
+      "indexable": true,
+      "reasons": [
+        "أخبرنا عن سيارتك وما تحتاج إليه: صيانة أو إصلاح أو تشخيص أو تطوير أداء"
+      ]
+    },
+    {
+      "path": "/ar/brands/bugatti-service-dubai",
+      "indexable": true,
+      "reasons": [
+        "أخبرنا عن سيارتك وما تحتاج إليه: صيانة أو إصلاح أو تشخيص أو تطوير أداء"
+      ]
+    },
+    {
+      "path": "/ar/brands/byd-service-dubai",
+      "indexable": true,
+      "reasons": [
+        "أخبرنا عن سيارتك وما تحتاج إليه: صيانة أو إصلاح أو تشخيص أو تطوير أداء"
+      ]
+    },
+    {
+      "path": "/ar/brands/cadillac-service-dubai",
+      "indexable": true,
+      "reasons": [
+        "أخبرنا عن سيارتك وما تحتاج إليه: صيانة أو إصلاح أو تشخيص أو تطوير أداء"
+      ]
+    },
+    {
+      "path": "/ar/brands/chevrolet-service-dubai",
+      "indexable": true,
+      "reasons": [
+        "أخبرنا عن سيارتك وما تحتاج إليه: صيانة أو إصلاح أو تشخيص أو تطوير أداء"
+      ]
+    },
+    {
+      "path": "/ar/brands/chrysler-service-dubai",
+      "indexable": true,
+      "reasons": [
+        "أخبرنا عن سيارتك وما تحتاج إليه: صيانة أو إصلاح أو تشخيص أو تطوير أداء"
+      ]
+    },
+    {
+      "path": "/ar/brands/corvette-service-dubai",
+      "indexable": true,
+      "reasons": [
+        "أخبرنا عن سيارتك وما تحتاج إليه: صيانة أو إصلاح أو تشخيص أو تطوير أداء"
+      ]
+    },
+    {
+      "path": "/ar/brands/defender-service-dubai",
+      "indexable": true,
+      "reasons": [
+        "أخبرنا عن سيارتك وما تحتاج إليه: صيانة أو إصلاح أو تشخيص أو تطوير أداء"
+      ]
+    },
+    {
+      "path": "/ar/brands/dodge-service-dubai",
+      "indexable": true,
+      "reasons": [
+        "أخبرنا عن سيارتك وما تحتاج إليه: صيانة أو إصلاح أو تشخيص أو تطوير أداء"
+      ]
+    },
+    {
+      "path": "/ar/brands/ferrari-service-dubai",
+      "indexable": true,
+      "reasons": [
+        "أخبرنا عن سيارتك وما تحتاج إليه: صيانة أو إصلاح أو تشخيص أو تطوير أداء"
+      ]
+    },
+    {
+      "path": "/ar/brands/ford-service-dubai",
+      "indexable": true,
+      "reasons": [
+        "أخبرنا عن سيارتك وما تحتاج إليه: صيانة أو إصلاح أو تشخيص أو تطوير أداء"
+      ]
+    },
+    {
+      "path": "/ar/brands/genesis-service-dubai",
+      "indexable": true,
+      "reasons": [
+        "أخبرنا عن سيارتك وما تحتاج إليه: صيانة أو إصلاح أو تشخيص أو تطوير أداء"
+      ]
+    },
+    {
+      "path": "/ar/brands/gmc-service-dubai",
+      "indexable": true,
+      "reasons": [
+        "أخبرنا عن سيارتك وما تحتاج إليه: صيانة أو إصلاح أو تشخيص أو تطوير أداء"
+      ]
+    },
+    {
+      "path": "/ar/brands/hummer-service-dubai",
+      "indexable": true,
+      "reasons": [
+        "أخبرنا عن سيارتك وما تحتاج إليه: صيانة أو إصلاح أو تشخيص أو تطوير أداء"
+      ]
+    },
+    {
+      "path": "/ar/brands/jaguar-service-dubai",
+      "indexable": true,
+      "reasons": [
+        "أخبرنا عن سيارتك وما تحتاج إليه: صيانة أو إصلاح أو تشخيص أو تطوير أداء"
+      ]
+    },
+    {
+      "path": "/ar/brands/jeep-service-dubai",
+      "indexable": true,
+      "reasons": [
+        "أخبرنا عن سيارتك وما تحتاج إليه: صيانة أو إصلاح أو تشخيص أو تطوير أداء"
+      ]
+    },
+    {
+      "path": "/ar/brands/jetour-service-dubai",
+      "indexable": true,
+      "reasons": [
+        "أخبرنا عن سيارتك وما تحتاج إليه: صيانة أو إصلاح أو تشخيص أو تطوير أداء"
+      ]
+    },
+    {
+      "path": "/ar/brands/koenigsegg-service-dubai",
+      "indexable": true,
+      "reasons": [
+        "أخبرنا عن سيارتك وما تحتاج إليه: صيانة أو إصلاح أو تشخيص أو تطوير أداء"
+      ]
+    },
+    {
+      "path": "/ar/brands/lamborghini-service-dubai",
+      "indexable": true,
+      "reasons": [
+        "أخبرنا عن سيارتك وما تحتاج إليه: صيانة أو إصلاح أو تشخيص أو تطوير أداء"
+      ]
+    },
+    {
+      "path": "/ar/brands/land-rover-service-dubai",
+      "indexable": true,
+      "reasons": [
+        "أخبرنا عن سيارتك وما تحتاج إليه: صيانة أو إصلاح أو تشخيص أو تطوير أداء"
+      ]
+    },
+    {
+      "path": "/ar/brands/lincoln-service-dubai",
+      "indexable": true,
+      "reasons": [
+        "أخبرنا عن سيارتك وما تحتاج إليه: صيانة أو إصلاح أو تشخيص أو تطوير أداء"
+      ]
+    },
+    {
+      "path": "/ar/brands/maserati-service-dubai",
+      "indexable": true,
+      "reasons": [
+        "أخبرنا عن سيارتك وما تحتاج إليه: صيانة أو إصلاح أو تشخيص أو تطوير أداء"
+      ]
+    },
+    {
+      "path": "/ar/brands/maybach-service-dubai",
+      "indexable": true,
+      "reasons": [
+        "أخبرنا عن سيارتك وما تحتاج إليه: صيانة أو إصلاح أو تشخيص أو تطوير أداء"
+      ]
+    },
+    {
+      "path": "/ar/brands/mclaren-service-dubai",
+      "indexable": true,
+      "reasons": [
+        "أخبرنا عن سيارتك وما تحتاج إليه: صيانة أو إصلاح أو تشخيص أو تطوير أداء"
+      ]
+    },
+    {
+      "path": "/ar/brands/mercedes-benz-service-dubai",
+      "indexable": true,
+      "reasons": [
+        "أخبرنا عن سيارتك وما تحتاج إليه: صيانة أو إصلاح أو تشخيص أو تطوير أداء"
+      ]
+    },
+    {
+      "path": "/ar/brands/mini-service-dubai",
+      "indexable": true,
+      "reasons": [
+        "أخبرنا عن سيارتك وما تحتاج إليه: صيانة أو إصلاح أو تشخيص أو تطوير أداء"
+      ]
+    },
+    {
+      "path": "/ar/brands/pagani-service-dubai",
+      "indexable": true,
+      "reasons": [
+        "أخبرنا عن سيارتك وما تحتاج إليه: صيانة أو إصلاح أو تشخيص أو تطوير أداء"
+      ]
+    },
+    {
+      "path": "/ar/brands/porsche-service-dubai",
+      "indexable": true,
+      "reasons": [
+        "أخبرنا عن سيارتك وما تحتاج إليه: صيانة أو إصلاح أو تشخيص أو تطوير أداء"
+      ]
+    },
+    {
+      "path": "/ar/brands/range-rover-service-dubai",
+      "indexable": true,
+      "reasons": [
+        "أخبرنا عن سيارتك وما تحتاج إليه: صيانة أو إصلاح أو تشخيص أو تطوير أداء"
+      ]
+    },
+    {
+      "path": "/ar/brands/rolls-royce-service-dubai",
+      "indexable": true,
+      "reasons": [
+        "أخبرنا عن سيارتك وما تحتاج إليه: صيانة أو إصلاح أو تشخيص أو تطوير أداء"
+      ]
+    },
+    {
+      "path": "/ar/brands/rox-service-dubai",
+      "indexable": true,
+      "reasons": [
+        "أخبرنا عن سيارتك وما تحتاج إليه: صيانة أو إصلاح أو تشخيص أو تطوير أداء"
+      ]
+    },
+    {
+      "path": "/ar/brands/subaru-service-dubai",
+      "indexable": true,
+      "reasons": [
+        "أخبرنا عن سيارتك وما تحتاج إليه: صيانة أو إصلاح أو تشخيص أو تطوير أداء"
+      ]
+    },
+    {
+      "path": "/ar/brands/tesla-service-dubai",
+      "indexable": true,
+      "reasons": [
+        "أخبرنا عن سيارتك وما تحتاج إليه: صيانة أو إصلاح أو تشخيص أو تطوير أداء"
+      ]
+    },
+    {
+      "path": "/ar/brands/volkswagen-service-dubai",
+      "indexable": true,
+      "reasons": [
+        "أخبرنا عن سيارتك وما تحتاج إليه: صيانة أو إصلاح أو تشخيص أو تطوير أداء"
+      ]
+    },
+    {
+      "path": "/ar/brands/volvo-service-dubai",
+      "indexable": true,
+      "reasons": [
+        "أخبرنا عن سيارتك وما تحتاج إليه: صيانة أو إصلاح أو تشخيص أو تطوير أداء"
+      ]
+    },
+    {
+      "path": "/ar/services",
+      "indexable": true,
+      "reasons": [
+        "يشمل ذلك مرسيدس وبي إم دبليو وأودي وبورشه والسيارات الفاخرة والكهربائية."
+      ]
+    },
+    {
+      "path": "/ar/sitemap",
+      "indexable": true,
+      "reasons": [
+        "تطوير أداء مرسيدس AMG GT في دبي: خطة حسب السيارة"
+      ]
+    },
+    {
+      "path": "/best-audi-workshop-dubai",
+      "indexable": true,
+      "reasons": [
+        "Can I ask about an Audi RS performance project?"
+      ]
+    },
+    {
+      "path": "/blog",
+      "indexable": true,
+      "reasons": [
+        "Mercedes-AMG GT Tuning in Dubai: A Complete Upgrade Guide"
+      ]
+    },
+    {
+      "path": "/blog/audi-maintenance-guide-dubai",
+      "indexable": true,
+      "reasons": [
+        "Is performance tuning suitable for every ",
+        "OEM parts, alternatives and performance work",
+        "RS and R8 health checks before performance work",
+        "RS and performance upgrades should follow"
+      ]
+    },
+    {
+      "path": "/blog/bentley-best-workshop-dubai",
+      "indexable": true,
+      "reasons": [
+        "Is performance tuning suitable for every "
+      ]
+    },
+    {
+      "path": "/blog/bentley-continental-gt-service-dubai-guide",
+      "indexable": true,
+      "reasons": [
+        "Mercedes-AMG GT Tuning in Dubai: A Complete Upgrade Guide"
+      ]
+    },
+    {
+      "path": "/blog/bmw-maintenance-guide-dubai",
+      "indexable": true,
+      "reasons": [
+        "Is performance tuning suitable for every ",
+        "OEM parts, alternatives and performance work",
+        "M-car health checks and upgrade planning",
+        "M-car upgrades should be planned"
+      ]
+    },
+    {
+      "path": "/blog/cadillac-best-workshop-dubai",
+      "indexable": true,
+      "reasons": [
+        "Is performance tuning suitable for every ",
+        "OEM parts, alternatives and performance work"
+      ]
+    },
+    {
+      "path": "/blog/chevrolet-best-workshop-dubai",
+      "indexable": true,
+      "reasons": [
+        "Is performance tuning suitable for every ",
+        "OEM parts, alternatives and performance work"
+      ]
+    },
+    {
+      "path": "/blog/ford-best-workshop-dubai",
+      "indexable": true,
+      "reasons": [
+        "Is performance tuning suitable for every ",
+        "OEM parts, alternatives and performance work"
+      ]
+    },
+    {
+      "path": "/blog/gad-tuning-explained",
+      "indexable": true,
+      "reasons": [
+        "Mercedes-AMG GT Tuning in Dubai: A Complete Upgrade Guide"
+      ]
+    },
+    {
+      "path": "/blog/lamborghini-maintenance-guide-dubai",
+      "indexable": true,
+      "reasons": [
+        "Is performance tuning suitable for every "
+      ]
+    },
+    {
+      "path": "/blog/land-rover-best-workshop-dubai",
+      "indexable": true,
+      "reasons": [
+        "Is performance tuning suitable for every ",
+        "OEM parts, alternatives and performance work"
+      ]
+    },
+    {
+      "path": "/blog/maserati-best-workshop-dubai",
+      "indexable": true,
+      "reasons": [
+        "Is performance tuning suitable for every ",
+        "OEM parts, alternatives and performance work"
+      ]
+    },
+    {
+      "path": "/blog/maybach-best-workshop-dubai",
+      "indexable": true,
+      "reasons": [
+        "Is performance tuning suitable for every "
+      ]
+    },
+    {
+      "path": "/blog/mercedes-amg-gt-black-series-1300hp-build-dubai",
+      "indexable": true,
+      "reasons": [
+        "Mercedes-AMG GT Tuning in Dubai: A Complete Upgrade Guide"
+      ]
+    },
+    {
+      "path": "/blog/mercedes-amg-gt-tuning-dubai",
+      "indexable": true,
+      "reasons": [
+        "Mercedes-AMG GT Tuning in Dubai: A Complete Upgrade Guide"
+      ]
+    },
+    {
+      "path": "/blog/mini-best-workshop-dubai",
+      "indexable": true,
+      "reasons": [
+        "Is performance tuning suitable for every ",
+        "OEM parts, alternatives and performance work"
+      ]
+    },
+    {
+      "path": "/blog/volkswagen-best-workshop-dubai",
+      "indexable": true,
+      "reasons": [
+        "Is performance tuning suitable for every ",
+        "OEM parts, alternatives and performance work",
+        "GTI and Golf R tuning should follow"
+      ]
+    },
+    {
+      "path": "/brands/audi-service-dubai/rs6",
+      "indexable": true,
+      "reasons": [
+        "Can you inspect an RS6 before tuning?"
+      ]
+    },
+    {
+      "path": "/brands/bmw-service-dubai/m3",
+      "indexable": true,
+      "reasons": [
+        "Treat tuning requests as health-assessment projects"
+      ]
+    },
+    {
+      "path": "/brands/bmw-service-dubai/m4",
+      "indexable": true,
+      "reasons": [
+        "Can an M4 be inspected before tuning?"
+      ]
+    },
+    {
+      "path": "/brands/bugatti-service-dubai",
+      "indexable": true,
+      "reasons": [
+        "Tell us about your car and what you need (service, repair, diagnostics, tuning, etc.)"
+      ]
+    },
+    {
+      "path": "/brands/byd-service-dubai",
+      "indexable": true,
+      "reasons": [
+        "Tell us about your car and what you need (service, repair, diagnostics, tuning, etc.)"
+      ]
+    },
+    {
+      "path": "/brands/cadillac-service-dubai",
+      "indexable": true,
+      "reasons": [
+        "Tell us about your car and what you need (service, repair, diagnostics, tuning, etc.)"
+      ]
+    },
+    {
+      "path": "/brands/chevrolet-service-dubai",
+      "indexable": true,
+      "reasons": [
+        "Tell us about your car and what you need (service, repair, diagnostics, tuning, etc.)"
+      ]
+    },
+    {
+      "path": "/brands/chrysler-service-dubai",
+      "indexable": true,
+      "reasons": [
+        "Tell us about your car and what you need (service, repair, diagnostics, tuning, etc.)"
+      ]
+    },
+    {
+      "path": "/brands/corvette-service-dubai",
+      "indexable": true,
+      "reasons": [
+        "Tell us about your car and what you need (service, repair, diagnostics, tuning, etc.)"
+      ]
+    },
+    {
+      "path": "/brands/defender-service-dubai",
+      "indexable": true,
+      "reasons": [
+        "Tell us about your car and what you need (service, repair, diagnostics, tuning, etc.)"
+      ]
+    },
+    {
+      "path": "/brands/dodge-service-dubai",
+      "indexable": true,
+      "reasons": [
+        "Tell us about your car and what you need (service, repair, diagnostics, tuning, etc.)"
+      ]
+    },
+    {
+      "path": "/brands/ford-service-dubai",
+      "indexable": true,
+      "reasons": [
+        "Tell us about your car and what you need (service, repair, diagnostics, tuning, etc.)"
+      ]
+    },
+    {
+      "path": "/brands/genesis-service-dubai",
+      "indexable": true,
+      "reasons": [
+        "Tell us about your car and what you need (service, repair, diagnostics, tuning, etc.)"
+      ]
+    },
+    {
+      "path": "/brands/gmc-service-dubai",
+      "indexable": true,
+      "reasons": [
+        "Tell us about your car and what you need (service, repair, diagnostics, tuning, etc.)"
+      ]
+    },
+    {
+      "path": "/brands/hummer-service-dubai",
+      "indexable": true,
+      "reasons": [
+        "Tell us about your car and what you need (service, repair, diagnostics, tuning, etc.)"
+      ]
+    },
+    {
+      "path": "/brands/jaguar-service-dubai",
+      "indexable": true,
+      "reasons": [
+        "Tell us about your car and what you need (service, repair, diagnostics, tuning, etc.)"
+      ]
+    },
+    {
+      "path": "/brands/jeep-service-dubai",
+      "indexable": true,
+      "reasons": [
+        "Tell us about your car and what you need (service, repair, diagnostics, tuning, etc.)"
+      ]
+    },
+    {
+      "path": "/brands/jetour-service-dubai",
+      "indexable": true,
+      "reasons": [
+        "Tell us about your car and what you need (service, repair, diagnostics, tuning, etc.)"
+      ]
+    },
+    {
+      "path": "/brands/koenigsegg-service-dubai",
+      "indexable": true,
+      "reasons": [
+        "Tell us about your car and what you need (service, repair, diagnostics, tuning, etc.)"
+      ]
+    },
+    {
+      "path": "/brands/land-rover-service-dubai",
+      "indexable": true,
+      "reasons": [
+        "Tell us about your car and what you need (service, repair, diagnostics, tuning, etc.)"
+      ]
+    },
+    {
+      "path": "/brands/lincoln-service-dubai",
+      "indexable": true,
+      "reasons": [
+        "Tell us about your car and what you need (service, repair, diagnostics, tuning, etc.)"
+      ]
+    },
+    {
+      "path": "/brands/maserati-service-dubai",
+      "indexable": true,
+      "reasons": [
+        "Tell us about your car and what you need (service, repair, diagnostics, tuning, etc.)"
+      ]
+    },
+    {
+      "path": "/brands/maybach-service-dubai",
+      "indexable": true,
+      "reasons": [
+        "Tell us about your car and what you need (service, repair, diagnostics, tuning, etc.)"
+      ]
+    },
+    {
+      "path": "/brands/mercedes-benz-service-dubai",
+      "indexable": true,
+      "reasons": [
+        "Tell us about your car and what you need (service, repair, diagnostics, tuning, etc.)"
+      ]
+    },
+    {
+      "path": "/brands/mini-service-dubai",
+      "indexable": true,
+      "reasons": [
+        "Tell us about your car and what you need (service, repair, diagnostics, tuning, etc.)"
+      ]
+    },
+    {
+      "path": "/brands/pagani-service-dubai",
+      "indexable": true,
+      "reasons": [
+        "Tell us about your car and what you need (service, repair, diagnostics, tuning, etc.)"
+      ]
+    },
+    {
+      "path": "/brands/porsche-service-dubai",
+      "indexable": true,
+      "reasons": [
+        "Tell us about your car and what you need (service, repair, diagnostics, tuning, etc.)"
+      ]
+    },
+    {
+      "path": "/brands/range-rover-service-dubai",
+      "indexable": true,
+      "reasons": [
+        "Tell us about your car and what you need (service, repair, diagnostics, tuning, etc.)"
+      ]
+    },
+    {
+      "path": "/brands/subaru-service-dubai",
+      "indexable": true,
+      "reasons": [
+        "Tell us about your car and what you need (service, repair, diagnostics, tuning, etc.)"
+      ]
+    },
+    {
+      "path": "/brands/tesla-service-dubai",
+      "indexable": true,
+      "reasons": [
+        "Tell us about your car and what you need (service, repair, diagnostics, tuning, etc.)"
+      ]
+    },
+    {
+      "path": "/brands/volkswagen-service-dubai",
+      "indexable": true,
+      "reasons": [
+        "Tell us about your car and what you need (service, repair, diagnostics, tuning, etc.)"
+      ]
+    },
+    {
+      "path": "/brands/volvo-service-dubai",
+      "indexable": true,
+      "reasons": [
+        "Tell us about your car and what you need (service, repair, diagnostics, tuning, etc.)"
+      ]
+    },
+    {
+      "path": "/services",
+      "indexable": true,
+      "reasons": [
+        "Brands include Mercedes-Benz, BMW, Audi, Porsche, Ferrari, Lamborghini, Range Rover and luxury electric vehicles."
+      ]
+    },
+    {
+      "path": "/sitemap",
+      "indexable": true,
+      "reasons": [
+        "Mercedes-AMG GT Tuning in Dubai: A Complete Upgrade Guide"
+      ]
+    }
+  ]
+}

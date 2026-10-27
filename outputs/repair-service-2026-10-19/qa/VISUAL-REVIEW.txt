@@ -1,0 +1,21 @@
+Representative visual inspection - final local build, 19 October 2026
+
+Viewed at native captured viewport size:
+- browser/bmw-transmission-en-desktop-hero.png (1440 x 1000): readable title,
+  technical introduction and primary inspection / telephone actions; clean
+  spacing, complete logo and visible section navigation.
+- browser/mercedes-diagnostics-ar-mobile-booking.png (390 x 844): Arabic quote
+  explanation, distinct WhatsApp / telephone actions, draft delivery note and
+  related repair links remain readable within the viewport. Telephone digits
+  are isolated left-to-right. Sticky header is visible above scrolled content.
+- browser/lamborghini-engine-ar-mobile-faq.png (390 x 844): expanded Arabic
+  answer, remaining questions and borders fit the mobile width; text is readable.
+
+No clipped CTA, overlapping card content, broken logo or horizontal layout
+defect was observed in these samples. The browser suite additionally checks
+all 22 repair locale routes at 1440, 390 and 320 px, including after FAQ and
+quotation interactions. Screenshots retain the existing custom orange cursor;
+it can appear over the most recently activated link or question.
+
+This is local desktop-browser responsive QA. It does not substitute for field
+mobile usability or Core Web Vitals measurements.

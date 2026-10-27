@@ -1,0 +1,72 @@
+{
+  "preparedAt": "2026-10-26T11:13:59.964Z",
+  "decision": "NO-GO",
+  "publicationAuthorized": false,
+  "publicationPerformed": false,
+  "gitPushOrMergePerformed": false,
+  "configurationChangesPerformed": false,
+  "indexingOrSitemapSubmissionPerformed": false,
+  "publishedSourceSha": "13d1c19e99e9696ab63e5721ada18ffcfce11519",
+  "sourceIdentityBasis": "Authenticated UI Published badge, unique authenticated edit SHA, exactthree-file diff and currentGitconnection/main/sync mapping; not latest_commit_sha alone",
+  "recommendedContentOption": "B",
+  "reviewedLocalArtifact": {
+    "fileCount": 1634,
+    "zipSha256": "a2faa6a33475be10c600bbfdad3303a3408bbabafe87d9dd708ca872278806b3",
+    "fullRouteAssertions": 2530,
+    "sitemapUrls": 1005,
+    "changedDates": [
+      "English Mercedes hub 2026-10-20 ->2026-10-26",
+      "English Mercedes body 2026-09-28 ->2026-10-26"
+    ],
+    "protectedRouteMetadata": 1256,
+    "byteIdenticalUnaffectedRoots": 1254
+  },
+  "browser": {
+    "common": {
+      "sequencesPerOption": 10,
+      "stepsPerOption": 50,
+      "uncaughtExceptionsPerOption": 0
+    },
+    "priorSameTabPattern": {
+      "sequencesPerOption": 3,
+      "stepsPerOption": 15,
+      "nativeOrPageExceptionsPerOption": 0
+    },
+    "oldExceptionAttributed": false,
+    "newExceptionStackAvailable": false,
+    "residualRisk": "Low observed impact, unknown cause/globalfrequency; require attribution or informed boundedriskacceptance plus samehostbuiltcandidate smoke test before GO"
+  },
+  "publicProtection": {
+    "redirectAssertionsPassed": 852,
+    "redirectCases": 326,
+    "unknownOriginCasesPassed": 48,
+    "authenticatedRuleDefinitionAudit": false,
+    "ruleOperations": 0,
+    "unknownDocuments": "Homepage200 retained",
+    "missingAssets": "404 retained"
+  },
+  "blockingEvidence": [
+    {
+      "id": "host-build",
+      "detail": "Exact hostBun/runtimeversion, lockselection/hash, installation/cache/frozenflags, productionbuildcommand/mode and unpublishedBcompleteoutput notverified. CommittedBunlock differs59/69 directversions from validatedpnpm cohort."
+    },
+    {
+      "id": "recovery",
+      "detail": "Publishedsource13d is recoverable inGit/history; provider retention/restoration of exactcompiledfrontend and effects ofgenericRevert notverified. OlderRevertconfirmation was inspected/dismissed,neverconfirmed."
+    }
+  ],
+  "requiredLaterAuthorization": [
+    "Creating/synchronizing hostcandidate or anypush/merge",
+    "Exactproductionpublication aftertechnicalgatespass",
+    "Anyrollback scope, includingprovider actioneffects"
+  ],
+  "prohibitedWorkarounds": [
+    "Activate_worker/_redirects/another routinglayer",
+    "Changehosting/domain/DNS/Cloudflarerules",
+    "Rewrite lockfilesorcompiledassets toforceequality",
+    "Publish ZIPthroughadifferentmechanism",
+    "Unrelatedfixesorindexingrequests"
+  ],
+  "report": "README.md",
+  "runbook": "release/RELEASE-RUNBOOK.md"
+}

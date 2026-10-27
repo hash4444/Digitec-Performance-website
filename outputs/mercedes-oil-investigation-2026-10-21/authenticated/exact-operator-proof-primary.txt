@@ -1,0 +1,179 @@
+- banner:
+  - button:
+  - search:
+    - button:
+  - button:
+    - generic: help_outline
+  - tooltip: Help
+  - button:
+    - generic: manage_accounts
+  - tooltip: User settings
+  - button:
+    - generic: notifications
+  - tooltip: Messages
+  - generic: "38"
+  - button:
+  - button:
+- navigation:
+  - heading [level=1]: Performance
+- button:
+  - generic: 
+  - generic: EXPORT
+- radiogroup:
+  - radio:
+    - generic: 24 hours
+  - radio:
+    - generic: 7 days
+  - radio [checked]:
+    - generic: 28 days
+  - radio:
+    - generic: 3 months
+- button:
+  - generic: More
+  - generic: arrow_drop_down
+- list:
+  - button:
+    - generic: "Search type: Web"
+    - generic: arrow_drop_down
+  - tooltip: "Search type: Web"
+  - button:
+    - generic: "Query: mercedes oil change"
+  - tooltip: "Query: mercedes oil change"
+  - button:
+    - generic: close
+  - button:
+    - generic: "Country: United Arab Emirates"
+  - tooltip: "Country: United Arab Emirates"
+  - button:
+    - generic: close
+  - button:
+    - generic: add
+    - generic: Add filter
+  - tooltip: Add filter
+  - button:
+    - generic: filter_list_spark
+  - tooltip: Customise your performance report using AI
+  - button:
+    - generic: Reset filters
+  - tooltip: Reset filters
+- generic: "Last update: 5.5 hours ago"
+- main:
+  - button:
+    - generic: 
+    - generic: Total clicks
+    - generic: "0"
+  - button:
+    - generic: 
+  - button:
+    - generic: 
+    - generic: Total impressions
+    - generic: "70"
+  - button:
+    - generic: 
+  - button:
+    - generic: 
+    - generic: Average CTR
+    - generic: 0%
+  - button:
+    - generic: 
+  - button:
+    - generic: 
+    - generic: Average position
+    - generic: "9.6"
+  - button:
+    - generic: 
+  - button:
+    - generic: Daily
+  - application:
+    - generic: Chart, containing counts of Total clicks, Total impressions, Average CTR and Average position from 21 September 2026 to 18 October 2026
+  - generic: Generative AI report
+  - generic: chevron_forward
+  - link:
+    - /url: ./search-console/performance/search-analytics/ai?resource_id=sc-domain%3Adigitecme.com
+  - tablist:
+    - tab:
+      - generic: Queries
+    - tab [selected]:
+      - generic: Pages
+    - tab:
+      - generic: Countries
+    - tab:
+      - generic: Devices
+    - tab:
+      - generic: Search appearance
+    - tab:
+      - generic: Days
+  - generic: 
+  - tabpanel:
+    - button:
+      - generic: 
+    - table:
+      - rowgroup:
+        - row:
+          - columnheader:
+            - generic: Top pages
+            - button:
+          - columnheader:
+            - button:
+            - generic: Clicks
+          - columnheader:
+            - button:
+            - generic: Impressions
+          - columnheader:
+            - button:
+            - generic: CTR
+          - columnheader:
+            - button:
+            - generic: Position
+      - rowgroup:
+        - row:
+          - cell:
+            - generic: https://digitecme.com/services/mercedes-oil-change-dubai/
+          - cell:
+            - generic: "0"
+          - cell:
+            - generic: "66"
+          - cell:
+            - generic: 0%
+          - cell:
+            - generic: "6.5"
+        - row:
+          - cell:
+            - generic: https://digitecme.com/services/oil-change-dubai
+          - cell:
+            - generic: "0"
+          - cell:
+            - generic: "4"
+          - cell:
+            - generic: 0%
+          - cell:
+            - generic: "61.0"
+    - generic: "Rows per page:"
+    - listbox:
+      - text: "5"
+      - option [selected]: "10"
+      - text: 25 50 100 250 500
+    - generic: 1-2 of 2
+    - button [disabled]:
+    - tooltip: Previous page
+    - button [disabled]:
+    - tooltip: Next page
+- dialog "Query":
+  - heading "Query" [level=2]:
+    - generic: Query
+  - tablist:
+    - tab "Filter" [selected]:
+      - generic: Filter
+    - tab "Compare":
+      - generic: Compare
+  - tabpanel "Filter":
+    - combobox "String matching options drop-down menu":
+      - generic: Exact query
+    - generic: Keyword
+    - generic: Keyword
+    - generic: Keyword
+    - textbox "Keyword" [active]: mercedes oil change
+  - button "Cancel":
+    - generic: Cancel
+  - button "Apply":
+    - generic: Apply

@@ -1,0 +1,386 @@
+{
+  "generatedAtUtc": "2026-10-26T07:40:09.685Z",
+  "readOnly": true,
+  "sourceHashes": {
+    "historical": {
+      "path": "reports/mercedes-phase-2b/analysis/phase2a-failure-analysis.json",
+      "sha256": "b85ceef0c341e02725509a472ab9ebeac88215a6eae4e9624eef32b398744036"
+    },
+    "matrix": {
+      "path": "reports/mercedes-phase-2b/http/post-2026-10-26T07-35-12-026Z/capture.json",
+      "sha256": "9fc2b79a2b1d953f0ce1ac1ca7c413a6088a50712810a6f91bbb119908f70d8a"
+    },
+    "inventory": {
+      "path": "reports/mercedes-phase-2b/cloudflare/current-inventory.json",
+      "sha256": "d3c2ac33eaf8658238647197d703c3f3b4c82248823b38deb63ca4d7311ffd52"
+    },
+    "phase2aInventory": {
+      "path": "reports/mercedes-phase-2/deployment-2026-10-26/cloudflare/after-inventory.json",
+      "sha256": "42b04c66bee2c335b7fe5cfafa87fc1ea149cfa434490e4420f6c761b99b4c6e"
+    },
+    "repeats": {
+      "path": "reports/mercedes-phase-2b/repeats/repeat-2026-10-26T07-35-52-836Z/capture.json",
+      "sha256": "d36b201132e6ac055e9b86bd4ffbc6da6b7fedbea4d1d715b07806e29ea69965"
+    }
+  },
+  "conclusion": "R4 currently passes the full sampled matrix and twelve exact-condition repeats without a configuration change. The historical miss remains real and unexplained. Evidence is consistent with a transient routing/configuration-consistency event, but propagation is not proven.",
+  "noProductionActionByThisAnalysis": true,
+  "freshMatrix": {
+    "startedAt": "2026-10-26T07:35:12.033Z",
+    "finishedAt": "2026-10-26T07:36:01.733Z",
+    "summary": {
+      "cases": 326,
+      "networkRequests": 612,
+      "assertions": 852,
+      "passed": 852,
+      "failed": 0,
+      "sourceCases": 192,
+      "protectedOilCases": 48
+    },
+    "sourceCases": 192,
+    "sourceDirectPasses": 192,
+    "r4SourceCases": 48,
+    "r4DirectPasses": 48,
+    "r4SourceColos": [
+      "AMS",
+      "FRA",
+      "HKG",
+      "CDG"
+    ],
+    "r4AmsCases": 16,
+    "r4AmsDirectPasses": 16
+  },
+  "exactFailedConditionFreshMatrix": {
+    "key": "source-ar-mechanical-repair-144",
+    "method": "GET",
+    "url": "https://digitecme.com/ar/brands/mercedes-benz-service-dubai/mechanical-repair",
+    "requestStartedAtUtc": "2026-10-26T07:35:34.522Z",
+    "firstStatus": 308,
+    "location": "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai",
+    "cfRay": "a507c90d4dcfd593-AMS",
+    "cfRayColoSuffix": "AMS",
+    "chainResponses": 2,
+    "finalStatus": 200,
+    "finalUrl": "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai",
+    "finalCanonical": [
+      "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai"
+    ],
+    "loop": false
+  },
+  "secondsBetweenHistoricalFailedRequestAndFreshMatrixExactPass": 874.767,
+  "freshExactRepeats": {
+    "startedAtUtc": "2026-10-26T07:35:52.840Z",
+    "finishedAtUtc": "2026-10-26T07:37:53.755Z",
+    "summary": {
+      "sourceRequests": 12,
+      "targetRequests": 12,
+      "passed": 12,
+      "failed": 0,
+      "sourceStatuses": {
+        "308": 12
+      },
+      "sourceColos": [
+        "HKG",
+        "AMS",
+        "FRA",
+        "CDG"
+      ],
+      "byTransport": {
+        "fetch-default": {
+          "requests": 6,
+          "passed": 6,
+          "failed": 0
+        },
+        "fetch-connection-close": {
+          "requests": 6,
+          "passed": 6,
+          "failed": 0
+        }
+      }
+    },
+    "noCacheHeadersSent": true,
+    "noQueryAdded": true,
+    "rows": [
+      {
+        "sequence": 1,
+        "transport": "fetch-default",
+        "requestStartedAtUtc": "2026-10-26T07:35:52.840Z",
+        "sourceStatus": 308,
+        "location": "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai",
+        "cfRay": "a507c981593c064f-HKG",
+        "cfRayColoSuffix": "HKG",
+        "targetStatus": 200,
+        "targetCanonical": [
+          "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai"
+        ],
+        "passed": true
+      },
+      {
+        "sequence": 2,
+        "transport": "fetch-connection-close",
+        "requestStartedAtUtc": "2026-10-26T07:36:03.431Z",
+        "sourceStatus": 308,
+        "location": "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai",
+        "cfRay": "a507c9c39e43b92c-AMS",
+        "cfRayColoSuffix": "AMS",
+        "targetStatus": 200,
+        "targetCanonical": [
+          "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai"
+        ],
+        "passed": true
+      },
+      {
+        "sequence": 3,
+        "transport": "fetch-default",
+        "requestStartedAtUtc": "2026-10-26T07:36:14.337Z",
+        "sourceStatus": 308,
+        "location": "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai",
+        "cfRay": "a507ca07bdc8109a-HKG",
+        "cfRayColoSuffix": "HKG",
+        "targetStatus": 200,
+        "targetCanonical": [
+          "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai"
+        ],
+        "passed": true
+      },
+      {
+        "sequence": 4,
+        "transport": "fetch-connection-close",
+        "requestStartedAtUtc": "2026-10-26T07:36:25.605Z",
+        "sourceStatus": 308,
+        "location": "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai",
+        "cfRay": "a507ca4e1da3d9d8-FRA",
+        "cfRayColoSuffix": "FRA",
+        "targetStatus": 200,
+        "targetCanonical": [
+          "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai"
+        ],
+        "passed": true
+      },
+      {
+        "sequence": 5,
+        "transport": "fetch-default",
+        "requestStartedAtUtc": "2026-10-26T07:36:36.530Z",
+        "sourceStatus": 308,
+        "location": "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai",
+        "cfRay": "a507ca926f445897-AMS",
+        "cfRayColoSuffix": "AMS",
+        "targetStatus": 200,
+        "targetCanonical": [
+          "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai"
+        ],
+        "passed": true
+      },
+      {
+        "sequence": 6,
+        "transport": "fetch-connection-close",
+        "requestStartedAtUtc": "2026-10-26T07:36:47.275Z",
+        "sourceStatus": 308,
+        "location": "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai",
+        "cfRay": "a507cad57d587bda-FRA",
+        "cfRayColoSuffix": "FRA",
+        "targetStatus": 200,
+        "targetCanonical": [
+          "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai"
+        ],
+        "passed": true
+      },
+      {
+        "sequence": 7,
+        "transport": "fetch-default",
+        "requestStartedAtUtc": "2026-10-26T07:36:58.068Z",
+        "sourceStatus": 308,
+        "location": "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai",
+        "cfRay": "a507cb18cb6aca95-CDG",
+        "cfRayColoSuffix": "CDG",
+        "targetStatus": 200,
+        "targetCanonical": [
+          "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai"
+        ],
+        "passed": true
+      },
+      {
+        "sequence": 8,
+        "transport": "fetch-connection-close",
+        "requestStartedAtUtc": "2026-10-26T07:37:08.631Z",
+        "sourceStatus": 308,
+        "location": "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai",
+        "cfRay": "a507cb5ade428559-HKG",
+        "cfRayColoSuffix": "HKG",
+        "targetStatus": 200,
+        "targetCanonical": [
+          "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai"
+        ],
+        "passed": true
+      },
+      {
+        "sequence": 9,
+        "transport": "fetch-default",
+        "requestStartedAtUtc": "2026-10-26T07:37:19.425Z",
+        "sourceStatus": 308,
+        "location": "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai",
+        "cfRay": "a507cb9e49b05de2-HKG",
+        "cfRayColoSuffix": "HKG",
+        "targetStatus": 200,
+        "targetCanonical": [
+          "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai"
+        ],
+        "passed": true
+      },
+      {
+        "sequence": 10,
+        "transport": "fetch-connection-close",
+        "requestStartedAtUtc": "2026-10-26T07:37:31.232Z",
+        "sourceStatus": 308,
+        "location": "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai",
+        "cfRay": "a507cbe80a7a6dc1-FRA",
+        "cfRayColoSuffix": "FRA",
+        "targetStatus": 200,
+        "targetCanonical": [
+          "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai"
+        ],
+        "passed": true
+      },
+      {
+        "sequence": 11,
+        "transport": "fetch-default",
+        "requestStartedAtUtc": "2026-10-26T07:37:42.149Z",
+        "sourceStatus": 308,
+        "location": "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai",
+        "cfRay": "a507cc2c9c5b970f-AMS",
+        "cfRayColoSuffix": "AMS",
+        "targetStatus": 200,
+        "targetCanonical": [
+          "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai"
+        ],
+        "passed": true
+      },
+      {
+        "sequence": 12,
+        "transport": "fetch-connection-close",
+        "requestStartedAtUtc": "2026-10-26T07:37:52.866Z",
+        "sourceStatus": 308,
+        "location": "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai",
+        "cfRay": "a507cc6f7b9f04fa-HKG",
+        "cfRayColoSuffix": "HKG",
+        "targetStatus": 200,
+        "targetCanonical": [
+          "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai"
+        ],
+        "passed": true
+      }
+    ]
+  },
+  "currentConfiguration": {
+    "observedAt": "2026-10-26T07:35:51.673Z",
+    "allSevenDefinitionsIdsOrderEnabledUnchanged": true,
+    "ruleComparisons": [
+      {
+        "id": "5addb0c068414fb5b985a869ded26c68",
+        "order": 1,
+        "unchanged": true
+      },
+      {
+        "id": "dbe42693423442afbc3bab9b993242a7",
+        "order": 2,
+        "unchanged": true
+      },
+      {
+        "id": "b835ca6b88b448d6809f01271dba491b",
+        "order": 3,
+        "unchanged": true
+      },
+      {
+        "id": "5fafd20389964771885d8d1194f01d77",
+        "order": 4,
+        "unchanged": true
+      },
+      {
+        "id": "239ab46545704096bec2628d8eedf9b9",
+        "order": 5,
+        "unchanged": true
+      },
+      {
+        "id": "2873f5b6de04417d8a486b22cc878835",
+        "order": 6,
+        "unchanged": true
+      },
+      {
+        "id": "9781b1ef743f4ffbaadbe5cb3250eeca",
+        "order": 7,
+        "unchanged": true
+      }
+    ],
+    "limits": [
+      "Functional dashboard readback, not raw API version/ref metadata or per-edge execution log.",
+      "Matching current control-plane values cannot establish which configuration an earlier edge request evaluated."
+    ]
+  },
+  "causeAssessments": [
+    {
+      "candidate": "Transient post-activation routing/configuration inconsistency",
+      "status": "Consistent with observed timing and non-reproduction, not confirmed",
+      "reason": "Historical miss was 25.013s after enabled first observation; current unchanged rule passes exact tuple from AMS and other reported colos. No per-request historical configuration version/trace exists."
+    },
+    {
+      "candidate": "Cloudflare cached homepage HIT",
+      "status": "Not supported",
+      "reason": "Historical response was DYNAMIC with no Age and a no-cache/must-revalidate policy; current repeats used no cache purge, cache header or cache-busting query."
+    },
+    {
+      "candidate": "Persistent R4 expression/destination/order defect",
+      "status": "No current evidence supports an edit",
+      "reason": "Current literal expression matches the failed tuple, readback matches Phase 2A, all 48 R4 variants and exact repeats pass."
+    },
+    {
+      "candidate": "www canonicalization conflict",
+      "status": "Not supported for the failed apex GET",
+      "reason": "Apex does not match www; R4 precedes www and fresh www variants redirect directly."
+    },
+    {
+      "candidate": "URI normalization mismatch",
+      "status": "No observed mismatch",
+      "reason": "Exact ASCII tuple matches R4 path literal; fresh identical tuple passes. Neither UI inventory nor HTTP headers exposes the historical evaluated path."
+    },
+    {
+      "candidate": "Homepage fallback returned after missing the redirect",
+      "status": "Historical content confirmed, initiating cause unresolved",
+      "reason": "Historical canonical/title/main-text matches baseline homepage fallback. No direct origin log or trace proves the bypass layer."
+    }
+  ],
+  "recommendation": {
+    "action": "Retain the current enabled R4 configuration; no edit, purge, movement or rollback is supported by these passing current observations.",
+    "authority": "Analytical recommendation only; no production mutation performed or authorized by this analysis.",
+    "rationale": "All sampled current redirect/target checks pass; displayed rule matches approved scope and protected rules. Disabling R4 would restore known legacy homepage fallback, while a speculative edit would add risk without an identified defect.",
+    "nextIfRecurrence": "Retain the failed method/URL/time/CF-Ray, headers and body, stop consequential changes, and seek Cloudflare request-specific trace/support evidence plus explicit approval before any proposed fix or rollback."
+  },
+  "limits": [
+    "One runtime/network. CF-Ray suffix diversity does not establish independent UAE/mobile/global coverage or the same edge instance.",
+    "Exact Cloudflare server activation time, per-edge configuration version, historical request rule trace and direct origin logs are unavailable.",
+    "Connection: close was an explicit request header; no actual socket/TLS lifecycle or route independence was measured.",
+    "Repeated passes do not erase the original failure or prove non-recurrence.",
+    "No fresh Google crawl, indexing, canonical-selection, ranking or traffic recovery evidence is part of Phase 2B."
+  ],
+  "documentation": [
+    {
+      "url": "https://developers.cloudflare.com/rules/url-forwarding/",
+      "verifiedBy": "Root agent in Phase 2B",
+      "relevance": "First matching redirect applies; Single Redirects evaluate before later rewrite/origin/bulk/cache products."
+    },
+    {
+      "url": "https://developers.cloudflare.com/cache/concepts/cache-responses/",
+      "verifiedBy": "Root agent in Phase 2B",
+      "relevance": "DYNAMIC is not a Cloudflare cache HIT and indicates ineligible cache treatment."
+    },
+    {
+      "url": "https://developers.cloudflare.com/fundamentals/reference/http-headers/",
+      "verifiedBy": "Root agent in Phase 2B",
+      "relevance": "Response CF-Ray suffix denotes a processing colo, not a controlled client location or exact edge instance."
+    },
+    {
+      "url": "https://developers.cloudflare.com/support/troubleshooting/general-troubleshooting/geographic-traffic-routing/",
+      "verifiedBy": "Root agent in Phase 2B",
+      "relevance": "One client may be routed to different colos; observed suffix diversity is not controlled geographic testing."
+    }
+  ]
+}

@@ -1,0 +1,799 @@
+- complementary:
+  - link "Cloudflare home":
+    - /url: /
+  - button "Switch Account":
+    - generic "Hqusibatie24@gmail.com's Account"
+  - navigation:
+    - button "Quick search...":
+      - generic: Quick search...
+      - generic: Ctrl K
+    - list:
+      - link "Account home":
+        - /url: /5ab33cab60f7a91670c9a0cda4f56ea0/home
+        - generic: Account home
+      - button "Recents":
+        - generic: Recents
+      - list:
+        - link:
+          - /url: /5ab33cab60f7a91670c9a0cda4f56ea0/workers/services/view/digitecfront/production
+          - generic: digitecfront
+          - generic: Workers
+        - button:
+        - link:
+          - /url: /5ab33cab60f7a91670c9a0cda4f56ea0/domains/overview
+          - generic: Overview
+          - generic: Domains
+        - button:
+        - link:
+          - /url: /5ab33cab60f7a91670c9a0cda4f56ea0/condisc.net
+          - generic: condisc.net
+          - generic: Domains
+        - button:
+        - link:
+          - /url: /5ab33cab60f7a91670c9a0cda4f56ea0/domains/transfers
+          - generic: Transfers
+          - generic: Domains
+        - button:
+        - link:
+          - /url: /5ab33cab60f7a91670c9a0cda4f56ea0/domains/registrations
+          - generic: Registrations
+          - generic: Domains
+        - button:
+      - button "Domains":
+        - generic: Domains
+      - list:
+        - link:
+          - /url: /5ab33cab60f7a91670c9a0cda4f56ea0/domains/overview
+          - generic: Overview
+        - link:
+          - /url: /5ab33cab60f7a91670c9a0cda4f56ea0/domains/registrations
+          - generic: Registrations
+        - link:
+          - /url: /5ab33cab60f7a91670c9a0cda4f56ea0/domains/transfers
+          - generic: Transfers
+      - button "Observability New":
+        - generic: Observability
+        - generic: New
+      - list:
+        - link:
+          - /url: /5ab33cab60f7a91670c9a0cda4f56ea0/observability/logs
+          - generic: Logs
+        - link:
+          - /url: /5ab33cab60f7a91670c9a0cda4f56ea0/traces
+          - generic: Traces
+          - generic: Beta
+        - button:
+          - generic: Analytics
+        - list:
+          - link:
+            - /url: /5ab33cab60f7a91670c9a0cda4f56ea0/analytics
+            - generic: Account analytics
+          - link:
+            - /url: /5ab33cab60f7a91670c9a0cda4f56ea0/web-analytics
+            - generic: Web analytics
+        - button:
+          - generic: Export
+        - list:
+          - link:
+            - /url: /5ab33cab60f7a91670c9a0cda4f56ea0/logs
+            - generic: Logpush
+          - link:
+            - /url: /5ab33cab60f7a91670c9a0cda4f56ea0/observability/destinations
+            - generic: OpenTelemetry
+        - button:
+          - generic: Alerts
+        - list:
+          - link:
+            - /url: /5ab33cab60f7a91670c9a0cda4f56ea0/notifications
+            - generic: Overview
+          - link:
+            - /url: /5ab33cab60f7a91670c9a0cda4f56ea0/notifications/destinations
+            - generic: Destinations
+          - link:
+            - /url: /5ab33cab60f7a91670c9a0cda4f56ea0/notifications/silences
+            - generic: Silences
+        - link:
+          - /url: /5ab33cab60f7a91670c9a0cda4f56ea0/dashboards
+          - generic: Dashboards
+    - generic: Build
+    - list:
+      - button "Compute" [expanded]:
+        - generic: Compute
+      - region:
+        - list:
+          - link "Workers & Pages":
+            - /url: /5ab33cab60f7a91670c9a0cda4f56ea0/workers-and-pages
+            - generic: Workers & Pages
+          - link "Observability":
+            - /url: /5ab33cab60f7a91670c9a0cda4f56ea0/observability
+            - generic: Observability
+          - link "Workers for Platforms":
+            - /url: /5ab33cab60f7a91670c9a0cda4f56ea0/workers-for-platforms
+            - generic: Workers for Platforms
+          - link "Containers":
+            - /url: /5ab33cab60f7a91670c9a0cda4f56ea0/workers/containers
+            - generic: Containers
+          - link "Durable Objects":
+            - /url: /5ab33cab60f7a91670c9a0cda4f56ea0/workers/durable-objects
+            - generic: Durable Objects
+          - link "Queues":
+            - /url: /5ab33cab60f7a91670c9a0cda4f56ea0/workers/queues
+            - generic: Queues
+          - link "Workflows":
+            - /url: /5ab33cab60f7a91670c9a0cda4f56ea0/workers/workflows
+            - generic: Workflows
+          - link "Browser Run":
+            - /url: /5ab33cab60f7a91670c9a0cda4f56ea0/workers/browser-run
+            - generic: Browser Run
+          - link "VPC Beta":
+            - /url: /5ab33cab60f7a91670c9a0cda4f56ea0/workers/vpc
+            - generic: VPC
+            - generic: Beta
+          - button "Email Service":
+            - generic: Email Service
+          - list:
+            - link:
+              - /url: /5ab33cab60f7a91670c9a0cda4f56ea0/email-service/sending
+              - generic: Email Sending
+              - generic: Beta
+            - link:
+              - /url: /5ab33cab60f7a91670c9a0cda4f56ea0/email-service/routing
+              - generic: Email Routing
+          - link "Workers plans":
+            - /url: /5ab33cab60f7a91670c9a0cda4f56ea0/workers/plans
+            - generic: Workers plans
+          - link "Flagship Beta":
+            - /url: /5ab33cab60f7a91670c9a0cda4f56ea0/flagship
+            - generic: Flagship
+            - generic: Beta
+      - button "AI":
+        - generic: AI
+      - list:
+        - link:
+          - /url: /5ab33cab60f7a91670c9a0cda4f56ea0/ai/models
+          - generic: Models
+        - link:
+          - /url: /5ab33cab60f7a91670c9a0cda4f56ea0/ai/workers-ai
+          - generic: Workers AI
+        - link:
+          - /url: /5ab33cab60f7a91670c9a0cda4f56ea0/ai/ai-gateway
+          - generic: AI Gateway
+        - link:
+          - /url: https://dash.cloudflare.com/5ab33cab60f7a91670c9a0cda4f56ea0/one/access-controls/ai-controls/mcp-server-portal
+          - generic: MCP Portals
+        - link:
+          - /url: /5ab33cab60f7a91670c9a0cda4f56ea0/ai/vectorize
+          - generic: Vectorize
+        - link:
+          - /url: /5ab33cab60f7a91670c9a0cda4f56ea0/ai/ai-search
+          - generic: AI Search
+        - link:
+          - /url: /5ab33cab60f7a91670c9a0cda4f56ea0/agents
+          - generic: Agent tracing
+      - button "Storage & databases":
+        - generic: Storage & databases
+      - list:
+        - link:
+          - /url: /5ab33cab60f7a91670c9a0cda4f56ea0/r2/overview
+          - generic: R2 Object Storage
+        - link:
+          - /url: /5ab33cab60f7a91670c9a0cda4f56ea0/workers/hyperdrive
+          - generic: Postgres & MySQL (Hyperdrive)
+        - link:
+          - /url: /5ab33cab60f7a91670c9a0cda4f56ea0/workers/kv/namespaces
+          - generic: Workers KV
+        - link:
+          - /url: /5ab33cab60f7a91670c9a0cda4f56ea0/workers/d1
+          - generic: D1 SQLite Database
+        - link:
+          - /url: /5ab33cab60f7a91670c9a0cda4f56ea0/workers/analytics-engine
+          - generic: Analytics Engine
+        - link:
+          - /url: /5ab33cab60f7a91670c9a0cda4f56ea0/data-catalog
+          - generic: Basin Catalog
+        - button:
+          - generic: Basin Pipelines
+        - list:
+          - link:
+            - /url: /5ab33cab60f7a91670c9a0cda4f56ea0/pipelines/overview
+            - generic: Pipelines
+        - link:
+          - /url: /5ab33cab60f7a91670c9a0cda4f56ea0/k2
+          - generic: K2 Streams
+          - generic: Beta
+        - link:
+          - /url: /5ab33cab60f7a91670c9a0cda4f56ea0/secrets-store
+          - generic: Secrets Store
+          - generic: New
+      - button "Images & Stream":
+        - generic: Images & Stream
+      - list:
+        - link:
+          - /url: /5ab33cab60f7a91670c9a0cda4f56ea0/media/transformations
+          - generic: Transformations
+        - link:
+          - /url: /5ab33cab60f7a91670c9a0cda4f56ea0/images/hosted
+          - generic: Hosted images
+        - link:
+          - /url: /5ab33cab60f7a91670c9a0cda4f56ea0/stream/videos
+          - generic: Hosted videos
+        - link:
+          - /url: /5ab33cab60f7a91670c9a0cda4f56ea0/stream/inputs
+          - generic: Live inputs
+        - link:
+          - /url: /5ab33cab60f7a91670c9a0cda4f56ea0/stream/analytics
+          - generic: Stream analytics
+        - link:
+          - /url: /5ab33cab60f7a91670c9a0cda4f56ea0/media/plans
+          - generic: Plans
+      - button "Realtime":
+        - generic: Realtime
+      - list:
+        - link:
+          - /url: /5ab33cab60f7a91670c9a0cda4f56ea0/realtime/kit
+          - generic: RealtimeKit
+        - link:
+          - /url: /5ab33cab60f7a91670c9a0cda4f56ea0/realtime/turn
+          - generic: TURN Server
+        - link:
+          - /url: /5ab33cab60f7a91670c9a0cda4f56ea0/realtime/sfu
+          - generic: Serverless SFU
+        - link:
+          - /url: /5ab33cab60f7a91670c9a0cda4f56ea0/realtime/moq
+          - generic: MoQ Relay
+          - generic: Beta
+    - generic: Protect & connect
+    - list:
+      - button "Application security":
+        - generic: Application security
+      - list:
+        - link:
+          - /url: /5ab33cab60f7a91670c9a0cda4f56ea0/security-center
+          - generic: Security insights
+        - link:
+          - /url: /5ab33cab60f7a91670c9a0cda4f56ea0/application-security/waf
+          - generic: WAF
+        - link:
+          - /url: /5ab33cab60f7a91670c9a0cda4f56ea0/application-security/botbase
+          - generic: BotBase
+        - link:
+          - /url: /5ab33cab60f7a91670c9a0cda4f56ea0/security-center/inventory
+          - generic: Infrastructure
+        - link:
+          - /url: /5ab33cab60f7a91670c9a0cda4f56ea0/turnstile
+          - generic: Turnstile
+      - button "Zero Trust":
+        - generic: Zero Trust
+      - list:
+        - link:
+          - /url: https://dash.cloudflare.com/5ab33cab60f7a91670c9a0cda4f56ea0/one/overview
+          - generic: Overview
+        - button:
+          - generic: Insights & Logs
+        - list:
+          - link:
+            - /url: https://dash.cloudflare.com/5ab33cab60f7a91670c9a0cda4f56ea0/one/insights/overview
+            - generic: Overview
+          - link:
+            - /url: https://dash.cloudflare.com/5ab33cab60f7a91670c9a0cda4f56ea0/one/insights/dashboards
+            - generic: Dashboards
+          - link:
+            - /url: https://dash.cloudflare.com/5ab33cab60f7a91670c9a0cda4f56ea0/one/insights/logs
+            - generic: Logs
+        - button:
+          - generic: Team & Resources
+        - list:
+          - link:
+            - /url: https://dash.cloudflare.com/5ab33cab60f7a91670c9a0cda4f56ea0/one/team-resources/application-library
+            - generic: Application library
+          - link:
+            - /url: https://dash.cloudflare.com/5ab33cab60f7a91670c9a0cda4f56ea0/one/team-resources/devices
+            - generic: Devices
+          - link:
+            - /url: https://dash.cloudflare.com/5ab33cab60f7a91670c9a0cda4f56ea0/one/team-resources/users
+            - generic: Users
+        - button:
+          - generic: Access controls
+        - list:
+          - link:
+            - /url: https://dash.cloudflare.com/5ab33cab60f7a91670c9a0cda4f56ea0/one/access-controls/overview
+            - generic: Overview
+          - link:
+            - /url: https://dash.cloudflare.com/5ab33cab60f7a91670c9a0cda4f56ea0/one/access-controls/apps
+            - generic: Applications
+          - link:
+            - /url: https://dash.cloudflare.com/5ab33cab60f7a91670c9a0cda4f56ea0/one/access-controls/policies
+            - generic: Policies
+          - link:
+            - /url: https://dash.cloudflare.com/5ab33cab60f7a91670c9a0cda4f56ea0/one/access-controls/ai-controls
+            - generic: MCP Portals
+          - link:
+            - /url: https://dash.cloudflare.com/5ab33cab60f7a91670c9a0cda4f56ea0/one/access-controls/targets
+            - generic: Targets
+          - link:
+            - /url: https://dash.cloudflare.com/5ab33cab60f7a91670c9a0cda4f56ea0/one/access-controls/service-credentials
+            - generic: Service credentials
+          - link:
+            - /url: https://dash.cloudflare.com/5ab33cab60f7a91670c9a0cda4f56ea0/one/access-controls/settings
+            - generic: Access settings
+        - button:
+          - generic: Traffic controls
+        - list:
+          - link:
+            - /url: https://dash.cloudflare.com/5ab33cab60f7a91670c9a0cda4f56ea0/one/traffic-controls/overview
+            - generic: Overview
+          - link:
+            - /url: https://dash.cloudflare.com/5ab33cab60f7a91670c9a0cda4f56ea0/one/traffic-controls/resolvers-proxies
+            - generic: Resolvers & Proxies
+          - link:
+            - /url: https://dash.cloudflare.com/5ab33cab60f7a91670c9a0cda4f56ea0/one/traffic-controls/policies
+            - generic: Firewall policies
+          - link:
+            - /url: https://dash.cloudflare.com/5ab33cab60f7a91670c9a0cda4f56ea0/one/traffic-controls/resolver-policies
+            - generic: Resolver policies
+            - generic: New
+          - link:
+            - /url: https://dash.cloudflare.com/5ab33cab60f7a91670c9a0cda4f56ea0/one/traffic-controls/egress-policies
+            - generic: Egress policies
+          - link:
+            - /url: https://dash.cloudflare.com/5ab33cab60f7a91670c9a0cda4f56ea0/one/traffic-controls/traffic-settings
+            - generic: Traffic settings
+        - button:
+          - generic: Data loss prevention
+        - list:
+          - link:
+            - /url: https://dash.cloudflare.com/5ab33cab60f7a91670c9a0cda4f56ea0/one/dlp/overview
+            - generic: Overview
+          - link:
+            - /url: https://dash.cloudflare.com/5ab33cab60f7a91670c9a0cda4f56ea0/one/dlp/profiles
+            - generic: Profiles
+          - link:
+            - /url: https://dash.cloudflare.com/5ab33cab60f7a91670c9a0cda4f56ea0/one/dlp/data-classification
+            - generic: Data classification
+          - link:
+            - /url: https://dash.cloudflare.com/5ab33cab60f7a91670c9a0cda4f56ea0/one/dlp/validators
+            - generic: Validators
+          - link:
+            - /url: https://dash.cloudflare.com/5ab33cab60f7a91670c9a0cda4f56ea0/one/dlp/test-scan
+            - generic: Test scan
+          - link:
+            - /url: https://dash.cloudflare.com/5ab33cab60f7a91670c9a0cda4f56ea0/one/dlp/settings
+            - generic: DLP settings
+        - button:
+          - generic: Cloud Workload Security
+          - generic: Beta
+        - list:
+          - link:
+            - /url: https://dash.cloudflare.com/5ab33cab60f7a91670c9a0cda4f56ea0/one/cloud-workload-security/deployments
+            - generic: Deployments
+          - link:
+            - /url: https://dash.cloudflare.com/5ab33cab60f7a91670c9a0cda4f56ea0/one/cloud-workload-security/policy-sets
+            - generic: Policy sets
+          - link:
+            - /url: https://dash.cloudflare.com/5ab33cab60f7a91670c9a0cda4f56ea0/one/cloud-workload-security/workloads
+            - generic: Workloads
+          - link:
+            - /url: https://dash.cloudflare.com/5ab33cab60f7a91670c9a0cda4f56ea0/one/cloud-workload-security/policies
+            - generic: Policies
+          - button:
+            - generic: Policy reference
+          - list:
+            - link:
+              - /url: https://dash.cloudflare.com/5ab33cab60f7a91670c9a0cda4f56ea0/one/cloud-workload-security/rego-metadata
+              - generic: Rego metadata
+            - link:
+              - /url: https://dash.cloudflare.com/5ab33cab60f7a91670c9a0cda4f56ea0/one/cloud-workload-security/rego-modules
+              - generic: Rego modules
+            - link:
+              - /url: https://dash.cloudflare.com/5ab33cab60f7a91670c9a0cda4f56ea0/one/cloud-workload-security/tenant-structures
+              - generic: Tenant structures
+          - button:
+            - generic: Traffic scope
+          - list:
+            - link:
+              - /url: https://dash.cloudflare.com/5ab33cab60f7a91670c9a0cda4f56ea0/one/cloud-workload-security/credentials
+              - generic: Credentials
+            - link:
+              - /url: https://dash.cloudflare.com/5ab33cab60f7a91670c9a0cda4f56ea0/one/cloud-workload-security/domain-acls
+              - generic: Domain ACLs
+        - button:
+          - generic: Cloud & SaaS findings
+        - list:
+          - link:
+            - /url: https://dash.cloudflare.com/5ab33cab60f7a91670c9a0cda4f56ea0/one/cloud-saas-findings/overview
+            - generic: Overview
+          - link:
+            - /url: https://dash.cloudflare.com/5ab33cab60f7a91670c9a0cda4f56ea0/one/cloud-saas-findings/posture
+            - generic: Posture Findings
+          - link:
+            - /url: https://dash.cloudflare.com/5ab33cab60f7a91670c9a0cda4f56ea0/one/cloud-saas-findings/content
+            - generic: Content Findings
+          - link:
+            - /url: https://dash.cloudflare.com/5ab33cab60f7a91670c9a0cda4f56ea0/one/cloud-saas-findings/findings-catalog
+            - generic: Finding types library
+            - generic: New
+        - button:
+          - generic: Email security
+        - list:
+          - link:
+            - /url: https://dash.cloudflare.com/5ab33cab60f7a91670c9a0cda4f56ea0/one/email-security/overview
+            - generic: Overview
+          - link:
+            - /url: https://dash.cloudflare.com/5ab33cab60f7a91670c9a0cda4f56ea0/one/email-security/monitoring
+            - generic: Monitoring
+          - link:
+            - /url: https://dash.cloudflare.com/5ab33cab60f7a91670c9a0cda4f56ea0/one/email-security/submissions
+            - generic: Submissions
+          - link:
+            - /url: https://dash.cloudflare.com/5ab33cab60f7a91670c9a0cda4f56ea0/one/email-security/investigation
+            - generic: Investigation
+          - link:
+            - /url: https://dash.cloudflare.com/5ab33cab60f7a91670c9a0cda4f56ea0/one/email-security/policies
+            - generic: Policies & rules
+          - link:
+            - /url: https://dash.cloudflare.com/5ab33cab60f7a91670c9a0cda4f56ea0/one/email-security/phishguard
+            - generic: PhishGuard
+          - link:
+            - /url: https://dash.cloudflare.com/5ab33cab60f7a91670c9a0cda4f56ea0/one/email-security/settings
+            - generic: Email security settings
+        - button:
+          - generic: Browser isolation
+        - list:
+          - link:
+            - /url: https://dash.cloudflare.com/5ab33cab60f7a91670c9a0cda4f56ea0/one/browser-isolation/overview
+            - generic: Overview
+          - link:
+            - /url: https://dash.cloudflare.com/5ab33cab60f7a91670c9a0cda4f56ea0/one/browser-isolation/settings
+            - generic: Browser isolation settings
+        - button:
+          - generic: Reusable components
+        - list:
+          - link:
+            - /url: https://dash.cloudflare.com/5ab33cab60f7a91670c9a0cda4f56ea0/one/reusable-components/lists
+            - generic: Lists
+          - link:
+            - /url: https://dash.cloudflare.com/5ab33cab60f7a91670c9a0cda4f56ea0/one/reusable-components/tags
+            - generic: Tags
+          - link:
+            - /url: https://dash.cloudflare.com/5ab33cab60f7a91670c9a0cda4f56ea0/one/reusable-components/posture-checks
+            - generic: Posture checks
+          - link:
+            - /url: https://dash.cloudflare.com/5ab33cab60f7a91670c9a0cda4f56ea0/one/reusable-components/custom-pages
+            - generic: Custom pages
+        - button:
+          - generic: Integrations
+        - list:
+          - link:
+            - /url: https://dash.cloudflare.com/5ab33cab60f7a91670c9a0cda4f56ea0/one/integrations/cloud-and-saas
+            - generic: Cloud & SaaS
+          - link:
+            - /url: https://dash.cloudflare.com/5ab33cab60f7a91670c9a0cda4f56ea0/one/integrations/identity-providers
+            - generic: Identity providers
+          - link:
+            - /url: https://dash.cloudflare.com/5ab33cab60f7a91670c9a0cda4f56ea0/one/integrations/service-providers
+            - generic: Service providers
+          - link:
+            - /url: https://dash.cloudflare.com/5ab33cab60f7a91670c9a0cda4f56ea0/one/integrations/webhooks
+            - generic: Webhooks
+        - link:
+          - /url: https://dash.cloudflare.com/5ab33cab60f7a91670c9a0cda4f56ea0/one/settings
+          - generic: Settings
+      - button "Networking":
+        - generic: Networking
+      - list:
+        - link:
+          - /url: /5ab33cab60f7a91670c9a0cda4f56ea0/magic-networks/overview
+          - generic: Overview
+          - generic: New
+        - button:
+          - generic: Insights
+        - list:
+          - link:
+            - /url: /5ab33cab60f7a91670c9a0cda4f56ea0/networking-insights/analytics/network-analytics/flow-analytics
+            - generic: Network flow
+        - link:
+          - /url: /5ab33cab60f7a91670c9a0cda4f56ea0/tunnels
+          - generic: Tunnels
+        - link:
+          - /url: /5ab33cab60f7a91670c9a0cda4f56ea0/mesh
+          - generic: Mesh
+          - generic: Beta
+        - link:
+          - /url: /5ab33cab60f7a91670c9a0cda4f56ea0/magic-networks/routes
+          - generic: Routes
+          - generic: New
+        - button:
+          - generic: IP addresses
+        - list:
+          - link:
+            - /url: /5ab33cab60f7a91670c9a0cda4f56ea0/ip-addresses/address-space
+            - generic: Address space
+          - link:
+            - /url: /5ab33cab60f7a91670c9a0cda4f56ea0/ip-addresses/proxy-ips
+            - generic: Address maps
+      - button "Threats & defense":
+        - generic: Threats & defense
+      - list:
+        - link:
+          - /url: /5ab33cab60f7a91670c9a0cda4f56ea0/threats-defense
+          - generic: Overview
+        - link:
+          - /url: /5ab33cab60f7a91670c9a0cda4f56ea0/threat-intelligence
+          - generic: Threat intelligence
+        - link:
+          - /url: /5ab33cab60f7a91670c9a0cda4f56ea0/threat-intelligence/investigate
+          - generic: Investigate
+      - button "Monetize New":
+        - generic: Monetize
+        - generic: New
+      - list:
+        - link:
+          - /url: /5ab33cab60f7a91670c9a0cda4f56ea0/monetize/monetization-gateway
+          - generic: Monetization Gateway
+          - generic: Beta
+      - button "Delivery & performance":
+        - generic: Delivery & performance
+      - list:
+        - link:
+          - /url: /5ab33cab60f7a91670c9a0cda4f56ea0/bulk-redirects
+          - generic: Bulk redirects
+        - link:
+          - /url: /5ab33cab60f7a91670c9a0cda4f56ea0/load-balancing
+          - generic: Load Balancing
+        - link:
+          - /url: /5ab33cab60f7a91670c9a0cda4f56ea0/tag-management/zaraz
+          - generic: Web tag management
+    - list:
+      - button "Manage account":
+        - generic: Manage account
+      - list:
+        - link:
+          - /url: /5ab33cab60f7a91670c9a0cda4f56ea0/members
+          - generic: Members
+        - link:
+          - /url: /5ab33cab60f7a91670c9a0cda4f56ea0/billing
+          - generic: Billing
+        - link:
+          - /url: /5ab33cab60f7a91670c9a0cda4f56ea0/api-tokens
+          - generic: Account API tokens
+        - link:
+          - /url: /5ab33cab60f7a91670c9a0cda4f56ea0/oauth-clients
+          - generic: OAuth clients
+        - link:
+          - /url: /5ab33cab60f7a91670c9a0cda4f56ea0/audit-log
+          - generic: Audit logs
+        - link:
+          - /url: /5ab33cab60f7a91670c9a0cda4f56ea0/blocked-content
+          - generic: Blocked content
+        - link:
+          - /url: /5ab33cab60f7a91670c9a0cda4f56ea0/abuse-reports
+          - generic: Abuse reports
+        - link:
+          - /url: /5ab33cab60f7a91670c9a0cda4f56ea0/carbon
+          - generic: Carbon Impact Report
+        - link:
+          - /url: /5ab33cab60f7a91670c9a0cda4f56ea0/configurations
+          - generic: Configurations
+        - link:
+          - /url: /5ab33cab60f7a91670c9a0cda4f56ea0/tags
+          - generic: Tagged Resources
+          - generic: Beta
+  - button "Collapse sidebar" [expanded]:
+- banner:
+  - navigation "breadcrumb":
+    - link "Workers & Pages":
+      - /url: /5ab33cab60f7a91670c9a0cda4f56ea0/workers-and-pages
+      - generic: Workers & Pages
+    - generic: digitecfront
+    - combobox:
+      - generic: Production
+    - textbox: "{\"kind\":\"production\",\"id\":\"production\",\"name\":\"Production\"}"
+  - button "Ask AI":
+    - generic: Ask AI
+  - link "Support":
+    - /url: /?to=/:account/support
+    - generic: Support
+  - button "User menu":
+- navigation:
+  - tablist:
+    - tab "Overview" [selected]
+    - tab "Metrics"
+    - tab "Deployments"
+    - tab "Observability"
+    - tab "Issues"
+    - tab "Domains"
+    - tab "Access"
+    - tab "Settings"
+  - button:
+  - button "Scroll tabs right":
+  - button "Invite":
+    - button "Invite":
+      - generic: Invite
+  - button "New deployment":
+    - link "New deployment":
+      - /url: /5ab33cab60f7a91670c9a0cda4f56ea0/workers/services/update/digitecfront/production
+      - generic: New deployment
+  - link "Visit ↗":
+    - /url: https://digitecfront.hqusibatie24.workers.dev
+    - generic: Visit
+    - text: ↗
+- link "digitecfront.hqusibatie24.workers.dev":
+  - /url: https://digitecfront.hqusibatie24.workers.dev
+- generic: Add wrangler.jsonc for Cloudflare Workers static asset deploy
+- link "hash4444/digitecfront":
+  - /url: https://github.com/hash4444/digitecfront
+  - generic: hash4444/digitecfront
+- generic: by Claude
+- time: 3 months ago
+- list:
+  - button "Domains 1":
+    - generic: Domains
+    - generic: "1"
+  - button "Workers 0":
+    - generic: Workers
+    - generic: "0"
+  - button "Queues 0":
+    - generic: Queues
+    - generic: "0"
+  - banner:
+    - paragraph: digitecfront
+  - link "Observability Workers Logs Disabled Workers Traces Disabled":
+    - /url: /5ab33cab60f7a91670c9a0cda4f56ea0/workers/services/view/digitecfront/production/settings?setupObservability=true
+    - heading "Observability" [level=3]:
+      - generic: Observability
+    - paragraph: Workers Logs
+    - generic: Disabled
+    - paragraph: Workers Traces
+    - generic: Disabled
+  - button "Bindings 0":
+    - generic: Bindings
+    - generic: "0"
+  - link "Add a binding":
+    - /url: /5ab33cab60f7a91670c9a0cda4f56ea0/workers/services/view/digitecfront/production/bindings
+    - generic: Add a binding
+  - paragraph: No workers bound to this worker
+- button "Expand diagram":
+- link "Metrics Last 24 hours":
+  - /url: /5ab33cab60f7a91670c9a0cda4f56ea0/workers/services/view/digitecfront/production/metrics
+  - generic: Metrics
+  - generic: Last 24 hours
+- text: Metrics is unavailable for Workers with only static assets. Requests for this kind of Worker are served at no charge.
+- link "Learn more":
+  - /url: https://developers.cloudflare.com/workers/static-assets/
+- link "Deployments":
+  - /url: /5ab33cab60f7a91670c9a0cda4f56ea0/workers/services/view/digitecfront/production/deployments
+  - generic: Deployments
+- region "Deployment activity":
+  - table "Deployment activity":
+    - rowgroup:
+      - row "Version Commit message Status Source Triggered by Created":
+        - columnheader "Version":
+          - generic: Version
+        - columnheader "Commit message":
+          - generic: Commit message
+        - columnheader "Status":
+          - generic: Status
+        - columnheader "Source":
+          - generic: Source
+        - columnheader "Triggered by":
+          - generic: Triggered by
+        - columnheader "Created":
+          - generic: Created
+    - rowgroup:
+      - row "349498f6 Copy Add wrangler.jsonc for Cloudflare Workers static asset deploy 100% Ready 1m 33s Build claude/digi-tec-customer-app-ipntny by Claude 3mo ago":
+        - cell "349498f6 Copy":
+          - generic "Previews disabled": 349498f6
+          - button "Copy":
+        - cell "Add wrangler.jsonc for Cloudflare Workers static asset deploy":
+          - link "Add wrangler.jsonc for Cloudflare Workers static asset deploy":
+            - /url: https://github.com/hash4444/digitecfront/commit/026000436a6e4b74048120b03c5c4a2e5b2f5caa
+            - button "Add wrangler.jsonc for Cloudflare Workers static asset deploy":
+              - generic: Add wrangler.jsonc for Cloudflare Workers static asset deploy
+        - cell "100% Ready 1m 33s":
+          - button "100%":
+            - meter
+          - generic: Ready
+          - generic: 1m 33s
+        - cell "Build claude/digi-tec-customer-app-ipntny":
+          - link "Build":
+            - /url: /5ab33cab60f7a91670c9a0cda4f56ea0/workers/services/view/digitecfront/production/builds/d6d33eaa-3175-4123-b48d-f938a2afadb7
+            - text: Build
+          - generic: claude/digi-tec-customer-app-ipntny
+        - cell "by Claude":
+          - generic: by Claude
+        - cell "3mo ago":
+          - time: 3mo ago
+      - row "This build did not create a new version of this Worker. Empty commit message Failed 38s Build main by API token 3mo ago":
+        - cell "This build did not create a new version of this Worker.":
+          - button "This build did not create a new version of this Worker.":
+            - button "This build did not create a new version of this Worker.":
+        - cell "Empty commit message":
+          - generic: Empty commit message
+        - cell "Failed 38s":
+          - generic: Failed
+          - generic: 38s
+        - cell "Build main":
+          - link "Build":
+            - /url: /5ab33cab60f7a91670c9a0cda4f56ea0/workers/services/view/digitecfront/production/builds/c21ddd36-5165-4787-a368-3c29bbbedfe0
+            - text: Build
+          - generic: main
+        - cell "by API token":
+          - generic: by API token
+        - cell "3mo ago":
+          - time: 3mo ago
+      - row "9472c770 Copy Manually deployed Ready Dashboard by hqusibatie24 3mo ago":
+        - cell "9472c770 Copy":
+          - generic "Previews disabled": 9472c770
+          - button "Copy":
+        - cell "Manually deployed":
+          - generic: Manually deployed
+        - cell "Ready":
+          - generic: Ready
+        - cell "Dashboard":
+          - generic: Dashboard
+        - cell "by hqusibatie24":
+          - generic: by hqusibatie24
+        - cell "3mo ago":
+          - time: 3mo ago
+      - row "ad91971e Copy Manually deployed Ready Dashboard by hqusibatie24 3mo ago":
+        - cell "ad91971e Copy":
+          - generic "Previews disabled": ad91971e
+          - button "Copy":
+        - cell "Manually deployed":
+          - generic: Manually deployed
+        - cell "Ready":
+          - generic: Ready
+        - cell "Dashboard":
+          - generic: Dashboard
+        - cell "by hqusibatie24":
+          - generic: by hqusibatie24
+        - cell "3mo ago":
+          - time: 3mo ago
+- link "Domains and routes":
+  - /url: /5ab33cab60f7a91670c9a0cda4f56ea0/workers/services/view/digitecfront/production/domains
+  - generic: Domains and routes
+- list:
+  - generic: workers.dev
+  - paragraph:
+    - generic: digitecfront.hqusibatie24.workers.dev
+  - generic: Custom domains
+  - paragraph:
+    - generic: —
+  - generic: Routes
+  - paragraph:
+    - generic: —
+- generic: Next steps
+- paragraph:
+  - generic: Connect a custom domain
+- paragraph: Use your own domain to serve your worker for a professional appearance.
+- paragraph:
+  - generic: Enable observability
+- paragraph: Monitor your worker's performance with logs and tracing.
+- paragraph:
+  - generic: Store your data
+- paragraph: Connect KV, D1, or R2 storage to persist data across requests.
+- heading "Worker Previews" [level=3]
+- generic: New
+- button "Dismiss":
+- paragraph: Every branch and pull request now gets its own preview environment.
+- button "Take a tour":
+  - generic: Take a tour
+- contentinfo:
+  - list:
+    - link "Support":
+      - /url: https://support.cloudflare.com
+    - link "System status":
+      - /url: https://www.cloudflarestatus.com
+    - link "Careers":
+      - /url: https://www.cloudflare.com/careers/
+    - link "Terms of Use":
+      - /url: https://www.cloudflare.com/website-terms/
+    - link "Report Security Issues":
+      - /url: https://www.cloudflare.com/disclosure/
+    - link "Privacy Policy":
+      - /url: https://www.cloudflare.com/privacypolicy/
+    - button "A blue and white pill with a checkmark and an x, representing privacy choices Cookie Preferences":
+      - img "A blue and white pill with a checkmark and an x, representing privacy choices"
+      - text: Cookie Preferences
+    - generic: © 2026 Cloudflare, Inc.
+- region "Notifications"

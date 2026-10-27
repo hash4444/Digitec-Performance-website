@@ -22,6 +22,9 @@ import lamborghiniUrusWorkshop from '@/assets/lamborghini-urus-workshop-dubai.jp
 import { useLocale } from '@/i18n/use-locale';
 import { PageIntro } from '@/components/PageIntro';
 import AboutVideoStrip from '@/components/AboutVideoStrip';
+import { LamborghiniWorkshopPhoto } from '@/components/LamborghiniWorkshopPhoto';
+
+const rangeRoverVogueWorkshop = '/images/range-rover-vogue-service-a-workshop.webp';
 
 const AboutUs = () => {
   const { isArabic } = useLocale();
@@ -195,6 +198,10 @@ const AboutUs = () => {
                 alt: isArabic ? 'لاند روفر ديفندر داخل ورشة ديجي-تك في دبي' : 'Land Rover Defender inside the Digi-Tec workshop in Dubai',
               },
               {
+                image: rangeRoverVogueWorkshop,
+                alt: isArabic ? 'رينج روفر فوج على رافعة في ورشة ديجي-تك في القوز، دبي' : 'Range Rover Vogue on a workshop lift at DIGI-TEC in Al Quoz, Dubai',
+              },
+              {
                 image: maybachWorkshop,
                 alt: isArabic ? 'مايباخ تخضع للفحص في ورشة ديجي-تك بدبي' : 'Maybach receiving an inspection at the Digi-Tec workshop in Dubai',
               },
@@ -223,11 +230,42 @@ const AboutUs = () => {
                   src={photo.image}
                   alt={photo.alt}
                   loading="lazy"
-                  className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  decoding="async"
+                  width={photo.image === rangeRoverVogueWorkshop ? 941 : undefined}
+                  height={photo.image === rangeRoverVogueWorkshop ? 1672 : undefined}
+                  className={photo.image === rangeRoverVogueWorkshop ? 'h-full w-full object-contain' : 'h-full w-full object-cover transition-transform duration-500 group-hover:scale-105'}
                 />
               </motion.div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Workshop photos */}
+      <section className="pb-16 md:pb-24 bg-charcoal/20">
+        <div className="max-w-6xl mx-auto px-5 sm:px-6">
+          <figure className="max-w-3xl mx-auto grid sm:grid-cols-[0.85fr_1.15fr] overflow-hidden rounded-2xl border border-white/[0.08] bg-black">
+            <img
+              src="/images/mercedes-g63-service-a-dubai.jpg"
+              alt={isArabic ? 'مرسيدس AMG G63 على رافعة الصيانة مع غطاء المحرك مفتوحاً في ورشة ديجي-تك بدبي' : 'Mercedes-AMG G63 on a service lift with its bonnet open at the DIGI-TEC workshop in Dubai'}
+              loading="lazy"
+              decoding="async"
+              width="941"
+              height="1672"
+              className="w-full h-auto self-center"
+            />
+            <figcaption className="p-5 sm:p-7 flex flex-col justify-center">
+              <span className="text-burnt-orange text-xs uppercase tracking-[0.3em] font-semibold">{isArabic ? 'داخل ديجي-تك' : 'Inside Digi-Tec'}</span>
+              <h3 className="text-xl font-bold text-off-white mt-3">{isArabic ? 'مرسيدس AMG G63 في ورشتنا' : 'Mercedes-AMG G63 in our workshop'}</h3>
+              <p className="text-white/60 text-sm leading-relaxed mt-3">{isArabic ? 'سيارة G63 على رافعة الصيانة في ورشة ديجي-تك بالقوز، دبي.' : 'A G63 on the service lift at the DIGI-TEC workshop in Al Quoz, Dubai.'}</p>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section className="pb-16 md:pb-24 bg-charcoal/20">
+        <div className="max-w-6xl mx-auto px-5 sm:px-6">
+          <LamborghiniWorkshopPhoto isArabic={isArabic} />
         </div>
       </section>
 

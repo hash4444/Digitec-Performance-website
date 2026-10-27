@@ -1,0 +1,17 @@
+DIGI-TEC automotive service SEO release: combined isolated QA
+Result: PASS. Checked 2026-10-19T07:40:04.489Z.
+Candidate: C:\Users\ADMIN\Documents\ChatGPT\DIGITEC\outputs\automotive-release-2026-10-19\candidate.local
+Build source fingerprint: 7dc83133c9d5174ee3a05ab37602ffffabcb2a316f8ad65a4c5f64aab22a3e46
+Production build: 19/19 steps passed. Additional CLI suites: 10/10 passed. ESLint: zero errors, 11 retained warnings.
+Focused SEO: 32 English/Arabic routes, 1454 assertions, 64 direct internal-link occurrences passed. Canonical, reciprocal hreflang, sitemap/indexability, single H1, shared entity graph, Service/Breadcrumb/FAQ parity, brand inlinks and quotation contacts verified.
+Five-brand browser: 30 responsive routes, 30 form/FAQ interaction cases, 10 no-JavaScript routes passed.
+Repair browser: 66 responsive routes, 66 interaction cases, 22 no-JavaScript routes, 22 direct hub links passed.
+Existing master browser: 27 route/viewport cases, 7 SPA navigation cases passed.
+Protection routing browser: 9 initial/tagged/slash HTTP cases plus directory/cross-service/reload/back-forward/schema replacement passed.
+Full PPF browser: EN/AR forms, language switch, desktop/mobile/320px, quote validation and privacy/duplicate suppression passed. External requests blocked.
+Tuning browser: 6 EN/AR desktop/mobile/320px cases passed; 62 public rows, DB11 publication safeguard and S63 enquiry-only behavior retained.
+Runtime/hydration errors: 0. Unexpected local HTTP errors: 0.
+Only isolated candidate outputs exercised. External/write browser requests blocked. No real message, phone call, enquiry, commit, push, deployment or production write.
+No live release, Google-selected indexing, delivered WhatsApp message, CRM receipt, GA4 ingestion, field Core Web Vitals or ranking improvement is asserted. Live release gate depends on current Cloudflare deployment/version and rollback verification.
+Superseded execution-boundary/harness attempts remain recorded; they are not application test failures. No application source was altered to make assertions pass.
+Post-release execution checklist: POST-RELEASE-VERIFICATION.txt. This checklist has not been marked complete for production.

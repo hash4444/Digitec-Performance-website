@@ -1,0 +1,944 @@
+[
+  {
+    "source": {
+      "name": "digitecme.com-Performance-on-Search-2026-09-19.xlsx",
+      "path": "C:\\Users\\ADMIN\\Downloads\\digitecme.com-Performance-on-Search-2026-09-19.xlsx",
+      "sha256": "e8fefd1dd5ff65a3e69f2edf1e54d817bef68539c1810da8ecb6c389da0930c5",
+      "source_unchanged": true,
+      "filters": {
+        "Search type": "Web",
+        "Date": "Last 3 months",
+        "Query": "mercedes service dubai"
+      },
+      "start": "2026-06-17",
+      "end": "2026-09-16",
+      "time_column": "Date",
+      "time_rows": 92,
+      "sheets": {
+        "Chart": {
+          "range": "A1:E93",
+          "rows": 92
+        },
+        "Queries": {
+          "range": "A1:E2",
+          "rows": 1
+        },
+        "Pages": {
+          "range": "A1:E5",
+          "rows": 4
+        },
+        "Countries": {
+          "range": "A1:E11",
+          "rows": 10
+        },
+        "Devices": {
+          "range": "A1:E4",
+          "rows": 3
+        },
+        "Search appearance": {
+          "range": "A1:E1",
+          "rows": 0
+        },
+        "Filters": {
+          "range": "A1:B4",
+          "rows": 3
+        }
+      },
+      "semantic_data_sha256": "6ff3948c1061b8b3eb2c9ac7b16943d66b1d170f873f9f522aa4d4e9415e0d6f",
+      "semantic_duplicate_of": null
+    },
+    "exact_query_filtered_dimensions": {
+      "Queries": [
+        {
+          "row": 2,
+          "Top queries": "mercedes service dubai",
+          "Clicks": 1.0,
+          "Impressions": 592.0,
+          "CTR": 0.0017000000000000001,
+          "Position": 16.16
+        }
+      ],
+      "Pages": [
+        {
+          "row": 2,
+          "Top pages": "https://digitecme.com/services/mercedes-repair-dubai",
+          "Clicks": 1.0,
+          "Impressions": 236.0,
+          "CTR": 0.0042,
+          "Position": 23.61
+        },
+        {
+          "row": 3,
+          "Top pages": "https://digitecme.com/brands/mercedes-benz-service-dubai",
+          "Clicks": 0.0,
+          "Impressions": 348.0,
+          "CTR": 0.0,
+          "Position": 11.84
+        },
+        {
+          "row": 4,
+          "Top pages": "https://digitecme.com/services/mercedes-repair-dubai/",
+          "Clicks": 0.0,
+          "Impressions": 16.0,
+          "CTR": 0.0,
+          "Position": 21.5
+        },
+        {
+          "row": 5,
+          "Top pages": "https://digitecme.com/services/mercedes-suspension-repair-dubai/",
+          "Clicks": 0.0,
+          "Impressions": 1.0,
+          "CTR": 0.0,
+          "Position": 14.0
+        }
+      ],
+      "Countries": [
+        {
+          "row": 2,
+          "Country": "United Arab Emirates",
+          "Clicks": 1.0,
+          "Impressions": 573.0,
+          "CTR": 0.0017000000000000001,
+          "Position": 16.12
+        },
+        {
+          "row": 3,
+          "Country": "India",
+          "Clicks": 0.0,
+          "Impressions": 8.0,
+          "CTR": 0.0,
+          "Position": 18.0
+        },
+        {
+          "row": 4,
+          "Country": "Russia",
+          "Clicks": 0.0,
+          "Impressions": 3.0,
+          "CTR": 0.0,
+          "Position": 18.33
+        },
+        {
+          "row": 5,
+          "Country": "Pakistan",
+          "Clicks": 0.0,
+          "Impressions": 2.0,
+          "CTR": 0.0,
+          "Position": 22.5
+        },
+        {
+          "row": 6,
+          "Country": "Greece",
+          "Clicks": 0.0,
+          "Impressions": 1.0,
+          "CTR": 0.0,
+          "Position": 9.0
+        },
+        {
+          "row": 7,
+          "Country": "Azerbaijan",
+          "Clicks": 0.0,
+          "Impressions": 1.0,
+          "CTR": 0.0,
+          "Position": 10.0
+        },
+        {
+          "row": 8,
+          "Country": "Qatar",
+          "Clicks": 0.0,
+          "Impressions": 1.0,
+          "CTR": 0.0,
+          "Position": 11.0
+        },
+        {
+          "row": 9,
+          "Country": "Austria",
+          "Clicks": 0.0,
+          "Impressions": 1.0,
+          "CTR": 0.0,
+          "Position": 12.0
+        },
+        {
+          "row": 10,
+          "Country": "Germany",
+          "Clicks": 0.0,
+          "Impressions": 1.0,
+          "CTR": 0.0,
+          "Position": 19.0
+        },
+        {
+          "row": 11,
+          "Country": "Vietnam",
+          "Clicks": 0.0,
+          "Impressions": 1.0,
+          "CTR": 0.0,
+          "Position": 21.0
+        }
+      ],
+      "Devices": [
+        {
+          "row": 2,
+          "Device": "Desktop",
+          "Clicks": 1.0,
+          "Impressions": 431.0,
+          "CTR": 0.0023,
+          "Position": 15.99
+        },
+        {
+          "row": 3,
+          "Device": "Mobile",
+          "Clicks": 0.0,
+          "Impressions": 152.0,
+          "CTR": 0.0,
+          "Position": 16.18
+        },
+        {
+          "row": 4,
+          "Device": "Tablet",
+          "Clicks": 0.0,
+          "Impressions": 9.0,
+          "CTR": 0.0,
+          "Position": 23.89
+        }
+      ],
+      "Chart": [
+        {
+          "row": 2,
+          "Date": "2026-06-17",
+          "Clicks": 0.0,
+          "Impressions": 9.0,
+          "CTR": 0.0,
+          "Position": 17.6
+        },
+        {
+          "row": 3,
+          "Date": "2026-06-18",
+          "Clicks": 0.0,
+          "Impressions": 11.0,
+          "CTR": 0.0,
+          "Position": 16.9
+        },
+        {
+          "row": 4,
+          "Date": "2026-06-19",
+          "Clicks": 0.0,
+          "Impressions": 8.0,
+          "CTR": 0.0,
+          "Position": 17.5
+        },
+        {
+          "row": 5,
+          "Date": "2026-06-20",
+          "Clicks": 0.0,
+          "Impressions": 8.0,
+          "CTR": 0.0,
+          "Position": 17.0
+        },
+        {
+          "row": 6,
+          "Date": "2026-06-21",
+          "Clicks": 0.0,
+          "Impressions": 1.0,
+          "CTR": 0.0,
+          "Position": 17.0
+        },
+        {
+          "row": 7,
+          "Date": "2026-06-22",
+          "Clicks": 0.0,
+          "Impressions": 9.0,
+          "CTR": 0.0,
+          "Position": 20.2
+        },
+        {
+          "row": 8,
+          "Date": "2026-06-23",
+          "Clicks": 0.0,
+          "Impressions": 6.0,
+          "CTR": 0.0,
+          "Position": 20.5
+        },
+        {
+          "row": 9,
+          "Date": "2026-06-24",
+          "Clicks": 0.0,
+          "Impressions": 4.0,
+          "CTR": 0.0,
+          "Position": 23.2
+        },
+        {
+          "row": 10,
+          "Date": "2026-06-25",
+          "Clicks": 0.0,
+          "Impressions": 3.0,
+          "CTR": 0.0,
+          "Position": 24.7
+        },
+        {
+          "row": 11,
+          "Date": "2026-06-26",
+          "Clicks": 0.0,
+          "Impressions": 3.0,
+          "CTR": 0.0,
+          "Position": 24.7
+        },
+        {
+          "row": 12,
+          "Date": "2026-06-27",
+          "Clicks": 0.0,
+          "Impressions": 8.0,
+          "CTR": 0.0,
+          "Position": 25.1
+        },
+        {
+          "row": 13,
+          "Date": "2026-06-28",
+          "Clicks": 0.0,
+          "Impressions": 4.0,
+          "CTR": 0.0,
+          "Position": 25.2
+        },
+        {
+          "row": 14,
+          "Date": "2026-06-29",
+          "Clicks": 0.0,
+          "Impressions": 3.0,
+          "CTR": 0.0,
+          "Position": 22.3
+        },
+        {
+          "row": 15,
+          "Date": "2026-06-30",
+          "Clicks": 0.0,
+          "Impressions": 4.0,
+          "CTR": 0.0,
+          "Position": 24.8
+        },
+        {
+          "row": 16,
+          "Date": "2026-07-01",
+          "Clicks": 0.0,
+          "Impressions": 4.0,
+          "CTR": 0.0,
+          "Position": 25.0
+        },
+        {
+          "row": 17,
+          "Date": "2026-07-02",
+          "Clicks": 0.0,
+          "Impressions": 6.0,
+          "CTR": 0.0,
+          "Position": 25.3
+        },
+        {
+          "row": 18,
+          "Date": "2026-07-03",
+          "Clicks": 0.0,
+          "Impressions": 8.0,
+          "CTR": 0.0,
+          "Position": 24.4
+        },
+        {
+          "row": 19,
+          "Date": "2026-07-04",
+          "Clicks": 0.0,
+          "Impressions": 3.0,
+          "CTR": 0.0,
+          "Position": 23.3
+        },
+        {
+          "row": 20,
+          "Date": "2026-07-05",
+          "Clicks": 0.0,
+          "Impressions": 5.0,
+          "CTR": 0.0,
+          "Position": 23.0
+        },
+        {
+          "row": 21,
+          "Date": "2026-07-06",
+          "Clicks": 0.0,
+          "Impressions": 6.0,
+          "CTR": 0.0,
+          "Position": 22.7
+        },
+        {
+          "row": 22,
+          "Date": "2026-07-07",
+          "Clicks": 0.0,
+          "Impressions": 8.0,
+          "CTR": 0.0,
+          "Position": 23.5
+        },
+        {
+          "row": 23,
+          "Date": "2026-07-08",
+          "Clicks": 0.0,
+          "Impressions": 9.0,
+          "CTR": 0.0,
+          "Position": 24.4
+        },
+        {
+          "row": 24,
+          "Date": "2026-07-09",
+          "Clicks": 0.0,
+          "Impressions": 3.0,
+          "CTR": 0.0,
+          "Position": 23.0
+        },
+        {
+          "row": 25,
+          "Date": "2026-07-10",
+          "Clicks": 0.0,
+          "Impressions": 5.0,
+          "CTR": 0.0,
+          "Position": 23.2
+        },
+        {
+          "row": 26,
+          "Date": "2026-07-11",
+          "Clicks": 0.0,
+          "Impressions": 9.0,
+          "CTR": 0.0,
+          "Position": 22.9
+        },
+        {
+          "row": 27,
+          "Date": "2026-07-12",
+          "Clicks": 0.0,
+          "Impressions": 6.0,
+          "CTR": 0.0,
+          "Position": 23.0
+        },
+        {
+          "row": 28,
+          "Date": "2026-07-13",
+          "Clicks": 0.0,
+          "Impressions": 3.0,
+          "CTR": 0.0,
+          "Position": 41.7
+        },
+        {
+          "row": 29,
+          "Date": "2026-07-14",
+          "Clicks": 0.0,
+          "Impressions": 7.0,
+          "CTR": 0.0,
+          "Position": 41.3
+        },
+        {
+          "row": 30,
+          "Date": "2026-07-15",
+          "Clicks": 0.0,
+          "Impressions": 2.0,
+          "CTR": 0.0,
+          "Position": 21.0
+        },
+        {
+          "row": 31,
+          "Date": "2026-07-16",
+          "Clicks": 0.0,
+          "Impressions": 2.0,
+          "CTR": 0.0,
+          "Position": 25.0
+        },
+        {
+          "row": 32,
+          "Date": "2026-07-17",
+          "Clicks": 0.0,
+          "Impressions": 1.0,
+          "CTR": 0.0,
+          "Position": 23.0
+        },
+        {
+          "row": 33,
+          "Date": "2026-07-18",
+          "Clicks": 0.0,
+          "Impressions": 2.0,
+          "CTR": 0.0,
+          "Position": 21.0
+        },
+        {
+          "row": 34,
+          "Date": "2026-07-19",
+          "Clicks": 0.0,
+          "Impressions": 1.0,
+          "CTR": 0.0,
+          "Position": 23.0
+        },
+        {
+          "row": 35,
+          "Date": "2026-07-20",
+          "Clicks": 0.0,
+          "Impressions": 2.0,
+          "CTR": 0.0,
+          "Position": 30.5
+        },
+        {
+          "row": 36,
+          "Date": "2026-07-21",
+          "Clicks": 0.0,
+          "Impressions": 3.0,
+          "CTR": 0.0,
+          "Position": 36.7
+        },
+        {
+          "row": 37,
+          "Date": "2026-07-22",
+          "Clicks": 0.0,
+          "Impressions": 6.0,
+          "CTR": 0.0,
+          "Position": 22.8
+        },
+        {
+          "row": 38,
+          "Date": "2026-07-23",
+          "Clicks": 0.0,
+          "Impressions": 3.0,
+          "CTR": 0.0,
+          "Position": 22.3
+        },
+        {
+          "row": 39,
+          "Date": "2026-07-24",
+          "Clicks": 0.0,
+          "Impressions": 7.0,
+          "CTR": 0.0,
+          "Position": 22.1
+        },
+        {
+          "row": 40,
+          "Date": "2026-07-25",
+          "Clicks": 0.0,
+          "Impressions": 6.0,
+          "CTR": 0.0,
+          "Position": 22.2
+        },
+        {
+          "row": 41,
+          "Date": "2026-07-26",
+          "Clicks": 0.0,
+          "Impressions": 7.0,
+          "CTR": 0.0,
+          "Position": 30.6
+        },
+        {
+          "row": 42,
+          "Date": "2026-07-27",
+          "Clicks": 0.0,
+          "Impressions": 10.0,
+          "CTR": 0.0,
+          "Position": 23.1
+        },
+        {
+          "row": 43,
+          "Date": "2026-07-28",
+          "Clicks": 1.0,
+          "Impressions": 10.0,
+          "CTR": 0.1,
+          "Position": 32.0
+        },
+        {
+          "row": 44,
+          "Date": "2026-07-29",
+          "Clicks": 0.0,
+          "Impressions": 7.0,
+          "CTR": 0.0,
+          "Position": 22.7
+        },
+        {
+          "row": 45,
+          "Date": "2026-07-30",
+          "Clicks": 0.0,
+          "Impressions": 6.0,
+          "CTR": 0.0,
+          "Position": 27.0
+        },
+        {
+          "row": 46,
+          "Date": "2026-07-31",
+          "Clicks": 0.0,
+          "Impressions": 7.0,
+          "CTR": 0.0,
+          "Position": 20.4
+        },
+        {
+          "row": 47,
+          "Date": "2026-08-01",
+          "Clicks": 0.0,
+          "Impressions": 7.0,
+          "CTR": 0.0,
+          "Position": 22.6
+        },
+        {
+          "row": 48,
+          "Date": "2026-08-02",
+          "Clicks": 0.0,
+          "Impressions": 3.0,
+          "CTR": 0.0,
+          "Position": 28.3
+        },
+        {
+          "row": 49,
+          "Date": "2026-08-03",
+          "Clicks": 0.0,
+          "Impressions": 2.0,
+          "CTR": 0.0,
+          "Position": 23.0
+        },
+        {
+          "row": 50,
+          "Date": "2026-08-04",
+          "Clicks": 0.0,
+          "Impressions": 4.0,
+          "CTR": 0.0,
+          "Position": 20.8
+        },
+        {
+          "row": 51,
+          "Date": "2026-08-05",
+          "Clicks": 0.0,
+          "Impressions": 2.0,
+          "CTR": 0.0,
+          "Position": 19.5
+        },
+        {
+          "row": 52,
+          "Date": "2026-08-06",
+          "Clicks": 0.0,
+          "Impressions": 1.0,
+          "CTR": 0.0,
+          "Position": 12.0
+        },
+        {
+          "row": 53,
+          "Date": "2026-08-07",
+          "Clicks": 0.0,
+          "Impressions": 2.0,
+          "CTR": 0.0,
+          "Position": 10.5
+        },
+        {
+          "row": 54,
+          "Date": "2026-08-08",
+          "Clicks": 0.0,
+          "Impressions": 0.0,
+          "CTR": "",
+          "Position": ""
+        },
+        {
+          "row": 55,
+          "Date": "2026-08-09",
+          "Clicks": 0.0,
+          "Impressions": 1.0,
+          "CTR": 0.0,
+          "Position": 12.0
+        },
+        {
+          "row": 56,
+          "Date": "2026-08-10",
+          "Clicks": 0.0,
+          "Impressions": 3.0,
+          "CTR": 0.0,
+          "Position": 11.7
+        },
+        {
+          "row": 57,
+          "Date": "2026-08-11",
+          "Clicks": 0.0,
+          "Impressions": 6.0,
+          "CTR": 0.0,
+          "Position": 11.8
+        },
+        {
+          "row": 58,
+          "Date": "2026-08-12",
+          "Clicks": 0.0,
+          "Impressions": 7.0,
+          "CTR": 0.0,
+          "Position": 11.9
+        },
+        {
+          "row": 59,
+          "Date": "2026-08-13",
+          "Clicks": 0.0,
+          "Impressions": 8.0,
+          "CTR": 0.0,
+          "Position": 13.1
+        },
+        {
+          "row": 60,
+          "Date": "2026-08-14",
+          "Clicks": 0.0,
+          "Impressions": 7.0,
+          "CTR": 0.0,
+          "Position": 11.3
+        },
+        {
+          "row": 61,
+          "Date": "2026-08-15",
+          "Clicks": 0.0,
+          "Impressions": 11.0,
+          "CTR": 0.0,
+          "Position": 9.5
+        },
+        {
+          "row": 62,
+          "Date": "2026-08-16",
+          "Clicks": 0.0,
+          "Impressions": 11.0,
+          "CTR": 0.0,
+          "Position": 7.8
+        },
+        {
+          "row": 63,
+          "Date": "2026-08-17",
+          "Clicks": 0.0,
+          "Impressions": 13.0,
+          "CTR": 0.0,
+          "Position": 7.2
+        },
+        {
+          "row": 64,
+          "Date": "2026-08-18",
+          "Clicks": 0.0,
+          "Impressions": 10.0,
+          "CTR": 0.0,
+          "Position": 7.8
+        },
+        {
+          "row": 65,
+          "Date": "2026-08-19",
+          "Clicks": 0.0,
+          "Impressions": 11.0,
+          "CTR": 0.0,
+          "Position": 9.2
+        },
+        {
+          "row": 66,
+          "Date": "2026-08-20",
+          "Clicks": 0.0,
+          "Impressions": 9.0,
+          "CTR": 0.0,
+          "Position": 9.2
+        },
+        {
+          "row": 67,
+          "Date": "2026-08-21",
+          "Clicks": 0.0,
+          "Impressions": 9.0,
+          "CTR": 0.0,
+          "Position": 9.3
+        },
+        {
+          "row": 68,
+          "Date": "2026-08-22",
+          "Clicks": 0.0,
+          "Impressions": 12.0,
+          "CTR": 0.0,
+          "Position": 9.2
+        },
+        {
+          "row": 69,
+          "Date": "2026-08-23",
+          "Clicks": 0.0,
+          "Impressions": 7.0,
+          "CTR": 0.0,
+          "Position": 9.7
+        },
+        {
+          "row": 70,
+          "Date": "2026-08-24",
+          "Clicks": 0.0,
+          "Impressions": 16.0,
+          "CTR": 0.0,
+          "Position": 9.2
+        },
+        {
+          "row": 71,
+          "Date": "2026-08-25",
+          "Clicks": 0.0,
+          "Impressions": 14.0,
+          "CTR": 0.0,
+          "Position": 9.0
+        },
+        {
+          "row": 72,
+          "Date": "2026-08-26",
+          "Clicks": 0.0,
+          "Impressions": 11.0,
+          "CTR": 0.0,
+          "Position": 9.5
+        },
+        {
+          "row": 73,
+          "Date": "2026-08-27",
+          "Clicks": 0.0,
+          "Impressions": 15.0,
+          "CTR": 0.0,
+          "Position": 8.3
+        },
+        {
+          "row": 74,
+          "Date": "2026-08-28",
+          "Clicks": 0.0,
+          "Impressions": 11.0,
+          "CTR": 0.0,
+          "Position": 10.0
+        },
+        {
+          "row": 75,
+          "Date": "2026-08-29",
+          "Clicks": 0.0,
+          "Impressions": 4.0,
+          "CTR": 0.0,
+          "Position": 10.2
+        },
+        {
+          "row": 76,
+          "Date": "2026-08-30",
+          "Clicks": 0.0,
+          "Impressions": 7.0,
+          "CTR": 0.0,
+          "Position": 11.6
+        },
+        {
+          "row": 77,
+          "Date": "2026-08-31",
+          "Clicks": 0.0,
+          "Impressions": 7.0,
+          "CTR": 0.0,
+          "Position": 9.6
+        },
+        {
+          "row": 78,
+          "Date": "2026-09-01",
+          "Clicks": 0.0,
+          "Impressions": 5.0,
+          "CTR": 0.0,
+          "Position": 11.4
+        },
+        {
+          "row": 79,
+          "Date": "2026-09-02",
+          "Clicks": 0.0,
+          "Impressions": 9.0,
+          "CTR": 0.0,
+          "Position": 12.0
+        },
+        {
+          "row": 80,
+          "Date": "2026-09-03",
+          "Clicks": 0.0,
+          "Impressions": 10.0,
+          "CTR": 0.0,
+          "Position": 10.7
+        },
+        {
+          "row": 81,
+          "Date": "2026-09-04",
+          "Clicks": 0.0,
+          "Impressions": 8.0,
+          "CTR": 0.0,
+          "Position": 9.4
+        },
+        {
+          "row": 82,
+          "Date": "2026-09-05",
+          "Clicks": 0.0,
+          "Impressions": 10.0,
+          "CTR": 0.0,
+          "Position": 11.8
+        },
+        {
+          "row": 83,
+          "Date": "2026-09-06",
+          "Clicks": 0.0,
+          "Impressions": 6.0,
+          "CTR": 0.0,
+          "Position": 11.5
+        },
+        {
+          "row": 84,
+          "Date": "2026-09-07",
+          "Clicks": 0.0,
+          "Impressions": 9.0,
+          "CTR": 0.0,
+          "Position": 11.1
+        },
+        {
+          "row": 85,
+          "Date": "2026-09-08",
+          "Clicks": 0.0,
+          "Impressions": 3.0,
+          "CTR": 0.0,
+          "Position": 12.3
+        },
+        {
+          "row": 86,
+          "Date": "2026-09-09",
+          "Clicks": 0.0,
+          "Impressions": 4.0,
+          "CTR": 0.0,
+          "Position": 10.5
+        },
+        {
+          "row": 87,
+          "Date": "2026-09-10",
+          "Clicks": 0.0,
+          "Impressions": 7.0,
+          "CTR": 0.0,
+          "Position": 11.4
+        },
+        {
+          "row": 88,
+          "Date": "2026-09-11",
+          "Clicks": 0.0,
+          "Impressions": 4.0,
+          "CTR": 0.0,
+          "Position": 10.0
+        },
+        {
+          "row": 89,
+          "Date": "2026-09-12",
+          "Clicks": 0.0,
+          "Impressions": 8.0,
+          "CTR": 0.0,
+          "Position": 10.1
+        },
+        {
+          "row": 90,
+          "Date": "2026-09-13",
+          "Clicks": 0.0,
+          "Impressions": 9.0,
+          "CTR": 0.0,
+          "Position": 10.6
+        },
+        {
+          "row": 91,
+          "Date": "2026-09-14",
+          "Clicks": 0.0,
+          "Impressions": 10.0,
+          "CTR": 0.0,
+          "Position": 11.1
+        },
+        {
+          "row": 92,
+          "Date": "2026-09-15",
+          "Clicks": 0.0,
+          "Impressions": 10.0,
+          "CTR": 0.0,
+          "Position": 11.0
+        },
+        {
+          "row": 93,
+          "Date": "2026-09-16",
+          "Clicks": 0.0,
+          "Impressions": 4.0,
+          "CTR": 0.0,
+          "Position": 13.0
+        }
+      ]
+    },
+    "filter_semantics": "Query label alone does not state equality versus contains. Must inspect Queries tab and original filter settings to confirm exact-match operator."
+  }
+]

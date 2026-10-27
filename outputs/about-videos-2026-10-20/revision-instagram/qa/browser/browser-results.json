@@ -1,0 +1,268 @@
+{
+  "at": "2026-10-20T06:28:31.109Z",
+  "passed": true,
+  "layouts": [
+    {
+      "route": "/about",
+      "width": 1440,
+      "profileLinks": 16,
+      "keyboardLinks": 8,
+      "clonesHidden": true,
+      "countersAndControlsRemoved": true,
+      "noSoundPromptOrModal": true,
+      "loadedMutedPreviews": 5,
+      "initialMP4Requests": 0,
+      "automaticScroll": true,
+      "noOverflow": true,
+      "passed": true
+    },
+    {
+      "route": "/about",
+      "width": 390,
+      "profileLinks": 16,
+      "keyboardLinks": 8,
+      "clonesHidden": true,
+      "countersAndControlsRemoved": true,
+      "noSoundPromptOrModal": true,
+      "loadedMutedPreviews": 2,
+      "initialMP4Requests": 0,
+      "automaticScroll": true,
+      "noOverflow": true,
+      "passed": true
+    },
+    {
+      "route": "/about",
+      "width": 320,
+      "profileLinks": 16,
+      "keyboardLinks": 8,
+      "clonesHidden": true,
+      "countersAndControlsRemoved": true,
+      "noSoundPromptOrModal": true,
+      "loadedMutedPreviews": 2,
+      "initialMP4Requests": 0,
+      "automaticScroll": true,
+      "noOverflow": true,
+      "passed": true
+    },
+    {
+      "route": "/ar/about",
+      "width": 1440,
+      "profileLinks": 16,
+      "keyboardLinks": 8,
+      "clonesHidden": true,
+      "countersAndControlsRemoved": true,
+      "noSoundPromptOrModal": true,
+      "loadedMutedPreviews": 5,
+      "initialMP4Requests": 0,
+      "automaticScroll": true,
+      "noOverflow": true,
+      "passed": true
+    },
+    {
+      "route": "/ar/about",
+      "width": 390,
+      "profileLinks": 16,
+      "keyboardLinks": 8,
+      "clonesHidden": true,
+      "countersAndControlsRemoved": true,
+      "noSoundPromptOrModal": true,
+      "loadedMutedPreviews": 2,
+      "initialMP4Requests": 0,
+      "automaticScroll": true,
+      "noOverflow": true,
+      "passed": true
+    },
+    {
+      "route": "/ar/about",
+      "width": 320,
+      "profileLinks": 16,
+      "keyboardLinks": 8,
+      "clonesHidden": true,
+      "countersAndControlsRemoved": true,
+      "noSoundPromptOrModal": true,
+      "loadedMutedPreviews": 2,
+      "initialMP4Requests": 0,
+      "automaticScroll": true,
+      "noOverflow": true,
+      "passed": true
+    }
+  ],
+  "interactions": [
+    {
+      "route": "/about",
+      "hoverFocusPause": true,
+      "manualKeyboard": true,
+      "loopSeam": true,
+      "offscreenPauseResume": true,
+      "instagramMouseAndEnter": true,
+      "passed": true
+    },
+    {
+      "route": "/ar/about",
+      "hoverFocusPause": true,
+      "manualKeyboard": true,
+      "loopSeam": true,
+      "offscreenPauseResume": true,
+      "instagramMouseAndEnter": true,
+      "passed": true
+    }
+  ],
+  "instagramClicks": [
+    {
+      "route": "/about",
+      "mode": "mouse",
+      "requestedDestination": "https://www.instagram.com/digi_tec/",
+      "externalRequestBlocked": true,
+      "aboutRetained": true,
+      "noModal": true,
+      "passed": true
+    },
+    {
+      "route": "/about",
+      "mode": "keyboard Enter",
+      "requestedDestination": "https://www.instagram.com/digi_tec/",
+      "externalRequestBlocked": true,
+      "aboutRetained": true,
+      "noModal": true,
+      "passed": true
+    },
+    {
+      "route": "/ar/about",
+      "mode": "mouse",
+      "requestedDestination": "https://www.instagram.com/digi_tec/",
+      "externalRequestBlocked": true,
+      "aboutRetained": true,
+      "noModal": true,
+      "passed": true
+    },
+    {
+      "route": "/ar/about",
+      "mode": "keyboard Enter",
+      "requestedDestination": "https://www.instagram.com/digi_tec/",
+      "externalRequestBlocked": true,
+      "aboutRetained": true,
+      "noModal": true,
+      "passed": true
+    },
+    {
+      "route": "/about",
+      "mode": "touch tap",
+      "requestedDestination": "https://www.instagram.com/digi_tec/",
+      "externalRequestBlocked": true,
+      "aboutRetained": true,
+      "noModal": true,
+      "passed": true
+    },
+    {
+      "route": "/ar/about",
+      "mode": "touch tap",
+      "requestedDestination": "https://www.instagram.com/digi_tec/",
+      "externalRequestBlocked": true,
+      "aboutRetained": true,
+      "noModal": true,
+      "passed": true
+    }
+  ],
+  "touch": [
+    {
+      "route": "/about",
+      "realSwipe": true,
+      "pinchZoomAllowed": true,
+      "instagramTap": true,
+      "passed": true
+    },
+    {
+      "route": "/ar/about",
+      "realSwipe": true,
+      "pinchZoomAllowed": true,
+      "instagramTap": true,
+      "passed": true
+    }
+  ],
+  "reducedMotion": [
+    {
+      "route": "/about",
+      "noMotionOrPreviewDownloads": true,
+      "manualAccess": true,
+      "livePreferenceChange": true,
+      "passed": true
+    },
+    {
+      "route": "/ar/about",
+      "noMotionOrPreviewDownloads": true,
+      "manualAccess": true,
+      "livePreferenceChange": true,
+      "passed": true
+    }
+  ],
+  "noJavaScript": [
+    {
+      "route": "/about",
+      "nativeInstagramLinks": 8,
+      "manualHorizontalStrip": true,
+      "passed": true
+    },
+    {
+      "route": "/ar/about",
+      "nativeInstagramLinks": 8,
+      "manualHorizontalStrip": true,
+      "passed": true
+    }
+  ],
+  "spa": [
+    {
+      "aboutAndBackForward": true,
+      "canonicalSettled": true,
+      "unmount": true,
+      "passed": true
+    }
+  ],
+  "screenshots": [
+    "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\about-videos-2026-10-20\\revision-instagram\\qa\\browser\\en-1440.png",
+    "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\about-videos-2026-10-20\\revision-instagram\\qa\\browser\\en-390.png",
+    "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\about-videos-2026-10-20\\revision-instagram\\qa\\browser\\en-320.png",
+    "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\about-videos-2026-10-20\\revision-instagram\\qa\\browser\\ar-1440.png",
+    "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\about-videos-2026-10-20\\revision-instagram\\qa\\browser\\ar-390.png",
+    "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\about-videos-2026-10-20\\revision-instagram\\qa\\browser\\ar-320.png"
+  ],
+  "runtimeErrors": [],
+  "failedLocalResponses": [],
+  "blockedInstagramRequests": [
+    {
+      "url": "https://www.instagram.com/digi_tec/",
+      "method": "GET",
+      "navigation": true
+    },
+    {
+      "url": "https://www.instagram.com/digi_tec/",
+      "method": "GET",
+      "navigation": true
+    },
+    {
+      "url": "https://www.instagram.com/digi_tec/",
+      "method": "GET",
+      "navigation": true
+    },
+    {
+      "url": "https://www.instagram.com/digi_tec/",
+      "method": "GET",
+      "navigation": true
+    },
+    {
+      "url": "https://www.instagram.com/digi_tec/",
+      "method": "GET",
+      "navigation": true
+    },
+    {
+      "url": "https://www.instagram.com/digi_tec/",
+      "method": "GET",
+      "navigation": true
+    }
+  ],
+  "otherExternalBlocked": 0,
+  "writesBlocked": 0,
+  "failures": [],
+  "safety": "Only loopback GET/HEAD responses permitted. Real native target=_blank mouse/touch/keyboard activation tested; outbound Instagram navigation intercepted and aborted before external network. No real messages, customer data or form submissions.",
+  "finishedAt": "2026-10-20T06:28:35.124Z",
+  "touchRerunReason": "Chromium serializes the equivalent pan-x pan-y pinch-zoom declaration as manipulation. Test accepts this standards-equivalent CSSOM value. Same frozen source; only previously interrupted touch checks rerun."
+}

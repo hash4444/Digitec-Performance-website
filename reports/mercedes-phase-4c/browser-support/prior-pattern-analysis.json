@@ -1,0 +1,185 @@
+{
+  "createdAt": "2026-10-26T11:08:56.489Z",
+  "design": "PriorPhase4B9-sequencepattern: onefresh tab,baseline3 thenA3 thenB3; samefivesteps, sameheadcaptureCSPstaticenvironmentas4C; no generatedworkerexecuted.",
+  "sourceFile": "../browser/prior-pattern-same-tab-replay.json",
+  "sourceSha256": "e2aaef4de9ee9c028cc32d75d84fbbf6f78a7f26422761403f24a8199661e227",
+  "commonAnalysisSha256": "919128defee1280a9878e9ef825f826945c13f05279c94e489b8ab51fecde138",
+  "scope": "Separate one-fresh-tab sequential baseline3/A3/B3 replay; do not combine with the three-tab alternating run as independent devices or browser engines.",
+  "options": [
+    {
+      "option": "baseline",
+      "label": "baseline",
+      "start": "2026-10-26T11:07:43.233Z",
+      "end": "2026-10-26T11:07:47.141Z",
+      "sequences": 3,
+      "steps": 15,
+      "build": {
+        "manifestSha256": "eb2c17bc541cb99c6b4e6e93aba745cccf3e1050f9de1c313c8837ede1a23db7",
+        "entry": "assets/index-CvWuKuLH.js",
+        "hub": "assets/BrandPage-CqCGvxL4.js",
+        "body": "assets/BrandServicePage-mV81kvfw.js"
+      },
+      "snapshot": "runs/baseline-prior-pattern.snapshot.json",
+      "byKind": {
+        "instrumentation-installed": 9,
+        "csp-block": 21,
+        "dom-content-loaded": 9,
+        "resource-error": 18,
+        "window-load": 9,
+        "page-show": 9,
+        "focus-in": 3,
+        "anchor-click": 3,
+        "pop-state": 3,
+        "page-hide": 8
+      },
+      "inPageExceptionCount": 0,
+      "exceptions": [],
+      "nativeLogCount": 0,
+      "unexpectedResourceErrors": [],
+      "rounds": [
+        {
+          "label": "baseline",
+          "repeat": 1,
+          "startedAt": "2026-10-26T11:07:43.233Z",
+          "finishedAt": "2026-10-26T11:07:44.695Z",
+          "inPageExceptions": [],
+          "nativeLogs": []
+        },
+        {
+          "label": "baseline",
+          "repeat": 2,
+          "startedAt": "2026-10-26T11:07:44.695Z",
+          "finishedAt": "2026-10-26T11:07:45.900Z",
+          "inPageExceptions": [],
+          "nativeLogs": []
+        },
+        {
+          "label": "baseline",
+          "repeat": 3,
+          "startedAt": "2026-10-26T11:07:45.900Z",
+          "finishedAt": "2026-10-26T11:07:47.141Z",
+          "inPageExceptions": [],
+          "nativeLogs": []
+        }
+      ]
+    },
+    {
+      "option": "candidate",
+      "label": "A",
+      "start": "2026-10-26T11:07:47.141Z",
+      "end": "2026-10-26T11:07:53.224Z",
+      "sequences": 3,
+      "steps": 15,
+      "build": {
+        "manifestSha256": "ee7d1f30093b0e84dd1a54f7d009dc39ee6644b683eda16251064a2a21f42655",
+        "entry": "assets/index-DxoEjBa9.js",
+        "hub": "assets/BrandPage-BnKA0VjP.js",
+        "body": "assets/BrandServicePage-CdNEbwkY.js"
+      },
+      "snapshot": "runs/candidate-prior-pattern.snapshot.json",
+      "byKind": {
+        "instrumentation-installed": 9,
+        "csp-block": 21,
+        "dom-content-loaded": 9,
+        "resource-error": 18,
+        "window-load": 9,
+        "page-show": 9,
+        "focus-in": 3,
+        "anchor-click": 3,
+        "pop-state": 3,
+        "page-hide": 8
+      },
+      "inPageExceptionCount": 0,
+      "exceptions": [],
+      "nativeLogCount": 0,
+      "unexpectedResourceErrors": [],
+      "rounds": [
+        {
+          "label": "A",
+          "repeat": 1,
+          "startedAt": "2026-10-26T11:07:47.141Z",
+          "finishedAt": "2026-10-26T11:07:50.640Z",
+          "inPageExceptions": [],
+          "nativeLogs": []
+        },
+        {
+          "label": "A",
+          "repeat": 2,
+          "startedAt": "2026-10-26T11:07:50.640Z",
+          "finishedAt": "2026-10-26T11:07:51.923Z",
+          "inPageExceptions": [],
+          "nativeLogs": []
+        },
+        {
+          "label": "A",
+          "repeat": 3,
+          "startedAt": "2026-10-26T11:07:51.923Z",
+          "finishedAt": "2026-10-26T11:07:53.224Z",
+          "inPageExceptions": [],
+          "nativeLogs": []
+        }
+      ]
+    },
+    {
+      "option": "release-b",
+      "label": "B",
+      "start": "2026-10-26T11:07:53.224Z",
+      "end": "2026-10-26T11:07:58.548Z",
+      "sequences": 3,
+      "steps": 15,
+      "build": {
+        "manifestSha256": "ee7d1f30093b0e84dd1a54f7d009dc39ee6644b683eda16251064a2a21f42655",
+        "entry": "assets/index-DxoEjBa9.js",
+        "hub": "assets/BrandPage-BnKA0VjP.js",
+        "body": "assets/BrandServicePage-CdNEbwkY.js"
+      },
+      "snapshot": "runs/release-b-prior-pattern.snapshot.json",
+      "byKind": {
+        "instrumentation-installed": 9,
+        "csp-block": 21,
+        "dom-content-loaded": 9,
+        "resource-error": 18,
+        "window-load": 9,
+        "page-show": 9,
+        "focus-in": 3,
+        "anchor-click": 3,
+        "pop-state": 3,
+        "page-hide": 8
+      },
+      "inPageExceptionCount": 0,
+      "exceptions": [],
+      "nativeLogCount": 0,
+      "unexpectedResourceErrors": [],
+      "rounds": [
+        {
+          "label": "B",
+          "repeat": 1,
+          "startedAt": "2026-10-26T11:07:53.224Z",
+          "finishedAt": "2026-10-26T11:07:56.086Z",
+          "inPageExceptions": [],
+          "nativeLogs": []
+        },
+        {
+          "label": "B",
+          "repeat": 2,
+          "startedAt": "2026-10-26T11:07:56.086Z",
+          "finishedAt": "2026-10-26T11:07:57.278Z",
+          "inPageExceptions": [],
+          "nativeLogs": []
+        },
+        {
+          "label": "B",
+          "repeat": 3,
+          "startedAt": "2026-10-26T11:07:57.278Z",
+          "finishedAt": "2026-10-26T11:07:58.548Z",
+          "inPageExceptions": [],
+          "nativeLogs": []
+        }
+      ]
+    }
+  ],
+  "fullNativeLogs": [],
+  "totalSequences": 9,
+  "totalSteps": 45,
+  "commonAnalysisRemainsUnchanged": true
+}

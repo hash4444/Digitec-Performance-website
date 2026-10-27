@@ -1,0 +1,26 @@
+{
+  "checkedAt": "2026-10-19T07:54:31.535Z",
+  "commit": "acef3427b57b48259bc5b39d6a0f75798603ae95",
+  "parent": "6180f453feaaf21b8c786f23bb3867a09666ed64",
+  "branch": "main",
+  "changed": [
+    "scripts/test-master-seo-browser.mjs",
+    "src/components/BrandServiceScope.tsx",
+    "src/components/RepairEnquiryPanel.tsx",
+    "src/data/brandServiceSprint.ts",
+    "src/data/brands.ts",
+    "src/data/priorityBrandSeo.ts",
+    "src/data/repairServiceArabic.ts",
+    "src/data/repairServiceContent.ts",
+    "src/i18n/ar-brands.ts",
+    "src/pages/BrandPage.tsx",
+    "src/pages/BrandServicePage.tsx"
+  ],
+  "scopeMatches": true,
+  "baselineFilesChecked": 31006,
+  "mismatches": [],
+  "unexpectedAdded": [],
+  "indexEmpty": true,
+  "passed": true,
+  "productionPublicationCommandRun": false
+}

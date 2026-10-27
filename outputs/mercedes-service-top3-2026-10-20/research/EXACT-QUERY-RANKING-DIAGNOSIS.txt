@@ -1,0 +1,50 @@
+DIGI-TEC exact-query ranking diagnosis
+Prepared 20 October 2026, Asia/Dubai. Research only. No product files, accounts, indexing requests, commits, pushes or deployments changed.
+
+Finding
+The current Google-selected canonical and dominant observed landing page for 'mercedes service dubai' are the intended hub, https://digitecme.com/brands/mercedes-benz-service-dubai. Live authenticated Search Console evidence closes the earlier ownership/indexing/segmentation unknowns. The current full 28-day report shows visibility near the first-page boundary and very few clicks. The top-three objective is not established by the evidence.
+
+Verified observations, with different scopes retained
+1. Historical exact-query baseline, 10 July–9 October 2026, 92 days, global/all pages/devices, Web: 613 impressions, 2 clicks, exported CTR 0.33%, average position 13.88. Source original 12 October (1) workbook, Queries!A12:E12. Independently reopened read-only and matched all three baseline values. Calculated CTR is 2/613 = 0.3263%, consistent with the rounded export.
+2. Newly supplied 20 October workbook covers 20 September–17 October 2026, 28 days, Web (text-based), Query '+mercedes service dubai'. Its visible exact query row is 182 impressions, 2 clicks, 1.1% CTR and 12.62 position, Queries!A2:E2. The plus-prefixed filter is a contains scope. Its Pages/Countries/Devices tabs must not automatically be called exact-query segments merely because only one visible query row appears.
+3. Live authenticated Search Console independently inspected the same 20 September–17 October period. Query dialog explicitly reads 'Exact query', with 'mercedes service dubai' as keyword. All-country/all-page totals: 182 impressions, 2 clicks, 1.1% CTR, average position 12.6 at UI precision. These exact-filter totals independently corroborate the supplied row; file precision and live display precision remain labelled.
+4. Live exact-query Pages tab, global: target hub 164 impressions, 2 clicks, 1.2% CTR, position 11.7; Mercedes oil URL with trailing slash 10 impressions, 0 clicks, position 9.8; Mercedes brake URL with trailing slash 8 impressions, 0 clicks, position 34.6. Do not assume property and page aggregation are always additive or turn these rows into a market share.
+5. Live exact query + UAE, all pages/devices: 179 impressions, 2 clicks, 1.1% CTR, position 12.2. Country filter and exact-query filter were active together. UAE desktop: 118 impressions, 2 clicks, 1.7% CTR, position 12.6. UAE mobile: 61 impressions, 0 clicks, 0% CTR, position 11.3. These are joint report filters, not estimates allocated from independent country/device tabs.
+6. Live exact query + UAE + exact target hub: 161 impressions, 2 clicks, 1.2% CTR, position 11.2. Hub desktop: 100 impressions, 2 clicks, 2% CTR, position 11.2. Hub mobile: 61 impressions, 0 clicks, 0% CTR, position 11.3. The low click count warrants careful interpretation. It does not prove a mobile UX defect or a statistically established CTR difference.
+7. Latest live provisional 24-hour sample, chart labelled 19–20 October 2026, exact query/all countries/pages: 4 impressions, 0 clicks, 0% CTR, position 15.8. The target hub owns all four observed impressions. Desktop 3 impressions, position 16.0; mobile 1 impression, position 15.0. Captured UI did not expose exact hour boundaries; no Dubai hour range is invented. This is separate from the original 19 October export's six impressions over 18 October 06:00–19 October 05:00 UTC+04:00. Neither small sample establishes a trend or release effect.
+
+Indexed URL Inspection, observed 20 October
+URL is on Google. Page is indexed. Googlebot smartphone. Crawl allowed Yes, page fetch Successful, indexing allowed Yes. User-declared canonical is the exact target hub. Google-selected canonical reads 'Inspected URL', resolving to the same hub. Sitemap https://digitecme.com/sitemap.xml. Referring pages displayed /services/mercedes-repair and /services/mercedes-repair-dubai/. Last crawl displayed 16 Oct 2026, 21:18:38; timezone was not exposed and is not assigned. Breadcrumbs show one valid item. No Request indexing or Test live URL action was performed.
+
+What changed in the diagnosis
+The initial export-only inspection could not establish current exact-query page ownership, UAE/device combinations or Google-selected canonical. Authenticated browser evidence now establishes all three for the current report and indexed snapshot. Historical 19 September query-labelled export covers 17 June–16 September and shows repair URL 236 impressions/1 click/23.61 position versus hub 348/0/11.84, with slash variants also present. That older overlap is superseded by the current 28-day page-owner evidence. It is useful historical context, not proof that a present duplicate or harmful cannibalization remains. Do not redirect or remove distinct oil/brake/repair owners based on query overlap alone.
+
+Prioritized measurable gap
+P1. Strengthen scheduled-servicing intent on the confirmed indexed hub, while preserving its canonical and keeping repairs/diagnostics secondary. Existing route ownership is verified. A local metadata/H1 change can be evaluated with regression checks rather than guessed ownership.
+P1. Make model/year/mileage/reminder/history/appointment intake clear and preserve telephone/WhatsApp. The observed mobile sample has zero clicks on 61 UAE hub impressions. Evaluate actual snippet relevance and mobile booking usability; do not infer which one caused the zero.
+P1. Establish a release and recrawl measurement boundary. The current 28-day period ends 17 October and indexed crawl is 16 October, both before the 19 October sprints and this unpublished candidate. This report cannot attribute performance to either release.
+P2. Improve relevant contextual inbound links toward the broad servicing hub from maintenance/oil/A-B/model content, with service-specific owners retaining their distinct repair intent. Monitor all exact-query Pages rows for persistent owner switching and outcomes before any consolidation.
+P2. Build original maintenance/job evidence and legitimate citations. Current GSC data measures visibility and clicks; it does not verify manufacturer authorization, diagnostic function compatibility, reviews, repair capabilities or external authority metrics.
+P3. Keep measured servicing variants and proposals separate. The supporting-query JSON records exact raw rows with periods/filters/ranges. Do not turn Service A/B or ASSYST editorial coverage into an invented GSC demand claim if the exact variant is not present.
+
+Limits
+No top-three result, guarantee, stable Dubai rank, causal ranking uplift, measured competitor authority score, qualified enquiry count or confirmed booking is claimed. Separate date windows overlap, and duplicate exports exist; none of their impressions/clicks are pooled. GSC average position describes recorded impressions across contexts, rather than a universal blue-link order. Different search-type labels and filters must stay visible. Missing visible rows are not zero demand. Google canonical attribution and property/page aggregation can differ.
+
+Source inventory and reproducibility
+All 18 original standard GSC workbooks in Downloads were reopened read-only; before/after SHA-256 hashes unchanged. Manifest preserves dates, filters, sheet ranges and semantic duplicates. Twenty-two extraction/source/baseline checks passed. An independent verification then passed 104 assertions, rechecking 18 original hashes, all 13 exact rows and 52 metric cells, live UAE/hub/device transcription, canonical capture and AX identity redaction. There are 13 exact-query observations across files; they are not 13 independent periods and are not summed. See research-verification.json. The temporary GSC research tab was closed after evidence capture.
+Latest supplied file SHA-256: c34108586e17219063b157767f1f1f443b2612e9e068f498465b89eeb1403e18.
+Historical baseline file SHA-256: see source-manifest.json entry for digitecme.com-Performance-on-Search-2026-10-12 (1).xlsx.
+
+Artifacts
+source-manifest.json: immutable original workbook provenance and ranges.
+exact-query-observations.json: every observed exact-query row and period, including duplicates labelled.
+exact-query-filtered-evidence.json: historical query-labelled filter; original operator caveat retained.
+contains-query-filtered-evidence.json: newly supplied contains-filter workbook dimensions, separately labelled.
+live-gsc-evidence.json: definitive current exact-query, UAE, device, page and indexed-canonical observations.
+exact-query-diagnosis.json: combined machine-readable diagnosis with original unknowns explicitly superseded.
+live-*-ax.txt and screenshots: rendered UI evidence; account identity redacted from saved AX.
+MONITORING-AND-REMAINING-EVIDENCE-PLAN.txt: seven-, 28- and 90-day plan anchored to actual publication and data completeness; no automation created.
+
+Methodological references
+Google's metric definitions, average-position limits and canonical attribution: https://support.google.com/webmasters/answer/7042828?hl=en
+Google's combined dimensions/equality filters, Pacific-time daily request dates, row and data-completeness limits: https://developers.google.com/webmaster-tools/v1/searchanalytics/query

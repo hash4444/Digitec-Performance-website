@@ -1,0 +1,21 @@
+{
+  "checkedAt": "2026-10-19T08:18:39.775Z",
+  "passed": true,
+  "base": "acef3427b57b48259bc5b39d6a0f75798603ae95",
+  "branch": "main",
+  "head": "acef3427b57b48259bc5b39d6a0f75798603ae95",
+  "originalFiles": 31323,
+  "byteIdenticalUnrelatedFiles": 31320,
+  "intentionallyModifiedExistingFiles": 3,
+  "approvedNewFiles": [
+    "src/components/DiagnosticAcEnquiryPanel.tsx",
+    "src/data/diagnosticsAcGeneralContent.ts",
+    "src/data/diagnosticsAcBrandContent.ts"
+  ],
+  "stagedFiles": [],
+  "unexpectedAdded": [],
+  "candidateBuildInputs": 581,
+  "sourceSha256": "3d37bc4323d40b413ec1b0469acb38960c20a4914f3df91b7953d75b4851d7ac",
+  "sourcePackageSha256": "587dec6e7be8594a6edd60735a834fc9b49ef3a685d93e99ea02491c1e2009cd",
+  "errors": []
+}

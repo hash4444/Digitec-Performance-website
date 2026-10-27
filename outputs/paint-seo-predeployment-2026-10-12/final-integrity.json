@@ -1,0 +1,17 @@
+{
+  "checkedAt": "2026-10-12T10:10:58.256Z",
+  "sourceFingerprint": "c5f55b95b6830a7371cd48d2782860a8884a213c5c838d97eff1618a74fa329d",
+  "sourceFilesChecked": 570,
+  "currentSourceMatchesTestedBuild": true,
+  "mismatches": [],
+  "currentBackendMatchesHead": true,
+  "currentBackendSha256": "24e7979785bf67d0dd92d7236cd49ffbe3d82830276a9db237ea5f796ebe0aad",
+  "frontendWorkerMatchesGeneratedCloudflareRouter": true,
+  "frontendWorkerSha256": "47208557115070b192a66e867c27be7b847b00a6304c25519fdb84033b7d1e45",
+  "notFoundAssetPaths": [
+    "/assets/index-v1GkK8ss.js",
+    "/assets/index-CoVh-1v8.css"
+  ],
+  "missing404Assets": [],
+  "packagingScope": "Only fresh frontend dist and matching Cloudflare bundle; exclude generated Supabase output and unrelated workspace/QA outputs"
+}

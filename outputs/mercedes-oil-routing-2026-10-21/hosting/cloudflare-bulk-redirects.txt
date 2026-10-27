@@ -1,0 +1,643 @@
+- complementary:
+  - link "Cloudflare home":
+    - /url: /
+  - button "Switch Account":
+    - generic "Mebms2000@gmail.com's Account"
+  - navigation:
+    - button "Quick search...":
+      - generic: Quick search...
+      - generic: Ctrl K
+    - list:
+      - link "Account home":
+        - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/home
+        - generic: Account home
+      - button "Recents":
+        - generic: Recents
+      - list:
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/rules/overview
+          - generic: Overview
+          - generic: digitecme.com
+          - generic: /
+          - generic: Rules
+        - button:
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/rules/redirect-rules
+          - generic: Redirect Rules
+          - generic: digitecme.com
+          - generic: /
+          - generic: Rules
+        - button:
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/workers
+          - generic: Workers Routes
+          - generic: digitecme.com
+        - button:
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/workers-and-pages
+          - generic: Workers & Pages
+          - generic: Compute
+        - button:
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/dns/records
+          - generic: Records
+          - generic: digitecme.com
+          - generic: /
+          - generic: DNS
+        - button:
+      - button "Domains":
+        - generic: Domains
+      - list:
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/domains/overview
+          - generic: Overview
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/domains/registrations
+          - generic: Registrations
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/domains/transfers
+          - generic: Transfers
+      - button "Observability New":
+        - generic: Observability
+        - generic: New
+      - list:
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/observability/logs
+          - generic: Logs
+        - button:
+          - generic: Export
+        - list:
+          - link:
+            - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/logs
+            - generic: Logpush
+        - button:
+          - generic: Alerts
+        - list:
+          - link:
+            - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/notifications
+            - generic: Overview
+          - link:
+            - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/notifications/destinations
+            - generic: Destinations
+          - link:
+            - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/notifications/silences
+            - generic: Silences
+    - generic: Build
+    - list:
+      - button "Compute":
+        - generic: Compute
+      - list:
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/workers-and-pages
+          - generic: Workers & Pages
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/observability
+          - generic: Observability
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/workers-for-platforms
+          - generic: Workers for Platforms
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/workers/containers
+          - generic: Containers
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/workers/durable-objects
+          - generic: Durable Objects
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/workers/queues
+          - generic: Queues
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/workers/workflows
+          - generic: Workflows
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/workers/browser-run
+          - generic: Browser Run
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/workers/vpc
+          - generic: VPC
+          - generic: Beta
+        - button:
+          - generic: Email Service
+        - list:
+          - link:
+            - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/email-service/sending
+            - generic: Email Sending
+            - generic: Beta
+          - link:
+            - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/email-service/routing
+            - generic: Email Routing
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/workers/plans
+          - generic: Workers plans
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/flagship
+          - generic: Flagship
+          - generic: Beta
+      - button "AI":
+        - generic: AI
+      - list:
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/ai/models
+          - generic: Models
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/ai/workers-ai
+          - generic: Workers AI
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/ai/ai-gateway
+          - generic: AI Gateway
+        - link:
+          - /url: https://dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/one/access-controls/ai-controls/mcp-server-portal
+          - generic: MCP Portals
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/ai/vectorize
+          - generic: Vectorize
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/ai/ai-search
+          - generic: AI Search
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/agents
+          - generic: Agent tracing
+      - button "Storage & databases":
+        - generic: Storage & databases
+      - list:
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/r2/overview
+          - generic: R2 Object Storage
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/workers/hyperdrive
+          - generic: Postgres & MySQL (Hyperdrive)
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/workers/kv/namespaces
+          - generic: Workers KV
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/workers/d1
+          - generic: D1 SQLite Database
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/workers/analytics-engine
+          - generic: Analytics Engine
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/data-catalog
+          - generic: Basin Catalog
+        - button:
+          - generic: Basin Pipelines
+        - list:
+          - link:
+            - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/pipelines/overview
+            - generic: Pipelines
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/k2
+          - generic: K2 Streams
+          - generic: Beta
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/secrets-store
+          - generic: Secrets Store
+          - generic: New
+      - button "Images & Stream":
+        - generic: Images & Stream
+      - list:
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/media/transformations
+          - generic: Transformations
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/images/hosted
+          - generic: Hosted images
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/stream/videos
+          - generic: Hosted videos
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/stream/inputs
+          - generic: Live inputs
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/stream/analytics
+          - generic: Stream analytics
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/media/plans
+          - generic: Plans
+      - button "Realtime":
+        - generic: Realtime
+      - list:
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/realtime/kit
+          - generic: RealtimeKit
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/realtime/turn
+          - generic: TURN Server
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/realtime/sfu
+          - generic: Serverless SFU
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/realtime/moq
+          - generic: MoQ Relay
+          - generic: Beta
+    - generic: Protect & connect
+    - list:
+      - button "Application security":
+        - generic: Application security
+      - list:
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/application-security/waf
+          - generic: WAF
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/application-security/botbase
+          - generic: BotBase
+      - button "Zero Trust":
+        - generic: Zero Trust
+      - list:
+        - link:
+          - /url: https://dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/one/overview
+          - generic: Overview
+        - button:
+          - generic: Insights & Logs
+        - list:
+          - link:
+            - /url: https://dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/one/insights/overview
+            - generic: Overview
+          - link:
+            - /url: https://dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/one/insights/dashboards
+            - generic: Dashboards
+          - link:
+            - /url: https://dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/one/insights/dex
+            - generic: Digital experience
+          - link:
+            - /url: https://dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/one/insights/logs
+            - generic: Logs
+        - button:
+          - generic: Team & Resources
+        - list:
+          - link:
+            - /url: https://dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/one/team-resources/application-library
+            - generic: Application library
+          - link:
+            - /url: https://dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/one/team-resources/devices
+            - generic: Devices
+          - link:
+            - /url: https://dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/one/team-resources/users
+            - generic: Users
+        - button:
+          - generic: Access controls
+        - list:
+          - link:
+            - /url: https://dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/one/access-controls/overview
+            - generic: Overview
+          - link:
+            - /url: https://dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/one/access-controls/apps
+            - generic: Applications
+          - link:
+            - /url: https://dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/one/access-controls/policies
+            - generic: Policies
+          - link:
+            - /url: https://dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/one/access-controls/ai-controls
+            - generic: MCP Portals
+          - link:
+            - /url: https://dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/one/access-controls/targets
+            - generic: Targets
+          - link:
+            - /url: https://dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/one/access-controls/service-credentials
+            - generic: Service credentials
+          - link:
+            - /url: https://dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/one/access-controls/settings
+            - generic: Access settings
+        - button:
+          - generic: Traffic controls
+        - list:
+          - link:
+            - /url: https://dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/one/traffic-controls/overview
+            - generic: Overview
+          - link:
+            - /url: https://dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/one/traffic-controls/resolvers-proxies
+            - generic: Resolvers & Proxies
+          - link:
+            - /url: https://dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/one/traffic-controls/policies
+            - generic: Firewall policies
+          - link:
+            - /url: https://dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/one/traffic-controls/resolver-policies
+            - generic: Resolver policies
+            - generic: New
+          - link:
+            - /url: https://dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/one/traffic-controls/egress-policies
+            - generic: Egress policies
+          - link:
+            - /url: https://dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/one/traffic-controls/traffic-settings
+            - generic: Traffic settings
+        - button:
+          - generic: Data loss prevention
+        - list:
+          - link:
+            - /url: https://dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/one/dlp/overview
+            - generic: Overview
+          - link:
+            - /url: https://dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/one/dlp/profiles
+            - generic: Profiles
+          - link:
+            - /url: https://dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/one/dlp/data-classification
+            - generic: Data classification
+          - link:
+            - /url: https://dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/one/dlp/validators
+            - generic: Validators
+          - link:
+            - /url: https://dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/one/dlp/test-scan
+            - generic: Test scan
+          - link:
+            - /url: https://dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/one/dlp/settings
+            - generic: DLP settings
+        - button:
+          - generic: Cloud Workload Security
+          - generic: Beta
+        - list:
+          - link:
+            - /url: https://dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/one/cloud-workload-security/deployments
+            - generic: Deployments
+          - link:
+            - /url: https://dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/one/cloud-workload-security/policy-sets
+            - generic: Policy sets
+          - link:
+            - /url: https://dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/one/cloud-workload-security/workloads
+            - generic: Workloads
+          - link:
+            - /url: https://dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/one/cloud-workload-security/policies
+            - generic: Policies
+          - button:
+            - generic: Policy reference
+          - list:
+            - link:
+              - /url: https://dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/one/cloud-workload-security/rego-metadata
+              - generic: Rego metadata
+            - link:
+              - /url: https://dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/one/cloud-workload-security/rego-modules
+              - generic: Rego modules
+            - link:
+              - /url: https://dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/one/cloud-workload-security/tenant-structures
+              - generic: Tenant structures
+          - button:
+            - generic: Traffic scope
+          - list:
+            - link:
+              - /url: https://dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/one/cloud-workload-security/credentials
+              - generic: Credentials
+            - link:
+              - /url: https://dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/one/cloud-workload-security/domain-acls
+              - generic: Domain ACLs
+        - button:
+          - generic: Cloud & SaaS findings
+        - list:
+          - link:
+            - /url: https://dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/one/cloud-saas-findings/overview
+            - generic: Overview
+          - link:
+            - /url: https://dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/one/cloud-saas-findings/posture
+            - generic: Posture Findings
+          - link:
+            - /url: https://dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/one/cloud-saas-findings/content
+            - generic: Content Findings
+          - link:
+            - /url: https://dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/one/cloud-saas-findings/findings-catalog
+            - generic: Finding types library
+            - generic: New
+        - button:
+          - generic: Email security
+        - list:
+          - link:
+            - /url: https://dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/one/email-security/overview
+            - generic: Overview
+          - link:
+            - /url: https://dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/one/email-security/monitoring
+            - generic: Monitoring
+          - link:
+            - /url: https://dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/one/email-security/submissions
+            - generic: Submissions
+          - link:
+            - /url: https://dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/one/email-security/investigation
+            - generic: Investigation
+          - link:
+            - /url: https://dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/one/email-security/policies
+            - generic: Policies & rules
+          - link:
+            - /url: https://dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/one/email-security/phishguard
+            - generic: PhishGuard
+          - link:
+            - /url: https://dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/one/email-security/settings
+            - generic: Email security settings
+        - button:
+          - generic: Browser isolation
+        - list:
+          - link:
+            - /url: https://dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/one/browser-isolation/overview
+            - generic: Overview
+          - link:
+            - /url: https://dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/one/browser-isolation/settings
+            - generic: Browser isolation settings
+        - button:
+          - generic: Reusable components
+        - list:
+          - link:
+            - /url: https://dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/one/reusable-components/lists
+            - generic: Lists
+          - link:
+            - /url: https://dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/one/reusable-components/tags
+            - generic: Tags
+          - link:
+            - /url: https://dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/one/reusable-components/posture-checks
+            - generic: Posture checks
+          - link:
+            - /url: https://dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/one/reusable-components/custom-pages
+            - generic: Custom pages
+        - button:
+          - generic: Integrations
+        - list:
+          - link:
+            - /url: https://dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/one/integrations/cloud-and-saas
+            - generic: Cloud & SaaS
+          - link:
+            - /url: https://dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/one/integrations/identity-providers
+            - generic: Identity providers
+          - link:
+            - /url: https://dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/one/integrations/service-providers
+            - generic: Service providers
+          - link:
+            - /url: https://dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/one/integrations/webhooks
+            - generic: Webhooks
+        - link:
+          - /url: https://dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/one/settings
+          - generic: Settings
+      - button "Networking":
+        - generic: Networking
+      - list:
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/magic-networks/overview
+          - generic: Overview
+          - generic: New
+        - button:
+          - generic: Insights
+        - list:
+          - link:
+            - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/networking-insights/analytics/network-analytics/flow-analytics
+            - generic: Network flow
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/tunnels
+          - generic: Tunnels
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/mesh
+          - generic: Mesh
+          - generic: Beta
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/magic-networks/routes
+          - generic: Routes
+          - generic: New
+        - button:
+          - generic: IP addresses
+        - list:
+          - link:
+            - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/ip-addresses/address-space
+            - generic: Address space
+          - link:
+            - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/ip-addresses/proxy-ips
+            - generic: Address maps
+      - button "Threats & defense":
+        - generic: Threats & defense
+      - list:
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/threats-defense
+          - generic: Overview
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/threat-intelligence
+          - generic: Threat intelligence
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/threat-intelligence/investigate
+          - generic: Investigate
+      - button "Monetize New":
+        - generic: Monetize
+        - generic: New
+      - list:
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/monetize/monetization-gateway
+          - generic: Monetization Gateway
+          - generic: Beta
+      - button "Delivery & performance":
+        - generic: Delivery & performance
+      - list:
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/tag-management/zaraz
+          - generic: Web tag management
+    - list:
+      - button "Manage account":
+        - generic: Manage account
+      - list:
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/members
+          - generic: Members
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/billing
+          - generic: Billing
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/oauth-clients
+          - generic: OAuth clients
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/audit-log
+          - generic: Audit logs
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/blocked-content
+          - generic: Blocked content
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/carbon
+          - generic: Carbon Impact Report
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/configurations
+          - generic: Configurations
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/tags
+          - generic: Tagged Resources
+          - generic: Beta
+  - button "Collapse sidebar" [expanded]:
+- banner:
+  - button "Ask AI":
+    - generic: Ask AI
+  - link "Support":
+    - /url: /?to=/:account/support
+    - generic: Support
+  - button "User menu":
+- banner:
+  - heading "Bulk Redirects" [level=1]
+  - link "View docs":
+    - /url: https://developers.cloudflare.com/rules/url-forwarding/bulk-redirects/
+    - generic: View docs
+  - paragraph: Define a large number of URL redirects at the account level using a given HTTP status code. Set up millions of static redirects shared across all zones by creating a bulk redirect list and referencing it in the bulk redirect rule.
+  - link "Create":
+    - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/bulk-redirects/redirect-list/new
+    - generic: Create
+  - button "More options":
+- textbox "Search rules and lists"
+- heading "Bulk Redirect Lists" [level=2]
+- paragraph: You have used 0 out of 5 lists.
+- table:
+  - rowgroup:
+    - row "List name Description Number of Redirects Status":
+      - columnheader "List name":
+        - button "List name":
+          - generic: List name
+        - separator
+      - columnheader "Description":
+        - generic: Description
+        - separator
+      - columnheader "Number of Redirects":
+        - generic: Number of Redirects
+        - separator
+      - columnheader "Status":
+        - generic: Status
+        - button:
+        - separator
+      - columnheader
+      - columnheader
+  - rowgroup:
+    - row:
+      - cell
+      - cell
+      - cell
+      - cell
+      - cell
+      - cell
+    - row:
+      - cell
+      - cell
+      - cell
+      - cell
+      - cell
+      - cell
+    - row:
+      - cell
+      - cell
+      - cell
+      - cell
+      - cell
+      - cell
+    - row:
+      - cell
+      - cell
+      - cell
+      - cell
+      - cell
+      - cell
+    - row:
+      - cell
+      - cell
+      - cell
+      - cell
+      - cell
+      - cell
+- contentinfo:
+  - list:
+    - link "Support":
+      - /url: https://support.cloudflare.com
+    - link "System status":
+      - /url: https://www.cloudflarestatus.com
+    - link "Careers":
+      - /url: https://www.cloudflare.com/careers/
+    - link "Terms of Use":
+      - /url: https://www.cloudflare.com/website-terms/
+    - link "Report Security Issues":
+      - /url: https://www.cloudflare.com/disclosure/
+    - link "Privacy Policy":
+      - /url: https://www.cloudflare.com/privacypolicy/
+    - button "A blue and white pill with a checkmark and an x, representing privacy choices Cookie Preferences":
+      - img "A blue and white pill with a checkmark and an x, representing privacy choices"
+      - text: Cookie Preferences
+    - generic: © 2026 Cloudflare, Inc.
+- region "Notifications"

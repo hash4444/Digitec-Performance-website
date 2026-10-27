@@ -1,0 +1,193 @@
+- banner:
+  - button "Main menu":
+  - link "Google Search Console":
+    - /url: ./search-console?resource_id=sc-domain%3Adigitecme.com
+  - search:
+    - button "Search":
+  - button "Help":
+    - generic: help_outline
+  - tooltip: Help
+  - button "User settings":
+    - generic: manage_accounts
+  - tooltip: User settings
+  - 'button "Unread messages: 38"':
+    - generic: notifications
+  - tooltip: Messages
+  - generic: "38"
+  - button "Google apps":
+  - 'button "Google Account: Hashem Qusibatie (hqusibatie24@gmail.com)"':
+- navigation "Breadcrumbs":
+  - heading "Performance" [level=1]
+- button "EXPORT":
+  - generic: 
+  - generic: EXPORT
+- radiogroup "Select time range":
+  - radio "24 hours":
+    - generic: 24 hours
+  - radio "7 days":
+    - generic: 7 days
+  - radio "28 days" [checked]:
+    - generic: 28 days
+  - radio "3 months":
+    - generic: 3 months
+- button "More time ranges":
+  - generic: More
+  - generic: arrow_drop_down
+- list:
+  - 'button "Search type: Web"':
+    - generic: "Search type: Web"
+    - generic: arrow_drop_down
+  - tooltip: "Search type: Web"
+  - 'button "Query: mercedes oil change dubai"':
+    - generic: "Query: mercedes oil change dubai"
+  - tooltip: "Query: mercedes oil change dubai"
+  - 'button "Remove Query: mercedes oil change dubai"':
+    - generic: close
+  - 'button "Country: United Arab Emirates"':
+    - generic: "Country: United Arab Emirates"
+  - tooltip: "Country: United Arab Emirates"
+  - 'button "Remove Country: United Arab Emirates"':
+    - generic: close
+  - button "Add filter":
+    - generic: add
+    - generic: Add filter
+  - tooltip: Add filter
+  - button "Customise your performance report using AI":
+    - generic: filter_list_spark
+  - tooltip: Customise your performance report using AI
+  - button "Reset filters":
+    - generic: Reset filters
+  - tooltip: Reset filters
+- generic: "Last update: 5.5 hours ago"
+- main:
+  - button "Total clicks 0":
+    - generic "Total clicks":
+      - generic: 
+      - generic: Total clicks
+    - generic "0"
+  - button "null":
+    - generic: 
+  - button "Total impressions 26":
+    - generic "Total impressions":
+      - generic: 
+      - generic: Total impressions
+    - generic "26"
+  - button "null":
+    - generic: 
+  - button "Average CTR 0%":
+    - generic "Average CTR":
+      - generic: 
+      - generic: Average CTR
+    - generic "0%"
+  - button "null":
+    - generic: 
+  - button "Average position 11.2":
+    - generic "Average position":
+      - generic: 
+      - generic: Average position
+    - generic "11.2"
+  - button "null":
+    - generic: 
+  - 'button "Selected time granularity: Daily"':
+    - generic: Daily
+  - application "chart":
+    - generic: Chart, containing counts of Total clicks, Total impressions, Average CTR and Average position from 21 September 2026 to 18 October 2026
+  - generic: Generative AI report
+  - generic: chevron_forward
+  - link "Open the Google Search generative AI features performance report.":
+    - /url: ./search-console/performance/search-analytics/ai?resource_id=sc-domain%3Adigitecme.com
+  - tablist:
+    - tab "Queries":
+      - generic: Queries
+    - tab "Pages" [active] [selected]:
+      - generic: Pages
+    - tab "Countries":
+      - generic: Countries
+    - tab "Devices":
+      - generic: Devices
+    - tab "Search appearance":
+      - generic: Search appearance
+    - tab "Days":
+      - generic: Days
+  - generic: 
+  - tabpanel:
+    - button "Filter table rows":
+      - generic: 
+    - table:
+      - rowgroup:
+        - row "Top pages Sort Top pages Sort Clicks Clicks Sort Impressions Impressions Sort CTR CTR Sort Position Position":
+          - columnheader "Top pages Sort Top pages":
+            - generic: Top pages
+            - button "Sort Top pages":
+          - columnheader "Sort Clicks Clicks":
+            - button "Sort Clicks":
+            - generic: Clicks
+          - columnheader "Sort Impressions Impressions":
+            - button "Sort Impressions":
+            - generic: Impressions
+          - columnheader "Sort CTR CTR":
+            - button "Sort CTR":
+            - generic: CTR
+          - columnheader "Sort Position Position":
+            - button "Sort Position":
+            - generic: Position
+      - rowgroup:
+        - row "https://digitecme.com/brands/mercedes-benz-service-dubai 0 13 0% 5.2":
+          - cell "https://digitecme.com/brands/mercedes-benz-service-dubai":
+            - generic: https://digitecme.com/brands/mercedes-benz-service-dubai
+          - cell "0":
+            - generic: "0"
+          - cell "13":
+            - generic: "13"
+          - cell "0%":
+            - generic: 0%
+          - cell "5.2":
+            - generic: "5.2"
+        - row "https://digitecme.com/services/mercedes-oil-change-dubai/ 0 13 0% 15.8":
+          - cell "https://digitecme.com/services/mercedes-oil-change-dubai/":
+            - generic: https://digitecme.com/services/mercedes-oil-change-dubai/
+          - cell "0":
+            - generic: "0"
+          - cell "13":
+            - generic: "13"
+          - cell "0%":
+            - generic: 0%
+          - cell "15.8":
+            - generic: "15.8"
+        - row "https://digitecme.com/services/oil-change-dubai 0 7 0% 53.1":
+          - cell "https://digitecme.com/services/oil-change-dubai":
+            - generic: https://digitecme.com/services/oil-change-dubai
+          - cell "0":
+            - generic: "0"
+          - cell "7":
+            - generic: "7"
+          - cell "0%":
+            - generic: 0%
+          - cell "53.1":
+            - generic: "53.1"
+        - row "https://digitecme.com/blog/best-oil-change-dubai-mercedes 0 2 0% 48.5":
+          - cell "https://digitecme.com/blog/best-oil-change-dubai-mercedes":
+            - generic: https://digitecme.com/blog/best-oil-change-dubai-mercedes
+          - cell "0":
+            - generic: "0"
+          - cell "2":
+            - generic: "2"
+          - cell "0%":
+            - generic: 0%
+          - cell "48.5":
+            - generic: "48.5"
+    - generic: "Rows per page:"
+    - listbox "Number of rows per page":
+      - option "5"
+      - option "10" [selected]
+      - option "25"
+      - option "50"
+      - option "100"
+      - option "250"
+      - option "500"
+    - generic: 1-4 of 4
+    - button "Previous page" [disabled]:
+    - tooltip: Previous page
+    - button "Next page" [disabled]:
+    - tooltip: Next page
+- generic: Performance on Search results

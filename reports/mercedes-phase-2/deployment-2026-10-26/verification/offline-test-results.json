@@ -1,0 +1,1003 @@
+{
+  "at": "2026-10-26T07:08:14.471Z",
+  "syntheticOnly": true,
+  "noNetworkRequests": true,
+  "noProductionDeploymentOrPostDeploymentResult": true,
+  "passed": 10,
+  "results": [
+    {
+      "stage": "R1",
+      "scenario": "valid",
+      "expectedExitCode": 0,
+      "observedExitCode": 0,
+      "passed": 342,
+      "directory": "reports\\mercedes-phase-2\\deployment-2026-10-26\\verification\\evidence\\SYNTHETIC-checkpoint-R1-2026-10-26T07-08-12-992Z",
+      "cases": 106,
+      "networkRequests": 0,
+      "fixtureResponses": 173,
+      "assertions": 342,
+      "failed": 0,
+      "sourceCases": 54,
+      "protectedOilCases": 8,
+      "failures": []
+    },
+    {
+      "stage": "R2",
+      "scenario": "valid",
+      "expectedExitCode": 0,
+      "observedExitCode": 0,
+      "passed": 341,
+      "directory": "reports\\mercedes-phase-2\\deployment-2026-10-26\\verification\\evidence\\SYNTHETIC-checkpoint-R2-2026-10-26T07-08-13-176Z",
+      "cases": 106,
+      "networkRequests": 0,
+      "fixtureResponses": 174,
+      "assertions": 341,
+      "failed": 0,
+      "sourceCases": 54,
+      "protectedOilCases": 8,
+      "failures": []
+    },
+    {
+      "stage": "R3",
+      "scenario": "valid",
+      "expectedExitCode": 0,
+      "observedExitCode": 0,
+      "passed": 340,
+      "directory": "reports\\mercedes-phase-2\\deployment-2026-10-26\\verification\\evidence\\SYNTHETIC-checkpoint-R3-2026-10-26T07-08-13-349Z",
+      "cases": 106,
+      "networkRequests": 0,
+      "fixtureResponses": 175,
+      "assertions": 340,
+      "failed": 0,
+      "sourceCases": 54,
+      "protectedOilCases": 8,
+      "failures": []
+    },
+    {
+      "stage": "R4",
+      "scenario": "valid",
+      "expectedExitCode": 0,
+      "observedExitCode": 0,
+      "passed": 339,
+      "directory": "reports\\mercedes-phase-2\\deployment-2026-10-26\\verification\\evidence\\SYNTHETIC-checkpoint-R4-2026-10-26T07-08-13-517Z",
+      "cases": 106,
+      "networkRequests": 0,
+      "fixtureResponses": 176,
+      "assertions": 339,
+      "failed": 0,
+      "sourceCases": 54,
+      "protectedOilCases": 8,
+      "failures": []
+    },
+    {
+      "stage": "R1",
+      "scenario": "drop-query",
+      "expectedExitCode": 1,
+      "observedExitCode": 1,
+      "passed": 310,
+      "directory": "reports\\mercedes-phase-2\\deployment-2026-10-26\\verification\\evidence\\SYNTHETIC-checkpoint-R1-2026-10-26T07-08-13-673Z",
+      "cases": 106,
+      "networkRequests": 0,
+      "fixtureResponses": 173,
+      "assertions": 342,
+      "failed": 32,
+      "sourceCases": 54,
+      "protectedOilCases": 8,
+      "failures": [
+        {
+          "name": "source-ar-oil-change-1: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-oil-change-dubai?utm_source=mercedes_phase_2&gclid=phase2-example"
+        },
+        {
+          "name": "source-ar-oil-change-2: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-oil-change-dubai?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank="
+        },
+        {
+          "name": "source-ar-oil-change-4: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-oil-change-dubai?utm_source=mercedes_phase_2&gclid=phase2-example"
+        },
+        {
+          "name": "source-ar-oil-change-5: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-oil-change-dubai?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank="
+        },
+        {
+          "name": "source-ar-oil-change-7: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-oil-change-dubai?utm_source=mercedes_phase_2&gclid=phase2-example"
+        },
+        {
+          "name": "source-ar-oil-change-8: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-oil-change-dubai?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank="
+        },
+        {
+          "name": "source-ar-oil-change-10: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-oil-change-dubai?utm_source=mercedes_phase_2&gclid=phase2-example"
+        },
+        {
+          "name": "source-ar-oil-change-11: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-oil-change-dubai?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank="
+        },
+        {
+          "name": "source-ar-oil-change-13: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-oil-change-dubai?utm_source=mercedes_phase_2&gclid=phase2-example"
+        },
+        {
+          "name": "source-ar-oil-change-14: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-oil-change-dubai?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank="
+        },
+        {
+          "name": "source-ar-oil-change-16: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-oil-change-dubai?utm_source=mercedes_phase_2&gclid=phase2-example"
+        },
+        {
+          "name": "source-ar-oil-change-17: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-oil-change-dubai?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank="
+        },
+        {
+          "name": "source-ar-oil-change-19: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-oil-change-dubai?utm_source=mercedes_phase_2&gclid=phase2-example"
+        },
+        {
+          "name": "source-ar-oil-change-20: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-oil-change-dubai?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank="
+        },
+        {
+          "name": "source-ar-oil-change-22: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-oil-change-dubai?utm_source=mercedes_phase_2&gclid=phase2-example"
+        },
+        {
+          "name": "source-ar-oil-change-23: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-oil-change-dubai?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank="
+        },
+        {
+          "name": "source-ar-oil-change-25: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-oil-change-dubai?utm_source=mercedes_phase_2&gclid=phase2-example"
+        },
+        {
+          "name": "source-ar-oil-change-26: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-oil-change-dubai?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank="
+        },
+        {
+          "name": "source-ar-oil-change-28: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-oil-change-dubai?utm_source=mercedes_phase_2&gclid=phase2-example"
+        },
+        {
+          "name": "source-ar-oil-change-29: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-oil-change-dubai?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank="
+        },
+        {
+          "name": "source-ar-oil-change-31: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-oil-change-dubai?utm_source=mercedes_phase_2&gclid=phase2-example"
+        },
+        {
+          "name": "source-ar-oil-change-32: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-oil-change-dubai?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank="
+        },
+        {
+          "name": "source-ar-oil-change-34: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-oil-change-dubai?utm_source=mercedes_phase_2&gclid=phase2-example"
+        },
+        {
+          "name": "source-ar-oil-change-35: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-oil-change-dubai?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank="
+        },
+        {
+          "name": "source-ar-oil-change-37: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-oil-change-dubai?utm_source=mercedes_phase_2&gclid=phase2-example"
+        },
+        {
+          "name": "source-ar-oil-change-38: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-oil-change-dubai?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank="
+        },
+        {
+          "name": "source-ar-oil-change-40: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-oil-change-dubai?utm_source=mercedes_phase_2&gclid=phase2-example"
+        },
+        {
+          "name": "source-ar-oil-change-41: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-oil-change-dubai?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank="
+        },
+        {
+          "name": "source-ar-oil-change-43: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-oil-change-dubai?utm_source=mercedes_phase_2&gclid=phase2-example"
+        },
+        {
+          "name": "source-ar-oil-change-44: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-oil-change-dubai?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank="
+        },
+        {
+          "name": "source-ar-oil-change-46: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-oil-change-dubai?utm_source=mercedes_phase_2&gclid=phase2-example"
+        },
+        {
+          "name": "source-ar-oil-change-47: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-oil-change-dubai?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank="
+        }
+      ]
+    },
+    {
+      "stage": "R1",
+      "scenario": "loop",
+      "expectedExitCode": 1,
+      "observedExitCode": 1,
+      "passed": 222,
+      "directory": "reports\\mercedes-phase-2\\deployment-2026-10-26\\verification\\evidence\\SYNTHETIC-checkpoint-R1-2026-10-26T07-08-13-835Z",
+      "cases": 106,
+      "networkRequests": 0,
+      "fixtureResponses": 125,
+      "assertions": 342,
+      "failed": 120,
+      "sourceCases": 54,
+      "protectedOilCases": 8,
+      "failures": [
+        {
+          "name": "source-ar-oil-change-0: complete safe chain",
+          "pass": false,
+          "details": ""
+        },
+        {
+          "name": "source-ar-oil-change-0: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-oil-change-dubai"
+        },
+        {
+          "name": "source-ar-oil-change-0: target canonical indexable",
+          "pass": false,
+          "details": ""
+        },
+        {
+          "name": "source-ar-oil-change-1: complete safe chain",
+          "pass": false,
+          "details": ""
+        },
+        {
+          "name": "source-ar-oil-change-1: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-oil-change-dubai?utm_source=mercedes_phase_2&gclid=phase2-example"
+        },
+        {
+          "name": "source-ar-oil-change-1: target canonical indexable",
+          "pass": false,
+          "details": ""
+        },
+        {
+          "name": "source-ar-oil-change-2: complete safe chain",
+          "pass": false,
+          "details": ""
+        },
+        {
+          "name": "source-ar-oil-change-2: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-oil-change-dubai?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank="
+        },
+        {
+          "name": "source-ar-oil-change-2: target canonical indexable",
+          "pass": false,
+          "details": ""
+        },
+        {
+          "name": "source-ar-oil-change-3: complete safe chain",
+          "pass": false,
+          "details": ""
+        },
+        {
+          "name": "source-ar-oil-change-3: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-oil-change-dubai"
+        },
+        {
+          "name": "source-ar-oil-change-4: complete safe chain",
+          "pass": false,
+          "details": ""
+        },
+        {
+          "name": "source-ar-oil-change-4: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-oil-change-dubai?utm_source=mercedes_phase_2&gclid=phase2-example"
+        },
+        {
+          "name": "source-ar-oil-change-5: complete safe chain",
+          "pass": false,
+          "details": ""
+        },
+        {
+          "name": "source-ar-oil-change-5: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-oil-change-dubai?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank="
+        },
+        {
+          "name": "source-ar-oil-change-6: complete safe chain",
+          "pass": false,
+          "details": ""
+        },
+        {
+          "name": "source-ar-oil-change-6: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-oil-change-dubai"
+        },
+        {
+          "name": "source-ar-oil-change-6: target canonical indexable",
+          "pass": false,
+          "details": ""
+        },
+        {
+          "name": "source-ar-oil-change-7: complete safe chain",
+          "pass": false,
+          "details": ""
+        },
+        {
+          "name": "source-ar-oil-change-7: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-oil-change-dubai?utm_source=mercedes_phase_2&gclid=phase2-example"
+        },
+        {
+          "name": "source-ar-oil-change-7: target canonical indexable",
+          "pass": false,
+          "details": ""
+        },
+        {
+          "name": "source-ar-oil-change-8: complete safe chain",
+          "pass": false,
+          "details": ""
+        },
+        {
+          "name": "source-ar-oil-change-8: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-oil-change-dubai?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank="
+        },
+        {
+          "name": "source-ar-oil-change-8: target canonical indexable",
+          "pass": false,
+          "details": ""
+        },
+        {
+          "name": "source-ar-oil-change-9: complete safe chain",
+          "pass": false,
+          "details": ""
+        },
+        {
+          "name": "source-ar-oil-change-9: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-oil-change-dubai"
+        },
+        {
+          "name": "source-ar-oil-change-10: complete safe chain",
+          "pass": false,
+          "details": ""
+        },
+        {
+          "name": "source-ar-oil-change-10: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-oil-change-dubai?utm_source=mercedes_phase_2&gclid=phase2-example"
+        },
+        {
+          "name": "source-ar-oil-change-11: complete safe chain",
+          "pass": false,
+          "details": ""
+        },
+        {
+          "name": "source-ar-oil-change-11: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-oil-change-dubai?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank="
+        },
+        {
+          "name": "source-ar-oil-change-12: complete safe chain",
+          "pass": false,
+          "details": ""
+        },
+        {
+          "name": "source-ar-oil-change-12: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-oil-change-dubai"
+        },
+        {
+          "name": "source-ar-oil-change-12: target canonical indexable",
+          "pass": false,
+          "details": ""
+        },
+        {
+          "name": "source-ar-oil-change-13: complete safe chain",
+          "pass": false,
+          "details": ""
+        },
+        {
+          "name": "source-ar-oil-change-13: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-oil-change-dubai?utm_source=mercedes_phase_2&gclid=phase2-example"
+        },
+        {
+          "name": "source-ar-oil-change-13: target canonical indexable",
+          "pass": false,
+          "details": ""
+        },
+        {
+          "name": "source-ar-oil-change-14: complete safe chain",
+          "pass": false,
+          "details": ""
+        },
+        {
+          "name": "source-ar-oil-change-14: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-oil-change-dubai?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank="
+        },
+        {
+          "name": "source-ar-oil-change-14: target canonical indexable",
+          "pass": false,
+          "details": ""
+        },
+        {
+          "name": "source-ar-oil-change-15: complete safe chain",
+          "pass": false,
+          "details": ""
+        },
+        {
+          "name": "source-ar-oil-change-15: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-oil-change-dubai"
+        },
+        {
+          "name": "source-ar-oil-change-16: complete safe chain",
+          "pass": false,
+          "details": ""
+        },
+        {
+          "name": "source-ar-oil-change-16: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-oil-change-dubai?utm_source=mercedes_phase_2&gclid=phase2-example"
+        },
+        {
+          "name": "source-ar-oil-change-17: complete safe chain",
+          "pass": false,
+          "details": ""
+        },
+        {
+          "name": "source-ar-oil-change-17: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-oil-change-dubai?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank="
+        },
+        {
+          "name": "source-ar-oil-change-18: complete safe chain",
+          "pass": false,
+          "details": ""
+        },
+        {
+          "name": "source-ar-oil-change-18: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-oil-change-dubai"
+        },
+        {
+          "name": "source-ar-oil-change-18: target canonical indexable",
+          "pass": false,
+          "details": ""
+        },
+        {
+          "name": "source-ar-oil-change-19: complete safe chain",
+          "pass": false,
+          "details": ""
+        },
+        {
+          "name": "source-ar-oil-change-19: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-oil-change-dubai?utm_source=mercedes_phase_2&gclid=phase2-example"
+        },
+        {
+          "name": "source-ar-oil-change-19: target canonical indexable",
+          "pass": false,
+          "details": ""
+        },
+        {
+          "name": "source-ar-oil-change-20: complete safe chain",
+          "pass": false,
+          "details": ""
+        },
+        {
+          "name": "source-ar-oil-change-20: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-oil-change-dubai?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank="
+        },
+        {
+          "name": "source-ar-oil-change-20: target canonical indexable",
+          "pass": false,
+          "details": ""
+        },
+        {
+          "name": "source-ar-oil-change-21: complete safe chain",
+          "pass": false,
+          "details": ""
+        },
+        {
+          "name": "source-ar-oil-change-21: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-oil-change-dubai"
+        },
+        {
+          "name": "source-ar-oil-change-22: complete safe chain",
+          "pass": false,
+          "details": ""
+        },
+        {
+          "name": "source-ar-oil-change-22: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-oil-change-dubai?utm_source=mercedes_phase_2&gclid=phase2-example"
+        },
+        {
+          "name": "source-ar-oil-change-23: complete safe chain",
+          "pass": false,
+          "details": ""
+        },
+        {
+          "name": "source-ar-oil-change-23: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-oil-change-dubai?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank="
+        },
+        {
+          "name": "source-ar-oil-change-24: complete safe chain",
+          "pass": false,
+          "details": ""
+        },
+        {
+          "name": "source-ar-oil-change-24: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-oil-change-dubai"
+        },
+        {
+          "name": "source-ar-oil-change-24: target canonical indexable",
+          "pass": false,
+          "details": ""
+        },
+        {
+          "name": "source-ar-oil-change-25: complete safe chain",
+          "pass": false,
+          "details": ""
+        },
+        {
+          "name": "source-ar-oil-change-25: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-oil-change-dubai?utm_source=mercedes_phase_2&gclid=phase2-example"
+        },
+        {
+          "name": "source-ar-oil-change-25: target canonical indexable",
+          "pass": false,
+          "details": ""
+        },
+        {
+          "name": "source-ar-oil-change-26: complete safe chain",
+          "pass": false,
+          "details": ""
+        },
+        {
+          "name": "source-ar-oil-change-26: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-oil-change-dubai?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank="
+        },
+        {
+          "name": "source-ar-oil-change-26: target canonical indexable",
+          "pass": false,
+          "details": ""
+        },
+        {
+          "name": "source-ar-oil-change-27: complete safe chain",
+          "pass": false,
+          "details": ""
+        },
+        {
+          "name": "source-ar-oil-change-27: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-oil-change-dubai"
+        },
+        {
+          "name": "source-ar-oil-change-28: complete safe chain",
+          "pass": false,
+          "details": ""
+        },
+        {
+          "name": "source-ar-oil-change-28: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-oil-change-dubai?utm_source=mercedes_phase_2&gclid=phase2-example"
+        },
+        {
+          "name": "source-ar-oil-change-29: complete safe chain",
+          "pass": false,
+          "details": ""
+        },
+        {
+          "name": "source-ar-oil-change-29: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-oil-change-dubai?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank="
+        },
+        {
+          "name": "source-ar-oil-change-30: complete safe chain",
+          "pass": false,
+          "details": ""
+        },
+        {
+          "name": "source-ar-oil-change-30: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-oil-change-dubai"
+        },
+        {
+          "name": "source-ar-oil-change-30: target canonical indexable",
+          "pass": false,
+          "details": ""
+        },
+        {
+          "name": "source-ar-oil-change-31: complete safe chain",
+          "pass": false,
+          "details": ""
+        },
+        {
+          "name": "source-ar-oil-change-31: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-oil-change-dubai?utm_source=mercedes_phase_2&gclid=phase2-example"
+        },
+        {
+          "name": "source-ar-oil-change-31: target canonical indexable",
+          "pass": false,
+          "details": ""
+        },
+        {
+          "name": "source-ar-oil-change-32: complete safe chain",
+          "pass": false,
+          "details": ""
+        },
+        {
+          "name": "source-ar-oil-change-32: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-oil-change-dubai?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank="
+        },
+        {
+          "name": "source-ar-oil-change-32: target canonical indexable",
+          "pass": false,
+          "details": ""
+        },
+        {
+          "name": "source-ar-oil-change-33: complete safe chain",
+          "pass": false,
+          "details": ""
+        },
+        {
+          "name": "source-ar-oil-change-33: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-oil-change-dubai"
+        },
+        {
+          "name": "source-ar-oil-change-34: complete safe chain",
+          "pass": false,
+          "details": ""
+        },
+        {
+          "name": "source-ar-oil-change-34: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-oil-change-dubai?utm_source=mercedes_phase_2&gclid=phase2-example"
+        },
+        {
+          "name": "source-ar-oil-change-35: complete safe chain",
+          "pass": false,
+          "details": ""
+        },
+        {
+          "name": "source-ar-oil-change-35: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-oil-change-dubai?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank="
+        },
+        {
+          "name": "source-ar-oil-change-36: complete safe chain",
+          "pass": false,
+          "details": ""
+        },
+        {
+          "name": "source-ar-oil-change-36: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-oil-change-dubai"
+        },
+        {
+          "name": "source-ar-oil-change-36: target canonical indexable",
+          "pass": false,
+          "details": ""
+        },
+        {
+          "name": "source-ar-oil-change-37: complete safe chain",
+          "pass": false,
+          "details": ""
+        },
+        {
+          "name": "source-ar-oil-change-37: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-oil-change-dubai?utm_source=mercedes_phase_2&gclid=phase2-example"
+        },
+        {
+          "name": "source-ar-oil-change-37: target canonical indexable",
+          "pass": false,
+          "details": ""
+        },
+        {
+          "name": "source-ar-oil-change-38: complete safe chain",
+          "pass": false,
+          "details": ""
+        },
+        {
+          "name": "source-ar-oil-change-38: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-oil-change-dubai?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank="
+        },
+        {
+          "name": "source-ar-oil-change-38: target canonical indexable",
+          "pass": false,
+          "details": ""
+        },
+        {
+          "name": "source-ar-oil-change-39: complete safe chain",
+          "pass": false,
+          "details": ""
+        },
+        {
+          "name": "source-ar-oil-change-39: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-oil-change-dubai"
+        },
+        {
+          "name": "source-ar-oil-change-40: complete safe chain",
+          "pass": false,
+          "details": ""
+        },
+        {
+          "name": "source-ar-oil-change-40: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-oil-change-dubai?utm_source=mercedes_phase_2&gclid=phase2-example"
+        },
+        {
+          "name": "source-ar-oil-change-41: complete safe chain",
+          "pass": false,
+          "details": ""
+        },
+        {
+          "name": "source-ar-oil-change-41: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-oil-change-dubai?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank="
+        },
+        {
+          "name": "source-ar-oil-change-42: complete safe chain",
+          "pass": false,
+          "details": ""
+        },
+        {
+          "name": "source-ar-oil-change-42: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-oil-change-dubai"
+        },
+        {
+          "name": "source-ar-oil-change-42: target canonical indexable",
+          "pass": false,
+          "details": ""
+        },
+        {
+          "name": "source-ar-oil-change-43: complete safe chain",
+          "pass": false,
+          "details": ""
+        },
+        {
+          "name": "source-ar-oil-change-43: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-oil-change-dubai?utm_source=mercedes_phase_2&gclid=phase2-example"
+        },
+        {
+          "name": "source-ar-oil-change-43: target canonical indexable",
+          "pass": false,
+          "details": ""
+        },
+        {
+          "name": "source-ar-oil-change-44: complete safe chain",
+          "pass": false,
+          "details": ""
+        },
+        {
+          "name": "source-ar-oil-change-44: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-oil-change-dubai?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank="
+        },
+        {
+          "name": "source-ar-oil-change-44: target canonical indexable",
+          "pass": false,
+          "details": ""
+        },
+        {
+          "name": "source-ar-oil-change-45: complete safe chain",
+          "pass": false,
+          "details": ""
+        },
+        {
+          "name": "source-ar-oil-change-45: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-oil-change-dubai"
+        },
+        {
+          "name": "source-ar-oil-change-46: complete safe chain",
+          "pass": false,
+          "details": ""
+        },
+        {
+          "name": "source-ar-oil-change-46: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-oil-change-dubai?utm_source=mercedes_phase_2&gclid=phase2-example"
+        },
+        {
+          "name": "source-ar-oil-change-47: complete safe chain",
+          "pass": false,
+          "details": ""
+        },
+        {
+          "name": "source-ar-oil-change-47: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-oil-change-dubai?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank="
+        }
+      ]
+    },
+    {
+      "stage": "R1",
+      "scenario": "unexpected-pending-active",
+      "expectedExitCode": 1,
+      "observedExitCode": 1,
+      "passed": 339,
+      "directory": "reports\\mercedes-phase-2\\deployment-2026-10-26\\verification\\evidence\\SYNTHETIC-checkpoint-R1-2026-10-26T07-08-13-978Z",
+      "cases": 106,
+      "networkRequests": 0,
+      "fixtureResponses": 174,
+      "assertions": 342,
+      "failed": 3,
+      "sourceCases": 54,
+      "protectedOilCases": 8,
+      "failures": [
+        {
+          "name": "source-en-body-repair-48: pending rule source unchanged from preflight",
+          "pass": false,
+          "details": ""
+        },
+        {
+          "name": "source-en-body-repair-48: legacy source still ends at homepage 200",
+          "pass": false,
+          "details": ""
+        },
+        {
+          "name": "source-en-body-repair-49: pending rule source unchanged from preflight",
+          "pass": false,
+          "details": ""
+        }
+      ]
+    },
+    {
+      "stage": "R1",
+      "scenario": "protected-oil-changed",
+      "expectedExitCode": 1,
+      "observedExitCode": 1,
+      "passed": 330,
+      "directory": "reports\\mercedes-phase-2\\deployment-2026-10-26\\verification\\evidence\\SYNTHETIC-checkpoint-R1-2026-10-26T07-08-14-142Z",
+      "cases": 106,
+      "networkRequests": 0,
+      "fixtureResponses": 173,
+      "assertions": 342,
+      "failed": 12,
+      "sourceCases": 54,
+      "protectedOilCases": 8,
+      "failures": [
+        {
+          "name": "english-oil-54: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/services/mercedes-oil-change-dubai?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank="
+        },
+        {
+          "name": "english-oil-54: target canonical indexable",
+          "pass": false,
+          "details": ""
+        },
+        {
+          "name": "english-oil-55: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/services/mercedes-oil-change-dubai?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank="
+        },
+        {
+          "name": "english-oil-56: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/services/mercedes-oil-change-dubai?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank="
+        },
+        {
+          "name": "english-oil-56: target canonical indexable",
+          "pass": false,
+          "details": ""
+        },
+        {
+          "name": "english-oil-57: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/services/mercedes-oil-change-dubai?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank="
+        },
+        {
+          "name": "english-oil-58: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/services/mercedes-oil-change-dubai?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank="
+        },
+        {
+          "name": "english-oil-58: target canonical indexable",
+          "pass": false,
+          "details": ""
+        },
+        {
+          "name": "english-oil-59: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/services/mercedes-oil-change-dubai?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank="
+        },
+        {
+          "name": "english-oil-60: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/services/mercedes-oil-change-dubai?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank="
+        },
+        {
+          "name": "english-oil-60: target canonical indexable",
+          "pass": false,
+          "details": ""
+        },
+        {
+          "name": "english-oil-61: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/services/mercedes-oil-change-dubai?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank="
+        }
+      ]
+    },
+    {
+      "stage": "R1",
+      "scenario": "target-content-changed",
+      "expectedExitCode": 1,
+      "observedExitCode": 1,
+      "passed": 341,
+      "directory": "reports\\mercedes-phase-2\\deployment-2026-10-26\\verification\\evidence\\SYNTHETIC-checkpoint-R1-2026-10-26T07-08-14-300Z",
+      "cases": 106,
+      "networkRequests": 0,
+      "fixtureResponses": 173,
+      "assertions": 342,
+      "failed": 1,
+      "sourceCases": 54,
+      "protectedOilCases": 8,
+      "failures": [
+        {
+          "name": "destination-ar-oil-change-noslash-GET: destination protected content unchanged",
+          "pass": false,
+          "details": ""
+        }
+      ]
+    },
+    {
+      "scenario": "mismatched-proposal-baseline",
+      "passed": true,
+      "observedExitCode": 1
+    }
+  ]
+}

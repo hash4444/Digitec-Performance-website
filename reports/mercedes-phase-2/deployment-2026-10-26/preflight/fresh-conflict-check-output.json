@@ -1,0 +1,75 @@
+{
+  "checksPassed": 781,
+  "overlaps": 4,
+  "plannedOrder": [
+    "5addb0c068414fb5b985a869ded26c68",
+    "dbe42693423442afbc3bab9b993242a7",
+    "proposed:ar-oil-change",
+    "proposed:en-body-repair",
+    "proposed:ar-battery-replacement",
+    "proposed:ar-mechanical-repair",
+    "9781b1ef743f4ffbaadbe5cb3250eeca"
+  ],
+  "otherchecks": {
+    "urlRewriteRules": {
+      "status": "ui_verified_none",
+      "observedText": "No URL Rewrite Rules created"
+    },
+    "configurationRules": {
+      "status": "ui_verified_none",
+      "observedText": "No Configuration Rules created"
+    },
+    "originRules": {
+      "status": "ui_verified_none",
+      "observedText": "No Origin Rules created"
+    },
+    "bulkRedirectLists": {
+      "status": "ui_verified_none",
+      "used": 0,
+      "limit": 5
+    },
+    "pageRules": {
+      "status": "ui_verified_none",
+      "used": 0,
+      "limit": 3
+    },
+    "workerRoutes": {
+      "status": "ui_verified_none",
+      "observedText": "You do not have any routes configured. Add a route to get started."
+    },
+    "dns": {
+      "status": "ui_verified_two_relevant_proxied_records",
+      "records": [
+        {
+          "name": "digitecme.com",
+          "type": "CNAME",
+          "content": "dubai-performance-art.lovable.app",
+          "proxied": true,
+          "ttl": "Auto"
+        },
+        {
+          "name": "www.digitecme.com",
+          "type": "CNAME",
+          "content": "dubai-performance-art.lovable.app",
+          "proxied": true,
+          "ttl": "Auto"
+        }
+      ]
+    },
+    "tls": {
+      "status": "ui_verified",
+      "alwaysUseHttps": true,
+      "automaticHttpsRewrites": true,
+      "lastAlwaysHttpsChangeDisplayed": "6 months ago",
+      "note": "Read only; no TLS setting changed."
+    },
+    "urlNormalization": {
+      "status": "ui_verified",
+      "type": "Cloudflare",
+      "incoming": true,
+      "toOrigin": false,
+      "note": "Existing policy left unchanged; expressions evaluated on Cloudflare-normalized URI path."
+    }
+  },
+  "afterReview": null
+}

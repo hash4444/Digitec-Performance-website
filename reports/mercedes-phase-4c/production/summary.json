@@ -1,0 +1,732 @@
+{
+  "checkedAt": "2026-10-26T11:01:53.321Z",
+  "readOnly": true,
+  "publicCapture": {
+    "directory": "http/2026-10-26T10-57-04-947Z",
+    "observationWindow": {
+      "start": "2026-10-26T10:57:04.950Z",
+      "end": "2026-10-26T10:57:19.041Z"
+    },
+    "pageAndFileCases": 46,
+    "totalRequests": 60,
+    "transportErrors": 0,
+    "referencedAssetUrls": 5,
+    "componentAssetUrls": 2,
+    "assetGetHeadResponses": 14
+  },
+  "redirects": {
+    "directory": "redirects-http/post-2026-10-26T10-57-25-913Z",
+    "summary": {
+      "cases": 326,
+      "networkRequests": 612,
+      "assertions": 852,
+      "passed": 852,
+      "failed": 0,
+      "sourceCases": 192,
+      "protectedOilCases": 48
+    },
+    "groups": [
+      {
+        "group": "source",
+        "cases": 192,
+        "assertionCount": 480,
+        "failedAssertions": 0,
+        "methods": [
+          "GET",
+          "HEAD"
+        ],
+        "rules": [
+          "ar-oil-change",
+          "en-body-repair",
+          "ar-battery-replacement",
+          "ar-mechanical-repair"
+        ]
+      },
+      {
+        "group": "protected-oil",
+        "cases": 48,
+        "assertionCount": 120,
+        "failedAssertions": 0,
+        "methods": [
+          "GET",
+          "HEAD"
+        ],
+        "rules": []
+      },
+      {
+        "group": "protected-repair",
+        "cases": 48,
+        "assertionCount": 96,
+        "failedAssertions": 0,
+        "methods": [
+          "GET",
+          "HEAD"
+        ],
+        "rules": []
+      },
+      {
+        "group": "destination",
+        "cases": 16,
+        "assertionCount": 64,
+        "failedAssertions": 0,
+        "methods": [
+          "GET",
+          "HEAD"
+        ],
+        "rules": [
+          "ar-oil-change",
+          "en-body-repair",
+          "ar-battery-replacement",
+          "ar-mechanical-repair"
+        ]
+      },
+      {
+        "group": "control",
+        "cases": 22,
+        "assertionCount": 88,
+        "failedAssertions": 0,
+        "methods": [
+          "GET",
+          "HEAD"
+        ],
+        "rules": []
+      }
+    ],
+    "cfEdges": [
+      "AMS",
+      "CDG",
+      "FRA",
+      "HKG",
+      "LHR"
+    ],
+    "configurationAudit": false,
+    "note": "All seven rules protected by observed behavior; GET/HEAD tests do not prove authenticated definitions, IDs, enabled state or ordering."
+  },
+  "unknownOrigin": {
+    "directory": "unknown-origin/2026-10-26T10-59-47-506Z",
+    "summary": {
+      "caseCount": 48,
+      "requestCount": 84,
+      "passed": 48,
+      "failed": 0,
+      "cfEdges": [
+        "HKG",
+        "CDG",
+        "FRA",
+        "LHR",
+        "AMS"
+      ]
+    }
+  },
+  "publicManifest": {
+    "sha256": "ed88f099b805ad2e0cdb0753fdf41f668402ca515984f358dee9ee22b61930f4",
+    "entryCount": 145,
+    "indexEntry": {
+      "file": "assets/index-cGjtMRI1.js",
+      "name": "index",
+      "src": "index.html",
+      "isEntry": true,
+      "dynamicImports": [
+        "src/pages/Index.tsx",
+        "src/pages/OilChangePage.tsx",
+        "src/pages/SuspensionRepairPage.tsx",
+        "src/pages/TransmissionPage.tsx",
+        "src/pages/Tuning.tsx",
+        "src/pages/TuningModelPage.tsx",
+        "src/pages/VRX.tsx",
+        "src/pages/Services.tsx",
+        "src/pages/PaintCorrectionPage.tsx",
+        "src/pages/PaintProtectionPage.tsx",
+        "src/pages/ServicePage.tsx",
+        "src/pages/CeramicCoatingPage.tsx",
+        "src/pages/PpfPage.tsx",
+        "src/pages/LocalGaragePage.tsx",
+        "src/pages/AboutUs.tsx",
+        "src/pages/FAQPage.tsx",
+        "src/pages/Blog.tsx",
+        "src/pages/BlogArticleRouter.tsx",
+        "src/pages/MercedesModelPage.tsx",
+        "src/pages/MercedesProblemsIndex.tsx",
+        "src/pages/MercedesProblemGuidePage.tsx",
+        "src/pages/MercedesCaseStudyPage.tsx",
+        "_PorscheModelPage-CBHu_HBh.js",
+        "src/pages/AudiModelPage.tsx",
+        "src/pages/BmwModelPage.tsx",
+        "src/pages/FerrariModelPage.tsx",
+        "src/pages/FerrariCaseStudyPage.tsx",
+        "src/pages/PorscheSystemsIndex.tsx",
+        "src/pages/PorscheSystemGuidePage.tsx",
+        "src/pages/PorscheProblemsIndex.tsx",
+        "src/pages/PorscheProblemGuidePage.tsx",
+        "src/pages/PorscheOwnershipGuidePage.tsx",
+        "src/pages/PorscheCaseStudyPage.tsx",
+        "src/pages/Brands.tsx",
+        "_BrandPage-CAb6TprA.js",
+        "src/pages/BrandServicePage.tsx",
+        "src/pages/BestWorkshopPage.tsx",
+        "src/pages/SitemapPage.tsx"
+      ],
+      "css": [
+        "assets/index-CwEpzSrs.css"
+      ]
+    },
+    "components": [
+      {
+        "key": "_BrandPage-CAb6TprA.js",
+        "file": "assets/BrandPage-CAb6TprA.js",
+        "name": "BrandPage",
+        "isDynamicEntry": true,
+        "imports": [
+          "index.html",
+          "_Footer-ChYhXuD6.js",
+          "_brands-CPcwFiEt.js",
+          "_services-_x6A1l6v.js",
+          "_accordion-CHlfglTB.js",
+          "_message-circle-DcCOk6CH.js",
+          "_GoogleReviews-Cm8zATVH.js",
+          "_astonMartinHubContent-ClfwtSvV.js",
+          "_TrustBar-DpBLKwDS.js",
+          "_ar-brands-C-3Hm3cj.js",
+          "_ar-services-Ds5monMt.js",
+          "_porsche-workshop-dubai-BsN5HQ-W.js",
+          "_g63-brabus-g800-finished-front-eHldKgiA.js",
+          "_lamborghini-urus-workshop-dubai-CLM9G8gj.js",
+          "_mercedesModelPages-BQjgjAr0.js",
+          "_mercedesProblemGuides-BXhPlqt4.js",
+          "_bmwModelPages-C7HilrMo.js",
+          "_phone-jclWiEn0.js",
+          "_map-pin-CFWgU8ZS.js",
+          "_arrow-right-gqyEx84r.js",
+          "_circle-check-TEq6sEZs.js"
+        ],
+        "dynamicImports": [
+          "src/components/PorscheKnowledgeCentre.tsx",
+          "src/components/BmwKnowledgeHub.tsx",
+          "src/components/BmwHubSections.tsx",
+          "src/components/BmwHubSections.tsx",
+          "src/components/BmwHubSections.tsx",
+          "src/components/BmwHubSections.tsx",
+          "src/components/FerrariKnowledgeCentre.tsx",
+          "src/components/MclarenHubSections.tsx",
+          "src/components/LamborghiniHubSections.tsx",
+          "src/components/RollsRoyceHubSections.tsx",
+          "src/components/AudiHubSections.tsx",
+          "src/components/BentleyHubSections.tsx",
+          "src/components/RoxHubSections.tsx",
+          "src/components/AstonMartinHubSections.tsx"
+        ]
+      },
+      {
+        "key": "src/pages/BrandServicePage.tsx",
+        "file": "assets/BrandServicePage-SEA62kT0.js",
+        "name": "BrandServicePage",
+        "src": "src/pages/BrandServicePage.tsx",
+        "isDynamicEntry": true,
+        "imports": [
+          "index.html",
+          "_Footer-ChYhXuD6.js",
+          "_camera-AdpOen2l.js",
+          "_arrow-right-gqyEx84r.js",
+          "_message-circle-DcCOk6CH.js",
+          "_phone-jclWiEn0.js",
+          "_FinalCTA-ChI2-lEc.js",
+          "_ecuElectronicsContent-COrH7yBf.js",
+          "_astonMartinHubContent-ClfwtSvV.js",
+          "_accordion-CHlfglTB.js",
+          "_brands-CPcwFiEt.js",
+          "_TrustBar-DpBLKwDS.js",
+          "_mercedesProblemGuides-BXhPlqt4.js",
+          "_mercedes-amg-engine-repair-dubai-DVcJbu9t.js",
+          "_suspension-repair-dubai-ChRPM65Z.js",
+          "_circle-check-TEq6sEZs.js",
+          "_wrench-d254nA-T.js",
+          "_Reveal-BgiHp2Bo.js",
+          "_index-BgXrTKmO.js",
+          "_mercedesModelPages-BQjgjAr0.js"
+        ]
+      }
+    ],
+    "knownFetchedAppAssets": [
+      {
+        "url": "https://digitecme.com/assets/index-cGjtMRI1.js",
+        "status": 200,
+        "sha256": "74d90be4786bbb53d7113330fd3204056e89d0b9bb22e8268ce1ebb958c45eba",
+        "listedInManifest": true
+      },
+      {
+        "url": "https://digitecme.com/assets/index-CwEpzSrs.css",
+        "status": 200,
+        "sha256": "09ee2493152376676450504de77dd74b1334f5fafe7dd21b25eb8baaa2e40317",
+        "listedInManifest": true
+      },
+      {
+        "url": "https://digitecme.com/assets/BrandPage-CAb6TprA.js",
+        "status": 200,
+        "sha256": "9b2ced60cb9d100aeac18b104a1b50443e7d8a4294f2b67e0a6f45d4c9188957",
+        "listedInManifest": true
+      },
+      {
+        "url": "https://digitecme.com/assets/BrandServicePage-SEA62kT0.js",
+        "status": 200,
+        "sha256": "c992073334809719dce809af3cfad4a11fbdcdfcf03033a57f8064058ab8569d",
+        "listedInManifest": true
+      }
+    ]
+  },
+  "local": [
+    {
+      "name": "production-matched-baseline",
+      "manifestSha256": "eb2c17bc541cb99c6b4e6e93aba745cccf3e1050f9de1c313c8837ede1a23db7",
+      "sameManifestAsPublic": false,
+      "fetchedPublicAssetComparisons": [
+        {
+          "filename": "assets/index-cGjtMRI1.js",
+          "exists": false,
+          "error": "ENOENT",
+          "publicManifestContains": true
+        },
+        {
+          "filename": "assets/index-CwEpzSrs.css",
+          "exists": false,
+          "error": "ENOENT",
+          "publicManifestContains": true
+        },
+        {
+          "filename": "assets/BrandPage-CAb6TprA.js",
+          "exists": false,
+          "error": "ENOENT",
+          "publicManifestContains": true
+        },
+        {
+          "filename": "assets/BrandServicePage-SEA62kT0.js",
+          "exists": false,
+          "error": "ENOENT",
+          "publicManifestContains": true
+        }
+      ],
+      "commercialControlPages": [
+        {
+          "key": "hub-en",
+          "path": "/brands/mercedes-benz-service-dubai",
+          "sameMainText": true,
+          "sameMainLinks": true,
+          "differentMetadataFields": [],
+          "firstMainTextDifference": null
+        },
+        {
+          "key": "body-en",
+          "path": "/services/mercedes-body-repair-dubai",
+          "sameMainText": true,
+          "sameMainLinks": true,
+          "differentMetadataFields": [],
+          "firstMainTextDifference": null
+        },
+        {
+          "key": "diagnostics-en",
+          "path": "/services/mercedes-diagnostics-dubai",
+          "sameMainText": true,
+          "sameMainLinks": true,
+          "differentMetadataFields": [],
+          "firstMainTextDifference": null
+        },
+        {
+          "key": "mechanical-en",
+          "path": "/services/mercedes-mechanical-repair-dubai",
+          "sameMainText": true,
+          "sameMainLinks": true,
+          "differentMetadataFields": [],
+          "firstMainTextDifference": null
+        },
+        {
+          "key": "hub-ar",
+          "path": "/ar/brands/mercedes-benz-service-dubai",
+          "sameMainText": true,
+          "sameMainLinks": true,
+          "differentMetadataFields": [],
+          "firstMainTextDifference": null
+        },
+        {
+          "key": "body-ar",
+          "path": "/ar/services/mercedes-body-repair-dubai",
+          "sameMainText": true,
+          "sameMainLinks": true,
+          "differentMetadataFields": [],
+          "firstMainTextDifference": null
+        },
+        {
+          "key": "diagnostics-ar",
+          "path": "/ar/services/mercedes-diagnostics-dubai",
+          "sameMainText": true,
+          "sameMainLinks": true,
+          "differentMetadataFields": [],
+          "firstMainTextDifference": null
+        },
+        {
+          "key": "mechanical-ar",
+          "path": "/ar/services/mercedes-mechanical-repair-dubai",
+          "sameMainText": true,
+          "sameMainLinks": true,
+          "differentMetadataFields": [],
+          "firstMainTextDifference": null
+        },
+        {
+          "key": "home",
+          "path": "/",
+          "sameMainText": true,
+          "sameMainLinks": true,
+          "differentMetadataFields": [],
+          "firstMainTextDifference": null
+        },
+        {
+          "key": "services",
+          "path": "/services",
+          "sameMainText": false,
+          "sameMainLinks": false,
+          "differentMetadataFields": [],
+          "firstMainTextDifference": {
+            "character": 6043,
+            "public": "hop Warehouses 11–15, Al Quoz Industrial Area 3 Dubai, UAE +971 4 340 2223 [email protected] Instagram Facebook © 2026 D IGI-TEC Performance Center. All rights reserved. FAQ Sitemap Privacy Policy",
+            "local": "hop Warehouses 11–15, Al Quoz Industrial Area 3 Dubai, UAE +971 4 340 2223 info@digitecme.com Instagram Facebook © 2026 D IGI-TEC Performance Center. All rights reserved. FAQ Sitemap Privacy Policy"
+          }
+        },
+        {
+          "key": "bmw-en",
+          "path": "/brands/bmw-service-dubai",
+          "sameMainText": true,
+          "sameMainLinks": true,
+          "differentMetadataFields": [],
+          "firstMainTextDifference": null
+        },
+        {
+          "key": "bmw-ar",
+          "path": "/ar/brands/bmw-service-dubai",
+          "sameMainText": true,
+          "sameMainLinks": true,
+          "differentMetadataFields": [],
+          "firstMainTextDifference": null
+        }
+      ],
+      "sitemap": {
+        "urlCount": 1005,
+        "sameUrlSet": true,
+        "sameUrlOrder": true,
+        "dateDifferencesFromPublic": []
+      },
+      "downloadableWorkerSameBytes": true
+    },
+    {
+      "name": "production-matched-candidate",
+      "manifestSha256": "ee7d1f30093b0e84dd1a54f7d009dc39ee6644b683eda16251064a2a21f42655",
+      "sameManifestAsPublic": false,
+      "fetchedPublicAssetComparisons": [
+        {
+          "filename": "assets/index-cGjtMRI1.js",
+          "exists": false,
+          "error": "ENOENT",
+          "publicManifestContains": true
+        },
+        {
+          "filename": "assets/index-CwEpzSrs.css",
+          "exists": false,
+          "error": "ENOENT",
+          "publicManifestContains": true
+        },
+        {
+          "filename": "assets/BrandPage-CAb6TprA.js",
+          "exists": false,
+          "error": "ENOENT",
+          "publicManifestContains": true
+        },
+        {
+          "filename": "assets/BrandServicePage-SEA62kT0.js",
+          "exists": false,
+          "error": "ENOENT",
+          "publicManifestContains": true
+        }
+      ],
+      "commercialControlPages": [
+        {
+          "key": "hub-en",
+          "path": "/brands/mercedes-benz-service-dubai",
+          "sameMainText": false,
+          "sameMainLinks": false,
+          "differentMetadataFields": [],
+          "firstMainTextDifference": {
+            "character": 5637,
+            "public": "inspection A real Mercedes-AMG engine in the Digi-Tec workshop. Diagnostics, fluid specifications and repair planning are matched to the fitted powertrain—not just the badge. Recent Mercedes case study Mercedes-AMG G63 to G 800-style conversion See the ac",
+            "local": "inspection A real Mercedes-AMG engine in the Digi-Tec workshop. Diagnostics , fluid specifications and repair planning are matched to the fitted powertrain—not just the badge. Recent Mercedes case study Mercedes-AMG G63 to G 800-style conversion See the a"
+          }
+        },
+        {
+          "key": "body-en",
+          "path": "/services/mercedes-body-repair-dubai",
+          "sameMainText": false,
+          "sameMainLinks": false,
+          "differentMetadataFields": [],
+          "firstMainTextDifference": {
+            "character": 5081,
+            "public": "the workshop Mercedes-Benz Body Repair & Paintwork: discuss the next step Share the model, year, mileage and the concern you want checked. The workshop can confirm the appropriate assessment, scope and appointment availability. Request a Mercedes Body Rep",
+            "local": "the workshop Mercedes-Benz Body Repair & Paintwork: discuss the next step Send your model and year, which panels are damaged, any known previous repair and any sensor warning. Attach clear photos for the initial discussion; the final scope and price follo"
+          }
+        },
+        {
+          "key": "diagnostics-en",
+          "path": "/services/mercedes-diagnostics-dubai",
+          "sameMainText": true,
+          "sameMainLinks": true,
+          "differentMetadataFields": [],
+          "firstMainTextDifference": null
+        },
+        {
+          "key": "mechanical-en",
+          "path": "/services/mercedes-mechanical-repair-dubai",
+          "sameMainText": true,
+          "sameMainLinks": true,
+          "differentMetadataFields": [],
+          "firstMainTextDifference": null
+        },
+        {
+          "key": "hub-ar",
+          "path": "/ar/brands/mercedes-benz-service-dubai",
+          "sameMainText": true,
+          "sameMainLinks": true,
+          "differentMetadataFields": [],
+          "firstMainTextDifference": null
+        },
+        {
+          "key": "body-ar",
+          "path": "/ar/services/mercedes-body-repair-dubai",
+          "sameMainText": true,
+          "sameMainLinks": true,
+          "differentMetadataFields": [],
+          "firstMainTextDifference": null
+        },
+        {
+          "key": "diagnostics-ar",
+          "path": "/ar/services/mercedes-diagnostics-dubai",
+          "sameMainText": true,
+          "sameMainLinks": true,
+          "differentMetadataFields": [],
+          "firstMainTextDifference": null
+        },
+        {
+          "key": "mechanical-ar",
+          "path": "/ar/services/mercedes-mechanical-repair-dubai",
+          "sameMainText": true,
+          "sameMainLinks": true,
+          "differentMetadataFields": [],
+          "firstMainTextDifference": null
+        },
+        {
+          "key": "home",
+          "path": "/",
+          "sameMainText": true,
+          "sameMainLinks": true,
+          "differentMetadataFields": [],
+          "firstMainTextDifference": null
+        },
+        {
+          "key": "services",
+          "path": "/services",
+          "sameMainText": false,
+          "sameMainLinks": false,
+          "differentMetadataFields": [],
+          "firstMainTextDifference": {
+            "character": 6043,
+            "public": "hop Warehouses 11–15, Al Quoz Industrial Area 3 Dubai, UAE +971 4 340 2223 [email protected] Instagram Facebook © 2026 D IGI-TEC Performance Center. All rights reserved. FAQ Sitemap Privacy Policy",
+            "local": "hop Warehouses 11–15, Al Quoz Industrial Area 3 Dubai, UAE +971 4 340 2223 info@digitecme.com Instagram Facebook © 2026 D IGI-TEC Performance Center. All rights reserved. FAQ Sitemap Privacy Policy"
+          }
+        },
+        {
+          "key": "bmw-en",
+          "path": "/brands/bmw-service-dubai",
+          "sameMainText": true,
+          "sameMainLinks": true,
+          "differentMetadataFields": [],
+          "firstMainTextDifference": null
+        },
+        {
+          "key": "bmw-ar",
+          "path": "/ar/brands/bmw-service-dubai",
+          "sameMainText": true,
+          "sameMainLinks": true,
+          "differentMetadataFields": [],
+          "firstMainTextDifference": null
+        }
+      ],
+      "sitemap": {
+        "urlCount": 1005,
+        "sameUrlSet": true,
+        "sameUrlOrder": true,
+        "dateDifferencesFromPublic": []
+      },
+      "downloadableWorkerSameBytes": true
+    },
+    {
+      "name": "production-matched-release-b",
+      "manifestSha256": "ee7d1f30093b0e84dd1a54f7d009dc39ee6644b683eda16251064a2a21f42655",
+      "sameManifestAsPublic": false,
+      "fetchedPublicAssetComparisons": [
+        {
+          "filename": "assets/index-cGjtMRI1.js",
+          "exists": false,
+          "error": "ENOENT",
+          "publicManifestContains": true
+        },
+        {
+          "filename": "assets/index-CwEpzSrs.css",
+          "exists": false,
+          "error": "ENOENT",
+          "publicManifestContains": true
+        },
+        {
+          "filename": "assets/BrandPage-CAb6TprA.js",
+          "exists": false,
+          "error": "ENOENT",
+          "publicManifestContains": true
+        },
+        {
+          "filename": "assets/BrandServicePage-SEA62kT0.js",
+          "exists": false,
+          "error": "ENOENT",
+          "publicManifestContains": true
+        }
+      ],
+      "commercialControlPages": [
+        {
+          "key": "hub-en",
+          "path": "/brands/mercedes-benz-service-dubai",
+          "sameMainText": false,
+          "sameMainLinks": false,
+          "differentMetadataFields": [],
+          "firstMainTextDifference": {
+            "character": 5637,
+            "public": "inspection A real Mercedes-AMG engine in the Digi-Tec workshop. Diagnostics, fluid specifications and repair planning are matched to the fitted powertrain—not just the badge. Recent Mercedes case study Mercedes-AMG G63 to G 800-style conversion See the ac",
+            "local": "inspection A real Mercedes-AMG engine in the Digi-Tec workshop. Diagnostics , fluid specifications and repair planning are matched to the fitted powertrain—not just the badge. Recent Mercedes case study Mercedes-AMG G63 to G 800-style conversion See the a"
+          }
+        },
+        {
+          "key": "body-en",
+          "path": "/services/mercedes-body-repair-dubai",
+          "sameMainText": false,
+          "sameMainLinks": false,
+          "differentMetadataFields": [],
+          "firstMainTextDifference": {
+            "character": 5081,
+            "public": "the workshop Mercedes-Benz Body Repair & Paintwork: discuss the next step Share the model, year, mileage and the concern you want checked. The workshop can confirm the appropriate assessment, scope and appointment availability. Request a Mercedes Body Rep",
+            "local": "the workshop Mercedes-Benz Body Repair & Paintwork: discuss the next step Send your model and year, which panels are damaged, any known previous repair and any sensor warning. Attach clear photos for the initial discussion; the final scope and price follo"
+          }
+        },
+        {
+          "key": "diagnostics-en",
+          "path": "/services/mercedes-diagnostics-dubai",
+          "sameMainText": true,
+          "sameMainLinks": true,
+          "differentMetadataFields": [],
+          "firstMainTextDifference": null
+        },
+        {
+          "key": "mechanical-en",
+          "path": "/services/mercedes-mechanical-repair-dubai",
+          "sameMainText": true,
+          "sameMainLinks": true,
+          "differentMetadataFields": [],
+          "firstMainTextDifference": null
+        },
+        {
+          "key": "hub-ar",
+          "path": "/ar/brands/mercedes-benz-service-dubai",
+          "sameMainText": true,
+          "sameMainLinks": true,
+          "differentMetadataFields": [],
+          "firstMainTextDifference": null
+        },
+        {
+          "key": "body-ar",
+          "path": "/ar/services/mercedes-body-repair-dubai",
+          "sameMainText": true,
+          "sameMainLinks": true,
+          "differentMetadataFields": [],
+          "firstMainTextDifference": null
+        },
+        {
+          "key": "diagnostics-ar",
+          "path": "/ar/services/mercedes-diagnostics-dubai",
+          "sameMainText": true,
+          "sameMainLinks": true,
+          "differentMetadataFields": [],
+          "firstMainTextDifference": null
+        },
+        {
+          "key": "mechanical-ar",
+          "path": "/ar/services/mercedes-mechanical-repair-dubai",
+          "sameMainText": true,
+          "sameMainLinks": true,
+          "differentMetadataFields": [],
+          "firstMainTextDifference": null
+        },
+        {
+          "key": "home",
+          "path": "/",
+          "sameMainText": true,
+          "sameMainLinks": true,
+          "differentMetadataFields": [],
+          "firstMainTextDifference": null
+        },
+        {
+          "key": "services",
+          "path": "/services",
+          "sameMainText": false,
+          "sameMainLinks": false,
+          "differentMetadataFields": [],
+          "firstMainTextDifference": {
+            "character": 6043,
+            "public": "hop Warehouses 11–15, Al Quoz Industrial Area 3 Dubai, UAE +971 4 340 2223 [email protected] Instagram Facebook © 2026 D IGI-TEC Performance Center. All rights reserved. FAQ Sitemap Privacy Policy",
+            "local": "hop Warehouses 11–15, Al Quoz Industrial Area 3 Dubai, UAE +971 4 340 2223 info@digitecme.com Instagram Facebook © 2026 D IGI-TEC Performance Center. All rights reserved. FAQ Sitemap Privacy Policy"
+          }
+        },
+        {
+          "key": "bmw-en",
+          "path": "/brands/bmw-service-dubai",
+          "sameMainText": true,
+          "sameMainLinks": true,
+          "differentMetadataFields": [],
+          "firstMainTextDifference": null
+        },
+        {
+          "key": "bmw-ar",
+          "path": "/ar/brands/bmw-service-dubai",
+          "sameMainText": true,
+          "sameMainLinks": true,
+          "differentMetadataFields": [],
+          "firstMainTextDifference": null
+        }
+      ],
+      "sitemap": {
+        "urlCount": 1005,
+        "sameUrlSet": true,
+        "sameUrlOrder": true,
+        "dateDifferencesFromPublic": [
+          {
+            "url": "https://digitecme.com/brands/mercedes-benz-service-dubai",
+            "publicDate": "2026-10-20",
+            "localDate": "2026-10-26"
+          },
+          {
+            "url": "https://digitecme.com/services/mercedes-body-repair-dubai",
+            "publicDate": "2026-09-28",
+            "localDate": "2026-10-26"
+          }
+        ]
+      },
+      "downloadableWorkerSameBytes": true
+    }
+  ],
+  "limits": [
+    "HTML comparison uses saved server-rendered source; no browser JavaScript is executed. Platform/CDN injected scripts can change whole-HTML bytes independently of source content.",
+    "The public asset manifest and fetched assets identify current observed public files, not a complete production source or dependency lock fingerprint. Asset hash differences have no established cause.",
+    "Build directories may be regenerated by the parent task. This snapshot records file hashes and available successful build provenance at analysis time; rerun after the pinned dependency rebuild for the final assessment.",
+    "Source templates are shared across routes. Partial HTML/chunk replacement cannot be assumed coherent for SPA navigation, hydration, unrelated route output, or embedded 404 references.",
+    "Public GET/HEAD checks do not refresh authenticated Cloudflare configuration inventory or identify which rule ID served a request."
+  ]
+}

@@ -1,0 +1,114 @@
+DIGI-TEC — ECU, MODULE CODING AND ELECTRONICS OWNERSHIP AUDIT
+19 October 2026, Asia/Dubai
+
+Basis and limitations
+The immutable content baseline is the completed diagnostics/AC candidate at
+outputs/diagnostics-ac-2026-10-19/candidate.local/dist, which includes main
+acef342 and the six completed local diagnostics/AC files. It is not assumed to
+be published. No app source, configuration, backend or live profile was edited
+for this audit. Existing website wording is not independent workshop proof.
+
+Selected scope: eight existing owners, fourteen locale pages, zero new routes.
+Every selected page has one H1, substantial initial rendered HTML, index/follow,
+one self canonical, sitemap inclusion, valid JSON-LD and an existing Service
+entity referencing https://digitecme.com/#business. No selected route is subject
+to the low-value secondary-brand service noindex rule. In particular, both BMW
+electrical routes are already indexable. No indexing policy change is needed.
+
+Selected owners and intent
+1. /services/car-diagnostics-dubai (EN/AR): general diagnostics and supported ECU
+   programming/coding enquiries. Preserve the recent warning-light assessment
+   title and diagnostic explanations; add clear compatibility-qualified context.
+2. /services/mercedes-diagnostics-dubai (EN/AR): Mercedes diagnostic, ECU coding,
+   module programming and replacement configuration enquiries, subject to exact
+   function/access acceptance. No separate Mercedes coding route is justified.
+3. /brands/bmw-service-dubai/engine-diagnostics (EN/AR): BMW diagnostics and
+   compatibility-qualified coding/programming enquiries. Preserve the recently
+   completed diagnostic content; coding is not universal module coverage.
+4. /services/auto-electrical-repair-dubai (EN/AR): electrical fault tracing and
+   ECU/module communication concerns; hardware ECU repair is not established.
+5. /services/mercedes-electrical-repair-dubai (EN/AR): Mercedes electrical and
+   communication assessment. SAM-associated symptoms do not substantiate SAM
+   hardware repair. No new SAM route or unsupported repair headline is justified.
+6. /brands/bmw-service-dubai/electrical-repair (EN/AR): BMW electrical and iDrive
+   fault assessment. Diagnostic coding requests use the existing diagnostic owner.
+7. /services/cadillac-cue-screen-repair-dubai (EN only): CUE screen/digitizer
+   diagnosis and supported repair/replacement. Distinct infotainment intent.
+8. /services/head-unit-repair-dubai (EN only): head-unit and supported COMAND/MBUX
+   fault assessment. Distinct infotainment intent, not generic ECU board repair.
+
+The six bilingual owners have reciprocal en-AE/ar-AE/x-default annotations.
+The two electronics owners are intentionally English-only. Their English pages
+have en-AE and x-default but no ar-AE. No equivalent Arabic content is registered
+or prerendered. Do not invent an Arabic counterpart or link to an absent route.
+The existing electronics FAQ policy omits FAQPage schema even though customer
+questions are visible. Preserve that policy; crawlable answers do not require
+new or AI-specific schema.
+
+Supporting owners retained
+/services/mercedes-transmission-repair-dubai is the gearbox repair owner; a TCM
+programming request goes to Mercedes diagnostics for scope confirmation.
+/services/mercedes-audio-upgrade-dubai is a separate English-only upgrade owner.
+/tuning and /ar/tuning own performance remapping and retain their existing
+functionality. OEM module coding, updates and hardware repair are different
+requests and must not be redirected to a performance tuning promise.
+
+Unsupported or verification-dependent intent
+ECU repair, ECU cloning, SAM board repair, control-module hardware repair,
+immobilizer/security functions and high-voltage/hybrid module work have no
+independently verified specialist owner in this audit. Do not create a page or
+claim capability from general diagnostics or infotainment repair. A fault report
+can be assessed within the existing electrical/diagnostic enquiry, with scope
+confirmed before acceptance. The capability evidence register governs wording.
+
+Technical and internal-link baseline
+The broad scan inspected 1,256 prerendered route files and extracted 135 relevant
+diagnostic/electrical/electronics/tuning routes: 115 indexable and 20 noindex.
+All indexable records appear in the sitemap. FAQ answers in emitted FAQ schema
+are present in the initial HTML. Secondary-brand electrical noindex pages are
+retained for users and must not be promoted by this sprint.
+
+English inbound source-route counts (sitewide navigation included): general
+diagnostics 685, Mercedes diagnostics 29, BMW diagnostics 23, general electrical
+32, Mercedes electrical 31, BMW electrical 16, CUE 6, head unit 11. These are
+structural link counts, not measured organic landing-page attribution or leads.
+Both brand hubs already link to their relevant diagnostic/electrical owners;
+there is no need for a duplicate coding or ECU repair hub.
+
+Twenty-eight EN/AR programming/diagnostic/electrical aliases were invoked against
+the generated local static router with a stub origin. All resolve in one hop to
+the established owner and preserve the query string. The edge-only production
+router handles four Mercedes aliases directly; generic aliases pass to the
+origin. This is a local architecture observation, not proof that the generated
+static worker is executing in production. No routing files were changed.
+
+Conversion baseline and justified change
+Every selected owner already provides telephone and WhatsApp links to
++971 4 340 2223. No inline form is present in initial selected HTML; the existing
+site booking modal is separate. Add a service-specific enquiry draft/panel that
+asks for make, model, year, symptoms, warning messages, optional diagnostic
+report, recent control-module replacement and preferred appointment time. Avoid
+passwords, security credentials and immobilizer secrets. Explicitly explain
+that opening a draft does not confirm receipt or an appointment. Click events
+remain contact intent, never confirmed received enquiries. Mobile interaction,
+RTL/touch targets and booking regression require candidate browser QA.
+
+Public production snapshot
+21 read-only public GETs captured the 19 selected/supporting locale pages,
+sitemap.xml and robots.txt; all returned HTTP 200. The earlier sandbox DNS
+failure was retried with the same read-only requests successfully. Raw responses,
+non-cookie headers and hashes are retained in live-html/ and
+public-owner-http-audit.json. Selected local and live canonical ownership agrees,
+but five locale-page metadata snapshots differ: generic diagnostics EN/AR,
+Mercedes diagnostics EN and BMW diagnostics EN/AR. Those differences are expected
+from completed, unpublished local work and must not be overwritten from live.
+The production state/rollback gate from the prior release remains separate.
+
+Evidence
+selected-owner-baseline.json: the exact eight-owner/fourteen-locale baseline.
+selected-baseline-html/: byte-hashed baseline HTML, plus supporting snapshots.
+baseline-owner-audit.json / existing-page-ownership-map.csv: full 135-route audit,
+including heading lists, schema IDs, contact links and source-route inbound links.
+existing-owner-decisions.csv/.json: intent ownership and editorial decisions.
+synonym-redirect-map.json: 28 local alias responses and edge-only comparison.
+public-owner-rendered-audit.json: public HTML findings vs immutable local baseline.

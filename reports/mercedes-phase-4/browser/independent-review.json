@@ -1,0 +1,926 @@
+{
+  "reviewedAtUtc": "2026-10-26T09:13:29.495Z",
+  "status": "PASS_SAVED_BROWSER_EVIDENCE_REVIEW",
+  "method": "Independent offline validation of saved observations/AX/HTTP plus visual inspection of four PNGs. Browser interactions were performed by parent, not replayed here.",
+  "browserContext": "Desktop browser engine;1272px desktop viewport and real320/390px-wide CSS iframes844px high. Not native mobile hardware, touch emulation or OS dialer/WhatsApp testing.",
+  "checks": {
+    "allRecordedViewportsWithoutHorizontalOverflow": true,
+    "desktopAndBothNarrowCssWidthsPresent": true,
+    "threeBodyPlacementsExactApprovedDraft": true,
+    "desktopAndNarrowWorkshopPhoneInterceptsCorrect": true,
+    "narrowBodyHeroInterceptMatchesApprovedDraft": true,
+    "recordedKeyboardFocusStatesVisible": true,
+    "faqDesktopExpandedAndCollapsed": true,
+    "faqNarrowExpandedWithAnswer": true,
+    "menuExpandedThenCollapsedAndFocusRestored": true,
+    "localDestinationGetHead200": true,
+    "collectedConsoleLogEmpty": true,
+    "builtHtmlInputsRemainUnchanged": true,
+    "fourRequestedScreenshotsReviewed": true
+  },
+  "observationCount": 30,
+  "captureWindow": {
+    "first": "2026-10-26T09:03:56.173Z",
+    "last": "2026-10-26T09:09:45.460Z"
+  },
+  "observationsSha256": "f6ed429ebe38b72e0f687aa5ab3f123b703184f534b3fd192bebe3af29f3909a",
+  "sourceEvidence": [
+    {
+      "path": "observations.json",
+      "sha256": "f6ed429ebe38b72e0f687aa5ab3f123b703184f534b3fd192bebe3af29f3909a"
+    },
+    {
+      "path": "local-http.json",
+      "sha256": "88ddc91331bd90224e51dbe16a5661497be85c7a441add7b9f1f464c27c10354"
+    },
+    {
+      "path": "console-log.json",
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "../preview-qa.mjs",
+      "sha256": "2ae38b5124c116f7bd9d61d4ad3209b399c9c391ce1992b8dad42851b08f1e94"
+    },
+    {
+      "path": "../tests/results/results.json",
+      "sha256": "7a0b25f1fcdc03cda23d9f384eb0f80cdb9c8bdabda16f681687031d8d8872c1"
+    },
+    {
+      "path": "body-desktop-faq-keyboard-expanded-ax.txt",
+      "sha256": "a25b569cd54c6f01f94e2ee2f1f053591a2c4c06154ef549e643c90671433989"
+    },
+    {
+      "path": "body-desktop-faq-keyboard-collapsed-ax.txt",
+      "sha256": "4527ec70801e0edc57996f1f79f057b8a79b803ad998d6fc03a9f09b1423755e"
+    },
+    {
+      "path": "body-mobile-390-faq-keyboard-expanded-ax.txt",
+      "sha256": "6b195c3b883214ad229e878e4dfd524aa05e08789e01b9b5b3547747355f5065"
+    },
+    {
+      "path": "hub-mobile-menu-keyboard-open-ax.txt",
+      "sha256": "36a8c26a018a14c64ac94a732594dc033ab93688deb3e64c1cebe1991b4df525"
+    },
+    {
+      "path": "hub-mobile-320-menu-keyboard-restored-ax.txt",
+      "sha256": "31d54c56661311fc66a1c2c90463edd5bee1757a40cceed9ee544597a2d22782"
+    }
+  ],
+  "viewportChecks": [
+    {
+      "id": "hub-desktop-diagnostics-focus",
+      "width": 1272,
+      "clientWidth": 1272,
+      "scrollWidth": 1272,
+      "noHorizontalOverflow": true
+    },
+    {
+      "id": "hub-desktop-repair-planning-focus",
+      "width": 1272,
+      "clientWidth": 1272,
+      "scrollWidth": 1272,
+      "noHorizontalOverflow": true
+    },
+    {
+      "id": "hub-desktop-workshop-phone-focus",
+      "width": 1272,
+      "clientWidth": 1272,
+      "scrollWidth": 1272,
+      "noHorizontalOverflow": true
+    },
+    {
+      "id": "hub-desktop-phone-intercept",
+      "width": 1272,
+      "clientWidth": 1272,
+      "scrollWidth": 1272,
+      "noHorizontalOverflow": true
+    },
+    {
+      "id": "hub-mobile-390-hero",
+      "width": 390,
+      "clientWidth": 382,
+      "scrollWidth": 382,
+      "noHorizontalOverflow": true
+    },
+    {
+      "id": "hub-mobile-390-diagnostics-focus",
+      "width": 390,
+      "clientWidth": 382,
+      "scrollWidth": 382,
+      "noHorizontalOverflow": true
+    },
+    {
+      "id": "hub-mobile-390-repair-focus",
+      "width": 390,
+      "clientWidth": 382,
+      "scrollWidth": 382,
+      "noHorizontalOverflow": true
+    },
+    {
+      "id": "hub-mobile-390-caption",
+      "width": 390,
+      "clientWidth": 382,
+      "scrollWidth": 382,
+      "noHorizontalOverflow": true
+    },
+    {
+      "id": "hub-mobile-390-workshop-phone",
+      "width": 390,
+      "clientWidth": 382,
+      "scrollWidth": 382,
+      "noHorizontalOverflow": true
+    },
+    {
+      "id": "hub-mobile-390-phone-intercept",
+      "width": 390,
+      "clientWidth": 382,
+      "scrollWidth": 382,
+      "noHorizontalOverflow": true
+    },
+    {
+      "id": "hub-mobile-390-hero-frame",
+      "width": 390,
+      "clientWidth": 382,
+      "scrollWidth": 382,
+      "noHorizontalOverflow": true
+    },
+    {
+      "id": "hub-mobile-390-caption-frame",
+      "width": 390,
+      "clientWidth": 382,
+      "scrollWidth": 382,
+      "noHorizontalOverflow": true
+    },
+    {
+      "id": "hub-mobile-390-visit-frame",
+      "width": 390,
+      "clientWidth": 382,
+      "scrollWidth": 382,
+      "noHorizontalOverflow": true
+    },
+    {
+      "id": "body-desktop-contact-1",
+      "width": 1272,
+      "clientWidth": 1272,
+      "scrollWidth": 1272,
+      "noHorizontalOverflow": true
+    },
+    {
+      "id": "body-desktop-contact-2",
+      "width": 1272,
+      "clientWidth": 1272,
+      "scrollWidth": 1272,
+      "noHorizontalOverflow": true
+    },
+    {
+      "id": "body-desktop-contact-3",
+      "width": 1272,
+      "clientWidth": 1272,
+      "scrollWidth": 1272,
+      "noHorizontalOverflow": true
+    },
+    {
+      "id": "body-desktop-faq-keyboard-expanded",
+      "width": 1272,
+      "clientWidth": 1272,
+      "scrollWidth": 1272,
+      "noHorizontalOverflow": true
+    },
+    {
+      "id": "body-desktop-final-guidance-focus",
+      "width": 1272,
+      "clientWidth": 1272,
+      "scrollWidth": 1272,
+      "noHorizontalOverflow": true
+    },
+    {
+      "id": "body-desktop-final-phone-focus",
+      "width": 1272,
+      "clientWidth": 1272,
+      "scrollWidth": 1272,
+      "noHorizontalOverflow": true
+    },
+    {
+      "id": "body-mobile-390-hero-frame",
+      "width": 390,
+      "clientWidth": 382,
+      "scrollWidth": 382,
+      "noHorizontalOverflow": true
+    },
+    {
+      "id": "body-mobile-390-whatsapp-intercept",
+      "width": 390,
+      "clientWidth": 390,
+      "scrollWidth": 382,
+      "noHorizontalOverflow": true
+    },
+    {
+      "id": "body-mobile-390-final-guidance",
+      "width": 390,
+      "clientWidth": 382,
+      "scrollWidth": 382,
+      "noHorizontalOverflow": true
+    },
+    {
+      "id": "body-mobile-390-final-phone",
+      "width": 390,
+      "clientWidth": 390,
+      "scrollWidth": 382,
+      "noHorizontalOverflow": true
+    },
+    {
+      "id": "body-mobile-390-faq-keyboard-expanded",
+      "width": 390,
+      "clientWidth": 382,
+      "scrollWidth": 382,
+      "noHorizontalOverflow": true
+    },
+    {
+      "id": "body-mobile-320-hero",
+      "width": 320,
+      "clientWidth": 312,
+      "scrollWidth": 312,
+      "noHorizontalOverflow": true
+    },
+    {
+      "id": "body-mobile-320-final-guidance",
+      "width": 320,
+      "clientWidth": 312,
+      "scrollWidth": 312,
+      "noHorizontalOverflow": true
+    },
+    {
+      "id": "body-mobile-320-final-phone",
+      "width": 320,
+      "clientWidth": 320,
+      "scrollWidth": 312,
+      "noHorizontalOverflow": true
+    },
+    {
+      "id": "hub-mobile-320-caption",
+      "width": 320,
+      "clientWidth": 312,
+      "scrollWidth": 312,
+      "noHorizontalOverflow": true
+    },
+    {
+      "id": "hub-mobile-320-visit",
+      "width": 320,
+      "clientWidth": 312,
+      "scrollWidth": 312,
+      "noHorizontalOverflow": true
+    },
+    {
+      "id": "hub-mobile-320-menu-keyboard-restored",
+      "width": 320,
+      "clientWidth": 320,
+      "scrollWidth": 312,
+      "noHorizontalOverflow": true
+    }
+  ],
+  "bodyContacts": [
+    {
+      "id": "body-desktop-contact-1",
+      "contact": {
+        "href": "https://wa.me/97143402223?text=Hi%20Digi-Tec%2C%20I%20would%20like%20a%20Mercedes%20bodywork%20assessment.%0A%0AModel%2Fyear%3A%20%0AAffected%20panels%3A%20%0APrevious%20paint%20or%20repair%20(if%20known)%3A%20%0ASensor%20warning%20(if%20any)%3A%20%0AI%20can%20attach%20clear%20photos%20of%20the%20damage.",
+        "label": "Request a Mercedes Body Repair Assessment",
+        "placement": "hero"
+      },
+      "expectedPlacement": "hero",
+      "exactRecipient": true,
+      "exactApprovedDraft": true,
+      "exactApprovedHref": true,
+      "correctPlacement": true,
+      "encodedLineBreaks": 6
+    },
+    {
+      "id": "body-desktop-contact-2",
+      "contact": {
+        "href": "https://wa.me/97143402223?text=Hi%20Digi-Tec%2C%20I%20would%20like%20a%20Mercedes%20bodywork%20assessment.%0A%0AModel%2Fyear%3A%20%0AAffected%20panels%3A%20%0APrevious%20paint%20or%20repair%20(if%20known)%3A%20%0ASensor%20warning%20(if%20any)%3A%20%0AI%20can%20attach%20clear%20photos%20of%20the%20damage.",
+        "label": "Request a Mercedes Body Repair Assessment",
+        "placement": "service_scope"
+      },
+      "expectedPlacement": "service_scope",
+      "exactRecipient": true,
+      "exactApprovedDraft": true,
+      "exactApprovedHref": true,
+      "correctPlacement": true,
+      "encodedLineBreaks": 6
+    },
+    {
+      "id": "body-desktop-contact-3",
+      "contact": {
+        "href": "https://wa.me/97143402223?text=Hi%20Digi-Tec%2C%20I%20would%20like%20a%20Mercedes%20bodywork%20assessment.%0A%0AModel%2Fyear%3A%20%0AAffected%20panels%3A%20%0APrevious%20paint%20or%20repair%20(if%20known)%3A%20%0ASensor%20warning%20(if%20any)%3A%20%0AI%20can%20attach%20clear%20photos%20of%20the%20damage.",
+        "label": "Request a Mercedes Body Repair Assessment",
+        "placement": "final_cta"
+      },
+      "expectedPlacement": "final_cta",
+      "exactRecipient": true,
+      "exactApprovedDraft": true,
+      "exactApprovedHref": true,
+      "correctPlacement": true,
+      "encodedLineBreaks": 6
+    }
+  ],
+  "phoneContacts": [
+    {
+      "id": "hub-desktop-phone-intercept",
+      "contact": {
+        "href": "tel:+97143402223",
+        "label": "Call +971 4 340 2223",
+        "placement": "workshop_proof"
+      },
+      "correctHref": true,
+      "correctPlacement": true
+    },
+    {
+      "id": "hub-mobile-390-phone-intercept",
+      "contact": {
+        "href": "tel:+97143402223",
+        "label": "Call +971 4 340 2223",
+        "placement": "workshop_proof"
+      },
+      "correctHref": true,
+      "correctPlacement": true
+    }
+  ],
+  "mobileBodyContact": {
+    "href": "https://wa.me/97143402223?text=Hi%20Digi-Tec%2C%20I%20would%20like%20a%20Mercedes%20bodywork%20assessment.%0A%0AModel%2Fyear%3A%20%0AAffected%20panels%3A%20%0APrevious%20paint%20or%20repair%20(if%20known)%3A%20%0ASensor%20warning%20(if%20any)%3A%20%0AI%20can%20attach%20clear%20photos%20of%20the%20damage.",
+    "label": "Request a Mercedes Body Repair Assessment",
+    "placement": "hero"
+  },
+  "focusStates": [
+    {
+      "id": "hub-desktop-diagnostics-focus",
+      "focus": {
+        "boxShadow": "none",
+        "focusVisible": true,
+        "href": "/services/mercedes-diagnostics-dubai",
+        "outlineColor": "rgb(238, 238, 238)",
+        "outlineStyle": "auto",
+        "outlineWidth": "0.666667px",
+        "rect": {
+          "bottom": 401.3541679382324,
+          "height": 16.666667938232422,
+          "left": 417.21875,
+          "right": 494.5833358764648,
+          "top": 384.6875,
+          "width": 77.36458587646484,
+          "x": 417.21875,
+          "y": 384.6875
+        },
+        "tag": "A",
+        "text": "Diagnostics"
+      },
+      "focusVisible": true
+    },
+    {
+      "id": "hub-desktop-repair-planning-focus",
+      "focus": {
+        "boxShadow": "none",
+        "focusVisible": true,
+        "href": "/services/mercedes-mechanical-repair-dubai",
+        "outlineColor": "rgb(238, 238, 238)",
+        "outlineStyle": "auto",
+        "outlineWidth": "0.666667px",
+        "rect": {
+          "bottom": 424.1041679382324,
+          "height": 16.666667938232422,
+          "left": 169.3541717529297,
+          "right": 268.34375762939453,
+          "top": 407.4375,
+          "width": 98.98958587646484,
+          "x": 169.3541717529297,
+          "y": 407.4375
+        },
+        "tag": "A",
+        "text": "repair planning"
+      },
+      "focusVisible": true
+    },
+    {
+      "id": "hub-desktop-workshop-phone-focus",
+      "focus": {
+        "boxShadow": "none",
+        "focusVisible": true,
+        "href": "tel:+97143402223",
+        "outlineColor": "rgb(238, 238, 238)",
+        "outlineStyle": "auto",
+        "outlineWidth": "0.666667px",
+        "rect": {
+          "bottom": 434.6979179382324,
+          "height": 36.66666793823242,
+          "left": 205.33334350585935,
+          "right": 450.81251525878906,
+          "top": 398.03125,
+          "width": 245.4791717529297,
+          "x": 205.33334350585935,
+          "y": 398.03125
+        },
+        "tag": "A",
+        "text": "Call +971 4 340 2223"
+      },
+      "focusVisible": true
+    },
+    {
+      "id": "body-desktop-final-guidance-focus",
+      "focus": {
+        "boxShadow": "none",
+        "focusVisible": true,
+        "href": "https://wa.me/97143402223?text=Hi%20Digi-Tec%2C%20I%20would%20like%20a%20Mercedes%20bodywork%20assessment.%0A%0AModel%2Fyear%3A%20%0AAffected%20panels%3A%20%0APrevious%20paint%20or%20repair%20(if%20known)%3A%20%0ASensor%20warning%20(if%20any)%3A%20%0AI%20can%20attach%20clear%20photos%20of%20the%20damage.",
+        "outlineColor": "rgb(238, 238, 238)",
+        "outlineStyle": "auto",
+        "outlineWidth": "0.666667px",
+        "rect": {
+          "bottom": 410.4017028808594,
+          "height": 48,
+          "left": 730.7916870117188,
+          "right": 1033.437530517578,
+          "top": 362.4017028808594,
+          "width": 302.6458435058594,
+          "x": 730.7916870117188,
+          "y": 362.4017028808594
+        },
+        "tag": "A",
+        "text": "Request a Mercedes Body Repair Assessment"
+      },
+      "focusVisible": true
+    },
+    {
+      "id": "body-desktop-final-phone-focus",
+      "focus": {
+        "boxShadow": "none",
+        "focusVisible": true,
+        "href": "tel:+97143402223",
+        "outlineColor": "rgb(238, 238, 238)",
+        "outlineStyle": "auto",
+        "outlineWidth": "0.666667px",
+        "rect": {
+          "bottom": 410.125,
+          "height": 48,
+          "left": 1045.4375,
+          "right": 1224,
+          "top": 362.125,
+          "width": 178.5625,
+          "x": 1045.4375,
+          "y": 362.125
+        },
+        "tag": "A",
+        "text": "Call +971 4 340 2223"
+      },
+      "focusVisible": true
+    },
+    {
+      "id": "hub-mobile-390-diagnostics-focus",
+      "focus": {
+        "tag": "A",
+        "text": "Diagnostics",
+        "href": "/services/mercedes-diagnostics-dubai",
+        "focusVisible": true,
+        "outline": "rgb(238, 238, 238) auto 0.666667px",
+        "boxShadow": "none",
+        "rect": {
+          "x": 110.05208587646484,
+          "y": 469.25,
+          "width": 77.36458587646484,
+          "height": 16.666667938232422,
+          "top": 469.25,
+          "right": 187.4166717529297,
+          "bottom": 485.9166679382324,
+          "left": 110.05208587646484
+        }
+      },
+      "focusVisible": true
+    },
+    {
+      "id": "hub-mobile-390-repair-focus",
+      "focus": {
+        "tag": "A",
+        "text": "repair planning",
+        "href": "/services/mercedes-mechanical-repair-dubai",
+        "focusVisible": true,
+        "outline": "rgb(238, 238, 238) auto 0.666667px",
+        "boxShadow": "none",
+        "rect": {
+          "x": 65.3125,
+          "y": 492,
+          "width": 98.98958587646484,
+          "height": 16.666667938232422,
+          "top": 492,
+          "right": 164.30208587646484,
+          "bottom": 508.6666679382324,
+          "left": 65.3125
+        }
+      },
+      "focusVisible": true
+    },
+    {
+      "id": "hub-mobile-390-workshop-phone",
+      "focus": {
+        "tag": "A",
+        "text": "Call +971 4 340 2223",
+        "href": "tel:+97143402223",
+        "focusVisible": true,
+        "outline": "rgb(238, 238, 238) auto 0.666667px",
+        "boxShadow": "none",
+        "rect": {
+          "x": 161.02084350585938,
+          "y": 460.38543701171875,
+          "width": 141.73959350585938,
+          "height": 16.666667938232422,
+          "top": 460.38543701171875,
+          "right": 302.76043701171875,
+          "bottom": 477.0521049499512,
+          "left": 161.02084350585938
+        }
+      },
+      "focusVisible": true
+    },
+    {
+      "id": "body-mobile-390-final-guidance",
+      "focus": {
+        "tag": "A",
+        "text": "Request a Mercedes Body Repair Assessment",
+        "href": "https://wa.me/97143402223?text=Hi%20Digi-Tec%2C%20I%20would%20like%20a%20Mercedes%20bodywork%20assessment.%0A%0AModel%2Fyear%3A%20%0AAffected%20panels%3A%20%0APrevious%20paint%20or%20repair%20(if%20known)%3A%20%0ASensor%20warning%20(if%20any)%3A%20%0AI%20can%20attach%20clear%20photos%20of%20the%20damage.",
+        "focusVisible": true,
+        "outline": "rgb(238, 238, 238) auto 0.666667px",
+        "boxShadow": "none",
+        "rect": {
+          "x": 20,
+          "y": 726.3331909179688,
+          "width": 342,
+          "height": 48,
+          "top": 726.3331909179688,
+          "right": 362,
+          "bottom": 774.3331909179688,
+          "left": 20
+        }
+      },
+      "focusVisible": true
+    },
+    {
+      "id": "body-mobile-390-final-phone",
+      "focus": {
+        "tag": "A",
+        "text": "Call +971 4 340 2223",
+        "href": "tel:+97143402223",
+        "focusVisible": true,
+        "outline": "rgb(238, 238, 238) auto 0.666667px",
+        "boxShadow": "none",
+        "rect": {
+          "x": 20,
+          "y": 763.7708740234375,
+          "width": 342,
+          "height": 48,
+          "top": 763.7708740234375,
+          "right": 362,
+          "bottom": 811.7708740234375,
+          "left": 20
+        }
+      },
+      "focusVisible": true
+    },
+    {
+      "id": "body-mobile-320-final-guidance",
+      "focus": {
+        "tag": "A",
+        "text": "Request a Mercedes Body Repair Assessment",
+        "href": "https://wa.me/97143402223?text=Hi%20Digi-Tec%2C%20I%20would%20like%20a%20Mercedes%20bodywork%20assessment.%0A%0AModel%2Fyear%3A%20%0AAffected%20panels%3A%20%0APrevious%20paint%20or%20repair%20(if%20known)%3A%20%0ASensor%20warning%20(if%20any)%3A%20%0AI%20can%20attach%20clear%20photos%20of%20the%20damage.",
+        "focusVisible": true,
+        "outline": "rgb(238, 238, 238) auto 0.666667px",
+        "boxShadow": "none",
+        "rect": {
+          "x": 20,
+          "y": 769.1181030273438,
+          "width": 272,
+          "height": 48,
+          "top": 769.1181030273438,
+          "right": 292,
+          "bottom": 817.1181030273438,
+          "left": 20
+        }
+      },
+      "focusVisible": true
+    },
+    {
+      "id": "body-mobile-320-final-phone",
+      "focus": {
+        "tag": "A",
+        "text": "Call +971 4 340 2223",
+        "href": "tel:+97143402223",
+        "focusVisible": true,
+        "outline": "rgb(238, 238, 238) auto 0.666667px",
+        "boxShadow": "none",
+        "rect": {
+          "x": 20,
+          "y": 809.7291870117188,
+          "width": 272,
+          "height": 48,
+          "top": 809.7291870117188,
+          "right": 292,
+          "bottom": 857.7291870117188,
+          "left": 20
+        }
+      },
+      "focusVisible": true
+    },
+    {
+      "id": "hub-mobile-320-caption",
+      "focus": {
+        "tag": "A",
+        "text": "Diagnostics",
+        "href": "/services/mercedes-diagnostics-dubai",
+        "focusVisible": true,
+        "outline": "rgb(238, 238, 238) auto 0.666667px",
+        "boxShadow": "none",
+        "rect": {
+          "x": 168.96875,
+          "y": 483.32293701171875,
+          "width": 77.36458587646484,
+          "height": 16.666667938232422,
+          "top": 483.32293701171875,
+          "right": 246.33333587646484,
+          "bottom": 499.9896049499512,
+          "left": 168.96875
+        }
+      },
+      "focusVisible": true
+    },
+    {
+      "id": "hub-mobile-320-visit",
+      "focus": {
+        "tag": "A",
+        "text": "Call +971 4 340 2223",
+        "href": "tel:+97143402223",
+        "focusVisible": true,
+        "outline": "rgb(238, 238, 238) auto 0.666667px",
+        "boxShadow": "none",
+        "rect": {
+          "x": 57.333335876464844,
+          "y": 479.8333435058594,
+          "width": 141.73959350585938,
+          "height": 16.666667938232422,
+          "top": 479.8333435058594,
+          "right": 199.07292938232422,
+          "bottom": 496.5000114440918,
+          "left": 57.333335876464844
+        }
+      },
+      "focusVisible": true
+    },
+    {
+      "id": "hub-mobile-320-menu-keyboard-restored",
+      "focus": {
+        "tag": "BUTTON",
+        "text": "Menu",
+        "href": null,
+        "focusVisible": true,
+        "outline": "rgba(0, 0, 0, 0) solid 2px",
+        "boxShadow": "rgb(255, 255, 255) 0px 0px 0px 0px, rgb(255, 107, 53) 0px 0px 0px 2px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+        "rect": {
+          "x": 79.33333587646484,
+          "y": 24,
+          "width": 92,
+          "height": 44,
+          "top": 24,
+          "right": 171.33333587646484,
+          "bottom": 68,
+          "left": 79.33333587646484
+        }
+      },
+      "focusVisible": true
+    }
+  ],
+  "visualReviews": [
+    {
+      "id": "hub-desktop-diagnostics-focus",
+      "file": "screenshots/hub-desktop-diagnostics-focus.png",
+      "finding": "Workshop caption text and both contextual links are readable. Diagnostics has a visible focus outline; no clipping of changed caption content is visible.",
+      "sha256": "037542ce90d8300848064a4237a7d9ed8ae5ad583880363a5db162352154f5da",
+      "reviewMethod": "Viewed original saved PNG with the image inspection tool; qualitative captured-viewport review."
+    },
+    {
+      "id": "hub-mobile-390-caption-frame",
+      "file": "screenshots/hub-mobile-390-caption-frame.png",
+      "finding": "390px CSS viewport shows the full workshop caption, both new link phrases and visible Diagnostics focus outline. Text wraps within the card; fixed navigation/contact bars do not cover the changed caption in this captured view.",
+      "sha256": "2eaa0072159e82de662a7cea9a2f4a59b8a807736f258ecf58b75e54b19cfea1",
+      "reviewMethod": "Viewed original saved PNG with the image inspection tool; qualitative captured-viewport review."
+    },
+    {
+      "id": "body-desktop-final-guidance-focus",
+      "file": "screenshots/body-desktop-final-guidance-focus.png",
+      "finding": "Final inspection/quotation guidance and focused body-assessment CTA are fully readable. The telephone text wraps to two lines inside its adjacent button without visible horizontal clipping.",
+      "sha256": "fdcdded421c08332ebd0763ec1ae8c50e48d862090bd03137f2979c2036d6d01",
+      "reviewMethod": "Viewed original saved PNG with the image inspection tool; qualitative captured-viewport review."
+    },
+    {
+      "id": "body-mobile-320-final-guidance",
+      "file": "screenshots/body-mobile-320-final-guidance.png",
+      "finding": "320px CSS viewport shows readable wrapped heading and complete new guidance. The focused body-assessment CTA is visible. The following phone control extends below this screenshot edge; ordinary vertical scrolling, not horizontal overflow, is required to view its remainder. No phone visibility defect is inferred from an earlier focusin rectangle.",
+      "sha256": "1128745687808dfa4b65f8212854aabe7f9d98b87436f2239bbcb143e4ca3734",
+      "reviewMethod": "Viewed original saved PNG with the image inspection tool; qualitative captured-viewport review."
+    }
+  ],
+  "builtHtmlHashChecks": [
+    {
+      "route": "/brands/mercedes-benz-service-dubai",
+      "side": "baseline",
+      "sha256": "1d51615a54c4293da55e0b58bc6ca7ee80f170ef46074a4525f37c76a95f5a1e",
+      "matchesPriorSsrEvidence": true
+    },
+    {
+      "route": "/brands/mercedes-benz-service-dubai",
+      "side": "candidate",
+      "sha256": "cef5f984a4d3e83859544fb866b9bf48207ef42e1c0dcb9528c07dce77667f6d",
+      "matchesPriorSsrEvidence": true
+    },
+    {
+      "route": "/services/mercedes-body-repair-dubai",
+      "side": "baseline",
+      "sha256": "1014d1115c2b3e5c6113ee90d27bf913c7724b43b02c2d9e442e9d5b3ced34ce",
+      "matchesPriorSsrEvidence": true
+    },
+    {
+      "route": "/services/mercedes-body-repair-dubai",
+      "side": "candidate",
+      "sha256": "aabb37887b0bda8a6bdfa5cc75d8391b76e93d19e8693c1de8d8615284bc4b6a",
+      "matchesPriorSsrEvidence": true
+    },
+    {
+      "route": "/ar/brands/mercedes-benz-service-dubai",
+      "side": "baseline",
+      "sha256": "9bc405b8d4e756b1cdd17f674c82ec1ba6cc21e0ae67bb068cc76c60b966d971",
+      "matchesPriorSsrEvidence": true
+    },
+    {
+      "route": "/ar/brands/mercedes-benz-service-dubai",
+      "side": "candidate",
+      "sha256": "fd466bdb35616262993593708043c92ce711c1c7a876bc0ac2404951f28bf120",
+      "matchesPriorSsrEvidence": true
+    },
+    {
+      "route": "/ar/services/mercedes-body-repair-dubai",
+      "side": "baseline",
+      "sha256": "232f3fbc462959a0132066bc93c6d9b40a3f8dd82d9625cf7dcd4efbe3e547e6",
+      "matchesPriorSsrEvidence": true
+    },
+    {
+      "route": "/ar/services/mercedes-body-repair-dubai",
+      "side": "candidate",
+      "sha256": "f3ee877e4c7d368a7a83433b6835c75522bc416a958f4a602a198db957ab334d",
+      "matchesPriorSsrEvidence": true
+    },
+    {
+      "route": "/brands/bmw-service-dubai",
+      "side": "baseline",
+      "sha256": "9d91440cd7882d18ef24e1f52b1ec0900fc4e35fd490063b587534940e3b7fbb",
+      "matchesPriorSsrEvidence": true
+    },
+    {
+      "route": "/brands/bmw-service-dubai",
+      "side": "candidate",
+      "sha256": "bbcf69bff4eae70419eed87140889d759ed79b7a88cffc1f6574243386dd230f",
+      "matchesPriorSsrEvidence": true
+    },
+    {
+      "route": "/ar/brands/bmw-service-dubai",
+      "side": "baseline",
+      "sha256": "63935c59954d08149833e9eca9052f0d809c7af73f0392de56c005fe78fb2a8c",
+      "matchesPriorSsrEvidence": true
+    },
+    {
+      "route": "/ar/brands/bmw-service-dubai",
+      "side": "candidate",
+      "sha256": "2edb8f237308230b1cbe35b9377cb12b6a4df22626e4b568b42372e3d99ee0b4",
+      "matchesPriorSsrEvidence": true
+    },
+    {
+      "route": "/brands/bmw-service-dubai/body-repair",
+      "side": "baseline",
+      "sha256": "a1bd5f51d9c8e30b73df80981baef912c26b1b90f457ae9f3aacfa528e0289ef",
+      "matchesPriorSsrEvidence": true
+    },
+    {
+      "route": "/brands/bmw-service-dubai/body-repair",
+      "side": "candidate",
+      "sha256": "c1b119626ba7f47b3f685302bf8c2e41f5aa2ee8e8368cc340b8c975f7847115",
+      "matchesPriorSsrEvidence": true
+    },
+    {
+      "route": "/ar/brands/bmw-service-dubai/body-repair",
+      "side": "baseline",
+      "sha256": "2194ecb2e7894c3e90e099fff6d75755d482084491cd2d1d3667b7854f58f3fe",
+      "matchesPriorSsrEvidence": true
+    },
+    {
+      "route": "/ar/brands/bmw-service-dubai/body-repair",
+      "side": "candidate",
+      "sha256": "6718bf634ac835189ecf895ede625c4b1ea5a85f95b31ee541cf552ce68f1c00",
+      "matchesPriorSsrEvidence": true
+    },
+    {
+      "route": "/services/mercedes-oil-change-dubai",
+      "side": "baseline",
+      "sha256": "42ca268d2bfd2c92d83b12543da10ecfceaecab01619b2cb657dc5e4a3ede949",
+      "matchesPriorSsrEvidence": true
+    },
+    {
+      "route": "/services/mercedes-oil-change-dubai",
+      "side": "candidate",
+      "sha256": "4fc275239205d473716e458355088b498ee73ee1d8cc8b6e2b5a75f44b86baf1",
+      "matchesPriorSsrEvidence": true
+    },
+    {
+      "route": "/ar/services/mercedes-oil-change-dubai",
+      "side": "baseline",
+      "sha256": "a18819f4b941e2f4e8a9ddcb2fcd543cf7e995f71f6e7a91cb50959bdf535acc",
+      "matchesPriorSsrEvidence": true
+    },
+    {
+      "route": "/ar/services/mercedes-oil-change-dubai",
+      "side": "candidate",
+      "sha256": "2ab0c13e61c8090c6d6cc4729b91f3d26beb2033f9a180b9229cd94962c9a242",
+      "matchesPriorSsrEvidence": true
+    },
+    {
+      "route": "/services/mercedes-diagnostics-dubai",
+      "side": "baseline",
+      "sha256": "fe59feec21b1075b7be7fb592c29fb06a62ddb5a1d95c2acd44c2719ef8b1c52",
+      "matchesPriorSsrEvidence": true
+    },
+    {
+      "route": "/services/mercedes-diagnostics-dubai",
+      "side": "candidate",
+      "sha256": "f971760003c993dde2a3e5479e6474f8acd55ec583556b91138ada10cb5347ea",
+      "matchesPriorSsrEvidence": true
+    },
+    {
+      "route": "/ar/services/mercedes-diagnostics-dubai",
+      "side": "baseline",
+      "sha256": "88b7f2555bc3a66b07a97c74ddd11b4fd91227e99994b466508698fd1cec8ce5",
+      "matchesPriorSsrEvidence": true
+    },
+    {
+      "route": "/ar/services/mercedes-diagnostics-dubai",
+      "side": "candidate",
+      "sha256": "a3c0e48530c7ead410d7640678647a9eea8099eac9b7b6a2b42f175d8891f566",
+      "matchesPriorSsrEvidence": true
+    },
+    {
+      "route": "/services/mercedes-mechanical-repair-dubai",
+      "side": "baseline",
+      "sha256": "d31e3ded1e66e8779c52a97c910147b6cc2b6a36ea2e7c730a4fea593b8417aa",
+      "matchesPriorSsrEvidence": true
+    },
+    {
+      "route": "/services/mercedes-mechanical-repair-dubai",
+      "side": "candidate",
+      "sha256": "f50e3cbb6550694434d01fd7bbaaa696e884a1d7f50c8b33a370b85cea881e6a",
+      "matchesPriorSsrEvidence": true
+    },
+    {
+      "route": "/ar/services/mercedes-mechanical-repair-dubai",
+      "side": "baseline",
+      "sha256": "ef046c7924524ed858b53a7a01f68a59e88cf83d946fee9a1266c815f7d84989",
+      "matchesPriorSsrEvidence": true
+    },
+    {
+      "route": "/ar/services/mercedes-mechanical-repair-dubai",
+      "side": "candidate",
+      "sha256": "f61838e295c2941e5cfb34ed9dd79c9bdff465bc0d8bb3a4bf4bc1e4425fb58a",
+      "matchesPriorSsrEvidence": true
+    },
+    {
+      "route": "/services/car-body-repair-dubai",
+      "side": "baseline",
+      "sha256": "80433e60ea3d28fa2f1c15f1d56e4b71675059740331ef09a00a018c4d5ae9a0",
+      "matchesPriorSsrEvidence": true
+    },
+    {
+      "route": "/services/car-body-repair-dubai",
+      "side": "candidate",
+      "sha256": "dc6357d330db2111b7903fd85a4801b68c0d4ea6d6c37f687e334fb279f49835",
+      "matchesPriorSsrEvidence": true
+    },
+    {
+      "route": "/ar/services/car-body-repair-dubai",
+      "side": "baseline",
+      "sha256": "e06d814a3220bd6043f0444fa45e9d0ed9a03b2b5e35de491920ce36c93a832b",
+      "matchesPriorSsrEvidence": true
+    },
+    {
+      "route": "/ar/services/car-body-repair-dubai",
+      "side": "candidate",
+      "sha256": "656a9efe7ac06896e591b1915ecefa27966d4271fb0af802f6b61d5fd1c58bce",
+      "matchesPriorSsrEvidence": true
+    }
+  ],
+  "limitations": [
+    "A focusin metric can precede browser auto-scrolling; a rectangle outside viewport at that instant is not by itself a visibility failure. The requested screenshots were used for visible-layout conclusions.",
+    "The 320px body screenshot shows the phone control continuing below the image edge. It does not prove that control is wholly visible in that exact frame, and no such claim is made.",
+    "Keyboard QA is supported by the recorded focus/expanded/collapsed states and parent action record; this review did not independently replay keys.",
+    "QA-only CSP/interceptors are served by a loopback wrapper. Contacts are prevented and recorded; analytics/connections/forms are blocked. Application build files are unchanged, but production CSP/analytics behavior is not tested.",
+    "An empty collected console-log API result is not a guarantee that every possible console/network diagnostic was captured.",
+    "No physical iOS/Android device, native touch, call connection, WhatsApp send/receipt, form delivery, lead receipt, analytics receipt, ranking effect or production publication is verified."
+  ]
+}

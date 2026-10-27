@@ -1,0 +1,70 @@
+    1: import React from 'react';
+    2: import { Writable } from 'node:stream';
+    3: import { renderToPipeableStream } from 'react-dom/server';
+    4: import { StaticRouter } from 'react-router-dom/server';
+    5: import { AppContent } from '@/App';
+    6: import {
+    7:   SeoCollectorProvider,
+    8:   type ResolvedSeoProps,
+    9: } from '@/hooks/use-seo';
+   10: import { publicRoutes } from '@/lib/route-manifest';
+   11: 
+   12: export interface RenderedRoute {
+   13:   html: string;
+   14:   seo?: ResolvedSeoProps;
+   15: }
+   16: 
+   17: export const getPublicRoutes = () => publicRoutes;
+   18: 
+   19: export const renderRoute = (url: string): Promise<RenderedRoute> =>
+   20:   new Promise((resolve, reject) => {
+   21:     const htmlChunks: Buffer[] = [];
+   22:     let seo: ResolvedSeoProps | undefined;
+   23:     let renderError: unknown;
+   24:     const timeout: ReturnType<typeof setTimeout> = setTimeout(() => {
+   25:       stream.abort();
+   26:       reject(new Error(`SSR timed out for ${url}`));
+   27:     }, 30_000);
+   28: 
+   29:     const destination = new Writable({
+   30:       write(chunk, _encoding, callback) {
+   31:         // Decode only after joining chunks so multibyte text cannot be split.
+   32:         htmlChunks.push(Buffer.from(chunk));
+   33:         callback();
+   34:       },
+   35:     });
+   36: 
+   37:     destination.on('finish', () => {
+   38:       clearTimeout(timeout);
+   39:       if (renderError) {
+   40:         reject(renderError);
+   41:         return;
+   42:       }
+   43:       // React 18's streaming UTF-8 buffer can insert NUL padding at chunk
+   44:       // boundaries. NUL is not valid page text; remove only that padding.
+   45:       const html = Buffer.concat(htmlChunks).toString('utf8').split('\u0000').join('');
+   46:       resolve({ html, seo });
+   47:     });
+   48:     destination.on('error', reject);
+   49: 
+   50:     const stream = renderToPipeableStream(
+   51:       <StaticRouter location={url}>
+   52:         <SeoCollectorProvider collect={(value) => { seo = value; }}>
+   53:           <AppContent />
+   54:         </SeoCollectorProvider>
+   55:       </StaticRouter>,
+   56:       {
+   57:         onAllReady() {
+   58:           stream.pipe(destination);
+   59:         },
+   60:         onShellError(error) {
+   61:           clearTimeout(timeout);
+   62:           reject(error);
+   63:         },
+   64:         onError(error) {
+   65:           renderError = error;
+   66:         },
+   67:       },
+   68:     );
+   69: 
+   70:   });

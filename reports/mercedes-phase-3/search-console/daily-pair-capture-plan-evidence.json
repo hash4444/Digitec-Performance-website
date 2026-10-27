@@ -1,0 +1,106 @@
+{
+  "generatedAtUtc": "2026-10-26T08:32:50.182Z",
+  "planOnly": true,
+  "pairedInputSha256": "6b31b6908fa31f5dc6e7236188b9df7c1df607bd73bdab2dbbf80f4befde1f7c",
+  "windowStart": "20260727",
+  "windowEnd": "20261024",
+  "dateGranularity": "DAILY",
+  "totalPairs": 38,
+  "cohorts": [
+    {
+      "query": "mercedes service dubai",
+      "plannedPairs": 5,
+      "sourceMode": "VALIDATED_UAE_ALL_90D",
+      "sourceDevices": [
+        "ALL"
+      ],
+      "sourceAttemptIds": [
+        "query-pages__90d__ARE__ALL__mercedes-service-dubai"
+      ],
+      "allDeviceCaptureValid": true,
+      "requiresRetry": false,
+      "deviceUnionComplete": true,
+      "note": "Each pair comes from an actual exact-query+UAE+ALL-device90dPages row."
+    },
+    {
+      "query": "mercedes repair dubai",
+      "plannedPairs": 7,
+      "sourceMode": "VALIDATED_UAE_ALL_90D",
+      "sourceDevices": [
+        "ALL"
+      ],
+      "sourceAttemptIds": [
+        "query-pages__90d__ARE__ALL__mercedes-repair-dubai"
+      ],
+      "allDeviceCaptureValid": true,
+      "requiresRetry": false,
+      "deviceUnionComplete": true,
+      "note": "Each pair comes from an actual exact-query+UAE+ALL-device90dPages row."
+    },
+    {
+      "query": "mercedes specialist dubai",
+      "plannedPairs": 4,
+      "sourceMode": "VALIDATED_UAE_ALL_90D",
+      "sourceDevices": [
+        "ALL"
+      ],
+      "sourceAttemptIds": [
+        "query-pages__90d__ARE__ALL__mercedes-specialist-dubai__attempt2"
+      ],
+      "allDeviceCaptureValid": true,
+      "requiresRetry": false,
+      "deviceUnionComplete": true,
+      "note": "Each pair comes from an actual exact-query+UAE+ALL-device90dPages row."
+    },
+    {
+      "query": "mercedes workshop dubai",
+      "plannedPairs": 8,
+      "sourceMode": "VALIDATED_UAE_ALL_90D",
+      "sourceDevices": [
+        "ALL"
+      ],
+      "sourceAttemptIds": [
+        "query-pages__90d__ARE__ALL__mercedes-workshop-dubai"
+      ],
+      "allDeviceCaptureValid": true,
+      "requiresRetry": false,
+      "deviceUnionComplete": true,
+      "note": "Each pair comes from an actual exact-query+UAE+ALL-device90dPages row."
+    },
+    {
+      "query": "mercedes maintenance dubai",
+      "plannedPairs": 8,
+      "sourceMode": "VALIDATED_UAE_ALL_90D",
+      "sourceDevices": [
+        "ALL"
+      ],
+      "sourceAttemptIds": [
+        "query-pages__90d__ARE__ALL__mercedes-maintenance-dubai"
+      ],
+      "allDeviceCaptureValid": true,
+      "requiresRetry": false,
+      "deviceUnionComplete": true,
+      "note": "Each pair comes from an actual exact-query+UAE+ALL-device90dPages row."
+    },
+    {
+      "query": "mercedes oil change dubai",
+      "plannedPairs": 6,
+      "sourceMode": "VALIDATED_UAE_ALL_90D",
+      "sourceDevices": [
+        "ALL"
+      ],
+      "sourceAttemptIds": [
+        "query-pages__90d__ARE__ALL__mercedes-oil-change-dubai"
+      ],
+      "allDeviceCaptureValid": true,
+      "requiresRetry": false,
+      "deviceUnionComplete": true,
+      "note": "Each pair comes from an actual exact-query+UAE+ALL-device90dPages row."
+    }
+  ],
+  "limits": [
+    "Pairs identify requested exact Query+Exact Page+UAE+ALL-device daily captures, not new measured data.",
+    "A device-union fallback may omit tablet-only or uncollected-device pairs; retry ALL device capture to complete inventory.",
+    "Keep exact URL slash/host forms and query operator; do not merge canonical variants before source analysis."
+  ]
+}

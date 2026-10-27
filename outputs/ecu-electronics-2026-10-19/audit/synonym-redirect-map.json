@@ -1,0 +1,257 @@
+{
+  "basis": "Local router invocation with stubbed origin only; no deployment or remote route mutation.",
+  "rows": [
+    {
+      "from": "/car-programming-diagnostic",
+      "to": "/services/car-diagnostics-dubai",
+      "staticStatus": 308,
+      "staticLocation": "https://digitecme.com/services/car-diagnostics-dubai?source=ecu-audit",
+      "productionConfigStatus": 200,
+      "productionConfigLocation": null,
+      "staticPass": true
+    },
+    {
+      "from": "/ar/car-programming-diagnostic",
+      "to": "/ar/services/car-diagnostics-dubai",
+      "staticStatus": 308,
+      "staticLocation": "https://digitecme.com/ar/services/car-diagnostics-dubai?source=ecu-audit",
+      "productionConfigStatus": 200,
+      "productionConfigLocation": null,
+      "staticPass": true
+    },
+    {
+      "from": "/services/car-programming-diagnostic",
+      "to": "/services/car-diagnostics-dubai",
+      "staticStatus": 308,
+      "staticLocation": "https://digitecme.com/services/car-diagnostics-dubai?source=ecu-audit",
+      "productionConfigStatus": 200,
+      "productionConfigLocation": null,
+      "staticPass": true
+    },
+    {
+      "from": "/ar/services/car-programming-diagnostic",
+      "to": "/ar/services/car-diagnostics-dubai",
+      "staticStatus": 308,
+      "staticLocation": "https://digitecme.com/ar/services/car-diagnostics-dubai?source=ecu-audit",
+      "productionConfigStatus": 200,
+      "productionConfigLocation": null,
+      "staticPass": true
+    },
+    {
+      "from": "/car-diagnostics",
+      "to": "/services/car-diagnostics-dubai",
+      "staticStatus": 308,
+      "staticLocation": "https://digitecme.com/services/car-diagnostics-dubai?source=ecu-audit",
+      "productionConfigStatus": 200,
+      "productionConfigLocation": null,
+      "staticPass": true
+    },
+    {
+      "from": "/ar/car-diagnostics",
+      "to": "/ar/services/car-diagnostics-dubai",
+      "staticStatus": 308,
+      "staticLocation": "https://digitecme.com/ar/services/car-diagnostics-dubai?source=ecu-audit",
+      "productionConfigStatus": 200,
+      "productionConfigLocation": null,
+      "staticPass": true
+    },
+    {
+      "from": "/services/car-diagnostics",
+      "to": "/services/car-diagnostics-dubai",
+      "staticStatus": 308,
+      "staticLocation": "https://digitecme.com/services/car-diagnostics-dubai?source=ecu-audit",
+      "productionConfigStatus": 200,
+      "productionConfigLocation": null,
+      "staticPass": true
+    },
+    {
+      "from": "/ar/services/car-diagnostics",
+      "to": "/ar/services/car-diagnostics-dubai",
+      "staticStatus": 308,
+      "staticLocation": "https://digitecme.com/ar/services/car-diagnostics-dubai?source=ecu-audit",
+      "productionConfigStatus": 200,
+      "productionConfigLocation": null,
+      "staticPass": true
+    },
+    {
+      "from": "/engine-diagnostics",
+      "to": "/services/car-diagnostics-dubai",
+      "staticStatus": 308,
+      "staticLocation": "https://digitecme.com/services/car-diagnostics-dubai?source=ecu-audit",
+      "productionConfigStatus": 200,
+      "productionConfigLocation": null,
+      "staticPass": true
+    },
+    {
+      "from": "/ar/engine-diagnostics",
+      "to": "/ar/services/car-diagnostics-dubai",
+      "staticStatus": 308,
+      "staticLocation": "https://digitecme.com/ar/services/car-diagnostics-dubai?source=ecu-audit",
+      "productionConfigStatus": 200,
+      "productionConfigLocation": null,
+      "staticPass": true
+    },
+    {
+      "from": "/services/engine-diagnostics",
+      "to": "/services/car-diagnostics-dubai",
+      "staticStatus": 308,
+      "staticLocation": "https://digitecme.com/services/car-diagnostics-dubai?source=ecu-audit",
+      "productionConfigStatus": 200,
+      "productionConfigLocation": null,
+      "staticPass": true
+    },
+    {
+      "from": "/ar/services/engine-diagnostics",
+      "to": "/ar/services/car-diagnostics-dubai",
+      "staticStatus": 308,
+      "staticLocation": "https://digitecme.com/ar/services/car-diagnostics-dubai?source=ecu-audit",
+      "productionConfigStatus": 200,
+      "productionConfigLocation": null,
+      "staticPass": true
+    },
+    {
+      "from": "/engine-diagnostics-dubai",
+      "to": "/services/car-diagnostics-dubai",
+      "staticStatus": 308,
+      "staticLocation": "https://digitecme.com/services/car-diagnostics-dubai?source=ecu-audit",
+      "productionConfigStatus": 200,
+      "productionConfigLocation": null,
+      "staticPass": true
+    },
+    {
+      "from": "/ar/engine-diagnostics-dubai",
+      "to": "/ar/services/car-diagnostics-dubai",
+      "staticStatus": 308,
+      "staticLocation": "https://digitecme.com/ar/services/car-diagnostics-dubai?source=ecu-audit",
+      "productionConfigStatus": 200,
+      "productionConfigLocation": null,
+      "staticPass": true
+    },
+    {
+      "from": "/services/engine-diagnostics-dubai",
+      "to": "/services/car-diagnostics-dubai",
+      "staticStatus": 308,
+      "staticLocation": "https://digitecme.com/services/car-diagnostics-dubai?source=ecu-audit",
+      "productionConfigStatus": 200,
+      "productionConfigLocation": null,
+      "staticPass": true
+    },
+    {
+      "from": "/ar/services/engine-diagnostics-dubai",
+      "to": "/ar/services/car-diagnostics-dubai",
+      "staticStatus": 308,
+      "staticLocation": "https://digitecme.com/ar/services/car-diagnostics-dubai?source=ecu-audit",
+      "productionConfigStatus": 200,
+      "productionConfigLocation": null,
+      "staticPass": true
+    },
+    {
+      "from": "/electrical-system-repairs",
+      "to": "/services/auto-electrical-repair-dubai",
+      "staticStatus": 308,
+      "staticLocation": "https://digitecme.com/services/auto-electrical-repair-dubai?source=ecu-audit",
+      "productionConfigStatus": 200,
+      "productionConfigLocation": null,
+      "staticPass": true
+    },
+    {
+      "from": "/ar/electrical-system-repairs",
+      "to": "/ar/services/auto-electrical-repair-dubai",
+      "staticStatus": 308,
+      "staticLocation": "https://digitecme.com/ar/services/auto-electrical-repair-dubai?source=ecu-audit",
+      "productionConfigStatus": 200,
+      "productionConfigLocation": null,
+      "staticPass": true
+    },
+    {
+      "from": "/services/electrical-system-repairs",
+      "to": "/services/auto-electrical-repair-dubai",
+      "staticStatus": 308,
+      "staticLocation": "https://digitecme.com/services/auto-electrical-repair-dubai?source=ecu-audit",
+      "productionConfigStatus": 200,
+      "productionConfigLocation": null,
+      "staticPass": true
+    },
+    {
+      "from": "/ar/services/electrical-system-repairs",
+      "to": "/ar/services/auto-electrical-repair-dubai",
+      "staticStatus": 308,
+      "staticLocation": "https://digitecme.com/ar/services/auto-electrical-repair-dubai?source=ecu-audit",
+      "productionConfigStatus": 200,
+      "productionConfigLocation": null,
+      "staticPass": true
+    },
+    {
+      "from": "/auto-electrical-repair",
+      "to": "/services/auto-electrical-repair-dubai",
+      "staticStatus": 308,
+      "staticLocation": "https://digitecme.com/services/auto-electrical-repair-dubai?source=ecu-audit",
+      "productionConfigStatus": 200,
+      "productionConfigLocation": null,
+      "staticPass": true
+    },
+    {
+      "from": "/ar/auto-electrical-repair",
+      "to": "/ar/services/auto-electrical-repair-dubai",
+      "staticStatus": 308,
+      "staticLocation": "https://digitecme.com/ar/services/auto-electrical-repair-dubai?source=ecu-audit",
+      "productionConfigStatus": 200,
+      "productionConfigLocation": null,
+      "staticPass": true
+    },
+    {
+      "from": "/services/auto-electrical-repair",
+      "to": "/services/auto-electrical-repair-dubai",
+      "staticStatus": 308,
+      "staticLocation": "https://digitecme.com/services/auto-electrical-repair-dubai?source=ecu-audit",
+      "productionConfigStatus": 200,
+      "productionConfigLocation": null,
+      "staticPass": true
+    },
+    {
+      "from": "/ar/services/auto-electrical-repair",
+      "to": "/ar/services/auto-electrical-repair-dubai",
+      "staticStatus": 308,
+      "staticLocation": "https://digitecme.com/ar/services/auto-electrical-repair-dubai?source=ecu-audit",
+      "productionConfigStatus": 200,
+      "productionConfigLocation": null,
+      "staticPass": true
+    },
+    {
+      "from": "/brands/mercedes-benz-service-dubai/engine-diagnostics",
+      "to": "/services/mercedes-diagnostics-dubai",
+      "staticStatus": 308,
+      "staticLocation": "https://digitecme.com/services/mercedes-diagnostics-dubai?source=ecu-audit",
+      "productionConfigStatus": 308,
+      "productionConfigLocation": "https://digitecme.com/services/mercedes-diagnostics-dubai?source=ecu-audit",
+      "staticPass": true
+    },
+    {
+      "from": "/ar/brands/mercedes-benz-service-dubai/engine-diagnostics",
+      "to": "/ar/services/mercedes-diagnostics-dubai",
+      "staticStatus": 308,
+      "staticLocation": "https://digitecme.com/ar/services/mercedes-diagnostics-dubai?source=ecu-audit",
+      "productionConfigStatus": 308,
+      "productionConfigLocation": "https://digitecme.com/ar/services/mercedes-diagnostics-dubai?source=ecu-audit",
+      "staticPass": true
+    },
+    {
+      "from": "/brands/mercedes-benz-service-dubai/electrical-repair",
+      "to": "/services/mercedes-electrical-repair-dubai",
+      "staticStatus": 308,
+      "staticLocation": "https://digitecme.com/services/mercedes-electrical-repair-dubai?source=ecu-audit",
+      "productionConfigStatus": 308,
+      "productionConfigLocation": "https://digitecme.com/services/mercedes-electrical-repair-dubai?source=ecu-audit",
+      "staticPass": true
+    },
+    {
+      "from": "/ar/brands/mercedes-benz-service-dubai/electrical-repair",
+      "to": "/ar/services/mercedes-electrical-repair-dubai",
+      "staticStatus": 308,
+      "staticLocation": "https://digitecme.com/ar/services/mercedes-electrical-repair-dubai?source=ecu-audit",
+      "productionConfigStatus": 308,
+      "productionConfigLocation": "https://digitecme.com/ar/services/mercedes-electrical-repair-dubai?source=ecu-audit",
+      "staticPass": true
+    }
+  ]
+}

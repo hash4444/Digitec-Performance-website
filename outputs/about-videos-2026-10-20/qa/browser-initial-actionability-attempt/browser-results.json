@@ -1,0 +1,952 @@
+{
+  "at": "2026-10-20T06:17:27.881Z",
+  "passed": false,
+  "layouts": [
+    {
+      "route": "/about",
+      "width": 1440,
+      "uniqueVideos": 8,
+      "cards": 16,
+      "initialMP4Requests": 0,
+      "loadedPreviewCount": 5,
+      "mutedPreviewDecode": true,
+      "noOverflow": true,
+      "passed": true
+    },
+    {
+      "route": "/about",
+      "width": 390,
+      "uniqueVideos": 8,
+      "cards": 16,
+      "initialMP4Requests": 0,
+      "loadedPreviewCount": 2,
+      "mutedPreviewDecode": true,
+      "noOverflow": true,
+      "passed": true
+    },
+    {
+      "route": "/about",
+      "width": 320,
+      "uniqueVideos": 8,
+      "cards": 16,
+      "initialMP4Requests": 0,
+      "loadedPreviewCount": 2,
+      "mutedPreviewDecode": true,
+      "noOverflow": true,
+      "passed": true
+    },
+    {
+      "route": "/ar/about",
+      "width": 1440,
+      "uniqueVideos": 8,
+      "cards": 16,
+      "initialMP4Requests": 0,
+      "loadedPreviewCount": 5,
+      "mutedPreviewDecode": true,
+      "noOverflow": true,
+      "passed": true
+    },
+    {
+      "route": "/ar/about",
+      "width": 390,
+      "uniqueVideos": 8,
+      "cards": 16,
+      "initialMP4Requests": 0,
+      "loadedPreviewCount": 2,
+      "mutedPreviewDecode": true,
+      "noOverflow": true,
+      "passed": true
+    },
+    {
+      "route": "/ar/about",
+      "width": 320,
+      "uniqueVideos": 8,
+      "cards": 16,
+      "initialMP4Requests": 0,
+      "loadedPreviewCount": 2,
+      "mutedPreviewDecode": true,
+      "noOverflow": true,
+      "passed": true
+    }
+  ],
+  "interactions": [],
+  "playback": [
+    {
+      "number": 1,
+      "src": "http://127.0.0.1:5214/videos/about/video-01.mp4",
+      "duration": 41.685,
+      "controls": true,
+      "muted": false,
+      "canPlay": "probably",
+      "audioBytes": 5801,
+      "seekSucceeded": true,
+      "closedPlayerRemoved": true,
+      "passed": true
+    },
+    {
+      "number": 2,
+      "src": "http://127.0.0.1:5214/videos/about/video-02.mp4",
+      "duration": 16.064,
+      "controls": true,
+      "muted": false,
+      "canPlay": "probably",
+      "audioBytes": 3266,
+      "seekSucceeded": true,
+      "closedPlayerRemoved": true,
+      "passed": true
+    },
+    {
+      "number": 3,
+      "src": "http://127.0.0.1:5214/videos/about/video-03.mp4",
+      "duration": 30.976,
+      "controls": true,
+      "muted": false,
+      "canPlay": "probably",
+      "audioBytes": 3881,
+      "seekSucceeded": true,
+      "closedPlayerRemoved": true,
+      "passed": true
+    },
+    {
+      "number": 4,
+      "src": "http://127.0.0.1:5214/videos/about/video-04.mp4",
+      "duration": 21.76,
+      "controls": true,
+      "muted": false,
+      "canPlay": "probably",
+      "audioBytes": 3459,
+      "seekSucceeded": true,
+      "closedPlayerRemoved": true,
+      "passed": true
+    },
+    {
+      "number": 5,
+      "src": "http://127.0.0.1:5214/videos/about/video-05.mp4",
+      "duration": 14.634,
+      "controls": true,
+      "muted": false,
+      "canPlay": "probably",
+      "audioBytes": 4109,
+      "seekSucceeded": true,
+      "closedPlayerRemoved": true,
+      "passed": true
+    },
+    {
+      "number": 6,
+      "src": "http://127.0.0.1:5214/videos/about/video-06.mp4",
+      "duration": 29.717,
+      "controls": true,
+      "muted": false,
+      "canPlay": "probably",
+      "audioBytes": 3982,
+      "seekSucceeded": true,
+      "closedPlayerRemoved": true,
+      "passed": true
+    },
+    {
+      "number": 7,
+      "src": "http://127.0.0.1:5214/videos/about/video-07.mp4",
+      "duration": 40.085,
+      "controls": true,
+      "muted": false,
+      "canPlay": "probably",
+      "audioBytes": 4316,
+      "seekSucceeded": true,
+      "closedPlayerRemoved": true,
+      "passed": true
+    },
+    {
+      "number": 8,
+      "src": "http://127.0.0.1:5214/videos/about/video-08.mp4",
+      "duration": 15.616,
+      "controls": true,
+      "muted": false,
+      "canPlay": "probably",
+      "audioBytes": 4201,
+      "seekSucceeded": true,
+      "closedPlayerRemoved": true,
+      "passed": true
+    }
+  ],
+  "touch": [
+    {
+      "route": "/about",
+      "coarsePointer": true,
+      "realSwipe": true,
+      "tapOpenAndClose": true,
+      "passed": true
+    },
+    {
+      "route": "/ar/about",
+      "coarsePointer": true,
+      "realSwipe": true,
+      "tapOpenAndClose": true,
+      "passed": true
+    }
+  ],
+  "reducedMotion": [
+    {
+      "route": "/about",
+      "initialPause": true,
+      "noPreviewSource": true,
+      "userOptIn": true,
+      "livePreferenceChange": true,
+      "passed": true
+    },
+    {
+      "route": "/ar/about",
+      "initialPause": true,
+      "noPreviewSource": true,
+      "userOptIn": true,
+      "livePreferenceChange": true,
+      "passed": true
+    }
+  ],
+  "noJavaScript": [
+    {
+      "route": "/about",
+      "nativeUniqueHrefCount": 8,
+      "scrollableFallback": true,
+      "passed": true
+    },
+    {
+      "route": "/ar/about",
+      "nativeUniqueHrefCount": 8,
+      "scrollableFallback": true,
+      "passed": true
+    }
+  ],
+  "spa": [
+    {
+      "servicesToAbout": true,
+      "canonicalSettled": true,
+      "backAndForward": true,
+      "playerUnmountOnBack": true,
+      "passed": true
+    }
+  ],
+  "httpMedia": [
+    {
+      "number": "01",
+      "range206": true,
+      "type": "video/mp4",
+      "rangeBytes": 1024,
+      "head200": true,
+      "passed": true
+    },
+    {
+      "number": "02",
+      "range206": true,
+      "type": "video/mp4",
+      "rangeBytes": 1024,
+      "head200": true,
+      "passed": true
+    },
+    {
+      "number": "03",
+      "range206": true,
+      "type": "video/mp4",
+      "rangeBytes": 1024,
+      "head200": true,
+      "passed": true
+    },
+    {
+      "number": "04",
+      "range206": true,
+      "type": "video/mp4",
+      "rangeBytes": 1024,
+      "head200": true,
+      "passed": true
+    },
+    {
+      "number": "05",
+      "range206": true,
+      "type": "video/mp4",
+      "rangeBytes": 1024,
+      "head200": true,
+      "passed": true
+    },
+    {
+      "number": "06",
+      "range206": true,
+      "type": "video/mp4",
+      "rangeBytes": 1024,
+      "head200": true,
+      "passed": true
+    },
+    {
+      "number": "07",
+      "range206": true,
+      "type": "video/mp4",
+      "rangeBytes": 1024,
+      "head200": true,
+      "passed": true
+    },
+    {
+      "number": "08",
+      "range206": true,
+      "type": "video/mp4",
+      "rangeBytes": 1024,
+      "head200": true,
+      "passed": true
+    }
+  ],
+  "mediaResponses": [
+    {
+      "url": "http://127.0.0.1:5214/videos/about/video-02.mp4",
+      "status": 206,
+      "type": "video/mp4",
+      "range": "bytes 0-1847598/1847599",
+      "requestRange": "bytes=0-"
+    },
+    {
+      "url": "http://127.0.0.1:5214/videos/about/video-03.mp4",
+      "status": 206,
+      "type": "video/mp4",
+      "range": "bytes 0-3455836/3455837",
+      "requestRange": "bytes=0-"
+    },
+    {
+      "url": "http://127.0.0.1:5214/videos/about/video-05.mp4",
+      "status": 206,
+      "type": "video/mp4",
+      "range": "bytes 0-1456993/1456994",
+      "requestRange": "bytes=0-"
+    },
+    {
+      "url": "http://127.0.0.1:5214/videos/about/video-01.mp4",
+      "status": 206,
+      "type": "video/mp4",
+      "range": "bytes 0-5060476/5060477",
+      "requestRange": "bytes=0-"
+    },
+    {
+      "url": "http://127.0.0.1:5214/videos/about/video-04.mp4",
+      "status": 206,
+      "type": "video/mp4",
+      "range": "bytes 0-2474120/2474121",
+      "requestRange": "bytes=0-"
+    },
+    {
+      "url": "http://127.0.0.1:5214/videos/about/video-01.mp4",
+      "status": 206,
+      "type": "video/mp4",
+      "range": "bytes 0-5060476/5060477",
+      "requestRange": "bytes=0-"
+    },
+    {
+      "url": "http://127.0.0.1:5214/videos/about/video-02.mp4",
+      "status": 206,
+      "type": "video/mp4",
+      "range": "bytes 0-1847598/1847599",
+      "requestRange": "bytes=0-"
+    },
+    {
+      "url": "http://127.0.0.1:5214/videos/about/video-01.mp4",
+      "status": 206,
+      "type": "video/mp4",
+      "range": "bytes 0-5060476/5060477",
+      "requestRange": "bytes=0-"
+    },
+    {
+      "url": "http://127.0.0.1:5214/videos/about/video-02.mp4",
+      "status": 206,
+      "type": "video/mp4",
+      "range": "bytes 0-1847598/1847599",
+      "requestRange": "bytes=0-"
+    },
+    {
+      "url": "http://127.0.0.1:5214/videos/about/video-02.mp4",
+      "status": 206,
+      "type": "video/mp4",
+      "range": "bytes 0-1847598/1847599",
+      "requestRange": "bytes=0-"
+    },
+    {
+      "url": "http://127.0.0.1:5214/videos/about/video-03.mp4",
+      "status": 206,
+      "type": "video/mp4",
+      "range": "bytes 0-3455836/3455837",
+      "requestRange": "bytes=0-"
+    },
+    {
+      "url": "http://127.0.0.1:5214/videos/about/video-05.mp4",
+      "status": 206,
+      "type": "video/mp4",
+      "range": "bytes 0-1456993/1456994",
+      "requestRange": "bytes=0-"
+    },
+    {
+      "url": "http://127.0.0.1:5214/videos/about/video-01.mp4",
+      "status": 206,
+      "type": "video/mp4",
+      "range": "bytes 0-5060476/5060477",
+      "requestRange": "bytes=0-"
+    },
+    {
+      "url": "http://127.0.0.1:5214/videos/about/video-04.mp4",
+      "status": 206,
+      "type": "video/mp4",
+      "range": "bytes 0-2474120/2474121",
+      "requestRange": "bytes=0-"
+    },
+    {
+      "url": "http://127.0.0.1:5214/videos/about/video-02.mp4",
+      "status": 206,
+      "type": "video/mp4",
+      "range": "bytes 0-1847598/1847599",
+      "requestRange": "bytes=0-"
+    },
+    {
+      "url": "http://127.0.0.1:5214/videos/about/video-01.mp4",
+      "status": 206,
+      "type": "video/mp4",
+      "range": "bytes 0-5060476/5060477",
+      "requestRange": "bytes=0-"
+    },
+    {
+      "url": "http://127.0.0.1:5214/videos/about/video-01.mp4",
+      "status": 206,
+      "type": "video/mp4",
+      "range": "bytes 0-5060476/5060477",
+      "requestRange": "bytes=0-"
+    },
+    {
+      "url": "http://127.0.0.1:5214/videos/about/video-02.mp4",
+      "status": 206,
+      "type": "video/mp4",
+      "range": "bytes 0-1847598/1847599",
+      "requestRange": "bytes=0-"
+    },
+    {
+      "url": "http://127.0.0.1:5214/videos/about/video-02.mp4",
+      "status": 206,
+      "type": "video/mp4",
+      "range": "bytes 0-1847598/1847599",
+      "requestRange": "bytes=0-"
+    },
+    {
+      "url": "http://127.0.0.1:5214/videos/about/video-03.mp4",
+      "status": 206,
+      "type": "video/mp4",
+      "range": "bytes 0-3455836/3455837",
+      "requestRange": "bytes=0-"
+    },
+    {
+      "url": "http://127.0.0.1:5214/videos/about/video-05.mp4",
+      "status": 206,
+      "type": "video/mp4",
+      "range": "bytes 0-1456993/1456994",
+      "requestRange": "bytes=0-"
+    },
+    {
+      "url": "http://127.0.0.1:5214/videos/about/video-01.mp4",
+      "status": 206,
+      "type": "video/mp4",
+      "range": "bytes 0-5060476/5060477",
+      "requestRange": "bytes=0-"
+    },
+    {
+      "url": "http://127.0.0.1:5214/videos/about/video-04.mp4",
+      "status": 206,
+      "type": "video/mp4",
+      "range": "bytes 0-2474120/2474121",
+      "requestRange": "bytes=0-"
+    },
+    {
+      "url": "http://127.0.0.1:5214/videos/about/video-06.mp4",
+      "status": 206,
+      "type": "video/mp4",
+      "range": "bytes 0-4382630/4382631",
+      "requestRange": "bytes=0-"
+    },
+    {
+      "url": "http://127.0.0.1:5214/videos/about/video-02.mp4",
+      "status": 206,
+      "type": "video/mp4",
+      "range": "bytes 0-1847598/1847599",
+      "requestRange": "bytes=0-"
+    },
+    {
+      "url": "http://127.0.0.1:5214/videos/about/video-05.mp4",
+      "status": 206,
+      "type": "video/mp4",
+      "range": "bytes 0-1456993/1456994",
+      "requestRange": "bytes=0-"
+    },
+    {
+      "url": "http://127.0.0.1:5214/videos/about/video-04.mp4",
+      "status": 206,
+      "type": "video/mp4",
+      "range": "bytes 0-2474120/2474121",
+      "requestRange": "bytes=0-"
+    },
+    {
+      "url": "http://127.0.0.1:5214/videos/about/video-01.mp4",
+      "status": 206,
+      "type": "video/mp4",
+      "range": "bytes 0-5060476/5060477",
+      "requestRange": "bytes=0-"
+    },
+    {
+      "url": "http://127.0.0.1:5214/videos/about/video-03.mp4",
+      "status": 206,
+      "type": "video/mp4",
+      "range": "bytes 0-3455836/3455837",
+      "requestRange": "bytes=0-"
+    },
+    {
+      "url": "http://127.0.0.1:5214/videos/about/video-02.mp4",
+      "status": 206,
+      "type": "video/mp4",
+      "range": "bytes 0-1847598/1847599",
+      "requestRange": "bytes=0-"
+    },
+    {
+      "url": "http://127.0.0.1:5214/videos/about/video-05.mp4",
+      "status": 206,
+      "type": "video/mp4",
+      "range": "bytes 327680-1456993/1456994",
+      "requestRange": "bytes=327680-"
+    },
+    {
+      "url": "http://127.0.0.1:5214/videos/about/video-03.mp4",
+      "status": 206,
+      "type": "video/mp4",
+      "range": "bytes 360448-3455836/3455837",
+      "requestRange": "bytes=360448-"
+    },
+    {
+      "url": "http://127.0.0.1:5214/videos/about/video-01.mp4",
+      "status": 206,
+      "type": "video/mp4",
+      "range": "bytes 262144-5060476/5060477",
+      "requestRange": "bytes=262144-"
+    },
+    {
+      "url": "http://127.0.0.1:5214/videos/about/video-04.mp4",
+      "status": 206,
+      "type": "video/mp4",
+      "range": "bytes 491520-2474120/2474121",
+      "requestRange": "bytes=491520-"
+    },
+    {
+      "url": "http://127.0.0.1:5214/videos/about/video-02.mp4",
+      "status": 206,
+      "type": "video/mp4",
+      "range": "bytes 1048576-1847598/1847599",
+      "requestRange": "bytes=1048576-"
+    },
+    {
+      "url": "http://127.0.0.1:5214/videos/about/video-01.mp4",
+      "status": 206,
+      "type": "video/mp4",
+      "range": "bytes 1310720-5060476/5060477",
+      "requestRange": "bytes=1310720-"
+    },
+    {
+      "url": "http://127.0.0.1:5214/videos/about/video-03.mp4",
+      "status": 206,
+      "type": "video/mp4",
+      "range": "bytes 1409024-3455836/3455837",
+      "requestRange": "bytes=1409024-"
+    },
+    {
+      "url": "http://127.0.0.1:5214/videos/about/video-04.mp4",
+      "status": 206,
+      "type": "video/mp4",
+      "range": "bytes 1540096-2474120/2474121",
+      "requestRange": "bytes=1540096-"
+    },
+    {
+      "url": "http://127.0.0.1:5214/videos/about/video-05.mp4",
+      "status": 206,
+      "type": "video/mp4",
+      "range": "bytes 1376256-1456993/1456994",
+      "requestRange": "bytes=1376256-"
+    },
+    {
+      "url": "http://127.0.0.1:5214/videos/about/video-06.mp4",
+      "status": 206,
+      "type": "video/mp4",
+      "range": "bytes 524288-4382630/4382631",
+      "requestRange": "bytes=524288-"
+    },
+    {
+      "url": "http://127.0.0.1:5214/videos/about/video-05.mp4",
+      "status": 206,
+      "type": "video/mp4",
+      "range": "bytes 0-1456993/1456994",
+      "requestRange": "bytes=0-"
+    },
+    {
+      "url": "http://127.0.0.1:5214/videos/about/video-07.mp4",
+      "status": 206,
+      "type": "video/mp4",
+      "range": "bytes 0-8788112/8788113",
+      "requestRange": "bytes=0-"
+    },
+    {
+      "url": "http://127.0.0.1:5214/videos/about/video-04.mp4",
+      "status": 206,
+      "type": "video/mp4",
+      "range": "bytes 0-2474120/2474121",
+      "requestRange": "bytes=0-"
+    },
+    {
+      "url": "http://127.0.0.1:5214/videos/about/video-02.mp4",
+      "status": 206,
+      "type": "video/mp4",
+      "range": "bytes 0-1847598/1847599",
+      "requestRange": "bytes=0-"
+    },
+    {
+      "url": "http://127.0.0.1:5214/videos/about/video-03.mp4",
+      "status": 206,
+      "type": "video/mp4",
+      "range": "bytes 0-3455836/3455837",
+      "requestRange": "bytes=0-"
+    },
+    {
+      "url": "http://127.0.0.1:5214/videos/about/video-05.mp4",
+      "status": 206,
+      "type": "video/mp4",
+      "range": "bytes 0-1456993/1456994",
+      "requestRange": "bytes=0-"
+    },
+    {
+      "url": "http://127.0.0.1:5214/videos/about/video-01.mp4",
+      "status": 206,
+      "type": "video/mp4",
+      "range": "bytes 0-5060476/5060477",
+      "requestRange": "bytes=0-"
+    },
+    {
+      "url": "http://127.0.0.1:5214/videos/about/video-04.mp4",
+      "status": 206,
+      "type": "video/mp4",
+      "range": "bytes 0-2474120/2474121",
+      "requestRange": "bytes=0-"
+    },
+    {
+      "url": "http://127.0.0.1:5214/videos/about/video-06.mp4",
+      "status": 206,
+      "type": "video/mp4",
+      "range": "bytes 0-4382630/4382631",
+      "requestRange": "bytes=0-"
+    },
+    {
+      "url": "http://127.0.0.1:5214/videos/about/video-02.mp4",
+      "status": 206,
+      "type": "video/mp4",
+      "range": "bytes 0-1847598/1847599",
+      "requestRange": "bytes=0-"
+    },
+    {
+      "url": "http://127.0.0.1:5214/videos/about/video-05.mp4",
+      "status": 206,
+      "type": "video/mp4",
+      "range": "bytes 0-1456993/1456994",
+      "requestRange": "bytes=0-"
+    },
+    {
+      "url": "http://127.0.0.1:5214/videos/about/video-03.mp4",
+      "status": 206,
+      "type": "video/mp4",
+      "range": "bytes 0-3455836/3455837",
+      "requestRange": "bytes=0-"
+    },
+    {
+      "url": "http://127.0.0.1:5214/videos/about/video-04.mp4",
+      "status": 206,
+      "type": "video/mp4",
+      "range": "bytes 0-2474120/2474121",
+      "requestRange": "bytes=0-"
+    },
+    {
+      "url": "http://127.0.0.1:5214/videos/about/video-01.mp4",
+      "status": 206,
+      "type": "video/mp4",
+      "range": "bytes 0-5060476/5060477",
+      "requestRange": "bytes=0-"
+    },
+    {
+      "url": "http://127.0.0.1:5214/videos/about/video-02.mp4",
+      "status": 206,
+      "type": "video/mp4",
+      "range": "bytes 0-1847598/1847599",
+      "requestRange": "bytes=0-"
+    },
+    {
+      "url": "http://127.0.0.1:5214/videos/about/video-05.mp4",
+      "status": 206,
+      "type": "video/mp4",
+      "range": "bytes 327680-1456993/1456994",
+      "requestRange": "bytes=327680-"
+    },
+    {
+      "url": "http://127.0.0.1:5214/videos/about/video-04.mp4",
+      "status": 206,
+      "type": "video/mp4",
+      "range": "bytes 491520-2474120/2474121",
+      "requestRange": "bytes=491520-"
+    },
+    {
+      "url": "http://127.0.0.1:5214/videos/about/video-03.mp4",
+      "status": 206,
+      "type": "video/mp4",
+      "range": "bytes 360448-3455836/3455837",
+      "requestRange": "bytes=360448-"
+    },
+    {
+      "url": "http://127.0.0.1:5214/videos/about/video-01.mp4",
+      "status": 206,
+      "type": "video/mp4",
+      "range": "bytes 458752-5060476/5060477",
+      "requestRange": "bytes=458752-"
+    },
+    {
+      "url": "http://127.0.0.1:5214/videos/about/video-02.mp4",
+      "status": 206,
+      "type": "video/mp4",
+      "range": "bytes 1048576-1847598/1847599",
+      "requestRange": "bytes=1048576-"
+    },
+    {
+      "url": "http://127.0.0.1:5214/videos/about/video-01.mp4",
+      "status": 206,
+      "type": "video/mp4",
+      "range": "bytes 1179648-5060476/5060477",
+      "requestRange": "bytes=1179648-"
+    },
+    {
+      "url": "http://127.0.0.1:5214/videos/about/video-03.mp4",
+      "status": 206,
+      "type": "video/mp4",
+      "range": "bytes 1409024-3455836/3455837",
+      "requestRange": "bytes=1409024-"
+    },
+    {
+      "url": "http://127.0.0.1:5214/videos/about/video-05.mp4",
+      "status": 206,
+      "type": "video/mp4",
+      "range": "bytes 1376256-1456993/1456994",
+      "requestRange": "bytes=1376256-"
+    },
+    {
+      "url": "http://127.0.0.1:5214/videos/about/video-06.mp4",
+      "status": 206,
+      "type": "video/mp4",
+      "range": "bytes 524288-4382630/4382631",
+      "requestRange": "bytes=524288-"
+    },
+    {
+      "url": "http://127.0.0.1:5214/videos/about/video-04.mp4",
+      "status": 206,
+      "type": "video/mp4",
+      "range": "bytes 1835008-2474120/2474121",
+      "requestRange": "bytes=1835008-"
+    },
+    {
+      "url": "http://127.0.0.1:5214/videos/about/video-05.mp4",
+      "status": 206,
+      "type": "video/mp4",
+      "range": "bytes 0-1456993/1456994",
+      "requestRange": "bytes=0-"
+    },
+    {
+      "url": "http://127.0.0.1:5214/videos/about/video-07.mp4",
+      "status": 206,
+      "type": "video/mp4",
+      "range": "bytes 0-8788112/8788113",
+      "requestRange": "bytes=0-"
+    },
+    {
+      "url": "http://127.0.0.1:5214/videos/about/video-04.mp4",
+      "status": 206,
+      "type": "video/mp4",
+      "range": "bytes 0-2474120/2474121",
+      "requestRange": "bytes=0-"
+    },
+    {
+      "url": "http://127.0.0.1:5214/videos/about/video-02.mp4",
+      "status": 206,
+      "type": "video/mp4",
+      "range": "bytes 0-1847598/1847599",
+      "requestRange": "bytes=0-"
+    },
+    {
+      "url": "http://127.0.0.1:5214/videos/about/video-01.mp4",
+      "status": 206,
+      "type": "video/mp4",
+      "range": "bytes 0-5060476/5060477",
+      "requestRange": "bytes=0-"
+    },
+    {
+      "url": "http://127.0.0.1:5214/videos/about/video-05.mp4",
+      "status": 206,
+      "type": "video/mp4",
+      "range": "bytes 0-1456993/1456994",
+      "requestRange": "bytes=0-"
+    },
+    {
+      "url": "http://127.0.0.1:5214/videos/about/video-03.mp4",
+      "status": 206,
+      "type": "video/mp4",
+      "range": "bytes 0-3455836/3455837",
+      "requestRange": "bytes=0-"
+    },
+    {
+      "url": "http://127.0.0.1:5214/videos/about/video-04.mp4",
+      "status": 206,
+      "type": "video/mp4",
+      "range": "bytes 0-2474120/2474121",
+      "requestRange": "bytes=0-"
+    },
+    {
+      "url": "http://127.0.0.1:5214/videos/about/video-01.mp4",
+      "status": 206,
+      "type": "video/mp4",
+      "range": "bytes 0-5060476/5060477",
+      "requestRange": "bytes=0-"
+    },
+    {
+      "url": "http://127.0.0.1:5214/videos/about/video-01.mp4",
+      "status": 206,
+      "type": "video/mp4",
+      "range": "bytes 3440640-5060476/5060477",
+      "requestRange": "bytes=3440640-"
+    },
+    {
+      "url": "http://127.0.0.1:5214/videos/about/video-02.mp4",
+      "status": 206,
+      "type": "video/mp4",
+      "range": "bytes 0-1847598/1847599",
+      "requestRange": "bytes=0-"
+    },
+    {
+      "url": "http://127.0.0.1:5214/videos/about/video-03.mp4",
+      "status": 206,
+      "type": "video/mp4",
+      "range": "bytes 0-3455836/3455837",
+      "requestRange": "bytes=0-"
+    },
+    {
+      "url": "http://127.0.0.1:5214/videos/about/video-04.mp4",
+      "status": 206,
+      "type": "video/mp4",
+      "range": "bytes 0-2474120/2474121",
+      "requestRange": "bytes=0-"
+    },
+    {
+      "url": "http://127.0.0.1:5214/videos/about/video-05.mp4",
+      "status": 206,
+      "type": "video/mp4",
+      "range": "bytes 0-1456993/1456994",
+      "requestRange": "bytes=0-"
+    },
+    {
+      "url": "http://127.0.0.1:5214/videos/about/video-06.mp4",
+      "status": 206,
+      "type": "video/mp4",
+      "range": "bytes 0-4382630/4382631",
+      "requestRange": "bytes=0-"
+    },
+    {
+      "url": "http://127.0.0.1:5214/videos/about/video-07.mp4",
+      "status": 206,
+      "type": "video/mp4",
+      "range": "bytes 0-8788112/8788113",
+      "requestRange": "bytes=0-"
+    },
+    {
+      "url": "http://127.0.0.1:5214/videos/about/video-07.mp4",
+      "status": 206,
+      "type": "video/mp4",
+      "range": "bytes 5865472-8788112/8788113",
+      "requestRange": "bytes=5865472-"
+    },
+    {
+      "url": "http://127.0.0.1:5214/videos/about/video-08.mp4",
+      "status": 206,
+      "type": "video/mp4",
+      "range": "bytes 0-1940969/1940970",
+      "requestRange": "bytes=0-"
+    },
+    {
+      "url": "http://127.0.0.1:5214/videos/about/video-02.mp4",
+      "status": 206,
+      "type": "video/mp4",
+      "range": "bytes 0-1847598/1847599",
+      "requestRange": "bytes=0-"
+    },
+    {
+      "url": "http://127.0.0.1:5214/videos/about/video-01.mp4",
+      "status": 206,
+      "type": "video/mp4",
+      "range": "bytes 0-5060476/5060477",
+      "requestRange": "bytes=0-"
+    },
+    {
+      "url": "http://127.0.0.1:5214/videos/about/video-02.mp4",
+      "status": 206,
+      "type": "video/mp4",
+      "range": "bytes 0-1847598/1847599",
+      "requestRange": "bytes=0-"
+    },
+    {
+      "url": "http://127.0.0.1:5214/videos/about/video-01.mp4",
+      "status": 206,
+      "type": "video/mp4",
+      "range": "bytes 0-5060476/5060477",
+      "requestRange": "bytes=0-"
+    },
+    {
+      "url": "http://127.0.0.1:5214/videos/about/video-02.mp4",
+      "status": 206,
+      "type": "video/mp4",
+      "range": "bytes 0-1847598/1847599",
+      "requestRange": "bytes=0-"
+    },
+    {
+      "url": "http://127.0.0.1:5214/videos/about/video-02.mp4",
+      "status": 206,
+      "type": "video/mp4",
+      "range": "bytes 0-1847598/1847599",
+      "requestRange": "bytes=0-"
+    },
+    {
+      "url": "http://127.0.0.1:5214/videos/about/video-01.mp4",
+      "status": 206,
+      "type": "video/mp4",
+      "range": "bytes 0-5060476/5060477",
+      "requestRange": "bytes=0-"
+    }
+  ],
+  "screenshots": [
+    "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\about-videos-2026-10-20\\qa\\about-browser\\en-1440.png",
+    "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\about-videos-2026-10-20\\qa\\about-browser\\en-390.png",
+    "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\about-videos-2026-10-20\\qa\\about-browser\\en-320.png",
+    "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\about-videos-2026-10-20\\qa\\about-browser\\ar-1440.png",
+    "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\about-videos-2026-10-20\\qa\\about-browser\\ar-390.png",
+    "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\about-videos-2026-10-20\\qa\\about-browser\\ar-320.png"
+  ],
+  "runtimeErrors": [],
+  "failedLocalResponses": [],
+  "externalBlocked": 0,
+  "writesBlocked": 0,
+  "failures": [
+    {
+      "label": "interactions /about",
+      "error": "locator.click: Timeout 18000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-about-videos]').locator('.about-video-strip__group').first().locator('a').first()\u001b[22m\n\u001b[2m    - locator resolved to <a dir=\"ltr\" tabindex=\"0\" class=\"about-video-strip__card\" href=\"/videos/about/video-01.mp4\" aria-label=\"Watch DIGI-TEC video 01\">…</a>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not stable\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not stable\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    31 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is not stable\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n",
+      "stack": "locator.click: Timeout 18000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-about-videos]').locator('.about-video-strip__group').first().locator('a').first()\u001b[22m\n\u001b[2m    - locator resolved to <a dir=\"ltr\" tabindex=\"0\" class=\"about-video-strip__card\" href=\"/videos/about/video-01.mp4\" aria-label=\"Watch DIGI-TEC video 01\">…</a>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not stable\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not stable\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    31 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is not stable\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\n    at C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\about-videos-2026-10-20\\qa\\test-about-browser.mjs:45:102\n    at async check (C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\about-videos-2026-10-20\\qa\\test-about-browser.mjs:20:36)\n    at async file:///C:/Users/ADMIN/Documents/ChatGPT/DIGITEC/outputs/about-videos-2026-10-20/qa/test-about-browser.mjs:35:43"
+    },
+    {
+      "label": "interactions /ar/about",
+      "error": "locator.click: Timeout 18000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-about-videos]').locator('.about-video-strip__group').first().locator('a').first()\u001b[22m\n\u001b[2m    - locator resolved to <a dir=\"rtl\" tabindex=\"0\" class=\"about-video-strip__card\" href=\"/videos/about/video-01.mp4\" aria-label=\"شاهد فيديو ديجي-تك 01\">…</a>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not stable\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not stable\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    31 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is not stable\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n",
+      "stack": "locator.click: Timeout 18000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-about-videos]').locator('.about-video-strip__group').first().locator('a').first()\u001b[22m\n\u001b[2m    - locator resolved to <a dir=\"rtl\" tabindex=\"0\" class=\"about-video-strip__card\" href=\"/videos/about/video-01.mp4\" aria-label=\"شاهد فيديو ديجي-تك 01\">…</a>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not stable\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not stable\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    31 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is not stable\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\n    at C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\about-videos-2026-10-20\\qa\\test-about-browser.mjs:45:102\n    at async check (C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\about-videos-2026-10-20\\qa\\test-about-browser.mjs:20:36)\n    at async file:///C:/Users/ADMIN/Documents/ChatGPT/DIGITEC/outputs/about-videos-2026-10-20/qa/test-about-browser.mjs:35:43"
+    }
+  ],
+  "safety": "Only loopback GET/HEAD allowed. No external contacts, messages, forms or customer data. Browser visits isolated production build through its actual generated edge router with task-local static MIME/range adapter; no production requests.",
+  "finishedAt": "2026-10-20T06:18:45.714Z"
+}

@@ -1,0 +1,420 @@
+
+<!DOCTYPE html>
+
+<html
+    lang="en"
+    dir="ltr"
+>
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+>
+
+<meta
+    name="robots"
+    content="noindex,nofollow"
+>
+
+<title>
+    Verify Your Access</title>
+
+
+<style>
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+}
+
+body {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 20px;
+
+    font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Tahoma,
+        Arial,
+        sans-serif;
+
+    background:
+        radial-gradient(
+            circle at 10% 10%,
+            rgba(37, 99, 235, .12),
+            transparent 35%
+        ),
+        radial-gradient(
+            circle at 90% 90%,
+            rgba(14, 165, 233, .10),
+            transparent 35%
+        ),
+        #f5f7fb;
+
+    color: #111827;
+}
+
+
+.verify-card {
+
+    width: 100%;
+
+    max-width: 500px;
+
+    background: #ffffff;
+
+    border: 1px solid rgba(0,0,0,.06);
+
+    border-radius: 24px;
+
+    padding: 45px 38px;
+
+    text-align: center;
+
+    box-shadow:
+        0 25px 70px rgba(15, 23, 42, .10);
+}
+
+
+.security-icon {
+
+    width: 86px;
+
+    height: 86px;
+
+    margin: 0 auto 25px;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background:
+        linear-gradient(
+            135deg,
+            #2563eb,
+            #0ea5e9
+        );
+
+    box-shadow:
+        0 12px 30px rgba(37, 99, 235, .22);
+
+    position: relative;
+}
+
+
+.security-icon::before {
+
+    content: "";
+
+    width: 30px;
+
+    height: 38px;
+
+    border: 3px solid #fff;
+
+    border-radius: 8px 8px 12px 12px;
+
+    position: absolute;
+
+    top: 25px;
+}
+
+
+.security-icon::after {
+
+    content: "";
+
+    width: 12px;
+
+    height: 7px;
+
+    border-left: 3px solid #fff;
+
+    border-bottom: 3px solid #fff;
+
+    transform:
+        rotate(-45deg);
+
+    position: absolute;
+
+    top: 40px;
+}
+
+
+h1 {
+
+    margin: 0 0 15px;
+
+    font-size: 26px;
+
+    line-height: 1.4;
+
+    font-weight: 750;
+
+    color: #111827;
+}
+
+
+.description {
+
+    margin: 0 auto 28px;
+
+    max-width: 410px;
+
+    color: #6b7280;
+
+    font-size: 15px;
+
+    line-height: 1.8;
+}
+
+
+.security-status {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    text-align:
+        left;
+
+    background: #f8fafc;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 14px;
+
+    padding: 15px;
+
+    margin-bottom: 24px;
+}
+
+
+.status-icon {
+
+    flex: 0 0 28px;
+
+    width: 28px;
+
+    height: 28px;
+
+    border-radius: 50%;
+
+    background: #dcfce7;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+
+.status-icon::after {
+
+    content: "✓";
+
+    color: #16a34a;
+
+    font-size: 16px;
+
+    font-weight: 700;
+}
+
+
+.status-text {
+
+    color: #475569;
+
+    font-size: 14px;
+
+    line-height: 1.5;
+}
+
+
+.verify-button {
+
+    width: 100%;
+
+    border: 0;
+
+    border-radius: 12px;
+
+    padding: 16px 20px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #2563eb,
+            #0ea5e9
+        );
+
+    color: #ffffff;
+
+    font-size: 16px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition:
+        transform .2s ease,
+        box-shadow .2s ease,
+        opacity .2s ease;
+}
+
+
+.verify-button:hover {
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 12px 28px rgba(37, 99, 235, .25);
+}
+
+
+.verify-button:active {
+
+    transform: translateY(0);
+
+}
+
+
+.footer {
+
+    margin-top: 22px;
+
+    color: #9ca3af;
+
+    font-size: 12px;
+
+}
+
+
+@media (max-width: 550px) {
+
+    body {
+        padding: 15px;
+    }
+
+    .verify-card {
+
+        padding: 35px 22px;
+
+        border-radius: 20px;
+    }
+
+    h1 {
+
+        font-size: 22px;
+    }
+
+    .description {
+
+        font-size: 14px;
+    }
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<div class="verify-card">
+
+
+    <div class="security-icon"></div>
+
+
+    <h1>
+
+        Verifying you are a real visitor
+    </h1>
+
+
+    <p class="description">
+
+        We are performing a quick security check to make sure your request comes from a real visitor.
+    </p>
+
+
+    <div class="security-status">
+
+        <div class="status-icon"></div>
+
+        <div class="status-text">
+
+            A quick security check is required before continuing
+        </div>
+
+    </div>
+
+
+    <form method="POST">
+
+        <input
+            type="hidden"
+            name="verify"
+            value="1"
+        >
+
+        <input
+            type="hidden"
+            name="verify_token"
+            value="c348508148f300b9f38b3fb5f1a4c996681552f5e40388ab6aa4fed131d45423"
+        >
+
+
+        <button
+            type="submit"
+            class="verify-button"
+        >
+
+            Continue to Website
+        </button>
+
+    </form>
+
+
+    <div class="footer">
+
+        This check will only take a moment
+    </div>
+
+
+</div>
+
+
+</body>
+
+</html>
+
+

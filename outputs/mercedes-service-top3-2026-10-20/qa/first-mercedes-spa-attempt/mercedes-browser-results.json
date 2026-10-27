@@ -1,0 +1,122 @@
+{
+  "at": "2026-10-20T05:41:03.897Z",
+  "passed": false,
+  "layouts": [
+    {
+      "route": "/brands/mercedes-benz-service-dubai",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "route": "/brands/mercedes-benz-service-dubai",
+      "width": 320,
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/mercedes-benz-service-dubai",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/mercedes-benz-service-dubai",
+      "width": 320,
+      "passed": true
+    }
+  ],
+  "contacts": [
+    {
+      "route": "/brands/mercedes-benz-service-dubai",
+      "preventedContacts": 3,
+      "noConfirmedBookings": true,
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/mercedes-benz-service-dubai",
+      "preventedContacts": 3,
+      "noConfirmedBookings": true,
+      "passed": true
+    }
+  ],
+  "forms": [
+    {
+      "route": "/brands/mercedes-benz-service-dubai",
+      "requiredModelAndMessage": true,
+      "emptyRejected": true,
+      "invalidOptionalPhoneRejected": true,
+      "allSixServiceFieldsInDraft": true,
+      "optionalPersonalDetailsAccepted": true,
+      "unknownHistoryAccepted": true,
+      "privateValuesExcludedFromAnalytics": true,
+      "noConfirmedBookingEvent": true,
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/mercedes-benz-service-dubai",
+      "requiredModelAndMessage": true,
+      "emptyRejected": true,
+      "invalidOptionalPhoneRejected": true,
+      "allSixServiceFieldsInDraft": true,
+      "optionalPersonalDetailsAccepted": true,
+      "unknownHistoryAccepted": true,
+      "privateValuesExcludedFromAnalytics": true,
+      "noConfirmedBookingEvent": true,
+      "passed": true
+    }
+  ],
+  "noJavaScript": [
+    {
+      "route": "/brands/mercedes-benz-service-dubai",
+      "crawlableServicingFaq": true,
+      "staticContactHref": true,
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/mercedes-benz-service-dubai",
+      "crawlableServicingFaq": true,
+      "staticContactHref": true,
+      "passed": true
+    }
+  ],
+  "spa": [],
+  "touch": [
+    {
+      "route": "/brands/mercedes-benz-service-dubai",
+      "pointer": "coarse",
+      "preventedContacts": 2,
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/mercedes-benz-service-dubai",
+      "pointer": "coarse",
+      "preventedContacts": 2,
+      "passed": true
+    }
+  ],
+  "screenshots": [
+    "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\qa\\mercedes-browser\\en-hero-390.png",
+    "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\qa\\mercedes-browser\\en-form-390.png",
+    "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\qa\\mercedes-browser\\ar-hero-390.png",
+    "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\qa\\mercedes-browser\\ar-form-390.png",
+    "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\qa\\mercedes-browser\\en-touch-390.png",
+    "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\qa\\mercedes-browser\\ar-touch-390.png"
+  ],
+  "runtimeErrors": [],
+  "failedLocalResponses": [],
+  "externalBlocked": 0,
+  "writesBlocked": 0,
+  "failures": [
+    {
+      "route": "/brands/mercedes-benz-service-dubai",
+      "width": 390,
+      "error": "Expected values to be strictly equal:\n+ actual - expected\n\n+ 'https://digitecme.com/services'\n- 'https://digitecme.com/brands/mercedes-benz-service-dubai'\n",
+      "stack": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n+ actual - expected\n\n+ 'https://digitecme.com/services'\n- 'https://digitecme.com/brands/mercedes-benz-service-dubai'\n\n    at file:///C:/Users/ADMIN/Documents/ChatGPT/DIGITEC/outputs/mercedes-service-top3-2026-10-20/qa/test-mercedes-browser.mjs:32:528"
+    },
+    {
+      "route": "/ar/brands/mercedes-benz-service-dubai",
+      "width": 390,
+      "error": "Expected values to be strictly equal:\n+ actual - expected\n\n+ 'https://digitecme.com/ar/services'\n- 'https://digitecme.com/ar/brands/mercedes-benz-service-dubai'\n",
+      "stack": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n+ actual - expected\n\n+ 'https://digitecme.com/ar/services'\n- 'https://digitecme.com/ar/brands/mercedes-benz-service-dubai'\n\n    at file:///C:/Users/ADMIN/Documents/ChatGPT/DIGITEC/outputs/mercedes-service-top3-2026-10-20/qa/test-mercedes-browser.mjs:32:528\n    at runNextTicks (node:internal/process/task_queues:65:5)\n    at process.processImmediate (node:internal/timers:502:9)"
+    }
+  ],
+  "safety": "Loopback GET/HEAD only; contact anchor navigation prevented, window.open stubbed, no actual WhatsApp send/call/customer enquiry/appointment/backend write. Click/draft events are intent only."
+}

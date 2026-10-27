@@ -1,0 +1,332 @@
+{
+  "analyzedAt": "2026-10-26T07:37:32.041Z",
+  "readOnlyLocalAnalysis": true,
+  "evidenceDirectory": "http\\post-2026-10-26T07-35-12-026Z",
+  "captureSha256": "9fc2b79a2b1d953f0ce1ac1ca7c413a6088a50712810a6f91bbb119908f70d8a",
+  "baselinePath": "reports/mercedes-phase-2/evidence/http/pre-2026-10-26T07-06-59-812Z/capture.json",
+  "startedAt": "2026-10-26T07:35:12.033Z",
+  "finishedAt": "2026-10-26T07:36:01.733Z",
+  "summary": {
+    "cases": 326,
+    "networkRequests": 612,
+    "assertions": 852,
+    "passed": 852,
+    "failed": 0,
+    "sourceCases": 192,
+    "protectedOilCases": 48
+  },
+  "groupSummary": [
+    {
+      "group": "source",
+      "cases": 192,
+      "assertions": 480,
+      "passed": 480,
+      "failed": 0,
+      "safeChains": 192
+    },
+    {
+      "group": "protected-oil",
+      "cases": 48,
+      "assertions": 120,
+      "passed": 120,
+      "failed": 0,
+      "safeChains": 48
+    },
+    {
+      "group": "protected-repair",
+      "cases": 48,
+      "assertions": 96,
+      "passed": 96,
+      "failed": 0,
+      "safeChains": 48
+    },
+    {
+      "group": "destination",
+      "cases": 16,
+      "assertions": 64,
+      "passed": 64,
+      "failed": 0,
+      "safeChains": 16
+    },
+    {
+      "group": "control",
+      "cases": 22,
+      "assertions": 88,
+      "passed": 88,
+      "failed": 0,
+      "safeChains": 22
+    }
+  ],
+  "ruleSummary": [
+    {
+      "rule": "ar-oil-change",
+      "cases": 48,
+      "direct308ToIntended200": 48,
+      "exactQueryPreserved": 48,
+      "indexableCorrectCanonicalGetTargets": 24,
+      "getTargetCount": 24,
+      "failedAssertions": [],
+      "sourceEdgeColos": [
+        "FRA",
+        "CDG",
+        "AMS",
+        "HKG"
+      ]
+    },
+    {
+      "rule": "en-body-repair",
+      "cases": 48,
+      "direct308ToIntended200": 48,
+      "exactQueryPreserved": 48,
+      "indexableCorrectCanonicalGetTargets": 24,
+      "getTargetCount": 24,
+      "failedAssertions": [],
+      "sourceEdgeColos": [
+        "FRA",
+        "AMS",
+        "CDG",
+        "HKG"
+      ]
+    },
+    {
+      "rule": "ar-battery-replacement",
+      "cases": 48,
+      "direct308ToIntended200": 48,
+      "exactQueryPreserved": 48,
+      "indexableCorrectCanonicalGetTargets": 24,
+      "getTargetCount": 24,
+      "failedAssertions": [],
+      "sourceEdgeColos": [
+        "HKG",
+        "FRA",
+        "CDG",
+        "AMS"
+      ]
+    },
+    {
+      "rule": "ar-mechanical-repair",
+      "cases": 48,
+      "direct308ToIntended200": 48,
+      "exactQueryPreserved": 48,
+      "indexableCorrectCanonicalGetTargets": 24,
+      "getTargetCount": 24,
+      "failedAssertions": [],
+      "sourceEdgeColos": [
+        "AMS",
+        "FRA",
+        "HKG",
+        "CDG"
+      ]
+    }
+  ],
+  "allSafeChains": true,
+  "transportErrors": [],
+  "unsafeFollows": [],
+  "loops": [],
+  "sourceQueryCases": {
+    "empty": 64,
+    "campaign": 64,
+    "repeatedEncodedBlank": 64
+  },
+  "destinationContent": [
+    {
+      "url": "https://digitecme.com/ar/services/mercedes-oil-change-dubai",
+      "method": "GET",
+      "status": 200,
+      "direct": true,
+      "canonical": [
+        "https://digitecme.com/ar/services/mercedes-oil-change-dubai"
+      ],
+      "indexable": true,
+      "unchangedContentAndMetadata": true,
+      "beforeMainTextSha256": "689f75329411c3710764f7b0aa59af40c5525081aacd571b57e91c6aaa0bd945",
+      "afterMainTextSha256": "689f75329411c3710764f7b0aa59af40c5525081aacd571b57e91c6aaa0bd945"
+    },
+    {
+      "url": "https://digitecme.com/ar/services/mercedes-oil-change-dubai/",
+      "method": "GET",
+      "status": 200,
+      "direct": true,
+      "canonical": [
+        "https://digitecme.com/ar/services/mercedes-oil-change-dubai"
+      ],
+      "indexable": true,
+      "unchangedContentAndMetadata": true,
+      "beforeMainTextSha256": "689f75329411c3710764f7b0aa59af40c5525081aacd571b57e91c6aaa0bd945",
+      "afterMainTextSha256": "689f75329411c3710764f7b0aa59af40c5525081aacd571b57e91c6aaa0bd945"
+    },
+    {
+      "url": "https://digitecme.com/services/mercedes-body-repair-dubai",
+      "method": "GET",
+      "status": 200,
+      "direct": true,
+      "canonical": [
+        "https://digitecme.com/services/mercedes-body-repair-dubai"
+      ],
+      "indexable": true,
+      "unchangedContentAndMetadata": true,
+      "beforeMainTextSha256": "064d36487b5bc033d010faab21413230643dd18bb8aba26b7da41a7f3810a0da",
+      "afterMainTextSha256": "064d36487b5bc033d010faab21413230643dd18bb8aba26b7da41a7f3810a0da"
+    },
+    {
+      "url": "https://digitecme.com/services/mercedes-body-repair-dubai/",
+      "method": "GET",
+      "status": 200,
+      "direct": true,
+      "canonical": [
+        "https://digitecme.com/services/mercedes-body-repair-dubai"
+      ],
+      "indexable": true,
+      "unchangedContentAndMetadata": true,
+      "beforeMainTextSha256": "064d36487b5bc033d010faab21413230643dd18bb8aba26b7da41a7f3810a0da",
+      "afterMainTextSha256": "064d36487b5bc033d010faab21413230643dd18bb8aba26b7da41a7f3810a0da"
+    },
+    {
+      "url": "https://digitecme.com/ar/services/mercedes-battery-replacement-dubai",
+      "method": "GET",
+      "status": 200,
+      "direct": true,
+      "canonical": [
+        "https://digitecme.com/ar/services/mercedes-battery-replacement-dubai"
+      ],
+      "indexable": true,
+      "unchangedContentAndMetadata": true,
+      "beforeMainTextSha256": "b0cee01eb52dd40a7127c18759ed453f1d8710c80e2b0ed4248993afb6b6a026",
+      "afterMainTextSha256": "b0cee01eb52dd40a7127c18759ed453f1d8710c80e2b0ed4248993afb6b6a026"
+    },
+    {
+      "url": "https://digitecme.com/ar/services/mercedes-battery-replacement-dubai/",
+      "method": "GET",
+      "status": 200,
+      "direct": true,
+      "canonical": [
+        "https://digitecme.com/ar/services/mercedes-battery-replacement-dubai"
+      ],
+      "indexable": true,
+      "unchangedContentAndMetadata": true,
+      "beforeMainTextSha256": "b0cee01eb52dd40a7127c18759ed453f1d8710c80e2b0ed4248993afb6b6a026",
+      "afterMainTextSha256": "b0cee01eb52dd40a7127c18759ed453f1d8710c80e2b0ed4248993afb6b6a026"
+    },
+    {
+      "url": "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai",
+      "method": "GET",
+      "status": 200,
+      "direct": true,
+      "canonical": [
+        "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai"
+      ],
+      "indexable": true,
+      "unchangedContentAndMetadata": true,
+      "beforeMainTextSha256": "e02e2625c01ba1d5dc310a765826833ff28bf66d1b9c5f7b0cac789d6c3ac463",
+      "afterMainTextSha256": "e02e2625c01ba1d5dc310a765826833ff28bf66d1b9c5f7b0cac789d6c3ac463"
+    },
+    {
+      "url": "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai/",
+      "method": "GET",
+      "status": 200,
+      "direct": true,
+      "canonical": [
+        "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai"
+      ],
+      "indexable": true,
+      "unchangedContentAndMetadata": true,
+      "beforeMainTextSha256": "e02e2625c01ba1d5dc310a765826833ff28bf66d1b9c5f7b0cac789d6c3ac463",
+      "afterMainTextSha256": "e02e2625c01ba1d5dc310a765826833ff28bf66d1b9c5f7b0cac789d6c3ac463"
+    }
+  ],
+  "allDestinationContentUnchanged": true,
+  "getResponses": 307,
+  "getCaseResponses": 305,
+  "getCaseResponsesWithSavedHtml": 305,
+  "cfRayMissingCount": 0,
+  "observedEdgeColos": [
+    "CDG",
+    "FRA",
+    "AMS",
+    "HKG"
+  ],
+  "failedAssertions": [],
+  "oldFailureComparison": {
+    "originalEvidencePath": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-2\\deployment-2026-10-26\\verification\\evidence\\checkpoint-R4-2026-10-26T07-20-57-862Z\\capture.json",
+    "original": {
+      "key": "source-ar-mechanical-repair-6",
+      "url": "https://digitecme.com/ar/brands/mercedes-benz-service-dubai/mechanical-repair",
+      "method": "GET",
+      "chain": [
+        {
+          "at": "2026-10-26T07:20:59.755Z",
+          "status": 200,
+          "location": null,
+          "serverDate": "Mon, 26 Oct 2026 07:21:03 GMT",
+          "cfRay": "a507b3b20a4fb88b-AMS",
+          "cfCacheStatus": "DYNAMIC",
+          "title": "Digi-Tec Performance Center | Independent Car Workshop Dubai",
+          "h1": [
+            "D IGI-TEC Performance Center"
+          ],
+          "canonical": [
+            "https://digitecme.com/"
+          ],
+          "robots": [
+            "index, follow, max-image-preview:large"
+          ],
+          "mainTextSha256": "d07fff0f97bb2b18b3e85e16673c1e26fbb476689020cbb7f9aa8deab957c6dc",
+          "htmlFile": "html/source-ar-mechanical-repair-6.html"
+        }
+      ],
+      "loop": false
+    },
+    "current": {
+      "key": "source-ar-mechanical-repair-144",
+      "url": "https://digitecme.com/ar/brands/mercedes-benz-service-dubai/mechanical-repair",
+      "method": "GET",
+      "chain": [
+        {
+          "at": "2026-10-26T07:35:34.522Z",
+          "status": 308,
+          "location": "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai",
+          "serverDate": "Mon, 26 Oct 2026 07:35:37 GMT",
+          "cfRay": "a507c90d4dcfd593-AMS",
+          "cfCacheStatus": null,
+          "title": "308 Permanent Redirect",
+          "h1": [
+            "308 Permanent Redirect"
+          ],
+          "canonical": [],
+          "robots": [],
+          "mainTextSha256": "f1cb1fbfa7ad217392a924129046f1dbdfa7a145471e66d779898606d49dc293",
+          "htmlFile": "html/source-ar-mechanical-repair-144-hop0.html"
+        },
+        {
+          "at": "2026-10-26T07:35:34.678Z",
+          "status": 200,
+          "location": null,
+          "serverDate": "Mon, 26 Oct 2026 07:35:38 GMT",
+          "cfRay": "a507c90e3a40d593-AMS",
+          "cfCacheStatus": "DYNAMIC",
+          "title": "إصلاح محرك مرسيدس في دبي | ديجي تيك القوز",
+          "h1": [
+            "إصلاح محرك مرسيدس والأعطال الميكانيكية في دبي"
+          ],
+          "canonical": [
+            "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai"
+          ],
+          "robots": [
+            "index, follow, max-image-preview:large"
+          ],
+          "mainTextSha256": "e02e2625c01ba1d5dc310a765826833ff28bf66d1b9c5f7b0cac789d6c3ac463",
+          "htmlFile": "html/source-ar-mechanical-repair-144-hop1.html"
+        }
+      ],
+      "loop": false
+    },
+    "currentPasses": true,
+    "interpretation": "The exact request now passes in this observation. The prior actual homepage response remains valid historical evidence; HTTP alone does not establish its cause or worldwide convergence."
+  },
+  "limits": [
+    "This is one runtime/client network; Cloudflare edge suffixes do not prove independent geographic or device coverage.",
+    "The canonical/indexability assertions check declared HTTP/HTML policy, not Google-selected canonical or indexing.",
+    "No configuration, cache, website content or indexing mutations were performed.",
+    "Original Phase2A failure and all earlier evidence are preserved unchanged."
+  ]
+}

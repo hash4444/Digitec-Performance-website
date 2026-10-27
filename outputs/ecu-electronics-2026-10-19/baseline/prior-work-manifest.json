@@ -1,0 +1,58 @@
+{
+  "base": "acef3427b57b48259bc5b39d6a0f75798603ae95",
+  "files": [
+    {
+      "file": "src/pages/ServicePage.tsx",
+      "change": "modified",
+      "beforeSha256": "f57f045aae9869c5fb987ae6de519f9e9a49feab09b052386942d8b61b50ffc5",
+      "afterSha256": "1162275ac2194b99778c3a0ed5bb948913e4d4ac774cd8602f6163a418484b3e",
+      "bytes": 40755
+    },
+    {
+      "file": "src/pages/BrandServicePage.tsx",
+      "change": "modified",
+      "beforeSha256": "033cbc5a228c36e83877e1184161a337a4fa2b12ed1db8272c2509eee44960e4",
+      "afterSha256": "809472b57a242af3d59fac95370b7f263211b605a91e9d382c2c14c255e0b9af",
+      "bytes": 116450
+    },
+    {
+      "file": "src/components/DiagnosticAcEnquiryPanel.tsx",
+      "change": "added",
+      "beforeSha256": null,
+      "afterSha256": "5f1a1e5f027e96e915f35b211973c521fa18f0584b3cb66868031c81e81d1bfa",
+      "bytes": 4264
+    },
+    {
+      "file": "src/data/diagnosticsAcGeneralContent.ts",
+      "change": "added",
+      "beforeSha256": null,
+      "afterSha256": "ba94d9fec0917704b2441acb2ed38029eadac984700bda5c6a55a739ec5cb71a",
+      "bytes": 25756
+    },
+    {
+      "file": "src/data/diagnosticsAcBrandContent.ts",
+      "change": "added",
+      "beforeSha256": null,
+      "afterSha256": "034b378502080ecef31d6e43eb857d79c9c073a3cd540c5a3013ae1b349ecf76",
+      "bytes": 25071
+    },
+    {
+      "file": "scripts/validate-query-release.mjs",
+      "change": "modified",
+      "beforeSha256": "fd3366bcea1b2094de7c513a9e058a3786c1aae9923689ce555c1896adb5d0f0",
+      "afterSha256": "c918eabe56f3929228719466b76453b9d5344a84385c96bea79d542bca9407b3",
+      "bytes": 7678
+    }
+  ],
+  "qaFixtures": [
+    "outputs/five-brand-service-2026-10-19/conversion/test-five-brand-browser.mjs",
+    "outputs/repair-service-2026-10-19/qa/test-repair-browser.mjs",
+    "outputs/repair-service-2026-10-19/qa/repair-routes.mjs",
+    "outputs/repair-service-2026-10-19/qa/test-brand-form.mjs"
+  ],
+  "excluded": [
+    "supabase/functions/mcp/index.ts",
+    "outputs/seo-2026-09-16/master-validation.json",
+    "all other pre-existing changes and evidence"
+  ]
+}

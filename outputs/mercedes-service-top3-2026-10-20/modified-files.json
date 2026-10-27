@@ -1,0 +1,56 @@
+{
+  "checkedAt": "2026-10-20T05:44:48.452Z",
+  "campaignDateDubai": "2026-10-20",
+  "base": "2971301bb37d38f4785844af067eebd55f9f6dda",
+  "branch": "main",
+  "files": [
+    {
+      "file": "src/components/MercedesMaintenanceScope.tsx",
+      "status": "modified",
+      "beforeSha256": "914256ae6d61f6e86257fc3cb1e70b1e9c44100155a8ea48240df276d8037a69",
+      "afterSha256": "1e6728a7de40ef56f7bf77af495784cff38c34cd9a653d6777757fee62616aff",
+      "bytes": 9693
+    },
+    {
+      "file": "src/lib/route-manifest.ts",
+      "status": "modified",
+      "beforeSha256": "aa472adba4ea4407a894734b64a156d43da7a8cbfe873e6a7e9a86c12485de49",
+      "afterSha256": "a05194b6899972cb91945af2ea0c0a3fd836055a5d8c52d87fc3f9a6a219d0d5",
+      "bytes": 15543
+    },
+    {
+      "file": "src/pages/BrandPage.tsx",
+      "status": "modified",
+      "beforeSha256": "231cb000c99d7387629ffa409dfe99917fbd7ee3435f6ec542ecd933953de8b1",
+      "afterSha256": "f5d68037c056bb1f32d73cc5c009e066287da0ab225267b9606d834a23002c33",
+      "bytes": 135256
+    },
+    {
+      "file": "src/pages/Services.tsx",
+      "status": "modified",
+      "beforeSha256": "b70b5b12101ec775c572a75e36faa4bdc66b76b3dbe7f6a8170f6b86f19fe6cb",
+      "afterSha256": "77e7cc3aa83277602271ec3106506d4f360bd4fb6737445a5a1235a435ed09d0",
+      "bytes": 13561
+    },
+    {
+      "file": "src/components/MercedesServiceBookingForm.tsx",
+      "status": "new",
+      "beforeSha256": null,
+      "afterSha256": "c45f5468d2361b5b2de37edee90fff8b1d0cd145e2379439c8aad973fd1291fd",
+      "bytes": 7652
+    },
+    {
+      "file": "src/data/mercedesServiceCampaign.ts",
+      "status": "new",
+      "beforeSha256": null,
+      "afterSha256": "98012343a3f8450ba6a34bb094425beaa4049932d534d9115d0b373ded32c8dd",
+      "bytes": 8239
+    }
+  ],
+  "sourceFiles": 6,
+  "newRoutes": 0,
+  "committed": false,
+  "pushed": false,
+  "deployed": false,
+  "published": false
+}

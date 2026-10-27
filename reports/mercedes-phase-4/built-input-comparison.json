@@ -1,0 +1,82 @@
+{
+  "checkedAtUtc": "2026-10-26T09:14:20.253Z",
+  "originalInputCount": 665,
+  "copies": {
+    "baseline": {
+      "compared": 665,
+      "changed": [
+        {
+          "file": "cloudflare/routing-response-data.js",
+          "before": "81d88b0bc0dfb8a97221111494deff467958dd36efcf4802fd58bc69c1b86a27",
+          "after": "48816c06cbe5320a2f42958cb9622590a8230b6b74c6468372eae5c6b382b849"
+        },
+        {
+          "file": "docs/seo/protection-release-validation.json",
+          "before": "5bf229b97e973c6b3f6a03df2661c76b411b876ba38e35fb1a794e2f314ec841",
+          "after": "5f1fc6facdf0a8fdbde18310f899b7571d2857119b1efa1be612958b846acbb1"
+        },
+        {
+          "file": "docs/seo/query-release-validation.json",
+          "before": "8e384fd3c68555fdcadbb6c0dfca5105e26bcb1ce55da943bff22a459b568263",
+          "after": "819a03b998c826ddca3b5220390b70473b05219f4102fb3a4da87158abd12529"
+        },
+        {
+          "file": "docs/seo/route-schema-matrix.csv",
+          "before": "1b1ee3c4202174fb42c4e2721a4c69ba0b1445b2555c5b8882f25d4af6deb6a5",
+          "after": "f5b72534466d00aae699093cd62fd37e34a061cbd8ddf738089aeecd8d12174d"
+        },
+        {
+          "file": "public/sitemap.xml",
+          "before": "f74410aac2d522838dbce5037843cd03b34096817581d6732f852b86926a2c67",
+          "after": "294c4917d6a19ff8d5fb3575d780debe465643520031850802355d1b54ad42cf"
+        }
+      ]
+    },
+    "candidate": {
+      "compared": 665,
+      "changed": [
+        {
+          "file": "cloudflare/routing-response-data.js",
+          "before": "81d88b0bc0dfb8a97221111494deff467958dd36efcf4802fd58bc69c1b86a27",
+          "after": "ddcb3b117b5fc4e717cc249828b2b6029360452b60d037921a032cea4c0791cc"
+        },
+        {
+          "file": "docs/seo/protection-release-validation.json",
+          "before": "5bf229b97e973c6b3f6a03df2661c76b411b876ba38e35fb1a794e2f314ec841",
+          "after": "8a8834357e055f67fb924f84f01c3f7f3dc28da6c677eaae539dad1d6cde13b6"
+        },
+        {
+          "file": "docs/seo/query-release-validation.json",
+          "before": "8e384fd3c68555fdcadbb6c0dfca5105e26bcb1ce55da943bff22a459b568263",
+          "after": "d599464c54eb1ed53031c59231914737f2f9bdeeddedd3a09f7f21b17a6ec0d0"
+        },
+        {
+          "file": "docs/seo/route-schema-matrix.csv",
+          "before": "1b1ee3c4202174fb42c4e2721a4c69ba0b1445b2555c5b8882f25d4af6deb6a5",
+          "after": "f5b72534466d00aae699093cd62fd37e34a061cbd8ddf738089aeecd8d12174d"
+        },
+        {
+          "file": "public/sitemap.xml",
+          "before": "f74410aac2d522838dbce5037843cd03b34096817581d6732f852b86926a2c67",
+          "after": "294c4917d6a19ff8d5fb3575d780debe465643520031850802355d1b54ad42cf"
+        },
+        {
+          "file": "src/data/mercedesServiceContent.ts",
+          "before": "7ebb6013761160e8bebc48e3f3080ceae2e3fb330d4fa6edf86f02974481718d",
+          "after": "bd941c4c6e03c43501e32f304fea8df5de07941b93be3598b1d07431eb91b339"
+        },
+        {
+          "file": "src/pages/BrandPage.tsx",
+          "before": "f5d68037c056bb1f32d73cc5c009e066287da0ab225267b9606d834a23002c33",
+          "after": "fed34d81d52c879960d90eb38db91e31d9290ceb7b9895a222a2d075feb13bc2"
+        },
+        {
+          "file": "src/pages/BrandServicePage.tsx",
+          "before": "b8bd67b40548b6e3c53db7611e7dd463cd5c92ce6774bbbdc954695b4395df2f",
+          "after": "38bca41fbfd9d7fba3a5ce9701791facc77d1fc0a7a67806903f71e7a096512c"
+        }
+      ]
+    }
+  },
+  "passed": false
+}

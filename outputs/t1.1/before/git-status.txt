@@ -1,0 +1,40 @@
+ M cloudflare/digitec-seo-router.js
+ M cloudflare/mercedes-seo-router.js
+ M cloudflare/routing-response-data.js
+ M docs/seo/mercedes-permanent-redirects.csv
+ M docs/seo/paint-care-cluster-audit.json
+ M docs/seo/protection-release-validation.json
+ M docs/seo/query-release-validation.json
+ M docs/seo/route-schema-matrix.csv
+ M docs/seo/schema-inventory.md
+ M docs/seo/suspension-validation.json
+ M docs/seo/transmission-validation.json
+ M public/sitemap.xml
+ M scripts/prerender-seo.mjs
+ M scripts/test-production-seo-router.mjs
+ M src/App.tsx
+ M src/components/BrandBookingForm.tsx
+ M src/components/TuningConfigurator.tsx
+ M src/data/aiGuidePosts.ts
+ M src/data/audiModelPages.ts
+ M src/data/bestWorkshopPages.ts
+ M src/data/bmwModelPages.ts
+ M src/data/brandWorkshopArticles.ts
+ M src/data/brands.ts
+ M src/i18n/ar-blog.ts
+ M src/i18n/ar-general-blog-content.ts
+ M src/i18n/ar-tuning.ts
+ M src/i18n/locale.ts
+ M src/lib/route-manifest.ts
+ M src/lib/routing-paths.json
+ M src/pages/BlogPost.tsx
+ M src/pages/BrandWorkshopArticlePage.tsx
+ M src/pages/Services.tsx
+ M src/pages/SitemapPage.tsx
+ M src/pages/Tuning.tsx
+?? outputs/t1/
+?? scripts/validate-tuning.mjs
+?? src/components/TuningConfigurationDetails.tsx
+?? src/data/t1UpdatedPaths.ts
+?? src/data/tuningModelPages.ts
+?? src/pages/TuningModelPage.tsx

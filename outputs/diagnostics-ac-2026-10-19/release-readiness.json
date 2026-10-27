@@ -1,0 +1,31 @@
+{
+  "completedAt": "2026-10-19T08:19:56.124Z",
+  "base": "acef3427b57b48259bc5b39d6a0f75798603ae95",
+  "localImplementationComplete": true,
+  "localQaPassed": true,
+  "productionGo": false,
+  "productionRecommendation": "NO-GO pending authenticated current origin/edge and rollback verification, drift gates and explicit authorization",
+  "selectedOwners": 8,
+  "localePages": 16,
+  "newRoutes": 0,
+  "measuredQueries": 40,
+  "proposedQueries": 10,
+  "modifiedFiles": [
+    "src/pages/ServicePage.tsx",
+    "src/pages/BrandServicePage.tsx",
+    "src/components/DiagnosticAcEnquiryPanel.tsx",
+    "src/data/diagnosticsAcGeneralContent.ts",
+    "src/data/diagnosticsAcBrandContent.ts",
+    "scripts/validate-query-release.mjs"
+  ],
+  "sourceSha256": "3d37bc4323d40b413ec1b0469acb38960c20a4914f3df91b7953d75b4851d7ac",
+  "reviewSourceArchiveSha256": "587dec6e7be8594a6edd60735a834fc9b49ef3a685d93e99ea02491c1e2009cd",
+  "originalUnrelatedFilesPreserved": 31320,
+  "committed": false,
+  "pushed": false,
+  "deployed": false,
+  "published": false,
+  "googleBusinessProfileModified": false,
+  "realCustomerEnquirySent": false,
+  "report": "COMPLETED-REPORT.txt"
+}

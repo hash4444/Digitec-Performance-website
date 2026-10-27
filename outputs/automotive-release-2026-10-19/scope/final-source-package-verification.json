@@ -1,0 +1,113 @@
+{
+  "checkedAt": "2026-10-19T07:39:31.3721766Z",
+  "base": "6180f453feaaf21b8c786f23bb3867a09666ed64",
+  "sourceFileCount": 11,
+  "archiveFileCount": 11,
+  "allSourceHashesMatchApproved": true,
+  "sourcePatchSha256": "b2b24835124a80c3def0ee4bb397a70b3d61474d51b57976564a589721f92d90",
+  "patchMatchesOriginalReviewedHash": true,
+  "patchMatchesArtifactManifest": true,
+  "readOnlyReversePatchCheckExit": 0,
+  "releaseRecommendation": "GO for source candidate only. Production NO-GO: Cloudflare authentication returned 403; active production configuration and rollback remain unverified.",
+  "files": [
+    {
+      "file": "src/data/brands.ts",
+      "approvedSha256": "bc5ff647c044a7ea4b800cb83738ebdc6ee8bcab720bf6af4e8c2f222a351464",
+      "workspaceSha256": "bc5ff647c044a7ea4b800cb83738ebdc6ee8bcab720bf6af4e8c2f222a351464",
+      "candidateSha256": "bc5ff647c044a7ea4b800cb83738ebdc6ee8bcab720bf6af4e8c2f222a351464",
+      "packagedSha256": "bc5ff647c044a7ea4b800cb83738ebdc6ee8bcab720bf6af4e8c2f222a351464",
+      "overlayManifestSha256": "bc5ff647c044a7ea4b800cb83738ebdc6ee8bcab720bf6af4e8c2f222a351464",
+      "allHashesMatch": true
+    },
+    {
+      "file": "src/data/priorityBrandSeo.ts",
+      "approvedSha256": "f063a940185a569e28db046a7fb9148fed9d1d95928608e8435e1e491b34b6eb",
+      "workspaceSha256": "f063a940185a569e28db046a7fb9148fed9d1d95928608e8435e1e491b34b6eb",
+      "candidateSha256": "f063a940185a569e28db046a7fb9148fed9d1d95928608e8435e1e491b34b6eb",
+      "packagedSha256": "f063a940185a569e28db046a7fb9148fed9d1d95928608e8435e1e491b34b6eb",
+      "overlayManifestSha256": "f063a940185a569e28db046a7fb9148fed9d1d95928608e8435e1e491b34b6eb",
+      "allHashesMatch": true
+    },
+    {
+      "file": "src/i18n/ar-brands.ts",
+      "approvedSha256": "70295d4699ca0be73a18c1bf7efc11d65db29e64f6937667e3b5016cd5ddff4b",
+      "workspaceSha256": "70295d4699ca0be73a18c1bf7efc11d65db29e64f6937667e3b5016cd5ddff4b",
+      "candidateSha256": "70295d4699ca0be73a18c1bf7efc11d65db29e64f6937667e3b5016cd5ddff4b",
+      "packagedSha256": "70295d4699ca0be73a18c1bf7efc11d65db29e64f6937667e3b5016cd5ddff4b",
+      "overlayManifestSha256": "70295d4699ca0be73a18c1bf7efc11d65db29e64f6937667e3b5016cd5ddff4b",
+      "allHashesMatch": true
+    },
+    {
+      "file": "src/pages/BrandPage.tsx",
+      "approvedSha256": "231cb000c99d7387629ffa409dfe99917fbd7ee3435f6ec542ecd933953de8b1",
+      "workspaceSha256": "231cb000c99d7387629ffa409dfe99917fbd7ee3435f6ec542ecd933953de8b1",
+      "candidateSha256": "231cb000c99d7387629ffa409dfe99917fbd7ee3435f6ec542ecd933953de8b1",
+      "packagedSha256": "231cb000c99d7387629ffa409dfe99917fbd7ee3435f6ec542ecd933953de8b1",
+      "overlayManifestSha256": "231cb000c99d7387629ffa409dfe99917fbd7ee3435f6ec542ecd933953de8b1",
+      "allHashesMatch": true
+    },
+    {
+      "file": "scripts/test-master-seo-browser.mjs",
+      "approvedSha256": "9eaa97c880bcc308b09684d662b151d51d3f9c69511acbfd6432de209050ee2b",
+      "workspaceSha256": "9eaa97c880bcc308b09684d662b151d51d3f9c69511acbfd6432de209050ee2b",
+      "candidateSha256": "9eaa97c880bcc308b09684d662b151d51d3f9c69511acbfd6432de209050ee2b",
+      "packagedSha256": "9eaa97c880bcc308b09684d662b151d51d3f9c69511acbfd6432de209050ee2b",
+      "overlayManifestSha256": "9eaa97c880bcc308b09684d662b151d51d3f9c69511acbfd6432de209050ee2b",
+      "allHashesMatch": true
+    },
+    {
+      "file": "src/components/BrandServiceScope.tsx",
+      "approvedSha256": "090efec27c4931938ce0eee88501a7d994a1b4bd7ce88020520142cc9d2ce8f9",
+      "workspaceSha256": "090efec27c4931938ce0eee88501a7d994a1b4bd7ce88020520142cc9d2ce8f9",
+      "candidateSha256": "090efec27c4931938ce0eee88501a7d994a1b4bd7ce88020520142cc9d2ce8f9",
+      "packagedSha256": "090efec27c4931938ce0eee88501a7d994a1b4bd7ce88020520142cc9d2ce8f9",
+      "overlayManifestSha256": "090efec27c4931938ce0eee88501a7d994a1b4bd7ce88020520142cc9d2ce8f9",
+      "allHashesMatch": true
+    },
+    {
+      "file": "src/data/brandServiceSprint.ts",
+      "approvedSha256": "b9ec9f06ffbca5aa32ebc170ed922761eaf78a77ac4eaead4f018368167108c0",
+      "workspaceSha256": "b9ec9f06ffbca5aa32ebc170ed922761eaf78a77ac4eaead4f018368167108c0",
+      "candidateSha256": "b9ec9f06ffbca5aa32ebc170ed922761eaf78a77ac4eaead4f018368167108c0",
+      "packagedSha256": "b9ec9f06ffbca5aa32ebc170ed922761eaf78a77ac4eaead4f018368167108c0",
+      "overlayManifestSha256": "b9ec9f06ffbca5aa32ebc170ed922761eaf78a77ac4eaead4f018368167108c0",
+      "allHashesMatch": true
+    },
+    {
+      "file": "src/pages/BrandServicePage.tsx",
+      "approvedSha256": "033cbc5a228c36e83877e1184161a337a4fa2b12ed1db8272c2509eee44960e4",
+      "workspaceSha256": "033cbc5a228c36e83877e1184161a337a4fa2b12ed1db8272c2509eee44960e4",
+      "candidateSha256": "033cbc5a228c36e83877e1184161a337a4fa2b12ed1db8272c2509eee44960e4",
+      "packagedSha256": "033cbc5a228c36e83877e1184161a337a4fa2b12ed1db8272c2509eee44960e4",
+      "overlayManifestSha256": "033cbc5a228c36e83877e1184161a337a4fa2b12ed1db8272c2509eee44960e4",
+      "allHashesMatch": true
+    },
+    {
+      "file": "src/components/RepairEnquiryPanel.tsx",
+      "approvedSha256": "976f270a7d55fdc9e239ed1684564f1ea1d4ae5c32722f8fb60108db5751b09b",
+      "workspaceSha256": "976f270a7d55fdc9e239ed1684564f1ea1d4ae5c32722f8fb60108db5751b09b",
+      "candidateSha256": "976f270a7d55fdc9e239ed1684564f1ea1d4ae5c32722f8fb60108db5751b09b",
+      "packagedSha256": "976f270a7d55fdc9e239ed1684564f1ea1d4ae5c32722f8fb60108db5751b09b",
+      "overlayManifestSha256": "976f270a7d55fdc9e239ed1684564f1ea1d4ae5c32722f8fb60108db5751b09b",
+      "allHashesMatch": true
+    },
+    {
+      "file": "src/data/repairServiceArabic.ts",
+      "approvedSha256": "8ac0044a9a50a9f8a108ffd77cfc343306c7d13848c80f4584ff1ffb99b113f1",
+      "workspaceSha256": "8ac0044a9a50a9f8a108ffd77cfc343306c7d13848c80f4584ff1ffb99b113f1",
+      "candidateSha256": "8ac0044a9a50a9f8a108ffd77cfc343306c7d13848c80f4584ff1ffb99b113f1",
+      "packagedSha256": "8ac0044a9a50a9f8a108ffd77cfc343306c7d13848c80f4584ff1ffb99b113f1",
+      "overlayManifestSha256": "8ac0044a9a50a9f8a108ffd77cfc343306c7d13848c80f4584ff1ffb99b113f1",
+      "allHashesMatch": true
+    },
+    {
+      "file": "src/data/repairServiceContent.ts",
+      "approvedSha256": "3c32436b9b5ccc6bc78eb6bc03c6fb6af0426ee5d95382ef57edf874f03f7273",
+      "workspaceSha256": "3c32436b9b5ccc6bc78eb6bc03c6fb6af0426ee5d95382ef57edf874f03f7273",
+      "candidateSha256": "3c32436b9b5ccc6bc78eb6bc03c6fb6af0426ee5d95382ef57edf874f03f7273",
+      "packagedSha256": "3c32436b9b5ccc6bc78eb6bc03c6fb6af0426ee5d95382ef57edf874f03f7273",
+      "overlayManifestSha256": "3c32436b9b5ccc6bc78eb6bc03c6fb6af0426ee5d95382ef57edf874f03f7273",
+      "allHashesMatch": true
+    }
+  ]
+}

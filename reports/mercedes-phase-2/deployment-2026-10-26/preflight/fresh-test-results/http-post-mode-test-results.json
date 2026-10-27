@@ -1,0 +1,43 @@
+{
+  "at": "2026-10-26T07:07:58.812Z",
+  "syntheticOnly": true,
+  "noNetworkRequests": true,
+  "noProductionDeploymentOrPostDeploymentResult": true,
+  "passed": 3,
+  "results": [
+    {
+      "test": "valid-offline-post",
+      "expectedExitCode": 0,
+      "observedExitCode": 0,
+      "passed": 852,
+      "directory": "reports\\mercedes-phase-2\\evidence\\http\\SYNTHETIC-post-2026-10-26T07-07-58-197Z",
+      "cases": 326,
+      "networkRequests": 0,
+      "fixtureResponses": 612,
+      "assertions": 852,
+      "failed": 0,
+      "sourceCases": 192,
+      "protectedOilCases": 48
+    },
+    {
+      "test": "lost-query-negative",
+      "expectedExitCode": 1,
+      "observedExitCode": 1,
+      "passed": 724,
+      "directory": "reports\\mercedes-phase-2\\evidence\\http\\SYNTHETIC-post-2026-10-26T07-07-58-524Z",
+      "cases": 326,
+      "networkRequests": 0,
+      "fixtureResponses": 612,
+      "assertions": 852,
+      "failed": 128,
+      "sourceCases": 192,
+      "protectedOilCases": 48
+    },
+    {
+      "test": "mismatched-proposal-baseline-guard",
+      "expectedExitCode": 1,
+      "observedExitCode": 1,
+      "passed": true
+    }
+  ]
+}

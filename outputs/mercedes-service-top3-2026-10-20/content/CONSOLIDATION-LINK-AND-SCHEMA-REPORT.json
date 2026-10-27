@@ -1,0 +1,74 @@
+{
+  "checkedAt": "2026-10-20T05:46:31.424Z",
+  "passed": true,
+  "method": "Compare all parsed JSON-LD graph IDs, Service provider references and canonical URLs in before/after built hub HTML. See qa/metadata-before-after.json for the single authoritative before/after visible-text length comparison.",
+  "pages": [
+    {
+      "route": "/brands/mercedes-benz-service-dubai",
+      "canonicalBefore": "https://digitecme.com/brands/mercedes-benz-service-dubai",
+      "canonicalAfter": "https://digitecme.com/brands/mercedes-benz-service-dubai",
+      "sameEntityIds": true,
+      "providerBefore": {
+        "@id": "https://digitecme.com/#business"
+      },
+      "providerAfter": {
+        "@id": "https://digitecme.com/#business"
+      },
+      "sameProvider": true,
+      "entityIds": [
+        "https://digitecme.com/#brand-mercedes-benz",
+        "https://digitecme.com/#business",
+        "https://digitecme.com/#logo",
+        "https://digitecme.com/#organization",
+        "https://digitecme.com/#service-catalog",
+        "https://digitecme.com/#website",
+        "https://digitecme.com/brands/mercedes-benz-service-dubai#breadcrumb",
+        "https://digitecme.com/brands/mercedes-benz-service-dubai#faq",
+        "https://digitecme.com/brands/mercedes-benz-service-dubai#service",
+        "https://digitecme.com/brands/mercedes-benz-service-dubai#webpage"
+      ],
+      "beforeFaqCount": 9,
+      "afterFaqCount": 6,
+      "afterHtmlSha256": "41aeb81cee73a597fcfaed57adcde5fd97e7f07e4ab6082e67c00508cae20919"
+    },
+    {
+      "route": "/ar/brands/mercedes-benz-service-dubai",
+      "canonicalBefore": "https://digitecme.com/ar/brands/mercedes-benz-service-dubai",
+      "canonicalAfter": "https://digitecme.com/ar/brands/mercedes-benz-service-dubai",
+      "sameEntityIds": true,
+      "providerBefore": {
+        "@id": "https://digitecme.com/#business"
+      },
+      "providerAfter": {
+        "@id": "https://digitecme.com/#business"
+      },
+      "sameProvider": true,
+      "entityIds": [
+        "https://digitecme.com/#brand-mercedes-benz",
+        "https://digitecme.com/#business",
+        "https://digitecme.com/#logo",
+        "https://digitecme.com/#organization",
+        "https://digitecme.com/#service-catalog",
+        "https://digitecme.com/#website",
+        "https://digitecme.com/ar/brands/mercedes-benz-service-dubai#breadcrumb",
+        "https://digitecme.com/ar/brands/mercedes-benz-service-dubai#faq",
+        "https://digitecme.com/ar/brands/mercedes-benz-service-dubai#service",
+        "https://digitecme.com/ar/brands/mercedes-benz-service-dubai#webpage"
+      ],
+      "beforeFaqCount": 5,
+      "afterFaqCount": 6,
+      "afterHtmlSha256": "792832123d68822abd6c23ac968fb2de3b29b26b5d1f990e2ed96aedca3a1051"
+    }
+  ],
+  "newContextualIncomingLinks": {
+    "sourcePages": [
+      "/services",
+      "/ar/services"
+    ],
+    "destination": "/brands/mercedes-benz-service-dubai#mercedes-maintenance-scope",
+    "arabicDestination": "/ar/brands/mercedes-benz-service-dubai#mercedes-maintenance-scope",
+    "newPlacements": 2
+  },
+  "schemaChanges": "Existing Service/WebPage names and descriptions align to visible servicing focus; existing FAQPage uses six visible questions per locale. All graph IDs and Service provider references retained. No new schema type, rating, offer price or AI-specific entity.",
+  "sitemap": "Only the two hub and two service directory lastmod values set to2026-10-20; all route and indexing policies retained."
+}

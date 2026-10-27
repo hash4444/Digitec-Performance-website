@@ -1,0 +1,1022 @@
+diff --git a/cloudflare/routing-response-data.js b/cloudflare/routing-response-data.js
+index 372da54..5fea0d6 100644
+--- a/cloudflare/routing-response-data.js
++++ b/cloudflare/routing-response-data.js
+@@ -2,4 +2,4 @@
+ export const validPaths = ["/","/about","/ar","/ar/about","/ar/best-audi-workshop-dubai","/ar/best-bmw-workshop-dubai","/ar/best-car-workshop-dubai","/ar/best-ferrari-workshop-dubai","/ar/best-lamborghini-workshop-dubai","/ar/best-porsche-workshop-dubai","/ar/best-range-rover-workshop-dubai","/ar/blog","/ar/blog/air-suspension-repair-dubai-guide","/ar/blog/aston-martin-best-workshop-dubai","/ar/blog/aston-martin-db11-service-dubai-guide","/ar/blog/audi-maintenance-guide-dubai","/ar/blog/audi-q7-service-dubai-guide","/ar/blog/audi-rs-service-dubai-guide","/ar/blog/bentley-best-workshop-dubai","/ar/blog/bentley-continental-gt-service-dubai-guide","/ar/blog/best-car-workshop-dubai","/ar/blog/best-defender-workshop-dubai","/ar/blog/best-oil-change-dubai-mercedes","/ar/blog/bmw-m-service-dubai-guide","/ar/blog/bmw-maintenance-guide-dubai","/ar/blog/bmw-x5-service-dubai-guide","/ar/blog/brake-repair-dubai","/ar/blog/cadillac-best-workshop-dubai","/ar/blog/car-ac-not-cold-dubai-causes","/ar/blog/car-ac-repair-dubai","/ar/blog/car-battery-life-dubai-heat","/ar/blog/car-battery-replacement-dubai","/ar/blog/car-service-cost-dubai-luxury-brands","/ar/blog/car-service-interval-dubai-heat","/ar/blog/ceramic-coating-vs-ppf-dubai","/ar/blog/check-engine-light-dubai-guide","/ar/blog/chevrolet-best-workshop-dubai","/ar/blog/dealer-vs-independent-workshop-dubai","/ar/blog/defender-service-dubai-guide","/ar/blog/ecu-remap-safe-dubai-guide","/ar/blog/engine-overheating-dubai-what-to-do","/ar/blog/ferrari-488-service-dubai-guide","/ar/blog/ferrari-maintenance-guide-dubai","/ar/blog/ford-best-workshop-dubai","/ar/blog/g63-to-brabus-g800-conversion-dubai","/ar/blog/gad-tuning-explained","/ar/blog/how-much-is-my-mercedes-worth-dubai","/ar/blog/jaguar-best-workshop-dubai","/ar/blog/lamborghini-maintenance-guide-dubai","/ar/blog/lamborghini-urus-service-dubai-guide","/ar/blog/land-rover-best-workshop-dubai","/ar/blog/maserati-best-workshop-dubai","/ar/blog/maybach-best-workshop-dubai","/ar/blog/maybach-s580-service-dubai-guide","/ar/blog/mclaren-720s-service-dubai-guide","/ar/blog/mclaren-best-workshop-dubai","/ar/blog/mercedes-amg-gt-black-series-1300hp-build-dubai","/ar/blog/mercedes-amg-gt-tuning-dubai","/ar/blog/mercedes-benz-maintenance-guide-dubai","/ar/blog/mercedes-c-class-service-dubai-guide","/ar/blog/mercedes-e-class-service-dubai-guide","/ar/blog/mercedes-g63-service-dubai-guide","/ar/blog/mercedes-repair-dubai-complete-guide","/ar/blog/mercedes-s-class-service-dubai-guide","/ar/blog/mercedes-service-cost-dubai-guide","/ar/blog/mercedes-service-intervals-dubai-heat","/ar/blog/mini-best-workshop-dubai","/ar/blog/oil-specification-guide-dubai-luxury","/ar/blog/porsche-911-service-dubai-guide","/ar/blog/porsche-cayenne-service-dubai-guide","/ar/blog/porsche-maintenance-guide-dubai","/ar/blog/porsche-panamera-service-dubai-guide","/ar/blog/pre-purchase-inspection-dubai-guide","/ar/blog/range-rover-land-rover-air-suspension-problems-dubai","/ar/blog/range-rover-maintenance-guide-dubai","/ar/blog/range-rover-sport-service-dubai-guide","/ar/blog/range-rover-vogue-service-dubai-guide","/ar/blog/rolls-royce-best-workshop-dubai","/ar/blog/rolls-royce-ghost-service-dubai-guide","/ar/blog/summer-car-preparation-dubai-checklist","/ar/blog/transmission-service-7g-9g-dubai","/ar/blog/volkswagen-best-workshop-dubai","/ar/blog/why-ceramic-coating-matters-uae","/ar/brands","/ar/brands/aston-martin-service-dubai","/ar/brands/aston-martin-service-dubai/ac-repair","/ar/brands/aston-martin-service-dubai/battery-replacement","/ar/brands/aston-martin-service-dubai/body-repair","/ar/brands/aston-martin-service-dubai/brake-repair","/ar/brands/aston-martin-service-dubai/electrical-repair","/ar/brands/aston-martin-service-dubai/engine-diagnostics","/ar/brands/aston-martin-service-dubai/exhaust-repair","/ar/brands/aston-martin-service-dubai/fuel-system-repair","/ar/brands/aston-martin-service-dubai/mechanical-repair","/ar/brands/aston-martin-service-dubai/oil-change","/ar/brands/aston-martin-service-dubai/steering-repair","/ar/brands/aston-martin-service-dubai/suspension-repair","/ar/brands/aston-martin-service-dubai/tire-repair","/ar/brands/aston-martin-service-dubai/transmission-repair","/ar/brands/audi-service-dubai","/ar/brands/audi-service-dubai/ac-repair","/ar/brands/audi-service-dubai/battery-replacement","/ar/brands/audi-service-dubai/body-repair","/ar/brands/audi-service-dubai/brake-repair","/ar/brands/audi-service-dubai/electrical-repair","/ar/brands/audi-service-dubai/engine-diagnostics","/ar/brands/audi-service-dubai/exhaust-repair","/ar/brands/audi-service-dubai/fuel-system-repair","/ar/brands/audi-service-dubai/mechanical-repair","/ar/brands/audi-service-dubai/oil-change","/ar/brands/audi-service-dubai/steering-repair","/ar/brands/audi-service-dubai/suspension-repair","/ar/brands/audi-service-dubai/tire-repair","/ar/brands/audi-service-dubai/transmission-repair","/ar/brands/bentley-service-dubai","/ar/brands/bentley-service-dubai/ac-repair","/ar/brands/bentley-service-dubai/battery-replacement","/ar/brands/bentley-service-dubai/body-repair","/ar/brands/bentley-service-dubai/brake-repair","/ar/brands/bentley-service-dubai/electrical-repair","/ar/brands/bentley-service-dubai/engine-diagnostics","/ar/brands/bentley-service-dubai/exhaust-repair","/ar/brands/bentley-service-dubai/fuel-system-repair","/ar/brands/bentley-service-dubai/mechanical-repair","/ar/brands/bentley-service-dubai/oil-change","/ar/brands/bentley-service-dubai/steering-repair","/ar/brands/bentley-service-dubai/suspension-repair","/ar/brands/bentley-service-dubai/tire-repair","/ar/brands/bentley-service-dubai/transmission-repair","/ar/brands/bmw-service-dubai","/ar/brands/bmw-service-dubai/ac-repair","/ar/brands/bmw-service-dubai/battery-replacement","/ar/brands/bmw-service-dubai/body-repair","/ar/brands/bmw-service-dubai/brake-repair","/ar/brands/bmw-service-dubai/electrical-repair","/ar/brands/bmw-service-dubai/engine-diagnostics","/ar/brands/bmw-service-dubai/exhaust-repair","/ar/brands/bmw-service-dubai/fuel-system-repair","/ar/brands/bmw-service-dubai/mechanical-repair","/ar/brands/bmw-service-dubai/oil-change","/ar/brands/bmw-service-dubai/steering-repair","/ar/brands/bmw-service-dubai/suspension-repair","/ar/brands/bmw-service-dubai/tire-repair","/ar/brands/bmw-service-dubai/transmission-repair","/ar/brands/bugatti-service-dubai","/ar/brands/bugatti-service-dubai/ac-repair","/ar/brands/bugatti-service-dubai/battery-replacement","/ar/brands/bugatti-service-dubai/body-repair","/ar/brands/bugatti-service-dubai/brake-repair","/ar/brands/bugatti-service-dubai/electrical-repair","/ar/brands/bugatti-service-dubai/engine-diagnostics","/ar/brands/bugatti-service-dubai/exhaust-repair","/ar/brands/bugatti-service-dubai/fuel-system-repair","/ar/brands/bugatti-service-dubai/mechanical-repair","/ar/brands/bugatti-service-dubai/oil-change","/ar/brands/bugatti-service-dubai/steering-repair","/ar/brands/bugatti-service-dubai/suspension-repair","/ar/brands/bugatti-service-dubai/tire-repair","/ar/brands/bugatti-service-dubai/transmission-repair","/ar/brands/byd-service-dubai","/ar/brands/byd-service-dubai/ac-repair","/ar/brands/byd-service-dubai/battery-replacement","/ar/brands/byd-service-dubai/body-repair","/ar/brands/byd-service-dubai/brake-repair","/ar/brands/byd-service-dubai/electrical-repair","/ar/brands/byd-service-dubai/engine-diagnostics","/ar/brands/byd-service-dubai/exhaust-repair","/ar/brands/byd-service-dubai/fuel-system-repair","/ar/brands/byd-service-dubai/mechanical-repair","/ar/brands/byd-service-dubai/oil-change","/ar/brands/byd-service-dubai/steering-repair","/ar/brands/byd-service-dubai/suspension-repair","/ar/brands/byd-service-dubai/tire-repair","/ar/brands/byd-service-dubai/transmission-repair","/ar/brands/cadillac-service-dubai","/ar/brands/cadillac-service-dubai/ac-repair","/ar/brands/cadillac-service-dubai/battery-replacement","/ar/brands/cadillac-service-dubai/body-repair","/ar/brands/cadillac-service-dubai/brake-repair","/ar/brands/cadillac-service-dubai/electrical-repair","/ar/brands/cadillac-service-dubai/engine-diagnostics","/ar/brands/cadillac-service-dubai/exhaust-repair","/ar/brands/cadillac-service-dubai/fuel-system-repair","/ar/brands/cadillac-service-dubai/mechanical-repair","/ar/brands/cadillac-service-dubai/oil-change","/ar/brands/cadillac-service-dubai/steering-repair","/ar/brands/cadillac-service-dubai/suspension-repair","/ar/brands/cadillac-service-dubai/tire-repair","/ar/brands/cadillac-service-dubai/transmission-repair","/ar/brands/chevrolet-service-dubai","/ar/brands/chevrolet-service-dubai/ac-repair","/ar/brands/chevrolet-service-dubai/brake-repair","/ar/brands/chevrolet-service-dubai/engine-diagnostics","/ar/brands/chevrolet-service-dubai/oil-change","/ar/brands/chevrolet-service-dubai/suspension-repair","/ar/brands/chevrolet-service-dubai/transmission-repair","/ar/brands/chrysler-service-dubai","/ar/brands/chrysler-service-dubai/ac-repair","/ar/brands/chrysler-service-dubai/brake-repair","/ar/brands/chrysler-service-dubai/engine-diagnostics","/ar/brands/chrysler-service-dubai/oil-change","/ar/brands/chrysler-service-dubai/suspension-repair","/ar/brands/chrysler-service-dubai/transmission-repair","/ar/brands/corvette-service-dubai","/ar/brands/corvette-service-dubai/ac-repair","/ar/brands/corvette-service-dubai/brake-repair","/ar/brands/corvette-service-dubai/engine-diagnostics","/ar/brands/corvette-service-dubai/oil-change","/ar/brands/corvette-service-dubai/suspension-repair","/ar/brands/corvette-service-dubai/transmission-repair","/ar/brands/defender-service-dubai","/ar/brands/defender-service-dubai/ac-repair","/ar/brands/defender-service-dubai/battery-replacement","/ar/brands/defender-service-dubai/body-repair","/ar/brands/defender-service-dubai/brake-repair","/ar/brands/defender-service-dubai/electrical-repair","/ar/brands/defender-service-dubai/engine-diagnostics","/ar/brands/defender-service-dubai/exhaust-repair","/ar/brands/defender-service-dubai/fuel-system-repair","/ar/brands/defender-service-dubai/mechanical-repair","/ar/brands/defender-service-dubai/oil-change","/ar/brands/defender-service-dubai/steering-repair","/ar/brands/defender-service-dubai/suspension-repair","/ar/brands/defender-service-dubai/tire-repair","/ar/brands/defender-service-dubai/transmission-repair","/ar/brands/dodge-service-dubai","/ar/brands/dodge-service-dubai/ac-repair","/ar/brands/dodge-service-dubai/brake-repair","/ar/brands/dodge-service-dubai/engine-diagnostics","/ar/brands/dodge-service-dubai/oil-change","/ar/brands/dodge-service-dubai/suspension-repair","/ar/brands/dodge-service-dubai/transmission-repair","/ar/brands/ferrari-service-dubai","/ar/brands/ferrari-service-dubai/ac-repair","/ar/brands/ferrari-service-dubai/battery-replacement","/ar/brands/ferrari-service-dubai/body-repair","/ar/brands/ferrari-service-dubai/brake-repair","/ar/brands/ferrari-service-dubai/electrical-repair","/ar/brands/ferrari-service-dubai/engine-diagnostics","/ar/brands/ferrari-service-dubai/exhaust-repair","/ar/brands/ferrari-service-dubai/fuel-system-repair","/ar/brands/ferrari-service-dubai/mechanical-repair","/ar/brands/ferrari-service-dubai/oil-change","/ar/brands/ferrari-service-dubai/steering-repair","/ar/brands/ferrari-service-dubai/suspension-repair","/ar/brands/ferrari-service-dubai/tire-repair","/ar/brands/ferrari-service-dubai/transmission-repair","/ar/brands/ford-service-dubai","/ar/brands/ford-service-dubai/ac-repair","/ar/brands/ford-service-dubai/brake-repair","/ar/brands/ford-service-dubai/engine-diagnostics","/ar/brands/ford-service-dubai/oil-change","/ar/brands/ford-service-dubai/suspension-repair","/ar/brands/ford-service-dubai/transmission-repair","/ar/brands/genesis-service-dubai","/ar/brands/genesis-service-dubai/ac-repair","/ar/brands/genesis-service-dubai/brake-repair","/ar/brands/genesis-service-dubai/engine-diagnostics","/ar/brands/genesis-service-dubai/oil-change","/ar/brands/genesis-service-dubai/suspension-repair","/ar/brands/genesis-service-dubai/transmission-repair","/ar/brands/gmc-service-dubai","/ar/brands/gmc-service-dubai/ac-repair","/ar/brands/gmc-service-dubai/brake-repair","/ar/brands/gmc-service-dubai/engine-diagnostics","/ar/brands/gmc-service-dubai/oil-change","/ar/brands/gmc-service-dubai/suspension-repair","/ar/brands/gmc-service-dubai/transmission-repair","/ar/brands/hummer-service-dubai","/ar/brands/hummer-service-dubai/ac-repair","/ar/brands/hummer-service-dubai/brake-repair","/ar/brands/hummer-service-dubai/engine-diagnostics","/ar/brands/hummer-service-dubai/oil-change","/ar/brands/hummer-service-dubai/suspension-repair","/ar/brands/hummer-service-dubai/transmission-repair","/ar/brands/jaguar-service-dubai","/ar/brands/jaguar-service-dubai/ac-repair","/ar/brands/jaguar-service-dubai/brake-repair","/ar/brands/jaguar-service-dubai/engine-diagnostics","/ar/brands/jaguar-service-dubai/oil-change","/ar/brands/jaguar-service-dubai/suspension-repair","/ar/brands/jaguar-service-dubai/transmission-repair","/ar/brands/jeep-service-dubai","/ar/brands/jeep-service-dubai/ac-repair","/ar/brands/jeep-service-dubai/battery-replacement","/ar/brands/jeep-service-dubai/body-repair","/ar/brands/jeep-service-dubai/brake-repair","/ar/brands/jeep-service-dubai/electrical-repair","/ar/brands/jeep-service-dubai/engine-diagnostics","/ar/brands/jeep-service-dubai/exhaust-repair","/ar/brands/jeep-service-dubai/fuel-system-repair","/ar/brands/jeep-service-dubai/mechanical-repair","/ar/brands/jeep-service-dubai/oil-change","/ar/brands/jeep-service-dubai/steering-repair","/ar/brands/jeep-service-dubai/suspension-repair","/ar/brands/jeep-service-dubai/tire-repair","/ar/brands/jeep-service-dubai/transmission-repair","/ar/brands/jetour-service-dubai","/ar/brands/jetour-service-dubai/ac-repair","/ar/brands/jetour-service-dubai/battery-replacement","/ar/brands/jetour-service-dubai/body-repair","/ar/brands/jetour-service-dubai/brake-repair","/ar/brands/jetour-service-dubai/electrical-repair","/ar/brands/jetour-service-dubai/engine-diagnostics","/ar/brands/jetour-service-dubai/exhaust-repair","/ar/brands/jetour-service-dubai/fuel-system-repair","/ar/brands/jetour-service-dubai/mechanical-repair","/ar/brands/jetour-service-dubai/oil-change","/ar/brands/jetour-service-dubai/steering-repair","/ar/brands/jetour-service-dubai/suspension-repair","/ar/brands/jetour-service-dubai/tire-repair","/ar/brands/jetour-service-dubai/transmission-repair","/ar/brands/koenigsegg-service-dubai","/ar/brands/koenigsegg-service-dubai/ac-repair","/ar/brands/koenigsegg-service-dubai/brake-repair","/ar/brands/koenigsegg-service-dubai/engine-diagnostics","/ar/brands/koenigsegg-service-dubai/oil-change","/ar/brands/koenigsegg-service-dubai/suspension-repair","/ar/brands/koenigsegg-service-dubai/transmission-repair","/ar/brands/lamborghini-service-dubai","/ar/brands/lamborghini-service-dubai/ac-repair","/ar/brands/lamborghini-service-dubai/battery-replacement","/ar/brands/lamborghini-service-dubai/body-repair","/ar/brands/lamborghini-service-dubai/brake-repair","/ar/brands/lamborghini-service-dubai/electrical-repair","/ar/brands/lamborghini-service-dubai/engine-diagnostics","/ar/brands/lamborghini-service-dubai/exhaust-repair","/ar/brands/lamborghini-service-dubai/fuel-system-repair","/ar/brands/lamborghini-service-dubai/mechanical-repair","/ar/brands/lamborghini-service-dubai/oil-change","/ar/brands/lamborghini-service-dubai/steering-repair","/ar/brands/lamborghini-service-dubai/suspension-repair","/ar/brands/lamborghini-service-dubai/tire-repair","/ar/brands/lamborghini-service-dubai/transmission-repair","/ar/brands/land-rover-service-dubai","/ar/brands/land-rover-service-dubai/ac-repair","/ar/brands/land-rover-service-dubai/battery-replacement","/ar/brands/land-rover-service-dubai/body-repair","/ar/brands/land-rover-service-dubai/brake-repair","/ar/brands/land-rover-service-dubai/electrical-repair","/ar/brands/land-rover-service-dubai/engine-diagnostics","/ar/brands/land-rover-service-dubai/exhaust-repair","/ar/brands/land-rover-service-dubai/fuel-system-repair","/ar/brands/land-rover-service-dubai/mechanical-repair","/ar/brands/land-rover-service-dubai/oil-change","/ar/brands/land-rover-service-dubai/steering-repair","/ar/brands/land-rover-service-dubai/suspension-repair","/ar/brands/land-rover-service-dubai/tire-repair","/ar/brands/land-rover-service-dubai/transmission-repair","/ar/brands/lincoln-service-dubai","/ar/brands/lincoln-service-dubai/ac-repair","/ar/brands/lincoln-service-dubai/brake-repair","/ar/brands/lincoln-service-dubai/engine-diagnostics","/ar/brands/lincoln-service-dubai/oil-change","/ar/brands/lincoln-service-dubai/suspension-repair","/ar/brands/lincoln-service-dubai/transmission-repair","/ar/brands/maserati-service-dubai","/ar/brands/maserati-service-dubai/ac-repair","/ar/brands/maserati-service-dubai/battery-replacement","/ar/brands/maserati-service-dubai/body-repair","/ar/brands/maserati-service-dubai/brake-repair","/ar/brands/maserati-service-dubai/electrical-repair","/ar/brands/maserati-service-dubai/engine-diagnostics","/ar/brands/maserati-service-dubai/exhaust-repair","/ar/brands/maserati-service-dubai/fuel-system-repair","/ar/brands/maserati-service-dubai/mechanical-repair","/ar/brands/maserati-service-dubai/oil-change","/ar/brands/maserati-service-dubai/steering-repair","/ar/brands/maserati-service-dubai/suspension-repair","/ar/brands/maserati-service-dubai/tire-repair","/ar/brands/maserati-service-dubai/transmission-repair","/ar/brands/maybach-service-dubai","/ar/brands/maybach-service-dubai/ac-repair","/ar/brands/maybach-service-dubai/battery-replacement","/ar/brands/maybach-service-dubai/body-repair","/ar/brands/maybach-service-dubai/brake-repair","/ar/brands/maybach-service-dubai/electrical-repair","/ar/brands/maybach-service-dubai/engine-diagnostics","/ar/brands/maybach-service-dubai/exhaust-repair","/ar/brands/maybach-service-dubai/fuel-system-repair","/ar/brands/maybach-service-dubai/mechanical-repair","/ar/brands/maybach-service-dubai/oil-change","/ar/brands/maybach-service-dubai/steering-repair","/ar/brands/maybach-service-dubai/suspension-repair","/ar/brands/maybach-service-dubai/tire-repair","/ar/brands/maybach-service-dubai/transmission-repair","/ar/brands/mclaren-service-dubai","/ar/brands/mclaren-service-dubai/ac-repair","/ar/brands/mclaren-service-dubai/battery-replacement","/ar/brands/mclaren-service-dubai/body-repair","/ar/brands/mclaren-service-dubai/brake-repair","/ar/brands/mclaren-service-dubai/electrical-repair","/ar/brands/mclaren-service-dubai/engine-diagnostics","/ar/brands/mclaren-service-dubai/exhaust-repair","/ar/brands/mclaren-service-dubai/fuel-system-repair","/ar/brands/mclaren-service-dubai/mechanical-repair","/ar/brands/mclaren-service-dubai/oil-change","/ar/brands/mclaren-service-dubai/steering-repair","/ar/brands/mclaren-service-dubai/suspension-repair","/ar/brands/mclaren-service-dubai/tire-repair","/ar/brands/mclaren-service-dubai/transmission-repair","/ar/brands/mercedes-benz-service-dubai","/ar/brands/mini-service-dubai","/ar/brands/mini-service-dubai/ac-repair","/ar/brands/mini-service-dubai/brake-repair","/ar/brands/mini-service-dubai/engine-diagnostics","/ar/brands/mini-service-dubai/oil-change","/ar/brands/mini-service-dubai/suspension-repair","/ar/brands/mini-service-dubai/transmission-repair","/ar/brands/pagani-service-dubai","/ar/brands/pagani-service-dubai/ac-repair","/ar/brands/pagani-service-dubai/battery-replacement","/ar/brands/pagani-service-dubai/body-repair","/ar/brands/pagani-service-dubai/brake-repair","/ar/brands/pagani-service-dubai/electrical-repair","/ar/brands/pagani-service-dubai/engine-diagnostics","/ar/brands/pagani-service-dubai/exhaust-repair","/ar/brands/pagani-service-dubai/fuel-system-repair","/ar/brands/pagani-service-dubai/mechanical-repair","/ar/brands/pagani-service-dubai/oil-change","/ar/brands/pagani-service-dubai/steering-repair","/ar/brands/pagani-service-dubai/suspension-repair","/ar/brands/pagani-service-dubai/tire-repair","/ar/brands/pagani-service-dubai/transmission-repair","/ar/brands/porsche-service-dubai","/ar/brands/porsche-service-dubai/ac-repair","/ar/brands/porsche-service-dubai/battery-replacement","/ar/brands/porsche-service-dubai/body-repair","/ar/brands/porsche-service-dubai/brake-repair","/ar/brands/porsche-service-dubai/electrical-repair","/ar/brands/porsche-service-dubai/engine-diagnostics","/ar/brands/porsche-service-dubai/exhaust-repair","/ar/brands/porsche-service-dubai/fuel-system-repair","/ar/brands/porsche-service-dubai/mechanical-repair","/ar/brands/porsche-service-dubai/oil-change","/ar/brands/porsche-service-dubai/steering-repair","/ar/brands/porsche-service-dubai/suspension-repair","/ar/brands/porsche-service-dubai/tire-repair","/ar/brands/porsche-service-dubai/transmission-repair","/ar/brands/range-rover-service-dubai","/ar/brands/range-rover-service-dubai/ac-repair","/ar/brands/range-rover-service-dubai/battery-replacement","/ar/brands/range-rover-service-dubai/body-repair","/ar/brands/range-rover-service-dubai/brake-repair","/ar/brands/range-rover-service-dubai/electrical-repair","/ar/brands/range-rover-service-dubai/engine-diagnostics","/ar/brands/range-rover-service-dubai/exhaust-repair","/ar/brands/range-rover-service-dubai/fuel-system-repair","/ar/brands/range-rover-service-dubai/mechanical-repair","/ar/brands/range-rover-service-dubai/oil-change","/ar/brands/range-rover-service-dubai/steering-repair","/ar/brands/range-rover-service-dubai/suspension-repair","/ar/brands/range-rover-service-dubai/tire-repair","/ar/brands/range-rover-service-dubai/transmission-repair","/ar/brands/rolls-royce-service-dubai","/ar/brands/rolls-royce-service-dubai/ac-repair","/ar/brands/rolls-royce-service-dubai/battery-replacement","/ar/brands/rolls-royce-service-dubai/body-repair","/ar/brands/rolls-royce-service-dubai/brake-repair","/ar/brands/rolls-royce-service-dubai/electrical-repair","/ar/brands/rolls-royce-service-dubai/engine-diagnostics","/ar/brands/rolls-royce-service-dubai/exhaust-repair","/ar/brands/rolls-royce-service-dubai/fuel-system-repair","/ar/brands/rolls-royce-service-dubai/mechanical-repair","/ar/brands/rolls-royce-service-dubai/oil-change","/ar/brands/rolls-royce-service-dubai/steering-repair","/ar/brands/rolls-royce-service-dubai/suspension-repair","/ar/brands/rolls-royce-service-dubai/tire-repair","/ar/brands/rolls-royce-service-dubai/transmission-repair","/ar/brands/rox-service-dubai","/ar/brands/rox-service-dubai/ac-repair","/ar/brands/rox-service-dubai/battery-replacement","/ar/brands/rox-service-dubai/body-repair","/ar/brands/rox-service-dubai/brake-repair","/ar/brands/rox-service-dubai/electrical-repair","/ar/brands/rox-service-dubai/engine-diagnostics","/ar/brands/rox-service-dubai/exhaust-repair","/ar/brands/rox-service-dubai/fuel-system-repair","/ar/brands/rox-service-dubai/mechanical-repair","/ar/brands/rox-service-dubai/oil-change","/ar/brands/rox-service-dubai/soft-close-door-installation","/ar/brands/rox-service-dubai/steering-repair","/ar/brands/rox-service-dubai/suspension-repair","/ar/brands/rox-service-dubai/tire-repair","/ar/brands/rox-service-dubai/transmission-repair","/ar/brands/subaru-service-dubai","/ar/brands/subaru-service-dubai/ac-repair","/ar/brands/subaru-service-dubai/brake-repair","/ar/brands/subaru-service-dubai/engine-diagnostics","/ar/brands/subaru-service-dubai/oil-change","/ar/brands/subaru-service-dubai/suspension-repair","/ar/brands/subaru-service-dubai/transmission-repair","/ar/brands/tesla-service-dubai","/ar/brands/tesla-service-dubai/ac-repair","/ar/brands/tesla-service-dubai/battery-replacement","/ar/brands/tesla-service-dubai/body-repair","/ar/brands/tesla-service-dubai/brake-repair","/ar/brands/tesla-service-dubai/electrical-repair","/ar/brands/tesla-service-dubai/mechanical-repair","/ar/brands/tesla-service-dubai/steering-repair","/ar/brands/tesla-service-dubai/suspension-repair","/ar/brands/tesla-service-dubai/tire-repair","/ar/brands/volkswagen-service-dubai","/ar/brands/volkswagen-service-dubai/ac-repair","/ar/brands/volkswagen-service-dubai/battery-replacement","/ar/brands/volkswagen-service-dubai/body-repair","/ar/brands/volkswagen-service-dubai/brake-repair","/ar/brands/volkswagen-service-dubai/electrical-repair","/ar/brands/volkswagen-service-dubai/engine-diagnostics","/ar/brands/volkswagen-service-dubai/exhaust-repair","/ar/brands/volkswagen-service-dubai/fuel-system-repair","/ar/brands/volkswagen-service-dubai/mechanical-repair","/ar/brands/volkswagen-service-dubai/oil-change","/ar/brands/volkswagen-service-dubai/steering-repair","/ar/brands/volkswagen-service-dubai/suspension-repair","/ar/brands/volkswagen-service-dubai/tire-repair","/ar/brands/volkswagen-service-dubai/transmission-repair","/ar/brands/volvo-service-dubai","/ar/brands/volvo-service-dubai/ac-repair","/ar/brands/volvo-service-dubai/battery-replacement","/ar/brands/volvo-service-dubai/body-repair","/ar/brands/volvo-service-dubai/brake-repair","/ar/brands/volvo-service-dubai/electrical-repair","/ar/brands/volvo-service-dubai/engine-diagnostics","/ar/brands/volvo-service-dubai/exhaust-repair","/ar/brands/volvo-service-dubai/fuel-system-repair","/ar/brands/volvo-service-dubai/mechanical-repair","/ar/brands/volvo-service-dubai/oil-change","/ar/brands/volvo-service-dubai/steering-repair","/ar/brands/volvo-service-dubai/suspension-repair","/ar/brands/volvo-service-dubai/tire-repair","/ar/brands/volvo-service-dubai/transmission-repair","/ar/faq","/ar/services","/ar/services/auto-electrical-repair-dubai","/ar/services/battery-replacement-dubai","/ar/services/brake-repair-dubai","/ar/services/car-ac-repair-dubai","/ar/services/car-body-repair-dubai","/ar/services/car-diagnostics-dubai","/ar/services/car-garage-dubai","/ar/services/car-service-dubai","/ar/services/ceramic-coating","/ar/services/exhaust-repair-dubai","/ar/services/fuel-system-repair-dubai","/ar/services/garage-near-me-dubai","/ar/services/mechanical-repair-dubai","/ar/services/mercedes-ac-repair-dubai","/ar/services/mercedes-battery-replacement-dubai","/ar/services/mercedes-body-repair-dubai","/ar/services/mercedes-brake-repair-dubai","/ar/services/mercedes-diagnostics-dubai","/ar/services/mercedes-electrical-repair-dubai","/ar/services/mercedes-exhaust-repair-dubai","/ar/services/mercedes-fuel-system-repair-dubai","/ar/services/mercedes-mechanical-repair-dubai","/ar/services/mercedes-oil-change-dubai","/ar/services/mercedes-steering-repair-dubai","/ar/services/mercedes-suspension-repair-dubai","/ar/services/mercedes-tire-repair-dubai","/ar/services/mercedes-transmission-repair-dubai","/ar/services/oil-change-dubai","/ar/services/paint-protection-dubai","/ar/services/paint-protection-film","/ar/services/roadside-assistance-dubai","/ar/services/soft-close-door-repair-dubai","/ar/services/steering-repair-dubai","/ar/services/suspension-repair-dubai","/ar/services/tire-repair-dubai","/ar/services/transmission-repair-dubai","/ar/sitemap","/ar/tuning","/ar/vrx","/best-audi-workshop-dubai","/best-bmw-workshop-dubai","/best-car-workshop-dubai","/best-ferrari-workshop-dubai","/best-lamborghini-workshop-dubai","/best-porsche-workshop-dubai","/best-range-rover-workshop-dubai","/blog","/blog/air-suspension-repair-dubai-guide","/blog/aston-martin-best-workshop-dubai","/blog/aston-martin-db11-service-dubai-guide","/blog/audi-maintenance-guide-dubai","/blog/audi-q7-service-dubai-guide","/blog/audi-rs-service-dubai-guide","/blog/bentley-best-workshop-dubai","/blog/bentley-continental-gt-service-dubai-guide","/blog/best-car-workshop-dubai","/blog/best-defender-workshop-dubai","/blog/best-oil-change-dubai-mercedes","/blog/bmw-m-service-dubai-guide","/blog/bmw-maintenance-guide-dubai","/blog/bmw-x5-service-dubai-guide","/blog/brake-repair-dubai","/blog/cadillac-best-workshop-dubai","/blog/car-ac-not-cold-dubai-causes","/blog/car-ac-repair-dubai","/blog/car-battery-life-dubai-heat","/blog/car-battery-replacement-dubai","/blog/car-service-cost-dubai-luxury-brands","/blog/car-service-interval-dubai-heat","/blog/ceramic-coating-vs-ppf-dubai","/blog/check-engine-light-dubai-guide","/blog/chevrolet-best-workshop-dubai","/blog/dealer-vs-independent-workshop-dubai","/blog/defender-service-dubai-guide","/blog/ecu-remap-safe-dubai-guide","/blog/engine-overheating-dubai-what-to-do","/blog/ferrari-488-service-dubai-guide","/blog/ferrari-maintenance-guide-dubai","/blog/ford-best-workshop-dubai","/blog/g63-to-brabus-g800-conversion-dubai","/blog/gad-tuning-explained","/blog/how-much-is-my-mercedes-worth-dubai","/blog/jaguar-best-workshop-dubai","/blog/lamborghini-maintenance-guide-dubai","/blog/lamborghini-urus-service-dubai-guide","/blog/land-rover-best-workshop-dubai","/blog/maserati-best-workshop-dubai","/blog/maybach-best-workshop-dubai","/blog/maybach-s580-service-dubai-guide","/blog/mclaren-720s-service-dubai-guide","/blog/mclaren-best-workshop-dubai","/blog/mercedes-amg-gt-black-series-1300hp-build-dubai","/blog/mercedes-amg-gt-tuning-dubai","/blog/mercedes-benz-maintenance-guide-dubai","/blog/mercedes-c-class-service-dubai-guide","/blog/mercedes-e-class-service-dubai-guide","/blog/mercedes-g63-service-dubai-guide","/blog/mercedes-repair-dubai-complete-guide","/blog/mercedes-s-class-service-dubai-guide","/blog/mercedes-service-cost-dubai-guide","/blog/mercedes-service-intervals-dubai-heat","/blog/mini-best-workshop-dubai","/blog/oil-specification-guide-dubai-luxury","/blog/porsche-911-service-dubai-guide","/blog/porsche-cayenne-service-dubai-guide","/blog/porsche-maintenance-guide-dubai","/blog/porsche-panamera-service-dubai-guide","/blog/pre-purchase-inspection-dubai-guide","/blog/range-rover-land-rover-air-suspension-problems-dubai","/blog/range-rover-maintenance-guide-dubai","/blog/range-rover-sport-service-dubai-guide","/blog/range-rover-vogue-service-dubai-guide","/blog/rolls-royce-best-workshop-dubai","/blog/rolls-royce-ghost-service-dubai-guide","/blog/summer-car-preparation-dubai-checklist","/blog/transmission-service-7g-9g-dubai","/blog/volkswagen-best-workshop-dubai","/blog/why-ceramic-coating-matters-uae","/brands","/brands/aston-martin-service-dubai","/brands/aston-martin-service-dubai/ac-repair","/brands/aston-martin-service-dubai/battery-replacement","/brands/aston-martin-service-dubai/body-repair","/brands/aston-martin-service-dubai/brake-repair","/brands/aston-martin-service-dubai/electrical-repair","/brands/aston-martin-service-dubai/engine-diagnostics","/brands/aston-martin-service-dubai/exhaust-repair","/brands/aston-martin-service-dubai/fuel-system-repair","/brands/aston-martin-service-dubai/mechanical-repair","/brands/aston-martin-service-dubai/oil-change","/brands/aston-martin-service-dubai/steering-repair","/brands/aston-martin-service-dubai/suspension-repair","/brands/aston-martin-service-dubai/tire-repair","/brands/aston-martin-service-dubai/transmission-repair","/brands/audi-service-dubai","/brands/audi-service-dubai/a4","/brands/audi-service-dubai/a6","/brands/audi-service-dubai/ac-repair","/brands/audi-service-dubai/battery-replacement","/brands/audi-service-dubai/body-repair","/brands/audi-service-dubai/brake-repair","/brands/audi-service-dubai/electrical-repair","/brands/audi-service-dubai/engine-diagnostics","/brands/audi-service-dubai/exhaust-repair","/brands/audi-service-dubai/fuel-system-repair","/brands/audi-service-dubai/mechanical-repair","/brands/audi-service-dubai/oil-change","/brands/audi-service-dubai/q5","/brands/audi-service-dubai/q7","/brands/audi-service-dubai/q8","/brands/audi-service-dubai/r8","/brands/audi-service-dubai/rs3","/brands/audi-service-dubai/rs6","/brands/audi-service-dubai/steering-repair","/brands/audi-service-dubai/suspension-repair","/brands/audi-service-dubai/tire-repair","/brands/audi-service-dubai/transmission-repair","/brands/bentley-service-dubai","/brands/bentley-service-dubai/ac-repair","/brands/bentley-service-dubai/battery-replacement","/brands/bentley-service-dubai/body-repair","/brands/bentley-service-dubai/brake-repair","/brands/bentley-service-dubai/electrical-repair","/brands/bentley-service-dubai/engine-diagnostics","/brands/bentley-service-dubai/exhaust-repair","/brands/bentley-service-dubai/fuel-system-repair","/brands/bentley-service-dubai/mechanical-repair","/brands/bentley-service-dubai/oil-change","/brands/bentley-service-dubai/steering-repair","/brands/bentley-service-dubai/suspension-repair","/brands/bentley-service-dubai/tire-repair","/brands/bentley-service-dubai/transmission-repair","/brands/bmw-service-dubai","/brands/bmw-service-dubai/3-series","/brands/bmw-service-dubai/5-series","/brands/bmw-service-dubai/ac-repair","/brands/bmw-service-dubai/battery-replacement","/brands/bmw-service-dubai/body-repair","/brands/bmw-service-dubai/brake-repair","/brands/bmw-service-dubai/electrical-repair","/brands/bmw-service-dubai/engine-diagnostics","/brands/bmw-service-dubai/exhaust-repair","/brands/bmw-service-dubai/fuel-system-repair","/brands/bmw-service-dubai/m3","/brands/bmw-service-dubai/m4","/brands/bmw-service-dubai/m5","/brands/bmw-service-dubai/mechanical-repair","/brands/bmw-service-dubai/oil-change","/brands/bmw-service-dubai/steering-repair","/brands/bmw-service-dubai/suspension-repair","/brands/bmw-service-dubai/tire-repair","/brands/bmw-service-dubai/transmission-repair","/brands/bmw-service-dubai/x5","/brands/bmw-service-dubai/x6","/brands/bugatti-service-dubai","/brands/bugatti-service-dubai/ac-repair","/brands/bugatti-service-dubai/battery-replacement","/brands/bugatti-service-dubai/body-repair","/brands/bugatti-service-dubai/brake-repair","/brands/bugatti-service-dubai/electrical-repair","/brands/bugatti-service-dubai/engine-diagnostics","/brands/bugatti-service-dubai/exhaust-repair","/brands/bugatti-service-dubai/fuel-system-repair","/brands/bugatti-service-dubai/mechanical-repair","/brands/bugatti-service-dubai/oil-change","/brands/bugatti-service-dubai/steering-repair","/brands/bugatti-service-dubai/suspension-repair","/brands/bugatti-service-dubai/tire-repair","/brands/bugatti-service-dubai/transmission-repair","/brands/byd-service-dubai","/brands/byd-service-dubai/ac-repair","/brands/byd-service-dubai/battery-replacement","/brands/byd-service-dubai/body-repair","/brands/byd-service-dubai/brake-repair","/brands/byd-service-dubai/electrical-repair","/brands/byd-service-dubai/engine-diagnostics","/brands/byd-service-dubai/exhaust-repair","/brands/byd-service-dubai/fuel-system-repair","/brands/byd-service-dubai/mechanical-repair","/brands/byd-service-dubai/oil-change","/brands/byd-service-dubai/steering-repair","/brands/byd-service-dubai/suspension-repair","/brands/byd-service-dubai/tire-repair","/brands/byd-service-dubai/transmission-repair","/brands/cadillac-service-dubai","/brands/cadillac-service-dubai/ac-repair","/brands/cadillac-service-dubai/battery-replacement","/brands/cadillac-service-dubai/body-repair","/brands/cadillac-service-dubai/brake-repair","/brands/cadillac-service-dubai/electrical-repair","/brands/cadillac-service-dubai/engine-diagnostics","/brands/cadillac-service-dubai/exhaust-repair","/brands/cadillac-service-dubai/fuel-system-repair","/brands/cadillac-service-dubai/mechanical-repair","/brands/cadillac-service-dubai/oil-change","/brands/cadillac-service-dubai/steering-repair","/brands/cadillac-service-dubai/suspension-repair","/brands/cadillac-service-dubai/tire-repair","/brands/cadillac-service-dubai/transmission-repair","/brands/chevrolet-service-dubai","/brands/chevrolet-service-dubai/ac-repair","/brands/chevrolet-service-dubai/brake-repair","/brands/chevrolet-service-dubai/engine-diagnostics","/brands/chevrolet-service-dubai/oil-change","/brands/chevrolet-service-dubai/suspension-repair","/brands/chevrolet-service-dubai/transmission-repair","/brands/chrysler-service-dubai","/brands/chrysler-service-dubai/ac-repair","/brands/chrysler-service-dubai/brake-repair","/brands/chrysler-service-dubai/engine-diagnostics","/brands/chrysler-service-dubai/oil-change","/brands/chrysler-service-dubai/suspension-repair","/brands/chrysler-service-dubai/transmission-repair","/brands/corvette-service-dubai","/brands/corvette-service-dubai/ac-repair","/brands/corvette-service-dubai/brake-repair","/brands/corvette-service-dubai/engine-diagnostics","/brands/corvette-service-dubai/oil-change","/brands/corvette-service-dubai/suspension-repair","/brands/corvette-service-dubai/transmission-repair","/brands/defender-service-dubai","/brands/defender-service-dubai/ac-repair","/brands/defender-service-dubai/battery-replacement","/brands/defender-service-dubai/body-repair","/brands/defender-service-dubai/brake-repair","/brands/defender-service-dubai/electrical-repair","/brands/defender-service-dubai/engine-diagnostics","/brands/defender-service-dubai/exhaust-repair","/brands/defender-service-dubai/fuel-system-repair","/brands/defender-service-dubai/mechanical-repair","/brands/defender-service-dubai/oil-change","/brands/defender-service-dubai/steering-repair","/brands/defender-service-dubai/suspension-repair","/brands/defender-service-dubai/tire-repair","/brands/defender-service-dubai/transmission-repair","/brands/dodge-service-dubai","/brands/dodge-service-dubai/ac-repair","/brands/dodge-service-dubai/brake-repair","/brands/dodge-service-dubai/engine-diagnostics","/brands/dodge-service-dubai/oil-change","/brands/dodge-service-dubai/suspension-repair","/brands/dodge-service-dubai/transmission-repair","/brands/ferrari-service-dubai","/brands/ferrari-service-dubai/296","/brands/ferrari-service-dubai/488","/brands/ferrari-service-dubai/812","/brands/ferrari-service-dubai/ac-repair","/brands/ferrari-service-dubai/battery-replacement","/brands/ferrari-service-dubai/body-repair","/brands/ferrari-service-dubai/brake-repair","/brands/ferrari-service-dubai/electrical-repair","/brands/ferrari-service-dubai/engine-diagnostics","/brands/ferrari-service-dubai/exhaust-repair","/brands/ferrari-service-dubai/f8-tributo","/brands/ferrari-service-dubai/fuel-system-repair","/brands/ferrari-service-dubai/mechanical-repair","/brands/ferrari-service-dubai/oil-change","/brands/ferrari-service-dubai/portofino","/brands/ferrari-service-dubai/purosangue","/brands/ferrari-service-dubai/roma","/brands/ferrari-service-dubai/sf90","/brands/ferrari-service-dubai/steering-repair","/brands/ferrari-service-dubai/suspension-repair","/brands/ferrari-service-dubai/tire-repair","/brands/ferrari-service-dubai/transmission-repair","/brands/ford-service-dubai","/brands/ford-service-dubai/ac-repair","/brands/ford-service-dubai/brake-repair","/brands/ford-service-dubai/engine-diagnostics","/brands/ford-service-dubai/oil-change","/brands/ford-service-dubai/suspension-repair","/brands/ford-service-dubai/transmission-repair","/brands/genesis-service-dubai","/brands/genesis-service-dubai/ac-repair","/brands/genesis-service-dubai/brake-repair","/brands/genesis-service-dubai/engine-diagnostics","/brands/genesis-service-dubai/oil-change","/brands/genesis-service-dubai/suspension-repair","/brands/genesis-service-dubai/transmission-repair","/brands/gmc-service-dubai","/brands/gmc-service-dubai/ac-repair","/brands/gmc-service-dubai/brake-repair","/brands/gmc-service-dubai/engine-diagnostics","/brands/gmc-service-dubai/oil-change","/brands/gmc-service-dubai/suspension-repair","/brands/gmc-service-dubai/transmission-repair","/brands/hummer-service-dubai","/brands/hummer-service-dubai/ac-repair","/brands/hummer-service-dubai/brake-repair","/brands/hummer-service-dubai/engine-diagnostics","/brands/hummer-service-dubai/oil-change","/brands/hummer-service-dubai/suspension-repair","/brands/hummer-service-dubai/transmission-repair","/brands/jaguar-service-dubai","/brands/jaguar-service-dubai/ac-repair","/brands/jaguar-service-dubai/brake-repair","/brands/jaguar-service-dubai/engine-diagnostics","/brands/jaguar-service-dubai/oil-change","/brands/jaguar-service-dubai/suspension-repair","/brands/jaguar-service-dubai/transmission-repair","/brands/jeep-service-dubai","/brands/jeep-service-dubai/ac-repair","/brands/jeep-service-dubai/battery-replacement","/brands/jeep-service-dubai/body-repair","/brands/jeep-service-dubai/brake-repair","/brands/jeep-service-dubai/electrical-repair","/brands/jeep-service-dubai/engine-diagnostics","/brands/jeep-service-dubai/exhaust-repair","/brands/jeep-service-dubai/fuel-system-repair","/brands/jeep-service-dubai/mechanical-repair","/brands/jeep-service-dubai/oil-change","/brands/jeep-service-dubai/steering-repair","/brands/jeep-service-dubai/suspension-repair","/brands/jeep-service-dubai/tire-repair","/brands/jeep-service-dubai/transmission-repair","/brands/jetour-service-dubai","/brands/jetour-service-dubai/ac-repair","/brands/jetour-service-dubai/battery-replacement","/brands/jetour-service-dubai/body-repair","/brands/jetour-service-dubai/brake-repair","/brands/jetour-service-dubai/electrical-repair","/brands/jetour-service-dubai/engine-diagnostics","/brands/jetour-service-dubai/exhaust-repair","/brands/jetour-service-dubai/fuel-system-repair","/brands/jetour-service-dubai/mechanical-repair","/brands/jetour-service-dubai/oil-change","/brands/jetour-service-dubai/steering-repair","/brands/jetour-service-dubai/suspension-repair","/brands/jetour-service-dubai/tire-repair","/brands/jetour-service-dubai/transmission-repair","/brands/koenigsegg-service-dubai","/brands/koenigsegg-service-dubai/ac-repair","/brands/koenigsegg-service-dubai/brake-repair","/brands/koenigsegg-service-dubai/engine-diagnostics","/brands/koenigsegg-service-dubai/oil-change","/brands/koenigsegg-service-dubai/suspension-repair","/brands/koenigsegg-service-dubai/transmission-repair","/brands/lamborghini-service-dubai","/brands/lamborghini-service-dubai/ac-repair","/brands/lamborghini-service-dubai/battery-replacement","/brands/lamborghini-service-dubai/body-repair","/brands/lamborghini-service-dubai/brake-repair","/brands/lamborghini-service-dubai/electrical-repair","/brands/lamborghini-service-dubai/engine-diagnostics","/brands/lamborghini-service-dubai/exhaust-repair","/brands/lamborghini-service-dubai/fuel-system-repair","/brands/lamborghini-service-dubai/mechanical-repair","/brands/lamborghini-service-dubai/oil-change","/brands/lamborghini-service-dubai/steering-repair","/brands/lamborghini-service-dubai/suspension-repair","/brands/lamborghini-service-dubai/tire-repair","/brands/lamborghini-service-dubai/transmission-repair","/brands/land-rover-service-dubai","/brands/land-rover-service-dubai/ac-repair","/brands/land-rover-service-dubai/battery-replacement","/brands/land-rover-service-dubai/body-repair","/brands/land-rover-service-dubai/brake-repair","/brands/land-rover-service-dubai/electrical-repair","/brands/land-rover-service-dubai/engine-diagnostics","/brands/land-rover-service-dubai/exhaust-repair","/brands/land-rover-service-dubai/fuel-system-repair","/brands/land-rover-service-dubai/mechanical-repair","/brands/land-rover-service-dubai/oil-change","/brands/land-rover-service-dubai/steering-repair","/brands/land-rover-service-dubai/suspension-repair","/brands/land-rover-service-dubai/tire-repair","/brands/land-rover-service-dubai/transmission-repair","/brands/lincoln-service-dubai","/brands/lincoln-service-dubai/ac-repair","/brands/lincoln-service-dubai/brake-repair","/brands/lincoln-service-dubai/engine-diagnostics","/brands/lincoln-service-dubai/oil-change","/brands/lincoln-service-dubai/suspension-repair","/brands/lincoln-service-dubai/transmission-repair","/brands/maserati-service-dubai","/brands/maserati-service-dubai/ac-repair","/brands/maserati-service-dubai/battery-replacement","/brands/maserati-service-dubai/body-repair","/brands/maserati-service-dubai/brake-repair","/brands/maserati-service-dubai/electrical-repair","/brands/maserati-service-dubai/engine-diagnostics","/brands/maserati-service-dubai/exhaust-repair","/brands/maserati-service-dubai/fuel-system-repair","/brands/maserati-service-dubai/mechanical-repair","/brands/maserati-service-dubai/oil-change","/brands/maserati-service-dubai/steering-repair","/brands/maserati-service-dubai/suspension-repair","/brands/maserati-service-dubai/tire-repair","/brands/maserati-service-dubai/transmission-repair","/brands/maybach-service-dubai","/brands/maybach-service-dubai/ac-repair","/brands/maybach-service-dubai/battery-replacement","/brands/maybach-service-dubai/body-repair","/brands/maybach-service-dubai/brake-repair","/brands/maybach-service-dubai/electrical-repair","/brands/maybach-service-dubai/engine-diagnostics","/brands/maybach-service-dubai/exhaust-repair","/brands/maybach-service-dubai/fuel-system-repair","/brands/maybach-service-dubai/mechanical-repair","/brands/maybach-service-dubai/oil-change","/brands/maybach-service-dubai/steering-repair","/brands/maybach-service-dubai/suspension-repair","/brands/maybach-service-dubai/tire-repair","/brands/maybach-service-dubai/transmission-repair","/brands/mclaren-service-dubai","/brands/mclaren-service-dubai/ac-repair","/brands/mclaren-service-dubai/battery-replacement","/brands/mclaren-service-dubai/body-repair","/brands/mclaren-service-dubai/brake-repair","/brands/mclaren-service-dubai/electrical-repair","/brands/mclaren-service-dubai/engine-diagnostics","/brands/mclaren-service-dubai/exhaust-repair","/brands/mclaren-service-dubai/fuel-system-repair","/brands/mclaren-service-dubai/mechanical-repair","/brands/mclaren-service-dubai/oil-change","/brands/mclaren-service-dubai/steering-repair","/brands/mclaren-service-dubai/suspension-repair","/brands/mclaren-service-dubai/tire-repair","/brands/mclaren-service-dubai/transmission-repair","/brands/mercedes-benz-service-dubai","/brands/mini-service-dubai","/brands/mini-service-dubai/ac-repair","/brands/mini-service-dubai/brake-repair","/brands/mini-service-dubai/engine-diagnostics","/brands/mini-service-dubai/oil-change","/brands/mini-service-dubai/suspension-repair","/brands/mini-service-dubai/transmission-repair","/brands/pagani-service-dubai","/brands/pagani-service-dubai/ac-repair","/brands/pagani-service-dubai/battery-replacement","/brands/pagani-service-dubai/body-repair","/brands/pagani-service-dubai/brake-repair","/brands/pagani-service-dubai/electrical-repair","/brands/pagani-service-dubai/engine-diagnostics","/brands/pagani-service-dubai/exhaust-repair","/brands/pagani-service-dubai/fuel-system-repair","/brands/pagani-service-dubai/mechanical-repair","/brands/pagani-service-dubai/oil-change","/brands/pagani-service-dubai/steering-repair","/brands/pagani-service-dubai/suspension-repair","/brands/pagani-service-dubai/tire-repair","/brands/pagani-service-dubai/transmission-repair","/brands/porsche-service-dubai","/brands/porsche-service-dubai/ac-repair","/brands/porsche-service-dubai/battery-replacement","/brands/porsche-service-dubai/body-repair","/brands/porsche-service-dubai/brake-repair","/brands/porsche-service-dubai/electrical-repair","/brands/porsche-service-dubai/engine-diagnostics","/brands/porsche-service-dubai/exhaust-repair","/brands/porsche-service-dubai/fuel-system-repair","/brands/porsche-service-dubai/mechanical-repair","/brands/porsche-service-dubai/oil-change","/brands/porsche-service-dubai/steering-repair","/brands/porsche-service-dubai/suspension-repair","/brands/porsche-service-dubai/tire-repair","/brands/porsche-service-dubai/transmission-repair","/brands/range-rover-service-dubai","/brands/range-rover-service-dubai/ac-repair","/brands/range-rover-service-dubai/battery-replacement","/brands/range-rover-service-dubai/body-repair","/brands/range-rover-service-dubai/brake-repair","/brands/range-rover-service-dubai/electrical-repair","/brands/range-rover-service-dubai/engine-diagnostics","/brands/range-rover-service-dubai/exhaust-repair","/brands/range-rover-service-dubai/fuel-system-repair","/brands/range-rover-service-dubai/mechanical-repair","/brands/range-rover-service-dubai/oil-change","/brands/range-rover-service-dubai/steering-repair","/brands/range-rover-service-dubai/suspension-repair","/brands/range-rover-service-dubai/tire-repair","/brands/range-rover-service-dubai/transmission-repair","/brands/rolls-royce-service-dubai","/brands/rolls-royce-service-dubai/ac-repair","/brands/rolls-royce-service-dubai/battery-replacement","/brands/rolls-royce-service-dubai/body-repair","/brands/rolls-royce-service-dubai/brake-repair","/brands/rolls-royce-service-dubai/electrical-repair","/brands/rolls-royce-service-dubai/engine-diagnostics","/brands/rolls-royce-service-dubai/exhaust-repair","/brands/rolls-royce-service-dubai/fuel-system-repair","/brands/rolls-royce-service-dubai/mechanical-repair","/brands/rolls-royce-service-dubai/oil-change","/brands/rolls-royce-service-dubai/steering-repair","/brands/rolls-royce-service-dubai/suspension-repair","/brands/rolls-royce-service-dubai/tire-repair","/brands/rolls-royce-service-dubai/transmission-repair","/brands/rox-service-dubai","/brands/rox-service-dubai/ac-repair","/brands/rox-service-dubai/battery-replacement","/brands/rox-service-dubai/body-repair","/brands/rox-service-dubai/brake-repair","/brands/rox-service-dubai/electrical-repair","/brands/rox-service-dubai/engine-diagnostics","/brands/rox-service-dubai/exhaust-repair","/brands/rox-service-dubai/fuel-system-repair","/brands/rox-service-dubai/mechanical-repair","/brands/rox-service-dubai/oil-change","/brands/rox-service-dubai/soft-close-door-installation","/brands/rox-service-dubai/steering-repair","/brands/rox-service-dubai/suspension-repair","/brands/rox-service-dubai/tire-repair","/brands/rox-service-dubai/transmission-repair","/brands/subaru-service-dubai","/brands/subaru-service-dubai/ac-repair","/brands/subaru-service-dubai/brake-repair","/brands/subaru-service-dubai/engine-diagnostics","/brands/subaru-service-dubai/oil-change","/brands/subaru-service-dubai/suspension-repair","/brands/subaru-service-dubai/transmission-repair","/brands/tesla-service-dubai","/brands/tesla-service-dubai/ac-repair","/brands/tesla-service-dubai/battery-replacement","/brands/tesla-service-dubai/body-repair","/brands/tesla-service-dubai/brake-repair","/brands/tesla-service-dubai/electrical-repair","/brands/tesla-service-dubai/mechanical-repair","/brands/tesla-service-dubai/steering-repair","/brands/tesla-service-dubai/suspension-repair","/brands/tesla-service-dubai/tire-repair","/brands/volkswagen-service-dubai","/brands/volkswagen-service-dubai/ac-repair","/brands/volkswagen-service-dubai/battery-replacement","/brands/volkswagen-service-dubai/body-repair","/brands/volkswagen-service-dubai/brake-repair","/brands/volkswagen-service-dubai/electrical-repair","/brands/volkswagen-service-dubai/engine-diagnostics","/brands/volkswagen-service-dubai/exhaust-repair","/brands/volkswagen-service-dubai/fuel-system-repair","/brands/volkswagen-service-dubai/mechanical-repair","/brands/volkswagen-service-dubai/oil-change","/brands/volkswagen-service-dubai/steering-repair","/brands/volkswagen-service-dubai/suspension-repair","/brands/volkswagen-service-dubai/tire-repair","/brands/volkswagen-service-dubai/transmission-repair","/brands/volvo-service-dubai","/brands/volvo-service-dubai/ac-repair","/brands/volvo-service-dubai/battery-replacement","/brands/volvo-service-dubai/body-repair","/brands/volvo-service-dubai/brake-repair","/brands/volvo-service-dubai/electrical-repair","/brands/volvo-service-dubai/engine-diagnostics","/brands/volvo-service-dubai/exhaust-repair","/brands/volvo-service-dubai/fuel-system-repair","/brands/volvo-service-dubai/mechanical-repair","/brands/volvo-service-dubai/oil-change","/brands/volvo-service-dubai/steering-repair","/brands/volvo-service-dubai/suspension-repair","/brands/volvo-service-dubai/tire-repair","/brands/volvo-service-dubai/transmission-repair","/faq","/mercedes/models/c63-service-repair-dubai","/mercedes/models/e63-service-repair-dubai","/mercedes/models/g-class-service-repair-dubai","/mercedes/models/gle-service-repair-dubai","/mercedes/models/gls-service-repair-dubai","/mercedes/models/s63-service-repair-dubai","/mercedes/problems","/mercedes/problems/ac-not-cooling","/mercedes/problems/airmatic-malfunction","/mercedes/problems/battery-warning","/mercedes/problems/check-engine-light","/mercedes/problems/engine-overheating","/mercedes/problems/gearbox-jerking","/mercedes/problems/oil-leak","/mercedes/problems/suspension-dropping-overnight","/mercedes/problems/transmission-slipping","/mercedes/problems/wont-start","/porsche/718","/porsche/911/991","/porsche/911/992","/porsche/911/997","/porsche/guides/718-maintenance","/porsche/guides/ac-maintenance-dubai","/porsche/guides/battery-life-dubai","/porsche/guides/brake-wear-dubai","/porsche/guides/buying-used-porsche-dubai","/porsche/guides/common-problems-dubai","/porsche/guides/cooling-maintenance","/porsche/guides/dealer-vs-independent-specialist","/porsche/guides/dubai-heat","/porsche/guides/how-often-service-dubai","/porsche/guides/macan-maintenance","/porsche/guides/maintenance-cost-dubai","/porsche/guides/major-vs-minor-service","/porsche/guides/oil-change-intervals","/porsche/guides/pdk-service-intervals","/porsche/guides/pre-purchase-inspection-checklist","/porsche/guides/service-intervals-uae","/porsche/guides/taycan-maintenance","/porsche/guides/tyre-wear-dubai","/porsche/guides/warning-lights","/porsche/macan","/porsche/problems","/porsche/problems/911-cooling","/porsche/problems/ac-not-cooling","/porsche/problems/air-suspension-warning","/porsche/problems/battery-warning","/porsche/problems/brake-warning-light","/porsche/problems/cayenne-air-suspension","/porsche/problems/check-engine-light","/porsche/problems/coolant-leak","/porsche/problems/delayed-gear-engagement","/porsche/problems/engine-misfire","/porsche/problems/engine-overheating","/porsche/problems/excessive-oil-consumption","/porsche/problems/macan-transfer-case","/porsche/problems/oil-leak","/porsche/problems/pasm-fault","/porsche/problems/pdcc-fault","/porsche/problems/pdk-jerking","/porsche/problems/pdk-slipping","/porsche/problems/pdk-warning-message","/porsche/problems/steering-vibration","/porsche/problems/suspension-dropping-overnight","/porsche/problems/taycan-12v-battery","/porsche/problems/taycan-charging","/porsche/problems/wont-start","/porsche/systems","/porsche/systems/air-suspension","/porsche/systems/pasm","/porsche/systems/pccb","/porsche/systems/pdcc","/porsche/systems/pdk","/porsche/systems/ptm-awd","/porsche/systems/rear-axle-steering","/porsche/systems/sport-chrono","/porsche/systems/tiptronic","/porsche/taycan","/services","/services/auto-electrical-repair-dubai","/services/battery-replacement-dubai","/services/brake-repair-dubai","/services/cadillac-cue-screen-repair-dubai","/services/car-ac-repair-dubai","/services/car-body-repair-dubai","/services/car-diagnostics-dubai","/services/car-garage-dubai","/services/car-polishing-dubai","/services/car-service-dubai","/services/ceramic-coating","/services/exhaust-repair-dubai","/services/fuel-system-repair-dubai","/services/garage-near-me-dubai","/services/head-unit-repair-dubai","/services/mechanical-repair-dubai","/services/mercedes-ac-repair-dubai","/services/mercedes-audio-upgrade-dubai","/services/mercedes-battery-replacement-dubai","/services/mercedes-body-repair-dubai","/services/mercedes-brake-repair-dubai","/services/mercedes-diagnostics-dubai","/services/mercedes-electrical-repair-dubai","/services/mercedes-exhaust-repair-dubai","/services/mercedes-fuel-system-repair-dubai","/services/mercedes-mechanical-repair-dubai","/services/mercedes-oil-change-dubai","/services/mercedes-steering-repair-dubai","/services/mercedes-suspension-repair-dubai","/services/mercedes-tire-repair-dubai","/services/mercedes-transmission-repair-dubai","/services/oil-change-dubai","/services/paint-protection-dubai","/services/paint-protection-film","/services/roadside-assistance-dubai","/services/soft-close-door-repair-dubai","/services/steering-repair-dubai","/services/suspension-repair-dubai","/services/tire-repair-dubai","/services/transmission-repair-dubai","/sitemap","/tuning","/tuning/aston-martin-db11","/tuning/lamborghini-urus","/tuning/mercedes-amg-c63","/tuning/mercedes-amg-e63","/tuning/mercedes-amg-g63","/tuning/mercedes-amg-glc63","/tuning/mercedes-amg-gt","/tuning/mercedes-amg-gt63","/tuning/mercedes-amg-s65","/vrx"];
+ export const legacyPaths = ["/about-us","/about-us-demo","/ac-repair","/ac-repair-maintenance","/ar/about-us","/ar/about-us-demo","/ar/ac-repair","/ar/ac-repair-maintenance","/ar/auto-electrical-repair","/ar/battery-changes","/ar/battery-replacement","/ar/best-mercedes-workshop-dubai","/ar/blogs","/ar/body-repair","/ar/brake-repair","/ar/brake-system-repairs","/ar/brands/mercedes-benz-service-dubai/ac-repair","/ar/brands/mercedes-benz-service-dubai/battery-replacement","/ar/brands/mercedes-benz-service-dubai/body-repair","/ar/brands/mercedes-benz-service-dubai/brake-repair","/ar/brands/mercedes-benz-service-dubai/electrical-repair","/ar/brands/mercedes-benz-service-dubai/engine-diagnostics","/ar/brands/mercedes-benz-service-dubai/exhaust-repair","/ar/brands/mercedes-benz-service-dubai/fuel-system-repair","/ar/brands/mercedes-benz-service-dubai/mechanical-repair","/ar/brands/mercedes-benz-service-dubai/oil-change","/ar/brands/mercedes-benz-service-dubai/steering-repair","/ar/brands/mercedes-benz-service-dubai/suspension-repair","/ar/brands/mercedes-benz-service-dubai/tire-repair","/ar/brands/mercedes-benz-service-dubai/transmission-repair","/ar/car-ac-repair","/ar/car-body-repair","/ar/car-diagnostics","/ar/car-paint-protection","/ar/car-programming-diagnostic","/ar/car-service","/ar/ceramic-coating","/ar/contact","/ar/contact-us","/ar/electrical-system-repairs","/ar/engine-diagnostics","/ar/engine-diagnostics-dubai","/ar/exhaust-repair","/ar/faq-page","/ar/faqs","/ar/fuel-system-repair","/ar/home","/ar/index.html","/ar/index.php","/ar/mechanical-repair","/ar/mechanical-repair-dubai","/ar/mercedes","/ar/mercedes-ac-repair","/ar/mercedes-ac-repair-dubai","/ar/mercedes-body-repair","/ar/mercedes-body-repair-dubai","/ar/mercedes-brake-repair","/ar/mercedes-brake-repair-dubai","/ar/mercedes-oil-change","/ar/mercedes-oil-change-dubai","/ar/mercedes-repair","/ar/mercedes-repair-dubai","/ar/mercedes-service","/ar/mercedes-suspension-repair","/ar/mercedes-suspension-repair-dubai","/ar/mercedes-transmission-repair","/ar/mercedes-transmission-repair-dubai","/ar/mercedes-workshop","/ar/mercedes/problems","/ar/news","/ar/oil-change","/ar/oil-change-service","/ar/our-services","/ar/our-story","/ar/paint-protection","/ar/performance-tuning","/ar/performance-tuning-dubai","/ar/porsche/problems","/ar/porsche/systems","/ar/ppf","/ar/privacy-policy","/ar/routine-maintenance","/ar/services-page","/ar/services/ac-repair-maintenance","/ar/services/auto-electrical-repair","/ar/services/battery-changes","/ar/services/battery-replacement","/ar/services/body-repair","/ar/services/brake-repair","/ar/services/brake-system-repairs","/ar/services/car-ac-repair","/ar/services/car-body-repair","/ar/services/car-diagnostics","/ar/services/car-paint-protection","/ar/services/car-programming-diagnostic","/ar/services/car-service","/ar/services/electrical-system-repairs","/ar/services/engine-diagnostics","/ar/services/engine-diagnostics-dubai","/ar/services/exhaust-repair","/ar/services/fuel-system-repair","/ar/services/mechanical-repair","/ar/services/mercedes-ac-repair","/ar/services/mercedes-body-repair","/ar/services/mercedes-brake-repair","/ar/services/mercedes-oil-change","/ar/services/mercedes-repair","/ar/services/mercedes-repair-dubai","/ar/services/mercedes-service-dubai","/ar/services/mercedes-suspension-repair","/ar/services/mercedes-transmission-repair","/ar/services/oil-change","/ar/services/oil-change-service","/ar/services/paint-protection","/ar/services/performance-tuning","/ar/services/performance-tuning-dubai","/ar/services/ppf","/ar/services/routine-maintenance","/ar/services/steering-repair","/ar/services/suspension-repair","/ar/services/tire-repair","/ar/services/transmission-repair","/ar/services/transmission-services","/ar/some-of-our-work","/ar/steering-repair","/ar/suspension-repair","/ar/team","/ar/terms-of-service","/ar/tire-repair","/ar/transmission-repair","/ar/transmission-services","/ar/who-we-are","/auto-electrical-repair","/battery-changes","/battery-replacement","/best-mercedes-workshop-dubai","/blogs","/body-repair","/brake-repair","/brake-system-repairs","/brands/mercedes-benz-service-dubai/ac-repair","/brands/mercedes-benz-service-dubai/battery-replacement","/brands/mercedes-benz-service-dubai/body-repair","/brands/mercedes-benz-service-dubai/brake-repair","/brands/mercedes-benz-service-dubai/electrical-repair","/brands/mercedes-benz-service-dubai/engine-diagnostics","/brands/mercedes-benz-service-dubai/exhaust-repair","/brands/mercedes-benz-service-dubai/fuel-system-repair","/brands/mercedes-benz-service-dubai/mechanical-repair","/brands/mercedes-benz-service-dubai/oil-change","/brands/mercedes-benz-service-dubai/steering-repair","/brands/mercedes-benz-service-dubai/suspension-repair","/brands/mercedes-benz-service-dubai/tire-repair","/brands/mercedes-benz-service-dubai/transmission-repair","/car-ac-repair","/car-body-repair","/car-diagnostics","/car-paint-protection","/car-programming-diagnostic","/car-service","/ceramic-coating","/contact","/contact-us","/electrical-system-repairs","/engine-diagnostics","/engine-diagnostics-dubai","/exhaust-repair","/faq-page","/faqs","/fuel-system-repair","/home","/index.html","/index.php","/mechanical-repair","/mechanical-repair-dubai","/mercedes","/mercedes-ac-repair","/mercedes-ac-repair-dubai","/mercedes-body-repair","/mercedes-body-repair-dubai","/mercedes-brake-repair","/mercedes-brake-repair-dubai","/mercedes-oil-change","/mercedes-oil-change-dubai","/mercedes-repair","/mercedes-repair-dubai","/mercedes-service","/mercedes-suspension-repair","/mercedes-suspension-repair-dubai","/mercedes-transmission-repair","/mercedes-transmission-repair-dubai","/mercedes-workshop","/news","/oil-change","/oil-change-service","/our-services","/our-story","/paint-protection","/performance-tuning","/performance-tuning-dubai","/ppf","/privacy-policy","/routine-maintenance","/services-page","/services/ac-repair-maintenance","/services/auto-electrical-repair","/services/battery-changes","/services/battery-replacement","/services/body-repair","/services/brake-repair","/services/brake-system-repairs","/services/car-ac-repair","/services/car-body-repair","/services/car-diagnostics","/services/car-paint-protection","/services/car-programming-diagnostic","/services/car-service","/services/electrical-system-repairs","/services/engine-diagnostics","/services/engine-diagnostics-dubai","/services/exhaust-repair","/services/fuel-system-repair","/services/mechanical-repair","/services/mercedes-ac-repair","/services/mercedes-body-repair","/services/mercedes-brake-repair","/services/mercedes-oil-change","/services/mercedes-repair","/services/mercedes-repair-dubai","/services/mercedes-service-dubai","/services/mercedes-suspension-repair","/services/mercedes-transmission-repair","/services/oil-change","/services/oil-change-service","/services/paint-protection","/services/performance-tuning","/services/performance-tuning-dubai","/services/ppf","/services/routine-maintenance","/services/steering-repair","/services/suspension-repair","/services/tire-repair","/services/transmission-repair","/services/transmission-services","/some-of-our-work","/steering-repair","/suspension-repair","/team","/terms-of-service","/tire-repair","/transmission-repair","/transmission-services","/who-we-are"];
+ export const localizedFallbacks = [["/ar/brands/audi-service-dubai/a4","/ar/brands/audi-service-dubai"],["/ar/brands/audi-service-dubai/a6","/ar/brands/audi-service-dubai"],["/ar/brands/audi-service-dubai/q5","/ar/brands/audi-service-dubai"],["/ar/brands/audi-service-dubai/q7","/ar/brands/audi-service-dubai"],["/ar/brands/audi-service-dubai/q8","/ar/brands/audi-service-dubai"],["/ar/brands/audi-service-dubai/r8","/ar/brands/audi-service-dubai"],["/ar/brands/audi-service-dubai/rs3","/ar/brands/audi-service-dubai"],["/ar/brands/audi-service-dubai/rs6","/ar/brands/audi-service-dubai"],["/ar/brands/ferrari-service-dubai/296","/ar/brands/ferrari-service-dubai"],["/ar/brands/ferrari-service-dubai/488","/ar/brands/ferrari-service-dubai"],["/ar/brands/ferrari-service-dubai/812","/ar/brands/ferrari-service-dubai"],["/ar/brands/ferrari-service-dubai/f8-tributo","/ar/brands/ferrari-service-dubai"],["/ar/brands/ferrari-service-dubai/portofino","/ar/brands/ferrari-service-dubai"],["/ar/brands/ferrari-service-dubai/purosangue","/ar/brands/ferrari-service-dubai"],["/ar/brands/ferrari-service-dubai/roma","/ar/brands/ferrari-service-dubai"],["/ar/brands/ferrari-service-dubai/sf90","/ar/brands/ferrari-service-dubai"],["/ar/mercedes/models/c63-service-repair-dubai","/ar/brands/mercedes-benz-service-dubai"],["/ar/mercedes/models/e63-service-repair-dubai","/ar/brands/mercedes-benz-service-dubai"],["/ar/mercedes/models/g-class-service-repair-dubai","/ar/brands/mercedes-benz-service-dubai"],["/ar/mercedes/models/gle-service-repair-dubai","/ar/brands/mercedes-benz-service-dubai"],["/ar/mercedes/models/gls-service-repair-dubai","/ar/brands/mercedes-benz-service-dubai"],["/ar/mercedes/models/s63-service-repair-dubai","/ar/brands/mercedes-benz-service-dubai"],["/ar/mercedes/problems","/ar/brands/mercedes-benz-service-dubai"],["/ar/mercedes/problems/ac-not-cooling","/ar/brands/mercedes-benz-service-dubai"],["/ar/mercedes/problems/airmatic-malfunction","/ar/brands/mercedes-benz-service-dubai"],["/ar/mercedes/problems/battery-warning","/ar/brands/mercedes-benz-service-dubai"],["/ar/mercedes/problems/check-engine-light","/ar/brands/mercedes-benz-service-dubai"],["/ar/mercedes/problems/engine-overheating","/ar/brands/mercedes-benz-service-dubai"],["/ar/mercedes/problems/gearbox-jerking","/ar/brands/mercedes-benz-service-dubai"],["/ar/mercedes/problems/oil-leak","/ar/brands/mercedes-benz-service-dubai"],["/ar/mercedes/problems/suspension-dropping-overnight","/ar/brands/mercedes-benz-service-dubai"],["/ar/mercedes/problems/transmission-slipping","/ar/brands/mercedes-benz-service-dubai"],["/ar/mercedes/problems/wont-start","/ar/brands/mercedes-benz-service-dubai"],["/ar/porsche/718","/ar/brands/porsche-service-dubai"],["/ar/porsche/911/991","/ar/brands/porsche-service-dubai"],["/ar/porsche/911/992","/ar/brands/porsche-service-dubai"],["/ar/porsche/911/997","/ar/brands/porsche-service-dubai"],["/ar/porsche/guides/718-maintenance","/ar/brands/porsche-service-dubai"],["/ar/porsche/guides/ac-maintenance-dubai","/ar/brands/porsche-service-dubai"],["/ar/porsche/guides/battery-life-dubai","/ar/brands/porsche-service-dubai"],["/ar/porsche/guides/brake-wear-dubai","/ar/brands/porsche-service-dubai"],["/ar/porsche/guides/buying-used-porsche-dubai","/ar/brands/porsche-service-dubai"],["/ar/porsche/guides/common-problems-dubai","/ar/brands/porsche-service-dubai"],["/ar/porsche/guides/cooling-maintenance","/ar/brands/porsche-service-dubai"],["/ar/porsche/guides/dealer-vs-independent-specialist","/ar/brands/porsche-service-dubai"],["/ar/porsche/guides/dubai-heat","/ar/brands/porsche-service-dubai"],["/ar/porsche/guides/how-often-service-dubai","/ar/brands/porsche-service-dubai"],["/ar/porsche/guides/macan-maintenance","/ar/brands/porsche-service-dubai"],["/ar/porsche/guides/maintenance-cost-dubai","/ar/brands/porsche-service-dubai"],["/ar/porsche/guides/major-vs-minor-service","/ar/brands/porsche-service-dubai"],["/ar/porsche/guides/oil-change-intervals","/ar/brands/porsche-service-dubai"],["/ar/porsche/guides/pdk-service-intervals","/ar/brands/porsche-service-dubai"],["/ar/porsche/guides/pre-purchase-inspection-checklist","/ar/brands/porsche-service-dubai"],["/ar/porsche/guides/service-intervals-uae","/ar/brands/porsche-service-dubai"],["/ar/porsche/guides/taycan-maintenance","/ar/brands/porsche-service-dubai"],["/ar/porsche/guides/tyre-wear-dubai","/ar/brands/porsche-service-dubai"],["/ar/porsche/guides/warning-lights","/ar/brands/porsche-service-dubai"],["/ar/porsche/macan","/ar/brands/porsche-service-dubai"],["/ar/porsche/problems","/ar/brands/porsche-service-dubai"],["/ar/porsche/problems/911-cooling","/ar/brands/porsche-service-dubai"],["/ar/porsche/problems/ac-not-cooling","/ar/brands/porsche-service-dubai"],["/ar/porsche/problems/air-suspension-warning","/ar/brands/porsche-service-dubai"],["/ar/porsche/problems/battery-warning","/ar/brands/porsche-service-dubai"],["/ar/porsche/problems/brake-warning-light","/ar/brands/porsche-service-dubai"],["/ar/porsche/problems/cayenne-air-suspension","/ar/brands/porsche-service-dubai"],["/ar/porsche/problems/check-engine-light","/ar/brands/porsche-service-dubai"],["/ar/porsche/problems/coolant-leak","/ar/brands/porsche-service-dubai"],["/ar/porsche/problems/delayed-gear-engagement","/ar/brands/porsche-service-dubai"],["/ar/porsche/problems/engine-misfire","/ar/brands/porsche-service-dubai"],["/ar/porsche/problems/engine-overheating","/ar/brands/porsche-service-dubai"],["/ar/porsche/problems/excessive-oil-consumption","/ar/brands/porsche-service-dubai"],["/ar/porsche/problems/macan-transfer-case","/ar/brands/porsche-service-dubai"],["/ar/porsche/problems/oil-leak","/ar/brands/porsche-service-dubai"],["/ar/porsche/problems/pasm-fault","/ar/brands/porsche-service-dubai"],["/ar/porsche/problems/pdcc-fault","/ar/brands/porsche-service-dubai"],["/ar/porsche/problems/pdk-jerking","/ar/brands/porsche-service-dubai"],["/ar/porsche/problems/pdk-slipping","/ar/brands/porsche-service-dubai"],["/ar/porsche/problems/pdk-warning-message","/ar/brands/porsche-service-dubai"],["/ar/porsche/problems/steering-vibration","/ar/brands/porsche-service-dubai"],["/ar/porsche/problems/suspension-dropping-overnight","/ar/brands/porsche-service-dubai"],["/ar/porsche/problems/taycan-12v-battery","/ar/brands/porsche-service-dubai"],["/ar/porsche/problems/taycan-charging","/ar/brands/porsche-service-dubai"],["/ar/porsche/problems/wont-start","/ar/brands/porsche-service-dubai"],["/ar/porsche/systems","/ar/brands/porsche-service-dubai"],["/ar/porsche/systems/air-suspension","/ar/brands/porsche-service-dubai"],["/ar/porsche/systems/pasm","/ar/brands/porsche-service-dubai"],["/ar/porsche/systems/pccb","/ar/brands/porsche-service-dubai"],["/ar/porsche/systems/pdcc","/ar/brands/porsche-service-dubai"],["/ar/porsche/systems/pdk","/ar/brands/porsche-service-dubai"],["/ar/porsche/systems/ptm-awd","/ar/brands/porsche-service-dubai"],["/ar/porsche/systems/rear-axle-steering","/ar/brands/porsche-service-dubai"],["/ar/porsche/systems/sport-chrono","/ar/brands/porsche-service-dubai"],["/ar/porsche/systems/tiptronic","/ar/brands/porsche-service-dubai"],["/ar/porsche/taycan","/ar/brands/porsche-service-dubai"]];
+-export const notFoundHtml = {"en":"<!DOCTYPE html>\r\n<html lang=\"en\">\r\n  <head>\r\n    <!-- Google Tag Manager -->\r\n    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':\r\n    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],\r\n    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=\r\n    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);\r\n    })(window,document,'script','dataLayer','GTM-T3GVSPND');</script>\r\n    <!-- End Google Tag Manager -->\r\n    <meta charset=\"UTF-8\" />\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\r\n    <title>Page Not Found | DIGI-TEC Performance Center</title>\r\n    <meta name=\"description\" content=\"The page you are looking for does not exist. Browse our services or contact Digitec Performance Center in Dubai.\">\r\n    <meta name=\"author\" content=\"Digi-Tec Performance Center\" />\r\n    <meta name=\"robots\" content=\"noindex, follow\">\n\n\n<link rel=\"icon\" href=\"/favicon.ico?v=3\" sizes=\"any\" />\r\n    <link rel=\"icon\" type=\"image/png\" href=\"/favicon-192x192.png?v=3\" sizes=\"192x192\" />\r\n    <link rel=\"apple-touch-icon\" href=\"/favicon-192x192.png?v=3\" />\r\n\r\n    <meta property=\"og:title\" content=\"Page Not Found | DIGI-TEC Performance Center\">\r\n    <meta property=\"og:description\" content=\"The page you are looking for does not exist. Browse our services or contact Digitec Performance Center in Dubai.\">\r\n    <meta property=\"og:type\" content=\"website\">\n<meta property=\"og:site_name\" content=\"Digi-Tec Performance Center\" />\r\n    <meta property=\"og:locale\" content=\"en_AE\">\r\n    \r\n\r\n    <meta name=\"twitter:card\" content=\"summary_large_image\">\r\n    <meta name=\"twitter:site\" content=\"@digitec_performance\" />\r\n    <meta name=\"twitter:title\" content=\"Page Not Found | DIGI-TEC Performance Center\">\r\n    <meta name=\"twitter:description\" content=\"The page you are looking for does not exist. Browse our services or contact Digitec Performance Center in Dubai.\">\r\n    \r\n\r\n    <!-- Shared factual entity graph. Route graphs reference these stable IDs. -->\r\n    \r\n\r\n    <!-- Existing GA4 property; exclude enquiry parameters from page URLs. -->\r\n    <script async src=\"https://www.googletagmanager.com/gtag/js?id=G-4TRCEJSY4S\"></script>\r\n    <script>\r\n      window.dataLayer = window.dataLayer || [];\r\n      function gtag(){dataLayer.push(arguments);}\r\n      gtag('js', new Date());\r\n      // Enquiry values and private referrer paths must not enter page events.\r\n      var analyticsLocation = window.location.origin + window.location.pathname;\r\n      var analyticsReferrer = '';\r\n      try { analyticsReferrer = document.referrer ? new URL(document.referrer).origin : ''; } catch (error) {}\r\n      // Retain recognised acquisition channels without sending arbitrary UTM text.\r\n      // Keep these labels aligned with src/lib/contact-attribution.ts.\r\n      var analyticsParams = new URLSearchParams(window.location.search);\r\n      var analyticsSource = (analyticsParams.get('utm_source') || '').toLowerCase().trim().replace(/^www\\./, '').replace(/\\.com$/, '');\r\n      var analyticsMedium = (analyticsParams.get('utm_medium') || '').toLowerCase().trim();\r\n      var analyticsConfig = {};\r\n      if (['google', 'bing', 'chatgpt', 'openai', 'perplexity', 'gemini', 'claude', 'copilot', 'duckduckgo', 'instagram', 'facebook', 'youtube', 'newsletter', 'whatsapp'].includes(analyticsSource)) analyticsConfig.campaign_source = analyticsSource;\r\n      if (['organic', 'cpc', 'ppc', 'paid_search', 'paid_social', 'social', 'email', 'referral', 'display', 'direct', 'organic_social'].includes(analyticsMedium)) analyticsConfig.campaign_medium = analyticsMedium;\r\n      gtag('set', { page_location: analyticsLocation, page_referrer: analyticsReferrer });\r\n      gtag('config', 'G-4TRCEJSY4S', analyticsConfig);\r\n    </script>\r\n\r\n    <link rel=\"preconnect\" href=\"https://fonts.googleapis.com\" />\r\n    <link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin />\r\n    <link href=\"https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Tajawal:wght@400;500;700;800;900&display=swap\" rel=\"stylesheet\" />\r\n    <script type=\"module\" crossorigin src=\"/assets/index-v1GkK8ss.js\"></script>\n    <link rel=\"stylesheet\" crossorigin href=\"/assets/index-CoVh-1v8.css\">\n  </head>\r\n  <body>\r\n    <!-- Google Tag Manager (noscript) -->\r\n    <noscript><iframe src=\"https://www.googletagmanager.com/ns.html?id=GTM-T3GVSPND\"\r\n    height=\"0\" width=\"0\" style=\"display:none;visibility:hidden\"></iframe></noscript>\r\n    <!-- End Google Tag Manager (noscript) -->\r\n    <div id=\"root\"><div class=\"custom-cursor\" aria-hidden=\"true\"></div><div role=\"region\" aria-label=\"Notifications (F8)\" tabindex=\"-1\" style=\"pointer-events:none\"><ol tabindex=\"-1\" class=\"fixed top-0 z-[100] flex max-h-screen w-full flex-col-reverse p-4 sm:bottom-0 sm:right-0 sm:top-auto sm:flex-col md:max-w-[420px]\"></ol></div><section aria-label=\"Notifications alt+T\" tabindex=\"-1\" aria-live=\"polite\" aria-relevant=\"additions text\" aria-atomic=\"false\"></section><!--$--><div class=\"min-h-screen flex items-center justify-center bg-black text-off-white px-6\"><div class=\"text-center max-w-md\"><h1 class=\"text-6xl font-black mb-4 text-burnt-orange\">404</h1><p class=\"text-xl mb-6\">Page not found.</p><p class=\"text-white/60 mb-8 text-sm\">The page you requested does not exist. Try our services or head back home.</p><div class=\"flex gap-3 justify-center\"><a class=\"btn-primary\" href=\"/\">Home</a><a class=\"btn-secondary\" href=\"/services\">Services</a></div></div></div><!--/$--></div>\r\r\n  </body>\r\n</html>\r\n","ar":"<!DOCTYPE html>\r\n<html lang=\"ar\" dir=\"rtl\">\r\n  <head>\r\n    <!-- Google Tag Manager -->\r\n    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':\r\n    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],\r\n    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=\r\n    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);\r\n    })(window,document,'script','dataLayer','GTM-T3GVSPND');</script>\r\n    <!-- End Google Tag Manager -->\r\n    <meta charset=\"UTF-8\" />\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\r\n    <title>الصفحة غير موجودة | مركز ديجي-تك بيرفورمانس</title>\r\n    <meta name=\"description\" content=\"الصفحة التي تبحث عنها غير موجودة. تصفح خدماتنا أو تواصل مع مركز ديجي-تك بيرفورمانس في دبي.\">\r\n    <meta name=\"author\" content=\"Digi-Tec Performance Center\" />\r\n    <meta name=\"robots\" content=\"noindex, follow\">\n\n\n<link rel=\"icon\" href=\"/favicon.ico?v=3\" sizes=\"any\" />\r\n    <link rel=\"icon\" type=\"image/png\" href=\"/favicon-192x192.png?v=3\" sizes=\"192x192\" />\r\n    <link rel=\"apple-touch-icon\" href=\"/favicon-192x192.png?v=3\" />\r\n\r\n    <meta property=\"og:title\" content=\"الصفحة غير موجودة | مركز ديجي-تك بيرفورمانس\">\r\n    <meta property=\"og:description\" content=\"الصفحة التي تبحث عنها غير موجودة. تصفح خدماتنا أو تواصل مع مركز ديجي-تك بيرفورمانس في دبي.\">\r\n    <meta property=\"og:type\" content=\"website\">\n<meta property=\"og:site_name\" content=\"Digi-Tec Performance Center\" />\r\n    <meta property=\"og:locale\" content=\"ar_AE\">\r\n    \r\n\r\n    <meta name=\"twitter:card\" content=\"summary_large_image\">\r\n    <meta name=\"twitter:site\" content=\"@digitec_performance\" />\r\n    <meta name=\"twitter:title\" content=\"الصفحة غير موجودة | مركز ديجي-تك بيرفورمانس\">\r\n    <meta name=\"twitter:description\" content=\"الصفحة التي تبحث عنها غير موجودة. تصفح خدماتنا أو تواصل مع مركز ديجي-تك بيرفورمانس في دبي.\">\r\n    \r\n\r\n    <!-- Shared factual entity graph. Route graphs reference these stable IDs. -->\r\n    \r\n\r\n    <!-- Existing GA4 property; exclude enquiry parameters from page URLs. -->\r\n    <script async src=\"https://www.googletagmanager.com/gtag/js?id=G-4TRCEJSY4S\"></script>\r\n    <script>\r\n      window.dataLayer = window.dataLayer || [];\r\n      function gtag(){dataLayer.push(arguments);}\r\n      gtag('js', new Date());\r\n      // Enquiry values and private referrer paths must not enter page events.\r\n      var analyticsLocation = window.location.origin + window.location.pathname;\r\n      var analyticsReferrer = '';\r\n      try { analyticsReferrer = document.referrer ? new URL(document.referrer).origin : ''; } catch (error) {}\r\n      // Retain recognised acquisition channels without sending arbitrary UTM text.\r\n      // Keep these labels aligned with src/lib/contact-attribution.ts.\r\n      var analyticsParams = new URLSearchParams(window.location.search);\r\n      var analyticsSource = (analyticsParams.get('utm_source') || '').toLowerCase().trim().replace(/^www\\./, '').replace(/\\.com$/, '');\r\n      var analyticsMedium = (analyticsParams.get('utm_medium') || '').toLowerCase().trim();\r\n      var analyticsConfig = {};\r\n      if (['google', 'bing', 'chatgpt', 'openai', 'perplexity', 'gemini', 'claude', 'copilot', 'duckduckgo', 'instagram', 'facebook', 'youtube', 'newsletter', 'whatsapp'].includes(analyticsSource)) analyticsConfig.campaign_source = analyticsSource;\r\n      if (['organic', 'cpc', 'ppc', 'paid_search', 'paid_social', 'social', 'email', 'referral', 'display', 'direct', 'organic_social'].includes(analyticsMedium)) analyticsConfig.campaign_medium = analyticsMedium;\r\n      gtag('set', { page_location: analyticsLocation, page_referrer: analyticsReferrer });\r\n      gtag('config', 'G-4TRCEJSY4S', analyticsConfig);\r\n    </script>\r\n\r\n    <link rel=\"preconnect\" href=\"https://fonts.googleapis.com\" />\r\n    <link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin />\r\n    <link href=\"https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Tajawal:wght@400;500;700;800;900&display=swap\" rel=\"stylesheet\" />\r\n    <script type=\"module\" crossorigin src=\"/assets/index-v1GkK8ss.js\"></script>\n    <link rel=\"stylesheet\" crossorigin href=\"/assets/index-CoVh-1v8.css\">\n  </head>\r\n  <body>\r\n    <!-- Google Tag Manager (noscript) -->\r\n    <noscript><iframe src=\"https://www.googletagmanager.com/ns.html?id=GTM-T3GVSPND\"\r\n    height=\"0\" width=\"0\" style=\"display:none;visibility:hidden\"></iframe></noscript>\r\n    <!-- End Google Tag Manager (noscript) -->\r\n    <div id=\"root\"><div class=\"custom-cursor\" aria-hidden=\"true\"></div><div role=\"region\" aria-label=\"Notifications (F8)\" tabindex=\"-1\" style=\"pointer-events:none\"><ol tabindex=\"-1\" class=\"fixed top-0 z-[100] flex max-h-screen w-full flex-col-reverse p-4 sm:bottom-0 sm:right-0 sm:top-auto sm:flex-col md:max-w-[420px]\"></ol></div><section aria-label=\"Notifications alt+T\" tabindex=\"-1\" aria-live=\"polite\" aria-relevant=\"additions text\" aria-atomic=\"false\"></section><!--$--><div class=\"min-h-screen flex items-center justify-center bg-black text-off-white px-6\"><div class=\"text-center max-w-md\"><h1 class=\"text-6xl font-black mb-4 text-burnt-orange\">404</h1><p class=\"text-xl mb-6\">الصفحة غير موجودة.</p><p class=\"text-white/60 mb-8 text-sm\">الصفحة التي طلبتها غير موجودة. يمكنك تصفح خدماتنا أو العودة إلى الصفحة الرئيسية.</p><div class=\"flex gap-3 justify-center\"><a class=\"btn-primary\" href=\"/ar\">الرئيسية</a><a class=\"btn-secondary\" href=\"/ar/services\">الخدمات</a></div></div></div><!--/$--></div>\r\r\n  </body>\r\n</html>\r\n"};
++export const notFoundHtml = {"en":"<!DOCTYPE html>\r\n<html lang=\"en\">\r\n  <head>\r\n    <!-- Google Tag Manager -->\r\n    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':\r\n    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],\r\n    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=\r\n    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);\r\n    })(window,document,'script','dataLayer','GTM-T3GVSPND');</script>\r\n    <!-- End Google Tag Manager -->\r\n    <meta charset=\"UTF-8\" />\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\r\n    <title>Page Not Found | DIGI-TEC Performance Center</title>\r\n    <meta name=\"description\" content=\"The page you are looking for does not exist. Browse our services or contact Digitec Performance Center in Dubai.\">\r\n    <meta name=\"author\" content=\"Digi-Tec Performance Center\" />\r\n    <meta name=\"robots\" content=\"noindex, follow\">\n\n\n<link rel=\"icon\" href=\"/favicon.ico?v=3\" sizes=\"any\" />\r\n    <link rel=\"icon\" type=\"image/png\" href=\"/favicon-192x192.png?v=3\" sizes=\"192x192\" />\r\n    <link rel=\"apple-touch-icon\" href=\"/favicon-192x192.png?v=3\" />\r\n\r\n    <meta property=\"og:title\" content=\"Page Not Found | DIGI-TEC Performance Center\">\r\n    <meta property=\"og:description\" content=\"The page you are looking for does not exist. Browse our services or contact Digitec Performance Center in Dubai.\">\r\n    <meta property=\"og:type\" content=\"website\">\n<meta property=\"og:site_name\" content=\"Digi-Tec Performance Center\" />\r\n    <meta property=\"og:locale\" content=\"en_AE\">\r\n    \r\n\r\n    <meta name=\"twitter:card\" content=\"summary_large_image\">\r\n    <meta name=\"twitter:site\" content=\"@digitec_performance\" />\r\n    <meta name=\"twitter:title\" content=\"Page Not Found | DIGI-TEC Performance Center\">\r\n    <meta name=\"twitter:description\" content=\"The page you are looking for does not exist. Browse our services or contact Digitec Performance Center in Dubai.\">\r\n    \r\n\r\n    <!-- Shared factual entity graph. Route graphs reference these stable IDs. -->\r\n    \r\n\r\n    <!-- Existing GA4 property; exclude enquiry parameters from page URLs. -->\r\n    <script async src=\"https://www.googletagmanager.com/gtag/js?id=G-4TRCEJSY4S\"></script>\r\n    <script>\r\n      window.dataLayer = window.dataLayer || [];\r\n      function gtag(){dataLayer.push(arguments);}\r\n      gtag('js', new Date());\r\n      // Enquiry values and private referrer paths must not enter page events.\r\n      var analyticsLocation = window.location.origin + window.location.pathname;\r\n      var analyticsReferrer = '';\r\n      try { analyticsReferrer = document.referrer ? new URL(document.referrer).origin : ''; } catch (error) {}\r\n      // Retain recognised acquisition channels without sending arbitrary UTM text.\r\n      // Keep these labels aligned with src/lib/contact-attribution.ts.\r\n      var analyticsParams = new URLSearchParams(window.location.search);\r\n      var analyticsSource = (analyticsParams.get('utm_source') || '').toLowerCase().trim().replace(/^www\\./, '').replace(/\\.com$/, '');\r\n      var analyticsMedium = (analyticsParams.get('utm_medium') || '').toLowerCase().trim();\r\n      var analyticsConfig = {};\r\n      if (['google', 'bing', 'chatgpt', 'openai', 'perplexity', 'gemini', 'claude', 'copilot', 'duckduckgo', 'instagram', 'facebook', 'youtube', 'newsletter', 'whatsapp'].includes(analyticsSource)) analyticsConfig.campaign_source = analyticsSource;\r\n      if (['organic', 'cpc', 'ppc', 'paid_search', 'paid_social', 'social', 'email', 'referral', 'display', 'direct', 'organic_social'].includes(analyticsMedium)) analyticsConfig.campaign_medium = analyticsMedium;\r\n      gtag('set', { page_location: analyticsLocation, page_referrer: analyticsReferrer });\r\n      gtag('config', 'G-4TRCEJSY4S', analyticsConfig);\r\n    </script>\r\n\r\n    <link rel=\"preconnect\" href=\"https://fonts.googleapis.com\" />\r\n    <link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin />\r\n    <link href=\"https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Tajawal:wght@400;500;700;800;900&display=swap\" rel=\"stylesheet\" />\r\n    <script type=\"module\" crossorigin src=\"/assets/index-BIVGDihT.js\"></script>\n    <link rel=\"stylesheet\" crossorigin href=\"/assets/index-ChEk0tDZ.css\">\n  </head>\r\n  <body>\r\n    <!-- Google Tag Manager (noscript) -->\r\n    <noscript><iframe src=\"https://www.googletagmanager.com/ns.html?id=GTM-T3GVSPND\"\r\n    height=\"0\" width=\"0\" style=\"display:none;visibility:hidden\"></iframe></noscript>\r\n    <!-- End Google Tag Manager (noscript) -->\r\n    <div id=\"root\"><div class=\"custom-cursor\" aria-hidden=\"true\"></div><div role=\"region\" aria-label=\"Notifications (F8)\" tabindex=\"-1\" style=\"pointer-events:none\"><ol tabindex=\"-1\" class=\"fixed top-0 z-[100] flex max-h-screen w-full flex-col-reverse p-4 sm:bottom-0 sm:right-0 sm:top-auto sm:flex-col md:max-w-[420px]\"></ol></div><section aria-label=\"Notifications alt+T\" tabindex=\"-1\" aria-live=\"polite\" aria-relevant=\"additions text\" aria-atomic=\"false\"></section><!--$--><div class=\"min-h-screen flex items-center justify-center bg-black text-off-white px-6\"><div class=\"text-center max-w-md\"><h1 class=\"text-6xl font-black mb-4 text-burnt-orange\">404</h1><p class=\"text-xl mb-6\">Page not found.</p><p class=\"text-white/60 mb-8 text-sm\">The page you requested does not exist. Try our services or head back home.</p><div class=\"flex gap-3 justify-center\"><a class=\"btn-primary\" href=\"/\">Home</a><a class=\"btn-secondary\" href=\"/services\">Services</a></div></div></div><!--/$--></div>\r\r\n  </body>\r\n</html>\r\n","ar":"<!DOCTYPE html>\r\n<html lang=\"ar\" dir=\"rtl\">\r\n  <head>\r\n    <!-- Google Tag Manager -->\r\n    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':\r\n    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],\r\n    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=\r\n    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);\r\n    })(window,document,'script','dataLayer','GTM-T3GVSPND');</script>\r\n    <!-- End Google Tag Manager -->\r\n    <meta charset=\"UTF-8\" />\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\r\n    <title>الصفحة غير موجودة | مركز ديجي-تك بيرفورمانس</title>\r\n    <meta name=\"description\" content=\"الصفحة التي تبحث عنها غير موجودة. تصفح خدماتنا أو تواصل مع مركز ديجي-تك بيرفورمانس في دبي.\">\r\n    <meta name=\"author\" content=\"Digi-Tec Performance Center\" />\r\n    <meta name=\"robots\" content=\"noindex, follow\">\n\n\n<link rel=\"icon\" href=\"/favicon.ico?v=3\" sizes=\"any\" />\r\n    <link rel=\"icon\" type=\"image/png\" href=\"/favicon-192x192.png?v=3\" sizes=\"192x192\" />\r\n    <link rel=\"apple-touch-icon\" href=\"/favicon-192x192.png?v=3\" />\r\n\r\n    <meta property=\"og:title\" content=\"الصفحة غير موجودة | مركز ديجي-تك بيرفورمانس\">\r\n    <meta property=\"og:description\" content=\"الصفحة التي تبحث عنها غير موجودة. تصفح خدماتنا أو تواصل مع مركز ديجي-تك بيرفورمانس في دبي.\">\r\n    <meta property=\"og:type\" content=\"website\">\n<meta property=\"og:site_name\" content=\"Digi-Tec Performance Center\" />\r\n    <meta property=\"og:locale\" content=\"ar_AE\">\r\n    \r\n\r\n    <meta name=\"twitter:card\" content=\"summary_large_image\">\r\n    <meta name=\"twitter:site\" content=\"@digitec_performance\" />\r\n    <meta name=\"twitter:title\" content=\"الصفحة غير موجودة | مركز ديجي-تك بيرفورمانس\">\r\n    <meta name=\"twitter:description\" content=\"الصفحة التي تبحث عنها غير موجودة. تصفح خدماتنا أو تواصل مع مركز ديجي-تك بيرفورمانس في دبي.\">\r\n    \r\n\r\n    <!-- Shared factual entity graph. Route graphs reference these stable IDs. -->\r\n    \r\n\r\n    <!-- Existing GA4 property; exclude enquiry parameters from page URLs. -->\r\n    <script async src=\"https://www.googletagmanager.com/gtag/js?id=G-4TRCEJSY4S\"></script>\r\n    <script>\r\n      window.dataLayer = window.dataLayer || [];\r\n      function gtag(){dataLayer.push(arguments);}\r\n      gtag('js', new Date());\r\n      // Enquiry values and private referrer paths must not enter page events.\r\n      var analyticsLocation = window.location.origin + window.location.pathname;\r\n      var analyticsReferrer = '';\r\n      try { analyticsReferrer = document.referrer ? new URL(document.referrer).origin : ''; } catch (error) {}\r\n      // Retain recognised acquisition channels without sending arbitrary UTM text.\r\n      // Keep these labels aligned with src/lib/contact-attribution.ts.\r\n      var analyticsParams = new URLSearchParams(window.location.search);\r\n      var analyticsSource = (analyticsParams.get('utm_source') || '').toLowerCase().trim().replace(/^www\\./, '').replace(/\\.com$/, '');\r\n      var analyticsMedium = (analyticsParams.get('utm_medium') || '').toLowerCase().trim();\r\n      var analyticsConfig = {};\r\n      if (['google', 'bing', 'chatgpt', 'openai', 'perplexity', 'gemini', 'claude', 'copilot', 'duckduckgo', 'instagram', 'facebook', 'youtube', 'newsletter', 'whatsapp'].includes(analyticsSource)) analyticsConfig.campaign_source = analyticsSource;\r\n      if (['organic', 'cpc', 'ppc', 'paid_search', 'paid_social', 'social', 'email', 'referral', 'display', 'direct', 'organic_social'].includes(analyticsMedium)) analyticsConfig.campaign_medium = analyticsMedium;\r\n      gtag('set', { page_location: analyticsLocation, page_referrer: analyticsReferrer });\r\n      gtag('config', 'G-4TRCEJSY4S', analyticsConfig);\r\n    </script>\r\n\r\n    <link rel=\"preconnect\" href=\"https://fonts.googleapis.com\" />\r\n    <link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin />\r\n    <link href=\"https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Tajawal:wght@400;500;700;800;900&display=swap\" rel=\"stylesheet\" />\r\n    <script type=\"module\" crossorigin src=\"/assets/index-BIVGDihT.js\"></script>\n    <link rel=\"stylesheet\" crossorigin href=\"/assets/index-ChEk0tDZ.css\">\n  </head>\r\n  <body>\r\n    <!-- Google Tag Manager (noscript) -->\r\n    <noscript><iframe src=\"https://www.googletagmanager.com/ns.html?id=GTM-T3GVSPND\"\r\n    height=\"0\" width=\"0\" style=\"display:none;visibility:hidden\"></iframe></noscript>\r\n    <!-- End Google Tag Manager (noscript) -->\r\n    <div id=\"root\"><div class=\"custom-cursor\" aria-hidden=\"true\"></div><div role=\"region\" aria-label=\"Notifications (F8)\" tabindex=\"-1\" style=\"pointer-events:none\"><ol tabindex=\"-1\" class=\"fixed top-0 z-[100] flex max-h-screen w-full flex-col-reverse p-4 sm:bottom-0 sm:right-0 sm:top-auto sm:flex-col md:max-w-[420px]\"></ol></div><section aria-label=\"Notifications alt+T\" tabindex=\"-1\" aria-live=\"polite\" aria-relevant=\"additions text\" aria-atomic=\"false\"></section><!--$--><div class=\"min-h-screen flex items-center justify-center bg-black text-off-white px-6\"><div class=\"text-center max-w-md\"><h1 class=\"text-6xl font-black mb-4 text-burnt-orange\">404</h1><p class=\"text-xl mb-6\">الصفحة غير موجودة.</p><p class=\"text-white/60 mb-8 text-sm\">الصفحة التي طلبتها غير موجودة. يمكنك تصفح خدماتنا أو العودة إلى الصفحة الرئيسية.</p><div class=\"flex gap-3 justify-center\"><a class=\"btn-primary\" href=\"/ar\">الرئيسية</a><a class=\"btn-secondary\" href=\"/ar/services\">الخدمات</a></div></div></div><!--/$--></div>\r\r\n  </body>\r\n</html>\r\n"};
+diff --git a/docs/seo/protection-release-validation.json b/docs/seo/protection-release-validation.json
+index d9f3121..2608278 100644
+--- a/docs/seo/protection-release-validation.json
++++ b/docs/seo/protection-release-validation.json
+@@ -1,9 +1,9 @@
+ {
+-  "checkedAt": "2026-10-12T08:01:00.304Z",
++  "checkedAt": "2026-10-17T09:12:01.735Z",
+   "passed": true,
+   "outputDirectory": "dist",
+-  "clientEntry": "assets/index-6pAJ9Rio.js",
+-  "clientSha256": "2452939ca9f75241c9d312e202412cfb2edccae27a14ecadda34afe503b6d2fa",
++  "clientEntry": "assets/index-BIVGDihT.js",
++  "clientSha256": "329d7e4081ff6a313947e60c33760b179e8d5d25573ef265ace3ef1fac6128d7",
+   "prerenderedRoutes": 1256,
+   "sitemapUrls": 1005,
+   "pages": [
+@@ -11,10 +11,10 @@
+       "route": "/services/paint-protection-film",
+       "component": "PpfPage",
+       "canonical": "https://digitecme.com/services/paint-protection-film",
+-      "title": "PPF Dubai | Paint Protection Film Installation | DIGI-TEC",
++      "title": "Paint Protection Film (PPF) Dubai | DIGI-TEC",
+       "internalLinks": 60,
+-      "htmlSha256": "9862b5dcfbf1c76fcb681608c055824ddcf18d6e1f1a115117fa0f9e6334bcac",
+-      "clientChunk": "assets/PpfPage-BX0VZIEm.js",
++      "htmlSha256": "191a46d10be96c9edb06ee5d8f555ffc1f89b261c2a559551cfbb660afc56c91",
++      "clientChunk": "assets/PpfPage-awL3Y8vB.js",
+       "checks": "passed"
+     },
+     {
+@@ -23,8 +23,8 @@
+       "canonical": "https://digitecme.com/services/ceramic-coating",
+       "title": "Ceramic Coating Dubai | Car Paint Protection | DIGI-TEC",
+       "internalLinks": 54,
+-      "htmlSha256": "8084accafed7cb931e7ef7126d47b31d0523e307dd7ab08548be43d121e3b95f",
+-      "clientChunk": "assets/CeramicCoatingPage-B5cffMuA.js",
++      "htmlSha256": "76518b5088c4f03acf47c2b91bdbd8b91534d1fb7e3064a9931e3e75fda55841",
++      "clientChunk": "assets/CeramicCoatingPage-Ctg5rpNm.js",
+       "checks": "passed"
+     },
+     {
+@@ -33,8 +33,8 @@
+       "canonical": "https://digitecme.com/services/car-polishing-dubai",
+       "title": "Car Polishing Dubai | Paint Correction | DIGI-TEC",
+       "internalLinks": 54,
+-      "htmlSha256": "582149b7a009466e05e47a7c7a12ae6fbe01a524a36314c5d39b59747354c38e",
+-      "clientChunk": "assets/PaintCorrectionPage-Yrn87vfF.js",
++      "htmlSha256": "ef14bd992014843864280f8f54c7b4c5b532c68906c681aede19e68b568283f9",
++      "clientChunk": "assets/PaintCorrectionPage-DEZk5yAe.js",
+       "checks": "passed"
+     }
+   ]
+diff --git a/docs/seo/query-release-validation.json b/docs/seo/query-release-validation.json
+index 37f64a3..f22ce9e 100644
+--- a/docs/seo/query-release-validation.json
++++ b/docs/seo/query-release-validation.json
+@@ -3,7 +3,7 @@
+   "routes": 1256,
+   "titleChecks": 8,
+   "maintenanceGuideChecks": 2,
+-  "internalLinksChecked": 44535,
++  "internalLinksChecked": 44536,
+   "existingLocaleFallbackLinks": [],
+   "realHtmlRedirectCases": 16,
+   "roxEnglishOnlyIndexation": true,
+diff --git a/docs/seo/route-schema-matrix.csv b/docs/seo/route-schema-matrix.csv
+index 15b0601..eb81835 100644
+--- a/docs/seo/route-schema-matrix.csv
++++ b/docs/seo/route-schema-matrix.csv
+@@ -1236,7 +1236,7 @@
+ "https://digitecme.com/services/mercedes-transmission-repair-dubai","/services/mercedes-transmission-repair-dubai","en-AE","service","Individual workshop service","index, follow","Individual workshop service","Duplicate synthetic and client WebPage/Service/BreadcrumbList/FAQPage","Answer; AutoRepair; AutomotiveBusiness; Brand; BreadcrumbList; City; ContactPoint; FAQPage; ImageObject; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Question; Service; WebPage; WebSite","WebPage, BreadcrumbList, Service, visible FAQPage, OfferCatalog when visible","Yes","31","Linked","Mercedes Transmission &amp; Gearbox Repair Dubai | Digi-Tec"
+ "https://digitecme.com/services/oil-change-dubai","/services/oil-change-dubai","en-AE","service","Individual workshop service","index, follow","Individual workshop service","Duplicate synthetic and client WebPage/Service/BreadcrumbList/FAQPage","Answer; AutoRepair; AutomotiveBusiness; BreadcrumbList; City; ContactPoint; FAQPage; ImageObject; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Question; Service; WebPage; WebSite","WebPage, BreadcrumbList, Service, visible FAQPage, OfferCatalog when visible","Yes","685","Linked","Car Oil Change Dubai | Engine Oil &amp; Filter Service | DIGI-TEC"
+ "https://digitecme.com/services/paint-protection-dubai","/services/paint-protection-dubai","en-AE","service","Individual workshop service","index, follow","Individual workshop service","Duplicate synthetic and client WebPage/Service/BreadcrumbList/FAQPage","AutoRepair; AutomotiveBusiness; BreadcrumbList; City; ContactPoint; ImageObject; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Service; WebPage; WebSite","WebPage, BreadcrumbList, Service, visible FAQPage, OfferCatalog when visible","Yes","19","Linked","Car Paint Protection Dubai | PPF &amp; Ceramic Coating | DIGI-TEC"
+-"https://digitecme.com/services/paint-protection-film","/services/paint-protection-film","en-AE","service","Individual workshop service","index, follow","Individual workshop service","Duplicate synthetic and client WebPage/Service/BreadcrumbList/FAQPage","AutoRepair; AutomotiveBusiness; BreadcrumbList; City; ContactPoint; ImageObject; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Service; WebPage; WebSite","WebPage, BreadcrumbList, Service, visible FAQPage, OfferCatalog when visible","Yes","46","Linked","PPF Dubai | Paint Protection Film Installation | DIGI-TEC"
++"https://digitecme.com/services/paint-protection-film","/services/paint-protection-film","en-AE","service","Individual workshop service","index, follow","Individual workshop service","Duplicate synthetic and client WebPage/Service/BreadcrumbList/FAQPage","AutoRepair; AutomotiveBusiness; BreadcrumbList; City; ContactPoint; ImageObject; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Service; WebPage; WebSite","WebPage, BreadcrumbList, Service, visible FAQPage, OfferCatalog when visible","Yes","46","Linked","Paint Protection Film (PPF) Dubai | DIGI-TEC"
+ "https://digitecme.com/services/roadside-assistance-dubai","/services/roadside-assistance-dubai","en-AE","service","Individual workshop service","index, follow","Individual workshop service","Duplicate synthetic and client WebPage/Service/BreadcrumbList/FAQPage","Answer; AutoRepair; AutomotiveBusiness; BreadcrumbList; City; ContactPoint; FAQPage; ImageObject; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Question; Service; WebPage; WebSite","WebPage, BreadcrumbList, Service, visible FAQPage, OfferCatalog when visible","Yes","3","Linked","Roadside Assistance Dubai | DIGI-TEC"
+ "https://digitecme.com/services/soft-close-door-repair-dubai","/services/soft-close-door-repair-dubai","en-AE","service","Individual workshop service","index, follow","Individual workshop service","Duplicate synthetic and client WebPage/Service/BreadcrumbList/FAQPage","Answer; AutoRepair; AutomotiveBusiness; BreadcrumbList; City; ContactPoint; FAQPage; ImageObject; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Question; Service; WebPage; WebSite","WebPage, BreadcrumbList, Service, visible FAQPage, OfferCatalog when visible","Yes","7","Linked","Soft-Close Door Repair &amp; Installation Dubai | DIGI-TEC"
+ "https://digitecme.com/services/steering-repair-dubai","/services/steering-repair-dubai","en-AE","service","Individual workshop service","index, follow","Individual workshop service","Duplicate synthetic and client WebPage/Service/BreadcrumbList/FAQPage","Answer; AutoRepair; AutomotiveBusiness; BreadcrumbList; City; ContactPoint; FAQPage; ImageObject; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Question; Service; WebPage; WebSite","WebPage, BreadcrumbList, Service, visible FAQPage, OfferCatalog when visible","Yes","7","Linked","Power Steering &amp; Rack Repair Dubai | DIGI-TEC"
+diff --git a/index.html b/index.html
+index fa3c738..b4efd94 100644
+--- a/index.html
++++ b/index.html
+@@ -46,6 +46,7 @@
+           "@type": "Organization",
+           "@id": "https://digitecme.com/#organization",
+           "name": "Digi-Tec Performance Center",
++          "legalName": "DIGI-TEC Performance Center L.L.C.",
+           "alternateName": ["Digi-Tec", "DIGI-TEC", "Digitec"],
+           "url": "https://digitecme.com/",
+           "email": "info@digitecme.com",
+diff --git a/public/sitemap.xml b/public/sitemap.xml
+index 3855364..45f9e9a 100644
+--- a/public/sitemap.xml
++++ b/public/sitemap.xml
+@@ -1742,7 +1742,7 @@
+   </url>
+   <url>
+     <loc>https://digitecme.com/ar/services/paint-protection-film</loc>
+-    <lastmod>2026-10-12</lastmod>
++    <lastmod>2026-10-17</lastmod>
+   </url>
+   <url>
+     <loc>https://digitecme.com/ar/services/roadside-assistance-dubai</loc>
+@@ -3946,7 +3946,7 @@
+   </url>
+   <url>
+     <loc>https://digitecme.com/services/paint-protection-film</loc>
+-    <lastmod>2026-10-12</lastmod>
++    <lastmod>2026-10-17</lastmod>
+   </url>
+   <url>
+     <loc>https://digitecme.com/services/roadside-assistance-dubai</loc>
+diff --git a/scripts/test-master-seo-browser.mjs b/scripts/test-master-seo-browser.mjs
+index 909759d..0bbc43e 100644
+--- a/scripts/test-master-seo-browser.mjs
++++ b/scripts/test-master-seo-browser.mjs
+@@ -17,7 +17,7 @@ const owners = [
+   { name: 'rolls-royce', route: '/brands/rolls-royce-service-dubai', h1: 'Rolls-Royce Service & Repair Dubai', hero: true },
+   { name: 'aston-martin', route: '/brands/aston-martin-service-dubai', h1: 'Aston Martin Service & Repair Dubai', hero: true },
+   { name: 'bentley', route: '/brands/bentley-service-dubai', h1: 'Bentley Service & Repair Dubai', hero: true },
+-  { name: 'ppf', route: '/services/paint-protection-film', h1: 'Paint Protection Film (PPF) Dubai', section: '#ppf-care' },
++  { name: 'ppf', route: '/services/paint-protection-film', h1: 'Paint Protection Film (PPF) in Dubai', section: '#ppf-care' },
+   { name: 'ceramic', route: '/services/ceramic-coating', h1: 'Ceramic Coating Dubai' },
+   { name: 'cue', route: '/services/cadillac-cue-screen-repair-dubai', h1: 'Cadillac CUE Screen Repair & Replacement in Dubai', newPage: true },
+   { name: 'electrical', route: '/services/auto-electrical-repair-dubai', h1: 'Car Electrical Repair in Dubai' },
+diff --git a/scripts/test-paint-care-journeys.mjs b/scripts/test-paint-care-journeys.mjs
+index c02fc1e..d30843f 100644
+--- a/scripts/test-paint-care-journeys.mjs
++++ b/scripts/test-paint-care-journeys.mjs
+@@ -9,7 +9,7 @@ const base = process.argv[3] || 'http://127.0.0.1:5194';
+ const output = 'paint-care-integration-qa.local';
+ await mkdir(output, { recursive: true });
+ const specs = [
+-  { key: 'ppf', path: '/services/paint-protection-film', h1: 'Paint Protection Film (PPF) Dubai', form: '#ppf-quote-form', faq: '.ppf-faqs summary', count: 14, selector: '#ppf-requested-coverage', service: 'ppf' },
++  { key: 'ppf', path: '/services/paint-protection-film', h1: 'Paint Protection Film (PPF) in Dubai', form: '#ppf-quote-form', faq: '.ppf-faqs summary', count: 14, selector: '#ppf-requested-coverage', service: 'ppf' },
+   { key: 'ceramic', path: '/services/ceramic-coating', h1: 'Ceramic Coating Dubai', faq: '.cc-faq button', count: 16 },
+   { key: 'paint', path: '/services/car-polishing-dubai', h1: 'Car Polishing & Paint Correction Dubai', form: '#paint-assessment-form', faq: '.paint-faqs summary', count: 16, selector: '#paint-concern', service: 'paint_correction' },
+ ];
+@@ -57,6 +57,10 @@ const checkForm = async (spec) => {
+   await form.getByLabel('Vehicle brand', { exact: true }).fill('   ');
+   await form.getByLabel('Vehicle model', { exact: true }).fill('Private Model Ω &');
+   await form.getByLabel('Year', { exact: true }).fill('2025');
++  if (spec.key === 'ppf') {
++    await form.locator('#ppf-name').fill('Private Customer');
++    await form.locator('#ppf-contact-details').fill('+971501234567');
++  }
+   await form.locator('button[type=submit]').click();
+   assert.equal(await form.getByRole('alert').count(), 1);
+   await form.getByLabel('Vehicle brand', { exact: true }).fill('Private Brand Ω &');
+@@ -64,8 +68,11 @@ const checkForm = async (spec) => {
+   await form.locator('button[type=submit]').click();
+   assert.equal(events.filter((event) => event.event === 'whatsapp_click').length, 0);
+   await form.getByLabel('Year', { exact: true }).fill('2025');
+-  await page.locator(spec.selector).click();
+-  await page.getByRole('option', { name: spec.key === 'ppf' ? 'Full Front' : 'Scratches', exact: true }).click();
++  if (spec.key === 'ppf') await page.locator(spec.selector).selectOption('Full Front');
++  else {
++    await page.locator(spec.selector).click();
++    await page.getByRole('option', { name: 'Scratches', exact: true }).click();
++  }
+   assert.equal(events.filter((event) => Array.isArray(event) && event[1] === 'quote_started').length, 1);
+   const request = page.waitForRequest((req) => req.url().startsWith('https://wa.me/'));
+   await form.locator('button[type=submit]').click();
+@@ -158,10 +165,15 @@ try {
+     if (spec.form) {
+       const form = noJsPage.locator(spec.form);
+       assert.equal(await form.locator('button[type=submit]').isDisabled(), true);
+-      await form.getByLabel('Vehicle brand', { exact: true }).fill('Private NoJS');
+-      await form.getByLabel('Vehicle model', { exact: true }).fill('Private NoJS Model');
+-      await form.getByLabel('Year', { exact: true }).fill('2025');
+-      await form.getByLabel('Year', { exact: true }).press('Enter');
++      if (spec.key === 'ppf') {
++        assert.equal(await form.getByLabel('Vehicle brand', { exact: true }).isDisabled(), true);
++        await noJsPage.locator('body').press('Enter');
++      } else {
++        await form.getByLabel('Vehicle brand', { exact: true }).fill('Private NoJS');
++        await form.getByLabel('Vehicle model', { exact: true }).fill('Private NoJS Model');
++        await form.getByLabel('Year', { exact: true }).fill('2025');
++        await form.getByLabel('Year', { exact: true }).press('Enter');
++      }
+       await noJsPage.waitForTimeout(150);
+       assert.equal(noJsPage.url(), base + spec.path, 'No GET fallback with form data');
+     }
+diff --git a/scripts/test-ppf-browser.mjs b/scripts/test-ppf-browser.mjs
+index 63f555c..78d742e 100644
+--- a/scripts/test-ppf-browser.mjs
++++ b/scripts/test-ppf-browser.mjs
+@@ -8,6 +8,7 @@ const require = createRequire(path.resolve(process.argv[2] || '.', 'package.json
+ const { chromium } = require('playwright');
+ let base = process.argv[3] || 'http://127.0.0.1:4173';
+ const route = '/services/paint-protection-film';
++const arabicRoute = `/ar${route}`;
+ const output = process.env.QA_OUTPUT_DIR || 'ppf-qa.local';
+ await mkdir(output, { recursive: true });
+ const browser = await chromium.launch({ headless: true, channel: 'msedge' });
+@@ -34,35 +35,202 @@ if (process.argv.includes('--prerendered')) {
+ const context = await browser.newContext({ viewport: { width: 1440, height: 1000 } });
+ const requests = [];
+ const events = [];
++const storageWrites = [];
+ const errors = [];
+ await context.exposeFunction('capturePpfEvent', (event) => events.push(event));
++await context.exposeFunction('capturePpfStorage', (entry) => storageWrites.push(entry));
++// Capture the dedicated page view before React mounts. Google/GTM requests are
++// blocked, so this measures application emission rather than GA ingestion.
++await context.addInitScript(() => {
++  const setItem = Storage.prototype.setItem;
++  Storage.prototype.setItem = function (key, value) {
++    window.capturePpfStorage({ key, value });
++    return setItem.call(this, key, value);
++  };
++  window.dataLayer = [];
++  const push = window.dataLayer.push;
++  window.dataLayer.push = function (...items) {
++    items.forEach((item) => window.capturePpfEvent(item && typeof item.length === 'number' && !item.event ? Array.from(item) : item));
++    return push.apply(this, items);
++  };
++});
+ // Local QA must never send enquiries or analytics to production services.
+ await context.route('**/*', async (request) => {
+-  if (request.request().url().startsWith(base)) return request.continue();
++  if (new URL(request.request().url()).origin === new URL(base).origin) return request.continue();
+   requests.push(request.request().url());
+   return request.abort();
+ });
+ const page = await context.newPage();
+ page.on('pageerror', (error) => errors.push(error.message));
+-const ready = async () => {
+-  await page.goto(`${base}${route}`);
+-  await page.locator('#ppf-heading').waitFor();
++const ready = async (pathname = route) => {
++  events.length = 0;
++  await page.goto(`${base}${pathname}`);
++  await page.locator('#ppf-quote-form').waitFor();
+   await page.waitForFunction(() => document.querySelector('#ppf-quote-form button[type=submit]')?.disabled === false);
+-  await page.locator('.ppf-hero-image img').evaluate((img) => img.decode());
++  if (pathname === route) await page.locator('.ppf-hero-image img').evaluate((img) => img.decode());
++  await page.waitForFunction(() => window.dataLayer.some((item) => item?.[1] === 'ppf_page_view'));
++  assert.equal(events.filter((item) => Array.isArray(item) && item[1] === 'ppf_page_view').length, 1, `${pathname}: one initial PPF page view`);
++};
++const clearEvents = async () => {
++  events.length = 0;
+   await page.evaluate(() => {
+-    window.dataLayer = [];
+-    window.dataLayer.push = (...items) => {
+-      items.forEach((item) => window.capturePpfEvent(item));
+-      return Array.prototype.push.apply(window.dataLayer, items);
+-    };
+-    window.gtag = (...args) => window.dataLayer.push(args);
++    window.dataLayer.length = 0;
++  });
++};
++const eventCount = (name) => events.filter((item) => item?.event === name || (Array.isArray(item) && item[1] === name)).length;
++const assertPageViewContext = async (pathname) => {
++  await page.waitForFunction((value) => window.dataLayer.some((item) => item?.[1] === 'ppf_page_view' && item[2]?.page_path === value), pathname);
++  const views = events.filter((item) => Array.isArray(item) && item[1] === 'ppf_page_view' && item[2]?.page_path === pathname);
++  assert.equal(views.length, 1, `${pathname}: exactly one PPF page view for the SPA visit`);
++  const payload = views[0][2];
++  const location = new URL(payload.page_location);
++  assert.equal(location.pathname, payload.page_path, 'PPF event location must describe the destination SPA route');
++  assert.equal(location.search, '', 'PPF event location must omit the query');
++  assert.equal(location.hash, '', 'PPF event location must omit the hash');
++  assert.equal(payload.language, pathname.startsWith('/ar/') ? 'ar' : 'en');
++  if (payload.page_referrer !== 'direct') {
++    const referrer = new URL(payload.page_referrer);
++    assert.equal(referrer.search + referrer.hash, '');
++    assert.equal(referrer.pathname, '/');
++  }
++};
++const noConfirmedLead = () => {
++  for (const name of ['quote_submitted', 'quote_success', 'quote_form_submitted', 'generate_lead', 'booking_confirmed']) assert.equal(eventCount(name), 0, `${name} must not fire for a WhatsApp draft`);
++};
++const selectOption = async (id, value, label) => {
++  const field = page.locator(`#${id}`);
++  if (await field.evaluate((element) => element.tagName === 'SELECT')) await field.selectOption(value);
++  else {
++    await field.click();
++    await page.getByRole('option', { name: label, exact: true }).click();
++  }
++};
++const assertPrivateValuesExcluded = async (readCurrentStorage = true) => {
++  assert.doesNotMatch(JSON.stringify(events), /QA-private|qa-private|911 Test|\?text=/, 'Entered values or draft query leaked to analytics');
++  assert.doesNotMatch(JSON.stringify(storageWrites), /QA-private|qa-private|911 Test/, 'Entered details persisted in browser storage');
++  if (readCurrentStorage) {
++    const persistence = await page.evaluate(() => JSON.stringify({ local: { ...localStorage }, session: { ...sessionStorage } }));
++    assert.doesNotMatch(persistence, /QA-private|qa-private|911 Test/, 'Entered details persisted in browser storage');
++  }
++};
++const fillForm = async () => {
++  await page.locator('#ppf-brand').fill('QA-private-value-&-Ω');
++  await page.locator('#ppf-model').fill('911 Test & Model');
++  await page.locator('#ppf-year').fill('2025');
++  await page.locator('#ppf-name').fill('QA-private Customer');
++  await page.locator('#ppf-contact-details').fill('+971501234567');
++  await page.locator('#ppf-notes').fill('QA-private notes Ω & special characters');
++};
++const assertNoHandoff = async () => {
++  assert.equal(eventCount('whatsapp_click'), 0);
++  assert.equal(eventCount('whatsapp_draft_opened'), 0);
++  noConfirmedLead();
++};
++const formResults = [];
++const testForm = async (pathname) => {
++  await ready(pathname);
++  await clearEvents();
++  const submit = page.locator('#ppf-quote-form button[type=submit]');
++  assert.match(await page.locator('#ppf-requested-coverage').textContent(), pathname.startsWith('/ar') ? /غير|متأكد|نصيحة|اختيار/ : /Unsure/);
++  assert.equal(await page.locator('#ppf-requested-coverage').inputValue(), 'Unsure — advise me', 'Coverage must not silently default to a sold package');
++  assert.equal(await page.locator('#ppf-notes').getAttribute('required'), null, 'Notes remain optional');
++  assert.ok(await page.locator('#ppf-privacy a[href="/privacy-policy.pdf"]').count());
++  assert.equal(await page.locator('#ppf-quote-form input[type=checkbox]:checked').count(), 0, 'No preselected marketing consent');
++  await submit.click();
++  await assertNoHandoff();
++  await fillForm();
++  assert.equal(eventCount('quote_started'), 1, 'One form-start event across all field changes');
++  const language = pathname.startsWith('/ar') ? 'ar' : 'en';
++  for (const width of [390, 320]) {
++    await page.setViewportSize({ width, height: 844 });
++    for (const theme of ['dark', 'light']) {
++      await page.evaluate((value) => document.documentElement.classList.toggle('theme-light', value === 'light'), theme);
++      await page.locator('#ppf-quote-form').scrollIntoViewIfNeeded();
++      assert.equal(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth), false, `${language} ${theme} quotation form overflows at ${width}`);
++      // Hide fixed chrome only in the isolated form capture, so a tall element
++      // screenshot does not bake the viewport header/bar into its middle.
++      await page.locator('#ppf-quote-form').screenshot({ path: `${output}/${language}-quote-${width}-${theme}.png`, style: 'header, .ppf-mobile-contact { visibility: hidden !important; }' });
++    }
++  }
++  await page.evaluate(() => document.documentElement.classList.remove('theme-light'));
++  await page.setViewportSize({ width: 1440, height: 1000 });
++  // Validate all required data before leaving the page. Dispatch submit as
++  // well as native clicks so JS validation cannot rely on browser UI alone.
++  for (const [id, invalid, valid] of [
++    ['ppf-brand', '   ', 'QA-private-value-&-Ω'],
++    ['ppf-model', '   ', '911 Test & Model'],
++    ['ppf-year', '1899', '2025'],
++    ['ppf-year', String(new Date().getFullYear() + 2), '2025'],
++    ['ppf-year', '2025.5', '2025'],
++    ['ppf-name', '   ', 'QA-private Customer'],
++    ['ppf-contact-details', 'abc', '+971501234567'],
++  ]) {
++    await page.locator(`#${id}`).fill(invalid);
++    await page.locator('#ppf-quote-form').evaluate((form) => form.dispatchEvent(new Event('submit', { bubbles: true, cancelable: true })));
++    await assertNoHandoff();
++    assert.ok(await page.locator('#ppf-quote-form [role=alert]').count(), `${id}: accessible invalid-data feedback`);
++    await page.locator(`#${id}`).fill(valid);
++  }
++  const method = page.locator('#ppf-contact-method');
++  const methods = await method.evaluate((element) => element.tagName === 'SELECT' ? Array.from(element.options, (option) => ({ value: option.value, label: option.textContent })) : []);
++  const emailOption = methods.find((option) => /email/i.test(option.value));
++  const phoneOption = methods.find((option) => /phone|telephone/i.test(option.value));
++  await selectOption('ppf-contact-method', emailOption?.value || 'email', emailOption?.label || (pathname.startsWith('/ar') ? 'البريد الإلكتروني' : 'Email'));
++  await page.locator('#ppf-contact-details').fill('invalid-email');
++  await page.locator('#ppf-quote-form').evaluate((form) => form.dispatchEvent(new Event('submit', { bubbles: true, cancelable: true })));
++  await assertNoHandoff();
++  await page.locator('#ppf-contact-details').fill('qa-private@example.test');
++  await assertPrivateValuesExcluded();
++  await selectOption('ppf-contact-method', phoneOption?.value || 'phone', phoneOption?.label || (pathname.startsWith('/ar') ? 'الهاتف' : 'Telephone'));
++  await page.locator('#ppf-contact-details').fill('123');
++  await page.locator('#ppf-quote-form').evaluate((form) => form.dispatchEvent(new Event('submit', { bubbles: true, cancelable: true })));
++  await assertNoHandoff();
++  await page.locator('#ppf-contact-details').fill('+971501234567');
++  assert.equal(eventCount('quote_started'), 1, 'Correction and method changes must not duplicate form-start');
++  await assertPrivateValuesExcluded();
++  const draftRequest = page.waitForRequest((request) => new URL(request.url()).hostname === 'wa.me');
++  // Two rapid submit events must yield only one handoff even before React has
++  // rendered the disabled button state.
++  await page.locator('#ppf-quote-form').evaluate((form) => {
++    form.dispatchEvent(new Event('submit', { bubbles: true, cancelable: true }));
++    form.dispatchEvent(new Event('submit', { bubbles: true, cancelable: true }));
+   });
++  const destination = new URL((await draftRequest).url());
++  assert.equal(destination.origin + destination.pathname, 'https://wa.me/97143402223');
++  const message = destination.searchParams.get('text');
++  for (const detail of ['QA-private-value-&-Ω', '911 Test & Model', '2025', 'QA-private Customer', '+971501234567', 'QA-private notes Ω & special characters']) assert.ok(message.includes(detail), `${pathname}: structured draft includes ${detail}`);
++  assert.match(message, /Unsure|غير|متأكد|نصيحة/);
++  assert.equal(eventCount('whatsapp_click'), 1);
++  assert.equal(eventCount('whatsapp_draft_opened'), 1);
++  assert.equal(eventCount('whatsapp_chat_opened'), 0, 'Form does not also pass through delegated anchor tracking');
++  noConfirmedLead();
++  await assertPrivateValuesExcluded(false);
++  formResults.push({ route: pathname, emptyBlocked: true, invalidVehicleAndContactBlocked: true, allContactMethods: true, unsureCoverage: true, duplicateHandoffSuppressed: true, personalDataExcluded: true, noConfirmedLeadEvent: true });
++};
++const validReplyMethods = [];
++const testValidReplyMethod = async (method, contact) => {
++  await ready();
++  await clearEvents();
++  await fillForm();
++  await page.locator('#ppf-contact-method').selectOption(method);
++  await page.locator('#ppf-contact-details').fill(contact);
++  await page.locator('#ppf-notes').fill('');
++  const request = page.waitForRequest((candidate) => new URL(candidate.url()).hostname === 'wa.me');
++  await page.locator('#ppf-quote-form button[type=submit]').click();
++  const message = new URL((await request).url()).searchParams.get('text');
++  assert.ok(message.includes(`Preferred contact method: ${method}`));
++  assert.ok(message.includes(contact));
++  assert.ok(!message.includes('Customer notes:'), 'Empty optional notes omitted from draft');
++  assert.equal(eventCount('whatsapp_draft_opened'), 1);
++  noConfirmedLead();
++  await assertPrivateValuesExcluded(false);
++  validReplyMethods.push(method);
+ };
+ try {
+   await ready();
+   assert.equal(await page.locator('h1').count(), 1);
+-  assert.equal(await page.locator('h1').textContent(), 'Paint Protection Film (PPF) Dubai');
+-  assert.equal(await page.title(), 'PPF Dubai | Paint Protection Film Installation | DIGI-TEC');
++  assert.equal(await page.locator('h1').textContent(), 'Paint Protection Film (PPF) in Dubai');
++  assert.equal(await page.title(), 'Paint Protection Film (PPF) Dubai | DIGI-TEC');
+   assert.equal(await page.locator('link[rel=canonical]').getAttribute('href'), `https://digitecme.com${route}`);
+   assert.equal(await page.locator('.ppf-faqs details').count(), 14);
+   assert.equal(await page.locator('.ppf-brand-links a').count(), 9);
+@@ -95,15 +263,22 @@ try {
+   await page.screenshot({ path: `${output}/workshop.png` });
+   await page.evaluate(() => document.documentElement.classList.remove('theme-light'));
+   await page.goto(`${base}/services/ceramic-coating`);
++  await clearEvents();
+   await page.locator('a[href^="/services/paint-protection-film"]').first().click();
+   await page.locator('#ppf-heading').waitFor();
++  await assertPageViewContext(route);
+   await page.goto(`${base}${route}#ppf-comparison`);
+   await page.waitForFunction(() => Math.abs(document.getElementById('ppf-comparison')?.getBoundingClientRect().top - 100) < 10);
+   await ready();
++  // Query/hash-only changes do not represent another PPF visit.
++  await page.evaluate(() => { history.pushState({}, '', '?qa=dedup#ppf-quote'); dispatchEvent(new PopStateEvent('popstate')); });
++  await page.waitForTimeout(100);
++  assert.equal(eventCount('ppf_page_view'), 1);
++  await page.evaluate(() => { history.replaceState({}, '', '/services/paint-protection-film'); dispatchEvent(new PopStateEvent('popstate')); });
+   // All PPF WhatsApp anchors pass through the existing delegated tracking once.
+   const ctas = await page.locator('a[data-cta-placement^=ppf_][href*="wa.me"]').count();
+   for (let index = 0; index < ctas; index++) {
+-    events.length = 0;
++    await clearEvents();
+     await page.locator('a[data-cta-placement^=ppf_][href*="wa.me"]').nth(index).evaluate((a) => {
+       a.addEventListener('click', (event) => event.preventDefault(), { once: true });
+       a.click();
+@@ -113,35 +288,42 @@ try {
+     assert.equal(events.filter((e) => Array.isArray(e) && e[1] === 'whatsapp_chat_opened').length, 1);
+     assert.ok(!JSON.stringify(events).includes('?text='));
+   }
+-  events.length = 0;
++  await clearEvents();
+   await page.locator('a[data-cta-placement="ppf_hero"][href^="tel:"]').evaluate((a) => {
+     a.addEventListener('click', (event) => event.preventDefault(), { once: true }); a.click();
+   });
+   assert.equal(events.filter((e) => Array.isArray(e) && e[1] === 'telephone_link_clicked').length, 1);
+-  events.length = 0;
+-  await page.locator('#ppf-quote-form button[type=submit]').click();
+-  assert.equal(events.length, 0, 'Empty form must not record completion');
+-  const sentinel = 'QA-private-value-&-Ω';
+-  await page.getByLabel('Vehicle brand', { exact: true }).fill(sentinel);
+-  await page.getByLabel('Vehicle model', { exact: true }).fill('911 Test & Model');
+-  await page.getByLabel('Year', { exact: true }).fill('2025');
+-  await page.getByRole('combobox', { name: 'Requested coverage' }).click();
+-  await page.getByRole('option', { name: 'Full Front', exact: true }).click();
+-  assert.equal(events.filter((e) => Array.isArray(e) && e[1] === 'quote_started').length, 1);
+-  const nav = page.waitForRequest((request) => request.url().startsWith('https://wa.me/'));
+-  await page.locator('#ppf-quote-form button[type=submit]').click();
+-  const destination = new URL((await nav).url());
+-  assert.ok(destination.searchParams.get('text').includes(sentinel));
+-  assert.ok(destination.searchParams.get('text').includes('Full Front'));
+-  assert.equal(events.filter((e) => e.event === 'whatsapp_click').length, 1);
+-  assert.equal(events.filter((e) => Array.isArray(e) && e[1] === 'whatsapp_draft_opened').length, 1);
+-  assert.equal(events.filter((e) => Array.isArray(e) && e[1] === 'whatsapp_chat_opened').length, 0);
+-  assert.ok(!JSON.stringify(events).includes(sentinel), 'Entered details leaked to analytics');
+-  assert.ok(!JSON.stringify(events).includes('911 Test'));
+-  assert.ok(!JSON.stringify(events).includes('?text='));
++  await testForm(route);
++  await ready();
++  // Follow the actual shared language switch in each direction.
++  await clearEvents();
++  await page.locator('header button[aria-expanded]').last().click();
++  await page.locator(`header a[href="${arabicRoute}"]`).first().click();
++  await page.locator('#ppf-quote-form').waitFor();
++  await assertPageViewContext(arabicRoute);
++  assert.equal(await page.locator('html').getAttribute('dir'), 'rtl');
++  assert.match(await page.locator('html').getAttribute('lang'), /^ar/);
++  assert.equal(await page.locator('link[rel=canonical]').getAttribute('href'), `https://digitecme.com${arabicRoute}`);
++  assert.equal(await page.locator('h1').count(), 1);
++  for (const width of [390, 320]) {
++    await page.setViewportSize({ width, height: 844 });
++    await page.locator('#ppf-quote-form').scrollIntoViewIfNeeded();
++    assert.equal(await overflow(), false, `Arabic form overflow at ${width}px`);
++    await page.screenshot({ path: `${output}/arabic-quote-${width}.png` });
++  }
++  await page.setViewportSize({ width: 1440, height: 1000 });
++  await clearEvents();
++  await page.locator('header button[aria-expanded]').last().click();
++  await page.locator(`header a[href="${route}"]`).first().click();
++  await page.locator('#ppf-heading').waitFor();
++  await assertPageViewContext(route);
++  assert.equal(await page.locator('html').getAttribute('dir'), 'ltr');
++  await testForm(arabicRoute);
++  await testValidReplyMethod('WhatsApp', '+971501234567');
++  await testValidReplyMethod('Email', 'qa-private@example.test');
+   if (process.argv.includes('--prerendered')) {
+     const staticContext = await browser.newContext({ javaScriptEnabled: false, viewport: { width: 1440, height: 1000 } });
+-    await staticContext.route('**/*', (request) => request.request().url().startsWith(base) ? request.continue() : request.abort());
++    await staticContext.route('**/*', (request) => new URL(request.request().url()).origin === new URL(base).origin ? request.continue() : request.abort());
+     const staticPage = await staticContext.newPage();
+     await staticPage.goto(`${base}${route}`);
+     assert.equal(await staticPage.locator('.ppf-hero').evaluate((element) => getComputedStyle(element).display), 'grid');
+@@ -149,11 +331,20 @@ try {
+     assert.equal(await staticPage.locator('#ppf-quote-form button[type=submit]').isDisabled(), true);
+     await staticPage.locator('.ppf-faqs summary').first().click();
+     assert.equal(await staticPage.locator('.ppf-faqs details').first().getAttribute('open'), '');
++    for (const pathname of [route, arabicRoute]) {
++      await staticPage.goto(`${base}${pathname}`);
++      assert.equal(await staticPage.locator('#ppf-quote-form button[type=submit]').isDisabled(), true);
++      for (const id of ['ppf-brand', 'ppf-model', 'ppf-year', 'ppf-name', 'ppf-contact-details']) assert.equal(await staticPage.locator(`#${id}`).isDisabled(), true, 'No-JS form must not accept personal values into an implicit GET');
++      await staticPage.locator('body').press('Enter');
++      await staticPage.waitForTimeout(100);
++      assert.equal(staticPage.url(), base + pathname, 'No GET fallback may expose entered details');
++      assert.ok(await staticPage.locator('noscript').count());
++    }
+     await staticContext.close();
+   }
+   assert.deepEqual(errors, [], 'Browser runtime errors');
+-  await writeFile(`${output}/browser-results.json`, JSON.stringify({ passed: true, base, prerenderedWithoutJavaScript: process.argv.includes('--prerendered'), viewportWidths: [1440, 390, 320], whatsappCtas: ctas, quoteEvents: events, externalRequestsBlocked: requests.length, errors }, null, 2));
+-  console.log(`PPF browser checks passed: desktop/mobile, metadata, FAQ, ${ctas} WhatsApp CTAs, call, quote validation, event counts and privacy. External requests were blocked.`);
++  await writeFile(`${output}/browser-results.json`, JSON.stringify({ passed: true, base, prerenderedWithoutJavaScript: process.argv.includes('--prerendered'), viewportWidths: [1440, 390, 320], whatsappCtas: ctas, quotationForms: formResults, validReplyMethods: ['Phone', ...validReplyMethods], languageSwitchRoundTrip: true, ppfSpaPageLocationVerified: true, ppfPageViewDeduplication: true, externalRequestsBlocked: requests.length, gaIngestionVerified: false, errors }, null, 2));
++  console.log(`PPF browser checks passed: EN/AR forms and language switch, desktop/mobile, metadata, FAQ, ${ctas} WhatsApp CTAs, call, contact validation, duplicate suppression, no confirmed lead events and privacy. Every external request was blocked.`);
+ } finally {
+   await browser.close();
+   if (builtServer) await new Promise((resolve) => builtServer.close(resolve));
+diff --git a/scripts/test-protection-release-browser.mjs b/scripts/test-protection-release-browser.mjs
+index 94b7307..863bae4 100644
+--- a/scripts/test-protection-release-browser.mjs
++++ b/scripts/test-protection-release-browser.mjs
+@@ -9,7 +9,7 @@ const base = process.argv[3] || 'http://127.0.0.1:5190';
+ const output = 'release-qa.local/integration';
+ await mkdir(output, { recursive: true });
+ const pages = [
+-  { route: '/services/paint-protection-film', h1: 'Paint Protection Film (PPF) Dubai', marker: '#ppf-quote-form button[type=submit]:not([disabled])' },
++  { route: '/services/paint-protection-film', h1: 'Paint Protection Film (PPF) in Dubai', marker: '#ppf-quote-form button[type=submit]:not([disabled])' },
+   { route: '/services/ceramic-coating', h1: 'Ceramic Coating Dubai', marker: '.cc-faq button[aria-expanded]' },
+   { route: '/services/car-polishing-dubai', h1: 'Car Polishing & Paint Correction Dubai', marker: '#paint-assessment-form button[type=submit]:not([disabled])' },
+ ];
+diff --git a/scripts/validate-master-seo.mjs b/scripts/validate-master-seo.mjs
+index 2581f96..4c6949e 100644
+--- a/scripts/validate-master-seo.mjs
++++ b/scripts/validate-master-seo.mjs
+@@ -251,7 +251,7 @@ try {
+   report.checks.contextualRelationships = relationships.map(([from, to]) => ({ from, to }));
+ 
+   for (const [route, expectedTitle, expectedH1] of [
+-    ['/services/paint-protection-film', 'PPF Dubai | Paint Protection Film Installation | DIGI-TEC', 'Paint Protection Film (PPF) Dubai'],
++    ['/services/paint-protection-film', 'Paint Protection Film (PPF) Dubai | DIGI-TEC', 'Paint Protection Film (PPF) in Dubai'],
+     ['/services/ceramic-coating', 'Ceramic Coating Dubai | Car Paint Protection | DIGI-TEC', 'Ceramic Coating Dubai'],
+   ]) {
+     const checked = report.owners.find(item => item.canonical === `${origin}${route}`);
+diff --git a/scripts/validate-ppf.mjs b/scripts/validate-ppf.mjs
+index df545f3..7125674 100644
+--- a/scripts/validate-ppf.mjs
++++ b/scripts/validate-ppf.mjs
+@@ -12,9 +12,9 @@ const html = await readFile(pageFile(ppfPath), 'utf8');
+ const decode = (value) => value.replace(/&amp;/g, '&').replace(/&#x27;|&#39;/g, "'").replace(/&quot;/g, '"');
+ const title = (value) => value.match(/<title>(.*?)<\/title>/s)?.[1];
+ const description = (value) => value.match(/<meta name="description" content="([^"]*)"/)?.[1];
+-assert.equal(title(html), 'PPF Dubai | Paint Protection Film Installation | DIGI-TEC');
++assert.equal(title(html), 'Paint Protection Film (PPF) Dubai | DIGI-TEC');
+ assert.equal((html.match(/<h1\b/g) || []).length, 1);
+-assert.equal(html.match(/<h1[^>]*>(.*?)<\/h1>/s)[1].replace(/<[^>]*>/g, ''), 'Paint Protection Film (PPF) Dubai');
++assert.equal(html.match(/<h1[^>]*>(.*?)<\/h1>/s)[1].replace(/<[^>]*>/g, ''), 'Paint Protection Film (PPF) in Dubai');
+ assert.equal((html.match(/rel="canonical"/g) || []).length, 1);
+ assert.ok(html.includes(`rel="canonical" href="${url}"`));
+ assert.ok(html.includes('content="index, follow, max-image-preview:large"'));
+diff --git a/scripts/validate-protection-release.mjs b/scripts/validate-protection-release.mjs
+index f3362eb..645b55e 100644
+--- a/scripts/validate-protection-release.mjs
++++ b/scripts/validate-protection-release.mjs
+@@ -32,7 +32,7 @@ const fileFor = (route) => path.join(dist, route.replace(/^\//, ''), 'index.html
+ const decode = (value) => value.replaceAll('&amp;', '&').replaceAll('&#x27;', "'").replaceAll('&quot;', '"').replace(/<[^>]+>/g, '').trim();
+ const graphNodes = (html) => [...html.matchAll(/<script[^>]*type="application\/ld\+json"[^>]*>([\s\S]*?)<\/script>/g)].flatMap((match) => { const json = JSON.parse(match[1]); return json['@graph'] || [json]; });
+ const specifications = [
+-  { slug: 'paint-protection-film', component: 'PpfPage', h1: 'Paint Protection Film (PPF) Dubai', title: 'PPF Dubai | Paint Protection Film Installation | DIGI-TEC' },
++  { slug: 'paint-protection-film', component: 'PpfPage', h1: 'Paint Protection Film (PPF) in Dubai', title: 'Paint Protection Film (PPF) Dubai | DIGI-TEC' },
+   { slug: 'ceramic-coating', component: 'CeramicCoatingPage', h1: 'Ceramic Coating Dubai', title: 'Ceramic Coating Dubai | Car Paint Protection | DIGI-TEC' },
+   { slug: 'car-polishing-dubai', component: 'PaintCorrectionPage', h1: 'Car Polishing & Paint Correction Dubai', title: 'Car Polishing Dubai | Paint Correction | DIGI-TEC' },
+ ];
+diff --git a/src/App.tsx b/src/App.tsx
+index d4d850f..435a6c2 100644
+--- a/src/App.tsx
++++ b/src/App.tsx
+@@ -9,6 +9,7 @@ import { lazy, Suspense, useEffect } from "react";
+ // Keep dedicated-page styles in the initial HTML for prerendered content.
+ import "./styles/ceramic-coating.css";
+ import "./styles/paint-protection.css";
++import "./styles/ppf-form.css";
+ import "./styles/oil-change.css";
+ import "./styles/suspension.css";
+ import "./styles/transmission.css";
+diff --git a/src/components/Analytics.tsx b/src/components/Analytics.tsx
+index 97c10a8..e02df07 100644
+--- a/src/components/Analytics.tsx
++++ b/src/components/Analytics.tsx
+@@ -43,6 +43,19 @@ const Analytics = () => {
+   const { pathname, search } = useLocation();
+   const initialPageView = useRef(true);
+   const attribution = useRef<ContactAttribution>({});
++  const lastServicePath = useRef('');
++
++  useEffect(() => {
++    if (lastServicePath.current === pathname) return;
++    lastServicePath.current = pathname;
++    if (pathname === '/services/paint-protection-film' || pathname === '/ar/services/paint-protection-film') {
++      window.gtag?.('event', 'ppf_page_view', {
++        page_path: pathname, service: 'ppf', language: pathname.startsWith('/ar/') ? 'ar' : 'en',
++        page_location: analyticsPageUrl(window.location.href, window.location.origin),
++        page_referrer: analyticsReferrer(document.referrer),
++      });
++    }
++  }, [pathname]);
+ 
+   useEffect(() => {
+     attribution.current = readAttribution();
+diff --git a/src/components/PpfQuoteForm.tsx b/src/components/PpfQuoteForm.tsx
+index 2d5ad04..f8f68bb 100644
+--- a/src/components/PpfQuoteForm.tsx
++++ b/src/components/PpfQuoteForm.tsx
+@@ -1,11 +1,12 @@
+ import { useEffect, useRef, useState, type FormEvent } from 'react';
+ import { MessageCircle } from 'lucide-react';
+-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
+ import { trackWhatsAppClick } from '@/lib/whatsapp-tracking';
+-import { ppfCoverage } from '@/data/ppfContent';
++import { useLocale } from '@/i18n/use-locale';
+ 
+ export default function PpfQuoteForm() {
+-  const [values, setValues] = useState({ brand: '', model: '', year: '', coverage: 'Full Body' });
++  const { isArabic } = useLocale();
++  const text = (en: string, ar: string) => isArabic ? ar : en;
++  const [values, setValues] = useState({ brand: '', model: '', year: '', coverage: 'Unsure — advise me', name: '', contactMethod: 'WhatsApp', contact: '', notes: '' });
+   const [error, setError] = useState('');
+   const started = useRef(false);
+   const submitting = useRef(false);
+@@ -22,37 +23,71 @@ export default function PpfQuoteForm() {
+   const update = (key: keyof typeof values, value: string) => {
+     if (!started.current) { started.current = true; track('quote_started'); }
+     submitting.current = false;
+-    setValues((current) => ({ ...current, [key]: value }));
++    setValues((current) => ({ ...current, [key]: value, ...(key === 'contactMethod' ? { contact: '' } : {}) }));
+     setError('');
+   };
+   const submit = (event: FormEvent<HTMLFormElement>) => {
+     event.preventDefault();
+-    if (!values.brand.trim() || !values.model.trim()) {
+-      setError('Please enter your vehicle brand and model.');
++    if (!ready || submitting.current) return;
++    if (![values.brand, values.model, values.name, values.contact].every(value => value.trim())) {
++      setError(text('Please enter your vehicle, name and contact details.', 'يرجى إدخال بيانات السيارة والاسم وبيانات التواصل.'));
++      return;
++    }
++    const year = Number(values.year);
++    if (!Number.isInteger(year) || year < 1900 || year > new Date().getFullYear() + 1) {
++      setError(text('Please enter a valid vehicle year.', 'يرجى إدخال سنة صنع صحيحة.'));
++      return;
++    }
++    const contact = values.contact.trim();
++    const validContact = values.contactMethod === 'Email'
++      ? /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(contact)
++      : /^\+?[\d\s().-]+$/.test(contact) && contact.replace(/\D/g, '').length >= 7 && contact.replace(/\D/g, '').length <= 15;
++    if (!validContact) {
++      setError(text('Please enter a valid email address or phone number with country code for your selected contact method.', 'يرجى إدخال بريد إلكتروني صحيح أو رقم هاتف مع رمز الدولة حسب وسيلة التواصل المختارة.'));
+       return;
+     }
+-    if (submitting.current) return;
+     submitting.current = true;
+-    const message = `PPF quote request from digitecme.com\nVehicle brand: ${values.brand.trim()}\nModel: ${values.model.trim()}\nYear: ${values.year}\nRequested coverage: ${values.coverage}\nPlease confirm panel coverage, film options, preparation, price and installation time.`;
+-    const url = `https://wa.me/97143402223?text=${encodeURIComponent(message)}`;
+-    // Button submission does not bubble through the global anchor click tracker.
+-    // Use the established booking-form path once, with no entered values in events.
++    const message = [
++      text('PPF quote request from digitecme.com', 'طلب عرض سعر PPF من digitecme.com'),
++      'Vehicle brand: ' + values.brand.trim(), 'Model: ' + values.model.trim(), 'Year: ' + values.year,
++      'Requested coverage: ' + values.coverage, 'Customer name: ' + values.name.trim(),
++      'Preferred contact method: ' + values.contactMethod, 'Contact details: ' + contact,
++      ...(values.notes.trim() ? ['Customer notes: ' + values.notes.trim()] : []),
++      'Please confirm panel coverage, film options, preparation, price and installation time.',
++      'Contact permission: reply to this quote request only; no marketing subscription.',
++    ].join('\n');
++    const url = 'https://wa.me/97143402223?text=' + encodeURIComponent(message);
++    // A draft handoff has no receipt acknowledgement. Never emit submitted-lead
++    // or booking-confirmed events here, or include entered values in analytics.
+     trackWhatsAppClick(url);
+     track('whatsapp_draft_opened');
+     window.location.assign(url);
+   };
+   return (
+-    <form id="ppf-quote-form" className="ppf-form" onSubmit={submit} aria-describedby="ppf-privacy">
+-      <div className="ppf-form-grid">
+-        <div><label htmlFor="ppf-brand">Vehicle brand</label><input id="ppf-brand" name="vehicle_brand" required maxLength={60} value={values.brand} onChange={(e) => update('brand', e.target.value)} placeholder="e.g. Porsche" autoComplete="off" /></div>
+-        <div><label htmlFor="ppf-model">Vehicle model</label><input id="ppf-model" name="vehicle_model" required maxLength={80} value={values.model} onChange={(e) => update('model', e.target.value)} placeholder="e.g. 911 Carrera" autoComplete="off" /></div>
+-        <div><label htmlFor="ppf-year">Year</label><input id="ppf-year" name="vehicle_year" type="number" inputMode="numeric" required min={1900} max={new Date().getFullYear() + 1} step={1} value={values.year} onChange={(e) => update('year', e.target.value)} placeholder="e.g. 2025" /></div>
+-        <div><label id="ppf-coverage-label" htmlFor="ppf-requested-coverage">Requested coverage</label><Select value={values.coverage} onValueChange={(value) => update('coverage', value)}><SelectTrigger id="ppf-requested-coverage" aria-labelledby="ppf-coverage-label" className="ppf-select"><SelectValue /></SelectTrigger><SelectContent>{ppfCoverage.map(({ name }) => <SelectItem key={name} value={name}>{name}</SelectItem>)}</SelectContent></Select></div>
+-      </div>
+-      {error && <p role="alert">{error}</p>}
+-      <button type="submit" disabled={!ready} className="ppf-button ppf-button-primary"><MessageCircle size={19} aria-hidden="true" />Continue to WhatsApp</button>
+-      <p id="ppf-privacy" className="ppf-small">Opens a WhatsApp draft with these vehicle details. Review and send it to request your quote. No name or phone number is needed here. <a href="/privacy-policy.pdf" target="_blank" rel="noopener noreferrer">Privacy policy</a></p>
+-      <noscript><p>Please use the WhatsApp or call links on this page to request your quote.</p></noscript>
++    <form id="ppf-quote-form" className="ppf-form" onSubmit={submit} aria-describedby="ppf-privacy" dir={isArabic ? 'rtl' : undefined}>
++      {/* Disable all fields before hydration to prevent implicit GETs on Enter. */}
++      <fieldset disabled={!ready}>
++        <legend className="sr-only">{text('Your PPF quotation details', 'بيانات طلب عرض سعر PPF')}</legend>
++        <div className="ppf-form-grid">
++          <div><label htmlFor="ppf-brand">{text('Vehicle brand', 'ماركة السيارة')}</label><input id="ppf-brand" name="vehicle_brand" required maxLength={60} value={values.brand} onChange={(e) => update('brand', e.target.value)} placeholder={text('e.g. Porsche', 'مثلاً بورشه')} autoComplete="off" /></div>
++          <div><label htmlFor="ppf-model">{text('Vehicle model', 'طراز السيارة')}</label><input id="ppf-model" name="vehicle_model" required maxLength={80} value={values.model} onChange={(e) => update('model', e.target.value)} placeholder={text('e.g. 911 Carrera', 'مثلاً 911 كاريرا')} autoComplete="off" /></div>
++          <div><label htmlFor="ppf-year">{text('Year', 'سنة الصنع')}</label><input id="ppf-year" name="vehicle_year" type="number" inputMode="numeric" required min={1900} max={new Date().getFullYear() + 1} step={1} value={values.year} onChange={(e) => update('year', e.target.value)} placeholder="2025" /></div>
++          <div><label htmlFor="ppf-requested-coverage">{text('Requested coverage', 'التغطية المطلوبة')}</label><select id="ppf-requested-coverage" name="coverage" required value={values.coverage} onChange={(e) => update('coverage', e.target.value)}>
++            <option value="Unsure — advise me">{text('Unsure — advise me', 'غير متأكد — أحتاج إلى المشورة')}</option>
++            <option value="Full Body">{text('Full Body', 'تغطية كاملة للهيكل')}</option>
++            <option value="Full Front">{text('Full Front — confirm availability', 'تغطية أمامية كاملة — تُؤكّد الإتاحة')}</option>
++            <option value="Partial / High Impact Areas">{text('Partial / High Impact Areas', 'تغطية جزئية / مناطق معرّضة للصدمات')}</option>
++          </select></div>
++          <div><label htmlFor="ppf-name">{text('Customer name', 'الاسم')}</label><input id="ppf-name" name="customer_name" autoComplete="name" required maxLength={100} value={values.name} onChange={(e) => update('name', e.target.value)} /></div>
++          <div><label htmlFor="ppf-contact-method">{text('Preferred contact method', 'وسيلة التواصل المفضلة')}</label><select id="ppf-contact-method" name="contact_method" required value={values.contactMethod} onChange={(e) => update('contactMethod', e.target.value)}><option value="WhatsApp">{text('WhatsApp', 'واتساب')}</option><option value="Phone">{text('Phone', 'الهاتف')}</option><option value="Email">{text('Email', 'البريد الإلكتروني')}</option></select></div>
++          <div className="ppf-form-wide"><label htmlFor="ppf-contact-details">{values.contactMethod === 'Email' ? text('Email address', 'البريد الإلكتروني') : text('Phone number including country code', 'رقم الهاتف مع رمز الدولة')}</label><input id="ppf-contact-details" name="contact_details" required type={values.contactMethod === 'Email' ? 'email' : 'tel'} autoComplete={values.contactMethod === 'Email' ? 'email' : 'tel'} maxLength={160} value={values.contact} onChange={(e) => update('contact', e.target.value)} aria-describedby="ppf-contact-help" dir="ltr" /><p id="ppf-contact-help" className="ppf-small">{text('Your preferred reply method will be included in the WhatsApp request.', 'ستُدرج وسيلة الرد المفضلة في طلب واتساب.')}</p></div>
++          <div className="ppf-form-wide"><label htmlFor="ppf-notes">{text('Customer notes (optional)', 'ملاحظات (اختياري)')}</label><textarea id="ppf-notes" name="customer_notes" rows={3} maxLength={1000} value={values.notes} onChange={(e) => update('notes', e.target.value)} /></div>
++        </div>
++        {error && <p id="ppf-form-error" role="alert">{error}</p>}
++        <button type="submit" disabled={!ready} className="ppf-button ppf-button-primary"><MessageCircle size={19} aria-hidden="true" />{text('Continue to WhatsApp', 'المتابعة إلى واتساب')}</button>
++      </fieldset>
++      <p id="ppf-privacy" className="ppf-small">{text('Continuing shares these vehicle and contact details with WhatsApp to prepare an editable draft. Review and send it to request a quote from DIGI-TEC Performance Center L.L.C. This form cannot confirm receipt. Choosing Phone or Email specifies how you prefer a reply. These details are for this enquiry and do not subscribe you to marketing. ', 'بالمتابعة تُشارك بيانات السيارة والتواصل مع واتساب لإعداد مسودة قابلة للتعديل. راجعها وأرسلها لطلب عرض سعر من DIGI-TEC Performance Center L.L.C. لا يمكن لهذا النموذج تأكيد الاستلام. اختيار الهاتف أو البريد الإلكتروني يحدّد وسيلة الرد المفضلة. البيانات لهذا الاستفسار فقط ولا تشترك بها في رسائل تسويقية. ')}<a href="/privacy-policy.pdf" target="_blank" rel="noopener noreferrer">{text('Privacy policy', 'سياسة الخصوصية')}</a></p>
++      <noscript><p>{text('Please use the WhatsApp or call links on this page to request your quote.', 'يرجى استخدام روابط واتساب أو الاتصال في هذه الصفحة لطلب عرض السعر.')}</p></noscript>
+     </form>
+   );
+ }
+diff --git a/src/data/ppfContent.ts b/src/data/ppfContent.ts
+index a64a45c..d638fc1 100644
+--- a/src/data/ppfContent.ts
++++ b/src/data/ppfContent.ts
+@@ -2,9 +2,9 @@
+ // content. Finish availability, product specifications and project results are
+ // deliberately not asserted without a confirmed product or job record.
+ export const PPF_PATH = '/services/paint-protection-film';
+-export const PPF_TITLE = 'PPF Dubai | Paint Protection Film Installation | DIGI-TEC';
+-export const PPF_DESCRIPTION = 'PPF installation in Al Quoz, Dubai. Compare full-body and selected-panel paint protection film, preparation and aftercare. Request a DIGI-TEC quote for your car.';
+-export const PPF_H1 = 'Paint Protection Film (PPF) Dubai';
++export const PPF_TITLE = 'Paint Protection Film (PPF) Dubai | DIGI-TEC';
++export const PPF_DESCRIPTION = 'Explore paint protection film installation at DIGI-TEC in Dubai. Learn about PPF coverage options and request a quote for your vehicle.';
++export const PPF_H1 = 'Paint Protection Film (PPF) in Dubai';
+ export const PPF_WHATSAPP = `https://wa.me/97143402223?text=${encodeURIComponent('Hi DIGI-TEC, I would like a PPF quote for my car. Please help me choose the coverage.')}`;
+ 
+ export const ppfBrandNames = ['Mercedes-Benz', 'BMW', 'Porsche', 'Ferrari', 'Lamborghini', 'McLaren', 'Aston Martin', 'Rolls-Royce', 'Range Rover'];
+diff --git a/src/lib/route-manifest.ts b/src/lib/route-manifest.ts
+index 910554e..d90539b 100644
+--- a/src/lib/route-manifest.ts
++++ b/src/lib/route-manifest.ts
+@@ -243,6 +243,7 @@ const paintProtectionUpdatedPaths = new Set([
+ ]);
+ for (const route of publicRoutes) {
+   if (paintProtectionUpdatedPaths.has(route.path)) route.lastmod = '2026-10-12';
++  if (['/services/paint-protection-film', '/ar/services/paint-protection-film'].includes(route.path)) route.lastmod = '2026-10-17';
+ }
+ 
+ export const indexableRoutes = publicRoutes.filter((route) => route.indexable);
+diff --git a/src/pages/PpfPage.tsx b/src/pages/PpfPage.tsx
+index 743be52..ee11d52 100644
+--- a/src/pages/PpfPage.tsx
++++ b/src/pages/PpfPage.tsx
+@@ -18,7 +18,7 @@ const heroImage = '/images/ppf/film-application-1200.webp';
+ const heroAlt = 'Transparent film being smoothed over a white Porsche bonnet';
+ const ppfBrands = ppfBrandNames.map((name) => brands.find((brand) => brand.name === name)).filter(Boolean);
+ const graph = pageGraph([
+-  buildWebPage({ url, name: PPF_TITLE, description: PPF_DESCRIPTION, breadcrumbId: `${url}#breadcrumb`, primaryImage: heroImage, mainEntityId: `${url}#service`, dateModified: '2026-10-12' }),
++  buildWebPage({ url, name: PPF_TITLE, description: PPF_DESCRIPTION, breadcrumbId: `${url}#breadcrumb`, primaryImage: heroImage, mainEntityId: `${url}#service`, dateModified: '2026-10-17' }),
+   buildBreadcrumb(url, [{ name: 'Home', url: '/' }, { name: 'Services', url: '/services' }, { name: 'Paint Protection Film', url }]),
+   buildService({ url, name: PPF_H1, serviceType: 'Paint Protection Film (PPF) installation', description: 'DIGI-TEC Performance Center offers paint protection film installation with full-body and selected-panel coverage at Al Quoz Industrial Area 3, Dubai. Film, preparation and covered panels are confirmed in the quotation.', image: heroImage }),
+ ]);
+@@ -49,7 +49,7 @@ export default function PpfPage() {
+           <div className="ppf-hero-copy">
+             <nav className="ppf-breadcrumb" aria-label="Breadcrumb"><Link to="/">Home</Link><ChevronRight size={14} aria-hidden="true" /><Link to="/services">Services</Link><ChevronRight size={14} aria-hidden="true" /><span aria-current="page">Paint Protection Film</span></nav>
+             <p className="ppf-eyebrow">DIGI-TEC Performance Center · Al Quoz, Dubai</p>
+-            <h1 id="ppf-heading">Paint Protection Film <span>(PPF) Dubai</span></h1>
++            <h1 id="ppf-heading">Paint Protection Film <span>(PPF) in Dubai</span></h1>
+             <p className="ppf-lead">Preserve the paint. Enjoy the drive.</p>
+             <p>Paint protection film installation for luxury and performance cars at DIGI-TEC in Al Quoz, Dubai. Choose full-body or selected-panel PPF coverage to add a physical barrier over the paint, with preparation and film confirmed for your vehicle.</p>
+             <div className="ppf-actions"><WhatsApp placement="hero" /><a href="tel:+97143402223" data-cta-placement="ppf_hero" className="ppf-button ppf-button-secondary"><Phone size={18} aria-hidden="true" />Call the workshop</a></div>
+@@ -117,7 +117,7 @@ export default function PpfPage() {
+ 
+         <section className="ppf-section" aria-labelledby="brands-heading"><p className="ppf-eyebrow">Keep the original finish in focus</p><h2 id="brands-heading">PPF for Luxury & Performance Cars in Dubai</h2><p className="ppf-section-intro">A daily-driven performance car and a carefully kept weekend car may need different coverage. Discuss how you use the vehicle, its paint condition and the finish you want to retain. Explore DIGI-TEC’s existing brand workshop pages below, then ask about PPF suitability for your model.</p><div className="ppf-brand-links">{ppfBrands.map((brand) => brand && <Link key={brand.slug} to={`/brands/${brand.slug}`}>{brand.name}<ArrowRight size={16} aria-hidden="true" /></Link>)}</div><p className="ppf-small">DIGI-TEC is an independent workshop. Brand names identify the vehicles discussed.</p></section>
+ 
+-        <section id="ppf-quote" className="ppf-section ppf-quote-section" aria-labelledby="quote-heading"><div><p className="ppf-eyebrow">Your car. Your coverage.</p><h2 id="quote-heading">Get Your PPF Quote</h2><p>Share four details so the workshop can discuss suitable film, coverage and preparation. If you are unsure about coverage, choose the closest option and ask the team to help.</p><p>Full-front requests are subject to confirmation for the vehicle. The quotation will identify what is included.</p></div><PpfQuoteForm /></section>
++        <section id="ppf-quote" className="ppf-section ppf-quote-section" aria-labelledby="quote-heading"><div><p className="ppf-eyebrow">Your car. Your coverage.</p><h2 id="quote-heading">Request Your PPF Quotation</h2><p>Share your vehicle, desired coverage and preferred contact details so the workshop can discuss suitable film and preparation. Choose “Unsure — advise me” if you need help deciding.</p><p>Review and send your request in WhatsApp. Full-front requests are subject to confirmation for the vehicle. The quotation will identify what is included.</p></div><PpfQuoteForm /></section>
+ 
+         <section id="ppf-faq" className="ppf-section" aria-labelledby="faq-heading"><p className="ppf-eyebrow">Before you decide</p><h2 id="faq-heading">PPF Questions, Answered</h2><div className="ppf-faqs">{ppfFaqs.map((faq) => <details key={faq.question}><summary>{faq.question}</summary><p>{faq.answer}</p></details>)}</div></section>
+ 
+diff --git a/src/pages/ServicePage.tsx b/src/pages/ServicePage.tsx
+index 7231543..6c18d8c 100644
+--- a/src/pages/ServicePage.tsx
++++ b/src/pages/ServicePage.tsx
+@@ -22,6 +22,7 @@ import { useLocale } from '@/i18n/use-locale';
+ import { refineArabicProtectionService } from '@/i18n/ar-protection-services';
+ import { localizeServiceToArabic } from '@/i18n/ar-services';
+ import { refineGenericArabicService } from '@/i18n/ar-generic-services';
++import PpfQuoteForm from '@/components/PpfQuoteForm';
+ 
+ // Map every legacy slug directly to its new slug (single-hop redirects, no chains).
+ // Also handles previously-indexed Google URLs.
+@@ -546,6 +547,8 @@ const ServicePage: React.FC<ServicePageProps> = ({ slugOverride, canonicalPath,
+                     <img
+                       src={s.image}
+                       alt={s.title}
++                      width={service.slug === 'paint-protection-film' ? 400 : undefined}
++                      height={service.slug === 'paint-protection-film' ? 300 : undefined}
+                       loading="lazy"
+                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                       onError={(e) => {
+@@ -588,7 +591,7 @@ const ServicePage: React.FC<ServicePageProps> = ({ slugOverride, canonicalPath,
+                 className="group flex flex-col items-center gap-2 p-3 bg-white/5 hover:bg-white/10 border border-white/5 hover:border-burnt-orange/40 rounded-2xl transition-all duration-300"
+               >
+                 <div className="w-12 h-12 sm:w-14 sm:h-14 p-1.5 bg-white/90 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+-                  <img src={b.logo} alt={`${b.name} service Dubai`} loading="lazy" className="w-full h-full object-contain" />
++                  <img src={b.logo} alt={`${b.name} service Dubai`} width={service.slug === 'paint-protection-film' ? 56 : undefined} height={service.slug === 'paint-protection-film' ? 56 : undefined} loading="lazy" className="w-full h-full object-contain" />
+                 </div>
+                 <span className="text-[11px] sm:text-xs text-gray-300 group-hover:text-burnt-orange text-center font-medium leading-tight">
+                   {isArabic ? `خدمة ${b.name}` : `${b.name} Service`}
+@@ -599,6 +602,13 @@ const ServicePage: React.FC<ServicePageProps> = ({ slugOverride, canonicalPath,
+         </div>
+       </section>
+ 
++      {isArabic && !brandPath && service.slug === 'paint-protection-film' && (
++        <section id="ppf-quote" className="mx-auto max-w-5xl px-5 py-16 sm:px-8" aria-labelledby="ppf-quote-heading">
++          <h2 id="ppf-quote-heading" className="mb-5 text-2xl font-bold sm:text-3xl">اطلب عرض سعر لأفلام حماية الطلاء</h2>
++          <p className="mb-8 leading-8 text-gray-300">شارك بيانات السيارة والتغطية المطلوبة ووسيلة التواصل المفضلة. اختر «غير متأكد» للمساعدة في تحديد التغطية. راجع الطلب وأرسله في واتساب؛ تُؤكّد التغطية والتحضير والمنتج في عرض السعر.</p>
++          <PpfQuoteForm />
++        </section>
++      )}
+       <FinalCTA title={service.ctaLabel ? service.title : undefined} label={enquiryLabel} href={enquiryHref} />
+       </main>
+       <Footer />
+diff --git a/supabase/functions/mcp/index.ts b/supabase/functions/mcp/index.ts
+index b8982f6..ecd90b1 100644
+--- a/supabase/functions/mcp/index.ts
++++ b/supabase/functions/mcp/index.ts
+@@ -2,173 +2,7 @@
+ // To take ownership, delete this banner line; the plugin then leaves the file alone.
+ // supabase function: mcp
+ // Bundled from src/lib/mcp/index.ts by @lovable.dev/mcp-js.
+-// src/lib/mcp/index.ts
+-import { defineMcp } from "npm:@lovable.dev/mcp-js@0.20.0";
+-
+-// src/lib/mcp/tools/get-contact-info.ts
+-import { defineTool } from "npm:@lovable.dev/mcp-js@0.20.0";
+-var get_contact_info_default = defineTool({
+-  name: "get_contact_info",
+-  title: "Get contact info",
+-  description: "Return Digitec Performance Center contact details: phone, WhatsApp, email, address, and website.",
+-  inputSchema: {},
+-  annotations: { readOnlyHint: true, idempotentHint: true, openWorldHint: false },
+-  handler: () => {
+-    const info = {
+-      business: "Digi-Tec Performance Center",
+-      established: 2002,
+-      phone: "+971 4 340 2223",
+-      whatsapp: "+971 4 340 2223",
+-      whatsapp_link: "https://wa.me/97143402223",
+-      website: "https://digitecme.com",
+-      email: "info@digitecme.com",
+-      address: "Al Quoz Industrial Area 3, Dubai, UAE",
+-      service_area: "Dubai",
+-      specialization: "Independent workshop for vehicle inspection, maintenance, mechanical and electrical repair, body work, and vehicle-specific performance-project consultation. Confirm coverage for the exact vehicle and requested work."
+-    };
+-    return {
+-      content: [{ type: "text", text: JSON.stringify(info, null, 2) }],
+-      structuredContent: info
+-    };
+-  }
+-});
+-
+-// src/lib/mcp/tools/list-services.ts
+-import { defineTool as defineTool2 } from "npm:@lovable.dev/mcp-js@0.20.0";
+-import { z } from "npm:zod@^4.4.3";
+-var SITE = "https://digitecme.com";
+-var services = [
+-  { slug: "mercedes-benz-service-dubai", title: "Mercedes-Benz Repair & Service in Dubai", category: "mercedes", path: "/brands/mercedes-benz-service-dubai" },
+-  { slug: "mercedes-mechanical-repair-dubai", title: "Mercedes Mechanical Repair in Dubai", category: "mercedes" },
+-  { slug: "mercedes-transmission-repair-dubai", title: "Mercedes Transmission Repair in Dubai", category: "mercedes" },
+-  { slug: "mercedes-suspension-repair-dubai", title: "Mercedes Suspension Repair in Dubai", category: "mercedes" },
+-  { slug: "mercedes-steering-repair-dubai", title: "Mercedes Steering Repair in Dubai", category: "mercedes" },
+-  { slug: "mercedes-brake-repair-dubai", title: "Mercedes Brake Repair in Dubai", category: "mercedes" },
+-  { slug: "mercedes-oil-change-dubai", title: "Mercedes Oil Change in Dubai", category: "mercedes" },
+-  { slug: "mercedes-tire-repair-dubai", title: "Mercedes Tire Repair in Dubai", category: "mercedes" },
+-  { slug: "mercedes-battery-replacement-dubai", title: "Mercedes Battery Replacement in Dubai", category: "mercedes" },
+-  { slug: "mercedes-exhaust-repair-dubai", title: "Mercedes Exhaust Repair in Dubai", category: "mercedes" },
+-  { slug: "mercedes-diagnostics-dubai", title: "Mercedes Diagnostics in Dubai", category: "mercedes" },
+-  { slug: "mercedes-electrical-repair-dubai", title: "Mercedes Electrical Repair in Dubai", category: "mercedes" },
+-  { slug: "mercedes-fuel-system-repair-dubai", title: "Mercedes Fuel System Repair in Dubai", category: "mercedes" },
+-  { slug: "mercedes-ac-repair-dubai", title: "Mercedes AC Repair in Dubai", category: "mercedes" },
+-  { slug: "mercedes-body-repair-dubai", title: "Mercedes Body Repair in Dubai", category: "mercedes" },
+-  { slug: "mechanical-repair-dubai", title: "Mechanical Repair in Dubai", category: "general" },
+-  { slug: "transmission-repair-dubai", title: "Transmission Repair in Dubai", category: "general" },
+-  { slug: "suspension-repair-dubai", title: "Suspension Repair in Dubai", category: "general" },
+-  { slug: "steering-repair-dubai", title: "Steering Repair in Dubai", category: "general" },
+-  { slug: "brake-repair-dubai", title: "Brake Repair in Dubai", category: "general" },
+-  { slug: "car-service-dubai", title: "Car Service in Dubai", category: "general" },
+-  { slug: "oil-change-dubai", title: "Oil Change in Dubai", category: "general" },
+-  { slug: "tire-repair-dubai", title: "Tire Repair in Dubai", category: "general" },
+-  { slug: "battery-replacement-dubai", title: "Battery Replacement in Dubai", category: "general" },
+-  { slug: "exhaust-repair-dubai", title: "Exhaust Repair in Dubai", category: "general" },
+-  { slug: "car-diagnostics-dubai", title: "Car Diagnostics in Dubai", category: "general" },
+-  { slug: "auto-electrical-repair-dubai", title: "Auto Electrical Repair in Dubai", category: "general" },
+-  { slug: "fuel-system-repair-dubai", title: "Fuel System Repair in Dubai", category: "general" },
+-  { slug: "car-ac-repair-dubai", title: "Car AC Repair in Dubai", category: "general" },
+-  { slug: "car-body-repair-dubai", title: "Car Body Repair in Dubai", category: "general" },
+-  { slug: "paint-protection-dubai", title: "Paint Protection (PPF & Ceramic) in Dubai", category: "general" }
+-];
+-var list_services_default = defineTool2({
+-  name: "list_services",
+-  title: "List services",
+-  description: "List Digi-Tec Performance Center service pages for Dubai. Optionally filter by category or title. Availability depends on the exact vehicle and requested work.",
+-  inputSchema: {
+-    category: z.enum(["general", "mercedes", "all"]).optional().describe("Filter by service category. Defaults to all."),
+-    search: z.string().optional().describe("Case-insensitive substring to match against the service title.")
+-  },
+-  annotations: { readOnlyHint: true, idempotentHint: true, openWorldHint: false },
+-  handler: ({ category, search }) => {
+-    const cat = category ?? "all";
+-    const q = search?.trim().toLowerCase();
+-    const filtered = services.filter((s) => cat === "all" || s.category === cat).filter((s) => !q || s.title.toLowerCase().includes(q)).map(({ path, ...service }) => ({ ...service, url: `${SITE}${path ?? `/services/${service.slug}`}` }));
+-    return {
+-      content: [{ type: "text", text: JSON.stringify(filtered, null, 2) }],
+-      structuredContent: {
+-        count: filtered.length,
+-        note: "Confirm compatibility, scope and appointment availability for the exact vehicle before booking.",
+-        services: filtered
+-      }
+-    };
+-  }
+-});
+-
+-// src/lib/mcp/tools/list-brands.ts
+-import { defineTool as defineTool3 } from "npm:@lovable.dev/mcp-js@0.20.0";
+-var SITE2 = "https://digitecme.com";
+-var brands = [
+-  { name: "Mercedes-Benz", slug: "mercedes-benz-service-dubai" },
+-  { name: "Maybach", slug: "maybach-service-dubai" },
+-  { name: "Porsche", slug: "porsche-service-dubai" },
+-  { name: "Audi", slug: "audi-service-dubai" },
+-  { name: "BMW", slug: "bmw-service-dubai" },
+-  { name: "Lamborghini", slug: "lamborghini-service-dubai" },
+-  { name: "Bentley", slug: "bentley-service-dubai" },
+-  { name: "McLaren", slug: "mclaren-service-dubai" },
+-  { name: "Ferrari", slug: "ferrari-service-dubai" },
+-  { name: "Bugatti", slug: "bugatti-service-dubai" },
+-  { name: "Land Rover", slug: "land-rover-service-dubai" },
+-  { name: "Rolls-Royce", slug: "rolls-royce-service-dubai" },
+-  { name: "Aston Martin", slug: "aston-martin-service-dubai" }
+-];
+-var list_brands_default = defineTool3({
+-  name: "list_brands",
+-  title: "List published brand pages",
+-  description: "List Digi-Tec Performance Center brand pages for Dubai. A listed page does not guarantee coverage for every model or function.",
+-  inputSchema: {},
+-  annotations: { readOnlyHint: true, idempotentHint: true, openWorldHint: false },
+-  handler: () => {
+-    const items = brands.map((b) => ({ ...b, url: `${SITE2}/brands/${b.slug}` }));
+-    return {
+-      content: [{ type: "text", text: JSON.stringify(items, null, 2) }],
+-      structuredContent: {
+-        count: items.length,
+-        note: "Confirm coverage for the exact VIN, model, year and requested work before booking.",
+-        brands: items
+-      }
+-    };
+-  }
+-});
+-
+-// src/lib/mcp/tools/build-booking-link.ts
+-import { defineTool as defineTool4 } from "npm:@lovable.dev/mcp-js@0.20.0";
+-import { z as z2 } from "npm:zod@^4.4.3";
+-var build_booking_link_default = defineTool4({
+-  name: "build_booking_link",
+-  title: "Build WhatsApp booking link",
+-  description: "Build a WhatsApp deep link to Digitec Performance Center with a prefilled booking message that includes the car and service context.",
+-  inputSchema: {
+-    vehicle: z2.string().min(1).describe("Vehicle make and model, e.g. 'Mercedes C63 AMG 2020'."),
+-    service: z2.string().min(1).describe("Service the customer wants, e.g. 'Oil change' or 'AIRMATIC suspension fault'."),
+-    notes: z2.string().optional().describe("Optional extra context like symptoms, mileage, or preferred date.")
+-  },
+-  annotations: { readOnlyHint: true, idempotentHint: false, openWorldHint: false },
+-  handler: ({ vehicle, service, notes }) => {
+-    const lines = [
+-      `Hi Digitec, I'd like to book a service.`,
+-      `Vehicle: ${vehicle}`,
+-      `Service: ${service}`
+-    ];
+-    if (notes) lines.push(`Notes: ${notes}`);
+-    const message = lines.join("\n");
+-    const url = `https://wa.me/97143402223?text=${encodeURIComponent(message)}`;
+-    return {
+-      content: [{ type: "text", text: url }],
+-      structuredContent: { whatsapp_url: url, message }
+-    };
+-  }
+-});
+-
+-// src/lib/mcp/index.ts
+-var mcp_default = defineMcp({
+-  name: "digitec-mcp",
+-  title: "Digitec Performance Center",
+-  version: "0.1.0",
+-  instructions: "Tools for Digi-Tec Performance Center, an independent vehicle workshop established in Dubai in 2002 and located at Al Quoz Industrial Area 3. Use `list_services` to discover published service pages, `list_brands` to discover published brand pages, `get_contact_info` for verified contact/location details, and `build_booking_link` to create a WhatsApp enquiry URL. A listed page is not a blanket capability promise; confirm coverage for the exact VIN, model, year and requested work before booking.",
+-  tools: [get_contact_info_default, list_services_default, list_brands_default, build_booking_link_default]
+-});
+-
+ // lovable-mcp-supabase-entry.ts
+-import { createSupabaseHandler } from "npm:@lovable.dev/mcp-js@0.20.0/stacks/supabase";
+-Deno.serve(createSupabaseHandler(mcp_default, { functionName: "mcp" }));
++import mcp from "npm:C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\src\\lib\\mcp\\index.ts";
++import { createSupabaseHandler } from "npm:@lovable.dev/mcp-js@0.20.1/stacks/supabase";
++Deno.serve(createSupabaseHandler(mcp, { functionName: "mcp" }));

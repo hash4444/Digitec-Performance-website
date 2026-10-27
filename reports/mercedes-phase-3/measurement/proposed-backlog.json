@@ -1,0 +1,47 @@
+{
+  "proposalOnly": true,
+  "noLiveChanges": true,
+  "noAutomationCreated": true,
+  "items": [
+    {
+      "id": "M3-01",
+      "change": "Read-only GA4/GTM collection and acquisition audit",
+      "status": "requires_existing_authenticated_read_access_or_exports",
+      "impact": "Establish which implemented events and dimensions are actually measurable.",
+      "risk": "Account data access; do not change tags, key events or consent settings.",
+      "dependency": "Named analytics/tag owners and existing read-only exports.",
+      "verification": "Event names/parameters/timezone/deduplication/acquisition scope documented; unknowns explicit.",
+      "implementation_approval": "No configuration change proposed; any later setup correction is separate approval."
+    },
+    {
+      "id": "M3-02",
+      "change": "Manual weekly 7/28/90 snapshot",
+      "status": "design_validated_GSC_baseline_available_collection_and_business_gaps_explicit",
+      "impact": "Repeatable visibility, page-CTR and interaction comparison.",
+      "risk": "Mismatched aggregation/timezones, suppressed query rows and zero-vs-null errors.",
+      "dependency": "Frozen source registry; GSC108periodcells and69/132dailyseries observed. Exact-page device series and prior90history unavailable; GA4/CRM/finance data unverified.",
+      "verification": "Window/filter/hash manifest, weighted metrics, raw controls, schema validation and owner sign-off. Verify actual first3eligible organic results for6fixedqueries/device/location context; keep GSCposition≤3 proxy separate and missing numerator unknown.",
+      "implementation_approval": "No recurring automation created."
+    },
+    {
+      "id": "M3-03",
+      "change": "Restricted opaque interaction-to-CRM join",
+      "status": "deferred_proposed_not_implemented",
+      "impact": "Potential deterministic lead/booking attribution without customer identifiers in analytics.",
+      "risk": "New collection/retention/access and false deterministic attribution.",
+      "dependency": "Data-owner-approved design, actual event exports and operational workflow; no current bridge established.",
+      "verification": "No PII/raw click IDs, unique references, deterministic evidence, unknowns retained, deletion/access and deduplication checked.",
+      "implementation_approval": "Explicit future approval needed before source/tag/CRM changes."
+    },
+    {
+      "id": "M3-04",
+      "change": "Business stage and finance reconciliation",
+      "status": "requires_business_exports_and_definition_signoff",
+      "impact": "Separate drafts/clicks from qualified leads, confirmed bookings and attributable revenue.",
+      "risk": "Duplicate leads, late cancellations/credits, unmatched or self-reported attribution.",
+      "dependency": "Workshop and finance owners; anonymised stage/invoice records and agreed net-AED definition.",
+      "verification": "Distinct refs/cohort dates, as-of time, invoices/credits joined once, coverage/unmatched totals reported.",
+      "implementation_approval": "No backend/database access or live CRM changes performed."
+    }
+  ]
+}

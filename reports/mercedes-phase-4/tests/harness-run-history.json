@@ -1,0 +1,50 @@
+{
+  "generatedAt": "2026-10-26T09:00:42.135Z",
+  "runs": [
+    {
+      "purpose": "First run; harness-path diagnostic retained, not an application failure",
+      "startedAtUtc": "2026-10-26T08:59:47.589Z",
+      "finishedAtUtc": "2026-10-26T08:59:47.656Z",
+      "startedAtDubai": "2026-10-26T12:59:47.589+04:00",
+      "finishedAtDubai": "2026-10-26T12:59:47.656+04:00",
+      "passed": false,
+      "assertions": 75,
+      "passedAssertions": 72,
+      "failedAssertions": 3,
+      "evidence": "initial-harness-path-diagnostic/results.json",
+      "failures": [
+        {
+          "group": "routing and public URL preservation",
+          "name": "docs/permanent-redirects.csv",
+          "passed": false,
+          "error": "ENOENT: no such file or directory, open 'C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-4\\baseline.local\\docs\\permanent-redirects.csv'"
+        },
+        {
+          "group": "routing and public URL preservation",
+          "name": "docs/mercedes-permanent-redirects.csv",
+          "passed": false,
+          "error": "ENOENT: no such file or directory, open 'C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-4\\baseline.local\\docs\\mercedes-permanent-redirects.csv'"
+        },
+        {
+          "group": "routing and public URL preservation",
+          "name": "docs/removed-brand-urls.csv",
+          "passed": false,
+          "error": "ENOENT: no such file or directory, open 'C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-4\\baseline.local\\docs\\removed-brand-urls.csv'"
+        }
+      ]
+    },
+    {
+      "purpose": "Final corrected harness; controlled build comparison",
+      "startedAtUtc": "2026-10-26T09:00:06.274Z",
+      "finishedAtUtc": "2026-10-26T09:00:06.338Z",
+      "startedAtDubai": "2026-10-26T13:00:06.274+04:00",
+      "finishedAtDubai": "2026-10-26T13:00:06.338+04:00",
+      "passed": true,
+      "assertions": 75,
+      "passedAssertions": 75,
+      "failedAssertions": 0,
+      "evidence": "results/results.json"
+    }
+  ],
+  "correction": "Verifier artifact paths only: docs/*.csv -> docs/seo/*.csv. No app/source change, no build rerun, no network action."
+}

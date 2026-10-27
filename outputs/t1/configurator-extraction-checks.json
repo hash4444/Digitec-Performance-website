@@ -1,0 +1,16 @@
+{
+  "source": "outputs/t1/baseline/tuningCars.ts",
+  "vehicleCount": 16,
+  "configurationRows": 83,
+  "tunedConfigurationRows": 67,
+  "brands": {
+    "Mercedes": 14,
+    "Aston Martin": 1,
+    "Lamborghini": 1
+  },
+  "noInventedVariant": true,
+  "noInventedYearRange": true,
+  "noInventedRequiredOrOptionalHardware": true,
+  "currencyDerivedFromEuroSymbol": true,
+  "allAvailableStagesMatched": true
+}

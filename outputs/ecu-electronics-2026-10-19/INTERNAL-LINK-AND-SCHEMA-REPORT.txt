@@ -1,0 +1,61 @@
+DIGI-TEC ECU and electronics — internal links and schema
+19 October 2026. Local candidate only; no production/GBP changes.
+
+30 new direct link placements across 14 existing locale pages
+-----------------------------------------------------------
+Software-function sections connect existing diagnostics owners to electrical
+fault assessment and the separate performance-tuning owner. Electrical sections
+connect a communication or wiring complaint to diagnostics or supported head-unit
+assessment. CUE and head-unit sections connect distinct screen/unit concerns.
+These are placements, not 30 unique destinations or GSC query-page associations.
+Some destinations already appeared elsewhere on the same page.
+
+Every new link is an existing indexable canonical target with no alias hop.
+Arabic links use existing Arabic counterparts. Head-unit/CUE English-only links
+are omitted from Arabic panels instead of inventing Arabic routes. Mercedes uses
+its canonical /services/ paths; BMW retains its /brands/ paths. The tuning link
+explicitly separates performance calibration from OEM module functions. No
+existing tuning data, behavior or route was changed.
+
+No new route or indexing-policy change
+------------------------------------
+Eight owners: six existing EN/AR pairs plus two English-only electronics owners.
+Their titles, descriptions, H1s, canonical/hreflang, sitemap entries and robots
+remain unchanged. The site still has 1,256 rendered routes and 1,005 canonical
+sitemap URLs. Twenty secondary electrical noindex policies remain in force.
+All 28 audited legacy diagnostic/electrical alias cases preserve the query in
+the generated static routing handler; do not assume that handler is active on
+production from its generated files alone. The live release architecture must
+be reconciled separately before publication.
+
+Schema preserved
+----------------
+Selected per-page and global JSON-LD graphs are unchanged. The existing Service,
+WebPage and Breadcrumb entities retain their IDs and #business references. No
+second business, new Offer, rating, certification, partnership or AI schema is
+introduced. Existing FAQ arrays are unchanged. The two English-only electronics
+pages retain their existing FAQPage omission policy.
+
+The new section contains three crawlable H3 question/answer pairs per page, 42
+locale occurrences in total. These are additional HTML explanations; no duplicate
+FAQ node is generated. Existing marked-up FAQ answers still match visible text.
+Adding unmarked factual answers does not claim rich-result eligibility or AI
+citations. Software-function support remains an exact-vehicle acceptance decision.
+
+Evidence
+--------
+qa/ecu-electronics-static-results.json: 614 assertions over 14 locale pages,
+30 new direct link placements, unchanged metadata/H1/schema, all previous visible
+markup/contact URLs retained after removing only the new marked panel and its
+known wrappers, and 20 retained noindex policies. Generated React/Radix IDs and
+insignificant whitespace are normalized for preservation comparisons.
+
+qa/ecu-metadata-before-after.csv records all 14 unchanged metadata comparisons.
+audit/selected-owner-baseline.json contains immutable baseline evidence.
+The complete production SEO and routing validators and prior workstream suites
+provide broader evidence; final status is in qa/COMBINED-QA-SUMMARY.txt.
+
+Google Search Central guidance checked during the 19 October sprint sequence:
+https://developers.google.com/search/docs/appearance/ai-features
+Normal crawlability, useful textual answers and content/schema consistency remain
+relevant; no special AI schema is required, and indexing/citation is not guaranteed.

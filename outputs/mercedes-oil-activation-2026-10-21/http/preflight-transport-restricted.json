@@ -1,0 +1,94 @@
+{
+  "mode": "preflight",
+  "startedAt": "2026-10-21T06:35:16.063Z",
+  "finishedAt": "2026-10-21T06:35:16.116Z",
+  "scope": "Read-only public GET/HEAD with synthetic parameters. No live settings modified.",
+  "plannedCases": 28,
+  "completedCases": 4,
+  "passed": false,
+  "stoppedOnFailure": true,
+  "failures": [
+    {
+      "kind": "legacy",
+      "input": "https://digitecme.com/brands/mercedes-benz-service-dubai/oil-change?utm_source=activation-preflight&tag=a&tag=b&gclid=synthetic-test",
+      "method": "GET",
+      "index": 0,
+      "error": "TypeError: fetch failed",
+      "issues": [
+        "TypeError: fetch failed"
+      ]
+    },
+    {
+      "kind": "legacy",
+      "input": "https://digitecme.com/brands/mercedes-benz-service-dubai/oil-change?utm_source=activation-preflight&tag=a&tag=b&gclid=synthetic-test",
+      "method": "HEAD",
+      "index": 1,
+      "error": "TypeError: fetch failed",
+      "issues": [
+        "TypeError: fetch failed"
+      ]
+    },
+    {
+      "kind": "legacy",
+      "input": "https://digitecme.com/brands/mercedes-benz-service-dubai/oil-change/?utm_source=activation-preflight&tag=a&tag=b&gclid=synthetic-test",
+      "method": "GET",
+      "index": 2,
+      "error": "TypeError: fetch failed",
+      "issues": [
+        "TypeError: fetch failed"
+      ]
+    },
+    {
+      "kind": "legacy",
+      "input": "https://digitecme.com/brands/mercedes-benz-service-dubai/oil-change/?utm_source=activation-preflight&tag=a&tag=b&gclid=synthetic-test",
+      "method": "HEAD",
+      "index": 3,
+      "error": "TypeError: fetch failed",
+      "issues": [
+        "TypeError: fetch failed"
+      ]
+    }
+  ],
+  "records": [
+    {
+      "kind": "legacy",
+      "input": "https://digitecme.com/brands/mercedes-benz-service-dubai/oil-change?utm_source=activation-preflight&tag=a&tag=b&gclid=synthetic-test",
+      "method": "GET",
+      "index": 0,
+      "error": "TypeError: fetch failed",
+      "issues": [
+        "TypeError: fetch failed"
+      ]
+    },
+    {
+      "kind": "legacy",
+      "input": "https://digitecme.com/brands/mercedes-benz-service-dubai/oil-change?utm_source=activation-preflight&tag=a&tag=b&gclid=synthetic-test",
+      "method": "HEAD",
+      "index": 1,
+      "error": "TypeError: fetch failed",
+      "issues": [
+        "TypeError: fetch failed"
+      ]
+    },
+    {
+      "kind": "legacy",
+      "input": "https://digitecme.com/brands/mercedes-benz-service-dubai/oil-change/?utm_source=activation-preflight&tag=a&tag=b&gclid=synthetic-test",
+      "method": "GET",
+      "index": 2,
+      "error": "TypeError: fetch failed",
+      "issues": [
+        "TypeError: fetch failed"
+      ]
+    },
+    {
+      "kind": "legacy",
+      "input": "https://digitecme.com/brands/mercedes-benz-service-dubai/oil-change/?utm_source=activation-preflight&tag=a&tag=b&gclid=synthetic-test",
+      "method": "HEAD",
+      "index": 3,
+      "error": "TypeError: fetch failed",
+      "issues": [
+        "TypeError: fetch failed"
+      ]
+    }
+  ]
+}

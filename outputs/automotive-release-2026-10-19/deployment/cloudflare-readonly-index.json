@@ -1,0 +1,24 @@
+{
+  "checkedAt": "2026-10-19T07:31:58.854Z",
+  "methods": [
+    "GET"
+  ],
+  "records": [
+    {
+      "endpoint": "/accounts",
+      "method": "GET",
+      "status": 403,
+      "contentType": "application/json",
+      "sha256": "ad0a5a6fd704d42394a29566c473401d5fe46ee63ff9b05a66aed493f1e8ebd6",
+      "bytes": 103
+    },
+    {
+      "endpoint": "/zones?name=digitecme.com",
+      "method": "GET",
+      "status": 403,
+      "contentType": "application/json",
+      "sha256": "ad0a5a6fd704d42394a29566c473401d5fe46ee63ff9b05a66aed493f1e8ebd6",
+      "bytes": 103
+    }
+  ]
+}

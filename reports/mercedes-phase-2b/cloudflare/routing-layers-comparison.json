@@ -1,0 +1,121 @@
+{
+  "observedAt": "2026-10-26T07:40:35.018Z",
+  "readOnly": true,
+  "baseline": "../mercedes-phase-2/deployment-2026-10-26/cloudflare/before-inventory.json",
+  "comparisons": [
+    {
+      "layer": "urlRewriteRules",
+      "current": {
+        "none": true
+      },
+      "phase2A": {
+        "none": true
+      },
+      "matches": true,
+      "evidence": "rules-overview-ax.txt"
+    },
+    {
+      "layer": "configurationRules",
+      "current": {
+        "none": true
+      },
+      "phase2A": {
+        "none": true
+      },
+      "matches": true,
+      "evidence": "rules-overview-ax.txt"
+    },
+    {
+      "layer": "originRules",
+      "current": {
+        "none": true
+      },
+      "phase2A": {
+        "none": true
+      },
+      "matches": true,
+      "evidence": "rules-overview-ax.txt"
+    },
+    {
+      "layer": "pageRules",
+      "current": {
+        "used": 0,
+        "limit": 3
+      },
+      "matches": true,
+      "evidence": "page-rules-ax.txt"
+    },
+    {
+      "layer": "bulkRedirectLists",
+      "current": {
+        "used": 0,
+        "limit": 5
+      },
+      "matches": true,
+      "evidence": "bulk-redirects-ax.txt"
+    },
+    {
+      "layer": "workerRoutes",
+      "current": {
+        "none": true
+      },
+      "matches": true,
+      "evidence": "worker-routes-ax.txt"
+    },
+    {
+      "layer": "urlNormalization",
+      "current": {
+        "type": "Cloudflare",
+        "incoming": true,
+        "toOrigin": false
+      },
+      "matches": true,
+      "evidence": "url-normalization-ax.txt"
+    },
+    {
+      "layer": "dns",
+      "current": [
+        {
+          "name": "digitecme.com",
+          "type": "CNAME",
+          "content": "dubai-performance-art.lovable.app",
+          "proxied": true,
+          "ttl": "Auto"
+        },
+        {
+          "name": "www.digitecme.com",
+          "type": "CNAME",
+          "content": "dubai-performance-art.lovable.app",
+          "proxied": true,
+          "ttl": "Auto"
+        }
+      ],
+      "matches": true,
+      "evidence": "dns-relevant-rows.json"
+    },
+    {
+      "layer": "httpsHandling",
+      "current": {
+        "alwaysUseHttps": true,
+        "automaticHttpsRewrites": true,
+        "lastAlwaysHttpsChangeDisplayed": "6 months ago"
+      },
+      "matches": true,
+      "evidence": "https-settings-ax.txt"
+    }
+  ],
+  "allComparedCurrentValuesMatchPhase2A": true,
+  "additionalCurrentObservations": {
+    "noCacheRules": true,
+    "noCacheResponseRules": true,
+    "noRequestHeaderTransformRules": true,
+    "noResponseHeaderTransformRules": true,
+    "noCompressionRules": true,
+    "note": "These supplementary current observations do not establish historical values absent a matching earlier recorded field."
+  },
+  "limits": [
+    "Fresh functional UI snapshots match recorded Phase 2A values; no account audit-log or historical per-edge version export was available.",
+    "Matching snapshots cannot exclude an intermediate change between observation windows.",
+    "No production form value, toggle, order, rule, DNS, cache or TLS setting was changed."
+  ]
+}

@@ -1,0 +1,219 @@
+{
+  "capturedAt": "2026-10-26T11:26:03.884Z",
+  "method": "Local text pattern scan; values deliberately omitted. Indicators require review; not proof of active credentials. Public JWT/anon keys can match JWT pattern.",
+  "extensions": [
+    {
+      "extension": ".tar",
+      "count": 1,
+      "bytes": 1706782720
+    },
+    {
+      "extension": ".zip",
+      "count": 17,
+      "bytes": 895153871
+    },
+    {
+      "extension": ".png",
+      "count": 2061,
+      "bytes": 552375010
+    },
+    {
+      "extension": ".exe",
+      "count": 4,
+      "bytes": 405186560
+    },
+    {
+      "extension": ".json",
+      "count": 1217,
+      "bytes": 214517386
+    },
+    {
+      "extension": ".html",
+      "count": 3061,
+      "bytes": 178557780
+    },
+    {
+      "extension": ".mp4",
+      "count": 11,
+      "bytes": 70682924
+    },
+    {
+      "extension": ".jpg",
+      "count": 189,
+      "bytes": 63955796
+    },
+    {
+      "extension": ".gz",
+      "count": 8,
+      "bytes": 31327211
+    },
+    {
+      "extension": ".whl",
+      "count": 1,
+      "bytes": 31246824
+    },
+    {
+      "extension": ".csv",
+      "count": 262,
+      "bytes": 30580306
+    },
+    {
+      "extension": ".txt",
+      "count": 947,
+      "bytes": 21009099
+    },
+    {
+      "extension": ".wav",
+      "count": 3,
+      "bytes": 20160132
+    },
+    {
+      "extension": ".mov",
+      "count": 2,
+      "bytes": 15778620
+    },
+    {
+      "extension": ".js",
+      "count": 190,
+      "bytes": 15113433
+    },
+    {
+      "extension": ".xml",
+      "count": 58,
+      "bytes": 7367721
+    },
+    {
+      "extension": ".diff",
+      "count": 463,
+      "bytes": 7211766
+    },
+    {
+      "extension": ".ndjson",
+      "count": 9,
+      "bytes": 6147726
+    },
+    {
+      "extension": ".webp",
+      "count": 51,
+      "bytes": 4936470
+    },
+    {
+      "extension": ".body",
+      "count": 50,
+      "bytes": 3637659
+    },
+    {
+      "extension": ".tsx",
+      "count": 202,
+      "bytes": 3464125
+    },
+    {
+      "extension": ".ts",
+      "count": 154,
+      "bytes": 3370175
+    },
+    {
+      "extension": ".md",
+      "count": 264,
+      "bytes": 2896973
+    },
+    {
+      "extension": ".mjs",
+      "count": 373,
+      "bytes": 2647809
+    },
+    {
+      "extension": ".css",
+      "count": 29,
+      "bytes": 2516907
+    },
+    {
+      "extension": ".patch",
+      "count": 20,
+      "bytes": 752220
+    },
+    {
+      "extension": ".py",
+      "count": 34,
+      "bytes": 306793
+    },
+    {
+      "extension": ".yaml",
+      "count": 1,
+      "bytes": 219333
+    },
+    {
+      "extension": ".pdf",
+      "count": 3,
+      "bytes": 198945
+    },
+    {
+      "extension": ".lock",
+      "count": 1,
+      "bytes": 170366
+    },
+    {
+      "extension": ".ico",
+      "count": 3,
+      "bytes": 83781
+    },
+    {
+      "extension": ".svg",
+      "count": 39,
+      "bytes": 81543
+    },
+    {
+      "extension": "(no extension)",
+      "count": 1,
+      "bytes": 35147
+    },
+    {
+      "extension": ".ps1",
+      "count": 7,
+      "bytes": 21901
+    },
+    {
+      "extension": ".cjs",
+      "count": 1,
+      "bytes": 4903
+    },
+    {
+      "extension": ".ffpreset",
+      "count": 5,
+      "bytes": 1127
+    },
+    {
+      "extension": ".nul",
+      "count": 1,
+      "bytes": 875
+    },
+    {
+      "extension": ".jsonc",
+      "count": 1,
+      "bytes": 371
+    }
+  ],
+  "indicators": [
+    {
+      "path": "outputs/automotive-release-2026-10-19/deployment/snapshot-cloudflare-readonly.mjs",
+      "bytes": 10102,
+      "flags": [
+        "account/config identifiers in auth-path candidate"
+      ]
+    },
+    {
+      "path": "outputs/mercedes-oil-investigation-2026-10-21/qa/build/src/integrations/supabase/client.ts",
+      "bytes": 780,
+      "flags": [
+        "JWT-shaped text"
+      ]
+    },
+    {
+      "path": "outputs/mercedes-oil-routing-2026-10-21/hosting/lovable-project-connector.json",
+      "bytes": 1556,
+      "flags": [
+        "account/config identifiers in auth-path candidate"
+      ]
+    }
+  ]
+}

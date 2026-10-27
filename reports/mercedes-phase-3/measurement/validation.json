@@ -1,0 +1,28 @@
+{
+  "validatedAtUtc": "2026-10-26T08:35:55.272Z",
+  "offlineOnly": true,
+  "networkRequests": 0,
+  "schemasCompiledDraft": "2020-12",
+  "dashboardTemplateSchemaPassed": true,
+  "errors": null,
+  "windows": [
+    7,
+    28,
+    90
+  ],
+  "uniqueMetricIds": true,
+  "allMetricsBlank": true,
+  "sourceRecordsEmpty": true,
+  "schemaRejectsAdditionalFields": true,
+  "localMarkdownLinksBroken": [],
+  "metricCountPerWindow": [
+    24,
+    24,
+    24
+  ],
+  "limitations": [
+    "Schemas validate artifact structure, not whether future exports are complete or business attribution is correct.",
+    "No GA4/GTM/CRM/finance access or collected event counts were validated."
+  ],
+  "passed": true
+}

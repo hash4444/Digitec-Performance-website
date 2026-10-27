@@ -1,0 +1,43 @@
+{
+  "modified": [
+    "cloudflare/routing-response-data.js",
+    "docs/seo/paint-care-cluster-audit.json",
+    "docs/seo/protection-release-validation.json",
+    "docs/seo/query-release-validation.json",
+    "docs/seo/route-schema-matrix.csv",
+    "public/sitemap.xml",
+    "scripts/test-paint-correction-browser.mjs",
+    "scripts/test-ppf-browser.mjs",
+    "scripts/test-protection-release-browser.mjs",
+    "scripts/validate-master-seo.mjs",
+    "scripts/validate-paint-correction.mjs",
+    "scripts/validate-ppf.mjs",
+    "scripts/validate-protection-release.mjs",
+    "src/App.tsx",
+    "src/components/Header.tsx",
+    "src/data/aiGuidePostsExtra.ts",
+    "src/data/blogPosts.ts",
+    "src/data/ceramicCoatingContent.ts",
+    "src/data/paintCorrectionContent.ts",
+    "src/data/ppfContent.ts",
+    "src/data/services.ts",
+    "src/i18n/ar-blog.ts",
+    "src/i18n/ar-general-blog-content.ts",
+    "src/i18n/ar-protection-services.ts",
+    "src/i18n/ar-service-blog-content.ts",
+    "src/lib/route-manifest.ts",
+    "src/pages/BlogPost.tsx",
+    "src/pages/CeramicCoatingPage.tsx",
+    "src/pages/PaintCorrectionPage.tsx",
+    "src/pages/PpfPage.tsx",
+    "src/pages/ServicePage.tsx"
+  ],
+  "added": [
+    "src/data/paintProtectionContent.ts",
+    "src/pages/PaintProtectionPage.tsx",
+    "src/styles/paint-protection.css"
+  ],
+  "preservedBackend": "supabase/functions/mcp/index.ts",
+  "preservedHistoricalEvidence": "outputs/seo-2026-09-16/master-validation.json",
+  "finalSourceSha256": "0879f73cdf5434c66dbaaee251036a6af2bd3668077a7c004b6a0536c54cf9dc"
+}

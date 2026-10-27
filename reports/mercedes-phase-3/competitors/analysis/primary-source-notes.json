@@ -1,0 +1,60 @@
+{
+  "method": "Read-only web extraction of workshop-owned pages on 26 October 2026. Text retrieval can reflect the tool's stated crawl cache; no forms or messaging actions were performed.",
+  "verification_boundary": "These are features and claims published by each business, not independently verified credentials, review authenticity, delivered workmanship, availability, prices or booking completion.",
+  "sources": [
+    {
+      "business": "SilberArrows",
+      "url": "https://mercedes-benz.silberarrows.com/",
+      "tool_reported_crawl": "today",
+      "observed_sections": "Homepage lines13-37,65-142,243-308,325-372",
+      "summary": "Mercedes-only positioning; named technician profiles; workshop imagery; model guides; displayed reviews; XENTRY, genuine-parts and warranty claims. Address and opening hours are published. Service, pricing and warranty links accompany quote/call/WhatsApp actions.",
+      "booking_exercised": false
+    },
+    {
+      "business": "SilberArrows pricing",
+      "url": "https://mercedes-benz.silberarrows.com/service-pricing",
+      "tool_reported_crawl": "today",
+      "observed_sections": "Lines16-24,152-198",
+      "summary": "Public model-tier minor/major prices include parts and labour, exclude VAT, and depend on engine/type. An advisor confirms the exact quote. Different from a universal Mercedes service price."
+    },
+    {
+      "business": "Al Maraghi / benzuae",
+      "url": "https://benzuae.com/mercedes-benz-repair-dubai/",
+      "tool_reported_crawl": "4 weeks ago",
+      "observed_sections": "Lines52-99,110-154",
+      "summary": "Repair-specific service navigation and technician/genuine-parts claims. Dubai Al Quoz2 and Abu Dhabi branches are listed with map/contact links. Booking and WhatsApp calls to action are visible; transparency is claimed without an on-page itemized fixed-price table.",
+      "booking_exercised": false
+    },
+    {
+      "business": "Royal Swiss Auto",
+      "url": "https://swissauto.ae/brands/mercedes/",
+      "tool_reported_crawl": "last week",
+      "observed_sections": "Lines91-113,267-308,317-358",
+      "summary": "Mercedes maintenance/repair and model coverage; experience claims; branches and model/service links; instant-quote messaging. Appointment form requests contact/vehicle information. One oil-warning FAQ answer visibly repeats unrelated steering text, a quality caution rather than a pattern to copy.",
+      "booking_exercised": false
+    },
+    {
+      "business": "Max Garage",
+      "url": "https://maxgarage.ae/car-brands-we-service-dubai/mercedes-benz-service-repair/",
+      "tool_reported_crawl": "last week",
+      "observed_sections": "Lines122-175,182-194,257-320",
+      "summary": "Detailed service inclusions, diagnostic reports and parts-options explanation. Experience/certification claims and conditional warranty terms are published. Navigation links to repair categories, warranty, appointments and quote requests.",
+      "booking_exercised": false
+    },
+    {
+      "business": "Max Garage contact / booking",
+      "urls": ["https://maxgarage.ae/contact-us/", "https://maxgarage.ae/book-appointment/"],
+      "tool_reported_crawls": ["yesterday", "3 days ago"],
+      "summary": "Two Al Quoz locations and phone/WhatsApp contacts are published. Appointment form includes model, year, kilometers, optional VIN and requested date/time; staff confirmation is described. No form was submitted."
+    },
+    {
+      "business": "Golden Horse oil page",
+      "url": "https://golden-horse.ae/services/mercedes/mercedes-oil-change/",
+      "tool_reported_crawl": "today",
+      "observed_sections": "Lines409-474,486-511,612-629,843-915",
+      "summary": "Dedicated oil scope, displayed from-AED200 engine-oil/filter price excluding 5% VAT, final diagnostic confirmation, calculator, oil-labeled gallery, related Mercedes links, workshop address and appointment/WhatsApp actions. Image provenance, oil specification, warranty and duration are unverified business claims; no purchase or quote was requested.",
+      "booking_exercised": false
+    }
+  ],
+  "not_collected": ["Backlink counts or authority scores", "Search volume", "Conversion rates", "Competitor leads or revenue", "Independent credential or review validation", "Completed booking or delivered quotation"]
+}

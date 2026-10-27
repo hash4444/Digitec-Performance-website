@@ -1,0 +1,2082 @@
+{
+  "purpose": "Historical Phase 2A R4 failure analysis; offline evidence only; no fresh results claimed.",
+  "generatedAtUtc": "2026-10-26T07:38:12.030Z",
+  "sourceHashes": {
+    "checkpoint": {
+      "path": "reports/mercedes-phase-2/deployment-2026-10-26/verification/evidence/checkpoint-R4-2026-10-26T07-20-57-862Z/capture.json",
+      "sha256": "a0c5b766b65c0755d9af1641b20b868c59765ef9e97dd64e8c8155a7fe9a95ef"
+    },
+    "baseline": {
+      "path": "reports/mercedes-phase-2/deployment-2026-10-26/preflight/http-pre-2026-10-26T07-06-59-812Z/capture.json",
+      "sha256": "50acb9e9b9abfdba35fad704cec0c1a2f25aef2e2ea94cd7fc4f1d3e620a3d97"
+    },
+    "beforeInventory": {
+      "path": "reports/mercedes-phase-2/deployment-2026-10-26/cloudflare/before-inventory.json",
+      "sha256": "e76e788f3d45168f187db4486686a22766a72cbfb5b3a6b26f2ca5c9f80d3be2"
+    },
+    "afterInventory": {
+      "path": "reports/mercedes-phase-2/deployment-2026-10-26/cloudflare/after-inventory.json",
+      "sha256": "42b04c66bee2c335b7fe5cfafa87fc1ea149cfa434490e4420f6c761b99b4c6e"
+    },
+    "activations": {
+      "path": "reports/mercedes-phase-2/deployment-2026-10-26/cloudflare/activations.json",
+      "sha256": "cf27031c50a2231dbdeb9cfce5384055e25c7f8e5c8d6adc5b461bb155eb446d"
+    },
+    "verifier": {
+      "path": "reports/mercedes-phase-2/deployment-2026-10-26/verification/verify-staged.mjs",
+      "sha256": "566da0be9d69454b3e9afbe0895880bb6156d9a112e46afc4743db151894b7d9"
+    }
+  },
+  "originalRuleComparison": [
+    {
+      "id": "5addb0c068414fb5b985a869ded26c68",
+      "unchangedFunctionalFields": true
+    },
+    {
+      "id": "dbe42693423442afbc3bab9b993242a7",
+      "unchangedFunctionalFields": true
+    },
+    {
+      "id": "9781b1ef743f4ffbaadbe5cb3250eeca",
+      "unchangedFunctionalFields": true
+    }
+  ],
+  "originalRelativeOrderUnchanged": true,
+  "afterOrder": [
+    {
+      "id": "5addb0c068414fb5b985a869ded26c68",
+      "order": 1,
+      "enabled": true
+    },
+    {
+      "id": "dbe42693423442afbc3bab9b993242a7",
+      "order": 2,
+      "enabled": true
+    },
+    {
+      "id": "b835ca6b88b448d6809f01271dba491b",
+      "order": 3,
+      "enabled": true
+    },
+    {
+      "id": "5fafd20389964771885d8d1194f01d77",
+      "order": 4,
+      "enabled": true
+    },
+    {
+      "id": "239ab46545704096bec2628d8eedf9b9",
+      "order": 5,
+      "enabled": true
+    },
+    {
+      "id": "2873f5b6de04417d8a486b22cc878835",
+      "order": 6,
+      "enabled": true
+    },
+    {
+      "id": "9781b1ef743f4ffbaadbe5cb3250eeca",
+      "order": 7,
+      "enabled": true
+    }
+  ],
+  "r4Activation": {
+    "rule": "R4",
+    "submittedAt": "2026-10-26T07:20:32.137Z",
+    "status": "enabled-observed",
+    "activeObservedAt": "2026-10-26T07:20:34.742Z",
+    "id": "2873f5b6de04417d8a486b22cc878835",
+    "internalActivationTimestampAvailable": false
+  },
+  "sourceWindow": {
+    "start": "2026-10-26T07:20:59.755Z",
+    "end": "2026-10-26T07:21:06.664Z"
+  },
+  "summary": {
+    "r4SourceCases": 48,
+    "directRedirectPasses": 47,
+    "failedSourceCases": 1,
+    "failedAssertions": [
+      {
+        "name": "source-ar-mechanical-repair-6: direct permanent redirect preserves raw query",
+        "pass": false,
+        "details": "Expected 308 https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai"
+      },
+      {
+        "name": "source-ar-mechanical-repair-6: target canonical indexable",
+        "pass": false,
+        "details": ""
+      }
+    ],
+    "exactFailedMethodUrlOccurrences": 1
+  },
+  "failure": {
+    "key": "source-ar-mechanical-repair-6",
+    "requestStartedAtUtc": "2026-10-26T07:20:59.755Z",
+    "secondsAfterR4EnabledFirstObserved": 25.013,
+    "method": "GET",
+    "url": "https://digitecme.com/ar/brands/mercedes-benz-service-dubai/mechanical-repair",
+    "scheme": "https",
+    "host": "digitecme.com",
+    "path": "/ar/brands/mercedes-benz-service-dubai/mechanical-repair",
+    "trailingSlash": false,
+    "queryClass": "empty",
+    "rawQuery": "",
+    "status": 200,
+    "location": null,
+    "cfRay": "a507b3b20a4fb88b-AMS",
+    "cfRayColoSuffix": "AMS",
+    "cfCacheStatus": "DYNAMIC",
+    "age": null,
+    "cacheControl": "no-cache, must-revalidate, max-age=0",
+    "responseDate": "Mon, 26 Oct 2026 07:21:03 GMT",
+    "chainResponses": 1,
+    "finalStatus": 200,
+    "finalUrl": "https://digitecme.com/ar/brands/mercedes-benz-service-dubai/mechanical-repair",
+    "finalCanonical": [
+      "https://digitecme.com/"
+    ],
+    "loop": false,
+    "failedAssertions": [
+      "source-ar-mechanical-repair-6: direct permanent redirect preserves raw query",
+      "source-ar-mechanical-repair-6: target canonical indexable"
+    ],
+    "directRedirectPass": false,
+    "getFinalCanonicalPass": false
+  },
+  "failureBody": {
+    "title": "Digi-Tec Performance Center | Independent Car Workshop Dubai",
+    "canonical": [
+      "https://digitecme.com/"
+    ],
+    "mainTextSha256": "d07fff0f97bb2b18b3e85e16673c1e26fbb476689020cbb7f9aa8deab957c6dc",
+    "matchesFreshBaselineSameUrlMainText": true,
+    "matchesFreshBaselineHomepageMainText": true,
+    "xDeploymentId": "psr2.455fbd60-7be3-4d3f-b5a2-4af11984e472.1793604063.HtHeKe9B6CM58RMAwvl_Niwfb2dWK7IxK3JRuJvIftc",
+    "originProvenByDirectOriginLog": false
+  },
+  "literalMatching": {
+    "scope": "Offline evaluation of inventoried simple literal sets against saved tuple; no Cloudflare request trace or server rule evaluation.",
+    "before": [
+      {
+        "id": "5addb0c068414fb5b985a869ded26c68",
+        "order": 1,
+        "enabled": true,
+        "clauses": [
+          {
+            "field": "http.host",
+            "actual": "digitecme.com",
+            "allowed": [
+              "digitecme.com",
+              "www.digitecme.com"
+            ]
+          },
+          {
+            "field": "http.request.method",
+            "actual": "GET",
+            "allowed": [
+              "GET",
+              "HEAD"
+            ]
+          },
+          {
+            "field": "http.request.uri.path",
+            "actual": "/ar/brands/mercedes-benz-service-dubai/mechanical-repair",
+            "allowed": [
+              "/brands/mercedes-benz-service-dubai/oil-change",
+              "/brands/mercedes-benz-service-dubai/oil-change/"
+            ]
+          }
+        ],
+        "matchesLiteralTuple": false
+      },
+      {
+        "id": "dbe42693423442afbc3bab9b993242a7",
+        "order": 2,
+        "enabled": true,
+        "clauses": [
+          {
+            "field": "http.request.uri.path",
+            "actual": "/ar/brands/mercedes-benz-service-dubai/mechanical-repair",
+            "allowed": [
+              "/services/mercedes-repair-dubai",
+              "/services/mercedes-repair-dubai/",
+              "/services/mercedes-service-dubai",
+              "/best-mercedes-workshop-dubai"
+            ]
+          }
+        ],
+        "matchesLiteralTuple": false
+      },
+      {
+        "id": "9781b1ef743f4ffbaadbe5cb3250eeca",
+        "order": 3,
+        "enabled": true,
+        "clauses": [
+          {
+            "field": "http.host",
+            "actual": "digitecme.com",
+            "allowed": [
+              "www.digitecme.com"
+            ]
+          }
+        ],
+        "matchesLiteralTuple": false
+      }
+    ],
+    "after": [
+      {
+        "id": "5addb0c068414fb5b985a869ded26c68",
+        "order": 1,
+        "enabled": true,
+        "clauses": [
+          {
+            "field": "http.host",
+            "actual": "digitecme.com",
+            "allowed": [
+              "digitecme.com",
+              "www.digitecme.com"
+            ]
+          },
+          {
+            "field": "http.request.method",
+            "actual": "GET",
+            "allowed": [
+              "GET",
+              "HEAD"
+            ]
+          },
+          {
+            "field": "http.request.uri.path",
+            "actual": "/ar/brands/mercedes-benz-service-dubai/mechanical-repair",
+            "allowed": [
+              "/brands/mercedes-benz-service-dubai/oil-change",
+              "/brands/mercedes-benz-service-dubai/oil-change/"
+            ]
+          }
+        ],
+        "matchesLiteralTuple": false
+      },
+      {
+        "id": "dbe42693423442afbc3bab9b993242a7",
+        "order": 2,
+        "enabled": true,
+        "clauses": [
+          {
+            "field": "http.request.uri.path",
+            "actual": "/ar/brands/mercedes-benz-service-dubai/mechanical-repair",
+            "allowed": [
+              "/services/mercedes-repair-dubai",
+              "/services/mercedes-repair-dubai/",
+              "/services/mercedes-service-dubai",
+              "/best-mercedes-workshop-dubai"
+            ]
+          }
+        ],
+        "matchesLiteralTuple": false
+      },
+      {
+        "id": "b835ca6b88b448d6809f01271dba491b",
+        "order": 3,
+        "enabled": true,
+        "clauses": [
+          {
+            "field": "http.host",
+            "actual": "digitecme.com",
+            "allowed": [
+              "digitecme.com",
+              "www.digitecme.com"
+            ]
+          },
+          {
+            "field": "http.request.method",
+            "actual": "GET",
+            "allowed": [
+              "GET",
+              "HEAD"
+            ]
+          },
+          {
+            "field": "http.request.uri.path",
+            "actual": "/ar/brands/mercedes-benz-service-dubai/mechanical-repair",
+            "allowed": [
+              "/ar/brands/mercedes-benz-service-dubai/oil-change",
+              "/ar/brands/mercedes-benz-service-dubai/oil-change/"
+            ]
+          }
+        ],
+        "matchesLiteralTuple": false
+      },
+      {
+        "id": "5fafd20389964771885d8d1194f01d77",
+        "order": 4,
+        "enabled": true,
+        "clauses": [
+          {
+            "field": "http.host",
+            "actual": "digitecme.com",
+            "allowed": [
+              "digitecme.com",
+              "www.digitecme.com"
+            ]
+          },
+          {
+            "field": "http.request.method",
+            "actual": "GET",
+            "allowed": [
+              "GET",
+              "HEAD"
+            ]
+          },
+          {
+            "field": "http.request.uri.path",
+            "actual": "/ar/brands/mercedes-benz-service-dubai/mechanical-repair",
+            "allowed": [
+              "/brands/mercedes-benz-service-dubai/body-repair",
+              "/brands/mercedes-benz-service-dubai/body-repair/"
+            ]
+          }
+        ],
+        "matchesLiteralTuple": false
+      },
+      {
+        "id": "239ab46545704096bec2628d8eedf9b9",
+        "order": 5,
+        "enabled": true,
+        "clauses": [
+          {
+            "field": "http.host",
+            "actual": "digitecme.com",
+            "allowed": [
+              "digitecme.com",
+              "www.digitecme.com"
+            ]
+          },
+          {
+            "field": "http.request.method",
+            "actual": "GET",
+            "allowed": [
+              "GET",
+              "HEAD"
+            ]
+          },
+          {
+            "field": "http.request.uri.path",
+            "actual": "/ar/brands/mercedes-benz-service-dubai/mechanical-repair",
+            "allowed": [
+              "/ar/brands/mercedes-benz-service-dubai/battery-replacement",
+              "/ar/brands/mercedes-benz-service-dubai/battery-replacement/"
+            ]
+          }
+        ],
+        "matchesLiteralTuple": false
+      },
+      {
+        "id": "2873f5b6de04417d8a486b22cc878835",
+        "order": 6,
+        "enabled": true,
+        "clauses": [
+          {
+            "field": "http.host",
+            "actual": "digitecme.com",
+            "allowed": [
+              "digitecme.com",
+              "www.digitecme.com"
+            ]
+          },
+          {
+            "field": "http.request.method",
+            "actual": "GET",
+            "allowed": [
+              "GET",
+              "HEAD"
+            ]
+          },
+          {
+            "field": "http.request.uri.path",
+            "actual": "/ar/brands/mercedes-benz-service-dubai/mechanical-repair",
+            "allowed": [
+              "/ar/brands/mercedes-benz-service-dubai/mechanical-repair",
+              "/ar/brands/mercedes-benz-service-dubai/mechanical-repair/"
+            ]
+          }
+        ],
+        "matchesLiteralTuple": true
+      },
+      {
+        "id": "9781b1ef743f4ffbaadbe5cb3250eeca",
+        "order": 7,
+        "enabled": true,
+        "clauses": [
+          {
+            "field": "http.host",
+            "actual": "digitecme.com",
+            "allowed": [
+              "www.digitecme.com"
+            ]
+          }
+        ],
+        "matchesLiteralTuple": false
+      }
+    ]
+  },
+  "distributions": {
+    "cfRayColoSuffix": [
+      {
+        "value": "AMS",
+        "cases": 7,
+        "directRedirectPasses": 6,
+        "failures": 1
+      },
+      {
+        "value": "CDG",
+        "cases": 15,
+        "directRedirectPasses": 15,
+        "failures": 0
+      },
+      {
+        "value": "HKG",
+        "cases": 16,
+        "directRedirectPasses": 16,
+        "failures": 0
+      },
+      {
+        "value": "FRA",
+        "cases": 10,
+        "directRedirectPasses": 10,
+        "failures": 0
+      }
+    ],
+    "method": [
+      {
+        "value": "GET",
+        "cases": 24,
+        "directRedirectPasses": 23,
+        "failures": 1
+      },
+      {
+        "value": "HEAD",
+        "cases": 24,
+        "directRedirectPasses": 24,
+        "failures": 0
+      }
+    ],
+    "scheme": [
+      {
+        "value": "https",
+        "cases": 24,
+        "directRedirectPasses": 23,
+        "failures": 1
+      },
+      {
+        "value": "http",
+        "cases": 24,
+        "directRedirectPasses": 24,
+        "failures": 0
+      }
+    ],
+    "host": [
+      {
+        "value": "digitecme.com",
+        "cases": 24,
+        "directRedirectPasses": 23,
+        "failures": 1
+      },
+      {
+        "value": "www.digitecme.com",
+        "cases": 24,
+        "directRedirectPasses": 24,
+        "failures": 0
+      }
+    ],
+    "trailingSlash": [
+      {
+        "value": false,
+        "cases": 24,
+        "directRedirectPasses": 23,
+        "failures": 1
+      },
+      {
+        "value": true,
+        "cases": 24,
+        "directRedirectPasses": 24,
+        "failures": 0
+      }
+    ],
+    "queryClass": [
+      {
+        "value": "empty",
+        "cases": 16,
+        "directRedirectPasses": 15,
+        "failures": 1
+      },
+      {
+        "value": "campaign",
+        "cases": 16,
+        "directRedirectPasses": 16,
+        "failures": 0
+      },
+      {
+        "value": "repeated-encoded-blank",
+        "cases": 16,
+        "directRedirectPasses": 16,
+        "failures": 0
+      }
+    ]
+  },
+  "nearestSameColoPass": {
+    "key": "source-ar-mechanical-repair-10",
+    "requestStartedAtUtc": "2026-10-26T07:21:00.096Z",
+    "secondsAfterR4EnabledFirstObserved": 25.354,
+    "method": "HEAD",
+    "url": "https://digitecme.com/ar/brands/mercedes-benz-service-dubai/mechanical-repair?utm_source=mercedes_phase_2&gclid=phase2-example",
+    "scheme": "https",
+    "host": "digitecme.com",
+    "path": "/ar/brands/mercedes-benz-service-dubai/mechanical-repair",
+    "trailingSlash": false,
+    "queryClass": "campaign",
+    "rawQuery": "?utm_source=mercedes_phase_2&gclid=phase2-example",
+    "status": 308,
+    "location": "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai?utm_source=mercedes_phase_2&gclid=phase2-example",
+    "cfRay": "a507b3b41c12b88b-AMS",
+    "cfRayColoSuffix": "AMS",
+    "cfCacheStatus": null,
+    "age": null,
+    "cacheControl": null,
+    "responseDate": "Mon, 26 Oct 2026 07:21:03 GMT",
+    "chainResponses": 2,
+    "finalStatus": 200,
+    "finalUrl": "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai?utm_source=mercedes_phase_2&gclid=phase2-example",
+    "finalCanonical": [],
+    "loop": false,
+    "failedAssertions": [],
+    "directRedirectPass": true,
+    "getFinalCanonicalPass": null,
+    "secondsAfterFailureRequestStart": 0.341,
+    "sameMethodUrlAsFailure": false
+  },
+  "requestEvidenceLimits": {
+    "singleVerifierRuntime": true,
+    "concurrency": 4,
+    "userAgent": "DIGI-TEC-Phase2-ReadOnly-HTTP-Verification/1.0",
+    "browserJavascript": false,
+    "manualRedirectCapture": true,
+    "explicitNoCacheRequestHeaders": false,
+    "cachePurge": false,
+    "sameRequestSameColoRepeatInPhase2A": false,
+    "exactServerActivationTimestamp": false,
+    "edgeRequestTrace": false,
+    "directOriginRequestOrLogs": false,
+    "controlledIndependentGeographicVantages": false
+  },
+  "hypotheses": [
+    {
+      "name": "Transient edge configuration propagation or consistency",
+      "assessment": "Plausible, unproven",
+      "support": "One miss shortly after enablement amid 47 passes; no displayed field defect.",
+      "limit": "No per-edge config version/trace; same AMS suffix also returned 308; exact tuple not repeated in Phase 2A."
+    },
+    {
+      "name": "Cloudflare cached homepage HIT",
+      "assessment": "Not supported by the failed response headers",
+      "support": "Failed response reports DYNAMIC, no Age, and no-cache/must-revalidate/max-age=0.",
+      "limit": "Response headers alone do not identify every upstream intermediary or explain why the redirect was not applied."
+    },
+    {
+      "name": "Incorrect displayed R4 expression/destination/order",
+      "assessment": "No defect found in saved functional configuration",
+      "support": "Failed tuple literally matches enabled R4 only; target is correct; R4 is before www; original rules exclude its path.",
+      "limit": "UI inventory is not a per-request ruleset/version trace."
+    },
+    {
+      "name": "www host canonicalization conflict",
+      "assessment": "Not supported for the failed request",
+      "support": "Failed host is apex; www rule condition is false. All www R4 source cases were direct 308.",
+      "limit": "Does not prove every network intermediary normalized the host identically internally."
+    },
+    {
+      "name": "URI normalization mismatch",
+      "assessment": "No mismatch evident in the saved request tuple",
+      "support": "ASCII source uses ordinary single slashes, no percent encodings, and exactly equals one R4 path literal; slash and slashless variants are present.",
+      "limit": "No trace of the internal evaluated path was captured."
+    },
+    {
+      "name": "Legacy homepage fallback after redirect was bypassed",
+      "assessment": "Homepage fallback body confirmed; causal routing layer unresolved",
+      "support": "Failed body canonical/title/main-text hash equals the pre-deployment homepage fallback.",
+      "limit": "No direct origin response/log establishes where the redirect bypass happened; response body identity is not root-cause evidence."
+    }
+  ],
+  "evidenceNeeded": [
+    "Fresh exact failed GET/URL repeats with default fetch and Connection: close, preserving initial response and relevant headers; neither mode establishes an independent network vantage or exact edge instance.",
+    "Fresh full R4 variant matrix and protected existing/new-rule controls.",
+    "Fresh authenticated functional configuration inventory compared with Phase 2A after-state.",
+    "For definitive cause attribution: Cloudflare per-request trace/log or support evidence identifying evaluated normalized fields, rule IDs and configuration version for the failed CF-Ray; unavailable in historical capture."
+  ],
+  "documentation": [
+    {
+      "url": "https://developers.cloudflare.com/rules/url-forwarding/",
+      "verifiedBy": "Root agent in Phase 2B",
+      "relevance": "First matching redirect applies; Single Redirects evaluate before later rewrite/origin/bulk/cache products."
+    },
+    {
+      "url": "https://developers.cloudflare.com/cache/concepts/cache-responses/",
+      "verifiedBy": "Root agent in Phase 2B",
+      "relevance": "DYNAMIC is not a Cloudflare cache HIT and indicates ineligible cache treatment."
+    },
+    {
+      "url": "https://developers.cloudflare.com/fundamentals/reference/http-headers/",
+      "verifiedBy": "Root agent in Phase 2B",
+      "relevance": "Response CF-Ray suffix denotes a processing colo, not a controlled client location or exact edge instance."
+    },
+    {
+      "url": "https://developers.cloudflare.com/support/troubleshooting/general-troubleshooting/geographic-traffic-routing/",
+      "verifiedBy": "Root agent in Phase 2B",
+      "relevance": "One client may be routed to different colos; observed suffix diversity is not controlled geographic testing."
+    }
+  ],
+  "r4SourceRows": [
+    {
+      "key": "source-ar-mechanical-repair-6",
+      "requestStartedAtUtc": "2026-10-26T07:20:59.755Z",
+      "secondsAfterR4EnabledFirstObserved": 25.013,
+      "method": "GET",
+      "url": "https://digitecme.com/ar/brands/mercedes-benz-service-dubai/mechanical-repair",
+      "scheme": "https",
+      "host": "digitecme.com",
+      "path": "/ar/brands/mercedes-benz-service-dubai/mechanical-repair",
+      "trailingSlash": false,
+      "queryClass": "empty",
+      "rawQuery": "",
+      "status": 200,
+      "location": null,
+      "cfRay": "a507b3b20a4fb88b-AMS",
+      "cfRayColoSuffix": "AMS",
+      "cfCacheStatus": "DYNAMIC",
+      "age": null,
+      "cacheControl": "no-cache, must-revalidate, max-age=0",
+      "responseDate": "Mon, 26 Oct 2026 07:21:03 GMT",
+      "chainResponses": 1,
+      "finalStatus": 200,
+      "finalUrl": "https://digitecme.com/ar/brands/mercedes-benz-service-dubai/mechanical-repair",
+      "finalCanonical": [
+        "https://digitecme.com/"
+      ],
+      "loop": false,
+      "failedAssertions": [
+        "source-ar-mechanical-repair-6: direct permanent redirect preserves raw query",
+        "source-ar-mechanical-repair-6: target canonical indexable"
+      ],
+      "directRedirectPass": false,
+      "getFinalCanonicalPass": false
+    },
+    {
+      "key": "source-ar-mechanical-repair-7",
+      "requestStartedAtUtc": "2026-10-26T07:20:59.784Z",
+      "secondsAfterR4EnabledFirstObserved": 25.042,
+      "method": "GET",
+      "url": "https://digitecme.com/ar/brands/mercedes-benz-service-dubai/mechanical-repair?utm_source=mercedes_phase_2&gclid=phase2-example",
+      "scheme": "https",
+      "host": "digitecme.com",
+      "path": "/ar/brands/mercedes-benz-service-dubai/mechanical-repair",
+      "trailingSlash": false,
+      "queryClass": "campaign",
+      "rawQuery": "?utm_source=mercedes_phase_2&gclid=phase2-example",
+      "status": 308,
+      "location": "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai?utm_source=mercedes_phase_2&gclid=phase2-example",
+      "cfRay": "a507b3b228071a21-CDG",
+      "cfRayColoSuffix": "CDG",
+      "cfCacheStatus": null,
+      "age": null,
+      "cacheControl": null,
+      "responseDate": "Mon, 26 Oct 2026 07:21:03 GMT",
+      "chainResponses": 2,
+      "finalStatus": 200,
+      "finalUrl": "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai?utm_source=mercedes_phase_2&gclid=phase2-example",
+      "finalCanonical": [
+        "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai"
+      ],
+      "loop": false,
+      "failedAssertions": [],
+      "directRedirectPass": true,
+      "getFinalCanonicalPass": true
+    },
+    {
+      "key": "source-ar-mechanical-repair-8",
+      "requestStartedAtUtc": "2026-10-26T07:20:59.794Z",
+      "secondsAfterR4EnabledFirstObserved": 25.052,
+      "method": "GET",
+      "url": "https://digitecme.com/ar/brands/mercedes-benz-service-dubai/mechanical-repair?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank=",
+      "scheme": "https",
+      "host": "digitecme.com",
+      "path": "/ar/brands/mercedes-benz-service-dubai/mechanical-repair",
+      "trailingSlash": false,
+      "queryClass": "repeated-encoded-blank",
+      "rawQuery": "?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank=",
+      "status": 308,
+      "location": "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank=",
+      "cfRay": "a507b3b22d8ae186-HKG",
+      "cfRayColoSuffix": "HKG",
+      "cfCacheStatus": null,
+      "age": null,
+      "cacheControl": null,
+      "responseDate": "Mon, 26 Oct 2026 07:21:03 GMT",
+      "chainResponses": 2,
+      "finalStatus": 200,
+      "finalUrl": "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank=",
+      "finalCanonical": [
+        "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai"
+      ],
+      "loop": false,
+      "failedAssertions": [],
+      "directRedirectPass": true,
+      "getFinalCanonicalPass": true
+    },
+    {
+      "key": "source-ar-mechanical-repair-9",
+      "requestStartedAtUtc": "2026-10-26T07:21:00.047Z",
+      "secondsAfterR4EnabledFirstObserved": 25.305,
+      "method": "HEAD",
+      "url": "https://digitecme.com/ar/brands/mercedes-benz-service-dubai/mechanical-repair",
+      "scheme": "https",
+      "host": "digitecme.com",
+      "path": "/ar/brands/mercedes-benz-service-dubai/mechanical-repair",
+      "trailingSlash": false,
+      "queryClass": "empty",
+      "rawQuery": "",
+      "status": 308,
+      "location": "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai",
+      "cfRay": "a507b3b3cbc2e186-HKG",
+      "cfRayColoSuffix": "HKG",
+      "cfCacheStatus": null,
+      "age": null,
+      "cacheControl": null,
+      "responseDate": "Mon, 26 Oct 2026 07:21:03 GMT",
+      "chainResponses": 2,
+      "finalStatus": 200,
+      "finalUrl": "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai",
+      "finalCanonical": [],
+      "loop": false,
+      "failedAssertions": [],
+      "directRedirectPass": true,
+      "getFinalCanonicalPass": null
+    },
+    {
+      "key": "source-ar-mechanical-repair-10",
+      "requestStartedAtUtc": "2026-10-26T07:21:00.096Z",
+      "secondsAfterR4EnabledFirstObserved": 25.354,
+      "method": "HEAD",
+      "url": "https://digitecme.com/ar/brands/mercedes-benz-service-dubai/mechanical-repair?utm_source=mercedes_phase_2&gclid=phase2-example",
+      "scheme": "https",
+      "host": "digitecme.com",
+      "path": "/ar/brands/mercedes-benz-service-dubai/mechanical-repair",
+      "trailingSlash": false,
+      "queryClass": "campaign",
+      "rawQuery": "?utm_source=mercedes_phase_2&gclid=phase2-example",
+      "status": 308,
+      "location": "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai?utm_source=mercedes_phase_2&gclid=phase2-example",
+      "cfRay": "a507b3b41c12b88b-AMS",
+      "cfRayColoSuffix": "AMS",
+      "cfCacheStatus": null,
+      "age": null,
+      "cacheControl": null,
+      "responseDate": "Mon, 26 Oct 2026 07:21:03 GMT",
+      "chainResponses": 2,
+      "finalStatus": 200,
+      "finalUrl": "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai?utm_source=mercedes_phase_2&gclid=phase2-example",
+      "finalCanonical": [],
+      "loop": false,
+      "failedAssertions": [],
+      "directRedirectPass": true,
+      "getFinalCanonicalPass": null
+    },
+    {
+      "key": "source-ar-mechanical-repair-11",
+      "requestStartedAtUtc": "2026-10-26T07:21:00.234Z",
+      "secondsAfterR4EnabledFirstObserved": 25.492,
+      "method": "HEAD",
+      "url": "https://digitecme.com/ar/brands/mercedes-benz-service-dubai/mechanical-repair?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank=",
+      "scheme": "https",
+      "host": "digitecme.com",
+      "path": "/ar/brands/mercedes-benz-service-dubai/mechanical-repair",
+      "trailingSlash": false,
+      "queryClass": "repeated-encoded-blank",
+      "rawQuery": "?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank=",
+      "status": 308,
+      "location": "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank=",
+      "cfRay": "a507b3b66b710965-HKG",
+      "cfRayColoSuffix": "HKG",
+      "cfCacheStatus": null,
+      "age": null,
+      "cacheControl": null,
+      "responseDate": "Mon, 26 Oct 2026 07:21:03 GMT",
+      "chainResponses": 2,
+      "finalStatus": 200,
+      "finalUrl": "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank=",
+      "finalCanonical": [],
+      "loop": false,
+      "failedAssertions": [],
+      "directRedirectPass": true,
+      "getFinalCanonicalPass": null
+    },
+    {
+      "key": "source-ar-mechanical-repair-12",
+      "requestStartedAtUtc": "2026-10-26T07:21:00.612Z",
+      "secondsAfterR4EnabledFirstObserved": 25.87,
+      "method": "GET",
+      "url": "https://digitecme.com/ar/brands/mercedes-benz-service-dubai/mechanical-repair/",
+      "scheme": "https",
+      "host": "digitecme.com",
+      "path": "/ar/brands/mercedes-benz-service-dubai/mechanical-repair/",
+      "trailingSlash": true,
+      "queryClass": "empty",
+      "rawQuery": "",
+      "status": 308,
+      "location": "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai",
+      "cfRay": "a507b3b75be71a21-CDG",
+      "cfRayColoSuffix": "CDG",
+      "cfCacheStatus": null,
+      "age": null,
+      "cacheControl": null,
+      "responseDate": "Mon, 26 Oct 2026 07:21:03 GMT",
+      "chainResponses": 2,
+      "finalStatus": 200,
+      "finalUrl": "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai",
+      "finalCanonical": [
+        "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai"
+      ],
+      "loop": false,
+      "failedAssertions": [],
+      "directRedirectPass": true,
+      "getFinalCanonicalPass": true
+    },
+    {
+      "key": "source-ar-mechanical-repair-13",
+      "requestStartedAtUtc": "2026-10-26T07:21:00.775Z",
+      "secondsAfterR4EnabledFirstObserved": 26.033,
+      "method": "GET",
+      "url": "https://digitecme.com/ar/brands/mercedes-benz-service-dubai/mechanical-repair/?utm_source=mercedes_phase_2&gclid=phase2-example",
+      "scheme": "https",
+      "host": "digitecme.com",
+      "path": "/ar/brands/mercedes-benz-service-dubai/mechanical-repair/",
+      "trailingSlash": true,
+      "queryClass": "campaign",
+      "rawQuery": "?utm_source=mercedes_phase_2&gclid=phase2-example",
+      "status": 308,
+      "location": "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai?utm_source=mercedes_phase_2&gclid=phase2-example",
+      "cfRay": "a507b3b85c831a21-CDG",
+      "cfRayColoSuffix": "CDG",
+      "cfCacheStatus": null,
+      "age": null,
+      "cacheControl": null,
+      "responseDate": "Mon, 26 Oct 2026 07:21:04 GMT",
+      "chainResponses": 2,
+      "finalStatus": 200,
+      "finalUrl": "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai?utm_source=mercedes_phase_2&gclid=phase2-example",
+      "finalCanonical": [
+        "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai"
+      ],
+      "loop": false,
+      "failedAssertions": [],
+      "directRedirectPass": true,
+      "getFinalCanonicalPass": true
+    },
+    {
+      "key": "source-ar-mechanical-repair-14",
+      "requestStartedAtUtc": "2026-10-26T07:21:00.790Z",
+      "secondsAfterR4EnabledFirstObserved": 26.048,
+      "method": "GET",
+      "url": "https://digitecme.com/ar/brands/mercedes-benz-service-dubai/mechanical-repair/?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank=",
+      "scheme": "https",
+      "host": "digitecme.com",
+      "path": "/ar/brands/mercedes-benz-service-dubai/mechanical-repair/",
+      "trailingSlash": true,
+      "queryClass": "repeated-encoded-blank",
+      "rawQuery": "?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank=",
+      "status": 308,
+      "location": "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank=",
+      "cfRay": "a507b3b9eb587167-HKG",
+      "cfRayColoSuffix": "HKG",
+      "cfCacheStatus": null,
+      "age": null,
+      "cacheControl": null,
+      "responseDate": "Mon, 26 Oct 2026 07:21:04 GMT",
+      "chainResponses": 2,
+      "finalStatus": 200,
+      "finalUrl": "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank=",
+      "finalCanonical": [
+        "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai"
+      ],
+      "loop": false,
+      "failedAssertions": [],
+      "directRedirectPass": true,
+      "getFinalCanonicalPass": true
+    },
+    {
+      "key": "source-ar-mechanical-repair-15",
+      "requestStartedAtUtc": "2026-10-26T07:21:01.092Z",
+      "secondsAfterR4EnabledFirstObserved": 26.35,
+      "method": "HEAD",
+      "url": "https://digitecme.com/ar/brands/mercedes-benz-service-dubai/mechanical-repair/",
+      "scheme": "https",
+      "host": "digitecme.com",
+      "path": "/ar/brands/mercedes-benz-service-dubai/mechanical-repair/",
+      "trailingSlash": true,
+      "queryClass": "empty",
+      "rawQuery": "",
+      "status": 308,
+      "location": "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai",
+      "cfRay": "a507b3ba3efb25d4-HKG",
+      "cfRayColoSuffix": "HKG",
+      "cfCacheStatus": null,
+      "age": null,
+      "cacheControl": null,
+      "responseDate": "Mon, 26 Oct 2026 07:21:04 GMT",
+      "chainResponses": 2,
+      "finalStatus": 200,
+      "finalUrl": "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai",
+      "finalCanonical": [],
+      "loop": false,
+      "failedAssertions": [],
+      "directRedirectPass": true,
+      "getFinalCanonicalPass": null
+    },
+    {
+      "key": "source-ar-mechanical-repair-16",
+      "requestStartedAtUtc": "2026-10-26T07:21:01.102Z",
+      "secondsAfterR4EnabledFirstObserved": 26.36,
+      "method": "HEAD",
+      "url": "https://digitecme.com/ar/brands/mercedes-benz-service-dubai/mechanical-repair/?utm_source=mercedes_phase_2&gclid=phase2-example",
+      "scheme": "https",
+      "host": "digitecme.com",
+      "path": "/ar/brands/mercedes-benz-service-dubai/mechanical-repair/",
+      "trailingSlash": true,
+      "queryClass": "campaign",
+      "rawQuery": "?utm_source=mercedes_phase_2&gclid=phase2-example",
+      "status": 308,
+      "location": "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai?utm_source=mercedes_phase_2&gclid=phase2-example",
+      "cfRay": "a507b3ba6dd21a21-CDG",
+      "cfRayColoSuffix": "CDG",
+      "cfCacheStatus": null,
+      "age": null,
+      "cacheControl": null,
+      "responseDate": "Mon, 26 Oct 2026 07:21:04 GMT",
+      "chainResponses": 2,
+      "finalStatus": 200,
+      "finalUrl": "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai?utm_source=mercedes_phase_2&gclid=phase2-example",
+      "finalCanonical": [],
+      "loop": false,
+      "failedAssertions": [],
+      "directRedirectPass": true,
+      "getFinalCanonicalPass": null
+    },
+    {
+      "key": "source-ar-mechanical-repair-17",
+      "requestStartedAtUtc": "2026-10-26T07:21:01.198Z",
+      "secondsAfterR4EnabledFirstObserved": 26.456,
+      "method": "HEAD",
+      "url": "https://digitecme.com/ar/brands/mercedes-benz-service-dubai/mechanical-repair/?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank=",
+      "scheme": "https",
+      "host": "digitecme.com",
+      "path": "/ar/brands/mercedes-benz-service-dubai/mechanical-repair/",
+      "trailingSlash": true,
+      "queryClass": "repeated-encoded-blank",
+      "rawQuery": "?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank=",
+      "status": 308,
+      "location": "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank=",
+      "cfRay": "a507b3baec4c7167-HKG",
+      "cfRayColoSuffix": "HKG",
+      "cfCacheStatus": null,
+      "age": null,
+      "cacheControl": null,
+      "responseDate": "Mon, 26 Oct 2026 07:21:04 GMT",
+      "chainResponses": 2,
+      "finalStatus": 200,
+      "finalUrl": "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank=",
+      "finalCanonical": [],
+      "loop": false,
+      "failedAssertions": [],
+      "directRedirectPass": true,
+      "getFinalCanonicalPass": null
+    },
+    {
+      "key": "source-ar-mechanical-repair-18",
+      "requestStartedAtUtc": "2026-10-26T07:21:01.456Z",
+      "secondsAfterR4EnabledFirstObserved": 26.714,
+      "method": "GET",
+      "url": "http://digitecme.com/ar/brands/mercedes-benz-service-dubai/mechanical-repair",
+      "scheme": "http",
+      "host": "digitecme.com",
+      "path": "/ar/brands/mercedes-benz-service-dubai/mechanical-repair",
+      "trailingSlash": false,
+      "queryClass": "empty",
+      "rawQuery": "",
+      "status": 308,
+      "location": "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai",
+      "cfRay": "a507b3bd4ea8b940-CDG",
+      "cfRayColoSuffix": "CDG",
+      "cfCacheStatus": null,
+      "age": null,
+      "cacheControl": null,
+      "responseDate": "Mon, 26 Oct 2026 07:21:04 GMT",
+      "chainResponses": 2,
+      "finalStatus": 200,
+      "finalUrl": "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai",
+      "finalCanonical": [
+        "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai"
+      ],
+      "loop": false,
+      "failedAssertions": [],
+      "directRedirectPass": true,
+      "getFinalCanonicalPass": true
+    },
+    {
+      "key": "source-ar-mechanical-repair-19",
+      "requestStartedAtUtc": "2026-10-26T07:21:01.612Z",
+      "secondsAfterR4EnabledFirstObserved": 26.87,
+      "method": "GET",
+      "url": "http://digitecme.com/ar/brands/mercedes-benz-service-dubai/mechanical-repair?utm_source=mercedes_phase_2&gclid=phase2-example",
+      "scheme": "http",
+      "host": "digitecme.com",
+      "path": "/ar/brands/mercedes-benz-service-dubai/mechanical-repair",
+      "trailingSlash": false,
+      "queryClass": "campaign",
+      "rawQuery": "?utm_source=mercedes_phase_2&gclid=phase2-example",
+      "status": 308,
+      "location": "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai?utm_source=mercedes_phase_2&gclid=phase2-example",
+      "cfRay": "a507b3be48ec85be-HKG",
+      "cfRayColoSuffix": "HKG",
+      "cfCacheStatus": null,
+      "age": null,
+      "cacheControl": null,
+      "responseDate": "Mon, 26 Oct 2026 07:21:05 GMT",
+      "chainResponses": 2,
+      "finalStatus": 200,
+      "finalUrl": "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai?utm_source=mercedes_phase_2&gclid=phase2-example",
+      "finalCanonical": [
+        "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai"
+      ],
+      "loop": false,
+      "failedAssertions": [],
+      "directRedirectPass": true,
+      "getFinalCanonicalPass": true
+    },
+    {
+      "key": "source-ar-mechanical-repair-20",
+      "requestStartedAtUtc": "2026-10-26T07:21:01.769Z",
+      "secondsAfterR4EnabledFirstObserved": 27.027,
+      "method": "GET",
+      "url": "http://digitecme.com/ar/brands/mercedes-benz-service-dubai/mechanical-repair?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank=",
+      "scheme": "http",
+      "host": "digitecme.com",
+      "path": "/ar/brands/mercedes-benz-service-dubai/mechanical-repair",
+      "trailingSlash": false,
+      "queryClass": "repeated-encoded-blank",
+      "rawQuery": "?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank=",
+      "status": 308,
+      "location": "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank=",
+      "cfRay": "a507b3be990fb940-CDG",
+      "cfRayColoSuffix": "CDG",
+      "cfCacheStatus": null,
+      "age": null,
+      "cacheControl": null,
+      "responseDate": "Mon, 26 Oct 2026 07:21:05 GMT",
+      "chainResponses": 2,
+      "finalStatus": 200,
+      "finalUrl": "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank=",
+      "finalCanonical": [
+        "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai"
+      ],
+      "loop": false,
+      "failedAssertions": [],
+      "directRedirectPass": true,
+      "getFinalCanonicalPass": true
+    },
+    {
+      "key": "source-ar-mechanical-repair-21",
+      "requestStartedAtUtc": "2026-10-26T07:21:01.783Z",
+      "secondsAfterR4EnabledFirstObserved": 27.041,
+      "method": "HEAD",
+      "url": "http://digitecme.com/ar/brands/mercedes-benz-service-dubai/mechanical-repair",
+      "scheme": "http",
+      "host": "digitecme.com",
+      "path": "/ar/brands/mercedes-benz-service-dubai/mechanical-repair",
+      "trailingSlash": false,
+      "queryClass": "empty",
+      "rawQuery": "",
+      "status": 308,
+      "location": "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai",
+      "cfRay": "a507b3bf3a9e2a20-CDG",
+      "cfRayColoSuffix": "CDG",
+      "cfCacheStatus": null,
+      "age": null,
+      "cacheControl": null,
+      "responseDate": "Mon, 26 Oct 2026 07:21:05 GMT",
+      "chainResponses": 2,
+      "finalStatus": 200,
+      "finalUrl": "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai",
+      "finalCanonical": [],
+      "loop": false,
+      "failedAssertions": [],
+      "directRedirectPass": true,
+      "getFinalCanonicalPass": null
+    },
+    {
+      "key": "source-ar-mechanical-repair-22",
+      "requestStartedAtUtc": "2026-10-26T07:21:01.888Z",
+      "secondsAfterR4EnabledFirstObserved": 27.146,
+      "method": "HEAD",
+      "url": "http://digitecme.com/ar/brands/mercedes-benz-service-dubai/mechanical-repair?utm_source=mercedes_phase_2&gclid=phase2-example",
+      "scheme": "http",
+      "host": "digitecme.com",
+      "path": "/ar/brands/mercedes-benz-service-dubai/mechanical-repair",
+      "trailingSlash": false,
+      "queryClass": "campaign",
+      "rawQuery": "?utm_source=mercedes_phase_2&gclid=phase2-example",
+      "status": 308,
+      "location": "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai?utm_source=mercedes_phase_2&gclid=phase2-example",
+      "cfRay": "a507b3bf49a785be-HKG",
+      "cfRayColoSuffix": "HKG",
+      "cfCacheStatus": null,
+      "age": null,
+      "cacheControl": null,
+      "responseDate": "Mon, 26 Oct 2026 07:21:05 GMT",
+      "chainResponses": 2,
+      "finalStatus": 200,
+      "finalUrl": "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai?utm_source=mercedes_phase_2&gclid=phase2-example",
+      "finalCanonical": [],
+      "loop": false,
+      "failedAssertions": [],
+      "directRedirectPass": true,
+      "getFinalCanonicalPass": null
+    },
+    {
+      "key": "source-ar-mechanical-repair-23",
+      "requestStartedAtUtc": "2026-10-26T07:21:02.103Z",
+      "secondsAfterR4EnabledFirstObserved": 27.361,
+      "method": "HEAD",
+      "url": "http://digitecme.com/ar/brands/mercedes-benz-service-dubai/mechanical-repair?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank=",
+      "scheme": "http",
+      "host": "digitecme.com",
+      "path": "/ar/brands/mercedes-benz-service-dubai/mechanical-repair",
+      "trailingSlash": false,
+      "queryClass": "repeated-encoded-blank",
+      "rawQuery": "?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank=",
+      "status": 308,
+      "location": "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank=",
+      "cfRay": "a507b3c0ad46b940-CDG",
+      "cfRayColoSuffix": "CDG",
+      "cfCacheStatus": null,
+      "age": null,
+      "cacheControl": null,
+      "responseDate": "Mon, 26 Oct 2026 07:21:05 GMT",
+      "chainResponses": 2,
+      "finalStatus": 200,
+      "finalUrl": "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank=",
+      "finalCanonical": [],
+      "loop": false,
+      "failedAssertions": [],
+      "directRedirectPass": true,
+      "getFinalCanonicalPass": null
+    },
+    {
+      "key": "source-ar-mechanical-repair-24",
+      "requestStartedAtUtc": "2026-10-26T07:21:02.331Z",
+      "secondsAfterR4EnabledFirstObserved": 27.589,
+      "method": "GET",
+      "url": "http://digitecme.com/ar/brands/mercedes-benz-service-dubai/mechanical-repair/",
+      "scheme": "http",
+      "host": "digitecme.com",
+      "path": "/ar/brands/mercedes-benz-service-dubai/mechanical-repair/",
+      "trailingSlash": true,
+      "queryClass": "empty",
+      "rawQuery": "",
+      "status": 308,
+      "location": "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai",
+      "cfRay": "a507b3c2a92be415-FRA",
+      "cfRayColoSuffix": "FRA",
+      "cfCacheStatus": null,
+      "age": null,
+      "cacheControl": null,
+      "responseDate": "Mon, 26 Oct 2026 07:21:05 GMT",
+      "chainResponses": 2,
+      "finalStatus": 200,
+      "finalUrl": "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai",
+      "finalCanonical": [
+        "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai"
+      ],
+      "loop": false,
+      "failedAssertions": [],
+      "directRedirectPass": true,
+      "getFinalCanonicalPass": true
+    },
+    {
+      "key": "source-ar-mechanical-repair-25",
+      "requestStartedAtUtc": "2026-10-26T07:21:02.428Z",
+      "secondsAfterR4EnabledFirstObserved": 27.686,
+      "method": "GET",
+      "url": "http://digitecme.com/ar/brands/mercedes-benz-service-dubai/mechanical-repair/?utm_source=mercedes_phase_2&gclid=phase2-example",
+      "scheme": "http",
+      "host": "digitecme.com",
+      "path": "/ar/brands/mercedes-benz-service-dubai/mechanical-repair/",
+      "trailingSlash": true,
+      "queryClass": "campaign",
+      "rawQuery": "?utm_source=mercedes_phase_2&gclid=phase2-example",
+      "status": 308,
+      "location": "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai?utm_source=mercedes_phase_2&gclid=phase2-example",
+      "cfRay": "a507b3c36c8ed34d-FRA",
+      "cfRayColoSuffix": "FRA",
+      "cfCacheStatus": null,
+      "age": null,
+      "cacheControl": null,
+      "responseDate": "Mon, 26 Oct 2026 07:21:05 GMT",
+      "chainResponses": 2,
+      "finalStatus": 200,
+      "finalUrl": "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai?utm_source=mercedes_phase_2&gclid=phase2-example",
+      "finalCanonical": [
+        "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai"
+      ],
+      "loop": false,
+      "failedAssertions": [],
+      "directRedirectPass": true,
+      "getFinalCanonicalPass": true
+    },
+    {
+      "key": "source-ar-mechanical-repair-26",
+      "requestStartedAtUtc": "2026-10-26T07:21:02.441Z",
+      "secondsAfterR4EnabledFirstObserved": 27.699,
+      "method": "GET",
+      "url": "http://digitecme.com/ar/brands/mercedes-benz-service-dubai/mechanical-repair/?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank=",
+      "scheme": "http",
+      "host": "digitecme.com",
+      "path": "/ar/brands/mercedes-benz-service-dubai/mechanical-repair/",
+      "trailingSlash": true,
+      "queryClass": "repeated-encoded-blank",
+      "rawQuery": "?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank=",
+      "status": 308,
+      "location": "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank=",
+      "cfRay": "a507b3c36e0dad51-CDG",
+      "cfRayColoSuffix": "CDG",
+      "cfCacheStatus": null,
+      "age": null,
+      "cacheControl": null,
+      "responseDate": "Mon, 26 Oct 2026 07:21:05 GMT",
+      "chainResponses": 2,
+      "finalStatus": 200,
+      "finalUrl": "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank=",
+      "finalCanonical": [
+        "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai"
+      ],
+      "loop": false,
+      "failedAssertions": [],
+      "directRedirectPass": true,
+      "getFinalCanonicalPass": true
+    },
+    {
+      "key": "source-ar-mechanical-repair-27",
+      "requestStartedAtUtc": "2026-10-26T07:21:02.517Z",
+      "secondsAfterR4EnabledFirstObserved": 27.775,
+      "method": "HEAD",
+      "url": "http://digitecme.com/ar/brands/mercedes-benz-service-dubai/mechanical-repair/",
+      "scheme": "http",
+      "host": "digitecme.com",
+      "path": "/ar/brands/mercedes-benz-service-dubai/mechanical-repair/",
+      "trailingSlash": true,
+      "queryClass": "empty",
+      "rawQuery": "",
+      "status": 308,
+      "location": "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai",
+      "cfRay": "a507b3c4293d84ba-HKG",
+      "cfRayColoSuffix": "HKG",
+      "cfCacheStatus": null,
+      "age": null,
+      "cacheControl": null,
+      "responseDate": "Mon, 26 Oct 2026 07:21:05 GMT",
+      "chainResponses": 2,
+      "finalStatus": 200,
+      "finalUrl": "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai",
+      "finalCanonical": [],
+      "loop": false,
+      "failedAssertions": [],
+      "directRedirectPass": true,
+      "getFinalCanonicalPass": null
+    },
+    {
+      "key": "source-ar-mechanical-repair-28",
+      "requestStartedAtUtc": "2026-10-26T07:21:02.901Z",
+      "secondsAfterR4EnabledFirstObserved": 28.159,
+      "method": "HEAD",
+      "url": "http://digitecme.com/ar/brands/mercedes-benz-service-dubai/mechanical-repair/?utm_source=mercedes_phase_2&gclid=phase2-example",
+      "scheme": "http",
+      "host": "digitecme.com",
+      "path": "/ar/brands/mercedes-benz-service-dubai/mechanical-repair/",
+      "trailingSlash": true,
+      "queryClass": "campaign",
+      "rawQuery": "?utm_source=mercedes_phase_2&gclid=phase2-example",
+      "status": 308,
+      "location": "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai?utm_source=mercedes_phase_2&gclid=phase2-example",
+      "cfRay": "a507b3c59c65e415-FRA",
+      "cfRayColoSuffix": "FRA",
+      "cfCacheStatus": null,
+      "age": null,
+      "cacheControl": null,
+      "responseDate": "Mon, 26 Oct 2026 07:21:06 GMT",
+      "chainResponses": 2,
+      "finalStatus": 200,
+      "finalUrl": "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai?utm_source=mercedes_phase_2&gclid=phase2-example",
+      "finalCanonical": [],
+      "loop": false,
+      "failedAssertions": [],
+      "directRedirectPass": true,
+      "getFinalCanonicalPass": null
+    },
+    {
+      "key": "source-ar-mechanical-repair-29",
+      "requestStartedAtUtc": "2026-10-26T07:21:03.076Z",
+      "secondsAfterR4EnabledFirstObserved": 28.334,
+      "method": "HEAD",
+      "url": "http://digitecme.com/ar/brands/mercedes-benz-service-dubai/mechanical-repair/?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank=",
+      "scheme": "http",
+      "host": "digitecme.com",
+      "path": "/ar/brands/mercedes-benz-service-dubai/mechanical-repair/",
+      "trailingSlash": true,
+      "queryClass": "repeated-encoded-blank",
+      "rawQuery": "?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank=",
+      "status": 308,
+      "location": "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank=",
+      "cfRay": "a507b3c76dce10a6-HKG",
+      "cfRayColoSuffix": "HKG",
+      "cfCacheStatus": null,
+      "age": null,
+      "cacheControl": null,
+      "responseDate": "Mon, 26 Oct 2026 07:21:06 GMT",
+      "chainResponses": 2,
+      "finalStatus": 200,
+      "finalUrl": "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank=",
+      "finalCanonical": [],
+      "loop": false,
+      "failedAssertions": [],
+      "directRedirectPass": true,
+      "getFinalCanonicalPass": null
+    },
+    {
+      "key": "source-ar-mechanical-repair-30",
+      "requestStartedAtUtc": "2026-10-26T07:21:03.110Z",
+      "secondsAfterR4EnabledFirstObserved": 28.368,
+      "method": "GET",
+      "url": "https://www.digitecme.com/ar/brands/mercedes-benz-service-dubai/mechanical-repair",
+      "scheme": "https",
+      "host": "www.digitecme.com",
+      "path": "/ar/brands/mercedes-benz-service-dubai/mechanical-repair",
+      "trailingSlash": false,
+      "queryClass": "empty",
+      "rawQuery": "",
+      "status": 308,
+      "location": "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai",
+      "cfRay": "a507b3c8f9872907-HKG",
+      "cfRayColoSuffix": "HKG",
+      "cfCacheStatus": null,
+      "age": null,
+      "cacheControl": null,
+      "responseDate": "Mon, 26 Oct 2026 07:21:06 GMT",
+      "chainResponses": 2,
+      "finalStatus": 200,
+      "finalUrl": "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai",
+      "finalCanonical": [
+        "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai"
+      ],
+      "loop": false,
+      "failedAssertions": [],
+      "directRedirectPass": true,
+      "getFinalCanonicalPass": true
+    },
+    {
+      "key": "source-ar-mechanical-repair-31",
+      "requestStartedAtUtc": "2026-10-26T07:21:03.236Z",
+      "secondsAfterR4EnabledFirstObserved": 28.494,
+      "method": "GET",
+      "url": "https://www.digitecme.com/ar/brands/mercedes-benz-service-dubai/mechanical-repair?utm_source=mercedes_phase_2&gclid=phase2-example",
+      "scheme": "https",
+      "host": "www.digitecme.com",
+      "path": "/ar/brands/mercedes-benz-service-dubai/mechanical-repair",
+      "trailingSlash": false,
+      "queryClass": "campaign",
+      "rawQuery": "?utm_source=mercedes_phase_2&gclid=phase2-example",
+      "status": 308,
+      "location": "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai?utm_source=mercedes_phase_2&gclid=phase2-example",
+      "cfRay": "a507b3c94cc7dbea-FRA",
+      "cfRayColoSuffix": "FRA",
+      "cfCacheStatus": null,
+      "age": null,
+      "cacheControl": null,
+      "responseDate": "Mon, 26 Oct 2026 07:21:06 GMT",
+      "chainResponses": 2,
+      "finalStatus": 200,
+      "finalUrl": "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai?utm_source=mercedes_phase_2&gclid=phase2-example",
+      "finalCanonical": [
+        "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai"
+      ],
+      "loop": false,
+      "failedAssertions": [],
+      "directRedirectPass": true,
+      "getFinalCanonicalPass": true
+    },
+    {
+      "key": "source-ar-mechanical-repair-32",
+      "requestStartedAtUtc": "2026-10-26T07:21:03.250Z",
+      "secondsAfterR4EnabledFirstObserved": 28.508,
+      "method": "GET",
+      "url": "https://www.digitecme.com/ar/brands/mercedes-benz-service-dubai/mechanical-repair?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank=",
+      "scheme": "https",
+      "host": "www.digitecme.com",
+      "path": "/ar/brands/mercedes-benz-service-dubai/mechanical-repair",
+      "trailingSlash": false,
+      "queryClass": "repeated-encoded-blank",
+      "rawQuery": "?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank=",
+      "status": 308,
+      "location": "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank=",
+      "cfRay": "a507b3c95e699e6d-CDG",
+      "cfRayColoSuffix": "CDG",
+      "cfCacheStatus": null,
+      "age": null,
+      "cacheControl": null,
+      "responseDate": "Mon, 26 Oct 2026 07:21:06 GMT",
+      "chainResponses": 2,
+      "finalStatus": 200,
+      "finalUrl": "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank=",
+      "finalCanonical": [
+        "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai"
+      ],
+      "loop": false,
+      "failedAssertions": [],
+      "directRedirectPass": true,
+      "getFinalCanonicalPass": true
+    },
+    {
+      "key": "source-ar-mechanical-repair-33",
+      "requestStartedAtUtc": "2026-10-26T07:21:03.563Z",
+      "secondsAfterR4EnabledFirstObserved": 28.821,
+      "method": "HEAD",
+      "url": "https://www.digitecme.com/ar/brands/mercedes-benz-service-dubai/mechanical-repair",
+      "scheme": "https",
+      "host": "www.digitecme.com",
+      "path": "/ar/brands/mercedes-benz-service-dubai/mechanical-repair",
+      "trailingSlash": false,
+      "queryClass": "empty",
+      "rawQuery": "",
+      "status": 308,
+      "location": "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai",
+      "cfRay": "a507b3cb1f186eba-CDG",
+      "cfRayColoSuffix": "CDG",
+      "cfCacheStatus": null,
+      "age": null,
+      "cacheControl": null,
+      "responseDate": "Mon, 26 Oct 2026 07:21:07 GMT",
+      "chainResponses": 2,
+      "finalStatus": 200,
+      "finalUrl": "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai",
+      "finalCanonical": [],
+      "loop": false,
+      "failedAssertions": [],
+      "directRedirectPass": true,
+      "getFinalCanonicalPass": null
+    },
+    {
+      "key": "source-ar-mechanical-repair-34",
+      "requestStartedAtUtc": "2026-10-26T07:21:03.841Z",
+      "secondsAfterR4EnabledFirstObserved": 29.099,
+      "method": "HEAD",
+      "url": "https://www.digitecme.com/ar/brands/mercedes-benz-service-dubai/mechanical-repair?utm_source=mercedes_phase_2&gclid=phase2-example",
+      "scheme": "https",
+      "host": "www.digitecme.com",
+      "path": "/ar/brands/mercedes-benz-service-dubai/mechanical-repair",
+      "trailingSlash": false,
+      "queryClass": "campaign",
+      "rawQuery": "?utm_source=mercedes_phase_2&gclid=phase2-example",
+      "status": 308,
+      "location": "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai?utm_source=mercedes_phase_2&gclid=phase2-example",
+      "cfRay": "a507b3cb9b2c2907-HKG",
+      "cfRayColoSuffix": "HKG",
+      "cfCacheStatus": null,
+      "age": null,
+      "cacheControl": null,
+      "responseDate": "Mon, 26 Oct 2026 07:21:07 GMT",
+      "chainResponses": 2,
+      "finalStatus": 200,
+      "finalUrl": "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai?utm_source=mercedes_phase_2&gclid=phase2-example",
+      "finalCanonical": [],
+      "loop": false,
+      "failedAssertions": [],
+      "directRedirectPass": true,
+      "getFinalCanonicalPass": null
+    },
+    {
+      "key": "source-ar-mechanical-repair-35",
+      "requestStartedAtUtc": "2026-10-26T07:21:04.030Z",
+      "secondsAfterR4EnabledFirstObserved": 29.288,
+      "method": "HEAD",
+      "url": "https://www.digitecme.com/ar/brands/mercedes-benz-service-dubai/mechanical-repair?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank=",
+      "scheme": "https",
+      "host": "www.digitecme.com",
+      "path": "/ar/brands/mercedes-benz-service-dubai/mechanical-repair",
+      "trailingSlash": false,
+      "queryClass": "repeated-encoded-blank",
+      "rawQuery": "?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank=",
+      "status": 308,
+      "location": "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank=",
+      "cfRay": "a507b3ce1ec261ec-HKG",
+      "cfRayColoSuffix": "HKG",
+      "cfCacheStatus": null,
+      "age": null,
+      "cacheControl": null,
+      "responseDate": "Mon, 26 Oct 2026 07:21:07 GMT",
+      "chainResponses": 2,
+      "finalStatus": 200,
+      "finalUrl": "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank=",
+      "finalCanonical": [],
+      "loop": false,
+      "failedAssertions": [],
+      "directRedirectPass": true,
+      "getFinalCanonicalPass": null
+    },
+    {
+      "key": "source-ar-mechanical-repair-36",
+      "requestStartedAtUtc": "2026-10-26T07:21:04.068Z",
+      "secondsAfterR4EnabledFirstObserved": 29.326,
+      "method": "GET",
+      "url": "https://www.digitecme.com/ar/brands/mercedes-benz-service-dubai/mechanical-repair/",
+      "scheme": "https",
+      "host": "www.digitecme.com",
+      "path": "/ar/brands/mercedes-benz-service-dubai/mechanical-repair/",
+      "trailingSlash": true,
+      "queryClass": "empty",
+      "rawQuery": "",
+      "status": 308,
+      "location": "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai",
+      "cfRay": "a507b3ccf85fdbea-FRA",
+      "cfRayColoSuffix": "FRA",
+      "cfCacheStatus": null,
+      "age": null,
+      "cacheControl": null,
+      "responseDate": "Mon, 26 Oct 2026 07:21:07 GMT",
+      "chainResponses": 2,
+      "finalStatus": 200,
+      "finalUrl": "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai",
+      "finalCanonical": [
+        "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai"
+      ],
+      "loop": false,
+      "failedAssertions": [],
+      "directRedirectPass": true,
+      "getFinalCanonicalPass": true
+    },
+    {
+      "key": "source-ar-mechanical-repair-37",
+      "requestStartedAtUtc": "2026-10-26T07:21:04.109Z",
+      "secondsAfterR4EnabledFirstObserved": 29.367,
+      "method": "GET",
+      "url": "https://www.digitecme.com/ar/brands/mercedes-benz-service-dubai/mechanical-repair/?utm_source=mercedes_phase_2&gclid=phase2-example",
+      "scheme": "https",
+      "host": "www.digitecme.com",
+      "path": "/ar/brands/mercedes-benz-service-dubai/mechanical-repair/",
+      "trailingSlash": true,
+      "queryClass": "campaign",
+      "rawQuery": "?utm_source=mercedes_phase_2&gclid=phase2-example",
+      "status": 308,
+      "location": "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai?utm_source=mercedes_phase_2&gclid=phase2-example",
+      "cfRay": "a507b3cd38d99e6d-CDG",
+      "cfRayColoSuffix": "CDG",
+      "cfCacheStatus": null,
+      "age": null,
+      "cacheControl": null,
+      "responseDate": "Mon, 26 Oct 2026 07:21:07 GMT",
+      "chainResponses": 2,
+      "finalStatus": 200,
+      "finalUrl": "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai?utm_source=mercedes_phase_2&gclid=phase2-example",
+      "finalCanonical": [
+        "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai"
+      ],
+      "loop": false,
+      "failedAssertions": [],
+      "directRedirectPass": true,
+      "getFinalCanonicalPass": true
+    },
+    {
+      "key": "source-ar-mechanical-repair-38",
+      "requestStartedAtUtc": "2026-10-26T07:21:04.447Z",
+      "secondsAfterR4EnabledFirstObserved": 29.705,
+      "method": "GET",
+      "url": "https://www.digitecme.com/ar/brands/mercedes-benz-service-dubai/mechanical-repair/?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank=",
+      "scheme": "https",
+      "host": "www.digitecme.com",
+      "path": "/ar/brands/mercedes-benz-service-dubai/mechanical-repair/",
+      "trailingSlash": true,
+      "queryClass": "repeated-encoded-blank",
+      "rawQuery": "?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank=",
+      "status": 308,
+      "location": "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank=",
+      "cfRay": "a507b3d0bb7fd007-HKG",
+      "cfRayColoSuffix": "HKG",
+      "cfCacheStatus": null,
+      "age": null,
+      "cacheControl": null,
+      "responseDate": "Mon, 26 Oct 2026 07:21:07 GMT",
+      "chainResponses": 2,
+      "finalStatus": 200,
+      "finalUrl": "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank=",
+      "finalCanonical": [
+        "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai"
+      ],
+      "loop": false,
+      "failedAssertions": [],
+      "directRedirectPass": true,
+      "getFinalCanonicalPass": true
+    },
+    {
+      "key": "source-ar-mechanical-repair-39",
+      "requestStartedAtUtc": "2026-10-26T07:21:04.454Z",
+      "secondsAfterR4EnabledFirstObserved": 29.712,
+      "method": "HEAD",
+      "url": "https://www.digitecme.com/ar/brands/mercedes-benz-service-dubai/mechanical-repair/",
+      "scheme": "https",
+      "host": "www.digitecme.com",
+      "path": "/ar/brands/mercedes-benz-service-dubai/mechanical-repair/",
+      "trailingSlash": true,
+      "queryClass": "empty",
+      "rawQuery": "",
+      "status": 308,
+      "location": "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai",
+      "cfRay": "a507b3cf6833dbea-FRA",
+      "cfRayColoSuffix": "FRA",
+      "cfCacheStatus": null,
+      "age": null,
+      "cacheControl": null,
+      "responseDate": "Mon, 26 Oct 2026 07:21:07 GMT",
+      "chainResponses": 2,
+      "finalStatus": 200,
+      "finalUrl": "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai",
+      "finalCanonical": [],
+      "loop": false,
+      "failedAssertions": [],
+      "directRedirectPass": true,
+      "getFinalCanonicalPass": null
+    },
+    {
+      "key": "source-ar-mechanical-repair-40",
+      "requestStartedAtUtc": "2026-10-26T07:21:04.475Z",
+      "secondsAfterR4EnabledFirstObserved": 29.733,
+      "method": "HEAD",
+      "url": "https://www.digitecme.com/ar/brands/mercedes-benz-service-dubai/mechanical-repair/?utm_source=mercedes_phase_2&gclid=phase2-example",
+      "scheme": "https",
+      "host": "www.digitecme.com",
+      "path": "/ar/brands/mercedes-benz-service-dubai/mechanical-repair/",
+      "trailingSlash": true,
+      "queryClass": "campaign",
+      "rawQuery": "?utm_source=mercedes_phase_2&gclid=phase2-example",
+      "status": 308,
+      "location": "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai?utm_source=mercedes_phase_2&gclid=phase2-example",
+      "cfRay": "a507b3cf7a219e6d-CDG",
+      "cfRayColoSuffix": "CDG",
+      "cfCacheStatus": null,
+      "age": null,
+      "cacheControl": null,
+      "responseDate": "Mon, 26 Oct 2026 07:21:07 GMT",
+      "chainResponses": 2,
+      "finalStatus": 200,
+      "finalUrl": "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai?utm_source=mercedes_phase_2&gclid=phase2-example",
+      "finalCanonical": [],
+      "loop": false,
+      "failedAssertions": [],
+      "directRedirectPass": true,
+      "getFinalCanonicalPass": null
+    },
+    {
+      "key": "source-ar-mechanical-repair-41",
+      "requestStartedAtUtc": "2026-10-26T07:21:04.779Z",
+      "secondsAfterR4EnabledFirstObserved": 30.037,
+      "method": "HEAD",
+      "url": "https://www.digitecme.com/ar/brands/mercedes-benz-service-dubai/mechanical-repair/?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank=",
+      "scheme": "https",
+      "host": "www.digitecme.com",
+      "path": "/ar/brands/mercedes-benz-service-dubai/mechanical-repair/",
+      "trailingSlash": true,
+      "queryClass": "repeated-encoded-blank",
+      "rawQuery": "?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank=",
+      "status": 308,
+      "location": "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank=",
+      "cfRay": "a507b3d2df7fdda0-HKG",
+      "cfRayColoSuffix": "HKG",
+      "cfCacheStatus": null,
+      "age": null,
+      "cacheControl": null,
+      "responseDate": "Mon, 26 Oct 2026 07:21:08 GMT",
+      "chainResponses": 2,
+      "finalStatus": 200,
+      "finalUrl": "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank=",
+      "finalCanonical": [],
+      "loop": false,
+      "failedAssertions": [],
+      "directRedirectPass": true,
+      "getFinalCanonicalPass": null
+    },
+    {
+      "key": "source-ar-mechanical-repair-42",
+      "requestStartedAtUtc": "2026-10-26T07:21:04.809Z",
+      "secondsAfterR4EnabledFirstObserved": 30.067,
+      "method": "GET",
+      "url": "http://www.digitecme.com/ar/brands/mercedes-benz-service-dubai/mechanical-repair",
+      "scheme": "http",
+      "host": "www.digitecme.com",
+      "path": "/ar/brands/mercedes-benz-service-dubai/mechanical-repair",
+      "trailingSlash": false,
+      "queryClass": "empty",
+      "rawQuery": "",
+      "status": 308,
+      "location": "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai",
+      "cfRay": "a507b3d24f46a413-AMS",
+      "cfRayColoSuffix": "AMS",
+      "cfCacheStatus": null,
+      "age": null,
+      "cacheControl": null,
+      "responseDate": "Mon, 26 Oct 2026 07:21:08 GMT",
+      "chainResponses": 2,
+      "finalStatus": 200,
+      "finalUrl": "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai",
+      "finalCanonical": [
+        "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai"
+      ],
+      "loop": false,
+      "failedAssertions": [],
+      "directRedirectPass": true,
+      "getFinalCanonicalPass": true
+    },
+    {
+      "key": "source-ar-mechanical-repair-43",
+      "requestStartedAtUtc": "2026-10-26T07:21:04.881Z",
+      "secondsAfterR4EnabledFirstObserved": 30.139,
+      "method": "GET",
+      "url": "http://www.digitecme.com/ar/brands/mercedes-benz-service-dubai/mechanical-repair?utm_source=mercedes_phase_2&gclid=phase2-example",
+      "scheme": "http",
+      "host": "www.digitecme.com",
+      "path": "/ar/brands/mercedes-benz-service-dubai/mechanical-repair",
+      "trailingSlash": false,
+      "queryClass": "campaign",
+      "rawQuery": "?utm_source=mercedes_phase_2&gclid=phase2-example",
+      "status": 308,
+      "location": "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai?utm_source=mercedes_phase_2&gclid=phase2-example",
+      "cfRay": "a507b3d2b8c3fe9e-AMS",
+      "cfRayColoSuffix": "AMS",
+      "cfCacheStatus": null,
+      "age": null,
+      "cacheControl": null,
+      "responseDate": "Mon, 26 Oct 2026 07:21:08 GMT",
+      "chainResponses": 2,
+      "finalStatus": 200,
+      "finalUrl": "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai?utm_source=mercedes_phase_2&gclid=phase2-example",
+      "finalCanonical": [
+        "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai"
+      ],
+      "loop": false,
+      "failedAssertions": [],
+      "directRedirectPass": true,
+      "getFinalCanonicalPass": true
+    },
+    {
+      "key": "source-ar-mechanical-repair-44",
+      "requestStartedAtUtc": "2026-10-26T07:21:05.226Z",
+      "secondsAfterR4EnabledFirstObserved": 30.484,
+      "method": "GET",
+      "url": "http://www.digitecme.com/ar/brands/mercedes-benz-service-dubai/mechanical-repair?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank=",
+      "scheme": "http",
+      "host": "www.digitecme.com",
+      "path": "/ar/brands/mercedes-benz-service-dubai/mechanical-repair",
+      "trailingSlash": false,
+      "queryClass": "repeated-encoded-blank",
+      "rawQuery": "?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank=",
+      "status": 308,
+      "location": "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank=",
+      "cfRay": "a507b3d43a60a413-AMS",
+      "cfRayColoSuffix": "AMS",
+      "cfCacheStatus": null,
+      "age": null,
+      "cacheControl": null,
+      "responseDate": "Mon, 26 Oct 2026 07:21:08 GMT",
+      "chainResponses": 2,
+      "finalStatus": 200,
+      "finalUrl": "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank=",
+      "finalCanonical": [
+        "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai"
+      ],
+      "loop": false,
+      "failedAssertions": [],
+      "directRedirectPass": true,
+      "getFinalCanonicalPass": true
+    },
+    {
+      "key": "source-ar-mechanical-repair-45",
+      "requestStartedAtUtc": "2026-10-26T07:21:05.462Z",
+      "secondsAfterR4EnabledFirstObserved": 30.72,
+      "method": "HEAD",
+      "url": "http://www.digitecme.com/ar/brands/mercedes-benz-service-dubai/mechanical-repair",
+      "scheme": "http",
+      "host": "www.digitecme.com",
+      "path": "/ar/brands/mercedes-benz-service-dubai/mechanical-repair",
+      "trailingSlash": false,
+      "queryClass": "empty",
+      "rawQuery": "",
+      "status": 308,
+      "location": "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai",
+      "cfRay": "a507b3d5aaa6a413-AMS",
+      "cfRayColoSuffix": "AMS",
+      "cfCacheStatus": null,
+      "age": null,
+      "cacheControl": null,
+      "responseDate": "Mon, 26 Oct 2026 07:21:08 GMT",
+      "chainResponses": 2,
+      "finalStatus": 200,
+      "finalUrl": "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai",
+      "finalCanonical": [],
+      "loop": false,
+      "failedAssertions": [],
+      "directRedirectPass": true,
+      "getFinalCanonicalPass": null
+    },
+    {
+      "key": "source-ar-mechanical-repair-46",
+      "requestStartedAtUtc": "2026-10-26T07:21:05.565Z",
+      "secondsAfterR4EnabledFirstObserved": 30.823,
+      "method": "HEAD",
+      "url": "http://www.digitecme.com/ar/brands/mercedes-benz-service-dubai/mechanical-repair?utm_source=mercedes_phase_2&gclid=phase2-example",
+      "scheme": "http",
+      "host": "www.digitecme.com",
+      "path": "/ar/brands/mercedes-benz-service-dubai/mechanical-repair",
+      "trailingSlash": false,
+      "queryClass": "campaign",
+      "rawQuery": "?utm_source=mercedes_phase_2&gclid=phase2-example",
+      "status": 308,
+      "location": "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai?utm_source=mercedes_phase_2&gclid=phase2-example",
+      "cfRay": "a507b3d65ce3fe9e-AMS",
+      "cfRayColoSuffix": "AMS",
+      "cfCacheStatus": null,
+      "age": null,
+      "cacheControl": null,
+      "responseDate": "Mon, 26 Oct 2026 07:21:08 GMT",
+      "chainResponses": 2,
+      "finalStatus": 200,
+      "finalUrl": "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai?utm_source=mercedes_phase_2&gclid=phase2-example",
+      "finalCanonical": [],
+      "loop": false,
+      "failedAssertions": [],
+      "directRedirectPass": true,
+      "getFinalCanonicalPass": null
+    },
+    {
+      "key": "source-ar-mechanical-repair-47",
+      "requestStartedAtUtc": "2026-10-26T07:21:05.594Z",
+      "secondsAfterR4EnabledFirstObserved": 30.852,
+      "method": "HEAD",
+      "url": "http://www.digitecme.com/ar/brands/mercedes-benz-service-dubai/mechanical-repair?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank=",
+      "scheme": "http",
+      "host": "www.digitecme.com",
+      "path": "/ar/brands/mercedes-benz-service-dubai/mechanical-repair",
+      "trailingSlash": false,
+      "queryClass": "repeated-encoded-blank",
+      "rawQuery": "?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank=",
+      "status": 308,
+      "location": "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank=",
+      "cfRay": "a507b3d73a9c3660-FRA",
+      "cfRayColoSuffix": "FRA",
+      "cfCacheStatus": null,
+      "age": null,
+      "cacheControl": null,
+      "responseDate": "Mon, 26 Oct 2026 07:21:09 GMT",
+      "chainResponses": 2,
+      "finalStatus": 200,
+      "finalUrl": "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank=",
+      "finalCanonical": [],
+      "loop": false,
+      "failedAssertions": [],
+      "directRedirectPass": true,
+      "getFinalCanonicalPass": null
+    },
+    {
+      "key": "source-ar-mechanical-repair-48",
+      "requestStartedAtUtc": "2026-10-26T07:21:05.782Z",
+      "secondsAfterR4EnabledFirstObserved": 31.04,
+      "method": "GET",
+      "url": "http://www.digitecme.com/ar/brands/mercedes-benz-service-dubai/mechanical-repair/",
+      "scheme": "http",
+      "host": "www.digitecme.com",
+      "path": "/ar/brands/mercedes-benz-service-dubai/mechanical-repair/",
+      "trailingSlash": true,
+      "queryClass": "empty",
+      "rawQuery": "",
+      "status": 308,
+      "location": "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai",
+      "cfRay": "a507b3d87d09d8e7-FRA",
+      "cfRayColoSuffix": "FRA",
+      "cfCacheStatus": null,
+      "age": null,
+      "cacheControl": null,
+      "responseDate": "Mon, 26 Oct 2026 07:21:09 GMT",
+      "chainResponses": 2,
+      "finalStatus": 200,
+      "finalUrl": "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai",
+      "finalCanonical": [
+        "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai"
+      ],
+      "loop": false,
+      "failedAssertions": [],
+      "directRedirectPass": true,
+      "getFinalCanonicalPass": true
+    },
+    {
+      "key": "source-ar-mechanical-repair-49",
+      "requestStartedAtUtc": "2026-10-26T07:21:06.053Z",
+      "secondsAfterR4EnabledFirstObserved": 31.311,
+      "method": "GET",
+      "url": "http://www.digitecme.com/ar/brands/mercedes-benz-service-dubai/mechanical-repair/?utm_source=mercedes_phase_2&gclid=phase2-example",
+      "scheme": "http",
+      "host": "www.digitecme.com",
+      "path": "/ar/brands/mercedes-benz-service-dubai/mechanical-repair/",
+      "trailingSlash": true,
+      "queryClass": "campaign",
+      "rawQuery": "?utm_source=mercedes_phase_2&gclid=phase2-example",
+      "status": 308,
+      "location": "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai?utm_source=mercedes_phase_2&gclid=phase2-example",
+      "cfRay": "a507b3d9fdf057fe-CDG",
+      "cfRayColoSuffix": "CDG",
+      "cfCacheStatus": null,
+      "age": null,
+      "cacheControl": null,
+      "responseDate": "Mon, 26 Oct 2026 07:21:09 GMT",
+      "chainResponses": 2,
+      "finalStatus": 200,
+      "finalUrl": "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai?utm_source=mercedes_phase_2&gclid=phase2-example",
+      "finalCanonical": [
+        "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai"
+      ],
+      "loop": false,
+      "failedAssertions": [],
+      "directRedirectPass": true,
+      "getFinalCanonicalPass": true
+    },
+    {
+      "key": "source-ar-mechanical-repair-50",
+      "requestStartedAtUtc": "2026-10-26T07:21:06.135Z",
+      "secondsAfterR4EnabledFirstObserved": 31.393,
+      "method": "GET",
+      "url": "http://www.digitecme.com/ar/brands/mercedes-benz-service-dubai/mechanical-repair/?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank=",
+      "scheme": "http",
+      "host": "www.digitecme.com",
+      "path": "/ar/brands/mercedes-benz-service-dubai/mechanical-repair/",
+      "trailingSlash": true,
+      "queryClass": "repeated-encoded-blank",
+      "rawQuery": "?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank=",
+      "status": 308,
+      "location": "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank=",
+      "cfRay": "a507b3da8f3371b5-FRA",
+      "cfRayColoSuffix": "FRA",
+      "cfCacheStatus": null,
+      "age": null,
+      "cacheControl": null,
+      "responseDate": "Mon, 26 Oct 2026 07:21:09 GMT",
+      "chainResponses": 2,
+      "finalStatus": 200,
+      "finalUrl": "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank=",
+      "finalCanonical": [
+        "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai"
+      ],
+      "loop": false,
+      "failedAssertions": [],
+      "directRedirectPass": true,
+      "getFinalCanonicalPass": true
+    },
+    {
+      "key": "source-ar-mechanical-repair-51",
+      "requestStartedAtUtc": "2026-10-26T07:21:06.375Z",
+      "secondsAfterR4EnabledFirstObserved": 31.633,
+      "method": "HEAD",
+      "url": "http://www.digitecme.com/ar/brands/mercedes-benz-service-dubai/mechanical-repair/",
+      "scheme": "http",
+      "host": "www.digitecme.com",
+      "path": "/ar/brands/mercedes-benz-service-dubai/mechanical-repair/",
+      "trailingSlash": true,
+      "queryClass": "empty",
+      "rawQuery": "",
+      "status": 308,
+      "location": "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai",
+      "cfRay": "a507b3db596b57fe-CDG",
+      "cfRayColoSuffix": "CDG",
+      "cfCacheStatus": null,
+      "age": null,
+      "cacheControl": null,
+      "responseDate": "Mon, 26 Oct 2026 07:21:09 GMT",
+      "chainResponses": 2,
+      "finalStatus": 200,
+      "finalUrl": "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai",
+      "finalCanonical": [],
+      "loop": false,
+      "failedAssertions": [],
+      "directRedirectPass": true,
+      "getFinalCanonicalPass": null
+    },
+    {
+      "key": "source-ar-mechanical-repair-52",
+      "requestStartedAtUtc": "2026-10-26T07:21:06.431Z",
+      "secondsAfterR4EnabledFirstObserved": 31.689,
+      "method": "HEAD",
+      "url": "http://www.digitecme.com/ar/brands/mercedes-benz-service-dubai/mechanical-repair/?utm_source=mercedes_phase_2&gclid=phase2-example",
+      "scheme": "http",
+      "host": "www.digitecme.com",
+      "path": "/ar/brands/mercedes-benz-service-dubai/mechanical-repair/",
+      "trailingSlash": true,
+      "queryClass": "campaign",
+      "rawQuery": "?utm_source=mercedes_phase_2&gclid=phase2-example",
+      "status": 308,
+      "location": "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai?utm_source=mercedes_phase_2&gclid=phase2-example",
+      "cfRay": "a507b3dba83271b5-FRA",
+      "cfRayColoSuffix": "FRA",
+      "cfCacheStatus": null,
+      "age": null,
+      "cacheControl": null,
+      "responseDate": "Mon, 26 Oct 2026 07:21:09 GMT",
+      "chainResponses": 2,
+      "finalStatus": 200,
+      "finalUrl": "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai?utm_source=mercedes_phase_2&gclid=phase2-example",
+      "finalCanonical": [],
+      "loop": false,
+      "failedAssertions": [],
+      "directRedirectPass": true,
+      "getFinalCanonicalPass": null
+    },
+    {
+      "key": "source-ar-mechanical-repair-53",
+      "requestStartedAtUtc": "2026-10-26T07:21:06.664Z",
+      "secondsAfterR4EnabledFirstObserved": 31.922,
+      "method": "HEAD",
+      "url": "http://www.digitecme.com/ar/brands/mercedes-benz-service-dubai/mechanical-repair/?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank=",
+      "scheme": "http",
+      "host": "www.digitecme.com",
+      "path": "/ar/brands/mercedes-benz-service-dubai/mechanical-repair/",
+      "trailingSlash": true,
+      "queryClass": "repeated-encoded-blank",
+      "rawQuery": "?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank=",
+      "status": 308,
+      "location": "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank=",
+      "cfRay": "a507b3ddcc1c6e4b-HKG",
+      "cfRayColoSuffix": "HKG",
+      "cfCacheStatus": null,
+      "age": null,
+      "cacheControl": null,
+      "responseDate": "Mon, 26 Oct 2026 07:21:10 GMT",
+      "chainResponses": 2,
+      "finalStatus": 200,
+      "finalUrl": "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank=",
+      "finalCanonical": [],
+      "loop": false,
+      "failedAssertions": [],
+      "directRedirectPass": true,
+      "getFinalCanonicalPass": null
+    }
+  ]
+}

@@ -1,0 +1,364 @@
+{
+  "checkedAt": "2026-10-19T06:13:33.167Z",
+  "passed": false,
+  "base": "http://127.0.0.1:5195",
+  "browser": "Headless Microsoft Edge through bundled Playwright",
+  "pageChecks": [],
+  "interactions": [],
+  "noJavaScript": [],
+  "screenshots": [
+    "outputs/five-brand-service-2026-10-19/conversion/browser/rolls-royce-service-dubai-en-desktop-hero.png",
+    "outputs/five-brand-service-2026-10-19/conversion/browser/rolls-royce-service-dubai-en-desktop-failure.png",
+    "outputs/five-brand-service-2026-10-19/conversion/browser/rolls-royce-service-dubai-ar-desktop-hero.png",
+    "outputs/five-brand-service-2026-10-19/conversion/browser/rolls-royce-service-dubai-ar-desktop-failure.png",
+    "outputs/five-brand-service-2026-10-19/conversion/browser/lamborghini-service-dubai-en-desktop-hero.png",
+    "outputs/five-brand-service-2026-10-19/conversion/browser/lamborghini-service-dubai-en-desktop-failure.png",
+    "outputs/five-brand-service-2026-10-19/conversion/browser/lamborghini-service-dubai-ar-desktop-hero.png",
+    "outputs/five-brand-service-2026-10-19/conversion/browser/lamborghini-service-dubai-ar-desktop-failure.png",
+    "outputs/five-brand-service-2026-10-19/conversion/browser/volkswagen-service-dubai-en-desktop-hero.png",
+    "outputs/five-brand-service-2026-10-19/conversion/browser/volkswagen-service-dubai-en-desktop-failure.png",
+    "outputs/five-brand-service-2026-10-19/conversion/browser/volkswagen-service-dubai-ar-desktop-hero.png",
+    "outputs/five-brand-service-2026-10-19/conversion/browser/volkswagen-service-dubai-ar-desktop-failure.png",
+    "outputs/five-brand-service-2026-10-19/conversion/browser/mercedes-benz-service-dubai-en-desktop-hero.png",
+    "outputs/five-brand-service-2026-10-19/conversion/browser/mercedes-benz-service-dubai-en-desktop-failure.png",
+    "outputs/five-brand-service-2026-10-19/conversion/browser/mercedes-benz-service-dubai-ar-desktop-hero.png",
+    "outputs/five-brand-service-2026-10-19/conversion/browser/mercedes-benz-service-dubai-ar-desktop-failure.png",
+    "outputs/five-brand-service-2026-10-19/conversion/browser/bmw-service-dubai-en-desktop-hero.png",
+    "outputs/five-brand-service-2026-10-19/conversion/browser/bmw-service-dubai-en-desktop-failure.png",
+    "outputs/five-brand-service-2026-10-19/conversion/browser/bmw-service-dubai-ar-desktop-hero.png",
+    "outputs/five-brand-service-2026-10-19/conversion/browser/bmw-service-dubai-ar-desktop-failure.png",
+    "outputs/five-brand-service-2026-10-19/conversion/browser/rolls-royce-service-dubai-en-mobile-hero.png",
+    "outputs/five-brand-service-2026-10-19/conversion/browser/rolls-royce-service-dubai-en-mobile-failure.png",
+    "outputs/five-brand-service-2026-10-19/conversion/browser/rolls-royce-service-dubai-ar-mobile-hero.png",
+    "outputs/five-brand-service-2026-10-19/conversion/browser/rolls-royce-service-dubai-ar-mobile-failure.png",
+    "outputs/five-brand-service-2026-10-19/conversion/browser/lamborghini-service-dubai-en-mobile-hero.png",
+    "outputs/five-brand-service-2026-10-19/conversion/browser/lamborghini-service-dubai-en-mobile-failure.png",
+    "outputs/five-brand-service-2026-10-19/conversion/browser/lamborghini-service-dubai-ar-mobile-hero.png",
+    "outputs/five-brand-service-2026-10-19/conversion/browser/lamborghini-service-dubai-ar-mobile-failure.png",
+    "outputs/five-brand-service-2026-10-19/conversion/browser/volkswagen-service-dubai-en-mobile-failure.png",
+    "outputs/five-brand-service-2026-10-19/conversion/browser/volkswagen-service-dubai-ar-mobile-failure.png",
+    "outputs/five-brand-service-2026-10-19/conversion/browser/mercedes-benz-service-dubai-en-mobile-failure.png",
+    "outputs/five-brand-service-2026-10-19/conversion/browser/mercedes-benz-service-dubai-ar-mobile-failure.png",
+    "outputs/five-brand-service-2026-10-19/conversion/browser/bmw-service-dubai-en-mobile-failure.png",
+    "outputs/five-brand-service-2026-10-19/conversion/browser/bmw-service-dubai-ar-mobile-failure.png",
+    "outputs/five-brand-service-2026-10-19/conversion/browser/rolls-royce-service-dubai-en-narrow-failure.png",
+    "outputs/five-brand-service-2026-10-19/conversion/browser/rolls-royce-service-dubai-ar-narrow-failure.png",
+    "outputs/five-brand-service-2026-10-19/conversion/browser/lamborghini-service-dubai-en-narrow-failure.png",
+    "outputs/five-brand-service-2026-10-19/conversion/browser/lamborghini-service-dubai-ar-narrow-failure.png",
+    "outputs/five-brand-service-2026-10-19/conversion/browser/volkswagen-service-dubai-en-narrow-failure.png",
+    "outputs/five-brand-service-2026-10-19/conversion/browser/volkswagen-service-dubai-ar-narrow-failure.png",
+    "outputs/five-brand-service-2026-10-19/conversion/browser/mercedes-benz-service-dubai-en-narrow-failure.png",
+    "outputs/five-brand-service-2026-10-19/conversion/browser/mercedes-benz-service-dubai-ar-narrow-failure.png",
+    "outputs/five-brand-service-2026-10-19/conversion/browser/bmw-service-dubai-en-narrow-failure.png",
+    "outputs/five-brand-service-2026-10-19/conversion/browser/bmw-service-dubai-ar-narrow-failure.png"
+  ],
+  "failures": [
+    {
+      "at": "/brands/rolls-royce-service-dubai desktop",
+      "message": "FAQ controls a labelled answer"
+    },
+    {
+      "at": "/ar/brands/rolls-royce-service-dubai desktop",
+      "message": "FAQ controls a labelled answer"
+    },
+    {
+      "at": "/brands/lamborghini-service-dubai desktop",
+      "message": "FAQ controls a labelled answer"
+    },
+    {
+      "at": "/ar/brands/lamborghini-service-dubai desktop",
+      "message": "FAQ controls a labelled answer"
+    },
+    {
+      "at": "/brands/volkswagen-service-dubai desktop",
+      "message": "FAQ controls a labelled answer"
+    },
+    {
+      "at": "/ar/brands/volkswagen-service-dubai desktop",
+      "message": "FAQ controls a labelled answer"
+    },
+    {
+      "at": "/brands/mercedes-benz-service-dubai desktop",
+      "message": "FAQ controls a labelled answer"
+    },
+    {
+      "at": "/ar/brands/mercedes-benz-service-dubai desktop",
+      "message": "FAQ controls a labelled answer"
+    },
+    {
+      "at": "/brands/bmw-service-dubai desktop",
+      "message": "FAQ controls a labelled answer"
+    },
+    {
+      "at": "/ar/brands/bmw-service-dubai desktop",
+      "message": "FAQ controls a labelled answer"
+    },
+    {
+      "at": "/brands/rolls-royce-service-dubai mobile",
+      "message": "FAQ controls a labelled answer"
+    },
+    {
+      "at": "/ar/brands/rolls-royce-service-dubai mobile",
+      "message": "FAQ controls a labelled answer"
+    },
+    {
+      "at": "/brands/lamborghini-service-dubai mobile",
+      "message": "FAQ controls a labelled answer"
+    },
+    {
+      "at": "/ar/brands/lamborghini-service-dubai mobile",
+      "message": "FAQ controls a labelled answer"
+    },
+    {
+      "at": "/brands/volkswagen-service-dubai mobile",
+      "message": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at http://127.0.0.1:5195/brands/volkswagen-service-dubai\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5195/brands/volkswagen-service-dubai\", waiting until \"networkidle\"\u001b[22m\n"
+    },
+    {
+      "at": "/ar/brands/volkswagen-service-dubai mobile",
+      "message": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at http://127.0.0.1:5195/ar/brands/volkswagen-service-dubai\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5195/ar/brands/volkswagen-service-dubai\", waiting until \"networkidle\"\u001b[22m\n"
+    },
+    {
+      "at": "/brands/mercedes-benz-service-dubai mobile",
+      "message": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at http://127.0.0.1:5195/brands/mercedes-benz-service-dubai\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5195/brands/mercedes-benz-service-dubai\", waiting until \"networkidle\"\u001b[22m\n"
+    },
+    {
+      "at": "/ar/brands/mercedes-benz-service-dubai mobile",
+      "message": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at http://127.0.0.1:5195/ar/brands/mercedes-benz-service-dubai\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5195/ar/brands/mercedes-benz-service-dubai\", waiting until \"networkidle\"\u001b[22m\n"
+    },
+    {
+      "at": "/brands/bmw-service-dubai mobile",
+      "message": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at http://127.0.0.1:5195/brands/bmw-service-dubai\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5195/brands/bmw-service-dubai\", waiting until \"networkidle\"\u001b[22m\n"
+    },
+    {
+      "at": "/ar/brands/bmw-service-dubai mobile",
+      "message": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at http://127.0.0.1:5195/ar/brands/bmw-service-dubai\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5195/ar/brands/bmw-service-dubai\", waiting until \"networkidle\"\u001b[22m\n"
+    },
+    {
+      "at": "/brands/rolls-royce-service-dubai narrow",
+      "message": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at http://127.0.0.1:5195/brands/rolls-royce-service-dubai\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5195/brands/rolls-royce-service-dubai\", waiting until \"networkidle\"\u001b[22m\n"
+    },
+    {
+      "at": "/ar/brands/rolls-royce-service-dubai narrow",
+      "message": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at http://127.0.0.1:5195/ar/brands/rolls-royce-service-dubai\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5195/ar/brands/rolls-royce-service-dubai\", waiting until \"networkidle\"\u001b[22m\n"
+    },
+    {
+      "at": "/brands/lamborghini-service-dubai narrow",
+      "message": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at http://127.0.0.1:5195/brands/lamborghini-service-dubai\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5195/brands/lamborghini-service-dubai\", waiting until \"networkidle\"\u001b[22m\n"
+    },
+    {
+      "at": "/ar/brands/lamborghini-service-dubai narrow",
+      "message": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at http://127.0.0.1:5195/ar/brands/lamborghini-service-dubai\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5195/ar/brands/lamborghini-service-dubai\", waiting until \"networkidle\"\u001b[22m\n"
+    },
+    {
+      "at": "/brands/volkswagen-service-dubai narrow",
+      "message": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at http://127.0.0.1:5195/brands/volkswagen-service-dubai\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5195/brands/volkswagen-service-dubai\", waiting until \"networkidle\"\u001b[22m\n"
+    },
+    {
+      "at": "/ar/brands/volkswagen-service-dubai narrow",
+      "message": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at http://127.0.0.1:5195/ar/brands/volkswagen-service-dubai\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5195/ar/brands/volkswagen-service-dubai\", waiting until \"networkidle\"\u001b[22m\n"
+    },
+    {
+      "at": "/brands/mercedes-benz-service-dubai narrow",
+      "message": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at http://127.0.0.1:5195/brands/mercedes-benz-service-dubai\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5195/brands/mercedes-benz-service-dubai\", waiting until \"networkidle\"\u001b[22m\n"
+    },
+    {
+      "at": "/ar/brands/mercedes-benz-service-dubai narrow",
+      "message": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at http://127.0.0.1:5195/ar/brands/mercedes-benz-service-dubai\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5195/ar/brands/mercedes-benz-service-dubai\", waiting until \"networkidle\"\u001b[22m\n"
+    },
+    {
+      "at": "/brands/bmw-service-dubai narrow",
+      "message": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at http://127.0.0.1:5195/brands/bmw-service-dubai\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5195/brands/bmw-service-dubai\", waiting until \"networkidle\"\u001b[22m\n"
+    },
+    {
+      "at": "/ar/brands/bmw-service-dubai narrow",
+      "message": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at http://127.0.0.1:5195/ar/brands/bmw-service-dubai\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5195/ar/brands/bmw-service-dubai\", waiting until \"networkidle\"\u001b[22m\n"
+    },
+    {
+      "at": "/brands/rolls-royce-service-dubai no JavaScript",
+      "message": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at http://127.0.0.1:5195/brands/rolls-royce-service-dubai\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5195/brands/rolls-royce-service-dubai\", waiting until \"networkidle\"\u001b[22m\n"
+    },
+    {
+      "at": "/ar/brands/rolls-royce-service-dubai no JavaScript",
+      "message": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at http://127.0.0.1:5195/ar/brands/rolls-royce-service-dubai\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5195/ar/brands/rolls-royce-service-dubai\", waiting until \"networkidle\"\u001b[22m\n"
+    },
+    {
+      "at": "/brands/lamborghini-service-dubai no JavaScript",
+      "message": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at http://127.0.0.1:5195/brands/lamborghini-service-dubai\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5195/brands/lamborghini-service-dubai\", waiting until \"networkidle\"\u001b[22m\n"
+    },
+    {
+      "at": "/ar/brands/lamborghini-service-dubai no JavaScript",
+      "message": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at http://127.0.0.1:5195/ar/brands/lamborghini-service-dubai\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5195/ar/brands/lamborghini-service-dubai\", waiting until \"networkidle\"\u001b[22m\n"
+    },
+    {
+      "at": "/brands/volkswagen-service-dubai no JavaScript",
+      "message": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at http://127.0.0.1:5195/brands/volkswagen-service-dubai\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5195/brands/volkswagen-service-dubai\", waiting until \"networkidle\"\u001b[22m\n"
+    },
+    {
+      "at": "/ar/brands/volkswagen-service-dubai no JavaScript",
+      "message": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at http://127.0.0.1:5195/ar/brands/volkswagen-service-dubai\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5195/ar/brands/volkswagen-service-dubai\", waiting until \"networkidle\"\u001b[22m\n"
+    },
+    {
+      "at": "/brands/mercedes-benz-service-dubai no JavaScript",
+      "message": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at http://127.0.0.1:5195/brands/mercedes-benz-service-dubai\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5195/brands/mercedes-benz-service-dubai\", waiting until \"networkidle\"\u001b[22m\n"
+    },
+    {
+      "at": "/ar/brands/mercedes-benz-service-dubai no JavaScript",
+      "message": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at http://127.0.0.1:5195/ar/brands/mercedes-benz-service-dubai\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5195/ar/brands/mercedes-benz-service-dubai\", waiting until \"networkidle\"\u001b[22m\n"
+    },
+    {
+      "at": "/brands/bmw-service-dubai no JavaScript",
+      "message": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at http://127.0.0.1:5195/brands/bmw-service-dubai\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5195/brands/bmw-service-dubai\", waiting until \"networkidle\"\u001b[22m\n"
+    },
+    {
+      "at": "/ar/brands/bmw-service-dubai no JavaScript",
+      "message": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at http://127.0.0.1:5195/ar/brands/bmw-service-dubai\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5195/ar/brands/bmw-service-dubai\", waiting until \"networkidle\"\u001b[22m\n"
+    },
+    {
+      "at": "/ar/brands/bmw-service-dubai no JavaScript",
+      "message": "All 30 hydrated route/viewport cases pass\n\n0 !== 30\n"
+    }
+  ],
+  "runtimeOrHydrationErrors": [],
+  "failedLocalResponses": [
+    {
+      "at": "/brands/volkswagen-service-dubai mobile",
+      "path": "/brands/volkswagen-service-dubai",
+      "status": 404
+    },
+    {
+      "at": "/ar/brands/volkswagen-service-dubai mobile",
+      "path": "/ar/brands/volkswagen-service-dubai",
+      "status": 404
+    },
+    {
+      "at": "/brands/mercedes-benz-service-dubai mobile",
+      "path": "/brands/mercedes-benz-service-dubai",
+      "status": 404
+    },
+    {
+      "at": "/ar/brands/mercedes-benz-service-dubai mobile",
+      "path": "/ar/brands/mercedes-benz-service-dubai",
+      "status": 404
+    },
+    {
+      "at": "/brands/bmw-service-dubai mobile",
+      "path": "/brands/bmw-service-dubai",
+      "status": 404
+    },
+    {
+      "at": "/ar/brands/bmw-service-dubai mobile",
+      "path": "/ar/brands/bmw-service-dubai",
+      "status": 404
+    },
+    {
+      "at": "/brands/rolls-royce-service-dubai narrow",
+      "path": "/brands/rolls-royce-service-dubai",
+      "status": 404
+    },
+    {
+      "at": "/ar/brands/rolls-royce-service-dubai narrow",
+      "path": "/ar/brands/rolls-royce-service-dubai",
+      "status": 404
+    },
+    {
+      "at": "/brands/lamborghini-service-dubai narrow",
+      "path": "/brands/lamborghini-service-dubai",
+      "status": 404
+    },
+    {
+      "at": "/ar/brands/lamborghini-service-dubai narrow",
+      "path": "/ar/brands/lamborghini-service-dubai",
+      "status": 404
+    },
+    {
+      "at": "/brands/volkswagen-service-dubai narrow",
+      "path": "/brands/volkswagen-service-dubai",
+      "status": 404
+    },
+    {
+      "at": "/ar/brands/volkswagen-service-dubai narrow",
+      "path": "/ar/brands/volkswagen-service-dubai",
+      "status": 404
+    },
+    {
+      "at": "/brands/mercedes-benz-service-dubai narrow",
+      "path": "/brands/mercedes-benz-service-dubai",
+      "status": 404
+    },
+    {
+      "at": "/ar/brands/mercedes-benz-service-dubai narrow",
+      "path": "/ar/brands/mercedes-benz-service-dubai",
+      "status": 404
+    },
+    {
+      "at": "/brands/bmw-service-dubai narrow",
+      "path": "/brands/bmw-service-dubai",
+      "status": 404
+    },
+    {
+      "at": "/ar/brands/bmw-service-dubai narrow",
+      "path": "/ar/brands/bmw-service-dubai",
+      "status": 404
+    },
+    {
+      "at": "/brands/rolls-royce-service-dubai no JavaScript",
+      "path": "/brands/rolls-royce-service-dubai",
+      "status": 404
+    },
+    {
+      "at": "/ar/brands/rolls-royce-service-dubai no JavaScript",
+      "path": "/ar/brands/rolls-royce-service-dubai",
+      "status": 404
+    },
+    {
+      "at": "/brands/lamborghini-service-dubai no JavaScript",
+      "path": "/brands/lamborghini-service-dubai",
+      "status": 404
+    },
+    {
+      "at": "/ar/brands/lamborghini-service-dubai no JavaScript",
+      "path": "/ar/brands/lamborghini-service-dubai",
+      "status": 404
+    },
+    {
+      "at": "/brands/volkswagen-service-dubai no JavaScript",
+      "path": "/brands/volkswagen-service-dubai",
+      "status": 404
+    },
+    {
+      "at": "/ar/brands/volkswagen-service-dubai no JavaScript",
+      "path": "/ar/brands/volkswagen-service-dubai",
+      "status": 404
+    },
+    {
+      "at": "/brands/mercedes-benz-service-dubai no JavaScript",
+      "path": "/brands/mercedes-benz-service-dubai",
+      "status": 404
+    },
+    {
+      "at": "/ar/brands/mercedes-benz-service-dubai no JavaScript",
+      "path": "/ar/brands/mercedes-benz-service-dubai",
+      "status": 404
+    },
+    {
+      "at": "/brands/bmw-service-dubai no JavaScript",
+      "path": "/brands/bmw-service-dubai",
+      "status": 404
+    },
+    {
+      "at": "/ar/brands/bmw-service-dubai no JavaScript",
+      "path": "/ar/brands/bmw-service-dubai",
+      "status": 404
+    }
+  ],
+  "unexpectedPopups": [],
+  "blockedExternalRequests": {
+    "https://www.googletagmanager.com": 28,
+    "https://fonts.googleapis.com": 14,
+    "https://images.unsplash.com": 4
+  },
+  "blockedLocalWrites": [],
+  "safety": "Only local GET/HEAD requests are allowed. External contact navigation is prevented. window.open is stubbed, so no WhatsApp draft is opened in a real app and no message or enquiry is sent.",
+  "limitations": "Tests local rendered output and client behavior. Does not verify WhatsApp delivery, connected calls, GA4 ingestion, CRM receipt, confirmed enquiries or field Core Web Vitals.",
+  "finishedAt": "2026-10-19T06:13:49.195Z"
+}

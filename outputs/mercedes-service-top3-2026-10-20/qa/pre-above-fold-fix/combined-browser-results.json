@@ -1,0 +1,72 @@
+{
+  "checkedAt": "2026-10-20T05:42:58.296Z",
+  "candidate": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\candidate.local",
+  "passed": true,
+  "safety": "Loopback GET/HEAD requests only. Existing protected contact test stubs/blocked network retained. No actual message, customer enquiry, backend write, or production request.",
+  "results": [
+    {
+      "name": "five-brand-browser",
+      "exitCode": 0,
+      "passed": true,
+      "seconds": 46.189,
+      "log": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\qa\\five-brand-browser.log"
+    },
+    {
+      "name": "repair-browser",
+      "exitCode": 0,
+      "passed": true,
+      "seconds": 101.514,
+      "log": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\qa\\repair-browser.log"
+    },
+    {
+      "name": "master-seo-browser",
+      "exitCode": 0,
+      "passed": true,
+      "seconds": 31.575,
+      "log": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\qa\\master-seo-browser.log"
+    },
+    {
+      "name": "protection-routing-browser",
+      "exitCode": 0,
+      "passed": true,
+      "seconds": 4.285,
+      "log": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\qa\\protection-routing-browser.log"
+    },
+    {
+      "name": "ppf-browser",
+      "exitCode": 0,
+      "passed": true,
+      "seconds": 25.382,
+      "log": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\qa\\ppf-browser.log"
+    },
+    {
+      "name": "diagnostics-ac-browser",
+      "exitCode": 0,
+      "passed": true,
+      "seconds": 48.493,
+      "log": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\qa\\diagnostics-ac-browser.log"
+    },
+    {
+      "name": "tuning-browser",
+      "exitCode": 0,
+      "passed": true,
+      "seconds": 8.737,
+      "log": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\qa\\tuning-browser.log"
+    },
+    {
+      "name": "ecu-electronics-browser",
+      "exitCode": 0,
+      "passed": true,
+      "seconds": 39.136,
+      "log": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\qa\\ecu-electronics-browser.log"
+    },
+    {
+      "name": "mercedes-campaign-browser",
+      "exitCode": 0,
+      "passed": true,
+      "seconds": 17.827,
+      "log": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\qa\\mercedes-campaign-browser.log",
+      "rerunReason": "Exact SPA target H1/canonical now explicitly awaited before unchanged assertions; initial timing evidence archived. No product change."
+    }
+  ]
+}

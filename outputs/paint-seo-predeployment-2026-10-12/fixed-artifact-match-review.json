@@ -1,0 +1,41 @@
+{
+  "fixedBuild": {
+    "passed": true,
+    "sourceSha256": "c5f55b95b6830a7371cd48d2782860a8884a213c5c838d97eff1618a74fa329d",
+    "steps": 17
+  },
+  "rootRoutingAssets": [
+    "/assets/index-6pAJ9Rio.js",
+    "/assets/index-BWPTl_o3.css"
+  ],
+  "fixedRoutingAssets": [
+    "/assets/index-v1GkK8ss.js",
+    "/assets/index-CoVh-1v8.css"
+  ],
+  "fixedAssets": [
+    {
+      "asset": "/assets/index-v1GkK8ss.js",
+      "exists": true,
+      "sha256": "53b7309e069beb47c0747afc025383943cf8e23b0b3cc8fef2cc482e7b04daca"
+    },
+    {
+      "asset": "/assets/index-CoVh-1v8.css",
+      "exists": true,
+      "sha256": "ac68b8f80ff1b73b0258b005b2b8cee42be062d07d81d10e7e1c9c69cf00ef0f"
+    }
+  ],
+  "rootRoutingCompatibleWithFixedDist": false,
+  "fixed404MatchesMap": [
+    {
+      "locale": "en",
+      "exactMatch": true
+    },
+    {
+      "locale": "ar",
+      "exactMatch": true
+    }
+  ],
+  "routingPathsUnchanged": true,
+  "distWorkerSha256": "47208557115070b192a66e867c27be7b847b00a6304c25519fdb84033b7d1e45",
+  "generatedWorkerSha256": "47208557115070b192a66e867c27be7b847b00a6304c25519fdb84033b7d1e45"
+}

@@ -1,0 +1,20 @@
+[
+  {
+    "option": "A",
+    "checkedAtUtc": "2026-10-26T10:38:52.9491871Z",
+    "archiveSha256": "71c72641081784c4ddeea72ce3336bf6fe7e695aad335b417f039e261324f9c1",
+    "fileCount": 1634,
+    "expectedFileCount": 1634,
+    "passed": true,
+    "failures": []
+  },
+  {
+    "option": "B",
+    "checkedAtUtc": "2026-10-26T10:38:53.4055571Z",
+    "archiveSha256": "a2faa6a33475be10c600bbfdad3303a3408bbabafe87d9dd708ca872278806b3",
+    "fileCount": 1634,
+    "expectedFileCount": 1634,
+    "passed": true,
+    "failures": []
+  }
+]

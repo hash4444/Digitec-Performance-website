@@ -1,0 +1,136 @@
+{
+  "at": "2026-10-20T05:45:49.044Z",
+  "passed": false,
+  "layouts": [
+    {
+      "route": "/brands/mercedes-benz-service-dubai",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "route": "/brands/mercedes-benz-service-dubai",
+      "width": 390,
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/mercedes-benz-service-dubai",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/mercedes-benz-service-dubai",
+      "width": 390,
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/mercedes-benz-service-dubai",
+      "width": 320,
+      "passed": true
+    }
+  ],
+  "contacts": [
+    {
+      "route": "/brands/mercedes-benz-service-dubai",
+      "preventedContacts": 3,
+      "noConfirmedBookings": true,
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/mercedes-benz-service-dubai",
+      "preventedContacts": 3,
+      "noConfirmedBookings": true,
+      "passed": true
+    }
+  ],
+  "forms": [
+    {
+      "route": "/brands/mercedes-benz-service-dubai",
+      "requiredModelAndMessage": true,
+      "emptyRejected": true,
+      "invalidOptionalPhoneRejected": true,
+      "allSixServiceFieldsInDraft": true,
+      "optionalPersonalDetailsAccepted": true,
+      "unknownHistoryAccepted": true,
+      "privateValuesExcludedFromAnalytics": true,
+      "noConfirmedBookingEvent": true,
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/mercedes-benz-service-dubai",
+      "requiredModelAndMessage": true,
+      "emptyRejected": true,
+      "invalidOptionalPhoneRejected": true,
+      "allSixServiceFieldsInDraft": true,
+      "optionalPersonalDetailsAccepted": true,
+      "unknownHistoryAccepted": true,
+      "privateValuesExcludedFromAnalytics": true,
+      "noConfirmedBookingEvent": true,
+      "passed": true
+    }
+  ],
+  "noJavaScript": [
+    {
+      "route": "/brands/mercedes-benz-service-dubai",
+      "crawlableServicingFaq": true,
+      "staticContactHref": true,
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/mercedes-benz-service-dubai",
+      "crawlableServicingFaq": true,
+      "staticContactHref": true,
+      "passed": true
+    }
+  ],
+  "spa": [
+    {
+      "locale": "en",
+      "directoryToMaintenance": true,
+      "bookingAnchor": true,
+      "back": true,
+      "passed": true
+    },
+    {
+      "locale": "ar",
+      "directoryToMaintenance": true,
+      "bookingAnchor": true,
+      "back": true,
+      "passed": true
+    }
+  ],
+  "touch": [
+    {
+      "route": "/brands/mercedes-benz-service-dubai",
+      "pointer": "coarse",
+      "preventedContacts": 2,
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/mercedes-benz-service-dubai",
+      "pointer": "coarse",
+      "preventedContacts": 2,
+      "passed": true
+    }
+  ],
+  "screenshots": [
+    "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\qa\\mercedes-browser\\en-hero-390.png",
+    "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\qa\\mercedes-browser\\en-form-390.png",
+    "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\qa\\mercedes-browser\\ar-hero-390.png",
+    "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\qa\\mercedes-browser\\ar-form-390.png",
+    "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\qa\\mercedes-browser\\en-touch-390.png",
+    "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\qa\\mercedes-browser\\ar-touch-390.png"
+  ],
+  "runtimeErrors": [],
+  "failedLocalResponses": [],
+  "externalBlocked": 0,
+  "writesBlocked": 0,
+  "failures": [
+    {
+      "route": "/brands/mercedes-benz-service-dubai",
+      "width": 320,
+      "error": "page.goto: Timeout 12000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5213/brands/mercedes-benz-service-dubai\", waiting until \"networkidle\"\u001b[22m\n",
+      "stack": "page.goto: Timeout 12000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5213/brands/mercedes-benz-service-dubai\", waiting until \"networkidle\"\u001b[22m\n\n    at C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\qa\\test-mercedes-browser.mjs:21:120"
+    }
+  ],
+  "safety": "Loopback GET/HEAD only; contact anchor navigation prevented, window.open stubbed, no actual WhatsApp send/call/customer enquiry/appointment/backend write. Click/draft events are intent only."
+}

@@ -1,0 +1,2419 @@
+{
+  "checkedAt": "2026-10-26T07:39:39.809Z",
+  "offlineOnly": true,
+  "readOnlyChecks": true,
+  "sourceBaselinePath": "reports/mercedes-phase-2/deployment-2026-10-26/preflight/protected-source-fresh.json",
+  "artifactBaselinePath": "reports/mercedes-phase-2/deployment-2026-10-26/preflight/approved-and-evidence-hashes.json",
+  "checkpointBaselinePath": "reports/mercedes-phase-2/deployment-2026-10-26/verification/real-capture-sha256.json",
+  "summary": {
+    "protectedSourcesExpected": 283,
+    "protectedSourcesChecked": 283,
+    "protectedSourcesUnchanged": 283,
+    "approvedArtifactsChecked": 10,
+    "approvedArtifactsUnchanged": 10,
+    "phase2ACheckpointCapturesChecked": 4,
+    "phase2ACheckpointCapturesUnchanged": 4
+  },
+  "allPassed": true,
+  "protectedSources": [
+    {
+      "path": "src\\App.css",
+      "reviewedSha256": "1b75716b5511ad178574cd3e3656e5e8dd94544456944b4ff1d253c9ecc614d4",
+      "freshSha256": "1b75716b5511ad178574cd3e3656e5e8dd94544456944b4ff1d253c9ecc614d4",
+      "currentSha256": "1b75716b5511ad178574cd3e3656e5e8dd94544456944b4ff1d253c9ecc614d4",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\App.tsx",
+      "reviewedSha256": "02a02dc0ddc586316873d45f9d2db96d8cbee2f09251d47d21738c17dd08bd4e",
+      "freshSha256": "02a02dc0ddc586316873d45f9d2db96d8cbee2f09251d47d21738c17dd08bd4e",
+      "currentSha256": "02a02dc0ddc586316873d45f9d2db96d8cbee2f09251d47d21738c17dd08bd4e",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\entry-server.tsx",
+      "reviewedSha256": "49872783143d97bf5aabca91ed2ba711954b6943a709df7375934ea3d023a20e",
+      "freshSha256": "49872783143d97bf5aabca91ed2ba711954b6943a709df7375934ea3d023a20e",
+      "currentSha256": "49872783143d97bf5aabca91ed2ba711954b6943a709df7375934ea3d023a20e",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\index.css",
+      "reviewedSha256": "8a987e20ffa9c73d12e187584cb2488f48fff2708f3b5069b2d164091819ce87",
+      "freshSha256": "8a987e20ffa9c73d12e187584cb2488f48fff2708f3b5069b2d164091819ce87",
+      "currentSha256": "8a987e20ffa9c73d12e187584cb2488f48fff2708f3b5069b2d164091819ce87",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\main.tsx",
+      "reviewedSha256": "fe51bb7a74221e9d58d7e3fb919c7f69899a28ee5e5c7b378740399d2aab581c",
+      "freshSha256": "fe51bb7a74221e9d58d7e3fb919c7f69899a28ee5e5c7b378740399d2aab581c",
+      "currentSha256": "fe51bb7a74221e9d58d7e3fb919c7f69899a28ee5e5c7b378740399d2aab581c",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\vite-env.d.ts",
+      "reviewedSha256": "424faf9241dd699dda995b367ed36665732da1e6ec1f33b2fd40394488ecac92",
+      "freshSha256": "424faf9241dd699dda995b367ed36665732da1e6ec1f33b2fd40394488ecac92",
+      "currentSha256": "424faf9241dd699dda995b367ed36665732da1e6ec1f33b2fd40394488ecac92",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\assets\\byd-logo.png.asset.json",
+      "reviewedSha256": "f5bfa6d4ee2ddc1ca1fa834a15ea8ab0b66aa6b8f24eb5954fba0511613e831d",
+      "freshSha256": "f5bfa6d4ee2ddc1ca1fa834a15ea8ab0b66aa6b8f24eb5954fba0511613e831d",
+      "currentSha256": "f5bfa6d4ee2ddc1ca1fa834a15ea8ab0b66aa6b8f24eb5954fba0511613e831d",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\assets\\land-rover-logo.png.asset.json",
+      "reviewedSha256": "340425c1f80babae084d129baa7e798bfc73874dcf75eec9330af0c26b1182ca",
+      "freshSha256": "340425c1f80babae084d129baa7e798bfc73874dcf75eec9330af0c26b1182ca",
+      "currentSha256": "340425c1f80babae084d129baa7e798bfc73874dcf75eec9330af0c26b1182ca",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\assets\\rox-logo.png.asset.json",
+      "reviewedSha256": "20999852775da829affff4e2936e523acc2379282120da0e904badd335f9a3a7",
+      "freshSha256": "20999852775da829affff4e2936e523acc2379282120da0e904badd335f9a3a7",
+      "currentSha256": "20999852775da829affff4e2936e523acc2379282120da0e904badd335f9a3a7",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\components\\AboutVideoStrip.css",
+      "reviewedSha256": "47888782064728741628483308bfdd246263bcb2da39cc465d7c984d3a8ae98c",
+      "freshSha256": "47888782064728741628483308bfdd246263bcb2da39cc465d7c984d3a8ae98c",
+      "currentSha256": "47888782064728741628483308bfdd246263bcb2da39cc465d7c984d3a8ae98c",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\components\\AboutVideoStrip.tsx",
+      "reviewedSha256": "58b55e5d3b730ec89e9cad3c2a7b61df3977644acadaad43049df27c6247572e",
+      "freshSha256": "58b55e5d3b730ec89e9cad3c2a7b61df3977644acadaad43049df27c6247572e",
+      "currentSha256": "58b55e5d3b730ec89e9cad3c2a7b61df3977644acadaad43049df27c6247572e",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\components\\Analytics.tsx",
+      "reviewedSha256": "ac7685242e86dce5b808ba004fbf9f01fd16f5197b25b26e3be874e03a1a99d2",
+      "freshSha256": "ac7685242e86dce5b808ba004fbf9f01fd16f5197b25b26e3be874e03a1a99d2",
+      "currentSha256": "ac7685242e86dce5b808ba004fbf9f01fd16f5197b25b26e3be874e03a1a99d2",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\components\\AnswerBlock.tsx",
+      "reviewedSha256": "ad394b451af7dcb69dfe401816225986f0fc6f994064d61a5d19eb1d5b6d2e99",
+      "freshSha256": "ad394b451af7dcb69dfe401816225986f0fc6f994064d61a5d19eb1d5b6d2e99",
+      "currentSha256": "ad394b451af7dcb69dfe401816225986f0fc6f994064d61a5d19eb1d5b6d2e99",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\components\\AstonMartinHubSections.tsx",
+      "reviewedSha256": "2f5cfc6d703451d0c054e4f50dc353d8410dc354e4bafe44ccb24beac5669f82",
+      "freshSha256": "2f5cfc6d703451d0c054e4f50dc353d8410dc354e4bafe44ccb24beac5669f82",
+      "currentSha256": "2f5cfc6d703451d0c054e4f50dc353d8410dc354e4bafe44ccb24beac5669f82",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\components\\AudiHubSections.tsx",
+      "reviewedSha256": "d68a019e6cb381aeeaf4e4ff36135d13737a458e1817e9d9a3da1e9564f98b65",
+      "freshSha256": "d68a019e6cb381aeeaf4e4ff36135d13737a458e1817e9d9a3da1e9564f98b65",
+      "currentSha256": "d68a019e6cb381aeeaf4e4ff36135d13737a458e1817e9d9a3da1e9564f98b65",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\components\\B5SelectionGuideBody.tsx",
+      "reviewedSha256": "e4a953024c2449d1556070a8dad3fad131964fcb3a6ca24ae2b6edf710a766c1",
+      "freshSha256": "e4a953024c2449d1556070a8dad3fad131964fcb3a6ca24ae2b6edf710a766c1",
+      "currentSha256": "e4a953024c2449d1556070a8dad3fad131964fcb3a6ca24ae2b6edf710a766c1",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\components\\B6JlrGuideBody.tsx",
+      "reviewedSha256": "30aeb1c7f9bc07dccc684989c8063e29b89d3a53a5c98a232bd80811f90359a0",
+      "freshSha256": "30aeb1c7f9bc07dccc684989c8063e29b89d3a53a5c98a232bd80811f90359a0",
+      "currentSha256": "30aeb1c7f9bc07dccc684989c8063e29b89d3a53a5c98a232bd80811f90359a0",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\components\\BentleyCameraSection.tsx",
+      "reviewedSha256": "92e251d7cad7894289f2e9b40c5e2059060c5434106d181a51019e603513cd71",
+      "freshSha256": "92e251d7cad7894289f2e9b40c5e2059060c5434106d181a51019e603513cd71",
+      "currentSha256": "92e251d7cad7894289f2e9b40c5e2059060c5434106d181a51019e603513cd71",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\components\\BentleyHubSections.tsx",
+      "reviewedSha256": "e88ae0e39d1f56ee0d5c994ca619ee9dc8ded077d6570c8f0b92aa3139e22e2d",
+      "freshSha256": "e88ae0e39d1f56ee0d5c994ca619ee9dc8ded077d6570c8f0b92aa3139e22e2d",
+      "currentSha256": "e88ae0e39d1f56ee0d5c994ca619ee9dc8ded077d6570c8f0b92aa3139e22e2d",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\components\\BmwHubSections.tsx",
+      "reviewedSha256": "6099f83e51c4289a9095a61bc3f86403235216cf308e634e75a361fd35edbd12",
+      "freshSha256": "6099f83e51c4289a9095a61bc3f86403235216cf308e634e75a361fd35edbd12",
+      "currentSha256": "6099f83e51c4289a9095a61bc3f86403235216cf308e634e75a361fd35edbd12",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\components\\BmwKnowledgeHub.tsx",
+      "reviewedSha256": "250a6da49763d2736a1ad3be6c360ce6d6e023514e287afda01344011016e9f4",
+      "freshSha256": "250a6da49763d2736a1ad3be6c360ce6d6e023514e287afda01344011016e9f4",
+      "currentSha256": "250a6da49763d2736a1ad3be6c360ce6d6e023514e287afda01344011016e9f4",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\components\\BrandBookingForm.tsx",
+      "reviewedSha256": "13868dd66bc8f66456297475c4580ebece1af9cdc459807ab7c5f333ce6984b6",
+      "freshSha256": "13868dd66bc8f66456297475c4580ebece1af9cdc459807ab7c5f333ce6984b6",
+      "currentSha256": "13868dd66bc8f66456297475c4580ebece1af9cdc459807ab7c5f333ce6984b6",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\components\\BrandPaintCareLinks.tsx",
+      "reviewedSha256": "a298527d9cd0d3106f3062b43b2f046fc1f9ee6e72d4dbfb7d655cfc7655a64f",
+      "freshSha256": "a298527d9cd0d3106f3062b43b2f046fc1f9ee6e72d4dbfb7d655cfc7655a64f",
+      "currentSha256": "a298527d9cd0d3106f3062b43b2f046fc1f9ee6e72d4dbfb7d655cfc7655a64f",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\components\\BrandServiceScope.tsx",
+      "reviewedSha256": "090efec27c4931938ce0eee88501a7d994a1b4bd7ce88020520142cc9d2ce8f9",
+      "freshSha256": "090efec27c4931938ce0eee88501a7d994a1b4bd7ce88020520142cc9d2ce8f9",
+      "currentSha256": "090efec27c4931938ce0eee88501a7d994a1b4bd7ce88020520142cc9d2ce8f9",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\components\\BrandsWeServe.tsx",
+      "reviewedSha256": "5aa561dff7df33c281ffab38618007907014f7a1e9cf1870d19f66a5aa0adeed",
+      "freshSha256": "5aa561dff7df33c281ffab38618007907014f7a1e9cf1870d19f66a5aa0adeed",
+      "currentSha256": "5aa561dff7df33c281ffab38618007907014f7a1e9cf1870d19f66a5aa0adeed",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\components\\CustomCursor.tsx",
+      "reviewedSha256": "93f247f6437e16912d1087d453a7cf2b9408ff5d2fd0a6d1062f8f1e1204bf4b",
+      "freshSha256": "93f247f6437e16912d1087d453a7cf2b9408ff5d2fd0a6d1062f8f1e1204bf4b",
+      "currentSha256": "93f247f6437e16912d1087d453a7cf2b9408ff5d2fd0a6d1062f8f1e1204bf4b",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\components\\DiagnosticAcEnquiryPanel.tsx",
+      "reviewedSha256": "5f1a1e5f027e96e915f35b211973c521fa18f0584b3cb66868031c81e81d1bfa",
+      "freshSha256": "5f1a1e5f027e96e915f35b211973c521fa18f0584b3cb66868031c81e81d1bfa",
+      "currentSha256": "5f1a1e5f027e96e915f35b211973c521fa18f0584b3cb66868031c81e81d1bfa",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\components\\EcuElectronicsEnquiryPanel.tsx",
+      "reviewedSha256": "3eebc5bc1eb9c0843e5c5676d6c583812f6ae4d5fb79a12bbb89ffe439c3660b",
+      "freshSha256": "3eebc5bc1eb9c0843e5c5676d6c583812f6ae4d5fb79a12bbb89ffe439c3660b",
+      "currentSha256": "3eebc5bc1eb9c0843e5c5676d6c583812f6ae4d5fb79a12bbb89ffe439c3660b",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\components\\FAQ.tsx",
+      "reviewedSha256": "ec481dc5418033846f95b0eec663026f7044d7360763f7e7a6aef4108b1d46d1",
+      "freshSha256": "ec481dc5418033846f95b0eec663026f7044d7360763f7e7a6aef4108b1d46d1",
+      "currentSha256": "ec481dc5418033846f95b0eec663026f7044d7360763f7e7a6aef4108b1d46d1",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\components\\FerrariKnowledgeCentre.tsx",
+      "reviewedSha256": "a207370193b533480e5c9b01fa479b3bef4d1c5f6e1e23f619c8882175953dcb",
+      "freshSha256": "a207370193b533480e5c9b01fa479b3bef4d1c5f6e1e23f619c8882175953dcb",
+      "currentSha256": "a207370193b533480e5c9b01fa479b3bef4d1c5f6e1e23f619c8882175953dcb",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\components\\FinalCTA.tsx",
+      "reviewedSha256": "6abdba429af04ae607dffb2b50ebc0728acb1e9900adb6f019d8c0b07135f729",
+      "freshSha256": "6abdba429af04ae607dffb2b50ebc0728acb1e9900adb6f019d8c0b07135f729",
+      "currentSha256": "6abdba429af04ae607dffb2b50ebc0728acb1e9900adb6f019d8c0b07135f729",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\components\\Footer.tsx",
+      "reviewedSha256": "a792225ae1bb6dc7f11542c92bb54912712e5c7d19dce2466e7389d6086149d3",
+      "freshSha256": "a792225ae1bb6dc7f11542c92bb54912712e5c7d19dce2466e7389d6086149d3",
+      "currentSha256": "a792225ae1bb6dc7f11542c92bb54912712e5c7d19dce2466e7389d6086149d3",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\components\\GoogleReviews.tsx",
+      "reviewedSha256": "b12e13966ca2effad35445e00661a55c5d6e183e40e237f2c3158a1f99a74c00",
+      "freshSha256": "b12e13966ca2effad35445e00661a55c5d6e183e40e237f2c3158a1f99a74c00",
+      "currentSha256": "b12e13966ca2effad35445e00661a55c5d6e183e40e237f2c3158a1f99a74c00",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\components\\Header.tsx",
+      "reviewedSha256": "75409231f9ec5594c510f7bcbbd6b81fd326f2ef96864de4d4d27ce3040666b5",
+      "freshSha256": "75409231f9ec5594c510f7bcbbd6b81fd326f2ef96864de4d4d27ce3040666b5",
+      "currentSha256": "75409231f9ec5594c510f7bcbbd6b81fd326f2ef96864de4d4d27ce3040666b5",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\components\\Hero.tsx",
+      "reviewedSha256": "ebb54217bd2472bca00e40e10791194bd182d74cea745297700feab30e5966f0",
+      "freshSha256": "ebb54217bd2472bca00e40e10791194bd182d74cea745297700feab30e5966f0",
+      "currentSha256": "ebb54217bd2472bca00e40e10791194bd182d74cea745297700feab30e5966f0",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\components\\LamborghiniHubSections.tsx",
+      "reviewedSha256": "9463a714def8c4975a80bdc6ca42014844290875413ae835968c8d6e2da14371",
+      "freshSha256": "9463a714def8c4975a80bdc6ca42014844290875413ae835968c8d6e2da14371",
+      "currentSha256": "9463a714def8c4975a80bdc6ca42014844290875413ae835968c8d6e2da14371",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\components\\LegacyRedirectHandler.tsx",
+      "reviewedSha256": "7a72df650fee1c945f7d52026d93163cdba5b0c8f61a11c8b8d212cc9e460b41",
+      "freshSha256": "7a72df650fee1c945f7d52026d93163cdba5b0c8f61a11c8b8d212cc9e460b41",
+      "currentSha256": "7a72df650fee1c945f7d52026d93163cdba5b0c8f61a11c8b8d212cc9e460b41",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\components\\LocaleRedirect.tsx",
+      "reviewedSha256": "1c256594322b464b15a34d919ec5a0d4b2af2d01ca248c57df3efe59e35f8ec8",
+      "freshSha256": "1c256594322b464b15a34d919ec5a0d4b2af2d01ca248c57df3efe59e35f8ec8",
+      "currentSha256": "1c256594322b464b15a34d919ec5a0d4b2af2d01ca248c57df3efe59e35f8ec8",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\components\\LocalizedLink.tsx",
+      "reviewedSha256": "de59d30f199a8eac490f3eda8c304bf713f927d185e59fd67a5d9ce4357de26c",
+      "freshSha256": "de59d30f199a8eac490f3eda8c304bf713f927d185e59fd67a5d9ce4357de26c",
+      "currentSha256": "de59d30f199a8eac490f3eda8c304bf713f927d185e59fd67a5d9ce4357de26c",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\components\\MascotWidget.tsx",
+      "reviewedSha256": "6344a63ce2575a61c5259b6c0fc6582c53faf951dd587904f911c3f26dc384de",
+      "freshSha256": "6344a63ce2575a61c5259b6c0fc6582c53faf951dd587904f911c3f26dc384de",
+      "currentSha256": "6344a63ce2575a61c5259b6c0fc6582c53faf951dd587904f911c3f26dc384de",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\components\\MclarenHubSections.tsx",
+      "reviewedSha256": "77d158678536042472a457d5bf747f5879228a912f664a25800d32210ea690f5",
+      "freshSha256": "77d158678536042472a457d5bf747f5879228a912f664a25800d32210ea690f5",
+      "currentSha256": "77d158678536042472a457d5bf747f5879228a912f664a25800d32210ea690f5",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\components\\MercedesMaintenanceScope.tsx",
+      "reviewedSha256": "1e6728a7de40ef56f7bf77af495784cff38c34cd9a653d6777757fee62616aff",
+      "freshSha256": "1e6728a7de40ef56f7bf77af495784cff38c34cd9a653d6777757fee62616aff",
+      "currentSha256": "1e6728a7de40ef56f7bf77af495784cff38c34cd9a653d6777757fee62616aff",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\components\\MercedesServiceBookingForm.tsx",
+      "reviewedSha256": "c45f5468d2361b5b2de37edee90fff8b1d0cd145e2379439c8aad973fd1291fd",
+      "freshSha256": "c45f5468d2361b5b2de37edee90fff8b1d0cd145e2379439c8aad973fd1291fd",
+      "currentSha256": "c45f5468d2361b5b2de37edee90fff8b1d0cd145e2379439c8aad973fd1291fd",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\components\\PageIntro.tsx",
+      "reviewedSha256": "356b0a46cf7d93047f8dce12c5de9260d6a5d2a0ffcd0688ae3678f5c276ecc5",
+      "freshSha256": "356b0a46cf7d93047f8dce12c5de9260d6a5d2a0ffcd0688ae3678f5c276ecc5",
+      "currentSha256": "356b0a46cf7d93047f8dce12c5de9260d6a5d2a0ffcd0688ae3678f5c276ecc5",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\components\\PaintAssessmentForm.tsx",
+      "reviewedSha256": "a8a1e85a5b2682ff277f31cc41d74c1a35c892bc92763e9f1df3ebfb70f600cf",
+      "freshSha256": "a8a1e85a5b2682ff277f31cc41d74c1a35c892bc92763e9f1df3ebfb70f600cf",
+      "currentSha256": "a8a1e85a5b2682ff277f31cc41d74c1a35c892bc92763e9f1df3ebfb70f600cf",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\components\\PaintCorrectionProjects.tsx",
+      "reviewedSha256": "8fc6df2724094846bda3b884b6226ddbe783f1a375c8496210f68ac288ffba3d",
+      "freshSha256": "8fc6df2724094846bda3b884b6226ddbe783f1a375c8496210f68ac288ffba3d",
+      "currentSha256": "8fc6df2724094846bda3b884b6226ddbe783f1a375c8496210f68ac288ffba3d",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\components\\PerformanceResults.tsx",
+      "reviewedSha256": "2ce23d0313d93a42daa95038da942d2904c5b2f1530ae6445e91998bee4fa3eb",
+      "freshSha256": "2ce23d0313d93a42daa95038da942d2904c5b2f1530ae6445e91998bee4fa3eb",
+      "currentSha256": "2ce23d0313d93a42daa95038da942d2904c5b2f1530ae6445e91998bee4fa3eb",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\components\\PorscheKnowledgeCentre.tsx",
+      "reviewedSha256": "c41bc3085bb3d5fce2c73e169b5b8b5c66eaec94f43fbbc2291e80e551e911fb",
+      "freshSha256": "c41bc3085bb3d5fce2c73e169b5b8b5c66eaec94f43fbbc2291e80e551e911fb",
+      "currentSha256": "c41bc3085bb3d5fce2c73e169b5b8b5c66eaec94f43fbbc2291e80e551e911fb",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\components\\PPFCeramicSection.tsx",
+      "reviewedSha256": "50790fc2f089fb00e66a998bbbebdda23e53fb658b0b4c6fc7a08ce55c268eab",
+      "freshSha256": "50790fc2f089fb00e66a998bbbebdda23e53fb658b0b4c6fc7a08ce55c268eab",
+      "currentSha256": "50790fc2f089fb00e66a998bbbebdda23e53fb658b0b4c6fc7a08ce55c268eab",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\components\\PpfQuoteForm.tsx",
+      "reviewedSha256": "9c1c7f3000ef41172124bc347c7e48387e356a5cd0dff284f509c8f1e7f0b696",
+      "freshSha256": "9c1c7f3000ef41172124bc347c7e48387e356a5cd0dff284f509c8f1e7f0b696",
+      "currentSha256": "9c1c7f3000ef41172124bc347c7e48387e356a5cd0dff284f509c8f1e7f0b696",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\components\\PreserveQueryNavigate.tsx",
+      "reviewedSha256": "36078dcb60a6b41a1fb00c8791f545da8341e85e06f01e0d099a7afa0610ee88",
+      "freshSha256": "36078dcb60a6b41a1fb00c8791f545da8341e85e06f01e0d099a7afa0610ee88",
+      "currentSha256": "36078dcb60a6b41a1fb00c8791f545da8341e85e06f01e0d099a7afa0610ee88",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\components\\ProtectionProjects.tsx",
+      "reviewedSha256": "33a6897bed942b2e6a039023298a522457e0e0f5161f1e5606112e343fa23b54",
+      "freshSha256": "33a6897bed942b2e6a039023298a522457e0e0f5161f1e5606112e343fa23b54",
+      "currentSha256": "33a6897bed942b2e6a039023298a522457e0e0f5161f1e5606112e343fa23b54",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\components\\RepairEnquiryPanel.tsx",
+      "reviewedSha256": "976f270a7d55fdc9e239ed1684564f1ea1d4ae5c32722f8fb60108db5751b09b",
+      "freshSha256": "976f270a7d55fdc9e239ed1684564f1ea1d4ae5c32722f8fb60108db5751b09b",
+      "currentSha256": "976f270a7d55fdc9e239ed1684564f1ea1d4ae5c32722f8fb60108db5751b09b",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\components\\RollsRoyceHubSections.tsx",
+      "reviewedSha256": "01805ea91b73747668afb90b5ceff538520d1be98b1870f0ebdc878e73bd3666",
+      "freshSha256": "01805ea91b73747668afb90b5ceff538520d1be98b1870f0ebdc878e73bd3666",
+      "currentSha256": "01805ea91b73747668afb90b5ceff538520d1be98b1870f0ebdc878e73bd3666",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\components\\RouteBoundary.tsx",
+      "reviewedSha256": "76a02839f20a4bd482f0f9148909f02e2a0906f0cd4824962f013725fb590b2f",
+      "freshSha256": "76a02839f20a4bd482f0f9148909f02e2a0906f0cd4824962f013725fb590b2f",
+      "currentSha256": "76a02839f20a4bd482f0f9148909f02e2a0906f0cd4824962f013725fb590b2f",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\components\\RoxHubSections.tsx",
+      "reviewedSha256": "1c2663cd32c88f9711958ab8a3f388eadb2811af9a61908fc9169f05440e0b98",
+      "freshSha256": "1c2663cd32c88f9711958ab8a3f388eadb2811af9a61908fc9169f05440e0b98",
+      "currentSha256": "1c2663cd32c88f9711958ab8a3f388eadb2811af9a61908fc9169f05440e0b98",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\components\\ServiceDetailDialog.tsx",
+      "reviewedSha256": "19c77163a3433661bc5d82cd7926984125103cce0f341a62a1271bd9453ce08b",
+      "freshSha256": "19c77163a3433661bc5d82cd7926984125103cce0f341a62a1271bd9453ce08b",
+      "currentSha256": "19c77163a3433661bc5d82cd7926984125103cce0f341a62a1271bd9453ce08b",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\components\\ServiceGrid.tsx",
+      "reviewedSha256": "c9bc1c58050342cc70ff9e0afcb433ea047b6bce4869d263b40ef0122a5d9962",
+      "freshSha256": "c9bc1c58050342cc70ff9e0afcb433ea047b6bce4869d263b40ef0122a5d9962",
+      "currentSha256": "c9bc1c58050342cc70ff9e0afcb433ea047b6bce4869d263b40ef0122a5d9962",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\components\\TrustBar.tsx",
+      "reviewedSha256": "2d8c2ccff6362c9ab7693112251cc4f3afdc9bc34b05002de78842450db3d36e",
+      "freshSha256": "2d8c2ccff6362c9ab7693112251cc4f3afdc9bc34b05002de78842450db3d36e",
+      "currentSha256": "2d8c2ccff6362c9ab7693112251cc4f3afdc9bc34b05002de78842450db3d36e",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\components\\TuningConfigurationDetails.tsx",
+      "reviewedSha256": "1d5080d08774e109be607b89b180ecec98480e903d8d13e017e5d79b4fcc44e6",
+      "freshSha256": "1d5080d08774e109be607b89b180ecec98480e903d8d13e017e5d79b4fcc44e6",
+      "currentSha256": "1d5080d08774e109be607b89b180ecec98480e903d8d13e017e5d79b4fcc44e6",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\components\\TuningConfigurator.tsx",
+      "reviewedSha256": "8f6c3c0a11f9c8901dde008c15c30d2f0538e4edbbd4bcd40813e1242400a96f",
+      "freshSha256": "8f6c3c0a11f9c8901dde008c15c30d2f0538e4edbbd4bcd40813e1242400a96f",
+      "currentSha256": "8f6c3c0a11f9c8901dde008c15c30d2f0538e4edbbd4bcd40813e1242400a96f",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\components\\WhatWeDo.tsx",
+      "reviewedSha256": "2e9ed87ddfa66d96bd525d90b331e6fec4b6bcfff070044c487d209a046ae585",
+      "freshSha256": "2e9ed87ddfa66d96bd525d90b331e6fec4b6bcfff070044c487d209a046ae585",
+      "currentSha256": "2e9ed87ddfa66d96bd525d90b331e6fec4b6bcfff070044c487d209a046ae585",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\components\\WhyChooseUs.tsx",
+      "reviewedSha256": "3ed2f2bd58c3f17488650bc85ef9a601b0f4f7ae01660a02fda92ac264ba1dab",
+      "freshSha256": "3ed2f2bd58c3f17488650bc85ef9a601b0f4f7ae01660a02fda92ac264ba1dab",
+      "currentSha256": "3ed2f2bd58c3f17488650bc85ef9a601b0f4f7ae01660a02fda92ac264ba1dab",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\components\\ChatBot\\ChatBot.tsx",
+      "reviewedSha256": "2fe906ba698d567c9e6f4dad69390827c3a8720d09150bc15247315197172cad",
+      "freshSha256": "2fe906ba698d567c9e6f4dad69390827c3a8720d09150bc15247315197172cad",
+      "currentSha256": "2fe906ba698d567c9e6f4dad69390827c3a8720d09150bc15247315197172cad",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\components\\ChatBot\\ChatBotIcon.tsx",
+      "reviewedSha256": "2ed3d5e89590c6dea52693d97bd68cd4a6111f7a5c8d351629a92b8004a22511",
+      "freshSha256": "2ed3d5e89590c6dea52693d97bd68cd4a6111f7a5c8d351629a92b8004a22511",
+      "currentSha256": "2ed3d5e89590c6dea52693d97bd68cd4a6111f7a5c8d351629a92b8004a22511",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\components\\ChatBot\\ChatWindow.tsx",
+      "reviewedSha256": "866b2995333f41078439c3c6cbbc0dc0ca4371ae1aa5f7f9ef019e633fa5f86d",
+      "freshSha256": "866b2995333f41078439c3c6cbbc0dc0ca4371ae1aa5f7f9ef019e633fa5f86d",
+      "currentSha256": "866b2995333f41078439c3c6cbbc0dc0ca4371ae1aa5f7f9ef019e633fa5f86d",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\components\\motion\\CountUp.tsx",
+      "reviewedSha256": "1a1a51f576eea57d901ab7b1f1a8624836d0eff43c4727d852f67f25ad4bd241",
+      "freshSha256": "1a1a51f576eea57d901ab7b1f1a8624836d0eff43c4727d852f67f25ad4bd241",
+      "currentSha256": "1a1a51f576eea57d901ab7b1f1a8624836d0eff43c4727d852f67f25ad4bd241",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\components\\motion\\Reveal.tsx",
+      "reviewedSha256": "5ccc1b0c49b9116f51ad97e1e606022cf70ab53c0fd440d71f44f886f7168229",
+      "freshSha256": "5ccc1b0c49b9116f51ad97e1e606022cf70ab53c0fd440d71f44f886f7168229",
+      "currentSha256": "5ccc1b0c49b9116f51ad97e1e606022cf70ab53c0fd440d71f44f886f7168229",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\components\\ui\\accordion.tsx",
+      "reviewedSha256": "1b13005a243e9d9e943c5bbb97f6d8fccdef1982862a7f92c3cf109a07e16822",
+      "freshSha256": "1b13005a243e9d9e943c5bbb97f6d8fccdef1982862a7f92c3cf109a07e16822",
+      "currentSha256": "1b13005a243e9d9e943c5bbb97f6d8fccdef1982862a7f92c3cf109a07e16822",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\components\\ui\\alert-dialog.tsx",
+      "reviewedSha256": "938870c65894f35eefcd4723e28fa5408d1332b783768900350780800161b7ab",
+      "freshSha256": "938870c65894f35eefcd4723e28fa5408d1332b783768900350780800161b7ab",
+      "currentSha256": "938870c65894f35eefcd4723e28fa5408d1332b783768900350780800161b7ab",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\components\\ui\\alert.tsx",
+      "reviewedSha256": "1aaba23c7a1095f7abea7c9f6ce12a43c22bb8f97e957c9cae222666e0c8be83",
+      "freshSha256": "1aaba23c7a1095f7abea7c9f6ce12a43c22bb8f97e957c9cae222666e0c8be83",
+      "currentSha256": "1aaba23c7a1095f7abea7c9f6ce12a43c22bb8f97e957c9cae222666e0c8be83",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\components\\ui\\aspect-ratio.tsx",
+      "reviewedSha256": "62f29cd87c19f52d403dc2d17823849db2c8cbd541c9f96de20ef13e58d379db",
+      "freshSha256": "62f29cd87c19f52d403dc2d17823849db2c8cbd541c9f96de20ef13e58d379db",
+      "currentSha256": "62f29cd87c19f52d403dc2d17823849db2c8cbd541c9f96de20ef13e58d379db",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\components\\ui\\avatar.tsx",
+      "reviewedSha256": "57a595117f720435f3552a140f817db59c7a7a8f1719eaad6fd48744b8b88f55",
+      "freshSha256": "57a595117f720435f3552a140f817db59c7a7a8f1719eaad6fd48744b8b88f55",
+      "currentSha256": "57a595117f720435f3552a140f817db59c7a7a8f1719eaad6fd48744b8b88f55",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\components\\ui\\badge.tsx",
+      "reviewedSha256": "563824ae3f6b0a5de408c13e58fe2a195808ff57cb09698fcaf2e875434bfb98",
+      "freshSha256": "563824ae3f6b0a5de408c13e58fe2a195808ff57cb09698fcaf2e875434bfb98",
+      "currentSha256": "563824ae3f6b0a5de408c13e58fe2a195808ff57cb09698fcaf2e875434bfb98",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\components\\ui\\breadcrumb.tsx",
+      "reviewedSha256": "dc4d063ba3cf6ab4a38371297ca94e81db6bbb95541e87efa1ff935b47f8a1f4",
+      "freshSha256": "dc4d063ba3cf6ab4a38371297ca94e81db6bbb95541e87efa1ff935b47f8a1f4",
+      "currentSha256": "dc4d063ba3cf6ab4a38371297ca94e81db6bbb95541e87efa1ff935b47f8a1f4",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\components\\ui\\button.tsx",
+      "reviewedSha256": "376e7a3c1f6efe5bec442d24106cfb9da6aacc8ccf6fc4b859dfa776949eec41",
+      "freshSha256": "376e7a3c1f6efe5bec442d24106cfb9da6aacc8ccf6fc4b859dfa776949eec41",
+      "currentSha256": "376e7a3c1f6efe5bec442d24106cfb9da6aacc8ccf6fc4b859dfa776949eec41",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\components\\ui\\calendar.tsx",
+      "reviewedSha256": "c6ca0fd8f2ac3ef226ba291cc6842427c3b1e7dba3ae4fdf632353f624bfd83d",
+      "freshSha256": "c6ca0fd8f2ac3ef226ba291cc6842427c3b1e7dba3ae4fdf632353f624bfd83d",
+      "currentSha256": "c6ca0fd8f2ac3ef226ba291cc6842427c3b1e7dba3ae4fdf632353f624bfd83d",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\components\\ui\\card.tsx",
+      "reviewedSha256": "9279e6cc5d87b911b83a0906789adbb1c6b6985233c6d38a7ad29606c34bc43f",
+      "freshSha256": "9279e6cc5d87b911b83a0906789adbb1c6b6985233c6d38a7ad29606c34bc43f",
+      "currentSha256": "9279e6cc5d87b911b83a0906789adbb1c6b6985233c6d38a7ad29606c34bc43f",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\components\\ui\\carousel.tsx",
+      "reviewedSha256": "d48a52f0bc5161c47ee818c88bebedea98c14742a1e4d3c76639a612ddbb376a",
+      "freshSha256": "d48a52f0bc5161c47ee818c88bebedea98c14742a1e4d3c76639a612ddbb376a",
+      "currentSha256": "d48a52f0bc5161c47ee818c88bebedea98c14742a1e4d3c76639a612ddbb376a",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\components\\ui\\chart.tsx",
+      "reviewedSha256": "976321443cfa59f1c9b010349202e44b85fe9c899e38cefcda1f97978b7cc228",
+      "freshSha256": "976321443cfa59f1c9b010349202e44b85fe9c899e38cefcda1f97978b7cc228",
+      "currentSha256": "976321443cfa59f1c9b010349202e44b85fe9c899e38cefcda1f97978b7cc228",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\components\\ui\\checkbox.tsx",
+      "reviewedSha256": "8fe06fca3f25a01e2ecf407f258a730580ffd07515efa30acbbe0ffbe4571383",
+      "freshSha256": "8fe06fca3f25a01e2ecf407f258a730580ffd07515efa30acbbe0ffbe4571383",
+      "currentSha256": "8fe06fca3f25a01e2ecf407f258a730580ffd07515efa30acbbe0ffbe4571383",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\components\\ui\\collapsible.tsx",
+      "reviewedSha256": "a204a41111b93ca714e5e0a84e7ea09520f7783f2706bf00ecb2bcad5a0659fd",
+      "freshSha256": "a204a41111b93ca714e5e0a84e7ea09520f7783f2706bf00ecb2bcad5a0659fd",
+      "currentSha256": "a204a41111b93ca714e5e0a84e7ea09520f7783f2706bf00ecb2bcad5a0659fd",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\components\\ui\\command.tsx",
+      "reviewedSha256": "a41daba29992c7b86062be9b4f3c73fb95bfd68580b1aa7ddeabe04a2f079509",
+      "freshSha256": "a41daba29992c7b86062be9b4f3c73fb95bfd68580b1aa7ddeabe04a2f079509",
+      "currentSha256": "a41daba29992c7b86062be9b4f3c73fb95bfd68580b1aa7ddeabe04a2f079509",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\components\\ui\\context-menu.tsx",
+      "reviewedSha256": "dbbfcf7e0ed65010362f59cf58da7475f6b6e96c8f85657762d6de43644d7bdc",
+      "freshSha256": "dbbfcf7e0ed65010362f59cf58da7475f6b6e96c8f85657762d6de43644d7bdc",
+      "currentSha256": "dbbfcf7e0ed65010362f59cf58da7475f6b6e96c8f85657762d6de43644d7bdc",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\components\\ui\\dialog.tsx",
+      "reviewedSha256": "d4ea8394e9b774f2386f93616b61834ce532172885ff1d6d177390295b363fbb",
+      "freshSha256": "d4ea8394e9b774f2386f93616b61834ce532172885ff1d6d177390295b363fbb",
+      "currentSha256": "d4ea8394e9b774f2386f93616b61834ce532172885ff1d6d177390295b363fbb",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\components\\ui\\drawer.tsx",
+      "reviewedSha256": "9710f71dcf19d52d2e757ea2f364a03b4bd4546161f4bbebfdd8a829a382748a",
+      "freshSha256": "9710f71dcf19d52d2e757ea2f364a03b4bd4546161f4bbebfdd8a829a382748a",
+      "currentSha256": "9710f71dcf19d52d2e757ea2f364a03b4bd4546161f4bbebfdd8a829a382748a",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\components\\ui\\dropdown-menu.tsx",
+      "reviewedSha256": "1c04c9a69cc649e77fb606365f31cc80c13035fb7c56b1eb414e294a92854fe3",
+      "freshSha256": "1c04c9a69cc649e77fb606365f31cc80c13035fb7c56b1eb414e294a92854fe3",
+      "currentSha256": "1c04c9a69cc649e77fb606365f31cc80c13035fb7c56b1eb414e294a92854fe3",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\components\\ui\\form.tsx",
+      "reviewedSha256": "f334f27989a258ebe0435869083c72adcc6c472da52bd2c82253f2a90818630b",
+      "freshSha256": "f334f27989a258ebe0435869083c72adcc6c472da52bd2c82253f2a90818630b",
+      "currentSha256": "f334f27989a258ebe0435869083c72adcc6c472da52bd2c82253f2a90818630b",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\components\\ui\\hover-card.tsx",
+      "reviewedSha256": "87816a8b7f1d716d6cd53164f30d0b7fe818e4de94371cddcf88cddf5e755326",
+      "freshSha256": "87816a8b7f1d716d6cd53164f30d0b7fe818e4de94371cddcf88cddf5e755326",
+      "currentSha256": "87816a8b7f1d716d6cd53164f30d0b7fe818e4de94371cddcf88cddf5e755326",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\components\\ui\\input-otp.tsx",
+      "reviewedSha256": "2ee885a5810101b04bcf296775ba3607dd1b22a4ba03ea2a9bc9e809134b3f77",
+      "freshSha256": "2ee885a5810101b04bcf296775ba3607dd1b22a4ba03ea2a9bc9e809134b3f77",
+      "currentSha256": "2ee885a5810101b04bcf296775ba3607dd1b22a4ba03ea2a9bc9e809134b3f77",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\components\\ui\\input.tsx",
+      "reviewedSha256": "28de1821f9b05b4b16e99f4757c68303fb187447354d6e894b3709a27de80f46",
+      "freshSha256": "28de1821f9b05b4b16e99f4757c68303fb187447354d6e894b3709a27de80f46",
+      "currentSha256": "28de1821f9b05b4b16e99f4757c68303fb187447354d6e894b3709a27de80f46",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\components\\ui\\label.tsx",
+      "reviewedSha256": "ece819598d95360af8aedf36d90be41a93af49797240a6d6a69181180b095a76",
+      "freshSha256": "ece819598d95360af8aedf36d90be41a93af49797240a6d6a69181180b095a76",
+      "currentSha256": "ece819598d95360af8aedf36d90be41a93af49797240a6d6a69181180b095a76",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\components\\ui\\menubar.tsx",
+      "reviewedSha256": "31a78787071e6c334594ec0d8f48c64e1b3618a2ba3b85c024f112c8e902abdb",
+      "freshSha256": "31a78787071e6c334594ec0d8f48c64e1b3618a2ba3b85c024f112c8e902abdb",
+      "currentSha256": "31a78787071e6c334594ec0d8f48c64e1b3618a2ba3b85c024f112c8e902abdb",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\components\\ui\\navigation-menu.tsx",
+      "reviewedSha256": "71cf201e04c0eca840d481d0a101254a2eeab3291d95eb7f5a3e870ac3cbbc98",
+      "freshSha256": "71cf201e04c0eca840d481d0a101254a2eeab3291d95eb7f5a3e870ac3cbbc98",
+      "currentSha256": "71cf201e04c0eca840d481d0a101254a2eeab3291d95eb7f5a3e870ac3cbbc98",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\components\\ui\\pagination.tsx",
+      "reviewedSha256": "7f9821730c7eea34c32da11aa82185d3db1d36f9d476fa9d5ae14765c35a6fc8",
+      "freshSha256": "7f9821730c7eea34c32da11aa82185d3db1d36f9d476fa9d5ae14765c35a6fc8",
+      "currentSha256": "7f9821730c7eea34c32da11aa82185d3db1d36f9d476fa9d5ae14765c35a6fc8",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\components\\ui\\popover.tsx",
+      "reviewedSha256": "dea6d875c5390ac91e196220e5cf4413155c1031f9fe8572a99ae05dc7d133d6",
+      "freshSha256": "dea6d875c5390ac91e196220e5cf4413155c1031f9fe8572a99ae05dc7d133d6",
+      "currentSha256": "dea6d875c5390ac91e196220e5cf4413155c1031f9fe8572a99ae05dc7d133d6",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\components\\ui\\progress.tsx",
+      "reviewedSha256": "e17e387ed1c2981e690b6ed4c2b0e470a683fcadd6d9a704d9a1de0f442f55ff",
+      "freshSha256": "e17e387ed1c2981e690b6ed4c2b0e470a683fcadd6d9a704d9a1de0f442f55ff",
+      "currentSha256": "e17e387ed1c2981e690b6ed4c2b0e470a683fcadd6d9a704d9a1de0f442f55ff",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\components\\ui\\radio-group.tsx",
+      "reviewedSha256": "e67b5ffbd1727e873ca9b2593a7e798328b1d4ef20f507d8379aea3fe69abe93",
+      "freshSha256": "e67b5ffbd1727e873ca9b2593a7e798328b1d4ef20f507d8379aea3fe69abe93",
+      "currentSha256": "e67b5ffbd1727e873ca9b2593a7e798328b1d4ef20f507d8379aea3fe69abe93",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\components\\ui\\resizable.tsx",
+      "reviewedSha256": "661b9c7746af0e15b19a82a3c7ff738572cfebfbe7aebd51fc9bc244aca18453",
+      "freshSha256": "661b9c7746af0e15b19a82a3c7ff738572cfebfbe7aebd51fc9bc244aca18453",
+      "currentSha256": "661b9c7746af0e15b19a82a3c7ff738572cfebfbe7aebd51fc9bc244aca18453",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\components\\ui\\scroll-area.tsx",
+      "reviewedSha256": "5bbf2efc963f2a62d9f9d41fdf2a96f798ad409ee2a1fdb1fe51da947d882dc7",
+      "freshSha256": "5bbf2efc963f2a62d9f9d41fdf2a96f798ad409ee2a1fdb1fe51da947d882dc7",
+      "currentSha256": "5bbf2efc963f2a62d9f9d41fdf2a96f798ad409ee2a1fdb1fe51da947d882dc7",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\components\\ui\\select.tsx",
+      "reviewedSha256": "8c3930799bbd080d6e2ebf8bcb3b26e48ef5602a46142e630eae53a54a6dd8c6",
+      "freshSha256": "8c3930799bbd080d6e2ebf8bcb3b26e48ef5602a46142e630eae53a54a6dd8c6",
+      "currentSha256": "8c3930799bbd080d6e2ebf8bcb3b26e48ef5602a46142e630eae53a54a6dd8c6",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\components\\ui\\separator.tsx",
+      "reviewedSha256": "1e2f9c2eab409bf25614f4e0b495b9a67646e92a0a7d1a033afaada64fdb1b78",
+      "freshSha256": "1e2f9c2eab409bf25614f4e0b495b9a67646e92a0a7d1a033afaada64fdb1b78",
+      "currentSha256": "1e2f9c2eab409bf25614f4e0b495b9a67646e92a0a7d1a033afaada64fdb1b78",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\components\\ui\\sheet.tsx",
+      "reviewedSha256": "2724802c7c9931e646291a89def1aecd451b5606e40168b7f7ac6d3ec6b5bc09",
+      "freshSha256": "2724802c7c9931e646291a89def1aecd451b5606e40168b7f7ac6d3ec6b5bc09",
+      "currentSha256": "2724802c7c9931e646291a89def1aecd451b5606e40168b7f7ac6d3ec6b5bc09",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\components\\ui\\sidebar.tsx",
+      "reviewedSha256": "086e646d59328c97e3629a64ed8168b0dbe8e1bc5be7113d0b19a81566ece413",
+      "freshSha256": "086e646d59328c97e3629a64ed8168b0dbe8e1bc5be7113d0b19a81566ece413",
+      "currentSha256": "086e646d59328c97e3629a64ed8168b0dbe8e1bc5be7113d0b19a81566ece413",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\components\\ui\\skeleton.tsx",
+      "reviewedSha256": "90badf0dcd440128b81554c06d56c4f01b1ccf03748ca3adf7e4a41d611acddd",
+      "freshSha256": "90badf0dcd440128b81554c06d56c4f01b1ccf03748ca3adf7e4a41d611acddd",
+      "currentSha256": "90badf0dcd440128b81554c06d56c4f01b1ccf03748ca3adf7e4a41d611acddd",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\components\\ui\\slider.tsx",
+      "reviewedSha256": "234d9a3e9b62ce0266d580ce885d59b0b0648c6b833604a8fd7dd389ade95329",
+      "freshSha256": "234d9a3e9b62ce0266d580ce885d59b0b0648c6b833604a8fd7dd389ade95329",
+      "currentSha256": "234d9a3e9b62ce0266d580ce885d59b0b0648c6b833604a8fd7dd389ade95329",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\components\\ui\\sonner.tsx",
+      "reviewedSha256": "09c79304c810c7b9158db73bd4a2261be4f1bf6a5be4d11b7dc2e0322acf04fe",
+      "freshSha256": "09c79304c810c7b9158db73bd4a2261be4f1bf6a5be4d11b7dc2e0322acf04fe",
+      "currentSha256": "09c79304c810c7b9158db73bd4a2261be4f1bf6a5be4d11b7dc2e0322acf04fe",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\components\\ui\\switch.tsx",
+      "reviewedSha256": "9d3d144eb219caccadd9da0eab64f463f4f38fcc05f49f3d9b1438222ddce70f",
+      "freshSha256": "9d3d144eb219caccadd9da0eab64f463f4f38fcc05f49f3d9b1438222ddce70f",
+      "currentSha256": "9d3d144eb219caccadd9da0eab64f463f4f38fcc05f49f3d9b1438222ddce70f",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\components\\ui\\table.tsx",
+      "reviewedSha256": "54bfa4489e6dc84dceb294b63023bb352c6c446c019c67230ce6f1dac76e3713",
+      "freshSha256": "54bfa4489e6dc84dceb294b63023bb352c6c446c019c67230ce6f1dac76e3713",
+      "currentSha256": "54bfa4489e6dc84dceb294b63023bb352c6c446c019c67230ce6f1dac76e3713",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\components\\ui\\tabs.tsx",
+      "reviewedSha256": "cbcded04f856af28223e71674f1cf2c6b4e361a752d4d934f27117b3c990df96",
+      "freshSha256": "cbcded04f856af28223e71674f1cf2c6b4e361a752d4d934f27117b3c990df96",
+      "currentSha256": "cbcded04f856af28223e71674f1cf2c6b4e361a752d4d934f27117b3c990df96",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\components\\ui\\textarea.tsx",
+      "reviewedSha256": "6941189547872c1442861178d1346f6720381cba435f780a011c951683e4c065",
+      "freshSha256": "6941189547872c1442861178d1346f6720381cba435f780a011c951683e4c065",
+      "currentSha256": "6941189547872c1442861178d1346f6720381cba435f780a011c951683e4c065",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\components\\ui\\toast.tsx",
+      "reviewedSha256": "2da684420d53b7826485853a5f433bc794eb8a3fa3ca99db7cabb59974dfff38",
+      "freshSha256": "2da684420d53b7826485853a5f433bc794eb8a3fa3ca99db7cabb59974dfff38",
+      "currentSha256": "2da684420d53b7826485853a5f433bc794eb8a3fa3ca99db7cabb59974dfff38",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\components\\ui\\toaster.tsx",
+      "reviewedSha256": "d336e69dc56f72df1da448f1f39eedddb3b7e0dd0e5a69ca5be8db7acb32b7e4",
+      "freshSha256": "d336e69dc56f72df1da448f1f39eedddb3b7e0dd0e5a69ca5be8db7acb32b7e4",
+      "currentSha256": "d336e69dc56f72df1da448f1f39eedddb3b7e0dd0e5a69ca5be8db7acb32b7e4",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\components\\ui\\toggle-group.tsx",
+      "reviewedSha256": "fd6110ff2f0da54e118917a41567bcb41a5da68179c9157adb2bda80e79c48ce",
+      "freshSha256": "fd6110ff2f0da54e118917a41567bcb41a5da68179c9157adb2bda80e79c48ce",
+      "currentSha256": "fd6110ff2f0da54e118917a41567bcb41a5da68179c9157adb2bda80e79c48ce",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\components\\ui\\toggle.tsx",
+      "reviewedSha256": "93d544ef6b0e881d8127d7486c0ea27f707e49276be212f58fcf558671b89a91",
+      "freshSha256": "93d544ef6b0e881d8127d7486c0ea27f707e49276be212f58fcf558671b89a91",
+      "currentSha256": "93d544ef6b0e881d8127d7486c0ea27f707e49276be212f58fcf558671b89a91",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\components\\ui\\tooltip.tsx",
+      "reviewedSha256": "80ae1d2a8eca4705593a0964fa4928ccaba357887f6c4e6dee5203e9ff432d97",
+      "freshSha256": "80ae1d2a8eca4705593a0964fa4928ccaba357887f6c4e6dee5203e9ff432d97",
+      "currentSha256": "80ae1d2a8eca4705593a0964fa4928ccaba357887f6c4e6dee5203e9ff432d97",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\components\\ui\\use-toast.ts",
+      "reviewedSha256": "3fbe3b856affdf39f3eb2a82c898b96d44560d93d05674ab2fd6105825ca78d1",
+      "freshSha256": "3fbe3b856affdf39f3eb2a82c898b96d44560d93d05674ab2fd6105825ca78d1",
+      "currentSha256": "3fbe3b856affdf39f3eb2a82c898b96d44560d93d05674ab2fd6105825ca78d1",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\components\\VRX\\ExteriorTabs.tsx",
+      "reviewedSha256": "018a54be3d464858004df526e2b2956f8bee8f8e4aaa124091c484e8fd2a8e47",
+      "freshSha256": "018a54be3d464858004df526e2b2956f8bee8f8e4aaa124091c484e8fd2a8e47",
+      "currentSha256": "018a54be3d464858004df526e2b2956f8bee8f8e4aaa124091c484e8fd2a8e47",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\components\\VRX\\FounderMessage.tsx",
+      "reviewedSha256": "503166a3ebb221fd41704464724060ce4f5aa2900aeb21689a0df0598146b14d",
+      "freshSha256": "503166a3ebb221fd41704464724060ce4f5aa2900aeb21689a0df0598146b14d",
+      "currentSha256": "503166a3ebb221fd41704464724060ce4f5aa2900aeb21689a0df0598146b14d",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\data\\aiGuidePosts.ts",
+      "reviewedSha256": "c67304454f99dba322d052eea0fe9c77638db542cf55f253009bccc1f30973de",
+      "freshSha256": "c67304454f99dba322d052eea0fe9c77638db542cf55f253009bccc1f30973de",
+      "currentSha256": "c67304454f99dba322d052eea0fe9c77638db542cf55f253009bccc1f30973de",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\data\\aiGuidePostsExtra.ts",
+      "reviewedSha256": "3d9abc578b8949575a20c29ed6bbaa40b047445198d337eb9e8c993cf4451877",
+      "freshSha256": "3d9abc578b8949575a20c29ed6bbaa40b047445198d337eb9e8c993cf4451877",
+      "currentSha256": "3d9abc578b8949575a20c29ed6bbaa40b047445198d337eb9e8c993cf4451877",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\data\\arabicServiceContent.ts",
+      "reviewedSha256": "1a894e6c5d59873725813b0dfdfd04817c42799ce07a3dac883fffdc6c9f63a6",
+      "freshSha256": "1a894e6c5d59873725813b0dfdfd04817c42799ce07a3dac883fffdc6c9f63a6",
+      "currentSha256": "1a894e6c5d59873725813b0dfdfd04817c42799ce07a3dac883fffdc6c9f63a6",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\data\\astonMartinHubContent.ts",
+      "reviewedSha256": "1d5bb6435c1c15c1b301a809d8c4e8c58e4944d1fdebada691969cf0045ce54d",
+      "freshSha256": "1d5bb6435c1c15c1b301a809d8c4e8c58e4944d1fdebada691969cf0045ce54d",
+      "currentSha256": "1d5bb6435c1c15c1b301a809d8c4e8c58e4944d1fdebada691969cf0045ce54d",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\data\\audiHubContent.ts",
+      "reviewedSha256": "ce0213d3bd3b1db6bf5788e6ff0e33d04941b1213a5c3304349f11e8f43a14f6",
+      "freshSha256": "ce0213d3bd3b1db6bf5788e6ff0e33d04941b1213a5c3304349f11e8f43a14f6",
+      "currentSha256": "ce0213d3bd3b1db6bf5788e6ff0e33d04941b1213a5c3304349f11e8f43a14f6",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\data\\audiModelPages.ts",
+      "reviewedSha256": "27ff67c64825df792ae1bfdac9814070d26aa3e8731e616a5526c26d2da3be6a",
+      "freshSha256": "27ff67c64825df792ae1bfdac9814070d26aa3e8731e616a5526c26d2da3be6a",
+      "currentSha256": "27ff67c64825df792ae1bfdac9814070d26aa3e8731e616a5526c26d2da3be6a",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\data\\b4UpdatedPaths.ts",
+      "reviewedSha256": "c2b76c9894476fdd81a6b00f773e0b721a14b5f878f58deec06c941d505e2cf0",
+      "freshSha256": "c2b76c9894476fdd81a6b00f773e0b721a14b5f878f58deec06c941d505e2cf0",
+      "currentSha256": "c2b76c9894476fdd81a6b00f773e0b721a14b5f878f58deec06c941d505e2cf0",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\data\\bentleyHubContent.ts",
+      "reviewedSha256": "fcfd621a29f0be251df7f682787f6164a9e8e8986da300ef2adefdcd042923cd",
+      "freshSha256": "fcfd621a29f0be251df7f682787f6164a9e8e8986da300ef2adefdcd042923cd",
+      "currentSha256": "fcfd621a29f0be251df7f682787f6164a9e8e8986da300ef2adefdcd042923cd",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\data\\bestWorkshopPages.ts",
+      "reviewedSha256": "3d447c1813326502c6a7440b3c6a761a6566dd825de0f53e69bff87c8fb74607",
+      "freshSha256": "3d447c1813326502c6a7440b3c6a761a6566dd825de0f53e69bff87c8fb74607",
+      "currentSha256": "3d447c1813326502c6a7440b3c6a761a6566dd825de0f53e69bff87c8fb74607",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\data\\blogPosts.ts",
+      "reviewedSha256": "ba2774b66c0da6420ba61c715179009c3ccaebeaab59535c61c7a298761fe856",
+      "freshSha256": "ba2774b66c0da6420ba61c715179009c3ccaebeaab59535c61c7a298761fe856",
+      "currentSha256": "ba2774b66c0da6420ba61c715179009c3ccaebeaab59535c61c7a298761fe856",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\data\\bmwB3UpdatedPaths.ts",
+      "reviewedSha256": "bc8018f17003ad645a429ff8d1580b4f3702f3cb0ed777dd1cd5a7076ed9c67a",
+      "freshSha256": "bc8018f17003ad645a429ff8d1580b4f3702f3cb0ed777dd1cd5a7076ed9c67a",
+      "currentSha256": "bc8018f17003ad645a429ff8d1580b4f3702f3cb0ed777dd1cd5a7076ed9c67a",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\data\\bmwHubContent.ts",
+      "reviewedSha256": "cf0017fc7035ead7f98085e0349146efef577e77745a9a3cf673904f07ed9e0c",
+      "freshSha256": "cf0017fc7035ead7f98085e0349146efef577e77745a9a3cf673904f07ed9e0c",
+      "currentSha256": "cf0017fc7035ead7f98085e0349146efef577e77745a9a3cf673904f07ed9e0c",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\data\\bmwModelPages.ts",
+      "reviewedSha256": "8829ff52b24282649666d182b83747e6f341639f1ef55d2a1baa15aa817757b3",
+      "freshSha256": "8829ff52b24282649666d182b83747e6f341639f1ef55d2a1baa15aa817757b3",
+      "currentSha256": "8829ff52b24282649666d182b83747e6f341639f1ef55d2a1baa15aa817757b3",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\data\\brands.ts",
+      "reviewedSha256": "bc5ff647c044a7ea4b800cb83738ebdc6ee8bcab720bf6af4e8c2f222a351464",
+      "freshSha256": "bc5ff647c044a7ea4b800cb83738ebdc6ee8bcab720bf6af4e8c2f222a351464",
+      "currentSha256": "bc5ff647c044a7ea4b800cb83738ebdc6ee8bcab720bf6af4e8c2f222a351464",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\data\\brandServices.ts",
+      "reviewedSha256": "3e6f05324a86cb610d8a511851fb7ba2f60c3b3ccf995b04436cd88d368d0e0d",
+      "freshSha256": "3e6f05324a86cb610d8a511851fb7ba2f60c3b3ccf995b04436cd88d368d0e0d",
+      "currentSha256": "3e6f05324a86cb610d8a511851fb7ba2f60c3b3ccf995b04436cd88d368d0e0d",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\data\\brandServiceSprint.ts",
+      "reviewedSha256": "b9ec9f06ffbca5aa32ebc170ed922761eaf78a77ac4eaead4f018368167108c0",
+      "freshSha256": "b9ec9f06ffbca5aa32ebc170ed922761eaf78a77ac4eaead4f018368167108c0",
+      "currentSha256": "b9ec9f06ffbca5aa32ebc170ed922761eaf78a77ac4eaead4f018368167108c0",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\data\\brandWorkshopArticles.ts",
+      "reviewedSha256": "e091ad31c5fe5922ea5769365901c5144c86202539aa03fa433abee49413c612",
+      "freshSha256": "e091ad31c5fe5922ea5769365901c5144c86202539aa03fa433abee49413c612",
+      "currentSha256": "e091ad31c5fe5922ea5769365901c5144c86202539aa03fa433abee49413c612",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\data\\ceramicCoatingContent.ts",
+      "reviewedSha256": "e9a9fa1104e21a3bfb0e0a7999dbcd5f6fea3a0a823407565fb84905f9d6a06d",
+      "freshSha256": "e9a9fa1104e21a3bfb0e0a7999dbcd5f6fea3a0a823407565fb84905f9d6a06d",
+      "currentSha256": "e9a9fa1104e21a3bfb0e0a7999dbcd5f6fea3a0a823407565fb84905f9d6a06d",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\data\\diagnosticsAcBrandContent.ts",
+      "reviewedSha256": "034b378502080ecef31d6e43eb857d79c9c073a3cd540c5a3013ae1b349ecf76",
+      "freshSha256": "034b378502080ecef31d6e43eb857d79c9c073a3cd540c5a3013ae1b349ecf76",
+      "currentSha256": "034b378502080ecef31d6e43eb857d79c9c073a3cd540c5a3013ae1b349ecf76",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\data\\diagnosticsAcGeneralContent.ts",
+      "reviewedSha256": "ba94d9fec0917704b2441acb2ed38029eadac984700bda5c6a55a739ec5cb71a",
+      "freshSha256": "ba94d9fec0917704b2441acb2ed38029eadac984700bda5c6a55a739ec5cb71a",
+      "currentSha256": "ba94d9fec0917704b2441acb2ed38029eadac984700bda5c6a55a739ec5cb71a",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\data\\ecuElectronicsContent.ts",
+      "reviewedSha256": "48cf990866ec75dcf7c1c08c8c52cb85001085ebfb5c81da82370a0030ca90f3",
+      "freshSha256": "48cf990866ec75dcf7c1c08c8c52cb85001085ebfb5c81da82370a0030ca90f3",
+      "currentSha256": "48cf990866ec75dcf7c1c08c8c52cb85001085ebfb5c81da82370a0030ca90f3",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\data\\electronicsServices.ts",
+      "reviewedSha256": "02f5468d29be8be66713e80dfc982da859655df5ed135f683cf760a264a8fc01",
+      "freshSha256": "02f5468d29be8be66713e80dfc982da859655df5ed135f683cf760a264a8fc01",
+      "currentSha256": "02f5468d29be8be66713e80dfc982da859655df5ed135f683cf760a264a8fc01",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\data\\extendedServiceContent.ts",
+      "reviewedSha256": "1f2f0e70184dee22cb10c7a8414ce813bf33821556e942a58c95eabcd69e8225",
+      "freshSha256": "1f2f0e70184dee22cb10c7a8414ce813bf33821556e942a58c95eabcd69e8225",
+      "currentSha256": "1f2f0e70184dee22cb10c7a8414ce813bf33821556e942a58c95eabcd69e8225",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\data\\ferrariCaseStudies.ts",
+      "reviewedSha256": "a42473e3e0f0fcc42948bfba1b8b92838988f7381539e4e05b3ad2e061861312",
+      "freshSha256": "a42473e3e0f0fcc42948bfba1b8b92838988f7381539e4e05b3ad2e061861312",
+      "currentSha256": "a42473e3e0f0fcc42948bfba1b8b92838988f7381539e4e05b3ad2e061861312",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\data\\ferrariHubContent.ts",
+      "reviewedSha256": "d4f4b92bb94ae209c7818f2dece7c4c8e34ad00ebb709bd54644dd4bb7e52c5f",
+      "freshSha256": "d4f4b92bb94ae209c7818f2dece7c4c8e34ad00ebb709bd54644dd4bb7e52c5f",
+      "currentSha256": "d4f4b92bb94ae209c7818f2dece7c4c8e34ad00ebb709bd54644dd4bb7e52c5f",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\data\\ferrariModelPages.ts",
+      "reviewedSha256": "9564ab1db592dea2d510dd5746cb2ad2d2f2ce7541fb4d15ba09cdd6b027004b",
+      "freshSha256": "9564ab1db592dea2d510dd5746cb2ad2d2f2ce7541fb4d15ba09cdd6b027004b",
+      "currentSha256": "9564ab1db592dea2d510dd5746cb2ad2d2f2ce7541fb4d15ba09cdd6b027004b",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\data\\lamborghiniHubContent.ts",
+      "reviewedSha256": "d5b87f41c9698e9d9590f3c22889f2ddc24540495a37be294ec80611d06ec3cc",
+      "freshSha256": "d5b87f41c9698e9d9590f3c22889f2ddc24540495a37be294ec80611d06ec3cc",
+      "currentSha256": "d5b87f41c9698e9d9590f3c22889f2ddc24540495a37be294ec80611d06ec3cc",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\data\\localGaragePages.ts",
+      "reviewedSha256": "60d9a4b38a8185fbf5fa2389818ab07d02fbd3bba0730f4861539263b1307ea4",
+      "freshSha256": "60d9a4b38a8185fbf5fa2389818ab07d02fbd3bba0730f4861539263b1307ea4",
+      "currentSha256": "60d9a4b38a8185fbf5fa2389818ab07d02fbd3bba0730f4861539263b1307ea4",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\data\\mclarenHubContent.ts",
+      "reviewedSha256": "22f73ab7fd1d1168714b22f3b71e07e71dfd78ad932fb17dc500a12244517368",
+      "freshSha256": "22f73ab7fd1d1168714b22f3b71e07e71dfd78ad932fb17dc500a12244517368",
+      "currentSha256": "22f73ab7fd1d1168714b22f3b71e07e71dfd78ad932fb17dc500a12244517368",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\data\\mercedesArabicServiceContent.ts",
+      "reviewedSha256": "36e8f16c1eacfc64dd9aec93d79ee6b957ce0c25483085ec9a13dccdc248734f",
+      "freshSha256": "36e8f16c1eacfc64dd9aec93d79ee6b957ce0c25483085ec9a13dccdc248734f",
+      "currentSha256": "36e8f16c1eacfc64dd9aec93d79ee6b957ce0c25483085ec9a13dccdc248734f",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\data\\mercedesB1UpdatedPaths.ts",
+      "reviewedSha256": "65d080d86828c5d46e76cae2417b620aae1a2ea0bb2870ed592d48750550d857",
+      "freshSha256": "65d080d86828c5d46e76cae2417b620aae1a2ea0bb2870ed592d48750550d857",
+      "currentSha256": "65d080d86828c5d46e76cae2417b620aae1a2ea0bb2870ed592d48750550d857",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\data\\mercedesCaseStudies.ts",
+      "reviewedSha256": "7ecf25adba6ad50e351fc998eaefbb4d662a1567bf2da6f004093bde166535bd",
+      "freshSha256": "7ecf25adba6ad50e351fc998eaefbb4d662a1567bf2da6f004093bde166535bd",
+      "currentSha256": "7ecf25adba6ad50e351fc998eaefbb4d662a1567bf2da6f004093bde166535bd",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\data\\mercedesMaintenanceGuide.ts",
+      "reviewedSha256": "d1cfe5bd70e602a2d423daf23ea1adc06b980178c52caaf0d0ba3ff59ab6a6fd",
+      "freshSha256": "d1cfe5bd70e602a2d423daf23ea1adc06b980178c52caaf0d0ba3ff59ab6a6fd",
+      "currentSha256": "d1cfe5bd70e602a2d423daf23ea1adc06b980178c52caaf0d0ba3ff59ab6a6fd",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\data\\mercedesModelPages.ts",
+      "reviewedSha256": "385f85ad204220cdb9358eef7818edca7f5385f503edd4619a0191129c66e47d",
+      "freshSha256": "385f85ad204220cdb9358eef7818edca7f5385f503edd4619a0191129c66e47d",
+      "currentSha256": "385f85ad204220cdb9358eef7818edca7f5385f503edd4619a0191129c66e47d",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\data\\mercedesProblemGuides.ts",
+      "reviewedSha256": "e3759bbcb78bb0b17d6563329930775df6c7b86e4506c27c836de9ce39315588",
+      "freshSha256": "e3759bbcb78bb0b17d6563329930775df6c7b86e4506c27c836de9ce39315588",
+      "currentSha256": "e3759bbcb78bb0b17d6563329930775df6c7b86e4506c27c836de9ce39315588",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\data\\mercedesServiceCampaign.ts",
+      "reviewedSha256": "98012343a3f8450ba6a34bb094425beaa4049932d534d9115d0b373ded32c8dd",
+      "freshSha256": "98012343a3f8450ba6a34bb094425beaa4049932d534d9115d0b373ded32c8dd",
+      "currentSha256": "98012343a3f8450ba6a34bb094425beaa4049932d534d9115d0b373ded32c8dd",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\data\\mercedesServiceContent.ts",
+      "reviewedSha256": "7ebb6013761160e8bebc48e3f3080ceae2e3fb330d4fa6edf86f02974481718d",
+      "freshSha256": "7ebb6013761160e8bebc48e3f3080ceae2e3fb330d4fa6edf86f02974481718d",
+      "currentSha256": "7ebb6013761160e8bebc48e3f3080ceae2e3fb330d4fa6edf86f02974481718d",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\data\\mercedesServices.ts",
+      "reviewedSha256": "1e4a46798b668010bd23b679ff9cb5c4ce53189874d5d332509bbb16fdf4e002",
+      "freshSha256": "1e4a46798b668010bd23b679ff9cb5c4ce53189874d5d332509bbb16fdf4e002",
+      "currentSha256": "1e4a46798b668010bd23b679ff9cb5c4ce53189874d5d332509bbb16fdf4e002",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\data\\mercedesServiceScope.ts",
+      "reviewedSha256": "f61bf7a8fed592e8002dae569d9abb4a04907792319d37c24e650e47f9e9519e",
+      "freshSha256": "f61bf7a8fed592e8002dae569d9abb4a04907792319d37c24e650e47f9e9519e",
+      "currentSha256": "f61bf7a8fed592e8002dae569d9abb4a04907792319d37c24e650e47f9e9519e",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\data\\oilChangeContent.ts",
+      "reviewedSha256": "c7e58a99cc8456123ae0f482d07242e97c7590bf6a2f2e0e275d920429fd8ce6",
+      "freshSha256": "c7e58a99cc8456123ae0f482d07242e97c7590bf6a2f2e0e275d920429fd8ce6",
+      "currentSha256": "c7e58a99cc8456123ae0f482d07242e97c7590bf6a2f2e0e275d920429fd8ce6",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\data\\paintCareProjects.ts",
+      "reviewedSha256": "d80861735b311707df0d30f5a03619a43bbbbd8f157797d75042a22ba7608501",
+      "freshSha256": "d80861735b311707df0d30f5a03619a43bbbbd8f157797d75042a22ba7608501",
+      "currentSha256": "d80861735b311707df0d30f5a03619a43bbbbd8f157797d75042a22ba7608501",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\data\\paintCorrectionContent.ts",
+      "reviewedSha256": "f8c440358eed3700c25ef9897cbb10fe086e7f94366a47c70e361db676a7e71f",
+      "freshSha256": "f8c440358eed3700c25ef9897cbb10fe086e7f94366a47c70e361db676a7e71f",
+      "currentSha256": "f8c440358eed3700c25ef9897cbb10fe086e7f94366a47c70e361db676a7e71f",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\data\\paintProtectionContent.ts",
+      "reviewedSha256": "d27b87227d8acb6f4e0a93e6f3d46520c311abbf7e2f9e183e6e5a94bad382d5",
+      "freshSha256": "d27b87227d8acb6f4e0a93e6f3d46520c311abbf7e2f9e183e6e5a94bad382d5",
+      "currentSha256": "d27b87227d8acb6f4e0a93e6f3d46520c311abbf7e2f9e183e6e5a94bad382d5",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\data\\porscheArchitecture.ts",
+      "reviewedSha256": "4829607b9e49d2e151a242250dc405312910a7a5717bd5581306e5b65c3cf245",
+      "freshSha256": "4829607b9e49d2e151a242250dc405312910a7a5717bd5581306e5b65c3cf245",
+      "currentSha256": "4829607b9e49d2e151a242250dc405312910a7a5717bd5581306e5b65c3cf245",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\data\\porscheB2UpdatedPaths.ts",
+      "reviewedSha256": "d97775c5f3798175f81d704f3ebe65a1619a760d77a7348aa7bc791a8a73ec39",
+      "freshSha256": "d97775c5f3798175f81d704f3ebe65a1619a760d77a7348aa7bc791a8a73ec39",
+      "currentSha256": "d97775c5f3798175f81d704f3ebe65a1619a760d77a7348aa7bc791a8a73ec39",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\data\\porscheCaseStudies.ts",
+      "reviewedSha256": "7a6db8fa4056cd3658bf9e37ef6b66d8a638a76ff9912a3db3605d1db53d7dda",
+      "freshSha256": "7a6db8fa4056cd3658bf9e37ef6b66d8a638a76ff9912a3db3605d1db53d7dda",
+      "currentSha256": "7a6db8fa4056cd3658bf9e37ef6b66d8a638a76ff9912a3db3605d1db53d7dda",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\data\\porscheModelPages.ts",
+      "reviewedSha256": "d06c4c7d9984951a5c63a5dbaca821cd0cf31c38bd7260c21cf937ebab8356a1",
+      "freshSha256": "d06c4c7d9984951a5c63a5dbaca821cd0cf31c38bd7260c21cf937ebab8356a1",
+      "currentSha256": "d06c4c7d9984951a5c63a5dbaca821cd0cf31c38bd7260c21cf937ebab8356a1",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\data\\porscheOwnershipGuides.ts",
+      "reviewedSha256": "0b6968745ae528cb7f41f09b7ca9f653beebc833da9e70f506110cbbd8485d52",
+      "freshSha256": "0b6968745ae528cb7f41f09b7ca9f653beebc833da9e70f506110cbbd8485d52",
+      "currentSha256": "0b6968745ae528cb7f41f09b7ca9f653beebc833da9e70f506110cbbd8485d52",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\data\\porscheProblemGuides.ts",
+      "reviewedSha256": "3ef8b491279d2cf7809b03fe4f3c49c45eb1643e9c41251630890449f3f2b347",
+      "freshSha256": "3ef8b491279d2cf7809b03fe4f3c49c45eb1643e9c41251630890449f3f2b347",
+      "currentSha256": "3ef8b491279d2cf7809b03fe4f3c49c45eb1643e9c41251630890449f3f2b347",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\data\\porscheSystemGuides.ts",
+      "reviewedSha256": "8f7ce16f71a6ca94e9ee4e772dd535ddbbae56eccacac0a9a8f6c6812ee904d3",
+      "freshSha256": "8f7ce16f71a6ca94e9ee4e772dd535ddbbae56eccacac0a9a8f6c6812ee904d3",
+      "currentSha256": "8f7ce16f71a6ca94e9ee4e772dd535ddbbae56eccacac0a9a8f6c6812ee904d3",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\data\\ppfContent.ts",
+      "reviewedSha256": "2b111339aedc7f63186bdd9f49e41090904b1e8cd4783988967d3db03dd2f1ca",
+      "freshSha256": "2b111339aedc7f63186bdd9f49e41090904b1e8cd4783988967d3db03dd2f1ca",
+      "currentSha256": "2b111339aedc7f63186bdd9f49e41090904b1e8cd4783988967d3db03dd2f1ca",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\data\\priorityBrandSeo.ts",
+      "reviewedSha256": "f063a940185a569e28db046a7fb9148fed9d1d95928608e8435e1e491b34b6eb",
+      "freshSha256": "f063a940185a569e28db046a7fb9148fed9d1d95928608e8435e1e491b34b6eb",
+      "currentSha256": "f063a940185a569e28db046a7fb9148fed9d1d95928608e8435e1e491b34b6eb",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\data\\queryServiceContent.ts",
+      "reviewedSha256": "624f3f95835deece45de5e49a46699530df86faa49d32f5592ae52e3c651671b",
+      "freshSha256": "624f3f95835deece45de5e49a46699530df86faa49d32f5592ae52e3c651671b",
+      "currentSha256": "624f3f95835deece45de5e49a46699530df86faa49d32f5592ae52e3c651671b",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\data\\repairServiceArabic.ts",
+      "reviewedSha256": "8ac0044a9a50a9f8a108ffd77cfc343306c7d13848c80f4584ff1ffb99b113f1",
+      "freshSha256": "8ac0044a9a50a9f8a108ffd77cfc343306c7d13848c80f4584ff1ffb99b113f1",
+      "currentSha256": "8ac0044a9a50a9f8a108ffd77cfc343306c7d13848c80f4584ff1ffb99b113f1",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\data\\repairServiceContent.ts",
+      "reviewedSha256": "3c32436b9b5ccc6bc78eb6bc03c6fb6af0426ee5d95382ef57edf874f03f7273",
+      "freshSha256": "3c32436b9b5ccc6bc78eb6bc03c6fb6af0426ee5d95382ef57edf874f03f7273",
+      "currentSha256": "3c32436b9b5ccc6bc78eb6bc03c6fb6af0426ee5d95382ef57edf874f03f7273",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\data\\rollsRoyceHubContent.ts",
+      "reviewedSha256": "ae51a0856d4f80bf7d33fbb05ae505f6f34d8a0f1790629d9b436eb42ec75be5",
+      "freshSha256": "ae51a0856d4f80bf7d33fbb05ae505f6f34d8a0f1790629d9b436eb42ec75be5",
+      "currentSha256": "ae51a0856d4f80bf7d33fbb05ae505f6f34d8a0f1790629d9b436eb42ec75be5",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\data\\roxHubContent.ts",
+      "reviewedSha256": "999f04705cbb2599b7ad5b59eac32d32bbfac0399d0a510bad2e6c75ed52260a",
+      "freshSha256": "999f04705cbb2599b7ad5b59eac32d32bbfac0399d0a510bad2e6c75ed52260a",
+      "currentSha256": "999f04705cbb2599b7ad5b59eac32d32bbfac0399d0a510bad2e6c75ed52260a",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\data\\serviceDecisionFaqs.ts",
+      "reviewedSha256": "f94ea84f6a1dceba5bdd5a97ae588b4397cd15a3289104ea8d74a558a31a8de4",
+      "freshSha256": "f94ea84f6a1dceba5bdd5a97ae588b4397cd15a3289104ea8d74a558a31a8de4",
+      "currentSha256": "f94ea84f6a1dceba5bdd5a97ae588b4397cd15a3289104ea8d74a558a31a8de4",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\data\\services.ts",
+      "reviewedSha256": "993127a8e3440475a46aa09eb4eb901c7a756032dc0f927639805bc85ac73ab4",
+      "freshSha256": "993127a8e3440475a46aa09eb4eb901c7a756032dc0f927639805bc85ac73ab4",
+      "currentSha256": "993127a8e3440475a46aa09eb4eb901c7a756032dc0f927639805bc85ac73ab4",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\data\\sitewideSeoUpdatedPaths.ts",
+      "reviewedSha256": "6781302eb91bec74533af1644d0329d0fd97b2c4711969e0f990dd1b4a651ebb",
+      "freshSha256": "6781302eb91bec74533af1644d0329d0fd97b2c4711969e0f990dd1b4a651ebb",
+      "currentSha256": "6781302eb91bec74533af1644d0329d0fd97b2c4711969e0f990dd1b4a651ebb",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\data\\suspensionContent.ts",
+      "reviewedSha256": "a77444e410f9be361d01b58440c7d25d876f5e2d53fd02d16b71fbd27ca68131",
+      "freshSha256": "a77444e410f9be361d01b58440c7d25d876f5e2d53fd02d16b71fbd27ca68131",
+      "currentSha256": "a77444e410f9be361d01b58440c7d25d876f5e2d53fd02d16b71fbd27ca68131",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\data\\t1UpdatedPaths.ts",
+      "reviewedSha256": "3435fe3cc6b6eb695eeea465ba0bf8a4e388c8e141a2004872cc8ac7b0fb6534",
+      "freshSha256": "3435fe3cc6b6eb695eeea465ba0bf8a4e388c8e141a2004872cc8ac7b0fb6534",
+      "currentSha256": "3435fe3cc6b6eb695eeea465ba0bf8a4e388c8e141a2004872cc8ac7b0fb6534",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\data\\transmissionContent.ts",
+      "reviewedSha256": "daae3641e6ead9af43d7b633bac78a64be0ed1230d682e1d76797c86ffe1262d",
+      "freshSha256": "daae3641e6ead9af43d7b633bac78a64be0ed1230d682e1d76797c86ffe1262d",
+      "currentSha256": "daae3641e6ead9af43d7b633bac78a64be0ed1230d682e1d76797c86ffe1262d",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\data\\tuningCars.ts",
+      "reviewedSha256": "e487f6f7559261744f6746ffa6a1f48b46b2aaa5e1dda5968108547f680c7ba2",
+      "freshSha256": "e487f6f7559261744f6746ffa6a1f48b46b2aaa5e1dda5968108547f680c7ba2",
+      "currentSha256": "e487f6f7559261744f6746ffa6a1f48b46b2aaa5e1dda5968108547f680c7ba2",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\data\\tuningModelPages.ts",
+      "reviewedSha256": "d3f434d07b2b9cbcff1924737deb2226ab7b5158303312a25440be103f60f6dd",
+      "freshSha256": "d3f434d07b2b9cbcff1924737deb2226ab7b5158303312a25440be103f60f6dd",
+      "currentSha256": "d3f434d07b2b9cbcff1924737deb2226ab7b5158303312a25440be103f60f6dd",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\data\\tuningPublication.ts",
+      "reviewedSha256": "266952aeeade4db7d6d618b74f6d3f7df0b9b3366824e5769e17166d020cff5f",
+      "freshSha256": "266952aeeade4db7d6d618b74f6d3f7df0b9b3366824e5769e17166d020cff5f",
+      "currentSha256": "266952aeeade4db7d6d618b74f6d3f7df0b9b3366824e5769e17166d020cff5f",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\hooks\\use-arabic-locale.ts",
+      "reviewedSha256": "583414a15275588c470c2fef950ef6c0bf97161c371659de450e12324894a782",
+      "freshSha256": "583414a15275588c470c2fef950ef6c0bf97161c371659de450e12324894a782",
+      "currentSha256": "583414a15275588c470c2fef950ef6c0bf97161c371659de450e12324894a782",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\hooks\\use-mobile.tsx",
+      "reviewedSha256": "d2377fbad5ad2bdf7fa896a68c36ac8bf4aa74a974b2061f77b41ae58d623001",
+      "freshSha256": "d2377fbad5ad2bdf7fa896a68c36ac8bf4aa74a974b2061f77b41ae58d623001",
+      "currentSha256": "d2377fbad5ad2bdf7fa896a68c36ac8bf4aa74a974b2061f77b41ae58d623001",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\hooks\\use-seo.ts",
+      "reviewedSha256": "f33665f055651fa108700bf27b9d89a14916f8bcb4690ba2c1664244820b10bc",
+      "freshSha256": "f33665f055651fa108700bf27b9d89a14916f8bcb4690ba2c1664244820b10bc",
+      "currentSha256": "f33665f055651fa108700bf27b9d89a14916f8bcb4690ba2c1664244820b10bc",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\hooks\\use-toast.ts",
+      "reviewedSha256": "52580e80b7d8e7dfc0eee27f3bc8dfa209e32fe8dc96b8e3e79ed61666348dd7",
+      "freshSha256": "52580e80b7d8e7dfc0eee27f3bc8dfa209e32fe8dc96b8e3e79ed61666348dd7",
+      "currentSha256": "52580e80b7d8e7dfc0eee27f3bc8dfa209e32fe8dc96b8e3e79ed61666348dd7",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\hooks\\useAnimatedCounter.ts",
+      "reviewedSha256": "ab9dca270aa8ea62d2fa3874dc15a3eab7bce33e4938e79ddf36c74f90d70cb0",
+      "freshSha256": "ab9dca270aa8ea62d2fa3874dc15a3eab7bce33e4938e79ddf36c74f90d70cb0",
+      "currentSha256": "ab9dca270aa8ea62d2fa3874dc15a3eab7bce33e4938e79ddf36c74f90d70cb0",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\i18n\\ar-best-workshop.ts",
+      "reviewedSha256": "0c5421f9020bac2c14d4f6c7dd825b403693770d09d66033163506c06539b5b3",
+      "freshSha256": "0c5421f9020bac2c14d4f6c7dd825b403693770d09d66033163506c06539b5b3",
+      "currentSha256": "0c5421f9020bac2c14d4f6c7dd825b403693770d09d66033163506c06539b5b3",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\i18n\\ar-blog.ts",
+      "reviewedSha256": "21eb610b944cef199b88ca8d92c4fd64163c1ced4d223a33b905ede2e5ced0d7",
+      "freshSha256": "21eb610b944cef199b88ca8d92c4fd64163c1ced4d223a33b905ede2e5ced0d7",
+      "currentSha256": "21eb610b944cef199b88ca8d92c4fd64163c1ced4d223a33b905ede2e5ced0d7",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\i18n\\ar-brands.ts",
+      "reviewedSha256": "70295d4699ca0be73a18c1bf7efc11d65db29e64f6937667e3b5016cd5ddff4b",
+      "freshSha256": "70295d4699ca0be73a18c1bf7efc11d65db29e64f6937667e3b5016cd5ddff4b",
+      "currentSha256": "70295d4699ca0be73a18c1bf7efc11d65db29e64f6937667e3b5016cd5ddff4b",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\i18n\\ar-general-blog-content.ts",
+      "reviewedSha256": "1d96a5fa641a05642b6f1e3334401b35b625cd3de3dc0385fc381774fd8af90b",
+      "freshSha256": "1d96a5fa641a05642b6f1e3334401b35b625cd3de3dc0385fc381774fd8af90b",
+      "currentSha256": "1d96a5fa641a05642b6f1e3334401b35b625cd3de3dc0385fc381774fd8af90b",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\i18n\\ar-generic-services.ts",
+      "reviewedSha256": "e7c362d589ca16ab9d1b544f257b5eb47c8e89c01646d08720f4f3f35d8ef3a3",
+      "freshSha256": "e7c362d589ca16ab9d1b544f257b5eb47c8e89c01646d08720f4f3f35d8ef3a3",
+      "currentSha256": "e7c362d589ca16ab9d1b544f257b5eb47c8e89c01646d08720f4f3f35d8ef3a3",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\i18n\\ar-home.ts",
+      "reviewedSha256": "0495141d7bfc9a83391a725227ee2706cd7ab93926400644825cd1b92d86ed2a",
+      "freshSha256": "0495141d7bfc9a83391a725227ee2706cd7ab93926400644825cd1b92d86ed2a",
+      "currentSha256": "0495141d7bfc9a83391a725227ee2706cd7ab93926400644825cd1b92d86ed2a",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\i18n\\ar-model-blog-content.ts",
+      "reviewedSha256": "9a2427304f49c776d6a2048f45fc26b0a34f274ee0e72b1dad623394679bc145",
+      "freshSha256": "9a2427304f49c776d6a2048f45fc26b0a34f274ee0e72b1dad623394679bc145",
+      "currentSha256": "9a2427304f49c776d6a2048f45fc26b0a34f274ee0e72b1dad623394679bc145",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\i18n\\ar-protection-services.ts",
+      "reviewedSha256": "bb1cfbddea0aa8f5d3536d5371978483b36db14cd8f2839cade8e1ecdd953d29",
+      "freshSha256": "bb1cfbddea0aa8f5d3536d5371978483b36db14cd8f2839cade8e1ecdd953d29",
+      "currentSha256": "bb1cfbddea0aa8f5d3536d5371978483b36db14cd8f2839cade8e1ecdd953d29",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\i18n\\ar-service-blog-content.ts",
+      "reviewedSha256": "51da489603d4db5452b032d3f4b62578af6c19b7f71a8d3945951a302729e77c",
+      "freshSha256": "51da489603d4db5452b032d3f4b62578af6c19b7f71a8d3945951a302729e77c",
+      "currentSha256": "51da489603d4db5452b032d3f4b62578af6c19b7f71a8d3945951a302729e77c",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\i18n\\ar-services.ts",
+      "reviewedSha256": "96b01f21dac3f478ab0f7ccc17eb2a6cd807654b18d7dc5cf3cad7e0d48c9082",
+      "freshSha256": "96b01f21dac3f478ab0f7ccc17eb2a6cd807654b18d7dc5cf3cad7e0d48c9082",
+      "currentSha256": "96b01f21dac3f478ab0f7ccc17eb2a6cd807654b18d7dc5cf3cad7e0d48c9082",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\i18n\\ar-specialist-blog-content.ts",
+      "reviewedSha256": "e21d63ee9b0c74a4cbed1522731a703bc8301318c96a34bc4625bc371faa9b52",
+      "freshSha256": "e21d63ee9b0c74a4cbed1522731a703bc8301318c96a34bc4625bc371faa9b52",
+      "currentSha256": "e21d63ee9b0c74a4cbed1522731a703bc8301318c96a34bc4625bc371faa9b52",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\i18n\\ar-tuning.ts",
+      "reviewedSha256": "34801eb0aa6c7386eaf5b5569ce15cb1aa2d0f5d2d5ab2acda581c3f7e0d80a7",
+      "freshSha256": "34801eb0aa6c7386eaf5b5569ce15cb1aa2d0f5d2d5ab2acda581c3f7e0d80a7",
+      "currentSha256": "34801eb0aa6c7386eaf5b5569ce15cb1aa2d0f5d2d5ab2acda581c3f7e0d80a7",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\i18n\\ar-vrx.ts",
+      "reviewedSha256": "34424a0f523dc3be9cb2d156c27fcebb9419f5e9d45657cb7a88acf9faf35349",
+      "freshSha256": "34424a0f523dc3be9cb2d156c27fcebb9419f5e9d45657cb7a88acf9faf35349",
+      "currentSha256": "34424a0f523dc3be9cb2d156c27fcebb9419f5e9d45657cb7a88acf9faf35349",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\i18n\\arabic-route-fallbacks.json",
+      "reviewedSha256": "9280099e16ac3e2a88770e9aed7434ce47cdcf0df8201d4a51889cd1cdfef4da",
+      "freshSha256": "9280099e16ac3e2a88770e9aed7434ce47cdcf0df8201d4a51889cd1cdfef4da",
+      "currentSha256": "9280099e16ac3e2a88770e9aed7434ce47cdcf0df8201d4a51889cd1cdfef4da",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\i18n\\locale.ts",
+      "reviewedSha256": "fd6d49221f9b2e8bfc0ca273101a44d8185c46d705319ec14606c1b03f5045e5",
+      "freshSha256": "fd6d49221f9b2e8bfc0ca273101a44d8185c46d705319ec14606c1b03f5045e5",
+      "currentSha256": "fd6d49221f9b2e8bfc0ca273101a44d8185c46d705319ec14606c1b03f5045e5",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\i18n\\mercedes-language.ts",
+      "reviewedSha256": "35a67196916e765d82ba89a795cacb153845472a5ca7aace1bcba3ab1af1f02f",
+      "freshSha256": "35a67196916e765d82ba89a795cacb153845472a5ca7aace1bcba3ab1af1f02f",
+      "currentSha256": "35a67196916e765d82ba89a795cacb153845472a5ca7aace1bcba3ab1af1f02f",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\i18n\\use-locale.ts",
+      "reviewedSha256": "d640bede81e214e74fb47bbb4045a360276fc1fb35e18c8f497a7be7ce057ddc",
+      "freshSha256": "d640bede81e214e74fb47bbb4045a360276fc1fb35e18c8f497a7be7ce057ddc",
+      "currentSha256": "d640bede81e214e74fb47bbb4045a360276fc1fb35e18c8f497a7be7ce057ddc",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\integrations\\supabase\\client.ts",
+      "reviewedSha256": "86273724e5c18f3b7cab5291c21027a90279182771e8ab418e22262b1a4ed647",
+      "freshSha256": "86273724e5c18f3b7cab5291c21027a90279182771e8ab418e22262b1a4ed647",
+      "currentSha256": "86273724e5c18f3b7cab5291c21027a90279182771e8ab418e22262b1a4ed647",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\integrations\\supabase\\types.ts",
+      "reviewedSha256": "6854fb5b82907cfe0d83269402d373484eb0ec18fb23426aa19f096d29888b67",
+      "freshSha256": "6854fb5b82907cfe0d83269402d373484eb0ec18fb23426aa19f096d29888b67",
+      "currentSha256": "6854fb5b82907cfe0d83269402d373484eb0ec18fb23426aa19f096d29888b67",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\lib\\contact-attribution.ts",
+      "reviewedSha256": "2c281ea1c00771ae562d752e21838506155d4977b46a542439e39d51f857eb59",
+      "freshSha256": "2c281ea1c00771ae562d752e21838506155d4977b46a542439e39d51f857eb59",
+      "currentSha256": "2c281ea1c00771ae562d752e21838506155d4977b46a542439e39d51f857eb59",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\lib\\historical-paths.js",
+      "reviewedSha256": "aaf2109ef7232eadcc4dd48254a27d8f6424a975d342185dfc6d4ce3d5988031",
+      "freshSha256": "aaf2109ef7232eadcc4dd48254a27d8f6424a975d342185dfc6d4ce3d5988031",
+      "currentSha256": "aaf2109ef7232eadcc4dd48254a27d8f6424a975d342185dfc6d4ce3d5988031",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\lib\\ppf-enquiry.ts",
+      "reviewedSha256": "f369277c1f843499e0be62060c6d75064059f7bb0460758527d2e51e1f715fd3",
+      "freshSha256": "f369277c1f843499e0be62060c6d75064059f7bb0460758527d2e51e1f715fd3",
+      "currentSha256": "f369277c1f843499e0be62060c6d75064059f7bb0460758527d2e51e1f715fd3",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\lib\\related-articles.ts",
+      "reviewedSha256": "41632449dba576f06f49c92fd1449ce0e68dfee71d634b5615256fadd9c3f52e",
+      "freshSha256": "41632449dba576f06f49c92fd1449ce0e68dfee71d634b5615256fadd9c3f52e",
+      "currentSha256": "41632449dba576f06f49c92fd1449ce0e68dfee71d634b5615256fadd9c3f52e",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\lib\\route-manifest.ts",
+      "reviewedSha256": "a05194b6899972cb91945af2ea0c0a3fd836055a5d8c52d87fc3f9a6a219d0d5",
+      "freshSha256": "a05194b6899972cb91945af2ea0c0a3fd836055a5d8c52d87fc3f9a6a219d0d5",
+      "currentSha256": "a05194b6899972cb91945af2ea0c0a3fd836055a5d8c52d87fc3f9a6a219d0d5",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\lib\\route-policy.ts",
+      "reviewedSha256": "36deaf9676db6bf693d69ba3c9780d4594cc16c2e4044b1d6e8ad80ead1e3bb0",
+      "freshSha256": "36deaf9676db6bf693d69ba3c9780d4594cc16c2e4044b1d6e8ad80ead1e3bb0",
+      "currentSha256": "36deaf9676db6bf693d69ba3c9780d4594cc16c2e4044b1d6e8ad80ead1e3bb0",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\lib\\routing-paths.json",
+      "reviewedSha256": "76be43b4a37f130fee8f306cceb03dcde7d1b4809e1c5bc6b9d17a7bdd5bae1e",
+      "freshSha256": "76be43b4a37f130fee8f306cceb03dcde7d1b4809e1c5bc6b9d17a7bdd5bae1e",
+      "currentSha256": "76be43b4a37f130fee8f306cceb03dcde7d1b4809e1c5bc6b9d17a7bdd5bae1e",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\lib\\schema.ts",
+      "reviewedSha256": "e835ba2223f6a3102a56af1e774d44196c112e03151b444a2896bc6dea6c4bd3",
+      "freshSha256": "e835ba2223f6a3102a56af1e774d44196c112e03151b444a2896bc6dea6c4bd3",
+      "currentSha256": "e835ba2223f6a3102a56af1e774d44196c112e03151b444a2896bc6dea6c4bd3",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\lib\\utils.ts",
+      "reviewedSha256": "74a147991a119f1c4cdc25a4d9b22713632fa32eb136e55ab6939b006d71b9d6",
+      "freshSha256": "74a147991a119f1c4cdc25a4d9b22713632fa32eb136e55ab6939b006d71b9d6",
+      "currentSha256": "74a147991a119f1c4cdc25a4d9b22713632fa32eb136e55ab6939b006d71b9d6",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\lib\\verified-pricing.ts",
+      "reviewedSha256": "560cf295050a3e848b5a1399e3a8260d0a0f4d5552d3257028850b735fcf829e",
+      "freshSha256": "560cf295050a3e848b5a1399e3a8260d0a0f4d5552d3257028850b735fcf829e",
+      "currentSha256": "560cf295050a3e848b5a1399e3a8260d0a0f4d5552d3257028850b735fcf829e",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\lib\\whatsapp-tracking.ts",
+      "reviewedSha256": "94d2ab3b1129d5171f46beddbdd97def13db382d2bbe428687b7f4a844e1a0e4",
+      "freshSha256": "94d2ab3b1129d5171f46beddbdd97def13db382d2bbe428687b7f4a844e1a0e4",
+      "currentSha256": "94d2ab3b1129d5171f46beddbdd97def13db382d2bbe428687b7f4a844e1a0e4",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\lib\\mcp\\index.ts",
+      "reviewedSha256": "784119c0abce083fe94ec341438894332291920a65f7a469d49ee3b5c302870e",
+      "freshSha256": "784119c0abce083fe94ec341438894332291920a65f7a469d49ee3b5c302870e",
+      "currentSha256": "784119c0abce083fe94ec341438894332291920a65f7a469d49ee3b5c302870e",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\lib\\mcp\\tools\\build-booking-link.ts",
+      "reviewedSha256": "01078582c2b996dc8b586dedfa4c3efb100b0ff7ac52a392184a4c5505e74e0a",
+      "freshSha256": "01078582c2b996dc8b586dedfa4c3efb100b0ff7ac52a392184a4c5505e74e0a",
+      "currentSha256": "01078582c2b996dc8b586dedfa4c3efb100b0ff7ac52a392184a4c5505e74e0a",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\lib\\mcp\\tools\\get-contact-info.ts",
+      "reviewedSha256": "d13225adfedbc9151fc2896a8548e3eb64259e7b3d5bef068c1adc250ea0b92f",
+      "freshSha256": "d13225adfedbc9151fc2896a8548e3eb64259e7b3d5bef068c1adc250ea0b92f",
+      "currentSha256": "d13225adfedbc9151fc2896a8548e3eb64259e7b3d5bef068c1adc250ea0b92f",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\lib\\mcp\\tools\\list-brands.ts",
+      "reviewedSha256": "56e7290faa12dd2887c142bb6bce5b26f7925d44b19dbaffd4f90b7788f116a1",
+      "freshSha256": "56e7290faa12dd2887c142bb6bce5b26f7925d44b19dbaffd4f90b7788f116a1",
+      "currentSha256": "56e7290faa12dd2887c142bb6bce5b26f7925d44b19dbaffd4f90b7788f116a1",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\lib\\mcp\\tools\\list-services.ts",
+      "reviewedSha256": "d0e5f4924e40ae9c749eb7f743d014c2164874764ba465d182fea1425a159216",
+      "freshSha256": "d0e5f4924e40ae9c749eb7f743d014c2164874764ba465d182fea1425a159216",
+      "currentSha256": "d0e5f4924e40ae9c749eb7f743d014c2164874764ba465d182fea1425a159216",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\pages\\AboutUs.tsx",
+      "reviewedSha256": "960135dca90c760970ee4455a4411247b363a09297ccb47cdacc1e69a50bbad7",
+      "freshSha256": "960135dca90c760970ee4455a4411247b363a09297ccb47cdacc1e69a50bbad7",
+      "currentSha256": "960135dca90c760970ee4455a4411247b363a09297ccb47cdacc1e69a50bbad7",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\pages\\ArabicPage.tsx",
+      "reviewedSha256": "0fe5d629bbf73407d515bc7a1cf0e1743d4aa88468d85a98eb08ac283b137c91",
+      "freshSha256": "0fe5d629bbf73407d515bc7a1cf0e1743d4aa88468d85a98eb08ac283b137c91",
+      "currentSha256": "0fe5d629bbf73407d515bc7a1cf0e1743d4aa88468d85a98eb08ac283b137c91",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\pages\\AudiModelPage.tsx",
+      "reviewedSha256": "2da6ac30986b26b56660d07c7ea398a845f3526ffa027d9bc4ffb8d3d30391be",
+      "freshSha256": "2da6ac30986b26b56660d07c7ea398a845f3526ffa027d9bc4ffb8d3d30391be",
+      "currentSha256": "2da6ac30986b26b56660d07c7ea398a845f3526ffa027d9bc4ffb8d3d30391be",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\pages\\BestWorkshopPage.tsx",
+      "reviewedSha256": "3961e091eda9972836962359e39a685a4bfa0a68f54feed87bc4ee44cb772332",
+      "freshSha256": "3961e091eda9972836962359e39a685a4bfa0a68f54feed87bc4ee44cb772332",
+      "currentSha256": "3961e091eda9972836962359e39a685a4bfa0a68f54feed87bc4ee44cb772332",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\pages\\Blog.tsx",
+      "reviewedSha256": "6e2cb37008422c616a8cfee761f19facf387ab373e1cae2e114c91bb10d3a310",
+      "freshSha256": "6e2cb37008422c616a8cfee761f19facf387ab373e1cae2e114c91bb10d3a310",
+      "currentSha256": "6e2cb37008422c616a8cfee761f19facf387ab373e1cae2e114c91bb10d3a310",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\pages\\BlogArticleRouter.tsx",
+      "reviewedSha256": "f9774ac6c3098a78764f3ce18a656da0b59d87aaf3fa7a1dcee6c54d2cbc4961",
+      "freshSha256": "f9774ac6c3098a78764f3ce18a656da0b59d87aaf3fa7a1dcee6c54d2cbc4961",
+      "currentSha256": "f9774ac6c3098a78764f3ce18a656da0b59d87aaf3fa7a1dcee6c54d2cbc4961",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\pages\\BlogPost.tsx",
+      "reviewedSha256": "8819c1d0651b402c5ae30bf7ded9fc043853f1753844a8c0536d9d5179e1efd4",
+      "freshSha256": "8819c1d0651b402c5ae30bf7ded9fc043853f1753844a8c0536d9d5179e1efd4",
+      "currentSha256": "8819c1d0651b402c5ae30bf7ded9fc043853f1753844a8c0536d9d5179e1efd4",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\pages\\BmwModelPage.tsx",
+      "reviewedSha256": "5aad849de511eb7addc53988faaa22307386d512201c3e2370eaded3af20e389",
+      "freshSha256": "5aad849de511eb7addc53988faaa22307386d512201c3e2370eaded3af20e389",
+      "currentSha256": "5aad849de511eb7addc53988faaa22307386d512201c3e2370eaded3af20e389",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\pages\\BrandPage.tsx",
+      "reviewedSha256": "f5d68037c056bb1f32d73cc5c009e066287da0ab225267b9606d834a23002c33",
+      "freshSha256": "f5d68037c056bb1f32d73cc5c009e066287da0ab225267b9606d834a23002c33",
+      "currentSha256": "f5d68037c056bb1f32d73cc5c009e066287da0ab225267b9606d834a23002c33",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\pages\\Brands.tsx",
+      "reviewedSha256": "c27edef12cb096f43533ac2171d7ea8968f933b102a54cb4d5b3a79e6acd0bfb",
+      "freshSha256": "c27edef12cb096f43533ac2171d7ea8968f933b102a54cb4d5b3a79e6acd0bfb",
+      "currentSha256": "c27edef12cb096f43533ac2171d7ea8968f933b102a54cb4d5b3a79e6acd0bfb",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\pages\\BrandServicePage.tsx",
+      "reviewedSha256": "b8bd67b40548b6e3c53db7611e7dd463cd5c92ce6774bbbdc954695b4395df2f",
+      "freshSha256": "b8bd67b40548b6e3c53db7611e7dd463cd5c92ce6774bbbdc954695b4395df2f",
+      "currentSha256": "b8bd67b40548b6e3c53db7611e7dd463cd5c92ce6774bbbdc954695b4395df2f",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\pages\\BrandWorkshopArticlePage.tsx",
+      "reviewedSha256": "6d50b863185c33fefe443fbc44d02589e80b9108653b12bb009df2dbc4008d7c",
+      "freshSha256": "6d50b863185c33fefe443fbc44d02589e80b9108653b12bb009df2dbc4008d7c",
+      "currentSha256": "6d50b863185c33fefe443fbc44d02589e80b9108653b12bb009df2dbc4008d7c",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\pages\\CeramicCoatingPage.tsx",
+      "reviewedSha256": "4b3efeb97506b458e904d44db5e33ef6840a3ab2c6bcca22e95fbcf7bf1c93b4",
+      "freshSha256": "4b3efeb97506b458e904d44db5e33ef6840a3ab2c6bcca22e95fbcf7bf1c93b4",
+      "currentSha256": "4b3efeb97506b458e904d44db5e33ef6840a3ab2c6bcca22e95fbcf7bf1c93b4",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\pages\\FAQPage.tsx",
+      "reviewedSha256": "31599d11079f27c0da78d4fb0925b96d59432651451242b9ebb571da71864b42",
+      "freshSha256": "31599d11079f27c0da78d4fb0925b96d59432651451242b9ebb571da71864b42",
+      "currentSha256": "31599d11079f27c0da78d4fb0925b96d59432651451242b9ebb571da71864b42",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\pages\\FerrariCaseStudyPage.tsx",
+      "reviewedSha256": "2eed1232422e653fd9037a8921d30064caf41c87294fff499ef4752b9a6fbb25",
+      "freshSha256": "2eed1232422e653fd9037a8921d30064caf41c87294fff499ef4752b9a6fbb25",
+      "currentSha256": "2eed1232422e653fd9037a8921d30064caf41c87294fff499ef4752b9a6fbb25",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\pages\\FerrariModelPage.tsx",
+      "reviewedSha256": "77b158e98d4e1fff0b72ab4d1b762a9ad562a8905bb6748e89a3cdb56055e733",
+      "freshSha256": "77b158e98d4e1fff0b72ab4d1b762a9ad562a8905bb6748e89a3cdb56055e733",
+      "currentSha256": "77b158e98d4e1fff0b72ab4d1b762a9ad562a8905bb6748e89a3cdb56055e733",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\pages\\Index.tsx",
+      "reviewedSha256": "aca0e4a92746043f64bad0049da8d6ffcb10a4fdc4ea6925978ba6614e94b21d",
+      "freshSha256": "aca0e4a92746043f64bad0049da8d6ffcb10a4fdc4ea6925978ba6614e94b21d",
+      "currentSha256": "aca0e4a92746043f64bad0049da8d6ffcb10a4fdc4ea6925978ba6614e94b21d",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\pages\\LocalGaragePage.tsx",
+      "reviewedSha256": "7466515477a78a1ea6a317219cb4d397e7acda2a118d9117b439e6f4ea73dd86",
+      "freshSha256": "7466515477a78a1ea6a317219cb4d397e7acda2a118d9117b439e6f4ea73dd86",
+      "currentSha256": "7466515477a78a1ea6a317219cb4d397e7acda2a118d9117b439e6f4ea73dd86",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\pages\\MercedesCaseStudyPage.tsx",
+      "reviewedSha256": "15603b35fbbb3f117daa6b36a08c17b8cc967dfb497cd875972e0287c1cc0af7",
+      "freshSha256": "15603b35fbbb3f117daa6b36a08c17b8cc967dfb497cd875972e0287c1cc0af7",
+      "currentSha256": "15603b35fbbb3f117daa6b36a08c17b8cc967dfb497cd875972e0287c1cc0af7",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\pages\\MercedesModelPage.tsx",
+      "reviewedSha256": "c049c072785a442e4d76e34eebb7b3950ce621b0b77417eecd3b14c8d1966978",
+      "freshSha256": "c049c072785a442e4d76e34eebb7b3950ce621b0b77417eecd3b14c8d1966978",
+      "currentSha256": "c049c072785a442e4d76e34eebb7b3950ce621b0b77417eecd3b14c8d1966978",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\pages\\MercedesProblemGuidePage.tsx",
+      "reviewedSha256": "d21fec97f73cd3fe2c2999f2585d9899f13f7e7b45e33a7646f04f15a8d6cf54",
+      "freshSha256": "d21fec97f73cd3fe2c2999f2585d9899f13f7e7b45e33a7646f04f15a8d6cf54",
+      "currentSha256": "d21fec97f73cd3fe2c2999f2585d9899f13f7e7b45e33a7646f04f15a8d6cf54",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\pages\\MercedesProblemsIndex.tsx",
+      "reviewedSha256": "5bee16db55bcbd5ec50862ad8e4ada0f8e29b8a6725e582039e6b89b89d30191",
+      "freshSha256": "5bee16db55bcbd5ec50862ad8e4ada0f8e29b8a6725e582039e6b89b89d30191",
+      "currentSha256": "5bee16db55bcbd5ec50862ad8e4ada0f8e29b8a6725e582039e6b89b89d30191",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\pages\\NotFound.tsx",
+      "reviewedSha256": "309a542462f857c5afea352650dcdf15b93f0fe7ecff9c5bb1ff5f9dbf21dc7d",
+      "freshSha256": "309a542462f857c5afea352650dcdf15b93f0fe7ecff9c5bb1ff5f9dbf21dc7d",
+      "currentSha256": "309a542462f857c5afea352650dcdf15b93f0fe7ecff9c5bb1ff5f9dbf21dc7d",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\pages\\OilChangePage.tsx",
+      "reviewedSha256": "4fc44e458eb143cb5fea108c590732e8cae8ffeb33738c52ba4e181f47023300",
+      "freshSha256": "4fc44e458eb143cb5fea108c590732e8cae8ffeb33738c52ba4e181f47023300",
+      "currentSha256": "4fc44e458eb143cb5fea108c590732e8cae8ffeb33738c52ba4e181f47023300",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\pages\\PaintCorrectionPage.tsx",
+      "reviewedSha256": "2e3b56dfbbc67fd0edac41eaf0e67e7204b7a81f08c0bfc82761a620a5c8d17c",
+      "freshSha256": "2e3b56dfbbc67fd0edac41eaf0e67e7204b7a81f08c0bfc82761a620a5c8d17c",
+      "currentSha256": "2e3b56dfbbc67fd0edac41eaf0e67e7204b7a81f08c0bfc82761a620a5c8d17c",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\pages\\PaintProtectionPage.tsx",
+      "reviewedSha256": "1465f1e3af70d804b00e2988eed39270cd68221386a387f404bfef035757b49a",
+      "freshSha256": "1465f1e3af70d804b00e2988eed39270cd68221386a387f404bfef035757b49a",
+      "currentSha256": "1465f1e3af70d804b00e2988eed39270cd68221386a387f404bfef035757b49a",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\pages\\PorscheCaseStudyPage.tsx",
+      "reviewedSha256": "8f4d8e83a23e3ddc953bd3d5aefc8dd9a0ed37ab2adba4645855c6180a221334",
+      "freshSha256": "8f4d8e83a23e3ddc953bd3d5aefc8dd9a0ed37ab2adba4645855c6180a221334",
+      "currentSha256": "8f4d8e83a23e3ddc953bd3d5aefc8dd9a0ed37ab2adba4645855c6180a221334",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\pages\\PorscheGuidesIndex.tsx",
+      "reviewedSha256": "88537c369ee6419f9391a877569f1236de186306ba85c084cdbb0f52b280c68e",
+      "freshSha256": "88537c369ee6419f9391a877569f1236de186306ba85c084cdbb0f52b280c68e",
+      "currentSha256": "88537c369ee6419f9391a877569f1236de186306ba85c084cdbb0f52b280c68e",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\pages\\PorscheModelPage.tsx",
+      "reviewedSha256": "9b60d5b48bad8b16538de9fd521b73cd7c25b61672ac4d3430ba88e87d4492dc",
+      "freshSha256": "9b60d5b48bad8b16538de9fd521b73cd7c25b61672ac4d3430ba88e87d4492dc",
+      "currentSha256": "9b60d5b48bad8b16538de9fd521b73cd7c25b61672ac4d3430ba88e87d4492dc",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\pages\\PorscheOwnershipGuidePage.tsx",
+      "reviewedSha256": "433bccb5a8887ba96a10b410d9414a575aa8bcad549e92b91c0dc493bd9cab26",
+      "freshSha256": "433bccb5a8887ba96a10b410d9414a575aa8bcad549e92b91c0dc493bd9cab26",
+      "currentSha256": "433bccb5a8887ba96a10b410d9414a575aa8bcad549e92b91c0dc493bd9cab26",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\pages\\PorscheProblemGuidePage.tsx",
+      "reviewedSha256": "506836317a12fbc514e9baed137cb87d29fe720227f2530d8d9180b64b41dc2b",
+      "freshSha256": "506836317a12fbc514e9baed137cb87d29fe720227f2530d8d9180b64b41dc2b",
+      "currentSha256": "506836317a12fbc514e9baed137cb87d29fe720227f2530d8d9180b64b41dc2b",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\pages\\PorscheProblemsIndex.tsx",
+      "reviewedSha256": "80d2e08e0ad64371a745462325cf10f61d48ed5d355c296f78484a758e5bb0e3",
+      "freshSha256": "80d2e08e0ad64371a745462325cf10f61d48ed5d355c296f78484a758e5bb0e3",
+      "currentSha256": "80d2e08e0ad64371a745462325cf10f61d48ed5d355c296f78484a758e5bb0e3",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\pages\\PorscheSystemGuidePage.tsx",
+      "reviewedSha256": "43934c05c6e933d8be77f8aeb68ce041ec3dcceb0e36557d78f96558d712a9db",
+      "freshSha256": "43934c05c6e933d8be77f8aeb68ce041ec3dcceb0e36557d78f96558d712a9db",
+      "currentSha256": "43934c05c6e933d8be77f8aeb68ce041ec3dcceb0e36557d78f96558d712a9db",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\pages\\PorscheSystemsIndex.tsx",
+      "reviewedSha256": "00e1479146b09d72cc15a29d135813173cdf53f5cf08ad62a17bfff7d0dbdfcb",
+      "freshSha256": "00e1479146b09d72cc15a29d135813173cdf53f5cf08ad62a17bfff7d0dbdfcb",
+      "currentSha256": "00e1479146b09d72cc15a29d135813173cdf53f5cf08ad62a17bfff7d0dbdfcb",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\pages\\PpfPage.tsx",
+      "reviewedSha256": "1d85ae7f8534cc5bf626acebd8e095c70ef9bf88336bcdadb3ccd2ff2ea0db55",
+      "freshSha256": "1d85ae7f8534cc5bf626acebd8e095c70ef9bf88336bcdadb3ccd2ff2ea0db55",
+      "currentSha256": "1d85ae7f8534cc5bf626acebd8e095c70ef9bf88336bcdadb3ccd2ff2ea0db55",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\pages\\ServicePage.tsx",
+      "reviewedSha256": "7aea5c62212d6066010e09587054e528d03c6589f291bd5681408f7f45b130ca",
+      "freshSha256": "7aea5c62212d6066010e09587054e528d03c6589f291bd5681408f7f45b130ca",
+      "currentSha256": "7aea5c62212d6066010e09587054e528d03c6589f291bd5681408f7f45b130ca",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\pages\\Services.tsx",
+      "reviewedSha256": "77e7cc3aa83277602271ec3106506d4f360bd4fb6737445a5a1235a435ed09d0",
+      "freshSha256": "77e7cc3aa83277602271ec3106506d4f360bd4fb6737445a5a1235a435ed09d0",
+      "currentSha256": "77e7cc3aa83277602271ec3106506d4f360bd4fb6737445a5a1235a435ed09d0",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\pages\\SitemapPage.tsx",
+      "reviewedSha256": "6ce0060a5517999c55a2a8a4ecac219d8452ac59cfd9286a9041f49beef6bf74",
+      "freshSha256": "6ce0060a5517999c55a2a8a4ecac219d8452ac59cfd9286a9041f49beef6bf74",
+      "currentSha256": "6ce0060a5517999c55a2a8a4ecac219d8452ac59cfd9286a9041f49beef6bf74",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\pages\\SuspensionRepairPage.tsx",
+      "reviewedSha256": "bc6662d8ca7a2c8d78184d15d9ff51a402bca1b5ad8308266db4d09407fd3ef1",
+      "freshSha256": "bc6662d8ca7a2c8d78184d15d9ff51a402bca1b5ad8308266db4d09407fd3ef1",
+      "currentSha256": "bc6662d8ca7a2c8d78184d15d9ff51a402bca1b5ad8308266db4d09407fd3ef1",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\pages\\TransmissionPage.tsx",
+      "reviewedSha256": "d9a3c7100ffbaea6b3d55a286b784549d575f433f50bef519527347ccd0f836c",
+      "freshSha256": "d9a3c7100ffbaea6b3d55a286b784549d575f433f50bef519527347ccd0f836c",
+      "currentSha256": "d9a3c7100ffbaea6b3d55a286b784549d575f433f50bef519527347ccd0f836c",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\pages\\Tuning.tsx",
+      "reviewedSha256": "f7cb458474066245d66f25c79ff10aec6437f87a9c93c9d25a4e7db06a0d2dcc",
+      "freshSha256": "f7cb458474066245d66f25c79ff10aec6437f87a9c93c9d25a4e7db06a0d2dcc",
+      "currentSha256": "f7cb458474066245d66f25c79ff10aec6437f87a9c93c9d25a4e7db06a0d2dcc",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\pages\\TuningModelPage.tsx",
+      "reviewedSha256": "719d0398ecb6bce1d9e3169c3c02ad89e4770186b84a6c4d4ddcdc1ca67c9f7a",
+      "freshSha256": "719d0398ecb6bce1d9e3169c3c02ad89e4770186b84a6c4d4ddcdc1ca67c9f7a",
+      "currentSha256": "719d0398ecb6bce1d9e3169c3c02ad89e4770186b84a6c4d4ddcdc1ca67c9f7a",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\pages\\VRX.tsx",
+      "reviewedSha256": "15c5bd41aade6046592efff870530c84c976fa39ef7ee3746ce615840bcb6a10",
+      "freshSha256": "15c5bd41aade6046592efff870530c84c976fa39ef7ee3746ce615840bcb6a10",
+      "currentSha256": "15c5bd41aade6046592efff870530c84c976fa39ef7ee3746ce615840bcb6a10",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\styles\\ceramic-coating.css",
+      "reviewedSha256": "4b249a16047c3824c608ac93b7682743a4d22f68df01f43cc94f2468ac7846bd",
+      "freshSha256": "4b249a16047c3824c608ac93b7682743a4d22f68df01f43cc94f2468ac7846bd",
+      "currentSha256": "4b249a16047c3824c608ac93b7682743a4d22f68df01f43cc94f2468ac7846bd",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\styles\\oil-change.css",
+      "reviewedSha256": "1c6e9ff13dfd9f7cbdb17f7401c43122a4fe5ae438d85291a581acc87a0cc7db",
+      "freshSha256": "1c6e9ff13dfd9f7cbdb17f7401c43122a4fe5ae438d85291a581acc87a0cc7db",
+      "currentSha256": "1c6e9ff13dfd9f7cbdb17f7401c43122a4fe5ae438d85291a581acc87a0cc7db",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\styles\\paint-correction.css",
+      "reviewedSha256": "fc2182673e75820257eb9c9861555bb89403f2daa3c6c17c8b971325d78dc805",
+      "freshSha256": "fc2182673e75820257eb9c9861555bb89403f2daa3c6c17c8b971325d78dc805",
+      "currentSha256": "fc2182673e75820257eb9c9861555bb89403f2daa3c6c17c8b971325d78dc805",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\styles\\paint-protection.css",
+      "reviewedSha256": "440950c4a161972885270cc3f44d68a32355e1a5325f67997496416b622feb88",
+      "freshSha256": "440950c4a161972885270cc3f44d68a32355e1a5325f67997496416b622feb88",
+      "currentSha256": "440950c4a161972885270cc3f44d68a32355e1a5325f67997496416b622feb88",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\styles\\ppf-form.css",
+      "reviewedSha256": "db24d73dfd1fbef0587681979a41dcfb402f83604e55c444a94c11a37bb386a9",
+      "freshSha256": "db24d73dfd1fbef0587681979a41dcfb402f83604e55c444a94c11a37bb386a9",
+      "currentSha256": "db24d73dfd1fbef0587681979a41dcfb402f83604e55c444a94c11a37bb386a9",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\styles\\ppf.css",
+      "reviewedSha256": "6a9a917a1ebc04674058e0421b736e46fa00ac2e3104a9107bb50c33a6d6d1dd",
+      "freshSha256": "6a9a917a1ebc04674058e0421b736e46fa00ac2e3104a9107bb50c33a6d6d1dd",
+      "currentSha256": "6a9a917a1ebc04674058e0421b736e46fa00ac2e3104a9107bb50c33a6d6d1dd",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\styles\\suspension.css",
+      "reviewedSha256": "d72e4d3a7046b84e5e2f040630b84cc3685cabc710891e202fb045e5f0c3a433",
+      "freshSha256": "d72e4d3a7046b84e5e2f040630b84cc3685cabc710891e202fb045e5f0c3a433",
+      "currentSha256": "d72e4d3a7046b84e5e2f040630b84cc3685cabc710891e202fb045e5f0c3a433",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "src\\styles\\transmission.css",
+      "reviewedSha256": "4e503de7b81fb1ca4e5470c074df3fb78b3d5e3e88c515b13b5dc5a2a4144ee5",
+      "freshSha256": "4e503de7b81fb1ca4e5470c074df3fb78b3d5e3e88c515b13b5dc5a2a4144ee5",
+      "currentSha256": "4e503de7b81fb1ca4e5470c074df3fb78b3d5e3e88c515b13b5dc5a2a4144ee5",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "cloudflare\\digitec-seo-router.js",
+      "reviewedSha256": "47208557115070b192a66e867c27be7b847b00a6304c25519fdb84033b7d1e45",
+      "freshSha256": "47208557115070b192a66e867c27be7b847b00a6304c25519fdb84033b7d1e45",
+      "currentSha256": "47208557115070b192a66e867c27be7b847b00a6304c25519fdb84033b7d1e45",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "cloudflare\\mercedes-seo-router.js",
+      "reviewedSha256": "167bef07cddeb86365dcfb426b3773f72c6953e1119492b5bc37862a50f590c8",
+      "freshSha256": "167bef07cddeb86365dcfb426b3773f72c6953e1119492b5bc37862a50f590c8",
+      "currentSha256": "167bef07cddeb86365dcfb426b3773f72c6953e1119492b5bc37862a50f590c8",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "cloudflare\\production-seo-router.js",
+      "reviewedSha256": "b96d330f3e64dc6be60ff86580132139fa01eb5fa4a1774701954ca57abafc8f",
+      "freshSha256": "b96d330f3e64dc6be60ff86580132139fa01eb5fa4a1774701954ca57abafc8f",
+      "currentSha256": "b96d330f3e64dc6be60ff86580132139fa01eb5fa4a1774701954ca57abafc8f",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "cloudflare\\routing-response-data.js",
+      "reviewedSha256": "81d88b0bc0dfb8a97221111494deff467958dd36efcf4802fd58bc69c1b86a27",
+      "freshSha256": "81d88b0bc0dfb8a97221111494deff467958dd36efcf4802fd58bc69c1b86a27",
+      "currentSha256": "81d88b0bc0dfb8a97221111494deff467958dd36efcf4802fd58bc69c1b86a27",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "cloudflare\\routing-response-guard.js",
+      "reviewedSha256": "7ba2e6eab5f633c27fed1d94e8b42a193d440a3165e773530cc4fc8f497c0acf",
+      "freshSha256": "7ba2e6eab5f633c27fed1d94e8b42a193d440a3165e773530cc4fc8f497c0acf",
+      "currentSha256": "7ba2e6eab5f633c27fed1d94e8b42a193d440a3165e773530cc4fc8f497c0acf",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "cloudflare\\wrangler.production-seo.jsonc",
+      "reviewedSha256": "2ee0cb254944a94f93db5a1065e997a2b0050c47575d7fb76497dc77be023221",
+      "freshSha256": "2ee0cb254944a94f93db5a1065e997a2b0050c47575d7fb76497dc77be023221",
+      "currentSha256": "2ee0cb254944a94f93db5a1065e997a2b0050c47575d7fb76497dc77be023221",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    },
+    {
+      "path": "cloudflare\\single-redirects\\mercedes-oil-alias-2026-10-21.json",
+      "reviewedSha256": "6b1385fff9d44c206a36cd0e9c38912e9c1b74030f3a534db6bb5efdfa5157c5",
+      "freshSha256": "6b1385fff9d44c206a36cd0e9c38912e9c1b74030f3a534db6bb5efdfa5157c5",
+      "currentSha256": "6b1385fff9d44c206a36cd0e9c38912e9c1b74030f3a534db6bb5efdfa5157c5",
+      "unchangedFromFresh": true,
+      "unchangedFromReviewed": true
+    }
+  ],
+  "approvedArtifacts": [
+    {
+      "path": "reports\\mercedes-phase-2\\routing\\redirect-proposals.json",
+      "expectedSha256": "336a3e207ab451d22f95efad88e334a3d5f8bb9958e495a8e9bcbe3f3d4956b9",
+      "currentSha256": "336a3e207ab451d22f95efad88e334a3d5f8bb9958e495a8e9bcbe3f3d4956b9",
+      "expectedBytes": 4399,
+      "currentBytes": 4399,
+      "unchanged": true
+    },
+    {
+      "path": "reports\\mercedes-phase-2\\routing\\rules\\1-ar-oil-change.json",
+      "expectedSha256": "43156ace1399ed32c077a03824f4f778ae58c6fa1610e483a3b087e274da8630",
+      "currentSha256": "43156ace1399ed32c077a03824f4f778ae58c6fa1610e483a3b087e274da8630",
+      "expectedBytes": 684,
+      "currentBytes": 684,
+      "unchanged": true
+    },
+    {
+      "path": "reports\\mercedes-phase-2\\routing\\rules\\2-en-body-repair.json",
+      "expectedSha256": "7a3800821824177f550571aa651d15dbe08cc7281a3fd50798118181ce6aa7d7",
+      "currentSha256": "7a3800821824177f550571aa651d15dbe08cc7281a3fd50798118181ce6aa7d7",
+      "expectedBytes": 679,
+      "currentBytes": 679,
+      "unchanged": true
+    },
+    {
+      "path": "reports\\mercedes-phase-2\\routing\\rules\\3-ar-battery-replacement.json",
+      "expectedSha256": "78a5cc7ebcf35ff8f6203d5c77ee722c6ae335908b33e7d0d8957351b0a090a3",
+      "currentSha256": "78a5cc7ebcf35ff8f6203d5c77ee722c6ae335908b33e7d0d8957351b0a090a3",
+      "expectedBytes": 715,
+      "currentBytes": 715,
+      "unchanged": true
+    },
+    {
+      "path": "reports\\mercedes-phase-2\\routing\\rules\\4-ar-mechanical-repair.json",
+      "expectedSha256": "2c4ef8c4dddc1cd79937cea41e70c80785dbc0e5a707284faccb38f8e028da07",
+      "currentSha256": "2c4ef8c4dddc1cd79937cea41e70c80785dbc0e5a707284faccb38f8e028da07",
+      "expectedBytes": 712,
+      "currentBytes": 712,
+      "unchanged": true
+    },
+    {
+      "path": "reports\\mercedes-phase-2\\hub\\mercedes-hub-minimal.patch",
+      "expectedSha256": "4eba1adfc9008db8b6cb76b3a0f0a214f0415c1577272c2c43ae4eae08e249ca",
+      "currentSha256": "4eba1adfc9008db8b6cb76b3a0f0a214f0415c1577272c2c43ae4eae08e249ca",
+      "expectedBytes": 2211,
+      "currentBytes": 2211,
+      "unchanged": true
+    },
+    {
+      "path": "reports\\mercedes-phase-2\\evidence\\cloudflare\\current-inventory.json",
+      "expectedSha256": "eba6ad671e2cf406dfbf1b5062d82e7e417e4b49f919757aac106b85ec902d99",
+      "currentSha256": "eba6ad671e2cf406dfbf1b5062d82e7e417e4b49f919757aac106b85ec902d99",
+      "expectedBytes": 4085,
+      "currentBytes": 4085,
+      "unchanged": true
+    },
+    {
+      "path": "reports\\mercedes-phase-2\\tests\\verify-http.mjs",
+      "expectedSha256": "6670b2a4227d6810efe9528096aceebf72f58820b8f88bb33bfc51060611d45a",
+      "currentSha256": "6670b2a4227d6810efe9528096aceebf72f58820b8f88bb33bfc51060611d45a",
+      "expectedBytes": 16131,
+      "currentBytes": 16131,
+      "unchanged": true
+    },
+    {
+      "path": "reports\\mercedes-phase-2\\tests\\check-redirect-conflicts.mjs",
+      "expectedSha256": "0bd9bdabf0570050dbac8ced92a333d86a8213a238854990a6b38a03857affd8",
+      "currentSha256": "0bd9bdabf0570050dbac8ced92a333d86a8213a238854990a6b38a03857affd8",
+      "expectedBytes": 8862,
+      "currentBytes": 8862,
+      "unchanged": true
+    },
+    {
+      "path": "reports\\mercedes-phase-2\\evidence\\http\\pre-2026-10-26T07-06-59-812Z\\capture.json",
+      "expectedSha256": "50acb9e9b9abfdba35fad704cec0c1a2f25aef2e2ea94cd7fc4f1d3e620a3d97",
+      "currentSha256": "50acb9e9b9abfdba35fad704cec0c1a2f25aef2e2ea94cd7fc4f1d3e620a3d97",
+      "expectedBytes": 1115716,
+      "currentBytes": 1115716,
+      "unchanged": true
+    }
+  ],
+  "phase2ACheckpointCaptures": [
+    {
+      "stage": "R1",
+      "capturePath": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-2\\deployment-2026-10-26\\verification\\evidence\\checkpoint-R1-2026-10-26T07-16-45-143Z\\capture.json",
+      "captureSha256": "1272e48022eaf7f39569f3a136f81e5b193169a34c50c7617dcdac19feec76f7",
+      "currentSha256": "1272e48022eaf7f39569f3a136f81e5b193169a34c50c7617dcdac19feec76f7",
+      "unchanged": true
+    },
+    {
+      "stage": "R2",
+      "capturePath": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-2\\deployment-2026-10-26\\verification\\evidence\\checkpoint-R2-2026-10-26T07-18-04-882Z\\capture.json",
+      "captureSha256": "c8323db0ac8720d630ad42a59cba92b1c6241d249b28062e1095c07d78f668ed",
+      "currentSha256": "c8323db0ac8720d630ad42a59cba92b1c6241d249b28062e1095c07d78f668ed",
+      "unchanged": true
+    },
+    {
+      "stage": "R3",
+      "capturePath": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-2\\deployment-2026-10-26\\verification\\evidence\\checkpoint-R3-2026-10-26T07-19-27-311Z\\capture.json",
+      "captureSha256": "a2ec12c9194948e45a781149ce5288b7870feddd55dd95e5d3e0d957bcc9d23c",
+      "currentSha256": "a2ec12c9194948e45a781149ce5288b7870feddd55dd95e5d3e0d957bcc9d23c",
+      "unchanged": true
+    },
+    {
+      "stage": "R4",
+      "capturePath": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-2\\deployment-2026-10-26\\verification\\evidence\\checkpoint-R4-2026-10-26T07-20-57-862Z\\capture.json",
+      "captureSha256": "a0c5b766b65c0755d9af1641b20b868c59765ef9e97dd64e8c8155a7fe9a95ef",
+      "currentSha256": "a0c5b766b65c0755d9af1641b20b868c59765ef9e97dd64e8c8155a7fe9a95ef",
+      "unchanged": true
+    }
+  ],
+  "originalR4FailureEvidence": {
+    "capturePath": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-2\\deployment-2026-10-26\\verification\\evidence\\checkpoint-R4-2026-10-26T07-20-57-862Z\\capture.json",
+    "expectedAnchoredCaptureSha256": "a0c5b766b65c0755d9af1641b20b868c59765ef9e97dd64e8c8155a7fe9a95ef",
+    "currentCaptureSha256": "a0c5b766b65c0755d9af1641b20b868c59765ef9e97dd64e8c8155a7fe9a95ef",
+    "captureMatchesAnchoredHash": true,
+    "url": "https://digitecme.com/ar/brands/mercedes-benz-service-dubai/mechanical-repair",
+    "method": "GET",
+    "status": 200,
+    "canonical": [
+      "https://digitecme.com/"
+    ],
+    "requestAt": "2026-10-26T07:20:59.755Z",
+    "cfRay": "a507b3b20a4fb88b-AMS",
+    "htmlPath": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-2\\deployment-2026-10-26\\verification\\evidence\\checkpoint-R4-2026-10-26T07-20-57-862Z\\html\\source-ar-mechanical-repair-6.html",
+    "recordedHtmlSha256": "3bce2d9b833fcc45a2b6a4a6bd3127603a629b952c29c3ec9506839bf56043d3",
+    "currentHtmlSha256": "3bce2d9b833fcc45a2b6a4a6bd3127603a629b952c29c3ec9506839bf56043d3",
+    "htmlMatchesRecordedHash": true,
+    "assertionFailuresStillRecorded": 2
+  },
+  "limits": [
+    "Local file integrity against preserved baseline hashes; not a fresh production-origin source export.",
+    "No HTTP, browser, Cloudflare configuration, cache, indexing or website changes performed."
+  ]
+}

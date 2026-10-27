@@ -1,0 +1,112 @@
+{
+  "passed": true,
+  "scope": "Isolated transpile and record-shape smoke only; full app type/build/browser checks remain root QA responsibility",
+  "source": "src/data/diagnosticsAcBrandContent.ts",
+  "sourceSha256": "034b378502080ecef31d6e43eb857d79c9c073a3cd540c5a3013ae1b349ecf76",
+  "records": [
+    {
+      "key": "bmw-service-dubai/engine-diagnostics",
+      "language": "en",
+      "title": "BMW Diagnostics Dubai | Fault Assessment | DIGI-TEC",
+      "titleLength": 51,
+      "descriptionLength": 148,
+      "faqs": 5
+    },
+    {
+      "key": "bmw-service-dubai/engine-diagnostics",
+      "language": "ar",
+      "title": "تشخيص أعطال بي إم دبليو في دبي | ديجي-تك",
+      "titleLength": 40,
+      "descriptionLength": 137,
+      "faqs": 5
+    },
+    {
+      "key": "porsche-service-dubai/engine-diagnostics",
+      "language": "en",
+      "title": "Porsche Diagnostics Dubai | Fault Assessment | DIGI-TEC",
+      "titleLength": 55,
+      "descriptionLength": 152,
+      "faqs": 5
+    },
+    {
+      "key": "porsche-service-dubai/engine-diagnostics",
+      "language": "ar",
+      "title": "تشخيص أعطال بورشه في دبي | ديجي-تك",
+      "titleLength": 34,
+      "descriptionLength": 131,
+      "faqs": 5
+    },
+    {
+      "key": "mercedes-benz-service-dubai/ac-repair",
+      "language": "en",
+      "title": "Mercedes AC Repair Dubai | Cooling Assessment | DIGI-TEC",
+      "titleLength": 56,
+      "descriptionLength": 150,
+      "faqs": 5
+    },
+    {
+      "key": "mercedes-benz-service-dubai/ac-repair",
+      "language": "ar",
+      "title": "إصلاح تكييف مرسيدس في دبي | ديجي-تك",
+      "titleLength": 35,
+      "descriptionLength": 127,
+      "faqs": 5
+    },
+    {
+      "key": "bmw-service-dubai/ac-repair",
+      "language": "en",
+      "title": "BMW AC Repair Dubai | Cooling Assessment | DIGI-TEC",
+      "titleLength": 51,
+      "descriptionLength": 145,
+      "faqs": 5
+    },
+    {
+      "key": "bmw-service-dubai/ac-repair",
+      "language": "ar",
+      "title": "إصلاح تكييف بي إم دبليو في دبي | ديجي-تك",
+      "titleLength": 40,
+      "descriptionLength": 132,
+      "faqs": 5
+    },
+    {
+      "key": "volkswagen-service-dubai/ac-repair",
+      "language": "en",
+      "title": "Volkswagen AC Repair Dubai | Cooling Assessment | DIGI-TEC",
+      "titleLength": 58,
+      "descriptionLength": 152,
+      "faqs": 5
+    },
+    {
+      "key": "volkswagen-service-dubai/ac-repair",
+      "language": "ar",
+      "title": "إصلاح تكييف فولكس فاجن في دبي | ديجي-تك",
+      "titleLength": 39,
+      "descriptionLength": 131,
+      "faqs": 5
+    },
+    {
+      "key": "range-rover-service-dubai/ac-repair",
+      "language": "en",
+      "title": "Range Rover AC Repair Dubai | Cooling Assessment | DIGI-TEC",
+      "titleLength": 59,
+      "descriptionLength": 153,
+      "faqs": 5
+    },
+    {
+      "key": "range-rover-service-dubai/ac-repair",
+      "language": "ar",
+      "title": "إصلاح تكييف رينج روفر في دبي | ديجي-تك",
+      "titleLength": 38,
+      "descriptionLength": 130,
+      "faqs": 5
+    }
+  ],
+  "preservedNonTargets": [
+    "mercedes-benz-service-dubai/engine-diagnostics",
+    "lamborghini-service-dubai/engine-diagnostics",
+    "rolls-royce-service-dubai/mechanical-repair",
+    "bmw-service-dubai/transmission-repair",
+    "porsche-service-dubai/ac-repair"
+  ],
+  "evidenceRegisterEntries": 14
+}

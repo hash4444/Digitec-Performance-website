@@ -1,0 +1,167 @@
+Browser tab: 5, Title: "Rules | Redirect Rules | digitecme.com | Mebms2000@gmail.com's Account | Cloudflare", URL: "https://dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/rules/redirect-rules/239ab46545704096bec2628d8eedf9b9".
+0 AXWebArea Rules | Redirect Rules | digitecme.com | Mebms2000@gmail.com's Account | Cloudflare, URL: dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/rules/redirect-rules/239ab46545704096bec2628d8eedf9b9
+	1 container
+		2 container react-app
+			3 container
+				4 link Description: Cloudflare home, Value: dash.cloudflare.com/
+				5 pop up button (collapsed) Description: Switch Account, ID: base-ui-:r3g:, Secondary Actions: Expand
+					6 text Mebms2000@gmail.com's Account
+					7 image
+				8 container
+					9 button Quick search...
+						10 image
+						11 text Quick search...
+						12 container
+							13 text Ctrl  K
+					14 link Description: Back to Domains, Value: dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/domains/overview
+					15 content list
+						16 link Description: Overview, Value: dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/
+						17 button (collapsed) Description: Recents, Secondary Actions: Expand
+							18 text Recents
+							19 image
+						20 button (collapsed) AI Crawl Control, Secondary Actions: Expand
+							21 text AI Crawl Control
+							22 image
+						23 button (collapsed) Agent Readiness, Secondary Actions: Expand
+							24 text Agent Readiness
+							25 image
+						26 link Description: Analytics, Value: dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/analytics
+						27 button (collapsed) Observability New, Secondary Actions: Expand
+							237 image
+							29 text Observability
+							30 text New
+							31 image
+						32 button (collapsed) DNS, Secondary Actions: Expand
+							33 text DNS
+							34 image
+						35 button (collapsed) Email, Secondary Actions: Expand
+							36 text Email
+							37 image
+						38 button (collapsed) SSL/TLS, Secondary Actions: Expand
+							39 text SSL/TLS
+							40 image
+						41 button (collapsed) Security, Secondary Actions: Expand
+							42 text Security
+							43 image
+						44 link Description: Access, Value: dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/access
+						45 button (collapsed) Speed, Secondary Actions: Expand
+							46 text Speed
+							47 image
+						48 button (collapsed) Caching, Secondary Actions: Expand
+							49 text Caching
+							50 image
+						51 link Description: Workers Routes, Value: dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/workers
+						52 container
+							53 button (expanded) Rules, Secondary Actions: Collapse
+								54 text Rules
+								55 image
+							56 content list
+								57 link Description: Overview, Value: dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/rules/overview
+								58 link Description: Redirect Rules, Value: dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/rules/redirect-rules
+								59 link Description: Rule simulator Beta, Value: dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/rules/simulator
+								60 link Description: Snippets, Value: dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/rules/snippets
+								61 link Description: Cloud Connector Beta, Value: dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/rules/cloud-connector
+								62 link Description: Page Rules, Value: dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/rules/page-rules
+								63 link Description: Settings, Value: dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/rules/settings
+						64 link Description: Error Pages New, Value: dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/error-pages
+						65 link Description: Network, Value: dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/network
+						66 button (collapsed) Traffic, Secondary Actions: Expand
+							67 text Traffic
+							68 image
+					69 content list
+						70 button (collapsed) Manage account, Secondary Actions: Expand
+							71 text Manage account
+							72 image
+				73 button (expanded) Description: Collapse sidebar, ID: base-ui-:re:, Secondary Actions: Collapse
+			74 container
+				75 checkbox Description: Star domain, Value: 0, ID: base-ui-:r3t:
+					76 image
+				77 container base-ui-:r3v:
+					78 text digitecme.com
+					79 text free
+					80 image
+				81 button Ask AI
+					82 image
+					83 text Ask AI
+				84 link Description: Support, Value: dash.cloudflare.com/?to=/:account/support
+				85 pop up button (collapsed) Description: User menu, ID: base-ui-:ri:, Secondary Actions: Expand
+					86 image
+			236 container skipTarget
+			87 container
+				88 heading Redirect Rules, Value: 1
+					89 text Redirect Rules
+				90 link Description: View docs  Opens in a new tab, Value: developers.cloudflare.com/rules/url-forwarding/
+				91 text Create rules to redirect visitors from a source URL to a target URL.
+			238 link Description: Back, Value: dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/rules/redirect-rules
+			239 container entrypoint-rule-form
+				240 heading Edit Single Redirect, Value: 1
+					241 text Edit Single Redirect
+				242 container
+					243 container cf-form-label34
+						244 text Rule name (required)
+					245 text field (settable) Rule name(required), Value: Mercedes Arabic battery legacy alias to existing service, ID: cf-form-input34
+					246 text Give your rule a descriptive name.
+				247 text If incoming requests match…
+				248 container
+					249 radio button (settable, integer) Description: Wildcard pattern Only apply the rule to requests matching the wildcard pattern, Value: 0, ID: cf-form-input35
+					250 container cf-form-label35
+						251 text Wildcard pattern
+						252 text Only apply the rule to requests matching the wildcard pattern
+					253 radio button (settable, integer) Description: Custom filter expression Only apply the rule to requests matching the custom filter expression, Value: 1, ID: cf-form-input36
+					254 container cf-form-label36
+						255 text Custom filter expression
+						256 text Only apply the rule to requests matching the custom filter expression
+					257 radio button (settable, integer) Description: All incoming requests Apply the rule to all requests, Value: 0, ID: cf-form-input37
+					258 container cf-form-label37
+						259 text All incoming requests
+						260 text Apply the rule to all requests
+				261 text When incoming requests match…
+				262 container
+					263 button Use expression builder
+						264 text Use expression builder
+					265 text entry area (settable) Description: Expression Preview, Value: (http.host in {"digitecme.com" "www.digitecme.com"}) and (http.request.method in {"GET" "HEAD"}) and (http.request.uri.path in {"/ar/brands/mercedes-benz-service-dubai/battery-replacement" "/ar/brands/mercedes-benz-service-dubai/battery-replacement/"})
+					266 text 252 / 4000 characters
+				267 text Then...
+				268 text URL redirect
+				269 text Type
+				270 container cf-form-input12
+					271 container
+						272 text Static
+						273 combo box (collapsed, settable) Type, ID: react-select-17-input, Secondary Actions: Expand
+				274 text URL
+				275 text field (settable) URL, Value: https://digitecme.com/ar/services/mercedes-battery-replacement-dubai, ID: cf-form-input38
+				276 text Status code
+				277 container cf-form-input39
+					278 container
+						279 text 308 - Advanced: Permanent, HTTP method preserved
+						280 combo box (collapsed, settable) Status code, ID: react-select-18-input, Secondary Actions: Expand
+				281 checkbox (settable, integer) Description: Preserve query string, Value: 1, ID: cf-form-input40
+				282 text Preserve query string
+				283 text Place at
+				284 text Select order:
+				285 container cf-form-input13
+					286 container
+						287 text Custom
+						288 combo box (collapsed, settable) Select order:, ID: react-select-19-input, Secondary Actions: Expand
+				289 text Select which rule this will fire after:
+				290 container cf-form-input14
+					291 container
+						292 text Mercedes body repair legacy alias to existing service
+						293 combo box (collapsed, settable) Select which rule this will fire after:, ID: react-select-20-input, Secondary Actions: Expand
+				294 link Description: Cancel, Value: dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/rules/redirect-rules
+				295 button Save
+			222 content list
+				223 link Description: Support, Value: support.cloudflare.com/
+				224 link Description: System Status, Value: cloudflarestatus.com/
+				225 link Description: Careers, Value: cloudflare.com/careers/
+				226 link Description: Terms of Use, Value: cloudflare.com/website-terms/
+				227 link Description: Report Security Issues, Value: cloudflare.com/disclosure/
+				228 link Description: Privacy Policy, Value: cloudflare.com/privacypolicy/
+				229 button A blue and white pill with a checkmark and an x, representing privacy choices Cookie Preferences, ID: ot-sdk-btn
+					230 image A blue and white pill with a checkmark and an x, representing privacy choices
+					231 text Cookie Preferences
+				232 container
+					233 text ©  2026  Cloudflare, Inc.
+		234 container Notifications
+
+The focused UI element is 236 container skipTarget

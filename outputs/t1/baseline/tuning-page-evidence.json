@@ -1,0 +1,829 @@
+{
+  "title": "Performance Tuning Dubai | ECU & Hardware Projects | Digi-Tec",
+  "description": [
+    "Vehicle-specific ECU tuning and supporting-hardware projects for performance cars at Digi-Tec in Al Quoz, Dubai."
+  ],
+  "headings": [
+    {
+      "level": "h1",
+      "text": "GAD Motors Performance Tuning"
+    },
+    {
+      "level": "h2",
+      "text": "How should a performance tuning project be planned?"
+    },
+    {
+      "level": "h2",
+      "text": "Performance Tuning and Supporting Hardware in Dubai"
+    },
+    {
+      "level": "h3",
+      "text": "GAD Motors Performance Parts in Dubai"
+    },
+    {
+      "level": "h2",
+      "text": "Mercedes-AMG ECU tuning and project planning"
+    },
+    {
+      "level": "h3",
+      "text": "What do Stage 1 and Stage 2 mean?"
+    },
+    {
+      "level": "h3",
+      "text": "GAD guidance and documented Mercedes projects"
+    },
+    {
+      "level": "h2",
+      "text": "Performance tuning questions"
+    },
+    {
+      "level": "h3",
+      "text": "How does Digi-Tec plan an ECU tuning project?"
+    },
+    {
+      "level": "h3",
+      "text": "How much power can a tuned car gain?"
+    },
+    {
+      "level": "h3",
+      "text": "Which cars can Digi-Tec assess for tuning?"
+    },
+    {
+      "level": "h2",
+      "text": "Build Your Power"
+    },
+    {
+      "level": "h3",
+      "text": "AMG GT / GTS"
+    },
+    {
+      "level": "h3",
+      "text": "Stage 1 Package"
+    },
+    {
+      "level": "h2",
+      "text": "GAD Tuning Near Me in Dubai"
+    },
+    {
+      "level": "h2",
+      "text": "Tell us about your vehicle."
+    },
+    {
+      "level": "h3",
+      "text": "Share the details"
+    },
+    {
+      "level": "h3",
+      "text": "Arrange the visit"
+    },
+    {
+      "level": "h3",
+      "text": "Review the scope"
+    },
+    {
+      "level": "h2",
+      "text": "Quick Links"
+    },
+    {
+      "level": "h2",
+      "text": "Popular Services"
+    },
+    {
+      "level": "h2",
+      "text": "Contact"
+    }
+  ],
+  "robots": [
+    "index, follow, max-image-preview:large"
+  ],
+  "canonical": [
+    "https://digitecme.com/tuning"
+  ],
+  "hreflang": [
+    {
+      "locale": "en-AE",
+      "url": "https://digitecme.com/tuning"
+    },
+    {
+      "locale": "ar-AE",
+      "url": "https://digitecme.com/ar/tuning"
+    },
+    {
+      "locale": "x-default",
+      "url": "https://digitecme.com/tuning"
+    }
+  ],
+  "schemas": [
+    {
+      "@type": "Organization",
+      "@id": "https://digitecme.com/#organization",
+      "name": "Digi-Tec Performance Center",
+      "alternateName": [
+        "Digi-Tec",
+        "DIGI-TEC",
+        "Digitec"
+      ],
+      "url": "https://digitecme.com/",
+      "email": "info@digitecme.com",
+      "logo": {
+        "@id": "https://digitecme.com/#logo"
+      },
+      "image": {
+        "@id": "https://digitecme.com/#logo"
+      },
+      "sameAs": [
+        "https://www.instagram.com/digi_tec/",
+        "https://www.facebook.com/Digitecme/"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+971 4 340 2223",
+        "contactType": "customer service"
+      }
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://digitecme.com/#logo",
+      "url": "https://digitecme.com/favicon-192x192.png",
+      "contentUrl": "https://digitecme.com/favicon-192x192.png",
+      "width": 192,
+      "height": 192,
+      "caption": "Digi-Tec Performance Center"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://digitecme.com/#website",
+      "url": "https://digitecme.com/",
+      "name": "Digi-Tec Performance Center",
+      "publisher": {
+        "@id": "https://digitecme.com/#organization"
+      },
+      "inLanguage": [
+        "en-AE",
+        "ar-AE"
+      ]
+    },
+    {
+      "@type": [
+        "AutoRepair",
+        "AutomotiveBusiness"
+      ],
+      "@id": "https://digitecme.com/#business",
+      "name": "Digi-Tec Performance Center",
+      "url": "https://digitecme.com/",
+      "logo": {
+        "@id": "https://digitecme.com/#logo"
+      },
+      "image": {
+        "@id": "https://digitecme.com/#logo"
+      },
+      "parentOrganization": {
+        "@id": "https://digitecme.com/#organization"
+      },
+      "description": "Independent luxury, European and German vehicle workshop in Al Quoz Industrial Area 3, Dubai.",
+      "foundingDate": "2002",
+      "telephone": "+971 4 340 2223",
+      "email": "info@digitecme.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Al Quoz Industrial Area 3, Warehouses 11–15",
+        "addressLocality": "Dubai",
+        "addressCountry": "AE"
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Dubai"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+971 4 340 2223",
+        "contactType": "customer service"
+      },
+      "sameAs": [
+        "https://www.instagram.com/digi_tec/",
+        "https://www.facebook.com/Digitecme/"
+      ],
+      "hasOfferCatalog": {
+        "@id": "https://digitecme.com/#service-catalog"
+      }
+    },
+    {
+      "@type": "OfferCatalog",
+      "@id": "https://digitecme.com/#service-catalog",
+      "name": "Digi-Tec vehicle workshop services",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "@id": "https://digitecme.com/#offer-maintenance",
+          "itemOffered": {
+            "@type": "Service",
+            "@id": "https://digitecme.com/#service-maintenance",
+            "name": "Vehicle maintenance",
+            "provider": {
+              "@id": "https://digitecme.com/#business"
+            }
+          }
+        },
+        {
+          "@type": "Offer",
+          "@id": "https://digitecme.com/#offer-diagnostics",
+          "itemOffered": {
+            "@type": "Service",
+            "@id": "https://digitecme.com/#service-diagnostics",
+            "name": "Vehicle diagnostics",
+            "provider": {
+              "@id": "https://digitecme.com/#business"
+            }
+          }
+        },
+        {
+          "@type": "Offer",
+          "@id": "https://digitecme.com/#offer-mechanical-repair",
+          "itemOffered": {
+            "@type": "Service",
+            "@id": "https://digitecme.com/#service-mechanical-repair",
+            "name": "Mechanical repair",
+            "provider": {
+              "@id": "https://digitecme.com/#business"
+            }
+          }
+        },
+        {
+          "@type": "Offer",
+          "@id": "https://digitecme.com/#offer-electrical-repair",
+          "itemOffered": {
+            "@type": "Service",
+            "@id": "https://digitecme.com/#service-electrical-repair",
+            "name": "Auto electrical repair",
+            "provider": {
+              "@id": "https://digitecme.com/#business"
+            }
+          }
+        },
+        {
+          "@type": "Offer",
+          "@id": "https://digitecme.com/#offer-body-repair",
+          "itemOffered": {
+            "@type": "Service",
+            "@id": "https://digitecme.com/#service-body-repair",
+            "name": "Vehicle body repair",
+            "provider": {
+              "@id": "https://digitecme.com/#business"
+            }
+          }
+        },
+        {
+          "@type": "Offer",
+          "@id": "https://digitecme.com/#offer-performance",
+          "itemOffered": {
+            "@type": "Service",
+            "@id": "https://digitecme.com/#service-performance",
+            "name": "Vehicle performance services",
+            "provider": {
+              "@id": "https://digitecme.com/#business"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://digitecme.com/tuning#webpage",
+      "url": "https://digitecme.com/tuning",
+      "name": "Performance Tuning Dubai | ECU & Hardware Projects | Digi-Tec",
+      "description": "Vehicle-specific ECU tuning and supporting-hardware projects for performance cars at Digi-Tec in Al Quoz, Dubai.",
+      "isPartOf": {
+        "@id": "https://digitecme.com/#website"
+      },
+      "publisher": {
+        "@id": "https://digitecme.com/#organization"
+      },
+      "about": {
+        "@id": "https://digitecme.com/#business"
+      },
+      "mainEntity": {
+        "@id": "https://digitecme.com/tuning#service"
+      },
+      "breadcrumb": {
+        "@id": "https://digitecme.com/tuning#breadcrumb"
+      },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "@id": "https://digitecme.com/tuning#primaryimage",
+        "url": "https://digitecme.com/images/tuning-hero-bg.jpg",
+        "contentUrl": "https://digitecme.com/images/tuning-hero-bg.jpg",
+        "representativeOfPage": true
+      },
+      "inLanguage": "en-AE"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://digitecme.com/tuning#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://digitecme.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Tuning",
+          "item": "https://digitecme.com/tuning"
+        }
+      ]
+    },
+    {
+      "@type": "Service",
+      "@id": "https://digitecme.com/tuning#service",
+      "name": "Performance Tuning in Dubai",
+      "serviceType": "ECU Tuning and Performance Projects",
+      "description": "Vehicle-specific ECU tuning and supporting-hardware projects for performance cars at Digi-Tec in Al Quoz, Dubai.",
+      "url": "https://digitecme.com/tuning",
+      "inLanguage": "en-AE",
+      "image": {
+        "@type": "ImageObject",
+        "@id": "https://digitecme.com/tuning#service-image",
+        "url": "https://digitecme.com/images/tuning-hero-bg.jpg",
+        "contentUrl": "https://digitecme.com/images/tuning-hero-bg.jpg",
+        "representativeOfPage": true
+      },
+      "provider": {
+        "@id": "https://digitecme.com/#business"
+      },
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Dubai"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "@id": "https://digitecme.com/tuning#offer-catalog",
+        "name": "Performance Tuning in Dubai services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "@id": "https://digitecme.com/tuning#offer-1-ecu-remapping",
+            "itemOffered": {
+              "@type": "Service",
+              "@id": "https://digitecme.com/tuning#catalog-service-1-ecu-remapping",
+              "name": "ECU Remapping",
+              "provider": {
+                "@id": "https://digitecme.com/#business"
+              }
+            }
+          },
+          {
+            "@type": "Offer",
+            "@id": "https://digitecme.com/tuning#offer-2-stage-1-tuning",
+            "itemOffered": {
+              "@type": "Service",
+              "@id": "https://digitecme.com/tuning#catalog-service-2-stage-1-tuning",
+              "name": "Stage 1 Tuning",
+              "provider": {
+                "@id": "https://digitecme.com/#business"
+              }
+            }
+          },
+          {
+            "@type": "Offer",
+            "@id": "https://digitecme.com/tuning#offer-3-stage-2-tuning",
+            "itemOffered": {
+              "@type": "Service",
+              "@id": "https://digitecme.com/tuning#catalog-service-3-stage-2-tuning",
+              "name": "Stage 2 Tuning",
+              "provider": {
+                "@id": "https://digitecme.com/#business"
+              }
+            }
+          },
+          {
+            "@type": "Offer",
+            "@id": "https://digitecme.com/tuning#offer-4-turbo-kits",
+            "itemOffered": {
+              "@type": "Service",
+              "@id": "https://digitecme.com/tuning#catalog-service-4-turbo-kits",
+              "name": "Turbo Kits",
+              "provider": {
+                "@id": "https://digitecme.com/#business"
+              }
+            }
+          },
+          {
+            "@type": "Offer",
+            "@id": "https://digitecme.com/tuning#offer-5-intake-manifold-upgrades",
+            "itemOffered": {
+              "@type": "Service",
+              "@id": "https://digitecme.com/tuning#catalog-service-5-intake-manifold-upgrades",
+              "name": "Intake Manifold Upgrades",
+              "provider": {
+                "@id": "https://digitecme.com/#business"
+              }
+            }
+          },
+          {
+            "@type": "Offer",
+            "@id": "https://digitecme.com/tuning#offer-6-downpipes-and-exhaust-systems",
+            "itemOffered": {
+              "@type": "Service",
+              "@id": "https://digitecme.com/tuning#catalog-service-6-downpipes-and-exhaust-systems",
+              "name": "Downpipes & Exhaust Systems",
+              "provider": {
+                "@id": "https://digitecme.com/#business"
+              }
+            }
+          },
+          {
+            "@type": "Offer",
+            "@id": "https://digitecme.com/tuning#offer-7-amg-performance-upgrades",
+            "itemOffered": {
+              "@type": "Service",
+              "@id": "https://digitecme.com/tuning#catalog-service-7-amg-performance-upgrades",
+              "name": "AMG Performance Upgrades",
+              "provider": {
+                "@id": "https://digitecme.com/#business"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://digitecme.com/tuning#faq",
+      "url": "https://digitecme.com/tuning",
+      "isPartOf": {
+        "@id": "https://digitecme.com/#website"
+      },
+      "inLanguage": "en-AE",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "@id": "https://digitecme.com/tuning#question-1",
+          "name": "How does Digi-Tec plan an ECU tuning project?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The team starts with the vehicle, current condition, fuel, intended use and supporting hardware. The proposed calibration and any hardware requirements are then explained before work begins."
+          }
+        },
+        {
+          "@type": "Question",
+          "@id": "https://digitecme.com/tuning#question-2",
+          "name": "How much power can a tuned car gain?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The result depends on the exact platform, its condition, fuel, calibration and supporting hardware. Vehicle-specific figures should be confirmed after inspection rather than treated as a universal promise."
+          }
+        },
+        {
+          "@type": "Question",
+          "@id": "https://digitecme.com/tuning#question-3",
+          "name": "Which cars can Digi-Tec assess for tuning?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Digi-Tec assesses Mercedes-Benz and AMG, Porsche, Audi, BMW and other performance platforms for software and supporting-hardware projects in Dubai."
+          }
+        }
+      ]
+    }
+  ],
+  "links": [
+    {
+      "href": "/",
+      "label": ""
+    },
+    {
+      "href": "/tuning",
+      "label": "English"
+    },
+    {
+      "href": "/ar/tuning",
+      "label": "العربية"
+    },
+    {
+      "href": "/about",
+      "label": "About Us"
+    },
+    {
+      "href": "/services",
+      "label": "Services"
+    },
+    {
+      "href": "/brands",
+      "label": "Brands"
+    },
+    {
+      "href": "/tuning",
+      "label": "GAD"
+    },
+    {
+      "href": "/vrx",
+      "label": "VRX"
+    },
+    {
+      "href": "/blog",
+      "label": "Blog"
+    },
+    {
+      "href": "/faq",
+      "label": "FAQ"
+    },
+    {
+      "href": "https://wa.me/97143402223?text=Hi%20DIGI-TEC%2C%20I%20would%20like%20to%20get%20in%20touch%20about%20my%20vehicle.",
+      "label": "Contact Us"
+    },
+    {
+      "href": "https://wa.me/97143402223?text=Hi%20DIGI-TEC%2C%20I%20would%20like%20to%20get%20in%20touch%20about%20my%20vehicle.",
+      "label": "Contact Us"
+    },
+    {
+      "href": "https://www.gad-motors.de/",
+      "label": "www.gad-motors.de"
+    },
+    {
+      "href": "https://wa.me/97143402223?text=Hi%2C%20I'm%20interested%20in%20GAD%20performance%20tuning%20for%20my%20car.",
+      "label": "Book a Tuning Consultation"
+    },
+    {
+      "href": "/vrx",
+      "label": "GAD Motors V-Class VRX at our Dubai workshop"
+    },
+    {
+      "href": "/services/mercedes-diagnostics-dubai",
+      "label": "Mercedes diagnostics and supported coding"
+    },
+    {
+      "href": "/blog/gad-tuning-explained",
+      "label": "Questions to ask about a GAD tuning project"
+    },
+    {
+      "href": "/blog/mercedes-amg-gt-tuning-dubai",
+      "label": "Mercedes-AMG GT tuning assessment"
+    },
+    {
+      "href": "/blog/mercedes-amg-gt-black-series-1300hp-build-dubai",
+      "label": "AMG GT Black Series project"
+    },
+    {
+      "href": "/blog/g63-to-brabus-g800-conversion-dubai",
+      "label": "G63 to Brabus G800 conversion project"
+    },
+    {
+      "href": "https://wa.me/97143402223?text=Hi%2C%20I'd%20like%20to%20schedule%20a%20consultation%20at%20Digi-Tec%20Performance%20Center.",
+      "label": "Request an appointment"
+    },
+    {
+      "href": "tel:+97143402223",
+      "label": "Call +971 4 340 2223"
+    },
+    {
+      "href": "/",
+      "label": ""
+    },
+    {
+      "href": "https://maps.google.com/?q=Al+Quoz+Industrial+Area+3+Dubai",
+      "label": "Get directions to our workshop →"
+    },
+    {
+      "href": "/about",
+      "label": "About Us"
+    },
+    {
+      "href": "/services",
+      "label": "All Services"
+    },
+    {
+      "href": "/brands",
+      "label": "Brands We Service"
+    },
+    {
+      "href": "/tuning",
+      "label": "Performance Tuning"
+    },
+    {
+      "href": "/vrx",
+      "label": "VRX"
+    },
+    {
+      "href": "/blog",
+      "label": "Workshop Guides"
+    },
+    {
+      "href": "/brands/mercedes-benz-service-dubai",
+      "label": "Mercedes Repair"
+    },
+    {
+      "href": "/services/car-diagnostics-dubai",
+      "label": "Diagnostics & Programming"
+    },
+    {
+      "href": "/services/oil-change-dubai",
+      "label": "Oil Change Service"
+    },
+    {
+      "href": "/services/transmission-repair-dubai",
+      "label": "Transmission Repair"
+    },
+    {
+      "href": "/services/brake-repair-dubai",
+      "label": "Brake Repair"
+    },
+    {
+      "href": "/tuning",
+      "label": "Performance Tuning"
+    },
+    {
+      "href": "tel:+97143402223",
+      "label": "+971 4 340 2223"
+    },
+    {
+      "href": "mailto:info@digitecme.com",
+      "label": "info@digitecme.com"
+    },
+    {
+      "href": "https://www.instagram.com/digi_tec/",
+      "label": "Instagram"
+    },
+    {
+      "href": "https://www.facebook.com/Digitecme/",
+      "label": "Facebook"
+    },
+    {
+      "href": "/faq",
+      "label": "FAQ"
+    },
+    {
+      "href": "/sitemap",
+      "label": "Sitemap"
+    },
+    {
+      "href": "/privacy-policy.pdf",
+      "label": "Privacy Policy"
+    }
+  ],
+  "incoming": [
+    {
+      "source": "/ar/blog/aston-martin-best-workshop-dubai",
+      "target": "/ar/tuning",
+      "label": "تطوير الأداء"
+    },
+    {
+      "source": "/ar/blog/audi-maintenance-guide-dubai",
+      "target": "/ar/tuning",
+      "label": "تطوير الأداء"
+    },
+    {
+      "source": "/ar/blog/bentley-best-workshop-dubai",
+      "target": "/ar/tuning",
+      "label": "تطوير الأداء"
+    },
+    {
+      "source": "/ar/blog/bmw-maintenance-guide-dubai",
+      "target": "/ar/tuning",
+      "label": "تطوير الأداء"
+    },
+    {
+      "source": "/ar/blog/cadillac-best-workshop-dubai",
+      "target": "/ar/tuning",
+      "label": "تطوير الأداء"
+    },
+    {
+      "source": "/ar/blog/chevrolet-best-workshop-dubai",
+      "target": "/ar/tuning",
+      "label": "تطوير الأداء"
+    },
+    {
+      "source": "/ar/blog/ford-best-workshop-dubai",
+      "target": "/ar/tuning",
+      "label": "تطوير الأداء"
+    },
+    {
+      "source": "/ar/blog/land-rover-best-workshop-dubai",
+      "target": "/ar/tuning",
+      "label": "تطوير الأداء"
+    },
+    {
+      "source": "/ar/blog/maserati-best-workshop-dubai",
+      "target": "/ar/tuning",
+      "label": "تطوير الأداء"
+    },
+    {
+      "source": "/ar/blog/maybach-best-workshop-dubai",
+      "target": "/ar/tuning",
+      "label": "تطوير الأداء"
+    },
+    {
+      "source": "/ar/blog/mercedes-amg-gt-black-series-1300hp-build-dubai",
+      "target": "/ar/tuning",
+      "label": "استكشف الخدمة واحجز موعداً"
+    },
+    {
+      "source": "/ar/blog/mini-best-workshop-dubai",
+      "target": "/ar/tuning",
+      "label": "تطوير الأداء"
+    },
+    {
+      "source": "/ar/blog/porsche-maintenance-guide-dubai",
+      "target": "/ar/tuning",
+      "label": "تطوير الأداء"
+    },
+    {
+      "source": "/ar/blog/volkswagen-best-workshop-dubai",
+      "target": "/ar/tuning",
+      "label": "تطوير الأداء"
+    },
+    {
+      "source": "/ar",
+      "target": "/ar/tuning",
+      "label": "01 تطوير الأداء برمجة وحدة التحكم، وترقية التيربو، وتحسين نظام العادم لإطلاق قدرات سيارتك الحقيقية. Explore"
+    },
+    {
+      "source": "/ar/sitemap",
+      "target": "/ar/tuning",
+      "label": "تطوير الأداء"
+    },
+    {
+      "source": "/blog/audi-maintenance-guide-dubai",
+      "target": "/tuning",
+      "label": "Performance Tuning"
+    },
+    {
+      "source": "/blog/bentley-best-workshop-dubai",
+      "target": "/tuning",
+      "label": "Performance Tuning"
+    },
+    {
+      "source": "/blog/bmw-maintenance-guide-dubai",
+      "target": "/tuning",
+      "label": "Performance Tuning"
+    },
+    {
+      "source": "/blog/cadillac-best-workshop-dubai",
+      "target": "/tuning",
+      "label": "Performance Tuning"
+    },
+    {
+      "source": "/blog/chevrolet-best-workshop-dubai",
+      "target": "/tuning",
+      "label": "Performance Tuning"
+    },
+    {
+      "source": "/blog/ford-best-workshop-dubai",
+      "target": "/tuning",
+      "label": "Performance Tuning"
+    },
+    {
+      "source": "/blog/land-rover-best-workshop-dubai",
+      "target": "/tuning",
+      "label": "Performance Tuning"
+    },
+    {
+      "source": "/blog/maserati-best-workshop-dubai",
+      "target": "/tuning",
+      "label": "Performance Tuning"
+    },
+    {
+      "source": "/blog/maybach-best-workshop-dubai",
+      "target": "/tuning",
+      "label": "Performance Tuning"
+    },
+    {
+      "source": "/blog/mercedes-amg-gt-black-series-1300hp-build-dubai",
+      "target": "/tuning",
+      "label": "Explore Mercedes-AMG performance tuning in Dubai"
+    },
+    {
+      "source": "/blog/mini-best-workshop-dubai",
+      "target": "/tuning",
+      "label": "Performance Tuning"
+    },
+    {
+      "source": "/blog/volkswagen-best-workshop-dubai",
+      "target": "/tuning",
+      "label": "Performance Tuning"
+    },
+    {
+      "source": "/",
+      "target": "/tuning",
+      "label": "01 Performance Tuning ECU and supporting-hardware projects planned around the vehicle, fuel, intended use and current condition. Explore"
+    },
+    {
+      "source": "/services/exhaust-repair-dubai",
+      "target": "/tuning",
+      "label": "Performance exhaust and tuning assessment"
+    },
+    {
+      "source": "/services/mercedes-exhaust-repair-dubai",
+      "target": "/tuning",
+      "label": "Performance hardware and tuning assessment"
+    },
+    {
+      "source": "/sitemap",
+      "target": "/tuning",
+      "label": "Performance tuning"
+    }
+  ],
+  "htmlBytes": 58141
+}

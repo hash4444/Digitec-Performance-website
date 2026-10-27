@@ -1,0 +1,897 @@
+{
+  "_AnswerBlock-DWkHPVA7.js": {
+    "file": "assets/AnswerBlock-DWkHPVA7.js",
+    "name": "AnswerBlock"
+  },
+  "_BrandPage-CFO-8NJW.js": {
+    "file": "assets/BrandPage-CFO-8NJW.js",
+    "name": "BrandPage",
+    "isDynamicEntry": true,
+    "imports": [
+      "_Footer-D0Xl6ot8.js",
+      "src/entry-server.tsx",
+      "_accordion-DINZxoib.js",
+      "_GoogleReviews-CcWxYJRB.js",
+      "_TrustBar-D6jkMLGQ.js",
+      "_ar-brands-DYbuhqMi.js",
+      "_ar-services-CclXnKHT.js",
+      "_porsche-workshop-dubai-BV044Qn8.js",
+      "_astonMartinHubContent-LMYRY7RB.js"
+    ],
+    "dynamicImports": [
+      "src/components/PorscheKnowledgeCentre.tsx",
+      "src/components/BmwKnowledgeHub.tsx",
+      "src/components/BmwHubSections.tsx",
+      "src/components/BmwHubSections.tsx",
+      "src/components/BmwHubSections.tsx",
+      "src/components/BmwHubSections.tsx",
+      "src/components/FerrariKnowledgeCentre.tsx",
+      "src/components/MclarenHubSections.tsx",
+      "src/components/LamborghiniHubSections.tsx",
+      "src/components/RollsRoyceHubSections.tsx",
+      "src/components/AudiHubSections.tsx",
+      "src/components/BentleyHubSections.tsx",
+      "src/components/RoxHubSections.tsx",
+      "src/components/AstonMartinHubSections.tsx"
+    ]
+  },
+  "_FAQ-I3cfM1oW.js": {
+    "file": "assets/FAQ-I3cfM1oW.js",
+    "name": "FAQ",
+    "imports": [
+      "_accordion-DINZxoib.js",
+      "_Reveal-B0bzMO-v.js",
+      "src/entry-server.tsx",
+      "_Footer-D0Xl6ot8.js"
+    ]
+  },
+  "_FinalCTA-DCkhXNCr.js": {
+    "file": "assets/FinalCTA-DCkhXNCr.js",
+    "name": "FinalCTA",
+    "imports": [
+      "_Reveal-B0bzMO-v.js",
+      "src/entry-server.tsx",
+      "_Footer-D0Xl6ot8.js"
+    ]
+  },
+  "_Footer-D0Xl6ot8.js": {
+    "file": "assets/Footer-D0Xl6ot8.js",
+    "name": "Footer",
+    "imports": [
+      "src/entry-server.tsx"
+    ]
+  },
+  "_GoogleReviews-CcWxYJRB.js": {
+    "file": "assets/GoogleReviews-CcWxYJRB.js",
+    "name": "GoogleReviews",
+    "imports": [
+      "_Reveal-B0bzMO-v.js",
+      "src/entry-server.tsx"
+    ]
+  },
+  "_PageIntro-BZbZzflk.js": {
+    "file": "assets/PageIntro-BZbZzflk.js",
+    "name": "PageIntro"
+  },
+  "_PpfQuoteForm-RKK9h8TG.js": {
+    "file": "assets/PpfQuoteForm-RKK9h8TG.js",
+    "name": "PpfQuoteForm",
+    "imports": [
+      "src/entry-server.tsx"
+    ]
+  },
+  "_Reveal-B0bzMO-v.js": {
+    "file": "assets/Reveal-B0bzMO-v.js",
+    "name": "Reveal"
+  },
+  "_TrustBar-D6jkMLGQ.js": {
+    "file": "assets/TrustBar-D6jkMLGQ.js",
+    "name": "TrustBar",
+    "imports": [
+      "src/entry-server.tsx",
+      "_Footer-D0Xl6ot8.js"
+    ]
+  },
+  "_TuningConfigurationDetails-BVfdP4Ia.js": {
+    "file": "assets/TuningConfigurationDetails-BVfdP4Ia.js",
+    "name": "TuningConfigurationDetails",
+    "imports": [
+      "src/entry-server.tsx"
+    ]
+  },
+  "_WhyChooseUs-CG-0lMu_.js": {
+    "file": "assets/WhyChooseUs-CG-0lMu_.js",
+    "name": "WhyChooseUs",
+    "imports": [
+      "_Reveal-B0bzMO-v.js",
+      "src/entry-server.tsx",
+      "_Footer-D0Xl6ot8.js"
+    ]
+  },
+  "_accordion-DINZxoib.js": {
+    "file": "assets/accordion-DINZxoib.js",
+    "name": "accordion",
+    "imports": [
+      "src/entry-server.tsx"
+    ]
+  },
+  "_ar-best-workshop-CPzBRuy3.js": {
+    "file": "assets/ar-best-workshop-CPzBRuy3.js",
+    "name": "ar-best-workshop"
+  },
+  "_ar-blog--9StxQEy.js": {
+    "file": "assets/ar-blog--9StxQEy.js",
+    "name": "ar-blog",
+    "imports": [
+      "src/entry-server.tsx"
+    ]
+  },
+  "_ar-brands-DYbuhqMi.js": {
+    "file": "assets/ar-brands-DYbuhqMi.js",
+    "name": "ar-brands"
+  },
+  "_ar-services-CclXnKHT.js": {
+    "file": "assets/ar-services-CclXnKHT.js",
+    "name": "ar-services",
+    "imports": [
+      "_Footer-D0Xl6ot8.js"
+    ]
+  },
+  "_astonMartinHubContent-LMYRY7RB.js": {
+    "file": "assets/astonMartinHubContent-LMYRY7RB.js",
+    "name": "astonMartinHubContent"
+  },
+  "_digitec-workshop-lifts-DkXx2c5B.js": {
+    "file": "assets/digitec-workshop-lifts-DkXx2c5B.js",
+    "name": "digitec-workshop-lifts",
+    "assets": [
+      "assets/digitec-workshop-lifts-CcNVxHco.jpg"
+    ]
+  },
+  "_digitec-workshop-luxury-bays-BG9OSRaT.js": {
+    "file": "assets/digitec-workshop-luxury-bays-BG9OSRaT.js",
+    "name": "digitec-workshop-luxury-bays",
+    "assets": [
+      "assets/digitec-workshop-luxury-bays-Bpp5B17h.jpg"
+    ]
+  },
+  "_digitec-workshop-service-floor-BbSs2ssb.js": {
+    "file": "assets/digitec-workshop-service-floor-BbSs2ssb.js",
+    "name": "digitec-workshop-service-floor",
+    "assets": [
+      "assets/digitec-workshop-service-floor-sy5B5uz0.jpg"
+    ]
+  },
+  "_porsche-workshop-dubai-BV044Qn8.js": {
+    "file": "assets/porsche-workshop-dubai-BV044Qn8.js",
+    "name": "porsche-workshop-dubai",
+    "assets": [
+      "assets/porsche-gt3rs-workshop-dubai-D8xamBuX.jpg",
+      "assets/ferrari-engine-workshop-dubai-DU37kxeN.jpg",
+      "assets/maybach-workshop-dubai-B_1vLEAe.jpg",
+      "assets/lamborghini-workshop-dubai-Bf9qJnfc.jpg",
+      "assets/porsche-workshop-dubai-gvWwvQQg.jpg"
+    ]
+  },
+  "_verified-pricing-CGXp-YYp.js": {
+    "file": "assets/verified-pricing-CGXp-YYp.js",
+    "name": "verified-pricing",
+    "imports": [
+      "src/entry-server.tsx"
+    ]
+  },
+  "src/components/AstonMartinHubSections.tsx": {
+    "file": "assets/AstonMartinHubSections-Bi5C09bw.js",
+    "name": "AstonMartinHubSections",
+    "src": "src/components/AstonMartinHubSections.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/entry-server.tsx",
+      "_astonMartinHubContent-LMYRY7RB.js"
+    ]
+  },
+  "src/components/AudiHubSections.tsx": {
+    "file": "assets/AudiHubSections-DH2ftCqK.js",
+    "name": "AudiHubSections",
+    "src": "src/components/AudiHubSections.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/entry-server.tsx",
+      "_BrandPage-CFO-8NJW.js",
+      "_Footer-D0Xl6ot8.js",
+      "_accordion-DINZxoib.js",
+      "_GoogleReviews-CcWxYJRB.js",
+      "_Reveal-B0bzMO-v.js",
+      "_TrustBar-D6jkMLGQ.js",
+      "_ar-brands-DYbuhqMi.js",
+      "_ar-services-CclXnKHT.js",
+      "_porsche-workshop-dubai-BV044Qn8.js",
+      "_astonMartinHubContent-LMYRY7RB.js"
+    ]
+  },
+  "src/components/BentleyHubSections.tsx": {
+    "file": "assets/BentleyHubSections-DU_PATuO.js",
+    "name": "BentleyHubSections",
+    "src": "src/components/BentleyHubSections.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/entry-server.tsx",
+      "_BrandPage-CFO-8NJW.js",
+      "_digitec-workshop-luxury-bays-BG9OSRaT.js",
+      "_Footer-D0Xl6ot8.js",
+      "_accordion-DINZxoib.js",
+      "_GoogleReviews-CcWxYJRB.js",
+      "_Reveal-B0bzMO-v.js",
+      "_TrustBar-D6jkMLGQ.js",
+      "_ar-brands-DYbuhqMi.js",
+      "_ar-services-CclXnKHT.js",
+      "_porsche-workshop-dubai-BV044Qn8.js",
+      "_astonMartinHubContent-LMYRY7RB.js"
+    ]
+  },
+  "src/components/BmwHubSections.tsx": {
+    "file": "assets/BmwHubSections-i4WAEaWx.js",
+    "name": "BmwHubSections",
+    "src": "src/components/BmwHubSections.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/entry-server.tsx",
+      "_BrandPage-CFO-8NJW.js",
+      "_digitec-workshop-service-floor-BbSs2ssb.js",
+      "_Footer-D0Xl6ot8.js",
+      "_accordion-DINZxoib.js",
+      "_GoogleReviews-CcWxYJRB.js",
+      "_Reveal-B0bzMO-v.js",
+      "_TrustBar-D6jkMLGQ.js",
+      "_ar-brands-DYbuhqMi.js",
+      "_ar-services-CclXnKHT.js",
+      "_porsche-workshop-dubai-BV044Qn8.js",
+      "_astonMartinHubContent-LMYRY7RB.js"
+    ]
+  },
+  "src/components/BmwKnowledgeHub.tsx": {
+    "file": "assets/BmwKnowledgeHub-DNWRPwmR.js",
+    "name": "BmwKnowledgeHub",
+    "src": "src/components/BmwKnowledgeHub.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/entry-server.tsx",
+      "_BrandPage-CFO-8NJW.js",
+      "_Footer-D0Xl6ot8.js",
+      "_accordion-DINZxoib.js",
+      "_GoogleReviews-CcWxYJRB.js",
+      "_Reveal-B0bzMO-v.js",
+      "_TrustBar-D6jkMLGQ.js",
+      "_ar-brands-DYbuhqMi.js",
+      "_ar-services-CclXnKHT.js",
+      "_porsche-workshop-dubai-BV044Qn8.js",
+      "_astonMartinHubContent-LMYRY7RB.js"
+    ]
+  },
+  "src/components/FerrariKnowledgeCentre.tsx": {
+    "file": "assets/FerrariKnowledgeCentre-D4ZUWj7U.js",
+    "name": "FerrariKnowledgeCentre",
+    "src": "src/components/FerrariKnowledgeCentre.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/entry-server.tsx",
+      "_porsche-workshop-dubai-BV044Qn8.js"
+    ]
+  },
+  "src/components/LamborghiniHubSections.tsx": {
+    "file": "assets/LamborghiniHubSections-BTFZbdrb.js",
+    "name": "LamborghiniHubSections",
+    "src": "src/components/LamborghiniHubSections.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/entry-server.tsx",
+      "_BrandPage-CFO-8NJW.js",
+      "_Footer-D0Xl6ot8.js",
+      "_accordion-DINZxoib.js",
+      "_GoogleReviews-CcWxYJRB.js",
+      "_Reveal-B0bzMO-v.js",
+      "_TrustBar-D6jkMLGQ.js",
+      "_ar-brands-DYbuhqMi.js",
+      "_ar-services-CclXnKHT.js",
+      "_porsche-workshop-dubai-BV044Qn8.js",
+      "_astonMartinHubContent-LMYRY7RB.js"
+    ]
+  },
+  "src/components/MclarenHubSections.tsx": {
+    "file": "assets/MclarenHubSections-BdoJOOJG.js",
+    "name": "MclarenHubSections",
+    "src": "src/components/MclarenHubSections.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/entry-server.tsx",
+      "_BrandPage-CFO-8NJW.js",
+      "_digitec-workshop-lifts-DkXx2c5B.js",
+      "_Footer-D0Xl6ot8.js",
+      "_accordion-DINZxoib.js",
+      "_GoogleReviews-CcWxYJRB.js",
+      "_Reveal-B0bzMO-v.js",
+      "_TrustBar-D6jkMLGQ.js",
+      "_ar-brands-DYbuhqMi.js",
+      "_ar-services-CclXnKHT.js",
+      "_porsche-workshop-dubai-BV044Qn8.js",
+      "_astonMartinHubContent-LMYRY7RB.js"
+    ]
+  },
+  "src/components/PorscheKnowledgeCentre.tsx": {
+    "file": "assets/PorscheKnowledgeCentre-XITeXHWR.js",
+    "name": "PorscheKnowledgeCentre",
+    "src": "src/components/PorscheKnowledgeCentre.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/entry-server.tsx"
+    ]
+  },
+  "src/components/RollsRoyceHubSections.tsx": {
+    "file": "assets/RollsRoyceHubSections-6NewkJzS.js",
+    "name": "RollsRoyceHubSections",
+    "src": "src/components/RollsRoyceHubSections.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/entry-server.tsx",
+      "_BrandPage-CFO-8NJW.js",
+      "_digitec-workshop-luxury-bays-BG9OSRaT.js",
+      "_Footer-D0Xl6ot8.js",
+      "_accordion-DINZxoib.js",
+      "_GoogleReviews-CcWxYJRB.js",
+      "_Reveal-B0bzMO-v.js",
+      "_TrustBar-D6jkMLGQ.js",
+      "_ar-brands-DYbuhqMi.js",
+      "_ar-services-CclXnKHT.js",
+      "_porsche-workshop-dubai-BV044Qn8.js",
+      "_astonMartinHubContent-LMYRY7RB.js"
+    ]
+  },
+  "src/components/RoxHubSections.tsx": {
+    "file": "assets/RoxHubSections-BbOzcykN.js",
+    "name": "RoxHubSections",
+    "src": "src/components/RoxHubSections.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/entry-server.tsx",
+      "_BrandPage-CFO-8NJW.js",
+      "_Footer-D0Xl6ot8.js",
+      "_accordion-DINZxoib.js",
+      "_GoogleReviews-CcWxYJRB.js",
+      "_Reveal-B0bzMO-v.js",
+      "_TrustBar-D6jkMLGQ.js",
+      "_ar-brands-DYbuhqMi.js",
+      "_ar-services-CclXnKHT.js",
+      "_porsche-workshop-dubai-BV044Qn8.js",
+      "_astonMartinHubContent-LMYRY7RB.js"
+    ]
+  },
+  "src/entry-server.tsx": {
+    "file": "entry-server.js",
+    "name": "entry-server",
+    "src": "src/entry-server.tsx",
+    "isEntry": true,
+    "dynamicImports": [
+      "src/pages/Index.tsx",
+      "src/pages/OilChangePage.tsx",
+      "src/pages/SuspensionRepairPage.tsx",
+      "src/pages/TransmissionPage.tsx",
+      "src/pages/Tuning.tsx",
+      "src/pages/TuningModelPage.tsx",
+      "src/pages/VRX.tsx",
+      "src/pages/Services.tsx",
+      "src/pages/PaintCorrectionPage.tsx",
+      "src/pages/PaintProtectionPage.tsx",
+      "src/pages/ServicePage.tsx",
+      "src/pages/CeramicCoatingPage.tsx",
+      "src/pages/PpfPage.tsx",
+      "src/pages/LocalGaragePage.tsx",
+      "src/pages/AboutUs.tsx",
+      "src/pages/FAQPage.tsx",
+      "src/pages/Blog.tsx",
+      "src/pages/BlogArticleRouter.tsx",
+      "src/pages/MercedesModelPage.tsx",
+      "src/pages/MercedesProblemsIndex.tsx",
+      "src/pages/MercedesProblemGuidePage.tsx",
+      "src/pages/MercedesCaseStudyPage.tsx",
+      "src/pages/PorscheModelPage.tsx",
+      "src/pages/AudiModelPage.tsx",
+      "src/pages/BmwModelPage.tsx",
+      "src/pages/FerrariModelPage.tsx",
+      "src/pages/FerrariCaseStudyPage.tsx",
+      "src/pages/PorscheSystemsIndex.tsx",
+      "src/pages/PorscheSystemGuidePage.tsx",
+      "src/pages/PorscheProblemsIndex.tsx",
+      "src/pages/PorscheProblemGuidePage.tsx",
+      "src/pages/PorscheOwnershipGuidePage.tsx",
+      "src/pages/PorscheCaseStudyPage.tsx",
+      "src/pages/Brands.tsx",
+      "_BrandPage-CFO-8NJW.js",
+      "src/pages/BrandServicePage.tsx",
+      "src/pages/BestWorkshopPage.tsx",
+      "src/pages/SitemapPage.tsx"
+    ],
+    "css": [
+      "assets/entry-server-BeA66fcD.css"
+    ],
+    "assets": [
+      "assets/routine-maintenance-optimized-BkcEIeXp.jpg",
+      "assets/tire-repair-DRcZ2QmZ.jpg",
+      "assets/mercedes-amg-engine-repair-dubai--M87Xe7H.jpg",
+      "assets/soft-close-door-repair-BTR5h1QP.jpg",
+      "assets/suspension-repair-dubai-jBXugG2X.jpg",
+      "assets/exhaust-repair-dubai-D6tZkcc6.jpg",
+      "assets/range-rover-workshop-dubai-BHADPo2T.png",
+      "assets/defender-accident-repair-front-BFDuvOIB.jpg",
+      "assets/defender-accident-repair-corner-TjDds8yN.jpg",
+      "assets/defender-accident-repair-disassembly-B1m_Mu61.jpg",
+      "assets/defender-accident-repair-reassembly-vkYVIP5O.jpg",
+      "assets/defender-accident-repair-finished-D6LQe3dV.jpg",
+      "assets/defender-workshop-dubai-C_NWYDCd.jpg",
+      "assets/mercedes-repair-guide-workshop-BgsuoacB.jpg",
+      "assets/g63-brabus-g800-finished-front-DKJRDYPA.jpg",
+      "assets/g63-brabus-g800-rear-interior-strip-down-BucgieJa.jpg",
+      "assets/g63-brabus-g800-front-interior-strip-down-CSu1nGDz.jpg",
+      "assets/g63-brabus-g800-rear-body-preparation-BNO4mitc.jpg",
+      "assets/g63-brabus-g800-front-body-preparation-4cvD1osB.jpg",
+      "assets/g63-brabus-g800-side-preparation-BzeNc7cc.jpg",
+      "assets/g63-brabus-g800-finished-rear-CXTuyEYU.jpg",
+      "assets/mercedes-amg-gt-black-series-1300hp-build-CfbrECOo.jpg",
+      "assets/mercedes-amg-gt-black-series-1300hp-build-B_x6OhGR.mov",
+      "assets/lamborghini-urus-workshop-dubai-DfBGhBoE.jpg"
+    ]
+  },
+  "src/pages/AboutUs.tsx": {
+    "file": "assets/AboutUs-jzdUGdJK.js",
+    "name": "AboutUs",
+    "src": "src/pages/AboutUs.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/entry-server.tsx",
+      "_Footer-D0Xl6ot8.js",
+      "_AnswerBlock-DWkHPVA7.js",
+      "_WhyChooseUs-CG-0lMu_.js",
+      "_FinalCTA-DCkhXNCr.js",
+      "_TrustBar-D6jkMLGQ.js",
+      "_digitec-workshop-luxury-bays-BG9OSRaT.js",
+      "_digitec-workshop-service-floor-BbSs2ssb.js",
+      "_digitec-workshop-lifts-DkXx2c5B.js",
+      "_porsche-workshop-dubai-BV044Qn8.js",
+      "_PageIntro-BZbZzflk.js",
+      "_Reveal-B0bzMO-v.js"
+    ]
+  },
+  "src/pages/AudiModelPage.tsx": {
+    "file": "assets/AudiModelPage-DMRAUUqB.js",
+    "name": "AudiModelPage",
+    "src": "src/pages/AudiModelPage.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_Footer-D0Xl6ot8.js",
+      "src/entry-server.tsx",
+      "_accordion-DINZxoib.js"
+    ]
+  },
+  "src/pages/BestWorkshopPage.tsx": {
+    "file": "assets/BestWorkshopPage-CJfEQeJv.js",
+    "name": "BestWorkshopPage",
+    "src": "src/pages/BestWorkshopPage.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/entry-server.tsx",
+      "_Footer-D0Xl6ot8.js",
+      "_TrustBar-D6jkMLGQ.js",
+      "_accordion-DINZxoib.js",
+      "_ar-best-workshop-CPzBRuy3.js"
+    ]
+  },
+  "src/pages/Blog.tsx": {
+    "file": "assets/Blog-BhI_1izr.js",
+    "name": "Blog",
+    "src": "src/pages/Blog.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/entry-server.tsx",
+      "_Footer-D0Xl6ot8.js",
+      "_FinalCTA-DCkhXNCr.js",
+      "_ar-blog--9StxQEy.js",
+      "_PageIntro-BZbZzflk.js",
+      "_Reveal-B0bzMO-v.js"
+    ]
+  },
+  "src/pages/BlogArticleRouter.tsx": {
+    "file": "assets/BlogArticleRouter-CxGUIl7-.js",
+    "name": "BlogArticleRouter",
+    "src": "src/pages/BlogArticleRouter.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/entry-server.tsx",
+      "_Footer-D0Xl6ot8.js",
+      "_FinalCTA-DCkhXNCr.js",
+      "_ar-blog--9StxQEy.js",
+      "_TrustBar-D6jkMLGQ.js",
+      "_accordion-DINZxoib.js",
+      "src/pages/MercedesModelPage.tsx",
+      "src/pages/PorscheModelPage.tsx",
+      "_Reveal-B0bzMO-v.js"
+    ]
+  },
+  "src/pages/BmwModelPage.tsx": {
+    "file": "assets/BmwModelPage-BkUPCufb.js",
+    "name": "BmwModelPage",
+    "src": "src/pages/BmwModelPage.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_Footer-D0Xl6ot8.js",
+      "src/entry-server.tsx",
+      "_accordion-DINZxoib.js"
+    ]
+  },
+  "src/pages/BrandServicePage.tsx": {
+    "file": "assets/BrandServicePage-Bv3JHZkt.js",
+    "name": "BrandServicePage",
+    "src": "src/pages/BrandServicePage.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/entry-server.tsx",
+      "_Footer-D0Xl6ot8.js",
+      "_FinalCTA-DCkhXNCr.js",
+      "_accordion-DINZxoib.js",
+      "_TrustBar-D6jkMLGQ.js",
+      "_astonMartinHubContent-LMYRY7RB.js",
+      "_Reveal-B0bzMO-v.js"
+    ]
+  },
+  "src/pages/Brands.tsx": {
+    "file": "assets/Brands-DduBXled.js",
+    "name": "Brands",
+    "src": "src/pages/Brands.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/entry-server.tsx",
+      "_Footer-D0Xl6ot8.js",
+      "_AnswerBlock-DWkHPVA7.js",
+      "_PageIntro-BZbZzflk.js"
+    ]
+  },
+  "src/pages/CeramicCoatingPage.tsx": {
+    "file": "assets/CeramicCoatingPage-ByME_ZKv.js",
+    "name": "CeramicCoatingPage",
+    "src": "src/pages/CeramicCoatingPage.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_Footer-D0Xl6ot8.js",
+      "_verified-pricing-CGXp-YYp.js",
+      "src/entry-server.tsx",
+      "_accordion-DINZxoib.js"
+    ]
+  },
+  "src/pages/FAQPage.tsx": {
+    "file": "assets/FAQPage-DcoE-QSD.js",
+    "name": "FAQPage",
+    "src": "src/pages/FAQPage.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/entry-server.tsx",
+      "_Footer-D0Xl6ot8.js",
+      "_AnswerBlock-DWkHPVA7.js",
+      "_FAQ-I3cfM1oW.js",
+      "_FinalCTA-DCkhXNCr.js",
+      "_PageIntro-BZbZzflk.js",
+      "_accordion-DINZxoib.js",
+      "_Reveal-B0bzMO-v.js"
+    ]
+  },
+  "src/pages/FerrariCaseStudyPage.tsx": {
+    "file": "assets/FerrariCaseStudyPage-Bv3Bsvj_.js",
+    "name": "FerrariCaseStudyPage",
+    "src": "src/pages/FerrariCaseStudyPage.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_Footer-D0Xl6ot8.js",
+      "src/entry-server.tsx"
+    ]
+  },
+  "src/pages/FerrariModelPage.tsx": {
+    "file": "assets/FerrariModelPage-BVx4FalY.js",
+    "name": "FerrariModelPage",
+    "src": "src/pages/FerrariModelPage.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_Footer-D0Xl6ot8.js",
+      "src/entry-server.tsx",
+      "_accordion-DINZxoib.js"
+    ]
+  },
+  "src/pages/Index.tsx": {
+    "file": "assets/Index-Beowyz2s.js",
+    "name": "Index",
+    "src": "src/pages/Index.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/entry-server.tsx",
+      "_FAQ-I3cfM1oW.js",
+      "_Footer-D0Xl6ot8.js",
+      "_AnswerBlock-DWkHPVA7.js",
+      "_Reveal-B0bzMO-v.js",
+      "_WhyChooseUs-CG-0lMu_.js",
+      "_TrustBar-D6jkMLGQ.js",
+      "_GoogleReviews-CcWxYJRB.js",
+      "_FinalCTA-DCkhXNCr.js",
+      "_accordion-DINZxoib.js"
+    ]
+  },
+  "src/pages/LocalGaragePage.tsx": {
+    "file": "assets/LocalGaragePage-BEYzeu8H.js",
+    "name": "LocalGaragePage",
+    "src": "src/pages/LocalGaragePage.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/entry-server.tsx",
+      "_Footer-D0Xl6ot8.js",
+      "_FinalCTA-DCkhXNCr.js",
+      "_accordion-DINZxoib.js",
+      "_Reveal-B0bzMO-v.js"
+    ]
+  },
+  "src/pages/MercedesCaseStudyPage.tsx": {
+    "file": "assets/MercedesCaseStudyPage-D3Z5QRnz.js",
+    "name": "MercedesCaseStudyPage",
+    "src": "src/pages/MercedesCaseStudyPage.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_Footer-D0Xl6ot8.js",
+      "src/entry-server.tsx"
+    ]
+  },
+  "src/pages/MercedesModelPage.tsx": {
+    "file": "assets/MercedesModelPage-DVS_MErC.js",
+    "name": "MercedesModelPage",
+    "src": "src/pages/MercedesModelPage.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_Footer-D0Xl6ot8.js",
+      "src/entry-server.tsx",
+      "_accordion-DINZxoib.js"
+    ]
+  },
+  "src/pages/MercedesProblemGuidePage.tsx": {
+    "file": "assets/MercedesProblemGuidePage-BbRHvvy4.js",
+    "name": "MercedesProblemGuidePage",
+    "src": "src/pages/MercedesProblemGuidePage.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_Footer-D0Xl6ot8.js",
+      "src/entry-server.tsx",
+      "_accordion-DINZxoib.js"
+    ]
+  },
+  "src/pages/MercedesProblemsIndex.tsx": {
+    "file": "assets/MercedesProblemsIndex-CmTy1OSz.js",
+    "name": "MercedesProblemsIndex",
+    "src": "src/pages/MercedesProblemsIndex.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_Footer-D0Xl6ot8.js",
+      "src/entry-server.tsx"
+    ]
+  },
+  "src/pages/OilChangePage.tsx": {
+    "file": "assets/OilChangePage-DmUiVOlT.js",
+    "name": "OilChangePage",
+    "src": "src/pages/OilChangePage.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_Footer-D0Xl6ot8.js",
+      "src/entry-server.tsx",
+      "_accordion-DINZxoib.js"
+    ]
+  },
+  "src/pages/PaintCorrectionPage.tsx": {
+    "file": "assets/PaintCorrectionPage-D1VliOLf.js",
+    "name": "PaintCorrectionPage",
+    "src": "src/pages/PaintCorrectionPage.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_Footer-D0Xl6ot8.js",
+      "src/entry-server.tsx"
+    ]
+  },
+  "src/pages/PaintProtectionPage.tsx": {
+    "file": "assets/PaintProtectionPage-DEHmvp0i.js",
+    "name": "PaintProtectionPage",
+    "src": "src/pages/PaintProtectionPage.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_Footer-D0Xl6ot8.js",
+      "src/entry-server.tsx"
+    ]
+  },
+  "src/pages/PorscheCaseStudyPage.tsx": {
+    "file": "assets/PorscheCaseStudyPage-DeCa1Yfp.js",
+    "name": "PorscheCaseStudyPage",
+    "src": "src/pages/PorscheCaseStudyPage.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_Footer-D0Xl6ot8.js",
+      "src/entry-server.tsx"
+    ]
+  },
+  "src/pages/PorscheModelPage.tsx": {
+    "file": "assets/PorscheModelPage-CBF9W44-.js",
+    "name": "PorscheModelPage",
+    "src": "src/pages/PorscheModelPage.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_Footer-D0Xl6ot8.js",
+      "src/entry-server.tsx",
+      "_accordion-DINZxoib.js"
+    ]
+  },
+  "src/pages/PorscheOwnershipGuidePage.tsx": {
+    "file": "assets/PorscheOwnershipGuidePage-CKixZxB_.js",
+    "name": "PorscheOwnershipGuidePage",
+    "src": "src/pages/PorscheOwnershipGuidePage.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_Footer-D0Xl6ot8.js",
+      "src/entry-server.tsx"
+    ]
+  },
+  "src/pages/PorscheProblemGuidePage.tsx": {
+    "file": "assets/PorscheProblemGuidePage-Bp3_e_wo.js",
+    "name": "PorscheProblemGuidePage",
+    "src": "src/pages/PorscheProblemGuidePage.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_Footer-D0Xl6ot8.js",
+      "src/entry-server.tsx"
+    ]
+  },
+  "src/pages/PorscheProblemsIndex.tsx": {
+    "file": "assets/PorscheProblemsIndex-DXR2T-2T.js",
+    "name": "PorscheProblemsIndex",
+    "src": "src/pages/PorscheProblemsIndex.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_Footer-D0Xl6ot8.js",
+      "src/entry-server.tsx"
+    ]
+  },
+  "src/pages/PorscheSystemGuidePage.tsx": {
+    "file": "assets/PorscheSystemGuidePage-C4mODNKu.js",
+    "name": "PorscheSystemGuidePage",
+    "src": "src/pages/PorscheSystemGuidePage.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_Footer-D0Xl6ot8.js",
+      "src/entry-server.tsx"
+    ]
+  },
+  "src/pages/PorscheSystemsIndex.tsx": {
+    "file": "assets/PorscheSystemsIndex-DyFpMCag.js",
+    "name": "PorscheSystemsIndex",
+    "src": "src/pages/PorscheSystemsIndex.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_Footer-D0Xl6ot8.js",
+      "src/entry-server.tsx"
+    ]
+  },
+  "src/pages/PpfPage.tsx": {
+    "file": "assets/PpfPage-C2JwpMhE.js",
+    "name": "PpfPage",
+    "src": "src/pages/PpfPage.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_Footer-D0Xl6ot8.js",
+      "_verified-pricing-CGXp-YYp.js",
+      "src/entry-server.tsx",
+      "_PpfQuoteForm-RKK9h8TG.js"
+    ],
+    "css": [
+      "assets/PpfPage-DI3UBVhE.css"
+    ]
+  },
+  "src/pages/ServicePage.tsx": {
+    "file": "assets/ServicePage-FCRis7HF.js",
+    "name": "ServicePage",
+    "src": "src/pages/ServicePage.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/entry-server.tsx",
+      "_Footer-D0Xl6ot8.js",
+      "_FinalCTA-DCkhXNCr.js",
+      "_accordion-DINZxoib.js",
+      "_ar-services-CclXnKHT.js",
+      "_PpfQuoteForm-RKK9h8TG.js",
+      "_Reveal-B0bzMO-v.js"
+    ]
+  },
+  "src/pages/Services.tsx": {
+    "file": "assets/Services-BQewG0mP.js",
+    "name": "Services",
+    "src": "src/pages/Services.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/entry-server.tsx",
+      "_Footer-D0Xl6ot8.js",
+      "_AnswerBlock-DWkHPVA7.js",
+      "_TrustBar-D6jkMLGQ.js",
+      "_FinalCTA-DCkhXNCr.js",
+      "_PageIntro-BZbZzflk.js",
+      "_Reveal-B0bzMO-v.js"
+    ]
+  },
+  "src/pages/SitemapPage.tsx": {
+    "file": "assets/SitemapPage-BkvwwLc0.js",
+    "name": "SitemapPage",
+    "src": "src/pages/SitemapPage.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/entry-server.tsx",
+      "_Footer-D0Xl6ot8.js",
+      "_ar-services-CclXnKHT.js",
+      "_ar-brands-DYbuhqMi.js",
+      "_ar-blog--9StxQEy.js",
+      "_ar-best-workshop-CPzBRuy3.js"
+    ]
+  },
+  "src/pages/SuspensionRepairPage.tsx": {
+    "file": "assets/SuspensionRepairPage-CaV5aKyw.js",
+    "name": "SuspensionRepairPage",
+    "src": "src/pages/SuspensionRepairPage.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_Footer-D0Xl6ot8.js",
+      "src/entry-server.tsx",
+      "_accordion-DINZxoib.js"
+    ]
+  },
+  "src/pages/TransmissionPage.tsx": {
+    "file": "assets/TransmissionPage-Dd3MvtpF.js",
+    "name": "TransmissionPage",
+    "src": "src/pages/TransmissionPage.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_Footer-D0Xl6ot8.js",
+      "src/entry-server.tsx",
+      "_accordion-DINZxoib.js"
+    ]
+  },
+  "src/pages/Tuning.tsx": {
+    "file": "assets/Tuning-DcPgqHTW.js",
+    "name": "Tuning",
+    "src": "src/pages/Tuning.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/entry-server.tsx",
+      "_Footer-D0Xl6ot8.js",
+      "_AnswerBlock-DWkHPVA7.js",
+      "_TuningConfigurationDetails-BVfdP4Ia.js",
+      "_TrustBar-D6jkMLGQ.js",
+      "_FinalCTA-DCkhXNCr.js",
+      "_Reveal-B0bzMO-v.js"
+    ]
+  },
+  "src/pages/TuningModelPage.tsx": {
+    "file": "assets/TuningModelPage-CC5NZOA4.js",
+    "name": "TuningModelPage",
+    "src": "src/pages/TuningModelPage.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_Footer-D0Xl6ot8.js",
+      "src/entry-server.tsx",
+      "_TuningConfigurationDetails-BVfdP4Ia.js"
+    ]
+  },
+  "src/pages/VRX.tsx": {
+    "file": "assets/VRX-BvxGKCVb.js",
+    "name": "VRX",
+    "src": "src/pages/VRX.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/entry-server.tsx",
+      "_Footer-D0Xl6ot8.js"
+    ]
+  }
+}

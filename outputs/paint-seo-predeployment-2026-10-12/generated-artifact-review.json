@@ -1,0 +1,816 @@
+{
+  "routing": {
+    "bytes": {
+      "before": 83004,
+      "after": 83004
+    },
+    "exports": [
+      "validPaths",
+      "legacyPaths",
+      "localizedFallbacks",
+      "notFoundHtml"
+    ],
+    "changes": [
+      {
+        "export": "validPaths",
+        "beforeCount": 1256,
+        "afterCount": 1256,
+        "equal": true
+      },
+      {
+        "export": "legacyPaths",
+        "beforeCount": 253,
+        "afterCount": 253,
+        "equal": true
+      },
+      {
+        "export": "localizedFallbacks",
+        "beforeCount": 94,
+        "afterCount": 94,
+        "equal": true
+      },
+      {
+        "export": "notFoundHtml",
+        "beforeCount": 2,
+        "afterCount": 2,
+        "changedCount": 2,
+        "sample": [
+          "en",
+          "ar"
+        ],
+        "example": {
+          "path": "en",
+          "beforeType": "string",
+          "afterType": "string"
+        }
+      }
+    ]
+  },
+  "routeSchemaMatrix": [
+    {
+      "path": "/",
+      "changes": [
+        {
+          "field": "Inbound internal links",
+          "before": "1162",
+          "after": "1163"
+        }
+      ]
+    },
+    {
+      "path": "/ar/blog/ceramic-coating-vs-ppf-dubai",
+      "changes": [
+        {
+          "field": "Title",
+          "before": "السيراميك أم أفلام PPF في دبي: اختيار حماية الطلاء | ديجي-تك",
+          "after": "السيراميك أم أفلام PPF في دبي: دليل اختيار حماية الطلاء | ديجي-تك"
+        }
+      ]
+    },
+    {
+      "path": "/ar/blog/why-ceramic-coating-matters-uae",
+      "changes": [
+        {
+          "field": "Inbound internal links",
+          "before": "4",
+          "after": "5"
+        },
+        {
+          "field": "Title",
+          "before": "الطلاء السيراميكي للسيارات في الإمارات | دليل الحماية",
+          "after": "فوائد السيراميك للسيارات في الإمارات | التحضير والعناية"
+        }
+      ]
+    },
+    {
+      "path": "/ar/brands/aston-martin-service-dubai",
+      "changes": [
+        {
+          "field": "Inbound internal links",
+          "before": "57",
+          "after": "56"
+        }
+      ]
+    },
+    {
+      "path": "/ar/brands/audi-service-dubai",
+      "changes": [
+        {
+          "field": "Inbound internal links",
+          "before": "82",
+          "after": "81"
+        }
+      ]
+    },
+    {
+      "path": "/ar/brands/bentley-service-dubai",
+      "changes": [
+        {
+          "field": "Inbound internal links",
+          "before": "74",
+          "after": "73"
+        }
+      ]
+    },
+    {
+      "path": "/ar/brands/bugatti-service-dubai",
+      "changes": [
+        {
+          "field": "Inbound internal links",
+          "before": "56",
+          "after": "55"
+        }
+      ]
+    },
+    {
+      "path": "/ar/brands/byd-service-dubai",
+      "changes": [
+        {
+          "field": "Inbound internal links",
+          "before": "37",
+          "after": "36"
+        }
+      ]
+    },
+    {
+      "path": "/ar/brands/cadillac-service-dubai",
+      "changes": [
+        {
+          "field": "Inbound internal links",
+          "before": "38",
+          "after": "37"
+        }
+      ]
+    },
+    {
+      "path": "/ar/brands/chevrolet-service-dubai",
+      "changes": [
+        {
+          "field": "Inbound internal links",
+          "before": "30",
+          "after": "29"
+        }
+      ]
+    },
+    {
+      "path": "/ar/brands/chrysler-service-dubai",
+      "changes": [
+        {
+          "field": "Inbound internal links",
+          "before": "29",
+          "after": "28"
+        }
+      ]
+    },
+    {
+      "path": "/ar/brands/corvette-service-dubai",
+      "changes": [
+        {
+          "field": "Inbound internal links",
+          "before": "29",
+          "after": "28"
+        }
+      ]
+    },
+    {
+      "path": "/ar/brands/defender-service-dubai",
+      "changes": [
+        {
+          "field": "Inbound internal links",
+          "before": "54",
+          "after": "53"
+        }
+      ]
+    },
+    {
+      "path": "/ar/brands/dodge-service-dubai",
+      "changes": [
+        {
+          "field": "Inbound internal links",
+          "before": "29",
+          "after": "28"
+        }
+      ]
+    },
+    {
+      "path": "/ar/brands/ford-service-dubai",
+      "changes": [
+        {
+          "field": "Inbound internal links",
+          "before": "30",
+          "after": "29"
+        }
+      ]
+    },
+    {
+      "path": "/ar/brands/genesis-service-dubai",
+      "changes": [
+        {
+          "field": "Inbound internal links",
+          "before": "29",
+          "after": "28"
+        }
+      ]
+    },
+    {
+      "path": "/ar/brands/gmc-service-dubai",
+      "changes": [
+        {
+          "field": "Inbound internal links",
+          "before": "29",
+          "after": "28"
+        }
+      ]
+    },
+    {
+      "path": "/ar/brands/hummer-service-dubai",
+      "changes": [
+        {
+          "field": "Inbound internal links",
+          "before": "29",
+          "after": "28"
+        }
+      ]
+    },
+    {
+      "path": "/ar/brands/jaguar-service-dubai",
+      "changes": [
+        {
+          "field": "Inbound internal links",
+          "before": "30",
+          "after": "29"
+        }
+      ]
+    },
+    {
+      "path": "/ar/brands/jeep-service-dubai",
+      "changes": [
+        {
+          "field": "Inbound internal links",
+          "before": "37",
+          "after": "36"
+        }
+      ]
+    },
+    {
+      "path": "/ar/brands/jetour-service-dubai",
+      "changes": [
+        {
+          "field": "Inbound internal links",
+          "before": "37",
+          "after": "36"
+        }
+      ]
+    },
+    {
+      "path": "/ar/brands/koenigsegg-service-dubai",
+      "changes": [
+        {
+          "field": "Inbound internal links",
+          "before": "29",
+          "after": "28"
+        }
+      ]
+    },
+    {
+      "path": "/ar/brands/land-rover-service-dubai",
+      "changes": [
+        {
+          "field": "Inbound internal links",
+          "before": "57",
+          "after": "56"
+        }
+      ]
+    },
+    {
+      "path": "/ar/brands/lincoln-service-dubai",
+      "changes": [
+        {
+          "field": "Inbound internal links",
+          "before": "29",
+          "after": "28"
+        }
+      ]
+    },
+    {
+      "path": "/ar/brands/maserati-service-dubai",
+      "changes": [
+        {
+          "field": "Inbound internal links",
+          "before": "50",
+          "after": "49"
+        }
+      ]
+    },
+    {
+      "path": "/ar/brands/maybach-service-dubai",
+      "changes": [
+        {
+          "field": "Inbound internal links",
+          "before": "75",
+          "after": "74"
+        }
+      ]
+    },
+    {
+      "path": "/ar/brands/mclaren-service-dubai",
+      "changes": [
+        {
+          "field": "Inbound internal links",
+          "before": "74",
+          "after": "73"
+        }
+      ]
+    },
+    {
+      "path": "/ar/brands/mini-service-dubai",
+      "changes": [
+        {
+          "field": "Inbound internal links",
+          "before": "30",
+          "after": "29"
+        }
+      ]
+    },
+    {
+      "path": "/ar/brands/pagani-service-dubai",
+      "changes": [
+        {
+          "field": "Inbound internal links",
+          "before": "37",
+          "after": "36"
+        }
+      ]
+    },
+    {
+      "path": "/ar/brands/rox-service-dubai",
+      "changes": [
+        {
+          "field": "Inbound internal links",
+          "before": "38",
+          "after": "37"
+        }
+      ]
+    },
+    {
+      "path": "/ar/brands/subaru-service-dubai",
+      "changes": [
+        {
+          "field": "Inbound internal links",
+          "before": "29",
+          "after": "28"
+        }
+      ]
+    },
+    {
+      "path": "/ar/brands/tesla-service-dubai",
+      "changes": [
+        {
+          "field": "Inbound internal links",
+          "before": "32",
+          "after": "31"
+        }
+      ]
+    },
+    {
+      "path": "/ar/brands/volkswagen-service-dubai",
+      "changes": [
+        {
+          "field": "Inbound internal links",
+          "before": "38",
+          "after": "37"
+        }
+      ]
+    },
+    {
+      "path": "/ar/brands/volvo-service-dubai",
+      "changes": [
+        {
+          "field": "Inbound internal links",
+          "before": "37",
+          "after": "36"
+        }
+      ]
+    },
+    {
+      "path": "/ar/services/ceramic-coating",
+      "changes": [
+        {
+          "field": "Inbound internal links",
+          "before": "7",
+          "after": "9"
+        }
+      ]
+    },
+    {
+      "path": "/ar/services/paint-protection-dubai",
+      "changes": [
+        {
+          "field": "After schema",
+          "before": "Answer; AutoRepair; AutomotiveBusiness; BreadcrumbList; City; ContactPoint; FAQPage; ImageObject; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Question; Service; WebPage; WebSite",
+          "after": "AutoRepair; AutomotiveBusiness; BreadcrumbList; City; ContactPoint; ImageObject; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Service; WebPage; WebSite"
+        },
+        {
+          "field": "Inbound internal links",
+          "before": "15",
+          "after": "17"
+        },
+        {
+          "field": "Title",
+          "before": "حماية طلاء السيارة في دبي | مقارنة الخيارات | ديجي-تك",
+          "after": "حماية طلاء السيارة في دبي | أفلام PPF والسيراميك | ديجي-تك"
+        }
+      ]
+    },
+    {
+      "path": "/ar/services/paint-protection-film",
+      "changes": [
+        {
+          "field": "Inbound internal links",
+          "before": "7",
+          "after": "9"
+        }
+      ]
+    },
+    {
+      "path": "/blog/ceramic-coating-vs-ppf-dubai",
+      "changes": [
+        {
+          "field": "Inbound internal links",
+          "before": "7",
+          "after": "9"
+        },
+        {
+          "field": "Title",
+          "before": "Ceramic Coating vs PPF Dubai | Which Protection Is Right?",
+          "after": "Ceramic Coating vs PPF: Dubai Owner’s Guide | DIGI-TEC"
+        }
+      ]
+    },
+    {
+      "path": "/blog/why-ceramic-coating-matters-uae",
+      "changes": [
+        {
+          "field": "Inbound internal links",
+          "before": "4",
+          "after": "6"
+        }
+      ]
+    },
+    {
+      "path": "/brands/aston-martin-service-dubai",
+      "changes": [
+        {
+          "field": "Inbound internal links",
+          "before": "59",
+          "after": "58"
+        }
+      ]
+    },
+    {
+      "path": "/brands/audi-service-dubai",
+      "changes": [
+        {
+          "field": "Inbound internal links",
+          "before": "80",
+          "after": "79"
+        }
+      ]
+    },
+    {
+      "path": "/brands/bentley-service-dubai",
+      "changes": [
+        {
+          "field": "Inbound internal links",
+          "before": "72",
+          "after": "71"
+        }
+      ]
+    },
+    {
+      "path": "/brands/bugatti-service-dubai",
+      "changes": [
+        {
+          "field": "Inbound internal links",
+          "before": "54",
+          "after": "53"
+        }
+      ]
+    },
+    {
+      "path": "/brands/byd-service-dubai",
+      "changes": [
+        {
+          "field": "Inbound internal links",
+          "before": "35",
+          "after": "34"
+        }
+      ]
+    },
+    {
+      "path": "/brands/cadillac-service-dubai",
+      "changes": [
+        {
+          "field": "Inbound internal links",
+          "before": "36",
+          "after": "35"
+        }
+      ]
+    },
+    {
+      "path": "/brands/chevrolet-service-dubai",
+      "changes": [
+        {
+          "field": "Inbound internal links",
+          "before": "28",
+          "after": "27"
+        }
+      ]
+    },
+    {
+      "path": "/brands/chrysler-service-dubai",
+      "changes": [
+        {
+          "field": "Inbound internal links",
+          "before": "27",
+          "after": "26"
+        }
+      ]
+    },
+    {
+      "path": "/brands/corvette-service-dubai",
+      "changes": [
+        {
+          "field": "Inbound internal links",
+          "before": "27",
+          "after": "26"
+        }
+      ]
+    },
+    {
+      "path": "/brands/defender-service-dubai",
+      "changes": [
+        {
+          "field": "Inbound internal links",
+          "before": "52",
+          "after": "51"
+        }
+      ]
+    },
+    {
+      "path": "/brands/dodge-service-dubai",
+      "changes": [
+        {
+          "field": "Inbound internal links",
+          "before": "27",
+          "after": "26"
+        }
+      ]
+    },
+    {
+      "path": "/brands/ford-service-dubai",
+      "changes": [
+        {
+          "field": "Inbound internal links",
+          "before": "28",
+          "after": "27"
+        }
+      ]
+    },
+    {
+      "path": "/brands/genesis-service-dubai",
+      "changes": [
+        {
+          "field": "Inbound internal links",
+          "before": "27",
+          "after": "26"
+        }
+      ]
+    },
+    {
+      "path": "/brands/gmc-service-dubai",
+      "changes": [
+        {
+          "field": "Inbound internal links",
+          "before": "27",
+          "after": "26"
+        }
+      ]
+    },
+    {
+      "path": "/brands/hummer-service-dubai",
+      "changes": [
+        {
+          "field": "Inbound internal links",
+          "before": "27",
+          "after": "26"
+        }
+      ]
+    },
+    {
+      "path": "/brands/jaguar-service-dubai",
+      "changes": [
+        {
+          "field": "Inbound internal links",
+          "before": "28",
+          "after": "27"
+        }
+      ]
+    },
+    {
+      "path": "/brands/jeep-service-dubai",
+      "changes": [
+        {
+          "field": "Inbound internal links",
+          "before": "35",
+          "after": "34"
+        }
+      ]
+    },
+    {
+      "path": "/brands/jetour-service-dubai",
+      "changes": [
+        {
+          "field": "Inbound internal links",
+          "before": "35",
+          "after": "34"
+        }
+      ]
+    },
+    {
+      "path": "/brands/koenigsegg-service-dubai",
+      "changes": [
+        {
+          "field": "Inbound internal links",
+          "before": "27",
+          "after": "26"
+        }
+      ]
+    },
+    {
+      "path": "/brands/land-rover-service-dubai",
+      "changes": [
+        {
+          "field": "Inbound internal links",
+          "before": "55",
+          "after": "54"
+        }
+      ]
+    },
+    {
+      "path": "/brands/lincoln-service-dubai",
+      "changes": [
+        {
+          "field": "Inbound internal links",
+          "before": "27",
+          "after": "26"
+        }
+      ]
+    },
+    {
+      "path": "/brands/maserati-service-dubai",
+      "changes": [
+        {
+          "field": "Inbound internal links",
+          "before": "48",
+          "after": "47"
+        }
+      ]
+    },
+    {
+      "path": "/brands/maybach-service-dubai",
+      "changes": [
+        {
+          "field": "Inbound internal links",
+          "before": "76",
+          "after": "75"
+        }
+      ]
+    },
+    {
+      "path": "/brands/mclaren-service-dubai",
+      "changes": [
+        {
+          "field": "Inbound internal links",
+          "before": "75",
+          "after": "74"
+        }
+      ]
+    },
+    {
+      "path": "/brands/mini-service-dubai",
+      "changes": [
+        {
+          "field": "Inbound internal links",
+          "before": "28",
+          "after": "27"
+        }
+      ]
+    },
+    {
+      "path": "/brands/pagani-service-dubai",
+      "changes": [
+        {
+          "field": "Inbound internal links",
+          "before": "35",
+          "after": "34"
+        }
+      ]
+    },
+    {
+      "path": "/brands/rox-service-dubai",
+      "changes": [
+        {
+          "field": "Inbound internal links",
+          "before": "36",
+          "after": "35"
+        }
+      ]
+    },
+    {
+      "path": "/brands/subaru-service-dubai",
+      "changes": [
+        {
+          "field": "Inbound internal links",
+          "before": "27",
+          "after": "26"
+        }
+      ]
+    },
+    {
+      "path": "/brands/tesla-service-dubai",
+      "changes": [
+        {
+          "field": "Inbound internal links",
+          "before": "30",
+          "after": "29"
+        }
+      ]
+    },
+    {
+      "path": "/brands/volkswagen-service-dubai",
+      "changes": [
+        {
+          "field": "Inbound internal links",
+          "before": "37",
+          "after": "36"
+        }
+      ]
+    },
+    {
+      "path": "/brands/volvo-service-dubai",
+      "changes": [
+        {
+          "field": "Inbound internal links",
+          "before": "35",
+          "after": "34"
+        }
+      ]
+    },
+    {
+      "path": "/services/car-polishing-dubai",
+      "changes": [
+        {
+          "field": "Inbound internal links",
+          "before": "39",
+          "after": "40"
+        },
+        {
+          "field": "Title",
+          "before": "Car Polishing &amp; Paint Correction Dubai | DIGI-TEC",
+          "after": "Car Polishing Dubai | Paint Correction | DIGI-TEC"
+        }
+      ]
+    },
+    {
+      "path": "/services/paint-protection-dubai",
+      "changes": [
+        {
+          "field": "Inbound internal links",
+          "before": "17",
+          "after": "19"
+        },
+        {
+          "field": "Title",
+          "before": "Car Paint Care Dubai | Correction &amp; Protection | DIGI-TEC",
+          "after": "Car Paint Protection Dubai | PPF &amp; Ceramic Coating | DIGI-TEC"
+        }
+      ]
+    },
+    {
+      "path": "/services/paint-protection-film",
+      "changes": [
+        {
+          "field": "Inbound internal links",
+          "before": "45",
+          "after": "46"
+        },
+        {
+          "field": "Title",
+          "before": "PPF Dubai | Paint Protection Film for Cars | DIGI-TEC",
+          "after": "PPF Dubai | Paint Protection Film Installation | DIGI-TEC"
+        }
+      ]
+    }
+  ]
+}

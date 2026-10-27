@@ -1,0 +1,451 @@
+{
+  "preparedAtUtc": "2026-10-26T10:41:31.045Z",
+  "offlineOnly": true,
+  "comparisonFile": "reports/mercedes-phase-4b/production/production-comparison.json",
+  "comparisonSha256": "56594459d887215fa71c7232fefd76cff2595834dc445f32638afa3e7168d7a5",
+  "checks": [
+    {
+      "name": "Three selected cohort artifacts recorded",
+      "pass": true,
+      "details": [
+        "production-matched-baseline",
+        "production-matched-candidate",
+        "production-matched-release-b"
+      ]
+    },
+    {
+      "name": "production-matched-baseline: normal 19-step build passed",
+      "pass": true,
+      "details": {
+        "path": "reports/mercedes-phase-4b/production-matched.local/build/baseline/matched-1/production-build.json",
+        "reportSha256": "d7b2a9a9a61d0cb45f63a8cfcc61b3af8bcb1f44dd0014f0a15d395dc1c8fd79",
+        "startedAt": "2026-10-26T10:31:21.793Z",
+        "finishedAt": "2026-10-26T10:31:42.749Z",
+        "dependencySource": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-4b\\production-matched.local\\node_modules",
+        "passed": true,
+        "steps": 19
+      }
+    },
+    {
+      "name": "production-matched-baseline: both TypeScript configurations passed",
+      "pass": true,
+      "details": {
+        "file": "reports/mercedes-phase-4b/production-matched.local/build/baseline/matched-1/typecheck.json",
+        "sha256": "af2f87095173588b69153bd42feffa544063d8cd1937d3cfffd37f1b69fdf7b5",
+        "ranAt": "2026-10-26T10:31:48.394Z",
+        "checks": [
+          {
+            "config": "tsconfig.app.json",
+            "exitCode": 0,
+            "log": "tsconfig.app.json.log"
+          },
+          {
+            "config": "tsconfig.node.json",
+            "exitCode": 0,
+            "log": "tsconfig.node.json.log"
+          }
+        ],
+        "passed": true
+      }
+    },
+    {
+      "name": "production-matched-baseline: frozen pnpm lock unchanged",
+      "pass": true,
+      "details": {
+        "file": "reports/mercedes-phase-4b/production-matched.local/pnpm-lock.yaml",
+        "sha256": "5764ae30d5b03c0bfbf425768df32c23646b88720d2062988c6b04b868dd085f",
+        "note": "Selected production-matched isolated dependency cohort; not a repository dependency-file edit and not a full deployed dependency attestation."
+      }
+    },
+    {
+      "name": "production-matched-baseline: 1005 URL set and order preserved",
+      "pass": true,
+      "details": {
+        "file": "reports/mercedes-phase-4b/production-matched.local/baseline.local/dist/sitemap.xml",
+        "sha256": "294c4917d6a19ff8d5fb3575d780debe465643520031850802355d1b54ad42cf",
+        "dateDifferencesFromPublic": []
+      }
+    },
+    {
+      "name": "production-matched-baseline: all manifest files and imports exist",
+      "pass": true,
+      "details": {
+        "checked": 180,
+        "missing": []
+      }
+    },
+    {
+      "name": "production-matched-baseline: checked route/error document asset references exist",
+      "pass": true,
+      "details": {
+        "pages": 12,
+        "assetReferences": 24
+      }
+    },
+    {
+      "name": "production-matched-baseline: eight relevant page metadata fields preserved",
+      "pass": true,
+      "details": [
+        {
+          "key": "hub-en",
+          "differentMetadataFields": [],
+          "sameMainText": true,
+          "sameMainLinks": true
+        },
+        {
+          "key": "body-en",
+          "differentMetadataFields": [],
+          "sameMainText": true,
+          "sameMainLinks": true
+        },
+        {
+          "key": "diagnostics-en",
+          "differentMetadataFields": [],
+          "sameMainText": true,
+          "sameMainLinks": true
+        },
+        {
+          "key": "mechanical-en",
+          "differentMetadataFields": [],
+          "sameMainText": true,
+          "sameMainLinks": true
+        },
+        {
+          "key": "hub-ar",
+          "differentMetadataFields": [],
+          "sameMainText": true,
+          "sameMainLinks": true
+        },
+        {
+          "key": "body-ar",
+          "differentMetadataFields": [],
+          "sameMainText": true,
+          "sameMainLinks": true
+        },
+        {
+          "key": "diagnostics-ar",
+          "differentMetadataFields": [],
+          "sameMainText": true,
+          "sameMainLinks": true
+        },
+        {
+          "key": "mechanical-ar",
+          "differentMetadataFields": [],
+          "sameMainText": true,
+          "sameMainLinks": true
+        }
+      ]
+    },
+    {
+      "name": "production-matched-candidate: normal 19-step build passed",
+      "pass": true,
+      "details": {
+        "path": "reports/mercedes-phase-4b/production-matched.local/build/candidate/matched-1/production-build.json",
+        "reportSha256": "d57b9837c3a6154d7536cdf1b7222968dc7bf3f4ffbea377f3959976e09cdf85",
+        "startedAt": "2026-10-26T10:31:19.285Z",
+        "finishedAt": "2026-10-26T10:31:42.409Z",
+        "dependencySource": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-4b\\production-matched.local\\node_modules",
+        "passed": true,
+        "steps": 19
+      }
+    },
+    {
+      "name": "production-matched-candidate: both TypeScript configurations passed",
+      "pass": true,
+      "details": {
+        "file": "reports/mercedes-phase-4b/production-matched.local/build/candidate/matched-1/typecheck.json",
+        "sha256": "e167bc5a9e56627122f626e6ea2dac49a1706749cd3accb399249d295b387a41",
+        "ranAt": "2026-10-26T10:31:48.075Z",
+        "checks": [
+          {
+            "config": "tsconfig.app.json",
+            "exitCode": 0,
+            "log": "tsconfig.app.json.log"
+          },
+          {
+            "config": "tsconfig.node.json",
+            "exitCode": 0,
+            "log": "tsconfig.node.json.log"
+          }
+        ],
+        "passed": true
+      }
+    },
+    {
+      "name": "production-matched-candidate: frozen pnpm lock unchanged",
+      "pass": true,
+      "details": {
+        "file": "reports/mercedes-phase-4b/production-matched.local/pnpm-lock.yaml",
+        "sha256": "5764ae30d5b03c0bfbf425768df32c23646b88720d2062988c6b04b868dd085f",
+        "note": "Selected production-matched isolated dependency cohort; not a repository dependency-file edit and not a full deployed dependency attestation."
+      }
+    },
+    {
+      "name": "production-matched-candidate: 1005 URL set and order preserved",
+      "pass": true,
+      "details": {
+        "file": "reports/mercedes-phase-4b/production-matched.local/candidate.local/dist/sitemap.xml",
+        "sha256": "294c4917d6a19ff8d5fb3575d780debe465643520031850802355d1b54ad42cf",
+        "dateDifferencesFromPublic": []
+      }
+    },
+    {
+      "name": "production-matched-candidate: all manifest files and imports exist",
+      "pass": true,
+      "details": {
+        "checked": 180,
+        "missing": []
+      }
+    },
+    {
+      "name": "production-matched-candidate: checked route/error document asset references exist",
+      "pass": true,
+      "details": {
+        "pages": 12,
+        "assetReferences": 24
+      }
+    },
+    {
+      "name": "production-matched-candidate: eight relevant page metadata fields preserved",
+      "pass": true,
+      "details": [
+        {
+          "key": "hub-en",
+          "differentMetadataFields": [],
+          "sameMainText": false,
+          "sameMainLinks": false
+        },
+        {
+          "key": "body-en",
+          "differentMetadataFields": [],
+          "sameMainText": false,
+          "sameMainLinks": false
+        },
+        {
+          "key": "diagnostics-en",
+          "differentMetadataFields": [],
+          "sameMainText": true,
+          "sameMainLinks": true
+        },
+        {
+          "key": "mechanical-en",
+          "differentMetadataFields": [],
+          "sameMainText": true,
+          "sameMainLinks": true
+        },
+        {
+          "key": "hub-ar",
+          "differentMetadataFields": [],
+          "sameMainText": true,
+          "sameMainLinks": true
+        },
+        {
+          "key": "body-ar",
+          "differentMetadataFields": [],
+          "sameMainText": true,
+          "sameMainLinks": true
+        },
+        {
+          "key": "diagnostics-ar",
+          "differentMetadataFields": [],
+          "sameMainText": true,
+          "sameMainLinks": true
+        },
+        {
+          "key": "mechanical-ar",
+          "differentMetadataFields": [],
+          "sameMainText": true,
+          "sameMainLinks": true
+        }
+      ]
+    },
+    {
+      "name": "production-matched-release-b: normal 19-step build passed",
+      "pass": true,
+      "details": {
+        "path": "reports/mercedes-phase-4b/production-matched.local/build/release-b/matched-2/production-build.json",
+        "reportSha256": "bc614ae8d1aa939cb2f42b181afe620d620e20cec09b49bbefeb53a9a00cc298",
+        "startedAt": "2026-10-26T10:36:38.564Z",
+        "finishedAt": "2026-10-26T10:37:01.041Z",
+        "dependencySource": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-4b\\production-matched.local\\node_modules",
+        "passed": true,
+        "steps": 19
+      }
+    },
+    {
+      "name": "production-matched-release-b: both TypeScript configurations passed",
+      "pass": true,
+      "details": {
+        "file": "reports/mercedes-phase-4b/production-matched.local/build/release-b/matched-2/typecheck.json",
+        "sha256": "10733dfe1ef66f10801aa84fbdb18025878140c40a8e9be566eb5b0b7bb622e3",
+        "ranAt": "2026-10-26T10:37:06.850Z",
+        "checks": [
+          {
+            "config": "tsconfig.app.json",
+            "exitCode": 0,
+            "log": "tsconfig.app.json.log"
+          },
+          {
+            "config": "tsconfig.node.json",
+            "exitCode": 0,
+            "log": "tsconfig.node.json.log"
+          }
+        ],
+        "passed": true
+      }
+    },
+    {
+      "name": "production-matched-release-b: frozen pnpm lock unchanged",
+      "pass": true,
+      "details": {
+        "file": "reports/mercedes-phase-4b/production-matched.local/pnpm-lock.yaml",
+        "sha256": "5764ae30d5b03c0bfbf425768df32c23646b88720d2062988c6b04b868dd085f",
+        "note": "Selected production-matched isolated dependency cohort; not a repository dependency-file edit and not a full deployed dependency attestation."
+      }
+    },
+    {
+      "name": "production-matched-release-b: 1005 URL set and order preserved",
+      "pass": true,
+      "details": {
+        "file": "reports/mercedes-phase-4b/production-matched.local/release-b.local/dist/sitemap.xml",
+        "sha256": "6ee205e997cddc32c4a671cd610968c9859dcceca939a442236aa6c1834261a4",
+        "dateDifferencesFromPublic": [
+          {
+            "url": "https://digitecme.com/brands/mercedes-benz-service-dubai",
+            "publicDate": "2026-10-20",
+            "localDate": "2026-10-26"
+          },
+          {
+            "url": "https://digitecme.com/services/mercedes-body-repair-dubai",
+            "publicDate": "2026-09-28",
+            "localDate": "2026-10-26"
+          }
+        ]
+      }
+    },
+    {
+      "name": "production-matched-release-b: all manifest files and imports exist",
+      "pass": true,
+      "details": {
+        "checked": 180,
+        "missing": []
+      }
+    },
+    {
+      "name": "production-matched-release-b: checked route/error document asset references exist",
+      "pass": true,
+      "details": {
+        "pages": 12,
+        "assetReferences": 24
+      }
+    },
+    {
+      "name": "production-matched-release-b: eight relevant page metadata fields preserved",
+      "pass": true,
+      "details": [
+        {
+          "key": "hub-en",
+          "differentMetadataFields": [],
+          "sameMainText": false,
+          "sameMainLinks": false
+        },
+        {
+          "key": "body-en",
+          "differentMetadataFields": [],
+          "sameMainText": false,
+          "sameMainLinks": false
+        },
+        {
+          "key": "diagnostics-en",
+          "differentMetadataFields": [],
+          "sameMainText": true,
+          "sameMainLinks": true
+        },
+        {
+          "key": "mechanical-en",
+          "differentMetadataFields": [],
+          "sameMainText": true,
+          "sameMainLinks": true
+        },
+        {
+          "key": "hub-ar",
+          "differentMetadataFields": [],
+          "sameMainText": true,
+          "sameMainLinks": true
+        },
+        {
+          "key": "body-ar",
+          "differentMetadataFields": [],
+          "sameMainText": true,
+          "sameMainLinks": true
+        },
+        {
+          "key": "diagnostics-ar",
+          "differentMetadataFields": [],
+          "sameMainText": true,
+          "sameMainLinks": true
+        },
+        {
+          "key": "mechanical-ar",
+          "differentMetadataFields": [],
+          "sameMainText": true,
+          "sameMainLinks": true
+        }
+      ]
+    },
+    {
+      "name": "Selected baseline main text equals public on eight relevant pages",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "production-matched-candidate: only two relevant English page main texts change",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "production-matched-release-b: only two relevant English page main texts change",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "Option A sitemap dates equal current public",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "Option B changes only the two intended English revision dates",
+      "pass": true,
+      "details": [
+        {
+          "url": "https://digitecme.com/brands/mercedes-benz-service-dubai",
+          "publicDate": "2026-10-20",
+          "localDate": "2026-10-26"
+        },
+        {
+          "url": "https://digitecme.com/services/mercedes-body-repair-dubai",
+          "publicDate": "2026-09-28",
+          "localDate": "2026-10-26"
+        }
+      ]
+    }
+  ],
+  "passed": true,
+  "recommendation": "Option B coherent complete application release after separate approval of the fourth source file and two actual revision dates. Option A complete application is technically coherent but retains previous dates. No selective compiled upload.",
+  "publicationAuthorizedByThisReview": false,
+  "publicationPerformed": false,
+  "newCloudflareRoutingAuthorized": false,
+  "newCloudflareRoutingPerformed": false,
+  "prohibitedSideEffects": [
+    "No Single Redirect edits or new rules",
+    "No Worker, Bulk Redirect or Pages advanced-mode activation",
+    "No origin migration or Sites mirror publication",
+    "No new 404/410 behavior or cache/indexing actions",
+    "No hand-edited compiled assets, mixed-build artifact, or manually copied old sitemap"
+  ],
+  "limits": [
+    "All-route semantic checks and final shared-checkout preservation guard are owned by the parent task.",
+    "Selected cohort name does not assert production byte identity; selected baseline manifest differs from public while relevant server-rendered content matches.",
+    "Hosted project metadata is relayed from the parent read-only tool; public HTTP does not attest account configuration."
+  ]
+}

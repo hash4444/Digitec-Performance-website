@@ -1,0 +1,265 @@
+{
+  "generatedAtUtc": "2026-10-26T08:32:53.163Z",
+  "property": "sc-domain:digitecme.com",
+  "inputFile": "indexed-observations.json",
+  "inputSha256": "8143cb6c240e36d9e0f2b4b3281e9fda0885511eb4a7f4f4a39a76f1a61a8112",
+  "accepted": 8,
+  "rejected": [],
+  "observations": [
+    {
+      "url": "https://digitecme.com/services/mercedes-oil-change-dubai/",
+      "capturedAtUtc": "2026-10-26T08:19:17.887Z",
+      "displayedInspectedUrl": "https://digitecme.com/services/mercedes-oil-change-dubai/",
+      "overallStatus": "URL is on Google",
+      "indexedStatus": "INDEXED",
+      "indexingReason": null,
+      "lastCrawlDisplayed": "25 Sept 2026, 14:53:48",
+      "lastCrawlTimezone": "Not exposed/verified by this capture; preserve displayed text without conversion.",
+      "crawledAs": "Googlebot smartphone",
+      "crawlAllowedDisplayed": "Yes",
+      "pageFetchDisplayed": "Successful",
+      "indexingAllowedDisplayed": "Yes",
+      "sitemapsDisplayed": "No referring sitemaps detected",
+      "referringPages": [
+        "https://digitecme.com/services/oil-change-dubai",
+        "https://digitecme.com/page-sitemap.xml"
+      ],
+      "userDeclaredCanonicalDisplayed": "https://digitecme.com/services/mercedes-oil-change-dubai",
+      "userDeclaredCanonical": "https://digitecme.com/services/mercedes-oil-change-dubai",
+      "googleSelectedCanonicalDisplayed": "Inspected URL",
+      "googleSelectedCanonical": "https://digitecme.com/services/mercedes-oil-change-dubai/",
+      "selectionResolution": "Resolved to the exactly validated inspected URL.",
+      "rawEvidence": {
+        "axFile": "indexed/oil-slash-verified-ax.txt",
+        "axSha256": "cc7e8c3fed0fd6c47f99afe321560dc4bbd6ab39f7622817da093ab20a83454e",
+        "textFile": "indexed/oil-slash-verified-visible.txt",
+        "textSha256": "297832ad125cd154eade09ff96595e4c02cf50a18715ab59d2221749d2a8dc42"
+      },
+      "parentAccepted": true
+    },
+    {
+      "url": "https://digitecme.com/services/mercedes-body-repair-dubai",
+      "capturedAtUtc": "2026-10-26T08:22:33.455Z",
+      "displayedInspectedUrl": "https://digitecme.com/services/mercedes-body-repair-dubai",
+      "overallStatus": "URL is not on Google",
+      "indexedStatus": "NOT_INDEXED",
+      "indexingReason": "Crawled - currently not indexed",
+      "lastCrawlDisplayed": "11 Oct 2026, 09:31:46",
+      "lastCrawlTimezone": "Not exposed/verified by this capture; preserve displayed text without conversion.",
+      "crawledAs": "Googlebot smartphone",
+      "crawlAllowedDisplayed": "Yes",
+      "pageFetchDisplayed": "Successful",
+      "indexingAllowedDisplayed": "N/A",
+      "sitemapsDisplayed": "Temporary processing error",
+      "referringPages": [
+        "https://digitecme.com/ar/services/mercedes-body-repair-dubai",
+        "https://digitecme.com/services/mercedes-body-repair-dubai/"
+      ],
+      "userDeclaredCanonicalDisplayed": "N/A",
+      "userDeclaredCanonical": null,
+      "googleSelectedCanonicalDisplayed": "N/A",
+      "googleSelectedCanonical": null,
+      "selectionResolution": "Unavailable in stored report; not inferred from HTTP.",
+      "rawEvidence": {
+        "axFile": "indexed/body-slashless-verified-ax.txt",
+        "axSha256": "9e536b8280b72559434498997d4ba59ea21708c732ce3c809c8c1eb2294a3f11",
+        "textFile": "indexed/body-slashless-verified-visible.txt",
+        "textSha256": "749a32831359b41a950a9ea0e55766dfcbc9d3e73756e5bf6654c3388f67a415"
+      },
+      "parentAccepted": true
+    },
+    {
+      "url": "https://digitecme.com/brands/mercedes-benz-service-dubai",
+      "capturedAtUtc": "2026-10-26T08:23:38.375Z",
+      "displayedInspectedUrl": "https://digitecme.com/brands/mercedes-benz-service-dubai",
+      "overallStatus": "URL is on Google",
+      "indexedStatus": "INDEXED",
+      "indexingReason": null,
+      "lastCrawlDisplayed": "16 Oct 2026, 21:18:38",
+      "lastCrawlTimezone": "Not exposed/verified by this capture; preserve displayed text without conversion.",
+      "crawledAs": "Googlebot smartphone",
+      "crawlAllowedDisplayed": "Yes",
+      "pageFetchDisplayed": "Successful",
+      "indexingAllowedDisplayed": "Yes",
+      "sitemapsDisplayed": "Temporary processing error",
+      "referringPages": [
+        "https://digitecme.com/services/mercedes-repair",
+        "https://digitecme.com/services/mercedes-repair-dubai/"
+      ],
+      "userDeclaredCanonicalDisplayed": "https://digitecme.com/brands/mercedes-benz-service-dubai",
+      "userDeclaredCanonical": "https://digitecme.com/brands/mercedes-benz-service-dubai",
+      "googleSelectedCanonicalDisplayed": "Inspected URL",
+      "googleSelectedCanonical": "https://digitecme.com/brands/mercedes-benz-service-dubai",
+      "selectionResolution": "Resolved to the exactly validated inspected URL.",
+      "rawEvidence": {
+        "axFile": "indexed/hub-verified-ax.txt",
+        "axSha256": "676ac3e6405e17d580e594838e574fb73b99dfb9125fa30f53ee3e028b73fc5b",
+        "textFile": "indexed/hub-verified-visible.txt",
+        "textSha256": "dde9a9895369ba1c3f51edbbf6bf9ff242ac729db005f01420bd3c6e08b21544"
+      },
+      "parentAccepted": true
+    },
+    {
+      "url": "https://digitecme.com/services/mercedes-oil-change-dubai",
+      "capturedAtUtc": "2026-10-26T08:24:10.561Z",
+      "displayedInspectedUrl": "https://digitecme.com/services/mercedes-oil-change-dubai",
+      "overallStatus": "URL is not on Google",
+      "indexedStatus": "NOT_INDEXED",
+      "indexingReason": "Crawled - currently not indexed",
+      "lastCrawlDisplayed": "11 Oct 2026, 09:31:48",
+      "lastCrawlTimezone": "Not exposed/verified by this capture; preserve displayed text without conversion.",
+      "crawledAs": "Googlebot smartphone",
+      "crawlAllowedDisplayed": "Yes",
+      "pageFetchDisplayed": "Successful",
+      "indexingAllowedDisplayed": "N/A",
+      "sitemapsDisplayed": "https://digitecme.com/sitemap.xml",
+      "referringPages": [
+        "https://digitecme.com/services/mercedes-oil-change-dubai/",
+        "https://digitecme.com/ar/brands/mercedes-benz-service-dubai/oil-change"
+      ],
+      "userDeclaredCanonicalDisplayed": "N/A",
+      "userDeclaredCanonical": null,
+      "googleSelectedCanonicalDisplayed": "N/A",
+      "googleSelectedCanonical": null,
+      "selectionResolution": "Unavailable in stored report; not inferred from HTTP.",
+      "rawEvidence": {
+        "axFile": "indexed/oil-slashless-verified-ax.txt",
+        "axSha256": "060f483c9fcc96bdd328576304a8bcb85e37ee39bbbf753229ba2fc640364ccf",
+        "textFile": "indexed/oil-slashless-verified-visible.txt",
+        "textSha256": "7b05ad52e1629a15516cf576da0984fa947d25dd2444231e46356dc16d8afd88"
+      },
+      "parentAccepted": true
+    },
+    {
+      "url": "https://digitecme.com/services/mercedes-body-repair-dubai/",
+      "capturedAtUtc": "2026-10-26T08:24:32.987Z",
+      "displayedInspectedUrl": "https://digitecme.com/services/mercedes-body-repair-dubai/",
+      "overallStatus": "URL is on Google",
+      "indexedStatus": "INDEXED",
+      "indexingReason": null,
+      "lastCrawlDisplayed": "1 Jul 2026, 07:54:55",
+      "lastCrawlTimezone": "Not exposed/verified by this capture; preserve displayed text without conversion.",
+      "crawledAs": "Googlebot smartphone",
+      "crawlAllowedDisplayed": "Yes",
+      "pageFetchDisplayed": "Successful",
+      "indexingAllowedDisplayed": "Yes",
+      "sitemapsDisplayed": "Temporary processing error",
+      "referringPages": [
+        "https://digitecme.com/services/car-body-repair-dubai",
+        "https://digitecme.com/page-sitemap.xml",
+        "https://digitecme.com/services/mercedes-repair-dubai/"
+      ],
+      "userDeclaredCanonicalDisplayed": "https://digitecme.com/services/mercedes-body-repair-dubai",
+      "userDeclaredCanonical": "https://digitecme.com/services/mercedes-body-repair-dubai",
+      "googleSelectedCanonicalDisplayed": "Inspected URL",
+      "googleSelectedCanonical": "https://digitecme.com/services/mercedes-body-repair-dubai/",
+      "selectionResolution": "Resolved to the exactly validated inspected URL.",
+      "rawEvidence": {
+        "axFile": "indexed/body-slash-verified-ax.txt",
+        "axSha256": "4e33491e8fee635201efb07e2d131150c81e4c02ebede66ffe375ff7c221ac7f",
+        "textFile": "indexed/body-slash-verified-visible.txt",
+        "textSha256": "2e418b674ad17a238bdb75d6484d6ec591e2a5cf75ce1b5829e114b208fefc85"
+      },
+      "parentAccepted": true
+    },
+    {
+      "url": "https://digitecme.com/services/mercedes-mechanical-repair-dubai",
+      "capturedAtUtc": "2026-10-26T08:24:56.475Z",
+      "displayedInspectedUrl": "https://digitecme.com/services/mercedes-mechanical-repair-dubai",
+      "overallStatus": "URL is on Google",
+      "indexedStatus": "INDEXED",
+      "indexingReason": null,
+      "lastCrawlDisplayed": "11 Oct 2026, 09:31:46",
+      "lastCrawlTimezone": "Not exposed/verified by this capture; preserve displayed text without conversion.",
+      "crawledAs": "Googlebot smartphone",
+      "crawlAllowedDisplayed": "Yes",
+      "pageFetchDisplayed": "Successful",
+      "indexingAllowedDisplayed": "Yes",
+      "sitemapsDisplayed": "Temporary processing error",
+      "referringPages": [
+        "https://digitecme.com/ar/brands/mercedes-benz-service-dubai/mechanical-repair",
+        "https://digitecme.com/brands/mercedes-benz-service-dubai/mechanical-repair"
+      ],
+      "userDeclaredCanonicalDisplayed": "https://digitecme.com/services/mercedes-mechanical-repair-dubai",
+      "userDeclaredCanonical": "https://digitecme.com/services/mercedes-mechanical-repair-dubai",
+      "googleSelectedCanonicalDisplayed": "Inspected URL",
+      "googleSelectedCanonical": "https://digitecme.com/services/mercedes-mechanical-repair-dubai",
+      "selectionResolution": "Resolved to the exactly validated inspected URL.",
+      "rawEvidence": {
+        "axFile": "indexed/mechanical-verified-ax.txt",
+        "axSha256": "bce39c1f01eb0fedad08c5ff3f4dbac73745a6234055f358d2b5566366fcedfc",
+        "textFile": "indexed/mechanical-verified-visible.txt",
+        "textSha256": "b21c2c704090391af516d350bdde5b6c6dfe6c361b2bd49a2a565d3cf1141889"
+      },
+      "parentAccepted": true
+    },
+    {
+      "url": "https://digitecme.com/services/mercedes-diagnostics-dubai",
+      "capturedAtUtc": "2026-10-26T08:25:25.686Z",
+      "displayedInspectedUrl": "https://digitecme.com/services/mercedes-diagnostics-dubai",
+      "overallStatus": "URL is on Google",
+      "indexedStatus": "INDEXED",
+      "indexingReason": null,
+      "lastCrawlDisplayed": "25 Sept 2026, 14:23:38",
+      "lastCrawlTimezone": "Not exposed/verified by this capture; preserve displayed text without conversion.",
+      "crawledAs": "Googlebot smartphone",
+      "crawlAllowedDisplayed": "Yes",
+      "pageFetchDisplayed": "Successful",
+      "indexingAllowedDisplayed": "Yes",
+      "sitemapsDisplayed": "Temporary processing error",
+      "referringPages": [
+        "https://digitecme.com/ar/brands/mercedes-benz-service-dubai/engine-diagnostics",
+        "https://digitecme.com/sitemap.xml"
+      ],
+      "userDeclaredCanonicalDisplayed": "https://digitecme.com/services/mercedes-diagnostics-dubai",
+      "userDeclaredCanonical": "https://digitecme.com/services/mercedes-diagnostics-dubai",
+      "googleSelectedCanonicalDisplayed": "Inspected URL",
+      "googleSelectedCanonical": "https://digitecme.com/services/mercedes-diagnostics-dubai",
+      "selectionResolution": "Resolved to the exactly validated inspected URL.",
+      "rawEvidence": {
+        "axFile": "indexed/diagnostics-verified-ax.txt",
+        "axSha256": "9e792c0521c6d8eea35c2155175c3d4ff0107a282eb966bf79abe8a61b67d4ca",
+        "textFile": "indexed/diagnostics-verified-visible.txt",
+        "textSha256": "8b55e240657c80a8ae90915694f82f3ef044da7bd17a71615639117860af5a2f"
+      },
+      "parentAccepted": true
+    },
+    {
+      "url": "https://digitecme.com/ar/services/mercedes-body-repair-dubai",
+      "capturedAtUtc": "2026-10-26T08:26:21.246Z",
+      "displayedInspectedUrl": "https://digitecme.com/ar/services/mercedes-body-repair-dubai",
+      "overallStatus": "URL is on Google",
+      "indexedStatus": "INDEXED",
+      "indexingReason": null,
+      "lastCrawlDisplayed": "25 Sept 2026, 08:32:38",
+      "lastCrawlTimezone": "Not exposed/verified by this capture; preserve displayed text without conversion.",
+      "crawledAs": "Googlebot smartphone",
+      "crawlAllowedDisplayed": "Yes",
+      "pageFetchDisplayed": "Successful",
+      "indexingAllowedDisplayed": "Yes",
+      "sitemapsDisplayed": "Temporary processing error",
+      "referringPages": [
+        "https://digitecme.com/ar/brands/mercedes-benz-service-dubai/body-repair",
+        "https://digitecme.com/brands/mercedes-benz-service-dubai/body-repair"
+      ],
+      "userDeclaredCanonicalDisplayed": "https://digitecme.com/ar/services/mercedes-body-repair-dubai",
+      "userDeclaredCanonical": "https://digitecme.com/ar/services/mercedes-body-repair-dubai",
+      "googleSelectedCanonicalDisplayed": "Inspected URL",
+      "googleSelectedCanonical": "https://digitecme.com/ar/services/mercedes-body-repair-dubai",
+      "selectionResolution": "Resolved to the exactly validated inspected URL.",
+      "rawEvidence": {
+        "axFile": "indexed/body-ar-verified-ax.txt",
+        "axSha256": "226bee6b5cc4e0018c4d9ca8dbb59b997c659ff877b7fe79771b678a9ace2770",
+        "textFile": "indexed/body-ar-verified-visible.txt",
+        "textSha256": "bb07b3e28225590a8eca8f4214cb64f198da4eb521f3d6382767a0367853df4a"
+      },
+      "parentAccepted": true
+    }
+  ],
+  "limits": [
+    "Stored indexed reports reflect displayed historical crawls, all before October26 redirect deployment. They do not measure post-deployment convergence.",
+    "A currently self-canonical HTTP page does not replace a missing stored Google-selected canonical. N/A is preserved as unavailable.",
+    "Body repair and oil slash URLs are indexed and Google-selected as their inspected slash URLs while their reported declared canonical is slashless. Their slashless variants are crawled-currently-not-indexed with canonical fields N/A. Variant convergence remains unresolved; neither entire service is absent from Google.",
+    "No live test, indexing request or website/configuration action was used. Only eight strict accepted reports are normalized; initial unvalidated attempts are excluded."
+  ]
+}

@@ -1,0 +1,153 @@
+DIGI-TEC — MERCEDES OIL CHANGE INVESTIGATION
+Observed: 21 October 2026. Business timezone: Asia/Dubai.
+Website: https://digitecme.com
+Primary query: mercedes oil change
+Primary commercial content: /services/mercedes-oil-change-dubai (both URL forms audited)
+
+1. CAUSE ASSESSMENT AND CONFIDENCE
+
+High confidence: 45.5 is a genuine four-impression property statistic, not the dedicated service page's measured average position. The export's two active hourly bins reconcile exactly:
+  20 October 16:00 UTC+04: one impression, one click, position 5.
+  20 October 20:00 UTC+04: three impressions, no clicks, hourly mean position 59.
+  (1*5 + 3*59) / 4 = 45.5.
+The position 59 is a bin average, not three independently known positions. Three impressions supply 75% of the total weight.
+
+The dedicated page reports two impressions, one click, 50% CTR and position 6.0. A fresh authenticated EXACT query + UAE report reproduces both observations. The 24-hour property device table returns Desktop, four impressions, one click and position 45.5.
+
+Moderate confidence: sparse short-term observations and differing search/reporting contexts explain the apparent alarm more plausibly than a sustained target-page collapse. The measured 28-day exact-query page trend is stable around position 6.5. Its latest ordinary daily cutoff is 18 October, so it cannot rule out every subsequent change. The underlying reason for the poorer hourly bin, and the four-property/two-page discrepancy, remain unresolved. No causal link to an algorithm, penalty, deployment or legacy URL is established. GSC Manual Actions currently says 'No issues detected'; this is not proof about algorithmic systems.
+
+2. EXPORT SCOPE, DAILY TREND AND QUERY-BY-PAGE EVIDENCE
+
+Source files, read without alteration:
+  C:/Users/ADMIN/Downloads/digitecme.com-Performance-on-Search-2026-10-21.xlsx
+  C:/Users/ADMIN/Downloads/digitecme.com-Performance-on-Search-2026-10-21 (1).xlsx
+
+Both Filters tabs show Web (text-based) and literal query text '+mercedes oil change'. Neither lists country, device or page filters. The first file specifies Last 3 months; the second Last 24 hours. The workbook text alone does not prove the 24-hour match operator. Only its exact-query row is returned. Authenticated follow-up explicitly selected Exact query, with URL query=!mercedes%20oil%20change, and country=are; operator proof is saved.
+
+Three-month report: 19 July–18 October, 92 daily rows. CONTAINS population totals: 0 clicks, 325 impressions, 0% CTR, approximately 14.89 impression-weighted position. Six query rows prove that its Pages and Chart tabs are not exact-query-only. The exact 'mercedes oil change' Queries row is 0 clicks, 169 impressions, 0% CTR, position 15.27. Historical CONTAINS page rows: dedicated185/14.35; general79/34.18; article68/11.46; hub17/5.71 (impressions/position). Do not attribute those page rows to the exact query.
+
+24-hour report: hourly labels 20 October 03:00–21 October 02:00 UTC+04, not a full calendar day. Exact-query row: 1 click/4 impressions/25%/45.5. Page row: 1/2/50%/6.0. All returned country/device impressions are UAE/Desktop; this is observed segmentation, not proof of export filter configuration. File creation around 09:59 UAE does not establish data freshness.
+
+Authenticated last 28 available daily dates: 21 September–18 October, Web + exact query + UAE. Ordinary GSC daily dates use Pacific Time; the UI captures contain no API finalization metadata. Last update displayed 5.5 hours ago. Do not align these day labels directly with the UAE hourly labels or label this a complete window through 20 October.
+
+Scope                         Clicks  Impressions  CTR   UI position
+Exact query, property             0       70         0%      9.6
+Exact query + dedicated slash     0       66         0%      6.5
+Exact query, general oil page     0        4         0%     61.0
+
+Weekly exact-query trend (positions recomputed from rounded daily rows):
+Period                Property impressions/position   Dedicated impressions/position
+21–27 September               22 / 9.72                       21 / 6.43
+28 September–4 October        26 /10.27                       24 / 6.34
+5–11 October                  10 /11.29                        9 / 6.99
+12–18 October                 12 / 6.76                       12 / 6.76
+All clicks and CTR are zero. Zero-impression positions remain unavailable, not zero. These are separately filtered aggregates, not impression-level joins.
+
+Device slices, exact query + UAE:
+  Property: Mobile41 impressions/9.4; Desktop29/10.0.
+  Dedicated page: Mobile39/6.6; Desktop27/6.4.
+  All clicks0, CTR0%. Device tables cannot be joined to independent page tables for more granular attribution.
+
+Authenticated exact-query PAGES observations (same dates/UAE/Web):
+  mercedes oil change:
+    Dedicated slash URL66 impressions/6.5; general oil4/61.0.
+  mercedes oil change dubai:
+    Hub13/5.2; dedicated slash13/15.8; general oil7/53.1; article2/48.5.
+    Property:26 impressions/11.2, all clicks0/CTR0%.
+  mercedes oil change near me:
+    Dedicated slash1/5.0; hub1/21.0.
+    Property:2 impressions/13.0, all clicks0/CTR0%.
+
+For the Dubai query, 35 page impressions and 26 property impressions are different units. The four-property/two-page discrepancy in the 24-hour data is unresolved even after authenticated reproduction. Neither subtraction nor weighting across these independent aggregates identifies a missing URL or its position. No independent Queries/Pages exports were joined.
+
+Evidence: gsc/export-findings.md; gsc/metrics-summary.json; authenticated/performance-findings.md; authenticated/exact-query-by-page-28d.csv; four authenticated daily CSVs and weekly-summary.json. Raw sheets, DOM snapshots, operator proof and table JSON remain adjacent.
+
+3. CANONICAL, INDEXING AND ROUTING
+
+Live HTTP GET/HEAD:
+  Dedicated slash and slashless:200 each, identical relevant initial SSR HTML, index/follow. Both declare slashless canonical; no HTTP slash redirect.
+  General oil, article and hub:200, appropriate SSR content, index/follow and slashless self-canonical. Their trailing-slash counterparts also return200 with the same canonical.
+  Legacy /brands/mercedes-benz-service-dubai/oil-change, with or without slash:200 HOMEPAGE fallback, homepage canonical, no permanent redirect. This is a verified routing defect.
+  HTTP/www:301 to HTTPS apex, preserving path/query. Robots permits crawling; no checked X-Robots exclusion. Live sitemap contains each intended slashless route once and excludes the legacy alias.
+
+Authenticated Google URL Inspection:
+  Dedicated slash:INDEXED, Google-selected canonical='Inspected URL' (slash); declared canonical=slashless. Last crawl25 September14:53:48, smartphone, allowed and successful. No referring sitemap detected; referring pages include general oil and /page-sitemap.xml.
+  Dedicated slashless:NOT INDEXED, 'Crawled - currently not indexed'; last crawl11 October09:31:48. Indexed-record declared/selected canonicals unavailable. Sitemaps field shows Temporary processing error.
+  Today's slashless LIVE TEST:available to Google, successful smartphone fetch, crawl/indexing allowed, declared slashless canonical. A live test does not establish indexation or Google's selected canonical.
+  General oil:INDEXED, declared/selected self; crawl20 October05:07:36; sitemap.xml detected.
+  Article:INDEXED, declared/selected self; crawl11 October09:31:50; sitemap field Temporary processing error.
+  Hub:INDEXED, declared/selected self; crawl16 October21:18:38; sitemap field Temporary processing error. Its indexed crawl predates the20 October hub change.
+  Legacy oil alias:URL unknown to Google/not indexed; canonical unavailable. A non-Google search-tool result mentioning it is not proof of Google indexation.
+
+Thus slash canonical consolidation is not confirmed: Google currently chooses the slash URL, although canonical tags, sitemap and internal links prefer slashless. Preserve the existing commercial owner and investigate the host's missing redirect; do not transfer the page to the hub/general oil/article or flip canonical policy in response to four impressions. Sitemap processing fields do not by themselves prove a current broken sitemap.
+
+Recent differences:20 October HEAD b793ad0acf3cd534217d862a44f2e1d915789ec2 changed Mercedes hub/directory/shared hub-scope and About content, not the dedicated oil page. Live hub reflects its newer title; starting local dist was stale. Fresh isolated build reflects current source. An exact production deployment timestamp or active host configuration cannot be proven from a Git push alone.
+
+Evidence: technical/TECHNICAL-FINDINGS.md; technical/live-evidence.json; supplement-evidence.json; initial HTML files; local link/deployment evidence; authenticated/inspection-*.txt; manual-actions.txt.
+
+4. SEARCH INTENT AND POSSIBLE CANNIBALIZATION
+
+Dedicated oil page:Mercedes-specific commercial oil/filter booking. General oil page:multi-brand engine oil service. Article:informational choice/scope guidance. Brand hub:broad Mercedes maintenance/repair and service navigation. Keep these roles and their contextual links.
+
+Primary exact query:dedicated page dominates the returned URL evidence; no blog/hub row appears in its28-day Pages view. General oil's four low-position impressions show overlap, not demonstrated harm.
+
+Dubai exact variant:real hub/service overlap exists, supported by query-filtered page rows and separately filtered daily series. Dedicated weekly impressions/position:3/27,4/10.5,1/26,5/11.4; hub6/2.83,1/3,4/2.5,2/18.5. Both receive impressions on some of the same dates, which does not prove the same search event. Only13 impressions each, no clicks, no persistent displacement or lost-click evidence. Label this possible intent overlap requiring monitoring, not proven harmful cannibalization. Near-me's two impressions cannot support a durable diagnosis.
+
+Current desktop Google browser snapshots for all three literal queries show the dedicated slash URL as an ordinary organic result. UAE/English, Google location Al Quoz,Dubai; both personalized and personalization-disabled views captured. Still signed in and one location/time; not national/mobile/stable ranks. Owner-only Insights widgets excluded. Presence today is not post-change recovery evidence.
+
+5. COMPETITORS
+
+Sponsored examples:SilberArrows, AlMaraghi advertising, Powertech and other explicitly labelled advertisers; keep sponsored products/promoted local placements separate. Local examples:AlMaraghi,Astana,Auto benz or Deutsches Auto Service depending query. Ordinary organic competitors observed include Golden Horse, official Gargash, benzuae, Mercedes Repairs Dubai, Car Garage Expert and Orange Auto. No stable numeric ranks or backlink metrics assigned.
+
+Primary-page review:
+  Golden Horse:engine oil/filter price fromAED200 excludingVAT, separate drivetrain prices, calculator/appointment/WhatsApp and AlQuoz3 address; visible gallery originality unverified.
+  AlMaraghi/benzuae:oil/filter/leak/diagnostic scope, identifiable Dubai/AbuDhabi contacts and booking; less approval/quantity detail than DIGI-TEC.
+  Orange Auto:seven-step oil service and branch addresses, call/WhatsApp/JS quote form; brand preference for Mobil1 does not establish suitability for every engine.
+  Wider comparison sample:MercGarage,iTyreCare,BRITFIX,SilberArrows offer useful price/scope/staff/booking presentation examples; they were not all observed ordinary organic leaders in the controlled browser snapshots.
+
+DIGI-TEC already covers VIN/engine-specific approval, quantity, filter/seals, supported ASSYST reset, A/B scope separation and direct enquiry. No urgent rewrite or borrowed technical promises are warranted. Optional future conversion work:business-approved price guidance or an authentic documented oil-service job, only with real business evidence. No photo ownership or workshop-case originality was independently certified.
+
+Sources:
+https://golden-horse.ae/services/mercedes/mercedes-oil-change/
+https://benzuae.com/mercedes-oil-change/
+https://orangeauto.ae/brands/mercedes-benz/oil-change-service/
+Evidence: competitors/serp-competitive-addendum.md; competitor-review.md; six authenticated/serp-*.txt captures.
+
+6. REQUIRED CORRECTIONS / LOCAL WORK
+
+No content, canonical ownership, schema, sitemap or internal-link rewrite is supported by the ranking evidence. No source change is needed to duplicate a fix that already exists locally.
+
+The existing local production router already permanently redirects the legacy oil alias and normalizes the service slash to the existing slashless owner. Live production is not executing those behaviors. A narrowly scoped, reviewable hosting proposal is packaged under proposed-hosting-only/REVIEW-NOTES.md; it is not production activation. Its two logical rules cover three exact paths;246 offline assertions pass, including unrelated-route passthrough. Prioritize the verified legacy fallback defect. Service slash normalization should be deliberately reviewed with Google's current slash canonical recorded as baseline; it is not an emergency ranking-recovery claim.
+
+Do not activate the broad sitewide router merely to address this investigation. After separate production authorization, apply only reviewed exact paths on the actual host, preserve query strings, avoid chains/loops, verify correct200 SSR destination, and re-inspect after Google recrawls. Canonical reprocessing can take time. No production configuration, indexing request, commit, push or deployment was made here.
+
+7. LOCAL QA
+
+PASS:isolated complete declared production build; both TypeScript checks; hosting/production-router/SEO/canonical/sitemap/oil/query-release/schema/contact checks; PPF, paint/protection, suspension, transmission and social metadata regressions; additional master SEO/routing-response/tuning/paint-care checks. Fresh build:1,256 React routes,1,005 canonical sitemap URLs;44,666 internal links checked. Four target content routes each have oneH1,index/follow,self-canonical and one sitemap entry. Oil validation includes10 visible/schemaFAQs and8 reciprocal brand links.24 focused exact redirect assertions pass locally, including GET/HEAD and repeated marketing parameters.
+
+Shared source/public/scripts/cloudflare/docs hashes remained identical before/after. Existing user changes were preserved. Initial failures in optional isolated checks were missing test fixtures; supplied existing fixtures and reran unchanged scripts successfully. Existing non-failing build warnings retained in logs. Local baseline checks do not establish production routing or ranking recovery. No new browser visual regression suite was run because no page content changed; live browser/GSC inspection was performed.
+
+Evidence:qa/QA-SUMMARY.md;qa/qa-results.json;qa/targeted-fresh-build.json;qa/logs;technical/supplement-evidence.json.
+
+8. SEVEN-DAY MONITORING PLAN — 21–27 OCTOBER, UAE BUSINESS DATES
+
+21 October:retain today's exports, exact operator proof, latest available daily cutoff, query/page/device baseline, Google-selected canonicals and HTTP chains. Freeze reactive content/canonical edits. Resolve ownership of the production routing discrepancy before requesting a production change.
+
+22–26 October, once daily:retrieve Web,query EQUALS each target phrase,country=are. Keep property daily/device and page-filtered daily/device views separate. Capture both service URL forms, general oil,article,hub,legacy alias when returned. Record latest available date and preliminary/final state; append newly available dates and refresh prior preliminary dates. Use a real query+page+date+device export where authenticated APIs permit; do not join independent dimension tabs. Preserve zero-impression positions as unavailable. Compare 7-day impression-weighted averages to preceding7 days with matching filters and dates; retain28-day baseline. Check the current HTTP/canonical/sitemap after any separately authorized routing activation and inspect both service forms after recrawl. Do not repeatedly request indexing.
+
+Escalation triggers (operational review thresholds, not claims of statistical significance):any target5xx/noindex/wrong canonical/redirect loop immediately; loss of the indexed commercial content after recrawl; or a matched7-day target/device mean worsening by more than5 positions with at least20 target impressions, corroborated across multiple available days. With less data, extend observation and report uncertainty. Investigate Dubai URL overlap only when per-page/day/device records show persistent weaker-owner substitution alongside reduced commercial visibility or clicks. Investigate the four/two discrepancy using refreshed data; do not assign unmatched impressions to guessed URLs.
+
+27 October:review seven business-date observations using the latest fully processed comparable period available, explicitly label any reporting lag. Decide continue monitoring or scope a correction using HTTP/indexing/URL-selection evidence. Keep price/case-study work separate from ranking diagnosis. If necessary extend review once October20–26 daily data has processed; do not force a recovery verdict on the calendar deadline.
+
+9. GO / NO-GO
+
+GO:preserve the completed SEO work, retain differentiated intent, and monitor with exact/query/page/UAE/device evidence. GO for review of the packaged narrow routing correction.
+NO-GO:emergency rewriting, canonical ownership transfer, merging useful pages, claiming a penalty or recovery, or deploying/pushing/committing without separate authorization. Production activation is not authorized by this investigation request.
+
+Google methodology references:
+https://support.google.com/webmasters/answer/7576553?hl=en
+https://support.google.com/webmasters/answer/96568?hl=en
+https://developers.google.com/webmaster-tools/v1/searchanalytics/query
+https://support.google.com/webmasters/answer/9012289
+
+All conclusions distinguish observed facts, derived arithmetic, hypotheses and unresolved evidence. No recovery is claimed.

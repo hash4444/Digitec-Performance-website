@@ -1,0 +1,102 @@
+[
+  {
+    "domain": "ECU programming",
+    "current_independent_workshop_confirmation": "None",
+    "historical_owner_report": "No exact module-function confirmation",
+    "existing_source_claim": "Supported ECU coding and module programming where compatible",
+    "status": "Conditional website claim",
+    "public_decision": "Explain concept and review exact function only",
+    "evidence_needed": "Vehicle/module/function matrix and current platform entitlement plus accepted-job evidence",
+    "source_paths": "src/data/services.ts:711-744"
+  },
+  {
+    "domain": "Module coding",
+    "current_independent_workshop_confirmation": "None",
+    "historical_owner_report": "Historical XENTRY/ISTA+ diagnostic-tool availability only",
+    "existing_source_claim": "Supported coding with vehicle/module/software/access qualifications",
+    "status": "Conditional website claim",
+    "public_decision": "Keep exact-function enquiry without new feature/retrofit promises",
+    "evidence_needed": "Accepted configuration functions and vehicle coverage approved by workshop",
+    "source_paths": "src/data/services.ts:719-730;src/data/brands.ts:123-138"
+  },
+  {
+    "domain": "Control-unit replacement configuration",
+    "current_independent_workshop_confirmation": "None",
+    "historical_owner_report": "None for exact new or used unit",
+    "existing_source_claim": "Replacement compatibility and setup reviewed for supported infotainment units",
+    "status": "Conditional website claim with no general acceptance proof",
+    "public_decision": "Explain why replacement may need setup and ask before buying",
+    "evidence_needed": "Accepted unit types new/used policy parts matching and exact startup/validation scope",
+    "source_paths": "src/data/electronicsServices.ts;src/data/brandServices.ts"
+  },
+  {
+    "domain": "Manufacturer-specific diagnostic software",
+    "current_independent_workshop_confirmation": "None",
+    "historical_owner_report": "B1 XENTRY; B2 PIWIS 3; B3 ISTA+; B8 ODIS attributed to prior user/business briefs",
+    "existing_source_claim": "Existing qualified brand diagnostic-tool statements",
+    "status": "Historical owner-reported tooling not independent current verification",
+    "public_decision": "Preserve existing qualified statements without expanding functions",
+    "evidence_needed": "Current inventory entitlement and vehicle/function support sign-off",
+    "source_paths": "outputs/b1/technical-sources.md;b2-porsche-final-report.md;b3-bmw-technical-sources.md;b8-volkswagen-technical-sources.md"
+  },
+  {
+    "domain": "Software updates",
+    "current_independent_workshop_confirmation": "None",
+    "historical_owner_report": "None for exact accepted updates",
+    "existing_source_claim": "Supported software updates and reflashing where compatible",
+    "status": "Conditional website claim",
+    "public_decision": "Explain updates separately from diagnosis and no promised software cure",
+    "evidence_needed": "Exact accepted operations software paths prerequisites and verification process",
+    "source_paths": "src/data/services.ts:728"
+  },
+  {
+    "domain": "Adaptations and calibrations",
+    "current_independent_workshop_confirmation": "None",
+    "historical_owner_report": "Tool availability historically reported but exact procedures unverified",
+    "existing_source_claim": "Supported relearn/calibration/adaptation where required and available",
+    "status": "Conditional website claim",
+    "public_decision": "Explain general setup distinction without new specific calibration service",
+    "evidence_needed": "Approved exact procedures equipment training and vehicle coverage",
+    "source_paths": "src/data/services.ts:88;src/data/services.ts:152;src/data/diagnosticsAcBrandContent.ts:94"
+  },
+  {
+    "domain": "ECU hardware repair",
+    "current_independent_workshop_confirmation": "None",
+    "historical_owner_report": "None",
+    "existing_source_claim": "Electrical/module fault investigation does not prove circuit-board repair",
+    "status": "Unverified",
+    "public_decision": "No ECU bench/circuit-board or guaranteed repair promise",
+    "evidence_needed": "Accepted ECU types bench process component-level scope and completed-job evidence",
+    "source_paths": "src/data/services.ts:798-815"
+  },
+  {
+    "domain": "ECU cloning",
+    "current_independent_workshop_confirmation": "None",
+    "historical_owner_report": "None",
+    "existing_source_claim": "None in selected current service owners",
+    "status": "Unverified and excluded",
+    "public_decision": "No public cloning service expansion",
+    "evidence_needed": "Separate properly verified and authorized scope review before any expansion",
+    "source_paths": "Selected owner audit;current sprint brief"
+  },
+  {
+    "domain": "Immobilizer and security-related functions",
+    "current_independent_workshop_confirmation": "None",
+    "historical_owner_report": "None for a specific authorized operation",
+    "existing_source_claim": "Generic source references security access/authorization without exact accepted functions",
+    "status": "Unverified and excluded",
+    "public_decision": "No new functions credentials requests or bypass promises",
+    "evidence_needed": "Separate authorization and verifiable accepted service scope; never expose credentials",
+    "source_paths": "src/data/services.ts:140;src/data/services.ts:721;src/data/diagnosticsAcBrandContent.ts:94"
+  },
+  {
+    "domain": "High-voltage or hybrid module work",
+    "current_independent_workshop_confirmation": "None",
+    "historical_owner_report": "None",
+    "existing_source_claim": "Completed diagnostics explicitly limits hybrid/HV claims; wider legacy templates mention HV procedures",
+    "status": "Unverified for this sprint",
+    "public_decision": "No HV programming/module/battery/inverter repair expansion from scan capability",
+    "evidence_needed": "Documented competency safe facilities equipment system scope and exact vehicle support",
+    "source_paths": "src/data/diagnosticsAcGeneralContent.ts:32-44;src/data/diagnosticsAcBrandContent.ts:80-99;src/data/brandServices.ts"
+  }
+]

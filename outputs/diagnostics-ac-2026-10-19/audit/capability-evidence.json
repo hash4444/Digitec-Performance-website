@@ -1,0 +1,65 @@
+{
+  "date": "2026-10-19",
+  "evidenceScope": "Existing repository content, completed sprint reports and read-only public rendered pages. This is documentary evidence of the advertised scope, not an equipment inventory, technician credential audit or confirmation of every model/module/function.",
+  "business": {
+    "name": "DIGI-TEC Performance Center L.L.C.",
+    "location": "Warehouses 11–15, Al Quoz Industrial Area 3, Dubai, UAE",
+    "telephone": "+971 4 340 2223",
+    "whatsapp": "https://wa.me/97143402223",
+    "businessId": "https://digitecme.com/#business",
+    "organizationId": "https://digitecme.com/#organization",
+    "websiteId": "https://digitecme.com/#website",
+    "sources": ["index.html", "src/lib/schema.ts", "src/components/Footer.tsx"]
+  },
+  "claims": [
+    {
+      "subject": "Mercedes XENTRY diagnostic capability",
+      "evidence": ["src/data/brands.ts:32", "src/data/brands.ts:46", "src/pages/BrandPage.tsx:123", "src/data/mercedesArabicServiceContent.ts:183", "src/data/repairServiceContent.ts:37"],
+      "existingScope": "Supported fault and live-data review with directed testing and physical checks. Exact vehicle/module/access governs additional functions.",
+      "operationalVerification": "No fresh physical inventory or vehicle coverage evidence supplied in this request.",
+      "action": "Retain existing qualified wording; do not expand to all modules, all model years, key/security functions or high-voltage work. Completed Mercedes diagnostic owner is preserved."
+    },
+    {
+      "subject": "BMW ISTA+ diagnostic capability",
+      "evidence": ["src/data/brandServices.ts:210", "src/data/queryServiceContent.ts:42", "src/data/bmwHubContent.ts:6", "https://digitecme.com/brands/bmw-service-dubai/engine-diagnostics"],
+      "existingScope": "ISTA+ fault/live-data and test-plan information alongside relevant physical tests; coding and programming are distinct conditional tasks.",
+      "operationalVerification": "Existing published/repository statement; no fresh installed-version, licence or vehicle/module compatibility evidence.",
+      "action": "May clarify the existing diagnostic process without expanding named functions or model compatibility. Never infer support for every BMW ECU, retrofit, hybrid or high-voltage system."
+    },
+    {
+      "subject": "Porsche PIWIS 3 diagnostic capability",
+      "evidence": ["src/data/brandServices.ts:174", "src/data/queryServiceContent.ts:196", "src/pages/BrandPage.tsx:946", "https://digitecme.com/brands/porsche-service-dubai/engine-diagnostics", "docs/seo/porsche-topical-architecture-audit.md:199"],
+      "existingScope": "Existing content states PIWIS 3 capability and requires model/generation/module/access confirmation.",
+      "operationalVerification": "No new workshop inventory supplied; an older architecture audit explicitly required business confirmation. Existing current qualified claim alone does not establish every function.",
+      "action": "Do not broaden compatibility or claims; retain per-vehicle limitations. Any stronger equipment ownership, programming, manufacturer authorisation or Taycan high-voltage claim needs current operational evidence."
+    },
+    {
+      "subject": "Volkswagen ODIS diagnostic capability",
+      "evidence": ["src/data/brands.ts:407", "src/data/brandServices.ts:437", "src/data/brandServices.ts:998"],
+      "existingScope": "ODIS-supported fault/live-data and guided functions confirmed for vehicle and access; no fault code alone establishes a failed part.",
+      "operationalVerification": "No fresh compatibility inventory or access evidence supplied.",
+      "action": "Preserve existing qualified diagnostic owner. A gearbox warning links to the existing transmission owner without making every DSG coding, adaptation or repair function available."
+    },
+    {
+      "subject": "JLR-compatible diagnostic work",
+      "evidence": ["src/data/brandServices.ts:318", "src/data/brands.ts:423", "src/data/brands.ts:514", "src/data/brands.ts:522"],
+      "existingScope": "Available JLR-compatible fault/live-data and other requested functions require VIN, module and access confirmation.",
+      "operationalVerification": "Specific SDD/Pathfinder equipment inventory, versions and vehicle/function support not supplied.",
+      "action": "Use vehicle-compatible diagnostic language. Do not claim universal JLR platform availability or expand software/security/high-voltage functions."
+    },
+    {
+      "subject": "General automotive AC inspection and repair",
+      "evidence": ["src/data/services.ts:850", "src/data/mercedesServiceContent.ts:99", "src/data/brandServices.ts:composeAcRepair", "https://digitecme.com/services/car-ac-repair-dubai"],
+      "existingScope": "Cooling/airflow/leak/refrigerant/control/compressor assessment and supported repair; existing content mentions compressor, condenser, evaporator and cabin-filter work with per-vehicle scope confirmation.",
+      "operationalVerification": "No fresh refrigerant service-machine, leak-detector, recovery/recharge compatibility or exact replacement capability inventory.",
+      "action": "Explain assessment before charging/parts. Do not introduce R-134a, R-1234yf, electric-compressor oil, hybrid/high-voltage AC service compatibility, all-brand coverage, evaporator replacement promises, prices or turnaround. Hose/pipe concerns can be described as possible leak locations; specific fabrication/replacement capability is not established."
+    },
+    {
+      "subject": "Lamborghini and Rolls-Royce diagnostic/AC work",
+      "evidence": ["src/data/brandServices.ts", "src/pages/BrandServicePage.tsx", "src/data/brandServiceSprint.ts", "src/data/repairServiceContent.ts"],
+      "existingScope": "Existing per-vehicle compatible diagnostic and AC assessment owners, model-specific parts/scope confirmation.",
+      "operationalVerification": "No new model/platform/equipment/function evidence supplied.",
+      "action": "Keep owners; no new generic scan-tool names, supercar-wide compatibility or hybrid/high-voltage claims. Completed Lamborghini diagnostic owner and previous repair sprint remain unchanged."
+    }
+  ]
+}

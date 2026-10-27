@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-20",
+  "method": "Observed in-app browser HTML5 video DOM states via cua_repl; each video started with the Intro UI button and was observed at ended=true after complete playback",
+  "url": "http://127.0.0.1:8790/review.html",
+  "passed": true,
+  "muted": true,
+  "scope": "Actual browser media playback; separate FFmpeg checks cover full frame/audio decoding and loudness. This was not a subjective audio listening test.",
+  "vertical": {
+    "file": "renders/digitec-vertical.mp4",
+    "start": {"currentTime": 0.214906, "duration": 35, "width": 1080, "height": 1920, "paused": false, "readyState": 4, "error": null},
+    "end": {"currentTime": 35, "duration": 35, "width": 1080, "height": 1920, "paused": true, "ended": true, "readyState": 4, "error": null}
+  },
+  "horizontal": {
+    "file": "renders/digitec-horizontal.mp4",
+    "start": {"currentTime": 0.221878, "duration": 35, "width": 1920, "height": 1080, "paused": false, "readyState": 4, "error": null},
+    "end": {"currentTime": 35, "duration": 35, "width": 1920, "height": 1080, "paused": true, "ended": true, "readyState": 4, "error": null}
+  }
+}

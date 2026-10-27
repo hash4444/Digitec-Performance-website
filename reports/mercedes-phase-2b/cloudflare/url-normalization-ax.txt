@@ -1,0 +1,138 @@
+Browser tab: 5, Title: "Rules | Settings | URL Normalization | digitecme.com | Mebms2000@gmail.com's Account | Cloudflare", URL: "https://dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/rules/settings/url-normalization".
+1 AXWebArea Rules | Settings | URL Normalization | digitecme.com | Mebms2000@gmail.com's Account | Cloudflare, URL: dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/rules/settings/url-normalization
+	2 container
+		3 container react-app
+			4 container
+				5 link Description: Cloudflare home, Value: dash.cloudflare.com/
+				6 pop up button (collapsed) Description: Switch Account, ID: base-ui-:r4f:, Secondary Actions: Expand
+					7 text Mebms2000@gmail.com's Account
+					8 image
+				9 container
+					10 button Quick search...
+						11 image
+						12 text Quick search...
+						13 container
+							14 text Ctrl  K
+					15 link Description: Back to Domains, Value: dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/domains/overview
+					16 content list
+						17 link Description: Overview, Value: dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/
+						18 button (collapsed) Description: Recents, Secondary Actions: Expand
+							19 text Recents
+							20 image
+						21 button (collapsed) AI Crawl Control, Secondary Actions: Expand
+							22 text AI Crawl Control
+							23 image
+						24 button (collapsed) Agent Readiness, Secondary Actions: Expand
+							25 text Agent Readiness
+							26 image
+						27 link Description: Analytics, Value: dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/analytics
+						28 button (collapsed) Observability New, Secondary Actions: Expand
+							200 image
+							30 text Observability
+							31 text New
+							32 image
+						33 button (collapsed) DNS, Secondary Actions: Expand
+							34 text DNS
+							35 image
+						36 button (collapsed) Email, Secondary Actions: Expand
+							37 text Email
+							38 image
+						39 button (collapsed) SSL/TLS, Secondary Actions: Expand
+							40 text SSL/TLS
+							41 image
+						42 button (collapsed) Security, Secondary Actions: Expand
+							43 text Security
+							44 image
+						45 link Description: Access, Value: dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/access
+						46 button (collapsed) Speed, Secondary Actions: Expand
+							47 text Speed
+							48 image
+						49 button (collapsed) Caching, Secondary Actions: Expand
+							50 text Caching
+							51 image
+						52 link Description: Workers Routes, Value: dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/workers
+						53 container
+							54 button (expanded) Rules, Secondary Actions: Collapse
+								55 text Rules
+								56 image
+							57 content list
+								58 link Description: Overview, Value: dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/rules/overview
+								59 link Description: Redirect Rules, Value: dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/rules/redirect-rules
+								60 link Description: Rule simulator Beta, Value: dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/rules/simulator
+								61 link Description: Snippets, Value: dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/rules/snippets
+								62 link Description: Cloud Connector Beta, Value: dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/rules/cloud-connector
+								63 link Description: Page Rules, Value: dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/rules/page-rules
+								64 link Description: Settings, Value: dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/rules/settings
+						65 link Description: Error Pages New, Value: dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/error-pages
+						66 link Description: Network, Value: dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/network
+						67 button (collapsed) Traffic, Secondary Actions: Expand
+							68 text Traffic
+							69 image
+					70 content list
+						71 button (collapsed) Manage account, Secondary Actions: Expand
+							72 text Manage account
+							73 image
+				74 button (expanded) Description: Collapse sidebar, ID: base-ui-:rt:, Secondary Actions: Collapse
+			75 container
+				76 checkbox Description: Star domain, Value: 0, ID: base-ui-:r4t:
+					77 image
+				78 container base-ui-:r4v:
+					79 text digitecme.com
+					80 text free
+					81 image
+				82 button Ask AI
+					83 image
+					84 text Ask AI
+				85 link Description: Support, Value: dash.cloudflare.com/?to=/:account/support
+				86 pop up button (collapsed) Description: User menu, ID: base-ui-:r11:, Secondary Actions: Expand
+					87 image
+			88 container
+				89 tab group
+					90 tab (selectable, settable, boolean) Managed Transforms, Value: 0, ID: base-ui-:r51:
+					91 tab (selected, settable, boolean) URL Normalization, Value: 1, ID: base-ui-:r52:
+			201 container skipTarget
+			92 heading Settings, Value: 1
+				93 text Settings
+			190 heading URL Normalization, Value: 1
+				202 text URL Normalization
+			191 text Normalize incoming URLs before any rules are evaluated.
+			192 button URL Normalization documentation
+			193 container
+				194 heading Normalization type, Value: 1, ID: normalization-listbox-type
+					203 text Normalization type
+				204 text Select normalization type:
+				205 content list
+					206 container
+						207 AXListMarker • 
+						208 text RFC-3986: Adhere strictly to RFC-3986 and normalize the URI Path based upon the standards outlined within.
+					209 container
+						210 AXListMarker • 
+						211 text Cloudflare: Apply additional normalization techniques; normalize back slashes into forward slashes and merge successive forward slashes.
+				212 text Further information on these options can be found within the 
+				195 button documentation.
+				213 pop up button (collapsed) Cloudflare Normalization type, ID: downshift-0-toggle-button, Secondary Actions: Expand
+			196 container
+				197 heading Normalize incoming URLs, Value: 1, ID: normalization-toggle-incoming
+					214 text Normalize incoming URLs
+				215 text Normalize incoming URL-encoded URLs as they reach Cloudflare’s edge. Cloudflare then uses the normalized URLs for products with URL input, including Page Rules, WAF custom rules, Workers, and Access.
+				216 switch Description: Normalize incoming URLs, Value: 1, ID: base-ui-:r6s:
+			198 container
+				199 heading Normalize URLs to origin, Value: 1, ID: normalization-toggle-to-origin
+					217 text Normalize URLs to origin
+				218 text In addition to URL normalization at Cloudflare’s edge, normalize URLs for traffic to the origin.
+				219 switch Description: Normalize URLs to origin, Value: 0, ID: base-ui-:r6v:
+			176 content list
+				177 link Description: Support, Value: support.cloudflare.com/
+				178 link Description: System Status, Value: cloudflarestatus.com/
+				179 link Description: Careers, Value: cloudflare.com/careers/
+				180 link Description: Terms of Use, Value: cloudflare.com/website-terms/
+				181 link Description: Report Security Issues, Value: cloudflare.com/disclosure/
+				182 link Description: Privacy Policy, Value: cloudflare.com/privacypolicy/
+				183 button A blue and white pill with a checkmark and an x, representing privacy choices Cookie Preferences, ID: ot-sdk-btn
+					184 image A blue and white pill with a checkmark and an x, representing privacy choices
+					185 text Cookie Preferences
+				186 container
+					187 text ©  2026  Cloudflare, Inc.
+		188 container Notifications
+
+The focused UI element is 201 container skipTarget

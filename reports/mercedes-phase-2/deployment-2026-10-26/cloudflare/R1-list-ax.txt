@@ -1,0 +1,194 @@
+Browser tab: 4, Title: "Rules | Redirect Rules | digitecme.com | Mebms2000@gmail.com's Account | Cloudflare", URL: "https://dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/rules/redirect-rules".
+1 AXWebArea Rules | Redirect Rules | digitecme.com | Mebms2000@gmail.com's Account | Cloudflare, URL: dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/rules/redirect-rules
+	2 container
+		3 container react-app
+			4 container
+				5 link Description: Cloudflare home, Value: dash.cloudflare.com/
+				6 pop up button (collapsed) Description: Switch Account, ID: base-ui-:r43:, Secondary Actions: Expand
+					7 text Mebms2000@gmail.com's Account
+					8 image
+				9 container
+					10 button Quick search...
+						11 image
+						12 text Quick search...
+						13 container
+							14 text Ctrl  K
+					15 link Description: Back to Domains, Value: dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/domains/overview
+					16 content list
+						17 link Description: Overview, Value: dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/
+						18 button (collapsed) Description: Recents, Secondary Actions: Expand
+							19 text Recents
+							20 image
+						21 button (collapsed) AI Crawl Control, Secondary Actions: Expand
+							22 text AI Crawl Control
+							23 image
+						24 button (collapsed) Agent Readiness, Secondary Actions: Expand
+							25 text Agent Readiness
+							26 image
+						27 link Description: Analytics, Value: dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/analytics
+						28 button (collapsed) Observability New, Secondary Actions: Expand
+							132 image
+							30 text Observability
+							31 text New
+							32 image
+						33 button (collapsed) DNS, Secondary Actions: Expand
+							34 text DNS
+							35 image
+						36 button (collapsed) Email, Secondary Actions: Expand
+							37 text Email
+							38 image
+						39 button (collapsed) SSL/TLS, Secondary Actions: Expand
+							40 text SSL/TLS
+							41 image
+						42 button (collapsed) Security, Secondary Actions: Expand
+							43 text Security
+							44 image
+						45 link Description: Access, Value: dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/access
+						46 button (collapsed) Speed, Secondary Actions: Expand
+							47 text Speed
+							48 image
+						49 button (collapsed) Caching, Secondary Actions: Expand
+							50 text Caching
+							51 image
+						52 link Description: Workers Routes, Value: dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/workers
+						53 container
+							54 button (expanded) Rules, Secondary Actions: Collapse
+								55 text Rules
+								56 image
+							57 content list
+								58 link Description: Overview, Value: dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/rules/overview
+								59 link Description: Redirect Rules, Value: dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/rules/redirect-rules
+								60 link Description: Rule simulator Beta, Value: dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/rules/simulator
+								61 link Description: Snippets, Value: dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/rules/snippets
+								62 link Description: Cloud Connector Beta, Value: dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/rules/cloud-connector
+								63 link Description: Page Rules, Value: dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/rules/page-rules
+								64 link Description: Settings, Value: dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/rules/settings
+						65 link Description: Error Pages New, Value: dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/error-pages
+						66 link Description: Network, Value: dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/network
+						67 button (collapsed) Traffic, Secondary Actions: Expand
+							68 text Traffic
+							69 image
+					70 content list
+						71 button (collapsed) Manage account, Secondary Actions: Expand
+							72 text Manage account
+							73 image
+				74 button (expanded) Description: Collapse sidebar, ID: base-ui-:rh:, Secondary Actions: Collapse
+			75 container
+				76 checkbox Description: Star domain, Value: 0, ID: base-ui-:r4h:
+					77 image
+				78 container base-ui-:r4j:
+					79 text digitecme.com
+					80 text free
+					81 image
+				82 button Ask AI
+					83 image
+					84 text Ask AI
+				85 link Description: Support, Value: dash.cloudflare.com/?to=/:account/support
+				86 pop up button (collapsed) Description: User menu, ID: base-ui-:rl:, Secondary Actions: Expand
+					87 image
+			133 container skipTarget
+			88 container
+				89 heading Redirect Rules, Value: 1
+					90 text Redirect Rules
+				91 link Description: View docs  Opens in a new tab, Value: developers.cloudflare.com/rules/url-forwarding/
+				92 text Create rules to redirect visitors from a source URL to a target URL.
+			134 link Description: Back, Value: dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/rules/overview
+			135 heading Single Redirects, Value: 1
+				136 text Single Redirects
+			137 container
+				138 text Create static redirects or dynamic redirects with advanced features.
+				139 button About Single Redirects
+			140 container
+				141 text You have used  4 out of 10  available Redirect Rules.
+			142 button Create rule
+			143 container ToolbarSearchForm
+				144 container
+					145 text field (settable) cf-form-input13
+				146 button Search
+			147 image
+			148 table
+				149 row
+					150 cell
+						151 text Order
+					152 cell
+						153 text Name
+					154 cell
+						155 text Enabled
+					156 cell
+						157 text Menu
+				158 container
+					159 row
+						160 cell
+							161 button
+								162 image
+						163 cell
+							164 text 1
+						165 cell
+							166 button Mercedes oil change legacy URLs to existing service
+								167 text Mercedes oil change legacy URLs to existing service
+							168 text Hostname, Request Method, URI Path
+						169 cell
+							170 checkbox (settable, integer) 1
+						171 cell
+							172 pop up button (collapsed) Description: Settings, ID: cfMenuHandle1, Secondary Actions: Expand
+								173 image
+					174 row
+						175 cell
+							176 button
+								177 image
+						178 cell
+							179 text 2
+						180 cell
+							181 button Legacy Mercedes URLs to Mercedes brand service page
+								182 text Legacy Mercedes URLs to Mercedes brand service page
+							183 text URI Path
+						184 cell
+							185 checkbox (settable, integer) 1
+						186 cell
+							187 pop up button (collapsed) Description: Settings, ID: cfMenuHandle2, Secondary Actions: Expand
+								188 image
+					189 row
+						190 cell
+							191 button
+								192 image
+						193 cell
+							194 text 3
+						195 cell
+							196 button Mercedes Arabic oil legacy alias to existing service
+								197 text Mercedes Arabic oil legacy alias to existing service
+							198 text Hostname, Request Method, URI Path
+						199 cell
+							200 checkbox (settable, integer) 1
+						201 cell
+							202 pop up button (collapsed) Description: Settings, ID: cfMenuHandle3, Secondary Actions: Expand
+								203 image
+					204 row
+						205 cell
+							206 button
+								207 image
+						208 cell
+							209 text 4
+						210 cell
+							211 button www to primary domain
+								212 text www to primary domain
+							213 text Hostname
+						214 cell
+							215 checkbox (settable, integer) 1
+						216 cell
+							217 pop up button (collapsed) Description: Settings, ID: cfMenuHandle4, Secondary Actions: Expand
+								218 image
+			119 content list
+				120 link Description: Support, Value: support.cloudflare.com/
+				121 link Description: System Status, Value: cloudflarestatus.com/
+				122 link Description: Careers, Value: cloudflare.com/careers/
+				123 link Description: Terms of Use, Value: cloudflare.com/website-terms/
+				124 link Description: Report Security Issues, Value: cloudflare.com/disclosure/
+				125 link Description: Privacy Policy, Value: cloudflare.com/privacypolicy/
+				126 button A blue and white pill with a checkmark and an x, representing privacy choices Cookie Preferences, ID: ot-sdk-btn
+					127 image A blue and white pill with a checkmark and an x, representing privacy choices
+					128 text Cookie Preferences
+				129 container
+					130 text ©  2026  Cloudflare, Inc.
+		131 container Notifications
+
+The focused UI element is 133 container skipTarget

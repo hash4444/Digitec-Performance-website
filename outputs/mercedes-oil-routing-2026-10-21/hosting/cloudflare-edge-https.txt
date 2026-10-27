@@ -1,0 +1,1104 @@
+- complementary:
+  - link "Cloudflare home":
+    - /url: /
+  - button "Switch Account":
+    - generic "Mebms2000@gmail.com's Account"
+  - navigation:
+    - button:
+      - generic: Quick search...
+      - generic: Ctrl K
+    - list:
+      - link:
+        - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/home
+        - generic: Account home
+      - button:
+        - generic: Recents
+      - list:
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/ssl-tls/edge-certificates
+          - generic: Edge Certificates
+          - generic: digitecme.com
+          - generic: /
+          - generic: SSL/TLS
+        - button:
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/rules/page-rules
+          - generic: Page Rules
+          - generic: digitecme.com
+          - generic: /
+          - generic: Rules
+        - button:
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/rules/overview
+          - generic: Overview
+          - generic: digitecme.com
+          - generic: /
+          - generic: Rules
+        - button:
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/rules/redirect-rules
+          - generic: Redirect Rules
+          - generic: digitecme.com
+          - generic: /
+          - generic: Rules
+        - button:
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/workers
+          - generic: Workers Routes
+          - generic: digitecme.com
+        - button:
+      - button:
+        - generic: Domains
+      - list:
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/domains/overview
+          - generic: Overview
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/domains/registrations
+          - generic: Registrations
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/domains/transfers
+          - generic: Transfers
+      - button:
+        - generic: Observability
+        - generic: New
+      - list:
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/observability/logs
+          - generic: Logs
+        - button:
+          - generic: Export
+        - list:
+          - link:
+            - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/logs
+            - generic: Logpush
+        - button:
+          - generic: Alerts
+        - list:
+          - link:
+            - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/notifications
+            - generic: Overview
+          - link:
+            - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/notifications/destinations
+            - generic: Destinations
+          - link:
+            - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/notifications/silences
+            - generic: Silences
+    - generic: Build
+    - list:
+      - button:
+        - generic: Compute
+      - list:
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/workers-and-pages
+          - generic: Workers & Pages
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/observability
+          - generic: Observability
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/workers-for-platforms
+          - generic: Workers for Platforms
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/workers/containers
+          - generic: Containers
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/workers/durable-objects
+          - generic: Durable Objects
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/workers/queues
+          - generic: Queues
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/workers/workflows
+          - generic: Workflows
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/workers/browser-run
+          - generic: Browser Run
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/workers/vpc
+          - generic: VPC
+          - generic: Beta
+        - button:
+          - generic: Email Service
+        - list:
+          - link:
+            - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/email-service/sending
+            - generic: Email Sending
+            - generic: Beta
+          - link:
+            - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/email-service/routing
+            - generic: Email Routing
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/workers/plans
+          - generic: Workers plans
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/flagship
+          - generic: Flagship
+          - generic: Beta
+      - button:
+        - generic: AI
+      - list:
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/ai/models
+          - generic: Models
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/ai/workers-ai
+          - generic: Workers AI
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/ai/ai-gateway
+          - generic: AI Gateway
+        - link:
+          - /url: https://dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/one/access-controls/ai-controls/mcp-server-portal
+          - generic: MCP Portals
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/ai/vectorize
+          - generic: Vectorize
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/ai/ai-search
+          - generic: AI Search
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/agents
+          - generic: Agent tracing
+      - button:
+        - generic: Storage & databases
+      - list:
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/r2/overview
+          - generic: R2 Object Storage
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/workers/hyperdrive
+          - generic: Postgres & MySQL (Hyperdrive)
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/workers/kv/namespaces
+          - generic: Workers KV
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/workers/d1
+          - generic: D1 SQLite Database
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/workers/analytics-engine
+          - generic: Analytics Engine
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/data-catalog
+          - generic: Basin Catalog
+        - button:
+          - generic: Basin Pipelines
+        - list:
+          - link:
+            - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/pipelines/overview
+            - generic: Pipelines
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/k2
+          - generic: K2 Streams
+          - generic: Beta
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/secrets-store
+          - generic: Secrets Store
+          - generic: New
+      - button:
+        - generic: Images & Stream
+      - list:
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/media/transformations
+          - generic: Transformations
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/images/hosted
+          - generic: Hosted images
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/stream/videos
+          - generic: Hosted videos
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/stream/inputs
+          - generic: Live inputs
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/stream/analytics
+          - generic: Stream analytics
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/media/plans
+          - generic: Plans
+      - button:
+        - generic: Realtime
+      - list:
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/realtime/kit
+          - generic: RealtimeKit
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/realtime/turn
+          - generic: TURN Server
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/realtime/sfu
+          - generic: Serverless SFU
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/realtime/moq
+          - generic: MoQ Relay
+          - generic: Beta
+    - generic: Protect & connect
+    - list:
+      - button:
+        - generic: Application security
+      - list:
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/application-security/waf
+          - generic: WAF
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/application-security/botbase
+          - generic: BotBase
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/security-center/inventory
+          - generic: Infrastructure
+      - button:
+        - generic: Zero Trust
+      - list:
+        - link:
+          - /url: https://dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/one/overview
+          - generic: Overview
+        - button:
+          - generic: Insights & Logs
+        - list:
+          - link:
+            - /url: https://dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/one/insights/overview
+            - generic: Overview
+          - link:
+            - /url: https://dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/one/insights/dashboards
+            - generic: Dashboards
+          - link:
+            - /url: https://dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/one/insights/dex
+            - generic: Digital experience
+          - link:
+            - /url: https://dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/one/insights/logs
+            - generic: Logs
+        - button:
+          - generic: Team & Resources
+        - list:
+          - link:
+            - /url: https://dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/one/team-resources/application-library
+            - generic: Application library
+          - link:
+            - /url: https://dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/one/team-resources/devices
+            - generic: Devices
+          - link:
+            - /url: https://dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/one/team-resources/users
+            - generic: Users
+        - button:
+          - generic: Access controls
+        - list:
+          - link:
+            - /url: https://dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/one/access-controls/overview
+            - generic: Overview
+          - link:
+            - /url: https://dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/one/access-controls/apps
+            - generic: Applications
+          - link:
+            - /url: https://dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/one/access-controls/policies
+            - generic: Policies
+          - link:
+            - /url: https://dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/one/access-controls/ai-controls
+            - generic: MCP Portals
+          - link:
+            - /url: https://dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/one/access-controls/targets
+            - generic: Targets
+          - link:
+            - /url: https://dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/one/access-controls/service-credentials
+            - generic: Service credentials
+          - link:
+            - /url: https://dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/one/access-controls/settings
+            - generic: Access settings
+        - button:
+          - generic: Traffic controls
+        - list:
+          - link:
+            - /url: https://dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/one/traffic-controls/overview
+            - generic: Overview
+          - link:
+            - /url: https://dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/one/traffic-controls/resolvers-proxies
+            - generic: Resolvers & Proxies
+          - link:
+            - /url: https://dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/one/traffic-controls/policies
+            - generic: Firewall policies
+          - link:
+            - /url: https://dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/one/traffic-controls/resolver-policies
+            - generic: Resolver policies
+            - generic: New
+          - link:
+            - /url: https://dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/one/traffic-controls/egress-policies
+            - generic: Egress policies
+          - link:
+            - /url: https://dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/one/traffic-controls/traffic-settings
+            - generic: Traffic settings
+        - button:
+          - generic: Data loss prevention
+        - list:
+          - link:
+            - /url: https://dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/one/dlp/overview
+            - generic: Overview
+          - link:
+            - /url: https://dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/one/dlp/profiles
+            - generic: Profiles
+          - link:
+            - /url: https://dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/one/dlp/data-classification
+            - generic: Data classification
+          - link:
+            - /url: https://dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/one/dlp/validators
+            - generic: Validators
+          - link:
+            - /url: https://dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/one/dlp/test-scan
+            - generic: Test scan
+          - link:
+            - /url: https://dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/one/dlp/settings
+            - generic: DLP settings
+        - button:
+          - generic: Cloud Workload Security
+          - generic: Beta
+        - list:
+          - link:
+            - /url: https://dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/one/cloud-workload-security/deployments
+            - generic: Deployments
+          - link:
+            - /url: https://dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/one/cloud-workload-security/policy-sets
+            - generic: Policy sets
+          - link:
+            - /url: https://dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/one/cloud-workload-security/workloads
+            - generic: Workloads
+          - link:
+            - /url: https://dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/one/cloud-workload-security/policies
+            - generic: Policies
+          - button:
+            - generic: Policy reference
+          - list:
+            - link:
+              - /url: https://dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/one/cloud-workload-security/rego-metadata
+              - generic: Rego metadata
+            - link:
+              - /url: https://dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/one/cloud-workload-security/rego-modules
+              - generic: Rego modules
+            - link:
+              - /url: https://dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/one/cloud-workload-security/tenant-structures
+              - generic: Tenant structures
+          - button:
+            - generic: Traffic scope
+          - list:
+            - link:
+              - /url: https://dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/one/cloud-workload-security/credentials
+              - generic: Credentials
+            - link:
+              - /url: https://dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/one/cloud-workload-security/domain-acls
+              - generic: Domain ACLs
+        - button:
+          - generic: Cloud & SaaS findings
+        - list:
+          - link:
+            - /url: https://dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/one/cloud-saas-findings/overview
+            - generic: Overview
+          - link:
+            - /url: https://dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/one/cloud-saas-findings/posture
+            - generic: Posture Findings
+          - link:
+            - /url: https://dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/one/cloud-saas-findings/content
+            - generic: Content Findings
+          - link:
+            - /url: https://dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/one/cloud-saas-findings/findings-catalog
+            - generic: Finding types library
+            - generic: New
+        - button:
+          - generic: Email security
+        - list:
+          - link:
+            - /url: https://dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/one/email-security/overview
+            - generic: Overview
+          - link:
+            - /url: https://dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/one/email-security/monitoring
+            - generic: Monitoring
+          - link:
+            - /url: https://dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/one/email-security/submissions
+            - generic: Submissions
+          - link:
+            - /url: https://dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/one/email-security/investigation
+            - generic: Investigation
+          - link:
+            - /url: https://dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/one/email-security/policies
+            - generic: Policies & rules
+          - link:
+            - /url: https://dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/one/email-security/phishguard
+            - generic: PhishGuard
+          - link:
+            - /url: https://dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/one/email-security/settings
+            - generic: Email security settings
+        - button:
+          - generic: Browser isolation
+        - list:
+          - link:
+            - /url: https://dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/one/browser-isolation/overview
+            - generic: Overview
+          - link:
+            - /url: https://dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/one/browser-isolation/settings
+            - generic: Browser isolation settings
+        - button:
+          - generic: Reusable components
+        - list:
+          - link:
+            - /url: https://dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/one/reusable-components/lists
+            - generic: Lists
+          - link:
+            - /url: https://dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/one/reusable-components/tags
+            - generic: Tags
+          - link:
+            - /url: https://dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/one/reusable-components/posture-checks
+            - generic: Posture checks
+          - link:
+            - /url: https://dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/one/reusable-components/custom-pages
+            - generic: Custom pages
+        - button:
+          - generic: Integrations
+        - list:
+          - link:
+            - /url: https://dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/one/integrations/cloud-and-saas
+            - generic: Cloud & SaaS
+          - link:
+            - /url: https://dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/one/integrations/identity-providers
+            - generic: Identity providers
+          - link:
+            - /url: https://dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/one/integrations/service-providers
+            - generic: Service providers
+          - link:
+            - /url: https://dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/one/integrations/webhooks
+            - generic: Webhooks
+        - link:
+          - /url: https://dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/one/settings
+          - generic: Settings
+      - button:
+        - generic: Networking
+      - list:
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/magic-networks/overview
+          - generic: Overview
+          - generic: New
+        - button:
+          - generic: Insights
+        - list:
+          - link:
+            - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/networking-insights/analytics/network-analytics/flow-analytics
+            - generic: Network flow
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/tunnels
+          - generic: Tunnels
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/mesh
+          - generic: Mesh
+          - generic: Beta
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/magic-networks/routes
+          - generic: Routes
+          - generic: New
+        - button:
+          - generic: IP addresses
+        - list:
+          - link:
+            - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/ip-addresses/address-space
+            - generic: Address space
+          - link:
+            - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/ip-addresses/proxy-ips
+            - generic: Address maps
+      - button:
+        - generic: Threats & defense
+      - list:
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/threats-defense
+          - generic: Overview
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/threat-intelligence
+          - generic: Threat intelligence
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/threat-intelligence/investigate
+          - generic: Investigate
+      - button:
+        - generic: Monetize
+        - generic: New
+      - list:
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/monetize/monetization-gateway
+          - generic: Monetization Gateway
+          - generic: Beta
+      - button:
+        - generic: Delivery & performance
+      - list:
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/tag-management/zaraz
+          - generic: Web tag management
+    - list:
+      - button:
+        - generic: Manage account
+      - list:
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/members
+          - generic: Members
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/billing
+          - generic: Billing
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/oauth-clients
+          - generic: OAuth clients
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/audit-log
+          - generic: Audit logs
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/blocked-content
+          - generic: Blocked content
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/carbon
+          - generic: Carbon Impact Report
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/configurations
+          - generic: Configurations
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/tags
+          - generic: Tagged Resources
+          - generic: Beta
+    - button "Quick search...":
+      - generic: Quick search...
+      - generic: Ctrl K
+    - link "Back to Domains":
+      - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/domains/overview
+      - generic: Back to Domains
+    - list:
+      - link "Overview":
+        - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/
+        - generic: Overview
+      - button "Recents":
+        - generic: Recents
+      - list:
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/ssl-tls/edge-certificates
+          - generic: Edge Certificates
+          - generic: digitecme.com
+          - generic: /
+          - generic: SSL/TLS
+        - button:
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/rules/page-rules
+          - generic: Page Rules
+          - generic: digitecme.com
+          - generic: /
+          - generic: Rules
+        - button:
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/rules/overview
+          - generic: Overview
+          - generic: digitecme.com
+          - generic: /
+          - generic: Rules
+        - button:
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/rules/redirect-rules
+          - generic: Redirect Rules
+          - generic: digitecme.com
+          - generic: /
+          - generic: Rules
+        - button:
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/workers
+          - generic: Workers Routes
+          - generic: digitecme.com
+        - button:
+      - button "AI Crawl Control":
+        - generic: AI Crawl Control
+      - list:
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/ai/overview
+          - generic: Overview
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/ai/metrics
+          - generic: Metrics
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/ai/security
+          - generic: Security
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/ai/optimization
+          - generic: Optimization
+          - generic: New
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/ai/signals
+          - generic: Signals
+      - button "Agent Readiness":
+        - generic: Agent Readiness
+      - list:
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/agent-readiness/overview
+          - generic: Overview
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/agent-readiness/diagnostics
+          - generic: Diagnostics
+          - generic: Beta
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/agent-readiness/ai-playground
+          - generic: AI Playground
+          - generic: Beta
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/agent-readiness/webmcp
+          - generic: WebMCP
+          - generic: Beta
+      - link "Analytics":
+        - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/analytics
+        - generic: Analytics
+      - button "Observability New":
+        - generic: Observability
+        - generic: New
+      - list:
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/observability/logs
+          - generic: Logs
+        - button:
+          - generic: Export
+        - list:
+          - link:
+            - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/analytics/logs
+            - generic: Logpush
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/dashboards
+          - generic: Dashboards
+          - generic: New
+      - button "DNS":
+        - generic: DNS
+      - list:
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/dns/records
+          - generic: Records
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/dns/analytics
+          - generic: Analytics
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/dns/settings
+          - generic: Settings
+      - button "Email":
+        - generic: Email
+      - list:
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/email-service/sending/zone-navigation/95c4f7102c59f7644448c75832707c26
+          - generic: Email Sending
+          - generic: Beta
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/email-service/routing/zone-navigation/95c4f7102c59f7644448c75832707c26
+          - generic: Email Routing
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/email/dmarc-management
+          - generic: DMARC Management
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/email/security
+          - generic: Email Security
+      - button "SSL/TLS" [expanded]:
+        - generic: SSL/TLS
+      - region:
+        - list:
+          - link "Overview":
+            - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/ssl-tls
+            - generic: Overview
+          - link "Edge Certificates":
+            - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/ssl-tls/edge-certificates
+            - generic: Edge Certificates
+          - link "Client Certificates":
+            - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/ssl-tls/client-certificates
+            - generic: Client Certificates
+          - link "Origin Server":
+            - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/ssl-tls/origin
+            - generic: Origin Server
+          - link "Custom Hostnames":
+            - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/ssl-tls/custom-hostnames
+            - generic: Custom Hostnames
+      - button "Security":
+        - generic: Security
+      - list:
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/security/overview
+          - generic: Overview
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/security/analytics
+          - generic: Analytics
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/security/account-abuse-protection
+          - generic: Account Abuse Protection
+          - generic: Beta
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/security/web-assets
+          - generic: Web assets
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/security/security-rules
+          - generic: Security rules
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/security/settings
+          - generic: Settings
+      - link "Access":
+        - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/access
+        - generic: Access
+      - button "Speed":
+        - generic: Speed
+      - list:
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/speed
+          - generic: Observatory
+          - generic: Beta
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/speed/origin-analytics
+          - generic: Origin Analytics
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/speed/test
+          - generic: Synthetic monitoring
+          - generic: Beta
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/speed/optimization
+          - generic: Settings
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/speed/smart-shield
+          - generic: Smart Shield
+      - button "Caching":
+        - generic: Caching
+      - list:
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/caching
+          - generic: Overview
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/caching/configuration
+          - generic: Configuration
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/caching/cache-rules
+          - generic: Cache Rules
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/caching/tiered-cache
+          - generic: Tiered Cache
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/caching/cache-reserve
+          - generic: Cache Reserve
+      - link "Workers Routes":
+        - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/workers
+        - generic: Workers Routes
+      - button "Rules":
+        - generic: Rules
+      - list:
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/rules/overview
+          - generic: Overview
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/rules/redirect-rules
+          - generic: Redirect Rules
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/rules/simulator
+          - generic: Rule simulator
+          - generic: Beta
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/rules/snippets
+          - generic: Snippets
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/rules/cloud-connector
+          - generic: Cloud Connector
+          - generic: Beta
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/rules/page-rules
+          - generic: Page Rules
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/rules/settings
+          - generic: Settings
+      - link "Error Pages New":
+        - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/error-pages
+        - generic: Error Pages
+        - generic: New
+      - link "Network":
+        - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/network
+        - generic: Network
+      - button "Traffic":
+        - generic: Traffic
+      - list:
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/traffic
+          - generic: Argo Smart Routing
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/traffic/load-balancing
+          - generic: Load Balancing
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/traffic/load-balancing-analytics
+          - generic: Load Balancing Analytics
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/traffic/health-checks
+          - generic: Health Checks
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/traffic/waiting-rooms
+          - generic: Waiting Room
+    - list:
+      - button "Manage account":
+        - generic: Manage account
+      - list:
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/members
+          - generic: Members
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/billing
+          - generic: Billing
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/audit-log
+          - generic: Audit logs
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/notifications
+          - generic: Alerts
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/blocked-content
+          - generic: Blocked content
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/carbon
+          - generic: Carbon Impact Report
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/configurations
+          - generic: Configurations
+        - link:
+          - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/tags
+          - generic: Tagged Resources
+          - generic: Beta
+  - button "Collapse sidebar" [expanded]:
+- banner:
+  - button "Star domain":
+  - paragraph: digitecme.com
+  - button "free":
+    - generic: free
+  - button "Ask AI":
+    - generic: Ask AI
+  - link "Support":
+    - /url: /?to=/:account/support
+    - generic: Support
+  - button "User menu":
+- banner:
+  - heading "Edge Certificates" [level=1]
+  - link "View docs":
+    - /url: https://developers.cloudflare.com/ssl/edge-certificates/
+    - generic: View docs
+  - paragraph:
+    - generic: Customize your edge certificates, which encrypt traffic between your visitors and Cloudflare.
+- heading "Manage Edge Certificates" [level=1]
+- text: "Your plan includes:"
+- list:
+  - listitem: A shared Cloudflare universal SSL certificate and a corresponding backup certificate
+- text: "Additional certificate customization options:"
+- list:
+  - link "Activate Advanced Certificate Manager (ACM)":
+    - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/ssl-tls/acm
+  - text: to order auto-renewing, wildcard or dedicated certificates with customizable hostnames
+  - generic: Upgrade to the Business plan
+  - text: to upload a custom certificate
+- button "Order an advanced certificate" [disabled]:
+  - generic: Order an advanced certificate
+- button "Upload a custom certificate" [disabled]:
+  - generic: Upload a custom certificate
+- table:
+  - row "Hosts Type Status Expires on Tags":
+    - columnheader "Hosts"
+    - columnheader "Type"
+    - columnheader "Status"
+    - columnheader "Expires on"
+    - columnheader "Tags"
+  - button "*.digitecme.com, digitecme.com Universal Active 2026-12-09 (Managed) caret-right":
+    - cell "*.digitecme.com, digitecme.com"
+    - cell "Universal"
+    - cell "Active":
+      - generic: Active
+    - cell "2026-12-09 (Managed)":
+      - text: 2026-12-09
+      - generic: (Managed)
+    - cell
+    - cell "caret-right":
+      - img "caret-right"
+  - button "*.digitecme.com, digitecme.com Backup Backup Issued 2026-11-27 (Managed) caret-right":
+    - cell "*.digitecme.com, digitecme.com"
+    - cell "Backup"
+    - cell "Backup Issued":
+      - generic: Backup Issued
+    - cell "2026-11-27 (Managed)":
+      - text: 2026-11-27
+      - generic: (Managed)
+    - cell
+    - cell "caret-right":
+      - img "caret-right"
+- button "Edge Certificates API":
+  - text: API
+  - img "caret-right"
+- button "Edge Certificates Help":
+  - text: Help
+  - img "caret-right"
+- region "Edge Certificates API"
+- region "Edge Certificates Help"
+- heading "Advanced Certificate Manager (ACM)" [level=1]:
+  - generic: Advanced Certificate Manager (ACM)
+- text: Get more control and flexibility over your certificates and unlock TLS settings.
+- list:
+  - listitem: Issue auto-renewing, wildcard and dedicated certificates
+  - listitem: Customize hostnames on certificates
+  - listitem: Cover more than one level of a subdomain (e.g. dev.www.example.com)
+  - listitem: Specify cipher suites to enhance security and meet industry standards
+  - listitem: Define your preferred certificate authority (CA) and validity period
+- link "Activate":
+  - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/ssl-tls/acm
+  - generic: Activate
+- heading "Total TLS" [level=1]:
+  - generic: Total TLS
+- generic: Cloudflare will issue individual certificates for every proxied hostname. Once enabled, all hostnames in your domain will be covered by a TLS certificate.
+- link "Activate Advanced Certificate Manager (ACM)":
+  - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/ssl-tls/acm
+- text: to enable Total TLS
+- button:
+  - combobox "Select a Certificate Authority" [disabled]:
+    - generic: Select a Certificate Authority
+  - textbox [disabled]
+- button "Total TLS":
+  - switch "Total TLS" [disabled]
+  - checkbox [disabled]
+- button "Total TLS API":
+  - text: API
+  - img "caret-right"
+- region "Total TLS API"
+- heading "Cipher suites" [level=1]
+- paragraph:
+  - text: Customize the
+  - link "cipher suites":
+    - /url: https://developers.cloudflare.com/ssl/edge-certificates/additional-options/cipher-suites/
+    - generic: cipher suites
+  - text: used in the SSL/TLS handshake that establishes a secure connection between clients and the Cloudflare network.
+- paragraph:
+  - link "Activate Advanced Certificate Manager (ACM)":
+    - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/ssl-tls/acm
+  - text: to configure Cipher Suites.
+- button "Configure Cipher suites":
+  - button "Configure Cipher suites" [disabled]:
+    - generic: Configure
+- button "ciphers API":
+  - text: API
+  - img "caret-right"
+- button "ciphers Help":
+  - text: Help
+  - img "caret-right"
+- region "ciphers API"
+- region "ciphers Help"
+- heading "Always Use HTTPS" [level=1]:
+  - generic: Always Use HTTPS
+- paragraph: Redirect all requests with scheme “http” to “https”. This applies to all http requests to the zone.
+- paragraph:
+  - text: Enabling this while your origin also forces HTTPS redirects can cause
+  - link "redirect loops":
+    - /url: https://developers.cloudflare.com/ssl/troubleshooting/too-many-redirects/
+  - text: . Disable origin-side HTTP-to-HTTPS redirects to avoid ERR_TOO_MANY_REDIRECTS.
+  - link "Learn more":
+    - /url: https://developers.cloudflare.com/ssl/edge-certificates/additional-options/always-use-https/
+- generic: This setting was last changed 6 months ago
+- switch "Always Use HTTPS" [checked]
+- checkbox [checked]
+- button "Always Use HTTPS API":
+  - text: API
+  - img "caret-right"
+- button "Always Use HTTPS Help":
+  - text: Help
+  - img "caret-right"
+- region "Always Use HTTPS API"
+- region "Always Use HTTPS Help"
+- heading "HTTP Strict Transport Security (HSTS)" [level=1]:
+  - generic: HTTP Strict Transport Security (HSTS)
+- generic: Enforce web security policy for your website.
+- button "HTTP Strict Transport Security (HSTS)":
+  - generic: Enable HSTS
+- button "HTTP Strict Transport Security (HSTS) API":
+  - text: API
+  - img "caret-right"
+- button "HTTP Strict Transport Security (HSTS) Help":
+  - text: Help
+  - img "caret-right"
+- region "HTTP Strict Transport Security (HSTS) API"
+- region "HTTP Strict Transport Security (HSTS) Help"
+- heading "Minimum TLS Version" [level=1]:
+  - generic: Minimum TLS Version
+- paragraph: Only allow HTTPS connections from visitors that support the selected TLS protocol version or newer.
+- button "TLS 1.0 (default) Minimum TLS Version": TLS 1.0 (default)
+- button "Minimum TLS Version API":
+  - text: API
+  - img "caret-right"
+- button "Minimum TLS Version Help":
+  - text: Help
+  - img "caret-right"
+- region "Minimum TLS Version API"
+- region "Minimum TLS Version Help"
+- heading "Opportunistic Encryption" [level=1]:
+  - generic: Opportunistic Encryption
+- paragraph: Opportunistic Encryption allows browsers to benefit from the improved performance of HTTP/2 by letting them know that your site is available over an encrypted connection. Browsers will continue to show “http” in the address bar, not “https”.
+- text: Create a
+- link "Configuration Rule":
+  - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/rules/configuration-rules
+- text: to customize these settings by hostname.
+- switch "Opportunistic Encryption" [checked]
+- checkbox [checked]
+- button "Opportunistic Encryption API":
+  - text: API
+  - img "caret-right"
+- button "Opportunistic Encryption Help":
+  - text: Help
+  - img "caret-right"
+- region "Opportunistic Encryption API"
+- region "Opportunistic Encryption Help"
+- heading "TLS 1.3" [level=1]:
+  - generic: TLS 1.3
+- paragraph: Enable the latest version of the TLS protocol for improved security and performance.
+- switch "TLS 1.3" [checked]
+- checkbox [checked]
+- button "TLS 1.3 API":
+  - text: API
+  - img "caret-right"
+- button "TLS 1.3 Help":
+  - text: Help
+  - img "caret-right"
+- region "TLS 1.3 API"
+- region "TLS 1.3 Help"
+- heading "Automatic HTTPS Rewrites" [level=1]:
+  - generic: Automatic HTTPS Rewrites
+- paragraph: Automatic HTTPS Rewrites helps fix mixed content by changing “http” to “https” for all resources or links on your web site that can be served with HTTPS.
+- text: Create a
+- link "Configuration Rule":
+  - /url: /ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/rules/configuration-rules
+- text: to customize these settings by hostname.
+- switch "Automatic HTTPS Rewrites" [checked]
+- checkbox [checked]
+- button "Automatic HTTPS Rewrites API":
+  - text: API
+  - img "caret-right"
+- button "Automatic HTTPS Rewrites Help":
+  - text: Help
+  - img "caret-right"
+- region "Automatic HTTPS Rewrites API"
+- region "Automatic HTTPS Rewrites Help"
+- heading "Certificate Transparency Monitoring" [level=1]
+- text: Receive an email when a Certificate Authority issues a certificate for your domain.
+- switch "Certificate Transparency Monitoring"
+- checkbox
+- paragraph:
+  - text: Certificate Transparency Monitoring has changed. If you previously enabled CT Monitoring, any recipients listed below might be carried over from your previous settings (account members with the
+  - strong: SSL and Certificate Write
+  - text: permission). You can add or remove them at any time.
+- button "Certificate Transparency Monitoring Help":
+  - text: Help
+  - img "caret-right"
+- region "Certificate Transparency Monitoring Help"
+- heading "Disable Universal SSL" [level=1]
+- text: Disabling Universal SSL removes any currently active Universal SSL certificates for your zone from the edge and prevents any future Universal SSL certificates from being ordered. If there are no dedicated certificates or custom certificates uploaded for the domain, visitors will be unable to access the domain over HTTPS.
+- button "Disable Universal SSL":
+  - generic: Disable Universal SSL
+- button "Disable Universal SSL Help":
+  - text: Help
+  - img "caret-right"
+- region "Disable Universal SSL Help"
+- contentinfo:
+  - list:
+    - link "Support":
+      - /url: https://support.cloudflare.com
+    - link "System status":
+      - /url: https://www.cloudflarestatus.com
+    - link "Careers":
+      - /url: https://www.cloudflare.com/careers/
+    - link "Terms of Use":
+      - /url: https://www.cloudflare.com/website-terms/
+    - link "Report Security Issues":
+      - /url: https://www.cloudflare.com/disclosure/
+    - link "Privacy Policy":
+      - /url: https://www.cloudflare.com/privacypolicy/
+    - button "A blue and white pill with a checkmark and an x, representing privacy choices Cookie Preferences":
+      - img "A blue and white pill with a checkmark and an x, representing privacy choices"
+      - text: Cookie Preferences
+    - generic: © 2026 Cloudflare, Inc.
+- region "Notifications"
+- status

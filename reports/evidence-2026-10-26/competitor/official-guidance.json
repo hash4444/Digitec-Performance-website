@@ -1,0 +1,38 @@
+{
+  "retrieval_date": "2026-10-26",
+  "method": "Official Google pages read through web tool; source URLs below.",
+  "sources": [
+    {
+      "url": "https://support.google.com/business/answer/7091?hl=en",
+      "claims": "Local results depend mainly on relevance, distance and prominence; complete accurate business details and genuine reviews may help. No guaranteed rank."
+    },
+    {
+      "url": "https://support.google.com/business/answer/3038177?hl=en",
+      "claims": "Use accurate real-world name/address, few relevant categories and one profile per business. No unnecessary service/location keywords in business name."
+    },
+    {
+      "url": "https://support.google.com/business/answer/9455399?hl=en",
+      "claims": "Services editor availability depends on category; offerings may include factual descriptions/prices. Actual profile fields require inspection."
+    },
+    {
+      "url": "https://support.google.com/business/answer/3474122?hl=en",
+      "claims": "Request genuine reviews using official link/QR and reply helpfully; no incentives."
+    },
+    {
+      "url": "https://support.google.com/contributionpolicy/answer/7400114?hl=en",
+      "claims": "No fake engagement, incentives, review gating, positive-only requests, pressure or requests for specific review content."
+    },
+    {
+      "url": "https://developers.google.com/search/docs/appearance/structured-data/local-business",
+      "claims": "Accurate business fields and validation; markup alone does not guarantee display."
+    },
+    {
+      "url": "https://developers.google.com/search/docs/appearance/structured-data/review-snippet",
+      "claims": "Self-serving LocalBusiness/Organization reviews are ineligible for review snippets, including embedded third-party review widgets."
+    },
+    {
+      "url": "https://developers.google.com/search/updates",
+      "claims": "May 8 2026 changelog: FAQ rich result no longer appears starting May 7 2026; documentation removed June 15 2026."
+    }
+  ]
+}

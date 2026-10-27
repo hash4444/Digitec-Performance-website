@@ -1,0 +1,17 @@
+DIGI-TEC About video strip — QA, 20 October 2026
+
+Overall: PASS
+
+Production pipeline: 19 stages PASS, 1256 rendered routes and 1005 canonical sitemap URLs.
+CLI: 12 checks PASS: generated preflight; full production build; application and Node TypeScript; ESLint (0 errors, 11 existing warnings); master SEO; BMW hub; paint-care; tuning; route responses; brand booking form; About/site preservation.
+Static: 10098 assertions PASS. About EN/AR title, description, H1, canonical, hreflang, robots and schema unchanged. Previous visible About markup identical after removing exactly one new video section. All 1254 non-About routes retain metadata/schema/visible markup. Zero new routes. About source changes are only one import and component insertion.
+
+Browser: 6 EN/AR layouts at 1440/390/320px PASS; eight unique films (16 loop cards with decorative clone group excluded from tab order), >=44px controls, no page overflow, no offscreen initial video downloads, only visible muted previews loaded and decoded. Both locale interaction groups PASS: automatic progress and loop seam, pause/resume, hover/focus suspension, keyboard/button navigation, offscreen suspension/resume, native modal controls, sound available, Escape close and focus restoration.
+All 8 H.264/AAC films actually played and seeked in native Edge video controls; correct MP4 MIME and Range206 verified for all eight. Both locale touch swipes/tap players, reduced-motion initial/live preference/user opt-in, no-JavaScript native video links and SPA/back/forward/player unmount passed.
+Runtime errors: 0. Failed local responses: 0. Write requests: 0. External traffic blocked by preview CSP and browser request interception.
+
+Preservation: all 8 prior pending Mercedes/backend/master-validation hashes, branch/HEAD and empty staging unchanged. All 603 build inputs and 25 exact overlay files retained tested hashes after browsers. Fingerprint: bd6e54dfc7daa043b71f34e248b44ac2b533b6a78946ddb2e975994e14c5f6cf.
+
+No commit, push, deployment, external-account edits or customer enquiries. Local MIME/range adapter does not independently prove production-host media behavior. Root leaves only its separate user preview active on port5188; QA preview5214 exits after suite.
+
+Test-only attempts retained: initial sandbox blocked loopback; rerun approved local runtime with loopback GET/HEAD only. Static harness normalized CRLF before removing exact additions and matched React boolean data attributes. Initial click action waited for moving-card stability before hovering; final harness moves mouse onto the strip first, matching real interaction. No product changes arose from these harness fixes.

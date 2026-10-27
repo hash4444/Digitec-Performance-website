@@ -1,0 +1,38 @@
+{
+  "passed": true,
+  "required_files": [
+    {
+      "path": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-seo-audit-2026-10-26.md",
+      "bytes": 39021,
+      "sha256": "f755eaf929f405d52d18d9a66ccb922d4139c57b53452b88ae9d3e4955f2b71c"
+    },
+    {
+      "path": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-keyword-map-2026-10-26.csv",
+      "bytes": 48260,
+      "sha256": "46ae3be97bb98fcadbb3353c692b19e4242ea4af8f0947f94667e872ead3b95d"
+    },
+    {
+      "path": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-competitor-gap-2026-10-26.md",
+      "bytes": 16945,
+      "sha256": "e4d97ecd634c83c01ad1afd1f74ce784c68bfa301499d630eadeeadef3ac22aa"
+    },
+    {
+      "path": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-90-day-roadmap-2026-10-26.md",
+      "bytes": 10331,
+      "sha256": "9366bd2449debd32a1657348ce25d21844b378329269dfb4d40cd8e643ac722a"
+    },
+    {
+      "path": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-implementation-backlog-2026-10-26.md",
+      "bytes": 16978,
+      "sha256": "c5c36afea69b58e999899642f81a518d4976228c185743a197bba95e48c3205d"
+    }
+  ],
+  "local_markdown_links_resolve": true,
+  "keyword_rows": 71,
+  "distinct_owners": 51,
+  "peer_reviews": {
+    "gsc": "All seven figures and all 54 populated map metric rows independently matched original workbook; context clarification applied.",
+    "technical": "Crawl counts and protected oil behavior verified; source and scope corrections applied.",
+    "competitor_local": "No material contradictions; fresh versus indexed citation distinction applied."
+  }
+}

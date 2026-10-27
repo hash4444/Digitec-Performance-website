@@ -1,0 +1,24 @@
+Browser tab: 1, Title: "Performance on Search results", URL: "https://search.google.com/u/0/search-console/performance/search-analytics?utm_source=gws&utm_medium=onebox&utm_campaign=san&resource_id=sc-domain%3Adigitecme.com&num_of_days=28&query=!mercedes%20service%20dubai&breakdown=page&metrics=CLICKS%2CIMPRESSIONS%2CCTR%2CPOSITION".
+1 AXWebArea Performance on Search results, URL: search.google.com/u/0/search-console/performance/search-analytics?utm_source=gws&utm_medium=onebox&utm_campaign=san&resource_id=sc-domain%3Adigitecme.com&num_of_days=28&query=!mercedes%20service%20dubai&breakdown=page&metrics=CLICKS%2CIMPRESSIONS%2CCTR%2CPOSITION
+	2 container
+		3 container
+			4 container Query
+				5 heading Query, Value: 2, ID: c3
+					6 text Query
+				7 container
+					8 tab group
+						9 tab (selected, settable, boolean) Filter, Value: 1, ID: yOOK0
+						10 tab (selectable, settable, boolean) Compare, Value: 0, ID: bKkSne
+					11 container Filter
+						12 combo box (collapsed) Description: String matching options drop-down menu, Value: Exact query, Secondary Actions: Expand
+							13 text Exact query
+						14 container
+							15 text Keyword
+							16 text field (settable) Keyword, Value: mercedes service dubai, ID: c0
+				17 container
+					18 button Cancel
+						19 text Cancel
+					20 button Apply
+						21 text Apply
+
+The focused UI element is 16 text field (settable) Keyword, Value: mercedes service dubai, ID: c0

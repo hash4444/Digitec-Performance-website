@@ -1,0 +1,20 @@
+ABOVE-THE-FOLD PRIMARY CTA REVIEW — FINAL PASS
+Final run: 20 October 2026, approximately 09:45 Dubai time.
+Built candidate fingerprint: 7d3d58e24c826757c32c28cec6c1cf03f74251d8d76af1fed0a03b48d0cc18d2.
+Campaign data SHA256: 98012343a3f8450ba6a34bb094425beaa4049932d534d9115d0b373ded32c8dd.
+
+All six initial-scroll-zero viewport cases PASS. The hero WhatsApp CTA is fully inside the viewport, below the fixed header, above the fixed mobile contact bar and unobscured at three points inside its horizontal centre. Exact rectangles and viewport screenshots are in above-fold-results.json and the six adjacent PNGs.
+
+Locale / viewport / primary CTA top–bottom / fixed bar top
+EN 390x844: 586.22–634.22px /771px.
+EN 320x844: 693.33–741.33px /753px, 11.67px clear space.
+EN 1440x900: 609.09–657.09px /no mobile bar.
+AR 390x844: 554.22–602.22px /771px.
+AR 320x844: 661.33–709.33px /771px.
+AR 1440x900: 538.55–586.55px /no mobile bar.
+
+Visually reviewed final EN320 and AR390 viewport images. Primary labels are readable and fully visible. No contact clicks, calls, draft opens, form submissions or customer enquiries occurred. Every external request was blocked; only loopback GET/HEAD allowed. Zero runtime errors and zero write requests. Temporary preview on port5214 closed in finally.
+
+Initial evidence is retained in before-fix/: five cases passed and EN320 had20.33px hidden by the fixed bar. Parent shortened only the English hero intro; this resolved the measured issue while full vehicle/scope/approval caveats remain elsewhere. The first harness's corner hit-testing was corrected to use three interior points because rounded button corners are deliberately outside the painted/hit area. This was a test correction, not a product change. The authentic initial geometry failure remains recorded separately.
+
+Source/content review independently rechecked all six final source hashes after the viewport run; they match content/INDEPENDENT-CONTENT-REVIEW.json. These measurements do not establish field Core Web Vitals, ranking improvements, actual WhatsApp receipt or confirmed bookings.

@@ -1,0 +1,89 @@
+Repair-service sprint validation plan - 19 October 2026
+
+Scope: ten improved existing repair owners plus the preserved Lamborghini
+diagnostics owner, each in English and Arabic; no app source changes are made
+by these QA scripts. Routes are listed in repair-routes.mjs.
+
+Required parent sequence:
+1. Capture current uncommitted file bytes and generated report artifacts.
+2. Implement justified repair owner changes and narrow hub integration.
+3. Run complete npm run build (see exact built-in inventory below).
+4. Run lint and both TypeScript project checks.
+5. Run validate-master-seo, validate-bmw-hub, validate-paint-care-cluster and
+   validate-tuning; archive their generated output and restore pre-sprint
+   unrelated report bytes before final change isolation.
+6. Run focused browser using the same execution boundary for preview and Edge:
+   node outputs/repair-service-2026-10-19/qa/run-local-browser-tests.mjs
+   No browser tests should run against an in-progress or stale build.
+7. Re-run existing five-brand browser and master SEO browser as regression
+   suites against the final build; preserve/rehome their earlier artifacts.
+8. Compare source/generated file hashes to the start of this sprint, allowing
+   only explicit repair changes and narrow hub integration; confirm PPF,
+   tuning and backend bytes remain identical.
+
+Focused static command after unrelated generated output restoration:
+node outputs/repair-service-2026-10-19/qa/validate-repair-static.mjs
+Writes repair-static-validation.json, before-after-seo.csv (22 locale rows),
+and internal-link-and-schema.json under this qa directory. Verifies the 20
+selected panels and their context, all 22 owner metadata/schema sets, 40 direct
+panel destinations, raw shared business graph, and exact protected SSR HTML /
+serialized SEO objects on the 10 hub locales plus 2 preserved diagnostics
+locales. Source hash checks permit only BrandServicePage.tsx plus the 3 new
+repair-specific modules; the other 574 baseline source files are protected.
+
+Complete build inventory from package.json:
+vite build --ssr src/entry-server.tsx --outDir dist-server
+node scripts/sync-routing-paths.mjs
+vite build
+vite build --ssr src/entry-server.tsx --outDir dist-server
+node scripts/prerender.mjs
+node scripts/generate-hosting-rules.mjs
+node scripts/test-hosting-rules.mjs
+node scripts/test-production-seo-router.mjs
+node scripts/validate-seo.mjs
+node scripts/validate-ppf.mjs
+node scripts/validate-paint-correction.mjs
+node scripts/validate-protection-release.mjs
+node scripts/validate-query-release.mjs
+node scripts/test-contact-attribution.mjs
+node scripts/test-ppf-enquiry.mjs
+node scripts/validate-oil-change.mjs
+node scripts/validate-suspension.mjs
+node scripts/validate-transmission.mjs
+node scripts/validate-social-metadata.mjs
+
+Additional existing validation commands:
+node node_modules/eslint/bin/eslint.js .
+node node_modules/typescript/bin/tsc --noEmit -p tsconfig.app.json
+node node_modules/typescript/bin/tsc --noEmit -p tsconfig.node.json
+node scripts/validate-master-seo.mjs
+node scripts/validate-bmw-hub.mjs
+node scripts/validate-paint-care-cluster.mjs
+node scripts/validate-tuning.mjs
+node scripts/test-routing-response.mjs (writes outputs/b0-a; archive/restore)
+
+Focused browser coverage:
+- 66 hydrated cases: 22 routes x desktop 1440, mobile 390, narrow 320 px.
+- HTTP 200, exactly one H1/canonical/description, index eligibility,
+  reciprocal EN/AR hreflang, Arabic RTL, descriptive titles, visible assets.
+- One Service linked to https://digitecme.com/#business; one breadcrumb and
+  FAQ graph; unique entity IDs; FAQ schema text matches crawlable body.
+- Repair process text, localized brand hub links, 22 hub-to-repair links.
+- FAQ click open and keyboard close, labelled answer, no horizontal overflow.
+- Hero WhatsApp/telephone and final quote/booking anchors safely activated;
+  WhatsApp draft and consistent phone; interest events, no generate_lead.
+- 22 no-JavaScript cases with main content, repair process, FAQ answers,
+  canonical/schema and contact anchors retained in raw prerendered HTML.
+- No runtime/hydration errors, failed local assets or attempted backend writes.
+
+Safety and practical limits:
+Only dedicated 127.0.0.1:5196/:5197 origins are accepted. All external requests
+and non-GET/HEAD requests are blocked, external contact navigation prevented,
+window.open stubbed and service workers blocked. No form or message is sent.
+These checks do not prove live delivery, CRM attribution, confirmed enquiries,
+field Core Web Vitals, search rankings, or production deployment.
+
+Runtime dependencies:
+C:/Users/ADMIN/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node.exe
+C:/Users/ADMIN/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright
+Microsoft Edge channel: msedge; headless, local browser only.

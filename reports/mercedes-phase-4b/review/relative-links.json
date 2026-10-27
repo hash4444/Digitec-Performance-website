@@ -1,0 +1,81 @@
+{
+  "at": "2026-10-26T10:36:38.640Z",
+  "offlineOnly": true,
+  "files": [
+    {
+      "file": "reports/mercedes-phase-4b/review/release-packaging-options.md",
+      "links": [
+        {
+          "link": "../production/http/2026-10-26T10-20-06-242Z/capture.json",
+          "exists": true
+        },
+        {
+          "link": "../production/production-comparison-shared-deps-snapshot.json",
+          "exists": true
+        },
+        {
+          "link": "../production/production-comparison.json",
+          "exists": true
+        },
+        {
+          "link": "../sitemap/README.md",
+          "exists": true
+        },
+        {
+          "link": "../production/hosting-metadata-relayed.json",
+          "exists": true
+        },
+        {
+          "link": "../../../docs/seo/mercedes-release-deployment.md",
+          "exists": true
+        },
+        {
+          "link": "../production/redirects-http/post-2026-10-26T10-22-00-253Z/capture.json",
+          "exists": true
+        },
+        {
+          "link": "packaging-readiness.json",
+          "exists": true
+        }
+      ]
+    },
+    {
+      "file": "reports/mercedes-phase-4b/production/README.md",
+      "links": [
+        {
+          "link": "http/2026-10-26T10-20-06-242Z/capture.json",
+          "exists": true
+        },
+        {
+          "link": "baseline-summary.json",
+          "exists": true
+        },
+        {
+          "link": "production-comparison-shared-deps-snapshot.json",
+          "exists": true
+        },
+        {
+          "link": "production-comparison.json",
+          "exists": true
+        },
+        {
+          "link": "../review/release-packaging-options.md",
+          "exists": true
+        },
+        {
+          "link": "redirects-http/post-2026-10-26T10-22-00-253Z/capture.json",
+          "exists": true
+        },
+        {
+          "link": "redirect-verifier-provenance.json",
+          "exists": true
+        },
+        {
+          "link": "../review/release-packaging-options.md",
+          "exists": true
+        }
+      ]
+    }
+  ],
+  "passed": true
+}

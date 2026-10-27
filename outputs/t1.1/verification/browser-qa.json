@@ -1,0 +1,128 @@
+{
+  "testedAt": "2026-10-05T07:40:46.121Z",
+  "tests": [
+    {
+      "documentOverflow": false,
+      "hasNumericPackageClaim": false,
+      "notice": true,
+      "stageButtonCount": 0,
+      "test": "desktop-s63",
+      "viewport": [
+        1366,
+        900
+      ]
+    },
+    {
+      "TCU": true,
+      "notice": true,
+      "prices": [
+        "€18,333 total"
+      ],
+      "selected": [
+        "",
+        "STAGE 3"
+      ],
+      "test": "desktop-db11-Stage 3",
+      "unverifiedTerm": false
+    },
+    {
+      "TCU": true,
+      "notice": true,
+      "prices": [
+        "€33,792 total"
+      ],
+      "selected": [
+        "",
+        "STAGE 4"
+      ],
+      "test": "desktop-db11-Stage 4",
+      "unverifiedTerm": false
+    },
+    {
+      "TCU": true,
+      "notice": true,
+      "prices": [
+        "€56,435 total"
+      ],
+      "selected": [
+        "",
+        "STAGE 5"
+      ],
+      "test": "desktop-db11-Stage 5",
+      "unverifiedTerm": false
+    },
+    {
+      "documentOverflow": false,
+      "note": "GAD lists €17,876 total in EUR for the seven-speed NAG2 reinforcement package (~1100 Nm gearbox capacity), and €19,346 total in EUR for the nine-speed NAG3 reinforcement package (~1250 Nm gearbox capacity). The included-work list below describes the nine-speed option. Confirm the gearbox fitted to your vehicle and the applicable scope in the written proposal. These ratings describe gearbox capacity, not tuned torque.",
+      "test": "desktop-glc63-Stage 3"
+    },
+    {
+      "documentOverflow": false,
+      "note": "GAD lists €33,335 total in EUR for the seven-speed NAG2 reinforcement package (~1100 Nm gearbox capacity), and €34,805 total in EUR for the nine-speed NAG3 reinforcement package (~1250 Nm gearbox capacity). The included-work list below describes the nine-speed option. Confirm the gearbox fitted to your vehicle and the applicable scope in the written proposal. These ratings describe gearbox capacity, not tuned torque.",
+      "test": "desktop-glc63-Stage 4"
+    },
+    {
+      "documentOverflow": false,
+      "note": "GAD lists €51,335 total in EUR for the seven-speed NAG2 reinforcement package (~1100 Nm gearbox capacity), and €52,805 total in EUR for the nine-speed NAG3 reinforcement package (~1250 Nm gearbox capacity). The included-work list below describes the nine-speed option. Confirm the gearbox fitted to your vehicle and the applicable scope in the written proposal. These ratings describe gearbox capacity, not tuned torque.",
+      "test": "desktop-glc63-Stage 5"
+    },
+    {
+      "documentOverflow": false,
+      "hasMCT": false,
+      "notice": true,
+      "packageRows": 5,
+      "test": "mobile-db11-model",
+      "viewport": [
+        390,
+        844
+      ]
+    },
+    {
+      "allPublicRows": 62,
+      "detailText": "S63 AMG E Performance · M177 + Electric\n\nS63 AMG E PERFORMANCE packages and output basis are awaiting model-specific verification. Stage figures, prices, workshop times and included work are withheld. Send your VIN and current modifications so the team can confirm the applicable scope.",
+      "detailsOpen": true,
+      "documentOverflow": false,
+      "s63Rows": 0,
+      "test": "mobile-no-js-s63-master",
+      "viewport": [
+        390,
+        844
+      ]
+    },
+    {
+      "allPublicRows": 62,
+      "detailText": "S63 AMG E Performance · M177 + Electric\n\nحِزم S63 AMG E PERFORMANCE وطريقة تحديد ناتج الأداء بانتظار التحقق الخاص بهذا الطراز. لذلك لا تُعرض أرقام المراحل والأسعار والمدد والأعمال المشمولة. أرسل رقم الهيكل والتعديلات الحالية لتأكيد نطاق العمل المناسب لسيارتك.",
+      "detailsOpen": true,
+      "documentOverflow": false,
+      "s63Rows": 0,
+      "test": "mobile-no-js-arabic-s63",
+      "viewport": [
+        390,
+        844
+      ]
+    },
+    {
+      "documentOverflow": false,
+      "hasNumericPackageClaim": false,
+      "notice": true,
+      "stageButtons": 0,
+      "test": "mobile-arabic-s63-selector",
+      "viewport": [
+        390,
+        844
+      ]
+    },
+    {
+      "FAQ": true,
+      "documentOverflow": false,
+      "packageRows": 5,
+      "stage3Note": "GAD lists €17,876 total in EUR for the seven-speed NAG2 reinforcement package (~1100 Nm gearbox capacity), and €19,346 total in EUR for the nine-speed NAG3 reinforcement package (~1250 Nm gearbox capacity). The included-work list below describes the nine-speed option. Confirm the gearbox fitted to your vehicle and the applicable scope in the written proposal. These ratings describe gearbox capacity, not tuned torque.",
+      "test": "desktop-no-js-glc63-model",
+      "viewport": [
+        1366,
+        900
+      ]
+    }
+  ],
+  "scope": "Local production preview; interactive selectors and script-src none native HTML; no forms or messages submitted"
+}

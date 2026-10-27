@@ -1,0 +1,21 @@
+diff --git a/src/pages/BrandPage.tsx b/src/pages/BrandPage.tsx
+--- a/src/pages/BrandPage.tsx
++++ b/src/pages/BrandPage.tsx
+@@ -1001,7 +1001,7 @@
+                   <figcaption className="p-5">
+                     <span className="text-burnt-orange text-xs font-bold uppercase tracking-widest">Inside our Mercedes workshop</span>
+                     <h3 className="text-lg font-bold text-off-white mt-2">Model-aware mechanical inspection</h3>
+-                    <p className="text-gray-400 text-sm leading-relaxed mt-2">A real Mercedes-AMG engine in the Digi-Tec workshop. Diagnostics, fluid specifications and repair planning are matched to the fitted powertrain—not just the badge.</p>
++                    <p className="text-gray-400 text-sm leading-relaxed mt-2">A real Mercedes-AMG engine in the Digi-Tec workshop. <Link to="/services/mercedes-diagnostics-dubai" className="text-burnt-orange hover:underline">Diagnostics</Link>, fluid specifications and <Link to="/services/mercedes-mechanical-repair-dubai" className="text-burnt-orange hover:underline">repair planning</Link> are matched to the fitted powertrain—not just the badge.</p>
+                   </figcaption>
+                 </figure>
+                 <Link to="/blog/g63-to-brabus-g800-conversion-dubai" className="card-premium group rounded-2xl overflow-hidden">
+@@ -1321,7 +1321,7 @@
+                   <div className="bg-black/30 border border-white/10 rounded-xl p-4">
+                     <MapPin className="w-5 h-5 text-burnt-orange mb-3" />
+                     <h3 className="text-off-white font-bold">Al Quoz Industrial Area 3</h3>
+-                    <p className="text-gray-400 text-sm mt-2">Dubai, with a direct Google Maps route from this page.</p>
++                    <p className="text-gray-400 text-sm mt-2">Dubai, with a direct Google Maps route from this page. <a href="tel:+97143402223" data-cta-placement="workshop_proof" className="text-burnt-orange hover:underline">Call +971 4 340 2223</a> to confirm arrival details.</p>
+                   </div>
+                   <div className="bg-black/30 border border-white/10 rounded-xl p-4">
+                     <CheckCircle2 className="w-5 h-5 text-burnt-orange mb-3" />

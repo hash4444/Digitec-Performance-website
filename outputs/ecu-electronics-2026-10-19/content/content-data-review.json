@@ -1,0 +1,179 @@
+{
+  "source": "src/data/ecuElectronicsContent.ts",
+  "sha256": "48cf990866ec75dcf7c1c08c8c52cb85001085ebfb5c81da82370a0030ca90f3",
+  "owners": 8,
+  "locales": 14,
+  "unknownReturnsUndefined": true,
+  "rows": [
+    {
+      "path": "/services/car-diagnostics-dubai",
+      "locale": "en",
+      "mode": "software",
+      "wordCount": 218,
+      "questions": 3,
+      "links": [
+        "/services/auto-electrical-repair-dubai",
+        "/tuning"
+      ],
+      "message": "Hi DIGI-TEC, I would like to discuss diagnostics or supported coding/programming for my vehicle.\nMake/model/year:\nSymptoms and when they occur:\nWarning message:\nRelevant diagnostic report available (optional):\nWas a control module recently replaced? Which unit, and was it new or used?\nRequested function, if known:\nPreferred appointment time:\nPlease confirm supported work and the initial assessment scope and cost."
+    },
+    {
+      "path": "/services/car-diagnostics-dubai",
+      "locale": "ar",
+      "mode": "software",
+      "wordCount": 192,
+      "questions": 3,
+      "links": [
+        "/services/auto-electrical-repair-dubai",
+        "/tuning"
+      ],
+      "message": "مرحباً ديجي-تك، أود مناقشة التشخيص أو إجراء ترميز أو برمجة مدعوم لسيارتي.\nالصانع والطراز والسنة:\nالأعراض ووقت ظهورها:\nرسالة التحذير:\nهل يتوفر تقرير فحص متعلق بالعطل؟ (اختياري):\nهل استُبدلت وحدة تحكم مؤخراً؟ ما الوحدة وهل كانت جديدة أم مستعملة؟\nالإجراء المطلوب إن كان معروفاً:\nوقت الموعد المفضل:\nيرجى تأكيد دعم العمل المطلوب ونطاق الفحص الأولي وتكلفته."
+    },
+    {
+      "path": "/services/mercedes-diagnostics-dubai",
+      "locale": "en",
+      "mode": "software",
+      "wordCount": 218,
+      "questions": 3,
+      "links": [
+        "/services/mercedes-electrical-repair-dubai",
+        "/services/car-diagnostics-dubai",
+        "/tuning"
+      ],
+      "message": "Hi DIGI-TEC, I would like to discuss diagnostics or supported coding/programming for my Mercedes.\nMake/model/year:\nSymptoms and when they occur:\nWarning message:\nRelevant diagnostic report available (optional):\nWas a control module recently replaced? Which unit, and was it new or used?\nRequested function, if known:\nPreferred appointment time:\nPlease confirm supported work and the initial assessment scope and cost."
+    },
+    {
+      "path": "/services/mercedes-diagnostics-dubai",
+      "locale": "ar",
+      "mode": "software",
+      "wordCount": 192,
+      "questions": 3,
+      "links": [
+        "/services/mercedes-electrical-repair-dubai",
+        "/services/car-diagnostics-dubai",
+        "/tuning"
+      ],
+      "message": "مرحباً ديجي-تك، أود مناقشة التشخيص أو إجراء ترميز أو برمجة مدعوم لسيارتي مرسيدس.\nالصانع والطراز والسنة:\nالأعراض ووقت ظهورها:\nرسالة التحذير:\nهل يتوفر تقرير فحص متعلق بالعطل؟ (اختياري):\nهل استُبدلت وحدة تحكم مؤخراً؟ ما الوحدة وهل كانت جديدة أم مستعملة؟\nالإجراء المطلوب إن كان معروفاً:\nوقت الموعد المفضل:\nيرجى تأكيد دعم العمل المطلوب ونطاق الفحص الأولي وتكلفته."
+    },
+    {
+      "path": "/brands/bmw-service-dubai/engine-diagnostics",
+      "locale": "en",
+      "mode": "software",
+      "wordCount": 218,
+      "questions": 3,
+      "links": [
+        "/brands/bmw-service-dubai/electrical-repair",
+        "/services/car-diagnostics-dubai",
+        "/tuning"
+      ],
+      "message": "Hi DIGI-TEC, I would like to discuss diagnostics or supported coding/programming for my BMW.\nMake/model/year:\nSymptoms and when they occur:\nWarning message:\nRelevant diagnostic report available (optional):\nWas a control module recently replaced? Which unit, and was it new or used?\nRequested function, if known:\nPreferred appointment time:\nPlease confirm supported work and the initial assessment scope and cost."
+    },
+    {
+      "path": "/brands/bmw-service-dubai/engine-diagnostics",
+      "locale": "ar",
+      "mode": "software",
+      "wordCount": 192,
+      "questions": 3,
+      "links": [
+        "/brands/bmw-service-dubai/electrical-repair",
+        "/services/car-diagnostics-dubai",
+        "/tuning"
+      ],
+      "message": "مرحباً ديجي-تك، أود مناقشة التشخيص أو إجراء ترميز أو برمجة مدعوم لسيارتي BMW.\nالصانع والطراز والسنة:\nالأعراض ووقت ظهورها:\nرسالة التحذير:\nهل يتوفر تقرير فحص متعلق بالعطل؟ (اختياري):\nهل استُبدلت وحدة تحكم مؤخراً؟ ما الوحدة وهل كانت جديدة أم مستعملة؟\nالإجراء المطلوب إن كان معروفاً:\nوقت الموعد المفضل:\nيرجى تأكيد دعم العمل المطلوب ونطاق الفحص الأولي وتكلفته."
+    },
+    {
+      "path": "/services/auto-electrical-repair-dubai",
+      "locale": "en",
+      "mode": "electrical",
+      "wordCount": 208,
+      "questions": 3,
+      "links": [
+        "/services/car-diagnostics-dubai",
+        "/services/head-unit-repair-dubai"
+      ],
+      "message": "Hi DIGI-TEC, I would like to discuss an electrical or module communication fault on my vehicle.\nMake/model/year:\nSymptoms and when they occur:\nWarning message:\nRelevant diagnostic report available (optional):\nWas a control module recently replaced? Which unit, and was it new or used?\nRequested function, if known:\nPreferred appointment time:\nPlease confirm supported work and the initial assessment scope and cost."
+    },
+    {
+      "path": "/services/auto-electrical-repair-dubai",
+      "locale": "ar",
+      "mode": "electrical",
+      "wordCount": 175,
+      "questions": 3,
+      "links": [
+        "/services/car-diagnostics-dubai"
+      ],
+      "message": "مرحباً ديجي-تك، أود مناقشة عطل كهربائي أو مشكلة اتصال بين وحدات سيارتي.\nالصانع والطراز والسنة:\nالأعراض ووقت ظهورها:\nرسالة التحذير:\nهل يتوفر تقرير فحص متعلق بالعطل؟ (اختياري):\nهل استُبدلت وحدة تحكم مؤخراً؟ ما الوحدة وهل كانت جديدة أم مستعملة؟\nالإجراء المطلوب إن كان معروفاً:\nوقت الموعد المفضل:\nيرجى تأكيد دعم العمل المطلوب ونطاق الفحص الأولي وتكلفته."
+    },
+    {
+      "path": "/services/mercedes-electrical-repair-dubai",
+      "locale": "en",
+      "mode": "electrical",
+      "wordCount": 208,
+      "questions": 3,
+      "links": [
+        "/services/mercedes-diagnostics-dubai",
+        "/services/head-unit-repair-dubai"
+      ],
+      "message": "Hi DIGI-TEC, I would like to discuss an electrical or module communication fault on my Mercedes.\nMake/model/year:\nSymptoms and when they occur:\nWarning message:\nRelevant diagnostic report available (optional):\nWas a control module recently replaced? Which unit, and was it new or used?\nRequested function, if known:\nPreferred appointment time:\nPlease confirm supported work and the initial assessment scope and cost."
+    },
+    {
+      "path": "/services/mercedes-electrical-repair-dubai",
+      "locale": "ar",
+      "mode": "electrical",
+      "wordCount": 175,
+      "questions": 3,
+      "links": [
+        "/services/mercedes-diagnostics-dubai"
+      ],
+      "message": "مرحباً ديجي-تك، أود مناقشة عطل كهربائي أو مشكلة اتصال بين وحدات سيارتي مرسيدس.\nالصانع والطراز والسنة:\nالأعراض ووقت ظهورها:\nرسالة التحذير:\nهل يتوفر تقرير فحص متعلق بالعطل؟ (اختياري):\nهل استُبدلت وحدة تحكم مؤخراً؟ ما الوحدة وهل كانت جديدة أم مستعملة؟\nالإجراء المطلوب إن كان معروفاً:\nوقت الموعد المفضل:\nيرجى تأكيد دعم العمل المطلوب ونطاق الفحص الأولي وتكلفته."
+    },
+    {
+      "path": "/brands/bmw-service-dubai/electrical-repair",
+      "locale": "en",
+      "mode": "electrical",
+      "wordCount": 208,
+      "questions": 3,
+      "links": [
+        "/brands/bmw-service-dubai/engine-diagnostics",
+        "/services/auto-electrical-repair-dubai"
+      ],
+      "message": "Hi DIGI-TEC, I would like to discuss an electrical or module communication fault on my BMW.\nMake/model/year:\nSymptoms and when they occur:\nWarning message:\nRelevant diagnostic report available (optional):\nWas a control module recently replaced? Which unit, and was it new or used?\nRequested function, if known:\nPreferred appointment time:\nPlease confirm supported work and the initial assessment scope and cost."
+    },
+    {
+      "path": "/brands/bmw-service-dubai/electrical-repair",
+      "locale": "ar",
+      "mode": "electrical",
+      "wordCount": 175,
+      "questions": 3,
+      "links": [
+        "/brands/bmw-service-dubai/engine-diagnostics",
+        "/services/auto-electrical-repair-dubai"
+      ],
+      "message": "مرحباً ديجي-تك، أود مناقشة عطل كهربائي أو مشكلة اتصال بين وحدات سيارتي BMW.\nالصانع والطراز والسنة:\nالأعراض ووقت ظهورها:\nرسالة التحذير:\nهل يتوفر تقرير فحص متعلق بالعطل؟ (اختياري):\nهل استُبدلت وحدة تحكم مؤخراً؟ ما الوحدة وهل كانت جديدة أم مستعملة؟\nالإجراء المطلوب إن كان معروفاً:\nوقت الموعد المفضل:\nيرجى تأكيد دعم العمل المطلوب ونطاق الفحص الأولي وتكلفته."
+    },
+    {
+      "path": "/services/cadillac-cue-screen-repair-dubai",
+      "locale": "en",
+      "mode": "infotainment",
+      "wordCount": 216,
+      "questions": 3,
+      "links": [
+        "/services/head-unit-repair-dubai",
+        "/services/auto-electrical-repair-dubai"
+      ],
+      "message": "Hi DIGI-TEC, I would like to discuss a screen, sound or head-unit fault on my vehicle with Cadillac CUE.\nMake/model/year:\nSymptoms and when they occur:\nWarning message:\nRelevant diagnostic report available (optional):\nWas a control module recently replaced? Which unit, and was it new or used?\nRequested function, if known:\nPreferred appointment time:\nPlease confirm supported work and the initial assessment scope and cost."
+    },
+    {
+      "path": "/services/head-unit-repair-dubai",
+      "locale": "en",
+      "mode": "infotainment",
+      "wordCount": 215,
+      "questions": 3,
+      "links": [
+        "/services/cadillac-cue-screen-repair-dubai",
+        "/services/auto-electrical-repair-dubai"
+      ],
+      "message": "Hi DIGI-TEC, I would like to discuss a screen, sound or head-unit fault on my vehicle.\nMake/model/year:\nSymptoms and when they occur:\nWarning message:\nRelevant diagnostic report available (optional):\nWas a control module recently replaced? Which unit, and was it new or used?\nRequested function, if known:\nPreferred appointment time:\nPlease confirm supported work and the initial assessment scope and cost."
+    }
+  ]
+}

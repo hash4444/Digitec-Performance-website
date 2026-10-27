@@ -1,0 +1,82 @@
+[
+  {
+    "file": "cloudflare/routing-response-data.js",
+    "status": "modified by T1.1",
+    "sha256": "9cd3dc984815128ce38bd414e8157e2beb29d36d07beff5a268911047cf1aa9e"
+  },
+  {
+    "file": "outputs/t1/README.md",
+    "status": "modified by T1.1",
+    "sha256": "4258a6939c9587392f8ae77b69942e4f23faab01a788b781d9b112445fccc48e"
+  },
+  {
+    "file": "outputs/t1/finalize-t1-evidence.mjs",
+    "status": "modified by T1.1",
+    "sha256": "d2177617dfcb83d94f87d59ce7bff21b63613c18fb871ce07d33590586cdeaa9"
+  },
+  {
+    "file": "public/sitemap.xml",
+    "status": "modified by T1.1",
+    "sha256": "e971c0fd88855c1f7717d624a325964658c2f5b2c2a2cefff590334056069aec"
+  },
+  {
+    "file": "scripts/validate-tuning.mjs",
+    "status": "modified by T1.1",
+    "sha256": "78dad5ad67a02cf13674b700321d073e18426f382abcb80e1fbcb84678bb5f0e"
+  },
+  {
+    "file": "src/components/TuningConfigurationDetails.tsx",
+    "status": "modified by T1.1",
+    "sha256": "1d5080d08774e109be607b89b180ecec98480e903d8d13e017e5d79b4fcc44e6"
+  },
+  {
+    "file": "src/components/TuningConfigurator.tsx",
+    "status": "modified by T1.1",
+    "sha256": "8f6c3c0a11f9c8901dde008c15c30d2f0538e4edbbd4bcd40813e1242400a96f"
+  },
+  {
+    "file": "src/data/bmwModelPages.ts",
+    "status": "modified by T1.1",
+    "sha256": "8829ff52b24282649666d182b83747e6f341639f1ef55d2a1baa15aa817757b3"
+  },
+  {
+    "file": "src/data/brandServices.ts",
+    "status": "modified by T1.1",
+    "sha256": "3e6f05324a86cb610d8a511851fb7ba2f60c3b3ccf995b04436cd88d368d0e0d"
+  },
+  {
+    "file": "src/data/brands.ts",
+    "status": "modified by T1.1",
+    "sha256": "dac6d48dfa9defd3410a4db60abbaeeb7ab6e542faa3dbfcb1e7493cf749d64b"
+  },
+  {
+    "file": "src/data/t1UpdatedPaths.ts",
+    "status": "modified by T1.1",
+    "sha256": "3435fe3cc6b6eb695eeea465ba0bf8a4e388c8e141a2004872cc8ac7b0fb6534"
+  },
+  {
+    "file": "src/data/tuningModelPages.ts",
+    "status": "modified by T1.1",
+    "sha256": "d3f434d07b2b9cbcff1924737deb2226ab7b5158303312a25440be103f60f6dd"
+  },
+  {
+    "file": "src/data/tuningPublication.ts",
+    "status": "created by T1.1",
+    "sha256": "266952aeeade4db7d6d618b74f6d3f7df0b9b3366824e5769e17166d020cff5f"
+  },
+  {
+    "file": "src/i18n/ar-brands.ts",
+    "status": "modified by T1.1",
+    "sha256": "391a8b4b6fa1a914bd43f1e4fbf8bc020b250b613253472d94a94c9ce98f35aa"
+  },
+  {
+    "file": "src/pages/BrandWorkshopArticlePage.tsx",
+    "status": "modified by T1.1",
+    "sha256": "6d50b863185c33fefe443fbc44d02589e80b9108653b12bb009df2dbc4008d7c"
+  },
+  {
+    "file": "src/pages/Brands.tsx",
+    "status": "modified by T1.1",
+    "sha256": "c27edef12cb096f43533ac2171d7ea8968f933b102a54cb4d5b3a79e6acd0bfb"
+  }
+]

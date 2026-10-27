@@ -1,0 +1,115 @@
+{
+  "id": "query-pages__90d__ALL__DESKTOP__mercedes-maintenance-dubai",
+  "capturedAt": "2026-10-26T08:11:29.683Z",
+  "property": "sc-domain:digitecme.com",
+  "searchType": "Web (Text-based verified separately)",
+  "expected": {
+    "kind": "query-pages",
+    "query": "mercedes maintenance dubai",
+    "country": "ALL",
+    "device": "DESKTOP",
+    "window": {
+      "id": "90d",
+      "start": "20260727",
+      "end": "20261024",
+      "startLabel": "27 July 2026",
+      "endLabel": "24 October 2026"
+    },
+    "breakdown": "page",
+    "current": true
+  },
+  "navigationUrl": "https://search.google.com/search-console/performance/search-analytics?resource_id=sc-domain%3Adigitecme.com&metrics=CLICKS%2CIMPRESSIONS%2CCTR%2CPOSITION&start_date=20260727&end_date=20261024&query=!mercedes%20maintenance%20dubai&breakdown=page&device=DESKTOP",
+  "displayedFilterChecks": {
+    "query": true,
+    "country": true,
+    "device": true,
+    "page": true,
+    "date": true,
+    "breakdown": true
+  },
+  "loading": false,
+  "readinessReloads": 0,
+  "header": [
+    "Top pages",
+    "Clicks",
+    "Impressions",
+    "CTR",
+    "Position"
+  ],
+  "rows": [
+    [
+      "https://digitecme.com/brands/mercedes-benz-service-dubai",
+      "0",
+      "202",
+      "0%",
+      "8.4"
+    ],
+    [
+      "https://digitecme.com/services/mercedes-repair-dubai",
+      "0",
+      "17",
+      "0%",
+      "29.9"
+    ],
+    [
+      "https://digitecme.com/blog/mercedes-s-class-service-dubai-guide",
+      "0",
+      "5",
+      "0%",
+      "19.4"
+    ],
+    [
+      "https://digitecme.com/brands/mercedes-benz-service-dubai/mechanical-repair",
+      "0",
+      "3",
+      "0%",
+      "10.3"
+    ],
+    [
+      "https://digitecme.com/blog/mercedes-benz-maintenance-guide-dubai",
+      "0",
+      "1",
+      "0%",
+      "9.0"
+    ],
+    [
+      "https://digitecme.com/blog/mercedes-e-class-service-dubai-guide",
+      "0",
+      "1",
+      "0%",
+      "12.0"
+    ],
+    [
+      "https://digitecme.com/blog/best-oil-change-dubai-mercedes",
+      "0",
+      "1",
+      "0%",
+      "24.0"
+    ],
+    [
+      "https://digitecme.com/blog/mercedes-c-class-service-dubai-guide",
+      "0",
+      "1",
+      "0%",
+      "32.0"
+    ],
+    [
+      "https://digitecme.com/blog/maybach-s580-service-dubai-guide",
+      "0",
+      "1",
+      "0%",
+      "61.0"
+    ]
+  ],
+  "pagination": "1-9 of 9",
+  "completeVisibleTable": true,
+  "availability": "visible_rows_complete",
+  "cards": {
+    "clicks": "0",
+    "impressions": "224",
+    "ctr": "0%",
+    "position": "9.5"
+  },
+  "axFile": "raw/query-pages__90d__ALL__DESKTOP__mercedes-maintenance-dubai-ax.txt",
+  "textFile": "raw/query-pages__90d__ALL__DESKTOP__mercedes-maintenance-dubai-visible.txt"
+}

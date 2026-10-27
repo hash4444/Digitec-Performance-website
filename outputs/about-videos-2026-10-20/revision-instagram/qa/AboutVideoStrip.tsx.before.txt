@@ -1,0 +1,180 @@
+import { useEffect, useRef, useState, type MouseEvent } from 'react';
+import * as Dialog from '@radix-ui/react-dialog';
+import { ArrowLeft, ArrowRight, Pause, Play, Volume2, X } from 'lucide-react';
+import { useLocale } from '@/i18n/use-locale';
+import './AboutVideoStrip.css';
+
+const films = Array.from({ length: 8 }, (_, index) => {
+  const number = String(index + 1).padStart(2, '0');
+  return { number, src: `/videos/about/video-${number}.mp4`, poster: `/videos/about/video-${number}-poster.jpg` };
+});
+type Film = (typeof films)[number];
+
+function Preview({ film, paused }: { film: Film; paused: boolean }) {
+  const video = useRef<HTMLVideoElement>(null);
+  const [visible, setVisible] = useState(false);
+  const [loaded, setLoaded] = useState(false);
+  const [playing, setPlaying] = useState(false);
+
+  useEffect(() => {
+    const element = video.current;
+    if (!element || !('IntersectionObserver' in window)) return;
+    const observer = new IntersectionObserver(([entry]) => setVisible(entry.isIntersecting), { threshold: 0.12 });
+    observer.observe(element);
+    return () => observer.disconnect();
+  }, []);
+  useEffect(() => { if (visible && !paused) setLoaded(true); }, [visible, paused]);
+  useEffect(() => {
+    const element = video.current;
+    if (!element) return;
+    if (loaded && visible && !paused) {
+      element.muted = true;
+      void element.play().catch(() => { /* The poster and full player remain usable if autoplay is blocked. */ });
+    } else element.pause();
+  }, [loaded, visible, paused]);
+
+  return <>
+    <img src={film.poster} alt="" width="720" height="1280" loading="lazy" decoding="async" className="about-video-strip__poster" />
+    <video ref={video} src={loaded ? film.src : undefined} muted loop playsInline preload="none" aria-hidden="true" tabIndex={-1}
+      onPlaying={() => setPlaying(true)} className={`about-video-strip__preview${playing ? ' is-playing' : ''}`} />
+  </>;
+}
+
+export default function AboutVideoStrip() {
+  const { isArabic } = useLocale();
+  const viewport = useRef<HTMLDivElement>(null);
+  const firstGroup = useRef<HTMLDivElement>(null);
+  const cycleWidth = useRef(0);
+  const pointerDown = useRef(false);
+  const manualPauseUntil = useRef(0);
+  const pauseButton = useRef<HTMLButtonElement>(null);
+  const returnFocus = useRef<HTMLElement | null>(null);
+  const [reducedMotion, setReducedMotion] = useState(false);
+  const [motionChoice, setMotionChoice] = useState<boolean | null>(null);
+  const [onScreen, setOnScreen] = useState(false);
+  const [pageHidden, setPageHidden] = useState(false);
+  const [hovered, setHovered] = useState(false);
+  const [focused, setFocused] = useState(false);
+  const [selected, setSelected] = useState<Film | null>(null);
+  const motionEnabled = motionChoice ?? !reducedMotion;
+  const paused = !motionEnabled || !onScreen || pageHidden || hovered || focused || selected !== null;
+  const previewsPaused = !motionEnabled || !onScreen || pageHidden || selected !== null;
+
+  useEffect(() => {
+    const preference = window.matchMedia('(prefers-reduced-motion: reduce)');
+    const updatePreference = () => { setReducedMotion(preference.matches); setMotionChoice(null); };
+    const updateVisibility = () => setPageHidden(document.hidden);
+    const releasePointer = () => { pointerDown.current = false; };
+    updatePreference(); updateVisibility();
+    preference.addEventListener('change', updatePreference);
+    document.addEventListener('visibilitychange', updateVisibility);
+    window.addEventListener('pointerup', releasePointer);
+    window.addEventListener('pointercancel', releasePointer);
+    return () => {
+      preference.removeEventListener('change', updatePreference);
+      document.removeEventListener('visibilitychange', updateVisibility);
+      window.removeEventListener('pointerup', releasePointer);
+      window.removeEventListener('pointercancel', releasePointer);
+    };
+  }, []);
+
+  useEffect(() => {
+    const element = viewport.current, group = firstGroup.current;
+    if (!element || !group) return;
+    const measure = () => { cycleWidth.current = group.getBoundingClientRect().width; };
+    measure();
+    const resize = new ResizeObserver(measure);
+    resize.observe(group);
+    const observer = new IntersectionObserver(([entry]) => setOnScreen(entry.isIntersecting), { threshold: 0.08 });
+    observer.observe(element);
+    return () => { resize.disconnect(); observer.disconnect(); };
+  }, []);
+
+  useEffect(() => {
+    const element = viewport.current;
+    if (!element || paused) return;
+    let frame = 0, last = 0, position = element.scrollLeft;
+    const advance = (now: number) => {
+      const elapsed = last ? Math.min((now - last) / 1000, 0.064) : 0;
+      last = now;
+      if (pointerDown.current || now < manualPauseUntil.current) position = element.scrollLeft;
+      else if (cycleWidth.current > 0) {
+        position = (position + elapsed * 32) % cycleWidth.current;
+        element.scrollLeft = position;
+      }
+      frame = requestAnimationFrame(advance);
+    };
+    frame = requestAnimationFrame(advance);
+    return () => cancelAnimationFrame(frame);
+  }, [paused]);
+
+  function move(direction: number) {
+    const element = viewport.current;
+    if (!element) return;
+    setMotionChoice(false);
+    if (direction < 0 && element.scrollLeft < 1) element.scrollLeft = cycleWidth.current;
+    const card = firstGroup.current?.querySelector<HTMLElement>('.about-video-strip__card');
+    element.scrollBy({ left: direction * ((card?.offsetWidth ?? 240) + 20), behavior: reducedMotion ? 'auto' : 'smooth' });
+  }
+
+  function openFilm(event: MouseEvent<HTMLAnchorElement>, film: Film, duplicate: boolean) {
+    if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+    event.preventDefault();
+    returnFocus.current = duplicate ? pauseButton.current : event.currentTarget;
+    setSelected(film);
+  }
+
+  return <section className="about-video-strip theme-dark-section" aria-labelledby="about-films-title" data-about-videos>
+    <div className="about-video-strip__heading">
+      <div>
+        <p className="about-video-strip__eyebrow">{isArabic ? 'ديجي-تك بالفيديو' : 'DIGI-TEC in motion'}</p>
+        <h2 id="about-films-title">{isArabic ? 'تعرّف على ديجي-تك' : 'A closer look at DIGI-TEC'}</h2>
+        <p id="about-films-description" className="about-video-strip__description">{isArabic ? 'اختر فيديو لمشاهدته مع الصوت.' : 'Choose a video to watch with sound.'}</p>
+      </div>
+      <div className="about-video-strip__controls">
+        <button ref={pauseButton} type="button" onClick={() => setMotionChoice(!motionEnabled)} aria-pressed={!motionEnabled} className="about-video-strip__toggle">
+          {motionEnabled ? <Pause size={16} /> : <Play size={16} />}
+          {isArabic ? motionEnabled ? 'أوقف التمرير' : 'شغّل التمرير' : motionEnabled ? 'Pause scrolling' : 'Start scrolling'}
+        </button>
+        <button type="button" onClick={() => move(-1)} className="about-video-strip__arrow" aria-label={isArabic ? 'مرّر الفيديوهات إلى اليسار' : 'Scroll videos left'}><ArrowLeft size={18} /></button>
+        <button type="button" onClick={() => move(1)} className="about-video-strip__arrow" aria-label={isArabic ? 'مرّر الفيديوهات إلى اليمين' : 'Scroll videos right'}><ArrowRight size={18} /></button>
+      </div>
+    </div>
+
+    <div ref={viewport} className="about-video-strip__viewport" dir="ltr" role="region" tabIndex={0}
+      aria-label={isArabic ? 'فيديوهات ديجي-تك، مرّر أفقياً لاستعراضها' : 'DIGI-TEC videos, scroll horizontally to browse'} aria-describedby="about-films-description"
+      onPointerEnter={event => { if (event.pointerType === 'mouse') setHovered(true); }} onPointerLeave={() => setHovered(false)}
+      onPointerDown={() => { pointerDown.current = true; }} onWheel={() => { manualPauseUntil.current = performance.now() + 1800; }}
+      onFocusCapture={() => setFocused(true)} onBlurCapture={event => { if (!event.currentTarget.contains(event.relatedTarget as Node | null)) setFocused(false); }}
+      onKeyDown={event => { if (event.key === 'ArrowLeft' || event.key === 'ArrowRight') { event.preventDefault(); move(event.key === 'ArrowLeft' ? -1 : 1); } }}>
+      <div className="about-video-strip__track">
+        {[false, true].map(duplicate => <div key={String(duplicate)} ref={duplicate ? undefined : firstGroup} className="about-video-strip__group" aria-hidden={duplicate ? true : undefined}>
+          {films.map(film => <a key={film.number} href={film.src} className="about-video-strip__card" tabIndex={duplicate ? -1 : 0} dir={isArabic ? 'rtl' : 'ltr'}
+            aria-label={isArabic ? `شاهد فيديو ديجي-تك ${film.number}` : `Watch DIGI-TEC video ${film.number}`}
+            onPointerDown={event => { if (duplicate && event.pointerType === 'mouse') event.preventDefault(); }} onClick={event => openFilm(event, film, duplicate)}>
+            <Preview film={film} paused={previewsPaused} />
+            <span className="about-video-strip__number" aria-hidden="true"><bdi>{film.number} / 08</bdi></span>
+            <span className="about-video-strip__caption"><span className="about-video-strip__play"><Play size={18} fill="currentColor" /></span>{isArabic ? 'شاهد الفيديو' : 'Watch video'}<Volume2 size={16} /></span>
+          </a>)}
+        </div>)}
+      </div>
+    </div>
+
+    <Dialog.Root open={selected !== null} onOpenChange={open => { if (!open) setSelected(null); }}>
+      <Dialog.Portal>
+        <Dialog.Overlay className="about-video-player__overlay" />
+        <Dialog.Content className="about-video-player" aria-describedby="about-video-player-description"
+          onCloseAutoFocus={event => { event.preventDefault(); returnFocus.current?.focus({ preventScroll: true }); }}>
+          <div className="about-video-player__header">
+            <Dialog.Title>{isArabic ? `فيديو ديجي-تك ${selected?.number ?? ''}` : `DIGI-TEC film ${selected?.number ?? ''}`}</Dialog.Title>
+            <Dialog.Close className="about-video-player__close" aria-label={isArabic ? 'أغلق الفيديو' : 'Close video'}><X size={20} /></Dialog.Close>
+          </div>
+          <Dialog.Description id="about-video-player-description" className="sr-only">{isArabic ? 'استخدم أدوات التشغيل للتحكم بالصوت والفيديو، أو أغلق للعودة.' : 'Use the playback controls for sound and video, or close to return.'}</Dialog.Description>
+          {selected && <video key={selected.number} src={selected.src} poster={selected.poster} controls autoPlay playsInline preload="metadata" className="about-video-player__video">
+            <a href={selected.src}>{isArabic ? 'افتح الفيديو' : 'Open video'}</a>
+          </video>}
+        </Dialog.Content>
+      </Dialog.Portal>
+    </Dialog.Root>
+  </section>;
+}

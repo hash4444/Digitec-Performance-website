@@ -1,0 +1,256 @@
+DIGI-TEC — automotive SEO release candidate
+Prepared 19 October 2026, Asia/Dubai
+Scope: completed five-brand service and repair-service SEO sprints
+
+DECISION
+
+GO for review of the isolated local source/build candidate. NO-GO for production
+promotion. Combined local QA passes, but authenticated Cloudflare access fails
+with 403 / 9109 Invalid access token. The exact active origin deployment, edge
+configuration and complete recoverable rollback pair remain unverified. An
+unchanged remote Git branch does not establish that production has no newer work.
+
+Nothing was committed, pushed, deployed, published or sent as a customer enquiry.
+Stop point: candidate prepared; no release action is authorized by this task.
+
+1. EXACT RELEASE SCOPE AND BASELINE
+
+Current original checkout: main, HEAD
+6180f453feaaf21b8c786f23bb3867a09666ed64
+Commit: SEO: complete PPF growth phases 1-4.
+GitHub main was rechecked read-only at 2026-10-19T07:38:58Z: identical,
+ahead 0, behind 0, changed files 0. Tuning commit 96970728 is an ancestor.
+
+Candidate: candidate.local/ — a separate, ignored local directory without Git
+metadata, reconstructed from that Git baseline plus the exact approved overlay.
+The dirty shared workspace was not used wholesale as a release source tree.
+Its branch, HEAD, index and existing files were preserved. Verification hashes
+31,006 original tracked/untracked non-ignored files; zero mismatches or unexpected
+additions outside this release evidence directory. See workspace-preservation.json.
+
+The two sprint manifests select 11 unique files: 10 application files and one
+existing browser regression test. Six are modifications and five are additions.
+All current workspace, isolated candidate and packaged source hashes match the
+approved sprint bytes. The full 578-entry completed repair snapshot also matches.
+
+Five-brand sprint:
+  M src/data/brands.ts
+  M src/data/priorityBrandSeo.ts
+  M src/i18n/ar-brands.ts
+  M src/pages/BrandPage.tsx
+  M scripts/test-master-seo-browser.mjs
+  A src/components/BrandServiceScope.tsx
+  A src/data/brandServiceSprint.ts
+
+Repair-service sprint:
+  M src/pages/BrandServicePage.tsx
+  A src/components/RepairEnquiryPanel.tsx
+  A src/data/repairServiceArabic.ts
+  A src/data/repairServiceContent.ts
+
+The hub changes add the approved service/booking explanations, EN/AR metadata,
+crawlable answers and direct service links for the five selected brands. Repair
+changes refine ten existing owners, localized assessment/quotation information,
+related service links and contextual WhatsApp drafts. No new route is introduced.
+The adjacent Lamborghini diagnostic owner and its Arabic counterpart are retained.
+Service schema continues to reference the established #business provider graph.
+
+Existing LocalizedLink and brandServices types satisfy dependencies at the base.
+No package, lockfile, routing policy, shared entity graph, Cloudflare configuration
+or backend change is needed. PPF and tuning remain baseline content, with no
+automotive source delta in their files. The unrelated uncommitted edit in
+supabase/functions/mcp/index.ts, existing output evidence and generated master
+validation artifact are excluded and preserved.
+
+Authoritative scope evidence:
+  modified-file-manifest.json
+  scope/release-source-manifest.json and .csv
+  scope/automotive-source-only.patch
+  scope/excluded-working-tree.json
+  scope/final-remote-main-compatibility.json
+  scope/final-source-package-verification.json
+
+Build generation changes only expected generated routing/sitemap/audit outputs
+inside the candidate. These are separated from the 11-file source overlay; they
+are not extra Cloudflare configuration changes. See candidate-base-comparison.json.
+The complete built dist includes the generated files needed for reproduction.
+
+2. COMBINED QA — PASS
+
+The complete 19-step production build pipeline and 10 additional CLI checks pass.
+The local build wrapper executes every package.json production build step in order;
+it is not a reduced development build. TypeScript app/Node checks and ESLint pass
+with zero errors and 11 retained warnings.
+
+SEO/static: 32 EN/AR routes, 1,454 assertions, 64 direct internal-link occurrences.
+Checks cover metadata, rendered copy, one H1, indexability, self canonicals,
+reciprocal hreflang, sitemap, localized internal targets, shared business graph,
+Service/Breadcrumb/FAQ schema and parity with visible answers.
+
+Browser evidence:
+  Five hubs: 30 responsive cases, 30 interactions, 10 no-JavaScript routes.
+  Repairs: 66 responsive cases, 66 interactions, 22 no-JavaScript routes and
+           22 direct hub-to-owner checks, including preserved diagnostic pages.
+  Existing master: 27 responsive cases, 17 interactions, 7 SPA navigation cases.
+  Protection: 9 HTTP cases plus directory/service and history navigation.
+  PPF: EN/AR quotation, validation, language, 1440/390/320px, no-JavaScript,
+       privacy and duplicate handoff suppression.
+  Tuning: 6 EN/AR viewport cases; 62 published rows and DB11/S63 safeguards.
+
+Zero runtime/hydration errors and unexpected local HTTP errors. Browser requests
+were limited to loopback reads; contact handoffs were intercepted. No real call,
+WhatsApp message, enquiry, backend write or confirmed-lead event was generated.
+
+Build source fingerprint:
+7dc83133c9d5174ee3a05ab37602ffffabcb2a316f8ad65a4c5f64aab22a3e46
+
+Authoritative evidence:
+  qa/COMBINED-QA-SUMMARY.txt and .json
+  qa/combined-cli-results.json
+  qa/production-build/build-results.json and build logs
+  qa/combined-static-results.json
+  qa/combined-browser-results.json and individual suites/screenshots
+  qa/tuning-browser/browser-results.json
+
+The recorded sandbox mkdir EPERM and initial Windows preload URL failure were
+execution-boundary/harness attempts. Final complete runs passed; application
+source was not changed to make tests pass. Retained evidence identifies both
+superseded attempts. No original-workspace build was run for this release.
+
+3. REVIEW ARTIFACTS
+
+artifacts/automotive-source-overlay.zip
+  Exactly 11 approved files; 100,921 bytes.
+  SHA-256 dbd4d578b1cce6d497124b198582129b3f2f90c3b70bcf3df43403b9295247b3
+
+artifacts/automotive-built-dist.zip
+  Complete 1,616-file dist; 110,580,496 bytes.
+  SHA-256 96e1080491138c28941f68c95d2c5287281c8ea806368c36c5e620bf3a634330
+
+scope/automotive-source-only.patch
+  SHA-256 b2b24835124a80c3def0ee4bb397a70b3d61474d51b57976564a589721f92d90
+
+artifacts/artifact-checksums.json records package/manifest checksums. Per-file
+hashes are in source-overlay-manifest.json and dist-file-manifest.json.
+The node_modules junction and local baseline inputs are not packaged. The built
+ZIP is a review/reproduction artifact; no verified direct upload target is known.
+Final integrity verification passed at 2026-10-19T07:43:00Z: all 578 build inputs,
+11 approved source files, 1,616 dist files and five package/manifest/patch hashes
+are unchanged. See final-integrity.json. Original workspace preservation was
+rechecked at 07:43:07Z and passed for all 31,006 baseline files.
+
+4. PRODUCTION COMPATIBILITY AND NO-OVERWRITE FINDINGS
+
+Repository history and the connected project identify Lovable as the content
+origin with Cloudflare in front. Read-only Lovable project inspection reports
+published=true and editor/preview source 6180f453, but exposes no immutable
+published deployment/source selector. The separate Sites mirror is not this
+production target.
+
+cloudflare/wrangler.production-seo.jsonc describes an edge router named
+digitec-production-seo-router. It declares no assets binding or static directory.
+Deploying that config would change edge behavior, not publish rebuilt service
+HTML/assets. There is no verified repository Cloudflare content-deploy command.
+
+Fifty public GET/HEAD captures preserve rendered targets, PPF/tuning, sitemap,
+robots, aliases and probes. Current PPF form markers from phases 1-4 are present.
+However, /ppf and an unknown path return homepage HTML with 200, differing from
+the checked-in router's intended 308/404. /_worker.js and /_redirects are publicly
+served files; their presence does not prove the router executes. Public varying
+X-Deployment-Id headers are not authenticated Cloudflare version identifiers.
+
+Cloudflare API /accounts and /zones fail with Invalid access token; dashboard is
+signed out. No credential refresh/login or remote mutation was performed. Raw
+public snapshots are preserved, but no complete live settings/assets/version
+backup exists. Thus absence of newer production edits cannot be certified, and
+an executable rollback to the current live origin/edge pair is not yet available.
+
+Detailed evidence and command caveats:
+  deployment/PRODUCTION-COMPATIBILITY.txt
+  deployment/public-production-state.json and public-snapshot/
+  deployment/lovable-project-readonly.json
+  deployment/cloudflare-readonly-index.json
+  deployment/cloudflare-preflight-result.json
+
+5. COMMANDS AND FUTURE RELEASE GATES — DOCUMENTED ONLY
+
+For reproduction, run from the isolated candidate, not the shared dirty checkout:
+  npm run typecheck
+  npm run lint
+  npm run build
+
+The equivalent instrumented production command used for this candidate is:
+  npm run build:release:local
+It records all 19 production steps and a source manifest. The complete output is
+dist/ (rendered pages, client/public assets, sitemap, robots and hosting files).
+dist-server/ is an SSR intermediate. Generated routing files need a compatible
+host; they do not activate themselves on the observed origin.
+
+Read-only remote backup/preflight prepared at the repository root:
+  node outputs/automotive-release-2026-10-19/deployment/snapshot-cloudflare-readonly.mjs
+Its current attempt fails closed on 403. A later successful capture must include
+the actual route-discovered Workers, versions/weights, bindings, code, settings,
+DNS/rules and verified origin deployment/source/rollback evidence. Compare a new
+capture to the saved complete baseline immediately before any authorized release.
+
+After separate explicit authorization and all gates passing, the documented
+existing content publication action is Publish changes for Lovable project
+b8255283-fdd9-4c2d-8b46-ccb596f695e1, or the connected tool:
+  mcp__codex_apps__lovable_deploy_project({
+    project_id: "b8255283-fdd9-4c2d-8b46-ccb596f695e1"
+  })
+This publishes the project's current source; it does not accept the local ZIP or
+pin a SHA. Require the project's source to equal a future reviewed release commit
+immediately beforehand. No commit or push has been executed here.
+Do not invoke this tool now. If authenticated inspection finds a different live
+content architecture, reconcile it and update this runbook before approval.
+
+No guessed `wrangler pages deploy`, `--assets` upload or edge router deployment
+is a valid command for this candidate. The deployment runbook includes conditional
+Worker command forms only for an actually verified future target.
+
+Production GO requires all of the following:
+  - Authenticated, complete current origin/edge state and rollback evidence.
+  - Candidate reconstructed on any newer production work, preserving PPF/tuning.
+  - Repeated full QA if the candidate/base changes.
+  - A short publication freeze and fresh source/deployment/settings drift checks.
+  - Exact promotion target, supported rollback operation and explicit approval.
+
+6. ROLLBACK PROCEDURE
+
+Before GO, save immutable pre-release content deployment/source and edge
+version/traffic/configuration as a recovery pair. Verify the supported origin
+restore operation. For the documented Lovable flow, restore that exact published
+snapshot through the same host and republish after approval; retain the same edge.
+Do not reset the shared working tree or restore the older pre-PPF parent.
+
+If the verified host is a Worker with assets, record its saved version and split.
+The later single-version command form is:
+  npx wrangler rollback <saved-active-version-id> --name <verified-worker> --message "Restore pre-automotive-release version"
+A previous split requires restoring its exact weights with versions deploy.
+Independent routes/storage are not restored by a version rollback. This candidate
+does not change those resources. Actual IDs are unknown; no executable rollback
+command can safely be filled in now.
+
+After rollback, compare all 30 target locale routes plus preserved diagnostics,
+PPF, tuning, contacts, sitemap and redirects with the saved pre-release state.
+Never use local source HEAD or public HTML alone as proof of complete recovery.
+
+7. POST-RELEASE VERIFICATION PREPARED
+
+deployment/post-release-checklist.csv inventories five hubs and ten repair owners
+with Arabic counterparts (30 canonical URLs). qa/POST-RELEASE-VERIFICATION.txt
+adds preserved diagnostics, live rendered content, direct/reload/SPA and no-JS,
+mobile/RTL contact and quotation behavior, redirects, canonicals/hreflang, schema,
+sitemap/robots, PPF/tuning and Google Search Console URL Inspection steps.
+
+GSC indexed status/selected canonical and actual message/CRM receipt have not
+been verified for this undeployed candidate. Contact clicks/draft openings remain
+engagement signals; they are not confirmed qualified enquiries. Known production
+edge discrepancies are recorded separately and are not silently fixed here.
+
+FINAL STATUS
+
+Local source candidate: ready for review, combined QA PASS.
+Production deployment: NO-GO pending authenticated live-state and rollback gates.
+Prepared locally only. No commit, push, upload, publication or production change.

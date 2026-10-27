@@ -1,0 +1,127 @@
+{
+  "syntheticFixture": true,
+  "notAProductionObservation": true,
+  "rules": [
+    {
+      "id": "5addb0c068414fb5b985a869ded26c68",
+      "order": 1,
+      "description": "Mercedes oil change legacy URLs to existing service",
+      "enabled": true,
+      "expression": "(http.host in {\"digitecme.com\" \"www.digitecme.com\"}) and (http.request.method in {\"GET\" \"HEAD\"}) and (http.request.uri.path in {\"/brands/mercedes-benz-service-dubai/oil-change\" \"/brands/mercedes-benz-service-dubai/oil-change/\"})",
+      "action": "redirect",
+      "action_parameters": {
+        "from_value": {
+          "target_url": {
+            "value": "https://digitecme.com/services/mercedes-oil-change-dubai"
+          },
+          "status_code": 308,
+          "preserve_query_string": true
+        }
+      },
+      "placementObserved": "First",
+      "protected": true
+    },
+    {
+      "id": "dbe42693423442afbc3bab9b993242a7",
+      "order": 2,
+      "description": "Legacy Mercedes URLs to Mercedes brand service page",
+      "enabled": true,
+      "expression": "http.request.uri.path in {\"/services/mercedes-repair-dubai\" \"/services/mercedes-repair-dubai/\" \"/services/mercedes-service-dubai\" \"/best-mercedes-workshop-dubai\"}",
+      "action": "redirect",
+      "action_parameters": {
+        "from_value": {
+          "target_url": {
+            "value": "https://digitecme.com/brands/mercedes-benz-service-dubai"
+          },
+          "status_code": 301,
+          "preserve_query_string": true
+        }
+      },
+      "placementObserved": "After Mercedes oil change legacy URLs to existing service",
+      "protected": true
+    },
+    {
+      "description": "Mercedes Arabic oil legacy alias to existing service",
+      "expression": "(http.host in {\"digitecme.com\" \"www.digitecme.com\"}) and (http.request.method in {\"GET\" \"HEAD\"}) and (http.request.uri.path in {\"/ar/brands/mercedes-benz-service-dubai/oil-change\" \"/ar/brands/mercedes-benz-service-dubai/oil-change/\"})",
+      "action": "redirect",
+      "action_parameters": {
+        "from_value": {
+          "target_url": {
+            "value": "https://digitecme.com/ar/services/mercedes-oil-change-dubai"
+          },
+          "status_code": 308,
+          "preserve_query_string": false
+        }
+      },
+      "enabled": true,
+      "id": "SYNTHETIC-NEW-1"
+    },
+    {
+      "description": "Mercedes body repair legacy alias to existing service",
+      "expression": "(http.host in {\"digitecme.com\" \"www.digitecme.com\"}) and (http.request.method in {\"GET\" \"HEAD\"}) and (http.request.uri.path in {\"/brands/mercedes-benz-service-dubai/body-repair\" \"/brands/mercedes-benz-service-dubai/body-repair/\"})",
+      "action": "redirect",
+      "action_parameters": {
+        "from_value": {
+          "target_url": {
+            "value": "https://digitecme.com/services/mercedes-body-repair-dubai"
+          },
+          "status_code": 308,
+          "preserve_query_string": true
+        }
+      },
+      "enabled": true,
+      "id": "SYNTHETIC-NEW-2"
+    },
+    {
+      "description": "Mercedes Arabic battery legacy alias to existing service",
+      "expression": "(http.host in {\"digitecme.com\" \"www.digitecme.com\"}) and (http.request.method in {\"GET\" \"HEAD\"}) and (http.request.uri.path in {\"/ar/brands/mercedes-benz-service-dubai/battery-replacement\" \"/ar/brands/mercedes-benz-service-dubai/battery-replacement/\"})",
+      "action": "redirect",
+      "action_parameters": {
+        "from_value": {
+          "target_url": {
+            "value": "https://digitecme.com/ar/services/mercedes-battery-replacement-dubai"
+          },
+          "status_code": 308,
+          "preserve_query_string": true
+        }
+      },
+      "enabled": true,
+      "id": "SYNTHETIC-NEW-3"
+    },
+    {
+      "description": "Mercedes Arabic mechanical legacy alias to existing service",
+      "expression": "(http.host in {\"digitecme.com\" \"www.digitecme.com\"}) and (http.request.method in {\"GET\" \"HEAD\"}) and (http.request.uri.path in {\"/ar/brands/mercedes-benz-service-dubai/mechanical-repair\" \"/ar/brands/mercedes-benz-service-dubai/mechanical-repair/\"})",
+      "action": "redirect",
+      "action_parameters": {
+        "from_value": {
+          "target_url": {
+            "value": "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai"
+          },
+          "status_code": 308,
+          "preserve_query_string": true
+        }
+      },
+      "enabled": true,
+      "id": "SYNTHETIC-NEW-4"
+    },
+    {
+      "id": "9781b1ef743f4ffbaadbe5cb3250eeca",
+      "order": 3,
+      "description": "www to primary domain",
+      "enabled": true,
+      "expression": "(http.host eq \"www.digitecme.com\")",
+      "action": "redirect",
+      "action_parameters": {
+        "from_value": {
+          "target_url": {
+            "expression": "concat(\"https://digitecme.com\", http.request.uri.path)"
+          },
+          "status_code": 301,
+          "preserve_query_string": true
+        }
+      },
+      "placementObserved": "After Legacy Mercedes URLs to Mercedes brand service page",
+      "protected": true
+    }
+  ]
+}

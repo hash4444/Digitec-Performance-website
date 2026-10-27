@@ -1,0 +1,17 @@
+{
+  "checkedAt": "2026-10-19T06:44:50.000Z",
+  "base": "http://127.0.0.1:5196",
+  "serverStopped": true,
+  "results": [
+    {
+      "name": "focused repair browser",
+      "exitCode": 1,
+      "log": "outputs/repair-service-2026-10-19/qa/focused-browser.log"
+    },
+    {
+      "name": "existing master SEO browser",
+      "exitCode": 1,
+      "log": "outputs/repair-service-2026-10-19/qa/existing-master-browser.log"
+    }
+  ]
+}

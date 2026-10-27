@@ -1,0 +1,20 @@
+import { readFile, writeFile, mkdir } from 'node:fs/promises';
+import { createHash } from 'node:crypto';
+import { spawnSync } from 'node:child_process';
+const base='outputs/five-brand-service-2026-10-19';
+const file='cloudflare/routing-response-data.js';
+const manifest=JSON.parse(await readFile(`${base}/baseline/source-manifest.json`,'utf8'));
+const expected=manifest.find(r=>r.file===file).sha256;
+const hash=buf=>createHash('sha256').update(buf).digest('hex');
+const current=await readFile(file);
+if(hash(current)===expected){console.log('Generated router already matches pre-sprint bytes');process.exit(0);}
+const r=spawnSync('git',['show',`HEAD:${file}`],{maxBuffer:16*1024*1024,windowsHide:true});
+if(r.status!==0) throw Error('Unable to read clean baseline router');
+const text=r.stdout.toString('utf8');
+const candidates=[r.stdout,Buffer.from(text.replace(/\r?\n/g,'\r\n')),Buffer.from(text.replace(/\r\n/g,'\n'))];
+const original=candidates.find(b=>hash(b)===expected);
+if(!original) throw Error('HEAD blob does not match exact pre-sprint router hash; refuse restoration');
+await mkdir(`${base}/qa/generated/cloudflare`,{recursive:true});
+await writeFile(`${base}/qa/generated/${file}`,current);
+await writeFile(file,original);
+console.log('Archived regenerated 404 shell and restored exact pre-sprint router hash');

@@ -1,0 +1,240 @@
+{
+  "base": "6180f453feaaf21b8c786f23bb3867a09666ed64",
+  "differences": [
+    {
+      "file": "cloudflare/digitec-seo-router.js",
+      "kind": "line-endings-only",
+      "sprint": false,
+      "generatedBuildOutput": false,
+      "baseSha256": "3f408e9716c0f9e4cafed3731bfc3d3add8768e635205aacfe7378a5830ff808",
+      "candidateSha256": "47208557115070b192a66e867c27be7b847b00a6304c25519fdb84033b7d1e45",
+      "allowed": true
+    },
+    {
+      "file": "cloudflare/mercedes-seo-router.js",
+      "kind": "line-endings-only",
+      "sprint": false,
+      "generatedBuildOutput": false,
+      "baseSha256": "a7799e6a45c54bb48a3c3e3e7ed5903a0501ef7da916d1fbc72dd82df8cd0318",
+      "candidateSha256": "167bef07cddeb86365dcfb426b3773f72c6953e1119492b5bc37862a50f590c8",
+      "allowed": true
+    },
+    {
+      "file": "cloudflare/routing-response-data.js",
+      "kind": "content",
+      "sprint": false,
+      "generatedBuildOutput": true,
+      "baseSha256": "96885076abc4eaced1c8aa99ce0a9014dc28bebfaeb602ffc8641b280534eec5",
+      "candidateSha256": "387fa0cae72ac769fe17fe4cf392db94999a178cf3c6260097a5afa04627d905",
+      "allowed": true
+    },
+    {
+      "file": "docs/seo/mercedes-permanent-redirects.csv",
+      "kind": "line-endings-only",
+      "sprint": false,
+      "generatedBuildOutput": false,
+      "baseSha256": "5fe33e56f91690ccb2fc63c9ceeb5b9cd5a8a15a8bc5e04f66eb947b1dee6e8c",
+      "candidateSha256": "7e283c07f5e3ec1ddadf4040858cdb9b0db26e6cc1ae7ef1e6aa0c874a616170",
+      "allowed": true
+    },
+    {
+      "file": "docs/seo/oil-change-validation.json",
+      "kind": "line-endings-only",
+      "sprint": false,
+      "generatedBuildOutput": false,
+      "baseSha256": "9449b1813dd19919bb337b34d2831a2ba6c118a45a0e5192fc951d4fd8426c97",
+      "candidateSha256": "3909cbaef9348a4f48f1dd783dade2ef0cd28bbc5f08296a1bd958707e537653",
+      "allowed": true
+    },
+    {
+      "file": "docs/seo/paint-care-cluster-audit.json",
+      "kind": "content",
+      "sprint": false,
+      "generatedBuildOutput": true,
+      "baseSha256": "67dd6732087921cabc8a23a0c9a54d0ab06e5657aaedfcf7345dce4fddc9867c",
+      "candidateSha256": "3118740d0ba6e03c5c793fd2a0c34e27f58195789ea66f5c98dc02cd4cc972c5",
+      "allowed": true
+    },
+    {
+      "file": "docs/seo/permanent-redirects.csv",
+      "kind": "line-endings-only",
+      "sprint": false,
+      "generatedBuildOutput": false,
+      "baseSha256": "78ff713173aefb479731ca1e215a5959d752086fb8f55058db3b1a38a784e71d",
+      "candidateSha256": "ec0fe7382153ac66bdaf85f7ee871c1542e73b907020e1bc5a180603f7253732",
+      "allowed": true
+    },
+    {
+      "file": "docs/seo/protection-release-validation.json",
+      "kind": "content",
+      "sprint": false,
+      "generatedBuildOutput": true,
+      "baseSha256": "2ffd9ac700582837d4c81405ea72223654648331a1f90119fd455598e0d39d96",
+      "candidateSha256": "d9d1b616e08dedd06c01df9b7f796c9e76b175975e56b7e89ff25a2387b3c6d9",
+      "allowed": true
+    },
+    {
+      "file": "docs/seo/query-release-validation.json",
+      "kind": "content",
+      "sprint": false,
+      "generatedBuildOutput": true,
+      "baseSha256": "700e45f5202d71f670a81c76cd7515dbd4803efe1a997399d82a3267bf8a586a",
+      "candidateSha256": "f34966472813e0d3ef66e57ef87ea215a61d74b6d8e6b5f308b4def502992ee4",
+      "allowed": true
+    },
+    {
+      "file": "docs/seo/removed-brand-urls.csv",
+      "kind": "line-endings-only",
+      "sprint": false,
+      "generatedBuildOutput": false,
+      "baseSha256": "8642eac95809ba15119df480f232a83286cfb534908851ba37f9bf7b55ac659e",
+      "candidateSha256": "019a8bb7c31ccc0060666153a3c80ab890611c361bf7c158179ff3b7842a6cd0",
+      "allowed": true
+    },
+    {
+      "file": "docs/seo/route-schema-matrix.csv",
+      "kind": "content",
+      "sprint": false,
+      "generatedBuildOutput": true,
+      "baseSha256": "b07221a2a4fb3e0ca74748315ebfd19eb0650df57301e8f2d8d22cf31000d0df",
+      "candidateSha256": "bc240f41161b0f119e908745e9b2b32fbb4bb533870a0a0bd1b1ffc9683aa8e7",
+      "allowed": true
+    },
+    {
+      "file": "docs/seo/schema-inventory.md",
+      "kind": "line-endings-only",
+      "sprint": false,
+      "generatedBuildOutput": false,
+      "baseSha256": "86f0064cfc9379586011942d447345dbffb509538aca443f493c05c9a1f9504e",
+      "candidateSha256": "42944b4a15627795da5ef75784dfd386ec5562f7764aa7bad86648edc3301c3b",
+      "allowed": true
+    },
+    {
+      "file": "docs/seo/suspension-validation.json",
+      "kind": "line-endings-only",
+      "sprint": false,
+      "generatedBuildOutput": false,
+      "baseSha256": "d47f6f75a4651ca7ae87453d8522017f9a52cce8bb489a12e78ba575b5f58352",
+      "candidateSha256": "098c1581b8baa25753170834acc89ce2d404d464bc2949a323143ad2250d54dc",
+      "allowed": true
+    },
+    {
+      "file": "docs/seo/transmission-validation.json",
+      "kind": "line-endings-only",
+      "sprint": false,
+      "generatedBuildOutput": false,
+      "baseSha256": "e8c29855d31305430612bb87bbc35eade75fc2bab235830bef5f23f0d56db348",
+      "candidateSha256": "aa0af2b7cf6c74851b884b06b92cd564b40ed7a2ae38975aa7c916306ef85045",
+      "allowed": true
+    },
+    {
+      "file": "public/sitemap.xml",
+      "kind": "line-endings-only",
+      "sprint": false,
+      "generatedBuildOutput": true,
+      "baseSha256": "258b09059630cd2c19eaae9cf81b60f2cab85b2a49fc46c70f85296c3b7356bd",
+      "candidateSha256": "f74410aac2d522838dbce5037843cd03b34096817581d6732f852b86926a2c67",
+      "allowed": true
+    },
+    {
+      "file": "scripts/test-master-seo-browser.mjs",
+      "kind": "content",
+      "sprint": true,
+      "generatedBuildOutput": false,
+      "baseSha256": "0e515beebfc68f8c841d837e127940734a00523feaabc76b2c731d6e61f81237",
+      "candidateSha256": "9eaa97c880bcc308b09684d662b151d51d3f9c69511acbfd6432de209050ee2b",
+      "allowed": true
+    },
+    {
+      "file": "src/data/brands.ts",
+      "kind": "content",
+      "sprint": true,
+      "generatedBuildOutput": false,
+      "baseSha256": "dac6d48dfa9defd3410a4db60abbaeeb7ab6e542faa3dbfcb1e7493cf749d64b",
+      "candidateSha256": "bc5ff647c044a7ea4b800cb83738ebdc6ee8bcab720bf6af4e8c2f222a351464",
+      "allowed": true
+    },
+    {
+      "file": "src/data/priorityBrandSeo.ts",
+      "kind": "content",
+      "sprint": true,
+      "generatedBuildOutput": false,
+      "baseSha256": "e0a2123c2e85902ccdafefe0b0f14ef5c5ae268fa697a6d0fc248266e04e5876",
+      "candidateSha256": "f063a940185a569e28db046a7fb9148fed9d1d95928608e8435e1e491b34b6eb",
+      "allowed": true
+    },
+    {
+      "file": "src/i18n/ar-brands.ts",
+      "kind": "content",
+      "sprint": true,
+      "generatedBuildOutput": false,
+      "baseSha256": "391a8b4b6fa1a914bd43f1e4fbf8bc020b250b613253472d94a94c9ce98f35aa",
+      "candidateSha256": "70295d4699ca0be73a18c1bf7efc11d65db29e64f6937667e3b5016cd5ddff4b",
+      "allowed": true
+    },
+    {
+      "file": "src/lib/routing-paths.json",
+      "kind": "line-endings-only",
+      "sprint": false,
+      "generatedBuildOutput": true,
+      "baseSha256": "3a8ebae5a1efdcb54b739a0131f369c5868af7978be2b136871fa291f510e770",
+      "candidateSha256": "76be43b4a37f130fee8f306cceb03dcde7d1b4809e1c5bc6b9d17a7bdd5bae1e",
+      "allowed": true
+    },
+    {
+      "file": "src/pages/BrandPage.tsx",
+      "kind": "content",
+      "sprint": true,
+      "generatedBuildOutput": false,
+      "baseSha256": "b0cd96af71054707d10da1b77128c1191fe5bf36da7f53498638d73700887992",
+      "candidateSha256": "231cb000c99d7387629ffa409dfe99917fbd7ee3435f6ec542ecd933953de8b1",
+      "allowed": true
+    },
+    {
+      "file": "src/pages/BrandServicePage.tsx",
+      "kind": "content",
+      "sprint": true,
+      "generatedBuildOutput": false,
+      "baseSha256": "f9934e2c76437935bd171704888355fdf5473d20859d4fc2ea9c11fd44703557",
+      "candidateSha256": "033cbc5a228c36e83877e1184161a337a4fa2b12ed1db8272c2509eee44960e4",
+      "allowed": true
+    },
+    {
+      "file": "src/components/BrandServiceScope.tsx",
+      "kind": "added",
+      "sprint": true,
+      "allowed": true,
+      "candidateSha256": "090efec27c4931938ce0eee88501a7d994a1b4bd7ce88020520142cc9d2ce8f9"
+    },
+    {
+      "file": "src/data/repairServiceContent.ts",
+      "kind": "added",
+      "sprint": true,
+      "allowed": true,
+      "candidateSha256": "3c32436b9b5ccc6bc78eb6bc03c6fb6af0426ee5d95382ef57edf874f03f7273"
+    },
+    {
+      "file": "src/data/repairServiceArabic.ts",
+      "kind": "added",
+      "sprint": true,
+      "allowed": true,
+      "candidateSha256": "8ac0044a9a50a9f8a108ffd77cfc343306c7d13848c80f4584ff1ffb99b113f1"
+    },
+    {
+      "file": "src/data/brandServiceSprint.ts",
+      "kind": "added",
+      "sprint": true,
+      "allowed": true,
+      "candidateSha256": "b9ec9f06ffbca5aa32ebc170ed922761eaf78a77ac4eaead4f018368167108c0"
+    },
+    {
+      "file": "src/components/RepairEnquiryPanel.tsx",
+      "kind": "added",
+      "sprint": true,
+      "allowed": true,
+      "candidateSha256": "976f270a7d55fdc9e239ed1684564f1ea1d4ae5c32722f8fb60108db5751b09b"
+    }
+  ],
+  "unexpected": [],
+  "passed": true
+}

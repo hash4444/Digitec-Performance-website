@@ -1,0 +1,29 @@
+{
+  "recordedAtUtc": "2026-10-26T07:10:19Z",
+  "readOnly": true,
+  "freshLayerVerificationPerformed": false,
+  "status": "unavailable_in_subagent_browser_context",
+  "observations": [
+    {
+      "tool": "cua.getState",
+      "result": { "apps": [], "browsers": [] }
+    },
+    {
+      "tool": "cua.createBrowserTab",
+      "browser": "iab",
+      "url": "https://dash.cloudflare.com",
+      "visible": false,
+      "result": "Browser is not available: iab"
+    },
+    {
+      "tool": "cua.createBrowserTab",
+      "browser": "iab",
+      "url": "https://dash.cloudflare.com/[account-id-redacted]/digitecme.com/rules/overview",
+      "visible": false,
+      "result": "Browser is not available: iab"
+    }
+  ],
+  "requiredNextStep": "Root operator must refresh authenticated layer checks in its available browser context before any deployment. This record does not replace those checks.",
+  "productionMutations": 0,
+  "rootBrowserTabAccessed": false
+}

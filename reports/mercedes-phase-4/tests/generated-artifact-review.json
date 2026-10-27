@@ -1,0 +1,1465 @@
+{
+  "reviewedAtUtc": "2026-10-26T09:16:59.280Z",
+  "offlineOnly": true,
+  "networkRequests": 0,
+  "generatedArtifactMutations": 0,
+  "inputRoots": {
+    "original": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC",
+    "baseline": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-4\\baseline.local",
+    "candidate": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-4\\candidate.local"
+  },
+  "files": {
+    "cloudflare/routing-response-data.js": {
+      "original": "81d88b0bc0dfb8a97221111494deff467958dd36efcf4802fd58bc69c1b86a27",
+      "baseline": "48816c06cbe5320a2f42958cb9622590a8230b6b74c6468372eae5c6b382b849",
+      "candidate": "ddcb3b117b5fc4e717cc249828b2b6029360452b60d037921a032cea4c0791cc"
+    },
+    "docs/seo/route-schema-matrix.csv": {
+      "original": "1b1ee3c4202174fb42c4e2721a4c69ba0b1445b2555c5b8882f25d4af6deb6a5",
+      "baseline": "f5b72534466d00aae699093cd62fd37e34a061cbd8ddf738089aeecd8d12174d",
+      "candidate": "f5b72534466d00aae699093cd62fd37e34a061cbd8ddf738089aeecd8d12174d"
+    },
+    "docs/seo/protection-release-validation.json": {
+      "original": "5bf229b97e973c6b3f6a03df2661c76b411b876ba38e35fb1a794e2f314ec841",
+      "baseline": "5f1fc6facdf0a8fdbde18310f899b7571d2857119b1efa1be612958b846acbb1",
+      "candidate": "8a8834357e055f67fb924f84f01c3f7f3dc28da6c677eaae539dad1d6cde13b6"
+    },
+    "docs/seo/query-release-validation.json": {
+      "original": "8e384fd3c68555fdcadbb6c0dfca5105e26bcb1ce55da943bff22a459b568263",
+      "baseline": "819a03b998c826ddca3b5220390b70473b05219f4102fb3a4da87158abd12529",
+      "candidate": "d599464c54eb1ed53031c59231914737f2f9bdeeddedd3a09f7f21b17a6ec0d0"
+    },
+    "public/sitemap.xml": {
+      "original": "f74410aac2d522838dbce5037843cd03b34096817581d6732f852b86926a2c67",
+      "baseline": "294c4917d6a19ff8d5fb3575d780debe465643520031850802355d1b54ad42cf",
+      "candidate": "294c4917d6a19ff8d5fb3575d780debe465643520031850802355d1b54ad42cf"
+    }
+  },
+  "routingResponseData": {
+    "exportNames": [
+      "validPaths",
+      "legacyPaths",
+      "localizedFallbacks",
+      "notFoundHtml"
+    ],
+    "arrays": [
+      {
+        "export": "validPaths",
+        "count": 1256,
+        "baselineEqualsOriginal": true,
+        "candidateEqualsOriginal": true,
+        "candidateEqualsBaseline": true
+      },
+      {
+        "export": "legacyPaths",
+        "count": 253,
+        "baselineEqualsOriginal": true,
+        "candidateEqualsOriginal": true,
+        "candidateEqualsBaseline": true
+      },
+      {
+        "export": "localizedFallbacks",
+        "count": 94,
+        "baselineEqualsOriginal": true,
+        "candidateEqualsOriginal": true,
+        "candidateEqualsBaseline": true
+      }
+    ],
+    "notFoundHtml": [
+      {
+        "language": "en",
+        "assets": {
+          "original": [
+            "/assets/index-BRK3mUly.js",
+            "/assets/index-ChEk0tDZ.css"
+          ],
+          "baseline": [
+            "/assets/index-CvWuKuLH.js",
+            "/assets/index-CumuXRQA.css"
+          ],
+          "candidate": [
+            "/assets/index-DxoEjBa9.js",
+            "/assets/index-CumuXRQA.css"
+          ]
+        },
+        "rawSha256": {
+          "original": "bd6c524ed329611859bef5b00567c554eb0c3be81a9763f36da78bf75ab9147e",
+          "baseline": "318855e105a7b32c1c5ca6ac3135fb037c00fe9cc7bd9da43fea22d17e1be0ac",
+          "candidate": "0d10b27153f4d1fc9abb6f572c1df9f373e30a1484050d233b7d6b07ec3ba82c"
+        },
+        "baselineEqualsOriginalAfterOnlyViteAssetHashNormalization": true,
+        "candidateEqualsOriginalAfterOnlyViteAssetHashNormalization": true,
+        "candidateEqualsBaselineAfterOnlyViteAssetHashNormalization": true
+      },
+      {
+        "language": "ar",
+        "assets": {
+          "original": [
+            "/assets/index-BRK3mUly.js",
+            "/assets/index-ChEk0tDZ.css"
+          ],
+          "baseline": [
+            "/assets/index-CvWuKuLH.js",
+            "/assets/index-CumuXRQA.css"
+          ],
+          "candidate": [
+            "/assets/index-DxoEjBa9.js",
+            "/assets/index-CumuXRQA.css"
+          ]
+        },
+        "rawSha256": {
+          "original": "e5a72789fdbe24028306f447b5508874bc4235b44ee9b13aa36a50dfddba79e9",
+          "baseline": "c0afeefdf1a12967041a2bde9b922471d36d8ccab939882ff75d00cea9861daf",
+          "candidate": "97340d9d876beb8e9b73cc8f4487c43232f7042c15752b492c99b19dbd9e3949"
+        },
+        "baselineEqualsOriginalAfterOnlyViteAssetHashNormalization": true,
+        "candidateEqualsOriginalAfterOnlyViteAssetHashNormalization": true,
+        "candidateEqualsBaselineAfterOnlyViteAssetHashNormalization": true
+      }
+    ],
+    "semanticRoutingDataComparisonPassed": true,
+    "limit": "Only Vite hash suffixes in /assets/ references are normalized in the two 404 documents; the routing arrays and all remaining HTML bytes must match. This does not prove production responses or Cloudflare state."
+  },
+  "sitemap": {
+    "counts": {
+      "original": 1005,
+      "baseline": 1005,
+      "candidate": 1005
+    },
+    "baselineUrlSequenceEqualsOriginal": true,
+    "candidateUrlSequenceEqualsOriginal": true,
+    "baselineEqualsCandidate": true,
+    "originalToBaselineChanges": [
+      {
+        "url": "https://digitecme.com/ar/brands/mercedes-benz-service-dubai",
+        "before": "2026-10-05",
+        "after": "2026-10-20"
+      },
+      {
+        "url": "https://digitecme.com/ar/services",
+        "before": "2026-10-12",
+        "after": "2026-10-20"
+      },
+      {
+        "url": "https://digitecme.com/brands/mercedes-benz-service-dubai",
+        "before": "2026-10-05",
+        "after": "2026-10-20"
+      },
+      {
+        "url": "https://digitecme.com/services",
+        "before": "2026-10-12",
+        "after": "2026-10-20"
+      }
+    ],
+    "originalToCandidateChanges": [
+      {
+        "url": "https://digitecme.com/ar/brands/mercedes-benz-service-dubai",
+        "before": "2026-10-05",
+        "after": "2026-10-20"
+      },
+      {
+        "url": "https://digitecme.com/ar/services",
+        "before": "2026-10-12",
+        "after": "2026-10-20"
+      },
+      {
+        "url": "https://digitecme.com/brands/mercedes-benz-service-dubai",
+        "before": "2026-10-05",
+        "after": "2026-10-20"
+      },
+      {
+        "url": "https://digitecme.com/services",
+        "before": "2026-10-12",
+        "after": "2026-10-20"
+      }
+    ],
+    "onlyLastmodChanged": true,
+    "releaseStatus": "HOLD: existing pipeline regenerates four original lastmod values even on the unchanged baseline. No authorization to release that drift, alter sitemap logic or modify these artifacts is inferred."
+  },
+  "routeSchemaMatrix": {
+    "rowCounts": {
+      "original": 1256,
+      "baseline": 1256,
+      "candidate": 1256
+    },
+    "columnsUnchanged": true,
+    "candidateByteEqualsBaseline": true,
+    "baselinePathAndCanonicalSequenceEqualsOriginal": true,
+    "candidatePathAndCanonicalSequenceEqualsOriginal": true,
+    "changedCellCount": 90,
+    "changedColumns": [
+      "Inbound internal links",
+      "Title",
+      "After schema"
+    ],
+    "originalToBaselineChanges": [
+      {
+        "path": "/",
+        "column": "Inbound internal links",
+        "before": "1163",
+        "after": "1164"
+      },
+      {
+        "path": "/ar/blog/mercedes-c-class-service-dubai-guide",
+        "column": "Inbound internal links",
+        "before": "4",
+        "after": "3"
+      },
+      {
+        "path": "/ar/blog/mercedes-e-class-service-dubai-guide",
+        "column": "Inbound internal links",
+        "before": "4",
+        "after": "3"
+      },
+      {
+        "path": "/ar/blog/mercedes-g63-service-dubai-guide",
+        "column": "Inbound internal links",
+        "before": "5",
+        "after": "4"
+      },
+      {
+        "path": "/ar/blog/mercedes-s-class-service-dubai-guide",
+        "column": "Inbound internal links",
+        "before": "4",
+        "after": "3"
+      },
+      {
+        "path": "/ar/brands/bmw-service-dubai",
+        "column": "Title",
+        "before": "إصلاح وصيانة BMW في دبي | مركز ديجي-تك",
+        "after": "إصلاح وصيانة بي إم دبليو في دبي | مركز ديجي-تك"
+      },
+      {
+        "path": "/ar/brands/bmw-service-dubai/ac-repair",
+        "column": "Inbound internal links",
+        "before": "15",
+        "after": "16"
+      },
+      {
+        "path": "/ar/brands/bmw-service-dubai/ac-repair",
+        "column": "Title",
+        "before": "إصلاح التكييف BMW في دبي | ديجي-تك",
+        "after": "إصلاح تكييف بي إم دبليو في دبي | ديجي-تك"
+      },
+      {
+        "path": "/ar/brands/bmw-service-dubai/engine-diagnostics",
+        "column": "Inbound internal links",
+        "before": "15",
+        "after": "16"
+      },
+      {
+        "path": "/ar/brands/bmw-service-dubai/engine-diagnostics",
+        "column": "Title",
+        "before": "تشخيص المحرك BMW في دبي | ديجي-تك",
+        "after": "تشخيص أعطال بي إم دبليو في دبي | ديجي-تك"
+      },
+      {
+        "path": "/ar/brands/bmw-service-dubai/mechanical-repair",
+        "column": "Title",
+        "before": "الإصلاح الميكانيكي BMW في دبي | ديجي-تك",
+        "after": "إصلاح محرك بي إم دبليو في دبي | ديجي-تك"
+      },
+      {
+        "path": "/ar/brands/bmw-service-dubai/transmission-repair",
+        "column": "Title",
+        "before": "إصلاح ناقل الحركة BMW في دبي | ديجي-تك",
+        "after": "إصلاح قير بي إم دبليو في دبي | ديجي-تك"
+      },
+      {
+        "path": "/ar/brands/lamborghini-service-dubai",
+        "column": "Title",
+        "before": "إصلاح وصيانة Lamborghini في دبي | مركز ديجي-تك",
+        "after": "إصلاح وصيانة لامبورغيني في دبي | مركز ديجي-تك"
+      },
+      {
+        "path": "/ar/brands/lamborghini-service-dubai/mechanical-repair",
+        "column": "Title",
+        "before": "الإصلاح الميكانيكي Lamborghini في دبي | ديجي-تك",
+        "after": "إصلاح محرك لامبورغيني في دبي | ديجي-تك"
+      },
+      {
+        "path": "/ar/brands/lamborghini-service-dubai/transmission-repair",
+        "column": "Title",
+        "before": "إصلاح ناقل الحركة Lamborghini في دبي | ديجي-تك",
+        "after": "إصلاح قير لامبورغيني في دبي | ديجي-تك"
+      },
+      {
+        "path": "/ar/brands/mercedes-benz-service-dubai",
+        "column": "Title",
+        "before": "إصلاح وصيانة مرسيدس في دبي | ديجي-تك",
+        "after": "صيانة مرسيدس في دبي | الصيانة والإصلاح | ديجي-تك"
+      },
+      {
+        "path": "/ar/brands/porsche-service-dubai/engine-diagnostics",
+        "column": "Inbound internal links",
+        "before": "15",
+        "after": "16"
+      },
+      {
+        "path": "/ar/brands/porsche-service-dubai/engine-diagnostics",
+        "column": "Title",
+        "before": "تشخيص المحرك Porsche في دبي | ديجي-تك",
+        "after": "تشخيص أعطال بورشه في دبي | ديجي-تك"
+      },
+      {
+        "path": "/ar/brands/range-rover-service-dubai/ac-repair",
+        "column": "Inbound internal links",
+        "before": "15",
+        "after": "16"
+      },
+      {
+        "path": "/ar/brands/range-rover-service-dubai/ac-repair",
+        "column": "Title",
+        "before": "إصلاح التكييف Range Rover في دبي | ديجي-تك",
+        "after": "إصلاح تكييف رينج روفر في دبي | ديجي-تك"
+      },
+      {
+        "path": "/ar/brands/rolls-royce-service-dubai",
+        "column": "Title",
+        "before": "إصلاح وصيانة Rolls-Royce في دبي | مركز ديجي-تك",
+        "after": "إصلاح وصيانة رولز رويس في دبي | مركز ديجي-تك"
+      },
+      {
+        "path": "/ar/brands/rolls-royce-service-dubai/mechanical-repair",
+        "column": "Title",
+        "before": "الإصلاح الميكانيكي Rolls-Royce في دبي | ديجي-تك",
+        "after": "إصلاح محرك رولز رويس في دبي | ديجي-تك"
+      },
+      {
+        "path": "/ar/brands/rolls-royce-service-dubai/suspension-repair",
+        "column": "Title",
+        "before": "إصلاح التعليق Rolls-Royce في دبي | ديجي-تك",
+        "after": "إصلاح تعليق رولز رويس في دبي | ديجي-تك"
+      },
+      {
+        "path": "/ar/brands/volkswagen-service-dubai",
+        "column": "Title",
+        "before": "إصلاح وصيانة Volkswagen في دبي | مركز ديجي-تك",
+        "after": "إصلاح وصيانة فولكس فاجن في دبي | مركز ديجي-تك"
+      },
+      {
+        "path": "/ar/brands/volkswagen-service-dubai/ac-repair",
+        "column": "Inbound internal links",
+        "before": "15",
+        "after": "16"
+      },
+      {
+        "path": "/ar/brands/volkswagen-service-dubai/ac-repair",
+        "column": "Title",
+        "before": "إصلاح التكييف Volkswagen في دبي | ديجي-تك",
+        "after": "إصلاح تكييف فولكس فاجن في دبي | ديجي-تك"
+      },
+      {
+        "path": "/ar/brands/volkswagen-service-dubai/battery-replacement",
+        "column": "Inbound internal links",
+        "before": "15",
+        "after": "14"
+      },
+      {
+        "path": "/ar/brands/volkswagen-service-dubai/body-repair",
+        "column": "Inbound internal links",
+        "before": "15",
+        "after": "14"
+      },
+      {
+        "path": "/ar/brands/volkswagen-service-dubai/electrical-repair",
+        "column": "Inbound internal links",
+        "before": "15",
+        "after": "14"
+      },
+      {
+        "path": "/ar/brands/volkswagen-service-dubai/exhaust-repair",
+        "column": "Inbound internal links",
+        "before": "15",
+        "after": "14"
+      },
+      {
+        "path": "/ar/brands/volkswagen-service-dubai/fuel-system-repair",
+        "column": "Inbound internal links",
+        "before": "15",
+        "after": "14"
+      },
+      {
+        "path": "/ar/brands/volkswagen-service-dubai/mechanical-repair",
+        "column": "Inbound internal links",
+        "before": "15",
+        "after": "14"
+      },
+      {
+        "path": "/ar/brands/volkswagen-service-dubai/steering-repair",
+        "column": "Inbound internal links",
+        "before": "15",
+        "after": "14"
+      },
+      {
+        "path": "/ar/brands/volkswagen-service-dubai/suspension-repair",
+        "column": "Inbound internal links",
+        "before": "15",
+        "after": "14"
+      },
+      {
+        "path": "/ar/brands/volkswagen-service-dubai/tire-repair",
+        "column": "Inbound internal links",
+        "before": "15",
+        "after": "14"
+      },
+      {
+        "path": "/ar/brands/volkswagen-service-dubai/transmission-repair",
+        "column": "Inbound internal links",
+        "before": "15",
+        "after": "14"
+      },
+      {
+        "path": "/ar/services/auto-electrical-repair-dubai",
+        "column": "Inbound internal links",
+        "before": "20",
+        "after": "28"
+      },
+      {
+        "path": "/ar/services/battery-replacement-dubai",
+        "column": "Inbound internal links",
+        "before": "5",
+        "after": "6"
+      },
+      {
+        "path": "/ar/services/car-ac-repair-dubai",
+        "column": "After schema",
+        "before": "AutoRepair; AutomotiveBusiness; BreadcrumbList; City; ContactPoint; ImageObject; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Service; WebPage; WebSite",
+        "after": "Answer; AutoRepair; AutomotiveBusiness; BreadcrumbList; City; ContactPoint; FAQPage; ImageObject; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Question; Service; WebPage; WebSite"
+      },
+      {
+        "path": "/ar/services/car-ac-repair-dubai",
+        "column": "Inbound internal links",
+        "before": "31",
+        "after": "35"
+      },
+      {
+        "path": "/ar/services/car-ac-repair-dubai",
+        "column": "Title",
+        "before": "إصلاح تكييف السيارات في دبي | مركز ديجي-تك دبي",
+        "after": "إصلاح تكييف السيارات في دبي | فحص التبريد والتسرب | ديجي-تك"
+      },
+      {
+        "path": "/ar/services/car-body-repair-dubai",
+        "column": "Inbound internal links",
+        "before": "7",
+        "after": "8"
+      },
+      {
+        "path": "/ar/services/car-diagnostics-dubai",
+        "column": "Title",
+        "before": "برمجة وتشخيص السيارات | مركز ديجي-تك دبي",
+        "after": "فحص كمبيوتر وتشخيص أعطال السيارات في دبي | ديجي-تك"
+      },
+      {
+        "path": "/ar/services/exhaust-repair-dubai",
+        "column": "Inbound internal links",
+        "before": "4",
+        "after": "5"
+      },
+      {
+        "path": "/ar/services/fuel-system-repair-dubai",
+        "column": "Inbound internal links",
+        "before": "6",
+        "after": "7"
+      },
+      {
+        "path": "/ar/services/mechanical-repair-dubai",
+        "column": "Inbound internal links",
+        "before": "61",
+        "after": "62"
+      },
+      {
+        "path": "/ar/services/mercedes-ac-repair-dubai",
+        "column": "Inbound internal links",
+        "before": "18",
+        "after": "19"
+      },
+      {
+        "path": "/ar/services/mercedes-ac-repair-dubai",
+        "column": "Title",
+        "before": "إصلاح مكيف مرسيدس في دبي | ديجي تيك القوز",
+        "after": "إصلاح تكييف مرسيدس في دبي | ديجي-تك"
+      },
+      {
+        "path": "/ar/services/mercedes-diagnostics-dubai",
+        "column": "Inbound internal links",
+        "before": "20",
+        "after": "21"
+      },
+      {
+        "path": "/ar/services/steering-repair-dubai",
+        "column": "Inbound internal links",
+        "before": "7",
+        "after": "8"
+      },
+      {
+        "path": "/ar/services/suspension-repair-dubai",
+        "column": "Inbound internal links",
+        "before": "38",
+        "after": "39"
+      },
+      {
+        "path": "/ar/services/tire-repair-dubai",
+        "column": "Inbound internal links",
+        "before": "4",
+        "after": "5"
+      },
+      {
+        "path": "/brands/bmw-service-dubai/ac-repair",
+        "column": "Inbound internal links",
+        "before": "15",
+        "after": "16"
+      },
+      {
+        "path": "/brands/bmw-service-dubai/ac-repair",
+        "column": "Title",
+        "before": "BMW AC Repair Dubai | Digi-Tec",
+        "after": "BMW AC Repair Dubai | Cooling Assessment | DIGI-TEC"
+      },
+      {
+        "path": "/brands/bmw-service-dubai/engine-diagnostics",
+        "column": "Inbound internal links",
+        "before": "22",
+        "after": "23"
+      },
+      {
+        "path": "/brands/bmw-service-dubai/engine-diagnostics",
+        "column": "Title",
+        "before": "BMW ISTA+ Diagnostics &amp; Coding Dubai | DIGI-TEC",
+        "after": "BMW Diagnostics Dubai | Fault Assessment | DIGI-TEC"
+      },
+      {
+        "path": "/brands/bmw-service-dubai/transmission-repair",
+        "column": "Title",
+        "before": "BMW Transmission Repair Dubai | Digi-Tec",
+        "after": "BMW Transmission &amp; Gearbox Repair Dubai | DIGI-TEC"
+      },
+      {
+        "path": "/brands/mercedes-benz-service-dubai",
+        "column": "Title",
+        "before": "Mercedes Repair &amp; Service Dubai | Al Quoz | Digi-Tec",
+        "after": "Mercedes Service Dubai | Maintenance &amp; Repair | DIGI-TEC"
+      },
+      {
+        "path": "/brands/porsche-service-dubai/engine-diagnostics",
+        "column": "Inbound internal links",
+        "before": "30",
+        "after": "31"
+      },
+      {
+        "path": "/brands/porsche-service-dubai/engine-diagnostics",
+        "column": "Title",
+        "before": "Porsche PIWIS 3 Diagnostics Dubai | DIGI-TEC",
+        "after": "Porsche Diagnostics Dubai | Fault Assessment | DIGI-TEC"
+      },
+      {
+        "path": "/brands/range-rover-service-dubai/ac-repair",
+        "column": "Inbound internal links",
+        "before": "15",
+        "after": "16"
+      },
+      {
+        "path": "/brands/range-rover-service-dubai/ac-repair",
+        "column": "Title",
+        "before": "Range Rover AC Repair Dubai | Digi-Tec",
+        "after": "Range Rover AC Repair Dubai | Cooling Assessment | DIGI-TEC"
+      },
+      {
+        "path": "/brands/volkswagen-service-dubai/ac-repair",
+        "column": "Inbound internal links",
+        "before": "15",
+        "after": "16"
+      },
+      {
+        "path": "/brands/volkswagen-service-dubai/ac-repair",
+        "column": "Title",
+        "before": "Volkswagen AC Repair Dubai | Digi-Tec",
+        "after": "Volkswagen AC Repair Dubai | Cooling Assessment | DIGI-TEC"
+      },
+      {
+        "path": "/brands/volkswagen-service-dubai/battery-replacement",
+        "column": "Inbound internal links",
+        "before": "15",
+        "after": "14"
+      },
+      {
+        "path": "/brands/volkswagen-service-dubai/body-repair",
+        "column": "Inbound internal links",
+        "before": "15",
+        "after": "14"
+      },
+      {
+        "path": "/brands/volkswagen-service-dubai/electrical-repair",
+        "column": "Inbound internal links",
+        "before": "15",
+        "after": "14"
+      },
+      {
+        "path": "/brands/volkswagen-service-dubai/exhaust-repair",
+        "column": "Inbound internal links",
+        "before": "15",
+        "after": "14"
+      },
+      {
+        "path": "/brands/volkswagen-service-dubai/fuel-system-repair",
+        "column": "Inbound internal links",
+        "before": "15",
+        "after": "14"
+      },
+      {
+        "path": "/brands/volkswagen-service-dubai/mechanical-repair",
+        "column": "Inbound internal links",
+        "before": "15",
+        "after": "14"
+      },
+      {
+        "path": "/brands/volkswagen-service-dubai/steering-repair",
+        "column": "Inbound internal links",
+        "before": "15",
+        "after": "14"
+      },
+      {
+        "path": "/brands/volkswagen-service-dubai/suspension-repair",
+        "column": "Inbound internal links",
+        "before": "15",
+        "after": "14"
+      },
+      {
+        "path": "/brands/volkswagen-service-dubai/tire-repair",
+        "column": "Inbound internal links",
+        "before": "15",
+        "after": "14"
+      },
+      {
+        "path": "/brands/volkswagen-service-dubai/transmission-repair",
+        "column": "Inbound internal links",
+        "before": "15",
+        "after": "14"
+      },
+      {
+        "path": "/services/auto-electrical-repair-dubai",
+        "column": "Inbound internal links",
+        "before": "29",
+        "after": "33"
+      },
+      {
+        "path": "/services/battery-replacement-dubai",
+        "column": "Inbound internal links",
+        "before": "6",
+        "after": "7"
+      },
+      {
+        "path": "/services/car-ac-repair-dubai",
+        "column": "After schema",
+        "before": "AutoRepair; AutomotiveBusiness; BreadcrumbList; City; ContactPoint; ImageObject; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Service; WebPage; WebSite",
+        "after": "Answer; AutoRepair; AutomotiveBusiness; BreadcrumbList; City; ContactPoint; FAQPage; ImageObject; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Question; Service; WebPage; WebSite"
+      },
+      {
+        "path": "/services/car-ac-repair-dubai",
+        "column": "Inbound internal links",
+        "before": "31",
+        "after": "35"
+      },
+      {
+        "path": "/services/car-ac-repair-dubai",
+        "column": "Title",
+        "before": "Car AC Repair Dubai | Leak, Refrigerant &amp; Compressor Service",
+        "after": "Car AC Repair Dubai | Cooling &amp; Leak Diagnosis | DIGI-TEC"
+      },
+      {
+        "path": "/services/car-body-repair-dubai",
+        "column": "Inbound internal links",
+        "before": "8",
+        "after": "9"
+      },
+      {
+        "path": "/services/car-diagnostics-dubai",
+        "column": "Title",
+        "before": "Car Diagnostics Dubai | Fault Scanning &amp; Supported ECU Functions",
+        "after": "Car Diagnostics Dubai | Warning-Light Checks | DIGI-TEC"
+      },
+      {
+        "path": "/services/exhaust-repair-dubai",
+        "column": "Inbound internal links",
+        "before": "5",
+        "after": "6"
+      },
+      {
+        "path": "/services/fuel-system-repair-dubai",
+        "column": "Inbound internal links",
+        "before": "8",
+        "after": "9"
+      },
+      {
+        "path": "/services/mercedes-ac-repair-dubai",
+        "column": "Inbound internal links",
+        "before": "27",
+        "after": "28"
+      },
+      {
+        "path": "/services/mercedes-ac-repair-dubai",
+        "column": "Title",
+        "before": "Mercedes AC Repair Dubai | Air Conditioning | Digi-Tec",
+        "after": "Mercedes AC Repair Dubai | Cooling Assessment | DIGI-TEC"
+      },
+      {
+        "path": "/services/mercedes-diagnostics-dubai",
+        "column": "Inbound internal links",
+        "before": "28",
+        "after": "29"
+      },
+      {
+        "path": "/services/mercedes-diagnostics-dubai",
+        "column": "Title",
+        "before": "Mercedes XENTRY Diagnostics Dubai | Coding | Digi-Tec",
+        "after": "Mercedes Diagnostics Dubai | XENTRY Fault Tracing | DIGI-TEC"
+      },
+      {
+        "path": "/services/steering-repair-dubai",
+        "column": "Inbound internal links",
+        "before": "7",
+        "after": "8"
+      },
+      {
+        "path": "/services/suspension-repair-dubai",
+        "column": "Inbound internal links",
+        "before": "40",
+        "after": "41"
+      },
+      {
+        "path": "/services/tire-repair-dubai",
+        "column": "Inbound internal links",
+        "before": "5",
+        "after": "6"
+      }
+    ],
+    "originalToCandidateChanges": [
+      {
+        "path": "/",
+        "column": "Inbound internal links",
+        "before": "1163",
+        "after": "1164"
+      },
+      {
+        "path": "/ar/blog/mercedes-c-class-service-dubai-guide",
+        "column": "Inbound internal links",
+        "before": "4",
+        "after": "3"
+      },
+      {
+        "path": "/ar/blog/mercedes-e-class-service-dubai-guide",
+        "column": "Inbound internal links",
+        "before": "4",
+        "after": "3"
+      },
+      {
+        "path": "/ar/blog/mercedes-g63-service-dubai-guide",
+        "column": "Inbound internal links",
+        "before": "5",
+        "after": "4"
+      },
+      {
+        "path": "/ar/blog/mercedes-s-class-service-dubai-guide",
+        "column": "Inbound internal links",
+        "before": "4",
+        "after": "3"
+      },
+      {
+        "path": "/ar/brands/bmw-service-dubai",
+        "column": "Title",
+        "before": "إصلاح وصيانة BMW في دبي | مركز ديجي-تك",
+        "after": "إصلاح وصيانة بي إم دبليو في دبي | مركز ديجي-تك"
+      },
+      {
+        "path": "/ar/brands/bmw-service-dubai/ac-repair",
+        "column": "Inbound internal links",
+        "before": "15",
+        "after": "16"
+      },
+      {
+        "path": "/ar/brands/bmw-service-dubai/ac-repair",
+        "column": "Title",
+        "before": "إصلاح التكييف BMW في دبي | ديجي-تك",
+        "after": "إصلاح تكييف بي إم دبليو في دبي | ديجي-تك"
+      },
+      {
+        "path": "/ar/brands/bmw-service-dubai/engine-diagnostics",
+        "column": "Inbound internal links",
+        "before": "15",
+        "after": "16"
+      },
+      {
+        "path": "/ar/brands/bmw-service-dubai/engine-diagnostics",
+        "column": "Title",
+        "before": "تشخيص المحرك BMW في دبي | ديجي-تك",
+        "after": "تشخيص أعطال بي إم دبليو في دبي | ديجي-تك"
+      },
+      {
+        "path": "/ar/brands/bmw-service-dubai/mechanical-repair",
+        "column": "Title",
+        "before": "الإصلاح الميكانيكي BMW في دبي | ديجي-تك",
+        "after": "إصلاح محرك بي إم دبليو في دبي | ديجي-تك"
+      },
+      {
+        "path": "/ar/brands/bmw-service-dubai/transmission-repair",
+        "column": "Title",
+        "before": "إصلاح ناقل الحركة BMW في دبي | ديجي-تك",
+        "after": "إصلاح قير بي إم دبليو في دبي | ديجي-تك"
+      },
+      {
+        "path": "/ar/brands/lamborghini-service-dubai",
+        "column": "Title",
+        "before": "إصلاح وصيانة Lamborghini في دبي | مركز ديجي-تك",
+        "after": "إصلاح وصيانة لامبورغيني في دبي | مركز ديجي-تك"
+      },
+      {
+        "path": "/ar/brands/lamborghini-service-dubai/mechanical-repair",
+        "column": "Title",
+        "before": "الإصلاح الميكانيكي Lamborghini في دبي | ديجي-تك",
+        "after": "إصلاح محرك لامبورغيني في دبي | ديجي-تك"
+      },
+      {
+        "path": "/ar/brands/lamborghini-service-dubai/transmission-repair",
+        "column": "Title",
+        "before": "إصلاح ناقل الحركة Lamborghini في دبي | ديجي-تك",
+        "after": "إصلاح قير لامبورغيني في دبي | ديجي-تك"
+      },
+      {
+        "path": "/ar/brands/mercedes-benz-service-dubai",
+        "column": "Title",
+        "before": "إصلاح وصيانة مرسيدس في دبي | ديجي-تك",
+        "after": "صيانة مرسيدس في دبي | الصيانة والإصلاح | ديجي-تك"
+      },
+      {
+        "path": "/ar/brands/porsche-service-dubai/engine-diagnostics",
+        "column": "Inbound internal links",
+        "before": "15",
+        "after": "16"
+      },
+      {
+        "path": "/ar/brands/porsche-service-dubai/engine-diagnostics",
+        "column": "Title",
+        "before": "تشخيص المحرك Porsche في دبي | ديجي-تك",
+        "after": "تشخيص أعطال بورشه في دبي | ديجي-تك"
+      },
+      {
+        "path": "/ar/brands/range-rover-service-dubai/ac-repair",
+        "column": "Inbound internal links",
+        "before": "15",
+        "after": "16"
+      },
+      {
+        "path": "/ar/brands/range-rover-service-dubai/ac-repair",
+        "column": "Title",
+        "before": "إصلاح التكييف Range Rover في دبي | ديجي-تك",
+        "after": "إصلاح تكييف رينج روفر في دبي | ديجي-تك"
+      },
+      {
+        "path": "/ar/brands/rolls-royce-service-dubai",
+        "column": "Title",
+        "before": "إصلاح وصيانة Rolls-Royce في دبي | مركز ديجي-تك",
+        "after": "إصلاح وصيانة رولز رويس في دبي | مركز ديجي-تك"
+      },
+      {
+        "path": "/ar/brands/rolls-royce-service-dubai/mechanical-repair",
+        "column": "Title",
+        "before": "الإصلاح الميكانيكي Rolls-Royce في دبي | ديجي-تك",
+        "after": "إصلاح محرك رولز رويس في دبي | ديجي-تك"
+      },
+      {
+        "path": "/ar/brands/rolls-royce-service-dubai/suspension-repair",
+        "column": "Title",
+        "before": "إصلاح التعليق Rolls-Royce في دبي | ديجي-تك",
+        "after": "إصلاح تعليق رولز رويس في دبي | ديجي-تك"
+      },
+      {
+        "path": "/ar/brands/volkswagen-service-dubai",
+        "column": "Title",
+        "before": "إصلاح وصيانة Volkswagen في دبي | مركز ديجي-تك",
+        "after": "إصلاح وصيانة فولكس فاجن في دبي | مركز ديجي-تك"
+      },
+      {
+        "path": "/ar/brands/volkswagen-service-dubai/ac-repair",
+        "column": "Inbound internal links",
+        "before": "15",
+        "after": "16"
+      },
+      {
+        "path": "/ar/brands/volkswagen-service-dubai/ac-repair",
+        "column": "Title",
+        "before": "إصلاح التكييف Volkswagen في دبي | ديجي-تك",
+        "after": "إصلاح تكييف فولكس فاجن في دبي | ديجي-تك"
+      },
+      {
+        "path": "/ar/brands/volkswagen-service-dubai/battery-replacement",
+        "column": "Inbound internal links",
+        "before": "15",
+        "after": "14"
+      },
+      {
+        "path": "/ar/brands/volkswagen-service-dubai/body-repair",
+        "column": "Inbound internal links",
+        "before": "15",
+        "after": "14"
+      },
+      {
+        "path": "/ar/brands/volkswagen-service-dubai/electrical-repair",
+        "column": "Inbound internal links",
+        "before": "15",
+        "after": "14"
+      },
+      {
+        "path": "/ar/brands/volkswagen-service-dubai/exhaust-repair",
+        "column": "Inbound internal links",
+        "before": "15",
+        "after": "14"
+      },
+      {
+        "path": "/ar/brands/volkswagen-service-dubai/fuel-system-repair",
+        "column": "Inbound internal links",
+        "before": "15",
+        "after": "14"
+      },
+      {
+        "path": "/ar/brands/volkswagen-service-dubai/mechanical-repair",
+        "column": "Inbound internal links",
+        "before": "15",
+        "after": "14"
+      },
+      {
+        "path": "/ar/brands/volkswagen-service-dubai/steering-repair",
+        "column": "Inbound internal links",
+        "before": "15",
+        "after": "14"
+      },
+      {
+        "path": "/ar/brands/volkswagen-service-dubai/suspension-repair",
+        "column": "Inbound internal links",
+        "before": "15",
+        "after": "14"
+      },
+      {
+        "path": "/ar/brands/volkswagen-service-dubai/tire-repair",
+        "column": "Inbound internal links",
+        "before": "15",
+        "after": "14"
+      },
+      {
+        "path": "/ar/brands/volkswagen-service-dubai/transmission-repair",
+        "column": "Inbound internal links",
+        "before": "15",
+        "after": "14"
+      },
+      {
+        "path": "/ar/services/auto-electrical-repair-dubai",
+        "column": "Inbound internal links",
+        "before": "20",
+        "after": "28"
+      },
+      {
+        "path": "/ar/services/battery-replacement-dubai",
+        "column": "Inbound internal links",
+        "before": "5",
+        "after": "6"
+      },
+      {
+        "path": "/ar/services/car-ac-repair-dubai",
+        "column": "After schema",
+        "before": "AutoRepair; AutomotiveBusiness; BreadcrumbList; City; ContactPoint; ImageObject; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Service; WebPage; WebSite",
+        "after": "Answer; AutoRepair; AutomotiveBusiness; BreadcrumbList; City; ContactPoint; FAQPage; ImageObject; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Question; Service; WebPage; WebSite"
+      },
+      {
+        "path": "/ar/services/car-ac-repair-dubai",
+        "column": "Inbound internal links",
+        "before": "31",
+        "after": "35"
+      },
+      {
+        "path": "/ar/services/car-ac-repair-dubai",
+        "column": "Title",
+        "before": "إصلاح تكييف السيارات في دبي | مركز ديجي-تك دبي",
+        "after": "إصلاح تكييف السيارات في دبي | فحص التبريد والتسرب | ديجي-تك"
+      },
+      {
+        "path": "/ar/services/car-body-repair-dubai",
+        "column": "Inbound internal links",
+        "before": "7",
+        "after": "8"
+      },
+      {
+        "path": "/ar/services/car-diagnostics-dubai",
+        "column": "Title",
+        "before": "برمجة وتشخيص السيارات | مركز ديجي-تك دبي",
+        "after": "فحص كمبيوتر وتشخيص أعطال السيارات في دبي | ديجي-تك"
+      },
+      {
+        "path": "/ar/services/exhaust-repair-dubai",
+        "column": "Inbound internal links",
+        "before": "4",
+        "after": "5"
+      },
+      {
+        "path": "/ar/services/fuel-system-repair-dubai",
+        "column": "Inbound internal links",
+        "before": "6",
+        "after": "7"
+      },
+      {
+        "path": "/ar/services/mechanical-repair-dubai",
+        "column": "Inbound internal links",
+        "before": "61",
+        "after": "62"
+      },
+      {
+        "path": "/ar/services/mercedes-ac-repair-dubai",
+        "column": "Inbound internal links",
+        "before": "18",
+        "after": "19"
+      },
+      {
+        "path": "/ar/services/mercedes-ac-repair-dubai",
+        "column": "Title",
+        "before": "إصلاح مكيف مرسيدس في دبي | ديجي تيك القوز",
+        "after": "إصلاح تكييف مرسيدس في دبي | ديجي-تك"
+      },
+      {
+        "path": "/ar/services/mercedes-diagnostics-dubai",
+        "column": "Inbound internal links",
+        "before": "20",
+        "after": "21"
+      },
+      {
+        "path": "/ar/services/steering-repair-dubai",
+        "column": "Inbound internal links",
+        "before": "7",
+        "after": "8"
+      },
+      {
+        "path": "/ar/services/suspension-repair-dubai",
+        "column": "Inbound internal links",
+        "before": "38",
+        "after": "39"
+      },
+      {
+        "path": "/ar/services/tire-repair-dubai",
+        "column": "Inbound internal links",
+        "before": "4",
+        "after": "5"
+      },
+      {
+        "path": "/brands/bmw-service-dubai/ac-repair",
+        "column": "Inbound internal links",
+        "before": "15",
+        "after": "16"
+      },
+      {
+        "path": "/brands/bmw-service-dubai/ac-repair",
+        "column": "Title",
+        "before": "BMW AC Repair Dubai | Digi-Tec",
+        "after": "BMW AC Repair Dubai | Cooling Assessment | DIGI-TEC"
+      },
+      {
+        "path": "/brands/bmw-service-dubai/engine-diagnostics",
+        "column": "Inbound internal links",
+        "before": "22",
+        "after": "23"
+      },
+      {
+        "path": "/brands/bmw-service-dubai/engine-diagnostics",
+        "column": "Title",
+        "before": "BMW ISTA+ Diagnostics &amp; Coding Dubai | DIGI-TEC",
+        "after": "BMW Diagnostics Dubai | Fault Assessment | DIGI-TEC"
+      },
+      {
+        "path": "/brands/bmw-service-dubai/transmission-repair",
+        "column": "Title",
+        "before": "BMW Transmission Repair Dubai | Digi-Tec",
+        "after": "BMW Transmission &amp; Gearbox Repair Dubai | DIGI-TEC"
+      },
+      {
+        "path": "/brands/mercedes-benz-service-dubai",
+        "column": "Title",
+        "before": "Mercedes Repair &amp; Service Dubai | Al Quoz | Digi-Tec",
+        "after": "Mercedes Service Dubai | Maintenance &amp; Repair | DIGI-TEC"
+      },
+      {
+        "path": "/brands/porsche-service-dubai/engine-diagnostics",
+        "column": "Inbound internal links",
+        "before": "30",
+        "after": "31"
+      },
+      {
+        "path": "/brands/porsche-service-dubai/engine-diagnostics",
+        "column": "Title",
+        "before": "Porsche PIWIS 3 Diagnostics Dubai | DIGI-TEC",
+        "after": "Porsche Diagnostics Dubai | Fault Assessment | DIGI-TEC"
+      },
+      {
+        "path": "/brands/range-rover-service-dubai/ac-repair",
+        "column": "Inbound internal links",
+        "before": "15",
+        "after": "16"
+      },
+      {
+        "path": "/brands/range-rover-service-dubai/ac-repair",
+        "column": "Title",
+        "before": "Range Rover AC Repair Dubai | Digi-Tec",
+        "after": "Range Rover AC Repair Dubai | Cooling Assessment | DIGI-TEC"
+      },
+      {
+        "path": "/brands/volkswagen-service-dubai/ac-repair",
+        "column": "Inbound internal links",
+        "before": "15",
+        "after": "16"
+      },
+      {
+        "path": "/brands/volkswagen-service-dubai/ac-repair",
+        "column": "Title",
+        "before": "Volkswagen AC Repair Dubai | Digi-Tec",
+        "after": "Volkswagen AC Repair Dubai | Cooling Assessment | DIGI-TEC"
+      },
+      {
+        "path": "/brands/volkswagen-service-dubai/battery-replacement",
+        "column": "Inbound internal links",
+        "before": "15",
+        "after": "14"
+      },
+      {
+        "path": "/brands/volkswagen-service-dubai/body-repair",
+        "column": "Inbound internal links",
+        "before": "15",
+        "after": "14"
+      },
+      {
+        "path": "/brands/volkswagen-service-dubai/electrical-repair",
+        "column": "Inbound internal links",
+        "before": "15",
+        "after": "14"
+      },
+      {
+        "path": "/brands/volkswagen-service-dubai/exhaust-repair",
+        "column": "Inbound internal links",
+        "before": "15",
+        "after": "14"
+      },
+      {
+        "path": "/brands/volkswagen-service-dubai/fuel-system-repair",
+        "column": "Inbound internal links",
+        "before": "15",
+        "after": "14"
+      },
+      {
+        "path": "/brands/volkswagen-service-dubai/mechanical-repair",
+        "column": "Inbound internal links",
+        "before": "15",
+        "after": "14"
+      },
+      {
+        "path": "/brands/volkswagen-service-dubai/steering-repair",
+        "column": "Inbound internal links",
+        "before": "15",
+        "after": "14"
+      },
+      {
+        "path": "/brands/volkswagen-service-dubai/suspension-repair",
+        "column": "Inbound internal links",
+        "before": "15",
+        "after": "14"
+      },
+      {
+        "path": "/brands/volkswagen-service-dubai/tire-repair",
+        "column": "Inbound internal links",
+        "before": "15",
+        "after": "14"
+      },
+      {
+        "path": "/brands/volkswagen-service-dubai/transmission-repair",
+        "column": "Inbound internal links",
+        "before": "15",
+        "after": "14"
+      },
+      {
+        "path": "/services/auto-electrical-repair-dubai",
+        "column": "Inbound internal links",
+        "before": "29",
+        "after": "33"
+      },
+      {
+        "path": "/services/battery-replacement-dubai",
+        "column": "Inbound internal links",
+        "before": "6",
+        "after": "7"
+      },
+      {
+        "path": "/services/car-ac-repair-dubai",
+        "column": "After schema",
+        "before": "AutoRepair; AutomotiveBusiness; BreadcrumbList; City; ContactPoint; ImageObject; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Service; WebPage; WebSite",
+        "after": "Answer; AutoRepair; AutomotiveBusiness; BreadcrumbList; City; ContactPoint; FAQPage; ImageObject; ListItem; Offer; OfferCatalog; Organization; PostalAddress; Question; Service; WebPage; WebSite"
+      },
+      {
+        "path": "/services/car-ac-repair-dubai",
+        "column": "Inbound internal links",
+        "before": "31",
+        "after": "35"
+      },
+      {
+        "path": "/services/car-ac-repair-dubai",
+        "column": "Title",
+        "before": "Car AC Repair Dubai | Leak, Refrigerant &amp; Compressor Service",
+        "after": "Car AC Repair Dubai | Cooling &amp; Leak Diagnosis | DIGI-TEC"
+      },
+      {
+        "path": "/services/car-body-repair-dubai",
+        "column": "Inbound internal links",
+        "before": "8",
+        "after": "9"
+      },
+      {
+        "path": "/services/car-diagnostics-dubai",
+        "column": "Title",
+        "before": "Car Diagnostics Dubai | Fault Scanning &amp; Supported ECU Functions",
+        "after": "Car Diagnostics Dubai | Warning-Light Checks | DIGI-TEC"
+      },
+      {
+        "path": "/services/exhaust-repair-dubai",
+        "column": "Inbound internal links",
+        "before": "5",
+        "after": "6"
+      },
+      {
+        "path": "/services/fuel-system-repair-dubai",
+        "column": "Inbound internal links",
+        "before": "8",
+        "after": "9"
+      },
+      {
+        "path": "/services/mercedes-ac-repair-dubai",
+        "column": "Inbound internal links",
+        "before": "27",
+        "after": "28"
+      },
+      {
+        "path": "/services/mercedes-ac-repair-dubai",
+        "column": "Title",
+        "before": "Mercedes AC Repair Dubai | Air Conditioning | Digi-Tec",
+        "after": "Mercedes AC Repair Dubai | Cooling Assessment | DIGI-TEC"
+      },
+      {
+        "path": "/services/mercedes-diagnostics-dubai",
+        "column": "Inbound internal links",
+        "before": "28",
+        "after": "29"
+      },
+      {
+        "path": "/services/mercedes-diagnostics-dubai",
+        "column": "Title",
+        "before": "Mercedes XENTRY Diagnostics Dubai | Coding | Digi-Tec",
+        "after": "Mercedes Diagnostics Dubai | XENTRY Fault Tracing | DIGI-TEC"
+      },
+      {
+        "path": "/services/steering-repair-dubai",
+        "column": "Inbound internal links",
+        "before": "7",
+        "after": "8"
+      },
+      {
+        "path": "/services/suspension-repair-dubai",
+        "column": "Inbound internal links",
+        "before": "40",
+        "after": "41"
+      },
+      {
+        "path": "/services/tire-repair-dubai",
+        "column": "Inbound internal links",
+        "before": "5",
+        "after": "6"
+      }
+    ],
+    "meaning": "Generated validation inventory differs from the older original artifact. Its exact changed cells are retained; no actual page metadata or canonical change is inferred from this reporting artifact."
+  },
+  "releaseValidationReports": {
+    "docs/seo/protection-release-validation.json": {
+      "passedFlags": {
+        "original": true,
+        "baseline": true,
+        "candidate": true
+      },
+      "originalToBaselineChanges": [
+        {
+          "pointer": "/checkedAt",
+          "before": "2026-10-17T09:47:53.757Z",
+          "after": "2026-10-26T08:59:39.319Z"
+        },
+        {
+          "pointer": "/clientEntry",
+          "before": "assets/index-BRK3mUly.js",
+          "after": "assets/index-CvWuKuLH.js"
+        },
+        {
+          "pointer": "/clientSha256",
+          "before": "76c1dd4f36ebeea6f74f80d6e26d0f97f3a99ebf50a3d70ae27462b3197e515f",
+          "after": "8ac305124196d16939f4ac7660b41568c1596cc809ca4e263241dc5848557e89"
+        },
+        {
+          "pointer": "/pages/0/htmlSha256",
+          "before": "d40d7e5ce0be7ee46d685cad1eec5cded7381fca439987aaa0bb50a32ee49a20",
+          "after": "2ee77aa5fe6af4ce2bfa4894b575d635aab8387b6a4757eb767830538c52b1ab"
+        },
+        {
+          "pointer": "/pages/0/clientChunk",
+          "before": "assets/PpfPage-Dcic1-vC.js",
+          "after": "assets/PpfPage-BIMY1tj5.js"
+        },
+        {
+          "pointer": "/pages/1/htmlSha256",
+          "before": "375451e082f3dd829b8d0e08487f86e8e47d7bb0d6c50a2f012ba6a9a97c7250",
+          "after": "1c13787f69fa7e50178311b410677e9905c67f9011ee09efcae65c1f94876bd4"
+        },
+        {
+          "pointer": "/pages/1/clientChunk",
+          "before": "assets/CeramicCoatingPage-Vmu1wGE_.js",
+          "after": "assets/CeramicCoatingPage-2Zn9FXUm.js"
+        },
+        {
+          "pointer": "/pages/2/htmlSha256",
+          "before": "7b5862b9d7bcb6c4ed9cc27bdd460ef16019276c7421883e001a16d998755493",
+          "after": "a6c27e154bfc877f11a84b8f23be2c18d62998b175c48cb9b4d35453f40e82c8"
+        },
+        {
+          "pointer": "/pages/2/clientChunk",
+          "before": "assets/PaintCorrectionPage-ajzi0usg.js",
+          "after": "assets/PaintCorrectionPage-DSaNx502.js"
+        }
+      ],
+      "originalToCandidateChanges": [
+        {
+          "pointer": "/checkedAt",
+          "before": "2026-10-17T09:47:53.757Z",
+          "after": "2026-10-26T08:59:39.320Z"
+        },
+        {
+          "pointer": "/clientEntry",
+          "before": "assets/index-BRK3mUly.js",
+          "after": "assets/index-DxoEjBa9.js"
+        },
+        {
+          "pointer": "/clientSha256",
+          "before": "76c1dd4f36ebeea6f74f80d6e26d0f97f3a99ebf50a3d70ae27462b3197e515f",
+          "after": "e83f7af2effb8948f7061a75377bd9b80d6cd9a81ce508e90dc9d72f533735b1"
+        },
+        {
+          "pointer": "/pages/0/htmlSha256",
+          "before": "d40d7e5ce0be7ee46d685cad1eec5cded7381fca439987aaa0bb50a32ee49a20",
+          "after": "ceb04faea350cc86174547b301d418bfc13e87a4ff36b00d22e20dccffd5f30b"
+        },
+        {
+          "pointer": "/pages/0/clientChunk",
+          "before": "assets/PpfPage-Dcic1-vC.js",
+          "after": "assets/PpfPage-DWf0CcCF.js"
+        },
+        {
+          "pointer": "/pages/1/htmlSha256",
+          "before": "375451e082f3dd829b8d0e08487f86e8e47d7bb0d6c50a2f012ba6a9a97c7250",
+          "after": "7f383d8efd268cd400282287955cd31606b5378b053c2e77827256859f6a04de"
+        },
+        {
+          "pointer": "/pages/1/clientChunk",
+          "before": "assets/CeramicCoatingPage-Vmu1wGE_.js",
+          "after": "assets/CeramicCoatingPage-DDoGhp6f.js"
+        },
+        {
+          "pointer": "/pages/2/htmlSha256",
+          "before": "7b5862b9d7bcb6c4ed9cc27bdd460ef16019276c7421883e001a16d998755493",
+          "after": "a9d3effb7ed6603d489ab3f49a915b681a4f37c0d8cbfd2abb9fe1a6e8f16eae"
+        },
+        {
+          "pointer": "/pages/2/clientChunk",
+          "before": "assets/PaintCorrectionPage-ajzi0usg.js",
+          "after": "assets/PaintCorrectionPage-CZ5O-GWa.js"
+        }
+      ],
+      "baselineToCandidateChanges": [
+        {
+          "pointer": "/checkedAt",
+          "before": "2026-10-26T08:59:39.319Z",
+          "after": "2026-10-26T08:59:39.320Z"
+        },
+        {
+          "pointer": "/clientEntry",
+          "before": "assets/index-CvWuKuLH.js",
+          "after": "assets/index-DxoEjBa9.js"
+        },
+        {
+          "pointer": "/clientSha256",
+          "before": "8ac305124196d16939f4ac7660b41568c1596cc809ca4e263241dc5848557e89",
+          "after": "e83f7af2effb8948f7061a75377bd9b80d6cd9a81ce508e90dc9d72f533735b1"
+        },
+        {
+          "pointer": "/pages/0/htmlSha256",
+          "before": "2ee77aa5fe6af4ce2bfa4894b575d635aab8387b6a4757eb767830538c52b1ab",
+          "after": "ceb04faea350cc86174547b301d418bfc13e87a4ff36b00d22e20dccffd5f30b"
+        },
+        {
+          "pointer": "/pages/0/clientChunk",
+          "before": "assets/PpfPage-BIMY1tj5.js",
+          "after": "assets/PpfPage-DWf0CcCF.js"
+        },
+        {
+          "pointer": "/pages/1/htmlSha256",
+          "before": "1c13787f69fa7e50178311b410677e9905c67f9011ee09efcae65c1f94876bd4",
+          "after": "7f383d8efd268cd400282287955cd31606b5378b053c2e77827256859f6a04de"
+        },
+        {
+          "pointer": "/pages/1/clientChunk",
+          "before": "assets/CeramicCoatingPage-2Zn9FXUm.js",
+          "after": "assets/CeramicCoatingPage-DDoGhp6f.js"
+        },
+        {
+          "pointer": "/pages/2/htmlSha256",
+          "before": "a6c27e154bfc877f11a84b8f23be2c18d62998b175c48cb9b4d35453f40e82c8",
+          "after": "a9d3effb7ed6603d489ab3f49a915b681a4f37c0d8cbfd2abb9fe1a6e8f16eae"
+        },
+        {
+          "pointer": "/pages/2/clientChunk",
+          "before": "assets/PaintCorrectionPage-DSaNx502.js",
+          "after": "assets/PaintCorrectionPage-CZ5O-GWa.js"
+        }
+      ]
+    },
+    "docs/seo/query-release-validation.json": {
+      "passedFlags": {
+        "original": true,
+        "baseline": true,
+        "candidate": true
+      },
+      "originalToBaselineChanges": [
+        {
+          "pointer": "/internalLinksChecked",
+          "before": 44537,
+          "after": 44666
+        }
+      ],
+      "originalToCandidateChanges": [
+        {
+          "pointer": "/internalLinksChecked",
+          "before": 44537,
+          "after": 44668
+        }
+      ],
+      "baselineToCandidateChanges": [
+        {
+          "pointer": "/internalLinksChecked",
+          "before": 44666,
+          "after": 44668
+        }
+      ]
+    }
+  },
+  "scopeBoundary": {
+    "priorNineFileCheck": "The 75-assertion SSR verifier compares nine named routing/sitemap artifacts between baseline and candidate. It excludes routing-response-data.js and does not establish equality to the original snapshot.",
+    "sourcePatchScope": "Exactly three reviewed source changes are separately recorded in controlled-copy.json and built-input-comparison.json; this generated-artifact review does not expand approval.",
+    "fullArtifactRelease": "HOLD pending explicit sitemap lastmod drift review. No generated artifact was modified to make a check pass."
+  },
+  "reviewedAtDubai": "2026-10-26T13:16:59.280+04:00"
+}

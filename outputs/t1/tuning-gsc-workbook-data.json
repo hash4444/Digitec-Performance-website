@@ -1,0 +1,1393 @@
+{
+  "source_file": "digitecme.com-Performance-on-Search-2026-10-05.xlsx",
+  "source_sha256": "71aa08d40c50ca7ab0128b38abedee67e2a111c7da42440824067b5250f76b89",
+  "filters": {
+    "Search type": "Web",
+    "Date": "Last 28 days",
+    "Page": "https://digitecme.com/tuning"
+  },
+  "chart_period": {
+    "start": "2026-09-05",
+    "end": "2026-10-02"
+  },
+  "sheets": [
+    {
+      "sheet": "Chart",
+      "range": "A1:E29",
+      "data_rows": 28,
+      "columns": [
+        "Date",
+        "Clicks",
+        "Impressions",
+        "CTR",
+        "Position"
+      ]
+    },
+    {
+      "sheet": "Queries",
+      "range": "A1:E114",
+      "data_rows": 113,
+      "columns": [
+        "Top queries",
+        "Clicks",
+        "Impressions",
+        "CTR",
+        "Position"
+      ]
+    },
+    {
+      "sheet": "Pages",
+      "range": "A1:E2",
+      "data_rows": 1,
+      "columns": [
+        "Top pages",
+        "Clicks",
+        "Impressions",
+        "CTR",
+        "Position"
+      ]
+    },
+    {
+      "sheet": "Countries",
+      "range": "A1:E19",
+      "data_rows": 18,
+      "columns": [
+        "Country",
+        "Clicks",
+        "Impressions",
+        "CTR",
+        "Position"
+      ]
+    },
+    {
+      "sheet": "Devices",
+      "range": "A1:E3",
+      "data_rows": 2,
+      "columns": [
+        "Device",
+        "Clicks",
+        "Impressions",
+        "CTR",
+        "Position"
+      ]
+    },
+    {
+      "sheet": "Search appearance",
+      "range": "A1:E1",
+      "data_rows": 0,
+      "columns": [
+        "Search Appearance",
+        "Clicks",
+        "Impressions",
+        "CTR",
+        "Position"
+      ]
+    },
+    {
+      "sheet": "Filters",
+      "range": "A1:B4",
+      "data_rows": 3,
+      "columns": [
+        "Filter",
+        "Value"
+      ]
+    }
+  ],
+  "sheet_totals": {
+    "Chart": {
+      "rows": 28,
+      "clicks": 11.0,
+      "impressions": 991.0
+    },
+    "Queries": {
+      "rows": 113,
+      "clicks": 1.0,
+      "impressions": 627.0
+    },
+    "Pages": {
+      "rows": 1,
+      "clicks": 11.0,
+      "impressions": 991.0
+    },
+    "Countries": {
+      "rows": 18,
+      "clicks": 1.0,
+      "impressions": 627.0
+    },
+    "Devices": {
+      "rows": 2,
+      "clicks": 1.0,
+      "impressions": 627.0
+    },
+    "Search appearance": {
+      "rows": 0,
+      "clicks": 0,
+      "impressions": 0
+    }
+  },
+  "query_rows_preserved": 113,
+  "strict_semantic_or_configurator_matches": 105,
+  "wrong_owner_review_rows": 14,
+  "configuration_models": [
+    {
+      "id": "amg-gt-gts",
+      "model": "AMG GT / GTS",
+      "brand": "Mercedes",
+      "engine": "M178"
+    },
+    {
+      "id": "amg-gtc-gtr",
+      "model": "AMG GTC / GTR",
+      "brand": "Mercedes",
+      "engine": "M178"
+    },
+    {
+      "id": "e63",
+      "model": "E63 AMG",
+      "brand": "Mercedes",
+      "engine": "M177"
+    },
+    {
+      "id": "g63",
+      "model": "G63 AMG",
+      "brand": "Mercedes",
+      "engine": "M177"
+    },
+    {
+      "id": "gt63",
+      "model": "AMG GT63 4-Door",
+      "brand": "Mercedes",
+      "engine": "M177"
+    },
+    {
+      "id": "s63",
+      "model": "S63 AMG E Performance",
+      "brand": "Mercedes",
+      "engine": "M177 + Electric"
+    },
+    {
+      "id": "s65",
+      "model": "S65 AMG",
+      "brand": "Mercedes",
+      "engine": "M279"
+    },
+    {
+      "id": "c63-w205",
+      "model": "C63 AMG (W205)",
+      "brand": "Mercedes",
+      "engine": "M177"
+    },
+    {
+      "id": "glc63",
+      "model": "GLC63 AMG",
+      "brand": "Mercedes",
+      "engine": "M177"
+    },
+    {
+      "id": "c43",
+      "model": "C43 AMG (W205)",
+      "brand": "Mercedes",
+      "engine": "M276"
+    },
+    {
+      "id": "c450",
+      "model": "C450 AMG (W205)",
+      "brand": "Mercedes",
+      "engine": "M276"
+    },
+    {
+      "id": "c400",
+      "model": "C400 (W205)",
+      "brand": "Mercedes",
+      "engine": "M276"
+    },
+    {
+      "id": "cla45",
+      "model": "CLA45 AMG",
+      "brand": "Mercedes",
+      "engine": "M133"
+    },
+    {
+      "id": "a45",
+      "model": "A45 AMG",
+      "brand": "Mercedes",
+      "engine": "M133"
+    },
+    {
+      "id": "db11",
+      "model": "Aston Martin DB11",
+      "brand": "Aston Martin",
+      "engine": "M177"
+    },
+    {
+      "id": "urus",
+      "model": "Lamborghini Urus",
+      "brand": "Lamborghini",
+      "engine": "V8 Twin-Turbo"
+    }
+  ],
+  "query_register_families_are_multi_label": true,
+  "historical_periods_combined": false,
+  "no_source_workbook_write": true,
+  "data": {
+    "Chart": [
+      {
+        "Date": "2026-09-05",
+        "Clicks": 1.0,
+        "Impressions": 26.0,
+        "CTR": 0.0385,
+        "Position": 22.6
+      },
+      {
+        "Date": "2026-09-06",
+        "Clicks": 0.0,
+        "Impressions": 30.0,
+        "CTR": 0.0,
+        "Position": 19.8
+      },
+      {
+        "Date": "2026-09-07",
+        "Clicks": 0.0,
+        "Impressions": 17.0,
+        "CTR": 0.0,
+        "Position": 11.5
+      },
+      {
+        "Date": "2026-09-08",
+        "Clicks": 0.0,
+        "Impressions": 23.0,
+        "CTR": 0.0,
+        "Position": 27.2
+      },
+      {
+        "Date": "2026-09-09",
+        "Clicks": 0.0,
+        "Impressions": 17.0,
+        "CTR": 0.0,
+        "Position": 22.5
+      },
+      {
+        "Date": "2026-09-10",
+        "Clicks": 0.0,
+        "Impressions": 24.0,
+        "CTR": 0.0,
+        "Position": 20.0
+      },
+      {
+        "Date": "2026-09-11",
+        "Clicks": 0.0,
+        "Impressions": 37.0,
+        "CTR": 0.0,
+        "Position": 20.9
+      },
+      {
+        "Date": "2026-09-12",
+        "Clicks": 0.0,
+        "Impressions": 20.0,
+        "CTR": 0.0,
+        "Position": 27.1
+      },
+      {
+        "Date": "2026-09-13",
+        "Clicks": 1.0,
+        "Impressions": 48.0,
+        "CTR": 0.0208,
+        "Position": 21.2
+      },
+      {
+        "Date": "2026-09-14",
+        "Clicks": 1.0,
+        "Impressions": 37.0,
+        "CTR": 0.027000000000000003,
+        "Position": 18.4
+      },
+      {
+        "Date": "2026-09-15",
+        "Clicks": 2.0,
+        "Impressions": 25.0,
+        "CTR": 0.08,
+        "Position": 22.1
+      },
+      {
+        "Date": "2026-09-16",
+        "Clicks": 0.0,
+        "Impressions": 25.0,
+        "CTR": 0.0,
+        "Position": 28.1
+      },
+      {
+        "Date": "2026-09-17",
+        "Clicks": 0.0,
+        "Impressions": 25.0,
+        "CTR": 0.0,
+        "Position": 19.5
+      },
+      {
+        "Date": "2026-09-18",
+        "Clicks": 0.0,
+        "Impressions": 22.0,
+        "CTR": 0.0,
+        "Position": 14.7
+      },
+      {
+        "Date": "2026-09-19",
+        "Clicks": 1.0,
+        "Impressions": 15.0,
+        "CTR": 0.0667,
+        "Position": 20.4
+      },
+      {
+        "Date": "2026-09-20",
+        "Clicks": 0.0,
+        "Impressions": 49.0,
+        "CTR": 0.0,
+        "Position": 17.6
+      },
+      {
+        "Date": "2026-09-21",
+        "Clicks": 1.0,
+        "Impressions": 19.0,
+        "CTR": 0.0526,
+        "Position": 13.8
+      },
+      {
+        "Date": "2026-09-22",
+        "Clicks": 0.0,
+        "Impressions": 18.0,
+        "CTR": 0.0,
+        "Position": 19.0
+      },
+      {
+        "Date": "2026-09-23",
+        "Clicks": 1.0,
+        "Impressions": 27.0,
+        "CTR": 0.037000000000000005,
+        "Position": 18.7
+      },
+      {
+        "Date": "2026-09-24",
+        "Clicks": 1.0,
+        "Impressions": 11.0,
+        "CTR": 0.0909,
+        "Position": 7.7
+      },
+      {
+        "Date": "2026-09-25",
+        "Clicks": 0.0,
+        "Impressions": 23.0,
+        "CTR": 0.0,
+        "Position": 9.1
+      },
+      {
+        "Date": "2026-09-26",
+        "Clicks": 0.0,
+        "Impressions": 14.0,
+        "CTR": 0.0,
+        "Position": 9.4
+      },
+      {
+        "Date": "2026-09-27",
+        "Clicks": 0.0,
+        "Impressions": 20.0,
+        "CTR": 0.0,
+        "Position": 19.1
+      },
+      {
+        "Date": "2026-09-28",
+        "Clicks": 0.0,
+        "Impressions": 28.0,
+        "CTR": 0.0,
+        "Position": 11.2
+      },
+      {
+        "Date": "2026-09-29",
+        "Clicks": 0.0,
+        "Impressions": 22.0,
+        "CTR": 0.0,
+        "Position": 8.1
+      },
+      {
+        "Date": "2026-09-30",
+        "Clicks": 1.0,
+        "Impressions": 20.0,
+        "CTR": 0.05,
+        "Position": 16.4
+      },
+      {
+        "Date": "2026-10-01",
+        "Clicks": 1.0,
+        "Impressions": 326.0,
+        "CTR": 0.0031,
+        "Position": 25.5
+      },
+      {
+        "Date": "2026-10-02",
+        "Clicks": 0.0,
+        "Impressions": 23.0,
+        "CTR": 0.0,
+        "Position": 18.2
+      }
+    ],
+    "Queries": [
+      {
+        "Top queries": "ok",
+        "Clicks": 1.0,
+        "Impressions": 1.0,
+        "CTR": 1.0,
+        "Position": 2.0
+      },
+      {
+        "Top queries": "mercedes e class audio upgrade in dubai",
+        "Clicks": 0.0,
+        "Impressions": 50.0,
+        "CTR": 0.0,
+        "Position": 49.82
+      },
+      {
+        "Top queries": "mercedes stereo upgrade in dubai",
+        "Clicks": 0.0,
+        "Impressions": 47.0,
+        "CTR": 0.0,
+        "Position": 50.26
+      },
+      {
+        "Top queries": "car tuning dubai",
+        "Clicks": 0.0,
+        "Impressions": 29.0,
+        "CTR": 0.0,
+        "Position": 21.31
+      },
+      {
+        "Top queries": "car tuning near me",
+        "Clicks": 0.0,
+        "Impressions": 21.0,
+        "CTR": 0.0,
+        "Position": 8.52
+      },
+      {
+        "Top queries": "ecu tuning dubai",
+        "Clicks": 0.0,
+        "Impressions": 17.0,
+        "CTR": 0.0,
+        "Position": 13.12
+      },
+      {
+        "Top queries": "performance tuning near me",
+        "Clicks": 0.0,
+        "Impressions": 16.0,
+        "CTR": 0.0,
+        "Position": 14.75
+      },
+      {
+        "Top queries": "ecu tuning near me",
+        "Clicks": 0.0,
+        "Impressions": 14.0,
+        "CTR": 0.0,
+        "Position": 4.29
+      },
+      {
+        "Top queries": "stage 1 tuning near me",
+        "Clicks": 0.0,
+        "Impressions": 13.0,
+        "CTR": 0.0,
+        "Position": 5.31
+      },
+      {
+        "Top queries": "chip tuning near me",
+        "Clicks": 0.0,
+        "Impressions": 13.0,
+        "CTR": 0.0,
+        "Position": 13.23
+      },
+      {
+        "Top queries": "engine performance tuning",
+        "Clicks": 0.0,
+        "Impressions": 13.0,
+        "CTR": 0.0,
+        "Position": 15.46
+      },
+      {
+        "Top queries": "gad motors",
+        "Clicks": 0.0,
+        "Impressions": 12.0,
+        "CTR": 0.0,
+        "Position": 4.42
+      },
+      {
+        "Top queries": "mercedes tuning near me",
+        "Clicks": 0.0,
+        "Impressions": 12.0,
+        "CTR": 0.0,
+        "Position": 6.25
+      },
+      {
+        "Top queries": "stage 2 tuning near me",
+        "Clicks": 0.0,
+        "Impressions": 12.0,
+        "CTR": 0.0,
+        "Position": 6.75
+      },
+      {
+        "Top queries": "mercedes performance tuning",
+        "Clicks": 0.0,
+        "Impressions": 12.0,
+        "CTR": 0.0,
+        "Position": 18.83
+      },
+      {
+        "Top queries": "mercedes ecu tuning",
+        "Clicks": 0.0,
+        "Impressions": 12.0,
+        "CTR": 0.0,
+        "Position": 19.25
+      },
+      {
+        "Top queries": "car ecu tuning",
+        "Clicks": 0.0,
+        "Impressions": 10.0,
+        "CTR": 0.0,
+        "Position": 28.9
+      },
+      {
+        "Top queries": "performance tuning shop",
+        "Clicks": 0.0,
+        "Impressions": 10.0,
+        "CTR": 0.0,
+        "Position": 33.5
+      },
+      {
+        "Top queries": "tuning services",
+        "Clicks": 0.0,
+        "Impressions": 9.0,
+        "CTR": 0.0,
+        "Position": 12.33
+      },
+      {
+        "Top queries": "vehicle tuning",
+        "Clicks": 0.0,
+        "Impressions": 9.0,
+        "CTR": 0.0,
+        "Position": 15.44
+      },
+      {
+        "Top queries": "ecu calibration",
+        "Clicks": 0.0,
+        "Impressions": 9.0,
+        "CTR": 0.0,
+        "Position": 24.33
+      },
+      {
+        "Top queries": "chip tuning dubai",
+        "Clicks": 0.0,
+        "Impressions": 8.0,
+        "CTR": 0.0,
+        "Position": 19.75
+      },
+      {
+        "Top queries": "ecu tuning",
+        "Clicks": 0.0,
+        "Impressions": 8.0,
+        "CTR": 0.0,
+        "Position": 25.38
+      },
+      {
+        "Top queries": "mercedes tuning",
+        "Clicks": 0.0,
+        "Impressions": 8.0,
+        "CTR": 0.0,
+        "Position": 44.88
+      },
+      {
+        "Top queries": "porsche performance tuning dubai",
+        "Clicks": 0.0,
+        "Impressions": 7.0,
+        "CTR": 0.0,
+        "Position": 4.57
+      },
+      {
+        "Top queries": "performance car tuning",
+        "Clicks": 0.0,
+        "Impressions": 7.0,
+        "CTR": 0.0,
+        "Position": 16.14
+      },
+      {
+        "Top queries": "car performance tuning",
+        "Clicks": 0.0,
+        "Impressions": 7.0,
+        "CTR": 0.0,
+        "Position": 21.86
+      },
+      {
+        "Top queries": "amg performance tuning",
+        "Clicks": 0.0,
+        "Impressions": 7.0,
+        "CTR": 0.0,
+        "Position": 25.86
+      },
+      {
+        "Top queries": "sports car tuning",
+        "Clicks": 0.0,
+        "Impressions": 7.0,
+        "CTR": 0.0,
+        "Position": 43.14
+      },
+      {
+        "Top queries": "tuning mercedes",
+        "Clicks": 0.0,
+        "Impressions": 7.0,
+        "CTR": 0.0,
+        "Position": 46.29
+      },
+      {
+        "Top queries": "exotic car tuning",
+        "Clicks": 0.0,
+        "Impressions": 6.0,
+        "CTR": 0.0,
+        "Position": 20.67
+      },
+      {
+        "Top queries": "premium car tuning",
+        "Clicks": 0.0,
+        "Impressions": 6.0,
+        "CTR": 0.0,
+        "Position": 27.33
+      },
+      {
+        "Top queries": "performance chip tuning",
+        "Clicks": 0.0,
+        "Impressions": 6.0,
+        "CTR": 0.0,
+        "Position": 35.5
+      },
+      {
+        "Top queries": "car chip tuning",
+        "Clicks": 0.0,
+        "Impressions": 6.0,
+        "CTR": 0.0,
+        "Position": 35.83
+      },
+      {
+        "Top queries": "european car tuning",
+        "Clicks": 0.0,
+        "Impressions": 6.0,
+        "CTR": 0.0,
+        "Position": 52.17
+      },
+      {
+        "Top queries": "porsche tuning dubai",
+        "Clicks": 0.0,
+        "Impressions": 5.0,
+        "CTR": 0.0,
+        "Position": 17.0
+      },
+      {
+        "Top queries": "high performance car tuning",
+        "Clicks": 0.0,
+        "Impressions": 5.0,
+        "CTR": 0.0,
+        "Position": 35.4
+      },
+      {
+        "Top queries": "automotive tuning",
+        "Clicks": 0.0,
+        "Impressions": 5.0,
+        "CTR": 0.0,
+        "Position": 43.0
+      },
+      {
+        "Top queries": "chip tuning",
+        "Clicks": 0.0,
+        "Impressions": 5.0,
+        "CTR": 0.0,
+        "Position": 47.0
+      },
+      {
+        "Top queries": "car tuning",
+        "Clicks": 0.0,
+        "Impressions": 5.0,
+        "CTR": 0.0,
+        "Position": 50.0
+      },
+      {
+        "Top queries": "engine chip tuning",
+        "Clicks": 0.0,
+        "Impressions": 5.0,
+        "CTR": 0.0,
+        "Position": 50.0
+      },
+      {
+        "Top queries": "car engine tuning",
+        "Clicks": 0.0,
+        "Impressions": 5.0,
+        "CTR": 0.0,
+        "Position": 63.4
+      },
+      {
+        "Top queries": "bmw tuning near me",
+        "Clicks": 0.0,
+        "Impressions": 4.0,
+        "CTR": 0.0,
+        "Position": 13.0
+      },
+      {
+        "Top queries": "mercedes engine tuning",
+        "Clicks": 0.0,
+        "Impressions": 4.0,
+        "CTR": 0.0,
+        "Position": 16.0
+      },
+      {
+        "Top queries": "mercedes benz ecu tuning",
+        "Clicks": 0.0,
+        "Impressions": 4.0,
+        "CTR": 0.0,
+        "Position": 16.75
+      },
+      {
+        "Top queries": "mercedes chip tuning",
+        "Clicks": 0.0,
+        "Impressions": 4.0,
+        "CTR": 0.0,
+        "Position": 18.5
+      },
+      {
+        "Top queries": "ecu remap near me",
+        "Clicks": 0.0,
+        "Impressions": 4.0,
+        "CTR": 0.0,
+        "Position": 21.0
+      },
+      {
+        "Top queries": "luxury car tuning",
+        "Clicks": 0.0,
+        "Impressions": 4.0,
+        "CTR": 0.0,
+        "Position": 21.0
+      },
+      {
+        "Top queries": "chip tuning uae",
+        "Clicks": 0.0,
+        "Impressions": 4.0,
+        "CTR": 0.0,
+        "Position": 21.5
+      },
+      {
+        "Top queries": "car tuning uae",
+        "Clicks": 0.0,
+        "Impressions": 4.0,
+        "CTR": 0.0,
+        "Position": 23.25
+      },
+      {
+        "Top queries": "chip tuning stage 1",
+        "Clicks": 0.0,
+        "Impressions": 4.0,
+        "CTR": 0.0,
+        "Position": 25.75
+      },
+      {
+        "Top queries": "supercar tuning",
+        "Clicks": 0.0,
+        "Impressions": 4.0,
+        "CTR": 0.0,
+        "Position": 27.75
+      },
+      {
+        "Top queries": "auto tuning dubai",
+        "Clicks": 0.0,
+        "Impressions": 4.0,
+        "CTR": 0.0,
+        "Position": 28.0
+      },
+      {
+        "Top queries": "professional car tuning",
+        "Clicks": 0.0,
+        "Impressions": 4.0,
+        "CTR": 0.0,
+        "Position": 30.0
+      },
+      {
+        "Top queries": "custom ecu tuning",
+        "Clicks": 0.0,
+        "Impressions": 4.0,
+        "CTR": 0.0,
+        "Position": 34.25
+      },
+      {
+        "Top queries": "car tuning companies",
+        "Clicks": 0.0,
+        "Impressions": 4.0,
+        "CTR": 0.0,
+        "Position": 35.75
+      },
+      {
+        "Top queries": "custom car tuning",
+        "Clicks": 0.0,
+        "Impressions": 4.0,
+        "CTR": 0.0,
+        "Position": 35.75
+      },
+      {
+        "Top queries": "car tuning garage",
+        "Clicks": 0.0,
+        "Impressions": 4.0,
+        "CTR": 0.0,
+        "Position": 44.5
+      },
+      {
+        "Top queries": "mercedes tuning dubai",
+        "Clicks": 0.0,
+        "Impressions": 4.0,
+        "CTR": 0.0,
+        "Position": 52.75
+      },
+      {
+        "Top queries": "car code performance",
+        "Clicks": 0.0,
+        "Impressions": 4.0,
+        "CTR": 0.0,
+        "Position": 53.25
+      },
+      {
+        "Top queries": "gearbox tuning",
+        "Clicks": 0.0,
+        "Impressions": 4.0,
+        "CTR": 0.0,
+        "Position": 63.5
+      },
+      {
+        "Top queries": "digi tec",
+        "Clicks": 0.0,
+        "Impressions": 3.0,
+        "CTR": 0.0,
+        "Position": 2.0
+      },
+      {
+        "Top queries": "tuning tech",
+        "Clicks": 0.0,
+        "Impressions": 3.0,
+        "CTR": 0.0,
+        "Position": 8.0
+      },
+      {
+        "Top queries": "gad tuning",
+        "Clicks": 0.0,
+        "Impressions": 3.0,
+        "CTR": 0.0,
+        "Position": 9.67
+      },
+      {
+        "Top queries": "performance tuning",
+        "Clicks": 0.0,
+        "Impressions": 3.0,
+        "CTR": 0.0,
+        "Position": 9.67
+      },
+      {
+        "Top queries": "super car tuning",
+        "Clicks": 0.0,
+        "Impressions": 3.0,
+        "CTR": 0.0,
+        "Position": 18.0
+      },
+      {
+        "Top queries": "dyno tuning near me",
+        "Clicks": 0.0,
+        "Impressions": 3.0,
+        "CTR": 0.0,
+        "Position": 21.33
+      },
+      {
+        "Top queries": "mercedes ecu",
+        "Clicks": 0.0,
+        "Impressions": 3.0,
+        "CTR": 0.0,
+        "Position": 35.67
+      },
+      {
+        "Top queries": "mercedes tuning companies",
+        "Clicks": 0.0,
+        "Impressions": 3.0,
+        "CTR": 0.0,
+        "Position": 39.67
+      },
+      {
+        "Top queries": "ecu chip tuning",
+        "Clicks": 0.0,
+        "Impressions": 3.0,
+        "CTR": 0.0,
+        "Position": 51.33
+      },
+      {
+        "Top queries": "mercedes sound system upgrade in dubai",
+        "Clicks": 0.0,
+        "Impressions": 3.0,
+        "CTR": 0.0,
+        "Position": 54.0
+      },
+      {
+        "Top queries": "ecu stage 3",
+        "Clicks": 0.0,
+        "Impressions": 3.0,
+        "CTR": 0.0,
+        "Position": 78.0
+      },
+      {
+        "Top queries": "engine tuning near me",
+        "Clicks": 0.0,
+        "Impressions": 2.0,
+        "CTR": 0.0,
+        "Position": 5.0
+      },
+      {
+        "Top queries": "performance tuning dubai",
+        "Clicks": 0.0,
+        "Impressions": 2.0,
+        "CTR": 0.0,
+        "Position": 6.0
+      },
+      {
+        "Top queries": "car engine tuning near me",
+        "Clicks": 0.0,
+        "Impressions": 2.0,
+        "CTR": 0.0,
+        "Position": 7.5
+      },
+      {
+        "Top queries": "tuning shops near me",
+        "Clicks": 0.0,
+        "Impressions": 2.0,
+        "CTR": 0.0,
+        "Position": 10.0
+      },
+      {
+        "Top queries": "auto upgrades",
+        "Clicks": 0.0,
+        "Impressions": 2.0,
+        "CTR": 0.0,
+        "Position": 70.0
+      },
+      {
+        "Top queries": "digi-tec",
+        "Clicks": 0.0,
+        "Impressions": 1.0,
+        "CTR": 0.0,
+        "Position": 1.0
+      },
+      {
+        "Top queries": "digitec performance center",
+        "Clicks": 0.0,
+        "Impressions": 1.0,
+        "CTR": 0.0,
+        "Position": 1.0
+      },
+      {
+        "Top queries": "tuning services near me",
+        "Clicks": 0.0,
+        "Impressions": 1.0,
+        "CTR": 0.0,
+        "Position": 1.0
+      },
+      {
+        "Top queries": "what about stage 2",
+        "Clicks": 0.0,
+        "Impressions": 1.0,
+        "CTR": 0.0,
+        "Position": 1.0
+      },
+      {
+        "Top queries": "gad-motors",
+        "Clicks": 0.0,
+        "Impressions": 1.0,
+        "CTR": 0.0,
+        "Position": 3.0
+      },
+      {
+        "Top queries": "in dubai",
+        "Clicks": 0.0,
+        "Impressions": 1.0,
+        "CTR": 0.0,
+        "Position": 4.0
+      },
+      {
+        "Top queries": "tunning near me",
+        "Clicks": 0.0,
+        "Impressions": 1.0,
+        "CTR": 0.0,
+        "Position": 4.0
+      },
+      {
+        "Top queries": "y eso cuanto cuesta",
+        "Clicks": 0.0,
+        "Impressions": 1.0,
+        "CTR": 0.0,
+        "Position": 4.0
+      },
+      {
+        "Top queries": "ecu calibration near me",
+        "Clicks": 0.0,
+        "Impressions": 1.0,
+        "CTR": 0.0,
+        "Position": 5.0
+      },
+      {
+        "Top queries": "gad motors mercedes",
+        "Clicks": 0.0,
+        "Impressions": 1.0,
+        "CTR": 0.0,
+        "Position": 5.0
+      },
+      {
+        "Top queries": "local performance shop",
+        "Clicks": 0.0,
+        "Impressions": 1.0,
+        "CTR": 0.0,
+        "Position": 5.0
+      },
+      {
+        "Top queries": "mercedes gad motors",
+        "Clicks": 0.0,
+        "Impressions": 1.0,
+        "CTR": 0.0,
+        "Position": 5.0
+      },
+      {
+        "Top queries": "performance tunning",
+        "Clicks": 0.0,
+        "Impressions": 1.0,
+        "CTR": 0.0,
+        "Position": 5.0
+      },
+      {
+        "Top queries": "vehicle tuning near me",
+        "Clicks": 0.0,
+        "Impressions": 1.0,
+        "CTR": 0.0,
+        "Position": 5.0
+      },
+      {
+        "Top queries": "نعم",
+        "Clicks": 0.0,
+        "Impressions": 1.0,
+        "CTR": 0.0,
+        "Position": 5.0
+      },
+      {
+        "Top queries": "car tuners near me",
+        "Clicks": 0.0,
+        "Impressions": 1.0,
+        "CTR": 0.0,
+        "Position": 6.0
+      },
+      {
+        "Top queries": "how much would it cost?",
+        "Clicks": 0.0,
+        "Impressions": 1.0,
+        "CTR": 0.0,
+        "Position": 6.0
+      },
+      {
+        "Top queries": "car tune near me",
+        "Clicks": 0.0,
+        "Impressions": 1.0,
+        "CTR": 0.0,
+        "Position": 7.0
+      },
+      {
+        "Top queries": "mercedes gad",
+        "Clicks": 0.0,
+        "Impressions": 1.0,
+        "CTR": 0.0,
+        "Position": 8.0
+      },
+      {
+        "Top queries": "year one tuning",
+        "Clicks": 0.0,
+        "Impressions": 1.0,
+        "CTR": 0.0,
+        "Position": 8.0
+      },
+      {
+        "Top queries": "digi tec tuning",
+        "Clicks": 0.0,
+        "Impressions": 1.0,
+        "CTR": 0.0,
+        "Position": 9.0
+      },
+      {
+        "Top queries": "tuning shop near me",
+        "Clicks": 0.0,
+        "Impressions": 1.0,
+        "CTR": 0.0,
+        "Position": 9.0
+      },
+      {
+        "Top queries": "\"auto chip tuning servis\" \"ahmad rajabli\"",
+        "Clicks": 0.0,
+        "Impressions": 1.0,
+        "CTR": 0.0,
+        "Position": 10.0
+      },
+      {
+        "Top queries": "ecu reprogramming near me",
+        "Clicks": 0.0,
+        "Impressions": 1.0,
+        "CTR": 0.0,
+        "Position": 10.0
+      },
+      {
+        "Top queries": "ford tuning near me",
+        "Clicks": 0.0,
+        "Impressions": 1.0,
+        "CTR": 0.0,
+        "Position": 10.0
+      },
+      {
+        "Top queries": "mopar tuning near me",
+        "Clicks": 0.0,
+        "Impressions": 1.0,
+        "CTR": 0.0,
+        "Position": 10.0
+      },
+      {
+        "Top queries": "gad mercedes tuning",
+        "Clicks": 0.0,
+        "Impressions": 1.0,
+        "CTR": 0.0,
+        "Position": 11.0
+      },
+      {
+        "Top queries": "both",
+        "Clicks": 0.0,
+        "Impressions": 1.0,
+        "CTR": 0.0,
+        "Position": 12.0
+      },
+      {
+        "Top queries": "performance engine solutions",
+        "Clicks": 0.0,
+        "Impressions": 1.0,
+        "CTR": 0.0,
+        "Position": 20.0
+      },
+      {
+        "Top queries": "dubai tuning training courses",
+        "Clicks": 0.0,
+        "Impressions": 1.0,
+        "CTR": 0.0,
+        "Position": 27.0
+      },
+      {
+        "Top queries": "dme tuning uae",
+        "Clicks": 0.0,
+        "Impressions": 1.0,
+        "CTR": 0.0,
+        "Position": 29.0
+      },
+      {
+        "Top queries": "tuning shop",
+        "Clicks": 0.0,
+        "Impressions": 1.0,
+        "CTR": 0.0,
+        "Position": 37.0
+      },
+      {
+        "Top queries": "car tuning device",
+        "Clicks": 0.0,
+        "Impressions": 1.0,
+        "CTR": 0.0,
+        "Position": 49.0
+      },
+      {
+        "Top queries": "ecu tuning course",
+        "Clicks": 0.0,
+        "Impressions": 1.0,
+        "CTR": 0.0,
+        "Position": 54.0
+      },
+      {
+        "Top queries": "bmw tuning dubai",
+        "Clicks": 0.0,
+        "Impressions": 1.0,
+        "CTR": 0.0,
+        "Position": 66.0
+      },
+      {
+        "Top queries": "car programming",
+        "Clicks": 0.0,
+        "Impressions": 1.0,
+        "CTR": 0.0,
+        "Position": 98.0
+      }
+    ],
+    "Pages": [
+      {
+        "Top pages": "https://digitecme.com/tuning",
+        "Clicks": 11.0,
+        "Impressions": 991.0,
+        "CTR": 0.0111,
+        "Position": 20.76
+      }
+    ],
+    "Countries": [
+      {
+        "Country": "United Arab Emirates",
+        "Clicks": 1.0,
+        "Impressions": 604.0,
+        "CTR": 0.0017000000000000001,
+        "Position": 27.15
+      },
+      {
+        "Country": "Italy",
+        "Clicks": 0.0,
+        "Impressions": 4.0,
+        "CTR": 0.0,
+        "Position": 23.0
+      },
+      {
+        "Country": "United Kingdom",
+        "Clicks": 0.0,
+        "Impressions": 2.0,
+        "CTR": 0.0,
+        "Position": 17.0
+      },
+      {
+        "Country": "Germany",
+        "Clicks": 0.0,
+        "Impressions": 2.0,
+        "CTR": 0.0,
+        "Position": 30.5
+      },
+      {
+        "Country": "India",
+        "Clicks": 0.0,
+        "Impressions": 2.0,
+        "CTR": 0.0,
+        "Position": 34.5
+      },
+      {
+        "Country": "Chile",
+        "Clicks": 0.0,
+        "Impressions": 1.0,
+        "CTR": 0.0,
+        "Position": 4.0
+      },
+      {
+        "Country": "Poland",
+        "Clicks": 0.0,
+        "Impressions": 1.0,
+        "CTR": 0.0,
+        "Position": 4.0
+      },
+      {
+        "Country": "Romania",
+        "Clicks": 0.0,
+        "Impressions": 1.0,
+        "CTR": 0.0,
+        "Position": 8.0
+      },
+      {
+        "Country": "Switzerland",
+        "Clicks": 0.0,
+        "Impressions": 1.0,
+        "CTR": 0.0,
+        "Position": 9.0
+      },
+      {
+        "Country": "Iran",
+        "Clicks": 0.0,
+        "Impressions": 1.0,
+        "CTR": 0.0,
+        "Position": 10.0
+      },
+      {
+        "Country": "Saudi Arabia",
+        "Clicks": 0.0,
+        "Impressions": 1.0,
+        "CTR": 0.0,
+        "Position": 10.0
+      },
+      {
+        "Country": "Oman",
+        "Clicks": 0.0,
+        "Impressions": 1.0,
+        "CTR": 0.0,
+        "Position": 11.0
+      },
+      {
+        "Country": "Uzbekistan",
+        "Clicks": 0.0,
+        "Impressions": 1.0,
+        "CTR": 0.0,
+        "Position": 11.0
+      },
+      {
+        "Country": "Norway",
+        "Clicks": 0.0,
+        "Impressions": 1.0,
+        "CTR": 0.0,
+        "Position": 12.0
+      },
+      {
+        "Country": "France",
+        "Clicks": 0.0,
+        "Impressions": 1.0,
+        "CTR": 0.0,
+        "Position": 15.0
+      },
+      {
+        "Country": "Netherlands",
+        "Clicks": 0.0,
+        "Impressions": 1.0,
+        "CTR": 0.0,
+        "Position": 16.0
+      },
+      {
+        "Country": "Greece",
+        "Clicks": 0.0,
+        "Impressions": 1.0,
+        "CTR": 0.0,
+        "Position": 17.0
+      },
+      {
+        "Country": "Hungary",
+        "Clicks": 0.0,
+        "Impressions": 1.0,
+        "CTR": 0.0,
+        "Position": 32.0
+      }
+    ],
+    "Devices": [
+      {
+        "Device": "Mobile",
+        "Clicks": 1.0,
+        "Impressions": 234.0,
+        "CTR": 0.0043,
+        "Position": 21.25
+      },
+      {
+        "Device": "Desktop",
+        "Clicks": 0.0,
+        "Impressions": 393.0,
+        "CTR": 0.0,
+        "Position": 30.13
+      }
+    ],
+    "Search appearance": [],
+    "Filters": [
+      {
+        "Filter": "Search type",
+        "Value": "Web"
+      },
+      {
+        "Filter": "Date",
+        "Value": "Last 28 days"
+      },
+      {
+        "Filter": "Page",
+        "Value": "https://digitecme.com/tuning"
+      }
+    ]
+  }
+}

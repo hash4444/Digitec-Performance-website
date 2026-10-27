@@ -1,0 +1,92 @@
+{
+  "analyzedAt": "2026-10-26T08:58:45.928Z",
+  "readOnly": true,
+  "networkMutations": false,
+  "capturePath": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-4\\redirects\\http\\post-2026-10-26T08-56-52-592Z\\capture.json",
+  "captureSha256": "32dd6d32edc71cad9caa0522f8b4b6d6eba35a7540baeb73bd5a7427316f2002",
+  "baselinePath": "reports/mercedes-phase-2/evidence/http/pre-2026-10-26T07-06-59-812Z/capture.json",
+  "startedAt": "2026-10-26T08:56:52.596Z",
+  "finishedAt": "2026-10-26T08:57:40.802Z",
+  "summary": {
+    "cases": 326,
+    "networkRequests": 612,
+    "assertions": 852,
+    "passed": 852,
+    "failed": 0,
+    "sourceCases": 192,
+    "protectedOilCases": 48
+  },
+  "groups": [
+    {
+      "group": "source",
+      "cases": 192,
+      "assertions": 480,
+      "passed": 480,
+      "failed": 0
+    },
+    {
+      "group": "protected-oil",
+      "cases": 48,
+      "assertions": 120,
+      "passed": 120,
+      "failed": 0
+    },
+    {
+      "group": "protected-repair",
+      "cases": 48,
+      "assertions": 96,
+      "passed": 96,
+      "failed": 0
+    },
+    {
+      "group": "destination",
+      "cases": 16,
+      "assertions": 64,
+      "passed": 64,
+      "failed": 0
+    },
+    {
+      "group": "control",
+      "cases": 22,
+      "assertions": 88,
+      "passed": 88,
+      "failed": 0
+    }
+  ],
+  "rules": [
+    {
+      "rule": "ar-oil-change",
+      "cases": 48,
+      "direct308ToIntended200WithExactQuery": 48
+    },
+    {
+      "rule": "en-body-repair",
+      "cases": 48,
+      "direct308ToIntended200WithExactQuery": 48
+    },
+    {
+      "rule": "ar-battery-replacement",
+      "cases": 48,
+      "direct308ToIntended200WithExactQuery": 48
+    },
+    {
+      "rule": "ar-mechanical-repair",
+      "cases": 48,
+      "direct308ToIntended200WithExactQuery": 48
+    }
+  ],
+  "protectedEnglishOil": {
+    "cases": 48,
+    "direct308ToIntended200WithExactQuery": 48
+  },
+  "everyGetHopHtmlSaved": true,
+  "getHopHtmlBodies": 305,
+  "anyUnsafeChain": false,
+  "failures": [],
+  "scope": "Pre-implementation public behavior check only. Root separately owns authorized H3-01/H3-02/S1 isolated-copy application/build/preview. No Cloudflare account/rule/cache or source mutations.",
+  "limits": [
+    "Public HTTP does not identify executing Cloudflare rule IDs or certify current account configuration. No new configuration inventory is claimed.",
+    "GSC indexing/canonical decisions and analytics/lead receipt are not tested.",
+    "This post-style verifier compares current deployed redirects and unchanged live content with preserved passing2Aprebaseline; it is not a Phase4 production deployment result."
+  ]
+}

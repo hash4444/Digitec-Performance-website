@@ -112,11 +112,13 @@ const porsche: Partial<Record<ServiceKey, Content>> = {
     ],
   },
   'transmission-repair': {
-    h1: 'Porsche Transmission & PDK Repair in Dubai',
-    metaTitle: 'Porsche Transmission & PDK Repair Dubai | DIGI-TEC',
-    metaDescription: 'Porsche PDK, Tiptronic and manual transmission assessment in Al Quoz. Jerking, delayed engagement, slipping and warnings diagnosed before repair is quoted.',
-    heroCopy: 'PDK, Tiptronic and manual gearboxes have different operating principles, fluids and service procedures. DIGI-TEC identifies the fitted unit and records whether a jerk, slip, delayed engagement or warning occurs cold, hot, under load or in a particular mode. PIWIS 3 data where supported is considered alongside leak, mount, engine and driveline checks. Fluid service, control repair and internal work are separate decisions; a PDK symptom alone does not justify gearbox replacement.',
+    h1: 'Porsche Transmission Service & PDK Repair in Dubai',
+    metaTitle: 'Porsche Transmission Service & PDK Repair Dubai | DIGI-TEC',
+    metaDescription: 'Porsche PDK, Tiptronic and manual transmission service and repair in Al Quoz, Dubai. Scheduled fluid work and gearbox faults assessed for the fitted unit.',
+    heroCopy: 'PDK, Tiptronic and manual gearboxes have different operating principles, fluids and service procedures. For scheduled Porsche transmission service, DIGI-TEC identifies the fitted unit, reviews the vehicle schedule and history, then confirms due fluid, filter and related work before quoting. A jerk, slip, delayed engagement or warning needs a separate fault assessment, including whether it occurs cold, hot, under load or in a particular mode. PIWIS 3 data where supported is considered alongside leak, mount, engine and driveline checks. Fluid service, control repair and internal work are separate decisions; a PDK symptom alone does not justify gearbox replacement.',
     faqs: [
+      { question: 'What is included in a Porsche transmission service?', answer: 'The exact gearbox, applicable schedule and history determine the scope. The quote identifies required fluid circuits, specification, filters or seals where applicable, the level-setting procedure and any supported service functions. No single fluid, interval or package applies to every PDK, Tiptronic and manual gearbox.' },
+      { question: 'Will scheduled transmission service fix PDK jerking or a warning?', answer: 'Not necessarily. Jerking, slipping, delayed engagement or a warning needs diagnosis before maintenance is offered as a solution. Scheduled fluid work and any further fault testing or repair are explained and quoted separately.' },
       { question: 'Does PDK jerking mean the gearbox needs replacing?', answer: 'No. Temperature, clutch control, engine torque, mounts, tyres and driveline condition can affect the sensation. The exact symptom and fitted unit must be diagnosed.' },
       { question: 'Are PDK and Tiptronic serviced the same way?', answer: 'No. They are different transmission designs with vehicle-specific fluids, fill procedures and maintenance requirements. The gearbox is identified before work is quoted.' },
       { question: 'Can PIWIS 3 identify a Porsche transmission fault?', answer: 'Supported fault, live and adaptation data can direct testing, but a code alone does not confirm a failed part. Available functions depend on the vehicle and control unit.' },

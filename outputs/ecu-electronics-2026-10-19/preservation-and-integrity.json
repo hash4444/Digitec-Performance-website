@@ -1,0 +1,27 @@
+{
+  "checkedAt": "2026-10-19T08:38:28.564Z",
+  "passed": true,
+  "base": "acef3427b57b48259bc5b39d6a0f75798603ae95",
+  "branch": "main",
+  "head": "acef3427b57b48259bc5b39d6a0f75798603ae95",
+  "originalFiles": 31637,
+  "byteIdenticalUnrelatedFiles": 31635,
+  "intentionallyModifiedExistingFiles": 2,
+  "approvedNewFiles": [
+    "src/components/EcuElectronicsEnquiryPanel.tsx",
+    "src/data/ecuElectronicsContent.ts"
+  ],
+  "unchangedPriorWorkFiles": [
+    "src/components/DiagnosticAcEnquiryPanel.tsx",
+    "src/data/diagnosticsAcGeneralContent.ts",
+    "src/data/diagnosticsAcBrandContent.ts",
+    "scripts/validate-query-release.mjs"
+  ],
+  "priorTemplatesExtendedOnly": true,
+  "stagedFiles": [],
+  "unexpectedAdded": [],
+  "candidateBuildInputs": 583,
+  "sourceSha256": "5b36413f42162887ca9321530579ddc1c6a96cf64f6288912dc33d00c01a9841",
+  "cumulativePendingSourceFiles": 8,
+  "errors": []
+}

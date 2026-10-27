@@ -1,0 +1,30 @@
+DIGI-TEC ECU & AUTOMOTIVE ELECTRONICS COMBINED QA — PASS
+2026-10-19T08:46:25.510Z
+
+Isolated candidate: C:\Users\ADMIN\Documents\ChatGPT\DIGITEC\outputs\ecu-electronics-2026-10-19\candidate.local
+Base: acef3427b57b48259bc5b39d6a0f75798603ae95 plus completed six-file diagnostics/AC overlay
+Source fingerprint: 5b36413f42162887ca9321530579ddc1c6a96cf64f6288912dc33d00c01a9841
+Reviewed ECU overlay: 4 files; 583 build inputs unchanged after browser QA. Candidate and original source match reviewed hashes. Four prior diagnostic/AC files are unchanged; the two shared page integrations preserve all previous rendered content and CTAs.
+
+Production build: all 19 declared stages PASS; 1,256 real rendered routes; 1,005 canonical sitemap URLs.
+CLI: 13 checks PASS, including TypeScript app/Node, ESLint (zero errors, 11 existing warnings), master SEO, BMW hub, paint care, tuning, full routing-response, booking form and three combined static suites. Build includes routing, SEO, PPF, protection, query, contact privacy, oil, suspension, transmission and social metadata tests.
+
+New static: 8 owners/14 locale pages, 614 assertions, 30 new direct canonical link occurrences; 42 plain-text Q&A items in initial HTML. All existing metadata, H1, schema graphs, indexing, canonical/hreflang and CTA URLs retained. All prior visible content/markup retained after removing only marked new panel with its known wrapper and normalizing generated Radix IDs/whitespace. Twenty noindex policies preserved; zero new routes.
+Prior static: 32 hub/repair locales and 1454 assertions; 16 diagnostics/AC locales and 1011 assertions; 53 protected visible routes retained.
+
+ECU browser: 42 responsive cases (14 locales × 1440/390/320), 14 safe mobile contact pairs, 14 no-JavaScript pages and 14 direct SPA/back checks; zero runtime/hydration errors or failed local resources. Arabic phone LTR and genuine localized destinations verified; English-only infotainment route policy retained.
+Diagnostics/AC browser: 48 responsive, 16 mobile contact triples, 16 no-JavaScript, 16 SPA.
+Five-brand browser: 30 responsive, 30 interactions, 10 no-JavaScript.
+Repair browser: 66 responsive, 22 no-JavaScript, 22 hub links.
+Master browser: 27 responsive, 17 interactions, 7 SPA.
+Protection browser: 9 requests, cross-service/back/forward, true 404.
+PPF browser: 5 WhatsApp CTAs, 2 forms, 3 reply methods, validation/privacy/duplicate suppression and language round trip.
+Tuning browser: 6 responsive configurator cases, all 62 package rows/prices, S63 enquiry-only and DB11 withheld items retained.
+
+Visual review: PASS; representative mobile screenshots inspected.
+
+Harness adjustments and initial failed attempts retained. Only affected checks reran; no application changes after source freeze.
+
+Safety: All browser traffic restricted to loopback GET/HEAD; external requests and writes blocked. Contact navigation prevented/window.open stubbed. No sent WhatsApp message, call, received enquiry, appointment, backend write, commit, push, deployment, publication or Google Business Profile edit.
+
+Limits: Local HTML/layout tests are not field Core Web Vitals. JSON-LD/provider/FAQ integrity tested locally; no Google Rich Results or URL Inspection API invoked. Clicks and drafts are intent signals, not verified delivered messages, connected calls, CRM records or confirmed enquiries. Local QA does not establish active production deployment, publication source, ranking improvement or a recoverable authenticated rollback state.

@@ -1,0 +1,185 @@
+{
+  "checkedAt": "2026-10-20T06:20:28.978Z",
+  "buildInputFiles": 603,
+  "buildFingerprint": "bd6e54dfc7daa043b71f34e248b44ac2b533b6a78946ddb2e975994e14c5f6cf",
+  "buildInputMismatches": [],
+  "overlays": [
+    {
+      "file": "src/components/MercedesMaintenanceScope.tsx",
+      "expected": "1e6728a7de40ef56f7bf77af495784cff38c34cd9a653d6777757fee62616aff",
+      "workspace": "1e6728a7de40ef56f7bf77af495784cff38c34cd9a653d6777757fee62616aff",
+      "candidate": "1e6728a7de40ef56f7bf77af495784cff38c34cd9a653d6777757fee62616aff",
+      "passed": true
+    },
+    {
+      "file": "src/lib/route-manifest.ts",
+      "expected": "a05194b6899972cb91945af2ea0c0a3fd836055a5d8c52d87fc3f9a6a219d0d5",
+      "workspace": "a05194b6899972cb91945af2ea0c0a3fd836055a5d8c52d87fc3f9a6a219d0d5",
+      "candidate": "a05194b6899972cb91945af2ea0c0a3fd836055a5d8c52d87fc3f9a6a219d0d5",
+      "passed": true
+    },
+    {
+      "file": "src/pages/BrandPage.tsx",
+      "expected": "f5d68037c056bb1f32d73cc5c009e066287da0ab225267b9606d834a23002c33",
+      "workspace": "f5d68037c056bb1f32d73cc5c009e066287da0ab225267b9606d834a23002c33",
+      "candidate": "f5d68037c056bb1f32d73cc5c009e066287da0ab225267b9606d834a23002c33",
+      "passed": true
+    },
+    {
+      "file": "src/pages/Services.tsx",
+      "expected": "77e7cc3aa83277602271ec3106506d4f360bd4fb6737445a5a1235a435ed09d0",
+      "workspace": "77e7cc3aa83277602271ec3106506d4f360bd4fb6737445a5a1235a435ed09d0",
+      "candidate": "77e7cc3aa83277602271ec3106506d4f360bd4fb6737445a5a1235a435ed09d0",
+      "passed": true
+    },
+    {
+      "file": "src/components/MercedesServiceBookingForm.tsx",
+      "expected": "c45f5468d2361b5b2de37edee90fff8b1d0cd145e2379439c8aad973fd1291fd",
+      "workspace": "c45f5468d2361b5b2de37edee90fff8b1d0cd145e2379439c8aad973fd1291fd",
+      "candidate": "c45f5468d2361b5b2de37edee90fff8b1d0cd145e2379439c8aad973fd1291fd",
+      "passed": true
+    },
+    {
+      "file": "src/data/mercedesServiceCampaign.ts",
+      "expected": "98012343a3f8450ba6a34bb094425beaa4049932d534d9115d0b373ded32c8dd",
+      "workspace": "98012343a3f8450ba6a34bb094425beaa4049932d534d9115d0b373ded32c8dd",
+      "candidate": "98012343a3f8450ba6a34bb094425beaa4049932d534d9115d0b373ded32c8dd",
+      "passed": true
+    },
+    {
+      "file": "src/pages/AboutUs.tsx",
+      "expected": "960135dca90c760970ee4455a4411247b363a09297ccb47cdacc1e69a50bbad7",
+      "workspace": "960135dca90c760970ee4455a4411247b363a09297ccb47cdacc1e69a50bbad7",
+      "candidate": "960135dca90c760970ee4455a4411247b363a09297ccb47cdacc1e69a50bbad7",
+      "passed": true
+    },
+    {
+      "file": "src/components/AboutVideoStrip.tsx",
+      "expected": "2b32db4c3b6ffba4330a446abd271463fa281284426187f0f0fa450bf7ba5833",
+      "workspace": "2b32db4c3b6ffba4330a446abd271463fa281284426187f0f0fa450bf7ba5833",
+      "candidate": "2b32db4c3b6ffba4330a446abd271463fa281284426187f0f0fa450bf7ba5833",
+      "passed": true
+    },
+    {
+      "file": "src/components/AboutVideoStrip.css",
+      "expected": "17d3b601543cc07b7d297456e78d7754b5b0e35a8960d6218289fd233c47f408",
+      "workspace": "17d3b601543cc07b7d297456e78d7754b5b0e35a8960d6218289fd233c47f408",
+      "candidate": "17d3b601543cc07b7d297456e78d7754b5b0e35a8960d6218289fd233c47f408",
+      "passed": true
+    },
+    {
+      "file": "public/videos/about/video-01.mp4",
+      "expected": "9c500d204d1070581f16d32cf5e33a3b567ac1aedfc77b614ab3b407de971032",
+      "workspace": "9c500d204d1070581f16d32cf5e33a3b567ac1aedfc77b614ab3b407de971032",
+      "candidate": "9c500d204d1070581f16d32cf5e33a3b567ac1aedfc77b614ab3b407de971032",
+      "passed": true
+    },
+    {
+      "file": "public/videos/about/video-01-poster.jpg",
+      "expected": "6d87b2d7e03e35543abac63006a56dd15e5210c957769933d0ef9a194c9b6c51",
+      "workspace": "6d87b2d7e03e35543abac63006a56dd15e5210c957769933d0ef9a194c9b6c51",
+      "candidate": "6d87b2d7e03e35543abac63006a56dd15e5210c957769933d0ef9a194c9b6c51",
+      "passed": true
+    },
+    {
+      "file": "public/videos/about/video-02.mp4",
+      "expected": "56bc057ca003efcc47cbc4544c434fd6d340c0c6219782feddea78fa4d8dd686",
+      "workspace": "56bc057ca003efcc47cbc4544c434fd6d340c0c6219782feddea78fa4d8dd686",
+      "candidate": "56bc057ca003efcc47cbc4544c434fd6d340c0c6219782feddea78fa4d8dd686",
+      "passed": true
+    },
+    {
+      "file": "public/videos/about/video-02-poster.jpg",
+      "expected": "68cb00909f30c3d819c4b6694c835803ea282d56ac1a1043eb7110e056dcbf88",
+      "workspace": "68cb00909f30c3d819c4b6694c835803ea282d56ac1a1043eb7110e056dcbf88",
+      "candidate": "68cb00909f30c3d819c4b6694c835803ea282d56ac1a1043eb7110e056dcbf88",
+      "passed": true
+    },
+    {
+      "file": "public/videos/about/video-03.mp4",
+      "expected": "d29915c29e689fb4aa6afcfd4b9570fe9358719232d02ad3003cc6d4f6509c14",
+      "workspace": "d29915c29e689fb4aa6afcfd4b9570fe9358719232d02ad3003cc6d4f6509c14",
+      "candidate": "d29915c29e689fb4aa6afcfd4b9570fe9358719232d02ad3003cc6d4f6509c14",
+      "passed": true
+    },
+    {
+      "file": "public/videos/about/video-03-poster.jpg",
+      "expected": "a4757679639a299f040ac9cd2aa31abcf1f8974495c9e430d8552a5c979c0112",
+      "workspace": "a4757679639a299f040ac9cd2aa31abcf1f8974495c9e430d8552a5c979c0112",
+      "candidate": "a4757679639a299f040ac9cd2aa31abcf1f8974495c9e430d8552a5c979c0112",
+      "passed": true
+    },
+    {
+      "file": "public/videos/about/video-04.mp4",
+      "expected": "9100811359c29b2054467435264b06d0cc111475e9d131df910c23daa09f98e4",
+      "workspace": "9100811359c29b2054467435264b06d0cc111475e9d131df910c23daa09f98e4",
+      "candidate": "9100811359c29b2054467435264b06d0cc111475e9d131df910c23daa09f98e4",
+      "passed": true
+    },
+    {
+      "file": "public/videos/about/video-04-poster.jpg",
+      "expected": "fe3648bdaf1e6b4dd4db3cd558c7ea19ca581eea18c72444d8410aa6a847ba44",
+      "workspace": "fe3648bdaf1e6b4dd4db3cd558c7ea19ca581eea18c72444d8410aa6a847ba44",
+      "candidate": "fe3648bdaf1e6b4dd4db3cd558c7ea19ca581eea18c72444d8410aa6a847ba44",
+      "passed": true
+    },
+    {
+      "file": "public/videos/about/video-05.mp4",
+      "expected": "c4697fb039e101ebfdec15ae7e11c46ea234a91027d95a68ab7e42c161c1455a",
+      "workspace": "c4697fb039e101ebfdec15ae7e11c46ea234a91027d95a68ab7e42c161c1455a",
+      "candidate": "c4697fb039e101ebfdec15ae7e11c46ea234a91027d95a68ab7e42c161c1455a",
+      "passed": true
+    },
+    {
+      "file": "public/videos/about/video-05-poster.jpg",
+      "expected": "440f2f864d3f9710ec06e6576581f6f7cea6c3e6a48015116cf843bea2a5bc7b",
+      "workspace": "440f2f864d3f9710ec06e6576581f6f7cea6c3e6a48015116cf843bea2a5bc7b",
+      "candidate": "440f2f864d3f9710ec06e6576581f6f7cea6c3e6a48015116cf843bea2a5bc7b",
+      "passed": true
+    },
+    {
+      "file": "public/videos/about/video-06.mp4",
+      "expected": "4c71ad3a3024ccace8bebe1b24ebf5da3f4046b01d3e999fa2bf7dfdfb1668c1",
+      "workspace": "4c71ad3a3024ccace8bebe1b24ebf5da3f4046b01d3e999fa2bf7dfdfb1668c1",
+      "candidate": "4c71ad3a3024ccace8bebe1b24ebf5da3f4046b01d3e999fa2bf7dfdfb1668c1",
+      "passed": true
+    },
+    {
+      "file": "public/videos/about/video-06-poster.jpg",
+      "expected": "fa4d60a0294be06525a86ebdff507fd999890110aa1134ae987e2f30cfaf6c7b",
+      "workspace": "fa4d60a0294be06525a86ebdff507fd999890110aa1134ae987e2f30cfaf6c7b",
+      "candidate": "fa4d60a0294be06525a86ebdff507fd999890110aa1134ae987e2f30cfaf6c7b",
+      "passed": true
+    },
+    {
+      "file": "public/videos/about/video-07.mp4",
+      "expected": "09d89e950d2e507c14867b32853ac395a2c17802a769c1e6b993eac046e458a5",
+      "workspace": "09d89e950d2e507c14867b32853ac395a2c17802a769c1e6b993eac046e458a5",
+      "candidate": "09d89e950d2e507c14867b32853ac395a2c17802a769c1e6b993eac046e458a5",
+      "passed": true
+    },
+    {
+      "file": "public/videos/about/video-07-poster.jpg",
+      "expected": "b04cfa5f4cb7680508f4a172e51bfd14668a9d2863d10f1411485bfb6caf8702",
+      "workspace": "b04cfa5f4cb7680508f4a172e51bfd14668a9d2863d10f1411485bfb6caf8702",
+      "candidate": "b04cfa5f4cb7680508f4a172e51bfd14668a9d2863d10f1411485bfb6caf8702",
+      "passed": true
+    },
+    {
+      "file": "public/videos/about/video-08.mp4",
+      "expected": "eaa6a2b584a277ae5714ce35fe56a200fd6cf031f0e0267e05d3e7546ee77de8",
+      "workspace": "eaa6a2b584a277ae5714ce35fe56a200fd6cf031f0e0267e05d3e7546ee77de8",
+      "candidate": "eaa6a2b584a277ae5714ce35fe56a200fd6cf031f0e0267e05d3e7546ee77de8",
+      "passed": true
+    },
+    {
+      "file": "public/videos/about/video-08-poster.jpg",
+      "expected": "47294fbe8d5c3f45bffd6ce21e9a497b8c3657112a0694b323d6c76d08fbb97c",
+      "workspace": "47294fbe8d5c3f45bffd6ce21e9a497b8c3657112a0694b323d6c76d08fbb97c",
+      "candidate": "47294fbe8d5c3f45bffd6ce21e9a497b8c3657112a0694b323d6c76d08fbb97c",
+      "passed": true
+    }
+  ],
+  "sourceUnchangedAfterAllTests": true,
+  "protectedFilesPassed": true
+}

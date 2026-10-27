@@ -1,0 +1,50 @@
+[
+  {
+    "file": "src/pages/BrandWorkshopArticlePage.tsx",
+    "preT11Sha256": "ed761804c12b8fba7c8d10a07ec04ee0c64e9c81f8041375a2fe20707e213241",
+    "reconstructedSnapshotSha256": "ed761804c12b8fba7c8d10a07ec04ee0c64e9c81f8041375a2fe20707e213241",
+    "currentSha256": "6d50b863185c33fefe443fbc44d02589e80b9108653b12bb009df2dbc4008d7c",
+    "verifiedAgainstPreT11Manifest": true,
+    "snapshotLimitation": null,
+    "beforePath": "outputs\\t1.1\\owned-source-diffs\\before\\src\\pages\\BrandWorkshopArticlePage.tsx",
+    "afterPath": "outputs\\t1.1\\owned-source-diffs\\after\\src\\pages\\BrandWorkshopArticlePage.tsx",
+    "beforeLineCount": 645,
+    "afterLineCount": 647
+  },
+  {
+    "file": "src/data/brands.ts",
+    "preT11Sha256": "afa6b91d3f9dc74ebaccf8600fc9fe92f4165c8182a700ad357f9892d3d55541",
+    "reconstructedSnapshotSha256": "afa6b91d3f9dc74ebaccf8600fc9fe92f4165c8182a700ad357f9892d3d55541",
+    "currentSha256": "dac6d48dfa9defd3410a4db60abbaeeb7ab6e542faa3dbfcb1e7493cf749d64b",
+    "verifiedAgainstPreT11Manifest": true,
+    "snapshotLimitation": null,
+    "beforePath": "outputs\\t1.1\\owned-source-diffs\\before\\src\\data\\brands.ts",
+    "afterPath": "outputs\\t1.1\\owned-source-diffs\\after\\src\\data\\brands.ts",
+    "beforeLineCount": 558,
+    "afterLineCount": 558
+  },
+  {
+    "file": "src/i18n/ar-brands.ts",
+    "preT11Sha256": "12a364ec73e7f2c83497270a7d874b13a323c7c77c5c25c2e664fecb41c37a62",
+    "reconstructedSnapshotSha256": "12a364ec73e7f2c83497270a7d874b13a323c7c77c5c25c2e664fecb41c37a62",
+    "currentSha256": "391a8b4b6fa1a914bd43f1e4fbf8bc020b250b613253472d94a94c9ce98f35aa",
+    "verifiedAgainstPreT11Manifest": true,
+    "snapshotLimitation": null,
+    "beforePath": "outputs\\t1.1\\owned-source-diffs\\before\\src\\i18n\\ar-brands.ts",
+    "afterPath": "outputs\\t1.1\\owned-source-diffs\\after\\src\\i18n\\ar-brands.ts",
+    "beforeLineCount": 65,
+    "afterLineCount": 65
+  },
+  {
+    "file": "src/pages/Brands.tsx",
+    "preT11Sha256": "d914c91cdd74936cef546092a54c3a69a246cf807da043ae50f899c1b0248439",
+    "reconstructedSnapshotSha256": "2953305b842dff435df2745e0506c056c5889f465fb6168352508de964828d70",
+    "currentSha256": "c27edef12cb096f43533ac2171d7ea8968f933b102a54cb4d5b3a79e6acd0bfb",
+    "verifiedAgainstPreT11Manifest": false,
+    "snapshotLimitation": "Brands.tsx: original mixed line-ending byte stream was not recovered. The before snapshot is a reconstruction by reversing exactly the one authorized Arabic card conditional; it must not be represented as byte-identical to pre-T1.1. Original captured hash remains authoritative. The initial clean Git state and single conditional diff establish change scope.",
+    "beforePath": "outputs\\t1.1\\owned-source-diffs\\before\\src\\pages\\Brands.tsx",
+    "afterPath": "outputs\\t1.1\\owned-source-diffs\\after\\src\\pages\\Brands.tsx",
+    "beforeLineCount": 113,
+    "afterLineCount": 113
+  }
+]

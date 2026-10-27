@@ -1,0 +1,371 @@
+{
+  "as_of": "2026-10-20 Asia/Dubai",
+  "exact_query": "mercedes service dubai",
+  "editorial_target_url": "https://digitecme.com/brands/mercedes-benz-service-dubai",
+  "primary_baseline": {
+    "source_name": "digitecme.com-Performance-on-Search-2026-10-12 (1).xlsx",
+    "source_path": "C:\\Users\\ADMIN\\Downloads\\digitecme.com-Performance-on-Search-2026-10-12 (1).xlsx",
+    "filters": {
+      "Search type": "Web",
+      "Date": "Last 3 months"
+    },
+    "start": "2026-07-10",
+    "end": "2026-10-09",
+    "time_column": "Date",
+    "source_sha256": "3fcbcb796e4670809bc44d52852369a58bf8650d6577c496a1f71a996573945e",
+    "semantic_duplicate_of": null,
+    "sheet": "Queries",
+    "range": "A12:E12",
+    "Top queries": "mercedes service dubai",
+    "Clicks": 2.0,
+    "Impressions": 613.0,
+    "CTR": 0.0033,
+    "Position": 13.88,
+    "attribution": "Exact query aggregate across all pages/countries/devices except explicit source filters. Separate workbook tabs cannot be joined.",
+    "calculated_ctr": 0.0032626427406199023
+  },
+  "latest_available_export": {
+    "name": "digitecme.com-Performance-on-Search-2026-10-20.xlsx",
+    "path": "C:\\Users\\ADMIN\\Downloads\\digitecme.com-Performance-on-Search-2026-10-20.xlsx",
+    "sha256": "c34108586e17219063b157767f1f1f443b2612e9e068f498465b89eeb1403e18",
+    "source_unchanged": true,
+    "filters": {
+      "Search type": "Web (text-based)",
+      "Date": "Last 28 days",
+      "Query": "+mercedes service dubai"
+    },
+    "start": "2026-09-20",
+    "end": "2026-10-17",
+    "time_column": "Date",
+    "time_rows": 28,
+    "sheets": {
+      "Chart": {
+        "range": "A1:E29",
+        "rows": 28
+      },
+      "Queries": {
+        "range": "A1:E2",
+        "rows": 1
+      },
+      "Pages": {
+        "range": "A1:E4",
+        "rows": 3
+      },
+      "Countries": {
+        "range": "A1:E4",
+        "rows": 3
+      },
+      "Devices": {
+        "range": "A1:E3",
+        "rows": 2
+      },
+      "Search appearance": {
+        "range": "A1:E1",
+        "rows": 0
+      },
+      "Filters": {
+        "range": "A1:B4",
+        "rows": 3
+      }
+    },
+    "semantic_data_sha256": "402006c0e59c8ce188476d19490d21429d292488800371f1222c530efab3961a",
+    "semantic_duplicate_of": null
+  },
+  "latest_available_exact_query_rows": [
+    {
+      "source_name": "digitecme.com-Performance-on-Search-2026-10-20.xlsx",
+      "source_path": "C:\\Users\\ADMIN\\Downloads\\digitecme.com-Performance-on-Search-2026-10-20.xlsx",
+      "filters": {
+        "Search type": "Web (text-based)",
+        "Date": "Last 28 days",
+        "Query": "+mercedes service dubai"
+      },
+      "start": "2026-09-20",
+      "end": "2026-10-17",
+      "time_column": "Date",
+      "source_sha256": "c34108586e17219063b157767f1f1f443b2612e9e068f498465b89eeb1403e18",
+      "semantic_duplicate_of": null,
+      "sheet": "Queries",
+      "range": "A2:E2",
+      "Top queries": "mercedes service dubai",
+      "Clicks": 2.0,
+      "Impressions": 182.0,
+      "CTR": 0.011000000000000001,
+      "Position": 12.62,
+      "attribution": "Exact query aggregate across all pages/countries/devices except explicit source filters. Separate workbook tabs cannot be joined."
+    }
+  ],
+  "raw_workbook_count": 18,
+  "exact_query_source_observations_not_summed": 13,
+  "exact_query_filtered_workbooks": 1,
+  "original_workbooks_reopened_read_only": true,
+  "all_source_hashes_unchanged": true,
+  "checks": 22,
+  "evidence_limits": {
+    "exact_query_by_page": "VERIFIED LIVE. Exact query 20 September–17 October 2026, Pages tab and UAE+exact hub filters inspected directly. See live-gsc-evidence.json.",
+    "exact_query_uae": "VERIFIED LIVE. Exact query + United Arab Emirates. 179 impressions, 2 clicks, average position 12.2 shown. Do not confuse with all-country baseline.",
+    "exact_query_mobile_desktop": "VERIFIED LIVE. Query + UAE + exact target hub: Desktop 100 impressions/2 clicks/11.2 position; Mobile 61/0/11.3. Device and page metrics jointly filtered, not allocated from independent tabs.",
+    "google_selected_canonical": "VERIFIED indexed URL Inspection. Google-selected canonical = Inspected URL, exact target hub. Page indexed, fetch/crawl/indexing allowed. Last crawl displayed 16 Oct 2026 21:18:38, timezone not exposed.",
+    "actual_query_landing_page": "VERIFIED LIVE. Intended hub 164 impressions/2 clicks globally; 161/2 for UAE, current 28-day exact query. Dominant observed owner, not exclusive across all time.",
+    "latest_range": "Latest available workbook digitecme.com-Performance-on-Search-2026-10-20.xlsx, period 2026-09-20 to 2026-10-17. Filename is not reporting period.",
+    "source_missing_rows": "Absent from visible exported query rows means unavailable, never zero demand.",
+    "overlap": "Date windows overlap and duplicate exports exist. No observation totals pooled and no causal trend inferred.",
+    "position": "GSC average position 13.88 is an aggregate historical metric; not current Dubai rank, rank on every impression or evidence of top three.",
+    "conversion": "GSC clicks do not establish qualified enquiries or bookings.",
+    "release_effect": "Unknown. Current 28-day report ends 17 October; indexed crawl dated 16 October. Latest live provisional 24-hour span 19–20 October contains only four impressions. No release causation inferred."
+  },
+  "access_check": {
+    "enabled_gsc_or_url_inspection_tools": false,
+    "initial_browser_inventory": "Only in-app browser and MCP Apps surfaces, initially both with zero tabs. Live owned-site GSC card later found by SERP agent, read-only follow-up pending.",
+    "live_authenticated_gsc_access": true,
+    "account_writes": false
+  },
+  "live_evidence": {
+    "observed_date_client": "2026-10-20",
+    "capture_completed_utc": "2026-10-20T05:31:50Z",
+    "capture_completed_dubai": "2026-10-20T09:31:50+04:00",
+    "method": "Authenticated Google Search Console read-only browser UI. Report filters, rendered tables and indexed URL Inspection observed directly. No request indexing, live URL test, property change or external account mutation.",
+    "property": "sc-domain:digitecme.com",
+    "query": "mercedes service dubai",
+    "query_operator": "Exact query",
+    "query_operator_proof": "live-exact-query-filter-ax.txt",
+    "report_type_ui": "Web",
+    "period": {
+      "start": "2026-09-20",
+      "end": "2026-10-17",
+      "days": 28,
+      "date_basis": "GSC daily report dates, retained exactly as shown; not relabelled as Dubai daily dates."
+    },
+    "global_query_totals": {
+      "clicks": 2,
+      "impressions": 182,
+      "ctr_display": "1.1%",
+      "average_position_display": 12.6
+    },
+    "global_query_pages": [
+      {
+        "url": "https://digitecme.com/brands/mercedes-benz-service-dubai",
+        "clicks": 2,
+        "impressions": 164,
+        "ctr_display": "1.2%",
+        "average_position_display": 11.7
+      },
+      {
+        "url": "https://digitecme.com/services/mercedes-oil-change-dubai/",
+        "clicks": 0,
+        "impressions": 10,
+        "ctr_display": "0%",
+        "average_position_display": 9.8
+      },
+      {
+        "url": "https://digitecme.com/services/mercedes-brake-repair-dubai/",
+        "clicks": 0,
+        "impressions": 8,
+        "ctr_display": "0%",
+        "average_position_display": 34.6
+      }
+    ],
+    "global_query_devices": [
+      {
+        "device": "Desktop",
+        "clicks": 2,
+        "impressions": 120,
+        "ctr_display": "1.7%",
+        "average_position_display": 13.3
+      },
+      {
+        "device": "Mobile",
+        "clicks": 0,
+        "impressions": 62,
+        "ctr_display": "0%",
+        "average_position_display": 11.3
+      }
+    ],
+    "global_query_countries": [
+      {
+        "country": "United Arab Emirates",
+        "clicks": 2,
+        "impressions": 179,
+        "ctr_display": "1.1%",
+        "average_position_display": 12.2
+      },
+      {
+        "country": "India",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr_display": "0%",
+        "average_position_display": 9.5
+      },
+      {
+        "country": "Latvia",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr_display": "0%",
+        "average_position_display": 99.0
+      }
+    ],
+    "query_uae_totals": {
+      "clicks": 2,
+      "impressions": 179,
+      "ctr_display": "1.1%",
+      "average_position_display": 12.2
+    },
+    "query_uae_devices": [
+      {
+        "device": "Desktop",
+        "clicks": 2,
+        "impressions": 118,
+        "ctr_display": "1.7%",
+        "average_position_display": 12.6
+      },
+      {
+        "device": "Mobile",
+        "clicks": 0,
+        "impressions": 61,
+        "ctr_display": "0%",
+        "average_position_display": 11.3
+      }
+    ],
+    "query_uae_pages": [
+      {
+        "url": "https://digitecme.com/brands/mercedes-benz-service-dubai",
+        "clicks": 2,
+        "impressions": 161,
+        "ctr_display": "1.2%",
+        "average_position_display": 11.2
+      },
+      {
+        "url": "https://digitecme.com/services/mercedes-oil-change-dubai/",
+        "clicks": 0,
+        "impressions": 10,
+        "ctr_display": "0%",
+        "average_position_display": 9.8
+      },
+      {
+        "url": "https://digitecme.com/services/mercedes-brake-repair-dubai/",
+        "clicks": 0,
+        "impressions": 8,
+        "ctr_display": "0%",
+        "average_position_display": 34.6
+      }
+    ],
+    "query_uae_exact_hub_totals": {
+      "page_operator": "Exact URL",
+      "url": "https://digitecme.com/brands/mercedes-benz-service-dubai",
+      "clicks": 2,
+      "impressions": 161,
+      "ctr_display": "1.2%",
+      "average_position_display": 11.2
+    },
+    "query_uae_exact_hub_devices": [
+      {
+        "device": "Desktop",
+        "clicks": 2,
+        "impressions": 100,
+        "ctr_display": "2%",
+        "average_position_display": 11.2
+      },
+      {
+        "device": "Mobile",
+        "clicks": 0,
+        "impressions": 61,
+        "ctr_display": "0%",
+        "average_position_display": 11.3
+      }
+    ],
+    "indexed_url_inspection": {
+      "url": "https://digitecme.com/brands/mercedes-benz-service-dubai",
+      "inspection_url": "https://search.google.com/u/0/search-console/inspect?resource_id=sc-domain%3Adigitecme.com&id=0h39EJn7vdIgkgcA9YIVIw",
+      "status": "URL is on Google",
+      "page_indexing": "Page is indexed",
+      "last_crawl_display": "16 Oct 2026, 21:18:38",
+      "last_crawl_timezone": "Not exposed in captured UI. Do not assign Dubai or UTC to the displayed timestamp.",
+      "crawler": "Googlebot smartphone",
+      "crawl_allowed": "Yes",
+      "page_fetch": "Successful",
+      "indexing_allowed": "Yes",
+      "user_declared_canonical": "https://digitecme.com/brands/mercedes-benz-service-dubai",
+      "google_selected_canonical_display": "Inspected URL",
+      "google_selected_canonical_resolved": "https://digitecme.com/brands/mercedes-benz-service-dubai",
+      "sitemaps": [
+        "https://digitecme.com/sitemap.xml"
+      ],
+      "referring_pages": [
+        "https://digitecme.com/services/mercedes-repair",
+        "https://digitecme.com/services/mercedes-repair-dubai/"
+      ],
+      "enhancements": [
+        "HTTPS Page is served over HTTPS",
+        "Breadcrumbs 1 valid item detected"
+      ],
+      "not_performed": [
+        "Request indexing",
+        "Test live URL",
+        "Account changes"
+      ],
+      "evidence": [
+        "live-indexed-url-inspection-ax.txt",
+        "live-indexed-url-inspection.png"
+      ]
+    },
+    "latest_24h_provisional": {
+      "ui_date_span": "19 October 2026 to 20 October 2026",
+      "exact_hour_boundaries": "Not exposed in captured chart description. Do not claim a particular Dubai start/end hour.",
+      "query_operator": "Exact query",
+      "country_filter": null,
+      "page_filter": null,
+      "clicks": 0,
+      "impressions": 4,
+      "ctr_display": "0%",
+      "average_position_display": 15.8,
+      "devices": [
+        {
+          "device": "Desktop",
+          "clicks": 0,
+          "impressions": 3,
+          "ctr_display": "0%",
+          "average_position_display": 16.0
+        },
+        {
+          "device": "Mobile",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr_display": "0%",
+          "average_position_display": 15.0
+        }
+      ],
+      "pages": [
+        {
+          "url": "https://digitecme.com/brands/mercedes-benz-service-dubai",
+          "clicks": 0,
+          "impressions": 4,
+          "ctr_display": "0%",
+          "average_position_display": 15.8
+        }
+      ],
+      "interpretation": "Four provisional impressions cannot establish a ranking trend, release impact, a stable current rank or top-three visibility.",
+      "evidence": [
+        "live-exact-query-24h-devices-ax.txt",
+        "live-exact-query-24h-pages-ax.txt"
+      ]
+    },
+    "interpretation": {
+      "ownership": "Intended brand hub is directly verified as the dominant exact-query owner in the current 28-day report and the sole owner in the four-impression provisional latest 24-hour sample.",
+      "mobile": "Zero mobile clicks on 61 UAE hub impressions is observed. It is an early conversion/snippet investigation opportunity, not proof of a mobile UX defect or a statistically established CTR deficit.",
+      "overlap": "Other pages appearing for the same query warrants intent and internal-link review. It does not prove harmful cannibalization or justify removing distinct oil/brake owners.",
+      "release": "The 28-day reporting period ends 17 October 2026 and the indexed crawl is dated 16 October. Neither verifies the effect of the 19 October releases or this unpublished 20 October candidate.",
+      "ranking_goal": "No verified top-three result or guarantee. Average position is an aggregate across impressions and different SERP contexts."
+    },
+    "source_export_note": "The newly supplied 20 October workbook has a contains-query filter and one visible exact-query row. Its headline and page/country/device metrics match the independently observed live Exact query report at UI precision. Keep the file's contains scope distinct from the live exact-filter proof.",
+    "official_references": [
+      {
+        "title": "Search Console metrics and canonical attribution",
+        "url": "https://support.google.com/webmasters/answer/7042828?hl=en"
+      },
+      {
+        "title": "Search Analytics query API",
+        "url": "https://developers.google.com/webmaster-tools/v1/searchanalytics/query"
+      }
+    ]
+  }
+}

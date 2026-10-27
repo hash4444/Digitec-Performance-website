@@ -1,0 +1,27 @@
+{
+  "status": "PROPOSED_ONLY_REQUIRES_EXPLICIT_USER_APPROVAL",
+  "productionMutationPerformed": false,
+  "domain": "digitecme.com",
+  "ruleId": "2873f5b6de04417d8a486b22cc878835",
+  "description": "Mercedes Arabic mechanical legacy alias to existing service",
+  "proposedAction": "Disable only this new Single Redirect using its dashboard enabled toggle, leaving the record in place.",
+  "desiredFieldChange": { "enabled": false },
+  "preserve": [
+    "All original rule definitions, IDs, enabled states and relative ordering",
+    "R1, R2 and R3 enabled definitions and ordering",
+    "R4 expression, destination, status code and query preservation settings",
+    "All DNS, TLS, Workers, normalization, website content and metadata"
+  ],
+  "expectedEffect": "R4 source variants would return to the before-state routing, including the verified homepage fallback; this does not fix the legacy mechanical alias.",
+  "limits": [
+    "No cause of the R4 HTTP mismatch has been established.",
+    "Previously cached permanent redirects may persist at clients after disabling the rule.",
+    "R1-R3 passed their individual checkpoints, but the final full release matrix was not run because R4 failed.",
+    "This proposal is a review artifact, not an executable API payload or authorization."
+  ],
+  "ifApprovedVerification": [
+    "Read back only R4 enabled=false and preserve all seven definitions and existing relative order.",
+    "Run read-only R1-R3 source coverage, R4 before-state routing, destinations and protected controls.",
+    "Record disable submission-to-observed-state interval and all response evidence; stop on failure."
+  ]
+}

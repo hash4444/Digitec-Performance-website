@@ -1,0 +1,1126 @@
+{
+  "createdAt": "2026-10-20T06:01:11.337Z",
+  "elapsedSeconds": 2.943,
+  "passed": true,
+  "specifications": {
+    "durationSeconds": 35,
+    "fps": 30,
+    "frames": 1050,
+    "videoCodec": "h264",
+    "audioCodec": "aac",
+    "audioSampleRate": 48000,
+    "audioChannels": 2
+  },
+  "checksAreAgainst": "Final encoded MP4 files. All samples decoded by FFmpeg from final video streams.",
+  "visualReview": {
+    "completed": true,
+    "note": "Root visually inspected the final decoded contact sheet and full-resolution scene frames. Independent design review fixed two portrait overlay collisions and removed repeated engine explosion. Opening frame black and 200ms cut shutters are intentional. Final CTA is centered with a readable stable hold. Browser real-time playback is recorded separately.",
+    "contactSheet": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\digitec-commercial\\qa\\decoded-contact-sheet.jpg"
+  },
+  "tools": {
+    "ffmpeg": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\digitec-commercial\\tools\\ffmpeg\\bin\\ffmpeg.exe",
+    "ffprobe": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\digitec-commercial\\tools\\ffmpeg\\bin\\ffprobe.exe"
+  },
+  "files": [
+    {
+      "format": "vertical",
+      "file": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\digitec-commercial\\renders\\digitec-vertical.mp4",
+      "bytes": 10847119,
+      "passed": true,
+      "checks": [
+        {
+          "name": "FFprobe metadata command",
+          "passed": true,
+          "measured": 0,
+          "expected": 0
+        },
+        {
+          "name": "Full FFmpeg video/audio decode",
+          "passed": true,
+          "measured": {
+            "exitCode": 0,
+            "errors": ""
+          },
+          "expected": "Exit 0 and no error output"
+        },
+        {
+          "name": "Frame timestamp extraction",
+          "passed": true,
+          "measured": 0,
+          "expected": 0
+        },
+        {
+          "name": "Audio loudness/true-peak analysis",
+          "passed": true,
+          "measured": 0,
+          "expected": 0
+        },
+        {
+          "name": "H.264 codec",
+          "passed": true,
+          "measured": "h264",
+          "expected": "h264"
+        },
+        {
+          "name": "Required dimensions",
+          "passed": true,
+          "measured": [
+            1080,
+            1920
+          ],
+          "expected": [
+            1080,
+            1920
+          ]
+        },
+        {
+          "name": "30 FPS nominal and average",
+          "passed": true,
+          "measured": {
+            "nominal": "30/1",
+            "average": "30/1"
+          },
+          "expected": "30/1"
+        },
+        {
+          "name": "YUV 4:2:0 compatibility",
+          "passed": true,
+          "measured": "yuv420p",
+          "expected": "yuv420p"
+        },
+        {
+          "name": "1050 decoded video frames",
+          "passed": true,
+          "measured": "1050",
+          "expected": 1050
+        },
+        {
+          "name": "Video stream duration",
+          "passed": true,
+          "measured": "35.000000",
+          "expected": "35.000 s ± 0.001 s"
+        },
+        {
+          "name": "Container duration",
+          "passed": true,
+          "measured": "35.000000",
+          "expected": "35.000 s ± 0.05 s"
+        },
+        {
+          "name": "AAC audio codec",
+          "passed": true,
+          "measured": "aac",
+          "expected": "aac"
+        },
+        {
+          "name": "Stereo audio",
+          "passed": true,
+          "measured": {
+            "channels": 2,
+            "layout": "stereo"
+          },
+          "expected": 2
+        },
+        {
+          "name": "48 kHz audio",
+          "passed": true,
+          "measured": "48000",
+          "expected": 48000
+        },
+        {
+          "name": "Audio stream duration",
+          "passed": true,
+          "measured": "35.000000",
+          "expected": "35.000 s ± 0.05 s"
+        },
+        {
+          "name": "1050 frame timestamps",
+          "passed": true,
+          "measured": 1050,
+          "expected": 1050
+        },
+        {
+          "name": "Strictly increasing presentation timestamps",
+          "passed": true,
+          "measured": 0,
+          "expected": 0
+        },
+        {
+          "name": "Constant frame interval at 30 FPS",
+          "passed": true,
+          "measured": {
+            "wrongIntervals": 0,
+            "maxAbsoluteErrorSeconds": 6.666666701946045e-7
+          },
+          "expected": "Every interval 1/30 s ± 2 µs"
+        },
+        {
+          "name": "First presentation timestamp",
+          "passed": true,
+          "measured": 0,
+          "expected": 0
+        },
+        {
+          "name": "Last presentation timestamp",
+          "passed": true,
+          "measured": 34.966667,
+          "expected": 34.96666666666667
+        },
+        {
+          "name": "Readable measured audio loudness",
+          "passed": true,
+          "measured": {
+            "input_i": "-15.81",
+            "input_tp": "-1.37",
+            "input_lra": "7.90",
+            "input_thresh": "-26.05",
+            "output_i": "-16.34",
+            "output_tp": "-1.55",
+            "output_lra": "6.10",
+            "output_thresh": "-26.46",
+            "normalization_type": "dynamic",
+            "target_offset": "0.34"
+          },
+          "expected": "FFmpeg loudnorm input analysis"
+        },
+        {
+          "name": "Decoded audio true peak below digital clipping",
+          "passed": true,
+          "measured": -1.37,
+          "expected": "< 0 dBTP"
+        },
+        {
+          "name": "Decoded sample extraction command",
+          "passed": true,
+          "measured": {
+            "exitCode": 0,
+            "errors": ""
+          },
+          "expected": 0
+        },
+        {
+          "name": "All requested decoded samples exist",
+          "passed": true,
+          "measured": 21,
+          "expected": 21
+        }
+      ],
+      "warnings": [],
+      "video": {
+        "index": 0,
+        "codec_name": "h264",
+        "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+        "profile": "High",
+        "codec_type": "video",
+        "codec_tag_string": "avc1",
+        "codec_tag": "0x31637661",
+        "mime_codec_string": "avc1.640029",
+        "width": 1080,
+        "height": 1920,
+        "coded_width": 1088,
+        "coded_height": 1920,
+        "has_b_frames": 2,
+        "pix_fmt": "yuv420p",
+        "level": 41,
+        "color_range": "tv",
+        "color_space": "bt709",
+        "chroma_location": "left",
+        "field_order": "progressive",
+        "refs": 4,
+        "is_avc": "true",
+        "nal_length_size": "4",
+        "id": "0x1",
+        "r_frame_rate": "30/1",
+        "avg_frame_rate": "30/1",
+        "time_base": "1/15360",
+        "start_pts": 0,
+        "start_time": "0.000000",
+        "duration_ts": 537600,
+        "duration": "35.000000",
+        "bit_rate": "2211580",
+        "bits_per_raw_sample": "8",
+        "nb_frames": "1050",
+        "nb_read_frames": "1050",
+        "extradata_size": 50,
+        "disposition": {
+          "default": 1,
+          "dub": 0,
+          "original": 0,
+          "comment": 0,
+          "lyrics": 0,
+          "karaoke": 0,
+          "forced": 0,
+          "hearing_impaired": 0,
+          "visual_impaired": 0,
+          "clean_effects": 0,
+          "attached_pic": 0,
+          "timed_thumbnails": 0,
+          "non_diegetic": 0,
+          "captions": 0,
+          "descriptions": 0,
+          "metadata": 0,
+          "dependent": 0,
+          "still_image": 0,
+          "multilayer": 0
+        },
+        "tags": {
+          "language": "und",
+          "handler_name": "VideoHandler",
+          "encoder": "Lavc63.1.102 libx264"
+        }
+      },
+      "audio": {
+        "index": 1,
+        "codec_name": "aac",
+        "codec_long_name": "AAC (Advanced Audio Coding)",
+        "profile": "LC",
+        "codec_type": "audio",
+        "codec_tag_string": "mp4a",
+        "codec_tag": "0x6134706d",
+        "mime_codec_string": "mp4a.40.2",
+        "sample_fmt": "fltp",
+        "sample_rate": "48000",
+        "channels": 2,
+        "channel_layout": "stereo",
+        "bits_per_sample": 0,
+        "initial_padding": 1024,
+        "id": "0x2",
+        "r_frame_rate": "0/0",
+        "avg_frame_rate": "0/0",
+        "time_base": "1/48000",
+        "start_pts": 0,
+        "start_time": "0.000000",
+        "duration_ts": 1680000,
+        "duration": "35.000000",
+        "bit_rate": "259080",
+        "nb_frames": "1642",
+        "nb_read_frames": "1641",
+        "extradata_size": 5,
+        "disposition": {
+          "default": 1,
+          "dub": 0,
+          "original": 0,
+          "comment": 0,
+          "lyrics": 0,
+          "karaoke": 0,
+          "forced": 0,
+          "hearing_impaired": 0,
+          "visual_impaired": 0,
+          "clean_effects": 0,
+          "attached_pic": 0,
+          "timed_thumbnails": 0,
+          "non_diegetic": 0,
+          "captions": 0,
+          "descriptions": 0,
+          "metadata": 0,
+          "dependent": 0,
+          "still_image": 0,
+          "multilayer": 0
+        },
+        "tags": {
+          "language": "und",
+          "handler_name": "SoundHandler"
+        }
+      },
+      "loudness": {
+        "input_i": "-15.81",
+        "input_tp": "-1.37",
+        "input_lra": "7.90",
+        "input_thresh": "-26.05",
+        "output_i": "-16.34",
+        "output_tp": "-1.55",
+        "output_lra": "6.10",
+        "output_thresh": "-26.46",
+        "normalization_type": "dynamic",
+        "target_offset": "0.34"
+      },
+      "timestampSummary": {
+        "count": 1050,
+        "firstSeconds": 0,
+        "lastSeconds": 34.966667,
+        "nonMonotonicIntervals": 0,
+        "wrongFrameIntervals": 0,
+        "maxIntervalErrorSeconds": 6.666666701946045e-7
+      },
+      "decodeCommand": [
+        "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\digitec-commercial\\tools\\ffmpeg\\bin\\ffmpeg.exe",
+        "-nostdin",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-xerror",
+        "-i",
+        "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\digitec-commercial\\renders\\digitec-vertical.mp4",
+        "-map",
+        "0:v:0",
+        "-map",
+        "0:a:0",
+        "-f",
+        "null",
+        "NUL"
+      ],
+      "samples": [
+        {
+          "frame": 0,
+          "seconds": 0,
+          "label": "Opening",
+          "path": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\digitec-commercial\\qa\\decoded-vertical\\frame-00.jpg",
+          "decodedDimensions": [
+            1080,
+            1920
+          ]
+        },
+        {
+          "frame": 60,
+          "seconds": 2,
+          "label": "Scene 1 center",
+          "path": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\digitec-commercial\\qa\\decoded-vertical\\frame-01.jpg",
+          "decodedDimensions": [
+            1080,
+            1920
+          ]
+        },
+        {
+          "frame": 119,
+          "seconds": 3.966666666666667,
+          "label": "Before 4s cut",
+          "path": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\digitec-commercial\\qa\\decoded-vertical\\frame-02.jpg",
+          "decodedDimensions": [
+            1080,
+            1920
+          ]
+        },
+        {
+          "frame": 120,
+          "seconds": 4,
+          "label": "At/after 4s cut",
+          "path": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\digitec-commercial\\qa\\decoded-vertical\\frame-03.jpg",
+          "decodedDimensions": [
+            1080,
+            1920
+          ]
+        },
+        {
+          "frame": 195,
+          "seconds": 6.5,
+          "label": "Scene 2 center",
+          "path": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\digitec-commercial\\qa\\decoded-vertical\\frame-04.jpg",
+          "decodedDimensions": [
+            1080,
+            1920
+          ]
+        },
+        {
+          "frame": 269,
+          "seconds": 8.966666666666667,
+          "label": "Before 9s cut",
+          "path": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\digitec-commercial\\qa\\decoded-vertical\\frame-05.jpg",
+          "decodedDimensions": [
+            1080,
+            1920
+          ]
+        },
+        {
+          "frame": 270,
+          "seconds": 9,
+          "label": "At/after 9s cut",
+          "path": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\digitec-commercial\\qa\\decoded-vertical\\frame-06.jpg",
+          "decodedDimensions": [
+            1080,
+            1920
+          ]
+        },
+        {
+          "frame": 345,
+          "seconds": 11.5,
+          "label": "Scene 3 center",
+          "path": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\digitec-commercial\\qa\\decoded-vertical\\frame-07.jpg",
+          "decodedDimensions": [
+            1080,
+            1920
+          ]
+        },
+        {
+          "frame": 419,
+          "seconds": 13.966666666666667,
+          "label": "Before 14s cut",
+          "path": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\digitec-commercial\\qa\\decoded-vertical\\frame-08.jpg",
+          "decodedDimensions": [
+            1080,
+            1920
+          ]
+        },
+        {
+          "frame": 420,
+          "seconds": 14,
+          "label": "At/after 14s cut",
+          "path": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\digitec-commercial\\qa\\decoded-vertical\\frame-09.jpg",
+          "decodedDimensions": [
+            1080,
+            1920
+          ]
+        },
+        {
+          "frame": 510,
+          "seconds": 17,
+          "label": "Scene 4 center",
+          "path": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\digitec-commercial\\qa\\decoded-vertical\\frame-10.jpg",
+          "decodedDimensions": [
+            1080,
+            1920
+          ]
+        },
+        {
+          "frame": 599,
+          "seconds": 19.966666666666665,
+          "label": "Before 20s cut",
+          "path": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\digitec-commercial\\qa\\decoded-vertical\\frame-11.jpg",
+          "decodedDimensions": [
+            1080,
+            1920
+          ]
+        },
+        {
+          "frame": 600,
+          "seconds": 20,
+          "label": "At/after 20s cut",
+          "path": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\digitec-commercial\\qa\\decoded-vertical\\frame-12.jpg",
+          "decodedDimensions": [
+            1080,
+            1920
+          ]
+        },
+        {
+          "frame": 705,
+          "seconds": 23.5,
+          "label": "Scene 5 center",
+          "path": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\digitec-commercial\\qa\\decoded-vertical\\frame-13.jpg",
+          "decodedDimensions": [
+            1080,
+            1920
+          ]
+        },
+        {
+          "frame": 809,
+          "seconds": 26.966666666666665,
+          "label": "Before 27s cut",
+          "path": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\digitec-commercial\\qa\\decoded-vertical\\frame-14.jpg",
+          "decodedDimensions": [
+            1080,
+            1920
+          ]
+        },
+        {
+          "frame": 810,
+          "seconds": 27,
+          "label": "At/after 27s cut",
+          "path": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\digitec-commercial\\qa\\decoded-vertical\\frame-15.jpg",
+          "decodedDimensions": [
+            1080,
+            1920
+          ]
+        },
+        {
+          "frame": 870,
+          "seconds": 29,
+          "label": "Scene 6 center",
+          "path": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\digitec-commercial\\qa\\decoded-vertical\\frame-16.jpg",
+          "decodedDimensions": [
+            1080,
+            1920
+          ]
+        },
+        {
+          "frame": 929,
+          "seconds": 30.966666666666665,
+          "label": "Before 31s cut",
+          "path": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\digitec-commercial\\qa\\decoded-vertical\\frame-17.jpg",
+          "decodedDimensions": [
+            1080,
+            1920
+          ]
+        },
+        {
+          "frame": 930,
+          "seconds": 31,
+          "label": "At/after 31s cut",
+          "path": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\digitec-commercial\\qa\\decoded-vertical\\frame-18.jpg",
+          "decodedDimensions": [
+            1080,
+            1920
+          ]
+        },
+        {
+          "frame": 990,
+          "seconds": 33,
+          "label": "Scene 7 center",
+          "path": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\digitec-commercial\\qa\\decoded-vertical\\frame-19.jpg",
+          "decodedDimensions": [
+            1080,
+            1920
+          ]
+        },
+        {
+          "frame": 1049,
+          "seconds": 34.96666666666667,
+          "label": "Final frame",
+          "path": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\digitec-commercial\\qa\\decoded-vertical\\frame-20.jpg",
+          "decodedDimensions": [
+            1080,
+            1920
+          ]
+        }
+      ]
+    },
+    {
+      "format": "horizontal",
+      "file": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\digitec-commercial\\renders\\digitec-horizontal.mp4",
+      "bytes": 10260794,
+      "passed": true,
+      "checks": [
+        {
+          "name": "FFprobe metadata command",
+          "passed": true,
+          "measured": 0,
+          "expected": 0
+        },
+        {
+          "name": "Full FFmpeg video/audio decode",
+          "passed": true,
+          "measured": {
+            "exitCode": 0,
+            "errors": ""
+          },
+          "expected": "Exit 0 and no error output"
+        },
+        {
+          "name": "Frame timestamp extraction",
+          "passed": true,
+          "measured": 0,
+          "expected": 0
+        },
+        {
+          "name": "Audio loudness/true-peak analysis",
+          "passed": true,
+          "measured": 0,
+          "expected": 0
+        },
+        {
+          "name": "H.264 codec",
+          "passed": true,
+          "measured": "h264",
+          "expected": "h264"
+        },
+        {
+          "name": "Required dimensions",
+          "passed": true,
+          "measured": [
+            1920,
+            1080
+          ],
+          "expected": [
+            1920,
+            1080
+          ]
+        },
+        {
+          "name": "30 FPS nominal and average",
+          "passed": true,
+          "measured": {
+            "nominal": "30/1",
+            "average": "30/1"
+          },
+          "expected": "30/1"
+        },
+        {
+          "name": "YUV 4:2:0 compatibility",
+          "passed": true,
+          "measured": "yuv420p",
+          "expected": "yuv420p"
+        },
+        {
+          "name": "1050 decoded video frames",
+          "passed": true,
+          "measured": "1050",
+          "expected": 1050
+        },
+        {
+          "name": "Video stream duration",
+          "passed": true,
+          "measured": "35.000000",
+          "expected": "35.000 s ± 0.001 s"
+        },
+        {
+          "name": "Container duration",
+          "passed": true,
+          "measured": "35.000000",
+          "expected": "35.000 s ± 0.05 s"
+        },
+        {
+          "name": "AAC audio codec",
+          "passed": true,
+          "measured": "aac",
+          "expected": "aac"
+        },
+        {
+          "name": "Stereo audio",
+          "passed": true,
+          "measured": {
+            "channels": 2,
+            "layout": "stereo"
+          },
+          "expected": 2
+        },
+        {
+          "name": "48 kHz audio",
+          "passed": true,
+          "measured": "48000",
+          "expected": 48000
+        },
+        {
+          "name": "Audio stream duration",
+          "passed": true,
+          "measured": "35.000000",
+          "expected": "35.000 s ± 0.05 s"
+        },
+        {
+          "name": "1050 frame timestamps",
+          "passed": true,
+          "measured": 1050,
+          "expected": 1050
+        },
+        {
+          "name": "Strictly increasing presentation timestamps",
+          "passed": true,
+          "measured": 0,
+          "expected": 0
+        },
+        {
+          "name": "Constant frame interval at 30 FPS",
+          "passed": true,
+          "measured": {
+            "wrongIntervals": 0,
+            "maxAbsoluteErrorSeconds": 6.666666701946045e-7
+          },
+          "expected": "Every interval 1/30 s ± 2 µs"
+        },
+        {
+          "name": "First presentation timestamp",
+          "passed": true,
+          "measured": 0,
+          "expected": 0
+        },
+        {
+          "name": "Last presentation timestamp",
+          "passed": true,
+          "measured": 34.966667,
+          "expected": 34.96666666666667
+        },
+        {
+          "name": "Readable measured audio loudness",
+          "passed": true,
+          "measured": {
+            "input_i": "-15.81",
+            "input_tp": "-1.37",
+            "input_lra": "7.90",
+            "input_thresh": "-26.05",
+            "output_i": "-16.34",
+            "output_tp": "-1.55",
+            "output_lra": "6.10",
+            "output_thresh": "-26.46",
+            "normalization_type": "dynamic",
+            "target_offset": "0.34"
+          },
+          "expected": "FFmpeg loudnorm input analysis"
+        },
+        {
+          "name": "Decoded audio true peak below digital clipping",
+          "passed": true,
+          "measured": -1.37,
+          "expected": "< 0 dBTP"
+        },
+        {
+          "name": "Decoded sample extraction command",
+          "passed": true,
+          "measured": {
+            "exitCode": 0,
+            "errors": ""
+          },
+          "expected": 0
+        },
+        {
+          "name": "All requested decoded samples exist",
+          "passed": true,
+          "measured": 21,
+          "expected": 21
+        }
+      ],
+      "warnings": [],
+      "video": {
+        "index": 0,
+        "codec_name": "h264",
+        "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+        "profile": "High",
+        "codec_type": "video",
+        "codec_tag_string": "avc1",
+        "codec_tag": "0x31637661",
+        "mime_codec_string": "avc1.640029",
+        "width": 1920,
+        "height": 1080,
+        "coded_width": 1920,
+        "coded_height": 1088,
+        "has_b_frames": 2,
+        "pix_fmt": "yuv420p",
+        "level": 41,
+        "color_range": "tv",
+        "color_space": "bt709",
+        "chroma_location": "left",
+        "field_order": "progressive",
+        "refs": 4,
+        "is_avc": "true",
+        "nal_length_size": "4",
+        "id": "0x1",
+        "r_frame_rate": "30/1",
+        "avg_frame_rate": "30/1",
+        "time_base": "1/15360",
+        "start_pts": 0,
+        "start_time": "0.000000",
+        "duration_ts": 537600,
+        "duration": "35.000000",
+        "bit_rate": "2077389",
+        "bits_per_raw_sample": "8",
+        "nb_frames": "1050",
+        "nb_read_frames": "1050",
+        "extradata_size": 50,
+        "disposition": {
+          "default": 1,
+          "dub": 0,
+          "original": 0,
+          "comment": 0,
+          "lyrics": 0,
+          "karaoke": 0,
+          "forced": 0,
+          "hearing_impaired": 0,
+          "visual_impaired": 0,
+          "clean_effects": 0,
+          "attached_pic": 0,
+          "timed_thumbnails": 0,
+          "non_diegetic": 0,
+          "captions": 0,
+          "descriptions": 0,
+          "metadata": 0,
+          "dependent": 0,
+          "still_image": 0,
+          "multilayer": 0
+        },
+        "tags": {
+          "language": "und",
+          "handler_name": "VideoHandler",
+          "encoder": "Lavc63.1.102 libx264"
+        }
+      },
+      "audio": {
+        "index": 1,
+        "codec_name": "aac",
+        "codec_long_name": "AAC (Advanced Audio Coding)",
+        "profile": "LC",
+        "codec_type": "audio",
+        "codec_tag_string": "mp4a",
+        "codec_tag": "0x6134706d",
+        "mime_codec_string": "mp4a.40.2",
+        "sample_fmt": "fltp",
+        "sample_rate": "48000",
+        "channels": 2,
+        "channel_layout": "stereo",
+        "bits_per_sample": 0,
+        "initial_padding": 1024,
+        "id": "0x2",
+        "r_frame_rate": "0/0",
+        "avg_frame_rate": "0/0",
+        "time_base": "1/48000",
+        "start_pts": 0,
+        "start_time": "0.000000",
+        "duration_ts": 1680000,
+        "duration": "35.000000",
+        "bit_rate": "259080",
+        "nb_frames": "1642",
+        "nb_read_frames": "1641",
+        "extradata_size": 5,
+        "disposition": {
+          "default": 1,
+          "dub": 0,
+          "original": 0,
+          "comment": 0,
+          "lyrics": 0,
+          "karaoke": 0,
+          "forced": 0,
+          "hearing_impaired": 0,
+          "visual_impaired": 0,
+          "clean_effects": 0,
+          "attached_pic": 0,
+          "timed_thumbnails": 0,
+          "non_diegetic": 0,
+          "captions": 0,
+          "descriptions": 0,
+          "metadata": 0,
+          "dependent": 0,
+          "still_image": 0,
+          "multilayer": 0
+        },
+        "tags": {
+          "language": "und",
+          "handler_name": "SoundHandler"
+        }
+      },
+      "loudness": {
+        "input_i": "-15.81",
+        "input_tp": "-1.37",
+        "input_lra": "7.90",
+        "input_thresh": "-26.05",
+        "output_i": "-16.34",
+        "output_tp": "-1.55",
+        "output_lra": "6.10",
+        "output_thresh": "-26.46",
+        "normalization_type": "dynamic",
+        "target_offset": "0.34"
+      },
+      "timestampSummary": {
+        "count": 1050,
+        "firstSeconds": 0,
+        "lastSeconds": 34.966667,
+        "nonMonotonicIntervals": 0,
+        "wrongFrameIntervals": 0,
+        "maxIntervalErrorSeconds": 6.666666701946045e-7
+      },
+      "decodeCommand": [
+        "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\digitec-commercial\\tools\\ffmpeg\\bin\\ffmpeg.exe",
+        "-nostdin",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-xerror",
+        "-i",
+        "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\digitec-commercial\\renders\\digitec-horizontal.mp4",
+        "-map",
+        "0:v:0",
+        "-map",
+        "0:a:0",
+        "-f",
+        "null",
+        "NUL"
+      ],
+      "samples": [
+        {
+          "frame": 0,
+          "seconds": 0,
+          "label": "Opening",
+          "path": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\digitec-commercial\\qa\\decoded-horizontal\\frame-00.jpg",
+          "decodedDimensions": [
+            1920,
+            1080
+          ]
+        },
+        {
+          "frame": 60,
+          "seconds": 2,
+          "label": "Scene 1 center",
+          "path": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\digitec-commercial\\qa\\decoded-horizontal\\frame-01.jpg",
+          "decodedDimensions": [
+            1920,
+            1080
+          ]
+        },
+        {
+          "frame": 119,
+          "seconds": 3.966666666666667,
+          "label": "Before 4s cut",
+          "path": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\digitec-commercial\\qa\\decoded-horizontal\\frame-02.jpg",
+          "decodedDimensions": [
+            1920,
+            1080
+          ]
+        },
+        {
+          "frame": 120,
+          "seconds": 4,
+          "label": "At/after 4s cut",
+          "path": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\digitec-commercial\\qa\\decoded-horizontal\\frame-03.jpg",
+          "decodedDimensions": [
+            1920,
+            1080
+          ]
+        },
+        {
+          "frame": 195,
+          "seconds": 6.5,
+          "label": "Scene 2 center",
+          "path": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\digitec-commercial\\qa\\decoded-horizontal\\frame-04.jpg",
+          "decodedDimensions": [
+            1920,
+            1080
+          ]
+        },
+        {
+          "frame": 269,
+          "seconds": 8.966666666666667,
+          "label": "Before 9s cut",
+          "path": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\digitec-commercial\\qa\\decoded-horizontal\\frame-05.jpg",
+          "decodedDimensions": [
+            1920,
+            1080
+          ]
+        },
+        {
+          "frame": 270,
+          "seconds": 9,
+          "label": "At/after 9s cut",
+          "path": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\digitec-commercial\\qa\\decoded-horizontal\\frame-06.jpg",
+          "decodedDimensions": [
+            1920,
+            1080
+          ]
+        },
+        {
+          "frame": 345,
+          "seconds": 11.5,
+          "label": "Scene 3 center",
+          "path": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\digitec-commercial\\qa\\decoded-horizontal\\frame-07.jpg",
+          "decodedDimensions": [
+            1920,
+            1080
+          ]
+        },
+        {
+          "frame": 419,
+          "seconds": 13.966666666666667,
+          "label": "Before 14s cut",
+          "path": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\digitec-commercial\\qa\\decoded-horizontal\\frame-08.jpg",
+          "decodedDimensions": [
+            1920,
+            1080
+          ]
+        },
+        {
+          "frame": 420,
+          "seconds": 14,
+          "label": "At/after 14s cut",
+          "path": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\digitec-commercial\\qa\\decoded-horizontal\\frame-09.jpg",
+          "decodedDimensions": [
+            1920,
+            1080
+          ]
+        },
+        {
+          "frame": 510,
+          "seconds": 17,
+          "label": "Scene 4 center",
+          "path": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\digitec-commercial\\qa\\decoded-horizontal\\frame-10.jpg",
+          "decodedDimensions": [
+            1920,
+            1080
+          ]
+        },
+        {
+          "frame": 599,
+          "seconds": 19.966666666666665,
+          "label": "Before 20s cut",
+          "path": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\digitec-commercial\\qa\\decoded-horizontal\\frame-11.jpg",
+          "decodedDimensions": [
+            1920,
+            1080
+          ]
+        },
+        {
+          "frame": 600,
+          "seconds": 20,
+          "label": "At/after 20s cut",
+          "path": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\digitec-commercial\\qa\\decoded-horizontal\\frame-12.jpg",
+          "decodedDimensions": [
+            1920,
+            1080
+          ]
+        },
+        {
+          "frame": 705,
+          "seconds": 23.5,
+          "label": "Scene 5 center",
+          "path": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\digitec-commercial\\qa\\decoded-horizontal\\frame-13.jpg",
+          "decodedDimensions": [
+            1920,
+            1080
+          ]
+        },
+        {
+          "frame": 809,
+          "seconds": 26.966666666666665,
+          "label": "Before 27s cut",
+          "path": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\digitec-commercial\\qa\\decoded-horizontal\\frame-14.jpg",
+          "decodedDimensions": [
+            1920,
+            1080
+          ]
+        },
+        {
+          "frame": 810,
+          "seconds": 27,
+          "label": "At/after 27s cut",
+          "path": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\digitec-commercial\\qa\\decoded-horizontal\\frame-15.jpg",
+          "decodedDimensions": [
+            1920,
+            1080
+          ]
+        },
+        {
+          "frame": 870,
+          "seconds": 29,
+          "label": "Scene 6 center",
+          "path": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\digitec-commercial\\qa\\decoded-horizontal\\frame-16.jpg",
+          "decodedDimensions": [
+            1920,
+            1080
+          ]
+        },
+        {
+          "frame": 929,
+          "seconds": 30.966666666666665,
+          "label": "Before 31s cut",
+          "path": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\digitec-commercial\\qa\\decoded-horizontal\\frame-17.jpg",
+          "decodedDimensions": [
+            1920,
+            1080
+          ]
+        },
+        {
+          "frame": 930,
+          "seconds": 31,
+          "label": "At/after 31s cut",
+          "path": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\digitec-commercial\\qa\\decoded-horizontal\\frame-18.jpg",
+          "decodedDimensions": [
+            1920,
+            1080
+          ]
+        },
+        {
+          "frame": 990,
+          "seconds": 33,
+          "label": "Scene 7 center",
+          "path": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\digitec-commercial\\qa\\decoded-horizontal\\frame-19.jpg",
+          "decodedDimensions": [
+            1920,
+            1080
+          ]
+        },
+        {
+          "frame": 1049,
+          "seconds": 34.96666666666667,
+          "label": "Final frame",
+          "path": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\digitec-commercial\\qa\\decoded-horizontal\\frame-20.jpg",
+          "decodedDimensions": [
+            1920,
+            1080
+          ]
+        }
+      ]
+    }
+  ]
+}

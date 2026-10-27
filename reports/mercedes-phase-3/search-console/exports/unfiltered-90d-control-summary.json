@@ -1,0 +1,361 @@
+{
+  "generated_at_utc": "2026-10-26T07:59:28.509854+00:00",
+  "method": "Native authenticated UI export supplied by root; ZIP CRC/path-safe extraction; CSV analysis only; no source refresh/mutation.",
+  "zip_file": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-3\\search-console\\exports\\gsc-90d-all-country-all-device-unfiltered-2026-10-26.zip",
+  "zip_sha256": "bc6e6e1013e34ae2a6ca427f62aea2349a2eb501ccce3613d35e0b4f0336bbcd",
+  "zip_unchanged_after_analysis": true,
+  "property": "sc-domain:digitecme.com",
+  "property_provenance": "Root authenticated UI capture; export Filters.csv itself omits property identifier.",
+  "filters": {
+    "Search type": "Web (text-based)",
+    "Date": "27 Jul 2026-24 Oct 2026"
+  },
+  "country_filter": "ALL",
+  "device_filter": "ALL",
+  "date_basis": "GSC daily dates; root verified Pacific Time reporting basis; Dubai used for capture timestamps only.",
+  "finality": "Root confirmed October24 common latest complete day; this CSV does not independently expose dataState/API finality.",
+  "source_files": [
+    {
+      "file": "Chart.csv",
+      "bytes": 2619,
+      "sha256": "6488a5a0c821e69dc521bd3a71f8f1db7e6bab644ffafd2f74b55c3ff27386d8",
+      "data_rows": 90,
+      "headers": [
+        "Date",
+        "Clicks",
+        "Impressions",
+        "CTR",
+        "Position"
+      ]
+    },
+    {
+      "file": "Queries.csv",
+      "bytes": 38937,
+      "sha256": "5631fcc7d092f44434745308bd260bb17fe3b5e4cf7a72faecd853e2bc924e34",
+      "data_rows": 1000,
+      "headers": [
+        "Top queries",
+        "Clicks",
+        "Impressions",
+        "CTR",
+        "Position"
+      ]
+    },
+    {
+      "file": "Pages.csv",
+      "bytes": 75132,
+      "sha256": "842e8de95a011d06cf927a0aef366a4e735dae469baee5cd7098c29cc8a55099",
+      "data_rows": 1000,
+      "headers": [
+        "Top pages",
+        "Clicks",
+        "Impressions",
+        "CTR",
+        "Position"
+      ]
+    },
+    {
+      "file": "Countries.csv",
+      "bytes": 4100,
+      "sha256": "2768b09a772c06be0d7b39e20d175ed379e3a98c7dc22ff4d7d2ba9bb8306750",
+      "data_rows": 183,
+      "headers": [
+        "Country",
+        "Clicks",
+        "Impressions",
+        "CTR",
+        "Position"
+      ]
+    },
+    {
+      "file": "Devices.csv",
+      "bytes": 121,
+      "sha256": "eac502cef470d0e09ff2f6ec976b873c45b19413a2b272139c286a5f0b781fbe",
+      "data_rows": 3,
+      "headers": [
+        "Device",
+        "Clicks",
+        "Impressions",
+        "CTR",
+        "Position"
+      ]
+    },
+    {
+      "file": "Search appearance.csv",
+      "bytes": 81,
+      "sha256": "aa29461776790b6c97251a1ff31b9251a1a20fe4e5c936e5818fa5d92ee23f87",
+      "data_rows": 1,
+      "headers": [
+        "Search Appearance",
+        "Clicks",
+        "Impressions",
+        "CTR",
+        "Position"
+      ]
+    },
+    {
+      "file": "Filters.csv",
+      "bytes": 70,
+      "sha256": "185aab860e76ce71279eb36f8b28576bb26791b4ca65f4751dbc81adcb0c1c45",
+      "data_rows": 2,
+      "headers": [
+        "Filter",
+        "Value"
+      ]
+    }
+  ],
+  "chart_coverage": {
+    "days": 90,
+    "start": "2026-07-27",
+    "end": "2026-10-24",
+    "unique_days": 90
+  },
+  "sitewide_chart_windows": [
+    {
+      "window_id": "7d-baseline",
+      "start": "2026-10-18",
+      "end": "2026-10-24",
+      "rows": 7,
+      "clicks": 49,
+      "impressions": 10790,
+      "ctr_fraction_calculated": 0.004541241890639481,
+      "average_position_impression_weighted_from_rounded_rows_approx": 19.026422613531047
+    },
+    {
+      "window_id": "28d",
+      "start": "2026-09-27",
+      "end": "2026-10-24",
+      "rows": 28,
+      "clicks": 186,
+      "impressions": 41445,
+      "ctr_fraction_calculated": 0.0044878754976474845,
+      "average_position_impression_weighted_from_rounded_rows_approx": 17.123715767885148
+    },
+    {
+      "window_id": "90d",
+      "start": "2026-07-27",
+      "end": "2026-10-24",
+      "rows": 90,
+      "clicks": 575,
+      "impressions": 117271,
+      "ctr_fraction_calculated": 0.004903172992470432,
+      "average_position_impression_weighted_from_rounded_rows_approx": 20.190435828124603
+    }
+  ],
+  "query_only_90d_controls": [
+    {
+      "query": "mercedes service dubai",
+      "aggregation": "QUERY_ONLY_UNFILTERED_COUNTRY_DEVICE",
+      "window_start": "2026-07-27",
+      "window_end": "2026-10-24",
+      "country": "ALL",
+      "device": "ALL",
+      "page_attribution": "NOT_AVAILABLE_FROM_THIS_EXPORT",
+      "availability_status": "VISIBLE_ROW",
+      "source_row": 9,
+      "clicks": 3,
+      "impressions": 608,
+      "ctr_fraction": 0.0049,
+      "average_position": 12.46
+    },
+    {
+      "query": "mercedes repair dubai",
+      "aggregation": "QUERY_ONLY_UNFILTERED_COUNTRY_DEVICE",
+      "window_start": "2026-07-27",
+      "window_end": "2026-10-24",
+      "country": "ALL",
+      "device": "ALL",
+      "page_attribution": "NOT_AVAILABLE_FROM_THIS_EXPORT",
+      "availability_status": "VISIBLE_ROW",
+      "source_row": 3,
+      "clicks": 11,
+      "impressions": 1110,
+      "ctr_fraction": 0.009899999999999999,
+      "average_position": 4.33
+    },
+    {
+      "query": "mercedes specialist dubai",
+      "aggregation": "QUERY_ONLY_UNFILTERED_COUNTRY_DEVICE",
+      "window_start": "2026-07-27",
+      "window_end": "2026-10-24",
+      "country": "ALL",
+      "device": "ALL",
+      "page_attribution": "NOT_AVAILABLE_FROM_THIS_EXPORT",
+      "availability_status": "VISIBLE_ROW",
+      "source_row": 95,
+      "clicks": 0,
+      "impressions": 360,
+      "ctr_fraction": 0.0,
+      "average_position": 4.24
+    },
+    {
+      "query": "mercedes workshop dubai",
+      "aggregation": "QUERY_ONLY_UNFILTERED_COUNTRY_DEVICE",
+      "window_start": "2026-07-27",
+      "window_end": "2026-10-24",
+      "country": "ALL",
+      "device": "ALL",
+      "page_attribution": "NOT_AVAILABLE_FROM_THIS_EXPORT",
+      "availability_status": "VISIBLE_ROW",
+      "source_row": 89,
+      "clicks": 0,
+      "impressions": 431,
+      "ctr_fraction": 0.0,
+      "average_position": 14.41
+    },
+    {
+      "query": "mercedes maintenance dubai",
+      "aggregation": "QUERY_ONLY_UNFILTERED_COUNTRY_DEVICE",
+      "window_start": "2026-07-27",
+      "window_end": "2026-10-24",
+      "country": "ALL",
+      "device": "ALL",
+      "page_attribution": "NOT_AVAILABLE_FROM_THIS_EXPORT",
+      "availability_status": "VISIBLE_ROW",
+      "source_row": 106,
+      "clicks": 0,
+      "impressions": 268,
+      "ctr_fraction": 0.0,
+      "average_position": 9.8
+    },
+    {
+      "query": "mercedes oil change dubai",
+      "aggregation": "QUERY_ONLY_UNFILTERED_COUNTRY_DEVICE",
+      "window_start": "2026-07-27",
+      "window_end": "2026-10-24",
+      "country": "ALL",
+      "device": "ALL",
+      "page_attribution": "NOT_AVAILABLE_FROM_THIS_EXPORT",
+      "availability_status": "VISIBLE_ROW",
+      "source_row": 187,
+      "clicks": 0,
+      "impressions": 122,
+      "ctr_fraction": 0.0,
+      "average_position": 15.47
+    }
+  ],
+  "uae_sitewide_90d_country_row": [
+    {
+      "country": "United Arab Emirates",
+      "clicks": 486,
+      "impressions": 107758,
+      "ctr_fraction": 0.0045000000000000005,
+      "average_position": 20.76,
+      "source_row": 2
+    }
+  ],
+  "global_sitewide_90d_devices": [
+    {
+      "device": "Mobile",
+      "clicks": 349,
+      "impressions": 43225,
+      "ctr_fraction": 0.008100000000000001,
+      "average_position": 12.66,
+      "source_row": 2
+    },
+    {
+      "device": "Desktop",
+      "clicks": 223,
+      "impressions": 73481,
+      "ctr_fraction": 0.003,
+      "average_position": 24.63,
+      "source_row": 3
+    },
+    {
+      "device": "Tablet",
+      "clicks": 3,
+      "impressions": 565,
+      "ctr_fraction": 0.0053,
+      "average_position": 20.18,
+      "source_row": 4
+    }
+  ],
+  "dimension_summaries_separate_not_joined": {
+    "Queries.csv": {
+      "rows": 1000,
+      "clicks": 151,
+      "impressions": 68544,
+      "ctr_fraction_calculated": 0.0022029645191409897,
+      "average_position_impression_weighted_from_rounded_rows_approx": 22.985865575396826
+    },
+    "Pages.csv": {
+      "rows": 1000,
+      "clicks": 577,
+      "impressions": 124918,
+      "ctr_fraction_calculated": 0.00461903008373493,
+      "average_position_impression_weighted_from_rounded_rows_approx": 21.456304455722954
+    },
+    "Countries.csv": {
+      "rows": 183,
+      "clicks": 575,
+      "impressions": 117271,
+      "ctr_fraction_calculated": 0.004903172992470432,
+      "average_position_impression_weighted_from_rounded_rows_approx": 20.199960689343484
+    },
+    "Devices.csv": {
+      "rows": 3,
+      "clicks": 575,
+      "impressions": 117271,
+      "ctr_fraction_calculated": 0.004903172992470432,
+      "average_position_impression_weighted_from_rounded_rows_approx": 20.19652966206479
+    }
+  },
+  "baseline_7d_control_comparison": {
+    "source": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\evidence-2026-10-26\\gsc\\current-workbook-extraction.json",
+    "scope": "Sitewide daily Chart only; no query/page join",
+    "clicks_impressions_position_match": true,
+    "daily_deltas": [
+      {
+        "date": "2026-10-18",
+        "clicks_delta": 0.0,
+        "impressions_delta": 0.0,
+        "position_display_delta": 0.0
+      },
+      {
+        "date": "2026-10-19",
+        "clicks_delta": 0.0,
+        "impressions_delta": 0.0,
+        "position_display_delta": 0.0
+      },
+      {
+        "date": "2026-10-20",
+        "clicks_delta": 0.0,
+        "impressions_delta": 0.0,
+        "position_display_delta": 0.0
+      },
+      {
+        "date": "2026-10-21",
+        "clicks_delta": 0.0,
+        "impressions_delta": 0.0,
+        "position_display_delta": 0.0
+      },
+      {
+        "date": "2026-10-22",
+        "clicks_delta": 0.0,
+        "impressions_delta": 0.0,
+        "position_display_delta": 0.0
+      },
+      {
+        "date": "2026-10-23",
+        "clicks_delta": 0.0,
+        "impressions_delta": 0.0,
+        "position_display_delta": 0.0
+      },
+      {
+        "date": "2026-10-24",
+        "clicks_delta": 0.0,
+        "impressions_delta": 0.0,
+        "position_display_delta": 0.0
+      }
+    ]
+  },
+  "limits": [
+    "Queries and Pages are independent unfiltered dimensions and must not be joined as measured pairs.",
+    "Country/Device rows are sitewide, not Mercedes-specific; cannot combine them with exact query rows to create UAE/device metrics.",
+    "Queries and Pages each have1000 visible rows at the UI export limit; completeness is not established. Privacy suppression and aggregation mean query rows need not reconcile to chart totals.",
+    "Page-dimension impressions can differ from query/property totals; no cross-grain reconstruction is made.",
+    "The overlapping 7/28/90-day chart windows cannot be added.",
+    "CTR is calculated from additive clicks/impressions; weighted position from rounded daily rows is approximate.",
+    "All data ends before October26 deployment, so it does not measure redirect recovery."
+  ]
+}

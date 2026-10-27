@@ -1,0 +1,52 @@
+{
+  "at": "2026-10-20T05:50:14.139Z",
+  "passed": true,
+  "buildInputCount": 585,
+  "buildFingerprint": "7d3d58e24c826757c32c28cec6c1cf03f74251d8d76af1fed0a03b48d0cc18d2",
+  "currentFingerprint": "7d3d58e24c826757c32c28cec6c1cf03f74251d8d76af1fed0a03b48d0cc18d2",
+  "changed": [],
+  "overlay": [
+    {
+      "file": "src/pages/BrandPage.tsx",
+      "sha256": "f5d68037c056bb1f32d73cc5c009e066287da0ab225267b9606d834a23002c33",
+      "workspaceSha256": "f5d68037c056bb1f32d73cc5c009e066287da0ab225267b9606d834a23002c33",
+      "candidateSha256": "f5d68037c056bb1f32d73cc5c009e066287da0ab225267b9606d834a23002c33",
+      "passed": true
+    },
+    {
+      "file": "src/pages/Services.tsx",
+      "sha256": "77e7cc3aa83277602271ec3106506d4f360bd4fb6737445a5a1235a435ed09d0",
+      "workspaceSha256": "77e7cc3aa83277602271ec3106506d4f360bd4fb6737445a5a1235a435ed09d0",
+      "candidateSha256": "77e7cc3aa83277602271ec3106506d4f360bd4fb6737445a5a1235a435ed09d0",
+      "passed": true
+    },
+    {
+      "file": "src/components/MercedesMaintenanceScope.tsx",
+      "sha256": "1e6728a7de40ef56f7bf77af495784cff38c34cd9a653d6777757fee62616aff",
+      "workspaceSha256": "1e6728a7de40ef56f7bf77af495784cff38c34cd9a653d6777757fee62616aff",
+      "candidateSha256": "1e6728a7de40ef56f7bf77af495784cff38c34cd9a653d6777757fee62616aff",
+      "passed": true
+    },
+    {
+      "file": "src/components/MercedesServiceBookingForm.tsx",
+      "sha256": "c45f5468d2361b5b2de37edee90fff8b1d0cd145e2379439c8aad973fd1291fd",
+      "workspaceSha256": "c45f5468d2361b5b2de37edee90fff8b1d0cd145e2379439c8aad973fd1291fd",
+      "candidateSha256": "c45f5468d2361b5b2de37edee90fff8b1d0cd145e2379439c8aad973fd1291fd",
+      "passed": true
+    },
+    {
+      "file": "src/data/mercedesServiceCampaign.ts",
+      "sha256": "98012343a3f8450ba6a34bb094425beaa4049932d534d9115d0b373ded32c8dd",
+      "workspaceSha256": "98012343a3f8450ba6a34bb094425beaa4049932d534d9115d0b373ded32c8dd",
+      "candidateSha256": "98012343a3f8450ba6a34bb094425beaa4049932d534d9115d0b373ded32c8dd",
+      "passed": true
+    },
+    {
+      "file": "src/lib/route-manifest.ts",
+      "sha256": "a05194b6899972cb91945af2ea0c0a3fd836055a5d8c52d87fc3f9a6a219d0d5",
+      "workspaceSha256": "a05194b6899972cb91945af2ea0c0a3fd836055a5d8c52d87fc3f9a6a219d0d5",
+      "candidateSha256": "a05194b6899972cb91945af2ea0c0a3fd836055a5d8c52d87fc3f9a6a219d0d5",
+      "passed": true
+    }
+  ]
+}

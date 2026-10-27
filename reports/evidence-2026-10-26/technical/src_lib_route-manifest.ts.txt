@@ -1,0 +1,258 @@
+    1: import { allServices, englishOnlyServices } from '@/data/services';
+    2: import { sitewideSeoUpdatedPaths } from '@/data/sitewideSeoUpdatedPaths';
+    3: import { mercedesB1UpdatedPaths } from '@/data/mercedesB1UpdatedPaths';
+    4: import { porscheB2UpdatedPaths } from '@/data/porscheB2UpdatedPaths';
+    5: import { bmwB3UpdatedPaths } from '@/data/bmwB3UpdatedPaths';
+    6: import { b4UpdatedPaths } from '@/data/b4UpdatedPaths';
+    7: import { localGaragePages } from '@/data/localGaragePages';
+    8: import { blogPosts } from '@/data/blogPosts';
+    9: import { brandWorkshopArticles } from '@/data/brandWorkshopArticles';
+   10: import { brands } from '@/data/brands';
+   11: import {
+   12:   BRAND_PROFILES,
+   13:   getAvailableServiceKeys,
+   14: } from '@/data/brandServices';
+   15: import { bestWorkshopPages } from '@/data/bestWorkshopPages';
+   16: import { mercedesModelPages } from '@/data/mercedesModelPages';
+   17: import { MERCEDES_PROBLEMS_PATH, mercedesProblemGuides } from '@/data/mercedesProblemGuides';
+   18: import { porscheModelPages } from '@/data/porscheModelPages';
+   19: import { audiModelPages, audiModelPath } from '@/data/audiModelPages';
+   20: import { PORSCHE_SYSTEMS_PATH, porscheSystemGuides } from '@/data/porscheSystemGuides';
+   21: import { PORSCHE_PROBLEMS_PATH, porscheProblemGuides } from '@/data/porscheProblemGuides';
+   22: import { PORSCHE_GUIDES_PATH, porscheOwnershipGuides } from '@/data/porscheOwnershipGuides';
+   23: import { porscheCaseStudies } from '@/data/porscheCaseStudies';
+   24: import { mercedesCaseStudies } from '@/data/mercedesCaseStudies';
+   25: import { BMW_HUB_PATH, bmwModelPages } from '@/data/bmwModelPages';
+   26: import { ferrariModelPages } from '@/data/ferrariModelPages';
+   27: import { ferrariCaseStudies } from '@/data/ferrariCaseStudies';
+   28: import { isIndexableContentPath } from '@/lib/route-policy';
+   29: import { tuningModelPages } from '@/data/tuningModelPages';
+   30: import { T1_UPDATED_DATE, T1_UPDATED_PATHS } from '@/data/t1UpdatedPaths';
+   31: 
+   32: export type RouteFamily =
+   33:   | 'home'
+   34:   | 'services-hub'
+   35:   | 'service'
+   36:   | 'brands-hub'
+   37:   | 'brand'
+   38:   | 'brand-service'
+   39:   | 'blog-hub'
+   40:   | 'article'
+   41:   | 'about'
+   42:   | 'faq'
+   43:   | 'tuning'
+   44:   | 'vrx'
+   45:   | 'html-sitemap'
+   46:   | 'workshop-guide';
+   47: 
+   48: export interface PublicRoute {
+   49:   path: string;
+   50:   family: RouteFamily;
+   51:   indexable: boolean;
+   52:   lastmod: string;
+   53: }
+   54: 
+   55: /** Date of the current verified SEO/content release. Change only on real edits. */
+   56: export const SEO_RELEASE_DATE = '2026-08-31';
+   57: 
+   58: const coreRoutes: Array<[string, RouteFamily]> = [
+   59:   ['/', 'home'],
+   60:   ['/services', 'services-hub'],
+   61:   ['/brands', 'brands-hub'],
+   62:   ['/blog', 'blog-hub'],
+   63:   ['/about', 'about'],
+   64:   ['/faq', 'faq'],
+   65:   ['/tuning', 'tuning'],
+   66:   ['/vrx', 'vrx'],
+   67:   ['/sitemap', 'html-sitemap'],
+   68: ];
+   69: 
+   70: const canonicalServiceSlugs = allServices
+   71:   .map((service) => service.slug)
+   72:   .filter((slug) => slug !== 'mercedes-repair-dubai' && slug !== 'mercedes-service-dubai');
+   73: 
+   74: const englishRoutes: Array<[string, RouteFamily]> = [
+   75:   ...coreRoutes,
+   76:   ...canonicalServiceSlugs.map((slug) => [`/services/${slug}`, 'service'] as [string, RouteFamily]),
+   77:   ...localGaragePages.map((page) => [`/services/${page.slug}`, 'service'] as [string, RouteFamily]),
+   78:   ...blogPosts.map((post) => [`/blog/${post.slug}`, 'article'] as [string, RouteFamily]),
+   79:   ...brandWorkshopArticles.map((article) => [`/blog/${article.slug}`, 'article'] as [string, RouteFamily]),
+   80:   ...brands.map((brand) => [`/brands/${brand.slug}`, 'brand'] as [string, RouteFamily]),
+   81:   ...Object.keys(BRAND_PROFILES)
+   82:     .filter((brandSlug) => brandSlug !== 'mercedes-benz-service-dubai')
+   83:     .flatMap((brandSlug) =>
+   84:       getAvailableServiceKeys(brandSlug).map(
+   85:         (serviceSlug) => [`/brands/${brandSlug}/${serviceSlug}`, 'brand-service'] as [string, RouteFamily],
+   86:       ),
+   87:     ),
+   88:   ...bestWorkshopPages.map((page) => [`/${page.slug}`, 'workshop-guide'] as [string, RouteFamily]),
+   89: ];
+   90: // Phase-one Mercedes topical pages are English-only until equivalent Arabic
+   91: // content exists. Existing Arabic blog versions remain untouched.
+   92: const englishOnlyRoutes: Array<[string, RouteFamily]> = [
+   93:   ...tuningModelPages.map(model => [model.path, 'tuning'] as [string, RouteFamily]),
+   94:   ...englishOnlyServices.map((service) => [`/services/${service.slug}`, 'service'] as [string, RouteFamily]),
+   95:   ...bmwModelPages.map((model) => [`${BMW_HUB_PATH}/${model.slug}`, 'service'] as [string, RouteFamily]),
+   96:   ...ferrariModelPages.map((model) => [model.path, 'service'] as [string, RouteFamily]),
+   97:   ...ferrariCaseStudies.map((study) => [`/ferrari/case-studies/${study.slug}`, 'article'] as [string, RouteFamily]),
+   98:   ...mercedesModelPages.map((model) => [model.path, 'service'] as [string, RouteFamily]),
+   99:   ...porscheModelPages.filter((model) => !model.legacyBlogSlug).map((model) => [model.path, 'service'] as [string, RouteFamily]),
+  100:   ...audiModelPages.map((model) => [audiModelPath(model), 'service'] as [string, RouteFamily]),
+  101:   [PORSCHE_SYSTEMS_PATH, 'html-sitemap'],
+  102:   ...porscheSystemGuides.map((guide) => [`${PORSCHE_SYSTEMS_PATH}/${guide.slug}`, 'article'] as [string, RouteFamily]),
+  103:   [PORSCHE_PROBLEMS_PATH, 'html-sitemap'],
+  104:   ...porscheProblemGuides.map((guide) => [`${PORSCHE_PROBLEMS_PATH}/${guide.slug}`, 'article'] as [string, RouteFamily]),
+  105:   ...porscheOwnershipGuides.map((guide) => [`${PORSCHE_GUIDES_PATH}/${guide.slug}`, 'article'] as [string, RouteFamily]),
+  106:   ...porscheCaseStudies.map((item) => [`/porsche/case-studies/${item.slug}`, 'article'] as [string, RouteFamily]),
+  107:   [MERCEDES_PROBLEMS_PATH, 'html-sitemap'],
+  108:   ...mercedesProblemGuides.map((guide) => [guide.path, 'article'] as [string, RouteFamily]),
+  109:   ...mercedesCaseStudies.map(
+  110:     (caseStudy) => [`/mercedes/case-studies/${caseStudy.slug}`, 'article'] as [string, RouteFamily],
+  111:   ),
+  112: ];
+  113: 
+  114: const routeMap = new Map<string, PublicRoute>();
+  115: const paintCareUpdatedPaths = new Set([
+  116:   '/', '/services', '/sitemap', '/services/paint-protection-film',
+  117:   '/services/paint-protection-dubai', '/services/ceramic-coating',
+  118:   '/services/car-body-repair-dubai', '/sitemap',
+  119:   '/blog/why-ceramic-coating-matters-uae', '/blog/ceramic-coating-vs-ppf-dubai',
+  120:   ...['mercedes-benz', 'bmw', 'porsche', 'ferrari', 'lamborghini', 'mclaren', 'aston-martin', 'rolls-royce', 'range-rover'].map((brand) => `/brands/${brand}-service-dubai`),
+  121: ]);
+  122: for (const [path, family] of englishRoutes) {
+  123:   for (const localizedPath of [path, path === '/' ? '/ar' : `/ar${path}`]) {
+  124:     routeMap.set(localizedPath, {
+  125:       path: localizedPath,
+  126:       family,
+  127:       indexable: isIndexableContentPath(localizedPath),
+  128:       lastmod: (localizedPath.startsWith('/brands/aston-martin-service-dubai') || ['/blog/aston-martin-best-workshop-dubai','/blog/aston-martin-db11-service-dubai-guide'].includes(localizedPath)) ? '2026-09-07' : [
+  129:         '/brands/audi-service-dubai',
+  130:         '/brands/audi-service-dubai/oil-change',
+  131:         '/brands/audi-service-dubai/engine-diagnostics',
+  132:         '/brands/audi-service-dubai/mechanical-repair',
+  133:         '/brands/audi-service-dubai/transmission-repair',
+  134:         '/brands/audi-service-dubai/brake-repair',
+  135:         '/brands/audi-service-dubai/suspension-repair',
+  136:         '/brands/audi-service-dubai/ac-repair',
+  137:         '/brands/audi-service-dubai/battery-replacement',
+  138:         '/brands/audi-service-dubai/body-repair',
+  139:         '/best-audi-workshop-dubai',
+  140:         '/blog/audi-maintenance-guide-dubai',
+  141:       ].includes(localizedPath) ? '2026-09-07' : localizedPath === BMW_HUB_PATH || [
+  142:         '/brands/bentley-service-dubai',
+  143:         '/brands/bentley-service-dubai/transmission-repair',
+  144:         '/brands/bentley-service-dubai/suspension-repair',
+  145:         '/brands/bentley-service-dubai/ac-repair',
+  146:         '/blog/bentley-best-workshop-dubai',
+  147:         '/blog/bentley-continental-gt-service-dubai-guide',
+  148:       ].includes(localizedPath) ? '2026-09-07' : localizedPath === BMW_HUB_PATH || [
+  149:         '/brands/mclaren-service-dubai',
+  150:         '/brands/mclaren-service-dubai/transmission-repair',
+  151:         '/brands/mclaren-service-dubai/engine-diagnostics',
+  152:         '/brands/mclaren-service-dubai/oil-change',
+  153:         '/brands/mclaren-service-dubai/mechanical-repair',
+  154:         '/blog/mclaren-best-workshop-dubai',
+  155:         '/brands/lamborghini-service-dubai',
+  156:         '/brands/lamborghini-service-dubai/battery-replacement',
+  157:         '/brands/lamborghini-service-dubai/engine-diagnostics',
+  158:         '/brands/lamborghini-service-dubai/transmission-repair',
+  159:         '/brands/lamborghini-service-dubai/suspension-repair',
+  160:         '/brands/lamborghini-service-dubai/oil-change',
+  161:         '/brands/lamborghini-service-dubai/mechanical-repair',
+  162:         '/brands/lamborghini-service-dubai/brake-repair',
+  163:         '/brands/lamborghini-service-dubai/ac-repair',
+  164:         '/brands/lamborghini-service-dubai/electrical-repair',
+  165:         '/best-lamborghini-workshop-dubai',
+  166:         '/blog/lamborghini-maintenance-guide-dubai',
+  167:         '/blog/lamborghini-urus-service-dubai-guide',
+  168:       ].includes(localizedPath) ? '2026-09-05' : SEO_RELEASE_DATE,
+  169:     });
+  170:   }
+  171: }
+  172: 
+  173: for (const [path, family] of englishOnlyRoutes) {
+  174:   routeMap.set(path, {
+  175:     path,
+  176:     family,
+  177:     indexable: isIndexableContentPath(path),
+  178:     lastmod: path === '/services/car-polishing-dubai' ? '2026-09-08' : SEO_RELEASE_DATE,
+  179:   });
+  180: }
+  181: 
+  182: const mercedesUpdatedPaths = new Set(["/brands/mercedes-benz-service-dubai", "/services/mercedes-mechanical-repair-dubai", "/services/mercedes-suspension-repair-dubai", "/services/mercedes-transmission-repair-dubai", "/services/mercedes-oil-change-dubai", "/services/mercedes-diagnostics-dubai", "/services/mercedes-ac-repair-dubai", "/services/mercedes-battery-replacement-dubai", "/services/mercedes-brake-repair-dubai", "/services/mercedes-body-repair-dubai", "/services/mercedes-electrical-repair-dubai", "/services/mercedes-steering-repair-dubai", "/services/mercedes-exhaust-repair-dubai", "/tuning", "/blog/mercedes-g63-service-dubai-guide", "/mercedes/models/g-class-service-repair-dubai", "/mercedes/models/c63-service-repair-dubai", "/blog/mercedes-c-class-service-dubai-guide", "/mercedes/models/e63-service-repair-dubai", "/blog/mercedes-e-class-service-dubai-guide", "/blog/mercedes-s-class-service-dubai-guide", "/mercedes/models/s63-service-repair-dubai", "/mercedes/models/gle-service-repair-dubai", "/mercedes/models/gls-service-repair-dubai", "/brands/maybach-service-dubai", "/blog/mercedes-service-cost-dubai-guide", "/blog/mercedes-service-intervals-dubai-heat", "/blog/mercedes-benz-maintenance-guide-dubai", "/ar/brands/mercedes-benz-service-dubai", "/ar/tuning", "/ar/blog/mercedes-benz-maintenance-guide-dubai", "/blog/mercedes-amg-gt-tuning-dubai"]);
+  183: 
+  184: // Service enquiry paths changed in both languages; English brand hubs gained
+  185: // specific booking labels and selected paint-care links. Retained articles and
+  186: // the unchanged polishing page keep their actual preceding release date.
+  187: const queryReleaseChanged = (route: PublicRoute) =>
+  188:   route.family === 'brand-service' ||
+  189:   (route.family === 'brand' && !route.path.startsWith('/ar/')) ||
+  190:   (route.family === 'service' && /^\/(ar\/)?services\//.test(route.path) && !['/services/car-polishing-dubai', ...localGaragePages.map(page => `/services/${page.slug}`), ...localGaragePages.map(page => `/ar/services/${page.slug}`)].includes(route.path));
+  191: 
+  192: // Dedicated English oil page and the eight oil pages with a contextual return link.
+  193: const oilChangeUpdatedPaths = new Set([
+  194:   '/services/oil-change-dubai', '/services/mercedes-oil-change-dubai',
+  195:   ...['bmw', 'porsche', 'lamborghini', 'ferrari', 'mclaren', 'rolls-royce', 'bentley'].map(brand => `/brands/${brand}-service-dubai/oil-change`),
+  196: ]);
+  197: 
+  198: const suspensionUpdatedPaths = new Set([
+  199:   '/services/suspension-repair-dubai', '/services/mercedes-suspension-repair-dubai',
+  200:   ...['bmw', 'porsche', 'audi', 'range-rover', 'bentley'].map(brand => `/brands/${brand}-service-dubai/suspension-repair`),
+  201: ]);
+  202: 
+  203: const currentMercedesSeoPaths = new Set([
+  204:   '/brands/mercedes-benz-service-dubai',
+  205:   '/services/mercedes-diagnostics-dubai',
+  206:   '/services/mercedes-oil-change-dubai',
+  207:   '/services/mercedes-suspension-repair-dubai',
+  208:   '/mercedes/problems/wont-start',
+  209: ]);
+  210: 
+  211: const currentMaintenanceGuidePaths = new Set([
+  212:   '/blog/ferrari-maintenance-guide-dubai',
+  213:   '/ar/blog/ferrari-maintenance-guide-dubai',
+  214:   '/blog/porsche-maintenance-guide-dubai',
+  215: ]);
+  216: 
+  217: const masterSeoUpdatedPaths = new Set([
+  218:   '/services', '/sitemap',
+  219:   '/brands/bmw-service-dubai', '/brands/rolls-royce-service-dubai',
+  220:   '/brands/aston-martin-service-dubai', '/brands/bentley-service-dubai',
+  221:   '/brands/cadillac-service-dubai', '/brands/mercedes-benz-service-dubai',
+  222:   '/brands/bentley-service-dubai/electrical-repair',
+  223:   '/services/mercedes-electrical-repair-dubai',
+  224:   '/services/paint-protection-film', '/services/ceramic-coating',
+  225:   '/services/auto-electrical-repair-dubai', '/services/tire-repair-dubai',
+  226:   '/services/cadillac-cue-screen-repair-dubai', '/services/head-unit-repair-dubai',
+  227:   '/services/mercedes-audio-upgrade-dubai',
+  228: ]);
+  229: 
+  230: export const publicRoutes = [...routeMap.values()].map((route) => b4UpdatedPaths.has(route.path) ? { ...route, lastmod: '2026-09-28' } : bmwB3UpdatedPaths.has(route.path) ? { ...route, lastmod: '2026-09-28' } : porscheB2UpdatedPaths.has(route.path) ? { ...route, lastmod: '2026-09-28' } : mercedesB1UpdatedPaths.has(route.path) ? { ...route, lastmod: '2026-09-28' } : sitewideSeoUpdatedPaths.has(route.path) ? { ...route, lastmod: '2026-09-17' } : masterSeoUpdatedPaths.has(route.path) ? { ...route, lastmod: '2026-09-16' } : (currentMercedesSeoPaths.has(route.path) || currentMaintenanceGuidePaths.has(route.path)) ? { ...route, lastmod: '2026-09-14' } : (route.path === '/services/transmission-repair-dubai' || oilChangeUpdatedPaths.has(route.path) || suspensionUpdatedPaths.has(route.path)) ? { ...route, lastmod: '2026-09-10' } : queryReleaseChanged(route) ? { ...route, lastmod: '2026-09-09' } : (paintCareUpdatedPaths.has(route.path) || mercedesUpdatedPaths.has(route.path)) ? { ...route, lastmod: '2026-09-08' } : route).map(route => T1_UPDATED_PATHS.has(route.path) ? { ...route, lastmod: T1_UPDATED_DATE } : route).sort((a, b) =>
+  231:   a.path.localeCompare(b.path),
+  232: );
+  233: 
+  234: // Only pages whose paint-care content changed receive this modification date.
+  235: const paintProtectionUpdatedPaths = new Set([
+  236:   '/services', '/ar/services', '/sitemap', '/ar/sitemap',
+  237:   '/services/paint-protection-dubai', '/ar/services/paint-protection-dubai',
+  238:   '/services/paint-protection-film', '/ar/services/paint-protection-film',
+  239:   '/services/ceramic-coating', '/ar/services/ceramic-coating',
+  240:   '/services/car-polishing-dubai',
+  241:   '/blog/ceramic-coating-vs-ppf-dubai', '/ar/blog/ceramic-coating-vs-ppf-dubai',
+  242:   '/blog/why-ceramic-coating-matters-uae', '/ar/blog/why-ceramic-coating-matters-uae',
+  243: ]);
+  244: for (const route of publicRoutes) {
+  245:   if (paintProtectionUpdatedPaths.has(route.path)) route.lastmod = '2026-10-12';
+  246:   if (['/services/paint-protection-film', '/ar/services/paint-protection-film'].includes(route.path)) route.lastmod = '2026-10-17';
+  247: }
+  248: 
+  249: // Substantive servicing copy and the contextual directory link changed only here.
+  250: const mercedesServiceCampaignPaths = new Set([
+  251:   '/brands/mercedes-benz-service-dubai', '/ar/brands/mercedes-benz-service-dubai',
+  252:   '/services', '/ar/services',
+  253: ]);
+  254: for (const route of publicRoutes) {
+  255:   if (mercedesServiceCampaignPaths.has(route.path)) route.lastmod = '2026-10-20';
+  256: }
+  257: 
+  258: export const indexableRoutes = publicRoutes.filter((route) => route.indexable);

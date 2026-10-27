@@ -1,0 +1,2064 @@
+{
+  "source": "C:\\Users\\ADMIN\\Downloads\\digitecme.com-Performance-on-Search-2026-10-27.xlsx",
+  "filters": [
+    {
+      "Filter": "Search type",
+      "Value": "Web (text-based)",
+      "_row": 2
+    },
+    {
+      "Filter": "Date",
+      "Value": "Last 7 days",
+      "_row": 3
+    }
+  ],
+  "daily": [
+    {
+      "Date": "2026-10-19",
+      "Clicks": 8.0,
+      "Impressions": 1856.0,
+      "CTR": 0.0043,
+      "Position": 18.5,
+      "_row": 2
+    },
+    {
+      "Date": "2026-10-20",
+      "Clicks": 9.0,
+      "Impressions": 1593.0,
+      "CTR": 0.005600000000000001,
+      "Position": 21.2,
+      "_row": 3
+    },
+    {
+      "Date": "2026-10-21",
+      "Clicks": 8.0,
+      "Impressions": 1477.0,
+      "CTR": 0.0054,
+      "Position": 17.7,
+      "_row": 4
+    },
+    {
+      "Date": "2026-10-22",
+      "Clicks": 4.0,
+      "Impressions": 1700.0,
+      "CTR": 0.0024,
+      "Position": 20.9,
+      "_row": 5
+    },
+    {
+      "Date": "2026-10-23",
+      "Clicks": 9.0,
+      "Impressions": 1412.0,
+      "CTR": 0.0064,
+      "Position": 17.1,
+      "_row": 6
+    },
+    {
+      "Date": "2026-10-24",
+      "Clicks": 4.0,
+      "Impressions": 1206.0,
+      "CTR": 0.0033,
+      "Position": 16.7,
+      "_row": 7
+    },
+    {
+      "Date": "2026-10-25",
+      "Clicks": 8.0,
+      "Impressions": 1692.0,
+      "CTR": 0.004699999999999999,
+      "Position": 19.2,
+      "_row": 8
+    }
+  ],
+  "site_totals": {
+    "rows": 7,
+    "clicks": 50.0,
+    "impressions": 10936.0,
+    "ctr": 0.004572055596196049,
+    "weighted_position": 18.887371982443305
+  },
+  "visible_page_totals": {
+    "rows": 298,
+    "clicks": 50.0,
+    "impressions": 11578.0,
+    "ctr": 0.004318535152876144,
+    "weighted_position": 20.239072378649162
+  },
+  "non_mercedes_page_totals": {
+    "rows": 247,
+    "clicks": 36.0,
+    "impressions": 8446.0,
+    "ctr": 0.004262372720814586,
+    "weighted_position": 23.18984963296235
+  },
+  "visible_query_totals": {
+    "rows": 1000,
+    "clicks": 9.0,
+    "impressions": 7294.0,
+    "ctr": 0.0012338908692075678,
+    "weighted_position": 22.608053194406363
+  },
+  "non_mercedes_visible_query_totals": {
+    "rows": 898,
+    "clicks": 6.0,
+    "impressions": 6413.0,
+    "ctr": 0.0009355995633868704,
+    "weighted_position": 23.766259161079056
+  },
+  "countries": [
+    {
+      "Country": "United Arab Emirates",
+      "Clicks": 36.0,
+      "Impressions": 9335.0,
+      "CTR": 0.0039000000000000003,
+      "Position": 20.48,
+      "_row": 2
+    },
+    {
+      "Country": "Nigeria",
+      "Clicks": 4.0,
+      "Impressions": 83.0,
+      "CTR": 0.0482,
+      "Position": 6.04,
+      "_row": 3
+    },
+    {
+      "Country": "Switzerland",
+      "Clicks": 2.0,
+      "Impressions": 13.0,
+      "CTR": 0.15380000000000002,
+      "Position": 6.38,
+      "_row": 4
+    },
+    {
+      "Country": "Oman",
+      "Clicks": 2.0,
+      "Impressions": 12.0,
+      "CTR": 0.16670000000000001,
+      "Position": 6.42,
+      "_row": 5
+    },
+    {
+      "Country": "South Africa",
+      "Clicks": 1.0,
+      "Impressions": 130.0,
+      "CTR": 0.0077,
+      "Position": 6.92,
+      "_row": 6
+    },
+    {
+      "Country": "Pakistan",
+      "Clicks": 1.0,
+      "Impressions": 29.0,
+      "CTR": 0.0345,
+      "Position": 16.48,
+      "_row": 7
+    },
+    {
+      "Country": "Malaysia",
+      "Clicks": 1.0,
+      "Impressions": 26.0,
+      "CTR": 0.0385,
+      "Position": 5.35,
+      "_row": 8
+    },
+    {
+      "Country": "Netherlands",
+      "Clicks": 1.0,
+      "Impressions": 18.0,
+      "CTR": 0.0556,
+      "Position": 6.5,
+      "_row": 9
+    },
+    {
+      "Country": "France",
+      "Clicks": 1.0,
+      "Impressions": 15.0,
+      "CTR": 0.0667,
+      "Position": 8.2,
+      "_row": 10
+    },
+    {
+      "Country": "Sierra Leone",
+      "Clicks": 1.0,
+      "Impressions": 3.0,
+      "CTR": 0.3333,
+      "Position": 3.33,
+      "_row": 11
+    },
+    {
+      "Country": "United States",
+      "Clicks": 0.0,
+      "Impressions": 195.0,
+      "CTR": 0.0,
+      "Position": 14.38,
+      "_row": 12
+    },
+    {
+      "Country": "United Kingdom",
+      "Clicks": 0.0,
+      "Impressions": 146.0,
+      "CTR": 0.0,
+      "Position": 12.4,
+      "_row": 13
+    }
+  ],
+  "devices": [
+    {
+      "Device": "Mobile",
+      "Clicks": 34.0,
+      "Impressions": 4016.0,
+      "CTR": 0.0085,
+      "Position": 10.96,
+      "_row": 2
+    },
+    {
+      "Device": "Desktop",
+      "Clicks": 15.0,
+      "Impressions": 6866.0,
+      "CTR": 0.0022,
+      "Position": 23.61,
+      "_row": 3
+    },
+    {
+      "Device": "Tablet",
+      "Clicks": 1.0,
+      "Impressions": 54.0,
+      "CTR": 0.018500000000000003,
+      "Position": 10.35,
+      "_row": 4
+    }
+  ],
+  "top_pages": [
+    {
+      "Top pages": "https://digitecme.com/services/paint-protection-film",
+      "Clicks": 0.0,
+      "Impressions": 761.0,
+      "CTR": 0.0,
+      "Position": 35.36,
+      "_row": 32
+    },
+    {
+      "Top pages": "https://digitecme.com/services/oil-change-dubai",
+      "Clicks": 1.0,
+      "Impressions": 430.0,
+      "CTR": 0.0023,
+      "Position": 19.58,
+      "_row": 10
+    },
+    {
+      "Top pages": "https://digitecme.com/brands/volkswagen-service-dubai",
+      "Clicks": 0.0,
+      "Impressions": 429.0,
+      "CTR": 0.0,
+      "Position": 18.98,
+      "_row": 34
+    },
+    {
+      "Top pages": "https://digitecme.com/",
+      "Clicks": 10.0,
+      "Impressions": 402.0,
+      "CTR": 0.024900000000000002,
+      "Position": 14.13,
+      "_row": 2
+    },
+    {
+      "Top pages": "https://digitecme.com/brands/bmw-service-dubai",
+      "Clicks": 1.0,
+      "Impressions": 367.0,
+      "CTR": 0.0027,
+      "Position": 15.41,
+      "_row": 11
+    },
+    {
+      "Top pages": "https://digitecme.com/brands/ford-service-dubai",
+      "Clicks": 1.0,
+      "Impressions": 320.0,
+      "CTR": 0.0031,
+      "Position": 25.3,
+      "_row": 12
+    },
+    {
+      "Top pages": "https://digitecme.com/services/paint-protection-dubai",
+      "Clicks": 0.0,
+      "Impressions": 262.0,
+      "CTR": 0.0,
+      "Position": 42.56,
+      "_row": 35
+    },
+    {
+      "Top pages": "https://digitecme.com/brands/gmc-service-dubai",
+      "Clicks": 0.0,
+      "Impressions": 261.0,
+      "CTR": 0.0,
+      "Position": 17.55,
+      "_row": 36
+    },
+    {
+      "Top pages": "https://digitecme.com/brands/cadillac-service-dubai",
+      "Clicks": 0.0,
+      "Impressions": 252.0,
+      "CTR": 0.0,
+      "Position": 54.62,
+      "_row": 37
+    },
+    {
+      "Top pages": "https://digitecme.com/services/cadillac-cue-screen-repair-dubai",
+      "Clicks": 0.0,
+      "Impressions": 251.0,
+      "CTR": 0.0,
+      "Position": 2.88,
+      "_row": 38
+    },
+    {
+      "Top pages": "https://digitecme.com/services/tire-repair-dubai",
+      "Clicks": 0.0,
+      "Impressions": 218.0,
+      "CTR": 0.0,
+      "Position": 67.51,
+      "_row": 39
+    },
+    {
+      "Top pages": "https://digitecme.com/brands/rolls-royce-service-dubai",
+      "Clicks": 0.0,
+      "Impressions": 208.0,
+      "CTR": 0.0,
+      "Position": 13.53,
+      "_row": 40
+    },
+    {
+      "Top pages": "https://digitecme.com/brands/lamborghini-service-dubai",
+      "Clicks": 0.0,
+      "Impressions": 207.0,
+      "CTR": 0.0,
+      "Position": 17.98,
+      "_row": 41
+    },
+    {
+      "Top pages": "https://digitecme.com/brands/jaguar-service-dubai",
+      "Clicks": 1.0,
+      "Impressions": 202.0,
+      "CTR": 0.005,
+      "Position": 18.94,
+      "_row": 13
+    },
+    {
+      "Top pages": "https://digitecme.com/services/exhaust-repair-dubai",
+      "Clicks": 0.0,
+      "Impressions": 199.0,
+      "CTR": 0.0,
+      "Position": 10.21,
+      "_row": 42
+    },
+    {
+      "Top pages": "https://digitecme.com/brands/chevrolet-service-dubai",
+      "Clicks": 0.0,
+      "Impressions": 189.0,
+      "CTR": 0.0,
+      "Position": 14.93,
+      "_row": 43
+    },
+    {
+      "Top pages": "https://digitecme.com/services/head-unit-repair-dubai",
+      "Clicks": 4.0,
+      "Impressions": 187.0,
+      "CTR": 0.021400000000000002,
+      "Position": 8.49,
+      "_row": 4
+    },
+    {
+      "Top pages": "https://digitecme.com/services/brake-repair-dubai",
+      "Clicks": 2.0,
+      "Impressions": 180.0,
+      "CTR": 0.0111,
+      "Position": 20.82,
+      "_row": 5
+    },
+    {
+      "Top pages": "https://digitecme.com/brands/audi-service-dubai",
+      "Clicks": 0.0,
+      "Impressions": 171.0,
+      "CTR": 0.0,
+      "Position": 25.52,
+      "_row": 44
+    },
+    {
+      "Top pages": "https://digitecme.com/services/transmission-repair-dubai",
+      "Clicks": 0.0,
+      "Impressions": 170.0,
+      "CTR": 0.0,
+      "Position": 19.36,
+      "_row": 45
+    },
+    {
+      "Top pages": "https://digitecme.com/brands/lincoln-service-dubai",
+      "Clicks": 2.0,
+      "Impressions": 154.0,
+      "CTR": 0.013000000000000001,
+      "Position": 21.31,
+      "_row": 6
+    },
+    {
+      "Top pages": "https://digitecme.com/tuning",
+      "Clicks": 1.0,
+      "Impressions": 149.0,
+      "CTR": 0.0067,
+      "Position": 14.56,
+      "_row": 14
+    },
+    {
+      "Top pages": "https://digitecme.com/services/ceramic-coating",
+      "Clicks": 0.0,
+      "Impressions": 121.0,
+      "CTR": 0.0,
+      "Position": 30.43,
+      "_row": 46
+    },
+    {
+      "Top pages": "https://digitecme.com/brands/volvo-service-dubai",
+      "Clicks": 0.0,
+      "Impressions": 115.0,
+      "CTR": 0.0,
+      "Position": 17.1,
+      "_row": 47
+    },
+    {
+      "Top pages": "https://digitecme.com/services/car-service-dubai",
+      "Clicks": 0.0,
+      "Impressions": 112.0,
+      "CTR": 0.0,
+      "Position": 46.11,
+      "_row": 48
+    },
+    {
+      "Top pages": "https://digitecme.com/brands/mini-service-dubai",
+      "Clicks": 1.0,
+      "Impressions": 100.0,
+      "CTR": 0.01,
+      "Position": 27.68,
+      "_row": 15
+    },
+    {
+      "Top pages": "https://digitecme.com/services",
+      "Clicks": 0.0,
+      "Impressions": 97.0,
+      "CTR": 0.0,
+      "Position": 29.45,
+      "_row": 49
+    },
+    {
+      "Top pages": "https://digitecme.com/brands/hummer-service-dubai",
+      "Clicks": 0.0,
+      "Impressions": 95.0,
+      "CTR": 0.0,
+      "Position": 12.34,
+      "_row": 50
+    },
+    {
+      "Top pages": "https://digitecme.com/brands/porsche-service-dubai",
+      "Clicks": 0.0,
+      "Impressions": 92.0,
+      "CTR": 0.0,
+      "Position": 19.89,
+      "_row": 51
+    },
+    {
+      "Top pages": "https://digitecme.com/about",
+      "Clicks": 0.0,
+      "Impressions": 75.0,
+      "CTR": 0.0,
+      "Position": 8.71,
+      "_row": 53
+    },
+    {
+      "Top pages": "https://digitecme.com/services/car-diagnostics-dubai",
+      "Clicks": 0.0,
+      "Impressions": 63.0,
+      "CTR": 0.0,
+      "Position": 26.54,
+      "_row": 54
+    },
+    {
+      "Top pages": "https://digitecme.com/services/car-body-repair",
+      "Clicks": 0.0,
+      "Impressions": 60.0,
+      "CTR": 0.0,
+      "Position": 31.48,
+      "_row": 55
+    },
+    {
+      "Top pages": "https://digitecme.com/services/auto-electrical-repair-dubai",
+      "Clicks": 0.0,
+      "Impressions": 58.0,
+      "CTR": 0.0,
+      "Position": 13.71,
+      "_row": 56
+    },
+    {
+      "Top pages": "https://digitecme.com/brands/ferrari-service-dubai",
+      "Clicks": 0.0,
+      "Impressions": 57.0,
+      "CTR": 0.0,
+      "Position": 32.28,
+      "_row": 57
+    },
+    {
+      "Top pages": "https://digitecme.com/services/car-ac-repair-dubai",
+      "Clicks": 0.0,
+      "Impressions": 56.0,
+      "CTR": 0.0,
+      "Position": 29.27,
+      "_row": 58
+    },
+    {
+      "Top pages": "https://digitecme.com/brands/tesla-service-dubai",
+      "Clicks": 1.0,
+      "Impressions": 53.0,
+      "CTR": 0.0189,
+      "Position": 11.25,
+      "_row": 18
+    },
+    {
+      "Top pages": "https://digitecme.com/brands/dodge-service-dubai",
+      "Clicks": 0.0,
+      "Impressions": 53.0,
+      "CTR": 0.0,
+      "Position": 20.91,
+      "_row": 59
+    },
+    {
+      "Top pages": "https://digitecme.com/brands/lotus-service-dubai",
+      "Clicks": 0.0,
+      "Impressions": 52.0,
+      "CTR": 0.0,
+      "Position": 6.33,
+      "_row": 60
+    },
+    {
+      "Top pages": "https://digitecme.com/brands/genesis-service-dubai",
+      "Clicks": 1.0,
+      "Impressions": 40.0,
+      "CTR": 0.025,
+      "Position": 7.62,
+      "_row": 19
+    },
+    {
+      "Top pages": "https://digitecme.com/brands/mclaren-service-dubai",
+      "Clicks": 0.0,
+      "Impressions": 40.0,
+      "CTR": 0.0,
+      "Position": 28.62,
+      "_row": 65
+    },
+    {
+      "Top pages": "https://digitecme.com/services/soft-close-door-repair-dubai",
+      "Clicks": 2.0,
+      "Impressions": 37.0,
+      "CTR": 0.0541,
+      "Position": 3.81,
+      "_row": 8
+    },
+    {
+      "Top pages": "https://digitecme.com/blog/gad-tuning-explained",
+      "Clicks": 0.0,
+      "Impressions": 34.0,
+      "CTR": 0.0,
+      "Position": 6.91,
+      "_row": 66
+    },
+    {
+      "Top pages": "https://digitecme.com/brands/aston-martin-service-dubai",
+      "Clicks": 0.0,
+      "Impressions": 34.0,
+      "CTR": 0.0,
+      "Position": 45.71,
+      "_row": 67
+    },
+    {
+      "Top pages": "https://digitecme.com/services/fuel-system-repair-dubai",
+      "Clicks": 0.0,
+      "Impressions": 32.0,
+      "CTR": 0.0,
+      "Position": 24.66,
+      "_row": 68
+    },
+    {
+      "Top pages": "https://digitecme.com/brands/subaru-service-dubai",
+      "Clicks": 0.0,
+      "Impressions": 31.0,
+      "CTR": 0.0,
+      "Position": 8.06,
+      "_row": 69
+    },
+    {
+      "Top pages": "https://digitecme.com/tuning/lamborghini-urus",
+      "Clicks": 0.0,
+      "Impressions": 29.0,
+      "CTR": 0.0,
+      "Position": 8.86,
+      "_row": 70
+    },
+    {
+      "Top pages": "https://digitecme.com/services/steering-repair",
+      "Clicks": 1.0,
+      "Impressions": 28.0,
+      "CTR": 0.035699999999999996,
+      "Position": 11.5,
+      "_row": 22
+    },
+    {
+      "Top pages": "https://digitecme.com/services/car-body-repair-dubai",
+      "Clicks": 0.0,
+      "Impressions": 28.0,
+      "CTR": 0.0,
+      "Position": 66.04,
+      "_row": 71
+    },
+    {
+      "Top pages": "https://digitecme.com/services/performance-tuning-dubai/",
+      "Clicks": 1.0,
+      "Impressions": 27.0,
+      "CTR": 0.037000000000000005,
+      "Position": 45.37,
+      "_row": 23
+    },
+    {
+      "Top pages": "https://digitecme.com/services/car-polishing-dubai",
+      "Clicks": 0.0,
+      "Impressions": 27.0,
+      "CTR": 0.0,
+      "Position": 38.04,
+      "_row": 72
+    },
+    {
+      "Top pages": "https://digitecme.com/services/suspension-repair-dubai",
+      "Clicks": 0.0,
+      "Impressions": 26.0,
+      "CTR": 0.0,
+      "Position": 51.73,
+      "_row": 73
+    },
+    {
+      "Top pages": "https://digitecme.com/brands/rox-service-dubai/oil-change",
+      "Clicks": 0.0,
+      "Impressions": 23.0,
+      "CTR": 0.0,
+      "Position": 4.78,
+      "_row": 74
+    },
+    {
+      "Top pages": "https://digitecme.com/brands/range-rover-service-dubai",
+      "Clicks": 0.0,
+      "Impressions": 23.0,
+      "CTR": 0.0,
+      "Position": 70.65,
+      "_row": 75
+    },
+    {
+      "Top pages": "https://digitecme.com/brands/bugatti-service-dubai",
+      "Clicks": 0.0,
+      "Impressions": 22.0,
+      "CTR": 0.0,
+      "Position": 36.14,
+      "_row": 76
+    },
+    {
+      "Top pages": "https://digitecme.com/blog/chevrolet-best-workshop-dubai",
+      "Clicks": 0.0,
+      "Impressions": 21.0,
+      "CTR": 0.0,
+      "Position": 11.76,
+      "_row": 78
+    },
+    {
+      "Top pages": "https://digitecme.com/brands/jetour-service-dubai",
+      "Clicks": 0.0,
+      "Impressions": 20.0,
+      "CTR": 0.0,
+      "Position": 10.25,
+      "_row": 79
+    },
+    {
+      "Top pages": "https://digitecme.com/blog/ferrari-488-service-dubai-guide",
+      "Clicks": 2.0,
+      "Impressions": 17.0,
+      "CTR": 0.1176,
+      "Position": 5.59,
+      "_row": 9
+    },
+    {
+      "Top pages": "https://digitecme.com/contact-us/",
+      "Clicks": 0.0,
+      "Impressions": 17.0,
+      "CTR": 0.0,
+      "Position": 8.0,
+      "_row": 83
+    },
+    {
+      "Top pages": "https://digitecme.com/blog/g63-to-brabus-g800-conversion-dubai",
+      "Clicks": 1.0,
+      "Impressions": 16.0,
+      "CTR": 0.0625,
+      "Position": 4.69,
+      "_row": 24
+    },
+    {
+      "Top pages": "https://digitecme.com/brands/corvette-service-dubai",
+      "Clicks": 0.0,
+      "Impressions": 16.0,
+      "CTR": 0.0,
+      "Position": 8.44,
+      "_row": 85
+    }
+  ],
+  "top_queries": [
+    {
+      "Top queries": "head unit repairing dubai",
+      "Clicks": 0.0,
+      "Impressions": 65.0,
+      "CTR": 0.0,
+      "Position": 3.02,
+      "_row": 12
+    },
+    {
+      "Top queries": "cadillac touch screen repair in dubai",
+      "Clicks": 0.0,
+      "Impressions": 65.0,
+      "CTR": 0.0,
+      "Position": 3.78,
+      "_row": 13
+    },
+    {
+      "Top queries": "paint protection film dubai",
+      "Clicks": 0.0,
+      "Impressions": 63.0,
+      "CTR": 0.0,
+      "Position": 29.38,
+      "_row": 14
+    },
+    {
+      "Top queries": "oil change dubai",
+      "Clicks": 0.0,
+      "Impressions": 61.0,
+      "CTR": 0.0,
+      "Position": 16.67,
+      "_row": 15
+    },
+    {
+      "Top queries": "challenger speaker upgrade in dubai",
+      "Clicks": 0.0,
+      "Impressions": 60.0,
+      "CTR": 0.0,
+      "Position": 19.32,
+      "_row": 16
+    },
+    {
+      "Top queries": "car oil change dubai",
+      "Clicks": 0.0,
+      "Impressions": 58.0,
+      "CTR": 0.0,
+      "Position": 11.6,
+      "_row": 17
+    },
+    {
+      "Top queries": "bmw specialist dubai",
+      "Clicks": 0.0,
+      "Impressions": 55.0,
+      "CTR": 0.0,
+      "Position": 10.33,
+      "_row": 18
+    },
+    {
+      "Top queries": "paint protection film",
+      "Clicks": 0.0,
+      "Impressions": 55.0,
+      "CTR": 0.0,
+      "Position": 41.35,
+      "_row": 19
+    },
+    {
+      "Top queries": "cadillac xts touch screen replacement in dubai",
+      "Clicks": 0.0,
+      "Impressions": 54.0,
+      "CTR": 0.0,
+      "Position": 4.63,
+      "_row": 20
+    },
+    {
+      "Top queries": "rolls royce service dubai",
+      "Clicks": 0.0,
+      "Impressions": 50.0,
+      "CTR": 0.0,
+      "Position": 10.66,
+      "_row": 22
+    },
+    {
+      "Top queries": "mustang stereo upgrade in dubai",
+      "Clicks": 0.0,
+      "Impressions": 48.0,
+      "CTR": 0.0,
+      "Position": 21.77,
+      "_row": 24
+    },
+    {
+      "Top queries": "cadillac srx screen replacement in dubai",
+      "Clicks": 0.0,
+      "Impressions": 47.0,
+      "CTR": 0.0,
+      "Position": 1.55,
+      "_row": 25
+    },
+    {
+      "Top queries": "dodge challenger sound system upgrade dubai",
+      "Clicks": 0.0,
+      "Impressions": 47.0,
+      "CTR": 0.0,
+      "Position": 16.62,
+      "_row": 26
+    },
+    {
+      "Top queries": "command unit repairing dubai",
+      "Clicks": 0.0,
+      "Impressions": 46.0,
+      "CTR": 0.0,
+      "Position": 1.39,
+      "_row": 27
+    },
+    {
+      "Top queries": "dodge challenger audio upgrade in dubai",
+      "Clicks": 0.0,
+      "Impressions": 46.0,
+      "CTR": 0.0,
+      "Position": 14.37,
+      "_row": 28
+    },
+    {
+      "Top queries": "bmw repair dubai",
+      "Clicks": 1.0,
+      "Impressions": 44.0,
+      "CTR": 0.0227,
+      "Position": 10.52,
+      "_row": 2
+    },
+    {
+      "Top queries": "cue screen replacement in dubai",
+      "Clicks": 0.0,
+      "Impressions": 42.0,
+      "CTR": 0.0,
+      "Position": 1.17,
+      "_row": 33
+    },
+    {
+      "Top queries": "dodge charger sound system upgrade in dubai",
+      "Clicks": 0.0,
+      "Impressions": 42.0,
+      "CTR": 0.0,
+      "Position": 17.12,
+      "_row": 34
+    },
+    {
+      "Top queries": "lexus audio system upgrade in dubai",
+      "Clicks": 0.0,
+      "Impressions": 40.0,
+      "CTR": 0.0,
+      "Position": 13.35,
+      "_row": 35
+    },
+    {
+      "Top queries": "ford figo reverse camera in dubai",
+      "Clicks": 0.0,
+      "Impressions": 40.0,
+      "CTR": 0.0,
+      "Position": 51.75,
+      "_row": 36
+    },
+    {
+      "Top queries": "car paint protection",
+      "Clicks": 0.0,
+      "Impressions": 39.0,
+      "CTR": 0.0,
+      "Position": 36.1,
+      "_row": 37
+    },
+    {
+      "Top queries": "cadillac cue screen replacement in dubai",
+      "Clicks": 0.0,
+      "Impressions": 38.0,
+      "CTR": 0.0,
+      "Position": 1.39,
+      "_row": 38
+    },
+    {
+      "Top queries": "range rover sound system upgrade in dubai",
+      "Clicks": 0.0,
+      "Impressions": 38.0,
+      "CTR": 0.0,
+      "Position": 8.24,
+      "_row": 39
+    },
+    {
+      "Top queries": "mustang audio upgrade in dubai",
+      "Clicks": 0.0,
+      "Impressions": 38.0,
+      "CTR": 0.0,
+      "Position": 15.58,
+      "_row": 40
+    },
+    {
+      "Top queries": "dodge charger speaker upgrade in dubai",
+      "Clicks": 0.0,
+      "Impressions": 38.0,
+      "CTR": 0.0,
+      "Position": 27.74,
+      "_row": 41
+    },
+    {
+      "Top queries": "ford expedition stereo upgrade in dubai",
+      "Clicks": 0.0,
+      "Impressions": 37.0,
+      "CTR": 0.0,
+      "Position": 27.24,
+      "_row": 42
+    },
+    {
+      "Top queries": "mustang sound system upgrade in dubai",
+      "Clicks": 0.0,
+      "Impressions": 36.0,
+      "CTR": 0.0,
+      "Position": 19.86,
+      "_row": 43
+    },
+    {
+      "Top queries": "dodge charger stereo upgrade in dubai",
+      "Clicks": 0.0,
+      "Impressions": 35.0,
+      "CTR": 0.0,
+      "Position": 16.09,
+      "_row": 44
+    },
+    {
+      "Top queries": "ford mustang speaker upgrade dubai",
+      "Clicks": 0.0,
+      "Impressions": 35.0,
+      "CTR": 0.0,
+      "Position": 21.94,
+      "_row": 45
+    },
+    {
+      "Top queries": "mustang speaker upgrade in dubai",
+      "Clicks": 0.0,
+      "Impressions": 34.0,
+      "CTR": 0.0,
+      "Position": 18.82,
+      "_row": 46
+    },
+    {
+      "Top queries": "rolls royce repair dubai",
+      "Clicks": 0.0,
+      "Impressions": 33.0,
+      "CTR": 0.0,
+      "Position": 11.55,
+      "_row": 47
+    },
+    {
+      "Top queries": "land cruiser stereo upgrade in dubai",
+      "Clicks": 0.0,
+      "Impressions": 32.0,
+      "CTR": 0.0,
+      "Position": 11.97,
+      "_row": 49
+    },
+    {
+      "Top queries": "upgrade gmc sierra stereo in dubai",
+      "Clicks": 0.0,
+      "Impressions": 32.0,
+      "CTR": 0.0,
+      "Position": 14.25,
+      "_row": 50
+    },
+    {
+      "Top queries": "car oil change",
+      "Clicks": 0.0,
+      "Impressions": 32.0,
+      "CTR": 0.0,
+      "Position": 27.47,
+      "_row": 51
+    },
+    {
+      "Top queries": "lamborghini reverse camera in dubai",
+      "Clicks": 0.0,
+      "Impressions": 31.0,
+      "CTR": 0.0,
+      "Position": 29.68,
+      "_row": 52
+    },
+    {
+      "Top queries": "ppf dubai",
+      "Clicks": 0.0,
+      "Impressions": 31.0,
+      "CTR": 0.0,
+      "Position": 42.16,
+      "_row": 53
+    },
+    {
+      "Top queries": "ceramic coating dubai",
+      "Clicks": 0.0,
+      "Impressions": 30.0,
+      "CTR": 0.0,
+      "Position": 28.57,
+      "_row": 54
+    },
+    {
+      "Top queries": "ford figo sound system upgrade in dubai",
+      "Clicks": 0.0,
+      "Impressions": 29.0,
+      "CTR": 0.0,
+      "Position": 19.62,
+      "_row": 55
+    },
+    {
+      "Top queries": "dodge challenger speaker upgrade dubai",
+      "Clicks": 0.0,
+      "Impressions": 29.0,
+      "CTR": 0.0,
+      "Position": 19.83,
+      "_row": 56
+    },
+    {
+      "Top queries": "car protection film",
+      "Clicks": 0.0,
+      "Impressions": 29.0,
+      "CTR": 0.0,
+      "Position": 47.0,
+      "_row": 57
+    },
+    {
+      "Top queries": "lexus sound system upgrade in dubai",
+      "Clicks": 0.0,
+      "Impressions": 28.0,
+      "CTR": 0.0,
+      "Position": 13.89,
+      "_row": 58
+    },
+    {
+      "Top queries": "gmc service center dubai",
+      "Clicks": 0.0,
+      "Impressions": 27.0,
+      "CTR": 0.0,
+      "Position": 9.15,
+      "_row": 59
+    },
+    {
+      "Top queries": "porsche repair dubai",
+      "Clicks": 0.0,
+      "Impressions": 27.0,
+      "CTR": 0.0,
+      "Position": 10.22,
+      "_row": 60
+    },
+    {
+      "Top queries": "car paint protection film dubai",
+      "Clicks": 0.0,
+      "Impressions": 27.0,
+      "CTR": 0.0,
+      "Position": 32.07,
+      "_row": 61
+    },
+    {
+      "Top queries": "gmc engine repair abu dhabi",
+      "Clicks": 0.0,
+      "Impressions": 26.0,
+      "CTR": 0.0,
+      "Position": 42.88,
+      "_row": 62
+    },
+    {
+      "Top queries": "digitech",
+      "Clicks": 0.0,
+      "Impressions": 25.0,
+      "CTR": 0.0,
+      "Position": 4.16,
+      "_row": 63
+    },
+    {
+      "Top queries": "audi repair dubai",
+      "Clicks": 0.0,
+      "Impressions": 25.0,
+      "CTR": 0.0,
+      "Position": 22.08,
+      "_row": 64
+    },
+    {
+      "Top queries": "oil change",
+      "Clicks": 0.0,
+      "Impressions": 25.0,
+      "CTR": 0.0,
+      "Position": 25.72,
+      "_row": 65
+    },
+    {
+      "Top queries": "digitec",
+      "Clicks": 0.0,
+      "Impressions": 24.0,
+      "CTR": 0.0,
+      "Position": 2.71,
+      "_row": 66
+    },
+    {
+      "Top queries": "jaguar repair",
+      "Clicks": 0.0,
+      "Impressions": 24.0,
+      "CTR": 0.0,
+      "Position": 8.96,
+      "_row": 68
+    },
+    {
+      "Top queries": "gmc service dubai",
+      "Clicks": 0.0,
+      "Impressions": 24.0,
+      "CTR": 0.0,
+      "Position": 11.0,
+      "_row": 69
+    },
+    {
+      "Top queries": "paint protection films",
+      "Clicks": 0.0,
+      "Impressions": 24.0,
+      "CTR": 0.0,
+      "Position": 23.0,
+      "_row": 70
+    },
+    {
+      "Top queries": "ceramic paint protection dubai",
+      "Clicks": 0.0,
+      "Impressions": 24.0,
+      "CTR": 0.0,
+      "Position": 24.29,
+      "_row": 71
+    },
+    {
+      "Top queries": "paint protection coating",
+      "Clicks": 0.0,
+      "Impressions": 24.0,
+      "CTR": 0.0,
+      "Position": 37.54,
+      "_row": 73
+    },
+    {
+      "Top queries": "lamborghini service dubai",
+      "Clicks": 0.0,
+      "Impressions": 23.0,
+      "CTR": 0.0,
+      "Position": 11.43,
+      "_row": 74
+    },
+    {
+      "Top queries": "gmc repair dubai",
+      "Clicks": 0.0,
+      "Impressions": 23.0,
+      "CTR": 0.0,
+      "Position": 13.0,
+      "_row": 75
+    },
+    {
+      "Top queries": "volkswagen repair dubai",
+      "Clicks": 0.0,
+      "Impressions": 23.0,
+      "CTR": 0.0,
+      "Position": 16.09,
+      "_row": 76
+    },
+    {
+      "Top queries": "chevrolet service center dubai",
+      "Clicks": 0.0,
+      "Impressions": 22.0,
+      "CTR": 0.0,
+      "Position": 10.41,
+      "_row": 77
+    },
+    {
+      "Top queries": "hummer repair dubai",
+      "Clicks": 0.0,
+      "Impressions": 22.0,
+      "CTR": 0.0,
+      "Position": 12.0,
+      "_row": 78
+    },
+    {
+      "Top queries": "volkswagen service dubai",
+      "Clicks": 0.0,
+      "Impressions": 22.0,
+      "CTR": 0.0,
+      "Position": 14.09,
+      "_row": 79
+    },
+    {
+      "Top queries": "best chevrolet workshop",
+      "Clicks": 0.0,
+      "Impressions": 22.0,
+      "CTR": 0.0,
+      "Position": 16.68,
+      "_row": 80
+    },
+    {
+      "Top queries": "oil change service",
+      "Clicks": 0.0,
+      "Impressions": 22.0,
+      "CTR": 0.0,
+      "Position": 18.95,
+      "_row": 81
+    },
+    {
+      "Top queries": "audi service",
+      "Clicks": 0.0,
+      "Impressions": 22.0,
+      "CTR": 0.0,
+      "Position": 25.59,
+      "_row": 82
+    },
+    {
+      "Top queries": "gmc service center",
+      "Clicks": 0.0,
+      "Impressions": 21.0,
+      "CTR": 0.0,
+      "Position": 7.19,
+      "_row": 83
+    },
+    {
+      "Top queries": "rolls royce service center dubai",
+      "Clicks": 0.0,
+      "Impressions": 21.0,
+      "CTR": 0.0,
+      "Position": 11.33,
+      "_row": 84
+    },
+    {
+      "Top queries": "ford service dubai",
+      "Clicks": 0.0,
+      "Impressions": 21.0,
+      "CTR": 0.0,
+      "Position": 17.95,
+      "_row": 85
+    },
+    {
+      "Top queries": "transmission repair dubai",
+      "Clicks": 0.0,
+      "Impressions": 21.0,
+      "CTR": 0.0,
+      "Position": 21.0,
+      "_row": 86
+    },
+    {
+      "Top queries": "car paint protection dubai",
+      "Clicks": 0.0,
+      "Impressions": 21.0,
+      "CTR": 0.0,
+      "Position": 28.48,
+      "_row": 87
+    },
+    {
+      "Top queries": "rolls royce service",
+      "Clicks": 0.0,
+      "Impressions": 20.0,
+      "CTR": 0.0,
+      "Position": 13.85,
+      "_row": 88
+    },
+    {
+      "Top queries": "lamborghini repair dubai",
+      "Clicks": 0.0,
+      "Impressions": 20.0,
+      "CTR": 0.0,
+      "Position": 14.65,
+      "_row": 89
+    },
+    {
+      "Top queries": "ferrari service dubai",
+      "Clicks": 0.0,
+      "Impressions": 20.0,
+      "CTR": 0.0,
+      "Position": 22.0,
+      "_row": 90
+    },
+    {
+      "Top queries": "ppf protection dubai",
+      "Clicks": 0.0,
+      "Impressions": 20.0,
+      "CTR": 0.0,
+      "Position": 32.25,
+      "_row": 91
+    },
+    {
+      "Top queries": "ppf in dubai",
+      "Clicks": 0.0,
+      "Impressions": 20.0,
+      "CTR": 0.0,
+      "Position": 37.0,
+      "_row": 92
+    },
+    {
+      "Top queries": "car paint protection film",
+      "Clicks": 0.0,
+      "Impressions": 20.0,
+      "CTR": 0.0,
+      "Position": 37.85,
+      "_row": 93
+    },
+    {
+      "Top queries": "paint protection",
+      "Clicks": 0.0,
+      "Impressions": 20.0,
+      "CTR": 0.0,
+      "Position": 41.05,
+      "_row": 94
+    },
+    {
+      "Top queries": "tire repair dubai",
+      "Clicks": 0.0,
+      "Impressions": 20.0,
+      "CTR": 0.0,
+      "Position": 59.55,
+      "_row": 95
+    },
+    {
+      "Top queries": "tyre puncture repair dubai",
+      "Clicks": 0.0,
+      "Impressions": 20.0,
+      "CTR": 0.0,
+      "Position": 64.05,
+      "_row": 96
+    },
+    {
+      "Top queries": "jaguar repair dubai",
+      "Clicks": 0.0,
+      "Impressions": 19.0,
+      "CTR": 0.0,
+      "Position": 13.58,
+      "_row": 97
+    },
+    {
+      "Top queries": "gearbox repair dubai",
+      "Clicks": 0.0,
+      "Impressions": 19.0,
+      "CTR": 0.0,
+      "Position": 21.26,
+      "_row": 98
+    },
+    {
+      "Top queries": "mini repair abu dhabi",
+      "Clicks": 0.0,
+      "Impressions": 19.0,
+      "CTR": 0.0,
+      "Position": 39.53,
+      "_row": 99
+    }
+  ],
+  "near_page_one_pages": [
+    {
+      "Top pages": "https://digitecme.com/services/oil-change-dubai",
+      "Clicks": 1.0,
+      "Impressions": 430.0,
+      "CTR": 0.0023,
+      "Position": 19.58,
+      "_row": 10
+    },
+    {
+      "Top pages": "https://digitecme.com/brands/volkswagen-service-dubai",
+      "Clicks": 0.0,
+      "Impressions": 429.0,
+      "CTR": 0.0,
+      "Position": 18.98,
+      "_row": 34
+    },
+    {
+      "Top pages": "https://digitecme.com/",
+      "Clicks": 10.0,
+      "Impressions": 402.0,
+      "CTR": 0.024900000000000002,
+      "Position": 14.13,
+      "_row": 2
+    },
+    {
+      "Top pages": "https://digitecme.com/brands/bmw-service-dubai",
+      "Clicks": 1.0,
+      "Impressions": 367.0,
+      "CTR": 0.0027,
+      "Position": 15.41,
+      "_row": 11
+    },
+    {
+      "Top pages": "https://digitecme.com/brands/gmc-service-dubai",
+      "Clicks": 0.0,
+      "Impressions": 261.0,
+      "CTR": 0.0,
+      "Position": 17.55,
+      "_row": 36
+    },
+    {
+      "Top pages": "https://digitecme.com/brands/rolls-royce-service-dubai",
+      "Clicks": 0.0,
+      "Impressions": 208.0,
+      "CTR": 0.0,
+      "Position": 13.53,
+      "_row": 40
+    },
+    {
+      "Top pages": "https://digitecme.com/brands/lamborghini-service-dubai",
+      "Clicks": 0.0,
+      "Impressions": 207.0,
+      "CTR": 0.0,
+      "Position": 17.98,
+      "_row": 41
+    },
+    {
+      "Top pages": "https://digitecme.com/brands/jaguar-service-dubai",
+      "Clicks": 1.0,
+      "Impressions": 202.0,
+      "CTR": 0.005,
+      "Position": 18.94,
+      "_row": 13
+    },
+    {
+      "Top pages": "https://digitecme.com/services/exhaust-repair-dubai",
+      "Clicks": 0.0,
+      "Impressions": 199.0,
+      "CTR": 0.0,
+      "Position": 10.21,
+      "_row": 42
+    },
+    {
+      "Top pages": "https://digitecme.com/brands/chevrolet-service-dubai",
+      "Clicks": 0.0,
+      "Impressions": 189.0,
+      "CTR": 0.0,
+      "Position": 14.93,
+      "_row": 43
+    },
+    {
+      "Top pages": "https://digitecme.com/services/head-unit-repair-dubai",
+      "Clicks": 4.0,
+      "Impressions": 187.0,
+      "CTR": 0.021400000000000002,
+      "Position": 8.49,
+      "_row": 4
+    },
+    {
+      "Top pages": "https://digitecme.com/services/transmission-repair-dubai",
+      "Clicks": 0.0,
+      "Impressions": 170.0,
+      "CTR": 0.0,
+      "Position": 19.36,
+      "_row": 45
+    },
+    {
+      "Top pages": "https://digitecme.com/tuning",
+      "Clicks": 1.0,
+      "Impressions": 149.0,
+      "CTR": 0.0067,
+      "Position": 14.56,
+      "_row": 14
+    },
+    {
+      "Top pages": "https://digitecme.com/brands/volvo-service-dubai",
+      "Clicks": 0.0,
+      "Impressions": 115.0,
+      "CTR": 0.0,
+      "Position": 17.1,
+      "_row": 47
+    },
+    {
+      "Top pages": "https://digitecme.com/brands/hummer-service-dubai",
+      "Clicks": 0.0,
+      "Impressions": 95.0,
+      "CTR": 0.0,
+      "Position": 12.34,
+      "_row": 50
+    },
+    {
+      "Top pages": "https://digitecme.com/brands/porsche-service-dubai",
+      "Clicks": 0.0,
+      "Impressions": 92.0,
+      "CTR": 0.0,
+      "Position": 19.89,
+      "_row": 51
+    },
+    {
+      "Top pages": "https://digitecme.com/about",
+      "Clicks": 0.0,
+      "Impressions": 75.0,
+      "CTR": 0.0,
+      "Position": 8.71,
+      "_row": 53
+    },
+    {
+      "Top pages": "https://digitecme.com/services/auto-electrical-repair-dubai",
+      "Clicks": 0.0,
+      "Impressions": 58.0,
+      "CTR": 0.0,
+      "Position": 13.71,
+      "_row": 56
+    },
+    {
+      "Top pages": "https://digitecme.com/brands/tesla-service-dubai",
+      "Clicks": 1.0,
+      "Impressions": 53.0,
+      "CTR": 0.0189,
+      "Position": 11.25,
+      "_row": 18
+    },
+    {
+      "Top pages": "https://digitecme.com/brands/lotus-service-dubai",
+      "Clicks": 0.0,
+      "Impressions": 52.0,
+      "CTR": 0.0,
+      "Position": 6.33,
+      "_row": 60
+    },
+    {
+      "Top pages": "https://digitecme.com/brands/genesis-service-dubai",
+      "Clicks": 1.0,
+      "Impressions": 40.0,
+      "CTR": 0.025,
+      "Position": 7.62,
+      "_row": 19
+    },
+    {
+      "Top pages": "https://digitecme.com/blog/gad-tuning-explained",
+      "Clicks": 0.0,
+      "Impressions": 34.0,
+      "CTR": 0.0,
+      "Position": 6.91,
+      "_row": 66
+    },
+    {
+      "Top pages": "https://digitecme.com/brands/subaru-service-dubai",
+      "Clicks": 0.0,
+      "Impressions": 31.0,
+      "CTR": 0.0,
+      "Position": 8.06,
+      "_row": 69
+    },
+    {
+      "Top pages": "https://digitecme.com/tuning/lamborghini-urus",
+      "Clicks": 0.0,
+      "Impressions": 29.0,
+      "CTR": 0.0,
+      "Position": 8.86,
+      "_row": 70
+    },
+    {
+      "Top pages": "https://digitecme.com/services/steering-repair",
+      "Clicks": 1.0,
+      "Impressions": 28.0,
+      "CTR": 0.035699999999999996,
+      "Position": 11.5,
+      "_row": 22
+    },
+    {
+      "Top pages": "https://digitecme.com/brands/rox-service-dubai/oil-change",
+      "Clicks": 0.0,
+      "Impressions": 23.0,
+      "CTR": 0.0,
+      "Position": 4.78,
+      "_row": 74
+    },
+    {
+      "Top pages": "https://digitecme.com/blog/chevrolet-best-workshop-dubai",
+      "Clicks": 0.0,
+      "Impressions": 21.0,
+      "CTR": 0.0,
+      "Position": 11.76,
+      "_row": 78
+    },
+    {
+      "Top pages": "https://digitecme.com/brands/jetour-service-dubai",
+      "Clicks": 0.0,
+      "Impressions": 20.0,
+      "CTR": 0.0,
+      "Position": 10.25,
+      "_row": 79
+    }
+  ],
+  "near_page_one_queries": [
+    {
+      "Top queries": "oil change dubai",
+      "Clicks": 0.0,
+      "Impressions": 61.0,
+      "CTR": 0.0,
+      "Position": 16.67,
+      "_row": 15
+    },
+    {
+      "Top queries": "challenger speaker upgrade in dubai",
+      "Clicks": 0.0,
+      "Impressions": 60.0,
+      "CTR": 0.0,
+      "Position": 19.32,
+      "_row": 16
+    },
+    {
+      "Top queries": "car oil change dubai",
+      "Clicks": 0.0,
+      "Impressions": 58.0,
+      "CTR": 0.0,
+      "Position": 11.6,
+      "_row": 17
+    },
+    {
+      "Top queries": "bmw specialist dubai",
+      "Clicks": 0.0,
+      "Impressions": 55.0,
+      "CTR": 0.0,
+      "Position": 10.33,
+      "_row": 18
+    },
+    {
+      "Top queries": "cadillac xts touch screen replacement in dubai",
+      "Clicks": 0.0,
+      "Impressions": 54.0,
+      "CTR": 0.0,
+      "Position": 4.63,
+      "_row": 20
+    },
+    {
+      "Top queries": "rolls royce service dubai",
+      "Clicks": 0.0,
+      "Impressions": 50.0,
+      "CTR": 0.0,
+      "Position": 10.66,
+      "_row": 22
+    },
+    {
+      "Top queries": "dodge challenger sound system upgrade dubai",
+      "Clicks": 0.0,
+      "Impressions": 47.0,
+      "CTR": 0.0,
+      "Position": 16.62,
+      "_row": 26
+    },
+    {
+      "Top queries": "dodge challenger audio upgrade in dubai",
+      "Clicks": 0.0,
+      "Impressions": 46.0,
+      "CTR": 0.0,
+      "Position": 14.37,
+      "_row": 28
+    },
+    {
+      "Top queries": "bmw repair dubai",
+      "Clicks": 1.0,
+      "Impressions": 44.0,
+      "CTR": 0.0227,
+      "Position": 10.52,
+      "_row": 2
+    },
+    {
+      "Top queries": "dodge charger sound system upgrade in dubai",
+      "Clicks": 0.0,
+      "Impressions": 42.0,
+      "CTR": 0.0,
+      "Position": 17.12,
+      "_row": 34
+    },
+    {
+      "Top queries": "lexus audio system upgrade in dubai",
+      "Clicks": 0.0,
+      "Impressions": 40.0,
+      "CTR": 0.0,
+      "Position": 13.35,
+      "_row": 35
+    },
+    {
+      "Top queries": "range rover sound system upgrade in dubai",
+      "Clicks": 0.0,
+      "Impressions": 38.0,
+      "CTR": 0.0,
+      "Position": 8.24,
+      "_row": 39
+    },
+    {
+      "Top queries": "mustang audio upgrade in dubai",
+      "Clicks": 0.0,
+      "Impressions": 38.0,
+      "CTR": 0.0,
+      "Position": 15.58,
+      "_row": 40
+    },
+    {
+      "Top queries": "mustang sound system upgrade in dubai",
+      "Clicks": 0.0,
+      "Impressions": 36.0,
+      "CTR": 0.0,
+      "Position": 19.86,
+      "_row": 43
+    },
+    {
+      "Top queries": "dodge charger stereo upgrade in dubai",
+      "Clicks": 0.0,
+      "Impressions": 35.0,
+      "CTR": 0.0,
+      "Position": 16.09,
+      "_row": 44
+    },
+    {
+      "Top queries": "mustang speaker upgrade in dubai",
+      "Clicks": 0.0,
+      "Impressions": 34.0,
+      "CTR": 0.0,
+      "Position": 18.82,
+      "_row": 46
+    },
+    {
+      "Top queries": "rolls royce repair dubai",
+      "Clicks": 0.0,
+      "Impressions": 33.0,
+      "CTR": 0.0,
+      "Position": 11.55,
+      "_row": 47
+    },
+    {
+      "Top queries": "land cruiser stereo upgrade in dubai",
+      "Clicks": 0.0,
+      "Impressions": 32.0,
+      "CTR": 0.0,
+      "Position": 11.97,
+      "_row": 49
+    },
+    {
+      "Top queries": "upgrade gmc sierra stereo in dubai",
+      "Clicks": 0.0,
+      "Impressions": 32.0,
+      "CTR": 0.0,
+      "Position": 14.25,
+      "_row": 50
+    },
+    {
+      "Top queries": "ford figo sound system upgrade in dubai",
+      "Clicks": 0.0,
+      "Impressions": 29.0,
+      "CTR": 0.0,
+      "Position": 19.62,
+      "_row": 55
+    },
+    {
+      "Top queries": "dodge challenger speaker upgrade dubai",
+      "Clicks": 0.0,
+      "Impressions": 29.0,
+      "CTR": 0.0,
+      "Position": 19.83,
+      "_row": 56
+    },
+    {
+      "Top queries": "lexus sound system upgrade in dubai",
+      "Clicks": 0.0,
+      "Impressions": 28.0,
+      "CTR": 0.0,
+      "Position": 13.89,
+      "_row": 58
+    },
+    {
+      "Top queries": "gmc service center dubai",
+      "Clicks": 0.0,
+      "Impressions": 27.0,
+      "CTR": 0.0,
+      "Position": 9.15,
+      "_row": 59
+    },
+    {
+      "Top queries": "porsche repair dubai",
+      "Clicks": 0.0,
+      "Impressions": 27.0,
+      "CTR": 0.0,
+      "Position": 10.22,
+      "_row": 60
+    },
+    {
+      "Top queries": "digitech",
+      "Clicks": 0.0,
+      "Impressions": 25.0,
+      "CTR": 0.0,
+      "Position": 4.16,
+      "_row": 63
+    },
+    {
+      "Top queries": "jaguar repair",
+      "Clicks": 0.0,
+      "Impressions": 24.0,
+      "CTR": 0.0,
+      "Position": 8.96,
+      "_row": 68
+    },
+    {
+      "Top queries": "gmc service dubai",
+      "Clicks": 0.0,
+      "Impressions": 24.0,
+      "CTR": 0.0,
+      "Position": 11.0,
+      "_row": 69
+    },
+    {
+      "Top queries": "lamborghini service dubai",
+      "Clicks": 0.0,
+      "Impressions": 23.0,
+      "CTR": 0.0,
+      "Position": 11.43,
+      "_row": 74
+    },
+    {
+      "Top queries": "gmc repair dubai",
+      "Clicks": 0.0,
+      "Impressions": 23.0,
+      "CTR": 0.0,
+      "Position": 13.0,
+      "_row": 75
+    },
+    {
+      "Top queries": "volkswagen repair dubai",
+      "Clicks": 0.0,
+      "Impressions": 23.0,
+      "CTR": 0.0,
+      "Position": 16.09,
+      "_row": 76
+    },
+    {
+      "Top queries": "chevrolet service center dubai",
+      "Clicks": 0.0,
+      "Impressions": 22.0,
+      "CTR": 0.0,
+      "Position": 10.41,
+      "_row": 77
+    },
+    {
+      "Top queries": "hummer repair dubai",
+      "Clicks": 0.0,
+      "Impressions": 22.0,
+      "CTR": 0.0,
+      "Position": 12.0,
+      "_row": 78
+    },
+    {
+      "Top queries": "volkswagen service dubai",
+      "Clicks": 0.0,
+      "Impressions": 22.0,
+      "CTR": 0.0,
+      "Position": 14.09,
+      "_row": 79
+    },
+    {
+      "Top queries": "best chevrolet workshop",
+      "Clicks": 0.0,
+      "Impressions": 22.0,
+      "CTR": 0.0,
+      "Position": 16.68,
+      "_row": 80
+    },
+    {
+      "Top queries": "oil change service",
+      "Clicks": 0.0,
+      "Impressions": 22.0,
+      "CTR": 0.0,
+      "Position": 18.95,
+      "_row": 81
+    },
+    {
+      "Top queries": "gmc service center",
+      "Clicks": 0.0,
+      "Impressions": 21.0,
+      "CTR": 0.0,
+      "Position": 7.19,
+      "_row": 83
+    },
+    {
+      "Top queries": "rolls royce service center dubai",
+      "Clicks": 0.0,
+      "Impressions": 21.0,
+      "CTR": 0.0,
+      "Position": 11.33,
+      "_row": 84
+    },
+    {
+      "Top queries": "ford service dubai",
+      "Clicks": 0.0,
+      "Impressions": 21.0,
+      "CTR": 0.0,
+      "Position": 17.95,
+      "_row": 85
+    },
+    {
+      "Top queries": "rolls royce service",
+      "Clicks": 0.0,
+      "Impressions": 20.0,
+      "CTR": 0.0,
+      "Position": 13.85,
+      "_row": 88
+    },
+    {
+      "Top queries": "lamborghini repair dubai",
+      "Clicks": 0.0,
+      "Impressions": 20.0,
+      "CTR": 0.0,
+      "Position": 14.65,
+      "_row": 89
+    },
+    {
+      "Top queries": "jaguar repair dubai",
+      "Clicks": 0.0,
+      "Impressions": 19.0,
+      "CTR": 0.0,
+      "Position": 13.58,
+      "_row": 97
+    },
+    {
+      "Top queries": "vw service",
+      "Clicks": 0.0,
+      "Impressions": 18.0,
+      "CTR": 0.0,
+      "Position": 8.17,
+      "_row": 102
+    },
+    {
+      "Top queries": "volkswagen service",
+      "Clicks": 0.0,
+      "Impressions": 18.0,
+      "CTR": 0.0,
+      "Position": 9.72,
+      "_row": 103
+    },
+    {
+      "Top queries": "lamborghini maintenance dubai",
+      "Clicks": 0.0,
+      "Impressions": 18.0,
+      "CTR": 0.0,
+      "Position": 12.17,
+      "_row": 104
+    },
+    {
+      "Top queries": "rolls royce service center",
+      "Clicks": 0.0,
+      "Impressions": 18.0,
+      "CTR": 0.0,
+      "Position": 17.72,
+      "_row": 105
+    },
+    {
+      "Top queries": "volkswagen repair",
+      "Clicks": 0.0,
+      "Impressions": 17.0,
+      "CTR": 0.0,
+      "Position": 5.65,
+      "_row": 109
+    },
+    {
+      "Top queries": "stage 4 e63",
+      "Clicks": 0.0,
+      "Impressions": 17.0,
+      "CTR": 0.0,
+      "Position": 8.24,
+      "_row": 110
+    },
+    {
+      "Top queries": "lincoln repair dubai",
+      "Clicks": 0.0,
+      "Impressions": 17.0,
+      "CTR": 0.0,
+      "Position": 10.0,
+      "_row": 111
+    },
+    {
+      "Top queries": "paint protection film installers",
+      "Clicks": 0.0,
+      "Impressions": 17.0,
+      "CTR": 0.0,
+      "Position": 15.94,
+      "_row": 112
+    },
+    {
+      "Top queries": "ecu tuning dubai",
+      "Clicks": 0.0,
+      "Impressions": 17.0,
+      "CTR": 0.0,
+      "Position": 18.18,
+      "_row": 113
+    },
+    {
+      "Top queries": "bmw engine repair dubai",
+      "Clicks": 0.0,
+      "Impressions": 16.0,
+      "CTR": 0.0,
+      "Position": 7.12,
+      "_row": 120
+    },
+    {
+      "Top queries": "hummer service dubai",
+      "Clicks": 0.0,
+      "Impressions": 15.0,
+      "CTR": 0.0,
+      "Position": 9.27,
+      "_row": 127
+    },
+    {
+      "Top queries": "ford service",
+      "Clicks": 0.0,
+      "Impressions": 15.0,
+      "CTR": 0.0,
+      "Position": 11.53,
+      "_row": 128
+    },
+    {
+      "Top queries": "car oil change in dubai",
+      "Clicks": 0.0,
+      "Impressions": 15.0,
+      "CTR": 0.0,
+      "Position": 12.6,
+      "_row": 129
+    },
+    {
+      "Top queries": "bmw repair",
+      "Clicks": 0.0,
+      "Impressions": 15.0,
+      "CTR": 0.0,
+      "Position": 18.6,
+      "_row": 130
+    },
+    {
+      "Top queries": "bmw service near me",
+      "Clicks": 0.0,
+      "Impressions": 14.0,
+      "CTR": 0.0,
+      "Position": 9.36,
+      "_row": 138
+    },
+    {
+      "Top queries": "volkswagen service center",
+      "Clicks": 0.0,
+      "Impressions": 14.0,
+      "CTR": 0.0,
+      "Position": 14.29,
+      "_row": 139
+    },
+    {
+      "Top queries": "ford repair dubai",
+      "Clicks": 0.0,
+      "Impressions": 14.0,
+      "CTR": 0.0,
+      "Position": 14.86,
+      "_row": 140
+    },
+    {
+      "Top queries": "bmw workshop dubai al quoz",
+      "Clicks": 0.0,
+      "Impressions": 13.0,
+      "CTR": 0.0,
+      "Position": 12.38,
+      "_row": 150
+    },
+    {
+      "Top queries": "mclaren repair dubai",
+      "Clicks": 0.0,
+      "Impressions": 13.0,
+      "CTR": 0.0,
+      "Position": 12.77,
+      "_row": 151
+    }
+  ]
+}

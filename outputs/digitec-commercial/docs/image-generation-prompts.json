@@ -1,0 +1,22 @@
+{
+  "tool": "Built-in image_gen.imagegen",
+  "date": "2026-10-20",
+  "mode": "Original image generation; no third-party visual reference supplied",
+  "prompts": [
+    {
+      "file": "assets/hero-coupe.png",
+      "transparentBackground": false,
+      "prompt": "Use case: ads-marketing. Asset type: photographic plate for an original premium automotive motion graphics commercial, not a finished advert. Generate a single incredibly polished photorealistic 3D studio render at wide landscape 16:9, high resolution. Subject: one original unbranded graphite-black front-mid-engine grand touring sports coupe, long sculpted hood, elegant low roof, silver multi-spoke wheels, subtle white LED headlights, believable premium European design without copying any exact vehicle or any visible manufacturer badge. Camera low front-left three-quarter view, the whole car fully visible and taking about 78% of image width, car centered in lower half, car silhouette spanning x 10% to 90% and y 35% to 82%, ample near black space above. Studio seamless near-black charcoal, floor soft neutral reflection. Narrow enormous white softbox above skimming across bonnet and roof, subtle orange #EB6736 strip reflection on one edge, crisp expensive materials, precise natural paint reflections, sharp tire rubber and brakes, no haze. Mood restrained technologically advanced luxury automotive campaign. No text, no watermark, no logo, no human, no colored glowing force field, no bright background. This will become a layered animated 2.5D plate with code-driven lighting, diagnostic scanning and telemetry."
+    },
+    {
+      "file": "assets/engine-exploded.png",
+      "transparentBackground": true,
+      "prompt": "Use case: ads-marketing. Asset type: isolated metallic component atlas for animated premium automotive exploded view; photorealistic 3D product visualization. Generate a tall portrait 2:3 composition with transparent background. A generic original four-cylinder performance engine arranged as FOUR SEPARATE aligned components spaced far apart vertically, all in a consistent front-right three-quarter isometric view. Top 0-20%: one compact black and silver cam cover/head assembly. At 25-43%: four matching highly detailed forged silver pistons with connecting rods, all together as one horizontal row, isolated in clear space. At 49-74%: one machined dark aluminum inline-four cylinder block with four accurate cylinder bores visible on top, realistic studs and crisp machined edges. Bottom 80-96%: lower crankcase and ribbed oil sump assembly. Large clear transparent horizontal gaps between these four groups so they can be cropped and independently animated. Every component completely within its assigned vertical zone. Components proportioned to form one coherent engine when reassembled. Refined white strip studio highlights, metallic graphite shadows, very subtle orange #EB6736 accent reflection only. No text, no logos, no watermark, no additional parts, no diagrams or annotation. Premium engineering catalogue precision, no fantasy mechanical elements. This is conceptual servicing assembly visualization, not an operational mechanical simulation."
+    },
+    {
+      "file": "assets/paint-macro.png",
+      "transparentBackground": false,
+      "prompt": "Use case: ads-marketing. Asset type: macro photographic plate for high-end automotive paint protection motion graphics, landscape 16:9. An extreme close-up of the graphite black sports coupe's sculpted hood and front fender in a spotless dark detailing studio, elegant diagonal body contour from lower left to upper right, the glossy smooth graphite paint surface fills the frame, a very narrow panel gap and headlight edge visible along lower right. A realistic thin TRANSPARENT paint-protection film sheet is partially laid on the hood, with one small corner gently curled back catching a narrow clean white highlight, the film is almost invisible where adhered, physically thin and flexible, no force field or colored glow. Huge white softbox reflections form precise long curved bands across the paint, one extremely subtle warm orange reflection at far edge, rich black background top third. No hands, no text, no tools, no logos, no watermark, no dust. Premium photoreal automotive detailing campaign, refined cinematic lens, controlled dramatic light, precise materials."
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "format": "vertical",
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "duration": 35,
+  "frames": 1050,
+  "elapsedSeconds": 18.375,
+  "bytes": 10847119,
+  "ffmpegArgs": [
+    "-y",
+    "-hide_banner",
+    "-f",
+    "rawvideo",
+    "-pix_fmt",
+    "rgba",
+    "-s",
+    "1080x1920",
+    "-r",
+    "30",
+    "-i",
+    "pipe:0",
+    "-i",
+    "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\digitec-commercial\\assets\\audio\\master.wav",
+    "-map",
+    "0:v:0",
+    "-map",
+    "1:a:0",
+    "-c:v",
+    "libx264",
+    "-preset",
+    "medium",
+    "-crf",
+    "17",
+    "-pix_fmt",
+    "yuv420p",
+    "-profile:v",
+    "high",
+    "-level:v",
+    "4.1",
+    "-r",
+    "30",
+    "-fps_mode",
+    "cfr",
+    "-c:a",
+    "aac",
+    "-b:a",
+    "256k",
+    "-ar",
+    "48000",
+    "-af",
+    "loudnorm=I=-16:TP=-1.5:LRA=8",
+    "-t",
+    "35",
+    "-movflags",
+    "+faststart",
+    "-color_primaries",
+    "bt709",
+    "-color_trc",
+    "bt709",
+    "-colorspace",
+    "bt709",
+    "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\digitec-commercial\\renders\\digitec-vertical.mp4"
+  ],
+  "scenes": [
+    {
+      "start": 0,
+      "end": 4,
+      "name": "Precision. Performance. Excellence."
+    },
+    {
+      "start": 4,
+      "end": 9,
+      "name": "Diagnostics & programming"
+    },
+    {
+      "start": 9,
+      "end": 14,
+      "name": "Mechanical & electrical"
+    },
+    {
+      "start": 14,
+      "end": 20,
+      "name": "Performance tuning"
+    },
+    {
+      "start": 20,
+      "end": 27,
+      "name": "Bodywork & paint protection"
+    },
+    {
+      "start": 27,
+      "end": 31,
+      "name": "Engineered for excellence"
+    },
+    {
+      "start": 31,
+      "end": 35,
+      "name": "Book your service"
+    }
+  ]
+}

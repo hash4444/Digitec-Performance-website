@@ -1,0 +1,66 @@
+DIGI-TEC DIAGNOSTICS & AC: READ-ONLY CONTENT / CONVERSION / GEO AUDIT
+Audit date: 2026-10-19. Scope: source inspection; no app edits, builds, GBP changes or production writes performed by this audit.
+
+Evidence classification
+-----------------------
+Existing source copy is evidence of what the website already asserts; it is not independent proof of equipment ownership, technician training, current licence access, or coverage of an individual vehicle. No workshop inventory, licence record, signed service-capability confirmation, job card or instrument photograph was supplied in this task. Existing first-party assertions should be preserved cautiously, not expanded into universal promises. Keyword research is not capability evidence.
+
+Architecture and selected improvement boundaries
+------------------------------------------------
+Generic service owners use src/pages/ServicePage.tsx with src/data/services.ts. Arabic passes through localizeServiceToArabic and refineGenericArabicService. Brand owners use BrandServicePage.tsx, BrandServiceCombo composers, brand-specific overrides, then the completed repair-service refinement. A diagnostics/AC-only refinement should run after those existing layers and match an explicit owner allowlist. It should return all other objects unchanged. That preserves PPF, tuning and completed repair content outside the narrowly selected diagnostic owners.
+
+The strongest safe improvements are existing-owner content and enquiry improvements, rather than new pages. Generic diagnostics already explains scan limitations, physical tests, supported coding and staged assessment (services.ts:710-747). Generic AC already distinguishes charge, airflow, leaks and electrical causes (services.ts:850-893) but lacks FAQ content, specific enquiry guidance and related diagnostic links. Preserve these cautious principles.
+
+High-priority content findings
+------------------------------
+1. Generic AC has no FAQs, no quoteGuidance, no ctaLabel, no relatedServiceLinks. Its hero link can therefore render an icon with an undefined text label in English (ServicePage.tsx:173,222). Add a clear local AC assessment label and bilingual service-specific next step. Existing FinalCTA still supplies a generic fallback, so the page is not contactless.
+2. Generic diagnostics title prioritizes scanning and ECU functions over customer warning-light investigation. The body is already fairly good. Add symptom recording, no-crank versus crank-no-start distinction without claiming a repair, staged diagnostic/repair approval and context-specific links.
+3. Generic Arabic copy is less detailed than English. refineGenericArabicService removes extraSections (ar-generic-services.ts:34), and ServicePage hides related links and quote guidance for Arabic (238,312). For selected owners, a later bilingual refinement plus a local enquiry/answer component can provide parity without modifying global AR behaviour.
+4. Arabic diagnostics card/title still says programming and diagnostics and describes full digital inspection (ar-home.ts:114). Avoid propagating that broad wording into the selected service owner; use vehicle fault assessment and supported functions.
+5. Brand AC composer puts a profile refrigerant reference into the title (brandServices.ts:712). That reference does not verify equipment compatibility across a brand. For targeted AC pages, use symptom and repair-assessment metadata rather than refrigerant-specific promotion.
+6. Brand AC symptoms currently diagnose a vinegar/damp smell as 'classic evaporator microbial growth' and footwell water as a blocked drain (brandServices.ts:718,721). These are possible explanations, not confirmed diagnoses. Replace selected-owner symptoms with neutral reports such as unusual odour, dampness or water in the cabin.
+7. Generic composer diagnostics metadata inserts only the first token of diagnosticTool (brandServices.ts:779), which can produce awkward branding or tool-led titles. Targeted refinement should name the supported brand and diagnostic assessment rather than infer equipment from split text.
+8. Existing repair-service Mercedes diagnostics is already a completed owner with XENTRY metadata, cautious scan/physical-test explanation and enquiry panel. Extend only if new customer information is material; do not replace its tool claim with new equipment promises or duplicate its assessment panel.
+9. Existing Rolls-Royce and Lamborghini override content already limits module/programming/high-voltage scope. Keep these restrictions. Generic diagnostic content must not broaden Spectre, hybrid, ECU repair or security access capabilities.
+
+Safe technical explanation model
+---------------------------------
+Diagnostic assessment: identify the make/model/year and fitted system; record the exact warning, operating conditions and history; use compatible scan information where available; compare codes and live data with physical/electrical/mechanical evidence as appropriate; explain what is established, what needs further tests and the proposed repair. A code does not establish a failed part. A no-start complaint may describe no crank or cranking without starting; these require different investigations.
+
+AC assessment: distinguish warm air from weak airflow, uneven cabin zones, odour/noise and loss of cooling after previous work. Similar symptoms can involve refrigerant/leak concerns, compressor or control behaviour, condenser condition/airflow, cabin blower/filter, or an evaporator/hose/pipe concern. Describe these as possible systems to investigate, not a diagnosis or a promise to replace each component. Select tests from the fitted system and evidence. Refrigerant, equipment compatibility, parts, access and accepted repair scope must be confirmed. A refill alone does not repair a leak and replacement parts should follow findings.
+
+Primary technical sources checked 2026-10-19
+--------------------------------------------
+DENSO (supplier/manufacturer), 'Drive to maintain DENSO A/C satisfaction this summer': https://www.denso-am.eu/news/june-2017-newsletter-drive-to-maintain-denso-ac-satisfaction-this-summer
+Supports intake, cooling measurement, cabin-filter/airflow/component condition, refrigerant identification and leak assessment. This validates technical reasoning only, not DIGI-TEC equipment, affiliation or timing. No DENSO turnaround claims adopted.
+
+DENSO, compressor diagnostic resource announcement: https://www.denso-am.eu/news/denso-adds-two-further-air-conditioning-videos-to-its-technical-resources
+Supports diagnosis and checking compressor condition before choosing a repair procedure. No replacement capability inferred for DIGI-TEC.
+
+Bosch, ESI[tronic] product documentation: https://www.boschaftermarket.com/me/en/equipment/ecu-diagnosis/esitronic-software/esitronic/
+Supports the distinction between stored-code/actual-value information and guided troubleshooting/component test instructions. It does not prove DIGI-TEC uses Bosch tools or any listed OEM equipment.
+
+US EPA, options for recharging: https://www.epa.gov/mvac/options-recharging-your-air-conditioner
+Supports only the physical distinction that charging does not permanently repair leaks. US certification/legal rules are not UAE requirements and are not applied to this Dubai workshop.
+
+Conversion and analytics findings
+----------------------------------
+Existing telephone and WhatsApp consistently use +971 4 340 2223 / 97143402223 (ServicePage, BrandServicePage, Footer, repair panel and the homepage-only MascotWidget). Generic and non-repair brand messages are often sparse; add only relevant prompts, never demand personal details. Diagnostics: make/model/year, mileage, exact warning, symptom, when it occurs, recent repairs, existing scan report if available. AC: make/model/year, warm versus weak airflow, timing/conditions, zones, previous AC/refrigerant work. Do not require VIN in analytics or use page query strings to carry symptoms.
+
+MascotWidget.tsx defines a fixed expandable EN/AR call/message widget, but source mount inspection confirms it is imported and rendered only by the homepage (Index.tsx:19,129). App.tsx, ServicePage.tsx and BrandServicePage.tsx do not mount it. The selected diagnostics/AC pages currently have no floating or fixed mobile contact widget. Generic ServicePage has a CSS-sticky sidebar card (486), which is separate from a fixed mobile contact control. This sprint introduces no new sticky mobile controls. The selected pages provide hero, enquiry-panel and telephone actions; the QA agent's 48 mobile checks found no overlap or overflow, so those results do not justify introducing another widget. An earlier audit description calling MascotWidget global was incorrect and is superseded by this mount check.
+
+Service pages generally use direct external WhatsApp drafts instead of a submission backend. BrandBookingForm is on hubs, validates issue 5-600 chars, optional name <=80 and optional valid phone <=20, and opens WhatsApp. No confirmed enquiry exists until sent and received; no booking is confirmed by opening a draft. RepairEnquiryPanel already explains this clearly in EN/AR. Reuse the principle for selected generic and brand diagnostics/AC owners.
+
+Analytics.tsx:14-26 and84-96 uses telephone_link_clicked and whatsapp_chat_opened; whatsapp-tracking.ts strips query/hash and records whatsapp_click. BrandBookingForm records whatsapp_draft_opened with brand/path/form placement only. contact-attribution.ts allowlists source/medium, strips page queries and reduces referrer to origin. Preserve this convention and all protections. Never add enquiry text, name, phone, VIN, warning text or a full WhatsApp URL with ?text to analytics. Clicks/drafts should stay micro-conversions, reported separately from workshop-verified enquiries, appointments and approved work. Existing dataLayer+gtag events describe different event streams and must not be added together as customers.
+
+FinalCTA Arabic copy takes precedence over supplied page title/description/label (FinalCTA.tsx:29-40). A diagnostics/AC-specific bilingual enquiry section avoids a broad change to this global component. Generic AR quote/internal-link omissions should be fixed locally for the selected owners.
+
+GEO and local consistency
+--------------------------
+Retain existing stable #organization, #business, #website, #service-catalog identifiers. index.html declares the business and Service graph functions reference that exact businessRef (schema.ts:13-17,247). No duplicate LocalBusiness should be created for service pages, and no invented AI schema, ratings, certifications or manufacturer partnership should be added.
+
+Current first-party NAP: Al Quoz Industrial Area 3, Warehouses 11-15, Dubai, UAE; +971 4 340 2223; info@digitecme.com. Sources: index.html:84-104, Footer.tsx:83-84. Preserve spelling and number structure, then verify against the live GBP listing before editing Maps. The generic Maps link searches an area, not a verified Place ID (Footer.tsx:49). Ask the business for the exact listing/Place ID and verify map pin, entrance, name, phone and hours; do not create a new listing or move a pin from this evidence alone.
+
+Service schema can use accurate visible diagnostic/AC descriptions while retaining existing service ID, businessRef, Dubai area and bilingual language. FAQ JSON-LD must match visible crawlable answers, without assuming a Google FAQ rich result. Internal links should connect generic symptom-intent owners to supported existing brand diagnostics/AC and relevant electrical/mechanical repair paths. Do not infer a query-page relationship from this link architecture; GSC query-by-page evidence remains a separate requirement.
+
+GBP drafts are in GBP-SERVICE-DRAFTS.txt and are conditional on listing-category and actual-service verification. No live GBP modification is authorized or performed.

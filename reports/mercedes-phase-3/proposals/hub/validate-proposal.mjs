@@ -1,0 +1,24 @@
+import { readFile, writeFile } from 'node:fs/promises';
+import { createHash } from 'node:crypto';
+import { createRequire } from 'node:module';
+import { spawnSync } from 'node:child_process';
+import { fileURLToPath } from 'node:url';
+const out=new URL('./',import.meta.url);
+const root=fileURLToPath(new URL('../../../../',import.meta.url));
+const require=createRequire(new URL('../../../../package.json',import.meta.url));
+const ts=require('typescript');
+const evidence=JSON.parse(await readFile(new URL('source-evidence.json',out),'utf8'));
+const before=await readFile(new URL('before/BrandPage.tsx',out),'utf8');
+const proposed=await readFile(new URL('proposed/BrandPage.tsx',out),'utf8');
+const ast=ts.createSourceFile('BrandPage.tsx',proposed,ts.ScriptTarget.Latest,true,ts.ScriptKind.TSX);
+const diagnostics=ast.parseDiagnostics.map(d=>({start:d.start,message:ts.flattenDiagnosticMessageText(d.messageText,'\n')}));
+const patch=spawnSync('git',['apply','--check','--',fileURLToPath(new URL('mercedes-hub-minimal.patch',out))],{cwd:root,encoding:'utf8',windowsHide:true});
+const drift=[];
+for(const r of evidence.sources){const current=await readFile(new URL('../../../../'+r.path,import.meta.url));if(createHash('sha256').update(current).digest('hex')!==r.sha256)drift.push(r.path);}
+const plain=s=>s.replace(/<[^>]*>/g,'');
+const oldCaption=before.split('\n')[1003].trim(),newCaption=proposed.split('\n')[1003].trim();
+const result={validatedAtUtc:new Date().toISOString(),proposalOnly:true,productionChanges:false,patchApplicability:{exitCode:patch.status,output:(patch.stdout||'')+(patch.stderr||'')},typescriptTsxParse:{passed:diagnostics.length===0,diagnostics},sourceFilesChecked:evidence.sources.length,sourceDrift:drift,captionPlainTextUnchanged:plain(oldCaption)===plain(newCaption),onlyChangedOriginalLines:before.split('\n').flatMap((line,i)=>line!==proposed.split('\n')[i]?[i+1]:[]),limitations:['Syntax and applicability only; proposed TSX was not applied, built or rendered.','Source-consistent published phone is not independently confirmed physical visit information.','No call, WhatsApp message, GA4/GTM setting or production modification performed.']};
+result.passed=patch.status===0&&!diagnostics.length&&!drift.length&&result.captionPlainTextUnchanged&&JSON.stringify(result.onlyChangedOriginalLines)==='[1004,1324]';
+await writeFile(new URL('validation.json',out),JSON.stringify(result,null,2));
+console.log(JSON.stringify(result,null,2));
+process.exitCode=result.passed?0:1;

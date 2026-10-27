@@ -1,0 +1,33 @@
+{
+  "verifiedDateDubai": "2026-10-26",
+  "method": "Web search and direct opening/finding of official Google Search Central and Search Console Help documents; no community advice used for conclusions",
+  "sources": [
+    {
+      "title": "Page indexing report",
+      "url": "https://support.google.com/webmasters/answer/7440203?hl=en",
+      "relevantSection": "Crawled - currently not indexed",
+      "supportedInterpretation": "A crawled URL can remain unindexed, with future inclusion uncertain. The status alone does not identify a specific defect or require repeated resubmission.",
+      "application": "Retain the actual body exclusion status; do not invent a quality, canonical or crawl-block diagnosis."
+    },
+    {
+      "title": "URL Inspection tool",
+      "url": "https://support.google.com/webmasters/answer/9012289?hl=en",
+      "relevantSections": ["About indexed URL status", "User-declared/Google-selected canonical", "Live test limits", "View the rendered page"],
+      "supportedInterpretation": "Indexed inspection is stored evidence. A successful live fetch does not guarantee index inclusion or predict canonical selection. Current rendered screenshots require the live-test workflow.",
+      "application": "Keep absent body canonical fields as N/A and separate crawl, observation and public-fetch times; no live test was invoked."
+    },
+    {
+      "title": "How to specify a canonical URL with rel=canonical and other methods",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls",
+      "supportedInterpretation": "Redirects and canonical annotations are stronger canonicalization signals than sitemap inclusion; consistent internal canonical-owner links support the preference without forcing selection.",
+      "application": "Preserve the relevant 308 destination, declared canonical, existing owner links and sitemap while awaiting evidence of a newer Google crawl."
+    },
+    {
+      "title": "Creating helpful, reliable, people-first content",
+      "url": "https://developers.google.com/search/docs/fundamentals/creating-helpful-content",
+      "supportedInterpretation": "Useful original experience and trustworthy evidence matter; a preferred word-count target is not prescribed.",
+      "application": "Request actual repair documentation rather than adding generic words, invented credentials or relabeled conversion photos."
+    }
+  ],
+  "limits": ["Guidance explains interpretation, not Google's undisclosed decision for this URL.", "Public indexability and on-site improvements do not establish selected canonical, ranking gains or future index inclusion."]
+}

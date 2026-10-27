@@ -1,0 +1,35 @@
+{
+  "prepared_date": "2026-10-20",
+  "timezone_for_human_checkpoints": "Asia/Dubai",
+  "automation_created": false,
+  "actual_publication_timestamp": null,
+  "analysis_anchor": "Actual authorized production publication plus first full GSC reporting day and data completeness, not Git push or local implementation.",
+  "planning_checkpoints_only": [
+    {"days": 7, "date_if_campaign_calendar_starts_2026_10_20": "2026-10-27", "purpose": "Technical/indexed-content checks and early exact-query trend review; no low-volume ranking or causation claim."},
+    {"days": 28, "date_if_campaign_calendar_starts_2026_10_20": "2026-11-17", "purpose": "Matched finalized 28-day exact-query/owner/UAE/device comparison and qualified-enquiry review."},
+    {"days": 90, "date_if_campaign_calendar_starts_2026_10_20": "2027-01-18", "purpose": "True finalized 90-day trend, authority work and confirmed commercial outcomes; top-three outcome only if scoped GSC evidence supports it."}
+  ],
+  "query": "mercedes service dubai",
+  "query_operator": "equals",
+  "target_url": "https://digitecme.com/brands/mercedes-benz-service-dubai",
+  "required_views": ["Exact query, all pages, global", "Exact query, all pages, UAE", "Exact query, exact target hub, UAE", "Exact query, exact target hub, UAE, mobile", "Exact query, exact target hub, UAE, desktop", "All exact-query Pages rows, retained separately from property aggregates"],
+  "metrics": ["Clicks", "Impressions", "CTR with raw counts", "Average position with period/device/country/page scope", "Staff-qualified servicing enquiries", "Appointments actually confirmed", "Deduplicated quoted/accepted work where existing process supports it"],
+  "micro_conversions_not_confirmed_enquiries": ["WhatsApp click", "WhatsApp draft", "Telephone launch", "Form view", "Booking button click"],
+  "comparison_rules": ["Equal-length non-overlapping complete pre/post periods", "Exclude partial publication day", "Preserve report date basis and search type", "Disclose weekday/seasonality and concurrent-release differences", "No sum of overlapping exports or duplicate workbooks", "No imputed zero for missing rows", "No significance claim from two clicks or four provisional impressions", "Reset windows from actual publication rather than promised checkpoint dates"],
+  "report_date_basis": "Retain GSC daily dates. Search Analytics API dates use Pacific Time. Dubai timestamps describe publication/planning, not a relabelled GSC daily range.",
+  "remaining_evidence": ["Reproducible joint-dimension export/API archive of current live evidence", "Non-PII deduplicated qualified-enquiry/confirmed-booking counts", "Authorized production timestamp and later indexed crawl", "Original job photos/procedure/technician evidence and review permission", "Verified external-link/citation inventory if numerical authority comparison is required"],
+  "api_request_prepared_not_executed": {
+    "siteUrl": "sc-domain:digitecme.com",
+    "startDate": "2026-09-20",
+    "endDate": "2026-10-17",
+    "type": "web",
+    "dimensions": ["date", "page", "country", "device"],
+    "dimensionFilterGroups": [{"groupType": "and", "filters": [{"dimension": "query", "operator": "equals", "expression": "mercedes service dubai"}, {"dimension": "country", "operator": "equals", "expression": "ARE"}]}],
+    "aggregationType": "auto",
+    "dataState": "final",
+    "rowLimit": 25000,
+    "startRow": 0
+  },
+  "api_note": "For hub-only view add page equals exact target URL. Retain all-page control; paginate and record response aggregation/completeness. No API credentials, scopes or call created.",
+  "official_references": ["https://developers.google.com/webmaster-tools/v1/searchanalytics/query", "https://support.google.com/webmasters/answer/7042828?hl=en"]
+}

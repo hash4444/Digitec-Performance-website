@@ -1,0 +1,46 @@
+    1: import { createRoot, hydrateRoot } from 'react-dom/client'
+    2: import App from './App.tsx'
+    3: import './index.css'
+    4: 
+    5: // After a new deploy, old hashed chunks disappear. Reload once so the browser
+    6: // fetches the fresh build instead of showing a blank screen.
+    7: const RELOAD_KEY = 'chunk-reload-at';
+    8: const reloadForStaleChunk = () => {
+    9:   const last = Number(sessionStorage.getItem(RELOAD_KEY) || 0);
+   10:   if (Date.now() - last < 10_000) return;
+   11:   sessionStorage.setItem(RELOAD_KEY, String(Date.now()));
+   12:   window.location.reload();
+   13: };
+   14: window.addEventListener('vite:preloadError', (event) => {
+   15:   event.preventDefault();
+   16:   reloadForStaleChunk();
+   17: });
+   18: window.addEventListener('unhandledrejection', (event) => {
+   19:   const message = String((event.reason as Error)?.message ?? event.reason ?? '');
+   20:   if (/Failed to fetch dynamically imported module|Importing a module script failed|error loading dynamically imported module/i.test(message)) {
+   21:     event.preventDefault();
+   22:     reloadForStaleChunk();
+   23:   }
+   24: });
+   25: 
+   26: const rootElement = document.getElementById('root');
+   27: 
+   28: if (!rootElement) {
+   29:   throw new Error('Missing #root element');
+   30: }
+   31: 
+   32: // Lovable can return homepage HTML for a legacy Mercedes URL before the edge
+   33: // rules are activated. That HTML is not the requested React tree. Render the
+   34: // browser redirect normally instead of trying to hydrate the wrong page.
+   35: const normalizedPath = (value: string) => value.replace(/\/{2,}/g, '/').toLowerCase().replace(/\/+$/, '') || '/';
+   36: const requestedPath = normalizedPath(window.location.pathname);
+   37: const canonicalHref = document.querySelector<HTMLLinkElement>('link[rel="canonical"]')?.href;
+   38: const renderedPath = canonicalHref ? normalizedPath(new URL(canonicalHref).pathname) : undefined;
+   39: const isMercedesFallback = /(?:^|\/)(?:best-)?mercedes(?:-|\/|$)/.test(requestedPath)
+   40:   && renderedPath !== undefined && renderedPath !== requestedPath;
+   41: 
+   42: if (rootElement.hasChildNodes() && !isMercedesFallback) {
+   43:   hydrateRoot(rootElement, <App />);
+   44: } else {
+   45:   createRoot(rootElement).render(<App />);
+   46: }

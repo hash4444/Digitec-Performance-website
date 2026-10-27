@@ -1,0 +1,130 @@
+DIGI-TEC — MERCEDES OIL CHANGE ROUTING CORRECTION
+Prepared 21 October 2026, Asia/Dubai. LOCAL PROPOSAL ONLY.
+
+DECISION
+
+GO for the single alias-only Cloudflare rule described below, subject to separate explicit authorization and the activation checks. NO-GO for the previous package's service trailing-slash redirect, a broad Worker rollout, canonical/content changes or a Lovable content republish as part of this correction.
+
+No rule, DNS setting, Worker, content, canonical, publication, Git commit or remote branch was changed. The success criterion is prepared and tested locally; the live legacy URL still returns homepage200 until authorized activation and verification. No automatic ranking restoration is claimed.
+
+1. ACTUAL PRODUCTION CONFIGURATION — AUTHENTICATED, NOT INFERRED FROM REPO FILES
+
+Cloudflare controlling account: ae62fc81b63f3450e5ab4b63b7b7ece4.
+Zone: digitecme.com, Active, Free plan.
+Both apex and www: proxied CNAME -> dubai-performance-art.lovable.app.
+Zone Worker routes: none. Controlling account Workers & Pages: no projects.
+Bulk Redirect Lists:0 of5. Page Rules:0 of3.
+Rules Overview: no URL Rewrite, Origin, Configuration, Cache, header-transform or compression rules.
+Always Use HTTPS:ON, retained.
+
+Two active Single Redirects, in this observed order:
+  1. ID dbe42693423442afbc3bab9b993242a7
+     Name: Legacy Mercedes URLs to Mercedes brand service page.
+     Expression: http.request.uri.path in {"/services/mercedes-repair-dubai" "/services/mercedes-repair-dubai/" "/services/mercedes-service-dubai" "/best-mercedes-workshop-dubai"}
+     Static301 -> https://digitecme.com/brands/mercedes-benz-service-dubai
+     Preserve query string:ON.
+  2. ID 9781b1ef743f4ffbaadbe5cb3250eeca
+     Name: www to primary domain.
+     Expression: (http.host eq "www.digitecme.com")
+     Dynamic301 -> concat("https://digitecme.com", http.request.uri.path)
+     Preserve query string:ON.
+
+The old oil alias is absent from both. The checked-in Wrangler configuration is desired configuration, not an active Worker deployment. The unrelated digitecfront Worker in the other accessible account has no custom domain/routes and is not this site's active hosting mechanism.
+
+Content host: existing Lovable project b8255283-fdd9-4c2d-8b46-ccb596f695e1, Digiec Performance Center L.L.C. Authenticated UI says Published / Your website is up to date, Publish changes disabled. Its primary domain digitecme.com is Active with www included. Git integration: hash4444/Digitec-Performance-website, main, Connected / In sync with GitHub. Connector editor SHA b793ad0acf3cd534217d862a44f2e1d915789ec2. No separate immutable published-deployment UUID is exposed; editor SHA is not relabelled as one. The Sites mirror in .openai/hosting.json is not the custom-domain content host.
+
+2. WHY THE ALIAS RETURNS HOMEPAGE HTML WITH200
+
+Fresh32-case public GET/HEAD baseline at21October10:23:39 UAE confirms both legacy forms200, with homepage title/H1/canonical and no Location header. Both correct service forms return200 with relevant oil-service initial SSR and slashless declared canonical. Existing www/HTTP redirects preserve the legacy path, so they currently terminate at the same homepage fallback.
+
+The repo already includes the alias in React navigation and generated HTTP mapping files. Prerender generates public content routes, not an HTML page for this alias. Lovable serves /_redirects as200 application/octet-stream and /_worker.js as200 JavaScript. These public assets contain the intended mapping but are not installed as Cloudflare routing configuration. With no active oil rule/Worker handler, the request reaches the content host's fallback. A client-side navigation can run later; it cannot retroactively turn the initial200 into a permanent HTTP response.
+
+This combines current authenticated configuration, published assets and public responses. It is a verified routing omission/fallback explanation, not an asserted cause of the45.5 GSC statistic.
+
+3. EXACT PROPOSED CHANGE
+
+Add ONE Cloudflare Single Redirect to this existing zone. Do not replace the ruleset.
+Rule file: proposal/single-redirect-rule.json.
+Description: Mercedes oil change legacy URLs to existing service.
+
+Expression:
+(http.host in {"digitecme.com" "www.digitecme.com"}) and (http.request.method in {"GET" "HEAD"}) and (http.request.uri.path in {"/brands/mercedes-benz-service-dubai/oil-change" "/brands/mercedes-benz-service-dubai/oil-change/"})
+
+Action: static redirect.
+Target: https://digitecme.com/services/mercedes-oil-change-dubai
+Status:308 Permanent Redirect.
+Preserve query string:true.
+Position:FIRST, before dbe42693423442afbc3bab9b993242a7.
+Both existing rules remain unchanged and retain their relative order.
+
+Affected sources: the two exact legacy paths, on apex/www, GET/HEAD, either scheme. No wildcard, prefix, case-folding or global path-normalization behavior is added. Mutations are excluded from the NEW rule; existing www/HTTPS handling still applies to them as before.
+
+Example expected response:
+  https://www.digitecme.com/brands/mercedes-benz-service-dubai/oil-change/?tag=a&tag=b&gclid=sample
+  308 Location: https://digitecme.com/services/mercedes-oil-change-dubai?tag=a&tag=b&gclid=sample
+  destination200 with existing service content.
+
+Placing it first avoids the existing www rule causing a www-alias -> apex-alias -> service chain. The rule's target matches neither legacy source, so it creates no loop. Offline tests establish this within the observed Single Redirect model. Actual Cloudflare cross-phase behavior, including Always Use HTTPS, still requires post-activation verification; do not promise a one-hop HTTP result before that check.
+
+4. TRAILING SLASH / CANONICAL DECISION
+
+DO NOT redirect either /services/mercedes-oil-change-dubai or its trailing-slash counterpart in this rollout. Both remain200, content/canonical tags untouched. The destination retains the existing slashless HTML canonical, sitemap and internal-link preference; it is the same commercial content owner.
+
+Preserved21October GSC evidence: slash service is indexed and Google-selected='Inspected URL', despite declaring slashless canonical; slashless is Crawled-currently not indexed, but Google's live test succeeds. Evidence remains at ../mercedes-oil-investigation-2026-10-21/authenticated/inspection-target-slash.txt, inspection-target-slashless.txt and inspection-target-slashless-live-test.txt.
+
+This alias-only fix deliberately does not force the currently indexed page to move. Full Google-selected canonical convergence remains unresolved and must be assessed after recrawling/matched GSC evidence. This is not a claim that canonical consolidation has already succeeded. The earlier investigation's three-path Worker proposal is historical and is superseded for this rollout by the new one-rule package. Do not deploy it unchanged.
+
+5. DEPLOYMENT MECHANISM AND ROLLBACK
+
+Mechanism: existing Cloudflare zone -> Rules -> Redirect Rules -> create one custom-expression Single Redirect. No Worker deployment, DNS change, Git push, service-content edit or Lovable publication is required.
+
+Before a separately authorized activation:
+  - Refresh the authenticated existing-rule/DNS/HTTPS snapshot and confirm no drift from this baseline.
+  - Confirm destination GET/HEAD200, correct SSR/title/H1/indexability/slashless declared canonical, and that the indexed slash URL still200.
+  - Retain both existing rule IDs/bodies/order. Set the new rule before the observed first rule; do not overwrite the entire phase/ruleset.
+  - Let the actual Cloudflare surface validate the proposed expression/action. No API zone/ruleset IDs were guessed; null fields in the baseline identify unavailable API metadata.
+  - Record the newly assigned rule ID, exact expression/action, activation time and rule order.
+
+Rollback capability:the dashboard exposes per-rule enabled controls. Disable only the newly assigned oil rule and verify the two existing rules retain their original bodies and relative order. This restores the previous edge decision path; it does not require content rollback or detaching any Worker. This capability/procedure was inspected but not exercised on production. Permanent308 responses can be cached by clients, so disabling the edge rule cannot guarantee immediate reversal of previously cached client behavior. Test rollback responses using a fresh uncached HTTP client.
+
+6. TEST RESULTS
+
+PASS:80 exact redirect cases covering GET/HEAD, both schemes, both hosts, two aliases, duplicate parameters, tracking fields, empty/encoded/Unicode values.
+PASS:1,288 unchanged-baseline cases, including existing Mercedes aliases, both service forms, general oil/blog/hub, Arabic paths, diagnostics, PPF, tuning, assets, robots/sitemap and multiple methods.
+PASS:36 excluded alias-method/host cases.
+Total:1,658 offline assertions; existing rule definitions preserved. A negative-order control confirms appending after www would produce two modeled hops, while inserting first gives one. Both service forms pass to origin unchanged in the model.
+
+PASS:12 fresh local QA steps:proposal tests, hosting rules, production router, response routing, SEO, oil service, master SEO, query release, protection release, PPF, tuning and paint-care. Existing matching-source full production build reused after source-equality verification; no content rebuild was needed. Its1,256 routes /1,005 canonical sitemap URLs and44,666 internal links pass relevant checks.
+
+All601 protected source files unchanged. Generated service HTML SHA256 before/after:
+42ca268d2bfd2c92d83b12543da10ecfceaecab01619b2cb657dc5e4a3ede949.
+Pre-existing user changes remain untouched.
+
+Fresh live32-case baseline succeeds with no transport errors, including unrelated pages. It documents current behavior only, not the undeployed rule's success. Cloudflare Rule simulator returned Authentication error; there is no successful server-side candidate compilation/trace to claim. Dashboard configuration reads succeeded. No permissions or credentials were expanded to work around the trace limitation.
+
+7. REQUIRED ACCEPTANCE AFTER AUTHORIZED ACTIVATION
+
+Check GET and HEAD on both legacy forms, both hosts and both schemes, with duplicate/encoded tracking parameters. Require308 directly to the fixed HTTPS apex service with the original query preserved, followed by200. Check for extra HTTP/hostname hops, loops, query loss or destination fallback; fail acceptance on any such result. Do not weaken HTTPS settings or broaden scope to hide a failing test.
+
+Confirm both service URL forms remain200 with correct unchanged content. Confirm generic oil/article/hub, diagnostics, PPF, tuning, existing Mercedes repair aliases, assets and sitemap/robots match the baseline. Mutation behavior must remain baseline behavior; do not send real enquiries or destructive live requests merely to test exclusions. Reinspect the recorded rule body/ID/order, source hashes and service metadata.
+
+If checks fail, use the separately authorized rollback to disable only the new rule and record the failure. Review GSC slash/slashless canonical and query/page/device trends after recrawl. Do not request ownership changes or claim ranking recovery based on routing activation alone.
+
+8. DELIVERABLES / EVIDENCE
+
+proposal/README.txt:review, activation boundary and rollback details.
+proposal/single-redirect-rule.json:exact candidate, CREATE-ONE-RULE payload shape only.
+proposal/observed-single-redirect-baseline.json:read-only transcription, not a full API backup/replacement payload.
+proposal/routing-test-results.json and routing-test-cases.json:offline results/cases.
+proposal/qa-results.json and qa-logs/:fresh regression results.
+hosting/HOSTING-PROVENANCE.txt:actual/current vs historical hosting evidence.
+hosting/LIVE-BASELINE-SUMMARY.txt and live-baseline.json:current HTTP chains.
+hosting/cloudflare-*.txt/json and lovable-*.txt/json:authenticated control-plane snapshots.
+
+Technical references:
+https://developers.cloudflare.com/rules/url-forwarding/single-redirects/settings/
+https://developers.cloudflare.com/rules/url-forwarding/
+https://developers.cloudflare.com/ruleset-engine/reference/phases-list/
+https://www.rfc-editor.org/rfc/rfc9110.html#name-308-permanent-redirect
+
+RECOMMENDATION:approve/review only the exact alias-only change. Production activation remains unauthorized and unperformed. Full canonical convergence and actual live redirect success remain acceptance checks, not completed claims.

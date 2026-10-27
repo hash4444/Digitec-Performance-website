@@ -1,0 +1,70 @@
+{
+  "checkedAt": "2026-10-19T06:20:07.690Z",
+  "passed": true,
+  "results": [
+    {
+      "name": "lint",
+      "command": "node node_modules/eslint/bin/eslint.js .",
+      "exitCode": 0,
+      "passed": true,
+      "seconds": 3.478,
+      "log": "outputs/five-brand-service-2026-10-19/qa/lint.log"
+    },
+    {
+      "name": "type-app",
+      "command": "node node_modules/typescript/bin/tsc --noEmit -p tsconfig.app.json",
+      "exitCode": 0,
+      "passed": true,
+      "seconds": 5.748,
+      "log": "outputs/five-brand-service-2026-10-19/qa/type-app.log"
+    },
+    {
+      "name": "type-node",
+      "command": "node node_modules/typescript/bin/tsc --noEmit -p tsconfig.node.json",
+      "exitCode": 0,
+      "passed": true,
+      "seconds": 0.54,
+      "log": "outputs/five-brand-service-2026-10-19/qa/type-node.log"
+    },
+    {
+      "name": "master-seo",
+      "command": "node scripts/validate-master-seo.mjs",
+      "exitCode": 0,
+      "passed": true,
+      "seconds": 0.8,
+      "log": "outputs/five-brand-service-2026-10-19/qa/master-seo.log"
+    },
+    {
+      "name": "bmw-hub",
+      "command": "node scripts/validate-bmw-hub.mjs",
+      "exitCode": 0,
+      "passed": true,
+      "seconds": 0.85,
+      "log": "outputs/five-brand-service-2026-10-19/qa/bmw-hub.log"
+    },
+    {
+      "name": "paint-care",
+      "command": "node scripts/validate-paint-care-cluster.mjs",
+      "exitCode": 0,
+      "passed": true,
+      "seconds": 1.132,
+      "log": "outputs/five-brand-service-2026-10-19/qa/paint-care.log"
+    },
+    {
+      "name": "tuning",
+      "command": "node scripts/validate-tuning.mjs",
+      "exitCode": 0,
+      "passed": true,
+      "seconds": 0.736,
+      "log": "outputs/five-brand-service-2026-10-19/qa/tuning.log"
+    },
+    {
+      "name": "brand-form-source",
+      "command": "node outputs/five-brand-service-2026-10-19/conversion/test-brand-form.mjs",
+      "exitCode": 0,
+      "passed": true,
+      "seconds": 0.378,
+      "log": "outputs/five-brand-service-2026-10-19/qa/brand-form-source.log"
+    }
+  ]
+}

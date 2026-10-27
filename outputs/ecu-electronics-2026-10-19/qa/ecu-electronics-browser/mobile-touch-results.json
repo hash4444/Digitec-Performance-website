@@ -1,0 +1,51 @@
+{
+  "checkedAt": "2026-10-19T08:45:33.560Z",
+  "passed": true,
+  "cases": [
+    {
+      "route": "/services/car-diagnostics-dubai",
+      "width": 390,
+      "pointer": "coarse",
+      "touchContactsPrevented": 2,
+      "passed": true
+    },
+    {
+      "route": "/ar/services/mercedes-diagnostics-dubai",
+      "width": 390,
+      "pointer": "coarse",
+      "touchContactsPrevented": 2,
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/bmw-service-dubai/electrical-repair",
+      "width": 390,
+      "pointer": "coarse",
+      "touchContactsPrevented": 2,
+      "passed": true
+    },
+    {
+      "route": "/services/head-unit-repair-dubai",
+      "width": 390,
+      "pointer": "coarse",
+      "touchContactsPrevented": 2,
+      "passed": true
+    },
+    {
+      "route": "/services/cadillac-cue-screen-repair-dubai",
+      "width": 390,
+      "pointer": "coarse",
+      "touchContactsPrevented": 2,
+      "passed": true
+    }
+  ],
+  "failures": [],
+  "runtimeErrors": [],
+  "screenshots": [
+    "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\ecu-electronics-2026-10-19\\qa\\ecu-electronics-browser\\services__car-diagnostics-dubai-390.png",
+    "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\ecu-electronics-2026-10-19\\qa\\ecu-electronics-browser\\ar__services__mercedes-diagnostics-dubai-390.png",
+    "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\ecu-electronics-2026-10-19\\qa\\ecu-electronics-browser\\ar__brands__bmw-service-dubai__electrical-repair-390.png",
+    "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\ecu-electronics-2026-10-19\\qa\\ecu-electronics-browser\\services__head-unit-repair-dubai-390.png",
+    "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\ecu-electronics-2026-10-19\\qa\\ecu-electronics-browser\\services__cadillac-cue-screen-repair-dubai-390.png"
+  ],
+  "safety": "Touch-emulated local GET/HEAD only; all contact taps prevented, external requests/writes blocked. No actual message, call or enquiry."
+}

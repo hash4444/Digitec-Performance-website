@@ -1,0 +1,19 @@
+{
+  "checkedAt": "2026-10-20T05:44:48.456Z",
+  "passed": true,
+  "baselineFileCount": 31983,
+  "byteIdenticalUnrelatedFiles": 31979,
+  "expectedModified": [
+    "src/pages/BrandPage.tsx",
+    "src/pages/Services.tsx",
+    "src/components/MercedesMaintenanceScope.tsx",
+    "src/lib/route-manifest.ts"
+  ],
+  "expectedAdded": [
+    "src/components/MercedesServiceBookingForm.tsx",
+    "src/data/mercedesServiceCampaign.ts"
+  ],
+  "unexpected": [],
+  "head": "2971301bb37d38f4785844af067eebd55f9f6dda",
+  "indexEmpty": true
+}

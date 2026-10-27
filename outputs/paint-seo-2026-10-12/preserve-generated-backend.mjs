@@ -1,0 +1,15 @@
+import { spawnSync } from 'node:child_process';
+import { readFile, writeFile, mkdir } from 'node:fs/promises';
+import { createHash } from 'node:crypto';
+const file = 'supabase/functions/mcp/index.ts';
+const output = 'outputs/paint-seo-2026-10-12';
+const original = spawnSync('git', ['show', `HEAD:${file}`], { windowsHide: true });
+if (original.status !== 0) throw new Error('Could not recover verified pre-task Git content');
+await mkdir(`${output}/build-side-effects`, { recursive: true });
+await writeFile(`${output}/build-side-effects/mcp.generated.ts.txt`, await readFile(file));
+await writeFile(file, original.stdout);
+const restored = await readFile(file);
+if (!restored.equals(original.stdout)) throw new Error('Backend byte preservation failed');
+const result = { restored: file, unchangedFromHead: true, sha256: createHash('sha256').update(restored).digest('hex'), reason: 'Vite MCP plugin generated a Windows npm path and changed SDK version while building the frontend. Preserve original backend outside paint-care scope.' };
+await writeFile(`${output}/build-side-effects/preservation.json`, JSON.stringify(result, null, 2));
+console.log(result);

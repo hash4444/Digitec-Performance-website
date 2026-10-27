@@ -1,0 +1,380 @@
+{
+  "preparedAtUtc": "2026-10-26T10:32:00.357Z",
+  "readOnly": true,
+  "productionPublicationPerformed": false,
+  "sourceChangesPerformed": false,
+  "networkMutationPerformed": false,
+  "evidence": {
+    "publicCapture": {
+      "path": "http/2026-10-26T10-20-06-242Z/capture.json",
+      "sha256": "216f33accec48bef4cdc78b9fbafbea3c3c1050c89c62178fbc76a1df27fb53c",
+      "startedAt": "2026-10-26T10:20:06.244Z",
+      "finishedAt": "2026-10-26T10:20:19.483Z",
+      "summary": {
+        "pageAndFileCases": 42,
+        "totalRequests": 56,
+        "transportErrors": 0,
+        "referencedAssetUrls": 5,
+        "componentAssetUrls": 2,
+        "assetGetHeadResponses": 14
+      }
+    },
+    "redirectCapture": {
+      "path": "redirects-http/post-2026-10-26T10-22-00-253Z/capture.json",
+      "sha256": "61f2392620c6f70bb628a06bc3a3c7d45fa0c2f763c1e76c087590ba7ad85814",
+      "startedAt": "2026-10-26T10:22:00.257Z",
+      "finishedAt": "2026-10-26T10:22:52.886Z",
+      "summary": {
+        "cases": 326,
+        "networkRequests": 612,
+        "assertions": 852,
+        "passed": 852,
+        "failed": 0,
+        "sourceCases": 192,
+        "protectedOilCases": 48
+      },
+      "stageMeaning": "The reviewed verifier post stage checks the already active Phase 2A redirect behavior. It is a fresh Phase 4B baseline protection check, not evidence of a Phase 4B content publication."
+    }
+  },
+  "relevantPageChecks": [
+    {
+      "key": "body-ar",
+      "method": "GET",
+      "url": "https://digitecme.com/ar/services/mercedes-body-repair-dubai",
+      "direct200": true,
+      "title": "إصلاح هيكل وطلاء مرسيدس في دبي | ديجي تيك",
+      "h1": [
+        "إصلاح هيكل وطلاء مرسيدس في دبي"
+      ],
+      "canonical": [
+        "https://digitecme.com/ar/services/mercedes-body-repair-dubai"
+      ],
+      "canonicalExact": true,
+      "robots": [
+        "index, follow, max-image-preview:large"
+      ],
+      "noNoindex": true,
+      "cfRay": "a508ba1d3e2ccd39-LHR"
+    },
+    {
+      "key": "body-ar",
+      "method": "HEAD",
+      "url": "https://digitecme.com/ar/services/mercedes-body-repair-dubai",
+      "direct200": true,
+      "cfRay": "a508ba1e0808a61c-HKG"
+    },
+    {
+      "key": "body-en",
+      "method": "GET",
+      "url": "https://digitecme.com/services/mercedes-body-repair-dubai",
+      "direct200": true,
+      "title": "Mercedes Body & Accident Repair Dubai | Digi-Tec",
+      "h1": [
+        "Mercedes Body Repair & Paintwork in Dubai"
+      ],
+      "canonical": [
+        "https://digitecme.com/services/mercedes-body-repair-dubai"
+      ],
+      "canonicalExact": true,
+      "robots": [
+        "index, follow, max-image-preview:large"
+      ],
+      "noNoindex": true,
+      "cfRay": "a508ba114b26cd39-LHR"
+    },
+    {
+      "key": "body-en",
+      "method": "HEAD",
+      "url": "https://digitecme.com/services/mercedes-body-repair-dubai",
+      "direct200": true,
+      "cfRay": "a508ba134d18f796-CDG"
+    },
+    {
+      "key": "diagnostics-ar",
+      "method": "GET",
+      "url": "https://digitecme.com/ar/services/mercedes-diagnostics-dubai",
+      "direct200": true,
+      "title": "فحص مرسيدس XENTRY في دبي | تشخيص الأعطال | ديجي تيك",
+      "h1": [
+        "فحص وتشخيص أعطال مرسيدس باستخدام XENTRY في دبي"
+      ],
+      "canonical": [
+        "https://digitecme.com/ar/services/mercedes-diagnostics-dubai"
+      ],
+      "canonicalExact": true,
+      "robots": [
+        "index, follow, max-image-preview:large"
+      ],
+      "noNoindex": true,
+      "cfRay": "a508ba1feb5cdd51-HKG"
+    },
+    {
+      "key": "diagnostics-ar",
+      "method": "HEAD",
+      "url": "https://digitecme.com/ar/services/mercedes-diagnostics-dubai",
+      "direct200": true,
+      "cfRay": "a508ba20990cd642-CDG"
+    },
+    {
+      "key": "diagnostics-en",
+      "method": "GET",
+      "url": "https://digitecme.com/services/mercedes-diagnostics-dubai",
+      "direct200": true,
+      "title": "Mercedes Diagnostics Dubai | XENTRY Fault Tracing | DIGI-TEC",
+      "h1": [
+        "Mercedes XENTRY Diagnostics & Coding in Dubai"
+      ],
+      "canonical": [
+        "https://digitecme.com/services/mercedes-diagnostics-dubai"
+      ],
+      "canonicalExact": true,
+      "robots": [
+        "index, follow, max-image-preview:large"
+      ],
+      "noNoindex": true,
+      "cfRay": "a508ba15ed7ba61c-HKG"
+    },
+    {
+      "key": "diagnostics-en",
+      "method": "HEAD",
+      "url": "https://digitecme.com/services/mercedes-diagnostics-dubai",
+      "direct200": true,
+      "cfRay": "a508ba15ee6ef140-CDG"
+    },
+    {
+      "key": "hub-ar",
+      "method": "GET",
+      "url": "https://digitecme.com/ar/brands/mercedes-benz-service-dubai",
+      "direct200": true,
+      "title": "صيانة مرسيدس في دبي | الصيانة والإصلاح | ديجي-تك",
+      "h1": [
+        "صيانة مرسيدس بنز في دبي"
+      ],
+      "canonical": [
+        "https://digitecme.com/ar/brands/mercedes-benz-service-dubai"
+      ],
+      "canonicalExact": true,
+      "robots": [
+        "index, follow, max-image-preview:large"
+      ],
+      "noNoindex": true,
+      "cfRay": "a508ba1b5c5bcd39-LHR"
+    },
+    {
+      "key": "hub-ar",
+      "method": "HEAD",
+      "url": "https://digitecme.com/ar/brands/mercedes-benz-service-dubai",
+      "direct200": true,
+      "cfRay": "a508ba1cfa076f3c-CDG"
+    },
+    {
+      "key": "hub-en",
+      "method": "GET",
+      "url": "https://digitecme.com/brands/mercedes-benz-service-dubai",
+      "direct200": true,
+      "title": "Mercedes Service Dubai | Maintenance & Repair | DIGI-TEC",
+      "h1": [
+        "Mercedes-Benz Service in Dubai"
+      ],
+      "canonical": [
+        "https://digitecme.com/brands/mercedes-benz-service-dubai"
+      ],
+      "canonicalExact": true,
+      "robots": [
+        "index, follow, max-image-preview:large"
+      ],
+      "noNoindex": true,
+      "cfRay": "a508ba112821f796-CDG"
+    },
+    {
+      "key": "hub-en",
+      "method": "HEAD",
+      "url": "https://digitecme.com/brands/mercedes-benz-service-dubai",
+      "direct200": true,
+      "cfRay": "a508ba1129f40856-HKG"
+    },
+    {
+      "key": "mechanical-ar",
+      "method": "GET",
+      "url": "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai",
+      "direct200": true,
+      "title": "إصلاح محرك مرسيدس في دبي | ديجي تيك القوز",
+      "h1": [
+        "إصلاح محرك مرسيدس والأعطال الميكانيكية في دبي"
+      ],
+      "canonical": [
+        "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai"
+      ],
+      "canonicalExact": true,
+      "robots": [
+        "index, follow, max-image-preview:large"
+      ],
+      "noNoindex": true,
+      "cfRay": "a508ba20c94ecd39-LHR"
+    },
+    {
+      "key": "mechanical-ar",
+      "method": "HEAD",
+      "url": "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai",
+      "direct200": true,
+      "cfRay": "a508ba23c8bdd364-FRA"
+    },
+    {
+      "key": "mechanical-en",
+      "method": "GET",
+      "url": "https://digitecme.com/services/mercedes-mechanical-repair-dubai",
+      "direct200": true,
+      "title": "Mercedes Engine & Mechanical Repair Dubai | Digi-Tec",
+      "h1": [
+        "Mercedes Engine & Mechanical Repair in Dubai"
+      ],
+      "canonical": [
+        "https://digitecme.com/services/mercedes-mechanical-repair-dubai"
+      ],
+      "canonicalExact": true,
+      "robots": [
+        "index, follow, max-image-preview:large"
+      ],
+      "noNoindex": true,
+      "cfRay": "a508ba1798c2cd39-LHR"
+    },
+    {
+      "key": "mechanical-en",
+      "method": "HEAD",
+      "url": "https://digitecme.com/services/mercedes-mechanical-repair-dubai",
+      "direct200": true,
+      "cfRay": "a508ba1b3d14b8ce-HKG"
+    }
+  ],
+  "relevantChecksPassed": true,
+  "redirectGroups": {
+    "source:ar-oil-change": {
+      "cases": 48,
+      "responses": 96,
+      "methods": {
+        "GET": 24,
+        "HEAD": 24
+      },
+      "firstStatusCounts": {
+        "308": 48
+      }
+    },
+    "source:en-body-repair": {
+      "cases": 48,
+      "responses": 96,
+      "methods": {
+        "GET": 24,
+        "HEAD": 24
+      },
+      "firstStatusCounts": {
+        "308": 48
+      }
+    },
+    "source:ar-battery-replacement": {
+      "cases": 48,
+      "responses": 96,
+      "methods": {
+        "GET": 24,
+        "HEAD": 24
+      },
+      "firstStatusCounts": {
+        "308": 48
+      }
+    },
+    "source:ar-mechanical-repair": {
+      "cases": 48,
+      "responses": 96,
+      "methods": {
+        "GET": 24,
+        "HEAD": 24
+      },
+      "firstStatusCounts": {
+        "308": 48
+      }
+    },
+    "protected-oil": {
+      "cases": 48,
+      "responses": 96,
+      "methods": {
+        "GET": 24,
+        "HEAD": 24
+      },
+      "firstStatusCounts": {
+        "308": 48
+      }
+    },
+    "protected-repair": {
+      "cases": 48,
+      "responses": 92,
+      "methods": {
+        "GET": 24,
+        "HEAD": 24
+      },
+      "firstStatusCounts": {
+        "200": 4,
+        "301": 44
+      }
+    },
+    "destination:ar-oil-change": {
+      "cases": 4,
+      "responses": 4,
+      "methods": {
+        "GET": 2,
+        "HEAD": 2
+      },
+      "firstStatusCounts": {
+        "200": 4
+      }
+    },
+    "destination:en-body-repair": {
+      "cases": 4,
+      "responses": 4,
+      "methods": {
+        "GET": 2,
+        "HEAD": 2
+      },
+      "firstStatusCounts": {
+        "200": 4
+      }
+    },
+    "destination:ar-battery-replacement": {
+      "cases": 4,
+      "responses": 4,
+      "methods": {
+        "GET": 2,
+        "HEAD": 2
+      },
+      "firstStatusCounts": {
+        "200": 4
+      }
+    },
+    "destination:ar-mechanical-repair": {
+      "cases": 4,
+      "responses": 4,
+      "methods": {
+        "GET": 2,
+        "HEAD": 2
+      },
+      "firstStatusCounts": {
+        "200": 4
+      }
+    },
+    "control": {
+      "cases": 22,
+      "responses": 22,
+      "methods": {
+        "GET": 11,
+        "HEAD": 11
+      },
+      "firstStatusCounts": {
+        "200": 22
+      }
+    }
+  },
+  "failedAssertions": [],
+  "limits": [
+    "Public HTTP does not refresh authenticated Cloudflare configuration inventory or establish executing rule IDs.",
+    "GET/HEAD confirms observed server output and indexability signals, not Google-selected canonicals or indexing status.",
+    "Production assets and local dependency provenance are analyzed separately; no production source identity is assumed."
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "checkedAt": "2026-10-19T07:35:06.269Z",
+  "candidate": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\automotive-release-2026-10-19\\candidate.local",
+  "passed": false,
+  "expectedChecks": 11,
+  "productionBuild": {
+    "startedAt": "2026-10-19T07:34:51.208Z",
+    "outputDirectory": "dist",
+    "sourceManifest": "release-qa.local/source-manifest.json",
+    "sourceSha256": "b1f0e40f7e8d6ec2445fa33064d649c8c3a1492133202b09ce51a40927f223c6",
+    "steps": [
+      {
+        "command": "vite build --ssr src/entry-server.tsx --outDir dist-server",
+        "exitCode": 0,
+        "seconds": 2.115,
+        "log": "release-qa.local/build-1.log"
+      },
+      {
+        "command": "node scripts/sync-routing-paths.mjs",
+        "exitCode": 0,
+        "seconds": 0.389,
+        "log": "release-qa.local/build-2.log"
+      },
+      {
+        "command": "vite build",
+        "exitCode": 0,
+        "seconds": 6.324,
+        "log": "release-qa.local/build-3.log"
+      },
+      {
+        "command": "vite build --ssr src/entry-server.tsx --outDir dist-server",
+        "exitCode": 0,
+        "seconds": 2.207,
+        "log": "release-qa.local/build-4.log"
+      },
+      {
+        "command": "node scripts/prerender.mjs",
+        "exitCode": 1,
+        "seconds": 4.013,
+        "log": "release-qa.local/build-5.log"
+      }
+    ],
+    "passed": false
+  },
+  "results": [
+    {
+      "name": "production-build-19-steps",
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "scripts/build-production-local.mjs"
+      ],
+      "cwd": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\automotive-release-2026-10-19\\candidate.local",
+      "exitCode": 1,
+      "passed": false,
+      "seconds": 15.283,
+      "log": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\automotive-release-2026-10-19\\qa\\production-build-19-steps.log"
+    }
+  ]
+}

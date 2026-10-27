@@ -1,0 +1,31 @@
+{
+  "at": "2026-10-26T07:51:37.638Z",
+  "reviewOnly": true,
+  "optionalIndependentChange": true,
+  "sourcePath": "src/pages/ServicePage.tsx",
+  "sourceSha256": "7aea5c62212d6066010e09587054e528d03c6589f291bd5681408f7f45b130ca",
+  "sourceUnchanged": true,
+  "proposalSha256": "37446cbf89e09088e3435034bc45cdfe2d69d6cd1259188bf3db435db46b58b0",
+  "patchSha256": "59430efaade92a5538abd4ffe6358a883a0104e87dd4a9132c4edcd02e69ae8c",
+  "typescriptParseDiagnostics": 0,
+  "gitApplyCheckExitCode": 0,
+  "gitApplyCheckStdout": "",
+  "gitApplyCheckStderr": "",
+  "impact": "Adds one relevant contextual inbound link to the existing Mercedes body owner from the existing English general body page. No indexing or ranking guarantee.",
+  "preserves": [
+    "URL",
+    "title",
+    "description",
+    "H1",
+    "canonical",
+    "Arabic page",
+    "other service pages",
+    "all business capability claims"
+  ],
+  "notRun": [
+    "implementation-stage build",
+    "browser/mobile render",
+    "index submission",
+    "publication"
+  ]
+}

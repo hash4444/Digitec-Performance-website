@@ -1,0 +1,882 @@
+[
+  {
+    "url": "http://digitecme.com/brands/mercedes-benz-service-dubai/oil-change",
+    "method": "GET",
+    "result": {
+      "outcome": "redirect",
+      "rule": "proposed",
+      "status": 308,
+      "destination": "https://digitecme.com/services/mercedes-oil-change-dubai"
+    },
+    "redirectHopsInObservedSingleRules": 1
+  },
+  {
+    "url": "http://digitecme.com/brands/mercedes-benz-service-dubai/oil-change?utm_source=google",
+    "method": "GET",
+    "result": {
+      "outcome": "redirect",
+      "rule": "proposed",
+      "status": 308,
+      "destination": "https://digitecme.com/services/mercedes-oil-change-dubai?utm_source=google"
+    },
+    "redirectHopsInObservedSingleRules": 1
+  },
+  {
+    "url": "http://digitecme.com/brands/mercedes-benz-service-dubai/oil-change?tag=a&tag=b&gclid=oil-routing-qa&gbraid=sample&wbraid=sample",
+    "method": "GET",
+    "result": {
+      "outcome": "redirect",
+      "rule": "proposed",
+      "status": 308,
+      "destination": "https://digitecme.com/services/mercedes-oil-change-dubai?tag=a&tag=b&gclid=oil-routing-qa&gbraid=sample&wbraid=sample"
+    },
+    "redirectHopsInObservedSingleRules": 1
+  },
+  {
+    "url": "http://digitecme.com/brands/mercedes-benz-service-dubai/oil-change?text=a%20b&plus=a+b&encoded=%2F%3F%26%3D&empty=&flag",
+    "method": "GET",
+    "result": {
+      "outcome": "redirect",
+      "rule": "proposed",
+      "status": 308,
+      "destination": "https://digitecme.com/services/mercedes-oil-change-dubai?text=a%20b&plus=a+b&encoded=%2F%3F%26%3D&empty=&flag"
+    },
+    "redirectHopsInObservedSingleRules": 1
+  },
+  {
+    "url": "http://digitecme.com/brands/mercedes-benz-service-dubai/oil-change?utm_source=&utm_source=second&x=%E2%9C%93&esc=%25",
+    "method": "GET",
+    "result": {
+      "outcome": "redirect",
+      "rule": "proposed",
+      "status": 308,
+      "destination": "https://digitecme.com/services/mercedes-oil-change-dubai?utm_source=&utm_source=second&x=%E2%9C%93&esc=%25"
+    },
+    "redirectHopsInObservedSingleRules": 1
+  },
+  {
+    "url": "http://digitecme.com/brands/mercedes-benz-service-dubai/oil-change/",
+    "method": "GET",
+    "result": {
+      "outcome": "redirect",
+      "rule": "proposed",
+      "status": 308,
+      "destination": "https://digitecme.com/services/mercedes-oil-change-dubai"
+    },
+    "redirectHopsInObservedSingleRules": 1
+  },
+  {
+    "url": "http://digitecme.com/brands/mercedes-benz-service-dubai/oil-change/?utm_source=google",
+    "method": "GET",
+    "result": {
+      "outcome": "redirect",
+      "rule": "proposed",
+      "status": 308,
+      "destination": "https://digitecme.com/services/mercedes-oil-change-dubai?utm_source=google"
+    },
+    "redirectHopsInObservedSingleRules": 1
+  },
+  {
+    "url": "http://digitecme.com/brands/mercedes-benz-service-dubai/oil-change/?tag=a&tag=b&gclid=oil-routing-qa&gbraid=sample&wbraid=sample",
+    "method": "GET",
+    "result": {
+      "outcome": "redirect",
+      "rule": "proposed",
+      "status": 308,
+      "destination": "https://digitecme.com/services/mercedes-oil-change-dubai?tag=a&tag=b&gclid=oil-routing-qa&gbraid=sample&wbraid=sample"
+    },
+    "redirectHopsInObservedSingleRules": 1
+  },
+  {
+    "url": "http://digitecme.com/brands/mercedes-benz-service-dubai/oil-change/?text=a%20b&plus=a+b&encoded=%2F%3F%26%3D&empty=&flag",
+    "method": "GET",
+    "result": {
+      "outcome": "redirect",
+      "rule": "proposed",
+      "status": 308,
+      "destination": "https://digitecme.com/services/mercedes-oil-change-dubai?text=a%20b&plus=a+b&encoded=%2F%3F%26%3D&empty=&flag"
+    },
+    "redirectHopsInObservedSingleRules": 1
+  },
+  {
+    "url": "http://digitecme.com/brands/mercedes-benz-service-dubai/oil-change/?utm_source=&utm_source=second&x=%E2%9C%93&esc=%25",
+    "method": "GET",
+    "result": {
+      "outcome": "redirect",
+      "rule": "proposed",
+      "status": 308,
+      "destination": "https://digitecme.com/services/mercedes-oil-change-dubai?utm_source=&utm_source=second&x=%E2%9C%93&esc=%25"
+    },
+    "redirectHopsInObservedSingleRules": 1
+  },
+  {
+    "url": "http://digitecme.com/brands/mercedes-benz-service-dubai/oil-change",
+    "method": "HEAD",
+    "result": {
+      "outcome": "redirect",
+      "rule": "proposed",
+      "status": 308,
+      "destination": "https://digitecme.com/services/mercedes-oil-change-dubai"
+    },
+    "redirectHopsInObservedSingleRules": 1
+  },
+  {
+    "url": "http://digitecme.com/brands/mercedes-benz-service-dubai/oil-change?utm_source=google",
+    "method": "HEAD",
+    "result": {
+      "outcome": "redirect",
+      "rule": "proposed",
+      "status": 308,
+      "destination": "https://digitecme.com/services/mercedes-oil-change-dubai?utm_source=google"
+    },
+    "redirectHopsInObservedSingleRules": 1
+  },
+  {
+    "url": "http://digitecme.com/brands/mercedes-benz-service-dubai/oil-change?tag=a&tag=b&gclid=oil-routing-qa&gbraid=sample&wbraid=sample",
+    "method": "HEAD",
+    "result": {
+      "outcome": "redirect",
+      "rule": "proposed",
+      "status": 308,
+      "destination": "https://digitecme.com/services/mercedes-oil-change-dubai?tag=a&tag=b&gclid=oil-routing-qa&gbraid=sample&wbraid=sample"
+    },
+    "redirectHopsInObservedSingleRules": 1
+  },
+  {
+    "url": "http://digitecme.com/brands/mercedes-benz-service-dubai/oil-change?text=a%20b&plus=a+b&encoded=%2F%3F%26%3D&empty=&flag",
+    "method": "HEAD",
+    "result": {
+      "outcome": "redirect",
+      "rule": "proposed",
+      "status": 308,
+      "destination": "https://digitecme.com/services/mercedes-oil-change-dubai?text=a%20b&plus=a+b&encoded=%2F%3F%26%3D&empty=&flag"
+    },
+    "redirectHopsInObservedSingleRules": 1
+  },
+  {
+    "url": "http://digitecme.com/brands/mercedes-benz-service-dubai/oil-change?utm_source=&utm_source=second&x=%E2%9C%93&esc=%25",
+    "method": "HEAD",
+    "result": {
+      "outcome": "redirect",
+      "rule": "proposed",
+      "status": 308,
+      "destination": "https://digitecme.com/services/mercedes-oil-change-dubai?utm_source=&utm_source=second&x=%E2%9C%93&esc=%25"
+    },
+    "redirectHopsInObservedSingleRules": 1
+  },
+  {
+    "url": "http://digitecme.com/brands/mercedes-benz-service-dubai/oil-change/",
+    "method": "HEAD",
+    "result": {
+      "outcome": "redirect",
+      "rule": "proposed",
+      "status": 308,
+      "destination": "https://digitecme.com/services/mercedes-oil-change-dubai"
+    },
+    "redirectHopsInObservedSingleRules": 1
+  },
+  {
+    "url": "http://digitecme.com/brands/mercedes-benz-service-dubai/oil-change/?utm_source=google",
+    "method": "HEAD",
+    "result": {
+      "outcome": "redirect",
+      "rule": "proposed",
+      "status": 308,
+      "destination": "https://digitecme.com/services/mercedes-oil-change-dubai?utm_source=google"
+    },
+    "redirectHopsInObservedSingleRules": 1
+  },
+  {
+    "url": "http://digitecme.com/brands/mercedes-benz-service-dubai/oil-change/?tag=a&tag=b&gclid=oil-routing-qa&gbraid=sample&wbraid=sample",
+    "method": "HEAD",
+    "result": {
+      "outcome": "redirect",
+      "rule": "proposed",
+      "status": 308,
+      "destination": "https://digitecme.com/services/mercedes-oil-change-dubai?tag=a&tag=b&gclid=oil-routing-qa&gbraid=sample&wbraid=sample"
+    },
+    "redirectHopsInObservedSingleRules": 1
+  },
+  {
+    "url": "http://digitecme.com/brands/mercedes-benz-service-dubai/oil-change/?text=a%20b&plus=a+b&encoded=%2F%3F%26%3D&empty=&flag",
+    "method": "HEAD",
+    "result": {
+      "outcome": "redirect",
+      "rule": "proposed",
+      "status": 308,
+      "destination": "https://digitecme.com/services/mercedes-oil-change-dubai?text=a%20b&plus=a+b&encoded=%2F%3F%26%3D&empty=&flag"
+    },
+    "redirectHopsInObservedSingleRules": 1
+  },
+  {
+    "url": "http://digitecme.com/brands/mercedes-benz-service-dubai/oil-change/?utm_source=&utm_source=second&x=%E2%9C%93&esc=%25",
+    "method": "HEAD",
+    "result": {
+      "outcome": "redirect",
+      "rule": "proposed",
+      "status": 308,
+      "destination": "https://digitecme.com/services/mercedes-oil-change-dubai?utm_source=&utm_source=second&x=%E2%9C%93&esc=%25"
+    },
+    "redirectHopsInObservedSingleRules": 1
+  },
+  {
+    "url": "http://www.digitecme.com/brands/mercedes-benz-service-dubai/oil-change",
+    "method": "GET",
+    "result": {
+      "outcome": "redirect",
+      "rule": "proposed",
+      "status": 308,
+      "destination": "https://digitecme.com/services/mercedes-oil-change-dubai"
+    },
+    "redirectHopsInObservedSingleRules": 1
+  },
+  {
+    "url": "http://www.digitecme.com/brands/mercedes-benz-service-dubai/oil-change?utm_source=google",
+    "method": "GET",
+    "result": {
+      "outcome": "redirect",
+      "rule": "proposed",
+      "status": 308,
+      "destination": "https://digitecme.com/services/mercedes-oil-change-dubai?utm_source=google"
+    },
+    "redirectHopsInObservedSingleRules": 1
+  },
+  {
+    "url": "http://www.digitecme.com/brands/mercedes-benz-service-dubai/oil-change?tag=a&tag=b&gclid=oil-routing-qa&gbraid=sample&wbraid=sample",
+    "method": "GET",
+    "result": {
+      "outcome": "redirect",
+      "rule": "proposed",
+      "status": 308,
+      "destination": "https://digitecme.com/services/mercedes-oil-change-dubai?tag=a&tag=b&gclid=oil-routing-qa&gbraid=sample&wbraid=sample"
+    },
+    "redirectHopsInObservedSingleRules": 1
+  },
+  {
+    "url": "http://www.digitecme.com/brands/mercedes-benz-service-dubai/oil-change?text=a%20b&plus=a+b&encoded=%2F%3F%26%3D&empty=&flag",
+    "method": "GET",
+    "result": {
+      "outcome": "redirect",
+      "rule": "proposed",
+      "status": 308,
+      "destination": "https://digitecme.com/services/mercedes-oil-change-dubai?text=a%20b&plus=a+b&encoded=%2F%3F%26%3D&empty=&flag"
+    },
+    "redirectHopsInObservedSingleRules": 1
+  },
+  {
+    "url": "http://www.digitecme.com/brands/mercedes-benz-service-dubai/oil-change?utm_source=&utm_source=second&x=%E2%9C%93&esc=%25",
+    "method": "GET",
+    "result": {
+      "outcome": "redirect",
+      "rule": "proposed",
+      "status": 308,
+      "destination": "https://digitecme.com/services/mercedes-oil-change-dubai?utm_source=&utm_source=second&x=%E2%9C%93&esc=%25"
+    },
+    "redirectHopsInObservedSingleRules": 1
+  },
+  {
+    "url": "http://www.digitecme.com/brands/mercedes-benz-service-dubai/oil-change/",
+    "method": "GET",
+    "result": {
+      "outcome": "redirect",
+      "rule": "proposed",
+      "status": 308,
+      "destination": "https://digitecme.com/services/mercedes-oil-change-dubai"
+    },
+    "redirectHopsInObservedSingleRules": 1
+  },
+  {
+    "url": "http://www.digitecme.com/brands/mercedes-benz-service-dubai/oil-change/?utm_source=google",
+    "method": "GET",
+    "result": {
+      "outcome": "redirect",
+      "rule": "proposed",
+      "status": 308,
+      "destination": "https://digitecme.com/services/mercedes-oil-change-dubai?utm_source=google"
+    },
+    "redirectHopsInObservedSingleRules": 1
+  },
+  {
+    "url": "http://www.digitecme.com/brands/mercedes-benz-service-dubai/oil-change/?tag=a&tag=b&gclid=oil-routing-qa&gbraid=sample&wbraid=sample",
+    "method": "GET",
+    "result": {
+      "outcome": "redirect",
+      "rule": "proposed",
+      "status": 308,
+      "destination": "https://digitecme.com/services/mercedes-oil-change-dubai?tag=a&tag=b&gclid=oil-routing-qa&gbraid=sample&wbraid=sample"
+    },
+    "redirectHopsInObservedSingleRules": 1
+  },
+  {
+    "url": "http://www.digitecme.com/brands/mercedes-benz-service-dubai/oil-change/?text=a%20b&plus=a+b&encoded=%2F%3F%26%3D&empty=&flag",
+    "method": "GET",
+    "result": {
+      "outcome": "redirect",
+      "rule": "proposed",
+      "status": 308,
+      "destination": "https://digitecme.com/services/mercedes-oil-change-dubai?text=a%20b&plus=a+b&encoded=%2F%3F%26%3D&empty=&flag"
+    },
+    "redirectHopsInObservedSingleRules": 1
+  },
+  {
+    "url": "http://www.digitecme.com/brands/mercedes-benz-service-dubai/oil-change/?utm_source=&utm_source=second&x=%E2%9C%93&esc=%25",
+    "method": "GET",
+    "result": {
+      "outcome": "redirect",
+      "rule": "proposed",
+      "status": 308,
+      "destination": "https://digitecme.com/services/mercedes-oil-change-dubai?utm_source=&utm_source=second&x=%E2%9C%93&esc=%25"
+    },
+    "redirectHopsInObservedSingleRules": 1
+  },
+  {
+    "url": "http://www.digitecme.com/brands/mercedes-benz-service-dubai/oil-change",
+    "method": "HEAD",
+    "result": {
+      "outcome": "redirect",
+      "rule": "proposed",
+      "status": 308,
+      "destination": "https://digitecme.com/services/mercedes-oil-change-dubai"
+    },
+    "redirectHopsInObservedSingleRules": 1
+  },
+  {
+    "url": "http://www.digitecme.com/brands/mercedes-benz-service-dubai/oil-change?utm_source=google",
+    "method": "HEAD",
+    "result": {
+      "outcome": "redirect",
+      "rule": "proposed",
+      "status": 308,
+      "destination": "https://digitecme.com/services/mercedes-oil-change-dubai?utm_source=google"
+    },
+    "redirectHopsInObservedSingleRules": 1
+  },
+  {
+    "url": "http://www.digitecme.com/brands/mercedes-benz-service-dubai/oil-change?tag=a&tag=b&gclid=oil-routing-qa&gbraid=sample&wbraid=sample",
+    "method": "HEAD",
+    "result": {
+      "outcome": "redirect",
+      "rule": "proposed",
+      "status": 308,
+      "destination": "https://digitecme.com/services/mercedes-oil-change-dubai?tag=a&tag=b&gclid=oil-routing-qa&gbraid=sample&wbraid=sample"
+    },
+    "redirectHopsInObservedSingleRules": 1
+  },
+  {
+    "url": "http://www.digitecme.com/brands/mercedes-benz-service-dubai/oil-change?text=a%20b&plus=a+b&encoded=%2F%3F%26%3D&empty=&flag",
+    "method": "HEAD",
+    "result": {
+      "outcome": "redirect",
+      "rule": "proposed",
+      "status": 308,
+      "destination": "https://digitecme.com/services/mercedes-oil-change-dubai?text=a%20b&plus=a+b&encoded=%2F%3F%26%3D&empty=&flag"
+    },
+    "redirectHopsInObservedSingleRules": 1
+  },
+  {
+    "url": "http://www.digitecme.com/brands/mercedes-benz-service-dubai/oil-change?utm_source=&utm_source=second&x=%E2%9C%93&esc=%25",
+    "method": "HEAD",
+    "result": {
+      "outcome": "redirect",
+      "rule": "proposed",
+      "status": 308,
+      "destination": "https://digitecme.com/services/mercedes-oil-change-dubai?utm_source=&utm_source=second&x=%E2%9C%93&esc=%25"
+    },
+    "redirectHopsInObservedSingleRules": 1
+  },
+  {
+    "url": "http://www.digitecme.com/brands/mercedes-benz-service-dubai/oil-change/",
+    "method": "HEAD",
+    "result": {
+      "outcome": "redirect",
+      "rule": "proposed",
+      "status": 308,
+      "destination": "https://digitecme.com/services/mercedes-oil-change-dubai"
+    },
+    "redirectHopsInObservedSingleRules": 1
+  },
+  {
+    "url": "http://www.digitecme.com/brands/mercedes-benz-service-dubai/oil-change/?utm_source=google",
+    "method": "HEAD",
+    "result": {
+      "outcome": "redirect",
+      "rule": "proposed",
+      "status": 308,
+      "destination": "https://digitecme.com/services/mercedes-oil-change-dubai?utm_source=google"
+    },
+    "redirectHopsInObservedSingleRules": 1
+  },
+  {
+    "url": "http://www.digitecme.com/brands/mercedes-benz-service-dubai/oil-change/?tag=a&tag=b&gclid=oil-routing-qa&gbraid=sample&wbraid=sample",
+    "method": "HEAD",
+    "result": {
+      "outcome": "redirect",
+      "rule": "proposed",
+      "status": 308,
+      "destination": "https://digitecme.com/services/mercedes-oil-change-dubai?tag=a&tag=b&gclid=oil-routing-qa&gbraid=sample&wbraid=sample"
+    },
+    "redirectHopsInObservedSingleRules": 1
+  },
+  {
+    "url": "http://www.digitecme.com/brands/mercedes-benz-service-dubai/oil-change/?text=a%20b&plus=a+b&encoded=%2F%3F%26%3D&empty=&flag",
+    "method": "HEAD",
+    "result": {
+      "outcome": "redirect",
+      "rule": "proposed",
+      "status": 308,
+      "destination": "https://digitecme.com/services/mercedes-oil-change-dubai?text=a%20b&plus=a+b&encoded=%2F%3F%26%3D&empty=&flag"
+    },
+    "redirectHopsInObservedSingleRules": 1
+  },
+  {
+    "url": "http://www.digitecme.com/brands/mercedes-benz-service-dubai/oil-change/?utm_source=&utm_source=second&x=%E2%9C%93&esc=%25",
+    "method": "HEAD",
+    "result": {
+      "outcome": "redirect",
+      "rule": "proposed",
+      "status": 308,
+      "destination": "https://digitecme.com/services/mercedes-oil-change-dubai?utm_source=&utm_source=second&x=%E2%9C%93&esc=%25"
+    },
+    "redirectHopsInObservedSingleRules": 1
+  },
+  {
+    "url": "https://digitecme.com/brands/mercedes-benz-service-dubai/oil-change",
+    "method": "GET",
+    "result": {
+      "outcome": "redirect",
+      "rule": "proposed",
+      "status": 308,
+      "destination": "https://digitecme.com/services/mercedes-oil-change-dubai"
+    },
+    "redirectHopsInObservedSingleRules": 1
+  },
+  {
+    "url": "https://digitecme.com/brands/mercedes-benz-service-dubai/oil-change?utm_source=google",
+    "method": "GET",
+    "result": {
+      "outcome": "redirect",
+      "rule": "proposed",
+      "status": 308,
+      "destination": "https://digitecme.com/services/mercedes-oil-change-dubai?utm_source=google"
+    },
+    "redirectHopsInObservedSingleRules": 1
+  },
+  {
+    "url": "https://digitecme.com/brands/mercedes-benz-service-dubai/oil-change?tag=a&tag=b&gclid=oil-routing-qa&gbraid=sample&wbraid=sample",
+    "method": "GET",
+    "result": {
+      "outcome": "redirect",
+      "rule": "proposed",
+      "status": 308,
+      "destination": "https://digitecme.com/services/mercedes-oil-change-dubai?tag=a&tag=b&gclid=oil-routing-qa&gbraid=sample&wbraid=sample"
+    },
+    "redirectHopsInObservedSingleRules": 1
+  },
+  {
+    "url": "https://digitecme.com/brands/mercedes-benz-service-dubai/oil-change?text=a%20b&plus=a+b&encoded=%2F%3F%26%3D&empty=&flag",
+    "method": "GET",
+    "result": {
+      "outcome": "redirect",
+      "rule": "proposed",
+      "status": 308,
+      "destination": "https://digitecme.com/services/mercedes-oil-change-dubai?text=a%20b&plus=a+b&encoded=%2F%3F%26%3D&empty=&flag"
+    },
+    "redirectHopsInObservedSingleRules": 1
+  },
+  {
+    "url": "https://digitecme.com/brands/mercedes-benz-service-dubai/oil-change?utm_source=&utm_source=second&x=%E2%9C%93&esc=%25",
+    "method": "GET",
+    "result": {
+      "outcome": "redirect",
+      "rule": "proposed",
+      "status": 308,
+      "destination": "https://digitecme.com/services/mercedes-oil-change-dubai?utm_source=&utm_source=second&x=%E2%9C%93&esc=%25"
+    },
+    "redirectHopsInObservedSingleRules": 1
+  },
+  {
+    "url": "https://digitecme.com/brands/mercedes-benz-service-dubai/oil-change/",
+    "method": "GET",
+    "result": {
+      "outcome": "redirect",
+      "rule": "proposed",
+      "status": 308,
+      "destination": "https://digitecme.com/services/mercedes-oil-change-dubai"
+    },
+    "redirectHopsInObservedSingleRules": 1
+  },
+  {
+    "url": "https://digitecme.com/brands/mercedes-benz-service-dubai/oil-change/?utm_source=google",
+    "method": "GET",
+    "result": {
+      "outcome": "redirect",
+      "rule": "proposed",
+      "status": 308,
+      "destination": "https://digitecme.com/services/mercedes-oil-change-dubai?utm_source=google"
+    },
+    "redirectHopsInObservedSingleRules": 1
+  },
+  {
+    "url": "https://digitecme.com/brands/mercedes-benz-service-dubai/oil-change/?tag=a&tag=b&gclid=oil-routing-qa&gbraid=sample&wbraid=sample",
+    "method": "GET",
+    "result": {
+      "outcome": "redirect",
+      "rule": "proposed",
+      "status": 308,
+      "destination": "https://digitecme.com/services/mercedes-oil-change-dubai?tag=a&tag=b&gclid=oil-routing-qa&gbraid=sample&wbraid=sample"
+    },
+    "redirectHopsInObservedSingleRules": 1
+  },
+  {
+    "url": "https://digitecme.com/brands/mercedes-benz-service-dubai/oil-change/?text=a%20b&plus=a+b&encoded=%2F%3F%26%3D&empty=&flag",
+    "method": "GET",
+    "result": {
+      "outcome": "redirect",
+      "rule": "proposed",
+      "status": 308,
+      "destination": "https://digitecme.com/services/mercedes-oil-change-dubai?text=a%20b&plus=a+b&encoded=%2F%3F%26%3D&empty=&flag"
+    },
+    "redirectHopsInObservedSingleRules": 1
+  },
+  {
+    "url": "https://digitecme.com/brands/mercedes-benz-service-dubai/oil-change/?utm_source=&utm_source=second&x=%E2%9C%93&esc=%25",
+    "method": "GET",
+    "result": {
+      "outcome": "redirect",
+      "rule": "proposed",
+      "status": 308,
+      "destination": "https://digitecme.com/services/mercedes-oil-change-dubai?utm_source=&utm_source=second&x=%E2%9C%93&esc=%25"
+    },
+    "redirectHopsInObservedSingleRules": 1
+  },
+  {
+    "url": "https://digitecme.com/brands/mercedes-benz-service-dubai/oil-change",
+    "method": "HEAD",
+    "result": {
+      "outcome": "redirect",
+      "rule": "proposed",
+      "status": 308,
+      "destination": "https://digitecme.com/services/mercedes-oil-change-dubai"
+    },
+    "redirectHopsInObservedSingleRules": 1
+  },
+  {
+    "url": "https://digitecme.com/brands/mercedes-benz-service-dubai/oil-change?utm_source=google",
+    "method": "HEAD",
+    "result": {
+      "outcome": "redirect",
+      "rule": "proposed",
+      "status": 308,
+      "destination": "https://digitecme.com/services/mercedes-oil-change-dubai?utm_source=google"
+    },
+    "redirectHopsInObservedSingleRules": 1
+  },
+  {
+    "url": "https://digitecme.com/brands/mercedes-benz-service-dubai/oil-change?tag=a&tag=b&gclid=oil-routing-qa&gbraid=sample&wbraid=sample",
+    "method": "HEAD",
+    "result": {
+      "outcome": "redirect",
+      "rule": "proposed",
+      "status": 308,
+      "destination": "https://digitecme.com/services/mercedes-oil-change-dubai?tag=a&tag=b&gclid=oil-routing-qa&gbraid=sample&wbraid=sample"
+    },
+    "redirectHopsInObservedSingleRules": 1
+  },
+  {
+    "url": "https://digitecme.com/brands/mercedes-benz-service-dubai/oil-change?text=a%20b&plus=a+b&encoded=%2F%3F%26%3D&empty=&flag",
+    "method": "HEAD",
+    "result": {
+      "outcome": "redirect",
+      "rule": "proposed",
+      "status": 308,
+      "destination": "https://digitecme.com/services/mercedes-oil-change-dubai?text=a%20b&plus=a+b&encoded=%2F%3F%26%3D&empty=&flag"
+    },
+    "redirectHopsInObservedSingleRules": 1
+  },
+  {
+    "url": "https://digitecme.com/brands/mercedes-benz-service-dubai/oil-change?utm_source=&utm_source=second&x=%E2%9C%93&esc=%25",
+    "method": "HEAD",
+    "result": {
+      "outcome": "redirect",
+      "rule": "proposed",
+      "status": 308,
+      "destination": "https://digitecme.com/services/mercedes-oil-change-dubai?utm_source=&utm_source=second&x=%E2%9C%93&esc=%25"
+    },
+    "redirectHopsInObservedSingleRules": 1
+  },
+  {
+    "url": "https://digitecme.com/brands/mercedes-benz-service-dubai/oil-change/",
+    "method": "HEAD",
+    "result": {
+      "outcome": "redirect",
+      "rule": "proposed",
+      "status": 308,
+      "destination": "https://digitecme.com/services/mercedes-oil-change-dubai"
+    },
+    "redirectHopsInObservedSingleRules": 1
+  },
+  {
+    "url": "https://digitecme.com/brands/mercedes-benz-service-dubai/oil-change/?utm_source=google",
+    "method": "HEAD",
+    "result": {
+      "outcome": "redirect",
+      "rule": "proposed",
+      "status": 308,
+      "destination": "https://digitecme.com/services/mercedes-oil-change-dubai?utm_source=google"
+    },
+    "redirectHopsInObservedSingleRules": 1
+  },
+  {
+    "url": "https://digitecme.com/brands/mercedes-benz-service-dubai/oil-change/?tag=a&tag=b&gclid=oil-routing-qa&gbraid=sample&wbraid=sample",
+    "method": "HEAD",
+    "result": {
+      "outcome": "redirect",
+      "rule": "proposed",
+      "status": 308,
+      "destination": "https://digitecme.com/services/mercedes-oil-change-dubai?tag=a&tag=b&gclid=oil-routing-qa&gbraid=sample&wbraid=sample"
+    },
+    "redirectHopsInObservedSingleRules": 1
+  },
+  {
+    "url": "https://digitecme.com/brands/mercedes-benz-service-dubai/oil-change/?text=a%20b&plus=a+b&encoded=%2F%3F%26%3D&empty=&flag",
+    "method": "HEAD",
+    "result": {
+      "outcome": "redirect",
+      "rule": "proposed",
+      "status": 308,
+      "destination": "https://digitecme.com/services/mercedes-oil-change-dubai?text=a%20b&plus=a+b&encoded=%2F%3F%26%3D&empty=&flag"
+    },
+    "redirectHopsInObservedSingleRules": 1
+  },
+  {
+    "url": "https://digitecme.com/brands/mercedes-benz-service-dubai/oil-change/?utm_source=&utm_source=second&x=%E2%9C%93&esc=%25",
+    "method": "HEAD",
+    "result": {
+      "outcome": "redirect",
+      "rule": "proposed",
+      "status": 308,
+      "destination": "https://digitecme.com/services/mercedes-oil-change-dubai?utm_source=&utm_source=second&x=%E2%9C%93&esc=%25"
+    },
+    "redirectHopsInObservedSingleRules": 1
+  },
+  {
+    "url": "https://www.digitecme.com/brands/mercedes-benz-service-dubai/oil-change",
+    "method": "GET",
+    "result": {
+      "outcome": "redirect",
+      "rule": "proposed",
+      "status": 308,
+      "destination": "https://digitecme.com/services/mercedes-oil-change-dubai"
+    },
+    "redirectHopsInObservedSingleRules": 1
+  },
+  {
+    "url": "https://www.digitecme.com/brands/mercedes-benz-service-dubai/oil-change?utm_source=google",
+    "method": "GET",
+    "result": {
+      "outcome": "redirect",
+      "rule": "proposed",
+      "status": 308,
+      "destination": "https://digitecme.com/services/mercedes-oil-change-dubai?utm_source=google"
+    },
+    "redirectHopsInObservedSingleRules": 1
+  },
+  {
+    "url": "https://www.digitecme.com/brands/mercedes-benz-service-dubai/oil-change?tag=a&tag=b&gclid=oil-routing-qa&gbraid=sample&wbraid=sample",
+    "method": "GET",
+    "result": {
+      "outcome": "redirect",
+      "rule": "proposed",
+      "status": 308,
+      "destination": "https://digitecme.com/services/mercedes-oil-change-dubai?tag=a&tag=b&gclid=oil-routing-qa&gbraid=sample&wbraid=sample"
+    },
+    "redirectHopsInObservedSingleRules": 1
+  },
+  {
+    "url": "https://www.digitecme.com/brands/mercedes-benz-service-dubai/oil-change?text=a%20b&plus=a+b&encoded=%2F%3F%26%3D&empty=&flag",
+    "method": "GET",
+    "result": {
+      "outcome": "redirect",
+      "rule": "proposed",
+      "status": 308,
+      "destination": "https://digitecme.com/services/mercedes-oil-change-dubai?text=a%20b&plus=a+b&encoded=%2F%3F%26%3D&empty=&flag"
+    },
+    "redirectHopsInObservedSingleRules": 1
+  },
+  {
+    "url": "https://www.digitecme.com/brands/mercedes-benz-service-dubai/oil-change?utm_source=&utm_source=second&x=%E2%9C%93&esc=%25",
+    "method": "GET",
+    "result": {
+      "outcome": "redirect",
+      "rule": "proposed",
+      "status": 308,
+      "destination": "https://digitecme.com/services/mercedes-oil-change-dubai?utm_source=&utm_source=second&x=%E2%9C%93&esc=%25"
+    },
+    "redirectHopsInObservedSingleRules": 1
+  },
+  {
+    "url": "https://www.digitecme.com/brands/mercedes-benz-service-dubai/oil-change/",
+    "method": "GET",
+    "result": {
+      "outcome": "redirect",
+      "rule": "proposed",
+      "status": 308,
+      "destination": "https://digitecme.com/services/mercedes-oil-change-dubai"
+    },
+    "redirectHopsInObservedSingleRules": 1
+  },
+  {
+    "url": "https://www.digitecme.com/brands/mercedes-benz-service-dubai/oil-change/?utm_source=google",
+    "method": "GET",
+    "result": {
+      "outcome": "redirect",
+      "rule": "proposed",
+      "status": 308,
+      "destination": "https://digitecme.com/services/mercedes-oil-change-dubai?utm_source=google"
+    },
+    "redirectHopsInObservedSingleRules": 1
+  },
+  {
+    "url": "https://www.digitecme.com/brands/mercedes-benz-service-dubai/oil-change/?tag=a&tag=b&gclid=oil-routing-qa&gbraid=sample&wbraid=sample",
+    "method": "GET",
+    "result": {
+      "outcome": "redirect",
+      "rule": "proposed",
+      "status": 308,
+      "destination": "https://digitecme.com/services/mercedes-oil-change-dubai?tag=a&tag=b&gclid=oil-routing-qa&gbraid=sample&wbraid=sample"
+    },
+    "redirectHopsInObservedSingleRules": 1
+  },
+  {
+    "url": "https://www.digitecme.com/brands/mercedes-benz-service-dubai/oil-change/?text=a%20b&plus=a+b&encoded=%2F%3F%26%3D&empty=&flag",
+    "method": "GET",
+    "result": {
+      "outcome": "redirect",
+      "rule": "proposed",
+      "status": 308,
+      "destination": "https://digitecme.com/services/mercedes-oil-change-dubai?text=a%20b&plus=a+b&encoded=%2F%3F%26%3D&empty=&flag"
+    },
+    "redirectHopsInObservedSingleRules": 1
+  },
+  {
+    "url": "https://www.digitecme.com/brands/mercedes-benz-service-dubai/oil-change/?utm_source=&utm_source=second&x=%E2%9C%93&esc=%25",
+    "method": "GET",
+    "result": {
+      "outcome": "redirect",
+      "rule": "proposed",
+      "status": 308,
+      "destination": "https://digitecme.com/services/mercedes-oil-change-dubai?utm_source=&utm_source=second&x=%E2%9C%93&esc=%25"
+    },
+    "redirectHopsInObservedSingleRules": 1
+  },
+  {
+    "url": "https://www.digitecme.com/brands/mercedes-benz-service-dubai/oil-change",
+    "method": "HEAD",
+    "result": {
+      "outcome": "redirect",
+      "rule": "proposed",
+      "status": 308,
+      "destination": "https://digitecme.com/services/mercedes-oil-change-dubai"
+    },
+    "redirectHopsInObservedSingleRules": 1
+  },
+  {
+    "url": "https://www.digitecme.com/brands/mercedes-benz-service-dubai/oil-change?utm_source=google",
+    "method": "HEAD",
+    "result": {
+      "outcome": "redirect",
+      "rule": "proposed",
+      "status": 308,
+      "destination": "https://digitecme.com/services/mercedes-oil-change-dubai?utm_source=google"
+    },
+    "redirectHopsInObservedSingleRules": 1
+  },
+  {
+    "url": "https://www.digitecme.com/brands/mercedes-benz-service-dubai/oil-change?tag=a&tag=b&gclid=oil-routing-qa&gbraid=sample&wbraid=sample",
+    "method": "HEAD",
+    "result": {
+      "outcome": "redirect",
+      "rule": "proposed",
+      "status": 308,
+      "destination": "https://digitecme.com/services/mercedes-oil-change-dubai?tag=a&tag=b&gclid=oil-routing-qa&gbraid=sample&wbraid=sample"
+    },
+    "redirectHopsInObservedSingleRules": 1
+  },
+  {
+    "url": "https://www.digitecme.com/brands/mercedes-benz-service-dubai/oil-change?text=a%20b&plus=a+b&encoded=%2F%3F%26%3D&empty=&flag",
+    "method": "HEAD",
+    "result": {
+      "outcome": "redirect",
+      "rule": "proposed",
+      "status": 308,
+      "destination": "https://digitecme.com/services/mercedes-oil-change-dubai?text=a%20b&plus=a+b&encoded=%2F%3F%26%3D&empty=&flag"
+    },
+    "redirectHopsInObservedSingleRules": 1
+  },
+  {
+    "url": "https://www.digitecme.com/brands/mercedes-benz-service-dubai/oil-change?utm_source=&utm_source=second&x=%E2%9C%93&esc=%25",
+    "method": "HEAD",
+    "result": {
+      "outcome": "redirect",
+      "rule": "proposed",
+      "status": 308,
+      "destination": "https://digitecme.com/services/mercedes-oil-change-dubai?utm_source=&utm_source=second&x=%E2%9C%93&esc=%25"
+    },
+    "redirectHopsInObservedSingleRules": 1
+  },
+  {
+    "url": "https://www.digitecme.com/brands/mercedes-benz-service-dubai/oil-change/",
+    "method": "HEAD",
+    "result": {
+      "outcome": "redirect",
+      "rule": "proposed",
+      "status": 308,
+      "destination": "https://digitecme.com/services/mercedes-oil-change-dubai"
+    },
+    "redirectHopsInObservedSingleRules": 1
+  },
+  {
+    "url": "https://www.digitecme.com/brands/mercedes-benz-service-dubai/oil-change/?utm_source=google",
+    "method": "HEAD",
+    "result": {
+      "outcome": "redirect",
+      "rule": "proposed",
+      "status": 308,
+      "destination": "https://digitecme.com/services/mercedes-oil-change-dubai?utm_source=google"
+    },
+    "redirectHopsInObservedSingleRules": 1
+  },
+  {
+    "url": "https://www.digitecme.com/brands/mercedes-benz-service-dubai/oil-change/?tag=a&tag=b&gclid=oil-routing-qa&gbraid=sample&wbraid=sample",
+    "method": "HEAD",
+    "result": {
+      "outcome": "redirect",
+      "rule": "proposed",
+      "status": 308,
+      "destination": "https://digitecme.com/services/mercedes-oil-change-dubai?tag=a&tag=b&gclid=oil-routing-qa&gbraid=sample&wbraid=sample"
+    },
+    "redirectHopsInObservedSingleRules": 1
+  },
+  {
+    "url": "https://www.digitecme.com/brands/mercedes-benz-service-dubai/oil-change/?text=a%20b&plus=a+b&encoded=%2F%3F%26%3D&empty=&flag",
+    "method": "HEAD",
+    "result": {
+      "outcome": "redirect",
+      "rule": "proposed",
+      "status": 308,
+      "destination": "https://digitecme.com/services/mercedes-oil-change-dubai?text=a%20b&plus=a+b&encoded=%2F%3F%26%3D&empty=&flag"
+    },
+    "redirectHopsInObservedSingleRules": 1
+  },
+  {
+    "url": "https://www.digitecme.com/brands/mercedes-benz-service-dubai/oil-change/?utm_source=&utm_source=second&x=%E2%9C%93&esc=%25",
+    "method": "HEAD",
+    "result": {
+      "outcome": "redirect",
+      "rule": "proposed",
+      "status": 308,
+      "destination": "https://digitecme.com/services/mercedes-oil-change-dubai?utm_source=&utm_source=second&x=%E2%9C%93&esc=%25"
+    },
+    "redirectHopsInObservedSingleRules": 1
+  }
+]

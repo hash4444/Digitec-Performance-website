@@ -1,0 +1,509 @@
+{
+  "checkedAt": "2026-10-26T08:33:35.029Z",
+  "offlineOnly": true,
+  "readmes": [
+    "competitors\\README.md",
+    "indexing\\README.md",
+    "measurement\\README.md",
+    "proposals\\hub\\README.md",
+    "proposals\\services\\README.md",
+    "README.md",
+    "search-console\\exports\\README.md"
+  ],
+  "readmeCount": 7,
+  "relativeFileLinksChecked": 81,
+  "passed": 81,
+  "failed": 0,
+  "checks": [
+    {
+      "readme": "competitors\\README.md",
+      "target": "../search-console/indexed-summary.md",
+      "resolved": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-3\\search-console\\indexed-summary.md",
+      "passed": true
+    },
+    {
+      "readme": "competitors\\README.md",
+      "target": "analysis/six-query-organic-comparison.csv",
+      "resolved": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-3\\competitors\\analysis\\six-query-organic-comparison.csv",
+      "passed": true
+    },
+    {
+      "readme": "competitors\\README.md",
+      "target": "analysis/organic-snapshot-summary.json",
+      "resolved": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-3\\competitors\\analysis\\organic-snapshot-summary.json",
+      "passed": true
+    },
+    {
+      "readme": "competitors\\README.md",
+      "target": "analysis/primary-source-notes.json",
+      "resolved": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-3\\competitors\\analysis\\primary-source-notes.json",
+      "passed": true
+    },
+    {
+      "readme": "competitors\\README.md",
+      "target": "analysis/analyze-complete-serps.mjs",
+      "resolved": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-3\\competitors\\analysis\\analyze-complete-serps.mjs",
+      "passed": true
+    },
+    {
+      "readme": "competitors\\README.md",
+      "target": "serp/complete-manifest.json",
+      "resolved": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-3\\competitors\\serp\\complete-manifest.json",
+      "passed": true
+    },
+    {
+      "readme": "competitors\\README.md",
+      "target": "../indexing/content-analysis.json",
+      "resolved": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-3\\indexing\\content-analysis.json",
+      "passed": true
+    },
+    {
+      "readme": "competitors\\README.md",
+      "target": "../indexing/live-internal-link-graph.json",
+      "resolved": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-3\\indexing\\live-internal-link-graph.json",
+      "passed": true
+    },
+    {
+      "readme": "indexing\\README.md",
+      "target": "http/2026-10-26T07-45-54-376Z/capture.json",
+      "resolved": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-3\\indexing\\http\\2026-10-26T07-45-54-376Z\\capture.json",
+      "passed": true
+    },
+    {
+      "readme": "indexing\\README.md",
+      "target": "../search-console/indexed-observations.json",
+      "resolved": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-3\\search-console\\indexed-observations.json",
+      "passed": true
+    },
+    {
+      "readme": "indexing\\README.md",
+      "target": "../search-console/indexed/body-slashless-verified-visible.txt",
+      "resolved": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-3\\search-console\\indexed\\body-slashless-verified-visible.txt",
+      "passed": true
+    },
+    {
+      "readme": "indexing\\README.md",
+      "target": "../search-console/indexed/body-slashless-verified-ax.txt",
+      "resolved": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-3\\search-console\\indexed\\body-slashless-verified-ax.txt",
+      "passed": true
+    },
+    {
+      "readme": "indexing\\README.md",
+      "target": "body-indexed-observation.json",
+      "resolved": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-3\\indexing\\body-indexed-observation.json",
+      "passed": true
+    },
+    {
+      "readme": "indexing\\README.md",
+      "target": "primary-google-guidance.json",
+      "resolved": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-3\\indexing\\primary-google-guidance.json",
+      "passed": true
+    },
+    {
+      "readme": "indexing\\README.md",
+      "target": "indexed-comparator-summary.json",
+      "resolved": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-3\\indexing\\indexed-comparator-summary.json",
+      "passed": true
+    },
+    {
+      "readme": "indexing\\README.md",
+      "target": "indexed-comparator-summary.md",
+      "resolved": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-3\\indexing\\indexed-comparator-summary.md",
+      "passed": true
+    },
+    {
+      "readme": "indexing\\README.md",
+      "target": "../search-console/indexed/body-slash-verified-visible.txt",
+      "resolved": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-3\\search-console\\indexed\\body-slash-verified-visible.txt",
+      "passed": true
+    },
+    {
+      "readme": "indexing\\README.md",
+      "target": "live-internal-link-graph.json",
+      "resolved": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-3\\indexing\\live-internal-link-graph.json",
+      "passed": true
+    },
+    {
+      "readme": "indexing\\README.md",
+      "target": "local-prerender-link-graph.json",
+      "resolved": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-3\\indexing\\local-prerender-link-graph.json",
+      "passed": true
+    },
+    {
+      "readme": "indexing\\README.md",
+      "target": "content-analysis.json",
+      "resolved": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-3\\indexing\\content-analysis.json",
+      "passed": true
+    },
+    {
+      "readme": "indexing\\README.md",
+      "target": "browser/body-rendered-desktop.png",
+      "resolved": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-3\\indexing\\browser\\body-rendered-desktop.png",
+      "passed": true
+    },
+    {
+      "readme": "indexing\\README.md",
+      "target": "browser/body-rendered-desktop-ax.txt",
+      "resolved": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-3\\indexing\\browser\\body-rendered-desktop-ax.txt",
+      "passed": true
+    },
+    {
+      "readme": "indexing\\README.md",
+      "target": "browser/body-faq-expanded-ax.txt",
+      "resolved": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-3\\indexing\\browser\\body-faq-expanded-ax.txt",
+      "passed": true
+    },
+    {
+      "readme": "indexing\\README.md",
+      "target": "browser/observations.json",
+      "resolved": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-3\\indexing\\browser\\observations.json",
+      "passed": true
+    },
+    {
+      "readme": "indexing\\README.md",
+      "target": "../proposals/services/README.md",
+      "resolved": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-3\\proposals\\services\\README.md",
+      "passed": true
+    },
+    {
+      "readme": "indexing\\README.md",
+      "target": "evidence-backlog.json",
+      "resolved": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-3\\indexing\\evidence-backlog.json",
+      "passed": true
+    },
+    {
+      "readme": "indexing\\README.md",
+      "target": "final-integrity-guard-plan.md",
+      "resolved": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-3\\indexing\\final-integrity-guard-plan.md",
+      "passed": true
+    },
+    {
+      "readme": "indexing\\README.md",
+      "target": "source-integrity-final.json",
+      "resolved": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-3\\indexing\\source-integrity-final.json",
+      "passed": true
+    },
+    {
+      "readme": "measurement\\README.md",
+      "target": "dashboard-template.md",
+      "resolved": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-3\\measurement\\dashboard-template.md",
+      "passed": true
+    },
+    {
+      "readme": "measurement\\README.md",
+      "target": "dashboard-template.json",
+      "resolved": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-3\\measurement\\dashboard-template.json",
+      "passed": true
+    },
+    {
+      "readme": "measurement\\README.md",
+      "target": "dashboard.schema.json",
+      "resolved": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-3\\measurement\\dashboard.schema.json",
+      "passed": true
+    },
+    {
+      "readme": "measurement\\README.md",
+      "target": "measurement-record.schema.json",
+      "resolved": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-3\\measurement\\measurement-record.schema.json",
+      "passed": true
+    },
+    {
+      "readme": "measurement\\README.md",
+      "target": "source-record-template.json",
+      "resolved": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-3\\measurement\\source-record-template.json",
+      "passed": true
+    },
+    {
+      "readme": "measurement\\README.md",
+      "target": "event-inventory.md",
+      "resolved": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-3\\measurement\\event-inventory.md",
+      "passed": true
+    },
+    {
+      "readme": "measurement\\README.md",
+      "target": "metric-dictionary.md",
+      "resolved": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-3\\measurement\\metric-dictionary.md",
+      "passed": true
+    },
+    {
+      "readme": "measurement\\README.md",
+      "target": "cohort-registry.json",
+      "resolved": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-3\\measurement\\cohort-registry.json",
+      "passed": true
+    },
+    {
+      "readme": "measurement\\README.md",
+      "target": "weekly-runbook.md",
+      "resolved": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-3\\measurement\\weekly-runbook.md",
+      "passed": true
+    },
+    {
+      "readme": "measurement\\README.md",
+      "target": "proposed-backlog.json",
+      "resolved": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-3\\measurement\\proposed-backlog.json",
+      "passed": true
+    },
+    {
+      "readme": "measurement\\README.md",
+      "target": "../proposals/hub/source-evidence.json",
+      "resolved": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-3\\proposals\\hub\\source-evidence.json",
+      "passed": true
+    },
+    {
+      "readme": "measurement\\README.md",
+      "target": "validation.json",
+      "resolved": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-3\\measurement\\validation.json",
+      "passed": true
+    },
+    {
+      "readme": "measurement\\README.md",
+      "target": "../search-console/analysis.md",
+      "resolved": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-3\\search-console\\analysis.md",
+      "passed": true
+    },
+    {
+      "readme": "measurement\\README.md",
+      "target": "../search-console/daily-analysis.md",
+      "resolved": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-3\\search-console\\daily-analysis.md",
+      "passed": true
+    },
+    {
+      "readme": "measurement\\README.md",
+      "target": "../search-console/daily-six-query-cohort-summary.json",
+      "resolved": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-3\\search-console\\daily-six-query-cohort-summary.json",
+      "passed": true
+    },
+    {
+      "readme": "measurement\\README.md",
+      "target": "../search-console/daily-six-query-cohort.csv",
+      "resolved": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-3\\search-console\\daily-six-query-cohort.csv",
+      "passed": true
+    },
+    {
+      "readme": "measurement\\README.md",
+      "target": "../search-console/daily-ui-validation.json",
+      "resolved": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-3\\search-console\\daily-ui-validation.json",
+      "passed": true
+    },
+    {
+      "readme": "measurement\\README.md",
+      "target": "../search-console/indexed-observations.json",
+      "resolved": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-3\\search-console\\indexed-observations.json",
+      "passed": true
+    },
+    {
+      "readme": "measurement\\README.md",
+      "target": "../indexing/README.md",
+      "resolved": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-3\\indexing\\README.md",
+      "passed": true
+    },
+    {
+      "readme": "proposals\\hub\\README.md",
+      "target": "mercedes-hub-minimal.patch",
+      "resolved": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-3\\proposals\\hub\\mercedes-hub-minimal.patch",
+      "passed": true
+    },
+    {
+      "readme": "proposals\\hub\\README.md",
+      "target": "before/BrandPage.tsx",
+      "resolved": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-3\\proposals\\hub\\before\\BrandPage.tsx",
+      "passed": true
+    },
+    {
+      "readme": "proposals\\hub\\README.md",
+      "target": "proposed/BrandPage.tsx",
+      "resolved": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-3\\proposals\\hub\\proposed\\BrandPage.tsx",
+      "passed": true
+    },
+    {
+      "readme": "proposals\\hub\\README.md",
+      "target": "source-evidence.json",
+      "resolved": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-3\\proposals\\hub\\source-evidence.json",
+      "passed": true
+    },
+    {
+      "readme": "proposals\\hub\\README.md",
+      "target": "validation.json",
+      "resolved": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-3\\proposals\\hub\\validation.json",
+      "passed": true
+    },
+    {
+      "readme": "proposals\\services\\README.md",
+      "target": "mercedes-body-enquiry-minimal.patch",
+      "resolved": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-3\\proposals\\services\\mercedes-body-enquiry-minimal.patch",
+      "passed": true
+    },
+    {
+      "readme": "proposals\\services\\README.md",
+      "target": "general-body-to-mercedes-context-link.patch",
+      "resolved": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-3\\proposals\\services\\general-body-to-mercedes-context-link.patch",
+      "passed": true
+    },
+    {
+      "readme": "proposals\\services\\README.md",
+      "target": "proposal-validation.json",
+      "resolved": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-3\\proposals\\services\\proposal-validation.json",
+      "passed": true
+    },
+    {
+      "readme": "proposals\\services\\README.md",
+      "target": "context-link-validation.json",
+      "resolved": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-3\\proposals\\services\\context-link-validation.json",
+      "passed": true
+    },
+    {
+      "readme": "README.md",
+      "target": "search-console/analysis.md",
+      "resolved": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-3\\search-console\\analysis.md",
+      "passed": true
+    },
+    {
+      "readme": "README.md",
+      "target": "search-console/paired-query-page-rows.csv",
+      "resolved": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-3\\search-console\\paired-query-page-rows.csv",
+      "passed": true
+    },
+    {
+      "readme": "README.md",
+      "target": "search-console/paired-ui-validation.json",
+      "resolved": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-3\\search-console\\paired-ui-validation.json",
+      "passed": true
+    },
+    {
+      "readme": "README.md",
+      "target": "search-console/daily-analysis.md",
+      "resolved": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-3\\search-console\\daily-analysis.md",
+      "passed": true
+    },
+    {
+      "readme": "README.md",
+      "target": "search-console/daily-query-page-rows.csv",
+      "resolved": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-3\\search-console\\daily-query-page-rows.csv",
+      "passed": true
+    },
+    {
+      "readme": "README.md",
+      "target": "search-console/daily-six-query-cohort.csv",
+      "resolved": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-3\\search-console\\daily-six-query-cohort.csv",
+      "passed": true
+    },
+    {
+      "readme": "README.md",
+      "target": "search-console/indexed-observations.json",
+      "resolved": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-3\\search-console\\indexed-observations.json",
+      "passed": true
+    },
+    {
+      "readme": "README.md",
+      "target": "indexing/README.md",
+      "resolved": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-3\\indexing\\README.md",
+      "passed": true
+    },
+    {
+      "readme": "README.md",
+      "target": "search-console/exports/README.md",
+      "resolved": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-3\\search-console\\exports\\README.md",
+      "passed": true
+    },
+    {
+      "readme": "README.md",
+      "target": "search-console/collection-and-export-instructions.md",
+      "resolved": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-3\\search-console\\collection-and-export-instructions.md",
+      "passed": true
+    },
+    {
+      "readme": "README.md",
+      "target": "indexing/README.md",
+      "resolved": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-3\\indexing\\README.md",
+      "passed": true
+    },
+    {
+      "readme": "README.md",
+      "target": "indexing/browser/body-rendered-desktop.png",
+      "resolved": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-3\\indexing\\browser\\body-rendered-desktop.png",
+      "passed": true
+    },
+    {
+      "readme": "README.md",
+      "target": "competitors/README.md",
+      "resolved": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-3\\competitors\\README.md",
+      "passed": true
+    },
+    {
+      "readme": "README.md",
+      "target": "competitors/analysis/six-query-organic-comparison.csv",
+      "resolved": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-3\\competitors\\analysis\\six-query-organic-comparison.csv",
+      "passed": true
+    },
+    {
+      "readme": "README.md",
+      "target": "competitors/serp/complete-manifest.json",
+      "resolved": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-3\\competitors\\serp\\complete-manifest.json",
+      "passed": true
+    },
+    {
+      "readme": "README.md",
+      "target": "implementation-backlog.md",
+      "resolved": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-3\\implementation-backlog.md",
+      "passed": true
+    },
+    {
+      "readme": "README.md",
+      "target": "implementation-backlog.csv",
+      "resolved": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-3\\implementation-backlog.csv",
+      "passed": true
+    },
+    {
+      "readme": "README.md",
+      "target": "proposals/hub/README.md",
+      "resolved": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-3\\proposals\\hub\\README.md",
+      "passed": true
+    },
+    {
+      "readme": "README.md",
+      "target": "proposals/services/README.md",
+      "resolved": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-3\\proposals\\services\\README.md",
+      "passed": true
+    },
+    {
+      "readme": "README.md",
+      "target": "measurement/weekly-runbook.md",
+      "resolved": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-3\\measurement\\weekly-runbook.md",
+      "passed": true
+    },
+    {
+      "readme": "README.md",
+      "target": "measurement/dashboard-template.md",
+      "resolved": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-3\\measurement\\dashboard-template.md",
+      "passed": true
+    },
+    {
+      "readme": "README.md",
+      "target": "measurement/metric-dictionary.md",
+      "resolved": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-3\\measurement\\metric-dictionary.md",
+      "passed": true
+    },
+    {
+      "readme": "README.md",
+      "target": "measurement/event-inventory.md",
+      "resolved": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-3\\measurement\\event-inventory.md",
+      "passed": true
+    },
+    {
+      "readme": "README.md",
+      "target": "../mercedes-phase-2b/cloudflare/current-inventory.json",
+      "resolved": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-2b\\cloudflare\\current-inventory.json",
+      "passed": true
+    },
+    {
+      "readme": "README.md",
+      "target": "indexing/source-integrity-final.json",
+      "resolved": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-3\\indexing\\source-integrity-final.json",
+      "passed": true
+    }
+  ],
+  "limits": [
+    "Checks relative file existence only, not every external URL or Markdown section anchor.",
+    "Collector evidence content/hashes are managed separately during account-label sanitization."
+  ]
+}

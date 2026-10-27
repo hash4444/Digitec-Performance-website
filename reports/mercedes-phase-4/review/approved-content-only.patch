@@ -1,0 +1,48 @@
+diff --git a/src/pages/BrandPage.tsx b/src/pages/BrandPage.tsx
+--- a/src/pages/BrandPage.tsx
++++ b/src/pages/BrandPage.tsx
+@@ -1001,7 +1001,7 @@
+                   <figcaption className="p-5">
+                     <span className="text-burnt-orange text-xs font-bold uppercase tracking-widest">Inside our Mercedes workshop</span>
+                     <h3 className="text-lg font-bold text-off-white mt-2">Model-aware mechanical inspection</h3>
+-                    <p className="text-gray-400 text-sm leading-relaxed mt-2">A real Mercedes-AMG engine in the Digi-Tec workshop. Diagnostics, fluid specifications and repair planning are matched to the fitted powertrain—not just the badge.</p>
++                    <p className="text-gray-400 text-sm leading-relaxed mt-2">A real Mercedes-AMG engine in the Digi-Tec workshop. <Link to="/services/mercedes-diagnostics-dubai" className="text-burnt-orange hover:underline">Diagnostics</Link>, fluid specifications and <Link to="/services/mercedes-mechanical-repair-dubai" className="text-burnt-orange hover:underline">repair planning</Link> are matched to the fitted powertrain—not just the badge.</p>
+                   </figcaption>
+                 </figure>
+                 <Link to="/blog/g63-to-brabus-g800-conversion-dubai" className="card-premium group rounded-2xl overflow-hidden">
+@@ -1321,7 +1321,7 @@
+                   <div className="bg-black/30 border border-white/10 rounded-xl p-4">
+                     <MapPin className="w-5 h-5 text-burnt-orange mb-3" />
+                     <h3 className="text-off-white font-bold">Al Quoz Industrial Area 3</h3>
+-                    <p className="text-gray-400 text-sm mt-2">Dubai, with a direct Google Maps route from this page.</p>
++                    <p className="text-gray-400 text-sm mt-2">Dubai, with a direct Google Maps route from this page. <a href="tel:+97143402223" data-cta-placement="workshop_proof" className="text-burnt-orange hover:underline">Call +971 4 340 2223</a> to confirm arrival details.</p>
+                   </div>
+                   <div className="bg-black/30 border border-white/10 rounded-xl p-4">
+                     <CheckCircle2 className="w-5 h-5 text-burnt-orange mb-3" />
+diff --git a/src/data/mercedesServiceContent.ts b/src/data/mercedesServiceContent.ts
+index 78804b2..83207c7 100644
+--- a/src/data/mercedesServiceContent.ts
++++ b/src/data/mercedesServiceContent.ts
+@@ -221,6 +221,7 @@ export const MERCEDES_SERVICE_CONTENT: Partial<Record<ServiceKey, MercedesConten
+       { question: 'Does a body repair include paint protection film?', answer: 'Only if separately specified and suitable for the repaired finish. Film coverage, preparation and timing should be agreed as a separate scope.' },
+       { question: 'Is a G63 conversion the same as an accident repair?', answer: 'No. A documented conversion shows that particular project, not the scope or outcome of an accident repair. Conversion enquiries are reviewed separately.' },
+     ],
++    whatsAppMessage: 'Hi Digi-Tec, I would like a Mercedes bodywork assessment.\n\nModel/year: \nAffected panels: \nPrevious paint or repair (if known): \nSensor warning (if any): \nI can attach clear photos of the damage.',
+   },
+   'steering-repair': {
+     serviceName: 'Steering Repair',
+diff --git a/src/pages/BrandServicePage.tsx b/src/pages/BrandServicePage.tsx
+index d4f0951..c9f0563 100644
+--- a/src/pages/BrandServicePage.tsx
++++ b/src/pages/BrandServicePage.tsx
+@@ -1022,7 +1022,9 @@ const BrandServicePage: React.FC<BrandServicePageProps> = ({
+               ? 'Send the model, year, VIN, mileage, ASSYST message and any oil warning or leak. We will confirm the oil approval, itemized scope and appointment availability.'
+               : combo.brandSlug === 'mercedes-benz-service-dubai' && combo.serviceSlug === 'suspension-repair'
+                 ? 'Send the model, year, VIN, mileage, exact warning, which corner drops and when. We will confirm the appropriate suspension inspection and appointment availability.'
+-                : 'Share the model, year, mileage and the concern you want checked. The workshop can confirm the appropriate assessment, scope and appointment availability.'}
++                : !isArabic && combo.brandSlug === 'mercedes-benz-service-dubai' && combo.serviceSlug === 'body-repair'
++                  ? 'Send your model and year, which panels are damaged, any known previous repair and any sensor warning. Attach clear photos for the initial discussion; the final scope and price follow inspection.'
++                  : 'Share the model, year, mileage and the concern you want checked. The workshop can confirm the appropriate assessment, scope and appointment availability.'}
+           label={enquiryLabel}
+           href={whatsappHref}
+         />}

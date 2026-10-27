@@ -1,0 +1,59 @@
+{
+  "checkedAt": "2026-10-19T08:12:45.098Z",
+  "normalization": "Only generated Radix/React useId values and whitespace. No text, links, form controls, styles or semantic attributes removed.",
+  "proof": [
+    {
+      "route": "/ar/services/paint-protection-film",
+      "rawEqual": false,
+      "normalizedEqual": true,
+      "firstDifferentCharacter": 9807,
+      "beforeContext": "=\"closed\" data-orientation=\"vertical\" id=\"radix-:R6il8:\" class=\"flex flex-1 items-center justify-between trans",
+      "afterContext": "=\"closed\" data-orientation=\"vertical\" id=\"radix-:Rckl8:\" class=\"flex flex-1 items-center justify-between trans",
+      "beforeRadixTokens": [
+        "radix-:R6il8:",
+        "radix-:R16il8:",
+        "radix-:R6il8:",
+        "radix-:Rail8:"
+      ],
+      "afterRadixTokens": [
+        "radix-:Rckl8:",
+        "radix-:R2ckl8:",
+        "radix-:Rckl8:",
+        "radix-:Rkkl8:"
+      ],
+      "normalizedSha256": "43ebcd11b0fedc310ae166f51f3d7b4a6c451a0b7c21b2021276a62a790babaf"
+    },
+    {
+      "route": "/ar/services/paint-protection-dubai",
+      "rawEqual": true,
+      "normalizedEqual": true,
+      "firstDifferentCharacter": 14830,
+      "beforeContext": "ta\">+971 4 340 2223</a></address></section></main>",
+      "afterContext": "ta\">+971 4 340 2223</a></address></section></main>",
+      "beforeRadixTokens": [],
+      "afterRadixTokens": [],
+      "normalizedSha256": "625c021fedbec01650ae173db421066eae637553d380cc1d69f6418ab83c9a9d"
+    },
+    {
+      "route": "/ar/services/ceramic-coating",
+      "rawEqual": false,
+      "normalizedEqual": true,
+      "firstDifferentCharacter": 8674,
+      "beforeContext": "=\"closed\" data-orientation=\"vertical\" id=\"radix-:R6il8:\" class=\"flex flex-1 items-center justify-between trans",
+      "afterContext": "=\"closed\" data-orientation=\"vertical\" id=\"radix-:Rckl8:\" class=\"flex flex-1 items-center justify-between trans",
+      "beforeRadixTokens": [
+        "radix-:R6il8:",
+        "radix-:R16il8:",
+        "radix-:R6il8:",
+        "radix-:Rail8:"
+      ],
+      "afterRadixTokens": [
+        "radix-:Rckl8:",
+        "radix-:R2ckl8:",
+        "radix-:Rckl8:",
+        "radix-:Rkkl8:"
+      ],
+      "normalizedSha256": "7dda18b0c698980a043c734d13bd47b925ca6767efc172916a3408380c6a7752"
+    }
+  ]
+}

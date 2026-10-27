@@ -1,0 +1,30 @@
+{
+  "source_workbooks": 17,
+  "all_raw_sources_unchanged_sha256": true,
+  "opportunities": 50,
+  "measured_distinct_queries": 40,
+  "proposed_distinct_queries": 10,
+  "measured_recent_92d": 36,
+  "measured_historical_only_or_24h": 4,
+  "top20": 20,
+  "all_top20_measured_92d": true,
+  "all_owners_verified": true,
+  "all_owners_indexable": true,
+  "all_owners_in_sitemap": true,
+  "all_have_arabic_owner": true,
+  "query_by_page_evidence_available": false,
+  "overlapping_periods_combined": false,
+  "missing_metrics_coerced_to_zero": false,
+  "requested_research_candidates": 49,
+  "raw_query_observations_all_periods": 441,
+  "source_semantic_duplicates": [
+    {
+      "file": "digitecme.com-Performance-on-Search-2026-09-08 (2).xlsx",
+      "duplicate_of": "digitecme.com-Performance-on-Search-2026-09-08 (2) (1).xlsx"
+    },
+    {
+      "file": "digitecme.com-Performance-on-Search-2026-09-08.xlsx",
+      "duplicate_of": "digitecme.com-Performance-on-Search-2026-09-08 (2) (1).xlsx"
+    }
+  ]
+}

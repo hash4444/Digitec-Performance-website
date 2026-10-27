@@ -1,0 +1,33 @@
+Repair-service focused QA - 19 October 2026
+
+Overall result: PASS
+
+Static: 20 selected repair locale pages; 22 audited owner locale URLs.
+Preservation: 12 protected SSR HTML hashes and serialized SEO objects are identical.
+Source: 574/575 baseline files unchanged; one shared repair template edited and three approved modules added. No forbidden differences.
+Metadata: 8 titles, 8 descriptions and 6 H1s changed.
+Internal links: 40 direct panel destinations checked for self-canonical/index/sitemap eligibility; existing hub inlinks retained.
+Schema: one Service, one breadcrumb and one FAQ graph per owner; body/FAQ schema parity; stable business provider and raw shared entity graph unchanged.
+
+Focused browser: 66 responsive route cases at 1440/390/320 px; 22 no-JavaScript pages; 22 hub-to-owner checks.
+Master browser: 27 page checks; 17 interactions; 7 SPA navigations.
+No runtime/hydration errors, failing local responses, attempted backend writes or real contact popups in either final browser suite.
+Production preview stopped: true.
+
+No enquiry, telephone call, appointment or message was sent. All external and non-GET/HEAD requests were blocked; contact navigation was prevented. CTA clicks remain interest signals, with no confirmed enquiry assertion.
+
+Evidence:
+- repair-static-validation.json
+- before-after-seo.csv
+- internal-link-and-schema.json
+- browser/browser-results.json and referenced screenshots
+- existing-master-browser/browser-results.json and referenced screenshots
+- existing-master-browser/browser-results.raw.json preserves the original master report bytes
+- browser-orchestration-results.json
+- VISUAL-REVIEW.txt
+
+An earlier run overlapped a subsequent production rebuild and was invalidated by missing dist files. It is retained separately under invalid-build-overlap; both complete final suites were rerun against the stable final build and passed.
+
+The first static run exposed a harness serialization mismatch: runtime undefined SEO fields are omitted from its JSON baseline. The validator now compares JSON-normalized SEO while retaining byte-exact protected HTML hashes. Product source required no change for that correction.
+
+Limits: local build/browser behavior only; no production deployment, live delivery, GA4 ingestion, CRM receipt, field Core Web Vitals or ranking proof.

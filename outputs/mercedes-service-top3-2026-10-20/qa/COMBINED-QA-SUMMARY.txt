@@ -1,0 +1,43 @@
+DIGI-TEC MERCEDES SERVICE CAMPAIGN — COMBINED QA PASS
+2026-10-20T05:50:14.160Z
+
+Candidate: C:\Users\ADMIN\Documents\ChatGPT\DIGITEC\outputs\mercedes-service-top3-2026-10-20\candidate.local
+Base: 2971301bb37d38f4785844af067eebd55f9f6dda, with the six frozen campaign files.
+Source fingerprint: 7d3d58e24c826757c32c28cec6c1cf03f74251d8d76af1fed0a03b48d0cc18d2
+All 585 build inputs remained unchanged after browser QA. All six source files match the frozen candidate and workspace hashes.
+
+Production build
+All 19 declared stages passed: 1,256 real rendered routes and 1,005 canonical sitemap URLs. The pipeline includes routing, SEO, PPF, protection, query ownership, contact privacy, oil, suspension, transmission and social metadata checks.
+
+CLI and static checks
+All 14 checks passed, including app and Node TypeScript, ESLint (zero errors and 11 existing warnings), master SEO, BMW hub, paint care, tuning, routing responses, the generic brand form and four static suites.
+The Mercedes campaign suite passed 10155 assertions. Two hub locales and two service-directory locales intentionally changed. All 1252 other pages preserve their metadata, canonical/hreflang, robots, H1, JSON-LD and visible main/root markup. Only whitespace and generated Radix identifiers are normalized in the markup comparison.
+The shared business identities and Service provider references remain intact. Six FAQ questions per hub locale agree with the initial visible HTML. Only the four materially changed routes receive a 20 October lastmod. No new route or indexability policy was introduced.
+Fourteen maintenance/directory link placements were checked; two are new contextual service-directory links. Other placements are retained links.
+Prior static suites: 32 hub/repair locales (1450 assertions), 16 diagnostics/AC locales (1009 assertions), 14 ECU/electronics locales (614 assertions). All 51 remaining protected visible routes and 20 noindex policies are preserved.
+
+Browser regression
+All 9 suites passed.
+The first complete run covered all nine suites. After a measured narrow-screen CTA overlap, only the EN Mercedes hero intro changed; the final full production build and all 14 CLI checks passed again. Five-brand and focused Mercedes browser suites were repeated on the final build. Seven unaffected passing suites are retained with their original build fingerprint and strict final-build preservation evidence for all 1,252 unrelated pages.
+Above-the-fold geometry: PASS across six English/Arabic viewport cases (390×844, 320×844 and 1440×900), measured at initial scroll zero. The primary hero CTA is fully within the viewport, below the header and above the fixed mobile bar, with unobscured hit-testing.
+Mercedes: 6 responsive cases across English/Arabic and 1440/390/320 pixels, 2 complete form cases, 2 safe contact cases, 2 pages without JavaScript, 2 SPA/back/booking-anchor cases and 2 mobile cases with a coarse touch pointer. Empty required fields and invalid optional telephone numbers block the draft. All six servicing intake fields are retained in the stubbed WhatsApp draft. Optional personal details and unknown history are accepted. Private values are excluded from analytics; a draft is never counted as a confirmed booking.
+Five-brand: 30 responsive cases, 30 interactions, 10 pages without JavaScript.
+Repair: 66 responsive cases, 22 pages without JavaScript, 22 hub-link checks.
+Diagnostics/AC: 48 responsive cases, 16 contact cases, 16 pages without JavaScript, 16 SPA checks.
+ECU/electronics: 42 responsive cases, 14 contact cases, 14 pages without JavaScript, 14 SPA checks.
+Master: 27 responsive cases, 17 interactions, 7 SPA checks.
+Protection: 9 requests, cross-service navigation, back/forward and true 404 behavior.
+PPF: 5 WhatsApp CTAs, 2 quotation forms, 3 reply methods, privacy, duplicate suppression and language round trip.
+Tuning: 6 responsive configurator cases, 62 package rows/prices and retained S63 enquiry-only / DB11 withheld policies.
+Visual review: PASS. Screenshots and the inspection record are retained.
+
+Safety
+Only loopback GET/HEAD requests allowed during browser QA. Contact navigation prevented/window.open stubbed. No message, telephone call, delivered enquiry, appointment, backend write, commit, push, deploy, publication, external-account edit or outreach.
+
+Limits
+Local browser layout is not field Core Web Vitals.
+Schema validation is local parsed JSON-LD/identity/provider/visible FAQ integrity, not a Google Rich Results certification.
+Click/draft events are intent signals; actual delivery, CRM receipt and booking attribution are unverified.
+Production deployment/source/rollback authority and live publication state are separate from successful local QA. GSC evidence is documented by the research workstream.
+
+Full commands, paths, hashes, evidence counts, harness adaptations and initial-attempt disposition are in COMBINED-QA-SUMMARY.json. No application code changed after the final six-file freeze.

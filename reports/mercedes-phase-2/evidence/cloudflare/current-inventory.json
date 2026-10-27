@@ -1,0 +1,59 @@
+{
+  "observedAt": "2026-10-26T06:48:10Z",
+  "observationWindowDubai": "26 October 2026, approximately 10:43–10:49 UAE; supplemental layer checks immediately after",
+  "domain": "digitecme.com",
+  "method": "Authenticated Cloudflare dashboard; read-only list and existing rule detail forms. Functional fields transcribed from displayed values. No fields changed, no Save/Create/Deploy/toggle/drag actions performed.",
+  "authorization": "User explicitly approved continuing the existing Cloudflare login solely for read-only inspection.",
+  "capacity": { "used": 3, "limit": 10, "proposedAdditional": 4, "projectedUsed": 7 },
+  "rules": [
+    {
+      "id": "5addb0c068414fb5b985a869ded26c68",
+      "order": 1,
+      "description": "Mercedes oil change legacy URLs to existing service",
+      "enabled": true,
+      "expression": "(http.host in {\"digitecme.com\" \"www.digitecme.com\"}) and (http.request.method in {\"GET\" \"HEAD\"}) and (http.request.uri.path in {\"/brands/mercedes-benz-service-dubai/oil-change\" \"/brands/mercedes-benz-service-dubai/oil-change/\"})",
+      "action": "redirect",
+      "action_parameters": { "from_value": { "target_url": { "value": "https://digitecme.com/services/mercedes-oil-change-dubai" }, "status_code": 308, "preserve_query_string": true } },
+      "placementObserved": "First",
+      "protected": true
+    },
+    {
+      "id": "dbe42693423442afbc3bab9b993242a7",
+      "order": 2,
+      "description": "Legacy Mercedes URLs to Mercedes brand service page",
+      "enabled": true,
+      "expression": "http.request.uri.path in {\"/services/mercedes-repair-dubai\" \"/services/mercedes-repair-dubai/\" \"/services/mercedes-service-dubai\" \"/best-mercedes-workshop-dubai\"}",
+      "action": "redirect",
+      "action_parameters": { "from_value": { "target_url": { "value": "https://digitecme.com/brands/mercedes-benz-service-dubai" }, "status_code": 301, "preserve_query_string": true } },
+      "placementObserved": "After Mercedes oil change legacy URLs to existing service",
+      "protected": true
+    },
+    {
+      "id": "9781b1ef743f4ffbaadbe5cb3250eeca",
+      "order": 3,
+      "description": "www to primary domain",
+      "enabled": true,
+      "expression": "(http.host eq \"www.digitecme.com\")",
+      "action": "redirect",
+      "action_parameters": { "from_value": { "target_url": { "expression": "concat(\"https://digitecme.com\", http.request.uri.path)" }, "status_code": 301, "preserve_query_string": true } },
+      "placementObserved": "After Legacy Mercedes URLs to Mercedes brand service page",
+      "protected": true
+    }
+  ],
+  "otherchecks": {
+    "urlRewriteRules": { "status": "ui_verified_none", "observedText": "No URL Rewrite Rules created" },
+    "configurationRules": { "status": "ui_verified_none", "observedText": "No Configuration Rules created" },
+    "originRules": { "status": "ui_verified_none", "observedText": "No Origin Rules created" },
+    "bulkRedirectLists": { "status": "ui_verified_none", "used": 0, "limit": 5 },
+    "pageRules": { "status": "ui_verified_none", "used": 0, "limit": 3 },
+    "workerRoutes": { "status": "ui_verified_none", "observedText": "You do not have any routes configured. Add a route to get started." },
+    "dns": { "status": "ui_verified_two_relevant_proxied_records", "records": [ { "name": "digitecme.com", "type": "CNAME", "content": "dubai-performance-art.lovable.app", "proxied": true, "ttl": "Auto" }, { "name": "www.digitecme.com", "type": "CNAME", "content": "dubai-performance-art.lovable.app", "proxied": true, "ttl": "Auto" } ] },
+    "tls": { "status": "settings_not_inspected; public_HTTP_HTTPS_behavior_captured_separately" }
+  },
+  "limits": [
+    "This is a dated dashboard transcription, not a full API ruleset/version export.",
+    "Ruleset ID, raw version metadata, refs and last-updated fields were not exposed in these inspected forms.",
+    "Capacity and definitions must be refreshed immediately before any later approved change.",
+    "No new rule was created, including a disabled draft; no existing rule was saved or reordered."
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "checkedAt": "2026-10-19T06:20:47.105Z",
+  "finalBuildSourceFingerprint": "20f8255baaea8e2604e05aff774ec05bb24256cc4b4b818f2d3d0d035409195a",
+  "focusedAppBuildSourceFingerprint": "ccfc2c87b0504e67e5d86d680ab1252a1dbcaa3d55307de15ccb22ba7d8553ee",
+  "focused": {
+    "passed": true,
+    "responsiveChecks": 30,
+    "checksByWidth": {
+      "320": 10,
+      "390": 10,
+      "1440": 10
+    },
+    "interactionCases": 30,
+    "noJavaScriptChecks": 10,
+    "screenshots": 50,
+    "runtimeOrHydrationErrors": 0,
+    "failedLocalResponses": 0,
+    "realPopups": 0,
+    "attemptedLocalWrites": 0,
+    "failures": [],
+    "report": "outputs/five-brand-service-2026-10-19/conversion/browser/browser-results.json",
+    "reportingNote": "This run stores numeric width in pageChecks.viewport because a layout field overwrote the text label. Width and case counts remain correct. The reporter key is corrected in the reusable script; assertions and results are unchanged."
+  },
+  "existingMaster": {
+    "passed": true,
+    "responsiveChecks": 27,
+    "interactions": 17,
+    "screenshots": 29,
+    "spaNavigationChecks": 7,
+    "contactAnalyticsCheckPassed": true,
+    "runtimeOrHydrationErrors": 0,
+    "failedLocalResponses": 0,
+    "baselineAlreadyContainsActualH1": true,
+    "baselineEvidence": "outputs/five-brand-service-2026-10-19/baseline/server/entry-server.js:13070",
+    "report": "outputs/five-brand-service-2026-10-19/conversion/existing-master-browser/browser-results.json",
+    "interpretation": "Existing master suite completed after correcting only its stale expected Mercedes electrical H1 to the already-verified baseline wording. Application source did not change for that correction.",
+    "previousDrift": {
+      "failure": {
+        "at": "SPA to /services/mercedes-electrical-repair-dubai",
+        "message": "Expected values to be strictly equal:\n+ actual - expected\n\n+ 'Mercedes Electrical Repair & Fault Tracing in Dubai'\n- 'Mercedes Electrical Fault Diagnosis & Repair in Dubai'\n",
+        "stack": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n+ actual - expected\n\n+ 'Mercedes Electrical Repair & Fault Tracing in Dubai'\n- 'Mercedes Electrical Fault Diagnosis & Repair in Dubai'\n\n    at checkRoute (file:///C:/Users/ADMIN/Documents/ChatGPT/DIGITEC/scripts/test-master-seo-browser.mjs:87:10)\n    at async spaTo (file:///C:/Users/ADMIN/Documents/ChatGPT/DIGITEC/scripts/test-master-seo-browser.mjs:148:3)\n    at async file:///C:/Users/ADMIN/Documents/ChatGPT/DIGITEC/scripts/test-master-seo-browser.mjs:250:66"
+      },
+      "report": "outputs/five-brand-service-2026-10-19/conversion/existing-master-browser/regression-drift-before.json",
+      "baselineAlreadyContainsActualH1": true
+    }
+  },
+  "operationalSafety": "Final preview and browser suites ran in one local execution context on 127.0.0.1:5195. External requests and local writes were blocked. WhatsApp window.open was stubbed, no message was sent, and the temporary preview server was stopped.",
+  "visualQa": "Reviewed Arabic Rolls-Royce mobile hero and Volkswagen 320px hero. Confirmed Arabic telephone left-to-right isolation after scoped fix. The orange dot in screenshots is the site custom cursor following the automation mouse; it is not a second CTA."
+}

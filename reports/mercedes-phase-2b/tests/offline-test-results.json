@@ -1,0 +1,679 @@
+{
+  "at": "2026-10-26T07:35:04.142Z",
+  "syntheticOnly": true,
+  "noNetworkRequests": true,
+  "passed": 2,
+  "results": [
+    {
+      "scenario": "valid",
+      "expectedExitCode": 0,
+      "observedExitCode": 0,
+      "passed": 852,
+      "directory": "reports\\mercedes-phase-2b\\http\\SYNTHETIC-post-2026-10-26T07-35-03-617Z",
+      "cases": 326,
+      "networkRequests": 0,
+      "fixtureResponses": 612,
+      "assertions": 852,
+      "failed": 0,
+      "sourceCases": 192,
+      "protectedOilCases": 48,
+      "failures": []
+    },
+    {
+      "scenario": "drop-query",
+      "expectedExitCode": 1,
+      "observedExitCode": 1,
+      "passed": 724,
+      "directory": "reports\\mercedes-phase-2b\\http\\SYNTHETIC-post-2026-10-26T07-35-03-918Z",
+      "cases": 326,
+      "networkRequests": 0,
+      "fixtureResponses": 612,
+      "assertions": 852,
+      "failed": 128,
+      "sourceCases": 192,
+      "protectedOilCases": 48,
+      "failures": [
+        {
+          "name": "source-ar-oil-change-1: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-oil-change-dubai?utm_source=mercedes_phase_2&gclid=phase2-example"
+        },
+        {
+          "name": "source-ar-oil-change-2: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-oil-change-dubai?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank="
+        },
+        {
+          "name": "source-ar-oil-change-4: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-oil-change-dubai?utm_source=mercedes_phase_2&gclid=phase2-example"
+        },
+        {
+          "name": "source-ar-oil-change-5: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-oil-change-dubai?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank="
+        },
+        {
+          "name": "source-ar-oil-change-7: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-oil-change-dubai?utm_source=mercedes_phase_2&gclid=phase2-example"
+        },
+        {
+          "name": "source-ar-oil-change-8: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-oil-change-dubai?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank="
+        },
+        {
+          "name": "source-ar-oil-change-10: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-oil-change-dubai?utm_source=mercedes_phase_2&gclid=phase2-example"
+        },
+        {
+          "name": "source-ar-oil-change-11: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-oil-change-dubai?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank="
+        },
+        {
+          "name": "source-ar-oil-change-13: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-oil-change-dubai?utm_source=mercedes_phase_2&gclid=phase2-example"
+        },
+        {
+          "name": "source-ar-oil-change-14: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-oil-change-dubai?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank="
+        },
+        {
+          "name": "source-ar-oil-change-16: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-oil-change-dubai?utm_source=mercedes_phase_2&gclid=phase2-example"
+        },
+        {
+          "name": "source-ar-oil-change-17: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-oil-change-dubai?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank="
+        },
+        {
+          "name": "source-ar-oil-change-19: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-oil-change-dubai?utm_source=mercedes_phase_2&gclid=phase2-example"
+        },
+        {
+          "name": "source-ar-oil-change-20: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-oil-change-dubai?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank="
+        },
+        {
+          "name": "source-ar-oil-change-22: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-oil-change-dubai?utm_source=mercedes_phase_2&gclid=phase2-example"
+        },
+        {
+          "name": "source-ar-oil-change-23: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-oil-change-dubai?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank="
+        },
+        {
+          "name": "source-ar-oil-change-25: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-oil-change-dubai?utm_source=mercedes_phase_2&gclid=phase2-example"
+        },
+        {
+          "name": "source-ar-oil-change-26: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-oil-change-dubai?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank="
+        },
+        {
+          "name": "source-ar-oil-change-28: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-oil-change-dubai?utm_source=mercedes_phase_2&gclid=phase2-example"
+        },
+        {
+          "name": "source-ar-oil-change-29: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-oil-change-dubai?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank="
+        },
+        {
+          "name": "source-ar-oil-change-31: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-oil-change-dubai?utm_source=mercedes_phase_2&gclid=phase2-example"
+        },
+        {
+          "name": "source-ar-oil-change-32: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-oil-change-dubai?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank="
+        },
+        {
+          "name": "source-ar-oil-change-34: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-oil-change-dubai?utm_source=mercedes_phase_2&gclid=phase2-example"
+        },
+        {
+          "name": "source-ar-oil-change-35: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-oil-change-dubai?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank="
+        },
+        {
+          "name": "source-ar-oil-change-37: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-oil-change-dubai?utm_source=mercedes_phase_2&gclid=phase2-example"
+        },
+        {
+          "name": "source-ar-oil-change-38: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-oil-change-dubai?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank="
+        },
+        {
+          "name": "source-ar-oil-change-40: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-oil-change-dubai?utm_source=mercedes_phase_2&gclid=phase2-example"
+        },
+        {
+          "name": "source-ar-oil-change-41: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-oil-change-dubai?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank="
+        },
+        {
+          "name": "source-ar-oil-change-43: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-oil-change-dubai?utm_source=mercedes_phase_2&gclid=phase2-example"
+        },
+        {
+          "name": "source-ar-oil-change-44: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-oil-change-dubai?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank="
+        },
+        {
+          "name": "source-ar-oil-change-46: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-oil-change-dubai?utm_source=mercedes_phase_2&gclid=phase2-example"
+        },
+        {
+          "name": "source-ar-oil-change-47: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-oil-change-dubai?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank="
+        },
+        {
+          "name": "source-en-body-repair-49: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/services/mercedes-body-repair-dubai?utm_source=mercedes_phase_2&gclid=phase2-example"
+        },
+        {
+          "name": "source-en-body-repair-50: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/services/mercedes-body-repair-dubai?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank="
+        },
+        {
+          "name": "source-en-body-repair-52: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/services/mercedes-body-repair-dubai?utm_source=mercedes_phase_2&gclid=phase2-example"
+        },
+        {
+          "name": "source-en-body-repair-53: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/services/mercedes-body-repair-dubai?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank="
+        },
+        {
+          "name": "source-en-body-repair-55: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/services/mercedes-body-repair-dubai?utm_source=mercedes_phase_2&gclid=phase2-example"
+        },
+        {
+          "name": "source-en-body-repair-56: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/services/mercedes-body-repair-dubai?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank="
+        },
+        {
+          "name": "source-en-body-repair-58: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/services/mercedes-body-repair-dubai?utm_source=mercedes_phase_2&gclid=phase2-example"
+        },
+        {
+          "name": "source-en-body-repair-59: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/services/mercedes-body-repair-dubai?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank="
+        },
+        {
+          "name": "source-en-body-repair-61: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/services/mercedes-body-repair-dubai?utm_source=mercedes_phase_2&gclid=phase2-example"
+        },
+        {
+          "name": "source-en-body-repair-62: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/services/mercedes-body-repair-dubai?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank="
+        },
+        {
+          "name": "source-en-body-repair-64: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/services/mercedes-body-repair-dubai?utm_source=mercedes_phase_2&gclid=phase2-example"
+        },
+        {
+          "name": "source-en-body-repair-65: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/services/mercedes-body-repair-dubai?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank="
+        },
+        {
+          "name": "source-en-body-repair-67: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/services/mercedes-body-repair-dubai?utm_source=mercedes_phase_2&gclid=phase2-example"
+        },
+        {
+          "name": "source-en-body-repair-68: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/services/mercedes-body-repair-dubai?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank="
+        },
+        {
+          "name": "source-en-body-repair-70: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/services/mercedes-body-repair-dubai?utm_source=mercedes_phase_2&gclid=phase2-example"
+        },
+        {
+          "name": "source-en-body-repair-71: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/services/mercedes-body-repair-dubai?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank="
+        },
+        {
+          "name": "source-en-body-repair-73: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/services/mercedes-body-repair-dubai?utm_source=mercedes_phase_2&gclid=phase2-example"
+        },
+        {
+          "name": "source-en-body-repair-74: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/services/mercedes-body-repair-dubai?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank="
+        },
+        {
+          "name": "source-en-body-repair-76: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/services/mercedes-body-repair-dubai?utm_source=mercedes_phase_2&gclid=phase2-example"
+        },
+        {
+          "name": "source-en-body-repair-77: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/services/mercedes-body-repair-dubai?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank="
+        },
+        {
+          "name": "source-en-body-repair-79: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/services/mercedes-body-repair-dubai?utm_source=mercedes_phase_2&gclid=phase2-example"
+        },
+        {
+          "name": "source-en-body-repair-80: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/services/mercedes-body-repair-dubai?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank="
+        },
+        {
+          "name": "source-en-body-repair-82: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/services/mercedes-body-repair-dubai?utm_source=mercedes_phase_2&gclid=phase2-example"
+        },
+        {
+          "name": "source-en-body-repair-83: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/services/mercedes-body-repair-dubai?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank="
+        },
+        {
+          "name": "source-en-body-repair-85: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/services/mercedes-body-repair-dubai?utm_source=mercedes_phase_2&gclid=phase2-example"
+        },
+        {
+          "name": "source-en-body-repair-86: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/services/mercedes-body-repair-dubai?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank="
+        },
+        {
+          "name": "source-en-body-repair-88: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/services/mercedes-body-repair-dubai?utm_source=mercedes_phase_2&gclid=phase2-example"
+        },
+        {
+          "name": "source-en-body-repair-89: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/services/mercedes-body-repair-dubai?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank="
+        },
+        {
+          "name": "source-en-body-repair-91: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/services/mercedes-body-repair-dubai?utm_source=mercedes_phase_2&gclid=phase2-example"
+        },
+        {
+          "name": "source-en-body-repair-92: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/services/mercedes-body-repair-dubai?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank="
+        },
+        {
+          "name": "source-en-body-repair-94: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/services/mercedes-body-repair-dubai?utm_source=mercedes_phase_2&gclid=phase2-example"
+        },
+        {
+          "name": "source-en-body-repair-95: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/services/mercedes-body-repair-dubai?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank="
+        },
+        {
+          "name": "source-ar-battery-replacement-97: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-battery-replacement-dubai?utm_source=mercedes_phase_2&gclid=phase2-example"
+        },
+        {
+          "name": "source-ar-battery-replacement-98: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-battery-replacement-dubai?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank="
+        },
+        {
+          "name": "source-ar-battery-replacement-100: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-battery-replacement-dubai?utm_source=mercedes_phase_2&gclid=phase2-example"
+        },
+        {
+          "name": "source-ar-battery-replacement-101: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-battery-replacement-dubai?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank="
+        },
+        {
+          "name": "source-ar-battery-replacement-103: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-battery-replacement-dubai?utm_source=mercedes_phase_2&gclid=phase2-example"
+        },
+        {
+          "name": "source-ar-battery-replacement-104: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-battery-replacement-dubai?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank="
+        },
+        {
+          "name": "source-ar-battery-replacement-106: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-battery-replacement-dubai?utm_source=mercedes_phase_2&gclid=phase2-example"
+        },
+        {
+          "name": "source-ar-battery-replacement-107: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-battery-replacement-dubai?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank="
+        },
+        {
+          "name": "source-ar-battery-replacement-109: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-battery-replacement-dubai?utm_source=mercedes_phase_2&gclid=phase2-example"
+        },
+        {
+          "name": "source-ar-battery-replacement-110: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-battery-replacement-dubai?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank="
+        },
+        {
+          "name": "source-ar-battery-replacement-112: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-battery-replacement-dubai?utm_source=mercedes_phase_2&gclid=phase2-example"
+        },
+        {
+          "name": "source-ar-battery-replacement-113: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-battery-replacement-dubai?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank="
+        },
+        {
+          "name": "source-ar-battery-replacement-115: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-battery-replacement-dubai?utm_source=mercedes_phase_2&gclid=phase2-example"
+        },
+        {
+          "name": "source-ar-battery-replacement-116: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-battery-replacement-dubai?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank="
+        },
+        {
+          "name": "source-ar-battery-replacement-118: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-battery-replacement-dubai?utm_source=mercedes_phase_2&gclid=phase2-example"
+        },
+        {
+          "name": "source-ar-battery-replacement-119: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-battery-replacement-dubai?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank="
+        },
+        {
+          "name": "source-ar-battery-replacement-121: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-battery-replacement-dubai?utm_source=mercedes_phase_2&gclid=phase2-example"
+        },
+        {
+          "name": "source-ar-battery-replacement-122: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-battery-replacement-dubai?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank="
+        },
+        {
+          "name": "source-ar-battery-replacement-124: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-battery-replacement-dubai?utm_source=mercedes_phase_2&gclid=phase2-example"
+        },
+        {
+          "name": "source-ar-battery-replacement-125: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-battery-replacement-dubai?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank="
+        },
+        {
+          "name": "source-ar-battery-replacement-127: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-battery-replacement-dubai?utm_source=mercedes_phase_2&gclid=phase2-example"
+        },
+        {
+          "name": "source-ar-battery-replacement-128: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-battery-replacement-dubai?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank="
+        },
+        {
+          "name": "source-ar-battery-replacement-130: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-battery-replacement-dubai?utm_source=mercedes_phase_2&gclid=phase2-example"
+        },
+        {
+          "name": "source-ar-battery-replacement-131: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-battery-replacement-dubai?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank="
+        },
+        {
+          "name": "source-ar-battery-replacement-133: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-battery-replacement-dubai?utm_source=mercedes_phase_2&gclid=phase2-example"
+        },
+        {
+          "name": "source-ar-battery-replacement-134: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-battery-replacement-dubai?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank="
+        },
+        {
+          "name": "source-ar-battery-replacement-136: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-battery-replacement-dubai?utm_source=mercedes_phase_2&gclid=phase2-example"
+        },
+        {
+          "name": "source-ar-battery-replacement-137: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-battery-replacement-dubai?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank="
+        },
+        {
+          "name": "source-ar-battery-replacement-139: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-battery-replacement-dubai?utm_source=mercedes_phase_2&gclid=phase2-example"
+        },
+        {
+          "name": "source-ar-battery-replacement-140: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-battery-replacement-dubai?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank="
+        },
+        {
+          "name": "source-ar-battery-replacement-142: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-battery-replacement-dubai?utm_source=mercedes_phase_2&gclid=phase2-example"
+        },
+        {
+          "name": "source-ar-battery-replacement-143: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-battery-replacement-dubai?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank="
+        },
+        {
+          "name": "source-ar-mechanical-repair-145: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai?utm_source=mercedes_phase_2&gclid=phase2-example"
+        },
+        {
+          "name": "source-ar-mechanical-repair-146: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank="
+        },
+        {
+          "name": "source-ar-mechanical-repair-148: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai?utm_source=mercedes_phase_2&gclid=phase2-example"
+        },
+        {
+          "name": "source-ar-mechanical-repair-149: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank="
+        },
+        {
+          "name": "source-ar-mechanical-repair-151: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai?utm_source=mercedes_phase_2&gclid=phase2-example"
+        },
+        {
+          "name": "source-ar-mechanical-repair-152: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank="
+        },
+        {
+          "name": "source-ar-mechanical-repair-154: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai?utm_source=mercedes_phase_2&gclid=phase2-example"
+        },
+        {
+          "name": "source-ar-mechanical-repair-155: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank="
+        },
+        {
+          "name": "source-ar-mechanical-repair-157: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai?utm_source=mercedes_phase_2&gclid=phase2-example"
+        },
+        {
+          "name": "source-ar-mechanical-repair-158: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank="
+        },
+        {
+          "name": "source-ar-mechanical-repair-160: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai?utm_source=mercedes_phase_2&gclid=phase2-example"
+        },
+        {
+          "name": "source-ar-mechanical-repair-161: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank="
+        },
+        {
+          "name": "source-ar-mechanical-repair-163: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai?utm_source=mercedes_phase_2&gclid=phase2-example"
+        },
+        {
+          "name": "source-ar-mechanical-repair-164: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank="
+        },
+        {
+          "name": "source-ar-mechanical-repair-166: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai?utm_source=mercedes_phase_2&gclid=phase2-example"
+        },
+        {
+          "name": "source-ar-mechanical-repair-167: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank="
+        },
+        {
+          "name": "source-ar-mechanical-repair-169: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai?utm_source=mercedes_phase_2&gclid=phase2-example"
+        },
+        {
+          "name": "source-ar-mechanical-repair-170: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank="
+        },
+        {
+          "name": "source-ar-mechanical-repair-172: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai?utm_source=mercedes_phase_2&gclid=phase2-example"
+        },
+        {
+          "name": "source-ar-mechanical-repair-173: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank="
+        },
+        {
+          "name": "source-ar-mechanical-repair-175: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai?utm_source=mercedes_phase_2&gclid=phase2-example"
+        },
+        {
+          "name": "source-ar-mechanical-repair-176: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank="
+        },
+        {
+          "name": "source-ar-mechanical-repair-178: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai?utm_source=mercedes_phase_2&gclid=phase2-example"
+        },
+        {
+          "name": "source-ar-mechanical-repair-179: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank="
+        },
+        {
+          "name": "source-ar-mechanical-repair-181: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai?utm_source=mercedes_phase_2&gclid=phase2-example"
+        },
+        {
+          "name": "source-ar-mechanical-repair-182: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank="
+        },
+        {
+          "name": "source-ar-mechanical-repair-184: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai?utm_source=mercedes_phase_2&gclid=phase2-example"
+        },
+        {
+          "name": "source-ar-mechanical-repair-185: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank="
+        },
+        {
+          "name": "source-ar-mechanical-repair-187: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai?utm_source=mercedes_phase_2&gclid=phase2-example"
+        },
+        {
+          "name": "source-ar-mechanical-repair-188: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank="
+        },
+        {
+          "name": "source-ar-mechanical-repair-190: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai?utm_source=mercedes_phase_2&gclid=phase2-example"
+        },
+        {
+          "name": "source-ar-mechanical-repair-191: direct permanent redirect preserves raw query",
+          "pass": false,
+          "details": "Expected 308 https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai?tag=a&tag=b&encoded=%2F%2B%26%3D&space=a%20b&plus=a+b&blank="
+        }
+      ]
+    }
+  ]
+}

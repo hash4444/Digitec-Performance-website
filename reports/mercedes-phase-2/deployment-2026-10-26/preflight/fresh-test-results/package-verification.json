@@ -1,0 +1,36 @@
+{
+  "passed": true,
+  "required_artifacts": [
+    "README.md",
+    "cloudflare-review.md",
+    "verification-and-rollback.md",
+    "routing/README.md",
+    "routing/redirect-proposals.json",
+    "routing/http-summary.json",
+    "routing/local-test-results.json",
+    "routing/conflict-check.json",
+    "hub/README.md",
+    "hub/mercedes-hub-minimal.patch",
+    "hub/validation.json",
+    "search-console/README.md",
+    "search-console/api-readonly-request-templates.json",
+    "search-console/indexed-inspection-observations.json"
+  ],
+  "markdown_files_checked": 8,
+  "local_markdown_links_resolve": true,
+  "protected_source_files_checked": 283,
+  "protected_source_drift": [],
+  "rule_payloads_disabled": 4,
+  "fresh_http_summary": {
+    "cases": 326,
+    "networkRequests": 564,
+    "assertions": 733,
+    "passed": 733,
+    "failed": 0,
+    "sourceCases": 192,
+    "protectedOilCases": 48
+  },
+  "capture_matches_proposal_hash": true,
+  "indexed_inspections_saved": 11,
+  "no_live_after_state_claimed": true
+}

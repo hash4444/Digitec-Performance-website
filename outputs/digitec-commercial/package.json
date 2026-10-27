@@ -1,0 +1,19 @@
+{
+  "name": "digitec-performance-commercial",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Deterministic seven-scene automotive commercial, original 2.5D assets and Canvas/FFmpeg pipeline",
+  "scripts": {
+    "preview": "node src/render.mjs --preview",
+    "render:vertical": "node src/render.mjs --format vertical",
+    "render:horizontal": "node src/render.mjs --format horizontal",
+    "render": "node src/render.mjs --format both",
+    "qa": "node src/qa.mjs",
+    "review": "node src/serve.mjs",
+    "package": "node src/package-source.mjs"
+  },
+  "dependencies": { "@napi-rs/canvas": "0.1.100" },
+  "devDependencies": { "jszip": "3.10.1" },
+  "engines": { "node": ">=20" }
+}

@@ -1,0 +1,1974 @@
+{
+  "sources": [
+    {
+      "path": "C:\\Users\\ADMIN\\Downloads\\digitecme.com-Performance-on-Search-2026-10-12.xlsx",
+      "sha256": "250d14da5ef12f5ee62582a8b5530c88d97e61fea96dc17685a9009fd09a65bd",
+      "sheet_summaries": {
+        "Chart": {
+          "headers": {
+            "A": "Date",
+            "B": "Clicks",
+            "C": "Impressions",
+            "D": "CTR",
+            "E": "Position"
+          },
+          "rows": 92,
+          "clicks": 0,
+          "impressions": 122,
+          "ctr": 0.0,
+          "impression_weighted_position_from_rounded_rows": 33.09426229508197
+        },
+        "Queries": {
+          "headers": {
+            "A": "Top queries",
+            "B": "Clicks",
+            "C": "Impressions",
+            "D": "CTR",
+            "E": "Position"
+          },
+          "rows": 19,
+          "clicks": 0,
+          "impressions": 113,
+          "ctr": 0.0,
+          "impression_weighted_position_from_rounded_rows": 35.30672566371681
+        },
+        "Pages": {
+          "headers": {
+            "A": "Top pages",
+            "B": "Clicks",
+            "C": "Impressions",
+            "D": "CTR",
+            "E": "Position"
+          },
+          "rows": 12,
+          "clicks": 0,
+          "impressions": 122,
+          "ctr": 0.0,
+          "impression_weighted_position_from_rounded_rows": 33.09655737704918
+        },
+        "Countries": {
+          "headers": {
+            "A": "Country",
+            "B": "Clicks",
+            "C": "Impressions",
+            "D": "CTR",
+            "E": "Position"
+          },
+          "rows": 1,
+          "clicks": 0,
+          "impressions": 122,
+          "ctr": 0.0,
+          "impression_weighted_position_from_rounded_rows": 33.1,
+          "top_by_clicks": [
+            {
+              "_row": 2,
+              "Country": "United Arab Emirates",
+              "Clicks": 0,
+              "Impressions": 122,
+              "CTR": 0,
+              "Position": 33.1
+            }
+          ]
+        },
+        "Devices": {
+          "headers": {
+            "A": "Device",
+            "B": "Clicks",
+            "C": "Impressions",
+            "D": "CTR",
+            "E": "Position"
+          },
+          "rows": 2,
+          "clicks": 0,
+          "impressions": 122,
+          "ctr": 0.0,
+          "impression_weighted_position_from_rounded_rows": 33.10204918032787,
+          "records": [
+            {
+              "_row": 2,
+              "Device": "Desktop",
+              "Clicks": 0,
+              "Impressions": 103,
+              "CTR": 0,
+              "Position": 36.48
+            },
+            {
+              "_row": 3,
+              "Device": "Mobile",
+              "Clicks": 0,
+              "Impressions": 19,
+              "CTR": 0,
+              "Position": 14.79
+            }
+          ]
+        },
+        "Search appearance": {
+          "headers": {
+            "A": "Search Appearance",
+            "B": "Clicks",
+            "C": "Impressions",
+            "D": "CTR",
+            "E": "Position"
+          },
+          "rows": 1,
+          "clicks": 0,
+          "impressions": 122,
+          "ctr": 0.0,
+          "impression_weighted_position_from_rounded_rows": 33.1,
+          "records": [
+            {
+              "_row": 2,
+              "Search Appearance": "Product snippets",
+              "Clicks": 0,
+              "Impressions": 122,
+              "CTR": 0,
+              "Position": 33.1
+            }
+          ]
+        },
+        "Filters": {
+          "headers": {
+            "A": "Filter",
+            "B": "Value"
+          },
+          "rows": 3,
+          "clicks": 0,
+          "impressions": 0,
+          "ctr": null,
+          "impression_weighted_position_from_rounded_rows": null,
+          "records": [
+            {
+              "_row": 2,
+              "Filter": "Search type",
+              "Value": "Web"
+            },
+            {
+              "_row": 3,
+              "Filter": "Date",
+              "Value": "Last 3 months"
+            },
+            {
+              "_row": 4,
+              "Filter": "Search appearance",
+              "Value": "Product snippets"
+            }
+          ]
+        }
+      },
+      "date_range": {
+        "start": "2026-07-10",
+        "end": "2026-10-09",
+        "days": 92,
+        "source_sheet": "Chart"
+      },
+      "date_head": [
+        {
+          "_row": 2,
+          "Date": "2026-07-10",
+          "Clicks": 0,
+          "Impressions": 0,
+          "CTR": "",
+          "Position": ""
+        },
+        {
+          "_row": 3,
+          "Date": "2026-07-11",
+          "Clicks": 0,
+          "Impressions": 0,
+          "CTR": "",
+          "Position": ""
+        },
+        {
+          "_row": 4,
+          "Date": "2026-07-12",
+          "Clicks": 0,
+          "Impressions": 0,
+          "CTR": "",
+          "Position": ""
+        }
+      ],
+      "date_tail": [
+        {
+          "_row": 91,
+          "Date": "2026-10-07",
+          "Clicks": 0,
+          "Impressions": 5,
+          "CTR": 0,
+          "Position": 43
+        },
+        {
+          "_row": 92,
+          "Date": "2026-10-08",
+          "Clicks": 0,
+          "Impressions": 1,
+          "CTR": 0,
+          "Position": 5
+        },
+        {
+          "_row": 93,
+          "Date": "2026-10-09",
+          "Clicks": 0,
+          "Impressions": 0,
+          "CTR": "",
+          "Position": ""
+        }
+      ],
+      "priority_queries": [
+        {
+          "target": "car paint protection",
+          "record": null
+        },
+        {
+          "target": "ceramic paint protection dubai",
+          "record": null
+        },
+        {
+          "target": "paint protection coating",
+          "record": null
+        },
+        {
+          "target": "ceramic paint protection",
+          "record": {
+            "_row": 2,
+            "Top queries": "ceramic paint protection",
+            "Clicks": 0,
+            "Impressions": 35,
+            "CTR": 0,
+            "Position": 36.11
+          }
+        },
+        {
+          "target": "car paint protection dubai",
+          "record": null
+        },
+        {
+          "target": "paint protection film near me",
+          "record": null
+        },
+        {
+          "target": "paint protection",
+          "record": {
+            "_row": 3,
+            "Top queries": "paint protection",
+            "Clicks": 0,
+            "Impressions": 32,
+            "CTR": 0,
+            "Position": 38.62
+          }
+        },
+        {
+          "target": "paint protection dubai",
+          "record": null
+        },
+        {
+          "target": "ceramic coating dubai",
+          "record": null
+        },
+        {
+          "target": "paint protection film dubai",
+          "record": null
+        },
+        {
+          "target": "ppf dubai",
+          "record": null
+        },
+        {
+          "target": "car polishing dubai",
+          "record": null
+        },
+        {
+          "target": "paint correction dubai",
+          "record": null
+        }
+      ],
+      "paint_queries": [
+        {
+          "_row": 2,
+          "Top queries": "ceramic paint protection",
+          "Clicks": 0,
+          "Impressions": 35,
+          "CTR": 0,
+          "Position": 36.11
+        },
+        {
+          "_row": 3,
+          "Top queries": "paint protection",
+          "Clicks": 0,
+          "Impressions": 32,
+          "CTR": 0,
+          "Position": 38.62
+        },
+        {
+          "_row": 4,
+          "Top queries": "car paint protection coating",
+          "Clicks": 0,
+          "Impressions": 11,
+          "CTR": 0,
+          "Position": 28.27
+        },
+        {
+          "_row": 5,
+          "Top queries": "clear film auto paint protection",
+          "Clicks": 0,
+          "Impressions": 8,
+          "CTR": 0,
+          "Position": 63.5
+        },
+        {
+          "_row": 6,
+          "Top queries": "ceramic coating",
+          "Clicks": 0,
+          "Impressions": 5,
+          "CTR": 0,
+          "Position": 36.6
+        },
+        {
+          "_row": 9,
+          "Top queries": "ceramic coating car polish",
+          "Clicks": 0,
+          "Impressions": 3,
+          "CTR": 0,
+          "Position": 59
+        },
+        {
+          "_row": 11,
+          "Top queries": "ceramic paint coating",
+          "Clicks": 0,
+          "Impressions": 1,
+          "CTR": 0,
+          "Position": 5
+        },
+        {
+          "_row": 14,
+          "Top queries": "ceramic protection for car",
+          "Clicks": 0,
+          "Impressions": 1,
+          "CTR": 0,
+          "Position": 7
+        },
+        {
+          "_row": 15,
+          "Top queries": "nano ceramic coating",
+          "Clicks": 0,
+          "Impressions": 1,
+          "CTR": 0,
+          "Position": 7
+        },
+        {
+          "_row": 16,
+          "Top queries": "ceramic car coating",
+          "Clicks": 0,
+          "Impressions": 1,
+          "CTR": 0,
+          "Position": 8
+        },
+        {
+          "_row": 17,
+          "Top queries": "car paint coating",
+          "Clicks": 0,
+          "Impressions": 1,
+          "CTR": 0,
+          "Position": 23
+        },
+        {
+          "_row": 18,
+          "Top queries": "car ceramic coating",
+          "Clicks": 0,
+          "Impressions": 1,
+          "CTR": 0,
+          "Position": 25
+        },
+        {
+          "_row": 19,
+          "Top queries": "paint protection film covering",
+          "Clicks": 0,
+          "Impressions": 1,
+          "CTR": 0,
+          "Position": 77
+        }
+      ],
+      "priority_pages": [
+        {
+          "_row": 2,
+          "Top pages": "https://digitecme.com/services/paint-protection-dubai",
+          "Clicks": 0,
+          "Impressions": 68,
+          "CTR": 0,
+          "Position": 37.6
+        },
+        {
+          "_row": 3,
+          "Top pages": "https://digitecme.com/services/ceramic-coating",
+          "Clicks": 0,
+          "Impressions": 25,
+          "CTR": 0,
+          "Position": 27.76
+        },
+        {
+          "_row": 4,
+          "Top pages": "https://digitecme.com/services/paint-protection-film",
+          "Clicks": 0,
+          "Impressions": 9,
+          "CTR": 0,
+          "Position": 65
+        }
+      ],
+      "top_queries_by_clicks": [
+        {
+          "_row": 2,
+          "Top queries": "ceramic paint protection",
+          "Clicks": 0,
+          "Impressions": 35,
+          "CTR": 0,
+          "Position": 36.11
+        },
+        {
+          "_row": 3,
+          "Top queries": "paint protection",
+          "Clicks": 0,
+          "Impressions": 32,
+          "CTR": 0,
+          "Position": 38.62
+        },
+        {
+          "_row": 4,
+          "Top queries": "car paint protection coating",
+          "Clicks": 0,
+          "Impressions": 11,
+          "CTR": 0,
+          "Position": 28.27
+        },
+        {
+          "_row": 5,
+          "Top queries": "clear film auto paint protection",
+          "Clicks": 0,
+          "Impressions": 8,
+          "CTR": 0,
+          "Position": 63.5
+        },
+        {
+          "_row": 6,
+          "Top queries": "ceramic coating",
+          "Clicks": 0,
+          "Impressions": 5,
+          "CTR": 0,
+          "Position": 36.6
+        },
+        {
+          "_row": 7,
+          "Top queries": "exhaust repair",
+          "Clicks": 0,
+          "Impressions": 4,
+          "CTR": 0,
+          "Position": 8
+        },
+        {
+          "_row": 8,
+          "Top queries": "power steering rack repair",
+          "Clicks": 0,
+          "Impressions": 4,
+          "CTR": 0,
+          "Position": 8.25
+        },
+        {
+          "_row": 9,
+          "Top queries": "ceramic coating car polish",
+          "Clicks": 0,
+          "Impressions": 3,
+          "CTR": 0,
+          "Position": 59
+        },
+        {
+          "_row": 10,
+          "Top queries": "rox01 soft close door",
+          "Clicks": 0,
+          "Impressions": 1,
+          "CTR": 0,
+          "Position": 4
+        },
+        {
+          "_row": 11,
+          "Top queries": "ceramic paint coating",
+          "Clicks": 0,
+          "Impressions": 1,
+          "CTR": 0,
+          "Position": 5
+        }
+      ],
+      "top_queries_by_impressions": [
+        {
+          "_row": 2,
+          "Top queries": "ceramic paint protection",
+          "Clicks": 0,
+          "Impressions": 35,
+          "CTR": 0,
+          "Position": 36.11
+        },
+        {
+          "_row": 3,
+          "Top queries": "paint protection",
+          "Clicks": 0,
+          "Impressions": 32,
+          "CTR": 0,
+          "Position": 38.62
+        },
+        {
+          "_row": 4,
+          "Top queries": "car paint protection coating",
+          "Clicks": 0,
+          "Impressions": 11,
+          "CTR": 0,
+          "Position": 28.27
+        },
+        {
+          "_row": 5,
+          "Top queries": "clear film auto paint protection",
+          "Clicks": 0,
+          "Impressions": 8,
+          "CTR": 0,
+          "Position": 63.5
+        },
+        {
+          "_row": 6,
+          "Top queries": "ceramic coating",
+          "Clicks": 0,
+          "Impressions": 5,
+          "CTR": 0,
+          "Position": 36.6
+        },
+        {
+          "_row": 7,
+          "Top queries": "exhaust repair",
+          "Clicks": 0,
+          "Impressions": 4,
+          "CTR": 0,
+          "Position": 8
+        },
+        {
+          "_row": 8,
+          "Top queries": "power steering rack repair",
+          "Clicks": 0,
+          "Impressions": 4,
+          "CTR": 0,
+          "Position": 8.25
+        },
+        {
+          "_row": 9,
+          "Top queries": "ceramic coating car polish",
+          "Clicks": 0,
+          "Impressions": 3,
+          "CTR": 0,
+          "Position": 59
+        },
+        {
+          "_row": 10,
+          "Top queries": "rox01 soft close door",
+          "Clicks": 0,
+          "Impressions": 1,
+          "CTR": 0,
+          "Position": 4
+        },
+        {
+          "_row": 11,
+          "Top queries": "ceramic paint coating",
+          "Clicks": 0,
+          "Impressions": 1,
+          "CTR": 0,
+          "Position": 5
+        }
+      ],
+      "top_pages_by_clicks": [
+        {
+          "_row": 2,
+          "Top pages": "https://digitecme.com/services/paint-protection-dubai",
+          "Clicks": 0,
+          "Impressions": 68,
+          "CTR": 0,
+          "Position": 37.6
+        },
+        {
+          "_row": 3,
+          "Top pages": "https://digitecme.com/services/ceramic-coating",
+          "Clicks": 0,
+          "Impressions": 25,
+          "CTR": 0,
+          "Position": 27.76
+        },
+        {
+          "_row": 4,
+          "Top pages": "https://digitecme.com/services/paint-protection-film",
+          "Clicks": 0,
+          "Impressions": 9,
+          "CTR": 0,
+          "Position": 65
+        },
+        {
+          "_row": 5,
+          "Top pages": "https://digitecme.com/services/exhaust-repair-dubai",
+          "Clicks": 0,
+          "Impressions": 6,
+          "CTR": 0,
+          "Position": 8.33
+        },
+        {
+          "_row": 6,
+          "Top pages": "https://digitecme.com/services/soft-close-door-repair-dubai",
+          "Clicks": 0,
+          "Impressions": 4,
+          "CTR": 0,
+          "Position": 3.25
+        },
+        {
+          "_row": 7,
+          "Top pages": "https://digitecme.com/services/steering-repair-dubai",
+          "Clicks": 0,
+          "Impressions": 4,
+          "CTR": 0,
+          "Position": 8.25
+        },
+        {
+          "_row": 8,
+          "Top pages": "https://digitecme.com/",
+          "Clicks": 0,
+          "Impressions": 1,
+          "CTR": 0,
+          "Position": 1
+        },
+        {
+          "_row": 9,
+          "Top pages": "https://digitecme.com/services",
+          "Clicks": 0,
+          "Impressions": 1,
+          "CTR": 0,
+          "Position": 4
+        },
+        {
+          "_row": 10,
+          "Top pages": "https://digitecme.com/services/car-ac-repair-dubai",
+          "Clicks": 0,
+          "Impressions": 1,
+          "CTR": 0,
+          "Position": 6
+        },
+        {
+          "_row": 11,
+          "Top pages": "https://digitecme.com/brands/land-rover-service-dubai/battery-replacement",
+          "Clicks": 0,
+          "Impressions": 1,
+          "CTR": 0,
+          "Position": 7
+        }
+      ],
+      "top_pages_by_impressions": [
+        {
+          "_row": 2,
+          "Top pages": "https://digitecme.com/services/paint-protection-dubai",
+          "Clicks": 0,
+          "Impressions": 68,
+          "CTR": 0,
+          "Position": 37.6
+        },
+        {
+          "_row": 3,
+          "Top pages": "https://digitecme.com/services/ceramic-coating",
+          "Clicks": 0,
+          "Impressions": 25,
+          "CTR": 0,
+          "Position": 27.76
+        },
+        {
+          "_row": 4,
+          "Top pages": "https://digitecme.com/services/paint-protection-film",
+          "Clicks": 0,
+          "Impressions": 9,
+          "CTR": 0,
+          "Position": 65
+        },
+        {
+          "_row": 5,
+          "Top pages": "https://digitecme.com/services/exhaust-repair-dubai",
+          "Clicks": 0,
+          "Impressions": 6,
+          "CTR": 0,
+          "Position": 8.33
+        },
+        {
+          "_row": 6,
+          "Top pages": "https://digitecme.com/services/soft-close-door-repair-dubai",
+          "Clicks": 0,
+          "Impressions": 4,
+          "CTR": 0,
+          "Position": 3.25
+        },
+        {
+          "_row": 7,
+          "Top pages": "https://digitecme.com/services/steering-repair-dubai",
+          "Clicks": 0,
+          "Impressions": 4,
+          "CTR": 0,
+          "Position": 8.25
+        },
+        {
+          "_row": 8,
+          "Top pages": "https://digitecme.com/",
+          "Clicks": 0,
+          "Impressions": 1,
+          "CTR": 0,
+          "Position": 1
+        },
+        {
+          "_row": 9,
+          "Top pages": "https://digitecme.com/services",
+          "Clicks": 0,
+          "Impressions": 1,
+          "CTR": 0,
+          "Position": 4
+        },
+        {
+          "_row": 10,
+          "Top pages": "https://digitecme.com/services/car-ac-repair-dubai",
+          "Clicks": 0,
+          "Impressions": 1,
+          "CTR": 0,
+          "Position": 6
+        },
+        {
+          "_row": 11,
+          "Top pages": "https://digitecme.com/brands/land-rover-service-dubai/battery-replacement",
+          "Clicks": 0,
+          "Impressions": 1,
+          "CTR": 0,
+          "Position": 7
+        }
+      ],
+      "interpretation_limits": [
+        "Separate Queries and Pages worksheets do not establish a query-to-page association or prove cannibalization.",
+        "Dimension totals must not be added across worksheets or overlapping export scopes.",
+        "Query table totals may differ from the chart total because exported query rows do not represent all search activity.",
+        "Aggregated position is reconstructed from rounded exported daily/row values and is approximate."
+      ]
+    },
+    {
+      "path": "C:\\Users\\ADMIN\\Downloads\\digitecme.com-Performance-on-Search-2026-10-12 (1).xlsx",
+      "sha256": "3fcbcb796e4670809bc44d52852369a58bf8650d6577c496a1f71a996573945e",
+      "sheet_summaries": {
+        "Chart": {
+          "headers": {
+            "A": "Date",
+            "B": "Clicks",
+            "C": "Impressions",
+            "D": "CTR",
+            "E": "Position"
+          },
+          "rows": 92,
+          "clicks": 515,
+          "impressions": 108445,
+          "ctr": 0.004748951081193231,
+          "impression_weighted_position_from_rounded_rows": 22.130547282032367
+        },
+        "Queries": {
+          "headers": {
+            "A": "Top queries",
+            "B": "Clicks",
+            "C": "Impressions",
+            "D": "CTR",
+            "E": "Position"
+          },
+          "rows": 1000,
+          "clicks": 138,
+          "impressions": 64843,
+          "ctr": 0.002128217386610737,
+          "impression_weighted_position_from_rounded_rows": 24.972293231343397
+        },
+        "Pages": {
+          "headers": {
+            "A": "Top pages",
+            "B": "Clicks",
+            "C": "Impressions",
+            "D": "CTR",
+            "E": "Position"
+          },
+          "rows": 1000,
+          "clicks": 519,
+          "impressions": 116261,
+          "ctr": 0.004464093720164114,
+          "impression_weighted_position_from_rounded_rows": 23.590747972234887
+        },
+        "Countries": {
+          "headers": {
+            "A": "Country",
+            "B": "Clicks",
+            "C": "Impressions",
+            "D": "CTR",
+            "E": "Position"
+          },
+          "rows": 175,
+          "clicks": 515,
+          "impressions": 108445,
+          "ctr": 0.004748951081193231,
+          "impression_weighted_position_from_rounded_rows": 22.1348025266264,
+          "top_by_clicks": [
+            {
+              "_row": 2,
+              "Country": "United Arab Emirates",
+              "Clicks": 436,
+              "Impressions": 100289,
+              "CTR": 0.0043,
+              "Position": 22.72
+            },
+            {
+              "_row": 3,
+              "Country": "Jordan",
+              "Clicks": 8,
+              "Impressions": 79,
+              "CTR": 0.1013,
+              "Position": 12.75
+            },
+            {
+              "_row": 4,
+              "Country": "Saudi Arabia",
+              "Clicks": 7,
+              "Impressions": 367,
+              "CTR": 0.0191,
+              "Position": 10.38
+            },
+            {
+              "_row": 5,
+              "Country": "Taiwan",
+              "Clicks": 5,
+              "Impressions": 26,
+              "CTR": 0.1923,
+              "Position": 11.65
+            },
+            {
+              "_row": 6,
+              "Country": "Germany",
+              "Clicks": 4,
+              "Impressions": 242,
+              "CTR": 0.0165,
+              "Position": 9.02
+            },
+            {
+              "_row": 7,
+              "Country": "Pakistan",
+              "Clicks": 3,
+              "Impressions": 227,
+              "CTR": 0.0132,
+              "Position": 18.86
+            },
+            {
+              "_row": 8,
+              "Country": "Oman",
+              "Clicks": 3,
+              "Impressions": 134,
+              "CTR": 0.022400000000000003,
+              "Position": 12.23
+            },
+            {
+              "_row": 9,
+              "Country": "Syria",
+              "Clicks": 3,
+              "Impressions": 57,
+              "CTR": 0.0526,
+              "Position": 7.42
+            },
+            {
+              "_row": 10,
+              "Country": "India",
+              "Clicks": 2,
+              "Impressions": 889,
+              "CTR": 0.0022,
+              "Position": 26.89
+            },
+            {
+              "_row": 11,
+              "Country": "United Kingdom",
+              "Clicks": 2,
+              "Impressions": 619,
+              "CTR": 0.0032,
+              "Position": 16.11
+            }
+          ]
+        },
+        "Devices": {
+          "headers": {
+            "A": "Device",
+            "B": "Clicks",
+            "C": "Impressions",
+            "D": "CTR",
+            "E": "Position"
+          },
+          "rows": 3,
+          "clicks": 515,
+          "impressions": 108445,
+          "ctr": 0.004748951081193231,
+          "impression_weighted_position_from_rounded_rows": 22.13769394624003,
+          "records": [
+            {
+              "_row": 2,
+              "Device": "Mobile",
+              "Clicks": 308,
+              "Impressions": 37621,
+              "CTR": 0.008199999999999999,
+              "Position": 13.75
+            },
+            {
+              "_row": 3,
+              "Device": "Desktop",
+              "Clicks": 204,
+              "Impressions": 70141,
+              "CTR": 0.0029,
+              "Position": 26.6
+            },
+            {
+              "_row": 4,
+              "Device": "Tablet",
+              "Clicks": 3,
+              "Impressions": 683,
+              "CTR": 0.0044,
+              "Position": 25.89
+            }
+          ]
+        },
+        "Search appearance": {
+          "headers": {
+            "A": "Search Appearance",
+            "B": "Clicks",
+            "C": "Impressions",
+            "D": "CTR",
+            "E": "Position"
+          },
+          "rows": 1,
+          "clicks": 0,
+          "impressions": 122,
+          "ctr": 0.0,
+          "impression_weighted_position_from_rounded_rows": 33.1,
+          "records": [
+            {
+              "_row": 2,
+              "Search Appearance": "Product snippets",
+              "Clicks": 0,
+              "Impressions": 122,
+              "CTR": 0,
+              "Position": 33.1
+            }
+          ]
+        },
+        "Filters": {
+          "headers": {
+            "A": "Filter",
+            "B": "Value"
+          },
+          "rows": 2,
+          "clicks": 0,
+          "impressions": 0,
+          "ctr": null,
+          "impression_weighted_position_from_rounded_rows": null,
+          "records": [
+            {
+              "_row": 2,
+              "Filter": "Search type",
+              "Value": "Web"
+            },
+            {
+              "_row": 3,
+              "Filter": "Date",
+              "Value": "Last 3 months"
+            }
+          ]
+        }
+      },
+      "date_range": {
+        "start": "2026-07-10",
+        "end": "2026-10-09",
+        "days": 92,
+        "source_sheet": "Chart"
+      },
+      "date_head": [
+        {
+          "_row": 2,
+          "Date": "2026-07-10",
+          "Clicks": 2,
+          "Impressions": 409,
+          "CTR": 0.0049,
+          "Position": 32
+        },
+        {
+          "_row": 3,
+          "Date": "2026-07-11",
+          "Clicks": 4,
+          "Impressions": 467,
+          "CTR": 0.0086,
+          "Position": 32.5
+        },
+        {
+          "_row": 4,
+          "Date": "2026-07-12",
+          "Clicks": 0,
+          "Impressions": 479,
+          "CTR": 0,
+          "Position": 32.1
+        }
+      ],
+      "date_tail": [
+        {
+          "_row": 91,
+          "Date": "2026-10-07",
+          "Clicks": 10,
+          "Impressions": 1967,
+          "CTR": 0.0051,
+          "Position": 18.1
+        },
+        {
+          "_row": 92,
+          "Date": "2026-10-08",
+          "Clicks": 6,
+          "Impressions": 1678,
+          "CTR": 0.0036,
+          "Position": 15.2
+        },
+        {
+          "_row": 93,
+          "Date": "2026-10-09",
+          "Clicks": 6,
+          "Impressions": 1151,
+          "CTR": 0.0052,
+          "Position": 11.4
+        }
+      ],
+      "priority_queries": [
+        {
+          "target": "car paint protection",
+          "record": {
+            "_row": 72,
+            "Top queries": "car paint protection",
+            "Clicks": 0,
+            "Impressions": 471,
+            "CTR": 0,
+            "Position": 39.86
+          }
+        },
+        {
+          "target": "ceramic paint protection dubai",
+          "record": {
+            "_row": 87,
+            "Top queries": "ceramic paint protection dubai",
+            "Clicks": 0,
+            "Impressions": 329,
+            "CTR": 0,
+            "Position": 32.21
+          }
+        },
+        {
+          "target": "paint protection coating",
+          "record": {
+            "_row": 88,
+            "Top queries": "paint protection coating",
+            "Clicks": 0,
+            "Impressions": 323,
+            "CTR": 0,
+            "Position": 31.44
+          }
+        },
+        {
+          "target": "ceramic paint protection",
+          "record": {
+            "_row": 107,
+            "Top queries": "ceramic paint protection",
+            "Clicks": 0,
+            "Impressions": 217,
+            "CTR": 0,
+            "Position": 37.12
+          }
+        },
+        {
+          "target": "car paint protection dubai",
+          "record": {
+            "_row": 108,
+            "Top queries": "car paint protection dubai",
+            "Clicks": 0,
+            "Impressions": 216,
+            "CTR": 0,
+            "Position": 30.36
+          }
+        },
+        {
+          "target": "paint protection film near me",
+          "record": {
+            "_row": 115,
+            "Top queries": "paint protection film near me",
+            "Clicks": 0,
+            "Impressions": 191,
+            "CTR": 0,
+            "Position": 21.13
+          }
+        },
+        {
+          "target": "paint protection",
+          "record": {
+            "_row": 119,
+            "Top queries": "paint protection",
+            "Clicks": 0,
+            "Impressions": 189,
+            "CTR": 0,
+            "Position": 40.11
+          }
+        },
+        {
+          "target": "paint protection dubai",
+          "record": {
+            "_row": 170,
+            "Top queries": "paint protection dubai",
+            "Clicks": 0,
+            "Impressions": 116,
+            "CTR": 0,
+            "Position": 35.23
+          }
+        },
+        {
+          "target": "ceramic coating dubai",
+          "record": {
+            "_row": 384,
+            "Top queries": "ceramic coating dubai",
+            "Clicks": 0,
+            "Impressions": 53,
+            "CTR": 0,
+            "Position": 30.94
+          }
+        },
+        {
+          "target": "paint protection film dubai",
+          "record": {
+            "_row": 16,
+            "Top queries": "paint protection film dubai",
+            "Clicks": 2,
+            "Impressions": 50,
+            "CTR": 0.04,
+            "Position": 29.72
+          }
+        },
+        {
+          "target": "ppf dubai",
+          "record": {
+            "_row": 694,
+            "Top queries": "ppf dubai",
+            "Clicks": 0,
+            "Impressions": 28,
+            "CTR": 0,
+            "Position": 23.25
+          }
+        },
+        {
+          "target": "car polishing dubai",
+          "record": null
+        },
+        {
+          "target": "paint correction dubai",
+          "record": null
+        }
+      ],
+      "paint_queries": [
+        {
+          "_row": 16,
+          "Top queries": "paint protection film dubai",
+          "Clicks": 2,
+          "Impressions": 50,
+          "CTR": 0.04,
+          "Position": 29.72
+        },
+        {
+          "_row": 72,
+          "Top queries": "car paint protection",
+          "Clicks": 0,
+          "Impressions": 471,
+          "CTR": 0,
+          "Position": 39.86
+        },
+        {
+          "_row": 87,
+          "Top queries": "ceramic paint protection dubai",
+          "Clicks": 0,
+          "Impressions": 329,
+          "CTR": 0,
+          "Position": 32.21
+        },
+        {
+          "_row": 88,
+          "Top queries": "paint protection coating",
+          "Clicks": 0,
+          "Impressions": 323,
+          "CTR": 0,
+          "Position": 31.44
+        },
+        {
+          "_row": 107,
+          "Top queries": "ceramic paint protection",
+          "Clicks": 0,
+          "Impressions": 217,
+          "CTR": 0,
+          "Position": 37.12
+        },
+        {
+          "_row": 108,
+          "Top queries": "car paint protection dubai",
+          "Clicks": 0,
+          "Impressions": 216,
+          "CTR": 0,
+          "Position": 30.36
+        },
+        {
+          "_row": 115,
+          "Top queries": "paint protection film near me",
+          "Clicks": 0,
+          "Impressions": 191,
+          "CTR": 0,
+          "Position": 21.13
+        },
+        {
+          "_row": 119,
+          "Top queries": "paint protection",
+          "Clicks": 0,
+          "Impressions": 189,
+          "CTR": 0,
+          "Position": 40.11
+        },
+        {
+          "_row": 170,
+          "Top queries": "paint protection dubai",
+          "Clicks": 0,
+          "Impressions": 116,
+          "CTR": 0,
+          "Position": 35.23
+        },
+        {
+          "_row": 173,
+          "Top queries": "paint protection film",
+          "Clicks": 0,
+          "Impressions": 115,
+          "CTR": 0,
+          "Position": 61.46
+        },
+        {
+          "_row": 206,
+          "Top queries": "professional paint protection film in dubai",
+          "Clicks": 0,
+          "Impressions": 97,
+          "CTR": 0,
+          "Position": 22.88
+        },
+        {
+          "_row": 212,
+          "Top queries": "car paint protection coating",
+          "Clicks": 0,
+          "Impressions": 96,
+          "CTR": 0,
+          "Position": 30.07
+        },
+        {
+          "_row": 235,
+          "Top queries": "paint protection film in deira dubai",
+          "Clicks": 0,
+          "Impressions": 85,
+          "CTR": 0,
+          "Position": 33.87
+        },
+        {
+          "_row": 264,
+          "Top queries": "car paint protection film",
+          "Clicks": 0,
+          "Impressions": 76,
+          "CTR": 0,
+          "Position": 35.41
+        },
+        {
+          "_row": 277,
+          "Top queries": "best paint protection film al murar",
+          "Clicks": 0,
+          "Impressions": 73,
+          "CTR": 0,
+          "Position": 71.58
+        },
+        {
+          "_row": 334,
+          "Top queries": "paint protection film in naif dubai",
+          "Clicks": 0,
+          "Impressions": 61,
+          "CTR": 0,
+          "Position": 44.56
+        },
+        {
+          "_row": 342,
+          "Top queries": "ppf protection dubai",
+          "Clicks": 0,
+          "Impressions": 59,
+          "CTR": 0,
+          "Position": 29.9
+        },
+        {
+          "_row": 344,
+          "Top queries": "self healing ppf",
+          "Clicks": 0,
+          "Impressions": 59,
+          "CTR": 0,
+          "Position": 44.19
+        },
+        {
+          "_row": 350,
+          "Top queries": "paint protection film ppf",
+          "Clicks": 0,
+          "Impressions": 58,
+          "CTR": 0,
+          "Position": 36.62
+        },
+        {
+          "_row": 357,
+          "Top queries": "ceramic coating in dubai",
+          "Clicks": 0,
+          "Impressions": 57,
+          "CTR": 0,
+          "Position": 53.12
+        },
+        {
+          "_row": 384,
+          "Top queries": "ceramic coating dubai",
+          "Clicks": 0,
+          "Impressions": 53,
+          "CTR": 0,
+          "Position": 30.94
+        },
+        {
+          "_row": 387,
+          "Top queries": "stek dynoprism paint protection film dubai uae",
+          "Clicks": 0,
+          "Impressions": 53,
+          "CTR": 0,
+          "Position": 59.21
+        },
+        {
+          "_row": 414,
+          "Top queries": "ppf spectre",
+          "Clicks": 0,
+          "Impressions": 50,
+          "CTR": 0,
+          "Position": 45.16
+        },
+        {
+          "_row": 469,
+          "Top queries": "paint protection film installers",
+          "Clicks": 0,
+          "Impressions": 43,
+          "CTR": 0,
+          "Position": 30.35
+        },
+        {
+          "_row": 487,
+          "Top queries": "paint protection films",
+          "Clicks": 0,
+          "Impressions": 41,
+          "CTR": 0,
+          "Position": 61.83
+        },
+        {
+          "_row": 498,
+          "Top queries": "car ceramic coating",
+          "Clicks": 0,
+          "Impressions": 40,
+          "CTR": 0,
+          "Position": 40.33
+        },
+        {
+          "_row": 521,
+          "Top queries": "automotive paint protection",
+          "Clicks": 0,
+          "Impressions": 38,
+          "CTR": 0,
+          "Position": 35.08
+        },
+        {
+          "_row": 634,
+          "Top queries": "ceramic coating",
+          "Clicks": 0,
+          "Impressions": 31,
+          "CTR": 0,
+          "Position": 29.58
+        },
+        {
+          "_row": 637,
+          "Top queries": "vehicle paint protection",
+          "Clicks": 0,
+          "Impressions": 31,
+          "CTR": 0,
+          "Position": 37.52
+        },
+        {
+          "_row": 648,
+          "Top queries": "car paint protection film near me",
+          "Clicks": 0,
+          "Impressions": 30,
+          "CTR": 0,
+          "Position": 12.03
+        },
+        {
+          "_row": 653,
+          "Top queries": "car paint protection film artarmon",
+          "Clicks": 0,
+          "Impressions": 30,
+          "CTR": 0,
+          "Position": 21.93
+        },
+        {
+          "_row": 661,
+          "Top queries": "paint protection solutions",
+          "Clicks": 0,
+          "Impressions": 30,
+          "CTR": 0,
+          "Position": 38.7
+        },
+        {
+          "_row": 682,
+          "Top queries": "car paint protection in dubai",
+          "Clicks": 0,
+          "Impressions": 29,
+          "CTR": 0,
+          "Position": 28.03
+        },
+        {
+          "_row": 694,
+          "Top queries": "ppf dubai",
+          "Clicks": 0,
+          "Impressions": 28,
+          "CTR": 0,
+          "Position": 23.25
+        },
+        {
+          "_row": 722,
+          "Top queries": "professional ppf service dubai",
+          "Clicks": 0,
+          "Impressions": 27,
+          "CTR": 0,
+          "Position": 34.07
+        },
+        {
+          "_row": 723,
+          "Top queries": "self healing paint protection film",
+          "Clicks": 0,
+          "Impressions": 27,
+          "CTR": 0,
+          "Position": 35.7
+        },
+        {
+          "_row": 724,
+          "Top queries": "premium ppf service dubai",
+          "Clicks": 0,
+          "Impressions": 27,
+          "CTR": 0,
+          "Position": 36.22
+        },
+        {
+          "_row": 771,
+          "Top queries": "paint protection film service dubai",
+          "Clicks": 0,
+          "Impressions": 25,
+          "CTR": 0,
+          "Position": 44.92
+        },
+        {
+          "_row": 842,
+          "Top queries": "best paint protection film service dubai",
+          "Clicks": 0,
+          "Impressions": 22,
+          "CTR": 0,
+          "Position": 49.32
+        },
+        {
+          "_row": 864,
+          "Top queries": "paint protection film service in dubai",
+          "Clicks": 0,
+          "Impressions": 21,
+          "CTR": 0,
+          "Position": 43.81
+        },
+        {
+          "_row": 907,
+          "Top queries": "ppf in dubai",
+          "Clicks": 0,
+          "Impressions": 19,
+          "CTR": 0,
+          "Position": 12.53
+        },
+        {
+          "_row": 939,
+          "Top queries": "paint protection services",
+          "Clicks": 0,
+          "Impressions": 18,
+          "CTR": 0,
+          "Position": 23.17
+        },
+        {
+          "_row": 945,
+          "Top queries": "ceramic coating over paint protection film price in uae",
+          "Clicks": 0,
+          "Impressions": 18,
+          "CTR": 0,
+          "Position": 42.61
+        },
+        {
+          "_row": 951,
+          "Top queries": "ceramic coatings",
+          "Clicks": 0,
+          "Impressions": 18,
+          "CTR": 0,
+          "Position": 66
+        },
+        {
+          "_row": 971,
+          "Top queries": "paint protection film in dubai",
+          "Clicks": 0,
+          "Impressions": 17,
+          "CTR": 0,
+          "Position": 30.53
+        },
+        {
+          "_row": 972,
+          "Top queries": "paint protection film service",
+          "Clicks": 0,
+          "Impressions": 17,
+          "CTR": 0,
+          "Position": 34.41
+        },
+        {
+          "_row": 978,
+          "Top queries": "premium ppf service uae",
+          "Clicks": 0,
+          "Impressions": 17,
+          "CTR": 0,
+          "Position": 50.24
+        }
+      ],
+      "priority_pages": [
+        {
+          "_row": 30,
+          "Top pages": "https://digitecme.com/services/paint-protection-film",
+          "Clicks": 3,
+          "Impressions": 1016,
+          "CTR": 0.003,
+          "Position": 39.14
+        },
+        {
+          "_row": 67,
+          "Top pages": "https://digitecme.com/services/paint-protection-dubai",
+          "Clicks": 1,
+          "Impressions": 3957,
+          "CTR": 0.0003,
+          "Position": 38.15
+        },
+        {
+          "_row": 167,
+          "Top pages": "https://digitecme.com/services/ceramic-coating",
+          "Clicks": 0,
+          "Impressions": 512,
+          "CTR": 0,
+          "Position": 32.4
+        },
+        {
+          "_row": 192,
+          "Top pages": "https://digitecme.com/blog/ceramic-coating-vs-ppf-dubai",
+          "Clicks": 0,
+          "Impressions": 168,
+          "CTR": 0,
+          "Position": 21.81
+        },
+        {
+          "_row": 452,
+          "Top pages": "https://digitecme.com/ar/services/paint-protection-dubai",
+          "Clicks": 0,
+          "Impressions": 19,
+          "CTR": 0,
+          "Position": 15.11
+        },
+        {
+          "_row": 596,
+          "Top pages": "https://digitecme.com/ar/blog/ceramic-coating-vs-ppf-dubai",
+          "Clicks": 0,
+          "Impressions": 9,
+          "CTR": 0,
+          "Position": 20.89
+        },
+        {
+          "_row": 612,
+          "Top pages": "https://digitecme.com/ar/services/paint-protection-film",
+          "Clicks": 0,
+          "Impressions": 8,
+          "CTR": 0,
+          "Position": 12
+        },
+        {
+          "_row": 996,
+          "Top pages": "https://digitecme.com/blog/why-ceramic-coating-matters-uae",
+          "Clicks": 0,
+          "Impressions": 1,
+          "CTR": 0,
+          "Position": 9
+        }
+      ],
+      "top_queries_by_clicks": [
+        {
+          "_row": 2,
+          "Top queries": "digitec performance center",
+          "Clicks": 25,
+          "Impressions": 120,
+          "CTR": 0.20829999999999999,
+          "Position": 1.12
+        },
+        {
+          "_row": 3,
+          "Top queries": "mercedes repair dubai",
+          "Clicks": 8,
+          "Impressions": 1071,
+          "CTR": 0.0075,
+          "Position": 6.35
+        },
+        {
+          "_row": 4,
+          "Top queries": "digitec",
+          "Clicks": 8,
+          "Impressions": 193,
+          "CTR": 0.0415,
+          "Position": 3.54
+        },
+        {
+          "_row": 5,
+          "Top queries": "digi tec",
+          "Clicks": 7,
+          "Impressions": 49,
+          "CTR": 0.1429,
+          "Position": 4.88
+        },
+        {
+          "_row": 6,
+          "Top queries": "digi-tec",
+          "Clicks": 6,
+          "Impressions": 18,
+          "CTR": 0.3333,
+          "Position": 3.89
+        },
+        {
+          "_row": 7,
+          "Top queries": "mercedes repair in dubai",
+          "Clicks": 4,
+          "Impressions": 279,
+          "CTR": 0.0143,
+          "Position": 8.18
+        },
+        {
+          "_row": 8,
+          "Top queries": "digitec performance center l.l.c.",
+          "Clicks": 4,
+          "Impressions": 83,
+          "CTR": 0.0482,
+          "Position": 1.23
+        },
+        {
+          "_row": 9,
+          "Top queries": "gad motors",
+          "Clicks": 3,
+          "Impressions": 197,
+          "CTR": 0.0152,
+          "Position": 6.63
+        },
+        {
+          "_row": 10,
+          "Top queries": "merceds repair",
+          "Clicks": 3,
+          "Impressions": 83,
+          "CTR": 0.0361,
+          "Position": 3.58
+        },
+        {
+          "_row": 11,
+          "Top queries": "mercedes repair dubai near me",
+          "Clicks": 3,
+          "Impressions": 22,
+          "CTR": 0.1364,
+          "Position": 2.27
+        }
+      ],
+      "top_queries_by_impressions": [
+        {
+          "_row": 3,
+          "Top queries": "mercedes repair dubai",
+          "Clicks": 8,
+          "Impressions": 1071,
+          "CTR": 0.0075,
+          "Position": 6.35
+        },
+        {
+          "_row": 70,
+          "Top queries": "mercedes repair",
+          "Clicks": 0,
+          "Impressions": 670,
+          "CTR": 0,
+          "Position": 11.4
+        },
+        {
+          "_row": 12,
+          "Top queries": "mercedes service dubai",
+          "Clicks": 2,
+          "Impressions": 613,
+          "CTR": 0.0033,
+          "Position": 13.88
+        },
+        {
+          "_row": 21,
+          "Top queries": "car oil change dubai",
+          "Clicks": 1,
+          "Impressions": 576,
+          "CTR": 0.0017000000000000001,
+          "Position": 25.47
+        },
+        {
+          "_row": 71,
+          "Top queries": "ferrari service dubai",
+          "Clicks": 0,
+          "Impressions": 542,
+          "CTR": 0,
+          "Position": 14.49
+        },
+        {
+          "_row": 22,
+          "Top queries": "rolls royce service dubai",
+          "Clicks": 1,
+          "Impressions": 476,
+          "CTR": 0.0021,
+          "Position": 18.13
+        },
+        {
+          "_row": 72,
+          "Top queries": "car paint protection",
+          "Clicks": 0,
+          "Impressions": 471,
+          "CTR": 0,
+          "Position": 39.86
+        },
+        {
+          "_row": 73,
+          "Top queries": "tokubai",
+          "Clicks": 0,
+          "Impressions": 434,
+          "CTR": 0,
+          "Position": 8.78
+        },
+        {
+          "_row": 74,
+          "Top queries": "oil change dubai",
+          "Clicks": 0,
+          "Impressions": 427,
+          "CTR": 0,
+          "Position": 24.25
+        },
+        {
+          "_row": 75,
+          "Top queries": "mercedes workshop dubai",
+          "Clicks": 0,
+          "Impressions": 422,
+          "CTR": 0,
+          "Position": 15.96
+        }
+      ],
+      "top_pages_by_clicks": [
+        {
+          "_row": 2,
+          "Top pages": "https://digitecme.com/",
+          "Clicks": 138,
+          "Impressions": 4073,
+          "CTR": 0.0339,
+          "Position": 15.96
+        },
+        {
+          "_row": 3,
+          "Top pages": "https://digitecme.com/brands/mercedes-benz-service-dubai",
+          "Clicks": 54,
+          "Impressions": 10202,
+          "CTR": 0.0053,
+          "Position": 10.51
+        },
+        {
+          "_row": 4,
+          "Top pages": "https://digitecme.com/tuning",
+          "Clicks": 30,
+          "Impressions": 2619,
+          "CTR": 0.0115,
+          "Position": 21.12
+        },
+        {
+          "_row": 5,
+          "Top pages": "https://digitecme.com/services/exhaust-repair-dubai",
+          "Clicks": 10,
+          "Impressions": 2112,
+          "CTR": 0.004699999999999999,
+          "Position": 14.85
+        },
+        {
+          "_row": 6,
+          "Top pages": "https://digitecme.com/brands/bmw-service-dubai",
+          "Clicks": 9,
+          "Impressions": 2883,
+          "CTR": 0.0031,
+          "Position": 20.73
+        },
+        {
+          "_row": 7,
+          "Top pages": "https://digitecme.com/services/soft-close-door-repair-dubai",
+          "Clicks": 9,
+          "Impressions": 493,
+          "CTR": 0.0183,
+          "Position": 6.54
+        },
+        {
+          "_row": 8,
+          "Top pages": "https://digitecme.com/brands/aston-martin-service-dubai",
+          "Clicks": 7,
+          "Impressions": 2001,
+          "CTR": 0.0034999999999999996,
+          "Position": 18.54
+        },
+        {
+          "_row": 9,
+          "Top pages": "https://digitecme.com/vrx",
+          "Clicks": 7,
+          "Impressions": 140,
+          "CTR": 0.05,
+          "Position": 6.86
+        },
+        {
+          "_row": 10,
+          "Top pages": "https://digitecme.com/brands/rox-service-dubai/engine-diagnostics",
+          "Clicks": 6,
+          "Impressions": 67,
+          "CTR": 0.08960000000000001,
+          "Position": 7.55
+        },
+        {
+          "_row": 11,
+          "Top pages": "https://digitecme.com/brands/rolls-royce-service-dubai",
+          "Clicks": 5,
+          "Impressions": 1979,
+          "CTR": 0.0025,
+          "Position": 18.16
+        }
+      ],
+      "top_pages_by_impressions": [
+        {
+          "_row": 3,
+          "Top pages": "https://digitecme.com/brands/mercedes-benz-service-dubai",
+          "Clicks": 54,
+          "Impressions": 10202,
+          "CTR": 0.0053,
+          "Position": 10.51
+        },
+        {
+          "_row": 2,
+          "Top pages": "https://digitecme.com/",
+          "Clicks": 138,
+          "Impressions": 4073,
+          "CTR": 0.0339,
+          "Position": 15.96
+        },
+        {
+          "_row": 67,
+          "Top pages": "https://digitecme.com/services/paint-protection-dubai",
+          "Clicks": 1,
+          "Impressions": 3957,
+          "CTR": 0.0003,
+          "Position": 38.15
+        },
+        {
+          "_row": 39,
+          "Top pages": "https://digitecme.com/services/oil-change-dubai",
+          "Clicks": 2,
+          "Impressions": 3747,
+          "CTR": 0.0005,
+          "Position": 25.46
+        },
+        {
+          "_row": 40,
+          "Top pages": "https://digitecme.com/brands/ferrari-service-dubai",
+          "Clicks": 2,
+          "Impressions": 2980,
+          "CTR": 0.0007000000000000001,
+          "Position": 22.01
+        },
+        {
+          "_row": 6,
+          "Top pages": "https://digitecme.com/brands/bmw-service-dubai",
+          "Clicks": 9,
+          "Impressions": 2883,
+          "CTR": 0.0031,
+          "Position": 20.73
+        },
+        {
+          "_row": 4,
+          "Top pages": "https://digitecme.com/tuning",
+          "Clicks": 30,
+          "Impressions": 2619,
+          "CTR": 0.0115,
+          "Position": 21.12
+        },
+        {
+          "_row": 17,
+          "Top pages": "https://digitecme.com/services/brake-repair-dubai",
+          "Clicks": 4,
+          "Impressions": 2199,
+          "CTR": 0.0018,
+          "Position": 31.85
+        },
+        {
+          "_row": 68,
+          "Top pages": "https://digitecme.com/services/suspension-repair-dubai",
+          "Clicks": 1,
+          "Impressions": 2193,
+          "CTR": 0.0005,
+          "Position": 26.94
+        },
+        {
+          "_row": 22,
+          "Top pages": "https://digitecme.com/brands/lamborghini-service-dubai",
+          "Clicks": 3,
+          "Impressions": 2172,
+          "CTR": 0.0014000000000000002,
+          "Position": 22.48
+        }
+      ],
+      "interpretation_limits": [
+        "Separate Queries and Pages worksheets do not establish a query-to-page association or prove cannibalization.",
+        "Dimension totals must not be added across worksheets or overlapping export scopes.",
+        "Query table totals may differ from the chart total because exported query rows do not represent all search activity.",
+        "Aggregated position is reconstructed from rounded exported daily/row values and is approximate."
+      ]
+    }
+  ],
+  "comparison": {
+    "identical_file_hashes": false,
+    "same_extracted_values": false,
+    "equal_sheets": {
+      "Chart": false,
+      "Queries": false,
+      "Pages": false,
+      "Countries": false,
+      "Devices": false,
+      "Search appearance": true,
+      "Filters": false
+    },
+    "date_ranges_equal": true
+  },
+  "documentation": [
+    {
+      "title": "Google Search Console: About the data",
+      "url": "https://support.google.com/webmasters/answer/17011364?hl=en"
+    },
+    {
+      "title": "Google Search Console: Troubleshooting data discrepancies",
+      "url": "https://support.google.com/webmasters/answer/17010575?hl=en"
+    }
+  ]
+}

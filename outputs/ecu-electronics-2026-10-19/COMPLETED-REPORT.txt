@@ -1,0 +1,383 @@
+DIGI-TEC — ECU PROGRAMMING & AUTOMOTIVE ELECTRONICS SEO SPRINT
+Completed locally: 19 October 2026, Asia/Dubai
+Git base: main / acef3427b57b48259bc5b39d6a0f75798603ae95
+Content baseline: that commit plus the completed six-file diagnostics/AC work.
+
+EXECUTIVE SUMMARY
+
+Added accurate module-function and electronic-fault assessment guidance to eight
+existing owners: six EN/AR pairs and two English-only electronics pages (14 locale
+pages). Zero new routes. Existing titles, descriptions, H1s, FAQ arrays, structured
+data, old contact URLs and completed service copy are preserved.
+
+This sprint adds explanations and better-qualified enquiries, not new workshop
+capability claims. Diagnostics, coding, programming, hardware repair, infotainment
+repair and performance remapping remain distinct. No security, cloning or HV
+service is added to public copy. Local QA passes; production remains NO-GO until
+current origin/edge state, rollback and the concrete release are verified and
+authorized. Nothing from this sprint was committed, pushed, deployed or published.
+
+1. KEYWORD OPPORTUNITY MATRIX
+
+research/keyword-opportunity-matrix.csv and .json contain 92 distinct opportunities:
+69 measured exact queries and 23 proposed variants. All 16 requested exact
+candidates are retained; only ECU repair Dubai has historical exact-query evidence.
+The other 15 requested variants have unavailable metrics, never invented zeros.
+Do not transfer BMW coding service metrics to BMW coding Dubai or auto electrical
+diagnostics Dubai metrics to automotive electrical diagnostics Dubai.
+
+Every row records exact query/intent, metrics, source period/filter/worksheet row,
+structural owner, commercial priority, capability boundary and action. The newest
+broad source contains 23 of the matrix's measured queries; other exact observations
+remain explicitly dated historical or filtered evidence. No monthly volume or
+numerical competition score is invented. Competitor pages inform qualitative
+competition only and do not establish DIGI-TEC workshop capabilities.
+
+Primary source periods:
+  92 days: 10 July–9 October 2026, Web, Last 3 months, unfiltered.
+  Historical 28 days: 6 August–2 September 2026, Web, Last 28 days.
+  Last 24 hours: 18 October 06:00–19 October 05:00, UTC+04:00 (Dubai),
+                Web (text-based), Last 24 hours.
+
+Filtered Mercedes/tuning/PPF/appearance and older period exports are kept separate.
+Overlapping periods are not summed or treated as independent before/after tests.
+Capped/anonymized query omissions mean unavailable, not zero demand. Exported CTR
+is retained rather than silently recomputed using rounded source figures.
+
+All 17 raw workbooks were independently reopened read-only. Evidence verification
+passed 3,067 assertions, 2,115 metric cells, 284 exact source observations and all
+92 matrix rows. No source workbook was edited. See research/source-manifest.json,
+independent-evidence-verification.json and GSC-RESEARCH-REPORT.txt.
+
+Important ownership distinction: independent Queries and Pages tabs are not joined.
+The 5 September–2 October /tuning-filtered export genuinely observes car programming,
+mercedes ecu, ecm programmer near me and ecu reprogramming near me on /tuning in
+that source period. These tiny filtered observations are retained separately as
+intent/ownership risk, not proof that OEM programming belongs to tuning or that
+multiple owners compete. Broad primary-period query ownership remains unverified.
+
+2. TOP 15 COMMERCIAL OPPORTUNITIES
+
+The following use exact 10 July–9 October 2026 query rows. All have zero measured
+clicks/CTR in that source. Historical average positions are not a current Dubai
+rank audit. Coding, electrical and screen/audio intents are separate clusters.
+
+1. mercedes coding service: 0 clicks / 147 impressions / 0.00% CTR / position 40.23.
+   /services/mercedes-diagnostics-dubai
+   Direct coding intent, 147 primary impressions. Use established Mercedes diagnostics owner and qualify exact module/function; website claim is not job-level verification.
+2. bmw coding service: 0 clicks / 88 impressions / 0.00% CTR / position 38.77.
+   /brands/bmw-service-dubai/engine-diagnostics
+   Direct coding intent, 88 primary impressions, plus 2 fresh 24-hour impressions. Use existing BMW diagnostics owner with exact-function qualification.
+3. cue screen replacement in dubai: 0 clicks / 365 impressions / 0.00% CTR / position 31.58.
+   /services/cadillac-cue-screen-repair-dubai
+   365 primary impressions and existing specialist screen owner. Distinct infotainment repair intent, not OEM programming demand.
+4. head unit repairing dubai: 0 clicks / 247 impressions / 0.00% CTR / position 32.13.
+   /services/head-unit-repair-dubai
+   247 primary impressions; existing head-unit owner can clarify fault assessment and fitted-system compatibility. Separate from programming and planned audio upgrades.
+5. cadillac touch screen repair in dubai: 0 clicks / 364 impressions / 0.00% CTR / position 43.44.
+   /services/cadillac-cue-screen-repair-dubai
+   364 primary impressions, same CUE owner as screen-replacement variants. Strengthen one owner and avoid a second keyword route.
+6. auto electrical diagnostics dubai: 0 clicks / 82 impressions / 0.00% CTR / position 36.72.
+   /services/auto-electrical-repair-dubai
+   82 primary impressions with clear diagnostic intent on existing electrical owner. Supports fault evidence before coding/programming decisions.
+7. cadillac srx screen replacement in dubai: 0 clicks / 191 impressions / 0.00% CTR / position 49.25.
+   /services/cadillac-cue-screen-repair-dubai
+   191 primary impressions at 49.25; explicit model, component and workshop location intent on the existing CUE owner. Exact unit and replacement suitability still require assessment.
+8. cadillac xts touch screen replacement in dubai: 0 clicks / 129 impressions / 0.00% CTR / position 40.04.
+   /services/cadillac-cue-screen-repair-dubai
+   129 primary impressions at 40.04; explicit model and touchscreen-replacement intent shares the existing CUE owner. No separate model route is warranted.
+9. bmw electrical repair: 0 clicks / 21 impressions / 0.00% CTR / position 10.81.
+   /brands/bmw-service-dubai/electrical-repair
+   21 primary impressions at 10.81; existing brand electrical owner offers focused fault-assessment intent. Preserve prior repair work.
+10. mercedes electrical repair: 0 clicks / 27 impressions / 0.00% CTR / position 18.33.
+   /services/mercedes-electrical-repair-dubai
+   27 primary impressions at 18.33; existing Mercedes electrical owner supports communication and supply-fault assessment, without claiming SAM/TCM bench repair.
+11. porsche electrical repair dubai: 0 clicks / 27 impressions / 0.00% CTR / position 16.67.
+   /brands/porsche-service-dubai/electrical-repair
+   27 primary impressions at 16.67; existing brand electrical owner. Monitor or link narrowly rather than expand unverified Porsche module programming.
+12. car electrical repair dubai: 0 clicks / 243 impressions / 0.00% CTR / position 50.59.
+   /services/auto-electrical-repair-dubai
+   243 primary impressions but position 50.59 and broad competition; improve relevance and enquiry clarity on existing electrical owner, not a duplicate ECU page.
+13. car electrical fault repair in dubai: 0 clicks / 25 impressions / 0.00% CTR / position 41.20.
+   /services/auto-electrical-repair-dubai
+   25 primary impressions at 41.20; explicit electrical-fault repair intent and Dubai location on the existing electrical owner. Scope follows fault investigation, not an assumed failed control module.
+14. mercedes car coding: 0 clicks / 17 impressions / 0.00% CTR / position 29.94.
+   /services/mercedes-diagnostics-dubai
+   17 primary impressions at 29.94; same Mercedes diagnostics owner as coding-service query. Explain function limits and ask whether a module was replaced.
+15. mercedes e class audio upgrade in dubai: 0 clicks / 151 impressions / 0.00% CTR / position 53.97.
+   /services/mercedes-audio-upgrade-dubai
+   151 primary impressions at 53.97 on distinct existing audio-upgrade owner; compatibility-qualified enquiry, separate from head-unit repairs or OEM coding.
+
+The highest measured screen/head-unit demand is specialist electronics demand,
+not extra OEM-programming volume. Ambiguous ECU scan/diagnostic/car programming
+queries are P3 intent-verification backlog. Porsche electrical and Mercedes audio
+remain existing-owner monitoring priorities without expanding this implementation.
+
+3. CAPABILITY EVIDENCE REGISTER
+
+content/capability-evidence-register.csv and .json cover all ten requested domains:
+  ECU programming: Conditional website claim.
+  Module coding: Conditional website claim.
+  Control-unit replacement configuration: Conditional website claim with no general acceptance proof.
+  Manufacturer-specific diagnostic software: Historical owner-reported tooling not independent current verification.
+  Software updates: Conditional website claim.
+  Adaptations and calibrations: Conditional website claim.
+  ECU hardware repair: Unverified.
+  ECU cloning: Unverified and excluded.
+  Immobilizer and security-related functions: Unverified and excluded.
+  High-voltage or hybrid module work: Unverified for this sprint.
+
+No new independently verified current workshop function/vehicle matrix was supplied.
+Historical repository records attribute certain tool capabilities to owner briefs;
+these are separated from current licences, module coverage and job-level acceptance.
+Existing conditional website language is evidence of an advertised claim, not
+independent evidence that every function is available now.
+
+Accordingly, new content explains terms and confirms exact support before work.
+It adds no tool model/version, update entitlement, specific replacement-programming,
+SAM/TCM bench repair, ECU board repair, cloning, immobilizer/security or hybrid/HV
+promise. No manufacturer authorization, certification, price, warranty, fixed
+turnaround or guaranteed result is introduced. Security functions stay out of
+public expansion; no credentials or secrets are requested.
+
+Obtain workshop-approved accepted functions, vehicle/model/module/software scope,
+current platform/access evidence, exclusions and redacted job evidence before
+expanding any capability. Official Mercedes/BMW technical documentation supports
+the conceptual distinctions; it does not verify DIGI-TEC equipment or permissions.
+The source-level register identifies what evidence is missing for each domain.
+
+4. EXISTING PAGE OWNERSHIP MAP
+
+Software-function enquiry owners (EN/AR):
+  /services/car-diagnostics-dubai
+  /services/mercedes-diagnostics-dubai
+  /brands/bmw-service-dubai/engine-diagnostics
+
+Electrical/communication fault owners (EN/AR):
+  /services/auto-electrical-repair-dubai
+  /services/mercedes-electrical-repair-dubai
+  /brands/bmw-service-dubai/electrical-repair
+
+Separate infotainment owners (English only, existing policy):
+  /services/cadillac-cue-screen-repair-dubai
+  /services/head-unit-repair-dubai
+
+The broader audit inventories 135 relevant routes: 115 indexable and 20 noindex.
+Every selected owner is already indexable, self-canonical, in the sitemap and
+has an existing Service entity. Six paired owners retain en-AE/ar-AE/x-default;
+the two English-only owners retain en-AE/x-default without invented Arabic pages.
+No duplicate ECU/programming/coding page or indexing-policy change is justified.
+
+audit/selected-owner-baseline.json and immutable HTML capture the completed local
+baseline. The ownership/decision map and 28-case legacy synonym map are in audit/.
+Twenty-one public read-only GETs returned 200; local-vs-live metadata differences
+are documented as undeployed completed work, not a reason to overwrite production.
+Crawl eligibility and route assignment do not establish Google-selected canonicals.
+
+5. LOCAL IMPROVEMENTS IMPLEMENTED
+
+Each selected owner receives a scoped, initially rendered assessment section:
+three plain question/answer pairs, relevant intake, quotation process, a specialist
+WhatsApp draft, telephone contact and related canonical links. Existing page copy
+and all previous CTA URLs remain unchanged; the new panel owns the new draft.
+
+Software sections explain diagnostics as fault investigation, coding as supported
+configuration, programming as compatible software writing and adaptations/calibrations
+as separate procedures when required. A replacement may need setup or software work;
+not every replacement needs every procedure. Model, year, module, software, equipment
+and permitted access determine acceptance. A software update is not an automatic cure.
+Performance remapping links to the separate existing tuning owner.
+
+Electrical sections explain that communication loss can involve supply, ground,
+connectors, wiring or the network path. It does not prove ECU failure or promise
+hardware repair. Subsequent configuration/software work is a separate confirmed scope.
+Screen/unit sections distinguish touch, picture, sound and control complaints and
+explain that appearance/connectors alone do not establish replacement compatibility.
+They do not imply that every screen or unit requires programming.
+
+The previous diagnostics/AC and repair guidance remains intact. Integration review
+proves that removing the four additive lines from each existing template restores
+its prior text, and the four other diagnostics/AC source files remain byte-identical.
+All previous frontend behavior, PPF/tuning content, backend work and configuration
+are preserved. No package or dependency change is needed.
+
+6. BEFORE-AND-AFTER METADATA
+
+qa/ecu-metadata-before-after.csv and .json contain all 14 locale comparisons.
+Titles changed: 0; descriptions changed: 0; H1s changed: 0.
+
+Metadata is intentionally retained because current owners are relevant and some
+were just optimized in the previous sprint. Measured coding and electronics intents
+are addressed by additive factual content and improved specialist intake, without
+repeating hub/diagnostic metadata work or promising unverified functions in titles.
+Canonical URLs, hreflang, robots, sitemap and structured-data graphs also remain
+unchanged. The comparison is against the completed local baseline, not old live copy.
+
+7. INTERNAL LINKS AND STRUCTURED DATA
+
+30 new direct canonical link placements connect module-function assessment,
+electrical investigation, distinct screen/unit repair and separate performance
+tuning. These are placements, not 30 unique URLs. Arabic panels omit English-only
+head-unit/CUE paths, and all emitted paths resolve directly to existing owners.
+
+Existing Service/WebPage/Breadcrumb/FAQ and global entity data are preserved,
+including #organization, #business and #website. No new schema or FAQ array is
+created. Forty-two additional question/answer occurrences are crawlable HTML;
+existing marked-up FAQ answers still match visible content. The established
+English-only electronics FAQPage omission policy is retained.
+
+See INTERNAL-LINK-AND-SCHEMA-REPORT.txt and qa/ecu-electronics-static-results.json.
+No AI schema, invented rating/partnership or guaranteed rich result/citation is added.
+
+8. CONVERSION AND GEO IMPROVEMENTS
+
+New specialist drafts request make/model/year, symptoms/conditions, warning text,
+an optional relevant report, recent module replacement and preferred appointment.
+The customer can describe the requested function if known; a report or part number
+is not required to enquire. CUE/head-unit messages identify the fitted system
+without treating CUE as a vehicle model. Reports should exclude unnecessary personal
+details. A separate visible privacy note rejects passwords/account credentials.
+
+The panel explains that review and Send in WhatsApp are required, opening the draft
+does not establish receipt or an appointment, and staff confirm availability/scope.
+Initial assessment cost/scope precede further tests and a repair/function estimate.
+Existing analytics conventions are retained; no new event or customer-data field
+is introduced. Contact clicks/draft opens remain interaction signals, not leads.
+Arabic phone digits in new panels use left-to-right isolation.
+
+content/GBP-SERVICE-DRAFTS.txt provides four conditional service drafts without
+editing the live profile. First-party name/address/contact consistency is recorded:
+DIGI-TEC Performance Center L.L.C., Warehouses 11–15, Al Quoz Industrial Area 3,
+Dubai, UAE; +971 4 340 2223; info@digitecme.com. Verify the actual listing, categories,
+pin/entrance and current hours before any authorized GBP edit. Do not invent hours,
+certifications or add keyword variants to the business name. Service drafts remain
+subject to actual accepted functions and categories.
+
+9. COMPLETE QA EVIDENCE
+
+DIGI-TEC ECU & AUTOMOTIVE ELECTRONICS COMBINED QA — PASS
+2026-10-19T08:46:25.510Z
+
+Isolated candidate: C:\Users\ADMIN\Documents\ChatGPT\DIGITEC\outputs\ecu-electronics-2026-10-19\candidate.local
+Base: acef3427b57b48259bc5b39d6a0f75798603ae95 plus completed six-file diagnostics/AC overlay
+Source fingerprint: 5b36413f42162887ca9321530579ddc1c6a96cf64f6288912dc33d00c01a9841
+Reviewed ECU overlay: 4 files; 583 build inputs unchanged after browser QA. Candidate and original source match reviewed hashes. Four prior diagnostic/AC files are unchanged; the two shared page integrations preserve all previous rendered content and CTAs.
+
+Production build: all 19 declared stages PASS; 1,256 real rendered routes; 1,005 canonical sitemap URLs.
+CLI: 13 checks PASS, including TypeScript app/Node, ESLint (zero errors, 11 existing warnings), master SEO, BMW hub, paint care, tuning, full routing-response, booking form and three combined static suites. Build includes routing, SEO, PPF, protection, query, contact privacy, oil, suspension, transmission and social metadata tests.
+
+New static: 8 owners/14 locale pages, 614 assertions, 30 new direct canonical link occurrences; 42 plain-text Q&A items in initial HTML. All existing metadata, H1, schema graphs, indexing, canonical/hreflang and CTA URLs retained. All prior visible content/markup retained after removing only marked new panel with its known wrapper and normalizing generated Radix IDs/whitespace. Twenty noindex policies preserved; zero new routes.
+Prior static: 32 hub/repair locales and 1454 assertions; 16 diagnostics/AC locales and 1011 assertions; 53 protected visible routes retained.
+
+ECU browser: 42 responsive cases (14 locales × 1440/390/320), 14 safe mobile contact pairs, 14 no-JavaScript pages and 14 direct SPA/back checks; zero runtime/hydration errors or failed local resources. Arabic phone LTR and genuine localized destinations verified; English-only infotainment route policy retained.
+Diagnostics/AC browser: 48 responsive, 16 mobile contact triples, 16 no-JavaScript, 16 SPA.
+Five-brand browser: 30 responsive, 30 interactions, 10 no-JavaScript.
+Repair browser: 66 responsive, 22 no-JavaScript, 22 hub links.
+Master browser: 27 responsive, 17 interactions, 7 SPA.
+Protection browser: 9 requests, cross-service/back/forward, true 404.
+PPF browser: 5 WhatsApp CTAs, 2 forms, 3 reply methods, validation/privacy/duplicate suppression and language round trip.
+Tuning browser: 6 responsive configurator cases, all 62 package rows/prices, S63 enquiry-only and DB11 withheld items retained.
+
+Visual review: PASS; representative mobile screenshots inspected.
+
+Harness adjustments and initial failed attempts retained. Only affected checks reran; no application changes after source freeze.
+
+Safety: All browser traffic restricted to loopback GET/HEAD; external requests and writes blocked. Contact navigation prevented/window.open stubbed. No sent WhatsApp message, call, received enquiry, appointment, backend write, commit, push, deployment, publication or Google Business Profile edit.
+
+Limits: Local HTML/layout tests are not field Core Web Vitals. JSON-LD/provider/FAQ integrity tested locally; no Google Rich Results or URL Inspection API invoked. Clicks and drafts are intent signals, not verified delivered messages, connected calls, CRM records or confirmed enquiries. Local QA does not establish active production deployment, publication source, ranking improvement or a recoverable authenticated rollback state.
+
+Stable build source fingerprint (583 inputs):
+5b36413f42162887ca9321530579ddc1c6a96cf64f6288912dc33d00c01a9841
+
+Local source/component review and research verification also pass. Generated
+routing line endings were normalized before the stable build. Initial preservation
+harness attempts left only the new empty integration wrappers after panel removal;
+those exact wrappers were then removed for strict old-content comparison. The
+browser runtime initially could not reach local preview in the sandbox; the same
+loopback-only tests ran with permitted runtime access. Superseded attempts and
+exact final reruns are retained. No application fix was made to mask a test failure.
+
+No actual customer message, call, backend write or production publication occurred.
+Local tests do not establish field Core Web Vitals, received CRM leads, GA4 ingestion,
+live Google indexing, manufacturer access or improved search/enquiry performance.
+
+10. EXACT MODIFIED FILES AND DEPENDENCIES
+
+New sprint delta (four files; two modified templates, two additions):
+  M src/pages/ServicePage.tsx
+  M src/pages/BrandServicePage.tsx
+  A src/components/EcuElectronicsEnquiryPanel.tsx
+  A src/data/ecuElectronicsContent.ts
+
+The baseline already includes six completed uncommitted diagnostics/AC files.
+Two templates are extended by this sprint; the other four files remain byte-identical.
+Thus the cumulative pending SEO source over Git HEAD is EIGHT unique paths:
+  src/pages/ServicePage.tsx
+  src/pages/BrandServicePage.tsx
+  src/components/DiagnosticAcEnquiryPanel.tsx
+  src/data/diagnosticsAcGeneralContent.ts
+  src/data/diagnosticsAcBrandContent.ts
+  scripts/validate-query-release.mjs
+  src/components/EcuElectronicsEnquiryPanel.tsx
+  src/data/ecuElectronicsContent.ts
+
+Do not commit only the four-file delta against Git HEAD without those prior
+dependencies. No staging/commit/push is authorized by this task. modified-files.json
+records this sprint's before/after hashes. source-package-manifest.json records the
+four-file review delta and cumulative eight-file source archive. No dependency or
+environment files are packaged.
+
+Four-file review ZIP SHA256:
+da35995b0f175f32bd65b6023fb0ac731ededc895332f4a79ed5eca72e8c8bd2
+Eight-file cumulative ZIP SHA256:
+4c1f6842b37f9a88239ebbd2e781f1a6d519dd6d779a72cf6a2c65a9b2d4762b
+
+preservation-and-integrity.json confirms 31635 unrelated original files unchanged,
+two intentional existing-template changes, two approved additions, no unexpected
+outside additions, empty index and unchanged branch/HEAD. All original backend,
+master-validation output and other work remains preserved. No Cloudflare, route,
+package, tuning, PPF, existing diagnostic content module or shared schema file changed.
+
+11. RELEASE READINESS
+
+Local candidate: GO for review, full quality gates pass. Production: NO-GO until
+authenticated active origin/edge state and a complete recoverable rollback pair
+are established, the cumulative source/base is reconciled and release is explicitly
+authorized. The prior release audit recorded invalid Cloudflare access; this sprint
+obtained no replacement authenticated deployment snapshot. Public HTML and Git main
+do not prove that newer production changes cannot be overwritten.
+
+Current Git remains main at acef342; remote-main-check.json is read-only evidence.
+The isolated candidate includes completed diagnostics/AC plus this sprint, while
+some public metadata still predates those local improvements. Preserve PPF and any
+newer production content when preparing a later cumulative release. Do not guess a
+Pages/Worker assets command or deploy the edge-only local config to publish content.
+
+Before a future release, verify the exact active host/version/source and rollback,
+reconstruct on any newer approved base and rerun QA if it changes. After an approved
+release, check all 14 owners plus protected workstreams, live HTML/redirects, schema,
+canonicals/hreflang/sitemap, mobile contacts and GSC URL Inspection. Real message/call
+receipt and qualified appointments must be measured separately from click events.
+
+Nothing from this sprint was committed, pushed, deployed, published or changed in
+production or GBP. No recurring monitoring or automation was created.
+
+12. NEXT SPECIALIST ELECTRONICS BACKLOG
+
+research/next-specialist-electronics-keyword-backlog.csv retains exact measured
+and proposed tasks. Prioritize existing-owner measurement for Porsche electrical,
+Mercedes audio and additional CUE/head-unit variants. Review actual query+page
+evidence before changing ownership or diagnosing cannibalization. Do not create
+one page per synonym or use tuning impressions as OEM-programming proof.
+
+The exact ECU repair Dubai historical 28-day row has 0 clicks, 8 impressions and
+46.38 average position; it does not verify board-level ECU repair. Proposed exact
+SAM, TCM, replacement-programming and communication variants retain blank metrics.
+Hardware repair, cloning, security and high-voltage capabilities stay withheld
+until appropriate operational evidence and authorization are available.
+
+Obtain a current unfiltered 28-day query export and joined query/page data for
+coding, electrical and infotainment clusters, preserving country/device/appearance
+filters. Compare equivalent nonoverlapping periods after an authorized release.
+Record workshop-received qualified enquiries, quotations, appointments and jobs
+with consent-aware deduplication; do not aggregate click/draft events as customers.

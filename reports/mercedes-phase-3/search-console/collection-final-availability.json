@@ -1,0 +1,2898 @@
+{
+  "generatedAtUtc": "2026-10-26T08:34:47.656Z",
+  "collectionStopped": true,
+  "stopReason": "Explicit Google Search Console UI HTTP429 / Too many requests. Navigation stopped without bypass or repeated retries.",
+  "stopEvent": {
+    "observedAt": "2026-10-26T08:26:29.037Z",
+    "status": "UI_ERROR_429",
+    "meaning": "Google asked to try again later; automated report navigation paused; no bypass or live changes",
+    "plannedDailySeries": 132,
+    "acceptedQueryDaily": 36,
+    "acceptedPairDaily": 33,
+    "remainingPairDaily": 63
+  },
+  "stopEventFile": "raw/gsc-rate-limit-429.json",
+  "stopEventSha256": "806dc9bdcea5812ebe0edaa10d37c6a45e5a0866c133c744459325be1608b1b7",
+  "stopAxFile": "raw/gsc-rate-limit-429-ax.txt",
+  "stopAxSha256": "3878682a8968525c2ab702fba0ff361eb4e8512b1f99f03297ae44e11ef63dde",
+  "dailyValidationFile": "daily-ui-validation.json",
+  "dailyValidationSha256": "8c70ad57cd6b705da498cce2ab9797190ebb45ed1e0ad5324b9f9d2dc3c5e24c",
+  "collectorInputSha256": "6b31b6908fa31f5dc6e7236188b9df7c1df607bd73bdab2dbbf80f4befde1f7c",
+  "planned132SeriesCoverage": {
+    "plannedSeries": 132,
+    "plannedQueryDaily": 36,
+    "plannedPairDaily": 96,
+    "validatedSeries": 69,
+    "unavailableSeries": 3,
+    "notCollectedSeries": 60,
+    "acceptedAttempts": 69,
+    "rejectedAttempts": 3,
+    "normalizedDailyRows": 6210,
+    "extraUnplannedAttemptCount": 0
+  },
+  "pairDailyByDevice": {
+    "ALL": {
+      "accepted": 33,
+      "missing": 5
+    },
+    "MOBILE": {
+      "accepted": 0,
+      "missing": 23
+    },
+    "DESKTOP": {
+      "accepted": 0,
+      "missing": 35
+    }
+  },
+  "missingPlannedDailySeries": [
+    {
+      "kind": "pair-daily",
+      "query": "mercedes oil change dubai",
+      "page": "https://digitecme.com/services/oil-change-dubai",
+      "country": "ARE",
+      "device": "ALL",
+      "window": {
+        "id": "90d",
+        "start": "20260727",
+        "end": "20261024",
+        "startLabel": "27 July 2026",
+        "endLabel": "24 October 2026"
+      },
+      "status": "NO_VALID_CAPTURE",
+      "attemptIds": [
+        "pair-daily__90d__ARE__ALL__mercedes-oil-change-dubai__services_oil-change-dubai"
+      ],
+      "observedRejectionReasons": [
+        {
+          "attemptId": "pair-daily__90d__ARE__ALL__mercedes-oil-change-dubai__services_oil-change-dubai",
+          "reasons": [
+            "country_filter_unproven",
+            "exact_page_filter_unproven",
+            "displayed_query_missing",
+            "displayed_chart_date_span_missing",
+            "days_tab_not_proven_selected",
+            "collector_capture_not_validated",
+            "table_header_unproven",
+            "complete_90day_pagination_unproven",
+            "invalid_daily_row: Not90uniqueexpected dates"
+          ]
+        }
+      ],
+      "requiredAction": "Obtain a fresh complete export; incomplete attempt is not data."
+    },
+    {
+      "kind": "pair-daily",
+      "query": "mercedes oil change dubai",
+      "page": "https://digitecme.com/blog/best-oil-change-dubai-mercedes",
+      "country": "ARE",
+      "device": "ALL",
+      "window": {
+        "id": "90d",
+        "start": "20260727",
+        "end": "20261024",
+        "startLabel": "27 July 2026",
+        "endLabel": "24 October 2026"
+      },
+      "status": "NO_VALID_CAPTURE",
+      "attemptIds": [
+        "pair-daily__90d__ARE__ALL__mercedes-oil-change-dubai__blog_best-oil-change-dubai-mercedes"
+      ],
+      "observedRejectionReasons": [
+        {
+          "attemptId": "pair-daily__90d__ARE__ALL__mercedes-oil-change-dubai__blog_best-oil-change-dubai-mercedes",
+          "reasons": [
+            "country_filter_unproven",
+            "exact_page_filter_unproven",
+            "displayed_query_missing",
+            "displayed_chart_date_span_missing",
+            "days_tab_not_proven_selected",
+            "collector_capture_not_validated",
+            "table_header_unproven",
+            "complete_90day_pagination_unproven",
+            "invalid_daily_row: Not90uniqueexpected dates"
+          ]
+        }
+      ],
+      "requiredAction": "Obtain a fresh complete export; incomplete attempt is not data."
+    },
+    {
+      "kind": "pair-daily",
+      "query": "mercedes oil change dubai",
+      "page": "https://digitecme.com/brands/mercedes-benz-service-dubai",
+      "country": "ARE",
+      "device": "ALL",
+      "window": {
+        "id": "90d",
+        "start": "20260727",
+        "end": "20261024",
+        "startLabel": "27 July 2026",
+        "endLabel": "24 October 2026"
+      },
+      "status": "NO_VALID_CAPTURE",
+      "attemptIds": [
+        "pair-daily__90d__ARE__ALL__mercedes-oil-change-dubai__brands_mercedes-benz-service-dubai"
+      ],
+      "observedRejectionReasons": [
+        {
+          "attemptId": "pair-daily__90d__ARE__ALL__mercedes-oil-change-dubai__brands_mercedes-benz-service-dubai",
+          "reasons": [
+            "country_filter_unproven",
+            "exact_page_filter_unproven",
+            "displayed_query_missing",
+            "displayed_chart_date_span_missing",
+            "days_tab_not_proven_selected",
+            "collector_capture_not_validated",
+            "table_header_unproven",
+            "complete_90day_pagination_unproven",
+            "invalid_daily_row: Not90uniqueexpected dates"
+          ]
+        }
+      ],
+      "requiredAction": "Obtain a fresh complete export; incomplete attempt is not data."
+    },
+    {
+      "kind": "pair-daily",
+      "query": "mercedes oil change dubai",
+      "page": "https://digitecme.com/brands/maybach-service-dubai/oil-change",
+      "country": "ARE",
+      "device": "ALL",
+      "window": {
+        "id": "90d",
+        "start": "20260727",
+        "end": "20261024",
+        "startLabel": "27 July 2026",
+        "endLabel": "24 October 2026"
+      },
+      "status": "NOT_COLLECTED",
+      "attemptIds": [],
+      "observedRejectionReasons": [],
+      "requiredAction": "Collect normal UI export if still required after access resumes."
+    },
+    {
+      "kind": "pair-daily",
+      "query": "mercedes oil change dubai",
+      "page": "https://digitecme.com/services/mercedes-repair-dubai",
+      "country": "ARE",
+      "device": "ALL",
+      "window": {
+        "id": "90d",
+        "start": "20260727",
+        "end": "20261024",
+        "startLabel": "27 July 2026",
+        "endLabel": "24 October 2026"
+      },
+      "status": "NOT_COLLECTED",
+      "attemptIds": [],
+      "observedRejectionReasons": [],
+      "requiredAction": "Collect normal UI export if still required after access resumes."
+    },
+    {
+      "kind": "pair-daily",
+      "query": "mercedes service dubai",
+      "page": "https://digitecme.com/brands/mercedes-benz-service-dubai",
+      "country": "ARE",
+      "device": "MOBILE",
+      "window": {
+        "id": "90d",
+        "start": "20260727",
+        "end": "20261024",
+        "startLabel": "27 July 2026",
+        "endLabel": "24 October 2026"
+      },
+      "status": "NOT_COLLECTED",
+      "attemptIds": [],
+      "observedRejectionReasons": [],
+      "requiredAction": "Collect normal UI export if still required after access resumes."
+    },
+    {
+      "kind": "pair-daily",
+      "query": "mercedes service dubai",
+      "page": "https://digitecme.com/services/mercedes-repair-dubai",
+      "country": "ARE",
+      "device": "MOBILE",
+      "window": {
+        "id": "90d",
+        "start": "20260727",
+        "end": "20261024",
+        "startLabel": "27 July 2026",
+        "endLabel": "24 October 2026"
+      },
+      "status": "NOT_COLLECTED",
+      "attemptIds": [],
+      "observedRejectionReasons": [],
+      "requiredAction": "Collect normal UI export if still required after access resumes."
+    },
+    {
+      "kind": "pair-daily",
+      "query": "mercedes service dubai",
+      "page": "https://digitecme.com/services/mercedes-suspension-repair-dubai/",
+      "country": "ARE",
+      "device": "MOBILE",
+      "window": {
+        "id": "90d",
+        "start": "20260727",
+        "end": "20261024",
+        "startLabel": "27 July 2026",
+        "endLabel": "24 October 2026"
+      },
+      "status": "NOT_COLLECTED",
+      "attemptIds": [],
+      "observedRejectionReasons": [],
+      "requiredAction": "Collect normal UI export if still required after access resumes."
+    },
+    {
+      "kind": "pair-daily",
+      "query": "mercedes repair dubai",
+      "page": "https://digitecme.com/brands/mercedes-benz-service-dubai",
+      "country": "ARE",
+      "device": "MOBILE",
+      "window": {
+        "id": "90d",
+        "start": "20260727",
+        "end": "20261024",
+        "startLabel": "27 July 2026",
+        "endLabel": "24 October 2026"
+      },
+      "status": "NOT_COLLECTED",
+      "attemptIds": [],
+      "observedRejectionReasons": [],
+      "requiredAction": "Collect normal UI export if still required after access resumes."
+    },
+    {
+      "kind": "pair-daily",
+      "query": "mercedes repair dubai",
+      "page": "https://digitecme.com/services/mercedes-repair-dubai",
+      "country": "ARE",
+      "device": "MOBILE",
+      "window": {
+        "id": "90d",
+        "start": "20260727",
+        "end": "20261024",
+        "startLabel": "27 July 2026",
+        "endLabel": "24 October 2026"
+      },
+      "status": "NOT_COLLECTED",
+      "attemptIds": [],
+      "observedRejectionReasons": [],
+      "requiredAction": "Collect normal UI export if still required after access resumes."
+    },
+    {
+      "kind": "pair-daily",
+      "query": "mercedes repair dubai",
+      "page": "https://digitecme.com/services/mercedes-body-repair-dubai/",
+      "country": "ARE",
+      "device": "MOBILE",
+      "window": {
+        "id": "90d",
+        "start": "20260727",
+        "end": "20261024",
+        "startLabel": "27 July 2026",
+        "endLabel": "24 October 2026"
+      },
+      "status": "NOT_COLLECTED",
+      "attemptIds": [],
+      "observedRejectionReasons": [],
+      "requiredAction": "Collect normal UI export if still required after access resumes."
+    },
+    {
+      "kind": "pair-daily",
+      "query": "mercedes repair dubai",
+      "page": "https://digitecme.com/blog/mercedes-s-class-service-dubai-guide",
+      "country": "ARE",
+      "device": "MOBILE",
+      "window": {
+        "id": "90d",
+        "start": "20260727",
+        "end": "20261024",
+        "startLabel": "27 July 2026",
+        "endLabel": "24 October 2026"
+      },
+      "status": "NOT_COLLECTED",
+      "attemptIds": [],
+      "observedRejectionReasons": [],
+      "requiredAction": "Collect normal UI export if still required after access resumes."
+    },
+    {
+      "kind": "pair-daily",
+      "query": "mercedes specialist dubai",
+      "page": "https://digitecme.com/brands/mercedes-benz-service-dubai",
+      "country": "ARE",
+      "device": "MOBILE",
+      "window": {
+        "id": "90d",
+        "start": "20260727",
+        "end": "20261024",
+        "startLabel": "27 July 2026",
+        "endLabel": "24 October 2026"
+      },
+      "status": "NOT_COLLECTED",
+      "attemptIds": [],
+      "observedRejectionReasons": [],
+      "requiredAction": "Collect normal UI export if still required after access resumes."
+    },
+    {
+      "kind": "pair-daily",
+      "query": "mercedes specialist dubai",
+      "page": "https://digitecme.com/services/mercedes-repair-dubai",
+      "country": "ARE",
+      "device": "MOBILE",
+      "window": {
+        "id": "90d",
+        "start": "20260727",
+        "end": "20261024",
+        "startLabel": "27 July 2026",
+        "endLabel": "24 October 2026"
+      },
+      "status": "NOT_COLLECTED",
+      "attemptIds": [],
+      "observedRejectionReasons": [],
+      "requiredAction": "Collect normal UI export if still required after access resumes."
+    },
+    {
+      "kind": "pair-daily",
+      "query": "mercedes specialist dubai",
+      "page": "https://digitecme.com/",
+      "country": "ARE",
+      "device": "MOBILE",
+      "window": {
+        "id": "90d",
+        "start": "20260727",
+        "end": "20261024",
+        "startLabel": "27 July 2026",
+        "endLabel": "24 October 2026"
+      },
+      "status": "NOT_COLLECTED",
+      "attemptIds": [],
+      "observedRejectionReasons": [],
+      "requiredAction": "Collect normal UI export if still required after access resumes."
+    },
+    {
+      "kind": "pair-daily",
+      "query": "mercedes specialist dubai",
+      "page": "https://digitecme.com/best-mercedes-workshop-dubai",
+      "country": "ARE",
+      "device": "MOBILE",
+      "window": {
+        "id": "90d",
+        "start": "20260727",
+        "end": "20261024",
+        "startLabel": "27 July 2026",
+        "endLabel": "24 October 2026"
+      },
+      "status": "NOT_COLLECTED",
+      "attemptIds": [],
+      "observedRejectionReasons": [],
+      "requiredAction": "Collect normal UI export if still required after access resumes."
+    },
+    {
+      "kind": "pair-daily",
+      "query": "mercedes workshop dubai",
+      "page": "https://digitecme.com/brands/mercedes-benz-service-dubai",
+      "country": "ARE",
+      "device": "MOBILE",
+      "window": {
+        "id": "90d",
+        "start": "20260727",
+        "end": "20261024",
+        "startLabel": "27 July 2026",
+        "endLabel": "24 October 2026"
+      },
+      "status": "NOT_COLLECTED",
+      "attemptIds": [],
+      "observedRejectionReasons": [],
+      "requiredAction": "Collect normal UI export if still required after access resumes."
+    },
+    {
+      "kind": "pair-daily",
+      "query": "mercedes workshop dubai",
+      "page": "https://digitecme.com/best-mercedes-workshop-dubai",
+      "country": "ARE",
+      "device": "MOBILE",
+      "window": {
+        "id": "90d",
+        "start": "20260727",
+        "end": "20261024",
+        "startLabel": "27 July 2026",
+        "endLabel": "24 October 2026"
+      },
+      "status": "NOT_COLLECTED",
+      "attemptIds": [],
+      "observedRejectionReasons": [],
+      "requiredAction": "Collect normal UI export if still required after access resumes."
+    },
+    {
+      "kind": "pair-daily",
+      "query": "mercedes workshop dubai",
+      "page": "https://digitecme.com/services/mercedes-repair-dubai",
+      "country": "ARE",
+      "device": "MOBILE",
+      "window": {
+        "id": "90d",
+        "start": "20260727",
+        "end": "20261024",
+        "startLabel": "27 July 2026",
+        "endLabel": "24 October 2026"
+      },
+      "status": "NOT_COLLECTED",
+      "attemptIds": [],
+      "observedRejectionReasons": [],
+      "requiredAction": "Collect normal UI export if still required after access resumes."
+    },
+    {
+      "kind": "pair-daily",
+      "query": "mercedes workshop dubai",
+      "page": "https://digitecme.com/",
+      "country": "ARE",
+      "device": "MOBILE",
+      "window": {
+        "id": "90d",
+        "start": "20260727",
+        "end": "20261024",
+        "startLabel": "27 July 2026",
+        "endLabel": "24 October 2026"
+      },
+      "status": "NOT_COLLECTED",
+      "attemptIds": [],
+      "observedRejectionReasons": [],
+      "requiredAction": "Collect normal UI export if still required after access resumes."
+    },
+    {
+      "kind": "pair-daily",
+      "query": "mercedes maintenance dubai",
+      "page": "https://digitecme.com/brands/mercedes-benz-service-dubai",
+      "country": "ARE",
+      "device": "MOBILE",
+      "window": {
+        "id": "90d",
+        "start": "20260727",
+        "end": "20261024",
+        "startLabel": "27 July 2026",
+        "endLabel": "24 October 2026"
+      },
+      "status": "NOT_COLLECTED",
+      "attemptIds": [],
+      "observedRejectionReasons": [],
+      "requiredAction": "Collect normal UI export if still required after access resumes."
+    },
+    {
+      "kind": "pair-daily",
+      "query": "mercedes maintenance dubai",
+      "page": "https://digitecme.com/services/mercedes-repair-dubai",
+      "country": "ARE",
+      "device": "MOBILE",
+      "window": {
+        "id": "90d",
+        "start": "20260727",
+        "end": "20261024",
+        "startLabel": "27 July 2026",
+        "endLabel": "24 October 2026"
+      },
+      "status": "NOT_COLLECTED",
+      "attemptIds": [],
+      "observedRejectionReasons": [],
+      "requiredAction": "Collect normal UI export if still required after access resumes."
+    },
+    {
+      "kind": "pair-daily",
+      "query": "mercedes oil change dubai",
+      "page": "https://digitecme.com/services/oil-change-dubai",
+      "country": "ARE",
+      "device": "MOBILE",
+      "window": {
+        "id": "90d",
+        "start": "20260727",
+        "end": "20261024",
+        "startLabel": "27 July 2026",
+        "endLabel": "24 October 2026"
+      },
+      "status": "NOT_COLLECTED",
+      "attemptIds": [],
+      "observedRejectionReasons": [],
+      "requiredAction": "Collect normal UI export if still required after access resumes."
+    },
+    {
+      "kind": "pair-daily",
+      "query": "mercedes oil change dubai",
+      "page": "https://digitecme.com/services/mercedes-oil-change-dubai/",
+      "country": "ARE",
+      "device": "MOBILE",
+      "window": {
+        "id": "90d",
+        "start": "20260727",
+        "end": "20261024",
+        "startLabel": "27 July 2026",
+        "endLabel": "24 October 2026"
+      },
+      "status": "NOT_COLLECTED",
+      "attemptIds": [],
+      "observedRejectionReasons": [],
+      "requiredAction": "Collect normal UI export if still required after access resumes."
+    },
+    {
+      "kind": "pair-daily",
+      "query": "mercedes oil change dubai",
+      "page": "https://digitecme.com/blog/best-oil-change-dubai-mercedes",
+      "country": "ARE",
+      "device": "MOBILE",
+      "window": {
+        "id": "90d",
+        "start": "20260727",
+        "end": "20261024",
+        "startLabel": "27 July 2026",
+        "endLabel": "24 October 2026"
+      },
+      "status": "NOT_COLLECTED",
+      "attemptIds": [],
+      "observedRejectionReasons": [],
+      "requiredAction": "Collect normal UI export if still required after access resumes."
+    },
+    {
+      "kind": "pair-daily",
+      "query": "mercedes oil change dubai",
+      "page": "https://digitecme.com/brands/maybach-service-dubai/oil-change",
+      "country": "ARE",
+      "device": "MOBILE",
+      "window": {
+        "id": "90d",
+        "start": "20260727",
+        "end": "20261024",
+        "startLabel": "27 July 2026",
+        "endLabel": "24 October 2026"
+      },
+      "status": "NOT_COLLECTED",
+      "attemptIds": [],
+      "observedRejectionReasons": [],
+      "requiredAction": "Collect normal UI export if still required after access resumes."
+    },
+    {
+      "kind": "pair-daily",
+      "query": "mercedes oil change dubai",
+      "page": "https://digitecme.com/brands/mercedes-benz-service-dubai",
+      "country": "ARE",
+      "device": "MOBILE",
+      "window": {
+        "id": "90d",
+        "start": "20260727",
+        "end": "20261024",
+        "startLabel": "27 July 2026",
+        "endLabel": "24 October 2026"
+      },
+      "status": "NOT_COLLECTED",
+      "attemptIds": [],
+      "observedRejectionReasons": [],
+      "requiredAction": "Collect normal UI export if still required after access resumes."
+    },
+    {
+      "kind": "pair-daily",
+      "query": "mercedes oil change dubai",
+      "page": "https://digitecme.com/services/mercedes-repair-dubai",
+      "country": "ARE",
+      "device": "MOBILE",
+      "window": {
+        "id": "90d",
+        "start": "20260727",
+        "end": "20261024",
+        "startLabel": "27 July 2026",
+        "endLabel": "24 October 2026"
+      },
+      "status": "NOT_COLLECTED",
+      "attemptIds": [],
+      "observedRejectionReasons": [],
+      "requiredAction": "Collect normal UI export if still required after access resumes."
+    },
+    {
+      "kind": "pair-daily",
+      "query": "mercedes service dubai",
+      "page": "https://digitecme.com/brands/mercedes-benz-service-dubai",
+      "country": "ARE",
+      "device": "DESKTOP",
+      "window": {
+        "id": "90d",
+        "start": "20260727",
+        "end": "20261024",
+        "startLabel": "27 July 2026",
+        "endLabel": "24 October 2026"
+      },
+      "status": "NOT_COLLECTED",
+      "attemptIds": [],
+      "observedRejectionReasons": [],
+      "requiredAction": "Collect normal UI export if still required after access resumes."
+    },
+    {
+      "kind": "pair-daily",
+      "query": "mercedes service dubai",
+      "page": "https://digitecme.com/services/mercedes-repair-dubai",
+      "country": "ARE",
+      "device": "DESKTOP",
+      "window": {
+        "id": "90d",
+        "start": "20260727",
+        "end": "20261024",
+        "startLabel": "27 July 2026",
+        "endLabel": "24 October 2026"
+      },
+      "status": "NOT_COLLECTED",
+      "attemptIds": [],
+      "observedRejectionReasons": [],
+      "requiredAction": "Collect normal UI export if still required after access resumes."
+    },
+    {
+      "kind": "pair-daily",
+      "query": "mercedes service dubai",
+      "page": "https://digitecme.com/services/mercedes-oil-change-dubai/",
+      "country": "ARE",
+      "device": "DESKTOP",
+      "window": {
+        "id": "90d",
+        "start": "20260727",
+        "end": "20261024",
+        "startLabel": "27 July 2026",
+        "endLabel": "24 October 2026"
+      },
+      "status": "NOT_COLLECTED",
+      "attemptIds": [],
+      "observedRejectionReasons": [],
+      "requiredAction": "Collect normal UI export if still required after access resumes."
+    },
+    {
+      "kind": "pair-daily",
+      "query": "mercedes service dubai",
+      "page": "https://digitecme.com/services/mercedes-brake-repair-dubai/",
+      "country": "ARE",
+      "device": "DESKTOP",
+      "window": {
+        "id": "90d",
+        "start": "20260727",
+        "end": "20261024",
+        "startLabel": "27 July 2026",
+        "endLabel": "24 October 2026"
+      },
+      "status": "NOT_COLLECTED",
+      "attemptIds": [],
+      "observedRejectionReasons": [],
+      "requiredAction": "Collect normal UI export if still required after access resumes."
+    },
+    {
+      "kind": "pair-daily",
+      "query": "mercedes repair dubai",
+      "page": "https://digitecme.com/brands/mercedes-benz-service-dubai",
+      "country": "ARE",
+      "device": "DESKTOP",
+      "window": {
+        "id": "90d",
+        "start": "20260727",
+        "end": "20261024",
+        "startLabel": "27 July 2026",
+        "endLabel": "24 October 2026"
+      },
+      "status": "NOT_COLLECTED",
+      "attemptIds": [],
+      "observedRejectionReasons": [],
+      "requiredAction": "Collect normal UI export if still required after access resumes."
+    },
+    {
+      "kind": "pair-daily",
+      "query": "mercedes repair dubai",
+      "page": "https://digitecme.com/services/mercedes-repair-dubai",
+      "country": "ARE",
+      "device": "DESKTOP",
+      "window": {
+        "id": "90d",
+        "start": "20260727",
+        "end": "20261024",
+        "startLabel": "27 July 2026",
+        "endLabel": "24 October 2026"
+      },
+      "status": "NOT_COLLECTED",
+      "attemptIds": [],
+      "observedRejectionReasons": [],
+      "requiredAction": "Collect normal UI export if still required after access resumes."
+    },
+    {
+      "kind": "pair-daily",
+      "query": "mercedes repair dubai",
+      "page": "https://digitecme.com/blog/mercedes-s-class-service-dubai-guide",
+      "country": "ARE",
+      "device": "DESKTOP",
+      "window": {
+        "id": "90d",
+        "start": "20260727",
+        "end": "20261024",
+        "startLabel": "27 July 2026",
+        "endLabel": "24 October 2026"
+      },
+      "status": "NOT_COLLECTED",
+      "attemptIds": [],
+      "observedRejectionReasons": [],
+      "requiredAction": "Collect normal UI export if still required after access resumes."
+    },
+    {
+      "kind": "pair-daily",
+      "query": "mercedes repair dubai",
+      "page": "https://digitecme.com/brands/maybach-service-dubai/mechanical-repair",
+      "country": "ARE",
+      "device": "DESKTOP",
+      "window": {
+        "id": "90d",
+        "start": "20260727",
+        "end": "20261024",
+        "startLabel": "27 July 2026",
+        "endLabel": "24 October 2026"
+      },
+      "status": "NOT_COLLECTED",
+      "attemptIds": [],
+      "observedRejectionReasons": [],
+      "requiredAction": "Collect normal UI export if still required after access resumes."
+    },
+    {
+      "kind": "pair-daily",
+      "query": "mercedes repair dubai",
+      "page": "https://digitecme.com/services/mercedes-body-repair-dubai/",
+      "country": "ARE",
+      "device": "DESKTOP",
+      "window": {
+        "id": "90d",
+        "start": "20260727",
+        "end": "20261024",
+        "startLabel": "27 July 2026",
+        "endLabel": "24 October 2026"
+      },
+      "status": "NOT_COLLECTED",
+      "attemptIds": [],
+      "observedRejectionReasons": [],
+      "requiredAction": "Collect normal UI export if still required after access resumes."
+    },
+    {
+      "kind": "pair-daily",
+      "query": "mercedes repair dubai",
+      "page": "https://digitecme.com/brands/mercedes-benz-service-dubai/fuel-system-repair",
+      "country": "ARE",
+      "device": "DESKTOP",
+      "window": {
+        "id": "90d",
+        "start": "20260727",
+        "end": "20261024",
+        "startLabel": "27 July 2026",
+        "endLabel": "24 October 2026"
+      },
+      "status": "NOT_COLLECTED",
+      "attemptIds": [],
+      "observedRejectionReasons": [],
+      "requiredAction": "Collect normal UI export if still required after access resumes."
+    },
+    {
+      "kind": "pair-daily",
+      "query": "mercedes repair dubai",
+      "page": "https://digitecme.com/brands/mercedes-benz-service-dubai/tire-repair",
+      "country": "ARE",
+      "device": "DESKTOP",
+      "window": {
+        "id": "90d",
+        "start": "20260727",
+        "end": "20261024",
+        "startLabel": "27 July 2026",
+        "endLabel": "24 October 2026"
+      },
+      "status": "NOT_COLLECTED",
+      "attemptIds": [],
+      "observedRejectionReasons": [],
+      "requiredAction": "Collect normal UI export if still required after access resumes."
+    },
+    {
+      "kind": "pair-daily",
+      "query": "mercedes specialist dubai",
+      "page": "https://digitecme.com/brands/mercedes-benz-service-dubai",
+      "country": "ARE",
+      "device": "DESKTOP",
+      "window": {
+        "id": "90d",
+        "start": "20260727",
+        "end": "20261024",
+        "startLabel": "27 July 2026",
+        "endLabel": "24 October 2026"
+      },
+      "status": "NOT_COLLECTED",
+      "attemptIds": [],
+      "observedRejectionReasons": [],
+      "requiredAction": "Collect normal UI export if still required after access resumes."
+    },
+    {
+      "kind": "pair-daily",
+      "query": "mercedes specialist dubai",
+      "page": "https://digitecme.com/services/mercedes-repair-dubai",
+      "country": "ARE",
+      "device": "DESKTOP",
+      "window": {
+        "id": "90d",
+        "start": "20260727",
+        "end": "20261024",
+        "startLabel": "27 July 2026",
+        "endLabel": "24 October 2026"
+      },
+      "status": "NOT_COLLECTED",
+      "attemptIds": [],
+      "observedRejectionReasons": [],
+      "requiredAction": "Collect normal UI export if still required after access resumes."
+    },
+    {
+      "kind": "pair-daily",
+      "query": "mercedes specialist dubai",
+      "page": "https://digitecme.com/",
+      "country": "ARE",
+      "device": "DESKTOP",
+      "window": {
+        "id": "90d",
+        "start": "20260727",
+        "end": "20261024",
+        "startLabel": "27 July 2026",
+        "endLabel": "24 October 2026"
+      },
+      "status": "NOT_COLLECTED",
+      "attemptIds": [],
+      "observedRejectionReasons": [],
+      "requiredAction": "Collect normal UI export if still required after access resumes."
+    },
+    {
+      "kind": "pair-daily",
+      "query": "mercedes specialist dubai",
+      "page": "https://digitecme.com/best-mercedes-workshop-dubai",
+      "country": "ARE",
+      "device": "DESKTOP",
+      "window": {
+        "id": "90d",
+        "start": "20260727",
+        "end": "20261024",
+        "startLabel": "27 July 2026",
+        "endLabel": "24 October 2026"
+      },
+      "status": "NOT_COLLECTED",
+      "attemptIds": [],
+      "observedRejectionReasons": [],
+      "requiredAction": "Collect normal UI export if still required after access resumes."
+    },
+    {
+      "kind": "pair-daily",
+      "query": "mercedes workshop dubai",
+      "page": "https://digitecme.com/brands/mercedes-benz-service-dubai",
+      "country": "ARE",
+      "device": "DESKTOP",
+      "window": {
+        "id": "90d",
+        "start": "20260727",
+        "end": "20261024",
+        "startLabel": "27 July 2026",
+        "endLabel": "24 October 2026"
+      },
+      "status": "NOT_COLLECTED",
+      "attemptIds": [],
+      "observedRejectionReasons": [],
+      "requiredAction": "Collect normal UI export if still required after access resumes."
+    },
+    {
+      "kind": "pair-daily",
+      "query": "mercedes workshop dubai",
+      "page": "https://digitecme.com/",
+      "country": "ARE",
+      "device": "DESKTOP",
+      "window": {
+        "id": "90d",
+        "start": "20260727",
+        "end": "20261024",
+        "startLabel": "27 July 2026",
+        "endLabel": "24 October 2026"
+      },
+      "status": "NOT_COLLECTED",
+      "attemptIds": [],
+      "observedRejectionReasons": [],
+      "requiredAction": "Collect normal UI export if still required after access resumes."
+    },
+    {
+      "kind": "pair-daily",
+      "query": "mercedes workshop dubai",
+      "page": "https://digitecme.com/best-mercedes-workshop-dubai",
+      "country": "ARE",
+      "device": "DESKTOP",
+      "window": {
+        "id": "90d",
+        "start": "20260727",
+        "end": "20261024",
+        "startLabel": "27 July 2026",
+        "endLabel": "24 October 2026"
+      },
+      "status": "NOT_COLLECTED",
+      "attemptIds": [],
+      "observedRejectionReasons": [],
+      "requiredAction": "Collect normal UI export if still required after access resumes."
+    },
+    {
+      "kind": "pair-daily",
+      "query": "mercedes workshop dubai",
+      "page": "https://digitecme.com/services/mercedes-repair-dubai",
+      "country": "ARE",
+      "device": "DESKTOP",
+      "window": {
+        "id": "90d",
+        "start": "20260727",
+        "end": "20261024",
+        "startLabel": "27 July 2026",
+        "endLabel": "24 October 2026"
+      },
+      "status": "NOT_COLLECTED",
+      "attemptIds": [],
+      "observedRejectionReasons": [],
+      "requiredAction": "Collect normal UI export if still required after access resumes."
+    },
+    {
+      "kind": "pair-daily",
+      "query": "mercedes workshop dubai",
+      "page": "https://digitecme.com/brands/mercedes-benz-service-dubai/body-repair",
+      "country": "ARE",
+      "device": "DESKTOP",
+      "window": {
+        "id": "90d",
+        "start": "20260727",
+        "end": "20261024",
+        "startLabel": "27 July 2026",
+        "endLabel": "24 October 2026"
+      },
+      "status": "NOT_COLLECTED",
+      "attemptIds": [],
+      "observedRejectionReasons": [],
+      "requiredAction": "Collect normal UI export if still required after access resumes."
+    },
+    {
+      "kind": "pair-daily",
+      "query": "mercedes workshop dubai",
+      "page": "https://digitecme.com/brands/mercedes-benz-service-dubai/fuel-system-repair",
+      "country": "ARE",
+      "device": "DESKTOP",
+      "window": {
+        "id": "90d",
+        "start": "20260727",
+        "end": "20261024",
+        "startLabel": "27 July 2026",
+        "endLabel": "24 October 2026"
+      },
+      "status": "NOT_COLLECTED",
+      "attemptIds": [],
+      "observedRejectionReasons": [],
+      "requiredAction": "Collect normal UI export if still required after access resumes."
+    },
+    {
+      "kind": "pair-daily",
+      "query": "mercedes workshop dubai",
+      "page": "https://digitecme.com/brands/mercedes-benz-service-dubai/mechanical-repair",
+      "country": "ARE",
+      "device": "DESKTOP",
+      "window": {
+        "id": "90d",
+        "start": "20260727",
+        "end": "20261024",
+        "startLabel": "27 July 2026",
+        "endLabel": "24 October 2026"
+      },
+      "status": "NOT_COLLECTED",
+      "attemptIds": [],
+      "observedRejectionReasons": [],
+      "requiredAction": "Collect normal UI export if still required after access resumes."
+    },
+    {
+      "kind": "pair-daily",
+      "query": "mercedes workshop dubai",
+      "page": "https://digitecme.com/blog/best-oil-change-dubai-mercedes",
+      "country": "ARE",
+      "device": "DESKTOP",
+      "window": {
+        "id": "90d",
+        "start": "20260727",
+        "end": "20261024",
+        "startLabel": "27 July 2026",
+        "endLabel": "24 October 2026"
+      },
+      "status": "NOT_COLLECTED",
+      "attemptIds": [],
+      "observedRejectionReasons": [],
+      "requiredAction": "Collect normal UI export if still required after access resumes."
+    },
+    {
+      "kind": "pair-daily",
+      "query": "mercedes maintenance dubai",
+      "page": "https://digitecme.com/brands/mercedes-benz-service-dubai",
+      "country": "ARE",
+      "device": "DESKTOP",
+      "window": {
+        "id": "90d",
+        "start": "20260727",
+        "end": "20261024",
+        "startLabel": "27 July 2026",
+        "endLabel": "24 October 2026"
+      },
+      "status": "NOT_COLLECTED",
+      "attemptIds": [],
+      "observedRejectionReasons": [],
+      "requiredAction": "Collect normal UI export if still required after access resumes."
+    },
+    {
+      "kind": "pair-daily",
+      "query": "mercedes maintenance dubai",
+      "page": "https://digitecme.com/services/mercedes-repair-dubai",
+      "country": "ARE",
+      "device": "DESKTOP",
+      "window": {
+        "id": "90d",
+        "start": "20260727",
+        "end": "20261024",
+        "startLabel": "27 July 2026",
+        "endLabel": "24 October 2026"
+      },
+      "status": "NOT_COLLECTED",
+      "attemptIds": [],
+      "observedRejectionReasons": [],
+      "requiredAction": "Collect normal UI export if still required after access resumes."
+    },
+    {
+      "kind": "pair-daily",
+      "query": "mercedes maintenance dubai",
+      "page": "https://digitecme.com/blog/mercedes-s-class-service-dubai-guide",
+      "country": "ARE",
+      "device": "DESKTOP",
+      "window": {
+        "id": "90d",
+        "start": "20260727",
+        "end": "20261024",
+        "startLabel": "27 July 2026",
+        "endLabel": "24 October 2026"
+      },
+      "status": "NOT_COLLECTED",
+      "attemptIds": [],
+      "observedRejectionReasons": [],
+      "requiredAction": "Collect normal UI export if still required after access resumes."
+    },
+    {
+      "kind": "pair-daily",
+      "query": "mercedes maintenance dubai",
+      "page": "https://digitecme.com/brands/mercedes-benz-service-dubai/mechanical-repair",
+      "country": "ARE",
+      "device": "DESKTOP",
+      "window": {
+        "id": "90d",
+        "start": "20260727",
+        "end": "20261024",
+        "startLabel": "27 July 2026",
+        "endLabel": "24 October 2026"
+      },
+      "status": "NOT_COLLECTED",
+      "attemptIds": [],
+      "observedRejectionReasons": [],
+      "requiredAction": "Collect normal UI export if still required after access resumes."
+    },
+    {
+      "kind": "pair-daily",
+      "query": "mercedes maintenance dubai",
+      "page": "https://digitecme.com/blog/mercedes-e-class-service-dubai-guide",
+      "country": "ARE",
+      "device": "DESKTOP",
+      "window": {
+        "id": "90d",
+        "start": "20260727",
+        "end": "20261024",
+        "startLabel": "27 July 2026",
+        "endLabel": "24 October 2026"
+      },
+      "status": "NOT_COLLECTED",
+      "attemptIds": [],
+      "observedRejectionReasons": [],
+      "requiredAction": "Collect normal UI export if still required after access resumes."
+    },
+    {
+      "kind": "pair-daily",
+      "query": "mercedes maintenance dubai",
+      "page": "https://digitecme.com/blog/best-oil-change-dubai-mercedes",
+      "country": "ARE",
+      "device": "DESKTOP",
+      "window": {
+        "id": "90d",
+        "start": "20260727",
+        "end": "20261024",
+        "startLabel": "27 July 2026",
+        "endLabel": "24 October 2026"
+      },
+      "status": "NOT_COLLECTED",
+      "attemptIds": [],
+      "observedRejectionReasons": [],
+      "requiredAction": "Collect normal UI export if still required after access resumes."
+    },
+    {
+      "kind": "pair-daily",
+      "query": "mercedes maintenance dubai",
+      "page": "https://digitecme.com/blog/mercedes-c-class-service-dubai-guide",
+      "country": "ARE",
+      "device": "DESKTOP",
+      "window": {
+        "id": "90d",
+        "start": "20260727",
+        "end": "20261024",
+        "startLabel": "27 July 2026",
+        "endLabel": "24 October 2026"
+      },
+      "status": "NOT_COLLECTED",
+      "attemptIds": [],
+      "observedRejectionReasons": [],
+      "requiredAction": "Collect normal UI export if still required after access resumes."
+    },
+    {
+      "kind": "pair-daily",
+      "query": "mercedes maintenance dubai",
+      "page": "https://digitecme.com/blog/maybach-s580-service-dubai-guide",
+      "country": "ARE",
+      "device": "DESKTOP",
+      "window": {
+        "id": "90d",
+        "start": "20260727",
+        "end": "20261024",
+        "startLabel": "27 July 2026",
+        "endLabel": "24 October 2026"
+      },
+      "status": "NOT_COLLECTED",
+      "attemptIds": [],
+      "observedRejectionReasons": [],
+      "requiredAction": "Collect normal UI export if still required after access resumes."
+    },
+    {
+      "kind": "pair-daily",
+      "query": "mercedes oil change dubai",
+      "page": "https://digitecme.com/services/mercedes-oil-change-dubai/",
+      "country": "ARE",
+      "device": "DESKTOP",
+      "window": {
+        "id": "90d",
+        "start": "20260727",
+        "end": "20261024",
+        "startLabel": "27 July 2026",
+        "endLabel": "24 October 2026"
+      },
+      "status": "NOT_COLLECTED",
+      "attemptIds": [],
+      "observedRejectionReasons": [],
+      "requiredAction": "Collect normal UI export if still required after access resumes."
+    },
+    {
+      "kind": "pair-daily",
+      "query": "mercedes oil change dubai",
+      "page": "https://digitecme.com/services/oil-change-dubai",
+      "country": "ARE",
+      "device": "DESKTOP",
+      "window": {
+        "id": "90d",
+        "start": "20260727",
+        "end": "20261024",
+        "startLabel": "27 July 2026",
+        "endLabel": "24 October 2026"
+      },
+      "status": "NOT_COLLECTED",
+      "attemptIds": [],
+      "observedRejectionReasons": [],
+      "requiredAction": "Collect normal UI export if still required after access resumes."
+    },
+    {
+      "kind": "pair-daily",
+      "query": "mercedes oil change dubai",
+      "page": "https://digitecme.com/blog/best-oil-change-dubai-mercedes",
+      "country": "ARE",
+      "device": "DESKTOP",
+      "window": {
+        "id": "90d",
+        "start": "20260727",
+        "end": "20261024",
+        "startLabel": "27 July 2026",
+        "endLabel": "24 October 2026"
+      },
+      "status": "NOT_COLLECTED",
+      "attemptIds": [],
+      "observedRejectionReasons": [],
+      "requiredAction": "Collect normal UI export if still required after access resumes."
+    },
+    {
+      "kind": "pair-daily",
+      "query": "mercedes oil change dubai",
+      "page": "https://digitecme.com/brands/mercedes-benz-service-dubai",
+      "country": "ARE",
+      "device": "DESKTOP",
+      "window": {
+        "id": "90d",
+        "start": "20260727",
+        "end": "20261024",
+        "startLabel": "27 July 2026",
+        "endLabel": "24 October 2026"
+      },
+      "status": "NOT_COLLECTED",
+      "attemptIds": [],
+      "observedRejectionReasons": [],
+      "requiredAction": "Collect normal UI export if still required after access resumes."
+    }
+  ],
+  "indexedInspectionCandidateCoverage": {
+    "originalPlanned": 28,
+    "acceptedAmongOriginalPlan": 7,
+    "remainingCandidates": 21,
+    "additionalAcceptedOutsideOriginalPlan": [
+      "https://digitecme.com/ar/services/mercedes-body-repair-dubai"
+    ],
+    "candidates": [
+      {
+        "url": "https://digitecme.com/brands/mercedes-benz-service-dubai",
+        "status": "VALIDATED_STORED_REPORT",
+        "acceptedCapture": "2026-10-26T08:23:38.375Z"
+      },
+      {
+        "url": "https://digitecme.com/brands/mercedes-benz-service-dubai/",
+        "status": "NOT_COLLECTED_IN_THIS_SESSION",
+        "acceptedCapture": null
+      },
+      {
+        "url": "https://digitecme.com/ar/brands/mercedes-benz-service-dubai",
+        "status": "NOT_COLLECTED_IN_THIS_SESSION",
+        "acceptedCapture": null
+      },
+      {
+        "url": "https://digitecme.com/ar/brands/mercedes-benz-service-dubai/",
+        "status": "NOT_COLLECTED_IN_THIS_SESSION",
+        "acceptedCapture": null
+      },
+      {
+        "url": "https://digitecme.com/services/mercedes-oil-change-dubai",
+        "status": "VALIDATED_STORED_REPORT",
+        "acceptedCapture": "2026-10-26T08:24:10.561Z"
+      },
+      {
+        "url": "https://digitecme.com/services/mercedes-oil-change-dubai/",
+        "status": "VALIDATED_STORED_REPORT",
+        "acceptedCapture": "2026-10-26T08:19:17.887Z"
+      },
+      {
+        "url": "https://digitecme.com/services/mercedes-body-repair-dubai",
+        "status": "VALIDATED_STORED_REPORT",
+        "acceptedCapture": "2026-10-26T08:22:33.455Z"
+      },
+      {
+        "url": "https://digitecme.com/services/mercedes-body-repair-dubai/",
+        "status": "VALIDATED_STORED_REPORT",
+        "acceptedCapture": "2026-10-26T08:24:32.987Z"
+      },
+      {
+        "url": "https://digitecme.com/services/mercedes-mechanical-repair-dubai",
+        "status": "VALIDATED_STORED_REPORT",
+        "acceptedCapture": "2026-10-26T08:24:56.475Z"
+      },
+      {
+        "url": "https://digitecme.com/services/mercedes-mechanical-repair-dubai/",
+        "status": "NOT_COLLECTED_IN_THIS_SESSION",
+        "acceptedCapture": null
+      },
+      {
+        "url": "https://digitecme.com/services/mercedes-diagnostics-dubai",
+        "status": "VALIDATED_STORED_REPORT",
+        "acceptedCapture": "2026-10-26T08:25:25.686Z"
+      },
+      {
+        "url": "https://digitecme.com/services/mercedes-diagnostics-dubai/",
+        "status": "NOT_COLLECTED_IN_THIS_SESSION",
+        "acceptedCapture": null
+      },
+      {
+        "url": "https://digitecme.com/ar/services/mercedes-oil-change-dubai",
+        "status": "NOT_COLLECTED_IN_THIS_SESSION",
+        "acceptedCapture": null
+      },
+      {
+        "url": "https://digitecme.com/ar/services/mercedes-oil-change-dubai/",
+        "status": "NOT_COLLECTED_IN_THIS_SESSION",
+        "acceptedCapture": null
+      },
+      {
+        "url": "https://digitecme.com/ar/services/mercedes-battery-replacement-dubai",
+        "status": "NOT_COLLECTED_IN_THIS_SESSION",
+        "acceptedCapture": null
+      },
+      {
+        "url": "https://digitecme.com/ar/services/mercedes-battery-replacement-dubai/",
+        "status": "NOT_COLLECTED_IN_THIS_SESSION",
+        "acceptedCapture": null
+      },
+      {
+        "url": "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai",
+        "status": "NOT_COLLECTED_IN_THIS_SESSION",
+        "acceptedCapture": null
+      },
+      {
+        "url": "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai/",
+        "status": "NOT_COLLECTED_IN_THIS_SESSION",
+        "acceptedCapture": null
+      },
+      {
+        "url": "https://digitecme.com/ar/brands/mercedes-benz-service-dubai/oil-change",
+        "status": "NOT_COLLECTED_IN_THIS_SESSION",
+        "acceptedCapture": null
+      },
+      {
+        "url": "https://digitecme.com/ar/brands/mercedes-benz-service-dubai/oil-change/",
+        "status": "NOT_COLLECTED_IN_THIS_SESSION",
+        "acceptedCapture": null
+      },
+      {
+        "url": "https://digitecme.com/brands/mercedes-benz-service-dubai/body-repair",
+        "status": "NOT_COLLECTED_IN_THIS_SESSION",
+        "acceptedCapture": null
+      },
+      {
+        "url": "https://digitecme.com/brands/mercedes-benz-service-dubai/body-repair/",
+        "status": "NOT_COLLECTED_IN_THIS_SESSION",
+        "acceptedCapture": null
+      },
+      {
+        "url": "https://digitecme.com/ar/brands/mercedes-benz-service-dubai/battery-replacement",
+        "status": "NOT_COLLECTED_IN_THIS_SESSION",
+        "acceptedCapture": null
+      },
+      {
+        "url": "https://digitecme.com/ar/brands/mercedes-benz-service-dubai/battery-replacement/",
+        "status": "NOT_COLLECTED_IN_THIS_SESSION",
+        "acceptedCapture": null
+      },
+      {
+        "url": "https://digitecme.com/ar/brands/mercedes-benz-service-dubai/mechanical-repair",
+        "status": "NOT_COLLECTED_IN_THIS_SESSION",
+        "acceptedCapture": null
+      },
+      {
+        "url": "https://digitecme.com/ar/brands/mercedes-benz-service-dubai/mechanical-repair/",
+        "status": "NOT_COLLECTED_IN_THIS_SESSION",
+        "acceptedCapture": null
+      },
+      {
+        "url": "https://digitecme.com/brands/mercedes-benz-service-dubai/oil-change",
+        "status": "NOT_COLLECTED_IN_THIS_SESSION",
+        "acceptedCapture": null
+      },
+      {
+        "url": "https://digitecme.com/brands/mercedes-benz-service-dubai/oil-change/",
+        "status": "NOT_COLLECTED_IN_THIS_SESSION",
+        "acceptedCapture": null
+      }
+    ]
+  },
+  "optionalGlobalPageDaily": {
+    "count": 100,
+    "scope": "Global query-page daily was not part of the authoritative132-series plan. If later needed, collect exact filters for all actual observed global period pairs; no data is inferred here.",
+    "specifications": [
+      {
+        "kind": "pair-daily",
+        "query": "mercedes service dubai",
+        "page": "https://digitecme.com/brands/mercedes-benz-service-dubai",
+        "country": "ALL",
+        "device": "ALL",
+        "window": {
+          "id": "90d",
+          "start": "20260727",
+          "end": "20261024"
+        },
+        "breakdown": "date",
+        "status": "OPTIONAL_NOT_PLANNED_OR_COLLECTED",
+        "sourcePeriodDatasetId": "query-pages__90d__ALL__ALL__mercedes-service-dubai"
+      },
+      {
+        "kind": "pair-daily",
+        "query": "mercedes service dubai",
+        "page": "https://digitecme.com/services/mercedes-repair-dubai",
+        "country": "ALL",
+        "device": "ALL",
+        "window": {
+          "id": "90d",
+          "start": "20260727",
+          "end": "20261024"
+        },
+        "breakdown": "date",
+        "status": "OPTIONAL_NOT_PLANNED_OR_COLLECTED",
+        "sourcePeriodDatasetId": "query-pages__90d__ALL__ALL__mercedes-service-dubai"
+      },
+      {
+        "kind": "pair-daily",
+        "query": "mercedes service dubai",
+        "page": "https://digitecme.com/services/mercedes-oil-change-dubai/",
+        "country": "ALL",
+        "device": "ALL",
+        "window": {
+          "id": "90d",
+          "start": "20260727",
+          "end": "20261024"
+        },
+        "breakdown": "date",
+        "status": "OPTIONAL_NOT_PLANNED_OR_COLLECTED",
+        "sourcePeriodDatasetId": "query-pages__90d__ALL__ALL__mercedes-service-dubai"
+      },
+      {
+        "kind": "pair-daily",
+        "query": "mercedes service dubai",
+        "page": "https://digitecme.com/services/mercedes-brake-repair-dubai/",
+        "country": "ALL",
+        "device": "ALL",
+        "window": {
+          "id": "90d",
+          "start": "20260727",
+          "end": "20261024"
+        },
+        "breakdown": "date",
+        "status": "OPTIONAL_NOT_PLANNED_OR_COLLECTED",
+        "sourcePeriodDatasetId": "query-pages__90d__ALL__ALL__mercedes-service-dubai"
+      },
+      {
+        "kind": "pair-daily",
+        "query": "mercedes service dubai",
+        "page": "https://digitecme.com/services/mercedes-suspension-repair-dubai/",
+        "country": "ALL",
+        "device": "ALL",
+        "window": {
+          "id": "90d",
+          "start": "20260727",
+          "end": "20261024"
+        },
+        "breakdown": "date",
+        "status": "OPTIONAL_NOT_PLANNED_OR_COLLECTED",
+        "sourcePeriodDatasetId": "query-pages__90d__ALL__ALL__mercedes-service-dubai"
+      },
+      {
+        "kind": "pair-daily",
+        "query": "mercedes service dubai",
+        "page": "https://digitecme.com/brands/mercedes-benz-service-dubai",
+        "country": "ALL",
+        "device": "MOBILE",
+        "window": {
+          "id": "90d",
+          "start": "20260727",
+          "end": "20261024"
+        },
+        "breakdown": "date",
+        "status": "OPTIONAL_NOT_PLANNED_OR_COLLECTED",
+        "sourcePeriodDatasetId": "query-pages__90d__ALL__MOBILE__mercedes-service-dubai__attempt2"
+      },
+      {
+        "kind": "pair-daily",
+        "query": "mercedes service dubai",
+        "page": "https://digitecme.com/services/mercedes-repair-dubai",
+        "country": "ALL",
+        "device": "MOBILE",
+        "window": {
+          "id": "90d",
+          "start": "20260727",
+          "end": "20261024"
+        },
+        "breakdown": "date",
+        "status": "OPTIONAL_NOT_PLANNED_OR_COLLECTED",
+        "sourcePeriodDatasetId": "query-pages__90d__ALL__MOBILE__mercedes-service-dubai__attempt2"
+      },
+      {
+        "kind": "pair-daily",
+        "query": "mercedes service dubai",
+        "page": "https://digitecme.com/services/mercedes-suspension-repair-dubai/",
+        "country": "ALL",
+        "device": "MOBILE",
+        "window": {
+          "id": "90d",
+          "start": "20260727",
+          "end": "20261024"
+        },
+        "breakdown": "date",
+        "status": "OPTIONAL_NOT_PLANNED_OR_COLLECTED",
+        "sourcePeriodDatasetId": "query-pages__90d__ALL__MOBILE__mercedes-service-dubai__attempt2"
+      },
+      {
+        "kind": "pair-daily",
+        "query": "mercedes service dubai",
+        "page": "https://digitecme.com/brands/mercedes-benz-service-dubai",
+        "country": "ALL",
+        "device": "DESKTOP",
+        "window": {
+          "id": "90d",
+          "start": "20260727",
+          "end": "20261024"
+        },
+        "breakdown": "date",
+        "status": "OPTIONAL_NOT_PLANNED_OR_COLLECTED",
+        "sourcePeriodDatasetId": "query-pages__90d__ALL__DESKTOP__mercedes-service-dubai"
+      },
+      {
+        "kind": "pair-daily",
+        "query": "mercedes service dubai",
+        "page": "https://digitecme.com/services/mercedes-repair-dubai",
+        "country": "ALL",
+        "device": "DESKTOP",
+        "window": {
+          "id": "90d",
+          "start": "20260727",
+          "end": "20261024"
+        },
+        "breakdown": "date",
+        "status": "OPTIONAL_NOT_PLANNED_OR_COLLECTED",
+        "sourcePeriodDatasetId": "query-pages__90d__ALL__DESKTOP__mercedes-service-dubai"
+      },
+      {
+        "kind": "pair-daily",
+        "query": "mercedes service dubai",
+        "page": "https://digitecme.com/services/mercedes-oil-change-dubai/",
+        "country": "ALL",
+        "device": "DESKTOP",
+        "window": {
+          "id": "90d",
+          "start": "20260727",
+          "end": "20261024"
+        },
+        "breakdown": "date",
+        "status": "OPTIONAL_NOT_PLANNED_OR_COLLECTED",
+        "sourcePeriodDatasetId": "query-pages__90d__ALL__DESKTOP__mercedes-service-dubai"
+      },
+      {
+        "kind": "pair-daily",
+        "query": "mercedes service dubai",
+        "page": "https://digitecme.com/services/mercedes-brake-repair-dubai/",
+        "country": "ALL",
+        "device": "DESKTOP",
+        "window": {
+          "id": "90d",
+          "start": "20260727",
+          "end": "20261024"
+        },
+        "breakdown": "date",
+        "status": "OPTIONAL_NOT_PLANNED_OR_COLLECTED",
+        "sourcePeriodDatasetId": "query-pages__90d__ALL__DESKTOP__mercedes-service-dubai"
+      },
+      {
+        "kind": "pair-daily",
+        "query": "mercedes repair dubai",
+        "page": "https://digitecme.com/brands/mercedes-benz-service-dubai",
+        "country": "ALL",
+        "device": "ALL",
+        "window": {
+          "id": "90d",
+          "start": "20260727",
+          "end": "20261024"
+        },
+        "breakdown": "date",
+        "status": "OPTIONAL_NOT_PLANNED_OR_COLLECTED",
+        "sourcePeriodDatasetId": "query-pages__90d__ALL__ALL__mercedes-repair-dubai"
+      },
+      {
+        "kind": "pair-daily",
+        "query": "mercedes repair dubai",
+        "page": "https://digitecme.com/services/mercedes-repair-dubai",
+        "country": "ALL",
+        "device": "ALL",
+        "window": {
+          "id": "90d",
+          "start": "20260727",
+          "end": "20261024"
+        },
+        "breakdown": "date",
+        "status": "OPTIONAL_NOT_PLANNED_OR_COLLECTED",
+        "sourcePeriodDatasetId": "query-pages__90d__ALL__ALL__mercedes-repair-dubai"
+      },
+      {
+        "kind": "pair-daily",
+        "query": "mercedes repair dubai",
+        "page": "https://digitecme.com/blog/mercedes-s-class-service-dubai-guide",
+        "country": "ALL",
+        "device": "ALL",
+        "window": {
+          "id": "90d",
+          "start": "20260727",
+          "end": "20261024"
+        },
+        "breakdown": "date",
+        "status": "OPTIONAL_NOT_PLANNED_OR_COLLECTED",
+        "sourcePeriodDatasetId": "query-pages__90d__ALL__ALL__mercedes-repair-dubai"
+      },
+      {
+        "kind": "pair-daily",
+        "query": "mercedes repair dubai",
+        "page": "https://digitecme.com/brands/maybach-service-dubai/mechanical-repair",
+        "country": "ALL",
+        "device": "ALL",
+        "window": {
+          "id": "90d",
+          "start": "20260727",
+          "end": "20261024"
+        },
+        "breakdown": "date",
+        "status": "OPTIONAL_NOT_PLANNED_OR_COLLECTED",
+        "sourcePeriodDatasetId": "query-pages__90d__ALL__ALL__mercedes-repair-dubai"
+      },
+      {
+        "kind": "pair-daily",
+        "query": "mercedes repair dubai",
+        "page": "https://digitecme.com/services/mercedes-body-repair-dubai/",
+        "country": "ALL",
+        "device": "ALL",
+        "window": {
+          "id": "90d",
+          "start": "20260727",
+          "end": "20261024"
+        },
+        "breakdown": "date",
+        "status": "OPTIONAL_NOT_PLANNED_OR_COLLECTED",
+        "sourcePeriodDatasetId": "query-pages__90d__ALL__ALL__mercedes-repair-dubai"
+      },
+      {
+        "kind": "pair-daily",
+        "query": "mercedes repair dubai",
+        "page": "https://digitecme.com/",
+        "country": "ALL",
+        "device": "ALL",
+        "window": {
+          "id": "90d",
+          "start": "20260727",
+          "end": "20261024"
+        },
+        "breakdown": "date",
+        "status": "OPTIONAL_NOT_PLANNED_OR_COLLECTED",
+        "sourcePeriodDatasetId": "query-pages__90d__ALL__ALL__mercedes-repair-dubai"
+      },
+      {
+        "kind": "pair-daily",
+        "query": "mercedes repair dubai",
+        "page": "https://digitecme.com/brands/mercedes-benz-service-dubai/tire-repair",
+        "country": "ALL",
+        "device": "ALL",
+        "window": {
+          "id": "90d",
+          "start": "20260727",
+          "end": "20261024"
+        },
+        "breakdown": "date",
+        "status": "OPTIONAL_NOT_PLANNED_OR_COLLECTED",
+        "sourcePeriodDatasetId": "query-pages__90d__ALL__ALL__mercedes-repair-dubai"
+      },
+      {
+        "kind": "pair-daily",
+        "query": "mercedes repair dubai",
+        "page": "https://digitecme.com/brands/mercedes-benz-service-dubai/fuel-system-repair",
+        "country": "ALL",
+        "device": "ALL",
+        "window": {
+          "id": "90d",
+          "start": "20260727",
+          "end": "20261024"
+        },
+        "breakdown": "date",
+        "status": "OPTIONAL_NOT_PLANNED_OR_COLLECTED",
+        "sourcePeriodDatasetId": "query-pages__90d__ALL__ALL__mercedes-repair-dubai"
+      },
+      {
+        "kind": "pair-daily",
+        "query": "mercedes repair dubai",
+        "page": "https://digitecme.com/brands/mercedes-benz-service-dubai",
+        "country": "ALL",
+        "device": "MOBILE",
+        "window": {
+          "id": "90d",
+          "start": "20260727",
+          "end": "20261024"
+        },
+        "breakdown": "date",
+        "status": "OPTIONAL_NOT_PLANNED_OR_COLLECTED",
+        "sourcePeriodDatasetId": "query-pages__90d__ALL__MOBILE__mercedes-repair-dubai"
+      },
+      {
+        "kind": "pair-daily",
+        "query": "mercedes repair dubai",
+        "page": "https://digitecme.com/services/mercedes-repair-dubai",
+        "country": "ALL",
+        "device": "MOBILE",
+        "window": {
+          "id": "90d",
+          "start": "20260727",
+          "end": "20261024"
+        },
+        "breakdown": "date",
+        "status": "OPTIONAL_NOT_PLANNED_OR_COLLECTED",
+        "sourcePeriodDatasetId": "query-pages__90d__ALL__MOBILE__mercedes-repair-dubai"
+      },
+      {
+        "kind": "pair-daily",
+        "query": "mercedes repair dubai",
+        "page": "https://digitecme.com/blog/mercedes-s-class-service-dubai-guide",
+        "country": "ALL",
+        "device": "MOBILE",
+        "window": {
+          "id": "90d",
+          "start": "20260727",
+          "end": "20261024"
+        },
+        "breakdown": "date",
+        "status": "OPTIONAL_NOT_PLANNED_OR_COLLECTED",
+        "sourcePeriodDatasetId": "query-pages__90d__ALL__MOBILE__mercedes-repair-dubai"
+      },
+      {
+        "kind": "pair-daily",
+        "query": "mercedes repair dubai",
+        "page": "https://digitecme.com/services/mercedes-body-repair-dubai/",
+        "country": "ALL",
+        "device": "MOBILE",
+        "window": {
+          "id": "90d",
+          "start": "20260727",
+          "end": "20261024"
+        },
+        "breakdown": "date",
+        "status": "OPTIONAL_NOT_PLANNED_OR_COLLECTED",
+        "sourcePeriodDatasetId": "query-pages__90d__ALL__MOBILE__mercedes-repair-dubai"
+      },
+      {
+        "kind": "pair-daily",
+        "query": "mercedes repair dubai",
+        "page": "https://digitecme.com/brands/mercedes-benz-service-dubai",
+        "country": "ALL",
+        "device": "DESKTOP",
+        "window": {
+          "id": "90d",
+          "start": "20260727",
+          "end": "20261024"
+        },
+        "breakdown": "date",
+        "status": "OPTIONAL_NOT_PLANNED_OR_COLLECTED",
+        "sourcePeriodDatasetId": "query-pages__90d__ALL__DESKTOP__mercedes-repair-dubai"
+      },
+      {
+        "kind": "pair-daily",
+        "query": "mercedes repair dubai",
+        "page": "https://digitecme.com/services/mercedes-repair-dubai",
+        "country": "ALL",
+        "device": "DESKTOP",
+        "window": {
+          "id": "90d",
+          "start": "20260727",
+          "end": "20261024"
+        },
+        "breakdown": "date",
+        "status": "OPTIONAL_NOT_PLANNED_OR_COLLECTED",
+        "sourcePeriodDatasetId": "query-pages__90d__ALL__DESKTOP__mercedes-repair-dubai"
+      },
+      {
+        "kind": "pair-daily",
+        "query": "mercedes repair dubai",
+        "page": "https://digitecme.com/blog/mercedes-s-class-service-dubai-guide",
+        "country": "ALL",
+        "device": "DESKTOP",
+        "window": {
+          "id": "90d",
+          "start": "20260727",
+          "end": "20261024"
+        },
+        "breakdown": "date",
+        "status": "OPTIONAL_NOT_PLANNED_OR_COLLECTED",
+        "sourcePeriodDatasetId": "query-pages__90d__ALL__DESKTOP__mercedes-repair-dubai"
+      },
+      {
+        "kind": "pair-daily",
+        "query": "mercedes repair dubai",
+        "page": "https://digitecme.com/brands/maybach-service-dubai/mechanical-repair",
+        "country": "ALL",
+        "device": "DESKTOP",
+        "window": {
+          "id": "90d",
+          "start": "20260727",
+          "end": "20261024"
+        },
+        "breakdown": "date",
+        "status": "OPTIONAL_NOT_PLANNED_OR_COLLECTED",
+        "sourcePeriodDatasetId": "query-pages__90d__ALL__DESKTOP__mercedes-repair-dubai"
+      },
+      {
+        "kind": "pair-daily",
+        "query": "mercedes repair dubai",
+        "page": "https://digitecme.com/",
+        "country": "ALL",
+        "device": "DESKTOP",
+        "window": {
+          "id": "90d",
+          "start": "20260727",
+          "end": "20261024"
+        },
+        "breakdown": "date",
+        "status": "OPTIONAL_NOT_PLANNED_OR_COLLECTED",
+        "sourcePeriodDatasetId": "query-pages__90d__ALL__DESKTOP__mercedes-repair-dubai"
+      },
+      {
+        "kind": "pair-daily",
+        "query": "mercedes repair dubai",
+        "page": "https://digitecme.com/brands/mercedes-benz-service-dubai/tire-repair",
+        "country": "ALL",
+        "device": "DESKTOP",
+        "window": {
+          "id": "90d",
+          "start": "20260727",
+          "end": "20261024"
+        },
+        "breakdown": "date",
+        "status": "OPTIONAL_NOT_PLANNED_OR_COLLECTED",
+        "sourcePeriodDatasetId": "query-pages__90d__ALL__DESKTOP__mercedes-repair-dubai"
+      },
+      {
+        "kind": "pair-daily",
+        "query": "mercedes repair dubai",
+        "page": "https://digitecme.com/services/mercedes-body-repair-dubai/",
+        "country": "ALL",
+        "device": "DESKTOP",
+        "window": {
+          "id": "90d",
+          "start": "20260727",
+          "end": "20261024"
+        },
+        "breakdown": "date",
+        "status": "OPTIONAL_NOT_PLANNED_OR_COLLECTED",
+        "sourcePeriodDatasetId": "query-pages__90d__ALL__DESKTOP__mercedes-repair-dubai"
+      },
+      {
+        "kind": "pair-daily",
+        "query": "mercedes repair dubai",
+        "page": "https://digitecme.com/brands/mercedes-benz-service-dubai/fuel-system-repair",
+        "country": "ALL",
+        "device": "DESKTOP",
+        "window": {
+          "id": "90d",
+          "start": "20260727",
+          "end": "20261024"
+        },
+        "breakdown": "date",
+        "status": "OPTIONAL_NOT_PLANNED_OR_COLLECTED",
+        "sourcePeriodDatasetId": "query-pages__90d__ALL__DESKTOP__mercedes-repair-dubai"
+      },
+      {
+        "kind": "pair-daily",
+        "query": "mercedes specialist dubai",
+        "page": "https://digitecme.com/brands/mercedes-benz-service-dubai",
+        "country": "ALL",
+        "device": "ALL",
+        "window": {
+          "id": "90d",
+          "start": "20260727",
+          "end": "20261024"
+        },
+        "breakdown": "date",
+        "status": "OPTIONAL_NOT_PLANNED_OR_COLLECTED",
+        "sourcePeriodDatasetId": "query-pages__90d__ALL__ALL__mercedes-specialist-dubai"
+      },
+      {
+        "kind": "pair-daily",
+        "query": "mercedes specialist dubai",
+        "page": "https://digitecme.com/services/mercedes-repair-dubai",
+        "country": "ALL",
+        "device": "ALL",
+        "window": {
+          "id": "90d",
+          "start": "20260727",
+          "end": "20261024"
+        },
+        "breakdown": "date",
+        "status": "OPTIONAL_NOT_PLANNED_OR_COLLECTED",
+        "sourcePeriodDatasetId": "query-pages__90d__ALL__ALL__mercedes-specialist-dubai"
+      },
+      {
+        "kind": "pair-daily",
+        "query": "mercedes specialist dubai",
+        "page": "https://digitecme.com/",
+        "country": "ALL",
+        "device": "ALL",
+        "window": {
+          "id": "90d",
+          "start": "20260727",
+          "end": "20261024"
+        },
+        "breakdown": "date",
+        "status": "OPTIONAL_NOT_PLANNED_OR_COLLECTED",
+        "sourcePeriodDatasetId": "query-pages__90d__ALL__ALL__mercedes-specialist-dubai"
+      },
+      {
+        "kind": "pair-daily",
+        "query": "mercedes specialist dubai",
+        "page": "https://digitecme.com/best-mercedes-workshop-dubai",
+        "country": "ALL",
+        "device": "ALL",
+        "window": {
+          "id": "90d",
+          "start": "20260727",
+          "end": "20261024"
+        },
+        "breakdown": "date",
+        "status": "OPTIONAL_NOT_PLANNED_OR_COLLECTED",
+        "sourcePeriodDatasetId": "query-pages__90d__ALL__ALL__mercedes-specialist-dubai"
+      },
+      {
+        "kind": "pair-daily",
+        "query": "mercedes specialist dubai",
+        "page": "https://digitecme.com/brands/mercedes-benz-service-dubai",
+        "country": "ALL",
+        "device": "MOBILE",
+        "window": {
+          "id": "90d",
+          "start": "20260727",
+          "end": "20261024"
+        },
+        "breakdown": "date",
+        "status": "OPTIONAL_NOT_PLANNED_OR_COLLECTED",
+        "sourcePeriodDatasetId": "query-pages__90d__ALL__MOBILE__mercedes-specialist-dubai"
+      },
+      {
+        "kind": "pair-daily",
+        "query": "mercedes specialist dubai",
+        "page": "https://digitecme.com/services/mercedes-repair-dubai",
+        "country": "ALL",
+        "device": "MOBILE",
+        "window": {
+          "id": "90d",
+          "start": "20260727",
+          "end": "20261024"
+        },
+        "breakdown": "date",
+        "status": "OPTIONAL_NOT_PLANNED_OR_COLLECTED",
+        "sourcePeriodDatasetId": "query-pages__90d__ALL__MOBILE__mercedes-specialist-dubai"
+      },
+      {
+        "kind": "pair-daily",
+        "query": "mercedes specialist dubai",
+        "page": "https://digitecme.com/",
+        "country": "ALL",
+        "device": "MOBILE",
+        "window": {
+          "id": "90d",
+          "start": "20260727",
+          "end": "20261024"
+        },
+        "breakdown": "date",
+        "status": "OPTIONAL_NOT_PLANNED_OR_COLLECTED",
+        "sourcePeriodDatasetId": "query-pages__90d__ALL__MOBILE__mercedes-specialist-dubai"
+      },
+      {
+        "kind": "pair-daily",
+        "query": "mercedes specialist dubai",
+        "page": "https://digitecme.com/best-mercedes-workshop-dubai",
+        "country": "ALL",
+        "device": "MOBILE",
+        "window": {
+          "id": "90d",
+          "start": "20260727",
+          "end": "20261024"
+        },
+        "breakdown": "date",
+        "status": "OPTIONAL_NOT_PLANNED_OR_COLLECTED",
+        "sourcePeriodDatasetId": "query-pages__90d__ALL__MOBILE__mercedes-specialist-dubai"
+      },
+      {
+        "kind": "pair-daily",
+        "query": "mercedes specialist dubai",
+        "page": "https://digitecme.com/brands/mercedes-benz-service-dubai",
+        "country": "ALL",
+        "device": "DESKTOP",
+        "window": {
+          "id": "90d",
+          "start": "20260727",
+          "end": "20261024"
+        },
+        "breakdown": "date",
+        "status": "OPTIONAL_NOT_PLANNED_OR_COLLECTED",
+        "sourcePeriodDatasetId": "query-pages__90d__ALL__DESKTOP__mercedes-specialist-dubai"
+      },
+      {
+        "kind": "pair-daily",
+        "query": "mercedes specialist dubai",
+        "page": "https://digitecme.com/services/mercedes-repair-dubai",
+        "country": "ALL",
+        "device": "DESKTOP",
+        "window": {
+          "id": "90d",
+          "start": "20260727",
+          "end": "20261024"
+        },
+        "breakdown": "date",
+        "status": "OPTIONAL_NOT_PLANNED_OR_COLLECTED",
+        "sourcePeriodDatasetId": "query-pages__90d__ALL__DESKTOP__mercedes-specialist-dubai"
+      },
+      {
+        "kind": "pair-daily",
+        "query": "mercedes specialist dubai",
+        "page": "https://digitecme.com/",
+        "country": "ALL",
+        "device": "DESKTOP",
+        "window": {
+          "id": "90d",
+          "start": "20260727",
+          "end": "20261024"
+        },
+        "breakdown": "date",
+        "status": "OPTIONAL_NOT_PLANNED_OR_COLLECTED",
+        "sourcePeriodDatasetId": "query-pages__90d__ALL__DESKTOP__mercedes-specialist-dubai"
+      },
+      {
+        "kind": "pair-daily",
+        "query": "mercedes specialist dubai",
+        "page": "https://digitecme.com/best-mercedes-workshop-dubai",
+        "country": "ALL",
+        "device": "DESKTOP",
+        "window": {
+          "id": "90d",
+          "start": "20260727",
+          "end": "20261024"
+        },
+        "breakdown": "date",
+        "status": "OPTIONAL_NOT_PLANNED_OR_COLLECTED",
+        "sourcePeriodDatasetId": "query-pages__90d__ALL__DESKTOP__mercedes-specialist-dubai"
+      },
+      {
+        "kind": "pair-daily",
+        "query": "mercedes workshop dubai",
+        "page": "https://digitecme.com/brands/mercedes-benz-service-dubai",
+        "country": "ALL",
+        "device": "ALL",
+        "window": {
+          "id": "90d",
+          "start": "20260727",
+          "end": "20261024"
+        },
+        "breakdown": "date",
+        "status": "OPTIONAL_NOT_PLANNED_OR_COLLECTED",
+        "sourcePeriodDatasetId": "query-pages__90d__ALL__ALL__mercedes-workshop-dubai"
+      },
+      {
+        "kind": "pair-daily",
+        "query": "mercedes workshop dubai",
+        "page": "https://digitecme.com/",
+        "country": "ALL",
+        "device": "ALL",
+        "window": {
+          "id": "90d",
+          "start": "20260727",
+          "end": "20261024"
+        },
+        "breakdown": "date",
+        "status": "OPTIONAL_NOT_PLANNED_OR_COLLECTED",
+        "sourcePeriodDatasetId": "query-pages__90d__ALL__ALL__mercedes-workshop-dubai"
+      },
+      {
+        "kind": "pair-daily",
+        "query": "mercedes workshop dubai",
+        "page": "https://digitecme.com/best-mercedes-workshop-dubai",
+        "country": "ALL",
+        "device": "ALL",
+        "window": {
+          "id": "90d",
+          "start": "20260727",
+          "end": "20261024"
+        },
+        "breakdown": "date",
+        "status": "OPTIONAL_NOT_PLANNED_OR_COLLECTED",
+        "sourcePeriodDatasetId": "query-pages__90d__ALL__ALL__mercedes-workshop-dubai"
+      },
+      {
+        "kind": "pair-daily",
+        "query": "mercedes workshop dubai",
+        "page": "https://digitecme.com/services/mercedes-repair-dubai",
+        "country": "ALL",
+        "device": "ALL",
+        "window": {
+          "id": "90d",
+          "start": "20260727",
+          "end": "20261024"
+        },
+        "breakdown": "date",
+        "status": "OPTIONAL_NOT_PLANNED_OR_COLLECTED",
+        "sourcePeriodDatasetId": "query-pages__90d__ALL__ALL__mercedes-workshop-dubai"
+      },
+      {
+        "kind": "pair-daily",
+        "query": "mercedes workshop dubai",
+        "page": "https://digitecme.com/brands/mercedes-benz-service-dubai/body-repair",
+        "country": "ALL",
+        "device": "ALL",
+        "window": {
+          "id": "90d",
+          "start": "20260727",
+          "end": "20261024"
+        },
+        "breakdown": "date",
+        "status": "OPTIONAL_NOT_PLANNED_OR_COLLECTED",
+        "sourcePeriodDatasetId": "query-pages__90d__ALL__ALL__mercedes-workshop-dubai"
+      },
+      {
+        "kind": "pair-daily",
+        "query": "mercedes workshop dubai",
+        "page": "https://digitecme.com/brands/mercedes-benz-service-dubai/fuel-system-repair",
+        "country": "ALL",
+        "device": "ALL",
+        "window": {
+          "id": "90d",
+          "start": "20260727",
+          "end": "20261024"
+        },
+        "breakdown": "date",
+        "status": "OPTIONAL_NOT_PLANNED_OR_COLLECTED",
+        "sourcePeriodDatasetId": "query-pages__90d__ALL__ALL__mercedes-workshop-dubai"
+      },
+      {
+        "kind": "pair-daily",
+        "query": "mercedes workshop dubai",
+        "page": "https://digitecme.com/blog/best-oil-change-dubai-mercedes",
+        "country": "ALL",
+        "device": "ALL",
+        "window": {
+          "id": "90d",
+          "start": "20260727",
+          "end": "20261024"
+        },
+        "breakdown": "date",
+        "status": "OPTIONAL_NOT_PLANNED_OR_COLLECTED",
+        "sourcePeriodDatasetId": "query-pages__90d__ALL__ALL__mercedes-workshop-dubai"
+      },
+      {
+        "kind": "pair-daily",
+        "query": "mercedes workshop dubai",
+        "page": "https://digitecme.com/brands/mercedes-benz-service-dubai/mechanical-repair",
+        "country": "ALL",
+        "device": "ALL",
+        "window": {
+          "id": "90d",
+          "start": "20260727",
+          "end": "20261024"
+        },
+        "breakdown": "date",
+        "status": "OPTIONAL_NOT_PLANNED_OR_COLLECTED",
+        "sourcePeriodDatasetId": "query-pages__90d__ALL__ALL__mercedes-workshop-dubai"
+      },
+      {
+        "kind": "pair-daily",
+        "query": "mercedes workshop dubai",
+        "page": "https://digitecme.com/brands/mercedes-benz-service-dubai",
+        "country": "ALL",
+        "device": "MOBILE",
+        "window": {
+          "id": "90d",
+          "start": "20260727",
+          "end": "20261024"
+        },
+        "breakdown": "date",
+        "status": "OPTIONAL_NOT_PLANNED_OR_COLLECTED",
+        "sourcePeriodDatasetId": "query-pages__90d__ALL__MOBILE__mercedes-workshop-dubai"
+      },
+      {
+        "kind": "pair-daily",
+        "query": "mercedes workshop dubai",
+        "page": "https://digitecme.com/best-mercedes-workshop-dubai",
+        "country": "ALL",
+        "device": "MOBILE",
+        "window": {
+          "id": "90d",
+          "start": "20260727",
+          "end": "20261024"
+        },
+        "breakdown": "date",
+        "status": "OPTIONAL_NOT_PLANNED_OR_COLLECTED",
+        "sourcePeriodDatasetId": "query-pages__90d__ALL__MOBILE__mercedes-workshop-dubai"
+      },
+      {
+        "kind": "pair-daily",
+        "query": "mercedes workshop dubai",
+        "page": "https://digitecme.com/",
+        "country": "ALL",
+        "device": "MOBILE",
+        "window": {
+          "id": "90d",
+          "start": "20260727",
+          "end": "20261024"
+        },
+        "breakdown": "date",
+        "status": "OPTIONAL_NOT_PLANNED_OR_COLLECTED",
+        "sourcePeriodDatasetId": "query-pages__90d__ALL__MOBILE__mercedes-workshop-dubai"
+      },
+      {
+        "kind": "pair-daily",
+        "query": "mercedes workshop dubai",
+        "page": "https://digitecme.com/services/mercedes-repair-dubai",
+        "country": "ALL",
+        "device": "MOBILE",
+        "window": {
+          "id": "90d",
+          "start": "20260727",
+          "end": "20261024"
+        },
+        "breakdown": "date",
+        "status": "OPTIONAL_NOT_PLANNED_OR_COLLECTED",
+        "sourcePeriodDatasetId": "query-pages__90d__ALL__MOBILE__mercedes-workshop-dubai"
+      },
+      {
+        "kind": "pair-daily",
+        "query": "mercedes workshop dubai",
+        "page": "https://digitecme.com/brands/mercedes-benz-service-dubai",
+        "country": "ALL",
+        "device": "DESKTOP",
+        "window": {
+          "id": "90d",
+          "start": "20260727",
+          "end": "20261024"
+        },
+        "breakdown": "date",
+        "status": "OPTIONAL_NOT_PLANNED_OR_COLLECTED",
+        "sourcePeriodDatasetId": "query-pages__90d__ALL__DESKTOP__mercedes-workshop-dubai"
+      },
+      {
+        "kind": "pair-daily",
+        "query": "mercedes workshop dubai",
+        "page": "https://digitecme.com/",
+        "country": "ALL",
+        "device": "DESKTOP",
+        "window": {
+          "id": "90d",
+          "start": "20260727",
+          "end": "20261024"
+        },
+        "breakdown": "date",
+        "status": "OPTIONAL_NOT_PLANNED_OR_COLLECTED",
+        "sourcePeriodDatasetId": "query-pages__90d__ALL__DESKTOP__mercedes-workshop-dubai"
+      },
+      {
+        "kind": "pair-daily",
+        "query": "mercedes workshop dubai",
+        "page": "https://digitecme.com/best-mercedes-workshop-dubai",
+        "country": "ALL",
+        "device": "DESKTOP",
+        "window": {
+          "id": "90d",
+          "start": "20260727",
+          "end": "20261024"
+        },
+        "breakdown": "date",
+        "status": "OPTIONAL_NOT_PLANNED_OR_COLLECTED",
+        "sourcePeriodDatasetId": "query-pages__90d__ALL__DESKTOP__mercedes-workshop-dubai"
+      },
+      {
+        "kind": "pair-daily",
+        "query": "mercedes workshop dubai",
+        "page": "https://digitecme.com/services/mercedes-repair-dubai",
+        "country": "ALL",
+        "device": "DESKTOP",
+        "window": {
+          "id": "90d",
+          "start": "20260727",
+          "end": "20261024"
+        },
+        "breakdown": "date",
+        "status": "OPTIONAL_NOT_PLANNED_OR_COLLECTED",
+        "sourcePeriodDatasetId": "query-pages__90d__ALL__DESKTOP__mercedes-workshop-dubai"
+      },
+      {
+        "kind": "pair-daily",
+        "query": "mercedes workshop dubai",
+        "page": "https://digitecme.com/brands/mercedes-benz-service-dubai/body-repair",
+        "country": "ALL",
+        "device": "DESKTOP",
+        "window": {
+          "id": "90d",
+          "start": "20260727",
+          "end": "20261024"
+        },
+        "breakdown": "date",
+        "status": "OPTIONAL_NOT_PLANNED_OR_COLLECTED",
+        "sourcePeriodDatasetId": "query-pages__90d__ALL__DESKTOP__mercedes-workshop-dubai"
+      },
+      {
+        "kind": "pair-daily",
+        "query": "mercedes workshop dubai",
+        "page": "https://digitecme.com/brands/mercedes-benz-service-dubai/fuel-system-repair",
+        "country": "ALL",
+        "device": "DESKTOP",
+        "window": {
+          "id": "90d",
+          "start": "20260727",
+          "end": "20261024"
+        },
+        "breakdown": "date",
+        "status": "OPTIONAL_NOT_PLANNED_OR_COLLECTED",
+        "sourcePeriodDatasetId": "query-pages__90d__ALL__DESKTOP__mercedes-workshop-dubai"
+      },
+      {
+        "kind": "pair-daily",
+        "query": "mercedes workshop dubai",
+        "page": "https://digitecme.com/blog/best-oil-change-dubai-mercedes",
+        "country": "ALL",
+        "device": "DESKTOP",
+        "window": {
+          "id": "90d",
+          "start": "20260727",
+          "end": "20261024"
+        },
+        "breakdown": "date",
+        "status": "OPTIONAL_NOT_PLANNED_OR_COLLECTED",
+        "sourcePeriodDatasetId": "query-pages__90d__ALL__DESKTOP__mercedes-workshop-dubai"
+      },
+      {
+        "kind": "pair-daily",
+        "query": "mercedes workshop dubai",
+        "page": "https://digitecme.com/brands/mercedes-benz-service-dubai/mechanical-repair",
+        "country": "ALL",
+        "device": "DESKTOP",
+        "window": {
+          "id": "90d",
+          "start": "20260727",
+          "end": "20261024"
+        },
+        "breakdown": "date",
+        "status": "OPTIONAL_NOT_PLANNED_OR_COLLECTED",
+        "sourcePeriodDatasetId": "query-pages__90d__ALL__DESKTOP__mercedes-workshop-dubai"
+      },
+      {
+        "kind": "pair-daily",
+        "query": "mercedes maintenance dubai",
+        "page": "https://digitecme.com/brands/mercedes-benz-service-dubai",
+        "country": "ALL",
+        "device": "ALL",
+        "window": {
+          "id": "90d",
+          "start": "20260727",
+          "end": "20261024"
+        },
+        "breakdown": "date",
+        "status": "OPTIONAL_NOT_PLANNED_OR_COLLECTED",
+        "sourcePeriodDatasetId": "query-pages__90d__ALL__ALL__mercedes-maintenance-dubai"
+      },
+      {
+        "kind": "pair-daily",
+        "query": "mercedes maintenance dubai",
+        "page": "https://digitecme.com/services/mercedes-repair-dubai",
+        "country": "ALL",
+        "device": "ALL",
+        "window": {
+          "id": "90d",
+          "start": "20260727",
+          "end": "20261024"
+        },
+        "breakdown": "date",
+        "status": "OPTIONAL_NOT_PLANNED_OR_COLLECTED",
+        "sourcePeriodDatasetId": "query-pages__90d__ALL__ALL__mercedes-maintenance-dubai"
+      },
+      {
+        "kind": "pair-daily",
+        "query": "mercedes maintenance dubai",
+        "page": "https://digitecme.com/blog/mercedes-s-class-service-dubai-guide",
+        "country": "ALL",
+        "device": "ALL",
+        "window": {
+          "id": "90d",
+          "start": "20260727",
+          "end": "20261024"
+        },
+        "breakdown": "date",
+        "status": "OPTIONAL_NOT_PLANNED_OR_COLLECTED",
+        "sourcePeriodDatasetId": "query-pages__90d__ALL__ALL__mercedes-maintenance-dubai"
+      },
+      {
+        "kind": "pair-daily",
+        "query": "mercedes maintenance dubai",
+        "page": "https://digitecme.com/brands/mercedes-benz-service-dubai/mechanical-repair",
+        "country": "ALL",
+        "device": "ALL",
+        "window": {
+          "id": "90d",
+          "start": "20260727",
+          "end": "20261024"
+        },
+        "breakdown": "date",
+        "status": "OPTIONAL_NOT_PLANNED_OR_COLLECTED",
+        "sourcePeriodDatasetId": "query-pages__90d__ALL__ALL__mercedes-maintenance-dubai"
+      },
+      {
+        "kind": "pair-daily",
+        "query": "mercedes maintenance dubai",
+        "page": "https://digitecme.com/blog/best-oil-change-dubai-mercedes",
+        "country": "ALL",
+        "device": "ALL",
+        "window": {
+          "id": "90d",
+          "start": "20260727",
+          "end": "20261024"
+        },
+        "breakdown": "date",
+        "status": "OPTIONAL_NOT_PLANNED_OR_COLLECTED",
+        "sourcePeriodDatasetId": "query-pages__90d__ALL__ALL__mercedes-maintenance-dubai"
+      },
+      {
+        "kind": "pair-daily",
+        "query": "mercedes maintenance dubai",
+        "page": "https://digitecme.com/blog/maybach-s580-service-dubai-guide",
+        "country": "ALL",
+        "device": "ALL",
+        "window": {
+          "id": "90d",
+          "start": "20260727",
+          "end": "20261024"
+        },
+        "breakdown": "date",
+        "status": "OPTIONAL_NOT_PLANNED_OR_COLLECTED",
+        "sourcePeriodDatasetId": "query-pages__90d__ALL__ALL__mercedes-maintenance-dubai"
+      },
+      {
+        "kind": "pair-daily",
+        "query": "mercedes maintenance dubai",
+        "page": "https://digitecme.com/blog/mercedes-benz-maintenance-guide-dubai",
+        "country": "ALL",
+        "device": "ALL",
+        "window": {
+          "id": "90d",
+          "start": "20260727",
+          "end": "20261024"
+        },
+        "breakdown": "date",
+        "status": "OPTIONAL_NOT_PLANNED_OR_COLLECTED",
+        "sourcePeriodDatasetId": "query-pages__90d__ALL__ALL__mercedes-maintenance-dubai"
+      },
+      {
+        "kind": "pair-daily",
+        "query": "mercedes maintenance dubai",
+        "page": "https://digitecme.com/blog/mercedes-c-class-service-dubai-guide",
+        "country": "ALL",
+        "device": "ALL",
+        "window": {
+          "id": "90d",
+          "start": "20260727",
+          "end": "20261024"
+        },
+        "breakdown": "date",
+        "status": "OPTIONAL_NOT_PLANNED_OR_COLLECTED",
+        "sourcePeriodDatasetId": "query-pages__90d__ALL__ALL__mercedes-maintenance-dubai"
+      },
+      {
+        "kind": "pair-daily",
+        "query": "mercedes maintenance dubai",
+        "page": "https://digitecme.com/blog/mercedes-e-class-service-dubai-guide",
+        "country": "ALL",
+        "device": "ALL",
+        "window": {
+          "id": "90d",
+          "start": "20260727",
+          "end": "20261024"
+        },
+        "breakdown": "date",
+        "status": "OPTIONAL_NOT_PLANNED_OR_COLLECTED",
+        "sourcePeriodDatasetId": "query-pages__90d__ALL__ALL__mercedes-maintenance-dubai"
+      },
+      {
+        "kind": "pair-daily",
+        "query": "mercedes maintenance dubai",
+        "page": "https://digitecme.com/brands/mercedes-benz-service-dubai",
+        "country": "ALL",
+        "device": "MOBILE",
+        "window": {
+          "id": "90d",
+          "start": "20260727",
+          "end": "20261024"
+        },
+        "breakdown": "date",
+        "status": "OPTIONAL_NOT_PLANNED_OR_COLLECTED",
+        "sourcePeriodDatasetId": "query-pages__90d__ALL__MOBILE__mercedes-maintenance-dubai"
+      },
+      {
+        "kind": "pair-daily",
+        "query": "mercedes maintenance dubai",
+        "page": "https://digitecme.com/services/mercedes-repair-dubai",
+        "country": "ALL",
+        "device": "MOBILE",
+        "window": {
+          "id": "90d",
+          "start": "20260727",
+          "end": "20261024"
+        },
+        "breakdown": "date",
+        "status": "OPTIONAL_NOT_PLANNED_OR_COLLECTED",
+        "sourcePeriodDatasetId": "query-pages__90d__ALL__MOBILE__mercedes-maintenance-dubai"
+      },
+      {
+        "kind": "pair-daily",
+        "query": "mercedes maintenance dubai",
+        "page": "https://digitecme.com/brands/mercedes-benz-service-dubai",
+        "country": "ALL",
+        "device": "DESKTOP",
+        "window": {
+          "id": "90d",
+          "start": "20260727",
+          "end": "20261024"
+        },
+        "breakdown": "date",
+        "status": "OPTIONAL_NOT_PLANNED_OR_COLLECTED",
+        "sourcePeriodDatasetId": "query-pages__90d__ALL__DESKTOP__mercedes-maintenance-dubai"
+      },
+      {
+        "kind": "pair-daily",
+        "query": "mercedes maintenance dubai",
+        "page": "https://digitecme.com/services/mercedes-repair-dubai",
+        "country": "ALL",
+        "device": "DESKTOP",
+        "window": {
+          "id": "90d",
+          "start": "20260727",
+          "end": "20261024"
+        },
+        "breakdown": "date",
+        "status": "OPTIONAL_NOT_PLANNED_OR_COLLECTED",
+        "sourcePeriodDatasetId": "query-pages__90d__ALL__DESKTOP__mercedes-maintenance-dubai"
+      },
+      {
+        "kind": "pair-daily",
+        "query": "mercedes maintenance dubai",
+        "page": "https://digitecme.com/blog/mercedes-s-class-service-dubai-guide",
+        "country": "ALL",
+        "device": "DESKTOP",
+        "window": {
+          "id": "90d",
+          "start": "20260727",
+          "end": "20261024"
+        },
+        "breakdown": "date",
+        "status": "OPTIONAL_NOT_PLANNED_OR_COLLECTED",
+        "sourcePeriodDatasetId": "query-pages__90d__ALL__DESKTOP__mercedes-maintenance-dubai"
+      },
+      {
+        "kind": "pair-daily",
+        "query": "mercedes maintenance dubai",
+        "page": "https://digitecme.com/brands/mercedes-benz-service-dubai/mechanical-repair",
+        "country": "ALL",
+        "device": "DESKTOP",
+        "window": {
+          "id": "90d",
+          "start": "20260727",
+          "end": "20261024"
+        },
+        "breakdown": "date",
+        "status": "OPTIONAL_NOT_PLANNED_OR_COLLECTED",
+        "sourcePeriodDatasetId": "query-pages__90d__ALL__DESKTOP__mercedes-maintenance-dubai"
+      },
+      {
+        "kind": "pair-daily",
+        "query": "mercedes maintenance dubai",
+        "page": "https://digitecme.com/blog/best-oil-change-dubai-mercedes",
+        "country": "ALL",
+        "device": "DESKTOP",
+        "window": {
+          "id": "90d",
+          "start": "20260727",
+          "end": "20261024"
+        },
+        "breakdown": "date",
+        "status": "OPTIONAL_NOT_PLANNED_OR_COLLECTED",
+        "sourcePeriodDatasetId": "query-pages__90d__ALL__DESKTOP__mercedes-maintenance-dubai"
+      },
+      {
+        "kind": "pair-daily",
+        "query": "mercedes maintenance dubai",
+        "page": "https://digitecme.com/blog/maybach-s580-service-dubai-guide",
+        "country": "ALL",
+        "device": "DESKTOP",
+        "window": {
+          "id": "90d",
+          "start": "20260727",
+          "end": "20261024"
+        },
+        "breakdown": "date",
+        "status": "OPTIONAL_NOT_PLANNED_OR_COLLECTED",
+        "sourcePeriodDatasetId": "query-pages__90d__ALL__DESKTOP__mercedes-maintenance-dubai"
+      },
+      {
+        "kind": "pair-daily",
+        "query": "mercedes maintenance dubai",
+        "page": "https://digitecme.com/blog/mercedes-benz-maintenance-guide-dubai",
+        "country": "ALL",
+        "device": "DESKTOP",
+        "window": {
+          "id": "90d",
+          "start": "20260727",
+          "end": "20261024"
+        },
+        "breakdown": "date",
+        "status": "OPTIONAL_NOT_PLANNED_OR_COLLECTED",
+        "sourcePeriodDatasetId": "query-pages__90d__ALL__DESKTOP__mercedes-maintenance-dubai"
+      },
+      {
+        "kind": "pair-daily",
+        "query": "mercedes maintenance dubai",
+        "page": "https://digitecme.com/blog/mercedes-c-class-service-dubai-guide",
+        "country": "ALL",
+        "device": "DESKTOP",
+        "window": {
+          "id": "90d",
+          "start": "20260727",
+          "end": "20261024"
+        },
+        "breakdown": "date",
+        "status": "OPTIONAL_NOT_PLANNED_OR_COLLECTED",
+        "sourcePeriodDatasetId": "query-pages__90d__ALL__DESKTOP__mercedes-maintenance-dubai"
+      },
+      {
+        "kind": "pair-daily",
+        "query": "mercedes maintenance dubai",
+        "page": "https://digitecme.com/blog/mercedes-e-class-service-dubai-guide",
+        "country": "ALL",
+        "device": "DESKTOP",
+        "window": {
+          "id": "90d",
+          "start": "20260727",
+          "end": "20261024"
+        },
+        "breakdown": "date",
+        "status": "OPTIONAL_NOT_PLANNED_OR_COLLECTED",
+        "sourcePeriodDatasetId": "query-pages__90d__ALL__DESKTOP__mercedes-maintenance-dubai"
+      },
+      {
+        "kind": "pair-daily",
+        "query": "mercedes oil change dubai",
+        "page": "https://digitecme.com/services/mercedes-oil-change-dubai/",
+        "country": "ALL",
+        "device": "ALL",
+        "window": {
+          "id": "90d",
+          "start": "20260727",
+          "end": "20261024"
+        },
+        "breakdown": "date",
+        "status": "OPTIONAL_NOT_PLANNED_OR_COLLECTED",
+        "sourcePeriodDatasetId": "query-pages__90d__ALL__ALL__mercedes-oil-change-dubai"
+      },
+      {
+        "kind": "pair-daily",
+        "query": "mercedes oil change dubai",
+        "page": "https://digitecme.com/services/oil-change-dubai",
+        "country": "ALL",
+        "device": "ALL",
+        "window": {
+          "id": "90d",
+          "start": "20260727",
+          "end": "20261024"
+        },
+        "breakdown": "date",
+        "status": "OPTIONAL_NOT_PLANNED_OR_COLLECTED",
+        "sourcePeriodDatasetId": "query-pages__90d__ALL__ALL__mercedes-oil-change-dubai"
+      },
+      {
+        "kind": "pair-daily",
+        "query": "mercedes oil change dubai",
+        "page": "https://digitecme.com/blog/best-oil-change-dubai-mercedes",
+        "country": "ALL",
+        "device": "ALL",
+        "window": {
+          "id": "90d",
+          "start": "20260727",
+          "end": "20261024"
+        },
+        "breakdown": "date",
+        "status": "OPTIONAL_NOT_PLANNED_OR_COLLECTED",
+        "sourcePeriodDatasetId": "query-pages__90d__ALL__ALL__mercedes-oil-change-dubai"
+      },
+      {
+        "kind": "pair-daily",
+        "query": "mercedes oil change dubai",
+        "page": "https://digitecme.com/brands/mercedes-benz-service-dubai",
+        "country": "ALL",
+        "device": "ALL",
+        "window": {
+          "id": "90d",
+          "start": "20260727",
+          "end": "20261024"
+        },
+        "breakdown": "date",
+        "status": "OPTIONAL_NOT_PLANNED_OR_COLLECTED",
+        "sourcePeriodDatasetId": "query-pages__90d__ALL__ALL__mercedes-oil-change-dubai"
+      },
+      {
+        "kind": "pair-daily",
+        "query": "mercedes oil change dubai",
+        "page": "https://digitecme.com/brands/maybach-service-dubai/oil-change",
+        "country": "ALL",
+        "device": "ALL",
+        "window": {
+          "id": "90d",
+          "start": "20260727",
+          "end": "20261024"
+        },
+        "breakdown": "date",
+        "status": "OPTIONAL_NOT_PLANNED_OR_COLLECTED",
+        "sourcePeriodDatasetId": "query-pages__90d__ALL__ALL__mercedes-oil-change-dubai"
+      },
+      {
+        "kind": "pair-daily",
+        "query": "mercedes oil change dubai",
+        "page": "https://digitecme.com/services/mercedes-repair-dubai",
+        "country": "ALL",
+        "device": "ALL",
+        "window": {
+          "id": "90d",
+          "start": "20260727",
+          "end": "20261024"
+        },
+        "breakdown": "date",
+        "status": "OPTIONAL_NOT_PLANNED_OR_COLLECTED",
+        "sourcePeriodDatasetId": "query-pages__90d__ALL__ALL__mercedes-oil-change-dubai"
+      },
+      {
+        "kind": "pair-daily",
+        "query": "mercedes oil change dubai",
+        "page": "https://digitecme.com/services/mercedes-oil-change-dubai/",
+        "country": "ALL",
+        "device": "MOBILE",
+        "window": {
+          "id": "90d",
+          "start": "20260727",
+          "end": "20261024"
+        },
+        "breakdown": "date",
+        "status": "OPTIONAL_NOT_PLANNED_OR_COLLECTED",
+        "sourcePeriodDatasetId": "query-pages__90d__ALL__MOBILE__mercedes-oil-change-dubai"
+      },
+      {
+        "kind": "pair-daily",
+        "query": "mercedes oil change dubai",
+        "page": "https://digitecme.com/services/oil-change-dubai",
+        "country": "ALL",
+        "device": "MOBILE",
+        "window": {
+          "id": "90d",
+          "start": "20260727",
+          "end": "20261024"
+        },
+        "breakdown": "date",
+        "status": "OPTIONAL_NOT_PLANNED_OR_COLLECTED",
+        "sourcePeriodDatasetId": "query-pages__90d__ALL__MOBILE__mercedes-oil-change-dubai"
+      },
+      {
+        "kind": "pair-daily",
+        "query": "mercedes oil change dubai",
+        "page": "https://digitecme.com/blog/best-oil-change-dubai-mercedes",
+        "country": "ALL",
+        "device": "MOBILE",
+        "window": {
+          "id": "90d",
+          "start": "20260727",
+          "end": "20261024"
+        },
+        "breakdown": "date",
+        "status": "OPTIONAL_NOT_PLANNED_OR_COLLECTED",
+        "sourcePeriodDatasetId": "query-pages__90d__ALL__MOBILE__mercedes-oil-change-dubai"
+      },
+      {
+        "kind": "pair-daily",
+        "query": "mercedes oil change dubai",
+        "page": "https://digitecme.com/brands/maybach-service-dubai/oil-change",
+        "country": "ALL",
+        "device": "MOBILE",
+        "window": {
+          "id": "90d",
+          "start": "20260727",
+          "end": "20261024"
+        },
+        "breakdown": "date",
+        "status": "OPTIONAL_NOT_PLANNED_OR_COLLECTED",
+        "sourcePeriodDatasetId": "query-pages__90d__ALL__MOBILE__mercedes-oil-change-dubai"
+      },
+      {
+        "kind": "pair-daily",
+        "query": "mercedes oil change dubai",
+        "page": "https://digitecme.com/brands/mercedes-benz-service-dubai",
+        "country": "ALL",
+        "device": "MOBILE",
+        "window": {
+          "id": "90d",
+          "start": "20260727",
+          "end": "20261024"
+        },
+        "breakdown": "date",
+        "status": "OPTIONAL_NOT_PLANNED_OR_COLLECTED",
+        "sourcePeriodDatasetId": "query-pages__90d__ALL__MOBILE__mercedes-oil-change-dubai"
+      },
+      {
+        "kind": "pair-daily",
+        "query": "mercedes oil change dubai",
+        "page": "https://digitecme.com/services/mercedes-repair-dubai",
+        "country": "ALL",
+        "device": "MOBILE",
+        "window": {
+          "id": "90d",
+          "start": "20260727",
+          "end": "20261024"
+        },
+        "breakdown": "date",
+        "status": "OPTIONAL_NOT_PLANNED_OR_COLLECTED",
+        "sourcePeriodDatasetId": "query-pages__90d__ALL__MOBILE__mercedes-oil-change-dubai"
+      },
+      {
+        "kind": "pair-daily",
+        "query": "mercedes oil change dubai",
+        "page": "https://digitecme.com/services/mercedes-oil-change-dubai/",
+        "country": "ALL",
+        "device": "DESKTOP",
+        "window": {
+          "id": "90d",
+          "start": "20260727",
+          "end": "20261024"
+        },
+        "breakdown": "date",
+        "status": "OPTIONAL_NOT_PLANNED_OR_COLLECTED",
+        "sourcePeriodDatasetId": "query-pages__90d__ALL__DESKTOP__mercedes-oil-change-dubai"
+      },
+      {
+        "kind": "pair-daily",
+        "query": "mercedes oil change dubai",
+        "page": "https://digitecme.com/services/oil-change-dubai",
+        "country": "ALL",
+        "device": "DESKTOP",
+        "window": {
+          "id": "90d",
+          "start": "20260727",
+          "end": "20261024"
+        },
+        "breakdown": "date",
+        "status": "OPTIONAL_NOT_PLANNED_OR_COLLECTED",
+        "sourcePeriodDatasetId": "query-pages__90d__ALL__DESKTOP__mercedes-oil-change-dubai"
+      },
+      {
+        "kind": "pair-daily",
+        "query": "mercedes oil change dubai",
+        "page": "https://digitecme.com/blog/best-oil-change-dubai-mercedes",
+        "country": "ALL",
+        "device": "DESKTOP",
+        "window": {
+          "id": "90d",
+          "start": "20260727",
+          "end": "20261024"
+        },
+        "breakdown": "date",
+        "status": "OPTIONAL_NOT_PLANNED_OR_COLLECTED",
+        "sourcePeriodDatasetId": "query-pages__90d__ALL__DESKTOP__mercedes-oil-change-dubai"
+      },
+      {
+        "kind": "pair-daily",
+        "query": "mercedes oil change dubai",
+        "page": "https://digitecme.com/brands/mercedes-benz-service-dubai",
+        "country": "ALL",
+        "device": "DESKTOP",
+        "window": {
+          "id": "90d",
+          "start": "20260727",
+          "end": "20261024"
+        },
+        "breakdown": "date",
+        "status": "OPTIONAL_NOT_PLANNED_OR_COLLECTED",
+        "sourcePeriodDatasetId": "query-pages__90d__ALL__DESKTOP__mercedes-oil-change-dubai"
+      }
+    ]
+  },
+  "previous90DayComparator": {
+    "start": "2026-04-28",
+    "end": "2026-07-26",
+    "days": 90,
+    "status": "NOT_COLLECTED",
+    "reason": "Captured90days contain no preceding90day window. Separate same-filter export required."
+  },
+  "noZeroImputation": true
+}

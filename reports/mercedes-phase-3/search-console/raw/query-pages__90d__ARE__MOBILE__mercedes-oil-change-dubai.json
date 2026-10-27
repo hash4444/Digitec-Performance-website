@@ -1,0 +1,94 @@
+{
+  "id": "query-pages__90d__ARE__MOBILE__mercedes-oil-change-dubai",
+  "capturedAt": "2026-10-26T08:06:30.190Z",
+  "property": "sc-domain:digitecme.com",
+  "searchType": "Web (Text-based verified separately)",
+  "expected": {
+    "kind": "query-pages",
+    "query": "mercedes oil change dubai",
+    "country": "ARE",
+    "device": "MOBILE",
+    "window": {
+      "id": "90d",
+      "start": "20260727",
+      "end": "20261024",
+      "startLabel": "27 July 2026",
+      "endLabel": "24 October 2026"
+    },
+    "breakdown": "page",
+    "current": true
+  },
+  "navigationUrl": "https://search.google.com/search-console/performance/search-analytics?resource_id=sc-domain%3Adigitecme.com&metrics=CLICKS%2CIMPRESSIONS%2CCTR%2CPOSITION&start_date=20260727&end_date=20261024&query=!mercedes%20oil%20change%20dubai&breakdown=page&country=are&device=MOBILE",
+  "displayedFilterChecks": {
+    "query": true,
+    "country": true,
+    "device": true,
+    "page": true,
+    "date": true,
+    "breakdown": true
+  },
+  "loading": false,
+  "readinessReloads": 0,
+  "header": [
+    "Top pages",
+    "Clicks",
+    "Impressions",
+    "CTR",
+    "Position"
+  ],
+  "rows": [
+    [
+      "https://digitecme.com/services/oil-change-dubai",
+      "0",
+      "12",
+      "0%",
+      "21.5"
+    ],
+    [
+      "https://digitecme.com/services/mercedes-oil-change-dubai/",
+      "0",
+      "12",
+      "0%",
+      "23.9"
+    ],
+    [
+      "https://digitecme.com/blog/best-oil-change-dubai-mercedes",
+      "0",
+      "3",
+      "0%",
+      "9.3"
+    ],
+    [
+      "https://digitecme.com/brands/maybach-service-dubai/oil-change",
+      "0",
+      "3",
+      "0%",
+      "74.7"
+    ],
+    [
+      "https://digitecme.com/brands/mercedes-benz-service-dubai",
+      "0",
+      "1",
+      "0%",
+      "3.0"
+    ],
+    [
+      "https://digitecme.com/services/mercedes-repair-dubai",
+      "0",
+      "1",
+      "0%",
+      "7.0"
+    ]
+  ],
+  "pagination": "1-6 of 6",
+  "completeVisibleTable": true,
+  "availability": "visible_rows_complete",
+  "cards": {
+    "clicks": "0",
+    "impressions": "25",
+    "ctr": "0%",
+    "position": "20.3"
+  },
+  "axFile": "raw/query-pages__90d__ARE__MOBILE__mercedes-oil-change-dubai-ax.txt",
+  "textFile": "raw/query-pages__90d__ARE__MOBILE__mercedes-oil-change-dubai-visible.txt"
+}

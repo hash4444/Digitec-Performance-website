@@ -1,0 +1,58 @@
+{
+  "date": "2026-10-19",
+  "localCandidateReadyForReview": true,
+  "productionGo": false,
+  "productionDecision": "NO-GO",
+  "base": "6180f453feaaf21b8c786f23bb3867a09666ed64",
+  "branch": "main",
+  "releaseSourceFiles": 11,
+  "sourceSha256": "7dc83133c9d5174ee3a05ab37602ffffabcb2a316f8ad65a4c5f64aab22a3e46",
+  "localChecks": {
+    "productionBuildStepsPassed": 19,
+    "additionalCliChecksPassed": 10,
+    "focusedLocaleRoutes": 32,
+    "focusedSeoAssertions": 1454,
+    "browserRegressionsPassed": true,
+    "ppfAndTuningRegressionsPassed": true,
+    "eslintErrors": 0,
+    "retainedEslintWarnings": 11,
+    "finalSourceAndArtifactIntegrityPassed": true,
+    "originalWorkspaceFilesPreserved": 31006
+  },
+  "remoteChecks": {
+    "githubMainMatchesBase": true,
+    "githubCheckedAt": "2026-10-19T07:38:58.023Z",
+    "cloudflareAuthenticated": false,
+    "cloudflareApiError": "403 / 9109 Invalid access token",
+    "exactPublishedOriginDeploymentVerified": false,
+    "activeEdgeConfigurationVerified": false,
+    "completeRecoverableRollbackPairPreserved": false,
+    "absenceOfNewerProductionChangesProven": false
+  },
+  "remainingReleaseGates": [
+    "Obtain authenticated read access and complete live origin/edge snapshots with supported rollback targets.",
+    "Reconcile any newer production changes before forming the final approved release commit.",
+    "Revalidate the candidate if its base or content changes.",
+    "Verify exact promotion architecture and repeat live drift/source gates during a short publication freeze.",
+    "Obtain explicit authorization before commit, push, upload, deployment or publication."
+  ],
+  "actionsPerformed": {
+    "localIsolationAndPackaging": true,
+    "readOnlyProductionInspection": true,
+    "committed": false,
+    "pushed": false,
+    "uploadedRelease": false,
+    "deployed": false,
+    "published": false,
+    "productionModified": false,
+    "customerEnquirySent": false
+  },
+  "report": "RELEASE-CANDIDATE-REPORT.txt",
+  "scopeManifest": "modified-file-manifest.json",
+  "qaEvidence": "qa/COMBINED-QA-SUMMARY.json",
+  "integrityEvidence": "final-integrity.json",
+  "preservationEvidence": "workspace-preservation.json",
+  "deploymentAndRollbackRunbook": "deployment/PRODUCTION-COMPATIBILITY.txt",
+  "postReleaseChecklist": "deployment/post-release-checklist.csv",
+  "stoppedAfterCandidatePreparation": true
+}

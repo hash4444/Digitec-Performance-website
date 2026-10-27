@@ -1,0 +1,26 @@
+{
+  "validatedAtUtc": "2026-10-26T07:58:27.457Z",
+  "proposalOnly": true,
+  "productionChanges": false,
+  "patchApplicability": {
+    "exitCode": 0,
+    "output": ""
+  },
+  "typescriptTsxParse": {
+    "passed": true,
+    "diagnostics": []
+  },
+  "sourceFilesChecked": 10,
+  "sourceDrift": [],
+  "captionPlainTextUnchanged": true,
+  "onlyChangedOriginalLines": [
+    1004,
+    1324
+  ],
+  "limitations": [
+    "Syntax and applicability only; proposed TSX was not applied, built or rendered.",
+    "Source-consistent published phone is not independently confirmed physical visit information.",
+    "No call, WhatsApp message, GA4/GTM setting or production modification performed."
+  ],
+  "passed": true
+}

@@ -1,0 +1,40 @@
+{
+  "base": "acef3427b57b48259bc5b39d6a0f75798603ae95",
+  "baselineIncludesUncommittedDiagnosticsAc": true,
+  "priorOverlayManifest": "baseline/prior-work-manifest.json",
+  "files": [
+    {
+      "file": "src/pages/ServicePage.tsx",
+      "change": "modified",
+      "beforeSha256": "1162275ac2194b99778c3a0ed5bb948913e4d4ac774cd8602f6163a418484b3e",
+      "afterSha256": "7aea5c62212d6066010e09587054e528d03c6589f291bd5681408f7f45b130ca",
+      "bytes": 41187
+    },
+    {
+      "file": "src/pages/BrandServicePage.tsx",
+      "change": "modified",
+      "beforeSha256": "809472b57a242af3d59fac95370b7f263211b605a91e9d382c2c14c255e0b9af",
+      "afterSha256": "b8bd67b40548b6e3c53db7611e7dd463cd5c92ce6774bbbdc954695b4395df2f",
+      "bytes": 116914
+    },
+    {
+      "file": "src/components/EcuElectronicsEnquiryPanel.tsx",
+      "change": "added",
+      "beforeSha256": null,
+      "afterSha256": "3eebc5bc1eb9c0843e5c5676d6c583812f6ae4d5fb79a12bbb89ffe439c3660b",
+      "bytes": 3931
+    },
+    {
+      "file": "src/data/ecuElectronicsContent.ts",
+      "change": "added",
+      "beforeSha256": null,
+      "afterSha256": "48cf990866ec75dcf7c1c08c8c52cb85001085ebfb5c81da82370a0030ca90f3",
+      "bytes": 13678
+    }
+  ],
+  "excluded": [
+    "supabase/functions/mcp/index.ts",
+    "outputs/seo-2026-09-16/master-validation.json",
+    "all unrelated existing work"
+  ]
+}

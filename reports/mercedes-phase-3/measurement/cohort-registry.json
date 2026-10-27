@@ -1,0 +1,186 @@
+{
+  "version": "mercedes-phase3-v1-proposed",
+  "status": "PROPOSED_COHORT_NOT_PERFORMANCE_RESULTS",
+  "source": "Reviewed October 26 keyword-to-URL map; owner assignments are planned, not observed query-page attribution. Root Phase3 query registry may extend this before first frozen reporting version.",
+  "queries": [
+    {
+      "query": "mercedes service dubai",
+      "language": "en",
+      "planned_owner": "/brands/mercedes-benz-service-dubai",
+      "cohort": "core_hub",
+      "performance_values": null
+    },
+    {
+      "query": "mercedes repair dubai",
+      "language": "en",
+      "planned_owner": "/brands/mercedes-benz-service-dubai",
+      "cohort": "core_hub",
+      "performance_values": null
+    },
+    {
+      "query": "mercedes specialist dubai",
+      "language": "en",
+      "planned_owner": "/brands/mercedes-benz-service-dubai",
+      "cohort": "core_hub",
+      "performance_values": null
+    },
+    {
+      "query": "mercedes workshop dubai",
+      "language": "en",
+      "planned_owner": "/brands/mercedes-benz-service-dubai",
+      "cohort": "core_hub",
+      "performance_values": null
+    },
+    {
+      "query": "mercedes maintenance dubai",
+      "language": "en",
+      "planned_owner": "/brands/mercedes-benz-service-dubai",
+      "cohort": "core_hub",
+      "performance_values": null
+    },
+    {
+      "query": "mercedes service center dubai",
+      "language": "en",
+      "planned_owner": "/brands/mercedes-benz-service-dubai",
+      "cohort": "core_hub",
+      "performance_values": null
+    },
+    {
+      "query": "mercedes garage dubai",
+      "language": "en",
+      "planned_owner": "/brands/mercedes-benz-service-dubai",
+      "cohort": "core_hub",
+      "performance_values": null
+    },
+    {
+      "query": "mercedes mechanic dubai",
+      "language": "en",
+      "planned_owner": "/brands/mercedes-benz-service-dubai",
+      "cohort": "core_hub",
+      "performance_values": null
+    },
+    {
+      "query": "mercedes benz service dubai",
+      "language": "en",
+      "planned_owner": "/brands/mercedes-benz-service-dubai",
+      "cohort": "core_hub",
+      "performance_values": null
+    },
+    {
+      "query": "mercedes benz repair dubai",
+      "language": "en",
+      "planned_owner": "/brands/mercedes-benz-service-dubai",
+      "cohort": "core_hub",
+      "performance_values": null
+    },
+    {
+      "query": "mercedes oil change dubai",
+      "language": "en",
+      "planned_owner": "/services/mercedes-oil-change-dubai",
+      "cohort": "specific_service",
+      "performance_values": null
+    },
+    {
+      "query": "mercedes body repair dubai",
+      "language": "en",
+      "planned_owner": "/services/mercedes-body-repair-dubai",
+      "cohort": "specific_service",
+      "performance_values": null
+    },
+    {
+      "query": "mercedes battery replacement dubai",
+      "language": "en",
+      "planned_owner": "/services/mercedes-battery-replacement-dubai",
+      "cohort": "specific_service",
+      "performance_values": null
+    },
+    {
+      "query": "mercedes mechanical repair dubai",
+      "language": "en",
+      "planned_owner": "/services/mercedes-mechanical-repair-dubai",
+      "cohort": "specific_service",
+      "performance_values": null
+    },
+    {
+      "query": "mercedes engine repair dubai",
+      "language": "en",
+      "planned_owner": "/services/mercedes-mechanical-repair-dubai",
+      "cohort": "specific_service",
+      "performance_values": null
+    },
+    {
+      "query": "mercedes diagnostics dubai",
+      "language": "en",
+      "planned_owner": "/services/mercedes-diagnostics-dubai",
+      "cohort": "specific_service",
+      "performance_values": null
+    }
+  ],
+  "page_paths": [
+    "/brands/mercedes-benz-service-dubai",
+    "/ar/brands/mercedes-benz-service-dubai",
+    "/services/mercedes-oil-change-dubai",
+    "/services/mercedes-body-repair-dubai",
+    "/services/mercedes-battery-replacement-dubai",
+    "/services/mercedes-mechanical-repair-dubai",
+    "/services/mercedes-diagnostics-dubai",
+    "/ar/services/mercedes-oil-change-dubai",
+    "/ar/services/mercedes-battery-replacement-dubai",
+    "/ar/services/mercedes-mechanical-repair-dubai",
+    "/services/mercedes-oil-change-dubai/",
+    "/ar/brands/mercedes-benz-service-dubai/oil-change",
+    "/brands/mercedes-benz-service-dubai/body-repair",
+    "/ar/brands/mercedes-benz-service-dubai/battery-replacement",
+    "/ar/brands/mercedes-benz-service-dubai/mechanical-repair",
+    "/services/mercedes-service-dubai/",
+    "/best-mercedes-workshop-dubai/"
+  ],
+  "source_country_filter": "ARE",
+  "device_views": [
+    "MOBILE",
+    "DESKTOP",
+    "TABLET",
+    "ALL"
+  ],
+  "search_views": [
+    "exact_target_query_by_observed_page",
+    "query_property_control",
+    "page_all_query_control"
+  ],
+  "query_matching": "Preserve raw returned query; exact cohort matching only. Do not force pages to planned owners; suppressed/missing queries remain unknown.",
+  "business_brand_query_flag": "Separate Digi-Tec/digitec mentions from broader Mercedes vehicle-brand queries; no demand inference.",
+  "arabic_queries": "Use actual reviewed Arabic target strings from parent Phase3 registry/exports if available; no Arabic ranking/demand fabricated here.",
+  "migration_rule": "Preserve source raw URL before labelling migration family; record slash and slashless forms separately.",
+  "metric_values": null,
+  "actual_baseline": {
+    "reference": "../search-console/daily-analysis.md",
+    "summary": "../search-console/daily-six-query-cohort-summary.json",
+    "query_count": 6,
+    "queries": [
+      "mercedes service dubai",
+      "mercedes repair dubai",
+      "mercedes specialist dubai",
+      "mercedes workshop dubai",
+      "mercedes maintenance dubai",
+      "mercedes oil change dubai"
+    ],
+    "complete_end_day": "2026-10-24",
+    "date_basis": "GSC Pacific Time",
+    "paired_period_cells": 108,
+    "paired_page_rows": 328,
+    "accepted_daily_series": 69,
+    "planned_daily_series": 132,
+    "query_only_daily_series": 36,
+    "UAE_ALL_exact_page_daily_series": 33,
+    "accepted_daily_rows": 6210,
+    "rejected_attempts": 3,
+    "unattempted_series": 60,
+    "limits": [
+      "No accepted exact-page Mobile/Desktop daily series",
+      "Prior90days unavailable",
+      "No postOctober26performance data",
+      "Six exact queries are not allMercedes or page all-query totals",
+      "No manually verified top-three numerator inferred from these GSC values"
+    ]
+  }
+}

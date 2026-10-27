@@ -1,0 +1,426 @@
+{
+  "createdAt": "2026-10-26T10:31:15.999Z",
+  "cohort": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-4b\\production-matched.local",
+  "source": "Actual installed pnpm lock snapshot; direct versions crosschecked; production-matched unpatched manifest is separate HTTP evidence",
+  "pnpmLockSha256": "5764ae30d5b03c0bfbf425768df32c23646b88720d2062988c6b04b868dd085f",
+  "sameLockSnapshot": true,
+  "directDependencies": [
+    {
+      "name": "@hookform/resolvers",
+      "sharedVersion": "3.10.0",
+      "frozenVersion": "3.10.0",
+      "match": true
+    },
+    {
+      "name": "@lovable.dev/mcp-js",
+      "sharedVersion": "0.20.1",
+      "frozenVersion": "0.20.1",
+      "match": true
+    },
+    {
+      "name": "@radix-ui/react-accordion",
+      "sharedVersion": "1.2.20",
+      "frozenVersion": "1.2.20",
+      "match": true
+    },
+    {
+      "name": "@radix-ui/react-alert-dialog",
+      "sharedVersion": "1.1.23",
+      "frozenVersion": "1.1.23",
+      "match": true
+    },
+    {
+      "name": "@radix-ui/react-aspect-ratio",
+      "sharedVersion": "1.1.15",
+      "frozenVersion": "1.1.15",
+      "match": true
+    },
+    {
+      "name": "@radix-ui/react-avatar",
+      "sharedVersion": "1.2.6",
+      "frozenVersion": "1.2.6",
+      "match": true
+    },
+    {
+      "name": "@radix-ui/react-checkbox",
+      "sharedVersion": "1.3.11",
+      "frozenVersion": "1.3.11",
+      "match": true
+    },
+    {
+      "name": "@radix-ui/react-collapsible",
+      "sharedVersion": "1.1.20",
+      "frozenVersion": "1.1.20",
+      "match": true
+    },
+    {
+      "name": "@radix-ui/react-context-menu",
+      "sharedVersion": "2.3.7",
+      "frozenVersion": "2.3.7",
+      "match": true
+    },
+    {
+      "name": "@radix-ui/react-dialog",
+      "sharedVersion": "1.1.23",
+      "frozenVersion": "1.1.23",
+      "match": true
+    },
+    {
+      "name": "@radix-ui/react-dropdown-menu",
+      "sharedVersion": "2.1.24",
+      "frozenVersion": "2.1.24",
+      "match": true
+    },
+    {
+      "name": "@radix-ui/react-hover-card",
+      "sharedVersion": "1.1.23",
+      "frozenVersion": "1.1.23",
+      "match": true
+    },
+    {
+      "name": "@radix-ui/react-label",
+      "sharedVersion": "2.1.15",
+      "frozenVersion": "2.1.15",
+      "match": true
+    },
+    {
+      "name": "@radix-ui/react-menubar",
+      "sharedVersion": "1.1.24",
+      "frozenVersion": "1.1.24",
+      "match": true
+    },
+    {
+      "name": "@radix-ui/react-navigation-menu",
+      "sharedVersion": "1.2.22",
+      "frozenVersion": "1.2.22",
+      "match": true
+    },
+    {
+      "name": "@radix-ui/react-popover",
+      "sharedVersion": "1.1.23",
+      "frozenVersion": "1.1.23",
+      "match": true
+    },
+    {
+      "name": "@radix-ui/react-progress",
+      "sharedVersion": "1.1.16",
+      "frozenVersion": "1.1.16",
+      "match": true
+    },
+    {
+      "name": "@radix-ui/react-radio-group",
+      "sharedVersion": "1.4.7",
+      "frozenVersion": "1.4.7",
+      "match": true
+    },
+    {
+      "name": "@radix-ui/react-scroll-area",
+      "sharedVersion": "1.2.18",
+      "frozenVersion": "1.2.18",
+      "match": true
+    },
+    {
+      "name": "@radix-ui/react-select",
+      "sharedVersion": "2.3.7",
+      "frozenVersion": "2.3.7",
+      "match": true
+    },
+    {
+      "name": "@radix-ui/react-separator",
+      "sharedVersion": "1.1.15",
+      "frozenVersion": "1.1.15",
+      "match": true
+    },
+    {
+      "name": "@radix-ui/react-slider",
+      "sharedVersion": "1.4.7",
+      "frozenVersion": "1.4.7",
+      "match": true
+    },
+    {
+      "name": "@radix-ui/react-slot",
+      "sharedVersion": "1.3.3",
+      "frozenVersion": "1.3.3",
+      "match": true
+    },
+    {
+      "name": "@radix-ui/react-switch",
+      "sharedVersion": "1.3.7",
+      "frozenVersion": "1.3.7",
+      "match": true
+    },
+    {
+      "name": "@radix-ui/react-tabs",
+      "sharedVersion": "1.1.21",
+      "frozenVersion": "1.1.21",
+      "match": true
+    },
+    {
+      "name": "@radix-ui/react-toast",
+      "sharedVersion": "1.2.23",
+      "frozenVersion": "1.2.23",
+      "match": true
+    },
+    {
+      "name": "@radix-ui/react-toggle",
+      "sharedVersion": "1.1.18",
+      "frozenVersion": "1.1.18",
+      "match": true
+    },
+    {
+      "name": "@radix-ui/react-toggle-group",
+      "sharedVersion": "1.1.19",
+      "frozenVersion": "1.1.19",
+      "match": true
+    },
+    {
+      "name": "@radix-ui/react-tooltip",
+      "sharedVersion": "1.2.16",
+      "frozenVersion": "1.2.16",
+      "match": true
+    },
+    {
+      "name": "@supabase/supabase-js",
+      "sharedVersion": "2.113.0",
+      "frozenVersion": "2.113.0",
+      "match": true
+    },
+    {
+      "name": "@tanstack/react-query",
+      "sharedVersion": "5.102.8",
+      "frozenVersion": "5.102.8",
+      "match": true
+    },
+    {
+      "name": "class-variance-authority",
+      "sharedVersion": "0.7.1",
+      "frozenVersion": "0.7.1",
+      "match": true
+    },
+    {
+      "name": "clsx",
+      "sharedVersion": "2.1.1",
+      "frozenVersion": "2.1.1",
+      "match": true
+    },
+    {
+      "name": "cmdk",
+      "sharedVersion": "1.1.1",
+      "frozenVersion": "1.1.1",
+      "match": true
+    },
+    {
+      "name": "date-fns",
+      "sharedVersion": "3.6.0",
+      "frozenVersion": "3.6.0",
+      "match": true
+    },
+    {
+      "name": "embla-carousel-react",
+      "sharedVersion": "8.6.0",
+      "frozenVersion": "8.6.0",
+      "match": true
+    },
+    {
+      "name": "framer-motion",
+      "sharedVersion": "11.18.2",
+      "frozenVersion": "11.18.2",
+      "match": true
+    },
+    {
+      "name": "input-otp",
+      "sharedVersion": "1.5.0",
+      "frozenVersion": "1.5.0",
+      "match": true
+    },
+    {
+      "name": "lucide-react",
+      "sharedVersion": "0.462.0",
+      "frozenVersion": "0.462.0",
+      "match": true
+    },
+    {
+      "name": "next-themes",
+      "sharedVersion": "0.3.0",
+      "frozenVersion": "0.3.0",
+      "match": true
+    },
+    {
+      "name": "react",
+      "sharedVersion": "18.3.1",
+      "frozenVersion": "18.3.1",
+      "match": true
+    },
+    {
+      "name": "react-day-picker",
+      "sharedVersion": "8.10.2",
+      "frozenVersion": "8.10.2",
+      "match": true
+    },
+    {
+      "name": "react-dom",
+      "sharedVersion": "18.3.1",
+      "frozenVersion": "18.3.1",
+      "match": true
+    },
+    {
+      "name": "react-hook-form",
+      "sharedVersion": "7.87.0",
+      "frozenVersion": "7.87.0",
+      "match": true
+    },
+    {
+      "name": "react-resizable-panels",
+      "sharedVersion": "2.1.9",
+      "frozenVersion": "2.1.9",
+      "match": true
+    },
+    {
+      "name": "react-router-dom",
+      "sharedVersion": "6.30.6",
+      "frozenVersion": "6.30.6",
+      "match": true
+    },
+    {
+      "name": "recharts",
+      "sharedVersion": "2.15.4",
+      "frozenVersion": "2.15.4",
+      "match": true
+    },
+    {
+      "name": "sonner",
+      "sharedVersion": "1.7.4",
+      "frozenVersion": "1.7.4",
+      "match": true
+    },
+    {
+      "name": "tailwind-merge",
+      "sharedVersion": "2.6.1",
+      "frozenVersion": "2.6.1",
+      "match": true
+    },
+    {
+      "name": "tailwindcss-animate",
+      "sharedVersion": "1.0.7",
+      "frozenVersion": "1.0.7",
+      "match": true
+    },
+    {
+      "name": "vaul",
+      "sharedVersion": "0.9.9",
+      "frozenVersion": "0.9.9",
+      "match": true
+    },
+    {
+      "name": "zod",
+      "sharedVersion": "4.5.4",
+      "frozenVersion": "4.5.4",
+      "match": true
+    },
+    {
+      "name": "@eslint/js",
+      "sharedVersion": "9.39.5",
+      "frozenVersion": "9.39.5",
+      "match": true
+    },
+    {
+      "name": "@tailwindcss/typography",
+      "sharedVersion": "0.5.20",
+      "frozenVersion": "0.5.20",
+      "match": true
+    },
+    {
+      "name": "@types/node",
+      "sharedVersion": "22.20.1",
+      "frozenVersion": "22.20.1",
+      "match": true
+    },
+    {
+      "name": "@types/react",
+      "sharedVersion": "18.3.31",
+      "frozenVersion": "18.3.31",
+      "match": true
+    },
+    {
+      "name": "@types/react-dom",
+      "sharedVersion": "18.3.7",
+      "frozenVersion": "18.3.7",
+      "match": true
+    },
+    {
+      "name": "@vitejs/plugin-react-swc",
+      "sharedVersion": "3.11.0",
+      "frozenVersion": "3.11.0",
+      "match": true
+    },
+    {
+      "name": "autoprefixer",
+      "sharedVersion": "10.5.4",
+      "frozenVersion": "10.5.4",
+      "match": true
+    },
+    {
+      "name": "eslint",
+      "sharedVersion": "9.39.5",
+      "frozenVersion": "9.39.5",
+      "match": true
+    },
+    {
+      "name": "eslint-plugin-react-hooks",
+      "sharedVersion": "5.2.0",
+      "frozenVersion": "5.2.0",
+      "match": true
+    },
+    {
+      "name": "eslint-plugin-react-refresh",
+      "sharedVersion": "0.4.26",
+      "frozenVersion": "0.4.26",
+      "match": true
+    },
+    {
+      "name": "globals",
+      "sharedVersion": "15.15.0",
+      "frozenVersion": "15.15.0",
+      "match": true
+    },
+    {
+      "name": "lovable-tagger",
+      "sharedVersion": "1.3.3",
+      "frozenVersion": "1.3.3",
+      "match": true
+    },
+    {
+      "name": "postcss",
+      "sharedVersion": "8.5.26",
+      "frozenVersion": "8.5.26",
+      "match": true
+    },
+    {
+      "name": "tailwindcss",
+      "sharedVersion": "3.4.19",
+      "frozenVersion": "3.4.19",
+      "match": true
+    },
+    {
+      "name": "typescript",
+      "sharedVersion": "5.9.3",
+      "frozenVersion": "5.9.3",
+      "match": true
+    },
+    {
+      "name": "typescript-eslint",
+      "sharedVersion": "8.69.0",
+      "frozenVersion": "8.69.0",
+      "match": true
+    },
+    {
+      "name": "vite",
+      "sharedVersion": "5.4.21",
+      "frozenVersion": "5.4.21",
+      "match": true
+    }
+  ],
+  "passed": true,
+  "sourceFilesAddedOrUpdatedInSharedCheckout": 0,
+  "npmLockedCohort": "Preserved separately for comparison; not selected release dependency versions"
+}

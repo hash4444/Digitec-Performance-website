@@ -1,0 +1,310 @@
+{
+  "comparedAt": "2026-10-26T07:39:39.893Z",
+  "offlineOnly": true,
+  "phase2AAfterPath": "reports/mercedes-phase-2/deployment-2026-10-26/cloudflare/after-inventory.json",
+  "currentInventoryPath": "reports/mercedes-phase-2b/cloudflare/current-inventory.json",
+  "phase2AObservedAt": "2026-10-26T07:21:54.063Z",
+  "currentObservedAt": "2026-10-26T07:35:51.673Z",
+  "phase2AInventorySha256": "42b04c66bee2c335b7fe5cfafa87fc1ea149cfa434490e4420f6c761b99b4c6e",
+  "currentInventorySha256": "d3c2ac33eaf8658238647197d703c3f3b4c82248823b38deb63ca4d7311ffd52",
+  "comparedRuleFields": [
+    "id",
+    "order",
+    "description",
+    "enabled",
+    "expression",
+    "action",
+    "action_parameters",
+    "placementObserved"
+  ],
+  "excludedObservationFields": [
+    "readAt (fresh observation time)",
+    "top-level observation metadata; rule field definitions and order are compared independently"
+  ],
+  "beforeCount": 7,
+  "currentCount": 7,
+  "exactlySeven": true,
+  "sameOrderedIds": true,
+  "sameCapacity": true,
+  "allEnabled": true,
+  "rules": [
+    {
+      "index": 1,
+      "id": "5addb0c068414fb5b985a869ded26c68",
+      "allComparedFieldsMatch": true,
+      "comparisons": [
+        {
+          "field": "id",
+          "passed": true
+        },
+        {
+          "field": "order",
+          "passed": true
+        },
+        {
+          "field": "description",
+          "passed": true
+        },
+        {
+          "field": "enabled",
+          "passed": true
+        },
+        {
+          "field": "expression",
+          "passed": true
+        },
+        {
+          "field": "action",
+          "passed": true
+        },
+        {
+          "field": "action_parameters",
+          "passed": true
+        },
+        {
+          "field": "placementObserved",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "id": "dbe42693423442afbc3bab9b993242a7",
+      "allComparedFieldsMatch": true,
+      "comparisons": [
+        {
+          "field": "id",
+          "passed": true
+        },
+        {
+          "field": "order",
+          "passed": true
+        },
+        {
+          "field": "description",
+          "passed": true
+        },
+        {
+          "field": "enabled",
+          "passed": true
+        },
+        {
+          "field": "expression",
+          "passed": true
+        },
+        {
+          "field": "action",
+          "passed": true
+        },
+        {
+          "field": "action_parameters",
+          "passed": true
+        },
+        {
+          "field": "placementObserved",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "id": "b835ca6b88b448d6809f01271dba491b",
+      "allComparedFieldsMatch": true,
+      "comparisons": [
+        {
+          "field": "id",
+          "passed": true
+        },
+        {
+          "field": "order",
+          "passed": true
+        },
+        {
+          "field": "description",
+          "passed": true
+        },
+        {
+          "field": "enabled",
+          "passed": true
+        },
+        {
+          "field": "expression",
+          "passed": true
+        },
+        {
+          "field": "action",
+          "passed": true
+        },
+        {
+          "field": "action_parameters",
+          "passed": true
+        },
+        {
+          "field": "placementObserved",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "id": "5fafd20389964771885d8d1194f01d77",
+      "allComparedFieldsMatch": true,
+      "comparisons": [
+        {
+          "field": "id",
+          "passed": true
+        },
+        {
+          "field": "order",
+          "passed": true
+        },
+        {
+          "field": "description",
+          "passed": true
+        },
+        {
+          "field": "enabled",
+          "passed": true
+        },
+        {
+          "field": "expression",
+          "passed": true
+        },
+        {
+          "field": "action",
+          "passed": true
+        },
+        {
+          "field": "action_parameters",
+          "passed": true
+        },
+        {
+          "field": "placementObserved",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "id": "239ab46545704096bec2628d8eedf9b9",
+      "allComparedFieldsMatch": true,
+      "comparisons": [
+        {
+          "field": "id",
+          "passed": true
+        },
+        {
+          "field": "order",
+          "passed": true
+        },
+        {
+          "field": "description",
+          "passed": true
+        },
+        {
+          "field": "enabled",
+          "passed": true
+        },
+        {
+          "field": "expression",
+          "passed": true
+        },
+        {
+          "field": "action",
+          "passed": true
+        },
+        {
+          "field": "action_parameters",
+          "passed": true
+        },
+        {
+          "field": "placementObserved",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "id": "2873f5b6de04417d8a486b22cc878835",
+      "allComparedFieldsMatch": true,
+      "comparisons": [
+        {
+          "field": "id",
+          "passed": true
+        },
+        {
+          "field": "order",
+          "passed": true
+        },
+        {
+          "field": "description",
+          "passed": true
+        },
+        {
+          "field": "enabled",
+          "passed": true
+        },
+        {
+          "field": "expression",
+          "passed": true
+        },
+        {
+          "field": "action",
+          "passed": true
+        },
+        {
+          "field": "action_parameters",
+          "passed": true
+        },
+        {
+          "field": "placementObserved",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "id": "9781b1ef743f4ffbaadbe5cb3250eeca",
+      "allComparedFieldsMatch": true,
+      "comparisons": [
+        {
+          "field": "id",
+          "passed": true
+        },
+        {
+          "field": "order",
+          "passed": true
+        },
+        {
+          "field": "description",
+          "passed": true
+        },
+        {
+          "field": "enabled",
+          "passed": true
+        },
+        {
+          "field": "expression",
+          "passed": true
+        },
+        {
+          "field": "action",
+          "passed": true
+        },
+        {
+          "field": "action_parameters",
+          "passed": true
+        },
+        {
+          "field": "placementObserved",
+          "passed": true
+        }
+      ]
+    }
+  ],
+  "allPassed": true,
+  "limits": [
+    "Compares authenticated UI-transcribed displayed fields, not hidden ruleset metadata or a per-edge execution log.",
+    "Matching saved control-plane definitions cannot establish which configuration a historical edge request evaluated."
+  ]
+}

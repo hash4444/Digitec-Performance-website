@@ -1,0 +1,393 @@
+{
+  "generatedAtUtc": "2026-10-26T09:02:28.462Z",
+  "status": "PASS_INDEPENDENT_SOURCE_BUILD_SSR_REVIEW",
+  "applicationWritesByThisReview": 0,
+  "networkRequestsByThisReview": 0,
+  "checks": {
+    "exactThreeFileSourceScope": true,
+    "guardedReverseCheckOnly": true,
+    "bothDeclaredProductionPipelinesPassed": true,
+    "bothAppAndNodeTypesPassed": true,
+    "allSavedSsrAssertionsPassed": true,
+    "allSsrCurrentInputHashesMatch": true,
+    "allSixteenRouteMetadataEqual": true,
+    "freshPublicRoutingEvidencePassed": true
+  },
+  "approvedIds": [
+    "H3-01",
+    "H3-02",
+    "S1"
+  ],
+  "excludedIds": [
+    "S2",
+    "production deployment",
+    "Cloudflare changes",
+    "metadata/canonical/schema changes",
+    "indexing requests"
+  ],
+  "sourceScopeSummary": {
+    "approvedFileCount": 3,
+    "changedSource": [
+      "src/data/mercedesServiceContent.ts",
+      "src/pages/BrandPage.tsx",
+      "src/pages/BrandServicePage.tsx"
+    ],
+    "rollbackCheckOnly": {
+      "checkedAtUtc": "2026-10-26T09:00:51.741Z",
+      "command": "git",
+      "arguments": [
+        "apply",
+        "--reverse",
+        "--check",
+        "--directory=reports/mercedes-phase-4/candidate.local",
+        "--",
+        "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-4\\review\\approved-content-only.patch"
+      ],
+      "cwd": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC",
+      "checkOnly": true,
+      "sourceHashesGuarded": true,
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": "",
+      "passed": true
+    }
+  },
+  "buildSummary": {
+    "baseline": {
+      "passed": true,
+      "steps": 19,
+      "finishedAt": "2026-10-26T08:59:44.234Z"
+    },
+    "candidate": {
+      "passed": true,
+      "steps": 19,
+      "finishedAt": "2026-10-26T08:59:44.232Z"
+    },
+    "typechecksPerCopy": 2,
+    "preExistingBuildOrTypeFailuresObserved": false
+  },
+  "ssrSummary": {
+    "routes": 16,
+    "assertions": 75,
+    "passedAssertions": 75,
+    "failedAssertions": 0,
+    "metadataUnchanged": true,
+    "htmlInputs": [
+      {
+        "route": "/brands/mercedes-benz-service-dubai",
+        "side": "baseline",
+        "path": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-4\\baseline.local\\dist\\brands\\mercedes-benz-service-dubai\\index.html",
+        "recordedSha256": "1d51615a54c4293da55e0b58bc6ca7ee80f170ef46074a4525f37c76a95f5a1e",
+        "currentSha256": "1d51615a54c4293da55e0b58bc6ca7ee80f170ef46074a4525f37c76a95f5a1e",
+        "matches": true
+      },
+      {
+        "route": "/brands/mercedes-benz-service-dubai",
+        "side": "candidate",
+        "path": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-4\\candidate.local\\dist\\brands\\mercedes-benz-service-dubai\\index.html",
+        "recordedSha256": "cef5f984a4d3e83859544fb866b9bf48207ef42e1c0dcb9528c07dce77667f6d",
+        "currentSha256": "cef5f984a4d3e83859544fb866b9bf48207ef42e1c0dcb9528c07dce77667f6d",
+        "matches": true
+      },
+      {
+        "route": "/services/mercedes-body-repair-dubai",
+        "side": "baseline",
+        "path": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-4\\baseline.local\\dist\\services\\mercedes-body-repair-dubai\\index.html",
+        "recordedSha256": "1014d1115c2b3e5c6113ee90d27bf913c7724b43b02c2d9e442e9d5b3ced34ce",
+        "currentSha256": "1014d1115c2b3e5c6113ee90d27bf913c7724b43b02c2d9e442e9d5b3ced34ce",
+        "matches": true
+      },
+      {
+        "route": "/services/mercedes-body-repair-dubai",
+        "side": "candidate",
+        "path": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-4\\candidate.local\\dist\\services\\mercedes-body-repair-dubai\\index.html",
+        "recordedSha256": "aabb37887b0bda8a6bdfa5cc75d8391b76e93d19e8693c1de8d8615284bc4b6a",
+        "currentSha256": "aabb37887b0bda8a6bdfa5cc75d8391b76e93d19e8693c1de8d8615284bc4b6a",
+        "matches": true
+      },
+      {
+        "route": "/ar/brands/mercedes-benz-service-dubai",
+        "side": "baseline",
+        "path": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-4\\baseline.local\\dist\\ar\\brands\\mercedes-benz-service-dubai\\index.html",
+        "recordedSha256": "9bc405b8d4e756b1cdd17f674c82ec1ba6cc21e0ae67bb068cc76c60b966d971",
+        "currentSha256": "9bc405b8d4e756b1cdd17f674c82ec1ba6cc21e0ae67bb068cc76c60b966d971",
+        "matches": true
+      },
+      {
+        "route": "/ar/brands/mercedes-benz-service-dubai",
+        "side": "candidate",
+        "path": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-4\\candidate.local\\dist\\ar\\brands\\mercedes-benz-service-dubai\\index.html",
+        "recordedSha256": "fd466bdb35616262993593708043c92ce711c1c7a876bc0ac2404951f28bf120",
+        "currentSha256": "fd466bdb35616262993593708043c92ce711c1c7a876bc0ac2404951f28bf120",
+        "matches": true
+      },
+      {
+        "route": "/ar/services/mercedes-body-repair-dubai",
+        "side": "baseline",
+        "path": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-4\\baseline.local\\dist\\ar\\services\\mercedes-body-repair-dubai\\index.html",
+        "recordedSha256": "232f3fbc462959a0132066bc93c6d9b40a3f8dd82d9625cf7dcd4efbe3e547e6",
+        "currentSha256": "232f3fbc462959a0132066bc93c6d9b40a3f8dd82d9625cf7dcd4efbe3e547e6",
+        "matches": true
+      },
+      {
+        "route": "/ar/services/mercedes-body-repair-dubai",
+        "side": "candidate",
+        "path": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-4\\candidate.local\\dist\\ar\\services\\mercedes-body-repair-dubai\\index.html",
+        "recordedSha256": "f3ee877e4c7d368a7a83433b6835c75522bc416a958f4a602a198db957ab334d",
+        "currentSha256": "f3ee877e4c7d368a7a83433b6835c75522bc416a958f4a602a198db957ab334d",
+        "matches": true
+      },
+      {
+        "route": "/brands/bmw-service-dubai",
+        "side": "baseline",
+        "path": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-4\\baseline.local\\dist\\brands\\bmw-service-dubai\\index.html",
+        "recordedSha256": "9d91440cd7882d18ef24e1f52b1ec0900fc4e35fd490063b587534940e3b7fbb",
+        "currentSha256": "9d91440cd7882d18ef24e1f52b1ec0900fc4e35fd490063b587534940e3b7fbb",
+        "matches": true
+      },
+      {
+        "route": "/brands/bmw-service-dubai",
+        "side": "candidate",
+        "path": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-4\\candidate.local\\dist\\brands\\bmw-service-dubai\\index.html",
+        "recordedSha256": "bbcf69bff4eae70419eed87140889d759ed79b7a88cffc1f6574243386dd230f",
+        "currentSha256": "bbcf69bff4eae70419eed87140889d759ed79b7a88cffc1f6574243386dd230f",
+        "matches": true
+      },
+      {
+        "route": "/ar/brands/bmw-service-dubai",
+        "side": "baseline",
+        "path": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-4\\baseline.local\\dist\\ar\\brands\\bmw-service-dubai\\index.html",
+        "recordedSha256": "63935c59954d08149833e9eca9052f0d809c7af73f0392de56c005fe78fb2a8c",
+        "currentSha256": "63935c59954d08149833e9eca9052f0d809c7af73f0392de56c005fe78fb2a8c",
+        "matches": true
+      },
+      {
+        "route": "/ar/brands/bmw-service-dubai",
+        "side": "candidate",
+        "path": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-4\\candidate.local\\dist\\ar\\brands\\bmw-service-dubai\\index.html",
+        "recordedSha256": "2edb8f237308230b1cbe35b9377cb12b6a4df22626e4b568b42372e3d99ee0b4",
+        "currentSha256": "2edb8f237308230b1cbe35b9377cb12b6a4df22626e4b568b42372e3d99ee0b4",
+        "matches": true
+      },
+      {
+        "route": "/brands/bmw-service-dubai/body-repair",
+        "side": "baseline",
+        "path": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-4\\baseline.local\\dist\\brands\\bmw-service-dubai\\body-repair\\index.html",
+        "recordedSha256": "a1bd5f51d9c8e30b73df80981baef912c26b1b90f457ae9f3aacfa528e0289ef",
+        "currentSha256": "a1bd5f51d9c8e30b73df80981baef912c26b1b90f457ae9f3aacfa528e0289ef",
+        "matches": true
+      },
+      {
+        "route": "/brands/bmw-service-dubai/body-repair",
+        "side": "candidate",
+        "path": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-4\\candidate.local\\dist\\brands\\bmw-service-dubai\\body-repair\\index.html",
+        "recordedSha256": "c1b119626ba7f47b3f685302bf8c2e41f5aa2ee8e8368cc340b8c975f7847115",
+        "currentSha256": "c1b119626ba7f47b3f685302bf8c2e41f5aa2ee8e8368cc340b8c975f7847115",
+        "matches": true
+      },
+      {
+        "route": "/ar/brands/bmw-service-dubai/body-repair",
+        "side": "baseline",
+        "path": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-4\\baseline.local\\dist\\ar\\brands\\bmw-service-dubai\\body-repair\\index.html",
+        "recordedSha256": "2194ecb2e7894c3e90e099fff6d75755d482084491cd2d1d3667b7854f58f3fe",
+        "currentSha256": "2194ecb2e7894c3e90e099fff6d75755d482084491cd2d1d3667b7854f58f3fe",
+        "matches": true
+      },
+      {
+        "route": "/ar/brands/bmw-service-dubai/body-repair",
+        "side": "candidate",
+        "path": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-4\\candidate.local\\dist\\ar\\brands\\bmw-service-dubai\\body-repair\\index.html",
+        "recordedSha256": "6718bf634ac835189ecf895ede625c4b1ea5a85f95b31ee541cf552ce68f1c00",
+        "currentSha256": "6718bf634ac835189ecf895ede625c4b1ea5a85f95b31ee541cf552ce68f1c00",
+        "matches": true
+      },
+      {
+        "route": "/services/mercedes-oil-change-dubai",
+        "side": "baseline",
+        "path": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-4\\baseline.local\\dist\\services\\mercedes-oil-change-dubai\\index.html",
+        "recordedSha256": "42ca268d2bfd2c92d83b12543da10ecfceaecab01619b2cb657dc5e4a3ede949",
+        "currentSha256": "42ca268d2bfd2c92d83b12543da10ecfceaecab01619b2cb657dc5e4a3ede949",
+        "matches": true
+      },
+      {
+        "route": "/services/mercedes-oil-change-dubai",
+        "side": "candidate",
+        "path": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-4\\candidate.local\\dist\\services\\mercedes-oil-change-dubai\\index.html",
+        "recordedSha256": "4fc275239205d473716e458355088b498ee73ee1d8cc8b6e2b5a75f44b86baf1",
+        "currentSha256": "4fc275239205d473716e458355088b498ee73ee1d8cc8b6e2b5a75f44b86baf1",
+        "matches": true
+      },
+      {
+        "route": "/ar/services/mercedes-oil-change-dubai",
+        "side": "baseline",
+        "path": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-4\\baseline.local\\dist\\ar\\services\\mercedes-oil-change-dubai\\index.html",
+        "recordedSha256": "a18819f4b941e2f4e8a9ddcb2fcd543cf7e995f71f6e7a91cb50959bdf535acc",
+        "currentSha256": "a18819f4b941e2f4e8a9ddcb2fcd543cf7e995f71f6e7a91cb50959bdf535acc",
+        "matches": true
+      },
+      {
+        "route": "/ar/services/mercedes-oil-change-dubai",
+        "side": "candidate",
+        "path": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-4\\candidate.local\\dist\\ar\\services\\mercedes-oil-change-dubai\\index.html",
+        "recordedSha256": "2ab0c13e61c8090c6d6cc4729b91f3d26beb2033f9a180b9229cd94962c9a242",
+        "currentSha256": "2ab0c13e61c8090c6d6cc4729b91f3d26beb2033f9a180b9229cd94962c9a242",
+        "matches": true
+      },
+      {
+        "route": "/services/mercedes-diagnostics-dubai",
+        "side": "baseline",
+        "path": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-4\\baseline.local\\dist\\services\\mercedes-diagnostics-dubai\\index.html",
+        "recordedSha256": "fe59feec21b1075b7be7fb592c29fb06a62ddb5a1d95c2acd44c2719ef8b1c52",
+        "currentSha256": "fe59feec21b1075b7be7fb592c29fb06a62ddb5a1d95c2acd44c2719ef8b1c52",
+        "matches": true
+      },
+      {
+        "route": "/services/mercedes-diagnostics-dubai",
+        "side": "candidate",
+        "path": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-4\\candidate.local\\dist\\services\\mercedes-diagnostics-dubai\\index.html",
+        "recordedSha256": "f971760003c993dde2a3e5479e6474f8acd55ec583556b91138ada10cb5347ea",
+        "currentSha256": "f971760003c993dde2a3e5479e6474f8acd55ec583556b91138ada10cb5347ea",
+        "matches": true
+      },
+      {
+        "route": "/ar/services/mercedes-diagnostics-dubai",
+        "side": "baseline",
+        "path": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-4\\baseline.local\\dist\\ar\\services\\mercedes-diagnostics-dubai\\index.html",
+        "recordedSha256": "88b7f2555bc3a66b07a97c74ddd11b4fd91227e99994b466508698fd1cec8ce5",
+        "currentSha256": "88b7f2555bc3a66b07a97c74ddd11b4fd91227e99994b466508698fd1cec8ce5",
+        "matches": true
+      },
+      {
+        "route": "/ar/services/mercedes-diagnostics-dubai",
+        "side": "candidate",
+        "path": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-4\\candidate.local\\dist\\ar\\services\\mercedes-diagnostics-dubai\\index.html",
+        "recordedSha256": "a3c0e48530c7ead410d7640678647a9eea8099eac9b7b6a2b42f175d8891f566",
+        "currentSha256": "a3c0e48530c7ead410d7640678647a9eea8099eac9b7b6a2b42f175d8891f566",
+        "matches": true
+      },
+      {
+        "route": "/services/mercedes-mechanical-repair-dubai",
+        "side": "baseline",
+        "path": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-4\\baseline.local\\dist\\services\\mercedes-mechanical-repair-dubai\\index.html",
+        "recordedSha256": "d31e3ded1e66e8779c52a97c910147b6cc2b6a36ea2e7c730a4fea593b8417aa",
+        "currentSha256": "d31e3ded1e66e8779c52a97c910147b6cc2b6a36ea2e7c730a4fea593b8417aa",
+        "matches": true
+      },
+      {
+        "route": "/services/mercedes-mechanical-repair-dubai",
+        "side": "candidate",
+        "path": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-4\\candidate.local\\dist\\services\\mercedes-mechanical-repair-dubai\\index.html",
+        "recordedSha256": "f50e3cbb6550694434d01fd7bbaaa696e884a1d7f50c8b33a370b85cea881e6a",
+        "currentSha256": "f50e3cbb6550694434d01fd7bbaaa696e884a1d7f50c8b33a370b85cea881e6a",
+        "matches": true
+      },
+      {
+        "route": "/ar/services/mercedes-mechanical-repair-dubai",
+        "side": "baseline",
+        "path": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-4\\baseline.local\\dist\\ar\\services\\mercedes-mechanical-repair-dubai\\index.html",
+        "recordedSha256": "ef046c7924524ed858b53a7a01f68a59e88cf83d946fee9a1266c815f7d84989",
+        "currentSha256": "ef046c7924524ed858b53a7a01f68a59e88cf83d946fee9a1266c815f7d84989",
+        "matches": true
+      },
+      {
+        "route": "/ar/services/mercedes-mechanical-repair-dubai",
+        "side": "candidate",
+        "path": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-4\\candidate.local\\dist\\ar\\services\\mercedes-mechanical-repair-dubai\\index.html",
+        "recordedSha256": "f61838e295c2941e5cfb34ed9dd79c9bdff465bc0d8bb3a4bf4bc1e4425fb58a",
+        "currentSha256": "f61838e295c2941e5cfb34ed9dd79c9bdff465bc0d8bb3a4bf4bc1e4425fb58a",
+        "matches": true
+      },
+      {
+        "route": "/services/car-body-repair-dubai",
+        "side": "baseline",
+        "path": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-4\\baseline.local\\dist\\services\\car-body-repair-dubai\\index.html",
+        "recordedSha256": "80433e60ea3d28fa2f1c15f1d56e4b71675059740331ef09a00a018c4d5ae9a0",
+        "currentSha256": "80433e60ea3d28fa2f1c15f1d56e4b71675059740331ef09a00a018c4d5ae9a0",
+        "matches": true
+      },
+      {
+        "route": "/services/car-body-repair-dubai",
+        "side": "candidate",
+        "path": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-4\\candidate.local\\dist\\services\\car-body-repair-dubai\\index.html",
+        "recordedSha256": "dc6357d330db2111b7903fd85a4801b68c0d4ea6d6c37f687e334fb279f49835",
+        "currentSha256": "dc6357d330db2111b7903fd85a4801b68c0d4ea6d6c37f687e334fb279f49835",
+        "matches": true
+      },
+      {
+        "route": "/ar/services/car-body-repair-dubai",
+        "side": "baseline",
+        "path": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-4\\baseline.local\\dist\\ar\\services\\car-body-repair-dubai\\index.html",
+        "recordedSha256": "e06d814a3220bd6043f0444fa45e9d0ed9a03b2b5e35de491920ce36c93a832b",
+        "currentSha256": "e06d814a3220bd6043f0444fa45e9d0ed9a03b2b5e35de491920ce36c93a832b",
+        "matches": true
+      },
+      {
+        "route": "/ar/services/car-body-repair-dubai",
+        "side": "candidate",
+        "path": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-4\\candidate.local\\dist\\ar\\services\\car-body-repair-dubai\\index.html",
+        "recordedSha256": "656a9efe7ac06896e591b1915ecefa27966d4271fb0af802f6b61d5fd1c58bce",
+        "currentSha256": "656a9efe7ac06896e591b1915ecefa27966d4271fb0af802f6b61d5fd1c58bce",
+        "matches": true
+      }
+    ],
+    "firstHarnessRunWasDiagnostic": true,
+    "harnessCorrection": "Verifier artifact paths only: docs/*.csv -> docs/seo/*.csv. No app/source change, no build rerun, no network action."
+  },
+  "publicRoutingSummary": {
+    "scope": "Pre-implementation public behavior check only. Root separately owns authorized H3-01/H3-02/S1 isolated-copy application/build/preview. No Cloudflare account/rule/cache or source mutations.",
+    "summary": {
+      "cases": 326,
+      "networkRequests": 612,
+      "assertions": 852,
+      "passed": 852,
+      "failed": 0,
+      "sourceCases": 192,
+      "protectedOilCases": 48
+    },
+    "protectedEnglishOil": {
+      "cases": 48,
+      "direct308ToIntended200WithExactQuery": 48
+    },
+    "configurationInventoryNotClaimed": true
+  },
+  "evidence": [
+    {
+      "path": "review/controlled-copy-scope-review.json",
+      "sha256": "01c893f31317f2b2811b9482366066e271bfbccf809feb77969710d1329b6277"
+    },
+    {
+      "path": "build/baseline/production-build.json",
+      "sha256": "cf508235ce92ee6d6bb9ae35b35a51f9cae90183720d21abdecac45a7e05679d"
+    },
+    {
+      "path": "build/candidate/production-build.json",
+      "sha256": "1caa5ec80c2c096c88166dcf5c165e5534edc828908d169ca131cc6235e6cf02"
+    },
+    {
+      "path": "build/baseline/typecheck.json",
+      "sha256": "32437fb35405537ce894685e450fed93cb0e1899c92d25f4ef56b8212f4208f8"
+    },
+    {
+      "path": "build/candidate/typecheck.json",
+      "sha256": "5d83e3e4ea1a3aad071cb857992699a84e33ae37e7644538a082382eac190cfc"
+    },
+    {
+      "path": "tests/results/results.json",
+      "sha256": "7a0b25f1fcdc03cda23d9f384eb0f80cdb9c8bdabda16f681687031d8d8872c1"
+    },
+    {
+      "path": "tests/harness-run-history.json",
+      "sha256": "2c7ee3d8db690ac6edc0559dea710c457425a9b164bb8ec7d1cfff7ef366ca7e"
+    },
+    {
+      "path": "redirects/protection-summary.json",
+      "sha256": "866e13e54d24fa70e34c75026781eddd56d6435220aca2ea20d60d3b483cea97"
+    }
+  ],
+  "remainingVerification": [
+    "Responsive visual, keyboard/focus and interactive local-preview review is separately owned by the parent; these artifacts alone do not establish those results.",
+    "No production publication, contact submission, analytics receipt or fresh Google indexing verification is performed here.",
+    "Published workshop phone is reused; independent operator confirmation of workshop facts remains a business evidence dependency before a future publication."
+  ],
+  "interpretation": "The approved local implementation is byte-exact and passes the observed build/type/SSR checks. This review does not authorize publication or treat pre-implementation public routing as a Phase4 production deployment."
+}

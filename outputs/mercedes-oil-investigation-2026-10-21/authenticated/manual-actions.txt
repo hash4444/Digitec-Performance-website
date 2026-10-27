@@ -1,0 +1,134 @@
+- banner:
+  - button "Main menu":
+  - link "Google Search Console":
+    - /url: ./search-console?resource_id=sc-domain%3Adigitecme.com
+  - search:
+    - textbox [disabled]: Inspect any URL in 'digitecme.com'
+    - combobox "Inspect any URL in digitecme.com"
+    - button "Search":
+  - button "Help":
+    - generic: help_outline
+  - tooltip: Help
+  - button "User settings":
+    - generic: manage_accounts
+  - tooltip: User settings
+  - 'button "Unread messages: 38"':
+    - generic: notifications
+  - tooltip: Messages
+  - generic: "38"
+  - button "Google apps":
+  - 'button "Google Account: Hashem Qusibatie (hqusibatie24@gmail.com)"':
+- dialog "navigational drawer":
+  - navigation "Primary":
+    - button "Search property":
+      - img "favicon"
+      - combobox "digitecme.com"
+      - generic: 
+    - link "Overview":
+      - /url: ./search-console?resource_id=sc-domain%3Adigitecme.com
+      - generic: home
+      - generic: Overview
+    - link "Insights":
+      - /url: ./search-console/performance/insights?resource_id=sc-domain%3Adigitecme.com
+      - generic: lightbulb_2
+      - generic: Insights
+    - link "Performance":
+      - /url: ./search-console/performance/search-analytics?resource_id=sc-domain%3Adigitecme.com
+      - generic: trending_up
+      - generic: Performance
+    - button "Performance report section":
+      - generic: keyboard_arrow_down
+    - button "URL inspection":
+      - generic: search
+      - generic: URL inspection
+    - generic: Indexing
+    - button "Indexing report section" [expanded]:
+      - generic: keyboard_arrow_up
+    - link "Pages":
+      - /url: ./search-console/index?resource_id=sc-domain%3Adigitecme.com
+      - generic: file_copy
+      - generic: Pages
+    - link "Videos":
+      - /url: ./search-console/video-index?resource_id=sc-domain%3Adigitecme.com
+      - generic: video_library
+      - generic: Videos
+    - link "Sitemaps":
+      - /url: ./search-console/sitemaps?resource_id=sc-domain%3Adigitecme.com
+      - generic: account_tree
+      - generic: Sitemaps
+    - link "Removals":
+      - /url: ./search-console/removals?resource_id=sc-domain%3Adigitecme.com
+      - generic: visibility_off
+      - generic: Removals
+    - generic: Experience
+    - button "Experience report section" [expanded]:
+      - generic: keyboard_arrow_up
+    - link "Core web vitals":
+      - /url: ./search-console/core-web-vitals?resource_id=sc-domain%3Adigitecme.com
+      - generic: speed
+      - generic: Core web vitals
+    - link "HTTPS":
+      - /url: ./search-console/https?resource_id=sc-domain%3Adigitecme.com
+      - generic: lock
+      - generic: HTTPS
+    - generic: Shopping
+    - button "Shopping report section" [expanded]:
+      - generic: keyboard_arrow_up
+    - link "Product snippets":
+      - /url: ./search-console/r/product?resource_id=sc-domain%3Adigitecme.com
+      - generic: layers
+      - generic: Product snippets
+    - link "Merchant listings":
+      - /url: ./search-console/r/merchant-listings?resource_id=sc-domain%3Adigitecme.com
+      - generic: layers
+      - generic: Merchant listings
+    - generic: Enhancements
+    - button "Enhancements report section" [expanded]:
+      - generic: keyboard_arrow_up
+    - link "Breadcrumbs":
+      - /url: ./search-console/r/breadcrumbs?resource_id=sc-domain%3Adigitecme.com
+      - generic: layers
+      - generic: Breadcrumbs
+    - link "Review snippets":
+      - /url: ./search-console/r/review-snippet?resource_id=sc-domain%3Adigitecme.com
+      - generic: layers
+      - generic: Review snippets
+    - generic: Security & Manual Actions
+    - button "Security & Manual Actions report section" [expanded]:
+      - generic: keyboard_arrow_up
+    - link "Manual actions" [active]:
+      - /url: ./search-console/manual-actions?resource_id=sc-domain%3Adigitecme.com
+      - generic: flag
+      - generic: Manual actions
+    - link "Security issues":
+      - /url: ./search-console/security-issues?resource_id=sc-domain%3Adigitecme.com
+      - generic: security
+      - generic: Security issues
+    - link "Links report":
+      - /url: ./search-console/links?resource_id=sc-domain%3Adigitecme.com
+      - generic: link_2
+      - generic: Links
+    - link "Achievements":
+      - /url: ./search-console/achievements?resource_id=sc-domain%3Adigitecme.com
+      - generic: trophy
+      - generic: Achievements
+    - link "Settings":
+      - /url: ./search-console/settings?resource_id=sc-domain%3Adigitecme.com
+      - generic: settings
+      - generic: Settings
+    - button "Submit feedback":
+      - generic: feedback
+      - generic: Submit feedback
+    - button "About Search Console":
+      - generic: info
+      - generic: About Search Console
+    - link "Privacy":
+      - /url: https://myaccount.google.com/privacypolicy?hl=en-GB
+    - link "Terms":
+      - /url: https://myaccount.google.com/termsofservice?hl=en-GB
+- navigation "Breadcrumbs":
+  - heading "Manual actions" [level=1]
+- main:
+  - generic: check_circle
+  - generic: No issues detected
+- generic: Manual actions

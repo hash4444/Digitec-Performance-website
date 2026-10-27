@@ -1,0 +1,45 @@
+{
+  "preparedAt": "2026-10-26T10:38:23.503Z",
+  "summaries": [
+    {
+      "option": "A",
+      "fileCount": 1634,
+      "bytes": 206554922,
+      "contentManifestSha256": "a4fb85f51584e200c49daf4236f8e5410fe3a840fcca4fa8d722dc0450683b87",
+      "sourceFiles": [
+        "src/pages/BrandPage.tsx",
+        "src/data/mercedesServiceContent.ts",
+        "src/pages/BrandServicePage.tsx"
+      ],
+      "baselineOutputDiffs": 1439
+    },
+    {
+      "option": "B",
+      "fileCount": 1634,
+      "bytes": 206554922,
+      "contentManifestSha256": "ccf25f633e39b2b409843ed6af37a61de220b13c3a3bdb99faa453131103d11b",
+      "sourceFiles": [
+        "src/pages/BrandPage.tsx",
+        "src/data/mercedesServiceContent.ts",
+        "src/pages/BrandServicePage.tsx",
+        "src/lib/route-manifest.ts"
+      ],
+      "baselineOutputDiffs": 1440
+    }
+  ],
+  "aVersusB": [
+    {
+      "file": "sitemap.xml",
+      "a": {
+        "file": "sitemap.xml",
+        "bytes": 129276,
+        "sha256": "294c4917d6a19ff8d5fb3575d780debe465643520031850802355d1b54ad42cf"
+      },
+      "b": {
+        "file": "sitemap.xml",
+        "bytes": 129276,
+        "sha256": "6ee205e997cddc32c4a671cd610968c9859dcceca939a442236aa6c1834261a4"
+      }
+    }
+  ]
+}

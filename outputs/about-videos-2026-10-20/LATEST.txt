@@ -1,0 +1,13 @@
+Latest reviewed version: Instagram revision, 20 October 2026.
+
+All eight videos remain in the automatic horizontal About Us strip on English and Arabic routes. Visible counters, pause and arrow buttons, sound prompt and local modal player are removed. Every video card opens https://www.instagram.com/digi_tec/ in a new tab.
+
+Current QA: revision-instagram/qa/COMBINED-QA-SUMMARY.txt and .json.
+Current source review: revision-instagram/REVIEW.txt and .json.
+Current exact feature manifest: modified-files.json (19 files: 3 source, 8 MP4, 8 posters).
+The original qa/ summary describes the earlier local-player design and is retained as historical evidence.
+
+Local preview: http://127.0.0.1:5188/about#about-films-title
+Preview command, from candidate.local: node ../qa/preview-media.mjs 5188
+All 25 completed website files, including the six Mercedes SEO files, were committed and pushed to GitHub main as b793ad0acf3cd534217d862a44f2e1d915789ec2 on 20 October 2026. Remote main was verified to match this commit. No explicit production deployment or publication was performed.
+Push evidence: ../git-push-2026-10-20/PUSH-RESULT.txt.

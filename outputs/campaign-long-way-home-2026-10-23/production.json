@@ -1,0 +1,715 @@
+{
+  "schema_version": "1.2",
+  "campaign": {
+    "title": "The Long Way Home",
+    "brand": "DIGI-TEC",
+    "created_date": "2026-10-23",
+    "timezone": "Asia/Dubai",
+    "status": "opening_test_ready_paid_generation_on_hold",
+    "director": "Codex, appointed by the user",
+    "approved_brief": "Create a fully AI-generated, photorealistic, high-budget-looking vertical Instagram narrative film. An adult daughter drives her older father along a scenic mountain road in their cherished deep-green grand tourer. A childhood photograph inside a worn DIGI-TEC service-history wallet suggests their shared history and a trusted automotive-care relationship passed from father to daughter. The brand enters the story through that relationship. The film should inspire trust and loyalty through warmth, restraint and believable detail.",
+    "story_status": "The approved concept remains active as a creative plan. Reference stills, the endcard, the reusable opening test and the eight-second review cut are preserved. The user explicitly requested a hold on all further paid generation. This is not a cancellation of the concept. The full commercial remains unfinished.",
+    "fictional_story": true,
+    "story_boundaries": [
+      "All characters, cars and locations are AI-created for a fictional brand narrative.",
+      "Use an outdoor mountain setting. Do not return to the retired workshop storyboard.",
+      "The father is capable, engaged and happy to enjoy the passenger seat.",
+      "Do not depict racing, a collision, a breakdown, roadside assistance or a fear-based reason to seek service.",
+      "The service wallet is a fictional story prop. Do not present the characters as actual customers or invent a literal customer testimonial.",
+      "Do not imply manufacturer endorsement, guaranteed repair results or that the fictional location is DIGI-TEC's actual premises."
+    ],
+    "production_phase": "preproduction",
+    "paid_generation_hold": {
+      "user_instruction": "Hold further paid generation.",
+      "lifting_condition": "The user must explicitly lift the hold before any further paid generation. Confirm funding and the authorized spend separately; lifting the hold alone does not approve an unlimited budget.",
+      "unapproved_additional_credit_choices": [
+        1200,
+        900
+      ],
+      "choice_note": "The proposed choices of 1200 or 900 additional credits were not approved.",
+      "approved_additional_credit_ceiling": null,
+      "scope": "All further paid generations, including footage, stills, narration, dialogue, music, sound and retries",
+      "status": "on_hold_by_explicit_user_request",
+      "concept_cancelled": false,
+      "goal_note": "There is no active goal to pause; this is a production-spend hold."
+    }
+  },
+  "delivery": {
+    "platform": "Instagram",
+    "master_duration_seconds": 60,
+    "aspect_ratio": "9:16",
+    "target_width_pixels": 1080,
+    "target_height_pixels": 1920,
+    "target_editorial_frame_rate": 24,
+    "frame_rate_note": "Inspect the actual generated source frame rate before assembly. Do not promise a native model frame rate or use unreviewed frame interpolation.",
+    "planned_source_clip_count": 12,
+    "total_generated_source_seconds": 59,
+    "planned_picture_seconds_after_trims": 55,
+    "planned_source_trim_seconds": 4,
+    "endcard_duration_seconds": 5,
+    "endcard_generation": "The 1080 by 1920 endcard has been created, visually reviewed in the ordinary Higgsfield sandbox, uploaded and confirmed as media_id dff68038-b0b2-4815-bca5-a200600998b3. Hold this approved still for the planned five-second endcard; it is not a thirteenth paid video generation.",
+    "master_audio": "Narration and dialogue are pending voice selection and creation through Higgsfield. Music has not been generated; a separate Higgsfield score-generation capability still needs confirmation. Plan environmental sound separately through the supported Higgsfield workflow.",
+    "readable_text_policy": "Add the exact logo, service-wallet branding, endcard copy and captions editorially. Do not depend on generative video for accurate text.",
+    "duration_planning_note": "Use four seconds of the verified 4.05-second opening test, followed by eleven planned five-second source clips: 59 seconds of planned source coverage. The retimed master uses C01 from 0 to 4 seconds and C02 from 4 to 9 seconds; later shot windows are unchanged. Four seconds of planned source trims yield 55 seconds of picture, followed by the five-second master endcard for a 60-second commercial. The source test extra 0.05 seconds is not counted as planned coverage.",
+    "planned_first_source_seconds": 4,
+    "planned_remaining_source_seconds_each": 5,
+    "generated_source_status": "One source is complete; eleven are still planned. The 59 seconds describe planned coverage, not footage already generated."
+  },
+  "continuity_bible": {
+    "hero_car": {
+      "model": "1997 Porsche 911 Carrera, 993 generation",
+      "body": "Standard Carrera coupe silhouette",
+      "paint": "Deep forest green",
+      "interior": "Tan leather",
+      "wheels": "Silver five-spoke wheels",
+      "steering": "Left-hand drive",
+      "current_seating": "Adult daughter in the left driver's seat; father in the right front passenger seat.",
+      "photograph_seating": "Younger father in the left driver's seat; young daughter in the right front passenger seat.",
+      "lock_requirements": [
+        "Keep the same body proportions, headlights, window outline, paint, wheels, mirrors, dashboard, steering wheel and upholstery in every asset.",
+        "Keep license-plate appearance consistent and avoid making it an important readable story detail.",
+        "Do not introduce a turbo body, large rear wing, convertible roof, modern dashboard or right-hand-drive interior.",
+        "Keep both current-day occupants belted for moving-car shots."
+      ]
+    },
+    "daughter": {
+      "age": 32,
+      "skin_tone": "Warm olive",
+      "hair": "Shoulder-length dark brown hair",
+      "wardrobe": "Stone-beige tailored jacket, dark top and dark trousers",
+      "performance": "Composed, affectionate and observant. Her emotion appears in small glances and a private smile.",
+      "lock_requirements": "Reuse the approved facial identity, hair length, body proportions and wardrobe across all current-day clips."
+    },
+    "father": {
+      "age": 67,
+      "skin_tone": "Warm olive",
+      "hair": "Short silver hair",
+      "facial_hair": "Closely trimmed silver beard",
+      "wardrobe": "Ivory linen shirt and charcoal trousers",
+      "performance": "Relaxed, capable and present. His recognition of the road is warm and understated.",
+      "lock_requirements": "Reuse the approved facial identity, silver hair, beard, body proportions and wardrobe across all current-day clips."
+    },
+    "childhood_photograph": {
+      "medium": "A single static printed photograph, photographed as an insert",
+      "suggested_ages": "Father approximately 44; daughter approximately 9. These are production continuity guides and must not appear as on-screen dates or factual customer history.",
+      "content": "The younger father drives the same green 993 with his young daughter beside him, parked at the same scenic mountain lookout.",
+      "requirements": [
+        "Preserve recognizable facial relationships with the current-day characters.",
+        "Keep the same car model, paint, wheels and tan interior.",
+        "Use the final lookout composition so the present-day scene can echo it.",
+        "Keep the photograph static. No animated childhood flashback or moving child performance is required."
+      ]
+    },
+    "location": {
+      "setting": "A fictional mountain road and lookout inspired by the Hajar Mountains",
+      "time": "Dawn",
+      "light": "Soft dawn sun from camera-right, with consistent atmospheric warmth and restrained contrast",
+      "road": "Dry paved road with ordinary, unhurried driving and no distracting traffic",
+      "requirements": "Keep mountain formations, lookout geometry, road surface, weather and light coherent. The location is not represented as an identifiable real DIGI-TEC facility."
+    },
+    "service_wallet": {
+      "appearance": "Worn, restrained leather service-history wallet that plausibly belongs to the father",
+      "story_role": "The old family photograph is kept inside the same wallet as the car's care records. Its DIGI-TEC name quietly connects the father's trust with the daughter's present journey.",
+      "branding": "Reserve a simple surface for an exact DIGI-TEC logo added editorially.",
+      "text": "Keep service dates, personal details and record contents unreadable. Do not invent repair claims or customer evidence."
+    }
+  },
+  "script": {
+    "voiceover": [
+      {
+        "id": "VO01",
+        "speaker": "Adult daughter",
+        "text": "Some things my father gave me, I understood more with time.",
+        "suggested_window_seconds": [
+          0,
+          10
+        ],
+        "delivery": "Intimate and reflective, with natural pauses."
+      },
+      {
+        "id": "VO02",
+        "speaker": "Adult daughter",
+        "text": "The car. The memories. And a name he trusted to care for them.",
+        "suggested_window_seconds": [
+          16,
+          28
+        ],
+        "delivery": "Warm and matter-of-fact; give each phrase space."
+      },
+      {
+        "id": "VO03",
+        "speaker": "Adult daughter",
+        "text": "DIGI-TEC. Care that carries on.",
+        "suggested_window_seconds": [
+          55,
+          60
+        ],
+        "delivery": "Quiet confidence, with a clean brand pronunciation."
+      }
+    ],
+    "dialogue": [
+      {
+        "id": "D01",
+        "speaker": "Adult daughter",
+        "text": "The long way?",
+        "suggested_window_seconds": [
+          30,
+          33
+        ],
+        "picture_rule": "Play over an exterior car shot. No visible speaking mouth."
+      },
+      {
+        "id": "D02",
+        "speaker": "Father",
+        "text": "Always.",
+        "suggested_window_seconds": [
+          34,
+          36
+        ],
+        "picture_rule": "Keep the mouth outside the frame during the line; an upper-face reaction or exterior picture avoids lip-sync."
+      }
+    ],
+    "music_direction": "Sparse piano or a similarly restrained Higgsfield-generated theme, gradually opening after the dialogue. Music has not been generated. Confirm a separate supported Higgsfield score-generation capability before promising this asset; do not substitute or promise third-party stock music.",
+    "sound_direction": "Use subtle leather movement, a seatbelt click, an understated engine start, believable engine and tyre texture, paper rustle and mountain wind. Do not rely on unreviewed model-generated audio.",
+    "endcard": {
+      "timeline_seconds": [
+        55,
+        60
+      ],
+      "brand": "DIGI-TEC",
+      "endline": "Care that carries on.",
+      "cta": "Book your next service",
+      "website": "digitecme.com",
+      "design": "Created using the native DIGI-TEC logo source, with its exact shapes adapted to a charcoal background. The 1080 by 1920 card was visually reviewed in the ordinary Higgsfield sandbox. Use the approved uploaded card rather than regenerating its typography.",
+      "phone": "+971 4 340 2223",
+      "phone_display": "WhatsApp +971 4 340 2223",
+      "secondary_brand_line": "PERFORMANCE CENTER",
+      "actual_text_lines": [
+        "DIGI-TEC",
+        "PERFORMANCE CENTER",
+        "Care that carries on.",
+        "Book your next service",
+        "WhatsApp +971 4 340 2223",
+        "digitecme.com"
+      ],
+      "status": "created_visually_reviewed_uploaded",
+      "asset": {
+        "remote_url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3Fr0jN7U3hXTXMaG9TB8zx9bC1y/dff68038-b0b2-4815-bca5-a200600998b3.png",
+        "width_pixels": 1080,
+        "height_pixels": 1920,
+        "local_asset_path": null,
+        "media_id": "dff68038-b0b2-4815-bca5-a200600998b3"
+      },
+      "logo_source_url": "https://digitecme.com/images/digitec-logo-english.png"
+    },
+    "audio_production": {
+      "separate_score_capability": "still_to_confirm",
+      "completed_audio_assets": [],
+      "music_status": "not_generated",
+      "narration_status": "pending_voice_selection_through_Higgsfield",
+      "third_party_stock_music": "not_planned",
+      "dialogue_status": "not_generated"
+    }
+  },
+  "source_clips": [
+    {
+      "id": "C01",
+      "status": "completed_reusable_as_four_second_opening",
+      "picture": "Through the open driver's window, the daughter sits at the wheel with her hand already resting on the leather. Her father is already seated beside her. She gives him one gentle glance.",
+      "camera": "One slow, restrained push, preserving enough depth of field to read both characters.",
+      "action_limit": "Animate only the daughter's small glance. Hands, belts and seating remain settled.",
+      "audio": "VO01. Imply the seatbelt click and engine start offscreen; no buckle manipulation or ignition animation is required.",
+      "reference_dependencies": [
+        "approved_master_reference",
+        "daughter_identity",
+        "father_identity",
+        "car_interior_reference"
+      ],
+      "quoted_video_credits": 64,
+      "test_job_id": "94d2c265-7006-4609-9c5c-267b27c1837c",
+      "planned_source_seconds": 4,
+      "planned_master_use_seconds": 4,
+      "planned_master_window_seconds": [
+        0,
+        4
+      ],
+      "verified_source_duration_seconds": 4.05,
+      "submitted_test_duration_seconds": 4,
+      "coverage_note": "Use four seconds of the completed 4.05-second source. The timeline has been retimed explicitly; no five-second source is claimed."
+    },
+    {
+      "id": "C02",
+      "status": "planned_not_submitted",
+      "picture": "Father in close-up, comfortably settled in the passenger seat and looking ahead.",
+      "camera": "Stable close-up with a slight natural camera drift.",
+      "action_limit": "One small settling movement or breath, with no entry into the car.",
+      "audio": "VO01 continues over a gentle idle and sparse score.",
+      "reference_dependencies": [
+        "father_identity",
+        "car_interior_reference"
+      ],
+      "quoted_video_credits": 80,
+      "planned_source_seconds": 5,
+      "planned_master_use_seconds": 5,
+      "planned_master_window_seconds": [
+        4,
+        9
+      ],
+      "verified_source_duration_seconds": null
+    },
+    {
+      "id": "C03",
+      "status": "planned_not_submitted",
+      "picture": "Insert of the worn service wallet already open on the father's lap, with the childhood photograph partly visible.",
+      "camera": "A slow macro move across the leather and photograph edge.",
+      "action_limit": "The wallet stays open and still. Do not animate opening it, extracting a photograph or a moving handoff.",
+      "audio": "Subtle paper and leather texture. Let the exact editorial DIGI-TEC wallet logo register briefly.",
+      "reference_dependencies": [
+        "service_wallet_reference",
+        "childhood_photograph",
+        "father_wardrobe"
+      ],
+      "quoted_video_credits": 80,
+      "planned_source_seconds": 5,
+      "planned_master_use_seconds": 5,
+      "planned_master_window_seconds": [
+        9,
+        14
+      ],
+      "verified_source_duration_seconds": null
+    },
+    {
+      "id": "C04",
+      "status": "planned_not_submitted",
+      "picture": "The static childhood photograph fills the frame: younger father at the wheel, young daughter beside him, same green car and mountain lookout.",
+      "camera": "An almost imperceptible push toward the printed photograph, preserving its status as a still image.",
+      "action_limit": "Only camera movement and subtle reflected light. The people inside the photograph do not move.",
+      "audio": "Begin VO02 near the end of this shot.",
+      "reference_dependencies": [
+        "approved_childhood_photograph",
+        "lookout_composition_reference"
+      ],
+      "quoted_video_credits": 80,
+      "planned_source_seconds": 5,
+      "planned_master_use_seconds": 4,
+      "planned_master_window_seconds": [
+        14,
+        18
+      ],
+      "verified_source_duration_seconds": null
+    },
+    {
+      "id": "C05",
+      "status": "planned_not_submitted",
+      "picture": "The present-day daughter notices the photograph offscreen. A small private smile crosses her face.",
+      "camera": "Clean close-up through the driver's side, without a moving foreground obstruction.",
+      "action_limit": "One small change of expression. No speaking mouth or visible prop manipulation.",
+      "audio": "VO02 continues.",
+      "reference_dependencies": [
+        "daughter_identity",
+        "car_interior_reference"
+      ],
+      "quoted_video_credits": 80,
+      "planned_source_seconds": 5,
+      "planned_master_use_seconds": 5,
+      "planned_master_window_seconds": [
+        18,
+        23
+      ],
+      "verified_source_duration_seconds": null
+    },
+    {
+      "id": "C06",
+      "status": "planned_not_submitted",
+      "picture": "Exterior three-quarter view of the green 993 rolling slowly along a clear, simple section of mountain road.",
+      "camera": "A restrained tracking move with the full car readable in the vertical composition.",
+      "action_limit": "One continuous low-speed movement. Avoid a complex turn, rapid acceleration or changing traffic.",
+      "audio": "Finish VO02. Natural engine and tyre texture.",
+      "reference_dependencies": [
+        "hero_car_exterior_reference",
+        "mountain_road_reference",
+        "current_seating_reference"
+      ],
+      "quoted_video_credits": 80,
+      "planned_source_seconds": 5,
+      "planned_master_use_seconds": 5,
+      "planned_master_window_seconds": [
+        23,
+        28
+      ],
+      "verified_source_duration_seconds": null
+    },
+    {
+      "id": "C07",
+      "status": "planned_not_submitted",
+      "picture": "Low lateral tracking detail of the green bodywork and silver five-spoke wheels, with gentle dawn reflections.",
+      "camera": "Smooth tracking parallel to the car at an ordinary cruising speed.",
+      "action_limit": "Keep wheel geometry and body reflections stable. Do not imply racing.",
+      "audio": "D01: The long way? Spoken offscreen by the daughter.",
+      "reference_dependencies": [
+        "hero_car_exterior_reference",
+        "wheel_reference",
+        "mountain_road_reference"
+      ],
+      "quoted_video_credits": 80,
+      "planned_source_seconds": 5,
+      "planned_master_use_seconds": 5,
+      "planned_master_window_seconds": [
+        28,
+        33
+      ],
+      "verified_source_duration_seconds": null
+    },
+    {
+      "id": "C08",
+      "status": "planned_not_submitted",
+      "picture": "An intimate close-up of the father's eyes and upper face as his attention shifts gently toward his daughter. Keep his mouth outside the frame.",
+      "camera": "Stable close-up with soft dawn reflections and controlled depth of field.",
+      "action_limit": "One small eye movement. Avoid a full head turn, visible talking or exaggerated emotion.",
+      "audio": "D02: Always. The mouth remains outside the image.",
+      "reference_dependencies": [
+        "father_identity",
+        "car_interior_reference"
+      ],
+      "quoted_video_credits": 80,
+      "planned_source_seconds": 5,
+      "planned_master_use_seconds": 5,
+      "planned_master_window_seconds": [
+        33,
+        38
+      ],
+      "verified_source_duration_seconds": null
+    },
+    {
+      "id": "C09",
+      "status": "planned_not_submitted",
+      "picture": "Elevated wide shot of the car following one elegant, broad mountain-road bend.",
+      "camera": "Slow aerial drift with sufficient distance to avoid unstable close vehicle geometry.",
+      "action_limit": "A single clear route and continuous ordinary-speed movement, with no overtaking or aggressive cornering.",
+      "audio": "The score opens gently while retaining road atmosphere.",
+      "reference_dependencies": [
+        "hero_car_exterior_reference",
+        "mountain_road_reference"
+      ],
+      "quoted_video_credits": 80,
+      "planned_source_seconds": 5,
+      "planned_master_use_seconds": 5,
+      "planned_master_window_seconds": [
+        38,
+        43
+      ],
+      "verified_source_duration_seconds": null
+    },
+    {
+      "id": "C10",
+      "status": "planned_not_submitted",
+      "picture": "The car is already parked at the childhood photograph's lookout. Recreate the photograph's composition with the adult daughter driving and father in the passenger seat.",
+      "camera": "One gentle approach toward the stationary car.",
+      "action_limit": "No parking maneuver, door opening or character exit. Let the reversed seats carry the story.",
+      "audio": "Wind and restrained score; no dialogue.",
+      "reference_dependencies": [
+        "lookout_composition_reference",
+        "approved_childhood_photograph",
+        "hero_car_exterior_reference",
+        "current_seating_reference"
+      ],
+      "quoted_video_credits": 80,
+      "planned_source_seconds": 5,
+      "planned_master_use_seconds": 5,
+      "planned_master_window_seconds": [
+        43,
+        48
+      ],
+      "verified_source_duration_seconds": null
+    },
+    {
+      "id": "C11",
+      "status": "planned_not_submitted",
+      "picture": "The daughter's quiet profile against the mountain light as she takes in the familiar view.",
+      "camera": "Stable profile close-up with a minimal camera drift.",
+      "action_limit": "Natural breathing and one small eye movement only.",
+      "audio": "Mountain wind and a held musical phrase.",
+      "reference_dependencies": [
+        "daughter_identity",
+        "car_interior_reference",
+        "lookout_composition_reference"
+      ],
+      "quoted_video_credits": 80,
+      "planned_source_seconds": 5,
+      "planned_master_use_seconds": 3,
+      "planned_master_window_seconds": [
+        48,
+        51
+      ],
+      "verified_source_duration_seconds": null
+    },
+    {
+      "id": "C12",
+      "status": "planned_not_submitted",
+      "picture": "A closer two-shot through the windscreen, showing father and daughter sharing the view in comfortable silence.",
+      "camera": "A slow, final push with clean reflections and enough depth of field to preserve both faces.",
+      "action_limit": "Keep both seated and still apart from natural breathing. No synchronized gestures or dialogue.",
+      "audio": "Allow the moment to breathe before VO03 and the endcard.",
+      "reference_dependencies": [
+        "daughter_identity",
+        "father_identity",
+        "car_interior_reference",
+        "lookout_composition_reference"
+      ],
+      "quoted_video_credits": 80,
+      "planned_source_seconds": 5,
+      "planned_master_use_seconds": 4,
+      "planned_master_window_seconds": [
+        51,
+        55
+      ],
+      "verified_source_duration_seconds": null
+    }
+  ],
+  "generation_plan": {
+    "provider": "Higgsfield",
+    "quoted_video_model": "Cinema Studio 4.0",
+    "quoted_resolution": "1080p",
+    "source_orientation": "9:16 vertical",
+    "reference_strategy": "The root agent has visually inspected the completed master and opening stills and approved them as suitable for the first motion test. Reuse these car, cast and lighting references. Derive and review shot-specific references before expensive remaining animation. Independent text prompts do not reliably preserve identity.",
+    "recommended_first_motion_test": {
+      "source_clip": "C01",
+      "duration_seconds": 4,
+      "action": "The seated daughter gives one small glance toward her already seated father. Her hand remains resting on the steering wheel.",
+      "why": "This tests actor identity, interior geometry, reflections, emotional realism and camera motion while avoiding multiple interacting actions.",
+      "sound_strategy": "Imply belt fastening and ignition through separately added sound. Do not animate four separate opening actions in one generation.",
+      "status": "Completed and reusable as four seconds of picture after sampled-frame inspection and metadata verification.",
+      "quoted_credits": 64,
+      "job_id": "94d2c265-7006-4609-9c5c-267b27c1837c",
+      "coverage_note": "Actual source duration is 4.05 seconds. Use four seconds. C01 is now 0 to 4 seconds and C02 is 4 to 9 seconds; the rest of the master timeline is unchanged.",
+      "review_scope": "The root agent inspected four sampled frames at one frame per second. Stable identities, hand pose, wardrobe, seat positions, car and restrained glance were observed. This is not a claim of comprehensive full-motion or audio review."
+    },
+    "constraints": [
+      "Keep each source clip to one controlled action and one camera move.",
+      "Use the approved car and cast references consistently; inspect every source at full resolution.",
+      "Avoid moving key exchanges, opening-and-extracting prop sequences, exact complex repairs, visible lip-sync and dense generated text.",
+      "Reject deformed hands, changing faces, extra fingers or limbs, drifting steering-wheel geometry, changing wheels, sliding tyres and unstable car proportions.",
+      "Keep dialogue and narration as separate audio assets with manually controlled timing.",
+      "Make the past visible through a still photograph, rather than a second animated cast and timeline.",
+      "Maintain ordinary driving behavior and coherent contact between tyres and road.",
+      "Do not promise that an approved still guarantees an acceptable motion result or that a rejected output can be fixed without cost."
+    ],
+    "new_paid_generations_submitted_by_manifest_author": 0,
+    "further_paid_generation_status": "on_hold_by_explicit_user_request",
+    "further_paid_generation_rule": "No further paid footage, still, voice, music, sound or retry generation until the user explicitly lifts the hold and the intended spend is authorized."
+  },
+  "budget": {
+    "unit": "Higgsfield credits",
+    "rates": [
+      {
+        "model": "Cinema Studio 4.0",
+        "resolution": "1080p",
+        "seconds": 5,
+        "quoted_credits": 80
+      },
+      {
+        "model": "Cinema Studio 4.0",
+        "resolution": "1080p",
+        "seconds": 4,
+        "quoted_credits": 64
+      }
+    ],
+    "footage_calculation": "The current footage plan is one completed four-second test at 64 credits plus eleven planned five-second sources at 80 credits each. This totals 944 credits for footage, of which 64 credits have been spent and 880 credits remain before additional stills, narration, sound or retries.",
+    "planned_footage_credits": 944,
+    "last_checked_balance_credits": 12.77,
+    "balance_check_context": "The root agent rechecked and verified 12.77 credits after the two current stills and the completed 64-credit opening test.",
+    "balance_note": "The current verified balance is 12.77 credits. Eleven remaining source clips are estimated at 880 credits at the current 80-credit rate, leaving a footage-only funding gap of 867.23 credits. The earlier 960-credit twelve-by-five-second estimate is superseded. Additional stills, narration, sound and retries are excluded.",
+    "excluded_costs": [
+      "Additional reference stills and the childhood photograph",
+      "Narration and dialogue generation through Higgsfield",
+      "Separate Higgsfield music or sound generation, subject to capability confirmation",
+      "Rerolls, replacements or alternative edits",
+      "Any provider fees for assembly, delivery or other processing"
+    ],
+    "future_high_cost_footage_authorization": "on_hold_by_user_no_additional_budget_approved",
+    "budget_gate": "The user explicitly said Hold further paid generation. Do not submit any further paid job unless the user lifts this hold. No additional budget ceiling has been approved; the proposed 1200-credit and 900-credit choices were not approved. After any lift, confirm funding, current rates and the authorized remaining spend before submission. Preserve all completed work.",
+    "four_second_rate_note": "The completed opening test used the quoted four-second rate of 64 credits. The eleven remaining sources are planned at five seconds and 80 credits each.",
+    "completed_reference_still_credits": 5.5,
+    "authorized_opening_test_quoted_credits": 64,
+    "initial_production_authorization": "The user appointed Codex director and authorized initial production. The root agent submitted two current reference stills at 2.75 credits each and one four-second 1080p opening test at 64 credits. No other paid footage has been submitted.",
+    "reference_still_costs": [
+      {
+        "role": "Current master still",
+        "credits": 2.75,
+        "job_id": "6b88147c-67f1-42b1-93a6-579b25b68f00"
+      },
+      {
+        "role": "Current opening still",
+        "credits": 2.75,
+        "job_id": "2741f716-a497-445e-ac6e-4acad8d6d439"
+      }
+    ],
+    "this_phase_reference_still_total_credits": 5.5,
+    "earlier_retired_storyboard_credits": 2.75,
+    "cost_scope_note": "The two current reference stills total exactly 5.5 credits for this phase. The earlier retired workshop storyboard cost 2.75 credits separately. The one submitted opening motion test is separately quoted at 64 credits. Do not count the endcard as another paid video generation or conflate these still charges with the 960-credit baseline footage estimate.",
+    "superseded_12_five_second_source_estimate_credits": 960,
+    "completed_opening_test_credits": 64,
+    "remaining_source_clip_count": 11,
+    "remaining_planned_footage_credits": 880,
+    "current_verified_balance_credits": 12.77,
+    "remaining_footage_shortfall_credits": 867.23,
+    "approved_additional_credit_ceiling": null
+  },
+  "jobs": {
+    "master_reference": {
+      "job_id": "6b88147c-67f1-42b1-93a6-579b25b68f00",
+      "status_at_manifest_creation": "completed",
+      "quoted_credits": 2.75,
+      "role": "Completed master visual reference for the approved outdoor father-and-daughter direction.",
+      "local_asset_path": null,
+      "review_status": "Visually inspected by the root agent and judged suitable for the opening test.",
+      "remote_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fr0jN7U3hXTXMaG9TB8zx9bC1y/hf_20261023_101506_6b88147c-67f1-42b1-93a6-579b25b68f00.png"
+    },
+    "retired_workshop_storyboard": {
+      "job_id": "547f09bd-d492-4db2-8496-031ff450f4ed",
+      "status": "retired",
+      "role": "Obsolete workshop-based storyboard. It is not the approved narrative and must not become a source or continuity reference for this film.",
+      "quoted_credits": 2.75
+    },
+    "footage": [
+      {
+        "model": "Cinema Studio 4.0",
+        "local_asset_path": null,
+        "remote_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fr0jN7U3hXTXMaG9TB8zx9bC1y/hf_20261023_101921_94d2c265-7006-4609-9c5c-267b27c1837c.mp4",
+        "review_status": "Root inspected four sampled frames at one frame per second. Stable identities, hand pose, wardrobe, seat positions, car and restrained glance were observed. The test is reusable as four seconds of picture; comprehensive full-motion and audio judgment is not claimed.",
+        "duration_seconds": 4,
+        "quoted_credits": 64,
+        "role": "Authorized opening quality test",
+        "resolution": "1080p",
+        "source_clip": "C01",
+        "submitted_by": "root agent",
+        "job_id": "94d2c265-7006-4609-9c5c-267b27c1837c",
+        "status": "completed",
+        "planned_source_use_seconds": 4,
+        "verified_metadata": {
+          "duration_seconds": 4.05,
+          "height_pixels": 1920,
+          "audio_codec": "AAC",
+          "width_pixels": 1080,
+          "audio_channels": 2,
+          "verification_method": "ffprobe",
+          "frame_rate": 24,
+          "audio_sample_rate_hz": 32000,
+          "audio_layout": "stereo",
+          "video_codec": "HEVC"
+        }
+      }
+    ],
+    "audio": [],
+    "assembled_master": null,
+    "opening_reference": {
+      "status": "completed",
+      "job_id": "2741f716-a497-445e-ac6e-4acad8d6d439",
+      "review_status": "Visually inspected by the root agent and judged suitable for the opening test.",
+      "local_asset_path": null,
+      "remote_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Fr0jN7U3hXTXMaG9TB8zx9bC1y/hf_20261023_101701_2741f716-a497-445e-ac6e-4acad8d6d439.png",
+      "quoted_credits": 2.75
+    },
+    "endcard": {
+      "review_status": "Visually reviewed by the root agent inside the ordinary Higgsfield sandbox; upload confirmed.",
+      "width_pixels": 1080,
+      "native_logo_source": "https://digitecme.com/images/digitec-logo-english.png",
+      "role": "Exact static card for the planned five-second closing hold.",
+      "status": "created_visually_reviewed_uploaded",
+      "height_pixels": 1920,
+      "media_id": "dff68038-b0b2-4815-bca5-a200600998b3",
+      "remote_url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3Fr0jN7U3hXTXMaG9TB8zx9bC1y/dff68038-b0b2-4815-bca5-a200600998b3.png"
+    },
+    "opening_review_cut": {
+      "local_asset_path": null,
+      "review_status": "Root inspected the exported picture and endcard. This does not establish completion of the full commercial or comprehensive full-motion and audio judgment.",
+      "media_id": "1bfcec9b-6257-4f69-ba93-d24dd4a3d7d4",
+      "verified_metadata": {
+        "duration_seconds": 8.0,
+        "height_pixels": 1920,
+        "audio_codec": "AAC",
+        "width_pixels": 1080,
+        "audio_channels": 2,
+        "file_size_bytes": 2169276,
+        "verification_method": "ffprobe",
+        "frame_rate": 24,
+        "audio_sample_rate_hz": 48000,
+        "audio_layout": "stereo",
+        "video_codec": "H264"
+      },
+      "role": "An eight-second opening review cut, not the finished commercial",
+      "status": "created_uploaded_owned_media_confirmed",
+      "owned_media_confirmed": true,
+      "remote_url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3Fr0jN7U3hXTXMaG9TB8zx9bC1y/1bfcec9b-6257-4f69-ba93-d24dd4a3d7d4.mp4",
+      "audio": "Ambient audio only; no narrative voiceover or score",
+      "timeline": [
+        {
+          "end_seconds": 4,
+          "content": "Opening motion test",
+          "start_seconds": 0
+        },
+        {
+          "end_seconds": 8,
+          "content": "Endcard held for four seconds in this review cut only",
+          "start_seconds": 4
+        }
+      ]
+    }
+  },
+  "assembly": {
+    "status": "opening_review_cut_ready_full_commercial_not_assembled",
+    "proposed_route": "Ordinary Higgsfield sandbox_exec supports custom-media trim, concat and overlay. The root agent successfully used this route for visual QA, endcard assembly and an eight-second opening review cut. Use the same supported route for the full film after remaining approved footage and audio exist.",
+    "editor_note": "This is the supported ordinary custom-media route, not a named Katana Editor session. The eight-second review cut contains four seconds of opening motion and four seconds of endcard with ambient audio only. It is not the finished 60-second commercial.",
+    "steps_after_assets_exist": [
+      "Review remaining footage and verify each source orientation, frame rate, resolution and duration.",
+      "Retain the accepted four-second opening from 0 to 4 seconds; use C02 from 4 to 9 seconds and preserve the later planned shot windows.",
+      "Trim approved sources to the 55-second picture timeline.",
+      "Add the approved endcard as a five-second closing hold for the master, distinct from its four-second hold in the review cut.",
+      "Composite exact service-wallet branding and optional captions through the supported overlay route.",
+      "Align narration and dialogue created through Higgsfield; confirm the separate score capability before adding or promising generated music.",
+      "Watch and listen to the complete exported 60-second vertical master before declaring delivery complete."
+    ],
+    "confirmed_capabilities": [
+      "Custom-media trim",
+      "Custom-media concat",
+      "Custom-media overlay",
+      "Visual QA inside the ordinary sandbox",
+      "Endcard assembly and confirmed upload",
+      "Eight-second opening review cut assembled, uploaded and confirmed as owned video"
+    ]
+  },
+  "review_gates": [
+    {
+      "gate": "Master visual reference",
+      "status": "root_visual_review_suitable_for_test",
+      "criteria": "The correct green 1997 993, silver five-spoke wheels, tan left-hand-drive interior, locked cast and wardrobe, believable skin, coherent dawn light and a useful vertical composition."
+    },
+    {
+      "gate": "Budget and first motion test",
+      "status": "opening_test_ready_further_paid_generation_on_hold",
+      "criteria": "The four-second opening is reusable after metadata verification and four sampled-frame inspections. Keep that review scope explicit. The current verified balance is 12.77 credits. The user has placed all further paid generation on hold and approved no additional spending ceiling; do not generate until the user lifts that hold and the intended spend is funded and authorized."
+    },
+    {
+      "gate": "Source continuity",
+      "status": "not_started",
+      "criteria": "Every clip preserves the same cast, car, wardrobe, location and lighting. Motion is controlled, tyres stay on the road, vehicle components remain stable and no unintended text or logos appear."
+    },
+    {
+      "gate": "Story and brand integration",
+      "status": "not_started",
+      "criteria": "The photograph reads as the earlier father-and-daughter journey, the present seats are reversed, the wallet reveal is legible and incidental, and DIGI-TEC's role is trusted ongoing care. The film does not imply distress, repeat failure or a factual customer testimonial."
+    },
+    {
+      "gate": "Audio and final delivery",
+      "status": "not_started",
+      "criteria": "The master is 60 seconds in 9:16 with a readable five-second endcard. Exact approved wording is used. Dialogue feels natural without visible lip-sync errors, branding and captions remain within interface-safe areas, and the full exported film has been watched and heard."
+    }
+  ],
+  "next_actions": [
+    "Preserve the completed references, endcard, reusable opening test and eight-second review cut. No further paid generation is authorized while the user-requested hold remains in place.",
+    "Display or review existing assets without presenting the eight-second sample as a finished commercial.",
+    "Wait for the user to explicitly lift the paid-generation hold; do not treat the unapproved 1200-credit or 900-credit choices as spending authorization.",
+    "If the user later lifts the hold, confirm the intended spend, current rates and funding before any paid submission. The remaining eleven source clips are estimated at 880 credits, with 12.77 credits currently verified.",
+    "Keep the retimed production plan and pending Higgsfield narration and music requirements available for a future authorized continuation."
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "at": "2026-10-26T10:21:57.757Z",
+  "source": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-2b\\tests\\verify-http-phase2b.mjs",
+  "sourceSha256": "13c1d4b766bdc3dec9fff1b777fc1d090c56def0b47e4be4c2880b6a4250e789",
+  "copySha256": "6f484d6faf09e773c3bca11d41053591c91c835433ef37c0b0abb5f19a828bc4",
+  "onlyChange": {
+    "before": "const out = resolve(fileURLToPath(new URL('../http/', import.meta.url)), runId);",
+    "after": "const out = resolve(fileURLToPath(new URL('./redirects-http/', import.meta.url)), runId);"
+  },
+  "caseGenerationAndAssertionsUnchanged": true,
+  "readOnly": true
+}

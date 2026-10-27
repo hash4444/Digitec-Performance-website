@@ -1,0 +1,27 @@
+import fs from 'node:fs/promises';
+import path from 'node:path';
+import crypto from 'node:crypto';
+const here=import.meta.dirname, host=path.resolve(here,'../host');
+const read = file => fs.readFile(path.join(host,file),'utf8');
+const history=await read('history-loaded.ax.txt');
+const edits=JSON.parse(await read('edit-history.json'));
+const publish=await read('publish-panel.ax.txt');
+const sync=await read('github-sync-loaded.ax.txt');
+const uiDiff=await read('published-version-code-loaded.ax.txt');
+const gitCommit=JSON.parse(await fs.readFile(path.join(here,'api/published-source-commit.json'),'utf8'));
+const title='Record activated Mercedes oil alias redirect';
+const matches=edits.data.filter(x=>x.commit_message===title);
+const badgeRows=history.split('\n').filter(x=>x.includes(`button ${title} Published Oct 21, 10:58 AM`));
+const diffFiles=gitCommit.files.map(x=>x.filename);
+const checks={uniqueAuthenticatedEditTitle:matches.length===1,uniquePublishedUiRow:badgeRows.length===1,editShaMatchesGitHubCommit:matches[0]?.commit_sha===gitCommit.sha,githubCommitMessageMatchesUi:gitCommit.message===title,allThreeGitHubCreatedFilesAppearInUi:diffFiles.length===3&&diffFiles.every(x=>uiDiff.includes('Created '+path.basename(x))),publishedPanel:publish.includes('heading Published'),upToDatePanel:publish.includes('Your website is up to date'),disabledPublish:publish.includes('(disabled) Publish changes'),existingDomainVisible:publish.includes('digitecme.com'),connectedRepository:sync.includes('hash4444/Digitec-Performance-website')&&sync.includes('Connected'),activeBranchMain:sync.includes('Value: main'),inSync:sync.includes('Lovable and GitHub are on the same commit.')};
+const files=['history-loaded.ax.txt','edit-history.json','publish-panel.ax.txt','github-sync-loaded.ax.txt','published-version-code-loaded.ax.txt','current-published-revert-dialog.ax.txt','published-actions.ax.txt','historical-restore-confirmation.ax.txt','revert-affordance-dom.json','ui-observations.json'];
+const evidence=[];for(const file of files){const bytes=await fs.readFile(path.join(host,file));evidence.push({path:'../host/'+file,sha256:crypto.createHash('sha256').update(bytes).digest('hex'),bytes:bytes.length});}
+const result={reconciledAtUtc:new Date().toISOString(),readOnly:true,uiCaptureActor:'Parent /root via authenticated browser',reviewer:'host_repository, independently reading and crossmatching saved evidence',decision:'NO-GO',publishedSourceIdentified:Object.values(checks).every(Boolean),publishedSourceSha:gitCommit.sha,lovableEditId:matches[0]?.id,sourceVersionTitle:title,sourceVersionCreatedAtUtc:matches[0]?.created_at,uiVersionTimeLabel:'Oct 21, 10:58 AM',actualPublicationActivationTimestamp:null,providerDeploymentId:null,checks,evidence,restoreObservation:{rawCapture:'../host/current-published-revert-dialog.ax.txt',capturedResult:'No accessibility tree change after parent inspection of current Published version Revert.',parentRelayedDomObservation:'The current version Revert control had cursor-not-allowed styling.',restoreExecuted:false,rollbackReliabilityVerified:false,limits:['Current-version unavailable control does not prove future historical restore ability.','No complete compiled rollback snapshot or host recipe was obtained.','Generic Revert can affect associated edge functions; no such action was executed.']},remainingBlockers:['Actual host production install/build recipe and reviewed Option B host output are not established.','Reliable restoration of the current coherent compiled production version is not verified.'],conclusion:'Known published source and clean patch applicability resolve source identity, not host rebuild compatibility or compiled rollback.'};
+const dom=JSON.parse(await read('revert-affordance-dom.json'));
+const ui=JSON.parse(await read('ui-observations.json'));
+delete result.restoreObservation.parentRelayedDomObservation;
+result.restoreObservation.domEvidence={path:'../host/revert-affordance-dom.json',currentRowCursorNotAllowed:dom.rows[0].className.includes('cursor-not-allowed'),currentRowHtmlDisabled:dom.rows[0].disabled,currentRowAriaDisabled:dom.rows[0].ariaDisabled};
+result.restoreObservation.historicalConfirmation={path:'../host/historical-restore-confirmation.ax.txt',screenshot:'../host/historical-restore-confirmation.png',openedOnly:ui.restore.olderVersionConfirmationOpenedOnly,confirmationAccepted:false,dismissed:true,actualRestorePerformed:ui.restore.actualRestorePerformed,scopeLimit:'Older Oct20 confirmation describes project restore; no exact compiled artifact guarantee or static-only/backend exclusion is shown.'};
+await fs.writeFile(path.join(here,'published-source-mapping.json'),JSON.stringify(result,null,2)+'\n');
+console.log(JSON.stringify({publishedSourceIdentified:result.publishedSourceIdentified,sourceSha:result.publishedSourceSha,checks,decision:result.decision},null,2));
+if(!result.publishedSourceIdentified) process.exitCode=1;

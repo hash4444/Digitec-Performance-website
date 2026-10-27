@@ -1,0 +1,59 @@
+{
+  "at": "2026-10-26T10:56:56.949Z",
+  "readOnly": true,
+  "records": [
+    {
+      "source": "reports/mercedes-phase-4b/tests/verify-ssr-scope.mjs",
+      "sourceSha256": "9d5b5b648e5a6ae723d346fc2e457e16ed96d46ef3ee622c813703982726a26d",
+      "target": "artifact/verify-ssr-scope.mjs",
+      "copySha256": "5fdf3ce7a9be3a68c1d7528666331bc5d2f3d5436ad1e1c34a88d87e3f580928",
+      "replacements": [
+        [
+          "const phaseRoot = path.dirname(testsRoot);",
+          "const phaseRoot = \"C:\\\\Users\\\\ADMIN\\\\Documents\\\\ChatGPT\\\\DIGITEC\\\\reports\\\\mercedes-phase-4b\";"
+        ]
+      ]
+    },
+    {
+      "source": "reports/mercedes-phase-4b/tests/verify-all-routes.mjs",
+      "sourceSha256": "6c3417339900dc712b9cf600280c36a5036dcbe2fb2db3f9ae72388bb69a3f10",
+      "target": "artifact/verify-all-routes.mjs",
+      "copySha256": "68fec949a72d29ed26f0ca1911e768de4d9c9097ba15868f61ba07be170a9394",
+      "replacements": [
+        [
+          "const phase=path.dirname(tests);",
+          "const phase=\"C:\\\\Users\\\\ADMIN\\\\Documents\\\\ChatGPT\\\\DIGITEC\\\\reports\\\\mercedes-phase-4b\";"
+        ]
+      ]
+    },
+    {
+      "source": "reports/mercedes-phase-4b/production/verify-redirect-protection.mjs",
+      "sourceSha256": "6f484d6faf09e773c3bca11d41053591c91c835433ef37c0b0abb5f19a828bc4",
+      "target": "production/verify-redirect-protection.mjs",
+      "copySha256": "6f484d6faf09e773c3bca11d41053591c91c835433ef37c0b0abb5f19a828bc4",
+      "replacements": []
+    },
+    {
+      "source": "reports/mercedes-phase-4b/production/capture-current-production.mjs",
+      "sourceSha256": "2afae4c77cdf06d91bce40f88fb9ee915176f3c704f4e1815fa45bafbacc31c1",
+      "target": "production/capture-current-production.mjs",
+      "copySha256": "e9c37b5cc7cf04459fc91ac2166d6ac76fcdb0601281d0fc6490edd73ce6007c",
+      "replacements": [
+        [
+          "DIGI-TEC-Phase4B-ReadOnly-Release-Baseline/1.0",
+          "DIGI-TEC-Phase4C-ReadOnly-Release-Baseline/1.0"
+        ],
+        [
+          "['home','/'],['services','/services']",
+          "['home','/'],['services','/services'],['bmw-en','/brands/bmw-service-dubai'],['bmw-ar','/ar/brands/bmw-service-dubai']"
+        ],
+        [
+          "__phase4b_readonly_missing_20261026__",
+          "__phase4c_readonly_missing_20261026__",
+          3
+        ]
+      ]
+    }
+  ],
+  "note": "Assertions and matrix unchanged. Selected source roots still read Phase 4B; outputs stay below Phase 4C. Capture adds two BMW controls and an identifying User-Agent; missing URL token changed."
+}

@@ -1,0 +1,1792 @@
+[
+  {
+    "id": "amg-gt-gts",
+    "name": "AMG GT / GTS",
+    "brand": "Mercedes",
+    "engine": "M178",
+    "image": "/images/cars/amg-gt.png",
+    "availableStages": [
+      "stock",
+      "stage1",
+      "stage2",
+      "stage3",
+      "stage4",
+      "stage5",
+      "vip"
+    ],
+    "stages": {
+      "stock": {
+        "spec": {
+          "hp": 522,
+          "torque": 670,
+          "zeroToHundred": 3.7
+        },
+        "mods": [
+          "Factory Specifications"
+        ],
+        "price": "—",
+        "time": "—"
+      },
+      "stage1": {
+        "spec": {
+          "hp": 605,
+          "torque": 750,
+          "zeroToHundred": 3.4
+        },
+        "mods": [
+          "Airfilter",
+          "Optimization of engine software",
+          "Deactivation of the speed limiter V-Max"
+        ],
+        "price": "€2,721",
+        "time": "1–2 days"
+      },
+      "stage2": {
+        "spec": {
+          "hp": 620,
+          "torque": 780,
+          "zeroToHundred": 3.3
+        },
+        "mods": [
+          "Airfilter",
+          "Optimization of engine software",
+          "Deactivation of the speed limiter V-Max",
+          "Downpipe with sport catalytic converter",
+          "Heat coating for downpipe",
+          "Transmission software optimization (TCU)"
+        ],
+        "price": "€10,721 total",
+        "time": "3–5 days"
+      },
+      "stage3": {
+        "spec": {
+          "hp": 760,
+          "torque": 900,
+          "zeroToHundred": 3
+        },
+        "mods": [
+          "Airfilter",
+          "Optimization of engine software",
+          "Deactivation of the speed limiter V-Max",
+          "Downpipe with sport catalytic converter",
+          "Pulse Flow exhaust manifold",
+          "Twin Scroll GAD Turbocharger (GAD 177 55/63)",
+          "Heat coating for downpipe",
+          "High pressure fuel system with increased flow",
+          "TCU-Software",
+          "Stage 1 GAD SLS/GTS/GTR double-clutch reinforcement (~1200 Nm)"
+        ],
+        "price": "€32,221 total",
+        "time": "7–14 days"
+      },
+      "stage4": {
+        "spec": {
+          "hp": 840,
+          "torque": 1000,
+          "zeroToHundred": 2.8
+        },
+        "mods": [
+          "Airfilter",
+          "Optimization of engine software",
+          "Deactivation of the speed limiter V-Max",
+          "Downpipe with sport catalytic converter",
+          "Heat coating for downpipe",
+          "GAD Upgrade Twin Scroll turbocharger (GAD 177 55/68)",
+          "Pulse Flow exhaust manifold",
+          "High pressure fuel system with increased flow",
+          "GAD forged pistons with lower compression",
+          "TCU-Software",
+          "Stage 1 GAD SLS/GTS/GTR double-clutch reinforcement (~1200 Nm)"
+        ],
+        "price": "€45,121 total",
+        "time": "14–21 days"
+      },
+      "stage5": {
+        "spec": {
+          "hp": 920,
+          "torque": 1100,
+          "zeroToHundred": 2.6
+        },
+        "mods": [
+          "Airfilter",
+          "Optimization of engine software",
+          "Deactivation of the speed limiter V-Max",
+          "Downpipe with sport catalytic converter",
+          "Heat coating for downpipe",
+          "GAD ball-bearing Twin Scroll turbocharger (GAD 177 60/76R)",
+          "Pulse Flow exhaust manifold",
+          "High pressure fuel system with increased flow",
+          "Engine gasket set",
+          "GAD forged pistons with lower compression",
+          "GAD optimized cylinder heads with larger channels",
+          "Cylinder head bolts",
+          "Oil & Oilfilter",
+          "TCU-Software",
+          "Stage 1 GAD SLS/GTS/GTR double-clutch reinforcement (~1200 Nm)"
+        ],
+        "price": "€51,991 total",
+        "time": "3–6 weeks"
+      },
+      "vip": {
+        "spec": {
+          "hp": 1300,
+          "torque": 1400,
+          "zeroToHundred": 2.2
+        },
+        "mods": [
+          "Full Custom Build",
+          "Bespoke ECU Calibration",
+          "Dyno Testing & Validation",
+          "Exclusive tuning on individual request",
+          "Send VIN for availability"
+        ],
+        "price": "On Request",
+        "time": "6–10 weeks"
+      }
+    },
+    "generation": "C190/R190",
+    "sourceStartLine": 68,
+    "stageSourceLines": {
+      "stock": 75,
+      "stage1": 76,
+      "stage2": 79,
+      "stage3": 84,
+      "stage4": 91,
+      "stage5": 98,
+      "vip": 107
+    }
+  },
+  {
+    "id": "amg-gtc-gtr",
+    "name": "AMG GTC / GTR",
+    "brand": "Mercedes",
+    "engine": "M178",
+    "image": "/images/cars/amg-gtr.png",
+    "availableStages": [
+      "stock",
+      "stage1",
+      "stage2",
+      "stage3",
+      "stage4",
+      "stage5",
+      "vip"
+    ],
+    "stages": {
+      "stock": {
+        "spec": {
+          "hp": 557,
+          "torque": 700,
+          "zeroToHundred": 3.6
+        },
+        "mods": [
+          "Factory Specifications"
+        ],
+        "price": "—",
+        "time": "—"
+      },
+      "stage1": {
+        "spec": {
+          "hp": 640,
+          "torque": 800,
+          "zeroToHundred": 3.3
+        },
+        "mods": [
+          "Airfilter",
+          "Optimization of engine software",
+          "Deactivation of the speed limiter V-Max"
+        ],
+        "price": "€2,721",
+        "time": "1–2 days"
+      },
+      "stage2": {
+        "spec": {
+          "hp": 660,
+          "torque": 830,
+          "zeroToHundred": 3.2
+        },
+        "mods": [
+          "Airfilter",
+          "Optimization of engine software",
+          "Deactivation of the speed limiter V-Max",
+          "Downpipe with sport catalytic converter",
+          "Heat coating for downpipe",
+          "Transmission software optimization (TCU)"
+        ],
+        "price": "€10,721 total",
+        "time": "3–5 days"
+      },
+      "stage3": {
+        "spec": {
+          "hp": 780,
+          "torque": 950,
+          "zeroToHundred": 2.9
+        },
+        "mods": [
+          "Airfilter",
+          "Optimization of engine software",
+          "Deactivation of the speed limiter V-Max",
+          "Downpipe with sport catalytic converter",
+          "Pulse Flow exhaust manifold",
+          "Twin Scroll GAD Turbocharger (GAD 177 55/63)",
+          "Heat coating for downpipe",
+          "High pressure fuel system with increased flow",
+          "TCU-Software",
+          "Stage 1 GAD SLS/GTS/GTR double-clutch reinforcement (~1200 Nm)"
+        ],
+        "price": "€32,221 total",
+        "time": "7–14 days"
+      },
+      "stage4": {
+        "spec": {
+          "hp": 840,
+          "torque": 1000,
+          "zeroToHundred": 2.7
+        },
+        "mods": [
+          "Airfilter",
+          "Optimization of engine software",
+          "Deactivation of the speed limiter V-Max",
+          "Downpipe with sport catalytic converter",
+          "Heat coating for downpipe",
+          "GAD Upgrade Twin Scroll turbocharger (GAD 177 55/68)",
+          "Pulse Flow exhaust manifold",
+          "High pressure fuel system with increased flow",
+          "GAD forged pistons with lower compression",
+          "TCU-Software",
+          "Stage 1 GAD SLS/GTS/GTR double-clutch reinforcement (~1200 Nm)"
+        ],
+        "price": "€45,121 total",
+        "time": "14–21 days"
+      },
+      "stage5": {
+        "spec": {
+          "hp": 920,
+          "torque": 1100,
+          "zeroToHundred": 2.5
+        },
+        "mods": [
+          "Airfilter",
+          "Optimization of engine software",
+          "Deactivation of the speed limiter V-Max",
+          "Downpipe with sport catalytic converter",
+          "Heat coating for downpipe",
+          "GAD ball-bearing Twin Scroll turbocharger (GAD 177 60/76R)",
+          "Pulse Flow exhaust manifold",
+          "High pressure fuel system with increased flow",
+          "Engine gasket set",
+          "GAD forged pistons with lower compression",
+          "GAD optimized cylinder heads with larger channels",
+          "Cylinder head bolts",
+          "Oil & Oilfilter",
+          "TCU-Software",
+          "Stage 1 GAD SLS/GTS/GTR double-clutch reinforcement (~1200 Nm)"
+        ],
+        "price": "€51,991 total",
+        "time": "3–6 weeks"
+      },
+      "vip": {
+        "spec": {
+          "hp": 1300,
+          "torque": 1400,
+          "zeroToHundred": 2.1
+        },
+        "mods": [
+          "Full Custom Build",
+          "Bespoke ECU Calibration",
+          "Dyno Testing & Validation",
+          "Exclusive tuning on individual request",
+          "Send VIN for availability"
+        ],
+        "price": "On Request",
+        "time": "6–10 weeks"
+      }
+    },
+    "generation": "C190/R190",
+    "sourceStartLine": 116,
+    "stageSourceLines": {
+      "stock": 123,
+      "stage1": 124,
+      "stage2": 127,
+      "stage3": 132,
+      "stage4": 139,
+      "stage5": 146,
+      "vip": 155
+    }
+  },
+  {
+    "id": "e63",
+    "name": "E63 AMG",
+    "brand": "Mercedes",
+    "engine": "M177",
+    "image": "/images/cars/e63.png",
+    "availableStages": [
+      "stock",
+      "stage1",
+      "stage2",
+      "stage3",
+      "stage4",
+      "vip"
+    ],
+    "stages": {
+      "stock": {
+        "spec": {
+          "hp": 612,
+          "torque": 850,
+          "zeroToHundred": 3.4
+        },
+        "mods": [
+          "Factory Specifications"
+        ],
+        "price": "—",
+        "time": "—"
+      },
+      "stage1": {
+        "spec": {
+          "hp": 780,
+          "torque": 1000,
+          "zeroToHundred": 3
+        },
+        "mods": [
+          "Airfilter",
+          "Optimization of engine software",
+          "Deactivation of the speed limiter V-Max",
+          "Software for CPC (central powertrain controller)"
+        ],
+        "price": "€5,663",
+        "time": "1–2 days"
+      },
+      "stage2": {
+        "spec": {
+          "hp": 820,
+          "torque": 1050,
+          "zeroToHundred": 2.9
+        },
+        "mods": [
+          "Airfilter",
+          "Optimization of engine software",
+          "Deactivation of the speed limiter V-Max",
+          "Downpipe with sport catalytic converter",
+          "Special ceramic heat coating",
+          "Software for CPC (central powertrain controller)"
+        ],
+        "price": "€12,563 total",
+        "time": "3–5 days"
+      },
+      "stage3": {
+        "spec": {
+          "hp": 860,
+          "torque": 1100,
+          "zeroToHundred": 2.7
+        },
+        "mods": [
+          "Airfilter",
+          "Optimization of engine software",
+          "Deactivation of the speed limiter V-Max",
+          "Downpipe with sport catalytic converter",
+          "Special ceramic heat coating",
+          "Software for CPC",
+          "Upgrade Twin Scroll Turbocharger GAD 177 55/68",
+          "TCU-Software",
+          "Stage 1 Automatic transmission NAG 3 reinforcement (~1150 Nm)"
+        ],
+        "price": "€27,076 total",
+        "time": "7–14 days"
+      },
+      "stage4": {
+        "spec": {
+          "hp": 940,
+          "torque": 1200,
+          "zeroToHundred": 2.5
+        },
+        "mods": [
+          "Airfilter",
+          "Optimization of engine software",
+          "Deactivation of the speed limiter V-Max",
+          "Downpipe with sport catalytic converter",
+          "Special ceramic heat coating",
+          "Software for CPC",
+          "Upgrade Twin Scroll Turbocharger GAD 177 60/76R",
+          "High pressure fuel system with increased flow",
+          "TCU-Software",
+          "Stage 1 Automatic transmission NAG 3 reinforcement (~1150 Nm)"
+        ],
+        "price": "€36,576 total",
+        "time": "14–21 days"
+      },
+      "vip": {
+        "spec": {
+          "hp": 1300,
+          "torque": 1500,
+          "zeroToHundred": 2.2
+        },
+        "mods": [
+          "Full Custom Build – up to 1300 hp",
+          "Bespoke ECU Calibration",
+          "Dyno Testing & Validation",
+          "Exclusive tuning on individual request"
+        ],
+        "price": "On Request",
+        "time": "6–10 weeks"
+      }
+    },
+    "generation": "W213",
+    "sourceStartLine": 164,
+    "stageSourceLines": {
+      "stock": 171,
+      "stage1": 172,
+      "stage2": 176,
+      "stage3": 181,
+      "stage4": 187,
+      "vip": 194
+    }
+  },
+  {
+    "id": "g63",
+    "name": "G63 AMG",
+    "brand": "Mercedes",
+    "engine": "M177",
+    "image": "/images/cars/g63.png",
+    "availableStages": [
+      "stock",
+      "stage1",
+      "stage2",
+      "stage3",
+      "stage4",
+      "vip"
+    ],
+    "stages": {
+      "stock": {
+        "spec": {
+          "hp": 585,
+          "torque": 850,
+          "zeroToHundred": 4.5
+        },
+        "mods": [
+          "Factory Specifications"
+        ],
+        "price": "—",
+        "time": "—"
+      },
+      "stage1": {
+        "spec": {
+          "hp": 780,
+          "torque": 1000,
+          "zeroToHundred": 3.8
+        },
+        "mods": [
+          "Airfilter",
+          "Optimization of engine software",
+          "Deactivation of the speed limiter V-Max",
+          "Software for CPC (central powertrain controller)"
+        ],
+        "price": "€5,663",
+        "time": "1–2 days"
+      },
+      "stage2": {
+        "spec": {
+          "hp": 820,
+          "torque": 1050,
+          "zeroToHundred": 3.6
+        },
+        "mods": [
+          "Airfilter",
+          "Optimization of engine software",
+          "Deactivation of the speed limiter V-Max",
+          "Downpipe with sport catalytic converter",
+          "Special ceramic heat coating",
+          "Software for CPC",
+          "Optimization of the exhaust system"
+        ],
+        "price": "€14,063 total",
+        "time": "3–5 days"
+      },
+      "stage3": {
+        "spec": {
+          "hp": 860,
+          "torque": 1100,
+          "zeroToHundred": 3.4
+        },
+        "mods": [
+          "Airfilter",
+          "Optimization of engine software",
+          "Deactivation of the speed limiter V-Max",
+          "Downpipe with sport catalytic converter",
+          "Special ceramic heat coating",
+          "Software for CPC",
+          "Upgrade Twin Scroll Turbocharger GAD 177 55/68",
+          "Optimization of the exhaust system",
+          "TCU-Software",
+          "Stage 1 Automatic transmission NAG 3 reinforcement (~1150 Nm)"
+        ],
+        "price": "€28,576 total",
+        "time": "7–14 days"
+      },
+      "stage4": {
+        "spec": {
+          "hp": 940,
+          "torque": 1200,
+          "zeroToHundred": 3.2
+        },
+        "mods": [
+          "Airfilter",
+          "Optimization of engine software",
+          "Deactivation of the speed limiter V-Max",
+          "Downpipe with sport catalytic converter",
+          "Special ceramic heat coating",
+          "Software for CPC",
+          "Optimization of the exhaust system",
+          "GAD Twin Scroll Turbocharger GAD 177 60/76R",
+          "High pressure fuel system with increased flow",
+          "TCU-Software",
+          "Stage 1 Automatic transmission NAG 3 reinforcement (~1150 Nm)"
+        ],
+        "price": "€38,076 total",
+        "time": "14–21 days"
+      },
+      "vip": {
+        "spec": {
+          "hp": 1100,
+          "torque": 1350,
+          "zeroToHundred": 2.9
+        },
+        "mods": [
+          "Full Custom Build – 1100+ hp",
+          "Bespoke ECU Calibration",
+          "Dyno Testing & Validation",
+          "Exclusive tuning on individual request"
+        ],
+        "price": "On Request",
+        "time": "6–10 weeks"
+      }
+    },
+    "generation": "W463",
+    "sourceStartLine": 203,
+    "stageSourceLines": {
+      "stock": 210,
+      "stage1": 211,
+      "stage2": 215,
+      "stage3": 220,
+      "stage4": 227,
+      "vip": 235
+    }
+  },
+  {
+    "id": "gt63",
+    "name": "AMG GT63 4-Door",
+    "brand": "Mercedes",
+    "engine": "M177",
+    "image": "/images/cars/gt63.png",
+    "availableStages": [
+      "stock",
+      "stage1",
+      "stage2",
+      "stage3",
+      "stage4",
+      "vip"
+    ],
+    "stages": {
+      "stock": {
+        "spec": {
+          "hp": 630,
+          "torque": 900,
+          "zeroToHundred": 3.2
+        },
+        "mods": [
+          "Factory Specifications"
+        ],
+        "price": "—",
+        "time": "—"
+      },
+      "stage1": {
+        "spec": {
+          "hp": 780,
+          "torque": 1000,
+          "zeroToHundred": 2.9
+        },
+        "mods": [
+          "Airfilter",
+          "Optimization of engine software",
+          "Deactivation of the speed limiter V-Max",
+          "Software for CPC (central powertrain controller)"
+        ],
+        "price": "€5,663",
+        "time": "1–2 days"
+      },
+      "stage2": {
+        "spec": {
+          "hp": 820,
+          "torque": 1050,
+          "zeroToHundred": 2.8
+        },
+        "mods": [
+          "Airfilter",
+          "Optimization of engine software",
+          "Deactivation of the speed limiter V-Max",
+          "Downpipe with sport catalytic converter",
+          "Special ceramic heat coating",
+          "Software for CPC"
+        ],
+        "price": "€12,563 total",
+        "time": "3–5 days"
+      },
+      "stage3": {
+        "spec": {
+          "hp": 860,
+          "torque": 1100,
+          "zeroToHundred": 2.6
+        },
+        "mods": [
+          "Airfilter",
+          "Optimization of engine software",
+          "Deactivation of the speed limiter V-Max",
+          "Downpipe with sport catalytic converter",
+          "Special ceramic heat coating",
+          "Software for CPC",
+          "Upgrade Twin Scroll Turbocharger GAD 177 55/68",
+          "TCU-Software",
+          "Stage 1 Automatic transmission NAG 3 reinforcement (~1150 Nm)"
+        ],
+        "price": "€27,076 total",
+        "time": "7–14 days"
+      },
+      "stage4": {
+        "spec": {
+          "hp": 940,
+          "torque": 1200,
+          "zeroToHundred": 2.4
+        },
+        "mods": [
+          "Airfilter",
+          "Optimization of engine software",
+          "Deactivation of the speed limiter V-Max",
+          "Downpipe with sport catalytic converter",
+          "Special ceramic heat coating",
+          "Software for CPC",
+          "Upgrade Twin Scroll Turbocharger GAD 177 60/76R",
+          "High pressure fuel system with increased flow",
+          "TCU-Software",
+          "Stage 1 Automatic transmission NAG 3 reinforcement (~1150 Nm)"
+        ],
+        "price": "€36,576 total",
+        "time": "14–21 days"
+      },
+      "vip": {
+        "spec": {
+          "hp": 1000,
+          "torque": 1300,
+          "zeroToHundred": 2.2
+        },
+        "mods": [
+          "Full Custom Build – 1000+ hp",
+          "Bespoke ECU Calibration",
+          "Dyno Testing & Validation",
+          "Exclusive tuning on individual request"
+        ],
+        "price": "On Request",
+        "time": "6–10 weeks"
+      }
+    },
+    "generation": "X290",
+    "sourceStartLine": 244,
+    "stageSourceLines": {
+      "stock": 251,
+      "stage1": 252,
+      "stage2": 256,
+      "stage3": 261,
+      "stage4": 267,
+      "vip": 274
+    }
+  },
+  {
+    "id": "s63",
+    "name": "S63 AMG E Performance",
+    "brand": "Mercedes",
+    "engine": "M177 + Electric",
+    "image": "/images/cars/s63.png",
+    "availableStages": [
+      "stock",
+      "stage1",
+      "stage2",
+      "stage3",
+      "stage4",
+      "vip"
+    ],
+    "stages": {
+      "stock": {
+        "spec": {
+          "hp": 612,
+          "torque": 900,
+          "zeroToHundred": 3.5
+        },
+        "mods": [
+          "Factory Specifications"
+        ],
+        "price": "—",
+        "time": "—"
+      },
+      "stage1": {
+        "spec": {
+          "hp": 780,
+          "torque": 1000,
+          "zeroToHundred": 3.1
+        },
+        "mods": [
+          "Airfilter",
+          "Optimization of engine software",
+          "Deactivation of the speed limiter V-Max",
+          "Software for CPC (central powertrain controller)"
+        ],
+        "price": "€5,663",
+        "time": "1–2 days"
+      },
+      "stage2": {
+        "spec": {
+          "hp": 820,
+          "torque": 1050,
+          "zeroToHundred": 3
+        },
+        "mods": [
+          "Airfilter",
+          "Optimization of engine software",
+          "Deactivation of the speed limiter V-Max",
+          "Downpipe with sport catalytic converter",
+          "Special ceramic heat coating",
+          "Software for CPC"
+        ],
+        "price": "€12,563 total",
+        "time": "3–5 days"
+      },
+      "stage3": {
+        "spec": {
+          "hp": 860,
+          "torque": 1100,
+          "zeroToHundred": 2.8
+        },
+        "mods": [
+          "Airfilter",
+          "Optimization of engine software",
+          "Deactivation of the speed limiter V-Max",
+          "Downpipe with sport catalytic converter",
+          "Special ceramic heat coating",
+          "Software for CPC",
+          "Upgrade Twin Scroll Turbocharger GAD 177 55/68",
+          "TCU-Software",
+          "Stage 1 Automatic transmission NAG 3 reinforcement (~1150 Nm)"
+        ],
+        "price": "€27,076 total",
+        "time": "7–14 days"
+      },
+      "stage4": {
+        "spec": {
+          "hp": 940,
+          "torque": 1200,
+          "zeroToHundred": 2.6
+        },
+        "mods": [
+          "Airfilter",
+          "Optimization of engine software",
+          "Deactivation of the speed limiter V-Max",
+          "Downpipe with sport catalytic converter",
+          "Special ceramic heat coating",
+          "Software for CPC",
+          "Upgrade Twin Scroll Turbocharger GAD 177 60/76R",
+          "High pressure fuel system with increased flow",
+          "TCU-Software",
+          "Stage 1 Automatic transmission NAG 3 reinforcement (~1150 Nm)"
+        ],
+        "price": "€36,576 total",
+        "time": "14–21 days"
+      },
+      "vip": {
+        "spec": {
+          "hp": 1000,
+          "torque": 1300,
+          "zeroToHundred": 2.4
+        },
+        "mods": [
+          "Full Custom Build – 1000+ hp",
+          "Bespoke ECU Calibration",
+          "Dyno Testing & Validation",
+          "Exclusive tuning on individual request"
+        ],
+        "price": "On Request",
+        "time": "6–10 weeks"
+      }
+    },
+    "generation": "W223",
+    "sourceStartLine": 283,
+    "stageSourceLines": {
+      "stock": 290,
+      "stage1": 291,
+      "stage2": 295,
+      "stage3": 300,
+      "stage4": 306,
+      "vip": 313
+    }
+  },
+  {
+    "id": "s65",
+    "name": "S65 AMG",
+    "brand": "Mercedes",
+    "engine": "M279",
+    "image": "/images/cars/s63.png",
+    "availableStages": [
+      "stock",
+      "stage1",
+      "stage2",
+      "stage3",
+      "stage4",
+      "stage5"
+    ],
+    "stages": {
+      "stock": {
+        "spec": {
+          "hp": 630,
+          "torque": 1000,
+          "zeroToHundred": 4.1
+        },
+        "mods": [
+          "Factory Specifications"
+        ],
+        "price": "—",
+        "time": "—"
+      },
+      "stage1": {
+        "spec": {
+          "hp": 680,
+          "torque": 1050,
+          "zeroToHundred": 3.8
+        },
+        "mods": [
+          "Airfilter",
+          "Optimization of engine software",
+          "Deactivation of the speed limiter V-Max"
+        ],
+        "price": "€3,350",
+        "time": "1–2 days"
+      },
+      "stage2": {
+        "spec": {
+          "hp": 720,
+          "torque": 1100,
+          "zeroToHundred": 3.6
+        },
+        "mods": [
+          "Airfilter",
+          "Optimization of engine software",
+          "Deactivation of the speed limiter V-Max",
+          "Downpipe with sport catalytic converter",
+          "Adjustment of the PCM (Powertrain control module)",
+          "TCU-Software"
+        ],
+        "price": "€18,350 total",
+        "time": "3–5 days"
+      },
+      "stage3": {
+        "spec": {
+          "hp": 800,
+          "torque": 1200,
+          "zeroToHundred": 3.3
+        },
+        "mods": [
+          "Airfilter",
+          "Optimization of engine software",
+          "Deactivation of the speed limiter V-Max",
+          "Downpipe with sport catalytic converter",
+          "Upgrade turbocharger (GAD 279 60/76R)",
+          "Adjustment of the PCM",
+          "TCU-Software",
+          "Stage 1 GAD reinforcement NAG2 (7G-Tronic) with torque converter (~1250 Nm)"
+        ],
+        "price": "€43,613 total",
+        "time": "7–14 days"
+      },
+      "stage4": {
+        "spec": {
+          "hp": 850,
+          "torque": 1300,
+          "zeroToHundred": 3.1
+        },
+        "mods": [
+          "GAD Airfilter box",
+          "Optimization of engine software",
+          "Deactivation of the speed limiter V-Max",
+          "Downpipe with sport catalytic converter",
+          "Upgrade turbocharger (GAD 279 60/76R)",
+          "Adjustment of the PCM",
+          "Optimization of the low-temperature circuit",
+          "TCU-Software",
+          "Stage 1 GAD reinforcement NAG2 (7G-Tronic) (~1250 Nm)"
+        ],
+        "price": "€54,713 total",
+        "time": "14–21 days"
+      },
+      "stage5": {
+        "spec": {
+          "hp": 900,
+          "torque": 1400,
+          "zeroToHundred": 2.9
+        },
+        "mods": [
+          "GAD Airfilter box",
+          "Optimization of engine software",
+          "Deactivation of the speed limiter V-Max",
+          "Downpipe with sport catalytic converter",
+          "Upgrade turbocharger (GAD 279 60/76R)",
+          "Adjustment of the PCM",
+          "Optimization of the low-temperature circuit",
+          "High Performance Intercooler",
+          "TCU-Software",
+          "Stage 2 GAD reinforcement NAG2 (7G-Tronic) (~1400 Nm)"
+        ],
+        "price": "€72,468 total",
+        "time": "3–6 weeks"
+      }
+    },
+    "generation": "W222/W217",
+    "sourceStartLine": 322,
+    "stageSourceLines": {
+      "stock": 329,
+      "stage1": 330,
+      "stage2": 333,
+      "stage3": 339,
+      "stage4": 345,
+      "stage5": 352
+    }
+  },
+  {
+    "id": "c63-w205",
+    "name": "C63 AMG (W205)",
+    "brand": "Mercedes",
+    "engine": "M177",
+    "image": "/images/cars/c63.png",
+    "availableStages": [
+      "stock",
+      "stage1",
+      "stage2",
+      "stage3",
+      "stage4",
+      "stage5",
+      "vip"
+    ],
+    "stages": {
+      "stock": {
+        "spec": {
+          "hp": 476,
+          "torque": 650,
+          "zeroToHundred": 4
+        },
+        "mods": [
+          "Factory Specifications"
+        ],
+        "price": "—",
+        "time": "—"
+      },
+      "stage1": {
+        "spec": {
+          "hp": 590,
+          "torque": 780,
+          "zeroToHundred": 3.6
+        },
+        "mods": [
+          "Airfilter",
+          "Optimization of engine software",
+          "Deactivation of the speed limiter V-Max"
+        ],
+        "price": "€3,146 total",
+        "time": "1–2 days"
+      },
+      "stage2": {
+        "spec": {
+          "hp": 615,
+          "torque": 810,
+          "zeroToHundred": 3.5
+        },
+        "mods": [
+          "Airfilter",
+          "Optimization of engine software",
+          "Deactivation of the speed limiter V-Max",
+          "Downpipe with sport catalytic converter",
+          "Special ceramic heat coating"
+        ],
+        "price": "€8,732 total",
+        "time": "3–5 days"
+      },
+      "stage3": {
+        "spec": {
+          "hp": 700,
+          "torque": 900,
+          "zeroToHundred": 3.2
+        },
+        "mods": [
+          "Airfilter",
+          "Optimization of engine software",
+          "Deactivation of the speed limiter V-Max",
+          "Downpipe with sport catalytic converter",
+          "Upgrade turbocharger (GAD 177 50/63)",
+          "Special ceramic heat coating",
+          "TCU-Software",
+          "Stage 1 GAD transmission reinforcement MCT (~1100 Nm)"
+        ],
+        "price": "€17,876 total",
+        "time": "7–14 days"
+      },
+      "stage4": {
+        "spec": {
+          "hp": 795,
+          "torque": 1000,
+          "zeroToHundred": 2.9
+        },
+        "mods": [
+          "Open airboxes",
+          "Optimization of engine software",
+          "Deactivation of the speed limiter V-Max",
+          "Downpipe with sport catalytic converter",
+          "Special ceramic heat coating",
+          "Twin Scroll GAD Turbocharger (GAD 177 55/63)",
+          "Pulse Flow exhaust manifold",
+          "High pressure fuel system with increased flow",
+          "TCU-Software",
+          "Stage 1 GAD transmission reinforcement MCT (~1100 Nm)"
+        ],
+        "price": "€33,460 total",
+        "time": "14–21 days"
+      },
+      "stage5": {
+        "spec": {
+          "hp": 850,
+          "torque": 1100,
+          "zeroToHundred": 2.7
+        },
+        "mods": [
+          "Open airboxes",
+          "Optimization of engine software",
+          "Deactivation of the speed limiter V-Max",
+          "Downpipe with sport catalytic converter",
+          "GAD upgrade Twinscroll Turbocharger (GAD 177 55/68)",
+          "Pulse Flow exhaust manifold",
+          "Special ceramic heat coating",
+          "High pressure fuel system with increased flow",
+          "GAD forged pistons with lower compression",
+          "Cylinder head bolts",
+          "Engine gasket set",
+          "Oil & Oil filter",
+          "TCU-Software",
+          "Stage 2 GAD transmission reinforcement MCT with wet clutch (~1350 Nm)"
+        ],
+        "price": "€53,435 total",
+        "time": "3–6 weeks"
+      },
+      "vip": {
+        "spec": {
+          "hp": 1000,
+          "torque": 1250,
+          "zeroToHundred": 2.5
+        },
+        "mods": [
+          "Full Custom Build – 1000+ hp",
+          "Bespoke ECU Calibration",
+          "Dyno Testing & Validation",
+          "Exclusive tuning on individual request"
+        ],
+        "price": "On Request",
+        "time": "6–10 weeks"
+      }
+    },
+    "generation": "W205",
+    "sourceStartLine": 364,
+    "stageSourceLines": {
+      "stock": 371,
+      "stage1": 372,
+      "stage2": 375,
+      "stage3": 379,
+      "stage4": 385,
+      "stage5": 392,
+      "vip": 401
+    }
+  },
+  {
+    "id": "glc63",
+    "name": "GLC63 AMG",
+    "brand": "Mercedes",
+    "engine": "M177",
+    "image": "/images/cars/glc63.png",
+    "availableStages": [
+      "stock",
+      "stage1",
+      "stage2",
+      "stage3",
+      "stage4",
+      "stage5"
+    ],
+    "stages": {
+      "stock": {
+        "spec": {
+          "hp": 476,
+          "torque": 650,
+          "zeroToHundred": 3.8
+        },
+        "mods": [
+          "Factory Specifications"
+        ],
+        "price": "—",
+        "time": "—"
+      },
+      "stage1": {
+        "spec": {
+          "hp": 590,
+          "torque": 780,
+          "zeroToHundred": 3.4
+        },
+        "mods": [
+          "Airfilter",
+          "Optimization of engine software",
+          "Deactivation of the speed limiter V-Max"
+        ],
+        "price": "€3,146 total",
+        "time": "1–2 days"
+      },
+      "stage2": {
+        "spec": {
+          "hp": 615,
+          "torque": 810,
+          "zeroToHundred": 3.3
+        },
+        "mods": [
+          "Airfilter",
+          "Optimization of engine software",
+          "Deactivation of the speed limiter V-Max",
+          "Downpipe with sport catalytic converter",
+          "Special ceramic heat coating"
+        ],
+        "price": "€7,471 total",
+        "time": "3–5 days"
+      },
+      "stage3": {
+        "spec": {
+          "hp": 700,
+          "torque": 900,
+          "zeroToHundred": 3
+        },
+        "mods": [
+          "Airfilter",
+          "Optimization of engine software",
+          "Deactivation of the speed limiter V-Max",
+          "Downpipe with sport catalytic converter",
+          "Upgrade turbocharger (GAD 177 50/63)",
+          "Special ceramic heat coating",
+          "TCU-Software",
+          "GAD transmission reinforcement (~1250 Nm)"
+        ],
+        "price": "€17,876–€19,346 total",
+        "time": "7–14 days"
+      },
+      "stage4": {
+        "spec": {
+          "hp": 795,
+          "torque": 1000,
+          "zeroToHundred": 2.8
+        },
+        "mods": [
+          "Open airboxes",
+          "Optimization of engine software",
+          "Deactivation of the speed limiter V-Max",
+          "Downpipe with sport catalytic converter",
+          "Twin Scroll GAD Turbocharger (GAD 177 55/63)",
+          "Pulse Flow exhaust manifold",
+          "Special ceramic heat coating",
+          "High pressure fuel system with increased flow",
+          "TCU-Software",
+          "GAD transmission reinforcement (~1250 Nm)"
+        ],
+        "price": "€33,335–€34,805 total",
+        "time": "14–21 days"
+      },
+      "stage5": {
+        "spec": {
+          "hp": 850,
+          "torque": 1100,
+          "zeroToHundred": 2.6
+        },
+        "mods": [
+          "Open airboxes",
+          "Optimization of engine software",
+          "Deactivation of the speed limiter V-Max",
+          "Downpipe with sport catalytic converter",
+          "GAD TwinScroll Turbocharger (GAD 177 55/68)",
+          "Pulse Flow exhaust manifold",
+          "Special ceramic heat coating",
+          "High pressure fuel system with increased flow",
+          "GAD forged pistons with lower compression",
+          "Cylinder head bolts",
+          "Engine gasket set",
+          "Oil & Oil filter",
+          "TCU-Software",
+          "GAD transmission reinforcement (~1250 Nm)"
+        ],
+        "price": "€51,335–€52,805 total",
+        "time": "3–6 weeks"
+      }
+    },
+    "generation": "W253",
+    "sourceStartLine": 410,
+    "stageSourceLines": {
+      "stock": 417,
+      "stage1": 418,
+      "stage2": 421,
+      "stage3": 425,
+      "stage4": 431,
+      "stage5": 438
+    }
+  },
+  {
+    "id": "c43",
+    "name": "C43 AMG (W205)",
+    "brand": "Mercedes",
+    "engine": "M276",
+    "image": "/images/cars/c43.png",
+    "availableStages": [
+      "stock",
+      "stage1",
+      "stage2"
+    ],
+    "stages": {
+      "stock": {
+        "spec": {
+          "hp": 390,
+          "torque": 520,
+          "zeroToHundred": 4.7
+        },
+        "mods": [
+          "Factory Specifications"
+        ],
+        "price": "—",
+        "time": "—"
+      },
+      "stage1": {
+        "spec": {
+          "hp": 450,
+          "torque": 580,
+          "zeroToHundred": 4.3
+        },
+        "mods": [
+          "Airfilter",
+          "Optimization of engine software",
+          "Deactivation of the speed limiter V-Max"
+        ],
+        "price": "€2,110",
+        "time": "1–2 days"
+      },
+      "stage2": {
+        "spec": {
+          "hp": 500,
+          "torque": 650,
+          "zeroToHundred": 3.9
+        },
+        "mods": [
+          "Airfilter",
+          "Optimization of engine software",
+          "Deactivation of the speed limiter V-Max",
+          "Turbocharger upgrade",
+          "GAD high pressure pump",
+          "Exhaust system"
+        ],
+        "price": "€16,350 total",
+        "time": "5–7 days"
+      }
+    },
+    "generation": "W205",
+    "sourceStartLine": 452,
+    "stageSourceLines": {
+      "stock": 459,
+      "stage1": 460,
+      "stage2": 463
+    }
+  },
+  {
+    "id": "c450",
+    "name": "C450 AMG (W205)",
+    "brand": "Mercedes",
+    "engine": "M276",
+    "image": "/images/cars/c43.png",
+    "availableStages": [
+      "stock",
+      "stage1",
+      "stage2"
+    ],
+    "stages": {
+      "stock": {
+        "spec": {
+          "hp": 367,
+          "torque": 520,
+          "zeroToHundred": 4.9
+        },
+        "mods": [
+          "Factory Specifications"
+        ],
+        "price": "—",
+        "time": "—"
+      },
+      "stage1": {
+        "spec": {
+          "hp": 450,
+          "torque": 580,
+          "zeroToHundred": 4.4
+        },
+        "mods": [
+          "Airfilter",
+          "Optimization of engine software",
+          "Deactivation of the speed limiter V-Max"
+        ],
+        "price": "€2,110",
+        "time": "1–2 days"
+      },
+      "stage2": {
+        "spec": {
+          "hp": 500,
+          "torque": 650,
+          "zeroToHundred": 4
+        },
+        "mods": [
+          "Airfilter",
+          "Optimization of engine software",
+          "Deactivation of the speed limiter V-Max",
+          "Turbocharger upgrade",
+          "GAD high pressure pump",
+          "Exhaust system"
+        ],
+        "price": "€16,350 total",
+        "time": "5–7 days"
+      }
+    },
+    "generation": "W205",
+    "sourceStartLine": 472,
+    "stageSourceLines": {
+      "stock": 479,
+      "stage1": 480,
+      "stage2": 483
+    }
+  },
+  {
+    "id": "c400",
+    "name": "C400 (W205)",
+    "brand": "Mercedes",
+    "engine": "M276",
+    "image": "/images/cars/c43.png",
+    "availableStages": [
+      "stock",
+      "stage1",
+      "stage2"
+    ],
+    "stages": {
+      "stock": {
+        "spec": {
+          "hp": 333,
+          "torque": 480,
+          "zeroToHundred": 5.2
+        },
+        "mods": [
+          "Factory Specifications"
+        ],
+        "price": "—",
+        "time": "—"
+      },
+      "stage1": {
+        "spec": {
+          "hp": 420,
+          "torque": 560,
+          "zeroToHundred": 4.6
+        },
+        "mods": [
+          "Airfilter",
+          "Optimization of engine software",
+          "Deactivation of the speed limiter V-Max"
+        ],
+        "price": "€2,110",
+        "time": "1–2 days"
+      },
+      "stage2": {
+        "spec": {
+          "hp": 500,
+          "torque": 650,
+          "zeroToHundred": 4.1
+        },
+        "mods": [
+          "Airfilter",
+          "Optimization of engine software",
+          "Deactivation of the speed limiter V-Max",
+          "Turbocharger upgrade",
+          "GAD high pressure pump",
+          "Exhaust system"
+        ],
+        "price": "€16,350 total",
+        "time": "5–7 days"
+      }
+    },
+    "generation": "W205",
+    "sourceStartLine": 492,
+    "stageSourceLines": {
+      "stock": 499,
+      "stage1": 500,
+      "stage2": 503
+    }
+  },
+  {
+    "id": "cla45",
+    "name": "CLA45 AMG",
+    "brand": "Mercedes",
+    "engine": "M133",
+    "image": "/images/cars/cla45.png",
+    "availableStages": [
+      "stock",
+      "stage1",
+      "stage2"
+    ],
+    "stages": {
+      "stock": {
+        "spec": {
+          "hp": 381,
+          "torque": 475,
+          "zeroToHundred": 4.2
+        },
+        "mods": [
+          "Factory Specifications"
+        ],
+        "price": "—",
+        "time": "—"
+      },
+      "stage1": {
+        "spec": {
+          "hp": 427,
+          "torque": 530,
+          "zeroToHundred": 3.9
+        },
+        "mods": [
+          "Airfilter",
+          "Optimization of engine software",
+          "Deactivation of the speed limiter V-Max"
+        ],
+        "price": "€2,353",
+        "time": "1–2 days"
+      },
+      "stage2": {
+        "spec": {
+          "hp": 457,
+          "torque": 560,
+          "zeroToHundred": 3.7
+        },
+        "mods": [
+          "Airfilter",
+          "Optimization of engine software",
+          "Deactivation of the speed limiter V-Max",
+          "Downpipe with sport catalytic converter"
+        ],
+        "price": "€6,153 total",
+        "time": "3–5 days"
+      }
+    },
+    "generation": "W117",
+    "sourceStartLine": 512,
+    "stageSourceLines": {
+      "stock": 519,
+      "stage1": 520,
+      "stage2": 523
+    }
+  },
+  {
+    "id": "a45",
+    "name": "A45 AMG",
+    "brand": "Mercedes",
+    "engine": "M133",
+    "image": "/images/cars/a45.png",
+    "availableStages": [
+      "stock",
+      "stage1",
+      "stage2"
+    ],
+    "stages": {
+      "stock": {
+        "spec": {
+          "hp": 381,
+          "torque": 475,
+          "zeroToHundred": 4.2
+        },
+        "mods": [
+          "Factory Specifications"
+        ],
+        "price": "—",
+        "time": "—"
+      },
+      "stage1": {
+        "spec": {
+          "hp": 427,
+          "torque": 530,
+          "zeroToHundred": 3.9
+        },
+        "mods": [
+          "Airfilter",
+          "Optimization of engine software",
+          "Deactivation of the speed limiter V-Max"
+        ],
+        "price": "€2,353",
+        "time": "1–2 days"
+      },
+      "stage2": {
+        "spec": {
+          "hp": 457,
+          "torque": 560,
+          "zeroToHundred": 3.7
+        },
+        "mods": [
+          "Airfilter",
+          "Optimization of engine software",
+          "Deactivation of the speed limiter V-Max",
+          "Downpipe with sport catalytic converter"
+        ],
+        "price": "€6,153 total",
+        "time": "3–5 days"
+      }
+    },
+    "generation": "W176",
+    "sourceStartLine": 532,
+    "stageSourceLines": {
+      "stock": 539,
+      "stage1": 540,
+      "stage2": 543
+    }
+  },
+  {
+    "id": "db11",
+    "name": "Aston Martin DB11",
+    "brand": "Aston Martin",
+    "engine": "M177",
+    "image": "/images/cars/db11.png",
+    "availableStages": [
+      "stock",
+      "stage1",
+      "stage2",
+      "stage3",
+      "stage4",
+      "stage5"
+    ],
+    "stages": {
+      "stock": {
+        "spec": {
+          "hp": 503,
+          "torque": 675,
+          "zeroToHundred": 3.9
+        },
+        "mods": [
+          "Factory Specifications"
+        ],
+        "price": "—",
+        "time": "—"
+      },
+      "stage1": {
+        "spec": {
+          "hp": 590,
+          "torque": 750,
+          "zeroToHundred": 3.5
+        },
+        "mods": [
+          "Airfilter",
+          "Optimization of engine software",
+          "Deactivation of the speed limiter V-Max"
+        ],
+        "price": "€3,346 total",
+        "time": "1–2 days"
+      },
+      "stage2": {
+        "spec": {
+          "hp": 615,
+          "torque": 790,
+          "zeroToHundred": 3.4
+        },
+        "mods": [
+          "Airfilter",
+          "Optimization of engine software",
+          "Deactivation of the speed limiter V-Max",
+          "Downpipe with sport catalytic converter",
+          "Special ceramic heat coating",
+          "Transmission software optimization (TCU)"
+        ],
+        "price": "€10,232 total",
+        "time": "3–5 days"
+      },
+      "stage3": {
+        "spec": {
+          "hp": 700,
+          "torque": 900,
+          "zeroToHundred": 3.1
+        },
+        "mods": [
+          "Airfilter",
+          "Optimization of engine software",
+          "Deactivation of the speed limiter V-Max",
+          "Downpipe with sport catalytic converter",
+          "Upgrade turbocharger (GAD 177 50/63)",
+          "Special ceramic heat coating",
+          "TCU-Software",
+          "Stage 1 GAD transmission reinforcement MCT (~1100 Nm)"
+        ],
+        "price": "€18,333 total",
+        "time": "7–14 days"
+      },
+      "stage4": {
+        "spec": {
+          "hp": 795,
+          "torque": 1000,
+          "zeroToHundred": 2.8
+        },
+        "mods": [
+          "Open airboxes",
+          "Optimization of engine software",
+          "Deactivation of the speed limiter V-Max",
+          "Downpipe with sport catalytic converter",
+          "Twin Scroll GAD Turbocharger (GAD 177 55/63)",
+          "Pulse Flow exhaust manifold",
+          "Special ceramic heat coating",
+          "High pressure fuel system with increased flow",
+          "TCU-Software",
+          "Stage 1 GAD transmission reinforcement MCT (~1100 Nm)"
+        ],
+        "price": "€33,792 total",
+        "time": "14–21 days"
+      },
+      "stage5": {
+        "spec": {
+          "hp": 850,
+          "torque": 1100,
+          "zeroToHundred": 2.6
+        },
+        "mods": [
+          "Open airboxes",
+          "Optimization of engine software",
+          "Deactivation of the speed limiter V-Max",
+          "Downpipe with sport catalytic converter",
+          "GAD upgrade Twinscroll Turbocharger (GAD 177 55/68)",
+          "Pulse Flow exhaust manifold",
+          "Special ceramic heat coating",
+          "High pressure fuel system with increased flow",
+          "GAD forged pistons with lower compression",
+          "Cylinder head bolts",
+          "Engine gasket set",
+          "Oil & Oilfilter",
+          "TCU-Software",
+          "Stage 2 GAD transmission reinforcement MCT with wet clutch (~1350 Nm)"
+        ],
+        "price": "€56,435 total",
+        "time": "3–6 weeks"
+      }
+    },
+    "generation": "",
+    "sourceStartLine": 552,
+    "stageSourceLines": {
+      "stock": 559,
+      "stage1": 560,
+      "stage2": 563,
+      "stage3": 568,
+      "stage4": 574,
+      "stage5": 581
+    }
+  },
+  {
+    "id": "urus",
+    "name": "Lamborghini Urus",
+    "brand": "Lamborghini",
+    "engine": "V8 Twin-Turbo",
+    "image": "/images/cars/urus.png",
+    "availableStages": [
+      "stock",
+      "stage1",
+      "stage2",
+      "stage3",
+      "stage4"
+    ],
+    "stages": {
+      "stock": {
+        "spec": {
+          "hp": 650,
+          "torque": 850,
+          "zeroToHundred": 3.6
+        },
+        "mods": [
+          "Factory Specifications"
+        ],
+        "price": "—",
+        "time": "—"
+      },
+      "stage1": {
+        "spec": {
+          "hp": 750,
+          "torque": 950,
+          "zeroToHundred": 3.3
+        },
+        "mods": [
+          "Optimization of engine software"
+        ],
+        "price": "€5,418 total",
+        "time": "1–2 days"
+      },
+      "stage2": {
+        "spec": {
+          "hp": 800,
+          "torque": 1000,
+          "zeroToHundred": 3.1
+        },
+        "mods": [
+          "Airfilter",
+          "Optimization of engine software",
+          "Downpipe with sport catalytic converter",
+          "Special ceramic heat coating"
+        ],
+        "price": "€13,842 total",
+        "time": "3–5 days"
+      },
+      "stage3": {
+        "spec": {
+          "hp": 870,
+          "torque": 1100,
+          "zeroToHundred": 2.9
+        },
+        "mods": [
+          "Airfilter",
+          "Optimization of engine software",
+          "Downpipe with sport catalytic converter",
+          "Special ceramic heat coating",
+          "GAD Upgrade ball-bearing Twin Scroll Turbocharger (GAD 825-60/71R)",
+          "Turbo installation kit (cooling water and oil lines)"
+        ],
+        "price": "€26,842 total",
+        "time": "7–14 days"
+      },
+      "stage4": {
+        "spec": {
+          "hp": 904,
+          "torque": 1150,
+          "zeroToHundred": 2.7
+        },
+        "mods": [
+          "Airfilter",
+          "Optimization of engine software",
+          "Downpipe with sport catalytic converter",
+          "Special ceramic heat coating",
+          "GAD Upgrade ball-bearing Twin Scroll Turbocharger (GAD 825-60/71R)",
+          "Turbo installation kit (cooling water and oil lines)",
+          "Custom high flow intercooler"
+        ],
+        "price": "€35,992 total",
+        "time": "14–21 days"
+      }
+    },
+    "generation": "",
+    "sourceStartLine": 595,
+    "stageSourceLines": {
+      "stock": 602,
+      "stage1": 603,
+      "stage2": 606,
+      "stage3": 610,
+      "stage4": 616
+    }
+  }
+]

@@ -1,0 +1,842 @@
+[
+  {
+    "path": "C:\\Users\\ADMIN\\Downloads\\digitecme.com-Performance-on-Search-2026-09-05.xlsx",
+    "sha256": "044fbeaef3d3db322cf0f0cddf1abf73ca2923b21898d1b2750e5f3962f0e603",
+    "source_unchanged": true,
+    "filters": {
+      "Search type": "Web",
+      "Date": "Last 28 days"
+    },
+    "time_column": "Date",
+    "start": "2026-08-06",
+    "end": "2026-09-02",
+    "time_rows": 28,
+    "sheets": {
+      "Chart": {
+        "range": "A1:E29",
+        "rows": 28
+      },
+      "Queries": {
+        "range": "A1:E1001",
+        "rows": 1000
+      },
+      "Pages": {
+        "range": "A1:E568",
+        "rows": 567
+      },
+      "Countries": {
+        "range": "A1:E118",
+        "rows": 117
+      },
+      "Devices": {
+        "range": "A1:E4",
+        "rows": 3
+      },
+      "Search appearance": {
+        "range": "A1:E1",
+        "rows": 0
+      },
+      "Filters": {
+        "range": "A1:B3",
+        "rows": 2
+      }
+    },
+    "data_table_sha256": "0ff541c2cee28930e0e407282dcd205ff068cdc7e94c997e536b201e4ea1a4eb",
+    "semantic_duplicate_of": null,
+    "current_sha256": "044fbeaef3d3db322cf0f0cddf1abf73ca2923b21898d1b2750e5f3962f0e603",
+    "raw_read_only_verified": true,
+    "reused_extraction": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\diagnostics-ac-2026-10-19\\research\\extracted-workbooks.json",
+    "exact_rows_reverified": true
+  },
+  {
+    "path": "C:\\Users\\ADMIN\\Downloads\\digitecme.com-Performance-on-Search-2026-09-08 (1).xlsx",
+    "sha256": "62e89a8606a7b4b0d34d51fb41301653ffa05e52941f18d4a39196001dd3c868",
+    "source_unchanged": true,
+    "filters": {
+      "Search type": "Web",
+      "Date": "Last 3 months",
+      "Query": "+mercedes"
+    },
+    "time_column": "Date",
+    "start": "2026-06-07",
+    "end": "2026-09-06",
+    "time_rows": 92,
+    "sheets": {
+      "Chart": {
+        "range": "A1:E93",
+        "rows": 92
+      },
+      "Queries": {
+        "range": "A1:E354",
+        "rows": 353
+      },
+      "Pages": {
+        "range": "A1:E62",
+        "rows": 61
+      },
+      "Countries": {
+        "range": "A1:E56",
+        "rows": 55
+      },
+      "Devices": {
+        "range": "A1:E4",
+        "rows": 3
+      },
+      "Search appearance": {
+        "range": "A1:E1",
+        "rows": 0
+      },
+      "Filters": {
+        "range": "A1:B4",
+        "rows": 3
+      }
+    },
+    "data_table_sha256": "f0be5948be649a55e97f81030c811132a8d0a27aedd5504add1ec9e0b08e0154",
+    "semantic_duplicate_of": null,
+    "current_sha256": "62e89a8606a7b4b0d34d51fb41301653ffa05e52941f18d4a39196001dd3c868",
+    "raw_read_only_verified": true,
+    "reused_extraction": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\diagnostics-ac-2026-10-19\\research\\extracted-workbooks.json",
+    "exact_rows_reverified": true
+  },
+  {
+    "path": "C:\\Users\\ADMIN\\Downloads\\digitecme.com-Performance-on-Search-2026-09-08 (2) (1).xlsx",
+    "sha256": "e576525d0106761efb97d99f6287c66868f8e03d341a57fc0229d4b282577810",
+    "source_unchanged": true,
+    "filters": {
+      "Search type": "Web",
+      "Date": "Last 3 months"
+    },
+    "time_column": "Date",
+    "start": "2026-06-07",
+    "end": "2026-09-06",
+    "time_rows": 92,
+    "sheets": {
+      "Chart": {
+        "range": "A1:E93",
+        "rows": 92
+      },
+      "Queries": {
+        "range": "A1:E1001",
+        "rows": 1000
+      },
+      "Pages": {
+        "range": "A1:E842",
+        "rows": 841
+      },
+      "Countries": {
+        "range": "A1:E150",
+        "rows": 149
+      },
+      "Devices": {
+        "range": "A1:E4",
+        "rows": 3
+      },
+      "Search appearance": {
+        "range": "A1:E1",
+        "rows": 0
+      },
+      "Filters": {
+        "range": "A1:B3",
+        "rows": 2
+      }
+    },
+    "data_table_sha256": "479dd817b40ff69ef0e054e229375b5f1efb1aa77d9eca66d7996ef70ed530f8",
+    "semantic_duplicate_of": null,
+    "current_sha256": "e576525d0106761efb97d99f6287c66868f8e03d341a57fc0229d4b282577810",
+    "raw_read_only_verified": true,
+    "reused_extraction": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\diagnostics-ac-2026-10-19\\research\\extracted-workbooks.json",
+    "exact_rows_reverified": true
+  },
+  {
+    "path": "C:\\Users\\ADMIN\\Downloads\\digitecme.com-Performance-on-Search-2026-09-08 (2).xlsx",
+    "sha256": "e576525d0106761efb97d99f6287c66868f8e03d341a57fc0229d4b282577810",
+    "source_unchanged": true,
+    "filters": {
+      "Search type": "Web",
+      "Date": "Last 3 months"
+    },
+    "time_column": "Date",
+    "start": "2026-06-07",
+    "end": "2026-09-06",
+    "time_rows": 92,
+    "sheets": {
+      "Chart": {
+        "range": "A1:E93",
+        "rows": 92
+      },
+      "Queries": {
+        "range": "A1:E1001",
+        "rows": 1000
+      },
+      "Pages": {
+        "range": "A1:E842",
+        "rows": 841
+      },
+      "Countries": {
+        "range": "A1:E150",
+        "rows": 149
+      },
+      "Devices": {
+        "range": "A1:E4",
+        "rows": 3
+      },
+      "Search appearance": {
+        "range": "A1:E1",
+        "rows": 0
+      },
+      "Filters": {
+        "range": "A1:B3",
+        "rows": 2
+      }
+    },
+    "data_table_sha256": "479dd817b40ff69ef0e054e229375b5f1efb1aa77d9eca66d7996ef70ed530f8",
+    "semantic_duplicate_of": "digitecme.com-Performance-on-Search-2026-09-08 (2) (1).xlsx",
+    "current_sha256": "e576525d0106761efb97d99f6287c66868f8e03d341a57fc0229d4b282577810",
+    "raw_read_only_verified": true,
+    "reused_extraction": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\diagnostics-ac-2026-10-19\\research\\extracted-workbooks.json",
+    "exact_rows_reverified": true
+  },
+  {
+    "path": "C:\\Users\\ADMIN\\Downloads\\digitecme.com-Performance-on-Search-2026-09-08.xlsx",
+    "sha256": "12845dd47351747e383a3c01d05688e2263efc54cc06661f136f2ea64af7843f",
+    "source_unchanged": true,
+    "filters": {
+      "Search type": "Web",
+      "Date": "Last 3 months"
+    },
+    "time_column": "Date",
+    "start": "2026-06-07",
+    "end": "2026-09-06",
+    "time_rows": 92,
+    "sheets": {
+      "Chart": {
+        "range": "A1:E93",
+        "rows": 92
+      },
+      "Queries": {
+        "range": "A1:E1001",
+        "rows": 1000
+      },
+      "Pages": {
+        "range": "A1:E842",
+        "rows": 841
+      },
+      "Countries": {
+        "range": "A1:E150",
+        "rows": 149
+      },
+      "Devices": {
+        "range": "A1:E4",
+        "rows": 3
+      },
+      "Search appearance": {
+        "range": "A1:E1",
+        "rows": 0
+      },
+      "Filters": {
+        "range": "A1:B3",
+        "rows": 2
+      }
+    },
+    "data_table_sha256": "479dd817b40ff69ef0e054e229375b5f1efb1aa77d9eca66d7996ef70ed530f8",
+    "semantic_duplicate_of": "digitecme.com-Performance-on-Search-2026-09-08 (2) (1).xlsx",
+    "current_sha256": "12845dd47351747e383a3c01d05688e2263efc54cc06661f136f2ea64af7843f",
+    "raw_read_only_verified": true,
+    "reused_extraction": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\diagnostics-ac-2026-10-19\\research\\extracted-workbooks.json",
+    "exact_rows_reverified": true
+  },
+  {
+    "path": "C:\\Users\\ADMIN\\Downloads\\digitecme.com-Performance-on-Search-2026-09-13.xlsx",
+    "sha256": "14210311acf3258eb78c443f97592db82c2e29fb35c50fa73faee222952d10f9",
+    "source_unchanged": true,
+    "filters": {
+      "Search type": "Web",
+      "Date": "Last 7 days"
+    },
+    "time_column": "Date",
+    "start": "2026-09-05",
+    "end": "2026-09-11",
+    "time_rows": 7,
+    "sheets": {
+      "Chart": {
+        "range": "A1:E8",
+        "rows": 7
+      },
+      "Queries": {
+        "range": "A1:E1001",
+        "rows": 1000
+      },
+      "Pages": {
+        "range": "A1:E461",
+        "rows": 460
+      },
+      "Countries": {
+        "range": "A1:E94",
+        "rows": 93
+      },
+      "Devices": {
+        "range": "A1:E4",
+        "rows": 3
+      },
+      "Search appearance": {
+        "range": "A1:E2",
+        "rows": 1
+      },
+      "Filters": {
+        "range": "A1:B3",
+        "rows": 2
+      }
+    },
+    "data_table_sha256": "08654edbcd3d5d01f6223fa9212fd9e2ec4fae099a258d2b8f156a4e822e5f1b",
+    "semantic_duplicate_of": null,
+    "current_sha256": "14210311acf3258eb78c443f97592db82c2e29fb35c50fa73faee222952d10f9",
+    "raw_read_only_verified": true,
+    "reused_extraction": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\diagnostics-ac-2026-10-19\\research\\extracted-workbooks.json",
+    "exact_rows_reverified": true
+  },
+  {
+    "path": "C:\\Users\\ADMIN\\Downloads\\digitecme.com-Performance-on-Search-2026-09-16.xlsx",
+    "sha256": "8c74d5a83a5df26d74e5e8b19e705cdff82ba4115dac907a67fda990a5c77ee1",
+    "source_unchanged": true,
+    "filters": {
+      "Search type": "Web",
+      "Date": "Last 7 days"
+    },
+    "time_column": "Date",
+    "start": "2026-09-07",
+    "end": "2026-09-13",
+    "time_rows": 7,
+    "sheets": {
+      "Chart": {
+        "range": "A1:E8",
+        "rows": 7
+      },
+      "Queries": {
+        "range": "A1:E1001",
+        "rows": 1000
+      },
+      "Pages": {
+        "range": "A1:E448",
+        "rows": 447
+      },
+      "Countries": {
+        "range": "A1:E90",
+        "rows": 89
+      },
+      "Devices": {
+        "range": "A1:E4",
+        "rows": 3
+      },
+      "Search appearance": {
+        "range": "A1:E2",
+        "rows": 1
+      },
+      "Filters": {
+        "range": "A1:B3",
+        "rows": 2
+      }
+    },
+    "data_table_sha256": "a0a595936dd2b72311f2d991b924c1bd8cfd15d41d34738508f17b7f6c3535f5",
+    "semantic_duplicate_of": null,
+    "current_sha256": "8c74d5a83a5df26d74e5e8b19e705cdff82ba4115dac907a67fda990a5c77ee1",
+    "raw_read_only_verified": true,
+    "reused_extraction": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\diagnostics-ac-2026-10-19\\research\\extracted-workbooks.json",
+    "exact_rows_reverified": true
+  },
+  {
+    "path": "C:\\Users\\ADMIN\\Downloads\\digitecme.com-Performance-on-Search-2026-09-18 (1).xlsx",
+    "sha256": "f9d82af3a7358fa71928f032c087639d4e963116419f27e08fb29aa85b7e725e",
+    "source_unchanged": true,
+    "filters": {
+      "Search type": "Web",
+      "Date": "Last 28 days",
+      "Query": "mercedes repair dubai"
+    },
+    "time_column": "Date",
+    "start": "2026-08-19",
+    "end": "2026-09-15",
+    "time_rows": 28,
+    "sheets": {
+      "Chart": {
+        "range": "A1:E29",
+        "rows": 28
+      },
+      "Queries": {
+        "range": "A1:E2",
+        "rows": 1
+      },
+      "Pages": {
+        "range": "A1:E3",
+        "rows": 2
+      },
+      "Countries": {
+        "range": "A1:E7",
+        "rows": 6
+      },
+      "Devices": {
+        "range": "A1:E3",
+        "rows": 2
+      },
+      "Search appearance": {
+        "range": "A1:E1",
+        "rows": 0
+      },
+      "Filters": {
+        "range": "A1:B4",
+        "rows": 3
+      }
+    },
+    "data_table_sha256": "5a5f8969dc2da8d59ddccf919e6e567e819b2968e4c5740f420e8078fd669659",
+    "semantic_duplicate_of": null,
+    "current_sha256": "f9d82af3a7358fa71928f032c087639d4e963116419f27e08fb29aa85b7e725e",
+    "raw_read_only_verified": true,
+    "reused_extraction": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\diagnostics-ac-2026-10-19\\research\\extracted-workbooks.json",
+    "exact_rows_reverified": true
+  },
+  {
+    "path": "C:\\Users\\ADMIN\\Downloads\\digitecme.com-Performance-on-Search-2026-09-18.xlsx",
+    "sha256": "bbf05a139515dee082f8bd161fa6a58974336977b3635d8743053bac00fd1978",
+    "source_unchanged": true,
+    "filters": {
+      "Search type": "Web",
+      "Date": "Last 7 days"
+    },
+    "time_column": "Date",
+    "start": "2026-09-09",
+    "end": "2026-09-15",
+    "time_rows": 7,
+    "sheets": {
+      "Chart": {
+        "range": "A1:E8",
+        "rows": 7
+      },
+      "Queries": {
+        "range": "A1:E1001",
+        "rows": 1000
+      },
+      "Pages": {
+        "range": "A1:E439",
+        "rows": 438
+      },
+      "Countries": {
+        "range": "A1:E83",
+        "rows": 82
+      },
+      "Devices": {
+        "range": "A1:E4",
+        "rows": 3
+      },
+      "Search appearance": {
+        "range": "A1:E2",
+        "rows": 1
+      },
+      "Filters": {
+        "range": "A1:B3",
+        "rows": 2
+      }
+    },
+    "data_table_sha256": "0dcf563a2a358c2fbd46d59a396400ce852904cc3c83a7c6da34b2ba6316f021",
+    "semantic_duplicate_of": null,
+    "current_sha256": "bbf05a139515dee082f8bd161fa6a58974336977b3635d8743053bac00fd1978",
+    "raw_read_only_verified": true,
+    "reused_extraction": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\diagnostics-ac-2026-10-19\\research\\extracted-workbooks.json",
+    "exact_rows_reverified": true
+  },
+  {
+    "path": "C:\\Users\\ADMIN\\Downloads\\digitecme.com-Performance-on-Search-2026-09-19 (1).xlsx",
+    "sha256": "002120f78dbd45d1e131e7737d4f9803dd1b219f87d3196fa9fcb12b4c30c767",
+    "source_unchanged": true,
+    "filters": {
+      "Search type": "Web",
+      "Date": "Last 3 months",
+      "Query": "+mercedes repair dubai"
+    },
+    "time_column": "Date",
+    "start": "2026-06-17",
+    "end": "2026-09-16",
+    "time_rows": 92,
+    "sheets": {
+      "Chart": {
+        "range": "A1:E93",
+        "rows": 92
+      },
+      "Queries": {
+        "range": "A1:E3",
+        "rows": 2
+      },
+      "Pages": {
+        "range": "A1:E5",
+        "rows": 4
+      },
+      "Countries": {
+        "range": "A1:E8",
+        "rows": 7
+      },
+      "Devices": {
+        "range": "A1:E4",
+        "rows": 3
+      },
+      "Search appearance": {
+        "range": "A1:E1",
+        "rows": 0
+      },
+      "Filters": {
+        "range": "A1:B4",
+        "rows": 3
+      }
+    },
+    "data_table_sha256": "1289560b684adb406847ff73c6a72072cd707402237760da473f3bdb1c956127",
+    "semantic_duplicate_of": null,
+    "current_sha256": "002120f78dbd45d1e131e7737d4f9803dd1b219f87d3196fa9fcb12b4c30c767",
+    "raw_read_only_verified": true,
+    "reused_extraction": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\diagnostics-ac-2026-10-19\\research\\extracted-workbooks.json",
+    "exact_rows_reverified": true
+  },
+  {
+    "path": "C:\\Users\\ADMIN\\Downloads\\digitecme.com-Performance-on-Search-2026-09-19.xlsx",
+    "sha256": "e8fefd1dd5ff65a3e69f2edf1e54d817bef68539c1810da8ecb6c389da0930c5",
+    "source_unchanged": true,
+    "filters": {
+      "Search type": "Web",
+      "Date": "Last 3 months",
+      "Query": "mercedes service dubai"
+    },
+    "time_column": "Date",
+    "start": "2026-06-17",
+    "end": "2026-09-16",
+    "time_rows": 92,
+    "sheets": {
+      "Chart": {
+        "range": "A1:E93",
+        "rows": 92
+      },
+      "Queries": {
+        "range": "A1:E2",
+        "rows": 1
+      },
+      "Pages": {
+        "range": "A1:E5",
+        "rows": 4
+      },
+      "Countries": {
+        "range": "A1:E11",
+        "rows": 10
+      },
+      "Devices": {
+        "range": "A1:E4",
+        "rows": 3
+      },
+      "Search appearance": {
+        "range": "A1:E1",
+        "rows": 0
+      },
+      "Filters": {
+        "range": "A1:B4",
+        "rows": 3
+      }
+    },
+    "data_table_sha256": "6ff3948c1061b8b3eb2c9ac7b16943d66b1d170f873f9f522aa4d4e9415e0d6f",
+    "semantic_duplicate_of": null,
+    "current_sha256": "e8fefd1dd5ff65a3e69f2edf1e54d817bef68539c1810da8ecb6c389da0930c5",
+    "raw_read_only_verified": true,
+    "reused_extraction": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\diagnostics-ac-2026-10-19\\research\\extracted-workbooks.json",
+    "exact_rows_reverified": true
+  },
+  {
+    "path": "C:\\Users\\ADMIN\\Downloads\\digitecme.com-Performance-on-Search-2026-09-27.xlsx",
+    "sha256": "83d6b92aff7fb32aa6f7e095f219b3ceedc6c56fabd73837f4ea75136240ee51",
+    "source_unchanged": true,
+    "filters": {
+      "Search type": "Web",
+      "Date": "Last 6 months"
+    },
+    "time_column": "Date",
+    "start": "2026-04-12",
+    "end": "2026-09-25",
+    "time_rows": 167,
+    "sheets": {
+      "Chart": {
+        "range": "A1:E168",
+        "rows": 167
+      },
+      "Queries": {
+        "range": "A1:E1001",
+        "rows": 1000
+      },
+      "Pages": {
+        "range": "A1:E996",
+        "rows": 995
+      },
+      "Countries": {
+        "range": "A1:E172",
+        "rows": 171
+      },
+      "Devices": {
+        "range": "A1:E4",
+        "rows": 3
+      },
+      "Search appearance": {
+        "range": "A1:E2",
+        "rows": 1
+      },
+      "Filters": {
+        "range": "A1:B3",
+        "rows": 2
+      }
+    },
+    "data_table_sha256": "9f73cca53ea31e3955a3fc99e94ecc45fd6c1f4d408779ef6bdf0c8268878c83",
+    "semantic_duplicate_of": null,
+    "current_sha256": "83d6b92aff7fb32aa6f7e095f219b3ceedc6c56fabd73837f4ea75136240ee51",
+    "raw_read_only_verified": true,
+    "reused_extraction": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\diagnostics-ac-2026-10-19\\research\\extracted-workbooks.json",
+    "exact_rows_reverified": true
+  },
+  {
+    "path": "C:\\Users\\ADMIN\\Downloads\\digitecme.com-Performance-on-Search-2026-10-05.xlsx",
+    "sha256": "71aa08d40c50ca7ab0128b38abedee67e2a111c7da42440824067b5250f76b89",
+    "source_unchanged": true,
+    "filters": {
+      "Search type": "Web",
+      "Date": "Last 28 days",
+      "Page": "https://digitecme.com/tuning"
+    },
+    "time_column": "Date",
+    "start": "2026-09-05",
+    "end": "2026-10-02",
+    "time_rows": 28,
+    "sheets": {
+      "Chart": {
+        "range": "A1:E29",
+        "rows": 28
+      },
+      "Queries": {
+        "range": "A1:E114",
+        "rows": 113
+      },
+      "Pages": {
+        "range": "A1:E2",
+        "rows": 1
+      },
+      "Countries": {
+        "range": "A1:E19",
+        "rows": 18
+      },
+      "Devices": {
+        "range": "A1:E3",
+        "rows": 2
+      },
+      "Search appearance": {
+        "range": "A1:E1",
+        "rows": 0
+      },
+      "Filters": {
+        "range": "A1:B4",
+        "rows": 3
+      }
+    },
+    "data_table_sha256": "e630fd9b9b892bcba3fcb310b22c891d66c72e5e0f5087ac819ed4ba1a538d28",
+    "semantic_duplicate_of": null,
+    "current_sha256": "71aa08d40c50ca7ab0128b38abedee67e2a111c7da42440824067b5250f76b89",
+    "raw_read_only_verified": true,
+    "reused_extraction": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\diagnostics-ac-2026-10-19\\research\\extracted-workbooks.json",
+    "exact_rows_reverified": true
+  },
+  {
+    "path": "C:\\Users\\ADMIN\\Downloads\\digitecme.com-Performance-on-Search-2026-10-12 (1).xlsx",
+    "sha256": "3fcbcb796e4670809bc44d52852369a58bf8650d6577c496a1f71a996573945e",
+    "source_unchanged": true,
+    "filters": {
+      "Search type": "Web",
+      "Date": "Last 3 months"
+    },
+    "time_column": "Date",
+    "start": "2026-07-10",
+    "end": "2026-10-09",
+    "time_rows": 92,
+    "sheets": {
+      "Chart": {
+        "range": "A1:E93",
+        "rows": 92
+      },
+      "Queries": {
+        "range": "A1:E1001",
+        "rows": 1000
+      },
+      "Pages": {
+        "range": "A1:E1001",
+        "rows": 1000
+      },
+      "Countries": {
+        "range": "A1:E176",
+        "rows": 175
+      },
+      "Devices": {
+        "range": "A1:E4",
+        "rows": 3
+      },
+      "Search appearance": {
+        "range": "A1:E2",
+        "rows": 1
+      },
+      "Filters": {
+        "range": "A1:B3",
+        "rows": 2
+      }
+    },
+    "data_table_sha256": "f41383273b966c3e3acfa4e82f0840561025834cf608569b0e70a8e567c38431",
+    "semantic_duplicate_of": null,
+    "current_sha256": "3fcbcb796e4670809bc44d52852369a58bf8650d6577c496a1f71a996573945e",
+    "raw_read_only_verified": true,
+    "reused_extraction": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\diagnostics-ac-2026-10-19\\research\\extracted-workbooks.json",
+    "exact_rows_reverified": true
+  },
+  {
+    "path": "C:\\Users\\ADMIN\\Downloads\\digitecme.com-Performance-on-Search-2026-10-12.xlsx",
+    "sha256": "250d14da5ef12f5ee62582a8b5530c88d97e61fea96dc17685a9009fd09a65bd",
+    "source_unchanged": true,
+    "filters": {
+      "Search type": "Web",
+      "Date": "Last 3 months",
+      "Search appearance": "Product snippets"
+    },
+    "time_column": "Date",
+    "start": "2026-07-10",
+    "end": "2026-10-09",
+    "time_rows": 92,
+    "sheets": {
+      "Chart": {
+        "range": "A1:E93",
+        "rows": 92
+      },
+      "Queries": {
+        "range": "A1:E20",
+        "rows": 19
+      },
+      "Pages": {
+        "range": "A1:E13",
+        "rows": 12
+      },
+      "Countries": {
+        "range": "A1:E2",
+        "rows": 1
+      },
+      "Devices": {
+        "range": "A1:E3",
+        "rows": 2
+      },
+      "Search appearance": {
+        "range": "A1:E2",
+        "rows": 1
+      },
+      "Filters": {
+        "range": "A1:B4",
+        "rows": 3
+      }
+    },
+    "data_table_sha256": "70798bf4d9548b8bfff9288a1c0e116e389afd9cff5025f4834f4802a937a35d",
+    "semantic_duplicate_of": null,
+    "current_sha256": "250d14da5ef12f5ee62582a8b5530c88d97e61fea96dc17685a9009fd09a65bd",
+    "raw_read_only_verified": true,
+    "reused_extraction": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\diagnostics-ac-2026-10-19\\research\\extracted-workbooks.json",
+    "exact_rows_reverified": true
+  },
+  {
+    "path": "C:\\Users\\ADMIN\\Downloads\\digitecme.com-Performance-on-Search-2026-10-17.xlsx",
+    "sha256": "1a1570e6f9180667f663e333edb971099216cf5fae96969441687d0c07cc4092",
+    "source_unchanged": true,
+    "filters": {
+      "Search type": "Web (text-based)",
+      "Date": "Last 3 months",
+      "Query": "+ppf"
+    },
+    "time_column": "Date",
+    "start": "2026-07-15",
+    "end": "2026-10-14",
+    "time_rows": 92,
+    "sheets": {
+      "Chart": {
+        "range": "A1:E93",
+        "rows": 92
+      },
+      "Queries": {
+        "range": "A1:E81",
+        "rows": 80
+      },
+      "Pages": {
+        "range": "A1:E7",
+        "rows": 6
+      },
+      "Countries": {
+        "range": "A1:E24",
+        "rows": 23
+      },
+      "Devices": {
+        "range": "A1:E3",
+        "rows": 2
+      },
+      "Search appearance": {
+        "range": "A1:E2",
+        "rows": 1
+      },
+      "Filters": {
+        "range": "A1:B4",
+        "rows": 3
+      }
+    },
+    "data_table_sha256": "9c8024ed32b761f2025dbde3f2f0382ceadfcc92b453ad8fd800a4eaf6853bc8",
+    "semantic_duplicate_of": null,
+    "current_sha256": "1a1570e6f9180667f663e333edb971099216cf5fae96969441687d0c07cc4092",
+    "raw_read_only_verified": true,
+    "reused_extraction": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\diagnostics-ac-2026-10-19\\research\\extracted-workbooks.json",
+    "exact_rows_reverified": true
+  },
+  {
+    "path": "C:\\Users\\ADMIN\\Downloads\\digitecme.com-Performance-on-Search-2026-10-19.xlsx",
+    "sha256": "0190f0505365029c2d529cf4a452815e6a0f446ba18eaf130a95bc60b92ba6c9",
+    "source_unchanged": true,
+    "filters": {
+      "Search type": "Web (text-based)",
+      "Time range": "Last 24 hours"
+    },
+    "time_column": "Time (UTC+04:00)",
+    "start": "2026-10-18T06:00:00",
+    "end": "2026-10-19T05:00:00",
+    "time_rows": 24,
+    "sheets": {
+      "Chart": {
+        "range": "A1:E25",
+        "rows": 24
+      },
+      "Queries": {
+        "range": "A1:E527",
+        "rows": 526
+      },
+      "Pages": {
+        "range": "A1:E138",
+        "rows": 137
+      },
+      "Countries": {
+        "range": "A1:E41",
+        "rows": 40
+      },
+      "Devices": {
+        "range": "A1:E4",
+        "rows": 3
+      },
+      "Search appearance": {
+        "range": "A1:E2",
+        "rows": 1
+      },
+      "Filters": {
+        "range": "A1:B3",
+        "rows": 2
+      }
+    },
+    "data_table_sha256": "196576756c2a91316b1074d4992383153c29b1a1aded623df07d4616b2174560",
+    "semantic_duplicate_of": null,
+    "current_sha256": "0190f0505365029c2d529cf4a452815e6a0f446ba18eaf130a95bc60b92ba6c9",
+    "raw_read_only_verified": true,
+    "reused_extraction": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\diagnostics-ac-2026-10-19\\research\\extracted-workbooks.json",
+    "exact_rows_reverified": true
+  }
+]

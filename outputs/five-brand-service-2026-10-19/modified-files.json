@@ -1,0 +1,55 @@
+{
+  "sourceAndTestFiles": [
+    {
+      "file": "src/data/brands.ts",
+      "change": "modified",
+      "beforeSha256": "dac6d48dfa9defd3410a4db60abbaeeb7ab6e542faa3dbfcb1e7493cf749d64b",
+      "afterSha256": "bc5ff647c044a7ea4b800cb83738ebdc6ee8bcab720bf6af4e8c2f222a351464",
+      "allowed": true
+    },
+    {
+      "file": "src/data/priorityBrandSeo.ts",
+      "change": "modified",
+      "beforeSha256": "36c2c69e09da06bc5b678de3d04392678f55205bb70904ed00a47cda58b5a91a",
+      "afterSha256": "f063a940185a569e28db046a7fb9148fed9d1d95928608e8435e1e491b34b6eb",
+      "allowed": true
+    },
+    {
+      "file": "src/i18n/ar-brands.ts",
+      "change": "modified",
+      "beforeSha256": "391a8b4b6fa1a914bd43f1e4fbf8bc020b250b613253472d94a94c9ce98f35aa",
+      "afterSha256": "70295d4699ca0be73a18c1bf7efc11d65db29e64f6937667e3b5016cd5ddff4b",
+      "allowed": true
+    },
+    {
+      "file": "src/pages/BrandPage.tsx",
+      "change": "modified",
+      "beforeSha256": "b0cd96af71054707d10da1b77128c1191fe5bf36da7f53498638d73700887992",
+      "afterSha256": "231cb000c99d7387629ffa409dfe99917fbd7ee3435f6ec542ecd933953de8b1",
+      "allowed": true
+    },
+    {
+      "file": "scripts/test-master-seo-browser.mjs",
+      "change": "modified",
+      "beforeSha256": "0ec30ba904a2f84eb65bc2a713c60ad970a7bfc11e5849453fa01b920e161d02",
+      "afterSha256": "9eaa97c880bcc308b09684d662b151d51d3f9c69511acbfd6432de209050ee2b",
+      "allowed": true
+    },
+    {
+      "file": "src/components/BrandServiceScope.tsx",
+      "change": "added",
+      "beforeSha256": null,
+      "afterSha256": "090efec27c4931938ce0eee88501a7d994a1b4bd7ce88020520142cc9d2ce8f9",
+      "allowed": true
+    },
+    {
+      "file": "src/data/brandServiceSprint.ts",
+      "change": "added",
+      "beforeSha256": null,
+      "afterSha256": "b9ec9f06ffbca5aa32ebc170ed922761eaf78a77ac4eaead4f018368167108c0",
+      "allowed": true
+    }
+  ],
+  "evidenceDirectory": "outputs/five-brand-service-2026-10-19",
+  "preExistingEditsPreserved": true
+}

@@ -1,0 +1,147 @@
+{
+  "source_workbooks": 17,
+  "all_raw_sources_verified_unchanged": true,
+  "all_cells_equal_reused_extraction": true,
+  "matrix_rows": 92,
+  "measured_distinct_queries": 69,
+  "proposed_distinct_queries": 23,
+  "requested_candidates": 16,
+  "requested_exact_measured": 1,
+  "requested_exact_proposed": 15,
+  "top15": 15,
+  "all_top15_have_primary_92d_exact_rows": true,
+  "all_top15_ctr_and_clicks_measured_zero": true,
+  "primary_92d_matrix_queries": 23,
+  "overlapping_periods_summed": false,
+  "independent_tabs_joined_to_queries": false,
+  "page_filtered_tuning_ownership_observations": 4,
+  "query_observations_all_sources_not_summed": 284,
+  "excluded_observations_not_summed": 38,
+  "monthly_search_volume_invented": false,
+  "missing_metrics_coerced_to_zero": false,
+  "all_structural_owners_verified_indexable": true,
+  "all_structural_owners_in_sitemap": true,
+  "owner_audit_path": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\ecu-electronics-2026-10-19\\audit\\baseline-owner-audit.json",
+  "owner_audit_sha256": "4272a9c5fb7e56ba6a1236e22ede5a83e39ea767caa3a7dcfac098db17680524",
+  "raw_verification": [
+    {
+      "source_file": "digitecme.com-Performance-on-Search-2026-09-05.xlsx",
+      "sha256": "044fbeaef3d3db322cf0f0cddf1abf73ca2923b21898d1b2750e5f3962f0e603",
+      "all_sheet_cells_equal_prior_extraction": true,
+      "hash_unchanged_during_read": true,
+      "query_rows": 1000
+    },
+    {
+      "source_file": "digitecme.com-Performance-on-Search-2026-09-08 (1).xlsx",
+      "sha256": "62e89a8606a7b4b0d34d51fb41301653ffa05e52941f18d4a39196001dd3c868",
+      "all_sheet_cells_equal_prior_extraction": true,
+      "hash_unchanged_during_read": true,
+      "query_rows": 353
+    },
+    {
+      "source_file": "digitecme.com-Performance-on-Search-2026-09-08 (2) (1).xlsx",
+      "sha256": "e576525d0106761efb97d99f6287c66868f8e03d341a57fc0229d4b282577810",
+      "all_sheet_cells_equal_prior_extraction": true,
+      "hash_unchanged_during_read": true,
+      "query_rows": 1000
+    },
+    {
+      "source_file": "digitecme.com-Performance-on-Search-2026-09-08 (2).xlsx",
+      "sha256": "e576525d0106761efb97d99f6287c66868f8e03d341a57fc0229d4b282577810",
+      "all_sheet_cells_equal_prior_extraction": true,
+      "hash_unchanged_during_read": true,
+      "query_rows": 1000
+    },
+    {
+      "source_file": "digitecme.com-Performance-on-Search-2026-09-08.xlsx",
+      "sha256": "12845dd47351747e383a3c01d05688e2263efc54cc06661f136f2ea64af7843f",
+      "all_sheet_cells_equal_prior_extraction": true,
+      "hash_unchanged_during_read": true,
+      "query_rows": 1000
+    },
+    {
+      "source_file": "digitecme.com-Performance-on-Search-2026-09-13.xlsx",
+      "sha256": "14210311acf3258eb78c443f97592db82c2e29fb35c50fa73faee222952d10f9",
+      "all_sheet_cells_equal_prior_extraction": true,
+      "hash_unchanged_during_read": true,
+      "query_rows": 1000
+    },
+    {
+      "source_file": "digitecme.com-Performance-on-Search-2026-09-16.xlsx",
+      "sha256": "8c74d5a83a5df26d74e5e8b19e705cdff82ba4115dac907a67fda990a5c77ee1",
+      "all_sheet_cells_equal_prior_extraction": true,
+      "hash_unchanged_during_read": true,
+      "query_rows": 1000
+    },
+    {
+      "source_file": "digitecme.com-Performance-on-Search-2026-09-18 (1).xlsx",
+      "sha256": "f9d82af3a7358fa71928f032c087639d4e963116419f27e08fb29aa85b7e725e",
+      "all_sheet_cells_equal_prior_extraction": true,
+      "hash_unchanged_during_read": true,
+      "query_rows": 1
+    },
+    {
+      "source_file": "digitecme.com-Performance-on-Search-2026-09-18.xlsx",
+      "sha256": "bbf05a139515dee082f8bd161fa6a58974336977b3635d8743053bac00fd1978",
+      "all_sheet_cells_equal_prior_extraction": true,
+      "hash_unchanged_during_read": true,
+      "query_rows": 1000
+    },
+    {
+      "source_file": "digitecme.com-Performance-on-Search-2026-09-19 (1).xlsx",
+      "sha256": "002120f78dbd45d1e131e7737d4f9803dd1b219f87d3196fa9fcb12b4c30c767",
+      "all_sheet_cells_equal_prior_extraction": true,
+      "hash_unchanged_during_read": true,
+      "query_rows": 2
+    },
+    {
+      "source_file": "digitecme.com-Performance-on-Search-2026-09-19.xlsx",
+      "sha256": "e8fefd1dd5ff65a3e69f2edf1e54d817bef68539c1810da8ecb6c389da0930c5",
+      "all_sheet_cells_equal_prior_extraction": true,
+      "hash_unchanged_during_read": true,
+      "query_rows": 1
+    },
+    {
+      "source_file": "digitecme.com-Performance-on-Search-2026-09-27.xlsx",
+      "sha256": "83d6b92aff7fb32aa6f7e095f219b3ceedc6c56fabd73837f4ea75136240ee51",
+      "all_sheet_cells_equal_prior_extraction": true,
+      "hash_unchanged_during_read": true,
+      "query_rows": 1000
+    },
+    {
+      "source_file": "digitecme.com-Performance-on-Search-2026-10-05.xlsx",
+      "sha256": "71aa08d40c50ca7ab0128b38abedee67e2a111c7da42440824067b5250f76b89",
+      "all_sheet_cells_equal_prior_extraction": true,
+      "hash_unchanged_during_read": true,
+      "query_rows": 113
+    },
+    {
+      "source_file": "digitecme.com-Performance-on-Search-2026-10-12 (1).xlsx",
+      "sha256": "3fcbcb796e4670809bc44d52852369a58bf8650d6577c496a1f71a996573945e",
+      "all_sheet_cells_equal_prior_extraction": true,
+      "hash_unchanged_during_read": true,
+      "query_rows": 1000
+    },
+    {
+      "source_file": "digitecme.com-Performance-on-Search-2026-10-12.xlsx",
+      "sha256": "250d14da5ef12f5ee62582a8b5530c88d97e61fea96dc17685a9009fd09a65bd",
+      "all_sheet_cells_equal_prior_extraction": true,
+      "hash_unchanged_during_read": true,
+      "query_rows": 19
+    },
+    {
+      "source_file": "digitecme.com-Performance-on-Search-2026-10-17.xlsx",
+      "sha256": "1a1570e6f9180667f663e333edb971099216cf5fae96969441687d0c07cc4092",
+      "all_sheet_cells_equal_prior_extraction": true,
+      "hash_unchanged_during_read": true,
+      "query_rows": 80
+    },
+    {
+      "source_file": "digitecme.com-Performance-on-Search-2026-10-19.xlsx",
+      "sha256": "0190f0505365029c2d529cf4a452815e6a0f446ba18eaf130a95bc60b92ba6c9",
+      "all_sheet_cells_equal_prior_extraction": true,
+      "hash_unchanged_during_read": true,
+      "query_rows": 526
+    }
+  ]
+}

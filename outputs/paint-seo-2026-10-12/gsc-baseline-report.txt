@@ -1,0 +1,72 @@
+DIGI-TEC Search Console export baseline
+Analysis date: 12 October 2026
+Read-only extraction; originals unchanged.
+
+Export scopes
+The two files are different exports, not duplicates. Both cover 10 July to 9 October 2026 (92 daily rows).
+The no-suffix file filters Web search to Product snippets. It has 0 clicks and 122 impressions.
+The (1) file filters Web search to Last 3 months with no Search appearance filter. It matches the brief:
+515 clicks, 108,445 impressions, calculated CTR 0.4749%, approximate daily-impression-weighted position 22.13.
+Use the (1) file for the overall search baseline. Do not add the filtered Product snippets export to it.
+
+Sheet coverage and reconciliation
+Each file contains Chart, Queries, Pages, Countries, Devices, Search appearance and Filters.
+The daily date dimension is called Chart; there is no separately named Dates worksheet.
+In (1), Chart, Countries and Devices reconcile to 515 clicks and 108,445 impressions.
+Queries contains exactly 1,000 rows totaling 138 clicks and 64,843 impressions.
+Pages contains exactly 1,000 rows totaling 519 clicks and 116,261 impressions.
+Google documents property/page aggregation differences, query privacy omissions and the 1,000-row table limit.
+The Pages sum is a different aggregation from the overall property total. The exported query table is incomplete.
+The Search appearance row in both exports is Product snippets: 0 clicks, 122 impressions, position 33.10.
+
+Priority service and blog rows in the sitewide (1) export
+URL suffix | Clicks | Impressions | Calculated CTR | Position | Excel range
+/services/paint-protection-film | 3 | 1,016 | 0.2953% | 39.14 | Pages!A30:E30
+/services/paint-protection-dubai | 1 | 3,957 | 0.0253% | 38.15 | Pages!A67:E67
+/services/ceramic-coating | 0 | 512 | 0.0000% | 32.40 | Pages!A167:E167
+/blog/ceramic-coating-vs-ppf-dubai | 0 | 168 | 0.0000% | 21.81 | Pages!A192:E192
+/ar/services/paint-protection-dubai | 0 | 19 | 0.0000% | 15.11 | Pages!A452:E452
+/ar/blog/ceramic-coating-vs-ppf-dubai | 0 | 9 | 0.0000% | 20.89 | Pages!A596:E596
+/ar/services/paint-protection-film | 0 | 8 | 0.0000% | 12.00 | Pages!A612:E612
+/blog/why-ceramic-coating-matters-uae | 0 | 1 | 0.0000% | 9.00 | Pages!A996:E996
+
+Priority query rows in the sitewide (1) export
+Query | Clicks | Impressions | Position | Excel range
+car paint protection | 0 | 471 | 39.86 | Queries!A72:E72
+ceramic paint protection dubai | 0 | 329 | 32.21 | Queries!A87:E87
+paint protection coating | 0 | 323 | 31.44 | Queries!A88:E88
+ceramic paint protection | 0 | 217 | 37.12 | Queries!A107:E107
+car paint protection dubai | 0 | 216 | 30.36 | Queries!A108:E108
+paint protection film near me | 0 | 191 | 21.13 | Queries!A115:E115
+paint protection | 0 | 189 | 40.11 | Queries!A119:E119
+paint protection dubai | 0 | 116 | 35.23 | Queries!A170:E170
+ceramic coating dubai | 0 | 53 | 30.94 | Queries!A384:E384
+paint protection film dubai | 2 | 50 | 29.72 | Queries!A16:E16
+ppf dubai | 0 | 28 | 23.25 | Queries!A694:E694
+car polishing dubai | absent from exported top 1,000 rows; activity unavailable
+paint correction dubai | absent from exported top 1,000 rows; activity unavailable
+
+Devices and location in the sitewide (1) export
+Mobile: 308 clicks, 37,621 impressions, calculated CTR 0.8187%, position 13.75 (Devices!A2:E2).
+Desktop: 204 clicks, 70,141 impressions, calculated CTR 0.2908%, position 26.60 (Devices!A3:E3).
+Tablet: 3 clicks, 683 impressions, calculated CTR 0.4392%, position 25.89 (Devices!A4:E4).
+United Arab Emirates: 436 clicks, 100,289 impressions, calculated CTR 0.4347%, position 22.72 (Countries!A2:E2).
+UAE accounts for 84.66% of clicks and 92.48% of impressions. These are sitewide segments, not service-specific segments.
+
+Interpretation
+All supplied service-page and query impression/position figures match the sitewide workbook.
+Paint protection film dubai also has 2 query clicks (4.00% CTR), which was not included in the brief table.
+The hub has the most priority-page impressions, and the priority service destinations have low search click volume.
+Separate query and page rows cannot prove which URL ranks for a query, keyword cannibalization or a language-specific query association.
+Absence of polishing/correction query or URL rows in the top 1,000 is not evidence that those searches receive no impressions.
+Arabic hub/PPF rows have small samples; do not treat their lower average positions as proof of superior performance.
+
+Official interpretation references
+https://support.google.com/webmasters/answer/17011364?hl=en
+https://support.google.com/webmasters/answer/17010575?hl=en
+
+Source integrity
+digitecme.com-Performance-on-Search-2026-10-12.xlsx
+SHA256: 250d14da5ef12f5ee62582a8b5530c88d97e61fea96dc17685a9009fd09a65bd
+digitecme.com-Performance-on-Search-2026-10-12 (1).xlsx
+SHA256: 3fcbcb796e4670809bc44d52852369a58bf8650d6577c496a1f71a996573945e

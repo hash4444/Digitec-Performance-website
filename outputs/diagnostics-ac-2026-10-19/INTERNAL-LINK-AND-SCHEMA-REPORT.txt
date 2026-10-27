@@ -1,0 +1,65 @@
+DIGI-TEC diagnostics and AC — internal links and structured data
+19 October 2026. Local candidate evidence; no publication or Google indexing claim.
+
+38 new direct link placements across 16 English/Arabic pages
+---------------------------------------------------------
+The new localized assessment panel provides three diagnostic brand paths on each
+general diagnostic page and four AC brand paths on each general AC page. Each
+of the six selected brand owners has two contextual paths, in both languages.
+These are 38 placements, not 38 unique destination URLs; some destinations were
+already linked elsewhere on a page. All added targets are existing indexable,
+self-canonical routes without an intermediate alias or locale redirect.
+
+General diagnostics -> existing Mercedes, BMW and Porsche diagnostic owners.
+General AC -> existing Mercedes, BMW, Volkswagen and Range Rover AC owners.
+Brand diagnostics -> the brand mechanical owner and general electrical owner.
+Brand AC -> the same brand diagnostic owner and general AC assessment owner.
+
+Mercedes links use /services/mercedes-diagnostics-dubai and
+/services/mercedes-ac-repair-dubai, preserving their canonical ownership.
+Other selected brands retain their /brands/{brand-service-dubai}/ service owners.
+LocalizedLink generates existing /ar counterparts. No symptom keyword route,
+new service hub, noindex-policy change or completed brand-hub edit was introduced.
+The existing hubs already link to the selected services; those inlinks are tested.
+
+Structured data
+---------------
+Existing Service, WebPage, BreadcrumbList and FAQPage builders are retained.
+Each selected page continues to own a single route Service node with the same ID
+and https://digitecme.com/#business provider reference. The established business,
+organization, website and service-catalog entities are unchanged. No additional
+LocalBusiness, rating, price, manufacturer relationship or AI-specific schema
+was added. Canonical and reciprocal en-AE/ar-AE/x-default references are unchanged.
+
+The two general Service/WebPage descriptions now reflect the actual diagnostic
+or AC assessment metadata rather than a generic contact sentence. Arabic service
+types explicitly describe diagnostics or AC repair; the old general diagnostic
+programming emphasis is removed from that selected Service.serviceType. Brand
+pages continue using their existing schema builder with the refined description.
+
+All 16 selected pages expose five visible, crawlable FAQ answers and matching
+FAQPage data (80 question/answer occurrences across the locale pages). This is
+semantic parity, not a promise of a Google FAQ rich result or an AI citation.
+No structured-data feature eligibility or external Rich Results test is claimed.
+
+Validation
+----------
+qa/diagnostics-ac-static-results.json passed 1,011 checks across the 16 selected
+locale pages, including JSON parsing, entity identity/provider, FAQ text parity,
+canonical/hreflang, sitemap and every new link target. It also verifies 53 protected
+visible SSR pages and 20 existing noindex policies. React/Radix generated ID tokens
+and insignificant whitespace are normalized for protected HTML equality; visible content,
+links, forms, attributes and structural behavior remain tested.
+
+The prior five-brand/repair static suite separately passed 1,454 assertions across
+32 locale routes. The production SEO validator passed all 1,256 rendered routes
+and 1,005 canonical sitemap URLs; the route inventory has not grown.
+
+Details: qa/metadata-before-after.csv, qa/diagnostics-ac-static-results.json,
+qa/combined-static-results.json, qa/combined-cli-results.json and browser evidence.
+
+Google Search Central guidance checked 19 October 2026:
+https://developers.google.com/search/docs/appearance/ai-features
+Google applies normal SEO fundamentals to AI features, requires content/schema
+consistency and identifies no special AI schema requirement. Eligible content is
+not guaranteed to be indexed, surfaced or cited.

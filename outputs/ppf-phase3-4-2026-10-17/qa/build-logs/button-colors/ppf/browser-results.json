@@ -1,0 +1,40 @@
+{
+  "passed": true,
+  "base": "http://127.0.0.1:51595",
+  "prerenderedWithoutJavaScript": true,
+  "viewportWidths": [
+    1440,
+    390,
+    320
+  ],
+  "whatsappCtas": 5,
+  "quoteEvents": [
+    [
+      "event",
+      "quote_started",
+      {
+        "page_path": "/services/paint-protection-film",
+        "form_id": "ppf-quote-form",
+        "cta_placement": "ppf_quote",
+        "service": "ppf"
+      }
+    ],
+    {
+      "event": "whatsapp_click",
+      "link_url": "https://wa.me/97143402223",
+      "page_path": "/services/paint-protection-film"
+    },
+    [
+      "event",
+      "whatsapp_draft_opened",
+      {
+        "page_path": "/services/paint-protection-film",
+        "form_id": "ppf-quote-form",
+        "cta_placement": "ppf_quote",
+        "service": "ppf"
+      }
+    ]
+  ],
+  "externalRequestsBlocked": 10,
+  "errors": []
+}

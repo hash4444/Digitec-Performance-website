@@ -1,0 +1,38 @@
+[
+  {
+    "priority": "P1",
+    "gap": "Broad repair framing dominates title/H1 and much of leading page structure",
+    "evidence": "Current EN title Mercedes Repair & Service Dubai | Al Quoz | Digi-Tec; H1 Mercedes-Benz Repair & Service Dubai. Maintenance section follows repair/model/reasons/all-services sections.",
+    "action": "Adopt proposed service-first title/H1 after ownership verification; bring existing maintenance scope ahead of secondary repair/model details; preserve canonical and established graph identities."
+  },
+  {
+    "priority": "P1",
+    "gap": "Servicing-specific enquiry intake incomplete",
+    "evidence": "Hero says Book Mercedes Service already. Static draft only model/year and service/warning/symptom. Generic form issue placeholder mentions mileage/history/appointment but does not separately request A/B reminder; Arabic placeholder generic.",
+    "action": "Use scoped Mercedes intake for model, year, mileage, A/B or other message, available history and preferred appointment. Preserve phone/WhatsApp integrations; draft/click not booking."
+  },
+  {
+    "priority": "P1",
+    "gap": "Service A/B and process copy repeats across several sections",
+    "evidence": "Leading servicecard, general all-services A/B paragraph, maintenance4rows, story/FAQ repeat related themes.",
+    "action": "Consolidate duplicated broad paragraphs into a useful scheduled-service section; retain concise FAQs and repair navigation. Avoid enlarging page without purpose."
+  },
+  {
+    "priority": "P2",
+    "gap": "Service directory lacks contextual Mercedes body link",
+    "evidence": "Directory excludes legacy mercedes-repair-dubai catalogue item. Baseline EN/AR directory links only via shared footer.",
+    "action": "Add one contextual scheduled-service link per locale to existing hub#mercedes-maintenance-scope. Leave catalogue/schema/PPF/tuning unchanged."
+  },
+  {
+    "priority": "P2",
+    "gap": "Authority is weaker than specific maintenance evidence would provide",
+    "evidence": "mercedesCaseStudies collection empty. Existing workshop/powertrain and conversion images have no new servicing job record, outcome or publication permission supplied.",
+    "action": "Collect permissioned dated servicing job records and original matching photographs; do not relabel tuning/conversion evidence as Service A/B."
+  },
+  {
+    "priority": "P1 evidence",
+    "gap": "Exact-query current owner and country/device ranking unresolved",
+    "evidence": "HTTPselfcanonical/indexability plus historical average13.88 does not establish current Googlecanonical or querypageowner.",
+    "action": "Obtain current exactquery Pages evidence UAEdesktop/mobile and authorized URLInspection; use measured baselines without inventing segments."
+  }
+]

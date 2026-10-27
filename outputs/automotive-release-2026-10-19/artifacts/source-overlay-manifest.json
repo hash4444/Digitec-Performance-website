@@ -1,0 +1,60 @@
+{
+  "base": "6180f453feaaf21b8c786f23bb3867a09666ed64",
+  "files": [
+    {
+      "path": "src/data/brands.ts",
+      "sha256": "bc5ff647c044a7ea4b800cb83738ebdc6ee8bcab720bf6af4e8c2f222a351464",
+      "bytes": 57120
+    },
+    {
+      "path": "src/data/priorityBrandSeo.ts",
+      "sha256": "f063a940185a569e28db046a7fb9148fed9d1d95928608e8435e1e491b34b6eb",
+      "bytes": 7745
+    },
+    {
+      "path": "src/i18n/ar-brands.ts",
+      "sha256": "70295d4699ca0be73a18c1bf7efc11d65db29e64f6937667e3b5016cd5ddff4b",
+      "bytes": 27105
+    },
+    {
+      "path": "src/pages/BrandPage.tsx",
+      "sha256": "231cb000c99d7387629ffa409dfe99917fbd7ee3435f6ec542ecd933953de8b1",
+      "bytes": 136730
+    },
+    {
+      "path": "scripts/test-master-seo-browser.mjs",
+      "sha256": "9eaa97c880bcc308b09684d662b151d51d3f9c69511acbfd6432de209050ee2b",
+      "bytes": 19203
+    },
+    {
+      "path": "src/components/BrandServiceScope.tsx",
+      "sha256": "090efec27c4931938ce0eee88501a7d994a1b4bd7ce88020520142cc9d2ce8f9",
+      "bytes": 1826
+    },
+    {
+      "path": "src/data/brandServiceSprint.ts",
+      "sha256": "b9ec9f06ffbca5aa32ebc170ed922761eaf78a77ac4eaead4f018368167108c0",
+      "bytes": 8470
+    },
+    {
+      "path": "src/pages/BrandServicePage.tsx",
+      "sha256": "033cbc5a228c36e83877e1184161a337a4fa2b12ed1db8272c2509eee44960e4",
+      "bytes": 115720
+    },
+    {
+      "path": "src/components/RepairEnquiryPanel.tsx",
+      "sha256": "976f270a7d55fdc9e239ed1684564f1ea1d4ae5c32722f8fb60108db5751b09b",
+      "bytes": 4162
+    },
+    {
+      "path": "src/data/repairServiceArabic.ts",
+      "sha256": "8ac0044a9a50a9f8a108ffd77cfc343306c7d13848c80f4584ff1ffb99b113f1",
+      "bytes": 27197
+    },
+    {
+      "path": "src/data/repairServiceContent.ts",
+      "sha256": "3c32436b9b5ccc6bc78eb6bc03c6fb6af0426ee5d95382ef57edf874f03f7273",
+      "bytes": 15226
+    }
+  ]
+}

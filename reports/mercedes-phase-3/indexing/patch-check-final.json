@@ -1,0 +1,30 @@
+{
+  "checkedAt": "2026-10-26T08:33:35.230Z",
+  "offlineOnly": true,
+  "sourceApplication": false,
+  "build": false,
+  "checks": [
+    {
+      "path": "proposals/hub/mercedes-hub-minimal.patch",
+      "exitCode": 0,
+      "passed": true,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "path": "proposals/services/mercedes-body-enquiry-minimal.patch",
+      "exitCode": 0,
+      "passed": true,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "path": "proposals/services/general-body-to-mercedes-context-link.patch",
+      "exitCode": 0,
+      "passed": true,
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "allPassed": true
+}

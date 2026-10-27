@@ -1,0 +1,32 @@
+DIGI-TEC About Us video carousel audit — 20 October 2026
+
+Current owners: /about and /ar/about, rendered from src/pages/AboutUs.tsx.
+The page owns its existing AboutPage + BreadcrumbList graph through useSeo. It has one PageIntro H1, a concise AnswerBlock, TrustBar, Our Story, workshop still-image gallery, service enquiries, mission, WhyChooseUs, contact and FinalCTA. There is no existing video carousel on this page.
+
+Recommended placement: after Our Story and before Workshop gallery. This introduces the supplied workshop clips naturally without replacing the photographs, contact information, claims or existing metadata/schema. New section should have its own H2 and English/Arabic copy. No new route or VideoObject claim is required.
+
+Existing reusable patterns:
+- src/components/ui/carousel.tsx uses already installed embla-carousel-react 8.3; previous/next keyboard controls and horizontal carousel semantics exist. No new dependency is required. There is no autoplay plugin dependency.
+- src/components/GoogleReviews.tsx supplies a site precedent for automatic rotation, pause/play, hover/focus suspension, explicit manual navigation and prefers-reduced-motion.
+- src/components/motion/Reveal.tsx and CountUp.tsx show IntersectionObserver / reduced-motion patterns.
+
+Implementation recommendations:
+- Use a horizontal, swipeable strip of all five clips, retaining each complete source duration. Avoid a continuously translated duplicate set of playable videos: duplicate controls and simultaneous playback complicate touch use and access.
+- Provide an explicit automatic-scroll pause/resume control with >=44px hit target, previous/next controls, accessible localised names, and visible current position. Automatic motion must pause while hovered, focused, off-screen, document-hidden or the user is watching a clip. Manual navigation should remain available.
+- Respect reduced motion at initial load and when the preference changes. Reduced motion should disable automatic movement until a deliberate user activation; native/manual video playback can remain available.
+- Keep genuine video elements with playsInline, controls, no audible autoplay, stable aspect ratio and useful posters. Avoid downloading all source files at initial load; preload=none and lazy source mounting near the viewport can keep the About page inexpensive. Use H.264 MP4 and image posters for broad client compatibility. Preserve audio in full playback if the supplied clips contain it.
+- Portrait videos should use consistent portrait cards with object-contain so existing text or subject matter is not cropped. Do not stretch assets. Controls must remain visible at 320px and in RTL.
+- Keep chronological clip order in both locales, use RTL-aware navigation, and verify no body horizontal overflow. Do not label a clip with unsupported repair capabilities; descriptive labels can be based on inspected visible content.
+- Do not add arbitrary durations, thumbnails, transcript text, captions or VideoObject claims without extracting/verifying them. If any supplied clip relies on spoken information, retain its existing audio and identify the need for reviewed captions rather than inventing them.
+
+Focused browser QA:
+1. /about and /ar/about at 1440, 390 and 320px: five unique clips, correct headings/locale, portrait cards, no page overflow, no layout shift when players mount.
+2. Actual loop progression, end-to-start wrap and previous/next; touch dragging; keyboard navigation and visible focus.
+3. Pause button stops scroll, resume restarts; hover/focus pauses; visible clip playback pauses movement. Pausing a clip leaves controls reachable.
+4. Reduced-motion initial and changed setting; off-screen pause; background-tab visibility handling. No sound on entry.
+5. Video source / MIME / valid byte-range requests / posters / decoded first frame. At most the visible or nearby media loads; all five can be deliberately played.
+6. SPA navigation into About, EN/AR switching, back/forward, no hydration or console errors; no broken local assets.
+7. Existing About title, canonical, hreflang, H1, schema graph, text, contact and still-image gallery are preserved. Prior pending Mercedes source and unrelated files match preservation-baseline.json.
+
+Narrow preservation evidence:
+preservation-baseline.json captures main HEAD 2971301bb37d38f4785844af067eebd55f9f6dda, clean AboutUs source, empty staged set, all six pending Mercedes source hashes and unrelated backend/master-validation hashes. AboutUs.before.tsx and available existing dist EN/AR HTML copies are local baselines, not authenticated production snapshots.

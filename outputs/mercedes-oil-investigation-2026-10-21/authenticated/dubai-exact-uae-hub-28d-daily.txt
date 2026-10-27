@@ -1,0 +1,462 @@
+- banner:
+  - button "Main menu":
+  - link "Google Search Console":
+    - /url: ./search-console?resource_id=sc-domain%3Adigitecme.com
+  - search:
+    - button "Search":
+  - button "Help":
+    - generic: help_outline
+  - tooltip: Help
+  - button "User settings":
+    - generic: manage_accounts
+  - tooltip: User settings
+  - 'button "Unread messages: 38"':
+    - generic: notifications
+  - tooltip: Messages
+  - generic: "38"
+  - button "Google apps":
+  - 'button "Google Account: Hashem Qusibatie (hqusibatie24@gmail.com)"':
+- navigation "Breadcrumbs":
+  - heading "Performance" [level=1]
+- button "EXPORT":
+  - generic: 
+  - generic: EXPORT
+- radiogroup "Select time range":
+  - radio "24 hours":
+    - generic: 24 hours
+  - radio "7 days":
+    - generic: 7 days
+  - radio "28 days" [checked]:
+    - generic: 28 days
+  - radio "3 months":
+    - generic: 3 months
+- button "More time ranges":
+  - generic: More
+  - generic: arrow_drop_down
+- list:
+  - 'button "Search type: Web"':
+    - generic: "Search type: Web"
+    - generic: arrow_drop_down
+  - tooltip: "Search type: Web"
+  - 'button "Query: mercedes oil change dubai"':
+    - generic: "Query: mercedes oil change dubai"
+  - tooltip: "Query: mercedes oil change dubai"
+  - 'button "Remove Query: mercedes oil change dubai"':
+    - generic: close
+  - 'button "Page: https://digitecme.com/brands/mercedes-benz-service-dubai"':
+    - generic: "Page: https://digitecme.com/brands/mercedes-benz-service-dubai"
+  - tooltip: "Page: https://digitecme.com/brands/mercedes-benz-service-dubai"
+  - 'button "Remove Page: https://digitecme.com/brands/mercedes-benz-service-dubai"':
+    - generic: close
+  - 'button "Country: United Arab Emirates"':
+    - generic: "Country: United Arab Emirates"
+  - tooltip: "Country: United Arab Emirates"
+  - 'button "Remove Country: United Arab Emirates"':
+    - generic: close
+  - button "Add filter":
+    - generic: add
+    - generic: Add filter
+  - tooltip: Add filter
+  - button "Customise your performance report using AI":
+    - generic: filter_list_spark
+  - tooltip: Customise your performance report using AI
+  - button "Reset filters":
+    - generic: Reset filters
+  - tooltip: Reset filters
+- generic: "Last update: 5.5 hours ago"
+- main:
+  - button "Total clicks 0":
+    - generic "Total clicks":
+      - generic: 
+      - generic: Total clicks
+    - generic "0"
+  - button "null":
+    - generic: 
+  - button "Total impressions 13":
+    - generic "Total impressions":
+      - generic: 
+      - generic: Total impressions
+    - generic "13"
+  - button "null":
+    - generic: 
+  - button "Average CTR 0%":
+    - generic "Average CTR":
+      - generic: 
+      - generic: Average CTR
+    - generic "0%"
+  - button "null":
+    - generic: 
+  - button "Average position 5.2":
+    - generic "Average position":
+      - generic: 
+      - generic: Average position
+    - generic "5.2"
+  - button "null":
+    - generic: 
+  - 'button "Selected time granularity: Daily"':
+    - generic: Daily
+  - application "chart":
+    - generic: Chart, containing counts of Total clicks, Total impressions, Average CTR and Average position from 21 September 2026 to 18 October 2026
+  - generic: Generative AI report
+  - generic: chevron_forward
+  - link "Open the Google Search generative AI features performance report.":
+    - /url: ./search-console/performance/search-analytics/ai?resource_id=sc-domain%3Adigitecme.com
+  - generic: 
+  - tablist:
+    - tab "Queries":
+      - generic: Queries
+    - tab "Pages":
+      - generic: Pages
+    - tab "Countries":
+      - generic: Countries
+    - tab "Devices":
+      - generic: Devices
+    - tab "Search appearance":
+      - generic: Search appearance
+    - tab "Days" [selected]:
+      - generic: Days
+  - tabpanel:
+    - button "Filter table rows":
+      - generic: 
+    - table:
+      - rowgroup:
+        - row "Day Sort Day Sort Clicks Clicks Sort Impressions Impressions Sort CTR CTR Sort Position Position":
+          - columnheader "Day Sort Day":
+            - generic: Day
+            - button "Sort Day":
+          - columnheader "Sort Clicks Clicks":
+            - button "Sort Clicks":
+            - generic: Clicks
+          - columnheader "Sort Impressions Impressions":
+            - button "Sort Impressions":
+            - generic: Impressions
+          - columnheader "Sort CTR CTR":
+            - button "Sort CTR":
+            - generic: CTR
+          - columnheader "Sort Position Position":
+            - button "Sort Position":
+            - generic: Position
+      - rowgroup:
+        - row "18 Oct 2026 0 0 — —":
+          - cell "18 Oct 2026":
+            - generic: 18 Oct 2026
+          - cell "0":
+            - generic: "0"
+          - cell "0":
+            - generic: "0"
+          - cell "—":
+            - generic: —
+          - cell "—":
+            - generic: —
+        - row "17 Oct 2026 0 1 0% 34.0":
+          - cell "17 Oct 2026":
+            - generic: 17 Oct 2026
+          - cell "0":
+            - generic: "0"
+          - cell "1":
+            - generic: "1"
+          - cell "0%":
+            - generic: 0%
+          - cell "34.0":
+            - generic: "34.0"
+        - row "16 Oct 2026 0 0 — —":
+          - cell "16 Oct 2026":
+            - generic: 16 Oct 2026
+          - cell "0":
+            - generic: "0"
+          - cell "0":
+            - generic: "0"
+          - cell "—":
+            - generic: —
+          - cell "—":
+            - generic: —
+        - row "15 Oct 2026 0 0 — —":
+          - cell "15 Oct 2026":
+            - generic: 15 Oct 2026
+          - cell "0":
+            - generic: "0"
+          - cell "0":
+            - generic: "0"
+          - cell "—":
+            - generic: —
+          - cell "—":
+            - generic: —
+        - row "14 Oct 2026 0 0 — —":
+          - cell "14 Oct 2026":
+            - generic: 14 Oct 2026
+          - cell "0":
+            - generic: "0"
+          - cell "0":
+            - generic: "0"
+          - cell "—":
+            - generic: —
+          - cell "—":
+            - generic: —
+        - row "13 Oct 2026 0 0 — —":
+          - cell "13 Oct 2026":
+            - generic: 13 Oct 2026
+          - cell "0":
+            - generic: "0"
+          - cell "0":
+            - generic: "0"
+          - cell "—":
+            - generic: —
+          - cell "—":
+            - generic: —
+        - row "12 Oct 2026 0 1 0% 3.0":
+          - cell "12 Oct 2026":
+            - generic: 12 Oct 2026
+          - cell "0":
+            - generic: "0"
+          - cell "1":
+            - generic: "1"
+          - cell "0%":
+            - generic: 0%
+          - cell "3.0":
+            - generic: "3.0"
+        - row "11 Oct 2026 0 0 — —":
+          - cell "11 Oct 2026":
+            - generic: 11 Oct 2026
+          - cell "0":
+            - generic: "0"
+          - cell "0":
+            - generic: "0"
+          - cell "—":
+            - generic: —
+          - cell "—":
+            - generic: —
+        - row "10 Oct 2026 0 1 0% 3.0":
+          - cell "10 Oct 2026":
+            - generic: 10 Oct 2026
+          - cell "0":
+            - generic: "0"
+          - cell "1":
+            - generic: "1"
+          - cell "0%":
+            - generic: 0%
+          - cell "3.0":
+            - generic: "3.0"
+        - row "9 Oct 2026 0 0 — —":
+          - cell "9 Oct 2026":
+            - generic: 9 Oct 2026
+          - cell "0":
+            - generic: "0"
+          - cell "0":
+            - generic: "0"
+          - cell "—":
+            - generic: —
+          - cell "—":
+            - generic: —
+        - row "8 Oct 2026 0 1 0% 3.0":
+          - cell "8 Oct 2026":
+            - generic: 8 Oct 2026
+          - cell "0":
+            - generic: "0"
+          - cell "1":
+            - generic: "1"
+          - cell "0%":
+            - generic: 0%
+          - cell "3.0":
+            - generic: "3.0"
+        - row "7 Oct 2026 0 1 0% 2.0":
+          - cell "7 Oct 2026":
+            - generic: 7 Oct 2026
+          - cell "0":
+            - generic: "0"
+          - cell "1":
+            - generic: "1"
+          - cell "0%":
+            - generic: 0%
+          - cell "2.0":
+            - generic: "2.0"
+        - row "6 Oct 2026 0 1 0% 2.0":
+          - cell "6 Oct 2026":
+            - generic: 6 Oct 2026
+          - cell "0":
+            - generic: "0"
+          - cell "1":
+            - generic: "1"
+          - cell "0%":
+            - generic: 0%
+          - cell "2.0":
+            - generic: "2.0"
+        - row "5 Oct 2026 0 0 — —":
+          - cell "5 Oct 2026":
+            - generic: 5 Oct 2026
+          - cell "0":
+            - generic: "0"
+          - cell "0":
+            - generic: "0"
+          - cell "—":
+            - generic: —
+          - cell "—":
+            - generic: —
+        - row "4 Oct 2026 0 0 — —":
+          - cell "4 Oct 2026":
+            - generic: 4 Oct 2026
+          - cell "0":
+            - generic: "0"
+          - cell "0":
+            - generic: "0"
+          - cell "—":
+            - generic: —
+          - cell "—":
+            - generic: —
+        - row "3 Oct 2026 0 0 — —":
+          - cell "3 Oct 2026":
+            - generic: 3 Oct 2026
+          - cell "0":
+            - generic: "0"
+          - cell "0":
+            - generic: "0"
+          - cell "—":
+            - generic: —
+          - cell "—":
+            - generic: —
+        - row "2 Oct 2026 0 0 — —":
+          - cell "2 Oct 2026":
+            - generic: 2 Oct 2026
+          - cell "0":
+            - generic: "0"
+          - cell "0":
+            - generic: "0"
+          - cell "—":
+            - generic: —
+          - cell "—":
+            - generic: —
+        - row "1 Oct 2026 0 0 — —":
+          - cell "1 Oct 2026":
+            - generic: 1 Oct 2026
+          - cell "0":
+            - generic: "0"
+          - cell "0":
+            - generic: "0"
+          - cell "—":
+            - generic: —
+          - cell "—":
+            - generic: —
+        - row "30 Sept 2026 0 0 — —":
+          - cell "30 Sept 2026":
+            - generic: 30 Sept 2026
+          - cell "0":
+            - generic: "0"
+          - cell "0":
+            - generic: "0"
+          - cell "—":
+            - generic: —
+          - cell "—":
+            - generic: —
+        - row "29 Sept 2026 0 0 — —":
+          - cell "29 Sept 2026":
+            - generic: 29 Sept 2026
+          - cell "0":
+            - generic: "0"
+          - cell "0":
+            - generic: "0"
+          - cell "—":
+            - generic: —
+          - cell "—":
+            - generic: —
+        - row "28 Sept 2026 0 1 0% 3.0":
+          - cell "28 Sept 2026":
+            - generic: 28 Sept 2026
+          - cell "0":
+            - generic: "0"
+          - cell "1":
+            - generic: "1"
+          - cell "0%":
+            - generic: 0%
+          - cell "3.0":
+            - generic: "3.0"
+        - row "27 Sept 2026 0 0 — —":
+          - cell "27 Sept 2026":
+            - generic: 27 Sept 2026
+          - cell "0":
+            - generic: "0"
+          - cell "0":
+            - generic: "0"
+          - cell "—":
+            - generic: —
+          - cell "—":
+            - generic: —
+        - row "26 Sept 2026 0 1 0% 3.0":
+          - cell "26 Sept 2026":
+            - generic: 26 Sept 2026
+          - cell "0":
+            - generic: "0"
+          - cell "1":
+            - generic: "1"
+          - cell "0%":
+            - generic: 0%
+          - cell "3.0":
+            - generic: "3.0"
+        - row "25 Sept 2026 0 2 0% 2.5":
+          - cell "25 Sept 2026":
+            - generic: 25 Sept 2026
+          - cell "0":
+            - generic: "0"
+          - cell "2":
+            - generic: "2"
+          - cell "0%":
+            - generic: 0%
+          - cell "2.5":
+            - generic: "2.5"
+        - row "24 Sept 2026 0 0 — —":
+          - cell "24 Sept 2026":
+            - generic: 24 Sept 2026
+          - cell "0":
+            - generic: "0"
+          - cell "0":
+            - generic: "0"
+          - cell "—":
+            - generic: —
+          - cell "—":
+            - generic: —
+        - row "23 Sept 2026 0 1 0% 3.0":
+          - cell "23 Sept 2026":
+            - generic: 23 Sept 2026
+          - cell "0":
+            - generic: "0"
+          - cell "1":
+            - generic: "1"
+          - cell "0%":
+            - generic: 0%
+          - cell "3.0":
+            - generic: "3.0"
+        - row "22 Sept 2026 0 1 0% 3.0":
+          - cell "22 Sept 2026":
+            - generic: 22 Sept 2026
+          - cell "0":
+            - generic: "0"
+          - cell "1":
+            - generic: "1"
+          - cell "0%":
+            - generic: 0%
+          - cell "3.0":
+            - generic: "3.0"
+        - row "21 Sept 2026 0 1 0% 3.0":
+          - cell "21 Sept 2026":
+            - generic: 21 Sept 2026
+          - cell "0":
+            - generic: "0"
+          - cell "1":
+            - generic: "1"
+          - cell "0%":
+            - generic: 0%
+          - cell "3.0":
+            - generic: "3.0"
+    - generic: "Rows per page:"
+    - listbox "Number of rows per page":
+      - option "5"
+      - option "10"
+      - option "25"
+      - option "50" [active] [selected]
+      - option "100"
+      - option "250"
+      - option "500"
+    - generic: 1-28 of 28
+    - button "Previous page" [disabled]:
+    - tooltip: Previous page
+    - button "Next page" [disabled]:
+    - tooltip: Next page
+- generic: Performance on Search results

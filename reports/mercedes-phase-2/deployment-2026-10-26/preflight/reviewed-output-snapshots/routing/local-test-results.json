@@ -1,0 +1,12 @@
+{
+  "at": "2026-10-26T06:55:54.310Z",
+  "passed": 738,
+  "failed": 0,
+  "proposalSha256": "336a3e207ab451d22f95efad88e334a3d5f8bb9958e495a8e9bcbe3f3d4956b9",
+  "historicalProtectedEnglishOilDefinitionSha256": "6b1385fff9d44c206a36cd0e9c38912e9c1b74030f3a534db6bb5efdfa5157c5",
+  "limits": [
+    "Models the literal expression sets and query passthrough; not the Cloudflare engine, URL normalization or current account state.",
+    "GET/HEAD public matrix tests deployed behavior only after a separately approved activation.",
+    "No Cloudflare or deployment mutation performed."
+  ]
+}

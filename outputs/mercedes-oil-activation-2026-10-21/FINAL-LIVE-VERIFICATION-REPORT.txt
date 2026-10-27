@@ -1,0 +1,97 @@
+DIGI-TEC — APPROVED MERCEDES OIL ALIAS REDIRECT: LIVE VERIFICATION
+21 October 2026. Business timezone: Asia/Dubai (UTC+04:00).
+
+RESULT: ACTIVATED; LIVE ROUTING VERIFICATION PASSED.
+
+Created exactly ONE Cloudflare Single Redirect, using the reviewed proposal/single-redirect-rule.json from the21October routing package. No existing rule was edited or replaced. No rollback was needed or performed.
+
+NEW RULE
+
+Rule ID:5addb0c068414fb5b985a869ded26c68
+Name:Mercedes oil change legacy URLs to existing service
+State:Active/enabled, first in the Single Redirect order.
+Account:ae62fc81b63f3450e5ab4b63b7b7ece4
+Zone:digitecme.com
+Mechanism:Cloudflare dashboard Create new Single Redirect -> Deploy; not a Worker or ruleset replacement.
+
+Activation submission:21October2026 10:40:17.643 UAE /06:40:17.643Z.
+First recorded dashboard confirmation:10:40:42.774 UAE /06:40:42.774Z.
+These are observed submission/confirmation times; no separate Cloudflare audit-event timestamp is asserted.
+
+Exact filter:
+(http.host in {"digitecme.com" "www.digitecme.com"}) and (http.request.method in {"GET" "HEAD"}) and (http.request.uri.path in {"/brands/mercedes-benz-service-dubai/oil-change" "/brands/mercedes-benz-service-dubai/oil-change/"})
+
+Static target:https://digitecme.com/services/mercedes-oil-change-dubai
+Status:308 Permanent Redirect, method preserved.
+Preserve original query string:true.
+
+MANDATORY PREFLIGHT — ALL PASSED BEFORE ACTIVATION
+
+1. Refreshed authenticated controlling Cloudflare account/zone, current rule inventory, exact original definitions, enabled states and relative order.
+2. No unexpected drift:the two original Single Redirects matched baseline; apex/www remained proxied CNAMEs to dubai-performance-art.lovable.app; no Worker routes; Page Rules0/3 and Bulk Redirect Lists0/5; no other observed routing-rule categories; Always Use HTTPS remainedON.
+3. Fresh HTTP preflight28/28 cases passed at10:35:44 UAE. Destination served the correct Mercedes oil page with200, expected title/H1, index/follow and existing slashless canonical.
+4. The currently indexed service trailing-slash URL remained directly accessible with200 and correct service content.
+5. The actual /redirect-rules/new form was explicitly Create new Single Redirect, not Edit or replace. Exact expression/target/name matched the reviewed JSON;308,query preservation and First were verified. Cloudflare UI reported Rule validation passed. Independent form review passed before clicking Deploy.
+
+UNCHANGED ORIGINAL RULES
+
+Both original IDs, expressions, targets,301 status codes, query-preservation settings and enabled states were retained. Only their displayed absolute positions shifted after insertion; their relative order remains unchanged:
+  Position1:new oil rule5addb0c068414fb5b985a869ded26c68.
+  Position2:Legacy Mercedes URLs to Mercedes brand service page, IDdbe42693423442afbc3bab9b993242a7.
+  Position3:www to primary domain, ID9781b1ef743f4ffbaadbe5cb3250eeca.
+
+Post-activation forms and Rules Overview links confirm the retained original IDs and definitions. Existing Mercedes rule still sends its four repair/workshop aliases to the broad Mercedes hub; www normalization retains its existing dynamic target. No other rule was created, disabled or deleted.
+
+LIVE HTTP VERIFICATION —72/72 PASSED
+
+Started21October10:40:44.946 UAE; completed10:40:54.945 UAE.
+
+48 legacy cases:
+  Two exact legacy path forms × apex/www × HTTP/HTTPS × GET/HEAD × three query variants.
+  Every first response was308 directly to the approved HTTPS apex slashless service URL.
+  Every original query string was retained, including repeated and percent-encoded fields and synthetic click IDs.
+  Every destination response was200 with correct service content.
+  No loops, extra HTTP upgrade hop, hostname hop or unexpected redirect chains occurred in any tested variant.
+
+16 protected-route cases:
+  GET/HEAD of both dedicated service URL forms, generic oil service, oil article, Mercedes hub, Mercedes diagnostics, PPF and tuning.
+  Direct200 responses remained baseline behavior. For GET, title,H1,canonical,robots and normalized main-content SHA256 matched fresh preflight. Dynamic raw body hashes were retained as evidence but were not incorrectly required to be identical.
+
+8 existing Mercedes redirect cases:
+  GET/HEAD of /services/mercedes-repair-dubai, /services/mercedes-repair-dubai/, /services/mercedes-service-dubai and /best-mercedes-workshop-dubai.
+  Each retained301 directly to the Mercedes brand hub, then200, preserving the query string.
+
+The service main-content SHA256 is unchanged from preflight for both URL forms:
+0e9d0523c0a9d344e14aa5a9aeae598f2c5c6387811445cdf725938a8ebb60dd
+
+SOURCE / SCOPE PRESERVATION
+
+All601 protected local source files, candidate/baseline artifacts, package and generated service HTML were hash-identical before/after. The original candidate SHA256 remains:
+6b1385fff9d44c206a36cd0e9c38912e9c1b74030f3a534db6bb5efdfa5157c5
+
+No Worker deployed. No Lovable publication. No DNS changes. No redirect added for the dedicated service trailing-slash URL. No canonical,metadata,sitemap,page content or unrelated SEO change. No Google indexing request, commit or push. Existing user changes were preserved. No rollback action was taken.
+
+UNRESOLVED / LIMITS
+
+No live routing-verification failures remain in the tested matrix. Results establish behavior observed at the recorded time, not continuous monitoring from every network or future configuration stability.
+
+Google's previously observed canonical preference for the trailing-slash service URL has not been re-evaluated after a recrawl. Both service forms remain200, and the existing slashless declared canonical remains unchanged. Canonical convergence and ranking impact require later Google evidence; no ranking restoration or recovery is claimed.
+
+The earlier Cloudflare simulator authentication error did not prevent real creation:the actual create form validated successfully and subsequent public HTTP checks passed. Live verification supersedes the earlier uncertainty about HTTP/HTTPS redirect-chain behavior for these exact tested requests.
+
+EVIDENCE
+
+cloudflare/new-rule.json:assignedID, exact candidate and submission/confirmation timestamps.
+cloudflare/pre-deploy-form.txt:server UI validation and exact reviewed pre-submission fields.
+cloudflare/post-new-rule.txt:actual live rule definition.
+cloudflare/post-rules-overview.txt:all three active rule IDs/order/targets.
+cloudflare/pre-* and post-*-rule.txt:before/after existing-rule evidence.
+cloudflare/post-inventory.png and active-oil-rule.png:visual activation proof.
+http/preflight-results.json:28-case preflight and raw initial responses.
+http/post-results.json:72-case full live response chains, queries, metadata and content hashes.
+http/LIVE-VERIFICATION-SUMMARY.txt:HTTP verifier's independent report.
+review/:independent preflight/form/post rule comparisons and before/after protected-file checks.
+
+CONCLUSION
+
+The authorized alias-only redirect is active and verified. Both legacy forms resolve directly to the correct commercial service, while the indexed slash page and unrelated routes remain accessible. No corrective rollback is indicated by the completed checks.

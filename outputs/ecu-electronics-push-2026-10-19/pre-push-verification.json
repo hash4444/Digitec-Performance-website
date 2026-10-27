@@ -1,0 +1,63 @@
+{
+  "checkedAt": "2026-10-19T09:04:50.7891479Z",
+  "base": "acef3427b57b48259bc5b39d6a0f75798603ae95",
+  "remoteMain": "acef3427b57b48259bc5b39d6a0f75798603ae95",
+  "branch": "main",
+  "files": [
+    {
+      "file": "src/pages/ServicePage.tsx",
+      "sha256": "7aea5c62212d6066010e09587054e528d03c6589f291bd5681408f7f45b130ca",
+      "passed": true
+    },
+    {
+      "file": "src/pages/BrandServicePage.tsx",
+      "sha256": "b8bd67b40548b6e3c53db7611e7dd463cd5c92ce6774bbbdc954695b4395df2f",
+      "passed": true
+    },
+    {
+      "file": "src/components/DiagnosticAcEnquiryPanel.tsx",
+      "sha256": "5f1a1e5f027e96e915f35b211973c521fa18f0584b3cb66868031c81e81d1bfa",
+      "passed": true
+    },
+    {
+      "file": "src/data/diagnosticsAcGeneralContent.ts",
+      "sha256": "ba94d9fec0917704b2441acb2ed38029eadac984700bda5c6a55a739ec5cb71a",
+      "passed": true
+    },
+    {
+      "file": "src/data/diagnosticsAcBrandContent.ts",
+      "sha256": "034b378502080ecef31d6e43eb857d79c9c073a3cd540c5a3013ae1b349ecf76",
+      "passed": true
+    },
+    {
+      "file": "scripts/validate-query-release.mjs",
+      "sha256": "c918eabe56f3929228719466b76453b9d5344a84385c96bea79d542bca9407b3",
+      "passed": true
+    },
+    {
+      "file": "src/components/EcuElectronicsEnquiryPanel.tsx",
+      "sha256": "3eebc5bc1eb9c0843e5c5676d6c583812f6ae4d5fb79a12bbb89ffe439c3660b",
+      "passed": true
+    },
+    {
+      "file": "src/data/ecuElectronicsContent.ts",
+      "sha256": "48cf990866ec75dcf7c1c08c8c52cb85001085ebfb5c81da82370a0030ca90f3",
+      "passed": true
+    }
+  ],
+  "preserved": [
+    {
+      "file": "supabase/functions/mcp/index.ts",
+      "sha256": "dae4eb5896ab1e38ba0e040c41c23dc986ee9ec2f729e8b91548be0658091a43"
+    },
+    {
+      "file": "outputs/seo-2026-09-16/master-validation.json",
+      "sha256": "6c164ea2102776061f84fd6fa16963963552f33b9406fc65d7e9f2aaa41cbd12"
+    },
+    {
+      "file": "cloudflare/wrangler.production-seo.jsonc",
+      "sha256": "2ee0cb254944a94f93db5a1065e997a2b0050c47575d7fb76497dc77be023221"
+    }
+  ],
+  "priorQa": "outputs/ecu-electronics-2026-10-19/qa/COMBINED-QA-SUMMARY.json"
+}

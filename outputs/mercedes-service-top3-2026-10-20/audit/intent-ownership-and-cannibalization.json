@@ -1,0 +1,90 @@
+{
+  "status": "Intent/route architecture verified, not measured query-by-page cannibalization",
+  "googleEvidenceGap": "Need exact-query Pages dimension, date/country/device filters and URL Inspection export. Separate Queries and Pages tables cannot identify actual landing page.",
+  "owners": [
+    {
+      "intent": "mercedes service dubai; scheduled Mercedes maintenance; Service A/B commercial booking",
+      "owner": "/brands/mercedes-benz-service-dubai",
+      "arabic": "/ar/brands/mercedes-benz-service-dubai",
+      "disposition": "Retain single broad commercial owner. Strengthen scheduled-service prominence and intake. No new Service A/B route."
+    },
+    {
+      "intent": "Mercedes oil and filter service",
+      "owner": "/services/mercedes-oil-change-dubai",
+      "arabic": "/ar/services/mercedes-oil-change-dubai",
+      "disposition": "Retain specific existing oil owner; clearly distinguish an oil change from full scheduled Service A/B."
+    },
+    {
+      "intent": "Service A/B quotation factors",
+      "owner": "/blog/mercedes-service-cost-dubai-guide",
+      "arabic": "/ar/blog/mercedes-service-cost-dubai-guide",
+      "disposition": "Informational cost-scope guide linking to hub; no invented prices."
+    },
+    {
+      "intent": "ASSYST and service intervals",
+      "owner": "/blog/mercedes-service-intervals-dubai-heat",
+      "arabic": "/ar/blog/mercedes-service-intervals-dubai-heat",
+      "disposition": "Informational scheduling owner, not another broad commercial service landing."
+    },
+    {
+      "intent": "Maintenance-history planning",
+      "owner": "/blog/mercedes-benz-maintenance-guide-dubai",
+      "arabic": "/ar/blog/mercedes-benz-maintenance-guide-dubai",
+      "disposition": "Retain planning guide and direct commercial hub link."
+    },
+    {
+      "intent": "XENTRY warning/fault diagnosis",
+      "owner": "/services/mercedes-diagnostics-dubai",
+      "arabic": "/ar/services/mercedes-diagnostics-dubai",
+      "disposition": "Keep diagnostic intent and cautious supported-functions language; maintenance reminder is not a diagnosis."
+    },
+    {
+      "intent": "Engine/mechanical repair",
+      "owner": "/services/mercedes-mechanical-repair-dubai",
+      "arabic": "/ar/services/mercedes-mechanical-repair-dubai",
+      "disposition": "Retain repair owner, secondary hub summary only."
+    },
+    {
+      "intent": "Transmission repair",
+      "owner": "/services/mercedes-transmission-repair-dubai",
+      "arabic": "/ar/services/mercedes-transmission-repair-dubai",
+      "disposition": "Retain repair owner; fluid service is not guaranteed repair cure."
+    },
+    {
+      "intent": "AIRMATIC/suspension repair",
+      "owner": "/services/mercedes-suspension-repair-dubai",
+      "arabic": "/ar/services/mercedes-suspension-repair-dubai",
+      "disposition": "Retain system-specific repair owner; no universal AMG/AIRMATIC assumption."
+    },
+    {
+      "intent": "C-Class, E-Class, S-Class and G63 maintenance/repair",
+      "owner": "Existing /blog/mercedes-{c-class,e-class,s-class,g63}-service-dubai-guide service-layout owners",
+      "arabic": "Existing Arabic legacy counterparts are noindex; do not advertise as equivalent translated model service pages",
+      "disposition": "Retain differentiated model owners and maintenance-anchor links; do not consolidate differentiated model intent into hub."
+    },
+    {
+      "intent": "G-Class, C63, E63, S63, GLE and GLS model maintenance/repair",
+      "owner": "Existing /mercedes/models/{model}-service-repair-dubai",
+      "arabic": "English-only detailed model policy; Arabic fallback redirects to translated hub where configured",
+      "disposition": "Retain model-specific owners; no new routes."
+    },
+    {
+      "intent": "Legacy broad service/repair/best workshop synonyms",
+      "owner": "/services/mercedes-service-dubai; /services/mercedes-repair-dubai; /best-mercedes-workshop-dubai",
+      "arabic": "Locale rules unchanged",
+      "disposition": "Verified live EN301 directly to hub. Keep consolidation and avoid reintroducing legacy data as new indexable page."
+    },
+    {
+      "intent": "Multi-brand car service",
+      "owner": "/services/car-service-dubai",
+      "arabic": "/ar/services/car-service-dubai",
+      "disposition": "Retain multi-brand intent, no broad Mercedes title."
+    },
+    {
+      "intent": "Mercedes performance upgrades and projects",
+      "owner": "/tuning and existing tuning/model/project pages",
+      "arabic": "Existing language policy retained",
+      "disposition": "Preserve tuning functionality; performance projects do not prove routine servicing outcomes."
+    }
+  ]
+}

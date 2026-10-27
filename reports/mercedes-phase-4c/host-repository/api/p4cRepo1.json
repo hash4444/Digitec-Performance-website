@@ -1,0 +1,36 @@
+{
+  "status": "fulfilled",
+  "value": {
+    "content": [
+      {
+        "type": "text",
+        "text": "Action completed."
+      }
+    ],
+    "structuredContent": {
+      "branches": [
+        {
+          "branch": "agent/brand-logo-alignment"
+        },
+        {
+          "branch": "agent/ferrari-maintenance-blog"
+        },
+        {
+          "branch": "agent/mercedes-oil-change-blog"
+        },
+        {
+          "branch": "agent/sync-latest-digitec"
+        },
+        {
+          "branch": "feat/seo-ai-discovery-foundation"
+        },
+        {
+          "branch": "main"
+        }
+      ],
+      "cursor": "Ng"
+    },
+    "isError": false
+  }
+}
+

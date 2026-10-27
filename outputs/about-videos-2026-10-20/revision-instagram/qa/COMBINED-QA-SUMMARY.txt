@@ -1,0 +1,17 @@
+DIGI-TEC About video strip — Instagram revision, 20 October 2026
+
+Overall: PASS
+
+Only AboutVideoStrip.tsx and AboutVideoStrip.css changed from the previous tested version. Counters, pause/arrow buttons, watch-with-sound prompt and modal player were removed. All 16 cards (eight unique films plus decorative loop duplicates) now use the exact native profile link https://www.instagram.com/digi_tec/ with target=_blank and rel=noopener noreferrer. Visible handle @digi_tec remains; eight originals are keyboard reachable and clones are excluded from tab order/accessibility tree.
+
+Production build: 19 stages PASS. TypeScript application/Node, ESLint (0 errors, 11 existing warnings), master SEO, BMW, paint-care, tuning, routing and booking regressions all PASS: 12 CLI checks.
+Static preservation: 10086 assertions PASS. Both About routes retain previous title, description, H1, canonical, hreflang, robots, schema and all pre-existing visible content after removing exactly the new video section. All 1254 other routes preserve metadata/schema/visible markup. Zero new routes.
+
+Browser: 6 layouts (EN/AR at 1440/390/320px) PASS, no counters/buttons/prompt/modal and no body overflow. All16 links have the correct target/security attributes; all8 preview assets remain represented. No initial offscreen MP4 fetch; only visible muted video previews load and decode.
+Both locales: automatic horizontal motion, hover/focus suspension, arrow-key/manual movement, cycle seam and offscreen suspension/resume PASS. Reduced-motion initial and changed preference + manual access PASS. Real mobile touch swipes retain pinch zoom.
+Native Instagram activation: 6 PASS — mouse, keyboard Enter and touch tap in both locales. Browser created the new tab and requested the exact profile destination; all outbound Instagram requests were aborted by interception before external network. About remains open; no modal or audio player is created. No-JavaScript native profile links and SPA/back/forward/unmount PASS.
+
+Runtime errors: 0; failed local responses: 0; write requests: 0.
+Preservation: all 8 prior pending Mercedes/backend/master-validation files byte-identical; HEAD/branch/index unchanged. All 603 build inputs and25 overlay hashes remain stable after browsers. Build fingerprint: 88f60291aea4fa4f8840f350bda6b1f5a24d5770ebac17aa1bcf8bf8c3a72428.
+
+Original qa/audit evidence retained; new revision evidence stays under revision-instagram/qa. Media unchanged. No commit, push, deploy, real external-account navigation or customer contacts. QA preview5215 closed; parent preview5188 left untouched.

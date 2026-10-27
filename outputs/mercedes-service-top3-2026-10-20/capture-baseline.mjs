@@ -1,0 +1,16 @@
+import fs from 'node:fs/promises';
+import path from 'node:path';
+import { createHash } from 'node:crypto';
+import { spawnSync } from 'node:child_process';
+const out=path.resolve('outputs/mercedes-service-top3-2026-10-20');
+await fs.mkdir(path.join(out,'baseline'),{recursive:true});
+const git=args=>{const r=spawnSync('git',args,{windowsHide:true,maxBuffer:64*1024*1024});if(r.status!==0)throw Error(r.stderr.toString());return r.stdout;};
+const base=git(['rev-parse','HEAD']).toString().trim();
+if(base!=='2971301bb37d38f4785844af067eebd55f9f6dda')throw Error('Unexpected baseline');
+const files=git(['ls-files','--cached','--others','--exclude-standard','-z']).toString().split('\0').filter(Boolean).filter(f=>!f.startsWith('outputs/mercedes-service-top3-2026-10-20/'));
+const records=[];for(const file of files)records.push({file,sha256:createHash('sha256').update(await fs.readFile(file)).digest('hex')});
+await fs.writeFile(path.join(out,'baseline/workspace-manifest.json'),JSON.stringify({capturedAt:new Date().toISOString(),base,branch:git(['branch','--show-current']).toString().trim(),status:git(['status','--porcelain=v1']).toString(),files:records},null,2));
+await fs.writeFile(path.join(out,'baseline/pre-existing.patch'),git(['diff','--binary']));
+const paths=['src','public','scripts','cloudflare','.lovable','.env','.gitignore','package.json','package-lock.json','index.html','vite.config.ts','tsconfig.json','tsconfig.app.json','tsconfig.node.json','tailwind.config.ts','postcss.config.js','components.json','eslint.config.js','docs/seo','outputs/t1/baseline/tuningCars.ts','outputs/b0-a/baseline/cloudflare'];
+git(['archive','--format=zip','--output='+path.join(out,'baseline/source.zip'),base,'--',...paths]);
+console.log(JSON.stringify({base,preservedFiles:records.length,archiveReady:true}));

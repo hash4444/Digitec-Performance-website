@@ -1,0 +1,27 @@
+DIGI-TEC ABOUT VIDEOS — INDEPENDENT SOURCE REVIEW
+
+Result: PASS. No actionable source defect identified in the reviewed scope.
+Review type: Read-only source review; runtime and media verification are reported separately by the QA and media workstreams.
+
+Reviewed source:
+- src/components/AboutVideoStrip.tsx
+- src/components/AboutVideoStrip.css
+- src/pages/AboutUs.tsx (additive integration diff)
+- package.json (dependency presence only)
+
+Scope and checks:
+- Exactly eight media entries, each with a direct MP4 link and lazy poster; a second presentation group provides the seamless loop.
+- Loop distance is the entire first group's measured width, including its trailing gap. Horizontal native scrolling is explicitly LTR; Arabic text and labels remain localized.
+- Auto movement has an explicit pause control and suspends for mouse hover, keyboard focus, offscreen state, hidden document, and the open player. Reduced-motion preference defaults to no scrolling or preview autoplay and remains user-overridable.
+- Manual arrows pause automatic movement. Keyboard arrows are supported in the focusable viewport; the eight original media links remain keyboard reachable. Duplicate links are excluded from sequential focus and the duplicate group is hidden from assistive technology.
+- Preview videos are muted, looped, plays-inline, and initially have no media src. Intersection state determines lazy loading and pauses offscreen playback. Posters and direct MP4 links remain usable when autoplay fails or JavaScript is absent.
+- Player uses the already-installed Radix Dialog for modal focus handling, Escape/close handling, and a named dialog. Closing unmounts the video and restores focus to the original link or pause button for a duplicate.
+- Full player has native controls, preserved sound, a poster, and an MP4 fallback link. No external embed or new library was added.
+- CSS keeps media contained, limits player dimensions to the viewport, gives controls 44px targets, and exposes visible keyboard outlines.
+- AboutUs integration adds one import and one component placement before the workshop gallery. Existing page content, metadata, schema and other pending source work are outside the change.
+
+Dependencies:
+React, @radix-ui/react-dialog and lucide-react are present in the existing package.json. No added package dependency is required.
+
+Limits:
+This report does not claim physical iOS/Safari testing, field performance results, deployed availability, or browser QA results. Use the separate QA report for executed browser assertions and source preservation evidence.

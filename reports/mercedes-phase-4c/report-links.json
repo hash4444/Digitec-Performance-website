@@ -1,0 +1,485 @@
+{
+  "checkedAt": "2026-10-26T11:14:00.385Z",
+  "localFileLinksChecked": 95,
+  "markdownFiles": 11,
+  "scope": "Authored reportMarkdown; copiedrawsource excluded; externalURLs/headinganchors notfetched",
+  "allPassed": true,
+  "broken": [],
+  "checks": [
+    {
+      "file": "artifact/frozen-pnpm-B-16/summary.md",
+      "target": "results.json",
+      "exists": true
+    },
+    {
+      "file": "artifact/frozen-pnpm-B-all-routes/README.md",
+      "target": "../frozen-pnpm-B-16/results.json",
+      "exists": true
+    },
+    {
+      "file": "artifact/frozen-pnpm-B-all-routes/README.md",
+      "target": "results.json",
+      "exists": true
+    },
+    {
+      "file": "artifact/frozen-pnpm-B-all-routes/README.md",
+      "target": "route-results.csv",
+      "exists": true
+    },
+    {
+      "file": "artifact/README.md",
+      "target": "option-b-verification.json",
+      "exists": true
+    },
+    {
+      "file": "artifact/README.md",
+      "target": "option-b-archive-verification.json",
+      "exists": true
+    },
+    {
+      "file": "artifact/README.md",
+      "target": "checkout-input-guard.json",
+      "exists": true
+    },
+    {
+      "file": "artifact/README.md",
+      "target": "frozen-pnpm-B-all-routes/README.md",
+      "exists": true
+    },
+    {
+      "file": "artifact/README.md",
+      "target": "frozen-pnpm-B-all-routes/results.json",
+      "exists": true
+    },
+    {
+      "file": "artifact/README.md",
+      "target": "frozen-pnpm-B-16/results.json",
+      "exists": true
+    },
+    {
+      "file": "artifact/README.md",
+      "target": "verifier-provenance.json",
+      "exists": true
+    },
+    {
+      "file": "artifact/README.md",
+      "target": "../production/README.md",
+      "exists": true
+    },
+    {
+      "file": "browser/README.md",
+      "target": "../browser-support/browser-exception-findings.md",
+      "exists": true
+    },
+    {
+      "file": "browser/README.md",
+      "target": "interaction-results.json",
+      "exists": true
+    },
+    {
+      "file": "browser/README.md",
+      "target": "../browser-support/interaction-evidence-validation.json",
+      "exists": true
+    },
+    {
+      "file": "browser/README.md",
+      "target": "B-desktop-approved-links.png",
+      "exists": true
+    },
+    {
+      "file": "browser/README.md",
+      "target": "B-body-320-final-keyboard.png",
+      "exists": true
+    },
+    {
+      "file": "browser-support/browser-exception-findings.md",
+      "target": "../browser/passive-journeys.json",
+      "exists": true
+    },
+    {
+      "file": "browser-support/browser-exception-findings.md",
+      "target": "passive-journey-analysis.json",
+      "exists": true
+    },
+    {
+      "file": "browser-support/browser-exception-findings.md",
+      "target": "runs/",
+      "exists": true
+    },
+    {
+      "file": "browser-support/browser-exception-findings.md",
+      "target": "passive-journey-analysis.json",
+      "exists": true
+    },
+    {
+      "file": "browser-support/browser-exception-findings.md",
+      "target": "observer-assessment.md",
+      "exists": true
+    },
+    {
+      "file": "browser-support/browser-exception-findings.md",
+      "target": "../browser/prior-pattern-same-tab-replay.json",
+      "exists": true
+    },
+    {
+      "file": "browser-support/browser-exception-findings.md",
+      "target": "prior-pattern-analysis.json",
+      "exists": true
+    },
+    {
+      "file": "browser-support/browser-exception-findings.md",
+      "target": "runs/",
+      "exists": true
+    },
+    {
+      "file": "browser-support/browser-exception-findings.md",
+      "target": "../browser/interaction-results.json",
+      "exists": true
+    },
+    {
+      "file": "browser-support/browser-exception-findings.md",
+      "target": "interaction-evidence-validation.json",
+      "exists": true
+    },
+    {
+      "file": "browser-support/browser-exception-findings.md",
+      "target": "preservation.json",
+      "exists": true
+    },
+    {
+      "file": "browser-support/observer-assessment.md",
+      "target": "source-and-build-evidence.json",
+      "exists": true
+    },
+    {
+      "file": "browser-support/README.md",
+      "target": "browser-exception-findings.md",
+      "exists": true
+    },
+    {
+      "file": "browser-support/README.md",
+      "target": "passive-journey-analysis.json",
+      "exists": true
+    },
+    {
+      "file": "browser-support/README.md",
+      "target": "prior-pattern-analysis.json",
+      "exists": true
+    },
+    {
+      "file": "browser-support/README.md",
+      "target": "interaction-evidence-validation.json",
+      "exists": true
+    },
+    {
+      "file": "browser-support/README.md",
+      "target": "preservation.json",
+      "exists": true
+    },
+    {
+      "file": "host-repository/README.md",
+      "target": "github-summary.json",
+      "exists": true
+    },
+    {
+      "file": "host-repository/README.md",
+      "target": "api/p4cDeep0.json",
+      "exists": true
+    },
+    {
+      "file": "host-repository/README.md",
+      "target": "api/p4cLast0.json",
+      "exists": true
+    },
+    {
+      "file": "host-repository/README.md",
+      "target": "api/p4cLast1.json",
+      "exists": true
+    },
+    {
+      "file": "host-repository/README.md",
+      "target": "../host/history-loaded.ax.txt",
+      "exists": true
+    },
+    {
+      "file": "host-repository/README.md",
+      "target": "../host/published-history.png",
+      "exists": true
+    },
+    {
+      "file": "host-repository/README.md",
+      "target": "../host/edit-history.json",
+      "exists": true
+    },
+    {
+      "file": "host-repository/README.md",
+      "target": "../host/published-version-code-loaded.ax.txt",
+      "exists": true
+    },
+    {
+      "file": "host-repository/README.md",
+      "target": "../host/published-source-details.png",
+      "exists": true
+    },
+    {
+      "file": "host-repository/README.md",
+      "target": "api/published-source-commit.json",
+      "exists": true
+    },
+    {
+      "file": "host-repository/README.md",
+      "target": "../host/publish-panel.ax.txt",
+      "exists": true
+    },
+    {
+      "file": "host-repository/README.md",
+      "target": "../host/publish-panel.png",
+      "exists": true
+    },
+    {
+      "file": "host-repository/README.md",
+      "target": "../host/github-sync-loaded.ax.txt",
+      "exists": true
+    },
+    {
+      "file": "host-repository/README.md",
+      "target": "published-source-mapping.json",
+      "exists": true
+    },
+    {
+      "file": "host-repository/README.md",
+      "target": "repository-verification.json",
+      "exists": true
+    },
+    {
+      "file": "host-repository/README.md",
+      "target": "verify-repository.mjs",
+      "exists": true
+    },
+    {
+      "file": "host-repository/README.md",
+      "target": "remote-source/",
+      "exists": true
+    },
+    {
+      "file": "host-repository/README.md",
+      "target": "../../mercedes-phase-4b/options/B/",
+      "exists": true
+    },
+    {
+      "file": "host-repository/README.md",
+      "target": "remote-source/package.json",
+      "exists": true
+    },
+    {
+      "file": "host-repository/README.md",
+      "target": "remote-source/vite.config.ts",
+      "exists": true
+    },
+    {
+      "file": "host-repository/README.md",
+      "target": "../host/current-published-revert-dialog.ax.txt",
+      "exists": true
+    },
+    {
+      "file": "host-repository/README.md",
+      "target": "../host/revert-affordance-dom.json",
+      "exists": true
+    },
+    {
+      "file": "host-repository/README.md",
+      "target": "../host/historical-restore-confirmation.ax.txt",
+      "exists": true
+    },
+    {
+      "file": "host-repository/README.md",
+      "target": "../host/historical-restore-confirmation.png",
+      "exists": true
+    },
+    {
+      "file": "host-repository/README.md",
+      "target": "../host/ui-observations.json",
+      "exists": true
+    },
+    {
+      "file": "host-repository/README.md",
+      "target": "../host/published-actions.ax.txt",
+      "exists": true
+    },
+    {
+      "file": "production/README.md",
+      "target": "http/2026-10-26T10-57-04-947Z/capture.json",
+      "exists": true
+    },
+    {
+      "file": "production/README.md",
+      "target": "redirects-http/post-2026-10-26T10-57-25-913Z/capture.json",
+      "exists": true
+    },
+    {
+      "file": "production/README.md",
+      "target": "unknown-origin/2026-10-26T10-59-47-506Z/capture.json",
+      "exists": true
+    },
+    {
+      "file": "production/README.md",
+      "target": "production-comparison.json",
+      "exists": true
+    },
+    {
+      "file": "production/README.md",
+      "target": "summary.json",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "host/ui-observations.json",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "host/published-history.png",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "host/github-sync.png",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "host-repository/published-source-mapping.json",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "host-repository/README.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "host-repository/repository-verification.json",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "browser-support/browser-exception-findings.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "browser/passive-journeys.json",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "browser/prior-pattern-same-tab-replay.json",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "browser-support/observer-assessment.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "browser-support/runs/",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "artifact/README.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "../mercedes-phase-4b/options/B/publication-manifest.json",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "host-repository/repository-verification.json",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "artifact/frozen-pnpm-B-all-routes/README.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "browser/interaction-results.json",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "browser/B-desktop-approved-links.png",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "browser/B-body-320-final-keyboard.png",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "production/README.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "browser-support/preservation.json",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "decision.json",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "evidence-manifest.json",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "release/RELEASE-RUNBOOK.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "host/ui-observations.json",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "host/historical-restore-confirmation.ax.txt",
+      "exists": true
+    },
+    {
+      "file": "release/RELEASE-RUNBOOK.md",
+      "target": "../../mercedes-phase-4b/options/B/source.patch",
+      "exists": true
+    },
+    {
+      "file": "release/RELEASE-RUNBOOK.md",
+      "target": "../../mercedes-phase-4b/options/B/source-changes.json",
+      "exists": true
+    },
+    {
+      "file": "release/RELEASE-RUNBOOK.md",
+      "target": "../../mercedes-phase-4b/options/B/publication-manifest.json",
+      "exists": true
+    },
+    {
+      "file": "release/RELEASE-RUNBOOK.md",
+      "target": "../../mercedes-phase-4b/options/B/application-static.zip",
+      "exists": true
+    },
+    {
+      "file": "release/RELEASE-RUNBOOK.md",
+      "target": "../production/",
+      "exists": true
+    }
+  ]
+}

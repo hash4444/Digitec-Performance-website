@@ -1,0 +1,49 @@
+{
+  "preparedAt": "2026-10-26T08:58:35.555Z",
+  "isolatedCopies": [
+    "baseline.local",
+    "candidate.local"
+  ],
+  "filesPerSnapshot": 665,
+  "approvedChanges": [
+    {
+      "file": "src/data/mercedesServiceContent.ts",
+      "before": "7ebb6013761160e8bebc48e3f3080ceae2e3fb330d4fa6edf86f02974481718d",
+      "after": "bd941c4c6e03c43501e32f304fea8df5de07941b93be3598b1d07431eb91b339"
+    },
+    {
+      "file": "src/pages/BrandPage.tsx",
+      "before": "f5d68037c056bb1f32d73cc5c009e066287da0ab225267b9606d834a23002c33",
+      "after": "fed34d81d52c879960d90eb38db91e31d9290ceb7b9895a222a2d075feb13bc2"
+    },
+    {
+      "file": "src/pages/BrandServicePage.tsx",
+      "before": "b8bd67b40548b6e3c53db7611e7dd463cd5c92ce6774bbbdc954695b4395df2f",
+      "after": "38bca41fbfd9d7fba3a5ce9701791facc77d1fc0a7a67806903f71e7a096512c"
+    }
+  ],
+  "lineEndingAlignment": [
+    {
+      "file": "src/pages/BrandPage.tsx",
+      "afterGitApplySha256": "26f1f22280ee658bde238831bf1170d65f926cdecb36f2dfd7cc54e191192bf0",
+      "reviewedSha256": "fed34d81d52c879960d90eb38db91e31d9290ceb7b9895a222a2d075feb13bc2",
+      "onlyLineEndingDifference": true
+    },
+    {
+      "file": "src/data/mercedesServiceContent.ts",
+      "afterGitApplySha256": "f1ac60feb5a865f7f21eaabab31c8479827df28444ec765810efcd91886e3d9a",
+      "reviewedSha256": "bd941c4c6e03c43501e32f304fea8df5de07941b93be3598b1d07431eb91b339",
+      "onlyLineEndingDifference": true
+    },
+    {
+      "file": "src/pages/BrandServicePage.tsx",
+      "afterGitApplySha256": "38bca41fbfd9d7fba3a5ce9701791facc77d1fc0a7a67806903f71e7a096512c",
+      "reviewedSha256": "38bca41fbfd9d7fba3a5ce9701791facc77d1fc0a7a67806903f71e7a096512c",
+      "onlyLineEndingDifference": false
+    }
+  ],
+  "sourceFilesChangedInOriginal": 0,
+  "environmentFilesCopied": false,
+  "dependencies": "Installed ancestor dependencies, no install/update/junction",
+  "passed": true
+}

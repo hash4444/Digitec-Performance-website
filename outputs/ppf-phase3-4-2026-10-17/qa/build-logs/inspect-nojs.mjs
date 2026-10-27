@@ -1,0 +1,12 @@
+import {createRequire} from 'node:module';
+const require = createRequire('C:/Users/ADMIN/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/package.json');
+const {chromium} = require('playwright');
+const browser = await chromium.launch({headless:true,channel:'msedge'});
+const context = await browser.newContext({javaScriptEnabled:false});
+await context.route('**/*', route => route.request().url().startsWith('http://127.0.0.1:5190') ? route.continue() : route.abort());
+const page = await context.newPage();
+await page.goto('http://127.0.0.1:5190/services/ceramic-coating');
+await page.locator('.cc-faq [role=region]').last().scrollIntoViewIfNeeded();
+console.log(await page.locator('.cc-faq [role=region]').last().evaluate(el => ({outer:el.outerHTML,display:getComputedStyle(el).display,height:getComputedStyle(el).height,animation:getComputedStyle(el).animation,visibility:getComputedStyle(el).visibility,rect:el.getBoundingClientRect().toJSON(),noscript:document.querySelector('noscript')?.outerHTML,allNoScript:[...document.querySelectorAll('noscript')].map(n=>n.innerHTML)})));
+await page.screenshot({path:'release-qa.local/ceramic/nojs-failure.png'});
+await browser.close();

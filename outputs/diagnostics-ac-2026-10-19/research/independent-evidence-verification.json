@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "raw_workbook_hashes_reverified": 17,
+  "primary_workbooks_reopened": 3,
+  "matrix_period_rows_checked": 150,
+  "observed_exact_primary_query_rows": 93,
+  "numeric_metric_values_matched_exactly": 372,
+  "absent_rows_retained_null": true,
+  "csv_and_json_counts_match": true,
+  "independent_check": "Reopened primary XLSX files read-only; checked exact worksheet rows, source filters and numeric values; no builder import."
+}

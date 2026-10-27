@@ -1,0 +1,38 @@
+{
+  "reviewedAt": "2026-10-12T09:35:35.010Z",
+  "files": [
+    {
+      "before": "outputs/paint-seo-predeployment-2026-10-12/before-contrast-fix/ServicePage.tsx",
+      "after": "src/pages/ServicePage.tsx",
+      "beforeSha256": "3db6e4aff3db62f624d5122daa9f12c9257a099665accd59fb8d53380fd55e8c",
+      "afterSha256": "e1589251e3d8e2ef3a3a2c77db91c98df0c0070cdded8616840b1567232121e7",
+      "normalizedDiff": "diff --git a/outputs/paint-seo-predeployment-2026-10-12/before-contrast-fix/ServicePage.tsx b/src/pages/ServicePage.tsx\nindex 8275cf1..7231543 100644\n--- a/outputs/paint-seo-predeployment-2026-10-12/before-contrast-fix/ServicePage.tsx\n+++ b/src/pages/ServicePage.tsx\n@@ -177,12 +177,12 @@ const ServicePage: React.FC<ServicePageProps> = ({ slugOverride, canonicalPath,\n     .slice(0, 3);\n \n   return (\n-    <div className=\"site-page min-h-screen bg-black text-off-white\">\n+    <div className={`site-page ${isProtectionService ? 'protection-service-page ' : ''}min-h-screen bg-black text-off-white`}>\n       <Header hasArabicVersion={!isElectronics} />\n \n       {/* Hero */}\n       <main>\n-      <section className=\"theme-dark-section relative flex min-h-[56vh] items-end overflow-hidden border-b border-white/[0.08] pb-14 pt-32 sm:min-h-[62vh] sm:pb-20 sm:pt-36\">\n+      <section className={`theme-dark-section ${isProtectionService ? 'protection-service-hero ' : ''}relative flex min-h-[56vh] items-end overflow-hidden border-b border-white/[0.08] pb-14 pt-32 sm:min-h-[62vh] sm:pb-20 sm:pt-36`}>\n         <div className=\"absolute inset-0\">\n           <img\n             src={service.image}\n"
+    },
+    {
+      "before": "outputs/paint-seo-predeployment-2026-10-12/before-contrast-fix/paint-protection.css",
+      "after": "src/styles/paint-protection.css",
+      "beforeSha256": "ad34f2f048d5cb349c954a37c2263aeb81f851f27e64e4a7f4f70aa4c179edf4",
+      "afterSha256": "440950c4a161972885270cc3f44d68a32355e1a5325f67997496416b622feb88",
+      "normalizedDiff": "diff --git a/outputs/paint-seo-predeployment-2026-10-12/before-contrast-fix/paint-protection.css b/src/styles/paint-protection.css\nindex 4a674c1..c7ef26b 100644\n--- a/outputs/paint-seo-predeployment-2026-10-12/before-contrast-fix/paint-protection.css\n+++ b/src/styles/paint-protection.css\n@@ -43,5 +43,9 @@ html.theme-light .protection-hub { --ph-bg: #f7f6f2; --ph-panel: #eeede8; --ph-t\n html.theme-light .protection-hub main .ph-section { background-color: var(--ph-bg) !important; }\n html.theme-light .protection-hub main .ph-panel { background-color: var(--ph-panel) !important; }\n .protection-hub .ph-hero { --ph-text: #f4f4f5; --ph-muted: #b8b9be; --ph-line: #ffffff26; --ph-accent: #ff9c72; background: #101113; color: #f4f4f5; }\n+/* Keep protection photo heroes legible under the shared light-theme rules. */\n+html.theme-light :is(.site-page, div.min-h-screen.bg-black.text-off-white) .protection-service-hero .btn-secondary { color: #fff !important; border-color: #ffffff66 !important; }\n+html.theme-light :is(.site-page, div.min-h-screen.bg-black.text-off-white) .protection-service-hero [aria-label=\"Breadcrumb\"] { color: #ffffffad !important; }\n+html.theme-light .protection-service-page .home-button-secondary { color: #181918; border-color: #18191838; }\n @media(max-width:899px) { .ph-hero { grid-template-columns: 1fr; } .ph-hero img { max-height: 440px; } .ph-hero-copy { padding: 2rem 1.25rem; } }\n @media(max-width:639px) { .protection-hub { padding-bottom: calc(85px + env(safe-area-inset-bottom)); } .ph-mobile { display: flex; gap: .5rem; padding: .6rem .6rem calc(.6rem + env(safe-area-inset-bottom)); position: fixed; inset-inline: 0; bottom: 0; z-index: 40; background: var(--ph-bg); border-top: 1px solid var(--ph-line); } .ph-mobile .ph-button { flex: 1; font-size: .85rem; padding: .6rem; } .ph-mobile .ph-secondary { flex: .65; } }\n"
+    }
+  ],
+  "packageScripts": {
+    "dev": "vite",
+    "build": "vite build --ssr src/entry-server.tsx --outDir dist-server && node scripts/sync-routing-paths.mjs && vite build && vite build --ssr src/entry-server.tsx --outDir dist-server && node scripts/prerender.mjs && node scripts/generate-hosting-rules.mjs && node scripts/test-hosting-rules.mjs && node scripts/validate-seo.mjs && node scripts/validate-ppf.mjs && node scripts/validate-paint-correction.mjs && node scripts/validate-protection-release.mjs && node scripts/validate-query-release.mjs && node scripts/test-contact-attribution.mjs && node scripts/validate-oil-change.mjs && node scripts/validate-suspension.mjs && node scripts/validate-transmission.mjs && node scripts/validate-social-metadata.mjs",
+    "build:release:local": "node scripts/build-production-local.mjs",
+    "preview:release": "node scripts/preview-production-local.mjs",
+    "build:dev": "vite build --mode development",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "sitemap:brands": "node scripts/sync-brand-sitemap.mjs",
+    "validate:seo": "node scripts/validate-seo.mjs",
+    "validate:master-seo": "node scripts/validate-master-seo.mjs",
+    "validate:social-metadata": "node scripts/validate-social-metadata.mjs",
+    "audit:sitewide": "node scripts/audit-sitewide-seo.mjs --phase=verification",
+    "typecheck": "tsc --noEmit -p tsconfig.app.json && tsc --noEmit -p tsconfig.node.json",
+    "validate:ppf": "node scripts/validate-ppf.mjs",
+    "hosting:rules": "node scripts/generate-hosting-rules.mjs",
+    "test:routing": "node scripts/test-hosting-rules.mjs"
+  },
+  "scope": "Class names and light-theme colors/borders only; no SEO prose/config change; invalid generated backend consumption is blocked, frontend/static/Worker are independently packageable."
+}

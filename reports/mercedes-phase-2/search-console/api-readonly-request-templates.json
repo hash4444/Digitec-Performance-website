@@ -1,0 +1,53 @@
+{
+  "status": "TEMPLATES_ONLY_NOT_EXECUTED",
+  "execute": false,
+  "prepared_date_dubai": "2026-10-26",
+  "oauth_scope": "https://www.googleapis.com/auth/webmasters.readonly",
+  "property_note": "Use the exact verified property. Domain-property example sc-domain:digitecme.com; do not add properties or credentials.",
+  "search_type_limitation": "API type=web is documented as combined All-tab traffic. Equivalence to UI Web: text-based is UNVERIFIED. Retain separate UI text-based exports and do not invent a text-only API type.",
+  "analytics_endpoint": "https://www.googleapis.com/webmasters/v3/sites/sc-domain%3Adigitecme.com/searchAnalytics/query",
+  "daily_extraction": {
+    "first_date": "2026-07-27",
+    "last_date": "2026-10-24",
+    "instructions": "Repeat daily body for each inclusive date, setting startDate=endDate. Save request date externally as date. Paginate startRow 0,25000,50000... until an empty response; save all responses. For global context remove the country filter, retaining all other request settings. Templates contain a single representative day, not a returned date or results. Keep raw dimension keys/casing and responseAggregationType. Filter to query-cohort.csv plus reviewed discovery terms locally, retaining every returned page. Page-led discovery uses page-cohort.csv to identify other visible queries."
+  },
+  "requests": [
+    {
+      "id": "date-availability-final",
+      "method": "POST",
+      "endpoint": "analytics_endpoint",
+      "body": {"startDate":"2026-10-15","endDate":"2026-10-24","dimensions":["date"],"type":"web","aggregationType":"byProperty","dataState":"final","rowLimit":25000,"startRow":0}
+    },
+    {
+      "id": "query-page-country-device-UAE-one-day",
+      "method": "POST",
+      "endpoint": "analytics_endpoint",
+      "body": {"startDate":"2026-10-24","endDate":"2026-10-24","dimensions":["query","page","country","device"],"type":"web","dimensionFilterGroups":[{"groupType":"and","filters":[{"dimension":"country","operator":"equals","expression":"ARE"}]}],"aggregationType":"auto","dataState":"final","rowLimit":25000,"startRow":0}
+    },
+    {
+      "id": "query-country-device-UAE-property-one-day",
+      "method": "POST",
+      "endpoint": "analytics_endpoint",
+      "body": {"startDate":"2026-10-24","endDate":"2026-10-24","dimensions":["query","country","device"],"type":"web","dimensionFilterGroups":[{"groupType":"and","filters":[{"dimension":"country","operator":"equals","expression":"ARE"}]}],"aggregationType":"byProperty","dataState":"final","rowLimit":25000,"startRow":0}
+    },
+    {
+      "id": "country-device-UAE-property-control-one-day",
+      "method": "POST",
+      "endpoint": "analytics_endpoint",
+      "body": {"startDate":"2026-10-24","endDate":"2026-10-24","dimensions":["country","device"],"type":"web","dimensionFilterGroups":[{"groupType":"and","filters":[{"dimension":"country","operator":"equals","expression":"ARE"}]}],"aggregationType":"byProperty","dataState":"final","rowLimit":25000,"startRow":0}
+    },
+    {
+      "id": "example-exact-query-pages-UAE-Mobile-28d",
+      "method": "POST",
+      "endpoint": "analytics_endpoint",
+      "body": {"startDate":"2026-09-27","endDate":"2026-10-24","dimensions":["query","page","country","device"],"type":"web","dimensionFilterGroups":[{"groupType":"and","filters":[{"dimension":"country","operator":"equals","expression":"ARE"},{"dimension":"device","operator":"equals","expression":"MOBILE"},{"dimension":"query","operator":"equals","expression":"mercedes repair dubai"}]}],"aggregationType":"auto","dataState":"final","rowLimit":25000,"startRow":0}
+    },
+    {
+      "id": "example-indexed-url-inspection",
+      "method": "POST",
+      "endpoint": "https://searchconsole.googleapis.com/v1/urlInspection/index:inspect",
+      "body": {"inspectionUrl":"https://digitecme.com/ar/services/mercedes-oil-change-dubai","siteUrl":"sc-domain:digitecme.com","languageCode":"en-US"},
+      "instructions": "Repeat for each exact priority-inspection-urls.csv URL. Save inspectionResult.indexStatusResult and capture timestamp. This API does not run a live test or submit a request for indexing. Missing googleCanonical is not a self-canonical assertion."
+    }
+  ]
+}

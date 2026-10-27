@@ -1,0 +1,125 @@
+{
+  "checkedAt": "2026-10-12T09:39:29.513Z",
+  "unchanged": [
+    {
+      "file": "index.html",
+      "unchanged": true
+    },
+    {
+      "file": "src/components/PpfQuoteForm.tsx",
+      "unchanged": true
+    },
+    {
+      "file": "src/components/PaintAssessmentForm.tsx",
+      "unchanged": true
+    },
+    {
+      "file": "src/components/Analytics.tsx",
+      "unchanged": true
+    },
+    {
+      "file": "src/lib/whatsapp-tracking.ts",
+      "unchanged": true
+    },
+    {
+      "file": "src/lib/contact-attribution.ts",
+      "unchanged": true
+    }
+  ],
+  "sourceConfig": {
+    "gtm": [
+      "GTM-T3GVSPND"
+    ],
+    "ga4": [
+      "G-4TRCEJSY4S"
+    ]
+  },
+  "live": {
+    "url": "https://digitecme.com/",
+    "status": 200,
+    "ids": {
+      "gtm": [
+        "GTM-T3GVSPND"
+      ],
+      "ga4": [
+        "G-4TRCEJSY4S"
+      ]
+    },
+    "htmlSha256": "74d794782dc57f4cab998b4f3801b8b62a3231f8792d9f2cb2531a0da52900ae",
+    "sameGtm": true,
+    "sameGa4": true,
+    "whatsappEndpoints": [
+      "/97143402223"
+    ],
+    "telephoneEndpoints": [
+      "tel:+97143402223"
+    ],
+    "sameWhatsApp": true,
+    "sameTelephone": true
+  },
+  "contactChecks": [
+    {
+      "route": "/services/paint-protection-dubai",
+      "whatsappLinks": 5,
+      "telephoneLinks": 5,
+      "endpointsMatch": true,
+      "trackingIdsMatch": true,
+      "forms": []
+    },
+    {
+      "route": "/services/paint-protection-film",
+      "whatsappLinks": 7,
+      "telephoneLinks": 4,
+      "endpointsMatch": true,
+      "trackingIdsMatch": true,
+      "forms": [
+        "ppf-quote-form"
+      ]
+    },
+    {
+      "route": "/services/ceramic-coating",
+      "whatsappLinks": 10,
+      "telephoneLinks": 4,
+      "endpointsMatch": true,
+      "trackingIdsMatch": true,
+      "forms": []
+    },
+    {
+      "route": "/services/car-polishing-dubai",
+      "whatsappLinks": 7,
+      "telephoneLinks": 4,
+      "endpointsMatch": true,
+      "trackingIdsMatch": true,
+      "forms": [
+        "paint-assessment-form"
+      ]
+    },
+    {
+      "route": "/ar/services/paint-protection-dubai",
+      "whatsappLinks": 5,
+      "telephoneLinks": 5,
+      "endpointsMatch": true,
+      "trackingIdsMatch": true,
+      "forms": []
+    },
+    {
+      "route": "/ar/services/paint-protection-film",
+      "whatsappLinks": 5,
+      "telephoneLinks": 4,
+      "endpointsMatch": true,
+      "trackingIdsMatch": true,
+      "forms": []
+    },
+    {
+      "route": "/ar/services/ceramic-coating",
+      "whatsappLinks": 5,
+      "telephoneLinks": 4,
+      "endpointsMatch": true,
+      "trackingIdsMatch": true,
+      "forms": []
+    }
+  ],
+  "existingFormInfrastructureUnchanged": true,
+  "externalMessagesSent": 0,
+  "analyticsTransport": "External tracking blocked in browser tests; live IDs checked via public HTML only"
+}

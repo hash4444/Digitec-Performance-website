@@ -1,0 +1,311 @@
+{
+  "checkedAt": "2026-10-20T05:44:46.089Z",
+  "candidate": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\candidate.local",
+  "passed": true,
+  "expectedChecks": 14,
+  "productionBuild": {
+    "startedAt": "2026-10-20T05:43:53.015Z",
+    "outputDirectory": "dist",
+    "sourceManifest": "release-qa.local/source-manifest.json",
+    "sourceSha256": "7d3d58e24c826757c32c28cec6c1cf03f74251d8d76af1fed0a03b48d0cc18d2",
+    "steps": [
+      {
+        "command": "vite build --ssr src/entry-server.tsx --outDir dist-server",
+        "exitCode": 0,
+        "seconds": 2.659,
+        "log": "release-qa.local/build-1.log"
+      },
+      {
+        "command": "node scripts/sync-routing-paths.mjs",
+        "exitCode": 0,
+        "seconds": 0.509,
+        "log": "release-qa.local/build-2.log"
+      },
+      {
+        "command": "vite build",
+        "exitCode": 0,
+        "seconds": 8.053,
+        "log": "release-qa.local/build-3.log"
+      },
+      {
+        "command": "vite build --ssr src/entry-server.tsx --outDir dist-server",
+        "exitCode": 0,
+        "seconds": 2.048,
+        "log": "release-qa.local/build-4.log"
+      },
+      {
+        "command": "node scripts/prerender.mjs",
+        "exitCode": 0,
+        "seconds": 6.774,
+        "log": "release-qa.local/build-5.log"
+      },
+      {
+        "command": "node scripts/generate-hosting-rules.mjs",
+        "exitCode": 0,
+        "seconds": 0.357,
+        "log": "release-qa.local/build-6.log"
+      },
+      {
+        "command": "node scripts/test-hosting-rules.mjs",
+        "exitCode": 0,
+        "seconds": 0.095,
+        "log": "release-qa.local/build-7.log"
+      },
+      {
+        "command": "node scripts/test-production-seo-router.mjs",
+        "exitCode": 0,
+        "seconds": 0.128,
+        "log": "release-qa.local/build-8.log"
+      },
+      {
+        "command": "node scripts/validate-seo.mjs",
+        "exitCode": 0,
+        "seconds": 1.676,
+        "log": "release-qa.local/build-9.log"
+      },
+      {
+        "command": "node scripts/validate-ppf.mjs",
+        "exitCode": 0,
+        "seconds": 0.836,
+        "log": "release-qa.local/build-10.log"
+      },
+      {
+        "command": "node scripts/validate-paint-correction.mjs",
+        "exitCode": 0,
+        "seconds": 0.323,
+        "log": "release-qa.local/build-11.log"
+      },
+      {
+        "command": "node scripts/validate-protection-release.mjs",
+        "exitCode": 0,
+        "seconds": 0.445,
+        "log": "release-qa.local/build-12.log"
+      },
+      {
+        "command": "node scripts/validate-query-release.mjs",
+        "exitCode": 0,
+        "seconds": 1.918,
+        "log": "release-qa.local/build-13.log"
+      },
+      {
+        "command": "node scripts/test-contact-attribution.mjs",
+        "exitCode": 0,
+        "seconds": 0.389,
+        "log": "release-qa.local/build-14.log"
+      },
+      {
+        "command": "node scripts/test-ppf-enquiry.mjs",
+        "exitCode": 0,
+        "seconds": 0.41,
+        "log": "release-qa.local/build-15.log"
+      },
+      {
+        "command": "node scripts/validate-oil-change.mjs",
+        "exitCode": 0,
+        "seconds": 0.819,
+        "log": "release-qa.local/build-16.log"
+      },
+      {
+        "command": "node scripts/validate-suspension.mjs",
+        "exitCode": 0,
+        "seconds": 1.39,
+        "log": "release-qa.local/build-17.log"
+      },
+      {
+        "command": "node scripts/validate-transmission.mjs",
+        "exitCode": 0,
+        "seconds": 0.999,
+        "log": "release-qa.local/build-18.log"
+      },
+      {
+        "command": "node scripts/validate-social-metadata.mjs",
+        "exitCode": 0,
+        "seconds": 1.179,
+        "log": "release-qa.local/build-19.log"
+      }
+    ],
+    "passed": true,
+    "finishedAt": "2026-10-20T05:44:24.294Z"
+  },
+  "results": [
+    {
+      "name": "production-build-19-steps",
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "scripts/build-production-local.mjs"
+      ],
+      "cwd": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\candidate.local",
+      "exitCode": 0,
+      "passed": true,
+      "seconds": 31.588,
+      "log": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\qa\\production-build-19-steps.log"
+    },
+    {
+      "name": "typescript-app",
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "node_modules/typescript/bin/tsc",
+        "--noEmit",
+        "-p",
+        "tsconfig.app.json"
+      ],
+      "cwd": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\candidate.local",
+      "exitCode": 0,
+      "passed": true,
+      "seconds": 7.047,
+      "log": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\qa\\typescript-app.log"
+    },
+    {
+      "name": "typescript-node",
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "node_modules/typescript/bin/tsc",
+        "--noEmit",
+        "-p",
+        "tsconfig.node.json"
+      ],
+      "cwd": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\candidate.local",
+      "exitCode": 0,
+      "passed": true,
+      "seconds": 0.661,
+      "log": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\qa\\typescript-node.log"
+    },
+    {
+      "name": "eslint",
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "node_modules/eslint/bin/eslint.js",
+        "."
+      ],
+      "cwd": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\candidate.local",
+      "exitCode": 0,
+      "passed": true,
+      "seconds": 3.427,
+      "log": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\qa\\eslint.log"
+    },
+    {
+      "name": "master-seo",
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "scripts/validate-master-seo.mjs"
+      ],
+      "cwd": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\candidate.local",
+      "exitCode": 0,
+      "passed": true,
+      "seconds": 0.746,
+      "log": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\qa\\master-seo.log"
+    },
+    {
+      "name": "bmw-hub",
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "scripts/validate-bmw-hub.mjs"
+      ],
+      "cwd": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\candidate.local",
+      "exitCode": 0,
+      "passed": true,
+      "seconds": 0.791,
+      "log": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\qa\\bmw-hub.log"
+    },
+    {
+      "name": "paint-care-regression",
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "scripts/validate-paint-care-cluster.mjs"
+      ],
+      "cwd": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\candidate.local",
+      "exitCode": 0,
+      "passed": true,
+      "seconds": 1.281,
+      "log": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\qa\\paint-care-regression.log"
+    },
+    {
+      "name": "tuning-regression",
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "scripts/validate-tuning.mjs"
+      ],
+      "cwd": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\candidate.local",
+      "exitCode": 0,
+      "passed": true,
+      "seconds": 0.989,
+      "log": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\qa\\tuning-regression.log"
+    },
+    {
+      "name": "routing-response-regression",
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "scripts/test-routing-response.mjs"
+      ],
+      "cwd": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\candidate.local",
+      "exitCode": 0,
+      "passed": true,
+      "seconds": 2.81,
+      "log": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\qa\\routing-response-regression.log"
+    },
+    {
+      "name": "brand-booking-form",
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "outputs/repair-service-2026-10-19/qa/test-brand-form.mjs"
+      ],
+      "cwd": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\candidate.local",
+      "exitCode": 0,
+      "passed": true,
+      "seconds": 0.37,
+      "log": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\qa\\brand-booking-form.log"
+    },
+    {
+      "name": "combined-service-seo",
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\qa\\validate-combined-static.mjs",
+        "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\qa"
+      ],
+      "cwd": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\candidate.local",
+      "exitCode": 0,
+      "passed": true,
+      "seconds": 0.403,
+      "log": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\qa\\combined-service-seo.log"
+    },
+    {
+      "name": "diagnostics-ac-static",
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\qa\\validate-diagnostics-ac-static.mjs",
+        "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\qa\\diagnostics-ac-regression"
+      ],
+      "cwd": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\candidate.local",
+      "exitCode": 0,
+      "passed": true,
+      "seconds": 0.486,
+      "log": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\qa\\diagnostics-ac-static.log"
+    },
+    {
+      "name": "ecu-electronics-static",
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\qa\\validate-ecu-electronics-static.mjs",
+        "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\qa"
+      ],
+      "cwd": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\candidate.local",
+      "exitCode": 0,
+      "passed": true,
+      "seconds": 0.395,
+      "log": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\qa\\ecu-electronics-static.log"
+    },
+    {
+      "name": "mercedes-campaign-static",
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\qa\\validate-mercedes-static.mjs",
+        "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\qa"
+      ],
+      "cwd": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\candidate.local",
+      "exitCode": 0,
+      "passed": true,
+      "seconds": 2.374,
+      "log": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\qa\\mercedes-campaign-static.log"
+    }
+  ]
+}

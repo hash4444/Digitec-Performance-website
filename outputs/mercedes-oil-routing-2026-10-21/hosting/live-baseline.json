@@ -1,0 +1,1016 @@
+{
+  "observedAt": "2026-10-21T06:23:39.088Z",
+  "purpose": "Read-only HTTP baseline; GET and HEAD only; synthetic query parameters; no production mutation",
+  "records": [
+    {
+      "id": "root",
+      "method": "GET",
+      "input": "https://digitecme.com/",
+      "hops": [
+        {
+          "url": "https://digitecme.com/",
+          "status": 200,
+          "headers": {
+            "content-type": "text/html; charset=utf-8",
+            "server": "cloudflare",
+            "cf-ray": "a4de2c3c8faa8cb0-AMS",
+            "cf-cache-status": "DYNAMIC",
+            "cache-control": "no-cache, must-revalidate, max-age=0",
+            "x-deployment-id": "psr2.9c28b39e-a0ea-457a-a6f8-e386e999d52b.1793168598.spj8bOWgLGp2oOvfcb9lmXT1_t30Z1dUNqhb1yTOFVc"
+          },
+          "bodyBytes": 163337,
+          "title": "Digi-Tec Performance Center | Independent Car Workshop Dubai",
+          "h1": [
+            "D IGI-TEC Performance Center"
+          ],
+          "canonical": "https://digitecme.com/",
+          "robots": "index, follow, max-image-preview:large",
+          "sha256": "aea6e81f1a6d40f36df8370b39d714ccf839108480930509c27a4d0d31e82741",
+          "rawFile": "live-raw/root-0.txt"
+        }
+      ],
+      "finalUrl": "https://digitecme.com/",
+      "queryPreserved": true
+    },
+    {
+      "id": "root",
+      "method": "HEAD",
+      "input": "https://digitecme.com/",
+      "hops": [
+        {
+          "url": "https://digitecme.com/",
+          "status": 200,
+          "headers": {
+            "content-type": "text/html; charset=utf-8",
+            "server": "cloudflare",
+            "cf-ray": "a4de2c3ec8138cb0-AMS",
+            "cf-cache-status": "DYNAMIC",
+            "cache-control": "no-cache, must-revalidate, max-age=0",
+            "x-deployment-id": "psr2.9c28b39e-a0ea-457a-a6f8-e386e999d52b.1793168598.spj8bOWgLGp2oOvfcb9lmXT1_t30Z1dUNqhb1yTOFVc"
+          },
+          "bodyBytes": 0,
+          "title": "",
+          "h1": [],
+          "canonical": null,
+          "robots": null,
+          "sha256": null
+        }
+      ],
+      "finalUrl": "https://digitecme.com/",
+      "queryPreserved": true
+    },
+    {
+      "id": "legacy",
+      "method": "GET",
+      "input": "https://digitecme.com/brands/mercedes-benz-service-dubai/oil-change?utm_source=routing-audit&tag=a&tag=b&gclid=test-routing-evidence",
+      "hops": [
+        {
+          "url": "https://digitecme.com/brands/mercedes-benz-service-dubai/oil-change?utm_source=routing-audit&tag=a&tag=b&gclid=test-routing-evidence",
+          "status": 200,
+          "headers": {
+            "content-type": "text/html; charset=utf-8",
+            "server": "cloudflare",
+            "cf-ray": "a4de2c41bf2cf548-HKG",
+            "cf-cache-status": "DYNAMIC",
+            "cache-control": "no-cache, must-revalidate, max-age=0",
+            "x-deployment-id": "psr2.9c28b39e-a0ea-457a-a6f8-e386e999d52b.1793168600.2kjKHm8XjMJf5W3gdrkqgmjgeiZ--5UBziBryrKeSqc"
+          },
+          "bodyBytes": 163337,
+          "title": "Digi-Tec Performance Center | Independent Car Workshop Dubai",
+          "h1": [
+            "D IGI-TEC Performance Center"
+          ],
+          "canonical": "https://digitecme.com/",
+          "robots": "index, follow, max-image-preview:large",
+          "sha256": "f8f789d0becf4c961de087e750c80aad274427cc46faf2eb79c013a76498e717",
+          "rawFile": "live-raw/legacy-0.txt"
+        }
+      ],
+      "finalUrl": "https://digitecme.com/brands/mercedes-benz-service-dubai/oil-change?utm_source=routing-audit&tag=a&tag=b&gclid=test-routing-evidence",
+      "queryPreserved": true
+    },
+    {
+      "id": "legacy",
+      "method": "HEAD",
+      "input": "https://digitecme.com/brands/mercedes-benz-service-dubai/oil-change?utm_source=routing-audit&tag=a&tag=b&gclid=test-routing-evidence",
+      "hops": [
+        {
+          "url": "https://digitecme.com/brands/mercedes-benz-service-dubai/oil-change?utm_source=routing-audit&tag=a&tag=b&gclid=test-routing-evidence",
+          "status": 200,
+          "headers": {
+            "content-type": "text/html; charset=utf-8",
+            "server": "cloudflare",
+            "cf-ray": "a4de2c4cac674348-MRS",
+            "cf-cache-status": "DYNAMIC",
+            "cache-control": "no-cache, must-revalidate, max-age=0",
+            "x-deployment-id": "psr2.9c28b39e-a0ea-457a-a6f8-e386e999d52b.1793168601.-cAVyW8OnAulclY0H1kFj2YoxrtuGqsykk78FkEQJhg"
+          },
+          "bodyBytes": 0,
+          "title": "",
+          "h1": [],
+          "canonical": null,
+          "robots": null,
+          "sha256": null
+        }
+      ],
+      "finalUrl": "https://digitecme.com/brands/mercedes-benz-service-dubai/oil-change?utm_source=routing-audit&tag=a&tag=b&gclid=test-routing-evidence",
+      "queryPreserved": true
+    },
+    {
+      "id": "legacy-slash",
+      "method": "GET",
+      "input": "https://digitecme.com/brands/mercedes-benz-service-dubai/oil-change/?utm_source=routing-audit&tag=a&tag=b&gclid=test-routing-evidence",
+      "hops": [
+        {
+          "url": "https://digitecme.com/brands/mercedes-benz-service-dubai/oil-change/?utm_source=routing-audit&tag=a&tag=b&gclid=test-routing-evidence",
+          "status": 200,
+          "headers": {
+            "content-type": "text/html; charset=utf-8",
+            "server": "cloudflare",
+            "cf-ray": "a4de2c4fbec6e22c-MRS",
+            "cf-cache-status": "DYNAMIC",
+            "cache-control": "no-cache, must-revalidate, max-age=0",
+            "x-deployment-id": "psr2.9c28b39e-a0ea-457a-a6f8-e386e999d52b.1793168601.-cAVyW8OnAulclY0H1kFj2YoxrtuGqsykk78FkEQJhg"
+          },
+          "bodyBytes": 163337,
+          "title": "Digi-Tec Performance Center | Independent Car Workshop Dubai",
+          "h1": [
+            "D IGI-TEC Performance Center"
+          ],
+          "canonical": "https://digitecme.com/",
+          "robots": "index, follow, max-image-preview:large",
+          "sha256": "21a159a69cff7101c49b5a9d16102e73631c9eeedc2c4ff664965bf41052a0db",
+          "rawFile": "live-raw/legacy-slash-0.txt"
+        }
+      ],
+      "finalUrl": "https://digitecme.com/brands/mercedes-benz-service-dubai/oil-change/?utm_source=routing-audit&tag=a&tag=b&gclid=test-routing-evidence",
+      "queryPreserved": true
+    },
+    {
+      "id": "legacy-slash",
+      "method": "HEAD",
+      "input": "https://digitecme.com/brands/mercedes-benz-service-dubai/oil-change/?utm_source=routing-audit&tag=a&tag=b&gclid=test-routing-evidence",
+      "hops": [
+        {
+          "url": "https://digitecme.com/brands/mercedes-benz-service-dubai/oil-change/?utm_source=routing-audit&tag=a&tag=b&gclid=test-routing-evidence",
+          "status": 200,
+          "headers": {
+            "content-type": "text/html; charset=utf-8",
+            "server": "cloudflare",
+            "cf-ray": "a4de2c526f399fe0-HKG",
+            "cf-cache-status": "DYNAMIC",
+            "cache-control": "no-cache, must-revalidate, max-age=0",
+            "x-deployment-id": "psr2.9c28b39e-a0ea-457a-a6f8-e386e999d52b.1793168602.VieW1OAxuY5QXgn0gO4tb5rWt0MCg3YqkLBxUT4O5NY"
+          },
+          "bodyBytes": 0,
+          "title": "",
+          "h1": [],
+          "canonical": null,
+          "robots": null,
+          "sha256": null
+        }
+      ],
+      "finalUrl": "https://digitecme.com/brands/mercedes-benz-service-dubai/oil-change/?utm_source=routing-audit&tag=a&tag=b&gclid=test-routing-evidence",
+      "queryPreserved": true
+    },
+    {
+      "id": "service-slashless",
+      "method": "GET",
+      "input": "https://digitecme.com/services/mercedes-oil-change-dubai?utm_source=routing-audit&tag=a&tag=b&gclid=test-routing-evidence",
+      "hops": [
+        {
+          "url": "https://digitecme.com/services/mercedes-oil-change-dubai?utm_source=routing-audit&tag=a&tag=b&gclid=test-routing-evidence",
+          "status": 200,
+          "headers": {
+            "content-type": "text/html; charset=utf-8",
+            "server": "cloudflare",
+            "cf-ray": "a4de2c550925515b-HKG",
+            "cf-cache-status": "DYNAMIC",
+            "cache-control": "no-cache, must-revalidate, max-age=0",
+            "x-deployment-id": "psr2.9c28b39e-a0ea-457a-a6f8-e386e999d52b.1793168602.VieW1OAxuY5QXgn0gO4tb5rWt0MCg3YqkLBxUT4O5NY"
+          },
+          "bodyBytes": 71606,
+          "title": "Mercedes Oil Change Dubai | MB-Approved Oil | Digi-Tec",
+          "h1": [
+            "Mercedes Oil Change in Dubai"
+          ],
+          "canonical": "https://digitecme.com/services/mercedes-oil-change-dubai",
+          "robots": "index, follow, max-image-preview:large",
+          "sha256": "784314a2c2a925bec01e0a64bb6cab39c5f258b71f8db672491fac91d2156cca",
+          "rawFile": "live-raw/service-slashless-0.txt"
+        }
+      ],
+      "finalUrl": "https://digitecme.com/services/mercedes-oil-change-dubai?utm_source=routing-audit&tag=a&tag=b&gclid=test-routing-evidence",
+      "queryPreserved": true
+    },
+    {
+      "id": "service-slashless",
+      "method": "HEAD",
+      "input": "https://digitecme.com/services/mercedes-oil-change-dubai?utm_source=routing-audit&tag=a&tag=b&gclid=test-routing-evidence",
+      "hops": [
+        {
+          "url": "https://digitecme.com/services/mercedes-oil-change-dubai?utm_source=routing-audit&tag=a&tag=b&gclid=test-routing-evidence",
+          "status": 200,
+          "headers": {
+            "content-type": "text/html; charset=utf-8",
+            "server": "cloudflare",
+            "cf-ray": "a4de2c5a5dd37eb7-HKG",
+            "cf-cache-status": "DYNAMIC",
+            "cache-control": "no-cache, must-revalidate, max-age=0",
+            "x-deployment-id": "psr2.9c28b39e-a0ea-457a-a6f8-e386e999d52b.1793168603.Gpyf8mlpKOtr54dGy5Czsf7J3SNKDVC0pZNBRBohzC4"
+          },
+          "bodyBytes": 0,
+          "title": "",
+          "h1": [],
+          "canonical": null,
+          "robots": null,
+          "sha256": null
+        }
+      ],
+      "finalUrl": "https://digitecme.com/services/mercedes-oil-change-dubai?utm_source=routing-audit&tag=a&tag=b&gclid=test-routing-evidence",
+      "queryPreserved": true
+    },
+    {
+      "id": "service-slash",
+      "method": "GET",
+      "input": "https://digitecme.com/services/mercedes-oil-change-dubai/?utm_source=routing-audit&tag=a&tag=b&gclid=test-routing-evidence",
+      "hops": [
+        {
+          "url": "https://digitecme.com/services/mercedes-oil-change-dubai/?utm_source=routing-audit&tag=a&tag=b&gclid=test-routing-evidence",
+          "status": 200,
+          "headers": {
+            "content-type": "text/html; charset=utf-8",
+            "server": "cloudflare",
+            "cf-ray": "a4de2c5d2ea73030-HKG",
+            "cf-cache-status": "DYNAMIC",
+            "cache-control": "no-cache, must-revalidate, max-age=0",
+            "x-deployment-id": "psr2.9c28b39e-a0ea-457a-a6f8-e386e999d52b.1793168603.Gpyf8mlpKOtr54dGy5Czsf7J3SNKDVC0pZNBRBohzC4"
+          },
+          "bodyBytes": 71606,
+          "title": "Mercedes Oil Change Dubai | MB-Approved Oil | Digi-Tec",
+          "h1": [
+            "Mercedes Oil Change in Dubai"
+          ],
+          "canonical": "https://digitecme.com/services/mercedes-oil-change-dubai",
+          "robots": "index, follow, max-image-preview:large",
+          "sha256": "fc37d7b8ccbd3224dd691279f926a69f4b6ab2283016eb597e480f6a04cff5de",
+          "rawFile": "live-raw/service-slash-0.txt"
+        }
+      ],
+      "finalUrl": "https://digitecme.com/services/mercedes-oil-change-dubai/?utm_source=routing-audit&tag=a&tag=b&gclid=test-routing-evidence",
+      "queryPreserved": true
+    },
+    {
+      "id": "service-slash",
+      "method": "HEAD",
+      "input": "https://digitecme.com/services/mercedes-oil-change-dubai/?utm_source=routing-audit&tag=a&tag=b&gclid=test-routing-evidence",
+      "hops": [
+        {
+          "url": "https://digitecme.com/services/mercedes-oil-change-dubai/?utm_source=routing-audit&tag=a&tag=b&gclid=test-routing-evidence",
+          "status": 200,
+          "headers": {
+            "content-type": "text/html; charset=utf-8",
+            "server": "cloudflare",
+            "cf-ray": "a4de2c601c9a6578-AMS",
+            "cf-cache-status": "DYNAMIC",
+            "cache-control": "no-cache, must-revalidate, max-age=0",
+            "x-deployment-id": "psr2.9c28b39e-a0ea-457a-a6f8-e386e999d52b.1793168604.eZcKVYhpWEsR11Yio6hW84mPGC1UyaN8Qn6bOyAN0ho"
+          },
+          "bodyBytes": 0,
+          "title": "",
+          "h1": [],
+          "canonical": null,
+          "robots": null,
+          "sha256": null
+        }
+      ],
+      "finalUrl": "https://digitecme.com/services/mercedes-oil-change-dubai/?utm_source=routing-audit&tag=a&tag=b&gclid=test-routing-evidence",
+      "queryPreserved": true
+    },
+    {
+      "id": "www-legacy",
+      "method": "GET",
+      "input": "https://www.digitecme.com/brands/mercedes-benz-service-dubai/oil-change?utm_source=routing-audit&tag=a&tag=b&gclid=test-routing-evidence",
+      "hops": [
+        {
+          "url": "https://www.digitecme.com/brands/mercedes-benz-service-dubai/oil-change?utm_source=routing-audit&tag=a&tag=b&gclid=test-routing-evidence",
+          "status": 301,
+          "headers": {
+            "location": "https://digitecme.com/brands/mercedes-benz-service-dubai/oil-change?utm_source=routing-audit&tag=a&tag=b&gclid=test-routing-evidence",
+            "content-type": "text/html; charset=UTF-8",
+            "server": "cloudflare",
+            "cf-ray": "a4de2c63385bd3a4-FRA"
+          },
+          "bodyBytes": 167,
+          "title": "301 Moved Permanently",
+          "h1": [
+            "301 Moved Permanently"
+          ],
+          "canonical": null,
+          "robots": null,
+          "sha256": "446a6087825fa73eadb045e5a2e9e2adf7df241b571228187728191d961dda1f",
+          "rawFile": "live-raw/www-legacy-0.txt"
+        },
+        {
+          "url": "https://digitecme.com/brands/mercedes-benz-service-dubai/oil-change?utm_source=routing-audit&tag=a&tag=b&gclid=test-routing-evidence",
+          "status": 200,
+          "headers": {
+            "content-type": "text/html; charset=utf-8",
+            "server": "cloudflare",
+            "cf-ray": "a4de2c65986e5c46-AMS",
+            "cf-cache-status": "DYNAMIC",
+            "cache-control": "no-cache, must-revalidate, max-age=0",
+            "x-deployment-id": "psr2.9c28b39e-a0ea-457a-a6f8-e386e999d52b.1793168605.6SqoVDJ8NRIMZnyXEfkCHXB6AgKKSBhNBHYtH8tDDAA"
+          },
+          "bodyBytes": 163337,
+          "title": "Digi-Tec Performance Center | Independent Car Workshop Dubai",
+          "h1": [
+            "D IGI-TEC Performance Center"
+          ],
+          "canonical": "https://digitecme.com/",
+          "robots": "index, follow, max-image-preview:large",
+          "sha256": "1567289ddc90ee1c596623e2037a732a9e1c57a9455cf841c94a7387c3cddbd3",
+          "rawFile": "live-raw/www-legacy-1.txt"
+        }
+      ],
+      "finalUrl": "https://digitecme.com/brands/mercedes-benz-service-dubai/oil-change?utm_source=routing-audit&tag=a&tag=b&gclid=test-routing-evidence",
+      "queryPreserved": true
+    },
+    {
+      "id": "www-legacy",
+      "method": "HEAD",
+      "input": "https://www.digitecme.com/brands/mercedes-benz-service-dubai/oil-change?utm_source=routing-audit&tag=a&tag=b&gclid=test-routing-evidence",
+      "hops": [
+        {
+          "url": "https://www.digitecme.com/brands/mercedes-benz-service-dubai/oil-change?utm_source=routing-audit&tag=a&tag=b&gclid=test-routing-evidence",
+          "status": 301,
+          "headers": {
+            "location": "https://digitecme.com/brands/mercedes-benz-service-dubai/oil-change?utm_source=routing-audit&tag=a&tag=b&gclid=test-routing-evidence",
+            "content-type": "text/html; charset=UTF-8",
+            "server": "cloudflare",
+            "cf-ray": "a4de2c66fca9d3a4-FRA"
+          },
+          "bodyBytes": 0,
+          "title": "",
+          "h1": [],
+          "canonical": null,
+          "robots": null,
+          "sha256": null
+        },
+        {
+          "url": "https://digitecme.com/brands/mercedes-benz-service-dubai/oil-change?utm_source=routing-audit&tag=a&tag=b&gclid=test-routing-evidence",
+          "status": 200,
+          "headers": {
+            "content-type": "text/html; charset=utf-8",
+            "server": "cloudflare",
+            "cf-ray": "a4de2c67db085c46-AMS",
+            "cf-cache-status": "DYNAMIC",
+            "cache-control": "no-cache, must-revalidate, max-age=0",
+            "x-deployment-id": "psr2.9c28b39e-a0ea-457a-a6f8-e386e999d52b.1793168605.6SqoVDJ8NRIMZnyXEfkCHXB6AgKKSBhNBHYtH8tDDAA"
+          },
+          "bodyBytes": 0,
+          "title": "",
+          "h1": [],
+          "canonical": null,
+          "robots": null,
+          "sha256": null
+        }
+      ],
+      "finalUrl": "https://digitecme.com/brands/mercedes-benz-service-dubai/oil-change?utm_source=routing-audit&tag=a&tag=b&gclid=test-routing-evidence",
+      "queryPreserved": true
+    },
+    {
+      "id": "http-legacy",
+      "method": "GET",
+      "input": "http://digitecme.com/brands/mercedes-benz-service-dubai/oil-change?utm_source=routing-audit&tag=a&tag=b&gclid=test-routing-evidence",
+      "hops": [
+        {
+          "url": "http://digitecme.com/brands/mercedes-benz-service-dubai/oil-change?utm_source=routing-audit&tag=a&tag=b&gclid=test-routing-evidence",
+          "status": 301,
+          "headers": {
+            "location": "https://digitecme.com/brands/mercedes-benz-service-dubai/oil-change?utm_source=routing-audit&tag=a&tag=b&gclid=test-routing-evidence",
+            "content-type": "text/html; charset=UTF-8",
+            "server": "cloudflare",
+            "cf-ray": "a4de2c69ee2fafea-FRA"
+          },
+          "bodyBytes": 167,
+          "title": "301 Moved Permanently",
+          "h1": [
+            "301 Moved Permanently"
+          ],
+          "canonical": null,
+          "robots": null,
+          "sha256": "446a6087825fa73eadb045e5a2e9e2adf7df241b571228187728191d961dda1f",
+          "rawFile": "live-raw/http-legacy-0.txt"
+        },
+        {
+          "url": "https://digitecme.com/brands/mercedes-benz-service-dubai/oil-change?utm_source=routing-audit&tag=a&tag=b&gclid=test-routing-evidence",
+          "status": 200,
+          "headers": {
+            "content-type": "text/html; charset=utf-8",
+            "server": "cloudflare",
+            "cf-ray": "a4de2c6bff03df75-MRS",
+            "cf-cache-status": "DYNAMIC",
+            "cache-control": "no-cache, must-revalidate, max-age=0",
+            "x-deployment-id": "psr2.9c28b39e-a0ea-457a-a6f8-e386e999d52b.1793168606.6KZ-diQ9G7dQwy9jvPxDqafgaXfq4rC8u0oc1vDgZmw"
+          },
+          "bodyBytes": 163337,
+          "title": "Digi-Tec Performance Center | Independent Car Workshop Dubai",
+          "h1": [
+            "D IGI-TEC Performance Center"
+          ],
+          "canonical": "https://digitecme.com/",
+          "robots": "index, follow, max-image-preview:large",
+          "sha256": "e77526ebac3c8847ad3e6c703050d47cc84061d8f624ec7f6c0681aef7154347",
+          "rawFile": "live-raw/http-legacy-1.txt"
+        }
+      ],
+      "finalUrl": "https://digitecme.com/brands/mercedes-benz-service-dubai/oil-change?utm_source=routing-audit&tag=a&tag=b&gclid=test-routing-evidence",
+      "queryPreserved": true
+    },
+    {
+      "id": "http-legacy",
+      "method": "HEAD",
+      "input": "http://digitecme.com/brands/mercedes-benz-service-dubai/oil-change?utm_source=routing-audit&tag=a&tag=b&gclid=test-routing-evidence",
+      "hops": [
+        {
+          "url": "http://digitecme.com/brands/mercedes-benz-service-dubai/oil-change?utm_source=routing-audit&tag=a&tag=b&gclid=test-routing-evidence",
+          "status": 301,
+          "headers": {
+            "location": "https://digitecme.com/brands/mercedes-benz-service-dubai/oil-change?utm_source=routing-audit&tag=a&tag=b&gclid=test-routing-evidence",
+            "content-type": "text/html; charset=UTF-8",
+            "server": "cloudflare",
+            "cf-ray": "a4de2c6d0d8aafea-FRA"
+          },
+          "bodyBytes": 0,
+          "title": "",
+          "h1": [],
+          "canonical": null,
+          "robots": null,
+          "sha256": null
+        },
+        {
+          "url": "https://digitecme.com/brands/mercedes-benz-service-dubai/oil-change?utm_source=routing-audit&tag=a&tag=b&gclid=test-routing-evidence",
+          "status": 200,
+          "headers": {
+            "content-type": "text/html; charset=utf-8",
+            "server": "cloudflare",
+            "cf-ray": "a4de2c6ddadfdf75-MRS",
+            "cf-cache-status": "DYNAMIC",
+            "cache-control": "no-cache, must-revalidate, max-age=0",
+            "x-deployment-id": "psr2.9c28b39e-a0ea-457a-a6f8-e386e999d52b.1793168606.6KZ-diQ9G7dQwy9jvPxDqafgaXfq4rC8u0oc1vDgZmw"
+          },
+          "bodyBytes": 0,
+          "title": "",
+          "h1": [],
+          "canonical": null,
+          "robots": null,
+          "sha256": null
+        }
+      ],
+      "finalUrl": "https://digitecme.com/brands/mercedes-benz-service-dubai/oil-change?utm_source=routing-audit&tag=a&tag=b&gclid=test-routing-evidence",
+      "queryPreserved": true
+    },
+    {
+      "id": "existing-mercedes-redirect",
+      "method": "GET",
+      "input": "https://digitecme.com/services/mercedes-repair-dubai?utm_source=routing-audit&tag=a&tag=b&gclid=test-routing-evidence",
+      "hops": [
+        {
+          "url": "https://digitecme.com/services/mercedes-repair-dubai?utm_source=routing-audit&tag=a&tag=b&gclid=test-routing-evidence",
+          "status": 301,
+          "headers": {
+            "location": "https://digitecme.com/brands/mercedes-benz-service-dubai?utm_source=routing-audit&tag=a&tag=b&gclid=test-routing-evidence",
+            "content-type": "text/html; charset=UTF-8",
+            "server": "cloudflare",
+            "cf-ray": "a4de2c6ffb087894-MRS"
+          },
+          "bodyBytes": 167,
+          "title": "301 Moved Permanently",
+          "h1": [
+            "301 Moved Permanently"
+          ],
+          "canonical": null,
+          "robots": null,
+          "sha256": "446a6087825fa73eadb045e5a2e9e2adf7df241b571228187728191d961dda1f",
+          "rawFile": "live-raw/existing-mercedes-redirect-0.txt"
+        },
+        {
+          "url": "https://digitecme.com/brands/mercedes-benz-service-dubai?utm_source=routing-audit&tag=a&tag=b&gclid=test-routing-evidence",
+          "status": 200,
+          "headers": {
+            "content-type": "text/html; charset=utf-8",
+            "server": "cloudflare",
+            "cf-ray": "a4de2c724db79941-FRA",
+            "cf-cache-status": "DYNAMIC",
+            "cache-control": "no-cache, must-revalidate, max-age=0",
+            "x-deployment-id": "psr2.9c28b39e-a0ea-457a-a6f8-e386e999d52b.1793168607.ArbeoL9ZFWfthJKFbSex-y44qBgVua-trAuNEJkW5b8"
+          },
+          "bodyBytes": 145649,
+          "title": "Mercedes Service Dubai | Maintenance &amp; Repair | DIGI-TEC",
+          "h1": [
+            "Mercedes-Benz Service in Dubai"
+          ],
+          "canonical": "https://digitecme.com/brands/mercedes-benz-service-dubai",
+          "robots": "index, follow, max-image-preview:large",
+          "sha256": "313bb4beda3d894283f6d4ff789b145a0795810439ac51c3f64f784785c7549c",
+          "rawFile": "live-raw/existing-mercedes-redirect-1.txt"
+        }
+      ],
+      "finalUrl": "https://digitecme.com/brands/mercedes-benz-service-dubai?utm_source=routing-audit&tag=a&tag=b&gclid=test-routing-evidence",
+      "queryPreserved": true
+    },
+    {
+      "id": "existing-mercedes-redirect",
+      "method": "HEAD",
+      "input": "https://digitecme.com/services/mercedes-repair-dubai?utm_source=routing-audit&tag=a&tag=b&gclid=test-routing-evidence",
+      "hops": [
+        {
+          "url": "https://digitecme.com/services/mercedes-repair-dubai?utm_source=routing-audit&tag=a&tag=b&gclid=test-routing-evidence",
+          "status": 301,
+          "headers": {
+            "location": "https://digitecme.com/brands/mercedes-benz-service-dubai?utm_source=routing-audit&tag=a&tag=b&gclid=test-routing-evidence",
+            "content-type": "text/html; charset=UTF-8",
+            "server": "cloudflare",
+            "cf-ray": "a4de2c787b2e9941-FRA"
+          },
+          "bodyBytes": 0,
+          "title": "",
+          "h1": [],
+          "canonical": null,
+          "robots": null,
+          "sha256": null
+        },
+        {
+          "url": "https://digitecme.com/brands/mercedes-benz-service-dubai?utm_source=routing-audit&tag=a&tag=b&gclid=test-routing-evidence",
+          "status": 200,
+          "headers": {
+            "content-type": "text/html; charset=utf-8",
+            "server": "cloudflare",
+            "cf-ray": "a4de2c7aaf11e23e-MRS",
+            "cf-cache-status": "DYNAMIC",
+            "cache-control": "no-cache, must-revalidate, max-age=0",
+            "x-deployment-id": "psr2.9c28b39e-a0ea-457a-a6f8-e386e999d52b.1793168608.1hrTGjydO3jO4GQeo8oxyskUnXlLTrdBadzjBqnFATo"
+          },
+          "bodyBytes": 0,
+          "title": "",
+          "h1": [],
+          "canonical": null,
+          "robots": null,
+          "sha256": null
+        }
+      ],
+      "finalUrl": "https://digitecme.com/brands/mercedes-benz-service-dubai?utm_source=routing-audit&tag=a&tag=b&gclid=test-routing-evidence",
+      "queryPreserved": true
+    },
+    {
+      "id": "hub",
+      "method": "GET",
+      "input": "https://digitecme.com/brands/mercedes-benz-service-dubai",
+      "hops": [
+        {
+          "url": "https://digitecme.com/brands/mercedes-benz-service-dubai",
+          "status": 200,
+          "headers": {
+            "content-type": "text/html; charset=utf-8",
+            "server": "cloudflare",
+            "cf-ray": "a4de2c7d5c7ccabc-HKG",
+            "cf-cache-status": "DYNAMIC",
+            "cache-control": "no-cache, must-revalidate, max-age=0",
+            "x-deployment-id": "psr2.9c28b39e-a0ea-457a-a6f8-e386e999d52b.1793168608.1hrTGjydO3jO4GQeo8oxyskUnXlLTrdBadzjBqnFATo"
+          },
+          "bodyBytes": 145649,
+          "title": "Mercedes Service Dubai | Maintenance &amp; Repair | DIGI-TEC",
+          "h1": [
+            "Mercedes-Benz Service in Dubai"
+          ],
+          "canonical": "https://digitecme.com/brands/mercedes-benz-service-dubai",
+          "robots": "index, follow, max-image-preview:large",
+          "sha256": "54ee3200bdff90ffe7c0260aa75bf675b9b9ff3991999e1fb3268c15ce219bf3",
+          "rawFile": "live-raw/hub-0.txt"
+        }
+      ],
+      "finalUrl": "https://digitecme.com/brands/mercedes-benz-service-dubai",
+      "queryPreserved": true
+    },
+    {
+      "id": "hub",
+      "method": "HEAD",
+      "input": "https://digitecme.com/brands/mercedes-benz-service-dubai",
+      "hops": [
+        {
+          "url": "https://digitecme.com/brands/mercedes-benz-service-dubai",
+          "status": 200,
+          "headers": {
+            "content-type": "text/html; charset=utf-8",
+            "server": "cloudflare",
+            "cf-ray": "a4de2c8189b50946-HKG",
+            "cf-cache-status": "DYNAMIC",
+            "cache-control": "no-cache, must-revalidate, max-age=0",
+            "x-deployment-id": "psr2.9c28b39e-a0ea-457a-a6f8-e386e999d52b.1793168609.rT-TcZxWr9POVeiXXzyyoq9pk8r_CEwsj6ZTtWxm1yM"
+          },
+          "bodyBytes": 0,
+          "title": "",
+          "h1": [],
+          "canonical": null,
+          "robots": null,
+          "sha256": null
+        }
+      ],
+      "finalUrl": "https://digitecme.com/brands/mercedes-benz-service-dubai",
+      "queryPreserved": true
+    },
+    {
+      "id": "general-oil",
+      "method": "GET",
+      "input": "https://digitecme.com/services/oil-change-dubai",
+      "hops": [
+        {
+          "url": "https://digitecme.com/services/oil-change-dubai",
+          "status": 200,
+          "headers": {
+            "content-type": "text/html; charset=utf-8",
+            "server": "cloudflare",
+            "cf-ray": "a4de2c849bd88cea-FRA",
+            "cf-cache-status": "DYNAMIC",
+            "cache-control": "no-cache, must-revalidate, max-age=0",
+            "x-deployment-id": "psr2.9c28b39e-a0ea-457a-a6f8-e386e999d52b.1793168610.7XWS3HEtEroernAS_8H9-CZAELLQsttQSiuHVYSMd4s"
+          },
+          "bodyBytes": 70544,
+          "title": "Car Oil Change Dubai | Engine Oil &amp; Filter Service | DIGI-TEC",
+          "h1": [
+            "Car Oil Change in Dubai"
+          ],
+          "canonical": "https://digitecme.com/services/oil-change-dubai",
+          "robots": "index, follow, max-image-preview:large",
+          "sha256": "11bb1a690ae2a517cb5313f12b037c3f07ab43c61c8bc7aaa80da8d0c5af5a97",
+          "rawFile": "live-raw/general-oil-0.txt"
+        }
+      ],
+      "finalUrl": "https://digitecme.com/services/oil-change-dubai",
+      "queryPreserved": true
+    },
+    {
+      "id": "general-oil",
+      "method": "HEAD",
+      "input": "https://digitecme.com/services/oil-change-dubai",
+      "hops": [
+        {
+          "url": "https://digitecme.com/services/oil-change-dubai",
+          "status": 200,
+          "headers": {
+            "content-type": "text/html; charset=utf-8",
+            "server": "cloudflare",
+            "cf-ray": "a4de2c878c50bb4f-FRA",
+            "cf-cache-status": "DYNAMIC",
+            "cache-control": "no-cache, must-revalidate, max-age=0",
+            "x-deployment-id": "psr2.9c28b39e-a0ea-457a-a6f8-e386e999d52b.1793168610.7XWS3HEtEroernAS_8H9-CZAELLQsttQSiuHVYSMd4s"
+          },
+          "bodyBytes": 0,
+          "title": "",
+          "h1": [],
+          "canonical": null,
+          "robots": null,
+          "sha256": null
+        }
+      ],
+      "finalUrl": "https://digitecme.com/services/oil-change-dubai",
+      "queryPreserved": true
+    },
+    {
+      "id": "oil-guide",
+      "method": "GET",
+      "input": "https://digitecme.com/blog/best-oil-change-dubai-mercedes",
+      "hops": [
+        {
+          "url": "https://digitecme.com/blog/best-oil-change-dubai-mercedes",
+          "status": 200,
+          "headers": {
+            "content-type": "text/html; charset=utf-8",
+            "server": "cloudflare",
+            "cf-ray": "a4de2c89fdf1d36d-FRA",
+            "cf-cache-status": "DYNAMIC",
+            "cache-control": "no-cache, must-revalidate, max-age=0",
+            "x-deployment-id": "psr2.9c28b39e-a0ea-457a-a6f8-e386e999d52b.1793168610.7XWS3HEtEroernAS_8H9-CZAELLQsttQSiuHVYSMd4s"
+          },
+          "bodyBytes": 43097,
+          "title": "Choosing a Mercedes Oil Change Dubai | Owner Checklist",
+          "h1": [
+            "How to Choose a Mercedes Oil Change in Dubai"
+          ],
+          "canonical": "https://digitecme.com/blog/best-oil-change-dubai-mercedes",
+          "robots": "index, follow, max-image-preview:large",
+          "sha256": "8aa74741004ae662294dd8621e211ef9fabcf749dac5d7737d396ee6cb1940d3",
+          "rawFile": "live-raw/oil-guide-0.txt"
+        }
+      ],
+      "finalUrl": "https://digitecme.com/blog/best-oil-change-dubai-mercedes",
+      "queryPreserved": true
+    },
+    {
+      "id": "oil-guide",
+      "method": "HEAD",
+      "input": "https://digitecme.com/blog/best-oil-change-dubai-mercedes",
+      "hops": [
+        {
+          "url": "https://digitecme.com/blog/best-oil-change-dubai-mercedes",
+          "status": 200,
+          "headers": {
+            "content-type": "text/html; charset=utf-8",
+            "server": "cloudflare",
+            "cf-ray": "a4de2c8cbba0c6bf-FRA",
+            "cf-cache-status": "DYNAMIC",
+            "cache-control": "no-cache, must-revalidate, max-age=0",
+            "x-deployment-id": "psr2.9c28b39e-a0ea-457a-a6f8-e386e999d52b.1793168611.Vlz3EJuQ621JUTdkxAbT5ugeFCY6ip89upuF6dIJLw0"
+          },
+          "bodyBytes": 0,
+          "title": "",
+          "h1": [],
+          "canonical": null,
+          "robots": null,
+          "sha256": null
+        }
+      ],
+      "finalUrl": "https://digitecme.com/blog/best-oil-change-dubai-mercedes",
+      "queryPreserved": true
+    },
+    {
+      "id": "diagnostics",
+      "method": "GET",
+      "input": "https://digitecme.com/services/mercedes-diagnostics-dubai",
+      "hops": [
+        {
+          "url": "https://digitecme.com/services/mercedes-diagnostics-dubai",
+          "status": 200,
+          "headers": {
+            "content-type": "text/html; charset=utf-8",
+            "server": "cloudflare",
+            "cf-ray": "a4de2c8efc9ee1fd-MRS",
+            "cf-cache-status": "DYNAMIC",
+            "cache-control": "no-cache, must-revalidate, max-age=0",
+            "x-deployment-id": "psr2.9c28b39e-a0ea-457a-a6f8-e386e999d52b.1793168611.Vlz3EJuQ621JUTdkxAbT5ugeFCY6ip89upuF6dIJLw0"
+          },
+          "bodyBytes": 80846,
+          "title": "Mercedes Diagnostics Dubai | XENTRY Fault Tracing | DIGI-TEC",
+          "h1": [
+            "Mercedes XENTRY Diagnostics &amp; Coding in Dubai"
+          ],
+          "canonical": "https://digitecme.com/services/mercedes-diagnostics-dubai",
+          "robots": "index, follow, max-image-preview:large",
+          "sha256": "4189d264901bf79eabb940b3de75e30b5ec9aec5c28e26bc6eef89d70cc24ad0",
+          "rawFile": "live-raw/diagnostics-0.txt"
+        }
+      ],
+      "finalUrl": "https://digitecme.com/services/mercedes-diagnostics-dubai",
+      "queryPreserved": true
+    },
+    {
+      "id": "diagnostics",
+      "method": "HEAD",
+      "input": "https://digitecme.com/services/mercedes-diagnostics-dubai",
+      "hops": [
+        {
+          "url": "https://digitecme.com/services/mercedes-diagnostics-dubai",
+          "status": 200,
+          "headers": {
+            "content-type": "text/html; charset=utf-8",
+            "server": "cloudflare",
+            "cf-ray": "a4de2c91db59d671-HKG",
+            "cf-cache-status": "DYNAMIC",
+            "cache-control": "no-cache, must-revalidate, max-age=0",
+            "x-deployment-id": "psr2.9c28b39e-a0ea-457a-a6f8-e386e999d52b.1793168612.UMpaI967xdntZCtZjtvGeLqu_9CFxvEpw-rjxhkqH3w"
+          },
+          "bodyBytes": 0,
+          "title": "",
+          "h1": [],
+          "canonical": null,
+          "robots": null,
+          "sha256": null
+        }
+      ],
+      "finalUrl": "https://digitecme.com/services/mercedes-diagnostics-dubai",
+      "queryPreserved": true
+    },
+    {
+      "id": "ppf",
+      "method": "GET",
+      "input": "https://digitecme.com/services/paint-protection-film",
+      "hops": [
+        {
+          "url": "https://digitecme.com/services/paint-protection-film",
+          "status": 200,
+          "headers": {
+            "content-type": "text/html; charset=utf-8",
+            "server": "cloudflare",
+            "cf-ray": "a4de2c95ed4a0115-MRS",
+            "cf-cache-status": "DYNAMIC",
+            "cache-control": "no-cache, must-revalidate, max-age=0",
+            "x-deployment-id": "psr2.9c28b39e-a0ea-457a-a6f8-e386e999d52b.1793168612.UMpaI967xdntZCtZjtvGeLqu_9CFxvEpw-rjxhkqH3w"
+          },
+          "bodyBytes": 65019,
+          "title": "Paint Protection Film (PPF) Dubai | DIGI-TEC",
+          "h1": [
+            "Paint Protection Film (PPF) in Dubai"
+          ],
+          "canonical": "https://digitecme.com/services/paint-protection-film",
+          "robots": "index, follow, max-image-preview:large",
+          "sha256": "22d8e3853f9cdcc6e54acd232a4210700a4c24a337bdcb17c198366c57f01a0b",
+          "rawFile": "live-raw/ppf-0.txt"
+        }
+      ],
+      "finalUrl": "https://digitecme.com/services/paint-protection-film",
+      "queryPreserved": true
+    },
+    {
+      "id": "ppf",
+      "method": "HEAD",
+      "input": "https://digitecme.com/services/paint-protection-film",
+      "hops": [
+        {
+          "url": "https://digitecme.com/services/paint-protection-film",
+          "status": 200,
+          "headers": {
+            "content-type": "text/html; charset=utf-8",
+            "server": "cloudflare",
+            "cf-ray": "a4de2c992fac0b03-HKG",
+            "cf-cache-status": "DYNAMIC",
+            "cache-control": "no-cache, must-revalidate, max-age=0",
+            "x-deployment-id": "psr2.9c28b39e-a0ea-457a-a6f8-e386e999d52b.1793168613.dT7xy0bWg0QNyWV9s05il0x-vUH8ylpNhKnHkuwpHHE"
+          },
+          "bodyBytes": 0,
+          "title": "",
+          "h1": [],
+          "canonical": null,
+          "robots": null,
+          "sha256": null
+        }
+      ],
+      "finalUrl": "https://digitecme.com/services/paint-protection-film",
+      "queryPreserved": true
+    },
+    {
+      "id": "tuning",
+      "method": "GET",
+      "input": "https://digitecme.com/tuning",
+      "hops": [
+        {
+          "url": "https://digitecme.com/tuning",
+          "status": 200,
+          "headers": {
+            "content-type": "text/html; charset=utf-8",
+            "server": "cloudflare",
+            "cf-ray": "a4de2c9d1d3a85d3-HKG",
+            "cf-cache-status": "DYNAMIC",
+            "cache-control": "no-cache, must-revalidate, max-age=0",
+            "x-deployment-id": "psr2.9c28b39e-a0ea-457a-a6f8-e386e999d52b.1793168613.dT7xy0bWg0QNyWV9s05il0x-vUH8ylpNhKnHkuwpHHE"
+          },
+          "bodyBytes": 152177,
+          "title": "Car Performance Tuning Dubai | ECU Remap &amp; Prices | DIGI-TEC",
+          "h1": [
+            "Car Performance Tuning Dubai"
+          ],
+          "canonical": "https://digitecme.com/tuning",
+          "robots": "index, follow, max-image-preview:large",
+          "sha256": "a187437eb16ce6ba3bc19bdae7d4287b2e919479e8c91188790ac9b18040e639",
+          "rawFile": "live-raw/tuning-0.txt"
+        }
+      ],
+      "finalUrl": "https://digitecme.com/tuning",
+      "queryPreserved": true
+    },
+    {
+      "id": "tuning",
+      "method": "HEAD",
+      "input": "https://digitecme.com/tuning",
+      "hops": [
+        {
+          "url": "https://digitecme.com/tuning",
+          "status": 200,
+          "headers": {
+            "content-type": "text/html; charset=utf-8",
+            "server": "cloudflare",
+            "cf-ray": "a4de2ca14bfffa41-MRS",
+            "cf-cache-status": "DYNAMIC",
+            "cache-control": "no-cache, must-revalidate, max-age=0",
+            "x-deployment-id": "psr2.9c28b39e-a0ea-457a-a6f8-e386e999d52b.1793168614.BxOextdinMcQdf1iHy38Z184Kz4MQy76j65akwAyi2w"
+          },
+          "bodyBytes": 0,
+          "title": "",
+          "h1": [],
+          "canonical": null,
+          "robots": null,
+          "sha256": null
+        }
+      ],
+      "finalUrl": "https://digitecme.com/tuning",
+      "queryPreserved": true
+    },
+    {
+      "id": "redirects-asset",
+      "method": "GET",
+      "input": "https://digitecme.com/_redirects",
+      "hops": [
+        {
+          "url": "https://digitecme.com/_redirects",
+          "status": 200,
+          "headers": {
+            "content-type": "application/octet-stream",
+            "server": "cloudflare",
+            "cf-ray": "a4de2ca3de2f095e-HKG",
+            "cf-cache-status": "DYNAMIC",
+            "x-deployment-id": "psr2.9c28b39e-a0ea-457a-a6f8-e386e999d52b.1793168615.LCLBJ7NhM1tGEk1hM6o8OJ7TxFZAryYuShuHmSvR3iU",
+            "content-length": "16450"
+          },
+          "bodyBytes": 16450,
+          "title": "",
+          "h1": [],
+          "canonical": null,
+          "robots": null,
+          "sha256": "56d28b946024731722a7ed710216a65077ec5e40400f22f9c3a1ffbc245d6c7f",
+          "rawFile": "live-raw/redirects-asset-0.txt"
+        }
+      ],
+      "finalUrl": "https://digitecme.com/_redirects",
+      "queryPreserved": true
+    },
+    {
+      "id": "redirects-asset",
+      "method": "HEAD",
+      "input": "https://digitecme.com/_redirects",
+      "hops": [
+        {
+          "url": "https://digitecme.com/_redirects",
+          "status": 200,
+          "headers": {
+            "content-type": "application/octet-stream",
+            "server": "cloudflare",
+            "cf-ray": "a4de2cae4d8fc8a7-HKG",
+            "cf-cache-status": "DYNAMIC",
+            "x-deployment-id": "psr2.9c28b39e-a0ea-457a-a6f8-e386e999d52b.1793168616.lfDshoQqILO6ii-2cXW-085PTUk5_cEZyhYVwlJwcTs"
+          },
+          "bodyBytes": 0,
+          "title": "",
+          "h1": [],
+          "canonical": null,
+          "robots": null,
+          "sha256": null
+        }
+      ],
+      "finalUrl": "https://digitecme.com/_redirects",
+      "queryPreserved": true
+    },
+    {
+      "id": "worker-asset",
+      "method": "GET",
+      "input": "https://digitecme.com/_worker.js",
+      "hops": [
+        {
+          "url": "https://digitecme.com/_worker.js",
+          "status": 200,
+          "headers": {
+            "content-type": "text/javascript; charset=utf-8",
+            "server": "cloudflare",
+            "cf-ray": "a4de2cb10f460aa5-HKG",
+            "cf-cache-status": "BYPASS",
+            "x-deployment-id": "psr2.9c28b39e-a0ea-457a-a6f8-e386e999d52b.1793168617.m-dhXiLszxz9wikAZpmmdFNEqaKV4gMQqRWHb0uT1Ys"
+          },
+          "bodyBytes": 78360,
+          "title": "",
+          "h1": [],
+          "canonical": null,
+          "robots": null,
+          "sha256": "47208557115070b192a66e867c27be7b847b00a6304c25519fdb84033b7d1e45",
+          "rawFile": "live-raw/worker-asset-0.txt"
+        }
+      ],
+      "finalUrl": "https://digitecme.com/_worker.js",
+      "queryPreserved": true
+    },
+    {
+      "id": "worker-asset",
+      "method": "HEAD",
+      "input": "https://digitecme.com/_worker.js",
+      "hops": [
+        {
+          "url": "https://digitecme.com/_worker.js",
+          "status": 200,
+          "headers": {
+            "content-type": "text/javascript; charset=utf-8",
+            "server": "cloudflare",
+            "cf-ray": "a4de2cbc6f3fe2f1-HKG",
+            "cf-cache-status": "BYPASS",
+            "x-deployment-id": "psr2.9c28b39e-a0ea-457a-a6f8-e386e999d52b.1793168619.cVoRnuEz8Ib8aBWKzrwQtyoDbfLf0QvF07CMCWpxTlM"
+          },
+          "bodyBytes": 0,
+          "title": "",
+          "h1": [],
+          "canonical": null,
+          "robots": null,
+          "sha256": null
+        }
+      ],
+      "finalUrl": "https://digitecme.com/_worker.js",
+      "queryPreserved": true
+    }
+  ]
+}

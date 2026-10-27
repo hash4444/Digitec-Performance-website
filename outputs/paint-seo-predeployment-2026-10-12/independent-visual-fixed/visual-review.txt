@@ -1,0 +1,24 @@
+Independent visual predeployment review — repaired build
+Source fingerprint: c5f55b95b6830a7371cd48d2782860a8884a213c5c838d97eff1618a74fa329d
+Preview: http://127.0.0.1:5292 (fresh isolated build.local/dist)
+Verdict: PASS for requested JavaScript-enabled visual/Header predeployment scope. No remaining release blocker in this review.
+
+Fresh regression evidence
+- 28 fresh-tab cases, 218 checks; every check passed.
+- Saved dark/light Header hydration tested on all six English/Arabic hub, PPF and ceramic routes at 390 and 1440px. Each UI toggle persisted across a reload; theme icon accessible labels, html class, colorScheme, localStorage and locale direction agreed after actual hydration marker.
+- Arabic PPF/ceramic saved-light fixes tested at 320,390,768,1440px; dark appearance also checked at 390 and1440px.
+- Computed hero Call text/border and breadcrumb colors stay light against the dark photograph. Computed final Call text stays dark on the pale light-mode final CTA section. All telephone hrefs remain tel:+97143402223.
+- No horizontal page overflow, runtime errors, unexpected console warnings/errors, hydration warnings or local HTTP asset failures. External requests blocked intentionally.
+- Fresh SPA English-to-Arabic navigation on each service preserves the saved light theme and the same document.
+- Captured 16 corrected hero/final-CTA screenshots and four contact sheets; all four contact sheets were opened and visually reviewed across all four widths. Direct full-size Arabic PPF390 hero/final screenshots also opened. Labels, icons and borders now clearly render.
+- Machine results: fixed-build-results.json. Screenshots: ar-*-light-hero-sheet.png and ar-*-light-final-cta-sheet.png in this directory.
+
+Original evidence retained
+- ../independent-visual/independent-visual-results.json records the independent 48-case initial matrix and585 checks.
+- All36 original hero/content/quote contact sheets visually reviewed. Original48 JavaScript-enabled cases pass responsive layout, Header restore/toggle/reload, local images, native FAQ/accordion interaction, table-contained scrolling, correct canonical/lang/dir, initial header clearance and mobile footer/CTA clearance.
+- ../independent-visual/visual-review.txt records the three initial Arabic light-mode contrast findings. The repaired build resolves those findings with scoped CSS and wrapper classes; prose is unchanged.
+
+Minor observations retained, outside the scoped repair
+- Shared footer white wordmark has low contrast in light mode; orange D stays visible. Original light hub quote sheets show this.
+- Plain-text Arabic phone number digit groups inherit RTL; tel link remains correct. Original Arabic hub quote sheets show this.
+- Arabic PPF/ceramic generic FAQ answers need JavaScript. Initial no-JS optional checks found hidden answer regions. This predates the release: outputs/paint-seo-2026-10-12/before/src/pages/ServicePage.tsx:349 already uses AccordionContent forceMount; src/components/ui/accordion.tsx applies data-[state=closed]:hidden for forceMount. The before-contrast-fix/ServicePage.tsx snapshot likewise has forceMount at353 and no noscript fallback. Hub native FAQs work without JavaScript; English ceramic has its explicit fallback.

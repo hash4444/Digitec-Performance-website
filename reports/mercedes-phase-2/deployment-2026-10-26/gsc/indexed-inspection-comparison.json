@@ -1,0 +1,253 @@
+{
+  "property": "sc-domain:digitecme.com",
+  "refreshed_utc_start": "2026-10-26T07:07:18.888Z",
+  "refreshed_utc_end": "2026-10-26T07:09:13.062Z",
+  "method": "Authenticated Search Console UI; rendered body text; Google Index results only",
+  "observations_count": 11,
+  "status_canonical_crawl_changes_count": 0,
+  "last_crawl_timezone": "As displayed by Search Console; timezone unverified",
+  "no_indexing_requests": true,
+  "no_live_tests": true,
+  "comparisons": [
+    {
+      "current": {
+        "url": "https://digitecme.com/ar/brands/mercedes-benz-service-dubai/oil-change",
+        "captured_at_utc": "2026-10-26T07:07:18.888Z",
+        "page_indexing": "Page is indexed",
+        "last_crawl_as_displayed": "8 Oct 2026, 18:20:18",
+        "crawled_as": "Googlebot smartphone",
+        "crawl_allowed": "Yes",
+        "page_fetch": "Successful",
+        "indexing_allowed": "Yes",
+        "user_declared_canonical": "https://digitecme.com/ar/services/mercedes-oil-change-dubai",
+        "google_selected_canonical_label": "Inspected URL",
+        "google_selected_canonical_resolved": "https://digitecme.com/ar/brands/mercedes-benz-service-dubai/oil-change",
+        "sitemaps": "No referring sitemaps detected"
+      },
+      "reviewed_captured_at_utc": "2026-10-26T06:47:15.938Z",
+      "changes": [
+        {
+          "field": "sitemaps",
+          "before": "Temporary processing error",
+          "after": "No referring sitemaps detected"
+        }
+      ]
+    },
+    {
+      "current": {
+        "url": "https://digitecme.com/ar/services/mercedes-oil-change-dubai",
+        "captured_at_utc": "2026-10-26T07:07:43.53Z",
+        "page_indexing": "Page is indexed",
+        "last_crawl_as_displayed": "26 Sept 2026, 01:23:15",
+        "crawled_as": "Googlebot smartphone",
+        "crawl_allowed": "Yes",
+        "page_fetch": "Successful",
+        "indexing_allowed": "Yes",
+        "user_declared_canonical": "https://digitecme.com/ar/services/mercedes-oil-change-dubai",
+        "google_selected_canonical_label": "Inspected URL",
+        "google_selected_canonical_resolved": "https://digitecme.com/ar/services/mercedes-oil-change-dubai",
+        "sitemaps": "https://digitecme.com/sitemap.xml"
+      },
+      "reviewed_captured_at_utc": "2026-10-26T06:47:33.19Z",
+      "changes": [
+        {
+          "field": "sitemaps",
+          "before": "Temporary processing error",
+          "after": "https://digitecme.com/sitemap.xml"
+        }
+      ]
+    },
+    {
+      "current": {
+        "url": "https://digitecme.com/brands/mercedes-benz-service-dubai/body-repair",
+        "captured_at_utc": "2026-10-26T07:07:50.392Z",
+        "page_indexing": "Page is indexed",
+        "last_crawl_as_displayed": "24 Sept 2026, 20:54:19",
+        "crawled_as": "Googlebot smartphone",
+        "crawl_allowed": "Yes",
+        "page_fetch": "Successful",
+        "indexing_allowed": "Yes",
+        "user_declared_canonical": "https://digitecme.com/services/mercedes-body-repair-dubai",
+        "google_selected_canonical_label": "Inspected URL",
+        "google_selected_canonical_resolved": "https://digitecme.com/brands/mercedes-benz-service-dubai/body-repair",
+        "sitemaps": "No referring sitemaps detected"
+      },
+      "reviewed_captured_at_utc": "2026-10-26T06:47:40.796Z",
+      "changes": []
+    },
+    {
+      "current": {
+        "url": "https://digitecme.com/ar/services/mercedes-battery-replacement-dubai",
+        "captured_at_utc": "2026-10-26T07:08:12.888Z",
+        "page_indexing": "Page is indexed",
+        "last_crawl_as_displayed": "15 Oct 2026, 23:24:53",
+        "crawled_as": "Googlebot smartphone",
+        "crawl_allowed": "Yes",
+        "page_fetch": "Successful",
+        "indexing_allowed": "Yes",
+        "user_declared_canonical": "https://digitecme.com/ar/services/mercedes-battery-replacement-dubai",
+        "google_selected_canonical_label": "Inspected URL",
+        "google_selected_canonical_resolved": "https://digitecme.com/ar/services/mercedes-battery-replacement-dubai",
+        "sitemaps": "https://digitecme.com/sitemap.xml"
+      },
+      "reviewed_captured_at_utc": "2026-10-26T06:48:21.357Z",
+      "changes": [
+        {
+          "field": "sitemaps",
+          "before": "Temporary processing error",
+          "after": "https://digitecme.com/sitemap.xml"
+        }
+      ]
+    },
+    {
+      "current": {
+        "url": "https://digitecme.com/ar/brands/mercedes-benz-service-dubai/mechanical-repair",
+        "captured_at_utc": "2026-10-26T07:08:23.058Z",
+        "page_indexing": "Page is indexed",
+        "last_crawl_as_displayed": "9 Oct 2026, 12:05:09",
+        "crawled_as": "Googlebot smartphone",
+        "crawl_allowed": "Yes",
+        "page_fetch": "Successful",
+        "indexing_allowed": "Yes",
+        "user_declared_canonical": "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai",
+        "google_selected_canonical_label": "Inspected URL",
+        "google_selected_canonical_resolved": "https://digitecme.com/ar/brands/mercedes-benz-service-dubai/mechanical-repair",
+        "sitemaps": "Temporary processing error"
+      },
+      "reviewed_captured_at_utc": "2026-10-26T06:48:29.511Z",
+      "changes": [
+        {
+          "field": "sitemaps",
+          "before": "No referring sitemaps detected",
+          "after": "Temporary processing error"
+        }
+      ]
+    },
+    {
+      "current": {
+        "url": "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai",
+        "captured_at_utc": "2026-10-26T07:08:30.395Z",
+        "page_indexing": "Page is indexed",
+        "last_crawl_as_displayed": "26 Sept 2026, 23:42:23",
+        "crawled_as": "Googlebot smartphone",
+        "crawl_allowed": "Yes",
+        "page_fetch": "Successful",
+        "indexing_allowed": "Yes",
+        "user_declared_canonical": "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai",
+        "google_selected_canonical_label": "Inspected URL",
+        "google_selected_canonical_resolved": "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai",
+        "sitemaps": "Temporary processing error"
+      },
+      "reviewed_captured_at_utc": "2026-10-26T06:48:37.279Z",
+      "changes": []
+    },
+    {
+      "current": {
+        "url": "https://digitecme.com/services/mercedes-body-repair-dubai",
+        "captured_at_utc": "2026-10-26T07:08:37.107Z",
+        "page_indexing": "Page is not indexed: Crawled - currently not indexed",
+        "last_crawl_as_displayed": "11 Oct 2026, 09:31:46",
+        "crawled_as": "Googlebot smartphone",
+        "crawl_allowed": "Yes",
+        "page_fetch": "Successful",
+        "indexing_allowed": "N/A",
+        "user_declared_canonical": "N/A",
+        "google_selected_canonical_label": "N/A",
+        "google_selected_canonical_resolved": "N/A",
+        "sitemaps": "Temporary processing error"
+      },
+      "reviewed_captured_at_utc": "2026-10-26T06:48:47.497Z",
+      "changes": []
+    },
+    {
+      "current": {
+        "url": "https://digitecme.com/services/mercedes-oil-change-dubai",
+        "captured_at_utc": "2026-10-26T07:08:48.424Z",
+        "page_indexing": "Page is not indexed: Crawled - currently not indexed",
+        "last_crawl_as_displayed": "11 Oct 2026, 09:31:48",
+        "crawled_as": "Googlebot smartphone",
+        "crawl_allowed": "Yes",
+        "page_fetch": "Successful",
+        "indexing_allowed": "N/A",
+        "user_declared_canonical": "N/A",
+        "google_selected_canonical_label": "N/A",
+        "google_selected_canonical_resolved": "N/A",
+        "sitemaps": "Temporary processing error"
+      },
+      "reviewed_captured_at_utc": "2026-10-26T06:49:00.487Z",
+      "changes": [
+        {
+          "field": "sitemaps",
+          "before": "https://digitecme.com/sitemap.xml",
+          "after": "Temporary processing error"
+        }
+      ]
+    },
+    {
+      "current": {
+        "url": "https://digitecme.com/services/mercedes-oil-change-dubai/",
+        "captured_at_utc": "2026-10-26T07:08:57.558Z",
+        "page_indexing": "Page is indexed",
+        "last_crawl_as_displayed": "25 Sept 2026, 14:53:48",
+        "crawled_as": "Googlebot smartphone",
+        "crawl_allowed": "Yes",
+        "page_fetch": "Successful",
+        "indexing_allowed": "Yes",
+        "user_declared_canonical": "https://digitecme.com/services/mercedes-oil-change-dubai",
+        "google_selected_canonical_label": "Inspected URL",
+        "google_selected_canonical_resolved": "https://digitecme.com/services/mercedes-oil-change-dubai/",
+        "sitemaps": "Temporary processing error"
+      },
+      "reviewed_captured_at_utc": "2026-10-26T06:49:11.675Z",
+      "changes": [
+        {
+          "field": "sitemaps",
+          "before": "No referring sitemaps detected",
+          "after": "Temporary processing error"
+        }
+      ]
+    },
+    {
+      "current": {
+        "url": "https://digitecme.com/brands/mercedes-benz-service-dubai",
+        "captured_at_utc": "2026-10-26T07:09:05.179Z",
+        "page_indexing": "Page is indexed",
+        "last_crawl_as_displayed": "16 Oct 2026, 21:18:38",
+        "crawled_as": "Googlebot smartphone",
+        "crawl_allowed": "Yes",
+        "page_fetch": "Successful",
+        "indexing_allowed": "Yes",
+        "user_declared_canonical": "https://digitecme.com/brands/mercedes-benz-service-dubai",
+        "google_selected_canonical_label": "Inspected URL",
+        "google_selected_canonical_resolved": "https://digitecme.com/brands/mercedes-benz-service-dubai",
+        "sitemaps": "Temporary processing error"
+      },
+      "reviewed_captured_at_utc": "2026-10-26T06:49:20.67Z",
+      "changes": []
+    },
+    {
+      "current": {
+        "url": "https://digitecme.com/ar/brands/mercedes-benz-service-dubai/battery-replacement",
+        "captured_at_utc": "2026-10-26T07:09:13.062Z",
+        "page_indexing": "Page is not indexed: Page with redirect",
+        "last_crawl_as_displayed": "14 Oct 2026, 09:47:39",
+        "crawled_as": "Googlebot smartphone",
+        "crawl_allowed": "Yes",
+        "page_fetch": "Successful",
+        "indexing_allowed": "Yes",
+        "user_declared_canonical": "https://digitecme.com/ar/services/mercedes-battery-replacement-dubai",
+        "google_selected_canonical_label": "Same as user-declared canonical",
+        "google_selected_canonical_resolved": "https://digitecme.com/ar/services/mercedes-battery-replacement-dubai",
+        "sitemaps": "No referring sitemaps detected"
+      },
+      "reviewed_captured_at_utc": "2026-10-26T06:48:12.288Z",
+      "changes": [
+        {
+          "field": "sitemaps",
+          "before": "Temporary processing error",
+          "after": "No referring sitemaps detected"
+        }
+      ]
+    }
+  ]
+}

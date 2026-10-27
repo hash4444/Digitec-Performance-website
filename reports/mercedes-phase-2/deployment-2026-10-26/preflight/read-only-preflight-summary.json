@@ -1,0 +1,210 @@
+{
+  "recordedAtUtc": "2026-10-26T07:08:28.190224+00:00",
+  "readOnly": true,
+  "noCloudflareInspectionOrMutationByThisAgent": true,
+  "freshBaselinePath": "reports\\mercedes-phase-2\\evidence\\http\\pre-2026-10-26T07-06-59-812Z\\capture.json",
+  "freshBaselineSha256": "50acb9e9b9abfdba35fad704cec0c1a2f25aef2e2ea94cd7fc4f1d3e620a3d97",
+  "startedAtUtc": "2026-10-26T07:06:59.815Z",
+  "finishedAtUtc": "2026-10-26T07:07:45.367Z",
+  "startedAtDubai": "2026-10-26T11:06:59.815000+04:00",
+  "finishedAtDubai": "2026-10-26T11:07:45.367000+04:00",
+  "httpSummary": {
+    "cases": 326,
+    "networkRequests": 564,
+    "assertions": 733,
+    "passed": 733,
+    "failed": 0,
+    "sourceCases": 192,
+    "protectedOilCases": 48
+  },
+  "caseGroups": {
+    "source": 192,
+    "protected-oil": 48,
+    "protected-repair": 48,
+    "destination": 16,
+    "control": 22
+  },
+  "proposalSha256": "336a3e207ab451d22f95efad88e334a3d5f8bb9958e495a8e9bcbe3f3d4956b9",
+  "verifierSha256": "6670b2a4227d6810efe9528096aceebf72f58820b8f88bb33bfc51060611d45a",
+  "reviewedBaselinePath": "reports\\mercedes-phase-2\\evidence\\http\\pre-2026-10-26T06-53-48-482Z\\capture.json",
+  "stableHttpCasesCompared": 326,
+  "stableHttpDrift": [],
+  "robotsHashUnchangedFromReviewed": true,
+  "destinations": [
+    {
+      "url": "https://digitecme.com/ar/services/mercedes-oil-change-dubai",
+      "status": 200,
+      "title": "تغيير زيت مرسيدس في دبي | المواصفة الصحيحة | ديجي تيك",
+      "h1": [
+        "تغيير زيت مرسيدس والفلتر في دبي"
+      ],
+      "canonical": [
+        "https://digitecme.com/ar/services/mercedes-oil-change-dubai"
+      ],
+      "robots": [
+        "index, follow, max-image-preview:large"
+      ],
+      "mainTextSha256": "689f75329411c3710764f7b0aa59af40c5525081aacd571b57e91c6aaa0bd945",
+      "xRobotsTag": null,
+      "direct": true
+    },
+    {
+      "url": "https://digitecme.com/services/mercedes-body-repair-dubai",
+      "status": 200,
+      "title": "Mercedes Body & Accident Repair Dubai | Digi-Tec",
+      "h1": [
+        "Mercedes Body Repair & Paintwork in Dubai"
+      ],
+      "canonical": [
+        "https://digitecme.com/services/mercedes-body-repair-dubai"
+      ],
+      "robots": [
+        "index, follow, max-image-preview:large"
+      ],
+      "mainTextSha256": "064d36487b5bc033d010faab21413230643dd18bb8aba26b7da41a7f3810a0da",
+      "xRobotsTag": null,
+      "direct": true
+    },
+    {
+      "url": "https://digitecme.com/ar/services/mercedes-battery-replacement-dubai",
+      "status": 200,
+      "title": "تبديل بطارية مرسيدس في دبي | فحص 12V | ديجي تيك",
+      "h1": [
+        "فحص وتبديل بطارية مرسيدس في دبي"
+      ],
+      "canonical": [
+        "https://digitecme.com/ar/services/mercedes-battery-replacement-dubai"
+      ],
+      "robots": [
+        "index, follow, max-image-preview:large"
+      ],
+      "mainTextSha256": "b0cee01eb52dd40a7127c18759ed453f1d8710c80e2b0ed4248993afb6b6a026",
+      "xRobotsTag": null,
+      "direct": true
+    },
+    {
+      "url": "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai",
+      "status": 200,
+      "title": "إصلاح محرك مرسيدس في دبي | ديجي تيك القوز",
+      "h1": [
+        "إصلاح محرك مرسيدس والأعطال الميكانيكية في دبي"
+      ],
+      "canonical": [
+        "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai"
+      ],
+      "robots": [
+        "index, follow, max-image-preview:large"
+      ],
+      "mainTextSha256": "e02e2625c01ba1d5dc310a765826833ff28bf66d1b9c5f7b0cac789d6c3ac463",
+      "xRobotsTag": null,
+      "direct": true
+    }
+  ],
+  "protectedSourceFilesChecked": 283,
+  "protectedSourceDrift": [],
+  "proposalContract": {
+    "at": "2026-10-26T07:06:46.648Z",
+    "passed": 738,
+    "failed": 0,
+    "proposalSha256": "336a3e207ab451d22f95efad88e334a3d5f8bb9958e495a8e9bcbe3f3d4956b9",
+    "historicalProtectedEnglishOilDefinitionSha256": "6b1385fff9d44c206a36cd0e9c38912e9c1b74030f3a534db6bb5efdfa5157c5",
+    "limits": [
+      "Models the literal expression sets and query passthrough; not the Cloudflare engine, URL normalization or current account state.",
+      "GET/HEAD public matrix tests deployed behavior only after a separately approved activation.",
+      "No Cloudflare or deployment mutation performed."
+    ]
+  },
+  "syntheticConflictTests": {
+    "at": "2026-10-26T07:06:47.103Z",
+    "syntheticOnly": true,
+    "noProductionAfterStateWasCaptured": true,
+    "passed": 5,
+    "results": [
+      {
+        "test": "valid-after",
+        "expectedExitCode": 0,
+        "observedExitCode": 0,
+        "passed": true
+      },
+      {
+        "test": "www-before-new-rules",
+        "expectedExitCode": 1,
+        "observedExitCode": 1,
+        "passed": true
+      },
+      {
+        "test": "protected-oil-changed",
+        "expectedExitCode": 1,
+        "observedExitCode": 1,
+        "passed": true
+      },
+      {
+        "test": "query-preservation-lost",
+        "expectedExitCode": 1,
+        "observedExitCode": 1,
+        "passed": true
+      },
+      {
+        "test": "duplicated-new-source",
+        "expectedExitCode": 1,
+        "observedExitCode": 1,
+        "passed": true
+      }
+    ]
+  },
+  "syntheticPostTests": {
+    "at": "2026-10-26T07:07:58.812Z",
+    "syntheticOnly": true,
+    "noNetworkRequests": true,
+    "noProductionDeploymentOrPostDeploymentResult": true,
+    "passed": 3,
+    "results": [
+      {
+        "test": "valid-offline-post",
+        "expectedExitCode": 0,
+        "observedExitCode": 0,
+        "passed": 852,
+        "directory": "reports\\mercedes-phase-2\\evidence\\http\\SYNTHETIC-post-2026-10-26T07-07-58-197Z",
+        "cases": 326,
+        "networkRequests": 0,
+        "fixtureResponses": 612,
+        "assertions": 852,
+        "failed": 0,
+        "sourceCases": 192,
+        "protectedOilCases": 48
+      },
+      {
+        "test": "lost-query-negative",
+        "expectedExitCode": 1,
+        "observedExitCode": 1,
+        "passed": 724,
+        "directory": "reports\\mercedes-phase-2\\evidence\\http\\SYNTHETIC-post-2026-10-26T07-07-58-524Z",
+        "cases": 326,
+        "networkRequests": 0,
+        "fixtureResponses": 612,
+        "assertions": 852,
+        "failed": 128,
+        "sourceCases": 192,
+        "protectedOilCases": 48
+      },
+      {
+        "test": "mismatched-proposal-baseline-guard",
+        "expectedExitCode": 1,
+        "observedExitCode": 1,
+        "passed": true
+      }
+    ]
+  },
+  "hubLinkTargets": {
+    "cases": 4,
+    "passed": 4,
+    "failed": 0
+  },
+  "localPublicGatePassed": true,
+  "authenticatedCloudflareGate": "Pending separate fresh authenticated review and conflict checks by root operator. This summary does not authorize proceeding alone.",
+  "knownLimits": [
+    "Google indexing/selected canonical and performance are separate from technical eligibility.",
+    "Package validator rechecks the historical saved inspection report, not fresh authenticated Search Console data.",
+    "Synthetic tests are not deployment or production after-state evidence."
+  ]
+}

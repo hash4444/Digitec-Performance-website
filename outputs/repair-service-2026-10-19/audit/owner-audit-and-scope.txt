@@ -1,0 +1,58 @@
+DIGI-TEC REPAIR OWNER AUDIT — 19 OCTOBER 2026
+
+Audit basis
+The existing local production output (dist/, dist-server/) from the completed five-brand sprint was captured before repair implementation. This is evidence of local rendered output, not a claim about live production or Google's selected canonical. No production systems were modified. App source was read only by this audit agent. Full before titles, descriptions, H1s, headings, internal links, WhatsApp targets, schema and initial HTML are preserved in baseline-repair-owner-audit.json/.csv and html/.
+
+Coverage
+11 existing English owners and 11 Arabic counterparts: the nine requested repair queries plus Mercedes transmission and Lamborghini engine repair, which the GSC analyst identified as additional measured opportunities. The query labels in this audit name the requested intent; this audit does not assert demand or query-to-page GSC ownership. Those conclusions belong to the demand analysis and must retain its measurement limitations.
+
+Existing owners (Arabic counterpart is the same route with /ar prefix)
+Mercedes engine repair — /services/mercedes-mechanical-repair-dubai
+Mercedes suspension repair — /services/mercedes-suspension-repair-dubai
+Mercedes diagnostics — /services/mercedes-diagnostics-dubai
+Mercedes transmission repair — /services/mercedes-transmission-repair-dubai
+BMW transmission repair — /brands/bmw-service-dubai/transmission-repair
+BMW engine repair — /brands/bmw-service-dubai/mechanical-repair
+Rolls-Royce engine repair — /brands/rolls-royce-service-dubai/mechanical-repair
+Rolls-Royce suspension repair — /brands/rolls-royce-service-dubai/suspension-repair
+Lamborghini transmission repair — /brands/lamborghini-service-dubai/transmission-repair
+Lamborghini engine repair — /brands/lamborghini-service-dubai/mechanical-repair
+Lamborghini engine diagnostics — /brands/lamborghini-service-dubai/engine-diagnostics
+
+Indexing, rendering and schema baseline
+All 22 existing owners are indexable in the public route manifest, included in the generated XML sitemap, self-canonical, and carry one index/follow robots tag and one H1. No heading-level skips were found. All have en-AE, ar-AE and x-default alternates. Each owner has a single route Service node; its provider references the permanent https://digitecme.com/#business entity. Visible FAQs and schema use the same content, and every emitted FAQ acceptedAnswer is present in initial rendered HTML. The shared business, organization, website and brand identities should be preserved. There is no evidence justifying new service routes or a replacement business graph.
+
+Mercedes duplicate prevention
+Generated hosting rules return 308 redirects from /brands/mercedes-benz-service-dubai/{mechanical-repair,suspension-repair,engine-diagnostics,transmission-repair} to the explicit /services/mercedes-* owners above. Equivalent Arabic aliases redirect to Arabic owners. Existing short Mercedes suspension/transmission aliases also consolidate to those owners. Keep these routing decisions. Do not introduce /engine-repair as a parallel owner.
+
+Hub-link evidence
+Every requested/measured repair owner already has at least one crawlable link from its English and Arabic brand hub. English counts (repeated placements count as links, not distinct sources): Mercedes mechanical 5; suspension 4; diagnostics 5; transmission 4; BMW transmission 2; mechanical 2; Rolls-Royce mechanical 1; suspension 2; Lamborghini transmission 3; mechanical 2; diagnostics 2. Arabic counts are 1 for each except Mercedes diagnostics 2 and Lamborghini diagnostics 2. Existing links use relevant repair and assessment labels, including symptom descriptions. Preserve completed five-brand hub source. A narrowly scoped link from a repair page to another relevant repair owner is justified where it helps choose the diagnostic path; another hub optimization is unnecessary.
+
+Metadata decisions
+The BMW transmission owner has the clearest English metadata gap: its description is the shared template ("BMW transmission repair in Dubai with model-specific inspection, confirmed parts options and a clear quote at Digi-Tec, Al Quoz."). It omits the delayed engagement, rough shifts, slipping and gearbox-warning concerns already explained in its body. A description using those existing symptoms is justified. Existing English titles/descriptions on the other owners already describe the repair intent, Dubai/Al Quoz and diagnosis-first scope. Change them only where a concrete improvement in intent or booking clarity is shown; demand alone does not justify churn. The full exact baseline is in the CSV.
+
+Content and conversion findings by owner group
+1. Mercedes engine/suspension/diagnostics/transmission: English pages already contain substantial symptom-to-test explanations, inspection steps, quote boundaries and relevant problem guides. Arabic pages already have service-specific overrides and should retain them. Do not duplicate the existing technical explanation. A compact service-specific appointment checklist is useful, particularly engine/transmission WhatsApp prefills, which currently contain only a generic service enquiry. Existing suspension/diagnostics English prefills request detailed context; retain or improve their specificity.
+2. BMW transmission: English body already distinguishes maintenance, control faults and internal wear and contains four detailed assessment/verification steps. Add symptom-specific metadata and a structured quotation checklist. Existing WhatsApp prefill is generic. Arabic body currently uses shared translation rather than the English service-specific process, so vehicle identification, service-versus-repair distinction and quote inputs are useful parity improvements.
+3. BMW engine: English hero addresses leaks, cooling, lubrication, ignition/fuel/boost paths and supported VANOS/Valvetronic concerns. Existing generic mechanical composer supplies the remaining process and FAQs. Improve repair enquiry context and avoid repeating the hero. Arabic metadata/H1 currently uses generic mechanical repair intent rather than explicit engine repair; a carefully scoped engine-and-mechanical description can align the owner with its existing English intent.
+4. Rolls-Royce engine: English override already limits work to supported assessment and expressly excludes electric Spectre from combustion-engine work and universal internal-engine promises. Arabic generic content omits these explicit safeguards. Mirror them in Arabic when strengthening engine-specific explanation. Existing English WhatsApp prefill already asks for model/year/mileage/history/symptoms; Arabic only names the generic service.
+5. Rolls-Royce suspension: English override distinguishes model-specific Planar/Flagbearer applicability and does not promise universal calibration. Arabic generic content loses the model-specific scope. Useful improvements are clear reporting of the affected corner, parking duration, warning text and confirmation of the fitted system before quotation.
+6. Lamborghini transmission: English override already identifies Huracan EVO LDF, Urus S automatic and Aventador SVJ ISR distinctions, and requires internal repair/rebuild/calibration capability to be confirmed. Arabic generic content omits those scope distinctions. Do not expand compatibility or rebuild claims. Ask for cold/warm engagement/shift conditions and preserve capability confirmation.
+7. Lamborghini engine: English override already covers leaks/cooling/noise/drivability assessment and explicitly avoids promising internal engine, hybrid high-voltage or carbon-structure work. Arabic generic content omits these boundaries. Mirror the scope and help enquiries include operating conditions and warning details.
+8. Lamborghini engine diagnostics: Existing suitable indexable owner; English copy already covers compatible access, codes versus physical testing, programming limits and booking details. Exact requested query absent from measured demand per analyst; preserve as the diagnostic destination and audit reference, without inventing measured demand or creating another page.
+
+CTA and enquiry measurement
+All 22 owners expose service hero and final WhatsApp/telephone CTAs to +971 4 340 2223. Telephone/WhatsApp targets and prefilled messages are recorded in the JSON. The generic Arabic prefill carries no model, year, mileage or symptom fields. A localized service-specific prefill can improve enquiry quality. Existing owner pages do not provide a dedicated inline enquiry form; recommend keeping clear direct-contact choices and making the expected inspection/quote step explicit. A contact-button activation is an outbound interaction, not a confirmed enquiry, appointment or customer. No evidence from this audit establishes leads or booking outcomes.
+
+Source capability boundaries and exact implementation touch points
+src/pages/BrandServicePage.tsx: BrandServicePage constructs sourceCombo, shared Arabic localization, English-only rollsRoyceServiceOverride/lamborghiniServiceOverride, jsonLd via buildService/buildFAQ/pageGraph, WhatsApp href, related owner links and FinalCTA. This is the narrow integration point for scoped repair content. Existing English override functions supply the reviewed model exclusions and conditional repair availability.
+src/data/mercedesServiceContent.ts: MERCEDES_SERVICE_CONTENT entries mechanical-repair, suspension-repair, engine-diagnostics, transmission-repair already carry detailed English scope. Do not replace them wholesale.
+src/data/mercedesArabicServiceContent.ts: MERCEDES_ARABIC_SERVICE_CONTENT supplies corresponding Arabic symptom/process content; preserve it.
+src/data/queryServiceContent.ts: bmw transmission-repair/mechanical-repair entries supply reviewed English repair copy. Existing getQueryServiceContent applies before localization, which is then replaced by shared Arabic summaries.
+src/data/arabicServiceContent.ts: shared generic summaries explain diagnosis but are not brand-specific parity for the selected non-Mercedes repairs. Avoid changing this shared module for unrelated pages.
+src/data/mercedesServiceScope.ts and BrandServicePage MERCEDES_SERVICE_SCOPE: existing engine/transmission/suspension/diagnostic source already includes many detailed symptom answers. Avoid adding redundant scope cards that restate these sections.
+src/lib/schema.ts: buildService and pageGraph reuse permanent business identity. No new helper or business entity is needed. Updating selected visible metadata automatically updates Service/WebPage descriptions through existing schema construction.
+src/lib/route-manifest.ts and src/lib/route-policy.ts: selected owners already have valid indexable routes. No changes needed for new URLs.
+
+Evidence limitation
+Existing reviewed site scope is a conservative content boundary, not independent proof of every workshop capability. No new equipment coverage, component rebuild, certification, dealer status, price, warranty, completion time, programming or high-voltage capability should be inferred. Keep exact-vehicle confirmation for all conditional operations. Local source/layout inspection is not a substitute for post-change mobile browser validation or live indexing verification; those are separate release checks.

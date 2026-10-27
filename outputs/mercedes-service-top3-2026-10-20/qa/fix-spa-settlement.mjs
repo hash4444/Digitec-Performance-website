@@ -1,0 +1,12 @@
+import fs from 'node:fs/promises';
+import path from 'node:path';
+import {fileURLToPath} from 'node:url';
+const out=path.dirname(fileURLToPath(import.meta.url)),dir=path.join(out,'first-mercedes-spa-attempt');await fs.mkdir(dir,{recursive:true});
+for(const f of['combined-browser-results.json','mercedes-campaign-browser.log'])await fs.copyFile(path.join(out,f),path.join(dir,f));
+await fs.copyFile(path.join(out,'mercedes-browser/browser-results.json'),path.join(dir,'mercedes-browser-results.json'));
+const file=path.join(out,'test-mercedes-browser.mjs');let code=await fs.readFile(file,'utf8');
+const old="await p.waitForURL(base+spec.route+'#mercedes-maintenance-scope');assert.equal(await p.locator('link[rel=canonical]').getAttribute('href'),'https://digitecme.com'+spec.route);";
+const next="await p.waitForURL(base+spec.route+'#mercedes-maintenance-scope');await p.waitForFunction(({canonical,h1})=>document.querySelector('link[rel=canonical]')?.href===canonical&&document.querySelector('h1')?.textContent?.replace(/\\s+/g,' ').trim()===h1,{canonical:'https://digitecme.com'+spec.route,h1:copy.h1});assert.equal(await p.locator('h1').innerText(),copy.h1);assert.equal(await p.locator('link[rel=canonical]').getAttribute('href'),'https://digitecme.com'+spec.route);";
+if(!code.includes(old))throw Error('Expected exact SPA assertion not found');code=code.replace(old,next);await fs.writeFile(file,code);
+await fs.writeFile(path.join(dir,'attempt-disposition.txt'),'The URL changed to the new client route before React useSeo committed the new metadata. Initial immediate canonical assertions saw the previous service-directory canonical. The revised harness explicitly waits for BOTH the exact target H1 and canonical, then asserts the same exact values. No application source change or relaxed expected value. Only the focused suite needs rerun; eight legacy suites passed.\n');
+console.log('Saved initial SPA timing evidence and added explicit exact H1/canonical settlement wait');

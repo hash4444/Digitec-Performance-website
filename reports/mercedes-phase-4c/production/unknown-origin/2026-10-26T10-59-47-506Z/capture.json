@@ -1,0 +1,3003 @@
+{
+  "startedAt": "2026-10-26T10:59:47.509Z",
+  "finishedAt": "2026-10-26T10:59:54.903Z",
+  "readOnly": true,
+  "scope": "48 GET/HEAD cases across apex/www, HTTP/HTTPS, unknown English/Arabic documents and missing JS, with blank/duplicate-parameter query; no JavaScript execution or routing mutations.",
+  "cases": [
+    {
+      "key": 0,
+      "path": "/__phase4c_readonly_missing_20261026__",
+      "url": "https://digitecme.com/__phase4c_readonly_missing_20261026__",
+      "method": "GET",
+      "query": "",
+      "expectedStatus": 200,
+      "chain": [
+        {
+          "at": "2026-10-26T10:59:47.509Z",
+          "url": "https://digitecme.com/__phase4c_readonly_missing_20261026__",
+          "method": "GET",
+          "status": 200,
+          "headers": {
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "cache-control": "no-cache, must-revalidate, max-age=0",
+            "cf-cache-status": "DYNAMIC",
+            "cf-ray": "a508f41fe92b0f10-HKG",
+            "connection": "keep-alive",
+            "content-encoding": "br",
+            "content-type": "text/html; charset=utf-8",
+            "date": "Mon, 26 Oct 2026 10:59:49 GMT",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "referrer-policy": "strict-origin-when-cross-origin",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=wlTEoBbh0tKJVAsSUldE6SC805d01qaMBI5lGjhWgN9L655IqgbjLsFWMsRubUu4TlgNjQzSZhUqAxXVS%2B26g03fF9zHkkNYGRwmmccbDtMzNm%2BzyZ0mXzAj5ngUNJZa\"}]}",
+            "server": "cloudflare",
+            "speculation-rules": "\"/cdn-cgi/speculation\"",
+            "strict-transport-security": "max-age=31536000; includeSubDomains",
+            "transfer-encoding": "chunked",
+            "vary": "accept-encoding",
+            "x-content-type-options": "nosniff",
+            "x-deployment-id": "psr2.455fbd60-7be3-4d3f-b5a2-4af11984e472.1793617188.pCUxrON9FJg2saS9d47jcVhKDoNogsQZOrcHfkO8nzE"
+          },
+          "bodySha256": "21e1e38ce17cf303185955f3573e2256dac52d0860183b8f00f327a584250548",
+          "bytes": 163337,
+          "bodyFile": "bodies/0-0.txt",
+          "title": "Digi-Tec Performance Center | Independent Car Workshop Dubai",
+          "canonical": [
+            "https://digitecme.com/"
+          ]
+        }
+      ],
+      "error": null,
+      "checks": {
+        "noError": true,
+        "finalStatus": true,
+        "finalUrl": true,
+        "queryPreserved": true,
+        "noRoutingLayer404ForDocument": true,
+        "homepageCanonical": true
+      },
+      "passed": true
+    },
+    {
+      "key": 1,
+      "path": "/__phase4c_readonly_missing_20261026__",
+      "url": "https://digitecme.com/__phase4c_readonly_missing_20261026__?phase4c_readonly=1&tag=a&tag=b",
+      "method": "GET",
+      "query": "?phase4c_readonly=1&tag=a&tag=b",
+      "expectedStatus": 200,
+      "chain": [
+        {
+          "at": "2026-10-26T10:59:47.538Z",
+          "url": "https://digitecme.com/__phase4c_readonly_missing_20261026__?phase4c_readonly=1&tag=a&tag=b",
+          "method": "GET",
+          "status": 200,
+          "headers": {
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "cache-control": "no-cache, must-revalidate, max-age=0",
+            "cf-cache-status": "DYNAMIC",
+            "cf-ray": "a508f4201a2909ef-HKG",
+            "connection": "keep-alive",
+            "content-encoding": "br",
+            "content-type": "text/html; charset=utf-8",
+            "date": "Mon, 26 Oct 2026 10:59:49 GMT",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "referrer-policy": "strict-origin-when-cross-origin",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=iEpN6h5RPu9QBNM45oTSBTOSuOZFwDWB%2FCTOVTlaeOG54iucMtkK658f3T4DnUDo0ygCKPbhSXQ5U4t5hiW5FIVKDfnI85w%2FYPAlSpGr6eZjedOgL2wg0SJ0Tp%2BymsKX\"}]}",
+            "server": "cloudflare",
+            "speculation-rules": "\"/cdn-cgi/speculation\"",
+            "strict-transport-security": "max-age=31536000; includeSubDomains",
+            "transfer-encoding": "chunked",
+            "vary": "accept-encoding",
+            "x-content-type-options": "nosniff",
+            "x-deployment-id": "psr2.455fbd60-7be3-4d3f-b5a2-4af11984e472.1793617188.pCUxrON9FJg2saS9d47jcVhKDoNogsQZOrcHfkO8nzE"
+          },
+          "bodySha256": "d2ed09dbacd981f9be594bd09aed3d9273f3c42c3956e1f3e6f942bb14efc9f6",
+          "bytes": 163337,
+          "bodyFile": "bodies/1-0.txt",
+          "title": "Digi-Tec Performance Center | Independent Car Workshop Dubai",
+          "canonical": [
+            "https://digitecme.com/"
+          ]
+        }
+      ],
+      "error": null,
+      "checks": {
+        "noError": true,
+        "finalStatus": true,
+        "finalUrl": true,
+        "queryPreserved": true,
+        "noRoutingLayer404ForDocument": true,
+        "homepageCanonical": true
+      },
+      "passed": true
+    },
+    {
+      "key": 2,
+      "path": "/__phase4c_readonly_missing_20261026__",
+      "url": "https://digitecme.com/__phase4c_readonly_missing_20261026__",
+      "method": "HEAD",
+      "query": "",
+      "expectedStatus": 200,
+      "chain": [
+        {
+          "at": "2026-10-26T10:59:47.539Z",
+          "url": "https://digitecme.com/__phase4c_readonly_missing_20261026__",
+          "method": "HEAD",
+          "status": 200,
+          "headers": {
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "cache-control": "no-cache, must-revalidate, max-age=0",
+            "cf-cache-status": "DYNAMIC",
+            "cf-ray": "a508f41fe88fd117-CDG",
+            "connection": "close",
+            "content-encoding": "br",
+            "content-type": "text/html; charset=utf-8",
+            "date": "Mon, 26 Oct 2026 10:59:48 GMT",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "referrer-policy": "strict-origin-when-cross-origin",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=Ue%2FmZpCCtdgEuxELaftrLENR1BQWQbrD4iniSu%2BQtIKSXsEz4GtO6qpg8fo3k9Vg4lnuv4Cq2%2FFwid07yXWKB8wwMTZMC9N3uNV0qwgjsl1P6YxAzYowdxu6OIOqA3Wb\"}]}",
+            "server": "cloudflare",
+            "speculation-rules": "\"/cdn-cgi/speculation\"",
+            "strict-transport-security": "max-age=31536000; includeSubDomains",
+            "x-content-type-options": "nosniff",
+            "x-deployment-id": "psr2.455fbd60-7be3-4d3f-b5a2-4af11984e472.1793617187.7DCYUDiLLSpbcb1ttNMgI6AY6OumvpVMU29iCPrj4qg"
+          }
+        }
+      ],
+      "error": null,
+      "checks": {
+        "noError": true,
+        "finalStatus": true,
+        "finalUrl": true,
+        "queryPreserved": true,
+        "noRoutingLayer404ForDocument": true,
+        "homepageCanonical": true
+      },
+      "passed": true
+    },
+    {
+      "key": 3,
+      "path": "/__phase4c_readonly_missing_20261026__",
+      "url": "https://digitecme.com/__phase4c_readonly_missing_20261026__?phase4c_readonly=1&tag=a&tag=b",
+      "method": "HEAD",
+      "query": "?phase4c_readonly=1&tag=a&tag=b",
+      "expectedStatus": 200,
+      "chain": [
+        {
+          "at": "2026-10-26T10:59:47.540Z",
+          "url": "https://digitecme.com/__phase4c_readonly_missing_20261026__?phase4c_readonly=1&tag=a&tag=b",
+          "method": "HEAD",
+          "status": 200,
+          "headers": {
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "cache-control": "no-cache, must-revalidate, max-age=0",
+            "cf-cache-status": "DYNAMIC",
+            "cf-ray": "a508f41fef09d344-FRA",
+            "connection": "close",
+            "content-encoding": "br",
+            "content-type": "text/html; charset=utf-8",
+            "date": "Mon, 26 Oct 2026 10:59:48 GMT",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "referrer-policy": "strict-origin-when-cross-origin",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=i9%2FgCMqhb0dI6JlLid7WH8fg5AoQhqgfpGP6Olz3W9Pv31twPVZmTQFjv2ilRl3pG%2Bv5vwzAGcoS0LQSVNpchIPcc6z4L8BuMp5xeZJMDhdyTO3k0K2FhQnGt6kHJ0tD\"}]}",
+            "server": "cloudflare",
+            "speculation-rules": "\"/cdn-cgi/speculation\"",
+            "strict-transport-security": "max-age=31536000; includeSubDomains",
+            "x-content-type-options": "nosniff",
+            "x-deployment-id": "psr2.455fbd60-7be3-4d3f-b5a2-4af11984e472.1793617187.7DCYUDiLLSpbcb1ttNMgI6AY6OumvpVMU29iCPrj4qg"
+          }
+        }
+      ],
+      "error": null,
+      "checks": {
+        "noError": true,
+        "finalStatus": true,
+        "finalUrl": true,
+        "queryPreserved": true,
+        "noRoutingLayer404ForDocument": true,
+        "homepageCanonical": true
+      },
+      "passed": true
+    },
+    {
+      "key": 4,
+      "path": "/__phase4c_readonly_missing_20261026__",
+      "url": "http://digitecme.com/__phase4c_readonly_missing_20261026__",
+      "method": "GET",
+      "query": "",
+      "expectedStatus": 200,
+      "chain": [
+        {
+          "at": "2026-10-26T10:59:48.084Z",
+          "url": "http://digitecme.com/__phase4c_readonly_missing_20261026__",
+          "method": "GET",
+          "status": 301,
+          "headers": {
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "cf-ray": "a508f4228e448539-HKG",
+            "connection": "keep-alive",
+            "content-type": "text/html; charset=UTF-8",
+            "date": "Mon, 26 Oct 2026 10:59:48 GMT",
+            "location": "https://digitecme.com/__phase4c_readonly_missing_20261026__",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=q8QFjn7XdUagLDEnRt85CHMw91CCZbyZyjsFJJ2h3HxFt%2BjBBzkPdZojNyGAFxht%2F72CRA3Un0E%2Fgpd3jjO%2BfrVtHhDGg4stQprTH98t%2FHnvH9gUL3YxFy%2FujQEbfHBq\"}]}",
+            "server": "cloudflare",
+            "speculation-rules": "\"/cdn-cgi/speculation\"",
+            "transfer-encoding": "chunked"
+          },
+          "bodySha256": "446a6087825fa73eadb045e5a2e9e2adf7df241b571228187728191d961dda1f",
+          "bytes": 167,
+          "bodyFile": "bodies/4-0.txt",
+          "title": "301 Moved Permanently",
+          "canonical": []
+        },
+        {
+          "at": "2026-10-26T10:59:48.331Z",
+          "url": "https://digitecme.com/__phase4c_readonly_missing_20261026__",
+          "method": "GET",
+          "status": 200,
+          "headers": {
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "cache-control": "no-cache, must-revalidate, max-age=0",
+            "cf-cache-status": "DYNAMIC",
+            "cf-ray": "a508f424dcda5b71-HKG",
+            "connection": "keep-alive",
+            "content-encoding": "br",
+            "content-type": "text/html; charset=utf-8",
+            "date": "Mon, 26 Oct 2026 10:59:49 GMT",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "referrer-policy": "strict-origin-when-cross-origin",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=kFiG%2F6myykdDOMyknGtHM%2FsB5%2Fc1mGXxcJ4CEQAK3DFUSCpxIHoBOaYztl6gf5vGAEhUZ%2FDjDYGCvuELz5sCcxQ7XqL4GuRq%2FSa%2F89PJp8PO1VCMpoJB4TACW9jfk8yZ\"}]}",
+            "server": "cloudflare",
+            "speculation-rules": "\"/cdn-cgi/speculation\"",
+            "strict-transport-security": "max-age=31536000; includeSubDomains",
+            "transfer-encoding": "chunked",
+            "vary": "accept-encoding",
+            "x-content-type-options": "nosniff",
+            "x-deployment-id": "psr2.455fbd60-7be3-4d3f-b5a2-4af11984e472.1793617188.pCUxrON9FJg2saS9d47jcVhKDoNogsQZOrcHfkO8nzE"
+          },
+          "bodySha256": "c939138a3f6002482be533d0cf25ec26bc0bc832e2ad7616da3aaf5cec8a1147",
+          "bytes": 163337,
+          "bodyFile": "bodies/4-1.txt",
+          "title": "Digi-Tec Performance Center | Independent Car Workshop Dubai",
+          "canonical": [
+            "https://digitecme.com/"
+          ]
+        }
+      ],
+      "error": null,
+      "checks": {
+        "noError": true,
+        "finalStatus": true,
+        "finalUrl": true,
+        "queryPreserved": true,
+        "noRoutingLayer404ForDocument": true,
+        "homepageCanonical": true
+      },
+      "passed": true
+    },
+    {
+      "key": 5,
+      "path": "/__phase4c_readonly_missing_20261026__",
+      "url": "http://digitecme.com/__phase4c_readonly_missing_20261026__?phase4c_readonly=1&tag=a&tag=b",
+      "method": "GET",
+      "query": "?phase4c_readonly=1&tag=a&tag=b",
+      "expectedStatus": 200,
+      "chain": [
+        {
+          "at": "2026-10-26T10:59:48.086Z",
+          "url": "http://digitecme.com/__phase4c_readonly_missing_20261026__?phase4c_readonly=1&tag=a&tag=b",
+          "method": "GET",
+          "status": 301,
+          "headers": {
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "cf-ray": "a508f4228da4055c-HKG",
+            "connection": "keep-alive",
+            "content-type": "text/html; charset=UTF-8",
+            "date": "Mon, 26 Oct 2026 10:59:48 GMT",
+            "location": "https://digitecme.com/__phase4c_readonly_missing_20261026__?phase4c_readonly=1&tag=a&tag=b",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=1It64G3xoP4ym%2FW1fb5tdXKhCIywN6xzChi%2FuZi8z9A2DZU4e2GTtZhCy8w1tUGCNPz75CU%2B6W8fRCBa0vm5UwlZSVAyYrwD4w%2BGHelIyjS91XlBjQJFwsjyeetj4TNq\"}]}",
+            "server": "cloudflare",
+            "speculation-rules": "\"/cdn-cgi/speculation\"",
+            "transfer-encoding": "chunked"
+          },
+          "bodySha256": "446a6087825fa73eadb045e5a2e9e2adf7df241b571228187728191d961dda1f",
+          "bytes": 167,
+          "bodyFile": "bodies/5-0.txt",
+          "title": "301 Moved Permanently",
+          "canonical": []
+        },
+        {
+          "at": "2026-10-26T10:59:48.325Z",
+          "url": "https://digitecme.com/__phase4c_readonly_missing_20261026__?phase4c_readonly=1&tag=a&tag=b",
+          "method": "GET",
+          "status": 200,
+          "headers": {
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "cache-control": "no-cache, must-revalidate, max-age=0",
+            "cf-cache-status": "DYNAMIC",
+            "cf-ray": "a508f424ca8b1483-HKG",
+            "connection": "keep-alive",
+            "content-encoding": "br",
+            "content-type": "text/html; charset=utf-8",
+            "date": "Mon, 26 Oct 2026 10:59:49 GMT",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "referrer-policy": "strict-origin-when-cross-origin",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=6AZfcBz%2FUdh4uL5e4h3MRJxkaf68H60kh0z4Y3odFIAGfGuPWGkdzaNTXWE0YQTGFBeruTVv0BPuX2L4npcAWgpgYjNz%2FtVMD0cnvI39o8Jn9csIA3DcLEVX7q4d6RS1\"}]}",
+            "server": "cloudflare",
+            "speculation-rules": "\"/cdn-cgi/speculation\"",
+            "strict-transport-security": "max-age=31536000; includeSubDomains",
+            "transfer-encoding": "chunked",
+            "vary": "accept-encoding",
+            "x-content-type-options": "nosniff",
+            "x-deployment-id": "psr2.455fbd60-7be3-4d3f-b5a2-4af11984e472.1793617188.pCUxrON9FJg2saS9d47jcVhKDoNogsQZOrcHfkO8nzE"
+          },
+          "bodySha256": "fcfabc376ecc085e720ab3ba0c627d2ec7028681089dd9c2936efcbf6cce9202",
+          "bytes": 163337,
+          "bodyFile": "bodies/5-1.txt",
+          "title": "Digi-Tec Performance Center | Independent Car Workshop Dubai",
+          "canonical": [
+            "https://digitecme.com/"
+          ]
+        }
+      ],
+      "error": null,
+      "checks": {
+        "noError": true,
+        "finalStatus": true,
+        "finalUrl": true,
+        "queryPreserved": true,
+        "noRoutingLayer404ForDocument": true,
+        "homepageCanonical": true
+      },
+      "passed": true
+    },
+    {
+      "key": 6,
+      "path": "/__phase4c_readonly_missing_20261026__",
+      "url": "http://digitecme.com/__phase4c_readonly_missing_20261026__",
+      "method": "HEAD",
+      "query": "",
+      "expectedStatus": 200,
+      "chain": [
+        {
+          "at": "2026-10-26T10:59:49.199Z",
+          "url": "http://digitecme.com/__phase4c_readonly_missing_20261026__",
+          "method": "HEAD",
+          "status": 301,
+          "headers": {
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "cf-ray": "a508f428da5d8539-HKG",
+            "connection": "close",
+            "content-type": "text/html; charset=UTF-8",
+            "date": "Mon, 26 Oct 2026 10:59:49 GMT",
+            "location": "https://digitecme.com/__phase4c_readonly_missing_20261026__",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=roQFKui8bOiRH1PcPupZo5prdtz9VGWXAnEMQ9lFreNSSB9%2B0oSSU5hPjN1AnebSm3CT1bFRPRUAhGKITsKnzEI0qLRClwHLAcRL%2Bh99enbeUXFgQcnuukzms7F%2BJqdl\"}]}",
+            "server": "cloudflare",
+            "speculation-rules": "\"/cdn-cgi/speculation\""
+          }
+        },
+        {
+          "at": "2026-10-26T10:59:49.337Z",
+          "url": "https://digitecme.com/__phase4c_readonly_missing_20261026__",
+          "method": "HEAD",
+          "status": 200,
+          "headers": {
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "cache-control": "no-cache, must-revalidate, max-age=0",
+            "cf-cache-status": "DYNAMIC",
+            "cf-ray": "a508f429bfb009ef-HKG",
+            "connection": "close",
+            "content-encoding": "br",
+            "content-type": "text/html; charset=utf-8",
+            "date": "Mon, 26 Oct 2026 10:59:49 GMT",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "referrer-policy": "strict-origin-when-cross-origin",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=W2VgysSifOquZSTI2PW6QKWCgDb6MDdtsOcEJ13nzmXCSD3G1JvN9%2F4m8VNcTvnAjkcPIUbkhzSdhIzPXJ%2Fvd8Opdb%2FuF6Uw5FGgHJ053n6RcJtXmgbUWIajoth0OAiB\"}]}",
+            "server": "cloudflare",
+            "speculation-rules": "\"/cdn-cgi/speculation\"",
+            "strict-transport-security": "max-age=31536000; includeSubDomains",
+            "x-content-type-options": "nosniff",
+            "x-deployment-id": "psr2.455fbd60-7be3-4d3f-b5a2-4af11984e472.1793617189.VlxIOsR7LN1XncSwZ1QIDBPqXIRvTiKM8ctza3VX3Kg"
+          }
+        }
+      ],
+      "error": null,
+      "checks": {
+        "noError": true,
+        "finalStatus": true,
+        "finalUrl": true,
+        "queryPreserved": true,
+        "noRoutingLayer404ForDocument": true,
+        "homepageCanonical": true
+      },
+      "passed": true
+    },
+    {
+      "key": 7,
+      "path": "/__phase4c_readonly_missing_20261026__",
+      "url": "http://digitecme.com/__phase4c_readonly_missing_20261026__?phase4c_readonly=1&tag=a&tag=b",
+      "method": "HEAD",
+      "query": "?phase4c_readonly=1&tag=a&tag=b",
+      "expectedStatus": 200,
+      "chain": [
+        {
+          "at": "2026-10-26T10:59:49.206Z",
+          "url": "http://digitecme.com/__phase4c_readonly_missing_20261026__?phase4c_readonly=1&tag=a&tag=b",
+          "method": "HEAD",
+          "status": 301,
+          "headers": {
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "cf-ray": "a508f428de5d055c-HKG",
+            "connection": "close",
+            "content-type": "text/html; charset=UTF-8",
+            "date": "Mon, 26 Oct 2026 10:59:49 GMT",
+            "location": "https://digitecme.com/__phase4c_readonly_missing_20261026__?phase4c_readonly=1&tag=a&tag=b",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=EpHV23PPYQX%2FvyTd7HDNX1jjISxape5uoUyTqoMjBmNyMnGLldmfiqNCby6YDw4JZJQIyvNFBlYDYV4TS7P1j0jSoYq6IWv4FlstBPNZClkYuKwRvz8Ohw9UGqC87nvJ\"}]}",
+            "server": "cloudflare",
+            "speculation-rules": "\"/cdn-cgi/speculation\""
+          }
+        },
+        {
+          "at": "2026-10-26T10:59:49.331Z",
+          "url": "https://digitecme.com/__phase4c_readonly_missing_20261026__?phase4c_readonly=1&tag=a&tag=b",
+          "method": "HEAD",
+          "status": 200,
+          "headers": {
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "cache-control": "no-cache, must-revalidate, max-age=0",
+            "cf-cache-status": "DYNAMIC",
+            "cf-ray": "a508f429a85c0f10-HKG",
+            "connection": "close",
+            "content-encoding": "br",
+            "content-type": "text/html; charset=utf-8",
+            "date": "Mon, 26 Oct 2026 10:59:49 GMT",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "referrer-policy": "strict-origin-when-cross-origin",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=sADGy%2FrBDRkIgyLXhPJCyGrfakox5sYSyn9GqPNlAPim%2FkzaE3RLHKM1pa2%2Fm2HE5n5WJg8y0ixZMMR3903OGpCN7CbBeiA0gop%2FZrFEq%2FYtGCkx4B%2FGWSDxK%2F5qDdkb\"}]}",
+            "server": "cloudflare",
+            "speculation-rules": "\"/cdn-cgi/speculation\"",
+            "strict-transport-security": "max-age=31536000; includeSubDomains",
+            "x-content-type-options": "nosniff",
+            "x-deployment-id": "psr2.455fbd60-7be3-4d3f-b5a2-4af11984e472.1793617189.VlxIOsR7LN1XncSwZ1QIDBPqXIRvTiKM8ctza3VX3Kg"
+          }
+        }
+      ],
+      "error": null,
+      "checks": {
+        "noError": true,
+        "finalStatus": true,
+        "finalUrl": true,
+        "queryPreserved": true,
+        "noRoutingLayer404ForDocument": true,
+        "homepageCanonical": true
+      },
+      "passed": true
+    },
+    {
+      "key": 8,
+      "path": "/__phase4c_readonly_missing_20261026__",
+      "url": "https://www.digitecme.com/__phase4c_readonly_missing_20261026__",
+      "method": "GET",
+      "query": "",
+      "expectedStatus": 200,
+      "chain": [
+        {
+          "at": "2026-10-26T10:59:49.219Z",
+          "url": "https://www.digitecme.com/__phase4c_readonly_missing_20261026__",
+          "method": "GET",
+          "status": 301,
+          "headers": {
+            "cf-ray": "a508f42a5d6c30ea-FRA",
+            "connection": "keep-alive",
+            "content-type": "text/html; charset=UTF-8",
+            "date": "Mon, 26 Oct 2026 10:59:49 GMT",
+            "location": "https://digitecme.com/__phase4c_readonly_missing_20261026__",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=S%2FWrSO%2FU4CWR47H3NXf%2BfOak5reSSLfnmDkASehsmTFrVITNWm35A0NQ%2B6kjA694ttTCZf5O7yoRMIlYN4IWiMHss7RCWsrw8RzV3xOgcW0HAdb22VyaPcZkObYcHbabCXm4tQ%3D%3D\"}]}",
+            "server": "cloudflare",
+            "speculation-rules": "\"/cdn-cgi/speculation\"",
+            "transfer-encoding": "chunked"
+          },
+          "bodySha256": "446a6087825fa73eadb045e5a2e9e2adf7df241b571228187728191d961dda1f",
+          "bytes": 167,
+          "bodyFile": "bodies/8-0.txt",
+          "title": "301 Moved Permanently",
+          "canonical": []
+        },
+        {
+          "at": "2026-10-26T10:59:49.564Z",
+          "url": "https://digitecme.com/__phase4c_readonly_missing_20261026__",
+          "method": "GET",
+          "status": 200,
+          "headers": {
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "cache-control": "no-cache, must-revalidate, max-age=0",
+            "cf-cache-status": "DYNAMIC",
+            "cf-ray": "a508f42ca926dcc1-FRA",
+            "connection": "keep-alive",
+            "content-encoding": "br",
+            "content-type": "text/html; charset=utf-8",
+            "date": "Mon, 26 Oct 2026 10:59:49 GMT",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "referrer-policy": "strict-origin-when-cross-origin",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=F1fQmtE%2F2nMLnWUVWgkQt1UCV7gPh6eqGxyR2YQfxUN8v32gj0mXVMmEZ8EMS8%2BveNH%2Be2U%2FsmB8tEVvDw7E5xTmv%2B5RNqoVBm1IYBD2NbCwvUfycPCu6M%2Bfj4VVTPFt\"}]}",
+            "server": "cloudflare",
+            "speculation-rules": "\"/cdn-cgi/speculation\"",
+            "strict-transport-security": "max-age=31536000; includeSubDomains",
+            "transfer-encoding": "chunked",
+            "vary": "accept-encoding",
+            "x-content-type-options": "nosniff",
+            "x-deployment-id": "psr2.455fbd60-7be3-4d3f-b5a2-4af11984e472.1793617189.VlxIOsR7LN1XncSwZ1QIDBPqXIRvTiKM8ctza3VX3Kg"
+          },
+          "bodySha256": "078209d63338c1ef7799e20757a464e2ba85c99a488cc8604fe5d10c4ddd0753",
+          "bytes": 163337,
+          "bodyFile": "bodies/8-1.txt",
+          "title": "Digi-Tec Performance Center | Independent Car Workshop Dubai",
+          "canonical": [
+            "https://digitecme.com/"
+          ]
+        }
+      ],
+      "error": null,
+      "checks": {
+        "noError": true,
+        "finalStatus": true,
+        "finalUrl": true,
+        "queryPreserved": true,
+        "noRoutingLayer404ForDocument": true,
+        "homepageCanonical": true
+      },
+      "passed": true
+    },
+    {
+      "key": 9,
+      "path": "/__phase4c_readonly_missing_20261026__",
+      "url": "https://www.digitecme.com/__phase4c_readonly_missing_20261026__?phase4c_readonly=1&tag=a&tag=b",
+      "method": "GET",
+      "query": "?phase4c_readonly=1&tag=a&tag=b",
+      "expectedStatus": 200,
+      "chain": [
+        {
+          "at": "2026-10-26T10:59:49.224Z",
+          "url": "https://www.digitecme.com/__phase4c_readonly_missing_20261026__?phase4c_readonly=1&tag=a&tag=b",
+          "method": "GET",
+          "status": 301,
+          "headers": {
+            "cf-ray": "a508f42a9c8e65cd-FRA",
+            "connection": "keep-alive",
+            "content-type": "text/html; charset=UTF-8",
+            "date": "Mon, 26 Oct 2026 10:59:49 GMT",
+            "location": "https://digitecme.com/__phase4c_readonly_missing_20261026__?phase4c_readonly=1&tag=a&tag=b",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=wtn%2B6myw%2F7lvI8eN%2BvQ7HctbPAjxDCkE5KxACc8W%2BEEkEcFZnQjgKDrbPFnRHOcNsAMSEQu5mGtJnZYUbuacYu3S4s0wuADZsnqPYcZK%2B76e1fx2c5EpEpG7X6AJPYvZ3DYz3w%3D%3D\"}]}",
+            "server": "cloudflare",
+            "speculation-rules": "\"/cdn-cgi/speculation\"",
+            "transfer-encoding": "chunked"
+          },
+          "bodySha256": "446a6087825fa73eadb045e5a2e9e2adf7df241b571228187728191d961dda1f",
+          "bytes": 167,
+          "bodyFile": "bodies/9-0.txt",
+          "title": "301 Moved Permanently",
+          "canonical": []
+        },
+        {
+          "at": "2026-10-26T10:59:49.632Z",
+          "url": "https://digitecme.com/__phase4c_readonly_missing_20261026__?phase4c_readonly=1&tag=a&tag=b",
+          "method": "GET",
+          "status": 200,
+          "headers": {
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "cache-control": "no-cache, must-revalidate, max-age=0",
+            "cf-cache-status": "DYNAMIC",
+            "cf-ray": "a508f42d1932dc56-FRA",
+            "connection": "keep-alive",
+            "content-encoding": "br",
+            "content-type": "text/html; charset=utf-8",
+            "date": "Mon, 26 Oct 2026 10:59:50 GMT",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "referrer-policy": "strict-origin-when-cross-origin",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=ygHCxvfkSDurOnIyWxg1imHGUdqWFK0pIAgORE1yQaeSOd1at1P2Fqq9hTQYk1fqqXQYo95R7JgLm65KOf68D%2Bi%2FpTPyrI%2BiT8ugNardFT1gFiyAdG9ZMGcQfsMx%2B7Qe\"}]}",
+            "server": "cloudflare",
+            "speculation-rules": "\"/cdn-cgi/speculation\"",
+            "strict-transport-security": "max-age=31536000; includeSubDomains",
+            "transfer-encoding": "chunked",
+            "vary": "accept-encoding",
+            "x-content-type-options": "nosniff",
+            "x-deployment-id": "psr2.455fbd60-7be3-4d3f-b5a2-4af11984e472.1793617189.VlxIOsR7LN1XncSwZ1QIDBPqXIRvTiKM8ctza3VX3Kg"
+          },
+          "bodySha256": "b139352792d86996b0982707bd622b3844de8e4aa2b6b79cc7c43ced52a54efc",
+          "bytes": 163337,
+          "bodyFile": "bodies/9-1.txt",
+          "title": "Digi-Tec Performance Center | Independent Car Workshop Dubai",
+          "canonical": [
+            "https://digitecme.com/"
+          ]
+        }
+      ],
+      "error": null,
+      "checks": {
+        "noError": true,
+        "finalStatus": true,
+        "finalUrl": true,
+        "queryPreserved": true,
+        "noRoutingLayer404ForDocument": true,
+        "homepageCanonical": true
+      },
+      "passed": true
+    },
+    {
+      "key": 10,
+      "path": "/__phase4c_readonly_missing_20261026__",
+      "url": "https://www.digitecme.com/__phase4c_readonly_missing_20261026__",
+      "method": "HEAD",
+      "query": "",
+      "expectedStatus": 200,
+      "chain": [
+        {
+          "at": "2026-10-26T10:59:49.555Z",
+          "url": "https://www.digitecme.com/__phase4c_readonly_missing_20261026__",
+          "method": "HEAD",
+          "status": 301,
+          "headers": {
+            "cf-ray": "a508f42c5eed9291-FRA",
+            "connection": "close",
+            "content-type": "text/html; charset=UTF-8",
+            "date": "Mon, 26 Oct 2026 10:59:49 GMT",
+            "location": "https://digitecme.com/__phase4c_readonly_missing_20261026__",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=7KsIyE%2Bu8Hkg8Gy0IzeG4Z%2Fs1NkrNJrxPxKbF1mwb5%2FNvpo8iHqMlPpopPsY8f94QdjnccH7oW6q%2BuO9vGcviyySJ4cyXQghTFADOBgx4ZD2SF8e%2FCbHxstRc60LowNiLZzPog%3D%3D\"}]}",
+            "server": "cloudflare",
+            "speculation-rules": "\"/cdn-cgi/speculation\""
+          }
+        },
+        {
+          "at": "2026-10-26T10:59:49.900Z",
+          "url": "https://digitecme.com/__phase4c_readonly_missing_20261026__",
+          "method": "HEAD",
+          "status": 200,
+          "headers": {
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "cache-control": "no-cache, must-revalidate, max-age=0",
+            "cf-cache-status": "DYNAMIC",
+            "cf-ray": "a508f42d480c5b71-HKG",
+            "connection": "close",
+            "content-encoding": "br",
+            "content-type": "text/html; charset=utf-8",
+            "date": "Mon, 26 Oct 2026 10:59:50 GMT",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "referrer-policy": "strict-origin-when-cross-origin",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=IpI36jQNvcsZmwuvu1EEBHV%2F9VguflH5w%2FCs2Cu5gCm6I1O4M%2BdO1IwHXVIVJCbJ%2FUgVa1FjAQiqLU6orcvB6R%2BNTv0YWWkjAOHt72bClNDsIgzb4orlazAuVDrGr21J\"}]}",
+            "server": "cloudflare",
+            "speculation-rules": "\"/cdn-cgi/speculation\"",
+            "strict-transport-security": "max-age=31536000; includeSubDomains",
+            "x-content-type-options": "nosniff",
+            "x-deployment-id": "psr2.455fbd60-7be3-4d3f-b5a2-4af11984e472.1793617190.B9HeiJfp_UuDwo2M_e_s1JWEmGrC4FbeCGyalCnwngw"
+          }
+        }
+      ],
+      "error": null,
+      "checks": {
+        "noError": true,
+        "finalStatus": true,
+        "finalUrl": true,
+        "queryPreserved": true,
+        "noRoutingLayer404ForDocument": true,
+        "homepageCanonical": true
+      },
+      "passed": true
+    },
+    {
+      "key": 11,
+      "path": "/__phase4c_readonly_missing_20261026__",
+      "url": "https://www.digitecme.com/__phase4c_readonly_missing_20261026__?phase4c_readonly=1&tag=a&tag=b",
+      "method": "HEAD",
+      "query": "?phase4c_readonly=1&tag=a&tag=b",
+      "expectedStatus": 200,
+      "chain": [
+        {
+          "at": "2026-10-26T10:59:49.630Z",
+          "url": "https://www.digitecme.com/__phase4c_readonly_missing_20261026__?phase4c_readonly=1&tag=a&tag=b",
+          "method": "HEAD",
+          "status": 301,
+          "headers": {
+            "cf-ray": "a508f42b7ec330ea-FRA",
+            "connection": "close",
+            "content-type": "text/html; charset=UTF-8",
+            "date": "Mon, 26 Oct 2026 10:59:49 GMT",
+            "location": "https://digitecme.com/__phase4c_readonly_missing_20261026__?phase4c_readonly=1&tag=a&tag=b",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=odMlxNeNOdLVxAunRa9TeqiRxlaSghyj%2FfWVtcHs4FtGrH4qW6CeuSRK0MJ8KE%2FXVCTnZSWUsqFNSwfkyYiSX3ntGbqWOfU2QmTvgUPMe9BIVA%2FPPAX5QUA%2BIWwBlBHgzvXVxg%3D%3D\"}]}",
+            "server": "cloudflare",
+            "speculation-rules": "\"/cdn-cgi/speculation\""
+          }
+        },
+        {
+          "at": "2026-10-26T10:59:49.763Z",
+          "url": "https://digitecme.com/__phase4c_readonly_missing_20261026__?phase4c_readonly=1&tag=a&tag=b",
+          "method": "HEAD",
+          "status": 200,
+          "headers": {
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "cache-control": "no-cache, must-revalidate, max-age=0",
+            "cf-cache-status": "DYNAMIC",
+            "cf-ray": "a508f42c6e551483-HKG",
+            "connection": "close",
+            "content-encoding": "br",
+            "content-type": "text/html; charset=utf-8",
+            "date": "Mon, 26 Oct 2026 10:59:49 GMT",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "referrer-policy": "strict-origin-when-cross-origin",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=NyyaCLeCjkgdqQlZeVJcYH7iDh2TqfGXvhWBN3Tvr%2B6azCsaqtjOqDXZdv%2F3G%2F8bK50D%2F0MYv3vBEThKUSjv5ilAV4JMcnQir7uc5eXKuYzsmhglAWZJWy%2BzvVHwzisa\"}]}",
+            "server": "cloudflare",
+            "speculation-rules": "\"/cdn-cgi/speculation\"",
+            "strict-transport-security": "max-age=31536000; includeSubDomains",
+            "x-content-type-options": "nosniff",
+            "x-deployment-id": "psr2.455fbd60-7be3-4d3f-b5a2-4af11984e472.1793617189.VlxIOsR7LN1XncSwZ1QIDBPqXIRvTiKM8ctza3VX3Kg"
+          }
+        }
+      ],
+      "error": null,
+      "checks": {
+        "noError": true,
+        "finalStatus": true,
+        "finalUrl": true,
+        "queryPreserved": true,
+        "noRoutingLayer404ForDocument": true,
+        "homepageCanonical": true
+      },
+      "passed": true
+    },
+    {
+      "key": 12,
+      "path": "/__phase4c_readonly_missing_20261026__",
+      "url": "http://www.digitecme.com/__phase4c_readonly_missing_20261026__",
+      "method": "GET",
+      "query": "",
+      "expectedStatus": 200,
+      "chain": [
+        {
+          "at": "2026-10-26T10:59:49.962Z",
+          "url": "http://www.digitecme.com/__phase4c_readonly_missing_20261026__",
+          "method": "GET",
+          "status": 301,
+          "headers": {
+            "cf-ray": "a508f42e2aafd8e7-FRA",
+            "connection": "keep-alive",
+            "content-type": "text/html; charset=UTF-8",
+            "date": "Mon, 26 Oct 2026 10:59:50 GMT",
+            "location": "https://digitecme.com/__phase4c_readonly_missing_20261026__",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=JDKBRkKkbdvVrmRCVQ52xNMmGE8WnoRClK1e5pRvffSjNbjjlRZ61pnM4Ia25KdWDzh61PslmJ6IgvB98EsP7Dff3%2FVfV4gHTlf1u%2Br61q4qwoVWydw0d4nQ%2FGgRWZCcw4mtEw%3D%3D\"}]}",
+            "server": "cloudflare",
+            "speculation-rules": "\"/cdn-cgi/speculation\"",
+            "transfer-encoding": "chunked"
+          },
+          "bodySha256": "446a6087825fa73eadb045e5a2e9e2adf7df241b571228187728191d961dda1f",
+          "bytes": 167,
+          "bodyFile": "bodies/12-0.txt",
+          "title": "301 Moved Permanently",
+          "canonical": []
+        },
+        {
+          "at": "2026-10-26T10:59:50.187Z",
+          "url": "https://digitecme.com/__phase4c_readonly_missing_20261026__",
+          "method": "GET",
+          "status": 200,
+          "headers": {
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "cache-control": "no-cache, must-revalidate, max-age=0",
+            "cf-cache-status": "DYNAMIC",
+            "cf-ray": "a508f42f18dadcc1-FRA",
+            "connection": "keep-alive",
+            "content-encoding": "br",
+            "content-type": "text/html; charset=utf-8",
+            "date": "Mon, 26 Oct 2026 10:59:50 GMT",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "referrer-policy": "strict-origin-when-cross-origin",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=qv4pK4EhOd5dvjyUcylnGK8cczUP3yRj27KyCPZMOLi1MVONptjnvz93BsuUtUxXVvweKdggjHGTArgdmwgqY5z80%2Fb7ETKo7RJRqL7hS4adZ7mbWWcbobfgAcqEjeoi\"}]}",
+            "server": "cloudflare",
+            "speculation-rules": "\"/cdn-cgi/speculation\"",
+            "strict-transport-security": "max-age=31536000; includeSubDomains",
+            "transfer-encoding": "chunked",
+            "vary": "accept-encoding",
+            "x-content-type-options": "nosniff",
+            "x-deployment-id": "psr2.455fbd60-7be3-4d3f-b5a2-4af11984e472.1793617190.B9HeiJfp_UuDwo2M_e_s1JWEmGrC4FbeCGyalCnwngw"
+          },
+          "bodySha256": "f4e7a49a3e2eef92db9fcc217bc0733d4242fb243574d2953954f9d92fec5519",
+          "bytes": 163337,
+          "bodyFile": "bodies/12-1.txt",
+          "title": "Digi-Tec Performance Center | Independent Car Workshop Dubai",
+          "canonical": [
+            "https://digitecme.com/"
+          ]
+        }
+      ],
+      "error": null,
+      "checks": {
+        "noError": true,
+        "finalStatus": true,
+        "finalUrl": true,
+        "queryPreserved": true,
+        "noRoutingLayer404ForDocument": true,
+        "homepageCanonical": true
+      },
+      "passed": true
+    },
+    {
+      "key": 13,
+      "path": "/__phase4c_readonly_missing_20261026__",
+      "url": "http://www.digitecme.com/__phase4c_readonly_missing_20261026__?phase4c_readonly=1&tag=a&tag=b",
+      "method": "GET",
+      "query": "?phase4c_readonly=1&tag=a&tag=b",
+      "expectedStatus": 200,
+      "chain": [
+        {
+          "at": "2026-10-26T10:59:49.998Z",
+          "url": "http://www.digitecme.com/__phase4c_readonly_missing_20261026__?phase4c_readonly=1&tag=a&tag=b",
+          "method": "GET",
+          "status": 301,
+          "headers": {
+            "cf-ray": "a508f42e8fefd269-FRA",
+            "connection": "keep-alive",
+            "content-type": "text/html; charset=UTF-8",
+            "date": "Mon, 26 Oct 2026 10:59:50 GMT",
+            "location": "https://digitecme.com/__phase4c_readonly_missing_20261026__?phase4c_readonly=1&tag=a&tag=b",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=pacm4vo%2BDVYt8ga7YTScWiDWipUFr6CfhsOvPwPKkN4VLt6wY3CTFDgdYM7VEp0vbb8ea9F0fms1RQC1lT%2BonkM1zacSzE8TjhQ%2FEaVp6PU9LPK%2BDUxZEflhiiR%2Fd9iG7PUXSA%3D%3D\"}]}",
+            "server": "cloudflare",
+            "speculation-rules": "\"/cdn-cgi/speculation\"",
+            "transfer-encoding": "chunked"
+          },
+          "bodySha256": "446a6087825fa73eadb045e5a2e9e2adf7df241b571228187728191d961dda1f",
+          "bytes": 167,
+          "bodyFile": "bodies/13-0.txt",
+          "title": "301 Moved Permanently",
+          "canonical": []
+        },
+        {
+          "at": "2026-10-26T10:59:50.224Z",
+          "url": "https://digitecme.com/__phase4c_readonly_missing_20261026__?phase4c_readonly=1&tag=a&tag=b",
+          "method": "GET",
+          "status": 200,
+          "headers": {
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "cache-control": "no-cache, must-revalidate, max-age=0",
+            "cf-cache-status": "DYNAMIC",
+            "cf-ray": "a508f43099426056-CDG",
+            "connection": "keep-alive",
+            "content-encoding": "br",
+            "content-type": "text/html; charset=utf-8",
+            "date": "Mon, 26 Oct 2026 10:59:50 GMT",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "referrer-policy": "strict-origin-when-cross-origin",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=ayg5Ht3yWwHgeppJEvpqTmPSJQbfd3MZItX1OXrb5B7pTQHfpadIRuMfIwTGRH6L%2FAwOintBnNHBrYRmDwKn%2Be3SypNq8SM4Ydl2N0oE6foqeVHfr9yt4%2B5e9dfj1Sxh\"}]}",
+            "server": "cloudflare",
+            "speculation-rules": "\"/cdn-cgi/speculation\"",
+            "strict-transport-security": "max-age=31536000; includeSubDomains",
+            "transfer-encoding": "chunked",
+            "vary": "accept-encoding",
+            "x-content-type-options": "nosniff",
+            "x-deployment-id": "psr2.455fbd60-7be3-4d3f-b5a2-4af11984e472.1793617190.B9HeiJfp_UuDwo2M_e_s1JWEmGrC4FbeCGyalCnwngw"
+          },
+          "bodySha256": "a479dfdba4213ad2483920faede9d0dd0c4be60c9fd379ea53e3d99ddf81b106",
+          "bytes": 163337,
+          "bodyFile": "bodies/13-1.txt",
+          "title": "Digi-Tec Performance Center | Independent Car Workshop Dubai",
+          "canonical": [
+            "https://digitecme.com/"
+          ]
+        }
+      ],
+      "error": null,
+      "checks": {
+        "noError": true,
+        "finalStatus": true,
+        "finalUrl": true,
+        "queryPreserved": true,
+        "noRoutingLayer404ForDocument": true,
+        "homepageCanonical": true
+      },
+      "passed": true
+    },
+    {
+      "key": 14,
+      "path": "/__phase4c_readonly_missing_20261026__",
+      "url": "http://www.digitecme.com/__phase4c_readonly_missing_20261026__",
+      "method": "HEAD",
+      "query": "",
+      "expectedStatus": 200,
+      "chain": [
+        {
+          "at": "2026-10-26T10:59:50.156Z",
+          "url": "http://www.digitecme.com/__phase4c_readonly_missing_20261026__",
+          "method": "HEAD",
+          "status": 301,
+          "headers": {
+            "cf-ray": "a508f42f6836db0f-FRA",
+            "connection": "close",
+            "content-type": "text/html; charset=UTF-8",
+            "date": "Mon, 26 Oct 2026 10:59:50 GMT",
+            "location": "https://digitecme.com/__phase4c_readonly_missing_20261026__",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=aZObn3nX9CV50gxUZoFtnc9yjHWas7k1tOh%2FmoNc5mNO9LW0ueLI7XBzGyLK2BVvgr8FEv8Y%2BcjgqzGxnV0furaGnOE3T5RzheR5Z4n%2By2MHNKSstLXudZyr5M7AfJw4ym5QbA%3D%3D\"}]}",
+            "server": "cloudflare",
+            "speculation-rules": "\"/cdn-cgi/speculation\""
+          }
+        },
+        {
+          "at": "2026-10-26T10:59:50.378Z",
+          "url": "https://digitecme.com/__phase4c_readonly_missing_20261026__",
+          "method": "HEAD",
+          "status": 200,
+          "headers": {
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "cache-control": "no-cache, must-revalidate, max-age=0",
+            "cf-cache-status": "DYNAMIC",
+            "cf-ray": "a508f4304d72dc56-FRA",
+            "connection": "close",
+            "content-encoding": "br",
+            "content-type": "text/html; charset=utf-8",
+            "date": "Mon, 26 Oct 2026 10:59:50 GMT",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "referrer-policy": "strict-origin-when-cross-origin",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=N3mdrWNxGw3EUVQkxZbKHCHH%2B%2F%2BWyLhxqI%2BiGNuROzP5yOLfJT9UVp3TKBV9GhsbDrMZIahuStUzXwdJi0WL%2FbqviA59%2BX14mqAli5HUp4JxGp6GgnXeFgRIU55BHGsJ\"}]}",
+            "server": "cloudflare",
+            "speculation-rules": "\"/cdn-cgi/speculation\"",
+            "strict-transport-security": "max-age=31536000; includeSubDomains",
+            "x-content-type-options": "nosniff",
+            "x-deployment-id": "psr2.455fbd60-7be3-4d3f-b5a2-4af11984e472.1793617190.B9HeiJfp_UuDwo2M_e_s1JWEmGrC4FbeCGyalCnwngw"
+          }
+        }
+      ],
+      "error": null,
+      "checks": {
+        "noError": true,
+        "finalStatus": true,
+        "finalUrl": true,
+        "queryPreserved": true,
+        "noRoutingLayer404ForDocument": true,
+        "homepageCanonical": true
+      },
+      "passed": true
+    },
+    {
+      "key": 15,
+      "path": "/__phase4c_readonly_missing_20261026__",
+      "url": "http://www.digitecme.com/__phase4c_readonly_missing_20261026__?phase4c_readonly=1&tag=a&tag=b",
+      "method": "HEAD",
+      "query": "?phase4c_readonly=1&tag=a&tag=b",
+      "expectedStatus": 200,
+      "chain": [
+        {
+          "at": "2026-10-26T10:59:50.317Z",
+          "url": "http://www.digitecme.com/__phase4c_readonly_missing_20261026__?phase4c_readonly=1&tag=a&tag=b",
+          "method": "HEAD",
+          "status": 301,
+          "headers": {
+            "cf-ray": "a508f42fce81d8e7-FRA",
+            "connection": "close",
+            "content-type": "text/html; charset=UTF-8",
+            "date": "Mon, 26 Oct 2026 10:59:50 GMT",
+            "location": "https://digitecme.com/__phase4c_readonly_missing_20261026__?phase4c_readonly=1&tag=a&tag=b",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=Usbze%2BerDqvCsPUe3BmPeahyQxJ51tI%2BajjroOOrUN87wuSKVVSQ1XgCoHmQOKN6zx4vpRY5R16MGrsiJlS8n7j56DvQF%2B5jo%2FziLJaoyh5WZAuXTtIBJtF6dE4sBC46OTI8og%3D%3D\"}]}",
+            "server": "cloudflare",
+            "speculation-rules": "\"/cdn-cgi/speculation\""
+          }
+        },
+        {
+          "at": "2026-10-26T10:59:50.443Z",
+          "url": "https://digitecme.com/__phase4c_readonly_missing_20261026__?phase4c_readonly=1&tag=a&tag=b",
+          "method": "HEAD",
+          "status": 200,
+          "headers": {
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "cache-control": "no-cache, must-revalidate, max-age=0",
+            "cf-cache-status": "DYNAMIC",
+            "cf-ray": "a508f432392b6c27-FRA",
+            "connection": "close",
+            "content-encoding": "br",
+            "content-type": "text/html; charset=utf-8",
+            "date": "Mon, 26 Oct 2026 10:59:50 GMT",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "referrer-policy": "strict-origin-when-cross-origin",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=aa7bQzFYOsIAzW1jPNfTuoIBBnP48HLtZ%2FxYU9vDHWJ78ocGELfmLAANyonz7WqoM9dffWK3%2BDBzFfGCX%2BX7UrP%2BzmmtG3fNJESJfmDC43fdZFfwsGWrATm5ADgc%2BBGP\"}]}",
+            "server": "cloudflare",
+            "speculation-rules": "\"/cdn-cgi/speculation\"",
+            "strict-transport-security": "max-age=31536000; includeSubDomains",
+            "x-content-type-options": "nosniff",
+            "x-deployment-id": "psr2.455fbd60-7be3-4d3f-b5a2-4af11984e472.1793617190.B9HeiJfp_UuDwo2M_e_s1JWEmGrC4FbeCGyalCnwngw"
+          }
+        }
+      ],
+      "error": null,
+      "checks": {
+        "noError": true,
+        "finalStatus": true,
+        "finalUrl": true,
+        "queryPreserved": true,
+        "noRoutingLayer404ForDocument": true,
+        "homepageCanonical": true
+      },
+      "passed": true
+    },
+    {
+      "key": 16,
+      "path": "/ar/__phase4c_readonly_missing_20261026__",
+      "url": "https://digitecme.com/ar/__phase4c_readonly_missing_20261026__",
+      "method": "GET",
+      "query": "",
+      "expectedStatus": 200,
+      "chain": [
+        {
+          "at": "2026-10-26T10:59:50.422Z",
+          "url": "https://digitecme.com/ar/__phase4c_readonly_missing_20261026__",
+          "method": "GET",
+          "status": 200,
+          "headers": {
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "cache-control": "no-cache, must-revalidate, max-age=0",
+            "cf-cache-status": "DYNAMIC",
+            "cf-ray": "a508f4309cdfdcc1-FRA",
+            "connection": "keep-alive",
+            "content-encoding": "br",
+            "content-type": "text/html; charset=utf-8",
+            "date": "Mon, 26 Oct 2026 10:59:50 GMT",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "referrer-policy": "strict-origin-when-cross-origin",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=SAUEU%2B95bc7659IjWBVtlVRSLR%2F3JRLdcREQZeBeNBgmK2n88vd%2FWtt8zIMojGL5dH1xFJ6X5hUFXm%2BADu2O6PMnDOCyDXFaYmUvCOl5K89KoQ1S9%2BlvkXJdtlPJPDJw\"}]}",
+            "server": "cloudflare",
+            "speculation-rules": "\"/cdn-cgi/speculation\"",
+            "strict-transport-security": "max-age=31536000; includeSubDomains",
+            "transfer-encoding": "chunked",
+            "vary": "accept-encoding",
+            "x-content-type-options": "nosniff",
+            "x-deployment-id": "psr2.455fbd60-7be3-4d3f-b5a2-4af11984e472.1793617190.B9HeiJfp_UuDwo2M_e_s1JWEmGrC4FbeCGyalCnwngw"
+          },
+          "bodySha256": "3bc9475b0fde2673e071ad0fee869cbc9778b263aa2a9a7db12638ed77be5f2d",
+          "bytes": 163337,
+          "bodyFile": "bodies/16-0.txt",
+          "title": "Digi-Tec Performance Center | Independent Car Workshop Dubai",
+          "canonical": [
+            "https://digitecme.com/"
+          ]
+        }
+      ],
+      "error": null,
+      "checks": {
+        "noError": true,
+        "finalStatus": true,
+        "finalUrl": true,
+        "queryPreserved": true,
+        "noRoutingLayer404ForDocument": true,
+        "homepageCanonical": true
+      },
+      "passed": true
+    },
+    {
+      "key": 17,
+      "path": "/ar/__phase4c_readonly_missing_20261026__",
+      "url": "https://digitecme.com/ar/__phase4c_readonly_missing_20261026__?phase4c_readonly=1&tag=a&tag=b",
+      "method": "GET",
+      "query": "?phase4c_readonly=1&tag=a&tag=b",
+      "expectedStatus": 200,
+      "chain": [
+        {
+          "at": "2026-10-26T10:59:50.565Z",
+          "url": "https://digitecme.com/ar/__phase4c_readonly_missing_20261026__?phase4c_readonly=1&tag=a&tag=b",
+          "method": "GET",
+          "status": 200,
+          "headers": {
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "cache-control": "no-cache, must-revalidate, max-age=0",
+            "cf-cache-status": "DYNAMIC",
+            "cf-ray": "a508f432e9b02a71-CDG",
+            "connection": "keep-alive",
+            "content-encoding": "br",
+            "content-type": "text/html; charset=utf-8",
+            "date": "Mon, 26 Oct 2026 10:59:50 GMT",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "referrer-policy": "strict-origin-when-cross-origin",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=SsimZS1Pf00q%2BxTv8yM7vh8mTOWIGO4KCye09Rb1ToR2w56p4f0mSovsT46BIGhq03JbNEttn4q2yX04u%2Bl3ZBPZM6bwnWaI%2FacKir8Tocw3kfqaV8gMfuFlTbTmBfaY\"}]}",
+            "server": "cloudflare",
+            "speculation-rules": "\"/cdn-cgi/speculation\"",
+            "strict-transport-security": "max-age=31536000; includeSubDomains",
+            "transfer-encoding": "chunked",
+            "vary": "accept-encoding",
+            "x-content-type-options": "nosniff",
+            "x-deployment-id": "psr2.455fbd60-7be3-4d3f-b5a2-4af11984e472.1793617190.B9HeiJfp_UuDwo2M_e_s1JWEmGrC4FbeCGyalCnwngw"
+          },
+          "bodySha256": "e7dd6d9019470392d0ee572c24af302a3189f533c11d8657dd934bb5df32af9b",
+          "bytes": 163337,
+          "bodyFile": "bodies/17-0.txt",
+          "title": "Digi-Tec Performance Center | Independent Car Workshop Dubai",
+          "canonical": [
+            "https://digitecme.com/"
+          ]
+        }
+      ],
+      "error": null,
+      "checks": {
+        "noError": true,
+        "finalStatus": true,
+        "finalUrl": true,
+        "queryPreserved": true,
+        "noRoutingLayer404ForDocument": true,
+        "homepageCanonical": true
+      },
+      "passed": true
+    },
+    {
+      "key": 18,
+      "path": "/ar/__phase4c_readonly_missing_20261026__",
+      "url": "https://digitecme.com/ar/__phase4c_readonly_missing_20261026__",
+      "method": "HEAD",
+      "query": "",
+      "expectedStatus": 200,
+      "chain": [
+        {
+          "at": "2026-10-26T10:59:50.621Z",
+          "url": "https://digitecme.com/ar/__phase4c_readonly_missing_20261026__",
+          "method": "HEAD",
+          "status": 200,
+          "headers": {
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "cache-control": "no-cache, must-revalidate, max-age=0",
+            "cf-cache-status": "DYNAMIC",
+            "cf-ray": "a508f431b817dcc1-FRA",
+            "connection": "close",
+            "content-encoding": "br",
+            "content-type": "text/html; charset=utf-8",
+            "date": "Mon, 26 Oct 2026 10:59:50 GMT",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "referrer-policy": "strict-origin-when-cross-origin",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=T7jk0OMGkovNC8sNurjhrcJdJBy3R61jkvOvZFnaEOG80DqCLQ6ERiKwgw9ynVdVWnI%2B7sCRQiYcKrTMJKf5CukNgxoGNj994XCTufMsk8mwthz8149rM76r%2B3%2F2oTga\"}]}",
+            "server": "cloudflare",
+            "speculation-rules": "\"/cdn-cgi/speculation\"",
+            "strict-transport-security": "max-age=31536000; includeSubDomains",
+            "x-content-type-options": "nosniff",
+            "x-deployment-id": "psr2.455fbd60-7be3-4d3f-b5a2-4af11984e472.1793617190.B9HeiJfp_UuDwo2M_e_s1JWEmGrC4FbeCGyalCnwngw"
+          }
+        }
+      ],
+      "error": null,
+      "checks": {
+        "noError": true,
+        "finalStatus": true,
+        "finalUrl": true,
+        "queryPreserved": true,
+        "noRoutingLayer404ForDocument": true,
+        "homepageCanonical": true
+      },
+      "passed": true
+    },
+    {
+      "key": 19,
+      "path": "/ar/__phase4c_readonly_missing_20261026__",
+      "url": "https://digitecme.com/ar/__phase4c_readonly_missing_20261026__?phase4c_readonly=1&tag=a&tag=b",
+      "method": "HEAD",
+      "query": "?phase4c_readonly=1&tag=a&tag=b",
+      "expectedStatus": 200,
+      "chain": [
+        {
+          "at": "2026-10-26T10:59:50.622Z",
+          "url": "https://digitecme.com/ar/__phase4c_readonly_missing_20261026__?phase4c_readonly=1&tag=a&tag=b",
+          "method": "HEAD",
+          "status": 200,
+          "headers": {
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "cache-control": "no-cache, must-revalidate, max-age=0",
+            "cf-cache-status": "DYNAMIC",
+            "cf-ray": "a508f4333b435046-FRA",
+            "connection": "close",
+            "content-encoding": "br",
+            "content-type": "text/html; charset=utf-8",
+            "date": "Mon, 26 Oct 2026 10:59:50 GMT",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "referrer-policy": "strict-origin-when-cross-origin",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=QHuidUUxpPvHG9Subid%2BPR7PdUfIi%2BaHlke7BarOhjAhcOw5ETTUTJm4jtGuexMXGJqn3h1h0yNdbXvDAgJGF%2FMpbbAV%2Ba3MXPUrkRRvtWkaI3Mj5sfDzWJrSHj4Q3W5\"}]}",
+            "server": "cloudflare",
+            "speculation-rules": "\"/cdn-cgi/speculation\"",
+            "strict-transport-security": "max-age=31536000; includeSubDomains",
+            "x-content-type-options": "nosniff",
+            "x-deployment-id": "psr2.455fbd60-7be3-4d3f-b5a2-4af11984e472.1793617190.B9HeiJfp_UuDwo2M_e_s1JWEmGrC4FbeCGyalCnwngw"
+          }
+        }
+      ],
+      "error": null,
+      "checks": {
+        "noError": true,
+        "finalStatus": true,
+        "finalUrl": true,
+        "queryPreserved": true,
+        "noRoutingLayer404ForDocument": true,
+        "homepageCanonical": true
+      },
+      "passed": true
+    },
+    {
+      "key": 20,
+      "path": "/ar/__phase4c_readonly_missing_20261026__",
+      "url": "http://digitecme.com/ar/__phase4c_readonly_missing_20261026__",
+      "method": "GET",
+      "query": "",
+      "expectedStatus": 200,
+      "chain": [
+        {
+          "at": "2026-10-26T10:59:50.784Z",
+          "url": "http://digitecme.com/ar/__phase4c_readonly_missing_20261026__",
+          "method": "GET",
+          "status": 301,
+          "headers": {
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "cf-ray": "a508f4338bba11cf-HKG",
+            "connection": "keep-alive",
+            "content-type": "text/html; charset=UTF-8",
+            "date": "Mon, 26 Oct 2026 10:59:50 GMT",
+            "location": "https://digitecme.com/ar/__phase4c_readonly_missing_20261026__",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=svVYGluWjZ%2FCiKrsTCorW8LABBalmvQyGyPa8VMOLqaQlp52hgZgaFh6npzPUmVjmADrEN9Vkp0XWdDDLokAY7Iy8QqPuGGbunsa8U0pjA0BMDC3LFb%2Bu1q6sDG17VPD\"}]}",
+            "server": "cloudflare",
+            "speculation-rules": "\"/cdn-cgi/speculation\"",
+            "transfer-encoding": "chunked"
+          },
+          "bodySha256": "446a6087825fa73eadb045e5a2e9e2adf7df241b571228187728191d961dda1f",
+          "bytes": 167,
+          "bodyFile": "bodies/20-0.txt",
+          "title": "301 Moved Permanently",
+          "canonical": []
+        },
+        {
+          "at": "2026-10-26T10:59:51.065Z",
+          "url": "https://digitecme.com/ar/__phase4c_readonly_missing_20261026__",
+          "method": "GET",
+          "status": 200,
+          "headers": {
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "cache-control": "no-cache, must-revalidate, max-age=0",
+            "cf-cache-status": "DYNAMIC",
+            "cf-ray": "a508f435fe657d2e-HKG",
+            "connection": "keep-alive",
+            "content-encoding": "br",
+            "content-type": "text/html; charset=utf-8",
+            "date": "Mon, 26 Oct 2026 10:59:51 GMT",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "referrer-policy": "strict-origin-when-cross-origin",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=knFJuph8jLboYHg%2BOVaCHCdQJR8IxbWQYlElzCw1AcFNIk4lHJJ2UShLi0NVHXDiF1f1ZKr3TKwDki4%2B9%2BMPM0y%2FZDDuUIGPfToZDU1YXav8PTjBUXcBZp4mfacvnDiK\"}]}",
+            "server": "cloudflare",
+            "speculation-rules": "\"/cdn-cgi/speculation\"",
+            "strict-transport-security": "max-age=31536000; includeSubDomains",
+            "transfer-encoding": "chunked",
+            "vary": "accept-encoding",
+            "x-content-type-options": "nosniff",
+            "x-deployment-id": "psr2.455fbd60-7be3-4d3f-b5a2-4af11984e472.1793617191.vuTJyuKrgtUDep2KZdzZzobNejrzDKzxTwkm4xrGDLg"
+          },
+          "bodySha256": "b84e034c71bc233eee5e7ea9584c1d636cf4d232abb028bea13ec172d710bfae",
+          "bytes": 163337,
+          "bodyFile": "bodies/20-1.txt",
+          "title": "Digi-Tec Performance Center | Independent Car Workshop Dubai",
+          "canonical": [
+            "https://digitecme.com/"
+          ]
+        }
+      ],
+      "error": null,
+      "checks": {
+        "noError": true,
+        "finalStatus": true,
+        "finalUrl": true,
+        "queryPreserved": true,
+        "noRoutingLayer404ForDocument": true,
+        "homepageCanonical": true
+      },
+      "passed": true
+    },
+    {
+      "key": 21,
+      "path": "/ar/__phase4c_readonly_missing_20261026__",
+      "url": "http://digitecme.com/ar/__phase4c_readonly_missing_20261026__?phase4c_readonly=1&tag=a&tag=b",
+      "method": "GET",
+      "query": "?phase4c_readonly=1&tag=a&tag=b",
+      "expectedStatus": 200,
+      "chain": [
+        {
+          "at": "2026-10-26T10:59:50.872Z",
+          "url": "http://digitecme.com/ar/__phase4c_readonly_missing_20261026__?phase4c_readonly=1&tag=a&tag=b",
+          "method": "GET",
+          "status": 301,
+          "headers": {
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "cf-ray": "a508f433fa9d8dfb-FRA",
+            "connection": "keep-alive",
+            "content-type": "text/html; charset=UTF-8",
+            "date": "Mon, 26 Oct 2026 10:59:51 GMT",
+            "location": "https://digitecme.com/ar/__phase4c_readonly_missing_20261026__?phase4c_readonly=1&tag=a&tag=b",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=AX8ZAkoOFAvxN8TpruT92xwTi9roJi8mBz2DVTsd2WAtGU%2FmBLgPVfhLAjKT5oJn6UcE2b8J4axHxWWlCcQyTBKDA1JxjEG61LetaAd7A86sqnOLlPLrdK%2FAhRov7P4p\"}]}",
+            "server": "cloudflare",
+            "speculation-rules": "\"/cdn-cgi/speculation\"",
+            "transfer-encoding": "chunked"
+          },
+          "bodySha256": "446a6087825fa73eadb045e5a2e9e2adf7df241b571228187728191d961dda1f",
+          "bytes": 167,
+          "bodyFile": "bodies/21-0.txt",
+          "title": "301 Moved Permanently",
+          "canonical": []
+        },
+        {
+          "at": "2026-10-26T10:59:51.102Z",
+          "url": "https://digitecme.com/ar/__phase4c_readonly_missing_20261026__?phase4c_readonly=1&tag=a&tag=b",
+          "method": "GET",
+          "status": 200,
+          "headers": {
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "cache-control": "no-cache, must-revalidate, max-age=0",
+            "cf-cache-status": "DYNAMIC",
+            "cf-ray": "a508f4363cdbf540-HKG",
+            "connection": "keep-alive",
+            "content-encoding": "br",
+            "content-type": "text/html; charset=utf-8",
+            "date": "Mon, 26 Oct 2026 10:59:51 GMT",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "referrer-policy": "strict-origin-when-cross-origin",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=lZyNd%2B4WxUpH1GyhnjPnLxCU1LsqGQyJQ4l05HI0WWndkOnrF5zdbz5r5rO0bJafZ8ed0AvgK144No9h1z8aok0u9%2FcLl4MChZpojZJOgG6fsg9JB8yGw98ZUczrJyEO\"}]}",
+            "server": "cloudflare",
+            "speculation-rules": "\"/cdn-cgi/speculation\"",
+            "strict-transport-security": "max-age=31536000; includeSubDomains",
+            "transfer-encoding": "chunked",
+            "vary": "accept-encoding",
+            "x-content-type-options": "nosniff",
+            "x-deployment-id": "psr2.455fbd60-7be3-4d3f-b5a2-4af11984e472.1793617191.vuTJyuKrgtUDep2KZdzZzobNejrzDKzxTwkm4xrGDLg"
+          },
+          "bodySha256": "c5fbcbd13dedd3a2992b7c6be7a6271539b88ab4204017c7d6fd93c5a4ff156d",
+          "bytes": 163337,
+          "bodyFile": "bodies/21-1.txt",
+          "title": "Digi-Tec Performance Center | Independent Car Workshop Dubai",
+          "canonical": [
+            "https://digitecme.com/"
+          ]
+        }
+      ],
+      "error": null,
+      "checks": {
+        "noError": true,
+        "finalStatus": true,
+        "finalUrl": true,
+        "queryPreserved": true,
+        "noRoutingLayer404ForDocument": true,
+        "homepageCanonical": true
+      },
+      "passed": true
+    },
+    {
+      "key": 22,
+      "path": "/ar/__phase4c_readonly_missing_20261026__",
+      "url": "http://digitecme.com/ar/__phase4c_readonly_missing_20261026__",
+      "method": "HEAD",
+      "query": "",
+      "expectedStatus": 200,
+      "chain": [
+        {
+          "at": "2026-10-26T10:59:50.982Z",
+          "url": "http://digitecme.com/ar/__phase4c_readonly_missing_20261026__",
+          "method": "HEAD",
+          "status": 301,
+          "headers": {
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "cf-ray": "a508f434ad31d10f-CDG",
+            "connection": "close",
+            "content-type": "text/html; charset=UTF-8",
+            "date": "Mon, 26 Oct 2026 10:59:51 GMT",
+            "location": "https://digitecme.com/ar/__phase4c_readonly_missing_20261026__",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=UZfgY4k57G2MCgtVIokJreQXgdtM8aIbwei2uh8IF4Avy%2FG5jmvcAmY9DI94sAb7hUIBI6Jc6PV6hqgaRn6xvg6pJSq6aqtL2T9DikgV3qFf04pMaB90j%2FxFv4oXZ91d\"}]}",
+            "server": "cloudflare",
+            "speculation-rules": "\"/cdn-cgi/speculation\""
+          }
+        },
+        {
+          "at": "2026-10-26T10:59:51.216Z",
+          "url": "https://digitecme.com/ar/__phase4c_readonly_missing_20261026__",
+          "method": "HEAD",
+          "status": 200,
+          "headers": {
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "cache-control": "no-cache, must-revalidate, max-age=0",
+            "cf-cache-status": "DYNAMIC",
+            "cf-ray": "a508f4357ff16056-CDG",
+            "connection": "close",
+            "content-encoding": "br",
+            "content-type": "text/html; charset=utf-8",
+            "date": "Mon, 26 Oct 2026 10:59:51 GMT",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "referrer-policy": "strict-origin-when-cross-origin",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=AWoWvOB%2BtAYw9K2qUeb4j7r22jO6cvkVDY7DIWUwbjc9l7NwbvpTwYIB9ATG%2FILYqdzBMBWoEtoT1q2dHG%2BqIHe3y9edTwXYvVKYGgPTKwVFCg1Lg1i48x5Rr%2FkOzalj\"}]}",
+            "server": "cloudflare",
+            "speculation-rules": "\"/cdn-cgi/speculation\"",
+            "strict-transport-security": "max-age=31536000; includeSubDomains",
+            "x-content-type-options": "nosniff",
+            "x-deployment-id": "psr2.455fbd60-7be3-4d3f-b5a2-4af11984e472.1793617191.vuTJyuKrgtUDep2KZdzZzobNejrzDKzxTwkm4xrGDLg"
+          }
+        }
+      ],
+      "error": null,
+      "checks": {
+        "noError": true,
+        "finalStatus": true,
+        "finalUrl": true,
+        "queryPreserved": true,
+        "noRoutingLayer404ForDocument": true,
+        "homepageCanonical": true
+      },
+      "passed": true
+    },
+    {
+      "key": 23,
+      "path": "/ar/__phase4c_readonly_missing_20261026__",
+      "url": "http://digitecme.com/ar/__phase4c_readonly_missing_20261026__?phase4c_readonly=1&tag=a&tag=b",
+      "method": "HEAD",
+      "query": "?phase4c_readonly=1&tag=a&tag=b",
+      "expectedStatus": 200,
+      "chain": [
+        {
+          "at": "2026-10-26T10:59:51.047Z",
+          "url": "http://digitecme.com/ar/__phase4c_readonly_missing_20261026__?phase4c_readonly=1&tag=a&tag=b",
+          "method": "HEAD",
+          "status": 301,
+          "headers": {
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "cf-ray": "a508f4351c66a880-HKG",
+            "connection": "close",
+            "content-type": "text/html; charset=UTF-8",
+            "date": "Mon, 26 Oct 2026 10:59:51 GMT",
+            "location": "https://digitecme.com/ar/__phase4c_readonly_missing_20261026__?phase4c_readonly=1&tag=a&tag=b",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=3JpxysnlHuy1YTz%2Bxueaby1bEISy3cmH86b7ZYxnk%2FbgwViS7JnITikj95P4xdS9AuCqxUaYxAtEN1wZTKXKhqyWdaQNa%2FK0Xq0iUMHa1T5tGRBc5gCJDmuc5evusp2m\"}]}",
+            "server": "cloudflare",
+            "speculation-rules": "\"/cdn-cgi/speculation\""
+          }
+        },
+        {
+          "at": "2026-10-26T10:59:51.298Z",
+          "url": "https://digitecme.com/ar/__phase4c_readonly_missing_20261026__?phase4c_readonly=1&tag=a&tag=b",
+          "method": "HEAD",
+          "status": 200,
+          "headers": {
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "cache-control": "no-cache, must-revalidate, max-age=0",
+            "cf-cache-status": "DYNAMIC",
+            "cf-ray": "a508f4376da5f737-CDG",
+            "connection": "close",
+            "content-encoding": "br",
+            "content-type": "text/html; charset=utf-8",
+            "date": "Mon, 26 Oct 2026 10:59:51 GMT",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "referrer-policy": "strict-origin-when-cross-origin",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=zcfJrlk347IYGnO7tCb0%2Fx37lgdjWRbLzuK5d9yU%2ByNVvZCu2Vd6CSpRZF2HirOSAPEv1bMhaFEOHyPjjSaWTSBEKfwq495MC%2F%2Bl08XLn2P1b7FoYXWOri2%2Ft5Ar474d\"}]}",
+            "server": "cloudflare",
+            "speculation-rules": "\"/cdn-cgi/speculation\"",
+            "strict-transport-security": "max-age=31536000; includeSubDomains",
+            "x-content-type-options": "nosniff",
+            "x-deployment-id": "psr2.455fbd60-7be3-4d3f-b5a2-4af11984e472.1793617191.vuTJyuKrgtUDep2KZdzZzobNejrzDKzxTwkm4xrGDLg"
+          }
+        }
+      ],
+      "error": null,
+      "checks": {
+        "noError": true,
+        "finalStatus": true,
+        "finalUrl": true,
+        "queryPreserved": true,
+        "noRoutingLayer404ForDocument": true,
+        "homepageCanonical": true
+      },
+      "passed": true
+    },
+    {
+      "key": 24,
+      "path": "/ar/__phase4c_readonly_missing_20261026__",
+      "url": "https://www.digitecme.com/ar/__phase4c_readonly_missing_20261026__",
+      "method": "GET",
+      "query": "",
+      "expectedStatus": 200,
+      "chain": [
+        {
+          "at": "2026-10-26T10:59:51.377Z",
+          "url": "https://www.digitecme.com/ar/__phase4c_readonly_missing_20261026__",
+          "method": "GET",
+          "status": 301,
+          "headers": {
+            "cf-ray": "a508f43829376407-LHR",
+            "connection": "keep-alive",
+            "content-type": "text/html; charset=UTF-8",
+            "date": "Mon, 26 Oct 2026 10:59:51 GMT",
+            "location": "https://digitecme.com/ar/__phase4c_readonly_missing_20261026__",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=zuExBYI%2BmlVIR5YJoSfSHeiPziBwUgs4WHmFt7by1PyCrAJxKLqcp%2BWXhEGvH4XER%2FO9ayQipG8vqan%2F1RXXa4uXojjnc9tupUFolT36gYTr9xA5Wf%2F71oiPVc%2By2cqYckaHZQ%3D%3D\"}]}",
+            "server": "cloudflare",
+            "speculation-rules": "\"/cdn-cgi/speculation\"",
+            "transfer-encoding": "chunked"
+          },
+          "bodySha256": "446a6087825fa73eadb045e5a2e9e2adf7df241b571228187728191d961dda1f",
+          "bytes": 167,
+          "bodyFile": "bodies/24-0.txt",
+          "title": "301 Moved Permanently",
+          "canonical": []
+        },
+        {
+          "at": "2026-10-26T10:59:51.809Z",
+          "url": "https://digitecme.com/ar/__phase4c_readonly_missing_20261026__",
+          "method": "GET",
+          "status": 200,
+          "headers": {
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "cache-control": "no-cache, must-revalidate, max-age=0",
+            "cf-cache-status": "DYNAMIC",
+            "cf-ray": "a508f43939f1f540-HKG",
+            "connection": "keep-alive",
+            "content-encoding": "br",
+            "content-type": "text/html; charset=utf-8",
+            "date": "Mon, 26 Oct 2026 10:59:51 GMT",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "referrer-policy": "strict-origin-when-cross-origin",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=5VgsNII6tarSI9PSTRQM7FBjyf1A0GyfYEIUF1a6D5hjqgZIlj0MoWwmy6zqDZYF7p7ZcDoa0PUHHG9sjKcxm5gk1RV67ZW9Sp1s9er59evInrKCvPTqSllKnVb36XFc\"}]}",
+            "server": "cloudflare",
+            "speculation-rules": "\"/cdn-cgi/speculation\"",
+            "strict-transport-security": "max-age=31536000; includeSubDomains",
+            "transfer-encoding": "chunked",
+            "vary": "accept-encoding",
+            "x-content-type-options": "nosniff",
+            "x-deployment-id": "psr2.455fbd60-7be3-4d3f-b5a2-4af11984e472.1793617191.vuTJyuKrgtUDep2KZdzZzobNejrzDKzxTwkm4xrGDLg"
+          },
+          "bodySha256": "1c6d71f0fa8c74cfa561c6daa6b264ae4c57ec0934ef35020450be981bd74290",
+          "bytes": 163337,
+          "bodyFile": "bodies/24-1.txt",
+          "title": "Digi-Tec Performance Center | Independent Car Workshop Dubai",
+          "canonical": [
+            "https://digitecme.com/"
+          ]
+        }
+      ],
+      "error": null,
+      "checks": {
+        "noError": true,
+        "finalStatus": true,
+        "finalUrl": true,
+        "queryPreserved": true,
+        "noRoutingLayer404ForDocument": true,
+        "homepageCanonical": true
+      },
+      "passed": true
+    },
+    {
+      "key": 25,
+      "path": "/ar/__phase4c_readonly_missing_20261026__",
+      "url": "https://www.digitecme.com/ar/__phase4c_readonly_missing_20261026__?phase4c_readonly=1&tag=a&tag=b",
+      "method": "GET",
+      "query": "?phase4c_readonly=1&tag=a&tag=b",
+      "expectedStatus": 200,
+      "chain": [
+        {
+          "at": "2026-10-26T10:59:51.540Z",
+          "url": "https://www.digitecme.com/ar/__phase4c_readonly_missing_20261026__?phase4c_readonly=1&tag=a&tag=b",
+          "method": "GET",
+          "status": 301,
+          "headers": {
+            "cf-ray": "a508f43798d065cd-FRA",
+            "connection": "keep-alive",
+            "content-type": "text/html; charset=UTF-8",
+            "date": "Mon, 26 Oct 2026 10:59:51 GMT",
+            "location": "https://digitecme.com/ar/__phase4c_readonly_missing_20261026__?phase4c_readonly=1&tag=a&tag=b",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=hK3abIV2kqdLTcEsjiPw2YzSG4fvNAjpRCaTCgN7td8P7QDrXaTdrP2adQNznTMECct1IwfiXJC3vmp0TP41c31uTl8ueo5giWyulyHti7f0Wmo%2FvkvN93mhshLaqMoN3FD%2FCA%3D%3D\"}]}",
+            "server": "cloudflare",
+            "speculation-rules": "\"/cdn-cgi/speculation\"",
+            "transfer-encoding": "chunked"
+          },
+          "bodySha256": "446a6087825fa73eadb045e5a2e9e2adf7df241b571228187728191d961dda1f",
+          "bytes": 167,
+          "bodyFile": "bodies/25-0.txt",
+          "title": "301 Moved Permanently",
+          "canonical": []
+        },
+        {
+          "at": "2026-10-26T10:59:51.675Z",
+          "url": "https://digitecme.com/ar/__phase4c_readonly_missing_20261026__?phase4c_readonly=1&tag=a&tag=b",
+          "method": "GET",
+          "status": 200,
+          "headers": {
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "cache-control": "no-cache, must-revalidate, max-age=0",
+            "cf-cache-status": "DYNAMIC",
+            "cf-ray": "a508f4384ea77d2e-HKG",
+            "connection": "keep-alive",
+            "content-encoding": "br",
+            "content-type": "text/html; charset=utf-8",
+            "date": "Mon, 26 Oct 2026 10:59:51 GMT",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "referrer-policy": "strict-origin-when-cross-origin",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=TwU3CPqx3BoNe7CN84d499nntw3ht8EZui%2B09uw7vKoFiiiS5TP2YvjiQWnPM9PQ9jPX4VkaJ1kpfq0d8H2Lr4HXNNHX1gQHWk5t4gJaWoDRhwrrWXvdfmyTVX%2BQrx1n\"}]}",
+            "server": "cloudflare",
+            "speculation-rules": "\"/cdn-cgi/speculation\"",
+            "strict-transport-security": "max-age=31536000; includeSubDomains",
+            "transfer-encoding": "chunked",
+            "vary": "accept-encoding",
+            "x-content-type-options": "nosniff",
+            "x-deployment-id": "psr2.455fbd60-7be3-4d3f-b5a2-4af11984e472.1793617191.vuTJyuKrgtUDep2KZdzZzobNejrzDKzxTwkm4xrGDLg"
+          },
+          "bodySha256": "0fc8b9e358ab115c7da69a20d8067805eb03001aa4a0f4f470679424491dd44e",
+          "bytes": 163337,
+          "bodyFile": "bodies/25-1.txt",
+          "title": "Digi-Tec Performance Center | Independent Car Workshop Dubai",
+          "canonical": [
+            "https://digitecme.com/"
+          ]
+        }
+      ],
+      "error": null,
+      "checks": {
+        "noError": true,
+        "finalStatus": true,
+        "finalUrl": true,
+        "queryPreserved": true,
+        "noRoutingLayer404ForDocument": true,
+        "homepageCanonical": true
+      },
+      "passed": true
+    },
+    {
+      "key": 26,
+      "path": "/ar/__phase4c_readonly_missing_20261026__",
+      "url": "https://www.digitecme.com/ar/__phase4c_readonly_missing_20261026__",
+      "method": "HEAD",
+      "query": "",
+      "expectedStatus": 200,
+      "chain": [
+        {
+          "at": "2026-10-26T10:59:51.581Z",
+          "url": "https://www.digitecme.com/ar/__phase4c_readonly_missing_20261026__",
+          "method": "HEAD",
+          "status": 301,
+          "headers": {
+            "cf-ray": "a508f43b8e56913a-FRA",
+            "connection": "close",
+            "content-type": "text/html; charset=UTF-8",
+            "date": "Mon, 26 Oct 2026 10:59:52 GMT",
+            "location": "https://digitecme.com/ar/__phase4c_readonly_missing_20261026__",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=JsAiKk0A%2BzGcqhXnvaaDMSs4Q%2Bg%2B%2F4nXHAchp%2FRxy8X4%2F1aEJtqGrNbONVKp8EF1u79C6C%2F%2FsqEjdfbTUWAnmvVQX5oEiXF5c2pDG8HP3pCxdOTVkTQ0pEJenQ7TTf692Ie1kg%3D%3D\"}]}",
+            "server": "cloudflare",
+            "speculation-rules": "\"/cdn-cgi/speculation\""
+          }
+        },
+        {
+          "at": "2026-10-26T10:59:52.330Z",
+          "url": "https://digitecme.com/ar/__phase4c_readonly_missing_20261026__",
+          "method": "HEAD",
+          "status": 200,
+          "headers": {
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "cache-control": "no-cache, must-revalidate, max-age=0",
+            "cf-cache-status": "DYNAMIC",
+            "cf-ray": "a508f43c6f4ef540-HKG",
+            "connection": "close",
+            "content-encoding": "br",
+            "content-type": "text/html; charset=utf-8",
+            "date": "Mon, 26 Oct 2026 10:59:52 GMT",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "referrer-policy": "strict-origin-when-cross-origin",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=hwbuDv66VEud75Zwg0TD5yxEhYMUplJJSbl4CWmg%2Fb7i92UM5HI8H6%2Fmw2wvUIbbHTa6ubmNhFG9NLsQFhQ24vnpoB1TKGxtkuKnOT6PbWeiumLvE7sbCzSpmylnLeQa\"}]}",
+            "server": "cloudflare",
+            "speculation-rules": "\"/cdn-cgi/speculation\"",
+            "strict-transport-security": "max-age=31536000; includeSubDomains",
+            "x-content-type-options": "nosniff",
+            "x-deployment-id": "psr2.455fbd60-7be3-4d3f-b5a2-4af11984e472.1793617192.GqfY6VG0-Ly8QtAu3BkmgYKEFs9PpImlb1vf5tocAk4"
+          }
+        }
+      ],
+      "error": null,
+      "checks": {
+        "noError": true,
+        "finalStatus": true,
+        "finalUrl": true,
+        "queryPreserved": true,
+        "noRoutingLayer404ForDocument": true,
+        "homepageCanonical": true
+      },
+      "passed": true
+    },
+    {
+      "key": 27,
+      "path": "/ar/__phase4c_readonly_missing_20261026__",
+      "url": "https://www.digitecme.com/ar/__phase4c_readonly_missing_20261026__?phase4c_readonly=1&tag=a&tag=b",
+      "method": "HEAD",
+      "query": "?phase4c_readonly=1&tag=a&tag=b",
+      "expectedStatus": 200,
+      "chain": [
+        {
+          "at": "2026-10-26T10:59:51.758Z",
+          "url": "https://www.digitecme.com/ar/__phase4c_readonly_missing_20261026__?phase4c_readonly=1&tag=a&tag=b",
+          "method": "HEAD",
+          "status": 301,
+          "headers": {
+            "cf-ray": "a508f438f9dd65cd-FRA",
+            "connection": "close",
+            "content-type": "text/html; charset=UTF-8",
+            "date": "Mon, 26 Oct 2026 10:59:51 GMT",
+            "location": "https://digitecme.com/ar/__phase4c_readonly_missing_20261026__?phase4c_readonly=1&tag=a&tag=b",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=VLEUqZIxq0ULdiSRqkBSAfcSjvs4LSiQrpIDz8CTh3ReBJkKS4EbXYNo%2BCkZfzlFyp3LssWWGZrq9YiCqZ9FCpTvCDp0LA5%2FcGbaNYOGFSmTmRP1M33cjIN7aPqq3eo9W0GRCg%3D%3D\"}]}",
+            "server": "cloudflare",
+            "speculation-rules": "\"/cdn-cgi/speculation\""
+          }
+        },
+        {
+          "at": "2026-10-26T10:59:51.910Z",
+          "url": "https://digitecme.com/ar/__phase4c_readonly_missing_20261026__?phase4c_readonly=1&tag=a&tag=b",
+          "method": "HEAD",
+          "status": 200,
+          "headers": {
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "cache-control": "no-cache, must-revalidate, max-age=0",
+            "cf-cache-status": "DYNAMIC",
+            "cf-ray": "a508f439dc9c7d2e-HKG",
+            "connection": "close",
+            "content-encoding": "br",
+            "content-type": "text/html; charset=utf-8",
+            "date": "Mon, 26 Oct 2026 10:59:52 GMT",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "referrer-policy": "strict-origin-when-cross-origin",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=D1h74FtTrqdsR%2BWNMFwniCGQEwi8C9cJDsT5PSWpLhvUmD27tB4cLm9vzR3kNT5IyeX3WlTriSlyd2WEN8UtmtujlbZA%2FZzltIaJQIdK8tvHkp9W1WSmuviOSK6RIOt8\"}]}",
+            "server": "cloudflare",
+            "speculation-rules": "\"/cdn-cgi/speculation\"",
+            "strict-transport-security": "max-age=31536000; includeSubDomains",
+            "x-content-type-options": "nosniff",
+            "x-deployment-id": "psr2.455fbd60-7be3-4d3f-b5a2-4af11984e472.1793617192.GqfY6VG0-Ly8QtAu3BkmgYKEFs9PpImlb1vf5tocAk4"
+          }
+        }
+      ],
+      "error": null,
+      "checks": {
+        "noError": true,
+        "finalStatus": true,
+        "finalUrl": true,
+        "queryPreserved": true,
+        "noRoutingLayer404ForDocument": true,
+        "homepageCanonical": true
+      },
+      "passed": true
+    },
+    {
+      "key": 28,
+      "path": "/ar/__phase4c_readonly_missing_20261026__",
+      "url": "http://www.digitecme.com/ar/__phase4c_readonly_missing_20261026__",
+      "method": "GET",
+      "query": "",
+      "expectedStatus": 200,
+      "chain": [
+        {
+          "at": "2026-10-26T10:59:51.895Z",
+          "url": "http://www.digitecme.com/ar/__phase4c_readonly_missing_20261026__",
+          "method": "GET",
+          "status": 301,
+          "headers": {
+            "cf-ray": "a508f43a6894d618-CDG",
+            "connection": "keep-alive",
+            "content-type": "text/html; charset=UTF-8",
+            "date": "Mon, 26 Oct 2026 10:59:52 GMT",
+            "location": "https://digitecme.com/ar/__phase4c_readonly_missing_20261026__",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=ikJMOvhJ8geB9vA4iMXF5l8ThNWsi%2FIdM1NJC69qg3yXmRhhTdXQykJgbZRKRZNmUq%2BKJtOeil%2B6BwZBm%2FmoR6iUl4zSQ%2BVot7bv7GtgnR3MJ0pWa1z4fPHjZrNfWaD3Kh8%2FaQ%3D%3D\"}]}",
+            "server": "cloudflare",
+            "speculation-rules": "\"/cdn-cgi/speculation\"",
+            "transfer-encoding": "chunked"
+          },
+          "bodySha256": "446a6087825fa73eadb045e5a2e9e2adf7df241b571228187728191d961dda1f",
+          "bytes": 167,
+          "bodyFile": "bodies/28-0.txt",
+          "title": "301 Moved Permanently",
+          "canonical": []
+        },
+        {
+          "at": "2026-10-26T10:59:52.128Z",
+          "url": "https://digitecme.com/ar/__phase4c_readonly_missing_20261026__",
+          "method": "GET",
+          "status": 200,
+          "headers": {
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "cache-control": "no-cache, must-revalidate, max-age=0",
+            "cf-cache-status": "DYNAMIC",
+            "cf-ray": "a508f43b2d40f540-HKG",
+            "connection": "keep-alive",
+            "content-encoding": "br",
+            "content-type": "text/html; charset=utf-8",
+            "date": "Mon, 26 Oct 2026 10:59:52 GMT",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "referrer-policy": "strict-origin-when-cross-origin",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=CdA9TCP5kDWsmxfufjV3hrIRhiTPDXIsHDD6W4O8nRfkvij5V8Su%2FtDOG0WFgmxOxqe%2BxtNpKyT9Yrxp2tdll%2BQei7pv6jE04ILc36RiAmRTpPditCBUW%2FOmw3C59Pl0\"}]}",
+            "server": "cloudflare",
+            "speculation-rules": "\"/cdn-cgi/speculation\"",
+            "strict-transport-security": "max-age=31536000; includeSubDomains",
+            "transfer-encoding": "chunked",
+            "vary": "accept-encoding",
+            "x-content-type-options": "nosniff",
+            "x-deployment-id": "psr2.455fbd60-7be3-4d3f-b5a2-4af11984e472.1793617192.GqfY6VG0-Ly8QtAu3BkmgYKEFs9PpImlb1vf5tocAk4"
+          },
+          "bodySha256": "adf7ba2dae42fb87a2805ae50770db509d7c3fcb65af3520c8e5854923c97be7",
+          "bytes": 163337,
+          "bodyFile": "bodies/28-1.txt",
+          "title": "Digi-Tec Performance Center | Independent Car Workshop Dubai",
+          "canonical": [
+            "https://digitecme.com/"
+          ]
+        }
+      ],
+      "error": null,
+      "checks": {
+        "noError": true,
+        "finalStatus": true,
+        "finalUrl": true,
+        "queryPreserved": true,
+        "noRoutingLayer404ForDocument": true,
+        "homepageCanonical": true
+      },
+      "passed": true
+    },
+    {
+      "key": 29,
+      "path": "/ar/__phase4c_readonly_missing_20261026__",
+      "url": "http://www.digitecme.com/ar/__phase4c_readonly_missing_20261026__?phase4c_readonly=1&tag=a&tag=b",
+      "method": "GET",
+      "query": "?phase4c_readonly=1&tag=a&tag=b",
+      "expectedStatus": 200,
+      "chain": [
+        {
+          "at": "2026-10-26T10:59:52.003Z",
+          "url": "http://www.digitecme.com/ar/__phase4c_readonly_missing_20261026__?phase4c_readonly=1&tag=a&tag=b",
+          "method": "GET",
+          "status": 301,
+          "headers": {
+            "cf-ray": "a508f43a6bb8d269-FRA",
+            "connection": "keep-alive",
+            "content-type": "text/html; charset=UTF-8",
+            "date": "Mon, 26 Oct 2026 10:59:52 GMT",
+            "location": "https://digitecme.com/ar/__phase4c_readonly_missing_20261026__?phase4c_readonly=1&tag=a&tag=b",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=TS2wLhq59Pey%2Bsg6yu6Kq1UCgDIb3WCvYOdNdn9WqDlk6RXAz4BxAMoj1%2BFP4EKiK1JoCdM9SK6r6Cr47kmJYPrsO6XD28177fUQgqqLURjjdmNtSLFidLfK09%2Bst9ryqyJhSA%3D%3D\"}]}",
+            "server": "cloudflare",
+            "speculation-rules": "\"/cdn-cgi/speculation\"",
+            "transfer-encoding": "chunked"
+          },
+          "bodySha256": "446a6087825fa73eadb045e5a2e9e2adf7df241b571228187728191d961dda1f",
+          "bytes": 167,
+          "bodyFile": "bodies/29-0.txt",
+          "title": "301 Moved Permanently",
+          "canonical": []
+        },
+        {
+          "at": "2026-10-26T10:59:52.129Z",
+          "url": "https://digitecme.com/ar/__phase4c_readonly_missing_20261026__?phase4c_readonly=1&tag=a&tag=b",
+          "method": "GET",
+          "status": 200,
+          "headers": {
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "cache-control": "no-cache, must-revalidate, max-age=0",
+            "cf-cache-status": "DYNAMIC",
+            "cf-ray": "a508f43c894c2109-HKG",
+            "connection": "keep-alive",
+            "content-encoding": "br",
+            "content-type": "text/html; charset=utf-8",
+            "date": "Mon, 26 Oct 2026 10:59:52 GMT",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "referrer-policy": "strict-origin-when-cross-origin",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=RCQvvjQt%2FpQ9n9UMMtJihLr%2BKl%2Fmd%2BdpY51sw11ZXthjKl0P%2FLg1pvKoCKqlF4FK5TPzNLOFVSCJUhQvxOLtAwh5wGliciaeVgF120yUIVsMSdCFBe9Wu2A%2BauY%2Bz%2FPJ\"}]}",
+            "server": "cloudflare",
+            "speculation-rules": "\"/cdn-cgi/speculation\"",
+            "strict-transport-security": "max-age=31536000; includeSubDomains",
+            "transfer-encoding": "chunked",
+            "vary": "accept-encoding",
+            "x-content-type-options": "nosniff",
+            "x-deployment-id": "psr2.455fbd60-7be3-4d3f-b5a2-4af11984e472.1793617192.GqfY6VG0-Ly8QtAu3BkmgYKEFs9PpImlb1vf5tocAk4"
+          },
+          "bodySha256": "e575fecc1babc4a97c6dcc84bc44ac11c17eda7247b6769c84195f9ec0db6ab6",
+          "bytes": 163337,
+          "bodyFile": "bodies/29-1.txt",
+          "title": "Digi-Tec Performance Center | Independent Car Workshop Dubai",
+          "canonical": [
+            "https://digitecme.com/"
+          ]
+        }
+      ],
+      "error": null,
+      "checks": {
+        "noError": true,
+        "finalStatus": true,
+        "finalUrl": true,
+        "queryPreserved": true,
+        "noRoutingLayer404ForDocument": true,
+        "homepageCanonical": true
+      },
+      "passed": true
+    },
+    {
+      "key": 30,
+      "path": "/ar/__phase4c_readonly_missing_20261026__",
+      "url": "http://www.digitecme.com/ar/__phase4c_readonly_missing_20261026__",
+      "method": "HEAD",
+      "query": "",
+      "expectedStatus": 200,
+      "chain": [
+        {
+          "at": "2026-10-26T10:59:52.132Z",
+          "url": "http://www.digitecme.com/ar/__phase4c_readonly_missing_20261026__",
+          "method": "HEAD",
+          "status": 301,
+          "headers": {
+            "cf-ray": "a508f43b3a77d618-CDG",
+            "connection": "close",
+            "content-type": "text/html; charset=UTF-8",
+            "date": "Mon, 26 Oct 2026 10:59:52 GMT",
+            "location": "https://digitecme.com/ar/__phase4c_readonly_missing_20261026__",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=ScJ%2FiGwcB2jBXrFOiTJHsyr%2B%2Fwc%2BDscXdpY5YEqJoq0owgmODYI3prWbvMKo8ElLvCw97SSJY%2FG9IlgTKLOeeeuApidiMoGClPn9ng9ILW4M%2FK0LzCETiU8FKrXeNx3y8HAcow%3D%3D\"}]}",
+            "server": "cloudflare",
+            "speculation-rules": "\"/cdn-cgi/speculation\""
+          }
+        },
+        {
+          "at": "2026-10-26T10:59:52.245Z",
+          "url": "https://digitecme.com/ar/__phase4c_readonly_missing_20261026__",
+          "method": "HEAD",
+          "status": 200,
+          "headers": {
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "cache-control": "no-cache, must-revalidate, max-age=0",
+            "cf-cache-status": "DYNAMIC",
+            "cf-ray": "a508f43d8e2a199c-AMS",
+            "connection": "close",
+            "content-encoding": "br",
+            "content-type": "text/html; charset=utf-8",
+            "date": "Mon, 26 Oct 2026 10:59:52 GMT",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "referrer-policy": "strict-origin-when-cross-origin",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=P3UR5XLllgElCt6uGrz77guvVaYn8V1a8bEIxpX5vCqGjiVCZhdWSYmjPQPIc%2BwVJTylBzG3DKS0DnfZNuQ3Em3LsueytvxJo9rYUKs94Qjc7LDgRQqb%2FbPEgBHwSdg5\"}]}",
+            "server": "cloudflare",
+            "speculation-rules": "\"/cdn-cgi/speculation\"",
+            "strict-transport-security": "max-age=31536000; includeSubDomains",
+            "x-content-type-options": "nosniff",
+            "x-deployment-id": "psr2.455fbd60-7be3-4d3f-b5a2-4af11984e472.1793617192.GqfY6VG0-Ly8QtAu3BkmgYKEFs9PpImlb1vf5tocAk4"
+          }
+        }
+      ],
+      "error": null,
+      "checks": {
+        "noError": true,
+        "finalStatus": true,
+        "finalUrl": true,
+        "queryPreserved": true,
+        "noRoutingLayer404ForDocument": true,
+        "homepageCanonical": true
+      },
+      "passed": true
+    },
+    {
+      "key": 31,
+      "path": "/ar/__phase4c_readonly_missing_20261026__",
+      "url": "http://www.digitecme.com/ar/__phase4c_readonly_missing_20261026__?phase4c_readonly=1&tag=a&tag=b",
+      "method": "HEAD",
+      "query": "?phase4c_readonly=1&tag=a&tag=b",
+      "expectedStatus": 200,
+      "chain": [
+        {
+          "at": "2026-10-26T10:59:52.309Z",
+          "url": "http://www.digitecme.com/ar/__phase4c_readonly_missing_20261026__?phase4c_readonly=1&tag=a&tag=b",
+          "method": "HEAD",
+          "status": 301,
+          "headers": {
+            "cf-ray": "a508f43cec1424d7-FRA",
+            "connection": "close",
+            "content-type": "text/html; charset=UTF-8",
+            "date": "Mon, 26 Oct 2026 10:59:52 GMT",
+            "location": "https://digitecme.com/ar/__phase4c_readonly_missing_20261026__?phase4c_readonly=1&tag=a&tag=b",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=6Mugck3w%2BhtAAM4GxmxGJcmUaGqK%2BhURtCOs9fJau0qOXsHUsoIkrNEooSF5FqXf7%2FMAOZlFTQloNFSumnFe9NTF77QqsVgX%2FY71P5drZwmDbW%2B%2FdKsiADnELOOTlTFYZct6Eg%3D%3D\"}]}",
+            "server": "cloudflare",
+            "speculation-rules": "\"/cdn-cgi/speculation\""
+          }
+        },
+        {
+          "at": "2026-10-26T10:59:52.555Z",
+          "url": "https://digitecme.com/ar/__phase4c_readonly_missing_20261026__?phase4c_readonly=1&tag=a&tag=b",
+          "method": "HEAD",
+          "status": 200,
+          "headers": {
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "cache-control": "no-cache, must-revalidate, max-age=0",
+            "cf-cache-status": "DYNAMIC",
+            "cf-ray": "a508f43f2dd6b351-FRA",
+            "connection": "close",
+            "content-encoding": "br",
+            "content-type": "text/html; charset=utf-8",
+            "date": "Mon, 26 Oct 2026 10:59:52 GMT",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "referrer-policy": "strict-origin-when-cross-origin",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=D1ZHO4eR0SSlXk0SY4HRCQsiC5G5kwJjJp047BwHAyrG77A6%2FVQ%2BfRvgcYen0K2omP2lGjSJXoS8HHbBYjaJ0ohbnqHbNfbgno%2F8YrnJ5rayGOD5aAzMI8e37G69cQPR\"}]}",
+            "server": "cloudflare",
+            "speculation-rules": "\"/cdn-cgi/speculation\"",
+            "strict-transport-security": "max-age=31536000; includeSubDomains",
+            "x-content-type-options": "nosniff",
+            "x-deployment-id": "psr2.455fbd60-7be3-4d3f-b5a2-4af11984e472.1793617192.GqfY6VG0-Ly8QtAu3BkmgYKEFs9PpImlb1vf5tocAk4"
+          }
+        }
+      ],
+      "error": null,
+      "checks": {
+        "noError": true,
+        "finalStatus": true,
+        "finalUrl": true,
+        "queryPreserved": true,
+        "noRoutingLayer404ForDocument": true,
+        "homepageCanonical": true
+      },
+      "passed": true
+    },
+    {
+      "key": 32,
+      "path": "/assets/__phase4c_readonly_missing_20261026__.js",
+      "url": "https://digitecme.com/assets/__phase4c_readonly_missing_20261026__.js",
+      "method": "GET",
+      "query": "",
+      "expectedStatus": 404,
+      "chain": [
+        {
+          "at": "2026-10-26T10:59:52.508Z",
+          "url": "https://digitecme.com/assets/__phase4c_readonly_missing_20261026__.js",
+          "method": "GET",
+          "status": 404,
+          "headers": {
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "cf-cache-status": "BYPASS",
+            "cf-ray": "a508f43ef88cd07d-CDG",
+            "connection": "keep-alive",
+            "content-length": "9",
+            "content-type": "text/plain; charset=UTF-8",
+            "date": "Mon, 26 Oct 2026 10:59:52 GMT",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "referrer-policy": "strict-origin-when-cross-origin",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=YJVF%2Bz0EnuZNwebEx9KeFOZ78mQSImgkr4Hx7bYqA0rS31F7DrX39hcnR0vNTXNgUMO8ZDJzhThSbrx0V4vjzy6yDUtuOHJk8OFhUE7jetyTuC02WGvFhKHaHtqULN6c\"}]}",
+            "server": "cloudflare",
+            "speculation-rules": "\"/cdn-cgi/speculation\"",
+            "strict-transport-security": "max-age=31536000; includeSubDomains",
+            "x-content-type-options": "nosniff"
+          },
+          "bodySha256": "e3ebaa16dd9d9b9fc107c42183fb6cf9d22927e1af03dbbdfa0ccc38e4e4ac31",
+          "bytes": 9,
+          "bodyFile": "bodies/32-0.txt"
+        }
+      ],
+      "error": null,
+      "checks": {
+        "noError": true,
+        "finalStatus": true,
+        "finalUrl": true,
+        "queryPreserved": true,
+        "noRoutingLayer404ForDocument": true,
+        "homepageCanonical": true
+      },
+      "passed": true
+    },
+    {
+      "key": 33,
+      "path": "/assets/__phase4c_readonly_missing_20261026__.js",
+      "url": "https://digitecme.com/assets/__phase4c_readonly_missing_20261026__.js?phase4c_readonly=1&tag=a&tag=b",
+      "method": "GET",
+      "query": "?phase4c_readonly=1&tag=a&tag=b",
+      "expectedStatus": 404,
+      "chain": [
+        {
+          "at": "2026-10-26T10:59:52.595Z",
+          "url": "https://digitecme.com/assets/__phase4c_readonly_missing_20261026__.js?phase4c_readonly=1&tag=a&tag=b",
+          "method": "GET",
+          "status": 404,
+          "headers": {
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "cf-cache-status": "BYPASS",
+            "cf-ray": "a508f43e0a732109-HKG",
+            "connection": "keep-alive",
+            "content-length": "9",
+            "content-type": "text/plain; charset=UTF-8",
+            "date": "Mon, 26 Oct 2026 10:59:52 GMT",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "referrer-policy": "strict-origin-when-cross-origin",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=tMGr7xGlQMlVt4E5cTr%2FkFTZrkw3f8XRzJtDdcIZoLRv1kpuvoCpBY8NvA2r5Ma%2BQ6osp%2B0oTBY7whvmZuJRA%2FgUhNEDZsbgTkiING5Wl5fGGbpQ2d6NwAvQDjEZae3s\"}]}",
+            "server": "cloudflare",
+            "speculation-rules": "\"/cdn-cgi/speculation\"",
+            "strict-transport-security": "max-age=31536000; includeSubDomains",
+            "x-content-type-options": "nosniff"
+          },
+          "bodySha256": "e3ebaa16dd9d9b9fc107c42183fb6cf9d22927e1af03dbbdfa0ccc38e4e4ac31",
+          "bytes": 9,
+          "bodyFile": "bodies/33-0.txt"
+        }
+      ],
+      "error": null,
+      "checks": {
+        "noError": true,
+        "finalStatus": true,
+        "finalUrl": true,
+        "queryPreserved": true,
+        "noRoutingLayer404ForDocument": true,
+        "homepageCanonical": true
+      },
+      "passed": true
+    },
+    {
+      "key": 34,
+      "path": "/assets/__phase4c_readonly_missing_20261026__.js",
+      "url": "https://digitecme.com/assets/__phase4c_readonly_missing_20261026__.js",
+      "method": "HEAD",
+      "query": "",
+      "expectedStatus": 404,
+      "chain": [
+        {
+          "at": "2026-10-26T10:59:52.776Z",
+          "url": "https://digitecme.com/assets/__phase4c_readonly_missing_20261026__.js",
+          "method": "HEAD",
+          "status": 404,
+          "headers": {
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "cache-control": "max-age=14400",
+            "cf-cache-status": "MISS",
+            "cf-ray": "a508f43f3b3f2a71-CDG",
+            "connection": "close",
+            "content-encoding": "gzip",
+            "content-type": "text/plain; charset=UTF-8",
+            "date": "Mon, 26 Oct 2026 10:59:52 GMT",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "referrer-policy": "strict-origin-when-cross-origin",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=YMVkIOvZb4SYlQ6hU2cK%2F1txFt451T%2BPud9pt263p7HjNDtSnxHLfo0Ud7u2VcYhVGzIATMTyIYQwfylYOw4Qe%2FlT0rZbWCq46SrqJGtVstpX%2FiE3jfxu1EfUcZ10Ow2\"}]}",
+            "server": "cloudflare",
+            "speculation-rules": "\"/cdn-cgi/speculation\"",
+            "strict-transport-security": "max-age=31536000; includeSubDomains",
+            "x-content-type-options": "nosniff"
+          }
+        }
+      ],
+      "error": null,
+      "checks": {
+        "noError": true,
+        "finalStatus": true,
+        "finalUrl": true,
+        "queryPreserved": true,
+        "noRoutingLayer404ForDocument": true,
+        "homepageCanonical": true
+      },
+      "passed": true
+    },
+    {
+      "key": 35,
+      "path": "/assets/__phase4c_readonly_missing_20261026__.js",
+      "url": "https://digitecme.com/assets/__phase4c_readonly_missing_20261026__.js?phase4c_readonly=1&tag=a&tag=b",
+      "method": "HEAD",
+      "query": "?phase4c_readonly=1&tag=a&tag=b",
+      "expectedStatus": 404,
+      "chain": [
+        {
+          "at": "2026-10-26T10:59:52.791Z",
+          "url": "https://digitecme.com/assets/__phase4c_readonly_missing_20261026__.js?phase4c_readonly=1&tag=a&tag=b",
+          "method": "HEAD",
+          "status": 404,
+          "headers": {
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "cf-cache-status": "BYPASS",
+            "cf-ray": "a508f4409aab4e6c-FRA",
+            "connection": "close",
+            "content-length": "9",
+            "content-type": "text/plain; charset=UTF-8",
+            "date": "Mon, 26 Oct 2026 10:59:53 GMT",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "referrer-policy": "strict-origin-when-cross-origin",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=FrfM9Q5rjYos3RaMWVR9pRj%2FBhWSCuRPJoiQIhsLgw7fti8%2BZlzAZx5rsApBctmOZqctM%2Big6N9o3%2B4RHhhLzXcjYUBXk5qiNOmfa%2F0V7TlXcv1TK%2FVoFzRV3oaTZXIT\"}]}",
+            "server": "cloudflare",
+            "speculation-rules": "\"/cdn-cgi/speculation\"",
+            "strict-transport-security": "max-age=31536000; includeSubDomains",
+            "x-content-type-options": "nosniff"
+          }
+        }
+      ],
+      "error": null,
+      "checks": {
+        "noError": true,
+        "finalStatus": true,
+        "finalUrl": true,
+        "queryPreserved": true,
+        "noRoutingLayer404ForDocument": true,
+        "homepageCanonical": true
+      },
+      "passed": true
+    },
+    {
+      "key": 36,
+      "path": "/assets/__phase4c_readonly_missing_20261026__.js",
+      "url": "http://digitecme.com/assets/__phase4c_readonly_missing_20261026__.js",
+      "method": "GET",
+      "query": "",
+      "expectedStatus": 404,
+      "chain": [
+        {
+          "at": "2026-10-26T10:59:52.914Z",
+          "url": "http://digitecme.com/assets/__phase4c_readonly_missing_20261026__.js",
+          "method": "GET",
+          "status": 301,
+          "headers": {
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "cf-ray": "a508f4401c1811cf-HKG",
+            "connection": "keep-alive",
+            "content-type": "text/html; charset=UTF-8",
+            "date": "Mon, 26 Oct 2026 10:59:52 GMT",
+            "location": "https://digitecme.com/assets/__phase4c_readonly_missing_20261026__.js",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=KmCtHGDdpVGIIFSuaGE9ZqpWi%2BVy9bQXmcIiB4M5GDJRG2B7ZV38KejASh7SwJOnxHFVZtx8hII7KeOc0FQbjqzT0sBOa67VMk8FQ2qmaSDEAGw%2BZ7U1BJbEKMCcoEVv\"}]}",
+            "server": "cloudflare",
+            "speculation-rules": "\"/cdn-cgi/speculation\"",
+            "transfer-encoding": "chunked"
+          },
+          "bodySha256": "446a6087825fa73eadb045e5a2e9e2adf7df241b571228187728191d961dda1f",
+          "bytes": 167,
+          "bodyFile": "bodies/36-0.txt",
+          "title": "301 Moved Permanently",
+          "canonical": []
+        },
+        {
+          "at": "2026-10-26T10:59:53.061Z",
+          "url": "https://digitecme.com/assets/__phase4c_readonly_missing_20261026__.js",
+          "method": "GET",
+          "status": 404,
+          "headers": {
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "cf-cache-status": "BYPASS",
+            "cf-ray": "a508f445fff1cd5b-LHR",
+            "connection": "keep-alive",
+            "content-length": "9",
+            "content-type": "text/plain; charset=UTF-8",
+            "date": "Mon, 26 Oct 2026 10:59:54 GMT",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "referrer-policy": "strict-origin-when-cross-origin",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=z0FD6%2FhyQedrpf4Kqr2kExGh8aL3gjd3cWwMgirqlN9UyL9LbcBkEBRbC5b4iqNjpwWxyNbsFn2VEhHxcoXH53QAUd%2B53LfuoYO%2By3lAal%2FjmK%2BJI04fWFmNqTfztcTR\"}]}",
+            "server": "cloudflare",
+            "speculation-rules": "\"/cdn-cgi/speculation\"",
+            "strict-transport-security": "max-age=31536000; includeSubDomains",
+            "x-content-type-options": "nosniff"
+          },
+          "bodySha256": "e3ebaa16dd9d9b9fc107c42183fb6cf9d22927e1af03dbbdfa0ccc38e4e4ac31",
+          "bytes": 9,
+          "bodyFile": "bodies/36-1.txt"
+        }
+      ],
+      "error": null,
+      "checks": {
+        "noError": true,
+        "finalStatus": true,
+        "finalUrl": true,
+        "queryPreserved": true,
+        "noRoutingLayer404ForDocument": true,
+        "homepageCanonical": true
+      },
+      "passed": true
+    },
+    {
+      "key": 37,
+      "path": "/assets/__phase4c_readonly_missing_20261026__.js",
+      "url": "http://digitecme.com/assets/__phase4c_readonly_missing_20261026__.js?phase4c_readonly=1&tag=a&tag=b",
+      "method": "GET",
+      "query": "?phase4c_readonly=1&tag=a&tag=b",
+      "expectedStatus": 404,
+      "chain": [
+        {
+          "at": "2026-10-26T10:59:52.934Z",
+          "url": "http://digitecme.com/assets/__phase4c_readonly_missing_20261026__.js?phase4c_readonly=1&tag=a&tag=b",
+          "method": "GET",
+          "status": 301,
+          "headers": {
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "cf-ray": "a508f4404d748dfb-FRA",
+            "connection": "keep-alive",
+            "content-type": "text/html; charset=UTF-8",
+            "date": "Mon, 26 Oct 2026 10:59:53 GMT",
+            "location": "https://digitecme.com/assets/__phase4c_readonly_missing_20261026__.js?phase4c_readonly=1&tag=a&tag=b",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=YkCywHN8ZWZ0GC1kSw5%2BG%2BcQBKn2akgdj%2BoITg%2FXQF4TF3uRhhcF5BfmzJiaHizec%2BWvMUlMZl%2Bp8jL7NkgtZxni8Z5EgNNom5jlFw9%2BGUSpQa5bxs7BuuTwDKz8XZ%2Bx\"}]}",
+            "server": "cloudflare",
+            "speculation-rules": "\"/cdn-cgi/speculation\"",
+            "transfer-encoding": "chunked"
+          },
+          "bodySha256": "446a6087825fa73eadb045e5a2e9e2adf7df241b571228187728191d961dda1f",
+          "bytes": 167,
+          "bodyFile": "bodies/37-0.txt",
+          "title": "301 Moved Permanently",
+          "canonical": []
+        },
+        {
+          "at": "2026-10-26T10:59:53.085Z",
+          "url": "https://digitecme.com/assets/__phase4c_readonly_missing_20261026__.js?phase4c_readonly=1&tag=a&tag=b",
+          "method": "GET",
+          "status": 404,
+          "headers": {
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "cf-cache-status": "BYPASS",
+            "cf-ray": "a508f4412cb22109-HKG",
+            "connection": "keep-alive",
+            "content-length": "9",
+            "content-type": "text/plain; charset=UTF-8",
+            "date": "Mon, 26 Oct 2026 10:59:53 GMT",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "referrer-policy": "strict-origin-when-cross-origin",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=b47DZr%2BY8iSeIbrBFT8ivlsz6oUboTIPn1zKFWl6fx7l6sBWV2AsBJ%2BeGbm8EMbtDwDSqgw0TJEtlKn76gKPJ%2FlDT3p3gATCvPGHEAT5jPH%2BJVCF1aVszBTE%2FMUo9yaS\"}]}",
+            "server": "cloudflare",
+            "speculation-rules": "\"/cdn-cgi/speculation\"",
+            "strict-transport-security": "max-age=31536000; includeSubDomains",
+            "x-content-type-options": "nosniff"
+          },
+          "bodySha256": "e3ebaa16dd9d9b9fc107c42183fb6cf9d22927e1af03dbbdfa0ccc38e4e4ac31",
+          "bytes": 9,
+          "bodyFile": "bodies/37-1.txt"
+        }
+      ],
+      "error": null,
+      "checks": {
+        "noError": true,
+        "finalStatus": true,
+        "finalUrl": true,
+        "queryPreserved": true,
+        "noRoutingLayer404ForDocument": true,
+        "homepageCanonical": true
+      },
+      "passed": true
+    },
+    {
+      "key": 38,
+      "path": "/assets/__phase4c_readonly_missing_20261026__.js",
+      "url": "http://digitecme.com/assets/__phase4c_readonly_missing_20261026__.js",
+      "method": "HEAD",
+      "query": "",
+      "expectedStatus": 404,
+      "chain": [
+        {
+          "at": "2026-10-26T10:59:53.014Z",
+          "url": "http://digitecme.com/assets/__phase4c_readonly_missing_20261026__.js",
+          "method": "HEAD",
+          "status": 301,
+          "headers": {
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "cf-ray": "a508f4414e5f8dfb-FRA",
+            "connection": "close",
+            "content-type": "text/html; charset=UTF-8",
+            "date": "Mon, 26 Oct 2026 10:59:53 GMT",
+            "location": "https://digitecme.com/assets/__phase4c_readonly_missing_20261026__.js",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=GhmnJ5TuAaUg7iR1h%2BXxKvpN2L3yVf6OctIlryeoB01%2BKaGN7%2Fj27IVX9%2F2nNgCHFBs05aOxKjrQj1uJvznt4vharYX2YQORBKyofyeG2zw48INmLvp1iJn2aXmEuU6t\"}]}",
+            "server": "cloudflare",
+            "speculation-rules": "\"/cdn-cgi/speculation\""
+          }
+        },
+        {
+          "at": "2026-10-26T10:59:53.233Z",
+          "url": "https://digitecme.com/assets/__phase4c_readonly_missing_20261026__.js",
+          "method": "HEAD",
+          "status": 404,
+          "headers": {
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "cf-cache-status": "BYPASS",
+            "cf-ray": "a508f443adcc5e4a-LHR",
+            "connection": "close",
+            "content-length": "9",
+            "content-type": "text/plain; charset=UTF-8",
+            "date": "Mon, 26 Oct 2026 10:59:53 GMT",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "referrer-policy": "strict-origin-when-cross-origin",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=TUXkt%2FJCAqtF6su3srJk8pUFbEwgRMgbfZRjD9P6Ks4TkKrW4MFR6ZQohSEfU0hvs2TqITvJYu4K0MXLcqPf1CK%2BZ7GgYumm%2BPjBD6T%2BLGbDWb5gmEfJSIjYZ8epGGdt\"}]}",
+            "server": "cloudflare",
+            "speculation-rules": "\"/cdn-cgi/speculation\"",
+            "strict-transport-security": "max-age=31536000; includeSubDomains",
+            "x-content-type-options": "nosniff"
+          }
+        }
+      ],
+      "error": null,
+      "checks": {
+        "noError": true,
+        "finalStatus": true,
+        "finalUrl": true,
+        "queryPreserved": true,
+        "noRoutingLayer404ForDocument": true,
+        "homepageCanonical": true
+      },
+      "passed": true
+    },
+    {
+      "key": 39,
+      "path": "/assets/__phase4c_readonly_missing_20261026__.js",
+      "url": "http://digitecme.com/assets/__phase4c_readonly_missing_20261026__.js?phase4c_readonly=1&tag=a&tag=b",
+      "method": "HEAD",
+      "query": "?phase4c_readonly=1&tag=a&tag=b",
+      "expectedStatus": 404,
+      "chain": [
+        {
+          "at": "2026-10-26T10:59:53.156Z",
+          "url": "http://digitecme.com/assets/__phase4c_readonly_missing_20261026__.js?phase4c_readonly=1&tag=a&tag=b",
+          "method": "HEAD",
+          "status": 301,
+          "headers": {
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "cf-ray": "a508f441992e11cf-HKG",
+            "connection": "close",
+            "content-type": "text/html; charset=UTF-8",
+            "date": "Mon, 26 Oct 2026 10:59:53 GMT",
+            "location": "https://digitecme.com/assets/__phase4c_readonly_missing_20261026__.js?phase4c_readonly=1&tag=a&tag=b",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=CfK5r%2BqUOVE61x46LSmrUGppsx02maRyGkOsSZ6pkpIrzItNzrq%2Fsy6Pr5kZwcAWmjmRiYadsStFoKq0Flr70NnYUkZrMs9aEwn%2FjB2S2oNBlCoKcbGHVvxIkvlIx%2Blq\"}]}",
+            "server": "cloudflare",
+            "speculation-rules": "\"/cdn-cgi/speculation\""
+          }
+        },
+        {
+          "at": "2026-10-26T10:59:53.339Z",
+          "url": "https://digitecme.com/assets/__phase4c_readonly_missing_20261026__.js?phase4c_readonly=1&tag=a&tag=b",
+          "method": "HEAD",
+          "status": 404,
+          "headers": {
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "cf-cache-status": "BYPASS",
+            "cf-ray": "a508f442bd842109-HKG",
+            "connection": "close",
+            "content-encoding": "gzip",
+            "content-type": "text/plain; charset=UTF-8",
+            "date": "Mon, 26 Oct 2026 10:59:53 GMT",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "referrer-policy": "strict-origin-when-cross-origin",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=8QZRFjEF3u%2BCo06Pwpo6kkzXJqjggyy88%2FH4gU7LfKeQyQdShYoPvbxkkCy2MoR9WoLzWSboKtzHKEEEjfOW7Czlurmr6aBJwSG%2B2Dljy12OHXNQMlENo0tYqP4HSqSo\"}]}",
+            "server": "cloudflare",
+            "speculation-rules": "\"/cdn-cgi/speculation\"",
+            "strict-transport-security": "max-age=31536000; includeSubDomains",
+            "x-content-type-options": "nosniff"
+          }
+        }
+      ],
+      "error": null,
+      "checks": {
+        "noError": true,
+        "finalStatus": true,
+        "finalUrl": true,
+        "queryPreserved": true,
+        "noRoutingLayer404ForDocument": true,
+        "homepageCanonical": true
+      },
+      "passed": true
+    },
+    {
+      "key": 40,
+      "path": "/assets/__phase4c_readonly_missing_20261026__.js",
+      "url": "https://www.digitecme.com/assets/__phase4c_readonly_missing_20261026__.js",
+      "method": "GET",
+      "query": "",
+      "expectedStatus": 404,
+      "chain": [
+        {
+          "at": "2026-10-26T10:59:53.299Z",
+          "url": "https://www.digitecme.com/assets/__phase4c_readonly_missing_20261026__.js",
+          "method": "GET",
+          "status": 301,
+          "headers": {
+            "cf-ray": "a508f44289486407-LHR",
+            "connection": "keep-alive",
+            "content-type": "text/html; charset=UTF-8",
+            "date": "Mon, 26 Oct 2026 10:59:53 GMT",
+            "location": "https://digitecme.com/assets/__phase4c_readonly_missing_20261026__.js",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=4U4Rab%2FSqdEo08j3M9%2FYo5njtPusyIoCVvDqPIHJ4FbinrMFIVXIAU7TQgqPILVf8RgExwgaJ4q43n%2BCD2cys7PEoGpKpCX6EqMlZPhPMBBg5MFY1Wj%2BXn%2FCPy93FHYRA0sUFQ%3D%3D\"}]}",
+            "server": "cloudflare",
+            "speculation-rules": "\"/cdn-cgi/speculation\"",
+            "transfer-encoding": "chunked"
+          },
+          "bodySha256": "446a6087825fa73eadb045e5a2e9e2adf7df241b571228187728191d961dda1f",
+          "bytes": 167,
+          "bodyFile": "bodies/40-0.txt",
+          "title": "301 Moved Permanently",
+          "canonical": []
+        },
+        {
+          "at": "2026-10-26T10:59:53.461Z",
+          "url": "https://digitecme.com/assets/__phase4c_readonly_missing_20261026__.js",
+          "method": "GET",
+          "status": 404,
+          "headers": {
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "cf-cache-status": "BYPASS",
+            "cf-ray": "a508f4438d8ad07d-CDG",
+            "connection": "keep-alive",
+            "content-length": "9",
+            "content-type": "text/plain; charset=UTF-8",
+            "date": "Mon, 26 Oct 2026 10:59:53 GMT",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "referrer-policy": "strict-origin-when-cross-origin",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=W8gCA67y7TL2sI2%2FGtQ%2FU7I9TcCfZehz%2B%2BZ%2F7VDIV7icFMDjq48j8LidkYtQQLk6KuHU6QJVsEznhgM7PtIUnqWrUqxdA2dEZDC9ZHuhB7O8IVo4PXZ%2FBrWywGbeYHKt\"}]}",
+            "server": "cloudflare",
+            "speculation-rules": "\"/cdn-cgi/speculation\"",
+            "strict-transport-security": "max-age=31536000; includeSubDomains",
+            "x-content-type-options": "nosniff"
+          },
+          "bodySha256": "e3ebaa16dd9d9b9fc107c42183fb6cf9d22927e1af03dbbdfa0ccc38e4e4ac31",
+          "bytes": 9,
+          "bodyFile": "bodies/40-1.txt"
+        }
+      ],
+      "error": null,
+      "checks": {
+        "noError": true,
+        "finalStatus": true,
+        "finalUrl": true,
+        "queryPreserved": true,
+        "noRoutingLayer404ForDocument": true,
+        "homepageCanonical": true
+      },
+      "passed": true
+    },
+    {
+      "key": 41,
+      "path": "/assets/__phase4c_readonly_missing_20261026__.js",
+      "url": "https://www.digitecme.com/assets/__phase4c_readonly_missing_20261026__.js?phase4c_readonly=1&tag=a&tag=b",
+      "method": "GET",
+      "query": "?phase4c_readonly=1&tag=a&tag=b",
+      "expectedStatus": 404,
+      "chain": [
+        {
+          "at": "2026-10-26T10:59:53.488Z",
+          "url": "https://www.digitecme.com/assets/__phase4c_readonly_missing_20261026__.js?phase4c_readonly=1&tag=a&tag=b",
+          "method": "GET",
+          "status": 301,
+          "headers": {
+            "cf-ray": "a508f443ca186407-LHR",
+            "connection": "keep-alive",
+            "content-type": "text/html; charset=UTF-8",
+            "date": "Mon, 26 Oct 2026 10:59:53 GMT",
+            "location": "https://digitecme.com/assets/__phase4c_readonly_missing_20261026__.js?phase4c_readonly=1&tag=a&tag=b",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=Vuq3gXeAKWje%2B%2By0MY1cEBzqi67%2Fr4wroHFILdpvjxwv0%2BVUdWrl%2FZM1Ybayb%2FaplqJz%2B0gAfq1TzQ4Wx%2B2yvNZxARQh9SSje5cPuk8939c%2BeR3L7TTJwzBF03HKTWznF7R64g%3D%3D\"}]}",
+            "server": "cloudflare",
+            "speculation-rules": "\"/cdn-cgi/speculation\"",
+            "transfer-encoding": "chunked"
+          },
+          "bodySha256": "446a6087825fa73eadb045e5a2e9e2adf7df241b571228187728191d961dda1f",
+          "bytes": 167,
+          "bodyFile": "bodies/41-0.txt",
+          "title": "301 Moved Permanently",
+          "canonical": []
+        },
+        {
+          "at": "2026-10-26T10:59:53.654Z",
+          "url": "https://digitecme.com/assets/__phase4c_readonly_missing_20261026__.js?phase4c_readonly=1&tag=a&tag=b",
+          "method": "GET",
+          "status": 404,
+          "headers": {
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "cf-cache-status": "BYPASS",
+            "cf-ray": "a508f4463e8a7d2e-HKG",
+            "connection": "keep-alive",
+            "content-length": "9",
+            "content-type": "text/plain; charset=UTF-8",
+            "date": "Mon, 26 Oct 2026 10:59:54 GMT",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "referrer-policy": "strict-origin-when-cross-origin",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=XR5m4g1hjEhhnOVPdXIJLgdDBi8G53nts4dXIs7yJ0nqKpe4KB7pA1cf2EMCaiRe%2BB0BWePvOC7O%2BSFaXs%2BoIE8INhmryhyPGe8%2FWxjF8fFa3e%2B2AckkAILuc%2F6uE92e\"}]}",
+            "server": "cloudflare",
+            "speculation-rules": "\"/cdn-cgi/speculation\"",
+            "strict-transport-security": "max-age=31536000; includeSubDomains",
+            "x-content-type-options": "nosniff"
+          },
+          "bodySha256": "e3ebaa16dd9d9b9fc107c42183fb6cf9d22927e1af03dbbdfa0ccc38e4e4ac31",
+          "bytes": 9,
+          "bodyFile": "bodies/41-1.txt"
+        }
+      ],
+      "error": null,
+      "checks": {
+        "noError": true,
+        "finalStatus": true,
+        "finalUrl": true,
+        "queryPreserved": true,
+        "noRoutingLayer404ForDocument": true,
+        "homepageCanonical": true
+      },
+      "passed": true
+    },
+    {
+      "key": 42,
+      "path": "/assets/__phase4c_readonly_missing_20261026__.js",
+      "url": "https://www.digitecme.com/assets/__phase4c_readonly_missing_20261026__.js",
+      "method": "HEAD",
+      "query": "",
+      "expectedStatus": 404,
+      "chain": [
+        {
+          "at": "2026-10-26T10:59:53.627Z",
+          "url": "https://www.digitecme.com/assets/__phase4c_readonly_missing_20261026__.js",
+          "method": "HEAD",
+          "status": 301,
+          "headers": {
+            "cf-ray": "a508f4460aacdc84-FRA",
+            "connection": "close",
+            "content-type": "text/html; charset=UTF-8",
+            "date": "Mon, 26 Oct 2026 10:59:53 GMT",
+            "location": "https://digitecme.com/assets/__phase4c_readonly_missing_20261026__.js",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=x4LWaI7yrlju27zE92u2c%2FakUNghisFyaBZTrwGQQaNP6pnVwLVgqaU3Te%2Fv8cn3UJeY4HUMJOVR6M9ieJnrm9R4YGuCok0aO689jpp5sJZMZLVc4r4EfLaVqulyIyaZQAaAMw%3D%3D\"}]}",
+            "server": "cloudflare",
+            "speculation-rules": "\"/cdn-cgi/speculation\""
+          }
+        },
+        {
+          "at": "2026-10-26T10:59:53.996Z",
+          "url": "https://digitecme.com/assets/__phase4c_readonly_missing_20261026__.js",
+          "method": "HEAD",
+          "status": 404,
+          "headers": {
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "cf-cache-status": "BYPASS",
+            "cf-ray": "a508f446df0ad07d-CDG",
+            "connection": "close",
+            "content-encoding": "gzip",
+            "content-type": "text/plain; charset=UTF-8",
+            "date": "Mon, 26 Oct 2026 10:59:54 GMT",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "referrer-policy": "strict-origin-when-cross-origin",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=vg1XvSfeNfssR5nI3vQlamo47H79dn782vWtEscvwBWZSOam6VzOCVX212f8WPCVLXnWHMuuXFGKjQi%2FOrt2s0v2SjYWtZ9YyV8uRY2dld%2BD0pCnuPOU2Q0CCjaujoeD\"}]}",
+            "server": "cloudflare",
+            "speculation-rules": "\"/cdn-cgi/speculation\"",
+            "strict-transport-security": "max-age=31536000; includeSubDomains",
+            "x-content-type-options": "nosniff"
+          }
+        }
+      ],
+      "error": null,
+      "checks": {
+        "noError": true,
+        "finalStatus": true,
+        "finalUrl": true,
+        "queryPreserved": true,
+        "noRoutingLayer404ForDocument": true,
+        "homepageCanonical": true
+      },
+      "passed": true
+    },
+    {
+      "key": 43,
+      "path": "/assets/__phase4c_readonly_missing_20261026__.js",
+      "url": "https://www.digitecme.com/assets/__phase4c_readonly_missing_20261026__.js?phase4c_readonly=1&tag=a&tag=b",
+      "method": "HEAD",
+      "query": "?phase4c_readonly=1&tag=a&tag=b",
+      "expectedStatus": 404,
+      "chain": [
+        {
+          "at": "2026-10-26T10:59:53.797Z",
+          "url": "https://www.digitecme.com/assets/__phase4c_readonly_missing_20261026__.js?phase4c_readonly=1&tag=a&tag=b",
+          "method": "HEAD",
+          "status": 301,
+          "headers": {
+            "cf-ray": "a508f445bb906407-LHR",
+            "connection": "close",
+            "content-type": "text/html; charset=UTF-8",
+            "date": "Mon, 26 Oct 2026 10:59:53 GMT",
+            "location": "https://digitecme.com/assets/__phase4c_readonly_missing_20261026__.js?phase4c_readonly=1&tag=a&tag=b",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=AsetQzXcHJWKkGxZtIilr0e%2BY%2BSPJON10Xtnt2jYZGGfkJoy1pFbckVR4BZS1tEJ7jl4plFPeYLTvvEu6czl9zWYT4dOymuaAnlcPbIkXNY3Yk3lxXYrGH2bLNZPErnmv5R9Fg%3D%3D\"}]}",
+            "server": "cloudflare",
+            "speculation-rules": "\"/cdn-cgi/speculation\""
+          }
+        },
+        {
+          "at": "2026-10-26T10:59:53.940Z",
+          "url": "https://digitecme.com/assets/__phase4c_readonly_missing_20261026__.js?phase4c_readonly=1&tag=a&tag=b",
+          "method": "HEAD",
+          "status": 404,
+          "headers": {
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "cf-cache-status": "BYPASS",
+            "cf-ray": "a508f447d899f2c0-FRA",
+            "connection": "close",
+            "content-encoding": "gzip",
+            "content-type": "text/plain; charset=UTF-8",
+            "date": "Mon, 26 Oct 2026 10:59:54 GMT",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "referrer-policy": "strict-origin-when-cross-origin",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=hrvYida3LWqGD1%2F7V2epog%2FtRVN0V%2BztIZb4OWdL5uSmic0w%2FGr4V%2BJTa2Y1aTNggHJ4%2Fw%2FhmdH3%2FC%2FWpwVmanYbREsTiO6vEl9Q4E3C3BnZOyEjG97ON%2BVae4%2BDAo1k\"}]}",
+            "server": "cloudflare",
+            "speculation-rules": "\"/cdn-cgi/speculation\"",
+            "strict-transport-security": "max-age=31536000; includeSubDomains",
+            "x-content-type-options": "nosniff"
+          }
+        }
+      ],
+      "error": null,
+      "checks": {
+        "noError": true,
+        "finalStatus": true,
+        "finalUrl": true,
+        "queryPreserved": true,
+        "noRoutingLayer404ForDocument": true,
+        "homepageCanonical": true
+      },
+      "passed": true
+    },
+    {
+      "key": 44,
+      "path": "/assets/__phase4c_readonly_missing_20261026__.js",
+      "url": "http://www.digitecme.com/assets/__phase4c_readonly_missing_20261026__.js",
+      "method": "GET",
+      "query": "",
+      "expectedStatus": 404,
+      "chain": [
+        {
+          "at": "2026-10-26T10:59:54.061Z",
+          "url": "http://www.digitecme.com/assets/__phase4c_readonly_missing_20261026__.js",
+          "method": "GET",
+          "status": 301,
+          "headers": {
+            "cf-ray": "a508f447df47657d-CDG",
+            "connection": "keep-alive",
+            "content-type": "text/html; charset=UTF-8",
+            "date": "Mon, 26 Oct 2026 10:59:54 GMT",
+            "location": "https://digitecme.com/assets/__phase4c_readonly_missing_20261026__.js",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=kBHoDDoanRZJuruSwPOKcW0x0HPNNhKIayUtiO2b3iFqXaHFLNlbb%2FbiAylOudnNEwBC778r1gF70yrhWLMG%2Fi7Gbf3OIsiKVN%2BmeZ59jWiyf9XYKIVlBCDwqUhX2Oou8h6ruw%3D%3D\"}]}",
+            "server": "cloudflare",
+            "speculation-rules": "\"/cdn-cgi/speculation\"",
+            "transfer-encoding": "chunked"
+          },
+          "bodySha256": "446a6087825fa73eadb045e5a2e9e2adf7df241b571228187728191d961dda1f",
+          "bytes": 167,
+          "bodyFile": "bodies/44-0.txt",
+          "title": "301 Moved Permanently",
+          "canonical": []
+        },
+        {
+          "at": "2026-10-26T10:59:54.294Z",
+          "url": "https://digitecme.com/assets/__phase4c_readonly_missing_20261026__.js",
+          "method": "GET",
+          "status": 404,
+          "headers": {
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "cf-cache-status": "BYPASS",
+            "cf-ray": "a508f448cfb47d2e-HKG",
+            "connection": "keep-alive",
+            "content-length": "9",
+            "content-type": "text/plain; charset=UTF-8",
+            "date": "Mon, 26 Oct 2026 10:59:54 GMT",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "referrer-policy": "strict-origin-when-cross-origin",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=moXtii2kyTrQ8ZrvmZpF9dKpKXX87i8THvpp24%2Bz%2FsrWYXu0mX8Tsx5Xmv%2BCdtFUWZbr6K8sW871MEpHLOEZKnzFqEYcrT05yHXwZZkhYqz2qBYxO11k%2BMzLn0Ji%2FpSX\"}]}",
+            "server": "cloudflare",
+            "speculation-rules": "\"/cdn-cgi/speculation\"",
+            "strict-transport-security": "max-age=31536000; includeSubDomains",
+            "x-content-type-options": "nosniff"
+          },
+          "bodySha256": "e3ebaa16dd9d9b9fc107c42183fb6cf9d22927e1af03dbbdfa0ccc38e4e4ac31",
+          "bytes": 9,
+          "bodyFile": "bodies/44-1.txt"
+        }
+      ],
+      "error": null,
+      "checks": {
+        "noError": true,
+        "finalStatus": true,
+        "finalUrl": true,
+        "queryPreserved": true,
+        "noRoutingLayer404ForDocument": true,
+        "homepageCanonical": true
+      },
+      "passed": true
+    },
+    {
+      "key": 45,
+      "path": "/assets/__phase4c_readonly_missing_20261026__.js",
+      "url": "http://www.digitecme.com/assets/__phase4c_readonly_missing_20261026__.js?phase4c_readonly=1&tag=a&tag=b",
+      "method": "GET",
+      "query": "?phase4c_readonly=1&tag=a&tag=b",
+      "expectedStatus": 404,
+      "chain": [
+        {
+          "at": "2026-10-26T10:59:54.100Z",
+          "url": "http://www.digitecme.com/assets/__phase4c_readonly_missing_20261026__.js?phase4c_readonly=1&tag=a&tag=b",
+          "method": "GET",
+          "status": 301,
+          "headers": {
+            "cf-ray": "a508f4478a32d269-FRA",
+            "connection": "keep-alive",
+            "content-type": "text/html; charset=UTF-8",
+            "date": "Mon, 26 Oct 2026 10:59:54 GMT",
+            "location": "https://digitecme.com/assets/__phase4c_readonly_missing_20261026__.js?phase4c_readonly=1&tag=a&tag=b",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=y8rKoit3hAUuBv3deG5uHLPkz1tH6Jlsbpyxp0NL4PJ0iTvP5ccQAoACMMsU16ZfXnd4w%2BLdXWyvNF46t3C39R9AbuMr25UZfhpUA5menIpWCBEPyUIcWTBSXWnToY00XMWChw%3D%3D\"}]}",
+            "server": "cloudflare",
+            "speculation-rules": "\"/cdn-cgi/speculation\"",
+            "transfer-encoding": "chunked"
+          },
+          "bodySha256": "446a6087825fa73eadb045e5a2e9e2adf7df241b571228187728191d961dda1f",
+          "bytes": 167,
+          "bodyFile": "bodies/45-0.txt",
+          "title": "301 Moved Permanently",
+          "canonical": []
+        },
+        {
+          "at": "2026-10-26T10:59:54.224Z",
+          "url": "https://digitecme.com/assets/__phase4c_readonly_missing_20261026__.js?phase4c_readonly=1&tag=a&tag=b",
+          "method": "GET",
+          "status": 404,
+          "headers": {
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "cf-cache-status": "BYPASS",
+            "cf-ray": "a508f44858d5cd5b-LHR",
+            "connection": "keep-alive",
+            "content-length": "9",
+            "content-type": "text/plain; charset=UTF-8",
+            "date": "Mon, 26 Oct 2026 10:59:54 GMT",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "referrer-policy": "strict-origin-when-cross-origin",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=6FXeCZn%2B4N6GXUxqwdpJaJwiq2SANoTlwN1tyMJ1GCHk%2FstkHlS0RQfWrYudS4%2BARYUbZWM6UKGymLYHSyXDT2sMTFBnI2nqSL1AnYpL447zS8YZtR0wW2MVh%2FW%2FBryC\"}]}",
+            "server": "cloudflare",
+            "speculation-rules": "\"/cdn-cgi/speculation\"",
+            "strict-transport-security": "max-age=31536000; includeSubDomains",
+            "x-content-type-options": "nosniff"
+          },
+          "bodySha256": "e3ebaa16dd9d9b9fc107c42183fb6cf9d22927e1af03dbbdfa0ccc38e4e4ac31",
+          "bytes": 9,
+          "bodyFile": "bodies/45-1.txt"
+        }
+      ],
+      "error": null,
+      "checks": {
+        "noError": true,
+        "finalStatus": true,
+        "finalUrl": true,
+        "queryPreserved": true,
+        "noRoutingLayer404ForDocument": true,
+        "homepageCanonical": true
+      },
+      "passed": true
+    },
+    {
+      "key": 46,
+      "path": "/assets/__phase4c_readonly_missing_20261026__.js",
+      "url": "http://www.digitecme.com/assets/__phase4c_readonly_missing_20261026__.js",
+      "method": "HEAD",
+      "query": "",
+      "expectedStatus": 404,
+      "chain": [
+        {
+          "at": "2026-10-26T10:59:54.146Z",
+          "url": "http://www.digitecme.com/assets/__phase4c_readonly_missing_20261026__.js",
+          "method": "HEAD",
+          "status": 301,
+          "headers": {
+            "cf-ray": "a508f4488e8c24d7-FRA",
+            "connection": "close",
+            "content-type": "text/html; charset=UTF-8",
+            "date": "Mon, 26 Oct 2026 10:59:54 GMT",
+            "location": "https://digitecme.com/assets/__phase4c_readonly_missing_20261026__.js",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=iG%2FQvwy24c4LcKEbFeTV4WgLmpq6sYhOVhSPRqQZZPdK1SG9RFJQ90dcwUMvoZmjGyXiq6FZwybUiBWkdGwlPxxNrjPsvloNbTVa%2BDlFideTVwxj%2B%2BPHjYfYkiO3Xzd0mhYkMg%3D%3D\"}]}",
+            "server": "cloudflare",
+            "speculation-rules": "\"/cdn-cgi/speculation\""
+          }
+        },
+        {
+          "at": "2026-10-26T10:59:54.409Z",
+          "url": "https://digitecme.com/assets/__phase4c_readonly_missing_20261026__.js",
+          "method": "HEAD",
+          "status": 404,
+          "headers": {
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "cf-cache-status": "BYPASS",
+            "cf-ray": "a508f44ae81dd372-FRA",
+            "connection": "close",
+            "content-length": "9",
+            "content-type": "text/plain; charset=UTF-8",
+            "date": "Mon, 26 Oct 2026 10:59:54 GMT",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "referrer-policy": "strict-origin-when-cross-origin",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=uMyKKq8WpjQw6Q2%2BCL2cLPlBy%2FSh2cycYgexSwL%2FgAe49PAwG1UNNIonNCgg4%2FZA17cwaaIfmk8Ica0QwRUtHn13v78b3Mo90ju4KCbBtM9jlNqosOutef%2FJhM2L6Qs2\"}]}",
+            "server": "cloudflare",
+            "speculation-rules": "\"/cdn-cgi/speculation\"",
+            "strict-transport-security": "max-age=31536000; includeSubDomains",
+            "x-content-type-options": "nosniff"
+          }
+        }
+      ],
+      "error": null,
+      "checks": {
+        "noError": true,
+        "finalStatus": true,
+        "finalUrl": true,
+        "queryPreserved": true,
+        "noRoutingLayer404ForDocument": true,
+        "homepageCanonical": true
+      },
+      "passed": true
+    },
+    {
+      "key": 47,
+      "path": "/assets/__phase4c_readonly_missing_20261026__.js",
+      "url": "http://www.digitecme.com/assets/__phase4c_readonly_missing_20261026__.js?phase4c_readonly=1&tag=a&tag=b",
+      "method": "HEAD",
+      "query": "?phase4c_readonly=1&tag=a&tag=b",
+      "expectedStatus": 404,
+      "chain": [
+        {
+          "at": "2026-10-26T10:59:54.338Z",
+          "url": "http://www.digitecme.com/assets/__phase4c_readonly_missing_20261026__.js?phase4c_readonly=1&tag=a&tag=b",
+          "method": "HEAD",
+          "status": 301,
+          "headers": {
+            "cf-ray": "a508f448f9a3657d-CDG",
+            "connection": "close",
+            "content-type": "text/html; charset=UTF-8",
+            "date": "Mon, 26 Oct 2026 10:59:54 GMT",
+            "location": "https://digitecme.com/assets/__phase4c_readonly_missing_20261026__.js?phase4c_readonly=1&tag=a&tag=b",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=ZBvvh2%2BKwJ0yKU4YF88P8Az5TaMCbwCpCNuDgxN0%2F%2F9LySqqAkqtTvBEPQnKA8%2BavGaqXLWJiTcYdAG5XF%2BDrw1%2FdUDp0%2F91CX4Z9tbQ3SZ1%2BmxnNJMZhf2yxSXyMbWpQ5p8GQ%3D%3D\"}]}",
+            "server": "cloudflare",
+            "speculation-rules": "\"/cdn-cgi/speculation\""
+          }
+        },
+        {
+          "at": "2026-10-26T10:59:54.460Z",
+          "url": "https://digitecme.com/assets/__phase4c_readonly_missing_20261026__.js?phase4c_readonly=1&tag=a&tag=b",
+          "method": "HEAD",
+          "status": 404,
+          "headers": {
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "cf-cache-status": "BYPASS",
+            "cf-ray": "a508f44b6f36dc64-FRA",
+            "connection": "close",
+            "content-encoding": "gzip",
+            "content-type": "text/plain; charset=UTF-8",
+            "date": "Mon, 26 Oct 2026 10:59:54 GMT",
+            "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+            "referrer-policy": "strict-origin-when-cross-origin",
+            "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=qsisNAYaQItY%2BZGE3GcBlDX3AQJZrDaqdCsC7Op2wvMFQ20PqxFhykh3LraDBbM%2Fc1FusdajVVwPWfAwna7IAUzm8rw8HmBiQXodRyoHdRAp42Ineieu4NHePrGy%2BQ5g\"}]}",
+            "server": "cloudflare",
+            "speculation-rules": "\"/cdn-cgi/speculation\"",
+            "strict-transport-security": "max-age=31536000; includeSubDomains",
+            "x-content-type-options": "nosniff"
+          }
+        }
+      ],
+      "error": null,
+      "checks": {
+        "noError": true,
+        "finalStatus": true,
+        "finalUrl": true,
+        "queryPreserved": true,
+        "noRoutingLayer404ForDocument": true,
+        "homepageCanonical": true
+      },
+      "passed": true
+    }
+  ],
+  "summary": {
+    "caseCount": 48,
+    "requestCount": 84,
+    "passed": 48,
+    "failed": 0,
+    "cfEdges": [
+      "HKG",
+      "CDG",
+      "FRA",
+      "LHR",
+      "AMS"
+    ]
+  },
+  "interpretation": "English and Arabic unknown document paths return HTTP200 homepage; missing asset returns404. This preserves observed existing behavior and does not authorize correcting unknown URLs or activating generated _worker.js/_redirects. Observed edge subset does not prove global consistency."
+}

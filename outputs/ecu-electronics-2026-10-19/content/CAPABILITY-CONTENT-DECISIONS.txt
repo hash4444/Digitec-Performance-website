@@ -1,0 +1,98 @@
+DIGI-TEC — ECU / AUTOMOTIVE ELECTRONICS CAPABILITY AND CONTENT AUDIT
+19 October 2026, Asia/Dubai. Local review. No production, GBP or analytics-account writes.
+
+Decision
+
+Improve explanations and exact-function enquiries on eight existing owners. Preserve the diagnostics/AC content, metadata and FAQ/schema arrays. No new route or locale. There is no current workshop equipment inventory, access record, technician sign-off or completed-job evidence in this sprint establishing unrestricted programming, coding or hardware repair.
+
+Evidence levels
+
+Current user-confirmed business identity: DIGI-TEC Performance Center L.L.C., Dubai, UAE, supplied in this brief.
+
+Historical owner-reported tooling: B1 repository reports attribute XENTRY to the B1 user brief; B2 reports attribute PIWIS 3 to the B2 business brief; B3 reports attribute ISTA+ to the B3 user brief; B8 reports attribute ODIS to the B8 brief. These are historical project records, not independent tool/access inspection. Preserve existing qualified statements; do not expand their function list.
+
+Existing website/source claims: supported diagnostics, coding/programming, software updates, service resets and conditional adaptations. A website statement is not proof of current equipment, active entitlements or demonstrated support for a specified module.
+
+Unverified services: ECU circuit-board/bench repair, cloning, SAM hardware repair, unrestricted replacement-unit configuration, individual TCM programming, security/immobilizer work and high-voltage/hybrid module work. No new public service promise or schema for these functions.
+
+The capability register covers all 10 requested domains. Independently verified current workshop capability domains: zero. Historical owner-reported diagnostic-tool availability is separately recorded. Manufacturer documentation explains concepts/prerequisites; it does not verify DIGI-TEC.
+
+Implemented data scope
+
+src/data/ecuElectronicsContent.ts adds an exact existing-owner map and 14 locale-specific content versions:
+1. /services/car-diagnostics-dubai — generic diagnostics and supported ECU/module-function assessment.
+2. /services/mercedes-diagnostics-dubai — Mercedes diagnostics and supported module-function enquiry; no SCN/SAM/TCM/security operation added.
+3. /brands/bmw-service-dubai/engine-diagnostics — BMW diagnostic/coding enquiry; no feature-unlock/retrofit or all-model promise.
+4. /services/auto-electrical-repair-dubai — supply, wiring and supported communication fault investigation.
+5. /services/mercedes-electrical-repair-dubai — Mercedes electrical/communication concerns.
+6. /brands/bmw-service-dubai/electrical-repair — BMW electrical/communication concerns.
+7. /services/cadillac-cue-screen-repair-dubai — screen/head-unit distinction and conditional replacement setup, EN only.
+8. /services/head-unit-repair-dubai — fitted infotainment system/parts/setup review, EN only.
+
+Owners 1–6 retain their existing /ar counterparts. Infotainment has no Arabic route in this architecture; the module returns undefined for Arabic infotainment and removes links to these EN-only destinations from Arabic variants. Existing /tuning and /ar/tuning handle performance-remapping enquiries.
+
+Technical wording boundaries
+
+Diagnostics investigates a reported fault with available data and relevant physical tests. A code or a noncommunicating module alone does not establish a failed ECU.
+Coding configures supported settings for the vehicle/equipment. Programming writes compatible control-unit software. Reading data does not establish coding/programming availability.
+Some component replacements require setup, coding, programming, validation or learned-value procedures. Not every replacement needs every procedure; the exact repair information and unit determine the work.
+An adaptation/calibration is a separate setup/learned-value procedure in some cases. No new ADAS, ride-height or other specific calibration capability is asserted.
+Model/year, module identification, software level, fitted equipment, hardware and permitted platform access affect support. Similar connectors or a used part's appearance do not establish suitability. Customers should discuss compatibility before buying.
+A software update is not a universal electrical repair. Supply, wiring, communication and symptom findings determine the next step.
+Performance remapping changes performance calibration; keep that task on /tuning. A tuning package does not prove OEM module-programming, hardware-repair or security capability.
+
+New crawlable questions
+
+Software owners: how diagnostics/coding/programming differ; whether replacement requires programming; why scan access does not prove programming support.
+Electrical owners: communication loss does not prove module failure; electrical repair and subsequent software work are separate; useful history after module/battery replacement.
+Infotainment owners: touch/display/sound/head-unit separation; not every replacement needs programming; information to review before replacement purchase.
+These are new visible assessment questions. They do not alter existing FAQ arrays or create a new duplicate FAQ schema node.
+
+Quotation and conversion
+
+Intake: make/model/year; symptoms and timing; warning text; relevant report if available; recent replacement, unit identity and new/used status if known; requested function if known; preferred appointment time.
+Do not require a report or known part number to enquire. Ask for unnecessary personal details to be removed from reports. Do not request passwords, login codes, software credentials, security access data or immobilizer secrets. No VIN is required in the initial public draft.
+Confirm initial assessment scope/cost, then explain findings, further tests, supported functions, parts/labour and verification before approval. Do not promise price, turnaround or success.
+The WhatsApp CTA opens a draft to the established number. Customers review and send it. Opening a draft is not a received enquiry or confirmed appointment; staff confirm receipt and availability.
+Analytics should contain sanitized route, locale, service/category and CTA placement only. Exclude customer/vehicle identifiers, message/report/warning text, contact data and WhatsApp queries. Existing contact-click/draft events remain interaction signals. Real received qualified enquiries, quotes, appointments and jobs need separate staff/CRM confirmation and deduplication. No account-wide tracking claim is made from local source tests.
+
+GEO / schema / business facts
+
+Preserve stable Organization https://digitecme.com/#organization, business https://digitecme.com/#business and WebSite https://digitecme.com/#website, with page-scoped WebPage/Service/Breadcrumb references. No AI-specific schema, rating, specialist certification, manufacturer authorization, new equipment claim or Offer is justified.
+index.html legalName matches the user brief. Footer/index.html agree on +971 4 340 2223, info@digitecme.com and Warehouses 11–15, Al Quoz Industrial Area 3, Dubai, UAE. This is source-level consistency, not a fresh entrance-pin, hours or reception verification. Do not invent opening hours, coordinates or broader coverage.
+Visible paired EN/AR explanations should remain in rendered HTML with canonical existing assessment links. They do not guarantee AI citations, search display, rankings or enquiries.
+
+Primary technical sources checked 19 October 2026
+
+Mercedes-Benz XENTRY Diagnosis Lite FAQ:
+https://b2bconnect.mercedes-benz.com/de/help/faq/software/xentry-diagnosis-lite
+Supports diagnosis versus startup/programming/coding separation and appropriate entitlement. This regional product has geographic eligibility limits. No claim is made that DIGI-TEC uses this exact Lite product or has EU entitlement. No listed security function was reused publicly.
+
+Mercedes-Benz manufacturer-issued XENTRY Diagnosis Lite manual:
+https://b2bcfrontdoor.azurefd.net/prod/media/ca4guylk/xentry_diagnosis_lite_manual_enu.pdf
+Supports function separation and separate startup/Flash permissions, not DIGI-TEC's present permissions.
+
+BMW Group technical-information user guide:
+https://bmwtechinfo.bmwgroup.com/assets/system_requirements.pdf
+Supports diagnosis/programming application separation, generation-dependent applications, replacement validation in some cases and infrastructure prerequisites. The North American guide directs other regions to BMW AOS; it does not prove UAE access or all-model support.
+
+BMW Group AOS technical requirements:
+https://aos-i.bmwgroup.com/technical-requirements
+Confirms diagnosis/programming prerequisites. No interface model, power-supply specification or current entitlement is inferred for DIGI-TEC.
+
+Repository provenance
+
+src/data/services.ts: generic diagnostics at lines 711–744 and electrical owner at 758 onwards.
+src/data/brands.ts: qualified XENTRY, BMW coding-review and Volkswagen ODIS wording.
+src/data/brandServices.ts: brand-specific diagnostic/electrical owners and wider legacy additional-brand templates. Existing legacy high-voltage wording is not accepted as verification and is outside this scoped expansion.
+src/data/diagnosticsAcGeneralContent.ts; src/data/diagnosticsAcBrandContent.ts: completed diagnostic limits and no assumed hybrid/HV repair.
+outputs/b1/technical-sources.md; b1-mercedes-final-qa-report.md: historical B1 XENTRY attribution.
+b2-porsche-final-report.md: historical B2 PIWIS 3 attribution.
+b3-bmw-technical-sources.md; b3-bmw-final-report.md: historical B3 ISTA+ attribution.
+b8-volkswagen-technical-sources.md: historical B8 ODIS attribution.
+src/data/electronicsServices.ts: separate screen/head-unit/audio services; source comment attributes availability to owner on 16 September 2026. That does not establish engine-ECU bench repair or cloning.
+src/lib/contact-attribution.ts: query-free route attribution and allowlisted source/medium handling.
+
+Evidence required before expanding
+
+Workshop-approved make/model/year/module/function matrix; current licensed platform and entitlement evidence reviewed privately; new/used replacement-unit policy; accepted update/setup/learned-value procedures; actual bench scope/quality checks if offered; personnel competency/equipment/process evidence for any hybrid/HV work. Security/cloning expansion requires a separate properly verified and authorized review. Credentials and secrets must never be placed in public evidence files.

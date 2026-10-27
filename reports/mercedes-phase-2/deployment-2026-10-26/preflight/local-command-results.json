@@ -1,0 +1,49 @@
+{
+  "capturedAt": "2026-10-26T07:06:54.006Z",
+  "results": [
+    {
+      "status": "fulfilled",
+      "value": {
+        "name": "proposal-contract",
+        "chunk_id": "cc8b3a",
+        "wall_time_seconds": 1.5541067,
+        "exit_code": 0,
+        "original_token_count": 147,
+        "output": "{\n  \"at\": \"2026-10-26T07:06:46.648Z\",\n  \"passed\": 738,\n  \"failed\": 0,\n  \"proposalSha256\": \"336a3e207ab451d22f95efad88e334a3d5f8bb9958e495a8e9bcbe3f3d4956b9\",\n  \"historicalProtectedEnglishOilDefinitionSha256\": \"6b1385fff9d44c206a36cd0e9c38912e9c1b74030f3a534db6bb5efdfa5157c5\",\n  \"limits\": [\n    \"Models the literal expression sets and query passthrough; not the Cloudflare engine, URL normalization or current account state.\",\n    \"GET/HEAD public matrix tests deployed behavior only after a separately approved activation.\",\n    \"No Cloudflare or deployment mutation performed.\"\n  ]\n}\n"
+      }
+    },
+    {
+      "status": "fulfilled",
+      "value": {
+        "name": "synthetic-conflict-checker",
+        "chunk_id": "27bca3",
+        "wall_time_seconds": 1.9585439999999998,
+        "exit_code": 0,
+        "original_token_count": 27,
+        "output": "5/5 synthetic checker tests passed, including four negative cases; no production after-state is claimed.\n"
+      }
+    },
+    {
+      "status": "fulfilled",
+      "value": {
+        "name": "hub-patch-check",
+        "chunk_id": "c7d5b3",
+        "wall_time_seconds": 0.400641,
+        "exit_code": 0,
+        "original_token_count": 0,
+        "output": ""
+      }
+    },
+    {
+      "status": "fulfilled",
+      "value": {
+        "name": "package-validation",
+        "chunk_id": "774ab2",
+        "wall_time_seconds": 0.4718913,
+        "exit_code": 0,
+        "original_token_count": 263,
+        "output": "{\r\n  \"passed\": true,\r\n  \"required_artifacts\": [\r\n    \"README.md\",\r\n    \"cloudflare-review.md\",\r\n    \"verification-and-rollback.md\",\r\n    \"routing/README.md\",\r\n    \"routing/redirect-proposals.json\",\r\n    \"routing/http-summary.json\",\r\n    \"routing/local-test-results.json\",\r\n    \"routing/conflict-check.json\",\r\n    \"hub/README.md\",\r\n    \"hub/mercedes-hub-minimal.patch\",\r\n    \"hub/validation.json\",\r\n    \"search-console/README.md\",\r\n    \"search-console/api-readonly-request-templates.json\",\r\n    \"search-console/indexed-inspection-observations.json\"\r\n  ],\r\n  \"markdown_files_checked\": 8,\r\n  \"local_markdown_links_resolve\": true,\r\n  \"protected_source_files_checked\": 283,\r\n  \"protected_source_drift\": [],\r\n  \"rule_payloads_disabled\": 4,\r\n  \"fresh_http_summary\": {\r\n    \"cases\": 326,\r\n    \"networkRequests\": 564,\r\n    \"assertions\": 733,\r\n    \"passed\": 733,\r\n    \"failed\": 0,\r\n    \"sourceCases\": 192,\r\n    \"protectedOilCases\": 48\r\n  },\r\n  \"capture_matches_proposal_hash\": true,\r\n  \"indexed_inspections_saved\": 11,\r\n  \"no_live_after_state_claimed\": true\r\n}\r\n"
+      }
+    }
+  ]
+}

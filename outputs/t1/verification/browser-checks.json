@@ -1,0 +1,37 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "viewport": "390x844",
+      "documentWidth": 382,
+      "masterPackages": 67,
+      "vehicle": "Lamborghini Urus",
+      "stage": "Stage 3",
+      "hp": 870,
+      "gain": 220,
+      "price": "€26,842 total",
+      "time": "7–14 days"
+    },
+    {
+      "mode": "script-src none",
+      "nativeExpandedModel": "G63 AMG",
+      "packageRows": 5,
+      "documentWidth": 382,
+      "viewportWidth": 390
+    },
+    {
+      "viewport": "1280x900",
+      "model": "/tuning/mercedes-amg-g63",
+      "packageRows": 5,
+      "documentWidth": 1272,
+      "arabicAlternate": false
+    },
+    {
+      "viewport": "1280x900",
+      "page": "/ar/tuning",
+      "packageRows": 67,
+      "documentWidth": 1272,
+      "firstStageWork": "فلتر هواء; تحسين برمجيات المحرك; تعطيل محدد السرعة القصوى V-Max"
+    }
+  ]
+}

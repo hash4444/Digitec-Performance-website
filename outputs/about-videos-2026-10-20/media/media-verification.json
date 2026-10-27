@@ -1,0 +1,358 @@
+{
+  "passed": true,
+  "assertionCount": 88,
+  "assertions": [
+    {
+      "passed": true,
+      "description": "1: original bytes remain unchanged"
+    },
+    {
+      "passed": true,
+      "description": "1: encoded bytes match manifest"
+    },
+    {
+      "passed": true,
+      "description": "1: fast-start moov atom precedes media data"
+    },
+    {
+      "passed": true,
+      "description": "1: browser-compatible H.264/AAC container tracks"
+    },
+    {
+      "passed": true,
+      "description": "1: 720x1280 aspect preserved"
+    },
+    {
+      "passed": true,
+      "description": "1: video duration within one output frame of original, no editorial trim"
+    },
+    {
+      "passed": true,
+      "description": "1: audio duration within AAC frame rounding of original"
+    },
+    {
+      "passed": true,
+      "description": "1: complete output audio/video decode has no warnings"
+    },
+    {
+      "passed": true,
+      "description": "1: standard 8-bit 4:2:0 pixel format"
+    },
+    {
+      "passed": true,
+      "description": "1: poster bytes match manifest"
+    },
+    {
+      "passed": true,
+      "description": "1: portrait poster valid and appropriately sized"
+    },
+    {
+      "passed": true,
+      "description": "2: original bytes remain unchanged"
+    },
+    {
+      "passed": true,
+      "description": "2: encoded bytes match manifest"
+    },
+    {
+      "passed": true,
+      "description": "2: fast-start moov atom precedes media data"
+    },
+    {
+      "passed": true,
+      "description": "2: browser-compatible H.264/AAC container tracks"
+    },
+    {
+      "passed": true,
+      "description": "2: 720x1280 aspect preserved"
+    },
+    {
+      "passed": true,
+      "description": "2: video duration within one output frame of original, no editorial trim"
+    },
+    {
+      "passed": true,
+      "description": "2: audio duration within AAC frame rounding of original"
+    },
+    {
+      "passed": true,
+      "description": "2: complete output audio/video decode has no warnings"
+    },
+    {
+      "passed": true,
+      "description": "2: standard 8-bit 4:2:0 pixel format"
+    },
+    {
+      "passed": true,
+      "description": "2: poster bytes match manifest"
+    },
+    {
+      "passed": true,
+      "description": "2: portrait poster valid and appropriately sized"
+    },
+    {
+      "passed": true,
+      "description": "3: original bytes remain unchanged"
+    },
+    {
+      "passed": true,
+      "description": "3: encoded bytes match manifest"
+    },
+    {
+      "passed": true,
+      "description": "3: fast-start moov atom precedes media data"
+    },
+    {
+      "passed": true,
+      "description": "3: browser-compatible H.264/AAC container tracks"
+    },
+    {
+      "passed": true,
+      "description": "3: 720x1280 aspect preserved"
+    },
+    {
+      "passed": true,
+      "description": "3: video duration within one output frame of original, no editorial trim"
+    },
+    {
+      "passed": true,
+      "description": "3: audio duration within AAC frame rounding of original"
+    },
+    {
+      "passed": true,
+      "description": "3: complete output audio/video decode has no warnings"
+    },
+    {
+      "passed": true,
+      "description": "3: standard 8-bit 4:2:0 pixel format"
+    },
+    {
+      "passed": true,
+      "description": "3: poster bytes match manifest"
+    },
+    {
+      "passed": true,
+      "description": "3: portrait poster valid and appropriately sized"
+    },
+    {
+      "passed": true,
+      "description": "4: original bytes remain unchanged"
+    },
+    {
+      "passed": true,
+      "description": "4: encoded bytes match manifest"
+    },
+    {
+      "passed": true,
+      "description": "4: fast-start moov atom precedes media data"
+    },
+    {
+      "passed": true,
+      "description": "4: browser-compatible H.264/AAC container tracks"
+    },
+    {
+      "passed": true,
+      "description": "4: 720x1280 aspect preserved"
+    },
+    {
+      "passed": true,
+      "description": "4: video duration within one output frame of original, no editorial trim"
+    },
+    {
+      "passed": true,
+      "description": "4: audio duration within AAC frame rounding of original"
+    },
+    {
+      "passed": true,
+      "description": "4: complete output audio/video decode has no warnings"
+    },
+    {
+      "passed": true,
+      "description": "4: standard 8-bit 4:2:0 pixel format"
+    },
+    {
+      "passed": true,
+      "description": "4: poster bytes match manifest"
+    },
+    {
+      "passed": true,
+      "description": "4: portrait poster valid and appropriately sized"
+    },
+    {
+      "passed": true,
+      "description": "5: original bytes remain unchanged"
+    },
+    {
+      "passed": true,
+      "description": "5: encoded bytes match manifest"
+    },
+    {
+      "passed": true,
+      "description": "5: fast-start moov atom precedes media data"
+    },
+    {
+      "passed": true,
+      "description": "5: browser-compatible H.264/AAC container tracks"
+    },
+    {
+      "passed": true,
+      "description": "5: 720x1280 aspect preserved"
+    },
+    {
+      "passed": true,
+      "description": "5: video duration within one output frame of original, no editorial trim"
+    },
+    {
+      "passed": true,
+      "description": "5: audio duration within AAC frame rounding of original"
+    },
+    {
+      "passed": true,
+      "description": "5: complete output audio/video decode has no warnings"
+    },
+    {
+      "passed": true,
+      "description": "5: standard 8-bit 4:2:0 pixel format"
+    },
+    {
+      "passed": true,
+      "description": "5: poster bytes match manifest"
+    },
+    {
+      "passed": true,
+      "description": "5: portrait poster valid and appropriately sized"
+    },
+    {
+      "passed": true,
+      "description": "6: original bytes remain unchanged"
+    },
+    {
+      "passed": true,
+      "description": "6: encoded bytes match manifest"
+    },
+    {
+      "passed": true,
+      "description": "6: fast-start moov atom precedes media data"
+    },
+    {
+      "passed": true,
+      "description": "6: browser-compatible H.264/AAC container tracks"
+    },
+    {
+      "passed": true,
+      "description": "6: 720x1280 aspect preserved"
+    },
+    {
+      "passed": true,
+      "description": "6: video duration within one output frame of original, no editorial trim"
+    },
+    {
+      "passed": true,
+      "description": "6: audio duration within AAC frame rounding of original"
+    },
+    {
+      "passed": true,
+      "description": "6: complete output audio/video decode has no warnings"
+    },
+    {
+      "passed": true,
+      "description": "6: standard 8-bit 4:2:0 pixel format"
+    },
+    {
+      "passed": true,
+      "description": "6: poster bytes match manifest"
+    },
+    {
+      "passed": true,
+      "description": "6: portrait poster valid and appropriately sized"
+    },
+    {
+      "passed": true,
+      "description": "7: original bytes remain unchanged"
+    },
+    {
+      "passed": true,
+      "description": "7: encoded bytes match manifest"
+    },
+    {
+      "passed": true,
+      "description": "7: fast-start moov atom precedes media data"
+    },
+    {
+      "passed": true,
+      "description": "7: browser-compatible H.264/AAC container tracks"
+    },
+    {
+      "passed": true,
+      "description": "7: 720x1280 aspect preserved"
+    },
+    {
+      "passed": true,
+      "description": "7: video duration within one output frame of original, no editorial trim"
+    },
+    {
+      "passed": true,
+      "description": "7: audio duration within AAC frame rounding of original"
+    },
+    {
+      "passed": true,
+      "description": "7: complete output audio/video decode has no warnings"
+    },
+    {
+      "passed": true,
+      "description": "7: standard 8-bit 4:2:0 pixel format"
+    },
+    {
+      "passed": true,
+      "description": "7: poster bytes match manifest"
+    },
+    {
+      "passed": true,
+      "description": "7: portrait poster valid and appropriately sized"
+    },
+    {
+      "passed": true,
+      "description": "8: original bytes remain unchanged"
+    },
+    {
+      "passed": true,
+      "description": "8: encoded bytes match manifest"
+    },
+    {
+      "passed": true,
+      "description": "8: fast-start moov atom precedes media data"
+    },
+    {
+      "passed": true,
+      "description": "8: browser-compatible H.264/AAC container tracks"
+    },
+    {
+      "passed": true,
+      "description": "8: 720x1280 aspect preserved"
+    },
+    {
+      "passed": true,
+      "description": "8: video duration within one output frame of original, no editorial trim"
+    },
+    {
+      "passed": true,
+      "description": "8: audio duration within AAC frame rounding of original"
+    },
+    {
+      "passed": true,
+      "description": "8: complete output audio/video decode has no warnings"
+    },
+    {
+      "passed": true,
+      "description": "8: standard 8-bit 4:2:0 pixel format"
+    },
+    {
+      "passed": true,
+      "description": "8: poster bytes match manifest"
+    },
+    {
+      "passed": true,
+      "description": "8: portrait poster valid and appropriately sized"
+    }
+  ]
+}

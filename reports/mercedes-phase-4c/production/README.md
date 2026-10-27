@@ -1,0 +1,16 @@
+# Phase 4C public production evidence
+
+Read-only observations on 26 October 2026. No publication, source push, rule/configuration write, cache action, analytics/form submission or indexing request.
+
+- [Fresh public capture](http/2026-10-26T10-57-04-947Z/capture.json): 60 GET/HEAD responses; 0 transport failures. Raw response headers, body hashes/text, CF-Ray IDs and per-request timestamps are preserved.
+- [Full redirect matrix](redirects-http/post-2026-10-26T10-57-25-913Z/capture.json): **326 cases, 612 requests, 852/852 assertions PASS**, including all 192 R1–R4 combinations and 48 protected English oil-change combinations, the existing broad Mercedes alias behavior and unchanged page controls. Queries, direct308 destinations, final200, canonical/indexability, loops/chains and homepage fallbacks are checked by the unchanged Phase2B assertions. Observed CF-Ray edge suffixes: AMS, CDG, FRA, HKG, LHR. These sampled edges do not prove global consistency.
+- [Unknown origin matrix](unknown-origin/2026-10-26T10-59-47-506Z/capture.json): **48/48 cases PASS**, 84 responses over HTTP/HTTPS, apex/www, GET/HEAD, empty/duplicate query parameters. Unknown English/Arabic documents still end at **200 homepage**, with homepage canonical on GET; missing JS ends404. All intermediate Locations preserve the requested path/query.
+- Current public manifest: `ed88f099b805ad2e0cdb0753fdf41f668402ca515984f358dee9ee22b61930f4`, 145 Vite entries. This is unchanged from Phase4B. The four fetched app files retain their Phase4B hashes.
+- [Full source/metadata comparison](production-comparison.json) and [compact summary](summary.json): all 12 compared commercial/home/services/BMW EN/AR control pages preserve protected metadata against B. B changes only approved hub/body text/links; the services text comparison also sees existing Cloudflare email obfuscation. The two downloadable error documents differ from local only in platform OG/Twitter image metadata.
+- All **1,005 public sitemap URLs/order** match B. B differs only by the two reviewed October26 English hub/body revision dates. The selected frozen-pnpm **unpatched baseline manifest differs from production**; compiled host/dependency parity is unresolved by this audit.
+
+The downloadable public `/_worker.js` has the same bytes as B's generated file. It is served as JavaScript, while unknown URLs return homepage200; a static download is not evidence that the worker executes. `/_headers` returns homepageHTML. No generated worker, redirect or header file is activated. Preserve the existing Lovable serving model; a switch to Pages/Workers would be a separate routing change.
+
+All seven existing rules are protected by behavior tests. This work deliberately does not inspect authenticated Cloudflare configuration; it cannot identify the serving rule ID or prove enabled/order/definition details. The exact host source, build mechanism, lockfile and rollback identity require the separate hosting investigation. Successful local hashes/builds do not establish production compatibility.
+
+An initial verifier launch referenced a nonexistent historical Phase2A path and stopped before network requests; the documented passing Phase2 preflight was then supplied. No production failures were hidden or retried away.

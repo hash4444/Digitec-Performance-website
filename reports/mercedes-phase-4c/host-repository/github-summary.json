@@ -1,0 +1,1161 @@
+{
+  "readAtUtc": "2026-10-26T11:00:06.801Z",
+  "readOnly": true,
+  "repository": "hash4444/Digitec-Performance-website",
+  "defaultBranch": "main",
+  "remoteMainSha": "13d1c19e99e9696ab63e5721ada18ffcfce11519",
+  "treeSha": "96c307f5dd7194049a8dbcbd9beceae7030a07f2",
+  "parentSha": "b793ad0acf3cd534217d862a44f2e1d915789ec2",
+  "branchProtected": false,
+  "combinedStatuses": [],
+  "checkRuns": {
+    "total_count": 0,
+    "check_runs": []
+  },
+  "rootFiles": [
+    {
+      "path": ".env",
+      "type": "blob",
+      "sha": "2a38f545e2be8c21852b20343592052d5381da97",
+      "size": 350
+    },
+    {
+      "path": ".gitignore",
+      "type": "blob",
+      "sha": "aeaae3379dafd2af5a2611a82f50d4628877359d",
+      "size": 618
+    },
+    {
+      "path": ".lovable",
+      "type": "tree",
+      "sha": "0d04d9b283c470faad59b86077aac2a23d158e95"
+    },
+    {
+      "path": ".openai",
+      "type": "tree",
+      "sha": "04dfc1ac90853748575996a955f61a69822e3b7a"
+    },
+    {
+      "path": "README.md",
+      "type": "blob",
+      "sha": "847d9be90032e7db2f1c7905ec220905bff10df6",
+      "size": 2369
+    },
+    {
+      "path": "audit-evidence",
+      "type": "tree",
+      "sha": "55a81b8ec3f3aa5859b4858de7463ede8a8cad11"
+    },
+    {
+      "path": "b0-a-routing-fix-report.md",
+      "type": "blob",
+      "sha": "3d7d09364f60f96ac2a074b332788e7f2badc2aa",
+      "size": 56416
+    },
+    {
+      "path": "b0-b-intent-ownership-report.md",
+      "type": "blob",
+      "sha": "63bb5b5d7babddddfac34a94f5390f33c09ceb82",
+      "size": 334863
+    },
+    {
+      "path": "b0-b-url-decision-register.csv",
+      "type": "blob",
+      "sha": "12fdc6874e2b201997d466062c53d182178ebb79",
+      "size": 843584
+    },
+    {
+      "path": "b1-mercedes-before-after.csv",
+      "type": "blob",
+      "sha": "f596eb0fded24e2d2886aad9e92caf625e3ee357",
+      "size": 56265
+    },
+    {
+      "path": "b1-mercedes-ctr-opportunities.csv",
+      "type": "blob",
+      "sha": "72ced581f876ff1485c8ddef5a8f39f0a82dbb7e",
+      "size": 46617
+    },
+    {
+      "path": "b1-mercedes-final-qa-report.md",
+      "type": "blob",
+      "sha": "79dfa80849c763ff9ffcfb751c87e25fda83f00a",
+      "size": 19780
+    },
+    {
+      "path": "b1-mercedes-implementation-report.md",
+      "type": "blob",
+      "sha": "135eed0d69f967a79a80395e045e6629b564afb6",
+      "size": 10372
+    },
+    {
+      "path": "b1-mercedes-intent-ownership-qa.csv",
+      "type": "blob",
+      "sha": "557e5542ff2a968c3e9aa46decf5c29a8971ecb3",
+      "size": 36871
+    },
+    {
+      "path": "b1-mercedes-keyword-coverage.csv",
+      "type": "blob",
+      "sha": "f863798d95fd9ae501d3700ecb0f4840ed946416",
+      "size": 464106
+    },
+    {
+      "path": "b1-mercedes-link-depth.csv",
+      "type": "blob",
+      "sha": "54c6fe73463bfdeab0e08df2469dea6a569e07bc",
+      "size": 32051
+    },
+    {
+      "path": "b1-mercedes-ownership-map.md",
+      "type": "blob",
+      "sha": "b613fccef06cd2a02cee3bf7893dcdae314c1447",
+      "size": 12876
+    },
+    {
+      "path": "b2-porsche-before-after.csv",
+      "type": "blob",
+      "sha": "68014f2e83d8f150be855a2aecb6fcc7284543c2",
+      "size": 18720
+    },
+    {
+      "path": "b2-porsche-final-report.md",
+      "type": "blob",
+      "sha": "6723b85c3d0fccabf56640043291c23f429bb2e5",
+      "size": 14437
+    },
+    {
+      "path": "b2-porsche-gap-decisions.md",
+      "type": "blob",
+      "sha": "2482b1b93e150ba604c5c06df307ff605fb96d99",
+      "size": 7581
+    },
+    {
+      "path": "b2-porsche-intent-ownership.csv",
+      "type": "blob",
+      "sha": "682e06e2f7e040291f4d1f9c7d52ddc6e3e2ce35",
+      "size": 64000
+    },
+    {
+      "path": "b2-porsche-keyword-coverage.csv",
+      "type": "blob",
+      "sha": "8e2d261022443fa066f5b0aaf643c1f0e0fb8788",
+      "size": 239069
+    },
+    {
+      "path": "b2-porsche-regression-report.md",
+      "type": "blob",
+      "sha": "5ccfb7405e65fd1609dc1c1079b7a5c7f329e41d",
+      "size": 3566
+    },
+    {
+      "path": "b2-porsche-technical-sources.md",
+      "type": "blob",
+      "sha": "98a7bd33b6bc0cd717f639522f74b20d1611c057",
+      "size": 5042
+    },
+    {
+      "path": "b3-bmw-before-after.csv",
+      "type": "blob",
+      "sha": "a9b61e48689d6b8f8672dff142eb8e87aa8b80ce",
+      "size": 10397
+    },
+    {
+      "path": "b3-bmw-final-report.md",
+      "type": "blob",
+      "sha": "c1484da06030d0bfd80e1086fe0864483e2746fe",
+      "size": 15511
+    },
+    {
+      "path": "b3-bmw-gap-decisions.md",
+      "type": "blob",
+      "sha": "b4533528b32d99e3559f7b3bd54f85520f128ab0",
+      "size": 4984
+    },
+    {
+      "path": "b3-bmw-intent-ownership.csv",
+      "type": "blob",
+      "sha": "7ff871610728da7026a61b83dcd8a06288ac1011",
+      "size": 31805
+    },
+    {
+      "path": "b3-bmw-keyword-coverage.csv",
+      "type": "blob",
+      "sha": "8b88b5470afc80ffe85226f156d553ba5c1ad4dd",
+      "size": 225439
+    },
+    {
+      "path": "b3-bmw-regression-report.md",
+      "type": "blob",
+      "sha": "905cb0ea4e32a8ac7c0b667fcb2d369bafcba29d",
+      "size": 3521
+    },
+    {
+      "path": "b3-bmw-technical-sources.md",
+      "type": "blob",
+      "sha": "0bf06373ab0fb94834c3ce16edc8dcaf2d6fccd9",
+      "size": 5579
+    },
+    {
+      "path": "b4-ferrari-before-after.csv",
+      "type": "blob",
+      "sha": "15eb8826c79e241ed7b4233794bb7f80ea4254dd",
+      "size": 3591
+    },
+    {
+      "path": "b4-ferrari-intent-ownership.csv",
+      "type": "blob",
+      "sha": "ee688cc34b308997039373280020454a0843d833",
+      "size": 37770
+    },
+    {
+      "path": "b4-ferrari-keyword-coverage.csv",
+      "type": "blob",
+      "sha": "e8830c1e0f7dba861663af422d0b12305c9fd642",
+      "size": 192337
+    },
+    {
+      "path": "b4-ferrari-lamborghini-final-report.md",
+      "type": "blob",
+      "sha": "f784ae2249b0e9301c5b203c6e31c6978f24a571",
+      "size": 23125
+    },
+    {
+      "path": "b4-ferrari-lamborghini-gap-decisions.md",
+      "type": "blob",
+      "sha": "7f0d2fe383a605c4c77538b08d3b044839f7e774",
+      "size": 6067
+    },
+    {
+      "path": "b4-ferrari-lamborghini-regression-report.md",
+      "type": "blob",
+      "sha": "4e2257af193732b5019b2aa7b031e4db2568bdfc",
+      "size": 4452
+    },
+    {
+      "path": "b4-ferrari-lamborghini-technical-sources.md",
+      "type": "blob",
+      "sha": "fd36d6df4d18f7c7617b665a442753c6a1e21682",
+      "size": 4247
+    },
+    {
+      "path": "b4-lamborghini-before-after.csv",
+      "type": "blob",
+      "sha": "ffff057c45c4b5c345610ea26422a18a9d524d53",
+      "size": 3686
+    },
+    {
+      "path": "b4-lamborghini-intent-ownership.csv",
+      "type": "blob",
+      "sha": "55a8cb584b6b6295594133422e75d7a346c5e66a",
+      "size": 32348
+    },
+    {
+      "path": "b4-lamborghini-keyword-coverage.csv",
+      "type": "blob",
+      "sha": "3dea05d87d73fa1ed7a3adbaeacb97094f0c4027",
+      "size": 198790
+    },
+    {
+      "path": "b5-bentley-before-after.csv",
+      "type": "blob",
+      "sha": "2647f3f71c8ba0d7b51135065b6a569e1c3795a0",
+      "size": 1898
+    },
+    {
+      "path": "b5-bentley-intent-ownership.csv",
+      "type": "blob",
+      "sha": "836f0546886cd94f827f8de2d6e438d8447318c9",
+      "size": 33457
+    },
+    {
+      "path": "b5-bentley-keyword-coverage.csv",
+      "type": "blob",
+      "sha": "a62290cb14e92835f3b7ffd7fe615956ae93fd60",
+      "size": 173061
+    },
+    {
+      "path": "b5-bentley-reverse-camera-ownership.md",
+      "type": "blob",
+      "sha": "5013a0bc711dfc3d365c1205b2aadda71425a65e",
+      "size": 3524
+    },
+    {
+      "path": "b5-maybach-before-after.csv",
+      "type": "blob",
+      "sha": "ac0317c192c1f83bb3eac5f39c8c56ce1100dc23",
+      "size": 1922
+    },
+    {
+      "path": "b5-maybach-intent-ownership.csv",
+      "type": "blob",
+      "sha": "4dc0de7c575131c0877c5063525a8480518361ba",
+      "size": 33590
+    },
+    {
+      "path": "b5-maybach-keyword-coverage.csv",
+      "type": "blob",
+      "sha": "127368887e651d9874585ff60a3fd6dc5d165d26",
+      "size": 169651
+    },
+    {
+      "path": "b5-maybach-mercedes-boundary.md",
+      "type": "blob",
+      "sha": "972c9356cf4b061e9aa3e445cb52d7acecf9ec50",
+      "size": 6074
+    },
+    {
+      "path": "b5-rolls-royce-before-after.csv",
+      "type": "blob",
+      "sha": "2bce4e585a8e0cd307bbb00d712c45ba52736948",
+      "size": 1585
+    },
+    {
+      "path": "b5-rolls-royce-bentley-maybach-final-report.md",
+      "type": "blob",
+      "sha": "f5fa43c9cbdc78f45041bffb2a7d28fea6f3c08d",
+      "size": 21050
+    },
+    {
+      "path": "b5-rolls-royce-bentley-maybach-gap-decisions.md",
+      "type": "blob",
+      "sha": "dd7faf3dd1d3672a69a6bb4da59753d6e6371937",
+      "size": 14000
+    },
+    {
+      "path": "b5-rolls-royce-bentley-maybach-regression-report.md",
+      "type": "blob",
+      "sha": "c6dd71271c3a67b674118919f4e83974274e3514",
+      "size": 3648
+    },
+    {
+      "path": "b5-rolls-royce-bentley-maybach-technical-sources.md",
+      "type": "blob",
+      "sha": "03255de677a1730bf1b9850d2947a81cb9b27fce",
+      "size": 3461
+    },
+    {
+      "path": "b5-rolls-royce-intent-ownership.csv",
+      "type": "blob",
+      "sha": "009a179059767deab26a1d13f806ef62fb9c84e7",
+      "size": 35944
+    },
+    {
+      "path": "b5-rolls-royce-keyword-coverage.csv",
+      "type": "blob",
+      "sha": "c224ce4121cf7e9f2b18c92000df92b0cc711a33",
+      "size": 179706
+    },
+    {
+      "path": "b6-1-typescript-repair-report.md",
+      "type": "blob",
+      "sha": "0828dfcce887473de0a987f0912b7685a0a1e718",
+      "size": 6192
+    },
+    {
+      "path": "b6-defender-before-after.csv",
+      "type": "blob",
+      "sha": "79fb273292d0efe353ba8e0f0572f6cfb7be0cc4",
+      "size": 3126
+    },
+    {
+      "path": "b6-defender-intent-ownership.csv",
+      "type": "blob",
+      "sha": "168426d0079d01e9ddda3c9ea0825c4560ab02bc",
+      "size": 33481
+    },
+    {
+      "path": "b6-defender-keyword-coverage.csv",
+      "type": "blob",
+      "sha": "5c9093308c2b7d749a2d7d2cff74528254ac8e52",
+      "size": 173896
+    },
+    {
+      "path": "b6-jaguar-before-after.csv",
+      "type": "blob",
+      "sha": "68cc7e34d2ca2b52e54115b0b2acaf711938a0dd",
+      "size": 4516
+    },
+    {
+      "path": "b6-jaguar-intent-ownership.csv",
+      "type": "blob",
+      "sha": "42cdcd7e031000ff9f87f016b8ef4141f4123fd7",
+      "size": 11231
+    },
+    {
+      "path": "b6-jaguar-keyword-coverage.csv",
+      "type": "blob",
+      "sha": "d867add149cc6f02708fffb1d318b49f142a0b85",
+      "size": 168875
+    },
+    {
+      "path": "b6-jlr-shared-system-boundary.md",
+      "type": "blob",
+      "sha": "d31e2ae9fc02ec200b3bdc05ab6e1a7e385f8c45",
+      "size": 5960
+    },
+    {
+      "path": "b6-range-rover-before-after.csv",
+      "type": "blob",
+      "sha": "db4df0e3d6ff17c363cf3a1434539030243d2d87",
+      "size": 6204
+    },
+    {
+      "path": "b6-range-rover-defender-jaguar-final-report.md",
+      "type": "blob",
+      "sha": "49ef36260a4ca34e15d39080a5fbf7f9696a65da",
+      "size": 18959
+    },
+    {
+      "path": "b6-range-rover-defender-jaguar-gap-decisions.md",
+      "type": "blob",
+      "sha": "5ff47d74f426695786799d0afffe899446f5823d",
+      "size": 4488
+    },
+    {
+      "path": "b6-range-rover-defender-jaguar-regression-report.md",
+      "type": "blob",
+      "sha": "c446b62c355f317b5cc0ab6d4844e7adf34ce6d2",
+      "size": 4221
+    },
+    {
+      "path": "b6-range-rover-defender-jaguar-technical-sources.md",
+      "type": "blob",
+      "sha": "f7ee49b179154366b46360f4b0f7070cc5b9f266",
+      "size": 3249
+    },
+    {
+      "path": "b6-range-rover-intent-ownership.csv",
+      "type": "blob",
+      "sha": "74babfd9611d4b74fbfc15a3ecc0178a567c740c",
+      "size": 38816
+    },
+    {
+      "path": "b6-range-rover-keyword-coverage.csv",
+      "type": "blob",
+      "sha": "dfac54f33ce5bd99274e544f0f60bedb9d1f20da",
+      "size": 184717
+    },
+    {
+      "path": "b7-cadillac-before-after.csv",
+      "type": "blob",
+      "sha": "c19598386c93c7d21aa55e1c20c314c8abff050e",
+      "size": 4713
+    },
+    {
+      "path": "b7-cadillac-ctr-opportunities.csv",
+      "type": "blob",
+      "sha": "30ab9e548a1aa2ba578501bddd8c61b5b4182306",
+      "size": 8371
+    },
+    {
+      "path": "b7-cadillac-cue-ownership.md",
+      "type": "blob",
+      "sha": "dbb0d360527ee90aa6104f2263ca1b8798bd2a16",
+      "size": 7462
+    },
+    {
+      "path": "b7-cadillac-final-report.md",
+      "type": "blob",
+      "sha": "e308cd608d0dced23fa7c66db6ce39be39b52e16",
+      "size": 14841
+    },
+    {
+      "path": "b7-cadillac-gap-decisions.md",
+      "type": "blob",
+      "sha": "5d5dac2aaceec9844dff18b4e00178cf371ebd55",
+      "size": 2614
+    },
+    {
+      "path": "b7-cadillac-intent-ownership.csv",
+      "type": "blob",
+      "sha": "022590f0e2ee16faed14dbf99320f0fac72b76dd",
+      "size": 34138
+    },
+    {
+      "path": "b7-cadillac-keyword-coverage.csv",
+      "type": "blob",
+      "sha": "244ea98aa40d59b672a64dd0a58287b20c99e717",
+      "size": 203580
+    },
+    {
+      "path": "b7-cadillac-regression-report.md",
+      "type": "blob",
+      "sha": "aa2151a504fe3014586d454f07c8576131845d86",
+      "size": 2180
+    },
+    {
+      "path": "b7-cadillac-technical-sources.md",
+      "type": "blob",
+      "sha": "8baaaae72dba2e32c21c110bbe5638d2ff70f278",
+      "size": 3053
+    },
+    {
+      "path": "b8-volkswagen-before-after.csv",
+      "type": "blob",
+      "sha": "2a573cb58b9a87e2f003dbe8fdeed0f026415a6c",
+      "size": 5830
+    },
+    {
+      "path": "b8-volkswagen-ctr-opportunities.csv",
+      "type": "blob",
+      "sha": "b242656a0435570a4898b017dbf09b256387415c",
+      "size": 7318
+    },
+    {
+      "path": "b8-volkswagen-dsg-ownership.md",
+      "type": "blob",
+      "sha": "c94b4213aa89aedadc445680df7be2e3165e0e25",
+      "size": 8281
+    },
+    {
+      "path": "b8-volkswagen-final-report.md",
+      "type": "blob",
+      "sha": "4ea0465c9cc6911c2850a6e2ce37c61c66597e61",
+      "size": 31641
+    },
+    {
+      "path": "b8-volkswagen-gap-decisions.md",
+      "type": "blob",
+      "sha": "38074a5181e5998f1c7f07d4c30525cf5626f091",
+      "size": 3384
+    },
+    {
+      "path": "b8-volkswagen-intent-ownership.csv",
+      "type": "blob",
+      "sha": "613a1455360f970612b5b6acaef4ec578caf5b9a",
+      "size": 34755
+    },
+    {
+      "path": "b8-volkswagen-keyword-coverage.csv",
+      "type": "blob",
+      "sha": "f723ba447c62cfe42a3be1a98690538f729f8b3e",
+      "size": 206635
+    },
+    {
+      "path": "b8-volkswagen-odis-epc-ownership.md",
+      "type": "blob",
+      "sha": "ef1cb8da264b728d25facfdf901d2cbd169145b3",
+      "size": 5946
+    },
+    {
+      "path": "b8-volkswagen-regression-report.md",
+      "type": "blob",
+      "sha": "f0950f081a76c58c03d07d29b7422561e910b562",
+      "size": 19565
+    },
+    {
+      "path": "b8-volkswagen-technical-sources.md",
+      "type": "blob",
+      "sha": "1730e27bf0d8a86c133c7c2adc84a78b2b38408b",
+      "size": 3021
+    },
+    {
+      "path": "b9-jetour-before-after.csv",
+      "type": "blob",
+      "sha": "fcbb564ddba014b844a3e769e2e7dbb26e13ad93",
+      "size": 12790
+    },
+    {
+      "path": "b9-jetour-intent-ownership.csv",
+      "type": "blob",
+      "sha": "9dd4d2f172a8d58da09e38e34b415aa1d7422883",
+      "size": 34748
+    },
+    {
+      "path": "b9-jetour-keyword-coverage.csv",
+      "type": "blob",
+      "sha": "3af153ebeffc4773a67057aa01e384f9abb824a6",
+      "size": 174304
+    },
+    {
+      "path": "b9-jetour-rox-ctr-opportunities.csv",
+      "type": "blob",
+      "sha": "9da966342a1aec56f066f73e6a144342fbe4fbc7",
+      "size": 1003
+    },
+    {
+      "path": "b9-jetour-rox-final-report.md",
+      "type": "blob",
+      "sha": "54ae581e4f674ca2b495780acfa1a5187dbeb810",
+      "size": 13164
+    },
+    {
+      "path": "b9-jetour-rox-gap-decisions.md",
+      "type": "blob",
+      "sha": "b9bffaba6bf482d6fa0de251bc409b744307541e",
+      "size": 3789
+    },
+    {
+      "path": "b9-jetour-rox-regression-report.md",
+      "type": "blob",
+      "sha": "78f6d3c93de52839789c6cf943bee594188ee1ab",
+      "size": 3688
+    },
+    {
+      "path": "b9-jetour-rox-technical-sources.md",
+      "type": "blob",
+      "sha": "203bd57e4a975e380596b292f071098ea34b7b02",
+      "size": 3005
+    },
+    {
+      "path": "b9-rox-before-after.csv",
+      "type": "blob",
+      "sha": "faa0b04f508439152169493f0f73a7f029411269",
+      "size": 6253
+    },
+    {
+      "path": "b9-rox-electrified-scope.md",
+      "type": "blob",
+      "sha": "a394ba4d790fd04acbe1b9294119852bc797ad20",
+      "size": 3433
+    },
+    {
+      "path": "b9-rox-intent-ownership.csv",
+      "type": "blob",
+      "sha": "8c925b142355a7dbf81d05f81fbc5ee021e7ca93",
+      "size": 36521
+    },
+    {
+      "path": "b9-rox-keyword-coverage.csv",
+      "type": "blob",
+      "sha": "cf434cdd2c748a933d0ac9d5ea96c1a74cfd5ebe",
+      "size": 177007
+    },
+    {
+      "path": "b9-rox-soft-close-ownership.md",
+      "type": "blob",
+      "sha": "e98faf7894a030df5f5905ec43acee5357a7e891",
+      "size": 5677
+    },
+    {
+      "path": "bun.lock",
+      "type": "blob",
+      "sha": "b9c36667c584a6547ae278b776b81c6d83a80631",
+      "size": 170366
+    },
+    {
+      "path": "bun.lockb",
+      "type": "blob",
+      "sha": "160304d398161f97165233dfe6636caa631bfdfb",
+      "size": 198351
+    },
+    {
+      "path": "cloudflare",
+      "type": "tree",
+      "sha": "f23fa2d72800897ea618939f2618311d1ff1ec37"
+    },
+    {
+      "path": "components.json",
+      "type": "blob",
+      "sha": "f29e3f1610677762f3d97aaefc9ce40a9d410948",
+      "size": 413
+    },
+    {
+      "path": "digitec-brand-orange-edited.png",
+      "type": "blob",
+      "sha": "02261b20276ae17fbb084a68539cd86bd7e7f665",
+      "size": 1346207
+    },
+    {
+      "path": "digitec-brand-orange-lighter-v2.png",
+      "type": "blob",
+      "sha": "ecb9d769b5be3202c8e6b4ca1d5c0c257b6e276f",
+      "size": 1333790
+    },
+    {
+      "path": "docs",
+      "type": "tree",
+      "sha": "07b951a07a94d273c236de150e65dc3c94d5ed65"
+    },
+    {
+      "path": "eslint.config.js",
+      "type": "blob",
+      "sha": "1e40c2303cbe8e93b1929e5a6180599194471740",
+      "size": 867
+    },
+    {
+      "path": "g1-brand-generic-service-boundary.md",
+      "type": "blob",
+      "sha": "73de19bafbcfcacf30dc29ddc8ee418907c9280c",
+      "size": 15380
+    },
+    {
+      "path": "g1-broad-workshop-overlap.md",
+      "type": "blob",
+      "sha": "f54017d8a61f599cfe93cbd13cf75ae39169729c",
+      "size": 4238
+    },
+    {
+      "path": "g1-generic-cannibalization-register.csv",
+      "type": "blob",
+      "sha": "8cd6efabfbcbc95d4dc134c59ffe7053981bbc13",
+      "size": 15813
+    },
+    {
+      "path": "g1-generic-commercial-before-after.csv",
+      "type": "blob",
+      "sha": "f7d26e424c1043d01913a800adee69e3fb6706a1",
+      "size": 23751
+    },
+    {
+      "path": "g1-generic-commercial-ctr-opportunities.csv",
+      "type": "blob",
+      "sha": "8092b5bd20334b35252b4a07928395c0255217ce",
+      "size": 75207
+    },
+    {
+      "path": "g1-generic-commercial-gap-decisions.md",
+      "type": "blob",
+      "sha": "3589f9d78fb7dcc16b4c7a7e8ed20be4058215a3",
+      "size": 23958
+    },
+    {
+      "path": "g1-generic-commercial-intent-ownership.csv",
+      "type": "blob",
+      "sha": "ddb9c39eaae69780e1284a2fb00bef7af757ff83",
+      "size": 32515
+    },
+    {
+      "path": "g1-generic-commercial-keyword-coverage.csv",
+      "type": "blob",
+      "sha": "297f02de813659a95321a17afb67ba79b1735752",
+      "size": 1607830
+    },
+    {
+      "path": "g1-generic-commercial-regression-report.md",
+      "type": "blob",
+      "sha": "2fae8c0630b89207a339c155be0a0dc1814eab12",
+      "size": 8075
+    },
+    {
+      "path": "g1-generic-commercial-services-final-report.md",
+      "type": "blob",
+      "sha": "296046522df3e6b0caeeae22e620f4db1c5f28fb",
+      "size": 33866
+    },
+    {
+      "path": "g1-generic-commercial-technical-sources.md",
+      "type": "blob",
+      "sha": "9380a4a1b87c90faf8fcb331715f11806fa5acdf",
+      "size": 4234
+    },
+    {
+      "path": "g1-generic-service-inventory.csv",
+      "type": "blob",
+      "sha": "b7f4e32e2910234bfe3343d9665fa05c0bc6d982",
+      "size": 24493
+    },
+    {
+      "path": "g1-new-url-decisions.md",
+      "type": "blob",
+      "sha": "7d481612bdcefa0e74b83a3b5709fa4cd2f9f74f",
+      "size": 26681
+    },
+    {
+      "path": "g1-service-capability-matrix.csv",
+      "type": "blob",
+      "sha": "658d4f04dc196f10d82a590b7d7d5e404cabffc7",
+      "size": 24649
+    },
+    {
+      "path": "g1-to-g2-deferred-keywords.csv",
+      "type": "blob",
+      "sha": "a98253538b51108c1148888583d093064b8d81be",
+      "size": 9615
+    },
+    {
+      "path": "g1-to-g3-deferred-keywords.csv",
+      "type": "blob",
+      "sha": "6462292ce22043cb58696ae308fee1e71980a229",
+      "size": 168336
+    },
+    {
+      "path": "g2-brand-generic-problem-boundary.md",
+      "type": "blob",
+      "sha": "97314a3ea212a3880c2c2329af7542f8333b6b00",
+      "size": 17029
+    },
+    {
+      "path": "g2-generic-problem-before-after.csv",
+      "type": "blob",
+      "sha": "62808917b12763d45385a251ce51a69912afe47a",
+      "size": 28238
+    },
+    {
+      "path": "g2-generic-problem-cannibalization-register.csv",
+      "type": "blob",
+      "sha": "575c2b8776a58bcecffe4d894b0618e07eebad61",
+      "size": 22766
+    },
+    {
+      "path": "g2-generic-problem-ctr-opportunities.csv",
+      "type": "blob",
+      "sha": "1756ba21e84dfc1b981a5a010afc9e580a1f7a84",
+      "size": 12486
+    },
+    {
+      "path": "g2-generic-problem-gap-decisions.md",
+      "type": "blob",
+      "sha": "ef7edeb8ce79d680171970291e8acbf2baac37a8",
+      "size": 15664
+    },
+    {
+      "path": "g2-generic-problem-intent-ownership.csv",
+      "type": "blob",
+      "sha": "a38bb80a774ac11191dbf0590595f5a8d86a90d4",
+      "size": 39359
+    },
+    {
+      "path": "g2-generic-problem-inventory.csv",
+      "type": "blob",
+      "sha": "ea8cbf9368deba683cf0be83391078120009724c",
+      "size": 36559
+    },
+    {
+      "path": "g2-generic-problem-keyword-coverage.csv",
+      "type": "blob",
+      "sha": "847524a58bb6b6e2c0edb839a98789b9a2ddd20a",
+      "size": 99612
+    },
+    {
+      "path": "g2-generic-problem-regression-report.md",
+      "type": "blob",
+      "sha": "d086408d54f37a5e0784f4cc45f211c6cf9e870a",
+      "size": 26183
+    },
+    {
+      "path": "g2-generic-problem-technical-sources.md",
+      "type": "blob",
+      "sha": "27d7bfdb00cc0953094c6aa2ab002a6941839c3e",
+      "size": 5029
+    },
+    {
+      "path": "g2-generic-problems-final-report.md",
+      "type": "blob",
+      "sha": "c21facef4697b5005a22e91f33fe92ec9b37b4ea",
+      "size": 45084
+    },
+    {
+      "path": "g2-new-problem-url-decisions.md",
+      "type": "blob",
+      "sha": "664bdc907a9e7729f78e4714b84b3f2cc861838f",
+      "size": 22810
+    },
+    {
+      "path": "g2-problem-cluster-consolidation.md",
+      "type": "blob",
+      "sha": "ffd1a4ad8d4a860d2930b211b774ae1cc2cc3445",
+      "size": 12534
+    },
+    {
+      "path": "g2-safety-urgency-framework.md",
+      "type": "blob",
+      "sha": "65c0ef8f863586b243537a30d089d1790656600d",
+      "size": 9880
+    },
+    {
+      "path": "g3-brand-generic-protection-boundary.md",
+      "type": "blob",
+      "sha": "42be6dc529b2a886a23ffa8125438314d0121247",
+      "size": 11923
+    },
+    {
+      "path": "g3-broad-paint-protection-ownership.md",
+      "type": "blob",
+      "sha": "20fd4d3bcdb589a57cef94115f608197d9537577",
+      "size": 5639
+    },
+    {
+      "path": "g3-new-url-decisions.md",
+      "type": "blob",
+      "sha": "ce77f7228989e0381165dcf4b906cfb44c93e12a",
+      "size": 13644
+    },
+    {
+      "path": "g3-protection-before-after.csv",
+      "type": "blob",
+      "sha": "2eb3d2ff77acef675b4ec843b4b5212208160f8c",
+      "size": 29656
+    },
+    {
+      "path": "g3-protection-body-repair-boundary.md",
+      "type": "blob",
+      "sha": "ce9aef4a7f8c485a50e47f03d599efc408b7bdb7",
+      "size": 4342
+    },
+    {
+      "path": "g3-protection-cannibalization-register.csv",
+      "type": "blob",
+      "sha": "efb90e5992ca896d85b388318e73841b26034c9b",
+      "size": 9139
+    },
+    {
+      "path": "g3-protection-capability-matrix.csv",
+      "type": "blob",
+      "sha": "85ecf15cdc070dc2ea805c38be67b5c011d6a3b9",
+      "size": 12645
+    },
+    {
+      "path": "g3-protection-ctr-opportunities.csv",
+      "type": "blob",
+      "sha": "e75c6373c08fc9fbf80840e5d92080d0df5eb5d8",
+      "size": 31418
+    },
+    {
+      "path": "g3-protection-final-report.md",
+      "type": "blob",
+      "sha": "cf1798cdc06f71b6a45eb3ffb1751030ecda3e33",
+      "size": 27200
+    },
+    {
+      "path": "g3-protection-gap-decisions.md",
+      "type": "blob",
+      "sha": "b66a2c7e05a2b0bc4036a5e66f4e65717872b91c",
+      "size": 10945
+    },
+    {
+      "path": "g3-protection-intent-ownership.csv",
+      "type": "blob",
+      "sha": "5d433a75e216fe56124f60f7e11bf019dd28ff53",
+      "size": 58515
+    },
+    {
+      "path": "g3-protection-keyword-coverage.csv",
+      "type": "blob",
+      "sha": "6763275f42722c0c0a7ae6d0e93b186e44539b8c",
+      "size": 538375
+    },
+    {
+      "path": "g3-protection-regression-report.md",
+      "type": "blob",
+      "sha": "44fd13fb0e803aea313b33c8ff1ab2406c605cd5",
+      "size": 9568
+    },
+    {
+      "path": "g3-protection-technical-sources.md",
+      "type": "blob",
+      "sha": "24fbf2cc3bb479be6afd5650b55e6f809cc07880",
+      "size": 3563
+    },
+    {
+      "path": "g3-protection-url-inventory.csv",
+      "type": "blob",
+      "sha": "6f25aeb564fdc2f16df6efc512da30006353e84c",
+      "size": 52839
+    },
+    {
+      "path": "g4-business-fact-consistency.md",
+      "type": "blob",
+      "sha": "640f9c85607f2cf39bc0dbf710f5d4930668784a",
+      "size": 8585
+    },
+    {
+      "path": "g4-contextual-orphan-audit.csv",
+      "type": "blob",
+      "sha": "6e8291303965709d290356b56a8d8a05a5c1a573",
+      "size": 375167
+    },
+    {
+      "path": "g4-deployment-blockers.csv",
+      "type": "blob",
+      "sha": "2fd0a7f09179d4d9f643d06159623cb1728b12f7",
+      "size": 735
+    },
+    {
+      "path": "g4-deployment-plan.md",
+      "type": "blob",
+      "sha": "12e57c90adc1b529a0854fbc33466d5897949967",
+      "size": 3316
+    },
+    {
+      "path": "g4-deployment-readiness-scorecard.md",
+      "type": "blob",
+      "sha": "d319dab0f2286bb92b0de107e598ae93601ee7a0",
+      "size": 16818
+    },
+    {
+      "path": "g4-high-opportunity-gsc-register.csv",
+      "type": "blob",
+      "sha": "90bc5e49a666bb1150400862d948470abd301e44",
+      "size": 322922
+    },
+    {
+      "path": "g4-indexability-canonical-audit.csv",
+      "type": "blob",
+      "sha": "377ebaabafe633041f90175653c4ea9233b24ca3",
+      "size": 761331
+    },
+    {
+      "path": "g4-internal-link-priority-plan.csv",
+      "type": "blob",
+      "sha": "01a48259077eba1080808d21070e6d620e53d952",
+      "size": 6674
+    },
+    {
+      "path": "g4-noindex-commercial-review.md",
+      "type": "blob",
+      "sha": "f37f0e62bd13bb26a7a4262a3dddb1fa711f9b61",
+      "size": 65040
+    },
+    {
+      "path": "g4-post-deployment-backlog.csv",
+      "type": "blob",
+      "sha": "76e959ce097a5438ffa63af8868c29c9cc527c60",
+      "size": 4011
+    },
+    {
+      "path": "g4-regression-and-change-isolation.md",
+      "type": "blob",
+      "sha": "ac6841c6f7aeedd0d53ca707794d41d35f3517a7",
+      "size": 14623
+    },
+    {
+      "path": "g4-routing-redirect-integrity.md",
+      "type": "blob",
+      "sha": "3dbacd265f6f2f4ba2f273b5006652725543e49f",
+      "size": 9251
+    },
+    {
+      "path": "g4-schema-faq-ssr-audit.csv",
+      "type": "blob",
+      "sha": "a2f97a836540ca8d3cd01256c616a11c6e45ec26",
+      "size": 535699
+    },
+    {
+      "path": "g4-sitewide-cannibalization-register.csv",
+      "type": "blob",
+      "sha": "a865b247c1725f63f817fdb1166fa8f5aafb3494",
+      "size": 51303
+    },
+    {
+      "path": "g4-sitewide-capability-register.csv",
+      "type": "blob",
+      "sha": "1703374a464633c68ea13872eb8b7be587dd5a84",
+      "size": 38387
+    },
+    {
+      "path": "g4-sitewide-claim-audit.csv",
+      "type": "blob",
+      "sha": "f4a0a4c48956dcb26ef6020340c9bd9586e5c2f4",
+      "size": 11038
+    },
+    {
+      "path": "g4-sitewide-master-ownership.csv",
+      "type": "blob",
+      "sha": "53792ff69b017da0b1592f05648c3ee78bbb66ae",
+      "size": 1413547
+    },
+    {
+      "path": "g4-sitewide-seo-final-report.md",
+      "type": "blob",
+      "sha": "7f01008f82063b7abf71c6d8d57e8e4dc5411562",
+      "size": 29866
+    },
+    {
+      "path": "g4-sitewide-url-role-register.csv",
+      "type": "blob",
+      "sha": "96a76892c562fac3c7783d481bf4a194bccf3301",
+      "size": 680503
+    },
+    {
+      "path": "g4-title-h1-meta-audit.csv",
+      "type": "blob",
+      "sha": "eec7c1cabc9a6548a25ed539610d5efb67f0a111",
+      "size": 634367
+    },
+    {
+      "path": "index.html",
+      "type": "blob",
+      "sha": "b4efd9421976d93c742ccd522a0616e296982e59",
+      "size": 10527
+    },
+    {
+      "path": "outputs",
+      "type": "tree",
+      "sha": "90505a09b95d06f7d04020fde2718bbff7b4d901"
+    },
+    {
+      "path": "package-lock.json",
+      "type": "blob",
+      "sha": "d81dbb0bd2f532a2327a2c057cc78cdfeb896ec1",
+      "size": 310707
+    },
+    {
+      "path": "package.json",
+      "type": "blob",
+      "sha": "0c639a6aca03a0d33440f1b72cc2f9c5bb5b0ce2",
+      "size": 4326
+    },
+    {
+      "path": "postcss.config.js",
+      "type": "blob",
+      "sha": "2e7af2b7f1a6f391da1631d93968a9d487ba977d",
+      "size": 80
+    },
+    {
+      "path": "public",
+      "type": "tree",
+      "sha": "1a97999d309834d0acc48129b1c219822bbd9df4"
+    },
+    {
+      "path": "scripts",
+      "type": "tree",
+      "sha": "2b77dc46ca94dd06664b9ee0a1d3fbf53c132098"
+    },
+    {
+      "path": "seo-audit-keyword-architecture.md",
+      "type": "blob",
+      "sha": "f5eba73c15a2aafd6f87ec798ff571726a3d591c",
+      "size": 162776
+    },
+    {
+      "path": "src",
+      "type": "tree",
+      "sha": "29e9e58bcf31afffc7fc8c1a1342939dcd4dee09"
+    },
+    {
+      "path": "supabase",
+      "type": "tree",
+      "sha": "c9adf55e447ecf5c97b5366821517c793ca6a65c"
+    },
+    {
+      "path": "tailwind.config.ts",
+      "type": "blob",
+      "sha": "3fcef91b947cf04e9167a1ba88da46fba58e4f25",
+      "size": 2567
+    },
+    {
+      "path": "tsconfig.app.json",
+      "type": "blob",
+      "sha": "3dc0f75e07232c324eae767b392f97def9c86780",
+      "size": 691
+    },
+    {
+      "path": "tsconfig.json",
+      "type": "blob",
+      "sha": "6b68d80b7d92d0c4a5d774897f2bedfa95b42669",
+      "size": 396
+    },
+    {
+      "path": "tsconfig.node.json",
+      "type": "blob",
+      "sha": "3133162c20350e1741b94b8d2ff77b811bec8363",
+      "size": 481
+    },
+    {
+      "path": "vite.config.ts",
+      "type": "blob",
+      "sha": "d01793ef0162948818d6af1a0de3d01307913625",
+      "size": 587
+    }
+  ],
+  "noGithubDirectoryAtCurrentMain": true,
+  "noPnpmLockAtCurrentMain": true,
+  "noBunfigAtCurrentMain": true,
+  "noNodeVersionOrEnginesDeclarationConfirmedBySource": true,
+  "caveats": [
+    "This establishes GitHub source and branch state, not a separate published deployment SHA.",
+    "GitHub checks are not a Lovable build-log substitute."
+  ]
+}

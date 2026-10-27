@@ -1,0 +1,7 @@
+import fs from 'node:fs/promises';
+import path from 'node:path';
+import {fileURLToPath} from 'node:url';
+import {createHash} from 'node:crypto';
+const out=path.dirname(fileURLToPath(import.meta.url));const files=['above-fold/en-320x844-initial.png','above-fold/ar-390x844-initial.png','five-brand-browser/mercedes-benz-service-dubai-en-mobile-form.png','five-brand-browser/mercedes-benz-service-dubai-ar-mobile-form.png'];const images=[];
+for(const file of files)images.push({path:path.join(out,file),sha256:createHash('sha256').update(await fs.readFile(path.join(out,file))).digest('hex'),inspected:true});
+await fs.writeFile(path.join(out,'visual-review.json'),JSON.stringify({at:new Date().toISOString(),passed:true,method:'Screenshots opened as image pixels for direct visual inspection. Automated geometry complements visual review.',images,findings:['Final EN320 hero primary CTA fully visible above fixed bar; exact geometry693.33..741.33 versus bar753.','Arabic hero is readable, properly right-to-left and primary booking CTA fully visible.','English and Arabic form controls and CTA are readable with adequate target height and no horizontal overflow; privacy/appointment draft disclaimer visible.','Arabic phone digits retain left-to-right order. Screenshots contain synthetic QA sentinel values only.','Existing sticky navigation remains legible when the page is scrolled; it does not obstruct the tested contact/form actions.']},null,2));console.log('Representative final-build visual review recorded');

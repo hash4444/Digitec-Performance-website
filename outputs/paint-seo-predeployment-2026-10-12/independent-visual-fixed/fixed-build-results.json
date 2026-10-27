@@ -1,0 +1,2446 @@
+{
+  "sourceSha256": "c5f55b95b6830a7371cd48d2782860a8884a213c5c838d97eff1618a74fa329d",
+  "base": "http://127.0.0.1:5292",
+  "executedAt": "2026-10-12T09:37:35.095Z",
+  "passed": true,
+  "caseCount": 28,
+  "totalChecks": 218,
+  "cases": [
+    {
+      "route": "/services/paint-protection-dubai",
+      "width": 390,
+      "theme": "dark",
+      "restored": {
+        "saved": "dark",
+        "colorScheme": "dark",
+        "light": false,
+        "dir": "ltr",
+        "lang": "en",
+        "overflow": 0
+      },
+      "after": {
+        "saved": "light",
+        "light": true,
+        "colorScheme": "light"
+      }
+    },
+    {
+      "route": "/services/paint-protection-dubai",
+      "width": 390,
+      "theme": "light",
+      "restored": {
+        "saved": "light",
+        "colorScheme": "light",
+        "light": true,
+        "dir": "ltr",
+        "lang": "en",
+        "overflow": 0
+      },
+      "after": {
+        "saved": "dark",
+        "light": false,
+        "colorScheme": "dark"
+      }
+    },
+    {
+      "route": "/services/paint-protection-dubai",
+      "width": 1440,
+      "theme": "dark",
+      "restored": {
+        "saved": "dark",
+        "colorScheme": "dark",
+        "light": false,
+        "dir": "ltr",
+        "lang": "en",
+        "overflow": 0
+      },
+      "after": {
+        "saved": "light",
+        "light": true,
+        "colorScheme": "light"
+      }
+    },
+    {
+      "route": "/services/paint-protection-dubai",
+      "width": 1440,
+      "theme": "light",
+      "restored": {
+        "saved": "light",
+        "colorScheme": "light",
+        "light": true,
+        "dir": "ltr",
+        "lang": "en",
+        "overflow": 0
+      },
+      "after": {
+        "saved": "dark",
+        "light": false,
+        "colorScheme": "dark"
+      }
+    },
+    {
+      "route": "/ar/services/paint-protection-dubai",
+      "width": 390,
+      "theme": "dark",
+      "restored": {
+        "saved": "dark",
+        "colorScheme": "dark",
+        "light": false,
+        "dir": "rtl",
+        "lang": "ar",
+        "overflow": 0
+      },
+      "after": {
+        "saved": "light",
+        "light": true,
+        "colorScheme": "light"
+      }
+    },
+    {
+      "route": "/ar/services/paint-protection-dubai",
+      "width": 390,
+      "theme": "light",
+      "restored": {
+        "saved": "light",
+        "colorScheme": "light",
+        "light": true,
+        "dir": "rtl",
+        "lang": "ar",
+        "overflow": 0
+      },
+      "after": {
+        "saved": "dark",
+        "light": false,
+        "colorScheme": "dark"
+      }
+    },
+    {
+      "route": "/ar/services/paint-protection-dubai",
+      "width": 1440,
+      "theme": "dark",
+      "restored": {
+        "saved": "dark",
+        "colorScheme": "dark",
+        "light": false,
+        "dir": "rtl",
+        "lang": "ar",
+        "overflow": 0
+      },
+      "after": {
+        "saved": "light",
+        "light": true,
+        "colorScheme": "light"
+      }
+    },
+    {
+      "route": "/ar/services/paint-protection-dubai",
+      "width": 1440,
+      "theme": "light",
+      "restored": {
+        "saved": "light",
+        "colorScheme": "light",
+        "light": true,
+        "dir": "rtl",
+        "lang": "ar",
+        "overflow": 0
+      },
+      "after": {
+        "saved": "dark",
+        "light": false,
+        "colorScheme": "dark"
+      }
+    },
+    {
+      "route": "/services/paint-protection-film",
+      "width": 390,
+      "theme": "dark",
+      "restored": {
+        "saved": "dark",
+        "colorScheme": "dark",
+        "light": false,
+        "dir": "ltr",
+        "lang": "en",
+        "overflow": 0
+      },
+      "after": {
+        "saved": "light",
+        "light": true,
+        "colorScheme": "light"
+      }
+    },
+    {
+      "route": "/services/paint-protection-film",
+      "width": 390,
+      "theme": "light",
+      "restored": {
+        "saved": "light",
+        "colorScheme": "light",
+        "light": true,
+        "dir": "ltr",
+        "lang": "en",
+        "overflow": 0
+      },
+      "after": {
+        "saved": "dark",
+        "light": false,
+        "colorScheme": "dark"
+      }
+    },
+    {
+      "route": "/services/paint-protection-film",
+      "width": 1440,
+      "theme": "dark",
+      "restored": {
+        "saved": "dark",
+        "colorScheme": "dark",
+        "light": false,
+        "dir": "ltr",
+        "lang": "en",
+        "overflow": 0
+      },
+      "after": {
+        "saved": "light",
+        "light": true,
+        "colorScheme": "light"
+      }
+    },
+    {
+      "route": "/services/paint-protection-film",
+      "width": 1440,
+      "theme": "light",
+      "restored": {
+        "saved": "light",
+        "colorScheme": "light",
+        "light": true,
+        "dir": "ltr",
+        "lang": "en",
+        "overflow": 0
+      },
+      "after": {
+        "saved": "dark",
+        "light": false,
+        "colorScheme": "dark"
+      }
+    },
+    {
+      "route": "/ar/services/paint-protection-film",
+      "width": 320,
+      "theme": "light",
+      "restored": {
+        "saved": "light",
+        "colorScheme": "light",
+        "light": true,
+        "dir": "rtl",
+        "lang": "ar",
+        "overflow": 0
+      },
+      "after": {
+        "saved": "dark",
+        "light": false,
+        "colorScheme": "dark"
+      }
+    },
+    {
+      "route": "/ar/services/paint-protection-film",
+      "width": 390,
+      "theme": "dark",
+      "restored": {
+        "saved": "dark",
+        "colorScheme": "dark",
+        "light": false,
+        "dir": "rtl",
+        "lang": "ar",
+        "overflow": 0
+      },
+      "after": {
+        "saved": "light",
+        "light": true,
+        "colorScheme": "light"
+      }
+    },
+    {
+      "route": "/ar/services/paint-protection-film",
+      "width": 390,
+      "theme": "light",
+      "restored": {
+        "saved": "light",
+        "colorScheme": "light",
+        "light": true,
+        "dir": "rtl",
+        "lang": "ar",
+        "overflow": 0
+      },
+      "after": {
+        "saved": "dark",
+        "light": false,
+        "colorScheme": "dark"
+      }
+    },
+    {
+      "route": "/ar/services/paint-protection-film",
+      "width": 768,
+      "theme": "light",
+      "restored": {
+        "saved": "light",
+        "colorScheme": "light",
+        "light": true,
+        "dir": "rtl",
+        "lang": "ar",
+        "overflow": 0
+      },
+      "after": {
+        "saved": "dark",
+        "light": false,
+        "colorScheme": "dark"
+      }
+    },
+    {
+      "route": "/ar/services/paint-protection-film",
+      "width": 1440,
+      "theme": "dark",
+      "restored": {
+        "saved": "dark",
+        "colorScheme": "dark",
+        "light": false,
+        "dir": "rtl",
+        "lang": "ar",
+        "overflow": 0
+      },
+      "after": {
+        "saved": "light",
+        "light": true,
+        "colorScheme": "light"
+      }
+    },
+    {
+      "route": "/ar/services/paint-protection-film",
+      "width": 1440,
+      "theme": "light",
+      "restored": {
+        "saved": "light",
+        "colorScheme": "light",
+        "light": true,
+        "dir": "rtl",
+        "lang": "ar",
+        "overflow": 0
+      },
+      "after": {
+        "saved": "dark",
+        "light": false,
+        "colorScheme": "dark"
+      }
+    },
+    {
+      "route": "/services/ceramic-coating",
+      "width": 390,
+      "theme": "dark",
+      "restored": {
+        "saved": "dark",
+        "colorScheme": "dark",
+        "light": false,
+        "dir": "ltr",
+        "lang": "en",
+        "overflow": 0
+      },
+      "after": {
+        "saved": "light",
+        "light": true,
+        "colorScheme": "light"
+      }
+    },
+    {
+      "route": "/services/ceramic-coating",
+      "width": 390,
+      "theme": "light",
+      "restored": {
+        "saved": "light",
+        "colorScheme": "light",
+        "light": true,
+        "dir": "ltr",
+        "lang": "en",
+        "overflow": 0
+      },
+      "after": {
+        "saved": "dark",
+        "light": false,
+        "colorScheme": "dark"
+      }
+    },
+    {
+      "route": "/services/ceramic-coating",
+      "width": 1440,
+      "theme": "dark",
+      "restored": {
+        "saved": "dark",
+        "colorScheme": "dark",
+        "light": false,
+        "dir": "ltr",
+        "lang": "en",
+        "overflow": 0
+      },
+      "after": {
+        "saved": "light",
+        "light": true,
+        "colorScheme": "light"
+      }
+    },
+    {
+      "route": "/services/ceramic-coating",
+      "width": 1440,
+      "theme": "light",
+      "restored": {
+        "saved": "light",
+        "colorScheme": "light",
+        "light": true,
+        "dir": "ltr",
+        "lang": "en",
+        "overflow": 0
+      },
+      "after": {
+        "saved": "dark",
+        "light": false,
+        "colorScheme": "dark"
+      }
+    },
+    {
+      "route": "/ar/services/ceramic-coating",
+      "width": 320,
+      "theme": "light",
+      "restored": {
+        "saved": "light",
+        "colorScheme": "light",
+        "light": true,
+        "dir": "rtl",
+        "lang": "ar",
+        "overflow": 0
+      },
+      "after": {
+        "saved": "dark",
+        "light": false,
+        "colorScheme": "dark"
+      }
+    },
+    {
+      "route": "/ar/services/ceramic-coating",
+      "width": 390,
+      "theme": "dark",
+      "restored": {
+        "saved": "dark",
+        "colorScheme": "dark",
+        "light": false,
+        "dir": "rtl",
+        "lang": "ar",
+        "overflow": 0
+      },
+      "after": {
+        "saved": "light",
+        "light": true,
+        "colorScheme": "light"
+      }
+    },
+    {
+      "route": "/ar/services/ceramic-coating",
+      "width": 390,
+      "theme": "light",
+      "restored": {
+        "saved": "light",
+        "colorScheme": "light",
+        "light": true,
+        "dir": "rtl",
+        "lang": "ar",
+        "overflow": 0
+      },
+      "after": {
+        "saved": "dark",
+        "light": false,
+        "colorScheme": "dark"
+      }
+    },
+    {
+      "route": "/ar/services/ceramic-coating",
+      "width": 768,
+      "theme": "light",
+      "restored": {
+        "saved": "light",
+        "colorScheme": "light",
+        "light": true,
+        "dir": "rtl",
+        "lang": "ar",
+        "overflow": 0
+      },
+      "after": {
+        "saved": "dark",
+        "light": false,
+        "colorScheme": "dark"
+      }
+    },
+    {
+      "route": "/ar/services/ceramic-coating",
+      "width": 1440,
+      "theme": "dark",
+      "restored": {
+        "saved": "dark",
+        "colorScheme": "dark",
+        "light": false,
+        "dir": "rtl",
+        "lang": "ar",
+        "overflow": 0
+      },
+      "after": {
+        "saved": "light",
+        "light": true,
+        "colorScheme": "light"
+      }
+    },
+    {
+      "route": "/ar/services/ceramic-coating",
+      "width": 1440,
+      "theme": "light",
+      "restored": {
+        "saved": "light",
+        "colorScheme": "light",
+        "light": true,
+        "dir": "rtl",
+        "lang": "ar",
+        "overflow": 0
+      },
+      "after": {
+        "saved": "dark",
+        "light": false,
+        "colorScheme": "dark"
+      }
+    }
+  ],
+  "checks": [
+    {
+      "pass": true,
+      "name": "en-paint-protection-dubai-390-dark saved theme restores after actual hydration",
+      "details": {
+        "saved": "dark",
+        "colorScheme": "dark",
+        "light": false,
+        "dir": "ltr",
+        "lang": "en",
+        "overflow": 0
+      }
+    },
+    {
+      "pass": true,
+      "name": "en-paint-protection-dubai-390-dark locale correct",
+      "details": {
+        "saved": "dark",
+        "colorScheme": "dark",
+        "light": false,
+        "dir": "ltr",
+        "lang": "en",
+        "overflow": 0
+      }
+    },
+    {
+      "pass": true,
+      "name": "en-paint-protection-dubai-390-dark no horizontal overflow",
+      "details": 0
+    },
+    {
+      "pass": true,
+      "name": "en-paint-protection-dubai-390-dark initial theme icon and accessible label agree",
+      "details": "Use light theme"
+    },
+    {
+      "pass": true,
+      "name": "en-paint-protection-dubai-390-dark UI toggle survives reload",
+      "details": {
+        "saved": "light",
+        "light": true,
+        "colorScheme": "light"
+      }
+    },
+    {
+      "pass": true,
+      "name": "en-paint-protection-dubai-390-light saved theme restores after actual hydration",
+      "details": {
+        "saved": "light",
+        "colorScheme": "light",
+        "light": true,
+        "dir": "ltr",
+        "lang": "en",
+        "overflow": 0
+      }
+    },
+    {
+      "pass": true,
+      "name": "en-paint-protection-dubai-390-light locale correct",
+      "details": {
+        "saved": "light",
+        "colorScheme": "light",
+        "light": true,
+        "dir": "ltr",
+        "lang": "en",
+        "overflow": 0
+      }
+    },
+    {
+      "pass": true,
+      "name": "en-paint-protection-dubai-390-light no horizontal overflow",
+      "details": 0
+    },
+    {
+      "pass": true,
+      "name": "en-paint-protection-dubai-390-light initial theme icon and accessible label agree",
+      "details": "Use dark theme"
+    },
+    {
+      "pass": true,
+      "name": "en-paint-protection-dubai-390-light UI toggle survives reload",
+      "details": {
+        "saved": "dark",
+        "light": false,
+        "colorScheme": "dark"
+      }
+    },
+    {
+      "pass": true,
+      "name": "en-paint-protection-dubai-1440-dark saved theme restores after actual hydration",
+      "details": {
+        "saved": "dark",
+        "colorScheme": "dark",
+        "light": false,
+        "dir": "ltr",
+        "lang": "en",
+        "overflow": 0
+      }
+    },
+    {
+      "pass": true,
+      "name": "en-paint-protection-dubai-1440-dark locale correct",
+      "details": {
+        "saved": "dark",
+        "colorScheme": "dark",
+        "light": false,
+        "dir": "ltr",
+        "lang": "en",
+        "overflow": 0
+      }
+    },
+    {
+      "pass": true,
+      "name": "en-paint-protection-dubai-1440-dark no horizontal overflow",
+      "details": 0
+    },
+    {
+      "pass": true,
+      "name": "en-paint-protection-dubai-1440-dark initial theme icon and accessible label agree",
+      "details": "Use light theme"
+    },
+    {
+      "pass": true,
+      "name": "en-paint-protection-dubai-1440-dark UI toggle survives reload",
+      "details": {
+        "saved": "light",
+        "light": true,
+        "colorScheme": "light"
+      }
+    },
+    {
+      "pass": true,
+      "name": "en-paint-protection-dubai-1440-light saved theme restores after actual hydration",
+      "details": {
+        "saved": "light",
+        "colorScheme": "light",
+        "light": true,
+        "dir": "ltr",
+        "lang": "en",
+        "overflow": 0
+      }
+    },
+    {
+      "pass": true,
+      "name": "en-paint-protection-dubai-1440-light locale correct",
+      "details": {
+        "saved": "light",
+        "colorScheme": "light",
+        "light": true,
+        "dir": "ltr",
+        "lang": "en",
+        "overflow": 0
+      }
+    },
+    {
+      "pass": true,
+      "name": "en-paint-protection-dubai-1440-light no horizontal overflow",
+      "details": 0
+    },
+    {
+      "pass": true,
+      "name": "en-paint-protection-dubai-1440-light initial theme icon and accessible label agree",
+      "details": "Use dark theme"
+    },
+    {
+      "pass": true,
+      "name": "en-paint-protection-dubai-1440-light UI toggle survives reload",
+      "details": {
+        "saved": "dark",
+        "light": false,
+        "colorScheme": "dark"
+      }
+    },
+    {
+      "pass": true,
+      "name": "ar-paint-protection-dubai-390-dark saved theme restores after actual hydration",
+      "details": {
+        "saved": "dark",
+        "colorScheme": "dark",
+        "light": false,
+        "dir": "rtl",
+        "lang": "ar",
+        "overflow": 0
+      }
+    },
+    {
+      "pass": true,
+      "name": "ar-paint-protection-dubai-390-dark locale correct",
+      "details": {
+        "saved": "dark",
+        "colorScheme": "dark",
+        "light": false,
+        "dir": "rtl",
+        "lang": "ar",
+        "overflow": 0
+      }
+    },
+    {
+      "pass": true,
+      "name": "ar-paint-protection-dubai-390-dark no horizontal overflow",
+      "details": 0
+    },
+    {
+      "pass": true,
+      "name": "ar-paint-protection-dubai-390-dark initial theme icon and accessible label agree",
+      "details": "تفعيل المظهر الفاتح"
+    },
+    {
+      "pass": true,
+      "name": "ar-paint-protection-dubai-390-dark UI toggle survives reload",
+      "details": {
+        "saved": "light",
+        "light": true,
+        "colorScheme": "light"
+      }
+    },
+    {
+      "pass": true,
+      "name": "ar-paint-protection-dubai-390-light saved theme restores after actual hydration",
+      "details": {
+        "saved": "light",
+        "colorScheme": "light",
+        "light": true,
+        "dir": "rtl",
+        "lang": "ar",
+        "overflow": 0
+      }
+    },
+    {
+      "pass": true,
+      "name": "ar-paint-protection-dubai-390-light locale correct",
+      "details": {
+        "saved": "light",
+        "colorScheme": "light",
+        "light": true,
+        "dir": "rtl",
+        "lang": "ar",
+        "overflow": 0
+      }
+    },
+    {
+      "pass": true,
+      "name": "ar-paint-protection-dubai-390-light no horizontal overflow",
+      "details": 0
+    },
+    {
+      "pass": true,
+      "name": "ar-paint-protection-dubai-390-light initial theme icon and accessible label agree",
+      "details": "تفعيل المظهر الداكن"
+    },
+    {
+      "pass": true,
+      "name": "ar-paint-protection-dubai-390-light UI toggle survives reload",
+      "details": {
+        "saved": "dark",
+        "light": false,
+        "colorScheme": "dark"
+      }
+    },
+    {
+      "pass": true,
+      "name": "ar-paint-protection-dubai-1440-dark saved theme restores after actual hydration",
+      "details": {
+        "saved": "dark",
+        "colorScheme": "dark",
+        "light": false,
+        "dir": "rtl",
+        "lang": "ar",
+        "overflow": 0
+      }
+    },
+    {
+      "pass": true,
+      "name": "ar-paint-protection-dubai-1440-dark locale correct",
+      "details": {
+        "saved": "dark",
+        "colorScheme": "dark",
+        "light": false,
+        "dir": "rtl",
+        "lang": "ar",
+        "overflow": 0
+      }
+    },
+    {
+      "pass": true,
+      "name": "ar-paint-protection-dubai-1440-dark no horizontal overflow",
+      "details": 0
+    },
+    {
+      "pass": true,
+      "name": "ar-paint-protection-dubai-1440-dark initial theme icon and accessible label agree",
+      "details": "تفعيل المظهر الفاتح"
+    },
+    {
+      "pass": true,
+      "name": "ar-paint-protection-dubai-1440-dark UI toggle survives reload",
+      "details": {
+        "saved": "light",
+        "light": true,
+        "colorScheme": "light"
+      }
+    },
+    {
+      "pass": true,
+      "name": "ar-paint-protection-dubai-1440-light saved theme restores after actual hydration",
+      "details": {
+        "saved": "light",
+        "colorScheme": "light",
+        "light": true,
+        "dir": "rtl",
+        "lang": "ar",
+        "overflow": 0
+      }
+    },
+    {
+      "pass": true,
+      "name": "ar-paint-protection-dubai-1440-light locale correct",
+      "details": {
+        "saved": "light",
+        "colorScheme": "light",
+        "light": true,
+        "dir": "rtl",
+        "lang": "ar",
+        "overflow": 0
+      }
+    },
+    {
+      "pass": true,
+      "name": "ar-paint-protection-dubai-1440-light no horizontal overflow",
+      "details": 0
+    },
+    {
+      "pass": true,
+      "name": "ar-paint-protection-dubai-1440-light initial theme icon and accessible label agree",
+      "details": "تفعيل المظهر الداكن"
+    },
+    {
+      "pass": true,
+      "name": "ar-paint-protection-dubai-1440-light UI toggle survives reload",
+      "details": {
+        "saved": "dark",
+        "light": false,
+        "colorScheme": "dark"
+      }
+    },
+    {
+      "pass": true,
+      "name": "en-paint-protection-film-390-dark saved theme restores after actual hydration",
+      "details": {
+        "saved": "dark",
+        "colorScheme": "dark",
+        "light": false,
+        "dir": "ltr",
+        "lang": "en",
+        "overflow": 0
+      }
+    },
+    {
+      "pass": true,
+      "name": "en-paint-protection-film-390-dark locale correct",
+      "details": {
+        "saved": "dark",
+        "colorScheme": "dark",
+        "light": false,
+        "dir": "ltr",
+        "lang": "en",
+        "overflow": 0
+      }
+    },
+    {
+      "pass": true,
+      "name": "en-paint-protection-film-390-dark no horizontal overflow",
+      "details": 0
+    },
+    {
+      "pass": true,
+      "name": "en-paint-protection-film-390-dark initial theme icon and accessible label agree",
+      "details": "Use light theme"
+    },
+    {
+      "pass": true,
+      "name": "en-paint-protection-film-390-dark UI toggle survives reload",
+      "details": {
+        "saved": "light",
+        "light": true,
+        "colorScheme": "light"
+      }
+    },
+    {
+      "pass": true,
+      "name": "en-paint-protection-film-390-light saved theme restores after actual hydration",
+      "details": {
+        "saved": "light",
+        "colorScheme": "light",
+        "light": true,
+        "dir": "ltr",
+        "lang": "en",
+        "overflow": 0
+      }
+    },
+    {
+      "pass": true,
+      "name": "en-paint-protection-film-390-light locale correct",
+      "details": {
+        "saved": "light",
+        "colorScheme": "light",
+        "light": true,
+        "dir": "ltr",
+        "lang": "en",
+        "overflow": 0
+      }
+    },
+    {
+      "pass": true,
+      "name": "en-paint-protection-film-390-light no horizontal overflow",
+      "details": 0
+    },
+    {
+      "pass": true,
+      "name": "en-paint-protection-film-390-light initial theme icon and accessible label agree",
+      "details": "Use dark theme"
+    },
+    {
+      "pass": true,
+      "name": "en-paint-protection-film-390-light UI toggle survives reload",
+      "details": {
+        "saved": "dark",
+        "light": false,
+        "colorScheme": "dark"
+      }
+    },
+    {
+      "pass": true,
+      "name": "en-paint-protection-film-1440-dark saved theme restores after actual hydration",
+      "details": {
+        "saved": "dark",
+        "colorScheme": "dark",
+        "light": false,
+        "dir": "ltr",
+        "lang": "en",
+        "overflow": 0
+      }
+    },
+    {
+      "pass": true,
+      "name": "en-paint-protection-film-1440-dark locale correct",
+      "details": {
+        "saved": "dark",
+        "colorScheme": "dark",
+        "light": false,
+        "dir": "ltr",
+        "lang": "en",
+        "overflow": 0
+      }
+    },
+    {
+      "pass": true,
+      "name": "en-paint-protection-film-1440-dark no horizontal overflow",
+      "details": 0
+    },
+    {
+      "pass": true,
+      "name": "en-paint-protection-film-1440-dark initial theme icon and accessible label agree",
+      "details": "Use light theme"
+    },
+    {
+      "pass": true,
+      "name": "en-paint-protection-film-1440-dark UI toggle survives reload",
+      "details": {
+        "saved": "light",
+        "light": true,
+        "colorScheme": "light"
+      }
+    },
+    {
+      "pass": true,
+      "name": "en-paint-protection-film-1440-light saved theme restores after actual hydration",
+      "details": {
+        "saved": "light",
+        "colorScheme": "light",
+        "light": true,
+        "dir": "ltr",
+        "lang": "en",
+        "overflow": 0
+      }
+    },
+    {
+      "pass": true,
+      "name": "en-paint-protection-film-1440-light locale correct",
+      "details": {
+        "saved": "light",
+        "colorScheme": "light",
+        "light": true,
+        "dir": "ltr",
+        "lang": "en",
+        "overflow": 0
+      }
+    },
+    {
+      "pass": true,
+      "name": "en-paint-protection-film-1440-light no horizontal overflow",
+      "details": 0
+    },
+    {
+      "pass": true,
+      "name": "en-paint-protection-film-1440-light initial theme icon and accessible label agree",
+      "details": "Use dark theme"
+    },
+    {
+      "pass": true,
+      "name": "en-paint-protection-film-1440-light UI toggle survives reload",
+      "details": {
+        "saved": "dark",
+        "light": false,
+        "colorScheme": "dark"
+      }
+    },
+    {
+      "pass": true,
+      "name": "ar-paint-protection-film-320-light saved theme restores after actual hydration",
+      "details": {
+        "saved": "light",
+        "colorScheme": "light",
+        "light": true,
+        "dir": "rtl",
+        "lang": "ar",
+        "overflow": 0
+      }
+    },
+    {
+      "pass": true,
+      "name": "ar-paint-protection-film-320-light locale correct",
+      "details": {
+        "saved": "light",
+        "colorScheme": "light",
+        "light": true,
+        "dir": "rtl",
+        "lang": "ar",
+        "overflow": 0
+      }
+    },
+    {
+      "pass": true,
+      "name": "ar-paint-protection-film-320-light no horizontal overflow",
+      "details": 0
+    },
+    {
+      "pass": true,
+      "name": "ar-paint-protection-film-320-light initial theme icon and accessible label agree",
+      "details": "تفعيل المظهر الداكن"
+    },
+    {
+      "pass": true,
+      "name": "ar-paint-protection-film-320-light hero Call label remains light on dark photo",
+      "details": {
+        "callColor": "rgb(255, 255, 255)",
+        "callBorder": "rgba(255, 255, 255, 0.4)",
+        "callBackground": "rgba(0, 0, 0, 0)",
+        "breadcrumbColor": "rgba(255, 255, 255, 0.68)",
+        "headerBottom": 76,
+        "breadcrumbTop": 226
+      }
+    },
+    {
+      "pass": true,
+      "name": "ar-paint-protection-film-320-light hero Call border remains light on dark photo",
+      "details": "rgba(255, 255, 255, 0.4)"
+    },
+    {
+      "pass": true,
+      "name": "ar-paint-protection-film-320-light breadcrumb remains light on dark photo",
+      "details": "rgba(255, 255, 255, 0.68)"
+    },
+    {
+      "pass": true,
+      "name": "ar-paint-protection-film-320-light fixed header clears breadcrumb",
+      "details": {
+        "callColor": "rgb(255, 255, 255)",
+        "callBorder": "rgba(255, 255, 255, 0.4)",
+        "callBackground": "rgba(0, 0, 0, 0)",
+        "breadcrumbColor": "rgba(255, 255, 255, 0.68)",
+        "headerBottom": 76,
+        "breadcrumbTop": 226
+      }
+    },
+    {
+      "pass": true,
+      "name": "ar-paint-protection-film-320-light final Call label contrasts with section theme",
+      "details": {
+        "color": "rgb(24, 25, 24)",
+        "border": "rgba(24, 25, 24, 0.22)",
+        "href": "tel:+97143402223",
+        "text": "اتصل على +971 4 340 2223",
+        "sectionBackground": "rgb(244, 244, 241)"
+      }
+    },
+    {
+      "pass": true,
+      "name": "ar-paint-protection-film-320-light final phone href preserved",
+      "details": "tel:+97143402223"
+    },
+    {
+      "pass": true,
+      "name": "ar-paint-protection-film-320-light UI toggle survives reload",
+      "details": {
+        "saved": "dark",
+        "light": false,
+        "colorScheme": "dark"
+      }
+    },
+    {
+      "pass": true,
+      "name": "ar-paint-protection-film-390-dark saved theme restores after actual hydration",
+      "details": {
+        "saved": "dark",
+        "colorScheme": "dark",
+        "light": false,
+        "dir": "rtl",
+        "lang": "ar",
+        "overflow": 0
+      }
+    },
+    {
+      "pass": true,
+      "name": "ar-paint-protection-film-390-dark locale correct",
+      "details": {
+        "saved": "dark",
+        "colorScheme": "dark",
+        "light": false,
+        "dir": "rtl",
+        "lang": "ar",
+        "overflow": 0
+      }
+    },
+    {
+      "pass": true,
+      "name": "ar-paint-protection-film-390-dark no horizontal overflow",
+      "details": 0
+    },
+    {
+      "pass": true,
+      "name": "ar-paint-protection-film-390-dark initial theme icon and accessible label agree",
+      "details": "تفعيل المظهر الفاتح"
+    },
+    {
+      "pass": true,
+      "name": "ar-paint-protection-film-390-dark hero Call label remains light on dark photo",
+      "details": {
+        "callColor": "rgb(250, 250, 250)",
+        "callBorder": "rgba(255, 255, 255, 0.2)",
+        "callBackground": "rgba(0, 0, 0, 0)",
+        "breadcrumbColor": "rgb(250, 250, 250)",
+        "headerBottom": 76,
+        "breadcrumbTop": 226
+      }
+    },
+    {
+      "pass": true,
+      "name": "ar-paint-protection-film-390-dark hero Call border remains light on dark photo",
+      "details": "rgba(255, 255, 255, 0.2)"
+    },
+    {
+      "pass": true,
+      "name": "ar-paint-protection-film-390-dark breadcrumb remains light on dark photo",
+      "details": "rgb(250, 250, 250)"
+    },
+    {
+      "pass": true,
+      "name": "ar-paint-protection-film-390-dark fixed header clears breadcrumb",
+      "details": {
+        "callColor": "rgb(250, 250, 250)",
+        "callBorder": "rgba(255, 255, 255, 0.2)",
+        "callBackground": "rgba(0, 0, 0, 0)",
+        "breadcrumbColor": "rgb(250, 250, 250)",
+        "headerBottom": 76,
+        "breadcrumbTop": 226
+      }
+    },
+    {
+      "pass": true,
+      "name": "ar-paint-protection-film-390-dark final Call label contrasts with section theme",
+      "details": {
+        "color": "rgb(255, 255, 255)",
+        "border": "rgba(255, 255, 255, 0.2)",
+        "href": "tel:+97143402223",
+        "text": "اتصل على +971 4 340 2223",
+        "sectionBackground": "rgb(16, 17, 19)"
+      }
+    },
+    {
+      "pass": true,
+      "name": "ar-paint-protection-film-390-dark final phone href preserved",
+      "details": "tel:+97143402223"
+    },
+    {
+      "pass": true,
+      "name": "ar-paint-protection-film-390-dark UI toggle survives reload",
+      "details": {
+        "saved": "light",
+        "light": true,
+        "colorScheme": "light"
+      }
+    },
+    {
+      "pass": true,
+      "name": "ar-paint-protection-film-390-light saved theme restores after actual hydration",
+      "details": {
+        "saved": "light",
+        "colorScheme": "light",
+        "light": true,
+        "dir": "rtl",
+        "lang": "ar",
+        "overflow": 0
+      }
+    },
+    {
+      "pass": true,
+      "name": "ar-paint-protection-film-390-light locale correct",
+      "details": {
+        "saved": "light",
+        "colorScheme": "light",
+        "light": true,
+        "dir": "rtl",
+        "lang": "ar",
+        "overflow": 0
+      }
+    },
+    {
+      "pass": true,
+      "name": "ar-paint-protection-film-390-light no horizontal overflow",
+      "details": 0
+    },
+    {
+      "pass": true,
+      "name": "ar-paint-protection-film-390-light initial theme icon and accessible label agree",
+      "details": "تفعيل المظهر الداكن"
+    },
+    {
+      "pass": true,
+      "name": "ar-paint-protection-film-390-light hero Call label remains light on dark photo",
+      "details": {
+        "callColor": "rgb(255, 255, 255)",
+        "callBorder": "rgba(255, 255, 255, 0.4)",
+        "callBackground": "rgba(0, 0, 0, 0)",
+        "breadcrumbColor": "rgba(255, 255, 255, 0.68)",
+        "headerBottom": 76,
+        "breadcrumbTop": 226
+      }
+    },
+    {
+      "pass": true,
+      "name": "ar-paint-protection-film-390-light hero Call border remains light on dark photo",
+      "details": "rgba(255, 255, 255, 0.4)"
+    },
+    {
+      "pass": true,
+      "name": "ar-paint-protection-film-390-light breadcrumb remains light on dark photo",
+      "details": "rgba(255, 255, 255, 0.68)"
+    },
+    {
+      "pass": true,
+      "name": "ar-paint-protection-film-390-light fixed header clears breadcrumb",
+      "details": {
+        "callColor": "rgb(255, 255, 255)",
+        "callBorder": "rgba(255, 255, 255, 0.4)",
+        "callBackground": "rgba(0, 0, 0, 0)",
+        "breadcrumbColor": "rgba(255, 255, 255, 0.68)",
+        "headerBottom": 76,
+        "breadcrumbTop": 226
+      }
+    },
+    {
+      "pass": true,
+      "name": "ar-paint-protection-film-390-light final Call label contrasts with section theme",
+      "details": {
+        "color": "rgb(24, 25, 24)",
+        "border": "rgba(24, 25, 24, 0.22)",
+        "href": "tel:+97143402223",
+        "text": "اتصل على +971 4 340 2223",
+        "sectionBackground": "rgb(244, 244, 241)"
+      }
+    },
+    {
+      "pass": true,
+      "name": "ar-paint-protection-film-390-light final phone href preserved",
+      "details": "tel:+97143402223"
+    },
+    {
+      "pass": true,
+      "name": "ar-paint-protection-film-390-light UI toggle survives reload",
+      "details": {
+        "saved": "dark",
+        "light": false,
+        "colorScheme": "dark"
+      }
+    },
+    {
+      "pass": true,
+      "name": "ar-paint-protection-film-768-light saved theme restores after actual hydration",
+      "details": {
+        "saved": "light",
+        "colorScheme": "light",
+        "light": true,
+        "dir": "rtl",
+        "lang": "ar",
+        "overflow": 0
+      }
+    },
+    {
+      "pass": true,
+      "name": "ar-paint-protection-film-768-light locale correct",
+      "details": {
+        "saved": "light",
+        "colorScheme": "light",
+        "light": true,
+        "dir": "rtl",
+        "lang": "ar",
+        "overflow": 0
+      }
+    },
+    {
+      "pass": true,
+      "name": "ar-paint-protection-film-768-light no horizontal overflow",
+      "details": 0
+    },
+    {
+      "pass": true,
+      "name": "ar-paint-protection-film-768-light initial theme icon and accessible label agree",
+      "details": "تفعيل المظهر الداكن"
+    },
+    {
+      "pass": true,
+      "name": "ar-paint-protection-film-768-light hero Call label remains light on dark photo",
+      "details": {
+        "callColor": "rgb(255, 255, 255)",
+        "callBorder": "rgba(255, 255, 255, 0.4)",
+        "callBackground": "rgba(0, 0, 0, 0)",
+        "breadcrumbColor": "rgba(255, 255, 255, 0.68)",
+        "headerBottom": 80,
+        "breadcrumbTop": 362.390625
+      }
+    },
+    {
+      "pass": true,
+      "name": "ar-paint-protection-film-768-light hero Call border remains light on dark photo",
+      "details": "rgba(255, 255, 255, 0.4)"
+    },
+    {
+      "pass": true,
+      "name": "ar-paint-protection-film-768-light breadcrumb remains light on dark photo",
+      "details": "rgba(255, 255, 255, 0.68)"
+    },
+    {
+      "pass": true,
+      "name": "ar-paint-protection-film-768-light fixed header clears breadcrumb",
+      "details": {
+        "callColor": "rgb(255, 255, 255)",
+        "callBorder": "rgba(255, 255, 255, 0.4)",
+        "callBackground": "rgba(0, 0, 0, 0)",
+        "breadcrumbColor": "rgba(255, 255, 255, 0.68)",
+        "headerBottom": 80,
+        "breadcrumbTop": 362.390625
+      }
+    },
+    {
+      "pass": true,
+      "name": "ar-paint-protection-film-768-light final Call label contrasts with section theme",
+      "details": {
+        "color": "rgb(24, 25, 24)",
+        "border": "rgba(24, 25, 24, 0.22)",
+        "href": "tel:+97143402223",
+        "text": "اتصل على +971 4 340 2223",
+        "sectionBackground": "rgb(244, 244, 241)"
+      }
+    },
+    {
+      "pass": true,
+      "name": "ar-paint-protection-film-768-light final phone href preserved",
+      "details": "tel:+97143402223"
+    },
+    {
+      "pass": true,
+      "name": "ar-paint-protection-film-768-light UI toggle survives reload",
+      "details": {
+        "saved": "dark",
+        "light": false,
+        "colorScheme": "dark"
+      }
+    },
+    {
+      "pass": true,
+      "name": "ar-paint-protection-film-1440-dark saved theme restores after actual hydration",
+      "details": {
+        "saved": "dark",
+        "colorScheme": "dark",
+        "light": false,
+        "dir": "rtl",
+        "lang": "ar",
+        "overflow": 0
+      }
+    },
+    {
+      "pass": true,
+      "name": "ar-paint-protection-film-1440-dark locale correct",
+      "details": {
+        "saved": "dark",
+        "colorScheme": "dark",
+        "light": false,
+        "dir": "rtl",
+        "lang": "ar",
+        "overflow": 0
+      }
+    },
+    {
+      "pass": true,
+      "name": "ar-paint-protection-film-1440-dark no horizontal overflow",
+      "details": 0
+    },
+    {
+      "pass": true,
+      "name": "ar-paint-protection-film-1440-dark initial theme icon and accessible label agree",
+      "details": "تفعيل المظهر الفاتح"
+    },
+    {
+      "pass": true,
+      "name": "ar-paint-protection-film-1440-dark hero Call label remains light on dark photo",
+      "details": {
+        "callColor": "rgb(250, 250, 250)",
+        "callBorder": "rgba(255, 255, 255, 0.2)",
+        "callBackground": "rgba(0, 0, 0, 0)",
+        "breadcrumbColor": "rgb(250, 250, 250)",
+        "headerBottom": 98,
+        "breadcrumbTop": 292.40625
+      }
+    },
+    {
+      "pass": true,
+      "name": "ar-paint-protection-film-1440-dark hero Call border remains light on dark photo",
+      "details": "rgba(255, 255, 255, 0.2)"
+    },
+    {
+      "pass": true,
+      "name": "ar-paint-protection-film-1440-dark breadcrumb remains light on dark photo",
+      "details": "rgb(250, 250, 250)"
+    },
+    {
+      "pass": true,
+      "name": "ar-paint-protection-film-1440-dark fixed header clears breadcrumb",
+      "details": {
+        "callColor": "rgb(250, 250, 250)",
+        "callBorder": "rgba(255, 255, 255, 0.2)",
+        "callBackground": "rgba(0, 0, 0, 0)",
+        "breadcrumbColor": "rgb(250, 250, 250)",
+        "headerBottom": 98,
+        "breadcrumbTop": 292.40625
+      }
+    },
+    {
+      "pass": true,
+      "name": "ar-paint-protection-film-1440-dark final Call label contrasts with section theme",
+      "details": {
+        "color": "rgb(255, 255, 255)",
+        "border": "rgba(255, 255, 255, 0.2)",
+        "href": "tel:+97143402223",
+        "text": "اتصل على +971 4 340 2223",
+        "sectionBackground": "rgb(16, 17, 19)"
+      }
+    },
+    {
+      "pass": true,
+      "name": "ar-paint-protection-film-1440-dark final phone href preserved",
+      "details": "tel:+97143402223"
+    },
+    {
+      "pass": true,
+      "name": "ar-paint-protection-film-1440-dark UI toggle survives reload",
+      "details": {
+        "saved": "light",
+        "light": true,
+        "colorScheme": "light"
+      }
+    },
+    {
+      "pass": true,
+      "name": "ar-paint-protection-film-1440-light saved theme restores after actual hydration",
+      "details": {
+        "saved": "light",
+        "colorScheme": "light",
+        "light": true,
+        "dir": "rtl",
+        "lang": "ar",
+        "overflow": 0
+      }
+    },
+    {
+      "pass": true,
+      "name": "ar-paint-protection-film-1440-light locale correct",
+      "details": {
+        "saved": "light",
+        "colorScheme": "light",
+        "light": true,
+        "dir": "rtl",
+        "lang": "ar",
+        "overflow": 0
+      }
+    },
+    {
+      "pass": true,
+      "name": "ar-paint-protection-film-1440-light no horizontal overflow",
+      "details": 0
+    },
+    {
+      "pass": true,
+      "name": "ar-paint-protection-film-1440-light initial theme icon and accessible label agree",
+      "details": "تفعيل المظهر الداكن"
+    },
+    {
+      "pass": true,
+      "name": "ar-paint-protection-film-1440-light hero Call label remains light on dark photo",
+      "details": {
+        "callColor": "rgb(255, 255, 255)",
+        "callBorder": "rgba(255, 255, 255, 0.4)",
+        "callBackground": "rgba(0, 0, 0, 0)",
+        "breadcrumbColor": "rgba(255, 255, 255, 0.68)",
+        "headerBottom": 98,
+        "breadcrumbTop": 292.40625
+      }
+    },
+    {
+      "pass": true,
+      "name": "ar-paint-protection-film-1440-light hero Call border remains light on dark photo",
+      "details": "rgba(255, 255, 255, 0.4)"
+    },
+    {
+      "pass": true,
+      "name": "ar-paint-protection-film-1440-light breadcrumb remains light on dark photo",
+      "details": "rgba(255, 255, 255, 0.68)"
+    },
+    {
+      "pass": true,
+      "name": "ar-paint-protection-film-1440-light fixed header clears breadcrumb",
+      "details": {
+        "callColor": "rgb(255, 255, 255)",
+        "callBorder": "rgba(255, 255, 255, 0.4)",
+        "callBackground": "rgba(0, 0, 0, 0)",
+        "breadcrumbColor": "rgba(255, 255, 255, 0.68)",
+        "headerBottom": 98,
+        "breadcrumbTop": 292.40625
+      }
+    },
+    {
+      "pass": true,
+      "name": "ar-paint-protection-film-1440-light final Call label contrasts with section theme",
+      "details": {
+        "color": "rgb(24, 25, 24)",
+        "border": "rgba(24, 25, 24, 0.22)",
+        "href": "tel:+97143402223",
+        "text": "اتصل على +971 4 340 2223",
+        "sectionBackground": "rgb(244, 244, 241)"
+      }
+    },
+    {
+      "pass": true,
+      "name": "ar-paint-protection-film-1440-light final phone href preserved",
+      "details": "tel:+97143402223"
+    },
+    {
+      "pass": true,
+      "name": "ar-paint-protection-film-1440-light UI toggle survives reload",
+      "details": {
+        "saved": "dark",
+        "light": false,
+        "colorScheme": "dark"
+      }
+    },
+    {
+      "pass": true,
+      "name": "en-ceramic-coating-390-dark saved theme restores after actual hydration",
+      "details": {
+        "saved": "dark",
+        "colorScheme": "dark",
+        "light": false,
+        "dir": "ltr",
+        "lang": "en",
+        "overflow": 0
+      }
+    },
+    {
+      "pass": true,
+      "name": "en-ceramic-coating-390-dark locale correct",
+      "details": {
+        "saved": "dark",
+        "colorScheme": "dark",
+        "light": false,
+        "dir": "ltr",
+        "lang": "en",
+        "overflow": 0
+      }
+    },
+    {
+      "pass": true,
+      "name": "en-ceramic-coating-390-dark no horizontal overflow",
+      "details": 0
+    },
+    {
+      "pass": true,
+      "name": "en-ceramic-coating-390-dark initial theme icon and accessible label agree",
+      "details": "Use light theme"
+    },
+    {
+      "pass": true,
+      "name": "en-ceramic-coating-390-dark UI toggle survives reload",
+      "details": {
+        "saved": "light",
+        "light": true,
+        "colorScheme": "light"
+      }
+    },
+    {
+      "pass": true,
+      "name": "en-ceramic-coating-390-light saved theme restores after actual hydration",
+      "details": {
+        "saved": "light",
+        "colorScheme": "light",
+        "light": true,
+        "dir": "ltr",
+        "lang": "en",
+        "overflow": 0
+      }
+    },
+    {
+      "pass": true,
+      "name": "en-ceramic-coating-390-light locale correct",
+      "details": {
+        "saved": "light",
+        "colorScheme": "light",
+        "light": true,
+        "dir": "ltr",
+        "lang": "en",
+        "overflow": 0
+      }
+    },
+    {
+      "pass": true,
+      "name": "en-ceramic-coating-390-light no horizontal overflow",
+      "details": 0
+    },
+    {
+      "pass": true,
+      "name": "en-ceramic-coating-390-light initial theme icon and accessible label agree",
+      "details": "Use dark theme"
+    },
+    {
+      "pass": true,
+      "name": "en-ceramic-coating-390-light UI toggle survives reload",
+      "details": {
+        "saved": "dark",
+        "light": false,
+        "colorScheme": "dark"
+      }
+    },
+    {
+      "pass": true,
+      "name": "en-ceramic-coating-1440-dark saved theme restores after actual hydration",
+      "details": {
+        "saved": "dark",
+        "colorScheme": "dark",
+        "light": false,
+        "dir": "ltr",
+        "lang": "en",
+        "overflow": 0
+      }
+    },
+    {
+      "pass": true,
+      "name": "en-ceramic-coating-1440-dark locale correct",
+      "details": {
+        "saved": "dark",
+        "colorScheme": "dark",
+        "light": false,
+        "dir": "ltr",
+        "lang": "en",
+        "overflow": 0
+      }
+    },
+    {
+      "pass": true,
+      "name": "en-ceramic-coating-1440-dark no horizontal overflow",
+      "details": 0
+    },
+    {
+      "pass": true,
+      "name": "en-ceramic-coating-1440-dark initial theme icon and accessible label agree",
+      "details": "Use light theme"
+    },
+    {
+      "pass": true,
+      "name": "en-ceramic-coating-1440-dark UI toggle survives reload",
+      "details": {
+        "saved": "light",
+        "light": true,
+        "colorScheme": "light"
+      }
+    },
+    {
+      "pass": true,
+      "name": "en-ceramic-coating-1440-light saved theme restores after actual hydration",
+      "details": {
+        "saved": "light",
+        "colorScheme": "light",
+        "light": true,
+        "dir": "ltr",
+        "lang": "en",
+        "overflow": 0
+      }
+    },
+    {
+      "pass": true,
+      "name": "en-ceramic-coating-1440-light locale correct",
+      "details": {
+        "saved": "light",
+        "colorScheme": "light",
+        "light": true,
+        "dir": "ltr",
+        "lang": "en",
+        "overflow": 0
+      }
+    },
+    {
+      "pass": true,
+      "name": "en-ceramic-coating-1440-light no horizontal overflow",
+      "details": 0
+    },
+    {
+      "pass": true,
+      "name": "en-ceramic-coating-1440-light initial theme icon and accessible label agree",
+      "details": "Use dark theme"
+    },
+    {
+      "pass": true,
+      "name": "en-ceramic-coating-1440-light UI toggle survives reload",
+      "details": {
+        "saved": "dark",
+        "light": false,
+        "colorScheme": "dark"
+      }
+    },
+    {
+      "pass": true,
+      "name": "ar-ceramic-coating-320-light saved theme restores after actual hydration",
+      "details": {
+        "saved": "light",
+        "colorScheme": "light",
+        "light": true,
+        "dir": "rtl",
+        "lang": "ar",
+        "overflow": 0
+      }
+    },
+    {
+      "pass": true,
+      "name": "ar-ceramic-coating-320-light locale correct",
+      "details": {
+        "saved": "light",
+        "colorScheme": "light",
+        "light": true,
+        "dir": "rtl",
+        "lang": "ar",
+        "overflow": 0
+      }
+    },
+    {
+      "pass": true,
+      "name": "ar-ceramic-coating-320-light no horizontal overflow",
+      "details": 0
+    },
+    {
+      "pass": true,
+      "name": "ar-ceramic-coating-320-light initial theme icon and accessible label agree",
+      "details": "تفعيل المظهر الداكن"
+    },
+    {
+      "pass": true,
+      "name": "ar-ceramic-coating-320-light hero Call label remains light on dark photo",
+      "details": {
+        "callColor": "rgb(255, 255, 255)",
+        "callBorder": "rgba(255, 255, 255, 0.4)",
+        "callBackground": "rgba(0, 0, 0, 0)",
+        "breadcrumbColor": "rgba(255, 255, 255, 0.68)",
+        "headerBottom": 76,
+        "breadcrumbTop": 226
+      }
+    },
+    {
+      "pass": true,
+      "name": "ar-ceramic-coating-320-light hero Call border remains light on dark photo",
+      "details": "rgba(255, 255, 255, 0.4)"
+    },
+    {
+      "pass": true,
+      "name": "ar-ceramic-coating-320-light breadcrumb remains light on dark photo",
+      "details": "rgba(255, 255, 255, 0.68)"
+    },
+    {
+      "pass": true,
+      "name": "ar-ceramic-coating-320-light fixed header clears breadcrumb",
+      "details": {
+        "callColor": "rgb(255, 255, 255)",
+        "callBorder": "rgba(255, 255, 255, 0.4)",
+        "callBackground": "rgba(0, 0, 0, 0)",
+        "breadcrumbColor": "rgba(255, 255, 255, 0.68)",
+        "headerBottom": 76,
+        "breadcrumbTop": 226
+      }
+    },
+    {
+      "pass": true,
+      "name": "ar-ceramic-coating-320-light final Call label contrasts with section theme",
+      "details": {
+        "color": "rgb(24, 25, 24)",
+        "border": "rgba(24, 25, 24, 0.22)",
+        "href": "tel:+97143402223",
+        "text": "اتصل على +971 4 340 2223",
+        "sectionBackground": "rgb(244, 244, 241)"
+      }
+    },
+    {
+      "pass": true,
+      "name": "ar-ceramic-coating-320-light final phone href preserved",
+      "details": "tel:+97143402223"
+    },
+    {
+      "pass": true,
+      "name": "ar-ceramic-coating-320-light UI toggle survives reload",
+      "details": {
+        "saved": "dark",
+        "light": false,
+        "colorScheme": "dark"
+      }
+    },
+    {
+      "pass": true,
+      "name": "ar-ceramic-coating-390-dark saved theme restores after actual hydration",
+      "details": {
+        "saved": "dark",
+        "colorScheme": "dark",
+        "light": false,
+        "dir": "rtl",
+        "lang": "ar",
+        "overflow": 0
+      }
+    },
+    {
+      "pass": true,
+      "name": "ar-ceramic-coating-390-dark locale correct",
+      "details": {
+        "saved": "dark",
+        "colorScheme": "dark",
+        "light": false,
+        "dir": "rtl",
+        "lang": "ar",
+        "overflow": 0
+      }
+    },
+    {
+      "pass": true,
+      "name": "ar-ceramic-coating-390-dark no horizontal overflow",
+      "details": 0
+    },
+    {
+      "pass": true,
+      "name": "ar-ceramic-coating-390-dark initial theme icon and accessible label agree",
+      "details": "تفعيل المظهر الفاتح"
+    },
+    {
+      "pass": true,
+      "name": "ar-ceramic-coating-390-dark hero Call label remains light on dark photo",
+      "details": {
+        "callColor": "rgb(250, 250, 250)",
+        "callBorder": "rgba(255, 255, 255, 0.2)",
+        "callBackground": "rgba(0, 0, 0, 0)",
+        "breadcrumbColor": "rgb(250, 250, 250)",
+        "headerBottom": 76,
+        "breadcrumbTop": 226
+      }
+    },
+    {
+      "pass": true,
+      "name": "ar-ceramic-coating-390-dark hero Call border remains light on dark photo",
+      "details": "rgba(255, 255, 255, 0.2)"
+    },
+    {
+      "pass": true,
+      "name": "ar-ceramic-coating-390-dark breadcrumb remains light on dark photo",
+      "details": "rgb(250, 250, 250)"
+    },
+    {
+      "pass": true,
+      "name": "ar-ceramic-coating-390-dark fixed header clears breadcrumb",
+      "details": {
+        "callColor": "rgb(250, 250, 250)",
+        "callBorder": "rgba(255, 255, 255, 0.2)",
+        "callBackground": "rgba(0, 0, 0, 0)",
+        "breadcrumbColor": "rgb(250, 250, 250)",
+        "headerBottom": 76,
+        "breadcrumbTop": 226
+      }
+    },
+    {
+      "pass": true,
+      "name": "ar-ceramic-coating-390-dark final Call label contrasts with section theme",
+      "details": {
+        "color": "rgb(255, 255, 255)",
+        "border": "rgba(255, 255, 255, 0.2)",
+        "href": "tel:+97143402223",
+        "text": "اتصل على +971 4 340 2223",
+        "sectionBackground": "rgb(16, 17, 19)"
+      }
+    },
+    {
+      "pass": true,
+      "name": "ar-ceramic-coating-390-dark final phone href preserved",
+      "details": "tel:+97143402223"
+    },
+    {
+      "pass": true,
+      "name": "ar-ceramic-coating-390-dark UI toggle survives reload",
+      "details": {
+        "saved": "light",
+        "light": true,
+        "colorScheme": "light"
+      }
+    },
+    {
+      "pass": true,
+      "name": "ar-ceramic-coating-390-light saved theme restores after actual hydration",
+      "details": {
+        "saved": "light",
+        "colorScheme": "light",
+        "light": true,
+        "dir": "rtl",
+        "lang": "ar",
+        "overflow": 0
+      }
+    },
+    {
+      "pass": true,
+      "name": "ar-ceramic-coating-390-light locale correct",
+      "details": {
+        "saved": "light",
+        "colorScheme": "light",
+        "light": true,
+        "dir": "rtl",
+        "lang": "ar",
+        "overflow": 0
+      }
+    },
+    {
+      "pass": true,
+      "name": "ar-ceramic-coating-390-light no horizontal overflow",
+      "details": 0
+    },
+    {
+      "pass": true,
+      "name": "ar-ceramic-coating-390-light initial theme icon and accessible label agree",
+      "details": "تفعيل المظهر الداكن"
+    },
+    {
+      "pass": true,
+      "name": "ar-ceramic-coating-390-light hero Call label remains light on dark photo",
+      "details": {
+        "callColor": "rgb(255, 255, 255)",
+        "callBorder": "rgba(255, 255, 255, 0.4)",
+        "callBackground": "rgba(0, 0, 0, 0)",
+        "breadcrumbColor": "rgba(255, 255, 255, 0.68)",
+        "headerBottom": 76,
+        "breadcrumbTop": 226
+      }
+    },
+    {
+      "pass": true,
+      "name": "ar-ceramic-coating-390-light hero Call border remains light on dark photo",
+      "details": "rgba(255, 255, 255, 0.4)"
+    },
+    {
+      "pass": true,
+      "name": "ar-ceramic-coating-390-light breadcrumb remains light on dark photo",
+      "details": "rgba(255, 255, 255, 0.68)"
+    },
+    {
+      "pass": true,
+      "name": "ar-ceramic-coating-390-light fixed header clears breadcrumb",
+      "details": {
+        "callColor": "rgb(255, 255, 255)",
+        "callBorder": "rgba(255, 255, 255, 0.4)",
+        "callBackground": "rgba(0, 0, 0, 0)",
+        "breadcrumbColor": "rgba(255, 255, 255, 0.68)",
+        "headerBottom": 76,
+        "breadcrumbTop": 226
+      }
+    },
+    {
+      "pass": true,
+      "name": "ar-ceramic-coating-390-light final Call label contrasts with section theme",
+      "details": {
+        "color": "rgb(24, 25, 24)",
+        "border": "rgba(24, 25, 24, 0.22)",
+        "href": "tel:+97143402223",
+        "text": "اتصل على +971 4 340 2223",
+        "sectionBackground": "rgb(244, 244, 241)"
+      }
+    },
+    {
+      "pass": true,
+      "name": "ar-ceramic-coating-390-light final phone href preserved",
+      "details": "tel:+97143402223"
+    },
+    {
+      "pass": true,
+      "name": "ar-ceramic-coating-390-light UI toggle survives reload",
+      "details": {
+        "saved": "dark",
+        "light": false,
+        "colorScheme": "dark"
+      }
+    },
+    {
+      "pass": true,
+      "name": "ar-ceramic-coating-768-light saved theme restores after actual hydration",
+      "details": {
+        "saved": "light",
+        "colorScheme": "light",
+        "light": true,
+        "dir": "rtl",
+        "lang": "ar",
+        "overflow": 0
+      }
+    },
+    {
+      "pass": true,
+      "name": "ar-ceramic-coating-768-light locale correct",
+      "details": {
+        "saved": "light",
+        "colorScheme": "light",
+        "light": true,
+        "dir": "rtl",
+        "lang": "ar",
+        "overflow": 0
+      }
+    },
+    {
+      "pass": true,
+      "name": "ar-ceramic-coating-768-light no horizontal overflow",
+      "details": 0
+    },
+    {
+      "pass": true,
+      "name": "ar-ceramic-coating-768-light initial theme icon and accessible label agree",
+      "details": "تفعيل المظهر الداكن"
+    },
+    {
+      "pass": true,
+      "name": "ar-ceramic-coating-768-light hero Call label remains light on dark photo",
+      "details": {
+        "callColor": "rgb(255, 255, 255)",
+        "callBorder": "rgba(255, 255, 255, 0.4)",
+        "callBackground": "rgba(0, 0, 0, 0)",
+        "breadcrumbColor": "rgba(255, 255, 255, 0.68)",
+        "headerBottom": 80,
+        "breadcrumbTop": 362.390625
+      }
+    },
+    {
+      "pass": true,
+      "name": "ar-ceramic-coating-768-light hero Call border remains light on dark photo",
+      "details": "rgba(255, 255, 255, 0.4)"
+    },
+    {
+      "pass": true,
+      "name": "ar-ceramic-coating-768-light breadcrumb remains light on dark photo",
+      "details": "rgba(255, 255, 255, 0.68)"
+    },
+    {
+      "pass": true,
+      "name": "ar-ceramic-coating-768-light fixed header clears breadcrumb",
+      "details": {
+        "callColor": "rgb(255, 255, 255)",
+        "callBorder": "rgba(255, 255, 255, 0.4)",
+        "callBackground": "rgba(0, 0, 0, 0)",
+        "breadcrumbColor": "rgba(255, 255, 255, 0.68)",
+        "headerBottom": 80,
+        "breadcrumbTop": 362.390625
+      }
+    },
+    {
+      "pass": true,
+      "name": "ar-ceramic-coating-768-light final Call label contrasts with section theme",
+      "details": {
+        "color": "rgb(24, 25, 24)",
+        "border": "rgba(24, 25, 24, 0.22)",
+        "href": "tel:+97143402223",
+        "text": "اتصل على +971 4 340 2223",
+        "sectionBackground": "rgb(244, 244, 241)"
+      }
+    },
+    {
+      "pass": true,
+      "name": "ar-ceramic-coating-768-light final phone href preserved",
+      "details": "tel:+97143402223"
+    },
+    {
+      "pass": true,
+      "name": "ar-ceramic-coating-768-light UI toggle survives reload",
+      "details": {
+        "saved": "dark",
+        "light": false,
+        "colorScheme": "dark"
+      }
+    },
+    {
+      "pass": true,
+      "name": "ar-ceramic-coating-1440-dark saved theme restores after actual hydration",
+      "details": {
+        "saved": "dark",
+        "colorScheme": "dark",
+        "light": false,
+        "dir": "rtl",
+        "lang": "ar",
+        "overflow": 0
+      }
+    },
+    {
+      "pass": true,
+      "name": "ar-ceramic-coating-1440-dark locale correct",
+      "details": {
+        "saved": "dark",
+        "colorScheme": "dark",
+        "light": false,
+        "dir": "rtl",
+        "lang": "ar",
+        "overflow": 0
+      }
+    },
+    {
+      "pass": true,
+      "name": "ar-ceramic-coating-1440-dark no horizontal overflow",
+      "details": 0
+    },
+    {
+      "pass": true,
+      "name": "ar-ceramic-coating-1440-dark initial theme icon and accessible label agree",
+      "details": "تفعيل المظهر الفاتح"
+    },
+    {
+      "pass": true,
+      "name": "ar-ceramic-coating-1440-dark hero Call label remains light on dark photo",
+      "details": {
+        "callColor": "rgb(250, 250, 250)",
+        "callBorder": "rgba(255, 255, 255, 0.2)",
+        "callBackground": "rgba(0, 0, 0, 0)",
+        "breadcrumbColor": "rgb(250, 250, 250)",
+        "headerBottom": 98,
+        "breadcrumbTop": 292.40625
+      }
+    },
+    {
+      "pass": true,
+      "name": "ar-ceramic-coating-1440-dark hero Call border remains light on dark photo",
+      "details": "rgba(255, 255, 255, 0.2)"
+    },
+    {
+      "pass": true,
+      "name": "ar-ceramic-coating-1440-dark breadcrumb remains light on dark photo",
+      "details": "rgb(250, 250, 250)"
+    },
+    {
+      "pass": true,
+      "name": "ar-ceramic-coating-1440-dark fixed header clears breadcrumb",
+      "details": {
+        "callColor": "rgb(250, 250, 250)",
+        "callBorder": "rgba(255, 255, 255, 0.2)",
+        "callBackground": "rgba(0, 0, 0, 0)",
+        "breadcrumbColor": "rgb(250, 250, 250)",
+        "headerBottom": 98,
+        "breadcrumbTop": 292.40625
+      }
+    },
+    {
+      "pass": true,
+      "name": "ar-ceramic-coating-1440-dark final Call label contrasts with section theme",
+      "details": {
+        "color": "rgb(255, 255, 255)",
+        "border": "rgba(255, 255, 255, 0.2)",
+        "href": "tel:+97143402223",
+        "text": "اتصل على +971 4 340 2223",
+        "sectionBackground": "rgb(16, 17, 19)"
+      }
+    },
+    {
+      "pass": true,
+      "name": "ar-ceramic-coating-1440-dark final phone href preserved",
+      "details": "tel:+97143402223"
+    },
+    {
+      "pass": true,
+      "name": "ar-ceramic-coating-1440-dark UI toggle survives reload",
+      "details": {
+        "saved": "light",
+        "light": true,
+        "colorScheme": "light"
+      }
+    },
+    {
+      "pass": true,
+      "name": "ar-ceramic-coating-1440-light saved theme restores after actual hydration",
+      "details": {
+        "saved": "light",
+        "colorScheme": "light",
+        "light": true,
+        "dir": "rtl",
+        "lang": "ar",
+        "overflow": 0
+      }
+    },
+    {
+      "pass": true,
+      "name": "ar-ceramic-coating-1440-light locale correct",
+      "details": {
+        "saved": "light",
+        "colorScheme": "light",
+        "light": true,
+        "dir": "rtl",
+        "lang": "ar",
+        "overflow": 0
+      }
+    },
+    {
+      "pass": true,
+      "name": "ar-ceramic-coating-1440-light no horizontal overflow",
+      "details": 0
+    },
+    {
+      "pass": true,
+      "name": "ar-ceramic-coating-1440-light initial theme icon and accessible label agree",
+      "details": "تفعيل المظهر الداكن"
+    },
+    {
+      "pass": true,
+      "name": "ar-ceramic-coating-1440-light hero Call label remains light on dark photo",
+      "details": {
+        "callColor": "rgb(255, 255, 255)",
+        "callBorder": "rgba(255, 255, 255, 0.4)",
+        "callBackground": "rgba(0, 0, 0, 0)",
+        "breadcrumbColor": "rgba(255, 255, 255, 0.68)",
+        "headerBottom": 98,
+        "breadcrumbTop": 292.40625
+      }
+    },
+    {
+      "pass": true,
+      "name": "ar-ceramic-coating-1440-light hero Call border remains light on dark photo",
+      "details": "rgba(255, 255, 255, 0.4)"
+    },
+    {
+      "pass": true,
+      "name": "ar-ceramic-coating-1440-light breadcrumb remains light on dark photo",
+      "details": "rgba(255, 255, 255, 0.68)"
+    },
+    {
+      "pass": true,
+      "name": "ar-ceramic-coating-1440-light fixed header clears breadcrumb",
+      "details": {
+        "callColor": "rgb(255, 255, 255)",
+        "callBorder": "rgba(255, 255, 255, 0.4)",
+        "callBackground": "rgba(0, 0, 0, 0)",
+        "breadcrumbColor": "rgba(255, 255, 255, 0.68)",
+        "headerBottom": 98,
+        "breadcrumbTop": 292.40625
+      }
+    },
+    {
+      "pass": true,
+      "name": "ar-ceramic-coating-1440-light final Call label contrasts with section theme",
+      "details": {
+        "color": "rgb(24, 25, 24)",
+        "border": "rgba(24, 25, 24, 0.22)",
+        "href": "tel:+97143402223",
+        "text": "اتصل على +971 4 340 2223",
+        "sectionBackground": "rgb(244, 244, 241)"
+      }
+    },
+    {
+      "pass": true,
+      "name": "ar-ceramic-coating-1440-light final phone href preserved",
+      "details": "tel:+97143402223"
+    },
+    {
+      "pass": true,
+      "name": "ar-ceramic-coating-1440-light UI toggle survives reload",
+      "details": {
+        "saved": "dark",
+        "light": false,
+        "colorScheme": "dark"
+      }
+    },
+    {
+      "pass": true,
+      "name": "/services/paint-protection-dubai repaired-build SPA locale retains light theme",
+      "details": "http://127.0.0.1:5292/ar/services/paint-protection-dubai"
+    },
+    {
+      "pass": true,
+      "name": "/services/paint-protection-film repaired-build SPA locale retains light theme",
+      "details": "http://127.0.0.1:5292/ar/services/paint-protection-film"
+    },
+    {
+      "pass": true,
+      "name": "/services/ceramic-coating repaired-build SPA locale retains light theme",
+      "details": "http://127.0.0.1:5292/ar/services/ceramic-coating"
+    },
+    {
+      "pass": true,
+      "name": "No runtime errors on repaired build",
+      "details": []
+    },
+    {
+      "pass": true,
+      "name": "No unexpected console warnings/errors or hydration messages",
+      "details": []
+    },
+    {
+      "pass": true,
+      "name": "No local HTTP asset failures on repaired build",
+      "details": []
+    }
+  ],
+  "errors": [],
+  "unexpectedConsole": [],
+  "failedAssets": [],
+  "blockedExternalRequests": [
+    "https://www.googletagmanager.com/gtag/js",
+    "https://fonts.googleapis.com/css2",
+    "https://www.googletagmanager.com/gtm.js"
+  ],
+  "screenshots": [
+    {
+      "id": "ar-paint-protection-film-320-light",
+      "stage": "hero",
+      "file": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\paint-seo-predeployment-2026-10-12\\independent-visual-fixed\\ar-paint-protection-film-320-light-hero.png"
+    },
+    {
+      "id": "ar-paint-protection-film-320-light",
+      "stage": "final-cta",
+      "file": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\paint-seo-predeployment-2026-10-12\\independent-visual-fixed\\ar-paint-protection-film-320-light-final-cta.png"
+    },
+    {
+      "id": "ar-paint-protection-film-390-light",
+      "stage": "hero",
+      "file": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\paint-seo-predeployment-2026-10-12\\independent-visual-fixed\\ar-paint-protection-film-390-light-hero.png"
+    },
+    {
+      "id": "ar-paint-protection-film-390-light",
+      "stage": "final-cta",
+      "file": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\paint-seo-predeployment-2026-10-12\\independent-visual-fixed\\ar-paint-protection-film-390-light-final-cta.png"
+    },
+    {
+      "id": "ar-paint-protection-film-768-light",
+      "stage": "hero",
+      "file": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\paint-seo-predeployment-2026-10-12\\independent-visual-fixed\\ar-paint-protection-film-768-light-hero.png"
+    },
+    {
+      "id": "ar-paint-protection-film-768-light",
+      "stage": "final-cta",
+      "file": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\paint-seo-predeployment-2026-10-12\\independent-visual-fixed\\ar-paint-protection-film-768-light-final-cta.png"
+    },
+    {
+      "id": "ar-paint-protection-film-1440-light",
+      "stage": "hero",
+      "file": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\paint-seo-predeployment-2026-10-12\\independent-visual-fixed\\ar-paint-protection-film-1440-light-hero.png"
+    },
+    {
+      "id": "ar-paint-protection-film-1440-light",
+      "stage": "final-cta",
+      "file": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\paint-seo-predeployment-2026-10-12\\independent-visual-fixed\\ar-paint-protection-film-1440-light-final-cta.png"
+    },
+    {
+      "id": "ar-ceramic-coating-320-light",
+      "stage": "hero",
+      "file": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\paint-seo-predeployment-2026-10-12\\independent-visual-fixed\\ar-ceramic-coating-320-light-hero.png"
+    },
+    {
+      "id": "ar-ceramic-coating-320-light",
+      "stage": "final-cta",
+      "file": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\paint-seo-predeployment-2026-10-12\\independent-visual-fixed\\ar-ceramic-coating-320-light-final-cta.png"
+    },
+    {
+      "id": "ar-ceramic-coating-390-light",
+      "stage": "hero",
+      "file": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\paint-seo-predeployment-2026-10-12\\independent-visual-fixed\\ar-ceramic-coating-390-light-hero.png"
+    },
+    {
+      "id": "ar-ceramic-coating-390-light",
+      "stage": "final-cta",
+      "file": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\paint-seo-predeployment-2026-10-12\\independent-visual-fixed\\ar-ceramic-coating-390-light-final-cta.png"
+    },
+    {
+      "id": "ar-ceramic-coating-768-light",
+      "stage": "hero",
+      "file": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\paint-seo-predeployment-2026-10-12\\independent-visual-fixed\\ar-ceramic-coating-768-light-hero.png"
+    },
+    {
+      "id": "ar-ceramic-coating-768-light",
+      "stage": "final-cta",
+      "file": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\paint-seo-predeployment-2026-10-12\\independent-visual-fixed\\ar-ceramic-coating-768-light-final-cta.png"
+    },
+    {
+      "id": "ar-ceramic-coating-1440-light",
+      "stage": "hero",
+      "file": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\paint-seo-predeployment-2026-10-12\\independent-visual-fixed\\ar-ceramic-coating-1440-light-hero.png"
+    },
+    {
+      "id": "ar-ceramic-coating-1440-light",
+      "stage": "final-cta",
+      "file": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\paint-seo-predeployment-2026-10-12\\independent-visual-fixed\\ar-ceramic-coating-1440-light-final-cta.png"
+    }
+  ],
+  "contactSheets": [
+    "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\paint-seo-predeployment-2026-10-12\\independent-visual-fixed\\ar-paint-protection-film-light-hero-sheet.png",
+    "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\paint-seo-predeployment-2026-10-12\\independent-visual-fixed\\ar-paint-protection-film-light-final-cta-sheet.png",
+    "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\paint-seo-predeployment-2026-10-12\\independent-visual-fixed\\ar-ceramic-coating-light-hero-sheet.png",
+    "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\paint-seo-predeployment-2026-10-12\\independent-visual-fixed\\ar-ceramic-coating-light-final-cta-sheet.png"
+  ]
+}

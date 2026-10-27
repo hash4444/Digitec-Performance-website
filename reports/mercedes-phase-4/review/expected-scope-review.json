@@ -1,0 +1,169 @@
+{
+  "checkedAtUtc": "2026-10-26T08:59:20.003Z",
+  "readOnlyApplicationReview": true,
+  "baselineDirectory": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC",
+  "controlledCopyDirectory": null,
+  "status": "EXPECTED_SCOPE_READY_COPY_NOT_YET_REVIEWED",
+  "approvedIds": [
+    "H3-01",
+    "H3-02",
+    "S1"
+  ],
+  "excludedIds": [
+    "S2",
+    "H3-03",
+    "H3-04"
+  ],
+  "approvedFileCount": 3,
+  "approvedFiles": [
+    {
+      "path": "src/pages/BrandPage.tsx",
+      "ids": [
+        "H3-01",
+        "H3-02"
+      ],
+      "proposal": "reports/mercedes-phase-3/proposals/hub/proposed/BrandPage.tsx",
+      "beforeSha256": "f5d68037c056bb1f32d73cc5c009e066287da0ab225267b9606d834a23002c33",
+      "afterSha256": "fed34d81d52c879960d90eb38db91e31d9290ceb7b9895a222a2d075feb13bc2",
+      "baselineObservedSha256": "f5d68037c056bb1f32d73cc5c009e066287da0ab225267b9606d834a23002c33",
+      "baselineMatchesReviewed": true,
+      "proposalObservedSha256": "fed34d81d52c879960d90eb38db91e31d9290ceb7b9895a222a2d075feb13bc2",
+      "proposalMatchesReviewed": true,
+      "controlledCopyObservedSha256": null,
+      "controlledCopyMatchesApprovedExactly": null,
+      "controlledCopyMatchesApprovedTextIgnoringEol": null
+    },
+    {
+      "path": "src/data/mercedesServiceContent.ts",
+      "ids": [
+        "S1"
+      ],
+      "proposal": "reports/mercedes-phase-3/proposals/services/proposed/src/data/mercedesServiceContent.ts",
+      "beforeSha256": "7ebb6013761160e8bebc48e3f3080ceae2e3fb330d4fa6edf86f02974481718d",
+      "afterSha256": "bd941c4c6e03c43501e32f304fea8df5de07941b93be3598b1d07431eb91b339",
+      "baselineObservedSha256": "7ebb6013761160e8bebc48e3f3080ceae2e3fb330d4fa6edf86f02974481718d",
+      "baselineMatchesReviewed": true,
+      "proposalObservedSha256": "bd941c4c6e03c43501e32f304fea8df5de07941b93be3598b1d07431eb91b339",
+      "proposalMatchesReviewed": true,
+      "controlledCopyObservedSha256": null,
+      "controlledCopyMatchesApprovedExactly": null,
+      "controlledCopyMatchesApprovedTextIgnoringEol": null
+    },
+    {
+      "path": "src/pages/BrandServicePage.tsx",
+      "ids": [
+        "S1"
+      ],
+      "proposal": "reports/mercedes-phase-3/proposals/services/proposed/src/pages/BrandServicePage.tsx",
+      "beforeSha256": "b8bd67b40548b6e3c53db7611e7dd463cd5c92ce6774bbbdc954695b4395df2f",
+      "afterSha256": "38bca41fbfd9d7fba3a5ce9701791facc77d1fc0a7a67806903f71e7a096512c",
+      "baselineObservedSha256": "b8bd67b40548b6e3c53db7611e7dd463cd5c92ce6774bbbdc954695b4395df2f",
+      "baselineMatchesReviewed": true,
+      "proposalObservedSha256": "38bca41fbfd9d7fba3a5ce9701791facc77d1fc0a7a67806903f71e7a096512c",
+      "proposalMatchesReviewed": true,
+      "controlledCopyObservedSha256": null,
+      "controlledCopyMatchesApprovedExactly": null,
+      "controlledCopyMatchesApprovedTextIgnoringEol": null
+    }
+  ],
+  "changedSource": [],
+  "missingSource": [],
+  "addedSource": [],
+  "protectedFiles": [
+    {
+      "path": "src/pages/ServicePage.tsx",
+      "baselineSha256": "7aea5c62212d6066010e09587054e528d03c6589f291bd5681408f7f45b130ca",
+      "controlledCopySha256": null,
+      "identical": null,
+      "reason": "S2 explicitly excluded."
+    },
+    {
+      "path": "package.json",
+      "baselineSha256": "0079f6c3631eef2412243c812f59cd8f842b07c4d508f500eb91d6ef12de3130",
+      "controlledCopySha256": null,
+      "identical": null,
+      "reason": "No build/dependency/metadata configuration changes authorized."
+    },
+    {
+      "path": "package-lock.json",
+      "baselineSha256": "6dc35c9bf3c357315ca5ff7894659fb14413ef55ed41a0a309a80a7a4459be20",
+      "controlledCopySha256": null,
+      "identical": null,
+      "reason": "No build/dependency/metadata configuration changes authorized."
+    },
+    {
+      "path": "index.html",
+      "baselineSha256": "af94e9be5df1e1cbe1c556ed977447ab128ae1f950f24bf6a7570bc9420f9215",
+      "controlledCopySha256": null,
+      "identical": null,
+      "reason": "No build/dependency/metadata configuration changes authorized."
+    },
+    {
+      "path": "vite.config.ts",
+      "baselineSha256": "4021a6fca0b5342b5d6a513f42093bcd8c0b2704c9435c94480306def30297ae",
+      "controlledCopySha256": null,
+      "identical": null,
+      "reason": "No build/dependency/metadata configuration changes authorized."
+    },
+    {
+      "path": "tailwind.config.ts",
+      "baselineSha256": "1f28ebc603114f877f173cf992629ab48151286308298dac9f229699ed4f1cbe",
+      "controlledCopySha256": null,
+      "identical": null,
+      "reason": "No build/dependency/metadata configuration changes authorized."
+    },
+    {
+      "path": "postcss.config.js",
+      "baselineSha256": "374f669f08b18e67d0a7264fa45b71228017e604fe7f6db8a5c1bd5ba27e5c98",
+      "controlledCopySha256": null,
+      "identical": null,
+      "reason": "No build/dependency/metadata configuration changes authorized."
+    },
+    {
+      "path": "tsconfig.json",
+      "baselineSha256": "e1206dbf9927505806bc412730c1627f0688a10cb39b0dd642a0be6213b193f6",
+      "controlledCopySha256": null,
+      "identical": null,
+      "reason": "No build/dependency/metadata configuration changes authorized."
+    },
+    {
+      "path": "tsconfig.app.json",
+      "baselineSha256": "2077b3d9b7fc32ece0ac422b015c978463362a22771f3daacd65444146361062",
+      "controlledCopySha256": null,
+      "identical": null,
+      "reason": "No build/dependency/metadata configuration changes authorized."
+    },
+    {
+      "path": "tsconfig.node.json",
+      "baselineSha256": "8dc2fd2a2ff7497afa9e29037a36bcddbfa7c89ea8ff3b7c62b2814b55995449",
+      "controlledCopySha256": null,
+      "identical": null,
+      "reason": "No build/dependency/metadata configuration changes authorized."
+    },
+    {
+      "path": "eslint.config.js",
+      "baselineSha256": "32f482a6d7f8b9d6e202fc867e24ffd026dd33c7a8e384b9d4a77c21b273c59c",
+      "controlledCopySha256": null,
+      "identical": null,
+      "reason": "No build/dependency/metadata configuration changes authorized."
+    }
+  ],
+  "proposalPatchSources": [
+    {
+      "path": "reports/mercedes-phase-3/proposals/hub/mercedes-hub-minimal.patch",
+      "sha256": "623ee4258c35a373f6034552cea0a0e749a8ff0b18856a8839daf0ef7bd7f280"
+    },
+    {
+      "path": "reports/mercedes-phase-3/proposals/services/mercedes-body-enquiry-minimal.patch",
+      "sha256": "c2ef2429971ebdb2031dad998a6ebae13ab79a03d41e5d6282cebadf8a0234bc"
+    }
+  ],
+  "approvedCombinedPatchSha256": "1f39a2cddf29e247b1f13f5c54eab798bbb9f0d960bc197f2373ece404ceecfc",
+  "errors": [],
+  "limitations": [
+    "Exact source equality is not a build, typecheck, SSR, browser interaction, live destination or production verification result.",
+    "Generated build artifacts are outside src and are reviewed separately; no release/publication is performed by this checker.",
+    "Existing unrelated checkout changes are preserved; comparison is against the named baseline, not a whole-worktree Git reset.",
+    "Cloudflare state is not read or modified by this local source review."
+  ]
+}

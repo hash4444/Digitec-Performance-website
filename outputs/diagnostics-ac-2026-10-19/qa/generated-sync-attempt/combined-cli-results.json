@@ -1,0 +1,21 @@
+{
+  "checkedAt": "2026-10-19T08:09:40.549Z",
+  "candidate": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\diagnostics-ac-2026-10-19\\candidate.local",
+  "passed": false,
+  "expectedChecks": 12,
+  "productionBuild": null,
+  "results": [
+    {
+      "name": "production-build-19-steps",
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "scripts/build-production-local.mjs"
+      ],
+      "cwd": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\diagnostics-ac-2026-10-19\\candidate.local",
+      "exitCode": 1,
+      "passed": false,
+      "seconds": 21.106,
+      "log": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\diagnostics-ac-2026-10-19\\qa\\production-build-19-steps.log"
+    }
+  ]
+}

@@ -1,0 +1,4657 @@
+{
+  "recordedAt": "2026-10-26T10:26:10.218Z",
+  "nodeVersion": "v24.19.0",
+  "nodeExecutable": "C:\\Users\\ADMIN\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\node\\bin\\node.exe",
+  "packageLockSha256": "6dc35c9bf3c357315ca5ff7894659fb14413ef55ed41a0a309a80a7a4459be20",
+  "packageJsonSha256": "0079f6c3631eef2412243c812f59cd8f842b07c4d508f500eb91d6ef12de3130",
+  "installCommand": "npm ci --ignore-scripts --no-audit --no-fund (isolated Phase4B root/cache)",
+  "sharedDependencyMutations": 0,
+  "direct": [
+    {
+      "name": "vite",
+      "lockedInstallation": "5.4.10",
+      "sharedInstallation": "5.4.21"
+    },
+    {
+      "name": "typescript",
+      "lockedInstallation": "5.6.3",
+      "sharedInstallation": "5.9.3"
+    },
+    {
+      "name": "react",
+      "lockedInstallation": "18.3.1",
+      "sharedInstallation": "18.3.1"
+    },
+    {
+      "name": "react-dom",
+      "lockedInstallation": "18.3.1",
+      "sharedInstallation": "18.3.1"
+    },
+    {
+      "name": "zod",
+      "lockedInstallation": "4.4.3",
+      "sharedInstallation": "4.5.4"
+    },
+    {
+      "name": "@supabase/supabase-js",
+      "lockedInstallation": "2.103.0",
+      "sharedInstallation": "2.113.0"
+    },
+    {
+      "name": "@vitejs/plugin-react-swc",
+      "lockedInstallation": "3.7.1",
+      "sharedInstallation": "3.11.0"
+    }
+  ],
+  "packages": [
+    {
+      "path": "node_modules/@alloc/quick-lru",
+      "expected": "5.2.0",
+      "observed": "5.2.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@babel/helper-string-parser",
+      "expected": "7.25.9",
+      "observed": "7.25.9",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@babel/helper-validator-identifier",
+      "expected": "7.25.9",
+      "observed": "7.25.9",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@babel/parser",
+      "expected": "7.25.9",
+      "observed": "7.25.9",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@babel/runtime",
+      "expected": "7.25.9",
+      "observed": "7.25.9",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@babel/types",
+      "expected": "7.25.9",
+      "observed": "7.25.9",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@esbuild/aix-ppc64",
+      "expected": "0.21.5",
+      "installed": false,
+      "optional": true,
+      "os": [
+        "aix"
+      ],
+      "cpu": [
+        "ppc64"
+      ]
+    },
+    {
+      "path": "node_modules/@esbuild/android-arm",
+      "expected": "0.21.5",
+      "installed": false,
+      "optional": true,
+      "os": [
+        "android"
+      ],
+      "cpu": [
+        "arm"
+      ]
+    },
+    {
+      "path": "node_modules/@esbuild/android-arm64",
+      "expected": "0.21.5",
+      "installed": false,
+      "optional": true,
+      "os": [
+        "android"
+      ],
+      "cpu": [
+        "arm64"
+      ]
+    },
+    {
+      "path": "node_modules/@esbuild/android-x64",
+      "expected": "0.21.5",
+      "installed": false,
+      "optional": true,
+      "os": [
+        "android"
+      ],
+      "cpu": [
+        "x64"
+      ]
+    },
+    {
+      "path": "node_modules/@esbuild/darwin-arm64",
+      "expected": "0.21.5",
+      "installed": false,
+      "optional": true,
+      "os": [
+        "darwin"
+      ],
+      "cpu": [
+        "arm64"
+      ]
+    },
+    {
+      "path": "node_modules/@esbuild/darwin-x64",
+      "expected": "0.21.5",
+      "installed": false,
+      "optional": true,
+      "os": [
+        "darwin"
+      ],
+      "cpu": [
+        "x64"
+      ]
+    },
+    {
+      "path": "node_modules/@esbuild/freebsd-arm64",
+      "expected": "0.21.5",
+      "installed": false,
+      "optional": true,
+      "os": [
+        "freebsd"
+      ],
+      "cpu": [
+        "arm64"
+      ]
+    },
+    {
+      "path": "node_modules/@esbuild/freebsd-x64",
+      "expected": "0.21.5",
+      "installed": false,
+      "optional": true,
+      "os": [
+        "freebsd"
+      ],
+      "cpu": [
+        "x64"
+      ]
+    },
+    {
+      "path": "node_modules/@esbuild/linux-arm",
+      "expected": "0.21.5",
+      "installed": false,
+      "optional": true,
+      "os": [
+        "linux"
+      ],
+      "cpu": [
+        "arm"
+      ]
+    },
+    {
+      "path": "node_modules/@esbuild/linux-arm64",
+      "expected": "0.21.5",
+      "installed": false,
+      "optional": true,
+      "os": [
+        "linux"
+      ],
+      "cpu": [
+        "arm64"
+      ]
+    },
+    {
+      "path": "node_modules/@esbuild/linux-ia32",
+      "expected": "0.21.5",
+      "installed": false,
+      "optional": true,
+      "os": [
+        "linux"
+      ],
+      "cpu": [
+        "ia32"
+      ]
+    },
+    {
+      "path": "node_modules/@esbuild/linux-loong64",
+      "expected": "0.21.5",
+      "installed": false,
+      "optional": true,
+      "os": [
+        "linux"
+      ],
+      "cpu": [
+        "loong64"
+      ]
+    },
+    {
+      "path": "node_modules/@esbuild/linux-mips64el",
+      "expected": "0.21.5",
+      "installed": false,
+      "optional": true,
+      "os": [
+        "linux"
+      ],
+      "cpu": [
+        "mips64el"
+      ]
+    },
+    {
+      "path": "node_modules/@esbuild/linux-ppc64",
+      "expected": "0.21.5",
+      "installed": false,
+      "optional": true,
+      "os": [
+        "linux"
+      ],
+      "cpu": [
+        "ppc64"
+      ]
+    },
+    {
+      "path": "node_modules/@esbuild/linux-riscv64",
+      "expected": "0.21.5",
+      "installed": false,
+      "optional": true,
+      "os": [
+        "linux"
+      ],
+      "cpu": [
+        "riscv64"
+      ]
+    },
+    {
+      "path": "node_modules/@esbuild/linux-s390x",
+      "expected": "0.21.5",
+      "installed": false,
+      "optional": true,
+      "os": [
+        "linux"
+      ],
+      "cpu": [
+        "s390x"
+      ]
+    },
+    {
+      "path": "node_modules/@esbuild/linux-x64",
+      "expected": "0.21.5",
+      "installed": false,
+      "optional": true,
+      "os": [
+        "linux"
+      ],
+      "cpu": [
+        "x64"
+      ]
+    },
+    {
+      "path": "node_modules/@esbuild/netbsd-arm64",
+      "expected": "0.25.0",
+      "installed": false,
+      "optional": true,
+      "os": [
+        "netbsd"
+      ],
+      "cpu": [
+        "arm64"
+      ]
+    },
+    {
+      "path": "node_modules/@esbuild/netbsd-x64",
+      "expected": "0.21.5",
+      "installed": false,
+      "optional": true,
+      "os": [
+        "netbsd"
+      ],
+      "cpu": [
+        "x64"
+      ]
+    },
+    {
+      "path": "node_modules/@esbuild/openbsd-arm64",
+      "expected": "0.25.0",
+      "installed": false,
+      "optional": true,
+      "os": [
+        "openbsd"
+      ],
+      "cpu": [
+        "arm64"
+      ]
+    },
+    {
+      "path": "node_modules/@esbuild/openbsd-x64",
+      "expected": "0.21.5",
+      "installed": false,
+      "optional": true,
+      "os": [
+        "openbsd"
+      ],
+      "cpu": [
+        "x64"
+      ]
+    },
+    {
+      "path": "node_modules/@esbuild/openharmony-arm64",
+      "expected": "0.27.7",
+      "installed": false,
+      "optional": true,
+      "os": [
+        "openharmony"
+      ],
+      "cpu": [
+        "arm64"
+      ]
+    },
+    {
+      "path": "node_modules/@esbuild/sunos-x64",
+      "expected": "0.21.5",
+      "installed": false,
+      "optional": true,
+      "os": [
+        "sunos"
+      ],
+      "cpu": [
+        "x64"
+      ]
+    },
+    {
+      "path": "node_modules/@esbuild/win32-arm64",
+      "expected": "0.21.5",
+      "installed": false,
+      "optional": true,
+      "os": [
+        "win32"
+      ],
+      "cpu": [
+        "arm64"
+      ]
+    },
+    {
+      "path": "node_modules/@esbuild/win32-ia32",
+      "expected": "0.21.5",
+      "installed": false,
+      "optional": true,
+      "os": [
+        "win32"
+      ],
+      "cpu": [
+        "ia32"
+      ]
+    },
+    {
+      "path": "node_modules/@esbuild/win32-x64",
+      "expected": "0.21.5",
+      "observed": "0.21.5",
+      "optional": true,
+      "match": true
+    },
+    {
+      "path": "node_modules/@eslint-community/eslint-utils",
+      "expected": "4.4.0",
+      "observed": "4.4.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@eslint-community/eslint-utils/node_modules/eslint-visitor-keys",
+      "expected": "3.4.3",
+      "observed": "3.4.3",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@eslint-community/regexpp",
+      "expected": "4.11.1",
+      "observed": "4.11.1",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@eslint/config-array",
+      "expected": "0.18.0",
+      "observed": "0.18.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@eslint/core",
+      "expected": "0.7.0",
+      "observed": "0.7.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@eslint/eslintrc",
+      "expected": "3.1.0",
+      "observed": "3.1.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@eslint/eslintrc/node_modules/globals",
+      "expected": "14.0.0",
+      "observed": "14.0.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@eslint/js",
+      "expected": "9.13.0",
+      "observed": "9.13.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@eslint/object-schema",
+      "expected": "2.1.4",
+      "observed": "2.1.4",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@eslint/plugin-kit",
+      "expected": "0.2.3",
+      "observed": "0.2.3",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@floating-ui/core",
+      "expected": "1.6.8",
+      "observed": "1.6.8",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@floating-ui/dom",
+      "expected": "1.6.11",
+      "observed": "1.6.11",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@floating-ui/react-dom",
+      "expected": "2.1.2",
+      "observed": "2.1.2",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@floating-ui/utils",
+      "expected": "0.2.8",
+      "observed": "0.2.8",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@hono/node-server",
+      "expected": "1.19.17",
+      "observed": "1.19.17",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@hookform/resolvers",
+      "expected": "3.9.0",
+      "observed": "3.9.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@humanfs/core",
+      "expected": "0.19.0",
+      "observed": "0.19.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@humanfs/node",
+      "expected": "0.16.5",
+      "observed": "0.16.5",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@humanwhocodes/module-importer",
+      "expected": "1.0.1",
+      "observed": "1.0.1",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@humanwhocodes/retry",
+      "expected": "0.3.1",
+      "observed": "0.3.1",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@isaacs/cliui",
+      "expected": "8.0.2",
+      "observed": "8.0.2",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@jridgewell/gen-mapping",
+      "expected": "0.3.5",
+      "observed": "0.3.5",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@jridgewell/resolve-uri",
+      "expected": "3.1.2",
+      "observed": "3.1.2",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@jridgewell/set-array",
+      "expected": "1.2.1",
+      "observed": "1.2.1",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@jridgewell/sourcemap-codec",
+      "expected": "1.5.0",
+      "observed": "1.5.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@jridgewell/trace-mapping",
+      "expected": "0.3.25",
+      "observed": "0.3.25",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@lovable.dev/mcp-js",
+      "expected": "0.20.1",
+      "observed": "0.20.1",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@lovable.dev/mcp-js/node_modules/@esbuild/aix-ppc64",
+      "expected": "0.27.7",
+      "installed": false,
+      "optional": true,
+      "os": [
+        "aix"
+      ],
+      "cpu": [
+        "ppc64"
+      ]
+    },
+    {
+      "path": "node_modules/@lovable.dev/mcp-js/node_modules/@esbuild/android-arm",
+      "expected": "0.27.7",
+      "installed": false,
+      "optional": true,
+      "os": [
+        "android"
+      ],
+      "cpu": [
+        "arm"
+      ]
+    },
+    {
+      "path": "node_modules/@lovable.dev/mcp-js/node_modules/@esbuild/android-arm64",
+      "expected": "0.27.7",
+      "installed": false,
+      "optional": true,
+      "os": [
+        "android"
+      ],
+      "cpu": [
+        "arm64"
+      ]
+    },
+    {
+      "path": "node_modules/@lovable.dev/mcp-js/node_modules/@esbuild/android-x64",
+      "expected": "0.27.7",
+      "installed": false,
+      "optional": true,
+      "os": [
+        "android"
+      ],
+      "cpu": [
+        "x64"
+      ]
+    },
+    {
+      "path": "node_modules/@lovable.dev/mcp-js/node_modules/@esbuild/darwin-arm64",
+      "expected": "0.27.7",
+      "installed": false,
+      "optional": true,
+      "os": [
+        "darwin"
+      ],
+      "cpu": [
+        "arm64"
+      ]
+    },
+    {
+      "path": "node_modules/@lovable.dev/mcp-js/node_modules/@esbuild/darwin-x64",
+      "expected": "0.27.7",
+      "installed": false,
+      "optional": true,
+      "os": [
+        "darwin"
+      ],
+      "cpu": [
+        "x64"
+      ]
+    },
+    {
+      "path": "node_modules/@lovable.dev/mcp-js/node_modules/@esbuild/freebsd-arm64",
+      "expected": "0.27.7",
+      "installed": false,
+      "optional": true,
+      "os": [
+        "freebsd"
+      ],
+      "cpu": [
+        "arm64"
+      ]
+    },
+    {
+      "path": "node_modules/@lovable.dev/mcp-js/node_modules/@esbuild/freebsd-x64",
+      "expected": "0.27.7",
+      "installed": false,
+      "optional": true,
+      "os": [
+        "freebsd"
+      ],
+      "cpu": [
+        "x64"
+      ]
+    },
+    {
+      "path": "node_modules/@lovable.dev/mcp-js/node_modules/@esbuild/linux-arm",
+      "expected": "0.27.7",
+      "installed": false,
+      "optional": true,
+      "os": [
+        "linux"
+      ],
+      "cpu": [
+        "arm"
+      ]
+    },
+    {
+      "path": "node_modules/@lovable.dev/mcp-js/node_modules/@esbuild/linux-arm64",
+      "expected": "0.27.7",
+      "installed": false,
+      "optional": true,
+      "os": [
+        "linux"
+      ],
+      "cpu": [
+        "arm64"
+      ]
+    },
+    {
+      "path": "node_modules/@lovable.dev/mcp-js/node_modules/@esbuild/linux-ia32",
+      "expected": "0.27.7",
+      "installed": false,
+      "optional": true,
+      "os": [
+        "linux"
+      ],
+      "cpu": [
+        "ia32"
+      ]
+    },
+    {
+      "path": "node_modules/@lovable.dev/mcp-js/node_modules/@esbuild/linux-loong64",
+      "expected": "0.27.7",
+      "installed": false,
+      "optional": true,
+      "os": [
+        "linux"
+      ],
+      "cpu": [
+        "loong64"
+      ]
+    },
+    {
+      "path": "node_modules/@lovable.dev/mcp-js/node_modules/@esbuild/linux-mips64el",
+      "expected": "0.27.7",
+      "installed": false,
+      "optional": true,
+      "os": [
+        "linux"
+      ],
+      "cpu": [
+        "mips64el"
+      ]
+    },
+    {
+      "path": "node_modules/@lovable.dev/mcp-js/node_modules/@esbuild/linux-ppc64",
+      "expected": "0.27.7",
+      "installed": false,
+      "optional": true,
+      "os": [
+        "linux"
+      ],
+      "cpu": [
+        "ppc64"
+      ]
+    },
+    {
+      "path": "node_modules/@lovable.dev/mcp-js/node_modules/@esbuild/linux-riscv64",
+      "expected": "0.27.7",
+      "installed": false,
+      "optional": true,
+      "os": [
+        "linux"
+      ],
+      "cpu": [
+        "riscv64"
+      ]
+    },
+    {
+      "path": "node_modules/@lovable.dev/mcp-js/node_modules/@esbuild/linux-s390x",
+      "expected": "0.27.7",
+      "installed": false,
+      "optional": true,
+      "os": [
+        "linux"
+      ],
+      "cpu": [
+        "s390x"
+      ]
+    },
+    {
+      "path": "node_modules/@lovable.dev/mcp-js/node_modules/@esbuild/linux-x64",
+      "expected": "0.27.7",
+      "installed": false,
+      "optional": true,
+      "os": [
+        "linux"
+      ],
+      "cpu": [
+        "x64"
+      ]
+    },
+    {
+      "path": "node_modules/@lovable.dev/mcp-js/node_modules/@esbuild/netbsd-arm64",
+      "expected": "0.27.7",
+      "installed": false,
+      "optional": true,
+      "os": [
+        "netbsd"
+      ],
+      "cpu": [
+        "arm64"
+      ]
+    },
+    {
+      "path": "node_modules/@lovable.dev/mcp-js/node_modules/@esbuild/netbsd-x64",
+      "expected": "0.27.7",
+      "installed": false,
+      "optional": true,
+      "os": [
+        "netbsd"
+      ],
+      "cpu": [
+        "x64"
+      ]
+    },
+    {
+      "path": "node_modules/@lovable.dev/mcp-js/node_modules/@esbuild/openbsd-arm64",
+      "expected": "0.27.7",
+      "installed": false,
+      "optional": true,
+      "os": [
+        "openbsd"
+      ],
+      "cpu": [
+        "arm64"
+      ]
+    },
+    {
+      "path": "node_modules/@lovable.dev/mcp-js/node_modules/@esbuild/openbsd-x64",
+      "expected": "0.27.7",
+      "installed": false,
+      "optional": true,
+      "os": [
+        "openbsd"
+      ],
+      "cpu": [
+        "x64"
+      ]
+    },
+    {
+      "path": "node_modules/@lovable.dev/mcp-js/node_modules/@esbuild/sunos-x64",
+      "expected": "0.27.7",
+      "installed": false,
+      "optional": true,
+      "os": [
+        "sunos"
+      ],
+      "cpu": [
+        "x64"
+      ]
+    },
+    {
+      "path": "node_modules/@lovable.dev/mcp-js/node_modules/@esbuild/win32-arm64",
+      "expected": "0.27.7",
+      "installed": false,
+      "optional": true,
+      "os": [
+        "win32"
+      ],
+      "cpu": [
+        "arm64"
+      ]
+    },
+    {
+      "path": "node_modules/@lovable.dev/mcp-js/node_modules/@esbuild/win32-ia32",
+      "expected": "0.27.7",
+      "installed": false,
+      "optional": true,
+      "os": [
+        "win32"
+      ],
+      "cpu": [
+        "ia32"
+      ]
+    },
+    {
+      "path": "node_modules/@lovable.dev/mcp-js/node_modules/@esbuild/win32-x64",
+      "expected": "0.27.7",
+      "observed": "0.27.7",
+      "optional": true,
+      "match": true
+    },
+    {
+      "path": "node_modules/@lovable.dev/mcp-js/node_modules/esbuild",
+      "expected": "0.27.7",
+      "observed": "0.27.7",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@modelcontextprotocol/sdk",
+      "expected": "1.28.0",
+      "observed": "1.28.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@modelcontextprotocol/sdk/node_modules/ajv",
+      "expected": "8.20.0",
+      "observed": "8.20.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@modelcontextprotocol/sdk/node_modules/json-schema-traverse",
+      "expected": "1.0.0",
+      "observed": "1.0.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@nodelib/fs.scandir",
+      "expected": "2.1.5",
+      "observed": "2.1.5",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@nodelib/fs.stat",
+      "expected": "2.0.5",
+      "observed": "2.0.5",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@nodelib/fs.walk",
+      "expected": "1.2.8",
+      "observed": "1.2.8",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@pkgjs/parseargs",
+      "expected": "0.11.0",
+      "observed": "0.11.0",
+      "optional": true,
+      "match": true
+    },
+    {
+      "path": "node_modules/@radix-ui/number",
+      "expected": "1.1.0",
+      "observed": "1.1.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@radix-ui/primitive",
+      "expected": "1.1.0",
+      "observed": "1.1.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@radix-ui/react-accordion",
+      "expected": "1.2.1",
+      "observed": "1.2.1",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@radix-ui/react-alert-dialog",
+      "expected": "1.1.2",
+      "observed": "1.1.2",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@radix-ui/react-arrow",
+      "expected": "1.1.0",
+      "observed": "1.1.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@radix-ui/react-aspect-ratio",
+      "expected": "1.1.0",
+      "observed": "1.1.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@radix-ui/react-avatar",
+      "expected": "1.1.1",
+      "observed": "1.1.1",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@radix-ui/react-checkbox",
+      "expected": "1.1.2",
+      "observed": "1.1.2",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@radix-ui/react-collapsible",
+      "expected": "1.1.1",
+      "observed": "1.1.1",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@radix-ui/react-collection",
+      "expected": "1.1.0",
+      "observed": "1.1.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@radix-ui/react-collection/node_modules/@radix-ui/react-context",
+      "expected": "1.1.0",
+      "observed": "1.1.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@radix-ui/react-compose-refs",
+      "expected": "1.1.0",
+      "observed": "1.1.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@radix-ui/react-context",
+      "expected": "1.1.1",
+      "observed": "1.1.1",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@radix-ui/react-context-menu",
+      "expected": "2.2.2",
+      "observed": "2.2.2",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@radix-ui/react-dialog",
+      "expected": "1.1.2",
+      "observed": "1.1.2",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@radix-ui/react-direction",
+      "expected": "1.1.0",
+      "observed": "1.1.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@radix-ui/react-dismissable-layer",
+      "expected": "1.1.1",
+      "observed": "1.1.1",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@radix-ui/react-dropdown-menu",
+      "expected": "2.1.2",
+      "observed": "2.1.2",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@radix-ui/react-focus-guards",
+      "expected": "1.1.1",
+      "observed": "1.1.1",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@radix-ui/react-focus-scope",
+      "expected": "1.1.0",
+      "observed": "1.1.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@radix-ui/react-hover-card",
+      "expected": "1.1.2",
+      "observed": "1.1.2",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@radix-ui/react-id",
+      "expected": "1.1.0",
+      "observed": "1.1.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@radix-ui/react-label",
+      "expected": "2.1.0",
+      "observed": "2.1.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@radix-ui/react-menu",
+      "expected": "2.1.2",
+      "observed": "2.1.2",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@radix-ui/react-menubar",
+      "expected": "1.1.2",
+      "observed": "1.1.2",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@radix-ui/react-navigation-menu",
+      "expected": "1.2.1",
+      "observed": "1.2.1",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@radix-ui/react-popover",
+      "expected": "1.1.2",
+      "observed": "1.1.2",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@radix-ui/react-popper",
+      "expected": "1.2.0",
+      "observed": "1.2.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@radix-ui/react-popper/node_modules/@radix-ui/react-context",
+      "expected": "1.1.0",
+      "observed": "1.1.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@radix-ui/react-portal",
+      "expected": "1.1.2",
+      "observed": "1.1.2",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@radix-ui/react-presence",
+      "expected": "1.1.1",
+      "observed": "1.1.1",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@radix-ui/react-primitive",
+      "expected": "2.0.0",
+      "observed": "2.0.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@radix-ui/react-progress",
+      "expected": "1.1.0",
+      "observed": "1.1.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@radix-ui/react-progress/node_modules/@radix-ui/react-context",
+      "expected": "1.1.0",
+      "observed": "1.1.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@radix-ui/react-radio-group",
+      "expected": "1.2.1",
+      "observed": "1.2.1",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@radix-ui/react-roving-focus",
+      "expected": "1.1.0",
+      "observed": "1.1.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@radix-ui/react-roving-focus/node_modules/@radix-ui/react-context",
+      "expected": "1.1.0",
+      "observed": "1.1.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@radix-ui/react-scroll-area",
+      "expected": "1.2.0",
+      "observed": "1.2.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@radix-ui/react-select",
+      "expected": "2.1.2",
+      "observed": "2.1.2",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@radix-ui/react-separator",
+      "expected": "1.1.0",
+      "observed": "1.1.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@radix-ui/react-slider",
+      "expected": "1.2.1",
+      "observed": "1.2.1",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@radix-ui/react-slot",
+      "expected": "1.1.0",
+      "observed": "1.1.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@radix-ui/react-switch",
+      "expected": "1.1.1",
+      "observed": "1.1.1",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@radix-ui/react-tabs",
+      "expected": "1.1.1",
+      "observed": "1.1.1",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@radix-ui/react-toast",
+      "expected": "1.2.2",
+      "observed": "1.2.2",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@radix-ui/react-toggle",
+      "expected": "1.1.0",
+      "observed": "1.1.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@radix-ui/react-toggle-group",
+      "expected": "1.1.0",
+      "observed": "1.1.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@radix-ui/react-toggle-group/node_modules/@radix-ui/react-context",
+      "expected": "1.1.0",
+      "observed": "1.1.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@radix-ui/react-tooltip",
+      "expected": "1.1.4",
+      "observed": "1.1.4",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@radix-ui/react-use-callback-ref",
+      "expected": "1.1.0",
+      "observed": "1.1.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@radix-ui/react-use-controllable-state",
+      "expected": "1.1.0",
+      "observed": "1.1.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@radix-ui/react-use-escape-keydown",
+      "expected": "1.1.0",
+      "observed": "1.1.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@radix-ui/react-use-layout-effect",
+      "expected": "1.1.0",
+      "observed": "1.1.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@radix-ui/react-use-previous",
+      "expected": "1.1.0",
+      "observed": "1.1.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@radix-ui/react-use-rect",
+      "expected": "1.1.0",
+      "observed": "1.1.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@radix-ui/react-use-size",
+      "expected": "1.1.0",
+      "observed": "1.1.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@radix-ui/react-visually-hidden",
+      "expected": "1.1.0",
+      "observed": "1.1.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@radix-ui/rect",
+      "expected": "1.1.0",
+      "observed": "1.1.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@remix-run/router",
+      "expected": "1.20.0",
+      "observed": "1.20.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@rollup/rollup-android-arm-eabi",
+      "expected": "4.24.0",
+      "installed": false,
+      "optional": true,
+      "os": [
+        "android"
+      ],
+      "cpu": [
+        "arm"
+      ]
+    },
+    {
+      "path": "node_modules/@rollup/rollup-android-arm64",
+      "expected": "4.24.0",
+      "installed": false,
+      "optional": true,
+      "os": [
+        "android"
+      ],
+      "cpu": [
+        "arm64"
+      ]
+    },
+    {
+      "path": "node_modules/@rollup/rollup-darwin-arm64",
+      "expected": "4.24.0",
+      "installed": false,
+      "optional": true,
+      "os": [
+        "darwin"
+      ],
+      "cpu": [
+        "arm64"
+      ]
+    },
+    {
+      "path": "node_modules/@rollup/rollup-darwin-x64",
+      "expected": "4.24.0",
+      "installed": false,
+      "optional": true,
+      "os": [
+        "darwin"
+      ],
+      "cpu": [
+        "x64"
+      ]
+    },
+    {
+      "path": "node_modules/@rollup/rollup-linux-arm-gnueabihf",
+      "expected": "4.24.0",
+      "installed": false,
+      "optional": true,
+      "os": [
+        "linux"
+      ],
+      "cpu": [
+        "arm"
+      ]
+    },
+    {
+      "path": "node_modules/@rollup/rollup-linux-arm-musleabihf",
+      "expected": "4.24.0",
+      "installed": false,
+      "optional": true,
+      "os": [
+        "linux"
+      ],
+      "cpu": [
+        "arm"
+      ]
+    },
+    {
+      "path": "node_modules/@rollup/rollup-linux-arm64-gnu",
+      "expected": "4.24.0",
+      "installed": false,
+      "optional": true,
+      "os": [
+        "linux"
+      ],
+      "cpu": [
+        "arm64"
+      ]
+    },
+    {
+      "path": "node_modules/@rollup/rollup-linux-arm64-musl",
+      "expected": "4.24.0",
+      "installed": false,
+      "optional": true,
+      "os": [
+        "linux"
+      ],
+      "cpu": [
+        "arm64"
+      ]
+    },
+    {
+      "path": "node_modules/@rollup/rollup-linux-powerpc64le-gnu",
+      "expected": "4.24.0",
+      "installed": false,
+      "optional": true,
+      "os": [
+        "linux"
+      ],
+      "cpu": [
+        "ppc64"
+      ]
+    },
+    {
+      "path": "node_modules/@rollup/rollup-linux-riscv64-gnu",
+      "expected": "4.24.0",
+      "installed": false,
+      "optional": true,
+      "os": [
+        "linux"
+      ],
+      "cpu": [
+        "riscv64"
+      ]
+    },
+    {
+      "path": "node_modules/@rollup/rollup-linux-s390x-gnu",
+      "expected": "4.24.0",
+      "installed": false,
+      "optional": true,
+      "os": [
+        "linux"
+      ],
+      "cpu": [
+        "s390x"
+      ]
+    },
+    {
+      "path": "node_modules/@rollup/rollup-linux-x64-gnu",
+      "expected": "4.24.0",
+      "installed": false,
+      "optional": true,
+      "os": [
+        "linux"
+      ],
+      "cpu": [
+        "x64"
+      ]
+    },
+    {
+      "path": "node_modules/@rollup/rollup-linux-x64-musl",
+      "expected": "4.24.0",
+      "installed": false,
+      "optional": true,
+      "os": [
+        "linux"
+      ],
+      "cpu": [
+        "x64"
+      ]
+    },
+    {
+      "path": "node_modules/@rollup/rollup-win32-arm64-msvc",
+      "expected": "4.24.0",
+      "installed": false,
+      "optional": true,
+      "os": [
+        "win32"
+      ],
+      "cpu": [
+        "arm64"
+      ]
+    },
+    {
+      "path": "node_modules/@rollup/rollup-win32-ia32-msvc",
+      "expected": "4.24.0",
+      "installed": false,
+      "optional": true,
+      "os": [
+        "win32"
+      ],
+      "cpu": [
+        "ia32"
+      ]
+    },
+    {
+      "path": "node_modules/@rollup/rollup-win32-x64-msvc",
+      "expected": "4.24.0",
+      "observed": "4.24.0",
+      "optional": true,
+      "match": true
+    },
+    {
+      "path": "node_modules/@supabase/auth-js",
+      "expected": "2.103.0",
+      "observed": "2.103.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@supabase/functions-js",
+      "expected": "2.103.0",
+      "observed": "2.103.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@supabase/phoenix",
+      "expected": "0.4.0",
+      "observed": "0.4.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@supabase/postgrest-js",
+      "expected": "2.103.0",
+      "observed": "2.103.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@supabase/realtime-js",
+      "expected": "2.103.0",
+      "observed": "2.103.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@supabase/storage-js",
+      "expected": "2.103.0",
+      "observed": "2.103.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@supabase/supabase-js",
+      "expected": "2.103.0",
+      "observed": "2.103.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@swc/core",
+      "expected": "1.7.39",
+      "observed": "1.7.39",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@swc/core-darwin-arm64",
+      "expected": "1.7.39",
+      "installed": false,
+      "optional": true,
+      "os": [
+        "darwin"
+      ],
+      "cpu": [
+        "arm64"
+      ]
+    },
+    {
+      "path": "node_modules/@swc/core-darwin-x64",
+      "expected": "1.7.39",
+      "installed": false,
+      "optional": true,
+      "os": [
+        "darwin"
+      ],
+      "cpu": [
+        "x64"
+      ]
+    },
+    {
+      "path": "node_modules/@swc/core-linux-arm-gnueabihf",
+      "expected": "1.7.39",
+      "installed": false,
+      "optional": true,
+      "os": [
+        "linux"
+      ],
+      "cpu": [
+        "arm"
+      ]
+    },
+    {
+      "path": "node_modules/@swc/core-linux-arm64-gnu",
+      "expected": "1.7.39",
+      "installed": false,
+      "optional": true,
+      "os": [
+        "linux"
+      ],
+      "cpu": [
+        "arm64"
+      ]
+    },
+    {
+      "path": "node_modules/@swc/core-linux-arm64-musl",
+      "expected": "1.7.39",
+      "installed": false,
+      "optional": true,
+      "os": [
+        "linux"
+      ],
+      "cpu": [
+        "arm64"
+      ]
+    },
+    {
+      "path": "node_modules/@swc/core-linux-x64-gnu",
+      "expected": "1.7.39",
+      "installed": false,
+      "optional": true,
+      "os": [
+        "linux"
+      ],
+      "cpu": [
+        "x64"
+      ]
+    },
+    {
+      "path": "node_modules/@swc/core-linux-x64-musl",
+      "expected": "1.7.39",
+      "installed": false,
+      "optional": true,
+      "os": [
+        "linux"
+      ],
+      "cpu": [
+        "x64"
+      ]
+    },
+    {
+      "path": "node_modules/@swc/core-win32-arm64-msvc",
+      "expected": "1.7.39",
+      "installed": false,
+      "optional": true,
+      "os": [
+        "win32"
+      ],
+      "cpu": [
+        "arm64"
+      ]
+    },
+    {
+      "path": "node_modules/@swc/core-win32-ia32-msvc",
+      "expected": "1.7.39",
+      "installed": false,
+      "optional": true,
+      "os": [
+        "win32"
+      ],
+      "cpu": [
+        "ia32"
+      ]
+    },
+    {
+      "path": "node_modules/@swc/core-win32-x64-msvc",
+      "expected": "1.7.39",
+      "observed": "1.7.39",
+      "optional": true,
+      "match": true
+    },
+    {
+      "path": "node_modules/@swc/counter",
+      "expected": "0.1.3",
+      "observed": "0.1.3",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@swc/types",
+      "expected": "0.1.13",
+      "observed": "0.1.13",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@tailwindcss/typography",
+      "expected": "0.5.15",
+      "observed": "0.5.15",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@tailwindcss/typography/node_modules/postcss-selector-parser",
+      "expected": "6.0.10",
+      "observed": "6.0.10",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@tanstack/query-core",
+      "expected": "5.59.16",
+      "observed": "5.59.16",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@tanstack/react-query",
+      "expected": "5.59.16",
+      "observed": "5.59.16",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@types/d3-array",
+      "expected": "3.2.1",
+      "observed": "3.2.1",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@types/d3-color",
+      "expected": "3.1.3",
+      "observed": "3.1.3",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@types/d3-ease",
+      "expected": "3.0.2",
+      "observed": "3.0.2",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@types/d3-interpolate",
+      "expected": "3.0.4",
+      "observed": "3.0.4",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@types/d3-path",
+      "expected": "3.1.0",
+      "observed": "3.1.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@types/d3-scale",
+      "expected": "4.0.8",
+      "observed": "4.0.8",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@types/d3-shape",
+      "expected": "3.1.6",
+      "observed": "3.1.6",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@types/d3-time",
+      "expected": "3.0.3",
+      "observed": "3.0.3",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@types/d3-timer",
+      "expected": "3.0.2",
+      "observed": "3.0.2",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@types/estree",
+      "expected": "1.0.6",
+      "observed": "1.0.6",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@types/json-schema",
+      "expected": "7.0.15",
+      "observed": "7.0.15",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@types/node",
+      "expected": "22.7.9",
+      "observed": "22.7.9",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@types/prop-types",
+      "expected": "15.7.13",
+      "observed": "15.7.13",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@types/react",
+      "expected": "18.3.12",
+      "observed": "18.3.12",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@types/react-dom",
+      "expected": "18.3.1",
+      "observed": "18.3.1",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@types/ws",
+      "expected": "8.18.1",
+      "observed": "8.18.1",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@typescript-eslint/eslint-plugin",
+      "expected": "8.11.0",
+      "observed": "8.11.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@typescript-eslint/parser",
+      "expected": "8.11.0",
+      "observed": "8.11.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@typescript-eslint/scope-manager",
+      "expected": "8.11.0",
+      "observed": "8.11.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@typescript-eslint/type-utils",
+      "expected": "8.11.0",
+      "observed": "8.11.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@typescript-eslint/types",
+      "expected": "8.11.0",
+      "observed": "8.11.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@typescript-eslint/typescript-estree",
+      "expected": "8.11.0",
+      "observed": "8.11.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@typescript-eslint/typescript-estree/node_modules/brace-expansion",
+      "expected": "2.0.1",
+      "observed": "2.0.1",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@typescript-eslint/typescript-estree/node_modules/minimatch",
+      "expected": "9.0.5",
+      "observed": "9.0.5",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@typescript-eslint/utils",
+      "expected": "8.11.0",
+      "observed": "8.11.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@typescript-eslint/visitor-keys",
+      "expected": "8.11.0",
+      "observed": "8.11.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@typescript-eslint/visitor-keys/node_modules/eslint-visitor-keys",
+      "expected": "3.4.3",
+      "observed": "3.4.3",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/@vitejs/plugin-react-swc",
+      "expected": "3.7.1",
+      "observed": "3.7.1",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/accepts",
+      "expected": "2.0.0",
+      "observed": "2.0.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/acorn",
+      "expected": "8.13.0",
+      "observed": "8.13.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/acorn-jsx",
+      "expected": "5.3.2",
+      "observed": "5.3.2",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/ajv",
+      "expected": "6.12.6",
+      "observed": "6.12.6",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/ajv-formats",
+      "expected": "3.0.1",
+      "observed": "3.0.1",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/ajv-formats/node_modules/ajv",
+      "expected": "8.20.0",
+      "observed": "8.20.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/ajv-formats/node_modules/json-schema-traverse",
+      "expected": "1.0.0",
+      "observed": "1.0.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/ansi-regex",
+      "expected": "6.1.0",
+      "observed": "6.1.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/ansi-styles",
+      "expected": "4.3.0",
+      "observed": "4.3.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/any-promise",
+      "expected": "1.3.0",
+      "observed": "1.3.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/anymatch",
+      "expected": "3.1.3",
+      "observed": "3.1.3",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/arg",
+      "expected": "5.0.2",
+      "observed": "5.0.2",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/argparse",
+      "expected": "2.0.1",
+      "observed": "2.0.1",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/aria-hidden",
+      "expected": "1.2.4",
+      "observed": "1.2.4",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/autoprefixer",
+      "expected": "10.4.20",
+      "observed": "10.4.20",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/balanced-match",
+      "expected": "1.0.2",
+      "observed": "1.0.2",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/binary-extensions",
+      "expected": "2.3.0",
+      "observed": "2.3.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/body-parser",
+      "expected": "2.3.0",
+      "observed": "2.3.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/body-parser/node_modules/content-type",
+      "expected": "2.1.0",
+      "observed": "2.1.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/brace-expansion",
+      "expected": "1.1.11",
+      "observed": "1.1.11",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/braces",
+      "expected": "3.0.3",
+      "observed": "3.0.3",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/browserslist",
+      "expected": "4.24.2",
+      "observed": "4.24.2",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/bytes",
+      "expected": "3.1.2",
+      "observed": "3.1.2",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/call-bind-apply-helpers",
+      "expected": "1.0.2",
+      "observed": "1.0.2",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/call-bound",
+      "expected": "1.0.4",
+      "observed": "1.0.4",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/callsites",
+      "expected": "3.1.0",
+      "observed": "3.1.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/camelcase-css",
+      "expected": "2.0.1",
+      "observed": "2.0.1",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/caniuse-lite",
+      "expected": "1.0.30001669",
+      "observed": "1.0.30001669",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/chalk",
+      "expected": "4.1.2",
+      "observed": "4.1.2",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/chokidar",
+      "expected": "3.6.0",
+      "observed": "3.6.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/chokidar/node_modules/glob-parent",
+      "expected": "5.1.2",
+      "observed": "5.1.2",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/class-variance-authority",
+      "expected": "0.7.1",
+      "observed": "0.7.1",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/clsx",
+      "expected": "2.1.1",
+      "observed": "2.1.1",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/cmdk",
+      "expected": "1.0.0",
+      "observed": "1.0.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/cmdk/node_modules/@radix-ui/primitive",
+      "expected": "1.0.1",
+      "observed": "1.0.1",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/cmdk/node_modules/@radix-ui/react-compose-refs",
+      "expected": "1.0.1",
+      "observed": "1.0.1",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/cmdk/node_modules/@radix-ui/react-context",
+      "expected": "1.0.1",
+      "observed": "1.0.1",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/cmdk/node_modules/@radix-ui/react-dialog",
+      "expected": "1.0.5",
+      "observed": "1.0.5",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/cmdk/node_modules/@radix-ui/react-dismissable-layer",
+      "expected": "1.0.5",
+      "observed": "1.0.5",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/cmdk/node_modules/@radix-ui/react-focus-guards",
+      "expected": "1.0.1",
+      "observed": "1.0.1",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/cmdk/node_modules/@radix-ui/react-focus-scope",
+      "expected": "1.0.4",
+      "observed": "1.0.4",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/cmdk/node_modules/@radix-ui/react-id",
+      "expected": "1.0.1",
+      "observed": "1.0.1",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/cmdk/node_modules/@radix-ui/react-portal",
+      "expected": "1.0.4",
+      "observed": "1.0.4",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/cmdk/node_modules/@radix-ui/react-presence",
+      "expected": "1.0.1",
+      "observed": "1.0.1",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/cmdk/node_modules/@radix-ui/react-primitive",
+      "expected": "1.0.3",
+      "observed": "1.0.3",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/cmdk/node_modules/@radix-ui/react-slot",
+      "expected": "1.0.2",
+      "observed": "1.0.2",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/cmdk/node_modules/@radix-ui/react-use-callback-ref",
+      "expected": "1.0.1",
+      "observed": "1.0.1",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/cmdk/node_modules/@radix-ui/react-use-controllable-state",
+      "expected": "1.0.1",
+      "observed": "1.0.1",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/cmdk/node_modules/@radix-ui/react-use-escape-keydown",
+      "expected": "1.0.3",
+      "observed": "1.0.3",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/cmdk/node_modules/@radix-ui/react-use-layout-effect",
+      "expected": "1.0.1",
+      "observed": "1.0.1",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/cmdk/node_modules/react-remove-scroll",
+      "expected": "2.5.5",
+      "observed": "2.5.5",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/color-convert",
+      "expected": "2.0.1",
+      "observed": "2.0.1",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/color-name",
+      "expected": "1.1.4",
+      "observed": "1.1.4",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/commander",
+      "expected": "4.1.1",
+      "observed": "4.1.1",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/concat-map",
+      "expected": "0.0.1",
+      "observed": "0.0.1",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/content-disposition",
+      "expected": "1.1.0",
+      "observed": "1.1.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/content-type",
+      "expected": "1.0.5",
+      "observed": "1.0.5",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/cookie",
+      "expected": "0.7.2",
+      "observed": "0.7.2",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/cookie-signature",
+      "expected": "1.2.2",
+      "observed": "1.2.2",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/cors",
+      "expected": "2.8.6",
+      "observed": "2.8.6",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/cross-spawn",
+      "expected": "7.0.6",
+      "observed": "7.0.6",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/cssesc",
+      "expected": "3.0.0",
+      "observed": "3.0.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/csstype",
+      "expected": "3.1.3",
+      "observed": "3.1.3",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/d3-array",
+      "expected": "3.2.4",
+      "observed": "3.2.4",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/d3-color",
+      "expected": "3.1.0",
+      "observed": "3.1.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/d3-ease",
+      "expected": "3.0.1",
+      "observed": "3.0.1",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/d3-format",
+      "expected": "3.1.0",
+      "observed": "3.1.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/d3-interpolate",
+      "expected": "3.0.1",
+      "observed": "3.0.1",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/d3-path",
+      "expected": "3.1.0",
+      "observed": "3.1.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/d3-scale",
+      "expected": "4.0.2",
+      "observed": "4.0.2",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/d3-shape",
+      "expected": "3.2.0",
+      "observed": "3.2.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/d3-time",
+      "expected": "3.1.0",
+      "observed": "3.1.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/d3-time-format",
+      "expected": "4.1.0",
+      "observed": "4.1.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/d3-timer",
+      "expected": "3.0.1",
+      "observed": "3.0.1",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/date-fns",
+      "expected": "3.6.0",
+      "observed": "3.6.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/debug",
+      "expected": "4.4.3",
+      "observed": "4.4.3",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/decimal.js-light",
+      "expected": "2.5.1",
+      "observed": "2.5.1",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/deep-is",
+      "expected": "0.1.4",
+      "observed": "0.1.4",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/depd",
+      "expected": "2.0.0",
+      "observed": "2.0.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/detect-node-es",
+      "expected": "1.1.0",
+      "observed": "1.1.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/didyoumean",
+      "expected": "1.2.2",
+      "observed": "1.2.2",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/dlv",
+      "expected": "1.1.3",
+      "observed": "1.1.3",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/dom-helpers",
+      "expected": "5.2.1",
+      "observed": "5.2.1",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/dunder-proto",
+      "expected": "1.0.1",
+      "observed": "1.0.1",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/eastasianwidth",
+      "expected": "0.2.0",
+      "observed": "0.2.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/ee-first",
+      "expected": "1.1.1",
+      "observed": "1.1.1",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/electron-to-chromium",
+      "expected": "1.5.45",
+      "observed": "1.5.45",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/embla-carousel",
+      "expected": "8.3.0",
+      "observed": "8.3.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/embla-carousel-react",
+      "expected": "8.3.0",
+      "observed": "8.3.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/embla-carousel-reactive-utils",
+      "expected": "8.3.0",
+      "observed": "8.3.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/emoji-regex",
+      "expected": "9.2.2",
+      "observed": "9.2.2",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/encodeurl",
+      "expected": "2.0.0",
+      "observed": "2.0.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/es-define-property",
+      "expected": "1.0.1",
+      "observed": "1.0.1",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/es-errors",
+      "expected": "1.3.0",
+      "observed": "1.3.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/es-object-atoms",
+      "expected": "1.1.2",
+      "observed": "1.1.2",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/esbuild",
+      "expected": "0.21.5",
+      "observed": "0.21.5",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/escalade",
+      "expected": "3.2.0",
+      "observed": "3.2.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/escape-html",
+      "expected": "1.0.3",
+      "observed": "1.0.3",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/escape-string-regexp",
+      "expected": "4.0.0",
+      "observed": "4.0.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/eslint",
+      "expected": "9.13.0",
+      "observed": "9.13.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/eslint-plugin-react-hooks",
+      "expected": "5.1.0-rc-fb9a90fa48-20240614",
+      "observed": "5.1.0-rc-fb9a90fa48-20240614",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/eslint-plugin-react-refresh",
+      "expected": "0.4.14",
+      "observed": "0.4.14",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/eslint-scope",
+      "expected": "8.1.0",
+      "observed": "8.1.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/eslint-visitor-keys",
+      "expected": "4.1.0",
+      "observed": "4.1.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/espree",
+      "expected": "10.2.0",
+      "observed": "10.2.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/esquery",
+      "expected": "1.6.0",
+      "observed": "1.6.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/esrecurse",
+      "expected": "4.3.0",
+      "observed": "4.3.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/estraverse",
+      "expected": "5.3.0",
+      "observed": "5.3.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/estree-walker",
+      "expected": "3.0.3",
+      "observed": "3.0.3",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/esutils",
+      "expected": "2.0.3",
+      "observed": "2.0.3",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/etag",
+      "expected": "1.8.1",
+      "observed": "1.8.1",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/eventemitter3",
+      "expected": "4.0.7",
+      "observed": "4.0.7",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/eventsource",
+      "expected": "3.0.7",
+      "observed": "3.0.7",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/eventsource-parser",
+      "expected": "3.1.1",
+      "observed": "3.1.1",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/express",
+      "expected": "5.2.1",
+      "observed": "5.2.1",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/express-rate-limit",
+      "expected": "8.6.2",
+      "observed": "8.6.2",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/fast-deep-equal",
+      "expected": "3.1.3",
+      "observed": "3.1.3",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/fast-equals",
+      "expected": "5.0.1",
+      "observed": "5.0.1",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/fast-glob",
+      "expected": "3.3.2",
+      "observed": "3.3.2",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/fast-glob/node_modules/glob-parent",
+      "expected": "5.1.2",
+      "observed": "5.1.2",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/fast-json-stable-stringify",
+      "expected": "2.1.0",
+      "observed": "2.1.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/fast-levenshtein",
+      "expected": "2.0.6",
+      "observed": "2.0.6",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/fast-uri",
+      "expected": "3.1.5",
+      "observed": "3.1.5",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/fastq",
+      "expected": "1.17.1",
+      "observed": "1.17.1",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/file-entry-cache",
+      "expected": "8.0.0",
+      "observed": "8.0.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/fill-range",
+      "expected": "7.1.1",
+      "observed": "7.1.1",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/finalhandler",
+      "expected": "2.1.1",
+      "observed": "2.1.1",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/find-up",
+      "expected": "5.0.0",
+      "observed": "5.0.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/flat-cache",
+      "expected": "4.0.1",
+      "observed": "4.0.1",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/flatted",
+      "expected": "3.3.1",
+      "observed": "3.3.1",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/foreground-child",
+      "expected": "3.3.0",
+      "observed": "3.3.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/forwarded",
+      "expected": "0.2.0",
+      "observed": "0.2.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/fraction.js",
+      "expected": "4.3.7",
+      "observed": "4.3.7",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/framer-motion",
+      "expected": "11.18.2",
+      "observed": "11.18.2",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/fresh",
+      "expected": "2.0.0",
+      "observed": "2.0.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/fsevents",
+      "expected": "2.3.3",
+      "installed": false,
+      "optional": true,
+      "os": [
+        "darwin"
+      ]
+    },
+    {
+      "path": "node_modules/function-bind",
+      "expected": "1.1.2",
+      "observed": "1.1.2",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/get-intrinsic",
+      "expected": "1.3.0",
+      "observed": "1.3.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/get-nonce",
+      "expected": "1.0.1",
+      "observed": "1.0.1",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/get-proto",
+      "expected": "1.0.1",
+      "observed": "1.0.1",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/glob",
+      "expected": "10.4.5",
+      "observed": "10.4.5",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/glob-parent",
+      "expected": "6.0.2",
+      "observed": "6.0.2",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/glob/node_modules/brace-expansion",
+      "expected": "2.0.1",
+      "observed": "2.0.1",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/glob/node_modules/minimatch",
+      "expected": "9.0.5",
+      "observed": "9.0.5",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/globals",
+      "expected": "15.11.0",
+      "observed": "15.11.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/gopd",
+      "expected": "1.2.0",
+      "observed": "1.2.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/graphemer",
+      "expected": "1.4.0",
+      "observed": "1.4.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/has-flag",
+      "expected": "4.0.0",
+      "observed": "4.0.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/has-symbols",
+      "expected": "1.1.0",
+      "observed": "1.1.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/hasown",
+      "expected": "2.0.2",
+      "observed": "2.0.2",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/hono",
+      "expected": "4.13.3",
+      "observed": "4.13.3",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/http-errors",
+      "expected": "2.0.1",
+      "observed": "2.0.1",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/iceberg-js",
+      "expected": "0.8.1",
+      "observed": "0.8.1",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/iconv-lite",
+      "expected": "0.7.3",
+      "observed": "0.7.3",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/ignore",
+      "expected": "5.3.2",
+      "observed": "5.3.2",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/import-fresh",
+      "expected": "3.3.0",
+      "observed": "3.3.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/imurmurhash",
+      "expected": "0.1.4",
+      "observed": "0.1.4",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/inherits",
+      "expected": "2.0.4",
+      "observed": "2.0.4",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/input-otp",
+      "expected": "1.2.4",
+      "observed": "1.2.4",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/internmap",
+      "expected": "2.0.3",
+      "observed": "2.0.3",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/invariant",
+      "expected": "2.2.4",
+      "observed": "2.2.4",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/ip-address",
+      "expected": "10.5.0",
+      "observed": "10.5.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/ipaddr.js",
+      "expected": "1.9.1",
+      "observed": "1.9.1",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/is-binary-path",
+      "expected": "2.1.0",
+      "observed": "2.1.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/is-core-module",
+      "expected": "2.15.1",
+      "observed": "2.15.1",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/is-extglob",
+      "expected": "2.1.1",
+      "observed": "2.1.1",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/is-fullwidth-code-point",
+      "expected": "3.0.0",
+      "observed": "3.0.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/is-glob",
+      "expected": "4.0.3",
+      "observed": "4.0.3",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/is-number",
+      "expected": "7.0.0",
+      "observed": "7.0.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/is-promise",
+      "expected": "4.0.0",
+      "observed": "4.0.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/isexe",
+      "expected": "2.0.0",
+      "observed": "2.0.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/jackspeak",
+      "expected": "3.4.3",
+      "observed": "3.4.3",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/jiti",
+      "expected": "1.21.6",
+      "observed": "1.21.6",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/jose",
+      "expected": "6.2.9",
+      "observed": "6.2.9",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/js-tokens",
+      "expected": "4.0.0",
+      "observed": "4.0.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/js-yaml",
+      "expected": "4.1.0",
+      "observed": "4.1.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/json-buffer",
+      "expected": "3.0.1",
+      "observed": "3.0.1",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/json-schema-traverse",
+      "expected": "0.4.1",
+      "observed": "0.4.1",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/json-schema-typed",
+      "expected": "8.0.2",
+      "observed": "8.0.2",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/json-stable-stringify-without-jsonify",
+      "expected": "1.0.1",
+      "observed": "1.0.1",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/keyv",
+      "expected": "4.5.4",
+      "observed": "4.5.4",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/levn",
+      "expected": "0.4.1",
+      "observed": "0.4.1",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/lilconfig",
+      "expected": "3.1.3",
+      "observed": "3.1.3",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/lines-and-columns",
+      "expected": "1.2.4",
+      "observed": "1.2.4",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/locate-path",
+      "expected": "6.0.0",
+      "observed": "6.0.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/lodash",
+      "expected": "4.17.21",
+      "observed": "4.17.21",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/lodash.castarray",
+      "expected": "4.4.0",
+      "observed": "4.4.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/lodash.isplainobject",
+      "expected": "4.0.6",
+      "observed": "4.0.6",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/lodash.merge",
+      "expected": "4.6.2",
+      "observed": "4.6.2",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/loose-envify",
+      "expected": "1.4.0",
+      "observed": "1.4.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/lovable-tagger",
+      "expected": "1.1.7",
+      "observed": "1.1.7",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/lovable-tagger/node_modules/@esbuild/aix-ppc64",
+      "expected": "0.25.0",
+      "installed": false,
+      "optional": true,
+      "os": [
+        "aix"
+      ],
+      "cpu": [
+        "ppc64"
+      ]
+    },
+    {
+      "path": "node_modules/lovable-tagger/node_modules/@esbuild/android-arm",
+      "expected": "0.25.0",
+      "installed": false,
+      "optional": true,
+      "os": [
+        "android"
+      ],
+      "cpu": [
+        "arm"
+      ]
+    },
+    {
+      "path": "node_modules/lovable-tagger/node_modules/@esbuild/android-arm64",
+      "expected": "0.25.0",
+      "installed": false,
+      "optional": true,
+      "os": [
+        "android"
+      ],
+      "cpu": [
+        "arm64"
+      ]
+    },
+    {
+      "path": "node_modules/lovable-tagger/node_modules/@esbuild/android-x64",
+      "expected": "0.25.0",
+      "installed": false,
+      "optional": true,
+      "os": [
+        "android"
+      ],
+      "cpu": [
+        "x64"
+      ]
+    },
+    {
+      "path": "node_modules/lovable-tagger/node_modules/@esbuild/darwin-arm64",
+      "expected": "0.25.0",
+      "installed": false,
+      "optional": true,
+      "os": [
+        "darwin"
+      ],
+      "cpu": [
+        "arm64"
+      ]
+    },
+    {
+      "path": "node_modules/lovable-tagger/node_modules/@esbuild/darwin-x64",
+      "expected": "0.25.0",
+      "installed": false,
+      "optional": true,
+      "os": [
+        "darwin"
+      ],
+      "cpu": [
+        "x64"
+      ]
+    },
+    {
+      "path": "node_modules/lovable-tagger/node_modules/@esbuild/freebsd-arm64",
+      "expected": "0.25.0",
+      "installed": false,
+      "optional": true,
+      "os": [
+        "freebsd"
+      ],
+      "cpu": [
+        "arm64"
+      ]
+    },
+    {
+      "path": "node_modules/lovable-tagger/node_modules/@esbuild/freebsd-x64",
+      "expected": "0.25.0",
+      "installed": false,
+      "optional": true,
+      "os": [
+        "freebsd"
+      ],
+      "cpu": [
+        "x64"
+      ]
+    },
+    {
+      "path": "node_modules/lovable-tagger/node_modules/@esbuild/linux-arm",
+      "expected": "0.25.0",
+      "installed": false,
+      "optional": true,
+      "os": [
+        "linux"
+      ],
+      "cpu": [
+        "arm"
+      ]
+    },
+    {
+      "path": "node_modules/lovable-tagger/node_modules/@esbuild/linux-arm64",
+      "expected": "0.25.0",
+      "installed": false,
+      "optional": true,
+      "os": [
+        "linux"
+      ],
+      "cpu": [
+        "arm64"
+      ]
+    },
+    {
+      "path": "node_modules/lovable-tagger/node_modules/@esbuild/linux-ia32",
+      "expected": "0.25.0",
+      "installed": false,
+      "optional": true,
+      "os": [
+        "linux"
+      ],
+      "cpu": [
+        "ia32"
+      ]
+    },
+    {
+      "path": "node_modules/lovable-tagger/node_modules/@esbuild/linux-loong64",
+      "expected": "0.25.0",
+      "installed": false,
+      "optional": true,
+      "os": [
+        "linux"
+      ],
+      "cpu": [
+        "loong64"
+      ]
+    },
+    {
+      "path": "node_modules/lovable-tagger/node_modules/@esbuild/linux-mips64el",
+      "expected": "0.25.0",
+      "installed": false,
+      "optional": true,
+      "os": [
+        "linux"
+      ],
+      "cpu": [
+        "mips64el"
+      ]
+    },
+    {
+      "path": "node_modules/lovable-tagger/node_modules/@esbuild/linux-ppc64",
+      "expected": "0.25.0",
+      "installed": false,
+      "optional": true,
+      "os": [
+        "linux"
+      ],
+      "cpu": [
+        "ppc64"
+      ]
+    },
+    {
+      "path": "node_modules/lovable-tagger/node_modules/@esbuild/linux-riscv64",
+      "expected": "0.25.0",
+      "installed": false,
+      "optional": true,
+      "os": [
+        "linux"
+      ],
+      "cpu": [
+        "riscv64"
+      ]
+    },
+    {
+      "path": "node_modules/lovable-tagger/node_modules/@esbuild/linux-s390x",
+      "expected": "0.25.0",
+      "installed": false,
+      "optional": true,
+      "os": [
+        "linux"
+      ],
+      "cpu": [
+        "s390x"
+      ]
+    },
+    {
+      "path": "node_modules/lovable-tagger/node_modules/@esbuild/linux-x64",
+      "expected": "0.25.0",
+      "installed": false,
+      "optional": true,
+      "os": [
+        "linux"
+      ],
+      "cpu": [
+        "x64"
+      ]
+    },
+    {
+      "path": "node_modules/lovable-tagger/node_modules/@esbuild/netbsd-x64",
+      "expected": "0.25.0",
+      "installed": false,
+      "optional": true,
+      "os": [
+        "netbsd"
+      ],
+      "cpu": [
+        "x64"
+      ]
+    },
+    {
+      "path": "node_modules/lovable-tagger/node_modules/@esbuild/openbsd-x64",
+      "expected": "0.25.0",
+      "installed": false,
+      "optional": true,
+      "os": [
+        "openbsd"
+      ],
+      "cpu": [
+        "x64"
+      ]
+    },
+    {
+      "path": "node_modules/lovable-tagger/node_modules/@esbuild/sunos-x64",
+      "expected": "0.25.0",
+      "installed": false,
+      "optional": true,
+      "os": [
+        "sunos"
+      ],
+      "cpu": [
+        "x64"
+      ]
+    },
+    {
+      "path": "node_modules/lovable-tagger/node_modules/@esbuild/win32-arm64",
+      "expected": "0.25.0",
+      "installed": false,
+      "optional": true,
+      "os": [
+        "win32"
+      ],
+      "cpu": [
+        "arm64"
+      ]
+    },
+    {
+      "path": "node_modules/lovable-tagger/node_modules/@esbuild/win32-ia32",
+      "expected": "0.25.0",
+      "installed": false,
+      "optional": true,
+      "os": [
+        "win32"
+      ],
+      "cpu": [
+        "ia32"
+      ]
+    },
+    {
+      "path": "node_modules/lovable-tagger/node_modules/@esbuild/win32-x64",
+      "expected": "0.25.0",
+      "observed": "0.25.0",
+      "optional": true,
+      "match": true
+    },
+    {
+      "path": "node_modules/lovable-tagger/node_modules/esbuild",
+      "expected": "0.25.0",
+      "observed": "0.25.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/lru-cache",
+      "expected": "10.4.3",
+      "observed": "10.4.3",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/lucide-react",
+      "expected": "0.462.0",
+      "observed": "0.462.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/magic-string",
+      "expected": "0.30.12",
+      "observed": "0.30.12",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/math-intrinsics",
+      "expected": "1.1.0",
+      "observed": "1.1.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/media-typer",
+      "expected": "1.1.1",
+      "observed": "1.1.1",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/merge-descriptors",
+      "expected": "2.0.0",
+      "observed": "2.0.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/merge2",
+      "expected": "1.4.1",
+      "observed": "1.4.1",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/micromatch",
+      "expected": "4.0.8",
+      "observed": "4.0.8",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/mime-db",
+      "expected": "1.54.0",
+      "observed": "1.54.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/mime-types",
+      "expected": "3.0.2",
+      "observed": "3.0.2",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/minimatch",
+      "expected": "3.1.2",
+      "observed": "3.1.2",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/minipass",
+      "expected": "7.1.2",
+      "observed": "7.1.2",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/motion-dom",
+      "expected": "11.18.1",
+      "observed": "11.18.1",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/motion-utils",
+      "expected": "11.18.1",
+      "observed": "11.18.1",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/ms",
+      "expected": "2.1.3",
+      "observed": "2.1.3",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/mz",
+      "expected": "2.7.0",
+      "observed": "2.7.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/nanoid",
+      "expected": "3.3.7",
+      "observed": "3.3.7",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/natural-compare",
+      "expected": "1.4.0",
+      "observed": "1.4.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/negotiator",
+      "expected": "1.0.0",
+      "observed": "1.0.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/next-themes",
+      "expected": "0.3.0",
+      "observed": "0.3.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/node-releases",
+      "expected": "2.0.18",
+      "observed": "2.0.18",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/normalize-path",
+      "expected": "3.0.0",
+      "observed": "3.0.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/normalize-range",
+      "expected": "0.1.2",
+      "observed": "0.1.2",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/object-assign",
+      "expected": "4.1.1",
+      "observed": "4.1.1",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/object-hash",
+      "expected": "3.0.0",
+      "observed": "3.0.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/object-inspect",
+      "expected": "1.13.4",
+      "observed": "1.13.4",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/on-finished",
+      "expected": "2.4.1",
+      "observed": "2.4.1",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/once",
+      "expected": "1.4.0",
+      "observed": "1.4.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/optionator",
+      "expected": "0.9.4",
+      "observed": "0.9.4",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/p-limit",
+      "expected": "3.1.0",
+      "observed": "3.1.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/p-locate",
+      "expected": "5.0.0",
+      "observed": "5.0.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/package-json-from-dist",
+      "expected": "1.0.1",
+      "observed": "1.0.1",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/parent-module",
+      "expected": "1.0.1",
+      "observed": "1.0.1",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/parseurl",
+      "expected": "1.3.3",
+      "observed": "1.3.3",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/path-exists",
+      "expected": "4.0.0",
+      "observed": "4.0.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/path-key",
+      "expected": "3.1.1",
+      "observed": "3.1.1",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/path-parse",
+      "expected": "1.0.7",
+      "observed": "1.0.7",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/path-scurry",
+      "expected": "1.11.1",
+      "observed": "1.11.1",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/path-to-regexp",
+      "expected": "8.4.2",
+      "observed": "8.4.2",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/picocolors",
+      "expected": "1.1.1",
+      "observed": "1.1.1",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/picomatch",
+      "expected": "2.3.1",
+      "observed": "2.3.1",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/pify",
+      "expected": "2.3.0",
+      "observed": "2.3.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/pirates",
+      "expected": "4.0.6",
+      "observed": "4.0.6",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/pkce-challenge",
+      "expected": "5.0.1",
+      "observed": "5.0.1",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/postcss",
+      "expected": "8.4.47",
+      "observed": "8.4.47",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/postcss-import",
+      "expected": "15.1.0",
+      "observed": "15.1.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/postcss-js",
+      "expected": "4.0.1",
+      "observed": "4.0.1",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/postcss-load-config",
+      "expected": "4.0.2",
+      "observed": "4.0.2",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/postcss-nested",
+      "expected": "6.2.0",
+      "observed": "6.2.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/postcss-selector-parser",
+      "expected": "6.1.2",
+      "observed": "6.1.2",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/postcss-value-parser",
+      "expected": "4.2.0",
+      "observed": "4.2.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/prelude-ls",
+      "expected": "1.2.1",
+      "observed": "1.2.1",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/prop-types",
+      "expected": "15.8.1",
+      "observed": "15.8.1",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/prop-types/node_modules/react-is",
+      "expected": "16.13.1",
+      "observed": "16.13.1",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/proxy-addr",
+      "expected": "2.0.7",
+      "observed": "2.0.7",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/punycode",
+      "expected": "2.3.1",
+      "observed": "2.3.1",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/qs",
+      "expected": "6.15.3",
+      "observed": "6.15.3",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/queue-microtask",
+      "expected": "1.2.3",
+      "observed": "1.2.3",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/range-parser",
+      "expected": "1.3.0",
+      "observed": "1.3.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/raw-body",
+      "expected": "3.0.2",
+      "observed": "3.0.2",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/react",
+      "expected": "18.3.1",
+      "observed": "18.3.1",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/react-day-picker",
+      "expected": "8.10.1",
+      "observed": "8.10.1",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/react-dom",
+      "expected": "18.3.1",
+      "observed": "18.3.1",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/react-hook-form",
+      "expected": "7.53.1",
+      "observed": "7.53.1",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/react-is",
+      "expected": "18.3.1",
+      "observed": "18.3.1",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/react-remove-scroll",
+      "expected": "2.6.0",
+      "observed": "2.6.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/react-remove-scroll-bar",
+      "expected": "2.3.6",
+      "observed": "2.3.6",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/react-resizable-panels",
+      "expected": "2.1.5",
+      "observed": "2.1.5",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/react-router",
+      "expected": "6.27.0",
+      "observed": "6.27.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/react-router-dom",
+      "expected": "6.27.0",
+      "observed": "6.27.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/react-smooth",
+      "expected": "4.0.1",
+      "observed": "4.0.1",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/react-style-singleton",
+      "expected": "2.2.1",
+      "observed": "2.2.1",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/react-transition-group",
+      "expected": "4.4.5",
+      "observed": "4.4.5",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/read-cache",
+      "expected": "1.0.0",
+      "observed": "1.0.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/readdirp",
+      "expected": "3.6.0",
+      "observed": "3.6.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/recharts",
+      "expected": "2.13.0",
+      "observed": "2.13.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/recharts-scale",
+      "expected": "0.4.5",
+      "observed": "0.4.5",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/regenerator-runtime",
+      "expected": "0.14.1",
+      "observed": "0.14.1",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/require-from-string",
+      "expected": "2.0.2",
+      "observed": "2.0.2",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/resolve",
+      "expected": "1.22.8",
+      "observed": "1.22.8",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/resolve-from",
+      "expected": "4.0.0",
+      "observed": "4.0.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/reusify",
+      "expected": "1.0.4",
+      "observed": "1.0.4",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/rollup",
+      "expected": "4.24.0",
+      "observed": "4.24.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/router",
+      "expected": "2.2.0",
+      "observed": "2.2.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/run-parallel",
+      "expected": "1.2.0",
+      "observed": "1.2.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/safer-buffer",
+      "expected": "2.1.2",
+      "observed": "2.1.2",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/scheduler",
+      "expected": "0.23.2",
+      "observed": "0.23.2",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/semver",
+      "expected": "7.6.3",
+      "observed": "7.6.3",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/send",
+      "expected": "1.2.1",
+      "observed": "1.2.1",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/serve-static",
+      "expected": "2.2.1",
+      "observed": "2.2.1",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/setprototypeof",
+      "expected": "1.2.0",
+      "observed": "1.2.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/shebang-command",
+      "expected": "2.0.0",
+      "observed": "2.0.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/shebang-regex",
+      "expected": "3.0.0",
+      "observed": "3.0.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/side-channel",
+      "expected": "1.1.1",
+      "observed": "1.1.1",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/side-channel-list",
+      "expected": "1.0.1",
+      "observed": "1.0.1",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/side-channel-map",
+      "expected": "1.0.1",
+      "observed": "1.0.1",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/side-channel-weakmap",
+      "expected": "1.0.2",
+      "observed": "1.0.2",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/signal-exit",
+      "expected": "4.1.0",
+      "observed": "4.1.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/sonner",
+      "expected": "1.5.0",
+      "observed": "1.5.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/source-map-js",
+      "expected": "1.2.1",
+      "observed": "1.2.1",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/statuses",
+      "expected": "2.0.2",
+      "observed": "2.0.2",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/string-width",
+      "expected": "5.1.2",
+      "observed": "5.1.2",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/string-width-cjs",
+      "expected": "4.2.3",
+      "observed": "4.2.3",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/string-width-cjs/node_modules/ansi-regex",
+      "expected": "5.0.1",
+      "observed": "5.0.1",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/string-width-cjs/node_modules/emoji-regex",
+      "expected": "8.0.0",
+      "observed": "8.0.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/string-width-cjs/node_modules/strip-ansi",
+      "expected": "6.0.1",
+      "observed": "6.0.1",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/strip-ansi",
+      "expected": "7.1.0",
+      "observed": "7.1.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/strip-ansi-cjs",
+      "expected": "6.0.1",
+      "observed": "6.0.1",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/strip-ansi-cjs/node_modules/ansi-regex",
+      "expected": "5.0.1",
+      "observed": "5.0.1",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/strip-json-comments",
+      "expected": "3.1.1",
+      "observed": "3.1.1",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/sucrase",
+      "expected": "3.35.0",
+      "observed": "3.35.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/supports-color",
+      "expected": "7.2.0",
+      "observed": "7.2.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/supports-preserve-symlinks-flag",
+      "expected": "1.0.0",
+      "observed": "1.0.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/tailwind-merge",
+      "expected": "2.5.4",
+      "observed": "2.5.4",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/tailwindcss",
+      "expected": "3.4.17",
+      "observed": "3.4.17",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/tailwindcss-animate",
+      "expected": "1.0.7",
+      "observed": "1.0.7",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/text-table",
+      "expected": "0.2.0",
+      "observed": "0.2.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/thenify",
+      "expected": "3.3.1",
+      "observed": "3.3.1",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/thenify-all",
+      "expected": "1.6.0",
+      "observed": "1.6.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/tiny-invariant",
+      "expected": "1.3.3",
+      "observed": "1.3.3",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/to-regex-range",
+      "expected": "5.0.1",
+      "observed": "5.0.1",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/toidentifier",
+      "expected": "1.0.1",
+      "observed": "1.0.1",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/ts-api-utils",
+      "expected": "1.3.0",
+      "observed": "1.3.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/ts-interface-checker",
+      "expected": "0.1.13",
+      "observed": "0.1.13",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/tslib",
+      "expected": "2.8.1",
+      "observed": "2.8.1",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/type-check",
+      "expected": "0.4.0",
+      "observed": "0.4.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/type-is",
+      "expected": "2.1.0",
+      "observed": "2.1.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/type-is/node_modules/content-type",
+      "expected": "2.1.0",
+      "observed": "2.1.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/typescript",
+      "expected": "5.6.3",
+      "observed": "5.6.3",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/typescript-eslint",
+      "expected": "8.11.0",
+      "observed": "8.11.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/undici-types",
+      "expected": "6.19.8",
+      "observed": "6.19.8",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/unpipe",
+      "expected": "1.0.0",
+      "observed": "1.0.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/update-browserslist-db",
+      "expected": "1.1.1",
+      "observed": "1.1.1",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/uri-js",
+      "expected": "4.4.1",
+      "observed": "4.4.1",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/use-callback-ref",
+      "expected": "1.3.2",
+      "observed": "1.3.2",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/use-sidecar",
+      "expected": "1.1.2",
+      "observed": "1.1.2",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/util-deprecate",
+      "expected": "1.0.2",
+      "observed": "1.0.2",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/vary",
+      "expected": "1.1.2",
+      "observed": "1.1.2",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/vaul",
+      "expected": "0.9.9",
+      "observed": "0.9.9",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/victory-vendor",
+      "expected": "36.9.2",
+      "observed": "36.9.2",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/vite",
+      "expected": "5.4.10",
+      "observed": "5.4.10",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/which",
+      "expected": "2.0.2",
+      "observed": "2.0.2",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/word-wrap",
+      "expected": "1.2.5",
+      "observed": "1.2.5",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/wrap-ansi",
+      "expected": "8.1.0",
+      "observed": "8.1.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/wrap-ansi-cjs",
+      "expected": "7.0.0",
+      "observed": "7.0.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/wrap-ansi-cjs/node_modules/ansi-regex",
+      "expected": "5.0.1",
+      "observed": "5.0.1",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/wrap-ansi-cjs/node_modules/emoji-regex",
+      "expected": "8.0.0",
+      "observed": "8.0.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/wrap-ansi-cjs/node_modules/string-width",
+      "expected": "4.2.3",
+      "observed": "4.2.3",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/wrap-ansi-cjs/node_modules/strip-ansi",
+      "expected": "6.0.1",
+      "observed": "6.0.1",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/wrap-ansi/node_modules/ansi-styles",
+      "expected": "6.2.1",
+      "observed": "6.2.1",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/wrappy",
+      "expected": "1.0.2",
+      "observed": "1.0.2",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/ws",
+      "expected": "8.20.0",
+      "observed": "8.20.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/yaml",
+      "expected": "2.6.0",
+      "observed": "2.6.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/yocto-queue",
+      "expected": "0.1.0",
+      "observed": "0.1.0",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/zod",
+      "expected": "4.4.3",
+      "observed": "4.4.3",
+      "optional": false,
+      "match": true
+    },
+    {
+      "path": "node_modules/zod-to-json-schema",
+      "expected": "3.25.2",
+      "observed": "3.25.2",
+      "optional": false,
+      "match": true
+    }
+  ],
+  "errors": [],
+  "passed": true
+}

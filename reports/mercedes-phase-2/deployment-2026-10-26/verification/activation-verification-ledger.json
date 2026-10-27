@@ -1,0 +1,140 @@
+{
+  "scope": "R1–R4 public HTTP observations and operator-supplied Cloudflare activation metadata",
+  "activationTimeMeaning": "submittedAt and enabledObservedAt are UI observation boundaries supplied by operator; provider exact activation time is not exposed",
+  "stages": [
+    {
+      "stage": "R1",
+      "key": "ar-oil-change",
+      "ruleId": "b835ca6b88b448d6809f01271dba491b",
+      "submittedAt": "2026-10-26T07:15:45.190Z",
+      "enabledObservedAt": "2026-10-26T07:15:52.800Z",
+      "activationMetadataSource": "Operator message; Cloudflare dashboard readback performed by root agent",
+      "observedHttpStartedAt": "2026-10-26T07:16:45.148Z",
+      "observedHttpFinishedAt": "2026-10-26T07:16:59.672Z",
+      "status": "PASS",
+      "newRuleMatrixCases": 48,
+      "sourceFirstStatuses": [
+        308
+      ],
+      "destinationFinalStatuses": [
+        200
+      ],
+      "observedSourceEdgeColos": [
+        "AMS",
+        "CDG",
+        "HKG",
+        "FRA"
+      ],
+      "cases": 106,
+      "networkRequests": 173,
+      "assertions": 342,
+      "passed": 342,
+      "failed": 0,
+      "sourceCases": 54,
+      "protectedOilCases": 8,
+      "evidenceDirectory": "evidence\\checkpoint-R1-2026-10-26T07-16-45-143Z",
+      "baselinePath": "reports/mercedes-phase-2/evidence/http/pre-2026-10-26T07-06-59-812Z/capture.json"
+    },
+    {
+      "stage": "R2",
+      "key": "en-body-repair",
+      "ruleId": "5fafd20389964771885d8d1194f01d77",
+      "submittedAt": "2026-10-26T07:17:42.913Z",
+      "enabledObservedAt": "2026-10-26T07:17:45.750Z",
+      "activationMetadataSource": "Operator message; Cloudflare dashboard readback performed by root agent",
+      "observedHttpStartedAt": "2026-10-26T07:18:04.884Z",
+      "observedHttpFinishedAt": "2026-10-26T07:18:20.349Z",
+      "status": "PASS",
+      "newRuleMatrixCases": 48,
+      "sourceFirstStatuses": [
+        308
+      ],
+      "destinationFinalStatuses": [
+        200
+      ],
+      "observedSourceEdgeColos": [
+        "CDG",
+        "AMS",
+        "HKG",
+        "FRA"
+      ],
+      "cases": 106,
+      "networkRequests": 174,
+      "assertions": 341,
+      "passed": 341,
+      "failed": 0,
+      "sourceCases": 54,
+      "protectedOilCases": 8,
+      "evidenceDirectory": "evidence\\checkpoint-R2-2026-10-26T07-18-04-882Z",
+      "baselinePath": "reports/mercedes-phase-2/evidence/http/pre-2026-10-26T07-06-59-812Z/capture.json"
+    },
+    {
+      "stage": "R3",
+      "key": "ar-battery-replacement",
+      "ruleId": "239ab46545704096bec2628d8eedf9b9",
+      "submittedAt": "2026-10-26T07:19:04.747Z",
+      "enabledObservedAt": "2026-10-26T07:19:07.456Z",
+      "activationMetadataSource": "Operator message; Cloudflare dashboard readback performed by root agent",
+      "observedHttpStartedAt": "2026-10-26T07:19:27.316Z",
+      "observedHttpFinishedAt": "2026-10-26T07:19:43.295Z",
+      "status": "PASS",
+      "newRuleMatrixCases": 48,
+      "sourceFirstStatuses": [
+        308
+      ],
+      "destinationFinalStatuses": [
+        200
+      ],
+      "observedSourceEdgeColos": [
+        "CDG",
+        "FRA",
+        "AMS",
+        "HKG"
+      ],
+      "cases": 106,
+      "networkRequests": 175,
+      "assertions": 340,
+      "passed": 340,
+      "failed": 0,
+      "sourceCases": 54,
+      "protectedOilCases": 8,
+      "evidenceDirectory": "evidence\\checkpoint-R3-2026-10-26T07-19-27-311Z",
+      "baselinePath": "reports/mercedes-phase-2/evidence/http/pre-2026-10-26T07-06-59-812Z/capture.json"
+    },
+    {
+      "stage": "R4",
+      "key": "ar-mechanical-repair",
+      "ruleId": "2873f5b6de04417d8a486b22cc878835",
+      "submittedAt": "2026-10-26T07:20:32.137Z",
+      "enabledObservedAt": "2026-10-26T07:20:34.742Z",
+      "activationMetadataSource": "Operator message; Cloudflare dashboard readback performed by root agent",
+      "observedHttpStartedAt": "2026-10-26T07:20:57.868Z",
+      "observedHttpFinishedAt": "2026-10-26T07:21:13.586Z",
+      "status": "FAIL",
+      "newRuleMatrixCases": 48,
+      "sourceFirstStatuses": [
+        200,
+        308
+      ],
+      "destinationFinalStatuses": [
+        200
+      ],
+      "observedSourceEdgeColos": [
+        "AMS",
+        "CDG",
+        "HKG",
+        "FRA"
+      ],
+      "cases": 106,
+      "networkRequests": 175,
+      "assertions": 339,
+      "passed": 337,
+      "failed": 2,
+      "sourceCases": 54,
+      "protectedOilCases": 8,
+      "evidenceDirectory": "evidence\\checkpoint-R4-2026-10-26T07-20-57-862Z",
+      "baselinePath": "reports/mercedes-phase-2/evidence/http/pre-2026-10-26T07-06-59-812Z/capture.json"
+    }
+  ],
+  "updatedAt": "2026-10-26T07:21:42.077Z"
+}

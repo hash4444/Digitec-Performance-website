@@ -1,0 +1,795 @@
+{
+  "reviewedAtUtc": "2026-10-26T10:21:10.529Z",
+  "reviewedAtDubai": "2026-10-26T14:21:10.529+04:00",
+  "readOnly": true,
+  "networkScope": "Primary Google documentation consulted through web tool; all project/content/sitemap analysis uses saved local evidence. No current website or authenticated configuration request made by this task.",
+  "sourceMutations": 0,
+  "generatorMutations": 0,
+  "sitemapMutations": 0,
+  "gate": {
+    "oct20ContentRevisionDatesSupported": true,
+    "productionSitemapAlreadyShowedAllFourOct20Dates": true,
+    "exactHistoricalFirstPublicationDateKnown": false,
+    "automaticDateReplacementOrDeploymentAuthorized": false
+  },
+  "dateRows": [
+    {
+      "route": "/brands/mercedes-benz-service-dubai",
+      "originalStoredDate": "2026-10-05",
+      "currentCatalogDate": "2026-10-20",
+      "observedPublicDate": "2026-10-20",
+      "contentRevisionDate": "2026-10-20",
+      "contentDateEvidence": "Supported by actual source/rendered change, date-bearing historical QA, matching current source hashes and a committed per-path override",
+      "exactFirstPublicAvailabilityDate": null
+    },
+    {
+      "route": "/ar/brands/mercedes-benz-service-dubai",
+      "originalStoredDate": "2026-10-05",
+      "currentCatalogDate": "2026-10-20",
+      "observedPublicDate": "2026-10-20",
+      "contentRevisionDate": "2026-10-20",
+      "contentDateEvidence": "Supported by actual source/rendered change, date-bearing historical QA, matching current source hashes and a committed per-path override",
+      "exactFirstPublicAvailabilityDate": null
+    },
+    {
+      "route": "/services",
+      "originalStoredDate": "2026-10-12",
+      "currentCatalogDate": "2026-10-20",
+      "observedPublicDate": "2026-10-20",
+      "contentRevisionDate": "2026-10-20",
+      "contentDateEvidence": "Supported by actual source/rendered change, date-bearing historical QA, matching current source hashes and a committed per-path override",
+      "exactFirstPublicAvailabilityDate": null
+    },
+    {
+      "route": "/ar/services",
+      "originalStoredDate": "2026-10-12",
+      "currentCatalogDate": "2026-10-20",
+      "observedPublicDate": "2026-10-20",
+      "contentRevisionDate": "2026-10-20",
+      "contentDateEvidence": "Supported by actual source/rendered change, date-bearing historical QA, matching current source hashes and a committed per-path override",
+      "exactFirstPublicAvailabilityDate": null
+    }
+  ],
+  "provenance": {
+    "generatorExcerpt": [
+      {
+        "line": 149,
+        "text": "const sitemapEntries = routes"
+      },
+      {
+        "line": 150,
+        "text": "  .filter((route) => route.indexable)"
+      },
+      {
+        "line": 151,
+        "text": "  .map((route) => ["
+      },
+      {
+        "line": 152,
+        "text": "    '  <url>',"
+      },
+      {
+        "line": 153,
+        "text": "    `    <loc>${SITE_URL}${route.path}</loc>`,"
+      },
+      {
+        "line": 154,
+        "text": "    `    <lastmod>${route.lastmod}</lastmod>`,"
+      },
+      {
+        "line": 155,
+        "text": "    '  </url>',"
+      },
+      {
+        "line": 156,
+        "text": "  ].join('\\n'))"
+      },
+      {
+        "line": 157,
+        "text": "  .join('\\n');"
+      },
+      {
+        "line": 158,
+        "text": "const sitemap = `<?xml version=\"1.0\" encoding=\"UTF-8\"?>\\n<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">\\n${sitemapEntries}\\n</urlset>\\n`;"
+      },
+      {
+        "line": 159,
+        "text": "await writeFile(path.join(root, 'public', 'sitemap.xml'), sitemap);"
+      },
+      {
+        "line": 160,
+        "text": "await writeFile(path.join(distDirectory, 'sitemap.xml'), sitemap);"
+      }
+    ],
+    "currentCatalogExcerpt": [
+      {
+        "line": 230,
+        "text": "export const publicRoutes = [...routeMap.values()].map((route) => b4UpdatedPaths.has(route.path) ? { ...route, lastmod: '2026-09-28' } : bmwB3UpdatedPaths.has(route.path) ? { ...route, lastmod: '2026-09-28' } : porscheB2UpdatedPaths.has(route.path) ? { ...route, lastmod: '2026-09-28' } : mercedesB1UpdatedPaths.has(route.path) ? { ...route, lastmod: '2026-09-28' } : sitewideSeoUpdatedPaths.has(route.path) ? { ...route, lastmod: '2026-09-17' } : masterSeoUpdatedPaths.has(route.path) ? { ...route, lastmod: '2026-09-16' } : (currentMercedesSeoPaths.has(route.path) || currentMaintenanceGuidePaths.has(route.path)) ? { ...route, lastmod: '2026-09-14' } : (route.path === '/services/transmission-repair-dubai' || oilChangeUpdatedPaths.has(route.path) || suspensionUpdatedPaths.has(route.path)) ? { ...route, lastmod: '2026-09-10' } : queryReleaseChanged(route) ? { ...route, lastmod: '2026-09-09' } : (paintCareUpdatedPaths.has(route.path) || mercedesUpdatedPaths.has(route.path)) ? { ...route, lastmod: '2026-09-08' } : route).map(route => T1_UPDATED_PATHS.has(route.path) ? { ...route, lastmod: T1_UPDATED_DATE } : route).sort((a, b) =>"
+      },
+      {
+        "line": 231,
+        "text": "  a.path.localeCompare(b.path),"
+      },
+      {
+        "line": 232,
+        "text": ");"
+      },
+      {
+        "line": 233,
+        "text": ""
+      },
+      {
+        "line": 234,
+        "text": "// Only pages whose paint-care content changed receive this modification date."
+      },
+      {
+        "line": 235,
+        "text": "const paintProtectionUpdatedPaths = new Set(["
+      },
+      {
+        "line": 236,
+        "text": "  '/services', '/ar/services', '/sitemap', '/ar/sitemap',"
+      },
+      {
+        "line": 237,
+        "text": "  '/services/paint-protection-dubai', '/ar/services/paint-protection-dubai',"
+      },
+      {
+        "line": 238,
+        "text": "  '/services/paint-protection-film', '/ar/services/paint-protection-film',"
+      },
+      {
+        "line": 239,
+        "text": "  '/services/ceramic-coating', '/ar/services/ceramic-coating',"
+      },
+      {
+        "line": 240,
+        "text": "  '/services/car-polishing-dubai',"
+      },
+      {
+        "line": 241,
+        "text": "  '/blog/ceramic-coating-vs-ppf-dubai', '/ar/blog/ceramic-coating-vs-ppf-dubai',"
+      },
+      {
+        "line": 242,
+        "text": "  '/blog/why-ceramic-coating-matters-uae', '/ar/blog/why-ceramic-coating-matters-uae',"
+      },
+      {
+        "line": 243,
+        "text": "]);"
+      },
+      {
+        "line": 244,
+        "text": "for (const route of publicRoutes) {"
+      },
+      {
+        "line": 245,
+        "text": "  if (paintProtectionUpdatedPaths.has(route.path)) route.lastmod = '2026-10-12';"
+      },
+      {
+        "line": 246,
+        "text": "  if (['/services/paint-protection-film', '/ar/services/paint-protection-film'].includes(route.path)) route.lastmod = '2026-10-17';"
+      },
+      {
+        "line": 247,
+        "text": "}"
+      },
+      {
+        "line": 248,
+        "text": ""
+      },
+      {
+        "line": 249,
+        "text": "// Substantive servicing copy and the contextual directory link changed only here."
+      },
+      {
+        "line": 250,
+        "text": "const mercedesServiceCampaignPaths = new Set(["
+      },
+      {
+        "line": 251,
+        "text": "  '/brands/mercedes-benz-service-dubai', '/ar/brands/mercedes-benz-service-dubai',"
+      },
+      {
+        "line": 252,
+        "text": "  '/services', '/ar/services',"
+      },
+      {
+        "line": 253,
+        "text": "]);"
+      },
+      {
+        "line": 254,
+        "text": "for (const route of publicRoutes) {"
+      },
+      {
+        "line": 255,
+        "text": "  if (mercedesServiceCampaignPaths.has(route.path)) route.lastmod = '2026-10-20';"
+      },
+      {
+        "line": 256,
+        "text": "}"
+      },
+      {
+        "line": 257,
+        "text": ""
+      },
+      {
+        "line": 258,
+        "text": "export const indexableRoutes = publicRoutes.filter((route) => route.indexable);"
+      }
+    ],
+    "earlierDateLayers": {
+      "hub": "T1_UPDATED_DATE=2026-10-05 on both hub paths is overridden by the final campaign loop.",
+      "servicesIndexes": "Paint-protection loop sets 2026-10-12 on both service indexes, then the final campaign loop overrides them.",
+      "sitewideUpdatedPaths": "Older September per-path content layers precede T1/paint/campaign overrides; they are not the source of Oct20.",
+      "generationClock": "No new Date(), filesystem mtime or Git timestamp is used for lastmod by scripts/prerender.mjs. Route.lastmod is serialized directly."
+    },
+    "commit": {
+      "sha": "b793ad0acf3cd534217d862a44f2e1d915789ec2",
+      "authorDate": "2026-10-20T10:34:48+04:00",
+      "committerDate": "2026-10-20T10:34:48+04:00",
+      "subject": "Add Mercedes service SEO campaign and About Us video strip",
+      "evidenceLimit": "Commit time corroborates actual dated content/source diffs; it is not treated as a publication timestamp."
+    },
+    "noLaterGitChangesInRelevantSourcePaths": true,
+    "laterGitChangedPaths": [],
+    "sourceMatches": [
+      {
+        "file": "src/pages/BrandPage.tsx",
+        "currentSha256": "f5d68037c056bb1f32d73cc5c009e066287da0ab225267b9606d834a23002c33",
+        "historicalOct20Sha256": "f5d68037c056bb1f32d73cc5c009e066287da0ab225267b9606d834a23002c33",
+        "byteIdentical": true
+      },
+      {
+        "file": "src/pages/Services.tsx",
+        "currentSha256": "77e7cc3aa83277602271ec3106506d4f360bd4fb6737445a5a1235a435ed09d0",
+        "historicalOct20Sha256": "77e7cc3aa83277602271ec3106506d4f360bd4fb6737445a5a1235a435ed09d0",
+        "byteIdentical": true
+      },
+      {
+        "file": "src/data/mercedesServiceCampaign.ts",
+        "currentSha256": "98012343a3f8450ba6a34bb094425beaa4049932d534d9115d0b373ded32c8dd",
+        "historicalOct20Sha256": "98012343a3f8450ba6a34bb094425beaa4049932d534d9115d0b373ded32c8dd",
+        "byteIdentical": true
+      },
+      {
+        "file": "src/components/MercedesMaintenanceScope.tsx",
+        "currentSha256": "1e6728a7de40ef56f7bf77af495784cff38c34cd9a653d6777757fee62616aff",
+        "historicalOct20Sha256": "1e6728a7de40ef56f7bf77af495784cff38c34cd9a653d6777757fee62616aff",
+        "byteIdentical": true
+      },
+      {
+        "file": "src/components/MercedesServiceBookingForm.tsx",
+        "currentSha256": "c45f5468d2361b5b2de37edee90fff8b1d0cd145e2379439c8aad973fd1291fd",
+        "historicalOct20Sha256": "c45f5468d2361b5b2de37edee90fff8b1d0cd145e2379439c8aad973fd1291fd",
+        "byteIdentical": true
+      },
+      {
+        "file": "src/lib/route-manifest.ts",
+        "currentSha256": "a05194b6899972cb91945af2ea0c0a3fd836055a5d8c52d87fc3f9a6a219d0d5",
+        "historicalOct20Sha256": "a05194b6899972cb91945af2ea0c0a3fd836055a5d8c52d87fc3f9a6a219d0d5",
+        "byteIdentical": true
+      }
+    ],
+    "historicalQa": {
+      "file": "outputs/mercedes-service-top3-2026-10-20/qa/mercedes-campaign-static-results.json",
+      "at": "2026-10-20T05:44:44.065Z",
+      "passed": true,
+      "assertions": 10155
+    },
+    "historicalRelease": {
+      "file": "outputs/mercedes-service-top3-2026-10-20/release-readiness.json",
+      "completedAt": "2026-10-20T05:50:56.879Z",
+      "localImplementationComplete": true,
+      "localQaPassed": true,
+      "productionGo": false,
+      "deployed": false,
+      "published": false
+    },
+    "historicalProductionBoundaries": {
+      "oct20BeforeCapture": "Public rendered baseline recorded older hub copy around 2026-10-20T05:27Z; exact per-route times remain in the historical evidence.",
+      "oct26PublicSitemapCapture": {
+        "file": "reports/mercedes-phase-3/indexing/http/2026-10-26T07-45-54-376Z/sitemap.xml",
+        "startedAtUtc": "2026-10-26T07:45:54.378Z",
+        "finishedAtUtc": "2026-10-26T07:46:03.591Z"
+      },
+      "meaning": "Old content was observed on Oct20 before the campaign was prepared; later Oct26 observations show campaign content on the checked hub/English index pages and the four Oct20 sitemap dates. The exact deployment time between those observations is not identified."
+    }
+  },
+  "sitemaps": {
+    "original": {
+      "file": "public/sitemap.xml",
+      "urlCount": 1005,
+      "orderedUrlSha256": "1d47568845c8132e79c88a27e4e5bbd44f27b8c5c64524979f71c8d88b2b558f",
+      "relevantRows": [
+        {
+          "url": "https://digitecme.com/ar/brands/mercedes-benz-service-dubai",
+          "path": "/ar/brands/mercedes-benz-service-dubai",
+          "lastmod": "2026-10-05"
+        },
+        {
+          "url": "https://digitecme.com/ar/services",
+          "path": "/ar/services",
+          "lastmod": "2026-10-12"
+        },
+        {
+          "url": "https://digitecme.com/ar/services/mercedes-body-repair-dubai",
+          "path": "/ar/services/mercedes-body-repair-dubai",
+          "lastmod": "2026-09-28"
+        },
+        {
+          "url": "https://digitecme.com/brands/mercedes-benz-service-dubai",
+          "path": "/brands/mercedes-benz-service-dubai",
+          "lastmod": "2026-10-05"
+        },
+        {
+          "url": "https://digitecme.com/services",
+          "path": "/services",
+          "lastmod": "2026-10-12"
+        },
+        {
+          "url": "https://digitecme.com/services/mercedes-body-repair-dubai",
+          "path": "/services/mercedes-body-repair-dubai",
+          "lastmod": "2026-09-28"
+        }
+      ]
+    },
+    "historicalOct20Candidate": {
+      "file": "outputs/mercedes-service-top3-2026-10-20/candidate.local/public/sitemap.xml",
+      "urlCount": 1005,
+      "orderedUrlSha256": "1d47568845c8132e79c88a27e4e5bbd44f27b8c5c64524979f71c8d88b2b558f",
+      "relevantRows": [
+        {
+          "url": "https://digitecme.com/ar/brands/mercedes-benz-service-dubai",
+          "path": "/ar/brands/mercedes-benz-service-dubai",
+          "lastmod": "2026-10-20"
+        },
+        {
+          "url": "https://digitecme.com/ar/services",
+          "path": "/ar/services",
+          "lastmod": "2026-10-20"
+        },
+        {
+          "url": "https://digitecme.com/ar/services/mercedes-body-repair-dubai",
+          "path": "/ar/services/mercedes-body-repair-dubai",
+          "lastmod": "2026-09-28"
+        },
+        {
+          "url": "https://digitecme.com/brands/mercedes-benz-service-dubai",
+          "path": "/brands/mercedes-benz-service-dubai",
+          "lastmod": "2026-10-20"
+        },
+        {
+          "url": "https://digitecme.com/services",
+          "path": "/services",
+          "lastmod": "2026-10-20"
+        },
+        {
+          "url": "https://digitecme.com/services/mercedes-body-repair-dubai",
+          "path": "/services/mercedes-body-repair-dubai",
+          "lastmod": "2026-09-28"
+        }
+      ]
+    },
+    "phase4Baseline": {
+      "file": "reports/mercedes-phase-4/baseline.local/public/sitemap.xml",
+      "urlCount": 1005,
+      "orderedUrlSha256": "1d47568845c8132e79c88a27e4e5bbd44f27b8c5c64524979f71c8d88b2b558f",
+      "relevantRows": [
+        {
+          "url": "https://digitecme.com/ar/brands/mercedes-benz-service-dubai",
+          "path": "/ar/brands/mercedes-benz-service-dubai",
+          "lastmod": "2026-10-20"
+        },
+        {
+          "url": "https://digitecme.com/ar/services",
+          "path": "/ar/services",
+          "lastmod": "2026-10-20"
+        },
+        {
+          "url": "https://digitecme.com/ar/services/mercedes-body-repair-dubai",
+          "path": "/ar/services/mercedes-body-repair-dubai",
+          "lastmod": "2026-09-28"
+        },
+        {
+          "url": "https://digitecme.com/brands/mercedes-benz-service-dubai",
+          "path": "/brands/mercedes-benz-service-dubai",
+          "lastmod": "2026-10-20"
+        },
+        {
+          "url": "https://digitecme.com/services",
+          "path": "/services",
+          "lastmod": "2026-10-20"
+        },
+        {
+          "url": "https://digitecme.com/services/mercedes-body-repair-dubai",
+          "path": "/services/mercedes-body-repair-dubai",
+          "lastmod": "2026-09-28"
+        }
+      ]
+    },
+    "phase4Candidate": {
+      "file": "reports/mercedes-phase-4/candidate.local/public/sitemap.xml",
+      "urlCount": 1005,
+      "orderedUrlSha256": "1d47568845c8132e79c88a27e4e5bbd44f27b8c5c64524979f71c8d88b2b558f",
+      "relevantRows": [
+        {
+          "url": "https://digitecme.com/ar/brands/mercedes-benz-service-dubai",
+          "path": "/ar/brands/mercedes-benz-service-dubai",
+          "lastmod": "2026-10-20"
+        },
+        {
+          "url": "https://digitecme.com/ar/services",
+          "path": "/ar/services",
+          "lastmod": "2026-10-20"
+        },
+        {
+          "url": "https://digitecme.com/ar/services/mercedes-body-repair-dubai",
+          "path": "/ar/services/mercedes-body-repair-dubai",
+          "lastmod": "2026-09-28"
+        },
+        {
+          "url": "https://digitecme.com/brands/mercedes-benz-service-dubai",
+          "path": "/brands/mercedes-benz-service-dubai",
+          "lastmod": "2026-10-20"
+        },
+        {
+          "url": "https://digitecme.com/services",
+          "path": "/services",
+          "lastmod": "2026-10-20"
+        },
+        {
+          "url": "https://digitecme.com/services/mercedes-body-repair-dubai",
+          "path": "/services/mercedes-body-repair-dubai",
+          "lastmod": "2026-09-28"
+        }
+      ]
+    },
+    "observedPublicOct26": {
+      "file": "reports/mercedes-phase-3/indexing/http/2026-10-26T07-45-54-376Z/sitemap.xml",
+      "urlCount": 1005,
+      "orderedUrlSha256": "1d47568845c8132e79c88a27e4e5bbd44f27b8c5c64524979f71c8d88b2b558f",
+      "relevantRows": [
+        {
+          "url": "https://digitecme.com/ar/brands/mercedes-benz-service-dubai",
+          "path": "/ar/brands/mercedes-benz-service-dubai",
+          "lastmod": "2026-10-20"
+        },
+        {
+          "url": "https://digitecme.com/ar/services",
+          "path": "/ar/services",
+          "lastmod": "2026-10-20"
+        },
+        {
+          "url": "https://digitecme.com/ar/services/mercedes-body-repair-dubai",
+          "path": "/ar/services/mercedes-body-repair-dubai",
+          "lastmod": "2026-09-28"
+        },
+        {
+          "url": "https://digitecme.com/brands/mercedes-benz-service-dubai",
+          "path": "/brands/mercedes-benz-service-dubai",
+          "lastmod": "2026-10-20"
+        },
+        {
+          "url": "https://digitecme.com/services",
+          "path": "/services",
+          "lastmod": "2026-10-20"
+        },
+        {
+          "url": "https://digitecme.com/services/mercedes-body-repair-dubai",
+          "path": "/services/mercedes-body-repair-dubai",
+          "lastmod": "2026-09-28"
+        }
+      ]
+    }
+  },
+  "proposedOptionBDatePolicy": {
+    "status": "PROPOSAL ONLY; no date/source/generator/sitemap patch applied by this agent",
+    "normalPipeline": "Keep scripts/prerender.mjs unchanged; it reads per-route lastmod and writes public/dist sitemap.",
+    "extraApprovalRequired": "An additional source metadata change in src/lib/route-manifest.ts beyond the three Phase4 source edits, plus its generated sitemap outputs, must be explicitly listed for future approval.",
+    "insertionPoint": {
+      "file": "src/lib/route-manifest.ts",
+      "afterExistingCampaignLoopEndingLine": 256,
+      "beforeIndexableRoutesExportLine": 258,
+      "requirement": "A separate two-path lastmod override after all current date layers, with no URL/canonical/indexability or routing behavior change."
+    },
+    "proposedRows": [
+      {
+        "path": "/brands/mercedes-benz-service-dubai",
+        "currentDate": "2026-10-20",
+        "proposedContentRevisionDate": "2026-10-26",
+        "reason": "H3-01 adds two meaningful contextual service links in the existing workshop caption; H3-02 adds verified contact/arrival guidance in the existing visit card.",
+        "significance": "Reasonable under Google guidance that link/main-content changes are generally significant. The added contact phrase alone would not justify a blanket refresh."
+      },
+      {
+        "path": "/services/mercedes-body-repair-dubai",
+        "currentDate": "2026-09-28",
+        "proposedContentRevisionDate": "2026-10-26",
+        "reason": "S1 changes visible service-specific intake/scope/quotation guidance and all three enquiry drafts, including photos/panels/sensor context.",
+        "significance": "More than a tracking or asset change: the page gives different task-specific instructions. Significance is an editorial judgment, not a guaranteed SEO effect."
+      }
+    ],
+    "preserveRows": [
+      {
+        "path": "/ar/brands/mercedes-benz-service-dubai",
+        "date": "2026-10-20"
+      },
+      {
+        "path": "/services",
+        "date": "2026-10-20"
+      },
+      {
+        "path": "/ar/services",
+        "date": "2026-10-20"
+      },
+      {
+        "path": "/ar/services/mercedes-body-repair-dubai",
+        "date": "2026-09-28"
+      }
+    ],
+    "localOct26Evidence": {
+      "preparedAtUtc": "2026-10-26T08:58:35.555Z",
+      "preparedAtDubai": "2026-10-26T12:58:35.555+04:00",
+      "approvedSourceHashes": [
+        {
+          "file": "src/data/mercedesServiceContent.ts",
+          "before": "7ebb6013761160e8bebc48e3f3080ceae2e3fb330d4fa6edf86f02974481718d",
+          "after": "bd941c4c6e03c43501e32f304fea8df5de07941b93be3598b1d07431eb91b339"
+        },
+        {
+          "file": "src/pages/BrandPage.tsx",
+          "before": "f5d68037c056bb1f32d73cc5c009e066287da0ab225267b9606d834a23002c33",
+          "after": "fed34d81d52c879960d90eb38db91e31d9290ceb7b9895a222a2d075feb13bc2"
+        },
+        {
+          "file": "src/pages/BrandServicePage.tsx",
+          "before": "b8bd67b40548b6e3c53db7611e7dd463cd5c92ce6774bbbdc954695b4395df2f",
+          "after": "38bca41fbfd9d7fba3a5ce9701791facc77d1fc0a7a67806903f71e7a096512c"
+        }
+      ],
+      "ssrVerificationFinishedAtUtc": "2026-10-26T09:00:06.338Z",
+      "ssrAssertions": 75,
+      "ssrPassed": true,
+      "changedPageEvidence": [
+        {
+          "route": "/brands/mercedes-benz-service-dubai",
+          "rootSha256": {
+            "baseline": "38298da000396c3515da447c95306425b0ca40b4f4b3e46cd6036020b63ff490",
+            "candidate": "eec27b3402904a7078ba299d83a0a56891c09b0e1f1af4452739eb1546ad4bbb",
+            "candidateAfterReversingApprovedChanges": "38298da000396c3515da447c95306425b0ca40b4f4b3e46cd6036020b63ff490"
+          },
+          "observations": {
+            "workshopPhone": {
+              "href": "tel:+97143402223",
+              "text": "Call +971 4 340 2223",
+              "placement": "workshop_proof"
+            }
+          }
+        },
+        {
+          "route": "/services/mercedes-body-repair-dubai",
+          "rootSha256": {
+            "baseline": "e356c8f0b12d5cec60a0ebad1682f40596dadf1a438589ff5f427eecd8454c98",
+            "candidate": "e585cd4444c657a24c176e7a78036e71da85e3f4cf498d13f0846e24b3c279f6",
+            "candidateAfterReversingApprovedChanges": "e356c8f0b12d5cec60a0ebad1682f40596dadf1a438589ff5f427eecd8454c98"
+          },
+          "observations": {
+            "bodyWhatsApp": [
+              {
+                "placement": "hero",
+                "href": "https://wa.me/97143402223?text=Hi%20Digi-Tec%2C%20I%20would%20like%20a%20Mercedes%20bodywork%20assessment.%0A%0AModel%2Fyear%3A%20%0AAffected%20panels%3A%20%0APrevious%20paint%20or%20repair%20(if%20known)%3A%20%0ASensor%20warning%20(if%20any)%3A%20%0AI%20can%20attach%20clear%20photos%20of%20the%20damage.",
+                "label": "Request a Mercedes Body Repair Assessment",
+                "decodedMessage": "Hi Digi-Tec, I would like a Mercedes bodywork assessment.\n\nModel/year: \nAffected panels: \nPrevious paint or repair (if known): \nSensor warning (if any): \nI can attach clear photos of the damage."
+              },
+              {
+                "placement": "service_scope",
+                "href": "https://wa.me/97143402223?text=Hi%20Digi-Tec%2C%20I%20would%20like%20a%20Mercedes%20bodywork%20assessment.%0A%0AModel%2Fyear%3A%20%0AAffected%20panels%3A%20%0APrevious%20paint%20or%20repair%20(if%20known)%3A%20%0ASensor%20warning%20(if%20any)%3A%20%0AI%20can%20attach%20clear%20photos%20of%20the%20damage.",
+                "label": "Request a Mercedes Body Repair Assessment",
+                "decodedMessage": "Hi Digi-Tec, I would like a Mercedes bodywork assessment.\n\nModel/year: \nAffected panels: \nPrevious paint or repair (if known): \nSensor warning (if any): \nI can attach clear photos of the damage."
+              },
+              {
+                "placement": "final_cta",
+                "href": "https://wa.me/97143402223?text=Hi%20Digi-Tec%2C%20I%20would%20like%20a%20Mercedes%20bodywork%20assessment.%0A%0AModel%2Fyear%3A%20%0AAffected%20panels%3A%20%0APrevious%20paint%20or%20repair%20(if%20known)%3A%20%0ASensor%20warning%20(if%20any)%3A%20%0AI%20can%20attach%20clear%20photos%20of%20the%20damage.",
+                "label": "Request a Mercedes Body Repair Assessment",
+                "decodedMessage": "Hi Digi-Tec, I would like a Mercedes bodywork assessment.\n\nModel/year: \nAffected panels: \nPrevious paint or repair (if known): \nSensor warning (if any): \nI can attach clear photos of the damage."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "publicationDateClaim": false
+  },
+  "googleGuidance": [
+    {
+      "url": "https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap",
+      "checkedOn": "2026-10-26",
+      "title": "Build and submit a sitemap",
+      "quote": "The <lastmod> value should reflect the date and time of the last significant update to the page.",
+      "interpretation": "Google expects verifiable accuracy. Main content, structured data and links are generally significant; compilation/asset timestamps alone do not substantiate a date change."
+    },
+    {
+      "url": "https://developers.google.com/search/blog/2023/06/sitemaps-lastmod-ping",
+      "checkedOn": "2026-10-26",
+      "title": "Sitemaps ping endpoint is going away",
+      "interpretation": "Google describes lastmod as a crawl-scheduling signal, says primary text/schema/link changes merit updates, and permits omission when a page date cannot be established confidently. It does not guarantee recrawl, indexing or ranking improvement."
+    }
+  ],
+  "policyRecommendation": [
+    "Maintain a per-canonical-path editorial revision record with exact changed-content evidence and frozen source/HTML hashes.",
+    "Use each locale independently; do not propagate an English edit to Arabic or the directory indexes.",
+    "Record actual significant content revision date, with preparation and publication timestamps stored separately. If publication happens later with new meaningful edits, reassess the affected paths.",
+    "Do not refresh dates for a build, regenerated validation report, hashed bundle, copyright year or unrelated template change alone.",
+    "If a significant revision date cannot be substantiated, retain a verified older date or propose omission for that URL through explicit review; do not invent a date.",
+    "Keep existing URLs, canonicals, indexability, sitemap membership and generator behavior unchanged."
+  ],
+  "inputs": [
+    {
+      "file": "public/sitemap.xml",
+      "sha256": "f74410aac2d522838dbce5037843cd03b34096817581d6732f852b86926a2c67",
+      "bytes": 129276
+    },
+    {
+      "file": "outputs/mercedes-service-top3-2026-10-20/candidate.local/public/sitemap.xml",
+      "sha256": "294c4917d6a19ff8d5fb3575d780debe465643520031850802355d1b54ad42cf",
+      "bytes": 129276
+    },
+    {
+      "file": "reports/mercedes-phase-4/baseline.local/public/sitemap.xml",
+      "sha256": "294c4917d6a19ff8d5fb3575d780debe465643520031850802355d1b54ad42cf",
+      "bytes": 129276
+    },
+    {
+      "file": "reports/mercedes-phase-4/candidate.local/public/sitemap.xml",
+      "sha256": "294c4917d6a19ff8d5fb3575d780debe465643520031850802355d1b54ad42cf",
+      "bytes": 129276
+    },
+    {
+      "file": "reports/mercedes-phase-3/indexing/http/2026-10-26T07-45-54-376Z/sitemap.xml",
+      "sha256": "294c4917d6a19ff8d5fb3575d780debe465643520031850802355d1b54ad42cf",
+      "bytes": 129276
+    },
+    {
+      "file": "src/lib/route-manifest.ts",
+      "sha256": "a05194b6899972cb91945af2ea0c0a3fd836055a5d8c52d87fc3f9a6a219d0d5",
+      "bytes": 15543
+    },
+    {
+      "file": "scripts/prerender.mjs",
+      "sha256": "128760c7fd13cc158f74cca8bc1197203610d536e84c2de3c75e99378ccf499c",
+      "bytes": 9457
+    },
+    {
+      "file": "outputs/mercedes-service-top3-2026-10-20/qa/mercedes-campaign-static-results.json",
+      "sha256": "5ba67d8791b53f2bca5f82104e91a30b24e3710cd0b2e003d0c20bc360a7b0f5",
+      "bytes": 239662
+    },
+    {
+      "file": "outputs/mercedes-service-top3-2026-10-20/release-readiness.json",
+      "sha256": "232724012ccacd6fe8d997a2d235fa2df82c9f83d673775778c49fb810b0c160",
+      "bytes": 1015
+    },
+    {
+      "file": "outputs/mercedes-service-top3-2026-10-20/candidate.local/src/pages/BrandPage.tsx",
+      "sha256": "f5d68037c056bb1f32d73cc5c009e066287da0ab225267b9606d834a23002c33",
+      "bytes": 135256
+    },
+    {
+      "file": "src/pages/BrandPage.tsx",
+      "sha256": "f5d68037c056bb1f32d73cc5c009e066287da0ab225267b9606d834a23002c33",
+      "bytes": 135256
+    },
+    {
+      "file": "outputs/mercedes-service-top3-2026-10-20/candidate.local/src/pages/Services.tsx",
+      "sha256": "77e7cc3aa83277602271ec3106506d4f360bd4fb6737445a5a1235a435ed09d0",
+      "bytes": 13561
+    },
+    {
+      "file": "src/pages/Services.tsx",
+      "sha256": "77e7cc3aa83277602271ec3106506d4f360bd4fb6737445a5a1235a435ed09d0",
+      "bytes": 13561
+    },
+    {
+      "file": "outputs/mercedes-service-top3-2026-10-20/candidate.local/src/data/mercedesServiceCampaign.ts",
+      "sha256": "98012343a3f8450ba6a34bb094425beaa4049932d534d9115d0b373ded32c8dd",
+      "bytes": 8239
+    },
+    {
+      "file": "src/data/mercedesServiceCampaign.ts",
+      "sha256": "98012343a3f8450ba6a34bb094425beaa4049932d534d9115d0b373ded32c8dd",
+      "bytes": 8239
+    },
+    {
+      "file": "outputs/mercedes-service-top3-2026-10-20/candidate.local/src/components/MercedesMaintenanceScope.tsx",
+      "sha256": "1e6728a7de40ef56f7bf77af495784cff38c34cd9a653d6777757fee62616aff",
+      "bytes": 9693
+    },
+    {
+      "file": "src/components/MercedesMaintenanceScope.tsx",
+      "sha256": "1e6728a7de40ef56f7bf77af495784cff38c34cd9a653d6777757fee62616aff",
+      "bytes": 9693
+    },
+    {
+      "file": "outputs/mercedes-service-top3-2026-10-20/candidate.local/src/components/MercedesServiceBookingForm.tsx",
+      "sha256": "c45f5468d2361b5b2de37edee90fff8b1d0cd145e2379439c8aad973fd1291fd",
+      "bytes": 7652
+    },
+    {
+      "file": "src/components/MercedesServiceBookingForm.tsx",
+      "sha256": "c45f5468d2361b5b2de37edee90fff8b1d0cd145e2379439c8aad973fd1291fd",
+      "bytes": 7652
+    },
+    {
+      "file": "outputs/mercedes-service-top3-2026-10-20/candidate.local/src/lib/route-manifest.ts",
+      "sha256": "a05194b6899972cb91945af2ea0c0a3fd836055a5d8c52d87fc3f9a6a219d0d5",
+      "bytes": 15543
+    },
+    {
+      "file": "src/lib/route-manifest.ts",
+      "sha256": "a05194b6899972cb91945af2ea0c0a3fd836055a5d8c52d87fc3f9a6a219d0d5",
+      "bytes": 15543
+    },
+    {
+      "file": "outputs/ecu-electronics-2026-10-19/candidate.local/dist/brands/mercedes-benz-service-dubai/index.html",
+      "sha256": "aa356411fe0f97a0a036eeb6e258a67686c91fd6689bdbbb5549821d4fa636dd",
+      "bytes": 159600
+    },
+    {
+      "file": "outputs/mercedes-service-top3-2026-10-20/candidate.local/dist/brands/mercedes-benz-service-dubai/index.html",
+      "sha256": "41aeb81cee73a597fcfaed57adcde5fd97e7f07e4ab6082e67c00508cae20919",
+      "bytes": 144871
+    },
+    {
+      "file": "outputs/ecu-electronics-2026-10-19/candidate.local/dist/ar/brands/mercedes-benz-service-dubai/index.html",
+      "sha256": "5ccb92d14b0b4ea744aee218df13a91f059e07200ed24a9f2959c1a5c6629b06",
+      "bytes": 87827
+    },
+    {
+      "file": "outputs/mercedes-service-top3-2026-10-20/candidate.local/dist/ar/brands/mercedes-benz-service-dubai/index.html",
+      "sha256": "792832123d68822abd6c23ac968fb2de3b29b26b5d1f990e2ed96aedca3a1051",
+      "bytes": 92548
+    },
+    {
+      "file": "outputs/ecu-electronics-2026-10-19/candidate.local/dist/services/index.html",
+      "sha256": "7a900761c1c9cb5cb6a595440cb0584cd5fbf6699f2f2bc0e37795693aa67d6a",
+      "bytes": 55904
+    },
+    {
+      "file": "outputs/mercedes-service-top3-2026-10-20/candidate.local/dist/services/index.html",
+      "sha256": "82287efd699d6f627347f5767c4f2c1f4edabfd1b0fa6c7d5e8b45448bf71787",
+      "bytes": 56530
+    },
+    {
+      "file": "outputs/ecu-electronics-2026-10-19/candidate.local/dist/ar/services/index.html",
+      "sha256": "3382631f466fb57044ff7c30ae9e21ea16d5f3a261bd9c3ba254004608838921",
+      "bytes": 54928
+    },
+    {
+      "file": "outputs/mercedes-service-top3-2026-10-20/candidate.local/dist/ar/services/index.html",
+      "sha256": "1dbe10bf0f2c1b56f08e5faf97f47b33722d96524a2bafed9ccaa9a3bfefb4ed",
+      "bytes": 55643
+    },
+    {
+      "file": "reports/mercedes-phase-3/indexing/http/2026-10-26T07-45-54-376Z/capture.json",
+      "sha256": "838bb7a84fef72baf811dafbbc91bc6be585d34ac00244902811a61841f660ef",
+      "bytes": 81426
+    },
+    {
+      "file": "reports/mercedes-phase-4/controlled-copy.json",
+      "sha256": "e248b4ba07db46b944f4aba74f87079c71a3666aa5b2bec7522cdfeb6c3d2ed4",
+      "bytes": 1916
+    },
+    {
+      "file": "reports/mercedes-phase-4/tests/results/results.json",
+      "sha256": "7a0b25f1fcdc03cda23d9f384eb0f80cdb9c8bdabda16f681687031d8d8872c1",
+      "bytes": 695889
+    }
+  ],
+  "limitations": [
+    "This is an assessment and proposal, not a deployed sitemap change or approval.",
+    "Historical local QA timestamps and source commits substantiate preparation chronology; they do not establish the exact time a public deployment became available.",
+    "The Phase4 candidate remains local. Its Oct26 revision date must not be represented as already published.",
+    "No automated monitoring, indexing submission, Cloudflare mutation or source modification was performed."
+  ]
+}

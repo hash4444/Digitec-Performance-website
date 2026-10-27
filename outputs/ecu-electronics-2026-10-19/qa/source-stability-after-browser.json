@@ -1,0 +1,64 @@
+{
+  "checkedAt": "2026-10-19T08:46:25.488Z",
+  "passed": true,
+  "sourceFileCount": 583,
+  "buildFingerprint": "5b36413f42162887ca9321530579ddc1c6a96cf64f6288912dc33d00c01a9841",
+  "currentFingerprint": "5b36413f42162887ca9321530579ddc1c6a96cf64f6288912dc33d00c01a9841",
+  "changed": [],
+  "reviewedOverlay": [
+    {
+      "file": "src/pages/ServicePage.tsx",
+      "expectedSha256": "7aea5c62212d6066010e09587054e528d03c6589f291bd5681408f7f45b130ca",
+      "candidateSha256": "7aea5c62212d6066010e09587054e528d03c6589f291bd5681408f7f45b130ca",
+      "workspaceSha256": "7aea5c62212d6066010e09587054e528d03c6589f291bd5681408f7f45b130ca",
+      "passed": true
+    },
+    {
+      "file": "src/pages/BrandServicePage.tsx",
+      "expectedSha256": "b8bd67b40548b6e3c53db7611e7dd463cd5c92ce6774bbbdc954695b4395df2f",
+      "candidateSha256": "b8bd67b40548b6e3c53db7611e7dd463cd5c92ce6774bbbdc954695b4395df2f",
+      "workspaceSha256": "b8bd67b40548b6e3c53db7611e7dd463cd5c92ce6774bbbdc954695b4395df2f",
+      "passed": true
+    },
+    {
+      "file": "src/components/EcuElectronicsEnquiryPanel.tsx",
+      "expectedSha256": "3eebc5bc1eb9c0843e5c5676d6c583812f6ae4d5fb79a12bbb89ffe439c3660b",
+      "candidateSha256": "3eebc5bc1eb9c0843e5c5676d6c583812f6ae4d5fb79a12bbb89ffe439c3660b",
+      "workspaceSha256": "3eebc5bc1eb9c0843e5c5676d6c583812f6ae4d5fb79a12bbb89ffe439c3660b",
+      "passed": true
+    },
+    {
+      "file": "src/data/ecuElectronicsContent.ts",
+      "expectedSha256": "48cf990866ec75dcf7c1c08c8c52cb85001085ebfb5c81da82370a0030ca90f3",
+      "candidateSha256": "48cf990866ec75dcf7c1c08c8c52cb85001085ebfb5c81da82370a0030ca90f3",
+      "workspaceSha256": "48cf990866ec75dcf7c1c08c8c52cb85001085ebfb5c81da82370a0030ca90f3",
+      "passed": true
+    }
+  ],
+  "priorDiagnosticAcUnchangedFiles": [
+    {
+      "file": "src/components/DiagnosticAcEnquiryPanel.tsx",
+      "sha256": "5f1a1e5f027e96e915f35b211973c521fa18f0584b3cb66868031c81e81d1bfa",
+      "expectedSha256": "5f1a1e5f027e96e915f35b211973c521fa18f0584b3cb66868031c81e81d1bfa",
+      "passed": true
+    },
+    {
+      "file": "src/data/diagnosticsAcGeneralContent.ts",
+      "sha256": "ba94d9fec0917704b2441acb2ed38029eadac984700bda5c6a55a739ec5cb71a",
+      "expectedSha256": "ba94d9fec0917704b2441acb2ed38029eadac984700bda5c6a55a739ec5cb71a",
+      "passed": true
+    },
+    {
+      "file": "src/data/diagnosticsAcBrandContent.ts",
+      "sha256": "034b378502080ecef31d6e43eb857d79c9c073a3cd540c5a3013ae1b349ecf76",
+      "expectedSha256": "034b378502080ecef31d6e43eb857d79c9c073a3cd540c5a3013ae1b349ecf76",
+      "passed": true
+    },
+    {
+      "file": "scripts/validate-query-release.mjs",
+      "sha256": "c918eabe56f3929228719466b76453b9d5344a84385c96bea79d542bca9407b3",
+      "expectedSha256": "c918eabe56f3929228719466b76453b9d5344a84385c96bea79d542bca9407b3",
+      "passed": true
+    }
+  ]
+}

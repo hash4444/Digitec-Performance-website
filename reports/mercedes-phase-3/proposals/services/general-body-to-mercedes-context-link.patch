@@ -1,0 +1,13 @@
+diff --git a/src/pages/ServicePage.tsx b/src/pages/ServicePage.tsx
+index 5ecd547..13e0d9e 100644
+--- a/src/pages/ServicePage.tsx
++++ b/src/pages/ServicePage.tsx
+@@ -258,7 +258,7 @@ const ServicePage: React.FC<ServicePageProps> = ({ slugOverride, canonicalPath,
+                   <p className="mt-5 text-gray-300 leading-relaxed text-lg"><Link to="/services/car-polishing-dubai" className="text-burnt-orange underline">Car polishing and paint correction</Link> address existing surface defects before protection is selected. For a physical barrier against road debris, explore <Link to="/services/paint-protection-film" className="text-burnt-orange underline">PPF coverage and installation in Dubai</Link>. For water behaviour and finish maintenance, see our <Link to="/services/ceramic-coating" className="text-burnt-orange underline">ceramic coating service</Link>. Preparation and product compatibility are assessed for your car.</p>
+                 )}
+                 {!isArabic && service.slug === 'car-body-repair-dubai' && (
+-                  <p className="mt-5 text-gray-300 leading-relaxed text-lg">For shallow surface marks, <Link to="/services/car-polishing-dubai#paint-scratches" className="text-burnt-orange underline">assess whether polishing can improve the scratch</Link>. Deeper damage, missing paint and dents need a different repair approach.</p>
++                  <p className="mt-5 text-gray-300 leading-relaxed text-lg">For shallow surface marks, <Link to="/services/car-polishing-dubai#paint-scratches" className="text-burnt-orange underline">assess whether polishing can improve the scratch</Link>. Deeper damage, missing paint and dents need a different repair approach. For Mercedes-Benz vehicles, review the <Link to="/services/mercedes-body-repair-dubai" className="text-burnt-orange underline">Mercedes bodywork assessment and quotation scope</Link>.</p>
+                 )}
+                 {!isArabic && service.slug === 'ceramic-coating' && (
+                   <p className="mt-5 text-gray-300 leading-relaxed text-lg">Looking for a physical barrier against stone chips? Compare <Link to="/services/paint-protection-film#ppf-comparison" className="text-burnt-orange underline">paint protection film with ceramic coating</Link> and review full-body or selected-panel film coverage. A compatible coating can complement suitable PPF.</p>

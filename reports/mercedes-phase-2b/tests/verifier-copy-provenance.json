@@ -1,0 +1,28 @@
+{
+  "preparedAt": "2026-10-26T07:35:03.352Z",
+  "reviewedSourcePath": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-2\\tests\\verify-http.mjs",
+  "reviewedSourceSha256": "6670b2a4227d6810efe9528096aceebf72f58820b8f88bb33bfc51060611d45a",
+  "copySha256": "13c1d4b766bdc3dec9fff1b777fc1d090c56def0b47e4be4c2880b6a4250e789",
+  "changes": [
+    {
+      "before": "const root = fileURLToPath(new URL('../', import.meta.url));",
+      "after": "const root = fileURLToPath(new URL('../../mercedes-phase-2/', import.meta.url));"
+    },
+    {
+      "before": "const out = resolve(root, 'evidence/http', runId);",
+      "after": "const out = resolve(fileURLToPath(new URL('../http/', import.meta.url)), runId);"
+    },
+    {
+      "before": "if (test.saveHtml && hop === 0 && test.method === 'GET') {\n      const name = `${test.key}.html`;",
+      "after": "if (test.method === 'GET') {\n      const name = `${test.key}-hop${hop}.html`;"
+    }
+  ],
+  "assertionsAndCaseGenerationUnchanged": true,
+  "requestSemanticsUnchanged": true,
+  "readOnly": true,
+  "notes": [
+    "Root points to reviewed proposal; evidence writes exclusively under phase2b/http.",
+    "Every GET hop HTML body retained; HEAD has no body.",
+    "No Cloudflare credentials or configuration writes; no retry behavior added."
+  ]
+}

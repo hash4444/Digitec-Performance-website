@@ -1,0 +1,1503 @@
+{
+  "generatedAtUtc": "2026-10-26T08:34:46.882Z",
+  "sourceValidationFile": "daily-ui-validation.json",
+  "sourceValidationSha256": "8c70ad57cd6b705da498cce2ab9797190ebb45ed1e0ad5324b9f9d2dc3c5e24c",
+  "collectorInputFile": "paired-ui-records.json",
+  "collectorInputSha256": "6b31b6908fa31f5dc6e7236188b9df7c1df607bd73bdab2dbbf80f4befde1f7c",
+  "coverage": {
+    "plannedSeries": 132,
+    "plannedQueryDaily": 36,
+    "plannedPairDaily": 96,
+    "validatedSeries": 69,
+    "unavailableSeries": 3,
+    "notCollectedSeries": 60,
+    "acceptedAttempts": 69,
+    "rejectedAttempts": 3,
+    "normalizedDailyRows": 6210,
+    "extraUnplannedAttemptCount": 0
+  },
+  "cohortDefinition": "Exactly six mutually exclusive exact English query strings listed in queries, at identical country/device/date/search-type/property aggregation. This is not all Mercedes, branded, or site traffic.",
+  "dateBasis": "Search Console daily dates; parent verified Pacific Time reporting basis. Common latest complete date selected: 2026-10-24.",
+  "queries": [
+    "mercedes service dubai",
+    "mercedes repair dubai",
+    "mercedes specialist dubai",
+    "mercedes workshop dubai",
+    "mercedes maintenance dubai",
+    "mercedes oil change dubai"
+  ],
+  "cohorts": [
+    {
+      "country": "ARE",
+      "device": "ALL",
+      "status": "VALIDATED_SIX_EXACT_QUERY_COHORT",
+      "queries": [
+        "mercedes service dubai",
+        "mercedes repair dubai",
+        "mercedes specialist dubai",
+        "mercedes workshop dubai",
+        "mercedes maintenance dubai",
+        "mercedes oil change dubai"
+      ],
+      "sourceSeries": [
+        {
+          "query": "mercedes service dubai",
+          "selectedAttemptId": "query-daily__90d__ARE__ALL__mercedes-service-dubai",
+          "capturedAt": "2026-10-26T08:13:29.197Z"
+        },
+        {
+          "query": "mercedes repair dubai",
+          "selectedAttemptId": "query-daily__90d__ARE__ALL__mercedes-repair-dubai",
+          "capturedAt": "2026-10-26T08:13:32.409Z"
+        },
+        {
+          "query": "mercedes specialist dubai",
+          "selectedAttemptId": "query-daily__90d__ARE__ALL__mercedes-specialist-dubai",
+          "capturedAt": "2026-10-26T08:13:36.152Z"
+        },
+        {
+          "query": "mercedes workshop dubai",
+          "selectedAttemptId": "query-daily__90d__ARE__ALL__mercedes-workshop-dubai",
+          "capturedAt": "2026-10-26T08:13:39.207Z"
+        },
+        {
+          "query": "mercedes maintenance dubai",
+          "selectedAttemptId": "query-daily__90d__ARE__ALL__mercedes-maintenance-dubai",
+          "capturedAt": "2026-10-26T08:13:42.356Z"
+        },
+        {
+          "query": "mercedes oil change dubai",
+          "selectedAttemptId": "query-daily__90d__ARE__ALL__mercedes-oil-change-dubai",
+          "capturedAt": "2026-10-26T08:13:45.360Z"
+        }
+      ],
+      "periods": [
+        {
+          "id": "7d",
+          "start": "2026-10-18",
+          "end": "2026-10-24",
+          "days": 7,
+          "clicks": 0,
+          "impressions": 146,
+          "ctrFractionCalculated": 0,
+          "averagePositionWeightedFromRoundedDailyApprox": 9.926027397260276
+        },
+        {
+          "id": "previous-7d",
+          "start": "2026-10-11",
+          "end": "2026-10-17",
+          "days": 7,
+          "clicks": 4,
+          "impressions": 247,
+          "ctrFractionCalculated": 0.016194331983805668,
+          "averagePositionWeightedFromRoundedDailyApprox": 6.938866396761134
+        },
+        {
+          "id": "28d",
+          "start": "2026-09-27",
+          "end": "2026-10-24",
+          "days": 28,
+          "clicks": 5,
+          "impressions": 849,
+          "ctrFractionCalculated": 0.005889281507656066,
+          "averagePositionWeightedFromRoundedDailyApprox": 7.206478209658421
+        },
+        {
+          "id": "previous-28d",
+          "start": "2026-08-30",
+          "end": "2026-09-26",
+          "days": 28,
+          "clicks": 3,
+          "impressions": 945,
+          "ctrFractionCalculated": 0.0031746031746031746,
+          "averagePositionWeightedFromRoundedDailyApprox": 6.534814814814816
+        },
+        {
+          "id": "90d",
+          "start": "2026-07-27",
+          "end": "2026-10-24",
+          "days": 90,
+          "clicks": 14,
+          "impressions": 2769,
+          "ctrFractionCalculated": 0.005055976886962802,
+          "averagePositionWeightedFromRoundedDailyApprox": 8.628096785843267
+        }
+      ],
+      "matchedChanges": [
+        {
+          "current": "7d",
+          "previous": "previous-7d",
+          "clicks": {
+            "absolute": -4,
+            "relativeFraction": -1,
+            "relativeUnavailableReason": null
+          },
+          "impressions": {
+            "absolute": -101,
+            "relativeFraction": -0.4089068825910931,
+            "relativeUnavailableReason": null
+          },
+          "ctrFractionChange": -0.016194331983805668,
+          "averagePositionDifferenceApprox": 2.9871610004991416
+        },
+        {
+          "current": "28d",
+          "previous": "previous-28d",
+          "clicks": {
+            "absolute": 2,
+            "relativeFraction": 0.6666666666666666,
+            "relativeUnavailableReason": null
+          },
+          "impressions": {
+            "absolute": -96,
+            "relativeFraction": -0.10158730158730159,
+            "relativeUnavailableReason": null
+          },
+          "ctrFractionChange": 0.0027146783330528916,
+          "averagePositionDifferenceApprox": 0.6716633948436046
+        }
+      ]
+    },
+    {
+      "country": "ARE",
+      "device": "MOBILE",
+      "status": "VALIDATED_SIX_EXACT_QUERY_COHORT",
+      "queries": [
+        "mercedes service dubai",
+        "mercedes repair dubai",
+        "mercedes specialist dubai",
+        "mercedes workshop dubai",
+        "mercedes maintenance dubai",
+        "mercedes oil change dubai"
+      ],
+      "sourceSeries": [
+        {
+          "query": "mercedes service dubai",
+          "selectedAttemptId": "query-daily__90d__ARE__MOBILE__mercedes-service-dubai",
+          "capturedAt": "2026-10-26T08:14:00.899Z"
+        },
+        {
+          "query": "mercedes repair dubai",
+          "selectedAttemptId": "query-daily__90d__ARE__MOBILE__mercedes-repair-dubai",
+          "capturedAt": "2026-10-26T08:14:03.942Z"
+        },
+        {
+          "query": "mercedes specialist dubai",
+          "selectedAttemptId": "query-daily__90d__ARE__MOBILE__mercedes-specialist-dubai",
+          "capturedAt": "2026-10-26T08:14:07.313Z"
+        },
+        {
+          "query": "mercedes workshop dubai",
+          "selectedAttemptId": "query-daily__90d__ARE__MOBILE__mercedes-workshop-dubai",
+          "capturedAt": "2026-10-26T08:14:10.412Z"
+        },
+        {
+          "query": "mercedes maintenance dubai",
+          "selectedAttemptId": "query-daily__90d__ARE__MOBILE__mercedes-maintenance-dubai",
+          "capturedAt": "2026-10-26T08:14:13.591Z"
+        },
+        {
+          "query": "mercedes oil change dubai",
+          "selectedAttemptId": "query-daily__90d__ARE__MOBILE__mercedes-oil-change-dubai",
+          "capturedAt": "2026-10-26T08:14:16.756Z"
+        }
+      ],
+      "periods": [
+        {
+          "id": "7d",
+          "start": "2026-10-18",
+          "end": "2026-10-24",
+          "days": 7,
+          "clicks": 0,
+          "impressions": 55,
+          "ctrFractionCalculated": 0,
+          "averagePositionWeightedFromRoundedDailyApprox": 8.636363636363637
+        },
+        {
+          "id": "previous-7d",
+          "start": "2026-10-11",
+          "end": "2026-10-17",
+          "days": 7,
+          "clicks": 0,
+          "impressions": 82,
+          "ctrFractionCalculated": 0,
+          "averagePositionWeightedFromRoundedDailyApprox": 5.391463414634146
+        },
+        {
+          "id": "28d",
+          "start": "2026-09-27",
+          "end": "2026-10-24",
+          "days": 28,
+          "clicks": 0,
+          "impressions": 285,
+          "ctrFractionCalculated": 0,
+          "averagePositionWeightedFromRoundedDailyApprox": 6.033333333333333
+        },
+        {
+          "id": "previous-28d",
+          "start": "2026-08-30",
+          "end": "2026-09-26",
+          "days": 28,
+          "clicks": 2,
+          "impressions": 239,
+          "ctrFractionCalculated": 0.008368200836820083,
+          "averagePositionWeightedFromRoundedDailyApprox": 5.639330543933054
+        },
+        {
+          "id": "90d",
+          "start": "2026-07-27",
+          "end": "2026-10-24",
+          "days": 90,
+          "clicks": 4,
+          "impressions": 803,
+          "ctrFractionCalculated": 0.0049813200498132005,
+          "averagePositionWeightedFromRoundedDailyApprox": 7.858032378580324
+        }
+      ],
+      "matchedChanges": [
+        {
+          "current": "7d",
+          "previous": "previous-7d",
+          "clicks": {
+            "absolute": 0,
+            "relativeFraction": null,
+            "relativeUnavailableReason": "Previous observed denominator is zero."
+          },
+          "impressions": {
+            "absolute": -27,
+            "relativeFraction": -0.32926829268292684,
+            "relativeUnavailableReason": null
+          },
+          "ctrFractionChange": 0,
+          "averagePositionDifferenceApprox": 3.244900221729491
+        },
+        {
+          "current": "28d",
+          "previous": "previous-28d",
+          "clicks": {
+            "absolute": -2,
+            "relativeFraction": -1,
+            "relativeUnavailableReason": null
+          },
+          "impressions": {
+            "absolute": 46,
+            "relativeFraction": 0.19246861924686193,
+            "relativeUnavailableReason": null
+          },
+          "ctrFractionChange": -0.008368200836820083,
+          "averagePositionDifferenceApprox": 0.3940027894002789
+        }
+      ]
+    },
+    {
+      "country": "ARE",
+      "device": "DESKTOP",
+      "status": "VALIDATED_SIX_EXACT_QUERY_COHORT",
+      "queries": [
+        "mercedes service dubai",
+        "mercedes repair dubai",
+        "mercedes specialist dubai",
+        "mercedes workshop dubai",
+        "mercedes maintenance dubai",
+        "mercedes oil change dubai"
+      ],
+      "sourceSeries": [
+        {
+          "query": "mercedes service dubai",
+          "selectedAttemptId": "query-daily__90d__ARE__DESKTOP__mercedes-service-dubai",
+          "capturedAt": "2026-10-26T08:14:28.637Z"
+        },
+        {
+          "query": "mercedes repair dubai",
+          "selectedAttemptId": "query-daily__90d__ARE__DESKTOP__mercedes-repair-dubai",
+          "capturedAt": "2026-10-26T08:14:32.210Z"
+        },
+        {
+          "query": "mercedes specialist dubai",
+          "selectedAttemptId": "query-daily__90d__ARE__DESKTOP__mercedes-specialist-dubai",
+          "capturedAt": "2026-10-26T08:14:35.148Z"
+        },
+        {
+          "query": "mercedes workshop dubai",
+          "selectedAttemptId": "query-daily__90d__ARE__DESKTOP__mercedes-workshop-dubai",
+          "capturedAt": "2026-10-26T08:14:38.678Z"
+        },
+        {
+          "query": "mercedes maintenance dubai",
+          "selectedAttemptId": "query-daily__90d__ARE__DESKTOP__mercedes-maintenance-dubai",
+          "capturedAt": "2026-10-26T08:14:43.125Z"
+        },
+        {
+          "query": "mercedes oil change dubai",
+          "selectedAttemptId": "query-daily__90d__ARE__DESKTOP__mercedes-oil-change-dubai",
+          "capturedAt": "2026-10-26T08:14:46.139Z"
+        }
+      ],
+      "periods": [
+        {
+          "id": "7d",
+          "start": "2026-10-18",
+          "end": "2026-10-24",
+          "days": 7,
+          "clicks": 0,
+          "impressions": 91,
+          "ctrFractionCalculated": 0,
+          "averagePositionWeightedFromRoundedDailyApprox": 10.706593406593406
+        },
+        {
+          "id": "previous-7d",
+          "start": "2026-10-11",
+          "end": "2026-10-17",
+          "days": 7,
+          "clicks": 4,
+          "impressions": 165,
+          "ctrFractionCalculated": 0.024242424242424242,
+          "averagePositionWeightedFromRoundedDailyApprox": 7.710909090909091
+        },
+        {
+          "id": "28d",
+          "start": "2026-09-27",
+          "end": "2026-10-24",
+          "days": 28,
+          "clicks": 5,
+          "impressions": 560,
+          "ctrFractionCalculated": 0.008928571428571428,
+          "averagePositionWeightedFromRoundedDailyApprox": 7.826607142857142
+        },
+        {
+          "id": "previous-28d",
+          "start": "2026-08-30",
+          "end": "2026-09-26",
+          "days": 28,
+          "clicks": 1,
+          "impressions": 706,
+          "ctrFractionCalculated": 0.00141643059490085,
+          "averagePositionWeightedFromRoundedDailyApprox": 6.83583569405099
+        },
+        {
+          "id": "90d",
+          "start": "2026-07-27",
+          "end": "2026-10-24",
+          "days": 90,
+          "clicks": 10,
+          "impressions": 1948,
+          "ctrFractionCalculated": 0.00513347022587269,
+          "averagePositionWeightedFromRoundedDailyApprox": 8.907032854209445
+        }
+      ],
+      "matchedChanges": [
+        {
+          "current": "7d",
+          "previous": "previous-7d",
+          "clicks": {
+            "absolute": -4,
+            "relativeFraction": -1,
+            "relativeUnavailableReason": null
+          },
+          "impressions": {
+            "absolute": -74,
+            "relativeFraction": -0.4484848484848485,
+            "relativeUnavailableReason": null
+          },
+          "ctrFractionChange": -0.024242424242424242,
+          "averagePositionDifferenceApprox": 2.995684315684315
+        },
+        {
+          "current": "28d",
+          "previous": "previous-28d",
+          "clicks": {
+            "absolute": 4,
+            "relativeFraction": 4,
+            "relativeUnavailableReason": null
+          },
+          "impressions": {
+            "absolute": -146,
+            "relativeFraction": -0.20679886685552407,
+            "relativeUnavailableReason": null
+          },
+          "ctrFractionChange": 0.007512140833670578,
+          "averagePositionDifferenceApprox": 0.9907714488061519
+        }
+      ]
+    },
+    {
+      "country": "ALL",
+      "device": "ALL",
+      "status": "VALIDATED_SIX_EXACT_QUERY_COHORT",
+      "queries": [
+        "mercedes service dubai",
+        "mercedes repair dubai",
+        "mercedes specialist dubai",
+        "mercedes workshop dubai",
+        "mercedes maintenance dubai",
+        "mercedes oil change dubai"
+      ],
+      "sourceSeries": [
+        {
+          "query": "mercedes service dubai",
+          "selectedAttemptId": "query-daily__90d__ALL__ALL__mercedes-service-dubai",
+          "capturedAt": "2026-10-26T08:15:38.107Z"
+        },
+        {
+          "query": "mercedes repair dubai",
+          "selectedAttemptId": "query-daily__90d__ALL__ALL__mercedes-repair-dubai",
+          "capturedAt": "2026-10-26T08:15:41.071Z"
+        },
+        {
+          "query": "mercedes specialist dubai",
+          "selectedAttemptId": "query-daily__90d__ALL__ALL__mercedes-specialist-dubai",
+          "capturedAt": "2026-10-26T08:15:44.425Z"
+        },
+        {
+          "query": "mercedes workshop dubai",
+          "selectedAttemptId": "query-daily__90d__ALL__ALL__mercedes-workshop-dubai",
+          "capturedAt": "2026-10-26T08:15:48.462Z"
+        },
+        {
+          "query": "mercedes maintenance dubai",
+          "selectedAttemptId": "query-daily__90d__ALL__ALL__mercedes-maintenance-dubai",
+          "capturedAt": "2026-10-26T08:15:52.353Z"
+        },
+        {
+          "query": "mercedes oil change dubai",
+          "selectedAttemptId": "query-daily__90d__ALL__ALL__mercedes-oil-change-dubai",
+          "capturedAt": "2026-10-26T08:15:55.193Z"
+        }
+      ],
+      "periods": [
+        {
+          "id": "7d",
+          "start": "2026-10-18",
+          "end": "2026-10-24",
+          "days": 7,
+          "clicks": 0,
+          "impressions": 147,
+          "ctrFractionCalculated": 0,
+          "averagePositionWeightedFromRoundedDailyApprox": 9.940816326530614
+        },
+        {
+          "id": "previous-7d",
+          "start": "2026-10-11",
+          "end": "2026-10-17",
+          "days": 7,
+          "clicks": 4,
+          "impressions": 254,
+          "ctrFractionCalculated": 0.015748031496062992,
+          "averagePositionWeightedFromRoundedDailyApprox": 7.215748031496064
+        },
+        {
+          "id": "28d",
+          "start": "2026-09-27",
+          "end": "2026-10-24",
+          "days": 28,
+          "clicks": 5,
+          "impressions": 871,
+          "ctrFractionCalculated": 0.0057405281285878304,
+          "averagePositionWeightedFromRoundedDailyApprox": 7.239494833524684
+        },
+        {
+          "id": "previous-28d",
+          "start": "2026-08-30",
+          "end": "2026-09-26",
+          "days": 28,
+          "clicks": 3,
+          "impressions": 1013,
+          "ctrFractionCalculated": 0.0029615004935834156,
+          "averagePositionWeightedFromRoundedDailyApprox": 6.356071076011847
+        },
+        {
+          "id": "90d",
+          "start": "2026-07-27",
+          "end": "2026-10-24",
+          "days": 90,
+          "clicks": 14,
+          "impressions": 2899,
+          "ctrFractionCalculated": 0.004829251466022766,
+          "averagePositionWeightedFromRoundedDailyApprox": 8.495515695067265
+        }
+      ],
+      "matchedChanges": [
+        {
+          "current": "7d",
+          "previous": "previous-7d",
+          "clicks": {
+            "absolute": -4,
+            "relativeFraction": -1,
+            "relativeUnavailableReason": null
+          },
+          "impressions": {
+            "absolute": -107,
+            "relativeFraction": -0.421259842519685,
+            "relativeUnavailableReason": null
+          },
+          "ctrFractionChange": -0.015748031496062992,
+          "averagePositionDifferenceApprox": 2.72506829503455
+        },
+        {
+          "current": "28d",
+          "previous": "previous-28d",
+          "clicks": {
+            "absolute": 2,
+            "relativeFraction": 0.6666666666666666,
+            "relativeUnavailableReason": null
+          },
+          "impressions": {
+            "absolute": -142,
+            "relativeFraction": -0.140177690029615,
+            "relativeUnavailableReason": null
+          },
+          "ctrFractionChange": 0.002779027635004415,
+          "averagePositionDifferenceApprox": 0.883423757512837
+        }
+      ]
+    },
+    {
+      "country": "ALL",
+      "device": "MOBILE",
+      "status": "VALIDATED_SIX_EXACT_QUERY_COHORT",
+      "queries": [
+        "mercedes service dubai",
+        "mercedes repair dubai",
+        "mercedes specialist dubai",
+        "mercedes workshop dubai",
+        "mercedes maintenance dubai",
+        "mercedes oil change dubai"
+      ],
+      "sourceSeries": [
+        {
+          "query": "mercedes service dubai",
+          "selectedAttemptId": "query-daily__90d__ALL__MOBILE__mercedes-service-dubai",
+          "capturedAt": "2026-10-26T08:19:53.778Z"
+        },
+        {
+          "query": "mercedes repair dubai",
+          "selectedAttemptId": "query-daily__90d__ALL__MOBILE__mercedes-repair-dubai",
+          "capturedAt": "2026-10-26T08:19:57.004Z"
+        },
+        {
+          "query": "mercedes specialist dubai",
+          "selectedAttemptId": "query-daily__90d__ALL__MOBILE__mercedes-specialist-dubai",
+          "capturedAt": "2026-10-26T08:19:59.792Z"
+        },
+        {
+          "query": "mercedes workshop dubai",
+          "selectedAttemptId": "query-daily__90d__ALL__MOBILE__mercedes-workshop-dubai",
+          "capturedAt": "2026-10-26T08:20:03.022Z"
+        },
+        {
+          "query": "mercedes maintenance dubai",
+          "selectedAttemptId": "query-daily__90d__ALL__MOBILE__mercedes-maintenance-dubai",
+          "capturedAt": "2026-10-26T08:20:05.900Z"
+        },
+        {
+          "query": "mercedes oil change dubai",
+          "selectedAttemptId": "query-daily__90d__ALL__MOBILE__mercedes-oil-change-dubai",
+          "capturedAt": "2026-10-26T08:20:08.807Z"
+        }
+      ],
+      "periods": [
+        {
+          "id": "7d",
+          "start": "2026-10-18",
+          "end": "2026-10-24",
+          "days": 7,
+          "clicks": 0,
+          "impressions": 56,
+          "ctrFractionCalculated": 0,
+          "averagePositionWeightedFromRoundedDailyApprox": 8.696428571428571
+        },
+        {
+          "id": "previous-7d",
+          "start": "2026-10-11",
+          "end": "2026-10-17",
+          "days": 7,
+          "clicks": 0,
+          "impressions": 83,
+          "ctrFractionCalculated": 0,
+          "averagePositionWeightedFromRoundedDailyApprox": 5.459036144578313
+        },
+        {
+          "id": "28d",
+          "start": "2026-09-27",
+          "end": "2026-10-24",
+          "days": 28,
+          "clicks": 0,
+          "impressions": 287,
+          "ctrFractionCalculated": 0,
+          "averagePositionWeightedFromRoundedDailyApprox": 6.071428571428571
+        },
+        {
+          "id": "previous-28d",
+          "start": "2026-08-30",
+          "end": "2026-09-26",
+          "days": 28,
+          "clicks": 2,
+          "impressions": 243,
+          "ctrFractionCalculated": 0.00823045267489712,
+          "averagePositionWeightedFromRoundedDailyApprox": 5.62880658436214
+        },
+        {
+          "id": "90d",
+          "start": "2026-07-27",
+          "end": "2026-10-24",
+          "days": 90,
+          "clicks": 4,
+          "impressions": 817,
+          "ctrFractionCalculated": 0.004895960832313341,
+          "averagePositionWeightedFromRoundedDailyApprox": 7.875887392900857
+        }
+      ],
+      "matchedChanges": [
+        {
+          "current": "7d",
+          "previous": "previous-7d",
+          "clicks": {
+            "absolute": 0,
+            "relativeFraction": null,
+            "relativeUnavailableReason": "Previous observed denominator is zero."
+          },
+          "impressions": {
+            "absolute": -27,
+            "relativeFraction": -0.3253012048192771,
+            "relativeUnavailableReason": null
+          },
+          "ctrFractionChange": 0,
+          "averagePositionDifferenceApprox": 3.237392426850258
+        },
+        {
+          "current": "28d",
+          "previous": "previous-28d",
+          "clicks": {
+            "absolute": -2,
+            "relativeFraction": -1,
+            "relativeUnavailableReason": null
+          },
+          "impressions": {
+            "absolute": 44,
+            "relativeFraction": 0.18106995884773663,
+            "relativeUnavailableReason": null
+          },
+          "ctrFractionChange": -0.00823045267489712,
+          "averagePositionDifferenceApprox": 0.4426219870664312
+        }
+      ]
+    },
+    {
+      "country": "ALL",
+      "device": "DESKTOP",
+      "status": "VALIDATED_SIX_EXACT_QUERY_COHORT",
+      "queries": [
+        "mercedes service dubai",
+        "mercedes repair dubai",
+        "mercedes specialist dubai",
+        "mercedes workshop dubai",
+        "mercedes maintenance dubai",
+        "mercedes oil change dubai"
+      ],
+      "sourceSeries": [
+        {
+          "query": "mercedes service dubai",
+          "selectedAttemptId": "query-daily__90d__ALL__DESKTOP__mercedes-service-dubai",
+          "capturedAt": "2026-10-26T08:22:36.849Z"
+        },
+        {
+          "query": "mercedes repair dubai",
+          "selectedAttemptId": "query-daily__90d__ALL__DESKTOP__mercedes-repair-dubai",
+          "capturedAt": "2026-10-26T08:22:39.797Z"
+        },
+        {
+          "query": "mercedes specialist dubai",
+          "selectedAttemptId": "query-daily__90d__ALL__DESKTOP__mercedes-specialist-dubai",
+          "capturedAt": "2026-10-26T08:22:42.641Z"
+        },
+        {
+          "query": "mercedes workshop dubai",
+          "selectedAttemptId": "query-daily__90d__ALL__DESKTOP__mercedes-workshop-dubai",
+          "capturedAt": "2026-10-26T08:22:45.725Z"
+        },
+        {
+          "query": "mercedes maintenance dubai",
+          "selectedAttemptId": "query-daily__90d__ALL__DESKTOP__mercedes-maintenance-dubai",
+          "capturedAt": "2026-10-26T08:22:48.539Z"
+        },
+        {
+          "query": "mercedes oil change dubai",
+          "selectedAttemptId": "query-daily__90d__ALL__DESKTOP__mercedes-oil-change-dubai",
+          "capturedAt": "2026-10-26T08:22:51.780Z"
+        }
+      ],
+      "periods": [
+        {
+          "id": "7d",
+          "start": "2026-10-18",
+          "end": "2026-10-24",
+          "days": 7,
+          "clicks": 0,
+          "impressions": 91,
+          "ctrFractionCalculated": 0,
+          "averagePositionWeightedFromRoundedDailyApprox": 10.706593406593406
+        },
+        {
+          "id": "previous-7d",
+          "start": "2026-10-11",
+          "end": "2026-10-17",
+          "days": 7,
+          "clicks": 4,
+          "impressions": 171,
+          "ctrFractionCalculated": 0.023391812865497075,
+          "averagePositionWeightedFromRoundedDailyApprox": 8.07719298245614
+        },
+        {
+          "id": "28d",
+          "start": "2026-09-27",
+          "end": "2026-10-24",
+          "days": 28,
+          "clicks": 5,
+          "impressions": 580,
+          "ctrFractionCalculated": 0.008620689655172414,
+          "averagePositionWeightedFromRoundedDailyApprox": 7.839137931034482
+        },
+        {
+          "id": "previous-28d",
+          "start": "2026-08-30",
+          "end": "2026-09-26",
+          "days": 28,
+          "clicks": 1,
+          "impressions": 770,
+          "ctrFractionCalculated": 0.0012987012987012987,
+          "averagePositionWeightedFromRoundedDailyApprox": 6.589220779220779
+        },
+        {
+          "id": "90d",
+          "start": "2026-07-27",
+          "end": "2026-10-24",
+          "days": 90,
+          "clicks": 10,
+          "impressions": 2064,
+          "ctrFractionCalculated": 0.0048449612403100775,
+          "averagePositionWeightedFromRoundedDailyApprox": 8.706782945736434
+        }
+      ],
+      "matchedChanges": [
+        {
+          "current": "7d",
+          "previous": "previous-7d",
+          "clicks": {
+            "absolute": -4,
+            "relativeFraction": -1,
+            "relativeUnavailableReason": null
+          },
+          "impressions": {
+            "absolute": -80,
+            "relativeFraction": -0.4678362573099415,
+            "relativeUnavailableReason": null
+          },
+          "ctrFractionChange": -0.023391812865497075,
+          "averagePositionDifferenceApprox": 2.629400424137266
+        },
+        {
+          "current": "28d",
+          "previous": "previous-28d",
+          "clicks": {
+            "absolute": 4,
+            "relativeFraction": 4,
+            "relativeUnavailableReason": null
+          },
+          "impressions": {
+            "absolute": -190,
+            "relativeFraction": -0.24675324675324675,
+            "relativeUnavailableReason": null
+          },
+          "ctrFractionChange": 0.0073219883564711145,
+          "averagePositionDifferenceApprox": 1.2499171518137038
+        }
+      ]
+    }
+  ],
+  "uaeAllDeviceQueryComparisons": [
+    {
+      "query": "mercedes service dubai",
+      "selectedAttemptId": "query-daily__90d__ARE__ALL__mercedes-service-dubai",
+      "periods": [
+        {
+          "id": "7d",
+          "start": "2026-10-18",
+          "end": "2026-10-24",
+          "days": 7,
+          "clicks": 0,
+          "impressions": 21,
+          "ctrFractionCalculated": 0,
+          "averagePositionWeightedFromRoundedDailyApprox": 16.704761904761906,
+          "zeroImpressionDaysExplicit": 1
+        },
+        {
+          "id": "previous-7d",
+          "start": "2026-10-11",
+          "end": "2026-10-17",
+          "days": 7,
+          "clicks": 1,
+          "impressions": 41,
+          "ctrFractionCalculated": 0.024390243902439025,
+          "averagePositionWeightedFromRoundedDailyApprox": 12.553658536585367,
+          "zeroImpressionDaysExplicit": 0
+        },
+        {
+          "id": "28d",
+          "start": "2026-09-27",
+          "end": "2026-10-24",
+          "days": 28,
+          "clicks": 2,
+          "impressions": 156,
+          "ctrFractionCalculated": 0.01282051282051282,
+          "averagePositionWeightedFromRoundedDailyApprox": 12.989102564102565,
+          "zeroImpressionDaysExplicit": 1
+        },
+        {
+          "id": "previous-28d",
+          "start": "2026-08-30",
+          "end": "2026-09-26",
+          "days": 28,
+          "clicks": 0,
+          "impressions": 190,
+          "ctrFractionCalculated": 0,
+          "averagePositionWeightedFromRoundedDailyApprox": 11.021052631578947,
+          "zeroImpressionDaysExplicit": 0
+        },
+        {
+          "id": "90d",
+          "start": "2026-07-27",
+          "end": "2026-10-24",
+          "days": 90,
+          "clicks": 3,
+          "impressions": 592,
+          "ctrFractionCalculated": 0.005067567567567568,
+          "averagePositionWeightedFromRoundedDailyApprox": 12.363682432432434,
+          "zeroImpressionDaysExplicit": 2
+        }
+      ],
+      "comparisons": [
+        {
+          "current": "7d",
+          "previous": "previous-7d",
+          "clicks": {
+            "absolute": -1,
+            "relativeFraction": -1,
+            "relativeUnavailableReason": null
+          },
+          "impressions": {
+            "absolute": -20,
+            "relativeFraction": -0.4878048780487805,
+            "relativeUnavailableReason": null
+          },
+          "averagePositionDifferenceApprox": 4.151103368176539
+        },
+        {
+          "current": "28d",
+          "previous": "previous-28d",
+          "clicks": {
+            "absolute": 2,
+            "relativeFraction": null,
+            "relativeUnavailableReason": "Previous observed denominator is zero."
+          },
+          "impressions": {
+            "absolute": -34,
+            "relativeFraction": -0.17894736842105263,
+            "relativeUnavailableReason": null
+          },
+          "averagePositionDifferenceApprox": 1.968049932523618
+        }
+      ]
+    },
+    {
+      "query": "mercedes repair dubai",
+      "selectedAttemptId": "query-daily__90d__ARE__ALL__mercedes-repair-dubai",
+      "periods": [
+        {
+          "id": "7d",
+          "start": "2026-10-18",
+          "end": "2026-10-24",
+          "days": 7,
+          "clicks": 0,
+          "impressions": 61,
+          "ctrFractionCalculated": 0,
+          "averagePositionWeightedFromRoundedDailyApprox": 4.591803278688525,
+          "zeroImpressionDaysExplicit": 0
+        },
+        {
+          "id": "previous-7d",
+          "start": "2026-10-11",
+          "end": "2026-10-17",
+          "days": 7,
+          "clicks": 3,
+          "impressions": 100,
+          "ctrFractionCalculated": 0.03,
+          "averagePositionWeightedFromRoundedDailyApprox": 4.638,
+          "zeroImpressionDaysExplicit": 0
+        },
+        {
+          "id": "28d",
+          "start": "2026-09-27",
+          "end": "2026-10-24",
+          "days": 28,
+          "clicks": 3,
+          "impressions": 331,
+          "ctrFractionCalculated": 0.00906344410876133,
+          "averagePositionWeightedFromRoundedDailyApprox": 3.9441087613293044,
+          "zeroImpressionDaysExplicit": 0
+        },
+        {
+          "id": "previous-28d",
+          "start": "2026-08-30",
+          "end": "2026-09-26",
+          "days": 28,
+          "clicks": 3,
+          "impressions": 353,
+          "ctrFractionCalculated": 0.0084985835694051,
+          "averagePositionWeightedFromRoundedDailyApprox": 2.923796033994334,
+          "zeroImpressionDaysExplicit": 0
+        },
+        {
+          "id": "90d",
+          "start": "2026-07-27",
+          "end": "2026-10-24",
+          "days": 90,
+          "clicks": 11,
+          "impressions": 1010,
+          "ctrFractionCalculated": 0.01089108910891089,
+          "averagePositionWeightedFromRoundedDailyApprox": 4.440891089108911,
+          "zeroImpressionDaysExplicit": 0
+        }
+      ],
+      "comparisons": [
+        {
+          "current": "7d",
+          "previous": "previous-7d",
+          "clicks": {
+            "absolute": -3,
+            "relativeFraction": -1,
+            "relativeUnavailableReason": null
+          },
+          "impressions": {
+            "absolute": -39,
+            "relativeFraction": -0.39,
+            "relativeUnavailableReason": null
+          },
+          "averagePositionDifferenceApprox": -0.046196721311474676
+        },
+        {
+          "current": "28d",
+          "previous": "previous-28d",
+          "clicks": {
+            "absolute": 0,
+            "relativeFraction": 0,
+            "relativeUnavailableReason": null
+          },
+          "impressions": {
+            "absolute": -22,
+            "relativeFraction": -0.06232294617563739,
+            "relativeUnavailableReason": null
+          },
+          "averagePositionDifferenceApprox": 1.0203127273349706
+        }
+      ]
+    },
+    {
+      "query": "mercedes specialist dubai",
+      "selectedAttemptId": "query-daily__90d__ARE__ALL__mercedes-specialist-dubai",
+      "periods": [
+        {
+          "id": "7d",
+          "start": "2026-10-18",
+          "end": "2026-10-24",
+          "days": 7,
+          "clicks": 0,
+          "impressions": 23,
+          "ctrFractionCalculated": 0,
+          "averagePositionWeightedFromRoundedDailyApprox": 7.043478260869565,
+          "zeroImpressionDaysExplicit": 0
+        },
+        {
+          "id": "previous-7d",
+          "start": "2026-10-11",
+          "end": "2026-10-17",
+          "days": 7,
+          "clicks": 0,
+          "impressions": 45,
+          "ctrFractionCalculated": 0,
+          "averagePositionWeightedFromRoundedDailyApprox": 2.6266666666666665,
+          "zeroImpressionDaysExplicit": 0
+        },
+        {
+          "id": "28d",
+          "start": "2026-09-27",
+          "end": "2026-10-24",
+          "days": 28,
+          "clicks": 0,
+          "impressions": 140,
+          "ctrFractionCalculated": 0,
+          "averagePositionWeightedFromRoundedDailyApprox": 3.417857142857143,
+          "zeroImpressionDaysExplicit": 2
+        },
+        {
+          "id": "previous-28d",
+          "start": "2026-08-30",
+          "end": "2026-09-26",
+          "days": 28,
+          "clicks": 0,
+          "impressions": 114,
+          "ctrFractionCalculated": 0,
+          "averagePositionWeightedFromRoundedDailyApprox": 2.9149122807017545,
+          "zeroImpressionDaysExplicit": 2
+        },
+        {
+          "id": "90d",
+          "start": "2026-07-27",
+          "end": "2026-10-24",
+          "days": 90,
+          "clicks": 0,
+          "impressions": 356,
+          "ctrFractionCalculated": 0,
+          "averagePositionWeightedFromRoundedDailyApprox": 4.273033707865169,
+          "zeroImpressionDaysExplicit": 10
+        }
+      ],
+      "comparisons": [
+        {
+          "current": "7d",
+          "previous": "previous-7d",
+          "clicks": {
+            "absolute": 0,
+            "relativeFraction": null,
+            "relativeUnavailableReason": "Previous observed denominator is zero."
+          },
+          "impressions": {
+            "absolute": -22,
+            "relativeFraction": -0.4888888888888889,
+            "relativeUnavailableReason": null
+          },
+          "averagePositionDifferenceApprox": 4.416811594202899
+        },
+        {
+          "current": "28d",
+          "previous": "previous-28d",
+          "clicks": {
+            "absolute": 0,
+            "relativeFraction": null,
+            "relativeUnavailableReason": "Previous observed denominator is zero."
+          },
+          "impressions": {
+            "absolute": 26,
+            "relativeFraction": 0.22807017543859648,
+            "relativeUnavailableReason": null
+          },
+          "averagePositionDifferenceApprox": 0.5029448621553887
+        }
+      ]
+    },
+    {
+      "query": "mercedes workshop dubai",
+      "selectedAttemptId": "query-daily__90d__ARE__ALL__mercedes-workshop-dubai",
+      "periods": [
+        {
+          "id": "7d",
+          "start": "2026-10-18",
+          "end": "2026-10-24",
+          "days": 7,
+          "clicks": 0,
+          "impressions": 19,
+          "ctrFractionCalculated": 0,
+          "averagePositionWeightedFromRoundedDailyApprox": 18.86315789473684,
+          "zeroImpressionDaysExplicit": 0
+        },
+        {
+          "id": "previous-7d",
+          "start": "2026-10-11",
+          "end": "2026-10-17",
+          "days": 7,
+          "clicks": 0,
+          "impressions": 32,
+          "ctrFractionCalculated": 0,
+          "averagePositionWeightedFromRoundedDailyApprox": 8.484375,
+          "zeroImpressionDaysExplicit": 0
+        },
+        {
+          "id": "28d",
+          "start": "2026-09-27",
+          "end": "2026-10-24",
+          "days": 28,
+          "clicks": 0,
+          "impressions": 121,
+          "ctrFractionCalculated": 0,
+          "averagePositionWeightedFromRoundedDailyApprox": 9.889256198347107,
+          "zeroImpressionDaysExplicit": 0
+        },
+        {
+          "id": "previous-28d",
+          "start": "2026-08-30",
+          "end": "2026-09-26",
+          "days": 28,
+          "clicks": 0,
+          "impressions": 157,
+          "ctrFractionCalculated": 0,
+          "averagePositionWeightedFromRoundedDailyApprox": 9.635668789808918,
+          "zeroImpressionDaysExplicit": 0
+        },
+        {
+          "id": "90d",
+          "start": "2026-07-27",
+          "end": "2026-10-24",
+          "days": 90,
+          "clicks": 0,
+          "impressions": 425,
+          "ctrFractionCalculated": 0,
+          "averagePositionWeightedFromRoundedDailyApprox": 14.39435294117647,
+          "zeroImpressionDaysExplicit": 0
+        }
+      ],
+      "comparisons": [
+        {
+          "current": "7d",
+          "previous": "previous-7d",
+          "clicks": {
+            "absolute": 0,
+            "relativeFraction": null,
+            "relativeUnavailableReason": "Previous observed denominator is zero."
+          },
+          "impressions": {
+            "absolute": -13,
+            "relativeFraction": -0.40625,
+            "relativeUnavailableReason": null
+          },
+          "averagePositionDifferenceApprox": 10.37878289473684
+        },
+        {
+          "current": "28d",
+          "previous": "previous-28d",
+          "clicks": {
+            "absolute": 0,
+            "relativeFraction": null,
+            "relativeUnavailableReason": "Previous observed denominator is zero."
+          },
+          "impressions": {
+            "absolute": -36,
+            "relativeFraction": -0.22929936305732485,
+            "relativeUnavailableReason": null
+          },
+          "averagePositionDifferenceApprox": 0.2535874085381895
+        }
+      ]
+    },
+    {
+      "query": "mercedes maintenance dubai",
+      "selectedAttemptId": "query-daily__90d__ARE__ALL__mercedes-maintenance-dubai",
+      "periods": [
+        {
+          "id": "7d",
+          "start": "2026-10-18",
+          "end": "2026-10-24",
+          "days": 7,
+          "clicks": 0,
+          "impressions": 14,
+          "ctrFractionCalculated": 0,
+          "averagePositionWeightedFromRoundedDailyApprox": 16.564285714285713,
+          "zeroImpressionDaysExplicit": 0
+        },
+        {
+          "id": "previous-7d",
+          "start": "2026-10-11",
+          "end": "2026-10-17",
+          "days": 7,
+          "clicks": 0,
+          "impressions": 21,
+          "ctrFractionCalculated": 0,
+          "averagePositionWeightedFromRoundedDailyApprox": 8.166666666666666,
+          "zeroImpressionDaysExplicit": 0
+        },
+        {
+          "id": "28d",
+          "start": "2026-09-27",
+          "end": "2026-10-24",
+          "days": 28,
+          "clicks": 0,
+          "impressions": 76,
+          "ctrFractionCalculated": 0,
+          "averagePositionWeightedFromRoundedDailyApprox": 10.739473684210525,
+          "zeroImpressionDaysExplicit": 0
+        },
+        {
+          "id": "previous-28d",
+          "start": "2026-08-30",
+          "end": "2026-09-26",
+          "days": 28,
+          "clicks": 0,
+          "impressions": 90,
+          "ctrFractionCalculated": 0,
+          "averagePositionWeightedFromRoundedDailyApprox": 6.623333333333334,
+          "zeroImpressionDaysExplicit": 0
+        },
+        {
+          "id": "90d",
+          "start": "2026-07-27",
+          "end": "2026-10-24",
+          "days": 90,
+          "clicks": 0,
+          "impressions": 264,
+          "ctrFractionCalculated": 0,
+          "averagePositionWeightedFromRoundedDailyApprox": 9.69848484848485,
+          "zeroImpressionDaysExplicit": 4
+        }
+      ],
+      "comparisons": [
+        {
+          "current": "7d",
+          "previous": "previous-7d",
+          "clicks": {
+            "absolute": 0,
+            "relativeFraction": null,
+            "relativeUnavailableReason": "Previous observed denominator is zero."
+          },
+          "impressions": {
+            "absolute": -7,
+            "relativeFraction": -0.3333333333333333,
+            "relativeUnavailableReason": null
+          },
+          "averagePositionDifferenceApprox": 8.397619047619047
+        },
+        {
+          "current": "28d",
+          "previous": "previous-28d",
+          "clicks": {
+            "absolute": 0,
+            "relativeFraction": null,
+            "relativeUnavailableReason": "Previous observed denominator is zero."
+          },
+          "impressions": {
+            "absolute": -14,
+            "relativeFraction": -0.15555555555555556,
+            "relativeUnavailableReason": null
+          },
+          "averagePositionDifferenceApprox": 4.116140350877191
+        }
+      ]
+    },
+    {
+      "query": "mercedes oil change dubai",
+      "selectedAttemptId": "query-daily__90d__ARE__ALL__mercedes-oil-change-dubai",
+      "periods": [
+        {
+          "id": "7d",
+          "start": "2026-10-18",
+          "end": "2026-10-24",
+          "days": 7,
+          "clicks": 0,
+          "impressions": 8,
+          "ctrFractionCalculated": 0,
+          "averagePositionWeightedFromRoundedDailyApprox": 8.25,
+          "zeroImpressionDaysExplicit": 1
+        },
+        {
+          "id": "previous-7d",
+          "start": "2026-10-11",
+          "end": "2026-10-17",
+          "days": 7,
+          "clicks": 0,
+          "impressions": 8,
+          "ctrFractionCalculated": 0,
+          "averagePositionWeightedFromRoundedDailyApprox": 21.775,
+          "zeroImpressionDaysExplicit": 4
+        },
+        {
+          "id": "28d",
+          "start": "2026-09-27",
+          "end": "2026-10-24",
+          "days": 28,
+          "clicks": 0,
+          "impressions": 25,
+          "ctrFractionCalculated": 0,
+          "averagePositionWeightedFromRoundedDailyApprox": 11.808,
+          "zeroImpressionDaysExplicit": 11
+        },
+        {
+          "id": "previous-28d",
+          "start": "2026-08-30",
+          "end": "2026-09-26",
+          "days": 28,
+          "clicks": 0,
+          "impressions": 41,
+          "ctrFractionCalculated": 0,
+          "averagePositionWeightedFromRoundedDailyApprox": 14.831707317073171,
+          "zeroImpressionDaysExplicit": 7
+        },
+        {
+          "id": "90d",
+          "start": "2026-07-27",
+          "end": "2026-10-24",
+          "days": 90,
+          "clicks": 0,
+          "impressions": 122,
+          "ctrFractionCalculated": 0,
+          "averagePositionWeightedFromRoundedDailyApprox": 15.47049180327869,
+          "zeroImpressionDaysExplicit": 24
+        }
+      ],
+      "comparisons": [
+        {
+          "current": "7d",
+          "previous": "previous-7d",
+          "clicks": {
+            "absolute": 0,
+            "relativeFraction": null,
+            "relativeUnavailableReason": "Previous observed denominator is zero."
+          },
+          "impressions": {
+            "absolute": 0,
+            "relativeFraction": 0,
+            "relativeUnavailableReason": null
+          },
+          "averagePositionDifferenceApprox": -13.524999999999999
+        },
+        {
+          "current": "28d",
+          "previous": "previous-28d",
+          "clicks": {
+            "absolute": 0,
+            "relativeFraction": null,
+            "relativeUnavailableReason": "Previous observed denominator is zero."
+          },
+          "impressions": {
+            "absolute": -16,
+            "relativeFraction": -0.3902439024390244,
+            "relativeUnavailableReason": null
+          },
+          "averagePositionDifferenceApprox": -3.023707317073171
+        }
+      ]
+    }
+  ],
+  "temporalOwnershipEvidence": [
+    {
+      "query": "mercedes service dubai",
+      "country": "ARE",
+      "device": "ALL",
+      "window": {
+        "start": "2026-07-27",
+        "end": "2026-10-24"
+      },
+      "status": "VALIDATED_EXACT_PAIR_DAILY",
+      "hub": {
+        "url": "https://digitecme.com/brands/mercedes-benz-service-dubai",
+        "sourceAttemptId": "pair-daily__90d__ARE__ALL__mercedes-service-dubai__brands_mercedes-benz-service-dubai",
+        "positiveImpressionDays": 87,
+        "lastPositiveImpressionDate": "2026-10-24"
+      },
+      "legacy": {
+        "url": "https://digitecme.com/services/mercedes-repair-dubai",
+        "sourceAttemptId": "pair-daily__90d__ARE__ALL__mercedes-service-dubai__services_mercedes-repair-dubai",
+        "positiveImpressionDays": 9,
+        "firstPositiveImpressionDate": "2026-07-27",
+        "lastPositiveImpressionDate": "2026-08-04",
+        "subsequentExplicitZeroImpressionDays": 81
+      },
+      "sameDayPositiveOverlap": {
+        "count": 8,
+        "dates": [
+          "2026-07-27",
+          "2026-07-28",
+          "2026-07-29",
+          "2026-07-30",
+          "2026-07-31",
+          "2026-08-01",
+          "2026-08-03",
+          "2026-08-04"
+        ],
+        "interpretation": "Both exact page series have positive impressions on the same reporting day. This does not establish both URLs appeared together in one SERP or caused harmful competition."
+      }
+    },
+    {
+      "query": "mercedes repair dubai",
+      "country": "ARE",
+      "device": "ALL",
+      "window": {
+        "start": "2026-07-27",
+        "end": "2026-10-24"
+      },
+      "status": "VALIDATED_EXACT_PAIR_DAILY",
+      "hub": {
+        "url": "https://digitecme.com/brands/mercedes-benz-service-dubai",
+        "sourceAttemptId": "pair-daily__90d__ARE__ALL__mercedes-repair-dubai__brands_mercedes-benz-service-dubai",
+        "positiveImpressionDays": 88,
+        "lastPositiveImpressionDate": "2026-10-24"
+      },
+      "legacy": {
+        "url": "https://digitecme.com/services/mercedes-repair-dubai",
+        "sourceAttemptId": "pair-daily__90d__ARE__ALL__mercedes-repair-dubai__services_mercedes-repair-dubai",
+        "positiveImpressionDays": 9,
+        "firstPositiveImpressionDate": "2026-07-27",
+        "lastPositiveImpressionDate": "2026-08-04",
+        "subsequentExplicitZeroImpressionDays": 81
+      },
+      "sameDayPositiveOverlap": {
+        "count": 7,
+        "dates": [
+          "2026-07-27",
+          "2026-07-28",
+          "2026-07-30",
+          "2026-07-31",
+          "2026-08-01",
+          "2026-08-03",
+          "2026-08-04"
+        ],
+        "interpretation": "Both exact page series have positive impressions on the same reporting day. This does not establish both URLs appeared together in one SERP or caused harmful competition."
+      }
+    }
+  ],
+  "nativeQueryOnlyControls": [
+    {
+      "query": "mercedes service dubai",
+      "clicksMatch": true,
+      "impressionsMatch": true,
+      "scope": "Query-only all-country all-device90d; native CSV and daily UI compare at the same grain."
+    },
+    {
+      "query": "mercedes repair dubai",
+      "clicksMatch": true,
+      "impressionsMatch": true,
+      "scope": "Query-only all-country all-device90d; native CSV and daily UI compare at the same grain."
+    },
+    {
+      "query": "mercedes specialist dubai",
+      "clicksMatch": true,
+      "impressionsMatch": true,
+      "scope": "Query-only all-country all-device90d; native CSV and daily UI compare at the same grain."
+    },
+    {
+      "query": "mercedes workshop dubai",
+      "clicksMatch": true,
+      "impressionsMatch": true,
+      "scope": "Query-only all-country all-device90d; native CSV and daily UI compare at the same grain."
+    },
+    {
+      "query": "mercedes maintenance dubai",
+      "clicksMatch": true,
+      "impressionsMatch": true,
+      "scope": "Query-only all-country all-device90d; native CSV and daily UI compare at the same grain."
+    },
+    {
+      "query": "mercedes oil change dubai",
+      "clicksMatch": true,
+      "impressionsMatch": true,
+      "scope": "Query-only all-country all-device90d; native CSV and daily UI compare at the same grain."
+    }
+  ],
+  "pairDailyPeriodCountMismatches": [],
+  "limits": [
+    "All periods end October 24, before the October 26 redirect deployment; this baseline cannot measure redirect recovery.",
+    "Only clicks and impressions are additive. CTR is recomputed from counts. Position is impression-weighted from rounded daily UI values and remains approximate.",
+    "The cohort average changes when the mix of its six queries changes, even if individual query performance is unchanged.",
+    "All-device includes tablet; mobile and desktop are independent observed segments, not an exhaustive decomposition. All-country and UAE overlap and must not be summed.",
+    "Seven-day and twenty-eight-day comparisons use equal-length, immediately preceding nonoverlapping windows within the captured ninety days. No prior ninety-day comparison is available.",
+    "A query-only daily total is not a query-by-page attribution. Page ownership conclusions use the separately validated exact-query Pages tables.",
+    "Missing or rejected captures are unavailable; none are filled with zero. Explicit zero-count dates are preserved.",
+    "Low click counts and these descriptive changes do not establish statistical significance, a Google update, a technical cause, or business outcomes."
+  ]
+}

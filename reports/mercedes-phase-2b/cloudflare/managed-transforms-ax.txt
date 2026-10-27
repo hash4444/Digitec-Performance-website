@@ -1,0 +1,191 @@
+Browser tab: 5, Title: "Rules | Settings | Managed Transforms | digitecme.com | Mebms2000@gmail.com's Account | Cloudflare", URL: "https://dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/rules/settings/managed-transforms".
+1 AXWebArea Rules | Settings | Managed Transforms | digitecme.com | Mebms2000@gmail.com's Account | Cloudflare, URL: dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/rules/settings/managed-transforms
+	2 container
+		3 container react-app
+			4 container
+				5 link Description: Cloudflare home, Value: dash.cloudflare.com/
+				6 pop up button (collapsed) Description: Switch Account, ID: base-ui-:r4f:, Secondary Actions: Expand
+					7 text Mebms2000@gmail.com's Account
+					8 image
+				9 container
+					10 button Quick search...
+						11 image
+						12 text Quick search...
+						13 container
+							14 text Ctrl  K
+					15 link Description: Back to Domains, Value: dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/domains/overview
+					16 content list
+						17 link Description: Overview, Value: dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/
+						18 button (collapsed) Description: Recents, Secondary Actions: Expand
+							19 text Recents
+							20 image
+						21 button (collapsed) AI Crawl Control, Secondary Actions: Expand
+							22 text AI Crawl Control
+							23 image
+						24 button (collapsed) Agent Readiness, Secondary Actions: Expand
+							25 text Agent Readiness
+							26 image
+						27 link Description: Analytics, Value: dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/analytics
+						28 button (collapsed) Observability New, Secondary Actions: Expand
+							29 image
+							30 text Observability
+							31 text New
+							32 image
+						33 button (collapsed) DNS, Secondary Actions: Expand
+							34 text DNS
+							35 image
+						36 button (collapsed) Email, Secondary Actions: Expand
+							37 text Email
+							38 image
+						39 button (collapsed) SSL/TLS, Secondary Actions: Expand
+							40 text SSL/TLS
+							41 image
+						42 button (collapsed) Security, Secondary Actions: Expand
+							43 text Security
+							44 image
+						45 link Description: Access, Value: dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/access
+						46 button (collapsed) Speed, Secondary Actions: Expand
+							47 text Speed
+							48 image
+						49 button (collapsed) Caching, Secondary Actions: Expand
+							50 text Caching
+							51 image
+						52 link Description: Workers Routes, Value: dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/workers
+						53 container
+							54 button (expanded) Rules, Secondary Actions: Collapse
+								55 text Rules
+								56 image
+							57 content list
+								58 link Description: Overview, Value: dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/rules/overview
+								59 link Description: Redirect Rules, Value: dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/rules/redirect-rules
+								60 link Description: Rule simulator Beta, Value: dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/rules/simulator
+								61 link Description: Snippets, Value: dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/rules/snippets
+								62 link Description: Cloud Connector Beta, Value: dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/rules/cloud-connector
+								63 link Description: Page Rules, Value: dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/rules/page-rules
+								64 link Description: Settings, Value: dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/rules/settings
+						65 link Description: Error Pages New, Value: dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/error-pages
+						66 link Description: Network, Value: dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/network
+						67 button (collapsed) Traffic, Secondary Actions: Expand
+							68 text Traffic
+							69 image
+					70 content list
+						71 button (collapsed) Manage account, Secondary Actions: Expand
+							72 text Manage account
+							73 image
+				74 button (expanded) Description: Collapse sidebar, ID: base-ui-:rt:, Secondary Actions: Collapse
+			75 container
+				76 checkbox Description: Star domain, Value: 0, ID: base-ui-:r4t:
+					77 image
+				78 container base-ui-:r4v:
+					79 text digitecme.com
+					80 text free
+					81 image
+				82 button Ask AI
+					83 image
+					84 text Ask AI
+				85 link Description: Support, Value: dash.cloudflare.com/?to=/:account/support
+				86 pop up button (collapsed) Description: User menu, ID: base-ui-:r11:, Secondary Actions: Expand
+					87 image
+			88 container
+				89 tab group
+					90 tab (selected, settable, boolean) Managed Transforms, Value: 1, ID: base-ui-:r51:
+					91 tab (selectable, settable, boolean) URL Normalization, Value: 0, ID: base-ui-:r52:
+			92 heading Settings, Value: 1
+				93 text Settings
+			94 heading Managed Transforms, Value: 2
+				95 text Managed Transforms
+			96 text Perform common adjustments to HTTP request and response headers with the click of a button.
+			97 button Managed Transforms documentation
+			98 heading HTTP request headers, Value: 1
+				99 text HTTP request headers
+			100 table
+				101 row
+					102 cell
+						103 text Group
+					104 cell
+						105 text Description
+					106 cell
+						107 text Enabled
+				108 container
+					109 row
+						110 cell table_1_rowadd_client_certificate_headers_cell_0
+							111 text Add TLS client auth headers
+						112 cell table_1_rowadd_client_certificate_headers_cell_1
+							113 container
+								114 text Adds HTTP request headers with 
+								115 link Description: Mutual TLS (mTLS) client authentication values documentation, Value: developers.cloudflare.com/rules/transform/managed-transforms/reference/
+								116 text .
+						117 cell table_1_rowadd_client_certificate_headers_cell_2
+							118 switch Description: Enabled, Value: 0, ID: base-ui-:r67:
+					119 row
+						120 cell table_1_rowadd_visitor_location_headers_cell_0
+							121 text Add visitor location headers
+						122 cell table_1_rowadd_visitor_location_headers_cell_1
+							123 text Adds HTTP request headers with location information for the visitor's IP address, including city, country, continent, longitude, and latitude.
+						124 cell table_1_rowadd_visitor_location_headers_cell_2
+							125 switch Description: Enabled, Value: 0, ID: base-ui-:r6a:
+					126 row
+						127 cell table_1_rowremove_visitor_ip_headers_cell_0
+							128 text Remove visitor IP headers
+						129 cell table_1_rowremove_visitor_ip_headers_cell_1
+							130 text Removes HTTP request headers that may contain the visitor's IP address. Unavailable when "Add True-Client-IP header" is enabled.
+						131 cell table_1_rowremove_visitor_ip_headers_cell_2
+							132 switch Description: Enabled, Value: 0, ID: base-ui-:r6d:
+					133 row
+						134 cell table_1_rowadd_true_client_ip_headers_cell_0
+							135 text Add "True-Client-IP" header
+						136 cell table_1_rowadd_true_client_ip_headers_cell_1
+							137 text Adds a "True-Client-IP" request header with the visitor's IP address. Unavailable when "Remove visitor IP headers" is enabled.
+						138 cell table_1_rowadd_true_client_ip_headers_cell_2
+							139 button Enabled
+								140 switch Description: Enabled, Value: 0, ID: base-ui-:r6g:
+					141 row
+						142 cell table_1_rowadd_waf_credential_check_status_header_cell_0
+							143 text Add leaked credentials checks header
+						144 cell table_1_rowadd_waf_credential_check_status_header_cell_1
+							145 container
+								146 text Adds a header 'Exposed-Credential-Check' that provides values on fields which have been found to be leaked. 
+								147 link Description: Learn more about Leaked Credential Checks documentation, Value: developers.cloudflare.com/waf/detections/leaked-credentials/
+								148 text .
+						149 cell table_1_rowadd_waf_credential_check_status_header_cell_2
+							150 switch Description: Enabled, Value: 0, ID: base-ui-:r6j:
+			151 heading HTTP response headers, Value: 1
+				152 text HTTP response headers
+			153 table
+				154 row
+					155 cell
+						156 text Group
+					157 cell
+						158 text Description
+					159 cell
+						160 text Enabled
+				161 container
+					162 row
+						163 cell table_2_rowremove_x-powered-by_header_cell_0
+							164 text Remove "X-Powered-By" headers
+						165 cell table_2_rowremove_x-powered-by_header_cell_1
+							166 text Removes the "X-Powered-By" HTTP response header that provides information about the application at the origin server that handled the request.
+						167 cell table_2_rowremove_x-powered-by_header_cell_2
+							168 switch Description: Enabled, Value: 0, ID: base-ui-:r6m:
+					169 row
+						170 cell table_2_rowadd_security_headers_cell_0
+							171 text Add security headers
+						172 cell table_2_rowadd_security_headers_cell_1
+							173 text Adds several security-related HTTP response headers providing cross-site scripting (XSS) protection.
+						174 cell table_2_rowadd_security_headers_cell_2
+							175 switch Description: Enabled, Value: 0, ID: base-ui-:r6p:
+			176 content list
+				177 link Description: Support, Value: support.cloudflare.com/
+				178 link Description: System Status, Value: cloudflarestatus.com/
+				179 link Description: Careers, Value: cloudflare.com/careers/
+				180 link Description: Terms of Use, Value: cloudflare.com/website-terms/
+				181 link Description: Report Security Issues, Value: cloudflare.com/disclosure/
+				182 link Description: Privacy Policy, Value: cloudflare.com/privacypolicy/
+				183 button A blue and white pill with a checkmark and an x, representing privacy choices Cookie Preferences, ID: ot-sdk-btn
+					184 image A blue and white pill with a checkmark and an x, representing privacy choices
+					185 text Cookie Preferences
+				186 container
+					187 text ©  2026  Cloudflare, Inc.
+		188 container Notifications
+
+The focused UI element is 1 AXWebArea Rules | Settings | Managed Transforms | digitecme.com | Mebms2000@gmail.com's Account | Cloudflare, URL: dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/rules/settings/managed-transforms

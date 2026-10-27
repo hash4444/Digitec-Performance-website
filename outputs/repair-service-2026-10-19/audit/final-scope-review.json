@@ -1,0 +1,447 @@
+{
+  "reviewedAt": "2026-10-19T06:44:04.328Z",
+  "sourceFiles": [
+    "src/pages/BrandServicePage.tsx",
+    "src/data/repairServiceContent.ts",
+    "src/data/repairServiceArabic.ts",
+    "src/components/RepairEnquiryPanel.tsx"
+  ],
+  "selectedKeys": [
+    "mercedes-benz-service-dubai/mechanical-repair",
+    "mercedes-benz-service-dubai/suspension-repair",
+    "mercedes-benz-service-dubai/engine-diagnostics",
+    "mercedes-benz-service-dubai/transmission-repair",
+    "bmw-service-dubai/mechanical-repair",
+    "bmw-service-dubai/transmission-repair",
+    "rolls-royce-service-dubai/mechanical-repair",
+    "rolls-royce-service-dubai/suspension-repair",
+    "lamborghini-service-dubai/mechanical-repair",
+    "lamborghini-service-dubai/transmission-repair"
+  ],
+  "selectedCount": 10,
+  "arabicKeys": [
+    "bmw-service-dubai/mechanical-repair",
+    "bmw-service-dubai/transmission-repair",
+    "rolls-royce-service-dubai/mechanical-repair",
+    "rolls-royce-service-dubai/suspension-repair",
+    "lamborghini-service-dubai/mechanical-repair",
+    "lamborghini-service-dubai/transmission-repair"
+  ],
+  "arabicOverrideCount": 6,
+  "metadataChanges": [
+    {
+      "route": "/services/mercedes-diagnostics-dubai",
+      "locale": "en",
+      "title": [
+        "Mercedes Diagnostics Dubai | XENTRY Fault Tracing | DIGI-TEC"
+      ],
+      "description": [
+        "Mercedes diagnostics in Al Quoz, Dubai for warning lights, no-start and drivability faults. XENTRY findings and physical tests guide the next step. Request assessment."
+      ]
+    },
+    {
+      "route": "/brands/bmw-service-dubai/transmission-repair",
+      "locale": "en",
+      "title": [
+        "BMW Transmission & Gearbox Repair Dubai | DIGI-TEC"
+      ],
+      "description": [
+        "BMW transmission repair in Al Quoz, Dubai for harsh shifts, slipping, leaks and gearbox warnings. Vehicle-specific assessment before a repair quote. Contact DIGI-TEC."
+      ]
+    },
+    {
+      "route": "/ar/brands/bmw-service-dubai/transmission-repair",
+      "locale": "ar",
+      "title": [
+        "إصلاح قير بي إم دبليو في دبي | ديجي-تك"
+      ],
+      "description": [
+        "فحص قير بي إم دبليو في القوز عند النتعة أو الانزلاق أو تأخر التعشيق والتحذيرات. نحدد الناقل ونميز بين الصيانة وإصلاح العطل قبل عرض السعر."
+      ]
+    },
+    {
+      "route": "/ar/brands/bmw-service-dubai/mechanical-repair",
+      "locale": "ar",
+      "title": [
+        "إصلاح محرك بي إم دبليو في دبي | ديجي-تك"
+      ],
+      "description": [
+        "فحص محرك بي إم دبليو في القوز، دبي للتسرب وارتفاع الحرارة والتقطيع وضعف العزم. نحدد السبب ونوضح نطاق الإصلاح وعرض السعر قبل العمل."
+      ]
+    },
+    {
+      "route": "/ar/brands/rolls-royce-service-dubai/mechanical-repair",
+      "locale": "ar",
+      "title": [
+        "إصلاح محرك رولز رويس في دبي | ديجي-تك"
+      ],
+      "description": [
+        "تقييم محرك رولز رويس والتبريد والتسرب في القوز، دبي. نراجع السيارة والنتائج ونؤكد نطاق الإصلاح والقطع قبل عرض العمل."
+      ]
+    },
+    {
+      "route": "/ar/brands/rolls-royce-service-dubai/suspension-repair",
+      "locale": "ar",
+      "title": [
+        "إصلاح تعليق رولز رويس في دبي | ديجي-تك"
+      ],
+      "description": [
+        "فحص تعليق رولز رويس وارتفاع الركوب في القوز، دبي عند الميلان أو التحذيرات أو تغير الراحة. نحدد النظام والسبب ونؤكد نطاق الإصلاح أولاً."
+      ]
+    },
+    {
+      "route": "/ar/brands/lamborghini-service-dubai/transmission-repair",
+      "locale": "ar",
+      "title": [
+        "إصلاح قير لامبورغيني في دبي | ديجي-تك"
+      ],
+      "description": [
+        "تقييم قير لامبورغيني في القوز، دبي للتحذيرات وتغير النقل والتسرب. نميز بين LDF وISR والناقل الأوتوماتيكي ونؤكد العمل المدعوم أولاً."
+      ]
+    },
+    {
+      "route": "/ar/brands/lamborghini-service-dubai/mechanical-repair",
+      "locale": "ar",
+      "title": [
+        "إصلاح محرك لامبورغيني في دبي | ديجي-تك"
+      ],
+      "description": [
+        "تقييم محرك لامبورغيني والتبريد والتسرب في القوز، دبي. نحدد السيارة والأعراض ونؤكد نطاق الإصلاح والقطع من نتائج الفحص."
+      ]
+    }
+  ],
+  "renderedRecords": [
+    {
+      "route": "/services/mercedes-mechanical-repair-dubai",
+      "locale": "en",
+      "metadataChanged": false,
+      "title": [
+        "Mercedes Engine & Mechanical Repair Dubai | Digi-Tec"
+      ],
+      "description": [
+        "Mercedes engine repair in Al Quoz, Dubai. Assessment of overheating, oil leaks, misfires and mounts, with repair options and an itemized quote."
+      ],
+      "businessProviderRetained": true,
+      "brandEntityRetained": true,
+      "canonicalRetained": true,
+      "panelCount": 1
+    },
+    {
+      "route": "/ar/services/mercedes-mechanical-repair-dubai",
+      "locale": "ar",
+      "metadataChanged": false,
+      "title": [
+        "إصلاح محرك مرسيدس في دبي | ديجي تيك القوز"
+      ],
+      "description": [
+        "فحص أعطال محرك مرسيدس في القوز، دبي: تسريب الزيت، ارتفاع الحرارة، الاهتزاز والدخان. نحدد سبب العطل ونوضح نطاق الإصلاح قبل العمل."
+      ],
+      "businessProviderRetained": true,
+      "brandEntityRetained": true,
+      "canonicalRetained": true,
+      "panelCount": 1
+    },
+    {
+      "route": "/services/mercedes-suspension-repair-dubai",
+      "locale": "en",
+      "metadataChanged": false,
+      "title": [
+        "Mercedes Suspension Repair Dubai | AIRMATIC & ABC | Digi-Tec"
+      ],
+      "description": [
+        "Mercedes suspension repair in Al Quoz, Dubai for AIRMATIC warnings, overnight drops, air-strut leaks and compressor faults. Book an inspection."
+      ],
+      "businessProviderRetained": true,
+      "brandEntityRetained": true,
+      "canonicalRetained": true,
+      "panelCount": 1
+    },
+    {
+      "route": "/ar/services/mercedes-suspension-repair-dubai",
+      "locale": "ar",
+      "metadataChanged": false,
+      "title": [
+        "إصلاح تعليق مرسيدس وAIRMATIC في دبي | ديجي تيك"
+      ],
+      "description": [
+        "فحص تعليق مرسيدس وAIRMATIC في القوز: هبوط السيارة، اختلاف الارتفاع، تسريب الهواء وأصوات التعليق. تشخيص حسب التجهيزات الفعلية."
+      ],
+      "businessProviderRetained": true,
+      "brandEntityRetained": true,
+      "canonicalRetained": true,
+      "panelCount": 1
+    },
+    {
+      "route": "/services/mercedes-diagnostics-dubai",
+      "locale": "en",
+      "metadataChanged": true,
+      "title": [
+        "Mercedes Diagnostics Dubai | XENTRY Fault Tracing | DIGI-TEC"
+      ],
+      "description": [
+        "Mercedes diagnostics in Al Quoz, Dubai for warning lights, no-start and drivability faults. XENTRY findings and physical tests guide the next step. Request assessment."
+      ],
+      "businessProviderRetained": true,
+      "brandEntityRetained": true,
+      "canonicalRetained": true,
+      "panelCount": 1
+    },
+    {
+      "route": "/ar/services/mercedes-diagnostics-dubai",
+      "locale": "ar",
+      "metadataChanged": false,
+      "title": [
+        "فحص مرسيدس XENTRY في دبي | تشخيص الأعطال | ديجي تيك"
+      ],
+      "description": [
+        "تشخيص مرسيدس باستخدام XENTRY في القوز، دبي. قراءة الأعطال والبيانات واختبارات مدعومة، مع تأكيد نطاق الترميز والبرمجة حسب السيارة والوحدة."
+      ],
+      "businessProviderRetained": true,
+      "brandEntityRetained": true,
+      "canonicalRetained": true,
+      "panelCount": 1
+    },
+    {
+      "route": "/services/mercedes-transmission-repair-dubai",
+      "locale": "en",
+      "metadataChanged": false,
+      "title": [
+        "Mercedes Transmission & Gearbox Repair Dubai | Digi-Tec"
+      ],
+      "description": [
+        "Mercedes transmission and gearbox repair assessment in Al Quoz. Identify the fitted gearbox and compare fluid service, fault repair and replacement scope."
+      ],
+      "businessProviderRetained": true,
+      "brandEntityRetained": true,
+      "canonicalRetained": true,
+      "panelCount": 1
+    },
+    {
+      "route": "/ar/services/mercedes-transmission-repair-dubai",
+      "locale": "ar",
+      "metadataChanged": false,
+      "title": [
+        "إصلاح قير مرسيدس في دبي | 7G و9G | ديجي تيك"
+      ],
+      "description": [
+        "فحص قير مرسيدس في القوز، دبي عند النتعة أو الانزلاق أو تأخر التعشيق. نميز بين خدمة الزيت وإصلاح العطل حسب ناقل الحركة المثبت."
+      ],
+      "businessProviderRetained": true,
+      "brandEntityRetained": true,
+      "canonicalRetained": true,
+      "panelCount": 1
+    },
+    {
+      "route": "/brands/bmw-service-dubai/transmission-repair",
+      "locale": "en",
+      "metadataChanged": true,
+      "title": [
+        "BMW Transmission & Gearbox Repair Dubai | DIGI-TEC"
+      ],
+      "description": [
+        "BMW transmission repair in Al Quoz, Dubai for harsh shifts, slipping, leaks and gearbox warnings. Vehicle-specific assessment before a repair quote. Contact DIGI-TEC."
+      ],
+      "businessProviderRetained": true,
+      "brandEntityRetained": true,
+      "canonicalRetained": true,
+      "panelCount": 1
+    },
+    {
+      "route": "/ar/brands/bmw-service-dubai/transmission-repair",
+      "locale": "ar",
+      "metadataChanged": true,
+      "title": [
+        "إصلاح قير بي إم دبليو في دبي | ديجي-تك"
+      ],
+      "description": [
+        "فحص قير بي إم دبليو في القوز عند النتعة أو الانزلاق أو تأخر التعشيق والتحذيرات. نحدد الناقل ونميز بين الصيانة وإصلاح العطل قبل عرض السعر."
+      ],
+      "businessProviderRetained": true,
+      "brandEntityRetained": true,
+      "canonicalRetained": true,
+      "panelCount": 1
+    },
+    {
+      "route": "/brands/bmw-service-dubai/mechanical-repair",
+      "locale": "en",
+      "metadataChanged": false,
+      "title": [
+        "BMW Engine & Mechanical Repair Dubai | DIGI-TEC"
+      ],
+      "description": [
+        "BMW engine and mechanical repair assessment in Al Quoz for leaks, overheating, rough running and power loss. A diagnosis precedes a repair quote."
+      ],
+      "businessProviderRetained": true,
+      "brandEntityRetained": true,
+      "canonicalRetained": true,
+      "panelCount": 1
+    },
+    {
+      "route": "/ar/brands/bmw-service-dubai/mechanical-repair",
+      "locale": "ar",
+      "metadataChanged": true,
+      "title": [
+        "إصلاح محرك بي إم دبليو في دبي | ديجي-تك"
+      ],
+      "description": [
+        "فحص محرك بي إم دبليو في القوز، دبي للتسرب وارتفاع الحرارة والتقطيع وضعف العزم. نحدد السبب ونوضح نطاق الإصلاح وعرض السعر قبل العمل."
+      ],
+      "businessProviderRetained": true,
+      "brandEntityRetained": true,
+      "canonicalRetained": true,
+      "panelCount": 1
+    },
+    {
+      "route": "/brands/rolls-royce-service-dubai/mechanical-repair",
+      "locale": "en",
+      "metadataChanged": false,
+      "title": [
+        "Rolls-Royce Engine Repair Dubai | DIGI-TEC"
+      ],
+      "description": [
+        "Rolls-Royce engine, cooling and mechanical assessment in Al Quoz, Dubai. Repair scope follows vehicle identification and inspection findings."
+      ],
+      "businessProviderRetained": true,
+      "brandEntityRetained": true,
+      "canonicalRetained": true,
+      "panelCount": 1
+    },
+    {
+      "route": "/ar/brands/rolls-royce-service-dubai/mechanical-repair",
+      "locale": "ar",
+      "metadataChanged": true,
+      "title": [
+        "إصلاح محرك رولز رويس في دبي | ديجي-تك"
+      ],
+      "description": [
+        "تقييم محرك رولز رويس والتبريد والتسرب في القوز، دبي. نراجع السيارة والنتائج ونؤكد نطاق الإصلاح والقطع قبل عرض العمل."
+      ],
+      "businessProviderRetained": true,
+      "brandEntityRetained": true,
+      "canonicalRetained": true,
+      "panelCount": 1
+    },
+    {
+      "route": "/brands/rolls-royce-service-dubai/suspension-repair",
+      "locale": "en",
+      "metadataChanged": false,
+      "title": [
+        "Rolls-Royce Suspension Repair Dubai | DIGI-TEC"
+      ],
+      "description": [
+        "Rolls-Royce ride-height, air-suspension and ride-quality assessment in Al Quoz, Dubai. Fitted systems and repair scope are confirmed first."
+      ],
+      "businessProviderRetained": true,
+      "brandEntityRetained": true,
+      "canonicalRetained": true,
+      "panelCount": 1
+    },
+    {
+      "route": "/ar/brands/rolls-royce-service-dubai/suspension-repair",
+      "locale": "ar",
+      "metadataChanged": true,
+      "title": [
+        "إصلاح تعليق رولز رويس في دبي | ديجي-تك"
+      ],
+      "description": [
+        "فحص تعليق رولز رويس وارتفاع الركوب في القوز، دبي عند الميلان أو التحذيرات أو تغير الراحة. نحدد النظام والسبب ونؤكد نطاق الإصلاح أولاً."
+      ],
+      "businessProviderRetained": true,
+      "brandEntityRetained": true,
+      "canonicalRetained": true,
+      "panelCount": 1
+    },
+    {
+      "route": "/brands/lamborghini-service-dubai/transmission-repair",
+      "locale": "en",
+      "metadataChanged": false,
+      "title": [
+        "Lamborghini Transmission Repair Dubai | DIGI-TEC"
+      ],
+      "description": [
+        "Lamborghini gearbox and transmission assessment in Al Quoz, Dubai. LDF, ISR and automatic systems are identified before service or repair is proposed."
+      ],
+      "businessProviderRetained": true,
+      "brandEntityRetained": true,
+      "canonicalRetained": true,
+      "panelCount": 1
+    },
+    {
+      "route": "/ar/brands/lamborghini-service-dubai/transmission-repair",
+      "locale": "ar",
+      "metadataChanged": true,
+      "title": [
+        "إصلاح قير لامبورغيني في دبي | ديجي-تك"
+      ],
+      "description": [
+        "تقييم قير لامبورغيني في القوز، دبي للتحذيرات وتغير النقل والتسرب. نميز بين LDF وISR والناقل الأوتوماتيكي ونؤكد العمل المدعوم أولاً."
+      ],
+      "businessProviderRetained": true,
+      "brandEntityRetained": true,
+      "canonicalRetained": true,
+      "panelCount": 1
+    },
+    {
+      "route": "/brands/lamborghini-service-dubai/mechanical-repair",
+      "locale": "en",
+      "metadataChanged": false,
+      "title": [
+        "Lamborghini Engine Repair Dubai | DIGI-TEC"
+      ],
+      "description": [
+        "Lamborghini engine, cooling and mechanical assessment in Al Quoz, Dubai. Repair scope follows vehicle identification and diagnostic findings."
+      ],
+      "businessProviderRetained": true,
+      "brandEntityRetained": true,
+      "canonicalRetained": true,
+      "panelCount": 1
+    },
+    {
+      "route": "/ar/brands/lamborghini-service-dubai/mechanical-repair",
+      "locale": "ar",
+      "metadataChanged": true,
+      "title": [
+        "إصلاح محرك لامبورغيني في دبي | ديجي-تك"
+      ],
+      "description": [
+        "تقييم محرك لامبورغيني والتبريد والتسرب في القوز، دبي. نحدد السيارة والأعراض ونؤكد نطاق الإصلاح والقطع من نتائج الفحص."
+      ],
+      "businessProviderRetained": true,
+      "brandEntityRetained": true,
+      "canonicalRetained": true,
+      "panelCount": 1
+    },
+    {
+      "route": "/brands/lamborghini-service-dubai/engine-diagnostics",
+      "locale": "en",
+      "metadataChanged": false,
+      "title": [
+        "Lamborghini Engine Diagnostics Dubai | DIGI-TEC"
+      ],
+      "description": [
+        "Lamborghini warning-light and drivability diagnostics in Al Quoz, Dubai. Compatible data and physical testing are matched to the exact vehicle."
+      ],
+      "businessProviderRetained": true,
+      "brandEntityRetained": true,
+      "canonicalRetained": true,
+      "panelCount": 0,
+      "unselectedTextUnchanged": true
+    },
+    {
+      "route": "/ar/brands/lamborghini-service-dubai/engine-diagnostics",
+      "locale": "ar",
+      "metadataChanged": false,
+      "title": [
+        "تشخيص المحرك Lamborghini في دبي | ديجي-تك"
+      ],
+      "description": [
+        "تشخيص المحرك Lamborghini في دبي. ربط رسائل التحذير وبيانات الأعطال بالفحص الفعلي لتحديد سبب المشكلة قبل اقتراح تبديل القطع."
+      ],
+      "businessProviderRetained": true,
+      "brandEntityRetained": true,
+      "canonicalRetained": true,
+      "panelCount": 0,
+      "unselectedTextUnchanged": true
+    }
+  ]
+}

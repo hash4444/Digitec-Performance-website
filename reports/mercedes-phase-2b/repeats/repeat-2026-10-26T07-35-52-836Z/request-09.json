@@ -1,0 +1,109 @@
+{
+  "sequence": 9,
+  "transport": "fetch-default",
+  "sourceResponse": {
+    "url": "https://digitecme.com/ar/brands/mercedes-benz-service-dubai/mechanical-repair",
+    "method": "GET",
+    "startedAtUtc": "2026-10-26T07:37:19.425Z",
+    "finishedAtUtc": "2026-10-26T07:37:19.787Z",
+    "startedAtDubai": "2026-10-26T11:37:19.425+04:00",
+    "finishedAtDubai": "2026-10-26T11:37:19.787+04:00",
+    "status": 308,
+    "requestHeaders": {
+      "User-Agent": "DIGI-TEC-Phase2-ReadOnly-HTTP-Verification/1.0"
+    },
+    "responseHeaders": {
+      "cf-ray": "a507cb9e49b05de2-HKG",
+      "connection": "keep-alive",
+      "content-type": "text/html; charset=UTF-8",
+      "date": "Mon, 26 Oct 2026 07:37:22 GMT",
+      "location": "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai",
+      "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=qGEJdbiSYRsPGtEpJMr9rbnG0J%2F0oMl319YUwHCBycGRk5CjPu0O119JBpFZovQyc5XB%2FP2A8u4BX0LdSVjN5kH5ERS8Sc%2Fl%2FA8kjOoBHbPjG9tZvC5chW7kxrRYhFGp\"}]}",
+      "server": "cloudflare",
+      "speculation-rules": "\"/cdn-cgi/speculation\"",
+      "transfer-encoding": "chunked"
+    },
+    "cfRay": "a507cb9e49b05de2-HKG",
+    "cloudflareColo": "HKG",
+    "location": "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai",
+    "bodyUtf8Bytes": 169,
+    "htmlFile": "request-09-source.html",
+    "title": "308 Permanent Redirect",
+    "h1": [
+      "308 Permanent Redirect"
+    ],
+    "canonical": [],
+    "robots": [],
+    "mainTextSha256": "f1cb1fbfa7ad217392a924129046f1dbdfa7a145471e66d779898606d49dc293",
+    "htmlSha256": "c230f673289b2f53f31d1a678e11b9167b824aa5b6ed2195fdaecb63260dad63",
+    "indexability": {
+      "noindexExcluded": false,
+      "declaredRobotsPresent": false,
+      "singleExpectedCanonical": false
+    },
+    "matchesHistoricalFailureMainText": false,
+    "matchesExpectedTargetMainText": false,
+    "bodyHashMeaning": "SHA256 of fetch-decoded body saved as UTF-8 HTML; not compressed wire-byte hash."
+  },
+  "targetResponse": {
+    "url": "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai",
+    "method": "GET",
+    "startedAtUtc": "2026-10-26T07:37:19.789Z",
+    "finishedAtUtc": "2026-10-26T07:37:21.221Z",
+    "startedAtDubai": "2026-10-26T11:37:19.789+04:00",
+    "finishedAtDubai": "2026-10-26T11:37:21.221+04:00",
+    "status": 200,
+    "requestHeaders": {
+      "User-Agent": "DIGI-TEC-Phase2-ReadOnly-HTTP-Verification/1.0"
+    },
+    "responseHeaders": {
+      "alt-svc": "h3=\":443\"; ma=86400",
+      "cache-control": "no-cache, must-revalidate, max-age=0",
+      "cf-cache-status": "DYNAMIC",
+      "cf-ray": "a507cb9f1a445de2-HKG",
+      "connection": "keep-alive",
+      "content-encoding": "br",
+      "content-type": "text/html; charset=utf-8",
+      "date": "Mon, 26 Oct 2026 07:37:24 GMT",
+      "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+      "referrer-policy": "strict-origin-when-cross-origin",
+      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=vNyhV1W16RXJcMSH8FRI7VL%2FIVnfT9NkeyIYdgZCGXouYX%2Bvm052gxQ1TSvSdSjFbSg4iRvtWgd3FiqgLWIl0e51kPVKnLJdNAoWortti7uaWYPaHabkX8bmuWR19Un%2B\"}]}",
+      "server": "cloudflare",
+      "set-cookie": "__cf_bm=TC4vn_cV0thlCkWYHb4sqGAjfWZGX0L6VYYSUb4PD44-1793000243.0928721-1.0.1.1-c9PVLusVdFpV0VCjW_v7cj9yn5qt8WBEm1JQOxOlXj0.s.uqbq7dOJtTtX08OCmFccP6yq5O7w1GFMrfMQqAaSwHJMX6OEGB68R2ZZk0GEky7cPmeKnxoNF3CawZFKSt; HttpOnly; SameSite=None; Secure; Path=/; Domain=digitecme.com; Expires=Mon, 26 Oct 2026 08:07:24 GMT",
+      "speculation-rules": "\"/cdn-cgi/speculation\"",
+      "strict-transport-security": "max-age=31536000; includeSubDomains",
+      "transfer-encoding": "chunked",
+      "vary": "accept-encoding",
+      "x-content-type-options": "nosniff",
+      "x-deployment-id": "psr2.455fbd60-7be3-4d3f-b5a2-4af11984e472.1793605043.B_waOmJsur-VvtY0o-AsdcpEIZUr-bto8wYYEQD2o4E"
+    },
+    "cfRay": "a507cb9f1a445de2-HKG",
+    "cloudflareColo": "HKG",
+    "location": null,
+    "bodyUtf8Bytes": 66045,
+    "htmlFile": "request-09-target.html",
+    "title": "إصلاح محرك مرسيدس في دبي | ديجي تيك القوز",
+    "h1": [
+      "إصلاح محرك مرسيدس والأعطال الميكانيكية في دبي"
+    ],
+    "canonical": [
+      "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai"
+    ],
+    "robots": [
+      "index, follow, max-image-preview:large"
+    ],
+    "mainTextSha256": "e02e2625c01ba1d5dc310a765826833ff28bf66d1b9c5f7b0cac789d6c3ac463",
+    "htmlSha256": "b3250e4bdc4f4af67e8ebe39975b9d1983ecca3a88b6e5d522e1f2d8dc928e26",
+    "indexability": {
+      "noindexExcluded": false,
+      "declaredRobotsPresent": true,
+      "singleExpectedCanonical": true
+    },
+    "matchesHistoricalFailureMainText": false,
+    "matchesExpectedTargetMainText": true,
+    "bodyHashMeaning": "SHA256 of fetch-decoded body saved as UTF-8 HTML; not compressed wire-byte hash."
+  },
+  "passed": true,
+  "jsonFile": "request-09.json"
+}

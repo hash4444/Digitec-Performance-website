@@ -1,0 +1,11 @@
+Browser tab: 14, Title: "Digiec Performance Center L.L.C | Lovable", URL: "https://lovable.dev/projects/b8255283-fdd9-4c2d-8b46-ccb596f695e1?view=more".
+The following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.
+Removed element IDs: 960, 967-1136, 1143-1304
+~0 AXWebArea Digiec Performance Center L.L.C | Lovable, URL: lovable.dev/projects/b8255283-fdd9-4c2d-8b46-ccb596f695e1?view=more
+~		2 link Description: Skip to chat input, Value: lovable.dev/projects/b8255283-fdd9-4c2d-8b46-ccb596f695e1?view=more#chatinput
+~				6 pop up button (collapsed) Digiec Performance Center L.L.C, ID: base-ui-_r_17l_, Secondary Actions: Expand
+~					962 tab (selectable, settable, boolean) Description: Preview, Value: 0, ID: base-ui-_r_2ha_
+~					965 tab (selected, settable, boolean) Description: More, Value: 1, ID: base-ui-_r_2hg_
+~				966 text More
++				967 button Description: Close, ID: base-ui-_r_2ku_
+The focused UI element is 6 pop up button (collapsed) Digiec Performance Center L.L.C, ID: base-ui-_r_17l_, Secondary Actions: Expand

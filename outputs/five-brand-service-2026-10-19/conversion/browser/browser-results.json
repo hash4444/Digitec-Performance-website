@@ -1,0 +1,1349 @@
+{
+  "checkedAt": "2026-10-19T06:15:26.808Z",
+  "passed": true,
+  "base": "http://127.0.0.1:5195",
+  "browser": "Headless Microsoft Edge through bundled Playwright",
+  "pageChecks": [
+    {
+      "route": "/brands/rolls-royce-service-dubai",
+      "language": "en",
+      "viewport": 1440,
+      "width": 1440,
+      "h1": "Rolls-Royce Service & Repair Dubai",
+      "title": "Rolls-Royce Service & Repair Dubai | DIGI-TEC",
+      "mobileBarVisible": false,
+      "heroDraftPresent": true,
+      "heroContactClicksTrackedWithoutNavigation": true,
+      "visibleImages": [
+        {
+          "source": "/images/digitec-d-mark.png",
+          "loaded": true
+        },
+        {
+          "source": "/brand-logos/showcase/rolls-royce.png",
+          "loaded": true
+        }
+      ],
+      "documentWidth": 1440,
+      "bodyWidth": 1440,
+      "overflow": 0,
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/rolls-royce-service-dubai",
+      "language": "ar",
+      "viewport": 1440,
+      "width": 1440,
+      "h1": "إصلاح وصيانة رولز رويس في دبي",
+      "title": "إصلاح وصيانة رولز رويس في دبي | مركز ديجي-تك",
+      "mobileBarVisible": false,
+      "heroDraftPresent": true,
+      "heroContactClicksTrackedWithoutNavigation": true,
+      "visibleImages": [
+        {
+          "source": "/images/digitec-d-mark.png",
+          "loaded": true
+        },
+        {
+          "source": "/brand-logos/showcase/rolls-royce.png",
+          "loaded": true
+        }
+      ],
+      "documentWidth": 1440,
+      "bodyWidth": 1440,
+      "overflow": 0,
+      "passed": true
+    },
+    {
+      "route": "/brands/lamborghini-service-dubai",
+      "language": "en",
+      "viewport": 1440,
+      "width": 1440,
+      "h1": "Lamborghini Service & Repair Dubai",
+      "title": "Lamborghini Service & Repair Dubai | DIGI-TEC",
+      "mobileBarVisible": false,
+      "heroDraftPresent": true,
+      "heroContactClicksTrackedWithoutNavigation": true,
+      "visibleImages": [
+        {
+          "source": "/images/digitec-d-mark.png",
+          "loaded": true
+        },
+        {
+          "source": "/images/lamborghini-service-dubai-hero.jpg",
+          "loaded": true
+        },
+        {
+          "source": "/brand-logos/showcase/lamborghini.png",
+          "loaded": true
+        }
+      ],
+      "documentWidth": 1440,
+      "bodyWidth": 1440,
+      "overflow": 0,
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/lamborghini-service-dubai",
+      "language": "ar",
+      "viewport": 1440,
+      "width": 1440,
+      "h1": "إصلاح وصيانة لامبورغيني في دبي",
+      "title": "إصلاح وصيانة لامبورغيني في دبي | مركز ديجي-تك",
+      "mobileBarVisible": false,
+      "heroDraftPresent": true,
+      "heroContactClicksTrackedWithoutNavigation": true,
+      "visibleImages": [
+        {
+          "source": "/images/digitec-d-mark.png",
+          "loaded": true
+        },
+        {
+          "source": "/images/lamborghini-service-dubai-hero.jpg",
+          "loaded": true
+        },
+        {
+          "source": "/brand-logos/showcase/lamborghini.png",
+          "loaded": true
+        }
+      ],
+      "documentWidth": 1440,
+      "bodyWidth": 1440,
+      "overflow": 0,
+      "passed": true
+    },
+    {
+      "route": "/brands/volkswagen-service-dubai",
+      "language": "en",
+      "viewport": 1440,
+      "width": 1440,
+      "h1": "Volkswagen Repair & Service Dubai",
+      "title": "Volkswagen Service & Repair Dubai | DIGI-TEC Al Quoz",
+      "mobileBarVisible": false,
+      "heroDraftPresent": true,
+      "heroContactClicksTrackedWithoutNavigation": true,
+      "visibleImages": [
+        {
+          "source": "/images/digitec-d-mark.png",
+          "loaded": true
+        },
+        {
+          "source": "/brand-logos/showcase/volkswagen.png",
+          "loaded": true
+        }
+      ],
+      "documentWidth": 1440,
+      "bodyWidth": 1440,
+      "overflow": 0,
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/volkswagen-service-dubai",
+      "language": "ar",
+      "viewport": 1440,
+      "width": 1440,
+      "h1": "إصلاح وصيانة فولكس فاجن في دبي",
+      "title": "إصلاح وصيانة فولكس فاجن في دبي | مركز ديجي-تك",
+      "mobileBarVisible": false,
+      "heroDraftPresent": true,
+      "heroContactClicksTrackedWithoutNavigation": true,
+      "visibleImages": [
+        {
+          "source": "/images/digitec-d-mark.png",
+          "loaded": true
+        },
+        {
+          "source": "/brand-logos/showcase/volkswagen.png",
+          "loaded": true
+        }
+      ],
+      "documentWidth": 1440,
+      "bodyWidth": 1440,
+      "overflow": 0,
+      "passed": true
+    },
+    {
+      "route": "/brands/mercedes-benz-service-dubai",
+      "language": "en",
+      "viewport": 1440,
+      "width": 1440,
+      "h1": "Mercedes-Benz Repair & Service Dubai",
+      "title": "Mercedes Repair & Service Dubai | Al Quoz | Digi-Tec",
+      "mobileBarVisible": false,
+      "heroDraftPresent": true,
+      "heroContactClicksTrackedWithoutNavigation": true,
+      "visibleImages": [
+        {
+          "source": "/images/digitec-d-mark.png",
+          "loaded": true
+        },
+        {
+          "source": "/images/mercedes-repair-dubai-hero.jpg",
+          "loaded": true
+        },
+        {
+          "source": "/brand-logos/showcase/mercedes-benz.png",
+          "loaded": true
+        }
+      ],
+      "documentWidth": 1440,
+      "bodyWidth": 1440,
+      "overflow": 0,
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/mercedes-benz-service-dubai",
+      "language": "ar",
+      "viewport": 1440,
+      "width": 1440,
+      "h1": "إصلاح وصيانة مرسيدس بنز في دبي",
+      "title": "إصلاح وصيانة مرسيدس في دبي | ديجي-تك",
+      "mobileBarVisible": false,
+      "heroDraftPresent": true,
+      "heroContactClicksTrackedWithoutNavigation": true,
+      "visibleImages": [
+        {
+          "source": "/images/digitec-d-mark.png",
+          "loaded": true
+        },
+        {
+          "source": "/images/mercedes-repair-dubai-hero.jpg",
+          "loaded": true
+        },
+        {
+          "source": "/brand-logos/showcase/mercedes-benz.png",
+          "loaded": true
+        }
+      ],
+      "documentWidth": 1440,
+      "bodyWidth": 1440,
+      "overflow": 0,
+      "passed": true
+    },
+    {
+      "route": "/brands/bmw-service-dubai",
+      "language": "en",
+      "viewport": 1440,
+      "width": 1440,
+      "h1": "BMW Service & Repair Dubai",
+      "title": "BMW Service & Repair Dubai | DIGI-TEC",
+      "mobileBarVisible": false,
+      "heroDraftPresent": true,
+      "heroContactClicksTrackedWithoutNavigation": true,
+      "visibleImages": [
+        {
+          "source": "/images/digitec-d-mark.png",
+          "loaded": true
+        },
+        {
+          "source": "/brand-logos/showcase/bmw.png",
+          "loaded": true
+        }
+      ],
+      "documentWidth": 1440,
+      "bodyWidth": 1440,
+      "overflow": 0,
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/bmw-service-dubai",
+      "language": "ar",
+      "viewport": 1440,
+      "width": 1440,
+      "h1": "إصلاح وصيانة بي إم دبليو في دبي",
+      "title": "إصلاح وصيانة بي إم دبليو في دبي | مركز ديجي-تك",
+      "mobileBarVisible": false,
+      "heroDraftPresent": true,
+      "heroContactClicksTrackedWithoutNavigation": true,
+      "visibleImages": [
+        {
+          "source": "/images/digitec-d-mark.png",
+          "loaded": true
+        },
+        {
+          "source": "/brand-logos/showcase/bmw.png",
+          "loaded": true
+        }
+      ],
+      "documentWidth": 1440,
+      "bodyWidth": 1440,
+      "overflow": 0,
+      "passed": true
+    },
+    {
+      "route": "/brands/rolls-royce-service-dubai",
+      "language": "en",
+      "viewport": 390,
+      "width": 390,
+      "h1": "Rolls-Royce Service & Repair Dubai",
+      "title": "Rolls-Royce Service & Repair Dubai | DIGI-TEC",
+      "mobileBarVisible": true,
+      "heroDraftPresent": true,
+      "heroContactClicksTrackedWithoutNavigation": true,
+      "visibleImages": [
+        {
+          "source": "/images/digitec-d-mark.png",
+          "loaded": true
+        },
+        {
+          "source": "/brand-logos/showcase/rolls-royce.png",
+          "loaded": true
+        }
+      ],
+      "documentWidth": 390,
+      "bodyWidth": 390,
+      "overflow": 0,
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/rolls-royce-service-dubai",
+      "language": "ar",
+      "viewport": 390,
+      "width": 390,
+      "h1": "إصلاح وصيانة رولز رويس في دبي",
+      "title": "إصلاح وصيانة رولز رويس في دبي | مركز ديجي-تك",
+      "mobileBarVisible": true,
+      "heroDraftPresent": true,
+      "heroContactClicksTrackedWithoutNavigation": true,
+      "visibleImages": [
+        {
+          "source": "/images/digitec-d-mark.png",
+          "loaded": true
+        },
+        {
+          "source": "/brand-logos/showcase/rolls-royce.png",
+          "loaded": true
+        }
+      ],
+      "documentWidth": 390,
+      "bodyWidth": 390,
+      "overflow": 0,
+      "passed": true
+    },
+    {
+      "route": "/brands/lamborghini-service-dubai",
+      "language": "en",
+      "viewport": 390,
+      "width": 390,
+      "h1": "Lamborghini Service & Repair Dubai",
+      "title": "Lamborghini Service & Repair Dubai | DIGI-TEC",
+      "mobileBarVisible": true,
+      "heroDraftPresent": true,
+      "heroContactClicksTrackedWithoutNavigation": true,
+      "visibleImages": [
+        {
+          "source": "/images/digitec-d-mark.png",
+          "loaded": true
+        },
+        {
+          "source": "/images/lamborghini-service-dubai-hero.jpg",
+          "loaded": true
+        },
+        {
+          "source": "/brand-logos/showcase/lamborghini.png",
+          "loaded": true
+        }
+      ],
+      "documentWidth": 390,
+      "bodyWidth": 390,
+      "overflow": 0,
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/lamborghini-service-dubai",
+      "language": "ar",
+      "viewport": 390,
+      "width": 390,
+      "h1": "إصلاح وصيانة لامبورغيني في دبي",
+      "title": "إصلاح وصيانة لامبورغيني في دبي | مركز ديجي-تك",
+      "mobileBarVisible": true,
+      "heroDraftPresent": true,
+      "heroContactClicksTrackedWithoutNavigation": true,
+      "visibleImages": [
+        {
+          "source": "/images/digitec-d-mark.png",
+          "loaded": true
+        },
+        {
+          "source": "/images/lamborghini-service-dubai-hero.jpg",
+          "loaded": true
+        },
+        {
+          "source": "/brand-logos/showcase/lamborghini.png",
+          "loaded": true
+        }
+      ],
+      "documentWidth": 390,
+      "bodyWidth": 390,
+      "overflow": 0,
+      "passed": true
+    },
+    {
+      "route": "/brands/volkswagen-service-dubai",
+      "language": "en",
+      "viewport": 390,
+      "width": 390,
+      "h1": "Volkswagen Repair & Service Dubai",
+      "title": "Volkswagen Service & Repair Dubai | DIGI-TEC Al Quoz",
+      "mobileBarVisible": true,
+      "heroDraftPresent": true,
+      "heroContactClicksTrackedWithoutNavigation": true,
+      "visibleImages": [
+        {
+          "source": "/images/digitec-d-mark.png",
+          "loaded": true
+        },
+        {
+          "source": "/brand-logos/showcase/volkswagen.png",
+          "loaded": true
+        }
+      ],
+      "documentWidth": 390,
+      "bodyWidth": 390,
+      "overflow": 0,
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/volkswagen-service-dubai",
+      "language": "ar",
+      "viewport": 390,
+      "width": 390,
+      "h1": "إصلاح وصيانة فولكس فاجن في دبي",
+      "title": "إصلاح وصيانة فولكس فاجن في دبي | مركز ديجي-تك",
+      "mobileBarVisible": true,
+      "heroDraftPresent": true,
+      "heroContactClicksTrackedWithoutNavigation": true,
+      "visibleImages": [
+        {
+          "source": "/images/digitec-d-mark.png",
+          "loaded": true
+        },
+        {
+          "source": "/brand-logos/showcase/volkswagen.png",
+          "loaded": true
+        }
+      ],
+      "documentWidth": 390,
+      "bodyWidth": 390,
+      "overflow": 0,
+      "passed": true
+    },
+    {
+      "route": "/brands/mercedes-benz-service-dubai",
+      "language": "en",
+      "viewport": 390,
+      "width": 390,
+      "h1": "Mercedes-Benz Repair & Service Dubai",
+      "title": "Mercedes Repair & Service Dubai | Al Quoz | Digi-Tec",
+      "mobileBarVisible": true,
+      "heroDraftPresent": true,
+      "heroContactClicksTrackedWithoutNavigation": true,
+      "visibleImages": [
+        {
+          "source": "/images/digitec-d-mark.png",
+          "loaded": true
+        },
+        {
+          "source": "/images/mercedes-repair-dubai-hero.jpg",
+          "loaded": true
+        },
+        {
+          "source": "/brand-logos/showcase/mercedes-benz.png",
+          "loaded": true
+        }
+      ],
+      "documentWidth": 390,
+      "bodyWidth": 390,
+      "overflow": 0,
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/mercedes-benz-service-dubai",
+      "language": "ar",
+      "viewport": 390,
+      "width": 390,
+      "h1": "إصلاح وصيانة مرسيدس بنز في دبي",
+      "title": "إصلاح وصيانة مرسيدس في دبي | ديجي-تك",
+      "mobileBarVisible": true,
+      "heroDraftPresent": true,
+      "heroContactClicksTrackedWithoutNavigation": true,
+      "visibleImages": [
+        {
+          "source": "/images/digitec-d-mark.png",
+          "loaded": true
+        },
+        {
+          "source": "/images/mercedes-repair-dubai-hero.jpg",
+          "loaded": true
+        },
+        {
+          "source": "/brand-logos/showcase/mercedes-benz.png",
+          "loaded": true
+        }
+      ],
+      "documentWidth": 390,
+      "bodyWidth": 390,
+      "overflow": 0,
+      "passed": true
+    },
+    {
+      "route": "/brands/bmw-service-dubai",
+      "language": "en",
+      "viewport": 390,
+      "width": 390,
+      "h1": "BMW Service & Repair Dubai",
+      "title": "BMW Service & Repair Dubai | DIGI-TEC",
+      "mobileBarVisible": true,
+      "heroDraftPresent": true,
+      "heroContactClicksTrackedWithoutNavigation": true,
+      "visibleImages": [
+        {
+          "source": "/images/digitec-d-mark.png",
+          "loaded": true
+        },
+        {
+          "source": "/brand-logos/showcase/bmw.png",
+          "loaded": true
+        }
+      ],
+      "documentWidth": 390,
+      "bodyWidth": 390,
+      "overflow": 0,
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/bmw-service-dubai",
+      "language": "ar",
+      "viewport": 390,
+      "width": 390,
+      "h1": "إصلاح وصيانة بي إم دبليو في دبي",
+      "title": "إصلاح وصيانة بي إم دبليو في دبي | مركز ديجي-تك",
+      "mobileBarVisible": true,
+      "heroDraftPresent": true,
+      "heroContactClicksTrackedWithoutNavigation": true,
+      "visibleImages": [
+        {
+          "source": "/images/digitec-d-mark.png",
+          "loaded": true
+        },
+        {
+          "source": "/brand-logos/showcase/bmw.png",
+          "loaded": true
+        }
+      ],
+      "documentWidth": 390,
+      "bodyWidth": 390,
+      "overflow": 0,
+      "passed": true
+    },
+    {
+      "route": "/brands/rolls-royce-service-dubai",
+      "language": "en",
+      "viewport": 320,
+      "width": 320,
+      "h1": "Rolls-Royce Service & Repair Dubai",
+      "title": "Rolls-Royce Service & Repair Dubai | DIGI-TEC",
+      "mobileBarVisible": true,
+      "heroDraftPresent": true,
+      "heroContactClicksTrackedWithoutNavigation": true,
+      "visibleImages": [
+        {
+          "source": "/images/digitec-d-mark.png",
+          "loaded": true
+        }
+      ],
+      "documentWidth": 320,
+      "bodyWidth": 320,
+      "overflow": 0,
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/rolls-royce-service-dubai",
+      "language": "ar",
+      "viewport": 320,
+      "width": 320,
+      "h1": "إصلاح وصيانة رولز رويس في دبي",
+      "title": "إصلاح وصيانة رولز رويس في دبي | مركز ديجي-تك",
+      "mobileBarVisible": true,
+      "heroDraftPresent": true,
+      "heroContactClicksTrackedWithoutNavigation": true,
+      "visibleImages": [
+        {
+          "source": "/images/digitec-d-mark.png",
+          "loaded": true
+        }
+      ],
+      "documentWidth": 320,
+      "bodyWidth": 320,
+      "overflow": 0,
+      "passed": true
+    },
+    {
+      "route": "/brands/lamborghini-service-dubai",
+      "language": "en",
+      "viewport": 320,
+      "width": 320,
+      "h1": "Lamborghini Service & Repair Dubai",
+      "title": "Lamborghini Service & Repair Dubai | DIGI-TEC",
+      "mobileBarVisible": true,
+      "heroDraftPresent": true,
+      "heroContactClicksTrackedWithoutNavigation": true,
+      "visibleImages": [
+        {
+          "source": "/images/digitec-d-mark.png",
+          "loaded": true
+        },
+        {
+          "source": "/images/lamborghini-service-dubai-hero.jpg",
+          "loaded": true
+        }
+      ],
+      "documentWidth": 320,
+      "bodyWidth": 320,
+      "overflow": 0,
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/lamborghini-service-dubai",
+      "language": "ar",
+      "viewport": 320,
+      "width": 320,
+      "h1": "إصلاح وصيانة لامبورغيني في دبي",
+      "title": "إصلاح وصيانة لامبورغيني في دبي | مركز ديجي-تك",
+      "mobileBarVisible": true,
+      "heroDraftPresent": true,
+      "heroContactClicksTrackedWithoutNavigation": true,
+      "visibleImages": [
+        {
+          "source": "/images/digitec-d-mark.png",
+          "loaded": true
+        },
+        {
+          "source": "/images/lamborghini-service-dubai-hero.jpg",
+          "loaded": true
+        }
+      ],
+      "documentWidth": 320,
+      "bodyWidth": 320,
+      "overflow": 0,
+      "passed": true
+    },
+    {
+      "route": "/brands/volkswagen-service-dubai",
+      "language": "en",
+      "viewport": 320,
+      "width": 320,
+      "h1": "Volkswagen Repair & Service Dubai",
+      "title": "Volkswagen Service & Repair Dubai | DIGI-TEC Al Quoz",
+      "mobileBarVisible": true,
+      "heroDraftPresent": true,
+      "heroContactClicksTrackedWithoutNavigation": true,
+      "visibleImages": [
+        {
+          "source": "/images/digitec-d-mark.png",
+          "loaded": true
+        }
+      ],
+      "documentWidth": 320,
+      "bodyWidth": 320,
+      "overflow": 0,
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/volkswagen-service-dubai",
+      "language": "ar",
+      "viewport": 320,
+      "width": 320,
+      "h1": "إصلاح وصيانة فولكس فاجن في دبي",
+      "title": "إصلاح وصيانة فولكس فاجن في دبي | مركز ديجي-تك",
+      "mobileBarVisible": true,
+      "heroDraftPresent": true,
+      "heroContactClicksTrackedWithoutNavigation": true,
+      "visibleImages": [
+        {
+          "source": "/images/digitec-d-mark.png",
+          "loaded": true
+        }
+      ],
+      "documentWidth": 320,
+      "bodyWidth": 320,
+      "overflow": 0,
+      "passed": true
+    },
+    {
+      "route": "/brands/mercedes-benz-service-dubai",
+      "language": "en",
+      "viewport": 320,
+      "width": 320,
+      "h1": "Mercedes-Benz Repair & Service Dubai",
+      "title": "Mercedes Repair & Service Dubai | Al Quoz | Digi-Tec",
+      "mobileBarVisible": true,
+      "heroDraftPresent": true,
+      "heroContactClicksTrackedWithoutNavigation": true,
+      "visibleImages": [
+        {
+          "source": "/images/digitec-d-mark.png",
+          "loaded": true
+        },
+        {
+          "source": "/images/mercedes-repair-dubai-hero.jpg",
+          "loaded": true
+        }
+      ],
+      "documentWidth": 320,
+      "bodyWidth": 320,
+      "overflow": 0,
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/mercedes-benz-service-dubai",
+      "language": "ar",
+      "viewport": 320,
+      "width": 320,
+      "h1": "إصلاح وصيانة مرسيدس بنز في دبي",
+      "title": "إصلاح وصيانة مرسيدس في دبي | ديجي-تك",
+      "mobileBarVisible": true,
+      "heroDraftPresent": true,
+      "heroContactClicksTrackedWithoutNavigation": true,
+      "visibleImages": [
+        {
+          "source": "/images/digitec-d-mark.png",
+          "loaded": true
+        },
+        {
+          "source": "/images/mercedes-repair-dubai-hero.jpg",
+          "loaded": true
+        },
+        {
+          "source": "/brand-logos/showcase/mercedes-benz.png",
+          "loaded": true
+        }
+      ],
+      "documentWidth": 320,
+      "bodyWidth": 320,
+      "overflow": 0,
+      "passed": true
+    },
+    {
+      "route": "/brands/bmw-service-dubai",
+      "language": "en",
+      "viewport": 320,
+      "width": 320,
+      "h1": "BMW Service & Repair Dubai",
+      "title": "BMW Service & Repair Dubai | DIGI-TEC",
+      "mobileBarVisible": true,
+      "heroDraftPresent": true,
+      "heroContactClicksTrackedWithoutNavigation": true,
+      "visibleImages": [
+        {
+          "source": "/images/digitec-d-mark.png",
+          "loaded": true
+        }
+      ],
+      "documentWidth": 320,
+      "bodyWidth": 320,
+      "overflow": 0,
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/bmw-service-dubai",
+      "language": "ar",
+      "viewport": 320,
+      "width": 320,
+      "h1": "إصلاح وصيانة بي إم دبليو في دبي",
+      "title": "إصلاح وصيانة بي إم دبليو في دبي | مركز ديجي-تك",
+      "mobileBarVisible": true,
+      "heroDraftPresent": true,
+      "heroContactClicksTrackedWithoutNavigation": true,
+      "visibleImages": [
+        {
+          "source": "/images/digitec-d-mark.png",
+          "loaded": true
+        }
+      ],
+      "documentWidth": 320,
+      "bodyWidth": 320,
+      "overflow": 0,
+      "passed": true
+    }
+  ],
+  "interactions": [
+    {
+      "route": "/brands/rolls-royce-service-dubai",
+      "viewport": "desktop",
+      "faqClickOpens": true,
+      "faqKeyboardEnterCloses": true,
+      "answerLabelled": true,
+      "emptyIssueRejected": true,
+      "invalidCallbackRejected": true,
+      "validDraftPreparedInStub": true,
+      "brandContextPreserved": true,
+      "privateValuesExcludedFromAnalytics": true,
+      "optionalPersonalDetailsAccepted": true,
+      "noConfirmedEnquiryClaim": true
+    },
+    {
+      "route": "/ar/brands/rolls-royce-service-dubai",
+      "viewport": "desktop",
+      "faqClickOpens": true,
+      "faqKeyboardEnterCloses": true,
+      "answerLabelled": true,
+      "emptyIssueRejected": true,
+      "invalidCallbackRejected": true,
+      "validDraftPreparedInStub": true,
+      "brandContextPreserved": true,
+      "privateValuesExcludedFromAnalytics": true,
+      "optionalPersonalDetailsAccepted": true,
+      "noConfirmedEnquiryClaim": true
+    },
+    {
+      "route": "/brands/lamborghini-service-dubai",
+      "viewport": "desktop",
+      "faqClickOpens": true,
+      "faqKeyboardEnterCloses": true,
+      "answerLabelled": true,
+      "emptyIssueRejected": true,
+      "invalidCallbackRejected": true,
+      "validDraftPreparedInStub": true,
+      "brandContextPreserved": true,
+      "privateValuesExcludedFromAnalytics": true,
+      "optionalPersonalDetailsAccepted": true,
+      "noConfirmedEnquiryClaim": true
+    },
+    {
+      "route": "/ar/brands/lamborghini-service-dubai",
+      "viewport": "desktop",
+      "faqClickOpens": true,
+      "faqKeyboardEnterCloses": true,
+      "answerLabelled": true,
+      "emptyIssueRejected": true,
+      "invalidCallbackRejected": true,
+      "validDraftPreparedInStub": true,
+      "brandContextPreserved": true,
+      "privateValuesExcludedFromAnalytics": true,
+      "optionalPersonalDetailsAccepted": true,
+      "noConfirmedEnquiryClaim": true
+    },
+    {
+      "route": "/brands/volkswagen-service-dubai",
+      "viewport": "desktop",
+      "faqClickOpens": true,
+      "faqKeyboardEnterCloses": true,
+      "answerLabelled": true,
+      "emptyIssueRejected": true,
+      "invalidCallbackRejected": true,
+      "validDraftPreparedInStub": true,
+      "brandContextPreserved": true,
+      "privateValuesExcludedFromAnalytics": true,
+      "optionalPersonalDetailsAccepted": true,
+      "noConfirmedEnquiryClaim": true
+    },
+    {
+      "route": "/ar/brands/volkswagen-service-dubai",
+      "viewport": "desktop",
+      "faqClickOpens": true,
+      "faqKeyboardEnterCloses": true,
+      "answerLabelled": true,
+      "emptyIssueRejected": true,
+      "invalidCallbackRejected": true,
+      "validDraftPreparedInStub": true,
+      "brandContextPreserved": true,
+      "privateValuesExcludedFromAnalytics": true,
+      "optionalPersonalDetailsAccepted": true,
+      "noConfirmedEnquiryClaim": true
+    },
+    {
+      "route": "/brands/mercedes-benz-service-dubai",
+      "viewport": "desktop",
+      "faqClickOpens": true,
+      "faqKeyboardEnterCloses": true,
+      "answerLabelled": true,
+      "emptyIssueRejected": true,
+      "invalidCallbackRejected": true,
+      "validDraftPreparedInStub": true,
+      "brandContextPreserved": true,
+      "privateValuesExcludedFromAnalytics": true,
+      "optionalPersonalDetailsAccepted": true,
+      "noConfirmedEnquiryClaim": true
+    },
+    {
+      "route": "/ar/brands/mercedes-benz-service-dubai",
+      "viewport": "desktop",
+      "faqClickOpens": true,
+      "faqKeyboardEnterCloses": true,
+      "answerLabelled": true,
+      "emptyIssueRejected": true,
+      "invalidCallbackRejected": true,
+      "validDraftPreparedInStub": true,
+      "brandContextPreserved": true,
+      "privateValuesExcludedFromAnalytics": true,
+      "optionalPersonalDetailsAccepted": true,
+      "noConfirmedEnquiryClaim": true
+    },
+    {
+      "route": "/brands/bmw-service-dubai",
+      "viewport": "desktop",
+      "faqClickOpens": true,
+      "faqKeyboardEnterCloses": true,
+      "answerLabelled": true,
+      "emptyIssueRejected": true,
+      "invalidCallbackRejected": true,
+      "validDraftPreparedInStub": true,
+      "brandContextPreserved": true,
+      "privateValuesExcludedFromAnalytics": true,
+      "optionalPersonalDetailsAccepted": true,
+      "noConfirmedEnquiryClaim": true
+    },
+    {
+      "route": "/ar/brands/bmw-service-dubai",
+      "viewport": "desktop",
+      "faqClickOpens": true,
+      "faqKeyboardEnterCloses": true,
+      "answerLabelled": true,
+      "emptyIssueRejected": true,
+      "invalidCallbackRejected": true,
+      "validDraftPreparedInStub": true,
+      "brandContextPreserved": true,
+      "privateValuesExcludedFromAnalytics": true,
+      "optionalPersonalDetailsAccepted": true,
+      "noConfirmedEnquiryClaim": true
+    },
+    {
+      "route": "/brands/rolls-royce-service-dubai",
+      "viewport": "mobile",
+      "faqClickOpens": true,
+      "faqKeyboardEnterCloses": true,
+      "answerLabelled": true,
+      "emptyIssueRejected": true,
+      "invalidCallbackRejected": true,
+      "validDraftPreparedInStub": true,
+      "brandContextPreserved": true,
+      "privateValuesExcludedFromAnalytics": true,
+      "optionalPersonalDetailsAccepted": true,
+      "noConfirmedEnquiryClaim": true
+    },
+    {
+      "route": "/ar/brands/rolls-royce-service-dubai",
+      "viewport": "mobile",
+      "faqClickOpens": true,
+      "faqKeyboardEnterCloses": true,
+      "answerLabelled": true,
+      "emptyIssueRejected": true,
+      "invalidCallbackRejected": true,
+      "validDraftPreparedInStub": true,
+      "brandContextPreserved": true,
+      "privateValuesExcludedFromAnalytics": true,
+      "optionalPersonalDetailsAccepted": true,
+      "noConfirmedEnquiryClaim": true
+    },
+    {
+      "route": "/brands/lamborghini-service-dubai",
+      "viewport": "mobile",
+      "faqClickOpens": true,
+      "faqKeyboardEnterCloses": true,
+      "answerLabelled": true,
+      "emptyIssueRejected": true,
+      "invalidCallbackRejected": true,
+      "validDraftPreparedInStub": true,
+      "brandContextPreserved": true,
+      "privateValuesExcludedFromAnalytics": true,
+      "optionalPersonalDetailsAccepted": true,
+      "noConfirmedEnquiryClaim": true
+    },
+    {
+      "route": "/ar/brands/lamborghini-service-dubai",
+      "viewport": "mobile",
+      "faqClickOpens": true,
+      "faqKeyboardEnterCloses": true,
+      "answerLabelled": true,
+      "emptyIssueRejected": true,
+      "invalidCallbackRejected": true,
+      "validDraftPreparedInStub": true,
+      "brandContextPreserved": true,
+      "privateValuesExcludedFromAnalytics": true,
+      "optionalPersonalDetailsAccepted": true,
+      "noConfirmedEnquiryClaim": true
+    },
+    {
+      "route": "/brands/volkswagen-service-dubai",
+      "viewport": "mobile",
+      "faqClickOpens": true,
+      "faqKeyboardEnterCloses": true,
+      "answerLabelled": true,
+      "emptyIssueRejected": true,
+      "invalidCallbackRejected": true,
+      "validDraftPreparedInStub": true,
+      "brandContextPreserved": true,
+      "privateValuesExcludedFromAnalytics": true,
+      "optionalPersonalDetailsAccepted": true,
+      "noConfirmedEnquiryClaim": true
+    },
+    {
+      "route": "/ar/brands/volkswagen-service-dubai",
+      "viewport": "mobile",
+      "faqClickOpens": true,
+      "faqKeyboardEnterCloses": true,
+      "answerLabelled": true,
+      "emptyIssueRejected": true,
+      "invalidCallbackRejected": true,
+      "validDraftPreparedInStub": true,
+      "brandContextPreserved": true,
+      "privateValuesExcludedFromAnalytics": true,
+      "optionalPersonalDetailsAccepted": true,
+      "noConfirmedEnquiryClaim": true
+    },
+    {
+      "route": "/brands/mercedes-benz-service-dubai",
+      "viewport": "mobile",
+      "faqClickOpens": true,
+      "faqKeyboardEnterCloses": true,
+      "answerLabelled": true,
+      "emptyIssueRejected": true,
+      "invalidCallbackRejected": true,
+      "validDraftPreparedInStub": true,
+      "brandContextPreserved": true,
+      "privateValuesExcludedFromAnalytics": true,
+      "optionalPersonalDetailsAccepted": true,
+      "noConfirmedEnquiryClaim": true
+    },
+    {
+      "route": "/ar/brands/mercedes-benz-service-dubai",
+      "viewport": "mobile",
+      "faqClickOpens": true,
+      "faqKeyboardEnterCloses": true,
+      "answerLabelled": true,
+      "emptyIssueRejected": true,
+      "invalidCallbackRejected": true,
+      "validDraftPreparedInStub": true,
+      "brandContextPreserved": true,
+      "privateValuesExcludedFromAnalytics": true,
+      "optionalPersonalDetailsAccepted": true,
+      "noConfirmedEnquiryClaim": true
+    },
+    {
+      "route": "/brands/bmw-service-dubai",
+      "viewport": "mobile",
+      "faqClickOpens": true,
+      "faqKeyboardEnterCloses": true,
+      "answerLabelled": true,
+      "emptyIssueRejected": true,
+      "invalidCallbackRejected": true,
+      "validDraftPreparedInStub": true,
+      "brandContextPreserved": true,
+      "privateValuesExcludedFromAnalytics": true,
+      "optionalPersonalDetailsAccepted": true,
+      "noConfirmedEnquiryClaim": true
+    },
+    {
+      "route": "/ar/brands/bmw-service-dubai",
+      "viewport": "mobile",
+      "faqClickOpens": true,
+      "faqKeyboardEnterCloses": true,
+      "answerLabelled": true,
+      "emptyIssueRejected": true,
+      "invalidCallbackRejected": true,
+      "validDraftPreparedInStub": true,
+      "brandContextPreserved": true,
+      "privateValuesExcludedFromAnalytics": true,
+      "optionalPersonalDetailsAccepted": true,
+      "noConfirmedEnquiryClaim": true
+    },
+    {
+      "route": "/brands/rolls-royce-service-dubai",
+      "viewport": "narrow",
+      "faqClickOpens": true,
+      "faqKeyboardEnterCloses": true,
+      "answerLabelled": true,
+      "emptyIssueRejected": true,
+      "invalidCallbackRejected": true,
+      "validDraftPreparedInStub": true,
+      "brandContextPreserved": true,
+      "privateValuesExcludedFromAnalytics": true,
+      "optionalPersonalDetailsAccepted": true,
+      "noConfirmedEnquiryClaim": true
+    },
+    {
+      "route": "/ar/brands/rolls-royce-service-dubai",
+      "viewport": "narrow",
+      "faqClickOpens": true,
+      "faqKeyboardEnterCloses": true,
+      "answerLabelled": true,
+      "emptyIssueRejected": true,
+      "invalidCallbackRejected": true,
+      "validDraftPreparedInStub": true,
+      "brandContextPreserved": true,
+      "privateValuesExcludedFromAnalytics": true,
+      "optionalPersonalDetailsAccepted": true,
+      "noConfirmedEnquiryClaim": true
+    },
+    {
+      "route": "/brands/lamborghini-service-dubai",
+      "viewport": "narrow",
+      "faqClickOpens": true,
+      "faqKeyboardEnterCloses": true,
+      "answerLabelled": true,
+      "emptyIssueRejected": true,
+      "invalidCallbackRejected": true,
+      "validDraftPreparedInStub": true,
+      "brandContextPreserved": true,
+      "privateValuesExcludedFromAnalytics": true,
+      "optionalPersonalDetailsAccepted": true,
+      "noConfirmedEnquiryClaim": true
+    },
+    {
+      "route": "/ar/brands/lamborghini-service-dubai",
+      "viewport": "narrow",
+      "faqClickOpens": true,
+      "faqKeyboardEnterCloses": true,
+      "answerLabelled": true,
+      "emptyIssueRejected": true,
+      "invalidCallbackRejected": true,
+      "validDraftPreparedInStub": true,
+      "brandContextPreserved": true,
+      "privateValuesExcludedFromAnalytics": true,
+      "optionalPersonalDetailsAccepted": true,
+      "noConfirmedEnquiryClaim": true
+    },
+    {
+      "route": "/brands/volkswagen-service-dubai",
+      "viewport": "narrow",
+      "faqClickOpens": true,
+      "faqKeyboardEnterCloses": true,
+      "answerLabelled": true,
+      "emptyIssueRejected": true,
+      "invalidCallbackRejected": true,
+      "validDraftPreparedInStub": true,
+      "brandContextPreserved": true,
+      "privateValuesExcludedFromAnalytics": true,
+      "optionalPersonalDetailsAccepted": true,
+      "noConfirmedEnquiryClaim": true
+    },
+    {
+      "route": "/ar/brands/volkswagen-service-dubai",
+      "viewport": "narrow",
+      "faqClickOpens": true,
+      "faqKeyboardEnterCloses": true,
+      "answerLabelled": true,
+      "emptyIssueRejected": true,
+      "invalidCallbackRejected": true,
+      "validDraftPreparedInStub": true,
+      "brandContextPreserved": true,
+      "privateValuesExcludedFromAnalytics": true,
+      "optionalPersonalDetailsAccepted": true,
+      "noConfirmedEnquiryClaim": true
+    },
+    {
+      "route": "/brands/mercedes-benz-service-dubai",
+      "viewport": "narrow",
+      "faqClickOpens": true,
+      "faqKeyboardEnterCloses": true,
+      "answerLabelled": true,
+      "emptyIssueRejected": true,
+      "invalidCallbackRejected": true,
+      "validDraftPreparedInStub": true,
+      "brandContextPreserved": true,
+      "privateValuesExcludedFromAnalytics": true,
+      "optionalPersonalDetailsAccepted": true,
+      "noConfirmedEnquiryClaim": true
+    },
+    {
+      "route": "/ar/brands/mercedes-benz-service-dubai",
+      "viewport": "narrow",
+      "faqClickOpens": true,
+      "faqKeyboardEnterCloses": true,
+      "answerLabelled": true,
+      "emptyIssueRejected": true,
+      "invalidCallbackRejected": true,
+      "validDraftPreparedInStub": true,
+      "brandContextPreserved": true,
+      "privateValuesExcludedFromAnalytics": true,
+      "optionalPersonalDetailsAccepted": true,
+      "noConfirmedEnquiryClaim": true
+    },
+    {
+      "route": "/brands/bmw-service-dubai",
+      "viewport": "narrow",
+      "faqClickOpens": true,
+      "faqKeyboardEnterCloses": true,
+      "answerLabelled": true,
+      "emptyIssueRejected": true,
+      "invalidCallbackRejected": true,
+      "validDraftPreparedInStub": true,
+      "brandContextPreserved": true,
+      "privateValuesExcludedFromAnalytics": true,
+      "optionalPersonalDetailsAccepted": true,
+      "noConfirmedEnquiryClaim": true
+    },
+    {
+      "route": "/ar/brands/bmw-service-dubai",
+      "viewport": "narrow",
+      "faqClickOpens": true,
+      "faqKeyboardEnterCloses": true,
+      "answerLabelled": true,
+      "emptyIssueRejected": true,
+      "invalidCallbackRejected": true,
+      "validDraftPreparedInStub": true,
+      "brandContextPreserved": true,
+      "privateValuesExcludedFromAnalytics": true,
+      "optionalPersonalDetailsAccepted": true,
+      "noConfirmedEnquiryClaim": true
+    }
+  ],
+  "noJavaScript": [
+    {
+      "route": "/brands/rolls-royce-service-dubai",
+      "passed": true,
+      "h1Visible": true,
+      "bodyCharacters": 10630,
+      "faqAnswersInHtml": 10,
+      "internalLinks": 39,
+      "heroContactLinks": true
+    },
+    {
+      "route": "/ar/brands/rolls-royce-service-dubai",
+      "passed": true,
+      "h1Visible": true,
+      "bodyCharacters": 7632,
+      "faqAnswersInHtml": 5,
+      "internalLinks": 36,
+      "heroContactLinks": true
+    },
+    {
+      "route": "/brands/lamborghini-service-dubai",
+      "passed": true,
+      "h1Visible": true,
+      "bodyCharacters": 9291,
+      "faqAnswersInHtml": 10,
+      "internalLinks": 42,
+      "heroContactLinks": true
+    },
+    {
+      "route": "/ar/brands/lamborghini-service-dubai",
+      "passed": true,
+      "h1Visible": true,
+      "bodyCharacters": 7759,
+      "faqAnswersInHtml": 5,
+      "internalLinks": 36,
+      "heroContactLinks": true
+    },
+    {
+      "route": "/brands/volkswagen-service-dubai",
+      "passed": true,
+      "h1Visible": true,
+      "bodyCharacters": 11356,
+      "faqAnswersInHtml": 6,
+      "internalLinks": 38,
+      "heroContactLinks": true
+    },
+    {
+      "route": "/ar/brands/volkswagen-service-dubai",
+      "passed": true,
+      "h1Visible": true,
+      "bodyCharacters": 7703,
+      "faqAnswersInHtml": 5,
+      "internalLinks": 36,
+      "heroContactLinks": true
+    },
+    {
+      "route": "/brands/mercedes-benz-service-dubai",
+      "passed": true,
+      "h1Visible": true,
+      "bodyCharacters": 21012,
+      "faqAnswersInHtml": 11,
+      "internalLinks": 71,
+      "heroContactLinks": true
+    },
+    {
+      "route": "/ar/brands/mercedes-benz-service-dubai",
+      "passed": true,
+      "h1Visible": true,
+      "bodyCharacters": 8785,
+      "faqAnswersInHtml": 6,
+      "internalLinks": 27,
+      "heroContactLinks": true
+    },
+    {
+      "route": "/brands/bmw-service-dubai",
+      "passed": true,
+      "h1Visible": true,
+      "bodyCharacters": 14303,
+      "faqAnswersInHtml": 11,
+      "internalLinks": 54,
+      "heroContactLinks": true
+    },
+    {
+      "route": "/ar/brands/bmw-service-dubai",
+      "passed": true,
+      "h1Visible": true,
+      "bodyCharacters": 7369,
+      "faqAnswersInHtml": 5,
+      "internalLinks": 36,
+      "heroContactLinks": true
+    }
+  ],
+  "screenshots": [
+    "outputs/five-brand-service-2026-10-19/conversion/browser/rolls-royce-service-dubai-en-desktop-hero.png",
+    "outputs/five-brand-service-2026-10-19/conversion/browser/rolls-royce-service-dubai-ar-desktop-hero.png",
+    "outputs/five-brand-service-2026-10-19/conversion/browser/lamborghini-service-dubai-en-desktop-hero.png",
+    "outputs/five-brand-service-2026-10-19/conversion/browser/lamborghini-service-dubai-ar-desktop-hero.png",
+    "outputs/five-brand-service-2026-10-19/conversion/browser/volkswagen-service-dubai-en-desktop-hero.png",
+    "outputs/five-brand-service-2026-10-19/conversion/browser/volkswagen-service-dubai-ar-desktop-hero.png",
+    "outputs/five-brand-service-2026-10-19/conversion/browser/mercedes-benz-service-dubai-en-desktop-hero.png",
+    "outputs/five-brand-service-2026-10-19/conversion/browser/mercedes-benz-service-dubai-ar-desktop-hero.png",
+    "outputs/five-brand-service-2026-10-19/conversion/browser/bmw-service-dubai-en-desktop-hero.png",
+    "outputs/five-brand-service-2026-10-19/conversion/browser/bmw-service-dubai-ar-desktop-hero.png",
+    "outputs/five-brand-service-2026-10-19/conversion/browser/rolls-royce-service-dubai-en-mobile-hero.png",
+    "outputs/five-brand-service-2026-10-19/conversion/browser/rolls-royce-service-dubai-en-mobile-faq.png",
+    "outputs/five-brand-service-2026-10-19/conversion/browser/rolls-royce-service-dubai-en-mobile-form.png",
+    "outputs/five-brand-service-2026-10-19/conversion/browser/rolls-royce-service-dubai-ar-mobile-hero.png",
+    "outputs/five-brand-service-2026-10-19/conversion/browser/rolls-royce-service-dubai-ar-mobile-faq.png",
+    "outputs/five-brand-service-2026-10-19/conversion/browser/rolls-royce-service-dubai-ar-mobile-form.png",
+    "outputs/five-brand-service-2026-10-19/conversion/browser/lamborghini-service-dubai-en-mobile-hero.png",
+    "outputs/five-brand-service-2026-10-19/conversion/browser/lamborghini-service-dubai-en-mobile-faq.png",
+    "outputs/five-brand-service-2026-10-19/conversion/browser/lamborghini-service-dubai-en-mobile-form.png",
+    "outputs/five-brand-service-2026-10-19/conversion/browser/lamborghini-service-dubai-ar-mobile-hero.png",
+    "outputs/five-brand-service-2026-10-19/conversion/browser/lamborghini-service-dubai-ar-mobile-faq.png",
+    "outputs/five-brand-service-2026-10-19/conversion/browser/lamborghini-service-dubai-ar-mobile-form.png",
+    "outputs/five-brand-service-2026-10-19/conversion/browser/volkswagen-service-dubai-en-mobile-hero.png",
+    "outputs/five-brand-service-2026-10-19/conversion/browser/volkswagen-service-dubai-en-mobile-faq.png",
+    "outputs/five-brand-service-2026-10-19/conversion/browser/volkswagen-service-dubai-en-mobile-form.png",
+    "outputs/five-brand-service-2026-10-19/conversion/browser/volkswagen-service-dubai-ar-mobile-hero.png",
+    "outputs/five-brand-service-2026-10-19/conversion/browser/volkswagen-service-dubai-ar-mobile-faq.png",
+    "outputs/five-brand-service-2026-10-19/conversion/browser/volkswagen-service-dubai-ar-mobile-form.png",
+    "outputs/five-brand-service-2026-10-19/conversion/browser/mercedes-benz-service-dubai-en-mobile-hero.png",
+    "outputs/five-brand-service-2026-10-19/conversion/browser/mercedes-benz-service-dubai-en-mobile-faq.png",
+    "outputs/five-brand-service-2026-10-19/conversion/browser/mercedes-benz-service-dubai-en-mobile-form.png",
+    "outputs/five-brand-service-2026-10-19/conversion/browser/mercedes-benz-service-dubai-ar-mobile-hero.png",
+    "outputs/five-brand-service-2026-10-19/conversion/browser/mercedes-benz-service-dubai-ar-mobile-faq.png",
+    "outputs/five-brand-service-2026-10-19/conversion/browser/mercedes-benz-service-dubai-ar-mobile-form.png",
+    "outputs/five-brand-service-2026-10-19/conversion/browser/bmw-service-dubai-en-mobile-hero.png",
+    "outputs/five-brand-service-2026-10-19/conversion/browser/bmw-service-dubai-en-mobile-faq.png",
+    "outputs/five-brand-service-2026-10-19/conversion/browser/bmw-service-dubai-en-mobile-form.png",
+    "outputs/five-brand-service-2026-10-19/conversion/browser/bmw-service-dubai-ar-mobile-hero.png",
+    "outputs/five-brand-service-2026-10-19/conversion/browser/bmw-service-dubai-ar-mobile-faq.png",
+    "outputs/five-brand-service-2026-10-19/conversion/browser/bmw-service-dubai-ar-mobile-form.png",
+    "outputs/five-brand-service-2026-10-19/conversion/browser/rolls-royce-service-dubai-en-narrow-hero.png",
+    "outputs/five-brand-service-2026-10-19/conversion/browser/rolls-royce-service-dubai-ar-narrow-hero.png",
+    "outputs/five-brand-service-2026-10-19/conversion/browser/lamborghini-service-dubai-en-narrow-hero.png",
+    "outputs/five-brand-service-2026-10-19/conversion/browser/lamborghini-service-dubai-ar-narrow-hero.png",
+    "outputs/five-brand-service-2026-10-19/conversion/browser/volkswagen-service-dubai-en-narrow-hero.png",
+    "outputs/five-brand-service-2026-10-19/conversion/browser/volkswagen-service-dubai-ar-narrow-hero.png",
+    "outputs/five-brand-service-2026-10-19/conversion/browser/mercedes-benz-service-dubai-en-narrow-hero.png",
+    "outputs/five-brand-service-2026-10-19/conversion/browser/mercedes-benz-service-dubai-ar-narrow-hero.png",
+    "outputs/five-brand-service-2026-10-19/conversion/browser/bmw-service-dubai-en-narrow-hero.png",
+    "outputs/five-brand-service-2026-10-19/conversion/browser/bmw-service-dubai-ar-narrow-hero.png"
+  ],
+  "failures": [],
+  "runtimeOrHydrationErrors": [],
+  "failedLocalResponses": [],
+  "unexpectedPopups": [],
+  "blockedExternalRequests": {
+    "https://www.googletagmanager.com": 70,
+    "https://fonts.googleapis.com": 40,
+    "https://images.unsplash.com": 32
+  },
+  "blockedLocalWrites": [],
+  "safety": "Only local GET/HEAD requests are allowed. External contact navigation is prevented. window.open is stubbed, so no WhatsApp draft is opened in a real app and no message or enquiry is sent.",
+  "limitations": "Tests local rendered output and client behavior. Does not verify WhatsApp delivery, connected calls, GA4 ingestion, CRM receipt, confirmed enquiries or field Core Web Vitals.",
+  "finishedAt": "2026-10-19T06:16:13.364Z"
+}

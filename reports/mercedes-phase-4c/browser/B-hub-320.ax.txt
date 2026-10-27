@@ -1,0 +1,350 @@
+Browser tab: 17, Title: "Phase 4C release-b local responsive QA 320px", URL: "http://127.0.0.1:5202/__phase4_frame?width=320&height=844&path=/brands/mercedes-benz-service-dubai".
+The following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.
+~1 AXWebArea Phase 4C release-b local responsive QA 320px, URL: 127.0.0.1:5202/__phase4_frame?width=320&height=844&path=/brands/mercedes-benz-service-dubai
+~	2 text LOCAL QA release-b passive — 320 × 844 CSS pixels, desktop browser engine. Contact intercepted; analytics blocked.
+~	3 container Mercedes release-b 320 pixel responsive viewport
+~	421 text {
+  "url": "http://127.0.0.1:5202/brands/mercedes-benz-service-dubai",
+  "path": "/brands/mercedes-benz-service-dubai",
+  "hash": "",
+  "title": "Mercedes Service Dubai | Maintenance & Repair | DIGI-TEC",
+  "readyState": "complete",
+  "width": 320,
+  "height": 844,
+  "clientWidth": 312,
+  "scrollWidth": 312,
+  "rootPresent": true,
+  "bodyPresent": true,
+  "active": {
+    "tag": "BODY",
+    "label": "<iframe src=\"https://www.googletagmanager.com/ns.html?id=GTM-T3GVSPND\"\n    height=\"0\" width=\"0\" style=\"display:none;visibility:hidden\"></iframe>\n    \n    MenuENEnglishالعربيةAbout UsServicesBrandsGADV",
+    "href": null
+  },
+  "scripts": [
+    {
+      "src": "https://www.googletagmanager.com/gtm.js?id=GTM-T3GVSPND",
+      "type": null,
+      "qa": false
+    },
+    {
+      "src": null,
+      "type": null,
+      "qa": true
+    },
+    {
+      "src": null,
+      "type": null,
+      "qa": false
+    },
+    {
+      "src": null,
+      "type": "application/ld+json",
+      "qa": false
+    },
+    {
+      "src": "https://www.googletagmanager.com/gtag/js?id=G-4TRCEJSY4S",
+      "type": null,
+      "qa": false
+    },
+    {
+      "src": null,
+      "type": null,
+      "qa": false
+    },
+    {
+      "src": "http://127.0.0.1:5202/assets/index-DxoEjBa9.js",
+      "type": "module",
+      "qa": false
+    },
+    {
+      "src": null,
+      "type": "application/ld+json",
+      "qa": false
+    }
+  ],
+  "resources": [
+    {
+      "name": "http://127.0.0.1:5202/assets/index-CumuXRQA.css",
+      "startTime": 22.600000023841858,
+      "duration": 13.100000023841858
+    },
+    {
+      "name": "http://127.0.0.1:5202/assets/index-DxoEjBa9.js",
+      "startTime": 22.600000023841858,
+      "duration": 13.799999952316284
+    },
+    {
+      "name": "https://www.googletagmanager.com/gtm.js?id=GTM-T3GVSPND",
+      "startTime": 24.5,
+      "duration": 0
+    }
+  ],
+  "focus": {
+    "tag": "BODY",
+    "text": "<iframe src=\"https://www.googletagmanager.com/ns.html?id=GTM-T3GVSPND\"\n    height=\"0\" width=\"0\" style=\"display:none;visibility:hidden\"></iframe>\n    \n    MenuENEnglishالعربيةAbout ",
+    "href": null,
+    "focusVisible": false,
+    "outline": "rgb(248, 248, 248) none 2.66667px",
+    "boxShadow": "none",
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 312,
+      "height": 25475.51171875,
+      "top": 0,
+      "right": 312,
+      "bottom": 25475.51171875,
+      "left": 0
+    }
+  }
+}
+~	422 text {
+  "sequence": 9,
+  "clientAt": "2026-10-26T11:05:16.651Z",
+  "performanceMs": 198.60000002384186,
+  "startedAt": "2026-10-26T11:05:16.476Z",
+  "session": "release-b-repeats",
+  "option": "release-b",
+  "mode": "passive",
+  "kind": "csp-block",
+  "detail": {
+    "blockedURI": "eval",
+    "directive": "script-src",
+    "sourceFile": "http://127.0.0.1:5202/assets/BrandPage-BnKA0VjP.js",
+    "line": 2,
+    "column": 2552
+  },
+  "state": {
+    "url": "http://127.0.0.1:5202/brands/mercedes-benz-service-dubai",
+    "path": "/brands/mercedes-benz-service-dubai",
+    "hash": "",
+    "title": "Mercedes Service Dubai | Maintenance & Repair | DIGI-TEC",
+    "readyState": "complete",
+    "width": 320,
+    "height": 844,
+    "clientWidth": 312,
+    "scrollWidth": 312,
+    "rootPresent": true,
+    "bodyPresent": true,
+    "active": {
+      "tag": "BODY",
+      "label": "<iframe src=\"https://www.googletagmanager.com/ns.html?id=GTM-T3GVSPND\"\n    height=\"0\" width=\"0\" style=\"display:none;visibility:hidden\"></iframe>\n    \n    MenuENEnglishالعربيةAbout UsServicesBrandsGADV",
+      "href": null
+    },
+    "scripts": [
+      {
+        "src": "https://www.googletagmanager.com/gtm.js?id=GTM-T3GVSPND",
+        "type": null,
+        "qa": false
+      },
+      {
+        "src": null,
+        "type": null,
+        "qa": true
+      },
+      {
+        "src": null,
+        "type": null,
+        "qa": false
+      },
+      {
+        "src": null,
+        "type": "application/ld+json",
+        "qa": false
+      },
+      {
+        "src": "https://www.googletagmanager.com/gtag/js?id=G-4TRCEJSY4S",
+        "type": null,
+        "qa": false
+      },
+      {
+        "src": null,
+        "type": null,
+        "qa": false
+      },
+      {
+        "src": "http://127.0.0.1:5202/assets/index-DxoEjBa9.js",
+        "type": "module",
+        "qa": false
+      },
+      {
+        "src": null,
+        "type": "application/ld+json",
+        "qa": false
+      }
+    ],
+    "resources": [
+      {
+        "name": "http://127.0.0.1:5202/assets/index-CumuXRQA.css",
+        "startTime": 22.600000023841858,
+        "duration": 13.100000023841858
+      },
+      {
+        "name": "http://127.0.0.1:5202/assets/index-DxoEjBa9.js",
+        "startTime": 22.600000023841858,
+        "duration": 13.799999952316284
+      },
+      {
+        "name": "https://www.googletagmanager.com/gtm.js?id=GTM-T3GVSPND",
+        "startTime": 24.5,
+        "duration": 0
+      },
+      {
+        "name": "http://127.0.0.1:5202/assets/BrandPage-BnKA0VjP.js",
+        "startTime": 144.70000004768372,
+        "duration": 11
+      },
+      {
+        "name": "http://127.0.0.1:5202/assets/Footer-CY4L5FE4.js",
+        "startTime": 144.79999995231628,
+        "duration": 10.100000023841858
+      },
+      {
+        "name": "http://127.0.0.1:5202/assets/brands-1Nq9qULN.js",
+        "startTime": 144.79999995231628,
+        "duration": 11.400000095367432
+      },
+      {
+        "name": "http://127.0.0.1:5202/assets/mercedes-amg-engine-repair-dubai-DVcJbu9t.js",
+        "startTime": 144.79999995231628,
+        "duration": 11.700000047683716
+      },
+      {
+        "name": "http://127.0.0.1:5202/assets/services-0_uFGZym.js",
+        "startTime": 144.79999995231628,
+        "duration": 11.900000095367432
+      },
+      {
+        "name": "http://127.0.0.1:5202/assets/suspension-repair-dubai-ChRPM65Z.js",
+        "startTime": 144.89999997615814,
+        "duration": 11.200000047683716
+      },
+      {
+        "name": "http://127.0.0.1:5202/assets/ceramicCoatingContent-BIl558B6.js",
+        "startTime": 144.89999997615814,
+        "duration": 12.700000047683716
+      },
+      {
+        "name": "http://127.0.0.1:5202/assets/ppfContent-BvR9pZPp.js",
+        "startTime": 145,
+        "duration": 14.200000047683716
+      },
+      {
+        "name": "http://127.0.0.1:5202/assets/paintCorrectionContent-Co45hanX.js",
+        "startTime": 145,
+        "duration": 15.200000047683716
+      },
+      {
+        "name": "http://127.0.0.1:5202/assets/paintProtectionContent-LrpIjxW-.js",
+        "startTime": 145,
+        "duration": 21.600000023841858
+      },
+      {
+        "name": "http://127.0.0.1:5202/assets/accordion-CEnZUARK.js",
+        "startTime": 145.10000002384186,
+        "duration": 21.299999952316284
+      },
+      {
+        "name": "http://127.0.0.1:5202/assets/index-DWXMM0c_.js",
+        "startTime": 145.20000004768372,
+        "duration": 21.799999952316284
+      },
+      {
+        "name": "http://127.0.0.1:5202/assets/message-circle-DhJ1-ZHk.js",
+        "startTime": 145.20000004768372,
+        "duration": 21.799999952316284
+      },
+      {
+        "name": "http://127.0.0.1:5202/assets/GoogleReviews-MsFnWr-L.js",
+        "startTime": 145.29999995231628,
+        "duration": 22.200000047683716
+      },
+      {
+        "name": "http://127.0.0.1:5202/assets/Reveal-BzHQa5cW.js",
+        "startTime": 145.29999995231628,
+        "duration": 22.100000023841858
+      },
+      {
+        "name": "http://127.0.0.1:5202/assets/arrow-up-right-B8EOq3V6.js",
+        "startTime": 145.29999995231628,
+        "duration": 25.40000009536743
+      },
+      {
+        "name": "http://127.0.0.1:5202/assets/arrow-right-D7cstt99.js",
+        "startTime": 145.39999997615814,
+        "duration": 24.899999976158142
+      },
+      {
+        "name": "http://127.0.0.1:5202/assets/arrow-left-CMPDGjIf.js",
+        "startTime": 145.39999997615814,
+        "duration": 25.300000071525574
+      },
+      {
+        "name": "http://127.0.0.1:5202/assets/TrustBar-CFRNELZA.js",
+        "startTime": 145.5,
+        "duration": 25.799999952316284
+      },
+      {
+        "name": "http://127.0.0.1:5202/assets/ar-brands-C-3Hm3cj.js",
+        "startTime": 145.5,
+        "duration": 26.200000047683716
+      },
+      {
+        "name": "http://127.0.0.1:5202/assets/ar-services-BZvtHYun.js",
+        "startTime": 145.5,
+        "duration": 28.700000047683716
+      },
+      {
+        "name": "http://127.0.0.1:5202/assets/astonMartinHubContent-Bu7YC7Ch.js",
+        "startTime": 145.5,
+        "duration": 25.600000023841858
+      },
+      {
+        "name": "http://127.0.0.1:5202/assets/porsche-workshop-dubai-BsN5HQ-W.js",
+        "startTime": 145.5,
+        "duration": 29.700000047683716
+      },
+      {
+        "name": "http://127.0.0.1:5202/assets/g63-brabus-g800-finished-front-eHldKgiA.js",
+        "startTime": 145.5,
+        "duration": 29.700000047683716
+      },
+      {
+        "name": "http://127.0.0.1:5202/assets/lamborghini-urus-workshop-dubai-CLM9G8gj.js",
+        "startTime": 145.60000002384186,
+        "duration": 29.199999928474426
+      },
+      {
+        "name": "http://127.0.0.1:5202/assets/mercedesModelPages-C5MlnnLW.js",
+        "startTime": 145.60000002384186,
+        "duration": 29.799999952316284
+      },
+      {
+        "name": "http://127.0.0.1:5202/assets/mercedesProblemGuides-GbL9AgyS.js",
+        "startTime": 145.70000004768372,
+        "duration": 29.5
+      },
+      {
+        "name": "http://127.0.0.1:5202/assets/bmwModelPages-DjCI7eb2.js",
+        "startTime": 145.70000004768372,
+        "duration": 31.699999928474426
+      },
+      {
+        "name": "http://127.0.0.1:5202/assets/phone-DY6SfjTW.js",
+        "startTime": 145.70000004768372,
+        "duration": 34.199999928474426
+      },
+      {
+        "name": "http://127.0.0.1:5202/assets/map-pin-DdkUiQjA.js",
+        "startTime": 145.70000004768372,
+        "duration": 35.59999990463257
+      },
+      {
+        "name": "http://127.0.0.1:5202/assets/circle-check-DvOuxAmD.js",
+        "startTime": 145.79999995231628,
+        "duration": 35.40000009536743
+      }
+    ]
+  }
+}
+The focused UI element is 1 AXWebArea Phase 4C release-b local responsive QA 320px, URL: 127.0.0.1:5202/__phase4_frame?width=320&height=844&path=/brands/mercedes-benz-service-dubai

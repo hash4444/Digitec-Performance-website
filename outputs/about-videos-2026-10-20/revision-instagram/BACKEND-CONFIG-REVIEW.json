@@ -1,0 +1,34 @@
+{
+  "result": "EXCLUDE_INVALID_GENERATED_BACKEND_FROM_PUSH",
+  "reviewType": "read-only backend/config audit",
+  "skill": "C:/Users/ADMIN/.codex/plugins/cache/openai-curated-remote/supabase/1.0.0/skills/supabase/SKILL.md",
+  "backend": {
+    "path": "supabase/functions/mcp/index.ts",
+    "sha256": "dae4eb5896ab1e38ba0e040c41c23dc986ee9ec2f729e8b91548be0658091a43",
+    "problem": "Generated replacement imports a machine-local Windows source path prefixed npm:, which is not a resolvable portable npm package specifier in deployed Deno/Supabase.",
+    "recommendation": "Preserve local artifact; exclude from release staging; do not overwrite or reset it.",
+    "productionRuntimeTestPerformed": false,
+    "sourceEdited": false
+  },
+  "deployment": {
+    "githubWorkflowPresent": false,
+    "packageDeployScriptPresent": false,
+    "wranglerConfig": "cloudflare/wrangler.production-seo.jsonc",
+    "wranglerScope": "edge routing only; no build/assets/Git trigger",
+    "documentedFlow": "Git syncs Lovable source; explicit Lovable Share -> Publish; separate authorized Worker publication",
+    "repositoryConfiguredPushDeploymentFound": false,
+    "externalDashboardWebhooksVerified": false
+  },
+  "references": [
+    "README.md",
+    "docs/seo/mercedes-release-deployment.md",
+    "vite.config.ts",
+    "https://docs.deno.com/runtime/fundamentals/modules/"
+  ],
+  "docsCheck": {
+    "supabaseChangelogAttempted": true,
+    "changelogFetch": "web tool unsupported text/markdown content-type; shell fallback DNS unavailable",
+    "denoModuleDocsRead": true
+  },
+  "recommendation": "Proceed with approved website/media/Mercedes source after root QA; leave generated invalid Supabase artifact unstaged and disclose exclusion."
+}

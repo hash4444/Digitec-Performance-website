@@ -1,0 +1,96 @@
+{
+  "capturedAt": "2026-10-20T05:27:39.462Z",
+  "head": "2971301bb37d38f4785844af067eebd55f9f6dda",
+  "files": [
+    {
+      "file": "src/pages/BrandPage.tsx",
+      "sha256": "231cb000c99d7387629ffa409dfe99917fbd7ee3435f6ec542ecd933953de8b1",
+      "bytes": 136730
+    },
+    {
+      "file": "src/components/MercedesMaintenanceScope.tsx",
+      "sha256": "914256ae6d61f6e86257fc3cb1e70b1e9c44100155a8ea48240df276d8037a69",
+      "bytes": 6473
+    },
+    {
+      "file": "src/components/BrandBookingForm.tsx",
+      "sha256": "13868dd66bc8f66456297475c4580ebece1af9cdc459807ab7c5f333ce6984b6",
+      "bytes": 6683
+    },
+    {
+      "file": "src/data/brands.ts",
+      "sha256": "bc5ff647c044a7ea4b800cb83738ebdc6ee8bcab720bf6af4e8c2f222a351464",
+      "bytes": 57120
+    },
+    {
+      "file": "src/i18n/ar-brands.ts",
+      "sha256": "70295d4699ca0be73a18c1bf7efc11d65db29e64f6937667e3b5016cd5ddff4b",
+      "bytes": 27105
+    },
+    {
+      "file": "src/pages/Services.tsx",
+      "sha256": "b70b5b12101ec775c572a75e36faa4bdc66b76b3dbe7f6a8170f6b86f19fe6cb",
+      "bytes": 12465
+    },
+    {
+      "file": "src/components/BrandsWeServe.tsx",
+      "sha256": "5aa561dff7df33c281ffab38618007907014f7a1e9cf1870d19f66a5aa0adeed",
+      "bytes": 2741
+    },
+    {
+      "file": "src/components/WhatWeDo.tsx",
+      "sha256": "2e9ed87ddfa66d96bd525d90b331e6fec4b6bcfff070044c487d209a046ae585",
+      "bytes": 4550
+    },
+    {
+      "file": "src/components/ServiceGrid.tsx",
+      "sha256": "c9bc1c58050342cc70ff9e0afcb433ea047b6bce4869d263b40ef0122a5d9962",
+      "bytes": 4717
+    },
+    {
+      "file": "src/data/mercedesMaintenanceGuide.ts",
+      "sha256": "d1cfe5bd70e602a2d423daf23ea1adc06b980178c52caaf0d0ba3ff59ab6a6fd",
+      "bytes": 14725
+    },
+    {
+      "file": "src/data/mercedesServiceContent.ts",
+      "sha256": "7ebb6013761160e8bebc48e3f3080ceae2e3fb330d4fa6edf86f02974481718d",
+      "bytes": 44962
+    },
+    {
+      "file": "src/data/mercedesServices.ts",
+      "sha256": "1e4a46798b668010bd23b679ff9cb5c4ce53189874d5d332509bbb16fdf4e002",
+      "bytes": 37965
+    },
+    {
+      "file": "src/data/mercedesModelPages.ts",
+      "sha256": "385f85ad204220cdb9358eef7818edca7f5385f503edd4619a0191129c66e47d",
+      "bytes": 92968
+    },
+    {
+      "file": "src/data/mercedesCaseStudies.ts",
+      "sha256": "7ecf25adba6ad50e351fc998eaefbb4d662a1567bf2da6f004093bde166535bd",
+      "bytes": 1352
+    },
+    {
+      "file": "src/lib/schema.ts",
+      "sha256": "e835ba2223f6a3102a56af1e774d44196c112e03151b444a2896bc6dea6c4bd3",
+      "bytes": 12864
+    },
+    {
+      "file": "src/hooks/use-seo.ts",
+      "sha256": "f33665f055651fa108700bf27b9d89a14916f8bcb4690ba2c1664244820b10bc",
+      "bytes": 7873
+    },
+    {
+      "file": "scripts/prerender-seo.mjs",
+      "sha256": "622a03b65c264db349b05579cf8a406150c0366dfe82333229bbba37f256717a",
+      "bytes": 95051
+    },
+    {
+      "file": "scripts/validate-query-release.mjs",
+      "sha256": "c918eabe56f3929228719466b76453b9d5344a84385c96bea79d542bca9407b3",
+      "bytes": 7678
+    }
+  ]
+}

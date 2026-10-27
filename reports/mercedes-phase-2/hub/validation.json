@@ -1,0 +1,28 @@
+{
+  "validatedAt": "2026-10-26T06:45:09.086Z",
+  "patchCheck": {
+    "command": "git apply --check -- reports/mercedes-phase-2/hub/mercedes-hub-minimal.patch",
+    "exitCode": 0,
+    "output": ""
+  },
+  "typescriptTsxParse": {
+    "parseDiagnostics": [],
+    "passed": true,
+    "limitation": "Syntax parse only; no full project typecheck, build, route render or mobile QA run."
+  },
+  "proposal": {
+    "file": "src/pages/BrandPage.tsx",
+    "changedLines": [
+      1004,
+      1324
+    ],
+    "originalSha256": "f5d68037c056bb1f32d73cc5c009e066287da0ab225267b9606d834a23002c33",
+    "proposedSha256": "5d0481bdbe3fd47ca0152e12fa9a943596f034ca3ec4141924d80eee05e934c5",
+    "newContextualLinks": [
+      "/services/mercedes-diagnostics-dubai",
+      "/services/mercedes-mechanical-repair-dubai"
+    ]
+  },
+  "sourceByteHashesUnchanged": true,
+  "productionChanges": false
+}

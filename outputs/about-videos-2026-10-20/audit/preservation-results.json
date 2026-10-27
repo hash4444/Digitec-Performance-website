@@ -1,0 +1,60 @@
+{
+  "checkedAt": "2026-10-20T06:26:30.000Z",
+  "head": "2971301bb37d38f4785844af067eebd55f9f6dda",
+  "branch": "main",
+  "stagedFiles": [],
+  "headUnchanged": true,
+  "branchUnchanged": true,
+  "indexUnchanged": true,
+  "results": [
+    {
+      "file": "src/components/MercedesMaintenanceScope.tsx",
+      "expectedSha256": "1e6728a7de40ef56f7bf77af495784cff38c34cd9a653d6777757fee62616aff",
+      "actualSha256": "1e6728a7de40ef56f7bf77af495784cff38c34cd9a653d6777757fee62616aff",
+      "pass": true
+    },
+    {
+      "file": "src/lib/route-manifest.ts",
+      "expectedSha256": "a05194b6899972cb91945af2ea0c0a3fd836055a5d8c52d87fc3f9a6a219d0d5",
+      "actualSha256": "a05194b6899972cb91945af2ea0c0a3fd836055a5d8c52d87fc3f9a6a219d0d5",
+      "pass": true
+    },
+    {
+      "file": "src/pages/BrandPage.tsx",
+      "expectedSha256": "f5d68037c056bb1f32d73cc5c009e066287da0ab225267b9606d834a23002c33",
+      "actualSha256": "f5d68037c056bb1f32d73cc5c009e066287da0ab225267b9606d834a23002c33",
+      "pass": true
+    },
+    {
+      "file": "src/pages/Services.tsx",
+      "expectedSha256": "77e7cc3aa83277602271ec3106506d4f360bd4fb6737445a5a1235a435ed09d0",
+      "actualSha256": "77e7cc3aa83277602271ec3106506d4f360bd4fb6737445a5a1235a435ed09d0",
+      "pass": true
+    },
+    {
+      "file": "src/components/MercedesServiceBookingForm.tsx",
+      "expectedSha256": "c45f5468d2361b5b2de37edee90fff8b1d0cd145e2379439c8aad973fd1291fd",
+      "actualSha256": "c45f5468d2361b5b2de37edee90fff8b1d0cd145e2379439c8aad973fd1291fd",
+      "pass": true
+    },
+    {
+      "file": "src/data/mercedesServiceCampaign.ts",
+      "expectedSha256": "98012343a3f8450ba6a34bb094425beaa4049932d534d9115d0b373ded32c8dd",
+      "actualSha256": "98012343a3f8450ba6a34bb094425beaa4049932d534d9115d0b373ded32c8dd",
+      "pass": true
+    },
+    {
+      "file": "supabase/functions/mcp/index.ts",
+      "expectedSha256": "dae4eb5896ab1e38ba0e040c41c23dc986ee9ec2f729e8b91548be0658091a43",
+      "actualSha256": "dae4eb5896ab1e38ba0e040c41c23dc986ee9ec2f729e8b91548be0658091a43",
+      "pass": true
+    },
+    {
+      "file": "outputs/seo-2026-09-16/master-validation.json",
+      "expectedSha256": "6c164ea2102776061f84fd6fa16963963552f33b9406fc65d7e9f2aaa41cbd12",
+      "actualSha256": "6c164ea2102776061f84fd6fa16963963552f33b9406fc65d7e9f2aaa41cbd12",
+      "pass": true
+    }
+  ],
+  "pass": true
+}

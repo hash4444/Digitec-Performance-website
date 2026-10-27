@@ -1,0 +1,183 @@
+{
+  "passed": true,
+  "sourceSha256": "0879f73cdf5434c66dbaaee251036a6af2bd3668077a7c004b6a0536c54cf9dc",
+  "cases": [
+    {
+      "route": "/services/paint-protection-dubai",
+      "width": 320,
+      "theme": "dark",
+      "overflow": false
+    },
+    {
+      "route": "/services/paint-protection-dubai",
+      "width": 320,
+      "theme": "light",
+      "overflow": false
+    },
+    {
+      "route": "/services/paint-protection-dubai",
+      "width": 390,
+      "theme": "dark",
+      "overflow": false
+    },
+    {
+      "route": "/services/paint-protection-dubai",
+      "width": 390,
+      "theme": "light",
+      "overflow": false
+    },
+    {
+      "route": "/services/paint-protection-dubai",
+      "width": 1440,
+      "theme": "dark",
+      "overflow": false
+    },
+    {
+      "route": "/services/paint-protection-dubai",
+      "width": 1440,
+      "theme": "light",
+      "overflow": false
+    },
+    {
+      "route": "/ar/services/paint-protection-dubai",
+      "width": 320,
+      "theme": "dark",
+      "overflow": false
+    },
+    {
+      "route": "/ar/services/paint-protection-dubai",
+      "width": 320,
+      "theme": "light",
+      "overflow": false
+    },
+    {
+      "route": "/ar/services/paint-protection-dubai",
+      "width": 390,
+      "theme": "dark",
+      "overflow": false
+    },
+    {
+      "route": "/ar/services/paint-protection-dubai",
+      "width": 390,
+      "theme": "light",
+      "overflow": false
+    },
+    {
+      "route": "/ar/services/paint-protection-dubai",
+      "width": 1440,
+      "theme": "dark",
+      "overflow": false
+    },
+    {
+      "route": "/ar/services/paint-protection-dubai",
+      "width": 1440,
+      "theme": "light",
+      "overflow": false
+    },
+    {
+      "route": "/ar/services/paint-protection-film",
+      "width": 320,
+      "theme": "dark",
+      "overflow": false
+    },
+    {
+      "route": "/ar/services/paint-protection-film",
+      "width": 320,
+      "theme": "light",
+      "overflow": false
+    },
+    {
+      "route": "/ar/services/paint-protection-film",
+      "width": 390,
+      "theme": "dark",
+      "overflow": false
+    },
+    {
+      "route": "/ar/services/paint-protection-film",
+      "width": 390,
+      "theme": "light",
+      "overflow": false
+    },
+    {
+      "route": "/ar/services/paint-protection-film",
+      "width": 1440,
+      "theme": "dark",
+      "overflow": false
+    },
+    {
+      "route": "/ar/services/paint-protection-film",
+      "width": 1440,
+      "theme": "light",
+      "overflow": false
+    },
+    {
+      "route": "/ar/services/ceramic-coating",
+      "width": 320,
+      "theme": "dark",
+      "overflow": false
+    },
+    {
+      "route": "/ar/services/ceramic-coating",
+      "width": 320,
+      "theme": "light",
+      "overflow": false
+    },
+    {
+      "route": "/ar/services/ceramic-coating",
+      "width": 390,
+      "theme": "dark",
+      "overflow": false
+    },
+    {
+      "route": "/ar/services/ceramic-coating",
+      "width": 390,
+      "theme": "light",
+      "overflow": false
+    },
+    {
+      "route": "/ar/services/ceramic-coating",
+      "width": 1440,
+      "theme": "dark",
+      "overflow": false
+    },
+    {
+      "route": "/ar/services/ceramic-coating",
+      "width": 1440,
+      "theme": "light",
+      "overflow": false
+    }
+  ],
+  "runtimeErrors": [],
+  "events": [
+    [
+      "event",
+      "whatsapp_chat_opened",
+      {
+        "method": "whatsapp",
+        "link_url": "https://wa.me/97143402223",
+        "page_path": "/services/paint-protection-dubai",
+        "cta_placement": "hero",
+        "landing_page": "http://127.0.0.1:5190/services/paint-protection-dubai",
+        "initial_referrer": "direct",
+        "utm_source": "google",
+        "utm_medium": "organic"
+      }
+    ],
+    [
+      "event",
+      "telephone_link_clicked",
+      {
+        "method": "phone",
+        "link_url": "tel:+97143402223",
+        "page_path": "/services/paint-protection-dubai",
+        "cta_placement": "hero",
+        "landing_page": "http://127.0.0.1:5190/services/paint-protection-dubai",
+        "initial_referrer": "direct",
+        "utm_source": "google",
+        "utm_medium": "organic"
+      }
+    ]
+  ],
+  "noJavaScript": "Both hub pages show all content, table and functional native FAQs",
+  "spaNavigation": "Hub to PPF and back; Arabic hub to explicitly English polishing"
+}

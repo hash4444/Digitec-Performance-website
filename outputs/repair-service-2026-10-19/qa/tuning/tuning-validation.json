@@ -1,0 +1,87 @@
+{
+  "passed": true,
+  "routes": 1256,
+  "sitemapCanonicalCount": 1005,
+  "sourceVehicles": 16,
+  "sourceTunedPackages": 67,
+  "publishedTunedPackages": 62,
+  "withheldS63Packages": 5,
+  "withheldDB11Items": 3,
+  "checkedModels": [
+    {
+      "path": "/tuning/mercedes-amg-gt",
+      "vehicles": [
+        "amg-gt-gts",
+        "amg-gtc-gtr"
+      ],
+      "packages": 12
+    },
+    {
+      "path": "/tuning/mercedes-amg-e63",
+      "vehicles": [
+        "e63"
+      ],
+      "packages": 5
+    },
+    {
+      "path": "/tuning/mercedes-amg-g63",
+      "vehicles": [
+        "g63"
+      ],
+      "packages": 5
+    },
+    {
+      "path": "/tuning/mercedes-amg-gt63",
+      "vehicles": [
+        "gt63"
+      ],
+      "packages": 5
+    },
+    {
+      "path": "/tuning/mercedes-amg-s65",
+      "vehicles": [
+        "s65"
+      ],
+      "packages": 5
+    },
+    {
+      "path": "/tuning/mercedes-amg-c63",
+      "vehicles": [
+        "c63-w205"
+      ],
+      "packages": 6
+    },
+    {
+      "path": "/tuning/mercedes-amg-glc63",
+      "vehicles": [
+        "glc63"
+      ],
+      "packages": 5
+    },
+    {
+      "path": "/tuning/aston-martin-db11",
+      "vehicles": [
+        "db11"
+      ],
+      "packages": 5
+    },
+    {
+      "path": "/tuning/lamborghini-urus",
+      "vehicles": [
+        "urus"
+      ],
+      "packages": 4
+    }
+  ],
+  "checks": [
+    "Original 67-package source unchanged; 62 exact public rows in English/Arabic initial HTML",
+    "Five S63 packages withheld; enquiry identity/notice only",
+    "Exactly three DB11 reinforcement items withheld; all other work exact",
+    "GLC63 endpoint notes present in English and Arabic",
+    "Exact source HP, torque, gains, EUR price qualifiers and time",
+    "FAQ visible/schema agreement",
+    "Nine model owners with master and service hub links",
+    "Canonical/sitemap/robots and English-only hreflang",
+    "No stage URLs; invented stage routes return 404; query states retain owner"
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "CheckedAt": "2026-09-08T11:57:41.4813475Z",
+  "SourceSha256": "544cf6819269e25122073c47cf17d95b58885d45e38d9e0e3c5327a2bea9b52b",
+  "ChangedSource": [],
+  "AddedSource": [],
+  "ChangedHtml": [],
+  "ClientUnchanged": true,
+  "BrowserSuites": [
+    {
+      "File": "release-qa.local/integration/browser-results.json",
+      "Passed": true,
+      "Fresh": true
+    },
+    {
+      "File": "release-qa.local/ppf/browser-results.json",
+      "Passed": true,
+      "Fresh": true
+    },
+    {
+      "File": "release-qa.local/ceramic/ceramic-browser-results.json",
+      "Passed": true,
+      "Fresh": true
+    },
+    {
+      "File": "release-qa.local/paint/browser-results.json",
+      "Passed": true,
+      "Fresh": true
+    }
+  ],
+  "Passed": true
+}

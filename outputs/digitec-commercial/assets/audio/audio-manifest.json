@@ -1,0 +1,159 @@
+{
+  "duration_seconds": 35.0,
+  "sample_rate_hz": 48000,
+  "channels": 2,
+  "sample_format": "PCM signed 16-bit little-endian",
+  "bpm": 108.0,
+  "peak_dbfs": -1.5003,
+  "rms_dbfs": -17.6963,
+  "clipped_samples": 0,
+  "finite_samples": true,
+  "dc_mean": [
+    -1.4e-08,
+    -2e-09
+  ],
+  "stereo_correlation": 0.926297,
+  "last_sample": [
+    0.0,
+    0.0
+  ],
+  "one_second_peaks_dbfs": [
+    -4.78,
+    -12.06,
+    -4.36,
+    -3.28,
+    -6.11,
+    -5.49,
+    -6.26,
+    -6.8,
+    -2.24,
+    -5.69,
+    -6.07,
+    -4.45,
+    -5.5,
+    -2.58,
+    -6.73,
+    -3.86,
+    -2.03,
+    -2.29,
+    -3.96,
+    -1.54,
+    -5.24,
+    -7.43,
+    -8.14,
+    -7.36,
+    -7.99,
+    -9.08,
+    -2.84,
+    -5.55,
+    -5.37,
+    -5.27,
+    -1.5,
+    -1.53,
+    -13.87,
+    -15.65,
+    -22.87
+  ],
+  "music_rms_dbfs": -19.49,
+  "sfx_rms_dbfs": -22.2,
+  "master_processing": "108 BPM deterministic synthesis, music ducking, mild tanh saturation, 10 Hz infrasonic/DC filter, peak normalization to -1.5 dBFS, 1.1 s cosine fade, 16-bit TPDF dither",
+  "license": "Original procedural composition and synthesis created for this commission; no third-party samples or music.",
+  "cues": [
+    {
+      "start_seconds": 0.075,
+      "duration_seconds": 3.125,
+      "type": "ignition",
+      "description": "Starter, uneven combustion catch, short low exhaust bloom"
+    },
+    {
+      "start_seconds": 0.5,
+      "duration_seconds": 34.5,
+      "type": "original_score",
+      "description": "108 BPM original electronic score in D minor, restrained pulse, sub-bass, evolving pad and sparse glass motif"
+    },
+    {
+      "start_seconds": 3.615,
+      "duration_seconds": 0.52,
+      "type": "transition",
+      "description": "Restrained filtered air/camera sweep, apex at scene cut"
+    },
+    {
+      "start_seconds": 4.12,
+      "duration_seconds": 4.41,
+      "type": "diagnostic",
+      "description": "Quiet, precisely spaced validation chirps and broadband scanner texture"
+    },
+    {
+      "start_seconds": 8.571,
+      "duration_seconds": 0.58,
+      "type": "transition",
+      "description": "Restrained filtered air/camera sweep, apex at scene cut"
+    },
+    {
+      "start_seconds": 8.9,
+      "duration_seconds": 5.0,
+      "type": "mechanical",
+      "description": "Controlled servo movement and metallic component settling; seven accents"
+    },
+    {
+      "start_seconds": 13.519,
+      "duration_seconds": 0.65,
+      "type": "transition",
+      "description": "Restrained filtered air/camera sweep, apex at scene cut"
+    },
+    {
+      "start_seconds": 14.12,
+      "duration_seconds": 5.7,
+      "type": "acceleration",
+      "description": "Synthesized combustion/exhaust ramp, two gear-change dips, air/turbo texture"
+    },
+    {
+      "start_seconds": 19.46,
+      "duration_seconds": 0.73,
+      "type": "transition",
+      "description": "Restrained filtered air/camera sweep, apex at scene cut"
+    },
+    {
+      "start_seconds": 19.47,
+      "duration_seconds": 0.66,
+      "type": "turbo_release",
+      "description": "Short filtered pressure-release air"
+    },
+    {
+      "start_seconds": 20.35,
+      "duration_seconds": 6.47,
+      "type": "surface",
+      "description": "Soft film movement/squeegee air and surface-polish texture"
+    },
+    {
+      "start_seconds": 26.6,
+      "duration_seconds": 0.54,
+      "type": "transition",
+      "description": "Restrained filtered air/camera sweep, apex at scene cut"
+    },
+    {
+      "start_seconds": 27.05,
+      "duration_seconds": 3.7,
+      "type": "montage",
+      "description": "Five restrained mechanical/data accents"
+    },
+    {
+      "start_seconds": 30.504,
+      "duration_seconds": 0.67,
+      "type": "transition",
+      "description": "Restrained filtered air/camera sweep, apex at scene cut"
+    },
+    {
+      "start_seconds": 31.0,
+      "duration_seconds": 2.7,
+      "type": "brand_impact",
+      "description": "Warm low closing impact with subtle metallic/air tail"
+    },
+    {
+      "start_seconds": 32.35,
+      "duration_seconds": 1.6,
+      "type": "closing_engine",
+      "description": "Subtle final engine breath beneath the call to action"
+    }
+  ]
+}

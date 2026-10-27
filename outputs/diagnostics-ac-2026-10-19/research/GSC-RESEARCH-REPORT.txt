@@ -1,0 +1,69 @@
+DIGI-TEC DIAGNOSTICS AND AC GSC RESEARCH — 19 OCTOBER 2026
+
+50 opportunities: 40 distinct measured raw queries and 10 proposed variants. 36 measured queries occur in the 92-day export; the remainder are labelled historical/24-hour evidence. Top 20 all have current 92-day evidence.
+
+Source basis:
+- Primary 92-day: 10 July–9 October 2026, Web, no query/page/country/device filter in workbook.
+- Historical 28-day: 6 August–2 September 2026, Web, no query/page filter. This overlaps the 92-day period and is not summed or used as an independent before/after window.
+- Last 24 hours export 19 October: 18 October 06:00 to 19 October 05:00, source time-column is Time (UTC+04:00), Dubai time; Web (text-based). Small fresh sample, not an exact daily trend or a post-implementation result.
+- 17 original workbooks inspected read-only and SHA256 checked unchanged. Historical 7-day, older 92-day, 167-day, query-filtered Mercedes, page-filtered tuning, PPF-filtered and Product-snippets exports are retained with filters; none pooled with primary periods.
+- Some 1000-row query tables are capped, and even shorter exports omit anonymized or non-exported queries. Missing means unavailable, never measured zero demand.
+- CTR retained exactly as exported (as ratio); clicks/impressions/average position kept at exact query/source grain. No sum of periods, queries or average positions used to claim total demand.
+- No exact diagnostics/AC query-by-page joined export/API response supplied. Existing route assignment is verified structural/editorial ownership, not a GSC ranking-page observation. Independent Pages rows are saved separately and never joined by row order or keyword similarity.
+
+Priority method: analyst ordering considers primary 92-day impressions, position (especially 6–20), explicit automotive repair/Dubai intent, existing indexable owner and capability/location constraints. Qualitative competition is recorded from primary business sites. There is no invented monthly volume, numeric difficulty, conversion rate, lead count or revenue estimate. Similar variants share one existing owner.
+
+Implementation selection: general diagnostics/general AC; BMW/Porsche diagnostics; Mercedes/BMW/Volkswagen/Range Rover AC. Completed Mercedes diagnostics and electrical repair copy are preserved. Porsche AC and other brands remain existing-owner backlog. No new route is justified by these exports.
+
+Top 20 (query: 92-day clicks/impressions/CTR/position):
+1. mercedes diagnostic dubai: 0/63/0.00%/6.60. /services/mercedes-diagnostics-dubai. Strong average position 6.60 on 63 impressions; preserve completed diagnostic content and measure actual URL ownership.
+2. volkswagen ac repair: 0/65/0.00%/15.91. /brands/volkswagen-service-dubai/ac-repair. 65 impressions at 15.91; existing brand AC owner gives a focused near-page-one repair opportunity.
+3. bmw diagnostics dubai: 0/49/0.00%/13.06. /brands/bmw-service-dubai/engine-diagnostics. 49 impressions at 13.06; vehicle-specific fault assessment and enquiry clarification fit the existing owner.
+4. mercedes ac repair dubai: 1/42/2.38%/19.86. /services/mercedes-ac-repair-dubai. 42 impressions, 1 click and 19.86 position; the only recent clicked exact query in this selected cluster.
+5. bmw ac repair dubai: 0/38/0.00%/16.45. /brands/bmw-service-dubai/ac-repair. 38 impressions at 16.45; targeted diagnosis and cooling-symptom enquiry fit existing owner.
+6. porsche diagnostic dubai: 0/28/0.00%/15.64. /brands/porsche-service-dubai/engine-diagnostics. 28 impressions at 15.64; reinforce the existing Porsche diagnostics owner without a singular-variant route.
+7. range rover ac repair: 0/62/0.00%/20.05. /brands/range-rover-service-dubai/ac-repair. 62 impressions at 20.05; existing AC owner can explain system and refrigerant limits.
+8. fault code scanning dubai: 0/90/0.00%/25.92. /services/car-diagnostics-dubai. 90 impressions at 25.92; explain code-versus-diagnosis and direct to assessment.
+9. car diagnostic dubai: 0/111/0.00%/28.45. /services/car-diagnostics-dubai. 111 impressions at 28.45; largest recent general diagnostic query that matches the Al Quoz owner.
+10. porsche diagnostics dubai: 0/26/0.00%/18.04. /brands/porsche-service-dubai/engine-diagnostics. 26 impressions at 18.04; same owner as singular query and no additional page.
+11. engine diagnostics dubai: 0/62/0.00%/24.66. /services/car-diagnostics-dubai. 62 impressions at 24.66; repair-led investigation intent on the general diagnostics owner.
+12. car ac gas refill dubai: 0/220/0.00%/35.88. /services/car-ac-repair-dubai. 220 impressions at 35.88; greatest visible AC demand, but scope requires leak/fault assessment rather than a refill promise.
+13. car ac repair dubai: 0/61/0.00%/38.61. /services/car-ac-repair-dubai. 61 impressions at 38.61; direct commercial service intent, broader and more competitive than brand AC terms.
+14. auto electrical diagnostics dubai: 0/82/0.00%/36.72. /services/auto-electrical-repair-dubai. 82 impressions at 36.72; preserve strong existing electrical owner and connect diagnostics journey.
+15. vehicle diagnostics dubai: 0/74/0.00%/34.99. /services/car-diagnostics-dubai. 74 impressions at 34.99; same general diagnostic owner, natural coverage and booking path.
+16. car diagnostic service dubai: 0/64/0.00%/37.16. /services/car-diagnostics-dubai. 64 impressions at 37.16; general service assessment variant on existing diagnostics owner.
+17. porsche engine diagnostics: 0/35/0.00%/19.60. /brands/porsche-service-dubai/engine-diagnostics. 35 impressions at 19.60; focused brand-owner relevance, without inventing exact tool compatibility.
+18. car ac refill services dubai: 0/71/0.00%/27.90. /services/car-ac-repair-dubai. 71 impressions at 27.90; retain on general AC owner with diagnosis and refrigerant constraints.
+19. volkswagen ac repair dubai: 0/19/0.00%/14.74. /brands/volkswagen-service-dubai/ac-repair. 19 impressions at 14.74; explicit Dubai variant groups with the stronger non-city VW query.
+20. mercedes benz ac repair: 0/35/0.00%/20.29. /services/mercedes-ac-repair-dubai. 35 impressions at 20.29 plus 5 fresh 24-hour impressions; same Mercedes AC owner.
+
+Capability and location boundaries:
+- DIP2 queries are measured but do not authorize a DIP2 location/service claim. DIGI-TEC location remains verified Al Quoz.
+- Named-tool variants (XENTRY/ISTA+/PIWIS/ODIS/JLR), ECU programming, compressor/condenser/evaporator replacement and high-voltage work require exact workshop and vehicle evidence. Query demand and existing marketing text do not verify this independently.
+- Refill demand should be answered with refrigerant identification, diagnosis and applicable leak checks before quotation, without inventing refrigerant compatibility or refill prices.
+- Warning-light, no-start, misfire and warm-air queries can support factual symptom FAQs on existing owners. Proposed variants have blank metrics and are not counted as measured demand.
+- WhatsApp/tel interactions are contact attempts, not confirmed enquiries. Closed-loop qualified enquiries require actual received lead records and consent-aware attribution.
+
+Needed next GSC evidence: export Search Analytics with dimensions query+page for these measured clusters, dates and country/device/search appearance filters retained; exact-query URL Inspection for canonical/indexing checks; comparable nonoverlapping 28-day query exports after release. The daily Chart sheet alone cannot produce query-level 28-day metrics.
+
+Primary competition sources:
+General diagnostics: Strong visible specialist competition; dedicated diagnostic pages, scan-versus-diagnosis explanations and direct booking paths. Qualitative only, not keyword difficulty or a local rank audit.
+  https://activeauto.me/services/vehicle-diagnostics
+  https://aljubailgarage.com/services/computer-diagnostics
+  https://www.fixgo.ae/services/car-computer-diagnostics-dubai
+General AC: Strong visible dedicated AC competition with symptom, leak and compressor explanations and immediate enquiry options. Competitor service and price claims are not evidence of DIGI-TEC capability.
+  https://caracheroes.com/
+  https://nkauto-me.com/services/ac-repair/
+Mercedes/BMW diagnostics: Specialist brand-focused diagnostic and electrical fault pages visible. Support vehicle-specific fault assessment and clear limitations; no need to copy capability claims.
+  https://mbcod.com/
+BMW AC: Multiple dedicated brand AC pages visible, including symptom-led process and quotation paths. High commercial relevance but no guaranteed ranking gain.
+  https://bmwgarage.ae/ac/
+  https://kartalauto.ae/ac-repair/bmw/
+  https://www.dascenter.ae/bmw-ac-repair-dubai/
+Volkswagen AC: Dedicated Volkswagen AC competitors visible with diagnosis/process content. Existing owner and position14.74–15.91 support focused relevance and conversion work.
+  https://volkswagenworkshopdubai.com/volkswagen-ac-repair-dubai/
+  https://euroexpert.ae/service/volkswagen-ac-repair-dubai/
+Porsche diagnostics: Dedicated independent Porsche diagnostic page visible with warning and system intent. Preserve exact-vehicle limitations and differentiate using verified process.
+  https://porsche-repair-dubai.com/services/porsche-diagnostics/
+Commercial rank and implementation priority differ: an existing completed owner may rank highly for monitoring while its content remains preserved. No GSC average position is a guarantee of any particular live search result.
+

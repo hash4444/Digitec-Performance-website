@@ -1,0 +1,16 @@
+Independent integration review — 2026-10-19
+Read-only scope: ServicePage.tsx, BrandServicePage.tsx, diagnosticsAcGeneralContent.ts, DiagnosticAcEnquiryPanel.tsx, diagnosticsAcBrandContent.ts and their existing schema/locale/contact dependencies. No source writes by reviewer during this review. These are actionable findings at the time of review, before root remediation.
+
+1. P2 — Update the generic refinement's service-type keyword alongside its visible Arabic title.
+   src/data/diagnosticsAcGeneralContent.ts:14 (diagnostics return object)
+   src/pages/ServicePage.tsx:112 (serviceType: service.seoKeyword)
+   The Arabic localization sets seoKeyword from the old card title 'برمجة وتشخيص السيارات'. The diagnostics refinement replaces visible H1/title/body with warning-light assessment but leaves that keyword unchanged, so the Service JSON-LD still labels the service with the inherited programming emphasis. Set a scoped EN/AR seoKeyword in each generic return object, describing the actual diagnostics or AC owner. This affects only the two allowlisted generic owners. Isolated runtime reproduction confirmed inherited Arabic programming text persists.
+
+2. P3 — Fix Arabic generic enquiry grammar and preserve vehicle-make prompts.
+   src/data/diagnosticsAcGeneralContent.ts:diagnosticAcMessage
+   ServicePage calls this without brandName. The Arabic draft consequently opens '... لسيارة . الطراز والسنة:' and omits the make prompt that the English draft includes. Use natural generic wording when no brand is supplied and explicitly include الصانع، الطراز، سنة الصنع. Keep the message in the WhatsApp draft only; preserve existing analytics sanitization. Isolated runtime reproduction confirmed the stray period after empty vehicle text.
+
+No other actionable defect identified from source inspection. In particular, the explicit six-brand owner allowlist excludes the prior ten repair owners; generic !brandPath and two-slug guards leave PPF/other services untouched; page/provider/brand graph identifiers remain stable; FAQ graph uses the displayed Q&A data; contextual WhatsApp links retain existing number and external-link safeguards; no name, phone, VIN or message data was added to analytics. Full rendered schema, mobile/interaction and routing assertions remain the independent QA suite's responsibility.
+
+Closure verification — 2026-10-19
+Both findings resolved by root and independently verified using a tiny TypeScript transpile/runtime check, recorded in integration-review-closure.json. Generic diagnostics and AC now set mode-specific English/Arabic seoKeyword values. Arabic generic drafts now say 'لسيارتي' and contain explicit make/model/year prompts. Both diagnostic and AC draft cases passed; four locale/mode service-type values passed. No app source writes or browser/build run by reviewer. No outstanding actionable source finding from this review.

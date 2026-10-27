@@ -1,0 +1,236 @@
+- link "Skip to main content":
+  - /url: "#main-content"
+- banner "Sidebar":
+  - link "Dashboard":
+    - /url: /dashboard
+  - button "Hashem's Lovable workspace menu":
+    - generic: H
+    - generic: Hashem's Lovable
+  - navigation "Main menu":
+    - link "New":
+      - /url: /dashboard#new
+      - generic: New
+    - button "Search Ctrl K":
+      - generic: Search
+      - generic: Ctrl
+      - generic: K
+    - button "Connectors":
+      - generic: Connectors
+    - link "Chats":
+      - /url: /chats
+      - generic: Chats
+    - link "Projects":
+      - /url: /dashboard/projects
+      - generic: Projects
+    - link "Starred":
+      - /url: /dashboard/projects?starred=true
+      - generic: Starred
+    - link "Projects":
+      - /url: /dashboard/projects
+      - generic: Projects
+    - button "Collapse Starred" [expanded]:
+      - generic: Starred
+    - generic: Digiec Performance Center L.L.C
+    - link "Digiec Performance Center L.L.C":
+      - /url: /projects/b8255283-fdd9-4c2d-8b46-ccb596f695e1
+      - generic: Digiec Performance Center L.L.C
+    - button "Project actions":
+    - generic: Taawun
+    - link "Taawun":
+      - /url: /projects/8dcacc4e-083c-44e6-b384-c3cbcca3c710
+      - generic: Taawun
+    - button "Project actions":
+    - generic: condisc
+    - link "condisc":
+      - /url: /projects/2b67accd-7fc8-4b5f-9f19-b8f01db62e16
+      - generic: condisc
+    - button "Project actions":
+    - button "Collapse Recents" [expanded]:
+      - generic: Recents
+    - button "Filter recents":
+    - generic: Condisc
+    - link "Condisc":
+      - /url: /projects/caea631b-2de8-4bec-841e-d83672f610bd
+      - generic: Condisc
+    - button "Project actions":
+    - generic: Rovan Rent Cars
+    - link "Rovan Rent Cars":
+      - /url: /projects/350cd9a4-7a23-4cb1-abd1-af30b78ed6e7
+      - generic: Rovan Rent Cars
+    - button "Project actions":
+    - generic: Condisc AI Insights
+    - link "Condisc AI Insights":
+      - /url: /projects/9502090c-ccf8-496f-9eb8-714ada8aba09
+      - generic: Condisc AI Insights
+    - button "Project actions":
+    - generic: Nova Wallet
+    - link "Nova Wallet":
+      - /url: /projects/a97e923f-867a-437c-9a5e-b74f9e8dc5d2
+      - generic: Nova Wallet
+    - button "Project actions":
+    - generic: Condsic AI
+    - link "Condsic AI":
+      - /url: /projects/80cd5c36-baa6-4205-94d2-09acda8e30a7
+      - generic: Condsic AI
+    - button "Project actions":
+    - generic: Network Connect
+    - link "Network Connect":
+      - /url: /projects/45360413-b0ee-4756-8b4e-e832e2604e23
+      - generic: Network Connect
+    - button "Project actions":
+    - generic: carchain-web3
+    - link "carchain-web3":
+      - /url: /projects/6a0951a1-ae78-4f0a-95e9-a3a590723205
+      - generic: carchain-web3
+    - button "Project actions":
+    - generic: digi-tec-prime
+    - link "digi-tec-prime":
+      - /url: /projects/58d97e2f-5de5-4482-a399-4d31ce5a351d
+      - generic: digi-tec-prime
+    - button "Project actions":
+  - button "Share Lovable Up to 400 credits per referral":
+    - paragraph: Share Lovable
+    - paragraph: Up to 400 credits per referral
+  - button "Upgrade to Pro Unlock more features":
+    - generic: Upgrade to Pro
+    - generic: Unlock more features
+  - button "Account menu":
+    - generic: H
+- main [active]:
+  - complementary:
+    - button "Go back":
+      - generic: Go back
+    - generic: Search…
+    - textbox "Search…"
+    - navigation "Settings":
+      - status
+      - group "Project":
+        - generic: Project
+        - list:
+          - link "General":
+            - /url: /projects/b8255283-fdd9-4c2d-8b46-ccb596f695e1/settings/project
+            - generic: General
+          - link "Git":
+            - /url: /projects/b8255283-fdd9-4c2d-8b46-ccb596f695e1/settings/git
+            - generic: Git
+          - link "Domains":
+            - /url: /projects/b8255283-fdd9-4c2d-8b46-ccb596f695e1/settings/domains
+            - generic: Domains
+      - group "Workspace":
+        - generic: Workspace
+        - list:
+          - link "Hashem's Lovable":
+            - /url: /projects/b8255283-fdd9-4c2d-8b46-ccb596f695e1/settings/workspace
+            - generic: H
+            - generic: Hashem's Lovable
+          - link "Plans & credit usage":
+            - /url: /projects/b8255283-fdd9-4c2d-8b46-ccb596f695e1/settings/billing
+            - generic: Plans & credit usage
+          - link "Usage limits & alerts":
+            - /url: /projects/b8255283-fdd9-4c2d-8b46-ccb596f695e1/settings/alerts-limits
+            - generic: Usage limits & alerts
+          - link "Slack":
+            - /url: /projects/b8255283-fdd9-4c2d-8b46-ccb596f695e1/settings/slack
+            - generic: Slack
+      - group "Access":
+        - generic: Access
+        - list:
+          - link "People":
+            - /url: /projects/b8255283-fdd9-4c2d-8b46-ccb596f695e1/settings/people
+            - generic: People
+          - link "Groups Business":
+            - /url: /projects/b8255283-fdd9-4c2d-8b46-ccb596f695e1/settings/groups
+            - generic: Groups
+            - generic: Business
+          - link "Identity Business":
+            - /url: /projects/b8255283-fdd9-4c2d-8b46-ccb596f695e1/settings/identity
+            - generic: Identity
+            - generic: Business
+          - link "API keys & OAuth":
+            - /url: /projects/b8255283-fdd9-4c2d-8b46-ccb596f695e1/settings/api-keys
+            - generic: API keys & OAuth
+      - group "Customization":
+        - generic: Customization
+        - list:
+          - link "Knowledge":
+            - /url: /projects/b8255283-fdd9-4c2d-8b46-ccb596f695e1/settings/knowledge
+            - generic: Knowledge
+          - link "Skills":
+            - /url: /projects/b8255283-fdd9-4c2d-8b46-ccb596f695e1/settings/skills
+            - generic: Skills
+          - link "Templates Business":
+            - /url: /projects/b8255283-fdd9-4c2d-8b46-ccb596f695e1/settings/templates
+            - generic: Templates
+            - generic: Business
+          - link "Design systems":
+            - /url: /projects/b8255283-fdd9-4c2d-8b46-ccb596f695e1/settings/design-systems
+            - generic: Design systems
+          - link "Announcements Business":
+            - /url: /projects/b8255283-fdd9-4c2d-8b46-ccb596f695e1/settings/announcements
+            - generic: Announcements
+            - generic: Business
+          - link "Connector settings Business":
+            - /url: /projects/b8255283-fdd9-4c2d-8b46-ccb596f695e1/settings/connectors
+            - generic: Connector settings
+            - generic: Business
+          - link "Services":
+            - /url: /projects/b8255283-fdd9-4c2d-8b46-ccb596f695e1/settings/services
+            - generic: Services
+      - group "Build & deploy":
+        - generic: Build & deploy
+        - list:
+          - link "Build secrets Enterprise":
+            - /url: /projects/b8255283-fdd9-4c2d-8b46-ccb596f695e1/settings/secrets
+            - generic: Build secrets
+            - generic: Enterprise
+          - link "Managed registry Enterprise":
+            - /url: /projects/b8255283-fdd9-4c2d-8b46-ccb596f695e1/settings/managed-registry
+            - generic: Managed registry
+            - generic: Enterprise
+          - link "MCP server":
+            - /url: /projects/b8255283-fdd9-4c2d-8b46-ccb596f695e1/settings/mcp-server
+            - generic: MCP server
+          - link "Workspace domains":
+            - /url: /projects/b8255283-fdd9-4c2d-8b46-ccb596f695e1/settings/workspace-domains
+            - generic: Workspace domains
+      - group "Security":
+        - generic: Security
+        - list:
+          - link "Privacy & security":
+            - /url: /projects/b8255283-fdd9-4c2d-8b46-ccb596f695e1/settings/privacy-security
+            - generic: Privacy & security
+          - link "Security center Business":
+            - /url: /projects/b8255283-fdd9-4c2d-8b46-ccb596f695e1/settings/security-center
+            - generic: Security center
+            - generic: Business
+  - heading "Domains" [level=1]
+  - paragraph: Publish your project to custom domains.
+  - link "Docs":
+    - /url: https://docs.lovable.dev/features/custom-domain
+    - text: Docs
+  - heading "Connected domains Pro" [level=2]:
+    - text: Connected domains
+    - generic: Pro
+  - heading "digitecme.com" [level=3]
+  - generic: Website
+  - generic: Primary domain
+  - status:
+    - generic: Active · www included
+  - generic: GoDaddy
+  - button "Domain actions":
+  - heading "More domains Pro" [level=2]:
+    - text: More domains
+    - generic: Pro
+  - generic: Add another domain
+  - generic: Point a domain you own at this project, or search for a new one.
+  - button "Connect domain":
+    - generic: Connect domain
+  - button "Buy a new domain":
+    - generic: Buy a new domain
+  - generic: Lovable address
+  - generic: ·
+  - link "dubai-performance-art.lovable.app":
+    - /url: https://dubai-performance-art.lovable.app
+  - button "Edit URL":
+- status
+- region

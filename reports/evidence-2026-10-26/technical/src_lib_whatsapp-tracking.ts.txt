@@ -1,0 +1,33 @@
+    1: declare global {
+    2:   interface Window {
+    3:     dataLayer?: Array<Record<string, unknown>>;
+    4:   }
+    5: }
+    6: 
+    7: const isWhatsAppUrl = (href: string) => {
+    8:   try {
+    9:     const url = new URL(href, window.location.origin);
+   10:     return url.hostname === 'wa.me' || url.hostname.endsWith('.whatsapp.com');
+   11:   } catch {
+   12:     return false;
+   13:   }
+   14: };
+   15: 
+   16: export const safeWhatsAppUrl = (href: string) => {
+   17:   const url = new URL(href, window.location.origin);
+   18:   // The prefilled `text` value can contain message content or form data.
+   19:   url.search = '';
+   20:   url.hash = '';
+   21:   return url.href;
+   22: };
+   23: 
+   24: export const trackWhatsAppClick = (href: string) => {
+   25:   if (!isWhatsAppUrl(href)) return;
+   26: 
+   27:   window.dataLayer = window.dataLayer || [];
+   28:   window.dataLayer.push({
+   29:     event: 'whatsapp_click',
+   30:     link_url: safeWhatsAppUrl(href),
+   31:     page_path: window.location.pathname,
+   32:   });
+   33: };

@@ -1,0 +1,12 @@
+    1: // The old Arabic blog renderer supplies generic templates, not translations of
+    2: // these model pages. Keep it out of search/alternate declarations until real
+    3: // equivalent model content is available; direct language navigation to the hub.
+    4: export const MERCEDES_UNTRANSLATED_MODEL_PATHS = new Set([
+    5:   '/blog/mercedes-g63-service-dubai-guide',
+    6:   '/blog/mercedes-c-class-service-dubai-guide',
+    7:   '/blog/mercedes-e-class-service-dubai-guide',
+    8:   '/blog/mercedes-s-class-service-dubai-guide',
+    9: ]);
+   10: 
+   11: export const isEnglishMercedesModelPath = (path: string) =>
+   12:   path.startsWith('/mercedes/models/') || MERCEDES_UNTRANSLATED_MODEL_PATHS.has(path);

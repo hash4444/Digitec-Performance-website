@@ -1,0 +1,108 @@
+    1: import { useEffect, useRef } from 'react';
+    2: import { useLocation } from 'react-router-dom';
+    3: import { safeWhatsAppUrl, trackWhatsAppClick } from '@/lib/whatsapp-tracking';
+    4: import { analyticsPageUrl, analyticsReferrer, ATTRIBUTION_KEY, buildAttribution, sanitizeAttribution, type ContactAttribution } from '@/lib/contact-attribution';
+    5: 
+    6: declare global {
+    7:   interface Window {
+    8:     gtag?: (...args: unknown[]) => void;
+    9:   }
+   10: }
+   11: 
+   12: const contactMethod = (href: string): string | null => {
+   13:   const normalized = href.toLowerCase();
+   14:   if (normalized.startsWith('tel:')) return 'phone';
+   15:   if (normalized.startsWith('mailto:')) return 'email';
+   16:   if (normalized.includes('wa.me/') || normalized.includes('whatsapp.com/')) return 'whatsapp';
+   17:   if (normalized.includes('maps.google.')) return 'directions';
+   18:   return null;
+   19: };
+   20: 
+   21: const contactEvent: Record<string, string> = {
+   22:   phone: 'telephone_link_clicked',
+   23:   email: 'email_link_clicked',
+   24:   whatsapp: 'whatsapp_chat_opened',
+   25:   directions: 'directions_clicked',
+   26: };
+   27: 
+   28: const readAttribution = (): ContactAttribution => {
+   29:   try {
+   30:     const stored = window.sessionStorage.getItem(ATTRIBUTION_KEY);
+   31:     const attribution = stored
+   32:       ? sanitizeAttribution(JSON.parse(stored), window.location.origin)
+   33:       : buildAttribution(window.location.href, document.referrer);
+   34:     window.sessionStorage.setItem(ATTRIBUTION_KEY, JSON.stringify(attribution));
+   35:     return attribution;
+   36:   } catch {
+   37:     return {};
+   38:   }
+   39: };
+   40: 
+   41: /** SPA page views and high-intent contact clicks for the existing GA4 property. */
+   42: const Analytics = () => {
+   43:   const { pathname, search } = useLocation();
+   44:   const initialPageView = useRef(true);
+   45:   const attribution = useRef<ContactAttribution>({});
+   46:   const lastServicePath = useRef('');
+   47: 
+   48:   useEffect(() => {
+   49:     if (lastServicePath.current === pathname) return;
+   50:     lastServicePath.current = pathname;
+   51:     if (pathname === '/services/paint-protection-film' || pathname === '/ar/services/paint-protection-film') {
+   52:       window.gtag?.('event', 'ppf_page_view', {
+   53:         page_path: pathname, service: 'ppf', language: pathname.startsWith('/ar/') ? 'ar' : 'en',
+   54:         page_location: analyticsPageUrl(window.location.href, window.location.origin),
+   55:         page_referrer: analyticsReferrer(document.referrer),
+   56:       });
+   57:     }
+   58:   }, [pathname]);
+   59: 
+   60:   useEffect(() => {
+   61:     attribution.current = readAttribution();
+   62:   }, []);
+   63: 
+   64:   useEffect(() => {
+   65:     const pageContext = {
+   66:       page_location: analyticsPageUrl(window.location.href, window.location.origin),
+   67:       page_referrer: analyticsReferrer(document.referrer),
+   68:     };
+   69:     // Keep automatic events aligned with the current SPA route as well.
+   70:     window.gtag?.('set', pageContext);
+   71:     if (initialPageView.current) {
+   72:       initialPageView.current = false;
+   73:       return;
+   74:     }
+   75:     window.gtag?.('event', 'page_view', {
+   76:       page_title: document.title,
+   77:       ...pageContext,
+   78:       page_path: pathname,
+   79:       ...attribution.current,
+   80:     });
+   81:   }, [pathname, search]);
+   82: 
+   83:   useEffect(() => {
+   84:     const trackContact = (event: MouseEvent) => {
+   85:       const target = event.target instanceof Element ? event.target.closest('a[href]') : null;
+   86:       if (!(target instanceof HTMLAnchorElement)) return;
+   87:       const method = contactMethod(target.href);
+   88:       if (!method) return;
+   89:       if (method === 'whatsapp') trackWhatsAppClick(target.href);
+   90:       window.gtag?.('event', contactEvent[method], {
+   91:         method,
+   92:         link_url: method === 'whatsapp' ? safeWhatsAppUrl(target.href) : target.href,
+   93:         page_path: window.location.pathname,
+   94:         cta_placement: target.dataset.ctaPlacement || 'unspecified',
+   95:         ...attribution.current,
+   96:       });
+   97:     };
+   98: 
+   99:     document.addEventListener('click', trackContact);
+  100:     return () => {
+  101:       document.removeEventListener('click', trackContact);
+  102:     };
+  103:   }, []);
+  104: 
+  105:   return null;
+  106: };
+  107: 
+  108: export default Analytics;

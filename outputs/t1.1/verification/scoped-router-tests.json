@@ -1,0 +1,11 @@
+{
+  "testedAt": "2026-10-05T07:39:51.182Z",
+  "passed": true,
+  "redirects": 4848,
+  "passthroughs": 254,
+  "guardedRequests": 13,
+  "notFoundChecks": 4,
+  "originResponseChecks": 5,
+  "deployed": false,
+  "scope": "101 aliases plus known Mercedes/tyre normalization; canonical, endpoint, unrelated-host and mutation identity; unknown GET/HEAD request preservation and manual origin fetch; HTML 404, HEAD body, assets and origin redirects/errors"
+}

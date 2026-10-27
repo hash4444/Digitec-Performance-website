@@ -1,0 +1,23 @@
+{
+  "at": "2026-10-26T10:58:57.453Z",
+  "source": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-4b\\production\\analyze-production-baseline.mjs",
+  "sourceSha256": "0e069ff3fc0d035fc01e7b67a29849cb01a34109fd0f7f6f007fe9b85a419d27",
+  "copySha256": "c6020929d725632ec1e530ce63031c11ecd61f5791705e3b7fa5ac823d7ddc61",
+  "replacements": [
+    [
+      "out=resolve('reports/mercedes-phase-4b/production')",
+      "out=\"C:\\\\Users\\\\ADMIN\\\\Documents\\\\ChatGPT\\\\DIGITEC\\\\reports\\\\mercedes-phase-4c\\\\production\""
+    ],
+    [
+      "const captureDir=resolve(out,'http/2026-10-26T10-20-06-242Z');",
+      "const captureDir=\"C:\\\\Users\\\\ADMIN\\\\Documents\\\\ChatGPT\\\\DIGITEC\\\\reports\\\\mercedes-phase-4c\\\\production\\\\http\\\\2026-10-26T10-57-04-947Z\";"
+    ],
+    [
+      "'services','404-en-file'",
+      "'services','bmw-en','bmw-ar','404-en-file'"
+    ]
+  ],
+  "localDefsNarrowedToSelectedCohort": true,
+  "captureDir": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-4c\\production\\http\\2026-10-26T10-57-04-947Z",
+  "readOnly": true
+}

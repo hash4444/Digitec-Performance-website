@@ -1,0 +1,67 @@
+{
+  "sources": [
+    {
+      "path": "C:\\Users\\ADMIN\\Downloads\\DIGITEC4.mp4",
+      "bytes": 56626000,
+      "sha256": "4db2755775ce47d1a4034ac1743f18a5b9f328ce7b0c6c49e92458614e15c2f2",
+      "tracks": [
+        {
+          "handler": "vide",
+          "durationSeconds": 29.7,
+          "displayWidth": 1080.0,
+          "displayHeight": 1920.0,
+          "codecFourcc": "avc1",
+          "sampleCount": 891,
+          "averageFps": 30.0
+        },
+        {
+          "handler": "soun",
+          "durationSeconds": 29.717333333333332,
+          "codecFourcc": "mp4a"
+        }
+      ]
+    },
+    {
+      "path": "C:\\Users\\ADMIN\\Downloads\\IMG_9427.mp4",
+      "bytes": 38373042,
+      "sha256": "fbbd4bb76503ab46df50bccd909b7ea5155dde267c708c562e8f43f21874313e",
+      "tracks": [
+        {
+          "handler": "vide",
+          "durationSeconds": 40.06666666666667,
+          "displayWidth": 1080.0,
+          "displayHeight": 1920.0,
+          "codecFourcc": "avc1",
+          "sampleCount": 1202,
+          "averageFps": 29.999999999999996
+        },
+        {
+          "handler": "soun",
+          "durationSeconds": 40.08533333333333,
+          "codecFourcc": "mp4a"
+        }
+      ]
+    },
+    {
+      "path": "C:\\Users\\ADMIN\\Downloads\\IMG_9072 (2).mp4",
+      "bytes": 65160784,
+      "sha256": "3b8399d0799abeaecfc729c6238c23d8f95600cd3e3f54e945e35ebe25529919",
+      "tracks": [
+        {
+          "handler": "vide",
+          "durationSeconds": 15.6,
+          "displayWidth": 2160.0,
+          "displayHeight": 3840.0,
+          "codecFourcc": "avc1",
+          "sampleCount": 468,
+          "averageFps": 30.0
+        },
+        {
+          "handler": "soun",
+          "durationSeconds": 15.616,
+          "codecFourcc": "mp4a"
+        }
+      ]
+    }
+  ]
+}

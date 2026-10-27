@@ -1,0 +1,912 @@
+{
+  "capturedAt": "2026-10-20T05:27:41.665Z",
+  "localBaselineDirectory": "outputs\\ecu-electronics-2026-10-19\\candidate.local",
+  "focal": [
+    "/brands/mercedes-benz-service-dubai",
+    "/ar/brands/mercedes-benz-service-dubai"
+  ],
+  "publicRequests": 20,
+  "localFocal": [
+    {
+      "route": "/brands/mercedes-benz-service-dubai",
+      "title": "Mercedes Repair & Service Dubai | Al Quoz | Digi-Tec",
+      "description": "Independent Mercedes repair and service in Al Quoz, Dubai since 2002. XENTRY diagnostics, maintenance, gearbox, AIRMATIC, AC and electrical work.",
+      "h1": [
+        {
+          "level": "h1",
+          "text": "Mercedes-Benz Repair & Service Dubai"
+        }
+      ],
+      "canonical": [
+        {
+          "rel": "canonical",
+          "href": "https://digitecme.com/brands/mercedes-benz-service-dubai"
+        }
+      ],
+      "hreflang": [
+        {
+          "rel": "alternate",
+          "hreflang": "en-AE",
+          "href": "https://digitecme.com/brands/mercedes-benz-service-dubai"
+        },
+        {
+          "rel": "alternate",
+          "hreflang": "ar-AE",
+          "href": "https://digitecme.com/ar/brands/mercedes-benz-service-dubai"
+        },
+        {
+          "rel": "alternate",
+          "hreflang": "x-default",
+          "href": "https://digitecme.com/brands/mercedes-benz-service-dubai"
+        }
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large"
+        }
+      ],
+      "nodeIds": [
+        {
+          "type": "Organization",
+          "id": "https://digitecme.com/#organization"
+        },
+        {
+          "type": "ImageObject",
+          "id": "https://digitecme.com/#logo"
+        },
+        {
+          "type": "WebSite",
+          "id": "https://digitecme.com/#website"
+        },
+        {
+          "type": [
+            "AutoRepair",
+            "AutomotiveBusiness"
+          ],
+          "id": "https://digitecme.com/#business"
+        },
+        {
+          "type": "OfferCatalog",
+          "id": "https://digitecme.com/#service-catalog"
+        },
+        {
+          "type": "WebPage",
+          "id": "https://digitecme.com/brands/mercedes-benz-service-dubai#webpage"
+        },
+        {
+          "type": "BreadcrumbList",
+          "id": "https://digitecme.com/brands/mercedes-benz-service-dubai#breadcrumb"
+        },
+        {
+          "type": "Brand",
+          "id": "https://digitecme.com/#brand-mercedes-benz"
+        },
+        {
+          "type": "Service",
+          "id": "https://digitecme.com/brands/mercedes-benz-service-dubai#service",
+          "provider": {
+            "@id": "https://digitecme.com/#business"
+          }
+        },
+        {
+          "type": "FAQPage",
+          "id": "https://digitecme.com/brands/mercedes-benz-service-dubai#faq"
+        }
+      ],
+      "links": [
+        {
+          "href": "https://wa.me/97143402223?text=Hi%20DIGI-TEC%2C%20I%20would%20like%20to%20get%20in%20touch%20about%20my%20vehicle.",
+          "target": "_blank",
+          "rel": "noopener noreferrer",
+          "class": "mt-2 flex items-center justify-center rounded-2xl bg-burnt-orange px-4 py-3 text-sm font-bold text-white transition-colors hover:bg-orange-600",
+          "text": "Contact Us"
+        },
+        {
+          "href": "https://wa.me/97143402223?text=Hi%20DIGI-TEC%2C%20I%20would%20like%20to%20get%20in%20touch%20about%20my%20vehicle.",
+          "target": "_blank",
+          "rel": "noopener noreferrer",
+          "class": "pointer-events-auto hidden min-h-[52px] min-w-[156px] items-center justify-center rounded-full border px-6 text-sm font-semibold shadow-[0_12px_32px_rgba(0,0,0,0.16)] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-burnt-orange lg:flex border-transparent bg-[#171819] text-white hover:bg-[#202122]",
+          "text": "Contact Us"
+        },
+        {
+          "href": "https://wa.me/97143402223?text=Hi%20Digi-Tec%2C%20I%20am%20enquiring%20from%20your%20Mercedes-Benz%20service%20page%20and%20would%20like%20to%20arrange%20an%20inspection.%0A%0AModel%20and%20year%3A%20%0AService%2C%20warning%20or%20symptom%3A%20",
+          "data-cta-placement": "hero",
+          "target": "_blank",
+          "rel": "noopener noreferrer",
+          "class": "btn-primary",
+          "text": "Book Mercedes Service"
+        },
+        {
+          "href": "tel:+97143402223",
+          "data-cta-placement": "hero",
+          "class": "btn-secondary",
+          "text": "Call +971 4 340 2223"
+        },
+        {
+          "href": "https://maps.google.com/?q=Al+Quoz+Industrial+Area+3+Dubai",
+          "data-cta-placement": "hero",
+          "target": "_blank",
+          "rel": "noopener noreferrer",
+          "class": "btn-secondary",
+          "text": "Directions to Al Quoz"
+        },
+        {
+          "href": "https://wa.me/97143402223?text=Hi%20Digi-Tec%2C%20I%20am%20enquiring%20from%20your%20Mercedes-Benz%20service%20page%20and%20would%20like%20to%20arrange%20an%20inspection.%0A%0AModel%20and%20year%3A%20%0AService%2C%20warning%20or%20symptom%3A%20",
+          "data-cta-placement": "location_section",
+          "target": "_blank",
+          "rel": "noopener noreferrer",
+          "class": "btn-primary",
+          "text": "Request an Inspection"
+        },
+        {
+          "href": "https://maps.google.com/?q=Al+Quoz+Industrial+Area+3+Dubai",
+          "data-cta-placement": "location_section",
+          "target": "_blank",
+          "rel": "noopener noreferrer",
+          "class": "btn-secondary",
+          "text": "Get Directions"
+        },
+        {
+          "href": "https://wa.me/97143402223?text=Hi%20Digi-Tec%2C%20I%20am%20enquiring%20from%20your%20Mercedes-Benz%20service%20page%20and%20would%20like%20to%20arrange%20an%20inspection.%0A%0AModel%20and%20year%3A%20%0AService%2C%20warning%20or%20symptom%3A%20",
+          "target": "_blank",
+          "rel": "noopener noreferrer",
+          "class": "inline-flex items-center justify-center gap-2 bg-burnt-orange hover:bg-burnt-orange/90 text-black font-bold px-6 py-3 rounded-2xl transition-all duration-300 hover:scale-105 shadow-xl",
+          "data-cta-placement": "booking_section",
+          "text": "Book Mercedes Service"
+        },
+        {
+          "href": "tel:+97143402223",
+          "class": "inline-flex items-center justify-center gap-2 bg-off-white text-black hover:bg-white font-bold px-6 py-3 rounded-2xl transition-all duration-300 shadow-xl",
+          "data-cta-placement": "booking_section",
+          "text": "+971 4 340 2223"
+        },
+        {
+          "href": "https://maps.google.com/?q=Al+Quoz+Industrial+Area+3+Dubai",
+          "target": "_blank",
+          "rel": "noopener noreferrer",
+          "class": "mt-6 inline-flex text-sm font-medium text-white transition-colors hover:text-burnt-orange",
+          "text": "Get directions to our workshop →"
+        },
+        {
+          "href": "tel:+97143402223",
+          "class": "font-semibold text-off-white transition-colors hover:text-burnt-orange",
+          "text": "+971 4 340 2223"
+        },
+        {
+          "href": "https://wa.me/97143402223?text=Hi%20Digi-Tec%2C%20I%20am%20enquiring%20from%20your%20Mercedes-Benz%20service%20page%20and%20would%20like%20to%20arrange%20an%20inspection.%0A%0AModel%20and%20year%3A%20%0AService%2C%20warning%20or%20symptom%3A%20",
+          "data-cta-placement": "mobile_bar",
+          "target": "_blank",
+          "rel": "noopener noreferrer",
+          "class": "btn-primary justify-center px-3 py-3 text-sm",
+          "text": "WhatsApp"
+        },
+        {
+          "href": "tel:+97143402223",
+          "data-cta-placement": "mobile_bar",
+          "class": "btn-secondary justify-center px-3 py-3 text-sm",
+          "text": "Call Workshop"
+        }
+      ]
+    },
+    {
+      "route": "/ar/brands/mercedes-benz-service-dubai",
+      "title": "إصلاح وصيانة مرسيدس في دبي | ديجي-تك",
+      "description": "ورشة مستقلة لصيانة وإصلاح مرسيدس في القوز، دبي. تشخيص XENTRY وفحص المحرك والقير والتعليق والتكييف والكهرباء مع توضيح النطاق والتكلفة قبل العمل.",
+      "h1": [
+        {
+          "level": "h1",
+          "text": "إصلاح وصيانة مرسيدس بنز في دبي"
+        }
+      ],
+      "canonical": [
+        {
+          "rel": "canonical",
+          "href": "https://digitecme.com/ar/brands/mercedes-benz-service-dubai"
+        }
+      ],
+      "hreflang": [
+        {
+          "rel": "alternate",
+          "hreflang": "en-AE",
+          "href": "https://digitecme.com/brands/mercedes-benz-service-dubai"
+        },
+        {
+          "rel": "alternate",
+          "hreflang": "ar-AE",
+          "href": "https://digitecme.com/ar/brands/mercedes-benz-service-dubai"
+        },
+        {
+          "rel": "alternate",
+          "hreflang": "x-default",
+          "href": "https://digitecme.com/brands/mercedes-benz-service-dubai"
+        }
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large"
+        }
+      ],
+      "nodeIds": [
+        {
+          "type": "Organization",
+          "id": "https://digitecme.com/#organization"
+        },
+        {
+          "type": "ImageObject",
+          "id": "https://digitecme.com/#logo"
+        },
+        {
+          "type": "WebSite",
+          "id": "https://digitecme.com/#website"
+        },
+        {
+          "type": [
+            "AutoRepair",
+            "AutomotiveBusiness"
+          ],
+          "id": "https://digitecme.com/#business"
+        },
+        {
+          "type": "OfferCatalog",
+          "id": "https://digitecme.com/#service-catalog"
+        },
+        {
+          "type": "WebPage",
+          "id": "https://digitecme.com/ar/brands/mercedes-benz-service-dubai#webpage"
+        },
+        {
+          "type": "BreadcrumbList",
+          "id": "https://digitecme.com/ar/brands/mercedes-benz-service-dubai#breadcrumb"
+        },
+        {
+          "type": "Brand",
+          "id": "https://digitecme.com/#brand-mercedes-benz"
+        },
+        {
+          "type": "Service",
+          "id": "https://digitecme.com/ar/brands/mercedes-benz-service-dubai#service",
+          "provider": {
+            "@id": "https://digitecme.com/#business"
+          }
+        },
+        {
+          "type": "FAQPage",
+          "id": "https://digitecme.com/ar/brands/mercedes-benz-service-dubai#faq"
+        }
+      ],
+      "links": [
+        {
+          "href": "https://wa.me/97143402223?text=Hi%20DIGI-TEC%2C%20I%20would%20like%20to%20get%20in%20touch%20about%20my%20vehicle.",
+          "target": "_blank",
+          "rel": "noopener noreferrer",
+          "class": "mt-2 flex items-center justify-center rounded-2xl bg-burnt-orange px-4 py-3 text-sm font-bold text-white transition-colors hover:bg-orange-600",
+          "text": "تواصل معنا"
+        },
+        {
+          "href": "https://wa.me/97143402223?text=Hi%20DIGI-TEC%2C%20I%20would%20like%20to%20get%20in%20touch%20about%20my%20vehicle.",
+          "target": "_blank",
+          "rel": "noopener noreferrer",
+          "class": "pointer-events-auto hidden min-h-[52px] min-w-[156px] items-center justify-center rounded-full border px-6 text-sm font-semibold shadow-[0_12px_32px_rgba(0,0,0,0.16)] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-burnt-orange lg:flex border-transparent bg-[#171819] text-white hover:bg-[#202122]",
+          "text": "تواصل معنا"
+        },
+        {
+          "href": "https://wa.me/97143402223?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D9%88%D8%AF%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AE%D8%AF%D9%85%D8%A9%20%D9%85%D8%B1%D8%B3%D9%8A%D8%AF%D8%B3%20%D8%A8%D9%86%D8%B2%20%D9%84%D8%AF%D9%89%20%D9%85%D8%B1%D9%83%D8%B2%20%D8%AF%D9%8A%D8%AC%D9%8A-%D8%AA%D9%83%20%D8%A8%D9%8A%D8%B1%D9%81%D9%88%D8%B1%D9%85%D8%A7%D9%86%D8%B3.%20%D8%B7%D8%B1%D8%A7%D8%B2%20%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A9%20%D9%88%D8%B3%D9%86%D8%AA%D9%87%D8%A7%3A%20",
+          "data-cta-placement": "hero",
+          "target": "_blank",
+          "rel": "noopener noreferrer",
+          "class": "btn-primary",
+          "text": "راسلنا عبر واتساب"
+        },
+        {
+          "href": "tel:+97143402223",
+          "data-cta-placement": "hero",
+          "class": "btn-secondary",
+          "text": "اتصل على +971 4 340 2223"
+        },
+        {
+          "href": "https://maps.google.com/?q=Al+Quoz+Industrial+Area+3+Dubai",
+          "data-cta-placement": "hero",
+          "target": "_blank",
+          "rel": "noopener noreferrer",
+          "class": "btn-secondary",
+          "text": "الاتجاهات إلى القوز"
+        },
+        {
+          "href": "https://wa.me/97143402223?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D9%88%D8%AF%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AE%D8%AF%D9%85%D8%A9%20%D9%85%D8%B1%D8%B3%D9%8A%D8%AF%D8%B3%20%D8%A8%D9%86%D8%B2%20%D9%84%D8%AF%D9%89%20%D9%85%D8%B1%D9%83%D8%B2%20%D8%AF%D9%8A%D8%AC%D9%8A-%D8%AA%D9%83%20%D8%A8%D9%8A%D8%B1%D9%81%D9%88%D8%B1%D9%85%D8%A7%D9%86%D8%B3.%20%D8%B7%D8%B1%D8%A7%D8%B2%20%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A9%20%D9%88%D8%B3%D9%86%D8%AA%D9%87%D8%A7%3A%20",
+          "target": "_blank",
+          "rel": "noopener noreferrer",
+          "class": "inline-flex items-center justify-center gap-2 bg-burnt-orange hover:bg-burnt-orange/90 text-black font-bold px-6 py-3 rounded-2xl transition-all duration-300 hover:scale-105 shadow-xl",
+          "data-cta-placement": "booking_section",
+          "text": "واتساب الآن"
+        },
+        {
+          "href": "tel:+97143402223",
+          "class": "inline-flex items-center justify-center gap-2 bg-off-white text-black hover:bg-white font-bold px-6 py-3 rounded-2xl transition-all duration-300 shadow-xl",
+          "data-cta-placement": "booking_section",
+          "text": "+971 4 340 2223"
+        },
+        {
+          "href": "https://maps.google.com/?q=Al+Quoz+Industrial+Area+3+Dubai",
+          "target": "_blank",
+          "rel": "noopener noreferrer",
+          "class": "mt-6 inline-flex text-sm font-medium text-white transition-colors hover:text-burnt-orange",
+          "text": "احصل على الاتجاهات إلى ورشتنا ←"
+        },
+        {
+          "href": "tel:+97143402223",
+          "class": "font-semibold text-off-white transition-colors hover:text-burnt-orange",
+          "text": "+971 4 340 2223"
+        },
+        {
+          "href": "https://wa.me/97143402223?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D9%88%D8%AF%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AE%D8%AF%D9%85%D8%A9%20%D9%85%D8%B1%D8%B3%D9%8A%D8%AF%D8%B3%20%D8%A8%D9%86%D8%B2%20%D9%84%D8%AF%D9%89%20%D9%85%D8%B1%D9%83%D8%B2%20%D8%AF%D9%8A%D8%AC%D9%8A-%D8%AA%D9%83%20%D8%A8%D9%8A%D8%B1%D9%81%D9%88%D8%B1%D9%85%D8%A7%D9%86%D8%B3.%20%D8%B7%D8%B1%D8%A7%D8%B2%20%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A9%20%D9%88%D8%B3%D9%86%D8%AA%D9%87%D8%A7%3A%20",
+          "data-cta-placement": "mobile_bar",
+          "target": "_blank",
+          "rel": "noopener noreferrer",
+          "class": "btn-primary justify-center px-3 py-3 text-sm",
+          "text": "واتساب"
+        },
+        {
+          "href": "tel:+97143402223",
+          "data-cta-placement": "mobile_bar",
+          "class": "btn-secondary justify-center px-3 py-3 text-sm",
+          "text": "اتصل بالورشة"
+        }
+      ]
+    }
+  ],
+  "publicFocal": [
+    {
+      "route": "/brands/mercedes-benz-service-dubai",
+      "status": 200,
+      "title": "Mercedes Repair & Service Dubai | Al Quoz | Digi-Tec",
+      "description": "Independent Mercedes repair and service in Al Quoz, Dubai since 2002. XENTRY diagnostics, maintenance, gearbox, AIRMATIC, AC and electrical work.",
+      "h1": [
+        {
+          "level": "h1",
+          "text": "Mercedes-Benz Repair & Service Dubai"
+        }
+      ],
+      "canonical": [
+        {
+          "rel": "canonical",
+          "href": "https://digitecme.com/brands/mercedes-benz-service-dubai"
+        }
+      ],
+      "hreflang": [
+        {
+          "rel": "alternate",
+          "hreflang": "en-AE",
+          "href": "https://digitecme.com/brands/mercedes-benz-service-dubai"
+        },
+        {
+          "rel": "alternate",
+          "hreflang": "ar-AE",
+          "href": "https://digitecme.com/ar/brands/mercedes-benz-service-dubai"
+        },
+        {
+          "rel": "alternate",
+          "hreflang": "x-default",
+          "href": "https://digitecme.com/brands/mercedes-benz-service-dubai"
+        }
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large"
+        }
+      ],
+      "cfCacheStatus": "DYNAMIC"
+    },
+    {
+      "route": "/ar/brands/mercedes-benz-service-dubai",
+      "status": 200,
+      "title": "إصلاح وصيانة مرسيدس في دبي | ديجي-تك",
+      "description": "ورشة مستقلة لصيانة وإصلاح مرسيدس في القوز، دبي. تشخيص XENTRY وفحص المحرك والقير والتعليق والتكييف والكهرباء مع توضيح النطاق والتكلفة قبل العمل.",
+      "h1": [
+        {
+          "level": "h1",
+          "text": "إصلاح وصيانة مرسيدس بنز في دبي"
+        }
+      ],
+      "canonical": [
+        {
+          "rel": "canonical",
+          "href": "https://digitecme.com/ar/brands/mercedes-benz-service-dubai"
+        }
+      ],
+      "hreflang": [
+        {
+          "rel": "alternate",
+          "hreflang": "en-AE",
+          "href": "https://digitecme.com/brands/mercedes-benz-service-dubai"
+        },
+        {
+          "rel": "alternate",
+          "hreflang": "ar-AE",
+          "href": "https://digitecme.com/ar/brands/mercedes-benz-service-dubai"
+        },
+        {
+          "rel": "alternate",
+          "hreflang": "x-default",
+          "href": "https://digitecme.com/brands/mercedes-benz-service-dubai"
+        }
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large"
+        }
+      ],
+      "cfCacheStatus": "DYNAMIC"
+    }
+  ],
+  "supportLinks": [
+    {
+      "route": "/",
+      "title": "Digi-Tec Performance Center | Independent Car Workshop Dubai",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large"
+        }
+      ],
+      "hubLinks": [
+        {
+          "class": "group flex h-28 w-44 items-center justify-center px-7 transition-colors hover:bg-white/[0.025]",
+          "aria-label": "Mercedes-Benz service and repair in Dubai",
+          "href": "/brands/mercedes-benz-service-dubai",
+          "text": ""
+        },
+        {
+          "class": "group block w-[17rem] sm:w-[21rem]",
+          "href": "/brands/mercedes-benz-service-dubai",
+          "text": "Mercedes Repair in Dubai Mercedes-Benz diagnostics, maintenance, and repair in Dubai."
+        },
+        {
+          "class": "block py-1.5 text-sm text-white/45 transition-colors hover:text-white",
+          "href": "/brands/mercedes-benz-service-dubai",
+          "text": "Mercedes Repair"
+        }
+      ]
+    },
+    {
+      "route": "/ar",
+      "title": "ديجي-تك | ورشة سيارات مستقلة في دبي منذ 2002",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large"
+        }
+      ],
+      "hubLinks": [
+        {
+          "class": "group flex h-28 w-44 items-center justify-center px-7 transition-colors hover:bg-white/[0.025]",
+          "aria-label": "Mercedes-Benz service and repair in Dubai",
+          "href": "/ar/brands/mercedes-benz-service-dubai",
+          "text": ""
+        },
+        {
+          "class": "group block w-[17rem] sm:w-[21rem]",
+          "href": "/ar/brands/mercedes-benz-service-dubai",
+          "text": "إصلاح مرسيدس في دبي خدمة وتشخيص وإصلاح متخصص لسيارات مرسيدس-بنز."
+        },
+        {
+          "class": "block py-1.5 text-sm text-white/45 transition-colors hover:text-white",
+          "href": "/ar/brands/mercedes-benz-service-dubai",
+          "text": "إصلاح مرسيدس"
+        }
+      ]
+    },
+    {
+      "route": "/services",
+      "title": "All Services | DIGI-TEC Performance Center Dubai",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large"
+        }
+      ],
+      "hubLinks": [
+        {
+          "class": "block py-1.5 text-sm text-white/45 transition-colors hover:text-white",
+          "href": "/brands/mercedes-benz-service-dubai",
+          "text": "Mercedes Repair"
+        }
+      ]
+    },
+    {
+      "route": "/ar/services",
+      "title": "خدمات صيانة وإصلاح السيارات في دبي | ديجي-تك",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large"
+        }
+      ],
+      "hubLinks": [
+        {
+          "class": "block py-1.5 text-sm text-white/45 transition-colors hover:text-white",
+          "href": "/ar/brands/mercedes-benz-service-dubai",
+          "text": "إصلاح مرسيدس"
+        }
+      ]
+    },
+    {
+      "route": "/blog/mercedes-benz-maintenance-guide-dubai",
+      "title": "Mercedes Maintenance Planning Dubai | Owner Guide",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large"
+        }
+      ],
+      "hubLinks": [
+        {
+          "class": "font-semibold text-burnt-orange underline underline-offset-4",
+          "href": "/brands/mercedes-benz-service-dubai",
+          "text": "Discuss the plan and book Mercedes service"
+        },
+        {
+          "class": "block py-1.5 text-sm text-white/45 transition-colors hover:text-white",
+          "href": "/brands/mercedes-benz-service-dubai",
+          "text": "Mercedes Repair"
+        }
+      ]
+    },
+    {
+      "route": "/ar/blog/mercedes-benz-maintenance-guide-dubai",
+      "title": "تخطيط صيانة مرسيدس في دبي | دليل المالك",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large"
+        }
+      ],
+      "hubLinks": [
+        {
+          "class": "font-semibold text-burnt-orange underline underline-offset-4",
+          "href": "/ar/brands/mercedes-benz-service-dubai",
+          "text": "مناقشة الخطة وحجز صيانة مرسيدس"
+        },
+        {
+          "class": "block py-1.5 text-sm text-white/45 transition-colors hover:text-white",
+          "href": "/ar/brands/mercedes-benz-service-dubai",
+          "text": "إصلاح مرسيدس"
+        }
+      ]
+    },
+    {
+      "route": "/blog/mercedes-service-cost-dubai-guide",
+      "title": "Mercedes Service Cost Dubai | A & B Scope | Digi-Tec",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large"
+        }
+      ],
+      "hubLinks": [
+        {
+          "class": "text-burnt-orange underline",
+          "href": "/brands/mercedes-benz-service-dubai",
+          "text": "Mercedes Service A/B and repair booking"
+        },
+        {
+          "class": "block py-1.5 text-sm text-white/45 transition-colors hover:text-white",
+          "href": "/brands/mercedes-benz-service-dubai",
+          "text": "Mercedes Repair"
+        }
+      ]
+    },
+    {
+      "route": "/blog/mercedes-service-intervals-dubai-heat",
+      "title": "Mercedes Service Intervals & ASSYST Dubai | Digi-Tec",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large"
+        }
+      ],
+      "hubLinks": [
+        {
+          "class": "text-burnt-orange underline",
+          "href": "/brands/mercedes-benz-service-dubai",
+          "text": "Mercedes maintenance and repair booking"
+        },
+        {
+          "class": "block py-1.5 text-sm text-white/45 transition-colors hover:text-white",
+          "href": "/brands/mercedes-benz-service-dubai",
+          "text": "Mercedes Repair"
+        }
+      ]
+    },
+    {
+      "route": "/services/mercedes-oil-change-dubai",
+      "title": "Mercedes Oil Change Dubai | MB-Approved Oil | Digi-Tec",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large"
+        }
+      ],
+      "hubLinks": [
+        {
+          "class": "hover:text-burnt-orange",
+          "href": "/brands/mercedes-benz-service-dubai",
+          "text": "Mercedes-Benz"
+        },
+        {
+          "class": "card-premium group flex h-full items-center justify-between gap-3 rounded-xl p-4 text-sm font-semibold text-white/70 hover:text-burnt-orange",
+          "href": "/brands/mercedes-benz-service-dubai#mercedes-maintenance-scope",
+          "text": "Mercedes Service A/B and maintenance booking"
+        },
+        {
+          "class": "group flex flex-col justify-between bg-burnt-orange/10 border border-burnt-orange/30 hover:bg-burnt-orange/20 rounded-2xl p-4 sm:p-5 transition-all duration-300",
+          "href": "/brands/mercedes-benz-service-dubai",
+          "text": "All Mercedes-Benz Services"
+        },
+        {
+          "class": "block py-1.5 text-sm text-white/45 transition-colors hover:text-white",
+          "href": "/brands/mercedes-benz-service-dubai",
+          "text": "Mercedes Repair"
+        }
+      ]
+    },
+    {
+      "route": "/ar/services/mercedes-oil-change-dubai",
+      "title": "تغيير زيت مرسيدس في دبي | المواصفة الصحيحة | ديجي تيك",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large"
+        }
+      ],
+      "hubLinks": [
+        {
+          "class": "hover:text-burnt-orange",
+          "href": "/ar/brands/mercedes-benz-service-dubai",
+          "text": "Mercedes-Benz"
+        },
+        {
+          "class": "group flex flex-col justify-between bg-burnt-orange/10 border border-burnt-orange/30 hover:bg-burnt-orange/20 rounded-2xl p-4 sm:p-5 transition-all duration-300",
+          "href": "/ar/brands/mercedes-benz-service-dubai",
+          "text": "جميع خدمات Mercedes-Benz"
+        },
+        {
+          "class": "block py-1.5 text-sm text-white/45 transition-colors hover:text-white",
+          "href": "/ar/brands/mercedes-benz-service-dubai",
+          "text": "إصلاح مرسيدس"
+        }
+      ]
+    },
+    {
+      "route": "/services/mercedes-diagnostics-dubai",
+      "title": "Mercedes Diagnostics Dubai | XENTRY Fault Tracing | DIGI-TEC",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large"
+        }
+      ],
+      "hubLinks": [
+        {
+          "class": "hover:text-burnt-orange",
+          "href": "/brands/mercedes-benz-service-dubai",
+          "text": "Mercedes-Benz"
+        },
+        {
+          "class": "group flex flex-col justify-between bg-burnt-orange/10 border border-burnt-orange/30 hover:bg-burnt-orange/20 rounded-2xl p-4 sm:p-5 transition-all duration-300",
+          "href": "/brands/mercedes-benz-service-dubai",
+          "text": "All Mercedes-Benz Services"
+        },
+        {
+          "class": "block py-1.5 text-sm text-white/45 transition-colors hover:text-white",
+          "href": "/brands/mercedes-benz-service-dubai",
+          "text": "Mercedes Repair"
+        }
+      ]
+    },
+    {
+      "route": "/blog/mercedes-c-class-service-dubai-guide",
+      "title": "Mercedes C-Class Service & Repair Dubai | Digi-Tec",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large"
+        }
+      ],
+      "hubLinks": [
+        {
+          "class": "block rounded-xl px-4 py-2.5 text-sm font-semibold hover:bg-white/10",
+          "href": "/ar/brands/mercedes-benz-service-dubai",
+          "text": "العربية — خدمات مرسيدس"
+        },
+        {
+          "class": "hover:text-burnt-orange",
+          "href": "/brands/mercedes-benz-service-dubai",
+          "text": "Mercedes-Benz"
+        },
+        {
+          "class": "mt-5 inline-flex items-center gap-2 text-sm font-semibold text-burnt-orange hover:underline",
+          "href": "/brands/mercedes-benz-service-dubai#mercedes-maintenance-scope",
+          "text": "Mercedes scheduled service and booking"
+        },
+        {
+          "class": "card-premium group rounded-2xl p-5 sm:p-6",
+          "href": "/brands/mercedes-benz-service-dubai#mercedes-maintenance-scope",
+          "text": "C-Class scheduled service Vehicle-specific Service A/B and maintenance items. View service"
+        },
+        {
+          "class": "btn-secondary",
+          "href": "/brands/mercedes-benz-service-dubai",
+          "text": "Return to Mercedes hub"
+        },
+        {
+          "class": "block py-1.5 text-sm text-white/45 transition-colors hover:text-white",
+          "href": "/brands/mercedes-benz-service-dubai",
+          "text": "Mercedes Repair"
+        }
+      ]
+    },
+    {
+      "route": "/blog/mercedes-e-class-service-dubai-guide",
+      "title": "Mercedes E-Class Service & Repair Dubai | Digi-Tec",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large"
+        }
+      ],
+      "hubLinks": [
+        {
+          "class": "block rounded-xl px-4 py-2.5 text-sm font-semibold hover:bg-white/10",
+          "href": "/ar/brands/mercedes-benz-service-dubai",
+          "text": "العربية — خدمات مرسيدس"
+        },
+        {
+          "class": "hover:text-burnt-orange",
+          "href": "/brands/mercedes-benz-service-dubai",
+          "text": "Mercedes-Benz"
+        },
+        {
+          "class": "mt-5 inline-flex items-center gap-2 text-sm font-semibold text-burnt-orange hover:underline",
+          "href": "/brands/mercedes-benz-service-dubai#mercedes-maintenance-scope",
+          "text": "Mercedes scheduled service and booking"
+        },
+        {
+          "class": "card-premium group rounded-2xl p-5 sm:p-6",
+          "href": "/brands/mercedes-benz-service-dubai#mercedes-maintenance-scope",
+          "text": "E-Class scheduled service Service items matched to engine, gearbox and history. View service"
+        },
+        {
+          "class": "btn-secondary",
+          "href": "/brands/mercedes-benz-service-dubai",
+          "text": "Return to Mercedes hub"
+        },
+        {
+          "class": "block py-1.5 text-sm text-white/45 transition-colors hover:text-white",
+          "href": "/brands/mercedes-benz-service-dubai",
+          "text": "Mercedes Repair"
+        }
+      ]
+    },
+    {
+      "route": "/blog/mercedes-s-class-service-dubai-guide",
+      "title": "Mercedes S-Class Service & Repair Dubai | Digi-Tec",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large"
+        }
+      ],
+      "hubLinks": [
+        {
+          "class": "block rounded-xl px-4 py-2.5 text-sm font-semibold hover:bg-white/10",
+          "href": "/ar/brands/mercedes-benz-service-dubai",
+          "text": "العربية — خدمات مرسيدس"
+        },
+        {
+          "class": "hover:text-burnt-orange",
+          "href": "/brands/mercedes-benz-service-dubai",
+          "text": "Mercedes-Benz"
+        },
+        {
+          "class": "mt-5 inline-flex items-center gap-2 text-sm font-semibold text-burnt-orange hover:underline",
+          "href": "/brands/mercedes-benz-service-dubai#mercedes-maintenance-scope",
+          "text": "Mercedes scheduled service and booking"
+        },
+        {
+          "class": "card-premium group rounded-2xl p-5 sm:p-6",
+          "href": "/brands/mercedes-benz-service-dubai#mercedes-maintenance-scope",
+          "text": "S-Class scheduled service Maintenance scoped to the exact engine and equipment. View service"
+        },
+        {
+          "class": "btn-secondary",
+          "href": "/brands/mercedes-benz-service-dubai",
+          "text": "Return to Mercedes hub"
+        },
+        {
+          "class": "block py-1.5 text-sm text-white/45 transition-colors hover:text-white",
+          "href": "/brands/mercedes-benz-service-dubai",
+          "text": "Mercedes Repair"
+        }
+      ]
+    },
+    {
+      "route": "/blog/mercedes-g63-service-dubai-guide",
+      "title": "Mercedes-AMG G63 Service & Repair Dubai | Digi-Tec",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large"
+        }
+      ],
+      "hubLinks": [
+        {
+          "class": "block rounded-xl px-4 py-2.5 text-sm font-semibold hover:bg-white/10",
+          "href": "/ar/brands/mercedes-benz-service-dubai",
+          "text": "العربية — خدمات مرسيدس"
+        },
+        {
+          "class": "hover:text-burnt-orange",
+          "href": "/brands/mercedes-benz-service-dubai",
+          "text": "Mercedes-Benz"
+        },
+        {
+          "class": "mt-5 inline-flex items-center gap-2 text-sm font-semibold text-burnt-orange hover:underline",
+          "href": "/brands/mercedes-benz-service-dubai#mercedes-maintenance-scope",
+          "text": "Mercedes scheduled service and booking"
+        },
+        {
+          "class": "card-premium group rounded-2xl p-5 sm:p-6",
+          "href": "/brands/mercedes-benz-service-dubai#mercedes-maintenance-scope",
+          "text": "G63 scheduled maintenance Oil, filters and inspection items scoped to the exact engine and service history. View service"
+        },
+        {
+          "class": "btn-secondary",
+          "href": "/brands/mercedes-benz-service-dubai",
+          "text": "Return to Mercedes hub"
+        },
+        {
+          "class": "block py-1.5 text-sm text-white/45 transition-colors hover:text-white",
+          "href": "/brands/mercedes-benz-service-dubai",
+          "text": "Mercedes Repair"
+        }
+      ]
+    },
+    {
+      "route": "/services/mercedes-service-dubai"
+    },
+    {
+      "route": "/services/mercedes-repair-dubai"
+    },
+    {
+      "route": "/best-mercedes-workshop-dubai"
+    }
+  ],
+  "publicAliasResults": [
+    {
+      "route": "/services/mercedes-service-dubai",
+      "status": 301,
+      "location": "https://digitecme.com/brands/mercedes-benz-service-dubai",
+      "title": "301 Moved Permanently",
+      "canonical": []
+    },
+    {
+      "route": "/services/mercedes-repair-dubai",
+      "status": 301,
+      "location": "https://digitecme.com/brands/mercedes-benz-service-dubai",
+      "title": "301 Moved Permanently",
+      "canonical": []
+    },
+    {
+      "route": "/best-mercedes-workshop-dubai",
+      "status": 301,
+      "location": "https://digitecme.com/brands/mercedes-benz-service-dubai",
+      "title": "301 Moved Permanently",
+      "canonical": []
+    }
+  ],
+  "googleSelectedCanonical": "Unavailable. Self-declared canonical, HTTP success, crawlable content and sitemap membership do not establish indexed status or Google-selected canonical. Need authorized URL Inspection evidence."
+}

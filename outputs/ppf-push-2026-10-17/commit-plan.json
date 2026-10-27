@@ -1,0 +1,1538 @@
+{
+  "branch": "main",
+  "base": "5461e2c0f28c006f45196f6d9a7f4dcf312f464c",
+  "files": [
+    {
+      "file": "cloudflare/production-seo-router.js",
+      "bytes": 2376,
+      "sha256": "b96d330f3e64dc6be60ff86580132139fa01eb5fa4a1774701954ca57abafc8f"
+    },
+    {
+      "file": "cloudflare/routing-response-data.js",
+      "bytes": 83004,
+      "sha256": "81d88b0bc0dfb8a97221111494deff467958dd36efcf4802fd58bc69c1b86a27"
+    },
+    {
+      "file": "docs/seo/ppf-phase1-2026-10-17.md",
+      "bytes": 22297,
+      "sha256": "455cae935e9b42d273c16e2c13410d93da5cb93d477e966bd38528201a52bcfb"
+    },
+    {
+      "file": "docs/seo/ppf-phase2-2026-10-17.md",
+      "bytes": 23159,
+      "sha256": "cf8a51ce3061624c84ebd2d6c508f7d70698014020ceb7a11569cf0754898aba"
+    },
+    {
+      "file": "docs/seo/ppf-phase3-4-2026-10-17.md",
+      "bytes": 26762,
+      "sha256": "f224fa6987279cce703ae89780b8d63205e3d836693366a55e36122c7705483c"
+    },
+    {
+      "file": "docs/seo/protection-release-validation.json",
+      "bytes": 1605,
+      "sha256": "5bf229b97e973c6b3f6a03df2661c76b411b876ba38e35fb1a794e2f314ec841"
+    },
+    {
+      "file": "docs/seo/query-release-validation.json",
+      "bytes": 263,
+      "sha256": "8e384fd3c68555fdcadbb6c0dfca5105e26bcb1ce55da943bff22a459b568263"
+    },
+    {
+      "file": "docs/seo/route-schema-matrix.csv",
+      "bytes": 811722,
+      "sha256": "1b1ee3c4202174fb42c4e2721a4c69ba0b1445b2555c5b8882f25d4af6deb6a5"
+    },
+    {
+      "file": "index.html",
+      "bytes": 10744,
+      "sha256": "af94e9be5df1e1cbe1c556ed977447ab128ae1f950f24bf6a7570bc9420f9215"
+    },
+    {
+      "file": "outputs/ppf-phase1-2026-10-17/audit-ownership.md",
+      "bytes": 15944,
+      "sha256": "5d1130d53108c306d72a146ae13d15ce63165d9a57f975feee7147db31a55a31"
+    },
+    {
+      "file": "outputs/ppf-phase1-2026-10-17/baseline/audit-live.mjs",
+      "bytes": 7171,
+      "sha256": "66cfc0813821d860f75c1a06ac6b50966f988cf95a5302a28414f2c09c440474"
+    },
+    {
+      "file": "outputs/ppf-phase1-2026-10-17/baseline/branch.txt",
+      "bytes": 6,
+      "sha256": "d71df7c908e4361c585208e57fec982f2e6626691991373056b08ebc1c39e5dc"
+    },
+    {
+      "file": "outputs/ppf-phase1-2026-10-17/baseline/browser-live.json",
+      "bytes": 41232,
+      "sha256": "3b5ead4b98f4838a044f05beefe585738c30ad0c85ffb8c2bf256fc554c64ef6"
+    },
+    {
+      "file": "outputs/ppf-phase1-2026-10-17/baseline/browser-live.mjs",
+      "bytes": 3960,
+      "sha256": "ab650a8370f85a1b0d880d2c00576f6340da0bea86c44e0687fe3427c0a6bcd5"
+    },
+    {
+      "file": "outputs/ppf-phase1-2026-10-17/baseline/git-status.txt",
+      "bytes": 2319,
+      "sha256": "7b508711fa970e9aa720026f8bfedfd896d2de0f9a09e0e7783b95b0b787b0e7"
+    },
+    {
+      "file": "outputs/ppf-phase1-2026-10-17/baseline/head.txt",
+      "bytes": 42,
+      "sha256": "94a4ab719b089bc005328bb3740384a340a75eaee3179e528bb80859f5c6aa1f"
+    },
+    {
+      "file": "outputs/ppf-phase1-2026-10-17/baseline/html/ar.html",
+      "bytes": 147133,
+      "sha256": "4725e8c25e48bfdca25cf0388b8af2aa11e123b107918e9c8b0bb3e6dc179a01"
+    },
+    {
+      "file": "outputs/ppf-phase1-2026-10-17/baseline/html/ar__blog__ceramic-coating-vs-ppf-dubai.html",
+      "bytes": 41226,
+      "sha256": "4ac54e18d707568204d1e38ccc7c36a9c6ad8037b72ed1c8d4dda4c367554963"
+    },
+    {
+      "file": "outputs/ppf-phase1-2026-10-17/baseline/html/ar__services.html",
+      "bytes": 55465,
+      "sha256": "331d840ef856b18b2aa7883623400c340280f1a6328f9da35e6fe181c049f5d7"
+    },
+    {
+      "file": "outputs/ppf-phase1-2026-10-17/baseline/html/ar__services__car-detailing.html",
+      "bytes": 163270,
+      "sha256": "e33ebc55a329fd0e8670b5e05178e62828b3a563ec9aca86f517ff2c474dd186"
+    },
+    {
+      "file": "outputs/ppf-phase1-2026-10-17/baseline/html/ar__services__car-polishing-dubai.html",
+      "bytes": 163270,
+      "sha256": "9c1b18a6448eb26f7b676cbc6609f11c6e480d2ed6b23baa3bf34b49faa86ab9"
+    },
+    {
+      "file": "outputs/ppf-phase1-2026-10-17/baseline/html/ar__services__ceramic-coating.html",
+      "bytes": 81429,
+      "sha256": "40b762f257f958ece5669127094fcbba869e832e09f2bebee7a2114346a892d2"
+    },
+    {
+      "file": "outputs/ppf-phase1-2026-10-17/baseline/html/ar__services__paint-protection-dubai.html",
+      "bytes": 49653,
+      "sha256": "7f88c2a762192c7fe387461e3b4edbcbeb84223d95e344ff017f977c6d70931e"
+    },
+    {
+      "file": "outputs/ppf-phase1-2026-10-17/baseline/html/ar__services__paint-protection-film.html",
+      "bytes": 82285,
+      "sha256": "d443a8821eac9a0d2b47d025e919197d11078c50b33684e510a31540375c5b37"
+    },
+    {
+      "file": "outputs/ppf-phase1-2026-10-17/baseline/html/blog__ceramic-coating-vs-ppf-dubai.html",
+      "bytes": 42849,
+      "sha256": "3ab26780eeaa4c55b6c710e488088e914100c8ece3702d2f165a91d422ee2122"
+    },
+    {
+      "file": "outputs/ppf-phase1-2026-10-17/baseline/html/home.html",
+      "bytes": 163270,
+      "sha256": "c0d0c4087b76d56d3099bedfed45c0fd9bdd255de60a3e4892bb5ae909eab333"
+    },
+    {
+      "file": "outputs/ppf-phase1-2026-10-17/baseline/html/services.html",
+      "bytes": 56435,
+      "sha256": "034e6b200d6f6ce0c8f073ce6465b9da86c0f69cb2f32e9a3af10736c7e20c4a"
+    },
+    {
+      "file": "outputs/ppf-phase1-2026-10-17/baseline/html/services__car-detailing.html",
+      "bytes": 163270,
+      "sha256": "5277f64dbbe229e3a0e46d01cd7a0157c92448be6cf87d64e6c8302c4c02072e"
+    },
+    {
+      "file": "outputs/ppf-phase1-2026-10-17/baseline/html/services__car-polishing-dubai.html",
+      "bytes": 79649,
+      "sha256": "a0afa0c82450c441501b3b82d9214f6ed873fa3b5cfd0517d05e4e431c7a96a4"
+    },
+    {
+      "file": "outputs/ppf-phase1-2026-10-17/baseline/html/services__ceramic-coating.html",
+      "bytes": 84314,
+      "sha256": "38086da726d4e8e0c5bdb364bc10387ba51982628263521df17f1b8571a57345"
+    },
+    {
+      "file": "outputs/ppf-phase1-2026-10-17/baseline/html/services__paint-protection-dubai.html",
+      "bytes": 42427,
+      "sha256": "2683dca6007791befc76c2e343570fd19db9fb32fd5ae315c80bfd0df5b74e76"
+    },
+    {
+      "file": "outputs/ppf-phase1-2026-10-17/baseline/html/services__paint-protection-film.html",
+      "bytes": 63458,
+      "sha256": "404e90c8f8b6c8f02747cc243e9e2f5464b782938ef1f150c7296892eb1aa849"
+    },
+    {
+      "file": "outputs/ppf-phase1-2026-10-17/baseline/live-audit.json",
+      "bytes": 471412,
+      "sha256": "b574d9d003026fb53a8727e01fc71982ac144bdaa7eae1bad3dabb920ed7c3c4"
+    },
+    {
+      "file": "outputs/ppf-phase1-2026-10-17/baseline/master-validation-original.json",
+      "bytes": 10207,
+      "sha256": "6c164ea2102776061f84fd6fa16963963552f33b9406fc65d7e9f2aaa41cbd12"
+    },
+    {
+      "file": "outputs/ppf-phase1-2026-10-17/baseline/metadata-before.json",
+      "bytes": 10385,
+      "sha256": "73aebe84b10936778bc7062352cd61f96a84ff97a16c3a865ec33b0b03cd0988"
+    },
+    {
+      "file": "outputs/ppf-phase1-2026-10-17/baseline/robots.txt",
+      "bytes": 292,
+      "sha256": "e3c8657fde29aa5504479e3b941052f85278b72811ebd9429bf94fb80eba8b61"
+    },
+    {
+      "file": "outputs/ppf-phase1-2026-10-17/baseline/screenshots/ar-1440.png",
+      "bytes": 773094,
+      "sha256": "a36933a2a442398d81d5d0fe641776ee6a2b6d60a0300e49b259ae7e888e5a3a"
+    },
+    {
+      "file": "outputs/ppf-phase1-2026-10-17/baseline/screenshots/ar-320.png",
+      "bytes": 163546,
+      "sha256": "f927de3bd4fd947a9613e61105e2b949ba2e62e684ad29716cc7f87db0b6e255"
+    },
+    {
+      "file": "outputs/ppf-phase1-2026-10-17/baseline/screenshots/ar-390.png",
+      "bytes": 727079,
+      "sha256": "844db923a11139814b5f1cf7a46a28a4b06b902aeabb81b9440f95f927e0bc2c"
+    },
+    {
+      "file": "outputs/ppf-phase1-2026-10-17/baseline/screenshots/en-1440.png",
+      "bytes": 717075,
+      "sha256": "30ef989367edceeb0c7a36ccca406643ab094a6c47e07104d7de7bc69fd37167"
+    },
+    {
+      "file": "outputs/ppf-phase1-2026-10-17/baseline/screenshots/en-320.png",
+      "bytes": 39673,
+      "sha256": "4b62c391a104eba2d6caedfd02fee5bcac89f0f6f6d4e6a911cf0436a0afa37e"
+    },
+    {
+      "file": "outputs/ppf-phase1-2026-10-17/baseline/screenshots/en-390.png",
+      "bytes": 1053549,
+      "sha256": "451047176e3051cb160ef444bd9629e7eaf780d774ff967c5a5e6fc9533a12a1"
+    },
+    {
+      "file": "outputs/ppf-phase1-2026-10-17/baseline/sitemap.xml",
+      "bytes": 129276,
+      "sha256": "3c67a69df08429f80f2f9b2e798b3a25cc9d273a9668b935f782d914fb8f1af9"
+    },
+    {
+      "file": "outputs/ppf-phase1-2026-10-17/baseline/technical-baseline.md",
+      "bytes": 12453,
+      "sha256": "e876aeb4aef965cea451d270a62a0a3a011a69bb468cd2e104f30386ad4a99bc"
+    },
+    {
+      "file": "outputs/ppf-phase1-2026-10-17/browser/ar-quote-320-dark.png",
+      "bytes": 34757,
+      "sha256": "ecc21a3aff4225cbd9006dc1eb49435cc9dc30fbc8ad75d011ec448c9e181895"
+    },
+    {
+      "file": "outputs/ppf-phase1-2026-10-17/browser/ar-quote-320-light.png",
+      "bytes": 34913,
+      "sha256": "416ad5288404eb4f79ed0a417dce7de5820e47286d306bbb92288b6bae21e55b"
+    },
+    {
+      "file": "outputs/ppf-phase1-2026-10-17/browser/ar-quote-390-dark.png",
+      "bytes": 34793,
+      "sha256": "bd32a0c5fdd887ed57d73a84e5922a26e9a00f5651bcdef35a2f9dc3a692af33"
+    },
+    {
+      "file": "outputs/ppf-phase1-2026-10-17/browser/ar-quote-390-light.png",
+      "bytes": 34910,
+      "sha256": "42c2a55ed03314a689198137e7d4aa10633ddcd3b9213e18f64ade1d64037cf7"
+    },
+    {
+      "file": "outputs/ppf-phase1-2026-10-17/browser/arabic-quote-320.png",
+      "bytes": 24400,
+      "sha256": "da6a659bef158dffac66e7b099f7bd05135e2d263a1cd15887035a7916c9ef7d"
+    },
+    {
+      "file": "outputs/ppf-phase1-2026-10-17/browser/arabic-quote-390.png",
+      "bytes": 24198,
+      "sha256": "5c1adf82376a8db99c31ea001e7d06de524da17b81314f611f149b34a4f17aeb"
+    },
+    {
+      "file": "outputs/ppf-phase1-2026-10-17/browser/browser-results.json",
+      "bytes": 1089,
+      "sha256": "34f703dcac84f170368a66749baad85b79c38da3e3c187754c5ffdeda69a6bf2"
+    },
+    {
+      "file": "outputs/ppf-phase1-2026-10-17/browser/desktop-full.png",
+      "bytes": 1967310,
+      "sha256": "6c4f4a6f64dbd6f2974d0577ffe66554db4f9ec49fdf479a88afb521861fa9cc"
+    },
+    {
+      "file": "outputs/ppf-phase1-2026-10-17/browser/desktop.png",
+      "bytes": 724222,
+      "sha256": "769586bcdd212a61f2bae0a228eab1a5ab3dc1f5fcd322e171ca70dab255c56b"
+    },
+    {
+      "file": "outputs/ppf-phase1-2026-10-17/browser/en-quote-320-dark.png",
+      "bytes": 41017,
+      "sha256": "5f9b08417af72ddc960b282c5b09fff31f02b25cd8a16ebb0df3ccbda1269a1f"
+    },
+    {
+      "file": "outputs/ppf-phase1-2026-10-17/browser/en-quote-320-light.png",
+      "bytes": 40765,
+      "sha256": "2a3632036c3c888b39446b1ab635562af94115f2c894eaf32847fc26026e7546"
+    },
+    {
+      "file": "outputs/ppf-phase1-2026-10-17/browser/en-quote-390-dark.png",
+      "bytes": 40795,
+      "sha256": "b1b0c7d7618cf87602f6b6fe1967a3f3f17bee1bcf017551d7b9b31999c828a7"
+    },
+    {
+      "file": "outputs/ppf-phase1-2026-10-17/browser/en-quote-390-light.png",
+      "bytes": 40553,
+      "sha256": "9d1568d56949de49e7d0a3628e91fcdd498a96435aae48fb9664d305c76daefd"
+    },
+    {
+      "file": "outputs/ppf-phase1-2026-10-17/browser/light-coverage.png",
+      "bytes": 114027,
+      "sha256": "423dc005f85db8b2e04f4d5bf2d4db765519a1ecfa6f0b2335052fc558291a8a"
+    },
+    {
+      "file": "outputs/ppf-phase1-2026-10-17/browser/light-full.png",
+      "bytes": 1991381,
+      "sha256": "0fa787d33c0bbd8597178b7f490aa534d9d09407ed82520fe4cf3be896a87641"
+    },
+    {
+      "file": "outputs/ppf-phase1-2026-10-17/browser/mobile-320.png",
+      "bytes": 40657,
+      "sha256": "f5e1d2cd11c41fe62bf23b6e9786d6763fcea720c24ed8b775229e62c4ae31a0"
+    },
+    {
+      "file": "outputs/ppf-phase1-2026-10-17/browser/mobile-390.png",
+      "bytes": 48725,
+      "sha256": "d9b45c5b100f98a2699e652e1578f0ec76243ba53be1a610b4f4e7f8ef515d4e"
+    },
+    {
+      "file": "outputs/ppf-phase1-2026-10-17/browser/mobile-full.png",
+      "bytes": 1338746,
+      "sha256": "f36a43e267374f9baa2e873d7aa9ecefc607bbe8ba22e51886354da3ea3f4e05"
+    },
+    {
+      "file": "outputs/ppf-phase1-2026-10-17/browser/workshop.png",
+      "bytes": 530999,
+      "sha256": "d16a80a1dd4d80e21673117843dc61b84b7a33d8156516ef4ad76b58e200acaa"
+    },
+    {
+      "file": "outputs/ppf-phase1-2026-10-17/build-results.json",
+      "bytes": 3031,
+      "sha256": "e27d70d9afa4923e068ad58c345d6acc7dacc2ebe6ffd279d78268ffe844d6fe"
+    },
+    {
+      "file": "outputs/ppf-phase1-2026-10-17/funnel-audit.md",
+      "bytes": 10674,
+      "sha256": "d0857e9ee4141fafae23581e872104531327f2bf56eebe408f0a2082f5e8379f"
+    },
+    {
+      "file": "outputs/ppf-phase1-2026-10-17/journey-results.json",
+      "bytes": 1263,
+      "sha256": "64574d285984bcde381dfe63f01da6db3d0ca8013b6a011848658a019431b5eb"
+    },
+    {
+      "file": "outputs/ppf-phase1-2026-10-17/local-verification.json",
+      "bytes": 3105,
+      "sha256": "3bb1f60148da35e6e1bf9f0b88b2c44c641f6879b5afc8500650891d8f109dcc"
+    },
+    {
+      "file": "outputs/ppf-phase1-2026-10-17/master-validation.json",
+      "bytes": 10181,
+      "sha256": "0c7b223a38fd295381b398ccd3b159565bdeb054a90550aa424c67d51b3ef0c2"
+    },
+    {
+      "file": "outputs/ppf-phase1-2026-10-17/metadata-after.json",
+      "bytes": 15855,
+      "sha256": "8e91a4f885e51b1e632be7a3680826ae450ae117a13a3733f676aba9a45b4b13"
+    },
+    {
+      "file": "outputs/ppf-phase1-2026-10-17/metadata-before-after.csv",
+      "bytes": 11203,
+      "sha256": "6d4d72ba175964bb6b8c080e6ce266a3bd0e67e3a27e940e95849b9b85fbc6cc"
+    },
+    {
+      "file": "outputs/ppf-phase1-2026-10-17/modified-tracked-files.txt",
+      "bytes": 615,
+      "sha256": "23c9fdec288ddb6a686f00dbb01d71a339ba2adcd2ae253beb6ee9607df20858"
+    },
+    {
+      "file": "outputs/ppf-phase1-2026-10-17/phase1-tracked.patch",
+      "bytes": 160733,
+      "sha256": "5ab01d3f0ddfd4f09c78bb749d72840d69d34bae957ea5a346797364e2883487"
+    },
+    {
+      "file": "outputs/ppf-phase1-2026-10-17/run-journeys.mjs",
+      "bytes": 1301,
+      "sha256": "0ee3b8e4cba0676492ae8cd1634a168e9850d9afdddbadf0dc5201914f29ce3d"
+    },
+    {
+      "file": "outputs/ppf-phase1-2026-10-17/source-manifest.json",
+      "bytes": 80408,
+      "sha256": "c5c1ef0d1ecd92cfa462ac373ec17f8344472826001ed751b5fe4f0f85dc0731"
+    },
+    {
+      "file": "outputs/ppf-phase1-2026-10-17/verify-local.mjs",
+      "bytes": 21675,
+      "sha256": "a5f09fb29c3fba943e299c27a92bb1f8524be1cbde01d8246c4a46c6f49024a1"
+    },
+    {
+      "file": "outputs/ppf-phase2-2026-10-17/baseline/branch.txt",
+      "bytes": 6,
+      "sha256": "d71df7c908e4361c585208e57fec982f2e6626691991373056b08ebc1c39e5dc"
+    },
+    {
+      "file": "outputs/ppf-phase2-2026-10-17/baseline/git-status.txt",
+      "bytes": 3060,
+      "sha256": "b3b2b18e7e65a752896a525d68b1ee383ce9016eb9f4f5c121e7222e38eda414"
+    },
+    {
+      "file": "outputs/ppf-phase2-2026-10-17/baseline/head.txt",
+      "bytes": 42,
+      "sha256": "94a4ab719b089bc005328bb3740384a340a75eaee3179e528bb80859f5c6aa1f"
+    },
+    {
+      "file": "outputs/ppf-phase2-2026-10-17/baseline/master-validation-original.json",
+      "bytes": 10207,
+      "sha256": "6c164ea2102776061f84fd6fa16963963552f33b9406fc65d7e9f2aaa41cbd12"
+    },
+    {
+      "file": "outputs/ppf-phase2-2026-10-17/baseline/metadata-before.json",
+      "bytes": 15855,
+      "sha256": "8e91a4f885e51b1e632be7a3680826ae450ae117a13a3733f676aba9a45b4b13"
+    },
+    {
+      "file": "outputs/ppf-phase2-2026-10-17/baseline/phase1-comparison.json",
+      "bytes": 80,
+      "sha256": "f1692209c1b7848fad4a13bba765d96ae37375fafcc4f1004af3913256abe22b"
+    },
+    {
+      "file": "outputs/ppf-phase2-2026-10-17/browser/ar-quote-320-dark.png",
+      "bytes": 37394,
+      "sha256": "598a3070dc28d4f90883ba7aba8abbabfc9a33230951fa80b7cb0c872ef0775b"
+    },
+    {
+      "file": "outputs/ppf-phase2-2026-10-17/browser/ar-quote-320-light.png",
+      "bytes": 37465,
+      "sha256": "08ed6907da00586a8a0dc6f9c3d50b0a579f173ac98187edbbec7a1e256beac7"
+    },
+    {
+      "file": "outputs/ppf-phase2-2026-10-17/browser/ar-quote-390-dark.png",
+      "bytes": 37373,
+      "sha256": "308218b82f8d300ba9c3be58c42144784da6877fe62c9e4a1a9b9601fde96f21"
+    },
+    {
+      "file": "outputs/ppf-phase2-2026-10-17/browser/ar-quote-390-light.png",
+      "bytes": 37534,
+      "sha256": "f6e8db6f5ff13ef0c3a8650c1c7b1bc5eb2b79788e462bc51271b8ca557e627d"
+    },
+    {
+      "file": "outputs/ppf-phase2-2026-10-17/browser/arabic-quote-320.png",
+      "bytes": 23796,
+      "sha256": "659cd25c6a3ac453d2ee3d91a8955b31992171aea1e23bbdff3623b21f11f51d"
+    },
+    {
+      "file": "outputs/ppf-phase2-2026-10-17/browser/arabic-quote-390.png",
+      "bytes": 24012,
+      "sha256": "e10fea8816e3685e288aba5a45d6c54915c936fa7d9e91c080847d79cbd5aa8f"
+    },
+    {
+      "file": "outputs/ppf-phase2-2026-10-17/browser/browser-results.json",
+      "bytes": 1202,
+      "sha256": "b26c8e6e21d95dc20afa47e2bdfba19b25a3422d7c6d8767647baa285d097057"
+    },
+    {
+      "file": "outputs/ppf-phase2-2026-10-17/browser/desktop-full.png",
+      "bytes": 1991604,
+      "sha256": "d67b970fa2967431032fc92ec258a793adea84747eae3201804d420c6574bf69"
+    },
+    {
+      "file": "outputs/ppf-phase2-2026-10-17/browser/desktop.png",
+      "bytes": 724222,
+      "sha256": "769586bcdd212a61f2bae0a228eab1a5ab3dc1f5fcd322e171ca70dab255c56b"
+    },
+    {
+      "file": "outputs/ppf-phase2-2026-10-17/browser/en-quote-320-dark.png",
+      "bytes": 43889,
+      "sha256": "c45327fb28642e5ff3dd11cac60ca4f7e1c7aa11e8e97812fd1e8cc9c1d577e7"
+    },
+    {
+      "file": "outputs/ppf-phase2-2026-10-17/browser/en-quote-320-light.png",
+      "bytes": 43449,
+      "sha256": "3e5c9ef41f0c0aa03315fdd33e766318505808b97e59887bf59fe4f326f3c0e6"
+    },
+    {
+      "file": "outputs/ppf-phase2-2026-10-17/browser/en-quote-390-dark.png",
+      "bytes": 43093,
+      "sha256": "aac6c053caa71fbd446f95e707795587acb9db60dfca3085e488269cb86dfff9"
+    },
+    {
+      "file": "outputs/ppf-phase2-2026-10-17/browser/en-quote-390-light.png",
+      "bytes": 42879,
+      "sha256": "ce38bb5987fb233207e4195e3a4ed8e8f672f780a1e7c3c4618c4378d2493de7"
+    },
+    {
+      "file": "outputs/ppf-phase2-2026-10-17/browser/light-coverage.png",
+      "bytes": 114027,
+      "sha256": "423dc005f85db8b2e04f4d5bf2d4db765519a1ecfa6f0b2335052fc558291a8a"
+    },
+    {
+      "file": "outputs/ppf-phase2-2026-10-17/browser/light-full.png",
+      "bytes": 2007131,
+      "sha256": "2de5cd5c51a067260e7a953dbff1182e4ada574726b2cfbd522aa1504a96a567"
+    },
+    {
+      "file": "outputs/ppf-phase2-2026-10-17/browser/mobile-320.png",
+      "bytes": 40657,
+      "sha256": "f5e1d2cd11c41fe62bf23b6e9786d6763fcea720c24ed8b775229e62c4ae31a0"
+    },
+    {
+      "file": "outputs/ppf-phase2-2026-10-17/browser/mobile-390.png",
+      "bytes": 48725,
+      "sha256": "d9b45c5b100f98a2699e652e1578f0ec76243ba53be1a610b4f4e7f8ef515d4e"
+    },
+    {
+      "file": "outputs/ppf-phase2-2026-10-17/browser/mobile-full.png",
+      "bytes": 1360015,
+      "sha256": "b4aeb7af4e2b6c4172229f0c065a52bee042c47a283b3f1619a3c450a4d6b36e"
+    },
+    {
+      "file": "outputs/ppf-phase2-2026-10-17/browser/workshop.png",
+      "bytes": 530964,
+      "sha256": "779be521333b47c30634ce8cdaa93fcdeddbd3a718127b8debb5beb4038ff1ff"
+    },
+    {
+      "file": "outputs/ppf-phase2-2026-10-17/campaign-spec-validation.json",
+      "bytes": 707,
+      "sha256": "e1baa2d99fbd6fe8325a53e6eb97d59224b791ac4951dd1ba6fb2b7735b3d206"
+    },
+    {
+      "file": "outputs/ppf-phase2-2026-10-17/finalize-evidence.mjs",
+      "bytes": 2797,
+      "sha256": "eb350c0e27e0f79a12167f0477b5e30cc71b5a6c4a105a8f93d860582277dba1"
+    },
+    {
+      "file": "outputs/ppf-phase2-2026-10-17/gbp-checklist.md",
+      "bytes": 11243,
+      "sha256": "8507c05d2319d0ed9838adeb4a4fe4eb12846402d99693c8b3b92632b0414c2d"
+    },
+    {
+      "file": "outputs/ppf-phase2-2026-10-17/google-ads-spec.csv",
+      "bytes": 46160,
+      "sha256": "bc0e9d5285044b6343fe0ffb9ced14e5af150a0dae02d661f5e852230447a8f0"
+    },
+    {
+      "file": "outputs/ppf-phase2-2026-10-17/lead-attribution-crm-spec.md",
+      "bytes": 13436,
+      "sha256": "f8a862c2ea5d529b298630a55494062585511d1a1dc988c69142f36a00ff30ac"
+    },
+    {
+      "file": "outputs/ppf-phase2-2026-10-17/lead-model-test-results.json",
+      "bytes": 11824,
+      "sha256": "c1ac31ee4d03744a488ebcef1ba4351a11428fec5f6465fe75f6ec85d226226f"
+    },
+    {
+      "file": "outputs/ppf-phase2-2026-10-17/lead-model.schema.json",
+      "bytes": 8865,
+      "sha256": "942704b8664c4e5a477a4c44ad6a72437ccc3dfc880fed31090531ff6bc9276a"
+    },
+    {
+      "file": "outputs/ppf-phase2-2026-10-17/lead-register-template.csv",
+      "bytes": 387,
+      "sha256": "2b1ba80d0076b9c3a889fad792a241ade894e3cd35ee044fcc789a57f856ceaf"
+    },
+    {
+      "file": "outputs/ppf-phase2-2026-10-17/local-verification.json",
+      "bytes": 3105,
+      "sha256": "ba79e6fc45ac7eba919e02421e1e0f4332789ebdcbf8ea9d2bab3406d0b4c7d0"
+    },
+    {
+      "file": "outputs/ppf-phase2-2026-10-17/metadata-after.json",
+      "bytes": 15855,
+      "sha256": "8e91a4f885e51b1e632be7a3680826ae450ae117a13a3733f676aba9a45b4b13"
+    },
+    {
+      "file": "outputs/ppf-phase2-2026-10-17/metadata-before-after.csv",
+      "bytes": 11851,
+      "sha256": "0f8377b233126e49d1e9f7505e89fed20d0e6925a7af7a74067c4ad90f4fc5a6"
+    },
+    {
+      "file": "outputs/ppf-phase2-2026-10-17/modified-files.csv",
+      "bytes": 1766,
+      "sha256": "a145814363d88662a2e26554e28e76cee11ac7dc6b04cbcdaf2d7556e933749c"
+    },
+    {
+      "file": "outputs/ppf-phase2-2026-10-17/modified-files.json",
+      "bytes": 4023,
+      "sha256": "cfff288531c744b1182962b81b02f5a6b715f1c904e5637f2f230c540c122f30"
+    },
+    {
+      "file": "outputs/ppf-phase2-2026-10-17/paid-campaign-plan.md",
+      "bytes": 19800,
+      "sha256": "e4d5c8a03deddd0a0697ca0c5457c1d0501c69d39e548bf5e3c21c2ab8d7486f"
+    },
+    {
+      "file": "outputs/ppf-phase2-2026-10-17/phase2-only.patch",
+      "bytes": 136791,
+      "sha256": "de8a3e25c3d9ec981f0a40dd93d57a1d704469f65a5fced72f77104702b4414f"
+    },
+    {
+      "file": "outputs/ppf-phase2-2026-10-17/production-release-blockers.md",
+      "bytes": 21273,
+      "sha256": "3fa3c7465568ec284c53b6c07351bccc3139136563e1e327a15258cef592e310"
+    },
+    {
+      "file": "outputs/ppf-phase2-2026-10-17/production/_redirects",
+      "bytes": 16450,
+      "sha256": "56d28b946024731722a7ed710216a65077ec5e40400f22f9c3a1ffbc245d6c7f"
+    },
+    {
+      "file": "outputs/ppf-phase2-2026-10-17/production/_worker.js",
+      "bytes": 78360,
+      "sha256": "47208557115070b192a66e867c27be7b847b00a6304c25519fdb84033b7d1e45"
+    },
+    {
+      "file": "outputs/ppf-phase2-2026-10-17/production/architecture-comparison.json",
+      "bytes": 22564,
+      "sha256": "6b7145a0732cf369344cd516da421b239d15dd736600bb6ab17b8465b0ec7e52"
+    },
+    {
+      "file": "outputs/ppf-phase2-2026-10-17/production/audit-architecture.mjs",
+      "bytes": 3906,
+      "sha256": "50a0f0a96c904be7aa42f47a01380cfc904c8ff6ee0f0e71867022f45f0605d3"
+    },
+    {
+      "file": "outputs/ppf-phase2-2026-10-17/production/audit-live.mjs",
+      "bytes": 8136,
+      "sha256": "320231f4d01ec9681790eb15d38332d31c46623d953670121a94bb2c9222e249"
+    },
+    {
+      "file": "outputs/ppf-phase2-2026-10-17/production/bundle-router.mjs",
+      "bytes": 1270,
+      "sha256": "74a0d488689f6d51cd45661a7bd7720f1c255692f927efa8e17a57d9a525cc79"
+    },
+    {
+      "file": "outputs/ppf-phase2-2026-10-17/production/html/ar.html",
+      "bytes": 147133,
+      "sha256": "e51807063ca73714577c7238edaae314883637fdfb3c4b93590f244c700b8bc1"
+    },
+    {
+      "file": "outputs/ppf-phase2-2026-10-17/production/html/ar__blog__ceramic-coating-vs-ppf-dubai.html",
+      "bytes": 41226,
+      "sha256": "3d3a8ed409c8c1a0c0f1358e44be752bbf7aa30b81c782369efdc3c965c974d9"
+    },
+    {
+      "file": "outputs/ppf-phase2-2026-10-17/production/html/ar__services.html",
+      "bytes": 55465,
+      "sha256": "49adaa9f9aaace8ee56e3ec952f7d199956a4a4656eed18ec4d99880a8926129"
+    },
+    {
+      "file": "outputs/ppf-phase2-2026-10-17/production/html/ar__services__car-detailing.html",
+      "bytes": 163270,
+      "sha256": "4bc25867cf2e20a92a4ba42ec2363785857bc52fb7675f498cf77f4abd1d02ab"
+    },
+    {
+      "file": "outputs/ppf-phase2-2026-10-17/production/html/ar__services__car-polishing-dubai.html",
+      "bytes": 163270,
+      "sha256": "3ce56a06f73ac40f2f1dcefda05d952c7aaf3dc7b7e446edf31439ce02fc1910"
+    },
+    {
+      "file": "outputs/ppf-phase2-2026-10-17/production/html/ar__services__ceramic-coating.html",
+      "bytes": 81429,
+      "sha256": "0dfc77fb3b2066d038b70dc66c9e2794988591450ceac45fced3af1087dfd47a"
+    },
+    {
+      "file": "outputs/ppf-phase2-2026-10-17/production/html/ar__services__paint-protection-dubai.html",
+      "bytes": 49653,
+      "sha256": "f67fb539351f24df8de5fde0c571f87c5cac1a634846125ee73eb42f5aea6ef9"
+    },
+    {
+      "file": "outputs/ppf-phase2-2026-10-17/production/html/ar__services__paint-protection-film.html",
+      "bytes": 82285,
+      "sha256": "9cb6538f6f7b2c62b8b264516fe8cd5797221a0906cfb164dc4e375e97fe2784"
+    },
+    {
+      "file": "outputs/ppf-phase2-2026-10-17/production/html/blog__ceramic-coating-vs-ppf-dubai.html",
+      "bytes": 42849,
+      "sha256": "eb526bcba4b655551a975a149dc6d67e7f652eb2dca9e4368f3d912f5c003a53"
+    },
+    {
+      "file": "outputs/ppf-phase2-2026-10-17/production/html/home.html",
+      "bytes": 163270,
+      "sha256": "48cbfa7f6a4e55f46ef388ed49baf92e2c05c34335a87aed2ec2c1c9cf664a2b"
+    },
+    {
+      "file": "outputs/ppf-phase2-2026-10-17/production/html/probe-about-us.html",
+      "bytes": 163270,
+      "sha256": "845707a994e626e1a6c39df9d59226218eaabe8d2f23045d6b287a2a26b48715"
+    },
+    {
+      "file": "outputs/ppf-phase2-2026-10-17/production/html/probe-ar__ppf-phase2-nonexistent-20261017.html",
+      "bytes": 163270,
+      "sha256": "655a56a0d25c76db216b98ad78850e103a7371beb913459eca78d5b0523ff35c"
+    },
+    {
+      "file": "outputs/ppf-phase2-2026-10-17/production/html/probe-mercedes-repair.html",
+      "bytes": 163270,
+      "sha256": "433411a99c71f0aef5ee9b9ce4ff16ce2700ff0f992eab5c08785138c449aa8b"
+    },
+    {
+      "file": "outputs/ppf-phase2-2026-10-17/production/html/probe-ppf-phase2-nonexistent-20261017.html",
+      "bytes": 163270,
+      "sha256": "e11447b17c5aeaf5b0070b1fcb2d6d6ca36cde3332d4ba8588d70dc05e1803c3"
+    },
+    {
+      "file": "outputs/ppf-phase2-2026-10-17/production/html/probe-services__tire-repair.html",
+      "bytes": 163270,
+      "sha256": "19dfcc262b564c3b8dabace212889f08f316cacd5aab700b13c8900fcac0e141"
+    },
+    {
+      "file": "outputs/ppf-phase2-2026-10-17/production/html/services.html",
+      "bytes": 56435,
+      "sha256": "2249dfe1855cb41f4e585c66a26a467d3e2398d8ab406bc5c691dddc2f382866"
+    },
+    {
+      "file": "outputs/ppf-phase2-2026-10-17/production/html/services__car-detailing.html",
+      "bytes": 163270,
+      "sha256": "e9e5b4b50ecab433768703d0c5bcec547194c1f7912ba047fe4469eee8dd1d3e"
+    },
+    {
+      "file": "outputs/ppf-phase2-2026-10-17/production/html/services__car-polishing-dubai.html",
+      "bytes": 79649,
+      "sha256": "596ee594aa4ccf42ccd493c06aee27adaafeb32966629be32fded6322ca952d4"
+    },
+    {
+      "file": "outputs/ppf-phase2-2026-10-17/production/html/services__ceramic-coating.html",
+      "bytes": 84314,
+      "sha256": "1ee40408584521e8f9efe7997e7825818616a4aca6dad4e5a3e2c6cfc4e662b4"
+    },
+    {
+      "file": "outputs/ppf-phase2-2026-10-17/production/html/services__paint-protection-dubai.html",
+      "bytes": 42427,
+      "sha256": "542169a874076b00050d0ced6f441c21dec6290dcaacedc3763e98f05dcbbaad"
+    },
+    {
+      "file": "outputs/ppf-phase2-2026-10-17/production/html/services__paint-protection-film.html",
+      "bytes": 63458,
+      "sha256": "660c6f137813eb123c2fc15591b1aee4cc9260063541070d7c97e4aa8ad3e7b8"
+    },
+    {
+      "file": "outputs/ppf-phase2-2026-10-17/production/live-audit.json",
+      "bytes": 542272,
+      "sha256": "2de9de80364063982c86943a2dbc6ec3cc9faa5d7b64297d28548a2061768a70"
+    },
+    {
+      "file": "outputs/ppf-phase2-2026-10-17/production/make-release-matrix.mjs",
+      "bytes": 9333,
+      "sha256": "a06dad8c7be55cce9c4cdfef0a9f6bb8139ed25f509bfc94c82823294995cecf"
+    },
+    {
+      "file": "outputs/ppf-phase2-2026-10-17/production/production-seo-router.bundle.js",
+      "bytes": 102221,
+      "sha256": "d4cede4051b2be66ea945903ecd2c4bcabc2091d87e1d2c0f05665a2ed3cb354"
+    },
+    {
+      "file": "outputs/ppf-phase2-2026-10-17/production/release-verification-matrix.csv",
+      "bytes": 29117,
+      "sha256": "ea8c1f2129a25a7aeb2b8f7469e4c22282640eeaa9484aa4aaa7744196b37c2d"
+    },
+    {
+      "file": "outputs/ppf-phase2-2026-10-17/production/release-verification-matrix.json",
+      "bytes": 53646,
+      "sha256": "6104671b810e832809c8808067be456bea0195deccb2ea4ffbc05cec38c312db"
+    },
+    {
+      "file": "outputs/ppf-phase2-2026-10-17/production/robots.txt",
+      "bytes": 292,
+      "sha256": "e3c8657fde29aa5504479e3b941052f85278b72811ebd9429bf94fb80eba8b61"
+    },
+    {
+      "file": "outputs/ppf-phase2-2026-10-17/production/router-bundle-manifest.json",
+      "bytes": 1385,
+      "sha256": "9b5033325efd0c000f8bdcd3371565f345fc24438bd2921e9b5dbef609c5b423"
+    },
+    {
+      "file": "outputs/ppf-phase2-2026-10-17/production/scoped-router-bundle-tests.json",
+      "bytes": 565,
+      "sha256": "b6a364f50caccd698c08cdd9112ff686552c20674893832b7d533384ffd491b0"
+    },
+    {
+      "file": "outputs/ppf-phase2-2026-10-17/production/scoped-router-tests.json",
+      "bytes": 565,
+      "sha256": "9140ddbe5f8bfe909d371225782c2b8e8e1faf76ae720e155ff343945740e9cd"
+    },
+    {
+      "file": "outputs/ppf-phase2-2026-10-17/production/sitemap.xml",
+      "bytes": 129276,
+      "sha256": "3c67a69df08429f80f2f9b2e798b3a25cc9d273a9668b935f782d914fb8f1af9"
+    },
+    {
+      "file": "outputs/ppf-phase2-2026-10-17/qa/build-results.json",
+      "bytes": 3357,
+      "sha256": "fd84ce0311adfd22292eed747876950c9ebcae973c113469732feddff9ea6982"
+    },
+    {
+      "file": "outputs/ppf-phase2-2026-10-17/qa/final-preservation.json",
+      "bytes": 145,
+      "sha256": "74064ba1c37a410d7d587d3389118e3ab6503776fb98d42236c39adcb1d6a79f"
+    },
+    {
+      "file": "outputs/ppf-phase2-2026-10-17/qa/journey-results.json",
+      "bytes": 1263,
+      "sha256": "0f15394520b53b8955fc131643b0d157c1afc7e0081110f949607582c3335904"
+    },
+    {
+      "file": "outputs/ppf-phase2-2026-10-17/qa/master-validation.json",
+      "bytes": 10181,
+      "sha256": "1f749373820cc0df120f64de6b8ce0445657fe4660037fc4163daede3d5ca068"
+    },
+    {
+      "file": "outputs/ppf-phase2-2026-10-17/qa/source-manifest.json",
+      "bytes": 80670,
+      "sha256": "4e7926834fe1494600bdb18de4c28df97eda36a3abe822b3b70c74e05f068526"
+    },
+    {
+      "file": "outputs/ppf-phase2-2026-10-17/qa/visual-qa.md",
+      "bytes": 2688,
+      "sha256": "fff4b5035d071462673624191401897c52f178a2a152ddc3f68bdfbfb4dca489"
+    },
+    {
+      "file": "outputs/ppf-phase2-2026-10-17/run-journeys.mjs",
+      "bytes": 1301,
+      "sha256": "4fd1d53ef9f74645fed448aba49a5cbd5366968802ecfdb8de539ad7539d206f"
+    },
+    {
+      "file": "outputs/ppf-phase2-2026-10-17/seo-expansion-matrix.csv",
+      "bytes": 17202,
+      "sha256": "65dfae62a3328d35a7b13cee365c614800e11e1cbf856f929348001ff8b90c9e"
+    },
+    {
+      "file": "outputs/ppf-phase2-2026-10-17/seo-geo-plan.md",
+      "bytes": 17958,
+      "sha256": "79647032d1d3aac69ae662bb433f608136479f4ca6405a350731bc85a8a34cef"
+    },
+    {
+      "file": "outputs/ppf-phase2-2026-10-17/test-lead-model.mjs",
+      "bytes": 10012,
+      "sha256": "062d347c40df4f33310bbafdd02548e460c1274d5c1dd2a7df7e7f7f460e20c7"
+    },
+    {
+      "file": "outputs/ppf-phase2-2026-10-17/verify-local.mjs",
+      "bytes": 21675,
+      "sha256": "d99f39f8a72523bf5301c94231a0bade7e266fa43c75ecd261a5ece6d5454aba"
+    },
+    {
+      "file": "outputs/ppf-phase3-4-2026-10-17/ai-baseline.md",
+      "bytes": 8650,
+      "sha256": "f59468a266d5ed1503c1099044724c7a5465c560a4a0121b02cc8ead558da602"
+    },
+    {
+      "file": "outputs/ppf-phase3-4-2026-10-17/ai-observations.csv",
+      "bytes": 13911,
+      "sha256": "e8309a95bc348f4643f408cf2d3176541dd6563b126cc77d8e2dddd6da1e3fe2"
+    },
+    {
+      "file": "outputs/ppf-phase3-4-2026-10-17/ai-observations.json",
+      "bytes": 19372,
+      "sha256": "46b96d4d9efd74b84e9a8f5dfaf34699d1df28079cb0e602b41ebf7426762a54"
+    },
+    {
+      "file": "outputs/ppf-phase3-4-2026-10-17/authority-opportunities.csv",
+      "bytes": 8276,
+      "sha256": "5b5446be6d0975cf8b90bbe0f18c6bbf0227256f8be1b24a557b96921e9ede5f"
+    },
+    {
+      "file": "outputs/ppf-phase3-4-2026-10-17/authority-opportunities.md",
+      "bytes": 7395,
+      "sha256": "205332d1c6f7d08e758a41b1c3451f67233f25adbdecfbae15880aed2146fe5d"
+    },
+    {
+      "file": "outputs/ppf-phase3-4-2026-10-17/baseline/branch.txt",
+      "bytes": 6,
+      "sha256": "d71df7c908e4361c585208e57fec982f2e6626691991373056b08ebc1c39e5dc"
+    },
+    {
+      "file": "outputs/ppf-phase3-4-2026-10-17/baseline/git-status.txt",
+      "bytes": 3332,
+      "sha256": "f5ae7f6627bdfeed06707dece6319fbac0b7c59b19648e092d39dceb795d2371"
+    },
+    {
+      "file": "outputs/ppf-phase3-4-2026-10-17/baseline/head.txt",
+      "bytes": 42,
+      "sha256": "94a4ab719b089bc005328bb3740384a340a75eaee3179e528bb80859f5c6aa1f"
+    },
+    {
+      "file": "outputs/ppf-phase3-4-2026-10-17/baseline/metadata-before.json",
+      "bytes": 15855,
+      "sha256": "8e91a4f885e51b1e632be7a3680826ae450ae117a13a3733f676aba9a45b4b13"
+    },
+    {
+      "file": "outputs/ppf-phase3-4-2026-10-17/baseline/phase2-comparison.json",
+      "bytes": 55,
+      "sha256": "4b519338f485421f1fba17589e17bc02836af5bb4d2f1c071b02eed52d761368"
+    },
+    {
+      "file": "outputs/ppf-phase3-4-2026-10-17/baseline/pre-existing-master-validation.json",
+      "bytes": 10207,
+      "sha256": "6c164ea2102776061f84fd6fa16963963552f33b9406fc65d7e9f2aaa41cbd12"
+    },
+    {
+      "file": "outputs/ppf-phase3-4-2026-10-17/browser/ar-quote-320-dark.png",
+      "bytes": 37398,
+      "sha256": "9f01766d5eb6e5c98b9cbdb8b3617db5aade774402dfea6778cf500c30a96ef9"
+    },
+    {
+      "file": "outputs/ppf-phase3-4-2026-10-17/browser/ar-quote-320-light.png",
+      "bytes": 37459,
+      "sha256": "4a67e0bbe982d23b760f7278ced0b838f52dc88ac9e72fc2e5f249e1b418fa57"
+    },
+    {
+      "file": "outputs/ppf-phase3-4-2026-10-17/browser/ar-quote-390-dark.png",
+      "bytes": 37373,
+      "sha256": "308218b82f8d300ba9c3be58c42144784da6877fe62c9e4a1a9b9601fde96f21"
+    },
+    {
+      "file": "outputs/ppf-phase3-4-2026-10-17/browser/ar-quote-390-light.png",
+      "bytes": 37534,
+      "sha256": "f6e8db6f5ff13ef0c3a8650c1c7b1bc5eb2b79788e462bc51271b8ca557e627d"
+    },
+    {
+      "file": "outputs/ppf-phase3-4-2026-10-17/browser/arabic-quote-320.png",
+      "bytes": 23764,
+      "sha256": "f0579255fed56a2befa1310e7b55fbc2cd38a0fa4de210e372d19f9088481164"
+    },
+    {
+      "file": "outputs/ppf-phase3-4-2026-10-17/browser/arabic-quote-390.png",
+      "bytes": 24012,
+      "sha256": "e10fea8816e3685e288aba5a45d6c54915c936fa7d9e91c080847d79cbd5aa8f"
+    },
+    {
+      "file": "outputs/ppf-phase3-4-2026-10-17/browser/browser-results.json",
+      "bytes": 1202,
+      "sha256": "1ae56d362706f80b40929f9f47ec75b85e600307783c417b34f06b45a0fbe065"
+    },
+    {
+      "file": "outputs/ppf-phase3-4-2026-10-17/browser/desktop-full.png",
+      "bytes": 2009304,
+      "sha256": "64f35b7b951252f44dee0400f49af942bfa5ab7eb2773c519be81af87cb7d555"
+    },
+    {
+      "file": "outputs/ppf-phase3-4-2026-10-17/browser/desktop.png",
+      "bytes": 724222,
+      "sha256": "769586bcdd212a61f2bae0a228eab1a5ab3dc1f5fcd322e171ca70dab255c56b"
+    },
+    {
+      "file": "outputs/ppf-phase3-4-2026-10-17/browser/en-quote-320-dark.png",
+      "bytes": 43892,
+      "sha256": "bf1264a8aa3453f8b4d707bba2e7c4d09e678b698b9a0495c510e9de9132fca0"
+    },
+    {
+      "file": "outputs/ppf-phase3-4-2026-10-17/browser/en-quote-320-light.png",
+      "bytes": 43452,
+      "sha256": "669c5a059f983e410f86e656c866487fabe07783d819cef4431a43895cba8408"
+    },
+    {
+      "file": "outputs/ppf-phase3-4-2026-10-17/browser/en-quote-390-dark.png",
+      "bytes": 43090,
+      "sha256": "485efad1c980e8f3d90e97124d18e43339537efbb55beb54b542064f36210315"
+    },
+    {
+      "file": "outputs/ppf-phase3-4-2026-10-17/browser/en-quote-390-light.png",
+      "bytes": 42873,
+      "sha256": "40eab501069f692ec4ad994fec14f97e60ce32c93bf7b6f5b663e7eb5bda486e"
+    },
+    {
+      "file": "outputs/ppf-phase3-4-2026-10-17/browser/light-coverage.png",
+      "bytes": 114027,
+      "sha256": "423dc005f85db8b2e04f4d5bf2d4db765519a1ecfa6f0b2335052fc558291a8a"
+    },
+    {
+      "file": "outputs/ppf-phase3-4-2026-10-17/browser/light-full.png",
+      "bytes": 2033169,
+      "sha256": "e46bf4fa1c85a02db6c45b32edabef49c069e08d117de1317cbb4491c8dfbaad"
+    },
+    {
+      "file": "outputs/ppf-phase3-4-2026-10-17/browser/mobile-320.png",
+      "bytes": 40657,
+      "sha256": "f5e1d2cd11c41fe62bf23b6e9786d6763fcea720c24ed8b775229e62c4ae31a0"
+    },
+    {
+      "file": "outputs/ppf-phase3-4-2026-10-17/browser/mobile-390.png",
+      "bytes": 48725,
+      "sha256": "d9b45c5b100f98a2699e652e1578f0ec76243ba53be1a610b4f4e7f8ef515d4e"
+    },
+    {
+      "file": "outputs/ppf-phase3-4-2026-10-17/browser/mobile-full.png",
+      "bytes": 1373442,
+      "sha256": "993ce21db8bba19eef1485aaccba460c113e2d7d1d81210d4145b10670788709"
+    },
+    {
+      "file": "outputs/ppf-phase3-4-2026-10-17/browser/workshop.png",
+      "bytes": 530964,
+      "sha256": "779be521333b47c30634ce8cdaa93fcdeddbd3a718127b8debb5beb4038ff1ff"
+    },
+    {
+      "file": "outputs/ppf-phase3-4-2026-10-17/business-consistency.csv",
+      "bytes": 17067,
+      "sha256": "48438d7547349fd60edd304f4f715bbb22aee5b51f7e11cbcb6c446b7c753e8c"
+    },
+    {
+      "file": "outputs/ppf-phase3-4-2026-10-17/case-study-framework.md",
+      "bytes": 8895,
+      "sha256": "dbd6a2c8fb6147f8836d4949be13a742c4491e896ac02f4f44b8576ac7751d19"
+    },
+    {
+      "file": "outputs/ppf-phase3-4-2026-10-17/crawlability-entity-audit.md",
+      "bytes": 12067,
+      "sha256": "6782b27f10d7c5c209acbfee313516d203201d9f799290a38a507054ba4a42fc"
+    },
+    {
+      "file": "outputs/ppf-phase3-4-2026-10-17/crawlability/_redirects",
+      "bytes": 16450,
+      "sha256": "56d28b946024731722a7ed710216a65077ec5e40400f22f9c3a1ffbc245d6c7f"
+    },
+    {
+      "file": "outputs/ppf-phase3-4-2026-10-17/crawlability/_worker.js",
+      "bytes": 78360,
+      "sha256": "47208557115070b192a66e867c27be7b847b00a6304c25519fdb84033b7d1e45"
+    },
+    {
+      "file": "outputs/ppf-phase3-4-2026-10-17/crawlability/ai-access-evidence.json",
+      "bytes": 2557,
+      "sha256": "499332a886e55066d352dd845adcadd2ce3dd91a5162716bc5b061b513bfbff4"
+    },
+    {
+      "file": "outputs/ppf-phase3-4-2026-10-17/crawlability/audit-entities.mjs",
+      "bytes": 7114,
+      "sha256": "237c9382caf3ec577ad7c2b6b7509991c396864ee74b0568a52d931204eb1c44"
+    },
+    {
+      "file": "outputs/ppf-phase3-4-2026-10-17/crawlability/build-snapshot.json",
+      "bytes": 3358,
+      "sha256": "b7383b6b829fb826ea8ef30dd948338a0ef35631c85a1fbffe4ed91b1999bd40"
+    },
+    {
+      "file": "outputs/ppf-phase3-4-2026-10-17/crawlability/build-source-manifest.json",
+      "bytes": 80670,
+      "sha256": "ae3a6576d6bf100886ab6f9d14cc6e06eb5696be156ee8a5bed963c95a44a506"
+    },
+    {
+      "file": "outputs/ppf-phase3-4-2026-10-17/crawlability/entity-audit.json",
+      "bytes": 256965,
+      "sha256": "6674383c5d051ff1852c4e7780269f8886c2b1e60afd499ca9dded9ddec0dd12"
+    },
+    {
+      "file": "outputs/ppf-phase3-4-2026-10-17/crawlability/html/ar.html",
+      "bytes": 147133,
+      "sha256": "9ccd25edb350054ce352ae3c031a86e45450c897e92c485a1e418d2d0e1edf2e"
+    },
+    {
+      "file": "outputs/ppf-phase3-4-2026-10-17/crawlability/html/ar__blog__ceramic-coating-vs-ppf-dubai.html",
+      "bytes": 41226,
+      "sha256": "79d15a5f3a15402da4b4170a8a428f44037782f8ef3743436c02273947e941f9"
+    },
+    {
+      "file": "outputs/ppf-phase3-4-2026-10-17/crawlability/html/ar__services.html",
+      "bytes": 55465,
+      "sha256": "e101f1508fe36bcf765883812f7838ba82ee018de7506193d95ea46f0f355985"
+    },
+    {
+      "file": "outputs/ppf-phase3-4-2026-10-17/crawlability/html/ar__services__car-detailing.html",
+      "bytes": 163270,
+      "sha256": "8ff100ccd9a187fcfc60744a3e51802a356e24931865d4dbe2a2e44443ee4d5f"
+    },
+    {
+      "file": "outputs/ppf-phase3-4-2026-10-17/crawlability/html/ar__services__car-polishing-dubai.html",
+      "bytes": 163270,
+      "sha256": "342bc8de7771a66d0909f2f58c4b6aff5a00aa005c0188b7972532681a5cb70a"
+    },
+    {
+      "file": "outputs/ppf-phase3-4-2026-10-17/crawlability/html/ar__services__ceramic-coating.html",
+      "bytes": 81429,
+      "sha256": "8366a502865ff60ee238da8a83090c517c814098ac161eca4caaca983346f69c"
+    },
+    {
+      "file": "outputs/ppf-phase3-4-2026-10-17/crawlability/html/ar__services__paint-protection-dubai.html",
+      "bytes": 49653,
+      "sha256": "65856200da6517da44ca6ff6d34052db9561ac4f22bd3b6853ba38e23fb3e574"
+    },
+    {
+      "file": "outputs/ppf-phase3-4-2026-10-17/crawlability/html/ar__services__paint-protection-film.html",
+      "bytes": 82285,
+      "sha256": "feb26f9bfe9331dbf4d1d0214cf9c75a8d00cc4aed97639c0b95d2a38f12efbd"
+    },
+    {
+      "file": "outputs/ppf-phase3-4-2026-10-17/crawlability/html/blog__ceramic-coating-vs-ppf-dubai.html",
+      "bytes": 42849,
+      "sha256": "1756146043646ca4eb21c79ff7ad38f4dc811b3737cf6bfc1703fcf03e373cd5"
+    },
+    {
+      "file": "outputs/ppf-phase3-4-2026-10-17/crawlability/html/home.html",
+      "bytes": 163270,
+      "sha256": "04872bc3e738b23fc027fe1fcb180279409d98f7da82d13dcdd394718c14b0c1"
+    },
+    {
+      "file": "outputs/ppf-phase3-4-2026-10-17/crawlability/html/probe-about-us.html",
+      "bytes": 163270,
+      "sha256": "76310cdd85e6d54a151ea6636c80994ebe77a7b61ff57862c9edb61e1531b271"
+    },
+    {
+      "file": "outputs/ppf-phase3-4-2026-10-17/crawlability/html/probe-ar__ppf-phase2-nonexistent-20261017.html",
+      "bytes": 163270,
+      "sha256": "aabf94088837fb30a49d7856dad0ca3d18305416c89fb5daa5a5e07f6e696313"
+    },
+    {
+      "file": "outputs/ppf-phase3-4-2026-10-17/crawlability/html/probe-mercedes-repair.html",
+      "bytes": 163270,
+      "sha256": "3e0538514439823957479e31e94bb639300099a0594b981f923d9be8318e3ba1"
+    },
+    {
+      "file": "outputs/ppf-phase3-4-2026-10-17/crawlability/html/probe-ppf-phase2-nonexistent-20261017.html",
+      "bytes": 163270,
+      "sha256": "d8ea3ee059e4a0a82e771a3a3bd4d65183cba10badd66d39c20d5a53e487a2de"
+    },
+    {
+      "file": "outputs/ppf-phase3-4-2026-10-17/crawlability/html/probe-services__tire-repair.html",
+      "bytes": 163270,
+      "sha256": "0b98e59893d6ba219ecb1b8fbe96e974c18d98068e6ca963bfd2879015ea4537"
+    },
+    {
+      "file": "outputs/ppf-phase3-4-2026-10-17/crawlability/html/services.html",
+      "bytes": 56435,
+      "sha256": "ea9a4e5405afe671cfbdf85e797f9467e599c3d5603c7e6c08595debea23ba67"
+    },
+    {
+      "file": "outputs/ppf-phase3-4-2026-10-17/crawlability/html/services__car-detailing.html",
+      "bytes": 163270,
+      "sha256": "dd7450dba7307f62968e3fc4ef7dc1853e387aef2d85da20c1990aab0d6b6ec7"
+    },
+    {
+      "file": "outputs/ppf-phase3-4-2026-10-17/crawlability/html/services__car-polishing-dubai.html",
+      "bytes": 79649,
+      "sha256": "60bf285196d36aa39639a4cc573a3db6f751bcadd7b7a6413525960ad833f921"
+    },
+    {
+      "file": "outputs/ppf-phase3-4-2026-10-17/crawlability/html/services__ceramic-coating.html",
+      "bytes": 84314,
+      "sha256": "5fc542c8604c9cc96fe62628b0a0b31ca54ea2a0f28b30b39753c5ca6eff3db2"
+    },
+    {
+      "file": "outputs/ppf-phase3-4-2026-10-17/crawlability/html/services__paint-protection-dubai.html",
+      "bytes": 42427,
+      "sha256": "f2caee6bfeed15f1c3780b7448d1a7b38629bb5b78170420cf2b4988eb35f666"
+    },
+    {
+      "file": "outputs/ppf-phase3-4-2026-10-17/crawlability/html/services__paint-protection-film.html",
+      "bytes": 63458,
+      "sha256": "0fe89e592f887abf7a1f3571bba8b076db1a1f559f2edb703f159a35f3beb10b"
+    },
+    {
+      "file": "outputs/ppf-phase3-4-2026-10-17/crawlability/live-audit.json",
+      "bytes": 542044,
+      "sha256": "5e0d98aa14d2cbc78cc82aa7b2ebd9cae8e199eba1a79fb72b5df916e29cc768"
+    },
+    {
+      "file": "outputs/ppf-phase3-4-2026-10-17/crawlability/robots.txt",
+      "bytes": 292,
+      "sha256": "e3c8657fde29aa5504479e3b941052f85278b72811ebd9429bf94fb80eba8b61"
+    },
+    {
+      "file": "outputs/ppf-phase3-4-2026-10-17/crawlability/sitemap.xml",
+      "bytes": 129276,
+      "sha256": "3c67a69df08429f80f2f9b2e798b3a25cc9d273a9668b935f782d914fb8f1af9"
+    },
+    {
+      "file": "outputs/ppf-phase3-4-2026-10-17/crawler-guidance.md",
+      "bytes": 2746,
+      "sha256": "cfb70df10f22dd560bdce771ded42b5a40758a538bf1a8d77ffa58042aa91f15"
+    },
+    {
+      "file": "outputs/ppf-phase3-4-2026-10-17/finalize-evidence.mjs",
+      "bytes": 2401,
+      "sha256": "0e7cee820556b2e1d1687cf7b96a1da9ab5fefb65510f9007c812d19bf5ec754"
+    },
+    {
+      "file": "outputs/ppf-phase3-4-2026-10-17/gbp-artifact-validation.json",
+      "bytes": 601,
+      "sha256": "1200e726031938ecf349eb6f2300c429636e364d88e7b291b4ed698b37ae0655"
+    },
+    {
+      "file": "outputs/ppf-phase3-4-2026-10-17/gbp-data-input.json",
+      "bytes": 40554,
+      "sha256": "6231b9a8314f831792bbd53181e43b22dcc0cd1f298d7a7ceb284d1ddca0c9d2"
+    },
+    {
+      "file": "outputs/ppf-phase3-4-2026-10-17/gbp-local-audit.md",
+      "bytes": 13979,
+      "sha256": "56087c673d68febbfa21347eb7a9fc4ac761055dc18e6778780237bf47032459"
+    },
+    {
+      "file": "outputs/ppf-phase3-4-2026-10-17/gbp-service-drafts.csv",
+      "bytes": 3499,
+      "sha256": "4210045a6930f7c09a50127298156bd567652fdc121339c5e6718255ae480c91"
+    },
+    {
+      "file": "outputs/ppf-phase3-4-2026-10-17/geo-content-gaps.md",
+      "bytes": 12624,
+      "sha256": "3e978e4e0f2f50b1db9dc3d3306380a1365b3529cb17da97d29306d4c6493cb4"
+    },
+    {
+      "file": "outputs/ppf-phase3-4-2026-10-17/geo-measurement-framework.md",
+      "bytes": 6904,
+      "sha256": "30f604c4aae4b091feeabb9dd638ef11de8afda152865874fcc5477ed8de10cf"
+    },
+    {
+      "file": "outputs/ppf-phase3-4-2026-10-17/local-verification.json",
+      "bytes": 3191,
+      "sha256": "88d62b2594b5f9db0507e5a67297f879e34403c959d499bf5bb6d9be0efa58fd"
+    },
+    {
+      "file": "outputs/ppf-phase3-4-2026-10-17/media-evidence-plan.csv",
+      "bytes": 6652,
+      "sha256": "ef10ab24d9af396f7d4198c99b648c52543e0a5c7a1dba3f71d85da5f9f5f98a"
+    },
+    {
+      "file": "outputs/ppf-phase3-4-2026-10-17/metadata-after.json",
+      "bytes": 15855,
+      "sha256": "8e91a4f885e51b1e632be7a3680826ae450ae117a13a3733f676aba9a45b4b13"
+    },
+    {
+      "file": "outputs/ppf-phase3-4-2026-10-17/metadata-before-after.csv",
+      "bytes": 11851,
+      "sha256": "0f8377b233126e49d1e9f7505e89fed20d0e6925a7af7a74067c4ad90f4fc5a6"
+    },
+    {
+      "file": "outputs/ppf-phase3-4-2026-10-17/modified-files.csv",
+      "bytes": 908,
+      "sha256": "196de25a1dc5305c51b575ee6a8751f149f4b8f3a25196cbd11522badff39dcc"
+    },
+    {
+      "file": "outputs/ppf-phase3-4-2026-10-17/modified-files.json",
+      "bytes": 2251,
+      "sha256": "4e3fb42b5f6ac9beac062c40b93c010c3877ba8c276a73c32e7dd6a1189ef011"
+    },
+    {
+      "file": "outputs/ppf-phase3-4-2026-10-17/phase3-4-only.patch",
+      "bytes": 108473,
+      "sha256": "25cf93e3f2b0ef55175198475ad3307c68579d41c981262a8f4a1b4d0b75fc8d"
+    },
+    {
+      "file": "outputs/ppf-phase3-4-2026-10-17/ppf-monthly-geo-tracker.xlsx",
+      "bytes": 23080,
+      "sha256": "6656d73248345b8bdbfae98a34dc052cb9d30f50f084d32900e41cf33886785f"
+    },
+    {
+      "file": "outputs/ppf-phase3-4-2026-10-17/ppf-monthly-geo-tracker.xlsx.inspect.ndjson",
+      "bytes": 173817,
+      "sha256": "39d9c7e096ed55275249e4ac0acef017957ec49d08a119a22c43a47b7a0347f5"
+    },
+    {
+      "file": "outputs/ppf-phase3-4-2026-10-17/qa/browser-regression.json",
+      "bytes": 525,
+      "sha256": "fd2b60fe339e9a665983838ce0ccba6504d300cd9b07f39f1360ad95cf5bdb3d"
+    },
+    {
+      "file": "outputs/ppf-phase3-4-2026-10-17/qa/build-results.json",
+      "bytes": 3358,
+      "sha256": "b7383b6b829fb826ea8ef30dd948338a0ef35631c85a1fbffe4ed91b1999bd40"
+    },
+    {
+      "file": "outputs/ppf-phase3-4-2026-10-17/qa/check-results.json",
+      "bytes": 1649,
+      "sha256": "a62e964f2aa1d3de384d8398e42b9b4fea27df12d2dc2ff354fe85abb0731d10"
+    },
+    {
+      "file": "outputs/ppf-phase3-4-2026-10-17/qa/final-git-status.txt",
+      "bytes": 3409,
+      "sha256": "7ec96cebae0884d082186e35f9ec1fc3b1207ddc1298323d02733e7af9804e86"
+    },
+    {
+      "file": "outputs/ppf-phase3-4-2026-10-17/qa/final-preservation.json",
+      "bytes": 1364,
+      "sha256": "d1a3d0ae2ba450d514f0272eb2629f6a360ee8254386a08641d99802a8bcee16"
+    },
+    {
+      "file": "outputs/ppf-phase3-4-2026-10-17/qa/final-report-review.md",
+      "bytes": 2423,
+      "sha256": "5550839158ecccbba6713911589d96607f356f074471e42da78b47b369137217"
+    },
+    {
+      "file": "outputs/ppf-phase3-4-2026-10-17/qa/independent-review.md",
+      "bytes": 4343,
+      "sha256": "b4c21c535ff190ae7ad38aa40ebd2aaa188423c0cb256a49a606d43f33785bb4"
+    },
+    {
+      "file": "outputs/ppf-phase3-4-2026-10-17/qa/journey-results.json",
+      "bytes": 1263,
+      "sha256": "8111189d1faa61806b0d0061e77e5e6a6ec533028b52a8a815c5bcf5bb1606f2"
+    },
+    {
+      "file": "outputs/ppf-phase3-4-2026-10-17/qa/local-verification.json",
+      "bytes": 3191,
+      "sha256": "88d62b2594b5f9db0507e5a67297f879e34403c959d499bf5bb6d9be0efa58fd"
+    },
+    {
+      "file": "outputs/ppf-phase3-4-2026-10-17/qa/master-artifact-preservation.json",
+      "bytes": 323,
+      "sha256": "1509b3921125b31674e29b93e85103e6200ecdf088fa8b82adf859f6156cd1c3"
+    },
+    {
+      "file": "outputs/ppf-phase3-4-2026-10-17/qa/master-validation.json",
+      "bytes": 10181,
+      "sha256": "4a0c7fe2cd133e0206ceb1e70e249a77288ff60fa305080caf040bdbf6de5481"
+    },
+    {
+      "file": "outputs/ppf-phase3-4-2026-10-17/qa/source-manifest.json",
+      "bytes": 80670,
+      "sha256": "ae3a6576d6bf100886ab6f9d14cc6e06eb5696be156ee8a5bed963c95a44a506"
+    },
+    {
+      "file": "outputs/ppf-phase3-4-2026-10-17/qa/tracker-visual-qa.md",
+      "bytes": 1429,
+      "sha256": "3dcc642fdddd63edf7c5869d262a7ab5dacbd555e7498326ea9def51f97bbff8"
+    },
+    {
+      "file": "outputs/ppf-phase3-4-2026-10-17/qa/visual-qa-manifest.json",
+      "bytes": 2546,
+      "sha256": "3ffebd54372155f702f48d0cf14b6186728597afbea3ab88008ccdeeba94004d"
+    },
+    {
+      "file": "outputs/ppf-phase3-4-2026-10-17/qa/visual-qa.md",
+      "bytes": 3953,
+      "sha256": "8f4ac05e36d93be5a91dc492c4beacff729e85ecc91ef8489aa1abe8fe646716"
+    },
+    {
+      "file": "outputs/ppf-phase3-4-2026-10-17/query-ownership.csv",
+      "bytes": 12393,
+      "sha256": "7b2c8aedbe717a137d87475ae861898bfe2e2c33c4a59e41beccde64db60c9cf"
+    },
+    {
+      "file": "outputs/ppf-phase3-4-2026-10-17/review-workflow.md",
+      "bytes": 4877,
+      "sha256": "5f81eefa282ae4e3d4d4678a25327bf18f7aaafe866b08aa7b864c40101494ca"
+    },
+    {
+      "file": "outputs/ppf-phase3-4-2026-10-17/routing/bundle-router.mjs",
+      "bytes": 1269,
+      "sha256": "91debc50cb0582a7b32060340e7021f9a3197f5234d33703169d5fa8ae14ba54"
+    },
+    {
+      "file": "outputs/ppf-phase3-4-2026-10-17/routing/production-seo-router.bundle.js",
+      "bytes": 102221,
+      "sha256": "25b80f21fad85539aa29ee1c479ab2d334326824fd25707957de8498e51c8a48"
+    },
+    {
+      "file": "outputs/ppf-phase3-4-2026-10-17/routing/router-bundle-manifest.json",
+      "bytes": 1384,
+      "sha256": "fc5767329a12b74aa3936e108d50e418297579a69b68f1e9b934c8284e0d8489"
+    },
+    {
+      "file": "outputs/ppf-phase3-4-2026-10-17/routing/scoped-router-bundle-tests.json",
+      "bytes": 565,
+      "sha256": "bca5befca30e40de756f007e20b54ce0ed7aa979844a473539e9da0c97b0574c"
+    },
+    {
+      "file": "outputs/ppf-phase3-4-2026-10-17/routing/scoped-router-tests.json",
+      "bytes": 565,
+      "sha256": "b6ec4db38c45b20025c7aacf459c228e872f151119c25a80bef8b910311ee20a"
+    },
+    {
+      "file": "outputs/ppf-phase3-4-2026-10-17/run-browser-regression.mjs",
+      "bytes": 1975,
+      "sha256": "24b16b9ca50fea6ab3a52de84b35bed049addc88aa2df6ad3f4ac45645c6b175"
+    },
+    {
+      "file": "outputs/ppf-phase3-4-2026-10-17/run-journeys.mjs",
+      "bytes": 1303,
+      "sha256": "0ff858b51519f1b5cfc990a5f7034ae00961eefc019b4c08c41acea68b8ce9c7"
+    },
+    {
+      "file": "outputs/ppf-phase3-4-2026-10-17/run-master-validation.mjs",
+      "bytes": 1390,
+      "sha256": "f38ea1be62b8eacfba17e140679a6f8d300280eff4a00635ffcce58b6c5074cb"
+    },
+    {
+      "file": "outputs/ppf-phase3-4-2026-10-17/tracker-formula-errors.ndjson",
+      "bytes": 60,
+      "sha256": "acc0111e19cf44d2753fc9ecd164bf1b27fbd65597463a25cf48bd1c65e90146"
+    },
+    {
+      "file": "outputs/ppf-phase3-4-2026-10-17/tracker-inspection.ndjson",
+      "bytes": 470,
+      "sha256": "d38a3e852cc827ace9a5a5a95a417699357d6f36e13e38d2e72cc38a8c9177ec"
+    },
+    {
+      "file": "outputs/ppf-phase3-4-2026-10-17/tracker-observation-details.png",
+      "bytes": 54801,
+      "sha256": "01b8f88371c6d1d6533e088b8471b9a8c25b5b9cbe19afe04e2803eac3195b30"
+    },
+    {
+      "file": "outputs/ppf-phase3-4-2026-10-17/tracker-observations.png",
+      "bytes": 113085,
+      "sha256": "b0c13895bf7c7cdca06b264e676154be426f52a9765c962bd9ad7584be81b40f"
+    },
+    {
+      "file": "outputs/ppf-phase3-4-2026-10-17/tracker-referrals.png",
+      "bytes": 67053,
+      "sha256": "e543c6e3c07cd438c10d68720e0b4dff9fc2f730d2f1eb34426d5746b2ffcc60"
+    },
+    {
+      "file": "outputs/ppf-phase3-4-2026-10-17/tracker-summary.png",
+      "bytes": 136318,
+      "sha256": "6348de0ded53cdd3dc823364fb9a1f0e7ee4fd4ff33175c58e46b498429dcea6"
+    },
+    {
+      "file": "outputs/ppf-phase3-4-2026-10-17/tracker-validation.json",
+      "bytes": 310,
+      "sha256": "088ac25cefc274ea5fc3b913a77388b3385650d582fc158c2ab7b9deb39b9912"
+    },
+    {
+      "file": "outputs/ppf-phase3-4-2026-10-17/verify-local.mjs",
+      "bytes": 23054,
+      "sha256": "12cf8116df5abfd8f53a271bb39d4cd32293e86b7af95bc38fdfe2890b397578"
+    },
+    {
+      "file": "outputs/ppf-phase3-4-2026-10-17/verify-preservation.mjs",
+      "bytes": 4430,
+      "sha256": "8371aa6af126c4f345119ff240744e641cc4a9230ce6d241daa5d0c2e15b9d23"
+    },
+    {
+      "file": "package.json",
+      "bytes": 4423,
+      "sha256": "0079f6c3631eef2412243c812f59cd8f842b07c4d508f500eb91d6ef12de3130"
+    },
+    {
+      "file": "public/sitemap.xml",
+      "bytes": 129276,
+      "sha256": "f74410aac2d522838dbce5037843cd03b34096817581d6732f852b86926a2c67"
+    },
+    {
+      "file": "scripts/test-master-seo-browser.mjs",
+      "bytes": 19205,
+      "sha256": "0ec30ba904a2f84eb65bc2a713c60ad970a7bfc11e5849453fa01b920e161d02"
+    },
+    {
+      "file": "scripts/test-paint-care-journeys.mjs",
+      "bytes": 12414,
+      "sha256": "dc0468661f6676e5b512dfe8973cd43a432d6ccfd1cdf9ed519484760f7420d1"
+    },
+    {
+      "file": "scripts/test-ppf-browser.mjs",
+      "bytes": 24315,
+      "sha256": "ada0ceeeb806b601d6a99de677752dc79476c5d4f33b4286f251ff7e101ee9ab"
+    },
+    {
+      "file": "scripts/test-ppf-enquiry.mjs",
+      "bytes": 3603,
+      "sha256": "4aacfe42b8199ce8c8e10d0ad7063db994edee775c538c7c6e71c76279aecc96"
+    },
+    {
+      "file": "scripts/test-production-seo-router.mjs",
+      "bytes": 10244,
+      "sha256": "5123ae9d1edc89d83fd24eedc040e12f0e5b7f49c90ac7bf277a6c753bc35d2d"
+    },
+    {
+      "file": "scripts/test-protection-release-browser.mjs",
+      "bytes": 5810,
+      "sha256": "865488cac5b79ecd2e241253886f4db7ee1737e92910dd30c249ae687a4b17c3"
+    },
+    {
+      "file": "scripts/validate-master-seo.mjs",
+      "bytes": 22047,
+      "sha256": "64e27feb29346cb0a1f5c541be4750af852890eac3528abb3bf459e335fc260c"
+    },
+    {
+      "file": "scripts/validate-ppf.mjs",
+      "bytes": 4733,
+      "sha256": "a0903c81ed026d58103e7a956ed8dc3fd6eaee1a6cce1ac14d06fa305ad5ace1"
+    },
+    {
+      "file": "scripts/validate-protection-release.mjs",
+      "bytes": 7715,
+      "sha256": "581d04724925834cd78527b211513ec89cdd7b4be051470e89293e596a9dc438"
+    },
+    {
+      "file": "src/App.tsx",
+      "bytes": 32358,
+      "sha256": "02a02dc0ddc586316873d45f9d2db96d8cbee2f09251d47d21738c17dd08bd4e"
+    },
+    {
+      "file": "src/components/Analytics.tsx",
+      "bytes": 3930,
+      "sha256": "ac7685242e86dce5b808ba004fbf9f01fd16f5197b25b26e3be874e03a1a99d2"
+    },
+    {
+      "file": "src/components/PpfQuoteForm.tsx",
+      "bytes": 10889,
+      "sha256": "9c1c7f3000ef41172124bc347c7e48387e356a5cd0dff284f509c8f1e7f0b696"
+    },
+    {
+      "file": "src/data/ppfContent.ts",
+      "bytes": 7354,
+      "sha256": "2b111339aedc7f63186bdd9f49e41090904b1e8cd4783988967d3db03dd2f1ca"
+    },
+    {
+      "file": "src/i18n/ar-protection-services.ts",
+      "bytes": 15897,
+      "sha256": "bb1cfbddea0aa8f5d3536d5371978483b36db14cd8f2839cade8e1ecdd953d29"
+    },
+    {
+      "file": "src/lib/ppf-enquiry.ts",
+      "bytes": 3756,
+      "sha256": "f369277c1f843499e0be62060c6d75064059f7bb0460758527d2e51e1f715fd3"
+    },
+    {
+      "file": "src/lib/route-manifest.ts",
+      "bytes": 15165,
+      "sha256": "aa472adba4ea4407a894734b64a156d43da7a8cbfe873e6a7e9a86c12485de49"
+    },
+    {
+      "file": "src/pages/PpfPage.tsx",
+      "bytes": 23172,
+      "sha256": "1d85ae7f8534cc5bf626acebd8e095c70ef9bf88336bcdadb3ccd2ff2ea0db55"
+    },
+    {
+      "file": "src/pages/ServicePage.tsx",
+      "bytes": 39991,
+      "sha256": "f57f045aae9869c5fb987ae6de519f9e9a49feab09b052386942d8b61b50ffc5"
+    },
+    {
+      "file": "src/styles/ppf-form.css",
+      "bytes": 1679,
+      "sha256": "db24d73dfd1fbef0587681979a41dcfb402f83604e55c444a94c11a37bb386a9"
+    }
+  ],
+  "excluded": [
+    "outputs/ppf-phase1-2026-10-17/baseline/pre-existing.patch",
+    "outputs/ppf-phase1-2026-10-17/baseline/source",
+    "outputs/ppf-phase2-2026-10-17/baseline/source",
+    "outputs/ppf-phase2-2026-10-17/baseline/start-tracked.patch",
+    "outputs/ppf-phase2-2026-10-17/qa/build-logs",
+    "outputs/ppf-phase2-2026-10-17/tabular-work",
+    "outputs/ppf-phase3-4-2026-10-17/artifact-work",
+    "outputs/ppf-phase3-4-2026-10-17/baseline/source",
+    "outputs/ppf-phase3-4-2026-10-17/baseline/start-tracked.patch",
+    "outputs/ppf-phase3-4-2026-10-17/qa/build-logs",
+    "outputs/ppf-phase3-4-2026-10-17/workbook-runtime"
+  ],
+  "ignoredPaths": [
+    "outputs/ppf-phase1-2026-10-17/journeys.log",
+    "outputs/ppf-phase1-2026-10-17/lint-full.log",
+    "outputs/ppf-phase1-2026-10-17/local-verification.log",
+    "outputs/ppf-phase1-2026-10-17/master-validation.log",
+    "outputs/ppf-phase2-2026-10-17/journeys.log",
+    "outputs/ppf-phase2-2026-10-17/lint-full.log",
+    "outputs/ppf-phase2-2026-10-17/qa/local-verification.log",
+    "outputs/ppf-phase2-2026-10-17/qa/master-validation.log",
+    "outputs/ppf-phase2-2026-10-17/qa/ppf-browser.log",
+    "outputs/ppf-phase3-4-2026-10-17/journeys.log",
+    "outputs/ppf-phase3-4-2026-10-17/qa/eslint.log",
+    "outputs/ppf-phase3-4-2026-10-17/qa/local-verification.log",
+    "outputs/ppf-phase3-4-2026-10-17/qa/master-validation.log",
+    "outputs/ppf-phase3-4-2026-10-17/qa/paint-care-journeys.log",
+    "outputs/ppf-phase3-4-2026-10-17/qa/ppf-browser.log",
+    "outputs/ppf-phase3-4-2026-10-17/qa/typescript-app.log",
+    "outputs/ppf-phase3-4-2026-10-17/qa/typescript-node.log"
+  ]
+}

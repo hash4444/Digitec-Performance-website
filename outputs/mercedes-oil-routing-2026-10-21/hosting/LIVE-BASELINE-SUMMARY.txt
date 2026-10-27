@@ -1,0 +1,20 @@
+Fresh read-only public baseline captured21October2026 at10:23:39 UAE /06:23:39Z.
+32 GET/HEAD case captures; final run had zero transport errors. Source:live-baseline.json and live-raw/.
+
+Legacy oil alias, slash and slashless:200 for GET and HEAD; no permanent response. GET matches homepage title,H1,canonical, with alias URL retained. Full raw hashes differ, so no byte-equivalence claim is made.
+
+Correct service, slash and slashless:200 for GET and HEAD; title Mercedes Oil Change Dubai | MB-Approved Oil | Digi-Tec;H1 Mercedes Oil Change in Dubai; declared canonical https://digitecme.com/services/mercedes-oil-change-dubai. Both return relevant initialSSR. No slash normalization occurs live.
+
+Existing WWW normalization:301 to same apex path, then200. Existing HTTP normalization:301 to HTTPS same path, then200. For legacy oil these end on homepage content. Repeated tag=a&tag=b and synthetic gclid survive; this is current normalization behavior, not a test of the undeployed oil rule.
+
+Existing Mercedes repair alias:301 direct to brand hub, then200, preserving synthetic query string. This matches the actual active Cloudflare rule inspected by root.
+
+Unrelated hub,general oil,oil article,Mercedes diagnostics,PPF and tuning:GET/HEAD200, correct relevant content and self-canonicals.
+
+/_redirects:200 application/octet-stream. It contains the exact legacyoil->service mapping at line162.
+/_worker.js:200 text/javascript; the downloaded generated program includes the same mapping.
+Published static files are not executing as an attached Worker in the observed Cloudflare zone; root's authenticated account/route inventory confirms none attached. No new edge code or content publication is needed to add one exact Single Redirect.
+
+The candidate oil rule must precede the current WWW rule to avoid a needless WWW->apex-alias->service chain. Preserve both active existing rules and relative order. Post-activation edge tests remain required; the new rule is not live and Cloudflare trace simulation returned an Authentication error.
+
+All query data was synthetic. No POST/customer enquiries, setting changes, uploads, publishing or API mutations were performed.

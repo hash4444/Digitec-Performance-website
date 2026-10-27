@@ -31,6 +31,7 @@ const BestWorkshopPage: React.FC = () => {
   const sourcePage = slug ? getBestWorkshopPage(slug) : undefined;
   const page = sourcePage && isArabic ? localizeBestWorkshopPageToArabic(sourcePage) : sourcePage;
   const url = `${SITE_URL}${isArabic ? '/ar' : ''}/${slug}`;
+  const isEnglishPorscheSelection = !isArabic && slug === 'best-porsche-workshop-dubai';
 
   const jsonLd = React.useMemo(() => {
     if (!page) return undefined;
@@ -73,7 +74,7 @@ const BestWorkshopPage: React.FC = () => {
   if (!page) return <Navigate to={localizedPath('/')} replace />;
 
   const whatsappHref = `https://wa.me/97143402223?text=${encodeURIComponent(
-    isArabic ? `مرحباً ديجي-تك، أبحث عن ورشة متخصصة في ${page.brand ?? 'السيارات'} بدبي. هل يمكنكم مساعدتي؟` : `Hi Digi-Tec, I'm looking for an independent ${page.brand ?? 'car'} workshop in Dubai. Can you help?`,
+    isArabic ? `مرحباً ديجي-تك، أبحث عن ورشة متخصصة في ${page.brand ?? 'السيارات'} بدبي. هل يمكنكم مساعدتي؟` : isEnglishPorscheSelection ? 'Hi DIGI-TEC, I am choosing a Porsche workshop and would like to confirm the inspection and service options for my car.\n\nModel and year: \nMileage: \nService needed or symptom: \nPreferred appointment time: ' : `Hi Digi-Tec, I'm looking for an independent ${page.brand ?? 'car'} workshop in Dubai. Can you help?`,
   )}`;
 
   const otherPages = bestWorkshopPages
@@ -86,6 +87,8 @@ const BestWorkshopPage: React.FC = () => {
         ? { ...related, h1: isArabic ? 'ورشة خدمة وإصلاح BMW في دبي' : 'BMW Service & Repair Workshop in Dubai' }
         : item.slug === 'best-range-rover-workshop-dubai'
           ? { ...related, h1: isArabic ? related.h1 : 'Range Rover Service & Repair Workshop in Dubai' }
+        : item.slug === 'best-porsche-workshop-dubai'
+          ? { ...related, h1: isArabic ? related.h1 : 'Porsche Service & Repair Workshop in Dubai' }
         : !['best-ferrari-workshop-dubai', 'best-lamborghini-workshop-dubai'].includes(page.slug) &&
           ['best-ferrari-workshop-dubai', 'best-lamborghini-workshop-dubai'].includes(item.slug)
           ? { ...related, h1: isArabic ? `ورشة خدمة وإصلاح ${item.brandKeyword ?? item.brand} في دبي` : related.h1 }
@@ -151,6 +154,30 @@ const BestWorkshopPage: React.FC = () => {
           </div>
         </div>
       </section>
+
+      {isEnglishPorscheSelection && (
+        <section className="border-t border-white/5 bg-black py-12 sm:py-16" aria-labelledby="porsche-selection-next-step-heading">
+          <div className="mx-auto max-w-4xl px-4 sm:px-6">
+            <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-6 sm:p-8">
+              <p className="eyebrow mb-4">From workshop comparison to a service enquiry</p>
+              <h2 id="porsche-selection-next-step-heading" className="text-2xl font-black sm:text-4xl">Discuss the work your Porsche needs</h2>
+              <p className="mt-4 text-base leading-relaxed text-gray-300">Use the checklist below when speaking to a workshop. When you are ready to arrange maintenance or investigate a fault, our main Porsche service page explains the available services and how to request an appointment.</p>
+              <Link to="/brands/porsche-service-dubai" className="btn-primary mt-6">Explore Porsche service and repair <ArrowRight className="h-5 w-5 shrink-0" /></Link>
+              <div className="mt-6 flex flex-wrap gap-x-6 gap-y-3">
+                {[
+                  { path: '/brands/porsche-service-dubai/engine-diagnostics', label: 'PIWIS 3 diagnostic assessment' },
+                  { path: '/brands/porsche-service-dubai/transmission-repair', label: 'PDK and transmission inspection' },
+                  { path: '/brands/porsche-service-dubai/suspension-repair', label: 'Porsche suspension inspection' },
+                ].map((item) => <Link key={item.path} to={item.path} className="inline-flex items-center gap-2 text-sm font-semibold text-burnt-orange hover:underline">{item.label}<ArrowRight className="h-4 w-4 shrink-0" /></Link>)}
+              </div>
+              <div className="mt-7 border-t border-white/10 pt-6">
+                <p className="mb-4 text-sm leading-relaxed text-gray-300">Send the model, year, mileage and concern so the team can confirm the relevant inspection, any diagnostic charge and appointment availability.</p>
+                <a href={whatsappHref} data-cta-placement="porsche_workshop_selection" target="_blank" rel="noopener noreferrer" className="btn-secondary"><MessageCircle className="h-5 w-5 shrink-0" /> Ask about your Porsche on WhatsApp</a>
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
 
       {page.brandKeyword === 'Range Rover' && (
         <section className="py-12 sm:py-16 bg-gradient-to-br from-charcoal/40 to-black border-t border-white/5">

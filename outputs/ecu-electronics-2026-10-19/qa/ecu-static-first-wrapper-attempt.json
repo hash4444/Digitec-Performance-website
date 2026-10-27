@@ -1,0 +1,102 @@
+{
+  "checkedAt": "2026-10-19T08:36:26.745Z",
+  "passed": false,
+  "pages": [],
+  "checks": 238,
+  "links": [],
+  "noindexPolicies": [
+    "/ar/brands/bugatti-service-dubai/electrical-repair",
+    "/ar/brands/byd-service-dubai/electrical-repair",
+    "/ar/brands/cadillac-service-dubai/electrical-repair",
+    "/ar/brands/jeep-service-dubai/electrical-repair",
+    "/ar/brands/jetour-service-dubai/electrical-repair",
+    "/ar/brands/pagani-service-dubai/electrical-repair",
+    "/ar/brands/rox-service-dubai/electrical-repair",
+    "/ar/brands/tesla-service-dubai/electrical-repair",
+    "/ar/brands/volkswagen-service-dubai/electrical-repair",
+    "/ar/brands/volvo-service-dubai/electrical-repair",
+    "/brands/bugatti-service-dubai/electrical-repair",
+    "/brands/byd-service-dubai/electrical-repair",
+    "/brands/cadillac-service-dubai/electrical-repair",
+    "/brands/jeep-service-dubai/electrical-repair",
+    "/brands/jetour-service-dubai/electrical-repair",
+    "/brands/pagani-service-dubai/electrical-repair",
+    "/brands/rox-service-dubai/electrical-repair",
+    "/brands/tesla-service-dubai/electrical-repair",
+    "/brands/volkswagen-service-dubai/electrical-repair",
+    "/brands/volvo-service-dubai/electrical-repair"
+  ],
+  "failures": [
+    {
+      "route": "/services/car-diagnostics-dubai",
+      "error": "All prior visible markup/content/contact URLs retained after removing only new marked section; normalize generated Radix IDs and whitespace\n+ actual - expected\n\n+ 'fee3a26e090b3fae1a5e028189a36a8c43c0bb9e1427a6d6288ef312f2126a4a'\n- '1d3b056b66e93c7417dc239875d31f76936855fef350dc72767a3060fde59407'\n",
+      "stack": "AssertionError [ERR_ASSERTION]: All prior visible markup/content/contact URLs retained after removing only new marked section; normalize generated Radix IDs and whitespace\n+ actual - expected\n\n+ 'fee3a26e090b3fae1a5e028189a36a8c43c0bb9e1427a6d6288ef312f2126a4a'\n- '1d3b056b66e93c7417dc239875d31f76936855fef350dc72767a3060fde59407'\n\n    at check (file:///C:/Users/ADMIN/Documents/ChatGPT/DIGITEC/outputs/ecu-electronics-2026-10-19/qa/validate-ecu-electronics-static.mjs:30:48)\n    at file:///C:/Users/ADMIN/Documents/ChatGPT/DIGITEC/outputs/ecu-electronics-2026-10-19/qa/validate-ecu-electronics-static.mjs:39:2"
+    },
+    {
+      "route": "/ar/services/car-diagnostics-dubai",
+      "error": "All prior visible markup/content/contact URLs retained after removing only new marked section; normalize generated Radix IDs and whitespace\n+ actual - expected\n\n+ '96b2d99630abcc6ef9b5a1cb8e124d99ae6f19b3ca2bb84cfe8e4ce1fe208adb'\n- '9280fa8d3bfe5345ea829c2c4c3dc338f94c54f8240116050708ac84ca8d873e'\n",
+      "stack": "AssertionError [ERR_ASSERTION]: All prior visible markup/content/contact URLs retained after removing only new marked section; normalize generated Radix IDs and whitespace\n+ actual - expected\n\n+ '96b2d99630abcc6ef9b5a1cb8e124d99ae6f19b3ca2bb84cfe8e4ce1fe208adb'\n- '9280fa8d3bfe5345ea829c2c4c3dc338f94c54f8240116050708ac84ca8d873e'\n\n    at check (file:///C:/Users/ADMIN/Documents/ChatGPT/DIGITEC/outputs/ecu-electronics-2026-10-19/qa/validate-ecu-electronics-static.mjs:30:48)\n    at file:///C:/Users/ADMIN/Documents/ChatGPT/DIGITEC/outputs/ecu-electronics-2026-10-19/qa/validate-ecu-electronics-static.mjs:39:2"
+    },
+    {
+      "route": "/services/auto-electrical-repair-dubai",
+      "error": "All prior visible markup/content/contact URLs retained after removing only new marked section; normalize generated Radix IDs and whitespace\n+ actual - expected\n\n+ 'e4822cbace506ba6742ef54185863bb845c664563090b38096a9ad11787b0332'\n- '871395816096b8689528859cad23a77c8a207263c43d40bc9eebb2e6fca5fbf2'\n",
+      "stack": "AssertionError [ERR_ASSERTION]: All prior visible markup/content/contact URLs retained after removing only new marked section; normalize generated Radix IDs and whitespace\n+ actual - expected\n\n+ 'e4822cbace506ba6742ef54185863bb845c664563090b38096a9ad11787b0332'\n- '871395816096b8689528859cad23a77c8a207263c43d40bc9eebb2e6fca5fbf2'\n\n    at check (file:///C:/Users/ADMIN/Documents/ChatGPT/DIGITEC/outputs/ecu-electronics-2026-10-19/qa/validate-ecu-electronics-static.mjs:30:48)\n    at file:///C:/Users/ADMIN/Documents/ChatGPT/DIGITEC/outputs/ecu-electronics-2026-10-19/qa/validate-ecu-electronics-static.mjs:39:2"
+    },
+    {
+      "route": "/ar/services/auto-electrical-repair-dubai",
+      "error": "All prior visible markup/content/contact URLs retained after removing only new marked section; normalize generated Radix IDs and whitespace\n+ actual - expected\n\n+ 'aa138c9e1c65cb0116e5bac4616bc1270d560c98f1143c2227decf042b35b008'\n- '4525db694e3f572976d5ede8596607293b072a97f84ebbc83a05ffed9a64962a'\n",
+      "stack": "AssertionError [ERR_ASSERTION]: All prior visible markup/content/contact URLs retained after removing only new marked section; normalize generated Radix IDs and whitespace\n+ actual - expected\n\n+ 'aa138c9e1c65cb0116e5bac4616bc1270d560c98f1143c2227decf042b35b008'\n- '4525db694e3f572976d5ede8596607293b072a97f84ebbc83a05ffed9a64962a'\n\n    at check (file:///C:/Users/ADMIN/Documents/ChatGPT/DIGITEC/outputs/ecu-electronics-2026-10-19/qa/validate-ecu-electronics-static.mjs:30:48)\n    at file:///C:/Users/ADMIN/Documents/ChatGPT/DIGITEC/outputs/ecu-electronics-2026-10-19/qa/validate-ecu-electronics-static.mjs:39:2"
+    },
+    {
+      "route": "/services/mercedes-diagnostics-dubai",
+      "error": "All prior visible markup/content/contact URLs retained after removing only new marked section; normalize generated Radix IDs and whitespace\n+ actual - expected\n\n+ 'b247fadfef45dd708d88bd06aa2660ff1831abc0b99f954d33e804d30007a30c'\n- '37caa52ef58e949125ea2dd34b6de19b3605737c01568fb415a7b0e22b9f1336'\n",
+      "stack": "AssertionError [ERR_ASSERTION]: All prior visible markup/content/contact URLs retained after removing only new marked section; normalize generated Radix IDs and whitespace\n+ actual - expected\n\n+ 'b247fadfef45dd708d88bd06aa2660ff1831abc0b99f954d33e804d30007a30c'\n- '37caa52ef58e949125ea2dd34b6de19b3605737c01568fb415a7b0e22b9f1336'\n\n    at check (file:///C:/Users/ADMIN/Documents/ChatGPT/DIGITEC/outputs/ecu-electronics-2026-10-19/qa/validate-ecu-electronics-static.mjs:30:48)\n    at file:///C:/Users/ADMIN/Documents/ChatGPT/DIGITEC/outputs/ecu-electronics-2026-10-19/qa/validate-ecu-electronics-static.mjs:39:2"
+    },
+    {
+      "route": "/ar/services/mercedes-diagnostics-dubai",
+      "error": "All prior visible markup/content/contact URLs retained after removing only new marked section; normalize generated Radix IDs and whitespace\n+ actual - expected\n\n+ 'f29ded18296a5249ab3f2640ecca49f04c9a2039bd61e820e6667176443797bd'\n- 'bb810812eebd75525b1bda216b90cc0c235973759f8b990c0d19a06c431af11b'\n",
+      "stack": "AssertionError [ERR_ASSERTION]: All prior visible markup/content/contact URLs retained after removing only new marked section; normalize generated Radix IDs and whitespace\n+ actual - expected\n\n+ 'f29ded18296a5249ab3f2640ecca49f04c9a2039bd61e820e6667176443797bd'\n- 'bb810812eebd75525b1bda216b90cc0c235973759f8b990c0d19a06c431af11b'\n\n    at check (file:///C:/Users/ADMIN/Documents/ChatGPT/DIGITEC/outputs/ecu-electronics-2026-10-19/qa/validate-ecu-electronics-static.mjs:30:48)\n    at file:///C:/Users/ADMIN/Documents/ChatGPT/DIGITEC/outputs/ecu-electronics-2026-10-19/qa/validate-ecu-electronics-static.mjs:39:2"
+    },
+    {
+      "route": "/services/mercedes-electrical-repair-dubai",
+      "error": "All prior visible markup/content/contact URLs retained after removing only new marked section; normalize generated Radix IDs and whitespace\n+ actual - expected\n\n+ '239e2e6de3964f9b510aa705e3e7ac877748b32a90e0e0ba9537c97346f03ef5'\n- '3af5ea2b9da2616348958b8188048bc4ba0ff53d8aa8084b81534088bf7405b6'\n",
+      "stack": "AssertionError [ERR_ASSERTION]: All prior visible markup/content/contact URLs retained after removing only new marked section; normalize generated Radix IDs and whitespace\n+ actual - expected\n\n+ '239e2e6de3964f9b510aa705e3e7ac877748b32a90e0e0ba9537c97346f03ef5'\n- '3af5ea2b9da2616348958b8188048bc4ba0ff53d8aa8084b81534088bf7405b6'\n\n    at check (file:///C:/Users/ADMIN/Documents/ChatGPT/DIGITEC/outputs/ecu-electronics-2026-10-19/qa/validate-ecu-electronics-static.mjs:30:48)\n    at file:///C:/Users/ADMIN/Documents/ChatGPT/DIGITEC/outputs/ecu-electronics-2026-10-19/qa/validate-ecu-electronics-static.mjs:39:2"
+    },
+    {
+      "route": "/ar/services/mercedes-electrical-repair-dubai",
+      "error": "All prior visible markup/content/contact URLs retained after removing only new marked section; normalize generated Radix IDs and whitespace\n+ actual - expected\n\n+ '0c0706b31a203f9ef1801c128e5dc7a09301bf7b94c1f572d9b0f109e990a523'\n- '2ed7d2fa596ced17aaecafb46a7e11843f472d645a65535769d4fec5e168bd6e'\n",
+      "stack": "AssertionError [ERR_ASSERTION]: All prior visible markup/content/contact URLs retained after removing only new marked section; normalize generated Radix IDs and whitespace\n+ actual - expected\n\n+ '0c0706b31a203f9ef1801c128e5dc7a09301bf7b94c1f572d9b0f109e990a523'\n- '2ed7d2fa596ced17aaecafb46a7e11843f472d645a65535769d4fec5e168bd6e'\n\n    at check (file:///C:/Users/ADMIN/Documents/ChatGPT/DIGITEC/outputs/ecu-electronics-2026-10-19/qa/validate-ecu-electronics-static.mjs:30:48)\n    at file:///C:/Users/ADMIN/Documents/ChatGPT/DIGITEC/outputs/ecu-electronics-2026-10-19/qa/validate-ecu-electronics-static.mjs:39:2"
+    },
+    {
+      "route": "/brands/bmw-service-dubai/engine-diagnostics",
+      "error": "All prior visible markup/content/contact URLs retained after removing only new marked section; normalize generated Radix IDs and whitespace\n+ actual - expected\n\n+ '582f7cea888c1fc8b8955fc0ac0afe3f020fe75596faa2d579da409ec40802c0'\n- 'cf2934c835836010e4d5c5f402f14f8dab2ed4efc1e92f9410349623697ee2da'\n",
+      "stack": "AssertionError [ERR_ASSERTION]: All prior visible markup/content/contact URLs retained after removing only new marked section; normalize generated Radix IDs and whitespace\n+ actual - expected\n\n+ '582f7cea888c1fc8b8955fc0ac0afe3f020fe75596faa2d579da409ec40802c0'\n- 'cf2934c835836010e4d5c5f402f14f8dab2ed4efc1e92f9410349623697ee2da'\n\n    at check (file:///C:/Users/ADMIN/Documents/ChatGPT/DIGITEC/outputs/ecu-electronics-2026-10-19/qa/validate-ecu-electronics-static.mjs:30:48)\n    at file:///C:/Users/ADMIN/Documents/ChatGPT/DIGITEC/outputs/ecu-electronics-2026-10-19/qa/validate-ecu-electronics-static.mjs:39:2"
+    },
+    {
+      "route": "/ar/brands/bmw-service-dubai/engine-diagnostics",
+      "error": "All prior visible markup/content/contact URLs retained after removing only new marked section; normalize generated Radix IDs and whitespace\n+ actual - expected\n\n+ '060fb00aa2f371a3a1bbf5b2dd860302084cfcc0bac0900edb49b8bb944de1a8'\n- 'ac0806d71d01e4771b64788b94a111fd9402ce7483997e3e9c8c4bd8ebb1bfb9'\n",
+      "stack": "AssertionError [ERR_ASSERTION]: All prior visible markup/content/contact URLs retained after removing only new marked section; normalize generated Radix IDs and whitespace\n+ actual - expected\n\n+ '060fb00aa2f371a3a1bbf5b2dd860302084cfcc0bac0900edb49b8bb944de1a8'\n- 'ac0806d71d01e4771b64788b94a111fd9402ce7483997e3e9c8c4bd8ebb1bfb9'\n\n    at check (file:///C:/Users/ADMIN/Documents/ChatGPT/DIGITEC/outputs/ecu-electronics-2026-10-19/qa/validate-ecu-electronics-static.mjs:30:48)\n    at file:///C:/Users/ADMIN/Documents/ChatGPT/DIGITEC/outputs/ecu-electronics-2026-10-19/qa/validate-ecu-electronics-static.mjs:39:2"
+    },
+    {
+      "route": "/brands/bmw-service-dubai/electrical-repair",
+      "error": "All prior visible markup/content/contact URLs retained after removing only new marked section; normalize generated Radix IDs and whitespace\n+ actual - expected\n\n+ 'c84f80bc284e6b21e5626dbc8c90f215552c7c84794b5fda83bfba17cb02a362'\n- '954669a452e619fa41adb4b9b92c6ba84d6d4e0250b339b3185d538bdb14887d'\n",
+      "stack": "AssertionError [ERR_ASSERTION]: All prior visible markup/content/contact URLs retained after removing only new marked section; normalize generated Radix IDs and whitespace\n+ actual - expected\n\n+ 'c84f80bc284e6b21e5626dbc8c90f215552c7c84794b5fda83bfba17cb02a362'\n- '954669a452e619fa41adb4b9b92c6ba84d6d4e0250b339b3185d538bdb14887d'\n\n    at check (file:///C:/Users/ADMIN/Documents/ChatGPT/DIGITEC/outputs/ecu-electronics-2026-10-19/qa/validate-ecu-electronics-static.mjs:30:48)\n    at file:///C:/Users/ADMIN/Documents/ChatGPT/DIGITEC/outputs/ecu-electronics-2026-10-19/qa/validate-ecu-electronics-static.mjs:39:2"
+    },
+    {
+      "route": "/ar/brands/bmw-service-dubai/electrical-repair",
+      "error": "All prior visible markup/content/contact URLs retained after removing only new marked section; normalize generated Radix IDs and whitespace\n+ actual - expected\n\n+ 'b81a0eac780b4ce368e306465241f3f30e483ae06df02db1f9a7e38e824ed63a'\n- '7e4c79fbea00b58760ea8b451d07b6bbf9ded12ddf7bbd240721ffb807538021'\n",
+      "stack": "AssertionError [ERR_ASSERTION]: All prior visible markup/content/contact URLs retained after removing only new marked section; normalize generated Radix IDs and whitespace\n+ actual - expected\n\n+ 'b81a0eac780b4ce368e306465241f3f30e483ae06df02db1f9a7e38e824ed63a'\n- '7e4c79fbea00b58760ea8b451d07b6bbf9ded12ddf7bbd240721ffb807538021'\n\n    at check (file:///C:/Users/ADMIN/Documents/ChatGPT/DIGITEC/outputs/ecu-electronics-2026-10-19/qa/validate-ecu-electronics-static.mjs:30:48)\n    at file:///C:/Users/ADMIN/Documents/ChatGPT/DIGITEC/outputs/ecu-electronics-2026-10-19/qa/validate-ecu-electronics-static.mjs:39:2"
+    },
+    {
+      "route": "/services/head-unit-repair-dubai",
+      "error": "All prior visible markup/content/contact URLs retained after removing only new marked section; normalize generated Radix IDs and whitespace\n+ actual - expected\n\n+ 'e494098123e04f98bf4953f72a168f804b40d67f559951172b990008dd02f961'\n- '19b11dd782a1ff09f0b322e6deac8fe494faad80c37d8822148acabae9a2918f'\n",
+      "stack": "AssertionError [ERR_ASSERTION]: All prior visible markup/content/contact URLs retained after removing only new marked section; normalize generated Radix IDs and whitespace\n+ actual - expected\n\n+ 'e494098123e04f98bf4953f72a168f804b40d67f559951172b990008dd02f961'\n- '19b11dd782a1ff09f0b322e6deac8fe494faad80c37d8822148acabae9a2918f'\n\n    at check (file:///C:/Users/ADMIN/Documents/ChatGPT/DIGITEC/outputs/ecu-electronics-2026-10-19/qa/validate-ecu-electronics-static.mjs:30:48)\n    at file:///C:/Users/ADMIN/Documents/ChatGPT/DIGITEC/outputs/ecu-electronics-2026-10-19/qa/validate-ecu-electronics-static.mjs:39:2"
+    },
+    {
+      "route": "/services/cadillac-cue-screen-repair-dubai",
+      "error": "All prior visible markup/content/contact URLs retained after removing only new marked section; normalize generated Radix IDs and whitespace\n+ actual - expected\n\n+ '259068e19912d8f028ea44c4ffdad20bd9eb0b3751849d8d36c76db1ae18ea7b'\n- '29c925e3ab0ec45a72cf8388362c705ccc192697ae835e3b8867ecf8a4533cae'\n",
+      "stack": "AssertionError [ERR_ASSERTION]: All prior visible markup/content/contact URLs retained after removing only new marked section; normalize generated Radix IDs and whitespace\n+ actual - expected\n\n+ '259068e19912d8f028ea44c4ffdad20bd9eb0b3751849d8d36c76db1ae18ea7b'\n- '29c925e3ab0ec45a72cf8388362c705ccc192697ae835e3b8867ecf8a4533cae'\n\n    at check (file:///C:/Users/ADMIN/Documents/ChatGPT/DIGITEC/outputs/ecu-electronics-2026-10-19/qa/validate-ecu-electronics-static.mjs:30:48)\n    at file:///C:/Users/ADMIN/Documents/ChatGPT/DIGITEC/outputs/ecu-electronics-2026-10-19/qa/validate-ecu-electronics-static.mjs:39:2"
+    }
+  ],
+  "scope": "Local HTML/schema/routing only; no Google index status, Rich Results API, delivered lead or production publication assertion."
+}

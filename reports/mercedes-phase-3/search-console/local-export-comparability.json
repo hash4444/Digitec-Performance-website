@@ -1,0 +1,587 @@
+{
+  "created_at_utc": "2026-10-26T07:46:32.828Z",
+  "source_hashes": {
+    "currentAnalysis": {
+      "path": "reports/evidence-2026-10-26/gsc/gsc-analysis.json",
+      "sha256": "584382089cd0b8f8e6a14464b2818caee4b0aca8fa38e4d5c4b8eac59b40972d"
+    },
+    "currentExtraction": {
+      "path": "reports/evidence-2026-10-26/gsc/current-workbook-extraction.json",
+      "sha256": "eac7f5f95631514be4a591db6f9af87c213e933c93ed0ebdfdac13f682c55f3a"
+    },
+    "historicalManifest": {
+      "path": "reports/evidence-2026-10-26/gsc/historical-source-manifest.json",
+      "sha256": "d02852b36ee4ef5d6fa2a2f78b909c2301060ee5c8613a3ad15cffbca6c075fd"
+    },
+    "servicePaired": {
+      "path": "outputs/mercedes-service-top3-2026-10-20/research/live-gsc-evidence.json",
+      "sha256": "0a43b531bb03e4dd071a31281f4fae3fc24ece022612980145f131e33ffe8908"
+    },
+    "oilSummary": {
+      "path": "outputs/mercedes-oil-investigation-2026-10-21/gsc/metrics-summary.json",
+      "sha256": "bd2db70f15b668248cc20a7ca362e755f07e5a14568fd5389ee1baec0eadb34f"
+    }
+  },
+  "baseline_source": {
+    "path": "C:\\Users\\ADMIN\\Downloads\\digitecme.com-Performance-on-Search-2026-10-26.xlsx",
+    "sha256": "05a2d6036fa9210f4c63e3ff9ff3b21ba78c50a2214a1aff90823d66b8fe7859",
+    "filters": {
+      "Search type": "Web (text-based)",
+      "Date": "Last 7 days"
+    },
+    "start": "2026-10-18",
+    "end": "2026-10-24",
+    "time_column": "Date",
+    "chart": {
+      "rows": 7,
+      "clicks": 49,
+      "impressions": 10790,
+      "ctr": 0.004541241890639481,
+      "impression_weighted_position_approx": 19.026422613531047
+    },
+    "sheets": {
+      "Chart": {
+        "range": "A1:E8",
+        "rows": 7
+      },
+      "Queries": {
+        "range": "A1:E1001",
+        "rows": 1000
+      },
+      "Pages": {
+        "range": "A1:E303",
+        "rows": 302
+      },
+      "Countries": {
+        "range": "A1:E129",
+        "rows": 128
+      },
+      "Devices": {
+        "range": "A1:E4",
+        "rows": 3
+      },
+      "Search appearance": {
+        "range": "A1:E2",
+        "rows": 1
+      },
+      "Filters": {
+        "range": "A1:B3",
+        "rows": 2
+      }
+    }
+  },
+  "six_exact_query_baseline_rows": [
+    {
+      "query": "mercedes service dubai",
+      "availability": "VISIBLE_QUERY_ONLY",
+      "clicks": 0,
+      "impressions": 22,
+      "ctr_fraction": 0,
+      "average_position": 16.5,
+      "source_range": "Queries!A83:E83",
+      "page_attribution": "UNAVAILABLE",
+      "country": "ALL",
+      "device": "ALL",
+      "window_start": "2026-10-18",
+      "window_end": "2026-10-24",
+      "search_type_ui": "Web (text-based)"
+    },
+    {
+      "query": "mercedes repair dubai",
+      "availability": "VISIBLE_QUERY_ONLY",
+      "clicks": 0,
+      "impressions": 61,
+      "ctr_fraction": 0,
+      "average_position": 4.61,
+      "source_range": "Queries!A13:E13",
+      "page_attribution": "UNAVAILABLE",
+      "country": "ALL",
+      "device": "ALL",
+      "window_start": "2026-10-18",
+      "window_end": "2026-10-24",
+      "search_type_ui": "Web (text-based)"
+    },
+    {
+      "query": "mercedes specialist dubai",
+      "availability": "VISIBLE_QUERY_ONLY",
+      "clicks": 0,
+      "impressions": 23,
+      "ctr_fraction": 0,
+      "average_position": 7.04,
+      "source_range": "Queries!A75:E75",
+      "page_attribution": "UNAVAILABLE",
+      "country": "ALL",
+      "device": "ALL",
+      "window_start": "2026-10-18",
+      "window_end": "2026-10-24",
+      "search_type_ui": "Web (text-based)"
+    },
+    {
+      "query": "mercedes workshop dubai",
+      "availability": "VISIBLE_QUERY_ONLY",
+      "clicks": 0,
+      "impressions": 19,
+      "ctr_fraction": 0,
+      "average_position": 18.84,
+      "source_range": "Queries!A100:E100",
+      "page_attribution": "UNAVAILABLE",
+      "country": "ALL",
+      "device": "ALL",
+      "window_start": "2026-10-18",
+      "window_end": "2026-10-24",
+      "search_type_ui": "Web (text-based)"
+    },
+    {
+      "query": "mercedes maintenance dubai",
+      "availability": "VISIBLE_QUERY_ONLY",
+      "clicks": 0,
+      "impressions": 14,
+      "ctr_fraction": 0,
+      "average_position": 16.57,
+      "source_range": "Queries!A144:E144",
+      "page_attribution": "UNAVAILABLE",
+      "country": "ALL",
+      "device": "ALL",
+      "window_start": "2026-10-18",
+      "window_end": "2026-10-24",
+      "search_type_ui": "Web (text-based)"
+    },
+    {
+      "query": "mercedes oil change dubai",
+      "availability": "VISIBLE_QUERY_ONLY",
+      "clicks": 0,
+      "impressions": 8,
+      "ctr_fraction": 0,
+      "average_position": 8.25,
+      "source_range": "Queries!A232:E232",
+      "page_attribution": "UNAVAILABLE",
+      "country": "ALL",
+      "device": "ALL",
+      "window_start": "2026-10-18",
+      "window_end": "2026-10-24",
+      "search_type_ui": "Web (text-based)"
+    }
+  ],
+  "historical_exports": [
+    {
+      "path": "C:\\Users\\ADMIN\\Downloads\\digitecme.com-Performance-on-Search-2026-09-05.xlsx",
+      "sha256": "044fbeaef3d3db322cf0f0cddf1abf73ca2923b21898d1b2750e5f3962f0e603",
+      "filters": {
+        "Search type": "Web",
+        "Date": "Last 28 days"
+      },
+      "start": "2026-08-06",
+      "end": "2026-09-02",
+      "daily_rows": 28,
+      "same_filters_except_time_as_current": false,
+      "ends_on_current_end": false
+    },
+    {
+      "path": "C:\\Users\\ADMIN\\Downloads\\digitecme.com-Performance-on-Search-2026-09-08 (1).xlsx",
+      "sha256": "62e89a8606a7b4b0d34d51fb41301653ffa05e52941f18d4a39196001dd3c868",
+      "filters": {
+        "Search type": "Web",
+        "Date": "Last 3 months",
+        "Query": "+mercedes"
+      },
+      "start": "2026-06-07",
+      "end": "2026-09-06",
+      "daily_rows": 92,
+      "same_filters_except_time_as_current": false,
+      "ends_on_current_end": false
+    },
+    {
+      "path": "C:\\Users\\ADMIN\\Downloads\\digitecme.com-Performance-on-Search-2026-09-08 (2) (1).xlsx",
+      "sha256": "e576525d0106761efb97d99f6287c66868f8e03d341a57fc0229d4b282577810",
+      "filters": {
+        "Search type": "Web",
+        "Date": "Last 3 months"
+      },
+      "start": "2026-06-07",
+      "end": "2026-09-06",
+      "daily_rows": 92,
+      "same_filters_except_time_as_current": false,
+      "ends_on_current_end": false
+    },
+    {
+      "path": "C:\\Users\\ADMIN\\Downloads\\digitecme.com-Performance-on-Search-2026-09-08 (2).xlsx",
+      "sha256": "e576525d0106761efb97d99f6287c66868f8e03d341a57fc0229d4b282577810",
+      "filters": {
+        "Search type": "Web",
+        "Date": "Last 3 months"
+      },
+      "start": "2026-06-07",
+      "end": "2026-09-06",
+      "daily_rows": 92,
+      "same_filters_except_time_as_current": false,
+      "ends_on_current_end": false
+    },
+    {
+      "path": "C:\\Users\\ADMIN\\Downloads\\digitecme.com-Performance-on-Search-2026-09-08.xlsx",
+      "sha256": "12845dd47351747e383a3c01d05688e2263efc54cc06661f136f2ea64af7843f",
+      "filters": {
+        "Search type": "Web",
+        "Date": "Last 3 months"
+      },
+      "start": "2026-06-07",
+      "end": "2026-09-06",
+      "daily_rows": 92,
+      "same_filters_except_time_as_current": false,
+      "ends_on_current_end": false
+    },
+    {
+      "path": "C:\\Users\\ADMIN\\Downloads\\digitecme.com-Performance-on-Search-2026-09-13.xlsx",
+      "sha256": "14210311acf3258eb78c443f97592db82c2e29fb35c50fa73faee222952d10f9",
+      "filters": {
+        "Search type": "Web",
+        "Date": "Last 7 days"
+      },
+      "start": "2026-09-05",
+      "end": "2026-09-11",
+      "daily_rows": 7,
+      "same_filters_except_time_as_current": false,
+      "ends_on_current_end": false
+    },
+    {
+      "path": "C:\\Users\\ADMIN\\Downloads\\digitecme.com-Performance-on-Search-2026-09-16.xlsx",
+      "sha256": "8c74d5a83a5df26d74e5e8b19e705cdff82ba4115dac907a67fda990a5c77ee1",
+      "filters": {
+        "Search type": "Web",
+        "Date": "Last 7 days"
+      },
+      "start": "2026-09-07",
+      "end": "2026-09-13",
+      "daily_rows": 7,
+      "same_filters_except_time_as_current": false,
+      "ends_on_current_end": false
+    },
+    {
+      "path": "C:\\Users\\ADMIN\\Downloads\\digitecme.com-Performance-on-Search-2026-09-18 (1).xlsx",
+      "sha256": "f9d82af3a7358fa71928f032c087639d4e963116419f27e08fb29aa85b7e725e",
+      "filters": {
+        "Search type": "Web",
+        "Date": "Last 28 days",
+        "Query": "mercedes repair dubai"
+      },
+      "start": "2026-08-19",
+      "end": "2026-09-15",
+      "daily_rows": 28,
+      "same_filters_except_time_as_current": false,
+      "ends_on_current_end": false
+    },
+    {
+      "path": "C:\\Users\\ADMIN\\Downloads\\digitecme.com-Performance-on-Search-2026-09-18.xlsx",
+      "sha256": "bbf05a139515dee082f8bd161fa6a58974336977b3635d8743053bac00fd1978",
+      "filters": {
+        "Search type": "Web",
+        "Date": "Last 7 days"
+      },
+      "start": "2026-09-09",
+      "end": "2026-09-15",
+      "daily_rows": 7,
+      "same_filters_except_time_as_current": false,
+      "ends_on_current_end": false
+    },
+    {
+      "path": "C:\\Users\\ADMIN\\Downloads\\digitecme.com-Performance-on-Search-2026-09-19 (1).xlsx",
+      "sha256": "002120f78dbd45d1e131e7737d4f9803dd1b219f87d3196fa9fcb12b4c30c767",
+      "filters": {
+        "Search type": "Web",
+        "Date": "Last 3 months",
+        "Query": "+mercedes repair dubai"
+      },
+      "start": "2026-06-17",
+      "end": "2026-09-16",
+      "daily_rows": 92,
+      "same_filters_except_time_as_current": false,
+      "ends_on_current_end": false
+    },
+    {
+      "path": "C:\\Users\\ADMIN\\Downloads\\digitecme.com-Performance-on-Search-2026-09-19.xlsx",
+      "sha256": "e8fefd1dd5ff65a3e69f2edf1e54d817bef68539c1810da8ecb6c389da0930c5",
+      "filters": {
+        "Search type": "Web",
+        "Date": "Last 3 months",
+        "Query": "mercedes service dubai"
+      },
+      "start": "2026-06-17",
+      "end": "2026-09-16",
+      "daily_rows": 92,
+      "same_filters_except_time_as_current": false,
+      "ends_on_current_end": false
+    },
+    {
+      "path": "C:\\Users\\ADMIN\\Downloads\\digitecme.com-Performance-on-Search-2026-09-27.xlsx",
+      "sha256": "83d6b92aff7fb32aa6f7e095f219b3ceedc6c56fabd73837f4ea75136240ee51",
+      "filters": {
+        "Search type": "Web",
+        "Date": "Last 6 months"
+      },
+      "start": "2026-04-12",
+      "end": "2026-09-25",
+      "daily_rows": 167,
+      "same_filters_except_time_as_current": false,
+      "ends_on_current_end": false
+    },
+    {
+      "path": "C:\\Users\\ADMIN\\Downloads\\digitecme.com-Performance-on-Search-2026-10-05.xlsx",
+      "sha256": "71aa08d40c50ca7ab0128b38abedee67e2a111c7da42440824067b5250f76b89",
+      "filters": {
+        "Search type": "Web",
+        "Date": "Last 28 days",
+        "Page": "https://digitecme.com/tuning"
+      },
+      "start": "2026-09-05",
+      "end": "2026-10-02",
+      "daily_rows": 28,
+      "same_filters_except_time_as_current": false,
+      "ends_on_current_end": false
+    },
+    {
+      "path": "C:\\Users\\ADMIN\\Downloads\\digitecme.com-Performance-on-Search-2026-10-12 (1).xlsx",
+      "sha256": "3fcbcb796e4670809bc44d52852369a58bf8650d6577c496a1f71a996573945e",
+      "filters": {
+        "Search type": "Web",
+        "Date": "Last 3 months"
+      },
+      "start": "2026-07-10",
+      "end": "2026-10-09",
+      "daily_rows": 92,
+      "same_filters_except_time_as_current": false,
+      "ends_on_current_end": false
+    },
+    {
+      "path": "C:\\Users\\ADMIN\\Downloads\\digitecme.com-Performance-on-Search-2026-10-12.xlsx",
+      "sha256": "250d14da5ef12f5ee62582a8b5530c88d97e61fea96dc17685a9009fd09a65bd",
+      "filters": {
+        "Search type": "Web",
+        "Date": "Last 3 months",
+        "Search appearance": "Product snippets"
+      },
+      "start": "2026-07-10",
+      "end": "2026-10-09",
+      "daily_rows": 92,
+      "same_filters_except_time_as_current": false,
+      "ends_on_current_end": false
+    },
+    {
+      "path": "C:\\Users\\ADMIN\\Downloads\\digitecme.com-Performance-on-Search-2026-10-17.xlsx",
+      "sha256": "1a1570e6f9180667f663e333edb971099216cf5fae96969441687d0c07cc4092",
+      "filters": {
+        "Search type": "Web (text-based)",
+        "Date": "Last 3 months",
+        "Query": "+ppf"
+      },
+      "start": "2026-07-15",
+      "end": "2026-10-14",
+      "daily_rows": 92,
+      "same_filters_except_time_as_current": false,
+      "ends_on_current_end": false
+    },
+    {
+      "path": "C:\\Users\\ADMIN\\Downloads\\digitecme.com-Performance-on-Search-2026-10-19.xlsx",
+      "sha256": "0190f0505365029c2d529cf4a452815e6a0f446ba18eaf130a95bc60b92ba6c9",
+      "filters": {
+        "Search type": "Web (text-based)",
+        "Time range": "Last 24 hours"
+      },
+      "start": "2026-10-18T06:00:00",
+      "end": "2026-10-19T05:00:00",
+      "daily_rows": 24,
+      "same_filters_except_time_as_current": true,
+      "ends_on_current_end": false
+    },
+    {
+      "path": "C:\\Users\\ADMIN\\Downloads\\digitecme.com-Performance-on-Search-2026-10-20.xlsx",
+      "sha256": "c34108586e17219063b157767f1f1f443b2612e9e068f498465b89eeb1403e18",
+      "filters": {
+        "Search type": "Web (text-based)",
+        "Date": "Last 28 days",
+        "Query": "+mercedes service dubai"
+      },
+      "start": "2026-09-20",
+      "end": "2026-10-17",
+      "daily_rows": 28,
+      "same_filters_except_time_as_current": false,
+      "ends_on_current_end": false
+    },
+    {
+      "path": "C:\\Users\\ADMIN\\Downloads\\digitecme.com-Performance-on-Search-2026-10-21 (1).xlsx",
+      "sha256": "4defc376f17dff80c3d9588c2ba8a55a7cf957a30a078c01f02a86cb52c05ac6",
+      "filters": {
+        "Search type": "Web (text-based)",
+        "Time range": "Last 24 hours",
+        "Query": "+mercedes oil change"
+      },
+      "start": "2026-10-20T03:00:00",
+      "end": "2026-10-21T02:00:00",
+      "daily_rows": 24,
+      "same_filters_except_time_as_current": false,
+      "ends_on_current_end": false
+    },
+    {
+      "path": "C:\\Users\\ADMIN\\Downloads\\digitecme.com-Performance-on-Search-2026-10-21.xlsx",
+      "sha256": "d68bbcef0feed9f9a93a5164fd4babf74bac49a2f323474941da5e8ab73d9ba1",
+      "filters": {
+        "Search type": "Web (text-based)",
+        "Date": "Last 3 months",
+        "Query": "+mercedes oil change"
+      },
+      "start": "2026-07-19",
+      "end": "2026-10-18",
+      "daily_rows": 92,
+      "same_filters_except_time_as_current": false,
+      "ends_on_current_end": false
+    },
+    {
+      "path": "C:\\Users\\ADMIN\\Downloads\\digitecme.com-Performance-on-Search-2026-10-26.xlsx",
+      "sha256": "05a2d6036fa9210f4c63e3ff9ff3b21ba78c50a2214a1aff90823d66b8fe7859",
+      "filters": {
+        "Search type": "Web (text-based)",
+        "Date": "Last 7 days"
+      },
+      "start": "2026-10-18",
+      "end": "2026-10-24",
+      "daily_rows": 7,
+      "same_filters_except_time_as_current": true,
+      "ends_on_current_end": true
+    },
+    {
+      "path": "C:\\Users\\ADMIN\\Downloads\\digitecme.com-Performance-on-Search-Generative-AI-Features-2026-09-08.xlsx",
+      "sha256": "025c2a7d02254e223743afb33f51ed4d775860c9496adabf935c1108ccf2a08b",
+      "filters": {
+        "Search type": "Web",
+        "Date": "Last 3 months"
+      },
+      "start": "2026-06-07",
+      "end": "2026-09-06",
+      "daily_rows": 92,
+      "same_filters_except_time_as_current": false,
+      "ends_on_current_end": false
+    }
+  ],
+  "properly_paired_historical_service_control": {
+    "capture_completed_utc": "2026-10-20T05:31:50Z",
+    "property": "sc-domain:digitecme.com",
+    "query": "mercedes service dubai",
+    "query_operator": "Exact query",
+    "query_operator_proof": "live-exact-query-filter-ax.txt",
+    "report_type_ui": "Web",
+    "period": {
+      "start": "2026-09-20",
+      "end": "2026-10-17",
+      "days": 28,
+      "date_basis": "GSC daily report dates, retained exactly as shown; not relabelled as Dubai daily dates."
+    },
+    "query_uae_totals": {
+      "clicks": 2,
+      "impressions": 179,
+      "ctr_display": "1.1%",
+      "average_position_display": 12.2
+    },
+    "query_uae_pages": [
+      {
+        "url": "https://digitecme.com/brands/mercedes-benz-service-dubai",
+        "clicks": 2,
+        "impressions": 161,
+        "ctr_display": "1.2%",
+        "average_position_display": 11.2
+      },
+      {
+        "url": "https://digitecme.com/services/mercedes-oil-change-dubai/",
+        "clicks": 0,
+        "impressions": 10,
+        "ctr_display": "0%",
+        "average_position_display": 9.8
+      },
+      {
+        "url": "https://digitecme.com/services/mercedes-brake-repair-dubai/",
+        "clicks": 0,
+        "impressions": 8,
+        "ctr_display": "0%",
+        "average_position_display": 34.6
+      }
+    ],
+    "query_uae_exact_hub_totals": {
+      "page_operator": "Exact URL",
+      "url": "https://digitecme.com/brands/mercedes-benz-service-dubai",
+      "clicks": 2,
+      "impressions": 161,
+      "ctr_display": "1.2%",
+      "average_position_display": 11.2
+    },
+    "query_uae_exact_hub_devices": [
+      {
+        "device": "Desktop",
+        "clicks": 2,
+        "impressions": 100,
+        "ctr_display": "2%",
+        "average_position_display": 11.2
+      },
+      {
+        "device": "Mobile",
+        "clicks": 0,
+        "impressions": 61,
+        "ctr_display": "0%",
+        "average_position_display": 11.3
+      }
+    ],
+    "comparability": "Valid historical pairing, different endpoint/search-type label; context only, not a matched Phase3 trend comparison or current owner measurement."
+  },
+  "oil_exports": {
+    "export-1": {
+      "source": "C:\\Users\\ADMIN\\Downloads\\digitecme.com-Performance-on-Search-2026-10-21.xlsx",
+      "sha256": "d68bbcef0feed9f9a93a5164fd4babf74bac49a2f323474941da5e8ab73d9ba1",
+      "filters": [
+        [
+          "Filter",
+          "Value"
+        ],
+        [
+          "Search type",
+          "Web (text-based)"
+        ],
+        [
+          "Date",
+          "Last 3 months"
+        ],
+        [
+          "Query",
+          "+mercedes oil change"
+        ]
+      ],
+      "start": "2026-07-19",
+      "end": "2026-10-18",
+      "comparability": "Contains-query family, different dates, optional24hprovisional; not requested exact mercedes oil change dubai90dUAEdevice data."
+    },
+    "export-2": {
+      "source": "C:\\Users\\ADMIN\\Downloads\\digitecme.com-Performance-on-Search-2026-10-21 (1).xlsx",
+      "sha256": "4defc376f17dff80c3d9588c2ba8a55a7cf957a30a078c01f02a86cb52c05ac6",
+      "filters": [
+        [
+          "Filter",
+          "Value"
+        ],
+        [
+          "Search type",
+          "Web (text-based)"
+        ],
+        [
+          "Time range",
+          "Last 24 hours"
+        ],
+        [
+          "Query",
+          "+mercedes oil change"
+        ]
+      ],
+      "start": "2026-10-20T03:00:00",
+      "end": "2026-10-21T02:00:00",
+      "comparability": "Contains-query family, different dates, optional24hprovisional; not requested exact mercedes oil change dubai90dUAEdevice data."
+    },
+    "contains_daily_periods": {
+      "comparability": "Contains-query family, different dates, optional24hprovisional; not requested exact mercedes oil change dubai90dUAEdevice data."
+    }
+  },
+  "conclusion": "No local historical export supplies the requested matched7/28/90dayUAE×device×sixexactquery-page matrix endingOct24. Preserve historical controls with their true filters; do not join unfiltered Queries/Pages or relabel92daythree-month views as90days."
+}

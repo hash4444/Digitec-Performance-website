@@ -1,0 +1,34 @@
+{
+  "result": "PASS",
+  "actionableFindings": [],
+  "reviewType": "read-only source",
+  "files": [
+    "src/components/AboutVideoStrip.tsx",
+    "src/components/AboutVideoStrip.css",
+    "src/pages/AboutUs.tsx",
+    "package.json"
+  ],
+  "integration": {
+    "additiveOnly": true,
+    "importAdditions": 1,
+    "renderAdditions": 1
+  },
+  "mediaEntries": 8,
+  "newDependencies": [],
+  "reviewedAreas": [
+    "loop seam arithmetic",
+    "manual scrolling",
+    "hover/focus pause",
+    "reduced motion",
+    "offscreen/document visibility",
+    "lazy preview resource loading",
+    "duplicate accessibility",
+    "keyboard access",
+    "dialog focus/close/audio",
+    "no-JavaScript MP4 fallback",
+    "English/Arabic labels",
+    "CSS viewport bounds"
+  ],
+  "runtimeVerificationClaimed": false,
+  "sourceEdited": false
+}

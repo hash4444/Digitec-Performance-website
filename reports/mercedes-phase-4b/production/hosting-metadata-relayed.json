@@ -1,0 +1,19 @@
+{
+  "recordedAtUtc": "2026-10-26T10:35:37.207Z",
+  "readOnly": true,
+  "evidenceType": "Sanitized metadata relayed by parent agent from its authenticated read-only hosting tool; this subagent did not invoke that tool.",
+  "reportedBy": "/root",
+  "provider": "Lovable",
+  "projectId": "b8255283-fdd9-4c2d-8b46-ccb596f695e1",
+  "repository": "hash4444/Digitec-Performance-website",
+  "reportedPublished": true,
+  "latest_commit_sha": "13d1c19e99e9696ab63e5721ada18ffcfce11519",
+  "reportedMatchesCheckoutHead": true,
+  "lastEditedAtUtc": "2026-10-22T09:58:06Z",
+  "publicationActionPerformed": false,
+  "limits": [
+    "Metadata is relayed evidence; retain the parent tool result as primary authenticated evidence.",
+    "Last-edited time is not an established content publication time.",
+    "Latest commit metadata and observed public asset hashes do not attest every deployed dependency or origin response."
+  ]
+}

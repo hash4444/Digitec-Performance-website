@@ -1,0 +1,47 @@
+{
+  "result": "PASS",
+  "actionableFindings": [],
+  "reviewType": "read-only source",
+  "sources": [
+    {
+      "path": "src/components/AboutVideoStrip.tsx",
+      "sha256": "58b55e5d3b730ec89e9cad3c2a7b61df3977644acadaad43049df27c6247572e"
+    },
+    {
+      "path": "src/components/AboutVideoStrip.css",
+      "sha256": "47888782064728741628483308bfdd246263bcb2da39cc465d7c984d3a8ae98c"
+    },
+    {
+      "path": "src/pages/AboutUs.tsx",
+      "sha256": "960135dca90c760970ee4455a4411247b363a09297ccb47cdacc1e69a50bbad7"
+    }
+  ],
+  "mediaCount": 8,
+  "renderedAnchorCount": 16,
+  "href": "https://www.instagram.com/digi_tec/",
+  "footerDestinationMatches": true,
+  "target": "_blank",
+  "rel": "noopener noreferrer",
+  "localizedAccessibleNewTabLabels": true,
+  "removed": [
+    "visible counters",
+    "pause button",
+    "arrow buttons",
+    "sound prompt",
+    "local player dialog",
+    "modal CSS/imports/state"
+  ],
+  "retained": [
+    "automatic horizontal loop",
+    "hover/focus pause",
+    "reduced-motion preference",
+    "offscreen/document-hidden pause",
+    "muted lazy previews",
+    "native/keyboard scrolling",
+    "pinch zoom",
+    "duplicate Tab exclusion"
+  ],
+  "newDependencies": [],
+  "sourceEdited": false,
+  "runtimeVerificationClaimed": false
+}

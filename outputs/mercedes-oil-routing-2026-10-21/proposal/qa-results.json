@@ -1,0 +1,105 @@
+{
+  "testedAt": "2026-10-21T06:25:31.542Z",
+  "mode": "Alias-only Cloudflare Single Redirect proposal; source unchanged; existing matching-source isolated build reused",
+  "priorFullBuild": "../..//mercedes-oil-investigation-2026-10-21/qa/qa-results.json",
+  "sourceMatchesPriorBuild": true,
+  "steps": [
+    {
+      "command": "node test-single-redirect.mjs",
+      "cwd": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-oil-routing-2026-10-21\\proposal",
+      "exitCode": 0,
+      "seconds": 0.087,
+      "log": "qa-logs/01-test-single-redirect.log"
+    },
+    {
+      "command": "node scripts/test-hosting-rules.mjs",
+      "cwd": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-oil-investigation-2026-10-21\\qa\\build",
+      "exitCode": 0,
+      "seconds": 0.118,
+      "log": "qa-logs/02-test-hosting-rules.log"
+    },
+    {
+      "command": "node scripts/test-production-seo-router.mjs",
+      "cwd": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-oil-investigation-2026-10-21\\qa\\build",
+      "exitCode": 0,
+      "seconds": 0.121,
+      "log": "qa-logs/03-test-production-seo-router.log"
+    },
+    {
+      "command": "node scripts/test-routing-response.mjs",
+      "cwd": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-oil-investigation-2026-10-21\\qa\\build",
+      "exitCode": 0,
+      "seconds": 2.169,
+      "log": "qa-logs/04-test-routing-response.log"
+    },
+    {
+      "command": "node scripts/validate-seo.mjs",
+      "cwd": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-oil-investigation-2026-10-21\\qa\\build",
+      "exitCode": 0,
+      "seconds": 1.382,
+      "log": "qa-logs/05-validate-seo.log"
+    },
+    {
+      "command": "node scripts/validate-oil-change.mjs",
+      "cwd": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-oil-investigation-2026-10-21\\qa\\build",
+      "exitCode": 0,
+      "seconds": 0.466,
+      "log": "qa-logs/06-validate-oil-change.log"
+    },
+    {
+      "command": "node scripts/validate-master-seo.mjs",
+      "cwd": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-oil-investigation-2026-10-21\\qa\\build",
+      "exitCode": 0,
+      "seconds": 0.537,
+      "log": "qa-logs/07-validate-master-seo.log"
+    },
+    {
+      "command": "node scripts/validate-query-release.mjs",
+      "cwd": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-oil-investigation-2026-10-21\\qa\\build",
+      "exitCode": 0,
+      "seconds": 1.131,
+      "log": "qa-logs/08-validate-query-release.log"
+    },
+    {
+      "command": "node scripts/validate-protection-release.mjs",
+      "cwd": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-oil-investigation-2026-10-21\\qa\\build",
+      "exitCode": 0,
+      "seconds": 0.396,
+      "log": "qa-logs/09-validate-protection-release.log"
+    },
+    {
+      "command": "node scripts/validate-ppf.mjs",
+      "cwd": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-oil-investigation-2026-10-21\\qa\\build",
+      "exitCode": 0,
+      "seconds": 0.552,
+      "log": "qa-logs/10-validate-ppf.log"
+    },
+    {
+      "command": "node scripts/validate-tuning.mjs",
+      "cwd": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-oil-investigation-2026-10-21\\qa\\build",
+      "exitCode": 0,
+      "seconds": 0.583,
+      "log": "qa-logs/11-validate-tuning.log"
+    },
+    {
+      "command": "node scripts/validate-paint-care-cluster.mjs",
+      "cwd": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-oil-investigation-2026-10-21\\qa\\build",
+      "exitCode": 0,
+      "seconds": 0.983,
+      "log": "qa-logs/12-validate-paint-care-cluster.log"
+    }
+  ],
+  "serviceHtmlSha256Before": "42ca268d2bfd2c92d83b12543da10ecfceaecab01619b2cb657dc5e4a3ede949",
+  "serviceHtmlSha256After": "42ca268d2bfd2c92d83b12543da10ecfceaecab01619b2cb657dc5e4a3ede949",
+  "serviceHtmlUnchanged": true,
+  "sourceFilesCompared": 601,
+  "sourceUnchanged": true,
+  "failures": [],
+  "passed": true,
+  "limits": [
+    "Offline rule simulation is not Cloudflare expression compilation or feature-precedence validation.",
+    "No live rule was created or activated.",
+    "Always Use HTTPS is ON; actual cross-phase HTTP chain behavior must be verified after separate authorization.",
+    "Matching-source prior full build reused; no full rebuild necessary for a rules-only local proposal."
+  ]
+}

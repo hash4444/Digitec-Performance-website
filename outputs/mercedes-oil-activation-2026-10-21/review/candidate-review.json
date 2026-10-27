@@ -1,0 +1,19 @@
+{
+  "reviewedAt": "2026-10-21T06:35:42.915Z",
+  "passed": true,
+  "candidatePath": "outputs/mercedes-oil-routing-2026-10-21/proposal/single-redirect-rule.json",
+  "candidateSha256": "6b1385fff9d44c206a36cd0e9c38912e9c1b74030f3a534db6bb5efdfa5157c5",
+  "baselinePath": "outputs/mercedes-oil-routing-2026-10-21/proposal/observed-single-redirect-baseline.json",
+  "baselineSha256": "035411ed1fc1bd2159ca83cd399abeb8fd4c0b6be37196ea4adf966203c230d6",
+  "exactReviewedDefinition": true,
+  "oneNewRuleOnly": true,
+  "existingRulesCount": 2,
+  "intendedInsertBefore": "dbe42693423442afbc3bab9b993242a7",
+  "existingIds": [
+    "dbe42693423442afbc3bab9b993242a7",
+    "9781b1ef743f4ffbaadbe5cb3250eeca"
+  ],
+  "preservesIndexedSlashServicePath": true,
+  "protectedSourceFiles": 601,
+  "limitation": "Saved baseline only; root must refresh authenticated production state and verify no drift before activation. Local review does not establish live activation, Cloudflare compilation, or HTTP cross-phase precedence."
+}

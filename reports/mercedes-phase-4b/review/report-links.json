@@ -1,0 +1,675 @@
+{
+  "checkedAtUtc": "2026-10-26T10:44:48.866Z",
+  "offlineOnly": true,
+  "networkRequests": 0,
+  "mainReadmeAvailable": true,
+  "scope": "All report Markdown under Phase4B, excluding .local copies, node_modules and .git; inline Markdown local file links only. External URLs and heading-anchor existence are not requested or fetched.",
+  "scannedFiles": [
+    {
+      "file": "reports/mercedes-phase-4b/README.md",
+      "sha256": "12b7dd226ba835d518459e2d3510891cd4b193f521317d776941c3037c329ca1"
+    },
+    {
+      "file": "reports/mercedes-phase-4b/browser/README.md",
+      "sha256": "19c96e360b68d384326ba5bf2a9d0082fcd456fc407ac0738378e469ad595d0e"
+    },
+    {
+      "file": "reports/mercedes-phase-4b/generated/README.md",
+      "sha256": "c485d7f120434b63a30c07e93aabc9603c99b872400fc6a443581bfaed2a38a9"
+    },
+    {
+      "file": "reports/mercedes-phase-4b/generated/dist-reproducibility.md",
+      "sha256": "6cb1dd74a1f56397d5af6c8310c23c0e2e089177b1329592e5f1a71c44743ec9"
+    },
+    {
+      "file": "reports/mercedes-phase-4b/generated/selected-cohort-summary.md",
+      "sha256": "90e8a4d521e59e22252d7ec5335ac1b3ee5123bec8c6ee74132d5d6a3dfe2603"
+    },
+    {
+      "file": "reports/mercedes-phase-4b/production/README.md",
+      "sha256": "a7f417bfb9bdfaa7a10e1b18603e4c3b230fe4fddc584cb47291772251cd53cb"
+    },
+    {
+      "file": "reports/mercedes-phase-4b/review/release-packaging-options.md",
+      "sha256": "ca1ef022531adb8f97a0f2c673a16fa72acaa537491658efa46f5ec0d6abc677"
+    },
+    {
+      "file": "reports/mercedes-phase-4b/sitemap/README.md",
+      "sha256": "ddba1f6ed2da3c2a786ce4af6d394812d69ec4f754db3d230df2079bcac3f960"
+    },
+    {
+      "file": "reports/mercedes-phase-4b/tests/all-routes/README.md",
+      "sha256": "613683c7fdede0a11501c06325e1a2c7feee5add5b4e99bc135dae48eb7cdb10"
+    },
+    {
+      "file": "reports/mercedes-phase-4b/tests/dependency-resolution/README.md",
+      "sha256": "71592a0edbed5d2cb84b4994137f8209f9c44e5f4984ee7a07a50f085e51e16f"
+    },
+    {
+      "file": "reports/mercedes-phase-4b/tests/frozen-pnpm-A-16/summary.md",
+      "sha256": "7a0ca7c097420ec6b6d45a3d0fc151c1bd61b73a18e2d7ab5d8275f1a0a44b98"
+    },
+    {
+      "file": "reports/mercedes-phase-4b/tests/frozen-pnpm-A-all-routes/README.md",
+      "sha256": "8e2c60c7494d87bd337ba461d859638503867ee2a524837a6c02ec57c1876a81"
+    },
+    {
+      "file": "reports/mercedes-phase-4b/tests/frozen-pnpm-B-16/summary.md",
+      "sha256": "ecb31267a9215aa6ae381989d1050c459bffc56e2ccec1cab8685652ba89d454"
+    },
+    {
+      "file": "reports/mercedes-phase-4b/tests/frozen-pnpm-B-all-routes/README.md",
+      "sha256": "df4d4d07fd27cad1f03f8e9d3158079e443e1e987e2e544337467a36d6eac102"
+    },
+    {
+      "file": "reports/mercedes-phase-4b/tests/observer-console-review.md",
+      "sha256": "89c46b23e0264b73a6dd30a1bcdc986b9f6575f025dcd020f73036b6be178415"
+    },
+    {
+      "file": "reports/mercedes-phase-4b/tests/release-b-16/summary.md",
+      "sha256": "a7f5c082cbbd35350bae44531b2f1ea05526f7d22abcb86dd615e9ed9eedc91f"
+    }
+  ],
+  "excludedDirectories": [
+    "reports/mercedes-phase-4b/baseline.local",
+    "reports/mercedes-phase-4b/candidate.local",
+    "reports/mercedes-phase-4b/node_modules",
+    "reports/mercedes-phase-4b/npm-cache.local",
+    "reports/mercedes-phase-4b/pnpm-store.local",
+    "reports/mercedes-phase-4b/production-matched.local",
+    "reports/mercedes-phase-4b/release-b.local"
+  ],
+  "localFileLinksChecked": 98,
+  "checks": [
+    {
+      "file": "reports/mercedes-phase-4b/README.md",
+      "target": "options/A/application-static.zip",
+      "resolved": "reports/mercedes-phase-4b/options/A/application-static.zip",
+      "exists": true
+    },
+    {
+      "file": "reports/mercedes-phase-4b/README.md",
+      "target": "options/B/application-static.zip",
+      "resolved": "reports/mercedes-phase-4b/options/B/application-static.zip",
+      "exists": true
+    },
+    {
+      "file": "reports/mercedes-phase-4b/README.md",
+      "target": "options/archive-verification.json",
+      "resolved": "reports/mercedes-phase-4b/options/archive-verification.json",
+      "exists": true
+    },
+    {
+      "file": "reports/mercedes-phase-4b/README.md",
+      "target": "generated/README.md",
+      "resolved": "reports/mercedes-phase-4b/generated/README.md",
+      "exists": true
+    },
+    {
+      "file": "reports/mercedes-phase-4b/README.md",
+      "target": "generated/selected-cohort-summary.md",
+      "resolved": "reports/mercedes-phase-4b/generated/selected-cohort-summary.md",
+      "exists": true
+    },
+    {
+      "file": "reports/mercedes-phase-4b/README.md",
+      "target": "generated/generated-comparison.json",
+      "resolved": "reports/mercedes-phase-4b/generated/generated-comparison.json",
+      "exists": true
+    },
+    {
+      "file": "reports/mercedes-phase-4b/README.md",
+      "target": "generated/input-manifest.json",
+      "resolved": "reports/mercedes-phase-4b/generated/input-manifest.json",
+      "exists": true
+    },
+    {
+      "file": "reports/mercedes-phase-4b/README.md",
+      "target": "sitemap/README.md",
+      "resolved": "reports/mercedes-phase-4b/sitemap/README.md",
+      "exists": true
+    },
+    {
+      "file": "reports/mercedes-phase-4b/README.md",
+      "target": "production-matched-provenance.json",
+      "resolved": "reports/mercedes-phase-4b/production-matched-provenance.json",
+      "exists": true
+    },
+    {
+      "file": "reports/mercedes-phase-4b/README.md",
+      "target": "production/production-comparison.json",
+      "resolved": "reports/mercedes-phase-4b/production/production-comparison.json",
+      "exists": true
+    },
+    {
+      "file": "reports/mercedes-phase-4b/README.md",
+      "target": "tests/dependency-resolution/README.md",
+      "resolved": "reports/mercedes-phase-4b/tests/dependency-resolution/README.md",
+      "exists": true
+    },
+    {
+      "file": "reports/mercedes-phase-4b/README.md",
+      "target": "generated/dist-reproducibility.md",
+      "resolved": "reports/mercedes-phase-4b/generated/dist-reproducibility.md",
+      "exists": true
+    },
+    {
+      "file": "reports/mercedes-phase-4b/README.md",
+      "target": "production-matched.local/build/",
+      "resolved": "reports/mercedes-phase-4b/production-matched.local/build",
+      "exists": true
+    },
+    {
+      "file": "reports/mercedes-phase-4b/README.md",
+      "target": "tests/frozen-pnpm-A-all-routes/README.md",
+      "resolved": "reports/mercedes-phase-4b/tests/frozen-pnpm-A-all-routes/README.md",
+      "exists": true
+    },
+    {
+      "file": "reports/mercedes-phase-4b/README.md",
+      "target": "tests/frozen-pnpm-B-all-routes/README.md",
+      "resolved": "reports/mercedes-phase-4b/tests/frozen-pnpm-B-all-routes/README.md",
+      "exists": true
+    },
+    {
+      "file": "reports/mercedes-phase-4b/README.md",
+      "target": "tests/frozen-pnpm-A-16/summary.md",
+      "resolved": "reports/mercedes-phase-4b/tests/frozen-pnpm-A-16/summary.md",
+      "exists": true
+    },
+    {
+      "file": "reports/mercedes-phase-4b/README.md",
+      "target": "tests/frozen-pnpm-B-16/summary.md",
+      "resolved": "reports/mercedes-phase-4b/tests/frozen-pnpm-B-16/summary.md",
+      "exists": true
+    },
+    {
+      "file": "reports/mercedes-phase-4b/README.md",
+      "target": "tests/frozen-pnpm-source-scope.json",
+      "resolved": "reports/mercedes-phase-4b/tests/frozen-pnpm-source-scope.json",
+      "exists": true
+    },
+    {
+      "file": "reports/mercedes-phase-4b/README.md",
+      "target": "options/A/source.patch",
+      "resolved": "reports/mercedes-phase-4b/options/A/source.patch",
+      "exists": true
+    },
+    {
+      "file": "reports/mercedes-phase-4b/README.md",
+      "target": "options/B/source.patch",
+      "resolved": "reports/mercedes-phase-4b/options/B/source.patch",
+      "exists": true
+    },
+    {
+      "file": "reports/mercedes-phase-4b/README.md",
+      "target": "browser/README.md",
+      "resolved": "reports/mercedes-phase-4b/browser/README.md",
+      "exists": true
+    },
+    {
+      "file": "reports/mercedes-phase-4b/README.md",
+      "target": "production/baseline-summary.json",
+      "resolved": "reports/mercedes-phase-4b/production/baseline-summary.json",
+      "exists": true
+    },
+    {
+      "file": "reports/mercedes-phase-4b/README.md",
+      "target": "review/final-preservation.json",
+      "resolved": "reports/mercedes-phase-4b/review/final-preservation.json",
+      "exists": true
+    },
+    {
+      "file": "reports/mercedes-phase-4b/README.md",
+      "target": "tests/observer-console-review.md",
+      "resolved": "reports/mercedes-phase-4b/tests/observer-console-review.md",
+      "exists": true
+    },
+    {
+      "file": "reports/mercedes-phase-4b/README.md",
+      "target": "browser/console-repeat-investigation.json",
+      "resolved": "reports/mercedes-phase-4b/browser/console-repeat-investigation.json",
+      "exists": true
+    },
+    {
+      "file": "reports/mercedes-phase-4b/README.md",
+      "target": "browser/console-error-probe.json",
+      "resolved": "reports/mercedes-phase-4b/browser/console-error-probe.json",
+      "exists": true
+    },
+    {
+      "file": "reports/mercedes-phase-4b/README.md",
+      "target": "options/A/publication-manifest.json",
+      "resolved": "reports/mercedes-phase-4b/options/A/publication-manifest.json",
+      "exists": true
+    },
+    {
+      "file": "reports/mercedes-phase-4b/README.md",
+      "target": "options/B/publication-manifest.json",
+      "resolved": "reports/mercedes-phase-4b/options/B/publication-manifest.json",
+      "exists": true
+    },
+    {
+      "file": "reports/mercedes-phase-4b/README.md",
+      "target": "options/B/versus-fresh-baseline.json",
+      "resolved": "reports/mercedes-phase-4b/options/B/versus-fresh-baseline.json",
+      "exists": true
+    },
+    {
+      "file": "reports/mercedes-phase-4b/README.md",
+      "target": "options/A/source-changes.json",
+      "resolved": "reports/mercedes-phase-4b/options/A/source-changes.json",
+      "exists": true
+    },
+    {
+      "file": "reports/mercedes-phase-4b/README.md",
+      "target": "options/B/source-changes.json",
+      "resolved": "reports/mercedes-phase-4b/options/B/source-changes.json",
+      "exists": true
+    },
+    {
+      "file": "reports/mercedes-phase-4b/README.md",
+      "target": "production/hosting-metadata-relayed.json",
+      "resolved": "reports/mercedes-phase-4b/production/hosting-metadata-relayed.json",
+      "exists": true
+    },
+    {
+      "file": "reports/mercedes-phase-4b/README.md",
+      "target": "review/release-packaging-options.md",
+      "resolved": "reports/mercedes-phase-4b/review/release-packaging-options.md",
+      "exists": true
+    },
+    {
+      "file": "reports/mercedes-phase-4b/browser/README.md",
+      "target": "observations.json",
+      "resolved": "reports/mercedes-phase-4b/browser/observations.json",
+      "exists": true
+    },
+    {
+      "file": "reports/mercedes-phase-4b/browser/README.md",
+      "target": "browser-console.json",
+      "resolved": "reports/mercedes-phase-4b/browser/browser-console.json",
+      "exists": true
+    },
+    {
+      "file": "reports/mercedes-phase-4b/browser/README.md",
+      "target": "console-repeat-investigation.json",
+      "resolved": "reports/mercedes-phase-4b/browser/console-repeat-investigation.json",
+      "exists": true
+    },
+    {
+      "file": "reports/mercedes-phase-4b/browser/README.md",
+      "target": "console-error-probe.json",
+      "resolved": "reports/mercedes-phase-4b/browser/console-error-probe.json",
+      "exists": true
+    },
+    {
+      "file": "reports/mercedes-phase-4b/browser/README.md",
+      "target": "../tests/observer-console-review.md",
+      "resolved": "reports/mercedes-phase-4b/tests/observer-console-review.md",
+      "exists": true
+    },
+    {
+      "file": "reports/mercedes-phase-4b/browser/README.md",
+      "target": "b-hub-keyboard.png",
+      "resolved": "reports/mercedes-phase-4b/browser/b-hub-keyboard.png",
+      "exists": true
+    },
+    {
+      "file": "reports/mercedes-phase-4b/browser/README.md",
+      "target": "b-hub-390-approved-links-focus.png",
+      "resolved": "reports/mercedes-phase-4b/browser/b-hub-390-approved-links-focus.png",
+      "exists": true
+    },
+    {
+      "file": "reports/mercedes-phase-4b/browser/README.md",
+      "target": "b-hub-390-workshop-call-focus.png",
+      "resolved": "reports/mercedes-phase-4b/browser/b-hub-390-workshop-call-focus.png",
+      "exists": true
+    },
+    {
+      "file": "reports/mercedes-phase-4b/browser/README.md",
+      "target": "b-body-320-final-assessment-focus.png",
+      "resolved": "reports/mercedes-phase-4b/browser/b-body-320-final-assessment-focus.png",
+      "exists": true
+    },
+    {
+      "file": "reports/mercedes-phase-4b/generated/README.md",
+      "target": "selected-cohort-summary.md",
+      "resolved": "reports/mercedes-phase-4b/generated/selected-cohort-summary.md",
+      "exists": true
+    },
+    {
+      "file": "reports/mercedes-phase-4b/generated/README.md",
+      "target": "dist-reproducibility.md",
+      "resolved": "reports/mercedes-phase-4b/generated/dist-reproducibility.md",
+      "exists": true
+    },
+    {
+      "file": "reports/mercedes-phase-4b/generated/README.md",
+      "target": "../sitemap/README.md",
+      "resolved": "reports/mercedes-phase-4b/sitemap/README.md",
+      "exists": true
+    },
+    {
+      "file": "reports/mercedes-phase-4b/generated/README.md",
+      "target": "generated-comparison.json",
+      "resolved": "reports/mercedes-phase-4b/generated/generated-comparison.json",
+      "exists": true
+    },
+    {
+      "file": "reports/mercedes-phase-4b/generated/README.md",
+      "target": "input-manifest.json",
+      "resolved": "reports/mercedes-phase-4b/generated/input-manifest.json",
+      "exists": true
+    },
+    {
+      "file": "reports/mercedes-phase-4b/generated/README.md",
+      "target": "../sitemap/README.md",
+      "resolved": "reports/mercedes-phase-4b/sitemap/README.md",
+      "exists": true
+    },
+    {
+      "file": "reports/mercedes-phase-4b/generated/dist-reproducibility.md",
+      "target": "dist-reproducibility.json",
+      "resolved": "reports/mercedes-phase-4b/generated/dist-reproducibility.json",
+      "exists": true
+    },
+    {
+      "file": "reports/mercedes-phase-4b/generated/selected-cohort-summary.md",
+      "target": "selected-recipe/dependency-provenance.json",
+      "resolved": "reports/mercedes-phase-4b/generated/selected-recipe/dependency-provenance.json",
+      "exists": true
+    },
+    {
+      "file": "reports/mercedes-phase-4b/generated/selected-cohort-summary.md",
+      "target": "dist-reproducibility.md",
+      "resolved": "reports/mercedes-phase-4b/generated/dist-reproducibility.md",
+      "exists": true
+    },
+    {
+      "file": "reports/mercedes-phase-4b/generated/selected-cohort-summary.md",
+      "target": "../sitemap/README.md",
+      "resolved": "reports/mercedes-phase-4b/sitemap/README.md",
+      "exists": true
+    },
+    {
+      "file": "reports/mercedes-phase-4b/generated/selected-cohort-summary.md",
+      "target": "generated-comparison.json",
+      "resolved": "reports/mercedes-phase-4b/generated/generated-comparison.json",
+      "exists": true
+    },
+    {
+      "file": "reports/mercedes-phase-4b/generated/selected-cohort-summary.md",
+      "target": "selected-recipe/package.json",
+      "resolved": "reports/mercedes-phase-4b/generated/selected-recipe/package.json",
+      "exists": true
+    },
+    {
+      "file": "reports/mercedes-phase-4b/generated/selected-cohort-summary.md",
+      "target": "selected-recipe/pnpm-lock.yaml",
+      "resolved": "reports/mercedes-phase-4b/generated/selected-recipe/pnpm-lock.yaml",
+      "exists": true
+    },
+    {
+      "file": "reports/mercedes-phase-4b/generated/selected-cohort-summary.md",
+      "target": "selected-cohort-summary.json",
+      "resolved": "reports/mercedes-phase-4b/generated/selected-cohort-summary.json",
+      "exists": true
+    },
+    {
+      "file": "reports/mercedes-phase-4b/generated/selected-cohort-summary.md",
+      "target": "../tests/dependency-resolution/README.md",
+      "resolved": "reports/mercedes-phase-4b/tests/dependency-resolution/README.md",
+      "exists": true
+    },
+    {
+      "file": "reports/mercedes-phase-4b/generated/selected-cohort-summary.md",
+      "target": "selected-recipe/compiler-byte-comparison.json",
+      "resolved": "reports/mercedes-phase-4b/generated/selected-recipe/compiler-byte-comparison.json",
+      "exists": true
+    },
+    {
+      "file": "reports/mercedes-phase-4b/production/README.md",
+      "target": "http/2026-10-26T10-20-06-242Z/capture.json",
+      "resolved": "reports/mercedes-phase-4b/production/http/2026-10-26T10-20-06-242Z/capture.json",
+      "exists": true
+    },
+    {
+      "file": "reports/mercedes-phase-4b/production/README.md",
+      "target": "baseline-summary.json",
+      "resolved": "reports/mercedes-phase-4b/production/baseline-summary.json",
+      "exists": true
+    },
+    {
+      "file": "reports/mercedes-phase-4b/production/README.md",
+      "target": "production-comparison-shared-deps-snapshot.json",
+      "resolved": "reports/mercedes-phase-4b/production/production-comparison-shared-deps-snapshot.json",
+      "exists": true
+    },
+    {
+      "file": "reports/mercedes-phase-4b/production/README.md",
+      "target": "production-comparison.json",
+      "resolved": "reports/mercedes-phase-4b/production/production-comparison.json",
+      "exists": true
+    },
+    {
+      "file": "reports/mercedes-phase-4b/production/README.md",
+      "target": "../review/release-packaging-options.md",
+      "resolved": "reports/mercedes-phase-4b/review/release-packaging-options.md",
+      "exists": true
+    },
+    {
+      "file": "reports/mercedes-phase-4b/production/README.md",
+      "target": "redirects-http/post-2026-10-26T10-22-00-253Z/capture.json",
+      "resolved": "reports/mercedes-phase-4b/production/redirects-http/post-2026-10-26T10-22-00-253Z/capture.json",
+      "exists": true
+    },
+    {
+      "file": "reports/mercedes-phase-4b/production/README.md",
+      "target": "redirect-verifier-provenance.json",
+      "resolved": "reports/mercedes-phase-4b/production/redirect-verifier-provenance.json",
+      "exists": true
+    },
+    {
+      "file": "reports/mercedes-phase-4b/production/README.md",
+      "target": "../review/release-packaging-options.md",
+      "resolved": "reports/mercedes-phase-4b/review/release-packaging-options.md",
+      "exists": true
+    },
+    {
+      "file": "reports/mercedes-phase-4b/review/release-packaging-options.md",
+      "target": "../production/http/2026-10-26T10-20-06-242Z/capture.json",
+      "resolved": "reports/mercedes-phase-4b/production/http/2026-10-26T10-20-06-242Z/capture.json",
+      "exists": true
+    },
+    {
+      "file": "reports/mercedes-phase-4b/review/release-packaging-options.md",
+      "target": "../production/production-comparison-shared-deps-snapshot.json",
+      "resolved": "reports/mercedes-phase-4b/production/production-comparison-shared-deps-snapshot.json",
+      "exists": true
+    },
+    {
+      "file": "reports/mercedes-phase-4b/review/release-packaging-options.md",
+      "target": "../production/production-comparison.json",
+      "resolved": "reports/mercedes-phase-4b/production/production-comparison.json",
+      "exists": true
+    },
+    {
+      "file": "reports/mercedes-phase-4b/review/release-packaging-options.md",
+      "target": "../sitemap/README.md",
+      "resolved": "reports/mercedes-phase-4b/sitemap/README.md",
+      "exists": true
+    },
+    {
+      "file": "reports/mercedes-phase-4b/review/release-packaging-options.md",
+      "target": "../production/hosting-metadata-relayed.json",
+      "resolved": "reports/mercedes-phase-4b/production/hosting-metadata-relayed.json",
+      "exists": true
+    },
+    {
+      "file": "reports/mercedes-phase-4b/review/release-packaging-options.md",
+      "target": "../../../docs/seo/mercedes-release-deployment.md",
+      "resolved": "docs/seo/mercedes-release-deployment.md",
+      "exists": true
+    },
+    {
+      "file": "reports/mercedes-phase-4b/review/release-packaging-options.md",
+      "target": "../production/redirects-http/post-2026-10-26T10-22-00-253Z/capture.json",
+      "resolved": "reports/mercedes-phase-4b/production/redirects-http/post-2026-10-26T10-22-00-253Z/capture.json",
+      "exists": true
+    },
+    {
+      "file": "reports/mercedes-phase-4b/review/release-packaging-options.md",
+      "target": "packaging-readiness.json",
+      "resolved": "reports/mercedes-phase-4b/review/packaging-readiness.json",
+      "exists": true
+    },
+    {
+      "file": "reports/mercedes-phase-4b/sitemap/README.md",
+      "target": "provenance.json",
+      "resolved": "reports/mercedes-phase-4b/sitemap/provenance.json",
+      "exists": true
+    },
+    {
+      "file": "reports/mercedes-phase-4b/sitemap/README.md",
+      "target": "../../../src/lib/route-manifest.ts:249",
+      "resolved": "src/lib/route-manifest.ts",
+      "exists": true
+    },
+    {
+      "file": "reports/mercedes-phase-4b/sitemap/README.md",
+      "target": "../../../scripts/prerender.mjs:149",
+      "resolved": "scripts/prerender.mjs",
+      "exists": true
+    },
+    {
+      "file": "reports/mercedes-phase-4b/sitemap/README.md",
+      "target": "historical-content-and-date.patch",
+      "resolved": "reports/mercedes-phase-4b/sitemap/historical-content-and-date.patch",
+      "exists": true
+    },
+    {
+      "file": "reports/mercedes-phase-4b/sitemap/README.md",
+      "target": "before-after-content.json",
+      "resolved": "reports/mercedes-phase-4b/sitemap/before-after-content.json",
+      "exists": true
+    },
+    {
+      "file": "reports/mercedes-phase-4b/sitemap/README.md",
+      "target": "../../mercedes-phase-3/indexing/http/2026-10-26T07-45-54-376Z/sitemap.xml",
+      "resolved": "reports/mercedes-phase-3/indexing/http/2026-10-26T07-45-54-376Z/sitemap.xml",
+      "exists": true
+    },
+    {
+      "file": "reports/mercedes-phase-4b/sitemap/README.md",
+      "target": "../../mercedes-phase-3/indexing/http/2026-10-26T07-45-54-376Z/capture.json",
+      "resolved": "reports/mercedes-phase-3/indexing/http/2026-10-26T07-45-54-376Z/capture.json",
+      "exists": true
+    },
+    {
+      "file": "reports/mercedes-phase-4b/sitemap/README.md",
+      "target": "../../mercedes-phase-4/controlled-copy.json",
+      "resolved": "reports/mercedes-phase-4/controlled-copy.json",
+      "exists": true
+    },
+    {
+      "file": "reports/mercedes-phase-4b/sitemap/README.md",
+      "target": "../../mercedes-phase-4/tests/results/results.json",
+      "resolved": "reports/mercedes-phase-4/tests/results/results.json",
+      "exists": true
+    },
+    {
+      "file": "reports/mercedes-phase-4b/sitemap/README.md",
+      "target": "../../../src/lib/route-manifest.ts:256",
+      "resolved": "src/lib/route-manifest.ts",
+      "exists": true
+    },
+    {
+      "file": "reports/mercedes-phase-4b/tests/all-routes/README.md",
+      "target": "../release-b-16/results.json",
+      "resolved": "reports/mercedes-phase-4b/tests/release-b-16/results.json",
+      "exists": true
+    },
+    {
+      "file": "reports/mercedes-phase-4b/tests/all-routes/README.md",
+      "target": "results.json",
+      "resolved": "reports/mercedes-phase-4b/tests/all-routes/results.json",
+      "exists": true
+    },
+    {
+      "file": "reports/mercedes-phase-4b/tests/all-routes/README.md",
+      "target": "route-results.csv",
+      "resolved": "reports/mercedes-phase-4b/tests/all-routes/route-results.csv",
+      "exists": true
+    },
+    {
+      "file": "reports/mercedes-phase-4b/tests/dependency-resolution/README.md",
+      "target": "comparison.json",
+      "resolved": "reports/mercedes-phase-4b/tests/dependency-resolution/comparison.json",
+      "exists": true
+    },
+    {
+      "file": "reports/mercedes-phase-4b/tests/frozen-pnpm-A-16/summary.md",
+      "target": "results.json",
+      "resolved": "reports/mercedes-phase-4b/tests/frozen-pnpm-A-16/results.json",
+      "exists": true
+    },
+    {
+      "file": "reports/mercedes-phase-4b/tests/frozen-pnpm-A-all-routes/README.md",
+      "target": "../frozen-pnpm-A-16/results.json",
+      "resolved": "reports/mercedes-phase-4b/tests/frozen-pnpm-A-16/results.json",
+      "exists": true
+    },
+    {
+      "file": "reports/mercedes-phase-4b/tests/frozen-pnpm-A-all-routes/README.md",
+      "target": "results.json",
+      "resolved": "reports/mercedes-phase-4b/tests/frozen-pnpm-A-all-routes/results.json",
+      "exists": true
+    },
+    {
+      "file": "reports/mercedes-phase-4b/tests/frozen-pnpm-A-all-routes/README.md",
+      "target": "route-results.csv",
+      "resolved": "reports/mercedes-phase-4b/tests/frozen-pnpm-A-all-routes/route-results.csv",
+      "exists": true
+    },
+    {
+      "file": "reports/mercedes-phase-4b/tests/frozen-pnpm-B-16/summary.md",
+      "target": "results.json",
+      "resolved": "reports/mercedes-phase-4b/tests/frozen-pnpm-B-16/results.json",
+      "exists": true
+    },
+    {
+      "file": "reports/mercedes-phase-4b/tests/frozen-pnpm-B-all-routes/README.md",
+      "target": "../frozen-pnpm-B-16/results.json",
+      "resolved": "reports/mercedes-phase-4b/tests/frozen-pnpm-B-16/results.json",
+      "exists": true
+    },
+    {
+      "file": "reports/mercedes-phase-4b/tests/frozen-pnpm-B-all-routes/README.md",
+      "target": "results.json",
+      "resolved": "reports/mercedes-phase-4b/tests/frozen-pnpm-B-all-routes/results.json",
+      "exists": true
+    },
+    {
+      "file": "reports/mercedes-phase-4b/tests/frozen-pnpm-B-all-routes/README.md",
+      "target": "route-results.csv",
+      "resolved": "reports/mercedes-phase-4b/tests/frozen-pnpm-B-all-routes/route-results.csv",
+      "exists": true
+    },
+    {
+      "file": "reports/mercedes-phase-4b/tests/observer-console-review.md",
+      "target": "observer-console-review.json",
+      "resolved": "reports/mercedes-phase-4b/tests/observer-console-review.json",
+      "exists": true
+    },
+    {
+      "file": "reports/mercedes-phase-4b/tests/release-b-16/summary.md",
+      "target": "results.json",
+      "resolved": "reports/mercedes-phase-4b/tests/release-b-16/results.json",
+      "exists": true
+    }
+  ],
+  "broken": [],
+  "allPassed": true
+}

@@ -1,0 +1,102 @@
+{
+  "checkedAt": "2026-10-20T05:46:12.561Z",
+  "candidate": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\candidate.local",
+  "passed": false,
+  "safety": "Loopback GET/HEAD requests only. Existing protected contact test stubs/blocked network retained. No actual message, customer enquiry, backend write, or production request.",
+  "results": [
+    {
+      "name": "repair-browser",
+      "exitCode": 0,
+      "passed": true,
+      "seconds": 101.514,
+      "log": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\qa\\repair-browser.log",
+      "testedBeforeNarrowHeroIntroFix": true,
+      "sourceFingerprint": "d1bf361352d888f7f965941bc7d3ced4f76959109e16bf65f9218c9dc2662fc5",
+      "retainedReason": "Only EN Mercedes hub hero intro changed. Other1252pages preserve exact metadata/schema/main markup; all remaining source unchanged. No affected behavior in this suite."
+    },
+    {
+      "name": "master-seo-browser",
+      "exitCode": 0,
+      "passed": true,
+      "seconds": 31.575,
+      "log": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\qa\\master-seo-browser.log",
+      "testedBeforeNarrowHeroIntroFix": true,
+      "sourceFingerprint": "d1bf361352d888f7f965941bc7d3ced4f76959109e16bf65f9218c9dc2662fc5",
+      "retainedReason": "Only EN Mercedes hub hero intro changed. Other1252pages preserve exact metadata/schema/main markup; all remaining source unchanged. No affected behavior in this suite."
+    },
+    {
+      "name": "protection-routing-browser",
+      "exitCode": 0,
+      "passed": true,
+      "seconds": 4.285,
+      "log": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\qa\\protection-routing-browser.log",
+      "testedBeforeNarrowHeroIntroFix": true,
+      "sourceFingerprint": "d1bf361352d888f7f965941bc7d3ced4f76959109e16bf65f9218c9dc2662fc5",
+      "retainedReason": "Only EN Mercedes hub hero intro changed. Other1252pages preserve exact metadata/schema/main markup; all remaining source unchanged. No affected behavior in this suite."
+    },
+    {
+      "name": "ppf-browser",
+      "exitCode": 0,
+      "passed": true,
+      "seconds": 25.382,
+      "log": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\qa\\ppf-browser.log",
+      "testedBeforeNarrowHeroIntroFix": true,
+      "sourceFingerprint": "d1bf361352d888f7f965941bc7d3ced4f76959109e16bf65f9218c9dc2662fc5",
+      "retainedReason": "Only EN Mercedes hub hero intro changed. Other1252pages preserve exact metadata/schema/main markup; all remaining source unchanged. No affected behavior in this suite."
+    },
+    {
+      "name": "diagnostics-ac-browser",
+      "exitCode": 0,
+      "passed": true,
+      "seconds": 48.493,
+      "log": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\qa\\diagnostics-ac-browser.log",
+      "testedBeforeNarrowHeroIntroFix": true,
+      "sourceFingerprint": "d1bf361352d888f7f965941bc7d3ced4f76959109e16bf65f9218c9dc2662fc5",
+      "retainedReason": "Only EN Mercedes hub hero intro changed. Other1252pages preserve exact metadata/schema/main markup; all remaining source unchanged. No affected behavior in this suite."
+    },
+    {
+      "name": "tuning-browser",
+      "exitCode": 0,
+      "passed": true,
+      "seconds": 8.737,
+      "log": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\qa\\tuning-browser.log",
+      "testedBeforeNarrowHeroIntroFix": true,
+      "sourceFingerprint": "d1bf361352d888f7f965941bc7d3ced4f76959109e16bf65f9218c9dc2662fc5",
+      "retainedReason": "Only EN Mercedes hub hero intro changed. Other1252pages preserve exact metadata/schema/main markup; all remaining source unchanged. No affected behavior in this suite."
+    },
+    {
+      "name": "ecu-electronics-browser",
+      "exitCode": 0,
+      "passed": true,
+      "seconds": 39.136,
+      "log": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\qa\\ecu-electronics-browser.log",
+      "testedBeforeNarrowHeroIntroFix": true,
+      "sourceFingerprint": "d1bf361352d888f7f965941bc7d3ced4f76959109e16bf65f9218c9dc2662fc5",
+      "retainedReason": "Only EN Mercedes hub hero intro changed. Other1252pages preserve exact metadata/schema/main markup; all remaining source unchanged. No affected behavior in this suite."
+    },
+    {
+      "name": "five-brand-browser",
+      "exitCode": 0,
+      "passed": true,
+      "seconds": 45.977,
+      "log": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\qa\\five-brand-browser.log",
+      "sourceFingerprint": "7d3d58e24c826757c32c28cec6c1cf03f74251d8d76af1fed0a03b48d0cc18d2",
+      "rerunReason": "Only English Mercedes hero intro shortened after actual narrow-screen CTA overlap; relevant brand/contact regression repeated."
+    },
+    {
+      "name": "mercedes-campaign-browser",
+      "exitCode": 1,
+      "passed": false,
+      "seconds": 23.784,
+      "log": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\qa\\mercedes-campaign-browser.log",
+      "sourceFingerprint": "7d3d58e24c826757c32c28cec6c1cf03f74251d8d76af1fed0a03b48d0cc18d2",
+      "rerunReason": "Only English Mercedes hero intro shortened after actual narrow-screen CTA overlap; relevant brand/contact regression repeated."
+    }
+  ],
+  "finalBuildFingerprint": "7d3d58e24c826757c32c28cec6c1cf03f74251d8d76af1fed0a03b48d0cc18d2",
+  "scopeOfRelevantRerun": {
+    "freshSuites": 2,
+    "retainedUnaffectedSuites": 7,
+    "proof": "Final complete production build and14CLIchecks pass; campaign static asserts all1252unaffected pages unchanged. Narrow intro correction changes only one existing string in EN hub; no other functional source change."
+  }
+}

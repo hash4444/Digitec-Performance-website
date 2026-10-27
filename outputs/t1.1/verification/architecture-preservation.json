@@ -1,0 +1,52 @@
+{
+  "passed": true,
+  "baselineRoutes": 1247,
+  "finalRoutes": 1256,
+  "netNewRoutes": 9,
+  "T11NetNewRoutes": 0,
+  "baselineCanonical": 996,
+  "finalCanonical": 1005,
+  "netNewSitemapURLs": 9,
+  "newStageURLs": 0,
+  "newFilterURLs": 0,
+  "addedRoutes": [
+    "/tuning/aston-martin-db11",
+    "/tuning/lamborghini-urus",
+    "/tuning/mercedes-amg-c63",
+    "/tuning/mercedes-amg-e63",
+    "/tuning/mercedes-amg-g63",
+    "/tuning/mercedes-amg-glc63",
+    "/tuning/mercedes-amg-gt",
+    "/tuning/mercedes-amg-gt63",
+    "/tuning/mercedes-amg-s65"
+  ],
+  "addedSitemap": [
+    "https://digitecme.com/tuning/aston-martin-db11",
+    "https://digitecme.com/tuning/lamborghini-urus",
+    "https://digitecme.com/tuning/mercedes-amg-c63",
+    "https://digitecme.com/tuning/mercedes-amg-e63",
+    "https://digitecme.com/tuning/mercedes-amg-g63",
+    "https://digitecme.com/tuning/mercedes-amg-glc63",
+    "https://digitecme.com/tuning/mercedes-amg-gt",
+    "https://digitecme.com/tuning/mercedes-amg-gt63",
+    "https://digitecme.com/tuning/mercedes-amg-s65"
+  ],
+  "indexabilityChanges": [],
+  "removedRoutes": [],
+  "changedExistingContentSinceT1": [
+    "/ar/blog/audi-maintenance-guide-dubai",
+    "/ar/blog/bmw-maintenance-guide-dubai",
+    "/ar/brands",
+    "/ar/brands/audi-service-dubai",
+    "/ar/brands/bmw-service-dubai",
+    "/ar/tuning",
+    "/brands",
+    "/brands/audi-service-dubai/exhaust-repair",
+    "/brands/bmw-service-dubai",
+    "/brands/bmw-service-dubai/exhaust-repair",
+    "/brands/bmw-service-dubai/m5",
+    "/tuning",
+    "/tuning/aston-martin-db11",
+    "/tuning/mercedes-amg-glc63"
+  ]
+}

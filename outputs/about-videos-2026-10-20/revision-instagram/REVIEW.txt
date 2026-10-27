@@ -1,0 +1,26 @@
+ABOUT VIDEOS — INSTAGRAM REVISION INDEPENDENT SOURCE REVIEW
+
+Result: PASS. No actionable source defects identified.
+Review type: Read-only source review of the user's requested revision. Browser and build outcomes are recorded by the separate QA workstream.
+
+User-requested behavior confirmed:
+- Eight original uploaded films remain represented, with one repeated visual group for the horizontal automatic loop.
+- Every card in both groups uses https://www.instagram.com/digi_tec/ as its anchor href, matching the existing Footer destination. No card link points to a local MP4 player.
+- Links open a new tab with noopener noreferrer. English and Arabic accessible labels describe the Instagram destination and announce the new tab. The visible Instagram handle is isolated with bdi for Arabic presentation.
+- Visible 01/08 counter badges, pause button, arrow buttons and the watch-with-sound prompt are removed.
+- The local dialog, its imports, selected-film state, modal event handlers, player CSS and modal-only audio controls are removed. No stale aria-describedby targets remain.
+
+Retained interaction and performance behavior:
+- Automatic looping continues to use the measured first-group width including the trailing gap; Arabic content does not change scrollLeft semantics because the viewport remains explicitly LTR.
+- Mouse hover and keyboard focus pause horizontal auto movement. Reduced-motion preference suppresses auto movement and video preview autoplay. Hidden document and offscreen state pause videos and movement.
+- Keyboard arrows still browse within the focusable viewport; duplicate links remain removed from Tab order and the duplicate group remains hidden from assistive technology.
+- Previews stay muted, plays-inline and lazy-loaded only when visible; autoplay rejection leaves the poster and native Instagram anchor usable.
+- Native horizontal scrolling and pinch zoom remain allowed. No JavaScript is required for the Instagram anchors.
+- The component now uses only React, the existing locale hook and the already-installed lucide-react Instagram icon; it adds no package dependency.
+
+Integration and preservation scope:
+- AboutUs.tsx remains exactly one added import and one component placement; existing page metadata, schema and other content are unchanged by that integration.
+- The two component files contain this revision. No source file was edited by this reviewer. Source SHA-256 values are recorded in REVIEW.json.
+
+Limit:
+This source review makes no physical Safari/iOS, deployed availability, field performance or runtime QA claim. The explicit user request removed visible manual controls; this report verifies that request and the retained hover/focus/reduced-motion behavior without inventing a different interface.

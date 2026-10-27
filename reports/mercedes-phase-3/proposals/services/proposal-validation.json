@@ -1,0 +1,43 @@
+{
+  "at": "2026-10-26T07:50:59.414Z",
+  "reviewOnly": true,
+  "noSourceApplicationBuildPublicationOrFormSubmission": true,
+  "files": [
+    {
+      "path": "src/data/mercedesServiceContent.ts",
+      "sourceSha256": "7ebb6013761160e8bebc48e3f3080ceae2e3fb330d4fa6edf86f02974481718d",
+      "proposedSha256": "bd941c4c6e03c43501e32f304fea8df5de07941b93be3598b1d07431eb91b339",
+      "proposedPath": "reports\\mercedes-phase-3\\proposals\\services\\proposed\\src\\data\\mercedesServiceContent.ts",
+      "typescriptParseDiagnostics": 0,
+      "sourceUnchanged": true
+    },
+    {
+      "path": "src/pages/BrandServicePage.tsx",
+      "sourceSha256": "b8bd67b40548b6e3c53db7611e7dd463cd5c92ce6774bbbdc954695b4395df2f",
+      "proposedSha256": "38bca41fbfd9d7fba3a5ce9701791facc77d1fc0a7a67806903f71e7a096512c",
+      "proposedPath": "reports\\mercedes-phase-3\\proposals\\services\\proposed\\src\\pages\\BrandServicePage.tsx",
+      "typescriptParseDiagnostics": 0,
+      "sourceUnchanged": true
+    }
+  ],
+  "patchSha256": "c2ef2429971ebdb2031dad998a6ebae13ab79a03d41e5d6282cebadf8a0234bc",
+  "gitApplyCheckExitCode": 0,
+  "gitApplyCheckStdout": "",
+  "gitApplyCheckStderr": "",
+  "protectedFieldsPreserved": [
+    "URL",
+    "title",
+    "meta description",
+    "H1",
+    "canonical",
+    "robots",
+    "schema",
+    "Arabic content",
+    "existing redirects",
+    "all service technical process/claims"
+  ],
+  "limits": [
+    "Syntax parsing and applicability only; no implementation-stage typecheck/build/SSR/mobile render is claimed.",
+    "No message sent; only proposed WhatsApp draft text changes."
+  ]
+}

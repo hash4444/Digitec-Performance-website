@@ -1,0 +1,138 @@
+{
+  "observedAt": "2026-10-26T07:12:46.7422656+00:00",
+  "observationWindowDubai": "26 October 2026; refreshed before Phase 2A deployment",
+  "domain": "digitecme.com",
+  "method": "Authenticated UI: refreshed all three rule detail forms and ordered enabled list; functional values exactly matched reviewed inventory. Refreshed rule overview, Page Rules, Bulk Redirect Lists, Worker Routes and relevant DNS records. UI transcription, not API/version export.",
+  "authorization": "Current user explicitly authorizes exactly R1-R4 deployment only after fresh gates; no existing rule edits/reorder/rollback authorized.",
+  "capacity": {
+    "used": 3,
+    "limit": 10,
+    "proposedAdditional": 4,
+    "projectedUsed": 7
+  },
+  "rules": [
+    {
+      "id": "5addb0c068414fb5b985a869ded26c68",
+      "order": 1,
+      "description": "Mercedes oil change legacy URLs to existing service",
+      "enabled": true,
+      "expression": "(http.host in {\"digitecme.com\" \"www.digitecme.com\"}) and (http.request.method in {\"GET\" \"HEAD\"}) and (http.request.uri.path in {\"/brands/mercedes-benz-service-dubai/oil-change\" \"/brands/mercedes-benz-service-dubai/oil-change/\"})",
+      "action": "redirect",
+      "action_parameters": {
+        "from_value": {
+          "target_url": {
+            "value": "https://digitecme.com/services/mercedes-oil-change-dubai"
+          },
+          "status_code": 308,
+          "preserve_query_string": true
+        }
+      },
+      "placementObserved": "First",
+      "protected": true
+    },
+    {
+      "id": "dbe42693423442afbc3bab9b993242a7",
+      "order": 2,
+      "description": "Legacy Mercedes URLs to Mercedes brand service page",
+      "enabled": true,
+      "expression": "http.request.uri.path in {\"/services/mercedes-repair-dubai\" \"/services/mercedes-repair-dubai/\" \"/services/mercedes-service-dubai\" \"/best-mercedes-workshop-dubai\"}",
+      "action": "redirect",
+      "action_parameters": {
+        "from_value": {
+          "target_url": {
+            "value": "https://digitecme.com/brands/mercedes-benz-service-dubai"
+          },
+          "status_code": 301,
+          "preserve_query_string": true
+        }
+      },
+      "placementObserved": "After Mercedes oil change legacy URLs to existing service",
+      "protected": true
+    },
+    {
+      "id": "9781b1ef743f4ffbaadbe5cb3250eeca",
+      "order": 3,
+      "description": "www to primary domain",
+      "enabled": true,
+      "expression": "(http.host eq \"www.digitecme.com\")",
+      "action": "redirect",
+      "action_parameters": {
+        "from_value": {
+          "target_url": {
+            "expression": "concat(\"https://digitecme.com\", http.request.uri.path)"
+          },
+          "status_code": 301,
+          "preserve_query_string": true
+        }
+      },
+      "placementObserved": "After Legacy Mercedes URLs to Mercedes brand service page",
+      "protected": true
+    }
+  ],
+  "otherchecks": {
+    "urlRewriteRules": {
+      "status": "ui_verified_none",
+      "observedText": "No URL Rewrite Rules created"
+    },
+    "configurationRules": {
+      "status": "ui_verified_none",
+      "observedText": "No Configuration Rules created"
+    },
+    "originRules": {
+      "status": "ui_verified_none",
+      "observedText": "No Origin Rules created"
+    },
+    "bulkRedirectLists": {
+      "status": "ui_verified_none",
+      "used": 0,
+      "limit": 5
+    },
+    "pageRules": {
+      "status": "ui_verified_none",
+      "used": 0,
+      "limit": 3
+    },
+    "workerRoutes": {
+      "status": "ui_verified_none",
+      "observedText": "You do not have any routes configured. Add a route to get started."
+    },
+    "dns": {
+      "status": "ui_verified_two_relevant_proxied_records",
+      "records": [
+        {
+          "name": "digitecme.com",
+          "type": "CNAME",
+          "content": "dubai-performance-art.lovable.app",
+          "proxied": true,
+          "ttl": "Auto"
+        },
+        {
+          "name": "www.digitecme.com",
+          "type": "CNAME",
+          "content": "dubai-performance-art.lovable.app",
+          "proxied": true,
+          "ttl": "Auto"
+        }
+      ]
+    },
+    "tls": {
+      "status": "ui_verified",
+      "alwaysUseHttps": true,
+      "automaticHttpsRewrites": true,
+      "lastAlwaysHttpsChangeDisplayed": "6 months ago",
+      "note": "Read only; no TLS setting changed."
+    },
+    "urlNormalization": {
+      "status": "ui_verified",
+      "type": "Cloudflare",
+      "incoming": true,
+      "toOrigin": false,
+      "note": "Existing policy left unchanged; expressions evaluated on Cloudflare-normalized URI path."
+    }
+  },
+  "limits": [
+    "Functional fields, enabled states and order freshly read from UI; API version/ref metadata not exposed.",
+    "This file is a before-state inventory; no rule creation had occurred at capture.",
+    "Layer-specific new TLS/normalization observations are appended before activation."
+  ]
+}

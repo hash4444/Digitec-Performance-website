@@ -1,0 +1,70 @@
+{
+  "checkedAt": "2026-10-19T08:43:31.854Z",
+  "passed": true,
+  "cases": [
+    {
+      "route": "/tuning",
+      "width": 1440,
+      "publishedPackages": 62,
+      "db11PriceRetained": true,
+      "db11WithheldTermsAbsent": true,
+      "s63EnquiryOnly": true,
+      "passed": true
+    },
+    {
+      "route": "/ar/tuning",
+      "width": 1440,
+      "publishedPackages": 62,
+      "db11PriceRetained": true,
+      "db11WithheldTermsAbsent": true,
+      "s63EnquiryOnly": true,
+      "passed": true
+    },
+    {
+      "route": "/tuning",
+      "width": 390,
+      "publishedPackages": 62,
+      "db11PriceRetained": true,
+      "db11WithheldTermsAbsent": true,
+      "s63EnquiryOnly": true,
+      "passed": true
+    },
+    {
+      "route": "/ar/tuning",
+      "width": 390,
+      "publishedPackages": 62,
+      "db11PriceRetained": true,
+      "db11WithheldTermsAbsent": true,
+      "s63EnquiryOnly": true,
+      "passed": true
+    },
+    {
+      "route": "/tuning",
+      "width": 320,
+      "publishedPackages": 62,
+      "db11PriceRetained": true,
+      "db11WithheldTermsAbsent": true,
+      "s63EnquiryOnly": true,
+      "passed": true
+    },
+    {
+      "route": "/ar/tuning",
+      "width": 320,
+      "publishedPackages": 62,
+      "db11PriceRetained": true,
+      "db11WithheldTermsAbsent": true,
+      "s63EnquiryOnly": true,
+      "passed": true
+    }
+  ],
+  "failures": [],
+  "errors": [],
+  "failedLocalResponses": [],
+  "blockedExternalRequests": 0,
+  "blockedWrites": 0,
+  "screenshots": [
+    "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\ecu-electronics-2026-10-19\\qa\\tuning-browser\\tuning-en-mobile.png",
+    "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\ecu-electronics-2026-10-19\\qa\\tuning-browser\\tuning-ar-mobile.png"
+  ],
+  "safety": "Only local GET/HEAD; external links prevented; no message, enquiry, call or production request."
+}

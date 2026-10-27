@@ -1,0 +1,85 @@
+DIGI-TEC five-brand service sprint: GSC evidence
+Analysis date: 19 October 2026, Asia/Dubai
+
+Scope and sources
+
+The 19 October source is C:\Users\ADMIN\Downloads\digitecme.com-Performance-on-Search-2026-10-19.xlsx. Filters!A2:B3 states Search type = Web (text-based), Time range = Last 24 hours. Chart!A2:A25 holds 24 hourly bucket starts from 18 October 2026 06:00 through 19 October 2026 05:00 in UTC+04:00. These are the supplied bucket labels, not a full 19 October daily measurement. Use this as an early observation baseline only. SHA-256: 0190f0505365029c2d529cf4a452815e6a0f446ba18eaf130a95bc60b92ba6c9.
+
+A longer recent sitewide source is available and was used: digitecme.com-Performance-on-Search-2026-10-12 (1).xlsx, Filters!A2:B3 = Web, Last 3 months. Chart!A2:A93 spans 10 July to 9 October 2026 (92 dates). No query, page, country, device or search-appearance filter is recorded. SHA-256: 3fcbcb796e4670809bc44d52852369a58bf8650d6577c496a1f71a996573945e.
+
+Historical context is available in digitecme.com-Performance-on-Search-2026-09-27.xlsx. Filters!A2:B3 = Web, Last 6 months, while actual Chart!A2:A168 dates span 12 April to 25 September 2026 (167 dates). SHA-256: 83d6b92aff7fb32aa6f7e095f219b3ceedc6c56fabd73837f4ea75136240ee51. The 92-day and 167-day windows overlap and have different lengths. They are separate evidence snapshots, not a before/after experiment, and are never added together or used for a growth percentage.
+
+Seventeen local performance exports were inventoried/extracted read-only, with all seven tabs inspected in each workbook and source SHA-256 checked before/after. Filtered exports for tuning, PPF, Product snippets and individual Mercedes queries are recorded in the manifest but excluded from five-brand sitewide opportunity totals. Duplicate older exports are not combined. No source workbook was saved or changed.
+
+Baseline reconciliation and limitations
+
+19 October export: Chart!A1:E25 = 6 clicks, 1,204 impressions, derived CTR 0.4983%. Devices!A1:E4 and Countries!A1:E41 agree with Chart. Queries!A1:E527 contains 526 visible rows totaling 1 click and 914 impressions, leaving 5 clicks and 290 impressions unallocated to visible query rows. Pages!A1:E138 contains 137 URLs totaling 6 clicks and 1,280 page impressions; its page-level denominator is retained independently. It is not treated as the same total as Chart. Search appearance!A1:E2 records Product snippets at 0 clicks, 14 impressions, position 33.64. This is not evidence of Service or LocalBusiness rich-result eligibility.
+
+The 92-day source: Chart!A1:E93 = 515 clicks and 108,445 impressions. Queries!A1:E1001 = 1,000 visible query rows, 138 clicks and 64,843 impressions. Pages!A1:E1001 = 1,000 visible URL rows, 519 clicks and 116,261 impressions. These exact 1,000-row tables cannot establish exhaustive query/URL coverage. The 167-day source also contains 1,000 visible Queries rows. Missing queries and pages are unknown, not zero.
+
+Queries and Pages are independent marginal tables. Their rows cannot be joined by rank, similar metrics or brand name. The reports identify editorial query owners from the existing ownership registers, not measured ranking URLs. No multi-URL cannibalization claim is established from these exports. Current GSC indexing state and Google-selected canonical require URL Inspection evidence, which these performance exports do not contain.
+
+Exact targets and editorial owners
+
+All ten terms retain the established five broad brand hubs. Service and repair are grouped on each hub; no one-page-per-keyword expansion is justified. Below, each metric group is clicks / impressions / average position. CTR is in target-query-baselines.csv with source cell ranges.
+
+Query                           24h baseline       92-day context      Editorial owner
+rolls royce service dubai        0 / 12 / 11.08     1 / 476 / 18.13     /brands/rolls-royce-service-dubai
+rolls royce repair dubai         0 / 6 / 11.50      1 / 354 / 19.92     /brands/rolls-royce-service-dubai
+lamborghini service dubai        0 / 8 / 12.50      0 / 379 / 16.41     /brands/lamborghini-service-dubai
+lamborghini repair dubai         0 / 6 / 14.33      0 / 361 / 22.37     /brands/lamborghini-service-dubai
+volkswagen service dubai         0 / 3 / 14.00      0 / 107 / 22.48     /brands/volkswagen-service-dubai
+volkswagen repair dubai          0 / 2 / 23.00      0 / 89 / 26.53      /brands/volkswagen-service-dubai
+mercedes service dubai           0 / 6 / 14.83      2 / 613 / 13.88     /brands/mercedes-benz-service-dubai
+mercedes repair dubai            0 / 10 / 2.90      8 / 1071 / 6.35     /brands/mercedes-benz-service-dubai
+bmw service dubai                Not observed       1 / 377 / 21.52     /brands/bmw-service-dubai
+bmw repair dubai                 0 / 4 / 7.25       2 / 203 / 13.79     /brands/bmw-service-dubai
+
+Do not infer improvement from the differing 24-hour and 92-day average positions. Query, location, device and result composition can differ. No post-change measurement is available for this sprint.
+
+Hub page evidence (independent of exact-query rows)
+
+All five English hubs appear in the fresh Pages tab and recorded zero clicks in that short window. Hub page impressions / position: Mercedes 71 / 21.44 (Pages!A8:E8), Volkswagen 59 / 16.88 (A9:E9), Lamborghini 45 / 15.58 (A10:E10), Rolls-Royce 44 / 13.55 (A11:E11), BMW 27 / 12.41 (A22:E22).
+
+92-day hub page clicks / impressions / CTR / position: Mercedes 54 / 10,202 / 0.53% / 10.51 (Pages!A3:E3), BMW 9 / 2,883 / 0.31% / 20.73 (A6:E6), Rolls-Royce 5 / 1,979 / 0.25% / 18.16 (A11:E11), Lamborghini 3 / 2,172 / 0.14% / 22.48 (A22:E22), Volkswagen 1 / 1,753 / 0.06% / 24.79 (A69:E69). These page totals include all observed queries for the page. Exact target-query metrics cannot be attributed to these URLs from the separate tabs alone.
+
+Prioritized opportunities
+
+P1: Mercedes hub. mercedes repair dubai has 1,071 impressions, 8 clicks, 0.75% CTR and position 6.35 in the 92-day source. mercedes specialist dubai adds 341 impressions, 0 clicks at position 5.80. These justify reviewing snippet clarity, factual independent-workshop identity and booking visibility. mercedes service dubai (613 impressions / position 13.88), workshop dubai (422 / 15.96) and service center dubai (353 / 12.76) justify strengthening maintenance scope and discovery within the existing hub. Do not claim a predicted CTR uplift.
+
+P1: Rolls-Royce hub. Service and repair combine 830 recent exact-term impressions and two clicks, at positions 18.13 and 19.92 respectively. Preserve one broad service/repair page; improve verified maintenance, diagnostics, electrical/mechanical routing and quotation answers. Additional hub variants include workshop Dubai (148 impressions / 18.54), service center Dubai (138 / 17.49). The existing ownership register assigns maintenance Dubai to the supporting workshop guide; preserve that informational relationship rather than silently moving all guide intent to the hub.
+
+P1: Lamborghini hub. Service and repair combine 740 recent impressions with no visible query clicks, at positions 16.41 and 22.37. Clarify routine service and repair assessment, use visible task links and maintain an enquiry step. Service-center Dubai (195 impressions / 20.19) and workshop Dubai (165 / 15.44) remain broad hub variants. The maintenance guide is a separate supporting owner for maintenance planning.
+
+P1: BMW hub. Service has 377 impressions / one click / position 21.52, repair 203 / two / 13.79. Service center Dubai adds 188 impressions at 30.43. Improve verified maintenance scope and diagnostic-led repair explanation, preserve existing supported-model routes and avoid new keyword duplicates. The missing 24-hour exact service query does not negate the longer evidence.
+
+P2: Volkswagen hub. Service and repair have 196 combined recent impressions and no visible query clicks at positions 22.48 and 26.53. The hub itself has 1,753 impressions and one click. Cover Volkswagen and VW naturally on one hub, strengthen scope and task links, and provide an obvious quotation step. VW service Dubai adds 32 impressions / position 25.41; Volkswagen service adds 88 / 11.95. Do not create a VW synonym page.
+
+P2: Existing task owners. Link from each hub without replacing the task page's intent. Recent examples: Mercedes engine repair Dubai 271 impressions / 10.78 -> /services/mercedes-mechanical-repair-dubai; suspension repair 235 / 13.60 -> /services/mercedes-suspension-repair-dubai. BMW transmission repair 90 / 11.60 and engine repair 74 / 16.35 -> existing transmission-repair and mechanical-repair children. Rolls-Royce engine repair 115 / 26.01 and suspension 66 / 19.33 -> corresponding children. Lamborghini engine repair 70 / 25.16, battery replacement 53 / 27.32 and transmission 49 / 15.14 -> corresponding children. Volkswagen AC repair 65 / 15.91 -> its AC child. Query demand is not independent proof of business capability.
+
+HOLD capability-specific expansion. Lamborghini reverse camera in Dubai has 247 impressions at position 22.65. The historical register points at electrical repair, but exact camera diagnostics, repair or installation support requires verification. BMW coding service has 88 impressions at 38.77 and an existing diagnostic owner; a query does not establish model/tool coding compatibility. Keep both as capability-review opportunities without inventing claims. Volkswagen VIN decoder Dubai (32 impressions) asks for a tool and is excluded from commercial workshop-page optimization. Tuning/audio/PPF queries are not service-sprint acquisition targets even when the brand matches.
+
+Arabic. The recent query صيانة رولز رويس has 43 impressions, no clicks, position 28.93 (Queries!A468:E468), supporting improvement of the existing /ar/brands/rolls-royce-service-dubai counterpart. This is an editorial language destination, not a measured query-to-URL association. Arabic content work should preserve existing routes, entity IDs and reciprocal hreflang; no separate synonym pages are proposed. Other unobserved exact Arabic terms are not assigned invented metrics.
+
+Models. A bounded scan of the supplied primary Queries tables for common five-brand model aliases found Mercedes C/E-Class audio requests and an Urus tuning request, but no observed model-specific servicing query. This export therefore supports no model-service demand claim. Existing model-service content can be retained on verified business/source evidence; absence from the visible query list does not prove zero demand.
+
+Devices and next measurement
+
+The 24-hour baseline Devices!A2:E4 records Mobile 5 clicks / 491 impressions / 1.02% CTR / 12.22 position; Desktop 1 / 709 / 0.14% / 28.04; Tablet 0 / 4 / 0% / 59.50. The 92-day source records Mobile 308 / 37,621 / 0.82% / 13.75 and Desktop 204 / 70,141 / 0.29% / 26.60. These are sitewide distributions, not brand-segmented evidence or proof of a mobile usability defect. Prioritize mobile CTA and form QA because mobile generated most observed clicks in both snapshots. Baseline UAE row is 5 clicks / 1,119 impressions / 0.45% CTR / 22.28 (Countries!A2:E2).
+
+One valid same-source sitewide trend comparison was derived from the recent Chart daily rows: 15 August–11 September (28 days): 172 clicks / 36,452 impressions / 0.4719% derived CTR / 21.19 impression-weighted position. 12 September–9 October (28 days): 166 / 38,353 / 0.4328% / 16.73. These windows do not overlap. They show mixed sitewide metrics and cannot establish five-brand progress, qualified enquiries or effect of local sprint changes. Their end date predates this sprint.
+
+For outcome measurement after an authorized release, export matched complete 28-day periods, plus a 90-day view, with the same search type and country/device settings. Include query × page dimensions (or each exact query's Pages report), the five exact hub pages and existing important service children, then segment UAE and Mobile separately. Record dated URL Inspection results for indexing and canonical verification. Use CRM/form backend acceptance and answered, qualified call/WhatsApp records for confirmed enquiries. Contact-button clicks are engagement only. These workbooks contain no enquiry, booking, revenue or lead-quality data.
+
+Artifacts and checks
+
+target-query-baselines.csv: ten requested terms across each of the three primary sources; row-level source ranges, missing values and editorial owners.
+prioritized-keyword-opportunities.csv: 34 measured opportunity/hold/exclude records with actions and guardrails.
+five-brand-query-register.csv: all visible explicit-brand alias matches in the three primary sources, with metrics and ownership provenance. This is an explicit-brand subset; generic and standalone ambiguous model terms are not silently assigned.
+five-brand-page-baselines.csv: observed brand-hub/child and Mercedes architecture URLs with source ranges, not an exhaustive site URL inventory.
+sitewide-device-baselines.csv and visible-brand-query-summary.csv: separately labeled scope; the latter includes adjacent intents and is not a service-only demand total.
+source-manifest.json and extracted-workbooks.json: read-only extraction, filters, time bounds, inspected ranges, totals and source hashes.
+nonoverlapping-sitewide-comparison.json: same-source 28-day sitewide windows.
+analysis-checks.json: all 17 source hashes unchanged, seven sheets per source, 30 exact target records, ten recent exact matches, nine 24-hour matches, and explicit missing BMW service term.
+
+Local analysis succeeded. No source, production system, PPF page, tuning page or backend file was modified by this GSC work.

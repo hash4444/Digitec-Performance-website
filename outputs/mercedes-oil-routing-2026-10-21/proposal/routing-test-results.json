@@ -1,0 +1,12 @@
+{
+  "testedAt": "2026-10-21T06:25:31.621Z",
+  "passed": true,
+  "redirectCases": 80,
+  "unchangedCases": 1288,
+  "excludedAliasCases": 36,
+  "assertions": 1658,
+  "existingRulesPreserved": true,
+  "targetFormsPassedThrough": true,
+  "noChainsOrLoopsInObservedSingleRedirectModel": true,
+  "limitation": "Offline semantic model only; not Cloudflare compilation, live activation, cross-phase redirect order, or URL normalization verification. Existing www rule can still redirect mutation requests unchanged from baseline."
+}

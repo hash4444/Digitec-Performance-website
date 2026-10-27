@@ -1,0 +1,99 @@
+Polishing and educational article implementation — 2026-10-12
+
+Audit findings
+- Canonical polishing owner is /services/car-polishing-dubai, explicitly routed to PaintCorrectionPage. Existing H1, safety limits, 16 FAQs, quote form, WhatsApp/photo CTAs, call controls, brand links, dimensional workshop images and absence of unverified projects were already sound.
+- Existing copy mentioned machine polishing briefly but lacked a focused explanation of method/preparation and a standalone aftercare section. Existing hub link was confined to the final location note.
+- Related blogs already distinguished coating from film. The comparison article still had broad commercial keyword metadata and a generic self-healing suggestion without DIGI-TEC product verification. Those are editorial/claim issues, not evidence of search cannibalization.
+- Arabic polishing has no equivalent route: hasArabicVersion=false; locale fallback goes to /ar/services. Arabic comparison content exists in src/i18n/ar-general-blog-content.ts and needs contextual owner links and matching care guidance (root task notified).
+
+Modified files
+- src/pages/PaintCorrectionPage.tsx: service-led Al Quoz introduction; machine-polishing/preparation section; explicit polishing-versus-protection explanation; independent aftercare section; contextual protection-hub and educational guide links; WebPage dateModified 2026-10-12. Existing forms, CTA tracking, layout classes, images, H1 and route preserved.
+- src/data/paintCorrectionContent.ts: commercial polishing metadata; one existing FAQ now explicitly states correction is not long-term protective coverage. Sixteen FAQs retained, no stage packages, prices or guarantees invented.
+- src/data/blogPosts.ts: UAE ceramic-care article retains its educational title/description; improved preparation distinction, aftercare and comparison/service links; updatedDate 2026-10-12.
+- src/data/aiGuidePostsExtra.ts: comparison article retains its route and descriptive H1; title/description and keyword metadata emphasize comparison intent; removes generic self-healing line; refines product-dependent environmental claims; adds prep/aftercare/hub sections; updatedDate 2026-10-12.
+
+Metadata before -> after
+- /services/car-polishing-dubai
+  Title: Car Polishing & Paint Correction Dubai | DIGI-TEC -> Car Polishing Dubai | Paint Correction | DIGI-TEC
+  Description: Professional car polishing and paint correction in Dubai. Assess swirl marks, light scratches and dull paint on your premium car. Get a DIGI-TEC quote. -> Car polishing and paint correction in Al Quoz, Dubai for swirl marks, light scratches and dull paint. Ask DIGI-TEC for an assessed scope and quote.
+  H1 unchanged: Car Polishing & Paint Correction Dubai
+  Canonical unchanged: https://digitecme.com/services/car-polishing-dubai
+- /blog/ceramic-coating-vs-ppf-dubai
+  Title: Ceramic Coating vs PPF Dubai | Which Protection Is Right? -> Ceramic Coating vs PPF: Dubai Owner’s Guide | DIGI-TEC
+  Description: Ceramic coating or paint protection film in Dubai: what each product actually does, how UAE sun and sand affect paint, and how to decide between them. -> Compare PPF and ceramic coating for Dubai driving: chip protection, cleaning, paint preparation and aftercare. Learn what to ask before choosing.
+  H1 unchanged: Ceramic Coating or PPF in Dubai: Which Should You Choose?
+  Canonical unchanged: https://digitecme.com/blog/ceramic-coating-vs-ppf-dubai
+- /blog/why-ceramic-coating-matters-uae
+  Title unchanged: Ceramic Coating in the UAE: Benefits & Preparation | DIGI-TEC
+  Description unchanged: Understand ceramic coating benefits, paint preparation and how coating differs from PPF for vehicle care in the UAE.
+  H1 unchanged: Why Ceramic Coating Matters in the UAE
+  Canonical unchanged: https://digitecme.com/blog/why-ceramic-coating-matters-uae
+
+New contextual links (existing canonical destinations)
+- /services/car-polishing-dubai -> /services/paint-protection-dubai: Compare paint protection options for your car (additional contextual placement; destination existed in final location note)
+- /services/car-polishing-dubai -> /blog/ceramic-coating-vs-ppf-dubai: Read the guide to ceramic coating versus PPF
+- /services/car-polishing-dubai -> /blog/why-ceramic-coating-matters-uae: Understand coating preparation and ongoing paint care
+- /blog/why-ceramic-coating-matters-uae -> /services/paint-protection-dubai: Compare DIGI-TEC’s paint protection options
+- /blog/why-ceramic-coating-matters-uae -> /services/paint-protection-film: Review physical film protection for covered panels
+- /blog/why-ceramic-coating-matters-uae -> /blog/ceramic-coating-vs-ppf-dubai: Read the coating-versus-film comparison
+- /blog/ceramic-coating-vs-ppf-dubai -> /blog/why-ceramic-coating-matters-uae: Learn about coating preparation and care in the UAE
+- /blog/ceramic-coating-vs-ppf-dubai -> /services/paint-protection-dubai: Compare paint protection services at DIGI-TEC
+Existing PPF, ceramic and polishing owner links in blogs retained.
+
+Keyword ownership
+- /services/car-polishing-dubai: car polishing Dubai; paint correction Dubai; car paint polishing; machine polishing; commercial assessment/quote intent.
+- /blog/ceramic-coating-vs-ppf-dubai: coating versus film comparison; educational selection and care intent supporting commercial owners.
+- /blog/why-ceramic-coating-matters-uae: coating benefits, preparation and care in UAE; educational intent supporting ceramic service and protection hub.
+No redirects, route removal, canonical merging or cannibalization diagnosis implemented.
+
+Verification
+- Targeted ESLint executed on all four modified files using node node_modules/eslint/bin/eslint.js: passed, exit code 0.
+- Before snapshots saved under outputs/paint-seo-2026-10-12/before/ with matching paths.
+- Diff reviewed: only assigned polishing page/content and two paint-care articles changed.
+- Full build, typecheck, metadata rendering, schema, sitemap/hreflang, mobile and CTA verification are integrated root-task checks; not claimed here.
+- Existing validate-paint-correction.mjs pins old title/description/date. Root task notified to update these assertions and route lastmod to 2026-10-12.
+
+Primary technical references used for claim review (no inference that DIGI-TEC installs these brands)
+- 3M Finesse-it II Machine Polish: https://www.3m.com/3M/en_US/p/d/b40065595/ (machine-polishing surface refinement and follow-on protection)
+- Gtechniq How to Wash a Ceramic Coated Car: https://gtechniq.com/how-to-wash-a-ceramic-coated-car/ (continuing care, rinsing and clean washing materials)
+- Gtechniq About Gtechniq FAQs: https://gtechniq.com/faqs/about-gtechniq/ (coating does not provide stone-chip impact protection comparable to film)
+
+Remaining business evidence
+- Installed products, supported finish types, application/curing instructions and warranty terms require product-specific confirmation.
+- Single/multi-stage correction packages and verified before/after projects were not established; no new offer or portfolio claim added.
+
+Arabic educational article follow-up — implemented
+- Snapshots saved before changes for src/i18n/ar-general-blog-content.ts, src/i18n/ar-service-blog-content.ts and src/i18n/ar-blog.ts.
+- src/i18n/ar-general-blog-content.ts: only ceramic-coating-vs-ppf-dubai record edited. Comparison/selection intent, Al Quoz context, safe preparation, polishing-versus-protection distinction, product compatibility and ongoing aftercare now match English claims. No film specifications, self-healing, duration or warranty coverage added.
+- src/i18n/ar-service-blog-content.ts: only why-ceramic-coating-matters-uae body edited. Clearer water-beading and sealant terminology, coating-versus-polishing distinction, first-wash/product-dependent care, routine wash guidance and related owner/guide links.
+- src/i18n/ar-blog.ts: actual coating metadata corrected to educational benefits/preparation/care intent; targeted date override gives both revised paint-care Arabic articles updatedDate 2026-10-12 while all other article date rules remain unchanged.
+- Canonical paths remain /ar/blog/why-ceramic-coating-matters-uae and /ar/blog/ceramic-coating-vs-ppf-dubai. Existing localization/RTL rendering retained. No Arabic polishing route created or advertised.
+- BlogPost.tsx suppresses Arabic block.links outside its reviewed linked-article allowlist. Root task notified immediately; root owns enabling these two reviewed paint-care articles in that rendering gate. Links are represented correctly by both content providers.
+
+Arabic metadata before -> after
+- /ar/blog/why-ceramic-coating-matters-uae
+  H1 unchanged: لماذا يهم الطلاء السيراميكي في الإمارات؟
+  Title: الطلاء السيراميكي للسيارات في الإمارات | دليل الحماية -> فوائد السيراميك للسيارات في الإمارات | التحضير والعناية
+  Description: دليل فوائد الطلاء السيراميكي في الإمارات وحماية دهان السيارة من الشمس والغبار والرطوبة مع توضيح الفرق بينه وبين الشمع وPPF. -> تعرّف إلى فوائد السيراميك وتحضير طلاء السيارة والعناية به في الإمارات، والفرق بين الطلاء السطحي وأفلام PPF للحماية المادية.
+  Canonical unchanged: https://digitecme.com/ar/blog/why-ceramic-coating-matters-uae
+- /ar/blog/ceramic-coating-vs-ppf-dubai
+  H1: السيراميك أم أفلام PPF في دبي: اختيار حماية الطلاء -> السيراميك أم أفلام PPF في دبي: دليل اختيار حماية الطلاء
+  Title: السيراميك أم أفلام PPF في دبي: اختيار حماية الطلاء | ديجي-تك -> السيراميك أم أفلام PPF في دبي: دليل اختيار حماية الطلاء | ديجي-تك
+  Description: قارن الحماية المادية لأفلام PPF مع سلوك الماء وسهولة العناية بالسيراميك، وحدد الخيار حسب الطلاء والاستخدام والتغطية المطلوبة. -> قارن أفلام PPF والسيراميك للاستخدام في دبي: الحماية من الحصى وتسهيل التنظيف وتحضير الطلاء والعناية. تعرّف إلى الأسئلة التي تطرحها قبل الاختيار.
+  Canonical unchanged: https://digitecme.com/ar/blog/ceramic-coating-vs-ppf-dubai
+
+Arabic new contextual links
+- /ar/blog/why-ceramic-coating-matters-uae -> /ar/services/ceramic-coating: مراجعة نطاق خدمة السيراميك وتحضير الطلاء
+- /ar/blog/why-ceramic-coating-matters-uae -> /ar/services/paint-protection-dubai: مقارنة خيارات حماية الطلاء لدى ديجي-تك
+- /ar/blog/why-ceramic-coating-matters-uae -> /ar/services/paint-protection-film: مراجعة الحماية المادية للألواح المغطاة بالفيلم
+- /ar/blog/why-ceramic-coating-matters-uae -> /ar/blog/ceramic-coating-vs-ppf-dubai: قراءة المقارنة بين السيراميك وأفلام الحماية
+- /ar/blog/ceramic-coating-vs-ppf-dubai -> /ar/services/paint-protection-film: مراجعة تغطية أفلام حماية الطلاء
+- /ar/blog/ceramic-coating-vs-ppf-dubai -> /ar/services/ceramic-coating: التعرّف إلى خدمة الطلاء السيراميكي
+- /ar/blog/ceramic-coating-vs-ppf-dubai -> /ar/blog/why-ceramic-coating-matters-uae: قراءة دليل تحضير السيراميك والعناية به في الإمارات
+- /ar/blog/ceramic-coating-vs-ppf-dubai -> /ar/services/paint-protection-dubai: مقارنة خيارات حماية الطلاء لدى ديجي-تك
+All localized destinations are present in src/lib/routing-paths.json; root integrated QA must verify actual rendered links after enabling the render gate.
+
+Arabic verification
+- Targeted ESLint executed on ar-general-blog-content.ts, ar-service-blog-content.ts and ar-blog.ts: passed, exit code 0.
+- Diff reviewed: only the two requested Arabic articles and their targeted date resolution changed.
+- No build run by this subtask; rendered metadata/link checks remain with root integrated QA.

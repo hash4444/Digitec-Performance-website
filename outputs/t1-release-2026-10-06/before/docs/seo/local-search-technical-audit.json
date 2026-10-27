@@ -1,0 +1,586 @@
+{
+  "auditedAt": "2026-09-08T11:09:44.741Z",
+  "buildRoot": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\paint-correction-qa.local\\build-1788864156961\\dist",
+  "live": [
+    {
+      "route": "/",
+      "error": "fetch failed"
+    },
+    {
+      "route": "/about",
+      "error": "fetch failed"
+    },
+    {
+      "route": "/services/paint-protection-film",
+      "error": "fetch failed"
+    },
+    {
+      "route": "/services/ceramic-coating",
+      "error": "fetch failed"
+    },
+    {
+      "route": "/services/car-polishing-dubai",
+      "error": "fetch failed"
+    }
+  ],
+  "local": [
+    {
+      "route": "/",
+      "title": "Digi-Tec Performance Center | Independent Car Workshop Dubai",
+      "canonical": "https://digitecme.com/",
+      "h1": "DIGI-TECPerformance Center",
+      "businesses": [
+        {
+          "@type": "Organization",
+          "@id": "https://digitecme.com/#organization",
+          "name": "Digi-Tec Performance Center",
+          "alternateName": [
+            "Digi-Tec",
+            "DIGI-TEC",
+            "Digitec"
+          ],
+          "url": "https://digitecme.com/",
+          "email": "info@digitecme.com",
+          "logo": {
+            "@id": "https://digitecme.com/#logo"
+          },
+          "image": {
+            "@id": "https://digitecme.com/#logo"
+          },
+          "sameAs": [
+            "https://www.instagram.com/digi_tec/",
+            "https://www.facebook.com/Digitecme/"
+          ],
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+971 4 340 2223",
+            "contactType": "customer service"
+          }
+        },
+        {
+          "@type": [
+            "AutoRepair",
+            "AutomotiveBusiness"
+          ],
+          "@id": "https://digitecme.com/#business",
+          "name": "Digi-Tec Performance Center",
+          "url": "https://digitecme.com/",
+          "logo": {
+            "@id": "https://digitecme.com/#logo"
+          },
+          "image": {
+            "@id": "https://digitecme.com/#logo"
+          },
+          "parentOrganization": {
+            "@id": "https://digitecme.com/#organization"
+          },
+          "description": "Independent luxury, European and German vehicle workshop in Al Quoz Industrial Area 3, Dubai.",
+          "foundingDate": "2002",
+          "telephone": "+971 4 340 2223",
+          "email": "info@digitecme.com",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Al Quoz Industrial Area 3, Warehouses 11–15",
+            "addressLocality": "Dubai",
+            "addressCountry": "AE"
+          },
+          "areaServed": {
+            "@type": "City",
+            "name": "Dubai"
+          },
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+971 4 340 2223",
+            "contactType": "customer service"
+          },
+          "sameAs": [
+            "https://www.instagram.com/digi_tec/",
+            "https://www.facebook.com/Digitecme/"
+          ],
+          "hasOfferCatalog": {
+            "@id": "https://digitecme.com/#service-catalog"
+          }
+        }
+      ],
+      "services": [],
+      "breadcrumbs": [],
+      "phoneLinks": [
+        "tel:+97143402223"
+      ],
+      "mapLinks": [
+        "https://maps.google.com/?q=Al+Quoz+Industrial+Area+3+Dubai"
+      ],
+      "jsonParseErrors": 0
+    },
+    {
+      "route": "/about",
+      "title": "About Digitec Performance Center | Car Workshop in Dubai",
+      "canonical": "https://digitecme.com/about",
+      "h1": "About DIGI-TEC",
+      "businesses": [
+        {
+          "@type": "Organization",
+          "@id": "https://digitecme.com/#organization",
+          "name": "Digi-Tec Performance Center",
+          "alternateName": [
+            "Digi-Tec",
+            "DIGI-TEC",
+            "Digitec"
+          ],
+          "url": "https://digitecme.com/",
+          "email": "info@digitecme.com",
+          "logo": {
+            "@id": "https://digitecme.com/#logo"
+          },
+          "image": {
+            "@id": "https://digitecme.com/#logo"
+          },
+          "sameAs": [
+            "https://www.instagram.com/digi_tec/",
+            "https://www.facebook.com/Digitecme/"
+          ],
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+971 4 340 2223",
+            "contactType": "customer service"
+          }
+        },
+        {
+          "@type": [
+            "AutoRepair",
+            "AutomotiveBusiness"
+          ],
+          "@id": "https://digitecme.com/#business",
+          "name": "Digi-Tec Performance Center",
+          "url": "https://digitecme.com/",
+          "logo": {
+            "@id": "https://digitecme.com/#logo"
+          },
+          "image": {
+            "@id": "https://digitecme.com/#logo"
+          },
+          "parentOrganization": {
+            "@id": "https://digitecme.com/#organization"
+          },
+          "description": "Independent luxury, European and German vehicle workshop in Al Quoz Industrial Area 3, Dubai.",
+          "foundingDate": "2002",
+          "telephone": "+971 4 340 2223",
+          "email": "info@digitecme.com",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Al Quoz Industrial Area 3, Warehouses 11–15",
+            "addressLocality": "Dubai",
+            "addressCountry": "AE"
+          },
+          "areaServed": {
+            "@type": "City",
+            "name": "Dubai"
+          },
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+971 4 340 2223",
+            "contactType": "customer service"
+          },
+          "sameAs": [
+            "https://www.instagram.com/digi_tec/",
+            "https://www.facebook.com/Digitecme/"
+          ],
+          "hasOfferCatalog": {
+            "@id": "https://digitecme.com/#service-catalog"
+          }
+        }
+      ],
+      "services": [],
+      "breadcrumbs": [
+        "https://digitecme.com/about#breadcrumb"
+      ],
+      "phoneLinks": [
+        "tel:+97143402223"
+      ],
+      "mapLinks": [
+        "https://maps.google.com/?q=Al+Quoz+Industrial+Area+3+Dubai"
+      ],
+      "jsonParseErrors": 0
+    },
+    {
+      "route": "/services/paint-protection-film",
+      "title": "PPF Dubai | Paint Protection Film for Cars | DIGI-TEC",
+      "canonical": "https://digitecme.com/services/paint-protection-film",
+      "h1": "Paint Protection Film (PPF) Dubai",
+      "businesses": [
+        {
+          "@type": "Organization",
+          "@id": "https://digitecme.com/#organization",
+          "name": "Digi-Tec Performance Center",
+          "alternateName": [
+            "Digi-Tec",
+            "DIGI-TEC",
+            "Digitec"
+          ],
+          "url": "https://digitecme.com/",
+          "email": "info@digitecme.com",
+          "logo": {
+            "@id": "https://digitecme.com/#logo"
+          },
+          "image": {
+            "@id": "https://digitecme.com/#logo"
+          },
+          "sameAs": [
+            "https://www.instagram.com/digi_tec/",
+            "https://www.facebook.com/Digitecme/"
+          ],
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+971 4 340 2223",
+            "contactType": "customer service"
+          }
+        },
+        {
+          "@type": [
+            "AutoRepair",
+            "AutomotiveBusiness"
+          ],
+          "@id": "https://digitecme.com/#business",
+          "name": "Digi-Tec Performance Center",
+          "url": "https://digitecme.com/",
+          "logo": {
+            "@id": "https://digitecme.com/#logo"
+          },
+          "image": {
+            "@id": "https://digitecme.com/#logo"
+          },
+          "parentOrganization": {
+            "@id": "https://digitecme.com/#organization"
+          },
+          "description": "Independent luxury, European and German vehicle workshop in Al Quoz Industrial Area 3, Dubai.",
+          "foundingDate": "2002",
+          "telephone": "+971 4 340 2223",
+          "email": "info@digitecme.com",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Al Quoz Industrial Area 3, Warehouses 11–15",
+            "addressLocality": "Dubai",
+            "addressCountry": "AE"
+          },
+          "areaServed": {
+            "@type": "City",
+            "name": "Dubai"
+          },
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+971 4 340 2223",
+            "contactType": "customer service"
+          },
+          "sameAs": [
+            "https://www.instagram.com/digi_tec/",
+            "https://www.facebook.com/Digitecme/"
+          ],
+          "hasOfferCatalog": {
+            "@id": "https://digitecme.com/#service-catalog"
+          }
+        }
+      ],
+      "services": [
+        {
+          "id": "https://digitecme.com/services/paint-protection-film#service",
+          "name": "Paint Protection Film (PPF) Dubai",
+          "provider": {
+            "@id": "https://digitecme.com/#business"
+          }
+        }
+      ],
+      "breadcrumbs": [
+        "https://digitecme.com/services/paint-protection-film#breadcrumb"
+      ],
+      "phoneLinks": [
+        "tel:+97143402223"
+      ],
+      "mapLinks": [
+        "https://maps.google.com/?q=Al+Quoz+Industrial+Area+3+Dubai"
+      ],
+      "jsonParseErrors": 0
+    },
+    {
+      "route": "/services/ceramic-coating",
+      "title": "Ceramic Coating Dubai | Car Paint Protection | DIGI-TEC",
+      "canonical": "https://digitecme.com/services/ceramic-coating",
+      "h1": "Ceramic Coating Dubai",
+      "businesses": [
+        {
+          "@type": "Organization",
+          "@id": "https://digitecme.com/#organization",
+          "name": "Digi-Tec Performance Center",
+          "alternateName": [
+            "Digi-Tec",
+            "DIGI-TEC",
+            "Digitec"
+          ],
+          "url": "https://digitecme.com/",
+          "email": "info@digitecme.com",
+          "logo": {
+            "@id": "https://digitecme.com/#logo"
+          },
+          "image": {
+            "@id": "https://digitecme.com/#logo"
+          },
+          "sameAs": [
+            "https://www.instagram.com/digi_tec/",
+            "https://www.facebook.com/Digitecme/"
+          ],
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+971 4 340 2223",
+            "contactType": "customer service"
+          }
+        },
+        {
+          "@type": [
+            "AutoRepair",
+            "AutomotiveBusiness"
+          ],
+          "@id": "https://digitecme.com/#business",
+          "name": "Digi-Tec Performance Center",
+          "url": "https://digitecme.com/",
+          "logo": {
+            "@id": "https://digitecme.com/#logo"
+          },
+          "image": {
+            "@id": "https://digitecme.com/#logo"
+          },
+          "parentOrganization": {
+            "@id": "https://digitecme.com/#organization"
+          },
+          "description": "Independent luxury, European and German vehicle workshop in Al Quoz Industrial Area 3, Dubai.",
+          "foundingDate": "2002",
+          "telephone": "+971 4 340 2223",
+          "email": "info@digitecme.com",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Al Quoz Industrial Area 3, Warehouses 11–15",
+            "addressLocality": "Dubai",
+            "addressCountry": "AE"
+          },
+          "areaServed": {
+            "@type": "City",
+            "name": "Dubai"
+          },
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+971 4 340 2223",
+            "contactType": "customer service"
+          },
+          "sameAs": [
+            "https://www.instagram.com/digi_tec/",
+            "https://www.facebook.com/Digitecme/"
+          ],
+          "hasOfferCatalog": {
+            "@id": "https://digitecme.com/#service-catalog"
+          }
+        }
+      ],
+      "services": [
+        {
+          "id": "https://digitecme.com/services/ceramic-coating#service",
+          "name": "Ceramic Coating Dubai",
+          "provider": {
+            "@id": "https://digitecme.com/#business"
+          }
+        }
+      ],
+      "breadcrumbs": [
+        "https://digitecme.com/services/ceramic-coating#breadcrumb"
+      ],
+      "phoneLinks": [
+        "tel:+97143402223"
+      ],
+      "mapLinks": [
+        "https://maps.google.com/?q=Al+Quoz+Industrial+Area+3+Dubai"
+      ],
+      "jsonParseErrors": 0
+    },
+    {
+      "route": "/services/car-polishing-dubai",
+      "title": "Car Polishing &amp; Paint Correction Dubai | DIGI-TEC",
+      "canonical": "https://digitecme.com/services/car-polishing-dubai",
+      "h1": "Car Polishing &amp; Paint Correction Dubai",
+      "businesses": [
+        {
+          "@type": "Organization",
+          "@id": "https://digitecme.com/#organization",
+          "name": "Digi-Tec Performance Center",
+          "alternateName": [
+            "Digi-Tec",
+            "DIGI-TEC",
+            "Digitec"
+          ],
+          "url": "https://digitecme.com/",
+          "email": "info@digitecme.com",
+          "logo": {
+            "@id": "https://digitecme.com/#logo"
+          },
+          "image": {
+            "@id": "https://digitecme.com/#logo"
+          },
+          "sameAs": [
+            "https://www.instagram.com/digi_tec/",
+            "https://www.facebook.com/Digitecme/"
+          ],
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+971 4 340 2223",
+            "contactType": "customer service"
+          }
+        },
+        {
+          "@type": [
+            "AutoRepair",
+            "AutomotiveBusiness"
+          ],
+          "@id": "https://digitecme.com/#business",
+          "name": "Digi-Tec Performance Center",
+          "url": "https://digitecme.com/",
+          "logo": {
+            "@id": "https://digitecme.com/#logo"
+          },
+          "image": {
+            "@id": "https://digitecme.com/#logo"
+          },
+          "parentOrganization": {
+            "@id": "https://digitecme.com/#organization"
+          },
+          "description": "Independent luxury, European and German vehicle workshop in Al Quoz Industrial Area 3, Dubai.",
+          "foundingDate": "2002",
+          "telephone": "+971 4 340 2223",
+          "email": "info@digitecme.com",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Al Quoz Industrial Area 3, Warehouses 11–15",
+            "addressLocality": "Dubai",
+            "addressCountry": "AE"
+          },
+          "areaServed": {
+            "@type": "City",
+            "name": "Dubai"
+          },
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+971 4 340 2223",
+            "contactType": "customer service"
+          },
+          "sameAs": [
+            "https://www.instagram.com/digi_tec/",
+            "https://www.facebook.com/Digitecme/"
+          ],
+          "hasOfferCatalog": {
+            "@id": "https://digitecme.com/#service-catalog"
+          }
+        }
+      ],
+      "services": [
+        {
+          "id": "https://digitecme.com/services/car-polishing-dubai#service",
+          "name": "Car Polishing & Paint Correction Dubai",
+          "provider": {
+            "@id": "https://digitecme.com/#business"
+          }
+        }
+      ],
+      "breadcrumbs": [
+        "https://digitecme.com/services/car-polishing-dubai#breadcrumb"
+      ],
+      "phoneLinks": [
+        "tel:+97143402223"
+      ],
+      "mapLinks": [
+        "https://maps.google.com/?q=Al+Quoz+Industrial+Area+3+Dubai"
+      ],
+      "jsonParseErrors": 0
+    }
+  ],
+  "utmChecks": [
+    {
+      "route": "/services/paint-protection-film",
+      "initial": {
+        "url": "http://127.0.0.1:52864/services/paint-protection-film?utm_source=google&utm_medium=organic&utm_campaign=gbp&utm_content=post_audit",
+        "canonical": "https://digitecme.com/services/paint-protection-film",
+        "attribution": {
+          "landing_page": "http://127.0.0.1:52864/services/paint-protection-film?utm_source=google&utm_medium=organic&utm_campaign=gbp&utm_content=post_audit",
+          "initial_referrer": "direct",
+          "utm_source": "google",
+          "utm_medium": "organic",
+          "utm_campaign": "gbp",
+          "utm_content": "post_audit"
+        }
+      },
+      "after": {
+        "path": "/about",
+        "attribution": {
+          "landing_page": "http://127.0.0.1:52864/services/paint-protection-film?utm_source=google&utm_medium=organic&utm_campaign=gbp&utm_content=post_audit",
+          "initial_referrer": "direct",
+          "utm_source": "google",
+          "utm_medium": "organic",
+          "utm_campaign": "gbp",
+          "utm_content": "post_audit"
+        }
+      },
+      "retained": true,
+      "canonicalClean": true
+    },
+    {
+      "route": "/services/ceramic-coating",
+      "initial": {
+        "url": "http://127.0.0.1:52864/services/ceramic-coating?utm_source=google&utm_medium=organic&utm_campaign=gbp&utm_content=post_audit",
+        "canonical": "https://digitecme.com/services/ceramic-coating",
+        "attribution": {
+          "landing_page": "http://127.0.0.1:52864/services/ceramic-coating?utm_source=google&utm_medium=organic&utm_campaign=gbp&utm_content=post_audit",
+          "initial_referrer": "direct",
+          "utm_source": "google",
+          "utm_medium": "organic",
+          "utm_campaign": "gbp",
+          "utm_content": "post_audit"
+        }
+      },
+      "after": {
+        "path": "/about",
+        "attribution": {
+          "landing_page": "http://127.0.0.1:52864/services/ceramic-coating?utm_source=google&utm_medium=organic&utm_campaign=gbp&utm_content=post_audit",
+          "initial_referrer": "direct",
+          "utm_source": "google",
+          "utm_medium": "organic",
+          "utm_campaign": "gbp",
+          "utm_content": "post_audit"
+        }
+      },
+      "retained": true,
+      "canonicalClean": true
+    },
+    {
+      "route": "/services/car-polishing-dubai",
+      "initial": {
+        "url": "http://127.0.0.1:52864/services/car-polishing-dubai?utm_source=google&utm_medium=organic&utm_campaign=gbp&utm_content=post_audit",
+        "canonical": "https://digitecme.com/services/car-polishing-dubai",
+        "attribution": {
+          "landing_page": "http://127.0.0.1:52864/services/car-polishing-dubai?utm_source=google&utm_medium=organic&utm_campaign=gbp&utm_content=post_audit",
+          "initial_referrer": "direct",
+          "utm_source": "google",
+          "utm_medium": "organic",
+          "utm_campaign": "gbp",
+          "utm_content": "post_audit"
+        }
+      },
+      "after": {
+        "path": "/about",
+        "attribution": {
+          "landing_page": "http://127.0.0.1:52864/services/car-polishing-dubai?utm_source=google&utm_medium=organic&utm_campaign=gbp&utm_content=post_audit",
+          "initial_referrer": "direct",
+          "utm_source": "google",
+          "utm_medium": "organic",
+          "utm_campaign": "gbp",
+          "utm_content": "post_audit"
+        }
+      },
+      "retained": true,
+      "canonicalClean": true
+    }
+  ]
+}

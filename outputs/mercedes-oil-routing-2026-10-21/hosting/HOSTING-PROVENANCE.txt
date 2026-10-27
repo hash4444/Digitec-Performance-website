@@ -1,0 +1,106 @@
+DIGI-TEC — LOCAL HOSTING / DEPLOYMENT PROVENANCE
+21 October 2026. Read-only repository and prior-evidence review.
+Updated with the root investigator's fresh authenticated Cloudflare dashboard captures in this folder and this subtask's fresh public GET/HEAD evidence. Historical observations remain explicitly dated below.
+
+FRESH AUTHENTICATED CLOUDFLARE CONFIGURATION — 21 OCTOBER
+
+The authenticated controlling account is ae62fc81b63f3450e5ab4b63b7b7ece4. Its zone inventory shows digitecme.com Active (Free). Public web DNS records for apex and www are proxied CNAME records targeting dubai-performance-art.lovable.app (cloudflare-web-dns.json). This directly supports Cloudflare proxy -> existing Lovable custom-domain content, not the Sites mirror.
+
+The zone Workers Routes view says no routes configured (cloudflare-zone-worker-routes.txt). The controlling account Workers & Pages inventory says No projects found/none created (cloudflare-secondary-workers.txt). Thus the prepared local Worker is not attached/executing in this observed zone, consistent with public responses. Do not deploy an apex-wide Worker to fix this narrow omission.
+
+Actual active Single Redirects in observed order:
+  1. Legacy Mercedes URLs to Mercedes brand service page.
+     Rule ID dbe42693423442afbc3bab9b993242a7.
+     Exact path set: /services/mercedes-repair-dubai; /services/mercedes-repair-dubai/; /services/mercedes-service-dubai; /best-mercedes-workshop-dubai.
+     Static destination https://digitecme.com/brands/mercedes-benz-service-dubai;301; Preserve query string checked.
+  2. www to primary domain.
+     Rule ID 9781b1ef743f4ffbaadbe5cb3250eeca.
+     Hostname equals www.digitecme.com; destination expression concat("https://digitecme.com", http.request.uri.path);301; Preserve query string checked.
+The exact legacy oil path is absent from these two rules. Root captures:cloudflare-single-redirects.txt;cloudflare-rules-overview.txt;cloudflare-existing-mercedes-rule.txt;cloudflare-existing-www-rule.txt. No edits or saves were performed.
+
+Rules Overview reports no URL Rewrite, Configuration, Origin or Cache Rules. Root also reports no header/compression rules; the underlying dashboard evidence remains in cloudflare-rules-overview.txt. Page Rules view says No Page Rules/0 of3. Fresh Bulk Redirects inventory confirms Lists0 of5. Always Use HTTPS is enabled, and the active Universal certificate covers apex/wildcard (cloudflare-page-rules.txt;cloudflare-edge-https.txt;cloudflare-bulk-redirects.txt).
+
+Fresh Lovable UI/connector evidence confirms the same existing project:is_published=true,ready,editor latest_commit_sha b793ad0acf3cd534217d862a44f2e1d915789ec2, last edit20Oct06:35:48.909Z. Publication UI says Published/Your website is up to date and root observes Publish changes disabled. Domains UI shows digitecme.com Active/Primary with www included. Git UI shows hash4444/Digitec-Performance-website main,Connected,In sync with GitHub. These combined observations establish the current project/domain/publish mechanism more directly than the old runbook. They still do not expose a distinct immutable published-deployment UUID or an executed content rollback. Files:lovable-project-connector.json;lovable-publication-status.txt;lovable-connected-domains.txt;lovable-git-connection.txt. No publication occurred.
+
+Cloudflare Rule simulator was attempted against the exact HTTPS legacy alias GET and returned Authentication error. No trace result was obtained. This limitation is specific to trace simulation; it does not negate the authenticated DNS/rule/order/dashboard configuration already captured. No settings changed and no simulator outcome should be invented.
+
+CURRENT PUBLIC BASELINE — 21 OCTOBER10:23:39 UAE /06:23:39Z
+
+This subtask performed32 GET/HEAD case captures with no final transport errors. Synthetic repeated query fields were used; no actual customer identifiers or mutation requests were sent. Full hops, selected headers, content metadata, SHA256 and raw bodies:live-baseline.json;live-raw/. The first restricted-network attempt failed without remote response; the subsequent approved read-only network run succeeded.
+
+  Apex legacy oil alias and alias/:GET/HEAD200, no Location. GET title/H1/canonical are homepage values, while request URL stays on the alias.
+  Dedicated slash and slashless:GET/HEAD200, relevant oil-service initial SSR, same service title/H1, declared slashless canonical. Whole-body hashes differ, so byte equality is not asserted (dynamic response content is possible).
+  WWW legacy:301 to same apex alias, then200 homepage. HTTP legacy:301 to HTTPS same alias, then200 homepage. Repeated tag fields and synthetic gclid remain unchanged.
+  Existing Mercedes repair alias:301 direct to hub, then200; query preserved.
+  Hub/general oil/article/diagnostics/PPF/tuning:GET/HEAD200 and expected indexable content/self-canonicals.
+  /_redirects:200 application/octet-stream, actual legacy oil mapping present at line162.
+  /_worker.js:200 text/javascript, generated routing program includes that same mapping.
+Those downloaded files are static assets on the observed host; their intended code is not being executed merely because files were published. The absence of an active Single Redirect for oil and the absence of Worker routes explain why the legacy request reaches the Lovable homepage fallback instead of a permanent response.
+
+NARROW DEPLOYMENT / ROLLBACK RECOMMENDATION FROM ACTUAL CONFIGURATION
+
+Prepare ONE new exact-path Single Redirect in the existing zone, before both current rules. Match only GET/HEAD, the apex/www hosts, and the two exact legacy-oil path forms. Use a static HTTPS apex destination for the existing dedicated content owner, permanent status and Preserve query string. The root's proposed artifact determines the final slash strategy; do not add a service-slash normalization rule in this step or redirect the indexed service URL speculatively.
+
+Putting the oil-specific rule first is necessary to prevent the existing WWW catch-all from adding an avoidable hostname hop. Preserve both existing rule bodies,IDs and their relative order. Existing HTTPS processing and rule-phase behavior must be checked against official documentation and verified by post-activation HTTP tests; a local model alone cannot attest edge order on the live service.
+
+Deployment mechanism is the existing Cloudflare zone Single Redirect Rules UI/API, not Worker or content publication. Before an explicitly authorized future activation, retain the current two-rule snapshot and order; create only the reviewed new rule and record its assigned rule ID. Verify the complete live expressions/actions/order, followed by GET/HEAD hops for both schemes/hosts/query variants. No rule ID for the candidate exists because no live change has been made.
+
+Rollback for that routing-only addition: disable only the newly assigned oil rule. Keep the existing Mercedes rule first and WWW rule second relative to one another. If the addition did not edit their bodies/order, disabling restores exactly the observed prior redirect behavior. Do not detach Worker routes, republish Lovable, reset Git or change DNS as rollback. User approval is still required before any activation/rollback action. This procedure is reviewable but deliberately not exercised on production.
+
+The origin content does not change in this plan; no immutable content deployment rollback is needed to undo one newly added edge rule. The currently published Lovable deployment ID/snapshot still requires root's publication-UI verification for provenance, and must not be inferred from editor SHA. This remaining origin audit does not justify a content republish for the routing correction.
+
+PROVEN FROM CURRENT LOCAL FILES
+
+1. Git source repository is https://github.com/hash4444/Digitec-Performance-website.git.
+   Local HEAD b793ad0acf3cd534217d862a44f2e1d915789ec2, dated20 October10:34:48 +0400: Add Mercedes service SEO campaign and About Us video strip.
+   Current remote equality was NOT queried by this subtask. A Git push is not proof of the immutable published source/version.
+
+2. README.md:5,19,65 identifies Lovable project b8255283-fdd9-4c2d-8b46-ccb596f695e1 and the GitHub -> Lovable editor synchronization, with a separate Share -> Publish operation.
+   docs/seo/mercedes-release-deployment.md:5-7 identifies that project as the custom-domain content host and .openai/hosting.json as a separate Sites mirror.
+   .openai/hosting.json contains appgprj_6a95274d6f648191874009d7412c8228 with static.directory=dist. It contains no evidence that it controls digitecme.com.
+   .lovable/mcp/manifest.json is the site's tools manifest (/functions/v1/mcp); it is not deployment or custom-domain configuration.
+
+3. cloudflare/wrangler.production-seo.jsonc is desired local EDGE configuration:
+   name digitec-production-seo-router; main production-seo-router.js;
+   compatibility_date2026-09-16; workers_dev=false;
+   route patterns digitecme.com/* and www.digitecme.com/*, zone_name digitecme.com;
+   observability enabled/head_sampling_rate0.1.
+   No account ID, static-assets binding/directory, service binding or storage configuration is declared.
+   cloudflare/production-seo-router.js:1-5 expressly says it must execute ahead of the origin and is not activated as a Lovable static asset. Its default fetch calls the routing handler and origin fetch guard.
+   The local config does NOT attest a live Worker, route assignment, owning account, current deployment/version, rules precedence or immutable rollback target.
+
+4. No tracked GitHub Actions deployment workflow was listed by git ls-tree for .github. package.json declares builds/validation and no deploy/publish script. Do not invent a Cloudflare Pages or --assets deployment architecture from the presence of dist/ or _worker.js.
+
+PRIOR AUTHENTICATED / PUBLIC OBSERVATIONS, CLEARLY DATED
+
+5. outputs/automotive-release-2026-10-19/deployment/lovable-project-readonly.json:
+   checked19Oct07:32:29Z. Lovable project name Digiec Performance Center L.L.C, is_published=true, ready; latest_commit_sha6180f453feaaf21b8c786f23bb3867a09666ed64. This is editor/preview state. The response had no immutable production deployment ID or published commit selector. It cannot establish21October active content.
+
+6. outputs/automotive-release-2026-10-19/deployment/cloudflare-readonly-index.json and cloudflare-preflight-result.json:
+   GET accounts/zones failed403, Cloudflare code9109 Invalid access token. Snapshot incomplete, origin snapshot incomplete, releaseAllowed=false, zero remote mutations. The associated runbook records dashboard sign-in. These are historical failures; they do not prove current access remains unavailable, so root should make a fresh read-only check.
+
+7. The19October public snapshot documented Server:cloudflare/CF-Ray and route-varying X-Deployment-Id values beginning psr2.cf14717a-af2a-4961-854a-3adf9053a1ef.
+   Those are public application headers, not verified Cloudflare Workers version UUIDs or rollback identifiers. _worker.js/_redirects were downloadable200 assets; unknown routes returned homepage200. This differed from the prepared local router. Public behavior supports a missing/unexecuted intended edge rule, but cannot identify which active service/rule currently handles traffic.
+
+8. outputs/git-push-2026-10-20/PUSH-RESULT.txt expressly records a successful normal Git push to b793ad0 and says no Cloudflare edit, explicit deploy or publisher action. Production publication and integrations were not verified by that task. No automatic publishing behavior is established from that evidence alone.
+
+DEPLOYMENT / ROLLBACK BOUNDARY
+
+9. Existing content publication path documented in the repository is the existing Lovable project Publish operation (or deploy_project against that project), after reviewing the current source snapshot. This routing-only task should not republish content to activate edge configuration, and must not target the Sites mirror.
+
+10. For the proposed narrow correction, root must identify the actual controlling Cloudflare zone/account, active DNS proxy mode, redirect phase/rule order, Worker routes/custom domains and existing edge script/version before choosing a mechanism. A dedicated exact Single/Bulk Redirect rule may allow a smaller rollback than replacing or adding an apex-wide Worker, subject to actual account capabilities and current routing precedence.
+
+11. Repository rollback statements ('detach routes' or 'disable dedicated list') describe a proposed newly scoped rule only. They are not proof that detaching an existing live Worker would preserve current behavior. Never detach or replace an unidentified existing route.
+    For a newly approved exact redirect rule, record and retain the previous complete ruleset snapshot, new rule ID/version and order; rollback removes/disables only that exact new rule and restores prior order if changed. No content rollback should be required for a routing-only correction.
+    If code must change in a verified existing Worker, capture its active deployment/version traffic split, code/assets/bindings/settings/routes first; use its supported version recovery mechanism and retain independently configured rules/routes. An unverified local commit/router ZIP is not a live rollback target.
+
+12. Existing GET-only snapshot collector:
+    outputs/automotive-release-2026-10-19/deployment/snapshot-cloudflare-readonly.mjs
+    It uses an existing environment/normal Wrangler token privately without refreshing/creating credentials; all remote requests are GET, raw settings go to a fresh ignored timestamp.local directory, and incomplete permissions/pagination/drift fail closed. Source inspection confirms no upload/deploy API methods. Root may reuse it for fresh evidence, avoiding disclosure of raw private settings.
+    A successful snapshot still does not provide authorization or a fully downloaded asset backup; its summary explicitly notes retained remote versions are required for rollback. Current origin recovery evidence must come from the actual content host, not fabricated fields.
+
+PRESENT CONCLUSION
+
+Fresh dashboard evidence now resolves the controlling zone/proxy and active redirect mechanism:Cloudflare fronts the Lovable content host, with two active Single Redirects and no configured Worker routes. The oil alias is missing from those active exact rules and falls through to the homepage200; published static routing files do not fix it. The appropriate local candidate is one exact Single Redirect inserted first, preserving the currently indexed service path pending a deliberate canonical decision. Its rollback is disabling only that new rule while retaining the existing two-rule snapshot/order. Actual activation and its success criteria remain unverified until separately authorized deployment and post-activation tests. No ranking recovery follows automatically from this correction.
+
+No source/config edits, credentials refresh, API mutation, commit, push, upload or deployment performed by this subtask.

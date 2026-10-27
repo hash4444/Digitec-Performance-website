@@ -1,0 +1,34 @@
+import { readFile, writeFile } from 'node:fs/promises';
+import { createHash } from 'node:crypto';
+const out=new URL('./',import.meta.url);
+const a=JSON.parse(await readFile(new URL('http-audit.json',out),'utf8'));
+const esc=s=>'"'+String(s??'').replaceAll('"','""')+'"';
+const csv=(heads,rows)=>[heads,...rows].map(r=>r.map(esc).join(',')).join('\n')+'\n';
+const mainHome=a.pages.find(p=>p.url==='https://digitecme.com/');
+const mercedes=a.pages.filter(p=>/mercedes/.test(p.url));
+const indexed=mercedes.filter(p=>!p.robots.some(r=>/noindex/i.test(r)));
+const excluded=mercedes.filter(p=>p.robots.some(r=>/noindex/i.test(r)));
+const semanticLinks=a.linkTargets.map(l=>({...l,content:!new URL(l.url).pathname.startsWith('/cdn-cgi/')&&!/\.[a-z0-9]+$/i.test(new URL(l.url).pathname),semanticPass:l.status===200&&l.canonical?.length===1&&l.canonical[0]===l.url&&!!l.title&&(!l.url.endsWith('/')||new URL(l.url).pathname==='/')}));
+const headingSkips=[];const brokenFragments=[];const faqMismatch=[];const idsDuplicate=[];
+for(const p of a.pages){
+ for(let i=1;i<p.headings.length;i++)if(p.headings[i].level>p.headings[i-1].level+1)headingSkips.push({url:p.url,previous:p.headings[i-1],current:p.headings[i]});
+ const html=await readFile(new URL(p.htmlFile,out),'utf8');
+ const ids=[...html.matchAll(/\bid=["']([^"']*)["']/g)].map(m=>m[1]);
+ for(const [id,count]of Object.entries(ids.reduce((m,id)=>(m[id]=(m[id]||0)+1,m),{})))if(count>1)idsDuplicate.push({url:p.url,id,count});
+ for(const href of p.links.filter(h=>h.startsWith('#')&&h.length>1))if(!ids.includes(href.slice(1)))brokenFragments.push({url:p.url,href});
+ const text=html.replace(/<(script|style)\b[^>]*>[\s\S]*?<\/\1>/gi,'').replace(/<[^>]*>/g,' ').replace(/\s+/g,' ');
+ const faqs=p.nodes.filter(n=>[].concat(n['@type']).includes('FAQPage')).flatMap(n=>n.mainEntity||[]);
+ for(const q of faqs)if(!p.mainText.includes(q.name)||!p.mainText.includes(q.acceptedAnswer?.text))faqMismatch.push({url:p.url,q:q.name,questionPresent:p.mainText.includes(q.name),answerPresent:p.mainText.includes(q.acceptedAnswer?.text)});
+}
+const summary={checkedAt:a.checkedAt,completedAt:a.completedAt,indexableMercedesPages:indexed.length,intendedNoindexArabicModels:excluded.length,sitemapMercedesPages:mercedes.filter(p=>p.sitemapOccurrences===1).length,totalSitemapUrls:a.sitemapCount,sitemapDuplicateUrls:a.sitemapDuplicateUrls,allPageStatus200:a.pages.every(p=>p.status===200),metadataMissing:a.pages.filter(p=>!p.title||p.description.length!==1||!p.description[0]||p.canonical.length!==1||p.canonical[0]!==p.url||p.headings.filter(h=>h.level===1).length!==1).map(p=>p.url),xRobotsHeaders:a.pages.filter(p=>p.headers['x-robots-tag']).map(p=>({url:p.url,value:p.headers['x-robots-tag']})),jsonParseErrors:a.pages.filter(p=>p.jsonErrors.length).map(p=>p.url),exactMainDuplicates:a.pages.filter((p,i)=>a.pages.findIndex(x=>x.textHash===p.textHash)!==i).map(p=>p.url),headingSkips,brokenFragments,idsDuplicate,faqMismatch,faqQuestions:a.pages.flatMap(p=>p.nodes.filter(n=>[].concat(n['@type']).includes('FAQPage')).flatMap(n=>n.mainEntity||[])).length,aliasesTotal:a.aliases.length,aliasesHomepage200:a.aliases.filter(p=>p.status===200&&p.canonical?.[0]===mainHome.url&&p.htmlTextHash===mainHome.textHash).length,aliasesPermanent:a.aliases.filter(p=>[301,308].includes(p.status)&&p.headers.location===p.expectedTarget).length,internalContentDestinations:semanticLinks.filter(l=>l.content).length,internalContentSemanticPass:semanticLinks.filter(l=>l.content&&l.semanticPass).length,internalContentFailures:semanticLinks.filter(l=>l.content&&!l.semanticPass),emailProtectionUtility:semanticLinks.filter(l=>!l.content),imagesTotal:a.pages.reduce((s,p)=>s+p.images.length,0),imagesMissingAlt:a.pages.flatMap(p=>p.images.filter(i=>!i.alt).map(i=>({url:p.url,src:i.src}))),imagesMissingDimensions:a.pages.flatMap(p=>p.images.filter(i=>!i.width||!i.height).map(i=>({url:p.url,src:i.src}))),analyticsMarkupMercedes:mercedes.filter(p=>p.analytics.gtm&&p.analytics.ga4).length};
+await writeFile(new URL('derived-summary.json',out),JSON.stringify(summary,null,2));
+await writeFile(new URL('pages.csv',out),csv(['URL','HTTP','Sitemap occurrences','Title','Description','Canonical','Robots','H1','Main-text characters','HTML evidence'],a.pages.map(p=>[p.url,p.status,p.sitemapOccurrences,p.title,p.description.join('|'),p.canonical.join('|'),p.robots.join('|'),p.headings.filter(h=>h.level===1).map(h=>h.text).join('|'),p.mainText.length,p.htmlFile])));
+await writeFile(new URL('aliases.csv',out),csv(['Requested URL','HTTP','Location','Source intended target','Returned canonical','Title','Same main content as homepage'],a.aliases.map(p=>[p.url,p.status,p.headers.location,p.expectedTarget,p.canonical.join('|'),p.title,p.htmlTextHash===mainHome.textHash])));
+await writeFile(new URL('internal-targets.csv',out),csv(['URL','HTTP','Canonical','Title','Is content URL','Semantic pass','Source page count'],semanticLinks.map(p=>[p.url,p.status,p.canonical?.join('|'),p.title,p.content,p.semanticPass,p.from.length])));
+await writeFile(new URL('redirect-variants.csv',out),csv(['Requested URL','Response chain','Final canonical'],a.variants.map(v=>[v.url,v.chain.map(r=>`${r.status} ${r.headers.location||''}`).join(' -> '),v.chain.at(-1).canonical.join('|')])));
+const hub=a.pages.find(p=>p.url.endsWith('/brands/mercedes-benz-service-dubai')&&!p.url.includes('/ar/'));
+const followUrls=[...new Set(['https://digitecme.com/tuning','https://digitecme.com/_redirects','https://digitecme.com/_worker.js',...hub.scripts.filter(s=>s.startsWith('/assets/')).map(s=>'https://digitecme.com'+s)])];
+const supplements=[];
+for(const [i,url]of followUrls.entries())try{const r=await fetch(url,{redirect:'manual',signal:AbortSignal.timeout(25000)});const b=await r.text();const file=`supplement-${i}.txt`;await writeFile(new URL(file,out),b);supplements.push({url,status:r.status,headers:Object.fromEntries([...r.headers].filter(([k])=>k!=='set-cookie')),file,bytes:b.length,trackingMarkers:['whatsapp_click','whatsapp_chat_opened','telephone_link_clicked','whatsapp_draft_opened','landing_page','initial_referrer'].filter(s=>b.includes(s)),tuningLinks:[...new Set([...b.matchAll(/href=["']([^"']*tuning\/mercedes[^"']*)["']/g)].map(m=>m[1]))]});}catch(e){supplements.push({url,error:e.message})}
+await writeFile(new URL('supplements.json',out),JSON.stringify(supplements,null,2));
+console.log(JSON.stringify({indexable:summary.indexableMercedesPages,noindex:summary.intendedNoindexArabicModels,metadataMissing:summary.metadataMissing.length,headingSkips:headingSkips.length,faqMismatch:faqMismatch.length,faqQuestions:summary.faqQuestions,brokenFragments:brokenFragments.length,aliasesHomepage200:summary.aliasesHomepage200,internalContentDestinations:summary.internalContentDestinations,semanticPass:summary.internalContentSemanticPass,supplements},null,2));

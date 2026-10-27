@@ -1,0 +1,708 @@
+{
+  "checkedAt": "2026-10-20T05:39:27.584Z",
+  "passed": true,
+  "layouts": [
+    {
+      "route": "/services/car-diagnostics-dubai",
+      "width": 1440,
+      "language": "en",
+      "mode": "diagnostics",
+      "passed": true
+    },
+    {
+      "route": "/services/car-diagnostics-dubai",
+      "width": 390,
+      "language": "en",
+      "mode": "diagnostics",
+      "passed": true
+    },
+    {
+      "route": "/services/car-diagnostics-dubai",
+      "width": 320,
+      "language": "en",
+      "mode": "diagnostics",
+      "passed": true
+    },
+    {
+      "route": "/ar/services/car-diagnostics-dubai",
+      "width": 1440,
+      "language": "ar",
+      "mode": "diagnostics",
+      "passed": true
+    },
+    {
+      "route": "/ar/services/car-diagnostics-dubai",
+      "width": 390,
+      "language": "ar",
+      "mode": "diagnostics",
+      "passed": true
+    },
+    {
+      "route": "/ar/services/car-diagnostics-dubai",
+      "width": 320,
+      "language": "ar",
+      "mode": "diagnostics",
+      "passed": true
+    },
+    {
+      "route": "/services/car-ac-repair-dubai",
+      "width": 1440,
+      "language": "en",
+      "mode": "ac",
+      "passed": true
+    },
+    {
+      "route": "/services/car-ac-repair-dubai",
+      "width": 390,
+      "language": "en",
+      "mode": "ac",
+      "passed": true
+    },
+    {
+      "route": "/services/car-ac-repair-dubai",
+      "width": 320,
+      "language": "en",
+      "mode": "ac",
+      "passed": true
+    },
+    {
+      "route": "/ar/services/car-ac-repair-dubai",
+      "width": 1440,
+      "language": "ar",
+      "mode": "ac",
+      "passed": true
+    },
+    {
+      "route": "/ar/services/car-ac-repair-dubai",
+      "width": 390,
+      "language": "ar",
+      "mode": "ac",
+      "passed": true
+    },
+    {
+      "route": "/ar/services/car-ac-repair-dubai",
+      "width": 320,
+      "language": "ar",
+      "mode": "ac",
+      "passed": true
+    },
+    {
+      "route": "/brands/bmw-service-dubai/engine-diagnostics",
+      "width": 1440,
+      "language": "en",
+      "mode": "diagnostics",
+      "passed": true
+    },
+    {
+      "route": "/brands/bmw-service-dubai/engine-diagnostics",
+      "width": 390,
+      "language": "en",
+      "mode": "diagnostics",
+      "passed": true
+    },
+    {
+      "route": "/brands/bmw-service-dubai/engine-diagnostics",
+      "width": 320,
+      "language": "en",
+      "mode": "diagnostics",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/bmw-service-dubai/engine-diagnostics",
+      "width": 1440,
+      "language": "ar",
+      "mode": "diagnostics",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/bmw-service-dubai/engine-diagnostics",
+      "width": 390,
+      "language": "ar",
+      "mode": "diagnostics",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/bmw-service-dubai/engine-diagnostics",
+      "width": 320,
+      "language": "ar",
+      "mode": "diagnostics",
+      "passed": true
+    },
+    {
+      "route": "/brands/porsche-service-dubai/engine-diagnostics",
+      "width": 1440,
+      "language": "en",
+      "mode": "diagnostics",
+      "passed": true
+    },
+    {
+      "route": "/brands/porsche-service-dubai/engine-diagnostics",
+      "width": 390,
+      "language": "en",
+      "mode": "diagnostics",
+      "passed": true
+    },
+    {
+      "route": "/brands/porsche-service-dubai/engine-diagnostics",
+      "width": 320,
+      "language": "en",
+      "mode": "diagnostics",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/porsche-service-dubai/engine-diagnostics",
+      "width": 1440,
+      "language": "ar",
+      "mode": "diagnostics",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/porsche-service-dubai/engine-diagnostics",
+      "width": 390,
+      "language": "ar",
+      "mode": "diagnostics",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/porsche-service-dubai/engine-diagnostics",
+      "width": 320,
+      "language": "ar",
+      "mode": "diagnostics",
+      "passed": true
+    },
+    {
+      "route": "/services/mercedes-ac-repair-dubai",
+      "width": 1440,
+      "language": "en",
+      "mode": "ac",
+      "passed": true
+    },
+    {
+      "route": "/services/mercedes-ac-repair-dubai",
+      "width": 390,
+      "language": "en",
+      "mode": "ac",
+      "passed": true
+    },
+    {
+      "route": "/services/mercedes-ac-repair-dubai",
+      "width": 320,
+      "language": "en",
+      "mode": "ac",
+      "passed": true
+    },
+    {
+      "route": "/ar/services/mercedes-ac-repair-dubai",
+      "width": 1440,
+      "language": "ar",
+      "mode": "ac",
+      "passed": true
+    },
+    {
+      "route": "/ar/services/mercedes-ac-repair-dubai",
+      "width": 390,
+      "language": "ar",
+      "mode": "ac",
+      "passed": true
+    },
+    {
+      "route": "/ar/services/mercedes-ac-repair-dubai",
+      "width": 320,
+      "language": "ar",
+      "mode": "ac",
+      "passed": true
+    },
+    {
+      "route": "/brands/bmw-service-dubai/ac-repair",
+      "width": 1440,
+      "language": "en",
+      "mode": "ac",
+      "passed": true
+    },
+    {
+      "route": "/brands/bmw-service-dubai/ac-repair",
+      "width": 390,
+      "language": "en",
+      "mode": "ac",
+      "passed": true
+    },
+    {
+      "route": "/brands/bmw-service-dubai/ac-repair",
+      "width": 320,
+      "language": "en",
+      "mode": "ac",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/bmw-service-dubai/ac-repair",
+      "width": 1440,
+      "language": "ar",
+      "mode": "ac",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/bmw-service-dubai/ac-repair",
+      "width": 390,
+      "language": "ar",
+      "mode": "ac",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/bmw-service-dubai/ac-repair",
+      "width": 320,
+      "language": "ar",
+      "mode": "ac",
+      "passed": true
+    },
+    {
+      "route": "/brands/volkswagen-service-dubai/ac-repair",
+      "width": 1440,
+      "language": "en",
+      "mode": "ac",
+      "passed": true
+    },
+    {
+      "route": "/brands/volkswagen-service-dubai/ac-repair",
+      "width": 390,
+      "language": "en",
+      "mode": "ac",
+      "passed": true
+    },
+    {
+      "route": "/brands/volkswagen-service-dubai/ac-repair",
+      "width": 320,
+      "language": "en",
+      "mode": "ac",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/volkswagen-service-dubai/ac-repair",
+      "width": 1440,
+      "language": "ar",
+      "mode": "ac",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/volkswagen-service-dubai/ac-repair",
+      "width": 390,
+      "language": "ar",
+      "mode": "ac",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/volkswagen-service-dubai/ac-repair",
+      "width": 320,
+      "language": "ar",
+      "mode": "ac",
+      "passed": true
+    },
+    {
+      "route": "/brands/range-rover-service-dubai/ac-repair",
+      "width": 1440,
+      "language": "en",
+      "mode": "ac",
+      "passed": true
+    },
+    {
+      "route": "/brands/range-rover-service-dubai/ac-repair",
+      "width": 390,
+      "language": "en",
+      "mode": "ac",
+      "passed": true
+    },
+    {
+      "route": "/brands/range-rover-service-dubai/ac-repair",
+      "width": 320,
+      "language": "en",
+      "mode": "ac",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/range-rover-service-dubai/ac-repair",
+      "width": 1440,
+      "language": "ar",
+      "mode": "ac",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/range-rover-service-dubai/ac-repair",
+      "width": 390,
+      "language": "ar",
+      "mode": "ac",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/range-rover-service-dubai/ac-repair",
+      "width": 320,
+      "language": "ar",
+      "mode": "ac",
+      "passed": true
+    }
+  ],
+  "interactions": [
+    {
+      "route": "/services/car-diagnostics-dubai",
+      "heroPanelAndPhone": true,
+      "serviceDraftContext": true,
+      "events": [
+        "whatsapp_chat_opened",
+        "whatsapp_chat_opened",
+        "telephone_link_clicked"
+      ],
+      "noConfirmedEnquiry": true,
+      "passed": true
+    },
+    {
+      "route": "/ar/services/car-diagnostics-dubai",
+      "heroPanelAndPhone": true,
+      "serviceDraftContext": true,
+      "events": [
+        "whatsapp_chat_opened",
+        "whatsapp_chat_opened",
+        "telephone_link_clicked"
+      ],
+      "noConfirmedEnquiry": true,
+      "passed": true
+    },
+    {
+      "route": "/services/car-ac-repair-dubai",
+      "heroPanelAndPhone": true,
+      "serviceDraftContext": true,
+      "events": [
+        "whatsapp_chat_opened",
+        "whatsapp_chat_opened",
+        "telephone_link_clicked"
+      ],
+      "noConfirmedEnquiry": true,
+      "passed": true
+    },
+    {
+      "route": "/ar/services/car-ac-repair-dubai",
+      "heroPanelAndPhone": true,
+      "serviceDraftContext": true,
+      "events": [
+        "whatsapp_chat_opened",
+        "whatsapp_chat_opened",
+        "telephone_link_clicked"
+      ],
+      "noConfirmedEnquiry": true,
+      "passed": true
+    },
+    {
+      "route": "/brands/bmw-service-dubai/engine-diagnostics",
+      "heroPanelAndPhone": true,
+      "serviceDraftContext": true,
+      "events": [
+        "whatsapp_chat_opened",
+        "whatsapp_chat_opened",
+        "telephone_link_clicked"
+      ],
+      "noConfirmedEnquiry": true,
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/bmw-service-dubai/engine-diagnostics",
+      "heroPanelAndPhone": true,
+      "serviceDraftContext": true,
+      "events": [
+        "whatsapp_chat_opened",
+        "whatsapp_chat_opened",
+        "telephone_link_clicked"
+      ],
+      "noConfirmedEnquiry": true,
+      "passed": true
+    },
+    {
+      "route": "/brands/porsche-service-dubai/engine-diagnostics",
+      "heroPanelAndPhone": true,
+      "serviceDraftContext": true,
+      "events": [
+        "whatsapp_chat_opened",
+        "whatsapp_chat_opened",
+        "telephone_link_clicked"
+      ],
+      "noConfirmedEnquiry": true,
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/porsche-service-dubai/engine-diagnostics",
+      "heroPanelAndPhone": true,
+      "serviceDraftContext": true,
+      "events": [
+        "whatsapp_chat_opened",
+        "whatsapp_chat_opened",
+        "telephone_link_clicked"
+      ],
+      "noConfirmedEnquiry": true,
+      "passed": true
+    },
+    {
+      "route": "/services/mercedes-ac-repair-dubai",
+      "heroPanelAndPhone": true,
+      "serviceDraftContext": true,
+      "events": [
+        "whatsapp_chat_opened",
+        "whatsapp_chat_opened",
+        "telephone_link_clicked"
+      ],
+      "noConfirmedEnquiry": true,
+      "passed": true
+    },
+    {
+      "route": "/ar/services/mercedes-ac-repair-dubai",
+      "heroPanelAndPhone": true,
+      "serviceDraftContext": true,
+      "events": [
+        "whatsapp_chat_opened",
+        "whatsapp_chat_opened",
+        "telephone_link_clicked"
+      ],
+      "noConfirmedEnquiry": true,
+      "passed": true
+    },
+    {
+      "route": "/brands/bmw-service-dubai/ac-repair",
+      "heroPanelAndPhone": true,
+      "serviceDraftContext": true,
+      "events": [
+        "whatsapp_chat_opened",
+        "whatsapp_chat_opened",
+        "telephone_link_clicked"
+      ],
+      "noConfirmedEnquiry": true,
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/bmw-service-dubai/ac-repair",
+      "heroPanelAndPhone": true,
+      "serviceDraftContext": true,
+      "events": [
+        "whatsapp_chat_opened",
+        "whatsapp_chat_opened",
+        "telephone_link_clicked"
+      ],
+      "noConfirmedEnquiry": true,
+      "passed": true
+    },
+    {
+      "route": "/brands/volkswagen-service-dubai/ac-repair",
+      "heroPanelAndPhone": true,
+      "serviceDraftContext": true,
+      "events": [
+        "whatsapp_chat_opened",
+        "whatsapp_chat_opened",
+        "telephone_link_clicked"
+      ],
+      "noConfirmedEnquiry": true,
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/volkswagen-service-dubai/ac-repair",
+      "heroPanelAndPhone": true,
+      "serviceDraftContext": true,
+      "events": [
+        "whatsapp_chat_opened",
+        "whatsapp_chat_opened",
+        "telephone_link_clicked"
+      ],
+      "noConfirmedEnquiry": true,
+      "passed": true
+    },
+    {
+      "route": "/brands/range-rover-service-dubai/ac-repair",
+      "heroPanelAndPhone": true,
+      "serviceDraftContext": true,
+      "events": [
+        "whatsapp_chat_opened",
+        "whatsapp_chat_opened",
+        "telephone_link_clicked"
+      ],
+      "noConfirmedEnquiry": true,
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/range-rover-service-dubai/ac-repair",
+      "heroPanelAndPhone": true,
+      "serviceDraftContext": true,
+      "events": [
+        "whatsapp_chat_opened",
+        "whatsapp_chat_opened",
+        "telephone_link_clicked"
+      ],
+      "noConfirmedEnquiry": true,
+      "passed": true
+    }
+  ],
+  "noJavaScript": [
+    {
+      "route": "/services/car-diagnostics-dubai",
+      "passed": true
+    },
+    {
+      "route": "/ar/services/car-diagnostics-dubai",
+      "passed": true
+    },
+    {
+      "route": "/services/car-ac-repair-dubai",
+      "passed": true
+    },
+    {
+      "route": "/ar/services/car-ac-repair-dubai",
+      "passed": true
+    },
+    {
+      "route": "/brands/bmw-service-dubai/engine-diagnostics",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/bmw-service-dubai/engine-diagnostics",
+      "passed": true
+    },
+    {
+      "route": "/brands/porsche-service-dubai/engine-diagnostics",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/porsche-service-dubai/engine-diagnostics",
+      "passed": true
+    },
+    {
+      "route": "/services/mercedes-ac-repair-dubai",
+      "passed": true
+    },
+    {
+      "route": "/ar/services/mercedes-ac-repair-dubai",
+      "passed": true
+    },
+    {
+      "route": "/brands/bmw-service-dubai/ac-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/bmw-service-dubai/ac-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/volkswagen-service-dubai/ac-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/volkswagen-service-dubai/ac-repair",
+      "passed": true
+    },
+    {
+      "route": "/brands/range-rover-service-dubai/ac-repair",
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/range-rover-service-dubai/ac-repair",
+      "passed": true
+    }
+  ],
+  "spaLinks": [
+    {
+      "from": "/services/car-diagnostics-dubai",
+      "to": "/services/mercedes-diagnostics-dubai",
+      "passed": true
+    },
+    {
+      "from": "/ar/services/car-diagnostics-dubai",
+      "to": "/ar/services/mercedes-diagnostics-dubai",
+      "passed": true
+    },
+    {
+      "from": "/services/car-ac-repair-dubai",
+      "to": "/services/mercedes-ac-repair-dubai",
+      "passed": true
+    },
+    {
+      "from": "/ar/services/car-ac-repair-dubai",
+      "to": "/ar/services/mercedes-ac-repair-dubai",
+      "passed": true
+    },
+    {
+      "from": "/brands/bmw-service-dubai/engine-diagnostics",
+      "to": "/brands/bmw-service-dubai/mechanical-repair",
+      "passed": true
+    },
+    {
+      "from": "/ar/brands/bmw-service-dubai/engine-diagnostics",
+      "to": "/ar/brands/bmw-service-dubai/mechanical-repair",
+      "passed": true
+    },
+    {
+      "from": "/brands/porsche-service-dubai/engine-diagnostics",
+      "to": "/brands/porsche-service-dubai/mechanical-repair",
+      "passed": true
+    },
+    {
+      "from": "/ar/brands/porsche-service-dubai/engine-diagnostics",
+      "to": "/ar/brands/porsche-service-dubai/mechanical-repair",
+      "passed": true
+    },
+    {
+      "from": "/services/mercedes-ac-repair-dubai",
+      "to": "/services/mercedes-diagnostics-dubai",
+      "passed": true
+    },
+    {
+      "from": "/ar/services/mercedes-ac-repair-dubai",
+      "to": "/ar/services/mercedes-diagnostics-dubai",
+      "passed": true
+    },
+    {
+      "from": "/brands/bmw-service-dubai/ac-repair",
+      "to": "/brands/bmw-service-dubai/engine-diagnostics",
+      "passed": true
+    },
+    {
+      "from": "/ar/brands/bmw-service-dubai/ac-repair",
+      "to": "/ar/brands/bmw-service-dubai/engine-diagnostics",
+      "passed": true
+    },
+    {
+      "from": "/brands/volkswagen-service-dubai/ac-repair",
+      "to": "/brands/volkswagen-service-dubai/engine-diagnostics",
+      "passed": true
+    },
+    {
+      "from": "/ar/brands/volkswagen-service-dubai/ac-repair",
+      "to": "/ar/brands/volkswagen-service-dubai/engine-diagnostics",
+      "passed": true
+    },
+    {
+      "from": "/brands/range-rover-service-dubai/ac-repair",
+      "to": "/brands/range-rover-service-dubai/engine-diagnostics",
+      "passed": true
+    },
+    {
+      "from": "/ar/brands/range-rover-service-dubai/ac-repair",
+      "to": "/ar/brands/range-rover-service-dubai/engine-diagnostics",
+      "passed": true
+    }
+  ],
+  "screenshots": [
+    "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\qa\\diagnostics-ac-browser\\services__car-diagnostics-dubai-390.png",
+    "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\qa\\diagnostics-ac-browser\\ar__services__car-diagnostics-dubai-390.png",
+    "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\qa\\diagnostics-ac-browser\\services__car-ac-repair-dubai-390.png",
+    "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\qa\\diagnostics-ac-browser\\ar__services__car-ac-repair-dubai-390.png",
+    "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\qa\\diagnostics-ac-browser\\brands__bmw-service-dubai__engine-diagnostics-390.png",
+    "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\qa\\diagnostics-ac-browser\\ar__brands__bmw-service-dubai__engine-diagnostics-390.png",
+    "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\qa\\diagnostics-ac-browser\\brands__porsche-service-dubai__engine-diagnostics-390.png",
+    "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\qa\\diagnostics-ac-browser\\ar__brands__porsche-service-dubai__engine-diagnostics-390.png",
+    "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\qa\\diagnostics-ac-browser\\services__mercedes-ac-repair-dubai-390.png",
+    "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\qa\\diagnostics-ac-browser\\ar__services__mercedes-ac-repair-dubai-390.png",
+    "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\qa\\diagnostics-ac-browser\\brands__bmw-service-dubai__ac-repair-390.png",
+    "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\qa\\diagnostics-ac-browser\\ar__brands__bmw-service-dubai__ac-repair-390.png",
+    "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\qa\\diagnostics-ac-browser\\brands__volkswagen-service-dubai__ac-repair-390.png",
+    "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\qa\\diagnostics-ac-browser\\ar__brands__volkswagen-service-dubai__ac-repair-390.png",
+    "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\qa\\diagnostics-ac-browser\\brands__range-rover-service-dubai__ac-repair-390.png",
+    "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\qa\\diagnostics-ac-browser\\ar__brands__range-rover-service-dubai__ac-repair-390.png"
+  ],
+  "failures": [],
+  "runtimeErrors": [],
+  "failedLocalResponses": [],
+  "blockedExternalRequests": 0,
+  "blockedWriteRequests": 0,
+  "safety": "Only loopback GET/HEAD are allowed. WhatsApp/tel navigation is prevented, window.open is stubbed and no customer message, call or form submission is sent."
+}

@@ -1,0 +1,26 @@
+import {spawnSync} from 'node:child_process';
+import {mkdir,readFile,writeFile,copyFile,symlink,stat} from 'node:fs/promises';
+import {createHash} from 'node:crypto';
+import path from 'node:path';
+const workspace=process.cwd();
+const out=path.resolve('outputs/automotive-release-2026-10-19');
+const candidate=path.join(out,'candidate.local');
+await mkdir(`${out}/baseline`,{recursive:true});
+const run=(args)=>{const r=spawnSync('git',args,{cwd:workspace,windowsHide:true,maxBuffer:64*1024*1024});if(r.status!==0)throw Error(`git ${args[0]} failed: ${r.stderr}`);return r.stdout;};
+const base=run(['rev-parse','HEAD']).toString().trim();
+if(base!=='6180f453feaaf21b8c786f23bb3867a09666ed64')throw Error('Unexpected base: re-audit remote before candidate creation');
+const five=JSON.parse(await readFile('outputs/five-brand-service-2026-10-19/modified-files.json','utf8')).sourceAndTestFiles;
+const repair=JSON.parse(await readFile('outputs/repair-service-2026-10-19/modified-files.json','utf8'));
+const selected=[...five.map(r=>r.file),...repair.changed.map(r=>r.file),...repair.added];
+if(new Set(selected).size!==11)throw Error('Expected eleven unique reviewed files');
+const sha=b=>createHash('sha256').update(b).digest('hex');
+const before={base,branch:run(['branch','--show-current']).toString().trim(),status:run(['status','--porcelain=v1']).toString(),files:[]};
+const all=run(['ls-files','--cached','--others','--exclude-standard','-z']).toString().split('\0').filter(Boolean).filter(p=>!p.startsWith('outputs/automotive-release-2026-10-19/'));
+for(const file of all){try{const data=await readFile(file);before.files.push({file,sha256:sha(data)});}catch(e){if(e.code!=='EISDIR')throw e;}}
+await writeFile(`${out}/baseline/workspace-manifest.json`,JSON.stringify(before,null,2));
+await writeFile(`${out}/baseline/pre-existing.patch`,run(['diff','--binary']));
+const archivePaths=['src','public','scripts','cloudflare','.lovable','.env','.gitignore','package.json','package-lock.json','index.html','vite.config.ts','tsconfig.json','tsconfig.app.json','tsconfig.node.json','tailwind.config.ts','postcss.config.js','components.json','eslint.config.js','docs/seo','outputs/t1/baseline/tuningCars.ts','outputs/b0-a/baseline/cloudflare'];
+run(['archive','--format=zip',`--output=${path.join(out,'baseline','remote-base-source.zip')}`,base,'--',...archivePaths]);
+await mkdir(candidate,{recursive:true});
+await writeFile(`${out}/candidate-plan.json`,JSON.stringify({preparedAt:new Date().toISOString(),base,candidate,archive:path.join(out,'baseline/remote-base-source.zip'),selected,archivePaths},null,2));
+console.log(JSON.stringify({base,candidate,selectedFiles:selected.length,preservedOriginalFiles:before.files.length,archiveReady:true}));

@@ -1,0 +1,31 @@
+import fs from 'node:fs/promises';
+import path from 'node:path';
+import crypto from 'node:crypto';
+import {fileURLToPath} from 'node:url';
+const root=path.dirname(fileURLToPath(import.meta.url));
+const report=path.resolve(root,'..');
+const bytes=await fs.readFile(path.join(report,'browser/prior-pattern-same-tab-replay.json'));
+const replay=JSON.parse(bytes),sha=b=>crypto.createHash('sha256').update(b).digest('hex');
+const commonBefore=sha(await fs.readFile(path.join(root,'passive-journey-analysis.json')));
+const source=JSON.parse(await fs.readFile(path.join(root,'source-and-build-evidence.json')));
+const result={createdAt:new Date().toISOString(),design:replay.design,sourceFile:'../browser/prior-pattern-same-tab-replay.json',sourceSha256:sha(bytes),commonAnalysisSha256:commonBefore,scope:'Separate one-fresh-tab sequential baseline3/A3/B3 replay; do not combine with the three-tab alternating run as independent devices or browser engines.',options:[],fullNativeLogs:replay.fullNativeLogs};
+const labels={baseline:'baseline',candidate:'A','release-b':'B'};
+for(const file of (await fs.readdir(path.join(root,'runs'))).filter(x=>x.endsWith('.ndjson')).sort()){
+ const raw=await fs.readFile(path.join(root,'runs',file));const rows=raw.toString().trim().split('\n').filter(Boolean).map(x=>JSON.parse(x));const option=rows[0]?.serverOption,label=labels[option];
+ const seq=replay.sequences.filter(x=>x.label===label);if(!seq.length)continue;
+ const start=seq[0].startedAt,end=seq.at(-1).finishedAt;
+ const events=rows.filter(x=>x.type==='browser-event'&&x.event.clientAt>=start&&x.event.clientAt<=end);
+ const snapshot=path.join(root,'runs',`${option}-prior-pattern.snapshot.json`);
+ await fs.writeFile(snapshot,JSON.stringify({sourceLog:file,sourceLogSha256AtCapture:sha(raw),window:{start,end},events},null,2)+'\n');
+ const byKind={};for(const x of events)byKind[x.event.kind]=(byKind[x.event.kind]||0)+1;
+ const exceptions=events.filter(x=>['window-error','unhandled-rejection','console-error','observe-invalid-target','observe-native-exception'].includes(x.event.kind));
+ const resources=events.filter(x=>x.event.kind==='resource-error');
+ const unexpected=resources.filter(x=>!/^https:\/\/www\.googletagmanager\.com\/(gtm\.js|gtag\/js)/.test(x.event.detail.target?.src||''));
+ const steps=replay.steps.filter(x=>x.label===label);
+ const build=source.builds.find(x=>x.label===option);
+ result.options.push({option,label,start,end,sequences:seq.length,steps:steps.length,build:{manifestSha256:build.manifestSha256,entry:build.entry.file,hub:build.brand.file,body:build.body.file},snapshot:path.relative(root,snapshot).replaceAll('\\','/'),byKind,inPageExceptionCount:exceptions.length,exceptions,nativeLogCount:steps.flatMap(x=>x.nativeLogs||[]).length,unexpectedResourceErrors:unexpected,rounds:seq.map(s=>({...s,inPageExceptions:exceptions.filter(x=>x.event.clientAt>=s.startedAt&&x.event.clientAt<=s.finishedAt),nativeLogs:steps.filter(x=>x.repeat===s.repeat).flatMap(x=>x.nativeLogs||[])}))});
+}
+result.totalSequences=result.options.reduce((n,x)=>n+x.sequences,0);result.totalSteps=result.options.reduce((n,x)=>n+x.steps,0);
+result.commonAnalysisRemainsUnchanged=sha(await fs.readFile(path.join(root,'passive-journey-analysis.json')))===commonBefore;
+await fs.writeFile(path.join(root,'prior-pattern-analysis.json'),JSON.stringify(result,null,2)+'\n');
+console.log(JSON.stringify({options:result.options.map(x=>({option:x.option,sequences:x.sequences,steps:x.steps,exceptions:x.inPageExceptionCount,nativeLogs:x.nativeLogCount,resourceErrors:x.byKind['resource-error'],csp:x.byKind['csp-block'],unexpectedResourceErrors:x.unexpectedResourceErrors.length})),commonAnalysisRemainsUnchanged:result.commonAnalysisRemainsUnchanged},null,2));

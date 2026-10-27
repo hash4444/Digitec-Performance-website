@@ -1,0 +1,296 @@
+Browser tab: 5, Title: "Rules | Overview | digitecme.com | Mebms2000@gmail.com's Account | Cloudflare", URL: "https://dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/rules/overview".
+1 AXWebArea Rules | Overview | digitecme.com | Mebms2000@gmail.com's Account | Cloudflare, URL: dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/rules/overview
+	2 container
+		3 container react-app
+			4 container
+				5 link Description: Cloudflare home, Value: dash.cloudflare.com/
+				6 pop up button (collapsed) Description: Switch Account, ID: base-ui-:r4n:, Secondary Actions: Expand
+					7 text Mebms2000@gmail.com's Account
+					8 image
+				9 container
+					10 button Quick search...
+						11 image
+						12 text Quick search...
+						13 container
+							14 text Ctrl  K
+					15 link Description: Back to Domains, Value: dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/domains/overview
+					16 content list
+						17 link Description: Overview, Value: dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/
+						18 button (collapsed) Description: Recents, Secondary Actions: Expand
+							19 text Recents
+							20 image
+						21 button (collapsed) AI Crawl Control, Secondary Actions: Expand
+							22 text AI Crawl Control
+							23 image
+						24 button (collapsed) Agent Readiness, Secondary Actions: Expand
+							25 text Agent Readiness
+							26 image
+						27 link Description: Analytics, Value: dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/analytics
+						28 button (collapsed) Observability New, Secondary Actions: Expand
+							29 image
+							30 text Observability
+							31 text New
+							32 image
+						33 button (collapsed) DNS, Secondary Actions: Expand
+							34 text DNS
+							35 image
+						36 button (collapsed) Email, Secondary Actions: Expand
+							37 text Email
+							38 image
+						39 button (collapsed) SSL/TLS, Secondary Actions: Expand
+							40 text SSL/TLS
+							41 image
+						42 button (collapsed) Security, Secondary Actions: Expand
+							43 text Security
+							44 image
+						45 link Description: Access, Value: dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/access
+						46 button (collapsed) Speed, Secondary Actions: Expand
+							47 text Speed
+							48 image
+						49 button (collapsed) Caching, Secondary Actions: Expand
+							50 text Caching
+							51 image
+						52 link Description: Workers Routes, Value: dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/workers
+						53 container
+							54 button (expanded) Rules, Secondary Actions: Collapse
+								55 text Rules
+								56 image
+							57 content list
+								58 link Description: Overview, Value: dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/rules/overview
+								59 link Description: Redirect Rules, Value: dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/rules/redirect-rules
+								60 link Description: Rule simulator Beta, Value: dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/rules/simulator
+								61 link Description: Snippets, Value: dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/rules/snippets
+								62 link Description: Cloud Connector Beta, Value: dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/rules/cloud-connector
+								63 link Description: Page Rules, Value: dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/rules/page-rules
+								64 link Description: Settings, Value: dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/rules/settings
+						65 link Description: Error Pages New, Value: dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/error-pages
+						66 link Description: Network, Value: dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/network
+						67 button (collapsed) Traffic, Secondary Actions: Expand
+							68 text Traffic
+							69 image
+					70 content list
+						71 button (collapsed) Manage account, Secondary Actions: Expand
+							72 text Manage account
+							73 image
+				74 button (expanded) Description: Collapse sidebar, ID: base-ui-:rm:, Secondary Actions: Collapse
+			75 container
+				76 checkbox Description: Star domain, Value: 0, ID: base-ui-:r4j:
+					77 image
+				78 container base-ui-:r4l:
+					79 text digitecme.com
+					80 text free
+					81 image
+				82 container breadcrumb
+					83 container
+						84 image
+						85 text Overview
+				86 button Ask AI
+					87 image
+					88 text Ask AI
+				89 link Description: Support, Value: dash.cloudflare.com/?to=/:account/support
+				90 pop up button (collapsed) Description: User menu, ID: base-ui-:rq:, Secondary Actions: Expand
+					91 image
+			92 container
+				93 image
+				94 heading Overview, Value: 1
+					95 text Overview
+				96 text Modify HTTP requests and responses, perform URL redirects, configure Cloudflare settings and trigger actions for matching requests. Rules are evaluated and executed in order, from first to last. If multiple rules make the same modification, the last executed rule wins.
+				97 button Description: Traffic sequence, ID: base-ui-:r4s:
+					98 image
+				99 link Description: Documentation, Value: developers.cloudflare.com/rules/
+				100 pop up button (collapsed) Create rule, ID: base-ui-:r50:, Secondary Actions: Expand
+					101 image
+					102 text Create rule
+				103 toolbar
+					104 container
+						105 image
+						106 text field (settable) Description: Search by id or rule name, ID: :r52:
+					107 combo box (collapsed) Description: Type: Show all rule types, Value: Show all rule types, ID: base-ui-:r55:, Secondary Actions: Expand
+						108 text Show all rule types
+					109 combo box (collapsed) Description: Status: Show all, Value: Show all, ID: base-ui-:r59:, Secondary Actions: Expand
+						110 text Show all
+				111 button Templates
+				112 pop up button (collapsed) URL Rewrite Rules, ID: base-ui-:r5g:, Secondary Actions: Expand
+				113 button Create rule
+				114 text No URL Rewrite Rules created
+				115 pop up button (collapsed) Redirect Rules, ID: base-ui-:r60:, Secondary Actions: Expand
+				116 pop up button (collapsed) 7 active, ID: base-ui-:rjp:, Secondary Actions: Expand
+				117 button Create rule
+				118 container Redirect Rules
+					119 table Redirect Rules
+						120 row
+							121 cell
+								122 text Order
+							123 cell
+								124 text Name
+							125 cell
+								126 text Match against
+							127 cell
+								128 text Action
+							129 cell
+								130 text Status
+							131 cell
+								132 pop up button (collapsed) Description: Edit columns, ID: base-ui-:rjt:, Secondary Actions: Expand
+									133 image
+						134 row
+							135 cell
+								136 sortable Drag row
+									137 image
+							138 cell
+								139 text 1
+							140 cell
+								141 link Description: Mercedes oil change legacy URLs to existing service, Value: dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/rules/redirect-rules/5addb0c068414fb5b985a869ded26c68
+							142 cell
+								143 text Hostname is in digitecme.com, www.digitecme.com, Request Method is in GET, HEAD, URI Path is in /brands/mercedes-benz-service-dubai/oil-change, /brands/mercedes-benz-service-dubai/oil-change/
+							144 cell
+								145 text 308 redirect to https://digitecme.com/services/mercedes-oil-change-dubai
+							146 cell
+								147 text Active
+							148 cell
+								149 pop up button (collapsed) Description: Menu, ID: base-ui-:rk2:, Secondary Actions: Expand
+									150 image
+						151 row
+							152 cell
+								153 sortable Drag row
+									154 image
+							155 cell
+								156 text 2
+							157 cell
+								158 link Description: Legacy Mercedes URLs to Mercedes brand service page, Value: dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/rules/redirect-rules/dbe42693423442afbc3bab9b993242a7
+							159 cell
+								160 text URI Path is in /services/mercedes-repair-dubai, /services/mercedes-repair-dubai/, /services/mercedes-service-dubai, /best-mercedes-workshop-dubai
+							161 cell
+								162 text 301 redirect to https://digitecme.com/brands/mercedes-benz-service-dubai
+							163 cell
+								164 text Active
+							165 cell
+								166 pop up button (collapsed) Description: Menu, ID: base-ui-:rk7:, Secondary Actions: Expand
+									167 image
+						168 row
+							169 cell
+								170 sortable Drag row
+									171 image
+							172 cell
+								173 text 3
+							174 cell
+								175 link Description: Mercedes Arabic oil legacy alias to existing service, Value: dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/rules/redirect-rules/b835ca6b88b448d6809f01271dba491b
+							176 cell
+								177 text Hostname is in digitecme.com, www.digitecme.com, Request Method is in GET, HEAD, URI Path is in /ar/brands/mercedes-benz-service-dubai/oil-change, /ar/brands/mercedes-benz-service-dubai/oil-change/
+							178 cell
+								179 text 308 redirect to https://digitecme.com/ar/services/mercedes-oil-change-dubai
+							180 cell
+								181 text Active
+							182 cell
+								183 pop up button (collapsed) Description: Menu, ID: base-ui-:rkc:, Secondary Actions: Expand
+									184 image
+						185 row
+							186 cell
+								187 sortable Drag row
+									188 image
+							189 cell
+								190 text 4
+							191 cell
+								192 link Description: Mercedes body repair legacy alias to existing service, Value: dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/rules/redirect-rules/5fafd20389964771885d8d1194f01d77
+							193 cell
+								194 text Hostname is in digitecme.com, www.digitecme.com, Request Method is in GET, HEAD, URI Path is in /brands/mercedes-benz-service-dubai/body-repair, /brands/mercedes-benz-service-dubai/body-repair/
+							195 cell
+								196 text 308 redirect to https://digitecme.com/services/mercedes-body-repair-dubai
+							197 cell
+								198 text Active
+							199 cell
+								200 pop up button (collapsed) Description: Menu, ID: base-ui-:rkh:, Secondary Actions: Expand
+									201 image
+						202 row
+							203 cell
+								204 sortable Drag row
+									205 image
+							206 cell
+								207 text 5
+							208 cell
+								209 link Description: Mercedes Arabic battery legacy alias to existing service, Value: dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/rules/redirect-rules/239ab46545704096bec2628d8eedf9b9
+							210 cell
+								211 text Hostname is in digitecme.com, www.digitecme.com, Request Method is in GET, HEAD, URI Path is in /ar/brands/mercedes-benz-service-dubai/battery-replacement, /ar/brands/mercedes-benz-service-dubai/battery-replacement/
+							212 cell
+								213 text 308 redirect to https://digitecme.com/ar/services/mercedes-battery-replacement-dubai
+							214 cell
+								215 text Active
+							216 cell
+								217 pop up button (collapsed) Description: Menu, ID: base-ui-:rkm:, Secondary Actions: Expand
+									218 image
+						219 row
+							220 cell
+								221 sortable Drag row
+									222 image
+							223 cell
+								224 text 6
+							225 cell
+								226 link Description: Mercedes Arabic mechanical legacy alias to existing service, Value: dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/rules/redirect-rules/2873f5b6de04417d8a486b22cc878835
+							227 cell
+								228 text Hostname is in digitecme.com, www.digitecme.com, Request Method is in GET, HEAD, URI Path is in /ar/brands/mercedes-benz-service-dubai/mechanical-repair, /ar/brands/mercedes-benz-service-dubai/mechanical-repair/
+							229 cell
+								230 text 308 redirect to https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai
+							231 cell
+								232 text Active
+							233 cell
+								234 pop up button (collapsed) Description: Menu, ID: base-ui-:rkr:, Secondary Actions: Expand
+									235 image
+						236 row
+							237 cell
+								238 sortable Drag row
+									239 image
+							240 cell
+								241 text 7
+							242 cell
+								243 link Description: www to primary domain, Value: dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/rules/redirect-rules/9781b1ef743f4ffbaadbe5cb3250eeca
+							244 cell
+								245 text Hostname equals www.digitecme.com
+							246 cell
+								247 text 301 redirect to concat("https://digitecme.com", http.request.uri.path)
+							248 cell
+								249 text Active
+							250 cell
+								251 pop up button (collapsed) Description: Menu, ID: base-ui-:rl0:, Secondary Actions: Expand
+									252 image
+				253 button Go to Bulk Redirects
+					254 text Go to Bulk Redirects
+					255 image
+				256 pop up button (collapsed) Configuration Rules, ID: base-ui-:r6g:, Secondary Actions: Expand
+				257 button Create rule
+				258 text No Configuration Rules created
+				259 pop up button (collapsed) Origin Rules, ID: base-ui-:r70:, Secondary Actions: Expand
+				260 button Create rule
+				261 text No Origin Rules created
+				262 pop up button (collapsed) Request Header Transform Rules, ID: base-ui-:r7g:, Secondary Actions: Expand
+				263 button Create rule
+				264 text No Request Header Transform Rules created
+				265 button Go to Managed Transforms
+					266 text Go to Managed Transforms
+					267 image
+				268 pop up button (collapsed) Cache Rules, ID: base-ui-:r80:, Secondary Actions: Expand
+				269 button Create rule
+				270 text No Cache Rules created
+				271 pop up button (collapsed) Cache Response Rules, ID: base-ui-:r8g:, Secondary Actions: Expand
+				272 button Create rule
+				273 text No Cache Response Rules created
+				274 pop up button (collapsed) Response Header Transform Rules, ID: base-ui-:r90:, Secondary Actions: Expand
+				275 button Create rule
+				276 text No Response Header Transform Rules created
+				277 button Go to Managed Transforms
+					278 text Go to Managed Transforms
+					279 image
+				280 pop up button (collapsed) Compression Rules, ID: base-ui-:r9g:, Secondary Actions: Expand
+				281 button Create rule
+				282 text No Compression Rules created
+			283 content list
+				284 link Description: Support, Value: support.cloudflare.com/
+				285 link Description: System Status, Value: cloudflarestatus.com/
+				286 link Description: Careers, Value: cloudflare.com/careers/
+				287 link Description: Terms of Use, Value: cloudflare.com/website-terms/
+				288 link Description: Report Security Issues, Value: cloudflare.com/disclosure/
+				289 link Description: Privacy Policy, Value: cloudflare.com/privacypolicy/
+				290 button Cookie Preferences, ID: ot-sdk-btn
+				291 container
+					292 text ©  2026  Cloudflare, Inc.
+		293 container Notifications
+
+The focused UI element is 1 AXWebArea Rules | Overview | digitecme.com | Mebms2000@gmail.com's Account | Cloudflare, URL: dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/rules/overview

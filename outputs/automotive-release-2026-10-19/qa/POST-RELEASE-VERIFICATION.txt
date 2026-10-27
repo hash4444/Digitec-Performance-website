@@ -1,0 +1,66 @@
+DIGI-TEC automotive SEO release: verification after an authorized deployment
+Prepared 19 October 2026. This is an execution checklist; these live checks have not been performed for an undeployed candidate.
+
+Before deployment
+[ ] Record the release candidate source/build manifest SHA-256, exact remote Git revision, Cloudflare project/Worker target, active deployment/version ID, deployment timestamp and route configuration.
+[ ] Compare the active production version with the snapshot captured during preparation. STOP if it changed; rebuild/reconcile against the latest production source and rerun QA.
+[ ] Preserve the active content artifact/version and exact supported rollback operation. Record the origin and Cloudflare edge as a recovery pair; do not assume a Pages project or static-assets Worker exists.
+[ ] Confirm explicit authorization for the exact source manifest and deployment targets. Confirm rollback operator and monitoring owner.
+
+Route inventory: check each English URL below AND its /ar counterpart
+Five optimized brand hubs
+https://digitecme.com/brands/rolls-royce-service-dubai
+https://digitecme.com/brands/lamborghini-service-dubai
+https://digitecme.com/brands/volkswagen-service-dubai
+https://digitecme.com/brands/mercedes-benz-service-dubai
+https://digitecme.com/brands/bmw-service-dubai
+
+Ten optimized repair owners
+https://digitecme.com/services/mercedes-mechanical-repair-dubai
+https://digitecme.com/services/mercedes-suspension-repair-dubai
+https://digitecme.com/services/mercedes-diagnostics-dubai
+https://digitecme.com/services/mercedes-transmission-repair-dubai
+https://digitecme.com/brands/bmw-service-dubai/transmission-repair
+https://digitecme.com/brands/bmw-service-dubai/mechanical-repair
+https://digitecme.com/brands/rolls-royce-service-dubai/mechanical-repair
+https://digitecme.com/brands/rolls-royce-service-dubai/suspension-repair
+https://digitecme.com/brands/lamborghini-service-dubai/transmission-repair
+https://digitecme.com/brands/lamborghini-service-dubai/mechanical-repair
+
+Preserved adjacent diagnostic owner
+https://digitecme.com/brands/lamborghini-service-dubai/engine-diagnostics
+
+For every route and Arabic counterpart
+[ ] GET and HEAD return HTTP 200 at the canonical slashless URL; raw HTML contains the expected title, one description, one H1, service content, FAQ answers, contact links and diagnostic process where selected.
+[ ] Reload and direct deep links render the correct page. Test with JavaScript disabled as well as hydrated mobile rendering.
+[ ] Canonical is the corresponding https://digitecme.com URL; English/Arabic reciprocal en-AE and ar-AE alternates and English x-default have one entry each.
+[ ] Robots metadata and response headers permit indexing; robots.txt permits crawling. No inherited noindex or preview-only directives.
+[ ] English and Arabic text, lang/dir attributes and phone digit direction are correct. No horizontal overflow at 390px and 320px widths; touch CTAs remain visible and usable.
+[ ] Service, BreadcrumbList and FAQPage JSON-LD parse. One Service owner, unique IDs, provider https://digitecme.com/#business; established shared entity graph unchanged. FAQ markup matches visible/crawlable answers.
+[ ] Brand hubs link directly to intended repair owners; repair quote panels link to direct, indexable localized targets.
+[ ] Check trailing slashes and legacy aliases against the captured production behavior, including query preservation and redirect chains. Record any 404/noindex failure on an invented route. The current unknown-path and /ppf homepage-200 behavior is a pre-existing production discrepancy: preserve the recorded baseline and escalate separately; do not activate the local edge router as part of this content release.
+[ ] Check SPA navigation, back/forward, language switch and reload; head metadata and route-specific schema are replaced correctly without duplicates.
+
+Sitemap and protected areas
+[ ] https://digitecme.com/sitemap.xml returns XML and includes the 30 selected canonical locale URLs and preserved diagnostic counterparts, with no duplicate or invented keyword routes.
+[ ] https://digitecme.com/robots.txt points to the intended sitemap and has no release block.
+[ ] Recheck published PPF, ceramic and polishing English/Arabic pages, associated assets, forms, schema and redirects against the saved pre-release production baseline.
+[ ] Recheck tuning configurator, source package values, publication safeguards, nine model owners, master links and canonical/FAQ behavior. Confirm unrelated backend and Cloudflare routes/settings are unchanged.
+
+Contact and quotation behavior
+[ ] Inspect tel:+97143402223 and https://wa.me/97143402223 targets on mobile and desktop without initiating a call or sending a message.
+[ ] Validate empty/invalid booking fields and the optional name/phone flow. Verify brand/service, model/year/mileage, symptoms/history and preferred appointment context in the generated draft.
+[ ] The page explains that WhatsApp still requires Send and the draft does not confirm receipt or an appointment.
+[ ] Confirm analytics emits interest/draft events only, excludes private form text and phone values, and does not count contact clicks as confirmed enquiries.
+[ ] A real enquiry/delivery test requires separate explicit authorization and an agreed test contact/CRM workflow; record actual receipt separately from clicks or draft generation.
+
+Google Search Console URL Inspection (manual authorized account access)
+[ ] Use URL Inspection for all 30 selected locale URLs, prioritizing the strongest measured opportunities. Record last crawl, indexing allowed, user-declared canonical and Google-selected canonical.
+[ ] Run Test Live URL for representative English/Arabic hub and repair pages; inspect rendered HTML, screenshot and resource failures. Google-selected canonical may reflect the prior crawl until recrawled.
+[ ] If live testing is healthy, request indexing only for changed canonical owners where appropriate; do not submit aliases or claim immediate indexing/ranking changes.
+[ ] Verify sitemap fetch status and processing errors. Save inspection evidence with date/time and deployment ID.
+[ ] Compare qualified enquiries and query/page GSC demand after adequate collection time using the same 24-hour, 28-day and 92-day definitions as the sprint evidence; distinguish measured data, attribution clicks and confirmed enquiries.
+
+Release decision after verification
+[ ] Record PASS/FAIL and evidence for each group, active deployment/version IDs, operator, UTC and Asia/Dubai timestamps.
+[ ] Roll back the paired artifacts if the release causes material routing, rendering, indexing, contact, PPF or tuning regressions; retain failed-version evidence and rerun the checklist after rollback.

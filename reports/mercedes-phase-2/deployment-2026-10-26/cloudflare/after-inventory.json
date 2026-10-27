@@ -1,0 +1,150 @@
+{
+  "observedAt": "2026-10-26T07:21:54.063Z",
+  "domain": "digitecme.com",
+  "method": "Authenticated dashboard: refreshed all seven detail forms, compared extracted functional values with reviewed originals/proposals, then saved ordered enabled list. No API version export.",
+  "capacity": {
+    "used": 7,
+    "limit": 10
+  },
+  "rules": [
+    {
+      "id": "5addb0c068414fb5b985a869ded26c68",
+      "order": 1,
+      "description": "Mercedes oil change legacy URLs to existing service",
+      "enabled": true,
+      "expression": "(http.host in {\"digitecme.com\" \"www.digitecme.com\"}) and (http.request.method in {\"GET\" \"HEAD\"}) and (http.request.uri.path in {\"/brands/mercedes-benz-service-dubai/oil-change\" \"/brands/mercedes-benz-service-dubai/oil-change/\"})",
+      "action": "redirect",
+      "action_parameters": {
+        "from_value": {
+          "target_url": {
+            "value": "https://digitecme.com/services/mercedes-oil-change-dubai"
+          },
+          "status_code": 308,
+          "preserve_query_string": true
+        }
+      },
+      "placementObserved": "First",
+      "readAt": "2026-10-26T07:21:08.313Z"
+    },
+    {
+      "id": "dbe42693423442afbc3bab9b993242a7",
+      "order": 2,
+      "description": "Legacy Mercedes URLs to Mercedes brand service page",
+      "enabled": true,
+      "expression": "http.request.uri.path in {\"/services/mercedes-repair-dubai\" \"/services/mercedes-repair-dubai/\" \"/services/mercedes-service-dubai\" \"/best-mercedes-workshop-dubai\"}",
+      "action": "redirect",
+      "action_parameters": {
+        "from_value": {
+          "target_url": {
+            "value": "https://digitecme.com/brands/mercedes-benz-service-dubai"
+          },
+          "status_code": 301,
+          "preserve_query_string": true
+        }
+      },
+      "placementObserved": "After Mercedes oil change legacy URLs to existing service",
+      "readAt": "2026-10-26T07:21:09.289Z"
+    },
+    {
+      "id": "b835ca6b88b448d6809f01271dba491b",
+      "order": 3,
+      "description": "Mercedes Arabic oil legacy alias to existing service",
+      "enabled": true,
+      "expression": "(http.host in {\"digitecme.com\" \"www.digitecme.com\"}) and (http.request.method in {\"GET\" \"HEAD\"}) and (http.request.uri.path in {\"/ar/brands/mercedes-benz-service-dubai/oil-change\" \"/ar/brands/mercedes-benz-service-dubai/oil-change/\"})",
+      "action": "redirect",
+      "action_parameters": {
+        "from_value": {
+          "target_url": {
+            "value": "https://digitecme.com/ar/services/mercedes-oil-change-dubai"
+          },
+          "status_code": 308,
+          "preserve_query_string": true
+        }
+      },
+      "placementObserved": "After Legacy Mercedes URLs to Mercedes brand service page",
+      "readAt": "2026-10-26T07:21:10.266Z"
+    },
+    {
+      "id": "5fafd20389964771885d8d1194f01d77",
+      "order": 4,
+      "description": "Mercedes body repair legacy alias to existing service",
+      "enabled": true,
+      "expression": "(http.host in {\"digitecme.com\" \"www.digitecme.com\"}) and (http.request.method in {\"GET\" \"HEAD\"}) and (http.request.uri.path in {\"/brands/mercedes-benz-service-dubai/body-repair\" \"/brands/mercedes-benz-service-dubai/body-repair/\"})",
+      "action": "redirect",
+      "action_parameters": {
+        "from_value": {
+          "target_url": {
+            "value": "https://digitecme.com/services/mercedes-body-repair-dubai"
+          },
+          "status_code": 308,
+          "preserve_query_string": true
+        }
+      },
+      "placementObserved": "After Mercedes Arabic oil legacy alias to existing service",
+      "readAt": "2026-10-26T07:21:11.247Z"
+    },
+    {
+      "id": "239ab46545704096bec2628d8eedf9b9",
+      "order": 5,
+      "description": "Mercedes Arabic battery legacy alias to existing service",
+      "enabled": true,
+      "expression": "(http.host in {\"digitecme.com\" \"www.digitecme.com\"}) and (http.request.method in {\"GET\" \"HEAD\"}) and (http.request.uri.path in {\"/ar/brands/mercedes-benz-service-dubai/battery-replacement\" \"/ar/brands/mercedes-benz-service-dubai/battery-replacement/\"})",
+      "action": "redirect",
+      "action_parameters": {
+        "from_value": {
+          "target_url": {
+            "value": "https://digitecme.com/ar/services/mercedes-battery-replacement-dubai"
+          },
+          "status_code": 308,
+          "preserve_query_string": true
+        }
+      },
+      "placementObserved": "After Mercedes body repair legacy alias to existing service",
+      "readAt": "2026-10-26T07:21:12.175Z"
+    },
+    {
+      "id": "2873f5b6de04417d8a486b22cc878835",
+      "order": 6,
+      "description": "Mercedes Arabic mechanical legacy alias to existing service",
+      "enabled": true,
+      "expression": "(http.host in {\"digitecme.com\" \"www.digitecme.com\"}) and (http.request.method in {\"GET\" \"HEAD\"}) and (http.request.uri.path in {\"/ar/brands/mercedes-benz-service-dubai/mechanical-repair\" \"/ar/brands/mercedes-benz-service-dubai/mechanical-repair/\"})",
+      "action": "redirect",
+      "action_parameters": {
+        "from_value": {
+          "target_url": {
+            "value": "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai"
+          },
+          "status_code": 308,
+          "preserve_query_string": true
+        }
+      },
+      "placementObserved": "After Mercedes Arabic battery legacy alias to existing service",
+      "readAt": "2026-10-26T07:21:13.043Z"
+    },
+    {
+      "id": "9781b1ef743f4ffbaadbe5cb3250eeca",
+      "order": 7,
+      "description": "www to primary domain",
+      "enabled": true,
+      "expression": "(http.host eq \"www.digitecme.com\")",
+      "action": "redirect",
+      "action_parameters": {
+        "from_value": {
+          "target_url": {
+            "expression": "concat(\"https://digitecme.com\", http.request.uri.path)"
+          },
+          "status_code": 301,
+          "preserve_query_string": true
+        }
+      },
+      "placementObserved": "After Mercedes Arabic mechanical legacy alias to existing service",
+      "readAt": "2026-10-26T07:21:25.206Z"
+    }
+  ],
+  "configurationChangedByThisRelease": "Exactly four new Single Redirect additions; no existing rule edit/delete/reorder action used.",
+  "limits": [
+    "UI observations only; hidden server version/ref metadata and server activation timestamps not exposed.",
+    "Original www predecessor label naturally changed to R4 when additions were inserted; functional definition and relative original-rule order preserved.",
+    "R4 HTTP checkpoint subsequently reported failure; no rollback or further deployment performed."
+  ]
+}

@@ -1,0 +1,191 @@
+Browser tab: 17, Title: "Phase 4C release-b local responsive QA 320px", URL: "http://127.0.0.1:5202/__phase4_frame?width=320&height=844&path=/services/mercedes-body-repair-dubai".
+The following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.
+~1 AXWebArea Phase 4C release-b local responsive QA 320px, URL: 127.0.0.1:5202/__phase4_frame?width=320&height=844&path=/services/mercedes-body-repair-dubai
+~	2 text LOCAL QA release-b passive — 320 × 844 CSS pixels, desktop browser engine. Contact intercepted; analytics blocked.
+~	3 container Mercedes release-b 320 pixel responsive viewport
+~	209 text {
+  "url": "http://127.0.0.1:5202/services/mercedes-body-repair-dubai",
+  "path": "/services/mercedes-body-repair-dubai",
+  "hash": "",
+  "title": "Mercedes Body & Accident Repair Dubai | Digi-Tec",
+  "readyState": "complete",
+  "width": 320,
+  "height": 844,
+  "clientWidth": 312,
+  "scrollWidth": 312,
+  "rootPresent": true,
+  "bodyPresent": true,
+  "active": {
+    "tag": "BODY",
+    "label": "<iframe src=\"https://www.googletagmanager.com/ns.html?id=GTM-T3GVSPND\"\n    height=\"0\" width=\"0\" style=\"display:none;visibility:hidden\"></iframe>\n    \n    MenuENEnglishالعربيةAbout UsServicesBrandsGADV",
+    "href": null
+  },
+  "scripts": [
+    {
+      "src": "https://www.googletagmanager.com/gtm.js?id=GTM-T3GVSPND",
+      "type": null,
+      "qa": false
+    },
+    {
+      "src": null,
+      "type": null,
+      "qa": true
+    },
+    {
+      "src": null,
+      "type": null,
+      "qa": false
+    },
+    {
+      "src": null,
+      "type": "application/ld+json",
+      "qa": false
+    },
+    {
+      "src": "https://www.googletagmanager.com/gtag/js?id=G-4TRCEJSY4S",
+      "type": null,
+      "qa": false
+    },
+    {
+      "src": null,
+      "type": null,
+      "qa": false
+    },
+    {
+      "src": "http://127.0.0.1:5202/assets/index-DxoEjBa9.js",
+      "type": "module",
+      "qa": false
+    },
+    {
+      "src": null,
+      "type": "application/ld+json",
+      "qa": false
+    }
+  ],
+  "resources": [
+    {
+      "name": "http://127.0.0.1:5202/assets/index-CumuXRQA.css",
+      "startTime": 11.299999952316284,
+      "duration": 8.899999976158142
+    },
+    {
+      "name": "http://127.0.0.1:5202/assets/index-DxoEjBa9.js",
+      "startTime": 11.299999952316284,
+      "duration": 16.299999952316284
+    },
+    {
+      "name": "https://www.googletagmanager.com/gtm.js?id=GTM-T3GVSPND",
+      "startTime": 12.899999976158142,
+      "duration": 0
+    }
+  ],
+  "focus": {
+    "tag": "BODY",
+    "text": "<iframe src=\"https://www.googletagmanager.com/ns.html?id=GTM-T3GVSPND\"\n    height=\"0\" width=\"0\" style=\"display:none;visibility:hidden\"></iframe>\n    \n    MenuENEnglishالعربيةAbout ",
+    "href": null,
+    "focusVisible": false,
+    "outline": "rgb(248, 248, 248) none 2.66667px",
+    "boxShadow": "none",
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 312,
+      "height": 10212.396484375,
+      "top": 0,
+      "right": 312,
+      "bottom": 10212.396484375,
+      "left": 0
+    }
+  }
+}
+~	210 text {
+  "sequence": 8,
+  "clientAt": "2026-10-26T11:05:19.493Z",
+  "performanceMs": 63.5,
+  "startedAt": "2026-10-26T11:05:19.441Z",
+  "session": "release-b-repeats",
+  "option": "release-b",
+  "mode": "passive",
+  "kind": "page-show",
+  "detail": {
+    "persisted": false
+  },
+  "state": {
+    "url": "http://127.0.0.1:5202/services/mercedes-body-repair-dubai",
+    "path": "/services/mercedes-body-repair-dubai",
+    "hash": "",
+    "title": "Mercedes Body & Accident Repair Dubai | Digi-Tec",
+    "readyState": "complete",
+    "width": 320,
+    "height": 844,
+    "clientWidth": 312,
+    "scrollWidth": 312,
+    "rootPresent": true,
+    "bodyPresent": true,
+    "active": {
+      "tag": "BODY",
+      "label": "<iframe src=\"https://www.googletagmanager.com/ns.html?id=GTM-T3GVSPND\"\n    height=\"0\" width=\"0\" style=\"display:none;visibility:hidden\"></iframe>\n    \n    MenuENEnglishالعربيةAbout UsServicesBrandsGADV",
+      "href": null
+    },
+    "scripts": [
+      {
+        "src": "https://www.googletagmanager.com/gtm.js?id=GTM-T3GVSPND",
+        "type": null,
+        "qa": false
+      },
+      {
+        "src": null,
+        "type": null,
+        "qa": true
+      },
+      {
+        "src": null,
+        "type": null,
+        "qa": false
+      },
+      {
+        "src": null,
+        "type": "application/ld+json",
+        "qa": false
+      },
+      {
+        "src": "https://www.googletagmanager.com/gtag/js?id=G-4TRCEJSY4S",
+        "type": null,
+        "qa": false
+      },
+      {
+        "src": null,
+        "type": null,
+        "qa": false
+      },
+      {
+        "src": "http://127.0.0.1:5202/assets/index-DxoEjBa9.js",
+        "type": "module",
+        "qa": false
+      },
+      {
+        "src": null,
+        "type": "application/ld+json",
+        "qa": false
+      }
+    ],
+    "resources": [
+      {
+        "name": "http://127.0.0.1:5202/assets/index-CumuXRQA.css",
+        "startTime": 11.299999952316284,
+        "duration": 8.899999976158142
+      },
+      {
+        "name": "http://127.0.0.1:5202/assets/index-DxoEjBa9.js",
+        "startTime": 11.299999952316284,
+        "duration": 16.299999952316284
+      },
+      {
+        "name": "https://www.googletagmanager.com/gtm.js?id=GTM-T3GVSPND",
+        "startTime": 12.899999976158142,
+        "duration": 0
+      }
+    ]
+  }
+}
+The focused UI element is 1 AXWebArea Phase 4C release-b local responsive QA 320px, URL: 127.0.0.1:5202/__phase4_frame?width=320&height=844&path=/services/mercedes-body-repair-dubai

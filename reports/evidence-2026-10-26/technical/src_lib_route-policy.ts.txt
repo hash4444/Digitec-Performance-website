@@ -1,0 +1,47 @@
+    1: import { stripLocalePrefix } from '@/i18n/use-locale';
+    2: import { MERCEDES_UNTRANSLATED_MODEL_PATHS } from '@/i18n/mercedes-language';
+    3: 
+    4: /**
+    5:  * Brand/service combinations retained for users but excluded from indexing.
+    6:  * Primary brands keep their full service set; other brands keep only the four
+    7:  * service topics with sufficiently distinct, useful content.
+    8:  */
+    9: const PRIMARY_BRANDS = new Set([
+   10:   'mercedes-benz',
+   11:   'bmw',
+   12:   'audi',
+   13:   'porsche',
+   14:   'range-rover',
+   15:   'land-rover',
+   16:   'ferrari',
+   17:   'lamborghini',
+   18:   'bentley',
+   19:   'rolls-royce',
+   20:   'mclaren',
+   21:   'maserati',
+   22:   'aston-martin',
+   23:   'maybach',
+   24:   'defender',
+   25: ]);
+   26: 
+   27: const INDEXABLE_SECONDARY_SERVICES = new Set([
+   28:   'oil-change',
+   29:   'brake-repair',
+   30:   'ac-repair',
+   31:   'engine-diagnostics',
+   32: ]);
+   33: 
+   34: export const isLowValueBrandServicePath = (pathname: string): boolean => {
+   35:   const englishPath = stripLocalePrefix(pathname);
+   36:   const match = englishPath.match(/^\/brands\/([a-z0-9-]+)-service-dubai\/([a-z0-9-]+)$/);
+   37:   if (!match) return false;
+   38:   const [, brandSlug, serviceSlug] = match;
+   39:   // Existing English ROX page has a distinct installation/repair process,
+   40:   // compatibility checks and local demand. Keep the generic Arabic template
+   41:   // excluded until it has an equivalent service-specific translation.
+   42:   if (!pathname.startsWith('/ar/') && brandSlug === 'rox' && serviceSlug === 'soft-close-door-installation') return false;
+   43:   return !PRIMARY_BRANDS.has(brandSlug) && !INDEXABLE_SECONDARY_SERVICES.has(serviceSlug);
+   44: };
+   45: 
+   46: export const isIndexableContentPath = (pathname: string): boolean =>
+   47:   !isLowValueBrandServicePath(pathname) && !(pathname.startsWith('/ar/') && MERCEDES_UNTRANSLATED_MODEL_PATHS.has(stripLocalePrefix(pathname)));

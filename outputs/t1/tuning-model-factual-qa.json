@@ -1,0 +1,294 @@
+{
+  "source": "src/data/tuningModelPages.ts",
+  "reference": "outputs/t1/baseline/tuningCars.ts",
+  "models": [
+    {
+      "path": "/tuning/mercedes-amg-gt",
+      "carIds": [
+        "amg-gt-gts",
+        "amg-gtc-gtr"
+      ],
+      "engine": "M178",
+      "hpClaimsChecked": 6,
+      "torqueClaimsChecked": 6,
+      "priceClaimsChecked": 1,
+      "timeClaimsChecked": 1,
+      "availableStages": {
+        "amg-gt-gts": [
+          "stock",
+          "stage1",
+          "stage2",
+          "stage3",
+          "stage4",
+          "stage5",
+          "vip"
+        ],
+        "amg-gtc-gtr": [
+          "stock",
+          "stage1",
+          "stage2",
+          "stage3",
+          "stage4",
+          "stage5",
+          "vip"
+        ]
+      },
+      "tcuStages": {
+        "amg-gt-gts": [
+          "stage2",
+          "stage3",
+          "stage4",
+          "stage5"
+        ],
+        "amg-gtc-gtr": [
+          "stage2",
+          "stage3",
+          "stage4",
+          "stage5"
+        ]
+      },
+      "allNumericalClaimsFoundInSelectedSource": true
+    },
+    {
+      "path": "/tuning/mercedes-amg-e63",
+      "carIds": [
+        "e63"
+      ],
+      "engine": "M177",
+      "hpClaimsChecked": 4,
+      "torqueClaimsChecked": 5,
+      "priceClaimsChecked": 1,
+      "timeClaimsChecked": 1,
+      "availableStages": {
+        "e63": [
+          "stock",
+          "stage1",
+          "stage2",
+          "stage3",
+          "stage4",
+          "vip"
+        ]
+      },
+      "tcuStages": {
+        "e63": [
+          "stage3",
+          "stage4"
+        ]
+      },
+      "allNumericalClaimsFoundInSelectedSource": true
+    },
+    {
+      "path": "/tuning/mercedes-amg-g63",
+      "carIds": [
+        "g63"
+      ],
+      "engine": "M177",
+      "hpClaimsChecked": 5,
+      "torqueClaimsChecked": 5,
+      "priceClaimsChecked": 2,
+      "timeClaimsChecked": 3,
+      "availableStages": {
+        "g63": [
+          "stock",
+          "stage1",
+          "stage2",
+          "stage3",
+          "stage4",
+          "vip"
+        ]
+      },
+      "tcuStages": {
+        "g63": [
+          "stage3",
+          "stage4"
+        ]
+      },
+      "allNumericalClaimsFoundInSelectedSource": true
+    },
+    {
+      "path": "/tuning/mercedes-amg-gt63",
+      "carIds": [
+        "gt63"
+      ],
+      "engine": "M177",
+      "hpClaimsChecked": 6,
+      "torqueClaimsChecked": 5,
+      "priceClaimsChecked": 1,
+      "timeClaimsChecked": 1,
+      "availableStages": {
+        "gt63": [
+          "stock",
+          "stage1",
+          "stage2",
+          "stage3",
+          "stage4",
+          "vip"
+        ]
+      },
+      "tcuStages": {
+        "gt63": [
+          "stage3",
+          "stage4"
+        ]
+      },
+      "allNumericalClaimsFoundInSelectedSource": true
+    },
+    {
+      "path": "/tuning/mercedes-amg-s65",
+      "carIds": [
+        "s65"
+      ],
+      "engine": "M279",
+      "hpClaimsChecked": 4,
+      "torqueClaimsChecked": 6,
+      "priceClaimsChecked": 2,
+      "timeClaimsChecked": 2,
+      "availableStages": {
+        "s65": [
+          "stock",
+          "stage1",
+          "stage2",
+          "stage3",
+          "stage4",
+          "stage5"
+        ]
+      },
+      "tcuStages": {
+        "s65": [
+          "stage2",
+          "stage3",
+          "stage4",
+          "stage5"
+        ]
+      },
+      "allNumericalClaimsFoundInSelectedSource": true
+    },
+    {
+      "path": "/tuning/mercedes-amg-c63",
+      "carIds": [
+        "c63-w205"
+      ],
+      "engine": "M177",
+      "hpClaimsChecked": 5,
+      "torqueClaimsChecked": 7,
+      "priceClaimsChecked": 1,
+      "timeClaimsChecked": 1,
+      "availableStages": {
+        "c63-w205": [
+          "stock",
+          "stage1",
+          "stage2",
+          "stage3",
+          "stage4",
+          "stage5",
+          "vip"
+        ]
+      },
+      "tcuStages": {
+        "c63-w205": [
+          "stage3",
+          "stage4",
+          "stage5"
+        ]
+      },
+      "allNumericalClaimsFoundInSelectedSource": true
+    },
+    {
+      "path": "/tuning/mercedes-amg-glc63",
+      "carIds": [
+        "glc63"
+      ],
+      "engine": "M177",
+      "hpClaimsChecked": 4,
+      "torqueClaimsChecked": 6,
+      "priceClaimsChecked": 4,
+      "timeClaimsChecked": 1,
+      "availableStages": {
+        "glc63": [
+          "stock",
+          "stage1",
+          "stage2",
+          "stage3",
+          "stage4",
+          "stage5"
+        ]
+      },
+      "tcuStages": {
+        "glc63": [
+          "stage3",
+          "stage4",
+          "stage5"
+        ]
+      },
+      "allNumericalClaimsFoundInSelectedSource": true
+    },
+    {
+      "path": "/tuning/aston-martin-db11",
+      "carIds": [
+        "db11"
+      ],
+      "engine": "M177",
+      "hpClaimsChecked": 5,
+      "torqueClaimsChecked": 5,
+      "priceClaimsChecked": 1,
+      "timeClaimsChecked": 1,
+      "availableStages": {
+        "db11": [
+          "stock",
+          "stage1",
+          "stage2",
+          "stage3",
+          "stage4",
+          "stage5"
+        ]
+      },
+      "tcuStages": {
+        "db11": [
+          "stage2",
+          "stage3",
+          "stage4",
+          "stage5"
+        ]
+      },
+      "allNumericalClaimsFoundInSelectedSource": true
+    },
+    {
+      "path": "/tuning/lamborghini-urus",
+      "carIds": [
+        "urus"
+      ],
+      "engine": "V8 Twin-Turbo",
+      "hpClaimsChecked": 6,
+      "torqueClaimsChecked": 6,
+      "priceClaimsChecked": 3,
+      "timeClaimsChecked": 1,
+      "availableStages": {
+        "urus": [
+          "stock",
+          "stage1",
+          "stage2",
+          "stage3",
+          "stage4"
+        ]
+      },
+      "tcuStages": {
+        "urus": []
+      },
+      "allNumericalClaimsFoundInSelectedSource": true
+    }
+  ],
+  "summary": {
+    "models": 9,
+    "faqs": 27,
+    "horsepowerLiteralClaims": 45,
+    "torqueLiteralClaims": 51,
+    "priceLiteralClaims": 16,
+    "timeLiteralClaims": 12
+  },
+  "manualStageAssociationAndPackageReview": "Completed for all nine model definitions and 27 FAQs against original tuningCars; no mismatch found.",
+  "sourceCaveats": [
+    "GLC63 source comment W253 preserved and explicitly identified; higher-stage price-range endpoints unexplained in source.",
+    "DB11 source MCT reinforcement terminology preserved with compatibility confirmation wording.",
+    "S63 hybrid engine/combined output scope unclear; no model page created."
+  ]
+}

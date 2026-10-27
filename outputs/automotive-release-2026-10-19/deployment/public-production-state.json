@@ -1,0 +1,2028 @@
+{
+  "checkedAt": "2026-10-19T07:33:29.465Z",
+  "operation": "Public GET and HEAD only; no contact submissions, production writes or analytics events",
+  "records": [
+    {
+      "url": "https://digitecme.com/__automotive_release_preflight_20261019__?utm_source=release-preflight&utm_medium=verification",
+      "method": "GET",
+      "status": 200,
+      "headers": {
+        "alt-svc": "h3=\":443\"; ma=86400",
+        "cache-control": "no-cache, must-revalidate, max-age=0",
+        "cf-cache-status": "DYNAMIC",
+        "cf-ray": "a4ce18482c0ad110-CDG",
+        "connection": "keep-alive",
+        "content-encoding": "br",
+        "content-type": "text/html; charset=utf-8",
+        "date": "Mon, 19 Oct 2026 07:33:29 GMT",
+        "referrer-policy": "strict-origin-when-cross-origin",
+        "server": "cloudflare",
+        "speculation-rules": "\"/cdn-cgi/speculation\"",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "transfer-encoding": "chunked",
+        "vary": "accept-encoding",
+        "x-content-type-options": "nosniff",
+        "x-deployment-id": "psr2.cf14717a-af2a-4961-854a-3adf9053a1ef.1793000009.qK7DUF5hP8OI_4UHUnpXSMvrR7cox-5xih8e5ngbokc"
+      },
+      "bytes": 163337,
+      "sha256": "ee5616bc058950b2e55c2fce75f5d987111acf4c2499bdbb7064a3d2c3c0cecb",
+      "file": "public-snapshot/GET-digitecme.com-____automotive_release_preflight_20261019__.body",
+      "title": "Digi-Tec Performance Center | Independent Car Workshop Dubai",
+      "description": "Independent car workshop in Al Quoz, Dubai since 2002 for inspection, maintenance, repair, programming, bodywork and performance-project consultation. Call +971 4 340 2223.",
+      "h1": [
+        "D IGI-TEC Performance Center"
+      ],
+      "canonical": "https://digitecme.com/",
+      "robots": "index, follow, max-image-preview:large",
+      "scripts": [
+        "https://www.googletagmanager.com/gtag/js?id=G-4TRCEJSY4S",
+        "/assets/index-CkbEeNd8.js",
+        "/~flock.js",
+        "/__l5e/events.124894084da8c432.js",
+        "/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
+      ],
+      "css": [
+        "/assets/index-DQ4NvsET.css"
+      ]
+    },
+    {
+      "url": "https://digitecme.com/__automotive_release_preflight_20261019__?utm_source=release-preflight&utm_medium=verification",
+      "method": "HEAD",
+      "status": 200,
+      "headers": {
+        "alt-svc": "h3=\":443\"; ma=86400",
+        "cache-control": "no-cache, must-revalidate, max-age=0",
+        "cf-cache-status": "DYNAMIC",
+        "cf-ray": "a4ce1846cb860506-HKG",
+        "connection": "close",
+        "content-encoding": "br",
+        "content-type": "text/html; charset=utf-8",
+        "date": "Mon, 19 Oct 2026 07:33:28 GMT",
+        "referrer-policy": "strict-origin-when-cross-origin",
+        "server": "cloudflare",
+        "speculation-rules": "\"/cdn-cgi/speculation\"",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "x-content-type-options": "nosniff",
+        "x-deployment-id": "psr2.cf14717a-af2a-4961-854a-3adf9053a1ef.1793000008.OKgULVgLnHcmBNnq7uZsKC5OnSLl8XidGiqPKnSIl9Y"
+      },
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "file": "public-snapshot/HEAD-digitecme.com-____automotive_release_preflight_20261019__.body",
+      "title": "",
+      "description": "",
+      "h1": [],
+      "canonical": "",
+      "robots": "",
+      "scripts": [],
+      "css": []
+    },
+    {
+      "url": "https://digitecme.com/_redirects",
+      "method": "GET",
+      "status": 200,
+      "headers": {
+        "alt-svc": "h3=\":443\"; ma=86400",
+        "cf-cache-status": "DYNAMIC",
+        "cf-ray": "a4ce18422ee8c28d-CDG",
+        "connection": "keep-alive",
+        "content-length": "16450",
+        "content-type": "application/octet-stream",
+        "date": "Mon, 19 Oct 2026 07:33:28 GMT",
+        "etag": "\"dafcb35d8e005f9b3fe6e037256b8b4a\"",
+        "referrer-policy": "strict-origin-when-cross-origin",
+        "server": "cloudflare",
+        "speculation-rules": "\"/cdn-cgi/speculation\"",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "x-content-type-options": "nosniff",
+        "x-deployment-id": "psr2.cf14717a-af2a-4961-854a-3adf9053a1ef.1793000008.OKgULVgLnHcmBNnq7uZsKC5OnSLl8XidGiqPKnSIl9Y"
+      },
+      "bytes": 16450,
+      "sha256": "56d28b946024731722a7ed710216a65077ec5e40400f22f9c3a1ffbc245d6c7f",
+      "file": "public-snapshot/GET-digitecme.com-___redirects.body",
+      "title": "",
+      "description": "",
+      "h1": [],
+      "canonical": "",
+      "robots": "",
+      "scripts": [],
+      "css": []
+    },
+    {
+      "url": "https://digitecme.com/_worker.js",
+      "method": "GET",
+      "status": 200,
+      "headers": {
+        "alt-svc": "h3=\":443\"; ma=86400",
+        "cf-cache-status": "BYPASS",
+        "cf-ray": "a4ce1841aa12dd48-HKG",
+        "connection": "keep-alive",
+        "content-encoding": "gzip",
+        "content-type": "text/javascript; charset=utf-8",
+        "date": "Mon, 19 Oct 2026 07:33:29 GMT",
+        "etag": "W/\"dc8e5207dcbebe464553916a92393e08\"",
+        "referrer-policy": "strict-origin-when-cross-origin",
+        "server": "cloudflare",
+        "speculation-rules": "\"/cdn-cgi/speculation\"",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "transfer-encoding": "chunked",
+        "vary": "accept-encoding",
+        "x-content-type-options": "nosniff",
+        "x-deployment-id": "psr2.cf14717a-af2a-4961-854a-3adf9053a1ef.1793000008.OKgULVgLnHcmBNnq7uZsKC5OnSLl8XidGiqPKnSIl9Y"
+      },
+      "bytes": 78360,
+      "sha256": "47208557115070b192a66e867c27be7b847b00a6304c25519fdb84033b7d1e45",
+      "file": "public-snapshot/GET-digitecme.com-___worker.js.body",
+      "title": "",
+      "description": "",
+      "h1": [],
+      "canonical": "",
+      "robots": "",
+      "scripts": [],
+      "css": []
+    },
+    {
+      "url": "https://digitecme.com/ar/brands/bmw-service-dubai/mechanical-repair",
+      "method": "GET",
+      "status": 200,
+      "headers": {
+        "alt-svc": "h3=\":443\"; ma=86400",
+        "cache-control": "no-cache, must-revalidate, max-age=0",
+        "cf-cache-status": "DYNAMIC",
+        "cf-ray": "a4ce1839598edd48-HKG",
+        "connection": "keep-alive",
+        "content-encoding": "br",
+        "content-type": "text/html; charset=utf-8",
+        "date": "Mon, 19 Oct 2026 07:33:26 GMT",
+        "referrer-policy": "strict-origin-when-cross-origin",
+        "server": "cloudflare",
+        "speculation-rules": "\"/cdn-cgi/speculation\"",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "transfer-encoding": "chunked",
+        "vary": "accept-encoding",
+        "x-content-type-options": "nosniff",
+        "x-deployment-id": "psr2.cf14717a-af2a-4961-854a-3adf9053a1ef.1793000006.5o_4YapwCW3Zn-N76zaO3fM72okMvtofHafaF7Ypkaw"
+      },
+      "bytes": 62706,
+      "sha256": "6eed8715681435272b34bac7df2a4b23526e59c47ffd09ab185b2a9dd5d3bdd8",
+      "file": "public-snapshot/GET-digitecme.com-__ar__brands__bmw-service-dubai__mechanical-repair.body",
+      "title": "الإصلاح الميكانيكي BMW في دبي | ديجي-تك",
+      "description": "الإصلاح الميكانيكي BMW في دبي. تقييم التسرب والضجيج والاهتزاز ومشاكل التبريد أو الحركة لتحديد نطاق الإصلاح من نتائج الفحص.",
+      "h1": [
+        "الإصلاح الميكانيكي BMW في دبي"
+      ],
+      "canonical": "https://digitecme.com/ar/brands/bmw-service-dubai/mechanical-repair",
+      "robots": "index, follow, max-image-preview:large",
+      "scripts": [
+        "https://www.googletagmanager.com/gtag/js?id=G-4TRCEJSY4S",
+        "/assets/index-CkbEeNd8.js",
+        "/~flock.js",
+        "/__l5e/events.124894084da8c432.js",
+        "/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
+      ],
+      "css": [
+        "/assets/index-DQ4NvsET.css"
+      ]
+    },
+    {
+      "url": "https://digitecme.com/ar/brands/bmw-service-dubai/transmission-repair",
+      "method": "GET",
+      "status": 200,
+      "headers": {
+        "alt-svc": "h3=\":443\"; ma=86400",
+        "cache-control": "no-cache, must-revalidate, max-age=0",
+        "cf-cache-status": "DYNAMIC",
+        "cf-ray": "a4ce1838cd6dc28d-CDG",
+        "connection": "keep-alive",
+        "content-encoding": "br",
+        "content-type": "text/html; charset=utf-8",
+        "date": "Mon, 19 Oct 2026 07:33:26 GMT",
+        "referrer-policy": "strict-origin-when-cross-origin",
+        "server": "cloudflare",
+        "speculation-rules": "\"/cdn-cgi/speculation\"",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "transfer-encoding": "chunked",
+        "vary": "accept-encoding",
+        "x-content-type-options": "nosniff",
+        "x-deployment-id": "psr2.cf14717a-af2a-4961-854a-3adf9053a1ef.1793000006.5o_4YapwCW3Zn-N76zaO3fM72okMvtofHafaF7Ypkaw"
+      },
+      "bytes": 62514,
+      "sha256": "11108b68a1c2923fabd212a087db13231e0bd76525bfd172395e780c08ecf75e",
+      "file": "public-snapshot/GET-digitecme.com-__ar__brands__bmw-service-dubai__transmission-repair.body",
+      "title": "إصلاح ناقل الحركة BMW في دبي | ديجي-تك",
+      "description": "إصلاح ناقل الحركة BMW في دبي. تقييم تأخر التعشيق وتغير النقل والتسرب والتحذيرات حسب ناقل الحركة المركب وسجل الخدمة.",
+      "h1": [
+        "إصلاح ناقل الحركة BMW في دبي"
+      ],
+      "canonical": "https://digitecme.com/ar/brands/bmw-service-dubai/transmission-repair",
+      "robots": "index, follow, max-image-preview:large",
+      "scripts": [
+        "https://www.googletagmanager.com/gtag/js?id=G-4TRCEJSY4S",
+        "/assets/index-CkbEeNd8.js",
+        "/~flock.js",
+        "/__l5e/events.124894084da8c432.js",
+        "/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
+      ],
+      "css": [
+        "/assets/index-DQ4NvsET.css"
+      ]
+    },
+    {
+      "url": "https://digitecme.com/ar/brands/bmw-service-dubai",
+      "method": "GET",
+      "status": 200,
+      "headers": {
+        "alt-svc": "h3=\":443\"; ma=86400",
+        "cache-control": "no-cache, must-revalidate, max-age=0",
+        "cf-cache-status": "DYNAMIC",
+        "cf-ray": "a4ce18365eccc28d-CDG",
+        "connection": "keep-alive",
+        "content-encoding": "br",
+        "content-type": "text/html; charset=utf-8",
+        "date": "Mon, 19 Oct 2026 07:33:26 GMT",
+        "referrer-policy": "strict-origin-when-cross-origin",
+        "server": "cloudflare",
+        "speculation-rules": "\"/cdn-cgi/speculation\"",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "transfer-encoding": "chunked",
+        "vary": "accept-encoding",
+        "x-content-type-options": "nosniff",
+        "x-deployment-id": "psr2.cf14717a-af2a-4961-854a-3adf9053a1ef.1793000006.5o_4YapwCW3Zn-N76zaO3fM72okMvtofHafaF7Ypkaw"
+      },
+      "bytes": 89591,
+      "sha256": "b94d783569ce7b3eb8e8a38143b2457cfee5426dd18408674e50181380a9f84d",
+      "file": "public-snapshot/GET-digitecme.com-__ar__brands__bmw-service-dubai.body",
+      "title": "إصلاح وصيانة BMW في دبي | مركز ديجي-تك",
+      "description": "إصلاح وصيانة BMW في دبي: تشخيص وصيانة وفرامل وناقل حركة وتعليق وتكييف مع قطع بالمواصفات المناسبة لدى مركز ديجي-تك.",
+      "h1": [
+        "BMW للإصلاح والصيانة في دبي"
+      ],
+      "canonical": "https://digitecme.com/ar/brands/bmw-service-dubai",
+      "robots": "index, follow, max-image-preview:large",
+      "scripts": [
+        "https://www.googletagmanager.com/gtag/js?id=G-4TRCEJSY4S",
+        "/assets/index-CkbEeNd8.js",
+        "/~flock.js",
+        "/__l5e/events.124894084da8c432.js",
+        "/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
+      ],
+      "css": [
+        "/assets/index-DQ4NvsET.css"
+      ]
+    },
+    {
+      "url": "https://digitecme.com/ar/brands/lamborghini-service-dubai/mechanical-repair",
+      "method": "GET",
+      "status": 200,
+      "headers": {
+        "alt-svc": "h3=\":443\"; ma=86400",
+        "cache-control": "no-cache, must-revalidate, max-age=0",
+        "cf-cache-status": "DYNAMIC",
+        "cf-ray": "a4ce183b48960506-HKG",
+        "connection": "keep-alive",
+        "content-encoding": "br",
+        "content-type": "text/html; charset=utf-8",
+        "date": "Mon, 19 Oct 2026 07:33:27 GMT",
+        "referrer-policy": "strict-origin-when-cross-origin",
+        "server": "cloudflare",
+        "speculation-rules": "\"/cdn-cgi/speculation\"",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "transfer-encoding": "chunked",
+        "vary": "accept-encoding",
+        "x-content-type-options": "nosniff",
+        "x-deployment-id": "psr2.cf14717a-af2a-4961-854a-3adf9053a1ef.1793000006.5o_4YapwCW3Zn-N76zaO3fM72okMvtofHafaF7Ypkaw"
+      },
+      "bytes": 63470,
+      "sha256": "64463ad7adbd076e51384254c78c64fe7d085423c91ed0c374f4d37035f5e941",
+      "file": "public-snapshot/GET-digitecme.com-__ar__brands__lamborghini-service-dubai__mechanical-repair.body",
+      "title": "الإصلاح الميكانيكي Lamborghini في دبي | ديجي-تك",
+      "description": "الإصلاح الميكانيكي Lamborghini في دبي. تقييم التسرب والضجيج والاهتزاز ومشاكل التبريد أو الحركة لتحديد نطاق الإصلاح من نتائج الفحص.",
+      "h1": [
+        "الإصلاح الميكانيكي Lamborghini في دبي"
+      ],
+      "canonical": "https://digitecme.com/ar/brands/lamborghini-service-dubai/mechanical-repair",
+      "robots": "index, follow, max-image-preview:large",
+      "scripts": [
+        "https://www.googletagmanager.com/gtag/js?id=G-4TRCEJSY4S",
+        "/assets/index-CkbEeNd8.js",
+        "/~flock.js",
+        "/__l5e/events.124894084da8c432.js",
+        "/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
+      ],
+      "css": [
+        "/assets/index-DQ4NvsET.css"
+      ]
+    },
+    {
+      "url": "https://digitecme.com/ar/brands/lamborghini-service-dubai/transmission-repair",
+      "method": "GET",
+      "status": 200,
+      "headers": {
+        "alt-svc": "h3=\":443\"; ma=86400",
+        "cache-control": "no-cache, must-revalidate, max-age=0",
+        "cf-cache-status": "DYNAMIC",
+        "cf-ray": "a4ce183c4b0edd48-HKG",
+        "connection": "keep-alive",
+        "content-encoding": "br",
+        "content-type": "text/html; charset=utf-8",
+        "date": "Mon, 19 Oct 2026 07:33:27 GMT",
+        "referrer-policy": "strict-origin-when-cross-origin",
+        "server": "cloudflare",
+        "speculation-rules": "\"/cdn-cgi/speculation\"",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "transfer-encoding": "chunked",
+        "vary": "accept-encoding",
+        "x-content-type-options": "nosniff",
+        "x-deployment-id": "psr2.cf14717a-af2a-4961-854a-3adf9053a1ef.1793000007.2bfFi0s0tS-h7-DBIgJGhz777Dvv8boIcsx_k-KKrwI"
+      },
+      "bytes": 63278,
+      "sha256": "ac11a131b41b0845cff29e4640efb58313d6262103ba3ce8ccac84ed6106a44b",
+      "file": "public-snapshot/GET-digitecme.com-__ar__brands__lamborghini-service-dubai__transmission-repair.body",
+      "title": "إصلاح ناقل الحركة Lamborghini في دبي | ديجي-تك",
+      "description": "إصلاح ناقل الحركة Lamborghini في دبي. تقييم تأخر التعشيق وتغير النقل والتسرب والتحذيرات حسب ناقل الحركة المركب وسجل الخدمة.",
+      "h1": [
+        "إصلاح ناقل الحركة Lamborghini في دبي"
+      ],
+      "canonical": "https://digitecme.com/ar/brands/lamborghini-service-dubai/transmission-repair",
+      "robots": "index, follow, max-image-preview:large",
+      "scripts": [
+        "https://www.googletagmanager.com/gtag/js?id=G-4TRCEJSY4S",
+        "/assets/index-CkbEeNd8.js",
+        "/~flock.js",
+        "/__l5e/events.124894084da8c432.js",
+        "/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
+      ],
+      "css": [
+        "/assets/index-DQ4NvsET.css"
+      ]
+    },
+    {
+      "url": "https://digitecme.com/ar/brands/lamborghini-service-dubai",
+      "method": "GET",
+      "status": 200,
+      "headers": {
+        "alt-svc": "h3=\":443\"; ma=86400",
+        "cache-control": "no-cache, must-revalidate, max-age=0",
+        "cf-cache-status": "DYNAMIC",
+        "cf-ray": "a4ce18345859dd3d-HKG",
+        "connection": "keep-alive",
+        "content-encoding": "br",
+        "content-type": "text/html; charset=utf-8",
+        "date": "Mon, 19 Oct 2026 07:33:26 GMT",
+        "referrer-policy": "strict-origin-when-cross-origin",
+        "server": "cloudflare",
+        "speculation-rules": "\"/cdn-cgi/speculation\"",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "transfer-encoding": "chunked",
+        "vary": "accept-encoding",
+        "x-content-type-options": "nosniff",
+        "x-deployment-id": "psr2.cf14717a-af2a-4961-854a-3adf9053a1ef.1793000005.6EPJ3LUmpZZhJhf_Wa6lgu-eHLDgxnFk1B05bTqPdiU"
+      },
+      "bytes": 89560,
+      "sha256": "f22ce2562f75a568d93a5e341efe27fcbe5930feebf513811c8d554ccabbe3cb",
+      "file": "public-snapshot/GET-digitecme.com-__ar__brands__lamborghini-service-dubai.body",
+      "title": "إصلاح وصيانة Lamborghini في دبي | مركز ديجي-تك",
+      "description": "إصلاح وصيانة Lamborghini في دبي: تشخيص وصيانة وفرامل وناقل حركة وتعليق وتكييف مع قطع بالمواصفات المناسبة لدى مركز ديجي-تك.",
+      "h1": [
+        "Lamborghini للإصلاح والصيانة في دبي"
+      ],
+      "canonical": "https://digitecme.com/ar/brands/lamborghini-service-dubai",
+      "robots": "index, follow, max-image-preview:large",
+      "scripts": [
+        "https://www.googletagmanager.com/gtag/js?id=G-4TRCEJSY4S",
+        "/assets/index-CkbEeNd8.js",
+        "/~flock.js",
+        "/__l5e/events.124894084da8c432.js",
+        "/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
+      ],
+      "css": [
+        "/assets/index-DQ4NvsET.css"
+      ]
+    },
+    {
+      "url": "https://digitecme.com/ar/brands/mercedes-benz-service-dubai",
+      "method": "GET",
+      "status": 200,
+      "headers": {
+        "alt-svc": "h3=\":443\"; ma=86400",
+        "cache-control": "no-cache, must-revalidate, max-age=0",
+        "cf-cache-status": "DYNAMIC",
+        "cf-ray": "a4ce1835bb600506-HKG",
+        "connection": "keep-alive",
+        "content-encoding": "br",
+        "content-type": "text/html; charset=utf-8",
+        "date": "Mon, 19 Oct 2026 07:33:26 GMT",
+        "referrer-policy": "strict-origin-when-cross-origin",
+        "server": "cloudflare",
+        "speculation-rules": "\"/cdn-cgi/speculation\"",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "transfer-encoding": "chunked",
+        "vary": "accept-encoding",
+        "x-content-type-options": "nosniff",
+        "x-deployment-id": "psr2.cf14717a-af2a-4961-854a-3adf9053a1ef.1793000006.5o_4YapwCW3Zn-N76zaO3fM72okMvtofHafaF7Ypkaw"
+      },
+      "bytes": 88982,
+      "sha256": "fc51d4fe8238c5f4c1daab15b1917f9de8087de7316c3d25e19b9b08dec88813",
+      "file": "public-snapshot/GET-digitecme.com-__ar__brands__mercedes-benz-service-dubai.body",
+      "title": "إصلاح وصيانة مرسيدس في دبي | ديجي-تك",
+      "description": "ورشة مستقلة لصيانة وإصلاح مرسيدس في القوز، دبي. تشخيص XENTRY وفحص المحرك والقير والتعليق والتكييف والكهرباء مع توضيح النطاق والتكلفة قبل العمل.",
+      "h1": [
+        "إصلاح وصيانة مرسيدس بنز في دبي"
+      ],
+      "canonical": "https://digitecme.com/ar/brands/mercedes-benz-service-dubai",
+      "robots": "index, follow, max-image-preview:large",
+      "scripts": [
+        "https://www.googletagmanager.com/gtag/js?id=G-4TRCEJSY4S",
+        "/assets/index-CkbEeNd8.js",
+        "/~flock.js",
+        "/__l5e/events.124894084da8c432.js",
+        "/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
+      ],
+      "css": [
+        "/assets/index-DQ4NvsET.css"
+      ]
+    },
+    {
+      "url": "https://digitecme.com/ar/brands/rolls-royce-service-dubai/mechanical-repair",
+      "method": "GET",
+      "status": 200,
+      "headers": {
+        "alt-svc": "h3=\":443\"; ma=86400",
+        "cache-control": "no-cache, must-revalidate, max-age=0",
+        "cf-cache-status": "DYNAMIC",
+        "cf-ray": "a4ce1839f853c28d-CDG",
+        "connection": "keep-alive",
+        "content-encoding": "br",
+        "content-type": "text/html; charset=utf-8",
+        "date": "Mon, 19 Oct 2026 07:33:26 GMT",
+        "referrer-policy": "strict-origin-when-cross-origin",
+        "server": "cloudflare",
+        "speculation-rules": "\"/cdn-cgi/speculation\"",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "transfer-encoding": "chunked",
+        "vary": "accept-encoding",
+        "x-content-type-options": "nosniff",
+        "x-deployment-id": "psr2.cf14717a-af2a-4961-854a-3adf9053a1ef.1793000006.5o_4YapwCW3Zn-N76zaO3fM72okMvtofHafaF7Ypkaw"
+      },
+      "bytes": 63477,
+      "sha256": "bdbcecf3d2d55426ccda8db8360c659ba09a5008079d9696743068529b222ac0",
+      "file": "public-snapshot/GET-digitecme.com-__ar__brands__rolls-royce-service-dubai__mechanical-repair.body",
+      "title": "الإصلاح الميكانيكي Rolls-Royce في دبي | ديجي-تك",
+      "description": "الإصلاح الميكانيكي Rolls-Royce في دبي. تقييم التسرب والضجيج والاهتزاز ومشاكل التبريد أو الحركة لتحديد نطاق الإصلاح من نتائج الفحص.",
+      "h1": [
+        "الإصلاح الميكانيكي Rolls-Royce في دبي"
+      ],
+      "canonical": "https://digitecme.com/ar/brands/rolls-royce-service-dubai/mechanical-repair",
+      "robots": "index, follow, max-image-preview:large",
+      "scripts": [
+        "https://www.googletagmanager.com/gtag/js?id=G-4TRCEJSY4S",
+        "/assets/index-CkbEeNd8.js",
+        "/~flock.js",
+        "/__l5e/events.124894084da8c432.js",
+        "/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
+      ],
+      "css": [
+        "/assets/index-DQ4NvsET.css"
+      ]
+    },
+    {
+      "url": "https://digitecme.com/ar/brands/rolls-royce-service-dubai/suspension-repair",
+      "method": "GET",
+      "status": 200,
+      "headers": {
+        "alt-svc": "h3=\":443\"; ma=86400",
+        "cache-control": "no-cache, must-revalidate, max-age=0",
+        "cf-cache-status": "DYNAMIC",
+        "cf-ray": "a4ce183b4bc9c28d-CDG",
+        "connection": "keep-alive",
+        "content-encoding": "br",
+        "content-type": "text/html; charset=utf-8",
+        "date": "Mon, 19 Oct 2026 07:33:27 GMT",
+        "referrer-policy": "strict-origin-when-cross-origin",
+        "server": "cloudflare",
+        "speculation-rules": "\"/cdn-cgi/speculation\"",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "transfer-encoding": "chunked",
+        "vary": "accept-encoding",
+        "x-content-type-options": "nosniff",
+        "x-deployment-id": "psr2.cf14717a-af2a-4961-854a-3adf9053a1ef.1793000006.5o_4YapwCW3Zn-N76zaO3fM72okMvtofHafaF7Ypkaw"
+      },
+      "bytes": 63278,
+      "sha256": "2a86b503c833e4f6dc5afc8fd6af8969996bc0607af0f916db334e09b9caedf7",
+      "file": "public-snapshot/GET-digitecme.com-__ar__brands__rolls-royce-service-dubai__suspension-repair.body",
+      "title": "إصلاح التعليق Rolls-Royce في دبي | ديجي-تك",
+      "description": "إصلاح التعليق Rolls-Royce في دبي. تقييم تغير ارتفاع السيارة والضجيج والراحة والتآكل غير المنتظم للإطارات حسب نظام التعليق المركب.",
+      "h1": [
+        "إصلاح التعليق Rolls-Royce في دبي"
+      ],
+      "canonical": "https://digitecme.com/ar/brands/rolls-royce-service-dubai/suspension-repair",
+      "robots": "index, follow, max-image-preview:large",
+      "scripts": [
+        "https://www.googletagmanager.com/gtag/js?id=G-4TRCEJSY4S",
+        "/assets/index-CkbEeNd8.js",
+        "/~flock.js",
+        "/__l5e/events.124894084da8c432.js",
+        "/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
+      ],
+      "css": [
+        "/assets/index-DQ4NvsET.css"
+      ]
+    },
+    {
+      "url": "https://digitecme.com/ar/brands/rolls-royce-service-dubai",
+      "method": "GET",
+      "status": 200,
+      "headers": {
+        "alt-svc": "h3=\":443\"; ma=86400",
+        "cache-control": "no-cache, must-revalidate, max-age=0",
+        "cf-cache-status": "DYNAMIC",
+        "cf-ray": "a4ce18343d0cdd48-HKG",
+        "connection": "keep-alive",
+        "content-encoding": "br",
+        "content-type": "text/html; charset=utf-8",
+        "date": "Mon, 19 Oct 2026 07:33:26 GMT",
+        "referrer-policy": "strict-origin-when-cross-origin",
+        "server": "cloudflare",
+        "speculation-rules": "\"/cdn-cgi/speculation\"",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "transfer-encoding": "chunked",
+        "vary": "accept-encoding",
+        "x-content-type-options": "nosniff",
+        "x-deployment-id": "psr2.cf14717a-af2a-4961-854a-3adf9053a1ef.1793000005.6EPJ3LUmpZZhJhf_Wa6lgu-eHLDgxnFk1B05bTqPdiU"
+      },
+      "bytes": 88247,
+      "sha256": "dc89c3b916e849109b9abbdaf4266f94ed80bd8876952ccd5356c6619b74cf8d",
+      "file": "public-snapshot/GET-digitecme.com-__ar__brands__rolls-royce-service-dubai.body",
+      "title": "إصلاح وصيانة Rolls-Royce في دبي | مركز ديجي-تك",
+      "description": "إصلاح وصيانة Rolls-Royce في دبي: تشخيص وصيانة وفرامل وناقل حركة وتعليق وتكييف مع قطع بالمواصفات المناسبة لدى مركز ديجي-تك.",
+      "h1": [
+        "Rolls-Royce للإصلاح والصيانة في دبي"
+      ],
+      "canonical": "https://digitecme.com/ar/brands/rolls-royce-service-dubai",
+      "robots": "index, follow, max-image-preview:large",
+      "scripts": [
+        "https://www.googletagmanager.com/gtag/js?id=G-4TRCEJSY4S",
+        "/assets/index-CkbEeNd8.js",
+        "/~flock.js",
+        "/__l5e/events.124894084da8c432.js",
+        "/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
+      ],
+      "css": [
+        "/assets/index-DQ4NvsET.css"
+      ]
+    },
+    {
+      "url": "https://digitecme.com/ar/brands/volkswagen-service-dubai",
+      "method": "GET",
+      "status": 200,
+      "headers": {
+        "alt-svc": "h3=\":443\"; ma=86400",
+        "cache-control": "no-cache, must-revalidate, max-age=0",
+        "cf-cache-status": "DYNAMIC",
+        "cf-ray": "a4ce1834fb14c28d-CDG",
+        "connection": "keep-alive",
+        "content-encoding": "br",
+        "content-type": "text/html; charset=utf-8",
+        "date": "Mon, 19 Oct 2026 07:33:26 GMT",
+        "referrer-policy": "strict-origin-when-cross-origin",
+        "server": "cloudflare",
+        "speculation-rules": "\"/cdn-cgi/speculation\"",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "transfer-encoding": "chunked",
+        "vary": "accept-encoding",
+        "x-content-type-options": "nosniff",
+        "x-deployment-id": "psr2.cf14717a-af2a-4961-854a-3adf9053a1ef.1793000005.6EPJ3LUmpZZhJhf_Wa6lgu-eHLDgxnFk1B05bTqPdiU"
+      },
+      "bytes": 88177,
+      "sha256": "56d858b1f7edb597fd78fc0a03e198d4966f934a92cb02ed612412c5f00f446f",
+      "file": "public-snapshot/GET-digitecme.com-__ar__brands__volkswagen-service-dubai.body",
+      "title": "إصلاح وصيانة Volkswagen في دبي | مركز ديجي-تك",
+      "description": "إصلاح وصيانة Volkswagen في دبي: تشخيص وصيانة وفرامل وناقل حركة وتعليق وتكييف مع قطع بالمواصفات المناسبة لدى مركز ديجي-تك.",
+      "h1": [
+        "Volkswagen للإصلاح والصيانة في دبي"
+      ],
+      "canonical": "https://digitecme.com/ar/brands/volkswagen-service-dubai",
+      "robots": "index, follow, max-image-preview:large",
+      "scripts": [
+        "https://www.googletagmanager.com/gtag/js?id=G-4TRCEJSY4S",
+        "/assets/index-CkbEeNd8.js",
+        "/~flock.js",
+        "/__l5e/events.124894084da8c432.js",
+        "/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
+      ],
+      "css": [
+        "/assets/index-DQ4NvsET.css"
+      ]
+    },
+    {
+      "url": "https://digitecme.com/ar/services/mercedes-diagnostics-dubai",
+      "method": "GET",
+      "status": 200,
+      "headers": {
+        "alt-svc": "h3=\":443\"; ma=86400",
+        "cache-control": "no-cache, must-revalidate, max-age=0",
+        "cf-cache-status": "DYNAMIC",
+        "cf-ray": "a4ce18387e1a0506-HKG",
+        "connection": "keep-alive",
+        "content-encoding": "br",
+        "content-type": "text/html; charset=utf-8",
+        "date": "Mon, 19 Oct 2026 07:33:26 GMT",
+        "referrer-policy": "strict-origin-when-cross-origin",
+        "server": "cloudflare",
+        "speculation-rules": "\"/cdn-cgi/speculation\"",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "transfer-encoding": "chunked",
+        "vary": "accept-encoding",
+        "x-content-type-options": "nosniff",
+        "x-deployment-id": "psr2.cf14717a-af2a-4961-854a-3adf9053a1ef.1793000006.5o_4YapwCW3Zn-N76zaO3fM72okMvtofHafaF7Ypkaw"
+      },
+      "bytes": 66517,
+      "sha256": "c91bb03941b9bd42c5fca59545bb024df7cc00812e687ddcd684d61a17449275",
+      "file": "public-snapshot/GET-digitecme.com-__ar__services__mercedes-diagnostics-dubai.body",
+      "title": "فحص مرسيدس XENTRY في دبي | تشخيص الأعطال | ديجي تيك",
+      "description": "تشخيص مرسيدس باستخدام XENTRY في القوز، دبي. قراءة الأعطال والبيانات واختبارات مدعومة، مع تأكيد نطاق الترميز والبرمجة حسب السيارة والوحدة.",
+      "h1": [
+        "فحص وتشخيص أعطال مرسيدس باستخدام XENTRY في دبي"
+      ],
+      "canonical": "https://digitecme.com/ar/services/mercedes-diagnostics-dubai",
+      "robots": "index, follow, max-image-preview:large",
+      "scripts": [
+        "https://www.googletagmanager.com/gtag/js?id=G-4TRCEJSY4S",
+        "/assets/index-CkbEeNd8.js",
+        "/~flock.js",
+        "/__l5e/events.124894084da8c432.js",
+        "/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
+      ],
+      "css": [
+        "/assets/index-DQ4NvsET.css"
+      ]
+    },
+    {
+      "url": "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai",
+      "method": "GET",
+      "status": 200,
+      "headers": {
+        "alt-svc": "h3=\":443\"; ma=86400",
+        "cache-control": "no-cache, must-revalidate, max-age=0",
+        "cf-cache-status": "DYNAMIC",
+        "cf-ray": "a4ce1836cb3ddd48-HKG",
+        "connection": "keep-alive",
+        "content-encoding": "br",
+        "content-type": "text/html; charset=utf-8",
+        "date": "Mon, 19 Oct 2026 07:33:26 GMT",
+        "referrer-policy": "strict-origin-when-cross-origin",
+        "server": "cloudflare",
+        "speculation-rules": "\"/cdn-cgi/speculation\"",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "transfer-encoding": "chunked",
+        "vary": "accept-encoding",
+        "x-content-type-options": "nosniff",
+        "x-deployment-id": "psr2.cf14717a-af2a-4961-854a-3adf9053a1ef.1793000006.5o_4YapwCW3Zn-N76zaO3fM72okMvtofHafaF7Ypkaw"
+      },
+      "bytes": 64713,
+      "sha256": "4db3058ff1ed5cb0a7b54869fb23414070dd9ac18ba08eab7f75ff01e12bbebd",
+      "file": "public-snapshot/GET-digitecme.com-__ar__services__mercedes-mechanical-repair-dubai.body",
+      "title": "إصلاح محرك مرسيدس في دبي | ديجي تيك القوز",
+      "description": "فحص أعطال محرك مرسيدس في القوز، دبي: تسريب الزيت، ارتفاع الحرارة، الاهتزاز والدخان. نحدد سبب العطل ونوضح نطاق الإصلاح قبل العمل.",
+      "h1": [
+        "إصلاح محرك مرسيدس والأعطال الميكانيكية في دبي"
+      ],
+      "canonical": "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai",
+      "robots": "index, follow, max-image-preview:large",
+      "scripts": [
+        "https://www.googletagmanager.com/gtag/js?id=G-4TRCEJSY4S",
+        "/assets/index-CkbEeNd8.js",
+        "/~flock.js",
+        "/__l5e/events.124894084da8c432.js",
+        "/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
+      ],
+      "css": [
+        "/assets/index-DQ4NvsET.css"
+      ]
+    },
+    {
+      "url": "https://digitecme.com/ar/services/mercedes-suspension-repair-dubai",
+      "method": "GET",
+      "status": 200,
+      "headers": {
+        "alt-svc": "h3=\":443\"; ma=86400",
+        "cache-control": "no-cache, must-revalidate, max-age=0",
+        "cf-cache-status": "DYNAMIC",
+        "cf-ray": "a4ce18371d23dd3d-HKG",
+        "connection": "keep-alive",
+        "content-encoding": "br",
+        "content-type": "text/html; charset=utf-8",
+        "date": "Mon, 19 Oct 2026 07:33:27 GMT",
+        "referrer-policy": "strict-origin-when-cross-origin",
+        "server": "cloudflare",
+        "speculation-rules": "\"/cdn-cgi/speculation\"",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "transfer-encoding": "chunked",
+        "vary": "accept-encoding",
+        "x-content-type-options": "nosniff",
+        "x-deployment-id": "psr2.cf14717a-af2a-4961-854a-3adf9053a1ef.1793000006.5o_4YapwCW3Zn-N76zaO3fM72okMvtofHafaF7Ypkaw"
+      },
+      "bytes": 63675,
+      "sha256": "8a2143ffa66faf61ee18a47889f9ca15be253b88e55c396f28e440b8fcb2144b",
+      "file": "public-snapshot/GET-digitecme.com-__ar__services__mercedes-suspension-repair-dubai.body",
+      "title": "إصلاح تعليق مرسيدس وAIRMATIC في دبي | ديجي تيك",
+      "description": "فحص تعليق مرسيدس وAIRMATIC في القوز: هبوط السيارة، اختلاف الارتفاع، تسريب الهواء وأصوات التعليق. تشخيص حسب التجهيزات الفعلية.",
+      "h1": [
+        "إصلاح تعليق مرسيدس ونظام AIRMATIC في دبي"
+      ],
+      "canonical": "https://digitecme.com/ar/services/mercedes-suspension-repair-dubai",
+      "robots": "index, follow, max-image-preview:large",
+      "scripts": [
+        "https://www.googletagmanager.com/gtag/js?id=G-4TRCEJSY4S",
+        "/assets/index-CkbEeNd8.js",
+        "/~flock.js",
+        "/__l5e/events.124894084da8c432.js",
+        "/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
+      ],
+      "css": [
+        "/assets/index-DQ4NvsET.css"
+      ]
+    },
+    {
+      "url": "https://digitecme.com/ar/services/mercedes-transmission-repair-dubai",
+      "method": "GET",
+      "status": 200,
+      "headers": {
+        "alt-svc": "h3=\":443\"; ma=86400",
+        "cache-control": "no-cache, must-revalidate, max-age=0",
+        "cf-cache-status": "DYNAMIC",
+        "cf-ray": "a4ce1837aa11c28d-CDG",
+        "connection": "keep-alive",
+        "content-encoding": "br",
+        "content-type": "text/html; charset=utf-8",
+        "date": "Mon, 19 Oct 2026 07:33:26 GMT",
+        "referrer-policy": "strict-origin-when-cross-origin",
+        "server": "cloudflare",
+        "speculation-rules": "\"/cdn-cgi/speculation\"",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "transfer-encoding": "chunked",
+        "vary": "accept-encoding",
+        "x-content-type-options": "nosniff",
+        "x-deployment-id": "psr2.cf14717a-af2a-4961-854a-3adf9053a1ef.1793000006.5o_4YapwCW3Zn-N76zaO3fM72okMvtofHafaF7Ypkaw"
+      },
+      "bytes": 63675,
+      "sha256": "db4936ec9560cb614f5451e6ba76a4759fc7d478e4e125c674af57332e2d54dd",
+      "file": "public-snapshot/GET-digitecme.com-__ar__services__mercedes-transmission-repair-dubai.body",
+      "title": "إصلاح قير مرسيدس في دبي | 7G و9G | ديجي تيك",
+      "description": "فحص قير مرسيدس في القوز، دبي عند النتعة أو الانزلاق أو تأخر التعشيق. نميز بين خدمة الزيت وإصلاح العطل حسب ناقل الحركة المثبت.",
+      "h1": [
+        "إصلاح قير مرسيدس وناقل الحركة في دبي"
+      ],
+      "canonical": "https://digitecme.com/ar/services/mercedes-transmission-repair-dubai",
+      "robots": "index, follow, max-image-preview:large",
+      "scripts": [
+        "https://www.googletagmanager.com/gtag/js?id=G-4TRCEJSY4S",
+        "/assets/index-CkbEeNd8.js",
+        "/~flock.js",
+        "/__l5e/events.124894084da8c432.js",
+        "/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
+      ],
+      "css": [
+        "/assets/index-DQ4NvsET.css"
+      ]
+    },
+    {
+      "url": "https://digitecme.com/ar/services/paint-protection-dubai",
+      "method": "GET",
+      "status": 200,
+      "headers": {
+        "alt-svc": "h3=\":443\"; ma=86400",
+        "cache-control": "no-cache, must-revalidate, max-age=0",
+        "cf-cache-status": "DYNAMIC",
+        "cf-ray": "a4ce183eda7fdd48-HKG",
+        "connection": "keep-alive",
+        "content-encoding": "br",
+        "content-type": "text/html; charset=utf-8",
+        "date": "Mon, 19 Oct 2026 07:33:27 GMT",
+        "referrer-policy": "strict-origin-when-cross-origin",
+        "server": "cloudflare",
+        "speculation-rules": "\"/cdn-cgi/speculation\"",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "transfer-encoding": "chunked",
+        "vary": "accept-encoding",
+        "x-content-type-options": "nosniff",
+        "x-deployment-id": "psr2.cf14717a-af2a-4961-854a-3adf9053a1ef.1793000007.2bfFi0s0tS-h7-DBIgJGhz777Dvv8boIcsx_k-KKrwI"
+      },
+      "bytes": 49714,
+      "sha256": "efecf1d389ce0ab23b89fe2e646ee7d93335c680e0023405b4048cad2ab622d8",
+      "file": "public-snapshot/GET-digitecme.com-__ar__services__paint-protection-dubai.body",
+      "title": "حماية طلاء السيارة في دبي | أفلام PPF والسيراميك | ديجي-تك",
+      "description": "قارن أفلام حماية الطلاء PPF وسيراميك السيارات وتصحيح الطلاء في دبي. اختر التحضير والتغطية وفق حالة سيارتك واستخدامها واطلب عرضاً من ديجي-تك في القوز.",
+      "h1": [
+        "حماية طلاء السيارة في دبي"
+      ],
+      "canonical": "https://digitecme.com/ar/services/paint-protection-dubai",
+      "robots": "index, follow, max-image-preview:large",
+      "scripts": [
+        "https://www.googletagmanager.com/gtag/js?id=G-4TRCEJSY4S",
+        "/assets/index-CkbEeNd8.js",
+        "/~flock.js",
+        "/__l5e/events.124894084da8c432.js",
+        "/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
+      ],
+      "css": [
+        "/assets/index-DQ4NvsET.css"
+      ]
+    },
+    {
+      "url": "https://digitecme.com/ar/services/paint-protection-film",
+      "method": "GET",
+      "status": 200,
+      "headers": {
+        "alt-svc": "h3=\":443\"; ma=86400",
+        "cache-control": "no-cache, must-revalidate, max-age=0",
+        "cf-cache-status": "DYNAMIC",
+        "cf-ray": "a4ce183e0b860506-HKG",
+        "connection": "keep-alive",
+        "content-encoding": "br",
+        "content-type": "text/html; charset=utf-8",
+        "date": "Mon, 19 Oct 2026 07:33:27 GMT",
+        "referrer-policy": "strict-origin-when-cross-origin",
+        "server": "cloudflare",
+        "speculation-rules": "\"/cdn-cgi/speculation\"",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "transfer-encoding": "chunked",
+        "vary": "accept-encoding",
+        "x-content-type-options": "nosniff",
+        "x-deployment-id": "psr2.cf14717a-af2a-4961-854a-3adf9053a1ef.1793000007.2bfFi0s0tS-h7-DBIgJGhz777Dvv8boIcsx_k-KKrwI"
+      },
+      "bytes": 89583,
+      "sha256": "ebaed19390fbfa1b3e2304dc68465150954d01013f58408fd1779adac1586e8d",
+      "file": "public-snapshot/GET-digitecme.com-__ar__services__paint-protection-film.body",
+      "title": "أفلام حماية الطلاء PPF دبي | التغطية والتركيب | ديجي-تك",
+      "description": "تركيب أفلام PPF في القوز، دبي. ناقش تغطية كاملة أو جزئية وتحضير الطلاء والحواف والعناية حسب الفيلم والسيارة. اطلب عرضاً للتغطية المطلوبة.",
+      "h1": [
+        "تركيب أفلام حماية الطلاء PPF في دبي"
+      ],
+      "canonical": "https://digitecme.com/ar/services/paint-protection-film",
+      "robots": "index, follow, max-image-preview:large",
+      "scripts": [
+        "https://www.googletagmanager.com/gtag/js?id=G-4TRCEJSY4S",
+        "/assets/index-CkbEeNd8.js",
+        "/~flock.js",
+        "/__l5e/events.124894084da8c432.js",
+        "/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
+      ],
+      "css": [
+        "/assets/index-DQ4NvsET.css"
+      ]
+    },
+    {
+      "url": "https://digitecme.com/ar/tuning",
+      "method": "GET",
+      "status": 200,
+      "headers": {
+        "alt-svc": "h3=\":443\"; ma=86400",
+        "cache-control": "no-cache, must-revalidate, max-age=0",
+        "cf-cache-status": "DYNAMIC",
+        "cf-ray": "a4ce183fbe5cdd3d-HKG",
+        "connection": "keep-alive",
+        "content-encoding": "br",
+        "content-type": "text/html; charset=utf-8",
+        "date": "Mon, 19 Oct 2026 07:33:27 GMT",
+        "referrer-policy": "strict-origin-when-cross-origin",
+        "server": "cloudflare",
+        "speculation-rules": "\"/cdn-cgi/speculation\"",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "transfer-encoding": "chunked",
+        "vary": "accept-encoding",
+        "x-content-type-options": "nosniff",
+        "x-deployment-id": "psr2.cf14717a-af2a-4961-854a-3adf9053a1ef.1793000007.2bfFi0s0tS-h7-DBIgJGhz777Dvv8boIcsx_k-KKrwI"
+      },
+      "bytes": 164009,
+      "sha256": "1bef9f321ece0496e117b0c7fbea0eea45917310b9effa7128e8f0113d737ff7",
+      "file": "public-snapshot/GET-digitecme.com-__ar__tuning.body",
+      "title": "برمجة وتطوير أداء السيارات في دبي | ديجي-تك",
+      "description": "برمجة ECU ومشاريع تطوير أداء مرتبطة بحالة السيارة والوقود والاستخدام والقطع الداعمة لدى ديجي-تك في القوز، دبي.",
+      "h1": [
+        "تطوير أداء السيارات في دبي"
+      ],
+      "canonical": "https://digitecme.com/ar/tuning",
+      "robots": "index, follow, max-image-preview:large",
+      "scripts": [
+        "https://www.googletagmanager.com/gtag/js?id=G-4TRCEJSY4S",
+        "/assets/index-CkbEeNd8.js",
+        "/~flock.js",
+        "/__l5e/events.124894084da8c432.js",
+        "/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
+      ],
+      "css": [
+        "/assets/index-DQ4NvsET.css"
+      ]
+    },
+    {
+      "url": "https://digitecme.com/brands/bmw-service-dubai/mechanical-repair",
+      "method": "GET",
+      "status": 200,
+      "headers": {
+        "alt-svc": "h3=\":443\"; ma=86400",
+        "cache-control": "no-cache, must-revalidate, max-age=0",
+        "cf-cache-status": "DYNAMIC",
+        "cf-ray": "a4ce18318f0ddd48-HKG",
+        "connection": "keep-alive",
+        "content-encoding": "br",
+        "content-type": "text/html; charset=utf-8",
+        "date": "Mon, 19 Oct 2026 07:33:25 GMT",
+        "referrer-policy": "strict-origin-when-cross-origin",
+        "server": "cloudflare",
+        "speculation-rules": "\"/cdn-cgi/speculation\"",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "transfer-encoding": "chunked",
+        "vary": "accept-encoding",
+        "x-content-type-options": "nosniff",
+        "x-deployment-id": "psr2.cf14717a-af2a-4961-854a-3adf9053a1ef.1793000005.6EPJ3LUmpZZhJhf_Wa6lgu-eHLDgxnFk1B05bTqPdiU"
+      },
+      "bytes": 63725,
+      "sha256": "2cb0e9cc84d26cb5feb05b37ed2fe3cf0a7bad9bea19062935d9c66de0dc5158",
+      "file": "public-snapshot/GET-digitecme.com-__brands__bmw-service-dubai__mechanical-repair.body",
+      "title": "BMW Engine &amp; Mechanical Repair Dubai | DIGI-TEC",
+      "description": "BMW engine and mechanical repair assessment in Al Quoz for leaks, overheating, rough running and power loss. A diagnosis precedes a repair quote.",
+      "h1": [
+        "BMW Mechanical Repair Dubai"
+      ],
+      "canonical": "https://digitecme.com/brands/bmw-service-dubai/mechanical-repair",
+      "robots": "index, follow, max-image-preview:large",
+      "scripts": [
+        "https://www.googletagmanager.com/gtag/js?id=G-4TRCEJSY4S",
+        "/assets/index-CkbEeNd8.js",
+        "/~flock.js",
+        "/__l5e/events.124894084da8c432.js",
+        "/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
+      ],
+      "css": [
+        "/assets/index-DQ4NvsET.css"
+      ]
+    },
+    {
+      "url": "https://digitecme.com/brands/bmw-service-dubai/transmission-repair/?utm_source=release-preflight&utm_medium=verification",
+      "method": "GET",
+      "status": 200,
+      "headers": {
+        "alt-svc": "h3=\":443\"; ma=86400",
+        "cache-control": "no-cache, must-revalidate, max-age=0",
+        "cf-cache-status": "DYNAMIC",
+        "cf-ray": "a4ce1843c9010506-HKG",
+        "connection": "keep-alive",
+        "content-encoding": "br",
+        "content-type": "text/html; charset=utf-8",
+        "date": "Mon, 19 Oct 2026 07:33:28 GMT",
+        "referrer-policy": "strict-origin-when-cross-origin",
+        "server": "cloudflare",
+        "speculation-rules": "\"/cdn-cgi/speculation\"",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "transfer-encoding": "chunked",
+        "vary": "accept-encoding",
+        "x-content-type-options": "nosniff",
+        "x-deployment-id": "psr2.cf14717a-af2a-4961-854a-3adf9053a1ef.1793000008.OKgULVgLnHcmBNnq7uZsKC5OnSLl8XidGiqPKnSIl9Y"
+      },
+      "bytes": 62610,
+      "sha256": "87a6a8a74bf7f00a0d31902996f95d82f99037a0fbace90ecc8f4525b46f5b53",
+      "file": "public-snapshot/GET-digitecme.com-__brands__bmw-service-dubai__transmission-repair__.body",
+      "title": "BMW Transmission Repair Dubai | Digi-Tec",
+      "description": "BMW transmission repair in Dubai with model-specific inspection, confirmed parts options and a clear quote at Digi-Tec, Al Quoz.",
+      "h1": [
+        "BMW Transmission Repair Dubai"
+      ],
+      "canonical": "https://digitecme.com/brands/bmw-service-dubai/transmission-repair",
+      "robots": "index, follow, max-image-preview:large",
+      "scripts": [
+        "https://www.googletagmanager.com/gtag/js?id=G-4TRCEJSY4S",
+        "/assets/index-CkbEeNd8.js",
+        "/~flock.js",
+        "/__l5e/events.124894084da8c432.js",
+        "/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
+      ],
+      "css": [
+        "/assets/index-DQ4NvsET.css"
+      ]
+    },
+    {
+      "url": "https://digitecme.com/brands/bmw-service-dubai/transmission-repair/?utm_source=release-preflight&utm_medium=verification",
+      "method": "HEAD",
+      "status": 200,
+      "headers": {
+        "alt-svc": "h3=\":443\"; ma=86400",
+        "cache-control": "no-cache, must-revalidate, max-age=0",
+        "cf-cache-status": "DYNAMIC",
+        "cf-ray": "a4ce184599ebf995-HKG",
+        "connection": "close",
+        "content-encoding": "br",
+        "content-type": "text/html; charset=utf-8",
+        "date": "Mon, 19 Oct 2026 07:33:28 GMT",
+        "referrer-policy": "strict-origin-when-cross-origin",
+        "server": "cloudflare",
+        "speculation-rules": "\"/cdn-cgi/speculation\"",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "x-content-type-options": "nosniff",
+        "x-deployment-id": "psr2.cf14717a-af2a-4961-854a-3adf9053a1ef.1793000008.OKgULVgLnHcmBNnq7uZsKC5OnSLl8XidGiqPKnSIl9Y"
+      },
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "file": "public-snapshot/HEAD-digitecme.com-__brands__bmw-service-dubai__transmission-repair__.body",
+      "title": "",
+      "description": "",
+      "h1": [],
+      "canonical": "",
+      "robots": "",
+      "scripts": [],
+      "css": []
+    },
+    {
+      "url": "https://digitecme.com/brands/bmw-service-dubai/transmission-repair",
+      "method": "GET",
+      "status": 200,
+      "headers": {
+        "alt-svc": "h3=\":443\"; ma=86400",
+        "cache-control": "no-cache, must-revalidate, max-age=0",
+        "cf-cache-status": "DYNAMIC",
+        "cf-ray": "a4ce1830f83ec28d-CDG",
+        "connection": "keep-alive",
+        "content-encoding": "br",
+        "content-type": "text/html; charset=utf-8",
+        "date": "Mon, 19 Oct 2026 07:33:25 GMT",
+        "referrer-policy": "strict-origin-when-cross-origin",
+        "server": "cloudflare",
+        "speculation-rules": "\"/cdn-cgi/speculation\"",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "transfer-encoding": "chunked",
+        "vary": "accept-encoding",
+        "x-content-type-options": "nosniff",
+        "x-deployment-id": "psr2.cf14717a-af2a-4961-854a-3adf9053a1ef.1793000005.6EPJ3LUmpZZhJhf_Wa6lgu-eHLDgxnFk1B05bTqPdiU"
+      },
+      "bytes": 62610,
+      "sha256": "ab1d860e59c4f10c9af54089ed6e6cfd246dc2ef0dc84ed2daee21aa4bd1725f",
+      "file": "public-snapshot/GET-digitecme.com-__brands__bmw-service-dubai__transmission-repair.body",
+      "title": "BMW Transmission Repair Dubai | Digi-Tec",
+      "description": "BMW transmission repair in Dubai with model-specific inspection, confirmed parts options and a clear quote at Digi-Tec, Al Quoz.",
+      "h1": [
+        "BMW Transmission Repair Dubai"
+      ],
+      "canonical": "https://digitecme.com/brands/bmw-service-dubai/transmission-repair",
+      "robots": "index, follow, max-image-preview:large",
+      "scripts": [
+        "https://www.googletagmanager.com/gtag/js?id=G-4TRCEJSY4S",
+        "/assets/index-CkbEeNd8.js",
+        "/~flock.js",
+        "/__l5e/events.124894084da8c432.js",
+        "/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
+      ],
+      "css": [
+        "/assets/index-DQ4NvsET.css"
+      ]
+    },
+    {
+      "url": "https://digitecme.com/brands/bmw-service-dubai",
+      "method": "GET",
+      "status": 200,
+      "headers": {
+        "alt-svc": "h3=\":443\"; ma=86400",
+        "cache-control": "no-cache, must-revalidate, max-age=0",
+        "cf-cache-status": "DYNAMIC",
+        "cf-ray": "a4ce182a3e3dc28d-CDG",
+        "connection": "keep-alive",
+        "content-encoding": "br",
+        "content-type": "text/html; charset=utf-8",
+        "date": "Mon, 19 Oct 2026 07:33:24 GMT",
+        "referrer-policy": "strict-origin-when-cross-origin",
+        "server": "cloudflare",
+        "speculation-rules": "\"/cdn-cgi/speculation\"",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "transfer-encoding": "chunked",
+        "vary": "accept-encoding",
+        "x-content-type-options": "nosniff",
+        "x-deployment-id": "psr2.cf14717a-af2a-4961-854a-3adf9053a1ef.1793000004.SBe6ebAUB9mfwnTD9mo33eRpF2FniP8DPJqjz4sEHuI"
+      },
+      "bytes": 114006,
+      "sha256": "14822f9d1098a04c4567e3e4eeaae4b1f2ceb237bb81ebb0d951e547e6784b88",
+      "file": "public-snapshot/GET-digitecme.com-__brands__bmw-service-dubai.body",
+      "title": "BMW Service &amp; Repair Dubai | DIGI-TEC",
+      "description": "BMW service and repair in Al Quoz, Dubai. Independent workshop for scheduled maintenance, engine diagnostics, transmission, brakes, AC and electrical faults.",
+      "h1": [
+        "BMW Service &amp; Repair Dubai"
+      ],
+      "canonical": "https://digitecme.com/brands/bmw-service-dubai",
+      "robots": "index, follow, max-image-preview:large",
+      "scripts": [
+        "https://www.googletagmanager.com/gtag/js?id=G-4TRCEJSY4S",
+        "/assets/index-CkbEeNd8.js",
+        "/~flock.js",
+        "/__l5e/events.124894084da8c432.js",
+        "/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
+      ],
+      "css": [
+        "/assets/index-DQ4NvsET.css"
+      ]
+    },
+    {
+      "url": "https://digitecme.com/brands/lamborghini-service-dubai/mechanical-repair",
+      "method": "GET",
+      "status": 200,
+      "headers": {
+        "alt-svc": "h3=\":443\"; ma=86400",
+        "cache-control": "no-cache, must-revalidate, max-age=0",
+        "cf-cache-status": "DYNAMIC",
+        "cf-ray": "a4ce183308ac0506-HKG",
+        "connection": "keep-alive",
+        "content-encoding": "br",
+        "content-type": "text/html; charset=utf-8",
+        "date": "Mon, 19 Oct 2026 07:33:25 GMT",
+        "referrer-policy": "strict-origin-when-cross-origin",
+        "server": "cloudflare",
+        "speculation-rules": "\"/cdn-cgi/speculation\"",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "transfer-encoding": "chunked",
+        "vary": "accept-encoding",
+        "x-content-type-options": "nosniff",
+        "x-deployment-id": "psr2.cf14717a-af2a-4961-854a-3adf9053a1ef.1793000005.6EPJ3LUmpZZhJhf_Wa6lgu-eHLDgxnFk1B05bTqPdiU"
+      },
+      "bytes": 59006,
+      "sha256": "62e9db113d1cfde99fe393340aa72e6af190356c92694084547da4d0d8047ac0",
+      "file": "public-snapshot/GET-digitecme.com-__brands__lamborghini-service-dubai__mechanical-repair.body",
+      "title": "Lamborghini Engine Repair Dubai | DIGI-TEC",
+      "description": "Lamborghini engine, cooling and mechanical assessment in Al Quoz, Dubai. Repair scope follows vehicle identification and diagnostic findings.",
+      "h1": [
+        "Lamborghini Engine &amp; Mechanical Repair Dubai"
+      ],
+      "canonical": "https://digitecme.com/brands/lamborghini-service-dubai/mechanical-repair",
+      "robots": "index, follow, max-image-preview:large",
+      "scripts": [
+        "https://www.googletagmanager.com/gtag/js?id=G-4TRCEJSY4S",
+        "/assets/index-CkbEeNd8.js",
+        "/~flock.js",
+        "/__l5e/events.124894084da8c432.js",
+        "/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
+      ],
+      "css": [
+        "/assets/index-DQ4NvsET.css"
+      ]
+    },
+    {
+      "url": "https://digitecme.com/brands/lamborghini-service-dubai/transmission-repair",
+      "method": "GET",
+      "status": 200,
+      "headers": {
+        "alt-svc": "h3=\":443\"; ma=86400",
+        "cache-control": "no-cache, must-revalidate, max-age=0",
+        "cf-cache-status": "DYNAMIC",
+        "cf-ray": "a4ce1833bfdfc28d-CDG",
+        "connection": "keep-alive",
+        "content-encoding": "br",
+        "content-type": "text/html; charset=utf-8",
+        "date": "Mon, 19 Oct 2026 07:33:25 GMT",
+        "referrer-policy": "strict-origin-when-cross-origin",
+        "server": "cloudflare",
+        "speculation-rules": "\"/cdn-cgi/speculation\"",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "transfer-encoding": "chunked",
+        "vary": "accept-encoding",
+        "x-content-type-options": "nosniff",
+        "x-deployment-id": "psr2.cf14717a-af2a-4961-854a-3adf9053a1ef.1793000005.6EPJ3LUmpZZhJhf_Wa6lgu-eHLDgxnFk1B05bTqPdiU"
+      },
+      "bytes": 59736,
+      "sha256": "baeee9202e127c5c5f1220b3bf00668a501790be7b00df9e9bf2f15dc5ee188c",
+      "file": "public-snapshot/GET-digitecme.com-__brands__lamborghini-service-dubai__transmission-repair.body",
+      "title": "Lamborghini Transmission Repair Dubai | DIGI-TEC",
+      "description": "Lamborghini gearbox and transmission assessment in Al Quoz, Dubai. LDF, ISR and automatic systems are identified before service or repair is proposed.",
+      "h1": [
+        "Lamborghini Transmission &amp; Gearbox Assessment Dubai"
+      ],
+      "canonical": "https://digitecme.com/brands/lamborghini-service-dubai/transmission-repair",
+      "robots": "index, follow, max-image-preview:large",
+      "scripts": [
+        "https://www.googletagmanager.com/gtag/js?id=G-4TRCEJSY4S",
+        "/assets/index-CkbEeNd8.js",
+        "/~flock.js",
+        "/__l5e/events.124894084da8c432.js",
+        "/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
+      ],
+      "css": [
+        "/assets/index-DQ4NvsET.css"
+      ]
+    },
+    {
+      "url": "https://digitecme.com/brands/lamborghini-service-dubai",
+      "method": "GET",
+      "status": 200,
+      "headers": {
+        "alt-svc": "h3=\":443\"; ma=86400",
+        "cache-control": "no-cache, must-revalidate, max-age=0",
+        "cf-cache-status": "DYNAMIC",
+        "cf-ray": "a4ce18286f210506-HKG",
+        "connection": "keep-alive",
+        "content-encoding": "br",
+        "content-type": "text/html; charset=utf-8",
+        "date": "Mon, 19 Oct 2026 07:33:25 GMT",
+        "referrer-policy": "strict-origin-when-cross-origin",
+        "server": "cloudflare",
+        "speculation-rules": "\"/cdn-cgi/speculation\"",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "transfer-encoding": "chunked",
+        "vary": "accept-encoding",
+        "x-content-type-options": "nosniff",
+        "x-deployment-id": "psr2.cf14717a-af2a-4961-854a-3adf9053a1ef.1793000005.6EPJ3LUmpZZhJhf_Wa6lgu-eHLDgxnFk1B05bTqPdiU"
+      },
+      "bytes": 98795,
+      "sha256": "b5d2113a8cdf7fd88c6c0331a98c60c4afcd5550b2620fc28a07704a186358da",
+      "file": "public-snapshot/GET-digitecme.com-__brands__lamborghini-service-dubai.body",
+      "title": "Lamborghini Service &amp; Repair Dubai | DIGI-TEC",
+      "description": "Lamborghini service and repair in Al Quoz, Dubai. Discuss maintenance, diagnostics and repairs for your model with DIGI-TEC. Request a service assessment.",
+      "h1": [
+        "Lamborghini Service &amp; Repair Dubai"
+      ],
+      "canonical": "https://digitecme.com/brands/lamborghini-service-dubai",
+      "robots": "index, follow, max-image-preview:large",
+      "scripts": [
+        "https://www.googletagmanager.com/gtag/js?id=G-4TRCEJSY4S",
+        "/assets/index-CkbEeNd8.js",
+        "/~flock.js",
+        "/__l5e/events.124894084da8c432.js",
+        "/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
+      ],
+      "css": [
+        "/assets/index-DQ4NvsET.css"
+      ]
+    },
+    {
+      "url": "https://digitecme.com/brands/mercedes-benz-service-dubai",
+      "method": "GET",
+      "status": 200,
+      "headers": {
+        "alt-svc": "h3=\":443\"; ma=86400",
+        "cache-control": "no-cache, must-revalidate, max-age=0",
+        "cf-cache-status": "DYNAMIC",
+        "cf-ray": "a4ce18283e8cdd48-HKG",
+        "connection": "keep-alive",
+        "content-encoding": "br",
+        "content-type": "text/html; charset=utf-8",
+        "date": "Mon, 19 Oct 2026 07:33:25 GMT",
+        "referrer-policy": "strict-origin-when-cross-origin",
+        "server": "cloudflare",
+        "speculation-rules": "\"/cdn-cgi/speculation\"",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "transfer-encoding": "chunked",
+        "vary": "accept-encoding",
+        "x-content-type-options": "nosniff",
+        "x-deployment-id": "psr2.cf14717a-af2a-4961-854a-3adf9053a1ef.1793000004.SBe6ebAUB9mfwnTD9mo33eRpF2FniP8DPJqjz4sEHuI"
+      },
+      "bytes": 160285,
+      "sha256": "cb3c90a56d2cfffac6adb990b82069369d45ef124d20d875fa08816f3982cdfd",
+      "file": "public-snapshot/GET-digitecme.com-__brands__mercedes-benz-service-dubai.body",
+      "title": "Mercedes Repair &amp; Service Dubai | Al Quoz | Digi-Tec",
+      "description": "Independent Mercedes repair and service in Al Quoz, Dubai since 2002. XENTRY diagnostics, maintenance, gearbox, AIRMATIC, AC and electrical work.",
+      "h1": [
+        "Mercedes-Benz Repair &amp; Service Dubai"
+      ],
+      "canonical": "https://digitecme.com/brands/mercedes-benz-service-dubai",
+      "robots": "index, follow, max-image-preview:large",
+      "scripts": [
+        "https://www.googletagmanager.com/gtag/js?id=G-4TRCEJSY4S",
+        "/assets/index-CkbEeNd8.js",
+        "/~flock.js",
+        "/__l5e/events.124894084da8c432.js",
+        "/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
+      ],
+      "css": [
+        "/assets/index-DQ4NvsET.css"
+      ]
+    },
+    {
+      "url": "https://digitecme.com/brands/rolls-royce-service-dubai/mechanical-repair",
+      "method": "GET",
+      "status": 200,
+      "headers": {
+        "alt-svc": "h3=\":443\"; ma=86400",
+        "cache-control": "no-cache, must-revalidate, max-age=0",
+        "cf-cache-status": "DYNAMIC",
+        "cf-ray": "a4ce18319b2fdd3d-HKG",
+        "connection": "keep-alive",
+        "content-encoding": "br",
+        "content-type": "text/html; charset=utf-8",
+        "date": "Mon, 19 Oct 2026 07:33:25 GMT",
+        "referrer-policy": "strict-origin-when-cross-origin",
+        "server": "cloudflare",
+        "speculation-rules": "\"/cdn-cgi/speculation\"",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "transfer-encoding": "chunked",
+        "vary": "accept-encoding",
+        "x-content-type-options": "nosniff",
+        "x-deployment-id": "psr2.cf14717a-af2a-4961-854a-3adf9053a1ef.1793000005.6EPJ3LUmpZZhJhf_Wa6lgu-eHLDgxnFk1B05bTqPdiU"
+      },
+      "bytes": 62047,
+      "sha256": "8fae4b20fa1e942a004d15d2da3432c275421c82082436b653cbd73a640f058f",
+      "file": "public-snapshot/GET-digitecme.com-__brands__rolls-royce-service-dubai__mechanical-repair.body",
+      "title": "Rolls-Royce Engine Repair Dubai | DIGI-TEC",
+      "description": "Rolls-Royce engine, cooling and mechanical assessment in Al Quoz, Dubai. Repair scope follows vehicle identification and inspection findings.",
+      "h1": [
+        "Rolls-Royce Engine &amp; Mechanical Repair Dubai"
+      ],
+      "canonical": "https://digitecme.com/brands/rolls-royce-service-dubai/mechanical-repair",
+      "robots": "index, follow, max-image-preview:large",
+      "scripts": [
+        "https://www.googletagmanager.com/gtag/js?id=G-4TRCEJSY4S",
+        "/assets/index-CkbEeNd8.js",
+        "/~flock.js",
+        "/__l5e/events.124894084da8c432.js",
+        "/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
+      ],
+      "css": [
+        "/assets/index-DQ4NvsET.css"
+      ]
+    },
+    {
+      "url": "https://digitecme.com/brands/rolls-royce-service-dubai/suspension-repair",
+      "method": "GET",
+      "status": 200,
+      "headers": {
+        "alt-svc": "h3=\":443\"; ma=86400",
+        "cache-control": "no-cache, must-revalidate, max-age=0",
+        "cf-cache-status": "DYNAMIC",
+        "cf-ray": "a4ce18326c3ac28d-CDG",
+        "connection": "keep-alive",
+        "content-encoding": "br",
+        "content-type": "text/html; charset=utf-8",
+        "date": "Mon, 19 Oct 2026 07:33:25 GMT",
+        "referrer-policy": "strict-origin-when-cross-origin",
+        "server": "cloudflare",
+        "speculation-rules": "\"/cdn-cgi/speculation\"",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "transfer-encoding": "chunked",
+        "vary": "accept-encoding",
+        "x-content-type-options": "nosniff",
+        "x-deployment-id": "psr2.cf14717a-af2a-4961-854a-3adf9053a1ef.1793000005.6EPJ3LUmpZZhJhf_Wa6lgu-eHLDgxnFk1B05bTqPdiU"
+      },
+      "bytes": 61997,
+      "sha256": "e5893ea6c8c0bb0819c07f0a97932c4ca1c74e18da29c75c5086cb01ea08ada6",
+      "file": "public-snapshot/GET-digitecme.com-__brands__rolls-royce-service-dubai__suspension-repair.body",
+      "title": "Rolls-Royce Suspension Repair Dubai | DIGI-TEC",
+      "description": "Rolls-Royce ride-height, air-suspension and ride-quality assessment in Al Quoz, Dubai. Fitted systems and repair scope are confirmed first.",
+      "h1": [
+        "Rolls-Royce Air Suspension Repair Dubai"
+      ],
+      "canonical": "https://digitecme.com/brands/rolls-royce-service-dubai/suspension-repair",
+      "robots": "index, follow, max-image-preview:large",
+      "scripts": [
+        "https://www.googletagmanager.com/gtag/js?id=G-4TRCEJSY4S",
+        "/assets/index-CkbEeNd8.js",
+        "/~flock.js",
+        "/__l5e/events.124894084da8c432.js",
+        "/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
+      ],
+      "css": [
+        "/assets/index-DQ4NvsET.css"
+      ]
+    },
+    {
+      "url": "https://digitecme.com/brands/rolls-royce-service-dubai",
+      "method": "GET",
+      "status": 200,
+      "headers": {
+        "alt-svc": "h3=\":443\"; ma=86400",
+        "cache-control": "no-cache, must-revalidate, max-age=0",
+        "cf-cache-status": "DYNAMIC",
+        "cf-ray": "a4ce18283967c28d-CDG",
+        "connection": "keep-alive",
+        "content-encoding": "br",
+        "content-type": "text/html; charset=utf-8",
+        "date": "Mon, 19 Oct 2026 07:33:24 GMT",
+        "referrer-policy": "strict-origin-when-cross-origin",
+        "server": "cloudflare",
+        "speculation-rules": "\"/cdn-cgi/speculation\"",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "transfer-encoding": "chunked",
+        "vary": "accept-encoding",
+        "x-content-type-options": "nosniff",
+        "x-deployment-id": "psr2.cf14717a-af2a-4961-854a-3adf9053a1ef.1793000003.Ww8NQm2k-m_dof9AO3WolQuyeSGxIFye5f2WwtiFIT8"
+      },
+      "bytes": 98798,
+      "sha256": "30b97d02e46c86e3c81e762bfa1c1ddac4eb20817f04754796493ea25bb5479f",
+      "file": "public-snapshot/GET-digitecme.com-__brands__rolls-royce-service-dubai.body",
+      "title": "Rolls-Royce Service &amp; Repair Dubai | DIGI-TEC",
+      "description": "Rolls-Royce service and repair in Al Quoz, Dubai for Ghost, Cullinan, Phantom, Wraith and Dawn. Independent maintenance, suspension and electrical diagnosis.",
+      "h1": [
+        "Rolls-Royce Service &amp; Repair Dubai"
+      ],
+      "canonical": "https://digitecme.com/brands/rolls-royce-service-dubai",
+      "robots": "index, follow, max-image-preview:large",
+      "scripts": [
+        "https://www.googletagmanager.com/gtag/js?id=G-4TRCEJSY4S",
+        "/assets/index-CkbEeNd8.js",
+        "/~flock.js",
+        "/__l5e/events.124894084da8c432.js",
+        "/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
+      ],
+      "css": [
+        "/assets/index-DQ4NvsET.css"
+      ]
+    },
+    {
+      "url": "https://digitecme.com/brands/volkswagen-service-dubai",
+      "method": "GET",
+      "status": 200,
+      "headers": {
+        "alt-svc": "h3=\":443\"; ma=86400",
+        "cache-control": "no-cache, must-revalidate, max-age=0",
+        "cf-cache-status": "DYNAMIC",
+        "cf-ray": "a4ce18282a6add3d-HKG",
+        "connection": "keep-alive",
+        "content-encoding": "br",
+        "content-type": "text/html; charset=utf-8",
+        "date": "Mon, 19 Oct 2026 07:33:25 GMT",
+        "referrer-policy": "strict-origin-when-cross-origin",
+        "server": "cloudflare",
+        "speculation-rules": "\"/cdn-cgi/speculation\"",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "transfer-encoding": "chunked",
+        "vary": "accept-encoding",
+        "x-content-type-options": "nosniff",
+        "x-deployment-id": "psr2.cf14717a-af2a-4961-854a-3adf9053a1ef.1793000004.SBe6ebAUB9mfwnTD9mo33eRpF2FniP8DPJqjz4sEHuI"
+      },
+      "bytes": 86537,
+      "sha256": "4237018bf2f473020648303964b60046fe16a4678d2d0f35b70d5d7c98e147f5",
+      "file": "public-snapshot/GET-digitecme.com-__brands__volkswagen-service-dubai.body",
+      "title": "Volkswagen Service &amp; Repair Dubai | DIGI-TEC Al Quoz",
+      "description": "Volkswagen service and repair in Dubai, with DSG assessment, ODIS-supported diagnostics, engine, AC and brake inspections at DIGI-TEC in Al Quoz.",
+      "h1": [
+        "Volkswagen Repair &amp; Service Dubai"
+      ],
+      "canonical": "https://digitecme.com/brands/volkswagen-service-dubai",
+      "robots": "index, follow, max-image-preview:large",
+      "scripts": [
+        "https://www.googletagmanager.com/gtag/js?id=G-4TRCEJSY4S",
+        "/assets/index-CkbEeNd8.js",
+        "/~flock.js",
+        "/__l5e/events.124894084da8c432.js",
+        "/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
+      ],
+      "css": [
+        "/assets/index-DQ4NvsET.css"
+      ]
+    },
+    {
+      "url": "https://digitecme.com/",
+      "method": "GET",
+      "status": 200,
+      "headers": {
+        "alt-svc": "h3=\":443\"; ma=86400",
+        "cache-control": "no-cache, must-revalidate, max-age=0",
+        "cf-cache-status": "DYNAMIC",
+        "cf-ray": "a4ce183ca886dd3d-HKG",
+        "connection": "keep-alive",
+        "content-encoding": "br",
+        "content-type": "text/html; charset=utf-8",
+        "date": "Mon, 19 Oct 2026 07:33:27 GMT",
+        "referrer-policy": "strict-origin-when-cross-origin",
+        "server": "cloudflare",
+        "speculation-rules": "\"/cdn-cgi/speculation\"",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "transfer-encoding": "chunked",
+        "vary": "accept-encoding",
+        "x-content-type-options": "nosniff",
+        "x-deployment-id": "psr2.cf14717a-af2a-4961-854a-3adf9053a1ef.1793000007.2bfFi0s0tS-h7-DBIgJGhz777Dvv8boIcsx_k-KKrwI"
+      },
+      "bytes": 163337,
+      "sha256": "a8bffbb95b3a8738a842344c2c9b148360ad27a0bdeb73b70d3920f899ab6615",
+      "file": "public-snapshot/GET-digitecme.com-__.body",
+      "title": "Digi-Tec Performance Center | Independent Car Workshop Dubai",
+      "description": "Independent car workshop in Al Quoz, Dubai since 2002 for inspection, maintenance, repair, programming, bodywork and performance-project consultation. Call +971 4 340 2223.",
+      "h1": [
+        "D IGI-TEC Performance Center"
+      ],
+      "canonical": "https://digitecme.com/",
+      "robots": "index, follow, max-image-preview:large",
+      "scripts": [
+        "https://www.googletagmanager.com/gtag/js?id=G-4TRCEJSY4S",
+        "/assets/index-CkbEeNd8.js",
+        "/~flock.js",
+        "/__l5e/events.124894084da8c432.js",
+        "/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
+      ],
+      "css": [
+        "/assets/index-DQ4NvsET.css"
+      ]
+    },
+    {
+      "url": "https://digitecme.com/ppf?utm_source=release-preflight&utm_medium=verification",
+      "method": "GET",
+      "status": 200,
+      "headers": {
+        "alt-svc": "h3=\":443\"; ma=86400",
+        "cache-control": "no-cache, must-revalidate, max-age=0",
+        "cf-cache-status": "DYNAMIC",
+        "cf-ray": "a4ce18452f95c28d-CDG",
+        "connection": "keep-alive",
+        "content-encoding": "br",
+        "content-type": "text/html; charset=utf-8",
+        "date": "Mon, 19 Oct 2026 07:33:28 GMT",
+        "referrer-policy": "strict-origin-when-cross-origin",
+        "server": "cloudflare",
+        "speculation-rules": "\"/cdn-cgi/speculation\"",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "transfer-encoding": "chunked",
+        "vary": "accept-encoding",
+        "x-content-type-options": "nosniff",
+        "x-deployment-id": "psr2.cf14717a-af2a-4961-854a-3adf9053a1ef.1793000008.OKgULVgLnHcmBNnq7uZsKC5OnSLl8XidGiqPKnSIl9Y"
+      },
+      "bytes": 163337,
+      "sha256": "d0bd9923b8ee14ceca8c8c738192cc8a35b734f14cc1679e3b7fdd4a2338d85f",
+      "file": "public-snapshot/GET-digitecme.com-__ppf.body",
+      "title": "Digi-Tec Performance Center | Independent Car Workshop Dubai",
+      "description": "Independent car workshop in Al Quoz, Dubai since 2002 for inspection, maintenance, repair, programming, bodywork and performance-project consultation. Call +971 4 340 2223.",
+      "h1": [
+        "D IGI-TEC Performance Center"
+      ],
+      "canonical": "https://digitecme.com/",
+      "robots": "index, follow, max-image-preview:large",
+      "scripts": [
+        "https://www.googletagmanager.com/gtag/js?id=G-4TRCEJSY4S",
+        "/assets/index-CkbEeNd8.js",
+        "/~flock.js",
+        "/__l5e/events.124894084da8c432.js",
+        "/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
+      ],
+      "css": [
+        "/assets/index-DQ4NvsET.css"
+      ]
+    },
+    {
+      "url": "https://digitecme.com/ppf?utm_source=release-preflight&utm_medium=verification",
+      "method": "HEAD",
+      "status": 200,
+      "headers": {
+        "alt-svc": "h3=\":443\"; ma=86400",
+        "cache-control": "no-cache, must-revalidate, max-age=0",
+        "cf-cache-status": "DYNAMIC",
+        "cf-ray": "a4ce18467ab4c28d-CDG",
+        "connection": "close",
+        "content-encoding": "br",
+        "content-type": "text/html; charset=utf-8",
+        "date": "Mon, 19 Oct 2026 07:33:28 GMT",
+        "referrer-policy": "strict-origin-when-cross-origin",
+        "server": "cloudflare",
+        "speculation-rules": "\"/cdn-cgi/speculation\"",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "x-content-type-options": "nosniff",
+        "x-deployment-id": "psr2.cf14717a-af2a-4961-854a-3adf9053a1ef.1793000008.OKgULVgLnHcmBNnq7uZsKC5OnSLl8XidGiqPKnSIl9Y"
+      },
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "file": "public-snapshot/HEAD-digitecme.com-__ppf.body",
+      "title": "",
+      "description": "",
+      "h1": [],
+      "canonical": "",
+      "robots": "",
+      "scripts": [],
+      "css": []
+    },
+    {
+      "url": "https://digitecme.com/robots.txt",
+      "method": "GET",
+      "status": 200,
+      "headers": {
+        "alt-svc": "h3=\":443\"; ma=86400",
+        "cf-cache-status": "BYPASS",
+        "cf-ray": "a4ce1840da99c28d-CDG",
+        "connection": "keep-alive",
+        "content-encoding": "gzip",
+        "content-type": "text/plain; charset=utf-8",
+        "date": "Mon, 19 Oct 2026 07:33:27 GMT",
+        "etag": "W/\"14fc2802d14120128b4b3e1a7938870b\"",
+        "referrer-policy": "strict-origin-when-cross-origin",
+        "server": "cloudflare",
+        "speculation-rules": "\"/cdn-cgi/speculation\"",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "transfer-encoding": "chunked",
+        "vary": "accept-encoding",
+        "x-content-type-options": "nosniff",
+        "x-deployment-id": "psr2.cf14717a-af2a-4961-854a-3adf9053a1ef.1793000007.2bfFi0s0tS-h7-DBIgJGhz777Dvv8boIcsx_k-KKrwI"
+      },
+      "bytes": 292,
+      "sha256": "e3c8657fde29aa5504479e3b941052f85278b72811ebd9429bf94fb80eba8b61",
+      "file": "public-snapshot/GET-digitecme.com-__robots.txt.body",
+      "title": "",
+      "description": "",
+      "h1": [],
+      "canonical": "",
+      "robots": "",
+      "scripts": [],
+      "css": []
+    },
+    {
+      "url": "https://digitecme.com/services/mercedes-diagnostics-dubai",
+      "method": "GET",
+      "status": 200,
+      "headers": {
+        "alt-svc": "h3=\":443\"; ma=86400",
+        "cache-control": "no-cache, must-revalidate, max-age=0",
+        "cf-cache-status": "DYNAMIC",
+        "cf-ray": "a4ce182fac49c28d-CDG",
+        "connection": "keep-alive",
+        "content-encoding": "br",
+        "content-type": "text/html; charset=utf-8",
+        "date": "Mon, 19 Oct 2026 07:33:25 GMT",
+        "referrer-policy": "strict-origin-when-cross-origin",
+        "server": "cloudflare",
+        "speculation-rules": "\"/cdn-cgi/speculation\"",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "transfer-encoding": "chunked",
+        "vary": "accept-encoding",
+        "x-content-type-options": "nosniff",
+        "x-deployment-id": "psr2.cf14717a-af2a-4961-854a-3adf9053a1ef.1793000005.6EPJ3LUmpZZhJhf_Wa6lgu-eHLDgxnFk1B05bTqPdiU"
+      },
+      "bytes": 76149,
+      "sha256": "25c62f3866b7a17aea08cbc7962c2a662640687b7e610935b7fc122bffa6df5c",
+      "file": "public-snapshot/GET-digitecme.com-__services__mercedes-diagnostics-dubai.body",
+      "title": "Mercedes XENTRY Diagnostics Dubai | Coding | Digi-Tec",
+      "description": "Mercedes XENTRY diagnostics in Al Quoz, Dubai for warning lights, no-start, AIRMATIC, 7G/9G transmission and supported coding. Get a clear fault report.",
+      "h1": [
+        "Mercedes XENTRY Diagnostics &amp; Coding in Dubai"
+      ],
+      "canonical": "https://digitecme.com/services/mercedes-diagnostics-dubai",
+      "robots": "index, follow, max-image-preview:large",
+      "scripts": [
+        "https://www.googletagmanager.com/gtag/js?id=G-4TRCEJSY4S",
+        "/assets/index-CkbEeNd8.js",
+        "/~flock.js",
+        "/__l5e/events.124894084da8c432.js",
+        "/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
+      ],
+      "css": [
+        "/assets/index-DQ4NvsET.css"
+      ]
+    },
+    {
+      "url": "https://digitecme.com/services/mercedes-mechanical-repair-dubai",
+      "method": "GET",
+      "status": 200,
+      "headers": {
+        "alt-svc": "h3=\":443\"; ma=86400",
+        "cache-control": "no-cache, must-revalidate, max-age=0",
+        "cf-cache-status": "DYNAMIC",
+        "cf-ray": "a4ce182ba9cbc28d-CDG",
+        "connection": "keep-alive",
+        "content-encoding": "br",
+        "content-type": "text/html; charset=utf-8",
+        "date": "Mon, 19 Oct 2026 07:33:24 GMT",
+        "referrer-policy": "strict-origin-when-cross-origin",
+        "server": "cloudflare",
+        "speculation-rules": "\"/cdn-cgi/speculation\"",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "transfer-encoding": "chunked",
+        "vary": "accept-encoding",
+        "x-content-type-options": "nosniff",
+        "x-deployment-id": "psr2.cf14717a-af2a-4961-854a-3adf9053a1ef.1793000004.SBe6ebAUB9mfwnTD9mo33eRpF2FniP8DPJqjz4sEHuI"
+      },
+      "bytes": 72569,
+      "sha256": "9d7928c7578a253b7092be5897da90af77dd85389b3f9083cd96bd6041faea82",
+      "file": "public-snapshot/GET-digitecme.com-__services__mercedes-mechanical-repair-dubai.body",
+      "title": "Mercedes Engine &amp; Mechanical Repair Dubai | Digi-Tec",
+      "description": "Mercedes engine repair in Al Quoz, Dubai. Assessment of overheating, oil leaks, misfires and mounts, with repair options and an itemized quote.",
+      "h1": [
+        "Mercedes Engine &amp; Mechanical Repair in Dubai"
+      ],
+      "canonical": "https://digitecme.com/services/mercedes-mechanical-repair-dubai",
+      "robots": "index, follow, max-image-preview:large",
+      "scripts": [
+        "https://www.googletagmanager.com/gtag/js?id=G-4TRCEJSY4S",
+        "/assets/index-CkbEeNd8.js",
+        "/~flock.js",
+        "/__l5e/events.124894084da8c432.js",
+        "/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
+      ],
+      "css": [
+        "/assets/index-DQ4NvsET.css"
+      ]
+    },
+    {
+      "url": "https://digitecme.com/services/mercedes-repair-dubai?utm_source=release-preflight&utm_medium=verification",
+      "method": "GET",
+      "status": 301,
+      "headers": {
+        "cf-ray": "a4ce18428bc7dd3d-HKG",
+        "connection": "keep-alive",
+        "content-type": "text/html; charset=UTF-8",
+        "date": "Mon, 19 Oct 2026 07:33:28 GMT",
+        "location": "https://digitecme.com/brands/mercedes-benz-service-dubai?utm_source=release-preflight&utm_medium=verification",
+        "server": "cloudflare",
+        "speculation-rules": "\"/cdn-cgi/speculation\"",
+        "transfer-encoding": "chunked"
+      },
+      "bytes": 167,
+      "sha256": "446a6087825fa73eadb045e5a2e9e2adf7df241b571228187728191d961dda1f",
+      "file": "public-snapshot/GET-digitecme.com-__services__mercedes-repair-dubai.body",
+      "title": "301 Moved Permanently",
+      "description": "",
+      "h1": [
+        "301 Moved Permanently"
+      ],
+      "canonical": "",
+      "robots": "",
+      "scripts": [],
+      "css": []
+    },
+    {
+      "url": "https://digitecme.com/services/mercedes-repair-dubai?utm_source=release-preflight&utm_medium=verification",
+      "method": "HEAD",
+      "status": 301,
+      "headers": {
+        "cf-ray": "a4ce18434db6dd3d-HKG",
+        "connection": "close",
+        "content-type": "text/html; charset=UTF-8",
+        "date": "Mon, 19 Oct 2026 07:33:28 GMT",
+        "location": "https://digitecme.com/brands/mercedes-benz-service-dubai?utm_source=release-preflight&utm_medium=verification",
+        "server": "cloudflare",
+        "speculation-rules": "\"/cdn-cgi/speculation\""
+      },
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "file": "public-snapshot/HEAD-digitecme.com-__services__mercedes-repair-dubai.body",
+      "title": "",
+      "description": "",
+      "h1": [],
+      "canonical": "",
+      "robots": "",
+      "scripts": [],
+      "css": []
+    },
+    {
+      "url": "https://digitecme.com/services/mercedes-suspension-repair-dubai",
+      "method": "GET",
+      "status": 200,
+      "headers": {
+        "alt-svc": "h3=\":443\"; ma=86400",
+        "cache-control": "no-cache, must-revalidate, max-age=0",
+        "cf-cache-status": "DYNAMIC",
+        "cf-ray": "a4ce182d0d4bc28d-CDG",
+        "connection": "keep-alive",
+        "content-encoding": "br",
+        "content-type": "text/html; charset=utf-8",
+        "date": "Mon, 19 Oct 2026 07:33:24 GMT",
+        "referrer-policy": "strict-origin-when-cross-origin",
+        "server": "cloudflare",
+        "speculation-rules": "\"/cdn-cgi/speculation\"",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "transfer-encoding": "chunked",
+        "vary": "accept-encoding",
+        "x-content-type-options": "nosniff",
+        "x-deployment-id": "psr2.cf14717a-af2a-4961-854a-3adf9053a1ef.1793000004.SBe6ebAUB9mfwnTD9mo33eRpF2FniP8DPJqjz4sEHuI"
+      },
+      "bytes": 72519,
+      "sha256": "76590b6d48f8a179495f14d7fb89712f18b06a8fe8f05833df4dd30b3599f8cd",
+      "file": "public-snapshot/GET-digitecme.com-__services__mercedes-suspension-repair-dubai.body",
+      "title": "Mercedes Suspension Repair Dubai | AIRMATIC &amp; ABC | Digi-Tec",
+      "description": "Mercedes suspension repair in Al Quoz, Dubai for AIRMATIC warnings, overnight drops, air-strut leaks and compressor faults. Book an inspection.",
+      "h1": [
+        "Mercedes Suspension &amp; AIRMATIC Repair in Dubai"
+      ],
+      "canonical": "https://digitecme.com/services/mercedes-suspension-repair-dubai",
+      "robots": "index, follow, max-image-preview:large",
+      "scripts": [
+        "https://www.googletagmanager.com/gtag/js?id=G-4TRCEJSY4S",
+        "/assets/index-CkbEeNd8.js",
+        "/~flock.js",
+        "/__l5e/events.124894084da8c432.js",
+        "/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
+      ],
+      "css": [
+        "/assets/index-DQ4NvsET.css"
+      ]
+    },
+    {
+      "url": "https://digitecme.com/services/mercedes-transmission-repair-dubai",
+      "method": "GET",
+      "status": 200,
+      "headers": {
+        "alt-svc": "h3=\":443\"; ma=86400",
+        "cache-control": "no-cache, must-revalidate, max-age=0",
+        "cf-cache-status": "DYNAMIC",
+        "cf-ray": "a4ce182e48c7c28d-CDG",
+        "connection": "keep-alive",
+        "content-encoding": "br",
+        "content-type": "text/html; charset=utf-8",
+        "date": "Mon, 19 Oct 2026 07:33:24 GMT",
+        "referrer-policy": "strict-origin-when-cross-origin",
+        "server": "cloudflare",
+        "speculation-rules": "\"/cdn-cgi/speculation\"",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "transfer-encoding": "chunked",
+        "vary": "accept-encoding",
+        "x-content-type-options": "nosniff",
+        "x-deployment-id": "psr2.cf14717a-af2a-4961-854a-3adf9053a1ef.1793000004.SBe6ebAUB9mfwnTD9mo33eRpF2FniP8DPJqjz4sEHuI"
+      },
+      "bytes": 66697,
+      "sha256": "e4b05baee0e6a67b809f4fc19d529e49a1579fd3a190c856777fafb827a68d99",
+      "file": "public-snapshot/GET-digitecme.com-__services__mercedes-transmission-repair-dubai.body",
+      "title": "Mercedes Transmission &amp; Gearbox Repair Dubai | Digi-Tec",
+      "description": "Mercedes transmission and gearbox repair assessment in Al Quoz. Identify the fitted gearbox and compare fluid service, fault repair and replacement scope.",
+      "h1": [
+        "Mercedes Transmission &amp; Gearbox Repair in Dubai"
+      ],
+      "canonical": "https://digitecme.com/services/mercedes-transmission-repair-dubai",
+      "robots": "index, follow, max-image-preview:large",
+      "scripts": [
+        "https://www.googletagmanager.com/gtag/js?id=G-4TRCEJSY4S",
+        "/assets/index-CkbEeNd8.js",
+        "/~flock.js",
+        "/__l5e/events.124894084da8c432.js",
+        "/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
+      ],
+      "css": [
+        "/assets/index-DQ4NvsET.css"
+      ]
+    },
+    {
+      "url": "https://digitecme.com/services/paint-protection-dubai",
+      "method": "GET",
+      "status": 200,
+      "headers": {
+        "alt-svc": "h3=\":443\"; ma=86400",
+        "cache-control": "no-cache, must-revalidate, max-age=0",
+        "cf-cache-status": "DYNAMIC",
+        "cf-ray": "a4ce183e6b82c28d-CDG",
+        "connection": "keep-alive",
+        "content-encoding": "br",
+        "content-type": "text/html; charset=utf-8",
+        "date": "Mon, 19 Oct 2026 07:33:27 GMT",
+        "referrer-policy": "strict-origin-when-cross-origin",
+        "server": "cloudflare",
+        "speculation-rules": "\"/cdn-cgi/speculation\"",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "transfer-encoding": "chunked",
+        "vary": "accept-encoding",
+        "x-content-type-options": "nosniff",
+        "x-deployment-id": "psr2.cf14717a-af2a-4961-854a-3adf9053a1ef.1793000007.2bfFi0s0tS-h7-DBIgJGhz777Dvv8boIcsx_k-KKrwI"
+      },
+      "bytes": 42488,
+      "sha256": "57bbe852e5accb382aae1d22666e02e09c393bff977c8a17b0270ea40e32bfae",
+      "file": "public-snapshot/GET-digitecme.com-__services__paint-protection-dubai.body",
+      "title": "Car Paint Protection Dubai | PPF &amp; Ceramic Coating | DIGI-TEC",
+      "description": "Compare PPF, ceramic coating and paint correction in Dubai. Choose protection for your car’s paint and driving needs. Get a DIGI-TEC quote in Al Quoz.",
+      "h1": [
+        "Car Paint Protection in Dubai"
+      ],
+      "canonical": "https://digitecme.com/services/paint-protection-dubai",
+      "robots": "index, follow, max-image-preview:large",
+      "scripts": [
+        "https://www.googletagmanager.com/gtag/js?id=G-4TRCEJSY4S",
+        "/assets/index-CkbEeNd8.js",
+        "/~flock.js",
+        "/__l5e/events.124894084da8c432.js",
+        "/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
+      ],
+      "css": [
+        "/assets/index-DQ4NvsET.css"
+      ]
+    },
+    {
+      "url": "https://digitecme.com/services/paint-protection-film",
+      "method": "GET",
+      "status": 200,
+      "headers": {
+        "alt-svc": "h3=\":443\"; ma=86400",
+        "cache-control": "no-cache, must-revalidate, max-age=0",
+        "cf-cache-status": "DYNAMIC",
+        "cf-ray": "a4ce183cf810c28d-CDG",
+        "connection": "keep-alive",
+        "content-encoding": "br",
+        "content-type": "text/html; charset=utf-8",
+        "date": "Mon, 19 Oct 2026 07:33:27 GMT",
+        "referrer-policy": "strict-origin-when-cross-origin",
+        "server": "cloudflare",
+        "speculation-rules": "\"/cdn-cgi/speculation\"",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "transfer-encoding": "chunked",
+        "vary": "accept-encoding",
+        "x-content-type-options": "nosniff",
+        "x-deployment-id": "psr2.cf14717a-af2a-4961-854a-3adf9053a1ef.1793000007.2bfFi0s0tS-h7-DBIgJGhz777Dvv8boIcsx_k-KKrwI"
+      },
+      "bytes": 65019,
+      "sha256": "d8c69bf6e8a847a17da48efa294c04a87c43a1a58f3cffacdb6987ae144c2054",
+      "file": "public-snapshot/GET-digitecme.com-__services__paint-protection-film.body",
+      "title": "Paint Protection Film (PPF) Dubai | DIGI-TEC",
+      "description": "Explore paint protection film installation at DIGI-TEC in Dubai. Learn about PPF coverage options and request a quote for your vehicle.",
+      "h1": [
+        "Paint Protection Film (PPF) in Dubai"
+      ],
+      "canonical": "https://digitecme.com/services/paint-protection-film",
+      "robots": "index, follow, max-image-preview:large",
+      "scripts": [
+        "https://www.googletagmanager.com/gtag/js?id=G-4TRCEJSY4S",
+        "/assets/index-CkbEeNd8.js",
+        "/~flock.js",
+        "/__l5e/events.124894084da8c432.js",
+        "/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
+      ],
+      "css": [
+        "/assets/index-DQ4NvsET.css",
+        "/assets/PpfPage-Da9oUsjh.css"
+      ]
+    },
+    {
+      "url": "https://digitecme.com/sitemap.xml",
+      "method": "GET",
+      "status": 200,
+      "headers": {
+        "alt-svc": "h3=\":443\"; ma=86400",
+        "cf-cache-status": "DYNAMIC",
+        "cf-ray": "a4ce1840fe720506-HKG",
+        "connection": "keep-alive",
+        "content-encoding": "gzip",
+        "content-type": "application/xml",
+        "date": "Mon, 19 Oct 2026 07:33:28 GMT",
+        "etag": "W/\"b654a9490da387eafe96eec4c5267cb3\"",
+        "referrer-policy": "strict-origin-when-cross-origin",
+        "server": "cloudflare",
+        "speculation-rules": "\"/cdn-cgi/speculation\"",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "transfer-encoding": "chunked",
+        "vary": "accept-encoding",
+        "x-content-type-options": "nosniff",
+        "x-deployment-id": "psr2.cf14717a-af2a-4961-854a-3adf9053a1ef.1793000007.2bfFi0s0tS-h7-DBIgJGhz777Dvv8boIcsx_k-KKrwI"
+      },
+      "bytes": 129276,
+      "sha256": "f74410aac2d522838dbce5037843cd03b34096817581d6732f852b86926a2c67",
+      "file": "public-snapshot/GET-digitecme.com-__sitemap.xml.body",
+      "title": "",
+      "description": "",
+      "h1": [],
+      "canonical": "",
+      "robots": "",
+      "scripts": [],
+      "css": []
+    },
+    {
+      "url": "https://digitecme.com/tuning",
+      "method": "GET",
+      "status": 200,
+      "headers": {
+        "alt-svc": "h3=\":443\"; ma=86400",
+        "cache-control": "no-cache, must-revalidate, max-age=0",
+        "cf-cache-status": "DYNAMIC",
+        "cf-ray": "a4ce183f8f28c28d-CDG",
+        "connection": "keep-alive",
+        "content-encoding": "br",
+        "content-type": "text/html; charset=utf-8",
+        "date": "Mon, 19 Oct 2026 07:33:27 GMT",
+        "referrer-policy": "strict-origin-when-cross-origin",
+        "server": "cloudflare",
+        "speculation-rules": "\"/cdn-cgi/speculation\"",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "transfer-encoding": "chunked",
+        "vary": "accept-encoding",
+        "x-content-type-options": "nosniff",
+        "x-deployment-id": "psr2.cf14717a-af2a-4961-854a-3adf9053a1ef.1793000007.2bfFi0s0tS-h7-DBIgJGhz777Dvv8boIcsx_k-KKrwI"
+      },
+      "bytes": 152177,
+      "sha256": "1093789fec364624fbbeded77fd0283c3070d1c6d9c34fe9cbf5fa3359e0a2e4",
+      "file": "public-snapshot/GET-digitecme.com-__tuning.body",
+      "title": "Car Performance Tuning Dubai | ECU Remap &amp; Prices | DIGI-TEC",
+      "description": "Car performance tuning and ECU remapping in Al Quoz, Dubai. Compare supported vehicles, stage packages, power, torque, EUR prices and workshop time.",
+      "h1": [
+        "Car Performance Tuning Dubai"
+      ],
+      "canonical": "https://digitecme.com/tuning",
+      "robots": "index, follow, max-image-preview:large",
+      "scripts": [
+        "https://www.googletagmanager.com/gtag/js?id=G-4TRCEJSY4S",
+        "/assets/index-CkbEeNd8.js",
+        "/~flock.js",
+        "/__l5e/events.124894084da8c432.js",
+        "/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
+      ],
+      "css": [
+        "/assets/index-DQ4NvsET.css"
+      ]
+    },
+    {
+      "url": "https://www.digitecme.com/brands/bmw-service-dubai",
+      "method": "GET",
+      "status": 301,
+      "headers": {
+        "cf-ray": "a4ce1849c800dbb9-FRA",
+        "connection": "keep-alive",
+        "content-type": "text/html; charset=UTF-8",
+        "date": "Mon, 19 Oct 2026 07:33:29 GMT",
+        "location": "https://digitecme.com/brands/bmw-service-dubai",
+        "server": "cloudflare",
+        "speculation-rules": "\"/cdn-cgi/speculation\"",
+        "transfer-encoding": "chunked"
+      },
+      "bytes": 167,
+      "sha256": "446a6087825fa73eadb045e5a2e9e2adf7df241b571228187728191d961dda1f",
+      "file": "public-snapshot/GET-www.digitecme.com-__brands__bmw-service-dubai.body",
+      "title": "301 Moved Permanently",
+      "description": "",
+      "h1": [
+        "301 Moved Permanently"
+      ],
+      "canonical": "",
+      "robots": "",
+      "scripts": [],
+      "css": []
+    }
+  ]
+}

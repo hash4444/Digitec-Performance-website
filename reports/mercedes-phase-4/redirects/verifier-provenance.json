@@ -1,0 +1,17 @@
+{
+  "preparedAt": "2026-10-26T08:56:49.989Z",
+  "sourcePath": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-2b\\tests\\verify-http-phase2b.mjs",
+  "sourceSha256": "13c1d4b766bdc3dec9fff1b777fc1d090c56def0b47e4be4c2880b6a4250e789",
+  "copySha256": "0825f9baeb77df473b0185ba6f5b0c34b35d220a02ee241670a0569ea6557f5a",
+  "onlyAdditionalChange": {
+    "before": "const out = resolve(fileURLToPath(new URL('../http/', import.meta.url)), runId);",
+    "after": "const out = resolve(fileURLToPath(new URL('./http/', import.meta.url)), runId);"
+  },
+  "preservesReviewedRootAndAllCaseGenerationAssertionsAndRequests": true,
+  "readOnly": true,
+  "notes": [
+    "Full326cases includes192R1-R4,48protectedEnglishoil,48broadMercedes,16destinations,22contentcontrols; GET/HEAD only.",
+    "All GET-hop HTML saved under Phase4/redirects/http; no earlier evidence overwritten.",
+    "No Cloudflare configuration, cache, source, contact or indexing operations."
+  ]
+}

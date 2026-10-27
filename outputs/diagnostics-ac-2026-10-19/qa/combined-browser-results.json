@@ -1,0 +1,52 @@
+{
+  "checkedAt": "2026-10-19T08:18:20.091Z",
+  "candidate": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\diagnostics-ac-2026-10-19\\candidate.local",
+  "passed": true,
+  "safety": "Loopback GET/HEAD requests only. Existing protected contact test stubs/blocked network retained. No actual message, customer enquiry, backend write, or production request.",
+  "results": [
+    {
+      "name": "five-brand-browser",
+      "exitCode": 0,
+      "passed": true,
+      "seconds": 48.467,
+      "log": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\diagnostics-ac-2026-10-19\\qa\\five-brand-browser.log",
+      "rerunAt": "2026-10-19T08:16:49.868Z",
+      "initialHarnessResult": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\diagnostics-ac-2026-10-19\\qa\\browser-port-first-attempt\\five-brand-browser.log"
+    },
+    {
+      "name": "repair-browser",
+      "exitCode": 0,
+      "passed": true,
+      "seconds": 102.13,
+      "log": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\diagnostics-ac-2026-10-19\\qa\\repair-browser.log",
+      "rerunAt": "2026-10-19T08:16:49.868Z",
+      "initialHarnessResult": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\diagnostics-ac-2026-10-19\\qa\\browser-port-first-attempt\\repair-browser.log"
+    },
+    {
+      "name": "master-seo-browser",
+      "exitCode": 0,
+      "passed": true,
+      "seconds": 33.834,
+      "log": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\diagnostics-ac-2026-10-19\\qa\\master-seo-browser.log"
+    },
+    {
+      "name": "protection-routing-browser",
+      "exitCode": 0,
+      "passed": true,
+      "seconds": 3.991,
+      "log": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\diagnostics-ac-2026-10-19\\qa\\protection-routing-browser.log"
+    },
+    {
+      "name": "ppf-browser",
+      "exitCode": 0,
+      "passed": true,
+      "seconds": 25.086,
+      "log": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\diagnostics-ac-2026-10-19\\qa\\ppf-browser.log"
+    }
+  ],
+  "harnessAdjustment": {
+    "reason": "The unchanged legacy five-brand and repair harnesses only allow ports5195/5196. Their initial5205/5206 guard failures occurred before browser execution; only those two suites were rerun at the required local ports.",
+    "initialReport": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\diagnostics-ac-2026-10-19\\qa\\browser-port-first-attempt\\combined-browser-results.json",
+    "rerunReport": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\diagnostics-ac-2026-10-19\\qa\\legacy-contact-rerun-results.json"
+  }
+}

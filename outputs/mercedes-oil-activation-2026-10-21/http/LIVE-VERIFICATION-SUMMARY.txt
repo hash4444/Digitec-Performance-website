@@ -1,0 +1,39 @@
+MERCEDES OIL ALIAS — INDEPENDENT LIVE HTTP VERIFICATION
+21 October 2026. Read-only GET and HEAD requests only.
+
+RESULT: PASS. No unresolved HTTP verification issue; no rollback performed.
+
+Preflight: 10:35:39–10:35:44 UAE /06:35:39–06:35:44 UTC.
+28 planned cases,28 completed,0 failures. Both correct service forms were direct200 with the expected Mercedes oil title/H1, index/follow and slashless declared canonical. Legacy forms were still homepage200. Four existing Mercedes aliases and all protected content routes matched expected baseline behavior. The initial sandboxed network attempt received no remote responses; its transport-only error is preserved in preflight-transport-restricted.json. Authorized network preflight then completed successfully.
+
+Post-activation: 10:40:44–10:40:54 UAE /06:40:44–06:40:54 UTC.
+72 planned cases,72 completed,0 failures. Tests ran only after root reported creation of the approved Cloudflare rule.
+
+LEGACY MATRIX:48 CASES
+  Two exact paths:
+    /brands/mercedes-benz-service-dubai/oil-change
+    /brands/mercedes-benz-service-dubai/oil-change/
+  Both hosts:digitecme.com,www.digitecme.com.
+  Both schemes:http,https.
+  Both methods:GET,HEAD.
+  Three query conditions:empty; repeated tag fields and synthetic gclid; encoded characters/plus/empty and valueless parameters.
+Every case returned308 directly to:
+  https://digitecme.com/services/mercedes-oil-change-dubai
+with exactly the original query string, followed by200. Each case had exactly one redirect, including incoming HTTP and www. No redirect loop or unexpected protocol/hostname hop occurred. GET final responses contain the expected commercial service H1/canonical. HEAD followed the same status/destination behavior without fetching a response body.
+
+PROTECTED CONTENT MATRIX:16 CASES
+GET and HEAD for both service URL forms, Mercedes hub, general oil service, oil article, Mercedes diagnostics, PPF and tuning. Each remained direct200. Each protected GET's title,H1,canonical,robots and normalized <main> text SHA256 matched the fresh preflight HTML exactly. Both service URL forms remain accessible; the indexed trailing-slash form is not redirected. The canonical remains the existing slashless service URL.
+
+EXISTING MERCEDES REDIRECTS:8 CASES
+GET and HEAD for /services/mercedes-repair-dubai, its trailing-slash form, /services/mercedes-service-dubai and /best-mercedes-workshop-dubai. All retain301 directly to the Mercedes brand hub, followed by200, with repeated query fields and synthetic gclid preserved.
+
+EVIDENCE
+preflight-results.json:complete passing baseline and raw-response references.
+preflight-raw/:initial response HTML.
+post-results.json:all72 case records, each hop/status/Location/headers and validation outcome.
+post-raw/:post-activation raw GET response HTML.
+verify-live.mjs:reproducible bounded collector; no production mutation capability.
+
+The Cloudflare rule ID, exact activation time, resulting three-rule order and unchanged original rule settings are recorded separately by the root's authenticated control-plane audit. This HTTP subtask does not infer a rule ID from response headers.
+
+No Cloudflare or website setting, content, metadata, canonical, sitemap, DNS, Worker, Lovable publication or indexing state was modified by this verifier. No customer enquiry or mutation request was submitted. No ranking recovery is inferred from the routing result.

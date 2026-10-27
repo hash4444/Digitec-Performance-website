@@ -1,0 +1,162 @@
+    1: import { mkdir, readFile, writeFile } from 'node:fs/promises';
+    2: import path from 'node:path';
+    3: import { pathToFileURL } from 'node:url';
+    4: import { writeRoutingResponseData } from './generate-routing-response-data.mjs';
+    5: 
+    6: const SITE_URL = 'https://digitecme.com';
+    7: const root = process.cwd();
+    8: const distDirectory = path.join(root, 'dist');
+    9: const serverEntry = path.join(root, 'dist-server', 'entry-server.js');
+   10: const { getPublicRoutes, renderRoute } = await import(pathToFileURL(serverEntry).href);
+   11: const routes = getPublicRoutes();
+   12: const baseTemplate = await readFile(path.join(distDirectory, 'index.html'), 'utf8');
+   13: const clientManifest = JSON.parse(await readFile(path.join(distDirectory, '.vite', 'manifest.json'), 'utf8'));
+   14: const ppfStylesheets = clientManifest['src/pages/PpfPage.tsx']?.css;
+   15: if (!ppfStylesheets?.length) throw new Error('Missing PPF stylesheet in the client build manifest');
+   16: 
+   17: const escapeHtml = (value = '') => String(value)
+   18:   .replace(/&/g, '&amp;')
+   19:   .replace(/</g, '&lt;')
+   20:   .replace(/>/g, '&gt;')
+   21:   .replace(/"/g, '&quot;');
+   22: 
+   23: const replaceOrInsertHeadTag = (html, pattern, replacement) => {
+   24:   if (pattern.test(html)) return html.replace(pattern, replacement);
+   25:   return html.replace('</head>', `  ${replacement}\n  </head>`);
+   26: };
+   27: 
+   28: const routeHtml = (template, route, rendered) => {
+   29:   const { seo } = rendered;
+   30:   if (!seo) throw new Error(`No SEO metadata was collected for ${route.path}`);
+   31: 
+   32:   const englishPath = route.path === '/ar'
+   33:     ? '/'
+   34:     : route.path.replace(/^\/ar(?=\/|$)/, '') || '/';
+   35:   const englishUrl = `${SITE_URL}${englishPath}`;
+   36:   const arabicUrl = `${SITE_URL}/ar${englishPath === '/' ? '' : englishPath}`;
+   37:   const canonical = seo.canonical;
+   38:   const language = seo.language;
+   39:   const ogImage = seo.ogImage;
+   40: 
+   41:   let html = template;
+   42:   html = html.replace(/<html\b[^>]*>/i, `<html lang="${language}"${language === 'ar' ? ' dir="rtl"' : ''}>`);
+   43:   html = replaceOrInsertHeadTag(html, /<title>[\s\S]*?<\/title>/i, `<title>${escapeHtml(seo.title)}</title>`);
+   44:   html = replaceOrInsertHeadTag(html, /<meta\s+name="description"[^>]*>/i, `<meta name="description" content="${escapeHtml(seo.description)}">`);
+   45:   html = replaceOrInsertHeadTag(
+   46:     html,
+   47:     /<meta\s+name="robots"[^>]*>/i,
+   48:     `<meta name="robots" content="${seo.noindex ? 'noindex, follow' : 'index, follow, max-image-preview:large'}">`,
+   49:   );
+   50:   html = html.replace(/\s*<meta\s+name="keywords"[^>]*>\s*/gi, '\n');
+   51: 
+   52:   html = replaceOrInsertHeadTag(html, /<meta\s+property="og:title"[^>]*>/i, `<meta property="og:title" content="${escapeHtml(seo.ogTitle || seo.title)}">`);
+   53:   html = replaceOrInsertHeadTag(html, /<meta\s+property="og:description"[^>]*>/i, `<meta property="og:description" content="${escapeHtml(seo.ogDescription || seo.description)}">`);
+   54:   html = replaceOrInsertHeadTag(html, /<meta\s+property="og:type"[^>]*>/i, `<meta property="og:type" content="${escapeHtml(seo.ogType || 'website')}">`);
+   55:   html = html.replace(/\s*<meta\s+property="article:(?:published_time|modified_time)"[^>]*>\s*/gi, '\n');
+   56:   if (seo.articlePublishedTime) {
+   57:     html = replaceOrInsertHeadTag(html, /<meta\s+property="article:published_time"[^>]*>/i, `<meta property="article:published_time" content="${escapeHtml(seo.articlePublishedTime)}">`);
+   58:   }
+   59:   if (seo.articleModifiedTime) {
+   60:     html = replaceOrInsertHeadTag(html, /<meta\s+property="article:modified_time"[^>]*>/i, `<meta property="article:modified_time" content="${escapeHtml(seo.articleModifiedTime)}">`);
+   61:   }
+   62:   html = replaceOrInsertHeadTag(html, /<meta\s+property="og:locale"[^>]*>/i, `<meta property="og:locale" content="${language === 'ar' ? 'ar_AE' : 'en_AE'}">`);
+   63:   html = replaceOrInsertHeadTag(html, /<meta\s+name="twitter:card"[^>]*>/i, `<meta name="twitter:card" content="${escapeHtml(seo.twitterCard || 'summary_large_image')}">`);
+   64:   html = replaceOrInsertHeadTag(html, /<meta\s+name="twitter:title"[^>]*>/i, `<meta name="twitter:title" content="${escapeHtml(seo.twitterTitle || seo.ogTitle || seo.title)}">`);
+   65:   html = replaceOrInsertHeadTag(html, /<meta\s+name="twitter:description"[^>]*>/i, `<meta name="twitter:description" content="${escapeHtml(seo.twitterDescription || seo.ogDescription || seo.description)}">`);
+   66:   if (ogImage) {
+   67:     html = replaceOrInsertHeadTag(html, /<meta\s+property="og:image"[^>]*>/i, `<meta property="og:image" content="${escapeHtml(ogImage)}">`);
+   68:     html = replaceOrInsertHeadTag(html, /<meta\s+name="twitter:image"[^>]*>/i, `<meta name="twitter:image" content="${escapeHtml(ogImage)}">`);
+   69:     if (seo.ogImageAlt) {
+   70:       html = replaceOrInsertHeadTag(html, /<meta\s+property="og:image:alt"[^>]*>/i, `<meta property="og:image:alt" content="${escapeHtml(seo.ogImageAlt)}">`);
+   71:       html = replaceOrInsertHeadTag(html, /<meta\s+name="twitter:image:alt"[^>]*>/i, `<meta name="twitter:image:alt" content="${escapeHtml(seo.ogImageAlt)}">`);
+   72:     }
+   73:     if (seo.ogImageWidth) {
+   74:       html = replaceOrInsertHeadTag(html, /<meta\s+property="og:image:width"[^>]*>/i, `<meta property="og:image:width" content="${escapeHtml(seo.ogImageWidth)}">`);
+   75:     }
+   76:     if (seo.ogImageHeight) {
+   77:       html = replaceOrInsertHeadTag(html, /<meta\s+property="og:image:height"[^>]*>/i, `<meta property="og:image:height" content="${escapeHtml(seo.ogImageHeight)}">`);
+   78:     }
+   79:   }
+   80: 
+   81:   html = html.replace(/\s*<link\s+rel="canonical"[^>]*>\s*/gi, '\n');
+   82:   html = html.replace(/\s*<meta\s+property="og:url"[^>]*>\s*/gi, '\n');
+   83:   if (canonical) {
+   84:     html = html.replace('</head>', `  <link rel="canonical" href="${escapeHtml(canonical)}">\n  <meta property="og:url" content="${escapeHtml(canonical)}">\n  </head>`);
+   85:   }
+   86: 
+   87:   html = html.replace(/\s*<link\s+rel="alternate"\s+hreflang="[^"]+"[^>]*>\s*/gi, '\n');
+   88:   if (!seo.noindex && canonical) {
+   89:     const alternates = [
+   90:       `<link rel="alternate" hreflang="en-AE" href="${englishUrl}">`,
+   91:       ...(seo.hasArabicVersion === false ? [] : [`<link rel="alternate" hreflang="ar-AE" href="${arabicUrl}">`]),
+   92:       `<link rel="alternate" hreflang="x-default" href="${englishUrl}">`,
+   93:     ].join('\n  ');
+   94:     html = html.replace('</head>', `  ${alternates}\n  </head>`);
+   95:   }
+   96: 
+   97:   html = html.replace(/\s*<script\b[^>]*data-route-jsonld="true"[^>]*>[\s\S]*?<\/script>\s*/gi, '\n');
+   98:   if (seo.jsonLd) {
+   99:     const jsonLd = JSON.stringify(seo.jsonLd).replace(/</g, '\\u003c');
+  100:     html = html.replace('</head>', `  <script type="application/ld+json" data-route-jsonld="true">${jsonLd}</script>\n  </head>`);
+  101:   }
+  102: 
+  103:   // The dedicated PPF layout must be styled in the initial HTML, before the
+  104:   // lazy React module loads, including when JavaScript is unavailable.
+  105:   if (route.path === '/services/paint-protection-film') {
+  106:     for (const stylesheet of ppfStylesheets) {
+  107:       html = html.replace('</head>', `  <link rel="stylesheet" crossorigin href="/${escapeHtml(stylesheet)}">\n  </head>`);
+  108:     }
+  109:   }
+  110: 
+  111:   if (!html.includes('<div id="root"></div>')) {
+  112:     throw new Error('Client build template is missing an empty #root element.');
+  113:   }
+  114:   return html.replace('<div id="root"></div>', `<div id="root">${rendered.html}</div>`);
+  115: };
+  116: 
+  117: let renderedCount = 0;
+  118: const batchSize = 8;
+  119: for (let offset = 0; offset < routes.length; offset += batchSize) {
+  120:   const batch = routes.slice(offset, offset + batchSize);
+  121:   await Promise.all(batch.map(async (route) => {
+  122:     const rendered = await renderRoute(route.path);
+  123:     const html = routeHtml(baseTemplate, route, rendered);
+  124:     const outputFile = route.path === '/'
+  125:       ? path.join(distDirectory, 'index.html')
+  126:       : path.join(distDirectory, route.path.replace(/^\//, ''), 'index.html');
+  127:     await mkdir(path.dirname(outputFile), { recursive: true });
+  128:     await writeFile(outputFile, html);
+  129:   }));
+  130:   renderedCount += batch.length;
+  131:   if (renderedCount % 100 < batch.length || renderedCount === routes.length) {
+  132:     process.stdout.write(`Prerendered ${renderedCount}/${routes.length}\n`);
+  133:   }
+  134: }
+  135: 
+  136: const notFoundHtml = {};
+  137: for (const [language, missingPath, filename] of [['en', '/__404__', '404.html'], ['ar', '/ar/__404__', '404-ar.html']]) {
+  138:   const notFound = await renderRoute(missingPath);
+  139:   // RouteBoundary keeps the same 404 UI after hydration for every missing path.
+  140:   // Remove shared homepage entity/schema and social images only on error pages.
+  141:   const html = routeHtml(baseTemplate, { path: missingPath, indexable: false }, notFound)
+  142:     .replace(/<script\b[^>]*type="application\/ld\+json"[^>]*>[\s\S]*?<\/script>/gi, '')
+  143:     .replace(/<meta\b[^>]*(?:property="og:image[^\"]*"|name="twitter:image[^\"]*")[^>]*>/gi, '');
+  144:   notFoundHtml[language] = html;
+  145:   await writeFile(path.join(distDirectory, filename), html);
+  146: }
+  147: await writeRoutingResponseData(root, routes, notFoundHtml);
+  148: 
+  149: const sitemapEntries = routes
+  150:   .filter((route) => route.indexable)
+  151:   .map((route) => [
+  152:     '  <url>',
+  153:     `    <loc>${SITE_URL}${route.path}</loc>`,
+  154:     `    <lastmod>${route.lastmod}</lastmod>`,
+  155:     '  </url>',
+  156:   ].join('\n'))
+  157:   .join('\n');
+  158: const sitemap = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${sitemapEntries}\n</urlset>\n`;
+  159: await writeFile(path.join(root, 'public', 'sitemap.xml'), sitemap);
+  160: await writeFile(path.join(distDirectory, 'sitemap.xml'), sitemap);
+  161: 
+  162: console.log(`Prerendered ${renderedCount} real React routes; sitemap contains ${routes.filter((route) => route.indexable).length} canonical URLs.`);

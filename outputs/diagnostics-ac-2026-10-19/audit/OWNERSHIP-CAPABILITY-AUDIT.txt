@@ -1,0 +1,182 @@
+DIGI-TEC DIAGNOSTICS & AC: EXISTING OWNER AND CAPABILITY AUDIT
+19 October 2026. Read-only baseline. No application or production edits by this audit.
+
+Evidence and limits
+The structural baseline is the final prior combined release candidate dist, whose
+reviewed application source corresponds to current main acef342. The immutable
+selected-baseline-html directory contains all 16 selected page responses before
+this sprint, with SHA256 in selected-owner-baseline.json. Metadata comparisons
+should use these local baseline snapshots, not search-engine cached extracts.
+
+The audit inspected 1,256 generated HTML routes and extracted 216 relevant routes:
+12 general/Mercedes services, 194 brand diagnostic/AC/electrical routes and 10
+existing Mercedes/Porsche symptom guides. Of these, 196 are indexable and in the
+sitemap; 20 retained secondary-brand electrical routes are noindex and excluded.
+All 216 have one H1 and a self-referencing canonical; all service owners have
+Service structured data and all emitted FAQ answers exist in initial HTML.
+No noindex policy change or new route is needed for the selected demand.
+
+The separate public capture used 34 public GET requests: 32 owner locales,
+sitemap.xml and robots.txt, at 2026-10-19T08:03:37.623Z (12:03 Dubai). All returned
+HTTP 200. All 32 owners have one H1, one self-canonical, index/follow eligibility,
+sitemap inclusion, parseable JSON-LD, crawlable FAQ answers where present and no
+X-Robots-Tag noindex. This establishes crawl/indexing eligibility, not actual
+Google index coverage. No Google Search Console URL Inspection was performed.
+
+Eight strongest implementation owners (existing routes; /ar counterparts exist)
+1. /services/car-diagnostics-dubai
+   General diagnostic tests, fault-code scanning, check-engine/warning complaints,
+   no-start investigation and electrical/mechanical triage; do not split into a
+   page per symptom. The local baseline has 3 FAQs, one additional explanatory
+   section, 4,950 main-content characters and 685 inbound page routes (includes
+   sitewide footer links; this is not 685 independent editorial endorsements).
+   Existing headline/quote CTAs and phone are available. Extend symptom/process
+   detail and customer intake, while keeping coding/programming distinct.
+
+2. /services/car-ac-repair-dubai
+   General warm-air, weak cooling/airflow, leak and compressor-related searches
+   belong here; condenser, evaporator and hose concerns do not justify separate
+   URLs. Baseline has zero FAQ, four brief extra sections, 4,739 main-content
+   characters and 31 inbound routes. No service-specific hero CTA or quotation
+   guidance; generic WhatsApp/phone/end CTA exists. Highest general conversion
+   improvement: add symptom-specific assessment wording and explain refill versus
+   leak/fault repair and the vehicle-specific quotation process.
+
+3. /brands/bmw-service-dubai/engine-diagnostics
+   BMW diagnostic/drivetrain/check-engine/rough-running intent. 6 FAQs; 4,662
+   main-content characters; 22 inbound routes. Existing ISTA+ language separates
+   diagnostic scanning, coding and programming. Explain directed checks, symptom
+   conditions and next-step assessment without asserting every module is covered.
+
+4. /brands/porsche-service-dubai/engine-diagnostics
+   Porsche diagnostic/check-engine/drivability intent. 6 FAQs; 4,998 main-content
+   characters; 30 inbound routes. Existing PIWIS 3 claim is qualified by vehicle
+   generation, module and access. Replace the inherited 9A2/battery-disconnect
+   communication assumption with a symptom description if editing symptoms.
+
+5. /services/mercedes-ac-repair-dubai
+   Mercedes AC/climate-zone/cooling/leak concerns. Canonical is the /services URL,
+   not /brands/mercedes-benz-service-dubai/ac-repair. 3 FAQs; 5,305 main-content
+   characters; 27 inbound routes. Existing rendered English composer and Arabic
+   override already use testing-first language, unlike stale raw service entries.
+   Improve narrow intake/quotation depth and related diagnostic links.
+
+6. /brands/bmw-service-dubai/ac-repair
+   BMW warm-air/cooling/AC complaints. 6 FAQs; 4,933 main-content characters; 15
+   inbound routes. Replace inherited symptoms that equate odour with microbial
+   growth, water in footwell with a blocked drain, and assert a universal branded
+   low-refrigerant cluster message or clutch operation. Similar symptoms can have
+   different causes and compressor/control designs vary. Repair malformed
+   refrigerant placeholder prose in the process and FAQ.
+
+7. /brands/volkswagen-service-dubai/ac-repair
+   Volkswagen/VW AC repair and cooling concerns. 6 FAQs; 5,047 main-content
+   characters; 15 inbound routes. Same inherited symptom/refrigerant wording issue
+   as BMW. Existing route is indexable even though Volkswagen electrical-repair
+   route remains noindex. Use its diagnostic owner for EPC/warning requests.
+
+8. /brands/range-rover-service-dubai/ac-repair
+   Range Rover AC/climate-zone concerns. 6 FAQs; 5,098 main-content characters; 15
+   inbound routes. Same inherited symptom/refrigerant issues. Existing owner can
+   explain front/rear zone, idle/road and airflow observations without claiming
+   universal JLR tools, every rear evaporator replacement or fixed time/price.
+
+Other verified owners to retain
+- /services/mercedes-diagnostics-dubai: completed repair-sprint owner, preserve.
+- /services/auto-electrical-repair-dubai: wiring, voltage/charging/no-start and
+  supported module communication faults. Already deeper content; retain.
+- /brands/volkswagen-service-dubai/engine-diagnostics: EPC/check-engine/gearbox
+  warning assessment with qualified ODIS information. Existing owner; no duplicate.
+- /brands/range-rover-service-dubai/engine-diagnostics: existing diagnostic owner.
+- /brands/lamborghini-service-dubai/{engine-diagnostics,ac-repair}: existing
+  owners; completed diagnostic repair work preserved.
+- /brands/rolls-royce-service-dubai/{engine-diagnostics,ac-repair}: existing owners.
+- Porsche and Audi AC owners already exist. They can retain lower-priority demand
+  without broadening this eight-owner implementation.
+- Mercedes and Porsche /problems/* check-engine/no-start/AIRMATIC/PASM/battery
+  guides support commercial owners; they are information guides, not a reason to
+  create new repair pages. This inventory found only English versions of those
+  selected symptom guides; do not invent Arabic counterparts or hreflang targets.
+
+Canonical, hreflang, links and schema
+All 16 selected locales are indexable, self-canonical and in the current local and
+public sitemap. Each has en-AE/ar-AE reciprocal alternate references and x-default
+to English. Preserve exact existing route and business/entity identifiers.
+Service nodes reference https://digitecme.com/#business; global #organization,
+#website and the six established business service entities remain intact.
+Existing route FAQPage is emitted only from displayed FAQ data. Update real
+questions/answers together; do not create invented ratings, review/AI schema or
+manufacturer affiliation. The full map records headings, title/description,
+schema types and IDs, inbound routes and contact destinations for each owner.
+
+Use existing general-to-brand and brand-to-sibling links to connect a complaint
+with the right owner. Brand hubs already link to their diagnostic/AC services;
+do not repeat the completed five-brand optimization for more links. Relevant
+diagnostic-to-electrical/mechanical/transmission paths should name the decision
+they help make. Inbound counts are unique page routes, including navigation;
+they do not measure link strength, traffic or GSC query-to-page ownership.
+
+Arabic parity
+Selected Arabic routes exist and are crawlable, but generic service refiners
+strip extraSections and the quotation-guidance JSX is English-only. General
+diagnostic Arabic metadata still advertises ECU programming/full digital scan
+without the English qualifications; general AC Arabic copy is much shorter.
+Target-only final overrides should preserve equivalent symptom/process/FAQ and
+quotation coverage in both languages. Keep the exact route/entity identifiers.
+The shared generic Arabic CTA label currently overrides service-specific labels;
+ensure target-only diagnostic/AC CTA wording is used after localization.
+
+Workshop capability
+capability-evidence.json separates existing advertised claims from operational
+verification. The current repository/public site states XENTRY, ISTA+, PIWIS 3
+and ODIS capabilities, with conditional JLR-compatible functions. No new physical
+tool inventory, licences, version coverage or technician credentials were
+provided. The older Porsche audit explicitly requested PIWIS confirmation.
+Do not expand tool ownership/compatibility, coding/security/key functions,
+electrical module repair or hybrid/high-voltage work from this evidence.
+
+Existing AC scope supports explaining refrigerant, leak, airflow, compressor,
+condenser/evaporator and control investigations with vehicle-specific acceptance.
+No new evidence establishes a particular refrigerant machine, hybrid/electric AC
+oil capability, hose fabrication/replacement service or every component repair.
+Explain hose/pipe leakage as a possible location, not a universal new replacement
+promise. Do not invent prices, warranties, authorisation or same-day outcomes.
+
+Mobile and conversion baseline
+All selected pages have telephone/WhatsApp links and responsive CTA styles; no
+dedicated mobile sticky contact bar was found. Their existing forms count is
+zero; the brand-hub forms are separate preserved components. General AC lacks
+an early service-specific CTA. Existing phone is +971 4 340 2223 and WhatsApp
+destination is 97143402223 throughout the selected pages. Add concise intake
+prompts for model/year/mileage, exact warning, when the fault occurs and recent
+work; AC requests should record cooling/airflow conditions and previous recharge
+or repair. Explicitly explain the WhatsApp draft must be sent and an appointment
+requires workshop confirmation. This read-only baseline did not execute live
+contact links or send a message. Post-change browser QA must verify 320/390px
+overflow, visibility, localized labels, hrefs, draft safety and PPF/tuning/forms.
+
+Existing Analytics.tsx records telephone_link_clicked, whatsapp_chat_opened and
+related WhatsApp intent events. Keep safeWhatsAppUrl sanitization and existing
+privacy/attribution conventions. A click, draft or opened chat is not a received
+enquiry; qualified lead measurement requires the business's received messages,
+calls or CRM evidence. No GA4 delivery or CRM receipt is established by this audit.
+
+Production difference
+The public Mercedes diagnostic owner still serves the pre-repair-sprint title
+"Mercedes XENTRY Diagnostics Dubai | Coding | Digi-Tec", while local approved
+source uses "Mercedes Diagnostics Dubai | XENTRY Fault Tracing | DIGI-TEC".
+The other captured owner metadata match the approved local baseline. Raw HTML
+hashes can also differ because the host transforms scripts/email markup; they
+are recorded as evidence, not treated as proof of a specific source deployment.
+A main-branch push alone does not prove the newer content is published.
+
+Files
+- existing-page-ownership-map.csv: all 216 discovered routes and SEO/contact facts.
+- baseline-owner-audit.json: full structural, headings, schema and inbound detail.
+- focal-owner-summary.json: 54 focal brand/general locales.
+- selected-owner-baseline.json: 8 selected owners / 16 locales, immutable paths.
+- selected-baseline-html/: exact initial HTML before this sprint.
+- public-owner-http-audit.json: response status, headers, metadata and raw hashes.
+- public-owner-rendered-audit.json: initial HTML/schema/body evidence for 32 owners.
+- live-html/: the raw public GET responses, robots and sitemap.
+- capability-evidence.json: source-evidence ledger and limits.

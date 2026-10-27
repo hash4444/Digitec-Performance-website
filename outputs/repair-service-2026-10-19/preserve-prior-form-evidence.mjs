@@ -1,0 +1,18 @@
+import {readFile,writeFile} from 'node:fs/promises';
+import {isDeepStrictEqual} from 'node:util';
+const old='outputs/five-brand-service-2026-10-19';
+const root='outputs/repair-service-2026-10-19';
+const file=`${old}/conversion/form-functional-tests.json`;
+const current=JSON.parse(await readFile(file,'utf8'));
+const previous=JSON.parse((await readFile(`${old}/qa/brand-form-source.log`,'utf8')).trim());
+const stripDate=({checkedAt,...rest})=>rest;
+if(!isDeepStrictEqual(stripDate(current),stripDate(previous)))throw Error('Prior form evidence differs beyond its regenerated timestamp; refuse reconstruction');
+await writeFile(`${root}/qa/form-functional-tests.json`,JSON.stringify(current,null,2));
+await writeFile(file,JSON.stringify(previous,null,2));
+const script=(await readFile(`${old}/conversion/test-brand-form.mjs`,'utf8')).replace(`${old}/conversion/form-functional-tests.json`,`${root}/qa/form-functional-tests.json`);
+await writeFile(`${root}/qa/test-brand-form.mjs`,script);
+let runner=await readFile(`${root}/qa-runner.mjs`,'utf8');
+runner=runner.replace(`${old}/conversion/test-brand-form.mjs`,`${root}/qa/test-brand-form.mjs`);
+await writeFile(`${root}/qa-runner.mjs`,runner);
+await writeFile(`${root}/qa/prior-form-evidence-preservation.json`,JSON.stringify({restoredPriorCheckedAt:previous.checkedAt,matchingAllOtherFields:true,restorationSource:`${old}/qa/brand-form-source.log`,futureOutput:`${root}/qa/form-functional-tests.json`},null,2));
+console.log('Prior sprint form evidence restored; reusable check now writes only to this sprint');

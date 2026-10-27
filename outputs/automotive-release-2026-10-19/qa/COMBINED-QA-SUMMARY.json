@@ -1,0 +1,81 @@
+{
+  "checkedAt": "2026-10-19T07:40:04.489Z",
+  "candidate": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\automotive-release-2026-10-19\\candidate.local",
+  "passed": true,
+  "sourceSha256": "7dc83133c9d5174ee3a05ab37602ffffabcb2a316f8ad65a4c5f64aab22a3e46",
+  "productionBuildSteps": 19,
+  "additionalCliChecks": 10,
+  "eslint": {
+    "errors": 0,
+    "knownWarnings": 11
+  },
+  "focusedStatic": {
+    "routes": 32,
+    "assertions": 1454,
+    "directInternalLinkOccurrences": 64
+  },
+  "fiveBrandBrowser": {
+    "routeViewports": 30,
+    "interactions": 30,
+    "noJavaScript": 10
+  },
+  "repairBrowser": {
+    "routeViewports": 66,
+    "interactions": 66,
+    "noJavaScript": 22,
+    "hubInlinks": 22
+  },
+  "masterBrowser": {
+    "routeViewports": 27,
+    "interactions": 17,
+    "spaNavigation": 7
+  },
+  "protectionRoutingBrowser": {
+    "requests": 9,
+    "spaNavigation": "directory to PPF to ceramic to polishing to PPF; back, forward and return checks passed"
+  },
+  "ppfBrowser": {
+    "passed": true,
+    "viewportWidths": [
+      1440,
+      390,
+      320
+    ],
+    "whatsappCtas": 5,
+    "quotationForms": [
+      {
+        "route": "/services/paint-protection-film",
+        "emptyBlocked": true,
+        "invalidVehicleAndContactBlocked": true,
+        "allContactMethods": true,
+        "unsureCoverage": true,
+        "duplicateHandoffSuppressed": true,
+        "personalDataExcluded": true,
+        "noConfirmedLeadEvent": true
+      },
+      {
+        "route": "/ar/services/paint-protection-film",
+        "emptyBlocked": true,
+        "invalidVehicleAndContactBlocked": true,
+        "allContactMethods": true,
+        "unsureCoverage": true,
+        "duplicateHandoffSuppressed": true,
+        "personalDataExcluded": true,
+        "noConfirmedLeadEvent": true
+      }
+    ],
+    "prerenderedWithoutJavaScript": true
+  },
+  "tuningBrowser": {
+    "cases": 6,
+    "protectedPackages": "62 published rows; DB11 withheld reinforcement absent; S63 enquiry only"
+  },
+  "failedLocalResponses": 0,
+  "runtimeOrHydrationErrors": 0,
+  "safety": "Only isolated candidate outputs exercised. External/write browser requests blocked. No real message, phone call, enquiry, commit, push, deployment or production write.",
+  "limitations": "No live release, Google-selected indexing, delivered WhatsApp message, CRM receipt, GA4 ingestion, field Core Web Vitals or ranking improvement is asserted. Live release gate depends on current Cloudflare deployment/version and rollback verification.",
+  "supersededAttempts": [
+    "sandbox-cli-attempt.json (Windows mkdir EPERM before build completion; final escalated candidate run passed)",
+    "windows-preload-attempt.json (harness Windows import-URL error before browsers launched; final corrected harness passed)"
+  ]
+}

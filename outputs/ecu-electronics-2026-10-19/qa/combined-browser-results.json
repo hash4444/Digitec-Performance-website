@@ -1,0 +1,64 @@
+{
+  "checkedAt": "2026-10-19T08:44:19.500Z",
+  "candidate": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\ecu-electronics-2026-10-19\\candidate.local",
+  "passed": true,
+  "safety": "Loopback GET/HEAD requests only. Existing protected contact test stubs/blocked network retained. No actual message, customer enquiry, backend write, or production request.",
+  "results": [
+    {
+      "name": "five-brand-browser",
+      "exitCode": 0,
+      "passed": true,
+      "seconds": 48.92,
+      "log": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\ecu-electronics-2026-10-19\\qa\\five-brand-browser.log"
+    },
+    {
+      "name": "repair-browser",
+      "exitCode": 0,
+      "passed": true,
+      "seconds": 101.892,
+      "log": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\ecu-electronics-2026-10-19\\qa\\repair-browser.log"
+    },
+    {
+      "name": "master-seo-browser",
+      "exitCode": 0,
+      "passed": true,
+      "seconds": 32.558,
+      "log": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\ecu-electronics-2026-10-19\\qa\\master-seo-browser.log"
+    },
+    {
+      "name": "protection-routing-browser",
+      "exitCode": 0,
+      "passed": true,
+      "seconds": 4.421,
+      "log": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\ecu-electronics-2026-10-19\\qa\\protection-routing-browser.log"
+    },
+    {
+      "name": "ppf-browser",
+      "exitCode": 0,
+      "passed": true,
+      "seconds": 25.639,
+      "log": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\ecu-electronics-2026-10-19\\qa\\ppf-browser.log"
+    },
+    {
+      "name": "diagnostics-ac-browser",
+      "exitCode": 0,
+      "passed": true,
+      "seconds": 48.377,
+      "log": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\ecu-electronics-2026-10-19\\qa\\diagnostics-ac-browser.log"
+    },
+    {
+      "name": "tuning-browser",
+      "exitCode": 0,
+      "passed": true,
+      "seconds": 8.931,
+      "log": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\ecu-electronics-2026-10-19\\qa\\tuning-browser.log"
+    },
+    {
+      "name": "ecu-electronics-browser",
+      "exitCode": 0,
+      "passed": true,
+      "seconds": 39.293,
+      "log": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\ecu-electronics-2026-10-19\\qa\\ecu-electronics-browser.log"
+    }
+  ]
+}

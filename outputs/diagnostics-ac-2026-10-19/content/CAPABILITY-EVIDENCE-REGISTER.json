@@ -1,0 +1,112 @@
+{
+  "date": "2026-10-19",
+  "purpose": "Distinguish existing first-party website assertions from independently verified workshop capability before expanding diagnostics and AC claims.",
+  "independentWorkshopEvidenceProvided": false,
+  "userDirection": "Use cautious existing-service wording; do not expand equipment or compatibility claims.",
+  "entries": [
+    {
+      "claim": "Independent workshop in Al Quoz Industrial Area 3, Dubai; Warehouses 11-15; phone +971 4 340 2223",
+      "source": [{"path":"index.html","line":84},{"path":"src/components/Footer.tsx","line":83}],
+      "status": "Existing first-party NAP, internally consistent in inspected files",
+      "independentVerification": "No live GBP listing/category/pin confirmation in this content audit",
+      "allowedUse": "Retain existing Dubai/Al Quoz context and contact number; verify listing before GBP writes."
+    },
+    {
+      "claim": "XENTRY diagnostic capability for Mercedes",
+      "source": [{"path":"src/data/brands.ts","line":32},{"path":"src/data/brands.ts","line":46},{"path":"src/data/repairServiceContent.ts","line":34}],
+      "status": "Existing first-party capability assertion with per-vehicle restrictions",
+      "independentVerification": "No current hardware inventory, licence/access evidence, VIN compatibility confirmation or job card provided",
+      "allowedUse": "Preserve existing completed owner; do not expand to every module, coding, programming or manufacturer authorization. New AC copy makes no XENTRY promise."
+    },
+    {
+      "claim": "BMW ISTA+ diagnostic capability",
+      "source": [{"path":"src/data/brandServices.ts","line":210},{"path":"src/data/queryServiceContent.ts","line":44}],
+      "status": "Existing first-party assertion, not independently verified",
+      "independentVerification": "No current software/licence/module/VIN proof supplied",
+      "allowedUse": "New diagnostic copy uses compatible available data and physical testing; no new equipment or universal coding claim."
+    },
+    {
+      "claim": "Porsche PIWIS 3 capability",
+      "source": [{"path":"src/data/brandServices.ts","line":174},{"path":"src/data/queryServiceContent.ts","line":198}],
+      "status": "Existing first-party assertion, not independently verified",
+      "independentVerification": "No current tool/access/module compatibility record supplied",
+      "allowedUse": "New diagnostics wording confirms fitted-system coverage; no manufacturer partnership, universal module or high-voltage claim."
+    },
+    {
+      "claim": "Volkswagen ODIS diagnostic capability",
+      "source": [{"path":"src/data/brandServices.ts","line":437},{"path":"src/data/brands.ts","line":407}],
+      "status": "Existing first-party assertion, vehicle/access restrictions already present",
+      "independentVerification": "No current tool/licence/VIN access evidence supplied",
+      "allowedUse": "Retain the completed Volkswagen diagnostic owner; new AC copy does not advertise ODIS or infer compressor-control compatibility."
+    },
+    {
+      "claim": "JLR-compatible diagnostics / SDD or Pathfinder functions",
+      "source": [{"path":"src/data/brandServices.ts","line":318},{"path":"src/data/brands.ts","line":514}],
+      "status": "Existing first-party qualified assertion",
+      "independentVerification": "No tool inventory, model year, exact module or access confirmation supplied",
+      "allowedUse": "Range Rover AC copy confirms system and accepted scope without adding tool promises."
+    },
+    {
+      "claim": "Supported generic diagnostics, code/live-data review, physical tests and separately supported module functions",
+      "source": [{"path":"src/data/services.ts","line":710},{"path":"src/data/services.ts","line":720},{"path":"src/data/services.ts","line":733}],
+      "status": "Established first-party service scope",
+      "independentVerification": "General diagnostic principle supported by Bosch documentation; actual individual vehicle coverage still unverified",
+      "allowedUse": "Explain symptom intake, supported scanning, physical testing, staged findings and approval without adding new repair capabilities."
+    },
+    {
+      "claim": "Generic AC inspection covers cooling, airflow, leak, electrical and compressor concerns on supported vehicles",
+      "source": [{"path":"src/data/services.ts","line":850},{"path":"src/data/services.ts","line":858}],
+      "status": "Established first-party service scope",
+      "independentVerification": "No independent workshop-specific job/equipment evidence supplied",
+      "allowedUse": "Describe cautious AC assessment and confirm vehicle/service acceptance before work."
+    },
+    {
+      "claim": "Compressor repair/replacement, condenser/evaporator servicing, leak repair and refrigerant work",
+      "source": [{"path":"src/data/services.ts","line":866},{"path":"src/data/services.ts","line":893}],
+      "status": "Existing first-party list, specific current capabilities not independently verified",
+      "independentVerification": "No refrigerant machine inventory, component repair evidence, parts/access confirmation or equipment compatibility supplied",
+      "allowedUse": "Mention possible systems/parts to investigate; do not promise a specific replacement or refrigerant. Confirm findings and accepted repair scope."
+    },
+    {
+      "claim": "Brand-specific AC refrigerant profile value",
+      "source": [{"path":"src/data/brandServices.ts","line":126},{"path":"src/data/brandServices.ts","line":712}],
+      "status": "Profile information is not current equipment or vehicle compatibility evidence",
+      "independentVerification": "No vehicle label or exact VIN provided",
+      "allowedUse": "Remove refrigerant-led titles on selected owners; confirm the vehicle label, equipment and scope before service."
+    },
+    {
+      "claim": "Odour proves evaporator microbial growth; cabin water proves a blocked drain",
+      "source": [{"path":"src/data/brandServices.ts","line":718},{"path":"src/data/brandServices.ts","line":721}],
+      "status": "Unsupported deterministic cause from symptom",
+      "independentVerification": "No vehicle findings; technical symptoms can have multiple causes",
+      "allowedUse": "Selected-owner override replaces with neutral unusual odour/dampness/water symptoms and explicitly requires inspection."
+    },
+    {
+      "claim": "Porsche communication symptom after battery disconnect on engine-code 9A2",
+      "source": [{"path":"src/data/brandServices.ts","line":787}],
+      "status": "Generic composer links an engine-code reference to a module symptom without job/vehicle evidence",
+      "independentVerification": "No supporting vehicle finding provided",
+      "allowedUse": "Selected diagnostic override uses general exact-warning/changed-functions-after-work observation without applying an engine code."
+    },
+    {
+      "claim": "Manufacturer-authorized status, universal ECU or high-voltage repair, every module programmable",
+      "source": [],
+      "status": "Not established and not introduced",
+      "independentVerification": "No authorization, current training, safe equipment or exact function coverage evidence supplied",
+      "allowedUse": "Do not advertise. Confirm any separately requested job and supported scope before acceptance."
+    },
+    {
+      "claim": "Prices, warranty, fixed turnaround and confirmed appointments",
+      "source": [],
+      "status": "Not established for selected diagnostics/AC scope",
+      "independentVerification": "No approved price/warranty/timing schedule or availability confirmation supplied",
+      "allowedUse": "Explain quotation factors and confirm appointment; no price, warranty or same-day promises."
+    }
+  ],
+  "primaryTechnicalSources": [
+    {"url":"https://www.denso-am.eu/news/june-2017-newsletter-drive-to-maintain-denso-ac-satisfaction-this-summer","supports":"AC intake, system condition, airflow/refrigerant identification and leak-assessment reasoning; not workshop capability or timing"},
+    {"url":"https://www.denso-am.eu/news/denso-adds-two-further-air-conditioning-videos-to-its-technical-resources","supports":"Compressor diagnosis before procedure selection; not DIGI-TEC equipment or affiliation"},
+    {"url":"https://www.boschaftermarket.com/me/en/equipment/ecu-diagnosis/esitronic-software/esitronic/","supports":"Diagnostic data versus guided troubleshooting/component test information; not DIGI-TEC tool availability"},
+    {"url":"https://www.epa.gov/mvac/options-recharging-your-air-conditioner","supports":"Charging alone does not permanently repair refrigerant leaks; US legal requirements not applied to Dubai"}
+  ]
+}

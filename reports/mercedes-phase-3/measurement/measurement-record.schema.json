@@ -1,0 +1,797 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Minimal privacy-preserving measurement source record",
+  "description": "Design only. Customer identifiers, free text, raw click IDs and full URL query strings are excluded. Unknown joins must remain unknown. Future collection/join implementation requires separate approval.",
+  "oneOf": [
+    {
+      "$ref": "#/$defs/gsc_daily"
+    },
+    {
+      "$ref": "#/$defs/interaction_daily"
+    },
+    {
+      "$ref": "#/$defs/lead_stage"
+    },
+    {
+      "$ref": "#/$defs/booking_stage"
+    },
+    {
+      "$ref": "#/$defs/invoice_entry"
+    },
+    {
+      "$ref": "#/$defs/attribution_join"
+    },
+    {
+      "$ref": "#/$defs/serp_observation"
+    }
+  ],
+  "$defs": {
+    "gsc_daily": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "record_type",
+        "source_ref",
+        "source_timezone",
+        "as_of_utc",
+        "date",
+        "search_type_raw",
+        "aggregation_raw",
+        "query_raw",
+        "page_url_sanitized",
+        "country_raw",
+        "device_raw",
+        "clicks",
+        "impressions",
+        "average_position",
+        "availability",
+        "extraction_coverage_note"
+      ],
+      "properties": {
+        "record_type": {
+          "const": "gsc_daily"
+        },
+        "source_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source_timezone": {
+          "type": "string",
+          "minLength": 1
+        },
+        "as_of_utc": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "date": {
+          "type": "string",
+          "format": "date"
+        },
+        "search_type_raw": {
+          "type": "string"
+        },
+        "aggregation_raw": {
+          "type": "string"
+        },
+        "query_raw": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "page_url_sanitized": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^https://(?:www\\.)?digitecme\\.com/[^?#]*$",
+          "description": "Source-reported origin/path with query/fragment removed in this derived dashboard. Preserve any original raw URL only in its access-controlled source export, referenced by source_ref."
+        },
+        "page_family": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "country_raw": {
+          "type": "string"
+        },
+        "country_scope": {
+          "enum": [
+            "ARE",
+            "ALL",
+            "OTHER",
+            "UNKNOWN"
+          ]
+        },
+        "device_raw": {
+          "type": "string"
+        },
+        "device_scope": {
+          "enum": [
+            "ALL",
+            "MOBILE",
+            "DESKTOP",
+            "TABLET",
+            "UNKNOWN"
+          ]
+        },
+        "clicks": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "impressions": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "average_position": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "availability": {
+          "enum": [
+            "available",
+            "partial",
+            "suppressed",
+            "unavailable"
+          ]
+        },
+        "extraction_coverage_note": {
+          "type": "string"
+        }
+      }
+    },
+    "interaction_daily": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "record_type",
+        "source_ref",
+        "source_timezone",
+        "as_of_utc",
+        "date",
+        "event_name",
+        "collection_source",
+        "collection_verified",
+        "page_path",
+        "event_count",
+        "deduplication_note"
+      ],
+      "properties": {
+        "record_type": {
+          "const": "interaction_daily"
+        },
+        "source_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source_timezone": {
+          "type": "string",
+          "minLength": 1
+        },
+        "as_of_utc": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "date": {
+          "type": "string",
+          "format": "date"
+        },
+        "event_name": {
+          "enum": [
+            "telephone_link_clicked",
+            "whatsapp_chat_opened",
+            "whatsapp_draft_opened",
+            "whatsapp_click",
+            "page_view"
+          ]
+        },
+        "collection_source": {
+          "enum": [
+            "ga4_verified_export",
+            "dataLayer_debug_only"
+          ]
+        },
+        "collection_verified": {
+          "type": "boolean"
+        },
+        "page_path": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^/[^?#]*$",
+          "description": "Path only, without query or fragment."
+        },
+        "landing_path": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^/[^?#]*$",
+          "description": "Path only, without query or fragment."
+        },
+        "page_family": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "cta_placement": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "country_scope": {
+          "enum": [
+            "ARE",
+            "ALL",
+            "OTHER",
+            "UNKNOWN"
+          ]
+        },
+        "device_scope": {
+          "enum": [
+            "ALL",
+            "MOBILE",
+            "DESKTOP",
+            "TABLET",
+            "UNKNOWN"
+          ]
+        },
+        "acquisition_definition": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "event_count": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "sessions": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "sessions_with_contact": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "deduplication_note": {
+          "type": "string"
+        }
+      }
+    },
+    "lead_stage": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "record_type",
+        "source_ref",
+        "source_timezone",
+        "as_of_utc",
+        "lead_ref",
+        "stage_at_utc",
+        "stage",
+        "brand",
+        "service_intent",
+        "reason_code",
+        "interaction_ref",
+        "attribution_strength"
+      ],
+      "properties": {
+        "record_type": {
+          "const": "lead_stage"
+        },
+        "source_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source_timezone": {
+          "type": "string",
+          "minLength": 1
+        },
+        "as_of_utc": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "lead_ref": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9_-]{8,100}$",
+          "description": "Opaque internal reference; never a customer identifier, phone, VIN, email, message or raw advertising click ID."
+        },
+        "stage_at_utc": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "stage": {
+          "enum": [
+            "received",
+            "qualified",
+            "unqualified",
+            "duplicate",
+            "spam"
+          ]
+        },
+        "brand": {
+          "enum": [
+            "Mercedes-Benz",
+            "unknown"
+          ]
+        },
+        "service_intent": {
+          "enum": [
+            "scheduled_maintenance",
+            "repair",
+            "diagnostics",
+            "other",
+            "unknown"
+          ]
+        },
+        "reason_code": {
+          "enum": [
+            "supported_scope",
+            "outside_scope",
+            "duplicate",
+            "spam",
+            "insufficient_context",
+            "unknown"
+          ]
+        },
+        "interaction_ref": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^[A-Za-z0-9_-]{8,100}$",
+              "description": "Opaque internal reference; never a customer identifier, phone, VIN, email, message or raw advertising click ID."
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "attribution_strength": {
+          "enum": [
+            "deterministic",
+            "staff_recorded",
+            "self_reported",
+            "unknown"
+          ]
+        }
+      }
+    },
+    "booking_stage": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "record_type",
+        "source_ref",
+        "source_timezone",
+        "as_of_utc",
+        "booking_ref",
+        "lead_ref",
+        "stage_at_utc",
+        "stage",
+        "scope_code"
+      ],
+      "properties": {
+        "record_type": {
+          "const": "booking_stage"
+        },
+        "source_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source_timezone": {
+          "type": "string",
+          "minLength": 1
+        },
+        "as_of_utc": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "booking_ref": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9_-]{8,100}$",
+          "description": "Opaque internal reference; never a customer identifier, phone, VIN, email, message or raw advertising click ID."
+        },
+        "lead_ref": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9_-]{8,100}$",
+          "description": "Opaque internal reference; never a customer identifier, phone, VIN, email, message or raw advertising click ID."
+        },
+        "stage_at_utc": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "stage": {
+          "enum": [
+            "confirmed",
+            "cancelled",
+            "completed",
+            "missed"
+          ]
+        },
+        "scope_code": {
+          "enum": [
+            "scheduled_maintenance",
+            "repair",
+            "diagnostics",
+            "other",
+            "unknown"
+          ]
+        }
+      }
+    },
+    "invoice_entry": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "record_type",
+        "source_ref",
+        "source_timezone",
+        "as_of_utc",
+        "invoice_ref",
+        "booking_ref",
+        "posted_date",
+        "entry_kind",
+        "net_aed",
+        "currency",
+        "finance_definition_ref",
+        "reverses_invoice_ref"
+      ],
+      "properties": {
+        "record_type": {
+          "const": "invoice_entry"
+        },
+        "source_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source_timezone": {
+          "type": "string",
+          "minLength": 1
+        },
+        "as_of_utc": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "invoice_ref": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9_-]{8,100}$",
+          "description": "Opaque internal reference; never a customer identifier, phone, VIN, email, message or raw advertising click ID."
+        },
+        "booking_ref": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^[A-Za-z0-9_-]{8,100}$",
+              "description": "Opaque internal reference; never a customer identifier, phone, VIN, email, message or raw advertising click ID."
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "posted_date": {
+          "type": "string",
+          "format": "date"
+        },
+        "entry_kind": {
+          "enum": [
+            "invoice",
+            "credit",
+            "refund_adjustment"
+          ]
+        },
+        "net_aed": {
+          "type": "number"
+        },
+        "currency": {
+          "const": "AED"
+        },
+        "finance_definition_ref": {
+          "type": "string"
+        },
+        "reverses_invoice_ref": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^[A-Za-z0-9_-]{8,100}$",
+              "description": "Opaque internal reference; never a customer identifier, phone, VIN, email, message or raw advertising click ID."
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      }
+    },
+    "attribution_join": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "record_type",
+        "source_ref",
+        "source_timezone",
+        "as_of_utc",
+        "interaction_ref",
+        "lead_ref",
+        "booking_ref",
+        "invoice_ref",
+        "join_strength",
+        "join_evidence_ref",
+        "source",
+        "medium",
+        "data_owner_approval_ref"
+      ],
+      "properties": {
+        "record_type": {
+          "const": "attribution_join"
+        },
+        "source_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source_timezone": {
+          "type": "string",
+          "minLength": 1
+        },
+        "as_of_utc": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "interaction_ref": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^[A-Za-z0-9_-]{8,100}$",
+              "description": "Opaque internal reference; never a customer identifier, phone, VIN, email, message or raw advertising click ID."
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "lead_ref": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9_-]{8,100}$",
+          "description": "Opaque internal reference; never a customer identifier, phone, VIN, email, message or raw advertising click ID."
+        },
+        "booking_ref": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^[A-Za-z0-9_-]{8,100}$",
+              "description": "Opaque internal reference; never a customer identifier, phone, VIN, email, message or raw advertising click ID."
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "invoice_ref": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^[A-Za-z0-9_-]{8,100}$",
+              "description": "Opaque internal reference; never a customer identifier, phone, VIN, email, message or raw advertising click ID."
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "join_strength": {
+          "enum": [
+            "deterministic",
+            "staff_recorded",
+            "self_reported",
+            "unknown"
+          ]
+        },
+        "join_evidence_ref": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "landing_path": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^/[^?#]*$",
+          "description": "Path only, without query or fragment."
+        },
+        "source": {
+          "enum": [
+            "google",
+            "bing",
+            "chatgpt",
+            "openai",
+            "perplexity",
+            "gemini",
+            "claude",
+            "copilot",
+            "duckduckgo",
+            "instagram",
+            "facebook",
+            "youtube",
+            "newsletter",
+            "whatsapp",
+            "direct",
+            "unknown"
+          ]
+        },
+        "medium": {
+          "enum": [
+            "organic",
+            "cpc",
+            "ppc",
+            "paid_search",
+            "paid_social",
+            "social",
+            "email",
+            "referral",
+            "display",
+            "direct",
+            "organic_social",
+            "unknown"
+          ]
+        },
+        "campaign_ref": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^[A-Za-z0-9_-]{8,100}$",
+              "description": "Opaque internal reference; never a customer identifier, phone, VIN, email, message or raw advertising click ID."
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "advertising_click_id_ref": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^[A-Za-z0-9_-]{8,100}$",
+              "description": "Opaque internal reference; never a customer identifier, phone, VIN, email, message or raw advertising click ID."
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "data_owner_approval_ref": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "serp_observation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "record_type",
+        "source_ref",
+        "source_timezone",
+        "as_of_utc",
+        "captured_at_utc",
+        "query",
+        "context_ref",
+        "device_context",
+        "language",
+        "requested_country",
+        "observed_city_country_label",
+        "eligible_top3_urls",
+        "validated_top3",
+        "digitec_in_top3",
+        "digitec_position_within_top3",
+        "exclusions_reviewed"
+      ],
+      "properties": {
+        "record_type": {
+          "const": "serp_observation"
+        },
+        "source_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source_timezone": {
+          "type": "string",
+          "minLength": 1
+        },
+        "as_of_utc": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "captured_at_utc": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "query": {
+          "enum": [
+            "mercedes service dubai",
+            "mercedes repair dubai",
+            "mercedes specialist dubai",
+            "mercedes workshop dubai",
+            "mercedes maintenance dubai",
+            "mercedes oil change dubai"
+          ]
+        },
+        "context_ref": {
+          "type": "string"
+        },
+        "device_context": {
+          "enum": [
+            "DESKTOP",
+            "MOBILE",
+            "EMULATED",
+            "UNKNOWN"
+          ]
+        },
+        "language": {
+          "type": "string"
+        },
+        "requested_country": {
+          "type": "string"
+        },
+        "observed_city_country_label": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "eligible_top3_urls": {
+          "type": "array",
+          "minItems": 3,
+          "maxItems": 3,
+          "items": {
+            "type": "string",
+            "format": "uri"
+          }
+        },
+        "validated_top3": {
+          "const": true
+        },
+        "digitec_in_top3": {
+          "type": "boolean"
+        },
+        "digitec_position_within_top3": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 1,
+          "maximum": 3
+        },
+        "exclusions_reviewed": {
+          "const": true
+        }
+      }
+    }
+  }
+}

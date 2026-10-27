@@ -1,0 +1,28 @@
+INDEPENDENT ACTIVATION REVIEW — 21 OCTOBER 2026
+
+The user authorized exactly one existing reviewed Cloudflare Single Redirect, subject to mandatory final preflight. Only root controls the authenticated Cloudflare UI. This subtask performs no browser or remote mutation.
+
+LOCAL CANDIDATE PASS
+Candidate JSON matches the exact reviewed definition byte fields semantically: two approved hostnames, two exact legacy path forms, GET/HEAD only, 308 to https://digitecme.com/services/mercedes-oil-change-dubai, preserve_query_string true, insertion before existing first rule ID dbe42693423442afbc3bab9b993242a7. No service URL, broader prefix or whole-ruleset replacement is included.
+
+PRE-ACTIVATION GATES — ROOT MUST RECORD PASS BEFORE SUBMISSION
+1. Authenticated account ae62fc81b63f3450e5ab4b63b7b7ece4, zone digitecme.com, active/proxied origin unchanged.
+2. Exactly the saved two existing Single Redirect IDs/definitions/enabled states; same relative order. Any unexpected drift stops activation.
+3. Existing first: dbe42693423442afbc3bab9b993242a7, four exact repair/workshop aliases to hub, 301, query preservation enabled.
+4. Existing second: 9781b1ef743f4ffbaadbe5cb3250eeca, www hostname condition, dynamic HTTPS apex plus same path, 301, query preservation enabled.
+5. Service destination still correct indexable Mercedes oil initial HTML, GET/HEAD 200. Currently indexed trailing-slash service URL remains accessible with 200.
+6. Creation uses add-one-rule UI/action, not replacing existing ruleset; candidate exact body, fixed target, 308, preserved query and first position visibly confirmed before activation.
+
+POST-ACTIVATION CONTROL-PLANE CHECK
+Exactly three enabled rules: new reviewed rule first, then the original two with original IDs/bodies and relative order intact. Save the assigned new rule ID and activation time from the actual successful result. Do not invent rule/version identifiers.
+
+POST-ACTIVATION LIVE HTTP CHECK
+Both legacy paths x apex/www x HTTP/HTTPS x GET/HEAD, with no query and repeated/encoded query variants: direct permanent 308 to fixed HTTPS apex target, original query preserved, destination correct 200, no loop/unexpected chain. Record every hop; do not hide Always Use HTTPS interactions.
+Dedicated service slashless AND slash forms stay accessible, metadata/canonical/content unchanged. Existing Mercedes aliases, hub, PPF and tuning routes retain baseline behavior. No live mutation requests or enquiry submissions merely to test exclusions.
+
+PROTECTED FILE CHECK
+Run audit-candidate.mjs --after once root finishes. It must confirm all source files, original reviewed candidate/baseline and service build HTML remain hash-identical. Existing user changes remain untouched.
+
+FAILURE BOUNDARY
+If any preflight gate fails: STOP, no activation.
+If any verification fails after activation: STOP and request user approval before ANY rollback. The user's latest instruction overrides earlier runbook descriptions that mention rollback as a procedure. Never disable/remove the new rule without new rollback approval; never alter original rules, Worker, DNS, Lovable, content or indexing settings.

@@ -1,0 +1,14 @@
+{
+  "dateDubai": "2026-10-26",
+  "method": "Read-only return to authenticated Single Redirect list after inspection; no form saves or toggles",
+  "used": 3,
+  "limit": 10,
+  "orderedRules": [
+    {"order":1,"description":"Mercedes oil change legacy URLs to existing service","enabled":true},
+    {"order":2,"description":"Legacy Mercedes URLs to Mercedes brand service page","enabled":true},
+    {"order":3,"description":"www to primary domain","enabled":true}
+  ],
+  "matchesInitialVisibleInventory": true,
+  "newRulesCreated": 0,
+  "limitation": "List-level final observation; exact functional fields are in the earlier current-inventory.json transcription, not freshly re-read from every detail form at this final step."
+}

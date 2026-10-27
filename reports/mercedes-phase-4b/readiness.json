@@ -1,0 +1,118 @@
+{
+  "preparedAt": "2026-10-26T10:44:49.647Z",
+  "status": "PREPARED; CONDITIONAL READINESS; NOT DEPLOYED",
+  "recommendation": "B after separate date/publication approval and resolution or explicit review of the bounded remaining gates",
+  "options": [
+    {
+      "option": "A",
+      "fileCount": 1634,
+      "bytes": 206554922,
+      "contentManifestSha256": "a4fb85f51584e200c49daf4236f8e5410fe3a840fcca4fa8d722dc0450683b87",
+      "sourceFiles": [
+        "src/pages/BrandPage.tsx",
+        "src/data/mercedesServiceContent.ts",
+        "src/pages/BrandServicePage.tsx"
+      ],
+      "baselineOutputDiffs": 1439
+    },
+    {
+      "option": "B",
+      "fileCount": 1634,
+      "bytes": 206554922,
+      "contentManifestSha256": "ccf25f633e39b2b409843ed6af37a61de220b13c3a3bdb99faa453131103d11b",
+      "sourceFiles": [
+        "src/pages/BrandPage.tsx",
+        "src/data/mercedesServiceContent.ts",
+        "src/pages/BrandServicePage.tsx",
+        "src/lib/route-manifest.ts"
+      ],
+      "baselineOutputDiffs": 1440
+    }
+  ],
+  "archives": [
+    {
+      "option": "A",
+      "checkedAtUtc": "2026-10-26T10:38:52.9491871Z",
+      "archiveSha256": "71c72641081784c4ddeea72ce3336bf6fe7e695aad335b417f039e261324f9c1",
+      "fileCount": 1634,
+      "expectedFileCount": 1634,
+      "passed": true,
+      "failures": []
+    },
+    {
+      "option": "B",
+      "checkedAtUtc": "2026-10-26T10:38:53.4055571Z",
+      "archiveSha256": "a2faa6a33475be10c600bbfdad3303a3408bbabafe87d9dd708ca872278806b3",
+      "fileCount": 1634,
+      "expectedFileCount": 1634,
+      "passed": true,
+      "failures": []
+    }
+  ],
+  "buildRows": [
+    {
+      "name": "baseline",
+      "label": "matched-1",
+      "buildPassed": true,
+      "buildSteps": 19,
+      "typecheckPassed": true,
+      "typeConfigs": 2
+    },
+    {
+      "name": "candidate",
+      "label": "matched-1",
+      "buildPassed": true,
+      "buildSteps": 19,
+      "typecheckPassed": true,
+      "typeConfigs": 2
+    },
+    {
+      "name": "release-b",
+      "label": "matched-1",
+      "buildPassed": true,
+      "buildSteps": 19,
+      "typecheckPassed": true,
+      "typeConfigs": 2
+    },
+    {
+      "name": "release-b",
+      "label": "matched-2",
+      "buildPassed": true,
+      "buildSteps": 19,
+      "typecheckPassed": true,
+      "typeConfigs": 2
+    }
+  ],
+  "aVersusB": [
+    "sitemap.xml"
+  ],
+  "remainingGates": [
+    {
+      "id": "approval",
+      "detail": "Approve B fourth source file/two supported Oct26 dates and the exact later origin publication scope."
+    },
+    {
+      "id": "origin-mechanism",
+      "detail": "Confirm current Lovable/custom-domain release and rebuild/artifact process preserves inert routing support files and existing serving behavior. No new Worker/Pages/redirect/header policy."
+    },
+    {
+      "id": "host-build-parity",
+      "detail": "Frozen local artifact reproduces exactly; exact compiled identity with production is not established. Validate any host rebuild before substituting it."
+    },
+    {
+      "id": "browser-console",
+      "detail": "Unattributed MutationObserver.observe exception occurred initially on A and once during nine baseline/A/B sequences; ten further B diagnostic sequences logged no new errors. Intermittent; not proven pre-existing or attributable."
+    }
+  ],
+  "prohibitedActionsPerformed": [],
+  "noLiveChanges": true,
+  "publicationAuthorized": false,
+  "redirectBehavior": "852/852 assertions in326 cases; no rule operations or fresh authenticated definition audit",
+  "observerSequences": {
+    "initialAErrors": 1,
+    "nineSequenceErrors": 1,
+    "diagnosticSequenceCount": 10,
+    "diagnosticNewLogs": 0
+  },
+  "manifestNotes": "ZIP SHA hashes identify archive bytes. publication-manifest content digests use their script-specific JSON representation; generated/dist-reproducibility uses a separate manifest encoding. Compare per-file SHA256 for cross-manifest identity, not differently serialized summary digests."
+}

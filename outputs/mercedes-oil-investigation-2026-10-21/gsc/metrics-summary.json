@@ -1,0 +1,186 @@
+{
+  "export-1": {
+    "source": "C:\\Users\\ADMIN\\Downloads\\digitecme.com-Performance-on-Search-2026-10-21.xlsx",
+    "sha256": "d68bbcef0feed9f9a93a5164fd4babf74bac49a2f323474941da5e8ab73d9ba1",
+    "filters": [
+      [
+        "Filter",
+        "Value"
+      ],
+      [
+        "Search type",
+        "Web (text-based)"
+      ],
+      [
+        "Date",
+        "Last 3 months"
+      ],
+      [
+        "Query",
+        "+mercedes oil change"
+      ]
+    ],
+    "chart_first": "2026-07-19",
+    "chart_last": "2026-10-18",
+    "dimension_summaries": {
+      "Chart": {
+        "clicks": 0,
+        "impressions": 325,
+        "ctr": 0.0,
+        "weighted_position_from_rounded_rows": 14.89446153846154
+      },
+      "Queries": {
+        "clicks": 0,
+        "impressions": 325,
+        "ctr": 0.0,
+        "weighted_position_from_rounded_rows": 14.895784615384615
+      },
+      "Pages": {
+        "clicks": 0,
+        "impressions": 363,
+        "ctr": 0.0,
+        "weighted_position_from_rounded_rows": 18.056005509641874
+      },
+      "Countries": {
+        "clicks": 0,
+        "impressions": 325,
+        "ctr": 0.0,
+        "weighted_position_from_rounded_rows": 14.8928
+      },
+      "Devices": {
+        "clicks": 0,
+        "impressions": 325,
+        "ctr": 0.0,
+        "weighted_position_from_rounded_rows": 14.896153846153846
+      }
+    }
+  },
+  "export-2": {
+    "source": "C:\\Users\\ADMIN\\Downloads\\digitecme.com-Performance-on-Search-2026-10-21 (1).xlsx",
+    "sha256": "4defc376f17dff80c3d9588c2ba8a55a7cf957a30a078c01f02a86cb52c05ac6",
+    "filters": [
+      [
+        "Filter",
+        "Value"
+      ],
+      [
+        "Search type",
+        "Web (text-based)"
+      ],
+      [
+        "Time range",
+        "Last 24 hours"
+      ],
+      [
+        "Query",
+        "+mercedes oil change"
+      ]
+    ],
+    "chart_first": "2026-10-20T03:00:00",
+    "chart_last": "2026-10-21T02:00:00",
+    "dimension_summaries": {
+      "Chart": {
+        "clicks": 1,
+        "impressions": 4,
+        "ctr": 0.25,
+        "weighted_position_from_rounded_rows": 45.5
+      },
+      "Queries": {
+        "clicks": 1,
+        "impressions": 4,
+        "ctr": 0.25,
+        "weighted_position_from_rounded_rows": 45.5
+      },
+      "Pages": {
+        "clicks": 1,
+        "impressions": 2,
+        "ctr": 0.5,
+        "weighted_position_from_rounded_rows": 6.0
+      },
+      "Countries": {
+        "clicks": 1,
+        "impressions": 4,
+        "ctr": 0.25,
+        "weighted_position_from_rounded_rows": 45.5
+      },
+      "Devices": {
+        "clicks": 1,
+        "impressions": 4,
+        "ctr": 0.25,
+        "weighted_position_from_rounded_rows": 45.5
+      }
+    }
+  },
+  "contains_daily_periods": [
+    {
+      "label": "full-export",
+      "start": "2026-07-19",
+      "end": "2026-10-18",
+      "days": 92,
+      "clicks": 0,
+      "impressions": 325,
+      "ctr": 0.0,
+      "weighted_position_from_rounded_rows": 14.89446153846154
+    },
+    {
+      "label": "available-last-28-days",
+      "start": "2026-09-21",
+      "end": "2026-10-18",
+      "days": 28,
+      "clicks": 0,
+      "impressions": 99,
+      "ctr": 0.0,
+      "weighted_position_from_rounded_rows": 10.127272727272727
+    },
+    {
+      "label": "previous-28-days",
+      "start": "2026-08-24",
+      "end": "2026-09-20",
+      "days": 28,
+      "clicks": 0,
+      "impressions": 134,
+      "ctr": 0.0,
+      "weighted_position_from_rounded_rows": 16.5589552238806
+    },
+    {
+      "label": "latest-7-available-days",
+      "start": "2026-10-12",
+      "end": "2026-10-18",
+      "days": 7,
+      "clicks": 0,
+      "impressions": 22,
+      "ctr": 0.0,
+      "weighted_position_from_rounded_rows": 12.536363636363637
+    },
+    {
+      "label": "prior-7-days",
+      "start": "2026-10-05",
+      "end": "2026-10-11",
+      "days": 7,
+      "clicks": 0,
+      "impressions": 16,
+      "ctr": 0.0,
+      "weighted_position_from_rounded_rows": 9.3125
+    },
+    {
+      "label": "week-3",
+      "start": "2026-09-28",
+      "end": "2026-10-04",
+      "days": 7,
+      "clicks": 0,
+      "impressions": 31,
+      "ctr": 0.0,
+      "weighted_position_from_rounded_rows": 10.061290322580646
+    },
+    {
+      "label": "week-4",
+      "start": "2026-09-21",
+      "end": "2026-09-27",
+      "days": 7,
+      "clicks": 0,
+      "impressions": 30,
+      "ctr": 0.0,
+      "weighted_position_from_rounded_rows": 8.863333333333333
+    }
+  ]
+}

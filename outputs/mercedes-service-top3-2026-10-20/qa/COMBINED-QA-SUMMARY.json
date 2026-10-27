@@ -1,0 +1,811 @@
+{
+  "at": "2026-10-20T05:50:14.160Z",
+  "passed": true,
+  "candidate": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\candidate.local",
+  "base": "2971301bb37d38f4785844af067eebd55f9f6dda",
+  "sourceFingerprint": "7d3d58e24c826757c32c28cec6c1cf03f74251d8d76af1fed0a03b48d0cc18d2",
+  "sourceStability": {
+    "at": "2026-10-20T05:50:14.139Z",
+    "passed": true,
+    "buildInputCount": 585,
+    "buildFingerprint": "7d3d58e24c826757c32c28cec6c1cf03f74251d8d76af1fed0a03b48d0cc18d2",
+    "currentFingerprint": "7d3d58e24c826757c32c28cec6c1cf03f74251d8d76af1fed0a03b48d0cc18d2",
+    "changed": [],
+    "overlay": [
+      {
+        "file": "src/pages/BrandPage.tsx",
+        "sha256": "f5d68037c056bb1f32d73cc5c009e066287da0ab225267b9606d834a23002c33",
+        "workspaceSha256": "f5d68037c056bb1f32d73cc5c009e066287da0ab225267b9606d834a23002c33",
+        "candidateSha256": "f5d68037c056bb1f32d73cc5c009e066287da0ab225267b9606d834a23002c33",
+        "passed": true
+      },
+      {
+        "file": "src/pages/Services.tsx",
+        "sha256": "77e7cc3aa83277602271ec3106506d4f360bd4fb6737445a5a1235a435ed09d0",
+        "workspaceSha256": "77e7cc3aa83277602271ec3106506d4f360bd4fb6737445a5a1235a435ed09d0",
+        "candidateSha256": "77e7cc3aa83277602271ec3106506d4f360bd4fb6737445a5a1235a435ed09d0",
+        "passed": true
+      },
+      {
+        "file": "src/components/MercedesMaintenanceScope.tsx",
+        "sha256": "1e6728a7de40ef56f7bf77af495784cff38c34cd9a653d6777757fee62616aff",
+        "workspaceSha256": "1e6728a7de40ef56f7bf77af495784cff38c34cd9a653d6777757fee62616aff",
+        "candidateSha256": "1e6728a7de40ef56f7bf77af495784cff38c34cd9a653d6777757fee62616aff",
+        "passed": true
+      },
+      {
+        "file": "src/components/MercedesServiceBookingForm.tsx",
+        "sha256": "c45f5468d2361b5b2de37edee90fff8b1d0cd145e2379439c8aad973fd1291fd",
+        "workspaceSha256": "c45f5468d2361b5b2de37edee90fff8b1d0cd145e2379439c8aad973fd1291fd",
+        "candidateSha256": "c45f5468d2361b5b2de37edee90fff8b1d0cd145e2379439c8aad973fd1291fd",
+        "passed": true
+      },
+      {
+        "file": "src/data/mercedesServiceCampaign.ts",
+        "sha256": "98012343a3f8450ba6a34bb094425beaa4049932d534d9115d0b373ded32c8dd",
+        "workspaceSha256": "98012343a3f8450ba6a34bb094425beaa4049932d534d9115d0b373ded32c8dd",
+        "candidateSha256": "98012343a3f8450ba6a34bb094425beaa4049932d534d9115d0b373ded32c8dd",
+        "passed": true
+      },
+      {
+        "file": "src/lib/route-manifest.ts",
+        "sha256": "a05194b6899972cb91945af2ea0c0a3fd836055a5d8c52d87fc3f9a6a219d0d5",
+        "workspaceSha256": "a05194b6899972cb91945af2ea0c0a3fd836055a5d8c52d87fc3f9a6a219d0d5",
+        "candidateSha256": "a05194b6899972cb91945af2ea0c0a3fd836055a5d8c52d87fc3f9a6a219d0d5",
+        "passed": true
+      }
+    ]
+  },
+  "aboveFold": {
+    "createdAt": "2026-10-20T05:45:02.511Z",
+    "passed": true,
+    "cases": [
+      {
+        "locale": "en",
+        "route": "/brands/mercedes-benz-service-dubai",
+        "scrollX": 0,
+        "scrollY": 0,
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "label": "Book Mercedes Service",
+        "cta": {
+          "x": 20,
+          "y": 586.21875,
+          "width": 350,
+          "height": 48,
+          "top": 586.21875,
+          "right": 370,
+          "bottom": 634.21875,
+          "left": 20
+        },
+        "header": {
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 76,
+          "top": 0,
+          "right": 390,
+          "bottom": 76,
+          "left": 0
+        },
+        "fixedMobileBar": {
+          "x": 0,
+          "y": 771,
+          "width": 390,
+          "height": 73,
+          "top": 771,
+          "right": 390,
+          "bottom": 844,
+          "left": 0
+        },
+        "viewportVisible": true,
+        "belowHeader": true,
+        "aboveFixedBar": true,
+        "unobscured": true,
+        "fullyVisible": true,
+        "screenshot": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\qa\\above-fold\\en-390x844-initial.png"
+      },
+      {
+        "locale": "en",
+        "route": "/brands/mercedes-benz-service-dubai",
+        "scrollX": 0,
+        "scrollY": 0,
+        "viewport": {
+          "width": 320,
+          "height": 844
+        },
+        "label": "Book Mercedes Service",
+        "cta": {
+          "x": 20,
+          "y": 693.328125,
+          "width": 280,
+          "height": 48,
+          "top": 693.328125,
+          "right": 300,
+          "bottom": 741.328125,
+          "left": 20
+        },
+        "header": {
+          "x": 0,
+          "y": 0,
+          "width": 320,
+          "height": 76,
+          "top": 0,
+          "right": 320,
+          "bottom": 76,
+          "left": 0
+        },
+        "fixedMobileBar": {
+          "x": 0,
+          "y": 753,
+          "width": 320,
+          "height": 91,
+          "top": 753,
+          "right": 320,
+          "bottom": 844,
+          "left": 0
+        },
+        "viewportVisible": true,
+        "belowHeader": true,
+        "aboveFixedBar": true,
+        "unobscured": true,
+        "fullyVisible": true,
+        "screenshot": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\qa\\above-fold\\en-320x844-initial.png"
+      },
+      {
+        "locale": "en",
+        "route": "/brands/mercedes-benz-service-dubai",
+        "scrollX": 0,
+        "scrollY": 0,
+        "viewport": {
+          "width": 1440,
+          "height": 900
+        },
+        "label": "Book Mercedes Service",
+        "cta": {
+          "x": 48,
+          "y": 609.09375,
+          "width": 223.171875,
+          "height": 48,
+          "top": 609.09375,
+          "right": 271.171875,
+          "bottom": 657.09375,
+          "left": 48
+        },
+        "header": {
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 98,
+          "top": 0,
+          "right": 1440,
+          "bottom": 98,
+          "left": 0
+        },
+        "fixedMobileBar": null,
+        "viewportVisible": true,
+        "belowHeader": true,
+        "aboveFixedBar": true,
+        "unobscured": true,
+        "fullyVisible": true,
+        "screenshot": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\qa\\above-fold\\en-1440x900-initial.png"
+      },
+      {
+        "locale": "ar",
+        "route": "/ar/brands/mercedes-benz-service-dubai",
+        "scrollX": 0,
+        "scrollY": 0,
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "label": "احجز صيانة مرسيدس",
+        "cta": {
+          "x": 20,
+          "y": 554.21875,
+          "width": 350,
+          "height": 48,
+          "top": 554.21875,
+          "right": 370,
+          "bottom": 602.21875,
+          "left": 20
+        },
+        "header": {
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 76,
+          "top": 0,
+          "right": 390,
+          "bottom": 76,
+          "left": 0
+        },
+        "fixedMobileBar": {
+          "x": 0,
+          "y": 771,
+          "width": 390,
+          "height": 73,
+          "top": 771,
+          "right": 390,
+          "bottom": 844,
+          "left": 0
+        },
+        "viewportVisible": true,
+        "belowHeader": true,
+        "aboveFixedBar": true,
+        "unobscured": true,
+        "fullyVisible": true,
+        "screenshot": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\qa\\above-fold\\ar-390x844-initial.png"
+      },
+      {
+        "locale": "ar",
+        "route": "/ar/brands/mercedes-benz-service-dubai",
+        "scrollX": 0,
+        "scrollY": 0,
+        "viewport": {
+          "width": 320,
+          "height": 844
+        },
+        "label": "احجز صيانة مرسيدس",
+        "cta": {
+          "x": 20,
+          "y": 661.328125,
+          "width": 280,
+          "height": 48,
+          "top": 661.328125,
+          "right": 300,
+          "bottom": 709.328125,
+          "left": 20
+        },
+        "header": {
+          "x": 0,
+          "y": 0,
+          "width": 320,
+          "height": 76,
+          "top": 0,
+          "right": 320,
+          "bottom": 76,
+          "left": 0
+        },
+        "fixedMobileBar": {
+          "x": 0,
+          "y": 771,
+          "width": 320,
+          "height": 73,
+          "top": 771,
+          "right": 320,
+          "bottom": 844,
+          "left": 0
+        },
+        "viewportVisible": true,
+        "belowHeader": true,
+        "aboveFixedBar": true,
+        "unobscured": true,
+        "fullyVisible": true,
+        "screenshot": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\qa\\above-fold\\ar-320x844-initial.png"
+      },
+      {
+        "locale": "ar",
+        "route": "/ar/brands/mercedes-benz-service-dubai",
+        "scrollX": 0,
+        "scrollY": 0,
+        "viewport": {
+          "width": 1440,
+          "height": 900
+        },
+        "label": "احجز صيانة مرسيدس",
+        "cta": {
+          "x": 1194.953125,
+          "y": 538.546875,
+          "width": 197.046875,
+          "height": 48,
+          "top": 538.546875,
+          "right": 1392,
+          "bottom": 586.546875,
+          "left": 1194.953125
+        },
+        "header": {
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 98,
+          "top": 0,
+          "right": 1440,
+          "bottom": 98,
+          "left": 0
+        },
+        "fixedMobileBar": null,
+        "viewportVisible": true,
+        "belowHeader": true,
+        "aboveFixedBar": true,
+        "unobscured": true,
+        "fullyVisible": true,
+        "screenshot": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\qa\\above-fold\\ar-1440x900-initial.png"
+      }
+    ],
+    "externalBlocked": 18,
+    "writesBlocked": 0,
+    "contactInteractions": 0,
+    "runtimeErrors": [],
+    "failures": [],
+    "safety": "Isolated production dist on loopback5214. GET/HEAD only, every external request blocked, no contact clicks or form actions. Initial scroll0 viewport screenshot and rectangle measurement only."
+  },
+  "productionBuild": {
+    "passed": true,
+    "steps": 19,
+    "renderedRoutes": 1256,
+    "canonicalSitemapUrls": 1005
+  },
+  "cli": {
+    "passed": true,
+    "suites": 14,
+    "eslintErrors": 0,
+    "eslintExistingWarnings": 11,
+    "results": [
+      {
+        "name": "production-build-19-steps",
+        "command": [
+          "C:\\Program Files\\nodejs\\node.exe",
+          "scripts/build-production-local.mjs"
+        ],
+        "cwd": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\candidate.local",
+        "exitCode": 0,
+        "passed": true,
+        "seconds": 31.588,
+        "log": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\qa\\production-build-19-steps.log"
+      },
+      {
+        "name": "typescript-app",
+        "command": [
+          "C:\\Program Files\\nodejs\\node.exe",
+          "node_modules/typescript/bin/tsc",
+          "--noEmit",
+          "-p",
+          "tsconfig.app.json"
+        ],
+        "cwd": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\candidate.local",
+        "exitCode": 0,
+        "passed": true,
+        "seconds": 7.047,
+        "log": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\qa\\typescript-app.log"
+      },
+      {
+        "name": "typescript-node",
+        "command": [
+          "C:\\Program Files\\nodejs\\node.exe",
+          "node_modules/typescript/bin/tsc",
+          "--noEmit",
+          "-p",
+          "tsconfig.node.json"
+        ],
+        "cwd": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\candidate.local",
+        "exitCode": 0,
+        "passed": true,
+        "seconds": 0.661,
+        "log": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\qa\\typescript-node.log"
+      },
+      {
+        "name": "eslint",
+        "command": [
+          "C:\\Program Files\\nodejs\\node.exe",
+          "node_modules/eslint/bin/eslint.js",
+          "."
+        ],
+        "cwd": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\candidate.local",
+        "exitCode": 0,
+        "passed": true,
+        "seconds": 3.427,
+        "log": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\qa\\eslint.log"
+      },
+      {
+        "name": "master-seo",
+        "command": [
+          "C:\\Program Files\\nodejs\\node.exe",
+          "scripts/validate-master-seo.mjs"
+        ],
+        "cwd": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\candidate.local",
+        "exitCode": 0,
+        "passed": true,
+        "seconds": 0.746,
+        "log": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\qa\\master-seo.log"
+      },
+      {
+        "name": "bmw-hub",
+        "command": [
+          "C:\\Program Files\\nodejs\\node.exe",
+          "scripts/validate-bmw-hub.mjs"
+        ],
+        "cwd": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\candidate.local",
+        "exitCode": 0,
+        "passed": true,
+        "seconds": 0.791,
+        "log": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\qa\\bmw-hub.log"
+      },
+      {
+        "name": "paint-care-regression",
+        "command": [
+          "C:\\Program Files\\nodejs\\node.exe",
+          "scripts/validate-paint-care-cluster.mjs"
+        ],
+        "cwd": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\candidate.local",
+        "exitCode": 0,
+        "passed": true,
+        "seconds": 1.281,
+        "log": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\qa\\paint-care-regression.log"
+      },
+      {
+        "name": "tuning-regression",
+        "command": [
+          "C:\\Program Files\\nodejs\\node.exe",
+          "scripts/validate-tuning.mjs"
+        ],
+        "cwd": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\candidate.local",
+        "exitCode": 0,
+        "passed": true,
+        "seconds": 0.989,
+        "log": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\qa\\tuning-regression.log"
+      },
+      {
+        "name": "routing-response-regression",
+        "command": [
+          "C:\\Program Files\\nodejs\\node.exe",
+          "scripts/test-routing-response.mjs"
+        ],
+        "cwd": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\candidate.local",
+        "exitCode": 0,
+        "passed": true,
+        "seconds": 2.81,
+        "log": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\qa\\routing-response-regression.log"
+      },
+      {
+        "name": "brand-booking-form",
+        "command": [
+          "C:\\Program Files\\nodejs\\node.exe",
+          "outputs/repair-service-2026-10-19/qa/test-brand-form.mjs"
+        ],
+        "cwd": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\candidate.local",
+        "exitCode": 0,
+        "passed": true,
+        "seconds": 0.37,
+        "log": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\qa\\brand-booking-form.log"
+      },
+      {
+        "name": "combined-service-seo",
+        "command": [
+          "C:\\Program Files\\nodejs\\node.exe",
+          "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\qa\\validate-combined-static.mjs",
+          "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\qa"
+        ],
+        "cwd": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\candidate.local",
+        "exitCode": 0,
+        "passed": true,
+        "seconds": 0.403,
+        "log": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\qa\\combined-service-seo.log"
+      },
+      {
+        "name": "diagnostics-ac-static",
+        "command": [
+          "C:\\Program Files\\nodejs\\node.exe",
+          "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\qa\\validate-diagnostics-ac-static.mjs",
+          "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\qa\\diagnostics-ac-regression"
+        ],
+        "cwd": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\candidate.local",
+        "exitCode": 0,
+        "passed": true,
+        "seconds": 0.486,
+        "log": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\qa\\diagnostics-ac-static.log"
+      },
+      {
+        "name": "ecu-electronics-static",
+        "command": [
+          "C:\\Program Files\\nodejs\\node.exe",
+          "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\qa\\validate-ecu-electronics-static.mjs",
+          "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\qa"
+        ],
+        "cwd": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\candidate.local",
+        "exitCode": 0,
+        "passed": true,
+        "seconds": 0.395,
+        "log": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\qa\\ecu-electronics-static.log"
+      },
+      {
+        "name": "mercedes-campaign-static",
+        "command": [
+          "C:\\Program Files\\nodejs\\node.exe",
+          "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\qa\\validate-mercedes-static.mjs",
+          "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\qa"
+        ],
+        "cwd": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\candidate.local",
+        "exitCode": 0,
+        "passed": true,
+        "seconds": 2.374,
+        "log": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\qa\\mercedes-campaign-static.log"
+      }
+    ]
+  },
+  "static": {
+    "campaignAssertions": 10155,
+    "intentionallyChangedRoutes": 4,
+    "unchangedRouteCount": 1252,
+    "strictUnchangedMetadataSchemaAndVisibleMarkup": true,
+    "normalization": "Unchanged pages compare metadata and full JSON-LD exactly; visible main/root markup normalizes whitespace and generated Radix useId only. Four intentionally changed routes have dedicated assertions.",
+    "hubMetadataBeforeAfter": [
+      {
+        "route": "/ar/brands/mercedes-benz-service-dubai",
+        "before": {
+          "title": "إصلاح وصيانة مرسيدس في دبي | ديجي-تك",
+          "description": "ورشة مستقلة لصيانة وإصلاح مرسيدس في القوز، دبي. تشخيص XENTRY وفحص المحرك والقير والتعليق والتكييف والكهرباء مع توضيح النطاق والتكلفة قبل العمل.",
+          "h1": [
+            "إصلاح وصيانة مرسيدس بنز في دبي"
+          ],
+          "visibleWordCount": 1588,
+          "visibleCharacters": 12492
+        },
+        "after": {
+          "title": "صيانة مرسيدس في دبي | الصيانة والإصلاح | ديجي-تك",
+          "description": "صيانة مرسيدس في القوز، دبي. ناقش Service A وService B والزيت والفلاتر والفحوص المستحقة والإصلاحات مع ديجي-تك واطلب عرضاً حسب بيانات سيارتك.",
+          "h1": [
+            "صيانة مرسيدس بنز في دبي"
+          ],
+          "visibleWordCount": 1677,
+          "visibleCharacters": 13049
+        },
+        "passed": true
+      },
+      {
+        "route": "/brands/mercedes-benz-service-dubai",
+        "before": {
+          "title": "Mercedes Repair & Service Dubai | Al Quoz | Digi-Tec",
+          "description": "Independent Mercedes repair and service in Al Quoz, Dubai since 2002. XENTRY diagnostics, maintenance, gearbox, AIRMATIC, AC and electrical work.",
+          "h1": [
+            "Mercedes-Benz Repair & Service Dubai"
+          ],
+          "visibleWordCount": 3425,
+          "visibleCharacters": 27811
+        },
+        "after": {
+          "title": "Mercedes Service Dubai | Maintenance & Repair | DIGI-TEC",
+          "description": "Mercedes servicing in Al Quoz, Dubai. Discuss Service A/B, oil and filters, due inspections and repairs with DIGI-TEC. Request a vehicle-specific quote.",
+          "h1": [
+            "Mercedes-Benz Service in Dubai"
+          ],
+          "visibleWordCount": 2851,
+          "visibleCharacters": 21954
+        },
+        "passed": true
+      }
+    ],
+    "checkedMaintenanceInternalLinks": 14,
+    "newDirectoryLinkOccurrences": 2,
+    "priorHubRepairLocales": 32,
+    "priorHubRepairAssertions": 1450,
+    "diagnosticsAcLocales": 16,
+    "diagnosticsAcAssertions": 1009,
+    "priorProtectedVisibleHtmlRoutes": 51,
+    "ecuLocales": 14,
+    "ecuAssertions": 614,
+    "retainedNoindexPolicies": 20,
+    "noNewRoutes": true
+  },
+  "browser": {
+    "passed": true,
+    "suites": 9,
+    "results": [
+      {
+        "name": "repair-browser",
+        "exitCode": 0,
+        "passed": true,
+        "seconds": 101.514,
+        "log": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\qa\\repair-browser.log",
+        "testedBeforeNarrowHeroIntroFix": true,
+        "sourceFingerprint": "d1bf361352d888f7f965941bc7d3ced4f76959109e16bf65f9218c9dc2662fc5",
+        "retainedReason": "Only EN Mercedes hub hero intro changed. Other1252pages preserve exact metadata/schema/main markup; all remaining source unchanged. No affected behavior in this suite."
+      },
+      {
+        "name": "master-seo-browser",
+        "exitCode": 0,
+        "passed": true,
+        "seconds": 31.575,
+        "log": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\qa\\master-seo-browser.log",
+        "testedBeforeNarrowHeroIntroFix": true,
+        "sourceFingerprint": "d1bf361352d888f7f965941bc7d3ced4f76959109e16bf65f9218c9dc2662fc5",
+        "retainedReason": "Only EN Mercedes hub hero intro changed. Other1252pages preserve exact metadata/schema/main markup; all remaining source unchanged. No affected behavior in this suite."
+      },
+      {
+        "name": "protection-routing-browser",
+        "exitCode": 0,
+        "passed": true,
+        "seconds": 4.285,
+        "log": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\qa\\protection-routing-browser.log",
+        "testedBeforeNarrowHeroIntroFix": true,
+        "sourceFingerprint": "d1bf361352d888f7f965941bc7d3ced4f76959109e16bf65f9218c9dc2662fc5",
+        "retainedReason": "Only EN Mercedes hub hero intro changed. Other1252pages preserve exact metadata/schema/main markup; all remaining source unchanged. No affected behavior in this suite."
+      },
+      {
+        "name": "ppf-browser",
+        "exitCode": 0,
+        "passed": true,
+        "seconds": 25.382,
+        "log": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\qa\\ppf-browser.log",
+        "testedBeforeNarrowHeroIntroFix": true,
+        "sourceFingerprint": "d1bf361352d888f7f965941bc7d3ced4f76959109e16bf65f9218c9dc2662fc5",
+        "retainedReason": "Only EN Mercedes hub hero intro changed. Other1252pages preserve exact metadata/schema/main markup; all remaining source unchanged. No affected behavior in this suite."
+      },
+      {
+        "name": "diagnostics-ac-browser",
+        "exitCode": 0,
+        "passed": true,
+        "seconds": 48.493,
+        "log": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\qa\\diagnostics-ac-browser.log",
+        "testedBeforeNarrowHeroIntroFix": true,
+        "sourceFingerprint": "d1bf361352d888f7f965941bc7d3ced4f76959109e16bf65f9218c9dc2662fc5",
+        "retainedReason": "Only EN Mercedes hub hero intro changed. Other1252pages preserve exact metadata/schema/main markup; all remaining source unchanged. No affected behavior in this suite."
+      },
+      {
+        "name": "tuning-browser",
+        "exitCode": 0,
+        "passed": true,
+        "seconds": 8.737,
+        "log": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\qa\\tuning-browser.log",
+        "testedBeforeNarrowHeroIntroFix": true,
+        "sourceFingerprint": "d1bf361352d888f7f965941bc7d3ced4f76959109e16bf65f9218c9dc2662fc5",
+        "retainedReason": "Only EN Mercedes hub hero intro changed. Other1252pages preserve exact metadata/schema/main markup; all remaining source unchanged. No affected behavior in this suite."
+      },
+      {
+        "name": "ecu-electronics-browser",
+        "exitCode": 0,
+        "passed": true,
+        "seconds": 39.136,
+        "log": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\qa\\ecu-electronics-browser.log",
+        "testedBeforeNarrowHeroIntroFix": true,
+        "sourceFingerprint": "d1bf361352d888f7f965941bc7d3ced4f76959109e16bf65f9218c9dc2662fc5",
+        "retainedReason": "Only EN Mercedes hub hero intro changed. Other1252pages preserve exact metadata/schema/main markup; all remaining source unchanged. No affected behavior in this suite."
+      },
+      {
+        "name": "five-brand-browser",
+        "exitCode": 0,
+        "passed": true,
+        "seconds": 45.977,
+        "log": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\qa\\five-brand-browser.log",
+        "sourceFingerprint": "7d3d58e24c826757c32c28cec6c1cf03f74251d8d76af1fed0a03b48d0cc18d2",
+        "rerunReason": "Only English Mercedes hero intro shortened after actual narrow-screen CTA overlap; relevant brand/contact regression repeated."
+      },
+      {
+        "name": "mercedes-campaign-browser",
+        "exitCode": 0,
+        "passed": true,
+        "seconds": 15.766,
+        "log": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\qa\\mercedes-campaign-browser.log",
+        "rerunReason": "Focused retry after one isolated local networkidle navigation timeout. Identical12second timeout and all exact expected assertions retained; no product change.",
+        "sourceFingerprint": "7d3d58e24c826757c32c28cec6c1cf03f74251d8d76af1fed0a03b48d0cc18d2"
+      }
+    ],
+    "mercedes": {
+      "responsiveCases": 6,
+      "contactCases": 2,
+      "forms": 2,
+      "noJavaScript": 2,
+      "spa": 2,
+      "coarseTouchCases": 2,
+      "runtimeErrors": [],
+      "failedLocalResponses": [],
+      "screenshots": [
+        "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\qa\\mercedes-browser\\en-hero-390.png",
+        "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\qa\\mercedes-browser\\en-form-390.png",
+        "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\qa\\mercedes-browser\\ar-hero-390.png",
+        "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\qa\\mercedes-browser\\ar-form-390.png",
+        "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\qa\\mercedes-browser\\en-touch-390.png",
+        "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\qa\\mercedes-browser\\ar-touch-390.png"
+      ],
+      "passed": true
+    },
+    "fiveBrand": {
+      "responsiveCases": 30,
+      "interactions": 30,
+      "noJavaScript": 10,
+      "passed": true
+    },
+    "repair": {
+      "responsiveCases": 66,
+      "noJavaScript": 22,
+      "hubLinks": 22,
+      "passed": true
+    },
+    "diagnosticsAc": {
+      "responsiveCases": 48,
+      "contacts": 16,
+      "noJavaScript": 16,
+      "spa": 16,
+      "passed": true
+    },
+    "ecu": {
+      "responsiveCases": 42,
+      "contacts": 14,
+      "noJavaScript": 14,
+      "spa": 14,
+      "passed": true
+    },
+    "master": {
+      "responsiveCases": 27,
+      "interactions": 17,
+      "spa": 7,
+      "passed": true
+    },
+    "protection": {
+      "requests": 9,
+      "trueUnknown404": true,
+      "passed": true
+    },
+    "ppf": {
+      "whatsappCtas": 5,
+      "quotationForms": 2,
+      "replyMethods": 3,
+      "languageRoundTrip": true,
+      "passed": true
+    },
+    "tuning": {
+      "responsiveCases": 6,
+      "packageRows": 62,
+      "s63EnquiryOnlyAndDb11WithheldRetained": true,
+      "passed": true
+    },
+    "rerunScope": {
+      "freshSuites": 2,
+      "retainedUnaffectedSuites": 7,
+      "proof": "Final complete production build and14CLIchecks pass; campaign static asserts all1252unaffected pages unchanged. Narrow intro correction changes only one existing string in EN hub; no other functional source change."
+    }
+  },
+  "visual": {
+    "at": "2026-10-20T05:46:15.082Z",
+    "passed": true,
+    "method": "Screenshots opened as image pixels for direct visual inspection. Automated geometry complements visual review.",
+    "images": [
+      {
+        "path": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\qa\\above-fold\\en-320x844-initial.png",
+        "sha256": "fd882b4995254fe0bc2aaceff4f3182f8d8c481e8e3c5830a5ce8dec5be40528",
+        "inspected": true
+      },
+      {
+        "path": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\qa\\above-fold\\ar-390x844-initial.png",
+        "sha256": "dc4763430c8a3e86be5b27335c97ea4efb47210b174e66532357f2076d54f708",
+        "inspected": true
+      },
+      {
+        "path": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\qa\\five-brand-browser\\mercedes-benz-service-dubai-en-mobile-form.png",
+        "sha256": "de8655f473b49a382826d7dc166ddefe6e6e0adb91b690663356c0466d3bb9d1",
+        "inspected": true
+      },
+      {
+        "path": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\qa\\five-brand-browser\\mercedes-benz-service-dubai-ar-mobile-form.png",
+        "sha256": "4be6ada8697128c6d078ba6cc608c3e67e5b64ff3963b66d082f072e83a54509",
+        "inspected": true
+      }
+    ],
+    "findings": [
+      "Final EN320 hero primary CTA fully visible above fixed bar; exact geometry693.33..741.33 versus bar753.",
+      "Arabic hero is readable, properly right-to-left and primary booking CTA fully visible.",
+      "English and Arabic form controls and CTA are readable with adequate target height and no horizontal overflow; privacy/appointment draft disclaimer visible.",
+      "Arabic phone digits retain left-to-right order. Screenshots contain synthetic QA sentinel values only.",
+      "Existing sticky navigation remains legible when the page is scrolled; it does not obstruct the tested contact/form actions."
+    ]
+  },
+  "harnessNotes": [
+    "Six-file final freeze built after narrow four-route sitemap lastmod addition. Earlier five-file freeze attempt is archived separately; no current product defect inferred.",
+    "Prior harnesses copied to this task/candidate only. The new required Mercedes model field is populated in the existing five-brand browser; the replaced generic brand display is tested with localized Mercedes context. Other four brands retain original checks.",
+    "Exactly two intentionally rewritten Mercedes hubs are exempted from the prior diagnostics/AC protected-HTML comparison; all other51oldprotected routes and all1252unaffected public pages pass strict preservation. New dedicated campaign assertions validate the two rewritten hubs and two directory locales.",
+    "Dedicated static reran once to add measured before/after word counts and four-path lastmod evidence, with no application change.",
+    "All browser runs use approved runtime permissions for headless Edge/loopback while independently blocking external traffic and all writes.",
+    "An initial focused SPA assertion ran after history URL change but before React useSeo committed metadata. The harness now explicitly waits for the exact target H1 and canonical, then asserts the same values. Initial evidence is archived; no application defect or relaxed assertion.",
+    "Two focused attempts hit the same EN320 local page.goto networkidle12second timeout after the form/SPA/back sequence, while other cases passed. Initial evidence is archived. Fresh320 and a minimal SPA/back/reload comparator both passed; a full focused run with request/state diagnostic listeners then passed using the IDENTICAL12second timeout and all exact assertions. No application change or readiness/timeout relaxation. The unresolved browser lifecycle timing is recorded as harness flakiness, not claimed as a production page defect or ignored evidence.",
+    "Measured EN320 primary hero CTA initially overlapped the fixed bar by20pixels. Only the EN intro was shortened; final complete19stagebuild/14CLIchecks, affected five-brand/Mercedes browser suites and all six above-fold geometry cases were rerun. Seven unaffected browser results retain their original build fingerprint with strict final-build preservation proof."
+  ],
+  "safety": "Only loopback GET/HEAD requests allowed during browser QA. Contact navigation prevented/window.open stubbed. No message, telephone call, delivered enquiry, appointment, backend write, commit, push, deploy, publication, external-account edit or outreach.",
+  "limitations": [
+    "Local browser layout is not field Core Web Vitals.",
+    "Schema validation is local parsed JSON-LD/identity/provider/visible FAQ integrity, not a Google Rich Results certification.",
+    "Click/draft events are intent signals; actual delivery, CRM receipt and booking attribution are unverified.",
+    "Production deployment/source/rollback authority and live publication state are separate from successful local QA. GSC evidence is documented by the research workstream."
+  ]
+}

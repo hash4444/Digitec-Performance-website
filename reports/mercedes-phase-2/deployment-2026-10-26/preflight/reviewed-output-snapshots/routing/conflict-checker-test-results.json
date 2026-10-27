@@ -1,0 +1,38 @@
+{
+  "at": "2026-10-26T06:52:38.138Z",
+  "syntheticOnly": true,
+  "noProductionAfterStateWasCaptured": true,
+  "passed": 5,
+  "results": [
+    {
+      "test": "valid-after",
+      "expectedExitCode": 0,
+      "observedExitCode": 0,
+      "passed": true
+    },
+    {
+      "test": "www-before-new-rules",
+      "expectedExitCode": 1,
+      "observedExitCode": 1,
+      "passed": true
+    },
+    {
+      "test": "protected-oil-changed",
+      "expectedExitCode": 1,
+      "observedExitCode": 1,
+      "passed": true
+    },
+    {
+      "test": "query-preservation-lost",
+      "expectedExitCode": 1,
+      "observedExitCode": 1,
+      "passed": true
+    },
+    {
+      "test": "duplicated-new-source",
+      "expectedExitCode": 1,
+      "observedExitCode": 1,
+      "passed": true
+    }
+  ]
+}

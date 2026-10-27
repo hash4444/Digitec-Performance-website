@@ -1,0 +1,242 @@
+{
+  "source": "https://digitecme.com/tuning",
+  "reviewed": "2026-10-07",
+  "generation_mode": "built-in image_gen",
+  "outputs": [
+    {
+      "id": "01-amg-gt-gts",
+      "file": "C:/Users/ADMIN/Documents/ChatGPT/DIGITEC/outputs/gad-posters-2026-10-07/01-amg-gt-gts.png"
+    },
+    {
+      "id": "02-e63-amg",
+      "file": "C:/Users/ADMIN/Documents/ChatGPT/DIGITEC/outputs/gad-posters-2026-10-07/02-e63-amg.png"
+    },
+    {
+      "id": "03-amg-gt63",
+      "file": "C:/Users/ADMIN/Documents/ChatGPT/DIGITEC/outputs/gad-posters-2026-10-07/03-amg-gt63.png"
+    },
+    {
+      "id": "04-c63-w205",
+      "file": "C:/Users/ADMIN/Documents/ChatGPT/DIGITEC/outputs/gad-posters-2026-10-07/04-c63-w205.png"
+    },
+    {
+      "id": "05-aston-martin-db11",
+      "file": "C:/Users/ADMIN/Documents/ChatGPT/DIGITEC/outputs/gad-posters-2026-10-07/05-aston-martin-db11.png"
+    },
+    {
+      "id": "06-lamborghini-urus",
+      "file": "C:/Users/ADMIN/Documents/ChatGPT/DIGITEC/outputs/gad-posters-2026-10-07/06-lamborghini-urus.png"
+    }
+  ],
+  "note": "Figures copied from the published model tables; E63 VIP qualifier retained. GT63 and C63 VIP table figure 1000 used instead of promotional 1000+ description. DB11 is V8 M177; no transmission reinforcement claim.",
+  "items": [
+    {
+      "id": "01-amg-gt-gts",
+      "headline": "CHOOSE YOUR AMG GT STAGE",
+      "subheading": "GT / GTS  ·  M178",
+      "car": "Mercedes-AMG GT / GT S first-generation M178 two-door coupe",
+      "ref": "amg-gt.png",
+      "stages": [
+        [
+          "Stage 1",
+          "605 hp"
+        ],
+        [
+          "Stage 2",
+          "620 hp"
+        ],
+        [
+          "Stage 3",
+          "760 hp"
+        ],
+        [
+          "Stage 4",
+          "840 hp"
+        ],
+        [
+          "Stage 5",
+          "920 hp"
+        ],
+        [
+          "VIP Build",
+          "1300 hp"
+        ]
+      ],
+      "prompt": "Use case: ads-marketing.\nAsset type: a finished premium automotive tuning portrait poster, 9:16 ratio, matching the supplied reference poster as a coherent series.\nInput images: Image 1 is the exact style, composition, typography hierarchy and GAD Motors logo reference. Image 2 is a supporting vehicle-identity reference ONLY; its white background is not to be retained.\nPrimary request: Edit/adapt Image 1 into one NEW standalone poster for Mercedes-AMG GT / GT S first-generation M178 two-door coupe. Replace the G63 with this correct vehicle and replace the model heading and entire stage list with the exact text below. Keep the GAD Motors logo from Image 1 visually faithful. This is ONE poster, no grid or collage.\nScene/backdrop: pure black studio backdrop with subtle black reflective floor. Full vehicle in the lower middle, front three-quarter angle, striking photoreal automotive product photography. Paint dark glossy black / graphite; tasteful black wheels and red brake calipers. Preserve the defining vehicle shape and generation of Image 2. No cropped wheels, no extra cars.\nStyle: replicate Image 1 closely: bold tall condensed white uppercase title, clean white stage labels with bold HP figures, thin vivid-red horizontal rules between rows, spacious black margins, subtle silver rim lighting. Make the image commercially polished and legible.\nComposition: title and small engine/model subtitle in top 13%; centered stage list roughly 16–41%; small widely-spaced supplied tagline just beneath; large vehicle hero roughly 47–76%; red-outlined pill CTA around 80–85%; GAD Motors logo from Image 1 around 88%; discreet Digi-Tec footer and note below. Adapt spacing to 6 rows, always retaining strong title, large car, clean typography and generous negative space. Title may use two centered lines if needed. No overlaps.\nRender ONLY the following visible text, verbatim:\nHeadline: \"CHOOSE YOUR AMG GT STAGE\"\nSmall subtitle: \"GT / GTS  ·  M178\"\nStage row: \"Stage 1  —  605 hp\"\nStage row: \"Stage 2  —  620 hp\"\nStage row: \"Stage 3  —  760 hp\"\nStage row: \"Stage 4  —  840 hp\"\nStage row: \"Stage 5  —  920 hp\"\nStage row: \"VIP Build  —  1300 hp\"\nTagline: \"power to emotion\"\nCTA inside the red outline: \"EXPLORE THE UPGRADE OPTIONS\"\nBrand mark: preserve the actual GAD motors logo from Image 1.\nFooter brand line: \"DIGI-TEC  |  AL QUOZ, DUBAI\"\nFooter URL: \"digitecme.com/tuning\"\nSmall legible note: \"Reference outputs. Results depend on vehicle, fuel and hardware.\"\nAdditional small note: \"VIP builds by individual enquiry.\"\nConstraints: All HP numbers are exact published reference outputs. Do not change or round any number. Include exactly these 6 stage rows. No prices, invented package stages, warranty claims, official partnership claims, extra icons, generic labels or watermarks. Do not retain the G63 heading or G63 car from Image 1. The result must look like a close companion to Image 1, with coherent branding and an immediately recognizable Mercedes-AMG GT / GT S first-generation M178 two-door coupe.",
+      "references": [
+        "C:/Users/ADMIN/AppData/Local/Temp/codex-clipboard-1d69f7ca-eabc-469a-8cd9-4d2287d082b5.png",
+        "C:/Users/ADMIN/Documents/ChatGPT/DIGITEC/public/images/cars/amg-gt.png"
+      ]
+    },
+    {
+      "id": "02-e63-amg",
+      "headline": "CHOOSE YOUR E63 STAGE",
+      "subheading": "E63 AMG  ·  M177",
+      "car": "Mercedes-AMG E63 W213 four-door performance sedan",
+      "ref": "e63.png",
+      "stages": [
+        [
+          "Stage 1",
+          "780 hp"
+        ],
+        [
+          "Stage 2",
+          "820 hp"
+        ],
+        [
+          "Stage 3",
+          "860 hp"
+        ],
+        [
+          "Stage 4",
+          "940 hp"
+        ],
+        [
+          "VIP Build",
+          "up to 1300 hp"
+        ]
+      ],
+      "prompt": "Use case: ads-marketing.\nAsset type: a finished premium automotive tuning portrait poster, 9:16 ratio, matching the supplied reference poster as a coherent series.\nInput images: Image 1 is the exact style, composition, typography hierarchy and GAD Motors logo reference. Image 2 is a supporting vehicle-identity reference ONLY; its white background is not to be retained.\nPrimary request: Edit/adapt Image 1 into one NEW standalone poster for Mercedes-AMG E63 W213 four-door performance sedan. Replace the G63 with this correct vehicle and replace the model heading and entire stage list with the exact text below. Keep the GAD Motors logo from Image 1 visually faithful. This is ONE poster, no grid or collage.\nScene/backdrop: pure black studio backdrop with subtle black reflective floor. Full vehicle in the lower middle, front three-quarter angle, striking photoreal automotive product photography. Paint dark glossy black / graphite; tasteful black wheels and red brake calipers. Preserve the defining vehicle shape and generation of Image 2. No cropped wheels, no extra cars.\nStyle: replicate Image 1 closely: bold tall condensed white uppercase title, clean white stage labels with bold HP figures, thin vivid-red horizontal rules between rows, spacious black margins, subtle silver rim lighting. Make the image commercially polished and legible.\nComposition: title and small engine/model subtitle in top 13%; centered stage list roughly 16–41%; small widely-spaced supplied tagline just beneath; large vehicle hero roughly 47–76%; red-outlined pill CTA around 80–85%; GAD Motors logo from Image 1 around 88%; discreet Digi-Tec footer and note below. Adapt spacing to 5 rows, always retaining strong title, large car, clean typography and generous negative space. Title may use two centered lines if needed. No overlaps.\nRender ONLY the following visible text, verbatim:\nHeadline: \"CHOOSE YOUR E63 STAGE\"\nSmall subtitle: \"E63 AMG  ·  M177\"\nStage row: \"Stage 1  —  780 hp\"\nStage row: \"Stage 2  —  820 hp\"\nStage row: \"Stage 3  —  860 hp\"\nStage row: \"Stage 4  —  940 hp\"\nStage row: \"VIP Build  —  up to 1300 hp\"\nTagline: \"power to emotion\"\nCTA inside the red outline: \"EXPLORE THE UPGRADE OPTIONS\"\nBrand mark: preserve the actual GAD motors logo from Image 1.\nFooter brand line: \"DIGI-TEC  |  AL QUOZ, DUBAI\"\nFooter URL: \"digitecme.com/tuning\"\nSmall legible note: \"Reference outputs. Results depend on vehicle, fuel and hardware.\"\nAdditional small note: \"VIP builds by individual enquiry.\"\nConstraints: All HP numbers are exact published reference outputs. Do not change or round any number. Include exactly these 5 stage rows. No prices, invented package stages, warranty claims, official partnership claims, extra icons, generic labels or watermarks. Do not retain the G63 heading or G63 car from Image 1. The result must look like a close companion to Image 1, with coherent branding and an immediately recognizable Mercedes-AMG E63 W213 four-door performance sedan.",
+      "references": [
+        "C:/Users/ADMIN/AppData/Local/Temp/codex-clipboard-1d69f7ca-eabc-469a-8cd9-4d2287d082b5.png",
+        "C:/Users/ADMIN/Documents/ChatGPT/DIGITEC/public/images/cars/e63.png"
+      ]
+    },
+    {
+      "id": "03-amg-gt63",
+      "headline": "CHOOSE YOUR GT63 STAGE",
+      "subheading": "AMG GT63 4-DOOR  ·  M177",
+      "car": "Mercedes-AMG GT63 four-door fastback coupe, original V8 M177 version",
+      "ref": "gt63.png",
+      "stages": [
+        [
+          "Stage 1",
+          "780 hp"
+        ],
+        [
+          "Stage 2",
+          "820 hp"
+        ],
+        [
+          "Stage 3",
+          "860 hp"
+        ],
+        [
+          "Stage 4",
+          "940 hp"
+        ],
+        [
+          "VIP Build",
+          "1000 hp"
+        ]
+      ],
+      "prompt": "Use case: ads-marketing.\nAsset type: a finished premium automotive tuning portrait poster, 9:16 ratio, matching the supplied reference poster as a coherent series.\nInput images: Image 1 is the exact style, composition, typography hierarchy and GAD Motors logo reference. Image 2 is a supporting vehicle-identity reference ONLY; its white background is not to be retained.\nPrimary request: Edit/adapt Image 1 into one NEW standalone poster for Mercedes-AMG GT63 four-door fastback coupe, original V8 M177 version. Replace the G63 with this correct vehicle and replace the model heading and entire stage list with the exact text below. Keep the GAD Motors logo from Image 1 visually faithful. This is ONE poster, no grid or collage.\nScene/backdrop: pure black studio backdrop with subtle black reflective floor. Full vehicle in the lower middle, front three-quarter angle, striking photoreal automotive product photography. Paint dark glossy black / graphite; tasteful black wheels and red brake calipers. Preserve the defining vehicle shape and generation of Image 2. No cropped wheels, no extra cars.\nStyle: replicate Image 1 closely: bold tall condensed white uppercase title, clean white stage labels with bold HP figures, thin vivid-red horizontal rules between rows, spacious black margins, subtle silver rim lighting. Make the image commercially polished and legible.\nComposition: title and small engine/model subtitle in top 13%; centered stage list roughly 16–41%; small widely-spaced supplied tagline just beneath; large vehicle hero roughly 47–76%; red-outlined pill CTA around 80–85%; GAD Motors logo from Image 1 around 88%; discreet Digi-Tec footer and note below. Adapt spacing to 5 rows, always retaining strong title, large car, clean typography and generous negative space. Title may use two centered lines if needed. No overlaps.\nRender ONLY the following visible text, verbatim:\nHeadline: \"CHOOSE YOUR GT63 STAGE\"\nSmall subtitle: \"AMG GT63 4-DOOR  ·  M177\"\nStage row: \"Stage 1  —  780 hp\"\nStage row: \"Stage 2  —  820 hp\"\nStage row: \"Stage 3  —  860 hp\"\nStage row: \"Stage 4  —  940 hp\"\nStage row: \"VIP Build  —  1000 hp\"\nTagline: \"power to emotion\"\nCTA inside the red outline: \"EXPLORE THE UPGRADE OPTIONS\"\nBrand mark: preserve the actual GAD motors logo from Image 1.\nFooter brand line: \"DIGI-TEC  |  AL QUOZ, DUBAI\"\nFooter URL: \"digitecme.com/tuning\"\nSmall legible note: \"Reference outputs. Results depend on vehicle, fuel and hardware.\"\nAdditional small note: \"VIP builds by individual enquiry.\"\nConstraints: All HP numbers are exact published reference outputs. Do not change or round any number. Include exactly these 5 stage rows. No prices, invented package stages, warranty claims, official partnership claims, extra icons, generic labels or watermarks. Do not retain the G63 heading or G63 car from Image 1. The result must look like a close companion to Image 1, with coherent branding and an immediately recognizable Mercedes-AMG GT63 four-door fastback coupe, original V8 M177 version.",
+      "references": [
+        "C:/Users/ADMIN/AppData/Local/Temp/codex-clipboard-1d69f7ca-eabc-469a-8cd9-4d2287d082b5.png",
+        "C:/Users/ADMIN/Documents/ChatGPT/DIGITEC/public/images/cars/gt63.png"
+      ]
+    },
+    {
+      "id": "04-c63-w205",
+      "headline": "CHOOSE YOUR C63 STAGE",
+      "subheading": "C63 AMG  ·  W205  ·  M177",
+      "car": "Mercedes-AMG C63 W205 four-door V8 sedan, not the newer hybrid generation",
+      "ref": "c63.png",
+      "stages": [
+        [
+          "Stage 1",
+          "590 hp"
+        ],
+        [
+          "Stage 2",
+          "615 hp"
+        ],
+        [
+          "Stage 3",
+          "700 hp"
+        ],
+        [
+          "Stage 4",
+          "795 hp"
+        ],
+        [
+          "Stage 5",
+          "850 hp"
+        ],
+        [
+          "VIP Build",
+          "1000 hp"
+        ]
+      ],
+      "prompt": "Use case: ads-marketing.\nAsset type: a finished premium automotive tuning portrait poster, 9:16 ratio, matching the supplied reference poster as a coherent series.\nInput images: Image 1 is the exact style, composition, typography hierarchy and GAD Motors logo reference. Image 2 is a supporting vehicle-identity reference ONLY; its white background is not to be retained.\nPrimary request: Edit/adapt Image 1 into one NEW standalone poster for Mercedes-AMG C63 W205 four-door V8 sedan, not the newer hybrid generation. Replace the G63 with this correct vehicle and replace the model heading and entire stage list with the exact text below. Keep the GAD Motors logo from Image 1 visually faithful. This is ONE poster, no grid or collage.\nScene/backdrop: pure black studio backdrop with subtle black reflective floor. Full vehicle in the lower middle, front three-quarter angle, striking photoreal automotive product photography. Paint dark glossy black / graphite; tasteful black wheels and red brake calipers. Preserve the defining vehicle shape and generation of Image 2. No cropped wheels, no extra cars.\nStyle: replicate Image 1 closely: bold tall condensed white uppercase title, clean white stage labels with bold HP figures, thin vivid-red horizontal rules between rows, spacious black margins, subtle silver rim lighting. Make the image commercially polished and legible.\nComposition: title and small engine/model subtitle in top 13%; centered stage list roughly 16–41%; small widely-spaced supplied tagline just beneath; large vehicle hero roughly 47–76%; red-outlined pill CTA around 80–85%; GAD Motors logo from Image 1 around 88%; discreet Digi-Tec footer and note below. Adapt spacing to 6 rows, always retaining strong title, large car, clean typography and generous negative space. Title may use two centered lines if needed. No overlaps.\nRender ONLY the following visible text, verbatim:\nHeadline: \"CHOOSE YOUR C63 STAGE\"\nSmall subtitle: \"C63 AMG  ·  W205  ·  M177\"\nStage row: \"Stage 1  —  590 hp\"\nStage row: \"Stage 2  —  615 hp\"\nStage row: \"Stage 3  —  700 hp\"\nStage row: \"Stage 4  —  795 hp\"\nStage row: \"Stage 5  —  850 hp\"\nStage row: \"VIP Build  —  1000 hp\"\nTagline: \"power to emotion\"\nCTA inside the red outline: \"EXPLORE THE UPGRADE OPTIONS\"\nBrand mark: preserve the actual GAD motors logo from Image 1.\nFooter brand line: \"DIGI-TEC  |  AL QUOZ, DUBAI\"\nFooter URL: \"digitecme.com/tuning\"\nSmall legible note: \"Reference outputs. Results depend on vehicle, fuel and hardware.\"\nAdditional small note: \"VIP builds by individual enquiry.\"\nConstraints: All HP numbers are exact published reference outputs. Do not change or round any number. Include exactly these 6 stage rows. No prices, invented package stages, warranty claims, official partnership claims, extra icons, generic labels or watermarks. Do not retain the G63 heading or G63 car from Image 1. The result must look like a close companion to Image 1, with coherent branding and an immediately recognizable Mercedes-AMG C63 W205 four-door V8 sedan, not the newer hybrid generation.",
+      "references": [
+        "C:/Users/ADMIN/AppData/Local/Temp/codex-clipboard-1d69f7ca-eabc-469a-8cd9-4d2287d082b5.png",
+        "C:/Users/ADMIN/Documents/ChatGPT/DIGITEC/public/images/cars/c63.png"
+      ]
+    },
+    {
+      "id": "05-aston-martin-db11",
+      "headline": "CHOOSE YOUR DB11 STAGE",
+      "subheading": "ASTON MARTIN  ·  V8 M177",
+      "car": "Aston Martin DB11 V8 M177 two-door grand touring coupe",
+      "ref": "db11.png",
+      "stages": [
+        [
+          "Stage 1",
+          "590 hp"
+        ],
+        [
+          "Stage 2",
+          "615 hp"
+        ],
+        [
+          "Stage 3",
+          "700 hp"
+        ],
+        [
+          "Stage 4",
+          "795 hp"
+        ],
+        [
+          "Stage 5",
+          "850 hp"
+        ]
+      ],
+      "prompt": "Use case: ads-marketing.\nAsset type: a finished premium automotive tuning portrait poster, 9:16 ratio, matching the supplied reference poster as a coherent series.\nInput images: Image 1 is the exact style, composition, typography hierarchy and GAD Motors logo reference. Image 2 is a supporting vehicle-identity reference ONLY; its white background is not to be retained.\nPrimary request: Edit/adapt Image 1 into one NEW standalone poster for Aston Martin DB11 V8 M177 two-door grand touring coupe. Replace the G63 with this correct vehicle and replace the model heading and entire stage list with the exact text below. Keep the GAD Motors logo from Image 1 visually faithful. This is ONE poster, no grid or collage.\nScene/backdrop: pure black studio backdrop with subtle black reflective floor. Full vehicle in the lower middle, front three-quarter angle, striking photoreal automotive product photography. Paint dark glossy black / graphite; tasteful black wheels and red brake calipers. Preserve the defining vehicle shape and generation of Image 2. No cropped wheels, no extra cars.\nStyle: replicate Image 1 closely: bold tall condensed white uppercase title, clean white stage labels with bold HP figures, thin vivid-red horizontal rules between rows, spacious black margins, subtle silver rim lighting. Make the image commercially polished and legible.\nComposition: title and small engine/model subtitle in top 13%; centered stage list roughly 16–41%; small widely-spaced supplied tagline just beneath; large vehicle hero roughly 47–76%; red-outlined pill CTA around 80–85%; GAD Motors logo from Image 1 around 88%; discreet Digi-Tec footer and note below. Adapt spacing to 5 rows, always retaining strong title, large car, clean typography and generous negative space. Title may use two centered lines if needed. No overlaps.\nRender ONLY the following visible text, verbatim:\nHeadline: \"CHOOSE YOUR DB11 STAGE\"\nSmall subtitle: \"ASTON MARTIN  ·  V8 M177\"\nStage row: \"Stage 1  —  590 hp\"\nStage row: \"Stage 2  —  615 hp\"\nStage row: \"Stage 3  —  700 hp\"\nStage row: \"Stage 4  —  795 hp\"\nStage row: \"Stage 5  —  850 hp\"\nTagline: \"power to emotion\"\nCTA inside the red outline: \"EXPLORE THE UPGRADE OPTIONS\"\nBrand mark: preserve the actual GAD motors logo from Image 1.\nFooter brand line: \"DIGI-TEC  |  AL QUOZ, DUBAI\"\nFooter URL: \"digitecme.com/tuning\"\nSmall legible note: \"Reference outputs. Results depend on vehicle, fuel and hardware.\"\n\nConstraints: All HP numbers are exact published reference outputs. Do not change or round any number. Include exactly these 5 stage rows. No prices, invented package stages, warranty claims, official partnership claims, extra icons, generic labels or watermarks. Do not retain the G63 heading or G63 car from Image 1. The result must look like a close companion to Image 1, with coherent branding and an immediately recognizable Aston Martin DB11 V8 M177 two-door grand touring coupe.",
+      "references": [
+        "C:/Users/ADMIN/AppData/Local/Temp/codex-clipboard-1d69f7ca-eabc-469a-8cd9-4d2287d082b5.png",
+        "C:/Users/ADMIN/Documents/ChatGPT/DIGITEC/public/images/cars/db11.png"
+      ]
+    },
+    {
+      "id": "06-lamborghini-urus",
+      "headline": "CHOOSE YOUR URUS STAGE",
+      "subheading": "LAMBORGHINI  ·  V8 TWIN-TURBO",
+      "car": "Original Lamborghini Urus V8 Twin-Turbo super SUV, not a hybrid",
+      "ref": "urus.png",
+      "stages": [
+        [
+          "Stage 1",
+          "750 hp"
+        ],
+        [
+          "Stage 2",
+          "800 hp"
+        ],
+        [
+          "Stage 3",
+          "870 hp"
+        ],
+        [
+          "Stage 4",
+          "904 hp"
+        ]
+      ],
+      "prompt": "Use case: ads-marketing.\nAsset type: a finished premium automotive tuning portrait poster, 9:16 ratio, matching the supplied reference poster as a coherent series.\nInput images: Image 1 is the exact style, composition, typography hierarchy and GAD Motors logo reference. Image 2 is a supporting vehicle-identity reference ONLY; its white background is not to be retained.\nPrimary request: Edit/adapt Image 1 into one NEW standalone poster for Original Lamborghini Urus V8 Twin-Turbo super SUV, not a hybrid. Replace the G63 with this correct vehicle and replace the model heading and entire stage list with the exact text below. Keep the GAD Motors logo from Image 1 visually faithful. This is ONE poster, no grid or collage.\nScene/backdrop: pure black studio backdrop with subtle black reflective floor. Full vehicle in the lower middle, front three-quarter angle, striking photoreal automotive product photography. Paint dark glossy black / graphite; tasteful black wheels and red brake calipers. Preserve the defining vehicle shape and generation of Image 2. No cropped wheels, no extra cars.\nStyle: replicate Image 1 closely: bold tall condensed white uppercase title, clean white stage labels with bold HP figures, thin vivid-red horizontal rules between rows, spacious black margins, subtle silver rim lighting. Make the image commercially polished and legible.\nComposition: title and small engine/model subtitle in top 13%; centered stage list roughly 16–41%; small widely-spaced supplied tagline just beneath; large vehicle hero roughly 47–76%; red-outlined pill CTA around 80–85%; GAD Motors logo from Image 1 around 88%; discreet Digi-Tec footer and note below. Adapt spacing to 4 rows, always retaining strong title, large car, clean typography and generous negative space. Title may use two centered lines if needed. No overlaps.\nRender ONLY the following visible text, verbatim:\nHeadline: \"CHOOSE YOUR URUS STAGE\"\nSmall subtitle: \"LAMBORGHINI  ·  V8 TWIN-TURBO\"\nStage row: \"Stage 1  —  750 hp\"\nStage row: \"Stage 2  —  800 hp\"\nStage row: \"Stage 3  —  870 hp\"\nStage row: \"Stage 4  —  904 hp\"\nTagline: \"power to emotion\"\nCTA inside the red outline: \"EXPLORE THE UPGRADE OPTIONS\"\nBrand mark: preserve the actual GAD motors logo from Image 1.\nFooter brand line: \"DIGI-TEC  |  AL QUOZ, DUBAI\"\nFooter URL: \"digitecme.com/tuning\"\nSmall legible note: \"Reference outputs. Results depend on vehicle, fuel and hardware.\"\n\nConstraints: All HP numbers are exact published reference outputs. Do not change or round any number. Include exactly these 4 stage rows. No prices, invented package stages, warranty claims, official partnership claims, extra icons, generic labels or watermarks. Do not retain the G63 heading or G63 car from Image 1. The result must look like a close companion to Image 1, with coherent branding and an immediately recognizable Original Lamborghini Urus V8 Twin-Turbo super SUV, not a hybrid.",
+      "references": [
+        "C:/Users/ADMIN/AppData/Local/Temp/codex-clipboard-1d69f7ca-eabc-469a-8cd9-4d2287d082b5.png",
+        "C:/Users/ADMIN/Documents/ChatGPT/DIGITEC/public/images/cars/urus.png"
+      ]
+    }
+  ]
+}

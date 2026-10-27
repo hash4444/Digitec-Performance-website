@@ -1,0 +1,127 @@
+{
+  "createdAt": "2026-10-26T10:39:17.463Z",
+  "instrumentation": "Loopback QA responses only; artifacts unchanged. External analytics/network blocked; native call/WhatsApp intercepted with no send. Responsive frames use desktop engine, not physical devices.",
+  "observations": [
+    {
+      "case": "A hub sequential Tab to Diagnostics",
+      "ax": "mercedes-benz-service-dubai\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 76, 89, 116, 132, 202, 223, 245, 263, 294, 312, 375\n+\t\t\t\t\t414 text 0 1\n+\t\t\t\t\t415 text 0 2\n+\t\t\t\t416 text 0 3\n+\t\t\t\t\t417 text 0 4\n+\t\t\t\t\t418 text 0 5\n+\t\t\t\t419 text 0 6\n+\t\t\t\t420 text 0 7\n+\t\t\t\t421 text 0 8\n+\t\t\t\t\t422 text 0 9\n+\t\t\t\t\t423 text 0 10\n+\t\t\t\t\t424 text 0 11\nThe focused UI element is 111 link Description: Diagnostics, URL: 127.0.0.1:5196/services/mercedes-diagnostics-dubai"
+    },
+    {
+      "case": "A repair planning Enter navigation",
+      "passed": true
+    },
+    {
+      "case": "A new workshop phone Enter",
+      "observed": "QA CONTACT INTERCEPTED: {\"href\":\"tel:+97143402223\",\"label\":\"Call +971 4 340 2223\",\"placement\":\"workshop_proof\"}"
+    },
+    {
+      "case": "A body hero assessment action",
+      "observed": "QA CONTACT INTERCEPTED: {\"href\":\"https://wa.me/97143402223?text=Hi%20Digi-Tec%2C%20I%20would%20like%20a%20Mercedes%20bodywork%20assessment.%0A%0AModel%2Fyear%3A%20%0AAffected%20panels%3A%20%0APrevious%20paint%20or%20repair%20(if%20known)%3A%20%0ASensor%20warning%20(if%20any)%3A%20%0AI%20can%20attach%20clear%20photos%20of%20the%20damage.\",\"label\":\"Request a Mercedes Body Repair Assessment\",\"placement\":\"hero\"}"
+    },
+    {
+      "case": "A body 390 CSS pixels",
+      "metrics": "{\n  \"title\": \"Mercedes Body & Accident Repair Dubai | Digi-Tec\",\n  \"path\": \"/services/mercedes-body-repair-dubai\",\n  \"width\": 390,\n  \"clientWidth\": 382,\n  \"scrollWidth\": 382,\n  \"height\": 844,\n  \"focus\": {\n    \"tag\": \"BODY\",\n    \"text\": \"<iframe src=\\\"https://www.googletagmanager.com/ns.html?id=GTM-T3GVSPND\\\"\\n    height=\\\"0\\\" width=\\\"0\\\" style=\\\"display:none;visibility:hidden\\\"></iframe>\\n    \\n    MenuENEnglishالعربيةAbout \",\n    \"href\": null,\n    \"focusVisible\": false,\n    \"outline\": \"rgb(248, 248, 248) none 2.66667px\",\n    \"boxShadow\": \"none\",\n    \"rect\": {\n      \"x\": 0,\n      \"y\": 0,\n      \"width\": 382,\n      \"height\": 9361.771484375,\n      \"top\": 0,\n      \"right\": 382,\n      \"bottom\": 9361.771484375,\n      \"left\": 0\n    }\n  }\n}"
+    },
+    {
+      "case": "A hub 390 CSS pixels",
+      "metrics": "{\n  \"title\": \"Mercedes Service Dubai | Maintenance & Repair | DIGI-TEC\",\n  \"path\": \"/brands/mercedes-benz-service-dubai\",\n  \"width\": 390,\n  \"clientWidth\": 382,\n  \"scrollWidth\": 382,\n  \"height\": 844,\n  \"focus\": {\n    \"tag\": \"BODY\",\n    \"text\": \"<iframe src=\\\"https://www.googletagmanager.com/ns.html?id=GTM-T3GVSPND\\\"\\n    height=\\\"0\\\" width=\\\"0\\\" style=\\\"display:none;visibility:hidden\\\"></iframe>\\n    \\n    MenuENEnglishالعربيةAbout \",\n    \"href\": null,\n    \"focusVisible\": false,\n    \"outline\": \"rgb(248, 248, 248) none 2.66667px\",\n    \"boxShadow\": \"none\",\n    \"rect\": {\n      \"x\": 0,\n      \"y\": 0,\n      \"width\": 382,\n      \"height\": 22379.44921875,\n      \"top\": 0,\n      \"right\": 382,\n      \"bottom\": 22379.44921875,\n      \"left\": 0\n    }\n  }\n}"
+    },
+    {
+      "case": "A hub 320 CSS pixels",
+      "metrics": "{\n  \"title\": \"Mercedes Service Dubai | Maintenance & Repair | DIGI-TEC\",\n  \"path\": \"/brands/mercedes-benz-service-dubai\",\n  \"width\": 320,\n  \"clientWidth\": 312,\n  \"scrollWidth\": 312,\n  \"height\": 844,\n  \"focus\": {\n    \"tag\": \"BODY\",\n    \"text\": \"<iframe src=\\\"https://www.googletagmanager.com/ns.html?id=GTM-T3GVSPND\\\"\\n    height=\\\"0\\\" width=\\\"0\\\" style=\\\"display:none;visibility:hidden\\\"></iframe>\\n    \\n    MenuENEnglishالعربيةAbout \",\n    \"href\": null,\n    \"focusVisible\": false,\n    \"outline\": \"rgb(248, 248, 248) none 2.66667px\",\n    \"boxShadow\": \"none\",\n    \"rect\": {\n      \"x\": 0,\n      \"y\": 0,\n      \"width\": 312,\n      \"height\": 25475.51171875,\n      \"top\": 0,\n      \"right\": 312,\n      \"bottom\": 25475.51171875,\n      \"left\": 0\n    }\n  }\n}"
+    },
+    {
+      "case": "B diagnostics sequential keyboard focus",
+      "focus": {
+        "clientWidth": 1272,
+        "focusVisible": true,
+        "href": "/services/mercedes-diagnostics-dubai",
+        "outline": "rgb(238, 238, 238) auto 0.666667px",
+        "scrollWidth": 1272,
+        "text": "Diagnostics",
+        "width": 1280
+      }
+    },
+    {
+      "case": "B Diagnostics Enter destination",
+      "passed": true
+    },
+    {
+      "case": "B workshop phone keyboard action",
+      "observed": "QA CONTACT INTERCEPTED: {\"href\":\"tel:+97143402223\",\"label\":\"Call +971 4 340 2223\",\"placement\":\"workshop_proof\"}"
+    },
+    {
+      "case": "B body assessment hero",
+      "observed": "QA CONTACT INTERCEPTED: {\"href\":\"https://wa.me/97143402223?text=Hi%20Digi-Tec%2C%20I%20would%20like%20a%20Mercedes%20bodywork%20assessment.%0A%0AModel%2Fyear%3A%20%0AAffected%20panels%3A%20%0APrevious%20paint%20or%20repair%20(if%20known)%3A%20%0ASensor%20warning%20(if%20any)%3A%20%0AI%20can%20attach%20clear%20photos%20of%20the%20damage.\",\"label\":\"Request a Mercedes Body Repair Assessment\",\"placement\":\"hero\"}"
+    },
+    {
+      "case": "B body assessment service_scope",
+      "observed": "QA CONTACT INTERCEPTED: {\"href\":\"https://wa.me/97143402223?text=Hi%20Digi-Tec%2C%20I%20would%20like%20a%20Mercedes%20bodywork%20assessment.%0A%0AModel%2Fyear%3A%20%0AAffected%20panels%3A%20%0APrevious%20paint%20or%20repair%20(if%20known)%3A%20%0ASensor%20warning%20(if%20any)%3A%20%0AI%20can%20attach%20clear%20photos%20of%20the%20damage.\",\"label\":\"Request a Mercedes Body Repair Assessment\",\"placement\":\"service_scope\"}"
+    },
+    {
+      "case": "B body assessment final_cta",
+      "observed": "QA CONTACT INTERCEPTED: {\"href\":\"https://wa.me/97143402223?text=Hi%20Digi-Tec%2C%20I%20would%20like%20a%20Mercedes%20bodywork%20assessment.%0A%0AModel%2Fyear%3A%20%0AAffected%20panels%3A%20%0APrevious%20paint%20or%20repair%20(if%20known)%3A%20%0ASensor%20warning%20(if%20any)%3A%20%0AI%20can%20attach%20clear%20photos%20of%20the%20damage.\",\"label\":\"Request a Mercedes Body Repair Assessment\",\"placement\":\"final_cta\"}"
+    },
+    {
+      "case": "B body final telephone sequential Tab",
+      "focus": {
+        "focusVisible": true,
+        "href": "tel:+97143402223",
+        "outline": "rgb(238, 238, 238) auto 0.666667px",
+        "text": " Call +971 4 340 2223"
+      }
+    },
+    {
+      "case": "B final phone action",
+      "observed": "QA CONTACT INTERCEPTED: {\"href\":\"tel:+97143402223\",\"label\":\"Call +971 4 340 2223\",\"placement\":\"final_cta\"}"
+    },
+    {
+      "case": "B FAQ Enter expanded",
+      "passed": true
+    },
+    {
+      "case": "B hub 390 CSS pixels",
+      "metrics": "{\n  \"title\": \"Mercedes Service Dubai | Maintenance & Repair | DIGI-TEC\",\n  \"path\": \"/brands/mercedes-benz-service-dubai\",\n  \"width\": 390,\n  \"clientWidth\": 382,\n  \"scrollWidth\": 382,\n  \"height\": 844,\n  \"focus\": {\n    \"tag\": \"BODY\",\n    \"text\": \"<iframe src=\\\"https://www.googletagmanager.com/ns.html?id=GTM-T3GVSPND\\\"\\n    height=\\\"0\\\" width=\\\"0\\\" style=\\\"display:none;visibility:hidden\\\"></iframe>\\n    \\n    MenuENEnglishالعربيةAbout \",\n    \"href\": null,\n    \"focusVisible\": false,\n    \"outline\": \"rgb(248, 248, 248) none 2.66667px\",\n    \"boxShadow\": \"none\",\n    \"rect\": {\n      \"x\": 0,\n      \"y\": 0,\n      \"width\": 382,\n      \"height\": 22379.44921875,\n      \"top\": 0,\n      \"right\": 382,\n      \"bottom\": 22379.44921875,\n      \"left\": 0\n    }\n  }\n}"
+    },
+    {
+      "case": "B hub 320 CSS pixels",
+      "metrics": "{\n  \"title\": \"Mercedes Service Dubai | Maintenance & Repair | DIGI-TEC\",\n  \"path\": \"/brands/mercedes-benz-service-dubai\",\n  \"width\": 320,\n  \"clientWidth\": 312,\n  \"scrollWidth\": 312,\n  \"height\": 844,\n  \"focus\": {\n    \"tag\": \"BODY\",\n    \"text\": \"<iframe src=\\\"https://www.googletagmanager.com/ns.html?id=GTM-T3GVSPND\\\"\\n    height=\\\"0\\\" width=\\\"0\\\" style=\\\"display:none;visibility:hidden\\\"></iframe>\\n    \\n    MenuENEnglishالعربيةAbout \",\n    \"href\": null,\n    \"focusVisible\": false,\n    \"outline\": \"rgb(248, 248, 248) none 2.66667px\",\n    \"boxShadow\": \"none\",\n    \"rect\": {\n      \"x\": 0,\n      \"y\": 0,\n      \"width\": 312,\n      \"height\": 25475.51171875,\n      \"top\": 0,\n      \"right\": 312,\n      \"bottom\": 25475.51171875,\n      \"left\": 0\n    }\n  }\n}"
+    },
+    {
+      "case": "B body 390 CSS pixels",
+      "metrics": "{\n  \"title\": \"Mercedes Body & Accident Repair Dubai | Digi-Tec\",\n  \"path\": \"/services/mercedes-body-repair-dubai\",\n  \"width\": 390,\n  \"clientWidth\": 382,\n  \"scrollWidth\": 382,\n  \"height\": 844,\n  \"focus\": {\n    \"tag\": \"BODY\",\n    \"text\": \"<iframe src=\\\"https://www.googletagmanager.com/ns.html?id=GTM-T3GVSPND\\\"\\n    height=\\\"0\\\" width=\\\"0\\\" style=\\\"display:none;visibility:hidden\\\"></iframe>\\n    \\n    MenuENEnglishالعربيةAbout \",\n    \"href\": null,\n    \"focusVisible\": false,\n    \"outline\": \"rgb(248, 248, 248) none 2.66667px\",\n    \"boxShadow\": \"none\",\n    \"rect\": {\n      \"x\": 0,\n      \"y\": 0,\n      \"width\": 382,\n      \"height\": 9361.771484375,\n      \"top\": 0,\n      \"right\": 382,\n      \"bottom\": 9361.771484375,\n      \"left\": 0\n    }\n  }\n}"
+    },
+    {
+      "case": "B body 320 CSS pixels",
+      "metrics": "{\n  \"title\": \"Mercedes Body & Accident Repair Dubai | Digi-Tec\",\n  \"path\": \"/services/mercedes-body-repair-dubai\",\n  \"width\": 320,\n  \"clientWidth\": 312,\n  \"scrollWidth\": 312,\n  \"height\": 844,\n  \"focus\": {\n    \"tag\": \"BODY\",\n    \"text\": \"<iframe src=\\\"https://www.googletagmanager.com/ns.html?id=GTM-T3GVSPND\\\"\\n    height=\\\"0\\\" width=\\\"0\\\" style=\\\"display:none;visibility:hidden\\\"></iframe>\\n    \\n    MenuENEnglishالعربيةAbout \",\n    \"href\": null,\n    \"focusVisible\": false,\n    \"outline\": \"rgb(248, 248, 248) none 2.66667px\",\n    \"boxShadow\": \"none\",\n    \"rect\": {\n      \"x\": 0,\n      \"y\": 0,\n      \"width\": 312,\n      \"height\": 10212.396484375,\n      \"top\": 0,\n      \"right\": 312,\n      \"bottom\": 10212.396484375,\n      \"left\": 0\n    }\n  }\n}"
+    },
+    {
+      "case": "B body320 finalCTA sequentialTab",
+      "metrics": "{\n  \"title\": \"Mercedes Body & Accident Repair Dubai | Digi-Tec\",\n  \"path\": \"/services/mercedes-body-repair-dubai\",\n  \"width\": 320,\n  \"clientWidth\": 312,\n  \"scrollWidth\": 312,\n  \"height\": 844,\n  \"focus\": {\n    \"tag\": \"A\",\n    \"text\": \"Request a Mercedes Body Repair Assessment\",\n    \"href\": \"https://wa.me/97143402223?text=Hi%20Digi-Tec%2C%20I%20would%20like%20a%20Mercedes%20bodywork%20assessment.%0A%0AModel%2Fyear%3A%20%0AAffected%20panels%3A%20%0APrevious%20paint%20or%20repair%20(if%20known)%3A%20%0ASensor%20warning%20(if%20any)%3A%20%0AI%20can%20attach%20clear%20photos%20of%20the%20damage.\",\n    \"focusVisible\": true,\n    \"outline\": \"rgb(238, 238, 238) auto 0.666667px\",\n    \"boxShadow\": \"none\",\n    \"rect\": {\n      \"x\": 20,\n      \"y\": 766.8016357421875,\n      \"width\": 272,\n      \"height\": 48,\n      \"top\": 766.8016357421875,\n      \"right\": 292,\n      \"bottom\": 814.8016357421875,\n      \"left\": 20\n    }\n  }\n}"
+    },
+    {
+      "case": "B body320 finalCTA Enter",
+      "observed": "{\n  \"href\": \"https://wa.me/97143402223?text=Hi%20Digi-Tec%2C%20I%20would%20like%20a%20Mercedes%20bodywork%20assessment.%0A%0AModel%2Fyear%3A%20%0AAffected%20panels%3A%20%0APrevious%20paint%20or%20repair%20(if%20known)%3A%20%0ASensor%20warning%20(if%20any)%3A%20%0AI%20can%20attach%20clear%20photos%20of%20the%20damage.\",\n  \"label\": \"Request a Mercedes Body Repair Assessment\",\n  \"placement\": \"final_cta\"\n}"
+    },
+    {
+      "case": "B mobile menu Escape",
+      "ax": "Browser tab: 12, Title: \"Phase 4 local responsive QA 320px\", URL: \"http://127.0.0.1:5197/__phase4_frame?width=320&height=844&path=/services/mercedes-body-repair-dubai\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 212\n~\t\t\t\t\t11 button (collapsed) Menu, Secondary Actions: Expand\n+\t\t\t\t\t\t222 image\nThe focused UI element is 158 link Description: Request a Mercedes Body Repair Assessment, URL: wa.me/97143402223?text=Hi%20Digi-Tec%2C%20I%20would%20like%20a%20Mercedes%20bodywork%20assessment.%0A%0AModel%2Fyear%3A%20%0AAffected%20panels%3A%20%0APrevious%20paint%20or%20repair%20(if%20known)%3A%20%0ASensor%20warning%20(if%20any)%3A%20%0AI%20can%20attach%20clear%20photos%20of%20the%20damage."
+    },
+    {
+      "case": "B menu keyboard Enter then Escape",
+      "ax": "\"Phase 4 local responsive QA 320px\", URL: \"http://127.0.0.1:5197/__phase4_frame?width=320&height=844&path=/services/mercedes-body-repair-dubai\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 222\n~\t\t\t\t\t11 button (collapsed) Menu, Secondary Actions: Expand\n+\t\t\t\t\t\t224 image\nThe focused UI element is 11 button (collapsed) Menu, Secondary Actions: Expand"
+    },
+    {
+      "case": "A body320 CSS pixels",
+      "metrics": "{\n  \"title\": \"Mercedes Body & Accident Repair Dubai | Digi-Tec\",\n  \"path\": \"/services/mercedes-body-repair-dubai\",\n  \"width\": 320,\n  \"clientWidth\": 312,\n  \"scrollWidth\": 312,\n  \"height\": 844,\n  \"focus\": {\n    \"tag\": \"BODY\",\n    \"text\": \"<iframe src=\\\"https://www.googletagmanager.com/ns.html?id=GTM-T3GVSPND\\\"\\n    height=\\\"0\\\" width=\\\"0\\\" style=\\\"display:none;visibility:hidden\\\"></iframe>\\n    \\n    MenuENEnglishالعربيةAbout \",\n    \"href\": null,\n    \"focusVisible\": false,\n    \"outline\": \"rgb(248, 248, 248) none 2.66667px\",\n    \"boxShadow\": \"none\",\n    \"rect\": {\n      \"x\": 0,\n      \"y\": 0,\n      \"width\": 312,\n      \"height\": 10212.396484375,\n      \"top\": 0,\n      \"right\": 312,\n      \"bottom\": 10212.396484375,\n      \"left\": 0\n    }\n  }\n}"
+    },
+    {
+      "case": "B mobile390 Diagnostics focus",
+      "metrics": "{\n  \"title\": \"Mercedes Service Dubai | Maintenance & Repair | DIGI-TEC\",\n  \"path\": \"/brands/mercedes-benz-service-dubai\",\n  \"width\": 390,\n  \"clientWidth\": 382,\n  \"scrollWidth\": 382,\n  \"height\": 844,\n  \"focus\": {\n    \"tag\": \"A\",\n    \"text\": \"Diagnostics\",\n    \"href\": \"/services/mercedes-diagnostics-dubai\",\n    \"focusVisible\": true,\n    \"outline\": \"rgb(238, 238, 238) auto 0.666667px\",\n    \"boxShadow\": \"none\",\n    \"rect\": {\n      \"x\": 110.05208587646484,\n      \"y\": 469.25,\n      \"width\": 77.36458587646484,\n      \"height\": 16.666667938232422,\n      \"top\": 469.25,\n      \"right\": 187.4166717529297,\n      \"bottom\": 485.9166679382324,\n      \"left\": 110.05208587646484\n    }\n  }\n}"
+    },
+    {
+      "case": "B mobile390 workshop phone focus",
+      "metrics": "{\n  \"title\": \"Mercedes Service Dubai | Maintenance & Repair | DIGI-TEC\",\n  \"path\": \"/brands/mercedes-benz-service-dubai\",\n  \"width\": 390,\n  \"clientWidth\": 382,\n  \"scrollWidth\": 382,\n  \"height\": 844,\n  \"focus\": {\n    \"tag\": \"A\",\n    \"text\": \"Call +971 4 340 2223\",\n    \"href\": \"tel:+97143402223\",\n    \"focusVisible\": true,\n    \"outline\": \"rgb(238, 238, 238) auto 0.666667px\",\n    \"boxShadow\": \"none\",\n    \"rect\": {\n      \"x\": 161.02084350585938,\n      \"y\": 460.38543701171875,\n      \"width\": 141.73959350585938,\n      \"height\": 16.666667938232422,\n      \"top\": 460.38543701171875,\n      \"right\": 302.76043701171875,\n      \"bottom\": 477.0521049499512,\n      \"left\": 161.02084350585938\n    }\n  }\n}"
+    }
+  ]
+}

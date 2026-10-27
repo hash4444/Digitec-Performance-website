@@ -1,0 +1,278 @@
+{
+  "checkedAt": "2026-10-26T11:09:31.663Z",
+  "source": "../browser/interaction-results.json",
+  "sourceSha256": "51ae44ce735b1a8839dbf5e2b908eba81f1418582ac47070b773cd14f2908f10",
+  "scope": "Offline validation of recorded browser evidence, not an additional UI replay or live contact send.",
+  "checks": [
+    {
+      "name": "Recorded observation count",
+      "passed": true,
+      "observed": 16
+    },
+    {
+      "name": "Native B console empty",
+      "passed": true,
+      "observed": []
+    },
+    {
+      "name": "New diagnostics target/focus",
+      "passed": true,
+      "observed": {
+        "clientWidth": 1272,
+        "focusVisible": true,
+        "href": "/services/mercedes-diagnostics-dubai",
+        "outline": "rgb(238, 238, 238) auto 0.666667px",
+        "scrollWidth": 1272,
+        "text": "Diagnostics",
+        "width": 1280
+      }
+    },
+    {
+      "name": "Repair planning Enter destination",
+      "passed": true,
+      "observed": {
+        "case": "B repair planning Enter",
+        "urlHeader": "Browser tab: 17, Title: \"Mercedes Engine & Mechanical Repair Dubai | Digi-Tec\", URL: \"http://127.0.0.1:5202/services/mercedes-mechanical-repair-dubai\"."
+      }
+    },
+    {
+      "name": "B workshop phone Enter number and placement",
+      "passed": true,
+      "observed": {
+        "href": "tel:+97143402223",
+        "label": "Call +971 4 340 2223",
+        "placement": "workshop_proof"
+      }
+    },
+    {
+      "name": "B final phone Enter number and placement",
+      "passed": true,
+      "observed": {
+        "href": "tel:+97143402223",
+        "label": "Call +971 4 340 2223",
+        "placement": "final_cta"
+      }
+    },
+    {
+      "name": "B assessment hero recipient",
+      "passed": true,
+      "observed": "https://wa.me/97143402223"
+    },
+    {
+      "name": "B assessment hero complete reviewed draft",
+      "passed": true,
+      "observed": "Hi Digi-Tec, I would like a Mercedes bodywork assessment.\n\nModel/year: \nAffected panels: \nPrevious paint or repair (if known): \nSensor warning (if any): \nI can attach clear photos of the damage."
+    },
+    {
+      "name": "B assessment hero attribution",
+      "passed": true,
+      "observed": "hero"
+    },
+    {
+      "name": "B assessment service_scope recipient",
+      "passed": true,
+      "observed": "https://wa.me/97143402223"
+    },
+    {
+      "name": "B assessment service_scope complete reviewed draft",
+      "passed": true,
+      "observed": "Hi Digi-Tec, I would like a Mercedes bodywork assessment.\n\nModel/year: \nAffected panels: \nPrevious paint or repair (if known): \nSensor warning (if any): \nI can attach clear photos of the damage."
+    },
+    {
+      "name": "B assessment service_scope attribution",
+      "passed": true,
+      "observed": "service_scope"
+    },
+    {
+      "name": "B assessment final_cta recipient",
+      "passed": true,
+      "observed": "https://wa.me/97143402223"
+    },
+    {
+      "name": "B assessment final_cta complete reviewed draft",
+      "passed": true,
+      "observed": "Hi Digi-Tec, I would like a Mercedes bodywork assessment.\n\nModel/year: \nAffected panels: \nPrevious paint or repair (if known): \nSensor warning (if any): \nI can attach clear photos of the damage."
+    },
+    {
+      "name": "B assessment final_cta attribution",
+      "passed": true,
+      "observed": "final_cta"
+    },
+    {
+      "name": "B320 final assessment Enter recipient",
+      "passed": true,
+      "observed": "https://wa.me/97143402223"
+    },
+    {
+      "name": "B320 final assessment Enter complete reviewed draft",
+      "passed": true,
+      "observed": "Hi Digi-Tec, I would like a Mercedes bodywork assessment.\n\nModel/year: \nAffected panels: \nPrevious paint or repair (if known): \nSensor warning (if any): \nI can attach clear photos of the damage."
+    },
+    {
+      "name": "B320 final assessment Enter attribution",
+      "passed": true,
+      "observed": "final_cta"
+    },
+    {
+      "name": "B hub 390 CSSpixels no horizontal overflow",
+      "passed": true,
+      "observed": {
+        "width": 390,
+        "scrollWidth": 382,
+        "clientWidth": 382
+      }
+    },
+    {
+      "name": "B hub 390 CSSpixels ready and mounted",
+      "passed": true,
+      "observed": {
+        "readyState": "complete",
+        "rootPresent": true,
+        "bodyPresent": true
+      }
+    },
+    {
+      "name": "B hub 320 CSSpixels no horizontal overflow",
+      "passed": true,
+      "observed": {
+        "width": 320,
+        "scrollWidth": 312,
+        "clientWidth": 312
+      }
+    },
+    {
+      "name": "B hub 320 CSSpixels ready and mounted",
+      "passed": true,
+      "observed": {
+        "readyState": "complete",
+        "rootPresent": true,
+        "bodyPresent": true
+      }
+    },
+    {
+      "name": "B body 390 CSSpixels no horizontal overflow",
+      "passed": true,
+      "observed": {
+        "width": 390,
+        "scrollWidth": 382,
+        "clientWidth": 382
+      }
+    },
+    {
+      "name": "B body 390 CSSpixels ready and mounted",
+      "passed": true,
+      "observed": {
+        "readyState": "complete",
+        "rootPresent": true,
+        "bodyPresent": true
+      }
+    },
+    {
+      "name": "B body 320 CSSpixels no horizontal overflow",
+      "passed": true,
+      "observed": {
+        "width": 320,
+        "scrollWidth": 312,
+        "clientWidth": 312
+      }
+    },
+    {
+      "name": "B body 320 CSSpixels ready and mounted",
+      "passed": true,
+      "observed": {
+        "readyState": "complete",
+        "rootPresent": true,
+        "bodyPresent": true
+      }
+    },
+    {
+      "name": "B320 final assessment focus no horizontal overflow",
+      "passed": true,
+      "observed": {
+        "width": 320,
+        "scrollWidth": 312,
+        "clientWidth": 312
+      }
+    },
+    {
+      "name": "B320 final assessment focus ready and mounted",
+      "passed": true,
+      "observed": {
+        "readyState": "complete",
+        "rootPresent": true,
+        "bodyPresent": true
+      }
+    },
+    {
+      "name": "320px CTA focus visible",
+      "passed": true,
+      "observed": {
+        "tag": "A",
+        "text": "Request a Mercedes Body Repair Assessment",
+        "href": "https://wa.me/97143402223?text=Hi%20Digi-Tec%2C%20I%20would%20like%20a%20Mercedes%20bodywork%20assessment.%0A%0AModel%2Fyear%3A%20%0AAffected%20panels%3A%20%0APrevious%20paint%20or%20repair%20(if%20known)%3A%20%0ASensor%20warning%20(if%20any)%3A%20%0AI%20can%20attach%20clear%20photos%20of%20the%20damage.",
+        "focusVisible": true,
+        "outline": "rgb(238, 238, 238) auto 0.666667px",
+        "boxShadow": "none",
+        "rect": {
+          "x": 20,
+          "y": 769.107421875,
+          "width": 272,
+          "height": 48,
+          "top": 769.107421875,
+          "right": 292,
+          "bottom": 817.107421875,
+          "left": 20
+        }
+      }
+    },
+    {
+      "name": "320px CTA fully in viewport",
+      "passed": true,
+      "observed": {
+        "x": 20,
+        "y": 769.107421875,
+        "width": 272,
+        "height": 48,
+        "top": 769.107421875,
+        "right": 292,
+        "bottom": 817.107421875,
+        "left": 20
+      }
+    },
+    {
+      "name": "Final phone sequential focus",
+      "passed": true,
+      "observed": {
+        "case": "B final phone sequentialTab",
+        "focus": {
+          "focusVisible": true,
+          "href": "tel:+97143402223",
+          "text": " Call +971 4 340 2223"
+        }
+      }
+    },
+    {
+      "name": "FAQ expands via Enter",
+      "passed": true,
+      "observed": {
+        "case": "B FAQ keyboard Enter",
+        "expanded": true
+      }
+    },
+    {
+      "name": "Menu Escape restores focus",
+      "passed": true,
+      "observed": {
+        "case": "B320 Menu Enter/Escape",
+        "focusedMenu": true
+      }
+    }
+  ],
+  "passed": 33,
+  "total": 33,
+  "allPassed": true,
+  "limitations": [
+    "Responsive frames use the desktop browser engine.",
+    "Native contact targets were intercepted by QA response code; no real call, message or production analytics behavior is claimed."
+  ]
+}

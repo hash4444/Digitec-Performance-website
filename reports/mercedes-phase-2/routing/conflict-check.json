@@ -1,0 +1,113 @@
+{
+  "at": "2026-10-26T06:52:38.848Z",
+  "offlineOnly": true,
+  "inventoryObservedAt": "2026-10-26T06:48:10Z",
+  "inventorySha256": "eba6ad671e2cf406dfbf1b5062d82e7e417e4b49f919757aac106b85ec902d99",
+  "status": "passed functional offline checks; no live mutation",
+  "checksPassed": 781,
+  "protectedRules": [
+    {
+      "id": "5addb0c068414fb5b985a869ded26c68",
+      "functionalSha256": "363f400564a1d5d7d000b654cec8c4d593458058d43fbf9bed0866c574bb461a"
+    },
+    {
+      "id": "dbe42693423442afbc3bab9b993242a7",
+      "functionalSha256": "85f1102bd7bb439698fc9e73b87740d967495a6a2d317c909614605fd35367e1"
+    },
+    {
+      "id": "9781b1ef743f4ffbaadbe5cb3250eeca",
+      "functionalSha256": "a80147d32c5be8f5c88cb6d567ca8d4cda45f1c86ad5ce8155e639e48bf0ae25"
+    }
+  ],
+  "proposedOrder": [
+    "5addb0c068414fb5b985a869ded26c68",
+    "dbe42693423442afbc3bab9b993242a7",
+    "proposed:ar-oil-change",
+    "proposed:en-body-repair",
+    "proposed:ar-battery-replacement",
+    "proposed:ar-mechanical-repair",
+    "9781b1ef743f4ffbaadbe5cb3250eeca"
+  ],
+  "overlaps": [
+    {
+      "source": "/ar/brands/mercedes-benz-service-dubai/oil-change",
+      "existingRuleId": "9781b1ef743f4ffbaadbe5cb3250eeca",
+      "scope": "www requests",
+      "treatment": "Place new exact rule before www; appending would add a host-normalization hop."
+    },
+    {
+      "source": "/brands/mercedes-benz-service-dubai/body-repair",
+      "existingRuleId": "9781b1ef743f4ffbaadbe5cb3250eeca",
+      "scope": "www requests",
+      "treatment": "Place new exact rule before www; appending would add a host-normalization hop."
+    },
+    {
+      "source": "/ar/brands/mercedes-benz-service-dubai/battery-replacement",
+      "existingRuleId": "9781b1ef743f4ffbaadbe5cb3250eeca",
+      "scope": "www requests",
+      "treatment": "Place new exact rule before www; appending would add a host-normalization hop."
+    },
+    {
+      "source": "/ar/brands/mercedes-benz-service-dubai/mechanical-repair",
+      "existingRuleId": "9781b1ef743f4ffbaadbe5cb3250eeca",
+      "scope": "www requests",
+      "treatment": "Place new exact rule before www; appending would add a host-normalization hop."
+    }
+  ],
+  "afterReview": null,
+  "otherchecks": {
+    "urlRewriteRules": {
+      "status": "ui_verified_none",
+      "observedText": "No URL Rewrite Rules created"
+    },
+    "configurationRules": {
+      "status": "ui_verified_none",
+      "observedText": "No Configuration Rules created"
+    },
+    "originRules": {
+      "status": "ui_verified_none",
+      "observedText": "No Origin Rules created"
+    },
+    "bulkRedirectLists": {
+      "status": "ui_verified_none",
+      "used": 0,
+      "limit": 5
+    },
+    "pageRules": {
+      "status": "ui_verified_none",
+      "used": 0,
+      "limit": 3
+    },
+    "workerRoutes": {
+      "status": "ui_verified_none",
+      "observedText": "You do not have any routes configured. Add a route to get started."
+    },
+    "dns": {
+      "status": "ui_verified_two_relevant_proxied_records",
+      "records": [
+        {
+          "name": "digitecme.com",
+          "type": "CNAME",
+          "content": "dubai-performance-art.lovable.app",
+          "proxied": true,
+          "ttl": "Auto"
+        },
+        {
+          "name": "www.digitecme.com",
+          "type": "CNAME",
+          "content": "dubai-performance-art.lovable.app",
+          "proxied": true,
+          "ttl": "Auto"
+        }
+      ]
+    },
+    "tls": {
+      "status": "settings_not_inspected; public_HTTP_HTTPS_behavior_captured_separately"
+    }
+  },
+  "limits": [
+    "The dashboard transcription covers displayed functional fields, not hidden API ruleset/version metadata.",
+    "The model covers only the saved expressions and targets. It cannot prove the absence of uninspected features, origin changes or URL normalization effects.",
+    "Refresh authenticated configuration and HTTP preflight before activation; require post-deployment HTTP plus actual after-state comparison."
+  ]
+}

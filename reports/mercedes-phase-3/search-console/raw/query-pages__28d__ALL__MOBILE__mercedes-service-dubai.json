@@ -1,0 +1,59 @@
+{
+  "id": "query-pages__28d__ALL__MOBILE__mercedes-service-dubai",
+  "capturedAt": "2026-10-26T08:09:41.481Z",
+  "property": "sc-domain:digitecme.com",
+  "searchType": "Web (Text-based verified separately)",
+  "expected": {
+    "kind": "query-pages",
+    "query": "mercedes service dubai",
+    "country": "ALL",
+    "device": "MOBILE",
+    "window": {
+      "id": "28d",
+      "start": "20260927",
+      "end": "20261024",
+      "startLabel": "27 September 2026",
+      "endLabel": "24 October 2026"
+    },
+    "breakdown": "page",
+    "current": true
+  },
+  "navigationUrl": "https://search.google.com/search-console/performance/search-analytics?resource_id=sc-domain%3Adigitecme.com&metrics=CLICKS%2CIMPRESSIONS%2CCTR%2CPOSITION&start_date=20260927&end_date=20261024&query=!mercedes%20service%20dubai&breakdown=page&device=MOBILE",
+  "displayedFilterChecks": {
+    "query": true,
+    "country": true,
+    "device": true,
+    "page": true,
+    "date": true,
+    "breakdown": true
+  },
+  "loading": false,
+  "readinessReloads": 0,
+  "header": [
+    "Top pages",
+    "Clicks",
+    "Impressions",
+    "CTR",
+    "Position"
+  ],
+  "rows": [
+    [
+      "https://digitecme.com/brands/mercedes-benz-service-dubai",
+      "0",
+      "55",
+      "0%",
+      "12.0"
+    ]
+  ],
+  "pagination": "1-1 of 1",
+  "completeVisibleTable": true,
+  "availability": "visible_rows_complete",
+  "cards": {
+    "clicks": "0",
+    "impressions": "55",
+    "ctr": "0%",
+    "position": "12"
+  },
+  "axFile": "raw/query-pages__28d__ALL__MOBILE__mercedes-service-dubai-ax.txt",
+  "textFile": "raw/query-pages__28d__ALL__MOBILE__mercedes-service-dubai-visible.txt"
+}

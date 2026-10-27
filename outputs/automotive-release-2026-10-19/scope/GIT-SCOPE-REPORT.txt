@@ -1,0 +1,86 @@
+DIGI-TEC automotive SEO release scope audit
+19 October 2026, Asia/Dubai
+
+Git compatibility
+Current checkout is main at 6180f453feaaf21b8c786f23bb3867a09666ed64.
+Cached origin/main is the same. A live read-only GitHub compare_commits request
+for 6180f453feaaf21b8c786f23bb3867a09666ed64...main returned identical,
+ahead_by=0, behind_by=0, total_commits=0 and files=[]. The initial git ls-remote
+attempt failed in the sandbox with a getaddrinfo thread error; it is not used
+as evidence of remote freshness. The live connector evidence is preserved in
+remote-main-compatibility.json. Recheck this condition immediately before any
+later authorized commit/push/release. An unchanged Git branch does not prove
+that the live Cloudflare deployment is unchanged; see the deployment audit.
+
+Published PPF commit 6180f453feaaf21b8c786f23bb3867a09666ed64 is the baseline.
+Tuning commit 96970728b608b8927e8ee73d82c7c1a64874138f is its ancestor
+(git merge-base --is-ancestor returned 0). Both remain in baseline history.
+
+Exact release overlay
+The two approved sprint manifests combine to 11 unique files: ten application
+files and one existing browser test expectation. Six files are modified and
+five are added. No source file is owned by both sprints.
+
+Five-brand sprint, 7 files:
+  src/data/brands.ts
+  src/data/priorityBrandSeo.ts
+  src/i18n/ar-brands.ts
+  src/pages/BrandPage.tsx
+  scripts/test-master-seo-browser.mjs
+  src/components/BrandServiceScope.tsx (new)
+  src/data/brandServiceSprint.ts (new)
+
+Repair sprint, 4 files:
+  src/pages/BrandServicePage.tsx
+  src/components/RepairEnquiryPanel.tsx (new)
+  src/data/repairServiceArabic.ts (new)
+  src/data/repairServiceContent.ts (new)
+
+release-source-manifest.json and .csv record the approved before/after and
+current SHA-256 values, Git baseline hashes, and per-file checks. All eleven
+current approved hashes match. All approved before hashes match their sprint
+baseline manifests and match HEAD content. core.autocrlf=true explains CRLF
+checkout versus LF Git-object differences. priorityBrandSeo.ts had mixed line
+endings; reversing its sole description replacement reproduced its exact
+approved baseline SHA-256 and normalized HEAD content.
+
+The full 578-entry repair after/source-manifest.json was also compared with
+the current tree: zero mismatches. The current work therefore matches the
+reviewed final repair snapshot, including the preserved five-brand work.
+
+Dependencies and isolation
+New scoped components use existing LocalizedLink and BrandServiceCombo types.
+Their dependencies src/components/LocalizedLink.tsx and src/data/brandServices.ts
+already exist in the clean baseline. No new route, package, lockfile, shared
+schema component, backend function or Cloudflare configuration is required.
+Existing PPF/tuning/configuration paths have no current tracked source diff.
+The shared BrandPage and BrandServicePage edits remain guarded by the five
+selected brands / ten repair-service keys; combined QA must verify these paths
+and unrelated PPF/tuning routes from the isolated candidate.
+
+automotive-source-only.patch contains exactly the eleven allowed files, with
+new-file diffs for the five additions. git apply --numstat parses all eleven;
+git apply --check --reverse against the current working files returned 0.
+This is a read-only validation; no patch was applied to the shared checkout.
+
+Excluded work
+supabase/functions/mcp/index.ts is a pre-existing unrelated backend edit,
+current SHA-256 dae4eb5896ab1e38ba0e040c41c23dc986ee9ec2f729e8b91548be0658091a43.
+It is excluded from the overlay and must remain in the shared working tree.
+outputs/seo-2026-09-16/master-validation.json is flagged M by Git status but
+its current bytes exactly match HEAD; it is still excluded. Existing untracked
+outputs, including PPF/tuning evidence, and newly generated release evidence
+are not application release content. excluded-working-tree.json records the
+observed paths separately; the manifest allowlist is the release authority.
+
+Preparation boundaries
+No branch switch, reset, checkout, clean, stash, commit, push, publication or
+deployment was performed in this audit. No production system was modified.
+Prepare the candidate from the verified remote baseline and copy only the
+manifest overlay. Do not build the deployable source snapshot by copying the
+entire dirty shared working tree. Keep build-generated Cloudflare routing
+data separate from source configuration and review its generated diff.
+
+Recommendation from scope/Git checks: compatible for isolated candidate QA.
+This scope result does not authorize production release and does not replace
+live deployment-state, rollback and combined-build verification.

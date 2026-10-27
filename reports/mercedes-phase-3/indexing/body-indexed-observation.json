@@ -1,0 +1,49 @@
+{
+  "mirroredAt": "2026-10-26T08:33:34.949Z",
+  "sourcePath": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-3\\search-console\\indexed-observations.json",
+  "sourceCollectorSnapshotSha256": "8143cb6c240e36d9e0f2b4b3281e9fda0885511eb4a7f4f4a39a76f1a61a8112",
+  "collectorSnapshotNote": "The root collector may add other URLs later; evidence file hashes below identify this accepted body report independently.",
+  "property": "sc-domain:digitecme.com",
+  "method": "Authenticated indexed UI; strict displayed URL equality and expanded canonical fields; no live test/index request",
+  "url": "https://digitecme.com/services/mercedes-body-repair-dubai",
+  "displayedInspectedUrl": "https://digitecme.com/services/mercedes-body-repair-dubai",
+  "validatedUrlEquality": true,
+  "canonicalDetailsPresent": true,
+  "capturedAt": "2026-10-26T08:22:33.455Z",
+  "capturedAtDubai": "2026-10-26 12:22:33.455 UTC+04:00",
+  "status": "URL is not on Google",
+  "indexingStatus": "Crawled - currently not indexed",
+  "lastCrawlDisplayed": "11 Oct 2026, 09:31:46",
+  "lastCrawlDisplayTimezone": "Unverified; preserve literal displayed time",
+  "crawledAs": "Googlebot smartphone",
+  "crawlAllowed": "Yes",
+  "pageFetch": "Successful",
+  "indexingAllowed": "N/A",
+  "userDeclaredCanonical": "N/A",
+  "googleSelectedCanonical": "N/A",
+  "sitemapField": "Temporary processing error",
+  "referringPages": [
+    "https://digitecme.com/ar/services/mercedes-body-repair-dubai",
+    "https://digitecme.com/services/mercedes-body-repair-dubai/"
+  ],
+  "evidence": [
+    {
+      "path": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-3\\search-console\\indexed\\body-slashless-verified-ax.txt",
+      "sha256": "9e536b8280b72559434498997d4ba59ea21708c732ce3c809c8c1eb2294a3f11",
+      "bytes": 6756
+    },
+    {
+      "path": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\reports\\mercedes-phase-3\\search-console\\indexed\\body-slashless-verified-visible.txt",
+      "sha256": "749a32831359b41a950a9ea0e55766dfcbc9d3e73756e5bf6654c3388f67a415",
+      "bytes": 1521
+    }
+  ],
+  "readOnly": true,
+  "noLiveTestOrIndexingRequest": true,
+  "interpretation": [
+    "Fresh observation of stored October11 crawl, not a current Google fetch.",
+    "No evidence that Google has recrawled the October26 R2 redirect; status cannot be attributed to R2.",
+    "N/A canonical/indexing fields remain unavailable rather than replaced with current HTML values.",
+    "Current public HTML is direct200, self-canonical and index/follow; no present technical exclusion has been identified."
+  ]
+}

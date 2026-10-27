@@ -1,0 +1,11 @@
+import fs from 'node:fs/promises';
+import path from 'node:path';
+import {fileURLToPath} from 'node:url';
+import {createHash} from 'node:crypto';
+const out=path.dirname(fileURLToPath(import.meta.url)),workspace=path.resolve(out,'../../..'),candidate=path.resolve(out,'../candidate.local'),archive=path.join(out,'pre-above-fold-fix');await fs.mkdir(archive,{recursive:true});
+for(const f of['combined-cli-results.json','combined-browser-results.json','frozen-overlay.json','metadata-before-after.json','mercedes-campaign-static-results.json'])await fs.copyFile(path.join(out,f),path.join(archive,f));
+await fs.copyFile(path.join(candidate,'release-qa.local/build-results.json'),path.join(archive,'build-results.json'));
+await fs.copyFile(path.join(candidate,'src/data/mercedesServiceCampaign.ts'),path.join(archive,'mercedesServiceCampaign-before.ts'));
+const file='src/data/mercedesServiceCampaign.ts',data=await fs.readFile(path.join(workspace,file)),sha256=createHash('sha256').update(data).digest('hex');if(sha256!=='98012343a3f8450ba6a34bb094425beaa4049932d534d9115d0b373ded32c8dd')throw Error('Unexpected reviewed data hash');await fs.writeFile(path.join(candidate,file),data);
+const frozen=JSON.parse(await fs.readFile(path.join(out,'frozen-overlay.json'),'utf8'));frozen.files.find(r=>r.file===file).sha256=sha256;frozen.at=new Date().toISOString();frozen.narrowHeroCorrection='Only EN campaign intro shortened after measured 20px overlap of primary hero CTA by fixed mobile bar at320x844. Five other source files unchanged.';await fs.writeFile(path.join(out,'frozen-overlay.json'),JSON.stringify(frozen,null,2));
+console.log(JSON.stringify({file,sha256,archivedPreviousEvidence:true}));

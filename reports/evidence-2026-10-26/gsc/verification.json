@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "source_hash_unchanged": true,
+  "csv_rows_rechecked_directly_against_workbook": 178,
+  "row_checks": {
+    "mercedes-queries.csv": {
+      "rows": 117,
+      "mismatches": []
+    },
+    "mercedes-pages.csv": {
+      "rows": 49,
+      "mismatches": []
+    },
+    "sitewide-site-brand-query-rows.csv": {
+      "rows": 12,
+      "mismatches": []
+    }
+  },
+  "keyword_checks": 7,
+  "bands_reconcile": true
+}

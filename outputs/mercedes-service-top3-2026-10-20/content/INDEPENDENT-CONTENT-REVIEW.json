@@ -1,0 +1,60 @@
+{
+  "dateDubai": "2026-10-20",
+  "result": "PASS",
+  "reviewType": "Independent read-only source/content review",
+  "productEdits": 0,
+  "blockingIssues": [],
+  "newUnsupportedCapabilityClaimsFound": false,
+  "oemIntervalsIncorrectlyUniversalized": false,
+  "englishArabicMateriallyConsistent": true,
+  "clickOrDraftReportedAsConfirmedBooking": false,
+  "formFieldCountPerLocale": 8,
+  "requiredFields": ["model", "issue/service reminder or unknown"],
+  "optionalIntakeFields": ["year", "mileage and unit", "history", "preferred appointment", "name", "callback phone"],
+  "analyticsFreeTextOrContactDataAdded": false,
+  "telephoneAndWhatsAppDestination": "+97143402223",
+  "mercedesOnlyComponentConditionalsVerified": true,
+  "newServiceDirectoryLinkIsJustifiedIntegration": true,
+  "canonicalConstructionUnchanged": true,
+  "existingEntityGraphRelationshipsPreservedInSource": true,
+  "newRoutes": 0,
+  "routeLastmodChange": {
+    "date": "2026-10-20",
+    "paths": ["/brands/mercedes-benz-service-dubai", "/ar/brands/mercedes-benz-service-dubai", "/services", "/ar/services"],
+    "allOtherRouteDatesUnaffected": true,
+    "justification": "Substantive servicing copy and contextual directory links changed on these four locale paths only"
+  },
+  "englishNavTargetsVerifiedInSource": ["mercedes-maintenance-scope", "mercedes-services", "mercedes-problems", "mercedes-models", "mercedes-reviews", "mercedes-faqs", "mercedes-booking"],
+  "bookingTargetExistsInBothLocales": true,
+  "finalHeroIntroDeltaReviewed": {
+    "englishWords": 39,
+    "retainedIntentAndCaveats": true,
+    "arabicMaterialMeaningConsistent": true,
+    "reason": "Shorter English hero for the measured320px fixed-bar overlap; scope and approval detail retained below",
+    "geometryResultsAreSeparate": true,
+    "previousCampaignHash": "0b9963845349a7c72da53423430167968c271dc806ff1120b59f2744794bb719"
+  },
+  "newReviewRatingAiSchemaOrPriceClaims": false,
+  "finalAboveFoldReview": {
+    "passed": true,
+    "casesPassed": 6,
+    "evidence": "qa/above-fold/above-fold-results.json",
+    "initialFailurePreserved": "qa/above-fold/before-fix/above-fold-results.json",
+    "finalSourceHashesRecheckedUnchanged": true,
+    "visualScreenshotsReviewed": ["qa/above-fold/en-320x844-initial.png", "qa/above-fold/ar-390x844-initial.png"]
+  },
+  "preExistingToolClaimNotReverified": "Retained XENTRY description predates this change; manufacturer documentation is not workshop capability proof",
+  "nonblockingLimits": [
+    "Rendered output, HTTP link existence, mobile behavior and SPA scrolling are separate QA evidence",
+    "GA4 conversion designation and WhatsApp receipt/bookings require operational verification",
+    "Original job evidence, GBP correction, citation changes and outreach remain separately approved backlog"
+  ],
+  "sourcesReviewedSha256": {
+    "src/data/mercedesServiceCampaign.ts": "98012343a3f8450ba6a34bb094425beaa4049932d534d9115d0b373ded32c8dd",
+    "src/components/MercedesServiceBookingForm.tsx": "c45f5468d2361b5b2de37edee90fff8b1d0cd145e2379439c8aad973fd1291fd",
+    "src/components/MercedesMaintenanceScope.tsx": "1e6728a7de40ef56f7bf77af495784cff38c34cd9a653d6777757fee62616aff",
+    "src/pages/BrandPage.tsx": "f5d68037c056bb1f32d73cc5c009e066287da0ab225267b9606d834a23002c33",
+    "src/pages/Services.tsx": "77e7cc3aa83277602271ec3106506d4f360bd4fb6737445a5a1235a435ed09d0",
+    "src/lib/route-manifest.ts": "a05194b6899972cb91945af2ea0c0a3fd836055a5d8c52d87fc3f9a6a219d0d5"
+  }
+}

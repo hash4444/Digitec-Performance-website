@@ -1,0 +1,506 @@
+{
+  "media": [
+    {
+      "number": 1,
+      "original": {
+        "path": "C:\\Users\\ADMIN\\Downloads\\DIGITEC AC FIX.mp4",
+        "bytes": 76510419,
+        "sha256": "785c3bb775264a0f1505c3ce8b06df7f964b3ab0a06b3d0f1cbfa5b4d2ba6ad4",
+        "tracks": [
+          {
+            "handler": "vide",
+            "durationSeconds": 41.666666666666664,
+            "displayWidth": 1080.0,
+            "displayHeight": 1920.0,
+            "codecFourcc": "avc1",
+            "sampleCount": 1250,
+            "averageFps": 30.0
+          },
+          {
+            "handler": "soun",
+            "durationSeconds": 41.70666666666666,
+            "codecFourcc": "mp4a"
+          }
+        ]
+      },
+      "output": {
+        "path": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\public\\videos\\about\\video-01.mp4",
+        "bytes": 5060477,
+        "sha256": "9c500d204d1070581f16d32cf5e33a3b567ac1aedfc77b614ab3b407de971032",
+        "tracks": [
+          {
+            "handler": "vide",
+            "durationSeconds": 41.63333333333333,
+            "displayWidth": 720.0,
+            "displayHeight": 1280.0,
+            "codecFourcc": "avc1",
+            "sampleCount": 1249,
+            "averageFps": 30.0
+          },
+          {
+            "handler": "soun",
+            "durationSeconds": 41.70666666666666,
+            "codecFourcc": "mp4a"
+          }
+        ]
+      },
+      "assetUrl": "/videos/about/video-01.mp4",
+      "posterUrl": "/videos/about/video-01-poster.jpg",
+      "posterBytes": 49444,
+      "posterSha256": "6d87b2d7e03e35543abac63006a56dd15e5210c957769933d0ef9a194c9b6c51",
+      "posterTimestampSeconds": 1.2,
+      "fullDecodePassed": true,
+      "elapsedSeconds": 10.62,
+      "blackBackgroundRuns": [
+        {
+          "startSeconds": 38.533333,
+          "endSeconds": 41.6,
+          "durationSeconds": 3.066667
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "original": {
+        "path": "C:\\Users\\ADMIN\\Downloads\\hf_20261009_132735_a955890b-0168-4e96-9cd6-e352216120ac.mp4",
+        "bytes": 31755322,
+        "sha256": "c2e1867749d239541ceb52a865aed367bc282f81985b6c79f226b206b7588b61",
+        "tracks": [
+          {
+            "handler": "vide",
+            "durationSeconds": 16.041666666666668,
+            "displayWidth": 1080.0,
+            "displayHeight": 1920.0,
+            "codecFourcc": "hvc1",
+            "sampleCount": 385,
+            "averageFps": 24.0
+          },
+          {
+            "handler": "soun",
+            "durationSeconds": 16.05,
+            "codecFourcc": "mp4a"
+          }
+        ]
+      },
+      "output": {
+        "path": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\public\\videos\\about\\video-02.mp4",
+        "bytes": 1847599,
+        "sha256": "56bc057ca003efcc47cbc4544c434fd6d340c0c6219782feddea78fa4d8dd686",
+        "tracks": [
+          {
+            "handler": "vide",
+            "durationSeconds": 16.0,
+            "displayWidth": 720.0,
+            "displayHeight": 1280.0,
+            "codecFourcc": "avc1",
+            "sampleCount": 384,
+            "averageFps": 24.0
+          },
+          {
+            "handler": "soun",
+            "durationSeconds": 16.085333333333335,
+            "codecFourcc": "mp4a"
+          }
+        ]
+      },
+      "assetUrl": "/videos/about/video-02.mp4",
+      "posterUrl": "/videos/about/video-02-poster.jpg",
+      "posterBytes": 52479,
+      "posterSha256": "68cb00909f30c3d819c4b6694c835803ea282d56ac1a1043eb7110e056dcbf88",
+      "posterTimestampSeconds": 1.2,
+      "fullDecodePassed": true,
+      "elapsedSeconds": 3.02,
+      "blackBackgroundRuns": []
+    },
+    {
+      "number": 3,
+      "original": {
+        "path": "C:\\Users\\ADMIN\\Downloads\\digitek 24.mp4",
+        "bytes": 106522265,
+        "sha256": "6a0ed08cb39ad58c446a95b7da3b3eb33f29dff4b9698ece41e484dc79d21a99",
+        "tracks": [
+          {
+            "handler": "vide",
+            "durationSeconds": 30.966666666666665,
+            "displayWidth": 2160.0,
+            "displayHeight": 3840.0,
+            "codecFourcc": "avc1",
+            "sampleCount": 929,
+            "averageFps": 30.0
+          },
+          {
+            "handler": "soun",
+            "durationSeconds": 30.976,
+            "codecFourcc": "mp4a"
+          }
+        ]
+      },
+      "output": {
+        "path": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\public\\videos\\about\\video-03.mp4",
+        "bytes": 3455837,
+        "sha256": "d29915c29e689fb4aa6afcfd4b9570fe9358719232d02ad3003cc6d4f6509c14",
+        "tracks": [
+          {
+            "handler": "vide",
+            "durationSeconds": 30.933333333333334,
+            "displayWidth": 720.0,
+            "displayHeight": 1280.0,
+            "codecFourcc": "avc1",
+            "sampleCount": 928,
+            "averageFps": 30.0
+          },
+          {
+            "handler": "soun",
+            "durationSeconds": 30.997333333333334,
+            "codecFourcc": "mp4a"
+          }
+        ]
+      },
+      "assetUrl": "/videos/about/video-03.mp4",
+      "posterUrl": "/videos/about/video-03-poster.jpg",
+      "posterBytes": 38411,
+      "posterSha256": "a4757679639a299f040ac9cd2aa31abcf1f8974495c9e430d8552a5c979c0112",
+      "posterTimestampSeconds": 1.2,
+      "fullDecodePassed": true,
+      "elapsedSeconds": 8.11,
+      "blackBackgroundRuns": [
+        {
+          "startSeconds": 29.1,
+          "endSeconds": 30.9,
+          "durationSeconds": 1.8
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "original": {
+        "path": "C:\\Users\\ADMIN\\Downloads\\digitek brakes4.mp4",
+        "bytes": 125235536,
+        "sha256": "ade596cab3ddadfdc90ada077f75c857608df09e96502356386ab653639672d9",
+        "tracks": [
+          {
+            "handler": "vide",
+            "durationSeconds": 21.76,
+            "displayWidth": 2160.0,
+            "displayHeight": 3840.0,
+            "codecFourcc": "avc1",
+            "sampleCount": 1088,
+            "averageFps": 49.99999999999999
+          },
+          {
+            "handler": "soun",
+            "durationSeconds": 21.76,
+            "codecFourcc": "mp4a"
+          }
+        ]
+      },
+      "output": {
+        "path": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\public\\videos\\about\\video-04.mp4",
+        "bytes": 2474121,
+        "sha256": "9100811359c29b2054467435264b06d0cc111475e9d131df910c23daa09f98e4",
+        "tracks": [
+          {
+            "handler": "vide",
+            "durationSeconds": 21.733333333333334,
+            "displayWidth": 720.0,
+            "displayHeight": 1280.0,
+            "codecFourcc": "avc1",
+            "sampleCount": 652,
+            "averageFps": 30.0
+          },
+          {
+            "handler": "soun",
+            "durationSeconds": 21.781333333333333,
+            "codecFourcc": "mp4a"
+          }
+        ]
+      },
+      "assetUrl": "/videos/about/video-04.mp4",
+      "posterUrl": "/videos/about/video-04-poster.jpg",
+      "posterBytes": 57242,
+      "posterSha256": "fe3648bdaf1e6b4dd4db3cd558c7ea19ca581eea18c72444d8410aa6a847ba44",
+      "posterTimestampSeconds": 1.2,
+      "fullDecodePassed": true,
+      "elapsedSeconds": 5.23,
+      "blackBackgroundRuns": [
+        {
+          "startSeconds": 20.2,
+          "endSeconds": 21.7,
+          "durationSeconds": 1.5
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "original": {
+        "path": "C:\\Users\\ADMIN\\Downloads\\IMG_9059.MP4",
+        "bytes": 57091106,
+        "sha256": "6d73d9112ca0facd04618ab718ed1b6c35c0d2e9f1375bdec3d6076af9c493ac",
+        "tracks": [
+          {
+            "handler": "vide",
+            "durationSeconds": 14.633333333333333,
+            "displayWidth": 2160.0,
+            "displayHeight": 3840.0,
+            "codecFourcc": "avc1",
+            "sampleCount": 439,
+            "averageFps": 30.0
+          },
+          {
+            "handler": "soun",
+            "durationSeconds": 14.634666666666666,
+            "codecFourcc": "mp4a"
+          }
+        ]
+      },
+      "output": {
+        "path": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\public\\videos\\about\\video-05.mp4",
+        "bytes": 1456994,
+        "sha256": "c4697fb039e101ebfdec15ae7e11c46ea234a91027d95a68ab7e42c161c1455a",
+        "tracks": [
+          {
+            "handler": "vide",
+            "durationSeconds": 14.6,
+            "displayWidth": 720.0,
+            "displayHeight": 1280.0,
+            "codecFourcc": "avc1",
+            "sampleCount": 438,
+            "averageFps": 30.0
+          },
+          {
+            "handler": "soun",
+            "durationSeconds": 14.656,
+            "codecFourcc": "mp4a"
+          }
+        ]
+      },
+      "assetUrl": "/videos/about/video-05.mp4",
+      "posterUrl": "/videos/about/video-05-poster.jpg",
+      "posterBytes": 36597,
+      "posterSha256": "440f2f864d3f9710ec06e6576581f6f7cea6c3e6a48015116cf843bea2a5bc7b",
+      "posterTimestampSeconds": 1.2,
+      "fullDecodePassed": true,
+      "elapsedSeconds": 2.98,
+      "blackBackgroundRuns": [
+        {
+          "startSeconds": 12.633333,
+          "endSeconds": 14.566667,
+          "durationSeconds": 1.933333
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "original": {
+        "path": "C:\\Users\\ADMIN\\Downloads\\DIGITEC4.mp4",
+        "bytes": 56626000,
+        "sha256": "4db2755775ce47d1a4034ac1743f18a5b9f328ce7b0c6c49e92458614e15c2f2",
+        "tracks": [
+          {
+            "handler": "vide",
+            "durationSeconds": 29.7,
+            "displayWidth": 1080.0,
+            "displayHeight": 1920.0,
+            "codecFourcc": "avc1",
+            "sampleCount": 891,
+            "averageFps": 30.0
+          },
+          {
+            "handler": "soun",
+            "durationSeconds": 29.717333333333332,
+            "codecFourcc": "mp4a"
+          }
+        ]
+      },
+      "output": {
+        "path": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\public\\videos\\about\\video-06.mp4",
+        "bytes": 4382631,
+        "sha256": "4c71ad3a3024ccace8bebe1b24ebf5da3f4046b01d3e999fa2bf7dfdfb1668c1",
+        "tracks": [
+          {
+            "handler": "vide",
+            "durationSeconds": 29.666666666666668,
+            "displayWidth": 720.0,
+            "displayHeight": 1280.0,
+            "codecFourcc": "avc1",
+            "sampleCount": 890,
+            "averageFps": 30.0
+          },
+          {
+            "handler": "soun",
+            "durationSeconds": 29.738666666666667,
+            "codecFourcc": "mp4a"
+          }
+        ]
+      },
+      "assetUrl": "/videos/about/video-06.mp4",
+      "posterUrl": "/videos/about/video-06-poster.jpg",
+      "posterBytes": 36842,
+      "posterSha256": "fa4d60a0294be06525a86ebdff507fd999890110aa1134ae987e2f30cfaf6c7b",
+      "posterTimestampSeconds": 1.2,
+      "fullDecodePassed": true,
+      "elapsedSeconds": 5.84,
+      "blackBackgroundRuns": [
+        {
+          "startSeconds": 27.566667,
+          "endSeconds": 29.633333,
+          "durationSeconds": 2.066667
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "original": {
+        "path": "C:\\Users\\ADMIN\\Downloads\\IMG_9427.mp4",
+        "bytes": 38373042,
+        "sha256": "fbbd4bb76503ab46df50bccd909b7ea5155dde267c708c562e8f43f21874313e",
+        "tracks": [
+          {
+            "handler": "vide",
+            "durationSeconds": 40.06666666666667,
+            "displayWidth": 1080.0,
+            "displayHeight": 1920.0,
+            "codecFourcc": "avc1",
+            "sampleCount": 1202,
+            "averageFps": 29.999999999999996
+          },
+          {
+            "handler": "soun",
+            "durationSeconds": 40.08533333333333,
+            "codecFourcc": "mp4a"
+          }
+        ]
+      },
+      "output": {
+        "path": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\public\\videos\\about\\video-07.mp4",
+        "bytes": 8788113,
+        "sha256": "09d89e950d2e507c14867b32853ac395a2c17802a769c1e6b993eac046e458a5",
+        "tracks": [
+          {
+            "handler": "vide",
+            "durationSeconds": 40.03333333333333,
+            "displayWidth": 720.0,
+            "displayHeight": 1280.0,
+            "codecFourcc": "avc1",
+            "sampleCount": 1201,
+            "averageFps": 30.0
+          },
+          {
+            "handler": "soun",
+            "durationSeconds": 40.10666666666667,
+            "codecFourcc": "mp4a"
+          }
+        ]
+      },
+      "assetUrl": "/videos/about/video-07.mp4",
+      "posterUrl": "/videos/about/video-07-poster.jpg",
+      "posterBytes": 106155,
+      "posterSha256": "b04cfa5f4cb7680508f4a172e51bfd14668a9d2863d10f1411485bfb6caf8702",
+      "posterTimestampSeconds": 1.2,
+      "fullDecodePassed": true,
+      "elapsedSeconds": 8.86,
+      "blackBackgroundRuns": [
+        {
+          "startSeconds": 36.2,
+          "endSeconds": 40.0,
+          "durationSeconds": 3.8
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "original": {
+        "path": "C:\\Users\\ADMIN\\Downloads\\IMG_9072 (2).mp4",
+        "bytes": 65160784,
+        "sha256": "3b8399d0799abeaecfc729c6238c23d8f95600cd3e3f54e945e35ebe25529919",
+        "tracks": [
+          {
+            "handler": "vide",
+            "durationSeconds": 15.6,
+            "displayWidth": 2160.0,
+            "displayHeight": 3840.0,
+            "codecFourcc": "avc1",
+            "sampleCount": 468,
+            "averageFps": 30.0
+          },
+          {
+            "handler": "soun",
+            "durationSeconds": 15.616,
+            "codecFourcc": "mp4a"
+          }
+        ]
+      },
+      "output": {
+        "path": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\public\\videos\\about\\video-08.mp4",
+        "bytes": 1940970,
+        "sha256": "eaa6a2b584a277ae5714ce35fe56a200fd6cf031f0e0267e05d3e7546ee77de8",
+        "tracks": [
+          {
+            "handler": "vide",
+            "durationSeconds": 15.566666666666666,
+            "displayWidth": 720.0,
+            "displayHeight": 1280.0,
+            "codecFourcc": "avc1",
+            "sampleCount": 467,
+            "averageFps": 30.0
+          },
+          {
+            "handler": "soun",
+            "durationSeconds": 15.637333333333334,
+            "codecFourcc": "mp4a"
+          }
+        ]
+      },
+      "assetUrl": "/videos/about/video-08.mp4",
+      "posterUrl": "/videos/about/video-08-poster.jpg",
+      "posterBytes": 60334,
+      "posterSha256": "47294fbe8d5c3f45bffd6ce21e9a497b8c3657112a0694b323d6c76d08fbb97c",
+      "posterTimestampSeconds": 1.2,
+      "fullDecodePassed": true,
+      "elapsedSeconds": 3.84,
+      "blackBackgroundRuns": [
+        {
+          "startSeconds": 14.266667,
+          "endSeconds": 15.533333,
+          "durationSeconds": 1.266667
+        }
+      ]
+    }
+  ],
+  "totalOriginalBytes": 557274474,
+  "totalVideoBytes": 29406742,
+  "totalPosterBytes": 437504,
+  "videoBytesReductionPercent": 94.72,
+  "encoding": {
+    "video": "H.264 high / yuv420p",
+    "audio": "AAC 96 kbps stereo 48 kHz",
+    "dimensions": "720x1280",
+    "fps": "24 or 30; no source fps upscale",
+    "completeDurationRetained": "Complete source clip, no editorial trim; at most one output-frame rounding, audio within 50 ms AAC rounding",
+    "fastStart": true,
+    "metadataRemoved": true,
+    "crf": 28
+  },
+  "tool": {
+    "version": "imageio-ffmpeg 0.6.0 / FFmpeg 7.1 essentials",
+    "wheelSha256": "02fa47c83703c37df6bfe4896aab339013f62bf02c5ebf2dce6da56af04ffc0a",
+    "source": "https://pypi.org/project/imageio-ffmpeg/0.6.0/"
+  },
+  "visualReview": {
+    "allPostersInspected": true,
+    "posterCount": 8,
+    "posterTimestampSeconds": 1.2,
+    "imageObservations": [
+      "AC workshop scene",
+      "Technicians at vehicle rear",
+      "Technician under open bonnet",
+      "Wheel and brake workshop scene",
+      "Land Rover front workshop scene",
+      "Ferrari bonnet workshop view",
+      "Technician working in engine bay",
+      "Mercedes front with technician under open bonnet"
+    ],
+    "blackBackgroundTailExplanation": "Original DIGI-TEC logo outro; video 01 at 39 seconds visually checked. These are retained, not considered corrupt or empty frames."
+  },
+  "originalFiveEncodedAssetsUnchanged": true
+}

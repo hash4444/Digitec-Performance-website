@@ -1,0 +1,409 @@
+{
+  "data": [
+    {
+      "path": ".env",
+      "binary": false
+    },
+    {
+      "path": ".gitignore",
+      "binary": false
+    },
+    {
+      "path": ".lovable/mcp/manifest.json",
+      "binary": false
+    },
+    {
+      "path": ".lovable/plan.md",
+      "binary": false
+    },
+    {
+      "path": ".openai/hosting.json",
+      "binary": false
+    },
+    {
+      "path": "README.md",
+      "binary": false
+    },
+    {
+      "path": "audit-evidence/crawl/all-results.json",
+      "binary": false
+    },
+    {
+      "path": "audit-evidence/crawl/browser-verification.json",
+      "binary": false
+    },
+    {
+      "path": "audit-evidence/crawl/crawl-results.json",
+      "binary": false
+    },
+    {
+      "path": "audit-evidence/crawl/crawl-results.jsonl",
+      "binary": false
+    },
+    {
+      "path": "audit-evidence/crawl/crawl-summary.json",
+      "binary": false
+    },
+    {
+      "path": "audit-evidence/crawl/encoding-issues.json",
+      "binary": false
+    },
+    {
+      "path": "audit-evidence/crawl/extra-results.json",
+      "binary": false
+    },
+    {
+      "path": "audit-evidence/crawl/extra-results.jsonl",
+      "binary": false
+    },
+    {
+      "path": "audit-evidence/crawl/h1-duplicates.json",
+      "binary": false
+    },
+    {
+      "path": "audit-evidence/crawl/home.html",
+      "binary": false
+    },
+    {
+      "path": "audit-evidence/crawl/hreflang-issues.json",
+      "binary": false
+    },
+    {
+      "path": "audit-evidence/crawl/hreflang-target-issues.json",
+      "binary": false
+    },
+    {
+      "path": "audit-evidence/crawl/html/000dc8dd09a89280.html.gz",
+      "binary": false
+    },
+    {
+      "path": "audit-evidence/crawl/html/004978e4b081b2c4.html.gz",
+      "binary": false
+    },
+    {
+      "path": "audit-evidence/crawl/html/0049b3647bcf640b.html.gz",
+      "binary": false
+    },
+    {
+      "path": "audit-evidence/crawl/html/00e875f9c94b72f6.html.gz",
+      "binary": false
+    },
+    {
+      "path": "audit-evidence/crawl/html/012bde842e7d0e48.html.gz",
+      "binary": false
+    },
+    {
+      "path": "audit-evidence/crawl/html/01bc6dbf13af7584.html.gz",
+      "binary": false
+    },
+    {
+      "path": "audit-evidence/crawl/html/01dd7420fe70db34.html.gz",
+      "binary": false
+    },
+    {
+      "path": "audit-evidence/crawl/html/022fa669e94007a0.html.gz",
+      "binary": false
+    },
+    {
+      "path": "audit-evidence/crawl/html/023a0cb3f70a239f.html.gz",
+      "binary": false
+    },
+    {
+      "path": "audit-evidence/crawl/html/02463b265770d9b7.html.gz",
+      "binary": false
+    },
+    {
+      "path": "audit-evidence/crawl/html/025fc07cdbb13b75.html.gz",
+      "binary": false
+    },
+    {
+      "path": "audit-evidence/crawl/html/02a5a050e083bae5.html.gz",
+      "binary": false
+    },
+    {
+      "path": "audit-evidence/crawl/html/02aa7bff91bcaf38.html.gz",
+      "binary": false
+    },
+    {
+      "path": "audit-evidence/crawl/html/02b3a114bc6efd1a.html.gz",
+      "binary": false
+    },
+    {
+      "path": "audit-evidence/crawl/html/0310cf5ac1aa0abf.html.gz",
+      "binary": false
+    },
+    {
+      "path": "audit-evidence/crawl/html/032b1f5cc070d4c5.html.gz",
+      "binary": false
+    },
+    {
+      "path": "audit-evidence/crawl/html/03459d3b9016dbf4.html.gz",
+      "binary": false
+    },
+    {
+      "path": "audit-evidence/crawl/html/03674d9f3726e04a.html.gz",
+      "binary": false
+    },
+    {
+      "path": "audit-evidence/crawl/html/0387a445e5893d4b.html.gz",
+      "binary": false
+    },
+    {
+      "path": "audit-evidence/crawl/html/03c908117b20de86.html.gz",
+      "binary": false
+    },
+    {
+      "path": "audit-evidence/crawl/html/0423e842826d7435.html.gz",
+      "binary": false
+    },
+    {
+      "path": "audit-evidence/crawl/html/0445e24659b5d952.html.gz",
+      "binary": false
+    },
+    {
+      "path": "audit-evidence/crawl/html/0454fdcd83b8825e.html.gz",
+      "binary": false
+    },
+    {
+      "path": "audit-evidence/crawl/html/04601f9e91a46bcf.html.gz",
+      "binary": false
+    },
+    {
+      "path": "audit-evidence/crawl/html/046e27eab20e8e1a.html.gz",
+      "binary": false
+    },
+    {
+      "path": "audit-evidence/crawl/html/0497f458a3d01916.html.gz",
+      "binary": false
+    },
+    {
+      "path": "audit-evidence/crawl/html/04f43a0e317fe19c.html.gz",
+      "binary": false
+    },
+    {
+      "path": "audit-evidence/crawl/html/04ff87037f25c4ef.html.gz",
+      "binary": false
+    },
+    {
+      "path": "audit-evidence/crawl/html/050339b444afe88f.html.gz",
+      "binary": false
+    },
+    {
+      "path": "audit-evidence/crawl/html/0589ba5fb90a3b36.html.gz",
+      "binary": false
+    },
+    {
+      "path": "audit-evidence/crawl/html/05af587a426a789b.html.gz",
+      "binary": false
+    },
+    {
+      "path": "audit-evidence/crawl/html/05cf1661d03c6040.html.gz",
+      "binary": false
+    },
+    {
+      "path": "audit-evidence/crawl/html/061da96ead7acf28.html.gz",
+      "binary": false
+    },
+    {
+      "path": "audit-evidence/crawl/html/0651f3fc3b550c17.html.gz",
+      "binary": false
+    },
+    {
+      "path": "audit-evidence/crawl/html/06678aa4e9a2a633.html.gz",
+      "binary": false
+    },
+    {
+      "path": "audit-evidence/crawl/html/068c74632381aae1.html.gz",
+      "binary": false
+    },
+    {
+      "path": "audit-evidence/crawl/html/06e4a60d577a52f0.html.gz",
+      "binary": false
+    },
+    {
+      "path": "audit-evidence/crawl/html/06ff22aa750eef0c.html.gz",
+      "binary": false
+    },
+    {
+      "path": "audit-evidence/crawl/html/07286e178d914992.html.gz",
+      "binary": false
+    },
+    {
+      "path": "audit-evidence/crawl/html/0735a676b03c6f8b.html.gz",
+      "binary": false
+    },
+    {
+      "path": "audit-evidence/crawl/html/073f3d22546ea84e.html.gz",
+      "binary": false
+    },
+    {
+      "path": "audit-evidence/crawl/html/07783e9614cf599a.html.gz",
+      "binary": false
+    },
+    {
+      "path": "audit-evidence/crawl/html/077a621b0b63dc8b.html.gz",
+      "binary": false
+    },
+    {
+      "path": "audit-evidence/crawl/html/078baa86e1ba6fef.html.gz",
+      "binary": false
+    },
+    {
+      "path": "audit-evidence/crawl/html/0793642a109b672e.html.gz",
+      "binary": false
+    },
+    {
+      "path": "audit-evidence/crawl/html/07c55cd9669271f8.html.gz",
+      "binary": false
+    },
+    {
+      "path": "audit-evidence/crawl/html/07c7ab19554b189d.html.gz",
+      "binary": false
+    },
+    {
+      "path": "audit-evidence/crawl/html/07d3a257fdc3b6fc.html.gz",
+      "binary": false
+    },
+    {
+      "path": "audit-evidence/crawl/html/083c24ec384fdd5d.html.gz",
+      "binary": false
+    },
+    {
+      "path": "audit-evidence/crawl/html/084dbcfbf793eec2.html.gz",
+      "binary": false
+    },
+    {
+      "path": "audit-evidence/crawl/html/084e98a6390fe541.html.gz",
+      "binary": false
+    },
+    {
+      "path": "audit-evidence/crawl/html/085eedf367499971.html.gz",
+      "binary": false
+    },
+    {
+      "path": "audit-evidence/crawl/html/08aa4da307e4ac8c.html.gz",
+      "binary": false
+    },
+    {
+      "path": "audit-evidence/crawl/html/08d30dca2ea21881.html.gz",
+      "binary": false
+    },
+    {
+      "path": "audit-evidence/crawl/html/094975f12e78e652.html.gz",
+      "binary": false
+    },
+    {
+      "path": "audit-evidence/crawl/html/09639e7a97217e80.html.gz",
+      "binary": false
+    },
+    {
+      "path": "audit-evidence/crawl/html/0975a42b3b72e891.html.gz",
+      "binary": false
+    },
+    {
+      "path": "audit-evidence/crawl/html/097e09d7e1a28f7a.html.gz",
+      "binary": false
+    },
+    {
+      "path": "audit-evidence/crawl/html/09842a6be1db50bb.html.gz",
+      "binary": false
+    },
+    {
+      "path": "audit-evidence/crawl/html/0995bae3f50f3343.html.gz",
+      "binary": false
+    },
+    {
+      "path": "audit-evidence/crawl/html/09b0851f2e6985bb.html.gz",
+      "binary": false
+    },
+    {
+      "path": "audit-evidence/crawl/html/0aea83208a6285d7.html.gz",
+      "binary": false
+    },
+    {
+      "path": "audit-evidence/crawl/html/0b372bc76ffbf421.html.gz",
+      "binary": false
+    },
+    {
+      "path": "audit-evidence/crawl/html/0b637e98355f0324.html.gz",
+      "binary": false
+    },
+    {
+      "path": "audit-evidence/crawl/html/0b7d3e8193bf301f.html.gz",
+      "binary": false
+    },
+    {
+      "path": "audit-evidence/crawl/html/0c041ccaeaa79c3b.html.gz",
+      "binary": false
+    },
+    {
+      "path": "audit-evidence/crawl/html/0c0fa4d1ca7438be.html.gz",
+      "binary": false
+    },
+    {
+      "path": "audit-evidence/crawl/html/0c1fa1e6b2352069.html.gz",
+      "binary": false
+    },
+    {
+      "path": "audit-evidence/crawl/html/0c84cfadace2618c.html.gz",
+      "binary": false
+    },
+    {
+      "path": "audit-evidence/crawl/html/0d40e3612d40fcd5.html.gz",
+      "binary": false
+    },
+    {
+      "path": "audit-evidence/crawl/html/0d57477cb5c2251c.html.gz",
+      "binary": false
+    },
+    {
+      "path": "audit-evidence/crawl/html/0d63f6734531d6b3.html.gz",
+      "binary": false
+    },
+    {
+      "path": "audit-evidence/crawl/html/0d9f1c5f7e1f6baa.html.gz",
+      "binary": false
+    },
+    {
+      "path": "audit-evidence/crawl/html/0dac3d2a0662a098.html.gz",
+      "binary": false
+    },
+    {
+      "path": "audit-evidence/crawl/html/0db52328f9367338.html.gz",
+      "binary": false
+    },
+    {
+      "path": "audit-evidence/crawl/html/0dfeedbeec3678a5.html.gz",
+      "binary": false
+    },
+    {
+      "path": "audit-evidence/crawl/html/0e07310dd000da8a.html.gz",
+      "binary": false
+    },
+    {
+      "path": "audit-evidence/crawl/html/0e86873e341b8825.html.gz",
+      "binary": false
+    },
+    {
+      "path": "audit-evidence/crawl/html/0e9edfbd85963885.html.gz",
+      "binary": false
+    },
+    {
+      "path": "audit-evidence/crawl/html/0eb999ebea5a4a11.html.gz",
+      "binary": false
+    },
+    {
+      "path": "audit-evidence/crawl/html/0f9f2613ed9dacd1.html.gz",
+      "binary": false
+    },
+    {
+      "path": "audit-evidence/crawl/html/0fc3544e2505fcfd.html.gz",
+      "binary": false
+    }
+  ],
+  "pagination": {
+    "next_cursor": "eyJ2IjoxLCJpZCI6ImF1ZGl0LWV2aWRlbmNlL2NyYXdsL2h0bWwvMGZjMzU0NGUyNTA1ZmNmZC5odG1sLmd6In0",
+    "has_more": true
+  },
+  "ref": "13d1c19e99e9696ab63e5721ada18ffcfce11519"
+}

@@ -1,0 +1,25 @@
+// Prepare an optional existing-page link diff only. No application source edit.
+import {readFile,writeFile,mkdir} from 'node:fs/promises';
+import {createHash} from 'node:crypto';
+import {spawnSync} from 'node:child_process';
+import {createRequire} from 'node:module';
+import {fileURLToPath} from 'node:url';
+import {resolve,dirname,relative} from 'node:path';
+const root=fileURLToPath(new URL('./',import.meta.url));
+const path='src/pages/ServicePage.tsx',original=await readFile(resolve(path),'utf8');
+const before='Deeper damage, missing paint and dents need a different repair approach.</p>';
+const after='Deeper damage, missing paint and dents need a different repair approach. For Mercedes-Benz vehicles, review the <Link to="/services/mercedes-body-repair-dubai" className="text-burnt-orange underline">Mercedes bodywork assessment and quotation scope</Link>.</p>';
+if(original.split(before).length!==2)throw new Error('Expected existing generic body paragraph changed');
+const proposal=original.replace(before,after),out=resolve(root,'optional-context-link',path);
+await mkdir(dirname(out),{recursive:true});await writeFile(out,proposal);
+const diff=spawnSync('git',['diff','--no-index','--',path,relative(process.cwd(),out).replaceAll('\\','/')],{encoding:'utf8',windowsHide:true});
+if(diff.status!==1)throw new Error('Expected single-file diff '+diff.stderr);
+const patch=diff.stdout.replaceAll('b/reports/mercedes-phase-3/proposals/services/optional-context-link/','b/');
+const patchPath=resolve(root,'general-body-to-mercedes-context-link.patch');await writeFile(patchPath,patch);
+const gitCheck=spawnSync('git',['apply','--check','--',patchPath],{encoding:'utf8',windowsHide:true});
+const ts=createRequire(import.meta.url)('typescript'),parsed=ts.createSourceFile(out,proposal,ts.ScriptTarget.Latest,true,ts.ScriptKind.TSX);
+const hash=s=>createHash('sha256').update(s).digest('hex');
+const validation={at:new Date().toISOString(),reviewOnly:true,optionalIndependentChange:true,sourcePath:path,sourceSha256:hash(original),sourceUnchanged:hash(await readFile(resolve(path),'utf8'))===hash(original),proposalSha256:hash(proposal),patchSha256:hash(patch),typescriptParseDiagnostics:parsed.parseDiagnostics.length,gitApplyCheckExitCode:gitCheck.status,gitApplyCheckStdout:gitCheck.stdout,gitApplyCheckStderr:gitCheck.stderr,impact:'Adds one relevant contextual inbound link to the existing Mercedes body owner from the existing English general body page. No indexing or ranking guarantee.',preserves:['URL','title','description','H1','canonical','Arabic page','other service pages','all business capability claims'],notRun:['implementation-stage build','browser/mobile render','index submission','publication']};
+await writeFile(resolve(root,'context-link-validation.json'),JSON.stringify(validation,null,2));
+console.log(JSON.stringify(validation,null,2));
+if(!validation.sourceUnchanged||parsed.parseDiagnostics.length||gitCheck.status!==0)process.exitCode=1;

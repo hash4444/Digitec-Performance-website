@@ -1,0 +1,36 @@
+// Prepare review-only copies/patch. Never edits application source or builds it.
+import {readFile,writeFile,mkdir} from 'node:fs/promises';
+import {createHash} from 'node:crypto';
+import {spawnSync} from 'node:child_process';
+import {createRequire} from 'node:module';
+import {fileURLToPath} from 'node:url';
+import {resolve,dirname,relative} from 'node:path';
+const root=fileURLToPath(new URL('./',import.meta.url));
+const ts=createRequire(import.meta.url)('typescript');
+const hash=s=>createHash('sha256').update(s).digest('hex');
+const sourcePaths=['src/data/mercedesServiceContent.ts','src/pages/BrandServicePage.tsx'];
+const originals=new Map();
+for(const path of sourcePaths) originals.set(path,await readFile(resolve(path),'utf8'));
+let content=originals.get(sourcePaths[0]);
+const eol=content.includes('\r\n')?'\r\n':'\n';
+const start=content.indexOf("  'body-repair': {"),end=content.indexOf("  'steering-repair': {",start);
+if(start<0||end<0)throw new Error('Body override boundary changed');
+const body=content.slice(start,end);
+if(body.includes('whatsAppMessage:'))throw new Error('Body message already exists; review instead of duplicating');
+const marker=`    ],${eol}  },${eol}`;
+if(!body.endsWith(marker))throw new Error('Expected body final FAQ block changed');
+const message="Hi Digi-Tec, I would like a Mercedes bodywork assessment.\\n\\nModel/year: \\nAffected panels: \\nPrevious paint or repair (if known): \\nSensor warning (if any): \\nI can attach clear photos of the damage.";
+content=content.slice(0,start)+body.slice(0,-marker.length)+`    ],${eol}    whatsAppMessage: '${message}',${eol}  },${eol}`+content.slice(end);
+let component=originals.get(sourcePaths[1]);
+const old="                : 'Share the model, year, mileage and the concern you want checked. The workshop can confirm the appropriate assessment, scope and appointment availability.'}";
+const replacement="                : !isArabic && combo.brandSlug === 'mercedes-benz-service-dubai' && combo.serviceSlug === 'body-repair'\n                  ? 'Send your model and year, which panels are damaged, any known previous repair and any sensor warning. Attach clear photos for the initial discussion; the final scope and price follow inspection.'\n                  : 'Share the model, year, mileage and the concern you want checked. The workshop can confirm the appropriate assessment, scope and appointment availability.'}";
+if(component.split(old).length!==2)throw new Error('Expected final CTA fragment changed');
+component=component.replace(old,replacement.replaceAll('\n',component.includes('\r\n')?'\r\n':'\n'));
+const proposed=new Map([[sourcePaths[0],content],[sourcePaths[1],component]]),manifest=[];
+let patch='';
+for(const path of sourcePaths){const text=proposed.get(path),out=resolve(root,'proposed',path);await mkdir(dirname(out),{recursive:true});await writeFile(out,text);const parsed=ts.createSourceFile(out,text,ts.ScriptTarget.Latest,true,path.endsWith('.tsx')?ts.ScriptKind.TSX:ts.ScriptKind.TS);if(parsed.parseDiagnostics.length)throw new Error('Proposed syntax invalid '+path);const diff=spawnSync('git',['diff','--no-index','--',path,relative(process.cwd(),out).replaceAll('\\','/')],{encoding:'utf8',windowsHide:true});if(![0,1].includes(diff.status))throw new Error(diff.stderr);patch+=diff.stdout.replaceAll('b/reports/mercedes-phase-3/proposals/services/proposed/','b/');manifest.push({path,sourceSha256:hash(originals.get(path)),proposedSha256:hash(text),proposedPath:relative(process.cwd(),out),typescriptParseDiagnostics:parsed.parseDiagnostics.length,sourceUnchanged:hash(await readFile(resolve(path),'utf8'))===hash(originals.get(path))});}
+const patchPath=resolve(root,'mercedes-body-enquiry-minimal.patch');await writeFile(patchPath,patch);
+const applicable=spawnSync('git',['apply','--check','--',patchPath],{encoding:'utf8',windowsHide:true});
+await writeFile(resolve(root,'proposal-validation.json'),JSON.stringify({at:new Date().toISOString(),reviewOnly:true,noSourceApplicationBuildPublicationOrFormSubmission:true,files:manifest,patchSha256:hash(patch),gitApplyCheckExitCode:applicable.status,gitApplyCheckStdout:applicable.stdout,gitApplyCheckStderr:applicable.stderr,protectedFieldsPreserved:['URL','title','meta description','H1','canonical','robots','schema','Arabic content','existing redirects','all service technical process/claims'],limits:['Syntax parsing and applicability only; no implementation-stage typecheck/build/SSR/mobile render is claimed.','No message sent; only proposed WhatsApp draft text changes.']},null,2));
+console.log(JSON.stringify({files:manifest,gitApplyCheckExitCode:applicable.status,stderr:applicable.stderr},null,2));
+if(applicable.status!==0||manifest.some(m=>!m.sourceUnchanged))process.exitCode=1;

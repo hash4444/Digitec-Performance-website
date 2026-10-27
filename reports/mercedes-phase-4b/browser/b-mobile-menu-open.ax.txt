@@ -1,0 +1,15 @@
+Browser tab: 12, Title: "Phase 4 local responsive QA 320px", URL: "http://127.0.0.1:5197/__phase4_frame?width=320&height=844&path=/services/mercedes-body-repair-dubai".
+The following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.
+Removed element IDs: 12
+~					11 button (expanded) Menu, Secondary Actions: Collapse
++						212 image
++					213 container Description: Main navigation, ID: floating-navigation
++						214 link Description: About Us, Value: 127.0.0.1:5197/about
++						215 link Description: Services, Value: 127.0.0.1:5197/services
++						216 link Description: Brands, Value: 127.0.0.1:5197/brands
++						217 link Description: GAD, Value: 127.0.0.1:5197/tuning
++						218 link Description: VRX, Value: 127.0.0.1:5197/vrx
++						219 link Description: Blog, Value: 127.0.0.1:5197/blog
++						220 link Description: FAQ, Value: 127.0.0.1:5197/faq
++						221 link Description: Contact Us, Value: wa.me/97143402223?text=Hi%20DIGI-TEC%2C%20I%20would%20like%20to%20get%20in%20touch%20about%20my%20vehicle.
+The focused UI element is 158 link Description: Request a Mercedes Body Repair Assessment, URL: wa.me/97143402223?text=Hi%20Digi-Tec%2C%20I%20would%20like%20a%20Mercedes%20bodywork%20assessment.%0A%0AModel%2Fyear%3A%20%0AAffected%20panels%3A%20%0APrevious%20paint%20or%20repair%20(if%20known)%3A%20%0ASensor%20warning%20(if%20any)%3A%20%0AI%20can%20attach%20clear%20photos%20of%20the%20damage.

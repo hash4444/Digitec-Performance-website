@@ -1,0 +1,18 @@
+{
+  "description": "Mercedes body repair legacy alias to existing service",
+  "expression": "(http.host in {\"digitecme.com\" \"www.digitecme.com\"}) and (http.request.method in {\"GET\" \"HEAD\"}) and (http.request.uri.path in {\"/brands/mercedes-benz-service-dubai/body-repair\" \"/brands/mercedes-benz-service-dubai/body-repair/\"})",
+  "action": "redirect",
+  "action_parameters": {
+    "from_value": {
+      "target_url": {
+        "value": "https://digitecme.com/services/mercedes-body-repair-dubai"
+      },
+      "status_code": 308,
+      "preserve_query_string": true
+    }
+  },
+  "enabled": false,
+  "position": {
+    "before": "9781b1ef743f4ffbaadbe5cb3250eeca"
+  }
+}

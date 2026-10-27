@@ -1,0 +1,27 @@
+{
+  "comparedAt": "2026-10-21T06:42:48.206Z",
+  "mode": "post",
+  "passed": true,
+  "comparedToSavedBaseline": true,
+  "existingDefinitionsUnchanged": true,
+  "existingIdsRetained": [
+    "dbe42693423442afbc3bab9b993242a7",
+    "9781b1ef743f4ffbaadbe5cb3250eeca"
+  ],
+  "existingRelativeOrderPreserved": true,
+  "actualMercedes": {
+    "name": "Legacy Mercedes URLs to Mercedes brand service page",
+    "expression": "http.request.uri.path in {\"/services/mercedes-repair-dubai\" \"/services/mercedes-repair-dubai/\" \"/services/mercedes-service-dubai\" \"/best-mercedes-workshop-dubai\"}",
+    "target": "https://digitecme.com/brands/mercedes-benz-service-dubai",
+    "code301": true,
+    "query": true
+  },
+  "actualWww": {
+    "name": "www to primary domain",
+    "expression": "(http.host eq \"www.digitecme.com\")",
+    "target": "concat(\"https://digitecme.com\", http.request.uri.path)",
+    "code301": true,
+    "query": true
+  },
+  "limitation": "Visible authenticated DOM snapshots supplied by root; not an API ruleset/version export. Candidate post snapshot must also be independently checked."
+}

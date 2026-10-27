@@ -1,0 +1,72 @@
+{
+  "checkedAt": "2026-10-19T07:36:01.148Z",
+  "passed": true,
+  "sourceSha256": {
+    "form": "13868dd66bc8f66456297475c4580ebece1af9cdc459807ab7c5f333ce6984b6",
+    "tracking": "48d223e1a401207bfdb4cf6462a23c8dc8c2057789631f36cb7a9215ca44b7b3"
+  },
+  "method": "Actual form/tracking TypeScript transpiled in isolated Node VM with React state mocks",
+  "limitations": "Does not verify browser rendering, popup success, WhatsApp delivery, GA4 ingestion, CRM receipt or confirmed enquiries.",
+  "results": [
+    {
+      "brand": "Rolls-Royce",
+      "language": "en",
+      "validDraftPrepared": true,
+      "brandContextPreserved": true,
+      "privateTextExcludedFromEvents": true,
+      "noConfirmedEnquiryEvent": true
+    },
+    {
+      "brand": "Lamborghini",
+      "language": "en",
+      "validDraftPrepared": true,
+      "brandContextPreserved": true,
+      "privateTextExcludedFromEvents": true,
+      "noConfirmedEnquiryEvent": true
+    },
+    {
+      "brand": "Volkswagen",
+      "language": "en",
+      "validDraftPrepared": true,
+      "brandContextPreserved": true,
+      "privateTextExcludedFromEvents": true,
+      "noConfirmedEnquiryEvent": true
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "language": "en",
+      "validDraftPrepared": true,
+      "brandContextPreserved": true,
+      "privateTextExcludedFromEvents": true,
+      "noConfirmedEnquiryEvent": true
+    },
+    {
+      "brand": "BMW",
+      "language": "en",
+      "validDraftPrepared": true,
+      "brandContextPreserved": true,
+      "privateTextExcludedFromEvents": true,
+      "noConfirmedEnquiryEvent": true
+    },
+    {
+      "case": "optional name/phone",
+      "passed": true
+    },
+    {
+      "case": "too-short issue",
+      "passed": true
+    },
+    {
+      "case": "invalid callback",
+      "passed": true
+    },
+    {
+      "case": "oversize issue",
+      "passed": true
+    },
+    {
+      "case": "Arabic draft context",
+      "passed": true
+    }
+  ]
+}

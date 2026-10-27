@@ -1,0 +1,1173 @@
+{
+  "checkedAt": "2026-10-12T08:05:44.253Z",
+  "sourceSha256": "0879f73cdf5434c66dbaaee251036a6af2bd3668077a7c004b6a0536c54cf9dc",
+  "buildPassed": true,
+  "passed": true,
+  "scope": "Local initial HTML; no live production or browser interactions",
+  "beforeRouteCount": 1256,
+  "routeCount": 1256,
+  "beforeIndexableCount": 1005,
+  "indexableCount": 1005,
+  "servicePagesChecked": 7,
+  "relatedBlogPagesChecked": 2,
+  "arabicArticlesChecked": 2,
+  "mainInternalLinksChecked": 269,
+  "localImageAssetsChecked": 49,
+  "externalImagesUnfetched": [],
+  "intrinsicDimensionAdvisories": [
+    {
+      "route": "/ar/services/paint-protection-film",
+      "src": "/lovable-uploads/car-body-repair-v2.png",
+      "reservedWrapper": true,
+      "rule": "Explicit intrinsic dimensions omitted; existing wrapper reserves layout space"
+    },
+    {
+      "route": "/ar/services/paint-protection-film",
+      "src": "/images/ppf/film-application-1200.webp",
+      "reservedWrapper": true,
+      "rule": "Explicit intrinsic dimensions omitted; existing wrapper reserves layout space"
+    },
+    {
+      "route": "/ar/services/paint-protection-film",
+      "src": "/images/ceramic-coating/black-mercedes-finish-1024.webp",
+      "reservedWrapper": true,
+      "rule": "Explicit intrinsic dimensions omitted; existing wrapper reserves layout space"
+    },
+    {
+      "route": "/ar/services/paint-protection-film",
+      "src": "/brand-logos/showcase/mercedes-benz.png",
+      "reservedWrapper": true,
+      "rule": "Explicit intrinsic dimensions omitted; existing wrapper reserves layout space"
+    },
+    {
+      "route": "/ar/services/paint-protection-film",
+      "src": "/brand-logos/showcase/maybach.png",
+      "reservedWrapper": true,
+      "rule": "Explicit intrinsic dimensions omitted; existing wrapper reserves layout space"
+    },
+    {
+      "route": "/ar/services/paint-protection-film",
+      "src": "/brand-logos/showcase/porsche.png",
+      "reservedWrapper": true,
+      "rule": "Explicit intrinsic dimensions omitted; existing wrapper reserves layout space"
+    },
+    {
+      "route": "/ar/services/paint-protection-film",
+      "src": "/brand-logos/showcase/audi.png",
+      "reservedWrapper": true,
+      "rule": "Explicit intrinsic dimensions omitted; existing wrapper reserves layout space"
+    },
+    {
+      "route": "/ar/services/paint-protection-film",
+      "src": "/brand-logos/showcase/bmw.png",
+      "reservedWrapper": true,
+      "rule": "Explicit intrinsic dimensions omitted; existing wrapper reserves layout space"
+    },
+    {
+      "route": "/ar/services/paint-protection-film",
+      "src": "/brand-logos/showcase/lamborghini.png",
+      "reservedWrapper": true,
+      "rule": "Explicit intrinsic dimensions omitted; existing wrapper reserves layout space"
+    },
+    {
+      "route": "/ar/services/paint-protection-film",
+      "src": "/brand-logos/showcase/bentley.png",
+      "reservedWrapper": true,
+      "rule": "Explicit intrinsic dimensions omitted; existing wrapper reserves layout space"
+    },
+    {
+      "route": "/ar/services/paint-protection-film",
+      "src": "/brand-logos/showcase/mclaren.png",
+      "reservedWrapper": true,
+      "rule": "Explicit intrinsic dimensions omitted; existing wrapper reserves layout space"
+    },
+    {
+      "route": "/ar/services/paint-protection-film",
+      "src": "/brand-logos/showcase/ferrari.png",
+      "reservedWrapper": true,
+      "rule": "Explicit intrinsic dimensions omitted; existing wrapper reserves layout space"
+    },
+    {
+      "route": "/ar/services/paint-protection-film",
+      "src": "/brand-logos/showcase/bugatti.png",
+      "reservedWrapper": true,
+      "rule": "Explicit intrinsic dimensions omitted; existing wrapper reserves layout space"
+    },
+    {
+      "route": "/ar/services/paint-protection-film",
+      "src": "/brand-logos/showcase/land-rover.png",
+      "reservedWrapper": true,
+      "rule": "Explicit intrinsic dimensions omitted; existing wrapper reserves layout space"
+    },
+    {
+      "route": "/ar/services/paint-protection-film",
+      "src": "/brand-logos/showcase/rolls-royce.png",
+      "reservedWrapper": true,
+      "rule": "Explicit intrinsic dimensions omitted; existing wrapper reserves layout space"
+    },
+    {
+      "route": "/ar/services/paint-protection-film",
+      "src": "/brand-logos/showcase/aston-martin.png",
+      "reservedWrapper": true,
+      "rule": "Explicit intrinsic dimensions omitted; existing wrapper reserves layout space"
+    },
+    {
+      "route": "/ar/services/paint-protection-film",
+      "src": "/brand-logos/showcase/maserati.png",
+      "reservedWrapper": true,
+      "rule": "Explicit intrinsic dimensions omitted; existing wrapper reserves layout space"
+    },
+    {
+      "route": "/ar/services/paint-protection-film",
+      "src": "/brand-logos/showcase/cadillac.png",
+      "reservedWrapper": true,
+      "rule": "Explicit intrinsic dimensions omitted; existing wrapper reserves layout space"
+    },
+    {
+      "route": "/ar/services/paint-protection-film",
+      "src": "/brand-logos/showcase/byd.png",
+      "reservedWrapper": true,
+      "rule": "Explicit intrinsic dimensions omitted; existing wrapper reserves layout space"
+    },
+    {
+      "route": "/ar/services/paint-protection-film",
+      "src": "/brand-logos/showcase/chevrolet.png",
+      "reservedWrapper": true,
+      "rule": "Explicit intrinsic dimensions omitted; existing wrapper reserves layout space"
+    },
+    {
+      "route": "/ar/services/paint-protection-film",
+      "src": "/brand-logos/showcase/chrysler.png",
+      "reservedWrapper": true,
+      "rule": "Explicit intrinsic dimensions omitted; existing wrapper reserves layout space"
+    },
+    {
+      "route": "/ar/services/paint-protection-film",
+      "src": "/brand-logos/showcase/corvette.png",
+      "reservedWrapper": true,
+      "rule": "Explicit intrinsic dimensions omitted; existing wrapper reserves layout space"
+    },
+    {
+      "route": "/ar/services/paint-protection-film",
+      "src": "/brand-logos/showcase/dodge.png",
+      "reservedWrapper": true,
+      "rule": "Explicit intrinsic dimensions omitted; existing wrapper reserves layout space"
+    },
+    {
+      "route": "/ar/services/paint-protection-film",
+      "src": "/brand-logos/showcase/ford.png",
+      "reservedWrapper": true,
+      "rule": "Explicit intrinsic dimensions omitted; existing wrapper reserves layout space"
+    },
+    {
+      "route": "/ar/services/paint-protection-film",
+      "src": "/brand-logos/showcase/genesis.png",
+      "reservedWrapper": true,
+      "rule": "Explicit intrinsic dimensions omitted; existing wrapper reserves layout space"
+    },
+    {
+      "route": "/ar/services/paint-protection-film",
+      "src": "/brand-logos/showcase/gmc.png",
+      "reservedWrapper": true,
+      "rule": "Explicit intrinsic dimensions omitted; existing wrapper reserves layout space"
+    },
+    {
+      "route": "/ar/services/paint-protection-film",
+      "src": "/brand-logos/showcase/hummer.png",
+      "reservedWrapper": true,
+      "rule": "Explicit intrinsic dimensions omitted; existing wrapper reserves layout space"
+    },
+    {
+      "route": "/ar/services/paint-protection-film",
+      "src": "/brand-logos/showcase/jaguar.png",
+      "reservedWrapper": true,
+      "rule": "Explicit intrinsic dimensions omitted; existing wrapper reserves layout space"
+    },
+    {
+      "route": "/ar/services/paint-protection-film",
+      "src": "/brand-logos/showcase/jeep.png",
+      "reservedWrapper": true,
+      "rule": "Explicit intrinsic dimensions omitted; existing wrapper reserves layout space"
+    },
+    {
+      "route": "/ar/services/paint-protection-film",
+      "src": "/brand-logos/showcase/jetour.png",
+      "reservedWrapper": true,
+      "rule": "Explicit intrinsic dimensions omitted; existing wrapper reserves layout space"
+    },
+    {
+      "route": "/ar/services/paint-protection-film",
+      "src": "/brand-logos/showcase/koenigsegg.png",
+      "reservedWrapper": true,
+      "rule": "Explicit intrinsic dimensions omitted; existing wrapper reserves layout space"
+    },
+    {
+      "route": "/ar/services/paint-protection-film",
+      "src": "/brand-logos/showcase/lincoln.png",
+      "reservedWrapper": true,
+      "rule": "Explicit intrinsic dimensions omitted; existing wrapper reserves layout space"
+    },
+    {
+      "route": "/ar/services/paint-protection-film",
+      "src": "/brand-logos/showcase/mini.png",
+      "reservedWrapper": true,
+      "rule": "Explicit intrinsic dimensions omitted; existing wrapper reserves layout space"
+    },
+    {
+      "route": "/ar/services/paint-protection-film",
+      "src": "/brand-logos/showcase/pagani.png",
+      "reservedWrapper": true,
+      "rule": "Explicit intrinsic dimensions omitted; existing wrapper reserves layout space"
+    },
+    {
+      "route": "/ar/services/paint-protection-film",
+      "src": "/brand-logos/showcase/rox.png",
+      "reservedWrapper": true,
+      "rule": "Explicit intrinsic dimensions omitted; existing wrapper reserves layout space"
+    },
+    {
+      "route": "/ar/services/paint-protection-film",
+      "src": "/brand-logos/showcase/subaru.png",
+      "reservedWrapper": true,
+      "rule": "Explicit intrinsic dimensions omitted; existing wrapper reserves layout space"
+    },
+    {
+      "route": "/ar/services/paint-protection-film",
+      "src": "/brand-logos/showcase/tesla.png",
+      "reservedWrapper": true,
+      "rule": "Explicit intrinsic dimensions omitted; existing wrapper reserves layout space"
+    },
+    {
+      "route": "/ar/services/paint-protection-film",
+      "src": "/brand-logos/showcase/volkswagen.png",
+      "reservedWrapper": true,
+      "rule": "Explicit intrinsic dimensions omitted; existing wrapper reserves layout space"
+    },
+    {
+      "route": "/ar/services/paint-protection-film",
+      "src": "/brand-logos/showcase/volvo.png",
+      "reservedWrapper": true,
+      "rule": "Explicit intrinsic dimensions omitted; existing wrapper reserves layout space"
+    },
+    {
+      "route": "/ar/services/paint-protection-film",
+      "src": "/brand-logos/showcase/land-rover.png",
+      "reservedWrapper": true,
+      "rule": "Explicit intrinsic dimensions omitted; existing wrapper reserves layout space"
+    },
+    {
+      "route": "/ar/services/paint-protection-film",
+      "src": "/brand-logos/showcase/land-rover.png",
+      "reservedWrapper": true,
+      "rule": "Explicit intrinsic dimensions omitted; existing wrapper reserves layout space"
+    },
+    {
+      "route": "/ar/services/ceramic-coating",
+      "src": "/lovable-uploads/car-body-repair-v2.png",
+      "reservedWrapper": true,
+      "rule": "Explicit intrinsic dimensions omitted; existing wrapper reserves layout space"
+    },
+    {
+      "route": "/ar/services/ceramic-coating",
+      "src": "/images/ppf/film-application-1200.webp",
+      "reservedWrapper": true,
+      "rule": "Explicit intrinsic dimensions omitted; existing wrapper reserves layout space"
+    },
+    {
+      "route": "/ar/services/ceramic-coating",
+      "src": "/images/ppf/film-application-1200.webp",
+      "reservedWrapper": true,
+      "rule": "Explicit intrinsic dimensions omitted; existing wrapper reserves layout space"
+    },
+    {
+      "route": "/ar/services/ceramic-coating",
+      "src": "/brand-logos/showcase/mercedes-benz.png",
+      "reservedWrapper": true,
+      "rule": "Explicit intrinsic dimensions omitted; existing wrapper reserves layout space"
+    },
+    {
+      "route": "/ar/services/ceramic-coating",
+      "src": "/brand-logos/showcase/maybach.png",
+      "reservedWrapper": true,
+      "rule": "Explicit intrinsic dimensions omitted; existing wrapper reserves layout space"
+    },
+    {
+      "route": "/ar/services/ceramic-coating",
+      "src": "/brand-logos/showcase/porsche.png",
+      "reservedWrapper": true,
+      "rule": "Explicit intrinsic dimensions omitted; existing wrapper reserves layout space"
+    },
+    {
+      "route": "/ar/services/ceramic-coating",
+      "src": "/brand-logos/showcase/audi.png",
+      "reservedWrapper": true,
+      "rule": "Explicit intrinsic dimensions omitted; existing wrapper reserves layout space"
+    },
+    {
+      "route": "/ar/services/ceramic-coating",
+      "src": "/brand-logos/showcase/bmw.png",
+      "reservedWrapper": true,
+      "rule": "Explicit intrinsic dimensions omitted; existing wrapper reserves layout space"
+    },
+    {
+      "route": "/ar/services/ceramic-coating",
+      "src": "/brand-logos/showcase/lamborghini.png",
+      "reservedWrapper": true,
+      "rule": "Explicit intrinsic dimensions omitted; existing wrapper reserves layout space"
+    },
+    {
+      "route": "/ar/services/ceramic-coating",
+      "src": "/brand-logos/showcase/bentley.png",
+      "reservedWrapper": true,
+      "rule": "Explicit intrinsic dimensions omitted; existing wrapper reserves layout space"
+    },
+    {
+      "route": "/ar/services/ceramic-coating",
+      "src": "/brand-logos/showcase/mclaren.png",
+      "reservedWrapper": true,
+      "rule": "Explicit intrinsic dimensions omitted; existing wrapper reserves layout space"
+    },
+    {
+      "route": "/ar/services/ceramic-coating",
+      "src": "/brand-logos/showcase/ferrari.png",
+      "reservedWrapper": true,
+      "rule": "Explicit intrinsic dimensions omitted; existing wrapper reserves layout space"
+    },
+    {
+      "route": "/ar/services/ceramic-coating",
+      "src": "/brand-logos/showcase/bugatti.png",
+      "reservedWrapper": true,
+      "rule": "Explicit intrinsic dimensions omitted; existing wrapper reserves layout space"
+    },
+    {
+      "route": "/ar/services/ceramic-coating",
+      "src": "/brand-logos/showcase/land-rover.png",
+      "reservedWrapper": true,
+      "rule": "Explicit intrinsic dimensions omitted; existing wrapper reserves layout space"
+    },
+    {
+      "route": "/ar/services/ceramic-coating",
+      "src": "/brand-logos/showcase/rolls-royce.png",
+      "reservedWrapper": true,
+      "rule": "Explicit intrinsic dimensions omitted; existing wrapper reserves layout space"
+    },
+    {
+      "route": "/ar/services/ceramic-coating",
+      "src": "/brand-logos/showcase/aston-martin.png",
+      "reservedWrapper": true,
+      "rule": "Explicit intrinsic dimensions omitted; existing wrapper reserves layout space"
+    },
+    {
+      "route": "/ar/services/ceramic-coating",
+      "src": "/brand-logos/showcase/maserati.png",
+      "reservedWrapper": true,
+      "rule": "Explicit intrinsic dimensions omitted; existing wrapper reserves layout space"
+    },
+    {
+      "route": "/ar/services/ceramic-coating",
+      "src": "/brand-logos/showcase/cadillac.png",
+      "reservedWrapper": true,
+      "rule": "Explicit intrinsic dimensions omitted; existing wrapper reserves layout space"
+    },
+    {
+      "route": "/ar/services/ceramic-coating",
+      "src": "/brand-logos/showcase/byd.png",
+      "reservedWrapper": true,
+      "rule": "Explicit intrinsic dimensions omitted; existing wrapper reserves layout space"
+    },
+    {
+      "route": "/ar/services/ceramic-coating",
+      "src": "/brand-logos/showcase/chevrolet.png",
+      "reservedWrapper": true,
+      "rule": "Explicit intrinsic dimensions omitted; existing wrapper reserves layout space"
+    },
+    {
+      "route": "/ar/services/ceramic-coating",
+      "src": "/brand-logos/showcase/chrysler.png",
+      "reservedWrapper": true,
+      "rule": "Explicit intrinsic dimensions omitted; existing wrapper reserves layout space"
+    },
+    {
+      "route": "/ar/services/ceramic-coating",
+      "src": "/brand-logos/showcase/corvette.png",
+      "reservedWrapper": true,
+      "rule": "Explicit intrinsic dimensions omitted; existing wrapper reserves layout space"
+    },
+    {
+      "route": "/ar/services/ceramic-coating",
+      "src": "/brand-logos/showcase/dodge.png",
+      "reservedWrapper": true,
+      "rule": "Explicit intrinsic dimensions omitted; existing wrapper reserves layout space"
+    },
+    {
+      "route": "/ar/services/ceramic-coating",
+      "src": "/brand-logos/showcase/ford.png",
+      "reservedWrapper": true,
+      "rule": "Explicit intrinsic dimensions omitted; existing wrapper reserves layout space"
+    },
+    {
+      "route": "/ar/services/ceramic-coating",
+      "src": "/brand-logos/showcase/genesis.png",
+      "reservedWrapper": true,
+      "rule": "Explicit intrinsic dimensions omitted; existing wrapper reserves layout space"
+    },
+    {
+      "route": "/ar/services/ceramic-coating",
+      "src": "/brand-logos/showcase/gmc.png",
+      "reservedWrapper": true,
+      "rule": "Explicit intrinsic dimensions omitted; existing wrapper reserves layout space"
+    },
+    {
+      "route": "/ar/services/ceramic-coating",
+      "src": "/brand-logos/showcase/hummer.png",
+      "reservedWrapper": true,
+      "rule": "Explicit intrinsic dimensions omitted; existing wrapper reserves layout space"
+    },
+    {
+      "route": "/ar/services/ceramic-coating",
+      "src": "/brand-logos/showcase/jaguar.png",
+      "reservedWrapper": true,
+      "rule": "Explicit intrinsic dimensions omitted; existing wrapper reserves layout space"
+    },
+    {
+      "route": "/ar/services/ceramic-coating",
+      "src": "/brand-logos/showcase/jeep.png",
+      "reservedWrapper": true,
+      "rule": "Explicit intrinsic dimensions omitted; existing wrapper reserves layout space"
+    },
+    {
+      "route": "/ar/services/ceramic-coating",
+      "src": "/brand-logos/showcase/jetour.png",
+      "reservedWrapper": true,
+      "rule": "Explicit intrinsic dimensions omitted; existing wrapper reserves layout space"
+    },
+    {
+      "route": "/ar/services/ceramic-coating",
+      "src": "/brand-logos/showcase/koenigsegg.png",
+      "reservedWrapper": true,
+      "rule": "Explicit intrinsic dimensions omitted; existing wrapper reserves layout space"
+    },
+    {
+      "route": "/ar/services/ceramic-coating",
+      "src": "/brand-logos/showcase/lincoln.png",
+      "reservedWrapper": true,
+      "rule": "Explicit intrinsic dimensions omitted; existing wrapper reserves layout space"
+    },
+    {
+      "route": "/ar/services/ceramic-coating",
+      "src": "/brand-logos/showcase/mini.png",
+      "reservedWrapper": true,
+      "rule": "Explicit intrinsic dimensions omitted; existing wrapper reserves layout space"
+    },
+    {
+      "route": "/ar/services/ceramic-coating",
+      "src": "/brand-logos/showcase/pagani.png",
+      "reservedWrapper": true,
+      "rule": "Explicit intrinsic dimensions omitted; existing wrapper reserves layout space"
+    },
+    {
+      "route": "/ar/services/ceramic-coating",
+      "src": "/brand-logos/showcase/rox.png",
+      "reservedWrapper": true,
+      "rule": "Explicit intrinsic dimensions omitted; existing wrapper reserves layout space"
+    },
+    {
+      "route": "/ar/services/ceramic-coating",
+      "src": "/brand-logos/showcase/subaru.png",
+      "reservedWrapper": true,
+      "rule": "Explicit intrinsic dimensions omitted; existing wrapper reserves layout space"
+    },
+    {
+      "route": "/ar/services/ceramic-coating",
+      "src": "/brand-logos/showcase/tesla.png",
+      "reservedWrapper": true,
+      "rule": "Explicit intrinsic dimensions omitted; existing wrapper reserves layout space"
+    },
+    {
+      "route": "/ar/services/ceramic-coating",
+      "src": "/brand-logos/showcase/volkswagen.png",
+      "reservedWrapper": true,
+      "rule": "Explicit intrinsic dimensions omitted; existing wrapper reserves layout space"
+    },
+    {
+      "route": "/ar/services/ceramic-coating",
+      "src": "/brand-logos/showcase/volvo.png",
+      "reservedWrapper": true,
+      "rule": "Explicit intrinsic dimensions omitted; existing wrapper reserves layout space"
+    },
+    {
+      "route": "/ar/services/ceramic-coating",
+      "src": "/brand-logos/showcase/land-rover.png",
+      "reservedWrapper": true,
+      "rule": "Explicit intrinsic dimensions omitted; existing wrapper reserves layout space"
+    },
+    {
+      "route": "/ar/services/ceramic-coating",
+      "src": "/brand-logos/showcase/land-rover.png",
+      "reservedWrapper": true,
+      "rule": "Explicit intrinsic dimensions omitted; existing wrapper reserves layout space"
+    }
+  ],
+  "addedRoutes": [],
+  "removedRoutes": [],
+  "indexabilityChanged": [],
+  "errors": [],
+  "warnings": [
+    {
+      "route": "/ar/services/ceramic-coating",
+      "rule": "Existing schema builder publishes a subset of visible FAQ disclosures",
+      "actual": {
+        "visible": 4,
+        "published": 3
+      }
+    }
+  ],
+  "pages": [
+    {
+      "route": "/services/paint-protection-dubai",
+      "title": "Car Paint Protection Dubai | PPF & Ceramic Coating | DIGI-TEC",
+      "description": "Compare PPF, ceramic coating and paint correction in Dubai. Choose protection for your car’s paint and driving needs. Get a DIGI-TEC quote in Al Quoz.",
+      "canonical": "https://digitecme.com/services/paint-protection-dubai",
+      "h1": "Car Paint Protection in Dubai",
+      "titles": [
+        "Car Paint Protection Dubai | PPF & Ceramic Coating | DIGI-TEC"
+      ],
+      "descriptions": [
+        "Compare PPF, ceramic coating and paint correction in Dubai. Choose protection for your car’s paint and driving needs. Get a DIGI-TEC quote in Al Quoz."
+      ],
+      "canonicals": [
+        "https://digitecme.com/services/paint-protection-dubai"
+      ],
+      "h1s": [
+        "Car Paint Protection in Dubai"
+      ],
+      "alternates": [
+        {
+          "language": "en-AE",
+          "href": "https://digitecme.com/services/paint-protection-dubai"
+        },
+        {
+          "language": "ar-AE",
+          "href": "https://digitecme.com/ar/services/paint-protection-dubai"
+        },
+        {
+          "language": "x-default",
+          "href": "https://digitecme.com/services/paint-protection-dubai"
+        }
+      ],
+      "robots": [
+        "index, follow, max-image-preview:large"
+      ],
+      "mainLinks": 23,
+      "faqCount": 6,
+      "faqSchemaCount": 0,
+      "publishedFaqQuestionCount": 0,
+      "jsonLdTypes": [
+        "Organization",
+        "ContactPoint",
+        "ImageObject",
+        "WebSite",
+        "AutoRepair",
+        "AutomotiveBusiness",
+        "PostalAddress",
+        "City",
+        "OfferCatalog",
+        "Offer",
+        "Service",
+        "WebPage",
+        "BreadcrumbList",
+        "ListItem"
+      ],
+      "htmlSha256": "387a79f0cf78e74ad179e653a71b8410ae31b2c981a8602977d29a0208626358"
+    },
+    {
+      "route": "/services/paint-protection-film",
+      "title": "PPF Dubai | Paint Protection Film Installation | DIGI-TEC",
+      "description": "PPF installation in Al Quoz, Dubai. Compare full-body and selected-panel paint protection film, preparation and aftercare. Request a DIGI-TEC quote for your car.",
+      "canonical": "https://digitecme.com/services/paint-protection-film",
+      "h1": "Paint Protection Film (PPF) Dubai",
+      "titles": [
+        "PPF Dubai | Paint Protection Film Installation | DIGI-TEC"
+      ],
+      "descriptions": [
+        "PPF installation in Al Quoz, Dubai. Compare full-body and selected-panel paint protection film, preparation and aftercare. Request a DIGI-TEC quote for your car."
+      ],
+      "canonicals": [
+        "https://digitecme.com/services/paint-protection-film"
+      ],
+      "h1s": [
+        "Paint Protection Film (PPF) Dubai"
+      ],
+      "alternates": [
+        {
+          "language": "en-AE",
+          "href": "https://digitecme.com/services/paint-protection-film"
+        },
+        {
+          "language": "ar-AE",
+          "href": "https://digitecme.com/ar/services/paint-protection-film"
+        },
+        {
+          "language": "x-default",
+          "href": "https://digitecme.com/services/paint-protection-film"
+        }
+      ],
+      "robots": [
+        "index, follow, max-image-preview:large"
+      ],
+      "mainLinks": 39,
+      "faqCount": 14,
+      "faqSchemaCount": 0,
+      "publishedFaqQuestionCount": 0,
+      "jsonLdTypes": [
+        "Organization",
+        "ContactPoint",
+        "ImageObject",
+        "WebSite",
+        "AutoRepair",
+        "AutomotiveBusiness",
+        "PostalAddress",
+        "City",
+        "OfferCatalog",
+        "Offer",
+        "Service",
+        "WebPage",
+        "BreadcrumbList",
+        "ListItem"
+      ],
+      "htmlSha256": "9862b5dcfbf1c76fcb681608c055824ddcf18d6e1f1a115117fa0f9e6334bcac"
+    },
+    {
+      "route": "/services/ceramic-coating",
+      "title": "Ceramic Coating Dubai | Car Paint Protection | DIGI-TEC",
+      "description": "Ceramic coating for cars in Al Quoz, Dubai. Discuss paint preparation, water-beading benefits and ongoing care at DIGI-TEC. Request a vehicle-specific quote.",
+      "canonical": "https://digitecme.com/services/ceramic-coating",
+      "h1": "Ceramic Coating Dubai",
+      "titles": [
+        "Ceramic Coating Dubai | Car Paint Protection | DIGI-TEC"
+      ],
+      "descriptions": [
+        "Ceramic coating for cars in Al Quoz, Dubai. Discuss paint preparation, water-beading benefits and ongoing care at DIGI-TEC. Request a vehicle-specific quote."
+      ],
+      "canonicals": [
+        "https://digitecme.com/services/ceramic-coating"
+      ],
+      "h1s": [
+        "Ceramic Coating Dubai"
+      ],
+      "alternates": [
+        {
+          "language": "en-AE",
+          "href": "https://digitecme.com/services/ceramic-coating"
+        },
+        {
+          "language": "ar-AE",
+          "href": "https://digitecme.com/ar/services/ceramic-coating"
+        },
+        {
+          "language": "x-default",
+          "href": "https://digitecme.com/services/ceramic-coating"
+        }
+      ],
+      "robots": [
+        "index, follow, max-image-preview:large"
+      ],
+      "mainLinks": 37,
+      "faqCount": 16,
+      "faqSchemaCount": 0,
+      "publishedFaqQuestionCount": 0,
+      "jsonLdTypes": [
+        "Organization",
+        "ContactPoint",
+        "ImageObject",
+        "WebSite",
+        "AutoRepair",
+        "AutomotiveBusiness",
+        "PostalAddress",
+        "City",
+        "OfferCatalog",
+        "Offer",
+        "Service",
+        "WebPage",
+        "BreadcrumbList",
+        "ListItem"
+      ],
+      "htmlSha256": "8084accafed7cb931e7ef7126d47b31d0523e307dd7ab08548be43d121e3b95f"
+    },
+    {
+      "route": "/services/car-polishing-dubai",
+      "title": "Car Polishing Dubai | Paint Correction | DIGI-TEC",
+      "description": "Car polishing and paint correction in Al Quoz, Dubai for swirl marks, light scratches and dull paint. Ask DIGI-TEC for an assessed scope and quote.",
+      "canonical": "https://digitecme.com/services/car-polishing-dubai",
+      "h1": "Car Polishing & Paint Correction Dubai",
+      "titles": [
+        "Car Polishing Dubai | Paint Correction | DIGI-TEC"
+      ],
+      "descriptions": [
+        "Car polishing and paint correction in Al Quoz, Dubai for swirl marks, light scratches and dull paint. Ask DIGI-TEC for an assessed scope and quote."
+      ],
+      "canonicals": [
+        "https://digitecme.com/services/car-polishing-dubai"
+      ],
+      "h1s": [
+        "Car Polishing & Paint Correction Dubai"
+      ],
+      "alternates": [
+        {
+          "language": "en-AE",
+          "href": "https://digitecme.com/services/car-polishing-dubai"
+        },
+        {
+          "language": "x-default",
+          "href": "https://digitecme.com/services/car-polishing-dubai"
+        }
+      ],
+      "robots": [
+        "index, follow, max-image-preview:large"
+      ],
+      "mainLinks": 34,
+      "faqCount": 16,
+      "faqSchemaCount": 0,
+      "publishedFaqQuestionCount": 0,
+      "jsonLdTypes": [
+        "Organization",
+        "ContactPoint",
+        "ImageObject",
+        "WebSite",
+        "AutoRepair",
+        "AutomotiveBusiness",
+        "PostalAddress",
+        "City",
+        "OfferCatalog",
+        "Offer",
+        "Service",
+        "WebPage",
+        "BreadcrumbList",
+        "ListItem"
+      ],
+      "htmlSha256": "582149b7a009466e05e47a7c7a12ae6fbe01a524a36314c5d39b59747354c38e"
+    },
+    {
+      "route": "/ar/services/paint-protection-dubai",
+      "title": "حماية طلاء السيارة في دبي | أفلام PPF والسيراميك | ديجي-تك",
+      "description": "قارن أفلام حماية الطلاء PPF وسيراميك السيارات وتصحيح الطلاء في دبي. اختر التحضير والتغطية وفق حالة سيارتك واستخدامها واطلب عرضاً من ديجي-تك في القوز.",
+      "canonical": "https://digitecme.com/ar/services/paint-protection-dubai",
+      "h1": "حماية طلاء السيارة في دبي",
+      "titles": [
+        "حماية طلاء السيارة في دبي | أفلام PPF والسيراميك | ديجي-تك"
+      ],
+      "descriptions": [
+        "قارن أفلام حماية الطلاء PPF وسيراميك السيارات وتصحيح الطلاء في دبي. اختر التحضير والتغطية وفق حالة سيارتك واستخدامها واطلب عرضاً من ديجي-تك في القوز."
+      ],
+      "canonicals": [
+        "https://digitecme.com/ar/services/paint-protection-dubai"
+      ],
+      "h1s": [
+        "حماية طلاء السيارة في دبي"
+      ],
+      "alternates": [
+        {
+          "language": "en-AE",
+          "href": "https://digitecme.com/services/paint-protection-dubai"
+        },
+        {
+          "language": "ar-AE",
+          "href": "https://digitecme.com/ar/services/paint-protection-dubai"
+        },
+        {
+          "language": "x-default",
+          "href": "https://digitecme.com/services/paint-protection-dubai"
+        }
+      ],
+      "robots": [
+        "index, follow, max-image-preview:large"
+      ],
+      "mainLinks": 23,
+      "faqCount": 6,
+      "faqSchemaCount": 0,
+      "publishedFaqQuestionCount": 0,
+      "jsonLdTypes": [
+        "Organization",
+        "ContactPoint",
+        "ImageObject",
+        "WebSite",
+        "AutoRepair",
+        "AutomotiveBusiness",
+        "PostalAddress",
+        "City",
+        "OfferCatalog",
+        "Offer",
+        "Service",
+        "WebPage",
+        "BreadcrumbList",
+        "ListItem"
+      ],
+      "htmlSha256": "15e595f8b50febb3a0c44d63ae6aa2a71978336592884d1924598aca4e30531b"
+    },
+    {
+      "route": "/ar/services/paint-protection-film",
+      "title": "أفلام حماية الطلاء PPF دبي | التغطية والتركيب | ديجي-تك",
+      "description": "تركيب أفلام PPF في القوز، دبي. ناقش تغطية كاملة أو جزئية وتحضير الطلاء والحواف والعناية حسب الفيلم والسيارة. اطلب عرضاً للتغطية المطلوبة.",
+      "canonical": "https://digitecme.com/ar/services/paint-protection-film",
+      "h1": "تركيب أفلام حماية الطلاء PPF في دبي",
+      "titles": [
+        "أفلام حماية الطلاء PPF دبي | التغطية والتركيب | ديجي-تك"
+      ],
+      "descriptions": [
+        "تركيب أفلام PPF في القوز، دبي. ناقش تغطية كاملة أو جزئية وتحضير الطلاء والحواف والعناية حسب الفيلم والسيارة. اطلب عرضاً للتغطية المطلوبة."
+      ],
+      "canonicals": [
+        "https://digitecme.com/ar/services/paint-protection-film"
+      ],
+      "h1s": [
+        "تركيب أفلام حماية الطلاء PPF في دبي"
+      ],
+      "alternates": [
+        {
+          "language": "en-AE",
+          "href": "https://digitecme.com/services/paint-protection-film"
+        },
+        {
+          "language": "ar-AE",
+          "href": "https://digitecme.com/ar/services/paint-protection-film"
+        },
+        {
+          "language": "x-default",
+          "href": "https://digitecme.com/services/paint-protection-film"
+        }
+      ],
+      "robots": [
+        "index, follow, max-image-preview:large"
+      ],
+      "mainLinks": 54,
+      "faqCount": 4,
+      "faqSchemaCount": 1,
+      "publishedFaqQuestionCount": 4,
+      "jsonLdTypes": [
+        "Organization",
+        "ContactPoint",
+        "ImageObject",
+        "WebSite",
+        "AutoRepair",
+        "AutomotiveBusiness",
+        "PostalAddress",
+        "City",
+        "OfferCatalog",
+        "Offer",
+        "Service",
+        "WebPage",
+        "BreadcrumbList",
+        "ListItem",
+        "FAQPage",
+        "Question",
+        "Answer"
+      ],
+      "htmlSha256": "4c2cf9dc44e2d77d6a3b748df638e340cf6942b65e5c8d7687960e65e188c1c4"
+    },
+    {
+      "route": "/ar/services/ceramic-coating",
+      "title": "طلاء سيراميك السيارات دبي | التحضير والعناية | ديجي-تك",
+      "description": "ناقش الطلاء السيراميكي وتحضير السطح والعناية في القوز، دبي. خصائص المنتج والأسطح وحالة الطلاء تحدد النطاق والتكلفة. اطلب عرضاً لسيارتك.",
+      "canonical": "https://digitecme.com/ar/services/ceramic-coating",
+      "h1": "الطلاء السيراميكي للسيارات في دبي",
+      "titles": [
+        "طلاء سيراميك السيارات دبي | التحضير والعناية | ديجي-تك"
+      ],
+      "descriptions": [
+        "ناقش الطلاء السيراميكي وتحضير السطح والعناية في القوز، دبي. خصائص المنتج والأسطح وحالة الطلاء تحدد النطاق والتكلفة. اطلب عرضاً لسيارتك."
+      ],
+      "canonicals": [
+        "https://digitecme.com/ar/services/ceramic-coating"
+      ],
+      "h1s": [
+        "الطلاء السيراميكي للسيارات في دبي"
+      ],
+      "alternates": [
+        {
+          "language": "en-AE",
+          "href": "https://digitecme.com/services/ceramic-coating"
+        },
+        {
+          "language": "ar-AE",
+          "href": "https://digitecme.com/ar/services/ceramic-coating"
+        },
+        {
+          "language": "x-default",
+          "href": "https://digitecme.com/services/ceramic-coating"
+        }
+      ],
+      "robots": [
+        "index, follow, max-image-preview:large"
+      ],
+      "mainLinks": 54,
+      "faqCount": 4,
+      "faqSchemaCount": 1,
+      "publishedFaqQuestionCount": 3,
+      "jsonLdTypes": [
+        "Organization",
+        "ContactPoint",
+        "ImageObject",
+        "WebSite",
+        "AutoRepair",
+        "AutomotiveBusiness",
+        "PostalAddress",
+        "City",
+        "OfferCatalog",
+        "Offer",
+        "Service",
+        "WebPage",
+        "BreadcrumbList",
+        "ListItem",
+        "FAQPage",
+        "Question",
+        "Answer"
+      ],
+      "htmlSha256": "9ca7aeb8600a9f005acbe76b63ed14005ed6795a23c3448e23916534908520ba"
+    },
+    {
+      "route": "/blog/ceramic-coating-vs-ppf-dubai",
+      "title": "Ceramic Coating vs PPF: Dubai Owner’s Guide | DIGI-TEC",
+      "description": "Compare PPF and ceramic coating for Dubai driving: chip protection, cleaning, paint preparation and aftercare. Learn what to ask before choosing.",
+      "canonical": "https://digitecme.com/blog/ceramic-coating-vs-ppf-dubai",
+      "h1": "Ceramic Coating or PPF in Dubai: Which Should You Choose?",
+      "titles": [
+        "Ceramic Coating vs PPF: Dubai Owner’s Guide | DIGI-TEC"
+      ],
+      "descriptions": [
+        "Compare PPF and ceramic coating for Dubai driving: chip protection, cleaning, paint preparation and aftercare. Learn what to ask before choosing."
+      ],
+      "canonicals": [
+        "https://digitecme.com/blog/ceramic-coating-vs-ppf-dubai"
+      ],
+      "h1s": [
+        "Ceramic Coating or PPF in Dubai: Which Should You Choose?"
+      ],
+      "alternates": [
+        {
+          "language": "en-AE",
+          "href": "https://digitecme.com/blog/ceramic-coating-vs-ppf-dubai"
+        },
+        {
+          "language": "ar-AE",
+          "href": "https://digitecme.com/ar/blog/ceramic-coating-vs-ppf-dubai"
+        },
+        {
+          "language": "x-default",
+          "href": "https://digitecme.com/blog/ceramic-coating-vs-ppf-dubai"
+        }
+      ],
+      "robots": [
+        "index, follow, max-image-preview:large"
+      ],
+      "mainLinks": 17,
+      "faqCount": 0
+    },
+    {
+      "route": "/blog/why-ceramic-coating-matters-uae",
+      "title": "Ceramic Coating in the UAE: Benefits & Preparation | DIGI-TEC",
+      "description": "Understand ceramic coating benefits, paint preparation and how coating differs from PPF for vehicle care in the UAE.",
+      "canonical": "https://digitecme.com/blog/why-ceramic-coating-matters-uae",
+      "h1": "Why Ceramic Coating Matters in the UAE",
+      "titles": [
+        "Ceramic Coating in the UAE: Benefits & Preparation | DIGI-TEC"
+      ],
+      "descriptions": [
+        "Understand ceramic coating benefits, paint preparation and how coating differs from PPF for vehicle care in the UAE."
+      ],
+      "canonicals": [
+        "https://digitecme.com/blog/why-ceramic-coating-matters-uae"
+      ],
+      "h1s": [
+        "Why Ceramic Coating Matters in the UAE"
+      ],
+      "alternates": [
+        {
+          "language": "en-AE",
+          "href": "https://digitecme.com/blog/why-ceramic-coating-matters-uae"
+        },
+        {
+          "language": "ar-AE",
+          "href": "https://digitecme.com/ar/blog/why-ceramic-coating-matters-uae"
+        },
+        {
+          "language": "x-default",
+          "href": "https://digitecme.com/blog/why-ceramic-coating-matters-uae"
+        }
+      ],
+      "robots": [
+        "index, follow, max-image-preview:large"
+      ],
+      "mainLinks": 15,
+      "faqCount": 0
+    }
+  ],
+  "arabicArticles": [
+    {
+      "route": "/ar/blog/ceramic-coating-vs-ppf-dubai",
+      "title": "السيراميك أم أفلام PPF في دبي: دليل اختيار حماية الطلاء | ديجي-تك",
+      "description": "قارن أفلام PPF والسيراميك للاستخدام في دبي: الحماية من الحصى وتسهيل التنظيف وتحضير الطلاء والعناية. تعرّف إلى الأسئلة التي تطرحها قبل الاختيار.",
+      "canonical": "https://digitecme.com/ar/blog/ceramic-coating-vs-ppf-dubai",
+      "h1": "السيراميك أم أفلام PPF في دبي: دليل اختيار حماية الطلاء",
+      "titles": [
+        "السيراميك أم أفلام PPF في دبي: دليل اختيار حماية الطلاء | ديجي-تك"
+      ],
+      "descriptions": [
+        "قارن أفلام PPF والسيراميك للاستخدام في دبي: الحماية من الحصى وتسهيل التنظيف وتحضير الطلاء والعناية. تعرّف إلى الأسئلة التي تطرحها قبل الاختيار."
+      ],
+      "canonicals": [
+        "https://digitecme.com/ar/blog/ceramic-coating-vs-ppf-dubai"
+      ],
+      "h1s": [
+        "السيراميك أم أفلام PPF في دبي: دليل اختيار حماية الطلاء"
+      ],
+      "alternates": [
+        {
+          "language": "en-AE",
+          "href": "https://digitecme.com/blog/ceramic-coating-vs-ppf-dubai"
+        },
+        {
+          "language": "ar-AE",
+          "href": "https://digitecme.com/ar/blog/ceramic-coating-vs-ppf-dubai"
+        },
+        {
+          "language": "x-default",
+          "href": "https://digitecme.com/blog/ceramic-coating-vs-ppf-dubai"
+        }
+      ],
+      "robots": [
+        "index, follow, max-image-preview:large"
+      ],
+      "rtl": true,
+      "commercialLinks": [
+        {
+          "target": "/ar/services/paint-protection-dubai",
+          "present": true,
+          "contextualInArticle": true,
+          "anchors": [
+            "مقارنة خيارات حماية الطلاء لدى ديجي-تك"
+          ]
+        },
+        {
+          "target": "/ar/services/paint-protection-film",
+          "present": true,
+          "contextualInArticle": true,
+          "anchors": [
+            "مراجعة تغطية أفلام حماية الطلاء"
+          ]
+        },
+        {
+          "target": "/ar/services/ceramic-coating",
+          "present": true,
+          "contextualInArticle": true,
+          "anchors": [
+            "التعرّف إلى خدمة الطلاء السيراميكي"
+          ]
+        }
+      ],
+      "jsonLdTypes": [
+        "Organization",
+        "ContactPoint",
+        "ImageObject",
+        "WebSite",
+        "AutoRepair",
+        "AutomotiveBusiness",
+        "PostalAddress",
+        "City",
+        "OfferCatalog",
+        "Offer",
+        "Service",
+        "ItemPage",
+        "BreadcrumbList",
+        "ListItem",
+        "BlogPosting"
+      ],
+      "mainInternalLinks": 12,
+      "htmlSha256": "52228143a0d0ddada06f14d122bbf54a6aed2f501115aef55bf19c758c500ea9"
+    },
+    {
+      "route": "/ar/blog/why-ceramic-coating-matters-uae",
+      "title": "فوائد السيراميك للسيارات في الإمارات | التحضير والعناية",
+      "description": "تعرّف إلى فوائد السيراميك وتحضير طلاء السيارة والعناية به في الإمارات، والفرق بين الطلاء السطحي وأفلام PPF للحماية المادية.",
+      "canonical": "https://digitecme.com/ar/blog/why-ceramic-coating-matters-uae",
+      "h1": "لماذا يهم الطلاء السيراميكي في الإمارات؟",
+      "titles": [
+        "فوائد السيراميك للسيارات في الإمارات | التحضير والعناية"
+      ],
+      "descriptions": [
+        "تعرّف إلى فوائد السيراميك وتحضير طلاء السيارة والعناية به في الإمارات، والفرق بين الطلاء السطحي وأفلام PPF للحماية المادية."
+      ],
+      "canonicals": [
+        "https://digitecme.com/ar/blog/why-ceramic-coating-matters-uae"
+      ],
+      "h1s": [
+        "لماذا يهم الطلاء السيراميكي في الإمارات؟"
+      ],
+      "alternates": [
+        {
+          "language": "en-AE",
+          "href": "https://digitecme.com/blog/why-ceramic-coating-matters-uae"
+        },
+        {
+          "language": "ar-AE",
+          "href": "https://digitecme.com/ar/blog/why-ceramic-coating-matters-uae"
+        },
+        {
+          "language": "x-default",
+          "href": "https://digitecme.com/blog/why-ceramic-coating-matters-uae"
+        }
+      ],
+      "robots": [
+        "index, follow, max-image-preview:large"
+      ],
+      "rtl": true,
+      "commercialLinks": [
+        {
+          "target": "/ar/services/paint-protection-dubai",
+          "present": true,
+          "contextualInArticle": true,
+          "anchors": [
+            "مقارنة خيارات حماية الطلاء لدى ديجي-تك"
+          ]
+        },
+        {
+          "target": "/ar/services/paint-protection-film",
+          "present": true,
+          "contextualInArticle": true,
+          "anchors": [
+            "مراجعة الحماية المادية للألواح المغطاة بالفيلم"
+          ]
+        },
+        {
+          "target": "/ar/services/ceramic-coating",
+          "present": true,
+          "contextualInArticle": true,
+          "anchors": [
+            "مراجعة نطاق خدمة السيراميك وتحضير الطلاء"
+          ]
+        }
+      ],
+      "jsonLdTypes": [
+        "Organization",
+        "ContactPoint",
+        "ImageObject",
+        "WebSite",
+        "AutoRepair",
+        "AutomotiveBusiness",
+        "PostalAddress",
+        "City",
+        "OfferCatalog",
+        "Offer",
+        "Service",
+        "ItemPage",
+        "BreadcrumbList",
+        "ListItem",
+        "BlogPosting"
+      ],
+      "mainInternalLinks": 12,
+      "htmlSha256": "692482d2e957c8112afde59d57c1cfd29da25f61308cd71b9250e61705fc5bad"
+    }
+  ],
+  "metadataChangedFields": 13,
+  "addedMainLinks": 65,
+  "removedMainLinks": 106
+}

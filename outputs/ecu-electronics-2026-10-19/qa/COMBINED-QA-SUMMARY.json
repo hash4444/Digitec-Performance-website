@@ -1,0 +1,381 @@
+{
+  "checkedAt": "2026-10-19T08:46:25.510Z",
+  "passed": true,
+  "candidate": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\ecu-electronics-2026-10-19\\candidate.local",
+  "sourceBase": "acef3427b57b48259bc5b39d6a0f75798603ae95",
+  "baselineIncludesPriorDiagnosticsAc": true,
+  "sourceFingerprint": "5b36413f42162887ca9321530579ddc1c6a96cf64f6288912dc33d00c01a9841",
+  "sourceStability": {
+    "checkedAt": "2026-10-19T08:46:25.488Z",
+    "passed": true,
+    "sourceFileCount": 583,
+    "buildFingerprint": "5b36413f42162887ca9321530579ddc1c6a96cf64f6288912dc33d00c01a9841",
+    "currentFingerprint": "5b36413f42162887ca9321530579ddc1c6a96cf64f6288912dc33d00c01a9841",
+    "changed": [],
+    "reviewedOverlay": [
+      {
+        "file": "src/pages/ServicePage.tsx",
+        "expectedSha256": "7aea5c62212d6066010e09587054e528d03c6589f291bd5681408f7f45b130ca",
+        "candidateSha256": "7aea5c62212d6066010e09587054e528d03c6589f291bd5681408f7f45b130ca",
+        "workspaceSha256": "7aea5c62212d6066010e09587054e528d03c6589f291bd5681408f7f45b130ca",
+        "passed": true
+      },
+      {
+        "file": "src/pages/BrandServicePage.tsx",
+        "expectedSha256": "b8bd67b40548b6e3c53db7611e7dd463cd5c92ce6774bbbdc954695b4395df2f",
+        "candidateSha256": "b8bd67b40548b6e3c53db7611e7dd463cd5c92ce6774bbbdc954695b4395df2f",
+        "workspaceSha256": "b8bd67b40548b6e3c53db7611e7dd463cd5c92ce6774bbbdc954695b4395df2f",
+        "passed": true
+      },
+      {
+        "file": "src/components/EcuElectronicsEnquiryPanel.tsx",
+        "expectedSha256": "3eebc5bc1eb9c0843e5c5676d6c583812f6ae4d5fb79a12bbb89ffe439c3660b",
+        "candidateSha256": "3eebc5bc1eb9c0843e5c5676d6c583812f6ae4d5fb79a12bbb89ffe439c3660b",
+        "workspaceSha256": "3eebc5bc1eb9c0843e5c5676d6c583812f6ae4d5fb79a12bbb89ffe439c3660b",
+        "passed": true
+      },
+      {
+        "file": "src/data/ecuElectronicsContent.ts",
+        "expectedSha256": "48cf990866ec75dcf7c1c08c8c52cb85001085ebfb5c81da82370a0030ca90f3",
+        "candidateSha256": "48cf990866ec75dcf7c1c08c8c52cb85001085ebfb5c81da82370a0030ca90f3",
+        "workspaceSha256": "48cf990866ec75dcf7c1c08c8c52cb85001085ebfb5c81da82370a0030ca90f3",
+        "passed": true
+      }
+    ],
+    "priorDiagnosticAcUnchangedFiles": [
+      {
+        "file": "src/components/DiagnosticAcEnquiryPanel.tsx",
+        "sha256": "5f1a1e5f027e96e915f35b211973c521fa18f0584b3cb66868031c81e81d1bfa",
+        "expectedSha256": "5f1a1e5f027e96e915f35b211973c521fa18f0584b3cb66868031c81e81d1bfa",
+        "passed": true
+      },
+      {
+        "file": "src/data/diagnosticsAcGeneralContent.ts",
+        "sha256": "ba94d9fec0917704b2441acb2ed38029eadac984700bda5c6a55a739ec5cb71a",
+        "expectedSha256": "ba94d9fec0917704b2441acb2ed38029eadac984700bda5c6a55a739ec5cb71a",
+        "passed": true
+      },
+      {
+        "file": "src/data/diagnosticsAcBrandContent.ts",
+        "sha256": "034b378502080ecef31d6e43eb857d79c9c073a3cd540c5a3013ae1b349ecf76",
+        "expectedSha256": "034b378502080ecef31d6e43eb857d79c9c073a3cd540c5a3013ae1b349ecf76",
+        "passed": true
+      },
+      {
+        "file": "scripts/validate-query-release.mjs",
+        "sha256": "c918eabe56f3929228719466b76453b9d5344a84385c96bea79d542bca9407b3",
+        "expectedSha256": "c918eabe56f3929228719466b76453b9d5344a84385c96bea79d542bca9407b3",
+        "passed": true
+      }
+    ]
+  },
+  "productionBuild": {
+    "passed": true,
+    "steps": 19,
+    "renderedRoutes": 1256,
+    "canonicalSitemapUrls": 1005
+  },
+  "cli": {
+    "passed": true,
+    "suites": 13,
+    "eslintErrors": 0,
+    "eslintWarnings": 11,
+    "suitesDetail": [
+      {
+        "name": "production-build-19-steps",
+        "command": [
+          "C:\\Program Files\\nodejs\\node.exe",
+          "scripts/build-production-local.mjs"
+        ],
+        "cwd": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\ecu-electronics-2026-10-19\\candidate.local",
+        "exitCode": 0,
+        "passed": true,
+        "seconds": 26.023,
+        "log": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\ecu-electronics-2026-10-19\\qa\\production-build-19-steps.log"
+      },
+      {
+        "name": "typescript-app",
+        "command": [
+          "C:\\Program Files\\nodejs\\node.exe",
+          "node_modules/typescript/bin/tsc",
+          "--noEmit",
+          "-p",
+          "tsconfig.app.json"
+        ],
+        "cwd": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\ecu-electronics-2026-10-19\\candidate.local",
+        "exitCode": 0,
+        "passed": true,
+        "seconds": 5.129,
+        "log": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\ecu-electronics-2026-10-19\\qa\\typescript-app.log"
+      },
+      {
+        "name": "typescript-node",
+        "command": [
+          "C:\\Program Files\\nodejs\\node.exe",
+          "node_modules/typescript/bin/tsc",
+          "--noEmit",
+          "-p",
+          "tsconfig.node.json"
+        ],
+        "cwd": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\ecu-electronics-2026-10-19\\candidate.local",
+        "exitCode": 0,
+        "passed": true,
+        "seconds": 0.54,
+        "log": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\ecu-electronics-2026-10-19\\qa\\typescript-node.log"
+      },
+      {
+        "name": "eslint",
+        "command": [
+          "C:\\Program Files\\nodejs\\node.exe",
+          "node_modules/eslint/bin/eslint.js",
+          "."
+        ],
+        "cwd": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\ecu-electronics-2026-10-19\\candidate.local",
+        "exitCode": 0,
+        "passed": true,
+        "seconds": 2.967,
+        "log": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\ecu-electronics-2026-10-19\\qa\\eslint.log"
+      },
+      {
+        "name": "master-seo",
+        "command": [
+          "C:\\Program Files\\nodejs\\node.exe",
+          "scripts/validate-master-seo.mjs"
+        ],
+        "cwd": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\ecu-electronics-2026-10-19\\candidate.local",
+        "exitCode": 0,
+        "passed": true,
+        "seconds": 0.565,
+        "log": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\ecu-electronics-2026-10-19\\qa\\master-seo.log"
+      },
+      {
+        "name": "bmw-hub",
+        "command": [
+          "C:\\Program Files\\nodejs\\node.exe",
+          "scripts/validate-bmw-hub.mjs"
+        ],
+        "cwd": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\ecu-electronics-2026-10-19\\candidate.local",
+        "exitCode": 0,
+        "passed": true,
+        "seconds": 0.497,
+        "log": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\ecu-electronics-2026-10-19\\qa\\bmw-hub.log"
+      },
+      {
+        "name": "paint-care-regression",
+        "command": [
+          "C:\\Program Files\\nodejs\\node.exe",
+          "scripts/validate-paint-care-cluster.mjs"
+        ],
+        "cwd": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\ecu-electronics-2026-10-19\\candidate.local",
+        "exitCode": 0,
+        "passed": true,
+        "seconds": 1.006,
+        "log": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\ecu-electronics-2026-10-19\\qa\\paint-care-regression.log"
+      },
+      {
+        "name": "tuning-regression",
+        "command": [
+          "C:\\Program Files\\nodejs\\node.exe",
+          "scripts/validate-tuning.mjs"
+        ],
+        "cwd": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\ecu-electronics-2026-10-19\\candidate.local",
+        "exitCode": 0,
+        "passed": true,
+        "seconds": 0.601,
+        "log": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\ecu-electronics-2026-10-19\\qa\\tuning-regression.log"
+      },
+      {
+        "name": "routing-response-regression",
+        "command": [
+          "C:\\Program Files\\nodejs\\node.exe",
+          "scripts/test-routing-response.mjs"
+        ],
+        "cwd": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\ecu-electronics-2026-10-19\\candidate.local",
+        "exitCode": 0,
+        "passed": true,
+        "seconds": 2.13,
+        "log": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\ecu-electronics-2026-10-19\\qa\\routing-response-regression.log"
+      },
+      {
+        "name": "brand-booking-form",
+        "command": [
+          "C:\\Program Files\\nodejs\\node.exe",
+          "outputs/repair-service-2026-10-19/qa/test-brand-form.mjs"
+        ],
+        "cwd": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\ecu-electronics-2026-10-19\\candidate.local",
+        "exitCode": 0,
+        "passed": true,
+        "seconds": 0.515,
+        "log": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\ecu-electronics-2026-10-19\\qa\\brand-booking-form.log"
+      },
+      {
+        "name": "combined-service-seo",
+        "command": [
+          "C:\\Program Files\\nodejs\\node.exe",
+          "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\ecu-electronics-2026-10-19\\qa\\validate-combined-static.mjs",
+          "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\ecu-electronics-2026-10-19\\qa"
+        ],
+        "cwd": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\ecu-electronics-2026-10-19\\candidate.local",
+        "exitCode": 0,
+        "passed": true,
+        "seconds": 0.381,
+        "log": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\ecu-electronics-2026-10-19\\qa\\combined-service-seo.log"
+      },
+      {
+        "name": "diagnostics-ac-static",
+        "command": [
+          "C:\\Program Files\\nodejs\\node.exe",
+          "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\ecu-electronics-2026-10-19\\qa\\validate-diagnostics-ac-static.mjs",
+          "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\ecu-electronics-2026-10-19\\qa\\diagnostics-ac-regression"
+        ],
+        "cwd": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\ecu-electronics-2026-10-19\\candidate.local",
+        "exitCode": 0,
+        "passed": true,
+        "seconds": null,
+        "log": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\ecu-electronics-2026-10-19\\qa\\diagnostics-ac-static-rerun.log",
+        "initialLog": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\ecu-electronics-2026-10-19\\qa\\diagnostics-ac-static.log",
+        "rerunAt": "2026-10-19T08:37:23.219Z",
+        "rerunEvidence": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\ecu-electronics-2026-10-19\\qa\\diagnostics-ac-regression\\diagnostics-ac-static-results.json",
+        "reason": "Test-only correction: remove marked new panel with its two known integration wrappers before strict old-content comparison; do not require an explicit credential warning inside the WhatsApp draft because the visible privacy notice already supplies it and no credential fields exist. Original failed attempt retained."
+      },
+      {
+        "name": "ecu-electronics-static",
+        "command": [
+          "C:\\Program Files\\nodejs\\node.exe",
+          "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\ecu-electronics-2026-10-19\\qa\\validate-ecu-electronics-static.mjs",
+          "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\ecu-electronics-2026-10-19\\qa"
+        ],
+        "cwd": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\ecu-electronics-2026-10-19\\candidate.local",
+        "exitCode": 0,
+        "passed": true,
+        "seconds": null,
+        "log": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\ecu-electronics-2026-10-19\\qa\\ecu-electronics-static-rerun.log",
+        "initialLog": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\ecu-electronics-2026-10-19\\qa\\ecu-electronics-static.log",
+        "rerunAt": "2026-10-19T08:37:40.388Z",
+        "rerunEvidence": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\ecu-electronics-2026-10-19\\qa\\ecu-electronics-static-results.json",
+        "reason": "Test-only correction: remove marked new panel with its two known integration wrappers before strict old-content comparison; do not require an explicit credential warning inside the WhatsApp draft because the visible privacy notice already supplies it and no credential fields exist. Original failed attempt retained."
+      }
+    ]
+  },
+  "static": {
+    "ecuOwners": 8,
+    "ecuLocales": 14,
+    "ecuAssertions": 614,
+    "newDirectCanonicalLinkOccurrences": 30,
+    "unchangedMetadataH1GraphsAndExistingCtas": true,
+    "existingQuestionsPreserved": true,
+    "newPlainTextQuestions": 42,
+    "priorHubRepairLocales": 32,
+    "priorHubRepairAssertions": 1454,
+    "priorAcLocales": 16,
+    "priorAcAssertions": 1011,
+    "priorProtectedVisibleHtmlRoutes": 53,
+    "retainedNoindexPolicies": 20,
+    "noNewRoutes": true
+  },
+  "browser": {
+    "passed": true,
+    "suites": 8,
+    "ecu": {
+      "responsiveCases": 42,
+      "viewportWidths": [
+        1440,
+        390,
+        320
+      ],
+      "contactPairs": 14,
+      "noJavaScript": 14,
+      "spaLinks": 14,
+      "runtimeErrors": 0,
+      "failedLocalResponses": 0,
+      "touchEmulatedMobileCases": 5,
+      "touchContactPairs": 5,
+      "screenshots": [
+        "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\ecu-electronics-2026-10-19\\qa\\ecu-electronics-browser\\services__car-diagnostics-dubai-390.png",
+        "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\ecu-electronics-2026-10-19\\qa\\ecu-electronics-browser\\ar__services__mercedes-diagnostics-dubai-390.png",
+        "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\ecu-electronics-2026-10-19\\qa\\ecu-electronics-browser\\ar__brands__bmw-service-dubai__electrical-repair-390.png",
+        "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\ecu-electronics-2026-10-19\\qa\\ecu-electronics-browser\\services__head-unit-repair-dubai-390.png",
+        "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\ecu-electronics-2026-10-19\\qa\\ecu-electronics-browser\\services__cadillac-cue-screen-repair-dubai-390.png"
+      ],
+      "passed": true
+    },
+    "diagnosticsAc": {
+      "responsiveCases": 48,
+      "contactTriples": 16,
+      "noJavaScript": 16,
+      "spaLinks": 16,
+      "passed": true
+    },
+    "fiveBrand": {
+      "responsiveCases": 30,
+      "interactions": 30,
+      "noJavaScript": 10,
+      "passed": true
+    },
+    "repair": {
+      "responsiveCases": 66,
+      "noJavaScript": 22,
+      "hubLinks": 22,
+      "passed": true
+    },
+    "master": {
+      "responsiveCases": 27,
+      "interactions": 17,
+      "spaChecks": 7,
+      "passed": true
+    },
+    "protection": {
+      "requests": 9,
+      "unknownRouteStatus": 404,
+      "passed": true
+    },
+    "ppf": {
+      "whatsAppCtas": 5,
+      "forms": 2,
+      "replyMethods": 3,
+      "languageRoundTrip": true,
+      "passed": true
+    },
+    "tuning": {
+      "responsiveCases": 6,
+      "packageRows": 62,
+      "db11WithheldItemsPreserved": true,
+      "s63EnquiryOnlyPreserved": true,
+      "passed": true
+    }
+  },
+  "visualReview": {
+    "checkedAt": "2026-10-19T08:46:25.069Z",
+    "passed": true,
+    "method": "Five saved 390px touch-emulated screenshots were opened and inspected using view_image. The original desktop-pointer snapshots are retained separately.",
+    "screenshots": [
+      "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\ecu-electronics-2026-10-19\\qa\\ecu-electronics-browser\\services__car-diagnostics-dubai-390.png",
+      "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\ecu-electronics-2026-10-19\\qa\\ecu-electronics-browser\\ar__services__mercedes-diagnostics-dubai-390.png",
+      "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\ecu-electronics-2026-10-19\\qa\\ecu-electronics-browser\\ar__brands__bmw-service-dubai__electrical-repair-390.png",
+      "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\ecu-electronics-2026-10-19\\qa\\ecu-electronics-browser\\services__head-unit-repair-dubai-390.png",
+      "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\ecu-electronics-2026-10-19\\qa\\ecu-electronics-browser\\services__cadillac-cue-screen-repair-dubai-390.png"
+    ],
+    "observations": [
+      "English software enquiry copy, quotation button, phone number and receipt/privacy notes readable at390px.",
+      "Arabic software and BMW electrical copy aligned RTL; telephone number remains readable LTR and both contact actions are visible.",
+      "English CUE and head-unit pages retain their English-only navigation and clear fitted-unit assessment CTAs.",
+      "No horizontal clipping or overlapping contact controls. The existing sticky header remains at the top while scrolling.",
+      "Coarse touch emulation removes the desktop mouse-cursor dot seen in the first screenshots; five safe touch contact pairs pass."
+    ],
+    "limits": "Representative visual checks plus automated320/390/1440px coverage; not a field usability study or Core Web Vitals measurement."
+  },
+  "harnessNotes": [
+    "Generated routing input synchronized before the stable 19-stage build; JSON unchanged, CRLF normalized to LF only inside candidate.",
+    "Legacy helper paths/ports adapted to new isolated directory; old product assertions unchanged.",
+    "Initial static harness removed the new panel but left its added wrapper. Exact-difference evidence verified only the two new wrappers; final test removes only marked new section plus known wrapper before strict old-markup comparison.",
+    "Privacy notice is beside the draft; final test asserts no credential/security fields in the draft, rather than requiring the notice to be repeated in the message.",
+    "Initial sandbox could not connect to its loopback preview. Local browser suite reran with approved runtime permissions, while blocking external traffic and all write requests. No product fix or source change was required."
+  ],
+  "safety": "All browser traffic restricted to loopback GET/HEAD; external requests and writes blocked. Contact navigation prevented/window.open stubbed. No sent WhatsApp message, call, received enquiry, appointment, backend write, commit, push, deployment, publication or Google Business Profile edit.",
+  "limitations": [
+    "Local HTML/layout tests are not field Core Web Vitals.",
+    "JSON-LD/provider/FAQ integrity tested locally; no Google Rich Results or URL Inspection API invoked.",
+    "Clicks and drafts are intent signals, not verified delivered messages, connected calls, CRM records or confirmed enquiries.",
+    "Local QA does not establish active production deployment, publication source, ranking improvement or a recoverable authenticated rollback state."
+  ]
+}

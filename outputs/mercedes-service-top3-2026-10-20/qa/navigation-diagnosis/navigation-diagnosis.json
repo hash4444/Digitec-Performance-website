@@ -1,0 +1,3166 @@
+{
+  "at": "2026-10-20T05:48:40.603Z",
+  "cases": [
+    {
+      "mode": "fresh320",
+      "navigationStartedMs": 0,
+      "networkidlePassed": true,
+      "pendingAtConclusion": [],
+      "state": {
+        "url": "http://127.0.0.1:5213/brands/mercedes-benz-service-dubai",
+        "title": "Mercedes Service Dubai | Maintenance & Repair | DIGI-TEC",
+        "readyState": "complete",
+        "h1": "Mercedes-Benz Service in Dubai",
+        "canonical": "https://digitecme.com/brands/mercedes-benz-service-dubai",
+        "htmlLanguage": "en",
+        "imageTotal": 6,
+        "imagePending": [
+          {
+            "src": "",
+            "loading": "lazy"
+          },
+          {
+            "src": "",
+            "loading": "lazy"
+          },
+          {
+            "src": "",
+            "loading": "lazy"
+          }
+        ],
+        "fontsStatus": "loaded",
+        "resourceCount": 41,
+        "overflow": 0
+      },
+      "events": [
+        {
+          "ms": 7,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/brands/mercedes-benz-service-dubai"
+        },
+        {
+          "ms": 15,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/brands/mercedes-benz-service-dubai",
+          "status": 200
+        },
+        {
+          "ms": 24,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/brands/mercedes-benz-service-dubai"
+        },
+        {
+          "ms": 25,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/index-BRaIlxMY.js"
+        },
+        {
+          "ms": 25,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/index-DeCDguP7.css"
+        },
+        {
+          "ms": 25,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/images/digitec-d-mark.png"
+        },
+        {
+          "ms": 25,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/images/mercedes-repair-dubai-hero.jpg"
+        },
+        {
+          "ms": 26,
+          "kind": "request",
+          "url": "https://www.googletagmanager.com/gtag/js?id=G-4TRCEJSY4S"
+        },
+        {
+          "ms": 26,
+          "kind": "request",
+          "url": "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Tajawal:wght@400;500;700;800;900&display=swap"
+        },
+        {
+          "ms": 26,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/brand-logos/showcase/mercedes-benz.png"
+        },
+        {
+          "ms": 26,
+          "kind": "request",
+          "url": "https://www.googletagmanager.com/gtm.js?id=GTM-T3GVSPND"
+        },
+        {
+          "ms": 27,
+          "kind": "failed",
+          "url": "https://www.googletagmanager.com/gtag/js?id=G-4TRCEJSY4S",
+          "failure": {
+            "errorText": "net::ERR_FAILED"
+          }
+        },
+        {
+          "ms": 28,
+          "kind": "failed",
+          "url": "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Tajawal:wght@400;500;700;800;900&display=swap",
+          "failure": {
+            "errorText": "net::ERR_FAILED"
+          }
+        },
+        {
+          "ms": 28,
+          "kind": "failed",
+          "url": "https://www.googletagmanager.com/gtm.js?id=GTM-T3GVSPND",
+          "failure": {
+            "errorText": "net::ERR_FAILED"
+          }
+        },
+        {
+          "ms": 33,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/index-DeCDguP7.css",
+          "status": 200
+        },
+        {
+          "ms": 33,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/index-DeCDguP7.css"
+        },
+        {
+          "ms": 35,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/brand-logos/showcase/mercedes-benz.png",
+          "status": 200
+        },
+        {
+          "ms": 36,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/images/mercedes-repair-dubai-hero.jpg",
+          "status": 200
+        },
+        {
+          "ms": 37,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/brand-logos/showcase/mercedes-benz.png"
+        },
+        {
+          "ms": 37,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/images/mercedes-repair-dubai-hero.jpg"
+        },
+        {
+          "ms": 38,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/images/digitec-d-mark.png",
+          "status": 200
+        },
+        {
+          "ms": 38,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/images/digitec-d-mark.png"
+        },
+        {
+          "ms": 43,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/index-BRaIlxMY.js",
+          "status": 200
+        },
+        {
+          "ms": 43,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/index-BRaIlxMY.js"
+        },
+        {
+          "ms": 47,
+          "kind": "domcontentloaded"
+        },
+        {
+          "ms": 90,
+          "kind": "load"
+        },
+        {
+          "ms": 105,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/BrandPage-BG1wPQsC.js"
+        },
+        {
+          "ms": 106,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/Footer-DC4ciOBP.js"
+        },
+        {
+          "ms": 106,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/brands-AXX1KE9i.js"
+        },
+        {
+          "ms": 106,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/services-0_uFGZym.js"
+        },
+        {
+          "ms": 106,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/mercedes-amg-engine-repair-dubai-DVcJbu9t.js"
+        },
+        {
+          "ms": 107,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/suspension-repair-dubai-ChRPM65Z.js"
+        },
+        {
+          "ms": 107,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/ceramicCoatingContent-BIl558B6.js"
+        },
+        {
+          "ms": 107,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/ppfContent-BvR9pZPp.js"
+        },
+        {
+          "ms": 107,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/paintCorrectionContent-Co45hanX.js"
+        },
+        {
+          "ms": 107,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/paintProtectionContent-LrpIjxW-.js"
+        },
+        {
+          "ms": 107,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/accordion-DwI4x3y1.js"
+        },
+        {
+          "ms": 107,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/index-DqNd-BoL.js"
+        },
+        {
+          "ms": 107,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/message-circle-BBrOYs2e.js"
+        },
+        {
+          "ms": 107,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/GoogleReviews-YqwLkbHD.js"
+        },
+        {
+          "ms": 108,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/Reveal-Fzp8Rjhb.js"
+        },
+        {
+          "ms": 108,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/arrow-up-right-BWNuSSbV.js"
+        },
+        {
+          "ms": 108,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/arrow-right-Ck64V7A4.js"
+        },
+        {
+          "ms": 108,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/arrow-left-BZ3UPOWB.js"
+        },
+        {
+          "ms": 108,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/astonMartinHubContent-FZdxiOBc.js"
+        },
+        {
+          "ms": 108,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/TrustBar-Bg7aO-yf.js"
+        },
+        {
+          "ms": 108,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/ar-brands-C-3Hm3cj.js"
+        },
+        {
+          "ms": 108,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/ar-services-CLhfazuX.js"
+        },
+        {
+          "ms": 111,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/porsche-workshop-dubai-BsN5HQ-W.js"
+        },
+        {
+          "ms": 113,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/g63-brabus-g800-finished-front-eHldKgiA.js"
+        },
+        {
+          "ms": 113,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/lamborghini-urus-workshop-dubai-CLM9G8gj.js"
+        },
+        {
+          "ms": 114,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/mercedesModelPages-C5MlnnLW.js"
+        },
+        {
+          "ms": 114,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/mercedesProblemGuides-GbL9AgyS.js"
+        },
+        {
+          "ms": 114,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/bmwModelPages-DjCI7eb2.js"
+        },
+        {
+          "ms": 114,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/phone-bF6g2QMa.js"
+        },
+        {
+          "ms": 114,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/map-pin-DHvNOwnx.js"
+        },
+        {
+          "ms": 114,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/circle-check-C4IIKVWI.js"
+        },
+        {
+          "ms": 121,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/favicon.ico?v=3"
+        },
+        {
+          "ms": 132,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/BrandPage-BG1wPQsC.js",
+          "status": 200
+        },
+        {
+          "ms": 132,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/BrandPage-BG1wPQsC.js"
+        },
+        {
+          "ms": 132,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/mercedes-amg-engine-repair-dubai-DVcJbu9t.js",
+          "status": 200
+        },
+        {
+          "ms": 132,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/suspension-repair-dubai-ChRPM65Z.js",
+          "status": 200
+        },
+        {
+          "ms": 132,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/ceramicCoatingContent-BIl558B6.js",
+          "status": 200
+        },
+        {
+          "ms": 132,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/Footer-DC4ciOBP.js",
+          "status": 200
+        },
+        {
+          "ms": 132,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/Footer-DC4ciOBP.js"
+        },
+        {
+          "ms": 132,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/services-0_uFGZym.js",
+          "status": 200
+        },
+        {
+          "ms": 132,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/services-0_uFGZym.js"
+        },
+        {
+          "ms": 132,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/brands-AXX1KE9i.js",
+          "status": 200
+        },
+        {
+          "ms": 132,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/brands-AXX1KE9i.js"
+        },
+        {
+          "ms": 132,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/mercedes-amg-engine-repair-dubai-DVcJbu9t.js"
+        },
+        {
+          "ms": 133,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/suspension-repair-dubai-ChRPM65Z.js"
+        },
+        {
+          "ms": 133,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/ceramicCoatingContent-BIl558B6.js"
+        },
+        {
+          "ms": 133,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/ppfContent-BvR9pZPp.js",
+          "status": 200
+        },
+        {
+          "ms": 133,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/ppfContent-BvR9pZPp.js"
+        },
+        {
+          "ms": 133,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/paintProtectionContent-LrpIjxW-.js",
+          "status": 200
+        },
+        {
+          "ms": 133,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/paintProtectionContent-LrpIjxW-.js"
+        },
+        {
+          "ms": 133,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/index-DqNd-BoL.js",
+          "status": 200
+        },
+        {
+          "ms": 133,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/index-DqNd-BoL.js"
+        },
+        {
+          "ms": 133,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/paintCorrectionContent-Co45hanX.js",
+          "status": 200
+        },
+        {
+          "ms": 133,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/paintCorrectionContent-Co45hanX.js"
+        },
+        {
+          "ms": 133,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/accordion-DwI4x3y1.js",
+          "status": 200
+        },
+        {
+          "ms": 133,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/accordion-DwI4x3y1.js"
+        },
+        {
+          "ms": 133,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/message-circle-BBrOYs2e.js",
+          "status": 200
+        },
+        {
+          "ms": 133,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/message-circle-BBrOYs2e.js"
+        },
+        {
+          "ms": 133,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/GoogleReviews-YqwLkbHD.js",
+          "status": 200
+        },
+        {
+          "ms": 133,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/GoogleReviews-YqwLkbHD.js"
+        },
+        {
+          "ms": 133,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/Reveal-Fzp8Rjhb.js",
+          "status": 200
+        },
+        {
+          "ms": 133,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/Reveal-Fzp8Rjhb.js"
+        },
+        {
+          "ms": 133,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/arrow-up-right-BWNuSSbV.js",
+          "status": 200
+        },
+        {
+          "ms": 133,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/arrow-up-right-BWNuSSbV.js"
+        },
+        {
+          "ms": 133,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/arrow-left-BZ3UPOWB.js",
+          "status": 200
+        },
+        {
+          "ms": 133,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/arrow-left-BZ3UPOWB.js"
+        },
+        {
+          "ms": 135,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/arrow-right-Ck64V7A4.js",
+          "status": 200
+        },
+        {
+          "ms": 135,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/arrow-right-Ck64V7A4.js"
+        },
+        {
+          "ms": 135,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/TrustBar-Bg7aO-yf.js",
+          "status": 200
+        },
+        {
+          "ms": 135,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/TrustBar-Bg7aO-yf.js"
+        },
+        {
+          "ms": 136,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/astonMartinHubContent-FZdxiOBc.js",
+          "status": 200
+        },
+        {
+          "ms": 136,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/astonMartinHubContent-FZdxiOBc.js"
+        },
+        {
+          "ms": 136,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/ar-services-CLhfazuX.js",
+          "status": 200
+        },
+        {
+          "ms": 136,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/ar-services-CLhfazuX.js"
+        },
+        {
+          "ms": 136,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/ar-brands-C-3Hm3cj.js",
+          "status": 200
+        },
+        {
+          "ms": 136,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/ar-brands-C-3Hm3cj.js"
+        },
+        {
+          "ms": 136,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/porsche-workshop-dubai-BsN5HQ-W.js",
+          "status": 200
+        },
+        {
+          "ms": 136,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/g63-brabus-g800-finished-front-eHldKgiA.js",
+          "status": 200
+        },
+        {
+          "ms": 136,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/porsche-workshop-dubai-BsN5HQ-W.js"
+        },
+        {
+          "ms": 136,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/g63-brabus-g800-finished-front-eHldKgiA.js"
+        },
+        {
+          "ms": 137,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/lamborghini-urus-workshop-dubai-CLM9G8gj.js",
+          "status": 200
+        },
+        {
+          "ms": 137,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/lamborghini-urus-workshop-dubai-CLM9G8gj.js"
+        },
+        {
+          "ms": 137,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/mercedesModelPages-C5MlnnLW.js",
+          "status": 200
+        },
+        {
+          "ms": 137,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/mercedesModelPages-C5MlnnLW.js"
+        },
+        {
+          "ms": 138,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/mercedesProblemGuides-GbL9AgyS.js",
+          "status": 200
+        },
+        {
+          "ms": 138,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/mercedesProblemGuides-GbL9AgyS.js"
+        },
+        {
+          "ms": 138,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/map-pin-DHvNOwnx.js",
+          "status": 200
+        },
+        {
+          "ms": 139,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/map-pin-DHvNOwnx.js"
+        },
+        {
+          "ms": 139,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/favicon.ico?v=3",
+          "status": 200
+        },
+        {
+          "ms": 139,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/phone-bF6g2QMa.js",
+          "status": 200
+        },
+        {
+          "ms": 139,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/phone-bF6g2QMa.js"
+        },
+        {
+          "ms": 139,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/bmwModelPages-DjCI7eb2.js",
+          "status": 200
+        },
+        {
+          "ms": 139,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/bmwModelPages-DjCI7eb2.js"
+        },
+        {
+          "ms": 139,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/circle-check-C4IIKVWI.js",
+          "status": 200
+        },
+        {
+          "ms": 139,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/circle-check-C4IIKVWI.js"
+        },
+        {
+          "ms": 139,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/favicon.ico?v=3"
+        },
+        {
+          "ms": 141,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/favicon-192x192.png?v=3"
+        },
+        {
+          "ms": 147,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/favicon-192x192.png?v=3",
+          "status": 200
+        },
+        {
+          "ms": 147,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/favicon-192x192.png?v=3"
+        }
+      ],
+      "screenshot": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\qa\\navigation-diagnosis\\fresh320.png"
+    },
+    {
+      "mode": "spa-back-then-reload320",
+      "navigationStartedMs": 1518,
+      "networkidlePassed": true,
+      "pendingAtConclusion": [
+        {
+          "url": "http://127.0.0.1:5213/lovable-uploads/c1c2c5d8-fd7e-4d38-945c-e52315b4229e.png",
+          "method": "GET",
+          "at": 1508
+        },
+        {
+          "url": "http://127.0.0.1:5213/lovable-uploads/150c684d-11eb-476b-b768-afe7cad297cc.png",
+          "method": "GET",
+          "at": 1508
+        },
+        {
+          "url": "http://127.0.0.1:5213/lovable-uploads/9f435c28-2f08-437b-99ad-2252d8ea2071.png",
+          "method": "GET",
+          "at": 1509
+        },
+        {
+          "url": "http://127.0.0.1:5213/lovable-uploads/678fdd1f-2841-4606-8533-51f82257a4a0.png",
+          "method": "GET",
+          "at": 1509
+        },
+        {
+          "url": "http://127.0.0.1:5213/images/paint-correction/workshop-floor-960.webp",
+          "method": "GET",
+          "at": 1510
+        },
+        {
+          "url": "http://127.0.0.1:5213/lovable-uploads/9db7fc3e-a988-4b9d-a7ab-a6494b58561e.png",
+          "method": "GET",
+          "at": 1510
+        },
+        {
+          "url": "http://127.0.0.1:5213/assets/soft-close-door-repair-BTR5h1QP.jpg",
+          "method": "GET",
+          "at": 1510
+        },
+        {
+          "url": "http://127.0.0.1:5213/lovable-uploads/car-body-repair-v2.png",
+          "method": "GET",
+          "at": 1510
+        },
+        {
+          "url": "http://127.0.0.1:5213/images/ppf/film-application-1200.webp",
+          "method": "GET",
+          "at": 1511
+        },
+        {
+          "url": "http://127.0.0.1:5213/images/ceramic-coating/black-mercedes-finish-1024.webp",
+          "method": "GET",
+          "at": 1511
+        },
+        {
+          "url": "http://127.0.0.1:5213/images/paint-correction/porsche-workshop-640.webp",
+          "method": "GET",
+          "at": 1511
+        },
+        {
+          "url": "http://127.0.0.1:5213/favicon-192x192.png?v=3",
+          "method": "GET",
+          "at": 1540
+        }
+      ],
+      "state": {
+        "url": "http://127.0.0.1:5213/brands/mercedes-benz-service-dubai",
+        "title": "Mercedes Service Dubai | Maintenance & Repair | DIGI-TEC",
+        "readyState": "complete",
+        "h1": "Mercedes-Benz Service in Dubai",
+        "canonical": "https://digitecme.com/brands/mercedes-benz-service-dubai",
+        "htmlLanguage": "en",
+        "imageTotal": 6,
+        "imagePending": [
+          {
+            "src": "",
+            "loading": "lazy"
+          },
+          {
+            "src": "",
+            "loading": "lazy"
+          },
+          {
+            "src": "",
+            "loading": "lazy"
+          }
+        ],
+        "fontsStatus": "loaded",
+        "resourceCount": 41,
+        "overflow": 0
+      },
+      "events": [
+        {
+          "ms": 6,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/brands/mercedes-benz-service-dubai"
+        },
+        {
+          "ms": 10,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/brands/mercedes-benz-service-dubai",
+          "status": 200
+        },
+        {
+          "ms": 21,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/index-BRaIlxMY.js"
+        },
+        {
+          "ms": 22,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/index-DeCDguP7.css"
+        },
+        {
+          "ms": 22,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/images/digitec-d-mark.png"
+        },
+        {
+          "ms": 22,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/images/mercedes-repair-dubai-hero.jpg"
+        },
+        {
+          "ms": 22,
+          "kind": "request",
+          "url": "https://www.googletagmanager.com/gtag/js?id=G-4TRCEJSY4S"
+        },
+        {
+          "ms": 23,
+          "kind": "request",
+          "url": "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Tajawal:wght@400;500;700;800;900&display=swap"
+        },
+        {
+          "ms": 23,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/brand-logos/showcase/mercedes-benz.png"
+        },
+        {
+          "ms": 23,
+          "kind": "request",
+          "url": "https://www.googletagmanager.com/gtm.js?id=GTM-T3GVSPND"
+        },
+        {
+          "ms": 23,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/brands/mercedes-benz-service-dubai"
+        },
+        {
+          "ms": 24,
+          "kind": "failed",
+          "url": "https://www.googletagmanager.com/gtag/js?id=G-4TRCEJSY4S",
+          "failure": {
+            "errorText": "net::ERR_FAILED"
+          }
+        },
+        {
+          "ms": 24,
+          "kind": "failed",
+          "url": "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Tajawal:wght@400;500;700;800;900&display=swap",
+          "failure": {
+            "errorText": "net::ERR_FAILED"
+          }
+        },
+        {
+          "ms": 25,
+          "kind": "failed",
+          "url": "https://www.googletagmanager.com/gtm.js?id=GTM-T3GVSPND",
+          "failure": {
+            "errorText": "net::ERR_FAILED"
+          }
+        },
+        {
+          "ms": 31,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/index-DeCDguP7.css",
+          "status": 200
+        },
+        {
+          "ms": 32,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/index-DeCDguP7.css"
+        },
+        {
+          "ms": 32,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/images/digitec-d-mark.png",
+          "status": 200
+        },
+        {
+          "ms": 33,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/images/digitec-d-mark.png"
+        },
+        {
+          "ms": 34,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/images/mercedes-repair-dubai-hero.jpg",
+          "status": 200
+        },
+        {
+          "ms": 34,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/images/mercedes-repair-dubai-hero.jpg"
+        },
+        {
+          "ms": 34,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/brand-logos/showcase/mercedes-benz.png",
+          "status": 200
+        },
+        {
+          "ms": 34,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/brand-logos/showcase/mercedes-benz.png"
+        },
+        {
+          "ms": 40,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/index-BRaIlxMY.js",
+          "status": 200
+        },
+        {
+          "ms": 40,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/index-BRaIlxMY.js"
+        },
+        {
+          "ms": 44,
+          "kind": "domcontentloaded"
+        },
+        {
+          "ms": 94,
+          "kind": "load"
+        },
+        {
+          "ms": 120,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/BrandPage-BG1wPQsC.js"
+        },
+        {
+          "ms": 120,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/Footer-DC4ciOBP.js"
+        },
+        {
+          "ms": 120,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/brands-AXX1KE9i.js"
+        },
+        {
+          "ms": 120,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/services-0_uFGZym.js"
+        },
+        {
+          "ms": 120,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/mercedes-amg-engine-repair-dubai-DVcJbu9t.js"
+        },
+        {
+          "ms": 121,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/suspension-repair-dubai-ChRPM65Z.js"
+        },
+        {
+          "ms": 122,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/ceramicCoatingContent-BIl558B6.js"
+        },
+        {
+          "ms": 122,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/ppfContent-BvR9pZPp.js"
+        },
+        {
+          "ms": 122,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/paintCorrectionContent-Co45hanX.js"
+        },
+        {
+          "ms": 122,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/paintProtectionContent-LrpIjxW-.js"
+        },
+        {
+          "ms": 122,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/accordion-DwI4x3y1.js"
+        },
+        {
+          "ms": 122,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/index-DqNd-BoL.js"
+        },
+        {
+          "ms": 122,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/message-circle-BBrOYs2e.js"
+        },
+        {
+          "ms": 122,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/GoogleReviews-YqwLkbHD.js"
+        },
+        {
+          "ms": 122,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/Reveal-Fzp8Rjhb.js"
+        },
+        {
+          "ms": 122,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/arrow-up-right-BWNuSSbV.js"
+        },
+        {
+          "ms": 123,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/arrow-right-Ck64V7A4.js"
+        },
+        {
+          "ms": 123,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/arrow-left-BZ3UPOWB.js"
+        },
+        {
+          "ms": 123,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/astonMartinHubContent-FZdxiOBc.js"
+        },
+        {
+          "ms": 123,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/TrustBar-Bg7aO-yf.js"
+        },
+        {
+          "ms": 123,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/ar-brands-C-3Hm3cj.js"
+        },
+        {
+          "ms": 123,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/ar-services-CLhfazuX.js"
+        },
+        {
+          "ms": 123,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/porsche-workshop-dubai-BsN5HQ-W.js"
+        },
+        {
+          "ms": 123,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/g63-brabus-g800-finished-front-eHldKgiA.js"
+        },
+        {
+          "ms": 124,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/lamborghini-urus-workshop-dubai-CLM9G8gj.js"
+        },
+        {
+          "ms": 124,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/mercedesModelPages-C5MlnnLW.js"
+        },
+        {
+          "ms": 124,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/mercedesProblemGuides-GbL9AgyS.js"
+        },
+        {
+          "ms": 124,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/bmwModelPages-DjCI7eb2.js"
+        },
+        {
+          "ms": 124,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/phone-bF6g2QMa.js"
+        },
+        {
+          "ms": 124,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/map-pin-DHvNOwnx.js"
+        },
+        {
+          "ms": 124,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/circle-check-C4IIKVWI.js"
+        },
+        {
+          "ms": 125,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/favicon.ico?v=3"
+        },
+        {
+          "ms": 137,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/Footer-DC4ciOBP.js",
+          "status": 200
+        },
+        {
+          "ms": 137,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/Footer-DC4ciOBP.js"
+        },
+        {
+          "ms": 137,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/services-0_uFGZym.js",
+          "status": 200
+        },
+        {
+          "ms": 137,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/services-0_uFGZym.js"
+        },
+        {
+          "ms": 137,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/mercedes-amg-engine-repair-dubai-DVcJbu9t.js",
+          "status": 200
+        },
+        {
+          "ms": 137,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/mercedes-amg-engine-repair-dubai-DVcJbu9t.js"
+        },
+        {
+          "ms": 137,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/brands-AXX1KE9i.js",
+          "status": 200
+        },
+        {
+          "ms": 137,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/brands-AXX1KE9i.js"
+        },
+        {
+          "ms": 137,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/suspension-repair-dubai-ChRPM65Z.js",
+          "status": 200
+        },
+        {
+          "ms": 137,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/suspension-repair-dubai-ChRPM65Z.js"
+        },
+        {
+          "ms": 138,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/ceramicCoatingContent-BIl558B6.js",
+          "status": 200
+        },
+        {
+          "ms": 138,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/ceramicCoatingContent-BIl558B6.js"
+        },
+        {
+          "ms": 138,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/paintProtectionContent-LrpIjxW-.js",
+          "status": 200
+        },
+        {
+          "ms": 138,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/paintProtectionContent-LrpIjxW-.js"
+        },
+        {
+          "ms": 138,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/paintCorrectionContent-Co45hanX.js",
+          "status": 200
+        },
+        {
+          "ms": 138,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/paintCorrectionContent-Co45hanX.js"
+        },
+        {
+          "ms": 138,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/ppfContent-BvR9pZPp.js",
+          "status": 200
+        },
+        {
+          "ms": 138,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/ppfContent-BvR9pZPp.js"
+        },
+        {
+          "ms": 138,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/accordion-DwI4x3y1.js",
+          "status": 200
+        },
+        {
+          "ms": 138,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/accordion-DwI4x3y1.js"
+        },
+        {
+          "ms": 138,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/index-DqNd-BoL.js",
+          "status": 200
+        },
+        {
+          "ms": 138,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/index-DqNd-BoL.js"
+        },
+        {
+          "ms": 138,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/message-circle-BBrOYs2e.js",
+          "status": 200
+        },
+        {
+          "ms": 138,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/message-circle-BBrOYs2e.js"
+        },
+        {
+          "ms": 139,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/GoogleReviews-YqwLkbHD.js",
+          "status": 200
+        },
+        {
+          "ms": 139,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/Reveal-Fzp8Rjhb.js",
+          "status": 200
+        },
+        {
+          "ms": 139,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/arrow-up-right-BWNuSSbV.js",
+          "status": 200
+        },
+        {
+          "ms": 139,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/GoogleReviews-YqwLkbHD.js"
+        },
+        {
+          "ms": 139,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/Reveal-Fzp8Rjhb.js"
+        },
+        {
+          "ms": 139,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/arrow-up-right-BWNuSSbV.js"
+        },
+        {
+          "ms": 140,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/BrandPage-BG1wPQsC.js",
+          "status": 200
+        },
+        {
+          "ms": 140,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/BrandPage-BG1wPQsC.js"
+        },
+        {
+          "ms": 140,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/arrow-right-Ck64V7A4.js",
+          "status": 200
+        },
+        {
+          "ms": 140,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/arrow-right-Ck64V7A4.js"
+        },
+        {
+          "ms": 140,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/arrow-left-BZ3UPOWB.js",
+          "status": 200
+        },
+        {
+          "ms": 140,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/TrustBar-Bg7aO-yf.js",
+          "status": 200
+        },
+        {
+          "ms": 141,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/ar-brands-C-3Hm3cj.js",
+          "status": 200
+        },
+        {
+          "ms": 141,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/arrow-left-BZ3UPOWB.js"
+        },
+        {
+          "ms": 141,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/TrustBar-Bg7aO-yf.js"
+        },
+        {
+          "ms": 141,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/ar-brands-C-3Hm3cj.js"
+        },
+        {
+          "ms": 141,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/ar-services-CLhfazuX.js",
+          "status": 200
+        },
+        {
+          "ms": 141,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/ar-services-CLhfazuX.js"
+        },
+        {
+          "ms": 142,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/porsche-workshop-dubai-BsN5HQ-W.js",
+          "status": 200
+        },
+        {
+          "ms": 142,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/porsche-workshop-dubai-BsN5HQ-W.js"
+        },
+        {
+          "ms": 142,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/lamborghini-urus-workshop-dubai-CLM9G8gj.js",
+          "status": 200
+        },
+        {
+          "ms": 142,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/lamborghini-urus-workshop-dubai-CLM9G8gj.js"
+        },
+        {
+          "ms": 143,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/g63-brabus-g800-finished-front-eHldKgiA.js",
+          "status": 200
+        },
+        {
+          "ms": 143,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/g63-brabus-g800-finished-front-eHldKgiA.js"
+        },
+        {
+          "ms": 143,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/bmwModelPages-DjCI7eb2.js",
+          "status": 200
+        },
+        {
+          "ms": 143,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/bmwModelPages-DjCI7eb2.js"
+        },
+        {
+          "ms": 143,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/mercedesModelPages-C5MlnnLW.js",
+          "status": 200
+        },
+        {
+          "ms": 143,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/mercedesModelPages-C5MlnnLW.js"
+        },
+        {
+          "ms": 143,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/astonMartinHubContent-FZdxiOBc.js",
+          "status": 200
+        },
+        {
+          "ms": 143,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/astonMartinHubContent-FZdxiOBc.js"
+        },
+        {
+          "ms": 143,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/mercedesProblemGuides-GbL9AgyS.js",
+          "status": 200
+        },
+        {
+          "ms": 143,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/mercedesProblemGuides-GbL9AgyS.js"
+        },
+        {
+          "ms": 143,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/phone-bF6g2QMa.js",
+          "status": 200
+        },
+        {
+          "ms": 143,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/phone-bF6g2QMa.js"
+        },
+        {
+          "ms": 144,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/map-pin-DHvNOwnx.js",
+          "status": 200
+        },
+        {
+          "ms": 144,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/map-pin-DHvNOwnx.js"
+        },
+        {
+          "ms": 144,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/circle-check-C4IIKVWI.js",
+          "status": 200
+        },
+        {
+          "ms": 145,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/favicon.ico?v=3",
+          "status": 200
+        },
+        {
+          "ms": 145,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/favicon.ico?v=3"
+        },
+        {
+          "ms": 145,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/circle-check-C4IIKVWI.js"
+        },
+        {
+          "ms": 146,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/favicon-192x192.png?v=3"
+        },
+        {
+          "ms": 152,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/favicon-192x192.png?v=3",
+          "status": 200
+        },
+        {
+          "ms": 152,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/favicon-192x192.png?v=3"
+        },
+        {
+          "ms": 665,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/services"
+        },
+        {
+          "ms": 671,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/services",
+          "status": 200
+        },
+        {
+          "ms": 700,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/services"
+        },
+        {
+          "ms": 701,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/index-BRaIlxMY.js"
+        },
+        {
+          "ms": 702,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/index-DeCDguP7.css"
+        },
+        {
+          "ms": 702,
+          "kind": "request",
+          "url": "https://www.googletagmanager.com/gtag/js?id=G-4TRCEJSY4S"
+        },
+        {
+          "ms": 702,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/images/digitec-d-mark.png"
+        },
+        {
+          "ms": 702,
+          "kind": "request",
+          "url": "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Tajawal:wght@400;500;700;800;900&display=swap"
+        },
+        {
+          "ms": 703,
+          "kind": "request",
+          "url": "https://www.googletagmanager.com/gtm.js?id=GTM-T3GVSPND"
+        },
+        {
+          "ms": 704,
+          "kind": "failed",
+          "url": "https://www.googletagmanager.com/gtag/js?id=G-4TRCEJSY4S",
+          "failure": {
+            "errorText": "net::ERR_FAILED"
+          }
+        },
+        {
+          "ms": 705,
+          "kind": "failed",
+          "url": "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Tajawal:wght@400;500;700;800;900&display=swap",
+          "failure": {
+            "errorText": "net::ERR_FAILED"
+          }
+        },
+        {
+          "ms": 705,
+          "kind": "failed",
+          "url": "https://www.googletagmanager.com/gtm.js?id=GTM-T3GVSPND",
+          "failure": {
+            "errorText": "net::ERR_FAILED"
+          }
+        },
+        {
+          "ms": 710,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/index-DeCDguP7.css",
+          "status": 200
+        },
+        {
+          "ms": 711,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/index-DeCDguP7.css"
+        },
+        {
+          "ms": 731,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/lovable-uploads/b56133bf-55e4-4bc9-884f-15f732132259.png"
+        },
+        {
+          "ms": 732,
+          "kind": "request",
+          "url": "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=800&h=600&fit=crop"
+        },
+        {
+          "ms": 733,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/images/digitec-d-mark.png",
+          "status": 200
+        },
+        {
+          "ms": 733,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/images/digitec-d-mark.png"
+        },
+        {
+          "ms": 734,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/index-BRaIlxMY.js",
+          "status": 200
+        },
+        {
+          "ms": 734,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/index-BRaIlxMY.js"
+        },
+        {
+          "ms": 738,
+          "kind": "domcontentloaded"
+        },
+        {
+          "ms": 739,
+          "kind": "failed",
+          "url": "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=800&h=600&fit=crop",
+          "failure": {
+            "errorText": "net::ERR_FAILED"
+          }
+        },
+        {
+          "ms": 749,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/Services-qjxkM0PI.js"
+        },
+        {
+          "ms": 749,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/Footer-DC4ciOBP.js"
+        },
+        {
+          "ms": 750,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/AnswerBlock-Cd0Sh7Q8.js"
+        },
+        {
+          "ms": 750,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/TrustBar-Bg7aO-yf.js"
+        },
+        {
+          "ms": 751,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/FinalCTA-MceEcO8y.js"
+        },
+        {
+          "ms": 751,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/Reveal-Fzp8Rjhb.js"
+        },
+        {
+          "ms": 751,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/arrow-right-Ck64V7A4.js"
+        },
+        {
+          "ms": 751,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/phone-bF6g2QMa.js"
+        },
+        {
+          "ms": 751,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/PageIntro-C5A9j4JH.js"
+        },
+        {
+          "ms": 751,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/services-0_uFGZym.js"
+        },
+        {
+          "ms": 752,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/mercedes-amg-engine-repair-dubai-DVcJbu9t.js"
+        },
+        {
+          "ms": 752,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/suspension-repair-dubai-ChRPM65Z.js"
+        },
+        {
+          "ms": 752,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/ceramicCoatingContent-BIl558B6.js"
+        },
+        {
+          "ms": 752,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/ppfContent-BvR9pZPp.js"
+        },
+        {
+          "ms": 753,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/lovable-uploads/b56133bf-55e4-4bc9-884f-15f732132259.png",
+          "status": 200
+        },
+        {
+          "ms": 753,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/lovable-uploads/b56133bf-55e4-4bc9-884f-15f732132259.png"
+        },
+        {
+          "ms": 753,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/paintCorrectionContent-Co45hanX.js"
+        },
+        {
+          "ms": 754,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/paintProtectionContent-LrpIjxW-.js"
+        },
+        {
+          "ms": 754,
+          "kind": "load"
+        },
+        {
+          "ms": 755,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/favicon.ico?v=3"
+        },
+        {
+          "ms": 759,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/Services-qjxkM0PI.js",
+          "status": 200
+        },
+        {
+          "ms": 760,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/Footer-DC4ciOBP.js",
+          "status": 200
+        },
+        {
+          "ms": 762,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/Footer-DC4ciOBP.js"
+        },
+        {
+          "ms": 762,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/Services-qjxkM0PI.js"
+        },
+        {
+          "ms": 768,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/TrustBar-Bg7aO-yf.js",
+          "status": 200
+        },
+        {
+          "ms": 769,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/TrustBar-Bg7aO-yf.js"
+        },
+        {
+          "ms": 769,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/AnswerBlock-Cd0Sh7Q8.js",
+          "status": 200
+        },
+        {
+          "ms": 769,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/AnswerBlock-Cd0Sh7Q8.js"
+        },
+        {
+          "ms": 769,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/Reveal-Fzp8Rjhb.js",
+          "status": 200
+        },
+        {
+          "ms": 769,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/Reveal-Fzp8Rjhb.js"
+        },
+        {
+          "ms": 769,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/arrow-right-Ck64V7A4.js",
+          "status": 200
+        },
+        {
+          "ms": 769,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/arrow-right-Ck64V7A4.js"
+        },
+        {
+          "ms": 769,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/phone-bF6g2QMa.js",
+          "status": 200
+        },
+        {
+          "ms": 769,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/phone-bF6g2QMa.js"
+        },
+        {
+          "ms": 769,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/FinalCTA-MceEcO8y.js",
+          "status": 200
+        },
+        {
+          "ms": 769,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/FinalCTA-MceEcO8y.js"
+        },
+        {
+          "ms": 769,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/PageIntro-C5A9j4JH.js",
+          "status": 200
+        },
+        {
+          "ms": 769,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/PageIntro-C5A9j4JH.js"
+        },
+        {
+          "ms": 769,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/suspension-repair-dubai-ChRPM65Z.js",
+          "status": 200
+        },
+        {
+          "ms": 769,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/suspension-repair-dubai-ChRPM65Z.js"
+        },
+        {
+          "ms": 769,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/ppfContent-BvR9pZPp.js",
+          "status": 200
+        },
+        {
+          "ms": 770,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/ppfContent-BvR9pZPp.js"
+        },
+        {
+          "ms": 771,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/ceramicCoatingContent-BIl558B6.js",
+          "status": 200
+        },
+        {
+          "ms": 771,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/ceramicCoatingContent-BIl558B6.js"
+        },
+        {
+          "ms": 772,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/mercedes-amg-engine-repair-dubai-DVcJbu9t.js",
+          "status": 200
+        },
+        {
+          "ms": 772,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/mercedes-amg-engine-repair-dubai-DVcJbu9t.js"
+        },
+        {
+          "ms": 774,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/favicon.ico?v=3",
+          "status": 200
+        },
+        {
+          "ms": 774,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/favicon.ico?v=3"
+        },
+        {
+          "ms": 774,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/paintCorrectionContent-Co45hanX.js",
+          "status": 200
+        },
+        {
+          "ms": 774,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/paintCorrectionContent-Co45hanX.js"
+        },
+        {
+          "ms": 775,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/paintProtectionContent-LrpIjxW-.js",
+          "status": 200
+        },
+        {
+          "ms": 775,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/paintProtectionContent-LrpIjxW-.js"
+        },
+        {
+          "ms": 775,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/services-0_uFGZym.js",
+          "status": 200
+        },
+        {
+          "ms": 775,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/services-0_uFGZym.js"
+        },
+        {
+          "ms": 775,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/favicon-192x192.png?v=3"
+        },
+        {
+          "ms": 781,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/favicon-192x192.png?v=3",
+          "status": 200
+        },
+        {
+          "ms": 782,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/favicon-192x192.png?v=3"
+        },
+        {
+          "ms": 1419,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/BrandPage-BG1wPQsC.js"
+        },
+        {
+          "ms": 1421,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/brands-AXX1KE9i.js"
+        },
+        {
+          "ms": 1421,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/accordion-DwI4x3y1.js"
+        },
+        {
+          "ms": 1421,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/index-DqNd-BoL.js"
+        },
+        {
+          "ms": 1422,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/message-circle-BBrOYs2e.js"
+        },
+        {
+          "ms": 1422,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/GoogleReviews-YqwLkbHD.js"
+        },
+        {
+          "ms": 1422,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/arrow-up-right-BWNuSSbV.js"
+        },
+        {
+          "ms": 1422,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/arrow-left-BZ3UPOWB.js"
+        },
+        {
+          "ms": 1422,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/astonMartinHubContent-FZdxiOBc.js"
+        },
+        {
+          "ms": 1423,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/ar-brands-C-3Hm3cj.js"
+        },
+        {
+          "ms": 1423,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/ar-services-CLhfazuX.js"
+        },
+        {
+          "ms": 1423,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/porsche-workshop-dubai-BsN5HQ-W.js"
+        },
+        {
+          "ms": 1423,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/g63-brabus-g800-finished-front-eHldKgiA.js"
+        },
+        {
+          "ms": 1424,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/lamborghini-urus-workshop-dubai-CLM9G8gj.js"
+        },
+        {
+          "ms": 1424,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/mercedesModelPages-C5MlnnLW.js"
+        },
+        {
+          "ms": 1424,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/mercedesProblemGuides-GbL9AgyS.js"
+        },
+        {
+          "ms": 1424,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/bmwModelPages-DjCI7eb2.js"
+        },
+        {
+          "ms": 1424,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/map-pin-DHvNOwnx.js"
+        },
+        {
+          "ms": 1426,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/circle-check-C4IIKVWI.js"
+        },
+        {
+          "ms": 1426,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/favicon.ico?v=3"
+        },
+        {
+          "ms": 1435,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/BrandPage-BG1wPQsC.js",
+          "status": 200
+        },
+        {
+          "ms": 1435,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/BrandPage-BG1wPQsC.js"
+        },
+        {
+          "ms": 1436,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/index-DqNd-BoL.js",
+          "status": 200
+        },
+        {
+          "ms": 1436,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/index-DqNd-BoL.js"
+        },
+        {
+          "ms": 1436,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/message-circle-BBrOYs2e.js",
+          "status": 200
+        },
+        {
+          "ms": 1436,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/accordion-DwI4x3y1.js",
+          "status": 200
+        },
+        {
+          "ms": 1436,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/accordion-DwI4x3y1.js"
+        },
+        {
+          "ms": 1436,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/brands-AXX1KE9i.js",
+          "status": 200
+        },
+        {
+          "ms": 1436,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/brands-AXX1KE9i.js"
+        },
+        {
+          "ms": 1443,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/message-circle-BBrOYs2e.js"
+        },
+        {
+          "ms": 1444,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/arrow-up-right-BWNuSSbV.js",
+          "status": 200
+        },
+        {
+          "ms": 1444,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/arrow-up-right-BWNuSSbV.js"
+        },
+        {
+          "ms": 1444,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/GoogleReviews-YqwLkbHD.js",
+          "status": 200
+        },
+        {
+          "ms": 1444,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/GoogleReviews-YqwLkbHD.js"
+        },
+        {
+          "ms": 1444,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/arrow-left-BZ3UPOWB.js",
+          "status": 200
+        },
+        {
+          "ms": 1445,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/arrow-left-BZ3UPOWB.js"
+        },
+        {
+          "ms": 1445,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/ar-brands-C-3Hm3cj.js",
+          "status": 200
+        },
+        {
+          "ms": 1445,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/ar-brands-C-3Hm3cj.js"
+        },
+        {
+          "ms": 1445,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/g63-brabus-g800-finished-front-eHldKgiA.js",
+          "status": 200
+        },
+        {
+          "ms": 1445,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/g63-brabus-g800-finished-front-eHldKgiA.js"
+        },
+        {
+          "ms": 1445,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/astonMartinHubContent-FZdxiOBc.js",
+          "status": 200
+        },
+        {
+          "ms": 1445,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/astonMartinHubContent-FZdxiOBc.js"
+        },
+        {
+          "ms": 1445,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/porsche-workshop-dubai-BsN5HQ-W.js",
+          "status": 200
+        },
+        {
+          "ms": 1445,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/porsche-workshop-dubai-BsN5HQ-W.js"
+        },
+        {
+          "ms": 1445,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/ar-services-CLhfazuX.js",
+          "status": 200
+        },
+        {
+          "ms": 1445,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/ar-services-CLhfazuX.js"
+        },
+        {
+          "ms": 1445,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/lamborghini-urus-workshop-dubai-CLM9G8gj.js",
+          "status": 200
+        },
+        {
+          "ms": 1445,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/lamborghini-urus-workshop-dubai-CLM9G8gj.js"
+        },
+        {
+          "ms": 1447,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/bmwModelPages-DjCI7eb2.js",
+          "status": 200
+        },
+        {
+          "ms": 1448,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/bmwModelPages-DjCI7eb2.js"
+        },
+        {
+          "ms": 1449,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/favicon.ico?v=3",
+          "status": 200
+        },
+        {
+          "ms": 1449,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/favicon.ico?v=3"
+        },
+        {
+          "ms": 1449,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/map-pin-DHvNOwnx.js",
+          "status": 200
+        },
+        {
+          "ms": 1449,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/map-pin-DHvNOwnx.js"
+        },
+        {
+          "ms": 1449,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/circle-check-C4IIKVWI.js",
+          "status": 200
+        },
+        {
+          "ms": 1449,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/circle-check-C4IIKVWI.js"
+        },
+        {
+          "ms": 1449,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/mercedesProblemGuides-GbL9AgyS.js",
+          "status": 200
+        },
+        {
+          "ms": 1449,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/mercedesProblemGuides-GbL9AgyS.js"
+        },
+        {
+          "ms": 1449,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/mercedesModelPages-C5MlnnLW.js",
+          "status": 200
+        },
+        {
+          "ms": 1449,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/mercedesModelPages-C5MlnnLW.js"
+        },
+        {
+          "ms": 1450,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/favicon-192x192.png?v=3"
+        },
+        {
+          "ms": 1456,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/images/seo/mercedes-engine-repair-1086.webp"
+        },
+        {
+          "ms": 1457,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/images/mercedes-repair-dubai-hero.jpg"
+        },
+        {
+          "ms": 1457,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/brand-logos/showcase/mercedes-benz.png"
+        },
+        {
+          "ms": 1458,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/favicon-192x192.png?v=3",
+          "status": 200
+        },
+        {
+          "ms": 1458,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/favicon-192x192.png?v=3"
+        },
+        {
+          "ms": 1463,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/images/seo/mercedes-engine-repair-1086.webp",
+          "status": 200
+        },
+        {
+          "ms": 1463,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/images/seo/mercedes-engine-repair-1086.webp"
+        },
+        {
+          "ms": 1463,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/brand-logos/showcase/mercedes-benz.png",
+          "status": 200
+        },
+        {
+          "ms": 1464,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/brand-logos/showcase/mercedes-benz.png"
+        },
+        {
+          "ms": 1465,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/images/mercedes-repair-dubai-hero.jpg",
+          "status": 200
+        },
+        {
+          "ms": 1465,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/images/mercedes-repair-dubai-hero.jpg"
+        },
+        {
+          "ms": 1489,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/lovable-uploads/916789e0-b6fb-43d4-9d52-79899ce5a1c2.png"
+        },
+        {
+          "ms": 1506,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/suspension-repair-dubai-jBXugG2X.jpg"
+        },
+        {
+          "ms": 1507,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/lovable-uploads/b8278b01-7cf1-43fb-ae22-3f731c36cec5.png"
+        },
+        {
+          "ms": 1507,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/lovable-uploads/99d04ebd-5104-40f5-961d-f26cff7f2030.png"
+        },
+        {
+          "ms": 1508,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/routine-maintenance-optimized-BkcEIeXp.jpg"
+        },
+        {
+          "ms": 1508,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/lovable-uploads/b25532a7-eae9-45ae-b8bf-425984dbfa6d.png"
+        },
+        {
+          "ms": 1508,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/tire-repair-DRcZ2QmZ.jpg"
+        },
+        {
+          "ms": 1508,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/lovable-uploads/c1c2c5d8-fd7e-4d38-945c-e52315b4229e.png"
+        },
+        {
+          "ms": 1508,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/exhaust-repair-dubai-D6tZkcc6.jpg"
+        },
+        {
+          "ms": 1508,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/lovable-uploads/150c684d-11eb-476b-b768-afe7cad297cc.png"
+        },
+        {
+          "ms": 1509,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/lovable-uploads/9f435c28-2f08-437b-99ad-2252d8ea2071.png"
+        },
+        {
+          "ms": 1509,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/lovable-uploads/678fdd1f-2841-4606-8533-51f82257a4a0.png"
+        },
+        {
+          "ms": 1510,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/images/paint-correction/workshop-floor-960.webp"
+        },
+        {
+          "ms": 1510,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/lovable-uploads/9db7fc3e-a988-4b9d-a7ab-a6494b58561e.png"
+        },
+        {
+          "ms": 1510,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/soft-close-door-repair-BTR5h1QP.jpg"
+        },
+        {
+          "ms": 1510,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/lovable-uploads/car-body-repair-v2.png"
+        },
+        {
+          "ms": 1511,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/images/ppf/film-application-1200.webp"
+        },
+        {
+          "ms": 1511,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/images/ceramic-coating/black-mercedes-finish-1024.webp"
+        },
+        {
+          "ms": 1511,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/images/paint-correction/porsche-workshop-640.webp"
+        },
+        {
+          "ms": 1511,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/lovable-uploads/916789e0-b6fb-43d4-9d52-79899ce5a1c2.png",
+          "status": 200
+        },
+        {
+          "ms": 1511,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/lovable-uploads/916789e0-b6fb-43d4-9d52-79899ce5a1c2.png"
+        },
+        {
+          "ms": 1512,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/favicon.ico?v=3"
+        },
+        {
+          "ms": 1526,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/suspension-repair-dubai-jBXugG2X.jpg",
+          "status": 200
+        },
+        {
+          "ms": 1527,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/routine-maintenance-optimized-BkcEIeXp.jpg",
+          "status": 200
+        },
+        {
+          "ms": 1527,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/routine-maintenance-optimized-BkcEIeXp.jpg"
+        },
+        {
+          "ms": 1527,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/tire-repair-DRcZ2QmZ.jpg",
+          "status": 200
+        },
+        {
+          "ms": 1527,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/tire-repair-DRcZ2QmZ.jpg"
+        },
+        {
+          "ms": 1527,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/lovable-uploads/b25532a7-eae9-45ae-b8bf-425984dbfa6d.png",
+          "status": 200
+        },
+        {
+          "ms": 1532,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/brands/mercedes-benz-service-dubai"
+        },
+        {
+          "ms": 1533,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/lovable-uploads/b25532a7-eae9-45ae-b8bf-425984dbfa6d.png"
+        },
+        {
+          "ms": 1534,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/lovable-uploads/b8278b01-7cf1-43fb-ae22-3f731c36cec5.png",
+          "status": 200
+        },
+        {
+          "ms": 1538,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/favicon.ico?v=3",
+          "status": 200
+        },
+        {
+          "ms": 1538,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/lovable-uploads/b8278b01-7cf1-43fb-ae22-3f731c36cec5.png"
+        },
+        {
+          "ms": 1539,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/favicon.ico?v=3"
+        },
+        {
+          "ms": 1540,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/suspension-repair-dubai-jBXugG2X.jpg"
+        },
+        {
+          "ms": 1540,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/favicon-192x192.png?v=3"
+        },
+        {
+          "ms": 1541,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/lovable-uploads/99d04ebd-5104-40f5-961d-f26cff7f2030.png",
+          "status": 200
+        },
+        {
+          "ms": 1542,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/exhaust-repair-dubai-D6tZkcc6.jpg",
+          "status": 200
+        },
+        {
+          "ms": 1542,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/exhaust-repair-dubai-D6tZkcc6.jpg"
+        },
+        {
+          "ms": 1551,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/lovable-uploads/99d04ebd-5104-40f5-961d-f26cff7f2030.png"
+        },
+        {
+          "ms": 1555,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/brands/mercedes-benz-service-dubai",
+          "status": 200
+        },
+        {
+          "ms": 1579,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/brands/mercedes-benz-service-dubai"
+        },
+        {
+          "ms": 1582,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/index-BRaIlxMY.js"
+        },
+        {
+          "ms": 1583,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/index-DeCDguP7.css"
+        },
+        {
+          "ms": 1584,
+          "kind": "request",
+          "url": "https://www.googletagmanager.com/gtag/js?id=G-4TRCEJSY4S"
+        },
+        {
+          "ms": 1584,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/images/digitec-d-mark.png"
+        },
+        {
+          "ms": 1584,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/images/mercedes-repair-dubai-hero.jpg"
+        },
+        {
+          "ms": 1584,
+          "kind": "request",
+          "url": "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Tajawal:wght@400;500;700;800;900&display=swap"
+        },
+        {
+          "ms": 1584,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/brand-logos/showcase/mercedes-benz.png"
+        },
+        {
+          "ms": 1584,
+          "kind": "request",
+          "url": "https://www.googletagmanager.com/gtm.js?id=GTM-T3GVSPND"
+        },
+        {
+          "ms": 1586,
+          "kind": "failed",
+          "url": "https://www.googletagmanager.com/gtag/js?id=G-4TRCEJSY4S",
+          "failure": {
+            "errorText": "net::ERR_FAILED"
+          }
+        },
+        {
+          "ms": 1586,
+          "kind": "failed",
+          "url": "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Tajawal:wght@400;500;700;800;900&display=swap",
+          "failure": {
+            "errorText": "net::ERR_FAILED"
+          }
+        },
+        {
+          "ms": 1586,
+          "kind": "failed",
+          "url": "https://www.googletagmanager.com/gtm.js?id=GTM-T3GVSPND",
+          "failure": {
+            "errorText": "net::ERR_FAILED"
+          }
+        },
+        {
+          "ms": 1591,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/index-DeCDguP7.css",
+          "status": 200
+        },
+        {
+          "ms": 1591,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/index-DeCDguP7.css"
+        },
+        {
+          "ms": 1612,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/images/digitec-d-mark.png",
+          "status": 200
+        },
+        {
+          "ms": 1612,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/images/digitec-d-mark.png"
+        },
+        {
+          "ms": 1612,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/brand-logos/showcase/mercedes-benz.png",
+          "status": 200
+        },
+        {
+          "ms": 1612,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/brand-logos/showcase/mercedes-benz.png"
+        },
+        {
+          "ms": 1613,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/images/mercedes-repair-dubai-hero.jpg",
+          "status": 200
+        },
+        {
+          "ms": 1613,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/images/mercedes-repair-dubai-hero.jpg"
+        },
+        {
+          "ms": 1613,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/index-BRaIlxMY.js",
+          "status": 200
+        },
+        {
+          "ms": 1613,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/index-BRaIlxMY.js"
+        },
+        {
+          "ms": 1616,
+          "kind": "domcontentloaded"
+        },
+        {
+          "ms": 1622,
+          "kind": "load"
+        },
+        {
+          "ms": 1634,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/BrandPage-BG1wPQsC.js"
+        },
+        {
+          "ms": 1635,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/Footer-DC4ciOBP.js"
+        },
+        {
+          "ms": 1635,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/brands-AXX1KE9i.js"
+        },
+        {
+          "ms": 1635,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/services-0_uFGZym.js"
+        },
+        {
+          "ms": 1635,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/mercedes-amg-engine-repair-dubai-DVcJbu9t.js"
+        },
+        {
+          "ms": 1636,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/suspension-repair-dubai-ChRPM65Z.js"
+        },
+        {
+          "ms": 1636,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/ceramicCoatingContent-BIl558B6.js"
+        },
+        {
+          "ms": 1636,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/ppfContent-BvR9pZPp.js"
+        },
+        {
+          "ms": 1636,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/paintCorrectionContent-Co45hanX.js"
+        },
+        {
+          "ms": 1636,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/paintProtectionContent-LrpIjxW-.js"
+        },
+        {
+          "ms": 1636,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/accordion-DwI4x3y1.js"
+        },
+        {
+          "ms": 1636,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/index-DqNd-BoL.js"
+        },
+        {
+          "ms": 1638,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/message-circle-BBrOYs2e.js"
+        },
+        {
+          "ms": 1638,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/GoogleReviews-YqwLkbHD.js"
+        },
+        {
+          "ms": 1638,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/Reveal-Fzp8Rjhb.js"
+        },
+        {
+          "ms": 1638,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/arrow-up-right-BWNuSSbV.js"
+        },
+        {
+          "ms": 1638,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/arrow-right-Ck64V7A4.js"
+        },
+        {
+          "ms": 1638,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/arrow-left-BZ3UPOWB.js"
+        },
+        {
+          "ms": 1638,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/astonMartinHubContent-FZdxiOBc.js"
+        },
+        {
+          "ms": 1638,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/TrustBar-Bg7aO-yf.js"
+        },
+        {
+          "ms": 1639,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/ar-brands-C-3Hm3cj.js"
+        },
+        {
+          "ms": 1639,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/ar-services-CLhfazuX.js"
+        },
+        {
+          "ms": 1639,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/porsche-workshop-dubai-BsN5HQ-W.js"
+        },
+        {
+          "ms": 1639,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/g63-brabus-g800-finished-front-eHldKgiA.js"
+        },
+        {
+          "ms": 1639,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/lamborghini-urus-workshop-dubai-CLM9G8gj.js"
+        },
+        {
+          "ms": 1639,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/mercedesModelPages-C5MlnnLW.js"
+        },
+        {
+          "ms": 1639,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/mercedesProblemGuides-GbL9AgyS.js"
+        },
+        {
+          "ms": 1639,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/bmwModelPages-DjCI7eb2.js"
+        },
+        {
+          "ms": 1639,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/phone-bF6g2QMa.js"
+        },
+        {
+          "ms": 1639,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/map-pin-DHvNOwnx.js"
+        },
+        {
+          "ms": 1640,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/assets/circle-check-C4IIKVWI.js"
+        },
+        {
+          "ms": 1640,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/favicon.ico?v=3"
+        },
+        {
+          "ms": 1651,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/Footer-DC4ciOBP.js",
+          "status": 200
+        },
+        {
+          "ms": 1651,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/Footer-DC4ciOBP.js"
+        },
+        {
+          "ms": 1651,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/mercedes-amg-engine-repair-dubai-DVcJbu9t.js",
+          "status": 200
+        },
+        {
+          "ms": 1651,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/mercedes-amg-engine-repair-dubai-DVcJbu9t.js"
+        },
+        {
+          "ms": 1651,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/brands-AXX1KE9i.js",
+          "status": 200
+        },
+        {
+          "ms": 1651,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/brands-AXX1KE9i.js"
+        },
+        {
+          "ms": 1651,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/BrandPage-BG1wPQsC.js",
+          "status": 200
+        },
+        {
+          "ms": 1651,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/BrandPage-BG1wPQsC.js"
+        },
+        {
+          "ms": 1652,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/ceramicCoatingContent-BIl558B6.js",
+          "status": 200
+        },
+        {
+          "ms": 1652,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/ceramicCoatingContent-BIl558B6.js"
+        },
+        {
+          "ms": 1652,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/paintCorrectionContent-Co45hanX.js",
+          "status": 200
+        },
+        {
+          "ms": 1652,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/paintCorrectionContent-Co45hanX.js"
+        },
+        {
+          "ms": 1652,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/services-0_uFGZym.js",
+          "status": 200
+        },
+        {
+          "ms": 1652,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/services-0_uFGZym.js"
+        },
+        {
+          "ms": 1652,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/paintProtectionContent-LrpIjxW-.js",
+          "status": 200
+        },
+        {
+          "ms": 1652,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/paintProtectionContent-LrpIjxW-.js"
+        },
+        {
+          "ms": 1652,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/suspension-repair-dubai-ChRPM65Z.js",
+          "status": 200
+        },
+        {
+          "ms": 1652,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/suspension-repair-dubai-ChRPM65Z.js"
+        },
+        {
+          "ms": 1652,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/ppfContent-BvR9pZPp.js",
+          "status": 200
+        },
+        {
+          "ms": 1652,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/ppfContent-BvR9pZPp.js"
+        },
+        {
+          "ms": 1652,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/index-DqNd-BoL.js",
+          "status": 200
+        },
+        {
+          "ms": 1652,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/index-DqNd-BoL.js"
+        },
+        {
+          "ms": 1652,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/accordion-DwI4x3y1.js",
+          "status": 200
+        },
+        {
+          "ms": 1652,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/accordion-DwI4x3y1.js"
+        },
+        {
+          "ms": 1653,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/GoogleReviews-YqwLkbHD.js",
+          "status": 200
+        },
+        {
+          "ms": 1654,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/GoogleReviews-YqwLkbHD.js"
+        },
+        {
+          "ms": 1655,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/Reveal-Fzp8Rjhb.js",
+          "status": 200
+        },
+        {
+          "ms": 1655,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/Reveal-Fzp8Rjhb.js"
+        },
+        {
+          "ms": 1655,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/arrow-up-right-BWNuSSbV.js",
+          "status": 200
+        },
+        {
+          "ms": 1655,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/arrow-up-right-BWNuSSbV.js"
+        },
+        {
+          "ms": 1657,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/message-circle-BBrOYs2e.js",
+          "status": 200
+        },
+        {
+          "ms": 1657,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/message-circle-BBrOYs2e.js"
+        },
+        {
+          "ms": 1657,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/arrow-right-Ck64V7A4.js",
+          "status": 200
+        },
+        {
+          "ms": 1657,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/arrow-right-Ck64V7A4.js"
+        },
+        {
+          "ms": 1658,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/arrow-left-BZ3UPOWB.js",
+          "status": 200
+        },
+        {
+          "ms": 1658,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/arrow-left-BZ3UPOWB.js"
+        },
+        {
+          "ms": 1659,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/TrustBar-Bg7aO-yf.js",
+          "status": 200
+        },
+        {
+          "ms": 1659,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/TrustBar-Bg7aO-yf.js"
+        },
+        {
+          "ms": 1659,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/g63-brabus-g800-finished-front-eHldKgiA.js",
+          "status": 200
+        },
+        {
+          "ms": 1659,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/g63-brabus-g800-finished-front-eHldKgiA.js"
+        },
+        {
+          "ms": 1659,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/porsche-workshop-dubai-BsN5HQ-W.js",
+          "status": 200
+        },
+        {
+          "ms": 1659,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/porsche-workshop-dubai-BsN5HQ-W.js"
+        },
+        {
+          "ms": 1659,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/ar-services-CLhfazuX.js",
+          "status": 200
+        },
+        {
+          "ms": 1659,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/ar-services-CLhfazuX.js"
+        },
+        {
+          "ms": 1660,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/astonMartinHubContent-FZdxiOBc.js",
+          "status": 200
+        },
+        {
+          "ms": 1660,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/astonMartinHubContent-FZdxiOBc.js"
+        },
+        {
+          "ms": 1661,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/lamborghini-urus-workshop-dubai-CLM9G8gj.js",
+          "status": 200
+        },
+        {
+          "ms": 1661,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/lamborghini-urus-workshop-dubai-CLM9G8gj.js"
+        },
+        {
+          "ms": 1661,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/ar-brands-C-3Hm3cj.js",
+          "status": 200
+        },
+        {
+          "ms": 1661,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/ar-brands-C-3Hm3cj.js"
+        },
+        {
+          "ms": 1662,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/bmwModelPages-DjCI7eb2.js",
+          "status": 200
+        },
+        {
+          "ms": 1662,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/bmwModelPages-DjCI7eb2.js"
+        },
+        {
+          "ms": 1663,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/mercedesModelPages-C5MlnnLW.js",
+          "status": 200
+        },
+        {
+          "ms": 1663,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/mercedesModelPages-C5MlnnLW.js"
+        },
+        {
+          "ms": 1663,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/map-pin-DHvNOwnx.js",
+          "status": 200
+        },
+        {
+          "ms": 1663,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/map-pin-DHvNOwnx.js"
+        },
+        {
+          "ms": 1663,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/mercedesProblemGuides-GbL9AgyS.js",
+          "status": 200
+        },
+        {
+          "ms": 1663,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/mercedesProblemGuides-GbL9AgyS.js"
+        },
+        {
+          "ms": 1663,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/phone-bF6g2QMa.js",
+          "status": 200
+        },
+        {
+          "ms": 1663,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/phone-bF6g2QMa.js"
+        },
+        {
+          "ms": 1664,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/favicon.ico?v=3",
+          "status": 200
+        },
+        {
+          "ms": 1664,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/favicon.ico?v=3"
+        },
+        {
+          "ms": 1664,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/assets/circle-check-C4IIKVWI.js",
+          "status": 200
+        },
+        {
+          "ms": 1664,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/assets/circle-check-C4IIKVWI.js"
+        },
+        {
+          "ms": 1665,
+          "kind": "request",
+          "url": "http://127.0.0.1:5213/favicon-192x192.png?v=3"
+        },
+        {
+          "ms": 1671,
+          "kind": "response",
+          "url": "http://127.0.0.1:5213/favicon-192x192.png?v=3",
+          "status": 200
+        },
+        {
+          "ms": 1671,
+          "kind": "finished",
+          "url": "http://127.0.0.1:5213/favicon-192x192.png?v=3"
+        }
+      ],
+      "screenshot": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\mercedes-service-top3-2026-10-20\\qa\\navigation-diagnosis\\spa-back-then-reload320.png"
+    }
+  ],
+  "safety": "Loopback GET/HEAD only; no external requests, contact navigation or writes."
+}

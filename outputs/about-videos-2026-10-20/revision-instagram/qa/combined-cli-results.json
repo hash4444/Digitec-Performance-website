@@ -1,0 +1,138 @@
+{
+  "at": "2026-10-20T06:24:53.864Z",
+  "candidate": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\about-videos-2026-10-20\\candidate.local",
+  "passed": true,
+  "results": [
+    {
+      "name": "generated-input-preflight",
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\about-videos-2026-10-20\\revision-instagram\\qa\\bootstrap-generated-input.mjs",
+        "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\about-videos-2026-10-20\\candidate.local",
+        "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\about-videos-2026-10-20\\revision-instagram\\qa"
+      ],
+      "exitCode": 0,
+      "passed": true,
+      "seconds": 2.64
+    },
+    {
+      "name": "production-build-19-steps",
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "scripts/build-production-local.mjs"
+      ],
+      "exitCode": 0,
+      "passed": true,
+      "seconds": 28.106
+    },
+    {
+      "name": "typescript-app",
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "node_modules/typescript/bin/tsc",
+        "--noEmit",
+        "-p",
+        "tsconfig.app.json"
+      ],
+      "exitCode": 0,
+      "passed": true,
+      "seconds": 5.49
+    },
+    {
+      "name": "typescript-node",
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "node_modules/typescript/bin/tsc",
+        "--noEmit",
+        "-p",
+        "tsconfig.node.json"
+      ],
+      "exitCode": 0,
+      "passed": true,
+      "seconds": 0.534
+    },
+    {
+      "name": "eslint",
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "node_modules/eslint/bin/eslint.js",
+        "."
+      ],
+      "exitCode": 0,
+      "passed": true,
+      "seconds": 3.025
+    },
+    {
+      "name": "master-seo",
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "scripts/validate-master-seo.mjs"
+      ],
+      "exitCode": 0,
+      "passed": true,
+      "seconds": 0.565
+    },
+    {
+      "name": "bmw-hub",
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "scripts/validate-bmw-hub.mjs"
+      ],
+      "exitCode": 0,
+      "passed": true,
+      "seconds": 0.594
+    },
+    {
+      "name": "paint-care-regression",
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "scripts/validate-paint-care-cluster.mjs"
+      ],
+      "exitCode": 0,
+      "passed": true,
+      "seconds": 1.163
+    },
+    {
+      "name": "tuning-regression",
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "scripts/validate-tuning.mjs"
+      ],
+      "exitCode": 0,
+      "passed": true,
+      "seconds": 0.584
+    },
+    {
+      "name": "routing-response-regression",
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "scripts/test-routing-response.mjs"
+      ],
+      "exitCode": 0,
+      "passed": true,
+      "seconds": 2.745
+    },
+    {
+      "name": "brand-booking-form",
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "outputs/repair-service-2026-10-19/qa/test-brand-form.mjs"
+      ],
+      "exitCode": 0,
+      "passed": true,
+      "seconds": 0.381
+    },
+    {
+      "name": "about-and-site-preservation",
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\about-videos-2026-10-20\\revision-instagram\\qa\\validate-about-static.mjs",
+        "C:\\Users\\ADMIN\\Documents\\ChatGPT\\DIGITEC\\outputs\\about-videos-2026-10-20\\revision-instagram\\qa"
+      ],
+      "exitCode": 0,
+      "passed": true,
+      "seconds": 2.619
+    }
+  ],
+  "finishedAt": "2026-10-20T06:25:42.321Z"
+}

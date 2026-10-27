@@ -1,0 +1,45 @@
+{
+  "scope": "Read-only transcription of authenticated dashboard observations; not an API backup or replacement payload",
+  "observed_on": "2026-10-21",
+  "account_id": "ae62fc81b63f3450e5ab4b63b7b7ece4",
+  "zone_name": "digitecme.com",
+  "phase": "http_request_dynamic_redirect",
+  "zone_id": null,
+  "ruleset_id": null,
+  "ruleset_version": null,
+  "rules": [
+    {
+      "id": "dbe42693423442afbc3bab9b993242a7",
+      "description": "Legacy Mercedes URLs to Mercedes brand service page",
+      "expression": "http.request.uri.path in {\"/services/mercedes-repair-dubai\" \"/services/mercedes-repair-dubai/\" \"/services/mercedes-service-dubai\" \"/best-mercedes-workshop-dubai\"}",
+      "action": "redirect",
+      "action_parameters": {
+        "from_value": {
+          "target_url": { "value": "https://digitecme.com/brands/mercedes-benz-service-dubai" },
+          "status_code": 301,
+          "preserve_query_string": true
+        }
+      },
+      "enabled": true,
+      "observed_order": 1,
+      "evidence": "../hosting/cloudflare-existing-mercedes-rule.txt"
+    },
+    {
+      "id": "9781b1ef743f4ffbaadbe5cb3250eeca",
+      "description": "www to primary domain",
+      "expression": "(http.host eq \"www.digitecme.com\")",
+      "action": "redirect",
+      "action_parameters": {
+        "from_value": {
+          "target_url": { "expression": "concat(\"https://digitecme.com\", http.request.uri.path)" },
+          "status_code": 301,
+          "preserve_query_string": true
+        }
+      },
+      "enabled": true,
+      "observed_order": 2,
+      "evidence": "../hosting/cloudflare-existing-www-rule.txt"
+    }
+  ],
+  "order_evidence": "../hosting/cloudflare-single-redirects.txt"
+}

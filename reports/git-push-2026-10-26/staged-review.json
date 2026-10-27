@@ -1,0 +1,86 @@
+{
+  "capturedAt": "2026-10-26T11:29:15.600Z",
+  "method": "Independent index readback compared to immutable reviewed B copy; no index mutation.",
+  "stagedPaths": [
+    "docs/seo/mercedes-release-preparation-2026-10-26.md",
+    "src/data/mercedesServiceContent.ts",
+    "src/lib/route-manifest.ts",
+    "src/pages/BrandPage.tsx",
+    "src/pages/BrandServicePage.tsx"
+  ],
+  "checks": {
+    "exactFivePaths": true,
+    "allSourceMatchesReviewedNormalized": true,
+    "allReviewedRawHashesMatchRecorded": true,
+    "allBeforeContextsMatchNormalized": true,
+    "whitespaceClean": true,
+    "noReportsOutputsArchivesBackendStaged": true,
+    "summaryRetainsNoGo": true,
+    "summaryContainsNoPrivateRawReferences": true,
+    "summaryNoPrivateAccountValues": true
+  },
+  "files": [
+    {
+      "file": "src/pages/BrandPage.tsx",
+      "stagedSha256": "fed34d81d52c879960d90eb38db91e31d9290ceb7b9895a222a2d075feb13bc2",
+      "stagedNormalizedSha256": "fed34d81d52c879960d90eb38db91e31d9290ceb7b9895a222a2d075feb13bc2",
+      "reviewedRecordedAfterSha256": "fed34d81d52c879960d90eb38db91e31d9290ceb7b9895a222a2d075feb13bc2",
+      "reviewedRawSha256": "fed34d81d52c879960d90eb38db91e31d9290ceb7b9895a222a2d075feb13bc2",
+      "reviewedMatchesRecordedRaw": true,
+      "reviewedNormalizedSha256": "fed34d81d52c879960d90eb38db91e31d9290ceb7b9895a222a2d075feb13bc2",
+      "matchesReviewedNormalized": true,
+      "beforeNormalizedSha256": "f5d68037c056bb1f32d73cc5c009e066287da0ab225267b9606d834a23002c33",
+      "reviewedRecordedBeforeSha256": "f5d68037c056bb1f32d73cc5c009e066287da0ab225267b9606d834a23002c33",
+      "reviewedBeforeRawSha256": "f5d68037c056bb1f32d73cc5c009e066287da0ab225267b9606d834a23002c33",
+      "beforeMatchesRecordedRaw": true,
+      "beforeMatchesReviewedNormalized": true
+    },
+    {
+      "file": "src/data/mercedesServiceContent.ts",
+      "stagedSha256": "c13a8d9309e0bff7b6001299412bea79af18a19b049315a3fb2c10e400f83f13",
+      "stagedNormalizedSha256": "c13a8d9309e0bff7b6001299412bea79af18a19b049315a3fb2c10e400f83f13",
+      "reviewedRecordedAfterSha256": "bd941c4c6e03c43501e32f304fea8df5de07941b93be3598b1d07431eb91b339",
+      "reviewedRawSha256": "bd941c4c6e03c43501e32f304fea8df5de07941b93be3598b1d07431eb91b339",
+      "reviewedMatchesRecordedRaw": true,
+      "reviewedNormalizedSha256": "c13a8d9309e0bff7b6001299412bea79af18a19b049315a3fb2c10e400f83f13",
+      "matchesReviewedNormalized": true,
+      "beforeNormalizedSha256": "26136cbe06916e577d6e37036e90c0abe193f067b4ec47c1263bc008c59f5ba7",
+      "reviewedRecordedBeforeSha256": "7ebb6013761160e8bebc48e3f3080ceae2e3fb330d4fa6edf86f02974481718d",
+      "reviewedBeforeRawSha256": "7ebb6013761160e8bebc48e3f3080ceae2e3fb330d4fa6edf86f02974481718d",
+      "beforeMatchesRecordedRaw": true,
+      "beforeMatchesReviewedNormalized": true
+    },
+    {
+      "file": "src/pages/BrandServicePage.tsx",
+      "stagedSha256": "90f515106fbed703967f4302495b808985f64a3f4c25fe1b67d0b6571af0ec4e",
+      "stagedNormalizedSha256": "90f515106fbed703967f4302495b808985f64a3f4c25fe1b67d0b6571af0ec4e",
+      "reviewedRecordedAfterSha256": "38bca41fbfd9d7fba3a5ce9701791facc77d1fc0a7a67806903f71e7a096512c",
+      "reviewedRawSha256": "38bca41fbfd9d7fba3a5ce9701791facc77d1fc0a7a67806903f71e7a096512c",
+      "reviewedMatchesRecordedRaw": true,
+      "reviewedNormalizedSha256": "90f515106fbed703967f4302495b808985f64a3f4c25fe1b67d0b6571af0ec4e",
+      "matchesReviewedNormalized": true,
+      "beforeNormalizedSha256": "c4dd5b92e148ccd126c724234a7b1d34b198baf74d00fc73affabbca678c95d8",
+      "reviewedRecordedBeforeSha256": "b8bd67b40548b6e3c53db7611e7dd463cd5c92ce6774bbbdc954695b4395df2f",
+      "reviewedBeforeRawSha256": "b8bd67b40548b6e3c53db7611e7dd463cd5c92ce6774bbbdc954695b4395df2f",
+      "beforeMatchesRecordedRaw": true,
+      "beforeMatchesReviewedNormalized": true
+    },
+    {
+      "file": "src/lib/route-manifest.ts",
+      "stagedSha256": "b417568c34eb9ebe1963d9027691cac03612604616235e016e9a7f66d7db459d",
+      "stagedNormalizedSha256": "b417568c34eb9ebe1963d9027691cac03612604616235e016e9a7f66d7db459d",
+      "reviewedRecordedAfterSha256": "52ee828e92319a9ed55658f8d7a6768b4ed9676fa5e35c69eff367cdc9e4a543",
+      "reviewedRawSha256": "52ee828e92319a9ed55658f8d7a6768b4ed9676fa5e35c69eff367cdc9e4a543",
+      "reviewedMatchesRecordedRaw": true,
+      "reviewedNormalizedSha256": "b417568c34eb9ebe1963d9027691cac03612604616235e016e9a7f66d7db459d",
+      "matchesReviewedNormalized": true,
+      "beforeNormalizedSha256": "7798a6004cdd9a676638f31c2f533f025beea2cd56b8847e89d2161ba1f4b50e",
+      "reviewedRecordedBeforeSha256": "a05194b6899972cb91945af2ea0c0a3fd836055a5d8c52d87fc3f9a6a219d0d5",
+      "reviewedBeforeRawSha256": "a05194b6899972cb91945af2ea0c0a3fd836055a5d8c52d87fc3f9a6a219d0d5",
+      "beforeMatchesRecordedRaw": true,
+      "beforeMatchesReviewedNormalized": true
+    }
+  ],
+  "summaryReview": "Manually reviewed all 48 lines: source scope, bounded test outcomes, existing public source identity and unresolved production gates only. No raw authenticated captures, private query/page data, account identifiers, credentials, or private exports included.",
+  "pass": true
+}

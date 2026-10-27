@@ -1,0 +1,343 @@
+Browser tab: 5, Title: "SSL/TLS | Edge Certificates | digitecme.com | Mebms2000@gmail.com's Account | Cloudflare", URL: "https://dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/ssl-tls/edge-certificates".
+1 AXWebArea SSL/TLS | Edge Certificates | digitecme.com | Mebms2000@gmail.com's Account | Cloudflare, URL: dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/ssl-tls/edge-certificates
+	2 container
+		3 container react-app
+			4 container
+				5 link Description: Cloudflare home, Value: dash.cloudflare.com/
+				6 pop up button (collapsed) Description: Switch Account, ID: base-ui-:r4f:, Secondary Actions: Expand
+					7 text Mebms2000@gmail.com's Account
+					8 image
+				9 container
+					10 button Quick search...
+						11 image
+						12 text Quick search...
+						13 container
+							14 text Ctrl  K
+					15 link Description: Back to Domains, Value: dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/domains/overview
+					16 content list
+						17 link Description: Overview, Value: dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/
+						18 button (collapsed) Description: Recents, Secondary Actions: Expand
+							19 text Recents
+							20 image
+						21 button (collapsed) AI Crawl Control, Secondary Actions: Expand
+							22 text AI Crawl Control
+							23 image
+						24 button (collapsed) Agent Readiness, Secondary Actions: Expand
+							25 text Agent Readiness
+							26 image
+						27 link Description: Analytics, Value: dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/analytics
+						28 button (collapsed) Observability New, Secondary Actions: Expand
+							614 image
+							30 text Observability
+							31 text New
+							32 image
+						611 button (collapsed) DNS, Secondary Actions: Expand
+							612 text DNS
+							613 image
+						36 button (collapsed) Email, Secondary Actions: Expand
+							37 text Email
+							38 image
+						600 container
+							601 button (expanded) SSL/TLS, Secondary Actions: Collapse
+								602 text SSL/TLS
+								603 image
+							604 content list
+								605 link Description: Overview, Value: dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/ssl-tls
+								606 link Description: Edge Certificates, Value: dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/ssl-tls/edge-certificates
+								607 link Description: Client Certificates, Value: dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/ssl-tls/client-certificates
+								608 link Description: Origin Server, Value: dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/ssl-tls/origin
+								609 link Description: Custom Hostnames, Value: dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/ssl-tls/custom-hostnames
+						42 button (collapsed) Security, Secondary Actions: Expand
+							43 text Security
+							44 image
+						45 link Description: Access, Value: dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/access
+						46 button (collapsed) Speed, Secondary Actions: Expand
+							47 text Speed
+							48 image
+						49 button (collapsed) Caching, Secondary Actions: Expand
+							50 text Caching
+							51 image
+						52 link Description: Workers Routes, Value: dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/workers
+						230 button (collapsed) Rules, Secondary Actions: Expand
+							231 text Rules
+							232 image
+						65 link Description: Error Pages New, Value: dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/error-pages
+						66 link Description: Network, Value: dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/network
+						67 button (collapsed) Traffic, Secondary Actions: Expand
+							68 text Traffic
+							69 image
+					70 content list
+						71 button (collapsed) Manage account, Secondary Actions: Expand
+							72 text Manage account
+							73 image
+				74 button (expanded) Description: Collapse sidebar, ID: base-ui-:rt:, Secondary Actions: Collapse
+			75 container
+				76 checkbox Description: Star domain, Value: 0, ID: base-ui-:r4t:
+					77 image
+				78 container base-ui-:r4v:
+					79 text digitecme.com
+					80 text free
+					81 image
+				82 button Ask AI
+					83 image
+					84 text Ask AI
+				85 link Description: Support, Value: dash.cloudflare.com/?to=/:account/support
+				86 pop up button (collapsed) Description: User menu, ID: base-ui-:r11:, Secondary Actions: Expand
+					87 image
+			615 container skipTarget
+			616 container
+				617 heading Edge Certificates, Value: 1
+					618 text Edge Certificates
+				619 link Description: View docs  Opens in a new tab, Value: developers.cloudflare.com/ssl/edge-certificates/
+				620 text Customize your edge certificates, which encrypt traffic between your visitors and Cloudflare.
+			621 heading Manage Edge Certificates, Value: 1
+				622 text Manage Edge Certificates
+			623 text Your plan includes:
+			624 content list
+				625 container
+					626 AXListMarker • 
+					627 text A shared Cloudflare universal SSL certificate and a corresponding backup certificate
+			628 text Additional certificate customization options:
+			629 content list
+				630 container
+					631 AXListMarker • 
+					632 link Description: Activate Advanced Certificate Manager (ACM), Value: dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/ssl-tls/acm
+					633 text  to order auto-renewing, wildcard or dedicated certificates with customizable hostnames
+				634 container
+					635 AXListMarker • 
+					636 link Upgrade to the Business plan
+						637 text Upgrade to the Business plan
+					638 text  to upload a custom certificate
+			639 button (disabled) Order an advanced certificate, ID: base-ui-:rhk:
+			640 button (disabled) Upload a custom certificate, ID: base-ui-:rhm:
+			641 table
+				642 row
+					643 cell
+						644 text Hosts
+					645 cell
+						646 text Type
+					647 cell
+						648 text Status
+					649 cell
+						650 text Expires on
+					651 cell
+						652 text Tags
+				653 button (collapsed) *.digitecme.com, digitecme.com Universal Active 2026-12-09 (Managed) caret-right, Secondary Actions: Expand
+					654 text *.digitecme.com, digitecme.com
+					655 text Universal
+					656 text Active
+					657 text 2026-12-09
+					658 text (Managed)
+					659 image caret-right
+				660 button (collapsed) *.digitecme.com, digitecme.com Backup Backup Issued 2026-11-27 (Managed) caret-right, Secondary Actions: Expand
+					661 text *.digitecme.com, digitecme.com
+					662 text Backup
+					663 text Backup Issued
+					664 text 2026-11-27
+					665 text (Managed)
+					666 image caret-right
+			667 container
+				668 button (collapsed) Description: Edge Certificates API, ID: trigger-0-api, Secondary Actions: Expand
+					669 text API
+					670 image caret-right
+				671 button (collapsed) Description: Edge Certificates Help, ID: trigger-0-help, Secondary Actions: Expand
+					672 text Help
+					673 image caret-right
+				674 container Edge Certificates API, ID: drawer-0-api
+				675 container Edge Certificates Help, ID: drawer-0-help
+			676 container
+				677 heading Advanced Certificate Manager (ACM), Value: 1
+					678 text Advanced Certificate Manager (ACM)
+				679 text Get more control and flexibility over your certificates and unlock TLS settings.
+				680 content list
+					681 container
+						682 AXListMarker • 
+						683 text Issue auto-renewing, wildcard and dedicated certificates
+					684 container
+						685 AXListMarker • 
+						686 text Customize hostnames on certificates
+					687 container
+						688 AXListMarker • 
+						689 text Cover more than one level of a subdomain (e.g. dev.www.example.com)
+					690 container
+						691 AXListMarker • 
+						692 text Specify cipher suites to enhance security and meet industry standards
+					693 container
+						694 AXListMarker • 
+						695 text Define your preferred certificate authority (CA) and validity period
+				696 link Description: Activate, Value: dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/ssl-tls/acm
+			697 container total-tls-card
+				698 container
+					699 heading Total TLS, Value: 1
+						700 text Total TLS
+					701 text Cloudflare will issue individual certificates for every proxied hostname. Once enabled, all hostnames in your domain will be covered by a TLS certificate.
+					702 link Description: Activate Advanced Certificate Manager (ACM), Value: dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/ssl-tls/acm
+					703 text  to enable Total TLS
+					704 button Select a Certificate Authority, ID: base-ui-:rho:
+						705 combo box (disabled, collapsed) Description: Select a Certificate Authority, ID: base-ui-:rhq:, Secondary Actions: Expand
+					706 button Total TLS, ID: base-ui-:rhu:
+						707 switch (disabled) Description: Total TLS, Value: 0, ID: base-ui-:ri0:
+				708 container
+					709 button (collapsed) Description: Total TLS API, ID: trigger-0-api, Secondary Actions: Expand
+						710 text API
+						711 image caret-right
+					712 container Edge Certificates API, ID: drawer-0-api
+			713 container cipher-suits-card
+				714 container
+					715 heading Cipher suites, Value: 1
+						716 text Cipher suites
+					717 text Customize the 
+					718 link Description: cipher suites  Opens in a new tab, Value: developers.cloudflare.com/ssl/edge-certificates/additional-options/cipher-suites/
+					719 text  used in the SSL/TLS handshake that establishes a secure connection between clients and the Cloudflare network.
+					720 link Description: Activate Advanced Certificate Manager (ACM), Value: dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/ssl-tls/acm
+					721 text  to configure Cipher Suites.
+					722 button Configure Cipher suites, ID: base-ui-:ri3:
+						723 button (disabled) Configure Cipher suites
+				724 container
+					725 button (collapsed) Description: ciphers API, ID: trigger-1-api, Secondary Actions: Expand
+						726 text API
+						727 image caret-right
+					728 button (collapsed) Description: ciphers Help, ID: trigger-1-help, Secondary Actions: Expand
+						729 text Help
+						730 image caret-right
+					731 container ciphers API, ID: drawer-1-api
+					732 container ciphers Help, ID: drawer-1-help
+			733 container always_use_https
+				734 container
+					735 heading Always Use HTTPS, Value: 1, ID: settingCardTitle5
+						736 text Always Use HTTPS
+					737 text Redirect all requests with scheme “http” to “https”. This applies to all http requests to the zone.
+					738 container
+						739 text Enabling this while your origin also forces HTTPS redirects can cause 
+						740 link Description: redirect loops, Value: developers.cloudflare.com/ssl/troubleshooting/too-many-redirects/
+						741 text . Disable origin-side HTTP-to-HTTPS redirects to avoid ERR_TOO_MANY_REDIRECTS. 
+						742 link Description: Learn more, Value: developers.cloudflare.com/ssl/edge-certificates/additional-options/always-use-https/
+					743 text This setting was last changed 6 months ago
+					744 switch Description: Always Use HTTPS, Value: 1, ID: base-ui-:ri8:
+				745 container
+					746 button (collapsed) Description: Always Use HTTPS API, ID: trigger-5-api, Secondary Actions: Expand
+						747 text API
+						748 image caret-right
+					749 button (collapsed) Description: Always Use HTTPS Help, ID: trigger-5-help, Secondary Actions: Expand
+						750 text Help
+						751 image caret-right
+					752 container Always Use HTTPS API, ID: drawer-5-api
+					753 container Always Use HTTPS Help, ID: drawer-5-help
+			754 container security_header
+				755 container
+					756 heading HTTP Strict Transport Security (HSTS), Value: 1, ID: settingCardTitle1
+						757 text HTTP Strict Transport Security (HSTS)
+					758 text Enforce web security policy for your website.
+					759 button
+				760 container
+					761 button (collapsed) Description: HTTP Strict Transport Security (HSTS) API, ID: trigger-1-api, Secondary Actions: Expand
+						762 text API
+						763 image caret-right
+					764 button (collapsed) Description: HTTP Strict Transport Security (HSTS) Help, ID: trigger-1-help, Secondary Actions: Expand
+						765 text Help
+						766 image caret-right
+					767 container ciphers API, ID: drawer-1-api
+					768 container ciphers Help, ID: drawer-1-help
+			769 container min_tls_version
+				770 container
+					771 heading Minimum TLS Version, Value: 1, ID: settingCardTitle2
+						772 text Minimum TLS Version
+					773 text Only allow HTTPS connections from visitors that support the selected TLS protocol version or newer.
+					774 pop up button (collapsed) TLS 1.0 (default) Minimum TLS Version, ID: downshift-2-toggle-button, Secondary Actions: Expand
+				775 container
+					776 button (collapsed) Description: Minimum TLS Version API, ID: trigger-2-api, Secondary Actions: Expand
+						777 text API
+						778 image caret-right
+					779 button (collapsed) Description: Minimum TLS Version Help, ID: trigger-2-help, Secondary Actions: Expand
+						780 text Help
+						781 image caret-right
+					782 container Minimum TLS Version API, ID: drawer-2-api
+					783 container Minimum TLS Version Help, ID: drawer-2-help
+			784 container opportunistic_encryption
+				785 container
+					786 heading Opportunistic Encryption, Value: 1, ID: settingCardTitle6
+						787 text Opportunistic Encryption
+					788 text Opportunistic Encryption allows browsers to benefit from the improved performance of HTTP/2 by letting them know that your site is available over an encrypted connection. Browsers will continue to show “http” in the address bar, not “https”. Create a 
+					789 link Description: Configuration Rule, Value: dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/rules/configuration-rules
+					790 text  to customize these settings by hostname.
+					791 switch Description: Opportunistic Encryption, Value: 1, ID: base-ui-:rib:
+				792 container
+					793 button (collapsed) Description: Opportunistic Encryption API, ID: trigger-6-api, Secondary Actions: Expand
+						794 text API
+						795 image caret-right
+					796 button (collapsed) Description: Opportunistic Encryption Help, ID: trigger-6-help, Secondary Actions: Expand
+						797 text Help
+						798 image caret-right
+					799 container Opportunistic Encryption API, ID: drawer-6-api
+					800 container Opportunistic Encryption Help, ID: drawer-6-help
+			801 container tls_1_3
+				802 container
+					803 heading TLS 1.3, Value: 1, ID: settingCardTitle3
+						804 text TLS 1.3
+					805 text Enable the latest version of the TLS protocol for improved security and performance.
+					806 switch Description: TLS 1.3, Value: 1, ID: base-ui-:rie:
+				807 container
+					808 button (collapsed) Description: TLS 1.3 API, ID: trigger-3-api, Secondary Actions: Expand
+						809 text API
+						810 image caret-right
+					811 button (collapsed) Description: TLS 1.3 Help, ID: trigger-3-help, Secondary Actions: Expand
+						812 text Help
+						813 image caret-right
+					814 container TLS 1.3 API, ID: drawer-3-api
+					815 container TLS 1.3 Help, ID: drawer-3-help
+			816 container automatic_https_rewrites
+				817 container
+					818 heading Automatic HTTPS Rewrites, Value: 1, ID: settingCardTitle4
+						819 text Automatic HTTPS Rewrites
+					820 text Automatic HTTPS Rewrites helps fix mixed content by changing “http” to “https” for all resources or links on your web site that can be served with HTTPS. Create a 
+					821 link Description: Configuration Rule, Value: dash.cloudflare.com/ae62fc81b63f3450e5ab4b63b7b7ece4/digitecme.com/rules/configuration-rules
+					822 text  to customize these settings by hostname.
+					823 switch Description: Automatic HTTPS Rewrites, Value: 1, ID: base-ui-:rih:
+				824 container
+					825 button (collapsed) Description: Automatic HTTPS Rewrites API, ID: trigger-4-api, Secondary Actions: Expand
+						826 text API
+						827 image caret-right
+					828 button (collapsed) Description: Automatic HTTPS Rewrites Help, ID: trigger-4-help, Secondary Actions: Expand
+						829 text Help
+						830 image caret-right
+					831 container Automatic HTTPS Rewrites API, ID: drawer-4-api
+					832 container Automatic HTTPS Rewrites Help, ID: drawer-4-help
+			833 container ct-alerting-card
+				834 container
+					835 heading Certificate Transparency Monitoring, Value: 1
+						836 text Certificate Transparency Monitoring
+					837 text Receive an email when a Certificate Authority issues a certificate for your domain.
+					838 switch Description: Certificate Transparency Monitoring, Value: 0, ID: base-ui-:ri5:
+				839 container
+					840 text Certificate Transparency Monitoring has changed. If you previously enabled CT Monitoring, any recipients listed below might be carried over from your previous settings (account members with the  SSL and Certificate Write  permission). You can add or remove them at any time.
+				841 container
+					842 button (collapsed) Description: Certificate Transparency Monitoring Help, ID: trigger-2-help, Secondary Actions: Expand
+						843 text Help
+						844 image caret-right
+					845 container Minimum TLS Version Help, ID: drawer-2-help
+			846 container disable-universal-ssl-card
+				847 container
+					848 heading Disable Universal SSL, Value: 1
+						849 text Disable Universal SSL
+					850 text Disabling Universal SSL removes any currently active Universal SSL certificates for your zone from the edge and prevents any future Universal SSL certificates from being ordered. If there are no dedicated certificates or custom certificates uploaded for the domain, visitors will be unable to access the domain over HTTPS.
+					851 button Disable Universal SSL
+				852 container
+					853 button (collapsed) Description: Disable Universal SSL Help, ID: trigger-3-help, Secondary Actions: Expand
+						854 text Help
+						855 image caret-right
+					856 container TLS 1.3 Help, ID: drawer-3-help
+			176 content list
+				177 link Description: Support, Value: support.cloudflare.com/
+				178 link Description: System Status, Value: cloudflarestatus.com/
+				179 link Description: Careers, Value: cloudflare.com/careers/
+				180 link Description: Terms of Use, Value: cloudflare.com/website-terms/
+				181 link Description: Report Security Issues, Value: cloudflare.com/disclosure/
+				182 link Description: Privacy Policy, Value: cloudflare.com/privacypolicy/
+				183 button A blue and white pill with a checkmark and an x, representing privacy choices Cookie Preferences, ID: ot-sdk-btn
+					184 image A blue and white pill with a checkmark and an x, representing privacy choices
+					185 text Cookie Preferences
+				186 container
+					187 text ©  2026  Cloudflare, Inc.
+		188 container Notifications
+
+The focused UI element is 615 container skipTarget

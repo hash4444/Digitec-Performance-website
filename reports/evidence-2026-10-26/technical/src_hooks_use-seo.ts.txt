@@ -1,0 +1,206 @@
+    1: import React, { useContext, useEffect } from 'react';
+    2: import { useLocation } from 'react-router-dom';
+    3: import { absoluteUrl, DEFAULT_OG_IMAGE, getPageMetadata, SITE_URL } from '@/lib/schema';
+    4: import { isArabicPath, stripLocalePrefix } from '@/i18n/use-locale';
+    5: import { isLowValueBrandServicePath } from '@/lib/route-policy';
+    6: 
+    7: export interface SeoProps {
+    8:   title: string;
+    9:   description: string;
+   10:   canonical?: string;
+   11:   keywords?: string;
+   12:   ogImage?: string;
+   13:   ogImageAlt?: string;
+   14:   ogImageWidth?: number;
+   15:   ogImageHeight?: number;
+   16:   ogTitle?: string;
+   17:   ogDescription?: string;
+   18:   ogType?: string;
+   19:   twitterCard?: string;
+   20:   twitterTitle?: string;
+   21:   twitterDescription?: string;
+   22:   noindex?: boolean;
+   23:   /** Emit an ar-AE alternate only when a real Arabic equivalent is published. */
+   24:   hasArabicVersion?: boolean;
+   25:   jsonLd?: Record<string, unknown> | Record<string, unknown>[];
+   26: }
+   27: 
+   28: export interface ResolvedSeoProps extends SeoProps {
+   29:   canonical?: string;
+   30:   noindex: boolean;
+   31:   language: 'en' | 'ar';
+   32:   articlePublishedTime?: string;
+   33:   articleModifiedTime?: string;
+   34: }
+   35: 
+   36: type SeoCollector = (seo: ResolvedSeoProps) => void;
+   37: const SeoCollectorContext = React.createContext<SeoCollector | null>(null);
+   38: 
+   39: export const SeoCollectorProvider = ({
+   40:   collect,
+   41:   children,
+   42: }: {
+   43:   collect: SeoCollector;
+   44:   children: React.ReactNode;
+   45: }) => React.createElement(SeoCollectorContext.Provider, { value: collect }, children);
+   46: 
+   47: export function useSeo(props: SeoProps) {
+   48:   const {
+   49:     title,
+   50:     description,
+   51:     keywords,
+   52:     ogImage,
+   53:     ogImageAlt,
+   54:     ogImageWidth,
+   55:     ogImageHeight,
+   56:     ogTitle,
+   57:     ogDescription,
+   58:     ogType,
+   59:     twitterCard,
+   60:     twitterTitle,
+   61:     twitterDescription,
+   62:     hasArabicVersion = true,
+   63:     jsonLd,
+   64:   } = props;
+   65:   const { pathname } = useLocation();
+   66:   const collector = useContext(SeoCollectorContext);
+   67:   const isArabic = isArabicPath(pathname);
+   68:   const englishPath = stripLocalePrefix(pathname);
+   69:   const englishUrl = `${SITE_URL}${englishPath === '/' ? '/' : englishPath}`;
+   70:   const arabicUrl = `${SITE_URL}/ar${englishPath === '/' ? '' : englishPath}`;
+   71:   const effectiveNoindex = Boolean(props.noindex || isLowValueBrandServicePath(pathname));
+   72:   const effectiveCanonical = effectiveNoindex
+   73:     ? props.canonical
+   74:     : (isArabic ? arabicUrl : (props.canonical ?? englishUrl));
+   75:   const pageMetadata = getPageMetadata(jsonLd, effectiveCanonical ?? englishUrl);
+   76:   const effectiveOgImage = absoluteUrl(ogImage || pageMetadata.image || DEFAULT_OG_IMAGE);
+   77:   const effectiveOgType = ogType || (pageMetadata.isArticle ? 'article' : 'website');
+   78:   const articlePublishedTime = effectiveOgType === 'article' ? pageMetadata.datePublished : undefined;
+   79:   const articleModifiedTime = effectiveOgType === 'article' ? pageMetadata.dateModified : undefined;
+   80:   const jsonLdString = jsonLd ? JSON.stringify(jsonLd) : undefined;
+   81: 
+   82:   collector?.({
+   83:     ...props,
+   84:     canonical: effectiveCanonical,
+   85:     noindex: effectiveNoindex,
+   86:     language: isArabic ? 'ar' : 'en',
+   87:     ogImage: effectiveOgImage,
+   88:     ogType: effectiveOgType,
+   89:     articlePublishedTime,
+   90:     articleModifiedTime,
+   91:   });
+   92: 
+   93:   useEffect(() => {
+   94:     document.title = title;
+   95: 
+   96:     const upsertMeta = (
+   97:       selector: string,
+   98:       attribute: 'name' | 'property',
+   99:       key: string,
+  100:       content?: string,
+  101:     ) => {
+  102:       let element = document.querySelector(selector) as HTMLMetaElement | null;
+  103:       if (!content) {
+  104:         element?.remove();
+  105:         return;
+  106:       }
+  107:       if (!element) {
+  108:         element = document.createElement('meta');
+  109:         element.setAttribute(attribute, key);
+  110:         document.head.appendChild(element);
+  111:       }
+  112:       element.setAttribute('content', content);
+  113:     };
+  114: 
+  115:     upsertMeta('meta[name="description"]', 'name', 'description', description);
+  116:     // Meta keywords do not affect modern ranking and easily become stale.
+  117:     document.querySelector('meta[name="keywords"]')?.remove();
+  118:     upsertMeta(
+  119:       'meta[name="robots"]',
+  120:       'name',
+  121:       'robots',
+  122:       effectiveNoindex ? 'noindex, follow' : 'index, follow, max-image-preview:large',
+  123:     );
+  124: 
+  125:     upsertMeta('meta[property="og:title"]', 'property', 'og:title', ogTitle || title);
+  126:     upsertMeta('meta[property="og:description"]', 'property', 'og:description', ogDescription || description);
+  127:     upsertMeta('meta[property="og:type"]', 'property', 'og:type', effectiveOgType);
+  128:     upsertMeta('meta[property="article:published_time"]', 'property', 'article:published_time', articlePublishedTime);
+  129:     upsertMeta('meta[property="article:modified_time"]', 'property', 'article:modified_time', articleModifiedTime);
+  130:     upsertMeta('meta[property="og:image"]', 'property', 'og:image', effectiveOgImage);
+  131:     upsertMeta('meta[property="og:image:alt"]', 'property', 'og:image:alt', ogImageAlt);
+  132:     upsertMeta('meta[property="og:image:width"]', 'property', 'og:image:width', ogImageWidth ? String(ogImageWidth) : undefined);
+  133:     upsertMeta('meta[property="og:image:height"]', 'property', 'og:image:height', ogImageHeight ? String(ogImageHeight) : undefined);
+  134:     upsertMeta('meta[property="og:locale"]', 'property', 'og:locale', isArabic ? 'ar_AE' : 'en_AE');
+  135:     upsertMeta('meta[name="twitter:card"]', 'name', 'twitter:card', twitterCard || 'summary_large_image');
+  136:     upsertMeta('meta[name="twitter:title"]', 'name', 'twitter:title', twitterTitle || ogTitle || title);
+  137:     upsertMeta('meta[name="twitter:description"]', 'name', 'twitter:description', twitterDescription || ogDescription || description);
+  138:     upsertMeta('meta[name="twitter:image"]', 'name', 'twitter:image', effectiveOgImage);
+  139:     upsertMeta('meta[name="twitter:image:alt"]', 'name', 'twitter:image:alt', ogImageAlt);
+  140: 
+  141:     let canonicalLink = document.querySelector('link[rel="canonical"]') as HTMLLinkElement | null;
+  142:     if (effectiveCanonical) {
+  143:       if (!canonicalLink) {
+  144:         canonicalLink = document.createElement('link');
+  145:         canonicalLink.rel = 'canonical';
+  146:         document.head.appendChild(canonicalLink);
+  147:       }
+  148:       canonicalLink.href = effectiveCanonical;
+  149:       upsertMeta('meta[property="og:url"]', 'property', 'og:url', effectiveCanonical);
+  150:     } else {
+  151:       canonicalLink?.remove();
+  152:       upsertMeta('meta[property="og:url"]', 'property', 'og:url');
+  153:     }
+  154: 
+  155:     document.querySelectorAll('link[rel="alternate"][hreflang]').forEach((link) => link.remove());
+  156:     if (!effectiveNoindex && effectiveCanonical) {
+  157:       [
+  158:         { hreflang: 'en-AE', href: englishUrl },
+  159:         ...(hasArabicVersion ? [{ hreflang: 'ar-AE', href: arabicUrl }] : []),
+  160:         { hreflang: 'x-default', href: englishUrl },
+  161:       ].forEach(({ hreflang, href }) => {
+  162:         const link = document.createElement('link');
+  163:         link.rel = 'alternate';
+  164:         link.hreflang = hreflang;
+  165:         link.href = href;
+  166:         document.head.appendChild(link);
+  167:       });
+  168:     }
+  169: 
+  170:     const existingSchema = document.querySelector('script[data-route-jsonld="true"]');
+  171:     if (jsonLdString) {
+  172:       const script = existingSchema instanceof HTMLScriptElement
+  173:         ? existingSchema
+  174:         : document.createElement('script');
+  175:       script.type = 'application/ld+json';
+  176:       script.dataset.routeJsonld = 'true';
+  177:       script.text = jsonLdString;
+  178:       if (!script.parentNode) document.head.appendChild(script);
+  179:     } else {
+  180:       existingSchema?.remove();
+  181:     }
+  182:   }, [
+  183:     title,
+  184:     description,
+  185:     effectiveCanonical,
+  186:     effectiveNoindex,
+  187:     effectiveOgImage,
+  188:     effectiveOgType,
+  189:     articlePublishedTime,
+  190:     articleModifiedTime,
+  191:     ogImageAlt,
+  192:     ogImageWidth,
+  193:     ogImageHeight,
+  194:     isArabic,
+  195:     englishUrl,
+  196:     arabicUrl,
+  197:     keywords,
+  198:     ogTitle,
+  199:     ogDescription,
+  200:     twitterCard,
+  201:     twitterTitle,
+  202:     twitterDescription,
+  203:     hasArabicVersion,
+  204:     jsonLdString,
+  205:   ]);
+  206: }

@@ -1,0 +1,81 @@
+{
+  "capturedAtUtc": "2026-10-26T07:23:24.661301+00:00",
+  "capturedAtDubai": "2026-10-26T11:23:24.661301+04:00",
+  "readOnly": true,
+  "networkRequests": 0,
+  "productionMutations": 0,
+  "protectedSourceFilesChecked": 283,
+  "protectedSourceDrift": [],
+  "approvedFilesAndBaseline": [
+    {
+      "path": "reports\\mercedes-phase-2\\routing\\redirect-proposals.json",
+      "reviewedSha256": "336a3e207ab451d22f95efad88e334a3d5f8bb9958e495a8e9bcbe3f3d4956b9",
+      "currentSha256": "336a3e207ab451d22f95efad88e334a3d5f8bb9958e495a8e9bcbe3f3d4956b9",
+      "unchanged": true
+    },
+    {
+      "path": "reports\\mercedes-phase-2\\routing\\rules\\1-ar-oil-change.json",
+      "reviewedSha256": "43156ace1399ed32c077a03824f4f778ae58c6fa1610e483a3b087e274da8630",
+      "currentSha256": "43156ace1399ed32c077a03824f4f778ae58c6fa1610e483a3b087e274da8630",
+      "unchanged": true
+    },
+    {
+      "path": "reports\\mercedes-phase-2\\routing\\rules\\2-en-body-repair.json",
+      "reviewedSha256": "7a3800821824177f550571aa651d15dbe08cc7281a3fd50798118181ce6aa7d7",
+      "currentSha256": "7a3800821824177f550571aa651d15dbe08cc7281a3fd50798118181ce6aa7d7",
+      "unchanged": true
+    },
+    {
+      "path": "reports\\mercedes-phase-2\\routing\\rules\\3-ar-battery-replacement.json",
+      "reviewedSha256": "78a5cc7ebcf35ff8f6203d5c77ee722c6ae335908b33e7d0d8957351b0a090a3",
+      "currentSha256": "78a5cc7ebcf35ff8f6203d5c77ee722c6ae335908b33e7d0d8957351b0a090a3",
+      "unchanged": true
+    },
+    {
+      "path": "reports\\mercedes-phase-2\\routing\\rules\\4-ar-mechanical-repair.json",
+      "reviewedSha256": "2c4ef8c4dddc1cd79937cea41e70c80785dbc0e5a707284faccb38f8e028da07",
+      "currentSha256": "2c4ef8c4dddc1cd79937cea41e70c80785dbc0e5a707284faccb38f8e028da07",
+      "unchanged": true
+    },
+    {
+      "path": "reports\\mercedes-phase-2\\hub\\mercedes-hub-minimal.patch",
+      "reviewedSha256": "4eba1adfc9008db8b6cb76b3a0f0a214f0415c1577272c2c43ae4eae08e249ca",
+      "currentSha256": "4eba1adfc9008db8b6cb76b3a0f0a214f0415c1577272c2c43ae4eae08e249ca",
+      "unchanged": true
+    },
+    {
+      "path": "reports\\mercedes-phase-2\\evidence\\cloudflare\\current-inventory.json",
+      "reviewedSha256": "eba6ad671e2cf406dfbf1b5062d82e7e417e4b49f919757aac106b85ec902d99",
+      "currentSha256": "eba6ad671e2cf406dfbf1b5062d82e7e417e4b49f919757aac106b85ec902d99",
+      "unchanged": true
+    },
+    {
+      "path": "reports\\mercedes-phase-2\\tests\\verify-http.mjs",
+      "reviewedSha256": "6670b2a4227d6810efe9528096aceebf72f58820b8f88bb33bfc51060611d45a",
+      "currentSha256": "6670b2a4227d6810efe9528096aceebf72f58820b8f88bb33bfc51060611d45a",
+      "unchanged": true
+    },
+    {
+      "path": "reports\\mercedes-phase-2\\tests\\check-redirect-conflicts.mjs",
+      "reviewedSha256": "0bd9bdabf0570050dbac8ced92a333d86a8213a238854990a6b38a03857affd8",
+      "currentSha256": "0bd9bdabf0570050dbac8ced92a333d86a8213a238854990a6b38a03857affd8",
+      "unchanged": true
+    },
+    {
+      "path": "reports\\mercedes-phase-2\\evidence\\http\\pre-2026-10-26T07-06-59-812Z\\capture.json",
+      "reviewedSha256": "50acb9e9b9abfdba35fad704cec0c1a2f25aef2e2ea94cd7fc4f1d3e620a3d97",
+      "currentSha256": "50acb9e9b9abfdba35fad704cec0c1a2f25aef2e2ea94cd7fc4f1d3e620a3d97",
+      "unchanged": true
+    }
+  ],
+  "gitTrackedStatus": [
+    " M outputs/seo-2026-09-16/master-validation.json",
+    " M supabase/functions/mcp/index.ts"
+  ],
+  "initialTrackedStatus": [
+    " M outputs/seo-2026-09-16/master-validation.json",
+    " M supabase/functions/mcp/index.ts"
+  ],
+  "gitTrackedStatusUnchanged": true,
+  "allPassed": true
+}

@@ -1,0 +1,37 @@
+{
+  "generation_mode": "built-in image_gen",
+  "change": "Removed URL and Al Quoz from every image. Footer now reads DIGI-TEC / DUBAI.",
+  "prompt": "Use case: text-localization.\nInput image is the EDIT TARGET, a finished automotive tuning poster.\nMake ONLY these two footer edits:\n1. Replace the centered footer line \"DIGI-TEC | AL QUOZ, DUBAI\" with exactly \"DIGI-TEC / DUBAI\". Use a visible forward slash / between DIGI-TEC and DUBAI. Match the existing white uppercase narrow lettering, letter spacing, size and alignment. Keep this line centered under the GAD Motors logo.\n2. Completely remove the URL text \"digitecme.com/tuning\", restoring the plain black background where it was. There must be no URL anywhere in the finished image.\nPreserve everything else EXACTLY: same canvas size and portrait ratio, same vehicle and vehicle details, same crop and lighting, same heading and subtitle, same stage labels and horsepower values, same red separator lines, same \"power to emotion\", same CTA text and outline, same GAD motors logo, and same small reference-output note and VIP note where present. Do not redraw, restyle, recompose or change any content outside these two footer lines. This is one precise localized edit of the supplied image, not a redesign.",
+  "outputs": [
+    {
+      "id": "01-amg-gt-gts",
+      "file": "C:/Users/ADMIN/Documents/ChatGPT/DIGITEC/outputs/gad-posters-2026-10-07/dubai-footer-v2/01-amg-gt-gts.png",
+      "edit_target": "C:/Users/ADMIN/Documents/ChatGPT/DIGITEC/outputs/gad-posters-2026-10-07/01-amg-gt-gts.png"
+    },
+    {
+      "id": "02-e63-amg",
+      "file": "C:/Users/ADMIN/Documents/ChatGPT/DIGITEC/outputs/gad-posters-2026-10-07/dubai-footer-v2/02-e63-amg.png",
+      "edit_target": "C:/Users/ADMIN/Documents/ChatGPT/DIGITEC/outputs/gad-posters-2026-10-07/02-e63-amg.png"
+    },
+    {
+      "id": "03-amg-gt63",
+      "file": "C:/Users/ADMIN/Documents/ChatGPT/DIGITEC/outputs/gad-posters-2026-10-07/dubai-footer-v2/03-amg-gt63.png",
+      "edit_target": "C:/Users/ADMIN/Documents/ChatGPT/DIGITEC/outputs/gad-posters-2026-10-07/03-amg-gt63.png"
+    },
+    {
+      "id": "04-c63-w205",
+      "file": "C:/Users/ADMIN/Documents/ChatGPT/DIGITEC/outputs/gad-posters-2026-10-07/dubai-footer-v2/04-c63-w205.png",
+      "edit_target": "C:/Users/ADMIN/Documents/ChatGPT/DIGITEC/outputs/gad-posters-2026-10-07/04-c63-w205.png"
+    },
+    {
+      "id": "05-aston-martin-db11",
+      "file": "C:/Users/ADMIN/Documents/ChatGPT/DIGITEC/outputs/gad-posters-2026-10-07/dubai-footer-v2/05-aston-martin-db11.png",
+      "edit_target": "C:/Users/ADMIN/Documents/ChatGPT/DIGITEC/outputs/gad-posters-2026-10-07/05-aston-martin-db11.png"
+    },
+    {
+      "id": "06-lamborghini-urus",
+      "file": "C:/Users/ADMIN/Documents/ChatGPT/DIGITEC/outputs/gad-posters-2026-10-07/dubai-footer-v2/06-lamborghini-urus.png",
+      "edit_target": "C:/Users/ADMIN/Documents/ChatGPT/DIGITEC/outputs/gad-posters-2026-10-07/06-lamborghini-urus.png"
+    }
+  ]
+}

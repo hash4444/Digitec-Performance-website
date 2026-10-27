@@ -1,0 +1,46 @@
+{
+  "proposalOnly": true,
+  "sourceOrProductionChanges": false,
+  "items": [
+    {
+      "id": "H3-01",
+      "status": "prepared_for_review_not_applied",
+      "change": "Link existing Diagnostics and repair planning caption words to the two existing service owners, preserving all caption wording.",
+      "impact": "Modest contextual navigation benefit; no ranking gain assumed.",
+      "risks": ["Shared TSX page and localisation behavior", "Keyboard focus and destination availability"],
+      "dependencies": ["Separate implementation approval", "Fresh relevant 200 destination checks before release"],
+      "verification": ["Patch applicability and TSX parse passed", "After approved isolated implementation: build/type/SSR checks and desktop/mobile/keyboard review", "Preserve title/H1/canonical/schema/Arabic/other-brand controls"],
+      "requiresApprovalToImplement": true
+    },
+    {
+      "id": "H3-02",
+      "status": "prepared_for_review_not_applied",
+      "change": "Append clickable published workshop phone and arrival-confirmation wording to existing visit card, using existing CTA placement field.",
+      "impact": "Clearer contact action without new visit/capability claims.",
+      "risks": ["Published phone still requires operator confirmation before publication", "An interaction is not a qualified lead or connected call"],
+      "dependencies": ["Operator confirms current public phone", "Separate implementation approval"],
+      "verification": ["Exact tel:+97143402223 and workshop_proof attribute", "Desktop/mobile/keyboard review after approved implementation", "Existing collector debug readback only if authorised/available; no live call/message"],
+      "requiresApprovalToImplement": true
+    },
+    {
+      "id": "H3-03",
+      "status": "deferred_evidence_required",
+      "change": "Prepare a later exact existing-page repair-proof diff only after genuine workshop records are supplied.",
+      "impact": "Potentially stronger useful experience evidence; no claim until supported.",
+      "risks": ["Invented or overstated job/outcome/capability claims", "Customer identifiers or missing image/publication rights"],
+      "dependencies": ["Anonymised real job, diagnostic findings, approved/performed work and outcome checks", "Technician and publication approval"],
+      "verification": ["Separate inspected/diagnosed/repaired/outcome-confirmed stages", "No customer name/phone/VIN/registration in public copy", "Keep case registry empty and create no new page/route/schema automatically"],
+      "requiresApprovalToImplement": true
+    },
+    {
+      "id": "H3-04",
+      "status": "deferred_business_confirmation",
+      "change": "Confirm dated master visit facts before any warehouse/entrance/hours expansion.",
+      "impact": "Reliable visit information after business confirmation.",
+      "risks": ["Published consistency mistaken for independent physical verification", "Unreviewed schema/directory changes"],
+      "dependencies": ["Named operator confirms warehouse range, entrance, phone and hours"],
+      "verification": ["Dated approved fact sheet", "Prepare separate exact proposal if current sources differ"],
+      "requiresApprovalToImplement": true
+    }
+  ]
+}

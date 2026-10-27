@@ -1,0 +1,360 @@
+[
+  {
+    "source": {
+      "name": "digitecme.com-Performance-on-Search-2026-10-20.xlsx",
+      "path": "C:\\Users\\ADMIN\\Downloads\\digitecme.com-Performance-on-Search-2026-10-20.xlsx",
+      "sha256": "c34108586e17219063b157767f1f1f443b2612e9e068f498465b89eeb1403e18",
+      "source_unchanged": true,
+      "filters": {
+        "Search type": "Web (text-based)",
+        "Date": "Last 28 days",
+        "Query": "+mercedes service dubai"
+      },
+      "start": "2026-09-20",
+      "end": "2026-10-17",
+      "time_column": "Date",
+      "time_rows": 28,
+      "sheets": {
+        "Chart": {
+          "range": "A1:E29",
+          "rows": 28
+        },
+        "Queries": {
+          "range": "A1:E2",
+          "rows": 1
+        },
+        "Pages": {
+          "range": "A1:E4",
+          "rows": 3
+        },
+        "Countries": {
+          "range": "A1:E4",
+          "rows": 3
+        },
+        "Devices": {
+          "range": "A1:E3",
+          "rows": 2
+        },
+        "Search appearance": {
+          "range": "A1:E1",
+          "rows": 0
+        },
+        "Filters": {
+          "range": "A1:B4",
+          "rows": 3
+        }
+      },
+      "semantic_data_sha256": "402006c0e59c8ce188476d19490d21429d292488800371f1222c530efab3961a",
+      "semantic_duplicate_of": null
+    },
+    "contains_query_filtered_dimensions": {
+      "Queries": [
+        {
+          "row": 2,
+          "Top queries": "mercedes service dubai",
+          "Clicks": 2.0,
+          "Impressions": 182.0,
+          "CTR": 0.011000000000000001,
+          "Position": 12.62
+        }
+      ],
+      "Pages": [
+        {
+          "row": 2,
+          "Top pages": "https://digitecme.com/brands/mercedes-benz-service-dubai",
+          "Clicks": 2.0,
+          "Impressions": 164.0,
+          "CTR": 0.012199999999999999,
+          "Position": 11.72
+        },
+        {
+          "row": 3,
+          "Top pages": "https://digitecme.com/services/mercedes-oil-change-dubai/",
+          "Clicks": 0.0,
+          "Impressions": 10.0,
+          "CTR": 0.0,
+          "Position": 9.8
+        },
+        {
+          "row": 4,
+          "Top pages": "https://digitecme.com/services/mercedes-brake-repair-dubai/",
+          "Clicks": 0.0,
+          "Impressions": 8.0,
+          "CTR": 0.0,
+          "Position": 34.62
+        }
+      ],
+      "Countries": [
+        {
+          "row": 2,
+          "Country": "United Arab Emirates",
+          "Clicks": 2.0,
+          "Impressions": 179.0,
+          "CTR": 0.011200000000000002,
+          "Position": 12.17
+        },
+        {
+          "row": 3,
+          "Country": "India",
+          "Clicks": 0.0,
+          "Impressions": 2.0,
+          "CTR": 0.0,
+          "Position": 9.5
+        },
+        {
+          "row": 4,
+          "Country": "Latvia",
+          "Clicks": 0.0,
+          "Impressions": 1.0,
+          "CTR": 0.0,
+          "Position": 99.0
+        }
+      ],
+      "Devices": [
+        {
+          "row": 2,
+          "Device": "Desktop",
+          "Clicks": 2.0,
+          "Impressions": 120.0,
+          "CTR": 0.0167,
+          "Position": 13.32
+        },
+        {
+          "row": 3,
+          "Device": "Mobile",
+          "Clicks": 0.0,
+          "Impressions": 62.0,
+          "CTR": 0.0,
+          "Position": 11.26
+        }
+      ],
+      "Chart": [
+        {
+          "row": 2,
+          "Date": "2026-09-20",
+          "Clicks": 0.0,
+          "Impressions": 7.0,
+          "CTR": 0.0,
+          "Position": 9.9
+        },
+        {
+          "row": 3,
+          "Date": "2026-09-21",
+          "Clicks": 0.0,
+          "Impressions": 8.0,
+          "CTR": 0.0,
+          "Position": 10.8
+        },
+        {
+          "row": 4,
+          "Date": "2026-09-22",
+          "Clicks": 0.0,
+          "Impressions": 7.0,
+          "CTR": 0.0,
+          "Position": 9.7
+        },
+        {
+          "row": 5,
+          "Date": "2026-09-23",
+          "Clicks": 0.0,
+          "Impressions": 5.0,
+          "CTR": 0.0,
+          "Position": 11.2
+        },
+        {
+          "row": 6,
+          "Date": "2026-09-24",
+          "Clicks": 0.0,
+          "Impressions": 5.0,
+          "CTR": 0.0,
+          "Position": 15.2
+        },
+        {
+          "row": 7,
+          "Date": "2026-09-25",
+          "Clicks": 0.0,
+          "Impressions": 9.0,
+          "CTR": 0.0,
+          "Position": 11.0
+        },
+        {
+          "row": 8,
+          "Date": "2026-09-26",
+          "Clicks": 0.0,
+          "Impressions": 4.0,
+          "CTR": 0.0,
+          "Position": 15.0
+        },
+        {
+          "row": 9,
+          "Date": "2026-09-27",
+          "Clicks": 0.0,
+          "Impressions": 5.0,
+          "CTR": 0.0,
+          "Position": 16.6
+        },
+        {
+          "row": 10,
+          "Date": "2026-09-28",
+          "Clicks": 0.0,
+          "Impressions": 8.0,
+          "CTR": 0.0,
+          "Position": 11.5
+        },
+        {
+          "row": 11,
+          "Date": "2026-09-29",
+          "Clicks": 0.0,
+          "Impressions": 14.0,
+          "CTR": 0.0,
+          "Position": 9.9
+        },
+        {
+          "row": 12,
+          "Date": "2026-09-30",
+          "Clicks": 0.0,
+          "Impressions": 5.0,
+          "CTR": 0.0,
+          "Position": 10.4
+        },
+        {
+          "row": 13,
+          "Date": "2026-10-01",
+          "Clicks": 0.0,
+          "Impressions": 8.0,
+          "CTR": 0.0,
+          "Position": 17.4
+        },
+        {
+          "row": 14,
+          "Date": "2026-10-02",
+          "Clicks": 0.0,
+          "Impressions": 7.0,
+          "CTR": 0.0,
+          "Position": 15.1
+        },
+        {
+          "row": 15,
+          "Date": "2026-10-03",
+          "Clicks": 0.0,
+          "Impressions": 6.0,
+          "CTR": 0.0,
+          "Position": 19.5
+        },
+        {
+          "row": 16,
+          "Date": "2026-10-04",
+          "Clicks": 0.0,
+          "Impressions": 3.0,
+          "CTR": 0.0,
+          "Position": 14.0
+        },
+        {
+          "row": 17,
+          "Date": "2026-10-05",
+          "Clicks": 0.0,
+          "Impressions": 7.0,
+          "CTR": 0.0,
+          "Position": 14.0
+        },
+        {
+          "row": 18,
+          "Date": "2026-10-06",
+          "Clicks": 0.0,
+          "Impressions": 7.0,
+          "CTR": 0.0,
+          "Position": 7.6
+        },
+        {
+          "row": 19,
+          "Date": "2026-10-07",
+          "Clicks": 1.0,
+          "Impressions": 8.0,
+          "CTR": 0.125,
+          "Position": 9.5
+        },
+        {
+          "row": 20,
+          "Date": "2026-10-08",
+          "Clicks": 0.0,
+          "Impressions": 5.0,
+          "CTR": 0.0,
+          "Position": 10.2
+        },
+        {
+          "row": 21,
+          "Date": "2026-10-09",
+          "Clicks": 0.0,
+          "Impressions": 9.0,
+          "CTR": 0.0,
+          "Position": 10.8
+        },
+        {
+          "row": 22,
+          "Date": "2026-10-10",
+          "Clicks": 0.0,
+          "Impressions": 3.0,
+          "CTR": 0.0,
+          "Position": 8.0
+        },
+        {
+          "row": 23,
+          "Date": "2026-10-11",
+          "Clicks": 0.0,
+          "Impressions": 9.0,
+          "CTR": 0.0,
+          "Position": 11.1
+        },
+        {
+          "row": 24,
+          "Date": "2026-10-12",
+          "Clicks": 1.0,
+          "Impressions": 11.0,
+          "CTR": 0.0909,
+          "Position": 18.3
+        },
+        {
+          "row": 25,
+          "Date": "2026-10-13",
+          "Clicks": 0.0,
+          "Impressions": 6.0,
+          "CTR": 0.0,
+          "Position": 10.8
+        },
+        {
+          "row": 26,
+          "Date": "2026-10-14",
+          "Clicks": 0.0,
+          "Impressions": 3.0,
+          "CTR": 0.0,
+          "Position": 13.3
+        },
+        {
+          "row": 27,
+          "Date": "2026-10-15",
+          "Clicks": 0.0,
+          "Impressions": 3.0,
+          "CTR": 0.0,
+          "Position": 15.7
+        },
+        {
+          "row": 28,
+          "Date": "2026-10-16",
+          "Clicks": 0.0,
+          "Impressions": 6.0,
+          "CTR": 0.0,
+          "Position": 16.3
+        },
+        {
+          "row": 29,
+          "Date": "2026-10-17",
+          "Clicks": 0.0,
+          "Impressions": 4.0,
+          "CTR": 0.0,
+          "Position": 15.8
+        }
+      ]
+    },
+    "filter_semantics": "Plus prefix denotes contains filter. A sole visible exact query row does not prove every omitted/anonymized query matches exactly. Live exact-query report independently observed same headline/page/country totals."
+  }
+]

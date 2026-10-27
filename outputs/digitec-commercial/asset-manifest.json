@@ -1,0 +1,264 @@
+{
+  "schemaVersion": 1,
+  "project": "DIGI-TEC Premium Automotive Motion Graphics Commercial",
+  "researchedAt": "2026-10-20",
+  "timezone": "Asia/Dubai",
+  "status": "Production manifest; final exports reference this asset set",
+  "rightsPolicy": "Use existing DIGI-TEC brand files in this requested brand commercial. No local automotive photo is cleared for final ad reuse by this manifest. Prefer original production-created imagery, geometry and audio.",
+  "assets": [
+    {
+      "id": "digitec-wordmark-original",
+      "file": "assets/digitec-wordmark-original.png",
+      "kind": "brand-logo",
+      "sourceLocal": "public/images/digitec-logo-english.png",
+      "sourceUrl": "https://digitecme.com/images/digitec-logo-english.png",
+      "width": 5802,
+      "height": 737,
+      "sha256": "7d079927de18082fb5a4311017ab83cb4f8d3f208bd5952812574956c484130a",
+      "modification": "None; byte-preserved copy",
+      "licenseStatus": "Brand asset supplied through user's existing DIGI-TEC project; use authorized by the requested DIGI-TEC commercial. Underlying ownership not independently audited.",
+      "verification": "Visually inspected local file. Direct remote PNG retrieval unavailable; remote bytes not verified.",
+      "notes": "High-resolution orange-and-black wordmark on white. Preserve 5802:737 aspect ratio. Source URL identifies expected site asset location, not proof of successful download."
+    },
+    {
+      "id": "digitec-wordmark-light-original",
+      "file": "assets/digitec-wordmark-light-original.png",
+      "kind": "brand-logo",
+      "sourceLocal": "public/lovable-uploads/916789e0-b6fb-43d4-9d52-79899ce5a1c2.png",
+      "sourceUrl": "https://digitecme.com/lovable-uploads/916789e0-b6fb-43d4-9d52-79899ce5a1c2.png",
+      "width": 429,
+      "height": 49,
+      "sha256": "2658e4abbc5f8152675d0d8b493d8ccb1f5097fdb5a8fb464c36a6c0cd00de8d",
+      "modification": "None; byte-preserved copy",
+      "licenseStatus": "Brand asset supplied through user's existing DIGI-TEC project; use authorized by the requested DIGI-TEC commercial. Underlying ownership not independently audited.",
+      "verification": "Visually inspected; referenced by existing src/components/Footer.tsx. Remote bytes not verified.",
+      "notes": "White-and-orange transparent footer logo. Native resolution is limited; evaluate before enlargement."
+    },
+    {
+      "id": "digitec-d-original",
+      "file": "assets/digitec-d-original.png",
+      "kind": "brand-mark",
+      "sourceLocal": "public/images/digitec-d.png",
+      "sourceUrl": "https://digitecme.com/images/digitec-d.png",
+      "width": 437,
+      "height": 308,
+      "sha256": "6782ffed4d8dae6506f40c6581aa2d6d5752dbf22e8524afcc022a05dc6532ce",
+      "modification": "None; byte-preserved copy",
+      "licenseStatus": "Brand asset supplied through user's existing DIGI-TEC project; use authorized by the requested DIGI-TEC commercial. Underlying ownership not independently audited.",
+      "verification": "Visually inspected local file; remote bytes not verified.",
+      "notes": "Transparent standalone orange D. Preserve native proportions."
+    },
+    {
+      "id": "hero-coupe",
+      "file": "assets/hero-coupe.png",
+      "kind": "original-generated-visual",
+      "description": "Original unbranded CGI-style coupe; built-in imagegen, no reference images",
+      "bytes": 1904461,
+      "sha256": "4adc846e490a470be9c66664c664aff996cbfc4b853d97f336c7594aac35c827",
+      "width": 1672,
+      "height": 941,
+      "licenseStatus": "Generated for this project using built-in imagegen; use subject to applicable service terms. No third-party stock photo or vehicle model used; no guarantee of unique output.",
+      "promptRecord": "docs/image-generation-prompts.json",
+      "createdAt": "2026-10-20"
+    },
+    {
+      "id": "engine-exploded",
+      "file": "assets/engine-exploded.png",
+      "kind": "original-generated-visual",
+      "description": "Generic engine atlas with true alpha; independent masked components in engine.mjs",
+      "bytes": 2332831,
+      "sha256": "f0dc1da6d18f7f3999f2a64e8bb08bf20902cb9a4240187f19ddbb6cbe19283c",
+      "width": 1024,
+      "height": 1536,
+      "licenseStatus": "Generated for this project using built-in imagegen; use subject to applicable service terms. No third-party stock photo or vehicle model used; no guarantee of unique output.",
+      "promptRecord": "docs/image-generation-prompts.json",
+      "createdAt": "2026-10-20"
+    },
+    {
+      "id": "paint-macro",
+      "file": "assets/paint-macro.png",
+      "kind": "original-generated-visual",
+      "description": "Graphite paint/film macro; animated film mesh and beads composited in code",
+      "bytes": 2335384,
+      "sha256": "5762215df6976e81f3b3f2a9cf90f123ec62a446a569b4b65b33714d6c003068",
+      "width": 1672,
+      "height": 941,
+      "licenseStatus": "Generated for this project using built-in imagegen; use subject to applicable service terms. No third-party stock photo or vehicle model used; no guarantee of unique output.",
+      "promptRecord": "docs/image-generation-prompts.json",
+      "createdAt": "2026-10-20"
+    },
+    {
+      "id": "digitec-wordmark-light-existing",
+      "file": "assets/digitec-wordmark-light-existing.png",
+      "kind": "reference-brand-logo",
+      "description": "Existing 2018x232 supplied-logo derivative; NOT USED IN VIDEO",
+      "bytes": 56383,
+      "sha256": "02d26bcac475a67a043e4b2c062999f21656e5e09fb2b4535cf3c32e66319cba",
+      "width": 2018,
+      "height": 232,
+      "sourceLocal": "outputs/video-wall-edit/digitec-video-overlay.png",
+      "licenseStatus": "Existing supplied-logo derivative retained for reference; excluded from final composition."
+    },
+    {
+      "id": "audio-master",
+      "file": "assets/audio/master.wav",
+      "kind": "original-procedural-audio",
+      "description": "Stereo original synthesized score and sound design; src/audio.py",
+      "bytes": 6720044,
+      "sha256": "c91d373563fe277d5fb6554dfb0f0fedf7b9e62d311cccee4214e7ec62d27e71",
+      "licenseStatus": "Original project synthesis, no third-party sample or commercial recording.",
+      "details": "assets/audio/audio-manifest.json"
+    },
+    {
+      "id": "audio-music",
+      "file": "assets/audio/music.wav",
+      "kind": "original-procedural-audio",
+      "description": "Original music stem",
+      "bytes": 6720044,
+      "sha256": "2d19f222042bd2a909515b981a4bee8827b728386b95609c2a689a18fb4883f6",
+      "licenseStatus": "Original project synthesis, no third-party sample or commercial recording.",
+      "details": "assets/audio/audio-manifest.json"
+    },
+    {
+      "id": "audio-sound-design",
+      "file": "assets/audio/sound-design.wav",
+      "kind": "original-procedural-audio",
+      "description": "Original sound design stem",
+      "bytes": 6720044,
+      "sha256": "3297762002bbb5297af52b1ef4454304c2fc97c67fa3a158c322eedc8fa70869",
+      "licenseStatus": "Original project synthesis, no third-party sample or commercial recording.",
+      "details": "assets/audio/audio-manifest.json"
+    }
+  ],
+  "referenceOnlyNotCleared": [
+    {
+      "sourceLocal": "public/images/cars/amg-gt.png",
+      "sourceUrl": "https://digitecme.com/images/cars/amg-gt.png",
+      "dimensions": [
+        1024,
+        640
+      ],
+      "description": "Silver premium coupe, front three-quarter studio image on white",
+      "licenseStatus": "Unknown; no ad-reuse license or release found. Excluded from cleared production assets."
+    },
+    {
+      "sourceLocal": "public/images/tuning-hero-bg.jpg",
+      "sourceUrl": "https://digitecme.com/images/tuning-hero-bg.jpg",
+      "dimensions": [
+        1920,
+        811
+      ],
+      "description": "GAD vehicles in front of workshop shutter",
+      "licenseStatus": "Unknown; no ad-reuse license or release found. Excluded from cleared production assets."
+    },
+    {
+      "sourceLocal": "public/images/hero-bg.png",
+      "sourceUrl": "https://digitecme.com/images/hero-bg.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "licenseStatus": "Unknown; no ad-reuse license or release found. Excluded from cleared production assets."
+    },
+    {
+      "sourceLocal": "public/images/mercedes-engine-repair.png",
+      "sourceUrl": "https://digitecme.com/images/mercedes-engine-repair.png",
+      "dimensions": [
+        1086,
+        1448
+      ],
+      "licenseStatus": "Unknown; no ad-reuse license or release found. Excluded from cleared production assets."
+    }
+  ],
+  "verifiedClaims": [
+    {
+      "text": "Advanced diagnostics",
+      "sourceUrl": "https://digitecme.com/services/car-diagnostics-dubai",
+      "qualification": "Vehicle-specific supported systems and tests"
+    },
+    {
+      "text": "ECU & module programming",
+      "sourceUrl": "https://digitecme.com/services/car-diagnostics-dubai",
+      "qualification": "Function, module, software and available access confirmed separately"
+    },
+    {
+      "text": "Mechanical repairs / Electrical systems / Servicing",
+      "sourceUrl": "https://digitecme.com/",
+      "qualification": "Vehicle-specific service scope"
+    },
+    {
+      "text": "Performance tuning / Engine & ECU calibration",
+      "sourceUrl": "https://digitecme.com/tuning",
+      "qualification": "Vehicle, condition, fuel, intended use and supporting hardware determine scope; no output promise"
+    },
+    {
+      "text": "GAD Motors · UAE contact",
+      "sourceUrl": "https://www.gad-motors.de/",
+      "corroboratingSourceUrl": "https://digitecme.com/tuning",
+      "qualification": "Contact relationship verified; no exclusivity or certification claim"
+    },
+    {
+      "text": "Body repair",
+      "sourceUrl": "https://digitecme.com/services/car-body-repair-dubai",
+      "qualification": "Repair and refinishing method selected after condition assessment"
+    },
+    {
+      "text": "Paint protection film",
+      "sourceUrl": "https://digitecme.com/services/paint-protection-film",
+      "qualification": "Agreed coverage and film; no scratch-proof or universal-warranty claim"
+    },
+    {
+      "text": "Ceramic coating",
+      "sourceUrl": "https://digitecme.com/services/ceramic-coating",
+      "qualification": "Surface behaviour and finish depend on selected product and preparation; no stone-chip protection claim"
+    }
+  ],
+  "excludedClaims": [
+    "Universal horsepower or torque gain",
+    "Unverified performance telemetry measurements",
+    "Exclusive GAD partnership",
+    "Manufacturer-certified workshop",
+    "Universal ceramic or PPF lifespan/warranty",
+    "Scratch-proof paint",
+    "Unverified completed customer work"
+  ],
+  "pendingProductionEntries": [],
+  "fonts": {
+    "bundled": false,
+    "source": "Windows system fonts",
+    "families": [
+      "Bahnschrift",
+      "Segoe UI",
+      "Segoe UI Semibold",
+      "Consolas"
+    ],
+    "notes": "Used to render raster video frames. Fonts are not redistributed in editable source. Supply licensed equivalents and update runtime.mjs on other platforms."
+  },
+  "runtime": {
+    "renderer": "Node.js + @napi-rs/canvas 0.1.100; Canvas2D 2.5D scene composition",
+    "encoder": "FFmpeg 9.0.2 essentials / libx264 / AAC",
+    "ffmpegSource": "https://www.gyan.dev/ffmpeg/builds/ffmpeg-release-essentials.zip",
+    "audio": "Original deterministic NumPy oscillator/noise synthesis"
+  },
+  "usedBrandLogo": "assets/digitec-wordmark-light-original.png",
+  "visualLimitations": [
+    "Original raster photographic plates with programmatic component movement, scanning, light, film and surface overlays; no editable full vehicle mesh.",
+    "Generic conceptual engine assembly, not a validated model-specific mechanical animation.",
+    "Official transparent wordmark is raster at429x49; preserved proportionally, enlarged in final slate.",
+    "Photoreal-style generated plates are not recordings of customer vehicles or workshop work."
+  ],
+  "revisions": [
+    {
+      "id": "number-free-4k",
+      "output": "renders/digitec-vertical-4k.mp4",
+      "dimensions": [
+        2160,
+        3840
+      ],
+      "fps": 30,
+      "duration": 35,
+      "changes": "Removed all visible numeric numbering; rendered graphics on native 4K canvas",
+      "sourceDetail": "Original photographic plates and raster logo retain their source resolution."
+    }
+  ]
+}

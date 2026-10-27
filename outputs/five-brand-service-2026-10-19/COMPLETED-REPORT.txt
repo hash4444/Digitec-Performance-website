@@ -1,0 +1,252 @@
+DIGI-TEC five brand automotive service SEO sprint
+19 October 2026 | Local review report
+
+Local improvements are complete for the existing Rolls-Royce, Lamborghini,
+Volkswagen, Mercedes-Benz and BMW service hubs and their Arabic counterparts.
+The changes improve maintenance guidance, supported repair scope, Arabic search
+wording, internal links and the enquiry process. No new keyword pages were
+created. Nothing was pushed, deployed, published or written to production.
+
+Release recommendation: GO for the reviewed local change set. All final test
+gates pass. Production release requires explicit authorization. Search growth and qualified enquiry uplift require post-release
+measurement; neither is claimed from this local work.
+
+1. Five brand audit
+
+The production snapshot captured on 19 October shows all ten English and Arabic
+hubs returning HTTP 200 with rendered HTML, one H1, self-referencing canonicals,
+index/follow directives and reciprocal en-AE, ar-AE and x-default alternatives.
+No X-Robots-Tag blocks were present. robots.txt permits these routes. Local
+validation confirms all ten canonical URLs are in the sitemap. This establishes
+technical eligibility, not Google's current indexed state or selected canonical;
+those require dated GSC URL Inspection evidence.
+
+Rolls-Royce
+Owner: https://digitecme.com/brands/rolls-royce-service-dubai
+The English hub already covers maintenance, diagnosis, mechanical, electrical,
+transmission, suspension, brakes and AC, with conditional model acceptance and
+quotation FAQs. Its commercial title and description were retained. Generic
+Arabic promises were replaced with maintenance-history checks, scope confirmation
+and itemized quotation guidance. Arabic model context distinguishes Ghost,
+Cullinan, Phantom, Wraith and Dawn from electric Spectre. High-voltage work is
+not promised. Both languages now clarify WhatsApp draft and appointment steps.
+
+Lamborghini
+Owner: https://digitecme.com/brands/lamborghini-service-dubai
+The English hub already has useful service cards, warning-light answers and
+model/transmission/suspension distinctions. Its metadata was retained. Arabic
+now explains model-specific service planning, mechanical/electrical assessment
+and repair approval, with Urus, Huracan, Aventador, Gallardo and Revuelto context.
+Low-voltage assessment does not advertise hybrid traction-battery repair. The
+Arabic hub receives the same mobile booking access as the English hub.
+
+Volkswagen
+Owner: https://digitecme.com/brands/volkswagen-service-dubai
+The existing hub explains ODIS, DSG and EPC concerns but previously used generic
+service cards and had only four FAQs. Four focused maintenance/diagnostic/
+mechanical/electrical cards now replace the generic service block. Two English
+FAQs explain due maintenance and quotation/booking. The description now covers
+the broader service intent. Golf, GTI, Golf R, Tiguan, Touareg, Passat and T-Roc
+remain model examples; ID electric-drive requests require separate confirmation.
+VW is used naturally without a synonym page. Twenty English/Arabic directory
+links to intentionally noindex Volkswagen children now point directly to the
+existing shared service owners. The four indexable Volkswagen service children
+remain the oil, brake, AC and diagnostics owners. Publishing policy is unchanged.
+
+Mercedes-Benz
+Owner: https://digitecme.com/brands/mercedes-benz-service-dubai
+Existing English maintenance, Service A/B, XENTRY, mechanical/electrical and
+supported-model content remains. Existing English/Arabic metadata was retained.
+Arabic gets model-specific maintenance and diagnostic/repair scope cards. Its
+oil and diagnostic links point directly to the established Mercedes service URLs.
+Four Arabic links to noindex model guides became model examples with one link
+to the indexable Arabic maintenance guide. The Arabic Brand and Service brand
+reference now use the same manufacturer identity as the English hub, correcting
+the prior empty '#brand-' fragment. The shared business graph is unchanged.
+
+BMW
+Owner: https://digitecme.com/brands/bmw-service-dubai
+The English hub already covers Condition Based Service, fault diagnosis,
+mechanical/electrical work and supported model routes. Its metadata, eleven
+visible FAQ answers, fourteen service links and seven model links are retained
+and tested. Arabic now explains due maintenance from CBS/model guidance and
+vehicle history, conditional electrical functions, repair estimates and booking.
+No additional diagnostic equipment or programming compatibility is asserted.
+
+All five hubs have clear WhatsApp and telephone actions. Mobile bars now also
+cover Volkswagen and the previously omitted Arabic Rolls-Royce/Lamborghini hubs.
+Arabic telephone labels use isolated left-to-right digits. Local browser checks
+cover desktop 1440px, mobile 390px and narrow 320px, plus no-JavaScript pages.
+These are usability/rendering checks, not field Core Web Vitals measurements.
+
+2. Query ownership and commercial priorities
+
+Each pair of broad service/repair queries belongs to one existing brand hub.
+Arabic counterparts use /ar with the same hub path. Task-specific repair queries
+retain their current service pages, and maintenance guides remain supporting
+informational content. No measured query-to-page join or cannibalization claim
+is inferred from independent GSC Queries and Pages tabs.
+
+query-to-page-ownership.csv contains all ten requested terms. Recent exact-query
+metrics below come from 10 July through 9 October 2026 (92 days), Web, sitewide:
+
+Query                            Clicks  Impressions  Avg position
+Rolls Royce service Dubai             1          476         18.13
+Rolls Royce repair Dubai              1          354         19.92
+Lamborghini service Dubai             0          379         16.41
+Lamborghini repair Dubai              0          361         22.37
+Volkswagen service Dubai              0          107         22.48
+Volkswagen repair Dubai               0           89         26.53
+Mercedes service Dubai                2          613         13.88
+Mercedes repair Dubai                 8         1071          6.35
+BMW service Dubai                     1          377         21.52
+BMW repair Dubai                      2          203         13.79
+
+P1: Mercedes, Rolls-Royce, Lamborghini and BMW commercial hubs. Mercedes repair
+has the strongest observed exact-query volume and an average position of 6.35;
+the other hubs have visible service/repair demand with low observed clicks.
+P2 by relative observed exact-query volume: Volkswagen, while still implementing
+its clear content and routing gaps in this sprint.
+
+Additional opportunities include Mercedes specialist Dubai (341 impressions,
+position 5.80), Rolls-Royce workshop Dubai (148, 18.54), Lamborghini service center
+Dubai (195, 20.19), BMW service center Dubai (188, 30.43), and VW service Dubai
+(32, 25.41). Arabic 'صيانة رولز رويس' has 43 impressions at 28.93. These support
+existing hubs, not duplicate pages. Existing task opportunities include Mercedes
+engine/suspension, BMW transmission/engine, Rolls-Royce engine/suspension,
+Lamborghini engine/battery/transmission and Volkswagen AC queries.
+
+Hold capability-led expansion: Lamborghini reverse-camera demand (247 impressions)
+and BMW coding demand (88) do not establish workshop capability or compatibility.
+Volkswagen VIN decoder intent is excluded from commercial service optimization.
+PPF, tuning and audio acquisition work remain outside this sprint. The bounded
+query scan does not establish new model-service demand.
+
+Full priorities, row-level source ranges and safeguards are recorded in
+gsc/prioritized-keyword-opportunities.csv and gsc/gsc-findings.txt.
+
+3. GSC baseline and comparison limits
+
+The 19 October workbook is Last 24 hours, not a complete daily report. Its hourly
+bucket starts run 18 October 06:00 through 19 October 05:00, UTC+04:00. Chart
+totals are 6 clicks and 1204 impressions. Visible Queries rows total 1 click and
+914 impressions; Pages rows total 6 clicks and 1280 page impressions. These
+denominators are kept separate. All five English hubs appear with zero clicks
+in this short window. Nine exact target queries are observed; BMW service Dubai
+is absent and therefore unknown, not zero.
+
+Longer context was used rather than requested unnecessarily: a 92-day export
+through 9 October and a separate 167-date export spanning 12 April to 25 September.
+The periods overlap and cannot be added together or treated as a growth test.
+Visible query/page tables in the longer exports reach the 1000-row cap.
+
+A valid same-source sitewide comparison is also available: 15 August-11 September
+versus 12 September-9 October, two nonoverlapping 28-day windows. Clicks were
+172 versus 166; impressions 36452 versus 38353. This mixed sitewide movement
+predates the sprint and does not measure five-brand or lead-quality improvement.
+Seventeen workbooks were inspected read-only and their SHA-256 hashes preserved.
+
+4. Metadata, internal links and schema
+
+audit/metadata-before-after.csv and .json provide complete titles, descriptions,
+H1s and canonicals before/after for all ten routes. The five English titles were
+already aligned with broad service/repair intent and remain unchanged. The
+Volkswagen English description now covers routine maintenance, diagnostics,
+mechanical/electrical faults and requesting assessment. Four Arabic hubs now use
+natural Arabic brand names in title/H1 and conditional, local service descriptions.
+Mercedes Arabic metadata remains unchanged. Canonicals and hreflang are preserved.
+
+The final static audit checks 683 internal link occurrences across the ten hubs,
+including 61 new or updated scope/link occurrences. All newly introduced targets
+are direct canonical, indexable pages. The 24 inherited noindex inlinks identified
+during the sprint are resolved; zero inherited unresolved links remain.
+The complete destinations and before/after details are in
+audit/internal-link-schema-report.json and audit/static-sprint-validation.json.
+
+Route Service offer catalogs for the five Arabic hubs and Volkswagen English
+now match their four visible service-scope cards. Broad default programming and
+paint-care offers are no longer used for these route-level catalogs. Existing
+global catalogs and PPF pages remain unchanged. Service/WebPage/Breadcrumb/FAQ
+nodes retain their canonical route IDs and provider '#business' reference.
+Shared Organization, AutoRepair, WebSite, logo, business facts and entity graph
+are preserved. Published FAQ answers remain in server-rendered HTML and match
+schema. Existing schema claim filtering remains; no rich-result or AI citation
+appearance is promised.
+
+5. Conversion changes and recommendations
+
+Applied: consistent model/year/mileage/history/symptom checklist; confirmation
+of assessment and availability after the message is received; inspection-qualified
+repair estimates; parts/fluids/labour approval wording; clear WhatsApp draft and
+Send instructions; expanded mobile access; correctly ordered Arabic phone digits.
+
+The form prepares an editable WhatsApp draft. It does not persist a backend lead,
+send a message or confirm an appointment. whatsapp_click, whatsapp_chat_opened
+and whatsapp_draft_opened are contact-intent events, not confirmed enquiries.
+Validation covers optional contact fields, meaningful issue text, error states,
+brand context and exclusion of private message/query data from analytics.
+
+Recommended next measurement: record received and qualified WhatsApp enquiries,
+answered/qualified calls, and accepted backend forms separately from clicks.
+Link these to appointments and service outcomes through the existing business
+workflow. Header/footer placement context can be improved in a separate shared
+analytics task. No backend or analytics-event semantics were changed here.
+
+After an authorized release, compare matched complete 28-day periods and a
+90-day view with consistent filters. Export query-by-page data or each exact
+query's Pages report, then segment UAE and mobile. Capture URL Inspection status
+and selected canonical for the ten hubs. Track qualified enquiries alongside
+clicks/impressions/CTR and retain the release date.
+
+6. Test evidence and release decision
+
+Final test results are in qa/production-build-results.json, qa/checks.json,
+audit/static-sprint-validation.json and conversion/browser-summary.json.
+The declared 19-step production pipeline covers SSR/client builds, prerendering,
+hosting rules, production routing, SEO/schema, PPF/paint/protection/query release,
+contact attribution, PPF draft safety, oil, suspension, transmission and social
+metadata. It builds 1256 public routes and validates 1005 sitemap canonical URLs.
+
+Lint and application/Node type checks pass. Lint retains eleven existing warnings
+and no errors. Additional master SEO, BMW hub, paint-care, tuning and brand-form
+checks pass. Static sprint validation passes 310 checks across ten hubs, including
+exact protected source hashes and shared graph consistency. Focused browser
+verification passes 30 responsive checks, 30 interaction cases and 10 no-JavaScript
+pages, with no runtime/hydration errors or failed local responses. External requests,
+real messaging and non-GET/HEAD requests were blocked during browser testing.
+
+The existing master browser test initially stopped at a stale Mercedes electrical
+H1 expectation. The captured pre-sprint SSR bundle already contains the current
+wording. One test assertion was aligned to that established baseline; the service
+page itself was not changed. Final rerun evidence is retained with the earlier
+failure so the correction is reviewable.
+
+Final release status is GO in release-summary.json. The final 19-step build,
+lint/types and regression checks, 310-check sprint audit and both browser suites
+pass. The existing master browser suite passes 27 responsive checks,
+17 interactions, seven SPA navigation checks and its contact analytics test.
+Live indexing, field performance and post-release conversion gains are follow-up
+measurements rather than claims established by local tests.
+
+7. Modified files and preservation
+
+Application files:
+  src/pages/BrandPage.tsx
+  src/data/brands.ts
+  src/data/priorityBrandSeo.ts
+  src/i18n/ar-brands.ts
+  src/components/BrandServiceScope.tsx (new)
+  src/data/brandServiceSprint.ts (new)
+
+Test maintenance:
+  scripts/test-master-seo-browser.mjs (one existing H1 expectation)
+
+Report, scripts, snapshots, GSC extraction and test evidence:
+  outputs/five-brand-service-2026-10-19/
+
+Baseline HEAD: 6180f45, main. Existing backend edits and unrelated untracked work
+were preserved. Source hash safeguards cover PPF, tuning, backend, router and
+shared schema files. Generated test reports and the generated router's 404 shell
+were archived under this sprint before restoring their exact pre-sprint bytes.
+The final dist remains locally built; future builds regenerate hosting data.
+No commits, pushes, deployments or production changes were made.

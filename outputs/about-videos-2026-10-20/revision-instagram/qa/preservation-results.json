@@ -1,0 +1,57 @@
+{
+  "checkedAt": "2026-10-20T06:28:42.751Z",
+  "head": "2971301bb37d38f4785844af067eebd55f9f6dda",
+  "branch": "main",
+  "stagedFiles": [],
+  "protectedFiles": [
+    {
+      "file": "src/components/MercedesMaintenanceScope.tsx",
+      "expected": "1e6728a7de40ef56f7bf77af495784cff38c34cd9a653d6777757fee62616aff",
+      "actual": "1e6728a7de40ef56f7bf77af495784cff38c34cd9a653d6777757fee62616aff",
+      "passed": true
+    },
+    {
+      "file": "src/lib/route-manifest.ts",
+      "expected": "a05194b6899972cb91945af2ea0c0a3fd836055a5d8c52d87fc3f9a6a219d0d5",
+      "actual": "a05194b6899972cb91945af2ea0c0a3fd836055a5d8c52d87fc3f9a6a219d0d5",
+      "passed": true
+    },
+    {
+      "file": "src/pages/BrandPage.tsx",
+      "expected": "f5d68037c056bb1f32d73cc5c009e066287da0ab225267b9606d834a23002c33",
+      "actual": "f5d68037c056bb1f32d73cc5c009e066287da0ab225267b9606d834a23002c33",
+      "passed": true
+    },
+    {
+      "file": "src/pages/Services.tsx",
+      "expected": "77e7cc3aa83277602271ec3106506d4f360bd4fb6737445a5a1235a435ed09d0",
+      "actual": "77e7cc3aa83277602271ec3106506d4f360bd4fb6737445a5a1235a435ed09d0",
+      "passed": true
+    },
+    {
+      "file": "src/components/MercedesServiceBookingForm.tsx",
+      "expected": "c45f5468d2361b5b2de37edee90fff8b1d0cd145e2379439c8aad973fd1291fd",
+      "actual": "c45f5468d2361b5b2de37edee90fff8b1d0cd145e2379439c8aad973fd1291fd",
+      "passed": true
+    },
+    {
+      "file": "src/data/mercedesServiceCampaign.ts",
+      "expected": "98012343a3f8450ba6a34bb094425beaa4049932d534d9115d0b373ded32c8dd",
+      "actual": "98012343a3f8450ba6a34bb094425beaa4049932d534d9115d0b373ded32c8dd",
+      "passed": true
+    },
+    {
+      "file": "supabase/functions/mcp/index.ts",
+      "expected": "dae4eb5896ab1e38ba0e040c41c23dc986ee9ec2f729e8b91548be0658091a43",
+      "actual": "dae4eb5896ab1e38ba0e040c41c23dc986ee9ec2f729e8b91548be0658091a43",
+      "passed": true
+    },
+    {
+      "file": "outputs/seo-2026-09-16/master-validation.json",
+      "expected": "6c164ea2102776061f84fd6fa16963963552f33b9406fc65d7e9f2aaa41cbd12",
+      "actual": "6c164ea2102776061f84fd6fa16963963552f33b9406fc65d7e9f2aaa41cbd12",
+      "passed": true
+    }
+  ],
+  "passed": true
+}

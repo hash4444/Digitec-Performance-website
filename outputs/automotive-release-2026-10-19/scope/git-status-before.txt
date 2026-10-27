@@ -1,0 +1,78 @@
+ M outputs/seo-2026-09-16/master-validation.json
+ M scripts/test-master-seo-browser.mjs
+ M src/data/brands.ts
+ M src/data/priorityBrandSeo.ts
+ M src/i18n/ar-brands.ts
+ M src/pages/BrandPage.tsx
+ M src/pages/BrandServicePage.tsx
+ M supabase/functions/mcp/index.ts
+?? outputs/automotive-release-2026-10-19/
+?? outputs/five-brand-service-2026-10-19/
+?? outputs/gad-posters-2026-10-07/
+?? outputs/paint-seo-2026-10-12/
+?? outputs/paint-seo-predeployment-2026-10-12/
+?? outputs/ppf-phase1-2026-10-17/baseline/pre-existing.patch
+?? outputs/ppf-phase1-2026-10-17/baseline/source/
+?? outputs/ppf-phase2-2026-10-17/baseline/source/
+?? outputs/ppf-phase2-2026-10-17/baseline/start-tracked.patch
+?? outputs/ppf-phase2-2026-10-17/tabular-work/
+?? outputs/ppf-phase3-4-2026-10-17/artifact-work/
+?? outputs/ppf-phase3-4-2026-10-17/baseline/source/
+?? outputs/ppf-phase3-4-2026-10-17/baseline/start-tracked.patch
+?? outputs/ppf-phase3-4-2026-10-17/qa/build-logs/
+?? outputs/ppf-phase3-4-2026-10-17/workbook-runtime/
+?? outputs/ppf-push-2026-10-17/
+?? outputs/repair-service-2026-10-19/
+?? outputs/t1-release-2026-10-06/
+?? outputs/t1.1/
+?? outputs/t1/README.md
+?? outputs/t1/analysis-runtime/
+?? outputs/t1/analyze-tuning-gsc.py
+?? outputs/t1/audit-t1-baseline.mjs
+?? outputs/t1/baseline/README.md
+?? outputs/t1/baseline/T1_BASELINE_HEAD.txt
+?? outputs/t1/baseline/Tuning.tsx
+?? outputs/t1/baseline/ar-tuning.html
+?? outputs/t1/baseline/git-branch.txt
+?? outputs/t1/baseline/git-log.txt
+?? outputs/t1/baseline/live-rendered.html
+?? outputs/t1/baseline/live-response.json
+?? outputs/t1/baseline/master-validation.json
+?? outputs/t1/baseline/mobile-live.jpg
+?? outputs/t1/baseline/paint-care-cluster-audit.json
+?? outputs/t1/baseline/protection-release-validation.json
+?? outputs/t1/baseline/sitemap.xml
+?? outputs/t1/baseline/sitewide-noindex-inlinks.json
+?? outputs/t1/baseline/sitewide-records.json
+?? outputs/t1/baseline/sitewide-repeated-paragraphs.json
+?? outputs/t1/baseline/sitewide-summary.json
+?? outputs/t1/baseline/standalone-router-test-drift-analysis.md
+?? outputs/t1/baseline/tuning-page-evidence.json
+?? outputs/t1/baseline/tuning.html
+?? outputs/t1/configurator-extracted.json
+?? outputs/t1/configurator-extraction-checks.json
+?? outputs/t1/current-tuning-page-audit.md
+?? outputs/t1/finalize-t1-evidence.mjs
+?? outputs/t1/gad-motors-evidence.md
+?? outputs/t1/performance-configurator-inventory.csv
+?? outputs/t1/preview-t1.mjs
+?? outputs/t1/tuning-ecosystem-affected-route-evidence.json
+?? outputs/t1/tuning-gsc-query-register.csv
+?? outputs/t1/tuning-gsc-workbook-data.json
+?? outputs/t1/tuning-gsc-workbook-scope.md
+?? outputs/t1/tuning-master-generic-ownership-assessment.csv
+?? outputs/t1/tuning-model-factual-qa.json
+?? outputs/t1/tuning-model-gsc-evidence.csv
+?? outputs/t1/tuning-model-gsc-evidence.json
+?? outputs/t1/tuning-model-page-decisions.csv
+?? outputs/t1/tuning-model-tier-rationale.md
+?? outputs/t1/tuning-supported-vehicle-whitelist.csv
+?? outputs/t1/tuning-wrong-owner-queries.csv
+?? outputs/t1/unsupported-tuning-brand-audit.md
+?? outputs/t1/validation/
+?? outputs/t1/verification/
+?? src/components/BrandServiceScope.tsx
+?? src/components/RepairEnquiryPanel.tsx
+?? src/data/brandServiceSprint.ts
+?? src/data/repairServiceArabic.ts
+?? src/data/repairServiceContent.ts

@@ -1,0 +1,362 @@
+{
+  "capture": "evidence/http/pre-2026-10-26T06-53-48-482Z/capture.json",
+  "startedAt": "2026-10-26T06:53:48.485Z",
+  "finishedAt": "2026-10-26T06:54:33.955Z",
+  "summary": {
+    "cases": 326,
+    "networkRequests": 564,
+    "assertions": 733,
+    "passed": 733,
+    "failed": 0,
+    "sourceCases": 192,
+    "protectedOilCases": 48
+  },
+  "homepage": {
+    "title": "Digi-Tec Performance Center | Independent Car Workshop Dubai",
+    "canonical": [
+      "https://digitecme.com/"
+    ],
+    "mainTextSha256": "d07fff0f97bb2b18b3e85e16673c1e26fbb476689020cbb7f9aa8deab957c6dc"
+  },
+  "rules": [
+    {
+      "key": "ar-oil-change",
+      "source": "https://digitecme.com/ar/brands/mercedes-benz-service-dubai/oil-change",
+      "sourceStatus": 200,
+      "sourceTitle": "Digi-Tec Performance Center | Independent Car Workshop Dubai",
+      "sourceCanonical": [
+        "https://digitecme.com/"
+      ],
+      "sourceMainTextSha256": "d07fff0f97bb2b18b3e85e16673c1e26fbb476689020cbb7f9aa8deab957c6dc",
+      "matchesHomepageMainText": true,
+      "target": "https://digitecme.com/ar/services/mercedes-oil-change-dubai",
+      "targetStatus": 200,
+      "targetTitle": "تغيير زيت مرسيدس في دبي | المواصفة الصحيحة | ديجي تيك",
+      "targetH1": [
+        "تغيير زيت مرسيدس والفلتر في دبي"
+      ],
+      "targetCanonical": [
+        "https://digitecme.com/ar/services/mercedes-oil-change-dubai"
+      ],
+      "targetRobots": [
+        "index, follow, max-image-preview:large"
+      ],
+      "targetXRobotsTag": null,
+      "targetMainTextSha256": "689f75329411c3710764f7b0aa59af40c5525081aacd571b57e91c6aaa0bd945",
+      "technicalIndexability": "Eligible in sampled HTTP/HTML/robots/sitemap evidence; Google indexing and Google-selected canonical not established."
+    },
+    {
+      "key": "en-body-repair",
+      "source": "https://digitecme.com/brands/mercedes-benz-service-dubai/body-repair",
+      "sourceStatus": 200,
+      "sourceTitle": "Digi-Tec Performance Center | Independent Car Workshop Dubai",
+      "sourceCanonical": [
+        "https://digitecme.com/"
+      ],
+      "sourceMainTextSha256": "d07fff0f97bb2b18b3e85e16673c1e26fbb476689020cbb7f9aa8deab957c6dc",
+      "matchesHomepageMainText": true,
+      "target": "https://digitecme.com/services/mercedes-body-repair-dubai",
+      "targetStatus": 200,
+      "targetTitle": "Mercedes Body & Accident Repair Dubai | Digi-Tec",
+      "targetH1": [
+        "Mercedes Body Repair & Paintwork in Dubai"
+      ],
+      "targetCanonical": [
+        "https://digitecme.com/services/mercedes-body-repair-dubai"
+      ],
+      "targetRobots": [
+        "index, follow, max-image-preview:large"
+      ],
+      "targetXRobotsTag": null,
+      "targetMainTextSha256": "064d36487b5bc033d010faab21413230643dd18bb8aba26b7da41a7f3810a0da",
+      "technicalIndexability": "Eligible in sampled HTTP/HTML/robots/sitemap evidence; Google indexing and Google-selected canonical not established."
+    },
+    {
+      "key": "ar-battery-replacement",
+      "source": "https://digitecme.com/ar/brands/mercedes-benz-service-dubai/battery-replacement",
+      "sourceStatus": 200,
+      "sourceTitle": "Digi-Tec Performance Center | Independent Car Workshop Dubai",
+      "sourceCanonical": [
+        "https://digitecme.com/"
+      ],
+      "sourceMainTextSha256": "d07fff0f97bb2b18b3e85e16673c1e26fbb476689020cbb7f9aa8deab957c6dc",
+      "matchesHomepageMainText": true,
+      "target": "https://digitecme.com/ar/services/mercedes-battery-replacement-dubai",
+      "targetStatus": 200,
+      "targetTitle": "تبديل بطارية مرسيدس في دبي | فحص 12V | ديجي تيك",
+      "targetH1": [
+        "فحص وتبديل بطارية مرسيدس في دبي"
+      ],
+      "targetCanonical": [
+        "https://digitecme.com/ar/services/mercedes-battery-replacement-dubai"
+      ],
+      "targetRobots": [
+        "index, follow, max-image-preview:large"
+      ],
+      "targetXRobotsTag": null,
+      "targetMainTextSha256": "b0cee01eb52dd40a7127c18759ed453f1d8710c80e2b0ed4248993afb6b6a026",
+      "technicalIndexability": "Eligible in sampled HTTP/HTML/robots/sitemap evidence; Google indexing and Google-selected canonical not established."
+    },
+    {
+      "key": "ar-mechanical-repair",
+      "source": "https://digitecme.com/ar/brands/mercedes-benz-service-dubai/mechanical-repair",
+      "sourceStatus": 200,
+      "sourceTitle": "Digi-Tec Performance Center | Independent Car Workshop Dubai",
+      "sourceCanonical": [
+        "https://digitecme.com/"
+      ],
+      "sourceMainTextSha256": "d07fff0f97bb2b18b3e85e16673c1e26fbb476689020cbb7f9aa8deab957c6dc",
+      "matchesHomepageMainText": true,
+      "target": "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai",
+      "targetStatus": 200,
+      "targetTitle": "إصلاح محرك مرسيدس في دبي | ديجي تيك القوز",
+      "targetH1": [
+        "إصلاح محرك مرسيدس والأعطال الميكانيكية في دبي"
+      ],
+      "targetCanonical": [
+        "https://digitecme.com/ar/services/mercedes-mechanical-repair-dubai"
+      ],
+      "targetRobots": [
+        "index, follow, max-image-preview:large"
+      ],
+      "targetXRobotsTag": null,
+      "targetMainTextSha256": "e02e2625c01ba1d5dc310a765826833ff28bf66d1b9c5f7b0cac789d6c3ac463",
+      "technicalIndexability": "Eligible in sampled HTTP/HTML/robots/sitemap evidence; Google indexing and Google-selected canonical not established."
+    }
+  ],
+  "protectedEnglishOil": {
+    "cases": 48,
+    "observed": "All return a single 308 directly to slashless English oil destination, preserving raw query string; final 200. No observed loops."
+  },
+  "knownOutOfScopeObservations": [
+    {
+      "url": "https://digitecme.com/services/mercedes-service-dubai/",
+      "method": "GET",
+      "chain": [
+        {
+          "status": 200,
+          "location": null
+        }
+      ],
+      "observation": "Existing slash variant serves homepage after host/scheme normalization; excluded from these four proposed changes."
+    },
+    {
+      "url": "https://digitecme.com/services/mercedes-service-dubai/",
+      "method": "HEAD",
+      "chain": [
+        {
+          "status": 200,
+          "location": null
+        }
+      ],
+      "observation": "Existing slash variant serves homepage after host/scheme normalization; excluded from these four proposed changes."
+    },
+    {
+      "url": "http://digitecme.com/services/mercedes-service-dubai/",
+      "method": "GET",
+      "chain": [
+        {
+          "status": 301,
+          "location": "https://digitecme.com/services/mercedes-service-dubai/"
+        },
+        {
+          "status": 200,
+          "location": null
+        }
+      ],
+      "observation": "Existing slash variant serves homepage after host/scheme normalization; excluded from these four proposed changes."
+    },
+    {
+      "url": "http://digitecme.com/services/mercedes-service-dubai/",
+      "method": "HEAD",
+      "chain": [
+        {
+          "status": 301,
+          "location": "https://digitecme.com/services/mercedes-service-dubai/"
+        },
+        {
+          "status": 200,
+          "location": null
+        }
+      ],
+      "observation": "Existing slash variant serves homepage after host/scheme normalization; excluded from these four proposed changes."
+    },
+    {
+      "url": "https://www.digitecme.com/services/mercedes-service-dubai/",
+      "method": "GET",
+      "chain": [
+        {
+          "status": 301,
+          "location": "https://digitecme.com/services/mercedes-service-dubai/"
+        },
+        {
+          "status": 200,
+          "location": null
+        }
+      ],
+      "observation": "Existing slash variant serves homepage after host/scheme normalization; excluded from these four proposed changes."
+    },
+    {
+      "url": "https://www.digitecme.com/services/mercedes-service-dubai/",
+      "method": "HEAD",
+      "chain": [
+        {
+          "status": 301,
+          "location": "https://digitecme.com/services/mercedes-service-dubai/"
+        },
+        {
+          "status": 200,
+          "location": null
+        }
+      ],
+      "observation": "Existing slash variant serves homepage after host/scheme normalization; excluded from these four proposed changes."
+    },
+    {
+      "url": "http://www.digitecme.com/services/mercedes-service-dubai/",
+      "method": "GET",
+      "chain": [
+        {
+          "status": 301,
+          "location": "https://digitecme.com/services/mercedes-service-dubai/"
+        },
+        {
+          "status": 200,
+          "location": null
+        }
+      ],
+      "observation": "Existing slash variant serves homepage after host/scheme normalization; excluded from these four proposed changes."
+    },
+    {
+      "url": "http://www.digitecme.com/services/mercedes-service-dubai/",
+      "method": "HEAD",
+      "chain": [
+        {
+          "status": 301,
+          "location": "https://digitecme.com/services/mercedes-service-dubai/"
+        },
+        {
+          "status": 200,
+          "location": null
+        }
+      ],
+      "observation": "Existing slash variant serves homepage after host/scheme normalization; excluded from these four proposed changes."
+    },
+    {
+      "url": "https://digitecme.com/best-mercedes-workshop-dubai/",
+      "method": "GET",
+      "chain": [
+        {
+          "status": 200,
+          "location": null
+        }
+      ],
+      "observation": "Existing slash variant serves homepage after host/scheme normalization; excluded from these four proposed changes."
+    },
+    {
+      "url": "https://digitecme.com/best-mercedes-workshop-dubai/",
+      "method": "HEAD",
+      "chain": [
+        {
+          "status": 200,
+          "location": null
+        }
+      ],
+      "observation": "Existing slash variant serves homepage after host/scheme normalization; excluded from these four proposed changes."
+    },
+    {
+      "url": "http://digitecme.com/best-mercedes-workshop-dubai/",
+      "method": "GET",
+      "chain": [
+        {
+          "status": 301,
+          "location": "https://digitecme.com/best-mercedes-workshop-dubai/"
+        },
+        {
+          "status": 200,
+          "location": null
+        }
+      ],
+      "observation": "Existing slash variant serves homepage after host/scheme normalization; excluded from these four proposed changes."
+    },
+    {
+      "url": "http://digitecme.com/best-mercedes-workshop-dubai/",
+      "method": "HEAD",
+      "chain": [
+        {
+          "status": 301,
+          "location": "https://digitecme.com/best-mercedes-workshop-dubai/"
+        },
+        {
+          "status": 200,
+          "location": null
+        }
+      ],
+      "observation": "Existing slash variant serves homepage after host/scheme normalization; excluded from these four proposed changes."
+    },
+    {
+      "url": "https://www.digitecme.com/best-mercedes-workshop-dubai/",
+      "method": "GET",
+      "chain": [
+        {
+          "status": 301,
+          "location": "https://digitecme.com/best-mercedes-workshop-dubai/"
+        },
+        {
+          "status": 200,
+          "location": null
+        }
+      ],
+      "observation": "Existing slash variant serves homepage after host/scheme normalization; excluded from these four proposed changes."
+    },
+    {
+      "url": "https://www.digitecme.com/best-mercedes-workshop-dubai/",
+      "method": "HEAD",
+      "chain": [
+        {
+          "status": 301,
+          "location": "https://digitecme.com/best-mercedes-workshop-dubai/"
+        },
+        {
+          "status": 200,
+          "location": null
+        }
+      ],
+      "observation": "Existing slash variant serves homepage after host/scheme normalization; excluded from these four proposed changes."
+    },
+    {
+      "url": "http://www.digitecme.com/best-mercedes-workshop-dubai/",
+      "method": "GET",
+      "chain": [
+        {
+          "status": 301,
+          "location": "https://digitecme.com/best-mercedes-workshop-dubai/"
+        },
+        {
+          "status": 200,
+          "location": null
+        }
+      ],
+      "observation": "Existing slash variant serves homepage after host/scheme normalization; excluded from these four proposed changes."
+    },
+    {
+      "url": "http://www.digitecme.com/best-mercedes-workshop-dubai/",
+      "method": "HEAD",
+      "chain": [
+        {
+          "status": 301,
+          "location": "https://digitecme.com/best-mercedes-workshop-dubai/"
+        },
+        {
+          "status": 200,
+          "location": null
+        }
+      ],
+      "observation": "Existing slash variant serves homepage after host/scheme normalization; excluded from these four proposed changes."
+    }
+  ],
+  "notes": [
+    "The first capture (pre-2026-10-26T06-44-50-517Z) had 24 assertion failures because its verifier incorrectly expected two unrelated existing slash variants to redirect. Raw observations are retained. The verifier was corrected to record and preserve their existing behavior; no production fix was attempted.",
+    "The final passing preflight does not mean every existing URL is healthy: the two existing slash homepage fallbacks remain documented outside this four-alias scope.",
+    "The verifier later gained an input guard requiring a passing matching-proposal preflight before post mode; this guard does not change captured HTTP observations."
+  ]
+}

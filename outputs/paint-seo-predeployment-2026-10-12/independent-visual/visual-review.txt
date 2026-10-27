@@ -1,0 +1,30 @@
+Independent visual predeployment review — initial build
+Initial source fingerprint: 0879f73cdf5434c66dbaaee251036a6af2bd3668077a7c004b6a0536c54cf9dc
+Preview: http://127.0.0.1:5292 (isolated build.local/dist)
+
+Scope and evidence
+- 48 fresh-tab cases: six English/Arabic hub, PPF and ceramic routes; 320, 390, 768 and 1440px; saved dark/light seeded before first navigation.
+- Header restore waited for digitec_first_touch hydration marker. Each case toggled theme in UI and reloaded, with the seed applied only once per session.
+- 585 checks, 168 viewport screenshots and 36 contact sheets. All 36 hero/content/quote contact sheets were opened and visually reviewed; direct full-resolution representative screenshots were also viewed.
+- Screenshots and machine results: independent-visual-results.json and *-sheet.png in this directory.
+- All external requests were aborted to prevent analytics or real communications. The only console errors were the resulting ERR_BLOCKED_BY_CLIENT resource messages.
+
+Initial browser results
+- All JavaScript-enabled responsive cases pass: no page overflow; one H1; correct post-hydration canonical/lang/dir; header clears initial breadcrumbs; comparison tables scroll within their containers; footer links clear mobile fixed CTAs at true maximum scroll.
+- Native hub/PPF FAQ open-close and generic accordion interactions work. English-to-Arabic and return locale navigation stays in the SPA and preserves saved light theme.
+- Saved-theme hydration, UI toggle and reload all pass. No runtime errors, hydration mismatch warnings, local failed requests, HTTP asset failures or broken rendered images.
+- Extra no-JavaScript checks pass for all prerendered H1s, both native hub FAQs, native English PPF FAQs and English ceramic fallback. Arabic PPF/ceramic generic accordion answers stay hidden without JS (two optional-check failures).
+
+Release concerns found visually (parent preparing scoped CSS repair)
+1. Arabic PPF/ceramic light mode: hero secondary Call label/icon and border become dark on the deliberately dark photograph. Evidence: ar-paint-protection-film-light-hero-sheet.png and ar-ceramic-coating-light-hero-sheet.png; compare matching dark sheets. This makes an important conversion CTA unreadable and is a release concern.
+2. Same light heroes: Home/Services breadcrumb uses text-white/48, absent from the existing dark-section color exception, so it becomes dark over the photograph. Same hero-sheet evidence; clarity concern.
+3. Arabic PPF/ceramic light final CTA: .home-button-secondary stays white on the pale .home-section. Evidence: ar-paint-protection-film-light-quote-sheet.png and ar-ceramic-coating-light-quote-sheet.png. Important Call CTA is unreadable; release concern.
+
+Minor observations
+- Shared footer wordmark stays white in light mode; the orange D is visible but white IGI-TEC text is low contrast. Evidence: en-paint-protection-dubai-light-quote-sheet.png. Existing shared Footer asset, not paint SEO prose.
+- Arabic plain-text phone displays digit groups in RTL order (for example 2223 340 4 971+). Correct tel:+97143402223 href still initiates the right number. Evidence: ar-paint-protection-dubai-dark-quote-sheet.png. Presentation minor.
+- Arabic generic accordion answers require JavaScript. Source before snapshot already contains AccordionContent forceMount and no noscript fallback: outputs/paint-seo-2026-10-12/before/src/pages/ServicePage.tsx. Graceful no-JS degradation minor, not a hydration failure.
+
+Verdict: Header hydration fix verified; responsive/SPA behavior passes. Initial visual release verdict withheld until the three scoped Arabic light-mode contrast corrections receive fresh-build verification. Original evidence retained; fixed-build regression will be saved separately.
+
+Follow-up: fresh source c5f55b95b6830a7371cd48d2782860a8884a213c5c838d97eff1618a74fa329d passes separate28-case/218-check regression. All three scoped contrast findings resolved and corrected screenshots visually reviewed. See ../independent-visual-fixed/visual-review.txt and fixed-build-results.json. This section records the final status without replacing the original48-case evidence.

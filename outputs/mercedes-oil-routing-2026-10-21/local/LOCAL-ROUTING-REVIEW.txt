@@ -1,0 +1,42 @@
+DIGI-TEC MERCEDES OIL ROUTING — LOCAL SOURCE REVIEW
+21 October 2026. Read-only analysis of production source/configuration candidates.
+No source files changed; no commit, push, deploy or Cloudflare mutation.
+
+Follow-up:parent subsequently inspected authenticated production configuration and verified proxied Lovable CNAMEs, no Workers/Routes and two Single Redirects that omit this oil alias. The local proposal is now prepared at ../proposal/README.txt and single-redirect-rule.json. The remaining-evidence statements below describe this preliminary source review, not unresolved gaps after the parent's later hosting inspection. Use the parent runbook and proposal for the current deployment recommendation.
+
+Evidence-backed explanation
+
+1. The legacy alias is already known by the React application. src/App.tsx:103–104 maps oil-change to /services/mercedes-oil-change-dubai. src/App.tsx:280–285 instantiates the explicit legacy route before the generic brand-service route. src/components/PreserveQueryNavigate.tsx:3 calls this a browser fallback; lines4–6 append query/hash to a React Navigate. This preserves browser navigation parameters but cannot replace the initial server HTTP200 with a permanent redirect.
+
+2. The build prerenders only the public content route manifest: src/entry-server.tsx:17 exports publicRoutes; scripts/prerender.mjs:10–11 selects it; lines119–129 writes each public route's HTML. No alias HTML file exists at dist/brands/mercedes-benz-service-dubai/oil-change/index.html or in the fresh isolated build from the preceding investigation. The valid service content does exist independently. The alias is recognized as legacy at src/lib/routing-paths.json:1410; recognition is not an HTTP redirect.
+
+3. The existing generator already generates the redirect: scripts/generate-hosting-rules.mjs:98–100 imports the React mapping; lines152–159 emits _redirects. Both current dist/_redirects:162 and fresh investigation qa/build/dist/_redirects:162 contain:
+   /brands/mercedes-benz-service-dubai/oil-change /services/mercedes-oil-change-dubai 308
+   This is prepared output, not proof that the actual host executes it.
+
+4. The generated scoped Worker likewise contains the alias (cloudflare/mercedes-seo-router.js:2). Its handleRequest lines4–14 restricts GET/HEAD, recognizes the hostname, normalizes paths, selects the alias, preserves query and returns308. scripts/generate-hosting-rules.mjs:323–340 regenerates that source. The wider production Worker imports it at cloudflare/production-seo-router.js:4 and calls it after other scope decisions. Its opening comment explicitly says publishing as a Lovable static asset does not execute it.
+
+5. cloudflare/wrangler.production-seo.jsonc:1–10 names the broad candidate Worker and apex/www wildcard route configuration. This local file cannot prove that the Worker was ever deployed, is active, or owns the production zone routes. The prior authenticated investigation's public HTTP observations show no alias redirect and a homepage-canonical200 fallback. Combined with no static alias page, this is consistent with the host falling back to index.html while no matching HTTP redirect executes. The exact missing/disabled/misordered production rule or route must be identified from the authenticated hosting/Cloudflare configuration. Do not describe that control-plane cause as verified from repository files alone.
+
+6. .openai/hosting.json is a Sites project mirror with dist as its static directory. docs/seo/mercedes-release-deployment.md identifies the custom-domain Lovable project separately and explicitly warns the mirror is not proof of publishing to digitecme.com. Neither local project configuration proves the active deployment version or rollback capability; inspect those through authenticated production tools/UI.
+
+Review of previous proposed package
+
+outputs/mercedes-oil-investigation-2026-10-21/proposed-hosting-only/mercedes-oil-exact-redirects.js contains three sources:two legacy alias forms plus /services/mercedes-oil-change-dubai/. It redirects all three to slashless. Its246 passing offline assertions validate that proposal, not approval to normalize the indexed slashURL or proof of production behavior.
+
+For this follow-up, separate the alias correction from canonical normalization. Current evidence:Google indexes/selects the slash serviceURL, while HTML canonical/sitemap/internal links prefer slashless and today's live test confirms slashless availability. A slash->slashless redirect may be a later planned consolidation, but it should not be introduced incidentally by reusing the previous package or activating the broad generated Worker.
+
+Narrow recommendation for root review
+
+Prepare only exact GET/HEAD aliases:
+  /brands/mercedes-benz-service-dubai/oil-change
+  /brands/mercedes-benz-service-dubai/oil-change/
+to the existing service owner, preserving query strings and using a permanent HTTP response. Destination form must be explicitly chosen after current host behavior is verified. The repository's existing declared preference is slashless; the currently indexed slash form must stay accessible and its index/canonical baseline retained while the strategy is reviewed. Do not alter page HTML or point aliases to the hub, blog or generic oil page.
+
+The phase-one alias-only proposal should pass through both serviceURL forms untouched, all unrelated routes, assets/APIs and non-GET/HEAD methods. Exact path equality avoids inadvertently adding case/repeated-slash normalization. Match hostnames explicitly. Test direct destination200 and unchanged metadata/content, both methods, empty/duplicate/encoded queries, click IDs, no destination recursion, unrelated Mercedes/diagnostics/PPF/tuning and mutation requests. Existing HTTP/www normalization may precede a Cloudflare Worker and cause an extra hop; rule order and the chosen active mechanism must be verified before claiming single-hop behavior for all scheme/host combinations.
+
+Do not enable the existing wildcard production Worker or regenerate a broad redirect inventory just to activate these two source paths. Use the actual production mechanism confirmed by root. Export its pre-change rule/version, record insertion order and exact rule identifier, and define rollback as removing/disabling only the new rule or restoring only that Worker version. DNS and content deployment should not be touched for an alias correction unless the verified architecture specifically requires it.
+
+Remaining evidence owned by parent
+
+Authenticated active host/project/domain mapping, Cloudflare proxy status/zone identity, Worker route ownership/deployment version, Redirect Rules/Bulk Redirects/Page Rules ordering, active deployment mechanism, and concrete rollback control. This local review does not replace those checks.
