@@ -242,6 +242,8 @@ const paintProtectionUpdatedPaths = new Set([
   '/blog/why-ceramic-coating-matters-uae', '/ar/blog/why-ceramic-coating-matters-uae',
 ]);
 for (const route of publicRoutes) {
+  // Phase T3 changes only the nine existing English tuning model owners.
+  if (tuningModelPages.some(model => model.path === route.path)) route.lastmod = '2026-11-04';
   if (paintProtectionUpdatedPaths.has(route.path)) route.lastmod = '2026-10-12';
   if (['/services/paint-protection-film', '/ar/services/paint-protection-film'].includes(route.path)) route.lastmod = '2026-10-17';
 }

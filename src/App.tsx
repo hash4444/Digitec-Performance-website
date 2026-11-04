@@ -13,6 +13,7 @@ import "./styles/ppf-form.css";
 import "./styles/oil-change.css";
 import "./styles/suspension.css";
 import "./styles/transmission.css";
+import "./styles/tuning-models.css";
 const Index = lazy(() => import("./pages/Index"));
 const OilChangePage = lazy(() => import("./pages/OilChangePage"));
 const SuspensionRepairPage = lazy(() => import("./pages/SuspensionRepairPage"));
