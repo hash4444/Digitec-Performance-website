@@ -259,4 +259,11 @@ for (const route of publicRoutes) {
   if (['/brands/mercedes-benz-service-dubai', '/services/mercedes-body-repair-dubai'].includes(route.path)) route.lastmod = '2026-10-26';
 }
 
+// These visible hub/policy changes are dated separately from unchanged articles.
+for (const route of publicRoutes) {
+  if (['/about', '/ar/about', '/brands/mercedes-benz-service-dubai', '/ar/brands/mercedes-benz-service-dubai', MERCEDES_PROBLEMS_PATH].includes(route.path)) route.lastmod = '2026-11-04';
+  const study = mercedesCaseStudies.find((item) => route.path === `/mercedes/case-studies/${item.slug}`);
+  if (study) route.lastmod = study.dateModified ?? study.datePublished;
+}
+
 export const indexableRoutes = publicRoutes.filter((route) => route.indexable);

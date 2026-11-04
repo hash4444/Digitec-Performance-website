@@ -2,7 +2,8 @@ import { AlertTriangle, ArrowRight, Gauge, Snowflake, Wrench } from 'lucide-reac
 import Header from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { LocalizedLink as Link } from '@/components/LocalizedLink';
-import { MERCEDES_HUB_PATH } from '@/data/mercedesModelPages';
+import { MercedesCaseStudyLinks } from '@/components/MercedesCaseStudyLinks';
+import { MERCEDES_HUB_PATH, MERCEDES_SERVICE_LINKS } from '@/data/mercedesModelPages';
 import { MERCEDES_PROBLEMS_PATH, mercedesProblemGuides } from '@/data/mercedesProblemGuides';
 import { useSeo } from '@/hooks/use-seo';
 import { buildBreadcrumb, buildWebPage, pageGraph, SITE_URL } from '@/lib/schema';
@@ -27,7 +28,7 @@ const MercedesProblemsIndex = () => {
       type: 'CollectionPage',
       breadcrumbId: `${canonical}#breadcrumb`,
       mainEntityId: listId,
-      dateModified: '2026-09-28',
+      dateModified: '2026-11-04',
     }),
     buildBreadcrumb(canonical, [
       { name: 'Home', url: `${SITE_URL}/` },
@@ -60,7 +61,7 @@ const MercedesProblemsIndex = () => {
 
   return (
     <div className="min-h-screen bg-black text-off-white">
-      <Header />
+      <Header hasArabicVersion={false} />
       <main>
         <nav aria-label="Breadcrumb" className="border-b border-white/5">
           <ol className="mx-auto flex max-w-7xl flex-wrap items-center gap-2 px-4 py-4 text-xs text-white/50 sm:px-6">
@@ -84,6 +85,23 @@ const MercedesProblemsIndex = () => {
 
         <section className="py-14 sm:py-20">
           <div className="mx-auto max-w-7xl px-4 sm:px-6">
+            <div className="mb-12">
+              <h2 className="text-2xl font-black sm:text-3xl">Choose the next step for your Mercedes</h2>
+              <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+                {[
+                  { label: 'Diagnose a warning or fault', path: MERCEDES_SERVICE_LINKS.diagnostics, copy: 'Book inspection for a recurring warning, intermittent symptom or fault code.' },
+                  { label: 'Find a repair service', path: MERCEDES_HUB_PATH, copy: 'Explore Mercedes mechanical, electrical, suspension, gearbox and AC work.' },
+                  { label: 'Plan scheduled maintenance', path: MERCEDES_SERVICE_LINKS.maintenance, copy: 'Review servicing scope around the exact vehicle, mileage and service history.' },
+                  { label: 'Compare tuning options', path: '/tuning', copy: 'Review vehicle-specific performance packages, compatibility and supporting work.' },
+                ].map((item) => (
+                  <Link key={item.path} to={item.path} className="group rounded-xl border border-white/10 bg-charcoal/20 p-5">
+                    <h3 className="font-bold group-hover:text-burnt-orange">{item.label}</h3>
+                    <p className="mt-3 text-sm leading-relaxed text-white/60">{item.copy}</p>
+                    <ArrowRight className="mt-4 h-4 w-4 text-burnt-orange" aria-hidden="true" />
+                  </Link>
+                ))}
+              </div>
+            </div>
             <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
               {mercedesProblemGuides.map((guide) => {
                 const { label, Icon } = categoryFor(guide.slug);
@@ -100,6 +118,7 @@ const MercedesProblemsIndex = () => {
                 );
               })}
             </div>
+            <div className="mt-12"><MercedesCaseStudyLinks /></div>
           </div>
         </section>
 

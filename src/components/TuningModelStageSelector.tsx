@@ -26,11 +26,11 @@ export default function TuningModelStageSelector({ cars, modelName, heading }: {
         <div className="tm-stage-readout" aria-live="polite" aria-atomic="true">
           <p className="tm-eyebrow">{car.name} · {car.engine} · {stageLabels[selectedStage]}</p>
           <dl className="tm-output-grid">
-            <div><dt>Power <span>HP</span></dt><dd><strong data-stage-hp>{info.spec.hp}</strong><p>Stock reference {stock.hp} HP · +{info.spec.hp - stock.hp} HP</p></dd></div>
-            <div><dt>Torque <span>Nm</span></dt><dd><strong data-stage-torque>{info.spec.torque}</strong><p>Stock reference {stock.torque} Nm · +{info.spec.torque - stock.torque} Nm</p></dd></div>
+            <div><dt>Package power <span>HP</span></dt><dd><strong data-stage-hp>{info.spec.hp}</strong><p>Stock reference {stock.hp} HP · +{info.spec.hp - stock.hp} HP</p></dd></div>
+            <div><dt>Package torque <span>Nm</span></dt><dd><strong data-stage-torque>{info.spec.torque}</strong><p>Stock reference {stock.torque} Nm · +{info.spec.torque - stock.torque} Nm</p></dd></div>
           </dl>
           <dl className="tm-project-facts"><div><dt>Published price · EUR</dt><dd data-stage-price>{info.price}</dd></div><div><dt>Estimated workshop time</dt><dd data-stage-time>{info.time}</dd></div></dl>
-          <p className="tm-small">{selectedStage === 'vip' ? 'Custom project reference. Hardware, output and price require an individual written proposal.' : 'Package reference figures, subject to vehicle, fuel, condition and agreed scope. Confirm the final quotation and currency before booking.'}</p>
+          <p className="tm-small">{selectedStage === 'vip' ? 'Custom project reference. Hardware, output and price require an individual written proposal.' : 'Package reference figures, subject to vehicle, fuel, condition and agreed scope. Confirm the final quotation and currency before booking.'} These figures are not a dyno measurement of your vehicle. <a href="#tuning-evidence" className="tm-text-link">Read about vehicle checks and evidence</a>.</p>
           <a data-cta-placement="tuning_model_stage" className="btn-primary" href={`https://wa.me/97143402223?text=${encodeURIComponent(message)}`} target="_blank" rel="noopener noreferrer">Discuss {stageLabels[selectedStage]} on WhatsApp</a>
         </div>
         <div className="tm-stage-work"><h3>{stageLabels[selectedStage]} included work</h3><ul data-stage-mods>{mods.map((mod, index) => <li key={`${index}-${mod}`}>{mod}</li>)}</ul>{getTuningPriceNote(car.id, selectedStage) && <p className="tm-small tm-notice">{getTuningPriceNote(car.id, selectedStage)}</p>}{getTuningPublicationNote(car.id) && <p className="tm-small tm-notice">{getTuningPublicationNote(car.id)}</p>}</div>

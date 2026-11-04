@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --ssr src/entry-server.tsx --outDir dist-server && node scripts/sync-routing-paths.mjs && vite build && vite build --ssr src/entry-server.tsx --outDir dist-server && node scripts/prerender.mjs && node scripts/generate-hosting-rules.mjs && node scripts/test-hosting-rules.mjs && node scripts/test-production-seo-router.mjs && node scripts/validate-seo.mjs && node scripts/validate-ppf.mjs && node scripts/validate-paint-correction.mjs && node scripts/validate-protection-release.mjs && node scripts/validate-query-release.mjs && node scripts/test-contact-attribution.mjs && node scripts/test-ppf-enquiry.mjs && node scripts/validate-oil-change.mjs && node scripts/validate-suspension.mjs && node scripts/validate-transmission.mjs && node scripts/validate-social-metadata.mjs",
+    "build": "vite build --ssr src/entry-server.tsx --outDir dist-server && node scripts/sync-routing-paths.mjs && vite build && vite build --ssr src/entry-server.tsx --outDir dist-server && node scripts/prerender.mjs && node scripts/generate-hosting-rules.mjs && node scripts/test-hosting-rules.mjs && node scripts/test-production-seo-router.mjs && node scripts/validate-seo.mjs && node scripts/validate-ppf.mjs && node scripts/validate-paint-correction.mjs && node scripts/validate-protection-release.mjs && node scripts/validate-query-release.mjs && node scripts/test-contact-attribution.mjs && node scripts/test-ppf-enquiry.mjs && node scripts/validate-oil-change.mjs && node scripts/validate-suspension.mjs && node scripts/validate-transmission.mjs && node scripts/validate-social-metadata.mjs && node scripts/validate-ai-discovery.mjs && node scripts/validate-mercedes-evidence.mjs",
     "build:release:local": "node scripts/build-production-local.mjs",
     "preview:release": "node scripts/preview-production-local.mjs",
     "build:dev": "vite build --mode development",
@@ -15,6 +15,9 @@
     "validate:seo": "node scripts/validate-seo.mjs",
     "validate:master-seo": "node scripts/validate-master-seo.mjs",
     "validate:social-metadata": "node scripts/validate-social-metadata.mjs",
+    "validate:ai-discovery": "node scripts/validate-ai-discovery.mjs",
+    "validate:mercedes-evidence": "node scripts/validate-mercedes-evidence.mjs",
+    "check:ai-discovery": "node scripts/check-ai-discovery.mjs",
     "audit:sitewide": "node scripts/audit-sitewide-seo.mjs --phase=verification",
     "typecheck": "tsc --noEmit -p tsconfig.app.json && tsc --noEmit -p tsconfig.node.json",
     "validate:ppf": "node scripts/validate-ppf.mjs",

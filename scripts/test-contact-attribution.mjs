@@ -51,4 +51,17 @@ for (const channel of ['google','bing','chatgpt','openai','perplexity','gemini',
   const url = `${origin}${path}?utm_source=${channel}&utm_medium=organic`;
   assert.equal(runBootstrap(url, '').find(command=>command[0]==='config')[2].campaign_source, buildAttribution(url, '').utm_source);
 }
+for (const [host, channel] of Object.entries({'chatgpt.com':'chatgpt', 'chat.openai.com':'openai', 'gemini.google.com':'gemini', 'bard.google.com':'gemini', 'perplexity.ai':'perplexity', 'copilot.microsoft.com':'copilot', 'claude.ai':'claude'})) {
+  const url = `${origin}${path}?utm_source=${host}&utm_medium=referral&issue=TEST_PRIVATE`;
+  const attribution = buildAttribution(url, '');
+  assert.equal(attribution.utm_source, channel);
+  assert.equal(attribution.ai_referrer, channel === 'openai' ? 'chatgpt' : channel);
+  assert.equal(runBootstrap(url, '').find(command=>command[0]==='config')[2].campaign_source, channel);
+  assert.doesNotMatch(JSON.stringify(attribution), /TEST_PRIVATE/);
+}
+for (const host of ['gemini.google.com.evil.example', 'perplexity.ai.evil.example', '__proto__', 'constructor', 'TEST_PRIVATE']) {
+  const url = `${origin}${path}?utm_source=${host}`;
+  assert.equal(buildAttribution(url, '').ai_referrer, undefined);
+  assert.equal(runBootstrap(url, '').find(command=>command[0]==='config')[2].campaign_source, undefined);
+}
 console.log('Contact attribution passed: enquiry data excluded, legacy storage sanitised, AI hosts checked, one initial GA4 configuration, recognised channels retained.');

@@ -13,6 +13,10 @@ import { useLocale } from '@/i18n/use-locale';
 import { categoryArabic, localizeBlogPostToArabic, localizePostSummaryToArabic } from '@/i18n/ar-blog';
 import { MERCEDES_UNTRANSLATED_MODEL_PATHS } from '@/i18n/mercedes-language';
 import { getRelatedArticles } from '@/lib/related-articles';
+import { WorkshopGuideContext } from '@/components/WorkshopGuideContext';
+import { MercedesRepairResources } from '@/components/MercedesRepairResources';
+import { MercedesCaseStudyLinks } from '@/components/MercedesCaseStudyLinks';
+import { getMercedesCaseStudiesForPath } from '@/data/mercedesCaseStudies';
 
 type ContentBlock = { type: 'h2' | 'h3' | 'p' | 'ul'; text?: string; items?: string[] };
 
@@ -267,7 +271,7 @@ const BlogPost = () => {
           <div className="flex flex-wrap items-center gap-5 text-sm text-white/45">
             <span className="flex items-center gap-1.5">
               <User className="w-4 h-4" />
-              {post.author}
+              <Link to="/about#workshop-guides" className="underline decoration-white/25 underline-offset-4 hover:text-burnt-orange">{post.author}</Link>
             </span>
             <span className="flex items-center gap-1.5">
               <Calendar className="w-4 h-4" />
@@ -380,8 +384,12 @@ const BlogPost = () => {
               );
             })}
           </article>
+          <WorkshopGuideContext project={Boolean(post.gallery?.length || post.video)} />
         </div>
       </section>
+
+      {!isArabic && getMercedesCaseStudiesForPath(`/blog/${post.slug}`).length > 0 && <div className="mx-auto max-w-5xl px-5 pb-10 sm:px-6"><MercedesCaseStudyLinks path={`/blog/${post.slug}`} /></div>}
+      {(/mercedes|\bamg\b/i.test(`${post.slug} ${sourcePost?.title ?? ''}`)) && <MercedesRepairResources />}
 
       {relatedServiceCopy && (
         <section className="pb-12 md:pb-16">

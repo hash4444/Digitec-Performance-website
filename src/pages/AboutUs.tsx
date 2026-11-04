@@ -23,6 +23,7 @@ import { useLocale } from '@/i18n/use-locale';
 import { PageIntro } from '@/components/PageIntro';
 import AboutVideoStrip from '@/components/AboutVideoStrip';
 import { LamborghiniWorkshopPhoto } from '@/components/LamborghiniWorkshopPhoto';
+import { LocalizedLink as Link } from '@/components/LocalizedLink';
 
 const rangeRoverVogueWorkshop = '/images/range-rover-vogue-service-a-workshop.webp';
 
@@ -349,6 +350,27 @@ const AboutUs = () => {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      <section id="workshop-guides" className="scroll-mt-28 border-y border-white/10 bg-white/[0.025] py-14 sm:py-20">
+        <div className="mx-auto max-w-4xl px-5 sm:px-6">
+          <h2 className="text-2xl font-black sm:text-3xl">{isArabic ? 'أدلة الورشة ومعايير الأدلة' : 'Workshop guides and evidence standards'}</h2>
+          <p className="mt-5 leading-relaxed text-white/70">{isArabic ? 'ينشر مركز ديجي-تك إرشادات عامة للصيانة والتشخيص ومعلومات عن الخدمات ومشاريع الأداء. ديجي-تك ورشة مستقلة؛ وهذه الصفحات ليست تعليمات صادرة عن الشركة المصنعة ولا تشخيصاً لسيارة لم تُفحص.' : 'DIGI-TEC Performance Center publishes maintenance and diagnostic guidance, service information and workshop project reports. DIGI-TEC is an independent workshop. These pages are not manufacturer instructions or a diagnosis of a vehicle that has not been inspected.'}</p>
+          <dl className="mt-7 grid gap-5 sm:grid-cols-2">
+            {(isArabic ? [
+              ['الأعراض والتشخيص', 'رسالة التحذير أو رمز العطل نقطة بداية للفحص، وليسا دليلاً كافياً لاستبدال قطعة. يرجع تحديد الخدمة والسوائل والإجراءات إلى السيارة وتجهيزاتها وتعليماتها.'],
+              ['حالات الإصلاح الموثقة', 'يتطلب نشر حالة إصلاح مرسيدس سجلاً حقيقياً للفحص والعمل والاختبارات اللاحقة وصوراً أصلية مع الموافقة على النشر. لا تُعرض الأمثلة العامة كإصلاحات منجزة.'],
+              ['أرقام الأداء', 'أرقام الحزم والأهداف تختلف عن نتائج القياس. ينبغي أن تحدد النتيجة المقاسة السيارة والوقود والتعديلات وطريقة القياس وظروفه.'],
+              ['المؤلف والتحديثات', 'تنسب الإرشادات العامة إلى فريق ديجي-تك. لا تعني نسبة المحتوى إلى الورشة مراجعة فنية باسم شخص محدد؛ ويُذكر المراجع بالاسم فقط عند توفر مراجعة موثقة.'],
+            ] : [
+              ['Symptoms and diagnosis', 'A warning or fault code is a starting point for testing, not sufficient evidence to replace a part. Service requirements, fluids and procedures depend on the exact vehicle, its equipment and manufacturer instructions.'],
+              ['Documented repair cases', 'Publication of a Mercedes repair case requires a real diagnostic record, repair and post-repair checks, original photos and publication approval. General examples are not presented as completed repairs.'],
+              ['Performance figures', 'Package references and build targets differ from measured results. A measured result should identify the vehicle, fuel, modifications, measurement method and test conditions.'],
+              ['Attribution and updates', 'General guides are credited to the DIGI-TEC Workshop. Organization authorship does not imply a named technical review. A reviewer is named only when that review is documented.'],
+            ]).map(([title, text]) => <div key={title} className="rounded-xl border border-white/10 p-5"><dt className="font-bold text-off-white">{title}</dt><dd className="mt-3 text-sm leading-relaxed text-white/65">{text}</dd></div>)}
+          </dl>
+          <p className="mt-7 text-sm leading-relaxed text-white/70">{isArabic ? 'للاستفسار أو طلب تصحيح، أرسل رابط الصفحة ووصف الملاحظة إلى ' : 'For a question or correction, send the page URL and the details to '}<a href="mailto:info@digitecme.com?subject=Website%20guide%20question%20or%20correction" className="text-burnt-orange underline">info@digitecme.com</a>{isArabic ? '. ولطلب فحص سيارة، ابدأ من ' : '. To arrange a vehicle inspection, start with our '}<Link to="/services" className="text-burnt-orange underline">{isArabic ? 'صفحات الخدمات' : 'service pages'}</Link>.</p>
         </div>
       </section>
 

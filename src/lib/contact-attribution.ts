@@ -22,6 +22,17 @@ export const analyticsReferrer = (value: string): string => {
 };
 
 const sources = new Set(['google', 'bing', 'chatgpt', 'openai', 'perplexity', 'gemini', 'claude', 'copilot', 'duckduckgo', 'instagram', 'facebook', 'youtube', 'newsletter', 'whatsapp']);
+// Assistants can tag links with a host rather than the short channel name.
+// Exact aliases retain useful attribution without forwarding arbitrary UTM text.
+const sourceHosts: Record<string, string> = {
+  'chatgpt.com': 'chatgpt', 'chat.openai.com': 'openai', 'openai.com': 'openai',
+  'gemini.google.com': 'gemini', 'bard.google.com': 'gemini',
+  'perplexity.ai': 'perplexity', 'copilot.microsoft.com': 'copilot', 'claude.ai': 'claude',
+};
+const safeSource = (value: unknown): string => {
+  const normalized = typeof value === 'string' ? value.toLowerCase().trim().replace(/^www\./, '') : '';
+  return Object.prototype.hasOwnProperty.call(sourceHosts, normalized) ? sourceHosts[normalized] : safeLabel(normalized, sources);
+};
 const media = new Set(['organic', 'cpc', 'ppc', 'paid_search', 'paid_social', 'social', 'email', 'referral', 'display', 'direct', 'organic_social']);
 const safeLabel = (value: unknown, allowed: Set<string>): string => {
   const normalized = typeof value === 'string' ? value.toLowerCase().trim().replace(/^www\./, '').replace(/\.com$/, '') : '';
@@ -34,7 +45,7 @@ export function sanitizeAttribution(value: unknown, origin: string): ContactAttr
   const output: ContactAttribution = {};
   if (typeof input.landing_page === 'string') output.landing_page = analyticsPageUrl(input.landing_page, origin);
   output.initial_referrer = analyticsReferrer(typeof input.initial_referrer === 'string' ? input.initial_referrer : '');
-  const source = safeLabel(input.utm_source, sources);
+  const source = safeSource(input.utm_source);
   const medium = safeLabel(input.utm_medium, media);
   if (source) output.utm_source = source;
   if (medium) output.utm_medium = medium;

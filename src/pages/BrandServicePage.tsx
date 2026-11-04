@@ -5,6 +5,8 @@ import { Phone, MessageCircle, CheckCircle2, ArrowRight, Wrench, ShieldCheck } f
 import Header from '@/components/Header';
 import BentleyCameraSection from '@/components/BentleyCameraSection';
 import { Footer } from '@/components/Footer';
+import { MercedesCaseStudyLinks } from '@/components/MercedesCaseStudyLinks';
+import { getMercedesCaseStudiesForPath } from '@/data/mercedesCaseStudies';
 import { FinalCTA } from '@/components/FinalCTA';
 import { RepairEnquiryPanel } from '@/components/RepairEnquiryPanel';
 import { DiagnosticAcEnquiryPanel } from '@/components/DiagnosticAcEnquiryPanel';
@@ -1052,6 +1054,7 @@ const BrandServicePage: React.FC<BrandServicePageProps> = ({
         </div>
       </section>
 
+      {!isArabic && combo.brandSlug === 'mercedes-benz-service-dubai' && getMercedesCaseStudiesForPath(url.slice(SITE_URL.length)).length > 0 && <div className="mx-auto max-w-5xl px-5 py-10 sm:px-6"><MercedesCaseStudyLinks path={url.slice(SITE_URL.length)} /></div>}
       <div id="service-booking" className="scroll-mt-24">
         {ecuElectronicsContent && <div className="mx-auto max-w-5xl px-4 pt-12 sm:px-6"><EcuElectronicsEnquiryPanel content={ecuElectronicsContent} isArabic={isArabic} /></div>}
         {diagnosticAcMode ? <div className="mx-auto max-w-5xl px-4 py-12 sm:px-6 sm:py-16"><DiagnosticAcEnquiryPanel mode={diagnosticAcMode} isArabic={isArabic} whatsappHref={whatsappHref} brandSlug={brandSlug} /></div> : repairContent ? <RepairEnquiryPanel content={repairContent} isArabic={isArabic} whatsappHref={whatsappHref} /> : <FinalCTA

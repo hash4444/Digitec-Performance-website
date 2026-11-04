@@ -1,0 +1,141 @@
+{
+  "passed": true,
+  "cases": [
+    {
+      "route": "/about",
+      "javaScriptEnabled": true,
+      "width": 390,
+      "overflow": 0,
+      "passed": true
+    },
+    {
+      "route": "/ar/about",
+      "javaScriptEnabled": true,
+      "width": 390,
+      "overflow": 0,
+      "passed": true
+    },
+    {
+      "route": "/blog/mercedes-service-cost-dubai-guide",
+      "javaScriptEnabled": true,
+      "width": 390,
+      "overflow": 0,
+      "passed": true
+    },
+    {
+      "route": "/ar/blog/mercedes-benz-maintenance-guide-dubai",
+      "javaScriptEnabled": true,
+      "width": 390,
+      "overflow": 0,
+      "passed": true
+    },
+    {
+      "route": "/brands/mercedes-benz-service-dubai",
+      "javaScriptEnabled": true,
+      "width": 390,
+      "overflow": 0,
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/mercedes-benz-service-dubai",
+      "javaScriptEnabled": true,
+      "width": 390,
+      "overflow": 0,
+      "passed": true
+    },
+    {
+      "route": "/mercedes/problems",
+      "javaScriptEnabled": true,
+      "width": 390,
+      "overflow": 0,
+      "passed": true
+    },
+    {
+      "route": "/mercedes/problems/airmatic-malfunction",
+      "javaScriptEnabled": true,
+      "width": 390,
+      "overflow": 0,
+      "passed": true
+    },
+    {
+      "route": "/tuning/mercedes-amg-g63",
+      "javaScriptEnabled": true,
+      "width": 390,
+      "overflow": 0,
+      "passed": true
+    },
+    {
+      "route": "/about",
+      "javaScriptEnabled": false,
+      "width": 1440,
+      "overflow": 0,
+      "passed": true
+    },
+    {
+      "route": "/ar/about",
+      "javaScriptEnabled": false,
+      "width": 1440,
+      "overflow": 0,
+      "passed": true
+    },
+    {
+      "route": "/blog/mercedes-service-cost-dubai-guide",
+      "javaScriptEnabled": false,
+      "width": 1440,
+      "overflow": 0,
+      "passed": true
+    },
+    {
+      "route": "/ar/blog/mercedes-benz-maintenance-guide-dubai",
+      "javaScriptEnabled": false,
+      "width": 1440,
+      "overflow": 0,
+      "passed": true
+    },
+    {
+      "route": "/brands/mercedes-benz-service-dubai",
+      "javaScriptEnabled": false,
+      "width": 1440,
+      "overflow": 0,
+      "passed": true
+    },
+    {
+      "route": "/ar/brands/mercedes-benz-service-dubai",
+      "javaScriptEnabled": false,
+      "width": 1440,
+      "overflow": 0,
+      "passed": true
+    },
+    {
+      "route": "/mercedes/problems",
+      "javaScriptEnabled": false,
+      "width": 1440,
+      "overflow": 0,
+      "passed": true
+    },
+    {
+      "route": "/mercedes/problems/airmatic-malfunction",
+      "javaScriptEnabled": false,
+      "width": 1440,
+      "overflow": 0,
+      "passed": true
+    },
+    {
+      "route": "/tuning/mercedes-amg-g63",
+      "javaScriptEnabled": false,
+      "width": 1440,
+      "overflow": 0,
+      "passed": true
+    }
+  ],
+  "runtimeErrors": [],
+  "localErrors": [],
+  "failures": [],
+  "screenshots": [
+    "_about-390.png",
+    "_ar_about-390.png",
+    "_brands_mercedes-benz-service-dubai-390.png",
+    "_tuning_mercedes-amg-g63-390.png"
+  ],
+  "blockedExternal": 45
+}

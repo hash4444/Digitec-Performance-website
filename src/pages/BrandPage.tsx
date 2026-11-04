@@ -49,6 +49,9 @@ const mercedesAmgEngine = '/images/seo/mercedes-engine-repair-1086.webp';
 import g63BrabusFinishedFront from '@/assets/g63-brabus-g800-finished-front.jpg';
 import { mercedesModelPages } from '@/data/mercedesModelPages';
 import { MERCEDES_PROBLEMS_PATH } from '@/data/mercedesProblemGuides';
+import { MercedesRepairResources } from '@/components/MercedesRepairResources';
+import { MercedesCaseStudyLinks } from '@/components/MercedesCaseStudyLinks';
+import { mercedesCaseStudies } from '@/data/mercedesCaseStudies';
 import { PORSCHE_HUB_INTRO, PORSCHE_HUB_FAQS, PORSCHE_HUB_SERVICES, PORSCHE_WHATSAPP_HREF } from '@/data/porscheHubContent';
 import { BMW_CORE_SERVICES, BMW_ADDITIONAL_SERVICES, BMW_HUB_FAQS, BMW_HUB_INTRO, BMW_WHATSAPP_HREF } from '@/data/bmwHubContent';
 import { MCLAREN_FAQS, MCLAREN_HUB_INTRO, MCLAREN_SERVICES, MCLAREN_WHATSAPP_HREF } from '@/data/mclarenHubContent';
@@ -1548,6 +1551,8 @@ const BrandPage = () => {
       )}
       {!isArabic && <BrandPaintCareLinks brandName={brand.name} />}
 
+      {isMercedesServiceHub && <MercedesRepairResources />}
+      {isMercedesServiceHub && !isArabic && mercedesCaseStudies.length > 0 && <div className="mx-auto max-w-5xl px-5 pb-12 sm:px-6"><MercedesCaseStudyLinks /></div>}
       {isMercedesServiceHub && !isArabic && <div id="mercedes-reviews" className="scroll-mt-[10rem]"><GoogleReviews /></div>}
 
       {/* Booking CTA + Form */}

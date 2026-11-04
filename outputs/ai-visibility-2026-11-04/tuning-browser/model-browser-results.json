@@ -1,0 +1,1414 @@
+{
+  "passed": true,
+  "checkedAt": "2026-11-04T12:43:10.434Z",
+  "cases": [
+    {
+      "path": "/tuning/mercedes-amg-gt",
+      "width": 1440,
+      "packages": 12,
+      "overflow": 0,
+      "passed": true
+    },
+    {
+      "path": "/tuning/mercedes-amg-e63",
+      "width": 1440,
+      "packages": 5,
+      "overflow": 0,
+      "passed": true
+    },
+    {
+      "path": "/tuning/mercedes-amg-g63",
+      "width": 1440,
+      "packages": 5,
+      "overflow": 0,
+      "passed": true
+    },
+    {
+      "path": "/tuning/mercedes-amg-gt63",
+      "width": 1440,
+      "packages": 5,
+      "overflow": 0,
+      "passed": true
+    },
+    {
+      "path": "/tuning/mercedes-amg-s65",
+      "width": 1440,
+      "packages": 5,
+      "overflow": 0,
+      "passed": true
+    },
+    {
+      "path": "/tuning/mercedes-amg-c63",
+      "width": 1440,
+      "packages": 6,
+      "overflow": 0,
+      "passed": true
+    },
+    {
+      "path": "/tuning/mercedes-amg-glc63",
+      "width": 1440,
+      "packages": 5,
+      "overflow": 0,
+      "passed": true
+    },
+    {
+      "path": "/tuning/aston-martin-db11",
+      "width": 1440,
+      "packages": 5,
+      "overflow": 0,
+      "passed": true
+    },
+    {
+      "path": "/tuning/lamborghini-urus",
+      "width": 1440,
+      "packages": 4,
+      "overflow": 0,
+      "passed": true
+    },
+    {
+      "path": "/tuning/mercedes-amg-gt",
+      "width": 390,
+      "packages": 12,
+      "overflow": 0,
+      "passed": true
+    },
+    {
+      "path": "/tuning/mercedes-amg-e63",
+      "width": 390,
+      "packages": 5,
+      "overflow": 0,
+      "passed": true
+    },
+    {
+      "path": "/tuning/mercedes-amg-g63",
+      "width": 390,
+      "packages": 5,
+      "overflow": 0,
+      "passed": true
+    },
+    {
+      "path": "/tuning/mercedes-amg-gt63",
+      "width": 390,
+      "packages": 5,
+      "overflow": 0,
+      "passed": true
+    },
+    {
+      "path": "/tuning/mercedes-amg-s65",
+      "width": 390,
+      "packages": 5,
+      "overflow": 0,
+      "passed": true
+    },
+    {
+      "path": "/tuning/mercedes-amg-c63",
+      "width": 390,
+      "packages": 6,
+      "overflow": 0,
+      "passed": true
+    },
+    {
+      "path": "/tuning/mercedes-amg-glc63",
+      "width": 390,
+      "packages": 5,
+      "overflow": 0,
+      "passed": true
+    },
+    {
+      "path": "/tuning/aston-martin-db11",
+      "width": 390,
+      "packages": 5,
+      "overflow": 0,
+      "passed": true
+    },
+    {
+      "path": "/tuning/lamborghini-urus",
+      "width": 390,
+      "packages": 4,
+      "overflow": 0,
+      "passed": true
+    }
+  ],
+  "selections": [
+    {
+      "width": 1440,
+      "model": "mercedes-amg-gt",
+      "car": "amg-gt-gts",
+      "stage": "stage1",
+      "hp": 605,
+      "torque": 750,
+      "price": "€2,721",
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "model": "mercedes-amg-gt",
+      "car": "amg-gt-gts",
+      "stage": "stage2",
+      "hp": 620,
+      "torque": 780,
+      "price": "€10,721 total",
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "model": "mercedes-amg-gt",
+      "car": "amg-gt-gts",
+      "stage": "stage3",
+      "hp": 760,
+      "torque": 900,
+      "price": "€32,221 total",
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "model": "mercedes-amg-gt",
+      "car": "amg-gt-gts",
+      "stage": "stage4",
+      "hp": 840,
+      "torque": 1000,
+      "price": "€45,121 total",
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "model": "mercedes-amg-gt",
+      "car": "amg-gt-gts",
+      "stage": "stage5",
+      "hp": 920,
+      "torque": 1100,
+      "price": "€51,991 total",
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "model": "mercedes-amg-gt",
+      "car": "amg-gt-gts",
+      "stage": "vip",
+      "hp": 1300,
+      "torque": 1400,
+      "price": "On Request",
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "model": "mercedes-amg-gt",
+      "car": "amg-gtc-gtr",
+      "stage": "stage1",
+      "hp": 640,
+      "torque": 800,
+      "price": "€2,721",
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "model": "mercedes-amg-gt",
+      "car": "amg-gtc-gtr",
+      "stage": "stage2",
+      "hp": 660,
+      "torque": 830,
+      "price": "€10,721 total",
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "model": "mercedes-amg-gt",
+      "car": "amg-gtc-gtr",
+      "stage": "stage3",
+      "hp": 780,
+      "torque": 950,
+      "price": "€32,221 total",
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "model": "mercedes-amg-gt",
+      "car": "amg-gtc-gtr",
+      "stage": "stage4",
+      "hp": 840,
+      "torque": 1000,
+      "price": "€45,121 total",
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "model": "mercedes-amg-gt",
+      "car": "amg-gtc-gtr",
+      "stage": "stage5",
+      "hp": 920,
+      "torque": 1100,
+      "price": "€51,991 total",
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "model": "mercedes-amg-gt",
+      "car": "amg-gtc-gtr",
+      "stage": "vip",
+      "hp": 1300,
+      "torque": 1400,
+      "price": "On Request",
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "model": "mercedes-amg-e63",
+      "car": "e63",
+      "stage": "stage1",
+      "hp": 780,
+      "torque": 1000,
+      "price": "€5,663",
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "model": "mercedes-amg-e63",
+      "car": "e63",
+      "stage": "stage2",
+      "hp": 820,
+      "torque": 1050,
+      "price": "€12,563 total",
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "model": "mercedes-amg-e63",
+      "car": "e63",
+      "stage": "stage3",
+      "hp": 860,
+      "torque": 1100,
+      "price": "€27,076 total",
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "model": "mercedes-amg-e63",
+      "car": "e63",
+      "stage": "stage4",
+      "hp": 940,
+      "torque": 1200,
+      "price": "€36,576 total",
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "model": "mercedes-amg-e63",
+      "car": "e63",
+      "stage": "vip",
+      "hp": 1300,
+      "torque": 1500,
+      "price": "On Request",
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "model": "mercedes-amg-g63",
+      "car": "g63",
+      "stage": "stage1",
+      "hp": 780,
+      "torque": 1000,
+      "price": "€5,663",
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "model": "mercedes-amg-g63",
+      "car": "g63",
+      "stage": "stage2",
+      "hp": 820,
+      "torque": 1050,
+      "price": "€14,063 total",
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "model": "mercedes-amg-g63",
+      "car": "g63",
+      "stage": "stage3",
+      "hp": 860,
+      "torque": 1100,
+      "price": "€28,576 total",
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "model": "mercedes-amg-g63",
+      "car": "g63",
+      "stage": "stage4",
+      "hp": 940,
+      "torque": 1200,
+      "price": "€38,076 total",
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "model": "mercedes-amg-g63",
+      "car": "g63",
+      "stage": "vip",
+      "hp": 1100,
+      "torque": 1350,
+      "price": "On Request",
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "model": "mercedes-amg-gt63",
+      "car": "gt63",
+      "stage": "stage1",
+      "hp": 780,
+      "torque": 1000,
+      "price": "€5,663",
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "model": "mercedes-amg-gt63",
+      "car": "gt63",
+      "stage": "stage2",
+      "hp": 820,
+      "torque": 1050,
+      "price": "€12,563 total",
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "model": "mercedes-amg-gt63",
+      "car": "gt63",
+      "stage": "stage3",
+      "hp": 860,
+      "torque": 1100,
+      "price": "€27,076 total",
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "model": "mercedes-amg-gt63",
+      "car": "gt63",
+      "stage": "stage4",
+      "hp": 940,
+      "torque": 1200,
+      "price": "€36,576 total",
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "model": "mercedes-amg-gt63",
+      "car": "gt63",
+      "stage": "vip",
+      "hp": 1000,
+      "torque": 1300,
+      "price": "On Request",
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "model": "mercedes-amg-s65",
+      "car": "s65",
+      "stage": "stage1",
+      "hp": 680,
+      "torque": 1050,
+      "price": "€3,350",
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "model": "mercedes-amg-s65",
+      "car": "s65",
+      "stage": "stage2",
+      "hp": 720,
+      "torque": 1100,
+      "price": "€18,350 total",
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "model": "mercedes-amg-s65",
+      "car": "s65",
+      "stage": "stage3",
+      "hp": 800,
+      "torque": 1200,
+      "price": "€43,613 total",
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "model": "mercedes-amg-s65",
+      "car": "s65",
+      "stage": "stage4",
+      "hp": 850,
+      "torque": 1300,
+      "price": "€54,713 total",
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "model": "mercedes-amg-s65",
+      "car": "s65",
+      "stage": "stage5",
+      "hp": 900,
+      "torque": 1400,
+      "price": "€72,468 total",
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "model": "mercedes-amg-c63",
+      "car": "c63-w205",
+      "stage": "stage1",
+      "hp": 590,
+      "torque": 780,
+      "price": "€3,146 total",
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "model": "mercedes-amg-c63",
+      "car": "c63-w205",
+      "stage": "stage2",
+      "hp": 615,
+      "torque": 810,
+      "price": "€8,732 total",
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "model": "mercedes-amg-c63",
+      "car": "c63-w205",
+      "stage": "stage3",
+      "hp": 700,
+      "torque": 900,
+      "price": "€17,876 total",
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "model": "mercedes-amg-c63",
+      "car": "c63-w205",
+      "stage": "stage4",
+      "hp": 795,
+      "torque": 1000,
+      "price": "€33,460 total",
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "model": "mercedes-amg-c63",
+      "car": "c63-w205",
+      "stage": "stage5",
+      "hp": 850,
+      "torque": 1100,
+      "price": "€53,435 total",
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "model": "mercedes-amg-c63",
+      "car": "c63-w205",
+      "stage": "vip",
+      "hp": 1000,
+      "torque": 1250,
+      "price": "On Request",
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "model": "mercedes-amg-glc63",
+      "car": "glc63",
+      "stage": "stage1",
+      "hp": 590,
+      "torque": 780,
+      "price": "€3,146 total",
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "model": "mercedes-amg-glc63",
+      "car": "glc63",
+      "stage": "stage2",
+      "hp": 615,
+      "torque": 810,
+      "price": "€7,471 total",
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "model": "mercedes-amg-glc63",
+      "car": "glc63",
+      "stage": "stage3",
+      "hp": 700,
+      "torque": 900,
+      "price": "€17,876–€19,346 total",
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "model": "mercedes-amg-glc63",
+      "car": "glc63",
+      "stage": "stage4",
+      "hp": 795,
+      "torque": 1000,
+      "price": "€33,335–€34,805 total",
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "model": "mercedes-amg-glc63",
+      "car": "glc63",
+      "stage": "stage5",
+      "hp": 850,
+      "torque": 1100,
+      "price": "€51,335–€52,805 total",
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "model": "aston-martin-db11",
+      "car": "db11",
+      "stage": "stage1",
+      "hp": 590,
+      "torque": 750,
+      "price": "€3,346 total",
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "model": "aston-martin-db11",
+      "car": "db11",
+      "stage": "stage2",
+      "hp": 615,
+      "torque": 790,
+      "price": "€10,232 total",
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "model": "aston-martin-db11",
+      "car": "db11",
+      "stage": "stage3",
+      "hp": 700,
+      "torque": 900,
+      "price": "€18,333 total",
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "model": "aston-martin-db11",
+      "car": "db11",
+      "stage": "stage4",
+      "hp": 795,
+      "torque": 1000,
+      "price": "€33,792 total",
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "model": "aston-martin-db11",
+      "car": "db11",
+      "stage": "stage5",
+      "hp": 850,
+      "torque": 1100,
+      "price": "€56,435 total",
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "model": "lamborghini-urus",
+      "car": "urus",
+      "stage": "stage1",
+      "hp": 750,
+      "torque": 950,
+      "price": "€5,418 total",
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "model": "lamborghini-urus",
+      "car": "urus",
+      "stage": "stage2",
+      "hp": 800,
+      "torque": 1000,
+      "price": "€13,842 total",
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "model": "lamborghini-urus",
+      "car": "urus",
+      "stage": "stage3",
+      "hp": 870,
+      "torque": 1100,
+      "price": "€26,842 total",
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "model": "lamborghini-urus",
+      "car": "urus",
+      "stage": "stage4",
+      "hp": 904,
+      "torque": 1150,
+      "price": "€35,992 total",
+      "passed": true
+    },
+    {
+      "width": 390,
+      "model": "mercedes-amg-gt",
+      "car": "amg-gt-gts",
+      "stage": "stage1",
+      "hp": 605,
+      "torque": 750,
+      "price": "€2,721",
+      "passed": true
+    },
+    {
+      "width": 390,
+      "model": "mercedes-amg-gt",
+      "car": "amg-gt-gts",
+      "stage": "stage2",
+      "hp": 620,
+      "torque": 780,
+      "price": "€10,721 total",
+      "passed": true
+    },
+    {
+      "width": 390,
+      "model": "mercedes-amg-gt",
+      "car": "amg-gt-gts",
+      "stage": "stage3",
+      "hp": 760,
+      "torque": 900,
+      "price": "€32,221 total",
+      "passed": true
+    },
+    {
+      "width": 390,
+      "model": "mercedes-amg-gt",
+      "car": "amg-gt-gts",
+      "stage": "stage4",
+      "hp": 840,
+      "torque": 1000,
+      "price": "€45,121 total",
+      "passed": true
+    },
+    {
+      "width": 390,
+      "model": "mercedes-amg-gt",
+      "car": "amg-gt-gts",
+      "stage": "stage5",
+      "hp": 920,
+      "torque": 1100,
+      "price": "€51,991 total",
+      "passed": true
+    },
+    {
+      "width": 390,
+      "model": "mercedes-amg-gt",
+      "car": "amg-gt-gts",
+      "stage": "vip",
+      "hp": 1300,
+      "torque": 1400,
+      "price": "On Request",
+      "passed": true
+    },
+    {
+      "width": 390,
+      "model": "mercedes-amg-gt",
+      "car": "amg-gtc-gtr",
+      "stage": "stage1",
+      "hp": 640,
+      "torque": 800,
+      "price": "€2,721",
+      "passed": true
+    },
+    {
+      "width": 390,
+      "model": "mercedes-amg-gt",
+      "car": "amg-gtc-gtr",
+      "stage": "stage2",
+      "hp": 660,
+      "torque": 830,
+      "price": "€10,721 total",
+      "passed": true
+    },
+    {
+      "width": 390,
+      "model": "mercedes-amg-gt",
+      "car": "amg-gtc-gtr",
+      "stage": "stage3",
+      "hp": 780,
+      "torque": 950,
+      "price": "€32,221 total",
+      "passed": true
+    },
+    {
+      "width": 390,
+      "model": "mercedes-amg-gt",
+      "car": "amg-gtc-gtr",
+      "stage": "stage4",
+      "hp": 840,
+      "torque": 1000,
+      "price": "€45,121 total",
+      "passed": true
+    },
+    {
+      "width": 390,
+      "model": "mercedes-amg-gt",
+      "car": "amg-gtc-gtr",
+      "stage": "stage5",
+      "hp": 920,
+      "torque": 1100,
+      "price": "€51,991 total",
+      "passed": true
+    },
+    {
+      "width": 390,
+      "model": "mercedes-amg-gt",
+      "car": "amg-gtc-gtr",
+      "stage": "vip",
+      "hp": 1300,
+      "torque": 1400,
+      "price": "On Request",
+      "passed": true
+    },
+    {
+      "width": 390,
+      "model": "mercedes-amg-e63",
+      "car": "e63",
+      "stage": "stage1",
+      "hp": 780,
+      "torque": 1000,
+      "price": "€5,663",
+      "passed": true
+    },
+    {
+      "width": 390,
+      "model": "mercedes-amg-e63",
+      "car": "e63",
+      "stage": "stage2",
+      "hp": 820,
+      "torque": 1050,
+      "price": "€12,563 total",
+      "passed": true
+    },
+    {
+      "width": 390,
+      "model": "mercedes-amg-e63",
+      "car": "e63",
+      "stage": "stage3",
+      "hp": 860,
+      "torque": 1100,
+      "price": "€27,076 total",
+      "passed": true
+    },
+    {
+      "width": 390,
+      "model": "mercedes-amg-e63",
+      "car": "e63",
+      "stage": "stage4",
+      "hp": 940,
+      "torque": 1200,
+      "price": "€36,576 total",
+      "passed": true
+    },
+    {
+      "width": 390,
+      "model": "mercedes-amg-e63",
+      "car": "e63",
+      "stage": "vip",
+      "hp": 1300,
+      "torque": 1500,
+      "price": "On Request",
+      "passed": true
+    },
+    {
+      "width": 390,
+      "model": "mercedes-amg-g63",
+      "car": "g63",
+      "stage": "stage1",
+      "hp": 780,
+      "torque": 1000,
+      "price": "€5,663",
+      "passed": true
+    },
+    {
+      "width": 390,
+      "model": "mercedes-amg-g63",
+      "car": "g63",
+      "stage": "stage2",
+      "hp": 820,
+      "torque": 1050,
+      "price": "€14,063 total",
+      "passed": true
+    },
+    {
+      "width": 390,
+      "model": "mercedes-amg-g63",
+      "car": "g63",
+      "stage": "stage3",
+      "hp": 860,
+      "torque": 1100,
+      "price": "€28,576 total",
+      "passed": true
+    },
+    {
+      "width": 390,
+      "model": "mercedes-amg-g63",
+      "car": "g63",
+      "stage": "stage4",
+      "hp": 940,
+      "torque": 1200,
+      "price": "€38,076 total",
+      "passed": true
+    },
+    {
+      "width": 390,
+      "model": "mercedes-amg-g63",
+      "car": "g63",
+      "stage": "vip",
+      "hp": 1100,
+      "torque": 1350,
+      "price": "On Request",
+      "passed": true
+    },
+    {
+      "width": 390,
+      "model": "mercedes-amg-gt63",
+      "car": "gt63",
+      "stage": "stage1",
+      "hp": 780,
+      "torque": 1000,
+      "price": "€5,663",
+      "passed": true
+    },
+    {
+      "width": 390,
+      "model": "mercedes-amg-gt63",
+      "car": "gt63",
+      "stage": "stage2",
+      "hp": 820,
+      "torque": 1050,
+      "price": "€12,563 total",
+      "passed": true
+    },
+    {
+      "width": 390,
+      "model": "mercedes-amg-gt63",
+      "car": "gt63",
+      "stage": "stage3",
+      "hp": 860,
+      "torque": 1100,
+      "price": "€27,076 total",
+      "passed": true
+    },
+    {
+      "width": 390,
+      "model": "mercedes-amg-gt63",
+      "car": "gt63",
+      "stage": "stage4",
+      "hp": 940,
+      "torque": 1200,
+      "price": "€36,576 total",
+      "passed": true
+    },
+    {
+      "width": 390,
+      "model": "mercedes-amg-gt63",
+      "car": "gt63",
+      "stage": "vip",
+      "hp": 1000,
+      "torque": 1300,
+      "price": "On Request",
+      "passed": true
+    },
+    {
+      "width": 390,
+      "model": "mercedes-amg-s65",
+      "car": "s65",
+      "stage": "stage1",
+      "hp": 680,
+      "torque": 1050,
+      "price": "€3,350",
+      "passed": true
+    },
+    {
+      "width": 390,
+      "model": "mercedes-amg-s65",
+      "car": "s65",
+      "stage": "stage2",
+      "hp": 720,
+      "torque": 1100,
+      "price": "€18,350 total",
+      "passed": true
+    },
+    {
+      "width": 390,
+      "model": "mercedes-amg-s65",
+      "car": "s65",
+      "stage": "stage3",
+      "hp": 800,
+      "torque": 1200,
+      "price": "€43,613 total",
+      "passed": true
+    },
+    {
+      "width": 390,
+      "model": "mercedes-amg-s65",
+      "car": "s65",
+      "stage": "stage4",
+      "hp": 850,
+      "torque": 1300,
+      "price": "€54,713 total",
+      "passed": true
+    },
+    {
+      "width": 390,
+      "model": "mercedes-amg-s65",
+      "car": "s65",
+      "stage": "stage5",
+      "hp": 900,
+      "torque": 1400,
+      "price": "€72,468 total",
+      "passed": true
+    },
+    {
+      "width": 390,
+      "model": "mercedes-amg-c63",
+      "car": "c63-w205",
+      "stage": "stage1",
+      "hp": 590,
+      "torque": 780,
+      "price": "€3,146 total",
+      "passed": true
+    },
+    {
+      "width": 390,
+      "model": "mercedes-amg-c63",
+      "car": "c63-w205",
+      "stage": "stage2",
+      "hp": 615,
+      "torque": 810,
+      "price": "€8,732 total",
+      "passed": true
+    },
+    {
+      "width": 390,
+      "model": "mercedes-amg-c63",
+      "car": "c63-w205",
+      "stage": "stage3",
+      "hp": 700,
+      "torque": 900,
+      "price": "€17,876 total",
+      "passed": true
+    },
+    {
+      "width": 390,
+      "model": "mercedes-amg-c63",
+      "car": "c63-w205",
+      "stage": "stage4",
+      "hp": 795,
+      "torque": 1000,
+      "price": "€33,460 total",
+      "passed": true
+    },
+    {
+      "width": 390,
+      "model": "mercedes-amg-c63",
+      "car": "c63-w205",
+      "stage": "stage5",
+      "hp": 850,
+      "torque": 1100,
+      "price": "€53,435 total",
+      "passed": true
+    },
+    {
+      "width": 390,
+      "model": "mercedes-amg-c63",
+      "car": "c63-w205",
+      "stage": "vip",
+      "hp": 1000,
+      "torque": 1250,
+      "price": "On Request",
+      "passed": true
+    },
+    {
+      "width": 390,
+      "model": "mercedes-amg-glc63",
+      "car": "glc63",
+      "stage": "stage1",
+      "hp": 590,
+      "torque": 780,
+      "price": "€3,146 total",
+      "passed": true
+    },
+    {
+      "width": 390,
+      "model": "mercedes-amg-glc63",
+      "car": "glc63",
+      "stage": "stage2",
+      "hp": 615,
+      "torque": 810,
+      "price": "€7,471 total",
+      "passed": true
+    },
+    {
+      "width": 390,
+      "model": "mercedes-amg-glc63",
+      "car": "glc63",
+      "stage": "stage3",
+      "hp": 700,
+      "torque": 900,
+      "price": "€17,876–€19,346 total",
+      "passed": true
+    },
+    {
+      "width": 390,
+      "model": "mercedes-amg-glc63",
+      "car": "glc63",
+      "stage": "stage4",
+      "hp": 795,
+      "torque": 1000,
+      "price": "€33,335–€34,805 total",
+      "passed": true
+    },
+    {
+      "width": 390,
+      "model": "mercedes-amg-glc63",
+      "car": "glc63",
+      "stage": "stage5",
+      "hp": 850,
+      "torque": 1100,
+      "price": "€51,335–€52,805 total",
+      "passed": true
+    },
+    {
+      "width": 390,
+      "model": "aston-martin-db11",
+      "car": "db11",
+      "stage": "stage1",
+      "hp": 590,
+      "torque": 750,
+      "price": "€3,346 total",
+      "passed": true
+    },
+    {
+      "width": 390,
+      "model": "aston-martin-db11",
+      "car": "db11",
+      "stage": "stage2",
+      "hp": 615,
+      "torque": 790,
+      "price": "€10,232 total",
+      "passed": true
+    },
+    {
+      "width": 390,
+      "model": "aston-martin-db11",
+      "car": "db11",
+      "stage": "stage3",
+      "hp": 700,
+      "torque": 900,
+      "price": "€18,333 total",
+      "passed": true
+    },
+    {
+      "width": 390,
+      "model": "aston-martin-db11",
+      "car": "db11",
+      "stage": "stage4",
+      "hp": 795,
+      "torque": 1000,
+      "price": "€33,792 total",
+      "passed": true
+    },
+    {
+      "width": 390,
+      "model": "aston-martin-db11",
+      "car": "db11",
+      "stage": "stage5",
+      "hp": 850,
+      "torque": 1100,
+      "price": "€56,435 total",
+      "passed": true
+    },
+    {
+      "width": 390,
+      "model": "lamborghini-urus",
+      "car": "urus",
+      "stage": "stage1",
+      "hp": 750,
+      "torque": 950,
+      "price": "€5,418 total",
+      "passed": true
+    },
+    {
+      "width": 390,
+      "model": "lamborghini-urus",
+      "car": "urus",
+      "stage": "stage2",
+      "hp": 800,
+      "torque": 1000,
+      "price": "€13,842 total",
+      "passed": true
+    },
+    {
+      "width": 390,
+      "model": "lamborghini-urus",
+      "car": "urus",
+      "stage": "stage3",
+      "hp": 870,
+      "torque": 1100,
+      "price": "€26,842 total",
+      "passed": true
+    },
+    {
+      "width": 390,
+      "model": "lamborghini-urus",
+      "car": "urus",
+      "stage": "stage4",
+      "hp": 904,
+      "torque": 1150,
+      "price": "€35,992 total",
+      "passed": true
+    }
+  ],
+  "keyboard": [
+    {
+      "path": "/tuning/mercedes-amg-gt",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "path": "/tuning/mercedes-amg-e63",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "path": "/tuning/mercedes-amg-g63",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "path": "/tuning/mercedes-amg-gt63",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "path": "/tuning/mercedes-amg-s65",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "path": "/tuning/mercedes-amg-c63",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "path": "/tuning/mercedes-amg-glc63",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "path": "/tuning/aston-martin-db11",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "path": "/tuning/lamborghini-urus",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "path": "/tuning/mercedes-amg-gt",
+      "width": 390,
+      "passed": true
+    },
+    {
+      "path": "/tuning/mercedes-amg-e63",
+      "width": 390,
+      "passed": true
+    },
+    {
+      "path": "/tuning/mercedes-amg-g63",
+      "width": 390,
+      "passed": true
+    },
+    {
+      "path": "/tuning/mercedes-amg-gt63",
+      "width": 390,
+      "passed": true
+    },
+    {
+      "path": "/tuning/mercedes-amg-s65",
+      "width": 390,
+      "passed": true
+    },
+    {
+      "path": "/tuning/mercedes-amg-c63",
+      "width": 390,
+      "passed": true
+    },
+    {
+      "path": "/tuning/mercedes-amg-glc63",
+      "width": 390,
+      "passed": true
+    },
+    {
+      "path": "/tuning/aston-martin-db11",
+      "width": 390,
+      "passed": true
+    },
+    {
+      "path": "/tuning/lamborghini-urus",
+      "width": 390,
+      "passed": true
+    }
+  ],
+  "noJavaScript": [
+    {
+      "path": "/tuning/mercedes-amg-gt",
+      "packages": 12,
+      "overflow": 0,
+      "passed": true
+    },
+    {
+      "path": "/tuning/mercedes-amg-e63",
+      "packages": 5,
+      "overflow": 0,
+      "passed": true
+    },
+    {
+      "path": "/tuning/mercedes-amg-g63",
+      "packages": 5,
+      "overflow": 0,
+      "passed": true
+    },
+    {
+      "path": "/tuning/mercedes-amg-gt63",
+      "packages": 5,
+      "overflow": 0,
+      "passed": true
+    },
+    {
+      "path": "/tuning/mercedes-amg-s65",
+      "packages": 5,
+      "overflow": 0,
+      "passed": true
+    },
+    {
+      "path": "/tuning/mercedes-amg-c63",
+      "packages": 6,
+      "overflow": 0,
+      "passed": true
+    },
+    {
+      "path": "/tuning/mercedes-amg-glc63",
+      "packages": 5,
+      "overflow": 0,
+      "passed": true
+    },
+    {
+      "path": "/tuning/aston-martin-db11",
+      "packages": 5,
+      "overflow": 0,
+      "passed": true
+    },
+    {
+      "path": "/tuning/lamborghini-urus",
+      "packages": 4,
+      "overflow": 0,
+      "passed": true
+    }
+  ],
+  "analytics": [
+    {
+      "path": "/tuning/mercedes-amg-gt",
+      "placement": "tuning_model_stage",
+      "whatsappClickCount": 1,
+      "chatOpenedCount": 1,
+      "passed": true
+    },
+    {
+      "path": "/tuning/mercedes-amg-e63",
+      "placement": "tuning_model_stage",
+      "whatsappClickCount": 1,
+      "chatOpenedCount": 1,
+      "passed": true
+    },
+    {
+      "path": "/tuning/mercedes-amg-g63",
+      "placement": "tuning_model_stage",
+      "whatsappClickCount": 1,
+      "chatOpenedCount": 1,
+      "passed": true
+    },
+    {
+      "path": "/tuning/mercedes-amg-gt63",
+      "placement": "tuning_model_stage",
+      "whatsappClickCount": 1,
+      "chatOpenedCount": 1,
+      "passed": true
+    },
+    {
+      "path": "/tuning/mercedes-amg-s65",
+      "placement": "tuning_model_stage",
+      "whatsappClickCount": 1,
+      "chatOpenedCount": 1,
+      "passed": true
+    },
+    {
+      "path": "/tuning/mercedes-amg-c63",
+      "placement": "tuning_model_stage",
+      "whatsappClickCount": 1,
+      "chatOpenedCount": 1,
+      "passed": true
+    },
+    {
+      "path": "/tuning/mercedes-amg-glc63",
+      "placement": "tuning_model_stage",
+      "whatsappClickCount": 1,
+      "chatOpenedCount": 1,
+      "passed": true
+    },
+    {
+      "path": "/tuning/aston-martin-db11",
+      "placement": "tuning_model_stage",
+      "whatsappClickCount": 1,
+      "chatOpenedCount": 1,
+      "passed": true
+    },
+    {
+      "path": "/tuning/lamborghini-urus",
+      "placement": "tuning_model_stage",
+      "whatsappClickCount": 1,
+      "chatOpenedCount": 1,
+      "passed": true
+    }
+  ],
+  "languageSwitches": [
+    {
+      "from": "/tuning/mercedes-amg-g63",
+      "to": "/ar/tuning",
+      "passed": true
+    }
+  ],
+  "screenshots": [
+    "mercedes-amg-g63-1440-hero.png",
+    "mercedes-amg-g63-1440-stages.png",
+    "mercedes-amg-gt63-1440-hero.png",
+    "mercedes-amg-gt63-1440-stages.png",
+    "aston-martin-db11-1440-hero.png",
+    "aston-martin-db11-1440-stages.png",
+    "mercedes-amg-g63-390-hero.png",
+    "mercedes-amg-g63-390-stages.png",
+    "mercedes-amg-gt63-390-hero.png",
+    "mercedes-amg-gt63-390-stages.png",
+    "aston-martin-db11-390-hero.png",
+    "aston-martin-db11-390-stages.png"
+  ],
+  "runtimeErrors": [],
+  "failedLocalResponses": [],
+  "blockedWrites": [],
+  "blockedExternalRequests": 75,
+  "failures": [],
+  "safety": "Built local GET/HEAD only; all external requests, WhatsApp navigation and form submissions blocked."
+}

@@ -50,6 +50,7 @@
           "alternateName": ["Digi-Tec", "DIGI-TEC", "Digitec"],
           "url": "https://digitecme.com/",
           "email": "info@digitecme.com",
+          "publishingPrinciples": "https://digitecme.com/about#workshop-guides",
           "logo": { "@id": "https://digitecme.com/#logo" },
           "image": { "@id": "https://digitecme.com/#logo" },
           "sameAs": [
@@ -193,7 +194,9 @@
       // Retain recognised acquisition channels without sending arbitrary UTM text.
       // Keep these labels aligned with src/lib/contact-attribution.ts.
       var analyticsParams = new URLSearchParams(window.location.search);
-      var analyticsSource = (analyticsParams.get('utm_source') || '').toLowerCase().trim().replace(/^www\./, '').replace(/\.com$/, '');
+      var analyticsSource = (analyticsParams.get('utm_source') || '').toLowerCase().trim().replace(/^www\./, '');
+      var analyticsSourceHosts = {'chatgpt.com':'chatgpt','chat.openai.com':'openai','openai.com':'openai','gemini.google.com':'gemini','bard.google.com':'gemini','perplexity.ai':'perplexity','copilot.microsoft.com':'copilot','claude.ai':'claude'};
+      analyticsSource = Object.prototype.hasOwnProperty.call(analyticsSourceHosts, analyticsSource) ? analyticsSourceHosts[analyticsSource] : analyticsSource.replace(/\.com$/, '');
       var analyticsMedium = (analyticsParams.get('utm_medium') || '').toLowerCase().trim();
       var analyticsConfig = {};
       if (['google', 'bing', 'chatgpt', 'openai', 'perplexity', 'gemini', 'claude', 'copilot', 'duckduckgo', 'instagram', 'facebook', 'youtube', 'newsletter', 'whatsapp'].includes(analyticsSource)) analyticsConfig.campaign_source = analyticsSource;

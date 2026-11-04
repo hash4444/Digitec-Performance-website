@@ -1,0 +1,1475 @@
+{
+  "checkedAt": "2026-11-04T12:40:50.973Z",
+  "origin": "https://digitecme.com",
+  "scope": "HTTP response probes from the current execution environment",
+  "passed": true,
+  "actualCrawlerAccessVerified": false,
+  "indexingVerified": false,
+  "aiRecommendationsMeasured": false,
+  "interpretation": [
+    "A copied user-agent tests response behavior only. It cannot prove access from genuine OpenAI, Google or Bing IP addresses.",
+    "Confirm genuine crawler requests in production CDN/server logs against each provider's published IP ranges or verification procedure.",
+    "Google-Extended has no independent HTTP user-agent. This checker evaluates its robots.txt token, not a simulated Google-Extended request.",
+    "Network failures describe this execution environment; they do not prove a production outage or crawler block.",
+    "Successful responses do not prove indexing, ranking, citation frequency or future inclusion in AI answers."
+  ],
+  "infrastructure": [
+    {
+      "path": "/robots.txt",
+      "agent": "baseline",
+      "status": 200,
+      "location": null,
+      "contentType": "text/plain; charset=utf-8",
+      "xRobotsTag": null,
+      "seconds": 0.728,
+      "bytes": 292,
+      "body": "# OpenAI search and assistant crawlers are explicitly permitted.\nUser-agent: OAI-SearchBot\nUser-agent: ChatGPT-User\nUser-agent: GPTBot\nAllow: /\nDisallow: /wp-admin\nDisallow: /wp-login\n\nUser-agent: *\nAllow: /\nDisallow: /wp-admin\nDisallow: /wp-login\n\nSitemap: https://digitecme.com/sitemap.xml\n"
+    },
+    {
+      "path": "/sitemap.xml",
+      "agent": "baseline",
+      "status": 200,
+      "location": null,
+      "contentType": "application/xml",
+      "xRobotsTag": null,
+      "seconds": 0.674,
+      "bytes": 129276
+    },
+    {
+      "path": "/llms.txt",
+      "agent": "baseline",
+      "status": 200,
+      "location": null,
+      "contentType": "text/plain; charset=utf-8",
+      "xRobotsTag": null,
+      "seconds": 0.908,
+      "bytes": 1498
+    }
+  ],
+  "probes": [
+    {
+      "path": "/",
+      "agent": "baseline",
+      "status": 200,
+      "location": null,
+      "contentType": "text/html; charset=utf-8",
+      "xRobotsTag": null,
+      "seconds": 0.322,
+      "probeType": "baseline_http",
+      "actualCrawlerOriginVerified": false,
+      "page": {
+        "title": "Digi-Tec Performance Center | Independent Car Workshop Dubai",
+        "description": [
+          "Independent car workshop in Al Quoz, Dubai since 2002 for inspection, maintenance, repair, programming, bodywork and performance-project consultation. Call +971 4 340 2223."
+        ],
+        "canonical": [
+          "https://digitecme.com/"
+        ],
+        "h1": [
+          "D IGI-TEC Performance Center"
+        ],
+        "robots": [
+          {
+            "agent": "robots",
+            "content": "index, follow, max-image-preview:large"
+          }
+        ],
+        "restricted": false,
+        "textLength": 14814,
+        "jsonLdErrors": [],
+        "schemaTypes": [
+          "Organization",
+          "ImageObject",
+          "WebSite",
+          "AutoRepair",
+          "AutomotiveBusiness",
+          "OfferCatalog",
+          "WebPage",
+          "ItemList",
+          "FAQPage"
+        ]
+      },
+      "checks": {
+        "status": true,
+        "contentType": true,
+        "headerSnippetEligible": true,
+        "title": true,
+        "description": true,
+        "oneH1": true,
+        "canonical": true,
+        "snippetEligible": true,
+        "initialHtml": true,
+        "structuredData": true,
+        "sitemap": true,
+        "robots": true
+      },
+      "passed": true
+    },
+    {
+      "path": "/",
+      "agent": "bingbot",
+      "status": 200,
+      "location": null,
+      "contentType": "text/html; charset=utf-8",
+      "xRobotsTag": null,
+      "seconds": 1.951,
+      "probeType": "simulated_user_agent",
+      "actualCrawlerOriginVerified": false,
+      "page": {
+        "title": "Digi-Tec Performance Center | Independent Car Workshop Dubai",
+        "description": [
+          "Independent car workshop in Al Quoz, Dubai since 2002 for inspection, maintenance, repair, programming, bodywork and performance-project consultation. Call +971 4 340 2223."
+        ],
+        "canonical": [
+          "https://digitecme.com/"
+        ],
+        "h1": [
+          "D IGI-TEC Performance Center"
+        ],
+        "robots": [
+          {
+            "agent": "robots",
+            "content": "index, follow, max-image-preview:large"
+          }
+        ],
+        "restricted": false,
+        "textLength": 14814,
+        "jsonLdErrors": [],
+        "schemaTypes": [
+          "Organization",
+          "ImageObject",
+          "WebSite",
+          "AutoRepair",
+          "AutomotiveBusiness",
+          "OfferCatalog",
+          "WebPage",
+          "ItemList",
+          "FAQPage"
+        ]
+      },
+      "checks": {
+        "status": true,
+        "contentType": true,
+        "headerSnippetEligible": true,
+        "title": true,
+        "description": true,
+        "oneH1": true,
+        "canonical": true,
+        "snippetEligible": true,
+        "initialHtml": true,
+        "structuredData": true,
+        "sitemap": true,
+        "robots": true
+      },
+      "passed": true
+    },
+    {
+      "path": "/",
+      "agent": "Googlebot",
+      "status": 200,
+      "location": null,
+      "contentType": "text/html; charset=utf-8",
+      "xRobotsTag": null,
+      "seconds": 0.315,
+      "probeType": "simulated_user_agent",
+      "actualCrawlerOriginVerified": false,
+      "page": {
+        "title": "Digi-Tec Performance Center | Independent Car Workshop Dubai",
+        "description": [
+          "Independent car workshop in Al Quoz, Dubai since 2002 for inspection, maintenance, repair, programming, bodywork and performance-project consultation. Call +971 4 340 2223."
+        ],
+        "canonical": [
+          "https://digitecme.com/"
+        ],
+        "h1": [
+          "D IGI-TEC Performance Center"
+        ],
+        "robots": [
+          {
+            "agent": "robots",
+            "content": "index, follow, max-image-preview:large"
+          }
+        ],
+        "restricted": false,
+        "textLength": 14814,
+        "jsonLdErrors": [],
+        "schemaTypes": [
+          "Organization",
+          "ImageObject",
+          "WebSite",
+          "AutoRepair",
+          "AutomotiveBusiness",
+          "OfferCatalog",
+          "WebPage",
+          "ItemList",
+          "FAQPage"
+        ]
+      },
+      "checks": {
+        "status": true,
+        "contentType": true,
+        "headerSnippetEligible": true,
+        "title": true,
+        "description": true,
+        "oneH1": true,
+        "canonical": true,
+        "snippetEligible": true,
+        "initialHtml": true,
+        "structuredData": true,
+        "sitemap": true,
+        "robots": true
+      },
+      "passed": true
+    },
+    {
+      "path": "/",
+      "agent": "OAI-SearchBot",
+      "status": 200,
+      "location": null,
+      "contentType": "text/html; charset=utf-8",
+      "xRobotsTag": null,
+      "seconds": 0.318,
+      "probeType": "simulated_user_agent",
+      "actualCrawlerOriginVerified": false,
+      "page": {
+        "title": "Digi-Tec Performance Center | Independent Car Workshop Dubai",
+        "description": [
+          "Independent car workshop in Al Quoz, Dubai since 2002 for inspection, maintenance, repair, programming, bodywork and performance-project consultation. Call +971 4 340 2223."
+        ],
+        "canonical": [
+          "https://digitecme.com/"
+        ],
+        "h1": [
+          "D IGI-TEC Performance Center"
+        ],
+        "robots": [
+          {
+            "agent": "robots",
+            "content": "index, follow, max-image-preview:large"
+          }
+        ],
+        "restricted": false,
+        "textLength": 14814,
+        "jsonLdErrors": [],
+        "schemaTypes": [
+          "Organization",
+          "ImageObject",
+          "WebSite",
+          "AutoRepair",
+          "AutomotiveBusiness",
+          "OfferCatalog",
+          "WebPage",
+          "ItemList",
+          "FAQPage"
+        ]
+      },
+      "checks": {
+        "status": true,
+        "contentType": true,
+        "headerSnippetEligible": true,
+        "title": true,
+        "description": true,
+        "oneH1": true,
+        "canonical": true,
+        "snippetEligible": true,
+        "initialHtml": true,
+        "structuredData": true,
+        "sitemap": true,
+        "robots": true
+      },
+      "passed": true
+    },
+    {
+      "path": "/ar/brands/mercedes-benz-service-dubai",
+      "agent": "baseline",
+      "status": 200,
+      "location": null,
+      "contentType": "text/html; charset=utf-8",
+      "xRobotsTag": null,
+      "seconds": 0.76,
+      "probeType": "baseline_http",
+      "actualCrawlerOriginVerified": false,
+      "page": {
+        "title": "صيانة مرسيدس في دبي | الصيانة والإصلاح | ديجي-تك",
+        "description": [
+          "صيانة مرسيدس في القوز، دبي. ناقش Service A وService B والزيت والفلاتر والفحوص المستحقة والإصلاحات مع ديجي-تك واطلب عرضاً حسب بيانات سيارتك."
+        ],
+        "canonical": [
+          "https://digitecme.com/ar/brands/mercedes-benz-service-dubai"
+        ],
+        "h1": [
+          "صيانة مرسيدس بنز في دبي"
+        ],
+        "robots": [
+          {
+            "agent": "robots",
+            "content": "index, follow, max-image-preview:large"
+          }
+        ],
+        "restricted": false,
+        "textLength": 10331,
+        "jsonLdErrors": [],
+        "schemaTypes": [
+          "Organization",
+          "ImageObject",
+          "WebSite",
+          "AutoRepair",
+          "AutomotiveBusiness",
+          "OfferCatalog",
+          "WebPage",
+          "BreadcrumbList",
+          "Brand",
+          "Service",
+          "FAQPage"
+        ]
+      },
+      "checks": {
+        "status": true,
+        "contentType": true,
+        "headerSnippetEligible": true,
+        "title": true,
+        "description": true,
+        "oneH1": true,
+        "canonical": true,
+        "snippetEligible": true,
+        "initialHtml": true,
+        "structuredData": true,
+        "sitemap": true,
+        "robots": true
+      },
+      "passed": true
+    },
+    {
+      "path": "/ar/brands/mercedes-benz-service-dubai",
+      "agent": "bingbot",
+      "status": 200,
+      "location": null,
+      "contentType": "text/html; charset=utf-8",
+      "xRobotsTag": null,
+      "seconds": 1.335,
+      "probeType": "simulated_user_agent",
+      "actualCrawlerOriginVerified": false,
+      "page": {
+        "title": "صيانة مرسيدس في دبي | الصيانة والإصلاح | ديجي-تك",
+        "description": [
+          "صيانة مرسيدس في القوز، دبي. ناقش Service A وService B والزيت والفلاتر والفحوص المستحقة والإصلاحات مع ديجي-تك واطلب عرضاً حسب بيانات سيارتك."
+        ],
+        "canonical": [
+          "https://digitecme.com/ar/brands/mercedes-benz-service-dubai"
+        ],
+        "h1": [
+          "صيانة مرسيدس بنز في دبي"
+        ],
+        "robots": [
+          {
+            "agent": "robots",
+            "content": "index, follow, max-image-preview:large"
+          }
+        ],
+        "restricted": false,
+        "textLength": 10331,
+        "jsonLdErrors": [],
+        "schemaTypes": [
+          "Organization",
+          "ImageObject",
+          "WebSite",
+          "AutoRepair",
+          "AutomotiveBusiness",
+          "OfferCatalog",
+          "WebPage",
+          "BreadcrumbList",
+          "Brand",
+          "Service",
+          "FAQPage"
+        ]
+      },
+      "checks": {
+        "status": true,
+        "contentType": true,
+        "headerSnippetEligible": true,
+        "title": true,
+        "description": true,
+        "oneH1": true,
+        "canonical": true,
+        "snippetEligible": true,
+        "initialHtml": true,
+        "structuredData": true,
+        "sitemap": true,
+        "robots": true
+      },
+      "passed": true
+    },
+    {
+      "path": "/ar/brands/mercedes-benz-service-dubai",
+      "agent": "Googlebot",
+      "status": 200,
+      "location": null,
+      "contentType": "text/html; charset=utf-8",
+      "xRobotsTag": null,
+      "seconds": 0.715,
+      "probeType": "simulated_user_agent",
+      "actualCrawlerOriginVerified": false,
+      "page": {
+        "title": "صيانة مرسيدس في دبي | الصيانة والإصلاح | ديجي-تك",
+        "description": [
+          "صيانة مرسيدس في القوز، دبي. ناقش Service A وService B والزيت والفلاتر والفحوص المستحقة والإصلاحات مع ديجي-تك واطلب عرضاً حسب بيانات سيارتك."
+        ],
+        "canonical": [
+          "https://digitecme.com/ar/brands/mercedes-benz-service-dubai"
+        ],
+        "h1": [
+          "صيانة مرسيدس بنز في دبي"
+        ],
+        "robots": [
+          {
+            "agent": "robots",
+            "content": "index, follow, max-image-preview:large"
+          }
+        ],
+        "restricted": false,
+        "textLength": 10331,
+        "jsonLdErrors": [],
+        "schemaTypes": [
+          "Organization",
+          "ImageObject",
+          "WebSite",
+          "AutoRepair",
+          "AutomotiveBusiness",
+          "OfferCatalog",
+          "WebPage",
+          "BreadcrumbList",
+          "Brand",
+          "Service",
+          "FAQPage"
+        ]
+      },
+      "checks": {
+        "status": true,
+        "contentType": true,
+        "headerSnippetEligible": true,
+        "title": true,
+        "description": true,
+        "oneH1": true,
+        "canonical": true,
+        "snippetEligible": true,
+        "initialHtml": true,
+        "structuredData": true,
+        "sitemap": true,
+        "robots": true
+      },
+      "passed": true
+    },
+    {
+      "path": "/ar/brands/mercedes-benz-service-dubai",
+      "agent": "OAI-SearchBot",
+      "status": 200,
+      "location": null,
+      "contentType": "text/html; charset=utf-8",
+      "xRobotsTag": null,
+      "seconds": 0.743,
+      "probeType": "simulated_user_agent",
+      "actualCrawlerOriginVerified": false,
+      "page": {
+        "title": "صيانة مرسيدس في دبي | الصيانة والإصلاح | ديجي-تك",
+        "description": [
+          "صيانة مرسيدس في القوز، دبي. ناقش Service A وService B والزيت والفلاتر والفحوص المستحقة والإصلاحات مع ديجي-تك واطلب عرضاً حسب بيانات سيارتك."
+        ],
+        "canonical": [
+          "https://digitecme.com/ar/brands/mercedes-benz-service-dubai"
+        ],
+        "h1": [
+          "صيانة مرسيدس بنز في دبي"
+        ],
+        "robots": [
+          {
+            "agent": "robots",
+            "content": "index, follow, max-image-preview:large"
+          }
+        ],
+        "restricted": false,
+        "textLength": 10331,
+        "jsonLdErrors": [],
+        "schemaTypes": [
+          "Organization",
+          "ImageObject",
+          "WebSite",
+          "AutoRepair",
+          "AutomotiveBusiness",
+          "OfferCatalog",
+          "WebPage",
+          "BreadcrumbList",
+          "Brand",
+          "Service",
+          "FAQPage"
+        ]
+      },
+      "checks": {
+        "status": true,
+        "contentType": true,
+        "headerSnippetEligible": true,
+        "title": true,
+        "description": true,
+        "oneH1": true,
+        "canonical": true,
+        "snippetEligible": true,
+        "initialHtml": true,
+        "structuredData": true,
+        "sitemap": true,
+        "robots": true
+      },
+      "passed": true
+    },
+    {
+      "path": "/brands/mercedes-benz-service-dubai",
+      "agent": "baseline",
+      "status": 200,
+      "location": null,
+      "contentType": "text/html; charset=utf-8",
+      "xRobotsTag": null,
+      "seconds": 0.287,
+      "probeType": "baseline_http",
+      "actualCrawlerOriginVerified": false,
+      "page": {
+        "title": "Mercedes Service Dubai | Maintenance & Repair | DIGI-TEC",
+        "description": [
+          "Mercedes servicing in Al Quoz, Dubai. Discuss Service A/B, oil and filters, due inspections and repairs with DIGI-TEC. Request a vehicle-specific quote."
+        ],
+        "canonical": [
+          "https://digitecme.com/brands/mercedes-benz-service-dubai"
+        ],
+        "h1": [
+          "Mercedes-Benz Service in Dubai"
+        ],
+        "robots": [
+          {
+            "agent": "robots",
+            "content": "index, follow, max-image-preview:large"
+          }
+        ],
+        "restricted": false,
+        "textLength": 19386,
+        "jsonLdErrors": [],
+        "schemaTypes": [
+          "Organization",
+          "ImageObject",
+          "WebSite",
+          "AutoRepair",
+          "AutomotiveBusiness",
+          "OfferCatalog",
+          "WebPage",
+          "BreadcrumbList",
+          "Brand",
+          "Service",
+          "FAQPage"
+        ]
+      },
+      "checks": {
+        "status": true,
+        "contentType": true,
+        "headerSnippetEligible": true,
+        "title": true,
+        "description": true,
+        "oneH1": true,
+        "canonical": true,
+        "snippetEligible": true,
+        "initialHtml": true,
+        "structuredData": true,
+        "sitemap": true,
+        "robots": true
+      },
+      "passed": true
+    },
+    {
+      "path": "/brands/mercedes-benz-service-dubai",
+      "agent": "bingbot",
+      "status": 200,
+      "location": null,
+      "contentType": "text/html; charset=utf-8",
+      "xRobotsTag": null,
+      "seconds": 0.195,
+      "probeType": "simulated_user_agent",
+      "actualCrawlerOriginVerified": false,
+      "page": {
+        "title": "Mercedes Service Dubai | Maintenance & Repair | DIGI-TEC",
+        "description": [
+          "Mercedes servicing in Al Quoz, Dubai. Discuss Service A/B, oil and filters, due inspections and repairs with DIGI-TEC. Request a vehicle-specific quote."
+        ],
+        "canonical": [
+          "https://digitecme.com/brands/mercedes-benz-service-dubai"
+        ],
+        "h1": [
+          "Mercedes-Benz Service in Dubai"
+        ],
+        "robots": [
+          {
+            "agent": "robots",
+            "content": "index, follow, max-image-preview:large"
+          }
+        ],
+        "restricted": false,
+        "textLength": 19386,
+        "jsonLdErrors": [],
+        "schemaTypes": [
+          "Organization",
+          "ImageObject",
+          "WebSite",
+          "AutoRepair",
+          "AutomotiveBusiness",
+          "OfferCatalog",
+          "WebPage",
+          "BreadcrumbList",
+          "Brand",
+          "Service",
+          "FAQPage"
+        ]
+      },
+      "checks": {
+        "status": true,
+        "contentType": true,
+        "headerSnippetEligible": true,
+        "title": true,
+        "description": true,
+        "oneH1": true,
+        "canonical": true,
+        "snippetEligible": true,
+        "initialHtml": true,
+        "structuredData": true,
+        "sitemap": true,
+        "robots": true
+      },
+      "passed": true
+    },
+    {
+      "path": "/brands/mercedes-benz-service-dubai",
+      "agent": "Googlebot",
+      "status": 200,
+      "location": null,
+      "contentType": "text/html; charset=utf-8",
+      "xRobotsTag": null,
+      "seconds": 0.27,
+      "probeType": "simulated_user_agent",
+      "actualCrawlerOriginVerified": false,
+      "page": {
+        "title": "Mercedes Service Dubai | Maintenance & Repair | DIGI-TEC",
+        "description": [
+          "Mercedes servicing in Al Quoz, Dubai. Discuss Service A/B, oil and filters, due inspections and repairs with DIGI-TEC. Request a vehicle-specific quote."
+        ],
+        "canonical": [
+          "https://digitecme.com/brands/mercedes-benz-service-dubai"
+        ],
+        "h1": [
+          "Mercedes-Benz Service in Dubai"
+        ],
+        "robots": [
+          {
+            "agent": "robots",
+            "content": "index, follow, max-image-preview:large"
+          }
+        ],
+        "restricted": false,
+        "textLength": 19386,
+        "jsonLdErrors": [],
+        "schemaTypes": [
+          "Organization",
+          "ImageObject",
+          "WebSite",
+          "AutoRepair",
+          "AutomotiveBusiness",
+          "OfferCatalog",
+          "WebPage",
+          "BreadcrumbList",
+          "Brand",
+          "Service",
+          "FAQPage"
+        ]
+      },
+      "checks": {
+        "status": true,
+        "contentType": true,
+        "headerSnippetEligible": true,
+        "title": true,
+        "description": true,
+        "oneH1": true,
+        "canonical": true,
+        "snippetEligible": true,
+        "initialHtml": true,
+        "structuredData": true,
+        "sitemap": true,
+        "robots": true
+      },
+      "passed": true
+    },
+    {
+      "path": "/brands/mercedes-benz-service-dubai",
+      "agent": "OAI-SearchBot",
+      "status": 200,
+      "location": null,
+      "contentType": "text/html; charset=utf-8",
+      "xRobotsTag": null,
+      "seconds": 0.285,
+      "probeType": "simulated_user_agent",
+      "actualCrawlerOriginVerified": false,
+      "page": {
+        "title": "Mercedes Service Dubai | Maintenance & Repair | DIGI-TEC",
+        "description": [
+          "Mercedes servicing in Al Quoz, Dubai. Discuss Service A/B, oil and filters, due inspections and repairs with DIGI-TEC. Request a vehicle-specific quote."
+        ],
+        "canonical": [
+          "https://digitecme.com/brands/mercedes-benz-service-dubai"
+        ],
+        "h1": [
+          "Mercedes-Benz Service in Dubai"
+        ],
+        "robots": [
+          {
+            "agent": "robots",
+            "content": "index, follow, max-image-preview:large"
+          }
+        ],
+        "restricted": false,
+        "textLength": 19386,
+        "jsonLdErrors": [],
+        "schemaTypes": [
+          "Organization",
+          "ImageObject",
+          "WebSite",
+          "AutoRepair",
+          "AutomotiveBusiness",
+          "OfferCatalog",
+          "WebPage",
+          "BreadcrumbList",
+          "Brand",
+          "Service",
+          "FAQPage"
+        ]
+      },
+      "checks": {
+        "status": true,
+        "contentType": true,
+        "headerSnippetEligible": true,
+        "title": true,
+        "description": true,
+        "oneH1": true,
+        "canonical": true,
+        "snippetEligible": true,
+        "initialHtml": true,
+        "structuredData": true,
+        "sitemap": true,
+        "robots": true
+      },
+      "passed": true
+    },
+    {
+      "path": "/mercedes/problems/airmatic-malfunction",
+      "agent": "baseline",
+      "status": 200,
+      "location": null,
+      "contentType": "text/html; charset=utf-8",
+      "xRobotsTag": null,
+      "seconds": 0.493,
+      "probeType": "baseline_http",
+      "actualCrawlerOriginVerified": false,
+      "page": {
+        "title": "Mercedes AIRMATIC Malfunction | Causes & Diagnosis",
+        "description": [
+          "What a Mercedes AIRMATIC malfunction means, possible air-spring, compressor, valve, sensor and voltage causes, and how the fault should be diagnosed."
+        ],
+        "canonical": [
+          "https://digitecme.com/mercedes/problems/airmatic-malfunction"
+        ],
+        "h1": [
+          "Mercedes AIRMATIC Malfunction"
+        ],
+        "robots": [
+          {
+            "agent": "robots",
+            "content": "index, follow, max-image-preview:large"
+          }
+        ],
+        "restricted": false,
+        "textLength": 6462,
+        "jsonLdErrors": [],
+        "schemaTypes": [
+          "Organization",
+          "ImageObject",
+          "WebSite",
+          "AutoRepair",
+          "AutomotiveBusiness",
+          "OfferCatalog",
+          "ItemPage",
+          "BreadcrumbList",
+          "BlogPosting",
+          "FAQPage"
+        ]
+      },
+      "checks": {
+        "status": true,
+        "contentType": true,
+        "headerSnippetEligible": true,
+        "title": true,
+        "description": true,
+        "oneH1": true,
+        "canonical": true,
+        "snippetEligible": true,
+        "initialHtml": true,
+        "structuredData": true,
+        "sitemap": true,
+        "robots": true
+      },
+      "passed": true
+    },
+    {
+      "path": "/mercedes/problems/airmatic-malfunction",
+      "agent": "bingbot",
+      "status": 200,
+      "location": null,
+      "contentType": "text/html; charset=utf-8",
+      "xRobotsTag": null,
+      "seconds": 0.3,
+      "probeType": "simulated_user_agent",
+      "actualCrawlerOriginVerified": false,
+      "page": {
+        "title": "Mercedes AIRMATIC Malfunction | Causes & Diagnosis",
+        "description": [
+          "What a Mercedes AIRMATIC malfunction means, possible air-spring, compressor, valve, sensor and voltage causes, and how the fault should be diagnosed."
+        ],
+        "canonical": [
+          "https://digitecme.com/mercedes/problems/airmatic-malfunction"
+        ],
+        "h1": [
+          "Mercedes AIRMATIC Malfunction"
+        ],
+        "robots": [
+          {
+            "agent": "robots",
+            "content": "index, follow, max-image-preview:large"
+          }
+        ],
+        "restricted": false,
+        "textLength": 6462,
+        "jsonLdErrors": [],
+        "schemaTypes": [
+          "Organization",
+          "ImageObject",
+          "WebSite",
+          "AutoRepair",
+          "AutomotiveBusiness",
+          "OfferCatalog",
+          "ItemPage",
+          "BreadcrumbList",
+          "BlogPosting",
+          "FAQPage"
+        ]
+      },
+      "checks": {
+        "status": true,
+        "contentType": true,
+        "headerSnippetEligible": true,
+        "title": true,
+        "description": true,
+        "oneH1": true,
+        "canonical": true,
+        "snippetEligible": true,
+        "initialHtml": true,
+        "structuredData": true,
+        "sitemap": true,
+        "robots": true
+      },
+      "passed": true
+    },
+    {
+      "path": "/mercedes/problems/airmatic-malfunction",
+      "agent": "Googlebot",
+      "status": 200,
+      "location": null,
+      "contentType": "text/html; charset=utf-8",
+      "xRobotsTag": null,
+      "seconds": 0.379,
+      "probeType": "simulated_user_agent",
+      "actualCrawlerOriginVerified": false,
+      "page": {
+        "title": "Mercedes AIRMATIC Malfunction | Causes & Diagnosis",
+        "description": [
+          "What a Mercedes AIRMATIC malfunction means, possible air-spring, compressor, valve, sensor and voltage causes, and how the fault should be diagnosed."
+        ],
+        "canonical": [
+          "https://digitecme.com/mercedes/problems/airmatic-malfunction"
+        ],
+        "h1": [
+          "Mercedes AIRMATIC Malfunction"
+        ],
+        "robots": [
+          {
+            "agent": "robots",
+            "content": "index, follow, max-image-preview:large"
+          }
+        ],
+        "restricted": false,
+        "textLength": 6462,
+        "jsonLdErrors": [],
+        "schemaTypes": [
+          "Organization",
+          "ImageObject",
+          "WebSite",
+          "AutoRepair",
+          "AutomotiveBusiness",
+          "OfferCatalog",
+          "ItemPage",
+          "BreadcrumbList",
+          "BlogPosting",
+          "FAQPage"
+        ]
+      },
+      "checks": {
+        "status": true,
+        "contentType": true,
+        "headerSnippetEligible": true,
+        "title": true,
+        "description": true,
+        "oneH1": true,
+        "canonical": true,
+        "snippetEligible": true,
+        "initialHtml": true,
+        "structuredData": true,
+        "sitemap": true,
+        "robots": true
+      },
+      "passed": true
+    },
+    {
+      "path": "/mercedes/problems/airmatic-malfunction",
+      "agent": "OAI-SearchBot",
+      "status": 200,
+      "location": null,
+      "contentType": "text/html; charset=utf-8",
+      "xRobotsTag": null,
+      "seconds": 0.401,
+      "probeType": "simulated_user_agent",
+      "actualCrawlerOriginVerified": false,
+      "page": {
+        "title": "Mercedes AIRMATIC Malfunction | Causes & Diagnosis",
+        "description": [
+          "What a Mercedes AIRMATIC malfunction means, possible air-spring, compressor, valve, sensor and voltage causes, and how the fault should be diagnosed."
+        ],
+        "canonical": [
+          "https://digitecme.com/mercedes/problems/airmatic-malfunction"
+        ],
+        "h1": [
+          "Mercedes AIRMATIC Malfunction"
+        ],
+        "robots": [
+          {
+            "agent": "robots",
+            "content": "index, follow, max-image-preview:large"
+          }
+        ],
+        "restricted": false,
+        "textLength": 6462,
+        "jsonLdErrors": [],
+        "schemaTypes": [
+          "Organization",
+          "ImageObject",
+          "WebSite",
+          "AutoRepair",
+          "AutomotiveBusiness",
+          "OfferCatalog",
+          "ItemPage",
+          "BreadcrumbList",
+          "BlogPosting",
+          "FAQPage"
+        ]
+      },
+      "checks": {
+        "status": true,
+        "contentType": true,
+        "headerSnippetEligible": true,
+        "title": true,
+        "description": true,
+        "oneH1": true,
+        "canonical": true,
+        "snippetEligible": true,
+        "initialHtml": true,
+        "structuredData": true,
+        "sitemap": true,
+        "robots": true
+      },
+      "passed": true
+    },
+    {
+      "path": "/services/mercedes-diagnostics-dubai",
+      "agent": "baseline",
+      "status": 200,
+      "location": null,
+      "contentType": "text/html; charset=utf-8",
+      "xRobotsTag": null,
+      "seconds": 0.453,
+      "probeType": "baseline_http",
+      "actualCrawlerOriginVerified": false,
+      "page": {
+        "title": "Mercedes Diagnostics Dubai | XENTRY Fault Tracing | DIGI-TEC",
+        "description": [
+          "Mercedes diagnostics in Al Quoz, Dubai for warning lights, no-start and drivability faults. XENTRY findings and physical tests guide the next step. Request assessment."
+        ],
+        "canonical": [
+          "https://digitecme.com/services/mercedes-diagnostics-dubai"
+        ],
+        "h1": [
+          "Mercedes XENTRY Diagnostics & Coding in Dubai"
+        ],
+        "robots": [
+          {
+            "agent": "robots",
+            "content": "index, follow, max-image-preview:large"
+          }
+        ],
+        "restricted": false,
+        "textLength": 10269,
+        "jsonLdErrors": [],
+        "schemaTypes": [
+          "Organization",
+          "ImageObject",
+          "WebSite",
+          "AutoRepair",
+          "AutomotiveBusiness",
+          "OfferCatalog",
+          "WebPage",
+          "BreadcrumbList",
+          "Brand",
+          "Service",
+          "FAQPage"
+        ]
+      },
+      "checks": {
+        "status": true,
+        "contentType": true,
+        "headerSnippetEligible": true,
+        "title": true,
+        "description": true,
+        "oneH1": true,
+        "canonical": true,
+        "snippetEligible": true,
+        "initialHtml": true,
+        "structuredData": true,
+        "sitemap": true,
+        "robots": true
+      },
+      "passed": true
+    },
+    {
+      "path": "/services/mercedes-diagnostics-dubai",
+      "agent": "bingbot",
+      "status": 200,
+      "location": null,
+      "contentType": "text/html; charset=utf-8",
+      "xRobotsTag": null,
+      "seconds": 0.201,
+      "probeType": "simulated_user_agent",
+      "actualCrawlerOriginVerified": false,
+      "page": {
+        "title": "Mercedes Diagnostics Dubai | XENTRY Fault Tracing | DIGI-TEC",
+        "description": [
+          "Mercedes diagnostics in Al Quoz, Dubai for warning lights, no-start and drivability faults. XENTRY findings and physical tests guide the next step. Request assessment."
+        ],
+        "canonical": [
+          "https://digitecme.com/services/mercedes-diagnostics-dubai"
+        ],
+        "h1": [
+          "Mercedes XENTRY Diagnostics & Coding in Dubai"
+        ],
+        "robots": [
+          {
+            "agent": "robots",
+            "content": "index, follow, max-image-preview:large"
+          }
+        ],
+        "restricted": false,
+        "textLength": 10269,
+        "jsonLdErrors": [],
+        "schemaTypes": [
+          "Organization",
+          "ImageObject",
+          "WebSite",
+          "AutoRepair",
+          "AutomotiveBusiness",
+          "OfferCatalog",
+          "WebPage",
+          "BreadcrumbList",
+          "Brand",
+          "Service",
+          "FAQPage"
+        ]
+      },
+      "checks": {
+        "status": true,
+        "contentType": true,
+        "headerSnippetEligible": true,
+        "title": true,
+        "description": true,
+        "oneH1": true,
+        "canonical": true,
+        "snippetEligible": true,
+        "initialHtml": true,
+        "structuredData": true,
+        "sitemap": true,
+        "robots": true
+      },
+      "passed": true
+    },
+    {
+      "path": "/services/mercedes-diagnostics-dubai",
+      "agent": "Googlebot",
+      "status": 200,
+      "location": null,
+      "contentType": "text/html; charset=utf-8",
+      "xRobotsTag": null,
+      "seconds": 0.426,
+      "probeType": "simulated_user_agent",
+      "actualCrawlerOriginVerified": false,
+      "page": {
+        "title": "Mercedes Diagnostics Dubai | XENTRY Fault Tracing | DIGI-TEC",
+        "description": [
+          "Mercedes diagnostics in Al Quoz, Dubai for warning lights, no-start and drivability faults. XENTRY findings and physical tests guide the next step. Request assessment."
+        ],
+        "canonical": [
+          "https://digitecme.com/services/mercedes-diagnostics-dubai"
+        ],
+        "h1": [
+          "Mercedes XENTRY Diagnostics & Coding in Dubai"
+        ],
+        "robots": [
+          {
+            "agent": "robots",
+            "content": "index, follow, max-image-preview:large"
+          }
+        ],
+        "restricted": false,
+        "textLength": 10269,
+        "jsonLdErrors": [],
+        "schemaTypes": [
+          "Organization",
+          "ImageObject",
+          "WebSite",
+          "AutoRepair",
+          "AutomotiveBusiness",
+          "OfferCatalog",
+          "WebPage",
+          "BreadcrumbList",
+          "Brand",
+          "Service",
+          "FAQPage"
+        ]
+      },
+      "checks": {
+        "status": true,
+        "contentType": true,
+        "headerSnippetEligible": true,
+        "title": true,
+        "description": true,
+        "oneH1": true,
+        "canonical": true,
+        "snippetEligible": true,
+        "initialHtml": true,
+        "structuredData": true,
+        "sitemap": true,
+        "robots": true
+      },
+      "passed": true
+    },
+    {
+      "path": "/services/mercedes-diagnostics-dubai",
+      "agent": "OAI-SearchBot",
+      "status": 200,
+      "location": null,
+      "contentType": "text/html; charset=utf-8",
+      "xRobotsTag": null,
+      "seconds": 0.468,
+      "probeType": "simulated_user_agent",
+      "actualCrawlerOriginVerified": false,
+      "page": {
+        "title": "Mercedes Diagnostics Dubai | XENTRY Fault Tracing | DIGI-TEC",
+        "description": [
+          "Mercedes diagnostics in Al Quoz, Dubai for warning lights, no-start and drivability faults. XENTRY findings and physical tests guide the next step. Request assessment."
+        ],
+        "canonical": [
+          "https://digitecme.com/services/mercedes-diagnostics-dubai"
+        ],
+        "h1": [
+          "Mercedes XENTRY Diagnostics & Coding in Dubai"
+        ],
+        "robots": [
+          {
+            "agent": "robots",
+            "content": "index, follow, max-image-preview:large"
+          }
+        ],
+        "restricted": false,
+        "textLength": 10269,
+        "jsonLdErrors": [],
+        "schemaTypes": [
+          "Organization",
+          "ImageObject",
+          "WebSite",
+          "AutoRepair",
+          "AutomotiveBusiness",
+          "OfferCatalog",
+          "WebPage",
+          "BreadcrumbList",
+          "Brand",
+          "Service",
+          "FAQPage"
+        ]
+      },
+      "checks": {
+        "status": true,
+        "contentType": true,
+        "headerSnippetEligible": true,
+        "title": true,
+        "description": true,
+        "oneH1": true,
+        "canonical": true,
+        "snippetEligible": true,
+        "initialHtml": true,
+        "structuredData": true,
+        "sitemap": true,
+        "robots": true
+      },
+      "passed": true
+    },
+    {
+      "path": "/tuning/mercedes-amg-g63",
+      "agent": "baseline",
+      "status": 200,
+      "location": null,
+      "contentType": "text/html; charset=utf-8",
+      "xRobotsTag": null,
+      "seconds": 0.501,
+      "probeType": "baseline_http",
+      "actualCrawlerOriginVerified": false,
+      "page": {
+        "title": "Mercedes G63 Tuning Dubai | ECU Remap & Stages | DIGI-TEC",
+        "description": [
+          "Plan a Mercedes G63 tune in Dubai. Compare M177 ECU remapping, Stage 1–4 power, exhaust upgrades, CPC/TCU scope and published EUR package prices."
+        ],
+        "canonical": [
+          "https://digitecme.com/tuning/mercedes-amg-g63"
+        ],
+        "h1": [
+          "Mercedes-AMG G63 Tuning & ECU Remapping in Dubai"
+        ],
+        "robots": [
+          {
+            "agent": "robots",
+            "content": "index, follow, max-image-preview:large"
+          }
+        ],
+        "restricted": false,
+        "textLength": 10090,
+        "jsonLdErrors": [],
+        "schemaTypes": [
+          "Organization",
+          "ImageObject",
+          "WebSite",
+          "AutoRepair",
+          "AutomotiveBusiness",
+          "OfferCatalog",
+          "WebPage",
+          "BreadcrumbList",
+          "Service",
+          "FAQPage"
+        ]
+      },
+      "checks": {
+        "status": true,
+        "contentType": true,
+        "headerSnippetEligible": true,
+        "title": true,
+        "description": true,
+        "oneH1": true,
+        "canonical": true,
+        "snippetEligible": true,
+        "initialHtml": true,
+        "structuredData": true,
+        "sitemap": true,
+        "robots": true
+      },
+      "passed": true
+    },
+    {
+      "path": "/tuning/mercedes-amg-g63",
+      "agent": "bingbot",
+      "status": 200,
+      "location": null,
+      "contentType": "text/html; charset=utf-8",
+      "xRobotsTag": null,
+      "seconds": 0.428,
+      "probeType": "simulated_user_agent",
+      "actualCrawlerOriginVerified": false,
+      "page": {
+        "title": "Mercedes G63 Tuning Dubai | ECU Remap & Stages | DIGI-TEC",
+        "description": [
+          "Plan a Mercedes G63 tune in Dubai. Compare M177 ECU remapping, Stage 1–4 power, exhaust upgrades, CPC/TCU scope and published EUR package prices."
+        ],
+        "canonical": [
+          "https://digitecme.com/tuning/mercedes-amg-g63"
+        ],
+        "h1": [
+          "Mercedes-AMG G63 Tuning & ECU Remapping in Dubai"
+        ],
+        "robots": [
+          {
+            "agent": "robots",
+            "content": "index, follow, max-image-preview:large"
+          }
+        ],
+        "restricted": false,
+        "textLength": 10090,
+        "jsonLdErrors": [],
+        "schemaTypes": [
+          "Organization",
+          "ImageObject",
+          "WebSite",
+          "AutoRepair",
+          "AutomotiveBusiness",
+          "OfferCatalog",
+          "WebPage",
+          "BreadcrumbList",
+          "Service",
+          "FAQPage"
+        ]
+      },
+      "checks": {
+        "status": true,
+        "contentType": true,
+        "headerSnippetEligible": true,
+        "title": true,
+        "description": true,
+        "oneH1": true,
+        "canonical": true,
+        "snippetEligible": true,
+        "initialHtml": true,
+        "structuredData": true,
+        "sitemap": true,
+        "robots": true
+      },
+      "passed": true
+    },
+    {
+      "path": "/tuning/mercedes-amg-g63",
+      "agent": "Googlebot",
+      "status": 200,
+      "location": null,
+      "contentType": "text/html; charset=utf-8",
+      "xRobotsTag": null,
+      "seconds": 0.266,
+      "probeType": "simulated_user_agent",
+      "actualCrawlerOriginVerified": false,
+      "page": {
+        "title": "Mercedes G63 Tuning Dubai | ECU Remap & Stages | DIGI-TEC",
+        "description": [
+          "Plan a Mercedes G63 tune in Dubai. Compare M177 ECU remapping, Stage 1–4 power, exhaust upgrades, CPC/TCU scope and published EUR package prices."
+        ],
+        "canonical": [
+          "https://digitecme.com/tuning/mercedes-amg-g63"
+        ],
+        "h1": [
+          "Mercedes-AMG G63 Tuning & ECU Remapping in Dubai"
+        ],
+        "robots": [
+          {
+            "agent": "robots",
+            "content": "index, follow, max-image-preview:large"
+          }
+        ],
+        "restricted": false,
+        "textLength": 10090,
+        "jsonLdErrors": [],
+        "schemaTypes": [
+          "Organization",
+          "ImageObject",
+          "WebSite",
+          "AutoRepair",
+          "AutomotiveBusiness",
+          "OfferCatalog",
+          "WebPage",
+          "BreadcrumbList",
+          "Service",
+          "FAQPage"
+        ]
+      },
+      "checks": {
+        "status": true,
+        "contentType": true,
+        "headerSnippetEligible": true,
+        "title": true,
+        "description": true,
+        "oneH1": true,
+        "canonical": true,
+        "snippetEligible": true,
+        "initialHtml": true,
+        "structuredData": true,
+        "sitemap": true,
+        "robots": true
+      },
+      "passed": true
+    },
+    {
+      "path": "/tuning/mercedes-amg-g63",
+      "agent": "OAI-SearchBot",
+      "status": 200,
+      "location": null,
+      "contentType": "text/html; charset=utf-8",
+      "xRobotsTag": null,
+      "seconds": 0.493,
+      "probeType": "simulated_user_agent",
+      "actualCrawlerOriginVerified": false,
+      "page": {
+        "title": "Mercedes G63 Tuning Dubai | ECU Remap & Stages | DIGI-TEC",
+        "description": [
+          "Plan a Mercedes G63 tune in Dubai. Compare M177 ECU remapping, Stage 1–4 power, exhaust upgrades, CPC/TCU scope and published EUR package prices."
+        ],
+        "canonical": [
+          "https://digitecme.com/tuning/mercedes-amg-g63"
+        ],
+        "h1": [
+          "Mercedes-AMG G63 Tuning & ECU Remapping in Dubai"
+        ],
+        "robots": [
+          {
+            "agent": "robots",
+            "content": "index, follow, max-image-preview:large"
+          }
+        ],
+        "restricted": false,
+        "textLength": 10090,
+        "jsonLdErrors": [],
+        "schemaTypes": [
+          "Organization",
+          "ImageObject",
+          "WebSite",
+          "AutoRepair",
+          "AutomotiveBusiness",
+          "OfferCatalog",
+          "WebPage",
+          "BreadcrumbList",
+          "Service",
+          "FAQPage"
+        ]
+      },
+      "checks": {
+        "status": true,
+        "contentType": true,
+        "headerSnippetEligible": true,
+        "title": true,
+        "description": true,
+        "oneH1": true,
+        "canonical": true,
+        "snippetEligible": true,
+        "initialHtml": true,
+        "structuredData": true,
+        "sitemap": true,
+        "robots": true
+      },
+      "passed": true
+    }
+  ]
+}

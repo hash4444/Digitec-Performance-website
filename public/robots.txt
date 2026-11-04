@@ -1,6 +1,26 @@
-# OpenAI search and assistant crawlers are explicitly permitted.
+# Search and user-requested retrieval. The production CDN/firewall must also
+# permit verified crawlers; a robots.txt permission does not bypass a challenge.
 User-agent: OAI-SearchBot
 User-agent: ChatGPT-User
+Allow: /
+Disallow: /wp-admin
+Disallow: /wp-login
+
+User-agent: Googlebot
+User-agent: bingbot
+Allow: /
+Disallow: /wp-admin
+Disallow: /wp-login
+
+# Google-Extended controls Gemini training and grounding, not Google Search
+# ranking. Keep the existing permission explicit; it has no separate HTTP agent.
+User-agent: Google-Extended
+Allow: /
+Disallow: /wp-admin
+Disallow: /wp-login
+
+# Preserve the existing OpenAI foundation-model training preference separately
+# from ChatGPT search access.
 User-agent: GPTBot
 Allow: /
 Disallow: /wp-admin

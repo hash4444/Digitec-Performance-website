@@ -3,13 +3,14 @@ import { Navigate, useParams } from 'react-router-dom';
 import Header from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { LocalizedLink as Link } from '@/components/LocalizedLink';
+import { MercedesCaseStudyLinks } from '@/components/MercedesCaseStudyLinks';
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
 } from '@/components/ui/accordion';
-import { MERCEDES_HUB_PATH } from '@/data/mercedesModelPages';
+import { MERCEDES_HUB_PATH, MERCEDES_SERVICE_LINKS } from '@/data/mercedesModelPages';
 import {
   MERCEDES_GUIDE_PUBLISHED,
   MERCEDES_PROBLEMS_PATH,
@@ -85,6 +86,13 @@ const MercedesProblemGuidePage = () => {
     return related && related.slug !== guide.slug ? [related] : [];
   });
   const whatsappText = encodeURIComponent(`Hi, I need a Mercedes diagnostic appointment. The symptom is: ${guide.h1}. My model/year is ____.`);
+  const diagnosticServices = guide.relatedServices.some((item) => item.path === MERCEDES_SERVICE_LINKS.diagnostics)
+    ? guide.relatedServices
+    : [...guide.relatedServices, {
+      label: 'Mercedes diagnostics in Dubai',
+      path: MERCEDES_SERVICE_LINKS.diagnostics,
+      description: 'Vehicle-specific fault diagnosis before choosing a repair or replacement part.',
+    }];
 
   return (
     <div className="min-h-screen bg-black text-off-white">
@@ -113,6 +121,7 @@ const MercedesProblemGuidePage = () => {
             <h1 className="max-w-4xl text-3xl font-black leading-tight sm:text-5xl lg:text-6xl">{guide.h1}</h1>
             <p className="mt-6 max-w-4xl text-base leading-relaxed text-white/70 sm:text-xl">{guide.summary}</p>
             <p className="mt-6 text-sm text-white/45">Updated {reviewedLabel} · The next step depends on inspection of your vehicle.</p>
+            <p className="mt-3 text-sm text-white/55">By <Link to="/about" className="underline decoration-white/25 underline-offset-4 hover:text-burnt-orange">DIGI-TEC Workshop</Link> · Independent car workshop in Al Quoz, Dubai.</p>
           </div>
         </section>
 
@@ -220,6 +229,7 @@ const MercedesProblemGuidePage = () => {
                   ))}
                 </Accordion>
               </section>
+              <MercedesCaseStudyLinks path={guide.path} />
             </div>
           </article>
 
@@ -228,7 +238,7 @@ const MercedesProblemGuidePage = () => {
               <p className="text-xs font-bold uppercase tracking-[0.18em] text-burnt-orange">Arrange an inspection</p>
               <h2 className="mt-3 text-lg font-black">Diagnosis and repair options</h2>
               <div className="mt-4 space-y-4">
-                {guide.relatedServices.map((item) => (
+                {diagnosticServices.map((item) => (
                   <div key={item.path}>
                     <Link to={item.path} className="font-bold text-off-white hover:text-burnt-orange">{item.label}</Link>
                     <p className="mt-1 text-xs leading-relaxed text-white/55">{item.description}</p>

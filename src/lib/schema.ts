@@ -320,6 +320,7 @@ export function buildArticle(opts: {
       : { '@type': 'Person', name: author },
     publisher: organizationRef,
     mainEntityOfPage: { '@id': `${url}#webpage` },
+    publishingPrinciples: `${SITE_URL}${languageForUrl(url) === 'ar-AE' ? '/ar' : ''}/about#workshop-guides`,
     ...(image
       ? {
           image: {

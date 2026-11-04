@@ -16,6 +16,8 @@ import {
   type MercedesModelSection,
 } from '@/data/mercedesModelPages';
 import { useSeo } from '@/hooks/use-seo';
+import { MercedesCaseStudyLinks } from '@/components/MercedesCaseStudyLinks';
+import { getMercedesCaseStudiesForPath } from '@/data/mercedesCaseStudies';
 import { stripLocalePrefix } from '@/i18n/use-locale';
 import { buildBreadcrumb, buildFAQ, buildService, buildWebPage, pageGraph, SITE_URL } from '@/lib/schema';
 
@@ -245,6 +247,7 @@ const MercedesModelPage = () => {
           </div>
         </section>
 
+        {getMercedesCaseStudiesForPath(model.path).length > 0 && <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6"><MercedesCaseStudyLinks path={model.path} /></div>}
         {model.caseStudies?.length ? (
           <section className="border-t border-white/5 py-14 sm:py-20">
             <div className="mx-auto max-w-7xl px-4 sm:px-6">

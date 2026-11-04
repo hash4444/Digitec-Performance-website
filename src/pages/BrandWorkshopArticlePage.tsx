@@ -15,6 +15,8 @@ import { mercedesMaintenanceGuide, MERCEDES_MAINTENANCE_UPDATED } from '@/data/m
 import { B5SelectionGuideBody } from '@/components/B5SelectionGuideBody';
 import { B6JlrGuideBody } from '@/components/B6JlrGuideBody';
 import { tuningCars } from '@/data/tuningCars';
+import { WorkshopGuideContext } from '@/components/WorkshopGuideContext';
+import { MercedesRepairResources } from '@/components/MercedesRepairResources';
 
 const configuratorTuningBrands = new Set(tuningCars
   .filter((car) => !['bmw', 'audi'].includes(car.brand.toLowerCase()))
@@ -596,6 +598,7 @@ const MercedesMaintenanceArticle = ({ article, isArabic }: { article: BrandWorks
           <div className="mx-auto max-w-4xl px-5 py-16 sm:px-6 sm:py-24">
             <p className="mb-4 text-xs font-bold uppercase tracking-[0.24em] text-burnt-orange">{isArabic ? 'دليل المالك' : 'Owner guide'}</p>
             <h1 className="text-4xl font-black leading-tight sm:text-5xl lg:text-6xl">{guide.title}</h1>
+            <p className="mt-5 text-sm text-gray-300"><Link to="/about#workshop-guides" className="underline underline-offset-4 hover:text-burnt-orange">{isArabic ? 'فريق ورشة ديجي-تك' : 'DIGI-TEC Workshop'}</Link></p>
             <p className="mt-5 text-sm text-gray-400">{isArabic ? 'آخر تحديث: ' : 'Updated: '}{MERCEDES_MAINTENANCE_UPDATED}</p>
             <p className="mt-6 text-lg leading-relaxed text-gray-200">{guide.description}</p>
           </div>
@@ -622,7 +625,9 @@ const MercedesMaintenanceArticle = ({ article, isArabic }: { article: BrandWorks
             <h2 className="text-2xl font-black">{isArabic ? 'أدلة تساعدك في الخطوة التالية' : 'Continue with the detail you need'}</h2>
             <div className="mt-6 grid gap-4 sm:grid-cols-3">{guide.related.map((link) => <Link key={link.href} to={link.href} className="card-premium rounded-2xl p-5 font-semibold hover:text-burnt-orange">{link.label}</Link>)}</div>
           </section>
+          <WorkshopGuideContext />
         </article>
+        <MercedesRepairResources />
       </main>
       <FinalCTA />
       <Footer />
