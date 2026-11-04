@@ -464,27 +464,29 @@ export const aiGuidePosts: BlogPost[] = [
     slug: 'range-rover-sport-service-dubai-guide',
     title: 'Range Rover Sport Service in Dubai: What to Watch',
     excerpt:
-      'Air suspension, cooling, electrical modules and drivetrain items that decide whether a Range Rover Sport stays dependable in UAE conditions.',
+      'Plan Range Rover Sport maintenance around the fitted suspension, cooling, battery and drivetrain, with symptoms kept separate from due service items.',
     category: 'Maintenance',
     author: 'DIGI-TEC Workshop',
     date: '2026-08-13',
     readTime: '8 min read',
     coverGradient: 'from-charcoal via-black to-black',
-    metaTitle: 'Range Rover Sport Service Dubai | JLR Specialist Guide',
+    metaTitle: 'Range Rover Sport Maintenance Guide Dubai | DIGITEC',
     metaDescription:
-      'A Range Rover Sport service guide for Dubai: air suspension, cooling, electrical modules, drivetrain fluids and the checks that prevent roadside failures.',
+      'Range Rover Sport maintenance guide for Dubai owners: fitted suspension, cooling, battery and drivetrain checks, service history and repair warning signs.',
     keywords:
       'Range Rover Sport service Dubai, Range Rover repair Dubai, JLR specialist Dubai, air suspension repair Dubai, Land Rover workshop Al Quoz',
     ogType: 'article',
     content: [
       {
         type: 'p',
-        text: 'Short answer: a Range Rover Sport in Dubai needs its scheduled service plus targeted attention to the air suspension system, the cooling circuit, battery and charging health, and drivetrain fluids. Most roadside failures on these vehicles in the UAE trace back to heat stressed components and low battery voltage confusing the electronics rather than to sudden mechanical failure. Digi-Tec services the Range Rover and Land Rover range in Al Quoz using JLR diagnostic systems.',
+        text: 'Range Rover Sport maintenance starts with the model year, VIN, fitted engine and transmission, service information and recorded history. Cooling, battery, brakes and the fitted suspension deserve condition checks alongside due maintenance. Dubai heat and use inform the inspection; they do not establish the cause of a warning or justify one interval for every Sport. DIGITEC in Al Quoz Industrial Area 3 confirms the available inspection and diagnostic functions for the exact vehicle.',
+        links: [{ href: '/brands/range-rover-service-dubai', label: 'Arrange Range Rover Sport service or repair' }],
       },
       { type: 'h2', text: 'Air suspension is the headline item' },
       {
         type: 'p',
-        text: 'The system depends on healthy air springs, a compressor that is not working beyond its duty cycle, a dry air circuit and correct height sensor calibration. A vehicle sitting low overnight, a slow lift or a suspension fault message usually starts as a small leak that overworks the compressor until it fails. Diagnosing the leak early is considerably less disruptive than replacing a burnt out compressor and a spring together.',
+        text: 'Identify the suspension fitted to the exact Sport before testing. On an air-equipped vehicle, leaning after parking, slow lifting or a suspension warning can involve air springs, lines, a valve block, height sensors, compressor operation or electrical supply. Leak checks, supported diagnostic data and physical inspection help distinguish these possibilities. A low corner alone does not prove a failed spring or compressor; calibration availability is confirmed for the vehicle.',
+        links: [{ href: '/brands/range-rover-service-dubai/suspension-repair', label: 'Discuss Range Rover air-suspension diagnosis' }],
       },
       { type: 'h2', text: 'Cooling and heat management' },
       {
@@ -505,17 +507,17 @@ export const aiGuidePosts: BlogPost[] = [
       {
         type: 'ul',
         items: [
-          'ZF transmission fluid and pan service on schedule and condition.',
-          'Transfer case and differential fluid on higher mileage vehicles.',
+          'Transmission fluid, filter or pan requirements verified for the fitted unit and service information.',
+          'Transfer-case and differential checks based on the fitted drivetrain, history and applicable schedule.',
           'Brake pad, disc and fluid condition, measured rather than estimated.',
-          'Suspension bushes and arms, which wear faster on hot, rough surfaces.',
+          'Suspension bushes and arms checked for wear, damage and the reported symptoms.',
         ],
       },
       { type: 'h2', text: 'FAQs' },
       { type: 'h3', text: 'Why does my Range Rover Sport sit low in the morning?' },
       {
         type: 'p',
-        text: 'That pattern points to an air leak, commonly at a spring, valve block or line. The system can hold height while driving because the compressor keeps refilling it, which hides the leak until the vehicle is parked overnight.',
+        text: 'On a vehicle with air suspension, record which corner drops and how long it takes. A leak is one possibility, but valve, sensor, control and electrical issues also need consideration. The parked pattern and test findings determine the next step.',
       },
       { type: 'h3', text: 'Can air suspension be repaired instead of replaced?' },
       {
@@ -525,12 +527,13 @@ export const aiGuidePosts: BlogPost[] = [
       { type: 'h3', text: 'How often should the transmission fluid be changed?' },
       {
         type: 'p',
-        text: 'Condition and use decide it in this climate. High ambient temperature and stop start traffic age transmission fluid faster than a temperate market schedule assumes, so inspection at service is the right approach.',
+        text: 'Use the service information for the exact transmission and model year, together with its history and operating conditions. Delayed engagement, harsh shifts, leaks or a gearbox warning require diagnosis; a fluid change is not assumed to repair them.',
+        links: [{ href: '/brands/range-rover-service-dubai/transmission-repair', label: 'Review Range Rover gearbox assessment' }],
       },
       { type: 'h3', text: 'Do you use JLR diagnostics?' },
       {
         type: 'p',
-        text: 'Yes. Digi-Tec uses JLR diagnostic systems for fault reading, guided testing, calibration and module programming on Range Rover, Range Rover Sport, Velar, Evoque and Defender.',
+        text: 'Compatible fault reading, live data and supported service functions are confirmed for the exact vehicle and concern before booking. Coding, programming and calibration are not assumed for every model or module. A fault code must be interpreted with appropriate testing.',
       },
     ],
   },

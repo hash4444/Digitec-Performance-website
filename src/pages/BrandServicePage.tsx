@@ -14,6 +14,8 @@ import { getEcuElectronicsContent } from '@/data/ecuElectronicsContent';
 import { getRepairServiceContent, refineRepairService } from '@/data/repairServiceContent';
 import { serviceEnquiryLabel } from '@/data/queryServiceContent';
 import { arabicServiceContent } from '@/data/arabicServiceContent';
+import { getR1ServiceContent } from '@/data/r1ServiceContent';
+import { getR11RangeRoverBodyContent } from '@/data/r11RangeRoverBodyContent';
 import { useSeo } from '@/hooks/use-seo';
 import {
   Accordion,
@@ -599,7 +601,10 @@ const BrandServicePage: React.FC<BrandServicePageProps> = ({
   const repairCombo = existingCombo && repairContent ? refineRepairService(existingCombo, isArabic) : existingCombo;
   const diagnosticAcContent = getDiagnosticsAcBrandContent(brandSlug, serviceSlug, isArabic);
   const diagnosticAcMode = diagnosticAcContent ? serviceSlug === 'ac-repair' ? 'ac' : 'diagnostics' : undefined;
-  const combo = repairCombo && diagnosticAcContent ? { ...repairCombo, ...diagnosticAcContent } : repairCombo;
+  const diagnosticCombo = repairCombo && diagnosticAcContent ? { ...repairCombo, ...diagnosticAcContent } : repairCombo;
+  const r11BodyContent = getR11RangeRoverBodyContent(diagnosticCombo, isArabic);
+  const r1ServiceContent = r11BodyContent ?? getR1ServiceContent(diagnosticCombo, isArabic);
+  const combo = r1ServiceContent?.combo ?? diagnosticCombo;
   const brand = brandSlug ? getBrandBySlug(brandSlug) : undefined;
   const profile = brandSlug ? BRAND_PROFILES[brandSlug] : undefined;
   const mercedesServiceMedia = combo && !isArabic && combo.brandSlug === 'mercedes-benz-service-dubai'
@@ -774,7 +779,7 @@ const BrandServicePage: React.FC<BrandServicePageProps> = ({
           <div className="mx-auto flex max-w-5xl gap-2 overflow-x-auto px-4 py-3 sm:px-6">
             {[
               [isArabic ? 'الأعراض' : 'Symptoms', '#service-symptoms'],
-              ...(mercedesServiceScope ? [['Scope', '#service-scope']] : []),
+              ...(mercedesServiceScope || r1ServiceContent ? [[isArabic ? 'نطاق الفحص' : 'Scope', '#service-scope']] : []),
               [isArabic ? 'خطوات الفحص' : 'Process', '#service-process'],
               ...(relatedAuthorityContent.length && (!isArabic || combo.brandSlug === 'mercedes-benz-service-dubai') ? [[isArabic ? 'أدلة مرتبطة' : 'Guides', '#service-guides']] : []),
               [isArabic ? 'الأسئلة الشائعة' : 'FAQs', '#service-faqs'],
@@ -802,6 +807,41 @@ const BrandServicePage: React.FC<BrandServicePageProps> = ({
           </div>
         </div>
       </section>
+
+      {r1ServiceContent && (
+        <section id="service-scope" data-r1-service-scope className="scroll-mt-24 border-t border-white/5 bg-gradient-to-br from-charcoal/35 to-black py-12 sm:py-16">
+          <div className="mx-auto max-w-5xl px-4 sm:px-6">
+            <p className="eyebrow mb-4">{isArabic ? 'القوز الصناعية 3، دبي' : 'Al Quoz Industrial Area 3, Dubai'}</p>
+            <h2 className="text-2xl font-black sm:text-4xl">{r1ServiceContent.scopeHeading}</h2>
+            <div className="mt-7 grid gap-5 sm:grid-cols-2">
+              <article className="card-premium rounded-2xl p-5 sm:p-6">
+                <h3 className="text-lg font-semibold text-off-white">{r1ServiceContent.focusTitle}</h3>
+                <p className="mt-3 text-sm leading-7 text-gray-300">{r1ServiceContent.focus}</p>
+              </article>
+              <article className="card-premium rounded-2xl p-5 sm:p-6">
+                <h3 className="text-lg font-semibold text-off-white">{isArabic ? 'الطراز والجيل والتجهيزات' : 'Model, generation and fitted systems'}</h3>
+                <p className="mt-3 text-sm leading-7 text-gray-300">{r1ServiceContent.modelNote}</p>
+              </article>
+            </div>
+            {r11BodyContent && <figure className="mt-7 max-w-xl">
+              <img src={r11BodyContent.image.src} alt={r11BodyContent.image.alt} width={r11BodyContent.image.width} height={r11BodyContent.image.height} loading="lazy" decoding="async" className="max-h-80 w-full rounded-2xl object-cover object-center" />
+              <figcaption className="mt-3 text-sm leading-7 text-gray-400">{r11BodyContent.image.caption}</figcaption>
+            </figure>}
+            <nav aria-label={isArabic ? 'الخدمات والمعلومات المرتبطة' : 'Related services and owner information'} className="mt-6 flex flex-col gap-2 sm:flex-row sm:flex-wrap sm:gap-x-6">
+              {r1ServiceContent.links.map(item => <Link key={item.path} to={item.path} className="inline-flex min-h-11 items-center text-sm font-semibold text-burnt-orange underline underline-offset-4">{item.label}</Link>)}
+            </nav>
+            <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+              <a href={whatsappHref} data-cta-placement="r1_service_scope" target="_blank" rel="noopener noreferrer" className="btn-primary justify-center">
+                <MessageCircle className="h-5 w-5 shrink-0" />{isArabic ? 'ناقش الفحص عبر واتساب' : `Discuss ${combo.serviceName} on WhatsApp`}
+              </a>
+              <a href="tel:+97143402223" data-cta-placement="r1_service_scope" className="btn-secondary justify-center">
+                <Phone className="h-5 w-5 shrink-0" />{isArabic ? <>اتصل بالورشة <bdi dir="ltr">+971 4 340 2223</bdi></> : 'Call the Al Quoz workshop'}
+              </a>
+            </div>
+            <p data-r1-draft-note className="mt-4 text-sm leading-7 text-gray-400">{isArabic ? 'يفتح الرابط مسودة واتساب. أكمل التفاصيل وراجعها ثم اضغط إرسال ليستلم الفريق طلبك. يُؤكد نطاق الفحص والتكلفة والموعد بعد التواصل؛ فتح الرابط لا يحجز موعداً.' : 'The link opens a WhatsApp draft. Complete the details, review it and press Send for the team to receive your enquiry. Assessment scope, cost and appointment availability are confirmed after contact; opening the link does not book a visit.'}</p>
+          </div>
+        </section>
+      )}
 
       {mercedesServiceScope && (
         <section id="service-scope" className="scroll-mt-24 border-t border-white/5 bg-gradient-to-br from-charcoal/35 to-black py-12 sm:py-16">

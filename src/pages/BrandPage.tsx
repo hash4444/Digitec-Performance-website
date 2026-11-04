@@ -60,6 +60,8 @@ import { BENTLEY_FAQS, BENTLEY_HUB_INTRO, BENTLEY_SERVICES, BENTLEY_WHATSAPP_HRE
 import { ROX_HUB_FAQS, ROX_HUB_INTRO } from '@/data/roxHubContent';
 import { ASTON_HUB_INTRO, ASTON_FAQS, ASTON_SERVICES, ASTON_WHATSAPP_HREF } from '@/data/astonMartinHubContent';
 import { LamborghiniWorkshopPhoto } from '@/components/LamborghiniWorkshopPhoto';
+import R1HubPage from '@/components/R1HubPage';
+import { applyR1BrandContent, getR1HubContent, getR1ParentContent, r1WhatsAppHref } from '@/data/r1HubContent';
 
 const PorscheHubSections = React.lazy(() => import('@/components/PorscheHubSections'));
 const PorscheKnowledgeCentre = React.lazy(() => import('@/components/PorscheKnowledgeCentre'));
@@ -456,7 +458,10 @@ const BrandPage = () => {
   const isEnglishJetourHub = !isArabic && sourceBrand?.slug === 'jetour-service-dubai';
   const isB9Brand = sourceBrand?.slug === 'jetour-service-dubai' || sourceBrand?.slug === 'rox-service-dubai';
   const isEnglishAstonHub = !isArabic && sourceBrand?.slug === 'aston-martin-service-dubai';
-  const brand = sourceBrand?.slug === 'mercedes-benz-service-dubai' ? { ...(isArabic ? localizeBrandToArabic(sourceBrand) : sourceBrand), intro: mercedesCampaign.intro, specialization: mercedesCampaign.specialization, faqs: mercedesCampaign.faqs } : sourceBrand && isArabic ? localizeBrandToArabic(sourceBrand) : isEnglishPorscheHub ? { ...sourceBrand, intro: PORSCHE_HUB_INTRO, faqs: PORSCHE_HUB_FAQS, specialization: 'Service • Repairs • PIWIS 3 Diagnostics' } : isEnglishBmwHub ? { ...sourceBrand, intro: BMW_HUB_INTRO, faqs: BMW_HUB_FAQS } : isEnglishMclarenHub ? { ...sourceBrand, intro: MCLAREN_HUB_INTRO, faqs: MCLAREN_FAQS, specialization: 'Service • Maintenance • Diagnostics • Repairs' } : isEnglishLamborghiniHub ? { ...sourceBrand, intro: LAMBORGHINI_HUB_INTRO, faqs: [...LAMBORGHINI_FAQS], specialization: 'Service • Maintenance • Diagnostics • Repairs' } : isEnglishRollsRoyceHub ? { ...sourceBrand, intro: ROLLS_ROYCE_HUB_INTRO, faqs: [...ROLLS_ROYCE_FAQS], specialization: 'Service • Maintenance • Diagnostics • Repairs' } : isEnglishAudiHub ? { ...sourceBrand, intro: AUDI_HUB_INTRO, faqs: [...AUDI_FAQS], specialization: 'Service • Maintenance • Diagnostics • Repairs' } : isEnglishBentleyHub ? { ...sourceBrand, intro: BENTLEY_HUB_INTRO, faqs: [...BENTLEY_FAQS], specialization: 'Service • Maintenance • Diagnostics • Repairs' } : isEnglishRoxHub ? { ...sourceBrand, intro: ROX_HUB_INTRO, faqs: [...ROX_HUB_FAQS], specialization: 'ROX 01 Service • Diagnostics • Comfort Systems' } : isEnglishAstonHub ? { ...sourceBrand, intro: ASTON_HUB_INTRO, faqs: ASTON_FAQS, specialization: 'Maintenance • Diagnostics • Repairs' } : sourceBrand;
+  const r1Content = getR1HubContent(sourceBrand?.slug, isArabic);
+  const parentContent = sourceBrand?.slug === 'land-rover-service-dubai' ? getR1ParentContent(isArabic) : undefined;
+  const baseBrand = sourceBrand?.slug === 'mercedes-benz-service-dubai' ? { ...(isArabic ? localizeBrandToArabic(sourceBrand) : sourceBrand), intro: mercedesCampaign.intro, specialization: mercedesCampaign.specialization, faqs: mercedesCampaign.faqs } : sourceBrand && isArabic ? localizeBrandToArabic(sourceBrand) : isEnglishPorscheHub ? { ...sourceBrand, intro: PORSCHE_HUB_INTRO, faqs: PORSCHE_HUB_FAQS, specialization: 'Service • Repairs • PIWIS 3 Diagnostics' } : isEnglishBmwHub ? { ...sourceBrand, intro: BMW_HUB_INTRO, faqs: BMW_HUB_FAQS } : isEnglishMclarenHub ? { ...sourceBrand, intro: MCLAREN_HUB_INTRO, faqs: MCLAREN_FAQS, specialization: 'Service • Maintenance • Diagnostics • Repairs' } : isEnglishLamborghiniHub ? { ...sourceBrand, intro: LAMBORGHINI_HUB_INTRO, faqs: [...LAMBORGHINI_FAQS], specialization: 'Service • Maintenance • Diagnostics • Repairs' } : isEnglishRollsRoyceHub ? { ...sourceBrand, intro: ROLLS_ROYCE_HUB_INTRO, faqs: [...ROLLS_ROYCE_FAQS], specialization: 'Service • Maintenance • Diagnostics • Repairs' } : isEnglishAudiHub ? { ...sourceBrand, intro: AUDI_HUB_INTRO, faqs: [...AUDI_FAQS], specialization: 'Service • Maintenance • Diagnostics • Repairs' } : isEnglishBentleyHub ? { ...sourceBrand, intro: BENTLEY_HUB_INTRO, faqs: [...BENTLEY_FAQS], specialization: 'Service • Maintenance • Diagnostics • Repairs' } : isEnglishRoxHub ? { ...sourceBrand, intro: ROX_HUB_INTRO, faqs: [...ROX_HUB_FAQS], specialization: 'ROX 01 Service • Diagnostics • Comfort Systems' } : isEnglishAstonHub ? { ...sourceBrand, intro: ASTON_HUB_INTRO, faqs: ASTON_FAQS, specialization: 'Maintenance • Diagnostics • Repairs' } : sourceBrand;
+  const brand = applyR1BrandContent(baseBrand, r1Content, parentContent);
   const serviceProfileSlug = brand ? getServiceProfileSlug(brand.slug) : '';
   const priorityBrandSeo = getPriorityBrandSeo(sourceBrand?.slug);
   const prioritySeo = isArabic ? undefined : priorityBrandSeo;
@@ -467,12 +472,12 @@ const BrandPage = () => {
     const isMercedes = brand.slug === 'mercedes-benz-service-dubai';
     const isRangeRoverHub = brand.slug === 'range-rover-service-dubai';
     const isDefenderHub = brand.slug === 'defender-service-dubai';
-    const entityName = isMercedes ? mercedesCampaign.h1 : isArabic
+    const entityName = r1Content?.h1 ?? (isMercedes ? mercedesCampaign.h1 : isArabic
       ? `صيانة وإصلاح ${brand.name} في دبي`
-      : `${brand.name} Service & Repair in Dubai`;
-    const schemaDescription = isMercedes ? mercedesCampaign.description : isArabic
+      : `${brand.name} Service & Repair in Dubai`);
+    const schemaDescription = r1Content?.description ?? parentContent?.description ?? (isMercedes ? mercedesCampaign.description : isArabic
       ? `خدمة وفحص سيارات ${brand.name} لدى ورشة ديجي-تك في القوز، دبي. تواصل مع الفريق لتأكيد نطاق الخدمة المناسب لطراز سيارتك.`
-      : priorityBrandSeo?.description ?? `${brand.name} vehicle inspection, maintenance and repair at Digi-Tec Performance Center in Al Quoz, Dubai. Contact the team to confirm the appropriate service scope for your model.`;
+      : priorityBrandSeo?.description ?? `${brand.name} vehicle inspection, maintenance and repair at Digi-Tec Performance Center in Al Quoz, Dubai. Contact the team to confirm the appropriate service scope for your model.`);
     const schemaImage = priorityBrandSeo?.heroImage
       ?? (isMercedes ? mercedesAmgEngine : isRangeRoverHub ? rangeRoverWorkshop : isDefenderHub ? defenderWorkshop : brand.logo || undefined);
     const breadcrumb = buildBreadcrumb(url, [
@@ -492,7 +497,7 @@ const BrandPage = () => {
       name: sourceBrand?.name ?? brand.name,
       logo: brand.logo || undefined,
     });
-    const schemaOffers = serviceSprintBrand && (isArabic || brand.slug === 'volkswagen-service-dubai')
+    const schemaOffers = r1Content ? r1Content.services.map((service) => service.title) : serviceSprintBrand && (isArabic || brand.slug === 'volkswagen-service-dubai')
       ? getSprintServices(brand.slug, isArabic).map((service) => service.title)
       : isMercedes && !isArabic
       ? MERCEDES_SCHEMA_OFFERS.map((offer) => offer.name)
@@ -523,7 +528,7 @@ const BrandPage = () => {
       brand.faqs.map((f) => ({ question: f.q, answer: f.a })),
     );
     return pageGraph([webPage, breadcrumb, brandEntity, svc, ...(faq ? [faq] : [])]);
-  }, [brand, isArabic, isEnglishPorscheHub, isEnglishAstonHub, isEnglishAudiHub, isEnglishBentleyHub, isEnglishBmwHub, isEnglishFerrariHub, isEnglishLamborghiniHub, isEnglishMclarenHub, isEnglishRollsRoyceHub, isEnglishRoxHub, priorityBrandSeo, serviceSprintBrand, sourceBrand, mercedesCampaign]);
+  }, [brand, isArabic, isEnglishPorscheHub, isEnglishAstonHub, isEnglishAudiHub, isEnglishBentleyHub, isEnglishBmwHub, isEnglishFerrariHub, isEnglishLamborghiniHub, isEnglishMclarenHub, isEnglishRollsRoyceHub, isEnglishRoxHub, priorityBrandSeo, serviceSprintBrand, sourceBrand, mercedesCampaign, r1Content, parentContent]);
 
   const isMercedesServiceHub = brand?.slug === 'mercedes-benz-service-dubai';
   const isPorscheServiceHub = brand?.slug === 'porsche-service-dubai';
@@ -531,15 +536,15 @@ const BrandPage = () => {
   const isPriorityLeadBrand = Boolean(serviceSprintBrand) || isEnglishAstonHub || isMercedesServiceHub || isPorscheServiceHub || isBmwServiceHub || isEnglishAudiHub || isEnglishLamborghiniHub || isEnglishRollsRoyceHub || isEnglishBentleyHub || isEnglishAstonHub || isEnglishRoxHub;
   const isRangeRoverServiceHub = brand?.slug === 'range-rover-service-dubai';
   const isDefenderServiceHub = brand?.slug === 'defender-service-dubai';
-  const specialistHubTitle = prioritySeo?.title ?? (isMercedesServiceHub ? MERCEDES_META_TITLE : isRangeRoverServiceHub ? RANGE_ROVER_META_TITLE : isDefenderServiceHub ? DEFENDER_META_TITLE : undefined);
-  const specialistHubDescription = prioritySeo?.description ?? (isMercedesServiceHub ? MERCEDES_META_DESCRIPTION : isRangeRoverServiceHub ? RANGE_ROVER_META_DESCRIPTION : isDefenderServiceHub ? DEFENDER_META_DESCRIPTION : undefined);
+  const specialistHubTitle = r1Content?.title ?? parentContent?.title ?? prioritySeo?.title ?? (isMercedesServiceHub ? MERCEDES_META_TITLE : isRangeRoverServiceHub ? RANGE_ROVER_META_TITLE : isDefenderServiceHub ? DEFENDER_META_TITLE : undefined);
+  const specialistHubDescription = r1Content?.description ?? parentContent?.description ?? prioritySeo?.description ?? (isMercedesServiceHub ? MERCEDES_META_DESCRIPTION : isRangeRoverServiceHub ? RANGE_ROVER_META_DESCRIPTION : isDefenderServiceHub ? DEFENDER_META_DESCRIPTION : undefined);
 
   useSeo({
     title: brand
-      ? isArabic ? isMercedesServiceHub ? mercedesCampaign.title : `إصلاح وصيانة ${serviceSprintBrand?.arabicName ?? brand.name} في دبي | مركز ديجي-تك` : specialistHubTitle ?? `${brand.name} Repair Dubai | Digi-Tec`
+      ? r1Content?.title ?? parentContent?.title ?? (isArabic ? isMercedesServiceHub ? mercedesCampaign.title : `إصلاح وصيانة ${serviceSprintBrand?.arabicName ?? brand.name} في دبي | مركز ديجي-تك` : specialistHubTitle ?? `${brand.name} Repair Dubai | Digi-Tec`)
       : 'Brand Service in Dubai | Digi-Tec Performance Centre',
     description: brand
-      ? isArabic ? isMercedesServiceHub ? mercedesCampaign.description : serviceSprintBrand ? `صيانة وإصلاح ${serviceSprintBrand.arabicName} في القوز، دبي. ناقش الصيانة والتشخيص والأعطال الميكانيكية والكهربائية مع ديجي-تك لتأكيد نطاق الفحص وطلب موعد.` : `إصلاح وصيانة ${brand.name} في دبي: تشخيص وصيانة وفرامل وناقل حركة وتعليق وتكييف مع قطع بالمواصفات المناسبة لدى مركز ديجي-تك.` : specialistHubDescription ?? `Specialist ${brand.name} repair and service in Dubai: diagnostics, maintenance, brakes, transmission, suspension and AC at Digi-Tec, Al Quoz.`
+      ? r1Content?.description ?? parentContent?.description ?? (isArabic ? isMercedesServiceHub ? mercedesCampaign.description : serviceSprintBrand ? `صيانة وإصلاح ${serviceSprintBrand.arabicName} في القوز، دبي. ناقش الصيانة والتشخيص والأعطال الميكانيكية والكهربائية مع ديجي-تك لتأكيد نطاق الفحص وطلب موعد.` : `إصلاح وصيانة ${brand.name} في دبي: تشخيص وصيانة وفرامل وناقل حركة وتعليق وتكييف مع قطع بالمواصفات المناسبة لدى مركز ديجي-تك.` : specialistHubDescription ?? `Specialist ${brand.name} repair and service in Dubai: diagnostics, maintenance, brakes, transmission, suspension and AC at Digi-Tec, Al Quoz.`)
       : 'Expert luxury car maintenance, diagnostics, and performance tuning in Dubai at Digi-Tec Performance Centre.',
     canonical: brand ? `https://digitecme.com${isArabic ? '/ar' : ''}/brands/${brand.slug}` : `https://digitecme.com${isArabic ? '/ar' : '/'}`,
     ogImage: priorityBrandSeo?.heroImage
@@ -558,7 +563,7 @@ const BrandPage = () => {
     return <Navigate to={localizedPath('/')} replace />;
   }
 
-  const whatsappHref = isMercedesServiceHub ? `https://wa.me/97143402223?text=${encodeURIComponent(mercedesCampaign.message)}` : isEnglishPorscheHub ? PORSCHE_WHATSAPP_HREF : isEnglishAstonHub ? ASTON_WHATSAPP_HREF : isEnglishBmwHub ? BMW_WHATSAPP_HREF : isEnglishMclarenHub ? MCLAREN_WHATSAPP_HREF : isEnglishLamborghiniHub ? LAMBORGHINI_WHATSAPP_HREF : isEnglishRollsRoyceHub ? ROLLS_ROYCE_WHATSAPP_HREF : isEnglishAudiHub ? AUDI_WHATSAPP_HREF : isEnglishBentleyHub ? BENTLEY_WHATSAPP_HREF : `https://wa.me/97143402223?text=${encodeURIComponent(
+  const whatsappHref = r1Content ? r1WhatsAppHref(r1Content) : isMercedesServiceHub ? `https://wa.me/97143402223?text=${encodeURIComponent(mercedesCampaign.message)}` : isEnglishPorscheHub ? PORSCHE_WHATSAPP_HREF : isEnglishAstonHub ? ASTON_WHATSAPP_HREF : isEnglishBmwHub ? BMW_WHATSAPP_HREF : isEnglishMclarenHub ? MCLAREN_WHATSAPP_HREF : isEnglishLamborghiniHub ? LAMBORGHINI_WHATSAPP_HREF : isEnglishRollsRoyceHub ? ROLLS_ROYCE_WHATSAPP_HREF : isEnglishAudiHub ? AUDI_WHATSAPP_HREF : isEnglishBentleyHub ? BENTLEY_WHATSAPP_HREF : `https://wa.me/97143402223?text=${encodeURIComponent(
     isArabic
       ? `مرحباً، أود الاستفسار عن خدمة ${brand.name} لدى مركز ديجي-تك بيرفورمانس. طراز السيارة وسنتها: `
       : `Hi Digi-Tec, I am enquiring from your ${brand.name} service page and would like to arrange an inspection.\n\nModel and year: \nService, warning or symptom: `,
@@ -574,7 +579,13 @@ const BrandPage = () => {
   const relatedServices = brand.relatedServices
     .map((s) => getServiceBySlug(s))
     .filter((s): s is NonNullable<ReturnType<typeof getServiceBySlug>> => Boolean(s));
-  const seoCopy = isArabic && isMercedesServiceHub ? MERCEDES_ARABIC_SEO_COPY : isArabic ? {
+  const seoCopy = parentContent ? {
+    intro: parentContent.intro,
+    dubai: isArabic ? 'تؤخذ حرارة دبي والازدحام والغبار وطريقة الاستخدام في الاعتبار عند فحص التبريد والتكييف والبطارية والسوائل. تتبع الصيانة تعليمات الطراز والسجل والحالة الفعلية.' : 'Dubai heat, traffic, dust and actual use inform checks of cooling, AC, batteries and fluids. Maintenance follows the model instructions, service history and condition.',
+    expertise: isArabic ? 'أرسل الطراز والسنة ورقم الهيكل والمشكلة لتحديد الفحص المتاح. تُؤكد وظائف قراءة الأعطال والبيانات وإعادة الضبط أو البرمجة أو المعايرة للسيارة والوحدة قبل تضمينها في عرض العمل.' : 'Send the model, year, VIN and concern to establish the available assessment. Fault-reading, live-data, reset, programming and calibration functions are confirmed for the vehicle and module before inclusion in a quotation.',
+    parts: isArabic ? 'يوضح عرض السعر القطع والسوائل المقترحة ومواصفاتها وأجرة العمل قبل الموافقة. تعتمد الخيارات والتوفر على السيارة والإصلاح المطلوب.' : 'The quotation explains proposed parts, fluid specifications and labour before approval. Options and availability depend on the vehicle and required repair.',
+    cta: isArabic ? 'للاستفسارات العامة عن لاند روفر، اتصل على ‎+971 4 340 2223 أو أرسل بيانات سيارتك عبر واتساب لتأكيد نطاق الخدمة وطلب موعد في القوز الصناعية 3.' : 'For general Land Rover enquiries, call +971 4 340 2223 or send the vehicle details on WhatsApp to confirm the service scope and request an appointment in Al Quoz Industrial Area 3.',
+  } : isArabic && isMercedesServiceHub ? MERCEDES_ARABIC_SEO_COPY : isArabic ? {
     intro: `ديجي-تك مركز مستقل ومتخصص في خدمة ${brand.name} في دبي. نجمع بين التشخيص المتقدم والقطع المناسبة والفنيين ذوي الخبرة لتقديم صيانة وإصلاح واضحين من ورشتنا في القوز.`,
     dubai: `تضع حرارة الإمارات ضغطاً إضافياً على التبريد والزيوت والبطارية والمطاط والتكييف. لذلك نفحص سيارات ${brand.name} مع مراعاة ظروف دبي وطريقة الاستخدام الفعلية.`,
     expertise: serviceSprintBrand ? `يُحدد نطاق فحص سيارات ${brand.name} من الطراز وسنة الصنع والتجهيزات والأعراض. تُؤكد إجراءات الإصلاح ووظائف إعادة الضبط أو المعايرة أو البرمجة المتاحة للسيارة قبل عرض السعر؛ ويُشرح العمل المقترح قبل الموافقة.` : `تشمل خبرتنا بسيارات ${brand.name} الصيانة والتشخيص والمحرك وناقل الحركة والتعليق والفرامل والكهرباء والتكييف، مع المعايرة والاختبار بعد الإصلاح.`,
@@ -620,6 +631,10 @@ const BrandPage = () => {
     '--brand-accent-rgb': brandPageDesign.accentRgb,
     '--brand-hero-position': brandPageDesign.heroPosition,
   } as React.CSSProperties;
+
+  // These two existing hubs share SEO plumbing while retaining their own
+  // bilingual content, service directory and visual treatment.
+  if (r1Content) return <R1HubPage content={r1Content} isArabic={isArabic} />;
 
   return (
     <div
@@ -888,6 +903,20 @@ const BrandPage = () => {
         </section>
       )}
 
+      {parentContent && (
+        <section className="brand-section border-t border-white/10 bg-black py-12 sm:py-16" aria-labelledby="land-rover-family-title">
+          <div className="mx-auto max-w-6xl px-4 sm:px-6">
+            <p className="eyebrow mb-4">{isArabic ? 'اختيار عائلة السيارة' : 'Choose your vehicle family'}</p>
+            <h2 id="land-rover-family-title" className="text-2xl font-semibold sm:text-4xl">{isArabic ? 'معلومات مخصصة لرينج روفر وديفندر' : 'Dedicated Range Rover and Defender guidance'}</h2>
+            <p className="mt-5 max-w-3xl leading-8 text-gray-300">{isArabic ? 'تبقى هذه الصفحة للاستفسارات العامة عن خدمة لاند روفر، بما فيها ديسكفري. اختر صفحة عائلة سيارتك لمراجعة الطرازات والأعراض وخدمات الإصلاح الخاصة بها.' : 'This hub covers broader Land Rover service enquiries, including Discovery. Choose the relevant family page for its model coverage, symptoms and repair services.'}</p>
+            <div className="mt-7 grid gap-4 sm:grid-cols-2">
+              <Link to="/brands/range-rover-service-dubai" className="card-premium rounded-xl border border-white/10 p-6"><h3 className="text-xl font-semibold">{isArabic ? 'صيانة وإصلاح رينج روفر' : 'Range Rover service & repair'}</h3><p className="mt-3 text-sm leading-7 text-gray-300">{isArabic ? 'رينج روفر وسبورت وفوج وأوتوبيوغرافي وفيلار وإيفوك: الصيانة وراحة الركوب والتشخيص والإصلاح.' : 'Range Rover, Sport, Vogue, Autobiography, Velar and Evoque: maintenance, ride comfort, diagnostics and repair.'}</p><span className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-burnt-orange">{isArabic ? 'صفحة خدمة رينج روفر' : 'Explore Range Rover service'}<ArrowRight className={`h-4 w-4 ${isArabic ? 'rotate-180' : ''}`} aria-hidden="true" /></span></Link>
+              <Link to="/brands/defender-service-dubai" className="card-premium rounded-xl border border-white/10 p-6"><h3 className="text-xl font-semibold">{isArabic ? 'صيانة وإصلاح لاند روفر ديفندر' : 'Land Rover Defender service & repair'}</h3><p className="mt-3 text-sm leading-7 text-gray-300">{isArabic ? 'ديفندر 90 و110 و130 وV8: الصيانة ومجموعة نقل الحركة والتعليق ورسائل التحذير.' : 'Defender 90, 110, 130 and V8: servicing, drivetrain, suspension and warning-light assessment.'}</p><span className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-burnt-orange">{isArabic ? 'صفحة خدمة ديفندر' : 'Explore Defender service'}<ArrowRight className={`h-4 w-4 ${isArabic ? 'rotate-180' : ''}`} aria-hidden="true" /></span></Link>
+            </div>
+          </div>
+        </section>
+      )}
+
       {/* Services */}
       {serviceSprintBrand && (isArabic || brand.slug === 'volkswagen-service-dubai') ? <BrandServiceScope slug={brand.slug} isArabic={isArabic} /> : isEnglishPorscheHub ? <PorscheHubSections /> : isEnglishAstonHub ? <AstonMartinHubSections /> : isEnglishAudiHub ? <AudiHubSections /> : isEnglishBentleyHub ? <BentleyHubSections /> : isEnglishRoxHub ? <RoxHubSections /> : isEnglishMclarenHub ? <MclarenHubSections /> : isEnglishLamborghiniHub ? <LamborghiniHubSections /> : isEnglishRollsRoyceHub ? <RollsRoyceHubSections /> : isEnglishBmwHub ? <BmwCoreServices /> : isFerrari && !isArabic ? null : (
       <section id={isPorscheServiceHub && !isArabic ? 'porsche-services' : isMercedesServiceHub && !isArabic ? 'mercedes-services' : undefined} className={`brand-section brand-section--services ${isMercedesServiceHub && !isArabic ? 'scroll-mt-[10rem]' : 'scroll-mt-24'} py-12 sm:py-20 bg-black border-t border-white/5`}>
@@ -897,7 +926,7 @@ const BrandPage = () => {
               {isArabic ? <>خدمات <span className="text-burnt-orange">{brand.name}</span></> : isMercedesServiceHub ? <>Additional Mercedes <span className="text-burnt-orange">Repair & Diagnostic Services</span></> : isPorscheServiceHub ? <>Porsche <span className="text-burnt-orange">Service & Repair</span> in Dubai</> : <>Our <span className="text-burnt-orange">{brand.name}</span> Services</>}
             </h2>
             <p className="text-gray-300 max-w-3xl mx-auto text-sm sm:text-lg">
-              {isArabic ? `عناية متكاملة بسيارات ${brand.name}، من الصيانة الدورية إلى الإصلاحات المتقدمة.` : isMercedesServiceHub ? 'A warning, leak or change in how the car drives needs its own assessment. Use the relevant repair or diagnostic page below; these investigations are separate from scheduled servicing unless included in the agreed quotation.' : isPorscheServiceHub ? 'Choose the concern or scheduled work for your Porsche. The service directory above links to the relevant inspection scope, while model, system and symptom guides explain what may change the decision.' : `Comprehensive care for every ${brand.name}, from routine maintenance to advanced performance work.`}
+              {parentContent ? isArabic ? 'ناقش الصيانة أو العطل لتأكيد الفحص والقطع والعمل المتاح لسيارتك.' : 'Discuss the maintenance or concern to confirm the available inspection, parts and work for your vehicle.' : isArabic ? `عناية متكاملة بسيارات ${brand.name}، من الصيانة الدورية إلى الإصلاحات المتقدمة.` : isMercedesServiceHub ? 'A warning, leak or change in how the car drives needs its own assessment. Use the relevant repair or diagnostic page below; these investigations are separate from scheduled servicing unless included in the agreed quotation.' : isPorscheServiceHub ? 'Choose the concern or scheduled work for your Porsche. The service directory above links to the relevant inspection scope, while model, system and symptom guides explain what may change the decision.' : `Comprehensive care for every ${brand.name}, from routine maintenance to advanced performance work.`}
             </p>
           </div>
           <div className="brand-services-grid grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
@@ -1582,6 +1611,7 @@ const BrandPage = () => {
             <div className="brand-related-grid grid sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
               {relatedServices.map((sourceService) => {
                 const s = isArabic ? localizeServiceToArabic(sourceService) : sourceService;
+                const useParentWorkshopImage = Boolean(parentContent && /^https?:\/\//.test(String(s.image)));
                 return (
                 <Link
                   key={s.slug}
@@ -1590,8 +1620,11 @@ const BrandPage = () => {
                 >
                   <div className="aspect-[16/10] overflow-hidden bg-black">
                     <img
-                      src={typeof s.image === 'string' ? s.image : (s.image as unknown as string)}
-                      alt={s.title}
+                      src={useParentWorkshopImage ? '/images/defender-service-dubai-hero.jpg' : typeof s.image === 'string' ? s.image : (s.image as unknown as string)}
+                      alt={useParentWorkshopImage ? isArabic ? 'لاند روفر ديفندر داخل ورشة ديجي-تك في دبي' : 'Land Rover Defender inside the DIGITEC workshop in Dubai' : s.title}
+                      width={useParentWorkshopImage ? 901 : undefined}
+                      height={useParentWorkshopImage ? 1600 : undefined}
+                      decoding={useParentWorkshopImage ? 'async' : undefined}
                       loading="lazy"
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                     />
