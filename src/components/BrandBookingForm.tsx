@@ -3,6 +3,7 @@ import { z } from 'zod';
 import { MessageCircle } from 'lucide-react';
 import { useLocale } from '@/i18n/use-locale';
 import { trackWhatsAppClick } from '@/lib/whatsapp-tracking';
+import { porscheEnquiryFields } from '@/data/porscheEnquiry';
 
 const getSchema = (isArabic: boolean) => z.object({
   name: z.string().trim().max(80),
@@ -42,6 +43,7 @@ const BrandBookingForm: React.FC<Props> = ({ brandName, issuePlaceholder }) => {
       result.data.phone && `${isArabic ? 'الهاتف' : 'Phone'}: ${result.data.phone}`,
       `${isArabic ? 'العلامة' : 'Brand'}: ${brandName}`,
       `${isArabic ? 'الخدمة أو المشكلة' : 'Issue'}: ${result.data.issue}`,
+      ...(/^Porsche\b/.test(brandName) ? ['', ...porscheEnquiryFields(isArabic, undefined, brandName === 'Porsche' ? '' : brandName)] : []),
     ].filter(Boolean).join('\n');
     const url = `https://wa.me/97143402223?text=${encodeURIComponent(message)}`;
     trackWhatsAppClick(url);

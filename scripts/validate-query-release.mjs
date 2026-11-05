@@ -11,7 +11,7 @@ const routePaths = new Set(routes.map(route => route.path));
 const expected = new Map([
   ['/brands/bmw-service-dubai', 'BMW Service &amp; Repair Dubai | DIGI-TEC'],
   ['/brands/bmw-service-dubai/engine-diagnostics', 'BMW Diagnostics Dubai | Fault Assessment | DIGI-TEC'],
-  ['/brands/porsche-service-dubai/engine-diagnostics', 'Porsche Diagnostics Dubai | Fault Assessment | DIGI-TEC'],
+  ['/brands/porsche-service-dubai/engine-diagnostics', 'Porsche Diagnostics Dubai | PIWIS 3 | DIGI-TEC'],
   ['/services/oil-change-dubai', 'Car Oil Change Dubai | Engine Oil &amp; Filter Service | DIGI-TEC'],
   ['/services/exhaust-repair-dubai', 'Exhaust &amp; Muffler Repair Dubai | DIGI-TEC'],
   ['/services/steering-repair-dubai', 'Power Steering &amp; Rack Repair Dubai | DIGI-TEC'],
@@ -42,7 +42,7 @@ assert.match(porscheGuide, /Porsche workshop services in Dubai/);
 assert.match(porscheGuide, /href="\/brands\/porsche-service-dubai\/transmission-repair"/);
 assert.match(porscheGuide, /"@type":"ItemList"/);
 assert.match(porscheGuide, /How often should a Porsche be serviced in Dubai/);
-assert.match(porscheGuide, /"dateModified":"2026-09-14"/);
+assert.match(porscheGuide, /"dateModified":"2026-11-04"/);
 for (const route of routes.filter(r => r.family === 'brand-service' || r.path.startsWith('/services/mercedes-'))) {
   const html = await htmlFor(route.path);
   assert.doesNotMatch(html, /Models We (?:<[^>]+>)*\s*(?:Steering|Transmission|Oil|Brake|AC|Engine|Electrical|Battery|Suspension|Body|Fuel|Tire|Exhaust)/, route.path);

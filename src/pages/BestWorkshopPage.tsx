@@ -23,6 +23,7 @@ import {
 } from '@/lib/schema';
 import { useLocale } from '@/i18n/use-locale';
 import { localizeBestWorkshopPageToArabic } from '@/i18n/ar-best-workshop';
+import { porscheEnquiryHref } from '@/data/porscheEnquiry';
 
 const BestWorkshopPage: React.FC = () => {
   const { isArabic, localizedPath } = useLocale();
@@ -73,7 +74,7 @@ const BestWorkshopPage: React.FC = () => {
 
   if (!page) return <Navigate to={localizedPath('/')} replace />;
 
-  const whatsappHref = `https://wa.me/97143402223?text=${encodeURIComponent(
+  const whatsappHref = slug === 'best-porsche-workshop-dubai' ? porscheEnquiryHref(isArabic ? 'نطاق فحص وصيانة بورشه بعد مقارنة الورش' : 'Porsche inspection and service options after comparing workshops', isArabic) : `https://wa.me/97143402223?text=${encodeURIComponent(
     isArabic ? `مرحباً ديجي-تك، أبحث عن ورشة متخصصة في ${page.brand ?? 'السيارات'} بدبي. هل يمكنكم مساعدتي؟` : isEnglishPorscheSelection ? 'Hi DIGI-TEC, I am choosing a Porsche workshop and would like to confirm the inspection and service options for my car.\n\nModel and year: \nMileage: \nService needed or symptom: \nPreferred appointment time: ' : `Hi Digi-Tec, I'm looking for an independent ${page.brand ?? 'car'} workshop in Dubai. Can you help?`,
   )}`;
 
@@ -95,9 +96,11 @@ const BestWorkshopPage: React.FC = () => {
         : related;
     });
 
+  const ContentTag = slug === 'best-porsche-workshop-dubai' ? 'main' : React.Fragment;
   return (
     <div className="site-page min-h-screen bg-black text-off-white">
       <Header />
+      <ContentTag>
 
       {/* Breadcrumbs */}
       <nav aria-label={isArabic ? 'مسار التنقل' : 'Breadcrumb'} className="max-w-7xl mx-auto px-4 sm:px-6 pt-6 text-xs sm:text-sm text-gray-400">
@@ -178,6 +181,8 @@ const BestWorkshopPage: React.FC = () => {
           </div>
         </section>
       )}
+
+      {isArabic && slug === 'best-porsche-workshop-dubai' && <section className="border-t border-white/10 py-10 sm:py-14"><div className="mx-auto max-w-4xl px-4 sm:px-6"><h2 className="text-2xl font-black sm:text-3xl">من مقارنة الورش إلى طلب الفحص المناسب</h2><p className="mt-4 leading-relaxed text-gray-300">استخدم المعايير لمناقشة دعم سيارتك ووضوح النتائج والقطع والتكلفة. عندما تحدد الخدمة المطلوبة، راجع نطاق الصيانة أو التشخيص وأرسل بيانات السيارة ليؤكد الفريق العمل والموعد.</p><div className="mt-6 flex flex-wrap gap-3"><Link to="/brands/porsche-service-dubai" className="btn-primary">صيانة وإصلاح بورشه</Link><Link to="/brands/porsche-service-dubai/engine-diagnostics" className="btn-secondary">نطاق التشخيص</Link><Link to="/brands/porsche-service-dubai/transmission-repair" className="btn-secondary">فحص ناقل الحركة</Link></div><a href={whatsappHref} data-cta-placement="porsche_workshop_selection" target="_blank" rel="noopener noreferrer" className="btn-secondary mt-6"><MessageCircle className="h-5 w-5 shrink-0" />أرسل بيانات بورشه عبر واتساب</a><p className="mt-4 text-sm text-gray-400">راجع الرسالة واضغط إرسال في واتساب ليصل الطلب. فتح المسودة لا يؤكد الحجز.</p></div></section>}
 
       {page.brandKeyword === 'Range Rover' && (
         <section className="py-12 sm:py-16 bg-gradient-to-br from-charcoal/40 to-black border-t border-white/5">
@@ -287,6 +292,7 @@ const BestWorkshopPage: React.FC = () => {
         </div>
       </section>
 
+      </ContentTag>
       <Footer />
     </div>
   );

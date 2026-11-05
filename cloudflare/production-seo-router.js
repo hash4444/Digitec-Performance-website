@@ -3,6 +3,7 @@
 // executed merely by publishing it as a Lovable static asset.
 import { handleRequest as handleMercedesRequest } from './mercedes-seo-router.js';
 import { guardResponse } from './routing-response-guard.js';
+import { handlePorscheP2Request } from './porsche-p2-router.js';
 
 const tyrePaths = new Map([
   ['/services/tire-repair', '/services/tire-repair-dubai'],
@@ -38,7 +39,7 @@ export async function handleRequest(request, originFetch = fetch) {
     }
   }
   // Keep scoped PPF/paint, Mercedes and tyre decisions ahead of the response guard.
-  return handleMercedesRequest(request, (originRequest) => guardResponse(originRequest, originFetch));
+  return handlePorscheP2Request(request, (porscheRequest) => handleMercedesRequest(porscheRequest, (originRequest) => guardResponse(originRequest, originFetch)));
 }
 
 export default { fetch(request) { return handleRequest(request); } };

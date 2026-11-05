@@ -12,7 +12,7 @@ import PorscheGuidesIndex from '@/pages/PorscheGuidesIndex';
 const BlogArticleRouter = () => {
   const { slug } = useParams<{ slug: string }>();
   const { isArabic } = useLocale();
-  if (!isArabic && slug === 'porsche-maintenance-guide-dubai') return <PorscheGuidesIndex />;
+  if (slug === 'porsche-maintenance-guide-dubai') return <PorscheGuidesIndex />;
   if (!isArabic && slug && getPorscheModelByLegacyBlogSlug(slug)) return <PorscheModelPage />;
   if (!isArabic && slug && getMercedesModelByLegacyBlogSlug(slug)) return <MercedesModelPage />;
   return slug && getBrandWorkshopArticle(slug) ? <BrandWorkshopArticlePage /> : <BlogPost />;

@@ -9,6 +9,9 @@ import {
   porscheOwnershipGuides,
 } from '@/data/porscheOwnershipGuides';
 import { useSeo } from '@/hooks/use-seo';
+import { porscheEnquiryHref } from '@/data/porscheEnquiry';
+import { useLocale } from '@/i18n/use-locale';
+import PorscheMaintenanceArabic from '@/components/PorscheMaintenanceArabic';
 import {
   buildArticle,
   buildBreadcrumb,
@@ -19,7 +22,7 @@ import {
 } from '@/lib/schema';
 
 const DATE_PUBLISHED = '2026-08-31';
-const DATE_MODIFIED = '2026-09-14';
+const DATE_MODIFIED = '2026-11-04';
 const PORSCHE_OG_IMAGE = '/images/porsche-service-dubai-hero.jpg';
 
 const porscheServiceLinks = [
@@ -66,14 +69,18 @@ const porscheFaqs = [
     question: 'How much does Porsche maintenance cost in Dubai?',
     answer: 'Cost depends on the model, generation, powertrain, scheduled scope, parts and fluid specifications, labour access and any findings that require diagnosis or repair. Compare itemised estimates containing the same work rather than relying on one generic online price.',
   },
+  {
+    question: 'What if I do not have a complete service history?',
+    answer: 'Send the records you have, the model year, mileage and service display. Missing records do not prove every item needs replacing. Agree an initial inspection and a vehicle-specific list of due or uncertain items before approving further work.',
+  },
 ];
 
-const PorscheGuidesIndex = () => {
+const PorscheGuidesIndexEnglish = () => {
   const url = `${SITE_URL}${PORSCHE_GUIDES_PARENT_PATH}`;
   const title = 'Porsche Maintenance Dubai: Service Guide | Digi-Tec';
   const headline = 'Porsche Maintenance in Dubai: Intervals & What Is Included';
   const description = 'Porsche maintenance in Dubai: model-specific service intervals, what routine servicing includes, oil, PDK and brake-fluid guidance, and booking advice.';
-  const whatsappHref = `https://wa.me/97143402223?text=${encodeURIComponent('Hi DIGI-TEC, I would like to plan Porsche maintenance.\n\nModel and year: \nMileage: \nService history / last service: \nWarning or symptoms: \nPreferred appointment: ')}`;
+  const whatsappHref = porscheEnquiryHref('Porsche scheduled maintenance');
   const guideList = {
     '@type': 'ItemList',
     '@id': `${url}#guide-list`,
@@ -150,10 +157,10 @@ const PorscheGuidesIndex = () => {
             <h1 className="mt-4 max-w-5xl text-4xl font-black leading-tight sm:text-6xl">{headline}</h1>
             <p className="mt-6 max-w-4xl text-lg leading-relaxed text-white/70">Use this page to find the right Porsche maintenance answer, then continue to the exact interval, component, model or workshop service you need.</p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-              <a href={whatsappHref} target="_blank" rel="noopener noreferrer" className="btn-primary"><MessageCircle className="h-5 w-5" />Plan my Porsche service</a>
+              <a href={whatsappHref} data-cta-placement="porsche_maintenance_hero" target="_blank" rel="noopener noreferrer" className="btn-primary"><MessageCircle className="h-5 w-5" />Plan my Porsche service</a>
               <Link to={PORSCHE_HUB_PATH} className="btn-secondary"><Wrench className="h-5 w-5" />View Porsche workshop services</Link>
             </div>
-            <p className="mt-5 text-sm text-white/45"><time dateTime={DATE_MODIFIED}>Updated 14 September 2026</time></p>
+            <p className="mt-5 text-sm text-white/45"><time dateTime={DATE_MODIFIED}>Updated 4 November 2026</time></p>
           </div>
         </section>
 
@@ -176,6 +183,16 @@ const PorscheGuidesIndex = () => {
             </div>
           </section>
 
+          <section className="border-t border-white/10 py-10 sm:py-14">
+            <div className="mx-auto max-w-5xl px-4 sm:px-6">
+              <h2 className="text-2xl font-black sm:text-3xl">What to agree in your maintenance estimate</h2>
+              <p className="mt-4 leading-relaxed text-gray-300">An oil change is one service task. For a full maintenance enquiry, ask which items are due now, which are inspection findings and which need separate fault diagnosis. A warning, leak or shifting concern should be described alongside the service request.</p>
+              <ul className="mt-5 list-disc space-y-3 ps-5 leading-relaxed text-gray-300"><li>Identify the vehicle schedule, previous work and any gaps in the records.</li><li>Itemise oil, filters, fluids and other due work with their vehicle-specific specifications.</li><li>Confirm the initial inspection charge, approval for additional work and expected timing after scope and availability are reviewed.</li></ul>
+              <a href={whatsappHref} data-cta-placement="porsche_maintenance_scope" target="_blank" rel="noopener noreferrer" className="btn-primary mt-6"><MessageCircle className="h-5 w-5" />Discuss my due maintenance</a>
+              <p className="mt-4 text-sm leading-relaxed text-gray-400">Review and send the message in WhatsApp so the team receives it. An opened draft does not confirm an appointment.</p>
+            </div>
+          </section>
+
           <section className="border-y border-white/5 bg-white/[0.02] py-14">
             <div className="mx-auto max-w-7xl px-4 sm:px-6">
               <div className="max-w-3xl">
@@ -193,7 +210,7 @@ const PorscheGuidesIndex = () => {
             <div className="mx-auto max-w-7xl px-4 sm:px-6">
               <p className="eyebrow mb-4">Maintenance knowledge centre</p>
               <h2 className="text-3xl font-black sm:text-5xl">Choose the guide that matches your question</h2>
-              <p className="mt-5 max-w-3xl leading-relaxed text-white/60">Each guide owns one focused topic so interval, cost, fluid and model advice stays specific instead of being repeated as generic guidance.</p>
+              <p className="mt-5 max-w-3xl leading-relaxed text-white/60">Choose the question you need answered: when work is due, what changes the estimate, how a particular system behaves or what to prepare before an inspection.</p>
               <div className="mt-12 space-y-14">
                 {guideGroups.map((group) => {
                   const guides = porscheOwnershipGuides.filter((guide) => group.slugs.includes(guide.slug));
@@ -230,7 +247,7 @@ const PorscheGuidesIndex = () => {
               <div className="mt-12 rounded-3xl border border-burnt-orange/30 bg-burnt-orange/[0.07] p-7 text-center sm:p-10">
                 <h2 className="text-2xl font-black sm:text-3xl">Need a vehicle-specific Porsche maintenance plan?</h2>
                 <p className="mx-auto mt-4 max-w-2xl leading-relaxed text-white/65">Send the model, year, mileage, service history and current warnings or symptoms. DIGI-TEC can confirm the appropriate first inspection before you approve any work.</p>
-                <a href={whatsappHref} target="_blank" rel="noopener noreferrer" className="btn-primary mt-7"><MessageCircle className="h-5 w-5" />WhatsApp the workshop</a>
+                <a href={whatsappHref} data-cta-placement="porsche_maintenance_final" target="_blank" rel="noopener noreferrer" className="btn-primary mt-7"><MessageCircle className="h-5 w-5" />WhatsApp the workshop</a>
               </div>
             </div>
           </section>
@@ -241,4 +258,7 @@ const PorscheGuidesIndex = () => {
   );
 };
 
-export default PorscheGuidesIndex;
+export default function PorscheGuidesIndex() {
+  const { isArabic } = useLocale();
+  return isArabic ? <PorscheMaintenanceArabic /> : <PorscheGuidesIndexEnglish />;
+}

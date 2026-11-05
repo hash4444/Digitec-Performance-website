@@ -37,6 +37,19 @@ const PorscheHubSections = () => (
           </aside>
         </div>
 
+        <div className="mb-8 grid gap-5 md:grid-cols-2">
+          <article className="min-w-0 rounded-2xl border border-white/10 p-6 sm:p-8">
+            <h2 className="text-2xl font-black">Scheduled Porsche maintenance</h2>
+            <p className="mt-4 text-base leading-relaxed text-gray-300">Send the model, year, mileage, service display and available records. The due work follows the exact vehicle schedule and history; oil and filter service, brake fluid, filters and gearbox servicing are not one universal package.</p>
+            <Link to="/blog/porsche-maintenance-guide-dubai" className="mt-5 inline-flex min-h-11 items-center gap-2 text-sm font-semibold text-burnt-orange hover:underline">Plan the maintenance your Porsche needs<ArrowRight className="h-4 w-4 shrink-0" /></Link>
+          </article>
+          <article className="min-w-0 rounded-2xl border border-white/10 p-6 sm:p-8">
+            <h2 className="text-2xl font-black">A warning, leak or change in how it drives</h2>
+            <p className="mt-4 text-base leading-relaxed text-gray-300">Describe the exact symptom and when it happens. Diagnostic investigation is agreed separately from scheduled maintenance. Findings guide the repair estimate; clearing a code or changing a fluid does not by itself establish that the cause is resolved.</p>
+            <Link to={porscheServicePath('engine-diagnostics')} className="mt-5 inline-flex min-h-11 items-center gap-2 text-sm font-semibold text-burnt-orange hover:underline">Understand Porsche diagnostic assessment<ArrowRight className="h-4 w-4 shrink-0" /></Link>
+          </article>
+        </div>
+
         <div className="brand-services-grid grid gap-5 sm:grid-cols-2 xl:grid-cols-4">
           {PORSCHE_HUB_SERVICES.map((service) => (
             <article key={service.slug} className="card-premium flex min-w-0 flex-col rounded-2xl p-6">

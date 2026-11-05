@@ -266,4 +266,15 @@ for (const route of publicRoutes) {
   if (study) route.lastmod = study.dateModified ?? study.datePublished;
 }
 
+// P2 changes affect existing Porsche owners only; membership and indexability
+// stay unchanged. English-only generation pages receive their own actual date.
+const porscheP2UpdatedPaths = new Set([
+  '/brands/porsche-service-dubai', '/best-porsche-workshop-dubai',
+  '/blog/porsche-maintenance-guide-dubai',
+  ...['oil-change', 'brake-repair', 'transmission-repair', 'ac-repair', 'suspension-repair', 'engine-diagnostics', 'mechanical-repair', 'steering-repair', 'battery-replacement', 'electrical-repair', 'exhaust-repair', 'fuel-system-repair', 'body-repair', 'tire-repair'].map(service => `/brands/porsche-service-dubai/${service}`),
+].flatMap(path => [path, `/ar${path}`]));
+for (const route of publicRoutes) {
+  if (porscheP2UpdatedPaths.has(route.path) || porscheModelPages.some(model => route.path === model.path)) route.lastmod = '2026-11-04';
+}
+
 export const indexableRoutes = publicRoutes.filter((route) => route.indexable);

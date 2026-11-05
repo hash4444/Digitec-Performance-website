@@ -15,6 +15,8 @@ import { EcuElectronicsEnquiryPanel } from '@/components/EcuElectronicsEnquiryPa
 import { getEcuElectronicsContent } from '@/data/ecuElectronicsContent';
 import { getRepairServiceContent, refineRepairService } from '@/data/repairServiceContent';
 import { serviceEnquiryLabel } from '@/data/queryServiceContent';
+import { porscheModelChipPath, refinePorscheP2Service } from '@/data/porscheP2Content';
+import PorscheServiceDetails from '@/components/PorscheServiceDetails';
 import { arabicServiceContent } from '@/data/arabicServiceContent';
 import { getR1ServiceContent } from '@/data/r1ServiceContent';
 import { getR11RangeRoverBodyContent } from '@/data/r11RangeRoverBodyContent';
@@ -606,7 +608,7 @@ const BrandServicePage: React.FC<BrandServicePageProps> = ({
   const diagnosticCombo = repairCombo && diagnosticAcContent ? { ...repairCombo, ...diagnosticAcContent } : repairCombo;
   const r11BodyContent = getR11RangeRoverBodyContent(diagnosticCombo, isArabic);
   const r1ServiceContent = r11BodyContent ?? getR1ServiceContent(diagnosticCombo, isArabic);
-  const combo = r1ServiceContent?.combo ?? diagnosticCombo;
+  const combo = refinePorscheP2Service(r1ServiceContent?.combo ?? diagnosticCombo, isArabic);
   const brand = brandSlug ? getBrandBySlug(brandSlug) : undefined;
   const profile = brandSlug ? BRAND_PROFILES[brandSlug] : undefined;
   const mercedesServiceMedia = combo && !isArabic && combo.brandSlug === 'mercedes-benz-service-dubai'
@@ -892,6 +894,8 @@ const BrandServicePage: React.FC<BrandServicePageProps> = ({
         <div className="border-t border-white/10 bg-charcoal/20 py-6"><p className="mx-auto max-w-5xl px-4 text-base leading-8 text-gray-300 sm:px-6">For help describing noises, ride-height changes or warnings, see our <Link to="/services/suspension-repair-dubai" className="text-burnt-orange underline underline-offset-4">car suspension inspection and repair in Dubai</Link> guide. Your {combo.brandName}’s fitted system determines the relevant diagnostic and repair procedure.</p></div>
       )}
 
+      {combo.brandSlug === 'porsche-service-dubai' && <PorscheServiceDetails service={combo.serviceSlug} isArabic={isArabic} whatsappHref={whatsappHref} />}
+
       {/* Models */}
       <section className="py-12 sm:py-16 bg-gradient-to-br from-charcoal/40 to-black">
         <div className="max-w-5xl mx-auto px-4 sm:px-6">
@@ -903,7 +907,9 @@ const BrandServicePage: React.FC<BrandServicePageProps> = ({
           </p>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
             {combo.models.map((m) => {
-              const modelPath = combo.brandSlug === 'mercedes-benz-service-dubai' && !isArabic ? MERCEDES_MODEL_PATHS[m] : undefined;
+              const modelPath = combo.brandSlug === 'porsche-service-dubai'
+                ? porscheModelChipPath(m, isArabic)
+                : combo.brandSlug === 'mercedes-benz-service-dubai' && !isArabic ? MERCEDES_MODEL_PATHS[m] : undefined;
               return modelPath ? (
                 <Link key={m} to={modelPath} className="card-premium group rounded-2xl p-3 text-center sm:p-4">
                   <span className="text-xs font-semibold text-off-white group-hover:text-burnt-orange sm:text-sm">{m}</span>

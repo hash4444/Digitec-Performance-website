@@ -1,7 +1,7 @@
 import { PORSCHE_HUB_PATH } from '@/data/porscheArchitecture';
 
 export const PORSCHE_SERVICE_LINKS = {
-  maintenance: `${PORSCHE_HUB_PATH}/oil-change`,
+  maintenance: PORSCHE_HUB_PATH,
   mechanical: `${PORSCHE_HUB_PATH}/mechanical-repair`,
   transmission: `${PORSCHE_HUB_PATH}/transmission-repair`,
   suspension: `${PORSCHE_HUB_PATH}/suspension-repair`,

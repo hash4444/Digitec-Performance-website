@@ -1,4 +1,5 @@
 import React from 'react';
+import { porscheEnquiryHref } from '@/data/porscheEnquiry';
 import { useParams, Navigate } from 'react-router-dom';
 import { Phone, MessageCircle, CheckCircle2, ArrowRight, MapPin } from 'lucide-react';
 import Header from '@/components/Header';
@@ -544,10 +545,10 @@ const BrandPage = () => {
 
   useSeo({
     title: brand
-      ? r1Content?.title ?? parentContent?.title ?? (isArabic ? isMercedesServiceHub ? mercedesCampaign.title : `إصلاح وصيانة ${serviceSprintBrand?.arabicName ?? brand.name} في دبي | مركز ديجي-تك` : specialistHubTitle ?? `${brand.name} Repair Dubai | Digi-Tec`)
+      ? r1Content?.title ?? parentContent?.title ?? (isArabic ? isPorscheServiceHub ? 'صيانة وإصلاح بورشه في دبي | ديجي-تك القوز' : isMercedesServiceHub ? mercedesCampaign.title : `إصلاح وصيانة ${serviceSprintBrand?.arabicName ?? brand.name} في دبي | مركز ديجي-تك` : specialistHubTitle ?? `${brand.name} Repair Dubai | Digi-Tec`)
       : 'Brand Service in Dubai | Digi-Tec Performance Centre',
     description: brand
-      ? r1Content?.description ?? parentContent?.description ?? (isArabic ? isMercedesServiceHub ? mercedesCampaign.description : serviceSprintBrand ? `صيانة وإصلاح ${serviceSprintBrand.arabicName} في القوز، دبي. ناقش الصيانة والتشخيص والأعطال الميكانيكية والكهربائية مع ديجي-تك لتأكيد نطاق الفحص وطلب موعد.` : `إصلاح وصيانة ${brand.name} في دبي: تشخيص وصيانة وفرامل وناقل حركة وتعليق وتكييف مع قطع بالمواصفات المناسبة لدى مركز ديجي-تك.` : specialistHubDescription ?? `Specialist ${brand.name} repair and service in Dubai: diagnostics, maintenance, brakes, transmission, suspension and AC at Digi-Tec, Al Quoz.`)
+      ? r1Content?.description ?? parentContent?.description ?? (isArabic ? isPorscheServiceHub ? 'صيانة وإصلاح بورشه في القوز، دبي. ناقش الصيانة وتشخيص PIWIS 3 وناقل الحركة والفرامل والتعليق. تُؤكد الوظائف ونطاق الفحص حسب السيارة.' : isMercedesServiceHub ? mercedesCampaign.description : serviceSprintBrand ? `صيانة وإصلاح ${serviceSprintBrand.arabicName} في القوز، دبي. ناقش الصيانة والتشخيص والأعطال الميكانيكية والكهربائية مع ديجي-تك لتأكيد نطاق الفحص وطلب موعد.` : `إصلاح وصيانة ${brand.name} في دبي: تشخيص وصيانة وفرامل وناقل حركة وتعليق وتكييف مع قطع بالمواصفات المناسبة لدى مركز ديجي-تك.` : specialistHubDescription ?? `Specialist ${brand.name} repair and service in Dubai: diagnostics, maintenance, brakes, transmission, suspension and AC at Digi-Tec, Al Quoz.`)
       : 'Expert luxury car maintenance, diagnostics, and performance tuning in Dubai at Digi-Tec Performance Centre.',
     canonical: brand ? `https://digitecme.com${isArabic ? '/ar' : ''}/brands/${brand.slug}` : `https://digitecme.com${isArabic ? '/ar' : '/'}`,
     ogImage: priorityBrandSeo?.heroImage
@@ -566,7 +567,7 @@ const BrandPage = () => {
     return <Navigate to={localizedPath('/')} replace />;
   }
 
-  const whatsappHref = r1Content ? r1WhatsAppHref(r1Content) : isMercedesServiceHub ? `https://wa.me/97143402223?text=${encodeURIComponent(mercedesCampaign.message)}` : isEnglishPorscheHub ? PORSCHE_WHATSAPP_HREF : isEnglishAstonHub ? ASTON_WHATSAPP_HREF : isEnglishBmwHub ? BMW_WHATSAPP_HREF : isEnglishMclarenHub ? MCLAREN_WHATSAPP_HREF : isEnglishLamborghiniHub ? LAMBORGHINI_WHATSAPP_HREF : isEnglishRollsRoyceHub ? ROLLS_ROYCE_WHATSAPP_HREF : isEnglishAudiHub ? AUDI_WHATSAPP_HREF : isEnglishBentleyHub ? BENTLEY_WHATSAPP_HREF : `https://wa.me/97143402223?text=${encodeURIComponent(
+  const whatsappHref = r1Content ? r1WhatsAppHref(r1Content) : isMercedesServiceHub ? `https://wa.me/97143402223?text=${encodeURIComponent(mercedesCampaign.message)}` : isPorscheServiceHub ? isArabic ? porscheEnquiryHref('صيانة أو إصلاح بورشه', true) : PORSCHE_WHATSAPP_HREF : isEnglishAstonHub ? ASTON_WHATSAPP_HREF : isEnglishBmwHub ? BMW_WHATSAPP_HREF : isEnglishMclarenHub ? MCLAREN_WHATSAPP_HREF : isEnglishLamborghiniHub ? LAMBORGHINI_WHATSAPP_HREF : isEnglishRollsRoyceHub ? ROLLS_ROYCE_WHATSAPP_HREF : isEnglishAudiHub ? AUDI_WHATSAPP_HREF : isEnglishBentleyHub ? BENTLEY_WHATSAPP_HREF : `https://wa.me/97143402223?text=${encodeURIComponent(
     isArabic
       ? `مرحباً، أود الاستفسار عن خدمة ${brand.name} لدى مركز ديجي-تك بيرفورمانس. طراز السيارة وسنتها: `
       : `Hi Digi-Tec, I am enquiring from your ${brand.name} service page and would like to arrange an inspection.\n\nModel and year: \nService, warning or symptom: `,
@@ -1027,8 +1028,8 @@ const BrandPage = () => {
                   loading="lazy"
                 />
                 <figcaption className="p-4 sm:p-5 flex flex-col justify-center">
-                  <span className="text-burnt-orange text-xs font-bold uppercase tracking-widest mb-1">Porsche workshop</span>
-                  <p className="text-gray-300 text-sm leading-relaxed">Specialist care for Porsche performance, maintenance and repair in our Al Quoz workshop.</p>
+                  <span className="text-burnt-orange text-xs font-bold uppercase tracking-widest mb-1">{isArabic ? 'ورشة بورشه' : 'Porsche workshop'}</span>
+                  <p className="text-gray-300 text-sm leading-relaxed">{isArabic ? 'سيارات بورشه داخل ورشة ديجي-تك في القوز. يُؤكد نطاق الفحص والصيانة والإصلاح حسب السيارة.' : 'Porsche cars inside the DIGI-TEC workshop in Al Quoz. Inspection, maintenance and repair scope are confirmed for each vehicle.'}</p>
                 </figcaption>
               </figure>
             )}
@@ -1617,6 +1618,7 @@ const BrandPage = () => {
               {relatedServices.map((sourceService) => {
                 const s = isArabic ? localizeServiceToArabic(sourceService) : sourceService;
                 const useParentWorkshopImage = Boolean(parentContent && /^https?:\/\//.test(String(s.image)));
+                const usePorscheWorkshopImage = isPorscheServiceHub && /^https?:\/\//.test(String(s.image));
                 return (
                 <Link
                   key={s.slug}
@@ -1625,8 +1627,8 @@ const BrandPage = () => {
                 >
                   <div className="aspect-[16/10] overflow-hidden bg-black">
                     <img
-                      src={useParentWorkshopImage ? '/images/defender-service-dubai-hero.jpg' : typeof s.image === 'string' ? s.image : (s.image as unknown as string)}
-                      alt={useParentWorkshopImage ? isArabic ? 'لاند روفر ديفندر داخل ورشة ديجي-تك في دبي' : 'Land Rover Defender inside the DIGITEC workshop in Dubai' : s.title}
+                      src={usePorscheWorkshopImage ? porscheWorkshop : useParentWorkshopImage ? '/images/defender-service-dubai-hero.jpg' : typeof s.image === 'string' ? s.image : (s.image as unknown as string)}
+                      alt={usePorscheWorkshopImage ? isArabic ? 'سيارات بورشه داخل ورشة ديجي-تك في دبي' : 'Porsche cars inside the DIGI-TEC workshop in Dubai' : useParentWorkshopImage ? isArabic ? 'لاند روفر ديفندر داخل ورشة ديجي-تك في دبي' : 'Land Rover Defender inside the DIGITEC workshop in Dubai' : s.title}
                       width={useParentWorkshopImage ? 901 : undefined}
                       height={useParentWorkshopImage ? 1600 : undefined}
                       decoding={useParentWorkshopImage ? 'async' : undefined}

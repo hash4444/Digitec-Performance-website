@@ -1,16 +1,17 @@
 import type { ServiceKey } from './brandServices';
 import { PORSCHE_HUB_PATH } from './porscheArchitecture';
+import { porscheEnquiryHref } from './porscheEnquiry';
 
 type PorscheHubService = { slug: ServiceKey; title: string; description: string; label: string };
 
 export const PORSCHE_HUB_INTRO = 'Book Porsche service and repair at DIGI-TEC, an independent workshop in Al Quoz, Dubai. Discuss scheduled maintenance, oil leaks, PDK or Tiptronic concerns, brakes, suspension and AC with the team. PIWIS 3 capability supports fault investigation alongside physical checks, with available functions confirmed for your Porsche. Send your model, year and concern to arrange the right first inspection.';
 
-export const PORSCHE_WHATSAPP_HREF = `https://wa.me/97143402223?text=${encodeURIComponent('Hi DIGI-TEC, I would like to arrange Porsche service or repair.\n\nPorsche model: \nYear: \nMileage: \nService needed, warning or symptom: \nPreferred appointment day and time: ')}`;
+export const PORSCHE_WHATSAPP_HREF = porscheEnquiryHref('Porsche service or repair');
 
 export const porscheServicePath = (slug: ServiceKey) => `${PORSCHE_HUB_PATH}/${slug}`;
 
 export const PORSCHE_HUB_SERVICES = [
-  { slug: 'oil-change', title: 'Porsche maintenance & oil service', description: 'Plan service around your Porsche model, mileage and service history. The correct oil approval, filters and other due items are confirmed before the work is agreed.', label: 'Porsche oil change and service checks' },
+  { slug: 'oil-change', title: 'Porsche oil & filter service', description: 'Confirm the correct oil approval, quantity, filter and level procedure for your engine. A full maintenance visit may include separately due items beyond an oil change.', label: 'Porsche oil and filter change' },
   { slug: 'engine-diagnostics', title: 'PIWIS 3 diagnostics', description: 'A warning light, misfire or loss of performance needs more than a code read. Supported PIWIS 3 data and physical tests help trace the cause before a repair is proposed.', label: 'Porsche diagnostics in Dubai' },
   { slug: 'mechanical-repair', title: 'Engine repair, oil leaks & cooling', description: 'Oil leaks, coolant loss, overheating and unusual noises start with inspection of the fitted engine and affected system. The findings guide the repair and parts estimate.', label: 'Porsche engine and mechanical repair' },
   { slug: 'transmission-repair', title: 'PDK & Tiptronic transmission repair', description: 'Jerking, slipping, delayed engagement or gearbox warnings are checked alongside fluid history, engine operation and the connected driveline. Service and repair depend on the fitted gearbox.', label: 'Porsche transmission and PDK repair' },
